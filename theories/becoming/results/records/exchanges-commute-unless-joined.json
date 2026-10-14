@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "exchanges-commute-unless-joined",
   "title": {
     "zh": "独立的交换可交换",
@@ -8,28 +8,198 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-14T13:00:00+00:00",
   "statement": {
     "zh": "两侧分开两步时，交换其次序保持平衡、耗散、体现、总量与计数，在任意次这样的交换下也如此；次序恰经共享的关系项或依存被登记。",
     "en": "Where sides split two steps, swapping the exchanges keeps balance, dissipation, embodiment, totals and counts, under any number of such commutations too; the order registers through a shared relatum or a dependence."
   },
-  "claim": {
-    "zh": "Flow.Commuted L L' t：L' 以相反次序取 L 跨步 t 与 t+1 的交换，其余交换照旧；Web.Commuted W W' t：W 的每个立、活动、依存、需要与汲取至多跨两步之一变化，W' 跨另一步作此变化（Moved）。两个关系都对称（Flow.Commuted.symm、Web.Commuted.symm），在两侧说明哪些关系项跨哪一步变化并分开两步之处由 Flow.swap 与 Web.commute 实现（Web.Split、Flow.swap_commuted、Web.commute_commuted）。平衡、耗散与体现在交换后的世界中恰在原世界中成立时成立（World.commute_laws、Flow.Commuted.balances_iff、Flow.Commuted.dissipative_iff、Web.Commuted.embodied）：立的量相互交换（Exchanged），其升降互换位置。在含有两步的任何段上，有限家族的生起与止息计数、总立的升降与下降之步的计数都与原世界相同（World.commute_counts）。重复交换生成 Reorders，保持平衡、耗散与体现（Reorders.laws），并在含有每对被交换之步的段上保持总量（Reorders.totals）：这是以两侧分开两步为独立的 Mazurkiewicz 迹等价。次序经依存与共享的关系项被登记，各有见证：活动需要支持在没有依存跨越两侧时于交换后保持（Web.commute_dependent），而在 Crossing 中两个交换没有共享的关系项、两侧分开它们，一个关系项却依存于另一个交换所结束的条件，次序相反时它在没有支持时活跃（Crossing.order_registers）；只有活跃者给予在交换后保持于没有给予者的活动被第一步开始或被第二步结束之处（Flow.Commuted.acting），而在 Arising 中跨第一步生起的关系项跨第二步给予，次序相反时它在活跃之前给予（Arising.order_registers）。有一个足迹说出每个交换触及哪些关系项、并包含这些交换时（Footprinted、Footprinted.Contains），交换相邻而不相连的交换是以足迹为两侧的 Reorders 的一步（Footprinted.split），任意多次这样的交换双向保持每个前提，其中有活动需要支持、只有活跃者给予与取用、以同一界的传递（Footprinted.reorder_premises）。沿任意 Reorders，包括相连的交换，在含有每对被交换之步的段上，两个世界中活动都可判定时，生起与止息的计数保持（Reorders.counts）。只给两侧而无足迹的 Reorders 可以交换每个包含它们的足迹都相连的交换，这样做破坏活动需要支持（Crossing.reorders_joined）与只有活跃者给予（Arising.reorders_joined）：这两个前提恰沿不相连交换的交换而保持。不加前提。 P88 接续：listed_splice 以交换前后普查的两侧构造中间一步的列表，任意交换都正向保存活动与所立者的普查（Web.commute_census、Web.commute_standingCensus），返回方向要求两侧分开（World.commute_counted_iff）。因此任意 Reorders，包括相连交换，都双向保持两种普查的存在（Reorders.census）；任意 Footprinted.reorder 正向保存，包含足迹下的不相连交换重排双向保存（Footprinted.reorder_census）。这是存在普查的保存，不是中间每步人数不变，也不推出相连交换下其他前提保持。",
-    "en": "Flow.Commuted L L' t: L' takes the exchanges of L across the steps from t and t+1 in the other order and every other exchange as L does; Web.Commuted W W' t: each standing, activity, dependence, need and drawing of W changes across at most one of the two steps, and W' makes that change across the other (Moved). Both relations are symmetric (Flow.Commuted.symm, Web.Commuted.symm) and are realized by Flow.swap and Web.commute wherever sides say which relata change across which step and split the two steps (Web.Split, Flow.swap_commuted, Web.commute_commuted). Balance, dissipation and embodiment hold of the commuted world exactly where they hold of the world (World.commute_laws, Flow.Commuted.balances_iff, Flow.Commuted.dissipative_iff, Web.Commuted.embodied): the standing amounts exchange (Exchanged), their rises and falls changing places. Over any stretch holding both steps, the counts of a finite family's arising and ceasing, the rises and falls of a family's total standing and the steps at which it falls are those of the world (World.commute_counts). Repeated, the commutations generate Reorders, which keeps balance, dissipation and embodiment (Reorders.laws) and, over a stretch holding every commuted pair, the totals (Reorders.totals): Mazurkiewicz trace equivalence, with independence of two consecutive exchanges taken as sides splitting them. The order registers through dependence and through a shared relatum, each with a witness: activity needing support holds after commuting where no dependence crosses the sides (Web.commute_dependent), and in Crossing the two exchanges share no relatum and the sides split them, yet a relatum depends on a condition the other exchange ends, and in the other order it is active without support (Crossing.order_registers); only active relata giving holds after commuting where no relatum giving has its activity begun by the first step or ended by the second (Flow.Commuted.acting), and in Arising the relatum arising across the first step gives across the second, and in the other order gives before it is active (Arising.order_registers). With a footprint saying which relata each exchange touches and containing the exchanges (Footprinted, Footprinted.Contains), commuting neighbouring exchanges not joined is a step of Reorders with the footprint as sides (Footprinted.split), and any number of such commutations keeps every premise in both directions, activity needing support, only active relata giving and taking and bounded transmission with the same bound among them (Footprinted.reorder_premises). Along any Reorders, joined commutations included, the counts of arising and ceasing over a stretch holding every commuted pair are kept where activity is decided in both worlds (Reorders.counts). Plain Reorders, its sides given without a footprint, can commute exchanges that every containing footprint joins, and doing so breaks activity needing support (Crossing.reorders_joined) and only active relata giving (Arising.reorders_joined): these two premises carry exactly along commutations of exchanges not joined. No premise. P88 continuation: listed_splice constructs the intermediate list from sides of the censuses before and after a commutation. Every commutation preserves activity and standing censuses forward (Web.commute_census, Web.commute_standingCensus); the reverse direction requires split sides (World.commute_counted_iff). Thus every Reorders, joined pairs included, preserves existence of both censuses in both directions (Reorders.census). Arbitrary Footprinted.reorder preserves them forward; independent reorderings with a containing footprint preserve them both ways (Footprinted.reorder_census). This preserves census existence, not population at every intermediate step, and does not preserve the other premises under joined commutations."
-  },
+  "laws": [
+    {
+      "zh": "Flow.Commuted L L' t：L' 以相反次序取 L 跨步 t 与 t+1 的交换，其余交换照旧；Web.Commuted W W' t：W 的每个立、活动、依存、需要与汲取至多跨两步之一变化，W' 跨另一步作此变化（Moved）。",
+      "en": "Flow.Commuted L L' t: L' takes the exchanges of L across the steps from t and t+1 in the other order and every other exchange as L does; Web.Commuted W W' t: each standing, activity, dependence, need and drawing of W changes across at most one of the two steps, and W' makes that change across the other (Moved).",
+      "declarations": [
+        "Becoming.Flow.Commuted",
+        "Becoming.Flow.SameExchange",
+        "Becoming.Web.Commuted"
+      ]
+    },
+    {
+      "zh": "两个关系都对称，在两侧说明哪些关系项跨哪一步变化并分开两步之处由 Flow.swap 与 Web.commute 实现。",
+      "en": "Both relations are symmetric and are realized by Flow.swap and Web.commute wherever sides say which relata change across which step and split the two steps.",
+      "declarations": [
+        "Becoming.Flow.Commuted.symm",
+        "Becoming.Web.Commuted.symm",
+        "Becoming.Flow.swap",
+        "Becoming.Web.commute",
+        "Becoming.Web.Split",
+        "Becoming.Flow.swap_commuted",
+        "Becoming.Web.commute_commuted"
+      ]
+    },
+    {
+      "zh": "平衡、耗散与体现在交换后的世界中恰在原世界中成立时成立：立的量相互交换（Exchanged），其升降互换位置。",
+      "en": "Balance, dissipation and embodiment hold of the commuted world exactly where they hold of the world: the standing amounts exchange (Exchanged), their rises and falls changing places.",
+      "declarations": [
+        "Becoming.World.commute",
+        "Becoming.World.commute_laws",
+        "Becoming.Flow.Commuted.balances_iff",
+        "Becoming.Flow.Commuted.dissipative_iff",
+        "Becoming.Web.Commuted.embodied",
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.Dissipative",
+        "Becoming.Web.Embodied"
+      ]
+    },
+    {
+      "zh": "在含有两步的任何段上，有限家族的生起与止息计数（两个世界中活动都可判定）、总立的升降与下降之步的计数都与原世界相同。",
+      "en": "Over any stretch holding both steps, the counts of a finite family's arising and ceasing (with activity decided in both worlds), the rises and falls of a family's total standing and the steps at which it falls are those of the world.",
+      "declarations": [
+        "Becoming.World.commute_counts"
+      ]
+    },
+    {
+      "zh": "重复交换生成 Reorders，保持平衡、耗散与体现，并在含有每对被交换之步的段上保持总量：这是以两侧分开两步为独立的 Mazurkiewicz 迹等价。",
+      "en": "Repeated, the commutations generate Reorders, which keeps balance, dissipation and embodiment and, over a stretch holding every commuted pair, the totals: Mazurkiewicz trace equivalence, with independence of two consecutive exchanges taken as sides splitting them.",
+      "declarations": [
+        "Becoming.Reorders",
+        "Becoming.Reorders.laws",
+        "Becoming.Reorders.totals"
+      ]
+    },
+    {
+      "zh": "次序经依存与共享的关系项被登记，各有见证。活动需要支持在没有依存跨越两侧时于交换后保持；而在 Crossing 中两个交换没有共享的关系项、两侧分开它们，一个关系项却依存于另一个交换所结束的条件，次序相反时它在没有支持时活跃。",
+      "en": "The order registers through dependence and through a shared relatum, each with a witness. Activity needing support holds after commuting where no dependence crosses the sides; in Crossing the two exchanges share no relatum and the sides split them, yet a relatum depends on a condition the other exchange ends, and in the other order it is active without support.",
+      "declarations": [
+        "Becoming.Web.Dependent",
+        "Becoming.Web.commute_dependent",
+        "Becoming.Crossing.world",
+        "Becoming.Crossing.split",
+        "Becoming.Crossing.order_registers"
+      ]
+    },
+    {
+      "zh": "只有活跃者给予在交换后保持于没有给予者的活动被第一步开始或被第二步结束之处；而在 Arising 中跨第一步生起的关系项跨第二步给予，次序相反时它在活跃之前给予。",
+      "en": "Only active relata giving holds after commuting where no relatum giving has its activity begun by the first step or ended by the second; in Arising the relatum arising across the first step gives across the second, and in the other order gives before it is active.",
+      "declarations": [
+        "Becoming.Flow.Acting",
+        "Becoming.Flow.Commuted.acting",
+        "Becoming.Arising.world",
+        "Becoming.Arising.split",
+        "Becoming.Arising.order_registers"
+      ]
+    },
+    {
+      "zh": "有一个足迹说出每个交换触及哪些关系项、并包含这些交换时，交换相邻而不相连的交换是以足迹为两侧的 Reorders 的一步，任意多次这样的交换双向保持每个前提，其中有活动需要支持、只有活跃者给予与取用、以同一界的传递。",
+      "en": "With a footprint saying which relata each exchange touches and containing the exchanges, commuting neighbouring exchanges not joined is a step of Reorders with the footprint as sides, and any number of such commutations keeps every premise in both directions, activity needing support, only active relata giving and taking and bounded transmission with the same bound among them.",
+      "declarations": [
+        "Becoming.Footprinted",
+        "Becoming.Footprinted.Contains",
+        "Becoming.Footprinted.Joined",
+        "Becoming.Footprinted.split",
+        "Becoming.Footprinted.reorder_premises",
+        "Becoming.Flow.Taking",
+        "Becoming.Flow.TransmitsWithin"
+      ]
+    },
+    {
+      "zh": "沿任意 Reorders，包括相连的交换，在含有每对被交换之步的段上，两个世界中活动都可判定时，生起与止息的计数保持。",
+      "en": "Along any Reorders, joined commutations included, the counts of arising and ceasing over a stretch holding every commuted pair are kept where activity is decided in both worlds.",
+      "declarations": [
+        "Becoming.Reorders.counts"
+      ]
+    },
+    {
+      "zh": "只给两侧而无足迹的 Reorders 可以交换每个包含它们的足迹都相连的交换，这样做破坏活动需要支持与只有活跃者给予：这两个前提恰沿不相连交换的交换而保持。不加前提。",
+      "en": "Plain Reorders, its sides given without a footprint, can commute exchanges that every containing footprint joins, and doing so breaks activity needing support and only active relata giving: these two premises carry exactly along commutations of exchanges not joined. No premise is added.",
+      "declarations": [
+        "Becoming.Crossing.joined",
+        "Becoming.Crossing.reorders_joined",
+        "Becoming.Arising.joined",
+        "Becoming.Arising.reorders_joined"
+      ]
+    },
+    {
+      "zh": "listed_splice 以交换前后普查的两侧构造中间一步的列表，任意交换都正向保存活动与所立者的普查，返回方向要求两侧分开。",
+      "en": "listed_splice constructs the intermediate list from sides of the censuses before and after a commutation. Every commutation preserves activity and standing censuses forward; the reverse direction requires split sides.",
+      "declarations": [
+        "Becoming.spliceAt",
+        "Becoming.listed_splice",
+        "Becoming.Web.commute_census",
+        "Becoming.Web.commute_standingCensus",
+        "Becoming.Web.commute_census_back",
+        "Becoming.Web.commute_standingCensus_back",
+        "Becoming.World.commute_counted",
+        "Becoming.World.commute_counted_iff"
+      ]
+    },
+    {
+      "zh": "因此任意 Reorders，包括相连交换，都双向保持两种普查的存在；任意 Footprinted.reorder 正向保存，包含足迹下的不相连交换重排双向保存。",
+      "en": "Thus every Reorders, joined pairs included, preserves existence of both censuses in both directions. Arbitrary Footprinted.reorder preserves them forward; independent reorderings with a containing footprint preserve them both ways.",
+      "declarations": [
+        "Becoming.Reorders.census",
+        "Becoming.Footprinted.counted_reorder",
+        "Becoming.Footprinted.standing_reorder",
+        "Becoming.Footprinted.reorder_census"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "交换是相继两步的；两侧是给定的，不由世界导出；每个立与活动只跨两步之一变化。",
       "en": "Commutation is of consecutive steps; the sides are given, not derived from the world; each standing and activity changes across one of the two steps."
     },
     {
-      "zh": "P78b 已在包含足迹与有限段的给定重新编号下刻画逆方向（order-of-exchanges-is-the-invariant）；这不等于 Foata 同时层正规形。普查返回方向要求两侧分开，Reorders 已包含此条件。",
-      "en": "P78b already characterizes the converse for a containing footprint and supplied finite-stretch reindexing (order-of-exchanges-is-the-invariant); this is not a Foata simultaneous-layer normal form. The census reverse direction requires split sides, already part of Reorders."
+      "zh": "order-of-exchanges-is-the-invariant 已在包含足迹与有限段的给定重新编号下刻画逆方向；这不等于 Foata 同时层正规形。普查返回方向要求两侧分开，Reorders 已包含此条件。",
+      "en": "order-of-exchanges-is-the-invariant already characterizes the converse for a containing footprint and supplied finite-stretch reindexing; this is not a Foata simultaneous-layer normal form. The census reverse direction requires split sides, already part of Reorders."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "本记录中足迹是给定的；在闲置可判定时构造的最小足迹（逆刻画另需关系项相等可判定）见 least-footprint-where-idleness-decided。",
+      "en": "In this record the footprint is supplied; the least footprint, constructed where idleness is decided (its converse also needs decidable equality of relata), is in least-footprint-where-idleness-decided.",
+      "kind": "scope"
+    },
+    {
+      "zh": "存量耗减只在两步上。",
+      "en": "Running down is shown only at the two steps.",
+      "kind": "scope"
+    },
+    {
+      "zh": "普查的存在沿两侧分开的重排双向保持，任意交换只保证正向。",
+      "en": "A census's existence carries both ways along split-sided reorderings and only forward under arbitrary commutation.",
+      "kind": "scope"
+    },
+    {
+      "zh": "保存的是普查的存在，不是中间每步人数不变，也不推出相连交换下其他前提保持。",
+      "en": "What is preserved is census existence, not the population at every intermediate step, and it does not show the other premises preserved under joined commutations.",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "detail": {
+        "zh": "Crossing 与 Arising：两个可交换且仍平衡的交换，次序相反时活动需要支持或只有活跃者给予不再成立。",
+        "en": "Crossing and Arising: two exchanges that commute and still balance, where in the other order activity needing support, or only active relata giving, fails."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-evaluation",
+    "decidability",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；Dependence 由 20261014T091930.724493Z 绑定；外围 20261013T095049.338744Z 通过）：Becoming.Order 与 Becoming.OrderNormal 的定理（含沿重排的普查）公理报告为空，检查器并核对核心纯净。作者反审与普查增量的范围审读见整合文档；尚无独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; Dependence bound by 20261014T091930.724493Z; periphery 20261013T095049.338744Z passed): the theorems of Becoming.Order and Becoming.OrderNormal, the census along reorderings included, have empty axiom reports, and the checker verifies core purity. Author counterreview and a scope review of the census delta in the integration note; no independent review yet."
+  },
+  "next_delta": {
+    "zh": "无界重排与连续时间对应仍开放；最小足迹见 least-footprint-where-idleness-decided；读法（Ren）。",
+    "en": "Unbounded reorderings and continuous-time correspondence remain open; the least footprint is in least-footprint-where-idleness-decided; the readings (Ren)."
+  },
   "correspondence": {
-    "zh": "P78（工作板），同上。读法（AI 的，待 Ren）：在次序之内，被登记的是经关系项或依存相连的交换的次序；两者都不相连的交换可以任意次序取。于是规律所需的次序会是交换的偏序而不是步的序列；使之精确的逆方向没有证明。见整合文档 §102。",
-    "en": "P78 (work board), as above. Reading (the AI's, pending Ren): within the order, what registers is the order of exchanges joined through a relatum or a dependence; exchanges joined by neither may be taken in either order. The order the laws need would then be a partial order of exchanges, not a sequence of steps; the converse that makes this exact is in order-of-exchanges-is-the-invariant. See the integration document §102."
+    "zh": "读法（AI 的，待 Ren）：在次序之内，被登记的是经关系项或依存相连的交换的次序；两者都不相连的交换可以任意次序取。于是规律所需的次序会是交换的偏序而不是步的序列；使之精确的逆方向见 order-of-exchanges-is-the-invariant。",
+    "en": "Reading (the AI's, pending Ren): within the order, what registers is the order of exchanges joined through a relatum or a dependence; exchanges joined by neither may be taken in either order. The order the laws need would then be a partial order of exchanges, not a sequence of steps; the converse that makes this exact is in order-of-exchanges-is-the-invariant."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
   "aliases": [
@@ -117,23 +287,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
-      "detail": {
-        "zh": "Crossing 与 Arising：两个可交换且仍平衡的交换，次序相反时活动需要支持或只有活跃者给予不再成立。",
-        "en": "Crossing and Arising: two exchanges that commute and still balance, where in the other order activity needing support, or only active relata giving, fails."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "足迹的原记录读法是给定的；P88 在闲置可判定时构造最小足迹（逆刻画另需关系项相等可判定），见 least-footprint-where-idleness-decided；存量耗减只在两步上；普查沿两侧分开的重排双向保持，任意交换只保证正向；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "The original footprint reading is supplied; P88 constructs the least footprint with decided idleness (the converse additionally needs decidable equality of relata), see least-footprint-where-idleness-decided. Running down is shown only at the two steps; census existence carries both ways along split-sided reorderings and only forward under arbitrary commutation; the readings are the AI's, pending Ren; no ethical predicate occurs."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Order 的 266 项定理全部空依赖，其中含 Flow.Commuted、Web.Commuted、Web.Split、World.commute、World.commute_laws、World.commute_counts、Reorders、Reorders.laws、Reorders.totals、Crossing.order_registers、Arising.order_registers、Footprinted、Footprinted.Contains、Footprinted.split、Footprinted.reorder_premises、Reorders.counts、Crossing.reorders_joined与 Arising.reorders_joined；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §102；尚无独立审查。 P88 普查增量实际检查：合并回执 20261013T094743.528770Z 中 OrderNormal 的 101 项定理均为空公理报告；其中 Reorders.census 及普查构造按当前源码绑定。范围审读见 §109，尚无独立全证明审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 266 theorems of Becoming.Order all have empty axiom reports, among them Flow.Commuted, Web.Commuted, Web.Split, World.commute, World.commute_laws, World.commute_counts, Reorders, Reorders.laws, Reorders.totals, Crossing.order_registers, Arising.order_registers, Footprinted, Footprinted.Contains, Footprinted.split, Footprinted.reorder_premises, Reorders.counts, Crossing.reorders_joined and Arising.reorders_joined. The same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §102 of the integration note; there is no independent review yet. P88 census delta actually checked: all 101 OrderNormal theorems have empty axiom reports in consolidated receipt 20261013T094743.528770Z; Reorders.census and its census constructions are bound to current source. Scope review is in §109; no independent full proof review."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
@@ -398,10 +551,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "沿重排的普查已在 P88 接入本记录，最小足迹见 least-footprint-where-idleness-decided；无界重排与连续时间对应仍开放。",
-    "en": "The census along reorderings is incorporated here by P88; the least footprint is in least-footprint-where-idleness-decided. Unbounded reorderings and continuous-time correspondence remain open."
-  },
   "history": [
     {
       "zh": "2026-10-13：接续并整合 P78 的现存证明包；见整合文档 §102。",
@@ -482,6 +631,20 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划 F 流：lint 发现最多的 schema 1 记录）：主张拆为 12 条规律并写出其声明；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。主张中“P88 接续”的部分改为规律 11、12；对应开头“P78（工作板），同上”与结尾“见整合文档 §102”移到此处；第二条前提去掉标号 P78b；限制中“P88 构造最小足迹”去掉标号。中文对应原写“使之精确的逆方向没有证明”，与英文及第二条前提（逆方向见 order-of-exchanges-is-the-invariant）不一致，是 P88 更正时漏改的旧边界，现按英文写。规律 4 写出 World.commute_counts 对生起与止息计数所需的“两个世界中活动都可判定”（旧文只在 Reorders.counts 处写出），并引用通用边界 decidability。主张结尾“不加前提”保留在规律 10 末；关于普查的最后一句按中文（也不推出）写作“未表明”，英文“does not preserve the other premises”改为“does not show the other premises preserved”。下一步中“沿重排的普查已在 P88 接入本记录”由规律 11、12 体现。证据段的定理数（Order 266 项、OrderNormal 101 项）与所列声明留在回执与快照中；作者反审在整合文档 §102，普查增量的范围审读在 §109。每句旧文本的去向见迁移对照表 [exchanges-commute-unless-joined.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/exchanges-commute-unless-joined.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan, stream F: the schema-1 records with the most lint findings): the claim became twelve laws with their declarations; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The claim's ‘P88 continuation’ became laws 11 and 12; the correspondence's opening ‘P78 (work board), as above.’ and closing ‘See the integration document §102.’ moved here; the second premise drops the label P78b, and the limitation on the least footprint drops P88. The Chinese correspondence said the converse making the reading exact was unproved (使之精确的逆方向没有证明), against the English and the second premise (the converse is in order-of-exchanges-is-the-invariant): a stale boundary the P88 correction missed in Chinese, now written as in English. Law 4 writes out the decided activity in both worlds that World.commute_counts asks for the counts of arising and ceasing (the old text wrote it only for Reorders.counts), and the decidability key is cited. The claim's closing ‘No premise.’ stays at the end of law 10, and its last census sentence became a does-not-show item read as the Chinese has it (也不推出): ‘does not preserve the other premises’ became ‘does not show the other premises preserved’. The next step's ‘the census along reorderings is incorporated here by P88’ is carried by laws 11 and 12. The evidence's theorem counts (266 in Order, 101 in OrderNormal) and its list of declarations stay in the receipt and the snapshot; the author's counterreview is §102 of the integration note, the census delta's scope review §109. Every earlier sentence is mapped in the migration table [exchanges-commute-unless-joined.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/exchanges-commute-unless-joined.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/21189426f2e0dadd/exchanges-commute-unless-joined.json",
+      "sha256": "21189426f2e0dadd9bb446c57e61d3ed184c5aeb4c170b30bd557c21a94c3c5a",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
