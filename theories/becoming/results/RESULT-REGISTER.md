@@ -110,7 +110,7 @@
 | `joint-code-plan-lifting` | [提升有限嵌套共同方案 / Lifting finite nested joint plans](records/joint-code-plan-lifting.md) | theorem | recorded-checked |
 | `joint-correlation-reduced-dynamics` | [局部状态不变的关系转化与充分约化 / Relational transformation with unchanged local states and a sufficient reduction](records/joint-correlation-reduced-dynamics.md) | theorem | recorded-checked |
 | `joint-decomposition-lifting` | [从整体代码提升共同分解 / Lifting a joint decomposition from a whole code](records/joint-decomposition-lifting.md) | theorem | recorded-checked |
-| `joint-difference-making` | [共同活动中的差别制造：多重决定下 but-for 与关系参与分离 / Difference-making in joint activity: but-for and relational participation come apart under overdetermination](records/joint-difference-making.md) | theorem | recorded-checked |
+| `joint-difference-making` | [共同活动中的差别制造 / Difference-making in joint activity](records/joint-difference-making.md) | theorem | recorded-checked |
 | `joint-plan-composition` | [局部方案的共同接续 / Joint continuation of local plans](records/joint-plan-composition.md) | theorem | recorded-checked |
 | `joint-practice-forms-continuation` | [共同实践形成后续参与与接续 / Joint practice forms further participation and continuation](records/joint-practice-forms-continuation.md) | theorem | recorded-checked |
 | `joint-target-uniqueness` | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](records/joint-target-uniqueness.md) | theorem | recorded-checked |
@@ -158,7 +158,7 @@
 | `process-and-frame-as-readings` | [过程与框架作为一个展开的读法 / Process and frame as readings of one unfolding](records/process-and-frame-as-readings.md) | theorem | recorded-checked |
 | `projection-carrying-a-law` | [承载规律的投影 / A projection carrying a law](records/projection-carrying-a-law.md) | theorem | recorded-checked |
 | `protection-priority-excludes-uniform-aggregation` | [基本条件优先 / Basic-condition priority](records/protection-priority-excludes-uniform-aggregation.md) | theorem | recorded-checked |
-| `ranking-under-readings` | [C 在各读法下的排序：逐步读法保持“共享优于以消耗取胜”，保持满足每个所需的节制优于过度汲取；过度汲取者在损失之前有被记入的事件时，失去“没有它更好”；可能性读法下，C 像整段读法那样把过度汲取者的不在场、节制与共享排在上面而不扣下事件，在公理之下按它的扩展就是保留且增加；不增加可能性的在场与不在场不分高下，可能性优先把在场排得更高，也把休息排在活动之下（P44） / What C ranks under each reading: the stepwise reading keeps “sharing is better than winning by consumption” and restraint that meets every need above overdraw, and loses “better without the overdrawing formation” when that formation has a credited event before the loss; under the possibility reading C ranks the absence of overdraw, restraint and sharing as the whole-run reading does while withholding no event, extension under it being retaining and adding under the axiom; a presence adding no possibility ties with its absence, and possibilities first ranks that presence higher and a rest below activity (P44)](records/ranking-under-readings.md) | theorem | recorded-checked |
+| `ranking-under-readings` | [比较原则 C 在各读法下的排序 / What comparison principle C ranks under each reading](records/ranking-under-readings.md) | theorem | recorded-checked |
 | `recoverable-mediated-change` | [中断改变后的证据恢复与纠正边界 / Evidence recovery and corrective-access limits after interrupted change](records/recoverable-mediated-change.md) | theorem | recorded-checked |
 | `recurrence-without-decidedness` | [不用可判定性的复现 / Recurrence without decidedness](records/recurrence-without-decidedness.md) | theorem | recorded-checked |
 | `recurrence-without-premise` | [每个变化之律下的复现 / Recurrence under every law of change](records/recurrence-without-premise.md) | theorem | recorded-checked |
@@ -192,7 +192,7 @@
 | `significance-retained-within-margin` | [余量之内保留的意义 / Significance retained within the margin](records/significance-retained-within-margin.md) | theorem | recorded-checked |
 | `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |
 | `space-and-its-parts` | [整体与其部分 / The whole and its parts](records/space-and-its-parts.md) | theorem | recorded-checked |
-| `substitution-preserves-consumption` | [替代在整段读法下保持消耗：能替代条件的消耗者以转化依存的方式持续，整段仍是消耗的 / Substitution preserves consumption on the whole-run reading: a consumer that can substitute a condition persists by transforming its dependence and still consumes over the run](records/substitution-preserves-consumption.md) | theorem | recorded-checked |
+| `substitution-preserves-consumption` | [替代在整段读法下保持消耗 / Substitution preserves consumption on the whole-run reading](records/substitution-preserves-consumption.md) | theorem | recorded-checked |
 | `subthreshold-registration` | [阈下的差别 / Differences below the threshold](records/subthreshold-registration.md) | theorem | recorded-checked |
 | `sum-over-histories-exact` | [精确的历史之和 / The exact sum over histories](records/sum-over-histories-exact.md) | theorem | recorded-checked |
 | `support-from-the-supported` | [来自被支持者的支持 / Support from the supported](records/support-from-the-supported.md) | theorem | recorded-checked |
