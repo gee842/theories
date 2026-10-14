@@ -1,0 +1,17 @@
+{
+  "tree": "/private/tmp/claude-501/-Users-ren-theories/de45ebc5-e5b8-4ea1-944c-69eadababe8f/scratchpad/review/probe",
+  "modules": 21,
+  "ran": [
+    "Becoming.ReviewProbeGL",
+    "BecomingReviewProbeGLAxiomAudit"
+  ],
+  "reused": 20,
+  "unclean": [],
+  "audits": {
+    "Becoming.ReviewProbeGL": {
+      "theorems": 5,
+      "declarations": 8,
+      "with_axioms": {}
+    }
+  }
+}

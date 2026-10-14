@@ -97,8 +97,8 @@
       ]
     },
     {
-      "en": "Where the three-access repair disconnects the common backbone, that course is strictly matched below no course.",
-      "zh": "三接入修复断开共同骨干时，该路线在任何路线之下都没有严格匹配。",
+      "en": "Where the three-access repair disconnects the common backbone, that course is strictly better by matching than no course.",
+      "zh": "三接入修复断开共同骨干时，该路线经严格匹配不优于任何路线。",
       "declarations": [
         "Becoming.RepairComparison.fragile_b3_loses_backbone",
         "Becoming.RepairComparison.fragile_b3_not_matching",
@@ -195,8 +195,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
       "detail": {
-        "zh": "三接入安装实际断开共同骨干的给定设备律下，保护没有兑现且额外共同损失保留；fragile_b3_not_matching 排除原匹配。 一般规律：每个主张都依于骨干时，失去骨干的路线在任何路线之下都没有严格匹配（not_strictLossMatch_of_base_lost；本例 fragile_b3_below_nothing，对任何内容读法成立）。",
-        "en": "When the supplied equipment law makes the three-access installation disconnect the backbone, protection fails and the common loss remains; fragile_b3_not_matching excludes the original matching. The general law: where every claim rests on the backbone, a course losing it is strictly matched below no course (not_strictLossMatch_of_base_lost; here fragile_b3_below_nothing, under any content reading)."
+        "zh": "三接入安装实际断开共同骨干的给定设备律下，保护没有兑现且额外共同损失保留；fragile_b3_not_matching 排除原匹配。 一般规律：每个主张都依于骨干时，失去骨干的路线经严格匹配不优于任何路线（not_strictLossMatch_of_base_lost；本例 fragile_b3_below_nothing，对任何内容读法成立）。",
+        "en": "When the supplied equipment law makes the three-access installation disconnect the backbone, protection fails and the common loss remains; fragile_b3_not_matching excludes the original matching. The general law: where every claim rests on the backbone, a course losing it is strictly better by matching than no course (not_strictLossMatch_of_base_lost; here fragile_b3_below_nothing, under any content reading)."
       }
     },
     {
@@ -553,6 +553,10 @@
     {
       "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
       "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
+    },
+    {
+      "en": "14 October 2026, seventeenth independent review, finding G1 (BECOMING-GENERAL-LAWS-REVIEW.md): item 10 corrected law 5 but left the same inverted wording in law 9 and in the fifth counterexample. \"Strictly matched below no course\" reads as \"the worse side of no strict match\", the converse of `not_strictLossMatch_of_base_lost` and of `RepairComparison.fragile_b3_below_nothing` (the course is the better side of no strict match); a configuration that loses the common support can be the worse side of one. Both now use law 5's wording, \"strictly better by matching than no course\". The Lean statements are unchanged; the Lean docstrings and the declaration name with the same inversion are left to the integrator. No premise, status, dependency, reference, proof binding or source hash changed.",
+      "zh": "2026年10月14日，第十七次独立审查发现 G1（BECOMING-GENERAL-LAWS-REVIEW.md）：第10项改正了定律5，但定律9与第五个反例仍用同一颠倒的说法。“在任何路线之下都没有严格匹配”读作“不是任何严格匹配中较差的一方”，与 `not_strictLossMatch_of_base_lost` 及 `RepairComparison.fragile_b3_below_nothing` 相反（它们说该路线不是任何严格匹配中较好的一方）；失去共同支持的配置可以是严格匹配中较差的一方。两处现都用定律5的说法“经严格匹配不优于任何路线”。Lean 陈述不变；带同一颠倒的 Lean 文档注释与声明名留给整合会话。前提、状态、依赖、引用、证明绑定与来源哈希均未改变。"
     }
   ],
   "text_versions": [
