@@ -1,0 +1,19 @@
+import ExplanatoryJoiningAnchors
+#print axioms Generative.ExplanatoryJoiningAnchors.RoleTotal
+#print axioms Generative.ExplanatoryJoiningAnchors.coarseJoin
+#print axioms Generative.ExplanatoryJoiningAnchors.units_role_total
+#print axioms Generative.ExplanatoryJoiningAnchors.role_total_collapse_open
+#print axioms Generative.ExplanatoryJoiningAnchors.units_collapse_open
+#print axioms Generative.ExplanatoryJoiningAnchors.units_same_incidence_questions
+#print axioms Generative.ExplanatoryJoiningAnchors.coarseAccount
+#print axioms Generative.ExplanatoryJoiningAnchors.coarse_account_exact
+#print axioms Generative.ExplanatoryJoiningAnchors.coarse_account_reduced
+#print axioms Generative.ExplanatoryJoiningAnchors.every_admitted_history_collapses
+#print axioms Generative.ExplanatoryJoiningAnchors.spent
+#print axioms Generative.ExplanatoryJoiningAnchors.spent_has_no_self_result
+#print axioms Generative.ExplanatoryJoiningAnchors.coarse_self_join_loses_real_failure
+#print axioms Generative.ExplanatoryJoiningAnchors.PairLifting
+#print axioms Generative.ExplanatoryJoiningAnchors.open_map_does_not_force_pair_lifting
+#print axioms Generative.ExplanatoryJoiningAnchors.same_incidence_distinct_boundary_probes
+#print axioms Generative.ExplanatoryJoiningAnchors.SelfJoinable
+#print axioms Generative.ExplanatoryJoiningAnchors.retained_anchor_separates

@@ -1,0 +1,18 @@
+import ExplanatoryUniversality
+#print axioms Generative.ExplanatoryUniversality.Saturated
+#print axioms Generative.ExplanatoryUniversality.Lift
+#print axioms Generative.ExplanatoryUniversality.RelExact
+#print axioms Generative.ExplanatoryUniversality.lift_contains
+#print axioms Generative.ExplanatoryUniversality.saturation_gives_exact_lift
+#print axioms Generative.ExplanatoryUniversality.exact_relation_forces_saturation
+#print axioms Generative.ExplanatoryUniversality.relation_descends_iff_saturated
+#print axioms Generative.ExplanatoryUniversality.lift_exact_iff_saturated
+#print axioms Generative.ExplanatoryUniversality.relational_reading_unique_on_used
+#print axioms Generative.ExplanatoryUniversality.separating_relation_blocks_descent
+#print axioms Generative.ExplanatoryUniversality.AllPredicates
+#print axioms Generative.ExplanatoryUniversality.all_predicates_separate
+#print axioms Generative.ExplanatoryUniversality.all_predicates_force_injective
+#print axioms Generative.ExplanatoryUniversality.all_predicates_every_relation
+#print axioms Generative.ExplanatoryUniversality.all_predicates_relation_recoverable
+#print axioms Generative.ExplanatoryUniversality.all_predicates_automatically_reduced
+#print axioms Generative.ExplanatoryUniversality.all_predicates_unique_correspondence

@@ -1,0 +1,42 @@
+'Generative.ExplanatoryJointness.FiberCompact' does not depend on any axioms
+'Generative.ExplanatoryJointness.finite_exclusions' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJointness.finite_fiber_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.Test' does not depend on any axioms
+'Generative.ExplanatoryJointness.Model' does not depend on any axioms
+'Generative.ExplanatoryJointness.Holds' does not depend on any axioms
+'Generative.ExplanatoryJointness.allTests' does not depend on any axioms
+'Generative.ExplanatoryJointness.holds_allTests' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJointness.Same' does not depend on any axioms
+'Generative.ExplanatoryJointness.StepCompact' does not depend on any axioms
+'Generative.ExplanatoryJointness.JointCompact' does not depend on any axioms
+'Generative.ExplanatoryJointness.Bisimulation' does not depend on any axioms
+'Generative.ExplanatoryJointness.same_symm' does not depend on any axioms
+'Generative.ExplanatoryJointness.complete_theory_same' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.bisimulation_preserves_tests' does not depend on any axioms
+'Generative.ExplanatoryJointness.compact_step_match' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.compact_joint_match' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.compact_same_bisimulation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.compact_same_iff_bisimilar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.finite_steps_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.finite_joints_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.Separated' does not depend on any axioms
+'Generative.ExplanatoryJointness.same_target_unique' does not depend on any axioms
+'Generative.ExplanatoryJointness.separated_joint_correspondence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryJointness.codeJoint' does not depend on any axioms
+'Generative.ExplanatoryJointness.code_joint_lifts_from_whole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.Plan' does not depend on any axioms
+'Generative.ExplanatoryJointness.Realizes' does not depend on any axioms
+'Generative.ExplanatoryJointness.joint_plan_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJointness.sequential' does not depend on any axioms
+'Generative.ExplanatoryJointness.embed' does not depend on any axioms
+'Generative.ExplanatoryJointness.embed_preserves' does not depend on any axioms
+'Generative.ExplanatoryJointness.Reach' does not depend on any axioms
+'Generative.ExplanatoryJointness.bisimulation_lifts_reach' does not depend on any axioms
+'Generative.ExplanatoryJointness.compact_generated_correspondence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryJointness.separated_step_correspondence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

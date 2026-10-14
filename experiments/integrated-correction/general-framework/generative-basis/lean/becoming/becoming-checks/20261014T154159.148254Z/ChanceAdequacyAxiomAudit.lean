@@ -1,0 +1,15 @@
+import ChanceAdequacy
+#print axioms ChanceAdequacy.mass
+#print axioms ChanceAdequacy.IncludedOn
+#print axioms ChanceAdequacy.total
+#print axioms ChanceAdequacy.mass_monotone
+#print axioms ChanceAdequacy.positive_added_event_strictly_increases_mass
+#print axioms ChanceAdequacy.dirac_mass_positive_iff
+#print axioms ChanceAdequacy.all_weights_preserve_mass_iff
+#print axioms ChanceAdequacy.target
+#print axioms ChanceAdequacy.Fulfilled
+#print axioms ChanceAdequacy.fulfillment_gives_chance_floor
+#print axioms ChanceAdequacy.repair
+#print axioms ChanceAdequacy.repair_covers_target_and_candidate
+#print axioms ChanceAdequacy.repair_adds_positive_new_protection
+#print axioms ChanceAdequacy.positive_chance_can_miss_due_protection

@@ -1,0 +1,11 @@
+'Generative.DerivedHistoryLaw.derivedProcess' does not depend on any axioms
+'Generative.DerivedHistoryLaw.FiberFuture' does not depend on any axioms
+'Generative.DerivedHistoryLaw.ExactFuture' does not depend on any axioms
+'Generative.DerivedHistoryLaw.admitted_extension_projects' does not depend on any axioms
+'Generative.DerivedHistoryLaw.derived_trace_sound' does not depend on any axioms
+'Generative.DerivedHistoryLaw.exact_iff_fiber_future' does not depend on any axioms
+'Generative.DerivedHistoryLaw.distinguishing_merge_creates_false_continuation' does not depend on any axioms
+'Generative.DerivedHistoryLaw.unrestricted' does not depend on any axioms
+'Generative.DerivedHistoryLaw.singletonFalseCode' does not depend on any axioms
+'Generative.DerivedHistoryLaw.unrestricted_summary_exact' does not depend on any axioms
+'Generative.DerivedHistoryLaw.exact_futures_can_change_encoded_endpoint' does not depend on any axioms

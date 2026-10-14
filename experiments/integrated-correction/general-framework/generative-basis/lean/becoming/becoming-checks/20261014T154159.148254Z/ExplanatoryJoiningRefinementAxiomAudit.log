@@ -1,0 +1,15 @@
+'Generative.ExplanatoryJoiningRefinement.occurrence_ext' does not depend on any axioms
+'Generative.ExplanatoryJoiningRefinement.ofTuple' does not depend on any axioms
+'Generative.ExplanatoryJoiningRefinement.ofTuple_at' does not depend on any axioms
+'Generative.ExplanatoryJoiningRefinement.mapOccurrence' does not depend on any axioms
+'Generative.ExplanatoryJoiningRefinement.mapOccurrence_at' does not depend on any axioms
+'Generative.ExplanatoryJoiningRefinement.mapPosition' does not depend on any axioms
+'Generative.ExplanatoryJoiningRefinement.map_step' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRefinement.open_map_lifts_step' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRefinement.open_map_bisimulation' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRefinement.open_map_preserves_questions' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRefinement.identity_open' does not depend on any axioms
+'Generative.ExplanatoryJoiningRefinement.commonFactor' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRefinement.common_factor_preserves_joins' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRefinement.common_factor_unique' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJoiningRefinement.universal_common_factor' depends on axioms: [propext, Quot.sound]

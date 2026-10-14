@@ -1,0 +1,14 @@
+'BecomingReversibility.Reach' does not depend on any axioms
+'BecomingReversibility.Possible' does not depend on any axioms
+'BecomingReversibility.reach_refl' does not depend on any axioms
+'BecomingReversibility.reach_trans' does not depend on any axioms
+'BecomingReversibility.possible_before_reached' does not depend on any axioms
+'BecomingReversibility.no_endpoint_loss_iff_return' does not depend on any axioms
+'BecomingReversibility.same_endpoint_possibilities_iff_return' does not depend on any axioms
+'BecomingReversibility.irreversible_iff_endpoint_loss' does not depend on any axioms
+'BecomingReversibility.loss_persists_along_continuation' does not depend on any axioms
+'BecomingReversibility.oneWay' does not depend on any axioms
+'BecomingReversibility.twoWay' does not depend on any axioms
+'BecomingReversibility.oneWay_no_return' does not depend on any axioms
+'BecomingReversibility.same_occurring_change_different_return' does not depend on any axioms
+'BecomingReversibility.incomplete_questions_can_hide_irreversibility' does not depend on any axioms

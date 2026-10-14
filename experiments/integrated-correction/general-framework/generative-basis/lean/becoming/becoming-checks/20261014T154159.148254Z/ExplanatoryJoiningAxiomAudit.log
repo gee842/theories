@@ -1,0 +1,36 @@
+'Generative.ExplanatoryJoining.Fragment' does not depend on any axioms
+'Generative.ExplanatoryJoining.Valid' does not depend on any axioms
+'Generative.ExplanatoryJoining.idle' does not depend on any axioms
+'Generative.ExplanatoryJoining.merge' does not depend on any axioms
+'Generative.ExplanatoryJoining.Joint' does not depend on any axioms
+'Generative.ExplanatoryJoining.Joined' does not depend on any axioms
+'Generative.ExplanatoryJoining.idle_valid' does not depend on any axioms
+'Generative.ExplanatoryJoining.joint_iff_joined' does not depend on any axioms
+'Generative.ExplanatoryJoining.joined_functional' does not depend on any axioms
+'Generative.ExplanatoryJoining.joint_merge_valid' does not depend on any axioms
+'Generative.ExplanatoryJoining.joined_valid' does not depend on any axioms
+'Generative.ExplanatoryJoining.merge_associative' depends on axioms: [propext]
+'Generative.ExplanatoryJoining.joint_chain_left' does not depend on any axioms
+'Generative.ExplanatoryJoining.joint_chain_right' does not depend on any axioms
+'Generative.ExplanatoryJoining.joined_associative' depends on axioms: [propext]
+'Generative.ExplanatoryJoining.idle_left_probe' does not depend on any axioms
+'Generative.ExplanatoryJoining.idle_right_probe' does not depend on any axioms
+'Generative.ExplanatoryJoining.joined_idle_left' does not depend on any axioms
+'Generative.ExplanatoryJoining.joined_idle_right' depends on axioms: [propext]
+'Generative.ExplanatoryJoining.Probe' does not depend on any axioms
+'Generative.ExplanatoryJoining.probeTarget' does not depend on any axioms
+'Generative.ExplanatoryJoining.same_probes_iff_boundaries' does not depend on any axioms
+'Generative.ExplanatoryJoining.probes_recover_joint' does not depend on any axioms
+'Generative.ExplanatoryJoining.exact_codes_retain_boundaries' does not depend on any axioms
+'Generative.ExplanatoryJoining.RecoveredJoint' does not depend on any axioms
+'Generative.ExplanatoryJoining.exact_reads_recover_joint' does not depend on any axioms
+'Generative.ExplanatoryJoining.boundary_replacement_preserves_joint' does not depend on any axioms
+'Generative.ExplanatoryJoining.budgetProcess' does not depend on any axioms
+'Generative.ExplanatoryJoining.spend' does not depend on any axioms
+'Generative.ExplanatoryJoining.spend_valid' does not depend on any axioms
+'Generative.ExplanatoryJoining.spend_cannot_self_join' does not depend on any axioms
+'Generative.ExplanatoryJoining.boundary_idles_distinguished' does not depend on any axioms
+'Generative.ExplanatoryJoining.loopProcess' does not depend on any axioms
+'Generative.ExplanatoryJoining.loop' does not depend on any axioms
+'Generative.ExplanatoryJoining.loop_valid' does not depend on any axioms
+'Generative.ExplanatoryJoining.probes_miss_internal_word' does not depend on any axioms

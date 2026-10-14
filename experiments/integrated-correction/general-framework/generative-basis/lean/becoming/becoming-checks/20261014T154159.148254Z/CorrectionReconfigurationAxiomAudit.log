@@ -1,0 +1,48 @@
+'CorrectionReconfiguration.FaultExpr' does not depend on any axioms
+'CorrectionReconfiguration.fails' does not depend on any axioms
+'CorrectionReconfiguration.Subset' does not depend on any axioms
+'CorrectionReconfiguration.failure_monotone' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.survives_subset' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.Arrangement' does not depend on any axioms
+'CorrectionReconfiguration.induced' does not depend on any axioms
+'CorrectionReconfiguration.envelope' does not depend on any axioms
+'CorrectionReconfiguration.Covered' does not depend on any axioms
+'CorrectionReconfiguration.induced_membership' depends on axioms: [propext]
+'CorrectionReconfiguration.induced_monotone' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.outside_bound_survives' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.derived_certificate_sound' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.ready' does not depend on any axioms
+'CorrectionReconfiguration.ready_separates' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.ready_iff_nonempty_separated' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.derived_certificate_available' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.derived_actual_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionReconfiguration.Managed' does not depend on any axioms
+'CorrectionReconfiguration.responseCost' does not depend on any axioms
+'CorrectionReconfiguration.reconfigure' does not depend on any axioms
+'CorrectionReconfiguration.admitted_configuration' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.reform_does_not_expand_mandate' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.old_request_rejected_after_reform' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.admitted_budget_for_shorter_route' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.admitted_reform_completes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionReconfiguration.unavailable_candidate_rejected' depends on axioms: [propext]
+'CorrectionReconfiguration.unauthorized_reform_rejected' depends on axioms: [propext]
+'CorrectionReconfiguration.separate3' does not depend on any axioms
+'CorrectionReconfiguration.merged3' does not depend on any axioms
+'CorrectionReconfiguration.repaired4' does not depend on any axioms
+'CorrectionReconfiguration.duplicated4' does not depend on any axioms
+'CorrectionReconfiguration.original' does not depend on any axioms
+'CorrectionReconfiguration.causal_envelopes_compute' does not depend on any axioms
+'CorrectionReconfiguration.causal_readiness_changes' does not depend on any axioms
+'CorrectionReconfiguration.renamed_support_is_not_redundancy' does not depend on any axioms
+'CorrectionReconfiguration.stale_envelope_accepts_captured_support' does not depend on any axioms
+'CorrectionReconfiguration.reform_rejects_shared_control' does not depend on any axioms
+'CorrectionReconfiguration.renewed' does not depend on any axioms
+'CorrectionReconfiguration.renewedRequest' does not depend on any axioms
+'CorrectionReconfiguration.survivingReads' depends on axioms: [propext]
+'CorrectionReconfiguration.survivingApprovals' does not depend on any axioms
+'CorrectionReconfiguration.repaired_reform_installs' does not depend on any axioms
+'CorrectionReconfiguration.repaired_reform_completes_correction' depends on axioms: [propext]
+'CorrectionReconfiguration.old_approvals_fail_after_reform' depends on axioms: [propext]
+'CorrectionReconfiguration.review_alone_funded_is_not_enough' does not depend on any axioms
+'CorrectionReconfiguration.exact_combined_budget_suffices' does not depend on any axioms
+'CorrectionReconfiguration.omitted_shared_cause_still_breaks_model' does not depend on any axioms
