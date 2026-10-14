@@ -7957,7 +7957,65 @@ theorem alike_postponed_iff_determined {F : Frame S A C} :
 
 **边界。** 落地运行须在 `check_becoming.py` 中编译与审计 `Becoming.Postponement`，再把 tests-fix-likeness-where-determined 的新证明引用与别名绑定到回执。既有模块的字节不变。
 
-## 122. 第十七次审查的更正：文字、改名与一处由构造给出的平衡
+## 122. 外围证明接入脊柱（整合 I1）：像有限模型上同测即相同（以排中律为假设）、目标唯一、自身之善的第二步即剖面上的 N_rel
+
+2026-10-14。Ren：“push as far as possible, as strong as possible, generally agree with your direction - but i also realize - a lot proofs are probably not integrated”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md)）。整合会话批准“I”一列（整合），由 Current math core 执行；I1 只取证明模块已由脊柱运行编译的记录。
+
+```text
+Result(s): 改写 branching-tests-bisimulation、branching-target-uniqueness、self-good-reachable-g0（脊柱上的陈述、别名、next_delta），
+           finite-trace-transport、positioned-positive-reason、positive-ground-open-futures、practical-judgment-g0-j
+           （脊柱引用；源码绑定到脊柱运行 20261014T100026.593496Z）；不新增记录
+Delta: Becoming.Likeness 新增 5 项定理（114 项定理／151 项声明）；Becoming.Bridge 新增 1 个定义、7 项定理（60 项定理／81 项声明）；
+       测量工具 SPINE-INTEGRATION.py
+Supplied premises / correspondence: 排中律只作为三项核心定理与两项桥接定理的假设（em : ∀ p : Prop, Decided p）；
+           剖面估值把每个剖面计为活的
+Evidence: scratch_build 实编（对 main d4321903）：每条声明公理报告为空，无警告；不是回执。可判定性清点在草稿上重跑：
+          排中律作为假设 11 → 14，其余各类不变
+Boundary: 见下文“边界”
+Integration: §9 L3 与桥接两行；Becoming.Likeness 与 Becoming.Bridge 头注；七项记录
+```
+
+**测量。** `SPINE-INTEGRATION.py` 读合并检查器的回执，按主张在何处证明给记录分类，并数脊柱运行之外、受版本管理的 Lean 定理（按“文件名、声明名”去重；脊柱运行所编译模块的旧版本不计；只在运行目录、核验历史、来源与快照中出现的另计）。在回执 20261014T100026.593496Z 上：运行编译 138 个模块（核心 95、基础 3、桥接 4、继承 36）。main 上 203 项记录中，按规范来源与别名，146 项在脊柱上陈述，6 项的主证明在继承模块中，41 项在运行之外，10 项没有 Lean 证明；本节之后为 149、3、41、10。较宽的口径，引用某项脊柱证明的记录，148 → 154。运行之外，活路径中有约 11 000 项不同定理、约 540 个模块，另有约 8 000 项只在副本与证据中。最大的几族：universal-ethics（约 2 200 项／104 个模块）、inquiry-root（约 1 800／66）、deeper（约 1 100／71）、general-framework 顶层（约 1 000／50）、connected（约 830／38）、market-generativity/meta-attractor（约 700／22）、本研究目录中的 Lean（约 680／45）、shared-renewal-capability/regulation（约 570／28）、systems-complexity（约 520／27）。这是文本测量，不运行 Lean。
+
+**像有限模型上同测即相同，以排中律为假设。** §120 把外围 `same_iff_bisimilar` 的经典证明留在外围。它所用的只是排中律：以排中律为假设，核心证明凡每一动作的结果都已列出，通过同样分支检验的配置就相同，动作与主张都无须列出：
+
+```lean
+theorem alike_of_sameBranchingTests_of_em (em : ∀ p : Prop, Decided p)
+    (outcomes : ∀ s a, ∃ l : List S, ∀ t, F.P.step s a t ↔ t ∈ l)
+    (outcomes' : ∀ s a, ∃ l : List S', ∀ t, G.P.step s a t ↔ t ∈ l) {s : S} {s' : S'}
+    (same : SameBranchingTests F G s s') : Alike F G s s'
+```
+
+同测本身是互模拟：一步的结果若与对方同一动作的每个列出的结果都不同测，各取一项区分的检验（`apart_of_not_sameBranchingTests`，由排中律得出），合起来经 `BranchingTest.apart_from_list` 成一项检验，动作之后它区分两个起点，与同测矛盾。经桥接，外围定理即核心定理在模型上的实例：
+
+```lean
+theorem same_iff_bisimilar_of_em (em : ∀ p : Prop, Decided p)
+    {m : ExplanatoryBranching.Model S A O} {n : ExplanatoryBranching.Model T A O}
+    (fm : ExplanatoryBranching.ImageFinite m) (fn : ExplanatoryBranching.ImageFinite n)
+    (s : S) (t : T) :
+    ExplanatoryBranching.Same m n s t ↔ ∃ R, ExplanatoryBranching.Bisimulation m n R ∧ R s t
+```
+
+于是分支检验固定相同的情形排成一列：有限且已定，不需要任何原则（§118）；动作与主张已列出、只列出每个动作的结果，恰需 EitherThroughout（§120）；动作或主张也不列出，排中律足够（本节）。弱于排中律的原则在最后一种情形是否足够，未表明，记为 branching-tests-bisimulation 的下一步。
+
+**目标唯一。** 相同分离一个框架的配置时，一个配置至多与其中一个相同（`Alike.functional`）；分支检验亦然（`SameBranchingTests.functional`）。检验分离一个模型，恰当核心的分支检验分离其框架（`separated_iff`），所以外围的 `same_functional` 即后者。
+
+**自身之善的第二步即剖面上的 N_rel。** self-good-reachable-g0 的下一步要求“在脊柱上把本路线的剖面模型接到 N_rel 的已形成关系”。`profileValuation s val step` 是以立场的剖面为主张的估值：每个剖面计为活的，一个剖面与一小步之外的剖面相关，有自身的活发生具有它时是自身的，`val` 成立时有意义。容差即其上 N_rel 的中立（`tolerant_iff_neutral`），小步之链即沿相关剖面的可达（`chain_iff_reach_profiles`），随附性下的 S0 即其上的 S0（`selfGood_profiles`），于是外围的 `tolerant_chain_reaches` 由核心的 `Valuation.reaches` 推出（`tolerant_chain_reaches_by_core`）。
+
+**读作脊柱的定义。** 其余四项记录的证明模块由脊柱运行作为继承模块编译，其中各项一般定理在该运行中公理报告为空（`competing_claims_incomparable` 与有限积分的若干定理用到 propext 等，如各记录所列）。桥接表明它们的定义按定义就是核心的（`g0_iff`、`positionedArticulation_iff`、`securesPositiveGround_iff`、`BetterAt`、`robust_iff_commonResponse`），所以这些定理按原样对脊柱的定义成立；脊柱由 Becoming.Significance 的公理推出 positioned-positive-reason 与 positive-ground-open-futures 的中心定理（§6.12 的三项），并有自身的路线（`universal_reason`）。GenerativeCore 是核心所依的基础，finite-trace-transport 的 `trace_map` 本就在脊柱中，此处只补上脊柱运行的绑定。
+
+**作者反审。**
+1. **新律还是重述？** `alike_of_sameBranchingTests_of_em` 是经典的 Hennessy–Milner 论证，在核心中以排中律为显式假设陈述；新的是它与 §118、§120 合成一列，并使外围定理成为核心定理的实例。`Alike.functional` 与 `SameBranchingTests.functional` 是两行的推论；`profileValuation` 一组是对应，不是新定理：它说明外围路线的形式就是 N_rel。
+2. **“已整合”的意义。** 三项记录（两项分支检验与 self-good-reachable-g0 的第二步）的主张现在是脊柱定理或其在模型上的实例，严格口径 146 → 149。另外四项是“读作脊柱的定义”：定义同一、中心定理在脊柱上由公理推出，但以明示 G0 为假设的形式及最小路线理由、有限积分等仍只在继承模块中证明；它们只进入宽口径。测量起初只用宽口径，把七项“只在继承模块中”的记录列为下一批；按规范来源，这七项（classification-robust-generative-comparison、incidence-common-refinement、multivalued-joining-common-structure、protection-priority-excludes-uniform-aggregation、relational-generative-comparison、renewing-consuming-formation、retained-reference-joining-recovery）的主证明都在运行之外，只是引用了继承模块中的引理，已改正。
+3. **剖面估值的读法。** 每个剖面计为活的，关系经过仅仅可能的剖面；脊柱对 `related` 的读法（同一运行中事件对条件的共同参与）不是剖面之间的小步。所以这一对应说明的是路线的形式，不说明剖面之间的小步是展开中已形成的关系；后者仍是对应问题，写进该记录的下一步。
+4. **审计的修正。** 只读审计曾把十项记录列为“只需引用”。其中 fallible-witness-diagnosability、growth-constrained-fragmentation、material-preparation-output 的证明模块（FallibleInspection、GrownFragmentation、MaterialMaturation）不在脊柱运行之内，移入 I3。
+5. **范围。** 不含伦理谓词的新主张；ethics 记录只增加脊柱引用与绑定。
+
+**边界。** 落地运行须编译并审计改动后的 Becoming.Likeness 与 Becoming.Bridge，再把三个新别名绑定到回执；之后重新生成可判定性清点（`DECIDABILITY-INVENTORY.py`；草稿上排中律作为假设 11 → 14，其余不变）。引用 Likeness.lean 或 Bridge.lean 的十项记录（becoming-renewal-reading、becoming-spine-instances、configurations-alike-by-relation、determinacy-up-to-likeness、levels-of-closure、one-axiom-yields-g0、open-form-realization-under-revision、ranking-under-readings、tests-fix-likeness-where-determined、wisdom-root）所引的声明未变，在回执之后重新绑定。tests-fix-likeness-where-determined 宜增一条规律陈述排中律的情形；它在 §121 的分支中也有改动，留待两者落地之后。
+
+**下一步（I 列）。** I3：主证明在运行之外的 41 项记录所依的模块，以实例或等价定理接到脊柱，先 deeper 的 Explanatory 一族（分支检验、接合、登记）与上面三项。在继承模块中的三项，以明示前提的形式等公理报告为空，可在桥接中按原样重述。I4：活路径中约 540 个模块逐一归类（接入、作为应用保留、或作为历史版本标明并指向取代它的脊柱结果），需 Ren 决定，不删除任何东西。
+
+## 123. 第十七次审查的更正：文字、改名与一处由构造给出的平衡
 
 2026-10-14。开放问题计划第 19 项（Ren 选“yes, one agent”，并说“please, do all”）：一个独立审查代理审查 10 月 13–14 日加入的一般规律，写成[第十七次审查](BECOMING-GENERAL-LAWS-REVIEW.md)（错误 2、言过 3、陈述 2、命名 4、确认 14）。审查只在记录里改了 G1 与 G2 中不改来源哈希的两处；其余改 Lean、研究或章，随本次检查运行一并落地。
 
@@ -9267,7 +9325,15 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **Linear tests are likeness with every branching postponed** (`sameTests_iff_postponed_alike`), and **a frame is alike to its postponement exactly where it is determined up to likeness** (`alike_postponed_iff_determined`). The two `Choosing` frames are alike once postponed; the early one is not alike to its postponement. So linear tests miss exactly where the unfolding branches. This is the subset construction of automata theory (trace equivalence as bisimilarity after determinization), stated constructively in the core and joined to the likeness records.
 - **Readings (the AI's; Ren agreed with the direction).** “Where the unfolding branches” in place of “when a choice is made”; equality as the finest registration, naming, so that the laws needing equality need something registered; the identity of configurations as likeness, relative to what is realized, carried as a relation, and fixed by the whole continuation, so that it can outrun finite tests; LLPO and WLPO as the standard names of the two principles, neither a premise, the Lean names structural.
 
-**Corrections from the seventeenth review (14 October 2026).** Open-issues plan item 19 (Ren chose "yes, one agent" and said "please, do all"): an independent review agent reviewed the general laws added on 13–14 October ([the seventeenth review](BECOMING-GENERAL-LAWS-REVIEW.md); errors 2, overstatements 3, presentation 2, naming 4, confirmed 14). Section 122 lands the corrections that change Lean, study or chapter bytes with this checker run.
+**Peripheral proofs joined to the spine, integration I1 (14 October 2026).** Ren: “a lot proofs are probably not integrated”. Section 122 measures the gap and joins the records whose proof modules the spine run already compiles.
+- **Measure.** `SPINE-INTEGRATION.py` reads the consolidated receipt, classifies each record by where its Lean proof is checked, and counts the theorems outside the run once per file stem and name, older versions of run modules left out. On receipt 20261014T100026.593496Z (138 modules: 95 core, 3 foundation, 4 bridge, 36 inherited), of 203 records on main 146 were stated on the spine by canonical source or alias, 6 had their main proof in an inherited module, 41 outside the run and 10 none; after this section 149, 3, 41 and 10, and the records citing some spine proof go from 148 to 154. Outside the run, live paths hold about 11,000 distinct theorems in about 540 modules, and about 8,000 more appear only in copies and evidence; the largest families are universal-ethics, inquiry-root, deeper, the general-framework top level and connected.
+- **Branching tests fix likeness on image-finite models under excluded middle.** With excluded middle as a hypothesis, configurations passing the same branching tests are alike wherever each move's outcomes are listed, the moves and claims unlisted (`alike_of_sameBranchingTests_of_em`), so the periphery's `same_iff_bisimilar` is a theorem of the core with that hypothesis (`same_iff_bisimilar_of_em`). The cases now run: finite and decided, no principle (§118); moves and claims listed, exactly `EitherThroughout` (§120); nothing listed but each move's outcomes, excluded middle suffices. Whether something weaker suffices there is open.
+- **Target uniqueness.** Where likeness, or branching tests, tell a frame's configurations apart, a configuration is alike to, or passes the same tests as, at most one of them (`Alike.functional`, `SameBranchingTests.functional`); `same_functional` is the latter through `separated_iff`.
+- **Self-good's second step is N_rel on profiles.** On the valuation whose claims are a standpoint's profiles, tolerance is N_rel's neutrality, a chain of small steps is reach along related profiles and S0 under supervenience is S0, so `tolerant_chain_reaches` follows from the core's `Valuation.reaches` (`tolerant_chain_reaches_by_core`). Every profile counts as living, so the relation runs through merely possible profiles; whether small steps between profiles are formed relations stays a correspondence question.
+- **Definitions read on the spine.** For positioned-positive-reason, positive-ground-open-futures and practical-judgment-g0-j the bridge shows the definitions are the core's, the spine derives the central theorems from the axiom of `Becoming.Significance`, and the spine run compiles and binds the modules; the explicit-G0 forms, the least route reason and the finite integral stay proved only there. `trace_map` was already in the foundation.
+- **Corrections and next.** Three records the audit listed as needing only a citation rely on modules outside the run and move to I3. Next: I3, instance or equivalence theorems for the modules the 41 records outside the run rely on, starting with deeper's Explanatory family; I4, a classification of the about 540 live modules (join, keep as application, or mark as an earlier version with the spine result replacing it), which awaits Ren, with nothing deleted.
+
+**Corrections from the seventeenth review (14 October 2026).** Open-issues plan item 19 (Ren chose "yes, one agent" and said "please, do all"): an independent review agent reviewed the general laws added on 13–14 October ([the seventeenth review](BECOMING-GENERAL-LAWS-REVIEW.md); errors 2, overstatements 3, presentation 2, naming 4, confirmed 14). Section 123 lands the corrections that change Lean, study or chapter bytes with this checker run.
 - **Direction (G1).** `not_strictLossMatch_of_base_lost` puts the configuration losing the common support in the better slot: it is strictly better by matching than no configuration. "Strictly matched below no configuration" said the reverse; `fragile_b3_below_nothing` is renamed `fragile_b3_better_than_none`.
 - **Scope (G3–G5).** Substitution preserves consumption "exactly" under every such transformation (`Web.consumingIn_kept_iff`); the bracket law needs the relation to take two values and the end controls to read the same (`bracket_settles_iff`); `pending_before` gives "every shorter run leaves it pending", and "no shorter run finishes" needs pending and finished to exclude each other (`not_done_before`).
 - **Presentation (G6, G7).** Reading at episode time keeps a missed claim missed by the definition of `ReadsAt`, so whether an actual frame reads at episode time is the premise (`not_readsAt_of_recovery`). The support-gated family's balance as a flow holds by construction, since the focal take is defined as what the step removes; the instance's content is the given amounts and the family's arithmetic.

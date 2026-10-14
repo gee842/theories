@@ -25,7 +25,8 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
   "aliases": [
-    "Generative.ExplanatoryBranching.same_functional"
+    "Generative.ExplanatoryBranching.same_functional",
+    "Becoming.SameBranchingTests.functional"
   ],
   "dependencies": [],
   "related": [
@@ -34,6 +35,13 @@
       "detail": {
         "zh": "声明形似，但测试与模型不同；未断言这两个引理相互转换。",
         "en": "Similar header, different tests and models; no adapter between these lemmas is asserted."
+      }
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "detail": {
+        "zh": "Alike.functional：相同分离一个框架的配置时，一个配置至多与其中一个相同；配置的同一读作相同时（Ren 同意这一方向），这就是那种同一。",
+        "en": "Alike.functional: where likeness tells a frame's configurations apart, a configuration is alike to at most one of them; with the identity of configurations read as likeness (Ren agreed with the direction), this is that identity."
       }
     }
   ],
@@ -80,6 +88,29 @@
       "role": "provenance",
       "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
+      "role": "proof",
+      "sha256": "42ebf87bd17afe07ea197e7304715816bf4bff65319e10862d5193b5d8b253be",
+      "declarations": [
+        "Becoming.SameBranchingTests.functional",
+        "Becoming.Alike.functional"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "6f0ac24745c6d4d6a337239fa709c55a7242bf4ed395974163b0c1bd9fc62c62",
+      "declarations": [
+        "Becoming.separated_iff",
+        "Becoming.sameBranchingTests_iff_same"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "role": "receipt",
+      "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e"
     }
   ],
   "proof_bindings": [
@@ -89,6 +120,13 @@
       "sha256_pointer": "/modules/7/sha256",
       "success_pointer": "/passed",
       "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "sha256_pointer": "/source_sha256/ExplanatoryBranching",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -99,6 +137,10 @@
     {
       "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
       "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-14，整合 I1：在脊柱上陈述。检验分离一个模型，恰当核心的分支检验分离其框架（separated_iff），所以本引理经 sameBranchingTests_iff_same 即 SameBranchingTests.functional；其相同之下的形式为 Alike.functional。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；脊柱运行 20261014T100026.593496Z 亦将其源码作为继承模块编译并绑定。",
+      "en": "14 October 2026, integration I1: stated on the spine. Tests separate a model exactly where the core's branching tests separate its frame (separated_iff), so this lemma is SameBranchingTests.functional read through sameBranchingTests_iff_same; its form for likeness is Alike.functional. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the spine run 20261014T100026.593496Z also compiles its source as an inherited module and binds it."
     }
   ]
 }

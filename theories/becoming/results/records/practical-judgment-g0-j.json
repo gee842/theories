@@ -93,6 +93,13 @@
         "zh": "复用本结果的 Better 与 no_protection_trade_by_count，在一个构造情境中补上 J2 相对 C 的独立性、被排除的自然数评分类与一致的有界评分；本论证不变。",
         "en": "Reuses this result's Better and no_protection_trade_by_count, adding, in one constructed situation, J2's independence from C, the excluded natural-number score class and an agreeing bounded score; this argument is unchanged."
       }
+    },
+    {
+      "id": "becoming-spine-instances",
+      "detail": {
+        "zh": "脊柱以 BetterAt 在配置上陈述 J1/J2，按定义即 Better；Robust 即核心的 CommonResponse。",
+        "en": "The spine states J1/J2 on configurations as BetterAt, by definition Better; Robust is the core's CommonResponse."
+      }
     }
   ],
   "counterexamples": [
@@ -203,12 +210,34 @@
       "role": "counterexample",
       "sha256": "f4bb6eef0442eb713d5ea97a49d631589732923ee562764fc65b55dee52a92fe",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "6f0ac24745c6d4d6a337239fa709c55a7242bf4ed395974163b0c1bd9fc62c62",
+      "declarations": [
+        "Becoming.BetterAt",
+        "Becoming.robust_iff_commonResponse",
+        "Becoming.commonResponse_is_robust"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "role": "receipt",
+      "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e"
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json",
+      "sha256_pointer": "/source_sha256/PracticalJudgment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
       "sha256_pointer": "/source_sha256/PracticalJudgment",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -250,6 +279,10 @@
     {
       "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Return.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；Substitution.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）。",
       "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Return.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); Substitution.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged)."
+    },
+    {
+      "zh": "2026-10-14，整合 I1：脊柱以 BetterAt 在配置上陈述 J1/J2，按定义即 PracticalJudgment.Better，并把 Robust 读作核心的 CommonResponse（robust_iff_commonResponse、commonResponse_is_robust），所以 better_trans 与稳健回应的定理按原样对配置成立。脊柱运行 20261014T100026.593496Z 将本模块作为继承模块编译；其中 better_trans 与 transfer_requires_actual_successor 公理报告为空，competing_claims_incomparable 用到 propext。J3–J4 与前沿结果未在脊柱上重述。",
+      "en": "14 October 2026, integration I1: the spine states J1/J2 on configurations as BetterAt, by definition PracticalJudgment.Better, and reads Robust as the core's CommonResponse (robust_iff_commonResponse, commonResponse_is_robust), so better_trans and the robust-response theorems hold of configurations as stated. The spine run 20261014T100026.593496Z compiles the module as inherited; there better_trans and transfer_requires_actual_successor have empty axiom reports, and competing_claims_incomparable uses propext. J3–J4 and the frontier results are not restated on the spine."
     }
   ],
   "text_versions": [

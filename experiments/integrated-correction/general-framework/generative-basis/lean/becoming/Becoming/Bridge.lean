@@ -59,8 +59,18 @@ imports none of these modules; the dependency runs from them to the core.
   (`sameBranchingTests_iff_same`). On models with finitely many configurations whose steps and
   conditions are decided, configurations pass the same tests exactly where they are alike, with
   no classical reasoning (`same_iff_alike_of_finiteDecided`). For image-finite models the
-  converse of `Alike.same` is `same_iff_bisimilar` read through `branching_bisimulation_iff`; its
-  proof reasons classically, so it is not restated here.
+  converse of `Alike.same` holds with excluded middle as a hypothesis, the moves and conditions
+  unlisted (`same_iff_alike_of_imageFinite`), so `same_iff_bisimilar` is a theorem of the core
+  with that hypothesis (`same_iff_bisimilar_of_em`). Tests separate a model exactly where the
+  core's branching tests separate its frame (`separated_iff`), so `same_functional` is
+  `SameBranchingTests.functional`.
+* `EvaluatorGrounding`'s second step is N_rel on the valuation whose claims are a standpoint's
+  profiles (`profileValuation`): tolerance is N_rel's neutrality there (`tolerant_iff_neutral`), a
+  chain of small steps is reach along related profiles (`chain_iff_reach_profiles`) and S0 under
+  supervenience is S0 there (`selfGood_profiles`), so `tolerant_chain_reaches` follows from the
+  core's `Valuation.reaches` (`tolerant_chain_reaches_by_core`). Every profile is counted living,
+  so the relation runs through merely possible profiles; the spine's readings of `related` relate
+  events of one run.
 
 Direction conventions differ and are kept: in `GenerativeComparison`,
 `Better first second` says the second is better; in `PracticalJudgment` and
@@ -740,6 +750,92 @@ theorem same_iff_alike_of_finiteDecided {m : ExplanatoryBranching.Model S A O}
   sameBranchingTests_iff_same.symm.trans
     (alike_iff_sameBranchingTests moves conditions finite finite').symm
 
+/-- **On image-finite models, passing the same tests of `ExplanatoryBranching` is likeness, given
+excluded middle**, with neither the moves nor the conditions listed. -/
+theorem same_iff_alike_of_imageFinite (em : ∀ p : Prop, Decided p)
+    {m : ExplanatoryBranching.Model S A O} {n : ExplanatoryBranching.Model T A O}
+    (fm : ExplanatoryBranching.ImageFinite m) (fn : ExplanatoryBranching.ImageFinite n)
+    {s : S} {t : T} :
+    ExplanatoryBranching.Same m n s t ↔ Alike (Frame.ofModel m) (Frame.ofModel n) s t :=
+  sameBranchingTests_iff_same.symm.trans
+    (alike_iff_sameBranchingTests_of_em (F := Frame.ofModel m) (G := Frame.ofModel n) em fm fn).symm
+
+/-- **`same_iff_bisimilar` is a theorem of the core with excluded middle a hypothesis**: on
+image-finite models, positions pass the same tests exactly where a bisimulation relates them. -/
+theorem same_iff_bisimilar_of_em (em : ∀ p : Prop, Decided p)
+    {m : ExplanatoryBranching.Model S A O} {n : ExplanatoryBranching.Model T A O}
+    (fm : ExplanatoryBranching.ImageFinite m) (fn : ExplanatoryBranching.ImageFinite n)
+    (s : S) (t : T) :
+    ExplanatoryBranching.Same m n s t ↔ ∃ R, ExplanatoryBranching.Bisimulation m n R ∧ R s t :=
+  (same_iff_alike_of_imageFinite em fm fn).trans
+    ⟨fun ⟨R, bisim, related⟩ => ⟨R, branching_bisimulation_iff.mpr bisim, related⟩,
+     fun ⟨R, bisim, related⟩ => ⟨R, branching_bisimulation_iff.mp bisim, related⟩⟩
+
+/-- **Tests separate a model exactly where the core's branching tests separate its frame**, so
+`same_functional` is `SameBranchingTests.functional`. -/
+theorem separated_iff {n : ExplanatoryBranching.Model T A O} :
+    ExplanatoryBranching.Separated n ↔
+      ∀ t t', SameBranchingTests (Frame.ofModel n) (Frame.ofModel n) t t' → t = t' :=
+  ⟨fun sep t t' same => sep t t' (sameBranchingTests_iff_same.mp same),
+   fun sep t t' same => sep t t' (sameBranchingTests_iff_same.mpr same)⟩
+
 end Likeness
+
+/-! ## Self-good along profiles is N_rel on profiles -/
+
+section Profiles
+
+variable {Gen Prof : Type}
+
+/-- **A standpoint's valuation of profiles.** The claims are the profiles, each counted living; a
+profile is related to those one small step from it, is the standpoint's own where an own living
+occurrence has it, and is significant where `val` holds of it. -/
+def profileValuation (s : EvaluatorGrounding.Standpoint Gen Prof) (val : Prof → Prop)
+    (step : Prof → Prof → Prop) : Valuation Unit Prof :=
+  ⟨fun _ => True, step, fun _ q => ∃ g, s.own g ∧ s.living g ∧ s.prof g = q, fun _ q => val q⟩
+
+/-- **Tolerance is N_rel on profiles.** -/
+theorem tolerant_iff_neutral {s : EvaluatorGrounding.Standpoint Gen Prof} {val : Prof → Prop}
+    {step : Prof → Prof → Prop} :
+    EvaluatorGrounding.Tolerant val step ↔ Neutral (profileValuation s val step).transmits :=
+  ⟨fun tol ⟨_, p, q⟩ held related _ => tol p q related held,
+   fun neutral p q related held => neutral ((), p, q) held related True.intro⟩
+
+/-- **A chain of small steps is reach along related profiles.** -/
+theorem chain_iff_reach_profiles {s : EvaluatorGrounding.Standpoint Gen Prof} {val : Prof → Prop}
+    {step : Prof → Prof → Prop} {p q : Prof} :
+    EvaluatorGrounding.Chain step p q ↔ Reach (profileValuation s val step).relations p q := by
+  constructor
+  · intro chain
+    induction chain with
+    | refl => exact Reach.refl _ _
+    | tail _ last ih => exact ih.trans (Reach.of_step (a := ()) ⟨last, True.intro⟩)
+  · intro path
+    exact Invariant.reach (P := (profileValuation s val step).relations)
+      (I := EvaluatorGrounding.Chain step p) (fun _ _ _ e c => .tail c e.1) path (.refl p)
+
+/-- **S0 under supervenience is S0 on profiles.** -/
+theorem selfGood_profiles {s : EvaluatorGrounding.Standpoint Gen Prof} {val : Prof → Prop}
+    {step : Prof → Prof → Prop} (sup : EvaluatorGrounding.Supervenes s val)
+    (self : EvaluatorGrounding.SelfGood s) : (profileValuation s val step).SelfGood () :=
+  fun _ ⟨g, own, alive, same⟩ _ => same ▸ (sup g alive).1 (self g own alive)
+
+/-- **`tolerant_chain_reaches` through the core**: under supervenience, S0 and tolerance, every
+reachable living occurrence whose profile a chain of small steps links to an own living one has
+significance, by the core's N_rel carrying significance along related profiles
+(`Valuation.reaches`). -/
+theorem tolerant_chain_reaches_by_core (s : EvaluatorGrounding.Standpoint Gen Prof)
+    (val : Prof → Prop) (step : Prof → Prof → Prop) (sup : EvaluatorGrounding.Supervenes s val)
+    (self : EvaluatorGrounding.SelfGood s) (tol : EvaluatorGrounding.Tolerant val step)
+    (chain : ∀ g', s.reach g' → s.living g' →
+      ∃ g, s.own g ∧ s.living g ∧ EvaluatorGrounding.Chain step (s.prof g) (s.prof g')) :
+    ∀ g', s.reach g' → s.living g' → s.sig g' :=
+  fun g' reached alive' => match chain g' reached alive' with
+  | ⟨g, own, alive, linked⟩ => (sup g' alive').2
+      (Valuation.reaches (tolerant_iff_neutral (s := s).mp tol)
+        (chain_iff_reach_profiles (s := s) (val := val).mp linked)
+        (selfGood_profiles (step := step) sup self (s.prof g) ⟨g, own, alive, rfl⟩ True.intro))
+
+end Profiles
 
 end Becoming

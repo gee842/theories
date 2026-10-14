@@ -28,7 +28,15 @@
     "Generative.trace_map"
   ],
   "dependencies": [],
-  "related": [],
+  "related": [
+    {
+      "id": "becoming-spine-instances",
+      "detail": {
+        "zh": "桥接以 trace_map 传递框架的共同接续束（Frame.map_preserves_bundles）。",
+        "en": "The bridge transports a frame's joint-continuation bundles by trace_map (Frame.map_preserves_bundles)."
+      }
+    }
+  ],
   "counterexamples": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
@@ -66,6 +74,11 @@
       "role": "provenance",
       "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "role": "receipt",
+      "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e"
     }
   ],
   "proof_bindings": [
@@ -73,6 +86,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
       "sha256_pointer": "/modules/0/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeCore",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -85,6 +105,10 @@
     {
       "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
       "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-14，整合 I1：GenerativeCore 是 Becoming 核心所依的基础，与核心一同只从 Lean 内置前导编译；脊柱运行 20261014T100026.593496Z 绑定其当前字节，trace_map 公理报告为空。脊柱用它传递可达（Frame.lean 的 Reach.map）与共同接续束（Becoming.Bridge 的 Frame.map_preserves_bundles）。无新定理。",
+      "en": "14 October 2026, integration I1: GenerativeCore is the foundation the Becoming core builds on and compiles with it from Lean's prelude alone; the spine run 20261014T100026.593496Z binds its current bytes and reports trace_map with an empty axiom report. The spine uses it for reach (Reach.map in Frame.lean) and for joint-continuation bundles (Frame.map_preserves_bundles in Becoming.Bridge). No new theorem."
     }
   ]
 }

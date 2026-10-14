@@ -83,6 +83,20 @@
         "zh": "解释关联：人类与 AI 位置在相同通达下具有相同的这一理由；不推出认识、动机或遵循。",
         "en": "Interpretive connection: human and AI positions with the same access have the same such reason; no recognition, motivation or compliance follows."
       }
+    },
+    {
+      "id": "one-axiom-yields-g0",
+      "detail": {
+        "zh": "G0 由 Becoming.Significance 的公理给出时，以意义读出正面相关，本结果的主定理成立（every_situated_position_has_reason_of_unrestricted）。",
+        "en": "With G0 from the axiom of Becoming.Significance, this result's main theorem holds with positive relevance read from significance (every_situated_position_has_reason_of_unrestricted)."
+      }
+    },
+    {
+      "id": "metaethical-core-characterization",
+      "detail": {
+        "zh": "脊柱自身的路线：A 给出 D，健全探究给出普遍理由（universal_reason）。",
+        "en": "The spine's own route: A gives D, and a sound inquiry gives the universal reason (universal_reason)."
+      }
     }
   ],
   "counterexamples": [
@@ -160,6 +174,33 @@
       "role": "provenance",
       "sha256": "cf4135086c14b7d30373b3bf391d85e2ca617d5a9d808f60546d0598d0adecf9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "6f0ac24745c6d4d6a337239fa709c55a7242bf4ed395974163b0c1bd9fc62c62",
+      "declarations": [
+        "Becoming.positionedArticulation_iff",
+        "Becoming.securesPositiveGround_iff",
+        "Becoming.g0_iff",
+        "Becoming.every_situated_position_has_reason_of_unrestricted"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "7f8ddc2edd8783f7f670d26ced609b881a665e2c18a86bd43b2fd4b235b71dc8",
+      "declarations": [
+        "Becoming.PositionedArticulation",
+        "Becoming.SecuresPositiveGround",
+        "Becoming.positioned_articulation_of_articulates",
+        "Becoming.universal_reason"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "role": "receipt",
+      "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e"
     }
   ],
   "proof_bindings": [
@@ -180,6 +221,27 @@
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positioned-positive-reason-verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "sha256_pointer": "/source_sha256/PositionedPositiveReason",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "sha256_pointer": "/source_sha256/PositiveGroundUncertainty",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
       "sha256_pointer": "/source_sha256/GenerativeComparison",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -209,6 +271,10 @@
     {
       "zh": "2026年10月9日：审查文件仅在 §6 末尾新增“独立审查后的更正”一段（generative-discrimination 会话，回应其独立审查）；本记录所依的 §3.3、§5 文字未变。已读后更新该引用哈希；主张、证明与其他来源不变。",
       "en": "9 October 2026: the review file gained only a correction paragraph at the end of §6 (generative-discrimination session, after its independent review); the §3.3 and §5 text this record relies on is unchanged. Reference hash updated after reading; claim, proof and other sources unchanged."
+    },
+    {
+      "zh": "2026-10-14，整合 I1：脊柱的 D 与确保的正面根据按定义即本模块的（positionedArticulation_iff、securesPositiveGround_iff），脊柱在框架上的 G0 即框架库存上的 G0（g0_iff），所以这些定理按原样对脊柱的定义成立。脊柱运行 20261014T100026.593496Z 将本模块作为继承模块编译，各声明公理报告为空。脊柱由 Becoming.Significance 的公理推出主定理（every_situated_position_has_reason_of_unrestricted），并经自身路线，由 S0、N 与 A 下的健全探究给每个有通达的位置一项理由（universal_reason；D 由 A 经 positioned_articulation_of_articulates 得出）。最小路线理由及其只依赖通达，未在脊柱上重述。",
+      "en": "14 October 2026, integration I1: the spine's D and secured positive ground are this module's by definition (positionedArticulation_iff, securesPositiveGround_iff), and the spine's G0 on a frame is G0 on the frame's inventory (g0_iff), so these theorems hold of the spine's definitions as stated. The spine run 20261014T100026.593496Z compiles this module as inherited, every declaration with an empty axiom report. The spine derives the main theorem from the axiom of Becoming.Significance (every_situated_position_has_reason_of_unrestricted) and, by its own route, gives every position with access a reason from a sound inquiry under S0, N and A (universal_reason, with D from A by positioned_articulation_of_articulates). The least route reason and its dependence on access alone are not restated on the spine."
     }
   ]
 }

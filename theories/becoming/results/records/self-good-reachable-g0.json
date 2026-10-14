@@ -52,7 +52,8 @@
     "EvaluatorGrounding.tolerant_standpoint_reaches_stranger",
     "EvaluatorGrounding.present_aim_evaluator_escapes",
     "EvaluatorGrounding.closed_self_blocks_reach",
-    "EvaluatorGrounding.persistence_rival_escapes_self_transcendence"
+    "EvaluatorGrounding.persistence_rival_escapes_self_transcendence",
+    "Becoming.tolerant_chain_reaches_by_core"
   ],
   "dependencies": [
     {
@@ -225,6 +226,35 @@
       "role": "provenance",
       "sha256": "054c09c4d17c281d401795a90330f5a7c353827b12ec06f73820dd9055c52b41",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "6f0ac24745c6d4d6a337239fa709c55a7242bf4ed395974163b0c1bd9fc62c62",
+      "declarations": [
+        "Becoming.profileValuation",
+        "Becoming.tolerant_iff_neutral",
+        "Becoming.chain_iff_reach_profiles",
+        "Becoming.selfGood_profiles",
+        "Becoming.tolerant_chain_reaches_by_core",
+        "Becoming.chain_iff_reach",
+        "Becoming.g0_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "7f8ddc2edd8783f7f670d26ced609b881a665e2c18a86bd43b2fd4b235b71dc8",
+      "declarations": [
+        "Becoming.Valuation.SelfGood",
+        "Becoming.Valuation.transmits",
+        "Becoming.Valuation.reaches"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "role": "receipt",
+      "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e"
     }
   ],
   "proof_bindings": [
@@ -241,11 +271,25 @@
       "sha256_pointer": "/source_sha256/GenerativeComparison",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "sha256_pointer": "/source_sha256/EvaluatorGrounding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "对 BI 与 N_rel 的哲学根据作独立论证；以真实案例取得分化与分级连通的证据；在脊柱上把本路线的剖面模型接到 N_rel 的已形成关系（审查建议的三项形式修订中，P+ 版第二步已由 metaethical-core-characterization 给出）。",
-    "en": "An independent argument for BI and N_rel; evidence for differentiation and graded connection in actual cases; on the spine, connect this route's profile model to N_rel's formed relations (of the review's three suggested formal revisions, the P+ version of step two is supplied by metaethical-core-characterization)."
+    "zh": "对 BI 与 N_rel 的哲学根据作独立论证；以真实案例取得分化与分级连通的证据；剖面之间的小步是否展开中已形成的关系，核心在剖面上的 N_rel（tolerant_iff_neutral）把这留给对应。",
+    "en": "An independent argument for BI and N_rel; evidence for differentiation and graded connection in actual cases; whether small steps between profiles are formed relations of the unfolding, which the core's N_rel on profiles (tolerant_iff_neutral) leaves to correspondence."
   },
   "history": [
     {
@@ -267,6 +311,10 @@
     {
       "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“立场自身之善（S0）加不受限单调性与容差，推出立场索引的可及 G0 实例”",
       "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “A standpoint's own good (S0), with unrestricted monotonicity and tolerance, gives a standpoint-indexed instance of G0 on reachable generation”"
+    },
+    {
+      "zh": "2026-10-14，整合 I1，回答下一步中的形式一项：本路线的第二步即核心的 N_rel，作用于以立场的剖面为主张的估值（Becoming.Bridge 的 profileValuation）：容差即那里 N_rel 的中立（tolerant_iff_neutral），小步之链即沿相关剖面的可达（chain_iff_reach_profiles），随附性下的 S0 即那里的 S0（selfGood_profiles），tolerant_chain_reaches 由核心的 Valuation.reaches 推出（tolerant_chain_reaches_by_core）；公理报告为空（草稿构建；回执随落地）。每个剖面都计为活的，所以关系经过仅仅可能的剖面；剖面之间的小步是否展开中已形成的关系，仍是对应问题，下一步据此改写。原下一步所注“审查建议的三项形式修订中，P+ 版第二步已由 metaethical-core-characterization 给出”保留于此。脊柱运行 20261014T100026.593496Z 将本模块作为继承模块编译，其一般定理在那里公理报告为空。",
+      "en": "14 October 2026, integration I1, answering the next step's formal item: this route's second step is the core's N_rel on the valuation whose claims are the standpoint's profiles (profileValuation in Becoming.Bridge): tolerance is N_rel's neutrality there (tolerant_iff_neutral), a chain of small steps is reach along related profiles (chain_iff_reach_profiles), S0 under supervenience is S0 there (selfGood_profiles), and tolerant_chain_reaches follows from the core's Valuation.reaches (tolerant_chain_reaches_by_core); empty axiom reports (scratch build; the receipt comes with the landing). Every profile is counted living, so the relation runs through merely possible profiles; whether small steps between profiles are formed relations of the unfolding stays a correspondence question, and the next step is rewritten to say so. The old next step's note, that of the review's three suggested formal revisions the P+ version of step two is supplied by metaethical-core-characterization, is kept here. The spine run 20261014T100026.593496Z compiles this module as inherited; its general theorems have empty axiom reports there."
     }
   ]
 }

@@ -92,17 +92,23 @@ No premise is added; every declaration has an empty axiom report.
   of two decided families not both holding somewhere, one holds nowhere
   (`eitherThroughout_iff_eitherNever`); `NowhereDecided`, that whether a decided family holds
   nowhere is decided, gives it (`EitherThroughout.of_nowhereDecided`), and excluded middle gives
-  `NowhereDecided` (`NowhereDecided.of_em`). Where a move has infinitely many outcomes, branching
+  `NowhereDecided` (`NowhereDecided.of_em`). Where neither the moves nor the claims are listed,
+  excluded middle suffices (`alike_iff_sameBranchingTests_of_em`): this is the periphery's
+  `ExplanatoryBranching.same_iff_bisimilar`, with the principle its proof uses as a hypothesis.
+  Where a move has infinitely many outcomes, branching
   tests need not fix likeness, with no principle needed to show it: a configuration stepping to
   chains of every length and one stepping also to a chain that never ends pass the same tests and
   are not alike (`Unbounded.sameBranchingTests`, `Unbounded.not_alike`).
+* **Where likeness tells a frame's configurations apart, a configuration is alike to at most one
+  of them** (`Alike.functional`), and so for branching tests (`SameBranchingTests.functional`).
 * **A branching test sees when a choice is made.** The starts of `Choosing.late` and
   `Choosing.early` pass the same tests and are not alike (`Becoming.Histories`); that the first
   move can lead to a configuration where both `b` and `c` can be taken holds at the one and fails
   at the other (`Choosing.branching_apart`).
 
-What is not derived: whether `EitherThroughout` gives `NowhereDecided` or excluded middle; that it
-does not would take a model outside the core. `Becoming.Bridge` reads `BranchingTest` as the
+What is not derived: whether `EitherThroughout` gives `NowhereDecided` or excluded middle, since
+showing that it does not would take a model outside the core; and whether a principle weaker than
+excluded middle suffices where the moves or the claims are not listed. `Becoming.Bridge` reads `BranchingTest` as the
 periphery's `Test` (`sameBranchingTests_iff_same`).
 
 The readings are the AI's, pending Ren.
@@ -589,6 +595,20 @@ theorem Alike.holds_iff {F : Frame S A C} {G : Frame S' A C} :
 theorem Alike.sameBranchingTests {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'}
     (alike : Alike F G s s') : SameBranchingTests F G s s' :=
   fun φ => Alike.holds_iff φ alike
+
+/-- **Where likeness tells apart the configurations of a frame, a configuration is alike to at most
+one of them.** -/
+theorem Alike.functional {F : Frame S A C} {G : Frame S' A C}
+    (separated : ∀ t t', Alike G G t t' → t = t') {s : S} {t t' : S'} (alike : Alike F G s t)
+    (alike' : Alike F G s t') : t = t' :=
+  separated t t' (Alike.trans alike.symm alike')
+
+/-- **Where branching tests tell apart the configurations of a frame, a configuration passes the
+same tests as at most one of them.** -/
+theorem SameBranchingTests.functional {F : Frame S A C} {G : Frame S' A C}
+    (separated : ∀ t t', SameBranchingTests G G t t' → t = t') {s : S} {t t' : S'}
+    (same : SameBranchingTests F G s t) (same' : SameBranchingTests F G s t') : t = t' :=
+  separated t t' fun φ => (same φ).symm.trans (same' φ)
 
 /-- Alike to depth `k`: the same claims, and for `k + 1` each step of either matched by a step of
 the other by the same move into configurations alike to depth `k`. -/
@@ -1197,6 +1217,59 @@ theorem OutcomesListed.alike_iff_sameBranchingTests (either : EitherThroughout)
   ⟨Alike.sameBranchingTests, fun same =>
     ⟨_, OutcomesListed.alikeTo_bisimulation either moves claims listed listed',
      OutcomesListed.alikeTo_of_same moves claims listed listed' same⟩⟩
+
+/-! ### Under excluded middle -/
+
+/-- Under excluded middle, configurations not passing the same branching tests are told apart by
+one: it holds at the first and fails at the second. -/
+theorem apart_of_not_sameBranchingTests (em : ∀ p : Prop, Decided p) {s : S} {s' : S'}
+    (differ : ¬ SameBranchingTests F G s s') :
+    ∃ φ, BranchingTest.Holds F s φ ∧ ¬ BranchingTest.Holds G s' φ :=
+  match em (∃ φ, BranchingTest.Holds F s φ ∧ ¬ BranchingTest.Holds G s' φ) with
+  | .inl apart => apart
+  | .inr absent => match em (∃ φ, BranchingTest.Holds G s' φ ∧ ¬ BranchingTest.Holds F s φ) with
+    | .inl ⟨φ, holds', fails⟩ => ⟨.not φ, fails, fun refuted => refuted holds'⟩
+    | .inr absent' => absurd (fun φ =>
+        ⟨fun holds => Decided.of_not_not (em _) fun fails => absent ⟨φ, holds, fails⟩,
+         fun holds' => Decided.of_not_not (em _) fun fails => absent' ⟨φ, holds', fails⟩⟩) differ
+
+/-- **Under excluded middle, branching tests fix likeness where each move's outcomes are listed**,
+with neither the moves nor the claims listed. Passing the same tests is a bisimulation: among the
+listed outcomes of the other configuration by the move, one passes the tests the step's outcome
+passes, or one test, telling the outcome apart from each of them, tells the two configurations
+apart after the move. -/
+theorem alike_of_sameBranchingTests_of_em (em : ∀ p : Prop, Decided p)
+    (outcomes : ∀ s a, ∃ l : List S, ∀ t, F.P.step s a t ↔ t ∈ l)
+    (outcomes' : ∀ s a, ∃ l : List S', ∀ t, G.P.step s a t ↔ t ∈ l) {s : S} {s' : S'}
+    (same : SameBranchingTests F G s s') : Alike F G s s' :=
+  ⟨SameBranchingTests F G, fun s s' same =>
+    ⟨fun c => same (.claim c),
+     fun a t step => match outcomes' s' a with
+      | ⟨l', outcome'⟩ => match em (∃ t', t' ∈ l' ∧ SameBranchingTests F G t t') with
+        | .inl ⟨t', mem, joined⟩ => ⟨t', (outcome' t').mpr mem, joined⟩
+        | .inr absent =>
+          match BranchingTest.apart_from_list F G (x := t) l' fun t' mem =>
+              apart_of_not_sameBranchingTests em fun joined => absent ⟨t', mem, joined⟩ with
+          | ⟨φ, holds, fails⟩ => absurd ((same (.can a φ)).mp ⟨t, step, holds⟩)
+              fun ⟨t', step', holds'⟩ => fails t' ((outcome' t').mp step') holds',
+     fun a t' step' => match outcomes s a with
+      | ⟨l, outcome⟩ => match em (∃ t, t ∈ l ∧ SameBranchingTests F G t t') with
+        | .inl ⟨t, mem, joined⟩ => ⟨t, (outcome t).mpr mem, joined⟩
+        | .inr absent =>
+          match BranchingTest.apart_from_list G F (x := t') l fun t mem =>
+              match apart_of_not_sameBranchingTests em fun joined => absent ⟨t, mem, joined⟩ with
+              | ⟨φ, holds, fails⟩ => ⟨.not φ, fails, fun refuted => refuted holds⟩ with
+          | ⟨φ, holds, fails⟩ => absurd ((same (.can a φ)).mpr ⟨t', step', holds⟩)
+              fun ⟨t, step, holds⟩ => fails t ((outcome t).mp step) holds⟩,
+   same⟩
+
+/-- Under excluded middle, configurations are alike exactly where they pass the same branching
+tests, where each move's outcomes are listed. -/
+theorem alike_iff_sameBranchingTests_of_em (em : ∀ p : Prop, Decided p)
+    (outcomes : ∀ s a, ∃ l : List S, ∀ t, F.P.step s a t ↔ t ∈ l)
+    (outcomes' : ∀ s a, ∃ l : List S', ∀ t, G.P.step s a t ↔ t ∈ l) {s : S} {s' : S'} :
+    Alike F G s s' ↔ SameBranchingTests F G s s' :=
+  ⟨Alike.sameBranchingTests, alike_of_sameBranchingTests_of_em em outcomes outcomes'⟩
 
 end Outcomes
 
