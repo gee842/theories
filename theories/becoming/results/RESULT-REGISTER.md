@@ -21,7 +21,7 @@
 | `attraction-is-not-returning` | [吸引即不返回 / Attraction is not returning](records/attraction-is-not-returning.md) | theorem | recorded-checked |
 | `axiom-decomposition` | [公理的分解 / Decomposition of the axiom](records/axiom-decomposition.md) | theorem | recorded-checked |
 | `becoming-context-coherence` | [保留与变化情境中的相容历史 / Coherent histories across retained and changing contexts](records/becoming-context-coherence.md) | theorem | recorded-checked |
-| `becoming-dependence-dynamics` | [依存的形成、维持、断裂与转化：损失之后的三种结局 / Dependence that forms, holds, breaks and transforms: three outcomes of a loss](records/becoming-dependence-dynamics.md) | theorem | recorded-checked |
+| `becoming-dependence-dynamics` | [依存的形成、维持、断裂与转化 / Dependence that forms, holds, breaks and transforms](records/becoming-dependence-dynamics.md) | theorem | recorded-checked |
 | `becoming-finite-horizon` | [有限视界 / Finite horizon](records/becoming-finite-horizon.md) | theorem | recorded-checked |
 | `becoming-renewal-reading` | [运行上的更新与生生的关系读法 / Renewal on runs and the relational reading of living](records/becoming-renewal-reading.md) | theorem | recorded-checked |
 | `becoming-return-grades` | [回程等级 / Return grades](records/becoming-return-grades.md) | theorem | recorded-checked |

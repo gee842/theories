@@ -1,0 +1,63 @@
+# Migration map: more-needs-renewers
+
+Old record sha256 `3a6f93ac4571002177c019a85227240d13b00c2e3d25fe69fc68d6549af7f8c5`; snapshot `_process/architecture/history/3a6f93ac45710021/more-needs-renewers.json`.
+
+Labels number the old English sentences and clauses (split at full stops and semicolons outside parentheses): T title, S statement, C claim, L limitations, V validation_scope, R correspondence, N next_delta, H hypotheses, X counterexamples. The Chinese text of each field goes to the same place as its English counterpart; the old Chinese was read alongside, sentence by sentence (zh C2–C3 hold en C2 and zh C7–C8 hold en C6, so later zh claim labels run up to two ahead; zh R6 holds en R6–R7, zh N0–N2 hold en N0–N2).
+
+Each law was read against its declarations in `Becoming/Flow.lean`, `Becoming/Population.lean` and `Becoming/Generation.lean`. One law is written narrower than the old text, to match the theorem: `Flow.More.unceasing_covering` takes `decided : ∀ s f, S ≤ s → Decidable (W.active s f)`, which N1 left out; law 11 now says “and activity decided” from that step on.
+
+| Old text | Type | New place |
+|---|---|---|
+| T0 “More needs more renewers” | title | title (unchanged) |
+| S0–S1 “More generation needs more renewers: …; under a census of active formations it implies unceasing generation.” | statement | statement (unchanged) |
+| C0–C1 “Reading conditions as amounts: a flow gives …; it balances a web of dependence when …” | definitions | law 1 (unchanged) |
+| C2 “For a finite family of conditions, the total after a step plus its uptake equals the total before plus its replenishment, and the same holds over any stretch of steps (the balance of depletion and replenishment).” | law | law 2 (unchanged; Web.stock, the family's total, among the declarations) |
+| C3 “When the flow balances and only active formations give, every rise is made by some active renewer, so the correspondence premise RenewedBy of unceasing-generation-needs-renewal becomes a theorem.” | law | law 3 (unchanged) |
+| C4 “Generation is more without end when, for every number, from some step on at least that many formations take from the family at every step.” | definition | law 4 (unchanged) |
+| C5 “Amounts are natural numbers, so each taker takes at least one unit per step.” | law (premise in use) | law 4 (unchanged); hypotheses[0] states the premise |
+| C6 “Then over any stretch from which at least K formations take, the family is replenished by at least K per step, less its stock at the start, and more without end needs replenishment with no eventual bound.” | law | law 4 (“Then” dropped) |
+| C7 “When each formation gives the family at most a fixed amount per step, the number of renewers grows in the same averaged sense and has no eventual bound, but it can be zero at infinitely many steps.” | law | law 5 (unchanged; Pulse.pulsed among the declarations) |
+| C8 “Under a census of active formations (…), if the flow's present lists each formation once per step and only active formations take (…), the active formations grow without bound and more without end implies unceasing generation;” | law | law 6 (unchanged) |
+| C9–C11 “the expansion and the cycle meet all these premises, so the implication is not vacuous; the oscillator … is strict; without a census, with a formation listed many times in present, or with takers that are not active, more without end can come with nothing arising.” | law (witnesses) | law 7 (unchanged); counterexamples[0]–[3] state the witnesses too |
+| C12–C13 “A flow in which a renewer and a grower arise at every step meets every premise and is more without end; in a closed cycle …, and the renewers are exactly the takers.” | law (witnesses) | law 8 (unchanged) |
+| C14 “So in balanced flows the replenishment needed by recurring uptake and by more without end forms a strict hierarchy: …” | law | law 9 (unchanged; More.replenishment_unbounded and Oscillation.not_more as declarations) |
+| C15 “No ethical premise and no Lean axiom is used.” | standard boundary | standard_boundaries: no-ethical-premise (the hypotheses hold no ethical premise; the receipt reports empty axioms for Becoming.Flow and Becoming.Population) |
+| L0 “Contains no ethical predicate and yields no “more is better” or any ranking;” | standard boundary + non-implication | standard_boundaries: no-evaluation; does_not_show[0] |
+| L1 “ “more” reads only the number of takers and does not state diversity, complexity or possibility;” | scope | does_not_show[1] |
+| L2 “it constrains only sustained more, not the number at isolated steps;” | scope | does_not_show[1] |
+| L3 “a minimum uptake of one unit per taker is a premise;” | premise (duplicate of H0) | hypotheses[0] |
+| L4 “ “ever more” holds only in the averaged sense, and renewers can be absent at infinitely many steps;” | scope | does_not_show[2], witness Pulse.pulsed |
+| L5 “ “more implies unceasing” needs a census, present without repetition and Taking (only its activity half), whose converse is an application duty;” | premise (duplicate of H4) + converse | hypotheses[4]–[5]; does_not_show[3] (the converse of Taking), witness Unrecorded.drawing_without_taking |
+| L6 “unceasing generation depends on identity across steps: the unceasing generation forced by more holds under every one-to-one reading of identity, more forces arising under every continuation without splits, and under a reading of new formations as budding what is forced is only that the active formations have no bound (identity-across-steps);” | scope | does_not_show[4] (shortened to the item cap: “every … continuation without splits” → “each split-free continuation”) |
+| L7 “the renewers can be the takers, and carrying the demand further along the unfolding needs a dissipation premise (see no-finite-part-bears-taking);” | scope | does_not_show[5], witness Cycle.closed_more (merged with R8–R9) |
+| L8 “formations and conditions are two kinds in Web and Flow, and life as a condition of life is read with one kind of relatum in life-as-condition-of-life;” | correspondence (duplicate of R10–R11) | correspondence |
+| L9 “the generation component is not added to any reading of living;” | non-implication | does_not_show[6] |
+| L10 “families of conditions and the formations taking part at each step are finite;” | premise (duplicate of H0) | hypotheses[0] |
+| L11 “the witnesses are minimal;” | scope | does_not_show[7] |
+| L12 “the correspondence of flows and present is an application duty;” | premise (duplicate of H1) | hypotheses[1] (“these are correspondence premises”) |
+| L13 “the new names are the reviewer's suggestions, and the final choice is Ren's.” | reading | correspondence (last sentence; “, and” → “;”) |
+| V0 “Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): all 97 theorems of Becoming.Flow and 130 theorems of Becoming.Population have empty axiom reports;” | evidence | validation_scope; the counts stay in the receipt and the snapshot |
+| V1 “the same receipt covers the package's 75 modules … 4518 theorems/6370 declaration audits, and 22 inherited modules …” | evidence (counts) | receipt + snapshot |
+| V2 “The author's counterreview is in §14 of the integration note;” | evidence | validation_scope (“in the integration note”; §14 stays in the snapshot) |
+| V3 “a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections are handled in §15;” | evidence (review) | validation_scope (“the fourth independent review … is handled there”; counterexamples[7] names it the fourth); reviewer and §15 stay under sources and in the snapshot |
+| V4 “a fifth independent review (BECOMING-P11B-P12-REVIEW.md) reviewed those corrections and added the necessity of present without repetition and positive witnesses meeting every premise, see §19;” | evidence (review) | validation_scope; §19 → snapshot |
+| V5 “the sixth independent review (BECOMING-P13-P14-P12B-REVIEW.md) accepted these corrections, see §22.” | evidence (review) | validation_scope; §22 → snapshot |
+| V6 “The checker also verifies core purity: …” | evidence (core purity) | validation_scope (one clause); the closure list and the injEq/propext detail stay in the receipt and the snapshot |
+| V7 “This record's local laws (P57–P61) are in the same receipt, with empty axiom reports.” | evidence + round labels | validation_scope (the theorems of both modules include them); P57–P61 → history (existing entries) + snapshot |
+| R0 “Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生).” | Ren's words | correspondence (verbatim) |
+| R1–R5 | correspondence | correspondence (unchanged) |
+| R6–R7 “The author reads the result as one structure of 生生: … (an AI argument; whether they arise is not stated); this does not replace Ren's words and does not show that it is good.” | correspondence (AI reading) | correspondence (“this does not replace Ren's words and does not show” → “this neither replaces Ren's words nor shows”, to keep the field under its cap) |
+| R8 “Boundaries of the reading: the renewers can be the takers themselves (Cycle);” | scope | does_not_show[5] (with L7; witness Cycle.closed_more) |
+| R9 “ “no finite part bears it alone” needs a dissipation premise, which no-finite-part-bears-taking states, proving the claim for taking in flows;” | scope | does_not_show[5] |
+| R10 “in Web and Flow formations and conditions are two kinds, so a formation as a condition of another formation (life as a condition of life) can be represented only through a proxy condition;” | correspondence | correspondence (“a formation as a condition of another formation (life as a condition of life)” → “life as a condition of life (a formation as a condition of another)”) |
+| R11 “life-as-condition-of-life reads this relation with one kind of relatum and proves that an embodied life arises only as another active formation gives to it.” | correspondence | correspondence (“reads this relation … and proves” → “reads it … , proving”) |
+| N0 “The exact restatement for every world is this record's Flow.accumulates_on, replenished_over_on, renewers_over_on, More.replenishment_unbounded_from, More.renewers_unbounded_from, takers_le_covering, More.grows_covering, More.unceasing_covering (P57), the local condition inside the law: balance only on the stretch or from the step used;” | local laws appended to next | law 10 (the balance, replenishment and renewer laws, local condition inside) and law 11 (the covering laws); P57 → history (existing entry) |
+| N1 “more without end makes generation unceasing with no census, given only lists covering the active formations at arbitrarily late steps and, from some step on, each formation taking part listed once and whatever takes active;” | law appended to next | law 11, with “and activity decided” written in (judgment call, see above and history) |
+| N2 “Flow.Balances.accumulates, Balances.replenished_over, Balances.renewers_over, More.replenishment_unbounded, More.renewers_unbounded, More.grows, More.unceasing are their corollaries;” | corollaries | law 10 (“the forms with balance everywhere are their corollaries”) and law 11 (“the census forms are its corollaries”) |
+| N3–N5 | next step | next_delta (unchanged) |
+| N6 “whether a generation component can enter a reading of living without repeating the costs of “no harm”.” | next step | next_delta (“the costs of “no harm”” → “what the “no harm” readings give up”; zh “代价” → “所放弃的”: no word of exchange, the record's subject is not an exchange) |
+| H0–H3 | premises | hypotheses[0]–[3] (unchanged) |
+| H4 “Census and Taking (…): … More.unceasing uses only the first half. That present has no repetition at each step is also a necessary premise (Repeated). The converse of Taking … is an application duty.” | premise | hypotheses[4] (up to “the first half.”) and hypotheses[5] (from “That present has no repetition”); wording unchanged, split to stay under the item cap |
+| X0–X6 | counterexamples | counterexamples[0]–[6] (unchanged) |
+| X7 “Fourth independent review: every P11 declaration is accepted …; … (corrected, integration note §15).” | counterexample (review summary) | counterexamples[7] (“every P11 declaration” → “every declaration under review”; “(corrected, integration note §15)” → “(corrected in the integration note)”) |
+| X8 “Fifth independent review: every P11b declaration is accepted …; … (corrected, integration note §19).” | counterexample (review summary) | counterexamples[8] (“every P11b declaration” → “every declaration under review”; “(corrected, integration note §19)” → “(corrected in the integration note)”) |

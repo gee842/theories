@@ -1,18 +1,90 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "becoming-dependence-dynamics",
   "title": {
-    "zh": "依存的形成、维持、断裂与转化：损失之后的三种结局",
-    "en": "Dependence that forms, holds, breaks and transforms: three outcomes of a loss"
+    "zh": "依存的形成、维持、断裂与转化",
+    "en": "Dependence that forms, holds, breaks and transforms"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T18:51:55+00:00",
-  "claim": {
-    "zh": "让一个形成依存于哪些条件、所需多少、汲取哪些条件都成为配置的可观测量，任一运行就读出为一个依存网。跨每一步，一个依存被维持、断裂、形成或消解；依存不变时，这一读法恰好复原静态的更新／消耗分类。变化发生在步上：某步成立、后来不成立的依存在其间某步消解，反之在某步形成（不用排中律陈述）。每个被满足的依存跨每一步恰为维持或断裂之一；更新与消耗仍互斥。在形成只在其当时所依存的条件支持它处活跃的依存网（Dependent）中，定理把损失之后的三种结局联系起来，它们既不穷尽也不互斥：以不弱于先前的依存继续活跃，意味着条件已恢复；无回程的损失之后仍活跃的形成，必已转化其依存；依存不变时则终止。三者都实际可能：同一过程、同一配置下，三次运行都在第一步断裂同一依存（按步首约定读），此后分别终止、转化与恢复。断裂的读法不决定后继配置；在这一见证中，构成断裂的那一步动作选定结局。不用伦理前提，也不用 Lean 公理。",
-    "en": "Let which conditions a formation depends on, at what level, and which it draws on be observables of the configuration; every run then reads as a web of dependence. Across each step a dependence is kept, broken, formed or dissolved; with constant dependence this reading recovers the static renewing/consuming classification exactly. Change is made at a step: a dependence that holds and later does not dissolved across some step between, and one that comes to hold formed across one (stated without excluded middle). Every met dependence is exactly one of kept or broken across each step, and renewal and consumption remain exclusive. In a web where a formation is active only where the conditions it then depends on support it (Dependent), theorems connect three outcomes of a loss, which are neither exhaustive nor exclusive: continuing with an unweakened dependence means the condition was restored; a formation still active after a loss without return has transformed its dependence; with fixed dependence it ends. All three occur: in one process from one configuration, three runs break the same dependence at the first step (read under the step-start convention) and then end, transform and restore. The reading of the break does not fix the next configuration; in this witness the move that makes the break selects the outcome. No ethical premise and no Lean axiom is used."
+  "reviewed_at_utc": "2026-10-14T10:00:31+00:00",
+  "statement": {
+    "zh": "把依存读作配置的可观测量，任一运行就是一个依存网：跨每一步，一个依存被维持、断裂、形成或消解。在活动需要支持之处，定理联系损失之后的三种结局：终止、转化与恢复，一个过程表明三者都会出现。",
+    "en": "Read as observables of the configuration, dependence makes every run a web in which each step keeps, breaks, forms or dissolves a dependence. Where activity needs support, theorems relate three outcomes of a loss, ending, transformation and restoration, and one process shows all three."
   },
+  "laws": [
+    {
+      "zh": "一个形成依存于哪些条件、所需多少、汲取哪些条件都是配置的可观测量，任一运行就读出为一个依存网；依存不变时，这一读法恰好复原静态的更新／消耗分类。",
+      "en": "Which conditions a formation depends on, at what level, and which it draws on are observables of the configuration, so every run reads as a web of dependence; with constant dependence this reading recovers the static renewing/consuming classification exactly.",
+      "declarations": [
+        "Becoming.Dependence",
+        "Becoming.Web",
+        "Becoming.Dependence.along",
+        "Becoming.Web.static",
+        "Becoming.Web.static_supported",
+        "Becoming.Web.static_dependent",
+        "Becoming.Web.static_renewed",
+        "Becoming.Web.static_consumed",
+        "Becoming.Web.static_renewingIn",
+        "Becoming.Web.static_consumingIn",
+        "Becoming.Conditions.dependence",
+        "Becoming.Web.conditions_along"
+      ]
+    },
+    {
+      "zh": "跨每一步，一个依存被维持、断裂、形成或消解；每个被满足的依存跨每一步恰为维持或断裂之一，更新与消耗仍互斥。",
+      "en": "Across each step a dependence is kept, broken, formed or dissolved; every met dependence is exactly one of kept or broken across each step, and renewal and consumption remain exclusive.",
+      "declarations": [
+        "Becoming.Web.Kept",
+        "Becoming.Web.Broken",
+        "Becoming.Web.Forms",
+        "Becoming.Web.Dissolves",
+        "Becoming.Web.kept_or_broken",
+        "Becoming.Web.kept_not_broken",
+        "Becoming.Web.renewed_not_consumed",
+        "Becoming.Web.renewing_not_consuming"
+      ]
+    },
+    {
+      "zh": "变化发生在步上：某步成立、后来不成立的依存在其间某步消解，反之在某步形成（不用排中律陈述）。",
+      "en": "Change is made at a step: a dependence that holds and later does not dissolved across some step between, and one that comes to hold formed across one (stated without excluded middle).",
+      "declarations": [
+        "Becoming.ceases_at_a_step",
+        "Becoming.arises_at_a_step",
+        "Becoming.Web.dissolves_between",
+        "Becoming.Web.forms_between"
+      ]
+    },
+    {
+      "zh": "在形成只在其当时所依存的条件支持它处活跃的依存网（Dependent）中，定理把损失之后的三种结局联系起来，它们既不穷尽也不互斥：以不弱于先前的依存继续活跃，意味着条件已恢复；无回程的损失之后仍活跃的形成，必已转化其依存；依存不变时则终止。",
+      "en": "In a web where a formation is active only where the conditions it then depends on support it (Dependent), theorems connect three outcomes of a loss, which are neither exhaustive nor exclusive: continuing with an unweakened dependence means the condition was restored; a formation still active after a loss without return has transformed its dependence; with fixed dependence it ends.",
+      "declarations": [
+        "Becoming.Web.continuing_restores",
+        "Becoming.Web.consumed_continues_transformed",
+        "Becoming.Web.consumed_ends_when_fixed"
+      ]
+    },
+    {
+      "zh": "每条结局之律在任一依存网的单独一步上成立，局部条件写在规律之内：恢复与转化只用该形成在那一步被支持，终止只用该形成在那一步活跃时被支持；Dependent 之下的形式是它们的推论。",
+      "en": "Each outcome law holds at a single step of any web, with the local condition inside the law: restoration and transformation use only the formation's support at that step, and ending only that the formation is supported where active at that step; the forms under Dependent are their corollaries.",
+      "declarations": [
+        "Becoming.Web.continuing_restores_at",
+        "Becoming.Web.consumed_continues_transformed_at",
+        "Becoming.Web.consumed_ends_when_fixed_at"
+      ]
+    },
+    {
+      "zh": "三者都实际可能：同一过程、同一配置下，三次运行都在第一步断裂同一依存（按步首约定读），此后分别终止、转化与恢复；在这一见证中，构成断裂的那一步动作选定结局。",
+      "en": "All three occur: in one process from one configuration, three runs break the same dependence at the first step (read under the step-start convention) and then end, transform and restore; in this witness the move that makes the break selects the outcome.",
+      "declarations": [
+        "Becoming.Crossing.loss_does_not_decide",
+        "Becoming.Crossing.ending_dependent",
+        "Becoming.Crossing.transforming_dependent",
+        "Becoming.Crossing.restoring_dependent"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "条件水平与所需水平是自然数；活跃、依存与汲取是配置上的命题，均可随配置变化。形成与条件是贯穿运行的固定索引类型，形成跨步的同一性由 F 规定；draws 只记录汲取，不记录汲取多少。",
@@ -27,6 +99,70 @@
       "en": "Within one step, whether a dependence changed before the condition fell is not distinguished; the reading counts the fall against the dependence at the step's start. “The same dependence broken at the same step” depends on this convention: under the step-end convention only the restoring run has a break."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "三种结局的一般定理只给出约束，既不穷尽也不互斥。",
+      "en": "The general theorems on the three outcomes only constrain them, and the outcomes are neither exhaustive nor exclusive.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "Dependent 排除缓冲、储备与滞后；它是零储备，有储备时这些结局推迟而不消失（reserve-defers-ending，储备衰减时沿依存链的滞后共灭也在那里陈述）。",
+      "en": "Dependent excludes buffers, reserves and lags; it is the zero reserve, and with a reserve these outcomes are deferred, not removed (reserve-defers-ending, which also states lagged coextinction along chains where the reserve decays).",
+      "kind": "scope"
+    },
+    {
+      "zh": "不完成整体演绎。",
+      "en": "Does not complete the whole deduction.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "差别制造、周期层面的更新与替代分别见 joint-difference-making、becoming-return-grades、substitution-preserves-consumption。",
+      "en": "Difference-making, cycle-level renewal and substitution are in joint-difference-making, becoming-return-grades and substitution-preserves-consumption.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "detail": {
+        "zh": "断裂的读法不决定结局（Crossing.loss_does_not_decide）：从同一步的同一断裂推不出终止、转化或恢复中的任何一个；在这一见证中，结局由构成断裂的那一步动作选定。",
+        "en": "The reading of the break does not decide the outcome (Crossing.loss_does_not_decide): from the same break at the same step none of ending, transformation or restoration follows; in this witness the move that makes the break selects the outcome."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "detail": {
+        "zh": "继承的 Consumed 不要求依存曾被满足：一个从未被满足的依存使条件被消耗、汲取者成为消耗型，而没有任何断裂或丧失（Unmet.consumed_without_loss；独立审查 Q2）。Lost 要求曾被满足。",
+        "en": "The inherited Consumed does not require the dependence ever to have been met: a requirement never met makes the condition consumed and the drawer consuming without any break or loss (Unmet.consumed_without_loss; independent review Q2). Lost requires it to have been met."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "detail": {
+        "zh": "“转化”包括所需水平降低；应用若要区分减弱与替代，须用 Dissolves／Forms 细分。",
+        "en": "“Transformation” includes a lowered need; an application distinguishing weakening from substitution must refine it by Dissolves/Forms."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
+      "detail": {
+        "zh": "独立审查：数学接受；“三条去路”“去路由后续关系决定”与“形式实例”三处散文须撤回或收窄，已更正。",
+        "en": "Independent review: the mathematics is accepted; three prose claims (“three ways”, “the issue is decided by later relations”, “a formal instance”) had to be withdrawn or narrowed, and are corrected."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；Becoming.Dependence 的当前字节绑定回执 20261014T091930.724493Z）：Becoming.Dependence 的定理公理报告为空，其中逐步读法的定理属 becoming-stepwise-reading；检查器并核对核心纯净。作者反审见整合文档；另一 agent（未参与撰写）作了独立审查（见来源），其更正在整合文档中处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; the current bytes of Becoming.Dependence are bound to receipt 20261014T091930.724493Z): the theorems of Becoming.Dependence have empty axiom reports, the stepwise ones belonging to becoming-stepwise-reading, and the checker verifies core purity. Author counterreview in the integration note; a separate agent, not an author, reviewed it independently (listed under sources), and its corrections are handled in the integration note."
+  },
+  "next_delta": {
+    "zh": "从关系推出形成的同一，并表示分裂与合并；identity-across-steps 证明终止与转化之分、生起与侵蚀依赖跨步的同一，活动与依存的连续把它约束到接续为止。",
+    "en": "Derive the identity of formations from relations, and represent splits and merges; identity-across-steps proves that the distinction between ending and transformation, arising and undermining depend on identity across steps, which continuity of activity and dependence constrains up to succession."
+  },
   "correspondence": {
     "zh": "形成与条件是同一展开中的分析角色，不是独立实体。可观测量与实际历史的对应、依存的改变是否先于下降，以及哪种结局在实际系统中出现，都是应用或经验上的义务。终止与转化之分依赖所规定的形成同一性；形成本身的个体化没有被表示；identity-across-steps 陈述这一同一在哪些读法中起作用。",
     "en": "Formations and conditions are analytic roles in one unfolding, not independent entities. The correspondence of observables to an actual history, whether a change of dependence preceded a fall, and which outcome occurs in an actual system are application or empirical duties. The distinction between ending and transformation depends on the supplied identity of formations; the individuation of formations itself is not represented; identity-across-steps states in which readings that identity matters."
@@ -137,44 +273,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
-      "detail": {
-        "zh": "断裂的读法不决定结局（Crossing.loss_does_not_decide）：从同一步的同一断裂推不出终止、转化或恢复中的任何一个；在这一见证中，结局由构成断裂的那一步动作选定。",
-        "en": "The reading of the break does not decide the outcome (Crossing.loss_does_not_decide): from the same break at the same step none of ending, transformation or restoration follows; in this witness the move that makes the break selects the outcome."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
-      "detail": {
-        "zh": "继承的 Consumed 不要求依存曾被满足：一个从未被满足的依存使条件被消耗、汲取者成为消耗型，而没有任何断裂或丧失（Unmet.consumed_without_loss；独立审查 Q2）。Lost 要求曾被满足。",
-        "en": "The inherited Consumed does not require the dependence ever to have been met: a requirement never met makes the condition consumed and the drawer consuming without any break or loss (Unmet.consumed_without_loss; independent review Q2). Lost requires it to have been met."
-      }
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
-      "detail": {
-        "zh": "“转化”包括所需水平降低；应用若要区分减弱与替代，须用 Dissolves／Forms 细分。",
-        "en": "“Transformation” includes a lowered need; an application distinguishing weakening from substitution must refine it by Dissolves/Forms."
-      }
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
-      "detail": {
-        "zh": "独立审查：数学接受；“三条去路”“去路由后续关系决定”与“形式实例”三处散文须撤回或收窄，已更正。",
-        "en": "Independent review: the mathematics is accepted; three prose claims (“three ways”, “the issue is decided by later relations”, “a formal instance”) had to be withdrawn or narrowed, and are corrected."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "不含伦理谓词。三种结局的一般定理只给出约束，既不穷尽也不互斥；断裂的读法不决定后继配置。Dependent 排除了缓冲、储备与滞后；它是零储备，有储备时这些结局推迟而不消失，见 reserve-defers-ending。不完成整体演绎。差别制造、周期层面的更新与替代分别见 joint-difference-making、becoming-return-grades、substitution-preserves-consumption。",
-    "en": "Contains no ethical predicate. The general theorems on the three outcomes only constrain them, and the outcomes are neither exhaustive nor exclusive; the reading of the break does not fix the next configuration. Dependent excludes buffers, reserves and lags; it is the zero reserve, and with a reserve these outcomes are deferred, not removed, see reserve-defers-ending. Does not complete the whole deduction. Difference-making, cycle-level renewal and substitution are in joint-difference-making, becoming-return-grades and substitution-preserves-consumption."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Dependence 62 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 NewNeed 与 Pinned 的定理，P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理，及 P11b 新增的 MetAbove.now 与 Stunted 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P50）在同一回执中，公理报告为空。本记录的局部规律（P63、P61b）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): all 62 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's NewNeed and Pinned theorems, P9b's FallingNeed, RisingNeed and Gap theorems, and P11b's MetAbove.now and Stunted theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P50) are in the same receipt, with empty axiom reports. This record's local laws (P63, P61b) are in the same receipt, with empty axiom reports."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
@@ -305,10 +403,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Web.consumed_ends_when_fixed_at（P63），局部条件写在规律之内：只用该形成在那一步活跃时被支持；Web.consumed_ends_when_fixed是它的推论；对每个世界的确切重述是本记录的 Web.continuing_restores_at、Web.consumed_continues_transformed_at（P50），局部条件写在规律之内：只用该形成在该步被支持；Web.continuing_restores、Web.consumed_continues_transformed是它们的推论；放宽 Dependent 已由 reserve-defers-ending 陈述（Dependent 是零储备，储备推迟终结而不逃脱）；沿依存链的滞后共灭在储备衰减时也已在该记录陈述（P31）；形成的个体化：identity-across-steps 证明终止与转化之分、生起与侵蚀依赖跨步的同一，活动与依存的连续把它约束到接续为止；从关系推出同一，以及分裂与合并的表示，仍开放。",
-    "en": "The exact restatement for every world is this record's Web.consumed_ends_when_fixed_at (P63), the local condition inside the law: only that the formation is supported where active at that step; Web.consumed_ends_when_fixed is its corollary; the exact restatement for every world is this record's Web.continuing_restores_at, Web.consumed_continues_transformed_at (P50), the local condition inside the law: only the formation's support at that step; Web.continuing_restores, Web.consumed_continues_transformed are their corollaries; relaxing Dependent is stated in reserve-defers-ending (Dependent is the zero reserve, and a reserve defers the end without escaping it), with lagged coextinction along chains of dependence stated there too where the reserve decays (P31); the individuation of formations: identity-across-steps proves that the distinction between ending and transformation, arising and undermining depend on identity across steps, and that continuity of activity and dependence constrains it up to succession; deriving identity from relations, and representing splits and merges, remain open."
-  },
   "history": [
     {
       "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P6，承接 becoming-renewal-reading 的下一步。",
@@ -661,6 +755,20 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：长标题改为短名，陈述在先；主张拆为 6 条规律，原附在下一步中的局部规律改为规律 5；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、反例、状态、证明绑定与来源哈希均未改变。每句旧文本的去向见迁移对照表 [becoming-dependence-dynamics.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-dependence-dynamics.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): the long title became a short name with a statement first; the claim was split into 6 laws, the local laws appended to the next step becoming law 5; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, counterexample, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [becoming-dependence-dynamics.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-dependence-dynamics.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/df070b67d73609e4/becoming-dependence-dynamics.json",
+      "sha256": "df070b67d73609e4e890682a8f821c5ec1a07812e32409bcccfe7c4eb4d15122",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
