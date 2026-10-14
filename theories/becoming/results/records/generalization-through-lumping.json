@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "generalization-through-lumping",
   "title": {
     "zh": "经归并的推广",
@@ -8,15 +8,137 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-14T14:40:00+00:00",
   "statement": {
     "zh": "归并恰在它归并之处推广，正确恰在世界经归并同去之处；结构与变化是同一个归并。训练经数据选择，拟合在数据之外正确恰当类在那里决定；习得链与连接主义模型是其实例。",
     "en": "A lumping generalizes exactly where it lumps and is right exactly where the world goes alike across it; structure and change are one lumping. Training selects through data; a fit is right beyond it exactly where the class determines it; the acquisition chain and connectionist models are instances."
   },
-  "claim": {
-    "zh": "设 C 是函数 I → V 的类，D 是数据（输入上的命题），x 是输入。在 C 之中数据固定 x 处之值（Determines C D x），指 C 中在 D 上一致的两个成员在 x 取同一值；g 经归并 π : I → K 同去（Lumped π g），指 π 相同的输入取同一值；C 在 x 处于数据之外自由（Free C D x），指每个成员在 D 上的值都能与每个成员在 x 的值组合。不加前提：某个观察输入与 x 被 π 归并时，经 π 同去的函数之类在 x 由数据决定（lumped_determines）；有两个不同的值、数据是列表、K 的相等可判定时，这恰当某个观察输入与 x 被归并（determines_lumped_iff）。经 π 同去、在 D 上拟合世界 f 的成员 g，在与观察输入 d 归并的 x 处正确，恰当 f d = f x（lumped_right_iff）；f 本身经 π 同去时正确（lumped_world_right）。自由的类在 x 由数据决定，恰当其成员在 x 都相同（free_determines_iff）；一切函数之类在每个未观察的输入处自由（every_free），有两个值时数据在那里不决定任何东西（every_determines_nothing）。变化：P 是过程、π 是配置的投影时，经 π 相同者同去（P66 的 GoAlike），恰当每两个经 π 相同的配置以每个动作同去（GoAlikeAt、goAlike_iff_at）；P 确定、在 s₀ 观察到 a 的结果 u₀ 时，经 π 读的结果转移到 s 处 a 的每一步，恰当 s₀ 与 s 经 π 以 a 同去（transfer_right_iff）；确定律 next 经 π 同去，恰当 π ∘ next 经 π 同去（goAlike_iff_lumped）。训练：经关系 alike 的选择（Training.Through）把 alike 的候选选得相同；P64 的经识选择恰是经“直到 t 识得相同”的选择（Training.web_selectsThrough_iff，定义上相同）；由数据上的值算出的损失以及由它作出的每个选择经“在数据上一致”选择（Training.loss_through）；在 x 自由的类中，经数据的每个选择对每个被选成员与每个成员在 x 的值，都有一个被选成员与前者在数据上一致而在 x 取该值（Training.unselected_beyond_data）；C 中每个在数据上与 C 中世界一致的成员在 x 都取世界之值，恰当 Determines C D x（Training.fit_right_iff）。见证：Shift（输入为位置与内容，归并读内容，数据只在一个位置）中归并决定未试的输入（Shift.determines），一切函数之类不决定（Shift.every_nothing），世界各位置相同时推广正确（Shift.right_same），不同时错误（Shift.wrong_both）。外围（LearningCorrespondence，Lean 4.30.0-rc2 与 Mathlib）：在原子效果可分辨的一致律族中，CompositionalAcquisition 的三次接触决定每个表达式（uniform_determines，习得代码的精确性逐例重证，acquire_exact），容许其非一致律时在新表达式处不决定（nonuniform_not_determined）；固定权重下网络的发展是其步的轨道（develop_orbit）；Hebb 式发展是 P66 的 adaptive 系统（hebbian、hebbian_determined），活动恰在权重对其步不造成差别之处有自己的律（hebbian_activity_law_iff），三单元记忆中权重造成差别（weights_matter），所以活动单独没有律（hebbian_no_activity_law）；更新路线下的网络又是 adaptive 系统，路线是规则（updating、updating_determined），网络恰在路线不造成差别之处有自己的律（updating_network_law_iff），起始网络与第一个任务上两条路线不同（route_matters），所以网络单独没有律（updating_no_network_law）；回应路线恰在任务失败处学习（responsive_kept、responsive_learns）。",
-    "en": "Let C be a class of functions I → V, D the data (a proposition on inputs) and x an input. Within C the data fix the value at x (Determines C D x) when two members of C agreeing on D take one value at x; g goes alike across a lumping π : I → K (Lumped π g) when inputs alike under π take one value; C is free at x beyond the data (Free C D x) when every member's values on D combine with every member's value at x. With no premise: where an observed input is lumped with x by π, the class of functions going alike across π is determined at x by the data (lumped_determines); given two values, data in a list and decided equality on K, this holds exactly where some observed input is lumped with x (determines_lumped_iff). A member g going alike across π and fitting the world f on D is right at an x lumped with an observed d exactly where f d = f x (lumped_right_iff), and is right where f itself goes alike across π (lumped_world_right). A free class is determined at x by the data exactly where its members all agree at x (free_determines_iff); the class of every function is free at every input not observed (every_free), and with two values the data determine nothing there (every_determines_nothing). Change: for a process P and a projection π of configurations, going alike under π (P66's GoAlike) is going alike by every move at every two configurations alike under π (GoAlikeAt, goAlike_iff_at); where P is determined and the outcome u₀ of a at s₀ is observed, the outcome read through π transfers to every step of a from s exactly where s₀ and s go alike under π by a (transfer_right_iff); a determined law next goes alike under π exactly where π ∘ next goes alike across π (goAlike_iff_lumped). Training: a selection through a relation alike (Training.Through) selects alike candidates alike; P64's selection through registration is exactly a selection through registering alike up to t (Training.web_selectsThrough_iff, by definition); a loss computed from the values on the data, and every choice made from it, select through agreeing on the data (Training.loss_through); within a class free at x, every selection through the data has, for every selected member and every member's value at x, a selected member agreeing with the first on the data and taking that value at x (Training.unselected_beyond_data); every member of C agreeing on the data with a world in C takes the world's value at x exactly where Determines C D x (Training.fit_right_iff). Witness: in Shift (inputs a position and a content, the lumping reading the content, data at one position only) the lumping determines the untried input (Shift.determines), the class of every function does not (Shift.every_nothing), and the generalization is right where the world is the same at every position (Shift.right_same) and wrong where it differs (Shift.wrong_both). Periphery (LearningCorrespondence, Lean 4.30.0-rc2 and Mathlib): within the uniform law family with distinguishable primitive effects the three encounters of CompositionalAcquisition determine every expression (uniform_determines, the exactness of the acquired code re-proved case by case, acquire_exact), and admitting its nonuniform law they determine nothing at the novel expression (nonuniform_not_determined); a network's development under fixed weights is the orbit of its step (develop_orbit); Hebbian development is P66's adaptive system (hebbian, hebbian_determined), activity having a law of its own exactly where the weights make no difference to its step (hebbian_activity_law_iff), and in the three-unit memory they do (weights_matter), so activity alone has no law (hebbian_no_activity_law); the network under a route of updating is again an adaptive system with the route as the rule (updating, updating_determined), having a law of its own exactly where the route makes no difference (updating_network_law_iff), and at the starting network and first task the two routes differ (route_matters), so the network alone has no law (updating_no_network_law); the responsive route learns exactly where the task fails (responsive_kept, responsive_learns)."
-  },
+  "laws": [
+    {
+      "zh": "设 C 是函数 I → V 的类，D 是数据（输入上的命题）。C 中在 D 上一致的两个成员在 x 取同一值，即数据在 x 处固定值（Determines C D x）；π 相同的输入取同一值，即 g 经归并 π : I → K 同去（Lumped π g）；每个成员在 D 上的值都能与每个成员在 x 的值组合，即 C 在 x 处于数据之外自由（Free C D x）。",
+      "en": "Let C be a class of functions I → V and D the data (a proposition on inputs). Within C the data fix the value at x (Determines C D x) when two members of C agreeing on D take one value at x; g goes alike across a lumping π : I → K (Lumped π g) when inputs alike under π take one value; C is free at x beyond the data (Free C D x) when every member's values on D combine with every member's value at x.",
+      "declarations": [
+        "Becoming.Learning.Determines",
+        "Becoming.Learning.Lumped",
+        "Becoming.Learning.Free"
+      ]
+    },
+    {
+      "zh": "不加前提：某个观察输入与 x 被 π 归并时，经 π 同去的函数之类在 x 由数据决定；有两个不同的值、数据是列表、K 的相等可判定时，这恰当某个观察输入与 x 被归并。",
+      "en": "With no premise: where an observed input is lumped with x by π, the class of functions going alike across π is determined at x by the data; given two values, data in a list and decided equality on K, this holds exactly where some observed input is lumped with x.",
+      "declarations": [
+        "Becoming.Learning.lumped_determines",
+        "Becoming.Learning.decideSeen",
+        "Becoming.Learning.determines_lumped_iff"
+      ]
+    },
+    {
+      "zh": "经 π 同去、在 D 上拟合世界 f 的成员 g，在与观察输入 d 归并的 x 处正确，恰当 f d = f x；f 本身经 π 同去时正确。",
+      "en": "A member g going alike across π and fitting the world f on D is right at an x lumped with an observed d exactly where f d = f x, and is right where f itself goes alike across π.",
+      "declarations": [
+        "Becoming.Learning.lumped_right_iff",
+        "Becoming.Learning.lumped_world_right"
+      ]
+    },
+    {
+      "zh": "自由的类在 x 由数据决定，恰当其成员在 x 都相同；输入的相等可判定时，一切函数之类在每个未观察的输入处自由，有两个值时数据在那里不决定任何东西。",
+      "en": "A free class is determined at x by the data exactly where its members all agree at x; with decided equality on inputs, the class of every function is free at every input not observed, and with two values the data determine nothing there.",
+      "declarations": [
+        "Becoming.Learning.free_determines_iff",
+        "Becoming.Learning.every_free",
+        "Becoming.Learning.every_determines_nothing"
+      ]
+    },
+    {
+      "zh": "变化：P 是过程、π 是配置的投影时，经 π 相同者同去（GoAlike），恰当每两个经 π 相同的配置以每个动作同去；P 确定、在 s₀ 观察到 a 的结果 u₀ 时，经 π 读的结果转移到 s 处 a 的每一步，恰当 s₀ 与 s 经 π 以 a 同去。",
+      "en": "Change: for a process P and a projection π of configurations, going alike under π (GoAlike) is going alike by every move at every two configurations alike under π; where P is determined and the outcome u₀ of a at s₀ is observed, the outcome read through π transfers to every step of a from s exactly where s₀ and s go alike under π by a.",
+      "declarations": [
+        "Becoming.GoAlike",
+        "Becoming.Learning.GoAlikeAt",
+        "Becoming.Learning.goAlike_iff_at",
+        "Becoming.Learning.transfer_right_iff"
+      ]
+    },
+    {
+      "zh": "结构与变化是同一个归并：确定律 next 经 π 同去，恰当 π ∘ next 经 π 同去。",
+      "en": "Structure and change are one lumping: a determined law next goes alike under π exactly where π ∘ next goes alike across π.",
+      "declarations": [
+        "Becoming.Learning.goAlike_iff_lumped",
+        "Becoming.Law.process"
+      ]
+    },
+    {
+      "zh": "训练：经关系 alike 的选择把 alike 的候选选得相同；经识的选择恰是经“直到 t 识得相同”的选择（定义上相同）；由数据上的值算出的损失以及由它作出的每个选择经“在数据上一致”选择。",
+      "en": "Training: a selection through a relation alike selects alike candidates alike; selection through registration is exactly a selection through registering alike up to t, by definition; a loss computed from the values on the data, and every choice made from it, select through agreeing on the data.",
+      "declarations": [
+        "Becoming.Learning.Training.Through",
+        "Becoming.Learning.Training.AgreeOn",
+        "Becoming.Web.SelectsThrough",
+        "Becoming.Learning.Training.web_selectsThrough_iff",
+        "Becoming.Learning.Training.loss_through"
+      ]
+    },
+    {
+      "zh": "在 x 自由的类中，经数据的每个选择对每个被选成员与每个成员在 x 的值，都有一个被选成员与前者在数据上一致而在 x 取该值；C 中每个在数据上与 C 中世界一致的成员在 x 都取世界之值，恰当 Determines C D x。",
+      "en": "Within a class free at x, every selection through the data has, for every selected member and every member's value at x, a selected member agreeing with the first on the data and taking that value at x; every member of C agreeing on the data with a world in C takes the world's value at x exactly where Determines C D x.",
+      "declarations": [
+        "Becoming.Learning.Training.unselected_beyond_data",
+        "Becoming.Learning.Training.fit_right_iff"
+      ]
+    },
+    {
+      "zh": "见证 Shift（输入为位置与内容，归并读内容，数据只在一个位置）：归并决定未试的输入，一切函数之类不决定；世界各位置相同时推广正确，不同时错误。",
+      "en": "In Shift (inputs a position and a content, the lumping reading the content, data at one position only) the lumping determines the untried input and the class of every function does not; the generalization is right where the world is the same at every position and wrong where it differs.",
+      "declarations": [
+        "Becoming.Learning.Shift.content",
+        "Becoming.Learning.Shift.data",
+        "Becoming.Learning.Shift.same",
+        "Becoming.Learning.Shift.both",
+        "Becoming.Learning.Shift.determines",
+        "Becoming.Learning.Shift.every_nothing",
+        "Becoming.Learning.Shift.right_same",
+        "Becoming.Learning.Shift.wrong_both",
+        "Becoming.Learning.not_moves"
+      ]
+    },
+    {
+      "zh": "外围（LearningCorrespondence）：在原子效果可分辨的一致律族中，CompositionalAcquisition 的三次接触决定每个表达式（习得代码的精确性逐例重证）；容许其非一致律时，在新表达式处不决定。",
+      "en": "Periphery (LearningCorrespondence): within the uniform law family with distinguishable primitive effects the three encounters of CompositionalAcquisition determine every expression (the exactness of the acquired code re-proved case by case), and admitting its nonuniform law they determine nothing at the novel expression.",
+      "declarations": [
+        "Becoming.LearningCorrespondence.Uniform",
+        "Becoming.LearningCorrespondence.encounters",
+        "Becoming.LearningCorrespondence.acquire_exact",
+        "Becoming.LearningCorrespondence.agree_at",
+        "Becoming.LearningCorrespondence.uniform_determines",
+        "Becoming.LearningCorrespondence.nonuniform_not_determined"
+      ]
+    },
+    {
+      "zh": "外围：固定权重下网络的发展是其步的轨道；Hebb 式发展是改变自身规则的系统，活动恰在权重对其步不造成差别之处有自己的律；三单元记忆中权重造成差别，所以活动单独没有律。",
+      "en": "Periphery: a network's development under fixed weights is the orbit of its step; Hebbian development is a system changing its own rule, activity having a law of its own exactly where the weights make no difference to its step; in the three-unit memory they do, so activity alone has no law.",
+      "declarations": [
+        "Becoming.LearningCorrespondence.develop_orbit",
+        "Becoming.LearningCorrespondence.hebbian",
+        "Becoming.LearningCorrespondence.hebbian_determined",
+        "Becoming.LearningCorrespondence.hebbian_activity_law_iff",
+        "Becoming.LearningCorrespondence.weights_matter",
+        "Becoming.LearningCorrespondence.hebbian_no_activity_law"
+      ]
+    },
+    {
+      "zh": "外围：更新路线下的网络又是改变自身规则的系统，路线是规则，网络恰在路线不造成差别之处有自己的律；起始网络与第一个任务上两条路线不同，所以网络单独没有律；回应路线恰在任务失败处学习。",
+      "en": "Periphery: the network under a route of updating is again a system changing its own rule, the route being the rule, with a law of its own exactly where the route makes no difference; at the starting network and first task the two routes differ, so the network alone has no law; the responsive route learns exactly where the task fails.",
+      "declarations": [
+        "Becoming.LearningCorrespondence.updating",
+        "Becoming.LearningCorrespondence.updating_determined",
+        "Becoming.LearningCorrespondence.updating_network_law_iff",
+        "Becoming.LearningCorrespondence.route_matters",
+        "Becoming.LearningCorrespondence.updating_no_network_law",
+        "Becoming.LearningCorrespondence.responsive_kept",
+        "Becoming.LearningCorrespondence.responsive_learns"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "核心部分不加公理；类 C、数据 D、归并 π 与选择由学习之外给出；determines_lumped_iff 另设两个不同的值、列表数据与 K 上可判定的相等，every_free 设 I 上可判定的相等。",
@@ -27,9 +149,57 @@
       "en": "The periphery is checked with Lean 4.30.0-rc2 and Mathlib: the acquisition declarations have empty axiom reports; the network declarations, which use real numbers, report Mathlib's standard axioms (propext, Classical.choice, Quot.sound), listed one by one in the bridge receipt. Grammar, probes, tasks, profiles, constants and routes are taken from the earlier modules with their earlier scope."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "这些规律不推出一个实际的形成或网络持有或能达到哪个类、施加哪个归并，及其与世界的对应。",
+      "en": "The laws do not derive which class an actual formation or network holds or can reach, which lumping it imposes, or its correspondence to the world.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "优化的动力学、隐式偏置、概率的推广界（PAC、VC 维）没有陈述。",
+      "en": "Optimization dynamics, implicit bias and probabilistic generalization bounds (PAC, VC dimension) are not stated.",
+      "kind": "scope"
+    },
+    {
+      "zh": "外围的网络是三单元的小模型，不是现代深度网络。",
+      "en": "The periphery's networks are three-unit models, not modern deep networks.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "goAlike_iff_lumped 近于定义展开，内容在于它使 Ren 的理有一个形式所指。",
+      "en": "goAlike_iff_lumped is near-definitional, its content being that it gives Ren's 理 a formal referent.",
+      "kind": "scope"
+    },
+    {
+      "zh": "外围实例是既有结果的重读与数值见证，增量是连接。",
+      "en": "The periphery instances re-read earlier results and give numerical witnesses, the delta being the connection.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "detail": {
+        "zh": "归并错误时推广错误：Shift 中世界在各位置不同时，经内容归并、在数据上拟合世界的函数在未试的位置错（Shift.wrong_both）；一切函数之类在未试之处不决定任何东西（every_determines_nothing）。",
+        "en": "A wrong lumping generalizes wrongly: in Shift, where the world differs across positions, a function lumped by content and fitting the world on the data is wrong at the untried position (Shift.wrong_both); the class of every function determines nothing at an untried input (every_determines_nothing)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-evaluation",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Learning 的定理公理报告为空（回执 20261013T094743.528770Z；改名后的 Mechanism 与 Selection 由 20261013T204910.042715Z 绑定），并核对核心纯净。外围学习桥接以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261013T095759.980593Z）：习得部分公理报告为空，其余只报告 Mathlib 的标准公理；核心不导入它。作者反审见整合文档；尚无独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Learning have empty axiom reports (receipt 20261013T094743.528770Z; Mechanism and Selection, renamed since, bound by 20261013T204910.042715Z), and the checker verifies core purity. The periphery learning bridge is checked with Lean 4.30.0-rc2 and Mathlib (receipt 20261013T095759.980593Z): the acquisition declarations report no axioms, the rest only Mathlib's standard axioms; the core does not import it. Author counterreview in the integration note; no independent review yet."
+  },
+  "next_delta": {
+    "zh": "实际网络的结构施加哪个归并（位置间共享、不变性）的外围实例；不确定过程上的推广；与 Becoming.Unfolding 的 Alike 及 Becoming.Description 对描述所保留与失去者的说明的实例定理；Ren 对 AI 关于理的形式读法的判断。",
+    "en": "Periphery instances of the lumping an actual architecture imposes (sharing across positions, invariance); generalization over undetermined processes; instance theorems with Alike of Becoming.Unfolding and the account in Becoming.Description of what a description keeps and loses; Ren's judgment on the AI's formal reading of 理."
+  },
   "correspondence": {
-    "zh": "Ren 2026-10-12：“我觉得理更像是对结构和变化的规律的建模”。依 Ren 的读法，理是对结构与变化之规律的建模；AI 把对结构的建模读作一个归并（Lumped），把对变化的建模读作步骤经它同去的归并（GoAlike），goAlike_iff_lumped 说两者是同一个概念。它取代 AI 在 P49 中的读法“对识负责的模型”；按 Ren 的读法，模型仍只经识被检验。读法（AI 的，待 Ren）：关于何者无关的模型何时正确，就是世界何时经它所归并者同去；自然的一致性不是前提而是这一局部条件；古德曼的新谜是选哪个归并；every_determines_nothing 是“没有免费的午餐”的有限、确定性形式；对受训网络，类是训练所能达到的，推广来自结构、起点与更新所施加的归并（位置间共享、不变性、组合），不来自损失。",
-    "en": "Ren, 12 October 2026: “我觉得理更像是对结构和变化的规律的建模”. On Ren's reading 理 is the modeling of the laws of structure and of change; the AI reads a model of structure as a lumping (Lumped) and a model of change as a lumping the step goes alike across (GoAlike), and goAlike_iff_lumped says the two are one notion. This replaces the AI's reading in P49, “a model answerable to registration”; on Ren's reading a model is still tested only through registration. Readings (the AI's, pending Ren): when a model of what is irrelevant is right is when the world goes alike across what it lumps; the uniformity of nature is not a premise but that local condition; Goodman's new riddle is which lumping; every_determines_nothing is a finite, determined form of “no free lunch”; for a trained network the class is what training can reach, and generalization comes from the lumping that architecture, starting points and updates impose (sharing across positions, invariance, composition), not from the loss."
+    "zh": "Ren 2026-10-12：“我觉得理更像是对结构和变化的规律的建模”。依 Ren 的读法，理是对结构与变化之规律的建模；AI 把对结构的建模读作一个归并（Lumped），把对变化的建模读作步骤经它同去的归并（GoAlike），goAlike_iff_lumped 说两者是同一个概念。它取代 AI 在 testing-within-registration 中的读法“对识负责的模型”；按 Ren 的读法，模型仍只经识被检验。读法（AI 的，待 Ren）：关于何者无关的模型何时正确，就是世界何时经它所归并者同去；自然的一致性不是前提而是这一局部条件；古德曼的新谜是选哪个归并；every_determines_nothing 是“no free lunch”的有限、确定性形式；对受训网络，类是训练所能达到的，推广来自结构、起点与更新所施加的归并（位置间共享、不变性、组合），不来自损失。",
+    "en": "Ren, 12 October 2026: “我觉得理更像是对结构和变化的规律的建模”. On Ren's reading 理 is the modeling of the laws of structure and of change; the AI reads a model of structure as a lumping (Lumped) and a model of change as a lumping the step goes alike across (GoAlike), and goAlike_iff_lumped says the two are one notion. This replaces the AI's reading in testing-within-registration, “a model answerable to registration”; on Ren's reading a model is still tested only through registration. Readings (the AI's, pending Ren): when a model of what is irrelevant is right is when the world goes alike across what it lumps; the uniformity of nature is not a premise but that local condition; Goodman's new riddle is which lumping; every_determines_nothing is a finite, determined form of “no free lunch”; for a trained network the class is what training can reach, and generalization comes from the lumping that architecture, starting points and updates impose (sharing across positions, invariance, composition), not from the loss."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
   "aliases": [
@@ -116,23 +286,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "detail": {
-        "zh": "归并错误时推广错误：Shift 中世界在各位置不同时，经内容归并、在数据上拟合世界的函数在未试的位置错（Shift.wrong_both）；一切函数之类在未试之处不决定任何东西（every_determines_nothing）。",
-        "en": "A wrong lumping generalizes wrongly: in Shift, where the world differs across positions, a function lumped by content and fitting the world on the data is wrong at the untried position (Shift.wrong_both); the class of every function determines nothing at an untried input (every_determines_nothing)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "类、数据与归并是给出的；一个实际形成或网络持有或能达到哪个类、施加哪个归并、其与世界的对应，不推出；优化的动力学、隐式偏置、概率的推广界（PAC、VC 维）没有陈述；外围的网络是三单元的小模型，不是现代深度网络；goAlike_iff_lumped 近于定义展开，内容在于它使 Ren 的理有一个形式所指；外围实例是既有结果的重读与数值见证，增量是连接；读法除理（Ren 的）之外是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "The class, the data and the lumping are supplied; which class an actual formation or network holds or can reach, which lumping it imposes and its correspondence to the world are not derived; optimization dynamics, implicit bias and probabilistic generalization bounds (PAC, VC dimension) are not stated; the periphery's networks are three-unit models, not modern deep networks; goAlike_iff_lumped is near-definitional, its content being that it gives Ren's 理 a formal referent; the periphery instances re-read earlier results and give numerical witnesses, the delta being the connection; the readings other than 理 (Ren's) are the AI's, pending Ren; contains no ethical predicate."
-  },
-  "validation_scope": {
-    "zh": "2026-10-14：Becoming.Mechanism、Becoming.Selection 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Learning 的 75 项定理全部空依赖，其中含 determines_lumped_iff、lumped_right_iff、every_determines_nothing、goAlike_iff_lumped、transfer_right_iff、Training.loss_through与 Training.fit_right_iff；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围学习桥接以 Lean 4.30.0-rc2 与 Mathlib ea11ccc0 成功实查（20261013T095759.980593Z）：LearningCorrespondence 的 15 项定理／19 项声明审计，其中习得部分 6 项声明公理报告为空，其余只报告 Mathlib 的标准公理（propext、Classical.choice、Quot.sound）；导入闭包中的每个其他模块与已通过回执一致；核心不导入它。作者反审见整合文档 §92；尚无独立审查。",
-    "en": "14 October 2026: the current bytes of Becoming.Mechanism, Becoming.Selection are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 75 theorems of Becoming.Learning all have empty axiom reports, among them determines_lumped_iff, lumped_right_iff, every_determines_nothing, goAlike_iff_lumped, transfer_right_iff, Training.loss_through and Training.fit_right_iff; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). Successful periphery learning-bridge check with Lean 4.30.0-rc2 and Mathlib ea11ccc0 (20261013T095759.980593Z): the 15 theorems/19 declaration audits of LearningCorrespondence, the 6 acquisition declarations with empty axiom reports and the rest reporting only Mathlib's standard axioms (propext, Classical.choice, Quot.sound); every other module in its import closure matches a passed receipt; the core does not import it. The author's counterreview is in §92 of the integration note; there is no independent review yet."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
@@ -296,10 +449,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "实际网络的结构施加哪个归并（位置间共享、不变性）的外围实例；不确定过程上的推广；与 P69 的 Alike 及 P70 的描述所保留与失去者的实例定理；Ren 对 AI 关于理的形式读法的判断。",
-    "en": "Periphery instances of the lumping an actual architecture imposes (sharing across positions, invariance); generalization over undetermined processes; instance theorems with P69's Alike and P70's account of what a description keeps and loses; Ren's judgment on the AI's formal reading of 理."
-  },
   "history": [
     {
       "zh": "2026-10-12 P73、P74：新增，按 Ren“please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”；来自 AI 对元层次、神经网络、认知与学习之完整性的回答与三步提议（工作板 P73、P74）；见整合文档 §92。",
@@ -400,6 +549,20 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    },
+    {
+      "zh": "2026-10-14 迁移到 schema 2（开放问题计划 F 项：lint 发现最多的 45 条 schema-1 记录的迁移；Ren：“please, do all”，经整合会话转达）：主张拆为 12 条规律（定义、归并、正确、自由、变化、结构与变化、训练两条、Shift，以及外围三条）；限制分入“未表明”、前提与通用边界；证据成为一段。规律 4 写出 every_determines_nothing 经 every_free 所带的条件“输入的相等可判定”（旧前提只对 every_free 写出）。通用边界 no-ethical-premise 不引用：外围网络部分的声明报告 Mathlib 的标准公理。工作项编号改为名称：主张中“P66 的 GoAlike”改为 GoAlike（声明 Becoming.GoAlike，依赖 projection-carrying-a-law），“P66 的 adaptive 系统”改为“改变自身规则的系统”，“P64 的经识选择”改为经识的选择（Web.SelectsThrough，依赖 selection-through-registration）；对应中“AI 在 P49 中的读法”改为 testing-within-registration 中的；下一步中 P69 的 Alike 与 P70 的描述改为 Becoming.Unfolding 与 Becoming.Description。对应中文“没有免费的午餐”改为该定理的英文名“no free lunch”（与英文一致；“免费”在 lint 的市场词表中）。证据中的定理数、模块与审计总数及 Mathlib 版本 ea11ccc0 留在回执与 text_versions 末项中。规律、前提、状态、证明绑定与来源哈希均未改变。每句旧文本的去向见迁移对照表 [generalization-through-lumping.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/generalization-through-lumping.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026, migrated to schema 2 (item F of the open-issues plan: the migration of the 45 schema-1 records with the most lint findings; Ren: “please, do all”, relayed by the integrating session): the claim became 12 laws (definitions, lumping, rightness, freedom, change, structure and change, two on training, Shift, and three in the periphery); the limitations went to does-not-show items, the hypotheses and standard boundaries; the evidence became one paragraph. Law 4 states a condition every_determines_nothing carries through every_free, “decided equality on inputs” (the old hypotheses wrote it for every_free only). The standard boundary no-ethical-premise is not cited: the periphery's network declarations report Mathlib's standard axioms. Work-item numbers became names: in the claim “P66's GoAlike” became GoAlike (declaration Becoming.GoAlike, dependency projection-carrying-a-law), “P66's adaptive system” became “a system changing its own rule”, and “P64's selection through registration” became selection through registration (Web.SelectsThrough, dependency selection-through-registration); in the correspondence “the AI's reading in P49” became that in testing-within-registration; in next_delta P69's Alike and P70's account became those of Becoming.Unfolding and Becoming.Description. In the Chinese correspondence “没有免费的午餐” became the theorem's English name “no free lunch”, as in the English (免费 is in the lint's list of market words). The theorem, module and audit counts of the evidence and the Mathlib version ea11ccc0 stay in the receipts and the last text_versions entry. No law, premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [generalization-through-lumping.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/generalization-through-lumping.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/92392615325d81b3/generalization-through-lumping.json",
+      "sha256": "92392615325d81b38a1f0d056fa2aff4cc44972286bedc0db71f961aed7a4f29",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
