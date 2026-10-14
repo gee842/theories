@@ -233,7 +233,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "2a86d2e4e2341b1fd7aeaa11ebe0f11734da12a1950432bfce097890c4b36695"
+      "sha256": "03c6aa9e0e176e5c27ffbe04f9b52fd6777a20a44a96a857db825118e1d4beb4"
     }
   ],
   "proof_bindings": [
@@ -371,6 +371,10 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）；DECIDABILITY-INVENTORY.md（在回执 20261014T100026.593496Z 上重新生成；各表不变）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261014T100026.593496Z; the tables are unchanged)."
+    },
+    {
+      "zh": "2026-10-14，清点读出 `Decided`（开放问题表中的一项，Current math core）：审读以下改动后重新绑定：DECIDABILITY-INVENTORY.md（清点读出核心的 `Decided`：已判定的命题与排中律分开；只在证明中用到 138 → 167，排中律或其受限形式作为假设 7 → 11，证明可判定的定义与实例 94 → 125；“陈述依赖它”一类不变，仍为 314 条）。主张不变。",
+      "en": "14 October 2026, the inventory reads `Decided` (an item of the open-issues table, Current math core): reconciled after reading the changes to DECIDABILITY-INVENTORY.md (the inventory reads the core's `Decided`, a decided proposition kept apart from excluded middle: used only in proofs 138 → 167, excluded middle in full or restricted form as a hypothesis 7 → 11, definitions and instances proving decidedness 94 → 125; the class of statements depending on it unchanged at 314). The claim is unchanged."
     }
   ]
 }
