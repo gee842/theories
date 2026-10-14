@@ -141,7 +141,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
       "role": "proof",
-      "sha256": "3ba40755e498f5e9265252cd100ea0ef66ea4bc36dbc7de91fe9cdca85e8b254",
+      "sha256": "2a481c1765f885bea354650b0c609060fa8063fc42ce1ba5405e7bb82977d158",
       "declarations": [
         "Becoming.Countdown.Advances",
         "Becoming.Countdown.Advances.completes",
@@ -166,13 +166,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2d8b5c7ceab8e1e543ae21b66be9a5b27d1a642e75488d955228382a38a0a55a",
+      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0",
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
       "role": "receipt",
-      "sha256": "6d4711df073c8ece68a00ef4097ad5b149adb2ef04c8832a145ef90d02b10e98",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
       "declarations": []
     },
     {
@@ -192,7 +192,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Countdown",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -241,6 +241,10 @@
     {
       "en": "14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), finding G5: \"no shorter run delivers it\" follows from `pending_before` only where pending and delivered are exclusive (`not_done_before`); here they are exclusive by construction. The claim now says so, and the `Countdown` docstrings were corrected.",
       "zh": "2026年10月14日，第十七次独立审查（[BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)）发现 G5：“更短的运行都不交付”只在待完成与已交付互斥时由 `pending_before` 推出（`not_done_before`）；此处二者按构造互斥。主张现写明这一点，`Countdown` 的文档注释也已改正。"
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Countdown.lean（第十七次审查 G5：文档注释写明更短的运行都使任务仍待完成，“更短的运行都不完成”需要待完成与完成互斥；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Countdown.lean (seventeenth review G5: docstrings say that every shorter run leaves the task pending and that “no shorter run finishes” needs pending and finished to be exclusive; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged)."
     }
   ]
 }

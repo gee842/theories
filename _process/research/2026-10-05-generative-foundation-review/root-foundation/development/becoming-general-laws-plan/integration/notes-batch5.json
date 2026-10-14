@@ -1,6 +1,9 @@
 {
- "core_receipt": "TBD",
- "extra_receipts": {},
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+ "extra_receipts": {
+  "ProtocolInstances": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T141016.373278Z/verification.json",
+  "MarketInstances": "experiments/market-generativity/formal/market-instances-checks/20261014T141058.867757Z/verification.json"
+ },
  "files": {
   "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
    "en": "imports Becoming.Postponement; module list updated",

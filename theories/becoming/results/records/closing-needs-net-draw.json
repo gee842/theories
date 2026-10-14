@@ -305,12 +305,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2d8b5c7ceab8e1e543ae21b66be9a5b27d1a642e75488d955228382a38a0a55a"
+      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "d53319e82cc9be591e16e854f9c946908d31aa16428503af55a2027f11365107"
+      "sha256": "fa7e01a63746a05a47147f5756d9746d5df951a6646079622ad9b7091bb7b2ec"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -567,6 +567,10 @@
     {
       "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述与前提不变；主张拆为 6 条规律，原附在下一步中的局部规律改为规律 7（其局部条件按 Lean 陈述写明：差额只要求所比较的条件、边界只要求该形成所需的条件在 t 之前各步平衡）；限制分入“未表明”、通用边界（含离散步）、前提（重复者）与对应。陈述、前提、状态、证明绑定与来源哈希均未改变。主张中“比较保持其余交换不变，像 Becoming.Joint 的 but-for 检验保持动作不变”由关联条目 joint-difference-making 与前提 2 承载；限制中“名称是 AI 的表述，由 Ren 定”并入对应的末句。验证范围按证明绑定写明 Dependence 当前字节的绑定回执。下一步中 P65 的轮次标签移入沿革（已有条目）。每句旧文本的去向见迁移对照表 [closing-needs-net-draw.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/closing-needs-net-draw.md)；迁移前的完整记录为 text_versions 末项。",
       "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement and hypotheses are kept; the claim was split into 6 laws, and the local laws appended to the next step became law 7 (its local condition written as in the Lean statements: balance only at the condition compared for the difference, and at the conditions the formation requires for the boundary, across the steps before t); limitations went to does-not-show items, standard boundaries (discrete steps among them), the hypotheses (where they repeated them) and the correspondence. No statement, premise, status, proof binding or source hash changed. The claim's sentence that the comparison holds the rest of the exchange fixed, as the but-for test of Becoming.Joint holds the move fixed, is carried by the related entry joint-difference-making and hypothesis 2; the limitation that names such as admission, withholding and net draw are the AI's wording, for Ren to choose, joined the correspondence's last sentence. The validation scope names the binding receipt of the current Dependence bytes from the proof bindings. The next step's round label (P65) is in history (existing entry). Every earlier sentence is mapped in the migration table [closing-needs-net-draw.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/closing-needs-net-draw.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（第十七次审查后更正 §9 各行（Continuation“共同净给予”；LossMatching 的方向；Retrodiction 的两值与两端读数相同；“受支持的完成”）；新增 Postponement 行；总数改据新回执；整合 I1 后的 Likeness 与 Bridge 行）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1)."
     }
   ],
   "text_versions": [

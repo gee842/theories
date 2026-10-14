@@ -111,6 +111,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
       "role": "receipt",
       "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "role": "receipt",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -127,6 +133,20 @@
       "sha256_pointer": "/source_sha256/ExplanatoryBranching",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Likeness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -141,6 +161,10 @@
     {
       "zh": "2026-10-14，整合 I1：在脊柱上陈述。检验分离一个模型，恰当核心的分支检验分离其框架（separated_iff），所以本引理经 sameBranchingTests_iff_same 即 SameBranchingTests.functional；其相同之下的形式为 Alike.functional。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；脊柱运行 20261014T100026.593496Z 亦将其源码作为继承模块编译并绑定。",
       "en": "14 October 2026, integration I1: stated on the spine. Tests separate a model exactly where the core's branching tests separate its frame (separated_iff), so this lemma is SameBranchingTests.functional read through sameBranchingTests_iff_same; its form for likeness is Alike.functional. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the spine run 20261014T100026.593496Z also compiles its source as an inherited module and binds it."
+    },
+    {
+      "en": "14 October 2026, batch 5 of the open-issues plan (landing integration I1): the spine modules Becoming.Likeness, Becoming.Bridge are bound to core receipt 20261014T141427.442103Z, which elaborates the new spine alias.",
+      "zh": "2026年10月14日，开放问题计划第五批（整合 I1 落地）：脊柱模块 Becoming.Likeness、Becoming.Bridge 绑定到核心回执 20261014T141427.442103Z，该回执展开新的脊柱别名。"
     }
   ]
 }

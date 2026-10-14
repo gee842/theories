@@ -69,7 +69,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
       "role": "proof",
-      "sha256": "3ba40755e498f5e9265252cd100ea0ef66ea4bc36dbc7de91fe9cdca85e8b254",
+      "sha256": "2a481c1765f885bea354650b0c609060fa8063fc42ce1ba5405e7bb82977d158",
       "declarations": [
         "Becoming.Countdown.invariant_iff_reach",
         "Becoming.Countdown.admitted",
@@ -79,7 +79,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean",
       "role": "proof",
-      "sha256": "4d0be3248bf7932d6d6788167c40f5046f2c2c9c03d16feeb0587864d644b012",
+      "sha256": "f1f9ff07e8a6a8ffd6d90b9e2cb9ffbdb559f8589a5829c7fcfaf8249cf870f8",
       "declarations": [
         "Becoming.ProtocolInstances.mediated_history_iff",
         "Becoming.ProtocolInstances.coverage_along",
@@ -89,19 +89,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2d8b5c7ceab8e1e543ae21b66be9a5b27d1a642e75488d955228382a38a0a55a",
+      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0",
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
       "role": "receipt",
-      "sha256": "6d4711df073c8ece68a00ef4097ad5b149adb2ef04c8832a145ef90d02b10e98",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T041648.493464Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T141016.373278Z/verification.json",
       "role": "receipt",
-      "sha256": "e930905a8c52f48e863cb71d0cea9313c46910ba3fdb28522c4352aff4a21b15",
+      "sha256": "cdc048ab9005b9651da4a7a53c188a22e69b71a8663a3ce15bca639c0bfd2c7a",
       "declarations": []
     }
   ],
@@ -115,14 +115,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Countdown",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T041648.493464Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T141016.373278Z/verification.json",
       "sha256_pointer": "/source_sha256/ProtocolInstances",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -187,6 +187,10 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Countdown.lean（第十七次审查 G5：文档注释写明更短的运行都使任务仍待完成，“更短的运行都不完成”需要待完成与完成互斥；陈述与证明不变）；ProtocolInstances.lean（第十七次审查 G10：charge_some、charge_none 改名为 unit_drawn、stalls_unsupported，“有资金的完成”改为“受支持的完成”；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Countdown.lean (seventeenth review G5: docstrings say that every shorter run leaves the task pending and that “no shorter run finishes” needs pending and finished to be exclusive; statements and proofs unchanged); ProtocolInstances.lean (seventeenth review G10: charge_some and charge_none renamed unit_drawn and stalls_unsupported, “funded completion” now “supported completion”; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged)."
     }
   ]
 }

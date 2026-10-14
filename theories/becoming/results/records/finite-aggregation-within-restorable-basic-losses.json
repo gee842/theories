@@ -363,7 +363,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
       "role": "review",
-      "sha256": "54ac010941ac8dcafe4a619e8faef5357dd1a6d30a6ba702c340c3086ded2bff",
+      "sha256": "8cf610e63af246ad591abfdea0693d9683051581d51b061be979aab9a6d9a313",
       "declarations": []
     },
     {
@@ -381,7 +381,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
       "role": "proof",
-      "sha256": "cdf7ee0e816bbe82bf7f16b730d92de51b3f8003b123d1e96f1187f4ff519adf",
+      "sha256": "c4ab73db434b95c6a49415326aca0670b55166e1735a2baa4ce83c6177f8ba8d",
       "declarations": [
         "Becoming.RepairComparison.Repair",
         "Becoming.RepairComparison.Life",
@@ -468,15 +468,15 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
       "role": "receipt",
-      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean",
       "role": "proof",
-      "sha256": "5f49259688be11cb0a5189005c50785d163ce509db1a687a09fee1792278707d",
+      "sha256": "0277fd22627133ea37c9dbd022f2c308f43eb22b16e0a3eadcc0d4def08b3718",
       "declarations": [
         "Becoming.Frame.StrictLossMatch",
         "Becoming.Frame.StrictLossMatch.trans",
@@ -500,7 +500,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RepairComparison",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -521,7 +521,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LossMatching",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -563,6 +563,10 @@
     {
       "en": "14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), findings G1 and G6, landed with the next checker run: the theorem `RepairComparison.fragile_b3_below_nothing` is renamed `fragile_b3_better_than_none`, its docstring and those of `LossMatching` now say \"strictly better by matching than no configuration\"; the law on reading at episode time (law 6) now says that the retained loss holds by the definition of `ReadsAt` and that whether an actual frame reads at episode time is the premise, citing `not_readsAt_of_recovery`.",
       "zh": "2026年10月14日，第十七次独立审查（[BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)）发现 G1 与 G6，随下一次检查运行落地：定理 `RepairComparison.fragile_b3_below_nothing` 改名为 `fragile_b3_better_than_none`，它与 `LossMatching` 的文档注释改为“经严格匹配不优于任何配置”；关于在片段时刻读的定律（第6条）改为说明：损失保留由 `ReadsAt` 的定义给出，实际框架是否在片段时刻读是前提，并引用 `not_readsAt_of_recovery`。"
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：CROSSED-CLAIMS-ARGUMENT.md（第十七次审查 G1：失去共同支持的配置经严格匹配不优于任何配置；fragile_b3_better_than_none；陈述与证明不变）；RepairComparison.lean（第十七次审查 G1：fragile_b3_below_nothing 改名为 fragile_b3_better_than_none，文档注释方向改正；陈述与证明不变）；LossMatching.lean（第十七次审查 G1：文档注释改为失去共同支持的配置经严格匹配不优于任何配置（原文方向说反）；陈述与证明不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: CROSSED-CLAIMS-ARGUMENT.md (seventeenth review G1: a configuration losing the common support is strictly better by matching than no configuration; fragile_b3_better_than_none; statements and proofs unchanged); RepairComparison.lean (seventeenth review G1: fragile_b3_below_nothing renamed fragile_b3_better_than_none, docstring direction corrected; statements and proofs unchanged); LossMatching.lean (seventeenth review G1: docstrings now say a configuration losing the common support is strictly better by matching than no configuration (they said the reverse); statements and proofs unchanged)."
     }
   ],
   "text_versions": [
