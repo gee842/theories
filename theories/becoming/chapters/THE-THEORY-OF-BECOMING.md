@@ -794,7 +794,9 @@ Ren's proposal of 10 October 2026, quoted above, says that anything that wants i
 - **Draft for Ren to judge, not accepted:** “Anything that wants its continuation gives that continuation significance from where it stands. Following that want, it must count what its continuation depends on. Under dissipation nothing that continues is closed, and, enclosed around, something is conveyed into it from beyond. No finite horizon separates renewal from consumption. Draws each within renewal can together exceed it and end what depends on the shared condition at its need; a continuation wanted beyond what the condition holds must count the joint draw. The dynamics fixes how far that count reaches, not whose continuation counts. Every wanting point is a center; one axiom makes them common: what has significance from any center has it from every standpoint, and no center is privileged. For lives some standpoint holds, this is G0; lives no standpoint holds are reached through formed relations. Weak form: each formation's undamaging continuation has significance. Strong form: the whole's continuation is to create more significance.”
 - **Still Ren's:** whether S0 is the reading of wanting (so read, the seed carries the not-harm filter); whether the derived extent runs along dependence or along every formed relation (the latter derives the center in some wholes); whether “not harm” filters continuations or claims on others; whether the axiom ranges over what wants or over anything (unheld lives: a dormant seed, a coma, someone who no longer wants to go on); the level of harm; the reading of “more”; whether conveyance is a formed relation; names. Whether the restatement replaces G0 is answered by the fold (Ren, 11 October 2026: G0 is no longer an axiom, sections 5 and 6.8), and the philosophical ground of N_std is open as G0's is. Non-ethical premises remain (physical, correspondence, the step from wanting an end to reasons for what it requires, the representation), and practical judgment between conflicting continuations still needs C, L and J1–J4.
 
-### 6.8 一条公理推出什么（P39）/ What the one axiom yields (P39)
+<a id="68-一条公理推出什么p39-what-the-one-axiom-yields-p39"></a>
+
+### 6.8 一条公理推出什么 / What the one axiom yields
 
 Ren 在提出公理之后回答：中心及其边界都只存在于认知的结构与动力学中，也在同一系统之内形成，所以并没有一个须由公理决定的“谁的延续算数”，中心可以像其他一切一样当作“things”来建模；“not harm”是有清楚边界的相变（[原话](../../../sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md)）。依此，P39 不再把公理读作给每个想要之点放一个中心（§6.7），而读作 Ren 的原话本身：对任何东西，其延续到将来有意义。下面是已检查的形式内容（[Becoming.Significance](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)，[研究 §53](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md)）；读法与名称是 AI 的，待 Ren。
 
@@ -826,7 +828,9 @@ Ren answered, after proposing the axiom, that a center and its boundary exist on
 
 **What this step does not derive.** The step from significance to a reason (A), the lifting (L) and practical judgment (J1–J4); a measure ordering mixed parts; the level at which formations are individuated (members or lineages), which fixes what counts as a loss; which reading G0's `living` names (`Preemption` shows that two differ); and the normative warrant of the axiom itself. Recognition and motivation belong to the attempt without axiom (P40, section 6.9). In `Clearing.centers_disagree` a center whose represented boundary is exactly its actual dependence still licenses the free rider; section 6.9 shows that, without the axiom, the loss counts only where the dependence reaches what is closed. G0 is now a theorem of this axiom: immediately at the level of claims, and, through Part I, not harm and generativity have exact forms. After P44's audit Ren folded G0 on 11 October 2026, and it is no longer an axiom (sections 5 and 6.12).
 
-### 6.9 不用公理能走多远（P40）/ How far the route without axiom reaches (P40)
+<a id="69-不用公理能走多远p40-how-far-the-route-without-axiom-reaches-p40"></a>
+
+### 6.9 不用公理能走多远 / How far the route without axiom reaches
 
 路线 (b) 是 AI 的表述，Ren 引用了它，并选定在路线 (a) 之后尝试（[来源](../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)）：
 
@@ -856,7 +860,9 @@ Route (b) is the AI's wording, which Ren quoted and chose to try after route (a)
 
 **What this step does not derive.** That a center wants its continuation, or represents its feeding closure; that a loss within the closure does return (feeders may be redundant, and stock and timing decide when an ending arrives); any warrant, which this route does not claim. G0 follows from the axiom of section 6.8 and is no longer an axiom (folded by Ren, 11 October 2026; section 5).
 
-### 6.10 反馈、所及与比较（P42）/ Feedback, reach and the comparison (P42)
+<a id="610-反馈所及与比较p42-feedback-reach-and-the-comparison-p42"></a>
+
+### 6.10 反馈、所及与比较 / Feedback, reach and the comparison
 
 Ren 在 2026-10-10 写下长远的目标（[来源](../../../sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md)）：
 
@@ -894,7 +900,9 @@ On 10 October 2026 Ren stated the long-term objectives; the message is quoted ab
 
 **What this step does not derive.** That a formation knows its reach closure, or wants anything; significance itself, which stays supplied (`Web.significance_undetermined`); the adding comparisons in positive form for every significance, which hold where significance is decidable (`Flow.Balances.adds_iff_exceeds_of_decidable`) and otherwise up to double negation; how others would respond: a comparison in which they respond needs the second flow supplied.
 
-### 6.11 公理的分解：自身的预设与不变的一步（P43）/ The axiom decomposed: the self's presupposition and the step of invariance (P43)
+<a id="611-公理的分解自身的预设与不变的一步p43-the-axiom-decomposed-the-selfs-presupposition-and-the-step-of-invariance-p43"></a>
+
+### 6.11 公理的分解：自身的预设与不变的一步 / The axiom decomposed: the self's presupposition and the step of invariance
 
 Ren 在《Truth exist》中写道（[来源](../../../sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md)）：“There is a set of universal invariations, that for every universe, becoming happens, the law follows”，它是“the bases of all ethics, for all beings, in all universes”；又写道：“There is no absolute self, and the continuation goes beyond one’s cycle of life, goes beyond one’s death.” 此前 Ren 写道，自身是“a cognitive model which can not justify itself without some sort of "belief"”，“we”是“the universe/ecosystem that realizes its own existence”（[来源](../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)），中心的“boundary”“is also with in the same cognitive system”（[来源](../../../sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md)）。AI 提出（[来源](../../../sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md)，AI 的话）：公理不由动力学推出，却可能由三个主张推出——每个行为都预设某个延续有意义；没有绝对的自身；真理对每个存在都一样；批评者必须否认的只有一步，即从“我为之行动的延续”到“延续本身”；这一步应精确陈述，在 Lean 中检查其骨架，并交独立审查。AI 当时说这三个主张是 Ren 已持有的；[第十六次独立审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md)把它更正为 AI 从 Ren 的话中读出的。Ren 答：“continue, let's pursue the strongest claims and complete proof”。P43 陈述结果（[Becoming.Boundaries](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean)，[研究 §62](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#62-公理的分解p43)）：它是公理的精确分解，定位这一步，不降低公理的内容。读法与名称是 AI 的，待 Ren。
 
@@ -932,7 +940,9 @@ In “Truth exist” Ren wrote: “There is a set of universal invariations, tha
 
 **What this step does not derive.** Covering, sub-truth and invariance themselves: the presupposition is supplied as every significance is (`Web.significance_undetermined`), and along a relation it already carries transmission along that relation, from the bare own good of the empty relation to the axiom of the total one; that a center knows its reach closure, since its own feedback registers at most its influence closure (`Flow.Balances.unregistered_beyond_influence`); the step from significance to a reason, to motivation or to practice. The audit of G0's uses (P44, section 6.12) is clean, and Ren then folded G0 on 11 October 2026, so it is no longer an axiom (section 5).
 
-### 6.12 G0 的各处用法在公理之下（P44）/ G0's uses under the axiom (P44)
+<a id="612-g0-的各处用法在公理之下p44-g0s-uses-under-the-axiom-p44"></a>
+
+### 6.12 G0 的各处用法在公理之下 / G0's uses under the axiom
 
 在 Ren 决定是否以第二部分的公理替代 G0 之前，P44 逐处审计了 G0 在核心与外围的用法，看它对正面相关与 `living` 要求什么（[Becoming.Relevance](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean)，[研究 §64](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md)）。审计是干净的，其中一处读法是被迫的；在公理之下，以可能性读的 C 决定了 §6.5 留给读法选择的过度汲取。读法与名称是 AI 的，待 Ren。审计之后，Ren 2026-10-11 把 G0 折叠（§5），并把正面相关折叠进意义；比较的方式交 AI 决定（见下）。
 
@@ -974,7 +984,9 @@ What it leaves unranked is the presence or absence of a formation that adds no p
 
 **What this step does not derive.** The normative warrant of the axiom; the step from significance to a reason (A), which remains a premise. The audit is clean, so the conditions for the replacement were met, and Ren folded G0 on 11 October 2026: it is no longer an axiom, Part I states it as a condition (section 5), and where Part II asserts the axiom it is a theorem; positive relevance is folded into significance, and courses are compared on possibilities (above).
 
-### 6.13 生成的空间，不用公理（P56）/ The generative space, with no axiom (P56)
+<a id="613-生成的空间不用公理p56-the-generative-space-with-no-axiom-p56"></a>
+
+### 6.13 生成的空间，不用公理 / The generative space, with no axiom
 
 **既有开放形态成果的正式接入，P89，2026-10-13。** 第6.12节的审计现对 `OpenFutureRevision` 补齐实际 Lean 调用：`Becoming.Bridge` 中两项完整生产端／消费端适配，以及同一 `Frame` 的 `Run.novel_by_handoff` 与 `Run.relevance_by_handoff_of_unrestricted`，把有限实际形成的同一见证接到共同正面相关定义。四项声明空公理依赖；意义条件仍为显式假设，旧反例与实践前提保留。它是[既有成果](../results/records/open-form-realization-under-revision.md)的正式连接，不新增规范原则；[完成审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md#spine-bridge-completion)核销已由目的修订与在途工作成果完成的通用待做项。
 
@@ -1002,7 +1014,9 @@ Ren asked on 11 October 2026: “can we reduce is "for anything, its continuatio
 
 <a id="comparison-content-under-regrouping"></a>
 
-### 6.14 比较内容怎样由关系约束（P91）/ Relational constraints on comparison content (P91)
+<a id="614-比较内容怎样由关系约束p91-relational-constraints-on-comparison-content-p91"></a>
+
+### 6.14 比较内容怎样由关系约束 / Relational constraints on comparison content
 
 先由同一展开中的依存、给予和取用说明什么能继续，再比较这些内容。改变名称或描述粒度本身不增添生成。新的 [Regrouping](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean) 保留原过程，只合并其主张：一组被实现，当且仅当其中有成员被实现。局部的精确条件是同组成员在所读配置中同样成立；这恰好允许从分组恢复每项原内容。在比较的两处满足该条件，既有扩展比较保持不变。
 
