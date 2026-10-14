@@ -63,6 +63,18 @@ STOCK_FIELDS = ('claim', 'statement', 'limitations', 'does_not_show')
 # A cross-reference repeated as prose; better as a typed link (related).
 RESTATEMENT = re.compile(r'exact restatement for every world is')
 
+# Words of exchange. Ren on a name (6 October): “这个词选的很诡异，太市场了，不够基本”. A
+# structural word says what a relation does; a market word reads it as a transaction. Warned on
+# schema-2 public fields; a record whose subject is an exchange keeps its words. The spine's
+# declaration names are checked with the same list in check_becoming.py (MARKET_WORDS).
+MARKET_EN = re.compile(r"\b(?:cost(?:s|ly|ing)?|charg(?:e|es|ed|ing)|budget(?:s|ed)?|pay(?:s|ing|ment|ments)?|paid|"
+                       r"pric(?:e|es|ed|ing)|spend(?:s|ing)?|spent|accounting|credit(?:s|ed|ing)?|fees?|"
+                       r"profit(?:s|able)?|fund(?:s|ed|ing)?)\b", re.I)
+# “account” is left out: here it means an explanation (“the full account”).
+MARKET_ZH = re.compile(r'付费|支付|预算|(?<!生)成本|价格|花费|费用|利润|资金|记账|账户|收费|开销|代价|免费|信用')
+# Scientific terms that contain such a word.
+MARKET_ALLOWED = re.compile(r"Price(?:['’]s)? equation|credit assignment|electric charge", re.I)
+
 # Public statement of the result: process narration is never acceptable here.
 PUBLIC_FIELDS = ('title', 'statement', 'claim', 'overview.', 'does_not_show', 'not_required', 'laws', 'next_delta',
                  'limitations', 'counterexamples', 'progress')
@@ -154,6 +166,10 @@ def lint(r):
                 markers_by_field.setdefault(field, set()).update(hits)
                 if public:
                     add(field, 'process-marker:' + rule, f'{lang}: ' + ', '.join(map(str, hits[:5])), hard=True)
+        if v2 and public and not field.startswith('overview.'):
+            words = (MARKET_ZH if lang == 'zh' else MARKET_EN).findall(MARKET_ALLOWED.sub('', body))
+            if words:
+                add(field, 'market-word', f'{lang}: ' + ', '.join(sorted(set(words))[:5]) + '; name what the relation does')
         if base in ('claim', 'statement', 'limitations', 'does_not_show', 'next_delta') and EVIDENCE.search(body):
             add(field, 'evidence-in-claim', f'{lang}: evidence disclaimer belongs in validation_scope')
         if lang != 'en':
