@@ -282,3 +282,19 @@ Owner: Claude (Opus 5.5) merge session, as integrator for these streams; agents 
 **Older-record audit after the plan (80 records):** G 14, G+W 44, W-neg 5, N/A 9; partly general 8: the four machine rows whose delivery, gated or obstruction part is now general (acquired-revision-of-pending-task, joint-practice-forms-continuation, market-partial-correction-boundary, pending-task-context-applicability; the landing side of the 5/12 boundary still rests on the market's own estimate), the three one-history rows now instances of `interprets_every_iff` (enacted-scene-binding, encounter-selection-and-revision, retrospective-source-binding), and formed-goal-revision-continuation (law over every condition of its construction). Table: [older-records.md](research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/general-law-audit/older-records.md).
 | L4a | copy-machine laws; historical-source-binding | **landed** in batch 3: `Becoming.Copying` (65 theorems; new names structural: law of draws, `use`, `used`, `drawSupport`, renamed from market words before landing), `Becoming.Retrodiction` (17); peripheries CopyingInstances, RetrodictionInstances |
 | L4b | market-protected-continuation; correction/shutdown protocols; market laws | **landed** in batch 3: `Becoming.Viability` (25), `Becoming.Countdown` (20), `Becoming.Lasting` (36); peripheries MarketInstances, ProtocolInstances (two helper names renamed from market words at landing), VersionedTaskInstances |
+
+### 2026-10-14 开放问题 / The open issues (Ren: “please, do all”)
+
+Plan: [OPEN-ISSUES-PLAN.md](research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/OPEN-ISSUES-PLAN.md), every choice as recommended (push now; “credit” → `includes`; old machines keep their names, a name check guards new ones; one independent review; migrate the 45 records with the most lint findings; chain entries revised and listed for Ren). Owner and integrator: Claude (Opus 5.5) merge session; agents in worktrees, at most two at once; only the integrator edits this board and lands.
+
+| Stream | Scope | State |
+|---|---|---|
+| push | main → origin | **done** 2c5e378d |
+| A | corrections, plan items 2–10 (records, chapter §8 row) | integrator, on main |
+| B1 | reaching law (dual of Lasting's ladder) in `Becoming.Lasting`; market 5/12 landing side and the obstructed-seeds theorem as instances; copying residuals (`finite_lineage_inherits` converse, `registered_copy_cells` bonds) | worktree agent; batch 4 |
+| B2 | history-supplies-inputs law for scene, encounter and retrospective binding; acquired-revision, pending-task, joint-practice, formed-goal rows | worktree agent; batch 4 |
+| C1 | “credit” → `includes` (Lean names in Dependence, Horizon, Ranking, Substitution; record and chapter prose; zh 记入 unchanged) | integrator; rides with batch 4 |
+| C3 | name check for new spine declarations and schema-2 public fields | integrator |
+| D | generativity-chain whole review | after batch 4 |
+| E | independent review of batches 1–4 | agent, after batch 4 |
+| F | schema-2 migration of the 45 records with the most lint findings | agents, after batch 4, two at a time |
