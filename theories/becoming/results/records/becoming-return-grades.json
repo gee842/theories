@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "becoming-return-grades",
   "title": {
     "zh": "回程等级",
@@ -8,15 +8,98 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T04:41:28+00:00",
+  "reviewed_at_utc": "2026-10-14T10:10:26+00:00",
   "statement": {
     "zh": "消耗恰是不再回程，恢复可以无界地变慢。",
     "en": "Consumption is exactly a dependence that never returns, and recovery can slow without bound."
   },
-  "claim": {
-    "zh": "在依存网上，某步成立的依存在其后 p 步之内再被满足，为在 p 步内回程；条件上每个依存都如此，为在 p 步周期内更新；每个依存都在以后某步再被满足，为回程。等级有序：更新蕴含一步周期内更新；p 步内更新蕴含任何更长周期内更新，也蕴含回程；回程的条件不被消耗。消耗恰是某个依存不再回程。RelationalRenewal 中既不更新也不消耗的季节性条件，在两步周期内更新，不在一步内更新。恢复可以无界地变慢：一个间隔越来越长地再被满足的条件总会回程、从不被消耗，但没有任何周期长度能界定它的回程。周期层面的读法扩展逐步读法：形成在 p 步周期内更新，当它参与的每个条件都在 p 步内更新；事件侵蚀 p 步，当它在某步汲取某条件，而此后 p 步中的每一步，条件既低于某个依存现在的所需，也低于该依存在其成立期间曾被满足的某个所需。侵蚀一步恰是逐步的侵蚀；周期越长记入越多；在某个周期内更新的形成不消耗，它的事件也不侵蚀该周期。更新蕴含一步周期内更新，逆命题不成立：一个依存在其第 0 步不被满足、此后每步都被满足时，形成在一步周期内更新而不整段更新。周期长度 0 是退化的：零步内更新恰是无人依存，任何对有依存者的条件的汲取都侵蚀零步。两步周期下，短暂下降与在不活跃时被断裂的依存者都被记入；加码之后条件不再回来，加码事件对每个周期都侵蚀。不用伦理前提，也不用 Lean 公理。",
-    "en": "On a web of dependence, a dependence holding at a step returns within p steps when the condition meets it at one of the next p steps; a condition is renewed within p when every dependence on it does so, and it returns when every dependence on it is met at some later step. The grades are ordered: renewal implies renewal within one step; renewal within p implies renewal within any longer cycle and implies return; a condition that returns is not consumed. Consumption is exactly a dependence that never returns. The seasonal condition of RelationalRenewal, neither renewed nor consumed, is renewed within two steps and not within one. Recovery can slow without bound: a condition met again after ever longer gaps always returns and is never consumed, yet no cycle length bounds its return. Readings over cycles extend the stepwise readings: a formation renews over cycles of p when every condition it participates in is renewed within p, and its event undermines for p steps when it draws on a condition at a step after which, at each of the next p steps, the condition is below both the present need of a dependence on it and a need that dependence met while it held. Undermining for one step is exactly undermining at the step; a longer cycle includes more; a formation renewing over some cycle is not consuming, and none of its events undermines for that cycle. Renewal implies renewal within one step, not conversely: when a dependence is unmet at its step 0 and met at every later step, the formation renews over cycles of one without renewing in the run. Cycle length 0 is degenerate: renewal within zero steps holds exactly when nothing depends on the condition, and any draw on a condition something depends on undermines for zero steps. Over cycles of two, a dip and a dependent broken while inactive are included; after an escalation the condition never returns, and the escalating event undermines for every cycle. No ethical premise and no Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "在依存网上，某步成立的依存在其后 p 步之内再被满足，为在 p 步内回程；条件上每个依存都如此，为在 p 步周期内更新；每个依存都在以后某步再被满足，为回程。",
+      "en": "On a web of dependence, a dependence holding at a step returns within p steps when the condition meets it at one of the next p steps; a condition is renewed within p when every dependence on it does so, and it returns when every dependence on it is met at some later step.",
+      "declarations": [
+        "Becoming.Web.ReturnsWithin",
+        "Becoming.Web.RenewedWithin",
+        "Becoming.Web.Returns"
+      ]
+    },
+    {
+      "zh": "等级有序：更新蕴含一步周期内更新；p 步内更新蕴含任何更长周期内更新，也蕴含回程；回程的条件不被消耗；消耗恰是某个依存不再回程。",
+      "en": "The grades are ordered: renewal implies renewal within one step; renewal within p implies renewal within any longer cycle and implies return; a condition that returns is not consumed; and consumption is exactly a dependence that never returns.",
+      "declarations": [
+        "Becoming.Web.renewed_within_one",
+        "Becoming.Web.RenewedWithin.mono",
+        "Becoming.Web.RenewedWithin.returns",
+        "Becoming.Web.Returns.not_consumed",
+        "Becoming.Web.consumed_iff"
+      ]
+    },
+    {
+      "zh": "RelationalRenewal 中既不更新也不消耗的季节性条件，在两步周期内更新，不在一步内更新。",
+      "en": "The seasonal condition of RelationalRenewal, neither renewed nor consumed, is renewed within two steps and not within one.",
+      "declarations": [
+        "RelationalRenewal.fluctuating",
+        "RelationalRenewal.fluctuating_neither",
+        "Becoming.alternating_turns",
+        "Becoming.seasonal_renewed_within_two"
+      ]
+    },
+    {
+      "zh": "恢复可以无界地变慢：一个间隔越来越长地再被满足的条件总会回程、从不被消耗，但没有任何周期长度能界定它的回程。",
+      "en": "Recovery can slow without bound: a condition met again after ever longer gaps always returns and is never consumed, yet no cycle length bounds its return.",
+      "declarations": [
+        "Becoming.Slowing.web",
+        "Becoming.Slowing.returns",
+        "Becoming.Slowing.unbounded",
+        "Becoming.Slowing.slowing_recovery"
+      ]
+    },
+    {
+      "zh": "周期层面的读法扩展逐步读法：形成在 p 步周期内更新，当它参与的每个条件都在 p 步内更新；事件侵蚀 p 步，当它在某步汲取某条件，而此后 p 步中的每一步，条件既低于某个依存现在的所需，也低于该依存在其成立期间曾被满足的某个所需。",
+      "en": "Readings over cycles extend the stepwise readings: a formation renews over cycles of p when every condition it participates in is renewed within p, and its event undermines for p steps when it draws on a condition at a step after which, at each of the next p steps, the condition is below both the present need of a dependence on it and a need that dependence met while it held.",
+      "declarations": [
+        "Becoming.Web.RenewingInWithin",
+        "Becoming.Web.UnderminingFor"
+      ]
+    },
+    {
+      "zh": "侵蚀一步恰是逐步的侵蚀；周期越长记入越多；在某个周期内更新的形成不消耗，它的事件也不侵蚀该周期。",
+      "en": "Undermining for one step is exactly undermining at the step; a longer cycle includes more; a formation renewing over some cycle is not consuming, and none of its events undermines for that cycle.",
+      "declarations": [
+        "Becoming.Web.undermining_for_one",
+        "Becoming.Web.RenewingInWithin.mono",
+        "Becoming.Web.UnderminingFor.anti",
+        "Becoming.Web.RenewingInWithin.not_undermining_for",
+        "Becoming.Web.RenewingInWithin.not_consuming"
+      ]
+    },
+    {
+      "zh": "更新蕴含一步周期内更新，逆命题不成立：一个依存在其第 0 步不被满足、此后每步都被满足时，形成在一步周期内更新而不整段更新。",
+      "en": "Renewal implies renewal within one step, not conversely: when a dependence is unmet at its step 0 and met at every later step, the formation renews over cycles of one without renewing in the run.",
+      "declarations": [
+        "Becoming.Web.RenewingIn.within_one",
+        "Becoming.LateMet.web",
+        "Becoming.LateMet.within_one_not_renewing"
+      ]
+    },
+    {
+      "zh": "周期长度 0 是退化的：零步内更新恰是无人依存，任何对有依存者的条件的汲取都侵蚀零步。",
+      "en": "Cycle length 0 is degenerate: renewal within zero steps holds exactly when nothing depends on the condition, and any draw on a condition something depends on undermines for zero steps.",
+      "declarations": [
+        "Becoming.Web.renewedWithin_zero",
+        "Becoming.Web.undermining_for_zero"
+      ]
+    },
+    {
+      "zh": "两步周期下，短暂下降与在不活跃时被断裂的依存者都被记入；加码之后条件不再回来，加码事件对每个周期都侵蚀。",
+      "en": "Over cycles of two, a dip and a dependent broken while inactive are included; after an escalation the condition never returns, and the escalating event undermines for every cycle.",
+      "declarations": [
+        "Becoming.Renewable.dip_within_two",
+        "Becoming.Dip.renewing_within_two",
+        "Becoming.Renewable.escalation_undermines_for_every_cycle"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "依存网的可观测量如 becoming-dependence-dynamics 所设；回程按自然数步计。",
@@ -31,6 +114,65 @@
       "en": "Cycles have length p ≥ 1; p = 0 is degenerate (Web.renewedWithin_zero, Web.undermining_for_zero)."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "不选择周期长度，不推出哪种读法是生生的读法。",
+      "en": "Chooses no cycle length and does not decide which reading is the reading of 生生.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "Slowing 与 Dip 是最小见证。",
+      "en": "Slowing and Dip are minimal witnesses.",
+      "kind": "scope"
+    },
+    {
+      "zh": "回程等级不涉及汲取的数量。",
+      "en": "The grades involve no amounts of what is drawn.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "detail": {
+        "zh": "不被消耗不意味着恢复的时间有界（Slowing.slowing_recovery）。",
+        "en": "Not being consumed does not bound the time to recover (Slowing.slowing_recovery)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "detail": {
+        "zh": "RenewingIn.within_one 只有一个方向，逆命题不成立（LateMet.within_one_not_renewing）：依存在其第 0 步不被满足、此后每步都被满足时，形成在一步周期内更新而不整段更新；RenewedWithin 不问依存在其自身之步是否被满足（第二次独立审查 F8）。",
+        "en": "RenewingIn.within_one runs one way only, and the converse fails (LateMet.within_one_not_renewing): with a dependence unmet at its step 0 and met at every later step, the formation renews over cycles of one without renewing in the run; RenewedWithin does not ask whether a dependence is met at its own step (second independent review F8)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "detail": {
+        "zh": "周期长度 0 是退化的（Web.renewedWithin_zero、Web.undermining_for_zero）：零步内更新恰是无人依存；任何对有依存者的条件的汲取都侵蚀零步，在更新的运行中也是（第二次独立审查 F10）。",
+        "en": "Cycle length 0 is degenerate (Web.renewedWithin_zero, Web.undermining_for_zero): renewal within zero steps holds exactly when nothing depends on the condition, and any draw on a condition something depends on undermines for zero steps, even in a renewing run (second independent review F10)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
+      "detail": {
+        "zh": "第二次独立审查：所审的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，整合文档中比较表在 (a)(b) 与 but-for 一栏上不公允（已更正）。",
+        "en": "Second independent review: the mathematics under review is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the integration note's comparison table was unfair in rows (a), (b) and the but-for column (corrected)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；Becoming.Return 与 Becoming.Dependence 的当前字节绑定回执 20261014T091930.724493Z）：Becoming.Return 的定理公理报告为空；检查器并核对核心纯净。作者反审见整合文档；第二次独立审查（见来源）的更正在整合文档中处理，第四次把侵蚀改为最小形式，周期读法随之改变。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Return and Becoming.Dependence bound to receipt 20261014T091930.724493Z): the theorems of Becoming.Return have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; the second independent review (listed under sources) is handled there, and the fourth changed undermining to the minimum form, which the cycle readings follow."
+  },
+  "next_delta": {
+    "zh": "说明哪种周期适合哪种读法，以及周期读法与整段读法、视界结果的关系；回程等级与实际条件的对应。",
+    "en": "Which cycle suits which reading, and how the cycle readings relate to the whole-run reading and the horizon result; the correspondence of grades to actual conditions."
+  },
   "correspondence": {
     "zh": "回程等级区分的是一次运行中依存被再满足的时间。实际条件属于哪一等级、哪种周期适合一种读法，以及恢复变慢是否预示损失（生态学所谓临界变慢），都是应用与经验问题。",
     "en": "The grades distinguish when dependence is met again in one run. Which grade an actual condition has, which cycle suits a reading, and whether slowing recovery signals a coming loss (what ecology calls critical slowing down) are application and empirical questions."
@@ -144,44 +286,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
-      "detail": {
-        "zh": "不被消耗不意味着恢复的时间有界（Slowing.slowing_recovery）。",
-        "en": "Not being consumed does not bound the time to recover (Slowing.slowing_recovery)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
-      "detail": {
-        "zh": "RenewingIn.within_one 只有一个方向，逆命题不成立（LateMet.within_one_not_renewing）：依存在其第 0 步不被满足、此后每步都被满足时，形成在一步周期内更新而不整段更新；RenewedWithin 不问依存在其自身之步是否被满足（第二次独立审查 F8）。",
-        "en": "RenewingIn.within_one runs one way only, and the converse fails (LateMet.within_one_not_renewing): with a dependence unmet at its step 0 and met at every later step, the formation renews over cycles of one without renewing in the run; RenewedWithin does not ask whether a dependence is met at its own step (second independent review F8)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
-      "detail": {
-        "zh": "周期长度 0 是退化的（Web.renewedWithin_zero、Web.undermining_for_zero）：零步内更新恰是无人依存；任何对有依存者的条件的汲取都侵蚀零步（P11b 起），在更新的运行中也是（第二次独立审查 F10）。",
-        "en": "Cycle length 0 is degenerate (Web.renewedWithin_zero, Web.undermining_for_zero): renewal within zero steps holds exactly when nothing depends on the condition, and any draw on a condition something depends on undermines for zero steps (from P11b), even in a renewing run (second independent review F10)."
-      }
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
-      "detail": {
-        "zh": "第二次独立审查：P7 的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，§8.5 的表在 (a)(b) 与 but-for 一栏上不公允（已更正，整合文档 §11）。",
-        "en": "Second independent review: the mathematics of P7 is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the §8.5 table was unfair in rows (a), (b) and the but-for column (corrected, integration note §11)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "不含伦理谓词，不选择周期长度，不推出哪种读法是生生的读法。Slowing 与 Dip 是最小见证；回程等级不涉及汲取的数量。",
-    "en": "Contains no ethical predicate, chooses no cycle length and does not decide which reading is the reading of 生生. Slowing and Dip are minimal witnesses; the grades involve no amounts of what is drawn."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Return 29 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）把侵蚀改为最小形式，周期读法随之改变，见 §15。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): all 29 theorems of Becoming.Return have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a fourth independent review (BECOMING-P9B-P10-P11-REVIEW.md) changed undermining to the minimum form, which the cycle readings follow, see §15. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
@@ -297,10 +401,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "说明哪种周期适合哪种读法，以及周期读法与整段读法、视界结果的关系；回程等级与实际条件的对应。",
-    "en": "Which cycle suits which reading, and how the cycle readings relate to the whole-run reading and the horizon result; the correspondence of grades to actual conditions."
-  },
   "history": [
     {
       "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P7，承接 relational-renewal-classification 与 becoming-dependence-dynamics 的下一步。",
@@ -645,6 +745,20 @@
     {
       "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Return.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；Dependence.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；BECOMING-UNIFICATION-PLAN.md（10月14日改名表增一行（credits → includes）；其余文字不变）。",
       "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Return.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); Dependence.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); BECOMING-UNIFICATION-PLAN.md (one row added to the 14 October rename table (credits → includes); no other text changed)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题与陈述不变；主张拆为 9 条规律；限制与逐轮回执说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。反例中“（P11b 起）”去掉（现行定义无条件成立，轮次留在快照中）；第二次审查的概括与 joint-difference-making 中的同一条一致。每句旧文本的去向见迁移对照表 [becoming-return-grades.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-return-grades.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title and statement are kept; the claim was split into 9 laws; limitations and per-round receipt notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. A counterexample lost “(from P11b)” (the current definition states it unconditionally; the round stays in the snapshot), and the second review's summary matches the same item in joint-difference-making. Every earlier sentence is mapped in the migration table [becoming-return-grades.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-return-grades.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/0cb1f8709352d845/becoming-return-grades.json",
+      "sha256": "0cb1f8709352d845b641944d219b269c7da7308bbfcfe8572ec3410f07d5b4bf",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
