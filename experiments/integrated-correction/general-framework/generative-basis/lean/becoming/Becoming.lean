@@ -831,7 +831,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   alphabet and law of draws, with no premise. A copy completes exactly when the pool holds
   every token as often as the word uses it and the support covers what it draws; copies from
   one pool are all released exactly when the pool supplies the words together and the support
-  covers all their draws, in any order; under local draws, a word's use of support depends only
+  covers all their draws, in any order, and a lineage of `n` copies of one word exactly when
+  the pool holds each token `n` times as often and the support covers `n` times the draws and
+  releases; under local draws, a word's use of support depends only
   on the number of unlike adjacent pairs. A copy reading through contacts reproduces a word exactly when every
   site reads its token and the copy is supplied and covered. Inspection never increases the
   defects exactly where the reference is faithful; doubling for `n` rounds from `k` units runs

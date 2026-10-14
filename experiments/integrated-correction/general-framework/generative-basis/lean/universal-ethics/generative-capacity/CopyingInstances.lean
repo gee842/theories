@@ -1,4 +1,5 @@
 import Becoming.Copying
+import Becoming.Countdown
 import CopyingCorrection
 
 /-!
@@ -20,6 +21,16 @@ old examples are instances.
   released exactly when the pool supplies all their tokens together and the support covers
   all their draws and releases (`batch_all_released_iff`); exchanging adjacent strands keeps
   this (`batch_all_released_swap`).
+* **A lineage.** For every pool and support, every reproduction of a lineage of `n` from a
+  path-shaped strand is released exactly when the pool holds each token at least `n` times as
+  often as the strand uses it and the free support covers `n` times its draws and release
+  (`lineage_released_iff`, from `Copying.lineage_all_iff`); a released lineage holds `n + 1`
+  copies of the parent and has used `n` times the draws and release (`lineage_of_released`).
+  The support used is `n` times the draws and release exactly when every reproduction is
+  released (`lineage_used_iff`): this is the converse of `finite_lineage_inherits`, whose
+  premises are the sufficient side (`finite_lineage_instance`). Read on the strands alone the
+  converse is false: a lineage of one can hold two copies of the parent with its reproduction
+  not released (`strands_do_not_show_release`).
 * **Local draws.** The machine's draws are the core's local draws with first draw 1
   (`draw_eq`), so the ranking of the alternating and clustered strands
   (`local_ranking_from_law`) and the constraint on the mixed strand
@@ -35,7 +46,13 @@ old examples are instances.
   a word has tokens extends the product by that word exactly when each site reads the word's
   token through the actual contacts, the pool supplies the word and the support covers what it
   draws (`operate_copies_iff`); complete registration is the instance
-  (`registered_copy_cells`). Every course keeps the built product as a prefix
+  (`registered_copy_cells`). The chain's bonds need nothing beyond the tokens: every course
+  keeps the product's bonds the path on its tokens (`path_shaped_along`, from
+  `Countdown.invariant_iff_reach`), so the same condition makes the product the strand, bonds
+  included (`operate_strand_iff`), and complete registration copies the template exactly when
+  its bonds are the path on its tokens (`registered_copy_iff`); the old
+  `registered_inheritance` is the instance without its non-empty premise
+  (`registered_inheritance_instance`). Every course keeps the built product as a prefix
   (`product_extends_along`); only copy moves change the product (`product_gated`,
   `contact_course_keeps_product`), and every course keeps the totals of connectors, material
   and support (`totals_along`).
@@ -337,6 +354,189 @@ theorem third_structure_from_law (law : StructuralCopying.Law) :
       (Copying.use (Copying.pairDraw 1 law.equal law.unequal) none
         (false :: [false, true, true]) + 1)
   omega
+
+/-! ### A lineage -/
+
+theorem strand_eq {s p : Strand} (cells : s.cells = p.cells) (bonds : s.bonds = p.bonds) :
+    s = p := by
+  cases s
+  cases p
+  simp_all
+
+/-- Every reproduction of a lineage of `n` is released. -/
+def AllReleased (law : StructuralCopying.Law) : Nat → Strand → Supply → Prop
+  | 0, _, _ => True
+  | n + 1, p, r => (StructuralCopying.reproduce law p r).1 = true ∧
+      AllReleased law n (StructuralCopying.reproduce law p r).2.built
+        (StructuralCopying.reproduce law p r).2.supply
+
+theorem reproduce_built_eq (law : StructuralCopying.Law) (p : Strand) (r : Supply) :
+    (StructuralCopying.reproduce law p r).2.built = (StructuralCopying.copy law p r).built := by
+  unfold StructuralCopying.reproduce StructuralCopying.release
+  split <;> rfl
+
+/-- A released reproduction of a path-shaped strand is the strand, bonds included. -/
+theorem reproduce_built (law : StructuralCopying.Law) (p : Strand)
+    (hp : p.bonds = path p.cells.length) (hn : p.cells ≠ []) (r : Supply)
+    (h : (StructuralCopying.reproduce law p r).1 = true) :
+    (StructuralCopying.reproduce law p r).2.built = p := by
+  have ⟨hs, hc⟩ := (reproduce_iff law p hp hn r).mp h
+  have cells := (copy_cells_iff law p hp hn r).mpr ⟨hs, Nat.le_trans (Nat.le_add_right _ 1) hc⟩
+  have bonds := StructuralCopying.steps_preserve_path law p.cells.length
+    (StructuralCopying.start p r) rfl
+  have e : StructuralCopying.copy law p r =
+      StructuralCopying.steps law p.cells.length (StructuralCopying.start p r) := by
+    simp only [StructuralCopying.copy, if_pos (And.intro hp hn)]
+  rw [reproduce_built_eq, e]
+  rw [e] at cells
+  exact strand_eq cells (by rw [bonds, cells, hp])
+
+/-- What a copy uses is at most the draws of its strand. -/
+theorem copy_used_le (law : StructuralCopying.Law) (p : Strand)
+    (hp : p.bonds = path p.cells.length) (hn : p.cells ≠ []) (r : Supply) :
+    (StructuralCopying.copy law p r).supply.spent ≤ r.spent + StructuralCopying.cost law none p.cells := by
+  have hc : (StructuralCopying.steps law p.cells.length (StructuralCopying.start p r)).supply.spent +
+      StructuralCopying.cost law
+        (StructuralCopying.steps law p.cells.length (StructuralCopying.start p r)).previous
+        (StructuralCopying.steps law p.cells.length (StructuralCopying.start p r)).pending =
+      r.spent + StructuralCopying.cost law none p.cells :=
+    StructuralCopying.steps_cost_balance law p.cells.length (StructuralCopying.start p r)
+  simp only [StructuralCopying.copy, if_pos (And.intro hp hn)]
+  omega
+
+/-- A released reproduction uses the draws and the release; one not released uses at most the
+draws. -/
+theorem reproduce_strand_used (law : StructuralCopying.Law) (p : Strand)
+    (hp : p.bonds = path p.cells.length) (hn : p.cells ≠ []) (r : Supply) :
+    ((StructuralCopying.reproduce law p r).1 = true →
+        (StructuralCopying.reproduce law p r).2.supply.spent =
+          r.spent + (StructuralCopying.cost law none p.cells + 1)) ∧
+      ((StructuralCopying.reproduce law p r).1 = false →
+        (StructuralCopying.reproduce law p r).2.supply.spent ≤
+          r.spent + StructuralCopying.cost law none p.cells) := by
+  have le := copy_used_le law p hp hn r
+  unfold StructuralCopying.reproduce StructuralCopying.release
+  split
+  · rename_i c
+    have e := StructuralCopying.completed_copy_requires_cost law p r c.1
+    refine ⟨fun _ => ?_, fun h => by simp at h⟩
+    simp only
+    omega
+  · exact ⟨fun h => by simp at h, fun _ => le⟩
+
+/-- A lineage is released copy by copy exactly when the batch of `n` copies of its parent is. -/
+theorem all_released_iff_batch (law : StructuralCopying.Law) (p : Strand)
+    (hp : p.bonds = path p.cells.length) (hn : p.cells ≠ []) : ∀ (n : Nat) (r : Supply),
+    AllReleased law n p r ↔
+      Copying.Every ((StructuralCopying.batch law (List.replicate n p) r).1.map Prod.fst)
+  | 0, _ => Iff.rfl
+  | n + 1, r => by
+    show ((StructuralCopying.reproduce law p r).1 = true ∧
+        AllReleased law n (StructuralCopying.reproduce law p r).2.built
+          (StructuralCopying.reproduce law p r).2.supply) ↔
+      ((StructuralCopying.reproduce law p r).1 = true ∧
+        Copying.Every ((StructuralCopying.batch law (List.replicate n p)
+          (StructuralCopying.reproduce law p r).2.supply).1.map Prod.fst))
+    constructor
+    · intro ⟨h, rest⟩
+      rw [reproduce_built law p hp hn r h] at rest
+      exact ⟨h, (all_released_iff_batch law p hp hn n _).mp rest⟩
+    · intro ⟨h, rest⟩
+      refine ⟨h, ?_⟩
+      rw [reproduce_built law p hp hn r h]
+      exact (all_released_iff_batch law p hp hn n _).mpr rest
+
+/-- **The lineage law** (from `Copying.lineage_all_iff`). For every pool and support, every
+reproduction of a lineage of `n` from a path-shaped strand is released exactly when the pool
+holds each token at least `n` times as often as the strand uses it and the free support covers
+`n` times its draws and release. -/
+theorem lineage_released_iff (law : StructuralCopying.Law) (p : Strand)
+    (hp : p.bonds = path p.cells.length) (hn : p.cells ≠ []) (n : Nat) (r : Supply) :
+    AllReleased law n p r ↔
+      (∀ a, n * Copying.countOf a p.cells ≤ Copying.countOf a r.pool) ∧
+        n * (StructuralCopying.cost law none p.cells + 1) ≤ r.free := by
+  rw [all_released_iff_batch law p hp hn n r,
+    (batch_view law (List.replicate n p) r fun q m => by
+      rw [List.eq_of_mem_replicate m]
+      exact ⟨hp, hn⟩).1,
+    List.map_replicate, use_eq]
+  exact Copying.lineage_all_iff (StructuralCopying.charge law) 1 p.cells r.pool r.free r.spent n
+
+/-- **A released lineage reproduces its parent**: `n + 1` copies of it, with the support used
+grown by `n` times the draws and release. -/
+theorem lineage_of_released (law : StructuralCopying.Law) (p : Strand)
+    (hp : p.bonds = path p.cells.length) (hn : p.cells ≠ []) : ∀ (n : Nat) (r : Supply),
+    AllReleased law n p r →
+      (StructuralCopying.descendants law n p r).1 = List.replicate (n + 1) p ∧
+        (StructuralCopying.descendants law n p r).2.spent =
+          r.spent + n * (StructuralCopying.cost law none p.cells + 1)
+  | 0, r, _ => ⟨rfl, by simp [StructuralCopying.descendants]⟩
+  | n + 1, r, ⟨h, rest⟩ => by
+    have built := reproduce_built law p hp hn r h
+    rw [built] at rest
+    have ih := lineage_of_released law p hp hn n _ rest
+    have used := (reproduce_strand_used law p hp hn r).1 h
+    simp only [StructuralCopying.descendants, h, if_true, built]
+    refine ⟨by rw [ih.1]; rfl, ?_⟩
+    rw [ih.2, used, Nat.succ_mul]
+    omega
+
+/-- **The converse of `finite_lineage_inherits`, read on the support used.** A lineage of `n`
+from a path-shaped strand uses `n` times the draws and release exactly when every reproduction
+is released, so exactly when the pool and support satisfy the lineage law. -/
+theorem lineage_used_iff (law : StructuralCopying.Law) (p : Strand)
+    (hp : p.bonds = path p.cells.length) (hn : p.cells ≠ []) : ∀ (n : Nat) (r : Supply),
+    (StructuralCopying.descendants law n p r).2.spent =
+        r.spent + n * (StructuralCopying.cost law none p.cells + 1) ↔ AllReleased law n p r
+  | 0, r => ⟨fun _ => trivial, fun _ => by simp [StructuralCopying.descendants]⟩
+  | n + 1, r => by
+    cases h : (StructuralCopying.reproduce law p r).1 with
+    | true =>
+      have built := reproduce_built law p hp hn r h
+      have used := (reproduce_strand_used law p hp hn r).1 h
+      have ih := lineage_used_iff law p hp hn n (StructuralCopying.reproduce law p r).2.supply
+      simp only [StructuralCopying.descendants, h, if_true, AllReleased, true_and, built]
+      rw [← ih, used, Nat.succ_mul]
+      constructor <;> intro e <;> omega
+    | false =>
+      have used := (reproduce_strand_used law p hp hn r).2 h
+      simp only [StructuralCopying.descendants, h, AllReleased]
+      simp only [Bool.false_eq_true, if_false, false_and, iff_false]
+      rw [Nat.succ_mul]
+      omega
+
+/-- The old feed of `n` copies is the core's `n` copies joined. -/
+theorem repeatedFeed_eq (w : List Bool) : ∀ n : Nat,
+    StructuralCopying.repeatedFeed w n = Copying.joinAll (List.replicate n w)
+  | 0 => rfl
+  | n + 1 => congrArg (w ++ ·) (repeatedFeed_eq w n)
+
+/-- `finite_lineage_inherits`'s pool and support satisfy the lineage law: the old theorem is its
+sufficient side. -/
+theorem finite_lineage_instance (law : StructuralCopying.Law) (p : Strand)
+    (hp : p.bonds = path p.cells.length) (hn : p.cells ≠ []) (n : Nat) (tail : List Bool)
+    (free spent : Nat) :
+    AllReleased law n p ⟨StructuralCopying.repeatedFeed p.cells n ++ tail,
+      free + n * (StructuralCopying.cost law none p.cells + 1), spent⟩ :=
+  (lineage_released_iff law p hp hn n _).mpr
+    ⟨fun a => by
+      show n * Copying.countOf a p.cells ≤
+        Copying.countOf a (StructuralCopying.repeatedFeed p.cells n ++ tail)
+      rw [Copying.countOf_append, repeatedFeed_eq, Copying.countOf_joinAll_replicate]
+      exact Nat.le_add_right _ _,
+     Nat.le_add_left _ _⟩
+
+/-- **The strands alone do not show release.** With support for the copy but not for its
+release, a lineage of one holds two copies of the parent, yet its reproduction is not released:
+the converse of `finite_lineage_inherits` read on the strands alone is false. -/
+theorem strands_do_not_show_release :
+    (StructuralCopying.descendants StructuralCopying.alternatingEasy 1 StructuralCopying.alternating
+        ⟨StructuralCopying.feed, 4, 0⟩).1 = List.replicate 2 StructuralCopying.alternating ∧
+      ¬ AllReleased StructuralCopying.alternatingEasy 1 StructuralCopying.alternating
+        ⟨StructuralCopying.feed, 4, 0⟩ := by
+  refine ⟨by decide, fun ⟨h, _⟩ => ?_⟩
+  rw [StructuralCopying.full_copy_need_not_be_released.2] at h
+  exact Bool.noConfusion h
 
 end Structural
 
@@ -706,6 +906,110 @@ theorem totals_kept (law : StructuralCopying.Law) :
 theorem totals_along (law : StructuralCopying.Law) :
     ∀ s plan t, Trace (CopyingRegistration.process law) s plan t → totals t = totals s :=
   fun s plan t path => Gated.kept_along_iff.mpr (totals_kept law) s plan t path fun _ _ => rfl
+
+/-! ### The chain's bonds -/
+
+/-- The product's bonds are the path on its tokens. -/
+def PathShaped (s : CopyingRegistration.State) : Prop :=
+  s.work.built.bonds = path s.work.built.cells.length
+
+theorem extend_path (s : Strand) (x : Bool) (h : s.bonds = path s.cells.length) :
+    (StructuralCopying.extend s x).bonds = path (StructuralCopying.extend s x).cells.length := by
+  simp only [StructuralCopying.extend, List.length_append, List.length_singleton, path]
+  cases hs : s.cells <;> simp_all [path]
+
+theorem tick_path_shaped (law : StructuralCopying.Law) (s : CopyingRegistration.State)
+    (h : PathShaped s) : PathShaped (CopyingRegistration.tick law s) := by
+  unfold PathShaped CopyingRegistration.tick at *
+  split
+  · dsimp only
+    split
+    · exact extend_path _ _ h
+    · exact h
+  · exact h
+
+/-- **The bonds need nothing beyond the tokens.** Every course of the registration machine keeps
+the product's bonds the path on its tokens (an instance of `Countdown.invariant_iff_reach`:
+copy moves extend the path, the other moves keep the product). -/
+theorem path_shaped_along (law : StructuralCopying.Law) :
+    ∀ s t, Reach (CopyingRegistration.process law) s t → PathShaped s → PathShaped t :=
+  Countdown.invariant_iff_reach.mp fun s e t step held => by
+    cases e with
+    | copy =>
+      subst step
+      exact tick_path_shaped law s held
+    | dock i j =>
+      have same : t.work.built = s.work.built := product_gated law s _ t step rfl
+      unfold PathShaped
+      rw [same]
+      exact held
+    | lose i =>
+      have same : t.work.built = s.work.built := product_gated law s _ t step rfl
+      unfold PathShaped
+      rw [same]
+      exact held
+    | slip i j =>
+      have same : t.work.built = s.work.built := product_gated law s _ t step rfl
+      unfold PathShaped
+      rw [same]
+      exact held
+
+theorem operate_path_shaped (law : StructuralCopying.Law) : ∀ (n : Nat) (s : CopyingRegistration.State),
+    PathShaped s → PathShaped (CopyingRegistration.operate law n s)
+  | 0, _, h => h
+  | n + 1, s, h => operate_path_shaped law n _ (tick_path_shaped law s h)
+
+/-- **Reading through contacts, bonds included.** For every registration state whose product is
+path-shaped, as many copy moves as a word has tokens make the product the strand of its tokens
+followed by the word, bonds included, exactly when each site reads the word's token through the
+actual contacts, the pool supplies the word and the support covers what it draws. -/
+theorem operate_strand_iff (law : StructuralCopying.Law) (s : CopyingRegistration.State)
+    (word : List Bool) (len : s.work.pending.length = word.length) (shaped : PathShaped s) :
+    (CopyingRegistration.operate law word.length s).work.built =
+        ⟨s.work.built.cells ++ word, path (s.work.built.cells ++ word).length⟩ ↔
+      Copying.Reads (CopyingRegistration.readAt s) s.work.built.cells.length word ∧
+        Copying.Supplies word s.work.supply.pool ∧
+        StructuralCopying.cost law s.work.previous word ≤ s.work.supply.free := by
+  rw [← operate_copies_iff law s word len]
+  have hb := operate_path_shaped law word.length s shaped
+  unfold PathShaped at hb
+  constructor
+  · intro h
+    rw [h]
+  · intro h
+    exact strand_eq h (by rw [hb, h])
+
+/-- **Complete registration copies the template, bonds included, exactly when the template's
+bonds are the path on its tokens.** The tokens need the pool and support
+(`registered_copy_cells`); the bonds need nothing more. -/
+theorem registered_copy_iff (law : StructuralCopying.Law) (p : Strand) (tail : List Bool)
+    (free used : Nat) (contacts : List (Nat × Nat)) (spare : Nat)
+    (hreg : CopyingRegistration.Registered ⟨p, StructuralCopying.start p
+      ⟨p.cells ++ tail, free + StructuralCopying.cost law none p.cells, used⟩, contacts, spare⟩) :
+    (CopyingRegistration.operate law p.cells.length ⟨p, StructuralCopying.start p
+      ⟨p.cells ++ tail, free + StructuralCopying.cost law none p.cells, used⟩, contacts, spare⟩).work.built =
+      p ↔ p.bonds = path p.cells.length := by
+  have cells := registered_copy_cells law p tail free used contacts spare hreg
+  have shaped := operate_path_shaped law p.cells.length ⟨p, StructuralCopying.start p
+    ⟨p.cells ++ tail, free + StructuralCopying.cost law none p.cells, used⟩, contacts, spare⟩ rfl
+  unfold PathShaped at shaped
+  constructor
+  · intro h
+    rw [h] at shaped
+    exact shaped
+  · intro hp
+    exact strand_eq cells (by rw [shaped, cells, hp])
+
+/-- The old `registered_inheritance` is the instance, without its non-empty premise. -/
+theorem registered_inheritance_instance (law : StructuralCopying.Law) (p : Strand)
+    (hp : p.bonds = path p.cells.length) (tail : List Bool) (free used : Nat)
+    (contacts : List (Nat × Nat)) (spare : Nat)
+    (hreg : CopyingRegistration.Registered ⟨p, StructuralCopying.start p
+      ⟨p.cells ++ tail, free + StructuralCopying.cost law none p.cells, used⟩, contacts, spare⟩) :
+    (CopyingRegistration.operate law p.cells.length ⟨p, StructuralCopying.start p
+      ⟨p.cells ++ tail, free + StructuralCopying.cost law none p.cells, used⟩, contacts, spare⟩).work.built =
+      p :=
+  (registered_copy_iff law p tail free used contacts spare hreg).mpr hp
 
 end Registration
 
