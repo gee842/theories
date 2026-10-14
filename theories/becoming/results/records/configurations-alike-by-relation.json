@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-14T08:40:00+00:00",
   "statement": {
     "zh": "互模拟所联系的配置相同，相同的配置通过同样的检验；有意义的描述恰把相同者等同，并承载规律；作为相等的确定性依赖于命名。",
     "en": "Configurations related by a bisimulation are alike and pass the same tests; a description makes sense where it identifies exactly the alike ones, and then carries a law; determinacy as equality depends on names."
@@ -23,12 +23,12 @@
       "en": "No premise: likeness is characterized by bisimulation, not assumed, and no quotient is taken; Alike.tests, exchange_alike_iff, identifiesAlike_iff and identifiesAlike_id_iff are two-way."
     },
     {
-      "zh": "互模拟比较动作与主张类型相同的框架；检验是一个有限动作序列之后的一个主张，经同样检验推出相同（需要分支条件）没有陈述。",
-      "en": "Bisimulation compares frames with the same move and claim types; a test is a claim after a finite course of moves, and that passing the same tests makes configurations alike (which needs a condition on branching) is not stated."
+      "zh": "互模拟比较动作与主张类型相同的框架；检验是一个有限动作序列之后的一个主张；经同样检验推出相同所需的条件由 tests-fix-likeness-where-determined 给出。",
+      "en": "Bisimulation compares frames with the same move and claim types; a test is a claim after a finite course of moves, and the conditions under which passing the same tests makes configurations alike are given by tests-fix-likeness-where-determined."
     },
     {
-      "zh": "相同之下的确定性（DeterminedAt）是定义；第一部分以 Determined 陈述的定理没有以它重述。",
-      "en": "Determinacy up to likeness (DeterminedAt) is a definition; the Part I theorems stated with Determined are not restated with it."
+      "zh": "相同之下的确定性（DeterminedAt）是定义；第一部分以 Determined 陈述的定理以它重述，见 determinacy-up-to-likeness。",
+      "en": "Determinacy up to likeness (DeterminedAt) is a definition; the Part I theorems stated with Determined are restated with it in determinacy-up-to-likeness."
     },
     {
       "zh": "IdentifiesAlike.carries 要框架在每个配置处相同之下确定；有意义的描述是给出的，不推出它存在。",
@@ -172,8 +172,8 @@
       "id": "branching-tests-bisimulation",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 ExplanatoryBranching.Bisimulation、Same 与 bisimulation_implies_same：桥接证明它的互模拟就是核心的，相同的配置通过每个分支检验。反方向（同测推出互模拟）要求像有限，由外围的 same_iff_bisimilar 给出，核心没有陈述。",
-        "en": "Reuses ExplanatoryBranching.Bisimulation, Same and bisimulation_implies_same: the bridge proves its bisimulation is the core's, and alike configurations pass every branching test. The converse (passing the same tests gives a bisimulation) needs image-finiteness and is the periphery's same_iff_bisimilar; the core does not state it."
+        "zh": "复用 ExplanatoryBranching.Bisimulation、Same 与 bisimulation_implies_same：桥接证明它的互模拟就是核心的，相同的配置通过每个分支检验。反方向（同测推出互模拟）在外围由 same_iff_bisimilar 在像有限时经典地给出；核心在有限、已定的框架上构造性地给出（Becoming.Likeness 的 alike_iff_sameBranchingTests，以核心自己的分支检验）。",
+        "en": "Reuses ExplanatoryBranching.Bisimulation, Same and bisimulation_implies_same: the bridge proves its bisimulation is the core's, and alike configurations pass every branching test. The converse (passing the same tests gives a bisimulation) is given classically in the periphery for image-finite models by same_iff_bisimilar, and constructively in the core on finite decided frames (alike_iff_sameBranchingTests of Becoming.Likeness, with the core's own branching tests)."
       },
       "interface": {
         "output": {
@@ -210,8 +210,8 @@
     {
       "id": "tests-fix-likeness-where-determined",
       "detail": {
-        "zh": "检验固定相同的构造性条件：两个框架在相同之下确定。",
-        "en": "The constructive condition under which tests fix likeness: both frames determined up to likeness."
+        "zh": "检验固定相同的条件：线性检验要两个框架在相同之下确定，分支检验要两个框架有限、已定。",
+        "en": "The conditions under which tests fix likeness: both frames determined up to likeness for linear tests, both finite and decided for branching tests."
       }
     },
     {
@@ -232,8 +232,8 @@
     }
   ],
   "limitations": {
-    "zh": "经同样检验的配置相同：两个框架在相同之下确定时由 tests-fix-likeness-where-determined 陈述（P76），分支检验在核心中没有陈述（外围在像有限时有 same_iff_bisimilar，要经典逻辑）；第一部分以 Determined 陈述的定理在相同之下的重述见 determinacy-up-to-likeness（P81），其中几项仍待重述；互模拟只比较动作与主张类型相同的框架；有意义的描述存在没有陈述（以“与哪些相同”描述每个配置，要函数外延性与命题外延性才有意义；按相同取商要 Quot.sound）；相同不取商，所以“相同的配置是同一个”不是这里的陈述；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "That configurations passing the same tests are alike is stated where both frames are determined up to likeness, by tests-fix-likeness-where-determined (P76), and for branching tests not in the core (the periphery has same_iff_bisimilar for image-finite models, classically); the Part I theorems stated with Determined are restated up to likeness in determinacy-up-to-likeness (P81), a few still to be; bisimulation compares only frames with the same move and claim types; that a description making sense exists is not stated (describing each configuration by what it is alike to makes sense given function and propositional extensionality, and the quotient by likeness needs Quot.sound); likeness takes no quotient, so “alike configurations are one and the same” is not stated here; the readings are the AI's, pending Ren; contains no ethical predicate."
+    "zh": "经同样检验的配置相同由 tests-fix-likeness-where-determined 陈述：线性检验在两个框架于相同之下确定时，分支检验在两个框架有限、已定时；第一部分以 Determined 陈述的定理在相同之下的重述见 determinacy-up-to-likeness；互模拟只比较动作与主张类型相同的框架；有意义的描述存在没有陈述（以“与哪些相同”描述每个配置，要函数外延性与命题外延性才有意义；按相同取商要 Quot.sound）；相同不取商，所以“相同的配置是同一个”不是这里的陈述；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "That configurations passing the same tests are alike is stated in tests-fix-likeness-where-determined, for linear tests where both frames are determined up to likeness and for branching tests where both are finite and decided; the Part I theorems stated with Determined are restated up to likeness in determinacy-up-to-likeness; bisimulation compares only frames with the same move and claim types; that a description making sense exists is not stated (describing each configuration by what it is alike to makes sense given function and propositional extensionality, and the quotient by likeness needs Quot.sound); likeness takes no quotient, so “alike configurations are one and the same” is not stated here; the readings are the AI's, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
     "zh": "2026-10-14：Becoming.Bridge、Becoming.Mechanism、Becoming.Unfolding、Becoming.Joint 的当前字节由合并检查器回执 20261013T221720.428753Z 绑定（通过：包 91 个模块，4983 项定理、7020 项声明审计，源声明公理报告全空；核心闭包 90 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Unfolding 的 67 项定理全部空依赖，其中含 Alike.trans、Alike.tests、DeterminedAt.transfer、DeterminedAt.goAlike、Twins.alike_one、identifiesAlike_iff、IdentifiesAlike.carries、identifiesAlike_id_iff、Law.alike_iff_sameFuture、Law.IdentifiesAlike.carries、exchange_alike_iff与 exchange_determinedAt；同一回执中，外围桥接 Becoming.Bridge 的 deeper_bisimulation_iff、static_toggle_alike、branching_bisimulation_iff 与 Alike.same 空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261011T232716.311380Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §91；尚无独立审查。 P89（2026-10-13）：Bridge 的旧声明保持，四项新增适配已实查且公理报告为空；本记录的 Bridge 绑定转到本次冻结回执，其余既有证明保留各自原回执，不将适配另计为独立成果。",
@@ -462,8 +462,8 @@
     }
   ],
   "next_delta": {
-    "zh": "第一部分以 Determined 陈述的定理中 P81 尚未重述的（Mechanism 的 Image／FactorsThrough 刻画、not_fixes_other_of_new、Joint 的 determined_dichotomy、carries_law_iff 的双向形式；其余见 determinacy-up-to-likeness）；核心中分支检验固定相同的构造性证明（线性检验的条件由 tests-fix-likeness-where-determined 给出，P76）；Ren 的判断：配置的同一是否读作相同。",
-    "en": "Restating up to likeness the Part I theorems stated with Determined that P81 did not (Mechanism's characterization through Image and FactorsThrough, not_fixes_other_of_new, Joint's determined_dichotomy, the two-way form of carries_law_iff; the rest are in determinacy-up-to-likeness); a constructive proof in the core that branching tests fix likeness (the condition for linear tests is given by tests-fix-likeness-where-determined, P76); Ren's judgment whether the identity of configurations reads as likeness."
+    "zh": "Ren 的判断：配置的同一是否读作相同。",
+    "en": "Ren's judgment whether the identity of configurations reads as likeness."
   },
   "history": [
     {
@@ -565,6 +565,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为 Becoming.Viability、Countdown、Lasting、Copying、Retrodiction 及五个外围实例模块增行，总数改据回执 20261014T044840.291323Z；其余文字不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
+    },
+    {
+      "zh": "2026-10-14，相同之下补全（工作板“Current math core”的 likeness 一行；Becoming.Likeness）：next_delta 的前两项已回答，余下 Ren 的判断。第一部分以 Determined 陈述而 P81 未重述的定理（Image／FactorsThrough 的刻画、not_fixes_other_of_new、determined_dichotomy、carries_law_iff 的双向形式）在 determinacy-up-to-likeness 中重述；分支检验在有限、已定的框架上构造性地固定相同，记于 tests-fix-likeness-where-determined。限制、两条前提、与 branching-tests-bisimulation 的依存说明及两条相关说明相应改写（限制变短）；主张与对应不变。",
+      "en": "14 October 2026, likeness completed (the work board's likeness row of Current math core; Becoming.Likeness): the first two items of the next_delta are answered, leaving Ren's judgment. The Part I theorems stated with Determined that P81 did not restate (the characterization through Image and FactorsThrough, not_fixes_other_of_new, determined_dichotomy, the two-way form of carries_law_iff) are restated in determinacy-up-to-likeness; branching tests fix likeness constructively on finite decided frames, recorded in tests-fix-likeness-where-determined. The limitations, two hypotheses, the dependency note on branching-tests-bisimulation and two related notes were rewritten accordingly (the limitations shorter); the claim and correspondence are unchanged."
     }
   ]
 }

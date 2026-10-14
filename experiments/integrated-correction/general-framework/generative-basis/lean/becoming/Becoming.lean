@@ -89,6 +89,7 @@ import Becoming.Countdown
 import Becoming.Lasting
 import Becoming.Copying
 import Becoming.Retrodiction
+import Becoming.Likeness
 
 /-!
 # The Theory of Becoming: the formal core
@@ -846,6 +847,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   with another content is told apart by some dated control. Controls at both ends of a span
   settle every date between exactly when at most one change is admitted or no date lies
   strictly between; a change seen at both ends is not located.
+* `Becoming.Likeness` (L3): the laws stated with equality, completed up to likeness, with no
+  premise. A description carries a law up to likeness exactly where some equivalence
+  registering the claims makes configurations go alike, the law stated with equality being the
+  case where each description is its own claim; the image is then no longer the least carrier;
+  a run never returning up to likeness fixes no other move; the dichotomy of difference-making
+  needs one level after the move. On finite frames whose steps and claims are decided,
+  configurations are alike exactly where they pass the same branching tests, by a constructive
+  proof; deciding likeness for every finite frame is excluded middle.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

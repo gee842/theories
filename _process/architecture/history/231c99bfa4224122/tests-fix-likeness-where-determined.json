@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "id": "tests-fix-likeness-where-determined",
+  "title": {
+    "zh": "确定之处检验固定相同",
+    "en": "Tests fix likeness where determined"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "两个框架都在相同之下确定时，配置恰在通过同样的检验时相同；没有相同之下确定这一条件时，检验未必固定相同。",
+    "en": "Where both frames' branching is determined up to likeness, configurations are alike exactly where they pass the same tests; without determinacy up to likeness the tests need not fix likeness."
+  },
+  "claim": {
+    "zh": "设 F 与 G 是动作与主张类型相同的框架。s 与 s′ 通过同样的检验（SameTests F G s s′），指从两者出发开放的动作序列相同，且每个序列之后能实现的主张相同；相同的配置如此（Alike.sameTests）。两者在相同之下确定时，同样的检验在一个动作之后保持（SameTests.after），通过同样的检验是一个互模拟（sameTests_bisimulation），所以配置恰在通过同样的检验时相同（alike_iff_sameTests；对一个确定的框架，Determined.alike_iff_sameTests）。没有相同之下确定这一条件时，检验未必固定相同：在第一步之后选择的框架与在第一步选择的框架，起点通过同样的检验而不相同（Choosing.sameTests、Choosing.not_alike），后者不确定（Choosing.early_not_determined）。不加前提，构造性。",
+    "en": "Let F and G be frames with the same move and claim types. Configurations s and s′ pass the same tests (SameTests F G s s′) where the same courses of moves are open from each and after each course the same claims can be realized; alike configurations do (Alike.sameTests). Where both frames are determined up to likeness, passing the same tests survives a move (SameTests.after) and is a bisimulation (sameTests_bisimulation), so configurations are alike exactly where they pass the same tests (alike_iff_sameTests; for one determined frame, Determined.alike_iff_sameTests). Without determinacy up to likeness the tests need not fix likeness: a frame choosing after its first move and one choosing at it pass the same tests from their starts and are not alike (Choosing.sameTests, Choosing.not_alike), the second not determined (Choosing.early_not_determined). No premise; constructive."
+  },
+  "hypotheses": [
+    {
+      "zh": "alike_iff_sameTests 以两个框架处处在相同之下确定为条件；没有这个条件，Choosing 给出反例。",
+      "en": "alike_iff_sameTests takes both frames determined up to likeness everywhere as its condition; without it, Choosing gives a counterexample."
+    },
+    {
+      "zh": "检验是有限动作序列，可带一个最后的主张；带否定与合取的分支检验在外围（ExplanatoryBranching）。",
+      "en": "A test is a finite course of moves, possibly followed by one claim; branching tests with negation and conjunction are in the periphery (ExplanatoryBranching)."
+    }
+  ],
+  "correspondence": {
+    "zh": "P76 的第二项（工作板），按 Ren 2026-10-12 的“move towards 100%”：给出 configurations-alike-by-relation 的 next_delta 中“核心中经同样检验推出相同的构造性条件”：相同之下的确定性。读法（AI 的，待 Ren）：检验看不到的是选择在何时作出；有分支时，只有分支的检验看得到。外围中像有限的模型的分支检验固定相同（same_iff_bisimilar，经典），经 P69 的桥接节（branching_bisimulation_iff）与核心的互模拟相连。见整合文档 §98。",
+    "en": "The second item of P76 (work board), following Ren's “move towards 100%” of 12 October 2026: it gives what configurations-alike-by-relation's next_delta names, a constructive condition in the core under which passing the same tests makes configurations alike: determinacy up to likeness. Reading (the AI's, pending Ren): what tests cannot see is when a choice is made; with branching, only tests that branch see it. In the periphery, branching tests fix likeness for image-finite models (same_iff_bisimilar, classically), joined to the core's bisimulation by P69's bridge section (branching_bisimulation_iff). See the integration document §98."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+  "aliases": [
+    "Becoming.SameTests",
+    "Becoming.Alike.sameTests",
+    "Becoming.sameTests_bisimulation",
+    "Becoming.alike_iff_sameTests",
+    "Becoming.Choosing.not_alike",
+    "same tests",
+    "同样的检验",
+    "tests fix likeness",
+    "检验固定相同"
+  ],
+  "dependencies": [
+    {
+      "id": "configurations-alike-by-relation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Bisimulation、Alike、Alike.trace、Alike.tests 与 DeterminedAt；给出它的 next_delta 所求的构造性条件。",
+        "en": "Reuses Bisimulation, Alike, Alike.trace, Alike.tests and DeterminedAt; gives the constructive condition its next_delta asks for."
+      },
+      "interface": {
+        "output": {
+          "zh": "相同及其在检验与相同之下确定性上的性质。",
+          "en": "Likeness and its properties on tests and determinacy up to likeness."
+        },
+        "input": {
+          "zh": "检验固定相同的条件与反例。",
+          "en": "The condition under which tests fix likeness, and its counterexample."
+        },
+        "conditions": {
+          "zh": "两个框架处处在相同之下确定。",
+          "en": "Both frames determined up to likeness everywhere."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "branching-tests-bisimulation",
+      "detail": {
+        "zh": "外围中像有限的模型的分支检验恰固定相同（经典）；这里是核心中的线性检验，条件是相同之下的确定性。",
+        "en": "In the periphery, branching tests fix likeness exactly for image-finite models (classically); here linear tests in the core, under determinacy up to likeness."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "detail": {
+        "zh": "Choosing：在第一步之后选择与在第一步选择的两个框架，通过同样的检验而不相同。",
+        "en": "Choosing: frames choosing after and at the first move pass the same tests and are not alike."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "核心中分支检验固定相同没有陈述（外围的证明用经典逻辑；在配置有限的框架上是否有构造性证明，这里开放）；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "That branching tests fix likeness is not stated in the core (the periphery's proof reasons classically; whether a constructive proof exists for frames with finitely many configurations is open here); the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "validation_scope": {
+    "zh": "2026-10-14：Becoming.Unfolding 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Histories 的 27 项定理全部空依赖，其中含 Alike.sameTests、SameTests.after、sameTests_bisimulation、alike_iff_sameTests、Determined.alike_iff_sameTests、Choosing.sameTests、Choosing.not_alike与 Choosing.early_not_determined；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §98；尚无独立审查。",
+    "en": "14 October 2026: the current bytes of Becoming.Unfolding are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 27 theorems of Becoming.Histories all have empty axiom reports, among them Alike.sameTests, SameTests.after, sameTests_bisimulation, alike_iff_sameTests, Determined.alike_iff_sameTests, Choosing.sameTests, Choosing.not_alike and Choosing.early_not_determined. The same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §98 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "role": "proof",
+      "sha256": "b65ce283e0ab62d874924b5ec786cff2248f29593b690e0487cacc9bfbf913f0",
+      "declarations": [
+        "Becoming.SameTests",
+        "Becoming.Alike.sameTests",
+        "Becoming.SameTests.after",
+        "Becoming.sameTests_bisimulation",
+        "Becoming.alike_iff_sameTests",
+        "Becoming.Determined.alike_iff_sameTests",
+        "Becoming.Choosing.Move",
+        "Becoming.Choosing.Pos",
+        "Becoming.Choosing.Late",
+        "Becoming.Choosing.Early",
+        "Becoming.Choosing.late",
+        "Becoming.Choosing.early",
+        "Becoming.Choosing.Open",
+        "Becoming.Choosing.late_open",
+        "Becoming.Choosing.early_open",
+        "Becoming.Choosing.late_of_open",
+        "Becoming.Choosing.early_of_open",
+        "Becoming.Choosing.sameTests",
+        "Becoming.Choosing.not_alike",
+        "Becoming.Choosing.early_not_determined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "0959f4804f5afba1b16f69851f7f29f086519f89e74b77a3220fa8bcdbee878d",
+      "declarations": [
+        "Becoming.Bisimulation",
+        "Becoming.Alike",
+        "Becoming.Alike.trace",
+        "Becoming.Alike.tests",
+        "Becoming.DeterminedAt",
+        "Becoming.Determined.at"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "declarations": [
+        "Becoming.Frame"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "role": "proof",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        "Generative.Trace"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "91ef4a5b3fbb55494834602713e7baa587235953342ea1d6fdaa35968efb138d",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Histories",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeCore",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "配置有限、步与主张已定的框架上，分支检验固定相同的构造性证明，或它需要哪个逻辑原则的边界。",
+    "en": "A constructive proof that branching tests fix likeness on frames with finitely many configurations and decided steps and claims, or the boundary naming the logical principle it needs."
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P76：新增，按 Ren“move towards 100%”；见整合文档 §98。",
+      "en": "2026-10-12 P76: added, following Ren's ‘move towards 100%’; see §98 of the integration note."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 接续审查：按 alike_iff_sameTests 的相同之下确定条件，把“分支时检验不固定相同”改为“没有该条件时未必固定”；Choosing 是反例，不是所有分支框架都失败的证明。原定理与见证保留。",
+      "en": "2026-10-13 takeover review: aligned the summary with the determinacy-up-to-likeness condition of alike_iff_sameTests. Without that condition tests need not fix likeness; Choosing is a counterexample, not a proof that every branching frame fails. Original theorems and witnesses are preserved."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“检验在相同之下确定时固定相同：两个框架都在相同之下确定时，配置恰在通过同样的检验时相同；没有相同之下确定这一条件时，检验未必固定相同”",
+      "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Tests fix likeness where branching is determined up to likeness: where both frames are, configurations are alike exactly where they pass the same tests; without determinacy up to likeness the tests need not fix likeness”"
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：Lean 源：Unfolding 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Unfolding only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为新模块增改行，总数改据回执 20261013T221720.428753Z；标题、粗体引语、模块表与正文中的工作项编号改为模块、节或成果的名称，旧标题锚点保留为显式锚点；陈述、Lean 名、定理数与链接目标均不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added or updated for the new modules and the §9 totals moved to receipt 20261013T221720.428753Z; work-item numbers removed from headings, bold leads, the module table and in-body references, which now name modules, sections or results, with the old heading anchors kept as explicit anchors; no statement, Lean name, theorem count or link target changed)."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为 Becoming.Viability、Countdown、Lasting、Copying、Retrodiction 及五个外围实例模块增行，总数改据回执 20261014T044840.291323Z；其余文字不变）。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
+    }
+  ]
+}

@@ -39,7 +39,9 @@ histories, and states what tests fix of likeness. No premise beyond what each th
   `Choosing.early_not_determined`). Tests that branch, with negation and conjunction, fix
   likeness for frames with finitely many outcomes of each move; that is
   `ExplanatoryBranching.same_iff_bisimilar` in the periphery, classical, joined to the core's
-  `Bisimulation` by `branching_bisimulation_iff` where the bridge section of P69 is taken.
+  `Bisimulation` by `branching_bisimulation_iff` where the bridge section of P69 is taken. In the
+  core they fix it constructively for frames with finitely many configurations whose steps and
+  claims are decided (`alike_iff_sameBranchingTests` of `Becoming.Likeness`).
 
 **Readings.** The AI's, pending Ren. Ren agreed (12 October 2026) that law and history are one
 unfolding read two ways, the law read off the unfolding rather than set over it
@@ -52,10 +54,11 @@ made: with branching, only tests that branch see it.
 
 What is not derived: whether an unfolding's histories stop (the core's runs are unending, which is
 where dead ends come from; with histories that stop there are none); that
-tests that branch fix likeness, in the core: it needs finitely many outcomes of each move, and its
-proof in the periphery reasons classically (whether a constructive proof exists for frames with
-finitely many configurations is open here; the direction from likeness to the tests, `Alike.same`,
-is in the bridge section); which family an actual unfolding is.
+tests that branch fix likeness, in the core, beyond frames with finitely many configurations whose
+steps and claims are decided, where `Becoming.Likeness` proves it constructively (the periphery's
+proof, for finitely many outcomes of each move, reasons classically; the direction from likeness to
+the periphery's tests, `Alike.same`, is in the bridge section); which family an actual unfolding
+is.
 -/
 
 namespace Becoming
