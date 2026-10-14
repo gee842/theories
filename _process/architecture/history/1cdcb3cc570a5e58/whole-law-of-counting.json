@@ -1,0 +1,947 @@
+{
+  "schema_version": 1,
+  "id": "whole-law-of-counting",
+  "title": {
+    "zh": "计数表是计数的全部规律：计数表恰是平衡加上跨一步不再成立的不多于步前所列的，每个计数表都由一个队列实现；在八个前提的每个选择之下，计数的规律恰是计数表，或者再加上没有关系项活跃的一步上没有生起，后者恰在选择包含平衡、体现，以及只有活跃者给予或只有活跃者取用与耗散时成立；每个前提都起约束时，八个前提之下计数的规律只多出有某个生起；每个选择之下所选前提都起约束时，至多再加三条：有关系项活跃、有某个生起、在有关系项活跃的一步上有生起，每条恰在何种选择之下多出已刻画；有限世界中除普查外每个前提都起约束时只多出有某个生起",
+    "en": "The tally is the whole law of counting: the tally is exactly the balance with no more ceasing across a step than were listed before it, and every tally is counted by a queue; under each selection of the eight premises the laws of counting are the tally, or the tally and that nothing arises across a step at which nothing is active, the latter exactly where balance and embodiment are selected with only active relata giving, or with only active relata taking and dissipation; where every premise binds, the laws of counting under the eight add only that something arises; where the premises of each selection bind, at most three more: something active, something arising, and something arising across a step at which something is active, each characterized by exactly the selections adding it; in finite worlds where every premise but the census binds, only that something arises"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "claim": {
+    "zh": "一个规定每步的成立者被不重复地列出（Listed）且可判定时，跨每一步保持一些成员：它们连同跨步不再成立的成员是步前的列表，连同跨步开始成立的成员是步后的列表（Listed.keeps；普查的平衡 Listed.across 由此推出）。称每步的数目 n、跨步不再成立的数目 c 与开始成立的数目 a 为计数表（Tally），若每步有某数 k 使 n t = k + c t 且 n (t+1) = k + a t；每个列出的计数都是计数表（Listed.tally）。计数表严格强于普查的平衡 n (t+1) + c t = n t + a t（Balance，Listed.across 的等式）：计数表恰是平衡加上跨一步不再成立的不多于步前所列的（Tally.balance、Tally.ceasing_le、tally_iff）；每步零个在列、一个不再成立、一个开始成立满足平衡而不是计数表（balance_not_tally）。反过来，每个计数表都由一个队列实现：自然数作为成员，第 t 步在队中的是从此前离开的总数起的 n t 个，从队尾加入、从队首离开，各依其次（Queue.holds、Queue.line）；它被不重复地列出（Queue.listed），每步列出 n t 个，跨步离开 c t 个、加入 a t 个（Queue.counts）。所以列出所能有的计数恰是计数表（Tally.congr、tally_iff_counted），对计数的一个性质（只要求尊重每步的值，Pointwise），在每个类型上每个列出的计数都满足它，恰当每个计数表都满足它（counting_laws）：计数没有计数表之外的规律。读于世界的活动：成员排队而什么都不流动的世界满足除体现外的全部前提（活动需要支持、平衡、只有活跃者给予、只有活跃者取用其所汲取的、耗散、普查、有界传递；World.queue_premised），成员排队且恰在活跃时立着的世界满足除平衡外的全部前提（World.embodiedQueue_premised）；所以对计数的一个性质在每个世界的每个普查中成立，恰当它对每个计数表成立，也恰当它在满足除体现外全部前提的每个世界中成立，也恰当它在满足除平衡外全部前提的每个世界中成立（World.counting_free）：缺平衡或缺体现的前提不约束计数。两者连同只有活跃者给予一起约束：在平衡、只有活跃者给予且生起者体现的世界中，生起者由一个在该步活跃的关系项给予（Web.Embodied.arises_given），所以普查之下，没有关系项活跃的一步上没有生起；而一个关系项从无到有地生起（Queue.lone_tally）是计数表，由两个队列世界实现，所以这不是计数的规律（World.counting_binds_jointly）。八个前提所加的只有这一条：开放的队列，队首给予每个加入者一个单位、从每个离开者取用一个单位，活跃时与每个地关系项各交换一个单位（World.openQueue），在没有成员加入空队的每个计数表之下满足全部八个前提（World.openQueue_premised；队首活跃的步上没有有限家族封闭，队空的步上什么都不交换，所以耗散从不起约束，活动需要支持与有界传递也不起约束，World.openQueue_not_binds）；所以对计数的一个性质在满足全部八个前提的每个世界的普查中成立，恰当它对每个没有关系项活跃的一步上没有生起的计数表成立（World.premised_counting）；这一刻画的范围包括前提空成立的世界：在每个前提都起约束的世界中，每个普查都计到某个生起（World.binds_arising），而这在八个前提之下不是计数的规律（World.binds_adds）。约束计数还有第二条路线，不要求给予者活跃：在平衡、只有活跃者取用其所汲取的、耗散且关系项都体现的世界中，普查之下没有关系项活跃的一步上没有生起，不论谁给予（World.taking_binds_counting）：那一步上什么都不被取用，被给予的立起而在步后活跃，所以步后活跃者是一个封闭的家族，耗散不许不取用而给予它。把八个前提命名（World.Premise、Premise.Holds），一个选择是到 Bool 的函数，世界满足它所选的每个前提（World.Meets）；称一个选择约束计数（World.BindsCounting），若它选中平衡与体现，并选中只有活跃者给予，或同时选中只有活跃者取用与耗散。由一个从不活跃的地关系项驱动的队列（OpenQueue.driven、World.drivenQueue）不论计数都满足除只有活跃者给予与只有活跃者取用外的全部前提（World.drivenQueue_holds），开放的队列不论计数都满足除只有活跃者给予与耗散外的全部前提（World.openQueue_holds）；连同两个队列世界，它们满足每个不约束计数的选择（World.queue_meets、World.embodiedQueue_meets、World.openQueue_meets、World.drivenQueue_meets），满足全部八个前提的世界满足每个选择（World.Premised.meets）。所以在八个前提的 256 个选择的每一个之下，对计数的一个逐点的性质在满足这个选择的每个世界的每个普查中成立，恰当它对每个计数表成立，且在选择约束计数时对每个没有关系项活跃的一步上没有生起的计数表成立（World.counting_under）；“没有关系项活跃的一步上没有生起”在一个选择之下是计数的规律，恰当这个选择约束计数（World.counting_binds_iff）。每个前提都起约束，即每个前提的条件都有实例时（World.Premise.Binds 是一个前提起约束，World.Binds 是每个前提都起约束），每个普查都计到某个生起（World.binds_arising），而起约束所加的只有这一条：只闭合一次的队列（OnceClosedQueue、World.onceClosedQueue）在除第 T 步外、步前或步后队列不空的每一步上，队首与每个关系项各交换一个单位，所以没有有限的家族封闭这些步；在第 T 步上队首多立着 E，只在队中交换并失去它，所以所立者下降，跨度封闭这一步而耗散起约束（World.onceClosedQueue_exceeds）；每个关系项以其所立的水平依存于每个关系项，所以活动需要支持与有界传递的条件在有成员加入处有实例；但这两个前提在这里对任何活动、任何流都成立（OnceClosedQueue.dependent_any_activity、OnceClosedQueue.transmits_any_flow），只在有实例的意义上起约束，排除什么的只有耗散。没有成员加入空队、E 多于第 T 步加入的数目时，它满足全部八个前提（World.onceClosedQueue_premised）；第 T 步队列不空、E 多于第 T 步加入的数目且某步有成员加入时，每个前提都起约束（World.onceClosedQueue_binds），不论有没有成员加入空队。所以在每个前提都起约束的世界中，八个前提之下对计数的一个逐点的性质在每个普查中成立，恰当它对每个有某个生起、且没有关系项活跃的一步上没有生起的计数表成立（World.binding_counting）。没有有限世界使每个前提都起约束（World.Finite.not_binds：普查起约束要求世界不有限）；去掉 hatch 闲置的地关系项，得到满足八个前提的有限世界，其中除普查外每个前提都起约束（World.finiteHatch_binds_but_census）。有限世界中除普查外每个前提都起约束时，八个前提之下对计数的一个逐点的性质在每个普查中成立，恰当它对每个没有关系项活跃的一步上没有生起、从第 0 步起有变化界、且有某个生起的计数表成立（World.finite_binding_counting）；见证是有限的队列把依存网饱和（Web.saturated、World.finiteQueue_saturated_binds）。每个选择 S 之下，对计数的一个逐点的性质在满足 S 且 S 所选的每个前提都起约束的每个世界的每个普查中成立，恰当它对每个这样的计数表成立：S 约束计数时没有关系项活跃的一步上没有生起；S 选中活动需要支持、只有活跃者给予或只有活跃者取用时有关系项活跃；S 选中体现时有某个生起；S 选中体现、只有活跃者给予与有界传递时在有关系项活跃的一步上有生起（World.binding_counting_under）。所以起约束所加的，恰是有关系项活跃（选中活动需要支持、只有活跃者给予、只有活跃者取用或体现时，World.binding_activity_iff）、有某个生起（选中体现时，World.binding_arising_iff）与在有关系项活跃的一步上有生起（选中体现，且选择约束计数或选中只有活跃者给予与有界传递时，World.binding_joint_iff）。见证：把依存网饱和，每个关系项以其所立的水平依存于每个关系项，活动需要支持就对任何活动成立，水平有界时有界传递对任何流成立（Web.saturated、World.Premised.saturated）；不选体现时，一个传递在队列旁把两个单位之一交给一个地关系项，失去另一个（World.relayQueue_binding）；选中体现而不选平衡时，有损的队列的队首跨一步与自身及每个加入者各交换一个单位，再失去一个单位，所立者不记录这些（World.lossyQueue_binding）；选中平衡与体现时，只闭合一次的队列（World.onceClosedQueue_binding）与饱和的开放队列（World.openQueue_saturated_binding）。被围住时计数还受一个变化界约束；有限世界中每个选择之下计数还有界，耗散连同平衡与体现就约束计数（counting-under-enclosure）。不用伦理前提，也不用 Lean 公理。",
+    "en": "Where the members of which a determination holds are listed at each step, each once (Listed), and the determination is decided, across each step some members are kept: with the members ceasing to be across it they are the list before the step, and with the members coming to be the list after it (Listed.keeps; the census balance Listed.across follows from it). Call counts n at each step, c ceasing and a coming across it a tally (Tally) when at each step some number k has n t = k + c t and n (t + 1) = k + a t; the counts of every listing are a tally (Listed.tally). The tally is strictly stronger than the census balance n (t + 1) + c t = n t + a t (Balance, the equation of Listed.across): it is exactly the balance with no more ceasing across a step than were listed before it (Tally.balance, Tally.ceasing_le, tally_iff), and none listed with one ceasing and one coming at every step balances and is no tally (balance_not_tally). Conversely every tally is counted by a queue: with natural numbers as members, at step t the queue holds n t members from the number that have left before, members joining at the back and leaving from the front, each in turn (Queue.holds, Queue.line); it is listed, each member once (Queue.listed), with n t listed at each step, c t leaving and a t joining across it (Queue.counts). So the counts some listing has are exactly the tallies (Tally.congr, tally_iff_counted), and a property of the counts, asked only to respect their values at each step (Pointwise), holds of the counts of every listing on every type exactly when it holds of every tally (counting_laws): counting has no law beyond the tally. Read of the activity of worlds: relata queuing with nothing flowing meet every premise but embodiment (activity needing support, balance, only active relata giving, only active relata taking what they draw on, dissipation, a census, bounded transmission; World.queue_premised), and relata queuing that stand exactly while active meet every premise but balance (World.embodiedQueue_premised); so a property of the counts holds of every census of every world exactly when it holds of every tally, and exactly when it holds in every world meeting every premise but embodiment, and exactly when it holds in every world meeting every premise but balance (World.counting_free): premises lacking balance or embodiment leave counting free. With only active relata giving, the two bind it together: in a world whose flow balances, in which only active relata give and whatever arises is embodied, what arises is given by a relatum active at the step (Web.Embodied.arises_given), so under a census nothing arises across a step at which nothing is active; one relatum arising from none (Queue.lone_tally) is a tally, counted by both queue worlds, so this is no law of counting (World.counting_binds_jointly). That is all the eight premises add: an open queue, whose front gives one unit to each relatum joining, takes one from each leaving and, while active, exchanges a unit each way with every ground relatum (World.openQueue), meets all eight premises under every tally in which nothing joins an empty queue (World.openQueue_premised; no finite family is closed at a step at which the front is active, and nothing is exchanged at a step at which the queue is empty, so dissipation never binds there, nor do activity needing support and bounded transmission, World.openQueue_not_binds); so a property of the counts holds of the census of every world meeting all eight exactly when it holds of every tally in which nothing arises across a step at which nothing is active (World.premised_counting); its range includes worlds in which premises hold vacuously: where every premise binds, every census counts something arising (World.binds_arising), which is no law of counting under the eight (World.binds_adds). A second route binds counting without asking the giver to be active: in a world whose flow balances and dissipates, in which only active relata take and only from what they draw on and every relatum is embodied, under a census nothing arises across a step at which nothing is active, whoever gives (World.taking_binds_counting): nothing is taken at that step, whatever is given comes to stand and is active after it, so the relata active after it form a closed family, to which dissipation lets nothing be given without taking. With the eight premises named (World.Premise, Premise.Holds), a selection is a function to Bool, and a world meets it when it meets every premise selected (World.Meets); a selection binds counting (World.BindsCounting) when it selects balance and embodiment, and either only active relata giving or both only active relata taking and dissipation. Whatever its counts, a queue driven by a ground relatum never active (OpenQueue.driven, World.drivenQueue) meets every premise but only active relata giving and taking (World.drivenQueue_holds), and the open queue every premise but only active relata giving and dissipation (World.openQueue_holds); with the two queue worlds they meet every selection that does not bind counting (World.queue_meets, World.embodiedQueue_meets, World.openQueue_meets, World.drivenQueue_meets), and a world meeting all eight meets every selection (World.Premised.meets). So under each of the 256 selections of the eight premises, a pointwise property of the counts holds of every census of every world meeting the selection exactly when it holds of every tally and, where the selection binds counting, of every tally in which nothing arises across a step at which nothing is active (World.counting_under); that nothing arises across a step at which nothing is active is a law of counting under a selection exactly when the selection binds counting (World.counting_binds_iff). Where every premise binds, each premise's condition having an instance (World.Premise.Binds for one premise, World.Binds for every premise), every census counts something arising (World.binds_arising), and that is all binding adds. Across every step but T at which a queue closed once (OnceClosedQueue, World.onceClosedQueue) is not empty before or after, its front exchanges one unit each way with every relatum, so no finite family closes those steps; at T the front stands E more, exchanges only within the queue and loses that excess, so what stands falls, the span closes the step and dissipation binds (World.onceClosedQueue_exceeds); every relatum depends on every relatum at what it stands at, so the conditions of activity needing support and bounded transmission have instances wherever a member joins; but there these two premises hold whatever is active and whatever flows (OnceClosedQueue.dependent_any_activity, OnceClosedQueue.transmits_any_flow), binding only as instances, and only dissipation excludes anything. With nothing joining an empty queue and E more than join across T it meets all eight premises (World.onceClosedQueue_premised); with the queue not empty at T, E more than join across T and something joining across some step, every premise binds (World.onceClosedQueue_binds), whether or not something joins an empty queue. So in worlds in which every premise binds, a pointwise property of the counts holds under the eight of every census exactly when it holds of every tally with something arising and nothing arising across a step at which nothing is active (World.binding_counting). No finite world binds every premise (World.Finite.not_binds: a census binds only where the world is not finite); without the idle ground of hatch there is a finite world meeting the eight in which every premise but the census binds (World.finiteHatch_binds_but_census). In finite worlds where every premise but the census binds, a pointwise property of the counts holds under the eight of every census exactly when it holds of every tally with nothing arising across a step at which nothing is active, a change bound from the first step and something arising (World.finite_binding_counting), the finite queue with its web saturated witnessing it (Web.saturated, World.finiteQueue_saturated_binds). Under each selection S, a pointwise property of the counts holds of every census of every world meeting S in which each premise S selects binds exactly when it holds of every tally in which nothing arises across a step at which nothing is active where S binds counting, something is active where S selects activity needing support, only active relata giving or only active relata taking, something arises where S selects embodiment, and something arises across a step at which something is active where S selects embodiment, only active relata giving and bounded transmission (World.binding_counting_under). So binding adds exactly that something is active (where activity needing support, only active relata giving, only active relata taking or embodiment is selected, World.binding_activity_iff), that something arises (where embodiment is, World.binding_arising_iff), and that something arises across a step at which something is active (where embodiment is selected and the selection binds counting or selects only active relata giving and bounded transmission, World.binding_joint_iff). The witnesses: a saturated web, every relatum depending on every relatum at what it stands at, under which activity needing support holds whatever is active and, with levels bounded, bounded transmission whatever flows (Web.saturated, World.Premised.saturated); without embodiment, a relay beside a queue handing one of two units on to a ground relatum and losing the other (World.relayQueue_binding); with embodiment but not balance, a lossy queue whose front, across one step, exchanges a unit each way with itself and each member joining and loses one unit more, which no standing records (World.lossyQueue_binding); with balance and embodiment, the queue closed once (World.onceClosedQueue_binding) and the open queue with its web saturated (World.openQueue_saturated_binding). Under enclosure change is also bounded; in finite worlds under each selection the count is bounded too, and dissipation with balance and embodiment binds counting (counting-under-enclosure). No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "列出与可判定：同 census-balance；读于世界时是活动可判定。这是表示的逻辑承诺。",
+      "en": "Listing and decidability: as in census-balance; read of worlds, decided activity. It is a logical commitment of the representation."
+    },
+    {
+      "zh": "逐点（Pointwise）：性质尊重计数每步的值。有函数外延性时每个性质都如此；纯净核心不假设它，所以作为定理的假设陈述；不用它的刻画是 tally_iff_counted。",
+      "en": "Pointwise: the property respects the counts' values at each step. With function extensionality every property does; the pure core does not assume it, so it is a hypothesis of the theorems; tally_iff_counted states the characterization without it."
+    }
+  ],
+  "correspondence": {
+    "zh": "完整的陈述（P23）说，整体的规律除了表示本身所排除的，不排除任何展开。对计数，本结果使这一点精确：计数的规律不排除任何计数表，所以从计数本身推不出关于展开的任何更多的东西。开放纲领中的“对整个空间成立的规律的完整清单”在计数的部分由此给出。前提的地图（map-of-premises）表明八个前提彼此独立；本结果说明它们中的哪些约束计数、约束什么：在 256 个选择的每一个之下计数的规律只有两种，缺平衡或缺体现的任何一组都不约束，两者连同只有活跃者给予，或连同只有活跃者取用与耗散，约束同一条，而全部八个所加的也只有这一条，即使每个都起约束，也只多出有某个生起，这一条来自体现起约束的条件本身；更多的约束来自被围住：静止定理（ceasing-needs-arising、continued-change-needs-openness）在被围住之下使计数归于静止，被围住时计数的全部规律再加一个变化界（counting-under-enclosure）。作者的读法（AI 论证）：在场者的数目只记录进入与离开相抵；展开怎样改变这些数目，来自给予与取用的关系，即平衡与体现一起所说的：生起需要一个在场的给予者；或者，在只有活跃者取用与耗散之下，一个封闭的关系不能不取用而给予，生起需要从在场者那里取得。这是活动的计数，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠；若取不重叠，这一读法就不是其所指，这是 AI 的推论）；它也不评价生起或止息。",
+    "en": "The full statement (P23) says that the laws of the whole exclude no unfolding beyond what the representation itself excludes. For counting this result makes it precise: the laws of counting exclude no tally, so nothing more about an unfolding follows from counting alone. The open programme's ‘complete list of the laws holding of the whole space’ is thereby given for counting. The map of premises (map-of-premises) shows the eight premises independent; this result says which of them constrain counting, and how: under each of the 256 selections the laws of counting are of two kinds; no set lacking balance or embodiment constrains it, the two with only active relata giving, or with only active relata taking and dissipation, add the same law, and all eight add nothing more, and with each of them binding only that something arises, which comes from the condition of embodiment binding by itself; further constraint comes from enclosure: under it the rest theorem (ceasing-needs-arising, continued-change-needs-openness) brings counting to rest, and the whole law of counting under enclosure adds a change bound (counting-under-enclosure). The author's reading (an AI argument): the number present records only that entering and leaving balance; how an unfolding changes these numbers comes from the relations of giving and taking, which is what balance and embodiment say together: arising needs a giver present; or, with only active relata taking and dissipation, a closed relation cannot give without taking, and arising needs a taking from what is present. This is the counting of activity, whose English names arising and ceasing Ren confirmed (2026-10-09-arising-ceasing-names; the Chinese 生起／止息 being the AI's rendering); whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap; if non-overlap is taken, this reading is not what is meant, the AI's inference); it evaluates neither arising nor ceasing."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+  "aliases": [
+    "Becoming.Tally",
+    "Becoming.Listed.keeps",
+    "Becoming.Listed.tally",
+    "Becoming.Queue.counts",
+    "Becoming.counting_laws",
+    "Becoming.Pointwise",
+    "Becoming.World.counting_free",
+    "Becoming.World.counting_binds_jointly",
+    "Becoming.World.queue",
+    "Becoming.World.embodiedQueue",
+    "Becoming.World.openQueue",
+    "Becoming.World.premised_counting",
+    "Becoming.Balance",
+    "Becoming.tally_iff",
+    "Becoming.balance_not_tally",
+    "Becoming.tally_iff_counted",
+    "Becoming.World.openQueue_not_binds",
+    "Becoming.World.binds_arising",
+    "Becoming.World.binds_adds",
+    "Becoming.World.taking_binds_counting",
+    "Becoming.World.Premise",
+    "Becoming.World.Meets",
+    "Becoming.World.BindsCounting",
+    "Becoming.World.drivenQueue",
+    "Becoming.World.counting_under",
+    "Becoming.World.counting_binds_iff",
+    "Becoming.World.binding_counting",
+    "Becoming.World.onceClosedQueue",
+    "Becoming.World.Premise.Binds",
+    "Becoming.World.binding_counting_under",
+    "Becoming.World.binding_activity_iff",
+    "Becoming.World.binding_arising_iff",
+    "Becoming.World.binding_joint_iff",
+    "Becoming.World.finite_binding_counting",
+    "Becoming.Web.saturated",
+    "Becoming.World.lossyQueue",
+    "Becoming.World.relayQueue"
+  ],
+  "dependencies": [
+    {
+      "id": "census-balance",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用列出（Listed）、普查（Web.Census）与平衡的证明：跨步保持的成员在两张列表上计数相同（marks_le_of_sub），平衡 Listed.across 现由 Listed.keeps 推出。",
+        "en": "Reuses listing (Listed), the census (Web.Census) and the proof of the balance: the members kept are counted alike on both lists (marks_le_of_sub); the balance Listed.across now follows from Listed.keeps."
+      },
+      "interface": {
+        "output": {
+          "zh": "每个列出的计数满足平衡。",
+          "en": "The counts of every listing balance."
+        },
+        "input": {
+          "zh": "满足平衡（保持的形式）的每组计数都被某个列出实现。",
+          "en": "Every set of counts in balance, in the kept form, is realized by some listing."
+        },
+        "conditions": {
+          "zh": "列出；可判定；逐点。",
+          "en": "Listing; decidability; pointwise."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean"
+      }
+    },
+    {
+      "id": "coming-and-ceasing-keep-pace",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用计数（comings、ceasings、mark、mark_iff、mark_pos、mark_le_one）、开始与不再成立（ComesToBe、CeasesToBe）与步段（steps_last、steps_mem）。",
+        "en": "Reuses the counts (comings, ceasings, mark, mark_iff, mark_pos, mark_le_one), coming and ceasing to be (ComesToBe, CeasesToBe) and stretches (steps_last, steps_mem)."
+      },
+      "interface": {
+        "output": {
+          "zh": "开始成立与不再成立的计数。",
+          "en": "Counts of coming and ceasing to be."
+        },
+        "input": {
+          "zh": "队列上的计数。",
+          "en": "The counts of a queue."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean"
+      }
+    },
+    {
+      "id": "map-of-premises",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用八个前提、普查与有界传递（World.Counted、World.Transmitting）以及什么都不流动时前提空成立（World.still_vacuous）。",
+        "en": "Reuses the eight premises, a census and bounded transmission (World.Counted, World.Transmitting), and the premises holding vacuously where nothing flows (World.still_vacuous)."
+      },
+      "interface": {
+        "output": {
+          "zh": "八个前提彼此独立。",
+          "en": "The eight premises are independent."
+        },
+        "input": {
+          "zh": "哪些前提约束计数。",
+          "en": "Which premises constrain counting."
+        },
+        "conditions": {
+          "zh": "活动可判定。",
+          "en": "Decided activity."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean"
+      }
+    },
+    {
+      "id": "life-as-condition-of-life",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用体现（Web.Embodied）与经由另一个活跃者的给予而生起（Web.Embodied.arises_given）。",
+        "en": "Reuses embodiment (Web.Embodied) and arising through another active relatum's giving (Web.Embodied.arises_given)."
+      },
+      "interface": {
+        "output": {
+          "zh": "平衡且只有活跃者给予时，体现的生起者由一个活跃的关系项给予。",
+          "en": "With balance and only active relata giving, an embodied relatum arising is given by an active relatum."
+        },
+        "input": {
+          "zh": "没有关系项活跃的一步上没有生起。",
+          "en": "Nothing arises across a step at which nothing is active."
+        },
+        "conditions": {
+          "zh": "平衡；只有活跃者给予；生起者体现；普查。",
+          "en": "Balance; only active relata giving; whatever arises embodied; a census."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean"
+      }
+    },
+    {
+      "id": "no-finite-part-bears-taking",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用封闭与耗散（Flow.ClosedAt、Flow.DissipatesOn、Flow.Dissipative）。",
+        "en": "Reuses closure and dissipation (Flow.ClosedAt, Flow.DissipatesOn, Flow.Dissipative)."
+      },
+      "interface": {
+        "output": {
+          "zh": "耗散只约束有封闭的有限家族的步。",
+          "en": "Dissipation binds only at steps with a closed finite family."
+        },
+        "input": {
+          "zh": "队首活跃时与每个地关系项交换，没有有限家族封闭，耗散空成立；队空时什么都不交换。",
+          "en": "With the front active exchanging with every ground relatum no finite family is closed and dissipation holds vacuously; with the queue empty nothing is exchanged."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean"
+      }
+    },
+    {
+      "id": "space-and-its-parts",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用世界（World）、什么都不流动的流（Flow.still）与世界的前提。",
+        "en": "Reuses worlds (World), the still flow (Flow.still) and the premises of worlds."
+      },
+      "interface": {
+        "output": {
+          "zh": "世界与其前提。",
+          "en": "Worlds and their premises."
+        },
+        "input": {
+          "zh": "队列世界。",
+          "en": "Queue worlds."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean"
+      }
+    },
+    {
+      "id": "laws-of-one-step",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "证明改经一步的规律：取用对计数的约束（World.taking_binds_counting）。",
+        "en": "The proofs now go through the laws of one step: binding of counting by taking (World.taking_binds_counting)."
+      },
+      "interface": {
+        "output": {
+          "zh": "跨过没有从平衡的家族取用的一步，家族上的耗散排除成员上升。",
+          "en": "Across a step at which nothing is taken from a balanced family, dissipation on the family excludes a member rising."
+        },
+        "input": {
+          "zh": "没有关系项活跃的一步上没有什么被取用，所以没有生起。",
+          "en": "Nothing is taken across a step at which nothing is active, so nothing arises."
+        },
+        "conditions": {
+          "zh": "平衡；只有活跃者取用；耗散；体现。",
+          "en": "Balance; only active relata taking; dissipation; embodiment."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "zh": "计划 P34：对计数给出整体规律的完整清单；这不是无公理的整体演绎。",
+        "en": "Plan P34: the complete list of the whole's laws, for counting; this is not the deduction of the whole without axioms."
+      }
+    },
+    {
+      "id": "ceasing-needs-arising",
+      "detail": {
+        "zh": "静止定理是平衡、耗散、体现与被围住一起对计数的约束。",
+        "en": "The rest theorem is a constraint on counting by balance, dissipation, embodiment and enclosure together."
+      }
+    },
+    {
+      "id": "counting-under-enclosure",
+      "detail": {
+        "zh": "被围住时与有限世界中计数的规律：计数表、没有关系项活跃的一步上没有生起，再加一个变化界。",
+        "en": "The laws of counting under enclosure and in finite worlds: the tally and nothing arising across a step at which nothing is active, with a change bound."
+      }
+    },
+    {
+      "id": "counting-standing-and-dependence",
+      "detail": {
+        "zh": "同一个展开中所立者与依存的计数规律：不被围住时所立者的规律就是活动的，依存的计数不受前提约束。",
+        "en": "The laws of counting what stands and what depends in the same unfolding: where nothing is enclosed those of what stands are those of activity, and the counts of dependence are not bound by the premises."
+      }
+    },
+    {
+      "id": "counts-exist-where-decided",
+      "detail": {
+        "zh": "以标记计数恰是已定之处的计数：计数存在恰当所计数者已定，判定程序的标记之和就是计数。",
+        "en": "Counting by marks is counting where decided: a count exists exactly where what it counts is decided, and a decision procedure's marks sum to the count."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "detail": {
+        "zh": "Queue.lone_tally 与 World.queue、World.embodiedQueue：一个关系项从无到有地生起，满足除体现外或除平衡外的全部前提，所以“没有关系项活跃的一步上没有生起”不是计数的规律，只在平衡与体现一起之下成立。",
+        "en": "Queue.lone_tally with World.queue and World.embodiedQueue: one relatum arising from none, meeting every premise but embodiment or every premise but balance, so ‘nothing arises across a step at which nothing is active’ is no law of counting and holds only under balance and embodiment together."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "detail": {
+        "zh": "balance_not_tally：每步零个在列、一个不再成立、一个开始成立满足平衡而不是计数表，没有列出有这样的计数；所以全部规律是计数表，不是平衡的等式。",
+        "en": "balance_not_tally: none listed, with one ceasing and one coming at every step, balances and is no tally, and no listing has these counts; so the whole law is the tally, not the balance equation."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "detail": {
+        "zh": "World.openQueue_not_binds 与 World.binds_adds：premised_counting 的见证中耗散、活动需要支持与有界传递空成立；只取每个前提都起约束的世界，每个普查都计到某个生起，这在八个前提之下不是规律。",
+        "en": "World.openQueue_not_binds and World.binds_adds: in the witness of premised_counting dissipation, activity needing support and bounded transmission hold vacuously; restricted to worlds in which every premise binds, every census counts an arising, which is no law under the eight."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "detail": {
+        "zh": "World.drivenQueue 与 World.openQueue_holds：选中平衡、体现与耗散，而只有活跃者给予与只有活跃者取用都不选时，由不活跃的地关系项驱动的队列实现每个计数表；选中平衡、体现与只有活跃者取用，而只有活跃者给予与耗散都不选时，开放的队列实现每个计数表。所以第二条路线的取用与耗散缺一不可。",
+        "en": "World.drivenQueue and World.openQueue_holds: with balance, embodiment and dissipation selected but neither only active relata giving nor only active relata taking, the queue driven by an inactive ground relatum counts every tally; with balance, embodiment and only active relata taking selected but neither only active relata giving nor dissipation, the open queue counts every tally. So the second route needs both taking and dissipation."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "detail": {
+        "zh": "World.binding_counting：只闭合一次的队列满足全部八个前提且每个都起约束，实现每个有某个生起、且没有关系项活跃的一步上没有生起的计数表；所以三个前提在开放的队列中空成立（World.openQueue_not_binds）并没有藏起更多的计数规律。起约束只是条件有实例：这个队列中活动需要支持与有界传递对任何活动、任何流都成立（OnceClosedQueue.dependent_any_activity、OnceClosedQueue.transmits_any_flow）。",
+        "en": "World.binding_counting: queues closed once meet all eight premises with each binding and count every tally with something arising and nothing arising across a step at which nothing is active; so the three premises holding vacuously in the open queue (World.openQueue_not_binds) hide no further law of counting. Binding is only an instance of each condition: in this queue activity needing support and bounded transmission hold whatever is active and whatever flows (OnceClosedQueue.dependent_any_activity, OnceClosedQueue.transmits_any_flow)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "detail": {
+        "zh": "World.Finite.not_binds 与 World.finiteHatch_binds_but_census：没有有限世界使每个前提都起约束；去掉闲置的地关系项的 hatch 是有限世界，满足八个前提，除普查外每个前提都起约束。所以 binding_counting 只涉及不有限的世界；有限世界中除普查外每个前提都起约束时的规律由 World.finite_binding_counting 给出。",
+        "en": "World.Finite.not_binds and World.finiteHatch_binds_but_census: no finite world binds every premise; hatch without its idle ground is a finite world meeting the eight in which every premise but the census binds. So binding_counting concerns worlds that are not finite; the laws in finite worlds where every premise but the census binds are given by World.finite_binding_counting."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "detail": {
+        "zh": "World.binding_activity_iff、World.binding_arising_iff 与 World.binding_joint_iff：没有选中活动需要支持、只有活跃者给予、只有活跃者取用与体现时，什么都不发生的计数表由一个所选前提都起约束的世界（传递）实现；不选体现时，每步一个关系项、没有生起与止息的计数表如此；选中体现而选择既不约束计数、也不同时选中只有活跃者给予与有界传递时，一个关系项在第一步从无到有地生起并留下（Queue.lone），生起之步上没有关系项活跃。所以起约束所加的三条各自只在所说的选择之下是规律。",
+        "en": "World.binding_activity_iff, World.binding_arising_iff and World.binding_joint_iff: where none of activity needing support, only active relata giving, only active relata taking and embodiment is selected, the tally in which nothing happens is counted by a world (a relay) in which each selected premise binds; without embodiment, so is the tally with one relatum at every step and nothing arising or ceasing; with embodiment but a selection neither binding counting nor selecting both only active relata giving and bounded transmission, one relatum arises from none across the first step and stays (Queue.lone), nothing being active at the step it arises. So each of the three laws binding adds is a law only under the selections named."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只对离散步与每步有限的成立者陈述；要求可判定（逻辑承诺）与逐点（代替函数外延性）；只说计数，不说哪个成员进入或离开，也不说关系；队列世界的关系项无限多，每个只生起一次；有限世界中与被围住时计数的规律见 counting-under-enclosure；读于世界只陈述了活动的计数，水平与依存的计数由一般的 counting_laws 给出，前提之下的规律见 counting-standing-and-dependence；全部八个前提之下与每个选择之下计数的规律已给出；选择之下的见证都有无限多个关系项，有限世界中每个选择之下的规律见 counting-under-enclosure；其范围包括前提空成立的世界：开放的队列中耗散、活动需要支持与有界传递都空成立（World.openQueue_not_binds），每个前提都起约束时计数的全部规律已给出，只多出有某个生起（World.binding_counting），每个选择之下所选前提都起约束时的规律（World.binding_counting_under）与有限世界中除普查外每个前提都起约束时的规律（World.finite_binding_counting）也已给出，前者的见证有无限多个关系项，有限世界中每个选择之下所选前提都起约束时的规律见 counting-under-enclosure（World.finite_binding_counting_under）；起约束是条件有实例：在只闭合一次的队列中活动需要支持与有界传递对任何活动、任何流都成立，排除表示所允许者的更强的起约束读法之下的规律没有陈述，这一读法由 Ren 选择；只闭合一次的队列与其他见证的依存网是饱和的，即最弱的（每个关系项以其所立的水平依存于每个关系项，Web.saturated），有损的队列不平衡，传递不体现，它们只用作见证；不评价生起或止息；名称（Tally、Queue、Pointwise、CountsObey、openQueue、drivenQueue、onceClosedQueue、Premise、Meets、BindsCounting、saturated、lossyQueue、relayQueue 等）是 AI 按 Ren 10 月 10 日的命名标准所选（零公理部分用描述抽象动力学的形式词，社会与金融词汇不作首选），读法仍由 Ren 选择。",
+    "en": "Stated for discrete steps and holders finitely many at each step; needs decidability (a logical commitment) and pointwise properties (in place of function extensionality); speaks only of counts, saying neither which member enters or leaves nor anything of relations; the queue worlds have infinitely many relata, each arising once; the laws of counting in finite worlds and under enclosure are in counting-under-enclosure; read of worlds only the counting of activity is stated, the counts of standing and dependence being covered by the general counting_laws, and their laws under the premises being in counting-standing-and-dependence; the laws of counting under all eight premises and under each selection of them are given; the witnesses under the selections all have infinitely many relata, the laws under each selection in finite worlds being in counting-under-enclosure; the range includes worlds in which premises hold vacuously: in the open queue dissipation, activity needing support and bounded transmission all hold vacuously (World.openQueue_not_binds), and the whole law of counting where every premise binds is given, adding only that something arises (World.binding_counting), and the laws where the premises of each selection bind (World.binding_counting_under) and in finite worlds where every premise but the census binds (World.finite_binding_counting) are given as well, the witnesses of the former having infinitely many relata, and the laws in finite worlds where the premises of each selection bind are in counting-under-enclosure (World.finite_binding_counting_under); binding is an instance of each condition: in the queue closed once activity needing support and bounded transmission hold whatever is active and whatever flows, and the laws under a stronger reading of binding, in which each premise excludes something the representation allows, are not stated, that reading being Ren's to choose; the webs of the queue closed once and the other witnesses are saturated, the weakest (every relatum depending on every relatum at what it stands at, Web.saturated), the lossy queue is unbalanced and the relay not embodied, and they serve only as witnesses; evaluates neither arising nor ceasing; the names (Tally, Queue, Pointwise, CountsObey, openQueue, drivenQueue, onceClosedQueue, Premise, Meets, BindsCounting, saturated, lossyQueue, relayQueue and others) are the AI's choice under Ren's naming criteria of 10 October (in the zero-axiom part, formal words describing the abstract dynamics, social and financial words not the first choice), and readings remain Ren's."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Population 的 130 项定理（含 Listed.keeps、Listed.tally、Queue.counts 与 counting_laws）、Becoming.Premises 的 61 项定理、Becoming.Openness 的 85 项定理与 Becoming.Counting 的 212 项定理（含 World.queue_premised、World.embodiedQueue_premised、World.counting_free、World.counting_binds_jointly、World.openQueue_premised、World.premised_counting、World.taking_binds_counting、World.counting_under、World.counting_binds_iff、World.onceClosedQueue_premised、World.onceClosedQueue_binds、World.binding_counting、World.binding_counting_under、World.binding_activity_iff、World.binding_arising_iff、World.binding_joint_iff 与 World.finite_binding_counting）全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。作者反审见整合文档 §46、§52、§55 与 §60，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。Becoming.Locality 的 44 项定理亦空依赖（P48）。本记录的局部规律（P50）在同一回执中，公理报告为空。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 130 theorems of Becoming.Population (including Listed.keeps, Listed.tally, Queue.counts and counting_laws), the 61 theorems of Becoming.Premises, the 85 theorems of Becoming.Openness and the 212 theorems of Becoming.Counting (including World.queue_premised, World.embodiedQueue_premised, World.counting_free, World.counting_binds_jointly, World.openQueue_premised, World.premised_counting, World.taking_binds_counting, World.counting_under, World.counting_binds_iff, World.onceClosedQueue_premised, World.onceClosedQueue_binds, World.binding_counting, World.binding_counting_under, World.binding_activity_iff, World.binding_arising_iff, World.binding_joint_iff and World.finite_binding_counting) all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The author's counterreview is in §46, §52, §55 and §60 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The 44 theorems of Becoming.Locality (P48) also have empty axiom reports. This record's local laws (P50) are in the same receipt, with empty axiom reports. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "role": "proof",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "declarations": [
+        "Becoming.Listed",
+        "Becoming.Listed.keeps",
+        "Becoming.Listed.across",
+        "Becoming.Tally",
+        "Becoming.Listed.tally",
+        "Becoming.steps_length",
+        "Becoming.steps_within",
+        "Becoming.steps_of_within",
+        "Becoming.steps_distinct",
+        "Becoming.steps_below_all",
+        "Becoming.steps_below",
+        "Becoming.steps_above_none",
+        "Becoming.steps_above",
+        "Becoming.Queue.gone",
+        "Becoming.Queue.holds",
+        "Becoming.Queue.line",
+        "Becoming.Queue.gone_succ",
+        "Becoming.Queue.listed",
+        "Becoming.Queue.kept_end",
+        "Becoming.Queue.ceasings_eq",
+        "Becoming.Queue.comings_eq",
+        "Becoming.Queue.counts",
+        "Becoming.Pointwise",
+        "Becoming.counting_laws",
+        "Becoming.mark_turn",
+        "Becoming.mark_add_not",
+        "Becoming.Web.Census",
+        "Becoming.marks_le_of_sub",
+        "Becoming.mark_one",
+        "Becoming.mark_zero",
+        "Becoming.total_congr_on",
+        "Becoming.Distinct",
+        "Becoming.Balance",
+        "Becoming.Tally.balance",
+        "Becoming.Tally.ceasing_le",
+        "Becoming.tally_iff",
+        "Becoming.balance_not_tally",
+        "Becoming.Tally.congr",
+        "Becoming.tally_iff_counted",
+        "Becoming.Listed.keeps_at"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "role": "proof",
+      "sha256": "d4f748607ac4590ced2090618040d65bf7ac6a18ce41979d1febf045f4e88816",
+      "declarations": [
+        "Becoming.World.Counted",
+        "Becoming.World.Transmitting",
+        "Becoming.World.still_vacuous",
+        "Becoming.World.Premised",
+        "Becoming.World.Premised.of",
+        "Becoming.beyond",
+        "Becoming.beyond_not_mem",
+        "Becoming.gives_nothing",
+        "Becoming.World.Binds",
+        "Becoming.World.Premise.Binds",
+        "Becoming.World.Premise",
+        "Becoming.World.Premise.Holds",
+        "Becoming.World.Meets",
+        "Becoming.World.Premised.meets",
+        "Becoming.World.Finite.not_binds",
+        "Becoming.World.finiteHatch",
+        "Becoming.World.finiteHatch_binds_but_census"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "role": "proof",
+      "sha256": "6b58869f4b6746ab157ef646eb45f7dca6584a7c3f88321156a7a3efb032c74d",
+      "declarations": [
+        "Becoming.World.standingCensus"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "role": "proof",
+      "sha256": "e11b4316e549c83be2fb9b1b97c4c486d6ebbcdf2e277bb1dfd453a187b7a1d8",
+      "declarations": [
+        "Becoming.World.CountsObey",
+        "Becoming.Queue.web",
+        "Becoming.Queue.embodied",
+        "Becoming.Queue.lone",
+        "Becoming.Queue.joins",
+        "Becoming.Queue.lone_tally",
+        "Becoming.World.queue",
+        "Becoming.World.embodiedQueue",
+        "Becoming.World.queue_premised",
+        "Becoming.World.embodiedQueue_premised",
+        "Becoming.World.counting_free",
+        "Becoming.World.counting_binds_jointly",
+        "Becoming.OpenQueue.Relatum",
+        "Becoming.OpenQueue.web",
+        "Becoming.OpenQueue.flow",
+        "Becoming.OpenQueue.index",
+        "Becoming.OpenQueue.outside",
+        "Becoming.OpenQueue.member_inj",
+        "Becoming.OpenQueue.ground_not_member",
+        "Becoming.OpenQueue.front",
+        "Becoming.OpenQueue.occupied",
+        "Becoming.OpenQueue.joined",
+        "Becoming.World.openQueue",
+        "Becoming.World.openQueue_census",
+        "Becoming.World.openQueue_counts",
+        "Becoming.World.openQueue_premised",
+        "Becoming.World.premised_counting",
+        "Becoming.World.openQueue_not_binds",
+        "Becoming.World.binds_arising",
+        "Becoming.World.binds_adds",
+        "Becoming.World.openQueue_holds",
+        "Becoming.OpenQueue.driven",
+        "Becoming.World.drivenQueue",
+        "Becoming.World.drivenQueue_holds",
+        "Becoming.World.taking_binds_counting",
+        "Becoming.World.BindsCounting",
+        "Becoming.World.queue_meets",
+        "Becoming.World.embodiedQueue_meets",
+        "Becoming.World.openQueue_meets",
+        "Becoming.World.drivenQueue_meets",
+        "Becoming.World.counting_under",
+        "Becoming.World.counting_binds_iff",
+        "Becoming.EnclosedQueue.place_le",
+        "Becoming.EnclosedQueue.total_place_le",
+        "Becoming.EnclosedQueue.total_place_pos",
+        "Becoming.OnceClosedQueue.excess",
+        "Becoming.OnceClosedQueue.level",
+        "Becoming.OnceClosedQueue.exchange",
+        "Becoming.OnceClosedQueue.web",
+        "Becoming.OnceClosedQueue.flow",
+        "Becoming.OnceClosedQueue.excess_le",
+        "Becoming.OnceClosedQueue.level_le",
+        "Becoming.OnceClosedQueue.still_flows",
+        "Becoming.OnceClosedQueue.still",
+        "Becoming.OnceClosedQueue.idle",
+        "Becoming.OnceClosedQueue.busy",
+        "Becoming.OnceClosedQueue.moving_within",
+        "Becoming.OnceClosedQueue.closed",
+        "Becoming.OnceClosedQueue.dependent_any_activity",
+        "Becoming.OnceClosedQueue.transmits_any_flow",
+        "Becoming.OnceClosedQueue.not_closed",
+        "Becoming.World.onceClosedQueue",
+        "Becoming.World.onceClosedQueue_census",
+        "Becoming.World.onceClosedQueue_embodied",
+        "Becoming.World.onceClosedQueue_balanced",
+        "Becoming.World.onceClosedQueue_acting",
+        "Becoming.World.onceClosedQueue_taking",
+        "Becoming.World.onceClosedQueue_exceeds",
+        "Becoming.World.onceClosedQueue_dissipative",
+        "Becoming.World.onceClosedQueue_premised",
+        "Becoming.World.onceClosedQueue_binds",
+        "Becoming.World.binding_counting",
+        "Becoming.EnclosedQueue.place",
+        "Becoming.EnclosedQueue.span",
+        "Becoming.EnclosedQueue.within_span",
+        "Becoming.EnclosedQueue.empty_stays",
+        "Becoming.Web.saturated",
+        "Becoming.Web.saturated_dependent",
+        "Becoming.Flow.transmits_saturated",
+        "Becoming.Tally.after_pos",
+        "Becoming.World.saturated",
+        "Becoming.World.Premised.saturated",
+        "Becoming.World.counts_active",
+        "Becoming.World.counts_arising",
+        "Becoming.OpenQueue.level_le",
+        "Becoming.LossyQueue.exchanged",
+        "Becoming.LossyQueue.lost",
+        "Becoming.LossyQueue.flow",
+        "Becoming.LossyQueue.moving",
+        "Becoming.World.lossyQueue",
+        "Becoming.World.lossyQueue_dissipative",
+        "Becoming.World.lossyQueue_taking",
+        "Becoming.World.lossyQueue_acting",
+        "Becoming.World.lossyQueue_binds",
+        "Becoming.World.lossyQueue_binding",
+        "Becoming.RelayQueue.level",
+        "Becoming.RelayQueue.flow",
+        "Becoming.RelayQueue.up_to",
+        "Becoming.RelayQueue.after",
+        "Becoming.World.relayQueue",
+        "Becoming.World.relayQueue_balanced",
+        "Becoming.World.relayQueue_dissipative",
+        "Becoming.World.relayQueue_acts",
+        "Becoming.World.relayQueue_binds",
+        "Becoming.World.relayQueue_binding",
+        "Becoming.World.onceClosedQueue_binding",
+        "Becoming.World.openQueue_saturated_binding",
+        "Becoming.World.binding_counting_under",
+        "Becoming.World.binding_activity_iff",
+        "Becoming.World.binding_arising_iff",
+        "Becoming.World.binding_joint_iff",
+        "Becoming.EnclosedQueue.level_le",
+        "Becoming.World.finiteQueue_saturated_binds",
+        "Becoming.World.finite_binding_counting"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "role": "proof",
+      "sha256": "3abd887dc3955de148e3c81a2bccb4f90fc46accf3c0a0be57b586512737838d",
+      "declarations": [
+        "Becoming.World",
+        "Becoming.Flow.still",
+        "Becoming.World.Dependent",
+        "Becoming.World.Balanced",
+        "Becoming.World.Acting",
+        "Becoming.World.Taking",
+        "Becoming.World.Dissipative",
+        "Becoming.World.Embodied",
+        "Becoming.World.ArisingEmbodied",
+        "Becoming.World.Embodied.arising"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "role": "proof",
+      "sha256": "e0a766eb2e0f7ec22acab4644b2ff1dded83065f107b7c41f8b6a583dd9d3efc",
+      "declarations": [
+        "Becoming.Web.Embodied",
+        "Becoming.Web.Embodied.arises_given"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "sha256": "c68bb811abba13aed0bc8739b5fc2a3f670a9726d64908eaa055bf2a1444480f",
+      "declarations": [
+        "Becoming.mark",
+        "Becoming.mark_iff",
+        "Becoming.mark_pos",
+        "Becoming.mark_le_one",
+        "Becoming.comings",
+        "Becoming.ceasings",
+        "Becoming.ComesToBe",
+        "Becoming.CeasesToBe",
+        "Becoming.steps_last",
+        "Becoming.steps_mem"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.steps",
+        "Becoming.total_le",
+        "Becoming.total_ones",
+        "Becoming.total_pos",
+        "Becoming.total_pos_of_mem",
+        "Becoming.total_map",
+        "Becoming.total_zero",
+        "Becoming.le_total_of_mem"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "role": "proof",
+      "sha256": "91accf4b40601b6f5439c1a3e8f3ede72b68018b0701099e78d71e7959f6fd9d",
+      "declarations": [
+        "Becoming.Flow.Dissipative",
+        "Becoming.Flow.ClosedAt",
+        "Becoming.Flow.DissipatesOn",
+        "Becoming.Flow.DissipatesOn.still_untaken"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "ce4501e4f9709f649f474e56a4bd3289183165a454832e536fe89d904f356d34",
+      "declarations": [
+        "Becoming.le_dest",
+        "Becoming.add_right_cancel",
+        "Becoming.add_sub_turn_add"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P32-P34-REVIEW.md",
+      "role": "review",
+      "sha256": "91f1e808c848c867f0b12a9ed192529435fa4407466814f13d4756cb32cb0160",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P34B-P38C-REVIEW.md",
+      "role": "review",
+      "sha256": "d755d92550855c5be4a21f70e250f2348b47205c4329efcebbb05017ba5b525a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "integration",
+      "sha256": "120b158a909cb1232599021b23302affd25b7d39d6b410afe5e569b59b3a9a08"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
+      "role": "provenance",
+      "sha256": "3ad2bca66a1e4feaac0e3efd8fc71dc336632ac8fb60ff8c9159495784c5ba5b"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
+      "role": "provenance",
+      "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md",
+      "role": "provenance",
+      "sha256": "ae0f351949efa3452529d8e961bca30286b2a74cd7992636015cd508ac511f1d"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Population",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Premises",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Openness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Space",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Roles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dissipation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "对每个世界的确切重述是本记录的 Listed.keeps_at（P50），局部条件写在规律之内：只用一步两端的列出；Listed.keeps是它的推论；对每个世界的确切重述见 laws-of-one-step（P48），本记录的取用对计数的约束（World.taking_binds_counting）是它的推论；其余规律按零前提计划处理；排除表示所允许者的起约束读法，及其下“有某个生起”是否仍是唯一多出的规律（读法由 Ren 选择）；名称（Ren）。",
+    "en": "The exact restatement for every world is this record's Listed.keeps_at (P50), the local condition inside the law: only the listings at the step's two ends; Listed.keeps is its corollary; the exact restatement for every world is laws-of-one-step (P48), of which this record's binding of counting by taking (World.taking_binds_counting) are corollaries; the other laws follow the zero-premise plan; a reading of binding in which each premise excludes something the representation allows, and whether under it something arising is still the only added law (the reading is Ren's); names (Ren)."
+  },
+  "history": [
+    {
+      "zh": "2026-10-10：作为整合计划 P34 新增，按 Ren“aim a complete theory of becoming, and finish related work”；回答开放纲领“对整个空间成立的规律的完整清单”的计数部分；见整合文档 §46。",
+      "en": "2026-10-10: added as P34 of the unification plan, following Ren's ‘aim a complete theory of becoming, and finish related work’; answers the counting part of the open programme's ‘a complete list of the laws holding of the whole space’; see §46 of the integration note."
+    },
+    {
+      "zh": "2026-10-10 W1–W5：验证范围重新指向合并检查器回执 20261009T222752.438253Z 与外围回执 20261009T223112.652163Z（延续的奠基：包新增 Becoming.Continuation 与 Becoming.Standpoints，包与核心闭包各多两个模块）；所引模块未改，定理数不变。断言不变。",
+      "en": "2026-10-10 W1–W5: validation scope re-pointed to consolidated receipt 20261009T222752.438253Z and periphery receipt 20261009T223112.652163Z (continuation grounding: the package gains Becoming.Continuation and Becoming.Standpoints, the package and the core closure each gaining two modules); the modules cited are unchanged, and so are their theorem counts. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 W8：验证范围重新指向合并检查器回执 20261009T231934.987085Z 与外围回执 20261010T073508.393062Z（延续奠基的独立审查之后，Becoming.Standpoints 新增五项定理，Becoming.Continuation 只改说明）；所引模块未改，定理数不变。断言不变。",
+      "en": "2026-10-10 W8: validation scope re-pointed to consolidated receipt 20261009T231934.987085Z and periphery receipt 20261010T073508.393062Z (after the continuation-grounding review, Becoming.Standpoints gains five theorems and Becoming.Continuation changes only in its documentation); the modules cited are unchanged, and so are their theorem counts. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P34b：按第十三次独立审查 U1，标题与断言改为“计数表是计数的全部规律”，补入计数表严格强于平衡的等式（tally_iff、balance_not_tally）；U7，补入不用 Pointwise 的刻画（tally_iff_counted）；U3，写明见证中三个前提空成立（World.tended_not_binds）与每个前提都起约束时多出的规律（World.binds_arising、World.binds_adds）；U2，对应改用标准句；U9，局限与下一步随 counting-under-enclosure 更新。原标题“平衡是计数的全部规律”按平衡的通常意思是错的。",
+      "en": "2026-10-10 P34b: following the thirteenth independent review's U1, the title and claim say the tally is the whole law of counting, adding that the tally is strictly stronger than the balance equation (tally_iff, balance_not_tally); U7, the characterization without Pointwise (tally_iff_counted); U3, that three premises hold idly in the witness (World.tended_not_binds) and the further law where every premise binds (World.binds_arising, World.binds_adds); U2, the standard sentence in the correspondence; U9, limitations and next step updated with counting-under-enclosure. The earlier title, the balance is the whole law of counting, was wrong in the usual sense of the balance."
+    },
+    {
+      "zh": "2026-10-10 P35：验证范围重新指向合并检查器回执 20261010T075031.720357Z 与外围回执 20261010T075308.552033Z（P34b：按第十三次独立审查更正，核心的算术集中于 Dependence，le_total_of_mem 移入 Flow；P35：被围住时与有限世界中计数的规律，Population 加入 occurrences、ChangeBound 与 Swap，Openness 加入 World.enclosure_bounds_change、被围住的队列与有限的队列）；所引模块的定理数改为该回执的数目（Dependence 58、Horizon 12、Flow 77、Change 57、Population 112、Dissipation 89、Premises 67、Openness 116）；外围闭包中其余模块按其回执计为 34 个。断言不变。",
+      "en": "2026-10-10 P35: validation scope re-pointed to consolidated receipt 20261010T075031.720357Z and periphery receipt 20261010T075308.552033Z (P34b: the thirteenth review's corrections, the core's arithmetic gathered in Dependence and le_total_of_mem moved to Flow; P35: counting under enclosure and in finite worlds, Population adding occurrences, ChangeBound and Swap, Openness adding World.enclosure_bounds_change, the enclosed queue and the finite queue); the module counts cited are now that receipt's (Dependence 58, Horizon 12, Flow 77, Change 57, Population 112, Dissipation 89, Premises 67, Openness 116). The periphery closure's other modules are counted as its receipt lists them, 34. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P36：验证范围重新指向合并检查器回执 20261010T083222.285294Z 与外围回执 20261010T084107.973758Z（见证与声明改用形式的、系统与科学的名称，新旧对照见统一计划 §10；陈述、证明与各模块的定理数不变）。断言不变。本记录中的见证与声明名称随之更新。",
+      "en": "2026-10-10 P36: validation scope re-pointed to consolidated receipt 20261010T083222.285294Z and periphery receipt 20261010T084107.973758Z (witnesses and declarations take formal, systems and scientific names, with the old-to-new table in the unification plan §10; statements, proofs and each module's theorem count are unchanged). The claim is unchanged. This record's witness and declaration names are updated accordingly."
+    },
+    {
+      "zh": "2026-10-10 P37：验证范围重新指向合并检查器回执 20261010T100351.523624Z 与外围回执 20261010T100610.366844Z（核心新增 Becoming.Admission 与 Becoming.Regions，包内模块由 29 个增至 31 个，核心闭包由 31 个增至 33 个，共 1412 项定理／2251 项声明审计；已有模块的源与定理数不变）。断言不变。",
+      "en": "2026-10-10 P37: validation scope re-pointed to consolidated receipt 20261010T100351.523624Z and periphery receipt 20261010T100610.366844Z (the core adds Becoming.Admission and Becoming.Regions, the package growing from 29 to 31 modules and the core closure from 31 to 33, with 1412 theorems/2251 declaration audits; existing modules' sources and theorem counts are unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P38：验证范围重新指向合并检查器回执 20261010T101327.506085Z 与外围回执 20261010T102016.503705Z（每个前提选择之下计数的规律：Premises 加入 World.counting_under、World.counting_binds_iff、World.taking_binds_counting 与驱动的队列，Openness 加入 World.enclosed_counting_under 与在第 T 步闭合的队列；章节分为第一部分与第二部分）；所引模块的定理数改为该回执的数目（Premises 78、Openness 123）。断言不变。",
+      "en": "2026-10-10 P38: validation scope re-pointed to consolidated receipt 20261010T101327.506085Z and periphery receipt 20261010T102016.503705Z (the laws of counting under each selection of the premises: Premises adds World.counting_under, World.counting_binds_iff, World.taking_binds_counting and the driven queue, Openness adds World.enclosed_counting_under and the queue closing at step T; the chapter is divided into Part I and Part II); the module counts cited are now that receipt's (Premises 78, Openness 123). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P38：按 Ren“go ahead with Part I”，作为第一部分总陈述的“每个前提加了什么”，断言补入每个前提选择之下计数的规律：第二条路线（平衡、体现、只有活跃者取用与耗散，World.taking_binds_counting）、由闲置者驱动的队列（World.drivenQueue）、256 个选择之下的完整刻画（World.counting_under、World.counting_binds_iff）；标题、对应、反例、局限与下一步随之更新。此前的断言（缺平衡或缺体现的前提不约束计数，全部八个所加的只有一条）不变，是它的特例。作者反审见整合文档 §52。",
+      "en": "2026-10-10 P38: following Ren's ‘go ahead with Part I’, as what each premise adds in Part I's statement, the claim adds the laws of counting under each selection of the premises: a second route (balance, embodiment, only active relata taking and dissipation, World.taking_binds_counting), a queue driven by an idle relatum (World.drivenQueue), and the full characterization under the 256 selections (World.counting_under, World.counting_binds_iff); title, correspondence, counterexamples, limitations and next step updated. The earlier claim (premises lacking balance or embodiment leave counting free, and all eight add one law) is unchanged and is a case of it. The author's counterreview is in §52 of the integration note."
+    },
+    {
+      "zh": "2026-10-10 P39：验证范围重新指向合并检查器回执 20261010T110824.890630Z 与外围回执 20261010T111624.656993Z（核心新增 Becoming.Significance，包内模块由 31 个增至 32 个，核心闭包由 33 个增至 34 个，共 1457 项定理／2316 项声明审计；已有模块的源（根模块的导入与说明除外）与定理数不变；章节加第二部分 §6.8）。断言不变。",
+      "en": "2026-10-10 P39: validation scope re-pointed to consolidated receipt 20261010T110824.890630Z and periphery receipt 20261010T111624.656993Z (the core adds Becoming.Significance, the package growing from 31 to 32 modules and the core closure from 33 to 34, with 1457 theorems/2316 declaration audits; existing modules' sources, apart from the root module's import and documentation, and theorem counts are unchanged; the chapter adds Part II's section 6.8). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P38b：验证范围重新指向合并检查器回执 20261010T112632.899583Z 与外围回执 20261010T112836.954648Z（有限世界中每个前提选择之下计数的规律：Openness 加入环 Ring、World.ring、World.embodiedRing、World.balancedRing，以及 World.finite_counting_under、World.finite_counting_binds_iff、World.finite_change_bound_iff 与 World.enclosed_iff_finite_counting_under）；所引模块的定理数改为该回执的数目（Openness 154）。断言不变。",
+      "en": "2026-10-10 P38b: validation scope re-pointed to consolidated receipt 20261010T112632.899583Z and periphery receipt 20261010T112836.954648Z (the laws of counting under each selection of the premises in finite worlds: Openness adds the rings Ring, World.ring, World.embodiedRing and World.balancedRing, with World.finite_counting_under, World.finite_counting_binds_iff, World.finite_change_bound_iff and World.enclosed_iff_finite_counting_under); the module counts cited are now that receipt's (Openness 154). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P38b：有限世界中每个选择之下计数的规律已在 counting-under-enclosure 给出（World.finite_counting_under）；断言末句、局限与下一步随之更新，本记录的断言不变。",
+      "en": "2026-10-10 P38b: the laws of counting under each selection in finite worlds are now given in counting-under-enclosure (World.finite_counting_under); the claim's last sentence, limitations and next step updated; this record's claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P38c：作为第一部分计数的规律在每个前提都起约束时的补全（第十三次审查 U3 的探针；Ren：“the strongest claim without axiom, as the first part”），断言补入每个前提都起约束时计数的全部规律：只多出有某个生起（World.binding_counting），见证是只在一步闭合的起约束的队列（BindingQueue、World.bindingQueue、World.bindingQueue_premised、World.bindingQueue_binds）。标题、对应、反例、局限与下一步随之更新，加入 Openness 的证明引用。作者反审见整合文档 §55。验证范围重新指向回执 20261010T132639.927992Z 与外围回执 20261010T132949.908183Z。",
+      "en": "2026-10-10 P38c: completing the laws of counting in Part I where every premise binds (the thirteenth review's U3 probe; Ren: ‘the strongest claim without axiom, as the first part’), the claim adds the whole law of counting where every premise binds: only that something arises (World.binding_counting), witnessed by a binding queue closed at one step only (BindingQueue, World.bindingQueue, World.bindingQueue_premised, World.bindingQueue_binds). Title, correspondence, counterexamples, limitations and next step updated, with a proof reference to Openness added. The author's counterreview is in §55 of the integration note. Validation scope re-pointed to receipt 20261010T132639.927992Z and periphery receipt 20261010T132949.908183Z."
+    },
+    {
+      "zh": "2026-10-10 P40：验证范围重新指向合并检查器回执 20261010T133601.876717Z 与外围回执 20261010T133831.669969Z（核心新增 Becoming.Interdependence，包内模块由 32 个增至 33 个，核心闭包由 34 个增至 35 个，共 1540 项定理／2426 项声明审计；已有模块的源（根模块的导入与说明除外）与定理数不变；章节加第一部分 §2 的“供给与返回”与第二部分 §6.9）。断言不变。",
+      "en": "2026-10-10 P40: validation scope re-pointed to consolidated receipt 20261010T133601.876717Z and periphery receipt 20261010T133831.669969Z (the core adds Becoming.Interdependence, the package growing from 32 to 33 modules and the core closure from 34 to 35, with 1540 theorems/2426 declaration audits; existing modules' sources, apart from the root module's import and documentation, and theorem counts are unchanged; the chapter adds Part I's feeding and return in section 2 and Part II's section 6.9). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P41：模块重组，名称、陈述与证明不变：前提给计数的规律加了什么的部分从 Becoming.Premises 与 Becoming.Openness 移入新模块 Becoming.Counting，这里引用的 75 项声明随之移入 Counting 的证明引用，相应反例的路径随之改正。作者说明见整合文档 §57。验证范围重新指向回执 20261010T145237.259199Z 与外围回执 20261010T145910.464504Z。",
+      "en": "2026-10-10 P41: module restructure, names, statements and proofs unchanged: what the premises add to the laws of counting moves from Becoming.Premises and Becoming.Openness into the new module Becoming.Counting; the 75 declarations cited here move with it to a Counting proof reference, and the counterexamples citing them are re-pathed. The author's note is in §57 of the integration note. Validation scope re-pointed to receipt 20261010T145237.259199Z and periphery receipt 20261010T145910.464504Z."
+    },
+    {
+      "zh": "2026-10-10 P41b：处理第十四次独立审查（BECOMING-P34B-P38C-REVIEW.md）。起约束的队列改名为只闭合一次的队列（OnceClosedQueue、World.onceClosedQueue）；主张、局限与反例写明起约束只是条件有实例，其中活动需要支持与有界传递对任何活动、任何流都成立（新定理 OnceClosedQueue.dependent_any_activity、OnceClosedQueue.transmits_any_flow），没有有限世界使每个前提都起约束（World.Finite.not_binds），有限世界中除普查外每个前提都可以起约束（World.finiteHatch_binds_but_census）；下一步加上更强的起约束读法与有限世界中的规律；“空成立”的英文改为 vacuously，驱动者改为不活跃的地关系项；算术引理 add_sub_turn_add 移到 Dependence。断言的数学不变。作者说明见整合文档 §58。验证范围重新指向回执 20261010T150853.470895Z 与外围回执 20261010T151108.093153Z。",
+      "en": "2026-10-10 P41b: integrating the fourteenth independent review (BECOMING-P34B-P38C-REVIEW.md). The binding queue is renamed the queue closed once (OnceClosedQueue, World.onceClosedQueue); the claim, limitations and counterexamples say that binding is only an instance of each condition, activity needing support and bounded transmission holding there whatever is active and whatever flows (new theorems OnceClosedQueue.dependent_any_activity, OnceClosedQueue.transmits_any_flow), that no finite world binds every premise (World.Finite.not_binds), and that in a finite world every premise but the census can bind (World.finiteHatch_binds_but_census); the next step adds a stronger reading of binding and the finite-world laws; \"hold idly\" becomes \"hold vacuously\" and the driver an inactive ground relatum; the arithmetic lemma add_sub_turn_add moves to Dependence. The mathematics claimed is unchanged. The author's note is in §58 of the integration note. Validation scope re-pointed to receipt 20261010T150853.470895Z and periphery receipt 20261010T151108.093153Z."
+    },
+    {
+      "zh": "2026-10-10 R1：验证范围重新指向合并检查器回执 20261010T155424.663562Z 与外围回执 20261010T161037.642977Z（新模块 Becoming.Resolution 加入核心）。断言不变。",
+      "en": "2026-10-10 R1: validation scope re-pointed to consolidated receipt 20261010T155424.663562Z and periphery receipt 20261010T161037.642977Z (the new module Becoming.Resolution joins the core). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 R1b：验证范围重新指向合并检查器回执 20261010T163746.432774Z 与外围回执 20261010T164738.513555Z（Becoming.Resolution 加入下降、止息与储备的规律）。断言不变。",
+      "en": "2026-10-10 R1b: validation scope re-pointed to consolidated receipt 20261010T163746.432774Z and periphery receipt 20261010T164738.513555Z (the laws of falling, ceasing and reserve added to Becoming.Resolution). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 R2：验证范围重新指向合并检查器回执 20261010T165248.121581Z 与外围回执 20261010T165548.911356Z（Becoming.Resolution 的按比例损失改为对家族陈述，加入每一尺度的最小损失与见证 Trickle）。断言不变。",
+      "en": "2026-10-10 R2: validation scope re-pointed to consolidated receipt 20261010T165248.121581Z and periphery receipt 20261010T165548.911356Z (loss in proportion in Becoming.Resolution stated per family; the least loss at each size and the witness Trickle added). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P45：扩展：每个前提各自起约束（World.Premise.Binds）；每个选择之下所选前提都起约束时计数的规律是该选择之下的规律再加至多三条，各自恰在何种选择之下多出已刻画（World.binding_counting_under、World.binding_activity_iff、World.binding_arising_iff、World.binding_joint_iff）；有限世界中除普查外每个前提都起约束时只多出有某个生起（World.finite_binding_counting）；见证为饱和的依存网、有损的队列、传递，只闭合一次的队列现在在步前或步后不空时交换，World.onceClosedQueue_binds 不再要求没有成员加入空队。下一步只留有限世界中每个选择之下所选前提都起约束时的规律、更强的起约束读法与水平与依存的计数。作者说明见整合文档 §60。验证范围重新指向回执 20261010T171040.121853Z 与外围回执 20261010T171427.598973Z。",
+      "en": "2026-10-10 P45: Extended: each premise binds on its own (World.Premise.Binds); where the premises of each selection bind, the laws of counting are those under the selection and at most three more, each characterized by exactly the selections adding it (World.binding_counting_under, World.binding_activity_iff, World.binding_arising_iff, World.binding_joint_iff); in finite worlds where every premise but the census binds only that something arises is added (World.finite_binding_counting); the witnesses are saturated webs, a lossy queue and a relay, and the queue closed once now exchanges where it is not empty before or after the step, so World.onceClosedQueue_binds no longer needs nothing joining an empty queue. The next step keeps only the laws in finite worlds where the premises of each selection bind, a stronger reading of binding, and the counts of standing and dependence. The author's note is in section 60 of the integration note. Validation scope re-pointed to receipt 20261010T171040.121853Z and periphery receipt 20261010T171427.598973Z."
+    },
+    {
+      "zh": "2026-10-11 R4：验证范围重新指向合并检查器回执 20261010T180948.563939Z 与外围回执 20261010T182121.048951Z（Becoming.Resolution 加入量的规律、算入细分的静止与第十五次独立审查的更正）。断言不变。",
+      "en": "2026-10-11 R4: validation scope re-pointed to consolidated receipt 20261010T180948.563939Z and periphery receipt 20261010T182121.048951Z (the amount law, rest with the refinement counted and the corrections of the fifteenth independent review added to Becoming.Resolution). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P42–P44：验证范围重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心新增 Becoming.Feedback、Becoming.Boundaries 与 Becoming.Relevance，包内模块由 35 个增至 38 个，核心闭包由 37 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 withinClosure_iff_closure 与 Discharge 一节 5 项定理；Becoming.Interdependence 的模块说明更正读法，陈述与证明不变；其余已有模块的源（根模块的导入与说明、桥接除外）与定理数不变；章节加第一部分 §2 的“反馈与所及”与第二部分 §6.10–§6.12）。断言不变。",
+      "en": "2026-10-11 P42–P44: validation scope re-pointed to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core adds Becoming.Feedback, Becoming.Boundaries and Becoming.Relevance, the package growing from 35 to 38 modules and the core closure from 37 to 40, with 1971 theorems/2993 declaration audits; the bridge adds withinClosure_iff_closure and the 5 theorems of its Discharge section; Becoming.Interdependence's module documentation corrects a reading, its statements and proofs unchanged; other existing modules' sources, apart from the root module's imports and documentation and the bridge, and theorem counts are unchanged; the chapter adds Part I's feedback and reach in section 2 and Part II's sections 6.10 to 6.12). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P46：局限与下一步：有限世界中每个选择之下所选前提都起约束时的规律已由 counting-under-enclosure 的 World.finite_binding_counting_under 给出（从某步起被围住时的见 World.enclosed_binding_counting_under）。断言不变。作者说明见整合文档 §63。验证范围重新指向回执 20261011T001147.906623Z 与外围回执 20261011T001754.342153Z。",
+      "en": "2026-10-11 P46: Limitations and next step: the laws in finite worlds where the premises of each selection bind are now given by World.finite_binding_counting_under of counting-under-enclosure (under enclosure from some step on by World.enclosed_binding_counting_under). The claim is unchanged. The author's note is in section 63 of the integration note. Validation scope re-pointed to receipt 20261011T001147.906623Z and periphery receipt 20261011T001754.342153Z."
+    },
+    {
+      "zh": "2026-10-11 P47：局限与下一步：前提之下所立者与依存的计数规律已由 counting-standing-and-dependence 给出；下一步按 Ren 2026-10-11 的转向改为零前提的重述。断言不变。作者说明见整合文档 §65。验证范围重新指向回执 20261011T003217.297180Z 与外围回执 20261011T003646.599930Z。",
+      "en": "2026-10-11 P47: Limitations and next step: the laws of counting standing and dependence under the premises are now given by counting-standing-and-dependence; the next step follows Ren's redirect of 11 October to zero-premise restatements. The claim is unchanged. The author's note is in section 65 of the integration note. Validation scope re-pointed to receipt 20261011T003217.297180Z and periphery receipt 20261011T003646.599930Z."
+    },
+    {
+      "zh": "2026-10-11 R6：验证范围重新指向合并检查器回执 20261011T011019.444120Z 与外围回执 20261011T011213.027508Z（每个变化之律保留、失去与回返的零前提规律：新的核心模块 Recurrence，55 项定理；包与核心闭包各多一个模块）。断言不变。",
+      "en": "2026-10-11 R6: validation scope re-pointed to consolidated receipt 20261011T011019.444120Z and periphery receipt 20261011T011213.027508Z (the zero-premise laws of what every law of change keeps, loses and returns to: a new core module, Recurrence, with 55 theorems; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P48：取用对计数的约束（World.taking_binds_counting）改经 laws-of-one-step 证明（Becoming.Locality），陈述不变。断言不变。作者说明见整合文档 §66。验证范围重新指向回执 20261011T071749.484228Z 与外围回执 20261011T071753.574921Z。",
+      "en": "2026-10-11 P48: Binding of counting by taking (World.taking_binds_counting) now proved through laws-of-one-step (Becoming.Locality), statements unchanged. The claim is unchanged. The author's note is in section 66 of the integration note. Validation scope re-pointed to receipt 20261011T071749.484228Z and periphery receipt 20261011T071753.574921Z."
+    },
+    {
+      "zh": "2026-10-11 P50：新增对每个世界的局部规律 Listed.keeps_at（零前提计划 §1.3），局部条件写在规律之内；Listed.keeps在原处改为它们的推论重证，名称与陈述不变。断言不变。作者说明见整合文档 §71。验证范围重新指向回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z。",
+      "en": "2026-10-11 P50: local laws for every world added, Listed.keeps_at (the zero-premise plan, section 1.3), the local condition inside the law; Listed.keeps re-proved in place as their corollaries, names and statements unchanged. The claim is unchanged. The author's note is in section 71 of the integration note. Validation scope re-pointed to receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z."
+    },
+    {
+      "zh": "2026-10-11 P57：Becoming.Flow.DissipatesOn.still_untaken 移入 Becoming.Dissipation（共享引理移到需要它的最低模块），陈述与证明不变；引用随之改指。断言不变。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P57: Becoming.Flow.DissipatesOn.still_untaken moved into Becoming.Dissipation (a shared lemma relocated to the lowest module that needs it), statements and proofs unchanged, and the references follow. The claim is unchanged. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
+    },
+    {
+      "zh": "2026-10-11 P54+P56：验证范围重新指向合并检查器回执 20261011T171000.054867Z 与外围回执 20261011T180706.458104Z（P54 的 g0_relevance_iff 与 P56 的生成的空间：Regions、Significance 与 Relevance 中只新增定义与定理，既有陈述不变，Significance 的三条界改经其局部形式证明；定理数改变的模块：Regions、Significance、Relevance；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P54+P56: validation scope re-pointed to consolidated receipt 20261011T171000.054867Z and periphery receipt 20261011T180706.458104Z (P54's g0_relevance_iff and P56's generative space: new definitions and theorems only in Regions, Significance and Relevance, no existing statement changed, Significance's three margin laws re-proved through their local forms; modules whose theorem count changed: Regions, Significance, Relevance; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P63：验证范围重新指向合并检查器回执 20261011T192152.790658Z 与外围回执 20261011T192511.756300Z（储备与依存的局部规律与 P61 的反方向，原定理改经其局部形式证明，名称与陈述不变；新的核心模块 Sampling、Units 与 Tower，各 90、31 与 6 项定理；定理数改变的已有模块：Dependence、Identity、Reserve；包与核心闭包各多三个模块）。断言不变。",
+      "en": "2026-10-12 P63: validation scope re-pointed to consolidated receipt 20261011T192152.790658Z and periphery receipt 20261011T192511.756300Z (the local laws of reserve and dependence and the converse of P61, the originals re-proved through their local forms, names and statements unchanged; new core modules Sampling, Units and Tower, with 90, 31 and 6 theorems; existing modules whose theorem count changed: Dependence, Identity, Reserve; the package and the core closure each have three modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P62：验证范围重新指向合并检查器回执 20261011T194804.708104Z 与外围回执 20261011T195216.607072Z（无明的边界条件：新的核心模块 Seeking 与 Capture，各 13 与 11 项定理，不改已有模块；包与核心闭包各多两个模块）。断言不变。",
+      "en": "2026-10-12 P62: validation scope re-pointed to consolidated receipt 20261011T194804.708104Z and periphery receipt 20261011T195216.607072Z (the boundary condition for 无明: new core modules Seeking and Capture, with 13 and 11 theorems, no existing module changed; the package and the core closure each have two modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P59+P58：验证范围重新指向合并检查器回执 20261011T210459.095261Z 与外围回执 20261011T211111.085532Z（新核心模块 Becoming.Decidedness 与 Becoming.Imbalance，包与核心闭包各加两个模块；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理加在 Space 与 Openness；定理数改变的既有模块：Space（56→62）、Openness（80→85））。断言不变。",
+      "en": "2026-10-12 P59+P58: validation scope re-pointed to consolidated receipt 20261011T210459.095261Z and periphery receipt 20261011T211111.085532Z (new core modules Becoming.Decidedness and Becoming.Imbalance, the package and the core closure each two modules larger; the rest theorems drop their unused decision procedure in place, names kept, with the settling lemmas added in Space and Openness; existing modules whose theorem count changed: Space (56 to 62), Openness (80 to 85)). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P58：新增关联 counts-exist-where-decided（不用判定程序的形式）；断言不变。见整合文档 §84 与清点页 DECIDABILITY-INVENTORY。",
+      "en": "2026-10-12 P58: related record counts-exist-where-decided added (the forms with no decision procedure); the claim is unchanged. See §84 of the integration note and the inventory page DECIDABILITY-INVENTORY."
+    },
+    {
+      "zh": "2026-10-12 P58b：验证范围重新指向合并检查器回执 20261011T232354.807725Z 与外围回执 20261011T232716.311380Z（P58 的六个平息引理改名，使名称恰是陈述所说：停止不能被否证；Space 加 stop_unrefuted_iff，62→63；陈述与证明不变）。断言不变。",
+      "en": "2026-10-12 P58b: validation scope re-pointed to consolidated receipt 20261011T232354.807725Z and periphery receipt 20261011T232716.311380Z (P58's six settling lemmas renamed so each name says exactly what its statement says: stopping unrefuted; Space adds stop_unrefuted_iff, 62 to 63; statements and proofs unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P73：验证范围重新指向合并检查器回执 20261012T012916.201078Z 与外围回执 20261012T013048.258651Z（新增 Becoming.Learning，2895→2970 项定理，包 56→57 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-12 P73: validation scope re-pointed to consolidated receipt 20261012T012916.201078Z and periphery receipt 20261012T013048.258651Z (Becoming.Learning added, 2895 to 2970 theorems, package 56 to 57 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
+      "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 接手核对：当前合并回执 20261013T094743.528770Z 实含 22 个继承模块；当前验证摘要中沿用的 15 改为 22。历史回执及其当时计数不变；断言、前提与证明不变。",
+      "en": "2026-10-13 takeover reconciliation: current consolidated receipt 20261013T094743.528770Z contains 22 inherited modules; the carried-over count of 15 in the current validation summary is corrected to 22. Historical receipts and their original counts remain unchanged, as do the claim, premises and proofs."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    }
+  ]
+}

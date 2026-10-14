@@ -1,0 +1,497 @@
+{
+  "schema_version": 1,
+  "id": "comparison-where-the-rest-responds",
+  "title": {
+    "zh": "其余回应时的比较在回应所及之内决定：部分之外的形成都经自己之识回应时，部分对经所识者影响的闭包之外的每个形成识得相同、交换相同，两个流的差别到不了它，比较在其中决定；只识支持时这个闭包是所及闭包之并",
+    "en": "The comparison where the rest responds is decided within the responsive reach: where every formation outside a part responds through its own registration, each formation beyond the part's closure under affecting what is registered registers alike and exchanges alike, the difference between the flows reaches none of them, and the comparison is decided within that closure; registering support only, it is the union of the reach closures"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "claim": {
+    "zh": "设 L、L′ 是两个流，W、W′ 是两个网，obs 是观察，part 是判定的形成家族。一个形成 g 在部分的回应所及之内（Flow.WithinResponse），是指 g 在某个成员 h 对“a 在两个流之一中与 b 所识的条件交换”这一关系的闭包之内（复用 Flow.RegisteredFromEither 与 WithinClosure）。每个成员都在其中，其外的都在部分之外（Flow.member_within_response、Flow.outside_part_of_beyond_response）。对逆关系的闭包是闭包之逆（WithinClosure.converse），所以 g 在回应所及之内，恰当某个成员在 g 经两个流画出的识闭包之内（Flow.withinResponse_iff_registration）；一个流时，恰当某个成员在 g 的识闭包 Flow.WithinRegistration 之内（Flow.withinResponse_self_iff）。部分所到达的（Flow.Reaches）与每个成员的所及闭包都在回应所及之内（Flow.withinResponse_of_reaches、Flow.withinResponse_of_withinReach）；只识支持（supportOnly）、L′ = L 时，g 在回应所及之内恰当它在某个成员的所及闭包之内（Flow.withinResponse_supportOnly_iff）；所及闭包是影响闭包之逆（Flow.withinReach_iff_withinInfluence）。其余经识回应（Flow.RespondsThroughRegistration）：部分之外的每个形成 h，凡在 W 下对 W 与 W′ 的水平直到第 t 步识得相同（Web.RegistersAlikeUpTo），在第 t 步与每个条件的取用与给予在两个流中相同；其余固定（L′ = L.withhold part）时无论识什么它都成立（Flow.respondsThroughRegistration_withhold）。回应所及之外的形成构成在两个流中都对 Flow.RegisteredFrom 封闭的区域（Flow.beyond_response_closed）。两个流的在场形成每步相同，在回应所及之外者所识的每个条件上逐步平衡（Flow.BalancesOn）且起始相同，其余经识回应时：回应所及之外的每个形成每步识得相同（Flow.alike_beyond_response，Flow.alike_within_closed 的实例），每步与每个条件交换相同（Flow.exchange_alike_beyond_response），两个流每步从它所识的每个条件取用与向它给予的总量相同（Flow.totals_alike_beyond_response，经 Flow.exchange_agrees_within 与 total_congr_on），两个流的差别在任何一步之前都到不了它（Flow.not_differs_beyond_response：Flow.DiffersBefore 不成立）。所以两个流都平衡、在场形成相同、起始相同、其余经识回应时，对从 p 覆盖每个不在回应所及之外的形成（¬¬ WithinResponse）的任何意义 sig，W 的水平保留 W′ 的水平上有意义者恰当前者包含后者，反过来也是；两者都不增加有意义的延续恰当两者都不超出对方（Flow.Balances.comparison_within_response，经 Flow.Balances.comparison_within_difference）。覆盖写成双重否定，因为差别只表明它到达的形成不在回应所及之外；回应所及可判定时，覆盖回应所及即可（Flow.Balances.comparison_within_response_of_decidable）。见证：营养级联 Trophic 中，在狼群之流与鹿有回应之流之间，只识支持时前提成立（Trophic.responds_through_registration）；森林在狼群的回应所及之内，而狼群的部分到达不了它（Trophic.forest_within_response）；回应所及恰是狼群、鹿与森林（Trophic.within_response_iff，经 Trophic.responsiveReach_closed、Trophic.far_unaffected、Trophic.den_untouched）；对从 p 每步覆盖这三者的任何意义，两条水平路径恰如彼此包含那样彼此保留，而两者互相超出，所以都不保留（Trophic.responsive_comparison）。Loop 中两个形成各需要并观察自己的条件；有动作之流中第一个在第 0 步从第二个的条件取用，第二个在第 1 步回应、从第一个的条件取用，无动作之流什么都不取用；两个流平衡，活动需要支持，起始相同，第二个经识回应；第一个自身与其条件的交换在两个流中相同，而有动作时第一个在第 2 步不被支持，无动作时被支持；其余固定时第一个的部分到达不了第一个，而两流的差别在第 2 步之前到达它（Loop.returns）。不用 Lean 公理，也不用公理 Unrestricted。",
+    "en": "Let L, L′ be two flows, W, W′ two webs, obs an observation and part a decided family of formations. A formation g lies within the part's responsive reach (Flow.WithinResponse) when it lies within some member h's closure under the relation ‘a exchanges, in one of the two flows, with a condition b registers’ (reusing Flow.RegisteredFromEither and WithinClosure). Every member lies within it, and what lies beyond is outside the part (Flow.member_within_response, Flow.outside_part_of_beyond_response). The closure under a converse is the converse of the closure (WithinClosure.converse), so g lies within the responsive reach exactly when some member lies within g's registration closure drawn through both flows (Flow.withinResponse_iff_registration); with one flow, exactly when some member lies within g's registration closure Flow.WithinRegistration (Flow.withinResponse_self_iff). What the part reaches (Flow.Reaches) and each member's reach closure lie within the responsive reach (Flow.withinResponse_of_reaches, Flow.withinResponse_of_withinReach); registering support only (supportOnly), with L′ = L, g lies within it exactly when it lies within some member's reach closure (Flow.withinResponse_supportOnly_iff); the reach closure is the converse of the influence closure (Flow.withinReach_iff_withinInfluence). The rest responds through its registration (Flow.RespondsThroughRegistration) when each formation h outside the part that has registered alike, under W, between the levels of W and W′ up to step t (Web.RegistersAlikeUpTo) takes from and gives to every condition alike in the two flows at step t; with the rest fixed (L′ = L.withhold part) this holds whatever registers (Flow.respondsThroughRegistration_withhold). The formations beyond the responsive reach form a region closed in both flows under Flow.RegisteredFrom (Flow.beyond_response_closed). Where the two flows have the same formations present at every step, balance at each step on every condition registered by a formation beyond the reach (Flow.BalancesOn) and start alike there, and the rest responds through its registration: every formation beyond the responsive reach registers alike at every step (Flow.alike_beyond_response, an instance of Flow.alike_within_closed), exchanges alike with every condition at every step (Flow.exchange_alike_beyond_response), the totals the two flows take from and give to each condition it registers are alike at every step (Flow.totals_alike_beyond_response, through Flow.exchange_agrees_within and total_congr_on), and the difference between the flows reaches it before no step (Flow.not_differs_beyond_response: Flow.DiffersBefore fails). So where both flows balance, have the same formations present, start alike and the rest responds through its registration, for any significance sig covering, from p, every formation not beyond the responsive reach (¬¬ WithinResponse), the levels of W retain what has significance along those of W′ exactly when they include them, and the reverse, and neither adds a continuation with significance exactly when neither exceeds the other (Flow.Balances.comparison_within_response, through Flow.Balances.comparison_within_difference). The cover is double-negated because the difference shows only that a formation it reaches is not beyond the reach; where membership is decidable, covering the responsive reach suffices (Flow.Balances.comparison_within_response_of_decidable). Witnesses: in the trophic cascade Trophic, between the flow with the wolves and the flow in which the deer respond, the premise holds registering support only (Trophic.responds_through_registration); the forest lies within the wolves' responsive reach, which their part does not reach (Trophic.forest_within_response); the responsive reach is exactly the wolves, the deer and the forest (Trophic.within_response_iff, through Trophic.responsiveReach_closed, Trophic.far_unaffected and Trophic.den_untouched); for any significance covering these three from p at every step, the two level paths retain along each other exactly as they include each other, and since each exceeds the other, neither retains (Trophic.responsive_comparison). In Loop two formations each require and observe their own condition; in the flow with the act the first takes from the second's condition at step 0 and the second responds at step 1 by taking from the first's, while in the other flow nothing is taken; both flows balance, activity needs support, they start alike and the second responds through its registration; the first's own exchange with its condition is the same in both flows, yet with the act the first is unsupported at step 2 and without it supported; with the rest fixed the first's part does not reach the first, while the difference between the flows reaches it before step 2 (Loop.returns). No Lean axiom is used, and the axiom Unrestricted does not occur."
+  },
+  "hypotheses": [
+    {
+      "zh": "经识回应（Flow.RespondsThroughRegistration）在本记录的定律中是给出的前提，定律只在回应所及之外用到它；它排除对未被识者的回应、噪声与未表示为条件的外来输入。其余遵从一个只读各形成所识的交换律时，它对律的任意两个进程是定理（ExchangeLaw.Through.responds，见 counterfactual-is-the-course）；每个读已立者的律经识一切而读，条件有限时经其敏感而读（ExchangeLaw.Nonanticipating.through_sensitive），取律的敏感为识时，那些回应落在识之内，回应所及随之变宽。这时仍取的假设：交换律本身；它读已立者（ExchangeLaw.Nonanticipating）；第二个流为另一动作生成的进程时，进程可行（ExchangeLaw.Feasible，等价于它平衡）；敏感的形式还要条件有限、条件的相等可判定。",
+      "en": "Responding through registration (Flow.RespondsThroughRegistration) is a supplied premise in this record's laws, which use it only beyond the responsive reach; it excludes responding to what is not registered, noise, and outside inputs not represented as conditions. Where the rest follows a law of exchange reading only what each formation registers, it is a theorem for any two courses of the law (ExchangeLaw.Through.responds, counterfactual-is-the-course); every law of what has stood reads through registering everything, and with finitely many conditions through its sensitivity (ExchangeLaw.Nonanticipating.through_sensitive), and with the law's sensitivity as the registration those responses fall within it and the responsive reach widens. The hypotheses then still taken: the law of exchange itself; that it reads what has stood (ExchangeLaw.Nonanticipating); with the second flow the course another act generates, that course's feasibility (ExchangeLaw.Feasible, equivalent to its balance); and for the sensitivity form, finitely many conditions with decidable equality."
+    },
+    {
+      "zh": "限定的定理（alike_beyond_response、exchange_alike_beyond_response、totals_alike_beyond_response、not_differs_beyond_response）只在回应所及之外者所识的条件上逐步假设平衡（Flow.BalancesOn），并假设两个流的在场形成每步相同、在那些条件上起始相同。",
+      "en": "The confinement laws (alike_beyond_response, exchange_alike_beyond_response, totals_alike_beyond_response, not_differs_beyond_response) assume balance at each step only on the conditions registered by formations beyond the responsive reach (Flow.BalancesOn), the same formations present in both flows at every step, and a common start on those conditions."
+    },
+    {
+      "zh": "主比较（Flow.Balances.comparison_within_response）假设两个流全局平衡（Flow.Balances）、起始相同；意义 sig 是给定的，覆盖写成双重否定，不用判定；可判定的形式另取回应所及的判定（decided）为假设。",
+      "en": "The main comparison (Flow.Balances.comparison_within_response) assumes both flows balance throughout (Flow.Balances) and start alike; the significance sig is supplied, and the cover is double-negated, with no decision used; the decidable form takes the decision of the responsive reach (decided) as a hypothesis."
+    },
+    {
+      "zh": "部分是判定的形成家族；回应所及经两个流画出。",
+      "en": "A part is a decided family of formations; the responsive reach is drawn through both flows."
+    },
+    {
+      "zh": "Trophic 与 Loop 的结论：见证的流、网与部分；Trophic 中鹿有回应的流（Trophic.responsiveFlow、responsiveWeb）是 P42 给出的。",
+      "en": "For the Trophic and Loop results: the witnesses' flows, webs and parts; Trophic's flow in which the deer respond (Trophic.responsiveFlow, responsiveWeb) is the one P42 supplied."
+    },
+    {
+      "zh": "离散的步（从第 0 步计）；自然数的水平、所需与数量。",
+      "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
+    }
+  ],
+  "correspondence": {
+    "zh": "AI 把本理论与一般的因果系统（x_{t+1} = F(x_t, u_t, ε_t)、反馈、自适应参数、吸引子）作比较并提出五项改进之后，Ren 写道：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本项是其中第二项（提议是 AI 的）：其余回应时的反事实，回答本章 §8 的开放项“其余交换随之调整的反事实”中其余经识回应的情形。读法（AI 的，待 Ren）：一个动作有两种反事实，其余固定时（P42）只计部分直接到达的，其余经识回应时计部分对经所识者影响的闭包；一个动作对与之相互作用的形成造成什么，在第二种之内决定；升级回路是每一方都经识回应、差别回到部分的情形，它不在其余固定的比较中出现；只识支持时回应所及是 P42 的所及闭包之并，这给所及闭包一个反事实的意义：其余经其支持回应时，一个动作的差别所能到之处。来源中粘贴的因果系统文字（含军备竞赛的回路）作者未注明，不是 Ren 的话，也不是本理论的前提。名称（WithinResponse、RespondsThroughRegistration、Loop 等）是 AI 按 Ren 的命名准则所选。见整合文档 §87。",
+    "en": "After the AI compared the theory with a general cause–effect system (x_{t+1} = F(x_t, u_t, ε_t), feedback, adaptive parameters, attractors) and proposed five improvements, Ren wrote: “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This is the second proposal, the AI's: the counterfactual where the rest responds, answering, for the case where the rest responds through its registration, the chapter's section 8 open item “the counterfactual in which the rest of the exchange adjusts”. Readings (the AI's, pending Ren): an act has two counterfactuals, with the rest fixed (P42), where only what the part reaches directly counts, and with the rest responding through its registration, where the part's closure under affecting what is registered counts; what an act does to formations that interact with it is decided within the second; an escalation loop is the case where each party responds through its registration and the difference returns to the part, which does not show in the comparison with the rest fixed; registering support only, the responsive reach is the union of P42's reach closures, which gives the reach closure a counterfactual meaning: where the difference an act makes can arrive when the rest responds through its support. The cause–effect text pasted in the source, including its arms-race loop, has no stated author; it is not Ren's wording and not a premise of the theory. The names (WithinResponse, RespondsThroughRegistration, Loop and others) are the AI's, chosen by Ren's naming standard. See section 87 of the integration note."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+  "aliases": [
+    "Becoming.Flow.WithinResponse",
+    "Becoming.Flow.RespondsThroughRegistration",
+    "Becoming.Flow.respondsThroughRegistration_withhold",
+    "Becoming.Flow.withinResponse_iff_registration",
+    "Becoming.Flow.withinResponse_supportOnly_iff",
+    "Becoming.Flow.withinResponse_of_reaches",
+    "Becoming.Flow.withinResponse_of_withinReach",
+    "Becoming.Flow.withinReach_iff_withinInfluence",
+    "Becoming.WithinClosure.converse",
+    "Becoming.Flow.beyond_response_closed",
+    "Becoming.Flow.alike_beyond_response",
+    "Becoming.Flow.exchange_alike_beyond_response",
+    "Becoming.Flow.not_differs_beyond_response",
+    "Becoming.Flow.Balances.comparison_within_response",
+    "Becoming.Flow.Balances.comparison_within_response_of_decidable",
+    "Becoming.Trophic.forest_within_response",
+    "Becoming.Trophic.responds_through_registration",
+    "Becoming.Trophic.within_response_iff",
+    "Becoming.Trophic.responsive_comparison",
+    "Becoming.Loop.returns",
+    "responsive reach",
+    "回应所及",
+    "responds through registration",
+    "经识回应",
+    "counterfactual where the rest responds",
+    "其余回应时的反事实",
+    "escalation loop",
+    "升级回路"
+  ],
+  "dependencies": [
+    {
+      "id": "testing-within-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.RegisteredFrom、Flow.RegisteredFromEither、Flow.WithinRegistration、supportOnly、Web.Registers、Web.RegistersAlikeUpTo、Flow.exchange_agrees_within 与 Flow.withheld_eq_of_false；限定是 Flow.alike_within_closed 以回应所及之外为区域的实例。",
+        "en": "Reuses Flow.RegisteredFrom, Flow.RegisteredFromEither, Flow.WithinRegistration, supportOnly, Web.Registers, Web.RegistersAlikeUpTo, Flow.exchange_agrees_within and Flow.withheld_eq_of_false; the confinement is the instance of Flow.alike_within_closed whose region is what lies beyond the responsive reach."
+      },
+      "interface": {
+        "output": {
+          "zh": "从区域一侧：对经所识者受影响封闭、成员只经自己之识回应的区域，其成员识得相同。",
+          "en": "From a region's side: members of a region closed under being affected through what is registered, responding only through their own registration, register alike."
+        },
+        "input": {
+          "zh": "从部分一侧：回应所及之外的区域封闭，其成员识得相同、交换相同。",
+          "en": "From a part's side: the region beyond the responsive reach is closed, and its members register alike and exchange alike."
+        },
+        "conditions": {
+          "zh": "在区域成员所识的条件上逐步平衡；两个流的在场形成相同；起始相同；其余经识回应。",
+          "en": "Balance at each step on what the region's members register; the same formations present; a common start; the rest responding through its registration."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean"
+      }
+    },
+    {
+      "id": "comparison-within-reach",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.DiffersBefore 与 Flow.Balances.comparison_within_difference：两流的比较在差别所及之内决定；本项给出差别能到哪里。见证复用 Trophic.wolves_unreached 与 Trophic.responsive_mixed。",
+        "en": "Reuses Flow.DiffersBefore and Flow.Balances.comparison_within_difference: the comparison of two flows is decided within what their difference reaches; this record says where the difference can go. The witnesses reuse Trophic.wolves_unreached and Trophic.responsive_mixed."
+      },
+      "interface": {
+        "output": {
+          "zh": "覆盖差别所及的任何意义作公理的比较。",
+          "en": "Any significance covering what the difference reaches makes the axiom's comparison."
+        },
+        "input": {
+          "zh": "差别到不了回应所及之外，所以覆盖不在回应所及之外者的意义就覆盖差别所及。",
+          "en": "The difference reaches nothing beyond the responsive reach, so a significance covering what is not beyond it covers what the difference reaches."
+        },
+        "conditions": {
+          "zh": "两个流全局平衡；起始相同。",
+          "en": "Both flows balance throughout; a common start."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean"
+      }
+    },
+    {
+      "id": "feedback-and-reach",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.Reaches：部分所到达的在回应所及之内。",
+        "en": "Reuses Flow.Reaches: what the part reaches lies within the responsive reach."
+      },
+      "interface": {
+        "output": {
+          "zh": "部分直接到达的（其余固定时比较所计的）。",
+          "en": "What the part reaches directly (what the comparison with the rest fixed counts)."
+        },
+        "input": {
+          "zh": "它在回应所及之内。",
+          "en": "It lies within the responsive reach."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean"
+      }
+    },
+    {
+      "id": "levels-of-closure",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ClosedUnder、WithinClosure 及其引理（refl、trans、of_rel、mono）、Flow.AffectedBy、Flow.Affects、Flow.WithinReach、Flow.WithinInfluence，以及 Trophic 的流、网与鹿有回应的流。",
+        "en": "Reuses ClosedUnder, WithinClosure and its lemmas (refl, trans, of_rel, mono), Flow.AffectedBy, Flow.Affects, Flow.WithinReach, Flow.WithinInfluence, and Trophic's flow, web and the flow in which the deer respond."
+      },
+      "interface": {
+        "output": {
+          "zh": "对一个关系的闭包；所及闭包与影响闭包。",
+          "en": "The closure under a relation; the reach and influence closures."
+        },
+        "input": {
+          "zh": "回应所及是对经所识者影响的闭包；只识支持、一个流时是所及闭包之并；所及闭包是影响闭包之逆。",
+          "en": "The responsive reach is the closure under affecting what is registered; registering support only, with one flow, it is the union of reach closures; the reach closure is the converse of the influence closure."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean"
+      }
+    },
+    {
+      "id": "laws-of-one-step",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.BalancesOn 与 Flow.Balances.on：限定只在回应所及之外者所识的条件上逐步假设平衡，全局平衡给出它。",
+        "en": "Reuses Flow.BalancesOn and Flow.Balances.on: the confinement assumes balance at each step only on what formations beyond the responsive reach register, and global balance gives it."
+      },
+      "interface": {
+        "output": {
+          "zh": "一步上在一个家族上的平衡。",
+          "en": "Balance on a family across one step."
+        },
+        "input": {
+          "zh": "限定的局部平衡假设。",
+          "en": "The local balance hypotheses of the confinement."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "runaway-distance-unregistered",
+      "detail": {
+        "zh": "那里的下一步要求定义回路（水平影响取用、取用又影响水平）并把失控陈述为定理。Loop 只走了一小步：它是比较中一个定义好的两方回路的见证，其中第一个形成的动作经第二个的观察与回应回到第一个自身的支持，而其余固定的比较看不到它（Loop.returns）。它不是回路的一般定义，只有一个动作、一次回应、一个回合，没有增益或放大，也没有失控的定理；那里其余固定的假设在这里换为经识回应。",
+        "en": "Its next step asks to define a loop (levels affecting taking, and taking the levels) and to state a runaway itself as a theorem. Loop goes only a small way: it is a witness of a defined two-party loop in the comparison, in which the first formation's act returns to its own support through the second's observation and response, which the comparison with the rest fixed does not show (Loop.returns). It is not a general definition of a loop; it has one act, one response and one round, no gain or amplification, and no runaway theorem; the rest held fixed there is replaced here by responding through registration."
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "detail": {
+        "zh": "推出本记录的前提：其余遵从一个只读各形成所识的交换律时，其余经识回应是定理；第二个流是另一动作生成的进程，比较不另给第二个流与回应；Loop.responds 由律推出（Loop.responds_by_law）。",
+        "en": "Derives this record's premise: where the rest follows a law of exchange reading only what each formation registers, responding through registration is a theorem; the second flow is the course another act generates, so the comparison supplies neither the second flow nor the response; Loop.responds follows from the law (Loop.responds_by_law)."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "detail": {
+        "zh": "其余固定的界严格小于回应所及：营养级联中狼群的部分到达不了森林，而森林在狼群的回应所及之内（Trophic.forest_within_response），两流的差别到达它（Trophic.difference_reaches_forest）。Loop 中差别回到部分自身的支持，而部分到达不了它自己（Loop.returns）：其余固定的比较漏掉回路。",
+        "en": "The bound with the rest fixed is strictly smaller than the responsive reach: in the trophic cascade the wolves' part does not reach the forest, while the forest lies within the wolves' responsive reach (Trophic.forest_within_response) and the difference between the flows reaches it (Trophic.difference_reaches_forest). In Loop the difference returns to the part's own support, while the part does not reach itself (Loop.returns): the comparison with the rest fixed misses the loop."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "detail": {
+        "zh": "前提可以不成立：Attracting 中取用者什么都不识（不需要任何条件、只识支持），却在储量较高时多取用（Attracting.higher_breaks_first）；按检视，那里没有部分时经识回应不成立，限定不被主张。本模块没有为此另立定理。",
+        "en": "The premise can fail: in Attracting the taker registers nothing (it requires nothing and registers support only), yet takes more where the stock is higher (Attracting.higher_breaks_first); by inspection, with no part, responding through registration fails there, and the confinement is not claimed. This module states no separate theorem for it."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "形成只经其识回应不推出（给出的前提），怎样回应不推出；回应由动力学给出的比较见 counterfactual-is-the-course（交换律与它读已立者仍是给出的）；回应所及经两个流画出，须知第二个流与哪些条件交换（其余固定时由 Flow.withhold_exchanges 在原流中画出，本模块没有另立定理）；回应所及是上界：不说差别到达其中的哪个形成，不量差别多少，也不按时间先后；限定是 Flow.alike_within_closed 的实例，区域的封闭由闭包的定义直接得到；前提强于定律所用的（定律只用回应所及之外者在其所识条件上的交换）；Trophic 中有回应的流仍是给出的，只检查它满足前提；Loop 是最小的两方见证（一个动作、一次回应，需要与观察重合），不是回路的一般定义，没有增益或失控的定理；WithinClosure.converse 与 Flow.withinReach_iff_withinInfluence 关于 Becoming.Feedback 的概念，可移入该模块；读法与名称是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "That formations respond only through their registration is not derived (a supplied premise), nor how they respond; a comparison whose responses the dynamics give is in counterfactual-is-the-course (the law of exchange and that it reads what has stood remain supplied); the responsive reach is drawn through both flows, so it needs which conditions the second flow exchanges with (with the rest fixed it is drawn in the first flow, by Flow.withhold_exchanges, with no separate theorem here); the responsive reach is an upper bound: it does not say which formations within it the difference reaches, nor how much, and it is not ordered in time; the confinement is an instance of Flow.alike_within_closed, and the closedness of its region follows directly from the definition of the closure; the premise is stronger than what the laws use (only the exchange of formations beyond the reach on what they register); Trophic's responding flow is still supplied and only checked against the premise; Loop is a minimal two-party witness (one act, one response, requiring and observing coincide), not a general definition of a loop, with no gain or runaway theorem; WithinClosure.converse and Flow.withinReach_iff_withinInfluence concern Becoming.Feedback's notions and could move there; the readings and names are the AI's, pending Ren; contains no ethical predicate."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Response 的 30 项定理全部空依赖，其中含 Flow.withinResponse_iff_registration、Flow.withinResponse_supportOnly_iff、Flow.alike_beyond_response、Flow.Balances.comparison_within_response、Trophic.within_response_iff与 Loop.returns；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §87；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 30 theorems of Becoming.Response all have empty axiom reports, among them Flow.withinResponse_iff_registration, Flow.withinResponse_supportOnly_iff, Flow.alike_beyond_response, Flow.Balances.comparison_within_response, Trophic.within_response_iff and Loop.returns; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §87 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "role": "proof",
+      "sha256": "279704f4d0e1b801e386d6d7e8d560aac68b49fb4b63cc4e1242895f6beb9abf",
+      "declarations": [
+        "Becoming.WithinClosure.converse",
+        "Becoming.Flow.WithinResponse",
+        "Becoming.Flow.RespondsThroughRegistration",
+        "Becoming.Flow.member_within_response",
+        "Becoming.Flow.outside_part_of_beyond_response",
+        "Becoming.Flow.withinResponse_iff_registration",
+        "Becoming.Flow.withinResponse_self_iff",
+        "Becoming.Flow.withinResponse_of_reaches",
+        "Becoming.Flow.withinResponse_of_withinReach",
+        "Becoming.Flow.withinResponse_supportOnly_iff",
+        "Becoming.Flow.withinReach_iff_withinInfluence",
+        "Becoming.Flow.respondsThroughRegistration_withhold",
+        "Becoming.Flow.beyond_response_closed",
+        "Becoming.Flow.alike_beyond_response",
+        "Becoming.Flow.exchange_alike_beyond_response",
+        "Becoming.Flow.totals_alike_beyond_response",
+        "Becoming.Flow.not_differs_beyond_response",
+        "Becoming.Flow.Balances.comparison_within_response",
+        "Becoming.Flow.Balances.comparison_within_response_of_decidable",
+        "Becoming.Trophic.forest_within_response",
+        "Becoming.Trophic.responds_through_registration",
+        "Becoming.Trophic.responsiveReach",
+        "Becoming.Trophic.den_untouched",
+        "Becoming.Trophic.far_unaffected",
+        "Becoming.Trophic.responsiveReach_closed",
+        "Becoming.Trophic.within_response_iff",
+        "Becoming.Trophic.responsive_comparison",
+        "Becoming.Loop.Formation",
+        "Becoming.Loop.Place",
+        "Becoming.Loop.members",
+        "Becoming.Loop.firstPart",
+        "Becoming.Loop.own",
+        "Becoming.Loop.act",
+        "Becoming.Loop.reply",
+        "Becoming.Loop.escalation",
+        "Becoming.Loop.quiet",
+        "Becoming.Loop.ofFirstLevel",
+        "Becoming.Loop.ofSecondLevel",
+        "Becoming.Loop.firstLive",
+        "Becoming.Loop.web",
+        "Becoming.Loop.quietWeb",
+        "Becoming.Loop.balances",
+        "Becoming.Loop.quiet_balances",
+        "Becoming.Loop.dependent",
+        "Becoming.Loop.quiet_dependent",
+        "Becoming.Loop.responds",
+        "Becoming.Loop.returns"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "09ddc1df49b69cb1258c5dfafdf3647784138d465ecca329fbae65606796d81a",
+      "declarations": [
+        "Becoming.Web.Registers",
+        "Becoming.Web.RegistersAlikeUpTo",
+        "Becoming.Flow.WithinRegistration",
+        "Becoming.Flow.RegisteredFrom",
+        "Becoming.Flow.RegisteredFromEither",
+        "Becoming.Flow.alike_within_closed",
+        "Becoming.supportOnly"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "role": "proof",
+      "sha256": "dc2abebba7620898cae8fddbc92e74544cf6f23af4926f4a4c48d4e5ca13477d",
+      "declarations": [
+        "Becoming.WithinClosure",
+        "Becoming.ClosedUnder",
+        "Becoming.Flow.AffectedBy",
+        "Becoming.Flow.WithinReach",
+        "Becoming.Flow.WithinInfluence",
+        "Becoming.Flow.DiffersBefore",
+        "Becoming.Flow.Balances.comparison_within_difference",
+        "Becoming.Trophic.responsiveFlow",
+        "Becoming.Trophic.responsive_mixed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow.BalancesOn",
+        "Becoming.Flow.Balances.on"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "90c6e896364e2cbf1bafb8588e1a0aed9d04ca861c9716c62a9e202bffe6e8ee",
+      "declarations": [
+        "Becoming.ExchangeLaw.Through.responds",
+        "Becoming.ExchangeLaw.Nonanticipating.through_all",
+        "Becoming.ExchangeLaw.Nonanticipating.through_sensitive",
+        "Becoming.comparison_of_courses",
+        "Becoming.comparison_with_act",
+        "Becoming.Loop.responds_by_law"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md",
+      "role": "provenance",
+      "sha256": "33ca82e2d813403faf3739e26562d284ee45813abd485d07fb667d3c1b859713",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Response",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Feedback",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "按时间先后的回应所及；差别到达多少的度量；回路的一般定义，以及在其中陈述增益与失控；Ren 的判断：两种反事实与所及闭包的反事实意义是否成立。（回应由动力学给出的比较见 counterfactual-is-the-course，交换律与它读已立者仍是给出的。）",
+    "en": "The responsive reach ordered in time; a measure of how much difference arrives; a general definition of a loop, with gain and runaway stated on it; Ren's judgment whether the two counterfactuals and the counterfactual meaning of the reach closure hold. (A comparison whose responses the dynamics give is in counterfactual-is-the-course; the law of exchange and that it reads what has stood remain supplied.)"
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P65：新增，按 Ren“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”；来自 AI 对理论与一般因果系统的比较（工作板 P65）；见整合文档 §87。",
+      "en": "2026-10-12 P65: added, following Ren's ‘Great, let's finish all of them, you can spawn sub agents in a wise order if needed’; from the AI's comparison of the theory with a general cause–effect system (work board P65); see §87 of the integration note."
+    },
+    {
+      "zh": "2026-10-12 P58b：验证范围重新指向合并检查器回执 20261011T232354.807725Z 与外围回执 20261011T232716.311380Z（P58 的六个平息引理改名，使名称恰是陈述所说：停止不能被否证；Space 加 stop_unrefuted_iff，62→63；陈述与证明不变）。断言不变。",
+      "en": "2026-10-12 P58b: validation scope re-pointed to consolidated receipt 20261011T232354.807725Z and periphery receipt 20261011T232716.311380Z (P58's six settling lemmas renamed so each name says exactly what its statement says: stopping unrefuted; Space adds stop_unrefuted_iff, 62 to 63; statements and proofs unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P73：验证范围重新指向合并检查器回执 20261012T012916.201078Z 与外围回执 20261012T013048.258651Z（新增 Becoming.Learning，2895→2970 项定理，包 56→57 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-12 P73: validation scope re-pointed to consolidated receipt 20261012T012916.201078Z and periphery receipt 20261012T013048.258651Z (Becoming.Learning added, 2895 to 2970 theorems, package 56 to 57 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
+      "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P80：其余遵从一个只读各形成所识的交换律时，经识回应对律的任意两个进程是定理（ExchangeLaw.Through.responds）；条件有限时识可取作律的敏感（ExchangeLaw.Nonanticipating.through_sensitive）；第二个流可以是另一动作生成的、可行的进程（comparison_with_act）；Loop.responds 由律推出（Becoming.Counterfactual，counterfactual-is-the-course）。仍给出的：交换律、它读已立者、进程可行。hypotheses 第一项、limitations 与 next_delta 随之修订；见整合文档 §100。断言不变。",
+      "en": "2026-10-12 P80: where the rest follows a law of exchange reading only what each formation registers, responding through registration is a theorem for any two courses of the law (ExchangeLaw.Through.responds); with finitely many conditions the registration may be the law's sensitivity (ExchangeLaw.Nonanticipating.through_sensitive); the second flow may be the feasible course another act generates (comparison_with_act); Loop.responds follows from the law (Becoming.Counterfactual, counterfactual-is-the-course). Still supplied: the law of exchange, that it reads what has stood, feasibility. The first hypothesis, the limitations and next_delta revised accordingly; see §100 of the integration note. The assertion is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 接手核对：当前合并回执 20261013T094743.528770Z 实含 22 个继承模块；当前验证摘要中沿用的 15 改为 22。历史回执及其当时计数不变；断言、前提与证明不变。",
+      "en": "2026-10-13 takeover reconciliation: current consolidated receipt 20261013T094743.528770Z contains 22 inherited modules; the carried-over count of 15 in the current validation summary is corrected to 22. Historical receipts and their original counts remain unchanged, as do the claim, premises and proofs."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    }
+  ]
+}

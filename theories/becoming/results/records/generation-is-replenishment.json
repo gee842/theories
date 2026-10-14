@@ -1,32 +1,301 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "generation-is-replenishment",
   "title": {
-    "zh": "生成即补充：体现的关系项的生起本身需要补充；在耗散之下，它在有限家族中复现时家族不封闭，家族被围住时从其外汲入",
-    "en": "Generation is replenishment: the arising of an embodied relatum itself needs replenishment, and under dissipation a finite family in which it recurs is not closed and, enclosed around, draws in from beyond it"
+    "zh": "生成即补充",
+    "en": "Generation is replenishment"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
-  "claim": {
-    "zh": "以一类关系项读依存网与流。在平衡的流中，一个体现的关系项至少被给予它生起时的水平：生起前它不活跃，所以水平为零；生起后它活跃，所以水平为正。于是它的生起补充每个包含它的家族；一个家族的体现成员在任意晚的步生起时，家族的补充在任意晚的步出现，不论取用什么。生成在这里本身承担要求，不经由它带来的取用。给予一个被耗散家族的形成从家族取用，所以一个被耗散的家族中体现成员的生起降低家族的存量，在耗散之下跨某步封闭的不重复家族正是如此；从某步起被耗散的家族中，体现成员不在任意晚的步生起（generation_not_recurring_on）。所以在耗散之下，体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不封闭：在任意晚的步有参与的形成与其外交换（generation_opens）。这一交换可以与家族无关：一个汇与不断新的关系项交换时，没有一步被封闭，耗散空成立，生成在两方的家族中复现而没有任何东西流入，汇使家族不封闭（SprayShuttle）。家族从某步起被围住（某个包含它的不重复有限家族跨每步封闭）时，它汲入：在任意晚的步，有关系项给予家族而从家族之外取用（generation_draws_in）。有限个关系项就是全部时，体现的关系项不在任意晚的步生起。于是 dissipation_generation_not_recurring 的前提（一个量从不上升，每次生起都使它下降），对被耗散家族中体现成员的生起，由平衡、耗散与体现推出。每个前提都必要：两方来回传递一份水平，在两个关系项的封闭世界中体现地、不息地生成，而不耗散（Shuttle）；持有者每步另燃一份新的燃料时，传递在耗散之下继续，包含一方的每个不重复有限家族在任意晚的步都不封闭，两方的家族每步被围住并汲入燃料（Throughput）；一个活动不是其水平的关系项，在一个关系项的耗散世界中不息地生起（Flicker）；只给予不取用的世代不耗散（Brood.not_dissipative）。这些要求跟着水平的上升走，不跟着活动走：在平衡的流中，任何条件的上升都被给予（Flow.Balances.rise_given），于是补充每个包含它的家族；一个家族的成员在任意晚的步上升时，家族的补充在任意晚的步出现（Flow.rising_needs_replenishment）。开始作为条件而在（此前水平为零，此后为正，Web.ComesToStand）是从零的上升（Web.ComesToStand.rises），至少被给予它的新水平（Flow.Balances.standing_given、Flow.standing_needs_replenishment）；一个条件可以每步上升而从不开始作为条件而在（Growing）。被耗散家族的成员上升，降低家族的存量（Flow.rise_lowers_on、Flow.standing_lowers_on），所以从某步起被耗散的家族中，成员不在任意晚的步上升，也不在任意晚的步开始作为条件而在（Flow.rising_not_recurring_on、Flow.standing_not_recurring_on）；在耗散之下，成员在任意晚的步上升的不重复有限家族在任意晚的步不封闭（Flow.rising_opens），从某步起被围住时汲入（Flow.rising_draws_in），有限个条件就是全部时没有条件在任意晚的步上升（Flow.rising_not_recurring）；开始作为条件而在是其情形（Web.rising_of_coming；Flow.standing_opens、Flow.standing_draws_in、Flow.standing_not_recurring）。体现的关系项在生起时开始作为条件而在（Embodied.comesToStand），上面关于体现的结论都由此推出，陈述不变。活跃时作为条件而在的关系项，若在某步不作为条件而在而后来活跃，就在其间某步开始作为条件而在（came_to_stand），可以早于活跃很久：种子在休眠时被给予它的水平，此后生起时没有任何给予（Provisioned）；一个始终作为条件而在的关系项不息地醒来，不需要任何给予，它的流中没有任何形成参与（Sleeper）。不用伦理前提，也不用 Lean 公理。",
-    "en": "Read webs and flows with one kind of relatum. In a balanced flow an embodied relatum is given at least the standing it arises with: before it arises it is not active, so its level is zero, and after it is active, so its level is positive. Its arising therefore replenishes every family containing it, and where embodied members of a family arise at arbitrarily late steps, the family's replenishment recurs at arbitrarily late steps, whatever is taken. Here generation carries the requirement itself, not through the uptake it brings. A formation giving to a family dissipated on takes from it, so the arising of an embodied member of a family dissipated on lowers the family's stock, as under dissipation for a family without repetition closed across the step; in a family dissipated on from some step on, embodied members do not arise at arbitrarily late steps (generation_not_recurring_on). So under dissipation a finite family without repetition in which embodied members arise at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some formation taking part exchanges with a relatum outside it (generation_opens). That exchange need not touch the family: with a sink exchanging with ever new relata, no step is enclosed, dissipation holds vacuously, and generation recurs in the family of two sides with nothing flowing in while the sink opens it (SprayShuttle). Where the family is enclosed around from some step on, some finite family without repetition containing it being closed across each step, it draws in: at arbitrarily late steps some relatum gives to the family and takes from beyond it (generation_draws_in). If finitely many relata are all there is, embodied relata do not arise at arbitrarily late steps. The premise of dissipation_generation_not_recurring (a quantity that never rises and is lowered by every arising) thus follows, for the arisings of embodied members of a family dissipated on, from balance, dissipation and embodiment. Each premise is needed: two sides handing one standing back and forth generate, embodied and without end, in a closed world of two relata that is not dissipative (Shuttle); when the holder also burns a fresh fuel at every step, the handing goes on under dissipation, and every finite family without repetition containing a side is open at arbitrarily late steps, while the family of the sides, enclosed around at every step, draws in the fuel (Throughput); a relatum whose activity is not its standing arises without end in a dissipative world of one relatum (Flicker); generations giving without taking are not dissipative (Brood.not_dissipative). These requirements follow the rise of standing, not activity: in a balanced flow every rise of a condition is given to (Flow.Balances.rise_given), so it replenishes every family containing it, and where members of a family rise at arbitrarily late steps the family's replenishment recurs at arbitrarily late steps (Flow.rising_needs_replenishment). Coming to stand (the level zero before a step and positive after, Web.ComesToStand) is the rise from nothing (Web.ComesToStand.rises), given at least the new standing (Flow.Balances.standing_given, Flow.standing_needs_replenishment); a condition can rise at every step without ever coming to stand (Growing). A member of a family dissipated on rising lowers the family's stock (Flow.rise_lowers_on, Flow.standing_lowers_on), so in a family dissipated on from some step on, members neither rise nor come to stand at arbitrarily late steps (Flow.rising_not_recurring_on, Flow.standing_not_recurring_on); under dissipation, a finite family without repetition whose members rise at arbitrarily late steps is open at arbitrarily late steps (Flow.rising_opens) and, enclosed around from some step on, draws in (Flow.rising_draws_in), and if finitely many conditions are all there is, none rises at arbitrarily late steps (Flow.rising_not_recurring); coming to stand is a case (Web.rising_of_coming; Flow.standing_opens, Flow.standing_draws_in, Flow.standing_not_recurring). An embodied relatum comes to stand as it arises (Embodied.comesToStand), and the conclusions above about embodiment all follow from this, their statements unchanged. A relatum standing as a condition while active, absent at some step and active later, came to stand across some step in between (came_to_stand), possibly long before it is active: a seed is given its standing while dormant and arises later with nothing given to it (Provisioned); a relatum standing as a condition throughout wakes without end with nothing given to it, no formation taking part in its flow (Sleeper). No ethical premise and no Lean axiom is used."
+  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "statement": {
+    "zh": "体现的关系项的生起本身需要补充；在耗散之下，这样的生起在有限家族中复现时家族不封闭，家族被围住时从其外汲入。",
+    "en": "The arising of an embodied relatum itself needs replenishment; under dissipation a finite family in which such arising recurs is not closed and, enclosed around, draws in from beyond it."
   },
+  "laws": [
+    {
+      "zh": "以一类关系项读依存网与流：在平衡的流中，一个体现的关系项至少被给予它生起时的水平：生起前它不活跃，所以水平为零；生起后它活跃，所以水平为正。",
+      "en": "Read with one kind of relatum, in a balanced flow an embodied relatum is given at least the standing it arises with: before it arises it is not active, so its level is zero, and after it is active, so its level is positive.",
+      "declarations": [
+        "Becoming.Web.Embodied.given_of_arises"
+      ]
+    },
+    {
+      "zh": "于是它的生起补充每个包含它的家族；一个家族的体现成员在任意晚的步生起时，家族的补充在任意晚的步出现，不论取用什么：生成本身承担要求，不经由它带来的取用。",
+      "en": "Its arising therefore replenishes every family containing it, and where embodied members of a family arise at arbitrarily late steps, the family's replenishment recurs at arbitrarily late steps, whatever is taken: generation carries the requirement itself, not through the uptake it brings.",
+      "declarations": [
+        "Becoming.Web.Embodied.replenishes",
+        "Becoming.Web.generation_needs_replenishment"
+      ]
+    },
+    {
+      "zh": "给予一个被耗散家族的形成从家族取用，所以被耗散的家族中体现成员的生起降低家族的存量，在耗散之下跨某步封闭的不重复家族正是如此；从某步起被耗散的家族中，体现成员不在任意晚的步生起。",
+      "en": "A formation giving to a family dissipated on takes from it, so the arising of an embodied member of a family dissipated on lowers the family's stock, as under dissipation for a family without repetition closed across the step; in a family dissipated on from some step on, embodied members do not arise at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.Flow.DissipatesOn.takes_of_gives",
+        "Becoming.Web.Embodied.arising_lowers_on",
+        "Becoming.Web.Embodied.arising_lowers",
+        "Becoming.Web.generation_not_recurring_on"
+      ]
+    },
+    {
+      "zh": "所以在耗散之下，体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不封闭：在任意晚的步有参与的形成与其外的关系项交换。",
+      "en": "So under dissipation a finite family without repetition in which embodied members arise at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some formation taking part exchanges with a relatum outside it.",
+      "declarations": [
+        "Becoming.Web.generation_opens"
+      ]
+    },
+    {
+      "zh": "这一交换可以与家族无关：一个汇与不断新的关系项交换时，没有一步被封闭，耗散空成立，生成在两方的家族中复现而没有任何东西流入，汇使家族不封闭。",
+      "en": "That exchange need not touch the family: with a sink exchanging with ever new relata, no step is enclosed, dissipation holds vacuously, and generation recurs in the family of two sides with nothing flowing in while the sink opens it.",
+      "declarations": [
+        "Becoming.SprayShuttle.spray_shuttle",
+        "Becoming.SprayShuttle.opens_anyway"
+      ]
+    },
+    {
+      "zh": "家族从某步起被围住（某个包含它的不重复有限家族跨每步封闭）时，它汲入：在任意晚的步，有关系项给予家族而从家族之外取用；有限个关系项就是全部时，体现的关系项不在任意晚的步生起。",
+      "en": "Where the family is enclosed around from some step on (some finite family without repetition containing it closed across each step), it draws in: at arbitrarily late steps some relatum gives to the family and takes from beyond it; if finitely many relata are all there is, embodied relata do not arise at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.Web.generation_draws_in",
+        "Becoming.Web.generation_not_recurring"
+      ]
+    },
+    {
+      "zh": "于是生成不复现的一般定律的前提（一个量从不上升，每次生起都使它下降），对被耗散家族中体现成员的生起，由平衡、耗散与体现推出。",
+      "en": "The premise of the general law that generation does not recur (a quantity that never rises and is lowered by every arising) thus follows, for the arisings of embodied members of a family dissipated on, from balance, dissipation and embodiment.",
+      "declarations": [
+        "Becoming.Web.dissipation_generation_not_recurring"
+      ]
+    },
+    {
+      "zh": "每个前提都必要：两方来回传递一份水平，在两个关系项的封闭世界中体现地、不息地生成，而不耗散（Shuttle）；一个活动不是其水平的关系项，在一个关系项的耗散世界中不息地生起（Flicker）；只给予不取用的世代不耗散（Brood）。",
+      "en": "Each premise is needed: two sides handing one standing back and forth generate, embodied and without end, in a closed world of two relata that is not dissipative (Shuttle); a relatum whose activity is not its standing arises without end in a dissipative world of one relatum (Flicker); and generations giving without taking are not dissipative (Brood).",
+      "declarations": [
+        "Becoming.Shuttle.shuttle",
+        "Becoming.Flicker.flicker",
+        "Becoming.Brood.not_dissipative"
+      ]
+    },
+    {
+      "zh": "持有者每步另燃一份新的燃料时，传递在耗散之下继续，包含一方的每个不重复有限家族在任意晚的步都不封闭，两方的家族每步被围住并汲入燃料（Throughput）。",
+      "en": "With the holder also burning a fresh fuel at every step, the handing goes on under dissipation, every finite family without repetition containing a side is open at arbitrarily late steps, and the family of the sides, enclosed around at every step, draws in the fuel (Throughput).",
+      "declarations": [
+        "Becoming.Throughput.throughput",
+        "Becoming.Throughput.frontier",
+        "Becoming.Throughput.around",
+        "Becoming.Throughput.draws_in"
+      ]
+    },
+    {
+      "zh": "这些要求跟着水平的上升走，不跟着活动走：在平衡的流中，任何条件的上升都被给予，于是补充每个包含它的家族；一个家族的成员在任意晚的步上升时，家族的补充在任意晚的步出现。",
+      "en": "These requirements follow the rise of standing, not activity: in a balanced flow every rise of a condition is given to, so it replenishes every family containing it, and where members of a family rise at arbitrarily late steps the family's replenishment recurs at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.Flow.Balances.rise_given",
+        "Becoming.Flow.Balances.rise_replenishes",
+        "Becoming.Flow.rising_needs_replenishment"
+      ]
+    },
+    {
+      "zh": "开始作为条件而在（此前水平为零，此后为正）是从零的上升，至少被给予它的新水平；一个条件可以每步上升而从不开始作为条件而在（Growing）。",
+      "en": "Coming to stand (the level zero before a step and positive after) is the rise from nothing, given at least the new standing; a condition can rise at every step without ever coming to stand (Growing).",
+      "declarations": [
+        "Becoming.Web.ComesToStand",
+        "Becoming.Web.ComesToStand.rises",
+        "Becoming.Flow.Balances.standing_given",
+        "Becoming.Flow.standing_needs_replenishment",
+        "Becoming.Growing.growing"
+      ]
+    },
+    {
+      "zh": "被耗散家族的成员上升，降低家族的存量，所以从某步起被耗散的家族中，成员不在任意晚的步上升，也不在任意晚的步开始作为条件而在。",
+      "en": "A member of a family dissipated on rising lowers the family's stock, so in a family dissipated on from some step on, members neither rise nor come to stand at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.Flow.rise_lowers_on",
+        "Becoming.Flow.standing_lowers_on",
+        "Becoming.Flow.rising_not_recurring_on",
+        "Becoming.Flow.standing_not_recurring_on"
+      ]
+    },
+    {
+      "zh": "在耗散之下，成员在任意晚的步上升的不重复有限家族在任意晚的步不封闭，从某步起被围住时汲入；有限个条件就是全部时，没有条件在任意晚的步上升；开始作为条件而在是其情形。",
+      "en": "Under dissipation, a finite family without repetition whose members rise at arbitrarily late steps is open at arbitrarily late steps and, enclosed around from some step on, draws in, and if finitely many conditions are all there is, none rises at arbitrarily late steps; coming to stand is a case.",
+      "declarations": [
+        "Becoming.Flow.rising_opens",
+        "Becoming.Flow.rising_draws_in",
+        "Becoming.Flow.rising_not_recurring",
+        "Becoming.Web.rising_of_coming",
+        "Becoming.Flow.standing_opens",
+        "Becoming.Flow.standing_draws_in",
+        "Becoming.Flow.standing_not_recurring"
+      ]
+    },
+    {
+      "zh": "体现的关系项在生起时开始作为条件而在，上面关于体现的结论都由此推出，陈述不变。",
+      "en": "An embodied relatum comes to stand as it arises, and the conclusions above about embodiment all follow from this, their statements unchanged.",
+      "declarations": [
+        "Becoming.Web.Embodied.comesToStand"
+      ]
+    },
+    {
+      "zh": "活跃时作为条件而在的关系项，若在某步不作为条件而在而后来活跃，就在其间某步开始作为条件而在，可以早于活跃很久：种子在休眠时被给予它的水平，此后生起时没有任何给予（Provisioned）。",
+      "en": "A relatum standing as a condition while active, absent at some step and active later, came to stand across some step in between, possibly long before it is active: a seed is given its standing while dormant and arises later with nothing given to it (Provisioned).",
+      "declarations": [
+        "Becoming.Web.came_to_stand",
+        "Becoming.Provisioned.provisioned"
+      ]
+    },
+    {
+      "zh": "一个始终作为条件而在的关系项不息地醒来，不需要任何给予，它的流中没有任何形成参与（Sleeper）。",
+      "en": "A relatum standing as a condition throughout wakes without end with nothing given to it, no formation taking part in its flow (Sleeper).",
+      "declarations": [
+        "Becoming.Sleeper.sleeper"
+      ]
+    },
+    {
+      "zh": "每条规律对每个世界有局部形式：平衡与耗散只在证明所用的一步、一段或某步以后各步上、在所用的家族上；上面的全局形式是它的推论。",
+      "en": "Each law holds of every world in a local form, with balance and dissipation used only at the step, the stretch or the steps from some step on that the proof uses, on the family used; the global forms above are its corollaries.",
+      "declarations": [
+        "Becoming.Flow.BalancesOn.standing_given",
+        "Becoming.Flow.BalancesOn.rise_replenishes",
+        "Becoming.Flow.rising_needs_replenishment_from",
+        "Becoming.Flow.standing_needs_replenishment_from",
+        "Becoming.Flow.rising_not_recurring_from",
+        "Becoming.Flow.standing_not_recurring_from",
+        "Becoming.Flow.rising_draws_in_from",
+        "Becoming.Web.Embodied.given_of_arises_at",
+        "Becoming.Web.Embodied.replenishes_at",
+        "Becoming.Web.generation_needs_replenishment_from",
+        "Becoming.Web.Embodied.arising_lowers_at",
+        "Becoming.Web.generation_not_recurring_from",
+        "Becoming.Web.generation_draws_in_from"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "流平衡依存网；家族与每步参与的关系项都是有限列表；量是自然数，单位可公度。",
       "en": "The flow balances the web; families and the relata taking part at each step are finite lists; amounts are natural numbers with commensurable units."
     },
     {
-      "zh": "Embodied 是对生起的关系项的表示前提：它恰在活跃时以正的水平作为条件而在。遗骸与不活跃的条件不体现；哪些关系项体现是应用义务。不体现的生起不受体现的结论约束（Flicker）。体现只用来推出生起时开始作为条件而在（Embodied.comesToStand）；关于开始作为条件而在的一般结论不需要体现，不开始作为条件而在的生起不受它们约束（Sleeper）。它在一类读法的同一对应下读：哪个条件就是哪个形成由共同的索引给出（relabel，见 life-as-condition-of-life）。",
-      "en": "Embodied is a representational premise about the arising relata: each stands as a condition at a positive level exactly while it is active. Remains and inactive conditions are not embodied; which relata are embodied is an application duty. Arising that is not embodied is not constrained by the conclusions about embodiment (Flicker). Embodiment is used only to derive that an arising relatum comes to stand (Embodied.comesToStand); the general conclusions about coming to stand do not need it, and arising without coming to stand is not constrained by them (Sleeper). It is read under the one-kind identification: which condition is which formation is supplied by the shared index (relabel, see life-as-condition-of-life)."
+      "zh": "Embodied 是对生起的关系项的表示前提：它恰在活跃时以正的水平作为条件而在。遗骸与不活跃的条件不体现；哪些关系项体现是应用义务。",
+      "en": "Embodied is a representational premise about the arising relata: each stands as a condition at a positive level exactly while it is active. Remains and inactive conditions are not embodied; which relata are embodied is an application duty."
     },
     {
-      "zh": "耗散（Dissipative，见 no-finite-part-bears-taking）是物理前提，只用于耗散之下的结论；它只约束有封闭有限家族的步（Spray）。generation_opens 的结论（家族不封闭）可以由与家族无关的交换满足（SprayShuttle），所以“家族须从其外汲入”另需家族被围住（Around：某个包含它的不重复有限家族跨每步封闭；generation_draws_in）。",
-      "en": "Dissipation (Dissipative, see no-finite-part-bears-taking) is a physical premise, used only for the conclusions under dissipation; it constrains only steps at which some finite family is closed (Spray). The conclusion of generation_opens, that the family is not closed, can be met by exchange unrelated to the family (SprayShuttle), so that the family must draw in from beyond it needs, in addition, the family enclosed around (Around: some finite family without repetition containing it closed across each step; generation_draws_in)."
+      "zh": "不体现的生起不受体现的结论约束（Flicker）。体现只用来推出生起时开始作为条件而在（Embodied.comesToStand）；关于开始作为条件而在的一般结论不需要体现，不开始作为条件而在的生起不受它们约束（Sleeper）。",
+      "en": "Arising that is not embodied is not constrained by the conclusions about embodiment (Flicker). Embodiment is used only to derive that an arising relatum comes to stand (Embodied.comesToStand); the general conclusions about coming to stand do not need it, and arising without coming to stand is not constrained by them (Sleeper)."
+    },
+    {
+      "zh": "它在一类读法的同一对应下读：哪个条件就是哪个形成由共同的索引给出（relabel，见 life-as-condition-of-life）。",
+      "en": "It is read under the one-kind identification: which condition is which formation is supplied by the shared index (relabel, see life-as-condition-of-life)."
+    },
+    {
+      "zh": "耗散（Dissipative，见 no-finite-part-bears-taking）是物理前提，只用于耗散之下的结论；它只约束有封闭有限家族的步（Spray）。",
+      "en": "Dissipation (Dissipative, see no-finite-part-bears-taking) is a physical premise, used only for the conclusions under dissipation; it constrains only steps at which some finite family is closed (Spray)."
+    },
+    {
+      "zh": "generation_opens 的结论（家族不封闭）可以由与家族无关的交换满足（SprayShuttle），所以“家族须从其外汲入”另需家族被围住（Around：某个包含它的不重复有限家族跨每步封闭；generation_draws_in）。",
+      "en": "The conclusion of generation_opens, that the family is not closed, can be met by exchange unrelated to the family (SprayShuttle), so that the family must draw in from beyond it needs, in addition, the family enclosed around (Around: some finite family without repetition containing it closed across each step; generation_draws_in)."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "关于体现的结论只约束体现的关系项的生起，不体现的生起不受约束。",
+      "en": "The conclusions about embodiment constrain only the arising of embodied relata; arising that is not embodied is unconstrained.",
+      "kind": "scope",
+      "witness": "Becoming.Flicker.flicker"
+    },
+    {
+      "zh": "一般的结论约束开始作为条件而在，不约束从休眠中醒来。",
+      "en": "The general conclusions constrain coming to stand, not waking from dormancy.",
+      "kind": "scope",
+      "witness": "Becoming.Sleeper.sleeper"
+    },
+    {
+      "zh": "体现是表示前提：遗骸、种子库与不活跃的条件不体现，种子库与休眠由活跃之前开始作为条件而在与醒来陈述。",
+      "en": "Embodiment is a representational premise: remains, seed banks and inactive conditions are not embodied, seed banks and dormancy being stated through coming to stand before activity and waking.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "耗散是物理前提，单位可公度。",
+      "en": "Dissipation is a physical premise with commensurable units.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "家族中生成复现时家族不封闭，这可以由与家族无关的交换满足；汲入只在家族被围住时陈述。",
+      "en": "That a family with recurring generation is not closed can be met by exchange unrelated to the family; drawing in is stated only for a family enclosed around.",
+      "kind": "non-implication",
+      "witness": "Becoming.SprayShuttle.opens_anyway"
+    },
+    {
+      "zh": "不封闭的定律只约束在一个有限家族中复现的生成；不断生起新的关系项（如 Brood）不在任何有限家族中复现。",
+      "en": "The opening law constrains only generation recurring in one finite family; the arising of ever new relata, as in Brood, recurs in no finite family.",
+      "kind": "scope"
+    },
+    {
+      "zh": "“有限”指有限的关系项家族；见证都是最小见证，Shuttle 中持有者取用自身的水平，不读作汲取。",
+      "en": "‘Finite’ means a finite family of relata; the witnesses are minimal, and in Shuttle the holder takes its own standing without that being read as drawing.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "detail": {
+        "zh": "没有耗散，体现的生成可以在封闭的有限世界中不息（Shuttle.shuttle）：持有者归还它所取，两方轮流生起。",
+        "en": "Without dissipation, embodied generation can be unceasing in a closed finite world (Shuttle.shuttle): the holder gives back what it takes and the two sides arise in turn."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "detail": {
+        "zh": "不体现的生起不需要补充：Flicker 在一个关系项的耗散世界中不息地生起（Flicker.flicker）；两类读法中没有形成体现（roles_not_embodied）。",
+        "en": "Arising that is not embodied needs no replenishment: Flicker arises without end in a dissipative world of one relatum (Flicker.flicker); in the two-kind reading no formation is embodied (roles_not_embodied)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "detail": {
+        "zh": "前提相容并且结论可达：Throughput 平衡、耗散，两方体现并承担自身，各自在任意晚的步生起；包含一方的每个有限家族在任意晚的步打开（Throughput.frontier），两方的家族每步被两方与所燃的燃料围住（Throughput.around），在任意晚的步给予家族的一方从燃料取用（Throughput.draws_in）。Brood 不耗散（Brood.not_dissipative）。",
+        "en": "The premises are consistent and the conclusion attained: Throughput balances and is dissipative, both sides are embodied and bear on themselves, and each arises at arbitrarily late steps; every finite family containing a side opens at arbitrarily late steps (Throughput.frontier), the family of the sides is enclosed around at every step by the sides and the fuel burnt (Throughput.around), and at arbitrarily late steps the side giving to it takes from the fuel (Throughput.draws_in). Brood is not dissipative (Brood.not_dissipative)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "detail": {
+        "zh": "generation_opens 的结论可以由与家族无关的交换满足（SprayShuttle.spray_shuttle、opens_anyway）：两方如 Shuttle 来回传递，一个汇每步从一个辅助关系项取一份又还给它；汇与不断新的关系项交换，没有一步被封闭，耗散空成立；两方在任意晚的步生起，给予家族的关系项只从家族取用，汇从不与两方交换，家族的存量恒为一，而家族从任何一步起都不封闭；没有一步围住它（第七次独立审查 K1）。",
+        "en": "The conclusion of generation_opens can be met by exchange unrelated to the family (SprayShuttle.spray_shuttle, opens_anyway): two sides hand one standing back and forth as in Shuttle, while a sink takes one unit from an auxiliary relatum at every step and gives it back; the sink exchanges with ever new relata, so no step is enclosed and dissipation holds vacuously; the sides arise at arbitrarily late steps, every relatum giving to the family takes only from it, the sink never exchanges with the sides, and the family's stock is one at every step, yet the family is not closed from any step on; no step encloses it around (seventh independent review, K1)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
+      "detail": {
+        "zh": "从休眠中醒来是生起而不开始作为条件而在：一个关系项始终以水平一作为条件而在、在奇数步醒来；它的流中没有形成参与，流平衡，耗散空成立，Dependent 成立，生成不息而没有任何给予（Sleeper.sleeper）。",
+        "en": "Waking from dormancy is arising without coming to stand: a relatum stands at level one throughout and wakes at odd steps; no formation takes part in its flow, which balances and is vacuously dissipative, Dependent holds, and generation is unceasing with nothing given (Sleeper.sleeper)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
+      "detail": {
+        "zh": "水平可以早于活动：父代在第 0 步给予种子一单位，种子休眠一步后活跃；它在休眠时开始作为条件而在、被给予它的水平，在第 1 步生起时没有任何给予（Provisioned.provisioned）。",
+        "en": "Standing can come before activity: a parent gives a seed one unit at step 0 and the seed is active after one dormant step; it comes to stand while dormant, given its standing, and is given nothing at step 1 when it arises (Provisioned.provisioned)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z）：Roles 与 Dissipation 中关于体现生成的定理、Flow、Dissipation、Roles 与 Reserve 中关于开始作为条件而在的定理，以及 Flow 与 Dissipation 中关于上升的定理，公理报告都为空；检查器并核对核心纯净。作者反审见整合文档 §20 与 §24；后一部分经独立审查（见来源）接受其数学，修正在整合文档中处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z): the theorems on embodied generation in Roles and Dissipation, on coming to stand in Flow, Dissipation, Roles and Reserve, and on rising in Flow and Dissipation have empty axiom reports, and the checker verifies core purity. Author counterreview in §20 and §24 of the integration note; an independent review, listed under sources, accepts the mathematics of the later part, its corrections handled in the integration note."
+  },
+  "next_delta": {
+    "zh": "生成在多大程度上必须读作体现（Ren）；有理数量的版本；体现的生成与“更多”在耗散之下的关系；实际生命中体现与耗散的经验对应。",
+    "en": "How far generation must be read as embodied (Ren); a version with rational amounts; the relation of embodied generation to “more” under dissipation; the empirical correspondence of embodiment and dissipation in actual lives."
+  },
   "correspondence": {
     "zh": "第五次独立审查（I3）指出，在流的形式中生起只经由它带来的取用起作用，并在其 §4 列出：一个耗散的流的定理会让生成本身而不是取用承担要求。no-finite-part-bears-taking 的界限写明结论不约束不取用的生起；life-as-condition-of-life 写明 Brood 不耗散、耗散之下的一类读法未陈述。本结果在一类关系项的读法中回答这三处。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把结果读作原话中“生”与“整体”之间关系的一种形式内容：若生起的体现关系项自身就是其他关系项的条件（只在 Ren 把它读作“生”时才读作生命），每次生起都是一次补充；在耗散之下，一个被围住的有限部分中不息的生起须从其外汲入（作者的诠释，AI 论证；第七次独立审查 K1 更正了此前“不能由任何有限的部分独自承担”的说法：耗散空成立时，有限的部分可以独自承担生成，而结论由与它无关的交换满足，见 SprayShuttle）；它不替代 Ren 的原话，也不推出它是好的。实际的生命是否体现、实际的量是否耗散，是对应与经验问题。",
     "en": "The fifth independent review (I3) found that in the flow form arising contributes only the uptake it brings, and listed in its §4 that a dissipative flow theorem would make generation itself, rather than uptake, carry the requirement. The boundary of no-finite-part-bears-taking says its conclusion does not constrain arising without taking; life-as-condition-of-life says Brood is not dissipative and the one-kind reading under dissipation is not stated. This result answers all three in the one-kind reading. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads the result as one formal content of the relation between 生 and the whole in those words: where an arising embodied relatum is itself a condition of others (read as 生 only under Ren's reading), every arising is a replenishment, and under dissipation unceasing arising in a finite part enclosed around draws in from beyond it (the author's interpretation, an AI argument; K1 of the seventh independent review corrected the earlier “cannot be borne by any finite part alone”: where dissipation holds vacuously, a finite part can bear generation alone while exchange unrelated to it meets the conclusion, see SprayShuttle); it does not replace Ren's words and does not show that it is good. Whether actual lives are embodied, and whether actual quantities dissipate, are questions of correspondence and evidence."
@@ -186,58 +455,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "detail": {
-        "zh": "没有耗散，体现的生成可以在封闭的有限世界中不息（Shuttle.shuttle）：持有者归还它所取，两方轮流生起。",
-        "en": "Without dissipation, embodied generation can be unceasing in a closed finite world (Shuttle.shuttle): the holder gives back what it takes and the two sides arise in turn."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "detail": {
-        "zh": "不体现的生起不需要补充：Flicker 在一个关系项的耗散世界中不息地生起（Flicker.flicker）；两类读法中没有形成体现（roles_not_embodied）。",
-        "en": "Arising that is not embodied needs no replenishment: Flicker arises without end in a dissipative world of one relatum (Flicker.flicker); in the two-kind reading no formation is embodied (roles_not_embodied)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "detail": {
-        "zh": "前提相容并且结论可达：Throughput 平衡、耗散，两方体现并承担自身，各自在任意晚的步生起；包含一方的每个有限家族在任意晚的步打开（Throughput.frontier），两方的家族每步被两方与所燃的燃料围住（Throughput.around），在任意晚的步给予家族的一方从燃料取用（Throughput.draws_in）。Brood 不耗散（Brood.not_dissipative）。",
-        "en": "The premises are consistent and the conclusion attained: Throughput balances and is dissipative, both sides are embodied and bear on themselves, and each arises at arbitrarily late steps; every finite family containing a side opens at arbitrarily late steps (Throughput.frontier), the family of the sides is enclosed around at every step by the sides and the fuel burnt (Throughput.around), and at arbitrarily late steps the side giving to it takes from the fuel (Throughput.draws_in). Brood is not dissipative (Brood.not_dissipative)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "detail": {
-        "zh": "generation_opens 的结论可以由与家族无关的交换满足（SprayShuttle.spray_shuttle、opens_anyway）：两方如 Shuttle 来回传递，一个汇每步从一个辅助关系项取一份又还给它；汇与不断新的关系项交换，没有一步被封闭，耗散空成立；两方在任意晚的步生起，给予家族的关系项只从家族取用，汇从不与两方交换，家族的存量恒为一，而家族从任何一步起都不封闭；没有一步围住它（第七次独立审查 K1）。",
-        "en": "The conclusion of generation_opens can be met by exchange unrelated to the family (SprayShuttle.spray_shuttle, opens_anyway): two sides hand one standing back and forth as in Shuttle, while a sink takes one unit from an auxiliary relatum at every step and gives it back; the sink exchanges with ever new relata, so no step is enclosed and dissipation holds vacuously; the sides arise at arbitrarily late steps, every relatum giving to the family takes only from it, the sink never exchanges with the sides, and the family's stock is one at every step, yet the family is not closed from any step on; no step encloses it around (seventh independent review, K1)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
-      "detail": {
-        "zh": "从休眠中醒来是生起而不开始作为条件而在：一个关系项始终以水平一作为条件而在、在奇数步醒来；它的流中没有形成参与，流平衡，耗散空成立，Dependent 成立，生成不息而没有任何给予（Sleeper.sleeper）。",
-        "en": "Waking from dormancy is arising without coming to stand: a relatum stands at level one throughout and wakes at odd steps; no formation takes part in its flow, which balances and is vacuously dissipative, Dependent holds, and generation is unceasing with nothing given (Sleeper.sleeper)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
-      "detail": {
-        "zh": "水平可以早于活动：父代在第 0 步给予种子一单位，种子休眠一步后活跃；它在休眠时开始作为条件而在、被给予它的水平，在第 1 步生起时没有任何给予（Provisioned.provisioned）。",
-        "en": "Standing can come before activity: a parent gives a seed one unit at step 0 and the seed is active after one dormant step; it comes to stand while dormant, given its standing, and is given nothing at step 1 when it arises (Provisioned.provisioned)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "不含伦理谓词；关于体现的结论只约束体现的关系项的生起，不体现的生起不受约束；一般的结论约束开始作为条件而在，不约束从休眠中醒来（Sleeper）；Embodied 是表示前提，遗骸、种子库与不活跃的条件不体现，种子库与休眠由 came_to_stand、Provisioned 与 Sleeper 陈述；耗散是物理前提，单位可公度；generation_opens 只约束在一个有限家族中复现的生成，它的结论可以由与家族无关的交换满足（SprayShuttle），汲入只在家族被围住时陈述（generation_draws_in），不断生起新的关系项（如 Brood）不在任何有限家族中复现；“有限”指有限的关系项家族；见证都是最小见证，Shuttle 中持有者取用自身的水平，不读作汲取；新名称最终由 Ren 定。",
-    "en": "Contains no ethical predicate; the conclusions about embodiment constrain only the arising of embodied relata, and arising that is not embodied is unconstrained; the general conclusions constrain coming to stand, not waking from dormancy (Sleeper); Embodied is a representational premise, and remains, seed banks and inactive conditions are not embodied, seed banks and dormancy being stated through came_to_stand, Provisioned and Sleeper; dissipation is a physical premise with commensurable units; generation_opens constrains only generation recurring in one finite family, its conclusion can be met by exchange unrelated to the family (SprayShuttle), and drawing in is stated only for a family enclosed around (generation_draws_in), and arising of ever new relata (as in Brood) recurs in no finite family; “finite” means a finite family of relata; the witnesses are minimal, and in Shuttle the holder takes its own standing without that being read as drawing; the final choice of names is Ren's."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理，以及 P17 在 Becoming.Flow、Dissipation、Roles 与 Reserve 新增的开始作为条件而在的定理、P18b 在 Becoming.Flow 与 Dissipation 新增的上升的定理，全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20 与 §24；§24 的部分经第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md），其数学被接受，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation, with the theorems on coming to stand that P17 adds to Becoming.Flow, Dissipation, Roles and Reserve and those on rising that P18b adds to Becoming.Flow and Dissipation, all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 and §24 of the integration note; the part in §24 was examined by the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md), which accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
@@ -531,10 +748,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Flow.BalancesOn.standing_given、BalancesOn.rise_replenishes、rising_needs_replenishment_from、standing_needs_replenishment_from、rising_not_recurring_from、standing_not_recurring_from、rising_draws_in_from、Web.Embodied.given_of_arises_at、Embodied.replenishes_at、generation_needs_replenishment_from、Embodied.arising_lowers_at、generation_not_recurring_from、generation_draws_in_from（P57），局部条件写在规律之内：平衡与耗散只在所用的一步、一段或某步以后各步上，在所用的家族上；Flow.Balances.standing_given、Balances.rise_replenishes、rising_needs_replenishment、standing_needs_replenishment、rising_not_recurring_on、standing_not_recurring_on、rising_draws_in、Web.Embodied.given_of_arises、Embodied.replenishes、generation_needs_replenishment、Embodied.arising_lowers_on、generation_ceases_on是它们的推论；生成在多大程度上必须读作体现（Ren）；有理数量的版本；体现的生成与“更多”在耗散之下的关系；实际生命中体现与耗散的经验对应。",
-    "en": "The exact restatement for every world is this record's Flow.BalancesOn.standing_given, BalancesOn.rise_replenishes, rising_needs_replenishment_from, standing_needs_replenishment_from, rising_not_recurring_from, standing_not_recurring_from, rising_draws_in_from, Web.Embodied.given_of_arises_at, Embodied.replenishes_at, generation_needs_replenishment_from, Embodied.arising_lowers_at, generation_not_recurring_from, generation_draws_in_from (P57), the local condition inside the law: balance and dissipation only at the step, the stretch or the steps from some step on that are used, on the family used; Flow.Balances.standing_given, Balances.rise_replenishes, rising_needs_replenishment, standing_needs_replenishment, rising_not_recurring_on, standing_not_recurring_on, rising_draws_in, Web.Embodied.given_of_arises, Embodied.replenishes, generation_needs_replenishment, Embodied.arising_lowers_on, generation_not_recurring_on are their corollaries; how far generation must be read as embodied (Ren); a version with rational amounts; the relation of embodied generation to “more” under dissipation; the empirical correspondence of embodiment and dissipation in actual lives."
-  },
   "history": [
     {
       "zh": "2026-10-09：作为整合计划 P15 新增，回答第五次独立审查 I3 与其 §4 第 2 项、no-finite-part-bears-taking 的界限与 life-as-condition-of-life 的下一步；按 Ren“move on to pursue the theory of becoming, and prove the necessary proofs”。",
@@ -831,6 +1044,20 @@
     {
       "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；统一计划只在 §10 的 P36 对照表后加入 2026-10-14 的对照表。本记录的主张、前提与状态不变，不记作重新证明。",
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; the unification plan only adds the 14 October 2026 rename table after the P36 table in section 10. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（M3）：长标题改为短名，陈述在先；主张拆为 17 条规律；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。原附在下一步中的局部重述改为规律 17，全局形式是其推论（旧中文列表写 generation_ceases_on，英文与模块为 generation_not_recurring_on）；两项较长的假设分为三项与两项。每句旧文本的去向见迁移对照表 [generation-is-replenishment.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/generation-is-replenishment.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (M3): the long title became a short name with the statement first; the claim was split into 17 laws; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The local restatements that had been appended to the next step became law 17, with the global forms as corollaries (the old Chinese list named generation_ceases_on where the English and the module have generation_not_recurring_on); two long hypotheses were split (into three and two). Every earlier sentence is mapped in the migration table [generation-is-replenishment.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/generation-is-replenishment.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/fc40c6fd2dc8ed87/generation-is-replenishment.json",
+      "sha256": "fc40c6fd2dc8ed87d6225cd58b6ccb2f3f5b90ef8081132a3bf9fbcff682e203",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }

@@ -1,0 +1,864 @@
+{
+  "schema_version": 1,
+  "id": "rest-at-every-resolution",
+  "title": {
+    "zh": "每一分辨率下每一固定尺度的静止：自然数的单位是一个损失的量子；不算入细分时，按比例的损失为被围住的家族交换的总量定下最小的界，连同最小尺度为被围住的交换、增长、下降、生起与止息的次数定下界，储备的最小下降为储备所推迟的终结定下界；缺少其中任何一个，变化都可以无尽地继续",
+    "en": "Rest at each size, at every resolution: the natural-number unit is a quantum of loss; without counting the refinement, loss in proportion sets the least bound on the whole amount an enclosed family exchanges and, with a least size, bounds the times of enclosed exchange, growth, falling, arising and ceasing, and a least fall of the reserve bounds the end a reserve defers; without any one of these, change can continue without end"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "claim": {
+    "zh": "脊柱以一个固定单位的自然数计量，所以耗散每次交换至少损失一个单位；静止与开放的规律依赖这一量子。把单位的细分算作只给不取的形成时，脊柱的前提不添任何前提就带来每一分辨率下的静止（rest-with-refinement-counted）；本结果是不算入细分时的规律，按 Ren 2026-10-11 的选择作为研究笔记保留。让单位跨过第 t 步分为 r t 个更细的单位（Flow.BalancesAt r；r 恒为一时就是 Balances，Flow.balancesAt_one），R 计每一步的单位数，以第 T 步的单位为一。损失的规律：从 T 起每步，q 乘余下的连同 k 个量子不多于 q 乘此前所有的时，自 T 起计到的量子不多于 q 乘该量在 T 的值（losses_invariant、losses_bound）；所以在细分分辨率下平衡且耗散时，从 T 起封闭的不重复家族损失至少 1/q 第 T 步单位的步不多于 q 乘其存量（Flow.quantum_bound），不复现（Flow.quantum_not_recurring）；单位固定时取用封闭家族不复现（Flow.taking_not_recurring）。按比例的损失：每个封闭家族得回的至多是从它取走的 q/(q+1) 时（Flow.DissipativeBy q；每个形成给回的至多是所取的 q/(q+1) 时如此，Flow.DissipatesBy.of_each），量的规律在每一分辨率下成立：从 T 起封闭的不重复家族被取走的总量，每步的量以第 T 步的单位计（refinedSum），至多是它在 T 的存量的 q+1 倍，得回的总量至多 q 倍（Flow.uptake_bound、Flow.replenishment_bound，由不变式 refinedSum_invariant）；在有普查、关系项都体现、从 T 起每步被围住的世界中，从所立者被取走的总量至多是 T 时所立者总水平的 q+1 倍，给予所立者的至多 q 倍（World.taken_bound、World.given_bound）。这个界是最小的：Geometric 中一个形成每步取走整个封闭的池、给回 q/(q+1)，单位每步分为 q+1 个，被取走的总量对每个 m 都到达 q+1 乘池的 1/m 之内（amount_sharp）。每个尺度的计数都由量的规律得出：每步的计数不多于 p 乘一个量时，自 T 起的计数不多于 p 乘该量的界（counts_of_amounts）；所以从 T 起封闭的家族中，取用至少 1/p 单位的形成逐个逐步计数，总数不多于 p(q+1) 乘其在 T 的存量（交换的规律，Flow.exchange_bound、Flow.exchange_not_recurring）；在有普查、关系项都体现、从 T 起每步被围住的世界中，增长至少 1/p 单位的关系项逐个逐步计数，总数不多于 p q 乘 T 时所立者的总水平（增长的规律，World.growth_bound），所以这样的增长不复现（World.growth_not_recurring），这一尺度的生起也不在任意晚的步发生（World.arising_not_recurring）；同样，下降至少 1/p 单位的关系项逐个逐步计数，总数不多于 p(q+1) 乘 T 时所立者的总水平（下降的规律，World.fall_bound、World.fall_not_recurring），所以立于至少 1/p 单位者的止息也不复现（World.ceasing_not_recurring）：在每一分辨率下，这一尺度的生起与止息都不复现（World.not_recurring_at_resolution）。储备：每个活跃而不被支持的步使储备至少下降 1/p 单位时（Web.CarriesAt），从 T 起不被支持的形成活跃的步不多于 p 乘其在 T 的储备（Web.CarriesAt.lasts）；脊柱的储备是 p 为一、单位固定的情形（Web.Carries.carriesAt），细分单位下只要求储备下降的读法在单位固定时就是脊柱的储备（Web.CarriesIn、Web.carriesIn_one）。每一尺度的最小损失：脊柱的耗散之下，取用至少 1/p 单位的形成都失去至少 1/m 单位时（Flow.LosesAtSize），从 T 起封闭的家族中这样的取用逐个逐步计数不多于 m 乘其在 T 的存量（Flow.exchange_bound_of_least_loss、Flow.exchange_not_recurring_of_least_loss）；逐个形成按比例的损失给出这样的最小损失（Flow.losesAtSize_of_each）。计数转移只需每一尺度的最小损失，计数关系项的增长与为交换的总量定界需要更多。边界，每个见证都在无尽细分的单位下平衡并耗散：Asymptote 失去其所取用的全部，所以按每个比例耗散，恰在单位无尽地细分时无尽地被取用，在固定单位下不平衡（rest_needs_quantum、Asymptote.exchange_recurs_iff、Asymptote.not_balanced）；Circulation 每步交换第 0 步的一整个单位，每步围住所立者，损失下一步的一个单位，不按任何比例耗散（exchange_needs_quantum）；Emission 有普查、关系项都体现、每步被围住、失去所取用的一半，每步生起一个新关系项，立于下一步的一个单位，在固定单位下不平衡（arising_needs_quantum、Emission.not_balanced）；Alternation 有普查、关系项都体现、每步被围住，两侧轮流持有并生起第 0 步的一整个单位，不按任何比例耗散，在固定单位下不平衡（arising_needs_proportion、Alternation.not_balanced）；Dwindle 中单位每步减半，一个从不被支持的形成每步都活跃，储备在更细单位下每步下降而以第 0 步单位计趋于一个单位，对任何 p，每个活跃的步都不使储备下降 1/p 单位（reserve_needs_quantum）；Trickle 中单位每步分为四个，第 0 步的一整个单位在两侧之间由越来越多、越来越小的转移带过，每份失去下一步的两个单位，每一尺度都有最小损失，每个固定尺度的转移停止，而一整个单位在任意晚的步生起，不按任何比例耗散（growth_needs_proportion）。",
+    "en": "The spine counts amounts in natural numbers of one fixed unit, so dissipation loses at least a unit at every exchange, and the rest and openness laws rely on that quantum. With the splitting of the unit counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added (rest-with-refinement-counted); this result gives the laws without counting the refinement, kept as research notes by Ren's choice of 11 October 2026. Let the unit split into r t finer units across the step from t (Flow.BalancesAt r; with r constantly one it is Balances, Flow.balancesAt_one), and let R count the units of each step, the unit of step T being one. The loss law: where across each step from T on q times what remains together with k quanta is within q times what was there, the quanta counted since T number at most q times the quantity at T (losses_invariant, losses_bound); so, balanced at a refining resolution and dissipative, a family without repetition closed from T on loses at least 1/q of the unit of step T at no more steps than q times its stock (Flow.quantum_bound), and losing so does not recur (Flow.quantum_not_recurring); with the unit fixed, taking from a closed family does not recur (Flow.taking_not_recurring). Loss in proportion: where every closed family gets back at most q/(q+1) of what is taken from it (Flow.DissipativeBy q; so where each formation gives back at most q/(q+1) of what it takes, Flow.DissipatesBy.of_each), the amount law holds at every resolution: everything taken from a family without repetition closed from T on, each step's amount counted in the unit of step T (refinedSum), is at most q + 1 times its stock at T, and everything given back at most q times (Flow.uptake_bound, Flow.replenishment_bound, by the invariant refinedSum_invariant); in a world with a census, embodied relata and every step from T on enclosed, everything taken from what stands is at most q + 1 times the total standing at T, and everything given to what stands at most q times (World.taken_bound, World.given_bound). The bound is the least: in Geometric one formation takes the whole of a closed pool at each step and gives back q/(q+1) of it, at a unit splitting into q + 1 at each step, and everything taken comes within 1/m of q + 1 times the pool for every m (amount_sharp). Every count of a size follows from the amount law: where each step's count is within p times an amount, the count since T is within p times the amount's bound (counts_of_amounts); so the formations taking at least 1/p of the unit from a family closed from T on, counted formation by formation and step by step, number at most p(q+1) times its stock at T (the exchange law, Flow.exchange_bound, Flow.exchange_not_recurring); in a world with a census, embodied relata and every step from T on enclosed, the relata gaining at least 1/p of the unit, counted relatum by relatum and step by step, number at most p q times the total standing at T (the growth law, World.growth_bound), so such gains do not recur (World.growth_not_recurring) and nothing arises at that size at arbitrarily late steps (World.arising_not_recurring); likewise the relata falling by at least 1/p of the unit, counted relatum by relatum and step by step, number at most p(q+1) times the total standing at T (the fall law, World.fall_bound, World.fall_not_recurring), so nothing standing at least 1/p of the unit ceases at arbitrarily late steps (World.ceasing_not_recurring): at every resolution neither arising nor ceasing at that size recurs (World.not_recurring_at_resolution). Reserve: where each active step beyond support lowers the reserve by at least 1/p of the unit (Web.CarriesAt), a formation unsupported from T on is active at most p times its reserve at T (Web.CarriesAt.lasts); the spine's reserve is the case of p one at a fixed unit (Web.Carries.carriesAt), and the reading in a refining unit that asks only that the reserve fall is, with the unit fixed, the spine's reserve (Web.CarriesIn, Web.carriesIn_one). A least loss at each size: with the spine's dissipation, where each formation taking at least 1/p of the unit loses at least 1/m of it (Flow.LosesAtSize), such takings from a family closed from T on, counted formation by formation and step by step, number at most m times its stock at T (Flow.exchange_bound_of_least_loss, Flow.exchange_not_recurring_of_least_loss); loss in proportion at each transfer gives such a least loss (Flow.losesAtSize_of_each). Counting transfers needs only a least loss at each size; counting what relata gain, and bounding the amount exchanged, needs more. The boundaries, each witness balanced at a unit splitting without end and dissipative: Asymptote, losing all it takes and so dissipative in every proportion, is taken from without end exactly where the unit splits without end, and does not balance at the fixed unit (rest_needs_quantum, Asymptote.exchange_recurs_iff, Asymptote.not_balanced); Circulation exchanges one whole unit of step 0 at every step, every step enclosed around what stands, losing one unit of the step after, and is dissipative in no proportion (exchange_needs_quantum); Emission, with a census, embodied relata, every step enclosed and half of what is taken lost, has a new relatum arise at every step, standing at one unit of the step after, and does not balance at the fixed unit (arising_needs_quantum, Emission.not_balanced); Alternation, with a census, embodied relata and every step enclosed, has two sides hold and arise with one whole unit of step 0 in turn, is dissipative in no proportion, and does not balance at the fixed unit (arising_needs_proportion, Alternation.not_balanced); in Dwindle, at a unit halving at each step, a formation never supported is active at every step, its reserve falling in the finer unit at each and tending to one unit of step 0, with no fall of the reserve by 1/p of the unit at each active step for any p (reserve_needs_quantum); in Trickle, at a unit quartering at each step, a whole unit of step 0 passes between two sides in ever more, ever smaller transfers, each losing two units of the step after, so every size has a least loss and transfers of each fixed size stop, yet a whole unit arises at arbitrarily late steps, with no proportion lost (growth_needs_proportion)."
+  },
+  "hypotheses": [
+    {
+      "zh": "分辨率：R T = 1，从 T 起 R (t + 1) = r t · R t 且 0 < r t，即单位只细分；每一步的量仍是该步单位的自然数。这些是定理的假设，不是公理。",
+      "en": "Resolution: R T = 1 and, from T on, R (t + 1) = r t · R t with 0 < r t, so the unit only splits; amounts at each step stay natural numbers of that step's unit. These are hypotheses of the theorems, not axioms."
+    },
+    {
+      "zh": "按比例的损失（Flow.DissipativeBy q）：在每个跨过一步封闭的不重复家族上，家族得回的至多是从它取走的 q/(q+1)；每个参与的形成给回的至多是所取的 q/(q+1) 时如此（Flow.DissipatesBy.of_each），反之不然。它是前提，是脊柱一单位损失的无单位对应，不是推出的；作者读作家族的交换合起来的效率上界。Ren 2026-10-11 选择每次交换至少一个最小差异（“A is right”），未采用它为理论的前提；这一线作为研究笔记保留（sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md）。",
+      "en": "Loss in proportion (Flow.DissipativeBy q): on every family without repetition closed across a step, the family gets back at most q/(q+1) of what is taken from it; it holds where each formation taking part gives back at most q/(q+1) of what it takes (Flow.DissipatesBy.of_each), not conversely. It is a premise, the unit-free counterpart of the spine's one-unit loss, not derived; the author reads it as an upper bound on the efficiency of the family's exchanges taken together. On 11 October 2026 Ren chose a least difference at every exchange (‘A is right’) and did not take this as a premise of the theory; the line is kept as research notes (sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)."
+    },
+    {
+      "zh": "最小损失的交换律：脊柱的耗散（每个取用的形成给回封闭家族的至少比所取少下一步的一个单位；证明只用其不多于所取），以及每一尺度的最小损失（Flow.LosesAtSize：取用至少 1/p 单位的形成失去至少 1/m 单位，m 不随步变化）。",
+      "en": "The exchange law at a least loss: the spine's dissipation (each formation taking gives a closed family back at least one unit of the step after less than it takes; the proof uses only that it gives no more than it takes) and a least loss at each size (Flow.LosesAtSize: a formation taking at least 1/p of the unit loses at least 1/m of it, m the same at every step)."
+    },
+    {
+      "zh": "世界的规律：活动的普查、每个关系项都体现、从 T 起每步被围住，与静止定理（continued-change-needs-openness）相同。交换的规律只对从 T 起固定的封闭家族陈述。",
+      "en": "The world laws: a census of activity, every relatum embodied and every step from T on enclosed, as in the rest theorem (continued-change-needs-openness). The exchange law is stated for a fixed family closed from T on."
+    },
+    {
+      "zh": "储备的规律：从 T 起不被支持；活动可判定。储备的最小下降（每个活跃的步至少 1/p 单位）是前提，是脊柱一单位下降的无单位对应；细分算入时，凡细分不给储备之处它就是脊柱的储备（Web.CarriesIn.lasts_unrefined，见 rest-with-refinement-counted）。",
+      "en": "The reserve law: unsupported from T on; activity decidable. The least fall of the reserve (at least 1/p of the unit at each active step) is a premise, the unit-free counterpart of the spine's one-unit fall; with the refinement counted, wherever it gives the reserve nothing the reserve is the spine's (Web.CarriesIn.lasts_unrefined, see rest-with-refinement-counted)."
+    }
+  ],
+  "correspondence": {
+    "zh": "单位固定时的静止定理（continued-change-needs-openness）是 r = 1 并带脊柱一单位损失的情形；本结果说明那里的损失是由单位承载的一个量子，并给出不算入细分时每一分辨率下成立的规律。Ren 2026-10-11 说每次交换至少一个最小差异属于生成本身（“A is right - because of change, there is difference”），并问零前提的情形（sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md）；把单位的细分算作只给不取的形成，脊柱的前提不添前提就带来每一分辨率下的静止，本记录的见证都由细分供给（rest-with-refinement-counted）。作者的读法（AI 论证，待 Ren）：不算入细分时，以第 T 步的单位计，所立者的总水平是一个有理量，细分单位以更细的分辨率表示量；按比例的损失是效率的上界；1/p 是计数变化所用的尺度。在这一读法下，有界效率之下被围住的生成，任何固定尺度的都会停止；在围住之内只能以越来越细或越来越接近无损的方式继续。这回答了 continued-change-needs-openness 的下一步“带比率或连续量的总水平”中有理量与离散步的部分；连续时间与实数量仍开放。计数转移只需每一尺度的最小损失；计数关系项得到的，需要多于每一尺度转移的最小损失，因为一整个单位可以由越来越多、越来越小的转移带过（Trickle）。对家族总和的前提不受分割影响：比例如此，第十五次独立审查的探针 ReplenishedLoses（被给予至少 1/p 单位的封闭家族至少失去 1/m 单位）也如此，它严格弱于比例而仍给出增长的规律；分割打败的只是逐个转移的前提。此前这里说计数关系项“需要对家族的比例”，“只有损失随所转移的量成比例，分割才不能把损失分没”，是过度的必要性陈述，按第十五次独立审查 W1 更正。",
+    "en": "The rest theorem with a fixed unit (continued-change-needs-openness) is the case r = 1 with the spine's one-unit loss; this result shows that the loss there is a quantum carried by the unit and gives the laws holding at every resolution without counting the refinement. On 11 October 2026 Ren said that a least difference at every exchange belongs to becoming itself (‘A is right - because of change, there is difference’) and asked about the case of zero premises (sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md); with the splitting of the unit counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added, and the witnesses of this record are each fed by the refinement (rest-with-refinement-counted). The author's reading (an AI argument, pending Ren): without counting the refinement, the total standing counted in the unit of step T is a rational quantity, refining the unit representing amounts at finer resolution; loss in proportion is an upper bound on efficiency; 1/p is the size at which change is counted. On this reading, with bounded efficiency, enclosed generation of any fixed size stops, and inside an enclosure it can continue only ever finer or ever closer to lossless. This answers, for rational amounts and discrete steps, the next step of continued-change-needs-openness, ‘total standing with rates or continuous amounts’; continuous time and real amounts remain open. Counting transfers needs only a least loss at each size; counting what relata gain needs more than a least loss at each size of transfer, since a whole unit can pass in ever more, ever smaller transfers (Trickle). A premise on the family's totals is immune to splitting: so is the proportion, and so is the fifteenth independent review's probe ReplenishedLoses (a closed family given at least 1/p of the unit loses at least 1/m of it), which is strictly weaker than the proportion and still gives the growth law; what splitting defeats is a premise per transfer. This passage earlier said that counting what relata gain ‘needs the family's share’ and that ‘only a loss in proportion to what is transferred cannot be split away’; both overclaimed necessity and are corrected following W1 of the fifteenth independent review."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+  "aliases": [
+    "Becoming.Flow.BalancesAt",
+    "Becoming.Flow.balancesAt_one",
+    "Becoming.LosesQuantum",
+    "Becoming.losses_invariant",
+    "Becoming.losses_bound",
+    "Becoming.bounded_not_recurring",
+    "Becoming.quantum_bound",
+    "Becoming.quantum_not_recurring",
+    "Becoming.Flow.quantum_bound",
+    "Becoming.Flow.quantum_not_recurring",
+    "Becoming.Flow.taking_not_recurring",
+    "Becoming.Flow.DissipatesBy",
+    "Becoming.Flow.DissipativeBy",
+    "Becoming.Flow.exchange_bound",
+    "Becoming.Flow.exchange_not_recurring",
+    "Becoming.Web.Gains",
+    "Becoming.World.growth_bound",
+    "Becoming.World.growth_not_recurring",
+    "Becoming.World.arising_not_recurring",
+    "Becoming.rest_needs_quantum",
+    "Becoming.exchange_needs_quantum",
+    "Becoming.arising_needs_quantum",
+    "Becoming.arising_needs_proportion",
+    "Becoming.Web.Loses",
+    "Becoming.World.fall_bound",
+    "Becoming.World.fall_not_recurring",
+    "Becoming.World.ceasing_not_recurring",
+    "Becoming.World.not_recurring_at_resolution",
+    "Becoming.Web.CarriesAt",
+    "Becoming.Web.CarriesIn",
+    "Becoming.Web.carriesIn_one",
+    "Becoming.Web.CarriesAt.lasts",
+    "Becoming.reserve_needs_quantum",
+    "Becoming.Flow.DissipatesBy.of_each",
+    "Becoming.Flow.LosesAtSize",
+    "Becoming.Flow.LosesAtEverySize",
+    "Becoming.Flow.exchange_bound_of_least_loss",
+    "Becoming.Flow.exchange_not_recurring_of_least_loss",
+    "Becoming.growth_needs_proportion",
+    "Becoming.refinedSum",
+    "Becoming.refinedSum_invariant",
+    "Becoming.counts_of_amounts",
+    "Becoming.Flow.uptake_bound",
+    "Becoming.Flow.replenishment_bound",
+    "Becoming.World.taken_bound",
+    "Becoming.World.given_bound",
+    "Becoming.amount_sharp",
+    "Becoming.throughput_needs_proportion",
+    "Becoming.Asymptote.not_balanced",
+    "Becoming.Emission.not_balanced",
+    "Becoming.Alternation.not_balanced"
+  ],
+  "dependencies": [
+    {
+      "id": "continued-change-needs-openness",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用所立者的普查与其存量（Web.StandingCensus、Web.StandingCensus.stock_eq、World.standingCensus）、围住所立者的步（Flow.AroundStanding、Flow.Enclosed.aroundStanding_not_not）与 exposed 的持有者（Exposed.stands_iff、Exposed.holder_one）；边界定理的前提对照 World.rests_unrefuted_enclosed、World.arising_opens 与 World.exchange_not_recurring。",
+        "en": "Reuses the census of what stands and its stock (Web.StandingCensus, Web.StandingCensus.stock_eq, World.standingCensus), steps enclosed around what stands (Flow.AroundStanding, Flow.Enclosed.aroundStanding_not_not) and the holder of exposed (Exposed.stands_iff, Exposed.holder_one); the boundary theorems match the premises of World.rests_unrefuted_enclosed, World.arising_opens and World.exchange_not_recurring."
+      },
+      "interface": {
+        "output": {
+          "zh": "跨过围住所立者的步，所立者的总水平等于围住它的家族的存量；被围住的步不能被否定为围住所立者。",
+          "en": "Across a step enclosed around what stands, the total standing equals the stock of the enclosing family; an enclosed step cannot be refuted to be enclosed around what stands."
+        },
+        "input": {
+          "zh": "在细分分辨率下，所立者的总水平不上升，每个至少 1/p 单位的增长使它至少损失 1/(p q) 单位。",
+          "en": "At a refining resolution the total standing does not rise, and each gain of at least 1/p of the unit makes it lose at least 1/(p q) of the unit."
+        },
+        "conditions": {
+          "zh": "活动的普查；关系项都体现；从 T 起每步被围住；细分分辨率下的平衡；按比例的损失。",
+          "en": "A census of activity; every relatum embodied; every step from T on enclosed; balance at a refining resolution; loss in proportion."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean"
+      }
+    },
+    {
+      "id": "no-finite-part-bears-taking",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用耗散与封闭家族（Flow.DissipatesOn、Flow.Dissipative、Flow.ClosedAt、Flow.Enclosed）、被耗散的家族的补给与取用者不多于其取用（DissipatesOn.replenishment_takers）、有限关系项时每步被围住（Flow.enclosed_of_finite）与支撑之间的总和比较（total_le_of_support）；单位固定时的情形对照 Flow.Balances.taking_not_recurring。",
+        "en": "Reuses dissipation and closed families (Flow.DissipatesOn, Flow.Dissipative, Flow.ClosedAt, Flow.Enclosed), that a family dissipated on has replenishment and takers within its uptake (DissipatesOn.replenishment_takers), that with finitely many relata every step is enclosed (Flow.enclosed_of_finite), and the comparison of totals between supports (total_le_of_support); the fixed-unit case matches Flow.Balances.taking_not_recurring."
+      },
+      "interface": {
+        "output": {
+          "zh": "被耗散的家族的补给连同取用者不多于其取用。",
+          "en": "A family dissipated on has its replenishment together with its takers within its uptake."
+        },
+        "input": {
+          "zh": "在细分分辨率下，存量连同取用者不多于 r t 乘此前的存量（Flow.BalancesAt.lowers）。",
+          "en": "At a refining resolution, the stock together with the takers is within r t times the stock before (Flow.BalancesAt.lowers)."
+        },
+        "conditions": {
+          "zh": "细分分辨率下的平衡；耗散；封闭的不重复家族。",
+          "en": "Balance at a refining resolution; dissipation; a closed family without repetition."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean"
+      }
+    },
+    {
+      "id": "reserve-defers-ending",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用储备 Web.Carries；Web.Carries.carriesAt 说明脊柱的储备是 p 为一、单位固定时的每一分辨率下的储备，Web.carriesIn_one 说明细分单位下的读法在单位固定时就是它；Web.CarriesAt.lasts 是 Web.Carries.lasts 在每一分辨率下的形式。",
+        "en": "Reuses the reserve Web.Carries; Web.Carries.carriesAt shows the spine's reserve is the reserve at every resolution with p one at a fixed unit, and Web.carriesIn_one that the reading in a refining unit is it when the unit is fixed; Web.CarriesAt.lasts is the form of Web.Carries.lasts at every resolution."
+      },
+      "interface": {
+        "output": {
+          "zh": "不被支持的步上储备不上升，活跃时下降。",
+          "en": "Across an unsupported step the reserve does not rise, and falls where the formation is active."
+        },
+        "input": {
+          "zh": "不被支持的步上储备在更细单位下不上升，活跃时至少下降 1/p 单位。",
+          "en": "Across an unsupported step the reserve does not rise in the finer unit, and falls by at least 1/p of the unit where the formation is active."
+        },
+        "conditions": {
+          "zh": "从 T 起不被支持；单位只细分；活动可判定。",
+          "en": "Unsupported from T on; the unit only refines; activity decidable."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "counting-under-enclosure",
+      "detail": {
+        "zh": "那里被围住为变化定下界（以单位计）；本结果在每一分辨率下为至少 1/p 单位的增长与取用定下界，以按比例的损失代替单位的量子。",
+        "en": "There enclosure bounds change, counted in the unit; this result bounds gains and taking of at least 1/p of the unit at every resolution, with loss in proportion in place of the unit's quantum."
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "zh": "计划 R1：表示的范围之一，量的单位；这不是无公理的整体演绎。",
+        "en": "Plan R1: one dimension of the representation's scope, the unit of amounts; this is not the deduction of the whole without axioms."
+      }
+    },
+    {
+      "id": "rest-with-refinement-counted",
+      "detail": {
+        "zh": "那里把细分算作只给不取的形成，脊柱的前提不添前提就带来每一分辨率下的静止，本记录的见证都由细分供给；本记录是不算入细分时的规律。",
+        "en": "There the splitting of the unit is counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added, and this record's witnesses are fed by the refinement; this record gives the laws without counting it."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "detail": {
+        "zh": "Asymptote：失去所取用的全部，按每个比例耗散，池每步封闭，取用者每步受支持；恰在单位无尽地细分时取用无尽（Asymptote.exchange_recurs_iff），所取用的缩小到每个量子之下，流在固定单位下不平衡（Asymptote.not_balanced）。所以最小尺度不能去掉。算入细分，细分供给它（refinement_feeds_witnesses）。",
+        "en": "Asymptote: losing all it takes, dissipative in every proportion, the pool closed and the drawer supported at every step; taking continues without end exactly where the unit splits without end (Asymptote.exchange_recurs_iff), what is taken shrinking below every quantum, and the flow does not balance at the fixed unit (Asymptote.not_balanced). So the least size cannot be dropped. Counted, the refinement feeds it (refinement_feeds_witnesses)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "detail": {
+        "zh": "Circulation：所立者被列出、平衡于减半的单位、耗散、每步围住所立者，每步交换第 0 步的一整个单位；由交换的规律，它不按任何比例耗散（Circulation.not_dissipativeBy）。所以单位固定时交换不复现（World.exchange_not_recurring）依赖量子，而按比例的损失不能去掉。",
+        "en": "Circulation: what stands listed, balanced at a halving unit, dissipative, every step enclosed around what stands, one whole unit of step 0 exchanged at every step; by the exchange law it is dissipative in no proportion (Circulation.not_dissipativeBy). So that the exchange does not recur with a fixed unit (World.exchange_not_recurring) relies on the quantum, and loss in proportion cannot be dropped."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "detail": {
+        "zh": "Emission：满足 World.rests_unrefuted_enclosed 的全部前提，只是平衡在减半的单位下，并按比例耗散（给回所取用的一半），每步生起一个新关系项，立于下一步的一个单位；世界在固定单位下不平衡（Emission.not_balanced）。所以静止定理依赖量子，按比例的损失没有最小尺度时也不足够。",
+        "en": "Emission: meets every premise of World.rests_unrefuted_enclosed but with balance at a halving unit, and is dissipative in proportion (giving back half of what it takes), with a new relatum arising at every step, standing at one unit of the step after; the world does not balance at the fixed unit (Emission.not_balanced). So the rest theorem relies on the quantum, and loss in proportion without a least size does not suffice."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "detail": {
+        "zh": "Alternation：满足 World.rests_unrefuted_enclosed 的全部前提，只是平衡在减半的单位下，两侧轮流生起第 0 步的一整个单位；由增长的规律，它不按任何比例耗散（Alternation.not_dissipativeBy），世界在固定单位下不平衡（Alternation.not_balanced）。所以最小尺度没有按比例的损失时也不足够。",
+        "en": "Alternation: meets every premise of World.rests_unrefuted_enclosed but with balance at a halving unit, the two sides arising with one whole unit of step 0 in turn; by the growth law it is dissipative in no proportion (Alternation.not_dissipativeBy), and the world does not balance at the fixed unit (Alternation.not_balanced). So a least size without loss in proportion does not suffice."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "detail": {
+        "zh": "Dwindle：单位每步减半，一个从不被支持的形成每步都活跃，储备以当步单位计为 2^t + 1，在更细单位下每步下降（Dwindle.carriesIn），以第 0 步单位计从上方趋于一个单位，永不到零；对任何 p，每个活跃的步不都使储备下降 1/p 单位（Dwindle.not_carriesAt、reserve_needs_quantum）。单位固定时这样的储备就是脊柱的储备（Web.carriesIn_one），由 Web.Carries.lasts 不能如此。所以储备推迟终结而不逃脱依赖量子，每一分辨率下要每个活跃的步储备的最小下降；算入细分，细分每步给予这个储备（refinement_feeds_witnesses）。",
+        "en": "Dwindle: at a unit halving at each step, a formation never supported is active at every step, its reserve, 2^t + 1 in the unit of step t, falling in the finer unit at each step (Dwindle.carriesIn) and tending from above to one unit of step 0, never reaching zero; for no p does each active step lower the reserve by 1/p of the unit (Dwindle.not_carriesAt, reserve_needs_quantum). With the unit fixed such a reserve is the spine's (Web.carriesIn_one), which Web.Carries.lasts forbids. So that a reserve defers the end without escaping it relies on the quantum, and at every resolution needs a least fall of the reserve at each active step; counted, the refinement gives this reserve something at every step (refinement_feeds_witnesses)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "detail": {
+        "zh": "Trickle：单位每步分为四个；两侧轮流持有第 0 步的一整个单位，第 t 步由 2^t 个水平为零的通道（Trickle.conduits）分成 2^t 份交给另一侧，每份失去下一步的两个单位。它有普查、关系项都体现、平衡、耗散、每步被围住；每一尺度都有最小损失（Trickle.losesAtEverySize），每个固定尺度的转移都不复现（Trickle.exchange_not_recurring）；一整个单位在任意晚的步生起，不按任何比例耗散（Trickle.not_dissipativeBy、growth_needs_proportion）。被取走的总量超过第 0 步单位的每个倍数（Trickle.throughput_unbounded、throughput_needs_proportion）。所以每一尺度的最小损失给出交换的规律，不给出增长的规律与量的规律；第十五次独立审查的探针表明 Trickle 所用的是每步无界多的转移（growth_needs_bounded_transfers，未移入核心）。通道不活跃；要求只有活跃者取用的变体没有构造。",
+        "en": "Trickle: at a unit quartering at each step, two sides hold one whole unit of step 0 in turn, and at step t it passes to the other side in 2^t parts carried by 2^t conduits standing at nothing (Trickle.conduits), each part losing two units of the step after. It has a census, embodied relata, balance, dissipation and every step enclosed; every size has a least loss (Trickle.losesAtEverySize) and transfers of each fixed size do not recur (Trickle.exchange_not_recurring); a whole unit arises at arbitrarily late steps, with no proportion lost (Trickle.not_dissipativeBy, growth_needs_proportion). Everything taken from the two sides grows past every multiple of the unit of step 0 (Trickle.throughput_unbounded, throughput_needs_proportion). So a least loss at each size gives the exchange law but neither the growth law nor the amount law; the fifteenth independent review's probes show that what Trickle uses is unboundedly many transfers within one step (growth_needs_bounded_transfers, not moved into the core). The conduits are not active; a variant in which only active formations take is not constructed."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "离散步；量是细分后的有理数，单位不变粗，不含实数量与连续时间；量的规律的界是最小的（amount_sharp），计数的界是否可达未证（第十五次独立审查的探针 Tight.attained 给出交换的界在 p = q = S = 1 时达到，未移入核心）；交换的规律只对从 T 起固定的封闭家族陈述，没有以变化的围住读于世界；按比例的损失与储备的最小下降是前提，Ren 未采用为理论的前提，作为研究笔记保留；比对家族的比例更弱而仍给出增长的规律的前提由审查的探针给出（ReplenishedLoses），未移入核心；Trickle 的通道不活跃；Asymptote、Circulation 与 Dwindle 只有一个关系项，Alternation 两个，Emission 每步加入一个；每个见证说明在其余前提之下它所缺的前提是需要的，不说明全部前提彼此独立，不描述实际系统；“不复现”是复现的否定，不是某步之后不再发生；不含伦理谓词；读法（AI，待 Ren）。",
+    "en": "Discrete steps; amounts are rationals by refinement, the unit never coarsening, with neither real amounts nor continuous time; the amount law's bound is the least (amount_sharp), while whether the counting bounds are attained is not proved in the core (the fifteenth independent review's probe Tight.attained attains the exchange bound at p = q = S = 1, not moved into the core); the exchange law is stated for a fixed family closed from T on, not read of worlds with changing enclosures; loss in proportion and the least fall of the reserve are premises Ren did not take for the theory, kept as research notes; a premise weaker than the family's proportion that still gives the growth law is given by the review's probes (ReplenishedLoses), not moved into the core; the conduits of Trickle are not active; Asymptote, Circulation and Dwindle have one relatum, Alternation two, and Emission adds one at every step; each witness shows the premise it lacks is needed given the others, not that all premises are mutually independent, and none describes an actual system; ‘does not recur’ is a negated recurrence, not a step after which nothing happens; no ethical predicate; readings are the AI's, pending Ren."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Resolution 的 261 项声明全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 75 个模块，核心闭包 40 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261013T095049.338744Z 通过。R1、R1b 与 R2 经第十五次独立审查（BECOMING-R1-R2-REVIEW.md），其发现在整合文档 §59.4 处理；R3 与 §59.4 的更正尚无独立审查；作者反审见整合文档 §59 至 §59.4。Becoming.Locality 的 44 项定理亦空依赖（P48）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 261 declarations of Becoming.Resolution all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 75 modules over a core closure of 40, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261013T095049.338744Z passed. R1, R1b and R2 were checked by the fifteenth independent review (BECOMING-R1-R2-REVIEW.md), its findings handled in section 59.4 of the integration note; R3 and the corrections of section 59.4 are not yet independently reviewed; the author's counterreview is in sections 59 to 59.4. The 44 theorems of Becoming.Locality (P48) also have empty axiom reports."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "role": "proof",
+      "sha256": "b42d52b2248274aa1999d0c0e77ffe01a3c86e29dd8ed79a8e9e3c05675d6a90",
+      "declarations": [
+        "Becoming.mul_regroup",
+        "Becoming.mul_turn",
+        "Becoming.add_mul_split",
+        "Becoming.Flow.BalancesAt",
+        "Becoming.Flow.balancesAt_one",
+        "Becoming.Flow.BalancesAt.over",
+        "Becoming.Flow.BalancesAt.lowers",
+        "Becoming.LosesQuantum",
+        "Becoming.units_pos",
+        "Becoming.losses_invariant",
+        "Becoming.losses_bound",
+        "Becoming.unbounded_of_recurring",
+        "Becoming.bounded_not_recurring",
+        "Becoming.quantum_step",
+        "Becoming.quantum_bound",
+        "Becoming.quantum_not_recurring",
+        "Becoming.refinedSum",
+        "Becoming.refinedSum_invariant",
+        "Becoming.refinedSum_mono",
+        "Becoming.refinedSum_mul",
+        "Becoming.refinedSum_marks",
+        "Becoming.counts_of_amounts",
+        "Becoming.Flow.quantum_bound",
+        "Becoming.Flow.quantum_not_recurring",
+        "Becoming.Flow.takes_loses",
+        "Becoming.Flow.taking_not_recurring",
+        "Becoming.Flow.DissipatesBy",
+        "Becoming.Flow.DissipativeBy",
+        "Becoming.Flow.DissipatesBy.of_each",
+        "Becoming.Flow.DissipatesBy.replenishment_le",
+        "Becoming.Flow.BalancesAt.nonrisingBy",
+        "Becoming.Flow.BalancesAt.lowersBy",
+        "Becoming.Web.Gains",
+        "Becoming.Web.gainers",
+        "Becoming.Web.Loses",
+        "Becoming.Web.losers",
+        "Becoming.Flow.BalancesAt.gain_given",
+        "Becoming.Flow.total_mul_right",
+        "Becoming.Flow.BalancesAt.gainers_lose",
+        "Becoming.Flow.BalancesAt.gainers_le",
+        "Becoming.Flow.BalancesAt.lowersTaking",
+        "Becoming.Flow.uptake_bound",
+        "Becoming.Flow.replenishment_bound",
+        "Becoming.Flow.takersAbove",
+        "Becoming.Flow.takersAbove_le",
+        "Becoming.Flow.BalancesAt.takers_lose",
+        "Becoming.Flow.exchange_bound",
+        "Becoming.Flow.exchange_not_recurring",
+        "Becoming.Flow.LosesAtSize",
+        "Becoming.Flow.LosesAtEverySize",
+        "Becoming.Flow.DissipatesOn.give_le",
+        "Becoming.Flow.LosesAtSize.over",
+        "Becoming.Flow.BalancesAt.takers_lose_least",
+        "Becoming.Flow.exchange_bound_of_least_loss",
+        "Becoming.Flow.exchange_not_recurring_of_least_loss",
+        "Becoming.Flow.losesAtSize_of_each",
+        "Becoming.Flow.BalancesAt.loss_taken",
+        "Becoming.Flow.BalancesAt.losers_lose",
+        "Becoming.Flow.BalancesAt.losers_le",
+        "Becoming.World.taken_bound",
+        "Becoming.World.given_bound",
+        "Becoming.World.growth_bound",
+        "Becoming.World.growth_not_recurring",
+        "Becoming.World.arising_not_recurring",
+        "Becoming.World.fall_bound",
+        "Becoming.World.fall_not_recurring",
+        "Becoming.World.ceasing_not_recurring",
+        "Becoming.World.not_recurring_at_resolution",
+        "Becoming.Web.CarriesAt",
+        "Becoming.Web.CarriesIn",
+        "Becoming.Web.Carries.carriesAt",
+        "Becoming.Web.carriesIn_one",
+        "Becoming.Web.CarriesAt.lasts",
+        "Becoming.halving",
+        "Becoming.quarter",
+        "Becoming.quarter_eq",
+        "Becoming.halving_pos",
+        "Becoming.quarter_pos",
+        "Becoming.powers",
+        "Becoming.powers_pos",
+        "Becoming.bernoulli_powers",
+        "Becoming.powers_outgrow",
+        "Becoming.Asymptote.refinement",
+        "Becoming.Asymptote.units",
+        "Becoming.Asymptote.flow",
+        "Becoming.Asymptote.web",
+        "Becoming.Asymptote.balances",
+        "Becoming.Asymptote.closed",
+        "Becoming.Asymptote.distinct",
+        "Becoming.Asymptote.dissipative",
+        "Becoming.Asymptote.dissipativeBy",
+        "Becoming.Asymptote.dependent",
+        "Becoming.Asymptote.above_need",
+        "Becoming.Asymptote.taking",
+        "Becoming.Asymptote.acting",
+        "Becoming.Asymptote.falls",
+        "Becoming.Asymptote.exchange_recurs_iff",
+        "Becoming.Asymptote.taking_recurs",
+        "Becoming.Asymptote.not_balanced",
+        "Becoming.Geometric.flow",
+        "Becoming.Geometric.web",
+        "Becoming.Geometric.balances",
+        "Becoming.Geometric.closed",
+        "Becoming.Geometric.dissipativeBy",
+        "Becoming.Geometric.uptake",
+        "Becoming.Geometric.exact",
+        "Becoming.Circulation.spare",
+        "Becoming.Circulation.units",
+        "Becoming.Circulation.flow",
+        "Becoming.Circulation.web",
+        "Becoming.Circulation.balances",
+        "Becoming.Circulation.closed",
+        "Becoming.Circulation.dissipative",
+        "Becoming.Circulation.dependent",
+        "Becoming.Circulation.takes_a_unit",
+        "Becoming.Circulation.loses_one",
+        "Becoming.Circulation.units_eq",
+        "Becoming.Circulation.takes_whole",
+        "Becoming.Circulation.distinct",
+        "Becoming.Circulation.not_dissipativeBy",
+        "Becoming.Circulation.standing",
+        "Becoming.Circulation.around",
+        "Becoming.Circulation.exchange_recurs",
+        "Becoming.Emission.bud",
+        "Becoming.Emission.drawn",
+        "Becoming.Emission.emitted",
+        "Becoming.Emission.level",
+        "Becoming.Emission.flow",
+        "Becoming.Emission.web",
+        "Becoming.Emission.world",
+        "Becoming.Emission.bud_before",
+        "Becoming.Emission.bud_after",
+        "Becoming.Emission.bud_pos",
+        "Becoming.Emission.active_bud",
+        "Becoming.Emission.none_not_mem",
+        "Becoming.Emission.some_inj",
+        "Becoming.Emission.alive",
+        "Becoming.Emission.census",
+        "Becoming.Emission.counted",
+        "Becoming.Emission.embodied",
+        "Becoming.Emission.balances",
+        "Becoming.Emission.emitted_absent",
+        "Becoming.Emission.emitted_le_one",
+        "Becoming.Emission.decideNone",
+        "Becoming.Emission.pool_mem",
+        "Becoming.Emission.dissipative",
+        "Becoming.Emission.enclosed",
+        "Becoming.Emission.arises",
+        "Becoming.Emission.arising_recurs",
+        "Becoming.Emission.acting",
+        "Becoming.Emission.taking",
+        "Becoming.Emission.dissipativeBy",
+        "Becoming.Emission.arises_small",
+        "Becoming.Emission.not_balanced",
+        "Becoming.Alternation.level",
+        "Becoming.Alternation.flow",
+        "Becoming.Alternation.web",
+        "Becoming.Alternation.world",
+        "Becoming.Alternation.balances",
+        "Becoming.Alternation.stands_sum",
+        "Becoming.Alternation.stands_one",
+        "Becoming.Alternation.active_iff",
+        "Becoming.Alternation.census",
+        "Becoming.Alternation.counted",
+        "Becoming.Alternation.embodied",
+        "Becoming.Alternation.enclosed",
+        "Becoming.Alternation.holder_takes",
+        "Becoming.Alternation.holder_mem",
+        "Becoming.Alternation.given_total",
+        "Becoming.Alternation.dissipative",
+        "Becoming.Alternation.arising_whole",
+        "Becoming.Alternation.arising_recurs",
+        "Becoming.Alternation.not_dissipativeBy",
+        "Becoming.Alternation.not_balanced",
+        "Becoming.Dwindle.web",
+        "Becoming.Dwindle.reserve",
+        "Becoming.Dwindle.unsupported",
+        "Becoming.Dwindle.carriesIn",
+        "Becoming.Dwindle.not_carriesAt",
+        "Becoming.Trickle.Relatum",
+        "Becoming.Trickle.conduits",
+        "Becoming.Trickle.conduits_length",
+        "Becoming.Trickle.side",
+        "Becoming.Trickle.level",
+        "Becoming.Trickle.flow",
+        "Becoming.Trickle.web",
+        "Becoming.Trickle.world",
+        "Becoming.Trickle.taken",
+        "Becoming.Trickle.given",
+        "Becoming.Trickle.add_eq",
+        "Becoming.Trickle.parts_taken",
+        "Becoming.Trickle.parts_given",
+        "Becoming.Trickle.balances",
+        "Becoming.Trickle.active_iff",
+        "Becoming.Trickle.side_pos_iff",
+        "Becoming.Trickle.census",
+        "Becoming.Trickle.counted",
+        "Becoming.Trickle.embodied",
+        "Becoming.Trickle.sides",
+        "Becoming.Trickle.sides_distinct",
+        "Becoming.Trickle.side_mem",
+        "Becoming.Trickle.off_sides",
+        "Becoming.Trickle.sides_total",
+        "Becoming.Trickle.holder_takes",
+        "Becoming.Trickle.conduit_mem",
+        "Becoming.Trickle.first_conduit",
+        "Becoming.Trickle.isHolder",
+        "Becoming.Trickle.holder_mem",
+        "Becoming.Trickle.given_total",
+        "Becoming.Trickle.taken_le",
+        "Becoming.Trickle.taken_total",
+        "Becoming.Trickle.part_loss",
+        "Becoming.Trickle.loses_two",
+        "Becoming.Trickle.dissipative",
+        "Becoming.Trickle.double",
+        "Becoming.Trickle.large_early",
+        "Becoming.Trickle.losesAtEverySize",
+        "Becoming.Trickle.sides_closed",
+        "Becoming.Trickle.enclosed",
+        "Becoming.Trickle.exchange_not_recurring",
+        "Becoming.Trickle.arising_whole",
+        "Becoming.Trickle.not_dissipativeBy",
+        "Becoming.Trickle.uptake",
+        "Becoming.Trickle.throughput_unbounded",
+        "Becoming.arising_needs_quantum",
+        "Becoming.arising_needs_proportion",
+        "Becoming.exchange_needs_quantum",
+        "Becoming.rest_needs_quantum",
+        "Becoming.reserve_needs_quantum",
+        "Becoming.growth_needs_proportion",
+        "Becoming.amount_sharp",
+        "Becoming.throughput_needs_proportion"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "role": "proof",
+      "sha256": "6b58869f4b6746ab157ef646eb45f7dca6584a7c3f88321156a7a3efb032c74d",
+      "declarations": [
+        "Becoming.World.standingCensus",
+        "Becoming.Flow.AroundStanding",
+        "Becoming.Flow.Enclosed.aroundStanding_not_not",
+        "Becoming.Flow.ExchangeRecurs",
+        "Becoming.Exposed.stands_iff",
+        "Becoming.Exposed.holder_one",
+        "Becoming.World.exchange_not_recurring",
+        "Becoming.World.rests_unrefuted_enclosed",
+        "Becoming.World.arising_opens"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "role": "proof",
+      "sha256": "a2063a53a94a997d048a66d6849bcf898056c154944511a9bcb2afbe48840db6",
+      "declarations": [
+        "Becoming.Web.StandingCensus",
+        "Becoming.Web.StandingCensus.stock_eq"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "role": "proof",
+      "sha256": "91accf4b40601b6f5439c1a3e8f3ede72b68018b0701099e78d71e7959f6fd9d",
+      "declarations": [
+        "Becoming.Flow.DissipatesOn",
+        "Becoming.Flow.Dissipative",
+        "Becoming.Flow.ClosedAt",
+        "Becoming.Flow.Enclosed",
+        "Becoming.Flow.DissipatesOn.replenishment_takers",
+        "Becoming.Flow.enclosed_of_finite",
+        "Becoming.total_le_of_support",
+        "Becoming.Flow.Balances.taking_not_recurring"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.taken",
+        "Becoming.Flow.given",
+        "Becoming.Flow.uptake",
+        "Becoming.Flow.replenishment",
+        "Becoming.Flow.takers",
+        "Becoming.total_swap",
+        "Becoming.total_mul",
+        "Becoming.total_le",
+        "Becoming.total_congr",
+        "Becoming.le_total_of_mem",
+        "Becoming.total_pos_of_mem",
+        "Becoming.steps",
+        "Becoming.eq_zero_of_not_pos"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "sha256": "c68bb811abba13aed0bc8739b5fc2a3f670a9726d64908eaa055bf2a1444480f",
+      "declarations": [
+        "Becoming.steps_last",
+        "Becoming.steps_mono",
+        "Becoming.mark",
+        "Becoming.mark_cases",
+        "Becoming.mark_pos"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "role": "proof",
+      "sha256": "e0a766eb2e0f7ec22acab4644b2ff1dded83065f107b7c41f8b6a583dd9d3efc",
+      "declarations": [
+        "Becoming.Shuttle.holder",
+        "Becoming.Shuttle.stands",
+        "Becoming.Shuttle.recurs",
+        "Becoming.Shuttle.every",
+        "Becoming.Shuttle.distinct"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "role": "proof",
+      "sha256": "d4f748607ac4590ced2090618040d65bf7ac6a18ce41979d1febf045f4e88816",
+      "declarations": [
+        "Becoming.World.Counted"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
+      "role": "proof",
+      "sha256": "5c0e45feffe39926f3fa789ef557a17ad75542792fba6c25eee8773807e9360f",
+      "declarations": [
+        "Becoming.Web.Carries",
+        "Becoming.Web.Carries.lasts"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "role": "proof",
+      "sha256": "3abd887dc3955de148e3c81a2bccb4f90fc46accf3c0a0be57b586512737838d",
+      "declarations": [
+        "Becoming.World",
+        "Becoming.World.Embodied",
+        "Becoming.World.Dissipative",
+        "Becoming.World.ArisingRecurs"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "integration",
+      "sha256": "120b158a909cb1232599021b23302affd25b7d39d6b410afe5e569b59b3a9a08",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-pareto-frontier.md",
+      "role": "provenance",
+      "sha256": "80bacdae44c98994e4a56c825eceabf18edbca59abcb00c773ec74a1f8c552c2",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md",
+      "role": "provenance",
+      "sha256": "efaac8a8ad4deb0ee327f28decda8cf886b66afaeb399bb323b766d1497c5c56",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-R1-R2-REVIEW.md",
+      "role": "review",
+      "sha256": "d8d00e93582c7d7afb59c504563c7a2b28cb9a6f15e18134cfdf4eba4d55ccfa",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Resolution",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Openness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dissipation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Roles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Premises",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Reserve",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Space",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Locality",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "研究笔记（Ren 2026-10-11：“they seem to be good research subjects, but this is separate matter, we can leave a note”）：计数的界是否可达；以变化的围住读于世界的交换的规律；比例之下的增长常数是否可更小；审查探针中更弱的前提（ReplenishedLoses、NotGaining、只要求家族不被增益的量子规律）与逐个形成的比例（EachShare）是否移入核心；连续时间与实数量；活跃的通道。",
+    "en": "Research notes (Ren, 11 October 2026: ‘they seem to be good research subjects, but this is separate matter, we can leave a note’): whether the counting bounds are attained; the exchange law read of worlds with changing enclosures; whether the growth constant under the proportion can be smaller; whether the review's weaker premises (ReplenishedLoses, NotGaining, the quantum law asking only that the family is not gained on) and the per-formation proportion (EachShare) move into the core; continuous time and real amounts; active conduits."
+  },
+  "history": [
+    {
+      "zh": "2026-10-10：作为统一计划 R1 新增，按 Ren“let's push as far as possible and if we see a stronger claim that can be make and is important, give it a try. we push pareto frontier”与“keep going please, agree with direction”（sources/15-codex-theory-conversations/2026-10-10-pareto-frontier.md）；回答 continued-change-needs-openness 的下一步中有理量的部分；见整合文档 §59。",
+      "en": "2026-10-10: added as R1 of the unification plan, following Ren's ‘let's push as far as possible and if we see a stronger claim that can be make and is important, give it a try. we push pareto frontier’ and ‘keep going please, agree with direction’ (sources/15-codex-theory-conversations/2026-10-10-pareto-frontier.md); answers, for rational amounts, the next step of continued-change-needs-openness; see section 59 of the integration note."
+    },
+    {
+      "zh": "2026-10-10 R1b：同一分辨率与前提之下加入下降与止息的规律（World.fall_bound、World.ceasing_not_recurring）与每一分辨率下的静止（World.rests_at_resolution），储备的每一分辨率形式（Web.CarriesAt、Web.CarriesAt.lasts、Web.carriesIn_one）与见证 Dwindle（reserve_needs_quantum）；依赖加入 reserve-defers-ending；见整合文档 §59.1。",
+      "en": "2026-10-10 R1b: under the same resolution and premises, adds the laws of falling and ceasing (World.fall_bound, World.ceasing_not_recurring) and rest at every resolution (World.rests_at_resolution), the reserve at every resolution (Web.CarriesAt, Web.CarriesAt.lasts, Web.carriesIn_one) and the witness Dwindle (reserve_needs_quantum); adds the dependency reserve-defers-ending; see section 59.1 of the integration note."
+    },
+    {
+      "zh": "2026-10-10 R2：Flow.DissipatesBy 改为对家族陈述（家族得回的至多是从它取走的 q/(q+1)），逐个形成的形式经 Flow.DissipatesBy.of_each 给出它，每条规律的陈述不变而前提变弱；加入每一尺度的最小损失之下的交换律（Flow.LosesAtSize、Flow.exchange_bound_of_least_loss）与见证 Trickle（growth_needs_proportion）；见整合文档 §59.2。",
+      "en": "2026-10-10 R2: Flow.DissipatesBy restated for the family (the family gets back at most q/(q+1) of what is taken from it), the per-formation form giving it through Flow.DissipatesBy.of_each, so every law keeps its statement under a weaker premise; adds the exchange law at a least loss for each size (Flow.LosesAtSize, Flow.exchange_bound_of_least_loss) and the witness Trickle (growth_needs_proportion); see section 59.2 of the integration note."
+    },
+    {
+      "zh": "2026-10-10 P45：验证范围重新指向合并检查器回执 20261010T171040.121853Z 与外围回执 20261010T171427.598973Z（每个选择之下所选前提都起约束时计数的规律：Counting 与 Premises 新增声明）；所引模块的定理数改为该回执的数目（Premises 59、Counting 161）。断言不变。",
+      "en": "2026-10-10 P45: validation scope re-pointed to consolidated receipt 20261010T171040.121853Z and periphery receipt 20261010T171427.598973Z (the laws of counting where the premises of each selection bind: declarations added to Counting and Premises); the module counts cited are now that receipt's (Premises 59, Counting 161). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 R3：加入量的规律（refinedSum、refinedSum_invariant、Flow.uptake_bound、Flow.replenishment_bound、World.taken_bound、World.given_bound）与其最小性（Geometric、amount_sharp）；交换、增长与下降的规律改由量的规律经 counts_of_amounts 证明，陈述不变；Trickle 中被取走的总量没有界（throughput_needs_proportion）；见整合文档 §59.3。",
+      "en": "2026-10-11 R3: adds the amount law (refinedSum, refinedSum_invariant, Flow.uptake_bound, Flow.replenishment_bound, World.taken_bound, World.given_bound) and that its bound is the least (Geometric, amount_sharp); the exchange, growth and fall laws are now proved from the amount law through counts_of_amounts, their statements unchanged; in Trickle everything taken grows without bound (throughput_needs_proportion); see section 59.3 of the integration note."
+    },
+    {
+      "zh": "2026-10-11 R4：整合第十五次独立审查（BECOMING-R1-R2-REVIEW.md）：更正过度的必要性陈述（W1）、量子规律缺少的耗散前提（W4）、最小损失交换律的耗散释义（W5）、量词与范围（W8：“可以无尽地继续”，“每一固定尺度的静止”）、见证的关系项（W9）、名称（W10：储备的最小下降、比例、Trickle 的通道）与读法的出处；边界定理加入在固定单位下不平衡（Asymptote.not_balanced、Emission.not_balanced、Alternation.not_balanced）；按 Ren 2026-10-11 选择 A，本记录作为不算入细分时的研究笔记，细分算入的一线见 rest-with-refinement-counted；见整合文档 §59.4。",
+      "en": "2026-10-11 R4: integrates the fifteenth independent review (BECOMING-R1-R2-REVIEW.md): corrects the overclaimed necessity (W1), the dissipation missing from the quantum law (W4), the gloss of dissipation in the least-loss exchange law (W5), quantifiers and scope (W8: ‘can continue without end’, ‘rest at each size’), the witnesses' relata (W9), names (W10: the least fall of the reserve, proportion, Trickle's conduits) and the provenance of readings; the boundary theorems add that the witnesses do not balance at the fixed unit (Asymptote.not_balanced, Emission.not_balanced, Alternation.not_balanced); following Ren's choice of A on 11 October 2026, this record holds the research notes without counting the refinement, the line counting it being rest-with-refinement-counted; see section 59.4 of the integration note."
+    },
+    {
+      "zh": "2026-10-11 P42–P44：验证范围重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心新增 Becoming.Feedback、Becoming.Boundaries 与 Becoming.Relevance，包内模块由 35 个增至 38 个，核心闭包由 37 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 withinClosure_iff_closure 与 Discharge 一节 5 项定理；Becoming.Interdependence 的模块说明更正读法，陈述与证明不变；其余已有模块的源（根模块的导入与说明、桥接除外）与定理数不变；章节加第一部分 §2 的“反馈与所及”与第二部分 §6.10–§6.12）。断言不变。",
+      "en": "2026-10-11 P42–P44: validation scope re-pointed to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core adds Becoming.Feedback, Becoming.Boundaries and Becoming.Relevance, the package growing from 35 to 38 modules and the core closure from 37 to 40, with 1971 theorems/2993 declaration audits; the bridge adds withinClosure_iff_closure and the 5 theorems of its Discharge section; Becoming.Interdependence's module documentation corrects a reading, its statements and proofs unchanged; other existing modules' sources, apart from the root module's imports and documentation and the bridge, and theorem counts are unchanged; the chapter adds Part I's feedback and reach in section 2 and Part II's sections 6.10 to 6.12). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P46：验证范围重新指向合并检查器回执 20261011T001147.906623Z 与外围回执 20261011T001754.342153Z（有限世界中与从某步起被围住时每个选择之下所选前提都起约束时计数的规律：Counting 新增声明）；所引模块的定理数改为该回执的数目（Counting 212）。断言不变。",
+      "en": "2026-10-11 P46: validation scope re-pointed to consolidated receipt 20261011T001147.906623Z and periphery receipt 20261011T001754.342153Z (the laws of counting in finite worlds and under enclosure from some step on where the premises of each selection bind: declarations added to Counting); the module counts cited are now that receipt's (Counting 212). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P47：验证范围重新指向合并检查器回执 20261011T003217.297180Z 与外围回执 20261011T003646.599930Z（前提之下所立者与依存的计数规律：新的核心模块 Standing，38 项定理；包与核心闭包各多一个模块；P51 折叠 G0 的说明文字随此运行改入七个核心模块，只改说明，陈述与定理数不变）。断言不变。",
+      "en": "2026-10-11 P47: validation scope re-pointed to consolidated receipt 20261011T003217.297180Z and periphery receipt 20261011T003646.599930Z (the laws of counting what stands and what depends under the premises: a new core module, Standing, with 38 theorems; the package and the core closure each have one module more; P51's fold of G0 enters the docstrings of seven core modules with this run, docstrings only, statements and theorem counts unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 R6：验证范围重新指向合并检查器回执 20261011T011019.444120Z 与外围回执 20261011T011213.027508Z（每个变化之律保留、失去与回返的零前提规律：新的核心模块 Recurrence，55 项定理；包与核心闭包各多一个模块）。断言不变。",
+      "en": "2026-10-11 R6: validation scope re-pointed to consolidated receipt 20261011T011019.444120Z and periphery receipt 20261011T011213.027508Z (the zero-premise laws of what every law of change keeps, loses and returns to: a new core module, Recurrence, with 55 theorems; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P48：Becoming.Web.StandingCensus、Becoming.Web.StandingCensus.stock_eq 移入新的核心模块 Becoming.Locality，陈述与证明不变；引用随之改指。断言不变。验证范围重新指向回执 20261011T071749.484228Z 与外围回执 20261011T071753.574921Z。",
+      "en": "2026-10-11 P48: Becoming.Web.StandingCensus, Becoming.Web.StandingCensus.stock_eq moved into the new core module Becoming.Locality, statements and proofs unchanged, and the references follow. The claim is unchanged. Validation scope re-pointed to receipt 20261011T071749.484228Z and periphery receipt 20261011T071753.574921Z."
+    },
+    {
+      "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57–P61：验证范围重新指向合并检查器回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z（清点 B 组其余与 D 组的局部规律，以及延续之下覆盖列表的普查定律，与这些规律中判定改为局部（供 P58）：每个原定理改经其局部形式证明，名称与陈述不变；共享的引理移入需要它的最低模块；定理数改变的模块：Flow、Change、Population、Identity、Dissipation、Locality、Roles、Space、Premises、Openness、Continuation；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P57–P61: validation scope re-pointed to consolidated receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z (the local laws of the rest of the inventory's group B and of group D, the census law under a continuation from covering lists, and decidedness made local in these laws (for P58): each original theorem re-proved through its local form, names and statements unchanged; shared lemmas moved to the lowest module that needs them; modules whose theorem count changed: Flow, Change, Population, Identity, Dissipation, Locality, Roles, Space, Premises, Openness, Continuation; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P54+P56：验证范围重新指向合并检查器回执 20261011T171000.054867Z 与外围回执 20261011T180706.458104Z（P54 的 g0_relevance_iff 与 P56 的生成的空间：Regions、Significance 与 Relevance 中只新增定义与定理，既有陈述不变，Significance 的三条界改经其局部形式证明；定理数改变的模块：Regions、Significance、Relevance；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P54+P56: validation scope re-pointed to consolidated receipt 20261011T171000.054867Z and periphery receipt 20261011T180706.458104Z (P54's g0_relevance_iff and P56's generative space: new definitions and theorems only in Regions, Significance and Relevance, no existing statement changed, Significance's three margin laws re-proved through their local forms; modules whose theorem count changed: Regions, Significance, Relevance; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P63：验证范围重新指向合并检查器回执 20261011T192152.790658Z 与外围回执 20261011T192511.756300Z（储备与依存的局部规律与 P61 的反方向，原定理改经其局部形式证明，名称与陈述不变；新的核心模块 Sampling、Units 与 Tower，各 90、31 与 6 项定理；定理数改变的已有模块：Dependence、Identity、Reserve；包与核心闭包各多三个模块）。断言不变。",
+      "en": "2026-10-12 P63: validation scope re-pointed to consolidated receipt 20261011T192152.790658Z and periphery receipt 20261011T192511.756300Z (the local laws of reserve and dependence and the converse of P61, the originals re-proved through their local forms, names and statements unchanged; new core modules Sampling, Units and Tower, with 90, 31 and 6 theorems; existing modules whose theorem count changed: Dependence, Identity, Reserve; the package and the core closure each have three modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P62：验证范围重新指向合并检查器回执 20261011T194804.708104Z 与外围回执 20261011T195216.607072Z（无明的边界条件：新的核心模块 Seeking 与 Capture，各 13 与 11 项定理，不改已有模块；包与核心闭包各多两个模块）。断言不变。",
+      "en": "2026-10-12 P62: validation scope re-pointed to consolidated receipt 20261011T194804.708104Z and periphery receipt 20261011T195216.607072Z (the boundary condition for 无明: new core modules Seeking and Capture, with 13 and 11 theorems, no existing module changed; the package and the core closure each have two modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P59+P58：验证范围重新指向合并检查器回执 20261011T210459.095261Z 与外围回执 20261011T211111.085532Z（新核心模块 Becoming.Decidedness 与 Becoming.Imbalance，包与核心闭包各加两个模块；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理加在 Space 与 Openness；定理数改变的既有模块：Space（56→62）、Openness（80→85））。断言不变。",
+      "en": "2026-10-12 P59+P58: validation scope re-pointed to consolidated receipt 20261011T210459.095261Z and periphery receipt 20261011T211111.085532Z (new core modules Becoming.Decidedness and Becoming.Imbalance, the package and the core closure each two modules larger; the rest theorems drop their unused decision procedure in place, names kept, with the settling lemmas added in Space and Openness; existing modules whose theorem count changed: Space (56 to 62), Openness (80 to 85)). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P58b：验证范围重新指向合并检查器回执 20261011T232354.807725Z 与外围回执 20261011T232716.311380Z（P58 的六个平息引理改名，使名称恰是陈述所说：停止不能被否证；Space 加 stop_unrefuted_iff，62→63；陈述与证明不变）。断言不变。",
+      "en": "2026-10-12 P58b: validation scope re-pointed to consolidated receipt 20261011T232354.807725Z and periphery receipt 20261011T232716.311380Z (P58's six settling lemmas renamed so each name says exactly what its statement says: stopping unrefuted; Space adds stop_unrefuted_iff, 62 to 63; statements and proofs unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P73：验证范围重新指向合并检查器回执 20261012T012916.201078Z 与外围回执 20261012T013048.258651Z（新增 Becoming.Learning，2895→2970 项定理，包 56→57 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-12 P73: validation scope re-pointed to consolidated receipt 20261012T012916.201078Z and periphery receipt 20261012T013048.258651Z (Becoming.Learning added, 2895 to 2970 theorems, package 56 to 57 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
+      "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：静止一族按强度命名（Ren 于 2026-10-12：“agree with you”，sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md）：名称恰是陈述所证的强度。从某步起静止不能被否证的定理名为 …_unrefuted（其陈述加强为 ¬¬∃N, World.RestsFrom N）；只证不复现的名为 …_not_recurring；“只有有限次”“停止”“归于静止”在文字中改为所证的强度。见整合文档 §111。历史与旧回执的验证范围保留当时名称；随当前回执推进的验证范围使用现名。",
+      "en": "2026-10-13 P58c: the rest family named by strength (Ren, 12 October 2026: “agree with you”, sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md): each name says the strength its statement proves. Theorems proving that resting from some step on cannot be refuted are named …_unrefuted (their statements strengthened to ¬¬∃N, World.RestsFrom N); those proving only non-recurrence are named …_not_recurring; prose saying “finitely often”, “stops” or “comes to rest” now says the strength proved. See §111 of the integration note. History and scopes of older receipts retain former names; scopes advancing with the current receipt use current names."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    }
+  ]
+}
