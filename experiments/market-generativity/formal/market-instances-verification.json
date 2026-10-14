@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "utc": "20261014T092430.203169Z",
+  "utc": "20261014T141058.867757Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "market-instances-checks/20261014T092430.203169Z",
+  "retained_run": "market-instances-checks/20261014T141058.867757Z",
   "instance_module": "MarketInstances",
   "compile_order": [
     "GenerativeCore",
@@ -37,22 +37,22 @@
     "Becoming.Frame": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
     "Becoming.Viability": "365e15e172df651a7a12752a10219378171a100c19518446b84bf87ed1259268",
     "Becoming.Recurrence": "3dc81c57525c2c5fdfca8222e39ddc0c4de905ddb97eb03f705bb9dc3ccd586c",
-    "Becoming.Lasting": "0089fc6928d8271524b77233b562928c687613100741a1856fe6aa91a054b43a",
+    "Becoming.Lasting": "6b98f95cf3524c95dca197f95e8eb9058578998d216a3f02351ae4e83f79fce4",
     "MarketGenerativity": "db7cf7f120e8759aebc1e280e9dc1bbd10b30a6b7004a835015624f85f8d49b1",
     "RegimeBoundary": "74f6a3266258c0df57ec7440c59fe65e8345e6a739f0a0c7b5fecc99a03f7224",
     "RegimeAttraction": "a35d0401661cef0533ff2039ca0f3d45cef8b6464f7a7a230e25d41e3c06d978",
     "RegimeTransition": "9e76cc787e363e0c4ad75e34adc94bf1fe7983076e76a367850d72f65e7bf518",
     "FiniteSupportObstruction": "4d5e2ef8cc147600698d945180d7f402a39d0072120723f8578deebaaaf3230a",
     "PartialRegimeTransition": "2ae6d489b9692387cc7cedbc45eb62bfe70bb7de7a657b8eded3627b50f09092",
-    "MarketInstances": "b7dc5166725da11c77a8d0012a11db355189548906794594349f48178226bd88"
+    "MarketInstances": "c669ced370edfca820dfaabff4b7e037aad8452213d55f0727d8b00ad02344da"
   },
   "checker_sha256": {
-    "check_market_instances.py": "bfe88883f988e5fa159956fd698addca7f83689e7cd36e6d0dfb2425ceb1b596",
-    "check_becoming.py": "564a89dc7fe281ace08a4e857ed667a394e5c78dcc01dc2fc2d4b3638aef5ba6",
+    "check_market_instances.py": "0f15836664db24413521512ee6e853e753fb2d3044885964574b184cd6e3f520",
+    "check_becoming.py": "2560a333236f22b7468993a8eb5ecb40692551344d0a5a63e8e9c35832c8e602",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
   },
   "source_commit": {
-    "main": "e8aa476633386be69f05148e6853867dbdf6c611",
+    "main": "a4e4c4a863526c2684866caa34ab1e583ecc14f6",
     "copied": [
       "Becoming.Lasting.lean",
       "MarketInstances.lean",
@@ -60,12 +60,14 @@
       "check_market_instances.py"
     ]
   },
-  "scope": "Instances of the Becoming core's laws in the rational market of MarketGenerativity and its regime modules. Protected continuation (Becoming.Viability): the operating map is a law of change driven by disturbances and the guarded market is the core's guarded law with the essential floors as guard; some disturbance is admissible for every bound, so for every parameter set, bound set and start, no admissible history ever fails the essential guard exactly when some set of states containing the start lies within the essential floors and is closed under every admissible disturbance; under Certificate p b the safe rectangle is one, so safe_history_never_fails is an instance. Finite support obstruction (Becoming.Lasting, exhaustion): with a correction strength chosen at each step, the share's orbit under growth 3/2 bounds it, and while that orbit stays at or below 1/6 a step with a nonnegative shock costs the stock one unit above the floor 5, so finite_support_forces_failure is an instance, and so is every_finite_stock_has_obstructed_positive_seeds. Supported finite transition (Becoming.Lasting, ladders): the cover recurrence is a ladder for every correction schedule and every shock at most the cost, so the prefixes of the supported transitions are instances, and at the worst share the cover is exact. Partial correction boundary (Becoming.Lasting, never reaching): some positive seed never lands exactly when a set closed under the regime law and avoiding landing contains one; for 0 <= b <= 3/4 every positive seed lands exactly when the quality margin at 3/8 under influence 1 is nonnegative, and exactly when no such set contains a positive seed; above 5/12 the fixed configuration is one. Landing side (Becoming.Lasting, reaching): every positive seed lands exactly when every positive seed is held by some funnel into landing; a quantity raised by a fixed gain up to a bound gives a funnel for every determined rational law; for 0 <= b <= 5/12 the market's gain estimates (share, then influence, then quality) supply such funnels from a settled region the law keeps, which a positive seed enters by the old seed retention estimates, so the landing side, its case b = 0 (the rescue's finite horizon) and the 5/12 boundary follow from the core's reaching law. Correspondence of the market law to actual markets, its parameters and its protected floors is not checked.",
+  "scope": "Instances of the Becoming core's laws in the rational market of MarketGenerativity and its regime modules. Protected continuation (Becoming.Viability): the operating map is a law of change driven by disturbances and the guarded market is the core's guarded law with the essential floors as guard; some disturbance is admissible for every bound, so for every parameter set, bound set and start, no admissible history ever fails the essential guard exactly when some set of states containing the start lies within the essential floors and is closed under every admissible disturbance; under Certificate p b the safe rectangle is one, so safe_history_never_fails is an instance. Finite support obstruction (Becoming.Lasting, exhaustion): with a correction strength chosen at each step, the share's orbit under growth 3/2 bounds it, and while that orbit stays at or below 1/6 a step with a nonnegative shock takes one unit of the stock above the floor 5, so finite_support_forces_failure is an instance, and so is every_finite_stock_has_obstructed_positive_seeds. Supported finite transition (Becoming.Lasting, ladders): the cover recurrence is a ladder for every correction schedule and every shock at most the cost, so the prefixes of the supported transitions are instances, and at the worst share the cover is exact. Partial correction boundary (Becoming.Lasting, never reaching): some positive seed never lands exactly when a set closed under the regime law and avoiding landing contains one; for 0 <= b <= 3/4 every positive seed lands exactly when the quality margin at 3/8 under influence 1 is nonnegative, and exactly when no such set contains a positive seed; above 5/12 the fixed configuration is one. Landing side (Becoming.Lasting, reaching): every positive seed lands exactly when every positive seed is held by some funnel into landing; a quantity raised by a fixed gain up to a bound gives a funnel for every determined rational law; for 0 <= b <= 5/12 the market's gain estimates (share, then influence, then quality) supply such funnels from a settled region the law keeps, which a positive seed enters by the old seed retention estimates, so the landing side, its case b = 0 (the rescue's finite horizon) and the 5/12 boundary follow from the core's reaching law. Correspondence of the market law to actual markets, its parameters and its protected floors is not checked.",
   "lean_steps": {
     "cache": "/Users/ren/.cache/becoming-lean",
     "fresh": false,
     "ran": [
       "version.log",
+      "MarketInstances.log",
+      "MarketInstancesAxiomAudit.log",
       "MarketInstancesSignatures.log"
     ],
     "reused": {
@@ -86,8 +88,8 @@
         "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/dfe4a1b1-3a34-40ef-86a7-d1c09e897f30/scratchpad/p58c/tree"
       },
       "Becoming.Lasting.log": {
-        "utc": "20261014T081421.262673Z",
-        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/de45ebc5-e5b8-4ea1-944c-69eadababe8f/scratchpad/coretree"
+        "utc": "20261014T105908.722634Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/de45ebc5-e5b8-4ea1-944c-69eadababe8f/scratchpad/b5-scratch"
       },
       "MarketGenerativity.log": {
         "utc": "20261014T030046.964652Z",
@@ -112,14 +114,6 @@
       "PartialRegimeTransition.log": {
         "utc": "20261014T035545.683235Z",
         "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/de45ebc5-e5b8-4ea1-944c-69eadababe8f/scratchpad/t2"
-      },
-      "MarketInstances.log": {
-        "utc": "20261014T083403.928011Z",
-        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/de45ebc5-e5b8-4ea1-944c-69eadababe8f/scratchpad/coretree"
-      },
-      "MarketInstancesAxiomAudit.log": {
-        "utc": "20261014T083403.928011Z",
-        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/de45ebc5-e5b8-4ea1-944c-69eadababe8f/scratchpad/coretree"
       }
     },
     "keys": {
@@ -127,16 +121,16 @@
       "Becoming.Frame.log": "46aa07e832c5e363e1ca660d6f9de566fe92e2d9de30880c8d695f66d6b5909b",
       "Becoming.Viability.log": "294fcf4f18f2f5c396484e71e1a9aae116a1d972e5656f73c0569d9d677cf64c",
       "Becoming.Recurrence.log": "b895e3a6e5bb9d8a6738d779395a05e03db6990c8a4d6898299cf46ef3238852",
-      "Becoming.Lasting.log": "f770298a6ecd59b85596c0809bd31571cf72746ceb6e7a2107b3bcf309539c7f",
+      "Becoming.Lasting.log": "af76f2c81a264f1f67769ce53be3d47c29af83297f7b5a6fd2d2c49c48739813",
       "MarketGenerativity.log": "e2eee170d9f2b25e22090b74ce207379c9727033761de8634c2d3a7d29f02825",
       "RegimeBoundary.log": "6d9e542a06c0d9511d2e90d4ea7b23b2a4c2a34ff016860c32c117560ce7d21d",
       "RegimeAttraction.log": "1405b6f5814615e54422fc815fdbe0634600ce9e113754f7c92f847a6c7d6759",
       "RegimeTransition.log": "4d6c3cb4021e5c1cf6be47beb2927285fb14cd32bffa1a0673f12fa158325092",
       "FiniteSupportObstruction.log": "477a2c88a1be2e662fa45917b519099cfb5aeef5c2cfa84a69cf080bb7a413c3",
       "PartialRegimeTransition.log": "d2fe9e5e1afb34bc8502f0ab01d1b52b2040237583f3310f956a659a4e40d9d8",
-      "MarketInstances.log": "4ea70541a22ad928ea1a1524915ec1410df88dd04179e8033a6b8295c4b4873a",
-      "MarketInstancesAxiomAudit.log": "e0d1dcc191df9cf09a1874b49844e6295997027f4029e2d2040c4d9e222928b3",
-      "MarketInstancesSignatures.log": "73452a3daacdbecf3170e712743282c85f4ca5e8c9dac593badbf4efa8e4bc78"
+      "MarketInstances.log": "bafa1ab08d622ef0894aa02e049014597092018414df3a412762ada691b48d52",
+      "MarketInstancesAxiomAudit.log": "8c74bc9fb291469ff683645b3b29b1e91f0ae6da00a90feb83a7f9ba1152ccf9",
+      "MarketInstancesSignatures.log": "bb25acc43efb033a61194c9ebe955e4fb21858eb1d763f62cda4a66b36586453"
     }
   },
   "inherited_receipts": {
@@ -271,6 +265,8 @@
       "lean/becoming/becoming-checks/20261014T041246.931872Z/verification.json",
       "lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
       "lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "lean/becoming/becoming-checks/20261014T135817.172434Z/verification.json",
       "lean/becoming/becoming-verification.json",
       "lean/becoming/fallible-inquiry-checks/20261013T110231.056199Z/verification.json",
       "lean/becoming/fallible-inquiry-checks/20261013T113924.930862Z/verification.json",
@@ -537,6 +533,8 @@
       "lean/universal-ethics/generative-capacity/checks/20261007T130945.936650Z/verification.json",
       "lean/universal-ethics/generative-capacity/checks/20261007T131010.300022Z/verification.json",
       "lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json",
+      "lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T092443.150338Z/verification.json",
+      "lean/universal-ethics/generative-capacity/copying-instances-verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261008T215022.915513Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261008T233002.293533Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261008T233335.261411Z/verification.json",
@@ -641,9 +639,14 @@
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T131750.258973Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T185634.241051Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T205618.164536Z/verification.json",
+      "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261014T092825.784033Z/verification.json",
+      "lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "lean/universal-ethics/generative-capacity/correspondence-verification.json",
       "lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
+      "lean/universal-ethics/generative-capacity/machine-instances-verification.json",
       "lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T041648.493464Z/verification.json",
+      "lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T141016.373278Z/verification.json",
       "lean/universal-ethics/generative-capacity/protocol-instances-verification.json",
       "lean/universal-ethics/generative-capacity/reconfiguration-checks/20261007T161603.450304Z/verification.json",
       "lean/universal-ethics/generative-capacity/reconfiguration-correspondence-verification.json",
@@ -828,6 +831,8 @@
       "lean/becoming/becoming-checks/20261014T041246.931872Z/verification.json",
       "lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
       "lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "lean/becoming/becoming-checks/20261014T135817.172434Z/verification.json",
       "lean/becoming/becoming-verification.json",
       "lean/becoming/fallible-inquiry-checks/20261013T110231.056199Z/verification.json",
       "lean/becoming/fallible-inquiry-checks/20261013T113924.930862Z/verification.json",
@@ -839,6 +844,8 @@
       "lean/universal-ethics/evolution-connectionism/learning-correspondence-checks/20261013T095759.980593Z/verification.json",
       "lean/universal-ethics/evolution-connectionism/learning-correspondence-verification.json",
       "lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json",
+      "lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T092443.150338Z/verification.json",
+      "lean/universal-ethics/generative-capacity/copying-instances-verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261008T215022.915513Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261008T233002.293533Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261008T233335.261411Z/verification.json",
@@ -943,8 +950,13 @@
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T131750.258973Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T185634.241051Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T205618.164536Z/verification.json",
+      "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261014T092825.784033Z/verification.json",
+      "lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
+      "lean/universal-ethics/generative-capacity/machine-instances-verification.json",
       "lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T041648.493464Z/verification.json",
+      "lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T141016.373278Z/verification.json",
       "lean/universal-ethics/generative-capacity/protocol-instances-verification.json",
       "lean/universal-ethics/generative-capacity/retrodiction-instances-checks/20261014T045409.164228Z/verification.json",
       "lean/universal-ethics/generative-capacity/retrodiction-instances-verification.json"
@@ -953,7 +965,11 @@
       "lean/becoming/becoming-checks/20261014T041246.931872Z/verification.json",
       "lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
       "lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
-      "lean/becoming/becoming-verification.json"
+      "lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "lean/becoming/becoming-checks/20261014T135817.172434Z/verification.json",
+      "lean/becoming/becoming-verification.json",
+      "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261014T092825.784033Z/verification.json",
+      "lean/universal-ethics/generative-capacity/correction-inquiry-verification.json"
     ],
     "Becoming.Recurrence": [
       "lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
@@ -976,6 +992,8 @@
       "lean/becoming/becoming-checks/20261014T041246.931872Z/verification.json",
       "lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
       "lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "lean/becoming/becoming-checks/20261014T135817.172434Z/verification.json",
       "lean/becoming/becoming-verification.json",
       "lean/becoming/fallible-inquiry-checks/20261013T110231.056199Z/verification.json",
       "lean/becoming/fallible-inquiry-checks/20261013T113924.930862Z/verification.json",
@@ -995,10 +1013,14 @@
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T131750.258973Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T185634.241051Z/verification.json",
       "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T205618.164536Z/verification.json",
-      "lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json"
+      "lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261014T092825.784033Z/verification.json",
+      "lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
+      "lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
+      "lean/universal-ethics/generative-capacity/machine-instances-verification.json"
     ],
     "Becoming.Lasting": [
-      "lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "lean/becoming/becoming-checks/20261014T135817.172434Z/verification.json",
       "lean/becoming/becoming-verification.json"
     ],
     "MarketGenerativity": [
@@ -1529,12 +1551,15 @@
     }
   ],
   "artifact_sha256": {
-    "Becoming.Lasting.lean": "0089fc6928d8271524b77233b562928c687613100741a1856fe6aa91a054b43a",
-    "MarketInstances.lean": "b7dc5166725da11c77a8d0012a11db355189548906794594349f48178226bd88",
+    "Becoming.Lasting.lean": "6b98f95cf3524c95dca197f95e8eb9058578998d216a3f02351ae4e83f79fce4",
+    "MarketInstances.lean": "c669ced370edfca820dfaabff4b7e037aad8452213d55f0727d8b00ad02344da",
+    "MarketInstances.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "MarketInstancesAxiomAudit.lean": "a28aff62c12c5784e5d14653cf722ad39e3a21381df13abec4cc0aa6aff95f3c",
+    "MarketInstancesAxiomAudit.log": "c0e50f9f69b2531d1b2ea4ea2adcc9fbbfd5ae27c03223f13a38be5ce092f516",
     "MarketInstancesSignatures.lean": "adb24a2ead2d299add6f04e079fcf57bd06f9c3c0e4922091b0c23b57c4e1d18",
     "MarketInstancesSignatures.log": "7634aee541889b089cb286469c158a4b71ecf198b5872725ccb09c1852ab19cc",
-    "check_becoming.py": "564a89dc7fe281ace08a4e857ed667a394e5c78dcc01dc2fc2d4b3638aef5ba6",
-    "check_market_instances.py": "bfe88883f988e5fa159956fd698addca7f83689e7cd36e6d0dfb2425ceb1b596",
+    "check_becoming.py": "2560a333236f22b7468993a8eb5ecb40692551344d0a5a63e8e9c35832c8e602",
+    "check_market_instances.py": "0f15836664db24413521512ee6e853e753fb2d3044885964574b184cd6e3f520",
     "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
   }
 }
