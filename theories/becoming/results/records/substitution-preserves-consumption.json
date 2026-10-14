@@ -1,18 +1,107 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "substitution-preserves-consumption",
   "title": {
-    "zh": "替代在整段读法下保持消耗：能替代条件的消耗者以转化依存的方式持续，整段仍是消耗的",
-    "en": "Substitution preserves consumption on the whole-run reading: a consumer that can substitute a condition persists by transforming its dependence and still consumes over the run"
+    "zh": "替代在整段读法下保持消耗",
+    "en": "Substitution preserves consumption on the whole-run reading"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T03:10:36+00:00",
-  "claim": {
-    "zh": "对每个依存网：消耗者自身的依存自某步 T₀ 起无论怎样改变（水平、它的汲取、其他每个形成的依存及它在 T₀ 之前的依存都不变），消耗都保持，当且仅当它所汲取的某个条件的损失由这一改变所留下的依存见证：另一形成的依存，或它自己在 T₀ 之前某步的依存（Web.consumingIn_kept_iff）；改变自开始起时，当且仅当另一形成的依存见证它（Web.consuming_survives_iff）。只由消耗者自身的依存见证损失时，消解这一依存便去掉消耗（Lone.own_witness_lost）。活动需要支持时，在不再回程的损失之后仍活跃的形成已经减弱或消解了对该条件的依存（Web.consumed_continues_transformed）。所以整段读法下，以转化依存的方式持续的消耗者仍是消耗的，恰在损失落在它所转化的依存之外的依存上时。RelationalRenewal 的支持门控定律是实例：共同条件由依存于它的维持者更新，从一开始就超出更新地汲取的焦点形成经由维持者的依存而消耗，所以它自身的依存无论怎样改变都仍是消耗的（consuming_through_sustaining）。在这一定律族中，让焦点形成在共同条件支持它时依存于它，否则依存于一个支持它的替代条件，读作依存可变的依存网；共同条件的水平仍由原定律给出。若焦点形成从一开始就超出更新地汲取，则：它每一步都活跃；它对共同条件的依存在一个可以找到的步上消解，对替代条件的依存同时形成；它在运行中是消耗的（ConsumingIn 只要求曾汲取一个被消耗的条件）；维持者从某步起永久失去支持并终止。一个具体定律（extracting）满足全部前提；在其中，逐步读法除第 2 步（共同条件跌破维持者的支持）外都记入它：越过之前它的汲取使每个所需仍被满足，越过之后它在模型中不汲取任何条件。在另一定律（slow）中，共同条件跌破维持者的支持之后仍支持焦点形成一步，它在第 2、3 步都被扣下：被扣下的是维持者失去支持之后、它转向替代条件之前的各步（一般情形为论证，未形式化）。对可判定的规定，停止成立的那一步可以找到。不用伦理前提，也不用 Lean 公理。",
-    "en": "For every web, consumption is kept under every change of the consumer's own dependence from a step T₀ on (levels, the consumer's draws, every other formation's dependence and the consumer's own before T₀ unchanged) exactly when the consumer draws on a condition whose loss is witnessed by a dependence that change leaves: another formation's, or its own at a step before T₀ (Web.consumingIn_kept_iff); for a change from the start, exactly when another formation's dependence witnesses it (Web.consuming_survives_iff). Where only the consumer's own dependence witnesses the loss, dissolving it removes the consumption (Lone.own_witness_lost). And where activity needs support, a formation still active after a loss without return has weakened or dissolved its dependence on the condition (Web.consumed_continues_transformed). So on the whole-run reading a consumer that persists by transforming its dependence still consumes exactly where the loss falls on a dependence other than the one it transforms. RelationalRenewal's support-gated law is an instance: a shared condition is renewed by a sustaining formation that depends on it, and a focal formation drawing beyond renewal from the start consumes through the sustaining formation's dependence, so it stays consuming under every change of its own dependence (consuming_through_sustaining). In the family, let the focal formation depend on the shared condition while it supports the focal formation and otherwise on an alternative that does, read as a web whose dependence changes; the shared condition's levels are still given by the law. If the focal formation draws beyond renewal from the start, then it is active at every step; its dependence on the shared condition dissolves, and one on the alternative forms, at a step that can be found; it is consuming in the run (ConsumingIn asks only for one draw on a consumed condition); and the sustaining formation loses support for ever from some step and ends. A concrete law (extracting) meets every premise; in it the stepwise reading credits the focal formation at every step except step 2, where the shared condition falls below the sustaining formation's support: before the crossing its draws leave every need met, and after it it draws on nothing in the model. In another law (slow) the shared condition still supports the focal formation for a step after it fails the sustaining formation, and the focal formation is withheld at steps 2 and 3: what is withheld are the steps after the sustaining formation loses support and before the focal formation switches (in general an argument, not formalized). With a decidable determination, the step at which it ceases can be found. No ethical premise and no Lean axiom is used."
+  "reviewed_at_utc": "2026-10-14T03:30:00+00:00",
+  "statement": {
+    "zh": "整段读法下，以转化依存的方式持续的消耗者仍是消耗的，恰在损失落在它所转化的依存之外的依存上时；这是对每个依存网成立的定律，能替代条件的支持门控规律是其实例。",
+    "en": "On the whole-run reading a consumer that persists by transforming its dependence still consumes exactly where the loss falls on a dependence other than the one it transforms, a law of every web of which the support-gated law with a substitutable condition is an instance."
   },
+  "laws": [
+    {
+      "zh": "对每个依存网：消耗者自身的依存自某步 T₀ 起无论怎样改变（水平、它的汲取、其他每个形成的依存及它在 T₀ 之前的依存都不变），消耗都保持，当且仅当它所汲取的某个条件的损失由这一改变所留下的依存见证：另一形成的依存，或它自己在 T₀ 之前某步的依存。",
+      "en": "For every web, consumption is kept under every change of the consumer's own dependence from a step T₀ on (levels, the consumer's draws, every other formation's dependence and the consumer's own before T₀ unchanged) exactly when the consumer draws on a condition whose loss is witnessed by a dependence that change leaves: another formation's, or its own at a step before T₀.",
+      "declarations": [
+        "Becoming.Web.DependenceChanged",
+        "Becoming.Web.ConsumingThrough",
+        "Becoming.Web.consumingIn_kept_iff",
+        "Becoming.Web.ConsumingThrough.consumingIn"
+      ]
+    },
+    {
+      "zh": "改变自开始起时，消耗保持当且仅当另一形成的依存见证损失；只由消耗者自身的依存见证损失时，消解这一依存便去掉消耗。",
+      "en": "For a change from the start, consumption is kept exactly when another formation's dependence witnesses the loss; where only the consumer's own dependence witnesses it, dissolving that dependence removes the consumption.",
+      "declarations": [
+        "Becoming.Web.consuming_survives_iff",
+        "Becoming.Substitution.Lone.web",
+        "Becoming.Substitution.Lone.substituted",
+        "Becoming.Substitution.Lone.own_witness_lost"
+      ]
+    },
+    {
+      "zh": "活动需要支持时，在不再回程的损失之后仍活跃的形成已经减弱或消解了对该条件的依存。",
+      "en": "Where activity needs support, a formation still active after a loss without return has weakened or dissolved its dependence on the condition.",
+      "declarations": [
+        "Becoming.Web.consumed_continues_transformed"
+      ]
+    },
+    {
+      "zh": "RelationalRenewal 的支持门控定律是实例：共同条件由依存于它的维持者更新，从一开始就超出更新地汲取的焦点形成经由维持者的依存而消耗，所以它自身的依存无论怎样改变都仍是消耗的。",
+      "en": "RelationalRenewal's support-gated law is an instance: a shared condition is renewed by a sustaining formation that depends on it, and a focal formation drawing beyond renewal from the start consumes through the sustaining formation's dependence, so it stays consuming under every change of its own dependence.",
+      "declarations": [
+        "Becoming.Substitution.consuming_through_sustaining",
+        "RelationalRenewal.Law"
+      ]
+    },
+    {
+      "zh": "在这一定律族中，让焦点形成在共同条件支持它时依存于它，否则依存于一个支持它的替代条件，读作依存可变的依存网；共同条件的水平仍由原定律给出。",
+      "en": "In the family, let the focal formation depend on the shared condition while it supports the focal formation and otherwise on an alternative that does, read as a web whose dependence changes; the shared condition's levels are still given by the law.",
+      "declarations": [
+        "Becoming.Substitution.requires",
+        "Becoming.Substitution.draws",
+        "Becoming.Substitution.web",
+        "Becoming.Substitution.web_dependent",
+        "Becoming.Web",
+        "RelationalRenewal.Law.level"
+      ]
+    },
+    {
+      "zh": "若焦点形成从一开始就超出更新地汲取，则：它每一步都活跃；它对共同条件的依存在一个可以找到的步上消解，对替代条件的依存同时形成；它在运行中是消耗的（ConsumingIn 只要求曾汲取一个被消耗的条件）；维持者从某步起永久失去支持并终止。",
+      "en": "If the focal formation draws beyond renewal from the start, it is active at every step; its dependence on the shared condition dissolves, and one on the alternative forms, at a step that can be found; it is consuming in the run (ConsumingIn asks only for one draw on a consumed condition); and the sustaining formation loses support for ever from some step and ends.",
+      "declarations": [
+        "Becoming.Substitution.persists_consuming",
+        "Becoming.Web.Dissolves",
+        "Becoming.Web.Forms",
+        "Becoming.Web.ConsumingIn",
+        "RelationalRenewal.Law.overdraw_crosses_support",
+        "RelationalRenewal.Law.permanently_below",
+        "RelationalRenewal.Law.dependent_overdraw_ends_itself",
+        "RelationalRenewal.Law.no_return_below_support"
+      ]
+    },
+    {
+      "zh": "一个具体定律（extracting）满足全部前提；在其中，逐步读法除第 2 步（共同条件跌破维持者的支持）外都记入它：越过之前它的汲取使每个所需仍被满足，越过之后它在模型中不汲取任何条件。",
+      "en": "A concrete law (extracting) meets every premise; in it the stepwise reading credits the focal formation at every step except step 2, where the shared condition falls below the sustaining formation's support: before the crossing its draws leave every need met, and after it it draws on nothing in the model.",
+      "declarations": [
+        "Becoming.Substitution.extracting",
+        "Becoming.Substitution.extracting_persists_consuming",
+        "Becoming.Substitution.extracting_low",
+        "Becoming.Substitution.stepwise_credits_substitution",
+        "Becoming.Web.UnderminingAt"
+      ]
+    },
+    {
+      "zh": "在另一定律（slow）中，共同条件跌破维持者的支持之后仍支持焦点形成一步，它在第 2、3 步都被扣下。",
+      "en": "In another law (slow) the shared condition still supports the focal formation for a step after it fails the sustaining formation, and the focal formation is withheld at steps 2 and 3.",
+      "declarations": [
+        "Becoming.Substitution.slow_withheld_two_steps"
+      ]
+    },
+    {
+      "zh": "对可判定的规定，停止成立的那一步可以找到。",
+      "en": "With a decidable determination, the step at which it ceases can be found.",
+      "declarations": [
+        "Becoming.ceasing_step",
+        "Becoming.ceases_at_a_step"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "支持门控定律的前提：维持者与焦点形成的所需都为正，焦点所需不超过维持者所需，起点支持焦点形成，并且每步汲取都超出更新与贡献之和。",
@@ -23,6 +112,78 @@
       "en": "Choosing dependence by support writes the ability to substitute into the model: a modelling choice, not a conclusion. The alternative's level is constant, and the cost of drawing on it is not modelled."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "保持只对整段读法成立。",
+      "en": "Preservation holds on the whole-run reading only.",
+      "kind": "scope",
+      "witness": "Becoming.Substitution.stepwise_credits_substitution"
+    },
+    {
+      "zh": "被扣下的一般是维持者失去支持之后、焦点形成转向替代条件之前的各步，这一点为论证，未形式化。",
+      "en": "That what is withheld are, in general, the steps after the sustaining formation loses support and before the focal formation switches is an argument, not formalized.",
+      "kind": "scope"
+    },
+    {
+      "zh": "以替代持续、其时机与维持者的终止在支持门控定律中证明。",
+      "en": "Persistence by substitution, its timing and the sustaining formation's ending are proved in the support-gated law.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不说明形成的个体化（跨步的同一怎样影响这些读法，见 identity-across-steps）。",
+      "en": "The individuation of formations is not treated (how identity across steps bears on these readings is in identity-across-steps).",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
+      "detail": {
+        "zh": "焦点形成的持续与活跃不证明更新：它每步都活跃，却是消耗的（Substitution.persists_consuming）。",
+        "en": "The focal formation's persistence and activity do not certify renewal: it is active at every step and consuming (Substitution.persists_consuming)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
+      "detail": {
+        "zh": "逐步读法下分类不保持（Substitution.stepwise_credits_substitution）：在 extracting 中焦点形成除第 2 步外每个事件都被记入（第二次独立审查 F3）。",
+        "en": "On the stepwise reading the classification is not preserved (Substitution.stepwise_credits_substitution): in extracting every event of the focal formation except at step 2 is credited (second independent review F3)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
+      "detail": {
+        "zh": "第二次独立审查：所审的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，整合文档中比较表在 (a)(b) 与 but-for 一栏上不公允（已更正）。",
+        "en": "Second independent review: the mathematics under review is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the integration note's comparison table was unfair in rows (a), (b) and the but-for column (corrected)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
+      "detail": {
+        "zh": "“只在一步上不被记入”只对 extracting 成立（Substitution.slow_withheld_two_steps）：在 slow 中共同条件跌破维持者的支持后仍支持焦点形成，它在第 2、3 步都侵蚀（第三次独立审查 G5）。",
+        "en": "“Withheld at one step only” holds only for extracting (Substitution.slow_withheld_two_steps): in slow the shared condition still supports the focal formation after it fails the sustaining formation, and the focal formation undermines at steps 2 and 3 (third independent review G5)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+      "detail": {
+        "zh": "第三次独立审查：所审的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法的代价、节制、替代、交互与剩余的免费连通上强于 Lean（已在整合文档中更正）。",
+        "en": "Third independent review: every declaration under review is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on the stepwise cost, restraint, substitution, interaction and the residual free connection (corrected in the integration note)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T221720.428753Z）：Becoming.Substitution 12 项定理（含消耗保持之律、其实例与 Lone 反例）公理报告为空；检查器并核对核心纯净。作者反审见整合文档；第二次独立审查（见来源）接受数学，其更正已作；第三次把“只在一步上不被记入”限于 extracting。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z): the 12 theorems of Becoming.Substitution, the law of kept consumption, its instance and the Lone counterexample among them, have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; the second independent review (listed under sources) accepted the mathematics, its corrections made; the third scoped “withheld at one step only” to extracting."
+  },
+  "next_delta": {
+    "zh": "替代条件被更新时消耗是否转移到别处；在依存可变的一般定律中陈述同样的保持。",
+    "en": "Whether consumption moves elsewhere when alternatives are renewed; the same preservation for general laws with changing dependence."
+  },
   "correspondence": {
     "zh": "在整段读法下替代保持分类，这几乎由 ConsumingIn 的存在式定义给出：一个以转化依存的方式熬过它参与造成的损失的形成，仍然是消耗的；它自身的持续不证明更新。这也是“赢的元吸引子”的一个结构：靠消耗取胜的一方可以转向别处而持续，失去者不随之恢复。在逐步读法下分类不保持：这样的胜者在维持者失去支持之前被记入，此后到它转向别处为止被扣下（extracting 中一步，slow 中两步）。“替代不证明更新”仍成立，因为逐步的 living 不是更新。一个实际形成能否替代、以什么代价，是应用义务。",
     "en": "On the whole-run reading substitution preserves the classification, nearly by the existential definition of ConsumingIn: a formation that survives a loss it took part in by transforming its dependence still consumes, and its own continuation does not certify renewal. This is one structure of the meta-attractor of winning: one who wins by consumption can turn elsewhere and persist while the loser does not recover. On the stepwise reading the classification is not preserved: such a winner is credited before the sustaining formation loses support and withheld from then until it switches (one step in extracting, two in slow). “Substitution does not certify renewal” still holds, because stepwise living is not renewal. Whether an actual formation can substitute, and at what cost, is an application duty."
@@ -104,51 +265,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
-      "detail": {
-        "zh": "焦点形成的持续与活跃不证明更新：它每步都活跃，却是消耗的（Substitution.persists_consuming）。",
-        "en": "The focal formation's persistence and activity do not certify renewal: it is active at every step and consuming (Substitution.persists_consuming)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
-      "detail": {
-        "zh": "逐步读法下分类不保持（Substitution.stepwise_credits_substitution）：在 extracting 中焦点形成除第 2 步外每个事件都被记入（第二次独立审查 F3）。",
-        "en": "On the stepwise reading the classification is not preserved (Substitution.stepwise_credits_substitution): in extracting every event of the focal formation except at step 2 is credited (second independent review F3)."
-      }
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
-      "detail": {
-        "zh": "第二次独立审查：P7 的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，§8.5 的表在 (a)(b) 与 but-for 一栏上不公允（已更正，整合文档 §11）。",
-        "en": "Second independent review: the mathematics of P7 is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the §8.5 table was unfair in rows (a), (b) and the but-for column (corrected, integration note §11)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
-      "detail": {
-        "zh": "“只在一步上不被记入”只对 extracting 成立（Substitution.slow_withheld_two_steps）：在 slow 中共同条件跌破维持者的支持后仍支持焦点形成，它在第 2、3 步都侵蚀（第三次独立审查 G5）。",
-        "en": "“Withheld at one step only” holds only for extracting (Substitution.slow_withheld_two_steps): in slow the shared condition still supports the focal formation after it fails the sustaining formation, and the focal formation undermines at steps 2 and 3 (third independent review G5)."
-      }
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
-      "detail": {
-        "zh": "第三次独立审查：P8、P9 与 P7b 的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法的代价、节制、替代、交互与剩余的免费连通上强于 Lean（已更正，整合文档 §12）。",
-        "en": "Third independent review: every P8, P9 and P7b declaration is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on the stepwise cost, restraint, substitution, interaction and the residual free connection (corrected, integration note §12)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "不含伦理谓词；保持只对整段读法成立；对每个依存网，只在损失由改变所留下的依存见证时成立；以替代持续、其时机与维持者的终止在支持门控定律中证明；替代条件的水平不变，其代价未建模；不说明形成的个体化（跨步的同一怎样影响这些读法，见 identity-across-steps）。",
-    "en": "Contains no ethical predicate; preservation holds on the whole-run reading only; for every web it holds only where the loss is witnessed by a dependence the change leaves; persistence by substitution, its timing and the sustaining formation's ending are proved in the support-gated law; the alternative's level is constant and its cost unmodelled; the individuation of formations is not treated (how identity across steps bears on these readings is in identity-across-steps)."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T221720.428753Z）：Becoming.Substitution 7 项定理全部空依赖；同一回执覆盖包内 91 个模块（含只作导入的根模块与四个桥接模块），共 4983 项定理／7020 项声明审计，39 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）把“只在一步上不被记入”限于 extracting，更正在 §12。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 90 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。2026-10-14 新增的消耗保持之律、其实例与 Lone 反例（5 项定理；Becoming.Substitution 现为 12 项）由合并检查器回执 20261013T221720.428753Z 检查，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T221720.428753Z): all 12 theorems of Becoming.Substitution have empty axiom reports; the same receipt covers the package's 91 modules (including the import-only root and the four bridge modules) with 4983 theorems/7020 declaration audits, and 39 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a third independent review (BECOMING-P8-P9-P7B-REVIEW.md) scoped “withheld at one step only” to extracting, corrected in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 90 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The law of kept consumption, its instance and the Lone counterexample, added on 14 October 2026 (5 theorems; Becoming.Substitution now has 12), are checked in consolidated receipt 20261013T221720.428753Z with empty axiom reports."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
@@ -256,10 +372,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "替代条件有代价且都不被更新时，替代链终结，已由 unceasing-generation-needs-renewal 证明；替代条件被更新时消耗是否转移到别处，以及在依存可变的一般定律中陈述同样的保持，仍开放。",
-    "en": "That the chain of substitutions ends when the alternatives cost and none is renewed is proved in unceasing-generation-needs-renewal; whether consumption moves elsewhere when alternatives are renewed, and the same preservation for general laws with changing dependence, remain open."
-  },
   "history": [
     {
       "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P7，承接 relational-renewal-classification 与 becoming-dependence-dynamics 的下一步。",
@@ -592,6 +704,20 @@
     {
       "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；Substitution.lean（新增依存改变下消耗保持的规律，既有陈述不变）。",
       "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); Substitution.lean (the law of consumption kept under changed dependence added; existing statements unchanged)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（一般规律计划：增长棘轮所拦记录的迁移）：长标题改为短名，陈述在先；主张拆为 9 条规律；限制、逐轮回执与审查说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。slow 一条中“一般情形为论证，未形式化”移入“未表明”。旧下一步的前半句（替代条件有代价且都不被更新时替代链终结，已由 unceasing-generation-needs-renewal 证明）由相关结果承载，原句留在快照中；后半句“仍开放”改为正面陈述。反例中的两段审查摘要以“所审的数学”“所审的全部声明”代替轮次标记 P7、P8、P9、P7b，并去掉节号（§8.5、§11、§12）。每句旧文本的去向见迁移对照表 [substitution-preserves-consumption.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/substitution-preserves-consumption.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (general-laws plan: migration of the records the growth ratchet stopped): The long title became a short name with the statement first; the claim was split into 9 laws; limitations, per-round receipts and review notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The slow law's “in general an argument, not formalized” moved to does-not-show. The first half of the old next step (the chain of substitutions ends when the alternatives cost and none is renewed, proved in unceasing-generation-needs-renewal) is carried by that related result and stays in the snapshot; its second half, “remain open”, is now stated positively. In the counterexamples the two review summaries say “the mathematics under review” and “every declaration under review” in place of the round labels P7, P8, P9 and P7b, and drop their section numbers (§8.5, §11, §12). Every earlier sentence is mapped in the migration table [substitution-preserves-consumption.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/substitution-preserves-consumption.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/7c8df7d8b161c39e/substitution-preserves-consumption.json",
+      "sha256": "7c8df7d8b161c39ef3c74ea52a2d95bdc909977275eabc7082cc37881101d2a6",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }

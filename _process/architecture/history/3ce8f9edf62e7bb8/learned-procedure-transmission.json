@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "id": "learned-procedure-transmission",
+  "title": {
+    "zh": "学习方式经实际表现进入重构",
+    "en": "Learning procedures reconstructed through actual performance"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F09",
+  "reviewed_at_utc": "2026-10-08T19:38:50.588789+00:00",
+  "claim": {
+    "zh": "对所述构造的每次接触与重构：接触恰在有形成活跃、且来源足以覆盖每个活跃形成在每项任务上的需求时进行（expose_isSome_iff），并保留装置、写入其运行所留的网络、标为已测（exposed_kit）；重构恰在状态已测、且前体与支持足以建成至少一个后继时进行（reconstruct_isSome_iff），并以转移所继承的记录与更新控制位建成未测的后继（reconstruct_inherits）。因此每次接触之后的忠实重构，都传递接触所留的网络与被接触形成的更新控制位，按容量建成后继，并保持材料与支持账（cycle_transmits）。在给定任务、支承和构造规律内，两次接触从零形成保留网络；后续实际反应提供按量重构其矩阵和更新控制的支持，后继实际使用所得；所构造的历史是这一传递定律的实例（history_transmits）。相连历史保持材料及支持账而不重置失败取得；整体表现由此能改变内部更新方式的重构。",
+    "en": "For every exposure and reconstruction of the declared construction: an exposure runs exactly when some formation is active and the source covers every active formation's demand on every task (expose_isSome_iff), and it keeps the apparatus, writes the network its run leaves and marks the state tested (exposed_kit); a reconstruction runs exactly when the state is tested and the precursor and support build at least one successor (reconstruct_isSome_iff), and it builds its successors, untested, from the transfer's inherited record and procedure bit (reconstruct_inherits). So every exposure followed by a faithful reconstruction passes on the network the exposure left and the procedure bit the exposed formation had, builds as many successors as the capacity allows, and conserves material and support (cycle_transmits). Under the declared task, support and construction laws, two encounters form a retained network from zero; actual subsequent responses fund computed reconstruction of its matrix and operative updater bit, and reconstructed successors use them; the constructed history is an instance of the law of transmission (history_transmits). The connected history preserves material and support without resetting failed acquisition. Whole performance can thereby alter reconstruction of the procedure that governs internal change."
+  },
+  "hypotheses": [
+    {
+      "zh": "初始硬件、两种更新方式、三坐标tanh反应与选择更新规律、仿射通道及任务接触给定。",
+      "en": "Initial hardware, two updating procedures, three-coordinate tanh response and selected-update laws, affine channels and task encounters are supplied."
+    },
+    {
+      "zh": "每次任务一单位有限来源仅在实际成功时转为可用支持。每个重构消耗十三单位前体及二十支持，包含十单位装置构造；这是局部配方，不是普遍物理成本或来源再生。",
+      "en": "One finite source opportunity per task converts to available support exactly on actual success. Reconstruction consumes thirteen precursor and twenty support units, including the ten-unit apparatus build; these are local recipes, not universal physical prices or source replenishment."
+    },
+    {
+      "zh": "实数矩阵精确复制、与来源保持关联的重构、新取得校准及分开匹配存量的同质群体均为明示理想条件；重构配方自身在本模块不演化。",
+      "en": "Exact real-valued matrix copying, source-associated reconstruction, freshly acquired calibration and homogeneous families with separate matched stocks remain idealized premises. The reconstruction recipe itself does not evolve here."
+    }
+  ],
+  "correspondence": {
+    "zh": "同一组织活动的后果影响其组成关系的重构，不给每部分独立报酬。网络及更新控制传递，而通道参考重新取得。梯度、制度评估及生物繁殖是后果改变组织的不同实现，不是同一算法；实际任务成功不被等同于整体生成性。",
+    "en": "Consequences of one organized activity affect reconstruction of its operative components; no independent reward is assigned to each component. The network and updater bit are inherited while channel references are reacquired. Gradients, institutional evaluation and biological reproduction are separate implementations of consequential change, not identical algorithms. Actual task success is not identified with wider generative good."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean",
+  "aliases": [
+    "LearnedProcedureTransmission.complete_formation_transmission_use",
+    "LearnedProcedureTransmission.reconstructed_record_enters_use",
+    "LearnedProcedureTransmission.expose_isSome_iff",
+    "LearnedProcedureTransmission.reconstruct_isSome_iff",
+    "LearnedProcedureTransmission.reconstruct_inherits",
+    "LearnedProcedureTransmission.cycle_transmits",
+    "LearnedProcedureTransmission.history_transmits"
+  ],
+  "dependencies": [
+    {
+      "id": "encounter-selection-and-revision",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用取得信息、进一步经历选择及实际使用的区分；新联结论历史不正式导入经历选择模型。",
+        "en": "Reuses the distinction between acquired information, selection of further encounters and actual use. This new connectionist history is not a formal import of the encounter-choice model."
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "joint-practice-forms-continuation",
+      "detail": {
+        "zh": "另一实查实现接通共同实践与后续参与；制度授权规律不与本重构规律互换。",
+        "en": "A different checked implementation connects joint practice to later participation. Its institutional authorization law is not interchangeable with this reconstruction law."
+      }
+    },
+    {
+      "id": "historical-source-binding",
+      "detail": {
+        "zh": "保留认知内容与历史适用范围的独立连接；重构成功不独自成立语义或时序根据。",
+        "en": "Retains the distinct cognitive-content and historical-applicability connection; successful reconstruction alone does not establish semantic or temporal warrant."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean",
+      "detail": {
+        "zh": "更新控制转化或记录擦除可保留后继数量而改变使用；单一C任务使回报相同，有限前体使数量相同。支持或来源不足阻断阶段；通道变化失败用另行明示的受损入口，不冒充主后继历史。",
+        "en": "Procedure conversion or record erasure preserves offspring count while altering later use. C-only tasks equalize returns; limited precursor equalizes reconstruction counts. Support/source shortages block stages. The changed-channel failure uses a separately declared impaired entrance, not the main successor history."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "一个有限条件组合，不是混合群体入侵模型、全部学习规律起源、生态再生、普遍生成对齐或完整认知。绝对接续、相对占比及共同更新分别保留；不是每项生成贡献都须提高相对频率。同关系的常规模型获得同等解释信用。",
+    "en": "One finite conditional composition, not a mixed-population invasion model, origin of all learning rules, ecological replenishment, universal generative convergence or complete cognition. Absolute continuation, relative representation and shared renewal remain distinct; relative-frequency increase is not required for every generative contribution. Conventional models with the same relations retain equal explanatory credit."
+  },
+  "validation_scope": {
+    "zh": "作者与独立审查者分别新编译30项新定理／50项显式审计，另重建157项继承定理／251项审计，共301项。Lean4.30.0-rc2及固定Mathlib；仓库闭包重建，Mathlib使用缓存。只含标准逻辑依赖；原典评估及独立概念反审与证明分开，无新经验复算。2026-10-14，同一检查器原样对含一般定律的源文再次通过（运行 20261013T211356.378776Z；因机器负载很高，以外层包装延长其固定的每条命令 300 秒时限）：LearnedProcedureTransmission 37 项定理／57 项声明审计，共 308 项审计，七项新声明只用标准依赖 propext、Classical.choice 与 Quot.sound。绑定固定到该次运行的冻结回执。",
+    "en": "Author and independent reviewer freshly compiled 30 new theorems / 50 explicit declaration audits, separately rebuilding 157 inherited theorems / 251 audits (301 total). Lean 4.30.0-rc2 and pinned Mathlib; repository closure rebuilt, Mathlib cache reused. Standard logical dependencies only. Primary-source assessment and independent conceptual review are separate from proof; no new empirical rerun. On 14 October 2026 the same checker, unchanged, passed again on the source with the general laws (run 20261013T211356.378776Z; a wrapper lengthened its fixed 300-second per-command timeout because the machine was heavily loaded): LearnedProcedureTransmission 37 theorems / 57 declaration audits, 308 audits in total, the seven new declarations with only the standard dependencies propext, Classical.choice and Quot.sound. The binding is pinned to that run's frozen receipt."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean",
+      "role": "proof",
+      "sha256": "820c61626c5cbd5b69d90648bca86dede9ed79d495be1b1543808f0b158231dd",
+      "declarations": [
+        "LearnedProcedureTransmission.actual_acquisition_prefix",
+        "LearnedProcedureTransmission.actual_parent_history",
+        "LearnedProcedureTransmission.actual_reconstruction",
+        "LearnedProcedureTransmission.actual_successor_exposure",
+        "LearnedProcedureTransmission.complete_formation_transmission_use",
+        "LearnedProcedureTransmission.reconstructed_record_enters_use",
+        "LearnedProcedureTransmission.procedure_conversion_changes_next_use",
+        "LearnedProcedureTransmission.erased_record_changes_first_use",
+        "LearnedProcedureTransmission.unchanged_task_equal_returns",
+        "LearnedProcedureTransmission.material_limit_equalizes_counts",
+        "LearnedProcedureTransmission.separate_future_channel_control",
+        "LearnedProcedureTransmission.expose_isSome_iff",
+        "LearnedProcedureTransmission.exposed_kit",
+        "LearnedProcedureTransmission.reconstruct_isSome_iff",
+        "LearnedProcedureTransmission.reconstruct_inherits",
+        "LearnedProcedureTransmission.reconstruct_after_exposure_iff",
+        "LearnedProcedureTransmission.cycle_transmits",
+        "LearnedProcedureTransmission.history_transmits",
+        "LearnedProcedureTransmission.exposed_accounts",
+        "LearnedProcedureTransmission.reconstructed_accounts"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-checks/20261013T211356.378776Z/verification.json",
+      "role": "receipt",
+      "sha256": "63a6e37b8af023dca1279fa802206f3e2c398afb41327a11b2e70dd876022ea7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/check_learned_procedure_transmission.py",
+      "role": "provenance",
+      "sha256": "ee6c0e44fe414c5c2b2d0b2c48590bf6b2918585e933a6ee72e51a2b50aa030f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md",
+      "role": "integration",
+      "sha256": "e11f4462141f3b0e48e9168e44dcbeba66bab4401261cabea20e8b5e4faa3024",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "3226b9961d503ac53f9df8bd6f7c41800a8e3c0d48240f2bc174070eb013ac53",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "role": "review",
+      "sha256": "c1a6b63281a498b650abf85389ae4201d7ab1f850cd5339cb17b262305999ac9",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "role": "provenance",
+      "sha256": "298139cd0b38c6eb162dc6bcc6c6b0cc5b5563c536e1cc7587e632638d3866e8",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "role": "statement",
+      "sha256": "8567a5d848b7edb599d5a69ab1550044d6a2ce95b304a17e44f6143fcac18401",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md",
+      "role": "provenance",
+      "sha256": "ad4e0a9485bd7e87ce2f5b5ef9cf713a20ef885786ccff64e36ca1e1a9c79d20",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-checks/20261013T211356.378776Z/verification.json",
+      "sha256_pointer": "/modules/5/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "更强更新主张须将给定表现—支持对应接到独立识别的更新活动，并追踪条件变化后的重构。保留已完成连接与完整认知目标，不重开一般形成／保持／使用。",
+    "en": "For a stronger renewal claim, replace the supplied performance-to-support correspondence with an identified renewing activity and trace reconstruction under changed conditions. Preserve this completed connection and the full cognitive objective; do not reopen generic formation/retention/use."
+  },
+  "history": [
+    {
+      "zh": "2026年10月9日：Ren明确要求完成并授权代理。组合复用校准更新，经反审加入零矩阵实际取得前史，并接通表现、重构和后继使用。一个成果身份，声明数量不计作独立发现。",
+      "en": "9 October 2026: Ren explicitly requested completion and authorized delegation. The new composition reuses calibrated updating, adds an actual zero-matrix acquisition prefix after review, and connects performance to reconstruction and successor use. One result identity; declaration counts are not separate discoveries."
+    },
+    {
+      "zh": "2026-10-14，一般定律（一般定律计划 L2 流，由整合会话分派；AI 撰写，Claude Opus 5.5）：审计发现正面结论只靠所构造的历史。新增对每次接触与重构成立的定律（expose_isSome_iff、exposed_kit、reconstruct_isSome_iff、reconstruct_inherits、reconstruct_after_exposure_iff、cycle_transmits），材料与支持账的保持复用 exposed_accounts 与 reconstructed_accounts；所构造的历史是实例（history_transmits）。主张改写为定律在先；假设、反例与范围不变。2026-10-14，同一检查器原样对含一般定律的源文再次通过（运行 20261013T211356.378776Z；因机器负载很高，以外层包装延长其固定的每条命令 300 秒时限）：LearnedProcedureTransmission 37 项定理／57 项声明审计，共 308 项审计，七项新声明只用标准依赖 propext、Classical.choice 与 Quot.sound。绑定固定到该次运行的冻结回执。",
+      "en": "14 October 2026, general law (general-laws plan, stream L2, assigned by the integrating session; AI-authored, Claude Opus 5.5): the audit found that the positive point rested only on the constructed history. Laws for every exposure and reconstruction are added (expose_isSome_iff, exposed_kit, reconstruct_isSome_iff, reconstruct_inherits, reconstruct_after_exposure_iff, cycle_transmits), reusing exposed_accounts and reconstructed_accounts for the conservation of material and support; the constructed history is an instance (history_transmits). The claim is rewritten law first; hypotheses, counterexamples and scope are unchanged. On 14 October 2026 the same checker, unchanged, passed again on the source with the general laws (run 20261013T211356.378776Z; a wrapper lengthened its fixed 300-second per-command timeout because the machine was heavily loaded): LearnedProcedureTransmission 37 theorems / 57 declaration audits, 308 audits in total, the seven new declarations with only the standard dependencies propext, Classical.choice and Quot.sound. The binding is pinned to that run's frozen receipt."
+    }
+  ]
+}

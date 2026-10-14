@@ -1,22 +1,238 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "ranking-under-readings",
   "title": {
-    "zh": "C 在各读法下的排序：逐步读法保持“共享优于以消耗取胜”，保持满足每个所需的节制优于过度汲取；过度汲取者在损失之前有被记入的事件时，失去“没有它更好”；可能性读法下，C 像整段读法那样把过度汲取者的不在场、节制与共享排在上面而不扣下事件，在公理之下按它的扩展就是保留且增加；不增加可能性的在场与不在场不分高下，可能性优先把在场排得更高，也把休息排在活动之下（P44）",
-    "en": "What C ranks under each reading: the stepwise reading keeps “sharing is better than winning by consumption” and restraint that meets every need above overdraw, and loses “better without the overdrawing formation” when that formation has a credited event before the loss; under the possibility reading C ranks the absence of overdraw, restraint and sharing as the whole-run reading does while withholding no event, extension under it being retaining and adding under the axiom; a presence adding no possibility ties with its absence, and possibilities first ranks that presence higher and a rest below activity (P44)"
+    "zh": "比较原则 C 在各读法下的排序",
+    "en": "What comparison principle C ranks under each reading"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-11T19:09:08+00:00",
-  "claim": {
-    "zh": "把两次继续作为一个框架的配置、把读法所记入的事件作为实现的主张，比较原则 C 就是这一框架上的 Comparison。对每个继续族成立两条定律。与更新每个条件之继续的比较之律（renewed_extends_iff）：两种读法下，更新每个条件的继续扩展另一个继续，当且仅当它在另一个所记入的每个事件上活跃，并在另一个所扣下的某个事件上活跃；它每步每个形成都活跃时，当且仅当另一个扣下某个事件（renewed_active_extends_iff）。整段读法的缓和之律（wholeRun_extends_iff_of_eases）：由活动需要支持的继续，到一个不多要依存与所需、每个条件不更低、不多汲取、受支持处即活跃的继续，整段读法不撤回任何记入，所以后者扩展前者，当且仅当它记入前者所扣下的某个事件。逐步读法下，第一条定律不能去掉更新（ThirdParty.renewal_needed），也没有缓和之律（ThirdParty.stepwise_not_monotone）。对任何只记入活跃事件的读法，没有某个形成的继续扩展有它的继续，仅当读法扣下该形成的每个事件。整段读法（活跃且在该继续中不消耗）下，对支持门控定律族中每个超出更新地汲取的焦点形成，没有它的继续更新每个条件并扩展有它的继续，是第一条定律的实例，所以每个满足 C 的比较都把前者排得更高。逐步读法（活跃且不侵蚀）下，焦点形成在某步活跃、而该步之后每个所需仍被满足时，这一事件被记入；于是两次继续互不扩展，有一个满足 C、非自反、传递的比较偏好有它的继续。恶性增殖与以消耗取胜都是实例。逐步读法下，以消耗取胜者在损失之前的事件被记入、之后的不被记入，而共享的继续更新每个条件、在每个事件上活跃，所以共享仍扩展以消耗取胜，是第一条定律的实例。两种读法下，每个所需始终被满足、每个形成都活跃的继续（节制）扩展每个扣下某个事件的继续，是第一条定律的实例；在二元定律族中，满足每个所需使每个形成活跃，过度汲取使维持者失去支持则扣下它此后的事件，所以每个满足 C 的比较都把节制排得更高，即使逐步读法记入过度汲取者在损失之前的事件；恶性增殖与同一形成在第一步之后、越过阈值之前停止相比也是如此。所以在二元定律族中，逐步读法下 C 失去与不在场的比较；而在每个继续族中，每步都满足所需的继续在它之下何时扩展另一个，恰如第一条定律所述。焦点形成没有被记入的事件时（例如第一步就越过支持），逐步读法同样把不在场排得更高（Immediate）；有第三个形成共用条件时，节制者此后的汲取可以侵蚀第三者曾被满足的依存，逐步读法下两次继续互不扩展（ThirdParty）；那里节制的继续使第三者的所需落空，整段读法下它按缓和之律仍扩展过度汲取。P44（Becoming.Relevance）加第三种读法。可能性读法（Ranking.possible）在一个继续的水平容许某形成之处记入它，活跃与否；在依存的继续中它记入每个活跃的形成（possible_of_active）。没有焦点形成的继续每步容许每个形成（absent_admits_all）；在定律族的每个定律中，焦点形成从某步起超出更新地汲取时，没有它的继续按此读法扩展有它的继续（possible_extends），所以每个满足 C 的比较都把前者排得更高（possible_ranks）。同一定律的两个继续有同样的所需（possible_course_iff），所以在公理之下按此读法的扩展就是在定律的网上保留且增加有意义者（possible_extends_iff）。恶性增殖：可能性读法把不在场排得更高，并记入其第一个事件，逐步读法记入它，整段读法扣下它（malignant_possible）。共享扩展以消耗取胜（possible_contest）；二元族中每个所需始终被满足的继续扩展过度汲取使维持者失去支持的继续（possible_restraint）；有第三个形成共用条件时节制仍扩展过度汲取（ThirdParty.possible_extends），那里逐步读法不排序。在更新之内汲取的形成不增加可能性：两个继续容许同样的形成，互不扩展（possible_tie），而两种 living 读法都把它的在场排得更高（readings_rank_presence）；共享是实例（sharing_presence）。一般地，水平处处不低的路径包含另一条（Web.Includes.of_le），从不被保留且增加排在下面（Web.not_added_of_le）。可能性优先（possibleFirst：先比可能性，可能性相同再比一种读法所记入的事件）在可能性读法下满足 C，非自反、传递（possibleFirst_order）；不论第二步用哪种读法，它都把过度汲取者的不在场排得更高（possibleFirst_overdraw），第二步用任一种 living 读法，它都把在更新之内的在场排在不在场之上（possibleFirst_presence）；见证中一个被支持而在第 0 步休息的形成与不间断的活动容许同样的形成，可能性优先把休息排在下面（Rest.rest_ranked_below）。不用 Lean 公理；C 只作为假设或定义出现。",
-    "en": "Taking two continuations as the configurations of a frame and the events a reading credits as its realized claims, comparison principle C is Comparison on that frame. Two laws hold for every family of courses. The law of comparison with a renewing course (renewed_extends_iff): under either reading, a course that renews every condition extends another exactly when it is active at every event the other credits and at some event the other withholds; where every formation is active at every step of it, exactly when the other withholds some event (renewed_active_extends_iff). The whole-run law of easing (wholeRun_extends_iff_of_eases): from a course where activity needs support to one that asks no dependence or need more, holds every condition at least as high, draws on nothing more and is active wherever supported, no whole-run credit is withdrawn, so the second extends the first exactly when it credits an event the first withholds. Under the stepwise reading the renewal in the first law cannot be dropped (ThirdParty.renewal_needed), and there is no law of easing (ThirdParty.stepwise_not_monotone). For any reading that credits only active events, the continuation without a formation extends the continuation with it only if the reading withholds every event of that formation. Under the whole-run reading (active and not consuming in that continuation), for every law of the support-gated family in which the focal formation draws beyond renewal, the continuation without it renews every condition and extends the continuation with it, an instance of the first law, so every comparison satisfying C ranks the former higher. Under the stepwise reading (active and not undermining), an event of the focal formation is credited when it is active and every need is still met after its step; the two continuations then do not extend each other, and an irreflexive, transitive comparison satisfying C prefers the continuation with the formation. Malignant growth and winning by consumption are instances. Under the stepwise reading the winner's events before the loss are credited and those after are not, while sharing renews every condition and is active at every event, so sharing still extends winning by consumption, an instance of the first law. Under both readings a continuation in which every need stays met and every formation is active (restraint) extends every continuation that withholds some event, an instance of the first law; in the two-part family meeting every need makes every formation active, and overdraw that ends the sustaining formation's support withholds its later events, so every comparison satisfying C ranks restraint higher, even though the stepwise reading credits the overdrawing formation's events before the loss; so it is for malignant growth against the same formation stopping after its first step, before the threshold. So in the two-part family the stepwise reading loses the comparison with absence, while in every family a course that meets every need at every step extends another under it exactly as the first law states. When no focal event is credited, as when the first step already crosses support, the stepwise reading too ranks the absence higher (Immediate); when a third formation shares the condition, a restrained formation's later draw can undermine the third formation's once-met dependence, and under the stepwise reading neither course extends the other (ThirdParty); that restrained course leaves the third formation's need unmet, and under the whole-run reading it still extends overdraw, by the law of easing. P44 (Becoming.Relevance) adds a third reading. The possibility reading (Ranking.possible) credits a formation where a course's levels admit it, active or not; in a dependent course it credits every active formation (possible_of_active). The course without the focal formation admits every formation at every step (absent_admits_all); in every law of the family in which the focal formation draws beyond renewal from some step on, the course without it extends the course with it under this reading (possible_extends), so every comparison satisfying C ranks the former higher (possible_ranks). Both courses of a law have the same requirements (possible_course_iff), so under the axiom extension under this reading is retaining and adding what has significance on the law's web (possible_extends_iff). Malignant growth: the possibility reading ranks the absence higher and credits the first event, as the stepwise reading credits it and the whole-run reading withholds it (malignant_possible). Sharing extends winning by consumption (possible_contest); in the two-part family a course in which every need stays met extends a course in which overdraw ends the sustaining formation's support (possible_restraint); with a third formation sharing the condition restraint still extends overdraw (ThirdParty.possible_extends), where the stepwise reading leaves them unranked. A formation drawing within renewal adds no possibility: the two courses admit the same formations and neither extends the other (possible_tie), while both readings of living rank its presence higher (readings_rank_presence); sharing is an instance (sharing_presence). Generally a level path nowhere lower includes the other (Web.Includes.of_le) and is never ranked below by retaining and adding (Web.not_added_of_le). Possibilities first (possibleFirst: possibilities first, and with the same possibilities a reading's credited events) satisfies C under the possibility reading and is irreflexive and transitive (possibleFirst_order); whatever the second reading, it ranks the absence of an overdrawing formation higher (possibleFirst_overdraw), and with either reading of living second it ranks the presence of a formation drawing within renewal above its absence (possibleFirst_presence); in a witness a supported formation resting at step 0 admits the same formations as uninterrupted activity, and possibilities first ranks the rest below (Rest.rest_ranked_below). No Lean axiom is used; C occurs only as a hypothesis or a definition."
+  "reviewed_at_utc": "2026-10-14T03:30:00+00:00",
+  "statement": {
+    "zh": "对每个继续族，一条定律恰好说明更新每个条件的继续在两种 living 读法下何时扩展另一个。逐步读法下 C 保持共享与节制优于过度汲取，而过度汲取者在损失前有被记入的事件时，不再保持其不在场更好；可能性读法三者都保持。",
+    "en": "For every family of courses, a law gives exactly when a renewing course extends another under either reading of living. Stepwise, C keeps sharing and restraint above overdraw, not the absence of an overdrawing formation credited before the loss; the possibility reading keeps all three."
   },
+  "laws": [
+    {
+      "zh": "把两次继续作为一个框架的配置、把读法所记入的事件作为实现的主张，比较原则 C 就是这一框架上的 Comparison。整段读法记入活跃且在该继续中不消耗的事件，逐步读法记入活跃且不侵蚀的事件。",
+      "en": "Taking two continuations as the configurations of a frame and the events a reading credits as its realized claims, comparison principle C is Comparison on that frame. The whole-run reading credits the events that are active and not consuming in that continuation, the stepwise reading those that are active and not undermining.",
+      "declarations": [
+        "Becoming.Ranking.frame",
+        "Becoming.Ranking.ExtendsUnder",
+        "Becoming.Ranking.ComparisonUnder",
+        "Becoming.Extension",
+        "Becoming.Comparison",
+        "Becoming.Ranking.wholeRun",
+        "Becoming.Ranking.stepwise"
+      ]
+    },
+    {
+      "zh": "与更新每个条件之继续的比较之律，对每个继续族成立：两种读法下，更新每个条件（每步满足每个所需）的继续扩展另一个继续，当且仅当它在另一个所记入的每个事件上活跃，并在另一个所扣下的某个事件上活跃；它每步每个形成都活跃时，当且仅当另一个扣下某个事件。",
+      "en": "The law of comparison with a renewing course, for every family of courses: under either reading, a course that renews every condition (meets every need at every step) extends another exactly when it is active at every event the other credits and at some event the other withholds; where every formation is active at every step of it, exactly when the other withholds some event.",
+      "declarations": [
+        "Becoming.Ranking.renewed_extends_iff",
+        "Becoming.Ranking.renewed_active_extends_iff",
+        "Becoming.Ranking.extendsUnder_iff_of_exact",
+        "Becoming.Ranking.wholeRun_of_renewed",
+        "Becoming.Ranking.stepwise_of_renewed"
+      ]
+    },
+    {
+      "zh": "整段读法的缓和之律，对每个继续族成立：由活动需要支持的继续，到一个不多要依存与所需、每个条件不更低、不多汲取、受支持处即活跃的继续，整段读法不撤回任何记入，所以后者扩展前者，当且仅当它记入前者所扣下的某个事件。",
+      "en": "The whole-run law of easing, for every family of courses: from a course where activity needs support to one that asks no dependence or need more, holds every condition at least as high, draws on nothing more and is active wherever supported, no whole-run credit is withdrawn, so the second extends the first exactly when it credits an event the first withholds.",
+      "declarations": [
+        "Becoming.Ranking.wholeRun_extends_iff_of_eases",
+        "Becoming.Ranking.wholeRun_mono",
+        "Becoming.Ranking.Eases",
+        "Becoming.Ranking.ActiveWhereSupported"
+      ]
+    },
+    {
+      "zh": "逐步读法下，比较之律不能去掉更新，也没有缓和之律。",
+      "en": "Under the stepwise reading the renewal in the law of comparison cannot be dropped, and there is no law of easing.",
+      "declarations": [
+        "Becoming.Ranking.ThirdParty.renewal_needed",
+        "Becoming.Ranking.ThirdParty.stepwise_not_monotone",
+        "Becoming.Ranking.ThirdParty.over_le_stops"
+      ]
+    },
+    {
+      "zh": "对任何只记入活跃事件的读法，没有某个形成的继续扩展有它的继续，仅当读法扣下该形成的每个事件。",
+      "en": "For any reading that credits only active events, the continuation without a formation extends the continuation with it only if the reading withholds every event of that formation.",
+      "declarations": [
+        "Becoming.Ranking.withheld_of_extends"
+      ]
+    },
+    {
+      "zh": "整段读法下，对支持门控定律族中每个超出更新地汲取的焦点形成，没有它的继续更新每个条件并扩展有它的继续，是比较之律的实例，所以每个满足 C 的比较都把前者排得更高。",
+      "en": "Under the whole-run reading, for every law of the support-gated family in which the focal formation draws beyond renewal, the continuation without it renews every condition and extends the continuation with it, an instance of the law of comparison, so every comparison satisfying C ranks the former higher.",
+      "declarations": [
+        "Becoming.Ranking.whole_run_extends",
+        "Becoming.Ranking.whole_run_ranks",
+        "Becoming.Ranking.absent_renews",
+        "Becoming.Ranking.Course",
+        "Becoming.Ranking.course",
+        "Becoming.Ranking.absent",
+        "Becoming.Ranking.undisturbed",
+        "Becoming.Ranking.undisturbed_sustains",
+        "Becoming.Ranking.absent_sustains",
+        "RelationalRenewal.Law.overdraw_consuming"
+      ]
+    },
+    {
+      "zh": "逐步读法下，焦点形成在某步活跃、而该步之后每个所需仍被满足时，这一事件被记入；于是两次继续互不扩展，有一个满足 C、非自反、传递的比较偏好有它的继续。恶性增殖与以消耗取胜都是实例。",
+      "en": "Under the stepwise reading an event of the focal formation is credited when it is active and every need is still met after its step; the two continuations then do not extend each other, and an irreflexive, transitive comparison satisfying C prefers the continuation with the formation. Malignant growth and winning by consumption are instances.",
+      "declarations": [
+        "Becoming.Ranking.credited_before_loss",
+        "Becoming.Ranking.stepwise_unranked",
+        "Becoming.Ranking.preferOccurs",
+        "Becoming.Ranking.preferOccurs_only",
+        "Becoming.Ranking.admits_occurrence",
+        "Becoming.Ranking.readings_rank_differently",
+        "Becoming.Ranking.malignant_ranking",
+        "Becoming.Ranking.winning_ranking",
+        "RelationalRenewal.Law.malignant",
+        "RelationalRenewal.Law.winning"
+      ]
+    },
+    {
+      "zh": "逐步读法下，以消耗取胜者在损失之前的事件被记入、之后的不被记入，而共享的继续更新每个条件、在每个事件上活跃，所以共享仍扩展以消耗取胜，是比较之律的实例。",
+      "en": "Under the stepwise reading the winner's events before the loss are credited and those after are not, while sharing renews every condition and is active at every event, so sharing still extends winning by consumption, an instance of the law of comparison.",
+      "declarations": [
+        "Becoming.Ranking.Contest",
+        "Becoming.Ranking.contest",
+        "Becoming.Ranking.sharing_credited",
+        "Becoming.Ranking.stepwise_contest",
+        "RelationalRenewal.Law.sharing",
+        "RelationalRenewal.Law.within_renewal_sustains"
+      ]
+    },
+    {
+      "zh": "两种读法下，每个所需始终被满足、每个形成都活跃的继续（节制）扩展每个扣下某个事件的继续，是比较之律的实例。",
+      "en": "Under both readings a continuation in which every need stays met and every formation is active (restraint) extends every continuation that withholds some event, an instance of the law of comparison.",
+      "declarations": [
+        "Becoming.Ranking.Restraint",
+        "Becoming.Ranking.restraint",
+        "Becoming.Ranking.stops_credited",
+        "Becoming.Ranking.renewed_active_extends_iff"
+      ]
+    },
+    {
+      "zh": "在二元定律族中，满足每个所需使每个形成活跃，过度汲取使维持者失去支持则扣下它此后的事件，所以每个满足 C 的比较都把节制排得更高，即使逐步读法记入过度汲取者在损失之前的事件；恶性增殖与同一形成在第一步之后、越过阈值之前停止相比也是如此。",
+      "en": "In the two-part family meeting every need makes every formation active, and overdraw that ends the sustaining formation's support withholds its later events, so every comparison satisfying C ranks restraint higher, even though the stepwise reading credits the overdrawing formation's events before the loss; so it is for malignant growth against the same formation stopping after its first step, before the threshold.",
+      "declarations": [
+        "Becoming.Ranking.restraint_ranks",
+        "Becoming.Ranking.malignant_restraint",
+        "Becoming.Ranking.stoppingMalignant",
+        "Becoming.Ranking.stoppingMalignant_level"
+      ]
+    },
+    {
+      "zh": "焦点形成没有被记入的事件时（例如第一步就越过支持），逐步读法同样把不在场排得更高。",
+      "en": "When no focal event is credited, as when the first step already crosses support, the stepwise reading too ranks the absence higher.",
+      "declarations": [
+        "Becoming.Ranking.Immediate.focal_withheld",
+        "Becoming.Ranking.Immediate.stepwise_ranks_absence"
+      ]
+    },
+    {
+      "zh": "有第三个形成共用条件时，节制者此后的汲取可以侵蚀第三者曾被满足的依存，逐步读法下两次继续互不扩展；那里节制的继续使第三者的所需落空，整段读法下它按缓和之律仍扩展过度汲取。",
+      "en": "When a third formation shares the condition, a restrained formation's later draw can undermine the third formation's once-met dependence, and under the stepwise reading neither course extends the other; that restrained course leaves the third formation's need unmet, and under the whole-run reading it still extends overdraw, by the law of easing.",
+      "declarations": [
+        "Becoming.Ranking.ThirdParty.focal_three",
+        "Becoming.Ranking.ThirdParty.restraint_unranked_stepwise",
+        "Becoming.Ranking.ThirdParty.stepwise_not_monotone"
+      ]
+    },
+    {
+      "zh": "第三种读法，可能性读法，在一个继续的水平容许某形成之处记入它，活跃与否；在依存的继续中它记入每个活跃的形成。",
+      "en": "A third reading, the possibility reading, credits a formation where a course's levels admit it, active or not; in a dependent course it credits every active formation.",
+      "declarations": [
+        "Becoming.Ranking.possible",
+        "Becoming.Ranking.possible_of_active",
+        "Becoming.Web.Admits"
+      ]
+    },
+    {
+      "zh": "没有焦点形成的继续每步容许每个形成；在定律族的每个定律中，焦点形成从某步起超出更新地汲取时，没有它的继续按此读法扩展有它的继续，所以每个满足 C 的比较都把前者排得更高。",
+      "en": "The course without the focal formation admits every formation at every step; in every law of the family in which the focal formation draws beyond renewal from some step on, the course without it extends the course with it under this reading, so every comparison satisfying C ranks the former higher.",
+      "declarations": [
+        "Becoming.Ranking.absent_admits_all",
+        "Becoming.Ranking.possible_extends",
+        "Becoming.Ranking.possible_ranks"
+      ]
+    },
+    {
+      "zh": "同一定律的两个继续有同样的所需，所以在公理（Unrestricted）之下按可能性读法的扩展就是在定律的网上保留且增加有意义者。",
+      "en": "Both courses of a law have the same requirements, so under the axiom (Unrestricted) extension under the possibility reading is retaining and adding what has significance on the law's web.",
+      "declarations": [
+        "Becoming.Ranking.possible_course_iff",
+        "Becoming.Ranking.possible_extends_iff",
+        "Becoming.Unrestricted",
+        "Becoming.Web.Retains",
+        "Becoming.Web.Adds"
+      ]
+    },
+    {
+      "zh": "恶性增殖：可能性读法把不在场排得更高，并记入其第一个事件，逐步读法记入它，整段读法扣下它。",
+      "en": "Malignant growth: the possibility reading ranks the absence higher and credits the first event, as the stepwise reading credits it and the whole-run reading withholds it.",
+      "declarations": [
+        "Becoming.Ranking.malignant_possible"
+      ]
+    },
+    {
+      "zh": "可能性读法下，共享扩展以消耗取胜；二元族中每个所需始终被满足的继续扩展过度汲取使维持者失去支持的继续；有第三个形成共用条件时节制仍扩展过度汲取，那里逐步读法不排序。",
+      "en": "Under the possibility reading sharing extends winning by consumption; in the two-part family a course in which every need stays met extends a course in which overdraw ends the sustaining formation's support; with a third formation sharing the condition restraint still extends overdraw, where the stepwise reading leaves them unranked.",
+      "declarations": [
+        "Becoming.Ranking.possible_contest",
+        "Becoming.Ranking.possible_restraint",
+        "Becoming.Ranking.ThirdParty.possible_extends"
+      ]
+    },
+    {
+      "zh": "在更新之内汲取的形成不增加可能性：两个继续容许同样的形成，互不扩展，而两种 living 读法都把它的在场排得更高；共享是实例。",
+      "en": "A formation drawing within renewal adds no possibility: the two courses admit the same formations and neither extends the other, while both readings of living rank its presence higher; sharing is an instance.",
+      "declarations": [
+        "Becoming.Ranking.possible_tie",
+        "Becoming.Ranking.readings_rank_presence",
+        "Becoming.Ranking.sharing_presence"
+      ]
+    },
+    {
+      "zh": "一般地，水平处处不低的路径包含另一条，从不被保留且增加排在下面。",
+      "en": "Generally a level path nowhere lower includes the other and is never ranked below by retaining and adding.",
+      "declarations": [
+        "Becoming.Web.Includes.of_le",
+        "Becoming.Web.not_added_of_le",
+        "Becoming.Web.Includes.retains",
+        "Becoming.Web.Retains.not_added",
+        "Becoming.Web.Admits.mono"
+      ]
+    },
+    {
+      "zh": "可能性优先（先比可能性，可能性相同再比一种读法所记入的事件）在可能性读法下满足 C，非自反、传递；不论第二步用哪种读法，它都把过度汲取者的不在场排得更高，第二步用任一种 living 读法，它都把在更新之内的在场排在不在场之上。",
+      "en": "Possibilities first (possibilities first, and with the same possibilities a reading's credited events) satisfies C under the possibility reading and is irreflexive and transitive; whatever the second reading, it ranks the absence of an overdrawing formation higher, and with either reading of living second it ranks the presence of a formation drawing within renewal above its absence.",
+      "declarations": [
+        "Becoming.Ranking.possibleFirst",
+        "Becoming.Ranking.possibleFirst_order",
+        "Becoming.Ranking.possibleFirst_overdraw",
+        "Becoming.Ranking.possibleFirst_presence"
+      ]
+    },
+    {
+      "zh": "见证中一个被支持而在第 0 步休息的形成与不间断的活动容许同样的形成，可能性优先把休息排在下面。",
+      "en": "In a witness a supported formation resting at step 0 admits the same formations as uninterrupted activity, and possibilities first ranks the rest below.",
+      "declarations": [
+        "Becoming.Ranking.Rest.courses",
+        "Becoming.Ranking.Rest.rest_ranked_below"
+      ]
+    }
+  ],
   "hypotheses": [
     {
-      "zh": "C 是公开的比较前提，本结果不证明它；“没有焦点形成的继续”与 relational-reading-comparison 相同，其水平由同一定律在焦点形成不出现时给出。",
-      "en": "C is a disclosed comparison premise, not proved here; the continuation without the focal formation is the one of relational-reading-comparison, its levels given by the same law when the focal formation does not occur."
+      "zh": "C 是公开的比较前提，本结果不证明它；C 只作为假设或定义出现。“没有焦点形成的继续”与 relational-reading-comparison 相同，其水平由同一定律在焦点形成不出现时给出。",
+      "en": "C is a disclosed comparison premise, not proved here; it occurs only as a hypothesis or a definition. The continuation without the focal formation is the one of relational-reading-comparison, its levels given by the same law when the focal formation does not occur."
     },
     {
       "zh": "逐步读法的结论需要焦点形成有一个使每个所需仍被满足的活跃步；支持门控定律族的前提（所需为正、焦点所需不超过维持者所需、起点支持维持者、从某步起汲取超出更新）如 relational-renewal-classification 所设。",
@@ -27,13 +243,100 @@
       "en": "The restraint conclusion is proved only in the two-part family (the focal and the sustaining formation) and for a stopping law that meets every need at every step; with one more formation sharing the condition it can fail (ThirdParty)."
     },
     {
-      "zh": "P44：可能性读法与可能性优先是定义；possible_extends_iff 以公理 Unrestricted 为假设，可能性读法的其余结论不用它；可能性读法只在同一定律的两个继续上与保留、增加等同。",
-      "en": "P44: the possibility reading and possibilities first are definitions; possible_extends_iff takes the axiom Unrestricted as a hypothesis, and the other conclusions of the possibility reading do not use it; the possibility reading coincides with retaining and adding only for two courses of one law."
+      "zh": "可能性读法与可能性优先是定义；possible_extends_iff 以公理 Unrestricted 为假设，可能性读法的其余结论不用它；可能性读法只在同一定律的两个继续上与保留、增加等同。",
+      "en": "The possibility reading and possibilities first are definitions; possible_extends_iff takes the axiom Unrestricted as a hypothesis, and the other conclusions of the possibility reading do not use it; the possibility reading coincides with retaining and adding only for two courses of one law."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "在场与不在场、共享与以消耗取胜、停止与过度汲取的比较，在支持门控定律族（二元：焦点形成与维持者）中作为比较之律与缓和之律的实例证明。",
+      "en": "The comparisons of absence with presence, sharing with winning and stopping with overdraw are proved in the support-gated family (two parts: the focal and the sustaining formation), as instances of the laws of comparison and easing.",
+      "kind": "scope"
+    },
+    {
+      "zh": "关系层读法同样记入焦点形成的第一个关系，但未单独形式化。",
+      "en": "The relation-level reading also credits the focal formation's first relation but is not formalized separately.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不推出责任、义务或可行性。",
+      "en": "Yields no responsibility, duty or feasibility.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不选择读法。",
+      "en": "Chooses no reading.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "可能性读法计能形成的，不计形成了的，所以不排序不增加可能性的在场。",
+      "en": "The possibility reading counts what can form, not what does, so it leaves a presence adding no possibility unranked.",
+      "kind": "scope",
+      "witness": "Becoming.Ranking.possible_tie"
+    },
+    {
+      "zh": "可能性优先是另加的前提，代价是把休息排在活动之下。",
+      "en": "Possibilities first is a further premise, at the cost of ranking a rest below activity.",
+      "kind": "scope",
+      "witness": "Becoming.Ranking.Rest.rest_ranked_below"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
+      "detail": {
+        "zh": "逐步读法下 C 不决定恶性增殖与其不在场（malignant_ranking）：有一个满足 C、非自反、传递的比较偏好有恶性增殖的继续。这不是说在场更好，只是说 C 单独不足。",
+        "en": "Under the stepwise reading C does not decide between malignant growth and its absence (malignant_ranking): an irreflexive, transitive comparison satisfying C prefers the continuation with it. This does not say the occurrence is better, only that C alone is insufficient."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
+      "detail": {
+        "zh": "没有被记入的焦点事件时，逐步读法同样把不在场排得更高（Ranking.Immediate.stepwise_ranks_absence）：第一步就越过支持的形成，在两种读法下都排在其不在场之下；逐步读法的代价因此只涉及在损失之前有被记入事件的形成（第三次独立审查 G3）。",
+        "en": "When no focal event is credited, the stepwise reading too ranks the absence higher (Ranking.Immediate.stepwise_ranks_absence): a formation whose first step already crosses support ranks below its absence under both readings, so the stepwise cost concerns only formations with a credited event before the loss (third independent review G3)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
+      "detail": {
+        "zh": "节制的结论不推广到第三个共用者（Ranking.ThirdParty.restraint_unranked_stepwise）：第三个形成只在水平 7 被支持；节制的继续中水平一度到 7，节制者此后的汲取侵蚀第三者曾被满足的依存，而过度汲取的继续中第三者从未被满足，同一事件被记入（ThirdParty.focal_three）；逐步读法下两次继续互不扩展，扩展本身是一个满足 C 而不把节制排得更高的比较；整段读法下节制仍扩展过度汲取（第三次独立审查 G4）。",
+        "en": "The restraint conclusion does not extend to a third co-drawer (Ranking.ThirdParty.restraint_unranked_stepwise): a third formation is supported only at level 7; in the restrained course the level reaches 7 once and the restrained formation's later draw undermines the third formation's once-met dependence, while in the overdrawing course the third formation is never met and the same event is credited (ThirdParty.focal_three); under the stepwise reading neither course extends the other, and extension itself is a comparison satisfying C that does not rank restraint higher; under the whole-run reading restraint still extends overdraw (third independent review G4)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+      "detail": {
+        "zh": "第三次独立审查：所审的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法的代价、节制、替代、交互与剩余的免费连通上强于 Lean（已在整合文档中更正）。",
+        "en": "Third independent review: every declaration under review is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on the stepwise cost, restraint, substitution, interaction and the residual free connection (corrected in the integration note)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
+      "detail": {
+        "zh": "可能性读法不排序在更新之内的在场与不在场（Ranking.possible_tie、Ranking.sharing_presence）：两种 living 读法都把在场排得更高，可能性读法不分高下。",
+        "en": "The possibility reading leaves presence within renewal unranked against absence (Ranking.possible_tie, Ranking.sharing_presence): both readings of living rank the presence higher, the possibility reading neither."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
+      "detail": {
+        "zh": "可能性优先的代价（Ranking.Rest.rest_ranked_below）：一次不增加可能性的休息被排在不间断的活动之下。",
+        "en": "The cost of possibilities first (Ranking.Rest.rest_ranked_below): a rest that adds no possibility is ranked below uninterrupted activity."
+      }
+    }
+  ],
+  "standard_boundaries": [],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查，公理报告为空：Becoming.Ranking、Becoming.Bridge 当前字节见回执 20261013T221720.428753Z，并核对核心纯净；Becoming.Relevance 中属本结果的 19 项定理见回执 20261013T094743.528770Z。桥接适配不另计为独立成果。作者反审见整合文档；第二次独立审查只读到其问题 4 所需，并预期了节制的结论；第三次审查全部结果，接受其数学，把节制限于二元族，补上被记入事件的假设。可能性读法尚未经独立审查。",
+    "en": "Lean 4.29.1 checks, empty axiom reports: current Becoming.Ranking and Becoming.Bridge, receipt 20261013T221720.428753Z, core purity verified; this result's 19 theorems of Becoming.Relevance, receipt 20261013T094743.528770Z. Bridge adapters are not independent results. Author counterreview (integration note); the second independent review read it only for its question 4, anticipating the restraint result; the third reviewed it whole, accepted the mathematics, scoped restraint to the two-part family and supplied the credited-event hypothesis. The possibility reading awaits independent review."
+  },
+  "next_delta": {
+    "zh": "生生的读法由 Ren 选择（继续之间以可能性比较，不用 living 的读法，由此回答 G0 与 C 是否共用一种读法）；二元定律族之外（有多个共用者，或带数量使不取者不侵蚀）的节制定理；形式化关系层读法下的同一比较；检验 J1 的基本条件优先能否在逐步读法下给出“没有恶性增殖更好”。",
+    "en": "Ren's choice of the reading of 生生 (comparing courses on possibilities uses no reading of living, which answers whether G0 and C share one); a restraint theorem beyond the two-part family (co-drawers, or amounts so taking nothing does not undermine); the same comparison under the relation-level reading; whether J1's priority of basic conditions yields “better without malignant growth” stepwise."
+  },
   "correspondence": {
-    "zh": "两个排序在逐步读法下分道。若 G0 与 C 共用逐步读法，C 仍把共享排在以消耗取胜之上，却不再把没有恶性增殖的继续排得更高；整段读法两者都保持，代价是独立审查的判据 (b) 与 (c)。若 G0 的记入取逐步读法而 C 取整段读法，两者都保持，但 G0 与 C 不再共用一种 living 读法：形式上两者各以读法为参数，前提卡上 C 所说的“活的内容”却是 G0 的 living，分开取须公开。哪一种是生生的读法，由 Ren 选择。在二元定律族中，两种读法下 C 都把在阈值之前的节制排在过度汲取之上，所以那里逐步读法的代价是与不在场的比较，且只对在损失之前有被记入事件的形成；有第三个形成共用条件时，与节制的比较也可以失去（ThirdParty）。P44 的读法（AI 论证，待 Ren）：可能性读法读“有意义的，就是能形成的”与 Ren 的“more possibilities of becoming”；它计能形成的，不计形成了的。在公理之下 C 以可能性读，排序来自部分失去的，而不是不计形成本身；Ren 2026-10-11 把比较的方式交 AI 决定（“Comparing courses - you decide”）：继续之间以可能性比较，理由见章节 §6.12（P54）。",
-    "en": "The two rankings part ways under the stepwise reading. If G0 and C share the stepwise reading, C still ranks sharing above winning by consumption but no longer ranks the continuation without malignant growth higher; the whole-run reading keeps both, at the cost of the independent review's criteria (b) and (c). If G0's credit takes the stepwise reading and C the whole-run reading, both are kept, but G0 and C no longer share one reading of living: formally each takes its reading as a parameter, while the premise card reads C's “living content” as G0's living, so a split must be disclosed. Which reading is the reading of 生生 is Ren's choice. In the two-part family C ranks restraint before the threshold above overdraw under both readings, so the cost of the stepwise reading there is the comparison with absence, and only for a formation with a credited event before the loss; with a third formation sharing the condition the comparison with restraint can be lost too (ThirdParty). P44's reading (an AI argument, pending Ren): the possibility reading reads “what has significance is what can form” and Ren's “more possibilities of becoming”; it counts what can form, not what does. Under the axiom C is read on possibilities, and the ranking comes from what the part loses, not from discounting the formation itself; Ren left the comparison of courses to the AI on 11 October 2026 (“Comparing courses - you decide”): courses are compared on possibilities, for the reasons in chapter section 6.12 (P54)."
+    "zh": "两个排序在逐步读法下分道。若 G0 与 C 共用逐步读法，C 仍把共享排在以消耗取胜之上，却不再把没有恶性增殖的继续排得更高；整段读法两者都保持，代价是独立审查的判据 (b) 与 (c)。若 G0 的记入取逐步读法而 C 取整段读法，两者都保持，但 G0 与 C 不再共用一种 living 读法：形式上两者各以读法为参数，前提卡上 C 所说的“活的内容”却是 G0 的 living，分开取须公开。哪一种是生生的读法，由 Ren 选择。可能性读法的解读（AI 论证，待 Ren）：它读“有意义的，就是能形成的”与 Ren 的“more possibilities of becoming”；它计能形成的，不计形成了的。在公理之下 C 以可能性读，排序来自部分失去的，而不是不计形成本身；Ren 2026-10-11 把比较的方式交 AI 决定（“Comparing courses - you decide”）：继续之间以可能性比较，理由见章节 §6.12。",
+    "en": "The two rankings part ways under the stepwise reading. If G0 and C share the stepwise reading, C still ranks sharing above winning by consumption but no longer ranks the continuation without malignant growth higher; the whole-run reading keeps both, at the cost of the independent review's criteria (b) and (c). If G0's credit takes the stepwise reading and C the whole-run reading, both are kept, but G0 and C no longer share one reading of living: formally each takes its reading as a parameter, while the premise card reads C's “living content” as G0's living, so a split must be disclosed. Which reading is the reading of 生生 is Ren's choice. The interpretation of the possibility reading (an AI argument, pending Ren): it reads “what has significance is what can form” and Ren's “more possibilities of becoming”; it counts what can form, not what does. Under the axiom C is read on possibilities, and the ranking comes from what the part loses, not from discounting the formation itself; Ren left the comparison of courses to the AI on 11 October 2026 (“Comparing courses - you decide”): courses are compared on possibilities, for the reasons in chapter section 6.12."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
   "aliases": [
@@ -241,58 +544,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
-      "detail": {
-        "zh": "逐步读法下 C 不决定恶性增殖与其不在场（malignant_ranking）：有一个满足 C、非自反、传递的比较偏好有恶性增殖的继续。这不是说在场更好，只是说 C 单独不足。",
-        "en": "Under the stepwise reading C does not decide between malignant growth and its absence (malignant_ranking): an irreflexive, transitive comparison satisfying C prefers the continuation with it. This does not say the occurrence is better, only that C alone is insufficient."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
-      "detail": {
-        "zh": "没有被记入的焦点事件时，逐步读法同样把不在场排得更高（Ranking.Immediate.stepwise_ranks_absence）：第一步就越过支持的形成，在两种读法下都排在其不在场之下；逐步读法的代价因此只涉及在损失之前有被记入事件的形成（第三次独立审查 G3）。",
-        "en": "When no focal event is credited, the stepwise reading too ranks the absence higher (Ranking.Immediate.stepwise_ranks_absence): a formation whose first step already crosses support ranks below its absence under both readings, so the stepwise cost concerns only formations with a credited event before the loss (third independent review G3)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
-      "detail": {
-        "zh": "节制的结论不推广到第三个共用者（Ranking.ThirdParty.restraint_unranked_stepwise）：第三个形成只在水平 7 被支持；节制的继续中水平一度到 7，节制者此后的汲取侵蚀第三者曾被满足的依存，而过度汲取的继续中第三者从未被满足，同一事件被记入（ThirdParty.focal_three）；逐步读法下两次继续互不扩展，扩展本身是一个满足 C 而不把节制排得更高的比较；整段读法下节制仍扩展过度汲取（第三次独立审查 G4）。",
-        "en": "The restraint conclusion does not extend to a third co-drawer (Ranking.ThirdParty.restraint_unranked_stepwise): a third formation is supported only at level 7; in the restrained course the level reaches 7 once and the restrained formation's later draw undermines the third formation's once-met dependence, while in the overdrawing course the third formation is never met and the same event is credited (ThirdParty.focal_three); under the stepwise reading neither course extends the other, and extension itself is a comparison satisfying C that does not rank restraint higher; under the whole-run reading restraint still extends overdraw (third independent review G4)."
-      }
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
-      "detail": {
-        "zh": "第三次独立审查：P8、P9 与 P7b 的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法的代价、节制、替代、交互与剩余的免费连通上强于 Lean（已更正，整合文档 §12）。",
-        "en": "Third independent review: every P8, P9 and P7b declaration is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on the stepwise cost, restraint, substitution, interaction and the residual free connection (corrected, integration note §12)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
-      "detail": {
-        "zh": "可能性读法不排序在更新之内的在场与不在场（Ranking.possible_tie、Ranking.sharing_presence）：两种 living 读法都把在场排得更高，可能性读法不分高下。",
-        "en": "The possibility reading leaves presence within renewal unranked against absence (Ranking.possible_tie, Ranking.sharing_presence): both readings of living rank the presence higher, the possibility reading neither."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
-      "detail": {
-        "zh": "可能性优先的代价（Ranking.Rest.rest_ranked_below）：一次不增加可能性的休息被排在不间断的活动之下。",
-        "en": "The cost of possibilities first (Ranking.Rest.rest_ranked_below): a rest that adds no possibility is ranked below uninterrupted activity."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "比较之律与缓和之律对每个继续族成立；在场与不在场、共享与以消耗取胜、停止与过度汲取的比较在支持门控定律族（二元：焦点形成与维持者）中作为其实例证明；逐步读法下，节制的结论需要节制的继续满足每个所需（ThirdParty：有多个共用者时可以不成立）；关系层读法同样记入焦点形成的第一个关系，但未单独形式化；不推出责任、义务或可行性；不选择读法。P44 的可能性读法只对同一定律的两个继续与保留、增加等同；它计能形成的，不计形成了的，所以不排序不增加可能性的在场；可能性优先是另加的前提，代价是把休息排在活动之下；不选择读法。",
-    "en": "The laws of comparison and easing hold for every family of courses; the comparisons of absence with presence, sharing with winning and stopping with overdraw are proved in the support-gated family (two parts: the focal and the sustaining formation) as their instances; under the stepwise reading the restraint conclusion needs the restrained course to meet every need (ThirdParty: with several co-drawers it can fail); the relation-level reading also credits the focal formation's first relation but is not formalized separately; yields no responsibility, duty or feasibility; chooses no reading. The possibility reading of P44 coincides with retaining and adding only for two courses of one law; it counts what can form, not what does, so it leaves a presence adding no possibility unranked; possibilities first is a further premise, at the cost of ranking a rest below activity; it chooses no reading."
-  },
-  "validation_scope": {
-    "zh": "2026-10-14：Becoming.Bridge、Becoming.Ranking 的当前字节由合并检查器回执 20261013T221720.428753Z 绑定（通过：包 91 个模块，4983 项定理、7020 项声明审计，源声明公理报告全空；核心闭包 90 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Ranking 27 项定理、Becoming.Relevance 中属本结果的 19 项定理与 Becoming.Bridge 的 Ranking.wholeRun_iff、Ranking.undisturbed_eq 全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §9；第二次独立审查（BECOMING-P7-REVIEW.md）只在其问题 4 所涉范围内读了本结果，并预期了节制的结论，本记录据此新增 restraint_ranks 与 malignant_restraint；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md，另一 agent，Claude Opus 5.5，未参与撰写）审查了全部结果，接受其数学，把节制的结论限于二元定律族，并给逐步读法的代价补上被记入事件的假设，其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。P44 的作者反审见整合文档 §64；P44 尚未经独立审查。 P89（2026-10-13）：Bridge 的旧声明保持，四项新增适配已实查且公理报告为空；本记录的 Bridge 绑定转到本次冻结回执，其余既有证明保留各自原回执，不将适配另计为独立成果。",
-    "en": "14 October 2026: the current bytes of Becoming.Bridge, Becoming.Ranking are bound to consolidated receipt 20261013T221720.428753Z (passed: 91 package modules, 4983 theorems, 7020 declaration audits, every source declaration with an empty axiom report; the 90-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 27 theorems of Becoming.Ranking, the 19 of Becoming.Relevance belonging to this result and the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §9 of the integration note. The second independent review (BECOMING-P7-REVIEW.md) read this result only as far as its question 4 required and anticipated the restraint result, which this record added as restraint_ranks and malignant_restraint. A third independent review (BECOMING-P8-P9-P7B-REVIEW.md, by a separate agent, Claude Opus 5.5, not an author) reviewed the whole result, accepted its mathematics, scoped the restraint conclusion to the two-part family and supplied the credited-event hypothesis to the stepwise cost; its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview of P44 is in §64 of the integration note; P44 has not yet been independently reviewed. P89 (13 October 2026): prior Bridge declarations remain; four added adapters are checked with empty axiom reports. This record binds Bridge to the new frozen receipt while other proofs retain their original receipts; adapters are not independent results."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
@@ -526,10 +777,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "生生的读法由 Ren 选择（继续之间以可能性比较，不用 living 的读法，由此回答 G0 与 C 是否共用一种读法，P54）；二元定律族之外（有多个共用者，或带数量使不取者不侵蚀）的节制定理；形式化关系层读法下的同一比较；检验 J1 的基本条件优先能否在逐步读法下给出“没有恶性增殖更好”。",
-    "en": "Ren's choice of the reading of 生生 (courses being compared on possibilities, using no reading of living, which answers whether G0 and C share one reading, P54); a restraint theorem beyond the two-part family (with co-drawers, or with amounts so that a formation taking nothing does not undermine); the same comparison under the relation-level reading; whether J1's priority of basic conditions yields “better without malignant growth” under the stepwise reading."
-  },
   "history": [
     {
       "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P8，把整合文档 §8.5 中只作了论证的代价在核心上证明。",
@@ -854,6 +1101,20 @@
     {
       "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；Ranking.lean（新增比较之律与缓和之律；节制的判断作为其实例重证，陈述不变）。",
       "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); Ranking.lean (the laws of comparison and easing added; the restraint verdicts re-proved as their instances with statements unchanged)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（一般规律计划：增长棘轮所拦记录的迁移）：长标题（结果的陈述）改为短名，陈述在先；主张拆为 21 条规律；限制、逐轮回执与审查说明分入“未表明”、前提、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。轮次标记 P44、P54、P89 与节号（整合文档 §9、§12、§64，统一计划 §10）从公开文字中去掉：“P44（Becoming.Relevance）加第三种读法”写作“第三种读法”，前提中的“P44：”、对应论证中的“P44 的读法”与“（P54）”、下一步中的“P54”都去掉；“第一条定律”写作“比较之律”。“不用 Lean 公理”由证据段的空公理报告承载，“C 只作为假设或定义出现”并入第一条前提。旧限制中“节制的结论需要节制的继续满足每个所需”与“可能性读法只对同一定律的两个继续与保留、增加等同”与前提原文相同，由前提承载；对应论证中二元族节制与第三者一段与规律及反例相同，由它们承载。证据段写 Bridge 经回执 20261013T221720.428753Z 检查，而旧文写“绑定”：其证明绑定指向字节相同的回执 20261013T204910.042715Z，未改。旧回执的模块、定理与审计计数，核心纯净的细节、旧名说明与第二次审查所预期的节制定理之名（restraint_ranks、malignant_restraint）留在快照中。反例中第三次审查摘要以“所审的全部声明”代替轮次标记 P8、P9、P7b，并去掉节号 §12。每句旧文本的去向见迁移对照表 [ranking-under-readings.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/ranking-under-readings.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (general-laws plan: migration of the records the growth ratchet stopped): The long title (a statement of the result) became a short name with the statement first; the claim was split into 21 laws; limitations, per-round receipts and review notes went to does-not-show items, hypotheses, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. Round labels P44, P54 and P89 and section numbers (integration note §9, §12, §64; unification plan section 10) left the public text: “P44 (Becoming.Relevance) adds a third reading” now reads “A third reading”, and “P44:” in the hypotheses, “P44's reading” and “(P54)” in the correspondence and “P54” in the next step were dropped; “the first law” now reads “the law of comparison”. “No Lean axiom is used” is carried by the empty axiom reports in the evidence paragraph, and “C occurs only as a hypothesis or a definition” joined the first hypothesis. The old limitations “under the stepwise reading the restraint conclusion needs the restrained course to meet every need” and “the possibility reading coincides with retaining and adding only for two courses of one law” repeat the hypotheses, which carry them; the correspondence passage on restraint in the two-part family and the third formation repeats laws and counterexamples, which carry it. The evidence paragraph says Bridge is checked in receipt 20261013T221720.428753Z where the old text said “bound”: its proof binding, unchanged, points to the receipt 20261013T204910.042715Z with the same bytes. The old module, theorem and audit counts, the details of core purity, the note on former names and the names of the restraint theorems the second review anticipated (restraint_ranks, malignant_restraint) stay in the snapshot. In the counterexamples the third review's summary says “every declaration under review” in place of the round labels P8, P9 and P7b and drops its section number §12. Every earlier sentence is mapped in the migration table [ranking-under-readings.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/ranking-under-readings.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/1ab73d2d36b29892/ranking-under-readings.json",
+      "sha256": "1ab73d2d36b29892d73d2453dad74eb7fdd558410d90170b28adec9fdf378541",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
