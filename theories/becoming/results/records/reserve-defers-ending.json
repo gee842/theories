@@ -286,8 +286,8 @@
     "decidability"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；外围桥接重跑通过，20261013T095049.338744Z）：本记录在 Reserve 模块中的定理（模块其余定理属 generation-is-replenishment）公理报告为空；检查器并核对核心纯净。作者反审见整合文档 §24 与 §41；第八次独立审查（见来源）接受先前的数学；沿依存链的共灭与级联尚未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; the periphery bridge reran, 20261013T095049.338744Z): this record's theorems in the Reserve module (the module's others belong to generation-is-replenishment) have empty axiom reports, and the checker verifies core purity. Author counterreview in §24 and §41 of the integration note; the eighth independent review, listed under sources, accepts the earlier mathematics; the chain coextinction and the cascade are not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；外围桥接重跑通过，20261013T095049.338744Z）：本记录在 Reserve 模块中的定理（模块其余定理属 generation-is-replenishment）公理报告为空；检查器并核对核心纯净。作者反审见整合文档 §24 与 §41；独立审查（见来源）：第八次接受先前的数学，第十二次检查了沿依存链的共灭与级联，第十三次确认其更正已完成。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; the periphery bridge reran, 20261013T095049.338744Z): this record's theorems in the Reserve module (the module's others belong to generation-is-replenishment) have empty axiom reports, and the checker verifies core purity. Author counterreview in §24 and §41 of the integration note; independent reviews, listed under sources: the eighth accepts the earlier mathematics, the twelfth checked the chain coextinction and the cascade, and the thirteenth confirmed its corrections closed."
   },
   "next_delta": {
     "zh": "图上各链的最小界；耗散之下谁补充所持的条件；在所持条件被表示的地方，估值用哪种读法（Ren）；脂肪、种子库与储蓄的经验对应。",
@@ -661,6 +661,12 @@
       "role": "review",
       "sha256": "d301d1a2d87665100c8ff50529647c53e6dc31f0539e96eaa7f321488b7597a8",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P32-P34-REVIEW.md",
+      "role": "review",
+      "sha256": "91f1e808c848c867f0b12a9ed192529435fa4407466814f13d4756cb32cb0160",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -944,6 +950,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第2项：有效范围原说沿依存链的共灭与级联“尚未经独立审查”，与来源不符。第十二次独立审查（BECOMING-P30-P31-P29B-REVIEW.md）检查了 chainEnd、chain_ends、Cascade 与可达的界；其更正（T2、T3：任意有限长的链、short_cascade、lpo_of_ending）由第十三次审查（BECOMING-P32-P34-REVIEW.md，“P33b: T1–T8”表）确认已完成。改写该句并加入第十三次审查为引用；数学、陈述与绑定不变。",
+      "en": "14 October 2026, open-issues plan item 2: the validation scope said the chain coextinction and the cascade were \"not yet independently reviewed\", which the sources contradict. The twelfth independent review (BECOMING-P30-P31-P29B-REVIEW.md) checked chainEnd, chain_ends, Cascade and the attained bound; its corrections (T2, T3: chains of any finite length, short_cascade, lpo_of_ending) were confirmed closed by the thirteenth (BECOMING-P32-P34-REVIEW.md, table \"P33b: T1–T8\"). The sentence is rewritten and the thirteenth review added as a reference; mathematics, statement and bindings unchanged."
     }
   ],
   "text_versions": [

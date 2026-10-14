@@ -257,8 +257,8 @@
     "discrete-steps"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；外围回执 20261013T095049.338744Z 通过）：Becoming.Space 与 Becoming.Roles 的定理（含本记录的局部规律）公理报告为空；检查器并核对核心纯净。作者反审见整合文档 §30；第九、第十、第十一次独立审查（见来源）各自接受所审的数学，第十次与第十一次之后的更正尚未再经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; periphery receipt 20261013T095049.338744Z passed): the theorems of Becoming.Space and Becoming.Roles, with this record's local laws, have empty axiom reports, and the checker verifies core purity. Author counterreview in §30 of the integration note; the ninth, tenth and eleventh independent reviews, listed under sources, accept the mathematics each reviewed, and the corrections after the tenth and the eleventh are not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；外围回执 20261013T095049.338744Z 通过）：Becoming.Space 与 Becoming.Roles 的定理（含本记录的局部规律）公理报告为空；检查器并核对核心纯净。作者反审见整合文档 §30；第九至第十二次独立审查（见来源）各自接受所审的数学，第十与第十一次之后的更正分别经第十一与第十二次审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; periphery receipt 20261013T095049.338744Z passed): the theorems of Becoming.Space and Becoming.Roles, with this record's local laws, have empty axiom reports, and the checker verifies core purity. Author counterreview in §30 of the integration note; the ninth to twelfth independent reviews, listed under sources, accept the mathematics each reviewed, the eleventh and the twelfth covering the corrections made after the tenth and the eleventh."
   },
   "next_delta": {
     "zh": "提议中“生成的、退化的”的读法（Ren）；更多的部分（更多、可能性与多样性的上升）与前提组合的地图；不可判定活动时有限世界的规律已在纯净核心中以排中律为假设陈述（law_of_em）；名称（Ren）。",
@@ -718,6 +718,12 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P25B-P29-REVIEW.md",
       "role": "review",
       "sha256": "7c1ff4cd6c090f71e00dd17ac98162c531f5bb47e98d8f7a1934e003e78b0cd3"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md",
+      "role": "review",
+      "sha256": "d301d1a2d87665100c8ff50529647c53e6dc31f0539e96eaa7f321488b7597a8",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -1030,6 +1036,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第3项：有效范围原说第十次与第十一次之后的更正“尚未再经独立审查”，与来源不符。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）审查了 P25b，即第十次之后的更正；第十二次（BECOMING-P30-P31-P29B-REVIEW.md）审查了 P29b，即第十一次之后的更正（law_of_em、law_iff_em、ceases_below、seedbank_world“都对”）。改写该句并加入第十二次审查为引用；数学、陈述与绑定不变。",
+      "en": "14 October 2026, open-issues plan item 3: the validation scope said the corrections after the tenth and the eleventh reviews were \"not yet independently reviewed\", which the sources contradict. The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) reviewed P25b, the corrections after the tenth; the twelfth (BECOMING-P30-P31-P29B-REVIEW.md) reviewed P29b, those after the eleventh (law_of_em, law_iff_em, ceases_below, seedbank_world found correct). The sentence is rewritten and the twelfth review added as a reference; mathematics, statement and bindings unchanged."
     }
   ],
   "text_versions": [

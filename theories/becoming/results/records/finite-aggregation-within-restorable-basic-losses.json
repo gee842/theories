@@ -39,8 +39,8 @@
       ]
     },
     {
-      "en": "With losses listed once, strict matching is a strict order: the worse configuration loses strictly more, so matching is irreflexive and asymmetric.",
-      "zh": "损失各列一次时严格匹配是严格序：较差的配置失去的严格更多，所以匹配非自反、不对称。",
+      "en": "With losses listed once, strict matching is irreflexive and asymmetric: the worse configuration loses strictly more.",
+      "zh": "损失各列一次时严格匹配非自反、不对称：较差的配置失去的严格更多。",
       "declarations": [
         "Becoming.Frame.StrictLossMatch.length_lt"
       ]
@@ -54,8 +54,8 @@
       ]
     },
     {
-      "en": "Where every claim rests on a common support and claims are finitely listed, a configuration that loses that support is strictly matched below no configuration, under any content relation.",
-      "zh": "每个主张都依于同一支持、主张有限列出时，失去这一支持的配置在任何配置之下都没有严格匹配，对任何内容读法成立。",
+      "en": "Where every claim rests on a common support and claims are finitely listed, a configuration that loses that support is strictly better by matching than no configuration, under any content relation.",
+      "zh": "每个主张都依于同一支持、主张有限列出时，失去这一支持的配置经严格匹配不优于任何配置，对任何内容读法成立。",
       "declarations": [
         "Becoming.Frame.not_strictLossMatch_of_base_lost"
       ]
@@ -545,6 +545,10 @@
     {
       "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2, starting from the current law-first record (the earlier readability draft predates it and served only as a style reference). The long claim became a statement, an exact claim and nine laws (six general laws of strict loss matching and three of the repair instance), each with its declarations; the two content connections of P102 became two progress lines anchored in the study; the limitations became seven does-not-show items and the zero-axiom-target-open boundary; the evidence became one paragraph. The round labels P100 and P102 were replaced by what they name (“the repair instance”, “the account of decomposition and sustained harm”) in hypotheses 5 and 7, the correspondence and the fifth counterexample; P96, P100 and P102 left the claim, limitations and evidence with the sentences that carried them. Kept here and in the snapshot rather than in public text: the receipt timestamps 20261013T204910.042715Z and 20261013T122128.341270Z (still in references and proof bindings), the package-wide counts (85 modules, 4861 theorems, 6856 declaration audits, an 86-module core closure), P100’s 17 theorems and 45 declarations (now within RepairComparison’s 36 and 65, renamed only), 2 changed and 368 reused build steps, 49 passed infrastructure tests, the remark that earlier receipts checked the same statements under the former names (plan section 10, listed in the previous entry), that the original eight opportunity theorems and the LR review keep their scopes, that P100’s 17/45 and earlier independent reviews are not recounted, and the earlier next step’s note that complete-episode qualification and the direct whole-course method are complete and not reopened. No premise, status, dependency, related entry, reference, proof binding or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/finite-aggregation-within-restorable-basic-losses.md); the exact earlier record is text_versions[0].",
       "zh": "2026年10月14日（曼谷时间）：可读性迁移到 schema 2，以当前“规律在先”的记录为起点（较早的可读性草案早于该重写，只作文体参考）。长主张改为陈述、确切主张与九条规律（六条严格损失匹配的一般规律、三条修复实例），各附声明；P102 的两项内容接续改为两行锚定研究章节的“已接通”；限制改为七项“未表明”与 zero-axiom-target-open 通用边界；证据改为一段。第 5 与第 7 项前提、对应及第五个反例中的轮次标记 P100、P102 改为其所指（“修复实例”“分解与持续损伤的说明”）；P96、P100、P102 随承载它们的句子离开主张、限制与证据。以下保留于本沿革与快照而不入公开字段：回执时间戳 20261013T204910.042715Z 与 20261013T122128.341270Z（仍在引用与证明绑定中）、全包计数（85 个模块、4861 项定理、6856 项声明审计、86 个模块的核心闭包）、P100 的 17 项定理与 45 项声明（今在 RepairComparison 的 36 与 65 项之内，只改名）、2 个改动步骤与 368 个复用步骤、49 项基础设施测试通过、较早回执以旧名检查同一陈述（统一计划 §10，见上一条）、原八项机会定理与 LR 评审保持原范围、P100 的 17／45 及历史独立评审不重计，以及原下一步中“完整片段资格与整段直接比较方法已完成，不重开”的说明。前提、状态、依赖、相关条目、引用、证明绑定及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/finite-aggregation-within-restorable-basic-losses.md)；迁移前的完整记录为 text_versions[0]。"
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第10项（复核迁移的判断）：定律3原说严格匹配是“严格序”，但所证只有非自反与不对称（`StrictLossMatch.length_lt`），没有传递性，改为只说所证；定律5原说失去共同支持的配置“在任何配置之下都没有严格匹配”，方向不清，按 `not_strictLossMatch_of_base_lost`（它不作为较好者严格匹配任何配置）改写。定律4、6与陈述经对照 Lean 确认。",
+      "en": "14 October 2026, open-issues plan item 10 (review of the migration's judgment calls): law 3 called strict matching \"a strict order\", but only irreflexivity and asymmetry are proved (`StrictLossMatch.length_lt`), not transitivity, so it now says only what is proved; law 5 said a configuration losing the common support \"is strictly matched below no configuration\", an unclear direction, and is rewritten after `not_strictLossMatch_of_base_lost` (it is the better side of no strict match). Laws 4 and 6 and the statement were confirmed against the Lean."
     }
   ],
   "text_versions": [

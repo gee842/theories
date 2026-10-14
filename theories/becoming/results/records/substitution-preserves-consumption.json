@@ -181,8 +181,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z): the 12 theorems of Becoming.Substitution, the law of kept consumption, its instance and the Lone counterexample among them, have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; the second independent review (listed under sources) accepted the mathematics, its corrections made; the third scoped “withheld at one step only” to extracting."
   },
   "next_delta": {
-    "zh": "替代条件被更新时消耗是否转移到别处；在依存可变的一般定律中陈述同样的保持。",
-    "en": "Whether consumption moves elsewhere when alternatives are renewed; the same preservation for general laws with changing dependence."
+    "zh": "替代条件被更新时消耗是否转移到别处；其他形成的依存也改变时的同样保持（焦点形成的依存自某步起任意改变，对每个依存网已由 `Web.consumingIn_kept_iff` 给出）。",
+    "en": "Whether consumption moves elsewhere when alternatives are renewed; the same preservation where other formations' dependence changes too (any change of the focal formation's dependence from a step on is `Web.consumingIn_kept_iff`, for every web)."
   },
   "correspondence": {
     "zh": "在整段读法下替代保持分类，这几乎由 ConsumingIn 的存在式定义给出：一个以转化依存的方式熬过它参与造成的损失的形成，仍然是消耗的；它自身的持续不证明更新。这也是“赢的元吸引子”的一个结构：靠消耗取胜的一方可以转向别处而持续，失去者不随之恢复。在逐步读法下分类不保持：这样的胜者在维持者失去支持之前被记入，此后到它转向别处为止被扣下（extracting 中一步，slow 中两步）。“替代不证明更新”仍成立，因为逐步的 living 不是更新。一个实际形成能否替代、以什么代价，是应用义务。",
@@ -712,6 +712,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第8项：下一步“在依存可变的一般定律中陈述同样的保持”已部分解决：`Web.consumingIn_kept_iff` 对每个依存网给出焦点形成的依存自某步起任意改变时的保持；下一步收窄为其他形成的依存也改变的情形。原文：“替代条件被更新时消耗是否转移到别处；在依存可变的一般定律中陈述同样的保持。”",
+      "en": "14 October 2026, open-issues plan item 8: the next step \"the same preservation for general laws with changing dependence\" is partly answered: `Web.consumingIn_kept_iff` gives the preservation, for every web, under any change of the focal formation's dependence from a step on; the next step narrows to the case where other formations' dependence changes too. Former text: \"Whether consumption moves elsewhere when alternatives are renewed; the same preservation for general laws with changing dependence.\""
     }
   ],
   "text_versions": [

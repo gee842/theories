@@ -209,8 +209,8 @@
   ],
   "hypotheses": [
     {
-      "zh": "水平的规律（stills）：平衡；耗散；所立者的普查（每步立着的条件被不重复地列出，所以每步只有有限多个立着）；从某步起每步都围住所立者。",
-      "en": "The standing law (stills): balance; dissipation; a census of what stands (the conditions standing at each step listed, each once, so finitely many stand at each step); every step from some step on enclosed around what stands."
+      "zh": "水平的规律（`Flow.change_stops_unrefuted_around`）：平衡；耗散；所立者的普查（每步立着的条件被不重复地列出，所以每步只有有限多个立着）；从某步起每步都围住所立者。",
+      "en": "The standing law (`Flow.change_stops_unrefuted_around`): balance; dissipation; a census of what stands (the conditions standing at each step listed, each once, so finitely many stand at each step); every step from some step on enclosed around what stands."
     },
     {
       "zh": "读于世界。生起停止不能被否证（arising_stops_unrefuted）：所立者的普查与生起者体现。",
@@ -1186,6 +1186,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第5项：第一条假说的标签 `stills` 已不是现有声明的名称；静止一族按强度命名时（2a41bec9）它改名为 `Flow.change_stops_unrefuted_around`，定律 3 已引用新名。只改标签，假说内容不变。",
+      "en": "14 October 2026, open-issues plan item 5: the first hypothesis was labelled `stills`, no longer a current declaration; when the rest family was named by strength (2a41bec9) it became `Flow.change_stops_unrefuted_around`, which law 3 already cites. Only the label changes; the hypothesis is unchanged."
     }
   ],
   "text_versions": [
