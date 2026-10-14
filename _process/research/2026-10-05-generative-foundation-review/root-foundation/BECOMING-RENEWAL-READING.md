@@ -7911,6 +7911,64 @@ theorem same_iff_alike_of_finiteDecided {m : ExplanatoryBranching.Model S A O}
 
 **落地（2026-10-14）。** 作为第四批之后队列的第一项落地：核心检查器回执 20261014T100026.593496Z 通过（核心公理报告为空，核心只用前导编译），`Becoming.Likeness` 109 项定理，`Becoming.Bridge` 53 项定理；三项记录对两者的引用已绑定，另七项绑定 Bridge.lean 的记录随之对齐哈希。可判定性清点在同一回执上未变：`Decided` 绑定不被读作可判定族，这一盲点作为单独一项交给 Current math core。
 
+## 122. 外围证明接入脊柱（整合 I1）：像有限模型上同测即相同（以排中律为假设）、目标唯一、自身之善的第二步即剖面上的 N_rel
+
+2026-10-14。Ren：“push as far as possible, as strong as possible, generally agree with your direction - but i also realize - a lot proofs are probably not integrated”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md)）。整合会话批准“I”一列（整合），由 Current math core 执行；I1 只取证明模块已由脊柱运行编译的记录。
+
+```text
+Result(s): 改写 branching-tests-bisimulation、branching-target-uniqueness、self-good-reachable-g0（脊柱上的陈述、别名、next_delta），
+           finite-trace-transport、positioned-positive-reason、positive-ground-open-futures、practical-judgment-g0-j
+           （脊柱引用；源码绑定到脊柱运行 20261014T100026.593496Z）；不新增记录
+Delta: Becoming.Likeness 新增 5 项定理（114 项定理／151 项声明）；Becoming.Bridge 新增 1 个定义、7 项定理（60 项定理／81 项声明）；
+       测量工具 SPINE-INTEGRATION.py
+Supplied premises / correspondence: 排中律只作为三项核心定理与两项桥接定理的假设（em : ∀ p : Prop, Decided p）；
+           剖面估值把每个剖面计为活的
+Evidence: scratch_build 实编（对 main d4321903）：每条声明公理报告为空，无警告；不是回执。可判定性清点在草稿上重跑：
+          排中律作为假设 11 → 14，其余各类不变
+Boundary: 见下文“边界”
+Integration: §9 L3 与桥接两行；Becoming.Likeness 与 Becoming.Bridge 头注；七项记录
+```
+
+**测量。** `SPINE-INTEGRATION.py` 读合并检查器的回执，按 Lean 证明在何处检查给记录分类，并数脊柱运行之外的 Lean 定理（按“文件名、声明名”去重；脊柱运行所编译模块的旧版本不计；只在运行目录、核验历史、来源与快照中出现的另计）。在回执 20261014T100026.593496Z 上：运行编译 138 个模块（核心 95、基础 3、桥接 4、继承 36）。main 上 203 项记录中 148 项的证明在脊柱中，13 项只在继承模块中，32 项在运行之外，10 项没有 Lean 证明；本节之后为 154、7、32、10。运行之外，活路径中有约 11 000 项不同定理、约 540 个模块，另有约 8 000 项只在副本与证据中。最大的几族：universal-ethics（约 2 200 项／104 个模块）、inquiry-root（约 1 800／66）、deeper（约 1 100／71）、general-framework 顶层（约 1 000／50）、connected（约 830／38）、market-generativity/meta-attractor（约 700／22）、本研究目录中的 Lean（约 680／45）、shared-renewal-capability/regulation（约 570／28）、systems-complexity（约 520／27）。这是文本测量，不运行 Lean。
+
+**像有限模型上同测即相同，以排中律为假设。** §120 把外围 `same_iff_bisimilar` 的经典证明留在外围。它所用的只是排中律：以排中律为假设，核心证明凡每一动作的结果都已列出，通过同样分支检验的配置就相同，动作与主张都无须列出：
+
+```lean
+theorem alike_of_sameBranchingTests_of_em (em : ∀ p : Prop, Decided p)
+    (outcomes : ∀ s a, ∃ l : List S, ∀ t, F.P.step s a t ↔ t ∈ l)
+    (outcomes' : ∀ s a, ∃ l : List S', ∀ t, G.P.step s a t ↔ t ∈ l) {s : S} {s' : S'}
+    (same : SameBranchingTests F G s s') : Alike F G s s'
+```
+
+同测本身是互模拟：一步的结果若与对方同一动作的每个列出的结果都不同测，各取一项区分的检验（`apart_of_not_sameBranchingTests`，由排中律得出），合起来经 `BranchingTest.apart_from_list` 成一项检验，动作之后它区分两个起点，与同测矛盾。经桥接，外围定理即核心定理在模型上的实例：
+
+```lean
+theorem same_iff_bisimilar_of_em (em : ∀ p : Prop, Decided p)
+    {m : ExplanatoryBranching.Model S A O} {n : ExplanatoryBranching.Model T A O}
+    (fm : ExplanatoryBranching.ImageFinite m) (fn : ExplanatoryBranching.ImageFinite n)
+    (s : S) (t : T) :
+    ExplanatoryBranching.Same m n s t ↔ ∃ R, ExplanatoryBranching.Bisimulation m n R ∧ R s t
+```
+
+于是分支检验固定相同的情形排成一列：有限且已定，不需要任何原则（§118）；动作与主张已列出、只列出每个动作的结果，恰需 EitherThroughout（§120）；动作或主张也不列出，排中律足够（本节）。弱于排中律的原则在最后一种情形是否足够，未表明，记为 branching-tests-bisimulation 的下一步。
+
+**目标唯一。** 相同分离一个框架的配置时，一个配置至多与其中一个相同（`Alike.functional`）；分支检验亦然（`SameBranchingTests.functional`）。检验分离一个模型，恰当核心的分支检验分离其框架（`separated_iff`），所以外围的 `same_functional` 即后者。
+
+**自身之善的第二步即剖面上的 N_rel。** self-good-reachable-g0 的下一步要求“在脊柱上把本路线的剖面模型接到 N_rel 的已形成关系”。`profileValuation s val step` 是以立场的剖面为主张的估值：每个剖面计为活的，一个剖面与一小步之外的剖面相关，有自身的活发生具有它时是自身的，`val` 成立时有意义。容差即其上 N_rel 的中立（`tolerant_iff_neutral`），小步之链即沿相关剖面的可达（`chain_iff_reach_profiles`），随附性下的 S0 即其上的 S0（`selfGood_profiles`），于是外围的 `tolerant_chain_reaches` 由核心的 `Valuation.reaches` 推出（`tolerant_chain_reaches_by_core`）。
+
+**读作脊柱的定义。** 其余四项记录的证明模块由脊柱运行作为继承模块编译，其中各项一般定理在该运行中公理报告为空（`competing_claims_incomparable` 与有限积分的若干定理用到 propext 等，如各记录所列）。桥接表明它们的定义按定义就是核心的（`g0_iff`、`positionedArticulation_iff`、`securesPositiveGround_iff`、`BetterAt`、`robust_iff_commonResponse`），所以这些定理按原样对脊柱的定义成立；脊柱由 Becoming.Significance 的公理推出 positioned-positive-reason 与 positive-ground-open-futures 的中心定理（§6.12 的三项），并有自身的路线（`universal_reason`）。GenerativeCore 是核心所依的基础，finite-trace-transport 的 `trace_map` 本就在脊柱中，此处只补上脊柱运行的绑定。
+
+**作者反审。**
+1. **新律还是重述？** `alike_of_sameBranchingTests_of_em` 是经典的 Hennessy–Milner 论证，在核心中以排中律为显式假设陈述；新的是它与 §118、§120 合成一列，并使外围定理成为核心定理的实例。`Alike.functional` 与 `SameBranchingTests.functional` 是两行的推论；`profileValuation` 一组是对应，不是新定理：它说明外围路线的形式就是 N_rel。
+2. **“已整合”的意义。** 三项记录（两项分支检验与 self-good-reachable-g0 的第二步）的主张现在是脊柱定理或其在模型上的实例。另外四项是“读作脊柱的定义”：定义同一、中心定理在脊柱上由公理推出，但以明示 G0 为假设的形式及最小路线理由、有限积分等仍只在继承模块中证明。测量把引用脊柱文件的记录都计为“脊柱”，所以 154 这个数比“主张是脊柱定理”宽；按后一标准，本节使三项进入。
+3. **剖面估值的读法。** 每个剖面计为活的，关系经过仅仅可能的剖面；脊柱对 `related` 的读法（同一运行中事件对条件的共同参与）不是剖面之间的小步。所以这一对应说明的是路线的形式，不说明剖面之间的小步是展开中已形成的关系；后者仍是对应问题，写进该记录的下一步。
+4. **审计的修正。** 只读审计曾把十项记录列为“只需引用”。其中 fallible-witness-diagnosability、growth-constrained-fragmentation、material-preparation-output 的证明模块（FallibleInspection、GrownFragmentation、MaterialMaturation）不在脊柱运行之内，移入 I3。
+5. **范围。** 不含伦理谓词的新主张；ethics 记录只增加脊柱引用与绑定。
+
+**边界。** 落地运行须编译并审计改动后的 Becoming.Likeness 与 Becoming.Bridge，再把三个新别名绑定到回执；之后重新生成可判定性清点（`DECIDABILITY-INVENTORY.py`；草稿上排中律作为假设 11 → 14，其余不变）。引用 Likeness.lean 或 Bridge.lean 的十项记录（becoming-renewal-reading、becoming-spine-instances、configurations-alike-by-relation、determinacy-up-to-likeness、levels-of-closure、one-axiom-yields-g0、open-form-realization-under-revision、ranking-under-readings、tests-fix-likeness-where-determined、wisdom-root）所引的声明未变，在回执之后重新绑定。tests-fix-likeness-where-determined 宜增一条规律陈述排中律的情形；它在 §121 的分支中也有改动，留待两者落地之后。
+
+**下一步（I 列）。** I1b：只在继承模块中证明的七项记录（classification-robust-generative-comparison、incidence-common-refinement、multivalued-joining-common-structure、protection-priority-excludes-uniform-aggregation、relational-generative-comparison、renewing-consuming-formation、retained-reference-joining-recovery）。I3：运行之外的 32 项记录所依的模块，以实例或等价定理接到脊柱，先 deeper 的 Explanatory 一族与上面三项。I4：活路径中约 540 个模块逐一归类（接入、作为应用保留、或作为历史版本标明并指向取代它的脊柱结果），需 Ren 决定，不删除任何东西。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -9175,3 +9233,11 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **One kind of test.** The core's `BranchingTest` and the periphery's `ExplanatoryBranching.Test` have the same five constructors. They translate one to one (`BranchingTest.toTest`, `BranchingTest.ofTest`, both round trips), and a branching test holds in a model's frame exactly where its translation holds in the model (`BranchingTest.holds_toTest`). So passing the same tests is the same in both (`sameBranchingTests_iff_same`).
 - **Constructive on finite decided models.** Where the moves and conditions are listed and both models' frames are finite and decided, passing the periphery's same tests is likeness (`same_iff_alike_of_finiteDecided`): `same_iff_bisimilar` on such models with no classical reasoning.
 - **The classical side stays in the periphery.** For image-finite models the direction from the tests to likeness remains the periphery's `same_iff_bisimilar`, whose proof is classical; the checker requires empty axiom reports in the bridge, so it is not restated there. Landed as the first queue item after batch 4: core receipt 20261014T100026.593496Z (empty core axiom reports, the core compiling from the prelude), `Becoming.Likeness` 109 theorems and `Becoming.Bridge` 53; three records bind them and seven further records that bind Bridge.lean follow its hash. The decidability inventory is unchanged on the receipt: `Decided` binders are not read as a decidability family, a blind spot taken up as a separate item by Current math core.
+
+**Peripheral proofs joined to the spine, integration I1 (14 October 2026).** Ren: “a lot proofs are probably not integrated”. Section 122 measures the gap and joins the seven records whose proof modules the spine run already compiles.
+- **Measure.** `SPINE-INTEGRATION.py` reads the consolidated receipt, classifies each record by where its Lean proof is checked, and counts the theorems outside the run once per file stem and name, older versions of run modules left out. On receipt 20261014T100026.593496Z (138 modules: 95 core, 3 foundation, 4 bridge, 36 inherited), 148 of 203 records had a proof in the spine on main, 13 only in inherited modules, 32 outside the run and 10 none; after this section 154, 7, 32 and 10. Outside the run, live paths hold about 11,000 distinct theorems in about 540 modules, and about 8,000 more appear only in copies and evidence; the largest families are universal-ethics, inquiry-root, deeper, the general-framework top level and connected.
+- **Branching tests fix likeness on image-finite models under excluded middle.** With excluded middle as a hypothesis, configurations passing the same branching tests are alike wherever each move's outcomes are listed, the moves and claims unlisted (`alike_of_sameBranchingTests_of_em`), so the periphery's `same_iff_bisimilar` is a theorem of the core with that hypothesis (`same_iff_bisimilar_of_em`). The cases now run: finite and decided, no principle (§118); moves and claims listed, exactly `EitherThroughout` (§120); nothing listed but each move's outcomes, excluded middle suffices. Whether something weaker suffices there is open.
+- **Target uniqueness.** Where likeness, or branching tests, tell a frame's configurations apart, a configuration is alike to, or passes the same tests as, at most one of them (`Alike.functional`, `SameBranchingTests.functional`); `same_functional` is the latter through `separated_iff`.
+- **Self-good's second step is N_rel on profiles.** On the valuation whose claims are a standpoint's profiles, tolerance is N_rel's neutrality, a chain of small steps is reach along related profiles and S0 under supervenience is S0, so `tolerant_chain_reaches` follows from the core's `Valuation.reaches` (`tolerant_chain_reaches_by_core`). Every profile counts as living, so the relation runs through merely possible profiles; whether small steps between profiles are formed relations stays a correspondence question.
+- **Definitions read on the spine.** For positioned-positive-reason, positive-ground-open-futures and practical-judgment-g0-j the bridge shows the definitions are the core's, the spine derives the central theorems from the axiom of `Becoming.Significance`, and the spine run compiles and binds the modules; the explicit-G0 forms, the least route reason and the finite integral stay proved only there. `trace_map` was already in the foundation.
+- **Corrections and next.** Three records the audit listed as needing only a citation rely on modules outside the run and move to I3. Next: I1b, the seven records proved only in inherited modules; I3, instance or equivalence theorems for the modules the 32 records rely on, starting with deeper's Explanatory family; I4, a classification of the about 540 live modules (join, keep as application, or mark as an earlier version with the spine result replacing it), which awaits Ren, with nothing deleted.
