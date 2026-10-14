@@ -10,8 +10,8 @@
   "family": "F10",
   "reviewed_at_utc": "2026-10-14T04:00:00+00:00",
   "claim": {
-    "zh": "对每个字母表与收费律，一词的复制产生该词，当且仅当池供给该词且支持覆盖其收费；若每单位自同一存量取 d 并一分为二，则自 k 单位的 n 轮运行当且仅当存量覆盖 d·k(2^n−1)，终于 k·2^n 单位。末端接合是其实例（交替词、单位收费）：在长度上限内，链按交替词生长，当且仅当池供给该词且支持每记号覆盖一单位；自空链形成成熟链，当且仅当池中两类各至少四个且有八单位空闲支持。自 k 条成熟链、具备各轮材料，n 轮达到 k·2^n 条成熟链，当且仅当支持覆盖 9·k(2^n−1)，即取量为 9 的加倍过程运行 n 轮。先前实际路由输出形成可切分链，其保留内部边的片段在同一接合规律下各自重建。",
-    "en": "For every alphabet and law of charges, a copy of a word produces the word exactly when the pool supplies it and the support covers its charges; where every unit draws d from one stock and becomes two, n rounds from k units run exactly when the stock covers d·k(2^n−1), ending with k·2^n units. End attachment is the instance with the alternating word and unit charges: within the size limit a chain grows by the alternating word exactly when the pool supplies it and the support covers one unit per token, so the mature chain forms from the empty chain exactly when the pool holds at least four of each kind and eight units are free. From k mature chains with the material for the rounds, n rounds reach k·2^n mature chains exactly when the support covers 9·k(2^n−1), that is, exactly when the doubling process with draw 9 runs n rounds. The previous actual routing output forms the cleavable chain, and its internally connected fragments rebuild under the same attachment law."
+    "zh": "对每个字母表与汲取律，一词的复制产生该词，当且仅当池供给该词且支持覆盖其汲取；若每单位自同一存量取 d 并一分为二，则自 k 单位的 n 轮运行当且仅当存量覆盖 d·k(2^n−1)，终于 k·2^n 单位。末端接合是其实例（交替词、单位汲取）：在长度上限内，链按交替词生长，当且仅当池供给该词且支持每记号覆盖一单位；自空链形成成熟链，当且仅当池中两类各至少四个且有八单位空闲支持。自 k 条成熟链、具备各轮材料，n 轮达到 k·2^n 条成熟链，当且仅当支持覆盖 9·k(2^n−1)，即取量为 9 的加倍过程运行 n 轮。先前实际路由输出形成可切分链，其保留内部边的片段在同一接合规律下各自重建。",
+    "en": "For every alphabet and law of draws, a copy of a word produces the word exactly when the pool supplies it and the support covers what it draws; where every unit draws d from one stock and becomes two, n rounds from k units run exactly when the stock covers d·k(2^n−1), ending with k·2^n units. End attachment is the instance with the alternating word and unit draws: within the size limit a chain grows by the alternating word exactly when the pool supplies it and the support covers one unit per token, so the mature chain forms from the empty chain exactly when the pool holds at least four of each kind and eight units are free. From k mature chains with the material for the rounds, n rounds reach k·2^n mature chains exactly when the support covers 9·k(2^n−1), that is, exactly when the doubling process with draw 9 runs n rounds. The previous actual routing output forms the cleavable chain, and its internally connected fragments rebuild under the same attachment law."
   },
   "hypotheses": [
     {
@@ -118,7 +118,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
       "role": "proof",
-      "sha256": "cbebdfecf1e84f15c4259bab46df5e409409380254cc2e0744a63cf8fd10c0aa",
+      "sha256": "f2f59a4a0660d856e97a7ad48d6e3f014771a0b1282b50deaebcf652155a27f4",
       "declarations": [
         "Becoming.Copying.built_iff",
         "Becoming.Copying.required",
@@ -131,14 +131,14 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
       "role": "proof",
-      "sha256": "f540bbadf5bdb99c2382384fcacaa0aa2ded8b0f156590207fbe44e2c343956c",
+      "sha256": "96ddf1d7b2de4989257cf45aa1dd10a75b20290240ead1b8e58b89979e2b144a",
       "declarations": [
         "Becoming.CopyingInstances.alternatingFrom",
         "Becoming.CopyingInstances.grow_view",
         "Becoming.CopyingInstances.grow_iff",
         "Becoming.CopyingInstances.mature_forms_iff",
-        "Becoming.CopyingInstances.reproduce_spent",
-        "Becoming.CopyingInstances.rounds_spent",
+        "Becoming.CopyingInstances.reproduce_used",
+        "Becoming.CopyingInstances.rounds_used",
         "Becoming.CopyingInstances.rounds_mature_iff",
         "Becoming.CopyingInstances.rounds_follow_doubling"
       ]
@@ -158,7 +158,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "bf2544993bfedee2773261123c5d0b1a3d9d8316036b7930cfb35ba28a92ad56",
+      "sha256": "aabe344f373e6708a47dbc7f774406937d86dde8daf923d276e6b7197277a459",
       "declarations": []
     }
   ],
@@ -197,8 +197,8 @@
       "en": "2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope."
     },
     {
-      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying 的复制律与加倍律）：末端接合是交替词、单位收费的核心复制，链生长与成熟链形成为等价；新的支持不变量（每次接合与切分各取一单位）给出 n 轮达到 k·2^n 条成熟链的等价，旧 supported_rounds 是其充分一侧，partial_failure_keeps_material 是失败一侧。外围 CopyingInstances；scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。",
-      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (the copying and doubling laws of the new core module Becoming.Copying): end attachment is the core copy of the alternating word with unit charges, so chain growth and the mature chain are equivalences; a new support invariant (one unit per attachment and per cleavage) gives the equivalence for n rounds reaching k·2^n mature chains, the old supported_rounds being its sufficient side and partial_failure_keeps_material its failing side. Periphery CopyingInstances; built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying 的复制律与加倍律）：末端接合是交替词、单位汲取的核心复制，链生长与成熟链形成为等价；新的支持不变量（每次接合与切分各取一单位）给出 n 轮达到 k·2^n 条成熟链的等价，旧 supported_rounds 是其充分一侧，partial_failure_keeps_material 是失败一侧。外围 CopyingInstances；scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (the copying and doubling laws of the new core module Becoming.Copying): end attachment is the core copy of the alternating word with unit draws, so chain growth and the mature chain are equivalences; a new support invariant (one unit per attachment and per cleavage) gives the equivalence for n rounds reaching k·2^n mature chains, the old supported_rounds being its sufficient side and partial_failure_keeps_material its failing side. Periphery CopyingInstances; built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
     }
   ]
 }

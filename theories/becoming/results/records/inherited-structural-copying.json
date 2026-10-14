@@ -10,8 +10,8 @@
   "family": "F10",
   "reviewed_at_utc": "2026-10-14T04:00:00+00:00",
   "claim": {
-    "zh": "对每个可判等字母表与每个收费律：一词的复制完成且产物即该词，当且仅当池中每个记号的数量不少于词中所用、且空闲支持覆盖各次接合的收费；含释放时，当且仅当支持另覆盖释放；自同一共同池依次复制的各词全部释放，当且仅当池共同供给所有词且支持覆盖全部收费与释放，与次序无关。局部收费下，词的成本只经其相异邻对数依赖于收费律：相异邻对较多的词较便宜，当且仅当异类之后的接合收费较低；相异邻对成等差时成本亦成等差。结构复制机是实例：模板链被复制并释放，当且仅当池供给其记号且支持覆盖其收费加一，对每个池成立；旧的所需支持定理、交替／聚簇排序与第三排列约束都是实例，任意有限谱系的定理保持。实际交换改变保留次序，逐项材料复制传递该变化。",
-    "en": "For every alphabet with decidable equality and every law of charges: a copy of a word completes, its product being the word, exactly when the pool holds each token at least as often as the word uses it and the free support covers the charges of its attachments; with a release, exactly when the support also covers the release; copies drawn in turn from one shared pool are all released exactly when the pool supplies all the words together and the support covers all their charges and releases, whatever their order. Under local charges a word's cost depends on the law only through its number of unlike adjacent pairs: the word with more unlike pairs costs less exactly when an attachment after an unlike token draws less, and costs are in arithmetic progression where unlike pairs are. The structural copy machine is an instance: a template strand is copied and released exactly when the pool supplies its tokens and the support covers its charges plus one, for every pool; the old theorem of the support needed, the alternating/clustered ranking and the third-arrangement constraint are instances, and the every-finite-lineage theorem stands. An actual exchange changes retained order and tokenwise material copying transmits it."
+    "zh": "对每个可判等字母表与每个汲取律：一词的复制完成且产物即该词，当且仅当池中每个记号的数量不少于词中所用、且空闲支持覆盖各次接合的汲取；含释放时，当且仅当支持另覆盖释放；自同一共同池依次复制的各词全部释放，当且仅当池共同供给所有词且支持覆盖全部汲取与释放，与次序无关。局部汲取下，词的用量只经其相异邻对数依赖于汲取律：相异邻对较多的词汲取较少，当且仅当异类之后的接合汲取较少；相异邻对成等差时用量亦成等差。结构复制机是实例：模板链被复制并释放，当且仅当池供给其记号且支持覆盖其汲取加一，对每个池成立；旧的所需支持定理、交替／聚簇排序与第三排列约束都是实例，任意有限谱系的定理保持。实际交换改变保留次序，逐项材料复制传递该变化。",
+    "en": "For every alphabet with decidable equality and every law of draws: a copy of a word completes, its product being the word, exactly when the pool holds each token at least as often as the word uses it and the free support covers what its attachments draw; with a release, exactly when the support also covers the release; copies drawn in turn from one shared pool are all released exactly when the pool supplies all the words together and the support covers all their draws and releases, whatever their order. Under local draws a word's use of support depends on the law only through its number of unlike adjacent pairs: the word with more unlike pairs draws less exactly when an attachment after an unlike token draws less, and uses are in arithmetic progression where unlike pairs are. The structural copy machine is an instance: a template strand is copied and released exactly when the pool supplies its tokens and the support covers its draws plus one, for every pool; the old theorem of the support needed, the alternating/clustered ranking and the third-arrangement constraint are instances, and the every-finite-lineage theorem stands. An actual exchange changes retained order and tokenwise material copying transmits it."
   },
   "hypotheses": [
     {
@@ -95,7 +95,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
       "role": "proof",
-      "sha256": "cbebdfecf1e84f15c4259bab46df5e409409380254cc2e0744a63cf8fd10c0aa",
+      "sha256": "f2f59a4a0660d856e97a7ad48d6e3f014771a0b1282b50deaebcf652155a27f4",
       "declarations": [
         "Becoming.Copying.Supplies",
         "Becoming.Copying.built_iff",
@@ -105,18 +105,18 @@
         "Becoming.Copying.batch",
         "Becoming.Copying.batch_all_iff",
         "Becoming.Copying.batch_all_swap",
-        "Becoming.Copying.pairCharge",
-        "Becoming.Copying.cost_word",
-        "Becoming.Copying.cost_midpoint",
-        "Becoming.Copying.cost_lt_iff"
+        "Becoming.Copying.pairDraw",
+        "Becoming.Copying.use_word",
+        "Becoming.Copying.use_midpoint",
+        "Becoming.Copying.use_lt_iff"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
       "role": "proof",
-      "sha256": "f540bbadf5bdb99c2382384fcacaa0aa2ded8b0f156590207fbe44e2c343956c",
+      "sha256": "96ddf1d7b2de4989257cf45aa1dd10a75b20290240ead1b8e58b89979e2b144a",
       "declarations": [
-        "Becoming.CopyingInstances.charge_eq",
+        "Becoming.CopyingInstances.draw_eq",
         "Becoming.CopyingInstances.view_tick",
         "Becoming.CopyingInstances.copy_cells_iff",
         "Becoming.CopyingInstances.reproduce_iff",
@@ -143,7 +143,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "bf2544993bfedee2773261123c5d0b1a3d9d8316036b7930cfb35ba28a92ad56",
+      "sha256": "aabe344f373e6708a47dbc7f774406937d86dde8daf923d276e6b7197277a459",
       "declarations": []
     }
   ],
@@ -174,8 +174,8 @@
       "en": "2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope."
     },
     {
-      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying）：对每个字母表与收费律，复制完成恰当池逐记号供给且支持覆盖收费，同池批量全部释放恰当池共同供给且支持覆盖全部，与次序无关；局部收费的排序与等差律。外围 CopyingInstances 把结构复制机陈述为实例，对每个池给出复制与释放的等价，旧 exact_reproduction_budget 是实例。scratch_build 实编，核心公理报告为空；回执由落地运行绑定。原定理、回执与反例不变。",
-      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Copying): for every alphabet and law of charges, a copy completes exactly when the pool supplies each token and the support covers the charges, and a shared-pool batch is all released exactly when the pool supplies the words together and the support covers everything, in any order; the ranking and progression laws of local charges. The periphery CopyingInstances states the structural machine as an instance, with the copy and release equivalence for every pool and the old exact_reproduction_budget as an instance. Built with scratch_build, the core with empty axiom reports; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying）：对每个字母表与汲取律，复制完成恰当池逐记号供给且支持覆盖汲取，同池批量全部释放恰当池共同供给且支持覆盖全部，与次序无关；局部汲取的排序与等差律。外围 CopyingInstances 把结构复制机陈述为实例，对每个池给出复制与释放的等价，旧 exact_reproduction_budget 是实例。scratch_build 实编，核心公理报告为空；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Copying): for every alphabet and law of draws, a copy completes exactly when the pool supplies each token and the support covers the draws, and a shared-pool batch is all released exactly when the pool supplies the words together and the support covers everything, in any order; the ranking and progression laws of local draws. The periphery CopyingInstances states the structural machine as an instance, with the copy and release equivalence for every pool and the old exact_reproduction_budget as an instance. Built with scratch_build, the core with empty axiom reports; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
     }
   ]
 }

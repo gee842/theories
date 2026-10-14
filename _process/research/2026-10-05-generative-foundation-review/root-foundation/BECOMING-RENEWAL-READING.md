@@ -7349,31 +7349,31 @@ Boundary: 机器与分子复制、校对、生长，或与儿童命名、来源�
 Integration: §9 模块表；Becoming.lean 与 check_becoming.py 的模块列表；五项记录；旧记录审计表
 ```
 
-**精确复制（Becoming.Copying）。** 对每个可判定相等的字母表与每个收费律 `charge : Option α → α → Nat`（前一记号与本记号决定一次接合的收费），复制读模板的待接记号：池中有该记号且空闲支持覆盖收费时接合，否则停在原处，停滞后不再变（`steps_fixed`）。池供给一词，指每个记号在池中的数量不少于词中所用（`Supplies`，逐记号的计数条件）。
+**精确复制（Becoming.Copying）。** 对每个可判定相等的字母表与每个汲取律 `draw : Option α → α → Nat`（前一记号与本记号决定一次接合的汲取），复制读模板的待接记号：池中有该记号且空闲支持覆盖汲取时接合，否则停在原处，停滞后不再变（`steps_fixed`）。池供给一词，指每个记号在池中的数量不少于词中所用（`Supplies`，逐记号的计数条件）。
 
 ```lean
-theorem built_iff : ∀ (prev : Option α) (built word pool : List α) (free spent : Nat),
-    (steps charge word.length ⟨prev, word, built, pool, free, spent⟩).built = built ++ word ↔
-      Supplies word pool ∧ cost charge prev word ≤ free
+theorem built_iff : ∀ (prev : Option α) (built word pool : List α) (free used : Nat),
+    (steps draw word.length ⟨prev, word, built, pool, free, used⟩).built = built ++ word ↔
+      Supplies word pool ∧ use draw prev word ≤ free
 ```
 
-完成时产物为该词、池去掉该词、支持减去收费（`copies`）；`completes_iff` 以待接为空陈述同一条件；留有 `r` 以释放时，恰当支持另覆盖 `r`（`releases_iff`）。自同一池依次复制多个词，每个完成且留有 `r` 的复制即释放：全部释放恰当池共同供给所有词且支持覆盖全部收费与释放（`batch_all_iff`）；交换相邻两词——从而任意重排——不改变是否全部释放（`batch_all_swap`），但可改变哪些被释放：旧见证 `shared_supply_order_matters` 中两种次序都只释放第一个。池供给 `w ++ v` 恰当它供给 `w`、且取走 `w` 后余下的供给 `v`（`supplies_append_iff`）。
+完成时产物为该词、池去掉该词、支持减去所汲取（`copies`）；`completes_iff` 以待接为空陈述同一条件；留有 `r` 以释放时，恰当支持另覆盖 `r`（`releases_iff`）。自同一池依次复制多个词，每个完成且留有 `r` 的复制即释放：全部释放恰当池共同供给所有词且支持覆盖全部汲取与释放（`batch_all_iff`）；交换相邻两词——从而任意重排——不改变是否全部释放（`batch_all_swap`），但可改变哪些被释放：旧见证 `shared_supply_order_matters` 中两种次序都只释放第一个。池供给 `w ++ v` 恰当它供给 `w`、且取走 `w` 后余下的供给 `v`（`supplies_append_iff`）。
 
-**局部收费。** 首次接合收 `first`、同类之后收 `same`、异类之后收 `differ`（`pairCharge`）时，词的成本只经其相异邻对数依赖收费律（`cost_word`）；同长词中相异邻对数成等差，成本亦成等差（`cost_midpoint`）；相异邻对较多的词较便宜，恰当 `differ < same`（`cost_lt_iff`）。
+**局部汲取。** 首次接合汲取 `first`、同类之后汲取 `same`、异类之后汲取 `differ`（`pairDraw`）时，词的用量只经其相异邻对数依赖汲取律（`use_word`）；同长词中相异邻对数成等差，用量亦成等差（`use_midpoint`）；相异邻对较多的词汲取较少，恰当 `differ < same`（`use_lt_iff`）。
 
 **经接触读取。** 复制在每一位接合配准在该位读出之物（`readSteps`，读值 `read : Nat → Option α`）：
 
 ```lean
 theorem reading_iff (read : Nat → Option α) : ∀ (word pending : List α) (prev : Option α)
-    (built pool : List α) (free spent : Nat), pending.length = word.length →
-    ((readSteps charge read word.length ⟨prev, pending, built, pool, free, spent⟩).built =
+    (built pool : List α) (free used : Nat), pending.length = word.length →
+    ((readSteps draw read word.length ⟨prev, pending, built, pool, free, used⟩).built =
         built ++ word ↔
-      Reads read built.length word ∧ Supplies word pool ∧ cost charge prev word ≤ free)
+      Reads read built.length word ∧ Supplies word pool ∧ use draw prev word ≤ free)
 ```
 
 `Reads` 逐位；产物只增长（`readSteps_extends`）；对每个过程，每步延长输出恰当每段进程延长输出（`extends_along_iff`）。
 
-**检查与替换。** 在第 `i` 位对照参考 `ref` 检查（收 `ci`），参考记号 `x` 与该位不同、池中有 `x` 且支持覆盖 `ce` 时换入 `x`，换出的记号回池（`inspect`）。
+**检查与替换。** 在第 `i` 位对照参考 `ref` 检查（汲取 `ci`），参考记号 `x` 与该位不同、池中有 `x` 且支持覆盖 `ce` 时换入 `x`，换出的记号回池（`inspect`）。
 
 ```lean
 theorem inspect_le_iff (ci ce : Nat) (t : List α) (ref : Nat → Option α) (i : Nat) :
@@ -7385,10 +7385,10 @@ theorem inspect_le_iff (ci ce : Nat) (t : List α) (ref : Nat → Option α) (i 
 
 **加倍。** 每单位自同一存量取 `d` 并一分为二（`doubling d`）：自 `k` 单位、存量 `m` 的 `n` 轮运行恰当 `d * required n k ≤ m`，终于 `k * 2 ^ n` 单位（`doubling_iff`），其中 `required n k + k = k * 2 ^ n`（`required_add`）。
 
-**外围实例（CopyingInstances）。** 每台复制机的状态读作进行中的核心复制（`view`），机器一步即核心一步（`view_tick`、`tick_work_view`、`inspect_view`），机器收费是首收 1 的局部收费（`charge_eq`）。
-- 结构复制：模板链被复制恰当池供给其记号且支持覆盖收费（`copy_cells_iff`），被复制并释放恰当另覆盖一单位（`reproduce_iff`），对每个池；旧 `exact_reproduction_budget` 是池含模板自身记号的实例（`template_pool_reproduce_iff`）。同池批量（`batch_all_released_iff`、`batch_all_released_swap`）；交替／聚簇排序与第三排列约束由局部收费律得出（`local_ranking_from_law`、`third_structure_from_law`）。
-- 链生长：末端接合是交替词、单位收费的核心复制（`grow_view`）；长度上限内，链按交替词生长恰当池供给该词且支持每记号覆盖一单位（`grow_iff`）；自空链形成成熟链恰当池中两类各至少四个且有八单位空闲（`mature_forms_iff`），旧 `missing_kind_stalls_with_work_remaining` 是其失败一侧。每次接合与每次切分各取一单位，故已用支持与“总长加链数”同增（`reproduce_spent`、`rounds_spent`）；由此自 `k` 条成熟链、具备各轮材料，`n` 轮达到 `k * 2 ^ n` 条恰当支持覆盖 `9 * required n k`（`rounds_mature_iff`），即取量 9 的加倍过程运行 `n` 轮（`rounds_follow_doubling`）；旧 `supported_rounds` 是充分一侧，`partial_failure_keeps_material`（26 < 27）是失败一侧。
-- 配准：对每个状态，与词长相同数目的复制步把产物延长为该词，恰当每一位经实际连接读出其记号、池供给该词且支持覆盖其收费（`operate_copies_iff`）；完整配准是实例（`registered_copy_cells`，不需旧定理的非空路径前提）；产物沿每段进程只增长（`product_extends_along`）；只有复制步改变产物（`product_gated`；`contact_course_keeps_product`、`product_change_passes_copy`，旧 `correcting_contact_does_not_rewrite_past` 由此一般化）；连接件、材料与支持的总量沿每段进程保持（`totals_along`，即旧 `history_accounts`，门为空）。
+**外围实例（CopyingInstances）。** 每台复制机的状态读作进行中的核心复制（`view`），机器一步即核心一步（`view_tick`、`tick_work_view`、`inspect_view`），机器的汲取是首次汲取 1 的局部汲取（`draw_eq`）。
+- 结构复制：模板链被复制恰当池供给其记号且支持覆盖汲取（`copy_cells_iff`），被复制并释放恰当另覆盖一单位（`reproduce_iff`），对每个池；旧 `exact_reproduction_budget` 是池含模板自身记号的实例（`template_pool_reproduce_iff`）。同池批量（`batch_all_released_iff`、`batch_all_released_swap`）；交替／聚簇排序与第三排列约束由局部汲取律得出（`local_ranking_from_law`、`third_structure_from_law`）。
+- 链生长：末端接合是交替词、单位汲取的核心复制（`grow_view`）；长度上限内，链按交替词生长恰当池供给该词且支持每记号覆盖一单位（`grow_iff`）；自空链形成成熟链恰当池中两类各至少四个且有八单位空闲（`mature_forms_iff`），旧 `missing_kind_stalls_with_work_remaining` 是其失败一侧。每次接合与每次切分各取一单位，故已用支持与“总长加链数”同增（`reproduce_used`、`rounds_used`）；由此自 `k` 条成熟链、具备各轮材料，`n` 轮达到 `k * 2 ^ n` 条恰当支持覆盖 `9 * required n k`（`rounds_mature_iff`），即取量 9 的加倍过程运行 `n` 轮（`rounds_follow_doubling`）；旧 `supported_rounds` 是充分一侧，`partial_failure_keeps_material`（26 < 27）是失败一侧。
+- 配准：对每个状态，与词长相同数目的复制步把产物延长为该词，恰当每一位经实际连接读出其记号、池供给该词且支持覆盖其汲取（`operate_copies_iff`）；完整配准是实例（`registered_copy_cells`，不需旧定理的非空路径前提）；产物沿每段进程只增长（`product_extends_along`）；只有复制步改变产物（`product_gated`；`contact_course_keeps_product`、`product_change_passes_copy`，旧 `correcting_contact_does_not_rewrite_past` 由此一般化）；连接件、材料与支持的总量沿每段进程保持（`totals_along`，即旧 `history_accounts`，门为空）。
 - 纠正：对每个状态与位置，检查对每个进行中的复制都不增加缺陷，恰当参考在该位忠实（`inspect_le_iff_instance`）；忠实位置的扫描（`scan_le_from_law`；旧扫描定理是实例 `scan_faithful_instance`）；单点条件（`matches_reference_from_law`）；旧 `wrong_reference_damages_correct_product` 的参考在被检位不忠实（`wrong_reference_unfaithful`）。
 
 **回溯读出（Becoming.Retrodiction）。** 对每类历史、日期、关系、探测与报告：历史 `h` 在日期 `d` 给出关系 `routeAt h d`，日期化控制记录 `(d, q, emit (routeAt h d) q)`。实际历史总符合自己的记录（`actual_candidate`）；一历史符合另一历史给出的记录，恰当二者给出相同记录（`fits_iff_same`）。旧报告包在日期 `d` 由当时的关系与隐藏来源 `s` 产生，读出即说出来源内容：
@@ -7423,7 +7423,7 @@ theorem bracket_settles_iff {r r' : R} (two : r ≠ r') (a n k : Nat) :
 4. **仍是单向或未一般化的。** `finite_lineage_inherits` 仍只有充分一侧；`registered_copy_cells` 只给出产物的记号，链的边仍由旧定理；回溯读出的律对给定的族与扰动包络精确，不推出族本身——变化范围是给定前提，不由数据学得（旧记录的前提保持）。
 5. **范围。** 只证明所陈述的律；机器与分子复制、校对、生长，或与儿童命名、来源监控的对应不由此检查。
 
-**边界。** 落地运行须在 `check_becoming.py` 中编译与审计 `Becoming.Copying` 与 `Becoming.Retrodiction`，然后运行 `check_copying_instances.py` 与 `check_retrodiction_instances.py`（它们要求闭包中每个其他模块都有已通过的回执），并把五项记录的新证明引用绑定到新回执。各外围机器模块的字节未改。
+**边界。** 落地运行须在 `check_becoming.py` 中编译与审计 `Becoming.Copying` 与 `Becoming.Retrodiction`，然后运行 `check_copying_instances.py` 与 `check_retrodiction_instances.py`（它们要求闭包中每个其他模块都有已通过的回执），并把五项记录的新证明引用绑定到新回执。各外围机器模块的字节未改。新声明的名称用结构词（汲取律 `draw`、`pairDraw`，用量 `use`，已用 `used`，`drawSupport`），不用市场词；旧机器的名称因旧记录引用而不变。
 
 ## English summary
 
@@ -8635,10 +8635,10 @@ The package now has 4518 theorems and 6370 declaration audits, over a core closu
 Scratch builds only (core and bridge with empty axiom reports; the periphery with standard axioms); the landing run binds the receipts. Not yet independently reviewed.
 
 **General laws for the older records: copying and retrodiction (14 October 2026).** Under the same approval, section 114 proves the two groups section 113 left for later.
-- **Copying** (`Becoming.Copying`, 65 theorems). For every alphabet with decidable equality and every law of charges, a copy's product is the word exactly when the pool holds each token at least as often as the word uses it and the support covers the charges (`built_iff`, `completes_iff`), and with a release exactly when the support also covers it (`releases_iff`). Copies from one shared pool are all released exactly when the pool supplies the words together and the support covers all charges and releases (`batch_all_iff`), whatever their order (`batch_all_swap`). Under local charges, cost depends on the law only through unlike adjacent pairs (`cost_word`, `cost_midpoint`, `cost_lt_iff`). A copy reading through a registration reproduces a word exactly when every site reads its token and the copy is supplied and covered (`reading_iff`). Inspection never increases the defects for any product exactly where the reference is faithful (`inspect_le_iff`), scans of such sites never do (`scan_le`), and a defective site takes the reference's token exactly when the pool holds it and the support covers both charges (`inspect_matches_iff`). Doubling runs n rounds from k units exactly when the stock covers d·k(2ⁿ−1) (`doubling_iff`).
-- **Copy machines** (periphery `CopyingInstances`, 63 theorems). Each machine move is a core move. The structural machine reproduces a strand exactly when the pool supplies its tokens and the support covers its charges plus one, for every pool, with the old theorem of the support needed as the instance. Chain growth follows the same law. n rounds reach k·2ⁿ mature chains exactly when the support covers 9·k(2ⁿ−1), which is the core doubling with draw 9. Reading through contacts holds for every registration state, and only copy moves change the product. Inspection never increases defects exactly where the reference is faithful, and the old wrong reference is unfaithful at the inspected site.
+- **Copying** (`Becoming.Copying`, 65 theorems). For every alphabet with decidable equality and every law of draws, a copy's product is the word exactly when the pool holds each token at least as often as the word uses it and the support covers what its attachments draw (`built_iff`, `completes_iff`), and with a release exactly when the support also covers it (`releases_iff`). Copies from one shared pool are all released exactly when the pool supplies the words together and the support covers all draws and releases (`batch_all_iff`), whatever their order (`batch_all_swap`). Under local draws, a word's use of support depends on the law only through unlike adjacent pairs (`use_word`, `use_midpoint`, `use_lt_iff`). A copy reading through a registration reproduces a word exactly when every site reads its token and the copy is supplied and covered (`reading_iff`). Inspection never increases the defects for any product exactly where the reference is faithful (`inspect_le_iff`), scans of such sites never do (`scan_le`), and a defective site takes the reference's token exactly when the pool holds it and the support covers both draws (`inspect_matches_iff`). Doubling runs n rounds from k units exactly when the stock covers d·k(2ⁿ−1) (`doubling_iff`).
+- **Copy machines** (periphery `CopyingInstances`, 63 theorems). Each machine move is a core move. The structural machine reproduces a strand exactly when the pool supplies its tokens and the support covers its draws plus one, for every pool, with the old theorem of the support needed as the instance. Chain growth follows the same law. n rounds reach k·2ⁿ mature chains exactly when the support covers 9·k(2ⁿ−1), which is the core doubling with draw 9. Reading through contacts holds for every registration state, and only copy moves change the product. Inspection never increases defects exactly where the reference is faithful, and the old wrong reference is unfaithful at the inspected site.
 - **Retrodiction** (`Becoming.Retrodiction`, 17 theorems). The law holds for every type of histories, dates, relations, probes and reports. The actual history fits its records. Every explanation of an earlier packet by a family history fitting the records gives the actual content exactly when every family rival giving the same packet with another content is separated by some dated control (`reading_right_iff`, `look_right_iff`). Controls at both ends of a span settle every date between exactly when at most one change is admitted or no date lies between (`bracket_settles_iff`), with the excursion as the counterexample. A change seen at both ends is not located (`change_unlocated`).
 - **Source histories** (periphery `RetrodictionInstances`, 21 theorems). The four-moment histories are instances: bracketing controls settle naming in the one-change envelope (`controls_settle_naming`), and later deterioration and improvement are instances. The late-control, split-control and omitted-excursion cases are the law's failing side; the excursion is read wrongly outside the one-change family.
 - **Still one-directional**: `finite_lineage_inherits` (sufficiency only) and the chain's bonds in `registered_copy_cells`. The change envelope remains a supplied premise.
 
-Scratch builds only (core with empty axiom reports; the periphery with standard axioms); the landing run binds the receipts. Not yet independently reviewed.
+New names are structural (the law of draws `draw` and `pairDraw`, `use`, `used`, `drawSupport`), not market words; the old machines keep their names, which older records cite. Scratch builds only (core with empty axiom reports; the periphery with standard axioms); the landing run binds the receipts. Not yet independently reviewed.

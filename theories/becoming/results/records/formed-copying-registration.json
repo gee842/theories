@@ -10,8 +10,8 @@
   "family": "F10",
   "reviewed_at_utc": "2026-10-14T04:00:00+00:00",
   "claim": {
-    "zh": "对每个字母表与收费律：在每一位接合配准所读之物的复制产生某词，当且仅当每一位读出该词的记号、池供给该词且支持覆盖其收费，其产物只增长；对每个过程，每步延长输出当且仅当每段进程延长输出，每个非门控步保持的量沿每段非门控进程保持。配准机中，对每个状态，与词长相同数目的复制步把产物延长为该词，当且仅当每一位经实际连接读出其记号、池供给该词且支持覆盖其收费；完整稳定配准恢复既有复制是其实例。缺接、错位与重接通过改变各位所读而改变后继；只有复制步改变产物，故连接变化不改写产物，每个允许的有限历史保留已成前缀及连接件、材料与支持的总量。消耗连接件和支持形成的配准接入材料复制。",
-    "en": "For every alphabet and law of charges: a copy attaching at each site what a registration reads there produces a word exactly when every site reads the word's token, the pool supplies the word and the support covers its charges, and its product only grows; for every process an output is extended along every course exactly when every step extends it, and a quantity kept by every ungated step is kept along every ungated course. In the registration machine, for every state, as many copy moves as a word has tokens extend the product by that word exactly when each site reads its token through the actual contacts, the pool supplies it and the support covers its charges; complete stable registration recovering prior copying is the instance. Loss, displacement and rebinding change the successor by changing what sites read; only copy moves change the product, so contact changes never rewrite it, and every admitted finite history keeps its built prefix and its totals of connectors, material and support. Connector- and support-consuming registration enters material copying."
+    "zh": "对每个字母表与汲取律：在每一位接合配准所读之物的复制产生某词，当且仅当每一位读出该词的记号、池供给该词且支持覆盖其汲取，其产物只增长；对每个过程，每步延长输出当且仅当每段进程延长输出，每个非门控步保持的量沿每段非门控进程保持。配准机中，对每个状态，与词长相同数目的复制步把产物延长为该词，当且仅当每一位经实际连接读出其记号、池供给该词且支持覆盖其汲取；完整稳定配准恢复既有复制是其实例。缺接、错位与重接通过改变各位所读而改变后继；只有复制步改变产物，故连接变化不改写产物，每个允许的有限历史保留已成前缀及连接件、材料与支持的总量。消耗连接件和支持形成的配准接入材料复制。",
+    "en": "For every alphabet and law of draws: a copy attaching at each site what a registration reads there produces a word exactly when every site reads the word's token, the pool supplies the word and the support covers what it draws, and its product only grows; for every process an output is extended along every course exactly when every step extends it, and a quantity kept by every ungated step is kept along every ungated course. In the registration machine, for every state, as many copy moves as a word has tokens extend the product by that word exactly when each site reads its token through the actual contacts, the pool supplies it and the support covers what it draws; complete stable registration recovering prior copying is the instance. Loss, displacement and rebinding change the successor by changing what sites read; only copy moves change the product, so contact changes never rewrite it, and every admitted finite history keeps its built prefix and its totals of connectors, material and support. Connector- and support-consuming registration enters material copying."
   },
   "hypotheses": [
     {
@@ -94,7 +94,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
       "role": "proof",
-      "sha256": "cbebdfecf1e84f15c4259bab46df5e409409380254cc2e0744a63cf8fd10c0aa",
+      "sha256": "f2f59a4a0660d856e97a7ad48d6e3f014771a0b1282b50deaebcf652155a27f4",
       "declarations": [
         "Becoming.Copying.Reads",
         "Becoming.Copying.readSteps",
@@ -107,7 +107,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
       "role": "proof",
-      "sha256": "f540bbadf5bdb99c2382384fcacaa0aa2ded8b0f156590207fbe44e2c343956c",
+      "sha256": "96ddf1d7b2de4989257cf45aa1dd10a75b20290240ead1b8e58b89979e2b144a",
       "declarations": [
         "Becoming.CopyingInstances.tick_work_view",
         "Becoming.CopyingInstances.operate_view",
@@ -135,7 +135,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "bf2544993bfedee2773261123c5d0b1a3d9d8316036b7930cfb35ba28a92ad56",
+      "sha256": "aabe344f373e6708a47dbc7f774406937d86dde8daf923d276e6b7197277a459",
       "declarations": []
     }
   ],
