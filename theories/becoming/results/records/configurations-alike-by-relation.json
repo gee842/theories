@@ -40,8 +40,8 @@
     }
   ],
   "correspondence": {
-    "zh": "P69 的第四项（工作板），按 Ren 2026-10-12 的“yes, put it on the board and start”：从 World 一侧陈述“配置先于其间的关系”这一分割。它把外围的关系的同一（RelationalDynamics，2026-10-06；ExplanatoryBranching 的分支检验）带进核心。那里发现“状态不变”读的是载体的相等（unchanged_reads_carrier_identity）；作为相等的确定性也如此（Twins）。读法（AI 的，待 Ren）：配置的名字，像关系项的名字（Becoming.Identity）一样，不承载任何东西，能查明的对相同的配置都一样；交换之律下水平在每个关系项上相等就是相同，所以零前提计划以逐点性质代替函数外延性的承诺（§1.2，b(5)）陈述的是水平的关系的同一，函数外延性只会再加上相同的水平是同一个。有意义的描述在本模块的定义上，对有分支、带主张的框架重述分支“Current math core (fork)”对一个确定的律检查过的 IdentifiesAlike（其 Saying.lean，回答 Ren 关于框架与成对的问题）。见整合文档 §91。",
-    "en": "The fourth item of P69 (work board), following Ren's “yes, put it on the board and start” of 12 October 2026: the split “configurations prior to their relation” stated from the world's side. It brings into the core the periphery's relational identity of configurations (RelationalDynamics, 6 October 2026; the branching tests of ExplanatoryBranching). There a step leaving the configuration unchanged was found to read the carrier's equality (unchanged_reads_carrier_identity); so does determinacy as equality (Twins). Readings (the AI's, pending Ren): the names of configurations, like those of relata (Becoming.Identity), carry nothing, and what can be found out is the same for alike configurations; under the law of exchange, agreeing at every relatum is being alike, so the zero-premise plan's commitment to pointwise properties in place of function extensionality (§1.2, b(5)) states the relational identity of standings, function extensionality adding only that alike standings are one and the same. Descriptions that make sense restate on this module's definitions, for frames that branch and carry claims, the IdentifiesAlike checked for one determined law on the branch \"Current math core (fork)\" (its Saying.lean, answering Ren's questions on framing and pairs). See §91 of the integration note."
+    "zh": "P69 的第四项（工作板），按 Ren 2026-10-12 的“yes, put it on the board and start”：从 World 一侧陈述“配置先于其间的关系”这一分割。它把外围的关系的同一（RelationalDynamics，2026-10-06；ExplanatoryBranching 的分支检验）带进核心。那里发现“状态不变”读的是载体的相等（unchanged_reads_carrier_identity）；作为相等的确定性也如此（Twins）。读法（AI 的；Ren 同意）：配置的名字，像关系项的名字（Becoming.Identity）一样，不承载任何东西，能查明的对相同的配置都一样；交换之律下水平在每个关系项上相等就是相同，所以零前提计划以逐点性质代替函数外延性的承诺（§1.2，b(5)）陈述的是水平的关系的同一，函数外延性只再加上相同的水平是同一个。有意义的描述在本模块的定义上，对有分支、带主张的框架重述分支“Current math core (fork)”对一个确定的律检查过的 IdentifiesAlike（其 Saying.lean，回答 Ren 关于框架与成对的问题）。见整合文档 §91。",
+    "en": "The fourth item of P69 (work board), following Ren's “yes, put it on the board and start” of 12 October 2026: the split “configurations prior to their relation” stated from the world's side. It brings into the core the periphery's relational identity of configurations (RelationalDynamics, 6 October 2026; the branching tests of ExplanatoryBranching). There a step leaving the configuration unchanged was found to read the carrier's equality (unchanged_reads_carrier_identity); so does determinacy as equality (Twins). Readings (the AI's; Ren agreed): the names of configurations, like those of relata (Becoming.Identity), carry nothing, and what can be found out is the same for alike configurations; under the law of exchange, agreeing at every relatum is being alike, so the zero-premise plan's commitment to pointwise properties in place of function extensionality (§1.2, b(5)) states the relational identity of standings, function extensionality adding only that alike standings are one and the same. Descriptions that make sense restate on this module's definitions, for frames that branch and carry claims, the IdentifiesAlike checked for one determined law on the branch \"Current math core (fork)\" (its Saying.lean, answering Ren's questions on framing and pairs). See §91 of the integration note."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
   "aliases": [
@@ -410,6 +410,12 @@
       "role": "receipt",
       "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
       "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md",
+      "role": "provenance",
+      "sha256": "5b9475497e67ea0167033d54e29abfea8f409920a6a95ebf8c6899158aa45bbd",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -464,8 +470,8 @@
     }
   ],
   "next_delta": {
-    "zh": "Ren 的判断：配置的同一是否读作相同。",
-    "en": "Ren's judgment whether the identity of configurations reads as likeness."
+    "zh": "在相同已判定的有限框架上按相同计数配置，与 relata-counted-up-to-indiscernibility 相连。",
+    "en": "Counting configurations up to likeness on finite frames where likeness is decided, joined to relata-counted-up-to-indiscernibility."
   },
   "history": [
     {
@@ -583,6 +589,10 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）；Bridge.lean（新增核心分支检验与外围检验之间的互译；原有声明逐字节不变）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z); Bridge.lean (the translation between the core's branching tests and the periphery's tests added; earlier declarations byte-identical)."
+    },
+    {
+      "zh": "2026-10-14，读法（Ren 2026-10-14 同意）：回答 next_delta：配置的同一读作相同，相对于所实现的，作为关系而不是商，并由整个延续固定，所以可超出有限的检验（tests-fix-likeness-where-determined 的规律 9、Unbounded 与规律 12）。next_delta 改为按相同计数配置。主张不变。",
+      "en": "14 October 2026, the reading (Ren agreed on 14 October): answers the next_delta: the identity of configurations reads as likeness, relative to what is realized, carried as a relation rather than a quotient, and fixed by the whole continuation, so that it can outrun finite tests (tests-fix-likeness-where-determined, law 9, Unbounded and law 12). The next_delta is now counting configurations up to likeness. The claim is unchanged."
     }
   ]
 }

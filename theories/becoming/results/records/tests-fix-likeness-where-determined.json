@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-14T08:40:00+00:00",
   "statement": {
-    "zh": "两个框架都在相同之下确定时，线性检验固定相同；两个框架都有限、步与主张已定时，分支检验固定相同，证明是构造性的。分支检验看得到选择在何时作出。",
-    "en": "Linear tests fix likeness where both frames are determined up to likeness, and branching tests fix it where both frames are finite with decided steps and claims, by a constructive proof. A branching test sees when a choice is made."
+    "zh": "两个框架都在相同之下确定时，线性检验固定相同；两个框架都有限、步与主张已定时，分支检验固定相同，证明是构造性的。线性检验所见恰是每个分岔推迟到显现时的相同。",
+    "en": "Linear tests fix likeness where both frames are determined up to likeness, and branching tests fix it where both frames are finite with decided steps and claims, by a constructive proof. Linear tests see exactly likeness with every branching postponed."
   },
   "laws": [
     {
@@ -135,6 +135,18 @@
         "Becoming.EitherThroughout.of_nowhereDecided",
         "Becoming.NowhereDecided.of_em"
       ]
+    },
+    {
+      "zh": "每个分岔推迟到它显现时（一个配置成为一个过程可能已到达的配置之族），两个配置恰在相同时通过同样的线性检验；一个框架恰在它在相同之下确定之处与其推迟相同。所以线性检验看不到的恰是展开在何处分岔：先于第一个动作分岔的框架与之后分岔的框架推迟后相同。",
+      "en": "With every branching postponed until it shows, a configuration becoming the family a course may have reached, two configurations pass the same linear tests exactly where they are alike; a frame is alike to its postponement exactly where it is determined up to likeness. So linear tests miss exactly where the unfolding branches: frames branching at and after the first move are alike once postponed.",
+      "declarations": [
+        "Becoming.Frame.postponed",
+        "Becoming.Frame.postponed_determinedAt",
+        "Becoming.sameTests_iff_postponed_alike",
+        "Becoming.alike_postponed_iff_determined",
+        "Becoming.Choosing.postponed_alike",
+        "Becoming.Choosing.early_not_alike_postponed"
+      ]
     }
   ],
   "hypotheses": [
@@ -192,12 +204,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Histories (receipt 20261013T094743.528770Z) and of Becoming.Likeness (receipt 20261014T100026.593496Z) have empty axiom reports; the current bytes of Becoming.Unfolding are bound by 20261013T204910.042715Z; the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "zh": "Ren 的判断：线性检验看不到的是否读作选择在何时作出。",
-    "en": "Ren's judgment whether what linear tests cannot see reads as when a choice is made."
+    "zh": "外围中的一个模型：规律 9 的原则成立，而“一个已判定的族是否处处不成立已判定”不成立，以表明此原则较弱。",
+    "en": "In the periphery, a model where the principle of law 9 holds and whether a decided family holds nowhere is not decided, showing the principle weaker."
   },
   "correspondence": {
-    "zh": "读法（AI 的，待 Ren）：检验看不到的是选择在何时作出；有分支时，只有分支的检验看得到。外围中像有限的模型的分支检验固定相同（same_iff_bisimilar，经典），经桥接（branching_bisimulation_iff）与核心的互模拟相连；核心中，在有限、已定的框架上它是构造性的，而对每个有限框架判定相同就是排中律。规律 9 的原则按标准名称是较小限定全知原则（LLPO），这里取递减族的形式；规律 11 的形式，即两个已判定存在式的德摩根律，是它的标准等价形式；“一个已判定的族是否处处不成立已判定”按标准名称是弱限定全知原则（WLPO）。见整合文档 §98 与 Becoming.Likeness 一节。",
-    "en": "Reading (the AI's, pending Ren): what tests cannot see is when a choice is made; with branching, only tests that branch see it. In the periphery, branching tests fix likeness for image-finite models (same_iff_bisimilar, classically), joined to the core's bisimulation by the bridge (branching_bisimulation_iff); in the core they fix it constructively on finite decided frames, and deciding likeness for every finite frame is excluded middle. The principle of law 9 is, by its standard name, the lesser limited principle of omniscience (LLPO), here in a form for decreasing families; law 11's form, de Morgan's law for two decided existentials, is a standard equivalent; that whether a decided family holds nowhere is decided is, by its standard name, the weak limited principle of omniscience (WLPO). See §98 of the integration note and its section on Becoming.Likeness."
+    "zh": "读法（AI 的；Ren 2026-10-14 同意此方向）：线性检验看不到的恰是展开在何处分岔（规律 12）；只有分支的检验看得到。外围中像有限的模型的分支检验固定相同（same_iff_bisimilar，经典），经桥接（branching_bisimulation_iff）与核心的互模拟相连；核心中，在有限、已定的框架上它是构造性的，而对每个有限框架判定相同就是排中律。规律 9 的原则按标准名称是较小限定全知原则（LLPO），这里取递减族的形式；规律 11 的形式，即两个已判定存在式的德摩根律，是它的标准等价形式；“一个已判定的族是否处处不成立已判定”按标准名称是弱限定全知原则（WLPO）；Lean 名称保持结构性的，两者都不是前提。见整合文档 §98 与 Becoming.Likeness 一节。",
+    "en": "Reading (the AI's; Ren agreed with its direction on 14 October 2026): what linear tests cannot see is exactly where the unfolding branches (law 12); only tests that branch see it. In the periphery, branching tests fix likeness for image-finite models (same_iff_bisimilar, classically), joined to the core's bisimulation by the bridge (branching_bisimulation_iff); in the core they fix it constructively on finite decided frames, and deciding likeness for every finite frame is excluded middle. The principle of law 9 is, by its standard name, the lesser limited principle of omniscience (LLPO), here in a form for decreasing families; law 11's form, de Morgan's law for two decided existentials, is a standard equivalent; that whether a decided family holds nowhere is decided is, by its standard name, the weak limited principle of omniscience (WLPO); the Lean names stay structural, and neither is a premise. See §98 of the integration note and its section on Becoming.Likeness."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
   "aliases": [
@@ -221,7 +233,9 @@
     "Becoming.OutcomesListed.alike_iff_sameBranchingTests",
     "Becoming.sameBranchingTests_iff_same",
     "Becoming.same_iff_alike_of_finiteDecided",
-    "Becoming.eitherThroughout_iff_eitherNever"
+    "Becoming.eitherThroughout_iff_eitherNever",
+    "Becoming.sameTests_iff_postponed_alike",
+    "Becoming.alike_postponed_iff_determined"
   ],
   "dependencies": [
     {
@@ -416,6 +430,30 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Postponement.lean",
+      "role": "proof",
+      "sha256": "7d7fb8f831c6bcd93788e4b5d8c396720ee7f9d80b708bd93a83a4ec63f268d2",
+      "declarations": [
+        "Becoming.Frame.postponed",
+        "Becoming.Frame.postponed_members",
+        "Becoming.Frame.postponed_determinedAt",
+        "Becoming.Frame.postponed_trace_members",
+        "Becoming.Frame.postponed_trace_inhabited",
+        "Becoming.Frame.postponed_trace_of",
+        "Becoming.Frame.postponed_trace_iff",
+        "Becoming.Frame.postponed_tests_iff",
+        "Becoming.Frame.postponed_trace_one",
+        "Becoming.Frame.postponed_tests_one",
+        "Becoming.sameTests_postponed",
+        "Becoming.sameTests_postponed_iff",
+        "Becoming.sameTests_iff_postponed_alike",
+        "Becoming.DeterminedAt.of_alike_postponed",
+        "Becoming.alike_postponed_iff_determined",
+        "Becoming.Choosing.postponed_alike",
+        "Becoming.Choosing.early_not_alike_postponed"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
       "sha256": "21d83ece99917fe296df0715f61c30cd6c525b77717c300c4696a261b6b0a641",
@@ -501,6 +539,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
       "role": "receipt",
       "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md",
+      "role": "provenance",
+      "sha256": "5b9475497e67ea0167033d54e29abfea8f409920a6a95ebf8c6899158aa45bbd",
       "declarations": []
     }
   ],
@@ -644,6 +688,10 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）；Likeness.lean（新增判定之必需、有限多结果所需的原则及其德摩根形式、无穷多结果的反例；原有陈述不变）。新绑定到本回执的证明：Bridge.lean。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z); Likeness.lean (the decisions shown necessary, the principle for listed outcomes and its de Morgan form, and the counterexample for infinitely many outcomes added; earlier statements unchanged). New proof binding to this receipt: Bridge.lean."
+    },
+    {
+      "zh": "2026-10-14，推迟（Becoming.Postponement；Ren 2026-10-14：“push as far as possible, as strong as possible, generally agree with your direction”）：回答 next_delta。新增规律 12：每个分岔推迟到显现时，同样的线性检验恰是相同（sameTests_iff_postponed_alike），框架恰在在相同之下确定之处与其推迟相同（alike_postponed_iff_determined），Choosing 的两个框架推迟后相同。陈述的末句与对应中的读法由“选择在何时作出”改为“展开在何处分岔”（Ren 同意此方向）；对应注明 Lean 名称保持结构性的、两原则都不是前提；next_delta 改为外围中分开两原则的模型。",
+      "en": "14 October 2026, postponement (Becoming.Postponement; Ren, 14 October: “push as far as possible, as strong as possible, generally agree with your direction”): answers the next_delta. New law 12: with every branching postponed until it shows, passing the same linear tests is likeness (sameTests_iff_postponed_alike), and a frame is alike to its postponement exactly where it is determined up to likeness (alike_postponed_iff_determined); the two Choosing frames are alike once postponed. The statement's last sentence and the reading in the correspondence say “where the unfolding branches” in place of “when a choice is made” (Ren agreed with the direction); the correspondence notes that the Lean names stay structural and neither principle is a premise; the next_delta is now a periphery model separating the two principles."
     }
   ],
   "text_versions": [

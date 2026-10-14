@@ -92,6 +92,7 @@ import Becoming.Copying
 import Becoming.Retrodiction
 import Becoming.CrossSituational
 import Becoming.Likeness
+import Becoming.Postponement
 
 /-!
 # The Theory of Becoming: the formal core
@@ -878,6 +879,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   where they pass the same branching tests, by a constructive proof in which refinement stops
   within the number of pairs of configurations; deciding likeness for every finite frame is
   excluded middle.
+* `Becoming.Postponement` (L3): what linear tests see, with no premise. Postponing every branching
+  until it shows (a configuration becoming the family a course may have reached), two
+  configurations pass the same linear tests exactly where they are alike, and a frame is alike to
+  its postponement exactly where it is determined up to likeness: what linear tests do not see is
+  exactly where the unfolding branches.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

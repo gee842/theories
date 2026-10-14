@@ -7911,6 +7911,52 @@ theorem same_iff_alike_of_finiteDecided {m : ExplanatoryBranching.Model S A O}
 
 **落地（2026-10-14）。** 作为第四批之后队列的第一项落地：核心检查器回执 20261014T100026.593496Z 通过（核心公理报告为空，核心只用前导编译），`Becoming.Likeness` 109 项定理，`Becoming.Bridge` 53 项定理；三项记录对两者的引用已绑定，另七项绑定 Bridge.lean 的记录随之对齐哈希。可判定性清点在同一回执上未变：`Decided` 绑定不被读作可判定族，这一盲点作为单独一项交给 Current math core。
 
+## 121. 线性检验所见：每个分岔推迟到显现时（Becoming.Postponement）；四项读法
+
+2026-10-14。Ren 问 likeness 三项记录的读法与两个原则的名称（[来源](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md)），回答后说“push as far as possible, as strong as possible, generally agree with your direction”。
+
+```text
+Result(s): 改写 tests-fix-likeness-where-determined（新增规律 12；陈述末句、读法、next_delta），
+           determinacy-up-to-likeness 与 configurations-alike-by-relation（读法注明 Ren 同意；next_delta）；不新增记录
+Delta: 新核心模块 Becoming.Postponement（导入 Becoming.Histories；16 项定理／17 项声明）
+Supplied premises / correspondence: 无新前提；族是配置上的谓词，逐成员比较，不用商与外延性
+Evidence: scratch_build 实编（对 main af629fd5 的模块）：每条声明公理报告为空，无警告；不是回执
+Boundary: 只陈述线性检验与推迟；分支检验的情形见 §118–§120
+Integration: §9 新增一行；Becoming.lean 导入与模块说明；check_becoming.py 的核心之列；三项记录
+```
+
+**推迟。** `Frame.postponed F` 的配置是 `F` 的配置之族（`S → Prop`），即一个过程可能已到达者：一个动作从一族走到其成员经此动作的全部结果之族，只要有成员能走这一步；一族实现一个主张，只要有成员实现它。于是没有分岔在它的结果显现之前作出：显现于能走的动作或实现的主张。推迟后的框架不分岔，即处处在相同之下确定（`Frame.postponed_determinedAt`），成员相同的族相同（`Frame.postponed_members`）。
+
+**线性检验即推迟后的相同。** 推迟的框架从一个配置走的过程、过程之后实现的主张，恰是原框架的（`Frame.postponed_trace_one`、`Frame.postponed_tests_one`）；由 §98 的 `alike_iff_sameTests`（两个框架都在相同之下确定时线性检验固定相同）：
+
+```lean
+theorem sameTests_iff_postponed_alike {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'} :
+    SameTests F G s s' ↔ Alike F.postponed G.postponed (Eq s) (Eq s')
+```
+
+**框架恰在不分岔之处与其推迟相同。** 一个配置与其推迟相同，则它在相同之下确定：同一动作的两个结果各与推迟后同一族相同，故彼此相同（`DeterminedAt.of_alike_postponed`）；反之由 `alike_iff_sameTests`：
+
+```lean
+theorem alike_postponed_iff_determined {F : Frame S A C} :
+    (∀ s, Alike F F.postponed s (Eq s)) ↔ ∀ s, DeterminedAt F s
+```
+
+**见证。** `Choosing.late` 与 `Choosing.early` 推迟后相同（`Choosing.postponed_alike`）；`Choosing.early` 与其推迟不同，它第一个动作的两个结果一个能走 `b`、一个不能（`Choosing.early_not_alike_postponed`）。所以线性检验看不到的，恰是展开在何处分岔。
+
+**四项读法（AI 的；Ren 同意此方向）。**
+1. 线性检验看不到的是展开在何处分岔，不说“选择在何时作出”：选择暗示一个在展开之外的选择者。
+2. 相等是最细的登记，即命名（determinacy-up-to-likeness 规律 1）；需要相等的律需要所登记的（名字、过去的记录、描述的记录），不需要展开的另一个事实。保持的历史只在其过去被登记时是新的。
+3. 配置的同一是相同：相对于所实现的；作为关系而不是商；由整个延续固定，所以可超出有限的检验（有限且已定时构造性地固定，只列出每个动作的结果时恰需规律 9 的原则，某个动作有无穷多结果时不固定）。
+4. 规律 9 的原则按标准名称是 LLPO，“一个已判定的族是否处处不成立已判定”是 WLPO；两者都不是前提，Lean 名称保持结构性的，“全知”不进入理论自己的词汇；能观察的一侧（检验恰在某个有限深度的相同不成立处区分配置）不需要任何原则。
+
+**作者反审。**
+1. **新律还是重述？** `sameTests_iff_postponed_alike` 是新的等价：§98 只给出确定时线性检验固定相同的条件与 Choosing 的反例，这里给出线性检验所见的确切刻画。证明简单，是 §98 的 `alike_iff_sameTests` 用在推迟后的框架上，加上过程与主张的对应；它对应自动机理论中的子集构造（迹等价即确定化后的互模拟），这是熟知的，新的是在核心中构造性地陈述并与 likeness 的记录相连。
+2. **“恰”的意义。** 第一条定理说线性检验恰见推迟后的框架；第二条说推迟恰在分岔造成相同之下的差别处改变框架。两者合起来才说“看不到的恰是在何处分岔”；单是第一条只说线性检验与推迟无关。
+3. **读法的范围。** Ren 的同意是对方向的同意，记录写作“Ren 同意此方向”，读法仍标为 AI 的。
+4. **范围。** 不含伦理谓词。
+
+**边界。** 落地运行须在 `check_becoming.py` 中编译与审计 `Becoming.Postponement`，再把 tests-fix-likeness-where-determined 的新证明引用与别名绑定到回执。既有模块的字节不变。
+
 ## 122. 外围证明接入脊柱（整合 I1）：像有限模型上同测即相同（以排中律为假设）、目标唯一、自身之善的第二步即剖面上的 N_rel
 
 2026-10-14。Ren：“push as far as possible, as strong as possible, generally agree with your direction - but i also realize - a lot proofs are probably not integrated”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md)）。整合会话批准“I”一列（整合），由 Current math core 执行；I1 只取证明模块已由脊柱运行编译的记录。
@@ -9233,6 +9279,11 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **One kind of test.** The core's `BranchingTest` and the periphery's `ExplanatoryBranching.Test` have the same five constructors. They translate one to one (`BranchingTest.toTest`, `BranchingTest.ofTest`, both round trips), and a branching test holds in a model's frame exactly where its translation holds in the model (`BranchingTest.holds_toTest`). So passing the same tests is the same in both (`sameBranchingTests_iff_same`).
 - **Constructive on finite decided models.** Where the moves and conditions are listed and both models' frames are finite and decided, passing the periphery's same tests is likeness (`same_iff_alike_of_finiteDecided`): `same_iff_bisimilar` on such models with no classical reasoning.
 - **The classical side stays in the periphery.** For image-finite models the direction from the tests to likeness remains the periphery's `same_iff_bisimilar`, whose proof is classical; the checker requires empty axiom reports in the bridge, so it is not restated there. Landed as the first queue item after batch 4: core receipt 20261014T100026.593496Z (empty core axiom reports, the core compiling from the prelude), `Becoming.Likeness` 109 theorems and `Becoming.Bridge` 53; three records bind them and seven further records that bind Bridge.lean follow its hash. The decidability inventory is unchanged on the receipt: `Decided` binders are not read as a decidability family, a blind spot taken up as a separate item by Current math core.
+
+**What linear tests see: every branching postponed until it shows; four readings (14 October 2026).** Ren asked about the readings of the three likeness records and the names of two principles ([source](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md)), and after the answer said “push as far as possible, as strong as possible, generally agree with your direction”. Section 121 adds the core module `Becoming.Postponement` (16 theorems, no premise).
+- **Postponement.** In `Frame.postponed F` a configuration is a family of configurations, those a course may have reached; a move goes from a family to the family of its members' outcomes by that move, and a family realizes a claim where some member does. The postponed frame does not branch: it is determined up to likeness everywhere (`Frame.postponed_determinedAt`).
+- **Linear tests are likeness with every branching postponed** (`sameTests_iff_postponed_alike`), and **a frame is alike to its postponement exactly where it is determined up to likeness** (`alike_postponed_iff_determined`). The two `Choosing` frames are alike once postponed; the early one is not alike to its postponement. So linear tests miss exactly where the unfolding branches. This is the subset construction of automata theory (trace equivalence as bisimilarity after determinization), stated constructively in the core and joined to the likeness records.
+- **Readings (the AI's; Ren agreed with the direction).** “Where the unfolding branches” in place of “when a choice is made”; equality as the finest registration, naming, so that the laws needing equality need something registered; the identity of configurations as likeness, relative to what is realized, carried as a relation, and fixed by the whole continuation, so that it can outrun finite tests; LLPO and WLPO as the standard names of the two principles, neither a premise, the Lean names structural.
 
 **Peripheral proofs joined to the spine, integration I1 (14 October 2026).** Ren: “a lot proofs are probably not integrated”. Section 122 measures the gap and joins the records whose proof modules the spine run already compiles.
 - **Measure.** `SPINE-INTEGRATION.py` reads the consolidated receipt, classifies each record by where its Lean proof is checked, and counts the theorems outside the run once per file stem and name, older versions of run modules left out. On receipt 20261014T100026.593496Z (138 modules: 95 core, 3 foundation, 4 bridge, 36 inherited), of 203 records on main 146 were stated on the spine by canonical source or alias, 6 had their main proof in an inherited module, 41 outside the run and 10 none; after this section 149, 3, 41 and 10, and the records citing some spine proof go from 148 to 154. Outside the run, live paths hold about 11,000 distinct theorems in about 540 modules, and about 8,000 more appear only in copies and evidence; the largest families are universal-ethics, inquiry-root, deeper, the general-framework top level and connected.
