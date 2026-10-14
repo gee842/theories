@@ -80,6 +80,7 @@ import Becoming.ReferencePlan
 import Becoming.ContinuingRevision
 import Becoming.Description
 import Becoming.Identification
+import Becoming.Learnable
 import Becoming.Assurance
 import Becoming.Segmentation
 import Becoming.Readout
@@ -746,6 +747,16 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   at every step from `N + (2N - 1) * tri N` on, a step its record does not show. In a world a
   list holds, naming configurations by their registered futures for `2N - 1` steps makes sense
   and carries the law, with no quotient. The readings are the AI's.
+* `Becoming.Learnable` (L4): what a learner can learn through its registration, with no
+  premise. Two configurations with the same registered future give every learner the same
+  record, so where their targets differ a claim is right on at most one, and a learner resting
+  on both has targets that agree from some step on. In a world a list holds, some learner rests
+  on a target at every configuration exactly where configurations with the same registered
+  future have targets that agree from some step on. A target read off the registration is
+  learned by the learner over the lasso hypotheses, given nothing, within the bound of
+  identification. Where the law leaves every configuration unchanged, the learnable targets are
+  exactly those that go alike across the registration, `Becoming.Learning`'s lumping. The
+  readings are the AI's.
 * `Becoming.Boundaries` (L4): the axiom decomposed. Along a relation a boundary of a
   formation's self is a region holding it that is closed under the relation; a claim is
   super-true when it holds however the boundary is drawn, sub-true when it holds as drawn

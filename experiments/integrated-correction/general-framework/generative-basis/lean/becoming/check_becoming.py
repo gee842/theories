@@ -60,7 +60,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking", "Becoming.LossMatching",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -1350,6 +1350,16 @@ SCOPE = (
     "on, in a world a list of length N holds too; under a determined law on a list closed under "
     "it, the same registered future is agreement for 2N - 1 steps, and naming by that finite future "
     "makes sense, carries the law and decides likeness. "
+    "Learnable: two configurations with the same registered future give every learner the same "
+    "record at every step, so where their targets differ a claim is right on at most one and, the "
+    "targets decided, refuted on one with the records equal; a learner resting on both has targets "
+    "agreeing from some step on, so none rests on both where they differ at arbitrarily late steps, "
+    "already for two still configurations; where the target is read off the registration, the "
+    "learner by refutation over the lasso hypotheses on registered values rests on it in a world a "
+    "list holds within the identification bound; in a world a list holds some learner rests on the "
+    "target at every configuration exactly where configurations with the same registered future "
+    "have targets agreeing from some step on, targets going alike across the registration are "
+    "learnable, and under a law leaving every configuration unchanged exactly those are. "
     "Boundaries: along a relation a boundary of a formation is a region holding it that is closed "
     "under the relation, the closure the least and the whole the greatest, and the only one where "
     "everything lies within the closure; a claim about a drawn region is super-true when it holds "
