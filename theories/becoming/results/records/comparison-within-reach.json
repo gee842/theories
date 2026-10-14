@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "comparison-within-reach",
   "title": {
     "zh": "所及之内的比较",
@@ -8,15 +8,119 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-14T15:02:52+00:00",
   "statement": {
     "zh": "比较在部分所及之内决定：覆盖部分在每步之前已到达者的任何意义，对有与无部分的水平作公理的比较；任意两个流的比较在其差别所及之内决定。",
     "en": "The comparison is decided within what the part reaches: any significance covering what the part has reached before each step compares the levels with and without it as the axiom does, and the comparison of any two flows is decided within what their difference reaches."
   },
-  "claim": {
-    "zh": "设流平衡，l 是扣留部分时的水平。两个意义从立场 p 在每步对部分此前已到达者一致（一个在部分已到达处不多于另一个时，保留与不增加就从后者传到前者：Flow.Balances.retains_transfer、not_adds_transfer），就对有与无部分的水平作同样的四个比较（Flow.Balances.comparison_local）。对覆盖部分在每步之前已到达者的任何意义，有部分的水平保留无部分的水平上有意义者，恰当前者包含后者，反过来也是；两者都不增加有意义的延续，恰当两者都不超出对方（Flow.Balances.comparison_within_reach）：这正是公理之下的比较（Web.retains_iff_includes、Web.adds_iff_exceeds）。意义可判定时，增加恰是超出（Flow.Balances.adds_iff_exceeds_of_decidable）；对每个意义，超出给出双重否定之下的增加（Flow.Balances.not_not_adds_of_exceeds）。以对影响封闭、含部分成员的区域为界的意义，对这个部分作包含那样的比较，不用公理（Flow.Balances.closed_comparison）；所及闭包是含中心的最小这样的区域，系统也是一个。两个起始相同的平衡的流，水平在某步不同之处，两者在该条件上的取用或给予在更早的步不同（Flow.DiffersBefore、Flow.Balances.differs_before）；覆盖这一差别在每步之前所到达者的任何意义，对两个流作公理的比较（Flow.Balances.comparison_within_difference）。见证：Clearing 中从清除者的立场，以各系统为界的意义判它的部分失去栖居者，以各影响闭包为界判它保留（Clearing.system_counts_dweller）；以各所及闭包为界的意义不是公理，却与公理一样判这一部分失去栖居者（Clearing.reach_counts_dweller）；来源给出清除者所取，其余交换不变时没有水平平衡扣留来源的流，这一比较不存在（Clearing.no_levels_without_source）。Margin 中部分到达形成的影响闭包之外，有它时的水平包含无它时的，每个意义都保留：覆盖足够而不必要（Margin.reach_without_misjudgment）。营养级联 Trophic 中，狼群的部分不到达森林（Trophic.wolves_unreached），其余交换固定时森林每步有与无它同样被接纳，部分缩小，关闭鹿（Trophic.deer_without_wolves），公理之下从任何立场都不保留（Trophic.mediated_unregistered）；对照鹿有回应的流，同一取用是混合的，公理之下两条水平路径都不保留对方上有意义者（Trophic.responsive_mixed）；狼群的部分不到达森林，而两个流的差别在第 3 步之前到达它（Trophic.difference_reaches_forest）；远处形成的系统只含它自己（Trophic.far_system），从它的立场，以各系统为界的意义判远处形成与狼群的联合部分保留，公理之下它失去鹿（Trophic.mixed_part）。一般定理不用公理；公理 Unrestricted 只作为三个见证的假设出现。",
-    "en": "Let the flow balance and l be the levels with a part withheld. Two significances that agree, from standpoint p, at each step on what the part has reached before it (retaining and not adding carry over from one to another that has no more significance where the part has reached: Flow.Balances.retains_transfer, not_adds_transfer) make the same four comparisons of the levels with and without the part (Flow.Balances.comparison_local). For any significance covering what the part has reached before each step, the levels with the part retain what has significance along those without it exactly when they include them, and the reverse, and neither adds a continuation with significance exactly when neither exceeds the other (Flow.Balances.comparison_within_reach): the comparisons under the axiom (Web.retains_iff_includes, Web.adds_iff_exceeds). Where significance is decidable, adding is exceeding (Flow.Balances.adds_iff_exceeds_of_decidable); for every significance, exceeding gives adding up to double negation (Flow.Balances.not_not_adds_of_exceeds). Significance bounded by a region closed under affecting that holds the members of a part compares the part as inclusion does, with no axiom (Flow.Balances.closed_comparison); the reach closure is the least such region holding a center, and the system is one. Where the levels of two balanced flows from one start differ at a step, their taking from or giving to that condition differed at an earlier step (Flow.DiffersBefore, Flow.Balances.differs_before); any significance covering what the difference has reached before each step compares the two flows as the axiom does (Flow.Balances.comparison_within_difference). Witnesses: in Clearing, from the clearer's standpoint, significance bounded by each system judges the clearer's part to lose the dweller, and bounded by each influence closure to retain (Clearing.system_counts_dweller); significance bounded by each reach closure is not the axiom, yet judges the part to lose the dweller as the axiom does (Clearing.reach_counts_dweller); the source gives what the clearer takes, and with the rest of the exchange fixed no levels balance the flow without the source's part, so that comparison does not exist (Clearing.no_levels_without_source). In Margin a part reaches beyond a formation's influence closure while the levels with it include those without, so every significance retains: covering is enough and not needed (Margin.reach_without_misjudgment). In Trophic, a trophic cascade, the wolves' part does not reach the forest (Trophic.wolves_unreached); with the rest of the exchange fixed the forest is admitted alike with and without it at every step, and the part narrows, closing the deer (Trophic.deer_without_wolves), so under the axiom it does not retain from any standpoint (Trophic.mediated_unregistered); against the flow in which the deer respond the same taking is mixed, and under the axiom neither level path retains along the other (Trophic.responsive_mixed); the wolves' part does not reach the forest while the difference between the two flows reaches it before the third step (Trophic.difference_reaches_forest); the far formation's system holds only itself (Trophic.far_system), and from its standpoint significance bounded by each system judges the joint part of the far formation and the wolves to retain, while under the axiom the part loses the deer (Trophic.mixed_part). The general theorems use no axiom; the axiom Unrestricted appears only as a hypothesis of three witnesses."
-  },
+  "laws": [
+    {
+      "zh": "设流平衡，l 是扣留部分时的水平。两个意义从立场 p 在每步对部分此前已到达者一致，就对有与无部分的水平作同样的四个比较：一个在部分已到达处不多于另一个时，保留与不增加就从后者传到前者。",
+      "en": "Let the flow balance and l be the levels with a part withheld. Two significances that agree, from standpoint p, at each step on what the part has reached before it make the same four comparisons of the levels with and without the part: retaining and not adding carry over from one to another that has no more significance where the part has reached.",
+      "declarations": [
+        "Becoming.Flow.ReachesBefore",
+        "Becoming.Web.Retains",
+        "Becoming.Web.Adds",
+        "Becoming.Flow.Balances.retains_transfer",
+        "Becoming.Flow.Balances.not_adds_transfer",
+        "Becoming.Flow.Balances.comparison_local"
+      ]
+    },
+    {
+      "zh": "对覆盖部分在每步之前已到达者的任何意义，有部分的水平保留无部分的水平上有意义者，恰当前者包含后者，反过来也是；两者都不增加有意义的延续，恰当两者都不超出对方：这正是公理之下的比较。",
+      "en": "For any significance covering what the part has reached before each step, the levels with the part retain what has significance along those without it exactly when they include them, and the reverse, and neither adds a continuation with significance exactly when neither exceeds the other: the comparisons under the axiom.",
+      "declarations": [
+        "Becoming.Web.Includes",
+        "Becoming.Web.Exceeds",
+        "Becoming.Flow.Balances.comparison_within_reach",
+        "Becoming.Web.retains_iff_includes",
+        "Becoming.Web.adds_iff_exceeds"
+      ]
+    },
+    {
+      "zh": "对这样覆盖的意义，意义可判定时，增加恰是超出；对每个覆盖的意义，超出给出双重否定之下的增加。",
+      "en": "For such a covering significance, adding is exceeding where the significance is decidable; for every covering significance, exceeding gives adding up to double negation.",
+      "declarations": [
+        "Becoming.Flow.Balances.adds_iff_exceeds_of_decidable",
+        "Becoming.Flow.Balances.not_not_adds_of_exceeds"
+      ]
+    },
+    {
+      "zh": "不用公理，以对影响封闭、含部分成员的区域为界的意义，对这个部分作包含那样的比较；所及闭包是含中心的最小这样的区域，系统也是一个。",
+      "en": "With no axiom, significance bounded by a region closed under affecting that holds the members of a part compares the part as inclusion does; the reach closure is the least such region holding a center, and the system is one.",
+      "declarations": [
+        "Becoming.Flow.Balances.closed_comparison",
+        "Becoming.bounded",
+        "Becoming.Flow.WithinReach",
+        "Becoming.closedUnder_withinClosure",
+        "Becoming.Flow.withinSystem_closed"
+      ]
+    },
+    {
+      "zh": "两个起始相同的平衡的流，水平在某步不同之处，两者在该条件上的取用或给予在更早的步不同；覆盖这一差别在每步之前所到达者的任何意义，对两个流作公理的比较。",
+      "en": "Where the levels of two balanced flows from one start differ at a step, their taking from or giving to that condition differed at an earlier step; any significance covering what the difference has reached before each step compares the two flows as the axiom does.",
+      "declarations": [
+        "Becoming.Flow.DiffersBefore",
+        "Becoming.Flow.Balances.differs_before",
+        "Becoming.Flow.Balances.comparison_within_difference"
+      ]
+    },
+    {
+      "zh": "Clearing 中从清除者的立场，以各系统为界的意义判它的部分失去一个有意义的延续（栖居者的），以各影响闭包为界判它保留；以各所及闭包为界的意义不是公理，却与公理一样判这一部分：恰在包含成立处保留，所以也失去它。",
+      "en": "In Clearing, from the clearer's standpoint, significance bounded by each system judges the clearer's part to lose a continuation with significance (the dweller's) and bounded by each influence closure to retain; significance bounded by each reach closure is not the axiom, yet judges the part as the axiom does, retaining exactly where inclusion holds, so losing it too.",
+      "declarations": [
+        "Becoming.Clearing.clearerPart",
+        "Becoming.Clearing.system_counts_dweller",
+        "Becoming.Clearing.reach_counts_dweller"
+      ]
+    },
+    {
+      "zh": "Clearing 中来源给出清除者所取，其余交换不变时没有水平平衡扣留来源的流，这一比较不存在。",
+      "en": "In Clearing the source gives what the clearer takes, and with the rest of the exchange fixed no levels balance the flow without the source's part, so that comparison does not exist.",
+      "declarations": [
+        "Becoming.Clearing.sourcePart",
+        "Becoming.Clearing.no_levels_without_source"
+      ]
+    },
+    {
+      "zh": "Margin 中取用者的部分到达取用者影响闭包之外的形成，而有与无它的水平互相包含，所以每个意义都双向保留：覆盖部分所到达者足够而不必要。",
+      "en": "In Margin the taker's part reaches a formation beyond the taker's influence closure while the levels with and without the part include each other, so every significance retains both ways: covering what a part reaches is enough and not needed.",
+      "declarations": [
+        "Becoming.Margin.flow",
+        "Becoming.Margin.web",
+        "Becoming.Margin.takerPart",
+        "Becoming.Margin.reach_without_misjudgment"
+      ]
+    },
+    {
+      "zh": "营养级联 Trophic 中，狼群的部分不到达森林；其余交换固定时森林每步有与无它同样被接纳，部分缩小，关闭鹿，公理之下从任何立场都不保留。",
+      "en": "In Trophic, a trophic cascade, the wolves' part does not reach the forest; with the rest of the exchange fixed the forest is admitted alike with and without it at every step, and the part narrows, closing the deer, so under the axiom it does not retain from any standpoint.",
+      "declarations": [
+        "Becoming.Trophic.wolvesPart",
+        "Becoming.Trophic.withoutWolves",
+        "Becoming.Trophic.wolves_unreached",
+        "Becoming.Trophic.deer_without_wolves",
+        "Becoming.Trophic.mediated_unregistered"
+      ]
+    },
+    {
+      "zh": "Trophic 中对照鹿有回应的流，同一取用是混合的，公理之下两条水平路径都不保留对方上有意义者；狼群的部分不到达森林，而两个流的差别在第 3 步之前到达它。",
+      "en": "In Trophic, against the flow in which the deer respond the same taking is mixed, and under the axiom neither level path retains along the other; the wolves' part does not reach the forest while the difference between the two flows reaches it before the third step.",
+      "declarations": [
+        "Becoming.Trophic.responsive_mixed",
+        "Becoming.Trophic.difference_reaches_forest"
+      ]
+    },
+    {
+      "zh": "Trophic 中远处形成的系统只含它自己；从它的立场，以各系统为界的意义判远处形成与狼群的联合部分保留，公理之下它不保留（失去鹿）。",
+      "en": "In Trophic the far formation's system holds only itself, and from its standpoint significance bounded by each system judges the joint part of the far formation and the wolves to retain, while under the axiom the part does not retain (it loses the deer).",
+      "declarations": [
+        "Becoming.Trophic.farWolvesPart",
+        "Becoming.Trophic.far_system",
+        "Becoming.Trophic.mixed_part"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "一般定理的前提只有平衡（Flow.Balances）；部分是判定的形成家族。",
@@ -27,8 +131,8 @@
       "en": "Comparisons with and without a part use withheld levels (Flow.WithheldLevels): the levels with the part withheld and the rest of the exchange unchanged, a choice of the representation; a comparison of two flows is given the second flow."
     },
     {
-      "zh": "公理 Unrestricted 只作为三个见证的假设出现（Trophic.mediated_unregistered、responsive_mixed、mixed_part）；把它读作 Ren 的公理是 AI 的读法，待 Ren。",
-      "en": "The axiom Unrestricted appears only as a hypothesis of three witnesses (Trophic.mediated_unregistered, responsive_mixed, mixed_part); reading it as Ren's axiom is the AI's reading, pending Ren."
+      "zh": "一般定理不用公理；公理 Unrestricted 只作为三个见证的假设出现（Trophic.mediated_unregistered、responsive_mixed、mixed_part）；把它读作 Ren 的公理是 AI 的读法，待 Ren。",
+      "en": "The general theorems use no axiom; the axiom Unrestricted appears only as a hypothesis of three witnesses (Trophic.mediated_unregistered, responsive_mixed, mixed_part); reading it as Ren's axiom is the AI's reading, pending Ren."
     },
     {
       "zh": "Trophic、Clearing 与 Margin 的结论：见证的流、网与部分（Trophic.wolvesPart、Trophic.withoutWolves、Trophic.farWolvesPart、Clearing.sourcePart、Margin.flow、Margin.web、Margin.takerPart）。",
@@ -39,9 +143,54 @@
       "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "意义本身仍是给定的。",
+      "en": "Significance itself stays supplied.",
+      "kind": "scope"
+    },
+    {
+      "zh": "对每个覆盖的意义，正面形式的增加比较只在意义可判定处推出，一般只到双重否定。",
+      "en": "The adding comparisons in positive form follow for every covering significance only where it is decidable, and otherwise up to double negation.",
+      "kind": "scope",
+      "witness": "Becoming.Flow.Balances.not_not_adds_of_exceeds"
+    },
+    {
+      "zh": "以扣留水平的比较固定其余交换；他者有回应的比较须给出第二个流，见证中回应的流就是给出的。",
+      "en": "The comparison by withheld levels keeps the rest of the exchange fixed; a comparison in which others respond needs the second flow supplied, as the responding flows of the witnesses are.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不推出中心知道其所及。",
+      "en": "Does not show that a center knows what it reaches.",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "detail": {
+        "zh": "其余交换固定时，经他者回应的效果不在比较中被识（Trophic.mediated_unregistered）；对照有回应的流，比较不同（Trophic.responsive_mixed）；部分给出他者所取时，比较可以不存在（Clearing.no_levels_without_source）。",
+        "en": "With the rest of the exchange fixed, effects through others' responses do not register in the comparison (Trophic.mediated_unregistered); against a responding flow the comparison differs (Trophic.responsive_mixed); where a part gives what others take, the comparison need not exist (Clearing.no_levels_without_source)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-evaluation",
+    "discrete-steps",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z）：Becoming.Feedback 的定理公理报告为空，公理 Unrestricted 只作为假设出现，不是 Lean 公理；检查器并核对核心纯净。作者反审见整合文档；整合之前经第十六次独立审查，其处理之后的文本尚未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z): the theorems of Becoming.Feedback have empty axiom reports, the axiom Unrestricted entering only as a hypothesis, not as a Lean axiom; core purity verified. Author counterreview in the integration note; the sixteenth independent review read it before integration, and the text after its treatment is not yet independently reviewed."
+  },
+  "next_delta": {
+    "zh": "给出不另给“其余只经其识回应”这一前提、由动力学给出回应的比较（在该前提下，comparison-where-the-rest-responds 把比较定在回应所及之内）；给出中心怎样表示其所及。较弱版本是否读作覆盖中心所及的意义，由 Ren 判断。",
+    "en": "Give a comparison whose responses the dynamics give without supplying that the rest responds only through its registration (under that premise comparison-where-the-rest-responds decides it within the responsive reach); model how a center represents what it reaches. Whether the weaker version reads as significance covering what a center reaches is Ren's to judge."
+  },
   "correspondence": {
-    "zh": "Ren 的长远目标：“I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”；Ren 要求“pursue the strongest claims and complete proof”。Ren 的层级：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”。作者的读法（AI 论证，待 Ren）：影响闭包读一个形成自身的反馈在效果经他者的支持与活动传递时所能识的；所及闭包读 Ren 中间的“the system that one is in”（P40 把供给闭包读作所在系统，这一读法撤回）；系统（对共享条件的闭包）界定每个效果，却不读那一层级：一个共同条件就使它成为整体，系统划分形成，没有嵌套与中心；“situational awareness”读作中心知道其部分在反馈之外所到达的。名称（ClosedUnder、WithinClosure、AffectedBy、WithinInfluence、Affects、WithinReach、TakesPart、Shares、WithinSystem、Reaches、ReachesBefore、DiffersBefore、Trophic 等）是 AI 按 Ren 的命名准则所选；营养级联是生态学用语。",
-    "en": "Ren's long-term objectives: “I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”; Ren asked to “pursue the strongest claims and complete proof”. Ren's levels: “i think it should be the whole, and a weaker version is within the system that one is in, then the self”. The author's reading (an AI argument, pending Ren): the influence closure reads what a formation's own feedback can register once effects pass through the support and activity of others; the reach closure reads Ren's intermediate “the system that one is in” (P40 read the feeding closure as the system one is in; that reading is withdrawn); the system, the closure under sharing a condition, bounds every effect but does not read that level: one common condition makes it the whole, and systems partition the formations, with no nesting and no center; “situational awareness” reads as a center knowing what its part reaches beyond its feedback. The names (ClosedUnder, WithinClosure, AffectedBy, WithinInfluence, Affects, WithinReach, TakesPart, Shares, WithinSystem, Reaches, ReachesBefore, DiffersBefore, Trophic and others) are the AI's, chosen by Ren's naming standard; trophic cascade is the ecological term."
+    "zh": "Ren 的长远目标：“I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”；Ren 要求“pursue the strongest claims and complete proof”。Ren 的层级：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”。作者的读法（AI 论证，待 Ren）：影响闭包读一个形成自身的反馈在效果经他者的支持与活动传递时所能识的；所及闭包读 Ren 中间的“the system that one is in”（供给闭包曾被读作所在系统，这一读法已撤回）；系统（对共享条件的闭包）界定每个效果，却不读那一层级：一个共同条件就使它成为整体，系统划分形成，没有嵌套与中心；“situational awareness”读作中心知道其部分在反馈之外所到达的。名称（ClosedUnder、WithinClosure、AffectedBy、WithinInfluence、Affects、WithinReach、TakesPart、Shares、WithinSystem、Reaches、ReachesBefore、DiffersBefore、Trophic 等）是 AI 按 Ren 的命名准则所选；营养级联是生态学用语。",
+    "en": "Ren's long-term objectives: “I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”; Ren asked to “pursue the strongest claims and complete proof”. Ren's levels: “i think it should be the whole, and a weaker version is within the system that one is in, then the self”. The author's reading (an AI argument, pending Ren): the influence closure reads what a formation's own feedback can register once effects pass through the support and activity of others; the reach closure reads Ren's intermediate “the system that one is in” (the feeding closure was earlier read as the system one is in; that reading is withdrawn); the system, the closure under sharing a condition, bounds every effect but does not read that level: one common condition makes it the whole, and systems partition the formations, with no nesting and no center; “situational awareness” reads as a center knowing what its part reaches beyond its feedback. The names (ClosedUnder, WithinClosure, AffectedBy, WithinInfluence, Affects, WithinReach, TakesPart, Shares, WithinSystem, Reaches, ReachesBefore, DiffersBefore, Trophic and others) are the AI's, chosen by Ren's naming standard; trophic cascade is the ecological term."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
   "aliases": [
@@ -223,23 +372,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "detail": {
-        "zh": "其余交换固定时，经他者回应的效果不在比较中被识（Trophic.mediated_unregistered）；对照有回应的流，比较不同（Trophic.responsive_mixed）；部分给出他者所取时，比较可以不存在（Clearing.no_levels_without_source）。",
-        "en": "With the rest of the exchange fixed, effects through others' responses do not register in the comparison (Trophic.mediated_unregistered); against a responding flow the comparison differs (Trophic.responsive_mixed); where a part gives what others take, the comparison need not exist (Clearing.no_levels_without_source)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "意义本身仍是给定的；对每个意义正面形式的增加比较只在意义可判定处推出，一般只到双重否定；以扣留水平的比较固定其余交换，他者有回应的比较须给出第二个流，回应的流在见证中是给出的；中心知道其所及不推出；读法与名称是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "Significance itself stays supplied; the adding comparisons in positive form follow for every significance only where it is decidable, and otherwise up to double negation; the comparison by withheld levels keeps the rest of the exchange fixed, a comparison in which others respond needs the second flow supplied, and responding flows are supplied in the witnesses; that a center knows what it reaches is not derived; the readings and names are the AI's, pending Ren; contains no ethical predicate."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Feedback 的 100 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。公理 Unrestricted 只作为假设出现，不是 Lean 公理。作者反审见整合文档 §61；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 100 theorems of Becoming.Feedback all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The axiom Unrestricted appears only as a hypothesis, not as a Lean axiom. The author's counterreview is in §61 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
@@ -374,10 +506,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "不另给“其余只经其识回应”这一前提、由动力学给出回应的比较（在该前提下，P65 把比较定在回应所及之内，见 comparison-where-the-rest-responds）；中心怎样表示其所及；Ren 的判断：较弱版本是否读作覆盖中心所及的意义。",
-    "en": "A comparison whose responses the dynamics give without supplying that the rest responds only through its registration (under that premise P65 decides it within the responsive reach, comparison-where-the-rest-responds); how a center represents what it reaches; Ren's judgment whether the weaker version reads as significance covering what a center reaches."
-  },
   "history": [
     {
       "zh": "2026-10-11 P42：新增，按 Ren“continue, let's pursue the strongest claims and complete proof, i think you see the right direction”；统一计划 P42；见整合文档 §61；整合之前经第十六次独立审查，处理见 §62.1。",
@@ -542,6 +670,20 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（第十七次审查后更正 §9 各行（Continuation“共同净给予”；LossMatching 的方向；Retrodiction 的两值与两端读数相同；“受支持的完成”）；新增 Postponement 行；总数改据新回执；整合 I1 后的 Likeness 与 Bridge 行）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述与反例不变；主张拆为 11 条规律，各按其定理的条件陈述（可判定与双重否定的形式针对覆盖的意义，这是定理的前提；Clearing 与远处形成的见证按定理陈述所失去的延续，括注其证明给出的栖居者与鹿）；限制分入“未表明”、通用边界与前提；主张中“一般定理不用公理”并入前提 3，因而不引用 no-ethical-premise（三个见证以公理为假设）；对应与下一步中的轮次标签 P40、P65 移出（保留在沿革与快照）。前提、状态、证明绑定与来源哈希均未改变。每句旧文本的去向见迁移对照表 [comparison-within-reach.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/comparison-within-reach.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement and counterexample are kept; the claim was split into 11 laws, each stated with its theorem's conditions (the decidable and double-negation forms are for a covering significance, as the theorems ask; the Clearing and far-formation witnesses state the lost continuation as their theorems do, naming in parentheses the dweller and the deer that their proofs exhibit); limitations went to does-not-show items, standard boundaries and the hypotheses; the claim's sentence that the general theorems use no axiom joined hypothesis 3, so the no-ethical-premise key is not cited (three witnesses take the axiom as a hypothesis); the round labels P40 and P65 left the correspondence and next step (they stay in history and the snapshot). No premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [comparison-within-reach.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/comparison-within-reach.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/19132902842e1dd6/comparison-within-reach.json",
+      "sha256": "19132902842e1dd68c2309ac7226005077490399c9792b739f82eb03c505db06",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }

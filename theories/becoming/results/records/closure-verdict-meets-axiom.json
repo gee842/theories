@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "closure-verdict-meets-axiom",
   "title": {
     "zh": "闭包内的判断与公理相合之处",
@@ -8,15 +8,53 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-14T15:05:38+00:00",
   "statement": {
     "zh": "以整体为界的意义就是公理。另一条路径接纳的每个形成都在区域之内或被第一条接纳之处，以区域为界的判断就是公理的判断，所以供给闭包是整体时总是；在清除者的网中两者分开。",
     "en": "Significance bounded by the whole is the axiom. Wherever every formation the other path admits lies in the region or is admitted by the first, the verdict bounded by the region is the axiom's, so always where the feeding closure is the whole; in the clearer's web the two part."
   },
-  "claim": {
-    "zh": "以整体为界的意义（各立场的区域都是整体）就是公理 Unrestricted（bounded_whole）。设区域族 region、立场 p 与水平路径 l、l'，并设 l' 在每一步接纳的每个形成都在 p 的区域之内、或被 l 在该步接纳（covers）。则以区域为界的意义从 p 保留 l' 上的有意义者，恰当 l 包含 l'（Web.retains_bounded_iff_includes）；公理之下，这又恰当 l 从 p 保留 l' 上的有意义者（Web.retains_bounded_iff_retains），即两个判断一致。一个形成 p 的供给闭包是整体时，覆盖条件总成立，所以公理之下，以供给闭包为界的判断在每个比较上都是公理的判断（Flow.within_closure_iff_retains）；Overshoot 中从任一立场都是这样（Overshoot.within_closure_iff_retains）。在 Clearing 中两者分开：设 l 是扣留清除者的部分后的水平（Flow.WithheldLevels）；以供给闭包为界，从清除者的立场，有其部分的水平保留 l 上的有意义者；公理之下，从每个立场都不保留；从栖居者的立场、在栖居者自己的闭包内，l 增加有其部分的水平所缺的（Clearing.within_closure_yet_loses）。不用 Lean 公理；公理只作为比较定理的假设出现。",
-    "en": "Significance bounded by the whole (each standpoint's region the whole) is the axiom Unrestricted (bounded_whole). Given regions region, a standpoint p and level paths l and l', suppose every formation l' admits at a step lies in p's region or is admitted by l at that step (covers). Then significance bounded by the regions retains from p what has significance along l' exactly when l includes l' (Web.retains_bounded_iff_includes); under the axiom this is exactly when l retains from p what has significance along l' (Web.retains_bounded_iff_retains), so the two verdicts agree. Where a formation p's feeding closure is the whole, the covering condition always holds, so under the axiom the verdict bounded by the feeding closure is the axiom's on every comparison (Flow.within_closure_iff_retains); in Overshoot this holds from either standpoint (Overshoot.within_closure_iff_retains). In Clearing the two part: let l be the levels with the clearer's part withheld (Flow.WithheldLevels); bounded by the feeding closure, from the clearer's standpoint the levels with its part retain what has significance along l; under the axiom they do not, from any standpoint; and from the dweller's standpoint, within the dweller's own closure, l adds what the levels with the part lack (Clearing.within_closure_yet_loses). No Lean axiom is used; the axiom appears only as a hypothesis of the comparison theorems."
-  },
+  "laws": [
+    {
+      "zh": "以整体为界的意义（各立场的区域都是整体）就是公理 Unrestricted。",
+      "en": "Significance bounded by the whole, each standpoint's region being the whole, is the axiom Unrestricted.",
+      "declarations": [
+        "Becoming.Unrestricted",
+        "Becoming.bounded",
+        "Becoming.bounded_whole"
+      ]
+    },
+    {
+      "zh": "设区域族、立场 p 与水平路径 l、l'，并设 l' 在每一步接纳的每个形成都在 p 的区域之内、或被 l 在该步接纳。则以区域为界的意义从 p 保留 l' 上的有意义者，恰当 l 包含 l'；公理之下，这又恰当 l 从 p 保留 l' 上的有意义者，即两个判断一致。",
+      "en": "Given regions, a standpoint p and level paths l and l', suppose every formation l' admits at a step lies in p's region or is admitted by l at that step. Then significance bounded by the regions retains from p what has significance along l' exactly when l includes l'; under the axiom this is exactly when l retains from p what has significance along l', so the two verdicts agree.",
+      "declarations": [
+        "Becoming.Web.Admits",
+        "Becoming.Web.Retains",
+        "Becoming.Web.Includes",
+        "Becoming.Web.retains_bounded_iff_includes",
+        "Becoming.Web.retains_bounded_iff_retains"
+      ]
+    },
+    {
+      "zh": "一个形成 p 的供给闭包是整体时，覆盖条件总成立，所以公理之下，以供给闭包为界的判断在每个比较上都是公理的判断；Overshoot 中两者在第一步互相供给对方的条件，任一闭包都是整体，从任一立场都是这样。",
+      "en": "Where a formation p's feeding closure is the whole, the covering condition always holds, so under the axiom the verdict bounded by the feeding closure is the axiom's on every comparison; in Overshoot, where each feeds the other's condition at the first step so that either closure is the whole, this holds from either standpoint.",
+      "declarations": [
+        "Becoming.Flow.WithinFeeding",
+        "Becoming.Flow.within_closure_iff_retains",
+        "Becoming.Overshoot.closure_whole",
+        "Becoming.Overshoot.within_closure_iff_retains"
+      ]
+    },
+    {
+      "zh": "在 Clearing 中两者分开。设 l 是扣留清除者的部分后的水平；以供给闭包为界，从清除者的立场，有其部分的水平保留 l 上的有意义者；公理之下，从每个立场都不保留；从栖居者的立场、在栖居者自己的闭包内，l 增加有其部分的水平所缺的。",
+      "en": "In Clearing the two part. With l the levels with the clearer's part withheld, bounded by the feeding closure, from the clearer's standpoint the levels with its part retain what has significance along l; under the axiom they do not, from any standpoint; and from the dweller's standpoint, within the dweller's own closure, l adds what the levels with the part lack.",
+      "declarations": [
+        "Becoming.Flow.WithheldLevels",
+        "Becoming.Clearing.clearerPart",
+        "Becoming.Web.Adds",
+        "Becoming.Clearing.within_closure_yet_loses"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "公理：Unrestricted sig，即从每个立场，任何东西在每一步的延续都有意义（对指标 (p, t, f) 的边界中立）。它是比较定理的假设，不被证明；把它读作 Ren 的公理是 AI 的读法，待 Ren。",
@@ -35,9 +73,63 @@
       "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "覆盖条件是两个判断一致的充分条件，不是必要条件。",
+      "en": "The covering condition is sufficient for the two verdicts to agree, not necessary.",
+      "kind": "converse",
+      "witness": "Becoming.Web.retains_bounded_iff_retains"
+    },
+    {
+      "zh": "只比较被接纳的形成，每一步。",
+      "en": "Only formations admitted are compared, step by step.",
+      "kind": "scope"
+    },
+    {
+      "zh": "路线 (b) 不主张根据。",
+      "en": "Route (b) claims no warrant.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "整体之间的选择没有建模。",
+      "en": "Selection between wholes is not modelled.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不模型中心怎样表示；“中心以整体为所表示的边界”是读法。",
+      "en": "How a center represents is not modelled; “a center whose represented boundary is the whole” is a reading.",
+      "kind": "scope"
+    },
+    {
+      "en": "G0 follows from Part II's axiom and, since Ren folded it, is no longer an axiom.",
+      "zh": "G0 由第二部分的公理推出；Ren 已把它折叠，它不再是公理。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "detail": {
+        "zh": "Clearing 中清除者的闭包内的判断保留，公理之下失去栖居者（Clearing.within_closure_yet_loses）。",
+        "en": "In Clearing the verdict within the clearer's closure retains, while under the axiom the dweller is lost (Clearing.within_closure_yet_loses)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "discrete-steps",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z）：Becoming.Interdependence 的定理公理报告为空，公理 Unrestricted 是比较定理的假设，不是 Lean 公理；检查器并核对核心纯净。作者反审见整合文档；尚未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z): the theorems of Becoming.Interdependence have empty axiom reports, the axiom Unrestricted being a hypothesis of the comparison theorems, not a Lean axiom; core purity verified. Author counterreview in the integration note; not yet independently reviewed."
+  },
+  "next_delta": {
+    "zh": "由 Ren 判断：路线 (b) 到达自身及其所依存的，是否足够，还是采用第二部分的公理；整体对自身的实现怎样读（以整体为所表示的边界，bounded_whole）。给出按步的闭包。",
+    "en": "Ren judges whether route (b), reaching the self and what it depends on, suffices or Part II's axiom is adopted, and how the whole realizing itself is read (a represented boundary that is the whole, bounded_whole). Give the closures step by step."
+  },
   "correspondence": {
-    "zh": "路线 (b) 是 AI 的表述，Ren 引用了它：“No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren 选定：“let's aim for a first, then try to archive b”。作者的读法（AI 论证，待 Ren）：供给闭包读“what it actually depends on”。P40 也把它读作 Ren 的“the system that one is in”，作为从一个中心沿依存到达的系统；这一读法由 P42 撤回：供给闭包在影响闭包之内，影响闭包与所及闭包都在系统之内，为那一层级提供的是所及闭包（见 levels-of-closure，AI 的读法，待 Ren）。名称（FedClosed、WithinFeeding、Overshoot 等）是 AI 按 Ren 的命名准则所选。Ren 对层级写道：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”；又写道：“there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”。作者的读法（AI 论证，待 Ren）：路线 (b) 到达自身及其所依存的（P42 更正：原写“自身与所在的系统”），只在整体是一个供给闭包时到达整体，那时它的判断就是公理的判断；公理所加的，是那些损失返回不到任何人的延续的意义；以整体为所表示边界的中心，持有的就是公理的意义（bounded_whole）。",
-    "en": "Route (b) is the AI's wording, which Ren quoted: “No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren chose: “let's aim for a first, then try to archive b”. The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”. P40 also read it as Ren's “the system that one is in”, the system reached from a center along dependence; P42 withdraws that reading: the feeding closure lies within the influence closure, the influence and reach closures lie within the system, and the reach closure is offered for that level (see levels-of-closure; the AI's reading, pending Ren). The names (FedClosed, WithinFeeding, Overshoot and others) are the AI's, chosen by Ren's naming standard. Of the levels Ren wrote: “i think it should be the whole, and a weaker version is within the system that one is in, then the self”; and: “there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”. The author's reading (an AI argument, pending Ren): route (b) reaches the self and what it depends on (P42 correction: it said “the self and the system one is in”), and the whole only where the whole is one feeding closure, where its verdict is the axiom's; what the axiom adds is significance for continuations whose loss returns to no one; a center whose represented boundary is the whole holds the axiom's significance (bounded_whole)."
+    "zh": "路线 (b) 是 AI 的表述，Ren 引用了它：“No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren 选定：“let's aim for a first, then try to archive b”。作者的读法（AI 论证，待 Ren）：供给闭包读“what it actually depends on”。它也曾被读作 Ren 的“the system that one is in”，作为从一个中心沿依存到达的系统；这一读法已撤回：供给闭包在影响闭包之内，影响闭包与所及闭包都在系统之内，为那一层级提供的是所及闭包（见 levels-of-closure，AI 的读法，待 Ren）。名称（FedClosed、WithinFeeding、Overshoot 等）是 AI 按 Ren 的命名准则所选。Ren 对层级写道：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”；又写道：“there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”。作者的读法（AI 论证，待 Ren）：路线 (b) 到达自身及其所依存的（更正自“自身与所在的系统”），只在整体是一个供给闭包时到达整体，那时它的判断就是公理的判断；公理所加的，是那些损失返回不到任何人的延续的意义；以整体为所表示边界的中心，持有的就是公理的意义（bounded_whole）。",
+    "en": "Route (b) is the AI's wording, which Ren quoted: “No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren chose: “let's aim for a first, then try to archive b”. The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”. It was also read as Ren's “the system that one is in”, the system reached from a center along dependence; that reading is withdrawn: the feeding closure lies within the influence closure, the influence and reach closures lie within the system, and the reach closure is offered for that level (see levels-of-closure; the AI's reading, pending Ren). The names (FedClosed, WithinFeeding, Overshoot and others) are the AI's, chosen by Ren's naming standard. Of the levels Ren wrote: “i think it should be the whole, and a weaker version is within the system that one is in, then the self”; and: “there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”. The author's reading (an AI argument, pending Ren): route (b) reaches the self and what it depends on (corrected from “the self and the system one is in”), and the whole only where the whole is one feeding closure, where its verdict is the axiom's; what the axiom adds is significance for continuations whose loss returns to no one; a center whose represented boundary is the whole holds the axiom's significance (bounded_whole)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
   "aliases": [
@@ -234,23 +326,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
-      "detail": {
-        "zh": "Clearing 中清除者的闭包内的判断保留，公理之下失去栖居者（Clearing.within_closure_yet_loses）。",
-        "en": "In Clearing the verdict within the clearer's closure retains, while under the axiom the dweller is lost (Clearing.within_closure_yet_loses)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "公理只作为比较的假设出现，不被证明；覆盖条件是充分条件，不是必要条件；只比较被接纳的形成，每一步；以扣留水平的比较固定交换的其余部分；路线 (b) 不主张根据；整体之间的选择没有建模；“中心以整体为所表示的边界”是读法，不模型中心怎样表示；读法与名称是 AI 的，待 Ren；G0 由第二部分的公理推出，Ren 2026-10-11 把它折叠，它不再是公理（P51）。",
-    "en": "The axiom appears only as a hypothesis of the comparisons and is not proved; the covering condition is sufficient, not necessary; only formations admitted are compared, step by step; comparisons by withheld levels keep the rest of the exchange fixed; route (b) claims no warrant; selection between wholes is not modelled; “a center whose represented boundary is the whole” is a reading, and how a center represents is not modelled; the readings and names are the AI's, pending Ren; G0 follows from Part II's axiom, and since Ren folded it on 11 October 2026 it is no longer an axiom (P51)."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Interdependence 的 30 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。公理 Unrestricted 是比较定理的假设，不是 Lean 公理。作者反审见整合文档 §56；尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 30 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The axiom Unrestricted is a hypothesis of the comparison theorems, not a Lean axiom. The author's counterreview is in §56 of the integration note; not yet independently reviewed."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
@@ -358,10 +433,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "Ren 的判断：路线 (b) 到达自身及其所依存的，是否足够，还是采用第二部分的公理；整体对自身的实现怎样读（以整体为所表示的边界，bounded_whole）。覆盖条件由 P42 从动力学推出，只要意义覆盖部分在每步之前已到达的（comparison-within-reach）；路线 (b) 是同一预设的窄辖域（presupposition-scopes）；按步的闭包仍开放。",
-    "en": "Ren's judgments: whether route (b), reaching the self and what it depends on, suffices or Part II's axiom is adopted; how the whole realizing itself is read (a represented boundary that is the whole, bounded_whole). P42 derives the covering condition from the dynamics wherever significance covers what the part has reached before each step (comparison-within-reach); route (b) is the same presupposition at narrow scope (presupposition-scopes); closures step by step remain open."
-  },
   "history": [
     {
       "zh": "2026-10-10 P40：新增，按 Ren“let's aim for a first, then try to archive b”；统一计划 P40（路线 (b)：不用公理能走多远）；见整合文档 §56。",
@@ -550,6 +621,20 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（第十七次审查后更正 §9 各行（Continuation“共同净给予”；LossMatching 的方向；Retrodiction 的两值与两端读数相同；“受支持的完成”）；新增 Postponement 行；总数改据新回执；整合 I1 后的 Likeness 与 Bridge 行）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述、四项前提与反例不变；主张拆为 4 条规律；限制分入“未表明”、通用边界、前提（重复者，以及关于 G0 折叠的第五项前提，其日期与轮次标签保留在 P51 条目）与对应。下一步中已完成的联系（覆盖条件由动力学推出、路线 (b) 是窄辖域）由关联条目 comparison-within-reach 与 presupposition-scopes 承载；对应、限制与下一步中的轮次标签 P40、P42、P51 移出（保留在沿革与快照）。不引用 no-ethical-premise 与 no-evaluation：比较定理以公理为假设，旧文本也未陈述不含伦理谓词。前提、状态、证明绑定与来源哈希均未改变。每句旧文本的去向见迁移对照表 [closure-verdict-meets-axiom.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/closure-verdict-meets-axiom.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement, the four hypotheses and counterexample are kept; the claim was split into 4 laws; limitations went to does-not-show items, standard boundaries, the hypotheses (where they repeated them, and a fifth hypothesis for G0's fold, whose date and round label stay in the P51 entry) and the correspondence. The next step's completed connections (the covering condition from the dynamics, route (b) at narrow scope) are carried by the related entries comparison-within-reach and presupposition-scopes; the round labels P40, P42 and P51 left the correspondence, limitations and next step (they stay in history and the snapshot). The no-ethical-premise and no-evaluation keys are not cited: the comparison theorems take the axiom as a hypothesis, and the old text did not state the absence of an ethical predicate. No premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [closure-verdict-meets-axiom.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/closure-verdict-meets-axiom.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/6c316b3c54c5f169/closure-verdict-meets-axiom.json",
+      "sha256": "6c316b3c54c5f169ecaf48e0194894effb31cde6554627740ae4f0b0967d0cc3",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
