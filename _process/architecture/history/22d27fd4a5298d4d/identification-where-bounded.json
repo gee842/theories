@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "id": "identification-where-bounded",
+  "title": {
+    "zh": "辨识：有界的记录确定历程，记录长度恰好；界给定时归纳即演绎，给定界的学习者从 2N − 1 起每步都对且不能更早，未给定界的学习者在界给出的一步之前静止；有意义的切分以有限的名命名，不用商",
+    "en": "Identification: a bounded record fixes the course, at an exact length; where the bound is given induction is deduction, the learner given the bound is right from 2N − 1 on and none can always speak sooner, and the learner not given it rests by a step the bound gives; the split that makes sense is named with finite names, with no quotient"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T21:30:54.975650+00:00",
+  "claim": {
+    "zh": "设 o、o' : ℕ → O 是所识的历程，StatesBelow o N 指 o 至多有 N 个状态（P70）。周期为 p + 1、在前 p 步都在 Q 步后回来的 x 在每一步都在 Q 步后回来（Identification.period_extends，Fine–Wilf）；从 i、i' 起以周期 q + 1、q' + 1 重复的 o、o' 在 (i + q + 1) + (i' + q') 之前相同，就处处相同（Identification.lassos_agree）。StatesBelow o N 恰当有 i、q 使 i + q + 1 ≤ N 且 Learning.Lasso o i q（Identification.statesBelow_iff_lasso）。StatesBelow o N、StatesBelow o' N' 且 o、o' 在 N + N' − 1 之前相同，则处处相同（Identification.bounded_agree）；记录相等恰当历程在其长度之前相同（Identification.record_eq_iff），所以长 N + N' − 1 的记录确定历程（Identification.record_fixes）。给出两个值：对每个 T，有 StatesBelow 1 与 StatesBelow (T + 1) 的历程，长 T 的记录相同而在 T 不同（Identification.record_short）；对每个 M，有两个 StatesBelow (M + 2) 的历程，长 M + M + 2 的记录相同而在那里不同（Identification.record_short_twice）。StatesBelow o N 时，两个时刻同一状态恰当其后在 N + N − 1 步内相同（Identification.sameAhead_iff_below）。StatesBelow o N、i + q + 1 ≤ N，且对 i ≤ u、u + q + 1 < N + N − 1 有 o (u + q + 1) = o u，则 Learning.Lasso o i q（Identification.lasso_of_fits）；值可判定时，套索假设 (i, q) 在 N + N − 1 之前不被否证，就处处不被否证（Identification.bounded_induction），总有这样的假设（Identification.bounded_hypothesis）。给定 N 的学习者 Identification.withBound N 在 N + N − 1 之前不说，之后以第一个在 N 之内、为记录所证实的套索假设主张：StatesBelow o N 时它处处不被否证（Identification.withBound_holds），从 N + N − 1 起每步都对（Identification.withBound_exact）；给出两个值，没有学习者在每个 StatesBelow o (M + 2) 的历程上都不被否证且在第 M + M + 2 步都作主张（Identification.withBound_earliest）；withBound 2 对二值否定从第 3 步起每步都对（Identification.negation_derived）；other 移动每个值时，回答 withBound N 的历程不满足 StatesBelow N（Identification.answer_exceeds_bound）。StatesBelow o N、a + b + 1 ≤ N、a ≤ s，且套索假设 (a, b) 在 s 到 s + (N + N − 1) 之前的每步不被否证，则从 s 起每步不被否证（Identification.unrefuted_persists）；StatesBelow o N 时，P73 的按否证学习者 Learning.learner Learning.lassos 从第 N + (N + N − 1) · Learning.tri N 步起每步主张且正确（Identification.learner_rests）；套索历程上有这样的一步（Identification.rests_of_lasso）；轨道被列表 l 所持时，以 N = l.length 亦然（Identification.held_learner_rests）。列表 l 在 next 下封闭时，成员 s、s' 的所识的未来相同恰当它们在 l.length + l.length − 1 步内相同（Law.sameFuture_iff_below）；l 持有每个配置时，以这一长度的所识的未来命名（Law.name）有意义（Law.name_identifiesAlike），承载规律（Law.name_carries），值可判定时判定相同（Law.decideAlike）。不用 Lean 公理。",
+    "en": "Let o, o' : ℕ → O be registered courses, StatesBelow o N meaning o has at most N states (P70). An x with period p + 1 that comes back after Q steps at each of its first p steps comes back after Q steps at every step (Identification.period_extends, Fine–Wilf); o, o' repeating from i, i' with periods q + 1, q' + 1 and agreeing before (i + q + 1) + (i' + q') agree everywhere (Identification.lassos_agree). StatesBelow o N holds exactly where some i, q have i + q + 1 ≤ N and Learning.Lasso o i q (Identification.statesBelow_iff_lasso). With StatesBelow o N and StatesBelow o' N', agreeing before N + N' − 1 is agreeing everywhere (Identification.bounded_agree); records are equal exactly where the courses agree before their length (Identification.record_eq_iff), so the record before N + N' − 1 fixes the course (Identification.record_fixes). Given two values: for every T, courses with StatesBelow 1 and StatesBelow (T + 1) share their record before T and differ at T (Identification.record_short); for every M, two courses with StatesBelow (M + 2) share their record before M + M + 2 and differ there (Identification.record_short_twice). With StatesBelow o N, two moments are one state exactly where what follows them agrees for N + N − 1 steps (Identification.sameAhead_iff_below). With StatesBelow o N, i + q + 1 ≤ N and o (u + q + 1) = o u for i ≤ u, u + q + 1 < N + N − 1, Learning.Lasso o i q holds (Identification.lasso_of_fits); with values decided, a lasso hypothesis (i, q) unrefuted before N + N − 1 is unrefuted everywhere (Identification.bounded_induction), and one always is (Identification.bounded_hypothesis). The learner given N, Identification.withBound N, silent before N + N − 1 and then claiming by the first lasso hypothesis within N that the record bears out, is refuted nowhere where StatesBelow o N (Identification.withBound_holds) and is right at every step from N + N − 1 on (Identification.withBound_exact); given two values, no learner is refuted nowhere on every course with StatesBelow o (M + 2) and claims at step M + M + 2 on each (Identification.withBound_earliest); withBound 2 is right about the two-valued negation from step 3 on (Identification.negation_derived); where other moves every value, the course answering withBound N fails StatesBelow N (Identification.answer_exceeds_bound). With StatesBelow o N, a + b + 1 ≤ N and a ≤ s, a lasso hypothesis (a, b) unrefuted at every step from s to before s + (N + N − 1) is unrefuted at every step from s on (Identification.unrefuted_persists); with StatesBelow o N, P73's learner by refutation Learning.learner Learning.lassos claims and is right at every step from N + (N + N − 1) · Learning.tri N on (Identification.learner_rests); on a lasso course there is such a step (Identification.rests_of_lasso); where an orbit is held by a list l, the same holds with N = l.length (Identification.held_learner_rests). For a list l closed under next, members s, s' have the same registered future exactly where those futures agree for l.length + l.length − 1 steps (Law.sameFuture_iff_below); where l holds every configuration, naming by the registered future of that length (Law.name) makes sense (Law.name_identifiesAlike), carries the law (Law.name_carries) and, values decided, decides likeness (Law.decideAlike). No Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加公理；除了状态数的界不加前提：界写在每条定理之中（StatesBelow o N，或世界被长度为 N 的列表持有）。",
+      "en": "No axiom; no premise beyond the bound on states, written into each theorem (StatesBelow o N, or a world held by a list of length N)."
+    },
+    {
+      "zh": "学习者与按名判定相同要所识的值可判定（DecidableEq O、DecidableEq R），即 P73 的“值可判定”；bounded_agree、lasso_of_fits、Law.name_identifiesAlike 不要。",
+      "en": "The learner and deciding likeness by names need registered values decided (DecidableEq O, DecidableEq R), P73's ‘values decided’; bounded_agree, lasso_of_fits and Law.name_identifiesAlike do not."
+    },
+    {
+      "zh": "只陈述确定的律与单个所识的历程；有分支的框架与概率没有陈述。",
+      "en": "Only determined laws and single registered courses are stated; branching frames and probabilities are not."
+    }
+  ],
+  "correspondence": {
+    "zh": "P83（工作板），按 Ren 2026-10-12 05:12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”，回答 P70–P72 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。P73（learning-by-refutation）给出不用界的一面：没有记录确定下一个值，学习者静止这一点不被否证；这里给出界给定的一面与恰好的边界，并给出未给定界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。见整合文档 §97。",
+    "en": "P83 (work board), following Ren's speculation of 05:12 on 12 October 2026, ‘the full \"truth\" can be derived, situationally, including the cognition/controller part’, and the 06:01 ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’; it answers the last two questions P70–P72 left open: deriving the law from a finite record, and naming the classes of the split that makes sense with no axiom. P73 (learning-by-refutation) gives the side where no bound is used: no record fixes the next value, and the learner's coming to rest is unrefuted; this gives the side where the bound is given, with the exact boundary, and the step by which the learner not given the bound rests (given by the bound; the learner's record does not show it). Known results: Fine and Wilf's two periods (1965), Moore's finite experiments (1956), Gold's identification in the limit (1967); here reproved in the core with no axiom and connected. Readings (the AI's, pending Ren): ‘situationally’ is the bound; a finite record is a projection, which the bound makes lose nothing of the course; the controller is inside the bounded world, and only a world answering it defeats it, which exceeds the bound; with a bound, a class's name is its finite future; being given the bound and not being given it differ in when the learner is right and whether it can know it is, not in whether it ends right. See §97 of the integration note."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+  "aliases": [
+    "Becoming.Identification.period_extends",
+    "Becoming.Identification.lassos_agree",
+    "Becoming.Identification.statesBelow_iff_lasso",
+    "Becoming.Identification.bounded_agree",
+    "Becoming.Identification.record_fixes",
+    "Becoming.Identification.record_short_twice",
+    "Becoming.Identification.bounded_induction",
+    "Becoming.Identification.withBound",
+    "Becoming.Identification.withBound_exact",
+    "Becoming.Identification.withBound_earliest",
+    "Becoming.Identification.negation_derived",
+    "Becoming.Identification.answer_exceeds_bound",
+    "Becoming.Identification.unrefuted_persists",
+    "Becoming.Identification.learner_rests",
+    "Becoming.Identification.held_learner_rests",
+    "Becoming.Law.sameFuture_iff_below",
+    "Becoming.Law.name_identifiesAlike",
+    "identification",
+    "辨识",
+    "Fine–Wilf",
+    "两个周期",
+    "bounded induction",
+    "有界的归纳",
+    "finite name",
+    "有限的名",
+    "bounded rest",
+    "有界的静止"
+  ],
+  "dependencies": [
+    {
+      "id": "learning-by-refutation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Learning.Lasso、lasso_of_held、lasso、lasso_claims、lasso_holds、Holds、RefutedAt、record、back_record、back_made、holdFrom、lassoNext 与 diagonal_unrested：界给定时补上它在界未知时的结果；复用按否证学习的 learner、lassos、index 及其引理与 lasso_learner_bounded，给出它的静止之步。",
+        "en": "Reuses Learning.Lasso, lasso_of_held, lasso, lasso_claims, lasso_holds, Holds, RefutedAt, record, back_record, back_made, holdFrom, lassoNext and diagonal_unrested: it completes, with the bound given, what that record states with the bound unknown; reuses the learner by refutation (learner, lassos, index and its lemmas, lasso_learner_bounded) to state the step at which it rests."
+      },
+      "interface": {
+        "output": {
+          "zh": "套索、记录、否证与回答的历程；按否证学习者及其否证之界。",
+          "en": "Lassos, records, refutation and the answering course; the learner by refutation and its bound on refutations."
+        },
+        "input": {
+          "zh": "有界的记录确定历程；给定界的学习者；未给定界的学习者的静止之步。",
+          "en": "A bounded record fixes the course; the learner given the bound; the step at which the learner not given it rests."
+        },
+        "conditions": {
+          "zh": "学习者要值可判定。",
+          "en": "The learner needs values decided."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean"
+      }
+    },
+    {
+      "id": "the-split-that-makes-sense",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 SameAhead、StatesBelow、shared_below、statesBelow_of_same、lasso_iff_sameAhead 与 Negation：状态的界就是套索的界。",
+        "en": "Reuses SameAhead, StatesBelow, shared_below, statesBelow_of_same, lasso_iff_sameAhead and Negation: the bound on states is the bound on the lasso."
+      },
+      "interface": {
+        "output": {
+          "zh": "从历史读出的状态。",
+          "en": "States read off a history."
+        },
+        "input": {
+          "zh": "状态数的界。",
+          "en": "The bound on states."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean"
+      }
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 IdentifiesAlike、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.IdentifiesAlike.carries：有限的名是有意义的切分。",
+        "en": "Reuses IdentifiesAlike, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.IdentifiesAlike.carries: the finite name is the split that makes sense."
+      },
+      "interface": {
+        "output": {
+          "zh": "有意义的描述。",
+          "en": "Descriptions that make sense."
+        },
+        "input": {
+          "zh": "以有限的名命名。",
+          "en": "Naming by finite names."
+        },
+        "conditions": {
+          "zh": "世界被列表持有。",
+          "en": "A world held by a list."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Law.orbit、gap_of_le、gap_of_lt。",
+        "en": "Reuses Law.orbit, gap_of_le and gap_of_lt."
+      },
+      "interface": {
+        "output": {
+          "zh": "轨道与间隔。",
+          "en": "Orbits and gaps."
+        },
+        "input": {
+          "zh": "余数与套索世界的位置。",
+          "en": "Remainders and the lasso world's positions."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "registration-within-what-it-registers",
+      "detail": {
+        "zh": "那里从内部不能同时持有每个读法；这里有界的历程的律可以推出，回答自己的学习者的世界超出界。",
+        "en": "There, no registration within holds every reading at once; here, a bounded course's law is derived, and a world answering its own learner exceeds the bound."
+      }
+    },
+    {
+      "id": "generalization-through-lumping",
+      "detail": {
+        "zh": "推广恰在归并之处；这里界使有限的数据确定整个历程。",
+        "en": "Generalization is exactly where it lumps; here the bound makes finite data fix the whole course."
+      }
+    },
+    {
+      "id": "wisdom-root-part-one",
+      "detail": {
+        "zh": "其“学习”一项说按否证学习者静止这一点不被否证；held_learner_rests 给出这一步，是列表长度的函数，学习者自己没有它。",
+        "en": "Its learning clause says the learner by refutation's coming to rest is unrefuted; held_learner_rests states the step, a function of the list's length, which the learner does not have."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "detail": {
+        "zh": "record_short：一个状态的历程与 T + 1 个状态的历程有相同的长 T 的记录而在 T 不同；record_short_twice：两个 M + 2 个状态的历程（每 M + 2 步与每 M + 1 步标记一次）有相同的长 M + M + 2 的记录而在那里不同；answer_exceeds_bound：回答给定 N 的学习者的历程超出 N 个状态。",
+        "en": "record_short: a course with one state and one with T + 1 share their record before T and differ at T; record_short_twice: two courses with M + 2 states (marking every M + 2 and every M + 1 steps) share their record before M + M + 2 and differ there; answer_exceeds_bound: the course answering the learner given N exceeds N states."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "界必须给出；N + N' − 1 对一般的 N、N' 充分，只在 N = 1 与 N = N' 证明为恰好；同一历史、同一世界的更锐的 Moore 界没有陈述；静止之步 N + (2N − 1)·tri N 粗，不是最优；只陈述确定的律与单个历程；读法是 AI 的；不含伦理谓词。",
+    "en": "The bound must be given; N + N' − 1 suffices for all N, N' and is shown exact only for N = 1 and N = N'; Moore's sharper bound for one history or one world is not stated; the rest step N + (2N − 1)·tri N is coarse, not optimal; only determined laws and single courses are stated; the readings are the AI's; contains no ethical predicate."
+  },
+  "validation_scope": {
+    "zh": "2026-10-14：Becoming.Description、Becoming.Identification、Becoming.Unfolding 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Identification 的 42 项定理全部空依赖，其中含 Identification.period_extends、Identification.lassos_agree、Identification.statesBelow_iff_lasso、Identification.bounded_agree、Identification.record_fixes、Identification.record_short、Identification.record_short_twice、Identification.sameAhead_iff_below、Identification.bounded_induction、Identification.withBound_holds、Identification.withBound_exact、Identification.withBound_earliest、Identification.negation_derived、Identification.answer_exceeds_bound、Identification.unrefuted_persists、Identification.learner_rests、Identification.rests_of_lasso、Identification.held_learner_rests、Law.sameFuture_iff_below与 Law.name_identifiesAlike；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §97；独立审查的范围见同节。",
+    "en": "14 October 2026: the current bytes of Becoming.Description, Becoming.Identification, Becoming.Unfolding are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 42 theorems of Becoming.Identification all have empty axiom reports, among them Identification.period_extends, Identification.lassos_agree, Identification.statesBelow_iff_lasso, Identification.bounded_agree, Identification.record_fixes, Identification.record_short, Identification.record_short_twice, Identification.sameAhead_iff_below, Identification.bounded_induction, Identification.withBound_holds, Identification.withBound_exact, Identification.withBound_earliest, Identification.negation_derived, Identification.answer_exceeds_bound, Identification.unrefuted_persists, Identification.learner_rests, Identification.rests_of_lasso, Identification.held_learner_rests, Law.sameFuture_iff_below and Law.name_identifiesAlike; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §97 of the integration note, with the scope of the independent review."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "role": "proof",
+      "sha256": "9a43ae375e5ea71d5c5f74e637c752ddca49321832ae53bee9e16750a6a46aa2",
+      "declarations": [
+        "Becoming.Identification.residue",
+        "Becoming.Identification.periodic_whole",
+        "Becoming.Identification.period_extends",
+        "Becoming.Identification.lassos_agree",
+        "Becoming.Identification.below_upto",
+        "Becoming.Identification.below_all",
+        "Becoming.Identification.lassoPos_early",
+        "Becoming.Identification.lassoPos_period",
+        "Becoming.Identification.statesBelow_mono",
+        "Becoming.Identification.statesBelow_iff_lasso",
+        "Becoming.Identification.statesBelow_pos",
+        "Becoming.Identification.le_twice_less_one",
+        "Becoming.Identification.bounded_agree",
+        "Becoming.Identification.record_eq_iff",
+        "Becoming.Identification.record_fixes",
+        "Becoming.Identification.record_short",
+        "Becoming.Identification.mark",
+        "Becoming.Identification.record_short_twice",
+        "Becoming.Identification.statesBelow_shift",
+        "Becoming.Identification.sameAhead_iff_below",
+        "Becoming.Identification.lasso_of_fits",
+        "Becoming.Identification.fits_of_unrefuted",
+        "Becoming.Identification.bounded_induction",
+        "Becoming.Identification.bounded_hypothesis",
+        "Becoming.Identification.BorneOut",
+        "Becoming.Identification.borneOut_record_iff",
+        "Becoming.Identification.column",
+        "Becoming.Identification.grid",
+        "Becoming.Identification.mem_column",
+        "Becoming.Identification.mem_grid",
+        "Becoming.Identification.firstFit",
+        "Becoming.Identification.firstFit_sound",
+        "Becoming.Identification.firstFit_found",
+        "Becoming.Identification.Fits",
+        "Becoming.Identification.claimBy",
+        "Becoming.Identification.withBound",
+        "Becoming.Identification.withBound_exact",
+        "Becoming.Identification.withBound_holds",
+        "Becoming.Identification.withBound_earliest",
+        "Becoming.Identification.negation_derived",
+        "Becoming.Identification.answer_exceeds_bound",
+        "Becoming.Identification.unrefuted_persists",
+        "Becoming.Identification.learner_rests",
+        "Becoming.Identification.rests_of_lasso",
+        "Becoming.Identification.held_learner_rests",
+        "Becoming.Law.orbit_held",
+        "Becoming.Law.statesBelow_held",
+        "Becoming.Law.sameFuture_iff_below",
+        "Becoming.Law.name",
+        "Becoming.Law.name_identifiesAlike",
+        "Becoming.Law.name_carries",
+        "Becoming.Law.decideAlike"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "role": "proof",
+      "sha256": "b5d869ba9bfa90ef5a8f81c2166fcfb45f8811d6cd2c41daec6ccec5cab6537b",
+      "declarations": [
+        "Becoming.Learning.Lasso",
+        "Becoming.Learning.lasso_of_held",
+        "Becoming.Learning.lasso",
+        "Becoming.Learning.lasso_claims",
+        "Becoming.Learning.lasso_holds",
+        "Becoming.Learning.Holds",
+        "Becoming.Learning.RefutedAt",
+        "Becoming.Learning.record",
+        "Becoming.Learning.record_congr",
+        "Becoming.Learning.back_record",
+        "Becoming.Learning.back_made",
+        "Becoming.Learning.holdFrom",
+        "Becoming.Learning.holdFrom_lasso",
+        "Becoming.Learning.lassoNext",
+        "Becoming.Learning.diagonal_unrested",
+        "Becoming.Learning.Refuted",
+        "Becoming.Learning.eq_of_not_refuted",
+        "Becoming.Learning.learner",
+        "Becoming.Learning.lassos",
+        "Becoming.Learning.index_refuted",
+        "Becoming.Learning.index_kept",
+        "Becoming.Learning.index_le_succ",
+        "Becoming.Learning.index_mono_le",
+        "Becoming.Learning.lasso_learner_bounded",
+        "Becoming.Learning.pairAt",
+        "Becoming.Learning.pairAt_place",
+        "Becoming.Learning.diag",
+        "Becoming.Learning.diag_le",
+        "Becoming.Learning.tri",
+        "Becoming.Learning.tri_mono",
+        "Becoming.Learning.place_lt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
+      "role": "proof",
+      "sha256": "65a0b6af64b35211fa0b42e48c92d9b6ae0504fbfc597cf6f5e703ef25b88aaa",
+      "declarations": [
+        "Becoming.SameAhead",
+        "Becoming.StatesBelow",
+        "Becoming.shared_below",
+        "Becoming.statesBelow_of_same",
+        "Becoming.lasso_iff_sameAhead",
+        "Becoming.Negation.register",
+        "Becoming.Negation.zero_two"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "0959f4804f5afba1b16f69851f7f29f086519f89e74b77a3220fa8bcdbee878d",
+      "declarations": [
+        "Becoming.IdentifiesAlike",
+        "Becoming.Law.registered",
+        "Becoming.Law.SameFuture",
+        "Becoming.Law.alike_iff_sameFuture",
+        "Becoming.Law.IdentifiesAlike.carries"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "3dc81c57525c2c5fdfca8222e39ddc0c4de905ddb97eb03f705bb9dc3ccd586c",
+      "declarations": [
+        "Becoming.Law.orbit",
+        "Becoming.gap_of_le",
+        "Becoming.gap_of_lt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "2d8b5c7ceab8e1e543ae21b66be9a5b27d1a642e75488d955228382a38a0a55a",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "d53319e82cc9be591e16e854f9c946908d31aa16428503af55a2027f11365107",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md",
+      "role": "provenance",
+      "sha256": "93e89d2880eb068ac19822be3a1d95ea842d7e60fef9ba81b419f874e7e01799",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Identification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Learning",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Description",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "对一般的 N、N' 的恰好性（Fine–Wilf 的极值）；同一世界的 Moore 界；未给定界的学习者的最优静止之步；有分支的框架下的辨识（以 P69 的 Alike 与 P76 的检验）；与 P76 的 alike_iff_sameTests 的实例定理（由后落地者写出）；Ren 对“按情境就是界”与有限名读法的判断。",
+    "en": "Exactness for general N, N' (the Fine–Wilf extremal words); Moore's bound for one world; the optimal rest step of the learner not given the bound; identification for branching frames (with P69's Alike and P76's tests); the instance theorem to P76's alike_iff_sameTests (by whichever lands second); Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P83：新增，按 Ren 05:12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”；见整合文档 §97。",
+      "en": "2026-10-12 P83: added, following Ren's speculation of 05:12, ‘the full \"truth\" can be derived, situationally, including the cognition/controller part’, and the 06:01 ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’; see §97 of the integration note."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `Identification.knowing` → `Identification.withBound`、`Identification.knowing_holds` → `Identification.withBound_holds`、`Identification.knowing_right` → `Identification.withBound_exact`、`Identification.knowing_earliest` → `Identification.withBound_earliest`、`Identification.denial_derived` → `Identification.negation_derived`、`Law.name_makesSense` → `Law.name_identifiesAlike`、`MakesSense` → `IdentifiesAlike`、`Law.MakesSense.carries` → `Law.IdentifiesAlike.carries`、`Denial.register` → `Negation.register`、`Denial.zero_two` → `Negation.zero_two`；陈述、证明与定理数不变；描述这些声明的文字随之改用新词：“知道界的学习者”改为“给定界的学习者”，`knowing N` 改为 `withBound N`；Lean 源：Identification、Description、Unfolding 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”；标题由「辨识：有界的记录确定历程，记录长度恰好；界给定时归纳即演绎，知道界的学习者从 2N − 1 起每步都对且不能更早，不知道界的学习者在界给出的一步之前静止；有意义的切分以有限的名命名，不用商」改为「辨识：有界的记录确定历程，记录长度恰好；界给定时归纳即演绎，给定界的学习者从 2N − 1 起每步都对且不能更早，未给定界的学习者在界给出的一步之前静止；有意义的切分以有限的名命名，不用商」。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `Identification.knowing` → `Identification.withBound`, `Identification.knowing_holds` → `Identification.withBound_holds`, `Identification.knowing_right` → `Identification.withBound_exact`, `Identification.knowing_earliest` → `Identification.withBound_earliest`, `Identification.denial_derived` → `Identification.negation_derived`, `Law.name_makesSense` → `Law.name_identifiesAlike`, `MakesSense` → `IdentifiesAlike`, `Law.MakesSense.carries` → `Law.IdentifiesAlike.carries`, `Denial.register` → `Negation.register`, `Denial.zero_two` → `Negation.zero_two`; statements, proofs and theorem counts unchanged; prose describing these declarations follows the new words: “the learner that knows the bound” becomes “the learner given the bound”, `knowing N` becomes `withBound N`, and “two-valued denial” becomes “two-valued negation”; Lean sources: Identification, Description, Unfolding only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”; title changed from “Identification: a bounded record fixes the course, at an exact length; where the bound is given induction is deduction, the learner that knows the bound is right from 2N − 1 on and none can always speak sooner, and the learner that does not know it rests by a step the bound gives; the split that makes sense is named with finite names, with no quotient” to “Identification: a bounded record fixes the course, at an exact length; where the bound is given induction is deduction, the learner given the bound is right from 2N − 1 on and none can always speak sooner, and the learner not given it rests by a step the bound gives; the split that makes sense is named with finite names, with no quotient”. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为新模块增改行，总数改据回执 20261013T221720.428753Z；标题、粗体引语、模块表与正文中的工作项编号改为模块、节或成果的名称，旧标题锚点保留为显式锚点；陈述、Lean 名、定理数与链接目标均不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added or updated for the new modules and the §9 totals moved to receipt 20261013T221720.428753Z; work-item numbers removed from headings, bold leads, the module table and in-body references, which now name modules, sections or results, with the old heading anchors kept as explicit anchors; no statement, Lean name, theorem count or link target changed)."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为 Becoming.Viability、Countdown、Lasting、Copying、Retrodiction 及五个外围实例模块增行，总数改据回执 20261014T044840.291323Z；其余文字不变）。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（读法“记入”事件处英文改为 includes；§8 审查行写出第一次审查的对象（研究 §§1–6）；为 Becoming.Likeness、Becoming.Learnable、到达律、谱系律及其实例增加第一部分段落、§8 条目与 §9 行；Becoming.CrossSituational 的 §9 行与 MachineInstances、VersionedTaskInstances 两行；§9 总数改据回执 20261014T091930.724493Z）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (“includes” where a reading “credited” an event; the §8 review row names the first review's object (study §§1–6); Part I paragraphs, §8 bullets and §9 rows for Becoming.Likeness, Becoming.Learnable, the reaching law, the lineage law and their instances; the §9 row for Becoming.CrossSituational and the rows of MachineInstances and VersionedTaskInstances; the §9 totals moved to receipt 20261014T091930.724493Z)."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    }
+  ]
+}

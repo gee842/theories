@@ -100,7 +100,7 @@
 | `held-lives-g0-is-centering` | [被持有的生命上的 G0 / G0 on held lives](records/held-lives-g0-is-centering.md) | theorem | recorded-checked |
 | `historical-source-binding` | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](records/historical-source-binding.md) | theorem | recorded-checked |
 | `histories-fix-law-up-to-dead-ends` | [律与历史的完备对应 / The complete correspondence of law and history](records/histories-fix-law-up-to-dead-ends.md) | theorem | recorded-checked |
-| `identification-where-bounded` | [辨识：有界的记录确定历程，记录长度恰好；界给定时归纳即演绎，给定界的学习者从 2N − 1 起每步都对且不能更早，未给定界的学习者在界给出的一步之前静止；有意义的切分以有限的名命名，不用商 / Identification: a bounded record fixes the course, at an exact length; where the bound is given induction is deduction, the learner given the bound is right from 2N − 1 on and none can always speak sooner, and the learner not given it rests by a step the bound gives; the split that makes sense is named with finite names, with no quotient](records/identification-where-bounded.md) | theorem | recorded-checked |
+| `identification-where-bounded` | [有界之处的辨识 / Identification where bounded](records/identification-where-bounded.md) | theorem | recorded-checked |
 | `identity-across-steps` | [跨步的同一 / Identity across steps](records/identity-across-steps.md) | theorem | recorded-checked |
 | `imbalance-as-relatum` | [不平衡作为关系项 / Imbalance as a relatum](records/imbalance-as-relatum.md) | theorem | recorded-checked |
 | `incidence-common-refinement` | [关联问题导出跨分节共同细化 / Incidence questions yield a common relational refinement](records/incidence-common-refinement.md) | theorem | recorded-checked |
@@ -125,7 +125,7 @@
 | `levels-of-closure` | [闭包的五个层次 / Five levels of closure](records/levels-of-closure.md) | theorem | recorded-checked |
 | `life-as-condition-of-life` | [生作为生的条件 / Life as a condition of life](records/life-as-condition-of-life.md) | theorem | recorded-checked |
 | `listing-once-is-decided-identity` | [列出一次就是已定的同一 / Listing once is decided identity](records/listing-once-is-decided-identity.md) | theorem | recorded-checked |
-| `living-on-and-descent` | [以之为生与世系使关系项直接相关：一类读法提供的两种 related / Living on and descent relate relata directly: two readings of related that the one-kind reading supplies](records/living-on-and-descent.md) | theorem | recorded-checked |
+| `living-on-and-descent` | [以之为生与世系 / Living on and descent](records/living-on-and-descent.md) | theorem | recorded-checked |
 | `loss-beyond-a-region` | [区域之外的损失 / Loss beyond a region](records/loss-beyond-a-region.md) | theorem | recorded-checked |
 | `losses-of-the-sum-over-histories` | [历史之和的损失 / Losses of the sum over histories](records/losses-of-the-sum-over-histories.md) | theorem | recorded-checked |
 | `map-of-premises` | [前提的地图 / The map of premises](records/map-of-premises.md) | theorem | recorded-checked |
