@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F06",
-  "reviewed_at_utc": "2026-10-08T19:02:21.616729+00:00",
+  "reviewed_at_utc": "2026-10-14T04:30:00+00:00",
   "claim": {
-    "zh": "给定市场规律、有效保护证书、安全初态及逐步容许扰动，原实际守卫在所有自然数时刻都与运行历史一致，不发生支持失败。",
-    "en": "Given the market law, a valid protection certificate, a safe initial state and admissible disturbances at every step, the actual guarded history agrees with the operating history at every natural time without support failure."
+    "zh": "对每个过程与守卫：从某构型出发没有进程离开守卫，恰当某个证书含有它；证书是守卫之内、每一步都保持的集合，生存核是最大的证书。对由可容许扰动驱动的变化之律，给定一个可容许扰动，没有历史离开守卫，恰当某个含起点的集合在守卫之内且对每个可容许扰动封闭。市场律对每组参数、界与起点都是实例：没有可容许守卫历史违反必要底线，恰当这样的状态集存在。有效保护证书之下安全矩形就是这样的集，所以从安全初态出发、每步扰动可容许时，守卫历史在每个自然时刻与运行历史一致，没有支持失效。",
+    "en": "For every process and guard, no course from a configuration leaves the guard exactly when some certificate contains it: a set within the guard that every step keeps; the viability kernel is the largest certificate. For a law of change driven by admissible disturbances, given one admissible disturbance, no history ever leaves the guard exactly when some set containing the start lies within the guard and is closed under every admissible disturbance. The market law is an instance for every parameter set, bound set and start: no admissible guarded history fails the essential floors exactly when such a set of states exists. Under a valid protection certificate the safe rectangle is one, so from a safe initial state with admissible disturbances at every step, the guarded history agrees with the operating history at every natural time without support failure."
   },
   "hypotheses": [
     {
@@ -25,7 +25,12 @@
   },
   "canonical_source": "experiments/market-generativity/formal/MarketGenerativity.lean",
   "aliases": [
-    "MarketGenerativity.safe_history_never_fails"
+    "MarketGenerativity.safe_history_never_fails",
+    "Becoming.Viability.kernel_iff_certificate",
+    "Becoming.Viability.never_leaves_iff_certificate",
+    "Becoming.Viability.guarded_never_fails_iff",
+    "Becoming.MarketInstances.never_fails_iff",
+    "Becoming.MarketInstances.safe_never_fails"
   ],
   "dependencies": [],
   "related": [
@@ -51,6 +56,13 @@
         "zh": "有限支持下低端吸引历史失败，表明一般物理初态不自动满足保护证书；保护范围也不是全体伦理后果。",
         "en": "Low-attractor histories fail with finite support: a physical initial state does not automatically satisfy the certificate, nor does protection cover every ethical consequence."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Viability.lean",
+      "detail": {
+        "zh": "Leaves.within_not_kernel：守卫本身未必是证书；needs_admissible：没有可容许扰动时历史条件空真而律不成立。",
+        "en": "Leaves.within_not_kernel: the guard alone need not be a certificate; needs_admissible: with no admissible disturbance the history condition holds vacuously and the law fails."
+      }
     }
   ],
   "limitations": {
@@ -58,8 +70,8 @@
     "en": "Conditional nonfailure; it does not supply entry from unsafe states, a complete basin or inevitable compliance by real markets."
   },
   "validation_scope": {
-    "zh": "迁移原39项结果中的既有主张；本轮有限转变检查重新编译并审计继承源码，不计为新定理。",
-    "en": "Migrates an existing claim from the original 39 results; the finite-transition check rebuilds and audits inherited source without counting it as new."
+    "zh": "迁移原39项结果中的既有主张；本轮有限转变检查重新编译并审计继承源码，不计为新定理。一般律仅经scratch实编。",
+    "en": "Migrates an existing claim from the original 39 results; the finite-transition check rebuilds and audits inherited source without counting it as new. General laws: scratch builds only."
   },
   "references": [
     {
@@ -81,6 +93,43 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
       "role": "integration",
       "sha256": "6000245fbadd7a5b1dacc0740efcebedceb6707f2da5db863159e5894590755d",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Viability.lean",
+      "role": "proof",
+      "sha256": "365e15e172df651a7a12752a10219378171a100c19518446b84bf87ed1259268",
+      "declarations": [
+        "Becoming.Viability.Kernel",
+        "Becoming.Viability.Certificate",
+        "Becoming.Viability.kernel_iff_certificate",
+        "Becoming.Viability.kernel_largest",
+        "Becoming.Viability.kernel_step_iff",
+        "Becoming.Viability.never_leaves_iff_certificate",
+        "Becoming.Viability.guarded_iff",
+        "Becoming.Viability.guarded_never_fails_iff",
+        "Becoming.Viability.Leaves.within_not_kernel",
+        "Becoming.Viability.needs_admissible"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/MarketInstances.lean",
+      "role": "proof",
+      "sha256": "da45239425e3b7ccb94cf690cb97eebf4da4eab9e3549fb822364f3b3d6ba4d3",
+      "declarations": [
+        "Becoming.MarketInstances.history_eq",
+        "Becoming.MarketInstances.guardedHistory_eq",
+        "Becoming.MarketInstances.worst_admissible",
+        "Becoming.MarketInstances.never_fails_iff",
+        "Becoming.MarketInstances.safe_closed",
+        "Becoming.MarketInstances.safe_never_fails",
+        "Becoming.MarketInstances.safe_within_kernel"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "ed9d4f950017f4cbade7ec2ef39ef9f00f36490c31779e9c52ee18323f50d740",
       "declarations": []
     }
   ],
@@ -117,6 +166,10 @@
     {
       "zh": "2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。",
       "en": "2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Viability：生存核恰是含起点的证书之并，扰动律下历史永不离开守卫恰当存在封闭于每个可容许扰动的证书；市场律经外围 MarketInstances 对每组参数、界与起点成为实例，safe_history_never_fails 由安全矩形得出。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Viability: no course leaves the guard exactly when a certificate contains the start, and under disturbances exactly when a set within the guard is closed under every admissible disturbance; the market law becomes an instance for every parameter set, bound set and start through the periphery MarketInstances, and safe_history_never_fails follows from the safe rectangle. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged."
     }
   ]
 }

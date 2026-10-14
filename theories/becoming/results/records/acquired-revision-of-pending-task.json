@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F03",
-  "reviewed_at_utc": "2026-10-08T18:44:58.926831+00:00",
+  "reviewed_at_utc": "2026-10-14T04:30:00+00:00",
   "claim": {
-    "zh": "在已有版本化传递不变量下，改写头请求的实际剩余编码保留捕获路线、进度及其他任务，并送达新请求。将已取得且有比较根据的目的修订与此操作接通后，端点行动执行新实践，保留历史损失并消耗实际工作支持；其参数化组合覆盖任意有效头请求。",
-    "en": "Under the existing versioned-delivery invariant, rewriting the head packet’s remaining encoding preserves its captured route, progress and other work while delivering the new request. Connecting acquired, comparatively warranted goal revision to this rewrite makes endpoint action enact the new practice, retaining historical loss and consuming actual work support; the parameterized composition covers any valid head."
+    "zh": "对每条带计数工作的部分律，待完成任务恰在剩余工作加一次中完成，更短的运行都不交付。在既有版本化交付不变量下，改写队首包的剩余编码保持其已捕获路线、进度与其余工作，所以修订后的队首对新请求仍是这样的任务，剩余工作相同、完成次数相同。把取得的、有比较根据的目的修订接到这一改写，端点行动就执行新做法，保留历史损失并消耗实际工作支持；参数化组合覆盖任何有效队首。",
+    "en": "For every partial law with counted work, a pending task finishes in exactly its remaining work plus one tick, and no shorter run delivers it. Under the existing versioned-delivery invariant, rewriting the head packet's remaining encoding preserves its captured route, progress and other work, so the revised head is again such a task for the new request, with the same remaining work and the same number of ticks. Connecting acquired, comparatively warranted goal revision to this rewrite makes endpoint action enact the new practice, retaining historical loss and consuming actual work support; the parameterized composition covers any valid head."
   },
   "hypotheses": [
     {
@@ -30,7 +30,9 @@
   "canonical_source": "experiments/market-generativity/meta-attractor/CommonTaskRevision.lean",
   "aliases": [
     "CommonTaskRevision.warranted_revision_and_pending_delivery",
-    "CommonTaskRevision.revised_head_completes"
+    "CommonTaskRevision.revised_head_completes",
+    "Becoming.VersionedTaskInstances.retarget_pending",
+    "Becoming.VersionedTaskInstances.revised_head_instance"
   ],
   "dependencies": [
     {
@@ -95,8 +97,8 @@
     "en": "Relabeling or writing an unencoded value can fail; the old task can be faithfully executed and add loss. Changed conditions after acquisition can also make the revised practice harm maintenance. No open joint-purpose formation or correction through unrestricted change."
   },
   "validation_scope": {
-    "zh": "Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。",
-    "en": "Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs."
+    "zh": "Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。一般律仅经scratch实编。",
+    "en": "Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs. General laws: scratch builds only."
   },
   "references": [
     {
@@ -134,6 +136,33 @@
       "role": "provenance",
       "sha256": "dd886a3be7c5e60fe9adbb864df0663c74470bcda1ecdd86428912e52c89e297",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
+      "role": "proof",
+      "sha256": "3ba40755e498f5e9265252cd100ea0ef66ea4bc36dbc7de91fe9cdca85e8b254",
+      "declarations": [
+        "Becoming.Countdown.Advances",
+        "Becoming.Countdown.Advances.completes",
+        "Becoming.Countdown.completes_iff",
+        "Becoming.Countdown.pending_before"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",
+      "role": "proof",
+      "sha256": "06002a5dfb21df50815211db9d2fa15e258fc86357c4e48ab80308a2f379291f",
+      "declarations": [
+        "Becoming.VersionedTaskInstances.head_advances",
+        "Becoming.VersionedTaskInstances.retarget_pending",
+        "Becoming.VersionedTaskInstances.revised_head_instance"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "ed9d4f950017f4cbade7ec2ef39ef9f00f36490c31779e9c52ee18323f50d740",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -157,6 +186,10 @@
     {
       "zh": "2026-10-09：核读并接入后续端点复查，文稿增加行动保护与比较理由的区分；本记录的在途改写定理及原回执不变。",
       "en": "2026-10-09: reread and integrated the endpoint-review continuation and its action-protection/comparative-warrant distinction; this record’s pending-rewrite theorem and original receipt are unchanged."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Countdown：计数的工作恰在剩余工作加一次中完成；改写后的队首经外围 VersionedTaskInstances 仍是 Countdown.Advances 的实例，revised_head_completes 是实例。有比较根据的修订条件仍是该协议的事实。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: counted work finishes in exactly its remaining work plus one tick; through the periphery VersionedTaskInstances the rewritten head stays an instance of Countdown.Advances, and revised_head_completes is an instance. The warranted-revision conditions remain facts of the protocol. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged."
     }
   ]
 }

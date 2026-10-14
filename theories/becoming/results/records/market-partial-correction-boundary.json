@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F06",
-  "reviewed_at_utc": "2026-10-08T19:02:21.616729+00:00",
+  "reviewed_at_utc": "2026-10-14T04:30:00+00:00",
   "claim": {
-    "zh": "原有理市场族0≤β≤3/4、无额外责任误差时，所有物理正维护初态均有限到达原保护区，当且仅当β≤5/12。该侧包括临界等号，并在初始支持满足既有K_N界时实际执行，撤除干预后交接给原保护证书。",
-    "en": "In the original rational market family with 0<=beta<=3/4 and zero extra quality error, every physical positive renewal state reaches the original protection region in finite time iff beta<=5/12. This includes equality and executes under the inherited initial stock cover K_N, handing the actual arrived state to original protection after withdrawal."
+    "zh": "对每条确定的律与目标：从起点出发的轨道永不到达目标，恰当某个含起点、避开目标且对律封闭的集合存在，这即目标补集的生存核；某种子永不到达恰当这样的集合含种子，目标之外的不动构型自身就是这样的集合。在原有理市场族中，0≤β≤3/4且无额外责任误差时，每个物理正维护状态在有限时间到达原保护区域，恰当固定质量3/8、最坏影响1处的质量余量非负，即β≤5/12，也恰当没有对律封闭、避开着陆的集合含正状态；β>5/12时不动构型就是这样的集合。这包括等号情形，并在继承的初始存量覆盖K_N下执行，撤出后把实际到达状态交给原保护。",
+    "en": "For every determined law and target, the orbit from a start never reaches the target exactly when some set containing the start avoids the target and is closed under the law, which is the viability kernel of the target's complement; some seed never reaches the target exactly when such a set contains a seed, and a fixed configuration outside the target is such a set by itself. In the original rational market family with 0<=beta<=3/4 and zero extra quality error, every physical positive renewal state reaches the original protection region in finite time exactly when the quality margin at the fixed quality 3/8 under the worst influence 1 is nonnegative, that is beta<=5/12, and exactly when no set closed under the law and avoiding landing contains a positive state; above 5/12 the fixed configuration is one. This includes equality and executes under the inherited initial stock cover K_N, handing the actual arrived state to original protection after withdrawal."
   },
   "hypotheses": [
     {
@@ -29,7 +29,13 @@
   },
   "canonical_source": "experiments/market-generativity/formal/PartialRegimeTransition.lean",
   "aliases": [
-    "PartialRegimeTransition.exact_universal_landing_boundary"
+    "PartialRegimeTransition.exact_universal_landing_boundary",
+    "Becoming.Lasting.avoids_iff_closed",
+    "Becoming.Lasting.some_avoids_iff",
+    "Becoming.Lasting.fixed_avoids",
+    "Becoming.MarketInstances.never_lands_iff",
+    "Becoming.MarketInstances.lands_iff_margin",
+    "Becoming.MarketInstances.lands_iff_no_closed"
   ],
   "dependencies": [
     {
@@ -116,8 +122,8 @@
     "en": "The exact boundary concerns the specified zero-error universal positive-state arrival property, not a complete basin, all-parameter bifurcation, noisy recovery range, measured threshold, or formed intervention/entry."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 实际检查26项新定理／31项声明审计，123项继承定理／153项审计分列。作者反审已整合，无独立agent验收或新增市场观察。",
-    "en": "Lean 4.29.1 actually checks 26 new theorems / 31 declaration audits and separately 123 inherited theorems / 153 audits. Author counterreview is integrated, without independent agent acceptance or new market observations."
+    "zh": "Lean 4.29.1 实际检查26项新定理／31项声明审计，123项继承定理／153项审计分列。作者反审已整合，无独立agent验收或新增市场观察。一般律仅经scratch实编。",
+    "en": "Lean 4.29.1 actually checks 26 new theorems / 31 declaration audits and separately 123 inherited theorems / 153 audits. Author counterreview is integrated, without independent agent acceptance or new market observations. General laws: scratch builds only."
   },
   "references": [
     {
@@ -159,6 +165,39 @@
       "role": "integration",
       "sha256": "ce8d50a91534c482cf5a163a9a100870666490d81b74f4f48917f5b9c9a46d36",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "role": "proof",
+      "sha256": "13565153d9c8bc28b5c9f7f51fda30520694f2911c02181975d77c8ee0190284",
+      "declarations": [
+        "Becoming.Lasting.avoids_iff_closed",
+        "Becoming.Lasting.avoids_iff_kernel",
+        "Becoming.Lasting.some_avoids_iff",
+        "Becoming.Lasting.none_avoid_iff",
+        "Becoming.Lasting.reaches_excludes",
+        "Becoming.Lasting.fixed_avoids"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/MarketInstances.lean",
+      "role": "proof",
+      "sha256": "da45239425e3b7ccb94cf690cb97eebf4da4eab9e3549fb822364f3b3d6ba4d3",
+      "declarations": [
+        "Becoming.MarketInstances.path_eq",
+        "Becoming.MarketInstances.never_lands_iff",
+        "Becoming.MarketInstances.margin_iff",
+        "Becoming.MarketInstances.lands_iff_margin",
+        "Becoming.MarketInstances.lands_iff_no_closed",
+        "Becoming.MarketInstances.fixed_point_instance",
+        "Becoming.MarketInstances.partial_prefix_instance"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "ed9d4f950017f4cbade7ec2ef39ef9f00f36490c31779e9c52ee18323f50d740",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -197,6 +236,10 @@
     {
       "zh": "2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。",
       "en": "2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Lasting：确定的律永不到达目标恰当某个避开目标的封闭集含起点，即目标补集的生存核；经外围 MarketInstances，5/12 边界读作固定质量处的余量非负，也读作没有避开着陆的封闭集含正状态，边界之上的不动点是 fixed_avoids 的实例。着陆一侧的增益估计仍是该市场律的。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Lasting: a determined law never reaches a target exactly when a closed set avoiding it contains the start, the viability kernel of the complement; through the periphery MarketInstances the 5/12 boundary reads as a nonnegative margin at the fixed quality and as no closed set avoiding landing containing a positive state, the fixed point above it being an instance of fixed_avoids. The gain estimate on the landing side remains the market law's. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged."
     }
   ]
 }
