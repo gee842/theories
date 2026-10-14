@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-202 migrated records: 198 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+203 migrated records: 199 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -118,6 +118,7 @@
 | `laws-at-finer-units` | [较细的单位上的一步规律 / Laws of one step at a finer unit](records/laws-at-finer-units.md) | theorem | recorded-checked |
 | `laws-of-one-step` | [一步的规律 / The laws of one step](records/laws-of-one-step.md) | theorem | recorded-checked |
 | `laws-of-one-step-complete` | [一步规律的完备性 / Completeness of the laws of one step](records/laws-of-one-step-complete.md) | theorem | recorded-checked |
+| `learnable-through-registration` | [经其识所能学者 / What a learner can learn through its registration](records/learnable-through-registration.md) | theorem | recorded-checked |
 | `learned-procedure-transmission` | [学习方式经实际表现进入重构 / Learning procedures reconstructed through actual performance](records/learned-procedure-transmission.md) | theorem | recorded-checked |
 | `learning-by-refutation` | [按否证学习 / Learning by refutation](records/learning-by-refutation.md) | theorem | recorded-checked |
 | `least-footprint-where-idleness-decided` | [闲置可判定处的最小足迹与最少次序 / The least footprint and least order where idleness is decided](records/least-footprint-where-idleness-decided.md) | theorem | recorded-checked |
@@ -199,7 +200,7 @@
 | `supported-renewal-recovery` | [仍受支持的修复与维持关系再形成 / Supported repair and reformation of a sustaining relation](records/supported-renewal-recovery.md) | theorem | recorded-checked |
 | `target-capture` | [目标的捕获：带着目标的亲代留下更多后代时目标的份额上升；所立者衰减不断则选择停止；下一配置取决于规则时只扰动状态被重新吸收 / The capture of a target: a target's share rises where its carriers leave more offspring; running down stops the selection; where the next configuration depends on the rule, perturbing the state alone is re-absorbed](records/target-capture.md) | theorem | recorded-checked |
 | `testing-within-registration` | [识之内的检验 / Testing within registration](records/testing-within-registration.md) | theorem | recorded-checked |
-| `tests-fix-likeness-where-determined` | [确定之处检验固定相同 / Tests fix likeness where determined](records/tests-fix-likeness-where-determined.md) | theorem | recorded-checked |
+| `tests-fix-likeness-where-determined` | [固定相同的检验 / Tests that fix likeness](records/tests-fix-likeness-where-determined.md) | theorem | recorded-checked |
 | `the-split-that-makes-sense` | [有意义的切分与从历史读出的状态 / The split that makes sense, and states read off a history](records/the-split-that-makes-sense.md) | theorem | recorded-checked |
 | `theory-of-becoming-foundation` | [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](records/theory-of-becoming-foundation.md) | target | open |
 | `timely-response-necessity` | [及时回应的必要关系 / Necessary relations for a timely response](records/timely-response-necessity.md) | theorem | recorded-checked |

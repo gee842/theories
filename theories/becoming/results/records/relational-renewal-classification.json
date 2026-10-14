@@ -253,7 +253,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
       "role": "proof",
-      "sha256": "1cd6982a0e56c6fa79989069d46919631ac3ea4d2857d31b193fc1e068c693e6",
+      "sha256": "3a3f6f14be13f062a4bfe39eef3bd84b9c8fd793d2bbbd8f5dbdca98eee2e5e0",
       "declarations": [
         "Becoming.SupportGated.flow",
         "Becoming.SupportGated.web",
@@ -296,9 +296,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
       "role": "receipt",
-      "sha256": "56724d8ceb2dbe4bf3f4e292590ac7c8e5ee9401deca7c636e4b852e44ee6f82",
+      "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
       "declarations": []
     },
     {
@@ -325,7 +325,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -367,6 +367,10 @@
     {
       "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
       "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：RenewalBridge.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to RenewalBridge.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged)."
     }
   ],
   "text_versions": [

@@ -2270,7 +2270,7 @@ Imports: `CalibrationRenewal`
 <a id="module-314ffd0b4f8a"></a>
 
 <details>
-<summary>LearnedProcedureTransmission.lean — 50 explicit declarations</summary>
+<summary>LearnedProcedureTransmission.lean — 57 explicit declarations</summary>
 
 [原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md)
 
@@ -2291,25 +2291,32 @@ Imports: `CalibrationRenewal`
 | [LearnedProcedureTransmission.exposed_accounts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L145) | 145 |
 | [LearnedProcedureTransmission.reconstructed_accounts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L158) | 158 |
 | [LearnedProcedureTransmission.reconstructed_record_enters_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L172) | 172 |
-| [LearnedProcedureTransmission.two_exposures_form_record](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L189) | 189 |
-| [LearnedProcedureTransmission.actual_acquisition_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L195) | 195 |
-| [LearnedProcedureTransmission.ten_cycles_length](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L210) | 210 |
-| [LearnedProcedureTransmission.initial_both](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L212) | 212 |
-| [LearnedProcedureTransmission.executed_parent_returns](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L215) | 215 |
-| [LearnedProcedureTransmission.actual_parent_history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L237) | 237 |
-| [LearnedProcedureTransmission.actual_reconstruction](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L257) | 257 |
-| [LearnedProcedureTransmission.both_reconstruct_and_counts_differ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L261) | 261 |
-| [LearnedProcedureTransmission.actual_successor_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L266) | 266 |
-| [LearnedProcedureTransmission.actual_successor_exposure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L292) | 292 |
-| [LearnedProcedureTransmission.complete_formation_transmission_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L303) | 303 |
-| [LearnedProcedureTransmission.reconstructed_updater_really_learns](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L318) | 318 |
-| [LearnedProcedureTransmission.procedure_conversion_changes_next_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L326) | 326 |
-| [LearnedProcedureTransmission.erased_record_changes_first_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L337) | 337 |
-| [LearnedProcedureTransmission.support_or_material_blocks](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L347) | 347 |
-| [LearnedProcedureTransmission.exhausted_source_blocks](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L352) | 352 |
-| [LearnedProcedureTransmission.unchanged_task_equal_returns](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L356) | 356 |
-| [LearnedProcedureTransmission.material_limit_equalizes_counts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L367) | 367 |
-| [LearnedProcedureTransmission.separate_future_channel_control](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L374) | 374 |
+| [LearnedProcedureTransmission.expose_isSome_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L187) | 187 |
+| [LearnedProcedureTransmission.exposed_kit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L199) | 199 |
+| [LearnedProcedureTransmission.reconstruct_isSome_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L213) | 213 |
+| [LearnedProcedureTransmission.reconstruct_inherits](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L226) | 226 |
+| [LearnedProcedureTransmission.reconstruct_after_exposure_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L238) | 238 |
+| [LearnedProcedureTransmission.cycle_transmits](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L247) | 247 |
+| [LearnedProcedureTransmission.two_exposures_form_record](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L267) | 267 |
+| [LearnedProcedureTransmission.actual_acquisition_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L273) | 273 |
+| [LearnedProcedureTransmission.ten_cycles_length](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L288) | 288 |
+| [LearnedProcedureTransmission.initial_both](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L290) | 290 |
+| [LearnedProcedureTransmission.executed_parent_returns](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L293) | 293 |
+| [LearnedProcedureTransmission.actual_parent_history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L315) | 315 |
+| [LearnedProcedureTransmission.actual_reconstruction](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L335) | 335 |
+| [LearnedProcedureTransmission.both_reconstruct_and_counts_differ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L339) | 339 |
+| [LearnedProcedureTransmission.actual_successor_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L344) | 344 |
+| [LearnedProcedureTransmission.actual_successor_exposure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L370) | 370 |
+| [LearnedProcedureTransmission.complete_formation_transmission_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L381) | 381 |
+| [LearnedProcedureTransmission.history_transmits](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L399) | 399 |
+| [LearnedProcedureTransmission.reconstructed_updater_really_learns](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L409) | 409 |
+| [LearnedProcedureTransmission.procedure_conversion_changes_next_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L417) | 417 |
+| [LearnedProcedureTransmission.erased_record_changes_first_use](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L428) | 428 |
+| [LearnedProcedureTransmission.support_or_material_blocks](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L438) | 438 |
+| [LearnedProcedureTransmission.exhausted_source_blocks](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L443) | 443 |
+| [LearnedProcedureTransmission.unchanged_task_equal_returns](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L447) | 447 |
+| [LearnedProcedureTransmission.material_limit_equalizes_counts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L458) | 458 |
+| [LearnedProcedureTransmission.separate_future_channel_control](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L465) | 465 |
 
 定义与类型 / Definitions and types:
 
@@ -2327,12 +2334,12 @@ Imports: `CalibrationRenewal`
 - `def` [LearnedProcedureTransmission.inheritedProcedure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L113) (L113)
 - `def` [LearnedProcedureTransmission.inheritedRecord](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L118) (L118)
 - `def` [LearnedProcedureTransmission.reconstruct](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L123) (L123)
-- `def` [LearnedProcedureTransmission.firstSeed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L183) (L183)
-- `def` [LearnedProcedureTransmission.beforeTraining](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L186) (L186)
-- `def` [LearnedProcedureTransmission.tenCycles](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L208) (L208)
-- `def` [LearnedProcedureTransmission.parentAfter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L229) (L229)
-- `def` [LearnedProcedureTransmission.daughterState](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L247) (L247)
-- `def` [LearnedProcedureTransmission.successorAfter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L284) (L284)
+- `def` [LearnedProcedureTransmission.firstSeed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L261) (L261)
+- `def` [LearnedProcedureTransmission.beforeTraining](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L264) (L264)
+- `def` [LearnedProcedureTransmission.tenCycles](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L286) (L286)
+- `def` [LearnedProcedureTransmission.parentAfter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L307) (L307)
+- `def` [LearnedProcedureTransmission.daughterState](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L325) (L325)
+- `def` [LearnedProcedureTransmission.successorAfter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean#L362) (L362)
 
 </details>
 
@@ -2971,6 +2978,123 @@ Imports: `PracticalJudgment`
 定义与类型 / Definitions and types:
 
 - `def` [ConcernExtension.extend](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean#L10) (L10)
+
+</details>
+
+<a id="module-f2a3bd8b06de"></a>
+
+<details>
+<summary>CopyingInstances.lean — 98 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean`
+
+Imports: `Becoming.Copying`, `Becoming.Countdown`, `CopyingCorrection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.CopyingInstances.mem_iff_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L75) | 75 |
+| [Becoming.CopyingInstances.erase_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L85) | 85 |
+| [Becoming.CopyingInstances.nth_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L93) | 93 |
+| [Becoming.CopyingInstances.setAt_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L98) | 98 |
+| [Becoming.CopyingInstances.final_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L103) | 103 |
+| [Becoming.CopyingInstances.supplies_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L108) | 108 |
+| [Becoming.CopyingInstances.draw_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L123) | 123 |
+| [Becoming.CopyingInstances.use_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L128) | 128 |
+| [Becoming.CopyingInstances.use_pair_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L133) | 133 |
+| [Becoming.CopyingInstances.view_tick](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L138) | 138 |
+| [Becoming.CopyingInstances.view_steps](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L151) | 151 |
+| [Becoming.CopyingInstances.view_copy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L157) | 157 |
+| [Becoming.CopyingInstances.copy_cells_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L168) | 168 |
+| [Becoming.CopyingInstances.copy_tracks](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L176) | 176 |
+| [Becoming.CopyingInstances.reproduce_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L188) | 188 |
+| [Becoming.CopyingInstances.template_pool_reproduce_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L213) | 213 |
+| [Becoming.CopyingInstances.release_view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L221) | 221 |
+| [Becoming.CopyingInstances.batch_view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L243) | 243 |
+| [Becoming.CopyingInstances.batch_all_released_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L303) | 303 |
+| [Becoming.CopyingInstances.batch_all_released_swap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L317) | 317 |
+| [Becoming.CopyingInstances.local_ranking_from_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L336) | 336 |
+| [Becoming.CopyingInstances.third_structure_from_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L345) | 345 |
+| [Becoming.CopyingInstances.strand_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L362) | 362 |
+| [Becoming.CopyingInstances.reproduce_built_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L375) | 375 |
+| [Becoming.CopyingInstances.reproduce_built](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L381) | 381 |
+| [Becoming.CopyingInstances.copy_used_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L397) | 397 |
+| [Becoming.CopyingInstances.reproduce_strand_used](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L411) | 411 |
+| [Becoming.CopyingInstances.all_released_iff_batch](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L430) | 430 |
+| [Becoming.CopyingInstances.lineage_released_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L455) | 455 |
+| [Becoming.CopyingInstances.lineage_of_released](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L469) | 469 |
+| [Becoming.CopyingInstances.lineage_used_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L489) | 489 |
+| [Becoming.CopyingInstances.repeatedFeed_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L511) | 511 |
+| [Becoming.CopyingInstances.finite_lineage_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L518) | 518 |
+| [Becoming.CopyingInstances.strands_do_not_show_release](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L534) | 534 |
+| [Becoming.CopyingInstances.length_alternatingFrom](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L556) | 556 |
+| [Becoming.CopyingInstances.use_unit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L563) | 563 |
+| [Becoming.CopyingInstances.grow_fixed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L567) | 567 |
+| [Becoming.CopyingInstances.grow_view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L584) | 584 |
+| [Becoming.CopyingInstances.grow_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L626) | 626 |
+| [Becoming.CopyingInstances.mature_forms_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L636) | 636 |
+| [Becoming.CopyingInstances.attach_path_shaped](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L642) | 642 |
+| [Becoming.CopyingInstances.grow_path_shaped](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L650) | 650 |
+| [Becoming.CopyingInstances.grow_strand_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L658) | 658 |
+| [Becoming.CopyingInstances.mature_strand_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L673) | 673 |
+| [Becoming.CopyingInstances.required_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L677) | 677 |
+| [Becoming.CopyingInstances.attach_used](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L681) | 681 |
+| [Becoming.CopyingInstances.grow_used](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L686) | 686 |
+| [Becoming.CopyingInstances.reproduce_used](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L698) | 698 |
+| [Becoming.CopyingInstances.generation_used](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L711) | 711 |
+| [Becoming.CopyingInstances.rounds_used](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L721) | 721 |
+| [Becoming.CopyingInstances.rounds_mature_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L735) | 735 |
+| [Becoming.CopyingInstances.rounds_follow_doubling](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L763) | 763 |
+| [Becoming.CopyingInstances.tick_template](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L782) | 782 |
+| [Becoming.CopyingInstances.readAt_tick](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L790) | 790 |
+| [Becoming.CopyingInstances.tick_work_view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L798) | 798 |
+| [Becoming.CopyingInstances.operate_view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L825) | 825 |
+| [Becoming.CopyingInstances.operate_copies_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L839) | 839 |
+| [Becoming.CopyingInstances.reads_of_getElem](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L858) | 858 |
+| [Becoming.CopyingInstances.registered_copy_cells](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L870) | 870 |
+| [Becoming.CopyingInstances.product_extends](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L881) | 881 |
+| [Becoming.CopyingInstances.product_extends_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L889) | 889 |
+| [Becoming.CopyingInstances.product_gated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L902) | 902 |
+| [Becoming.CopyingInstances.contact_course_keeps_product](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L919) | 919 |
+| [Becoming.CopyingInstances.product_change_passes_copy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L925) | 925 |
+| [Becoming.CopyingInstances.totals_kept](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L935) | 935 |
+| [Becoming.CopyingInstances.totals_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L944) | 944 |
+| [Becoming.CopyingInstances.extend_path](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L954) | 954 |
+| [Becoming.CopyingInstances.tick_path_shaped](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L959) | 959 |
+| [Becoming.CopyingInstances.path_shaped_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L972) | 972 |
+| [Becoming.CopyingInstances.operate_path_shaped](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L995) | 995 |
+| [Becoming.CopyingInstances.operate_strand_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1004) | 1004 |
+| [Becoming.CopyingInstances.registered_copy_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1023) | 1023 |
+| [Becoming.CopyingInstances.registered_inheritance_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1042) | 1042 |
+| [Becoming.CopyingInstances.defects_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1058) | 1058 |
+| [Becoming.CopyingInstances.exchange_view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1067) | 1067 |
+| [Becoming.CopyingInstances.inspect_view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1083) | 1083 |
+| [Becoming.CopyingInstances.inspect_keeps_reference](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1102) | 1102 |
+| [Becoming.CopyingInstances.scan_template](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1108) | 1108 |
+| [Becoming.CopyingInstances.scan_view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1113) | 1113 |
+| [Becoming.CopyingInstances.inspect_le_iff_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1135) | 1135 |
+| [Becoming.CopyingInstances.scan_le_from_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1156) | 1156 |
+| [Becoming.CopyingInstances.faithfulAt_of_faithful](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1167) | 1167 |
+| [Becoming.CopyingInstances.scan_faithful_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1176) | 1176 |
+| [Becoming.CopyingInstances.matches_reference_from_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1185) | 1185 |
+| [Becoming.CopyingInstances.product_is_template_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1196) | 1196 |
+| [Becoming.CopyingInstances.wrong_reference_unfaithful](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1203) | 1203 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.CopyingInstances.view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L119) (L119)
+- `def` [Becoming.CopyingInstances.copied](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L238) (L238)
+- `def` [Becoming.CopyingInstances.AllReleased](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L369) (L369)
+- `def` [Becoming.CopyingInstances.alternatingFrom](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L552) (L552)
+- `def` [Becoming.CopyingInstances.unit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L561) (L561)
+- `def` [Becoming.CopyingInstances.ofGrow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L576) (L576)
+- `def` [Becoming.CopyingInstances.ofScan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L580) (L580)
+- `def` [Becoming.CopyingInstances.copyGate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L895) (L895)
+- `def` [Becoming.CopyingInstances.totals](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L931) (L931)
+- `def` [Becoming.CopyingInstances.PathShaped](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L951) (L951)
+- `def` [Becoming.CopyingInstances.withWork](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1124) (L1124)
+- `def` [Becoming.CopyingInstances.ofCopy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean#L1128) (L1128)
 
 </details>
 
@@ -4814,6 +4938,139 @@ Imports: `Std`
 
 </details>
 
+<a id="module-589a347ca85c"></a>
+
+<details>
+<summary>MachineInstances.lean — 114 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean`
+
+Imports: `Becoming.Instances`, `Becoming.CrossSituational`, `EncounterChoice`, `RetrospectiveBinding`, `GoalFormationRevision`, `JointPracticeContinuation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.MachineInstances.segments_of_groups](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L87) | 87 |
+| [Becoming.MachineInstances.readForms_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L91) | 91 |
+| [Becoming.MachineInstances.interprets_every_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L102) | 102 |
+| [Becoming.MachineInstances.learned_groups](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L120) | 120 |
+| [Becoming.MachineInstances.learned_interprets_every](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L123) | 123 |
+| [Becoming.MachineInstances.coordinated_groups](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L127) | 127 |
+| [Becoming.MachineInstances.coordinated_resolves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L129) | 129 |
+| [Becoming.MachineInstances.coordinated_interprets_every](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L134) | 134 |
+| [Becoming.MachineInstances.acquired_groups](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L139) | 139 |
+| [Becoming.MachineInstances.acquired_resolves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L142) | 142 |
+| [Becoming.MachineInstances.acquired_interprets_every](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L147) | 147 |
+| [Becoming.MachineInstances.retrospective_groups](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L152) | 152 |
+| [Becoming.MachineInstances.retrospective_interprets_every](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L157) | 157 |
+| [Becoming.MachineInstances.experienced_groups](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L163) | 163 |
+| [Becoming.MachineInstances.experienced_parses_every](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L166) | 166 |
+| [Becoming.MachineInstances.edges_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L174) | 174 |
+| [Becoming.MachineInstances.edges_all_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L184) | 184 |
+| [Becoming.MachineInstances.countP_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L189) | 189 |
+| [Becoming.MachineInstances.beq_sound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L197) | 197 |
+| [Becoming.MachineInstances.beq_pair](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L200) | 200 |
+| [Becoming.MachineInstances.bond_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L205) | 205 |
+| [Becoming.MachineInstances.bond_functional](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L219) | 219 |
+| [Becoming.MachineInstances.summary_carries_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L233) | 233 |
+| [Becoming.MachineInstances.summary_every_word](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L241) | 241 |
+| [Becoming.MachineInstances.cycle_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L254) | 254 |
+| [Becoming.MachineInstances.cycles_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L273) | 273 |
+| [Becoming.MachineInstances.cycles_learning_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L307) | 307 |
+| [Becoming.MachineInstances.cycles_unselected_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L314) | 314 |
+| [Becoming.MachineInstances.learning_loss](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L323) | 323 |
+| [Becoming.MachineInstances.operateMany_learning](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L336) | 336 |
+| [Becoming.MachineInstances.completed_isSome_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L382) | 382 |
+| [Becoming.MachineInstances.revised_class](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L390) | 390 |
+| [Becoming.MachineInstances.fields_of](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L400) | 400 |
+| [Becoming.MachineInstances.revision_continues](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L419) | 419 |
+| [Becoming.MachineInstances.harmful_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L447) | 447 |
+| [Becoming.MachineInstances.harmful_bounds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L464) | 464 |
+| [Becoming.MachineInstances.practice_process_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L495) | 495 |
+| [Becoming.MachineInstances.practice_run_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L497) | 497 |
+| [Becoming.MachineInstances.practice_trace_iff_run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L506) | 506 |
+| [Becoming.MachineInstances.methods_kept](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L512) | 512 |
+| [Becoming.MachineInstances.methods_inherited](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L547) | 547 |
+| [Becoming.MachineInstances.practice_rule_kept](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L553) | 553 |
+| [Becoming.MachineInstances.practice_rule_inherited](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L607) | 607 |
+| [Becoming.MachineInstances.complete_history_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L613) | 613 |
+| [Becoming.MachineInstances.compatible_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L633) | 633 |
+| [Becoming.MachineInstances.candidates_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L642) | 642 |
+| [Becoming.MachineInstances.resolve_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L650) | 650 |
+| [Becoming.MachineInstances.resolve_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L669) | 669 |
+| [Becoming.MachineInstances.interprets_every_iff_separated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L690) | 690 |
+| [Becoming.MachineInstances.encounter_inputs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L737) | 737 |
+| [Becoming.MachineInstances.single_word](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L744) | 744 |
+| [Becoming.MachineInstances.encounter_records](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L749) | 749 |
+| [Becoming.MachineInstances.step_inputs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L759) | 759 |
+| [Becoming.MachineInstances.step_records](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L785) | 785 |
+| [Becoming.MachineInstances.enact_inputs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L806) | 806 |
+| [Becoming.MachineInstances.enact_records](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L817) | 817 |
+| [Becoming.MachineInstances.scene_interprets_every_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L833) | 833 |
+| [Becoming.MachineInstances.coordinated_enacts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L847) | 847 |
+| [Becoming.MachineInstances.start_groups](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L849) | 849 |
+| [Becoming.MachineInstances.start_distinct](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L851) | 851 |
+| [Becoming.MachineInstances.coordinated_heard](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L858) | 858 |
+| [Becoming.MachineInstances.coordinated_separated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L862) | 862 |
+| [Becoming.MachineInstances.coordinated_from_history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L871) | 871 |
+| [Becoming.MachineInstances.stationary_enacts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L880) | 880 |
+| [Becoming.MachineInstances.stationary_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L884) | 884 |
+| [Becoming.MachineInstances.mistimed_enacts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L898) | 898 |
+| [Becoming.MachineInstances.mistimed_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L902) | 902 |
+| [Becoming.MachineInstances.encounter_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L929) | 929 |
+| [Becoming.MachineInstances.speak_records](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L940) | 940 |
+| [Becoming.MachineInstances.word_eq_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L980) | 980 |
+| [Becoming.MachineInstances.stands_named](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L983) | 983 |
+| [Becoming.MachineInstances.naming_narrows](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1012) | 1012 |
+| [Becoming.MachineInstances.local_naming_narrows](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1031) | 1031 |
+| [Becoming.MachineInstances.acquired_repertoire](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1042) | 1042 |
+| [Becoming.MachineInstances.acquired_distinct](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1045) | 1045 |
+| [Becoming.MachineInstances.acquired_separated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1050) | 1050 |
+| [Becoming.MachineInstances.acquired_from_separation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1057) | 1057 |
+| [Becoming.MachineInstances.mem_alternatives](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1072) | 1072 |
+| [Becoming.MachineInstances.view_candidates](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1086) | 1086 |
+| [Becoming.MachineInstances.retrospective_resolves_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1102) | 1102 |
+| [Becoming.MachineInstances.produced_of_calibration](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1130) | 1130 |
+| [Becoming.MachineInstances.coverage_from_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1150) | 1150 |
+| [Becoming.MachineInstances.retrospective_repertoire](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1166) | 1166 |
+| [Becoming.MachineInstances.retrospective_distinct](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1170) | 1170 |
+| [Becoming.MachineInstances.retrospective_separated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1176) | 1176 |
+| [Becoming.MachineInstances.retrospective_from_separation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1184) | 1184 |
+| [Becoming.MachineInstances.changed_route_unproduced](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1193) | 1193 |
+| [Becoming.MachineInstances.better_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1207) | 1207 |
+| [Becoming.MachineInstances.completed_iff_better](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1224) | 1224 |
+| [Becoming.MachineInstances.apply_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1247) | 1247 |
+| [Becoming.MachineInstances.infer_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1249) | 1249 |
+| [Becoming.MachineInstances.round_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1256) | 1256 |
+| [Becoming.MachineInstances.round_trains](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1280) | 1280 |
+| [Becoming.MachineInstances.trained_round_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1288) | 1288 |
+| [Becoming.MachineInstances.trained_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1298) | 1298 |
+| [Becoming.MachineInstances.complete_history_rounds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1310) | 1310 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.MachineInstances.Groups](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L83) (L83)
+- `def` [Becoming.MachineInstances.lossPer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L321) (L321)
+- `def` [Becoming.MachineInstances.learningRecord](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L330) (L330)
+- `def` [Becoming.MachineInstances.revises](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L486) (L486)
+- `def` [Becoming.MachineInstances.adoptsRule](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L491) (L491)
+- `def` [Becoming.MachineInstances.bearsOn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L627) (L627)
+- `def` [Becoming.MachineInstances.offersOf](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L631) (L631)
+- `def` [Becoming.MachineInstances.Separated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L660) (L660)
+- `inductive` [Becoming.MachineInstances.SceneMove](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L708) (L708)
+- `def` [Becoming.MachineInstances.sceneStep](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L713) (L713)
+- `def` [Becoming.MachineInstances.enact](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L718) (L718)
+- `def` [Becoming.MachineInstances.heard](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L724) (L724)
+- `def` [Becoming.MachineInstances.heardAlong](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L733) (L733)
+- `def` [Becoming.MachineInstances.coordinatedMoves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L844) (L844)
+- `def` [Becoming.MachineInstances.stationaryMoves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L878) (L878)
+- `def` [Becoming.MachineInstances.mistimedMoves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L895) (L895)
+- `def` [Becoming.MachineInstances.namedRecords](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L923) (L923)
+- `def` [Becoming.MachineInstances.afterRound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean#L1239) (L1239)
+
+</details>
+
 <a id="module-878f7de6ea2c"></a>
 
 <details>
@@ -5541,6 +5798,56 @@ Imports: `GenerativeComparison`, `PracticalJudgment`
 
 </details>
 
+<a id="module-450a4654f564"></a>
+
+<details>
+<summary>ProtocolInstances.lean — 31 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean`
+
+Imports: `Becoming.Countdown`, `ReservedShutdown`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.ProtocolInstances.mediated_history_cons](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L49) | 49 |
+| [Becoming.ProtocolInstances.mediated_history_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L56) | 56 |
+| [Becoming.ProtocolInstances.coverage_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L69) | 69 |
+| [Becoming.ProtocolInstances.mediated_history_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L75) | 75 |
+| [Becoming.ProtocolInstances.recoverable_history_cons](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L87) | 87 |
+| [Becoming.ProtocolInstances.recoverable_history_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L95) | 95 |
+| [Becoming.ProtocolInstances.safety_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L109) | 109 |
+| [Becoming.ProtocolInstances.interrupted_history_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L115) | 115 |
+| [Becoming.ProtocolInstances.charge_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L160) | 160 |
+| [Becoming.ProtocolInstances.charge_none](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L166) | 166 |
+| [Becoming.ProtocolInstances.counts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L180) | 180 |
+| [Becoming.ProtocolInstances.resumeSteps_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L213) | 213 |
+| [Becoming.ProtocolInstances.publishes_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L225) | 225 |
+| [Becoming.ProtocolInstances.pending_until_published](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L242) | 242 |
+| [Becoming.ProtocolInstances.reserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L270) | 270 |
+| [Becoming.ProtocolInstances.run_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L302) | 302 |
+| [Becoming.ProtocolInstances.schedule_valid](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L313) | 313 |
+| [Becoming.ProtocolInstances.schedule_stops](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L322) | 322 |
+| [Becoming.ProtocolInstances.supported_schedule_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L334) | 334 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.ProtocolInstances.mediated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L46) (L46)
+- `def` [Becoming.ProtocolInstances.recoverable](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L84) (L84)
+- `def` [Becoming.ProtocolInstances.busy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L124) (L124)
+- `def` [Becoming.ProtocolInstances.done](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L128) (L128)
+- `def` [Becoming.ProtocolInstances.work](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L132) (L132)
+- `def` [Becoming.ProtocolInstances.fuel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L138) (L138)
+- `def` [Becoming.ProtocolInstances.unitState](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L144) (L144)
+- `def` [Becoming.ProtocolInstances.afterUnit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L149) (L149)
+- `def` [Becoming.ProtocolInstances.advanced](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L154) (L154)
+- `def` [Becoming.ProtocolInstances.valid](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L257) (L257)
+- `def` [Becoming.ProtocolInstances.exit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L262) (L262)
+- `def` [Becoming.ProtocolInstances.margin](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L265) (L265)
+
+</details>
+
 <a id="module-bec079c8bd79"></a>
 
 <details>
@@ -6103,6 +6410,52 @@ Imports: `ReservedShutdown`, `MediatedControlCases`
 - `def` [ReservedShutdownCases.outputs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdownCases.lean#L14) (L14)
 - `def` [ReservedShutdownCases.events](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdownCases.lean#L24) (L24)
 - `def` [ReservedShutdownCases.main](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdownCases.lean#L27) (L27)
+
+</details>
+
+<a id="module-4281c89a5b07"></a>
+
+<details>
+<summary>RetrodictionInstances.lean — 27 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean`
+
+Imports: `Becoming.Retrodiction`, `HistoricalBinding`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.RetrodictionInstances.acquire_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L48) | 48 |
+| [Becoming.RetrodictionInstances.fits_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L57) | 57 |
+| [Becoming.RetrodictionInstances.mem_learn_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L66) | 66 |
+| [Becoming.RetrodictionInstances.actual_history_retained_from_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L72) | 72 |
+| [Becoming.RetrodictionInstances.packet_read_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L85) | 85 |
+| [Becoming.RetrodictionInstances.shares_read_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L102) | 102 |
+| [Becoming.RetrodictionInstances.common_probe_reveals](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L118) | 118 |
+| [Becoming.RetrodictionInstances.step_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L133) | 133 |
+| [Becoming.RetrodictionInstances.course_changes_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L142) | 142 |
+| [Becoming.RetrodictionInstances.changes_of_envelope](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L152) | 152 |
+| [Becoming.RetrodictionInstances.naming_bracketed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L157) | 157 |
+| [Becoming.RetrodictionInstances.controls_settle_naming](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L172) | 172 |
+| [Becoming.RetrodictionInstances.deterioration_settled](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L188) | 188 |
+| [Becoming.RetrodictionInstances.improvement_settled](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L193) | 193 |
+| [Becoming.RetrodictionInstances.not_separated_of_same](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L200) | 200 |
+| [Becoming.RetrodictionInstances.same_records](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L206) | 206 |
+| [Becoming.RetrodictionInstances.late_control_reading_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L213) | 213 |
+| [Becoming.RetrodictionInstances.split_controls_reading_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L225) | 225 |
+| [Becoming.RetrodictionInstances.excursion_course](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L233) | 233 |
+| [Becoming.RetrodictionInstances.excursion_agreed_wrong](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L244) | 244 |
+| [Becoming.RetrodictionInstances.excursion_reading_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L257) | 257 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.RetrodictionInstances.emitRecorded](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L40) (L40)
+- `def` [Becoming.RetrodictionInstances.toRecord](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L45) (L45)
+- `def` [Becoming.RetrodictionInstances.packetReports](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L78) (L78)
+- `def` [Becoming.RetrodictionInstances.moment](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L124) (L124)
+- `def` [Becoming.RetrodictionInstances.sharesCourse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L131) (L131)
+- `def` [Becoming.RetrodictionInstances.earlyChange](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean#L221) (L221)
 
 </details>
 

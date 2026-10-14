@@ -200,7 +200,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## becoming-finite-horizon ← becoming-stepwise-reading
 
-`formal-reuse` — 前缀中的每个事件在更新之内（RenewingAt）；由此逐步读法记入消耗运行的前缀。 / Each event of the prefix is within renewal (RenewingAt), so the stepwise reading credits the prefix of the consuming run.
+`formal-reuse` — 前缀中的每个事件在更新之内（RenewingAt）；由此逐步读法记入消耗运行的前缀。 / Each event of the prefix is within renewal (RenewingAt), so the stepwise reading includes the prefix of the consuming run.
 
 **Producer output / 上游输出:** RenewingAt 与依存网上的 RenewingIn、ConsumingIn。 / RenewingAt, with RenewingIn and ConsumingIn on webs.
 
@@ -288,7 +288,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 逐步读法的见证运行与依存网。 / The stepwise reading's witness runs and webs.
 
-**Consumer input / 下游输入:** 周期读法下的记入与扣下。 / What the cycle readings credit and withhold.
+**Consumer input / 下游输入:** 周期读法下的记入与扣下。 / What the cycle readings include and withhold.
 
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 
@@ -1100,7 +1100,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## configurations-alike-by-relation ← branching-tests-bisimulation
 
-`formal-reuse` — 复用 ExplanatoryBranching.Bisimulation、Same 与 bisimulation_implies_same：桥接证明它的互模拟就是核心的，相同的配置通过每个分支检验。反方向（同测推出互模拟）要求像有限，由外围的 same_iff_bisimilar 给出，核心没有陈述。 / Reuses ExplanatoryBranching.Bisimulation, Same and bisimulation_implies_same: the bridge proves its bisimulation is the core's, and alike configurations pass every branching test. The converse (passing the same tests gives a bisimulation) needs image-finiteness and is the periphery's same_iff_bisimilar; the core does not state it.
+`formal-reuse` — 复用 ExplanatoryBranching.Bisimulation、Same 与 bisimulation_implies_same：桥接证明它的互模拟就是核心的，相同的配置通过每个分支检验。反方向（同测推出互模拟）在外围由 same_iff_bisimilar 在像有限时经典地给出；核心在有限、已定的框架上构造性地给出（Becoming.Likeness 的 alike_iff_sameBranchingTests，以核心自己的分支检验）。 / Reuses ExplanatoryBranching.Bisimulation, Same and bisimulation_implies_same: the bridge proves its bisimulation is the core's, and alike configurations pass every branching test. The converse (passing the same tests gives a bisimulation) is given classically in the periphery for image-finite models by same_iff_bisimilar, and constructively in the core on finite decided frames (alike_iff_sameBranchingTests of Becoming.Likeness, with the core's own branching tests).
 
 **Producer output / 上游输出:** 分支检验与互模拟；互模拟推出同测。 / Branching tests and bisimulation; bisimulation gives the same tests.
 
@@ -1737,6 +1737,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
+## determinacy-up-to-likeness ← joint-difference-making
+
+`formal-reuse` — 复用 Joint 的 BreaksBy、MakesDifference 与 determined_dichotomy：二分只需动作之后的水平为一，确定是其情形（Dependence.dichotomy_of_determined）。 / Reuses Joint's BreaksBy, MakesDifference and determined_dichotomy: the dichotomy needs only one level after the move, and determinacy is a case (Dependence.dichotomy_of_determined).
+
+**Producer output / 上游输出:** 差别制造的二分（确定之下）。 / The dichotomy of difference-making, under determinacy.
+
+**Consumer input / 下游输入:** 二分在同一水平与相同之下的形式。 / The dichotomy from one level, and up to likeness.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean)
 
 ## enacted-scene-binding ← acquired-binding-compositional-use
 
@@ -2673,6 +2685,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean)
+
+## learnable-through-registration ← learning-by-refutation
+
+`formal-reuse` — 复用 record、record_congr、record_length、Refuted、Lumped、learner、lassos 与 tri：学习者、记录、否证与归并。 / Reuses record, record_congr, record_length, Refuted, Lumped, learner, lassos and tri: the learner, the record, refutation and lumping.
+
+**Producer output / 上游输出:** 学习者与所识的记录；按否证学习；归并。 / Learners and registered records; learning by refutation; lumping.
+
+**Consumer input / 下游输入:** 经识的学习者在目标上静止。 / A learner reading a registration resting on a target.
+
+**Retained conditions / 保留条件:** 套索学习者要所识的值可判定。 / The lasso learner needs registered values decided.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
+
+## learnable-through-registration ← identification-where-bounded
+
+`formal-reuse` — 复用 held_learner_rests（未给定界的学习者的静止之步）、Law.name、Law.sameFuture_iff_below、record_eq_iff、firstFit、firstFit_sound 与 firstFit_found。 / Reuses held_learner_rests (the step at which the learner not given the bound rests), Law.name, Law.sameFuture_iff_below, record_eq_iff, firstFit, firstFit_sound and firstFit_found.
+
+**Producer output / 上游输出:** 有界的记录确定所识的未来；未给定界的学习者的静止之步。 / A bounded record fixes the registered future; the step at which the learner not given the bound rests.
+
+**Consumer input / 下游输入:** 从所识读出的目标在界内学到；被给予世界的学习者。 / A target read off the registration learned within the bound; the learner given the world.
+
+**Retained conditions / 保留条件:** 世界或轨道被列表所持。 / The world or the orbit held by a list.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean)
+
+## learnable-through-registration ← configurations-alike-by-relation
+
+`formal-reuse` — 复用 Law.SameFuture：所识的未来相同。 / Reuses Law.SameFuture: the same registered future.
+
+**Producer output / 上游输出:** 所识的未来相同的配置。 / Configurations with the same registered future.
+
+**Consumer input / 下游输入:** 同样的记录。 / The same record.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
+## learnable-through-registration ← seeking-boundary
+
+`formal-reuse` — 复用 Law.fixed_rests：律不变的配置是它自己的轨道。 / Reuses Law.fixed_rests: a configuration the law leaves unchanged is its own orbit.
+
+**Producer output / 上游输出:** 不变的配置停在自身。 / A still configuration stays.
+
+**Consumer input / 下游输入:** 两个不变的配置。 / Two still configurations.
+
+**Retained conditions / 保留条件:** 律使配置不变。 / The law leaving the configuration unchanged.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean)
+
+## learnable-through-registration ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit。 / Reuses Law.orbit.
+
+**Producer output / 上游输出:** 轨道。 / Orbits.
+
+**Consumer input / 下游输入:** 所识的历程。 / Registered courses.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
 
 ## learned-procedure-transmission ← encounter-selection-and-revision
 
@@ -4718,7 +4790,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Consumer input / 下游输入:** 检验固定相同的条件与反例。 / The condition under which tests fix likeness, and its counterexample.
 
-**Retained conditions / 保留条件:** 两个框架处处在相同之下确定。 / Both frames determined up to likeness everywhere.
+**Retained conditions / 保留条件:** 线性检验：两个框架处处在相同之下确定；分支检验：两个框架有限、已定。 / Linear tests: both frames determined up to likeness everywhere; branching tests: both frames finite and decided.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
 
@@ -4920,7 +4992,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** RenewingInWithin。 / RenewingInWithin.
 
-**Consumer input / 下游输入:** 两步周期的读法记入振荡者。 / The reading over cycles of two credits the oscillator.
+**Consumer input / 下游输入:** 两步周期的读法记入振荡者。 / The reading over cycles of two includes the oscillator.
 
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 

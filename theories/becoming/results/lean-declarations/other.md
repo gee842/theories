@@ -164,6 +164,78 @@ Imports: `Std`
 
 </details>
 
+<a id="module-96b312116575"></a>
+
+<details>
+<summary>MarketInstances.lean — 53 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/formal/MarketInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/market-generativity/formal/README.md)
+
+`experiments/market-generativity/formal/MarketInstances.lean`
+
+Imports: `Becoming.Viability`, `Becoming.Lasting`, `MarketGenerativity`, `FiniteSupportObstruction`, `PartialRegimeTransition`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.MarketInstances.history_eq](../../../../experiments/market-generativity/formal/MarketInstances.lean#L71) | 71 |
+| [Becoming.MarketInstances.guardedStep_eq](../../../../experiments/market-generativity/formal/MarketInstances.lean#L77) | 77 |
+| [Becoming.MarketInstances.guardedHistory_eq](../../../../experiments/market-generativity/formal/MarketInstances.lean#L84) | 84 |
+| [Becoming.MarketInstances.worst_admissible](../../../../experiments/market-generativity/formal/MarketInstances.lean#L94) | 94 |
+| [Becoming.MarketInstances.never_fails_iff](../../../../experiments/market-generativity/formal/MarketInstances.lean#L100) | 100 |
+| [Becoming.MarketInstances.safe_closed](../../../../experiments/market-generativity/formal/MarketInstances.lean#L122) | 122 |
+| [Becoming.MarketInstances.safe_never_fails](../../../../experiments/market-generativity/formal/MarketInstances.lean#L129) | 129 |
+| [Becoming.MarketInstances.safe_within_kernel](../../../../experiments/market-generativity/formal/MarketInstances.lean#L136) | 136 |
+| [Becoming.MarketInstances.example_never_fails](../../../../experiments/market-generativity/formal/MarketInstances.lean#L142) | 142 |
+| [Becoming.MarketInstances.floor_of_stock](../../../../experiments/market-generativity/formal/MarketInstances.lean#L157) | 157 |
+| [Becoming.MarketInstances.stock_of_floor](../../../../experiments/market-generativity/formal/MarketInstances.lean#L162) | 162 |
+| [Becoming.MarketInstances.run_eq](../../../../experiments/market-generativity/formal/MarketInstances.lean#L165) | 165 |
+| [Becoming.MarketInstances.guarded_eq](../../../../experiments/market-generativity/formal/MarketInstances.lean#L173) | 173 |
+| [Becoming.MarketInstances.orbit_growth](../../../../experiments/market-generativity/formal/MarketInstances.lean#L190) | 190 |
+| [Becoming.MarketInstances.forces_failure_instance](../../../../experiments/market-generativity/formal/MarketInstances.lean#L201) | 201 |
+| [Becoming.MarketInstances.support_antitone](../../../../experiments/market-generativity/formal/MarketInstances.lean#L245) | 245 |
+| [Becoming.MarketInstances.cover_ladder](../../../../experiments/market-generativity/formal/MarketInstances.lean#L252) | 252 |
+| [Becoming.MarketInstances.history_scheduled](../../../../experiments/market-generativity/formal/MarketInstances.lean#L260) | 260 |
+| [Becoming.MarketInstances.guardedHistory_scheduled](../../../../experiments/market-generativity/formal/MarketInstances.lean#L266) | 266 |
+| [Becoming.MarketInstances.supported_prefix_instance](../../../../experiments/market-generativity/formal/MarketInstances.lean#L284) | 284 |
+| [Becoming.MarketInstances.pulse_prefix_instance](../../../../experiments/market-generativity/formal/MarketInstances.lean#L301) | 301 |
+| [Becoming.MarketInstances.partial_prefix_instance](../../../../experiments/market-generativity/formal/MarketInstances.lean#L312) | 312 |
+| [Becoming.MarketInstances.cover_exact](../../../../experiments/market-generativity/formal/MarketInstances.lean#L328) | 328 |
+| [Becoming.MarketInstances.path_eq](../../../../experiments/market-generativity/formal/MarketInstances.lean#L346) | 346 |
+| [Becoming.MarketInstances.never_lands_iff](../../../../experiments/market-generativity/formal/MarketInstances.lean#L353) | 353 |
+| [Becoming.MarketInstances.margin_iff](../../../../experiments/market-generativity/formal/MarketInstances.lean#L369) | 369 |
+| [Becoming.MarketInstances.lands_iff_margin](../../../../experiments/market-generativity/formal/MarketInstances.lean#L375) | 375 |
+| [Becoming.MarketInstances.lands_iff_no_closed](../../../../experiments/market-generativity/formal/MarketInstances.lean#L383) | 383 |
+| [Becoming.MarketInstances.fixed_point_instance](../../../../experiments/market-generativity/formal/MarketInstances.lean#L407) | 407 |
+| [Becoming.MarketInstances.rising_funnel](../../../../experiments/market-generativity/formal/MarketInstances.lean#L433) | 433 |
+| [Becoming.MarketInstances.rising_reaches](../../../../experiments/market-generativity/formal/MarketInstances.lean#L460) | 460 |
+| [Becoming.MarketInstances.share_kept](../../../../experiments/market-generativity/formal/MarketInstances.lean#L476) | 476 |
+| [Becoming.MarketInstances.influence_le](../../../../experiments/market-generativity/formal/MarketInstances.lean#L482) | 482 |
+| [Becoming.MarketInstances.settled_kept](../../../../experiments/market-generativity/formal/MarketInstances.lean#L489) | 489 |
+| [Becoming.MarketInstances.settled_reaches_share](../../../../experiments/market-generativity/formal/MarketInstances.lean#L510) | 510 |
+| [Becoming.MarketInstances.share_reaches_influence](../../../../experiments/market-generativity/formal/MarketInstances.lean#L533) | 533 |
+| [Becoming.MarketInstances.influence_reaches_landing](../../../../experiments/market-generativity/formal/MarketInstances.lean#L566) | 566 |
+| [Becoming.MarketInstances.settled_reaches_landing](../../../../experiments/market-generativity/formal/MarketInstances.lean#L596) | 596 |
+| [Becoming.MarketInstances.seed_reaches_settled](../../../../experiments/market-generativity/formal/MarketInstances.lean#L608) | 608 |
+| [Becoming.MarketInstances.seed_reaches_landing](../../../../experiments/market-generativity/formal/MarketInstances.lean#L626) | 626 |
+| [Becoming.MarketInstances.landing_side_instance](../../../../experiments/market-generativity/formal/MarketInstances.lean#L641) | 641 |
+| [Becoming.MarketInstances.rescue_landing_instance](../../../../experiments/market-generativity/formal/MarketInstances.lean#L650) | 650 |
+| [Becoming.MarketInstances.landing_boundary_instance](../../../../experiments/market-generativity/formal/MarketInstances.lean#L658) | 658 |
+| [Becoming.MarketInstances.lands_iff_funnel](../../../../experiments/market-generativity/formal/MarketInstances.lean#L673) | 673 |
+| [Becoming.MarketInstances.obstructed_seeds_instance](../../../../experiments/market-generativity/formal/MarketInstances.lean#L694) | 694 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.MarketInstances.scheduled](../../../../experiments/market-generativity/formal/MarketInstances.lean#L151) (L151)
+- `abbrev` [Becoming.MarketInstances.floor](../../../../experiments/market-generativity/formal/MarketInstances.lean#L155) (L155)
+- `def` [Becoming.MarketInstances.growth](../../../../experiments/market-generativity/formal/MarketInstances.lean#L188) (L188)
+- `def` [Becoming.MarketInstances.covered](../../../../experiments/market-generativity/formal/MarketInstances.lean#L241) (L241)
+- `def` [Becoming.MarketInstances.worstSupport](../../../../experiments/market-generativity/formal/MarketInstances.lean#L323) (L323)
+- `def` [Becoming.MarketInstances.Settled](../../../../experiments/market-generativity/formal/MarketInstances.lean#L472) (L472)
+- `def` [Becoming.MarketInstances.ShareHigh](../../../../experiments/market-generativity/formal/MarketInstances.lean#L500) (L500)
+- `def` [Becoming.MarketInstances.InfluenceLow](../../../../experiments/market-generativity/formal/MarketInstances.lean#L504) (L504)
+
+</details>
+
 <a id="module-5a3139fb2b49"></a>
 
 <details>
@@ -1781,5 +1853,54 @@ Imports: `AdmissionRevision`
 - `def` [TestingReorganization.renewalEvents](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L490) (L490)
 - `def` [TestingReorganization.borderline](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L511) (L511)
 - `def` [TestingReorganization.aliasedReports](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L512) (L512)
+
+</details>
+
+<a id="module-f82d00be1c12"></a>
+
+<details>
+<summary>VersionedTaskInstances.lean — 30 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean`
+
+Imports: `Becoming.Countdown`, `Becoming.Gated`, `Becoming.Stock`, `PendingTaskApplicability`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.VersionedTaskInstances.drain_eq](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L65) | 65 |
+| [Becoming.VersionedTaskInstances.head_advances](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L103) | 103 |
+| [Becoming.VersionedTaskInstances.valid_pending](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L140) | 140 |
+| [Becoming.VersionedTaskInstances.head_completes](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L146) | 146 |
+| [Becoming.VersionedTaskInstances.valid_head_instance](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L154) | 154 |
+| [Becoming.VersionedTaskInstances.head_pending_before](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L168) | 168 |
+| [Becoming.VersionedTaskInstances.retarget_pending](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L189) | 189 |
+| [Becoming.VersionedTaskInstances.revised_head_instance](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L208) | 208 |
+| [Becoming.VersionedTaskInstances.review_course_covered_iff](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L229) | 229 |
+| [Becoming.VersionedTaskInstances.enact_isSome_iff](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L239) | 239 |
+| [Becoming.VersionedTaskInstances.review_completes_iff](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L254) | 254 |
+| [Becoming.VersionedTaskInstances.continuation_of_completed](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L297) | 297 |
+| [Becoming.VersionedTaskInstances.continuation_eq](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L320) | 320 |
+| [Becoming.VersionedTaskInstances.continuation_isSome_iff](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L345) | 345 |
+| [Becoming.VersionedTaskInstances.harmful_continuation_instance](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L358) | 358 |
+| [Becoming.VersionedTaskInstances.relevant_risk_eq](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L370) | 370 |
+| [Becoming.VersionedTaskInstances.enact_losses](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L380) | 380 |
+| [Becoming.VersionedTaskInstances.review_losses](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L399) | 399 |
+| [Becoming.VersionedTaskInstances.review_adds_loss_iff](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L442) | 442 |
+| [Becoming.VersionedTaskInstances.covered_review_instance](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L461) | 461 |
+| [Becoming.VersionedTaskInstances.losses_kept](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L488) | 488 |
+| [Becoming.VersionedTaskInstances.losses_kept_along](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L505) | 505 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.VersionedTaskInstances.tickOut](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L61) (L61)
+- `def` [Becoming.VersionedTaskInstances.remaining](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L74) (L74)
+- `def` [Becoming.VersionedTaskInstances.Pending](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L82) (L82)
+- `def` [Becoming.VersionedTaskInstances.Delivered](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L89) (L89)
+- `def` [Becoming.VersionedTaskInstances.hop](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L94) (L94)
+- `def` [Becoming.VersionedTaskInstances.withQueue](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L98) (L98)
+- `def` [Becoming.VersionedTaskInstances.reviews](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L477) (L477)
+- `def` [Becoming.VersionedTaskInstances.clears](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean#L482) (L482)
 
 </details>

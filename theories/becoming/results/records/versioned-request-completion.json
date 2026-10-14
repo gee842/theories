@@ -101,7 +101,7 @@
     {
       "path": "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",
       "role": "proof",
-      "sha256": "06002a5dfb21df50815211db9d2fa15e258fc86357c4e48ab80308a2f379291f",
+      "sha256": "402c33bebeac53799f2aeeaf34ee6346422d6831b900ac37f64cc5f0d7fe3d73",
       "declarations": [
         "Becoming.VersionedTaskInstances.head_advances",
         "Becoming.VersionedTaskInstances.head_completes",
@@ -112,7 +112,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "sha256": "6b921ae46ee8c7502796a8623f0b2499b352808fbf770dc3766ee86ba0d7ac61",
       "declarations": []
     },
     {
@@ -122,9 +122,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json",
+      "path": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T092502.891314Z/verification.json",
       "role": "receipt",
-      "sha256": "7e6369403a9b44862d6e443160f4cd041a982a458311e9d9b37729f02fd9c062",
+      "sha256": "a96ddf7c21bc027d5eed8b1bd3c7ba6c21731d3b2f9297a5f42f6b649af3ed55",
       "declarations": []
     }
   ],
@@ -145,7 +145,7 @@
     },
     {
       "source": "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",
-      "receipt": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json",
+      "receipt": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T092502.891314Z/verification.json",
       "sha256_pointer": "/source_sha256/VersionedTaskInstances",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -171,6 +171,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Countdown 由核心回执 20261014T044840.291323Z；VersionedTaskInstances 由外围回执 20261014T041722.004469Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Countdown by core receipt 20261014T044840.291323Z; VersionedTaskInstances by peripheral receipt 20261014T041722.004469Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：VersionedTaskInstances.lean（续行、审查损失与损失保持对每个条件陈述；原有陈述不变）；BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to VersionedTaskInstances.lean (the continuation, review losses and kept losses stated for every condition; earlier statements unchanged); BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged)."
     }
   ]
 }

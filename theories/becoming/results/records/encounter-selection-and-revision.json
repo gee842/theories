@@ -134,15 +134,21 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
       "role": "receipt",
-      "sha256": "713029844cb5d1c32628dfb82972ec8cdaca00ffa62d94c4766da7818185ecf9",
+      "sha256": "9529958e4e9e29d9acd9ebff1dbe6cc734739f80577a0c75b623f85840ea2e79",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "5eac2420f6ee63068407570c18822f0b2a228e952cde2d9223c6557905406022",
+      "sha256": "6b921ae46ee8c7502796a8623f0b2499b352808fbf770dc3766ee86ba0d7ac61",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "role": "receipt",
+      "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
       "declarations": []
     }
   ],
@@ -156,8 +162,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
       "sha256_pointer": "/source_sha256/MachineInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CrossSituational.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.CrossSituational",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -202,6 +215,10 @@
     {
       "zh": "2026-10-14，开放问题计划（研究第117节）：主张改为律先行。新核心模块 Becoming.CrossSituational：后来的记录只缩小候选（candidates_append）；外围 MachineInstances：合作命名恰缩小原子可及之词的候选（naming_narrows、local_naming_narrows），acquired 51 是分离律的实例（acquired_from_separation）；选择下一次访问的规则仍是该机器的。scratch_build 实编，核心公理报告为空，外围只用标准公理；对 MachineInstances 的证明绑定仍指先前运行，落地时改指新运行。原定理与反例不变。",
       "en": "14 October 2026, open-issues plan (study section 117): the claim now states the law first. New core module Becoming.CrossSituational: later records only narrow the candidates (candidates_append); the periphery MachineInstances: cooperative naming narrows exactly the words whose atoms are accessible (naming_narrows, local_naming_narrows), and acquired 51 is an instance of the separation law (acquired_from_separation); the rule choosing the next visit stays the machine’s. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the proof binding to MachineInstances still names the earlier run and is repointed at landing. The original theorems and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；MachineInstances.lean（新增机器每段历史与每个条件的律（跨情境解析、场景与回溯绑定、实践轮）；原有陈述不变）。新绑定到本批回执的证明：CrossSituational.lean。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); MachineInstances.lean (the laws for every history and condition of the machines added (cross-situational resolution, scene and retrospective binding, the practice round); earlier statements unchanged). New proof bindings to this batch's receipts: CrossSituational.lean."
     }
   ]
 }

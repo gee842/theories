@@ -129,8 +129,8 @@
     "en": "The exact boundary concerns the specified zero-error universal positive-state arrival property, not a complete basin, all-parameter bifurcation, noisy recovery range, measured threshold, or formed intervention/entry."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 实际检查26项新定理／31项声明审计，123项继承定理／153项审计分列。作者反审已整合，无独立agent验收或新增市场观察。一般律仅经scratch实编。",
-    "en": "Lean 4.29.1 actually checks 26 new theorems / 31 declaration audits and separately 123 inherited theorems / 153 audits. Author counterreview is integrated, without independent agent acceptance or new market observations. General laws: scratch builds only."
+    "zh": "Lean 4.29.1 实际检查26项新定理／31项声明审计，123项继承定理／153项审计分列。作者反审已整合，无独立agent验收或新增市场观察。一般律已由检查器回执绑定。",
+    "en": "Lean 4.29.1 actually checks 26 new theorems / 31 declaration audits and separately 123 inherited theorems / 153 audits. Author counterreview is integrated, without independent agent acceptance or new market observations. General laws: checker receipts bound."
   },
   "references": [
     {
@@ -230,19 +230,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c25bf4b0b8574af6d2fa76b9bd9af7bce5de2cc545e9cee3d16e274b3672f598",
+      "sha256": "6b921ae46ee8c7502796a8623f0b2499b352808fbf770dc3766ee86ba0d7ac61",
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
       "role": "receipt",
-      "sha256": "6d4711df073c8ece68a00ef4097ad5b149adb2ef04c8832a145ef90d02b10e98",
+      "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
       "declarations": []
     },
     {
-      "path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/verification.json",
+      "path": "experiments/market-generativity/formal/market-instances-checks/20261014T092430.203169Z/verification.json",
       "role": "receipt",
-      "sha256": "3807bab1cb65fc9498108a8204fe318bb4a647f525cf701ad64ca6d026752e24",
+      "sha256": "51d4c318d894e59a359ff4f871fed569aad6d4bc2c4946313f5febf472d57aeb",
       "declarations": []
     }
   ],
@@ -258,6 +258,20 @@
       "source": "experiments/market-generativity/formal/RegimeTransition.lean",
       "receipt": "experiments/market-generativity/formal/partial-transition-verification.json",
       "sha256_pointer": "/sources/RegimeTransition.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lasting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/market-generativity/formal/MarketInstances.lean",
+      "receipt": "experiments/market-generativity/formal/market-instances-checks/20261014T092430.203169Z/verification.json",
+      "sha256_pointer": "/source_sha256/MarketInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -294,6 +308,10 @@
     {
       "zh": "2026-10-14，开放问题计划（研究第116节）：着陆一侧现为核心到达律的实例。Becoming.Lasting 新增到达律：漏斗族与汇聚族、复合、确定的律的轨道形式与数值变式，需要判定处各有见证定理；MarketInstances 以市场的增益估计给出漏斗，partial_finite_landing 与 5/12 边界由核心律得出（landing_side_instance、landing_boundary_instance）。Lasting.lean 与 MarketInstances.lean 改动后，第三批核验文件对它们的绑定已移去（核验文件的引用保留），有效范围中一般律的说明改为仅经scratch实编；落地时绑定新的核验文件。另审读改动后对齐研究的哈希（末尾新增第116节及其英文段；其余不变）。",
       "en": "14 October 2026, open-issues plan (study section 116): the landing side is now an instance of the core's reaching law. Becoming.Lasting adds the reaching law: funnels and basins, composition, the orbit form and the numeric variant for a determined law, with a witness theorem wherever a decision is needed; MarketInstances supplies the funnels from the market's gain estimates, so partial_finite_landing and the 5/12 boundary follow from the core's laws (landing_side_instance, landing_boundary_instance). With Lasting.lean and MarketInstances.lean changed, their batch-3 bindings were removed (the referenced verification files stay) and the validation scope's note on the general laws now says scratch builds only; the landing run binds the new verification files. The hash of the study was reconciled after reading its change (section 116 and its English paragraph appended; the rest unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）。新绑定到本批回执的证明：Lasting.lean、MarketInstances.lean；验证范围复为一般律已由检查器回执绑定。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged). New proof bindings to this batch's receipts: Lasting.lean, MarketInstances.lean; the validation scope again says the general laws are bound to checker receipts."
     }
   ]
 }

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
   "statement": {
     "zh": "每个学习者都有否证它每个主张的开放的序列；无记录固定下一个。被列表所持的世界中否证有界、静止不能被否证且只在那里静止，何时静止不被识；对类的学习是同一学习。",
     "en": "Every learner has an open course refuting each of its claims; no record fixes the next value. In a world held by a list the refutations are bounded, coming to rest is unrefuted and happens only there, and when is not registered; learning over classes is the same learning."
@@ -109,6 +109,13 @@
       "detail": {
         "zh": "归纳的规律是科学探究的必要关系的一部分；本记录不证明完整核心对科学的不可或缺性。",
         "en": "The laws of induction are part of the necessary relations of scientific inquiry; this record does not prove the whole core indispensable to science."
+      }
+    },
+    {
+      "id": "learnable-through-registration",
+      "detail": {
+        "zh": "识不分辨配置之处：某个学习者在每个配置上静止，恰当所识的未来相同的配置其目标从某步起一致；学习者仍须分辨所识的值。",
+        "en": "Where registration does not tell configurations apart: some learner rests at every configuration exactly where configurations with the same registered future have targets agreeing from some step on; the learner still tells registered values apart."
       }
     }
   ],
@@ -230,7 +237,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "09ddc1df49b69cb1258c5dfafdf3647784138d465ecca329fbae65606796d81a",
+      "sha256": "39b89d106a813b1c700d979f56aea2a0465fca3200b1c32e8e37bed437ff9064",
       "declarations": [
         "Becoming.Web.tail_unrefuted"
       ]
@@ -244,19 +251,25 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "sha256": "6b921ae46ee8c7502796a8623f0b2499b352808fbf770dc3766ee86ba0d7ac61",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "91ef4a5b3fbb55494834602713e7baa587235953342ea1d6fdaa35968efb138d",
+      "sha256": "aa3bbbcef9324fc197303b2884537ee3e6f912d8fbd24d3865cc0f639e7bfe8c",
       "declarations": []
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md",
       "role": "provenance",
       "sha256": "c648f395f1da2e423e27a2b801e2421550867f71209ac7c63c3aa7fb1f071e1e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "role": "receipt",
+      "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
       "declarations": []
     }
   ],
@@ -277,15 +290,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "识不分辨值时（阈下）的学习；概率的读法；与 P71（在其所识之内的识在每一步不完全）的连接；Ren 对“归纳被消解为规律”的判断。",
-    "en": "Learning where registration does not tell values apart (below threshold); a probabilistic reading; the connection with P71 (a registration within what it registers incomplete at every step); Ren's judgment on “induction resolved into laws”."
+    "zh": "所识的值本身不被分辨时的学习（识不分辨配置时的可学性见 learnable-through-registration）；概率的读法；与 P71（在其所识之内的识在每一步不完全）的连接；Ren 对“归纳被消解为规律”的判断。",
+    "en": "Learning where the registered values themselves are not told apart (learnability where registration does not tell configurations apart is in learnable-through-registration); a probabilistic reading; the connection with P71 (a registration within what it registers incomplete at every step); Ren's judgment on “induction resolved into laws”."
   },
   "history": [
     {
@@ -379,6 +392,14 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为 Becoming.Viability、Countdown、Lasting、Copying、Retrodiction 及五个外围实例模块增行，总数改据回执 20261014T044840.291323Z；其余文字不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
+    },
+    {
+      "zh": "2026-10-14：下一步中“识不分辨值时（阈下）的学习”一项由 learnable-through-registration 推进（研究 §119，回执 20261014T091930.724493Z）：在识不分辨配置之处，某个学习者在每个配置上静止，恰当所识的未来相同的配置其目标从某步起一致；所识的值本身仍须可分辨，这一项留在下一步。本记录的定理与验证范围不变。",
+      "en": "2026-10-14: the next-step item on learning where registration does not tell values apart (below threshold) is advanced by learnable-through-registration (study section 119, receipt 20261014T091930.724493Z): where registration does not tell configurations apart, some learner rests at every configuration exactly where configurations with the same registered future have targets agreeing from some step on; the registered values themselves must still be told apart, which stays in the next step. This record's theorems and validation scope are unchanged."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Testing.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（读法“记入”事件处英文改为 includes；§8 审查行写出第一次审查的对象（研究 §§1–6）；为 Becoming.Likeness、Becoming.Learnable、到达律、谱系律及其实例增加第一部分段落、§8 条目与 §9 行；Becoming.CrossSituational 的 §9 行与 MachineInstances、VersionedTaskInstances 两行；§9 总数改据回执 20261014T091930.724493Z）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Testing.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (“includes” where a reading “credited” an event; the §8 review row names the first review's object (study §§1–6); Part I paragraphs, §8 bullets and §9 rows for Becoming.Likeness, Becoming.Learnable, the reaching law, the lineage law and their instances; the §9 row for Becoming.CrossSituational and the rows of MachineInstances and VersionedTaskInstances; the §9 totals moved to receipt 20261014T091930.724493Z)."
     }
   ]
 }

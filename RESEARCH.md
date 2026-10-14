@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-202 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+203 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -114,6 +114,7 @@
 | [较细的单位上的一步规律 / Laws of one step at a finer unit](theories/becoming/results/records/laws-at-finer-units.md) | recorded-checked | [Units.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Units.lean) |
 | [一步的规律 / The laws of one step](theories/becoming/results/records/laws-of-one-step.md) | recorded-checked | [Locality.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean) |
 | [一步规律的完备性 / Completeness of the laws of one step](theories/becoming/results/records/laws-of-one-step-complete.md) | recorded-checked | [OneStep.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean) |
+| [经其识所能学者 / What a learner can learn through its registration](theories/becoming/results/records/learnable-through-registration.md) | recorded-checked | [Learnable.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean) |
 | [学习方式经实际表现进入重构 / Learning procedures reconstructed through actual performance](theories/becoming/results/records/learned-procedure-transmission.md) | recorded-checked | [LearnedProcedureTransmission.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean) |
 | [按否证学习 / Learning by refutation](theories/becoming/results/records/learning-by-refutation.md) | recorded-checked | [Learning.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean) |
 | [闲置可判定处的最小足迹与最少次序 / The least footprint and least order where idleness is decided](theories/becoming/results/records/least-footprint-where-idleness-decided.md) | recorded-checked | [OrderNormal.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean) |
@@ -195,7 +196,7 @@
 | [仍受支持的修复与维持关系再形成 / Supported repair and reformation of a sustaining relation](theories/becoming/results/records/supported-renewal-recovery.md) | recorded-checked | [RenewalRecovery.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean) |
 | [目标的捕获：带着目标的亲代留下更多后代时目标的份额上升；所立者衰减不断则选择停止；下一配置取决于规则时只扰动状态被重新吸收 / The capture of a target: a target's share rises where its carriers leave more offspring; running down stops the selection; where the next configuration depends on the rule, perturbing the state alone is re-absorbed](theories/becoming/results/records/target-capture.md) | recorded-checked | [Capture.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean) |
 | [识之内的检验 / Testing within registration](theories/becoming/results/records/testing-within-registration.md) | recorded-checked | [Testing.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean) |
-| [确定之处检验固定相同 / Tests fix likeness where determined](theories/becoming/results/records/tests-fix-likeness-where-determined.md) | recorded-checked | [Histories.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean) |
+| [固定相同的检验 / Tests that fix likeness](theories/becoming/results/records/tests-fix-likeness-where-determined.md) | recorded-checked | [Histories.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean) |
 | [有意义的切分与从历史读出的状态 / The split that makes sense, and states read off a history](theories/becoming/results/records/the-split-that-makes-sense.md) | recorded-checked | [Description.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean) |
 | [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](theories/becoming/results/records/theory-of-becoming-foundation.md) | open | [BECOMING-FOUNDATION.md](theories/becoming/chapters/BECOMING-FOUNDATION.md) |
 | [及时回应的必要关系 / Necessary relations for a timely response](theories/becoming/results/records/timely-response-necessity.md) | recorded-checked | [TimedResponse.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean) |

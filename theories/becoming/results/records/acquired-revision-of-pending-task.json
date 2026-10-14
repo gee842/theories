@@ -166,7 +166,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "5eac2420f6ee63068407570c18822f0b2a228e952cde2d9223c6557905406022",
+      "sha256": "6b921ae46ee8c7502796a8623f0b2499b352808fbf770dc3766ee86ba0d7ac61",
       "declarations": []
     },
     {
@@ -176,9 +176,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json",
+      "path": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T092502.891314Z/verification.json",
       "role": "receipt",
-      "sha256": "7e6369403a9b44862d6e443160f4cd041a982a458311e9d9b37729f02fd9c062",
+      "sha256": "a96ddf7c21bc027d5eed8b1bd3c7ba6c21731d3b2f9297a5f42f6b649af3ed55",
       "declarations": []
     }
   ],
@@ -199,7 +199,7 @@
     },
     {
       "source": "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",
-      "receipt": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json",
+      "receipt": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T092502.891314Z/verification.json",
       "sha256_pointer": "/source_sha256/VersionedTaskInstances",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -229,6 +229,10 @@
     {
       "zh": "2026-10-14，开放问题计划（研究第117节）：主张加入对每个条件的律：外围 VersionedTaskInstances 的 continuation_eq 与 continuation_isSome_iff——对每个条件与每个有队首待完成的有效装置，在途修订恰在访问有损而转变维护保留时运行，即比较认可学习之处（formed-goal-revision-continuation 的 better_iff）；旧 acquired_revision_changes_pending_action 是 harmful 处的实例（harmful_continuation_instance）。协议自身给出两条作用规律、目的编码与工作单位。下一连接中“有成本的作用前复查”改为“取用工作的作用前复查”，意义不变。scratch_build 实编，核心公理报告为空，外围只用标准公理；对 VersionedTaskInstances 的证明绑定仍指先前运行，落地时改指新运行。原定理与反例不变。",
       "en": "14 October 2026, open-issues plan (study section 117): the claim now adds the law for every condition: continuation_eq and continuation_isSome_iff in the periphery VersionedTaskInstances, for every condition and every valid installation with a pending head the pending revision runs exactly under access loss with kept transition maintenance, where the comparison warrants learning (better_iff in formed-goal-revision-continuation); the old acquired_revision_changes_pending_action is the instance at harmful (harmful_continuation_instance). The protocol itself supplies the two outcome laws, the goal encoding and the work units. In the next step, “paid pre-effect review” now reads “pre-effect review that uses work”, meaning unchanged. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the proof binding to VersionedTaskInstances still names the earlier run and is repointed at landing. The original theorems and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；VersionedTaskInstances.lean（续行、审查损失与损失保持对每个条件陈述；原有陈述不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); VersionedTaskInstances.lean (the continuation, review losses and kept losses stated for every condition; earlier statements unchanged)."
     }
   ]
 }

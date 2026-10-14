@@ -1,0 +1,13 @@
+import Becoming.Horizon
+#check @Becoming.Renewable.prefix_does_not_decide
+#check @Becoming.Renewable.finite_reading_includes_consumption
+#check @Becoming.Renewable.whole_run_includes_overdraw
+#check @Becoming.Renewable.amount_reading
+#check @Becoming.Renewable.cycle_reading_not_finite
+#check @Becoming.Feedback.step_two
+#check @Becoming.Feedback.step_one
+#check @Becoming.Feedback.descending
+#check @Becoming.Feedback.at_horizon
+#check @Becoming.Feedback.after_horizon
+#check @Becoming.Feedback.supported
+#check @Becoming.Feedback.prefix_does_not_decide

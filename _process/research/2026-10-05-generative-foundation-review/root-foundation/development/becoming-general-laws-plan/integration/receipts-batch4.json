@@ -1,0 +1,7 @@
+{
+ "core": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+ "MarketInstances": "experiments/market-generativity/formal/market-instances-checks/20261014T092430.203169Z/verification.json",
+ "CopyingInstances": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T092443.150338Z/verification.json",
+ "MachineInstances": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
+ "VersionedTaskInstances": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T092502.891314Z/verification.json"
+}

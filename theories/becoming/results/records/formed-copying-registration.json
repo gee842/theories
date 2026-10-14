@@ -75,8 +75,8 @@
     "en": "Indexed recognition/transduction, damage rates, repair initiation, excision, autonomous provision and population selection are not derived; a strong rival retaining the same contact mechanism has the same explanatory capacity."
   },
   "validation_scope": {
-    "zh": "33项新定理声明／54项新审计，484项实际闭包审计中430项继承分列；原始论文作为既有比较重读，无新经验复算。一般律仅经scratch实编。",
-    "en": "33 new theorem declarations / 54 new audits, with 430 inherited declarations separate in 484 actual-closure audits. The original paper is reread as the existing comparator, without new empirical reanalysis. General laws: scratch builds only."
+    "zh": "33项新定理声明／54项新审计，484项实际闭包审计中430项继承分列；原始论文作为既有比较重读，无新经验复算。一般律已由检查器回执绑定。",
+    "en": "33 new theorem declarations / 54 new audits, with 430 inherited declarations separate in 484 actual-closure audits. The original paper is reread as the existing comparator, without new empirical reanalysis. General laws: checker receipts bound."
   },
   "references": [
     {
@@ -142,19 +142,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c25bf4b0b8574af6d2fa76b9bd9af7bce5de2cc545e9cee3d16e274b3672f598",
+      "sha256": "6b921ae46ee8c7502796a8623f0b2499b352808fbf770dc3766ee86ba0d7ac61",
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
       "role": "receipt",
-      "sha256": "6d4711df073c8ece68a00ef4097ad5b149adb2ef04c8832a145ef90d02b10e98",
+      "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T092443.150338Z/verification.json",
       "role": "receipt",
-      "sha256": "a9ece499ca9ad31eae3703fb1304b66fe7a7917f341f988c5add95cdf19b7d6d",
+      "sha256": "6fe0e3ab38330703d0f751cff0e2dde91877f7f1bca06dc0c5065c1b21c6be17",
       "declarations": []
     }
   ],
@@ -163,6 +163,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingRegistration.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-registration-verification/verification.json",
       "sha256_pointer": "/source_sha256/CopyingRegistration.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Copying",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T092443.150338Z/verification.json",
+      "sha256_pointer": "/source_sha256/CopyingInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -191,6 +205,10 @@
     {
       "zh": "2026-10-14，开放问题计划（研究第116节）：registered_copy_cells 扩展到链的边：每段进程使产物的边为其记号上的路径（path_shaped_along，Countdown.invariant_iff_reach 的实例），所以完整配准复制模板（含边）恰当模板的边是该路径（registered_copy_iff）；边无需记号以外的条件，旧 registered_inheritance 是实例，不需其非空前提（registered_inheritance_instance）。Copying.lean 与 CopyingInstances.lean 改动后，第三批核验文件对它们的绑定已移去（核验文件的引用保留），有效范围中一般律的说明改为仅经scratch实编；落地时绑定新的核验文件。另审读改动后对齐研究的哈希（末尾新增第116节及其英文段；其余不变）。",
       "en": "14 October 2026, open-issues plan (study section 116): registered_copy_cells is extended to the chain's bonds: every course keeps the product's bonds the path on its tokens (path_shaped_along, an instance of Countdown.invariant_iff_reach), so complete registration copies the template, bonds included, exactly when its bonds are that path (registered_copy_iff); the bonds need nothing beyond the tokens, and the old registered_inheritance is the instance without its nonempty premise (registered_inheritance_instance). With Copying.lean and CopyingInstances.lean changed, their batch-3 bindings were removed (the referenced verification files stay) and the validation scope's note on the general laws now says scratch builds only; the landing run binds the new verification files. The hash of the study was reconciled after reading its change (section 116 and its English paragraph appended; the rest unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）。新绑定到本批回执的证明：Copying.lean、CopyingInstances.lean；验证范围复为一般律已由检查器回执绑定。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged). New proof bindings to this batch's receipts: Copying.lean, CopyingInstances.lean; the validation scope again says the general laws are bound to checker receipts."
     }
   ]
 }

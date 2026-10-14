@@ -108,6 +108,12 @@ FORMS = {
     'Learning.claim_refuted_on_one': '`Learning.no_record_fixes_next`（无前提：主张不在两者上都对 / no premise: the claim is '
                                      'not right on both, P73）',
     'Learning.determines_lumped_iff': '`Learning.lumped_determines`（无前提的一个方向 / one direction, no premise, P73）',
+    'Learnable.refuted_on_one': '`Learnable.claim_not_right_on_both`（无前提：主张不在两者上都对 / no premise: the '
+                                'claim is not right on both）',
+    'Learnable.learnable_iff': '`Learnable.agree_of_rests_both`（必要一侧，对每个学习者，不判定 / the necessary side, of '
+                               'every learner, no decision）',
+    'Learnable.still_learnable_iff_lumped': '`Learnable.still_lumped_of_rests`（必要一侧，不判定 / the necessary side, '
+                                            'no decision）',
     'alike_of_sensitive_agree': '`ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P80）',
     'ExchangeLaw.Nonanticipating.through_of_observed': '`ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
     'ExchangeLaw.Nonanticipating.through_sensitive': '`ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
@@ -127,6 +133,15 @@ CONSTRUCTIONS = {
     'listOnce': 'once', 'keepFresh': 'once',
     'adjoin': 'once', 'mixIn': 'mix',
     'transpose': 'swap', 'Reidentify.exchangeAfter': 'swap', 'Footprinted.inList': 'member',
+    # 2026-10-14, general-laws batches 1-4 (classified at the batch-4 landing)
+    **{n: 'same' for n in [
+        'Copying.countOf', 'Copying.remove', 'Copying.removeAll', 'Copying.Supplies', 'Copying.tick', 'Copying.steps',
+        'Copying.batch', 'Copying.readStep', 'Copying.readTick', 'Copying.readSteps', 'Copying.exchange',
+        'Copying.inspect', 'Copying.scanSites', 'Copying.defects', 'Copying.pairDraw', 'Copying.unlikeFrom',
+        'Retrodiction.changes', 'Segmentation.departures', 'Segmentation.transitions', 'Segmentation.bond']},
+    'Contacts.spot': 'indicate', 'Web.requiredLevel': 'indicate', 'Frame.classCount': 'count',
+    'Frame.lostOf': 'keep', 'Identification.withBound': 'first', 'Lasting.hitTime': 'first',
+    'Viability.guardedStep': 'guard', 'Viability.guardedHistory': 'guard', 'ite': 'split',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -150,6 +165,14 @@ MENT_REASON = {
             'of the exchanged values',
     'member': '列表成员的布尔判定：需逐项分辨值的相同 / boolean list membership: tells values apart at each '
               'listed member',
+    'same': '分辨记号或值的相同：计数、取出或比较需要分辨两者是否相同 / tells tokens or values apart: counting, '
+            'taking out or comparing them tells whether two are the same',
+    'indicate': '指示：在已定命题成立处取一个值，不成立处取另一个 / an indicator: one value where a decided '
+                'proposition holds, another where it fails',
+    'split': '按情形取值：陈述用 `if … then … else`，其条件须已定 / a value by cases: the statement uses '
+             '`if … then … else`, whose condition must be decided',
+    'guard': '守护之步：每步判定守护是否成立，不成立处停止 / a guarded step: decides the guard at each step and stops '
+             'where it fails',
 }
 LABEL = {
     'count': '计数 / counts', 'coarse': '较粗的读法 / coarser reading', 'raise': '抬高一个条件 / one condition raised',
@@ -159,6 +182,7 @@ LABEL = {
     'same': '分辨相同 / tells same from different', 'split': '分情形 / splits on a case',
     'indicate': '造出指示 / builds an indicator', 'mix': '逐个条件换入 / mixed in condition by condition',
     'swap': '交换两个值 / exchanging two values', 'member': '列表成员判定 / list membership',
+    'guard': '守护之步 / a guarded step',
 }
 # Why a proof uses decidedness its statement does not mention. Every such theorem is classified here (asserted).
 PROOF_REASON = {
@@ -193,7 +217,8 @@ PROOF_KIND = {
         'came_between_from', 'search', 'Web.sample_arises', 'Web.sample_ceases', 'Web.sample_ceasing',
         'Web.sample_unceasing', 'arises_within', 'ceases_within', 'World.arising_iff_ceasing',
         'World.arising_iff_ceasing_covering', 'ceasing_step', 'Frame.claims_recur_iff',
-        'Learning.determines_lumped_iff']},
+        'Learning.determines_lumped_iff', 'Learnable.learnable_iff', 'Learnable.learnable_of_lumped',
+        'Learnable.still_learnable_iff_lumped']},
     **{n: 'build' for n in [
         'Flow.Enclosed.around', 'Flow.Enclosed.aroundStanding', 'World.Finite.countedWithin', 'World.Finite.counted',
         'World.counted_of_ever', 'Flow.sample_ceasesToStand_iff', 'Flow.sample_changes_iff',
@@ -205,7 +230,7 @@ PROOF_KIND = {
         'Identification.unrefuted_persists',
         'Diagonal.alike_of_complete', 'Diagonal.complete_iff_alike',
         'Learning.claim_refuted_on_one', 'Learning.eq_of_not_refuted', 'Learning.every_free',
-        'Learning.every_determines_nothing',
+        'Learning.every_determines_nothing', 'Learnable.refuted_on_one',
         'Flow.fed_from_beyond', 'Flow.fed_from_beyond_from', 'Flow.fed_of_not_inward', 'Flow.inward_iff_not_fed',
         'Flow.inward_of_not_fed', 'Flow.rising_fed_from_beyond', 'Flow.rising_fed_from_beyond_from',
         'Web.generation_fed_from_beyond', 'forces_iff_noSplit', 'Flow.exchangeFollows_of_policy',
@@ -217,6 +242,20 @@ PROOF_KIND = {
     **{n: 'split' for n in ['Web.inheritsAt_of_split', 'Flow.transmitsWithin_iff_split', 'persists', 'Flow.Balances.adds_iff_exceeds_of_decidable',
                             'Valuation.significant_iff_reached']},
     **{n: 'indicate' for n in ['Web.scores_alike_iff']},
+    # 2026-10-14, general-laws batches 1-4 (classified at the batch-4 landing)
+    **{n: 'same' for n in [
+        'Contacts.selections_survive_iff', 'Contacts.trace_keeps_of_retains', 'Contacts.added_gains',
+        'Contacts.blind_misses', 'Contacts.through_data_iff', 'Contacts.survive_data_iff', 'Contacts.answers_iff',
+        'Contacts.through_at_iff', 'Contacts.retired_loses', 'Contacts.mem_or_not', 'Contacts.keeps_iff_retains',
+        'Contacts.keeps_data_iff', 'CrossSituational.candidates_eq_iff', 'CrossSituational.resolves_iff',
+        'CrossSituational.resolves_explained_iff', 'CrossSituational.reads_every_iff',
+        'Retrodiction.fits_or_separated', 'Retrodiction.reading_right_iff', 'Retrodiction.look_right_iff',
+        'Frame.strictLossMatch_iff_length_of_alike', 'Gated.change_located']},
+    **{n: 'find' for n in [
+        'Lasting.reaches_of_not_lasts', 'Lasting.reaches_iff_not_lasts', 'Lasting.reaches_of_histories',
+        'Lasting.reaches_iff_histories', 'Frame.exists_fresh']},
+    'Lasting.orbit_reaches_iff_variant': 'indicate',
+    'TimedResponse.different_answers_require_reached': 'split',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
@@ -235,6 +274,11 @@ for mod, kind, name, pos, k, ty, stmt, proof, ment in rows:
         theorems.setdefault((mod, short), []).append((k, ty, stmt == 'true', proof == 'true', ment))
     else:
         defs.setdefault((mod, short), []).append((k, ty, stmt == 'true', proof == 'true'))
+
+# Statements naming Lean's own `if … then … else` (its condition decided) and no core definition (2026-10-14).
+ITE_STATEMENTS = ['Copying.ite_cases']
+for key in [key for key in theorems if key[1] in ITE_STATEMENTS]:
+    theorems[key] = [(k, ty, s, p, ment or 'ite') for k, ty, s, p, ment in theorems[key]]
 
 counting, proof_only, unused, em = [], [], [], []
 for (mod, short), bs in sorted(theorems.items()):
