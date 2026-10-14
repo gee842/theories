@@ -13,7 +13,9 @@ Final classes before this branch: G 14, G+W 23, W 2, W-neg 5, F-fam 4, F-inst 5,
 `Becoming.Segmentation`, `Becoming.Readout`, `Becoming.Gated`, the bridge `Becoming.Instances`
 and the periphery `MachineInstances`) are described in the study,
 [BECOMING-RENEWAL-READING.md §112](../../../BECOMING-RENEWAL-READING.md); the last column names
-them. Scratch builds only: receipts come from the landing run.
+them. The copy machines and historical-source-binding follow in §114 (`Becoming.Copying`,
+`Becoming.Retrodiction`, the peripheries `CopyingInstances` and `RetrodictionInstances`). Scratch
+builds only: receipts come from the landing run.
 
 ## The nine reviewed rows
 
@@ -69,17 +71,17 @@ them. Scratch builds only: receipts come from the landing run.
 | finite-granularity-question-recovery | recorded-checked | ExplanatoryGranularity | G | **G** |  |  |
 | finite-joining-tree-lifting | recorded-checked | ExplanatoryJoiningBranches | G | **G** |  |  |
 | finite-trace-transport | recorded-checked | GenerativeCore | G | **G** |  |  |
-| formed-copying-correction | recorded-checked | CopyingCorrection | F-mach | **F-mach** |  |  |
-| formed-copying-registration | recorded-checked | CopyingRegistration | F-mach | **F-mach** |  |  |
+| formed-copying-correction | recorded-checked | CopyingCorrection | F-mach | **F-mach** |  | G+W: `Copying.inspect_le_iff`, `scan_le`, `inspect_matches_iff`, `defects_zero_iff` for every alphabet; instances `CopyingInstances.inspect_le_iff_instance` (every state), `scan_faithful_instance`, `matches_reference_from_law`; control `wrong_reference_unfaithful` |
+| formed-copying-registration | recorded-checked | CopyingRegistration | F-mach | **F-mach** |  | G+W: `Copying.reading_iff`, `extends_along_iff` for every alphabet and process, with `Gated.kept_along_iff`; instances `CopyingInstances.operate_copies_iff` (every state), `registered_copy_cells`, `product_gated`, `totals_along` |
 | formed-goal-revision-continuation | recorded-checked | GoalFormationRevision | W? | **W** | verified: the bound headline is closed `decide` on `harmful`; `supported_finite_continuation` is general in n but unused | law over every condition, account and n of the construction (`MachineInstances.cycles_iff`, `operateMany_learning`, `completed_isSome_iff`, `revision_continues`); `harmful_instance`; periphery, since the module's definitions use standard axioms |
 | formed-software-continuation | reviewed-scoped | - | N/A | **N/A** |  |  |
 | fulfillment-chance-floor | recorded-checked | ChanceAdequacy | G+W | **G+W** |  |  |
 | functional-joining-common-structure | recorded-checked | ExplanatoryContextualStructure | G | **G** |  |  |
 | growth-constrained-fragmentation | recorded-checked | GrownFragmentation | W-neg? | **W-neg** | verified: the headline facts are counterexamples on two graphs; `certificate_exact_split` and `cut_return_projection` are general over every Growing |  |
 | guarded-program-question-recovery | recorded-checked | ExplanatoryGuardedPrograms | G | **G** |  |  |
-| historical-source-binding | recorded-checked | HistoricalBinding, RetrospectiveBinding, AcquiredBinding | F-mach | **F-mach** |  | unchanged (F-mach); law proposed in the report |
+| historical-source-binding | recorded-checked | HistoricalBinding, RetrospectiveBinding, AcquiredBinding | F-mach | **F-mach** |  | G+W: `Retrodiction.reading_right_iff`, `look_right_iff`, `bracket_settles_iff`, `change_unlocated` for every type of histories and records; instances `RetrodictionInstances.packet_read_iff`, `controls_settle_naming` (deterioration, improvement); controls `late_control_reading_fails`, `split_controls_reading_fails`, `excursion_agreed_wrong` |
 | incidence-common-refinement | recorded-checked | ExplanatoryJoiningIncidence, ExplanatoryBranching, ExplanatoryJoiningAnchors | G+W | **G+W** |  |  |
-| inherited-structural-copying | recorded-checked | StructuralCopying | F-mach | **F-mach** |  |  |
+| inherited-structural-copying | recorded-checked | StructuralCopying | F-mach | **F-mach** |  | G+W: `Copying.built_iff`, `releases_iff`, `batch_all_iff`, `batch_all_swap`, `cost_lt_iff`, `cost_midpoint` for every alphabet and law of charges; instances `CopyingInstances.reproduce_iff` (every pool), `template_pool_reproduce_iff`, `batch_all_released_iff`, `local_ranking_from_law`, `third_structure_from_law`; `finite_lineage_inherits` still sufficiency only |
 | joining-open-map-factor | recorded-checked | ExplanatoryJoiningRefinement | G | **G** |  |  |
 | joining-questions-survive-encoding | recorded-checked | ExplanatoryJoiningBranches | G | **G** |  |  |
 | joint-code-plan-lifting | recorded-checked | ExplanatoryJointness | G | **G** |  |  |
@@ -103,7 +105,7 @@ them. Scratch builds only: receipts come from the landing run.
 | prefix-observation-loss | recorded-checked | ExplanatoryGranularityBoundary | W-neg | **W-neg** |  |  |
 | protection-priority-excludes-uniform-aggregation | recorded-checked | ProtectionPriorityRival, GenerativeComparison, PracticalJudgment | W-neg | **W-neg** |  |  |
 | recoverable-mediated-change | recorded-checked | RecoverableControl, MediatedControl | F-mach | **F-mach** |  |  |
-| recurrent-chain-assembly | recorded-checked | RecurrentAssembly | F-mach | **F-mach** |  |  |
+| recurrent-chain-assembly | recorded-checked | RecurrentAssembly | F-mach | **F-mach** |  | G+W: `Copying.built_iff`, `doubling_iff` for every alphabet and draw; instances `CopyingInstances.grow_iff`, `mature_forms_iff`, `rounds_mature_iff`, `rounds_follow_doubling`; control `partial_failure_keeps_material` |
 | relational-generative-comparison | recorded-checked | RelationalGrounding, JointContinuationClassification, GenerativeComparison | W-neg? | **W-neg** | verified: an impossibility (strict comparison cannot factor through marginals) in one retain/release regime; `whole_profile_preservation_iff_joint_bundle_preservation` is general |  |
 | relational-reading-comparison | recorded-checked | RenewalComparison, GenerativeComparison | F-fam | **F-fam** |  |  |
 | relational-renewal-classification | recorded-checked | RelationalRenewal | F-fam? | **F-fam** | verified: mixed: `renewing_not_consuming` and `unrenewed_drawdown_finite` are general over unfoldings, the headline dynamics hold over the support-gated `Law` family (L2's family lift) |  |
