@@ -13,7 +13,9 @@ Final classes before this branch: G 14, G+W 23, W 2, W-neg 5, F-fam 4, F-inst 5,
 `Becoming.Segmentation`, `Becoming.Readout`, `Becoming.Gated`, the bridge `Becoming.Instances`
 and the periphery `MachineInstances`) are described in the study,
 [BECOMING-RENEWAL-READING.md §112](../../../BECOMING-RENEWAL-READING.md); the last column names
-them. Scratch builds only: receipts come from the landing run.
+them. Section 114 of the same study adds `Becoming.Viability`, `Becoming.Countdown`,
+`Becoming.Lasting` and the peripheries `MarketInstances`, `ProtocolInstances` and
+`VersionedTaskInstances` for ten more rows. Scratch builds only: receipts come from the landing run.
 
 ## The nine reviewed rows
 
@@ -42,7 +44,7 @@ them. Scratch builds only: receipts come from the landing run.
 | record | status | module(s) | first pass | final | review | after this branch |
 |---|---|---|---|---|---|---|
 | acquired-binding-compositional-use | recorded-checked | AcquiredBinding | F-inst? | **F-inst** | verified: the headline is one history (`learned 32`); only `unique_resolution_is_correct_under_coverage` was general | G+W: `Segmentation.reads_every_iff` (every vocabulary), `MachineInstances.interprets_every_iff` (every lexicon whose record groups the encoding); instance `learned_interprets_every` |
-| acquired-revision-of-pending-task | recorded-checked | CommonTaskRevision | F-mach | **F-mach** |  |  |
+| acquired-revision-of-pending-task | recorded-checked | CommonTaskRevision | F-mach | **F-mach** |  | G+W for the delivery: `Countdown.Advances.completes`, `completes_iff`, `pending_before` (every partial law with counted work); instances `VersionedTaskInstances.retarget_pending`, `revised_head_instance`; the warranted-revision conditions stay facts of the one protocol (goal revision is general in `MachineInstances.revision_continues`) |
 | alignment-direction-g0-j | reviewed-scoped | AlignmentDirection | N/A? | **N/A** | verified: an argument record (reviewed-scoped); its Lean support is worked examples plus one general redescription lemma, not a theorem the record claims |  |
 | assured-route-criterion | recorded-checked | WisdomResponseStructure | W | **W** |  | G+W: `Assurance.completes_iff_of_determined` (every determined process), `completes_ofMap_single`; `Branch.runs_not_completes` refutes the converse; instance `Instances.routes_assured_iff` |
 | becoming-context-coherence | recorded-checked | GenerativeCore, BecomingCompatibility | G+W | **G+W** |  |  |
@@ -88,27 +90,27 @@ them. Scratch builds only: receipts come from the landing run.
 | joint-plan-composition | recorded-checked | JointContinuation | G+W | **G+W** |  |  |
 | joint-practice-forms-continuation | recorded-checked | JointPracticeContinuation | F-mach | **F-mach** |  | G+W for the gated and trace laws: `Assurance.trace_ofPartial_iff`, `Gated.kept_along`; instances `MachineInstances.practice_trace_iff_run`, `methods_kept`, `practice_rule_kept`; the step laws stay facts of the one machine |
 | joint-target-uniqueness | recorded-checked | ExplanatoryJointness | G | **G** |  |  |
-| market-finite-support-obstruction | recorded-checked | FiniteSupportObstruction, RegimeTransition | F-mach | **F-mach** |  |  |
-| market-partial-correction-boundary | recorded-checked | PartialRegimeTransition, RegimeTransition | F-mach | **F-mach** |  |  |
-| market-protected-continuation | recorded-checked | MarketGenerativity | F-fam | **F-fam** |  |  |
-| market-supported-finite-transition | recorded-checked | RegimeTransition | F-mach | **F-mach** |  |  |
+| market-finite-support-obstruction | recorded-checked | FiniteSupportObstruction, RegimeTransition | F-mach | **F-mach** |  | G+W: `Lasting.Drains.leaves`, `exhausts`, `below_orbit`, `stays_below_iff` (every law with admissible disturbances, every monotone growth bound); `Collapse.level_not_lasting` refutes the converse; instance `MarketInstances.forces_failure_instance` |
+| market-partial-correction-boundary | recorded-checked | PartialRegimeTransition, RegimeTransition | F-mach | **F-mach** |  | G+W for the obstruction: `Lasting.avoids_iff_closed`, `some_avoids_iff`, `none_avoid_iff`, `fixed_avoids` (every determined law and target); instances `MarketInstances.never_lands_iff`, `lands_iff_margin`, `lands_iff_no_closed`, `fixed_point_instance`; the landing side stays the market law's gain estimate |
+| market-protected-continuation | recorded-checked | MarketGenerativity | F-fam | **F-fam** |  | G+W: `Viability.kernel_iff_certificate`, `never_leaves_iff_certificate`, `guarded_never_fails_iff` (every process, every law with admissible disturbances); controls `Leaves.within_not_kernel`, `needs_admissible`; instances `MarketInstances.never_fails_iff` (every parameter set, bound set and start), `safe_never_fails` |
+| market-supported-finite-transition | recorded-checked | RegimeTransition | F-mach | **F-mach** |  | G+W: `Lasting.lasts_iff_ladder`, `lasts_iff_necessary`, `lasts_iff_of_exact`, `guarded_upto_iff`; instances `MarketInstances.cover_ladder`, `supported_prefix_instance`, `pulse_prefix_instance`, `cover_exact` (the cover is exact at the worst share) |
 | material-preparation-output | recorded-checked | MaterialMaturation | F-mach? | **G+W** | verified: `route_sound` and `route_complete` together are an iff for every recipe, pool and support; the eight-slot recipe is an instance | G+W: record rewritten law first from `route_sound` + `route_complete`; no Lean change |
-| mediated-evidence-transport | recorded-checked | MediatedControl | F-mach | **F-mach** |  |  |
+| mediated-evidence-transport | recorded-checked | MediatedControl | F-mach | **F-mach** |  | G+W: `Countdown.admitted_invariant_iff` (every partial law and admission); instances `ProtocolInstances.mediated_history_iff`, `coverage_along`, `mediated_history_instance`; the commit semantics stay facts of the one machine |
 | multivalued-joining-common-structure | recorded-checked | ExplanatoryJoiningBranches, ExplanatoryBranching, ExplanatoryJoiningBranchWitnesses | G+W | **G+W** |  |  |
 | naming-attention-coverage | reviewed-scoped | - | N/A | **N/A** |  |  |
 | organizational-rule-inheritance | recorded-checked | OrganizationalRuleInheritance | F-mach | **F-mach** |  | G+W: `Gated.kept_along_iff`, `change_passes_gate`, `change_located` for every process; instances `Instances.rule_kept`, `rule_inherited`, `rule_change_located` |
-| pending-task-context-applicability | recorded-checked | PendingTaskApplicability | F-mach | **F-mach** |  |  |
+| pending-task-context-applicability | recorded-checked | PendingTaskApplicability | F-mach | **F-mach** |  | G+W for the work: `Stock.Covered` with `Countdown.completes_iff`; instances `VersionedTaskInstances.review_course_covered_iff`, `review_completes_iff`; the two practice protections stay facts of the supplied outcome law |
 | positioned-positive-reason | recorded-checked | PositionedPositiveReason, PositiveGroundUncertainty, GenerativeComparison | G+W | **G+W** |  |  |
 | positive-ground-open-futures | recorded-checked | PositiveGroundUncertainty, GenerativeComparison, PracticalJudgment, JointContinuationClassification … | G+W | **G+W** |  |  |
 | prefix-observation-loss | recorded-checked | ExplanatoryGranularityBoundary | W-neg | **W-neg** |  |  |
 | protection-priority-excludes-uniform-aggregation | recorded-checked | ProtectionPriorityRival, GenerativeComparison, PracticalJudgment | W-neg | **W-neg** |  |  |
-| recoverable-mediated-change | recorded-checked | RecoverableControl, MediatedControl | F-mach | **F-mach** |  |  |
+| recoverable-mediated-change | recorded-checked | RecoverableControl, MediatedControl | F-mach | **F-mach** |  | G+W: `Countdown.admitted_invariant_iff`, `completes_iff`, `pending_before` (every partial law with counted work); instances `ProtocolInstances.safety_along`, `interrupted_history_instance`, `publishes_iff`, `pending_until_published` |
 | recurrent-chain-assembly | recorded-checked | RecurrentAssembly | F-mach | **F-mach** |  |  |
 | relational-generative-comparison | recorded-checked | RelationalGrounding, JointContinuationClassification, GenerativeComparison | W-neg? | **W-neg** | verified: an impossibility (strict comparison cannot factor through marginals) in one retain/release regime; `whole_profile_preservation_iff_joint_bundle_preservation` is general |  |
 | relational-reading-comparison | recorded-checked | RenewalComparison, GenerativeComparison | F-fam | **F-fam** |  |  |
 | relational-renewal-classification | recorded-checked | RelationalRenewal | F-fam? | **F-fam** | verified: mixed: `renewing_not_consuming` and `unrenewed_drawdown_finite` are general over unfoldings, the headline dynamics hold over the support-gated `Law` family (L2's family lift) |  |
 | renewing-consuming-formation | recorded-checked | RenewingFormation, GenerativeComparison | G+W | **G+W** |  |  |
-| reserved-shutdown-during-recovery | recorded-checked | ReservedShutdown, RecoverableControl, EffectiveCommand | F-mach | **F-mach** |  |  |
+| reserved-shutdown-during-recovery | recorded-checked | ReservedShutdown, RecoverableControl, EffectiveCommand | F-mach | **F-mach** |  | G+W: `Countdown.runs_valid`, `exits` (every partial law with a reserved exit); `Slow.misses` shows the bound attained; instances `ProtocolInstances.reserved`, `schedule_valid`, `schedule_stops`, `supported_schedule_instance` |
 | residual-continuation-correspondence | recorded-checked | ExplanatoryResiduals, ExplanatoryResumptionCases | G+W | **G+W** |  |  |
 | retained-reference-joining-recovery | recorded-checked | ExplanatoryJoiningRegisters, ExplanatoryBranching, ExplanatoryJoiningAnchors | G+W | **G+W** |  |  |
 | retrospective-source-binding | recorded-checked | RetrospectiveBinding, SourceReliance | F-inst? | **F-inst** | verified: the headline is one history (`retrospective 36`); the coverage law is general only over the SourceReliance model (F-mach) | instance `MachineInstances.retrospective_interprets_every` of `interprets_every_iff`; the coverage law stays F-mach |
@@ -120,7 +122,7 @@ them. Scratch builds only: receipts come from the landing run.
 | trace-law-equivalence | recorded-checked | DynamicConsequences | G+W | **G+W** | spot-checked G+W: `same_steps_iff_endpoint_traces` over any two processes; static/toggle is the control |  |
 | transition-grouping-word-partition | recorded-checked | AcquiredSegmentation | F-inst | **F-inst** |  | G+W: `Segmentation.chunks_eq_iff`, `encode_iff`, `bond_unique` for every alphabet and relation; instances `Instances.two_word_iff`, `ideal_two_word`, `MachineInstances.bond_eq`, `experienced_parses_every` |
 | unanchored-incidence-collapse | recorded-checked | ExplanatoryJoiningAnchors, ExplanatoryJoiningRefinement, ExplanatoryLocalUnits, ExplanatoryJoining | G+W | **G+W** |  |  |
-| versioned-request-completion | recorded-checked | CorrectionVersioned | F-mach | **F-mach** |  |  |
+| versioned-request-completion | recorded-checked | CorrectionVersioned | F-mach | **F-mach** |  | G+W: `Countdown.Advances.completes`, `completes_iff`, `pending_before` (every partial law with counted work); instances `VersionedTaskInstances.head_advances`, `valid_head_instance`, `head_pending_before` |
 
 ## First-pass justifications
 
