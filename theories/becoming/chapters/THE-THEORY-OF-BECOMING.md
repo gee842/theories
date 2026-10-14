@@ -1529,8 +1529,8 @@ The consolidated checker and its receipt `20261013T221720.428753Z` cover 4983 th
 |---|---|---|---|
 | 生成／变化 | Becoming | 关系的形成、维持、转化、退化与消解构成的整体展开 | — |
 | 生生 | 生生 (generativity) | 整体中的生及其继续生成；伦理方向的对象 | `living` |
-| 过程 | process | 声明可容许的变化；同一展开把配置分为律所固定者与所留开者（动作）的读法，动作可以读入配置（P69） | `Generative.Process`、`withMove` |
-| 框架 | frame | 过程加上每个配置实现的主张；沿运行读作以主张为关系项的世界（P69） | `Frame`、`Frame.world` |
+| 过程 | process | 声明可容许的变化；同一展开把配置分为律所固定者与所留开者（动作）的读法，动作可以读入配置（`Becoming.Unfolding`） | `Generative.Process`、`withMove` |
+| 框架 | frame | 过程加上每个配置实现的主张；沿运行读作以主张为关系项的世界（`Becoming.Unfolding`） | `Frame`、`Frame.world` |
 | 运行 | run | 无穷的实际执行 | `Run` |
 | 可达 | reach | 有限的可容许路径 | `Reach` |
 | 不变量 | invariant | 每步保持的性质 | `Invariant` |
@@ -1559,7 +1559,7 @@ The consolidated checker and its receipt `20261013T221720.428753Z` cover 4983 th
 | 封闭 | closed | 一步中没有参与的形成与家族之外的条件交换 | `ClosedAt` |
 | 封闭的步 | enclosed step | 跨该步有一个不重复的有限家族封闭；条件总共有限时每步都是 | `Enclosed` |
 | 一步的平衡 | balance at a step | 流跨过一步在一个家族上平衡：每个成员步后的水平连同被取的，等于步前的水平连同被给的；平衡就是每一步、每个家族上的平衡 | `Flow.BalancesOn`、`Flow.balances_iff_on` |
-| 不平衡关系项 | imbalance relatum | 流不平衡之处，差额算作再一个从不活跃、什么都不需要的关系项的交换；于是每个流都平衡，流在一个家族上跨一步平衡恰当那个关系项在那里闲置，两种表示逐步等价；是否采用由 Ren 定（P59） | `Flow.withImbalance`、`Flow.balancesOn_iff_idle`、`Flow.withImbalance_acting_taking_on_iff` |
+| 不平衡关系项 | imbalance relatum | 流不平衡之处，差额算作再一个从不活跃、什么都不需要的关系项的交换；于是每个流都平衡，流在一个家族上跨一步平衡恰当那个关系项在那里闲置，两种表示逐步等价；是否采用由 Ren 定（`Becoming.Imbalance`） | `Flow.withImbalance`、`Flow.balancesOn_iff_idle`、`Flow.withImbalance_acting_taking_on_iff` |
 | 下降 | running down | 家族跨过一步不重复地包含步前或步后立着的每个条件，流在它上面平衡并耗散（不需要封闭）；这时水平改变恰当家族的总水平下降，变化复现恰当它在不下降的步上复现 | `Flow.RunsDownOn`、`Flow.RunsDown`、`Flow.change_recurs_iff` |
 | 一步的规律 | laws of one step | 对每个世界成立、证明用到的条件写在规律之内的规律；前提对每一步成立时条件处处成立，选择结果是推论，不推出任何前提 | `Becoming.Locality` |
 | 围住 | enclosed around | 跨该步有一个包含该家族的不重复有限家族封闭；相等可判定时每个封闭的步都围住每个有限家族，不判定相等时不是不围住 | `Around`、`Enclosed.around`、`Enclosed.around_not_not` |
@@ -1575,8 +1575,8 @@ The consolidated checker and its receipt `20261013T221720.428753Z` cover 4983 th
 | 取用而生起 | arising taking | 形成在其第一个活跃步从家族取用 | `ArisesTaking` |
 | 普查 | census | 每步活跃的形成列为不重复的有限表，即活动的列出；在普查之下止息复现需要生起复现，反之不然；普查在任意晚的步回到某数以内时两者同步，计数无界地增长时不论多慢都可以只生不灭（slow）；任一段步上终点的列表连同其间不再成立的恰是起点的列表连同其间开始成立的（普查的平衡）；同一规律读于水平（所立者的普查）、依存（依存的普查）与每步其成立者被列出的任何规定 | `Census`、`Listed`、`arising_of_ceasing`、`unceasing_iff_bounded`、`Listed.over_stretch`、`Listed.ceasing_iff_shortfall`、`World.CountedBy`、`World.slow_world` |
 | 覆盖 | covers | 列表含一步上每个成立的成员；只要在任意晚的步有覆盖列表，不再成立的复现就需要开始成立的复现，普查是覆盖每一步的情形 | `Covers`、`coming_of_ceasing_covered` |
-| 已定 | decided | 一个命题成立或不成立；判定程序把它作为数据给出；可判定不是表示的承诺，计数或命名一步的规律把在所计数之处已定写作自己的条件（P58） | `Decided`、`not_not_decided` |
-| 计数 | count | 一个数计列表中某规定成立的成员，是指它是这些成员的指示之和；计数存在恰当所计数者已定，唯一，判定程序的标记就是计数；计数之间的普查不用可判定性（P58） | `Indicates`、`Counts`、`CountsAcross`、`counts_iff_decided`、`Counts.over_stretch` |
+| 已定 | decided | 一个命题成立或不成立；判定程序把它作为数据给出；可判定不是表示的承诺，计数或命名一步的规律把在所计数之处已定写作自己的条件（`Becoming.Decidedness`） | `Decided`、`not_not_decided` |
+| 计数 | count | 一个数计列表中某规定成立的成员，是指它是这些成员的指示之和；计数存在恰当所计数者已定，唯一，判定程序的标记就是计数；计数之间的普查不用可判定性（`Becoming.Decidedness`） | `Indicates`、`Counts`、`CountsAcross`、`counts_iff_decided`、`Counts.over_stretch` |
 | 计数表 | tally | 每步列出的数目与跨步不再成立、开始成立的数目：跨每一步保持一些成员，连同不再成立的是步前的列表，连同开始成立的是步后的列表；恰是平衡加上跨一步不再成立的不多于步前所列的；每个列出给出计数表，每个计数表都由一个队列实现（从队尾加入、从队首离开），所以计数表是计数的全部规律；缺平衡或缺体现的前提不约束计数，两者连同只有活跃者给予一起约束；全部八个前提之下计数的规律恰是计数表与没有关系项活跃的一步上没有生起，每个前提都起约束时再加有某个生起；256 个前提选择之下只有这两种规律，所选前提都起约束时至多再加三条，在有限世界中与从某步起被围住时也是；读于所立者，不被围住时规律相同，被围住时只在平衡与耗散起约束之处不需要体现；读于依存，前提不加任何规律 | `Tally`、`Listed.keeps`、`tally_iff`、`Queue.counts`、`counting_laws`、`tally_iff_counted`、`World.counting_free`、`World.counting_binds_jointly`、`World.premised_counting`、`World.counting_under`、`World.counting_binds_iff`、`World.binding_counting`、`World.binding_counting_under`、`World.finite_binding_counting_under`、`World.enclosed_binding_counting_under`、`World.standing_counting_under`、`World.dependence_counting` |
 | 变化界 | change bound | 从某步起，每步列出的数目连同自该步以来有不再成立或开始成立的步，不多于一个数；变化界之内变化不复现；从某步起每步被围住时，活动的计数在被围住时所立者的总水平之内；八个前提之下，被围住时与有限世界中计数的规律恰是计数表、没有关系项活跃的一步上没有生起与从第 0 步起的变化界；在每个前提选择之下，变化界恰在选中平衡、体现与耗散时加入，被围住时与在有限世界中都是如此；所立者的计数恰在选中平衡与耗散时加入变化界，不需要体现 | `ChangeBound`、`occurrences`、`World.enclosure_bounds_change`、`World.enclosed_counting`、`World.finite_counting`、`World.enclosed_counting_under`、`World.finite_change_bound_iff`、`World.enclosure_bounds_standing`、`World.enclosed_standing_bound_iff`、`World.finite_standing_bound_iff` |
 | 取用即汲取 | taking | 只有活跃的形成取用，且只从它汲取的条件取用 | `Taking` |
@@ -1600,7 +1600,7 @@ The consolidated checker and its receipt `20261013T221720.428753Z` cover 4983 th
 | 交互 | interaction | 一方汲取某条件、另一方以正水平依存于它，在任何步上；对应纪律下的 related | `Interacts`、`Web.interaction` |
 | 以之为生 | living on | 一类读法中，一个形成在某步汲取一个关系项并以正需要依存于它；在 `Dependent` 之下所依者在该步作为条件而在；交互之外 related 的一种候选读法 | `Web.LivesOn`、`LivesOn.stands`、`Web.sustenance` |
 | 世系 | descent | 一类读法中，一个关系项在开始作为条件而在之步被参与该步的一个形成给予，就从它而来；使两者的每个事件相关，是 related 的另一种候选读法 | `Flow.DescendsAt`、`Flow.Descends`、`Flow.descent` |
-| 传递 | transmission | 后代承接亲代的依存，所需至多多 δ；在起约束处独立于其余前提；给定取用的读法与取用即依存时推出（P84）；`price` 中是每个后代相对其亲代的变化 | `Flow.TransmitsWithin`、`Flow.transmitsWithin_iff`、`World.transmitting_of_drawn`、`raised`、`lowered` |
+| 传递 | transmission | 后代承接亲代的依存，所需至多多 δ；在起约束处独立于其余前提；给定取用的读法与取用即依存时推出（`Becoming.Transmission`）；`price` 中是每个后代相对其亲代的变化 | `Flow.TransmitsWithin`、`Flow.transmitsWithin_iff`、`World.transmitting_of_drawn`、`raised`、`lowered` |
 | 选择 | selection | 只有活跃者给予且活动需要支持时，只有被支持的形成留下后代；`price` 中亲代的量按其后代数加权的总量不是真正的选择项，后代数都相同时它也不为零；适应度没有定义 | `unsupported_childless`、`selected`、`selected_le`、`selected_uniform` |
 | 世界 | world | 以一类读法的关系项、其间的流与依存网；空间是每个世界，规律对整体成立，前提划出部分 | `World` |
 | 交换 | exchange | 世界跨一步的动作：在场的关系项取与给什么；交换之律说每个关系项一步之后的水平连同被取的等于之前的连同被给的，世界平衡恰是按它运行 | `Exchange`、`exchange`、`World.move`、`World.balances_iff_exchange` |
@@ -1619,8 +1619,8 @@ The consolidated checker and its receipt `20261013T221720.428753Z` cover 4983 th
 | 生成的／退化的 | generative / degenerative | Ren 的用语；Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠；所指的空间部分由 Ren 选择。一种关系读法是更新的形成与消耗的形成，作为关系不重叠。Ren 2026-10-10 写道，生成的是“its existence creates more possibilities of becoming - more future, not less”，并确认把可能性读作接下来能形成什么；AI 把它形式化为部分扩大接下来能形成者，退化的为缩小，另有保持不变与混合（§2），不用公理（§6.13） | `Web.RenewingIn`、`Web.ConsumingIn`、`Web.renewing_not_consuming`、`Web.Includes`、`Web.Widens`、`Restoring.Inflow.widens`、`Clearing.narrows` |
 | 扩大／保持不变／混合 | widens / keeps the same / mixed | 一条水平路径接纳另一条接纳的每个形成并在某一步多接纳一个／互相包含／互相超出；两两互斥；生成的空间是部分在其中扩大能形成者之处（§6.13） | `Web.Widens`、`Web.Keeps`、`Web.Mixed` |
 | 生起复现／止息复现 | arising recurs / ceasing recurs | 某个关系项在任意晚的步生起／止息；活动可判定的有限世界中两者是同一部分，对每个有限世界要求而不给可判定性时这一规律等价于排中律，关系项无限多时两者分离；是活动的读法，英文名称 arising/ceasing 经 Ren 确认，中文为 AI 的译名（[原话](../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)）；是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择（若取不重叠则不是，AI 的推论） | `World.ArisingRecurs`、`World.CeasingRecurs`、`World.arising_iff_ceasing`、`World.law_decides`、`World.law_iff_em` |
-| 归于静止 | coming to rest | 从某步起生起与止息都不再发生（`World.RestsFrom`）；找出那一步需要全知原则（`World.lpo_of_finite_ends`）。定理所证有两种强度，名称随之：从某步起静止不能被否证（名称带 `unrefuted`，如 `World.rests_unrefuted`），由它生起与止息都不复现（`World.not_recurring_of_rests_unrefuted`）；只证不复现的，名称带 `not_recurring`；本章说一个定理“归于静止”时指它所证的强度（P58c；中文术语与“静止定理”这一标题由 Ren 定）。静止定理：有活动与所立者的普查、生起者体现、平衡、耗散且从某步起每步被围住所立者的世界归于静止，不用判定程序，普查只用作覆盖活跃者的列表（P58）；世界不必有限，每步立着的与活跃的须有限多，而这样归于静止的世界中曾经立着或活跃的不是无界多，两种普查都不可少；有限世界是其情形 | `World.RestsFrom`、`World.comes_to_rest_unrefuted`、`World.arising_stops_unrefuted`、`World.rest_needs_standing`、`World.rests_unrefuted`、`World.not_recurring_of_rests_unrefuted`、`World.rest_few` |
-| 停止不能被否证 | stopping unrefuted | 从某步起停止不能被否证，等价地，并非此后每一步之后，后来的发生都不能被否证（`stop_unrefuted_iff`）；找出那一步需要全知原则；不上升的量的下降如此，不用判定；比不复现更强，静止定理经它而不用判定程序（P58；名称 P58b，此前称“平息／settles”） | `stop_unrefuted_iff`、`falls_stop_unrefuted`、`amount_still_unrefuted`、`Web.generation_stops_unrefuted`、`Flow.change_stops_unrefuted`、`World.comes_to_rest_unrefuted_from` |
+| 归于静止 | coming to rest | 从某步起生起与止息都不再发生（`World.RestsFrom`）；找出那一步需要全知原则（`World.lpo_of_finite_ends`）。定理所证有两种强度，名称随之：从某步起静止不能被否证（名称带 `unrefuted`，如 `World.rests_unrefuted`），由它生起与止息都不复现（`World.not_recurring_of_rests_unrefuted`）；只证不复现的，名称带 `not_recurring`；本章说一个定理“归于静止”时指它所证的强度（中文术语与“静止定理”这一标题由 Ren 定）。静止定理：有活动与所立者的普查、生起者体现、平衡、耗散且从某步起每步被围住所立者的世界归于静止，不用判定程序，普查只用作覆盖活跃者的列表（可判定性局部化）；世界不必有限，每步立着的与活跃的须有限多，而这样归于静止的世界中曾经立着或活跃的不是无界多，两种普查都不可少；有限世界是其情形 | `World.RestsFrom`、`World.comes_to_rest_unrefuted`、`World.arising_stops_unrefuted`、`World.rest_needs_standing`、`World.rests_unrefuted`、`World.not_recurring_of_rests_unrefuted`、`World.rest_few` |
+| 停止不能被否证 | stopping unrefuted | 从某步起停止不能被否证，等价地，并非此后每一步之后，后来的发生都不能被否证（`stop_unrefuted_iff`）；找出那一步需要全知原则；不上升的量的下降如此，不用判定；比不复现更强，静止定理经它而不用判定程序（可判定性局部化；此前称“平息／settles”） | `stop_unrefuted_iff`、`falls_stop_unrefuted`、`amount_still_unrefuted`、`Web.generation_stops_unrefuted`、`Flow.change_stops_unrefuted`、`World.comes_to_rest_unrefuted_from` |
 | 开放 | openness | 不是从某步起每步都被围住：交换越出每个有限家族；有普查、关系项都体现、平衡且耗散的世界生起不息时如此；`exposed` 中净量为零；八个前提不决定它，它连同八个前提也不给生起不息（`holding`）；指在有限家族之外的交换还是流入由 Ren 选择 | `World.arising_opens`、`World.exposed_standing`、`World.openness_contingent`、`World.holding_world` |
 | 传递律 | law of transmission | 不加前提：后代的总量加传递所降低的，等于亲代的量按其后代数加权的总量加传递所升高的；Price 方程的加法计数形式，是算术恒等式，其中的加权总量不是真正的选择项 | `price` |
 | 承担 | bearing | 以正水平依存于某条件，条件能使之落空 | `Bearing` |
@@ -1633,7 +1633,7 @@ The consolidated checker and its receipt `20261013T221720.428753Z` cover 4983 th
 | 种子 | seed | 某个立场下某个活的主张有意义 | `Seed` |
 | G0 | G0 | 已实现的活的内容是正面相关的；在主张层面，每个活的主张从每个立场都有意义。不是公理（Ren 2026-10-11 折叠）：第一部分把它作为条件陈述，不用公理刻画其内容，动力学不决定它；第二部分中它是那一条公理的定理 | `G0`、`Valuation.Significant`、`Web.significance_undetermined` |
 | 持有 | held | 一个活的主张在某个立场的自身区域中；每个活的主张都被持有时，G0 恰等于处处 S0 加 N_std（AI 把 Ren 2026-10-10 的提议读作“想要延续者”，待 Ren） | `Held`、`Unheld`、`significant_iff_held` |
-| 中心 | center | 谁的延续算数；每个想要之点都是中心（S0）；动力学沿依存定出想要延续者必须计入的范围，定不出中心（`center_not_derived`）；AI 把 Ren 的提议读作以立场中立使从任一中心有意义的从每个立场都有意义，没有哪个中心特殊；P39 依 Ren 后来的回答，中心是动力学中的形成，公理读作不受限的意义（§6.8）；P40：不用公理时，中心实际依存的是其供给闭包（§6.9）；P42：中心自身的反馈至多识及其影响闭包，它的交换到达其所及闭包（§6.10）；P43：中心的预设沿一个关系划在其闭包处（§6.11） | `SelfGood`（S0）、`shares`（N_std） |
+| 中心 | center | 谁的延续算数；每个想要之点都是中心（S0）；动力学沿依存定出想要延续者必须计入的范围，定不出中心（`center_not_derived`）；AI 把 Ren 的提议读作以立场中立使从任一中心有意义的从每个立场都有意义，没有哪个中心特殊；依 Ren 后来的回答，中心是动力学中的形成，公理读作不受限的意义（§6.8）；不用公理时，中心实际依存的是其供给闭包（§6.9）；中心自身的反馈至多识及其影响闭包，它的交换到达其所及闭包（§6.10）；中心的预设沿一个关系划在其闭包处（§6.11） | `SelfGood`（S0）、`shares`（N_std） |
 | 接纳 | admission | 水平满足一个形成此时的每项要求；支持是所立水平的接纳 | `Web.Admits`、`Web.supported_iff_admits` |
 | 扣留一个部分 | a part withheld | 部分（一个形成或一个系统）不取用也不给予，其余交换照旧；扣留后的水平存在时唯一，差额精确 | `Flow.withhold`、`Flow.WithheldLevels`、`Flow.Balances.withheld` |
 | 余量 | margin | 扣留后的水平高出所需的量；形成恰在部分的累计净汲取在它所需的每个条件上都不超出余量时被支持，这是相界的精确位置 | `Flow.Balances.supported_iff_within_margin` |
