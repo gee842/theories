@@ -12,10 +12,10 @@ machine is one move of the core copy, so the general laws hold of every machine 
 old examples are instances.
 
 * **Exact copying and release.** Copying a template strand reproduces its tokens exactly when
-  the pool holds each token as often as the strand uses it and the support covers the local
-  charges (`copy_cells_iff`); it is released exactly when the support also covers one more
-  unit (`reproduce_iff`), for every pool. The old budget law, with the template's own tokens
-  in the pool, is the instance (`template_pool_reproduce_iff`).
+  the pool holds each token at least as often as the strand uses it and the support covers the
+  local charges (`copy_cells_iff`); it is released exactly when the support also covers one
+  more unit (`reproduce_iff`), for every pool. The old law of the support needed, with the
+  template's own tokens in the pool, is the instance (`template_pool_reproduce_iff`).
 * **One shared pool.** Reproducing strands in turn from one pool and support, every strand is
   released exactly when the pool supplies all their tokens together and the support covers
   all their charges and releases (`batch_all_released_iff`); exchanging adjacent strands keeps
@@ -37,7 +37,8 @@ old examples are instances.
   charges (`operate_copies_iff`); complete registration is the instance
   (`registered_copy_cells`). Every course keeps the built product as a prefix
   (`product_extends_along`); only copy moves change the product (`product_gated`,
-  `contact_course_keeps_product`), and every course keeps the accounts (`accounts_along`).
+  `contact_course_keeps_product`), and every course keeps the totals of connectors, material
+  and support (`totals_along`).
 * **Inspection.** For every correction state, inspecting a site never increases the defects
   for any product exactly when the reference agrees with the template there
   (`inspect_le_iff_instance`); a scan of such sites never increases them (`scan_le_from_law`),
@@ -188,12 +189,13 @@ theorem reproduce_iff (law : StructuralCopying.Law) (parent : Strand)
       exact hn
     rw [if_pos ⟨done, filled, left⟩]
 
-/-- The old budget law is the instance with the template's own tokens in the pool. -/
+/-- The old law of the support needed is the instance with the template's own tokens in the
+pool. -/
 theorem template_pool_reproduce_iff (law : StructuralCopying.Law) (parent : Strand)
     (hp : parent.bonds = path parent.cells.length) (hn : parent.cells ≠ [])
-    (tail : List Bool) (budget spent : Nat) :
-    (StructuralCopying.reproduce law parent ⟨parent.cells ++ tail, budget, spent⟩).1 = true ↔
-      StructuralCopying.cost law none parent.cells + 1 ≤ budget :=
+    (tail : List Bool) (free spent : Nat) :
+    (StructuralCopying.reproduce law parent ⟨parent.cells ++ tail, free, spent⟩).1 = true ↔
+      StructuralCopying.cost law none parent.cells + 1 ≤ free :=
   (reproduce_iff law parent hp hn _).trans
     ⟨fun h => h.2, fun h => ⟨supplies_prefix _ _, h⟩⟩
 
@@ -688,22 +690,22 @@ theorem product_change_passes_copy (law : StructuralCopying.Law) {s t : CopyingR
   Gated.change_passes_gate (product_gated law) path changed
 
 /-- Connectors with spare ones, material in product and pool, support free and spent. -/
-def accounts (s : CopyingRegistration.State) : Nat × Nat × Nat :=
+def totals (s : CopyingRegistration.State) : Nat × Nat × Nat :=
   (s.contacts.length + s.spare, s.work.built.cells.length + s.work.supply.pool.length,
     s.work.supply.free + s.work.supply.spent)
 
-theorem accounts_kept (law : StructuralCopying.Law) :
-    Gated.KeptBy (CopyingRegistration.process law) (fun _ => false) accounts := by
+theorem totals_kept (law : StructuralCopying.Law) :
+    Gated.KeptBy (CopyingRegistration.process law) (fun _ => false) totals := by
   intro s e t step _
   subst step
   have ⟨a, b, c⟩ := CopyingRegistration.step_accounts law s e
-  simp only [accounts, a, b, c]
+  simp only [totals, a, b, c]
 
-/-- **The accounts are kept along every course** (the old accounts theorem, from
+/-- **The totals are kept along every course** (the old `history_accounts`, from
 `Gated.kept_along_iff` with no move gated). -/
-theorem accounts_along (law : StructuralCopying.Law) :
-    ∀ s plan t, Trace (CopyingRegistration.process law) s plan t → accounts t = accounts s :=
-  fun s plan t path => Gated.kept_along_iff.mpr (accounts_kept law) s plan t path fun _ _ => rfl
+theorem totals_along (law : StructuralCopying.Law) :
+    ∀ s plan t, Trace (CopyingRegistration.process law) s plan t → totals t = totals s :=
+  fun s plan t path => Gated.kept_along_iff.mpr (totals_kept law) s plan t path fun _ _ => rfl
 
 end Registration
 
