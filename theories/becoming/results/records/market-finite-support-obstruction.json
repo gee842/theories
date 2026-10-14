@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F06",
-  "reviewed_at_utc": "2026-10-14T04:30:00+00:00",
+  "reviewed_at_utc": "2026-10-14T08:40:00+00:00",
   "claim": {
-    "zh": "对每条带可容许扰动的变化之律，以及被其步耗竭的每个层族（守卫给出第0级；守卫之内的构型经一个可容许步到第k级，则原在第k+1级），低于第n级的起点在每段可容许历史上n步内离开守卫；处于第n级并不足够。量在每个可容许步上的增长受单调映射约束时，它停在该映射的轨道之下；若量的轨道在第k+1步不超过阈值时，每个可容许步使层级降一，则轨道在第n步不超过阈值、且不在第n级的起点，在每段可容许历史上n步内离开守卫。市场是实例：份额每步至多乘3/2，份额轨道不超过1/6时每步使存量在底线5之上少一单位。所以对每个有理C₀≥5及整数N>C₀−5，正维护区间0<x₀≤(2/3)^N/6在任意时变β／责任误差及非负支持冲击下均至迟在N失效。同一正初态在β=0、最佳初始责任和无误差／耗用下，运行投影有限恢复而完整守卫历史终止。",
-    "en": "For every law of change with admissible disturbances and every family of levels its steps drain (within the guard is level 0, and a configuration within the guard that one admissible step takes to level k was at level k+1), a start below level n leaves the guard within n steps on every admissible history; being at level n does not suffice. A quantity whose growth on each admissible step is bounded by a monotone map stays below the map's orbit; where each admissible step costs one level while the quantity's orbit k+1 steps on is at or below a threshold, every start whose orbit at step n is at or below the threshold and which is not at level n leaves the guard within n steps on every admissible history. The market is an instance, the share growing at most by 3/2 a step and each step costing the stock one unit above the floor 5 while the share's orbit stays at or below 1/6: for every rational C0>=5 and integer N>C0-5, all positive seeds 0<x0<=(2/3)^N/6 fail by N under every time-varying beta/quality-error sequence and nonnegative support shock. The same positive state with beta=0, best initial quality and no error/extra cost has projected finite recovery but full guarded termination."
+    "zh": "对每条带可容许扰动的变化之律，以及被其步耗竭的每个层族（守卫给出第0级；守卫之内的构型经一个可容许步到第k级，则原在第k+1级），低于第n级的起点在每段可容许历史上n步内离开守卫；处于第n级并不足够。量在每个可容许步上的增长受单调映射约束时，它停在该映射的轨道之下；若量的轨道在第k+1步不超过阈值时，每个可容许步使层级降一，则轨道在第n步不超过阈值、且不在第n级的起点，在每段可容许历史上n步内离开守卫。市场是实例（旧定理由此律证明）：份额每步至多乘3/2，份额轨道不超过1/6时每步使存量在底线5之上少一单位。所以对每个有理C₀≥5及整数N>C₀−5，正维护区间0<x₀≤(2/3)^N/6在任意时变β／责任误差及非负支持冲击下均至迟在N失效。同一正初态在β=0、最佳初始责任和无误差／耗用下，运行投影有限恢复而完整守卫历史终止。",
+    "en": "For every law of change with admissible disturbances and every family of levels its steps drain (within the guard is level 0, and a configuration within the guard that one admissible step takes to level k was at level k+1), a start below level n leaves the guard within n steps on every admissible history; being at level n does not suffice. A quantity whose growth on each admissible step is bounded by a monotone map stays below the map's orbit; where each admissible step lowers the level by one while the quantity's orbit k+1 steps on is at or below a threshold, every start whose orbit at step n is at or below the threshold and which is not at level n leaves the guard within n steps on every admissible history. The market is an instance, the old theorem being proved from the law, the share growing at most by 3/2 a step and each step taking one unit of the stock above the floor 5 while the share's orbit stays at or below 1/6: for every rational C0>=5 and integer N>C0-5, all positive seeds 0<x0<=(2/3)^N/6 fail by N under every time-varying beta/quality-error sequence and nonnegative support shock. The same positive state with beta=0, best initial quality and no error/extra consumption has projected finite recovery but full guarded termination."
   },
   "hypotheses": [
     {
@@ -32,7 +32,8 @@
     "FiniteSupportObstruction.every_finite_stock_has_obstructed_positive_seeds",
     "Becoming.Lasting.Drains.leaves",
     "Becoming.Lasting.exhausts",
-    "Becoming.MarketInstances.forces_failure_instance"
+    "Becoming.MarketInstances.forces_failure_instance",
+    "Becoming.MarketInstances.obstructed_seeds_instance"
   ],
   "dependencies": [
     {
@@ -126,8 +127,8 @@
     "en": "The delta_N interval is a conservative obstruction, not an exact viability boundary. Actual provision, dependence change, entry or faster formation may alter it. No bifurcation, R-tipping classification, physical death or zero-added-substantive-axiom foundation is proved."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1实际检查17项新定理／22项声明审计；123项继承定理／153项审计另列。保留标准逻辑公理依赖；作者反审，无独立agent或新市场观察。一般律已由检查器回执绑定。",
-    "en": "Lean 4.29.1 checks 17 new theorems / 22 declaration audits, with 123 inherited theorems / 153 audits separately rebuilt. Standard logical axiom dependencies are retained; author counterreview, no independent agent or new market observations. General laws: checker receipts bound."
+    "zh": "Lean 4.29.1实际检查17项新定理／22项声明审计；123项继承定理／153项审计另列。保留标准逻辑公理依赖；作者反审，无独立agent或新市场观察。一般律仅经scratch实编。",
+    "en": "Lean 4.29.1 checks 17 new theorems / 22 declaration audits, with 123 inherited theorems / 153 audits separately rebuilt. Standard logical axiom dependencies are retained; author counterreview, no independent agent or new market observations. General laws: scratch builds only."
   },
   "references": [
     {
@@ -172,7 +173,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
       "role": "proof",
-      "sha256": "13565153d9c8bc28b5c9f7f51fda30520694f2911c02181975d77c8ee0190284",
+      "sha256": "0089fc6928d8271524b77233b562928c687613100741a1856fe6aa91a054b43a",
       "declarations": [
         "Becoming.Lasting.Drains",
         "Becoming.Lasting.Drains.along",
@@ -187,19 +188,20 @@
     {
       "path": "experiments/market-generativity/formal/MarketInstances.lean",
       "role": "proof",
-      "sha256": "da45239425e3b7ccb94cf690cb97eebf4da4eab9e3549fb822364f3b3d6ba4d3",
+      "sha256": "b7dc5166725da11c77a8d0012a11db355189548906794594349f48178226bd88",
       "declarations": [
         "Becoming.MarketInstances.scheduled",
         "Becoming.MarketInstances.run_eq",
         "Becoming.MarketInstances.guarded_eq",
         "Becoming.MarketInstances.orbit_growth",
-        "Becoming.MarketInstances.forces_failure_instance"
+        "Becoming.MarketInstances.forces_failure_instance",
+        "Becoming.MarketInstances.obstructed_seeds_instance"
       ]
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "sha256": "c25bf4b0b8574af6d2fa76b9bd9af7bce5de2cc545e9cee3d16e274b3672f598",
       "declarations": []
     },
     {
@@ -229,20 +231,6 @@
       "sha256_pointer": "/sources/RegimeTransition.lean",
       "success_pointer": "/status",
       "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Lasting",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/market-generativity/formal/MarketInstances.lean",
-      "receipt": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/verification.json",
-      "sha256_pointer": "/source_sha256/MarketInstances",
-      "success_pointer": "/status",
-      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -269,6 +257,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Lasting 由核心回执 20261014T044840.291323Z；MarketInstances 由外围回执 20261014T041714.366300Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Lasting by core receipt 20261014T044840.291323Z; MarketInstances by peripheral receipt 20261014T041714.366300Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第116节）：every_finite_stock_has_obstructed_positive_seeds 现由耗竭律证明（obstructed_seeds_instance：旧证明以 forces_failure_instance 代替 finite_support_forces_failure）；英文主张中的市场措辞改为结构词。Lasting.lean 与 MarketInstances.lean 改动后，第三批核验文件对它们的绑定已移去（核验文件的引用保留），有效范围中一般律的说明改为仅经scratch实编；落地时绑定新的核验文件。另审读改动后对齐研究的哈希（末尾新增第116节及其英文段；其余不变）。",
+      "en": "14 October 2026, open-issues plan (study section 116): every_finite_stock_has_obstructed_positive_seeds is now proved from the exhaustion law (obstructed_seeds_instance: the old proof with forces_failure_instance in place of finite_support_forces_failure); the English claim's market wording became structural. With Lasting.lean and MarketInstances.lean changed, their batch-3 bindings were removed (the referenced verification files stay) and the validation scope's note on the general laws now says scratch builds only; the landing run binds the new verification files. The hash of the study was reconciled after reading its change (section 116 and its English paragraph appended; the rest unchanged)."
     }
   ]
 }

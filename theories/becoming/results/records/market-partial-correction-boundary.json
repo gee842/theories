@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F06",
-  "reviewed_at_utc": "2026-10-14T04:30:00+00:00",
+  "reviewed_at_utc": "2026-10-14T08:40:00+00:00",
   "claim": {
-    "zh": "对每条确定的律与目标：从起点出发的轨道永不到达目标，恰当某个含起点、避开目标且对律封闭的集合存在，这即目标补集的生存核；某种子永不到达恰当这样的集合含种子，目标之外的不动构型自身就是这样的集合。在原有理市场族中，0≤β≤3/4且无额外责任误差时，每个物理正维护状态在有限时间到达原保护区域，恰当固定质量3/8、最坏影响1处的质量余量非负，即β≤5/12，也恰当没有对律封闭、避开着陆的集合含正状态；β>5/12时不动构型就是这样的集合。这包括等号情形，并在继承的初始存量覆盖K_N下执行，撤出后把实际到达状态交给原保护。",
-    "en": "For every determined law and target, the orbit from a start never reaches the target exactly when some set containing the start avoids the target and is closed under the law, which is the viability kernel of the target's complement; some seed never reaches the target exactly when such a set contains a seed, and a fixed configuration outside the target is such a set by itself. In the original rational market family with 0<=beta<=3/4 and zero extra quality error, every physical positive renewal state reaches the original protection region in finite time exactly when the quality margin at the fixed quality 3/8 under the worst influence 1 is nonnegative, that is beta<=5/12, and exactly when no set closed under the law and avoiding landing contains a positive state; above 5/12 the fixed configuration is one. This includes equality and executes under the inherited initial stock cover K_N, handing the actual arrived state to original protection after withdrawal."
+    "zh": "对每条带可容许扰动的变化之律与目标：起点在每个可容许扰动下n步内到达目标，恰当某个漏斗族（第0级在目标内；第k+1级在目标内或每个可容许步落到第k级）在第n级含有它，也恰当每个汇聚族在第n级含有它；到达可复合。对确定的律，轨道n步内遇到目标恰当某个漏斗族含起点，目标可判定时也恰当有起点处至多为n、目标外每步下降的数值变式；轨道永不到达目标，恰当某个含起点、避开目标且对律封闭的集合存在，这即目标补集的生存核，目标之外的不动构型就是这样的集合。在原有理市场族中，0≤β≤3/4且无额外责任误差时，每个物理正维护状态在有限时间到达原保护区域，恰当β≤5/12：市场的增益估计（依次为份额、影响、质量）给出通向着陆的漏斗族，这是实例的内容；β>5/12时不动构型是避开着陆的封闭集。等价地，质量3/8、最坏影响1处的余量非负，也恰当没有避开着陆的封闭集含正状态。这包括等号情形，并在继承的初始存量覆盖K_N下执行，撤出后把实际到达状态交给原保护。",
+    "en": "For every law of change with admissible disturbances and every target, a start reaches the target within n steps on every admissible disturbance exactly when some funnel holds it at level n (level 0 in the target; level k+1 in the target or sent by every admissible step to level k), and exactly when every basin does; reaching composes. For a determined law the orbit meets the target within n steps exactly when some funnel holds the start, and, the target decided, exactly when some numeric variant at most n at the start is lowered by every step outside the target; it never reaches the target exactly when some set containing the start avoids the target and is closed under the law, the viability kernel of the target's complement, and a fixed configuration outside the target is such a set. In the original rational market family with 0<=beta<=3/4 and zero extra quality error, every physical positive renewal state reaches the original protection region in finite time exactly when beta<=5/12: the market's gain estimates (share, then influence, then quality) supply the funnels into landing, the instance's content, and above 5/12 the fixed configuration is a closed set avoiding landing. Equivalently, the quality margin at 3/8 under the worst influence 1 is nonnegative, and no closed set avoiding landing contains a positive state. This includes equality and executes under the inherited initial stock cover K_N, handing the actual arrived state to original protection after withdrawal."
   },
   "hypotheses": [
     {
@@ -35,7 +35,14 @@
     "Becoming.Lasting.fixed_avoids",
     "Becoming.MarketInstances.never_lands_iff",
     "Becoming.MarketInstances.lands_iff_margin",
-    "Becoming.MarketInstances.lands_iff_no_closed"
+    "Becoming.MarketInstances.lands_iff_no_closed",
+    "Becoming.Lasting.reaches_iff_funnel",
+    "Becoming.Lasting.reaches_iff_basin",
+    "Becoming.Lasting.orbit_reaches_iff_funnel",
+    "Becoming.Lasting.orbit_reaches_iff_variant",
+    "Becoming.MarketInstances.landing_side_instance",
+    "Becoming.MarketInstances.landing_boundary_instance",
+    "Becoming.MarketInstances.lands_iff_funnel"
   ],
   "dependencies": [
     {
@@ -122,8 +129,8 @@
     "en": "The exact boundary concerns the specified zero-error universal positive-state arrival property, not a complete basin, all-parameter bifurcation, noisy recovery range, measured threshold, or formed intervention/entry."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 实际检查26项新定理／31项声明审计，123项继承定理／153项审计分列。作者反审已整合，无独立agent验收或新增市场观察。一般律已由检查器回执绑定。",
-    "en": "Lean 4.29.1 actually checks 26 new theorems / 31 declaration audits and separately 123 inherited theorems / 153 audits. Author counterreview is integrated, without independent agent acceptance or new market observations. General laws: checker receipts bound."
+    "zh": "Lean 4.29.1 实际检查26项新定理／31项声明审计，123项继承定理／153项审计分列。作者反审已整合，无独立agent验收或新增市场观察。一般律仅经scratch实编。",
+    "en": "Lean 4.29.1 actually checks 26 new theorems / 31 declaration audits and separately 123 inherited theorems / 153 audits. Author counterreview is integrated, without independent agent acceptance or new market observations. General laws: scratch builds only."
   },
   "references": [
     {
@@ -169,20 +176,39 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
       "role": "proof",
-      "sha256": "13565153d9c8bc28b5c9f7f51fda30520694f2911c02181975d77c8ee0190284",
+      "sha256": "0089fc6928d8271524b77233b562928c687613100741a1856fe6aa91a054b43a",
       "declarations": [
         "Becoming.Lasting.avoids_iff_closed",
         "Becoming.Lasting.avoids_iff_kernel",
         "Becoming.Lasting.some_avoids_iff",
         "Becoming.Lasting.none_avoid_iff",
         "Becoming.Lasting.reaches_excludes",
-        "Becoming.Lasting.fixed_avoids"
+        "Becoming.Lasting.fixed_avoids",
+        "Becoming.Lasting.Reaches",
+        "Becoming.Lasting.Funnel",
+        "Becoming.Lasting.Basin",
+        "Becoming.Lasting.reaches_iff_funnel",
+        "Becoming.Lasting.reaches_iff_basin",
+        "Becoming.Lasting.reaches_iff_of_exact",
+        "Becoming.Lasting.Reaches.trans",
+        "Becoming.Lasting.Reaches.histories",
+        "Becoming.Lasting.reaches_iff_histories",
+        "Becoming.Lasting.Reaches.not_lasts",
+        "Becoming.Lasting.Variant",
+        "Becoming.Lasting.Variant.reaches",
+        "Becoming.Lasting.reaches_iff_orbit",
+        "Becoming.Lasting.orbit_reaches_iff_funnel",
+        "Becoming.Lasting.orbit_reaches_iff_variant",
+        "Becoming.Lasting.reaches_iff_not_lasts",
+        "Becoming.Lasting.dual_needs_decision",
+        "Becoming.Lasting.numeric_needs_decision",
+        "Becoming.Lasting.Search.histories_need_decision"
       ]
     },
     {
       "path": "experiments/market-generativity/formal/MarketInstances.lean",
       "role": "proof",
-      "sha256": "da45239425e3b7ccb94cf690cb97eebf4da4eab9e3549fb822364f3b3d6ba4d3",
+      "sha256": "b7dc5166725da11c77a8d0012a11db355189548906794594349f48178226bd88",
       "declarations": [
         "Becoming.MarketInstances.path_eq",
         "Becoming.MarketInstances.never_lands_iff",
@@ -190,13 +216,21 @@
         "Becoming.MarketInstances.lands_iff_margin",
         "Becoming.MarketInstances.lands_iff_no_closed",
         "Becoming.MarketInstances.fixed_point_instance",
-        "Becoming.MarketInstances.partial_prefix_instance"
+        "Becoming.MarketInstances.partial_prefix_instance",
+        "Becoming.MarketInstances.rising_funnel",
+        "Becoming.MarketInstances.settled_kept",
+        "Becoming.MarketInstances.settled_reaches_landing",
+        "Becoming.MarketInstances.seed_reaches_settled",
+        "Becoming.MarketInstances.seed_reaches_landing",
+        "Becoming.MarketInstances.landing_side_instance",
+        "Becoming.MarketInstances.landing_boundary_instance",
+        "Becoming.MarketInstances.lands_iff_funnel"
       ]
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "sha256": "c25bf4b0b8574af6d2fa76b9bd9af7bce5de2cc545e9cee3d16e274b3672f598",
       "declarations": []
     },
     {
@@ -224,20 +258,6 @@
       "source": "experiments/market-generativity/formal/RegimeTransition.lean",
       "receipt": "experiments/market-generativity/formal/partial-transition-verification.json",
       "sha256_pointer": "/sources/RegimeTransition.lean",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Lasting",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/market-generativity/formal/MarketInstances.lean",
-      "receipt": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/verification.json",
-      "sha256_pointer": "/source_sha256/MarketInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -270,6 +290,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Lasting 由核心回执 20261014T044840.291323Z；MarketInstances 由外围回执 20261014T041714.366300Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Lasting by core receipt 20261014T044840.291323Z; MarketInstances by peripheral receipt 20261014T041714.366300Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第116节）：着陆一侧现为核心到达律的实例。Becoming.Lasting 新增到达律：漏斗族与汇聚族、复合、确定的律的轨道形式与数值变式，需要判定处各有见证定理；MarketInstances 以市场的增益估计给出漏斗，partial_finite_landing 与 5/12 边界由核心律得出（landing_side_instance、landing_boundary_instance）。Lasting.lean 与 MarketInstances.lean 改动后，第三批核验文件对它们的绑定已移去（核验文件的引用保留），有效范围中一般律的说明改为仅经scratch实编；落地时绑定新的核验文件。另审读改动后对齐研究的哈希（末尾新增第116节及其英文段；其余不变）。",
+      "en": "14 October 2026, open-issues plan (study section 116): the landing side is now an instance of the core's reaching law. Becoming.Lasting adds the reaching law: funnels and basins, composition, the orbit form and the numeric variant for a determined law, with a witness theorem wherever a decision is needed; MarketInstances supplies the funnels from the market's gain estimates, so partial_finite_landing and the 5/12 boundary follow from the core's laws (landing_side_instance, landing_boundary_instance). With Lasting.lean and MarketInstances.lean changed, their batch-3 bindings were removed (the referenced verification files stay) and the validation scope's note on the general laws now says scratch builds only; the landing run binds the new verification files. The hash of the study was reconciled after reading its change (section 116 and its English paragraph appended; the rest unchanged)."
     }
   ]
 }
