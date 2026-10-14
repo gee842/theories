@@ -15,6 +15,8 @@ ones depending on an axiom are the injectivity lemmas of constructors with field
 (`injEq`), on `propext`, which no source declaration uses; the receipt lists them.
 The bridge imports existing modules to show that their interfaces are the core's;
 nothing in the core imports it, and its declarations also have empty axiom reports.
+Spine names that contain a word of exchange (cost, charge, credit and the like) are listed
+in the receipt as `market_names`, apart from a few scientific terms; they do not fail the run.
 
 A Lean step whose inputs match a step that passed in an earlier run is not run again:
 its outputs and log come from a cache shared by runs and worktrees (`step_key`). The
@@ -1596,6 +1598,35 @@ def passed_receipts():
     return receipts
 
 
+# Words of exchange in a declaration name (the list of tools/research/style.py, MARKET_EN, as
+# words). A structural name says what a relation does. A spine name containing one is reported,
+# not failed; names in MARKET_ALLOWED are scientific terms and keep their words.
+MARKET_WORDS = {"cost", "costs", "costly", "costing", "charge", "charges", "charged", "charging", "budget",
+                "budgets", "budgeted", "pay", "pays", "paying", "payment", "payments", "paid", "price",
+                "prices", "priced", "pricing", "spend", "spends", "spending", "spent", "accounting", "credit",
+                "credits", "credited", "crediting", "fee", "fees", "profit", "profits", "profitable", "fund",
+                "funds", "funded", "funding"}
+MARKET_ALLOWED = {
+    "Becoming.price": "the counting form of Price's equation",
+    "Becoming.Oscillation.charge": "an oscillator's stored level, in the physical sense",
+    "Becoming.Oscillation.charge_even": "an oscillator's stored level, in the physical sense",
+    "Becoming.Oscillation.charge_odd": "an oscillator's stored level, in the physical sense",
+}
+
+
+def name_words(full):
+    """The lower-case words of a Lean name: split at dots, underscores, primes and camel case."""
+    return [w.lower() for part in re.split(r"[._']", full)
+            for w in re.findall(r"[A-Z]?[a-z]+|[A-Z]+(?![a-z])|[0-9]+", part)]
+
+
+def market_names(registry):
+    """Spine declarations whose names contain a word of exchange, outside MARKET_ALLOWED."""
+    return {item["name"]: sorted(set(name_words(item["name"])) & MARKET_WORDS)
+            for name in SPINE for item in registry.get(name, [])
+            if item["name"] not in MARKET_ALLOWED and set(name_words(item["name"])) & MARKET_WORDS}
+
+
 def declarations(data):
     # A root module only imports and documents; it declares nothing.
     if not re.sub(r"^import .+$", "", audit_support.code_only(data.decode()), flags=re.M).strip():
@@ -1716,6 +1747,7 @@ def main():
             matches[name] = found
         receipt["inherited_receipts"] = matches
         registry = {name: declarations(data) for name, data in sources.items()}
+        receipt["market_names"] = market_names(registry)
         lean = Path.home() / ".elan/bin/lean"
         binary = Path.home() / ".elan/toolchains/leanprover--lean4---v4.29.1/bin/lean"
         receipt["lean_binary_sha256"] = audit_support.digest(binary.read_bytes())
@@ -1862,6 +1894,7 @@ def main():
         "inherited_modules": len(records) - len(spine),
         "inherited_axioms": sorted({a for r in records if not r["spine"]
                                     for aa in r["axiom_dependencies"].values() for a in aa}),
+        "market_names": receipt.get("market_names", {}),
         "lean_steps_run": len(steps["ran"]), "lean_steps_reused": len(steps["reused"]),
         "receipt": str(RECEIPT),
     }))

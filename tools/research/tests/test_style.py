@@ -137,5 +137,48 @@ class RatchetTests(unittest.TestCase):
         self.assertEqual([(f['rule'], f['severity']) for f in found], [('new-v1-record', 'warning')])
 
 
+class MarketWordTests(unittest.TestCase):
+    """Words of exchange: warned in schema-2 public fields and in spine declaration names."""
+
+    def found(self, record):
+        return [(f['field'], f['severity']) for f in style.lint(record) if f['rule'] == 'market-word']
+
+    def test_schema_2_public_fields_warn_in_both_languages(self):
+        r = v2_record(statement={'en': 'The reading credits each event at its cost.', 'zh': '读法以其代价记入每个事件。'})
+        self.assertEqual(self.found(r), [('statement', 'warning'), ('statement', 'warning')])
+
+    def test_schema_1_evidence_and_scientific_terms_are_not_warned(self):
+        self.assertEqual(self.found(v1_record(claim={'en': 'The reading credits each event.', 'zh': '记入。'})), [])
+        self.assertEqual(self.found(v2_record(validation_scope={'en': 'Paid receipts.', 'zh': '回执。'})), [])
+        r = v2_record(statement={'en': "The counting form of Price's equation; credit assignment; the full account.",
+                                 'zh': '生成本身承担要求。'})
+        self.assertEqual(self.found(r), [])
+
+    def test_checker_uses_the_same_words(self):
+        checker = load_checker()
+        for word in checker.MARKET_WORDS:
+            self.assertTrue(style.MARKET_EN.fullmatch(word), word)
+        for word in ('cost', 'charged', 'budget', 'paid', 'pricing', 'spent', 'credited', 'fees', 'profit', 'funding'):
+            self.assertIn(word, checker.MARKET_WORDS)
+
+    def test_checker_reports_spine_names_outside_the_allowed_terms(self):
+        checker = load_checker()
+        registry_ = {'Becoming.Ranking': [{'name': 'Becoming.Ranking.stops_credited', 'kind': 'theorem'},
+                                          {'name': 'Becoming.Ranking.pairDraw', 'kind': 'def'}],
+                     'Becoming.Evolution': [{'name': 'Becoming.price', 'kind': 'theorem'}],
+                     'Elsewhere': [{'name': 'Elsewhere.costOf', 'kind': 'def'}]}
+        self.assertEqual(checker.market_names(registry_), {'Becoming.Ranking.stops_credited': ['credited']})
+        self.assertEqual(checker.name_words('Becoming.LPOOf_x'), ['becoming', 'lpo', 'of', 'x'])
+
+
+def load_checker():
+    import importlib.util
+    path = registry.ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py'
+    spec = importlib.util.spec_from_file_location('check_becoming_for_tests', path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
 if __name__ == '__main__':
     unittest.main()
