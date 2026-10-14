@@ -13,9 +13,10 @@ module states each as a law for every process or partial law of its kind.
 * **Counted work (`Counts`).** A partial law `tick` that, while a task is pending (`busy`),
   does one unit of remaining work for one unit of fuel, finishes into `done` when no work remains
   and fuel is left, and stalls without fuel. From every pending configuration, `work + 1` ticks
-  finish the task exactly when the fuel covers them (`completes_iff`); no shorter run finishes,
-  every shorter run leaves the task pending with the work and fuel each lowered by the ticks taken
-  (`pending_before`, `ticks_busy`), and with fuel short of the work every run stalls
+  finish the task exactly when the fuel covers them (`completes_iff`); every shorter run leaves the
+  task pending with the work and fuel each lowered by the ticks taken (`pending_before`,
+  `ticks_busy`), so where pending and finished are exclusive no shorter run finishes
+  (`not_done_before`), and with fuel short of the work every run stalls
   (`stalls_beyond`). Read as a plan of the partial law, this is completion in the sense of
   `Assurance` (`completes_plan_iff`). With no fuel, a task advancing by one unit per tick
   finishes in exactly `work + 1` ticks (`Advances.completes`).
@@ -183,7 +184,7 @@ theorem completes_iff {tick : S → Option S} {busy done : S → Prop} {work fue
           exact moved,
          finished⟩⟩
 
-/-- **No shorter run finishes**: every run of at most `work` ticks leaves the task pending,
+/-- **Every shorter run leaves the task pending**: every run of at most `work` ticks leaves the task pending,
 with the work lowered by the ticks taken. -/
 theorem pending_before {tick : S → Option S} {busy done : S → Prop} {work fuel : S → Nat}
     (counts : Counts tick busy done work fuel) {s t : S} {k : Nat} (pending : busy s)

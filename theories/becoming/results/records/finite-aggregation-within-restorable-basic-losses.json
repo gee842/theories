@@ -61,11 +61,12 @@
       ]
     },
     {
-      "en": "A frame reads a claim at its episode time exactly when its realization is settled from then on, and a claim read at its time stays lost when support returns.",
-      "zh": "框架在主张的时刻读它，恰当它的实现自那时起已定；在其时刻被读的主张，支持恢复后仍然失去。",
+      "en": "By definition, a frame that reads a claim at its episode time keeps a missed claim missed when support returns, and it reads the claim at that time exactly when the claim's realization is settled from then on; where a claim is missed and later realized again, no support makes the frame read it at the earlier time. Whether an actual frame reads at episode time is the premise.",
+      "zh": "按定义，在主张的时刻读它的框架，支持恢复后仍让错过的主张错过；它在该时刻读主张，恰当主张的实现自那时起已定；主张错过而后又实现时，没有任何支持使框架在较早时刻读它。实际框架是否在片段时刻读，是前提。",
       "declarations": [
         "Becoming.Frame.readsAt_iff_settled",
-        "Becoming.Frame.ReadsAt.loss_retained"
+        "Becoming.Frame.ReadsAt.loss_retained",
+        "Becoming.Frame.not_readsAt_of_recovery"
       ]
     },
     {
@@ -102,7 +103,7 @@
       "declarations": [
         "Becoming.RepairComparison.fragile_b3_loses_backbone",
         "Becoming.RepairComparison.fragile_b3_not_matching",
-        "Becoming.RepairComparison.fragile_b3_below_nothing"
+        "Becoming.RepairComparison.fragile_b3_better_than_none"
       ]
     }
   ],
@@ -195,8 +196,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
       "detail": {
-        "zh": "三接入安装实际断开共同骨干的给定设备律下，保护没有兑现且额外共同损失保留；fragile_b3_not_matching 排除原匹配。 一般规律：每个主张都依于骨干时，失去骨干的路线经严格匹配不优于任何路线（not_strictLossMatch_of_base_lost；本例 fragile_b3_below_nothing，对任何内容读法成立）。",
-        "en": "When the supplied equipment law makes the three-access installation disconnect the backbone, protection fails and the common loss remains; fragile_b3_not_matching excludes the original matching. The general law: where every claim rests on the backbone, a course losing it is strictly better by matching than no course (not_strictLossMatch_of_base_lost; here fragile_b3_below_nothing, under any content reading)."
+        "zh": "三接入安装实际断开共同骨干的给定设备律下，保护没有兑现且额外共同损失保留；fragile_b3_not_matching 排除原匹配。 一般规律：每个主张都依于骨干时，失去骨干的路线经严格匹配不优于任何路线（not_strictLossMatch_of_base_lost；本例 fragile_b3_better_than_none，对任何内容读法成立）。",
+        "en": "When the supplied equipment law makes the three-access installation disconnect the backbone, protection fails and the common loss remains; fragile_b3_not_matching excludes the original matching. The general law: where every claim rests on the backbone, a course losing it is strictly better by matching than no course (not_strictLossMatch_of_base_lost; here fragile_b3_better_than_none, under any content reading)."
       }
     },
     {
@@ -436,7 +437,7 @@
         "Becoming.RepairComparison.b3_matches_a_by_count",
         "Becoming.RepairComparison.b2_a_neither",
         "Becoming.RepairComparison.a_b1_not_extension",
-        "Becoming.RepairComparison.fragile_b3_below_nothing",
+        "Becoming.RepairComparison.fragile_b3_better_than_none",
         "Becoming.RepairComparison.sufficientMatching_iff"
       ]
     },
@@ -491,7 +492,8 @@
         "Becoming.Frame.readsAt_iff_settled",
         "Becoming.Frame.ReadsAt.loss_retained",
         "Becoming.EndlessLosses.self_match",
-        "Becoming.EndlessLosses.no_sufficient_matching"
+        "Becoming.EndlessLosses.no_sufficient_matching",
+        "Becoming.Frame.not_readsAt_of_recovery"
       ]
     }
   ],
@@ -557,6 +559,10 @@
     {
       "en": "14 October 2026, seventeenth independent review, finding G1 (BECOMING-GENERAL-LAWS-REVIEW.md): item 10 corrected law 5 but left the same inverted wording in law 9 and in the fifth counterexample. \"Strictly matched below no course\" reads as \"the worse side of no strict match\", the converse of `not_strictLossMatch_of_base_lost` and of `RepairComparison.fragile_b3_below_nothing` (the course is the better side of no strict match); a configuration that loses the common support can be the worse side of one. Both now use law 5's wording, \"strictly better by matching than no course\". The Lean statements are unchanged; the Lean docstrings and the declaration name with the same inversion are left to the integrator. No premise, status, dependency, reference, proof binding or source hash changed.",
       "zh": "2026年10月14日，第十七次独立审查发现 G1（BECOMING-GENERAL-LAWS-REVIEW.md）：第10项改正了定律5，但定律9与第五个反例仍用同一颠倒的说法。“在任何路线之下都没有严格匹配”读作“不是任何严格匹配中较差的一方”，与 `not_strictLossMatch_of_base_lost` 及 `RepairComparison.fragile_b3_below_nothing` 相反（它们说该路线不是任何严格匹配中较好的一方）；失去共同支持的配置可以是严格匹配中较差的一方。两处现都用定律5的说法“经严格匹配不优于任何路线”。Lean 陈述不变；带同一颠倒的 Lean 文档注释与声明名留给整合会话。前提、状态、依赖、引用、证明绑定与来源哈希均未改变。"
+    },
+    {
+      "en": "14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), findings G1 and G6, landed with the next checker run: the theorem `RepairComparison.fragile_b3_below_nothing` is renamed `fragile_b3_better_than_none`, its docstring and those of `LossMatching` now say \"strictly better by matching than no configuration\"; the law on reading at episode time (law 6) now says that the retained loss holds by the definition of `ReadsAt` and that whether an actual frame reads at episode time is the premise, citing `not_readsAt_of_recovery`.",
+      "zh": "2026年10月14日，第十七次独立审查（[BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)）发现 G1 与 G6，随下一次检查运行落地：定理 `RepairComparison.fragile_b3_below_nothing` 改名为 `fragile_b3_better_than_none`，它与 `LossMatching` 的文档注释改为“经严格匹配不优于任何配置”；关于在片段时刻读的定律（第6条）改为说明：损失保留由 `ReadsAt` 的定义给出，实际框架是否在片段时刻读是前提，并引用 `not_readsAt_of_recovery`。"
     }
   ],
   "text_versions": [

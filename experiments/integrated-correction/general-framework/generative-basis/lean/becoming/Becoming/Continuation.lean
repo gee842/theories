@@ -32,7 +32,7 @@ center, whose continuation counts, is not settled here: `Becoming.Standpoints` s
   (`joint_keeps`); a step of joint excess lowers it by at least one (`excess_lowers`), so
   `n` consecutive steps of joint excess need a level of at least `n` at the start
   (`excess_bounded`), and in the pair no web balances the flow at all (`Pair.no_web`).
-  Conversely a step of joint surplus raises the level by at least one (`surplus_raises_at`),
+  Conversely a step of joint net giving raises the level by at least one (`net_give_raises_at`),
   and where the formations give jointly more than they take whenever the level is not below
   where it started, `m - level` steps bring it back to `m` (`restores`): the law of
   restoration. `RelationalRenewal.Law`'s recovery is an instance (`Becoming.RenewalBridge`).
@@ -233,51 +233,51 @@ theorem excess_bounded (balances : L.Balances W) {c : C} {T : Nat} :
       W.level (T + n) c + n ≤ W.level T c :=
   fun n => excess_bounded_at n fun k _ => balances.on [c] (T + k)
 
-/-- With balance at the condition across the step, a step of joint surplus raises the level
+/-- With balance at the condition across the step, a step of joint net giving raises the level
 by at least one. -/
-theorem surplus_raises_at {t : Nat} {c : C} (balances : L.BalancesOn W [c] t)
-    (surplus : L.taken t c < L.given t c) : W.level t c + 1 ≤ W.level (t + 1) c :=
+theorem net_give_raises_at {t : Nat} {c : C} (balances : L.BalancesOn W [c] t)
+    (netGive : L.taken t c < L.given t c) : W.level t c + 1 ≤ W.level (t + 1) c :=
   le_of_add_le_add_right (L.taken t c)
     (Nat.le_trans
       (Nat.le_of_eq ((Nat.add_assoc _ 1 _).trans
         (congrArg (W.level t c + ·) (Nat.add_comm 1 (L.taken t c)))))
       (Nat.le_trans
-        (Nat.add_le_add_left (show L.taken t c + 1 ≤ L.given t c from surplus) _)
+        (Nat.add_le_add_left (show L.taken t c + 1 ≤ L.given t c from netGive) _)
         (Nat.le_of_eq (balances c (.head [])).symm)))
 
 /-- Restoration while the giving stays supported: with balance at the condition across each
-of `n` steps from `T`, and joint surplus at each of them where the level is not below where
+of `n` steps from `T`, and joint net giving at each of them where the level is not below where
 it was at `T`, the level rises by at least `n`. -/
-theorem surplus_bounded_at {c : C} {T : Nat} :
+theorem net_give_bounded_at {c : C} {T : Nat} :
     ∀ n, (∀ k, k < n → L.BalancesOn W [c] (T + k)) →
       (∀ k, k < n → W.level T c ≤ W.level (T + k) c → L.taken (T + k) c < L.given (T + k) c) →
       W.level T c + n ≤ W.level (T + n) c
   | 0, _, _ => Nat.le_refl _
-  | n + 1, balances, surplus =>
-    have before := surplus_bounded_at n (fun k below => balances k (Nat.lt_succ_of_lt below))
-      fun k below => surplus k (Nat.lt_succ_of_lt below)
+  | n + 1, balances, netGive =>
+    have before := net_give_bounded_at n (fun k below => balances k (Nat.lt_succ_of_lt below))
+      fun k below => netGive k (Nat.lt_succ_of_lt below)
     Nat.le_trans (Nat.add_le_add_right before 1)
-      (surplus_raises_at (balances n (Nat.lt_succ_self n))
-        (surplus n (Nat.lt_succ_self n) (Nat.le_trans (Nat.le_add_right _ n) before)))
+      (net_give_raises_at (balances n (Nat.lt_succ_self n))
+        (netGive n (Nat.lt_succ_self n) (Nat.le_trans (Nat.le_add_right _ n) before)))
 
 /-- The law of restoration: from level `W.level T c`, after `m - W.level T c` steps with
-balance at the condition and joint surplus wherever the level is not below where it was at
+balance at the condition and joint net giving wherever the level is not below where it was at
 `T`, the level is at least `m`. -/
 theorem restores_at {c : C} {m T : Nat}
     (balances : ∀ k, k < m - W.level T c → L.BalancesOn W [c] (T + k))
-    (surplus : ∀ k, k < m - W.level T c → W.level T c ≤ W.level (T + k) c →
+    (netGive : ∀ k, k < m - W.level T c → W.level T c ≤ W.level (T + k) c →
       L.taken (T + k) c < L.given (T + k) c) :
     m ≤ W.level (T + (m - W.level T c)) c :=
   Nat.le_trans (Nat.le_trans (Nat.le_add_right m (W.level T c - m))
       (Nat.le_of_eq (add_sub_turn m (W.level T c)).symm))
-    (surplus_bounded_at _ balances surplus)
+    (net_give_bounded_at _ balances netGive)
 
 /-- The law of restoration under balance. -/
 theorem restores (balances : L.Balances W) {c : C} {m T : Nat}
-    (surplus : ∀ k, k < m - W.level T c → W.level T c ≤ W.level (T + k) c →
+    (netGive : ∀ k, k < m - W.level T c → W.level T c ≤ W.level (T + k) c →
       L.taken (T + k) c < L.given (T + k) c) :
     m ≤ W.level (T + (m - W.level T c)) c :=
-  restores_at (fun k _ => balances.on [c] (T + k)) surplus
+  restores_at (fun k _ => balances.on [c] (T + k)) netGive
 
 end Joint
 

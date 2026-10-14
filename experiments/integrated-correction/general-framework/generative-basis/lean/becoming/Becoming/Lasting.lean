@@ -31,7 +31,7 @@ law never reaches a target, and, dually, when a law reaches a target within `n` 
   (`Collapse.level_not_lasting`). A sequence whose growth is bounded by a monotone map stays
   below the map's orbit (`below_orbit`), and the orbit is the worst such growth
   (`stays_below_iff`). Let a quantity grow at most by a monotone map, and let each step taken
-  while the quantity's orbit stays at or below a threshold cost one level. Then every start
+  while the quantity's orbit stays at or below a threshold lower the level by one. Then every start
   whose orbit stays at or below the threshold for `n` steps and which is not at level `n`
   leaves the guard within `n` steps on every admissible history (`exhausts`).
 * **Never reaching.** A determined law's orbit never reaches a target exactly when some set
@@ -389,7 +389,7 @@ theorem small_descends (trans : ∀ a b c, rel a b → rel b c → rel a c)
 /-- **Exhaustion by bounded growth.** Let every admissible step keep a region, and bound the
 growth of a quantity `q` there by a monotone `g`. Let within the guard be level `0`, and let an
 admissible step from a configuration of the region within the guard, whose quantity's orbit is
-at or below `θ` at `k + 1` steps, cost one level: reaching level `k` means having had level
+at or below `θ` at `k + 1` steps, lower the level by one: reaching level `k` means having had level
 `k + 1`. Then from a start in the region whose quantity's orbit is at or below `θ` at `n` steps
 and which is not at level `n`, every admissible history leaves the guard within `n` steps. -/
 theorem exhausts (trans : ∀ a b c, rel a b → rel b c → rel a c)
@@ -398,7 +398,7 @@ theorem exhausts (trans : ∀ a b c, rel a b → rel b c → rel a c)
     (kept : ∀ x a, adm a → R x → R (f x a))
     (grows : ∀ x a, adm a → R x → rel (q (f x a)) (g (q x)))
     (base : ∀ x, guard x → level 0 x)
-    (costs : ∀ k x a, R x → guard x → adm a → rel (Law.orbit g (q x) (k + 1)) θ →
+    (lowers : ∀ k x a, R x → guard x → adm a → rel (Law.orbit g (q x) (k + 1)) θ →
       level k (f x a) → level (k + 1) x)
     {n : Nat} {s : S} (region : R s) (small : rel (Law.orbit g (q s) n) θ)
     (short : ¬ level n s) (d : Nat → A) (admissible : ∀ k, adm (d k)) :
@@ -407,7 +407,7 @@ theorem exhausts (trans : ∀ a b c, rel a b → rel b c → rel a c)
     (L := fun k x => R x → rel (Law.orbit g (q x) k) θ → level k x)
     ⟨fun x held _ _ => base x held,
      fun k x a held admitted next region' small' =>
-       costs k x a region' held admitted small'
+       lowers k x a region' held admitted small'
          (next (kept x a admitted region')
            (small_descends trans mono grows admitted region' small'))⟩
     (fun at_level => short (at_level region small)) d admissible

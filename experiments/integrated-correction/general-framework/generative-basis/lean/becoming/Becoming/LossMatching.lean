@@ -25,7 +25,7 @@ module states the laws for every frame:
 * blocking: a lost claim whose every same-content counterpart is kept at the worse
   configuration blocks matching (`not_strictLossMatch_of_kept`); where every claim rests on
   one common support and claims are finitely listed, a configuration losing the support is
-  strictly matched below nothing (`not_strictLossMatch_of_base_lost`);
+  strictly better by matching than no configuration (`not_strictLossMatch_of_base_lost`);
 * reading claims at their episode time: a frame reads each claim at its time exactly when
   its realization is settled from that time on (`readsAt_iff_settled`); then restored
   support re-realizes no missed claim (`ReadsAt.loss_retained`).
@@ -234,8 +234,8 @@ theorem not_strictLossMatch_of_kept {F : Frame S A C} {same : C → C → Prop} 
     | ⟨d, lostW, related⟩ => lostW (kept d related)
 
 /-- **Losing the common support**: where every claim rests on one support claim `base` and
-the claims are finitely listed, a configuration that loses `base` is strictly matched below
-no configuration, under any content relation. -/
+the claims are finitely listed, a configuration that loses `base` is strictly better by
+matching than no configuration, under any content relation. -/
 theorem not_strictLossMatch_of_base_lost {F : Frame S A C} {same : C → C → Prop} {base : C}
     (rests : ∀ s c, F.realized s c → F.realized s base) {all : List C} (distinct : Distinct all)
     (every : ∀ c, c ∈ all) {b : S} (lost : ¬ F.realized b base) (w : S) :

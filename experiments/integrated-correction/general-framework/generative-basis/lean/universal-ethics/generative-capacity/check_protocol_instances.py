@@ -45,7 +45,7 @@ SCOPE = (
     "the steps each protocol's law takes where its source law admits the event, so coverage and "
     "safety are kept along every history, interruptions included, exactly because each admitted step "
     "keeps them (Countdown.admitted_invariant_iff); the original history theorems are instances. "
-    "Funded completion: a pending recovery is counted work, so n remaining writes and the publication "
+    "Supported completion: a pending recovery is counted work, so n remaining writes and the publication "
     "complete in n + 1 resumed steps exactly when the reserve covers n + 1 units and the deadline n + 1 "
     "more steps, and no shorter resumption publishes (Countdown.completes_iff, pending_before). "
     "Reserved stop: the shutdown supervisor is a reserved exit, so every admissible schedule runs and "

@@ -343,9 +343,9 @@ theorem a_b1_not_extension (living : Claim → Prop) :
     (keeps .q (by decide))
 
 /-- The fragile control from the general common-support law: every claim rests on the
-backbone, so the fragile course `b3` is strictly matched below no course, under any
-content relation. -/
-theorem fragile_b3_below_nothing (same : Claim → Claim → Prop) (w : State) :
+backbone, so the fragile course `b3` is strictly better by matching than no course, under
+any content relation. -/
+theorem fragile_b3_better_than_none (same : Claim → Claim → Prop) (w : State) :
     ¬ (frame true).StrictLossMatch same (finalState true .b3) w :=
   not_strictLossMatch_of_base_lost (F := frame true) (base := .backbone)
     (fun (s : State) (c : Claim) (realized : (frame true).realized s c) =>

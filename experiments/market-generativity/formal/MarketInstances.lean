@@ -24,7 +24,7 @@ instances of the pure core's laws are stated here; the core does not import this
   chosen at each step, the market is a law of change (`scheduled`; `run_eq`, `guarded_eq`). On
   a physical pair the share grows at most by `3/2` a step, whose orbit is the share times
   `(3/2)^n` (`orbit_growth`); while that orbit stays at or below `1/6`, a step with a
-  nonnegative shock costs the stock one unit above the floor `5`. So a physical start whose
+  nonnegative shock takes one unit of the stock above the floor `5`. So a physical start whose
   share times `(3/2)^N` is at most `1/6` and whose stock is below `5 + N` stops within `N`
   steps on every such history: `finite_support_forces_failure` is an instance
   (`forces_failure_instance`), and so is `every_finite_stock_has_obstructed_positive_seeds`
@@ -196,8 +196,8 @@ theorem orbit_growth (v : Rat) :
     grind
 
 /-- **`finite_support_forces_failure` is an instance of exhaustion by bounded growth**: the
-share's orbit under `growth` stays at or below `1/6` for `N` steps, each step costs the stock a
-unit above the floor `5`, and a stock below `5 + N` is not at level `N`. -/
+share's orbit under `growth` stays at or below `1/6` for `N` steps, each step takes one unit of the
+stock above the floor `5`, and a stock below `5 + N` is not at level `N`. -/
 theorem forces_failure_instance (beta : Nat → Rat) (d : Nat → Disturbance 1)
     (initial : State 1) (N : Nat) (hi : FiniteSupportObstruction.PairPhysical initial)
     (hc : 5 ≤ initial.stock 0) (hd : ∀ n, 0 ≤ (d n).shock 0)

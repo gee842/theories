@@ -10,30 +10,30 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-14T03:30:00+00:00",
   "statement": {
-    "zh": "恢复是每个平衡流的定律：足够多步的共同盈余使条件水平升到任一目标。支持门控规律中，仍受支持的贡献路径恢复维持活动是其实例；后续输入相同的两段实际历史，一个恢复，一个不恢复。",
-    "en": "Restoration is a law of every balanced flow: joint surplus over enough steps brings a condition's level up to any target. In the support-gated law a supported contribution route restores the sustaining activity as an instance, while two actual histories with the same later inputs recover or do not."
+    "zh": "恢复是每个平衡流的定律：足够多步的共同净给予使条件水平升到任一目标。支持门控规律中，仍受支持的贡献路径恢复维持活动是其实例；后续输入相同的两段实际历史，一个恢复，一个不恢复。",
+    "en": "Restoration is a law of every balanced flow: joint net giving over enough steps brings a condition's level up to any target. In the support-gated law a supported contribution route restores the sustaining activity as an instance, while two actual histories with the same later inputs recover or do not."
   },
   "laws": [
     {
-      "zh": "对每个依存网上的每个平衡流，恢复是一条定律：一步共同盈余使条件水平至少升一；在水平不低于起点的每一步，各形成共同给予多于取走时，m − 水平 步使水平回到至少 m。",
-      "en": "For every balanced flow on every web, restoration is a law: a step of joint surplus raises a condition's level by at least one, and where the formations give jointly more than they take at each step at which the level is not below where it started, m − level steps bring the level to at least m.",
+      "zh": "对每个依存网上的每个平衡流，恢复是一条定律：一步共同净给予使条件水平至少升一；在水平不低于起点的每一步，各形成共同给予多于取走时，m − 水平 步使水平回到至少 m。",
+      "en": "For every balanced flow on every web, restoration is a law: a step of joint net giving raises a condition's level by at least one, and where the formations give jointly more than they take at each step at which the level is not below where it started, m − level steps bring the level to at least m.",
       "declarations": [
-        "Becoming.Flow.surplus_raises_at",
-        "Becoming.Flow.surplus_bounded_at",
+        "Becoming.Flow.net_give_raises_at",
+        "Becoming.Flow.net_give_bounded_at",
         "Becoming.Flow.restores_at",
         "Becoming.Flow.restores"
       ]
     },
     {
-      "zh": "支持门控规律族的每个规律都是其静态网上的这样一个流，所以它恢复维持所需是实例，命题即规律族定理的命题：在既有支持门控规律中，起初仍受支持的贡献路径若在缺口步数内持续有正净贡献，便保持自身支持并恢复维持活动所需的条件。",
-      "en": "Every law of the support-gated family is such a flow on its static web, so its restoration of the sustaining need is an instance, with the statement of the family theorem: within the existing support-gated law, an initially supported contribution route with positive net contribution throughout a deficit-length window keeps its own support and restores the sustaining activity.",
+      "zh": "支持门控规律族的每个规律都是其静态网上的这样一个流；平衡由构造给出，因为焦点形成的取用被定义为这一步移去的量；实例的内容是：所给的量是该族的更新与净贡献，只在受支持处给出，以及该族的算术。所以它恢复维持所需是实例，命题即规律族定理的命题：在既有支持门控规律中，起初仍受支持的贡献路径若在缺口步数内持续有正净贡献，便保持自身支持并恢复维持活动所需的条件。",
+      "en": "Every law of the support-gated family is such a flow on its static web, balanced by construction, since the focal formation's take is defined as what the step removes; the instance's content is that the given amounts are the family's renewal and net contribution, given only where supported, and the family's arithmetic. So its restoration of the sustaining need is an instance, with the statement of the family theorem: within the existing support-gated law, an initially supported contribution route with positive net contribution throughout a deficit-length window keeps its own support and restores the sustaining activity.",
       "declarations": [
         "Becoming.SupportGated.renewal",
-        "Becoming.SupportGated.surplus",
+        "Becoming.SupportGated.netGive",
         "Becoming.SupportGated.flow",
         "Becoming.SupportGated.web",
         "Becoming.SupportGated.balances",
-        "Becoming.SupportGated.surplus_step",
+        "Becoming.SupportGated.netGive_step",
         "Becoming.SupportGated.repair_restores",
         "RenewalRecovery.supported_repair_step",
         "RenewalRecovery.repair_window_progress",
@@ -225,8 +225,8 @@
       "role": "proof",
       "sha256": "7b148ddf6d28419c1aeeecc098f8f6bdc6bb9feb382bfece772b318aa87a4118",
       "declarations": [
-        "Becoming.Flow.surplus_raises_at",
-        "Becoming.Flow.surplus_bounded_at",
+        "Becoming.Flow.net_give_raises_at",
+        "Becoming.Flow.net_give_bounded_at",
         "Becoming.Flow.restores_at",
         "Becoming.Flow.restores"
       ]
@@ -237,11 +237,11 @@
       "sha256": "3a3f6f14be13f062a4bfe39eef3bd84b9c8fd793d2bbbd8f5dbdca98eee2e5e0",
       "declarations": [
         "Becoming.SupportGated.renewal",
-        "Becoming.SupportGated.surplus",
+        "Becoming.SupportGated.netGive",
         "Becoming.SupportGated.flow",
         "Becoming.SupportGated.web",
         "Becoming.SupportGated.balances",
-        "Becoming.SupportGated.surplus_step",
+        "Becoming.SupportGated.netGive_step",
         "Becoming.SupportGated.repair_restores",
         "Becoming.SupportGated.pulse_restores"
       ]
@@ -317,6 +317,10 @@
     {
       "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：RenewalBridge.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）。",
       "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to RenewalBridge.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged)."
+    },
+    {
+      "en": "14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), findings G7 and G9: \"surplus\" is a market word, and the package already says net give; `Flow.surplus_raises_at`, `Flow.surplus_bounded_at`, `SupportGated.surplus`, `surplus_active` and `surplus_step` are renamed `net_give_raises_at`, `net_give_bounded_at`, `netGive`, `netGive_active` and `netGive_step`, and \"joint surplus\" becomes \"joint net giving\". Law 2 now says that the family's balance holds by construction (the focal take is defined as what the step removes) and names the instance's content.",
+      "zh": "2026年10月14日，第十七次独立审查（[BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)）发现 G7 与 G9：“盈余”是市场词，包中已有“净给予”；`Flow.surplus_raises_at`、`Flow.surplus_bounded_at`、`SupportGated.surplus`、`surplus_active`、`surplus_step` 改名为 `net_give_raises_at`、`net_give_bounded_at`、`netGive`、`netGive_active`、`netGive_step`，“共同盈余”改为“共同净给予”。第2条定律现说明该族的平衡由构造给出（焦点取用被定义为这一步移去的量），并写出实例的内容。"
     }
   ],
   "text_versions": [

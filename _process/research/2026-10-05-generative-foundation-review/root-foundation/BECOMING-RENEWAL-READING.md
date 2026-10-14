@@ -7237,14 +7237,14 @@ Integration: 主章 §9 的模块表与总数；统一计划 §10 的对照表�
   - 生成扩展经恒等就是严格匹配，所以使严格匹配足以给出严格优先的承诺包含 C（`strictLossMatch_of_extension`、`SufficientMatching.comparison`），反之不然；
   - 损失无穷多时配置可严格匹配自身（`EndlessLosses`），所以需要有限；损失各列一次时严格匹配是严格序（`StrictLossMatch.length_lt`）；
   - 计数律：以类读内容时，严格匹配存在恰当较好的配置每类失去的不多于较差者、总数更少（`strictLossMatch_iff_counts`）；
-  - 失去共同支持的配置在任何配置之下都没有严格匹配（`not_strictLossMatch_of_base_lost`）；主张在其时刻被读恰当其实现自那时起已定，恢复支持不再实现错过的主张（`readsAt_iff_settled`、`ReadsAt.loss_retained`）。
+  - 失去共同支持的配置经严格匹配不优于任何配置（`not_strictLossMatch_of_base_lost`）；按 `ReadsAt` 的定义，主张在其时刻被读恰当其实现自那时起已定，恢复支持不再实现错过的主张（`readsAt_iff_settled`、`ReadsAt.loss_retained`）；主张错过而后又实现时，没有任何支持使框架在较早时刻读它（`not_readsAt_of_recovery`）。实际框架是否在片段时刻读，是前提。
 
 **原例子成为实例。**
 
 - `Revising` 是与其存量联合运行的登记过程（`Revising.step_iff`）；区分、支持与执行彼此不同（`covered_not_enacted`、`linked_not_enacted`）。
 - ReferencePlan 的燃料守恒且只从已持者汲取（`balanced`、`draws_held`、`trace_conserves_of_law`）；冻结的方法是不读失败的规则（`frozen_blind`、`frozen_misses`），翻转的参考是 `pick`（`flip_is_pick`），漂移的通道失败（`drift_fails`）。
 - ContinuingRevision 中，没有回补时任何控制器都没有无尽运行（`no_run_without_return`），比原来的 `cut_stops_next` 强；更新与成功沿每个运行复现（`renew_recurs`、`success_recurs`）。燃料与产出成为参数后，存在起点使任意多轮循环都可行，恰当产出不少于每轮的汲取 9（`repeats_iff`）；产出 9 的原定理是其实例，陈述不变，无限的 `continuing` 保留。
-- RepairComparison 的严格匹配由计数律给出（`matches_iff`，四条路线的损失为 3/4/3/2）；原来的匹配与脆弱对照由一般规律重得（`a_matches_b1_by_count`、`b3_matches_a_by_count`、`fragile_b3_below_nothing`）。
+- RepairComparison 的严格匹配由计数律给出（`matches_iff`，四条路线的损失为 3/4/3/2）；原来的匹配与脆弱对照由一般规律重得（`a_matches_b1_by_count`、`b3_matches_a_by_count`、`fragile_b3_better_than_none`）。
 
 **改名。** 标准与 P36 相同：名称说所述的动力学；不用社会、金融或心理的词；不把 Ren 的原话直接用作形式名。例如，`MakesSense` 改为 `IdentifiesAlike`，因为定义就是 `π s = π s' ↔ Alike F F s s'`，“有意义的切分”仍是散文读法；`Person` 改为 `Life`；`knowing` 改为 `withBound`；`Denial` 改为 `Negation`；ReferencePlan 的 `cost`、`receipt` 改为 `use`、`mismatch`，不再与检查器的回执相混。改名的模块重新检查后，定理数与上一回执逐一相同。记录标题随之改：target-capture 说“perturbing”；identification-where-bounded 说“给定界的”；finite-aggregation 的标题去掉“FR 候选”；recurring-reference-revision 的中英文一致；seeking-boundary 以结构开头，无明作别名。
 
@@ -7379,7 +7379,7 @@ theorem completes_iff (counts : Counts tick busy done work fuel) (pending : busy
     (∃ t, ticks tick (work s + 1) s = some t ∧ done t) ↔ work s + 1 ≤ fuel s
 ```
 
-  更短的运行都不完成，任务仍待完成，工作减去所走的步数（`pending_before`）；燃料少于工作时每段运行都停住（`stalls_beyond`）；读作部分律的计划，即 Assurance 意义的完成（`completes_plan_iff`）。不计燃料、每步推进一单位的任务恰在 `work + 1` 步完成（`Advances.completes`）。
+  更短的运行都使任务仍待完成，工作减去所走的步数（`pending_before`、`ticks_busy`）；待完成与完成互斥时，更短的运行都不完成（`not_done_before`）；燃料少于工作时每段运行都停住（`stalls_beyond`）；读作部分律的计划，即 Assurance 意义的完成（`completes_plan_iff`）。不计燃料、每步推进一单位的任务恰在 `work + 1` 步完成（`Advances.completes`）。
 - **预留出口（`Reserved`）。** 从有效构型，每个被允许的动作都继续、保持有效，且要么走出口、要么使余量减一；出口被每个动作保持。从有效构型每段被允许的进程都运行且保持有效（`runs_valid`），每段长于余量的进程终于出口（`exits`）。此界可达：与余量等长的进程可以错过出口（`Slow.misses`）。
 
 实例（外围 ProtocolInstances，标准公理）：中介与可恢复协议的 `History` 恰是其律在源律容许处所走的步的可达性（`mediated_history_iff`、`recoverable_history_iff`）。所以覆盖沿合法读取与已提交程序的每段历史保持，安全沿每段被中断的历史保持，恰因每个被允许的步保持它们（`coverage_along`、`safety_along`）；原历史定理是实例（`mediated_history_instance`、`interrupted_history_instance`）。待完成的恢复是计数的工作（`counts`）：n 次剩余写入与发布在 n + 1 次恢复步中完成，恰当储备够 n + 1 单位且期限够 n + 1 步（`publishes_iff`），更短的恢复不发布（`pending_until_published`）；`funded_suffix_publishes` 是充分的一半，耗尽情形是必要一半的实例。关停监督是预留出口（`reserved`）：每个可容许的日程都运行且保持有效（`schedule_valid`），长于三单位预留之上余量的日程都停止（`schedule_stops`）；`every_supported_schedule_finishes` 是实例（`supported_schedule_instance`）。
@@ -7498,7 +7498,7 @@ theorem bracket_settles_iff {r r' : R} (two : r ≠ r') (a n k : Nat) :
       (k < 2 ∨ n < 2)
 ```
 
-两端控制确定其间每个日期，恰当至多允许一次变化或其间无日期；反例是离开一个日期又回来的短暂变化（`excursion_changes`）。两端值不同时，其间每个日期在两条各变化一次的课程上分别取两值（`change_unlocated`）：知道有变化而不知其位置，读不出其间日期。
+两端读数相同的控制确定其间每个日期，恰当至多允许一次变化或其间无日期；反例是离开一个日期又回来的短暂变化（`excursion_changes`）。两端值不同时，其间每个日期在两条各变化一次的课程上分别取两值（`change_unlocated`）：知道有变化而不知其位置，读不出其间日期。
 
 **外围实例（RetrodictionInstances）。** 四时刻来源史、时刻与解码后的控制记录即核心的历史、日期与记录（`acquire_eq`、`fits_iff`）；实际历史被每个含它的族保留（`actual_history_retained_from_law`）。对每个族、时刻、被允许扰动与实际目标，旧报告包读对恰当每个对手被某控制区分（`packet_read_iff`）；共享扰动的读法同理（`shares_read_iff`）。共同探测揭示路径是否共享扰动（`common_probe_reveals`），共享课程的变化不多于历史（`course_changes_le`），故一次变化范围内，对每个先前与随后路径在共享上一致的实际历史，控制保留的每个历史在命名时刻与之一致（`controls_settle_naming`，由 `bracket`）；后来退化与后来改善是实例（`deterioration_settled`、`improvement_settled`）。旧的未定情形是律的失败一侧：只有晚期控制时，常安全历史是未被区分的对手（`late_control_reading_fails`）；只有前后控制时，变化可在命名之前（`split_controls_reading_fails`，对手为先易损后安全）；遗漏的短暂变化即核心的短暂课程（`excursion_course`），在一次变化族外一致读数是错的（`excursion_agreed_wrong`），在两次变化族内未定（`excursion_reading_fails`，即 `bracket_settles_iff` 的反例）。
 
@@ -7956,6 +7956,46 @@ theorem alike_postponed_iff_determined {F : Frame S A C} :
 4. **范围。** 不含伦理谓词。
 
 **边界。** 落地运行须在 `check_becoming.py` 中编译与审计 `Becoming.Postponement`，再把 tests-fix-likeness-where-determined 的新证明引用与别名绑定到回执。既有模块的字节不变。
+
+## 122. 第十七次审查的更正：文字、改名与一处由构造给出的平衡
+
+2026-10-14。开放问题计划第 19 项（Ren 选“yes, one agent”，并说“please, do all”）：一个独立审查代理审查 10 月 13–14 日加入的一般规律，写成[第十七次审查](BECOMING-GENERAL-LAWS-REVIEW.md)（错误 2、言过 3、陈述 2、命名 4、确认 14）。审查只在记录里改了 G1 与 G2 中不改来源哈希的两处；其余改 Lean、研究或章，随本次检查运行一并落地。
+
+```text
+Result(s): 改写 finite-aggregation-within-restorable-basic-losses（G1 改名、G6 定律 6）、substitution-preserves-consumption（G3）、
+           historical-source-binding（G4）、acquired-revision-of-pending-task（G5）、supported-renewal-recovery（G7、G9）；不新增记录
+Delta: 无新定理；改名 6 项（下表）与文档注释；RenewalBridge 的模块说明写明平衡由构造给出
+Supplied premises / correspondence: 无新前提
+Evidence: 核心与外围检查器重新运行（回执见落地提交）；改名后每条声明的公理报告不变
+Boundary: 只改文字与名字；定理陈述不变；G2 已在审查分支改正
+Integration: §9 的 Continuation、LossMatching、Retrodiction、ProtocolInstances 行；本研究 §112、§114、§115 与英文摘要；CROSSED-CLAIMS-ARGUMENT
+```
+
+**更正。**
+1. **G1（错误）。** `not_strictLossMatch_of_base_lost` 的结论是失去共同支持的配置不在任何严格匹配的较好一方，原文“在任何配置之下都没有严格匹配”说反了。改为“经严格匹配不优于任何配置”（§112、§9、CROSSED-CLAIMS-ARGUMENT、两段 `LossMatching` 文档注释、`RepairComparison` 的文档注释与名字）。
+2. **G3（言过）。** 替代保持消耗的“恰在”只对“在每一种这样的转化下”成立（`Web.consumingIn_kept_iff`）；记录陈述补上这一限定。
+3. **G4（言过）。** 区间律 `bracket_settles_iff` 要求关系取两值、两端控制读数相同；§115、英文摘要、§9 与记录补上这两项条件。
+4. **G5（言过）。** `pending_before` 只说更短的运行使任务仍待完成；“更短的运行都不完成”还要待完成与完成互斥（`not_done_before`）。§114、英文摘要、记录与 `Countdown` 的文档注释改正。
+5. **G6（陈述）。** “主张在其时刻被读则恢复支持不再实现错过的主张”由 `ReadsAt` 的定义直接给出；记录定律 6 与 §112 写明这一点、引用 `not_readsAt_of_recovery`，并说明实际框架是否在片段时刻读是前提。
+6. **G7（陈述）。** 支持门控族作为流的平衡由构造给出：焦点形成的取用被定义为这一步移去的量（`level_succ_le`）；实例的内容是所给的量是更新与净给予、只在受支持处给出（`givers_supported`），以及该族的算术。`RenewalBridge` 的模块说明与记录定律 2 写明。
+7. **G8–G11（命名）。** 市场词改为结构词：“降低一级”代替“耗费一级”（`Lasting`）；“净给予”代替“盈余”（`Continuation`、`RenewalBridge`、记录、§9）；“受支持的完成”“仍能汲取”代替“有资金的完成”“仍能支付”（`ProtocolInstances`、其检查器）；“取走储备的一个单位”代替“耗费储备一个单位”（`MarketInstances`、其检查器）。
+
+| 旧名 | 新名 | 模块 |
+|---|---|---|
+| `RepairComparison.fragile_b3_below_nothing` | `fragile_b3_better_than_none` | 核心 `RepairComparison` |
+| `Flow.surplus_raises_at` | `Flow.net_give_raises_at` | 核心 `Continuation` |
+| `Flow.surplus_bounded_at` | `Flow.net_give_bounded_at` | 核心 `Continuation` |
+| `SupportGated.surplus` | `SupportGated.netGive` | 核心 `RenewalBridge` |
+| `SupportGated.surplus_active` | `SupportGated.netGive_active` | 核心 `RenewalBridge` |
+| `SupportGated.surplus_step` | `SupportGated.netGive_step` | 核心 `RenewalBridge` |
+| `ProtocolInstances.charge_some` | `ProtocolInstances.unit_drawn` | 外围 `ProtocolInstances` |
+| `ProtocolInstances.charge_none` | `ProtocolInstances.stalls_unsupported` | 外围 `ProtocolInstances` |
+
+约束变量 `costs`（`Lasting.exhausts`）改为 `lowers`，`surplus`（`Continuation`）改为 `netGive`。
+
+**未改的。** 旧机器保留名字（开放问题计划的选择）；`funded_suffix_publishes` 等原协议定理的名字不变。章与研究中致谢意义上的“credit”未改，列给 Ren。
+
+**边界。** 只改文字、名字与说明；定理陈述与证明不变，所以每条声明的公理报告不变。
 
 ## English summary
 
@@ -9148,7 +9188,7 @@ Landed 2026-10-13, receipt 20261013T094743.528770Z. Later callers retain their s
 **General laws and renames: stock, contacts and strict loss matching (14 October 2026).** Ren asked that every result have its general law and that bad names be changed ([plan](development/becoming-general-laws-plan/PLAN.md)). The audit found that the positive points of P93's `Revising`, P99's `ReferencePlan`, P103's `ContinuingRevision` and P100's `RepairComparison` rested on constructed examples alone. Section 112 lands their general laws and turns the examples into instances or controls:
 - **Stock** (`Becoming.Stock`, 40 theorems), for every process, trace and run: balance at each step is balance along every course; a course drawing only on what is held is executable exactly where it is covered, and jointly with a registration exactly where the registration admits it and the stock covers it; unending repetition needs the return to cover the draw; along every balanced run, drawing at arbitrarily late steps needs replenishment at arbitrarily late steps; the stock along a run is a balanced flow.
 - **Contacts** (`Becoming.Contacts`, 24): a change of plan keeps every old selection exactly where it retains every old contact; a revision rule registers every failure exactly where it puts the failed address into the next plan, and a rule blind to failures misses one at every plan where addresses are unbounded; two references drive a two-valued channel exactly when they differ.
-- **Strict loss matching** (`Becoming.LossMatching`, 34), for every frame: generative extensions match by identity, so the sufficiency commitment contains C; finiteness is needed; with losses listed once matching is a strict order; with content read as a class, a strict match exists exactly when the better configuration loses no more in each class and fewer in all; losing the common support blocks matching.
+- **Strict loss matching** (`Becoming.LossMatching`, 34), for every frame: generative extensions match by identity, so the sufficiency commitment contains C; finiteness is needed; with losses listed once matching is a strict order; with content read as a class, a strict match exists exactly when the better configuration loses no more in each class and fewer in all; a configuration losing the common support is strictly better by matching than none.
 - **Instances.** `Revising` is a registration process run jointly with its stock; ReferencePlan's frozen method, failed separation, drift and exhaustion are failure directions of these laws; in ContinuingRevision no controller runs without end with no return, and with fuel and yield as parameters the cycle repeats for every number of rounds exactly where the yield is at least its draw of 9 (`repeats_iff`); RepairComparison's matching follows the counting law (losses 3/4/3/2).
 
 Renames A1–A11, B1–B5 and N follow the P36 criteria (old-to-new table in plan section 10): for example `MakesSense` → `IdentifiesAlike`, `Person` → `Life`, `knowing` → `withBound`, `Denial` → `Negation`, ReferencePlan's `cost`/`receipt` → `use`/`mismatch`. Statements, proofs and per-module theorem counts are unchanged. Receipts: consolidated `20261013T204910.042715Z` (4861 theorems, 6856 declaration audits, all empty; core closure of 86 modules compiling from the prelude), FallibleInquiry `20261013T205526.452771Z`, CorrectionInquiry `20261013T205618.164536Z`. Not yet independently reviewed.
@@ -9168,7 +9208,7 @@ Scratch builds only (core and bridge with empty axiom reports; the periphery wit
 
 **General laws for the older records: viability, countdown, lasting and never reaching (14 October 2026).** Section 114 takes up three groups left for later in section 113: market-protected-continuation, the six correction and shutdown protocol records, and the three market records. Each now states a law for every process or law of change of its kind, with the old results as instances; the classes are in [the older-records audit](development/becoming-general-laws-plan/general-law-audit/older-records.md).
 - **Viability** (`Becoming.Viability`, 25 theorems). No course from a configuration leaves a guard exactly when some certificate (a set within the guard that every step keeps) contains it (`kernel_iff_certificate`); the viability kernel is the largest. For a law driven by admissible disturbances, given one, no history ever leaves the guard exactly when some set containing the start lies within the guard and is closed under every admissible disturbance (`never_leaves_iff_certificate`); with none the law fails (`needs_admissible`). The market is an instance for every parameter set, bound set and start (`MarketInstances.never_fails_iff`), and `safe_history_never_fails` follows from the safe rectangle.
-- **Countdown** (`Becoming.Countdown`, 20 theorems). An admitted course keeps a property exactly when every admitted step does (`admitted_invariant_iff`). Counted work finishes in `work + 1` ticks exactly when the fuel covers them, and no shorter run finishes (`completes_iff`, `pending_before`). Every admitted course longer than a reserved margin ends at the exit, and the bound is attained (`exits`, `Slow.misses`). The mediated and recoverable histories, funded publication (`ProtocolInstances.publishes_iff`), the reserved stop and the versioned head (`VersionedTaskInstances.head_completes`, with Mathlib) are instances.
+- **Countdown** (`Becoming.Countdown`, 20 theorems). An admitted course keeps a property exactly when every admitted step does (`admitted_invariant_iff`). Counted work finishes in `work + 1` ticks exactly when the fuel covers them; every shorter run leaves it pending, so where pending and finished exclude each other no shorter run finishes (`completes_iff`, `pending_before`, `not_done_before`). Every admitted course longer than a reserved margin ends at the exit, and the bound is attained (`exits`, `Slow.misses`). The mediated and recoverable histories, supported publication (`ProtocolInstances.publishes_iff`), the reserved stop and the versioned head (`VersionedTaskInstances.head_completes`, with Mathlib) are instances.
 - **Lasting** (`Becoming.Lasting`, 36 theorems). A start lasts `n` steps exactly when some ladder holds it at level `n`, and exactly when every necessary family does (`lasts_iff_ladder`, `lasts_iff_necessary`); what no course leaves is what lasts every horizon (`kernel_iff_lasts`). Below level `n` of a drained family every admissible history leaves the guard within `n` steps (`Drains.leaves`), and being at level `n` does not suffice (`Collapse.level_not_lasting`); with growth bounded by a monotone map this gives `exhausts`. A determined law never reaches a target exactly when a closed set avoiding the target contains the start (`avoids_iff_closed`).
 - **Market instances.** `finite_support_forces_failure` is an instance of `exhausts`. The cover recurrence is a ladder for every correction schedule, so the supported prefixes are instances, and at the worst share the cover is exact (`cover_exact`). For 0 ≤ b ≤ 3/4 every positive seed lands exactly when the quality margin at 3/8 is nonnegative (`lands_iff_margin`), and exactly when no closed set avoiding landing contains a positive seed (`lands_iff_no_closed`); above 5/12 the fixed configuration is one.
 
@@ -9177,7 +9217,7 @@ Scratch builds only (core with empty axiom reports; the peripheries with standar
 **General laws for the older records: copying and retrodiction (14 October 2026).** Under the same approval, section 115 proves the two groups section 113 left for later.
 - **Copying** (`Becoming.Copying`, 65 theorems). For every alphabet with decidable equality and every law of draws, a copy's product is the word exactly when the pool holds each token at least as often as the word uses it and the support covers what its attachments draw (`built_iff`, `completes_iff`), and with a release exactly when the support also covers it (`releases_iff`). Copies from one shared pool are all released exactly when the pool supplies the words together and the support covers all draws and releases (`batch_all_iff`), whatever their order (`batch_all_swap`). Under local draws, a word's use of support depends on the law only through unlike adjacent pairs (`use_word`, `use_midpoint`, `use_lt_iff`). A copy reading through a registration reproduces a word exactly when every site reads its token and the copy is supplied and covered (`reading_iff`). Inspection never increases the defects for any product exactly where the reference is faithful (`inspect_le_iff`), scans of such sites never do (`scan_le`), and a defective site takes the reference's token exactly when the pool holds it and the support covers both draws (`inspect_matches_iff`). Doubling runs n rounds from k units exactly when the stock covers d·k(2ⁿ−1) (`doubling_iff`).
 - **Copy machines** (periphery `CopyingInstances`, 63 theorems). Each machine move is a core move. The structural machine reproduces a strand exactly when the pool supplies its tokens and the support covers its draws plus one, for every pool, with the old theorem of the support needed as the instance. Chain growth follows the same law. n rounds reach k·2ⁿ mature chains exactly when the support covers 9·k(2ⁿ−1), which is the core doubling with draw 9. Reading through contacts holds for every registration state, and only copy moves change the product. Inspection never increases defects exactly where the reference is faithful, and the old wrong reference is unfaithful at the inspected site.
-- **Retrodiction** (`Becoming.Retrodiction`, 17 theorems). The law holds for every type of histories, dates, relations, probes and reports. The actual history fits its records. Every explanation of an earlier packet by a family history fitting the records gives the actual content exactly when every family rival giving the same packet with another content is separated by some dated control (`reading_right_iff`, `look_right_iff`). Controls at both ends of a span settle every date between exactly when at most one change is admitted or no date lies between (`bracket_settles_iff`), with the excursion as the counterexample. A change seen at both ends is not located (`change_unlocated`).
+- **Retrodiction** (`Becoming.Retrodiction`, 17 theorems). The law holds for every type of histories, dates, relations, probes and reports. The actual history fits its records. Every explanation of an earlier packet by a family history fitting the records gives the actual content exactly when every family rival giving the same packet with another content is separated by some dated control (`reading_right_iff`, `look_right_iff`). Where the relation takes two values, controls at both ends of a span that read the same settle every date between exactly when at most one change is admitted or no date lies between (`bracket_settles_iff`), with the excursion as the counterexample. A change seen at both ends is not located (`change_unlocated`).
 - **Source histories** (periphery `RetrodictionInstances`, 21 theorems). The four-moment histories are instances: bracketing controls settle naming in the one-change envelope (`controls_settle_naming`), and later deterioration and improvement are instances. The late-control, split-control and omitted-excursion cases are the law's failing side; the excursion is read wrongly outside the one-change family.
 - **Still one-directional**: `finite_lineage_inherits` (sufficiency only) and the chain's bonds in `registered_copy_cells`. The change envelope remains a supplied premise.
 
@@ -9226,3 +9266,9 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **Postponement.** In `Frame.postponed F` a configuration is a family of configurations, those a course may have reached; a move goes from a family to the family of its members' outcomes by that move, and a family realizes a claim where some member does. The postponed frame does not branch: it is determined up to likeness everywhere (`Frame.postponed_determinedAt`).
 - **Linear tests are likeness with every branching postponed** (`sameTests_iff_postponed_alike`), and **a frame is alike to its postponement exactly where it is determined up to likeness** (`alike_postponed_iff_determined`). The two `Choosing` frames are alike once postponed; the early one is not alike to its postponement. So linear tests miss exactly where the unfolding branches. This is the subset construction of automata theory (trace equivalence as bisimilarity after determinization), stated constructively in the core and joined to the likeness records.
 - **Readings (the AI's; Ren agreed with the direction).** “Where the unfolding branches” in place of “when a choice is made”; equality as the finest registration, naming, so that the laws needing equality need something registered; the identity of configurations as likeness, relative to what is realized, carried as a relation, and fixed by the whole continuation, so that it can outrun finite tests; LLPO and WLPO as the standard names of the two principles, neither a premise, the Lean names structural.
+
+**Corrections from the seventeenth review (14 October 2026).** Open-issues plan item 19 (Ren chose "yes, one agent" and said "please, do all"): an independent review agent reviewed the general laws added on 13–14 October ([the seventeenth review](BECOMING-GENERAL-LAWS-REVIEW.md); errors 2, overstatements 3, presentation 2, naming 4, confirmed 14). Section 122 lands the corrections that change Lean, study or chapter bytes with this checker run.
+- **Direction (G1).** `not_strictLossMatch_of_base_lost` puts the configuration losing the common support in the better slot: it is strictly better by matching than no configuration. "Strictly matched below no configuration" said the reverse; `fragile_b3_below_nothing` is renamed `fragile_b3_better_than_none`.
+- **Scope (G3–G5).** Substitution preserves consumption "exactly" under every such transformation (`Web.consumingIn_kept_iff`); the bracket law needs the relation to take two values and the end controls to read the same (`bracket_settles_iff`); `pending_before` gives "every shorter run leaves it pending", and "no shorter run finishes" needs pending and finished to exclude each other (`not_done_before`).
+- **Presentation (G6, G7).** Reading at episode time keeps a missed claim missed by the definition of `ReadsAt`, so whether an actual frame reads at episode time is the premise (`not_readsAt_of_recovery`). The support-gated family's balance as a flow holds by construction, since the focal take is defined as what the step removes; the instance's content is the given amounts and the family's arithmetic.
+- **Names (G8–G11).** Market words become structural ones: `Flow.surplus_raises_at`, `Flow.surplus_bounded_at` → `net_give_raises_at`, `net_give_bounded_at`; `SupportGated.surplus`, `surplus_active`, `surplus_step` → `netGive`, `netGive_active`, `netGive_step`; `ProtocolInstances.charge_some`, `charge_none` → `unit_drawn`, `stalls_unsupported`; "joint surplus" → "joint net giving", "funded completion" → "supported completion", "cost one level" → "lower the level by one", "costs the stock a unit" → "takes one unit of the stock". Old machines keep their names. Statements and proofs are unchanged.

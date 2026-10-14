@@ -16,7 +16,11 @@ and every family of courses:
 
 * Every law of the family is balanced by the flow in which the sustaining formation gives
   the renewal while supported and the focal formation gives what it contributes beyond its
-  draw while active, and takes what it actually removes (`balances`). Renewal gives only
+  draw while active, and takes what it actually removes (`balances`). The focal take is
+  defined as what the step removes, so balance holds by construction wherever the level does
+  not exceed the level plus what is given (`level_succ_le`). The instance's content is that the
+  given amounts are the family's renewal and net giving, given only where supported
+  (`givers_supported`), and the family's arithmetic (`repair_restores`). Renewal gives only
   where the sustaining formation is supported, and the focal formation gives only where it
   is active.
 * Restoration (`Flow.restores`): where the focal formation is active and contributes more
@@ -93,26 +97,27 @@ def renewal (t : Nat) : Nat :=
 
 /-- What the focal formation gives across the step: what it contributes beyond its draw,
 while active. -/
-def surplus (t : Nat) : Nat :=
+def netGive (t : Nat) : Nat :=
   if L.needF ≤ L.level t then L.contrib t - L.draw t else 0
 
 /-- The law as a flow: the sustaining formation gives the renewal while supported; the
-focal formation gives its surplus while active and takes what it actually removes. -/
+focal formation gives its net giving while active and takes what the step removes, so the
+flow balances by construction (`level_succ_le`). -/
 def flow : Flow Part Unit where
   present _ := [.sustaining, .focal]
   give t p _ := match p with
     | .sustaining => renewal L t
-    | .focal => surplus L t
+    | .focal => netGive L t
   take t p _ := match p with
     | .sustaining => 0
-    | .focal => L.level t + (renewal L t + surplus L t) - L.level (t + 1)
+    | .focal => L.level t + (renewal L t + netGive L t) - L.level (t + 1)
 
 /-- The law's static web. -/
 def web : Web Part Unit :=
   Web.static L.unfolding
 
 /-- Across each step the level does not exceed the level before plus what is given. -/
-theorem level_succ_le (t : Nat) : L.level (t + 1) ≤ L.level t + (renewal L t + surplus L t) := by
+theorem level_succ_le (t : Nat) : L.level (t + 1) ≤ L.level t + (renewal L t + netGive L t) := by
   show (if L.needG ≤ L.level t then
       if L.needF ≤ L.level t then L.level t + L.renew + L.contrib t - L.draw t
       else L.level t + L.renew
@@ -154,7 +159,7 @@ theorem renewal_supported {t : Nat} (gives : 0 < renewal L t) : L.needG ≤ L.le
 
 /-- The focal formation gives only while active, and only what it contributes beyond its
 draw. -/
-theorem surplus_active {t : Nat} (gives : 0 < surplus L t) :
+theorem netGive_active {t : Nat} (gives : 0 < netGive L t) :
     L.needF ≤ L.level t ∧ L.draw t < L.contrib t :=
   match Nat.lt_or_ge (L.level t) L.needF with
   | .inl fOff => absurd (Nat.lt_of_lt_of_le gives (Nat.le_of_eq (if_neg (Nat.not_le_of_gt fOff))))
@@ -168,15 +173,15 @@ theorem surplus_active {t : Nat} (gives : 0 < surplus L t) :
 theorem givers_supported (t : Nat) : (flow L).GiversSupported (web L) t () :=
   fun p _ gives _ _ => match p, gives with
     | .sustaining, gives => renewal_supported L gives
-    | .focal, gives => (surplus_active L gives).1
+    | .focal, gives => (netGive_active L gives).1
 
 /-! ## Restoration -/
 
 /-- Where the focal formation is active and contributes more than it draws, the step is one
-of joint surplus. -/
-theorem surplus_step {t : Nat} (fOn : L.needF ≤ L.level t) (less : L.draw t < L.contrib t) :
+of joint net giving. -/
+theorem netGive_step {t : Nat} (fOn : L.needF ≤ L.level t) (less : L.draw t < L.contrib t) :
     (flow L).taken t () < (flow L).given t () := by
-  have raised : L.level (t + 1) = L.level t + (renewal L t + surplus L t) := by
+  have raised : L.level (t + 1) = L.level t + (renewal L t + netGive L t) := by
     show (if L.needG ≤ L.level t then
         if L.needF ≤ L.level t then L.level t + L.renew + L.contrib t - L.draw t
         else L.level t + L.renew
@@ -192,12 +197,12 @@ theorem surplus_step {t : Nat} (fOn : L.needF ≤ L.level t) (less : L.draw t < 
     | inr gOn =>
       rw [if_pos gOn, if_pos gOn, ← Nat.add_assoc]
       exact add_sub_assoc_of_le _ (Nat.le_of_lt less)
-  have positive : 0 < surplus L t := by
+  have positive : 0 < netGive L t := by
     show 0 < (if L.needF ≤ L.level t then L.contrib t - L.draw t else 0)
     rw [if_pos fOn]
     exact sub_pos_of_lt less
-  show 0 + (L.level t + (renewal L t + surplus L t) - L.level (t + 1) + 0) <
-    renewal L t + (surplus L t + 0)
+  show 0 + (L.level t + (renewal L t + netGive L t) - L.level (t + 1) + 0) <
+    renewal L t + (netGive L t + 0)
   rw [raised, Nat.sub_self]
   exact Nat.lt_of_lt_of_le positive (Nat.le_add_left _ _)
 
@@ -209,10 +214,10 @@ theorem repair_restores (T : Nat) (fOn : L.needF ≤ L.level T)
     (exceeds : ∀ d, d < L.needG - L.level T → L.draw (T + d) < L.contrib (T + d)) :
     L.needG ≤ L.level (T + (L.needG - L.level T)) :=
   Flow.restores (L := flow L) (W := web L) (balances L) (c := ()) (m := L.needG) (T := T)
-    fun k below above => surplus_step L (Nat.le_trans fOn above) (exceeds k below)
+    fun k below above => netGive_step L (Nat.le_trans fOn above) (exceeds k below)
 
 /-- `RenewalRecovery`'s supported pulse, from step 1, where its level is 1: one step of
-surplus restores the sustaining need. -/
+net giving restores the sustaining need. -/
 theorem pulse_restores :
     (RenewalRecovery.pulse 2).needG ≤ (RenewalRecovery.pulse 2).level
       (1 + ((RenewalRecovery.pulse 2).needG - (RenewalRecovery.pulse 2).level 1)) :=
@@ -230,7 +235,7 @@ theorem below_for_good {T : Nat} (noRestore : ∀ t, T ≤ t → L.contrib t ≤
     (fun k _ => (balances L).on [()] (T + k))
     (fun k p _ _ gives => match p, gives with
       | .sustaining, _ => ⟨trivial, within⟩
-      | .focal, gives => absurd (surplus_active L gives).2
+      | .focal, gives => absurd (netGive_active L gives).2
           (Nat.not_lt_of_le (noRestore (T + k) (Nat.le_add_right T k))))
     fun k _ => givers_supported L (T + k)
 

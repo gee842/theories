@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-14T03:30:00+00:00",
   "statement": {
-    "zh": "整段读法下，以转化依存的方式持续的消耗者仍是消耗的，恰在损失落在它所转化的依存之外的依存上时；这是对每个依存网成立的定律，能替代条件的支持门控规律是其实例。",
-    "en": "On the whole-run reading a consumer that persists by transforming its dependence still consumes exactly where the loss falls on a dependence other than the one it transforms, a law of every web of which the support-gated law with a substitutable condition is an instance."
+    "zh": "整段读法下，以转化依存的方式持续的消耗者在每一种这样的转化下仍是消耗的，恰在损失落在它所转化的依存之外的依存上时；这是对每个依存网成立的定律，能替代条件的支持门控规律是其实例。",
+    "en": "On the whole-run reading a consumer that persists by transforming its dependence still consumes under every such transformation exactly where the loss falls on a dependence other than the one it transforms, a law of every web of which the support-gated law with a substitutable condition is an instance."
   },
   "laws": [
     {
@@ -728,6 +728,10 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged)."
+    },
+    {
+      "en": "14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), finding G3: the statement's \"exactly\" holds for consumption kept under every such transformation (`Web.consumingIn_kept_iff`); for a single transformation both directions can fail. The statement now says \"under every such transformation\"; law 1 already did.",
+      "zh": "2026年10月14日，第十七次独立审查（[BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)）发现 G3：陈述中的“恰在”只对“在每一种这样的转化下仍是消耗的”成立（`Web.consumingIn_kept_iff`）；对一次转化，两个方向都可能不成立。陈述现说“在每一种这样的转化下”；第1条定律原已如此。"
     }
   ],
   "text_versions": [

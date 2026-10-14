@@ -15,7 +15,7 @@ are stated here rather than in the pure bridge. The core does not import this mo
   exactly because each admitted step keeps it (`coverage_along`, `safety_along`, from
   `Countdown.admitted_invariant_iff`); the original history theorems are these instances
   (`mediated_history_instance`, `interrupted_history_instance`).
-* **Funded completion.** A pending recovery is counted work: each tick does one remaining write
+* **Supported completion.** A pending recovery is counted work: each tick does one remaining write
   (or the publication) for one unit of reserve and one unit of time, publishes when no write
   remains, and stalls without reserve or time (`counts`). So `n` remaining writes and the
   publication complete in `n + 1` resumed steps exactly when the reserve covers `n + 1` units and
@@ -117,7 +117,7 @@ theorem interrupted_history_instance {s t : RecoverableControl.Device}
     RecoverableControl.Safe t :=
   safety_along s t (recoverable_history_iff.mp history) safe
 
-/-! ## Funded completion -/
+/-! ## Supported completion -/
 
 open RecoverableControl in
 /-- Pending: the device holds a pending description. -/
@@ -134,7 +134,7 @@ def work : Device → Nat
   | .ready _ => 0
 
 open RecoverableControl in
-/-- The units a pending description can still pay: reserve and time to the deadline. -/
+/-- The units a pending description can still draw: reserve and time to the deadline. -/
 def fuel : Device → Nat
   | .busy r => min r.target.tracked.installation.state.reserve
       (r.target.tracked.installation.state.deadline - r.target.tracked.installation.state.time)
@@ -157,13 +157,13 @@ def advanced (r : Pending) (op : MediatedControl.Write) (rest : List MediatedCon
   {moved with actual := MediatedControl.oneWrite op moved.actual, todo := rest}
 
 open RecoverableControl in
-theorem charge_some (r : Pending) (reserve : 1 ≤ r.target.tracked.installation.state.reserve)
+theorem unit_drawn (r : Pending) (reserve : 1 ≤ r.target.tracked.installation.state.reserve)
     (time : r.target.tracked.installation.state.time + 1 ≤ r.target.tracked.installation.state.deadline) :
     charge r = some (afterUnit r) := by
   simp [charge, afterUnit, unitState, EffectiveCommand.spend, reserve, time]
 
 open RecoverableControl in
-theorem charge_none (r : Pending)
+theorem stalls_unsupported (r : Pending)
     (short : min r.target.tracked.installation.state.reserve
       (r.target.tracked.installation.state.deadline - r.target.tracked.installation.state.time) = 0) :
     charge r = none := by
@@ -191,7 +191,7 @@ theorem counts : Counts RecoverableControl.tick busy done work fuel := by
     | cons op rest =>
       refine ⟨.busy (advanced r op rest), ?_, ⟨_, rfl⟩, ?_, ?_⟩
       · have todo' : (afterUnit r).todo = op :: rest := hodo
-        simp [RecoverableControl.tick, charge_some r reserve time, todo', advanced]
+        simp [RecoverableControl.tick, unit_drawn r reserve time, todo', advanced]
       · simp [work, advanced, hodo]
       · simp only [fuel, advanced, afterUnit, unitState, RecoverableControl.accounting]
         omega
@@ -205,9 +205,9 @@ theorem counts : Counts RecoverableControl.tick busy done work fuel := by
     have hodo : (afterUnit r).todo = [] := List.eq_nil_of_length_eq_zero finished
     exact ⟨.ready {(afterUnit r).target with tracked := {(afterUnit r).target.tracked with
         actual := (afterUnit r).actual}},
-      by simp [RecoverableControl.tick, charge_some r reserve time, hodo], ⟨_, rfl⟩⟩
+      by simp [RecoverableControl.tick, unit_drawn r reserve time, hodo], ⟨_, rfl⟩⟩
   · rintro s ⟨r, rfl⟩ empty
-    simp [RecoverableControl.tick, charge_none r empty]
+    simp [RecoverableControl.tick, stalls_unsupported r empty]
 
 /-- The device's resumption is the core's run of ticks. -/
 theorem resumeSteps_eq : ∀ (n : Nat) (d : RecoverableControl.Device),
