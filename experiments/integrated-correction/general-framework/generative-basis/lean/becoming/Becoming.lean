@@ -86,6 +86,7 @@ import Becoming.Readout
 import Becoming.Gated
 import Becoming.Viability
 import Becoming.Countdown
+import Becoming.Lasting
 
 /-!
 # The Theory of Becoming: the formal core
@@ -811,6 +812,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   when the fuel covers them, and no shorter run finishes; where every admitted move stays valid
   and takes the exit or lowers a margin by one, every admitted course longer than the margin ends
   at the exit, a bound that is attained.
+* `Becoming.Lasting` (L2): lasting a number of steps, exhaustion and never reaching, with no
+  premise. A start lasts `n` steps exactly when some ladder (levels within the guard, each
+  admissible step going down one level) holds it at level `n`, and exactly when every necessary
+  family holds it there; what no course leaves is what lasts every horizon. A start below level
+  `n` of a drained family leaves the guard within `n` steps on every admissible history, and a
+  quantity whose growth a monotone map bounds stays below the map's orbit. A determined law never
+  reaches a target exactly when some set containing the start avoids the target and is closed
+  under the law.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
