@@ -52,24 +52,26 @@
       ]
     },
     {
-      "zh": "证明的每一步由判定构造：深度 k 的相同已判定；它不成立处，构造一个在一方成立、在另一方不成立的分支检验；深度的相同在某个深度停止细分，在那里它是互模拟。",
-      "en": "Each step of the proof is built from the decisions: likeness to depth k is decided; where it fails, a branching test holding at one configuration and failing at the other is built; likeness to depth stops refining at some depth, and there it is a bisimulation.",
+      "zh": "证明的每一步由判定构造：深度 k 的相同已判定；它不成立处，构造一个在一方成立、在另一方不成立的分支检验；深度的相同在不超过配置对数目的某个深度停止细分，在那里它是互模拟。",
+      "en": "Each step of the proof is built from the decisions: likeness to depth k is decided; where it fails, a branching test holding at one configuration and failing at the other is built; likeness to depth stops refining at a depth no greater than the number of pairs of configurations, and there it is a bisimulation.",
       "declarations": [
         "Becoming.AlikeTo",
         "Becoming.AlikeTo.decided",
         "Becoming.apart_of_not_alikeTo",
         "Becoming.stops_decreasing",
+        "Becoming.AlikeTo.steady_within",
         "Becoming.AlikeTo.steady",
         "Becoming.AlikeTo.bisimulation",
         "Becoming.SameBranchingTests.alikeTo"
       ]
     },
     {
-      "zh": "所以有限、已定的框架的相同已判定，就是每个深度的相同；对每一对只有一个配置、一个动作而没有主张的框架，判定相同就是排中律。",
-      "en": "So likeness of finite decided frames is decided and is likeness to every depth; asked of every pair of frames with one configuration, one move and no claims, deciding likeness is excluded middle.",
+      "zh": "所以有限、已定的框架的相同已判定，就是每个深度的相同，也是配置对数目之深度的相同；对每一对只有一个配置、一个动作而没有主张的框架，判定相同就是排中律。",
+      "en": "So likeness of finite decided frames is decided and is likeness to every depth and to the depth of the number of pairs; asked of every pair of frames with one configuration, one move and no claims, deciding likeness is excluded middle.",
       "declarations": [
         "Becoming.Alike.decided",
         "Becoming.alike_iff_alikeTo",
+        "Becoming.alike_iff_alikeTo_pairs",
         "Becoming.alike_decided_iff_em",
         "Becoming.OneLoop.alike_iff"
       ]
@@ -98,11 +100,6 @@
     }
   ],
   "does_not_show": [
-    {
-      "zh": "证明给出停止细分的某个深度，不给出它的界。",
-      "en": "The proof gives some depth at which refinement stops, without a bound on it.",
-      "kind": "scope"
-    },
     {
       "zh": "构造性证明用到 FiniteDecided 的判定；它们的必要性对判定相同已表明，对等价本身是开放的。",
       "en": "The constructive proof uses the decisions of FiniteDecided; that they are needed is shown for deciding likeness and is open for the equivalence itself.",
@@ -142,8 +139,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Histories (receipt 20261013T094743.528770Z) and of Becoming.Likeness (receipt bound at landing) have empty axiom reports; the current bytes of Becoming.Unfolding are bound by 20261013T204910.042715Z; the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "zh": "以配置对的数目为深度的相同停止细分之处给出界；经桥接把 BranchingTest 与外围的 Test 对应起来。",
-    "en": "Bound the depth at which likeness to depth stops refining by the number of pairs of configurations, and join BranchingTest to the periphery's Test through the bridge."
+    "zh": "经桥接把 BranchingTest 与外围的 Test 对应起来。",
+    "en": "Join BranchingTest to the periphery's Test through the bridge."
   },
   "correspondence": {
     "zh": "读法（AI 的，待 Ren）：检验看不到的是选择在何时作出；有分支时，只有分支的检验看得到。外围中像有限的模型的分支检验固定相同（same_iff_bisimilar，经典），经桥接（branching_bisimulation_iff）与核心的互模拟相连；核心中，在有限、已定的框架上它是构造性的，而对每个有限框架判定相同就是排中律。见整合文档 §98 与 Becoming.Likeness 一节。",
@@ -239,7 +236,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "0621b2ef787194aa1b762ef67e2dd1a6f0460382723eb28cb371e7ad64ddc2a7",
+      "sha256": "bd999087660e64625d7f9e1acb7bf49d96225684e2729c412a4e3d0e94c18b24",
       "declarations": [
         "Becoming.Decided.exists_listed",
         "Becoming.Decided.exists_of_listed",
@@ -278,7 +275,18 @@
         "Becoming.OneLoop.alike_iff",
         "Becoming.alike_decided_iff_em",
         "Becoming.Choosing.bothOpen",
-        "Becoming.Choosing.branching_apart"
+        "Becoming.Choosing.branching_apart",
+        "Becoming.length_pairedWith",
+        "Becoming.length_pairsOf",
+        "Becoming.holds_below",
+        "Becoming.drops_somewhere",
+        "Becoming.skip",
+        "Becoming.skip_le",
+        "Becoming.skip_side",
+        "Becoming.skip_succ",
+        "Becoming.AlikeTo.down_to",
+        "Becoming.AlikeTo.steady_within",
+        "Becoming.alike_iff_alikeTo_pairs"
       ]
     },
     {
@@ -453,8 +461,8 @@
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
     },
     {
-      "zh": "2026-10-14，分支检验固定相同（工作板“Current math core”的 likeness 一行；Becoming.Likeness）：回答本记录的 next_delta。新增规律 3–7：相同的配置通过同样的分支检验；有限、已定的框架上配置恰在通过同样的分支检验时相同（alike_iff_sameBranchingTests），证明由判定构造（AlikeTo、apart_of_not_alikeTo、stops_decreasing）；有限、已定的框架的相同已判定（Alike.decided），而对每个有限框架判定相同即排中律（alike_decided_iff_em）；Choosing.branching_apart 给出看得到选择的检验。标题由“确定之处检验固定相同”改为“固定相同的检验”。同时迁移到 schema 2：主张拆为规律 1–2 与反例；限制中“核心中分支检验没有陈述”被新规律取代，读法与无伦理谓词入通用边界与对应。每句旧文本的去向见迁移对照表 [tests-fix-likeness-where-determined.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/tests-fix-likeness-where-determined.md)；迁移前的完整记录为 text_versions 末项。Becoming.Likeness 的证明绑定在落地运行后加入。",
-      "en": "14 October 2026, branching tests fix likeness (the work board's likeness row of Current math core; Becoming.Likeness): answers this record's next_delta. New laws 3–7: alike configurations pass the same branching tests; on finite decided frames configurations are alike exactly where they pass the same branching tests (alike_iff_sameBranchingTests), with a proof built from the decisions (AlikeTo, apart_of_not_alikeTo, stops_decreasing); likeness of finite decided frames is decided (Alike.decided), and deciding it for every finite frame is excluded middle (alike_decided_iff_em); Choosing.branching_apart gives the test that sees the choice. The title changed from “Tests fix likeness where determined” to “Tests that fix likeness”. Migrated to schema 2 at the same time: the claim became laws 1–2 and the counterexample; the limitation that branching tests are not stated in the core is superseded by the new laws; the readings and the absence of ethical predicates went to standard boundaries and the correspondence. Every earlier sentence is mapped in the migration table [tests-fix-likeness-where-determined.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/tests-fix-likeness-where-determined.md); the exact earlier record is the last text_versions entry. Proof bindings for Becoming.Likeness are added after the landing run."
+      "zh": "2026-10-14，分支检验固定相同（工作板“Current math core”的 likeness 一行；Becoming.Likeness）：回答本记录的 next_delta。新增规律 3–7：相同的配置通过同样的分支检验；有限、已定的框架上配置恰在通过同样的分支检验时相同（alike_iff_sameBranchingTests），证明由判定构造（AlikeTo、apart_of_not_alikeTo、stops_decreasing），深度的相同在配置对的数目之内停止细分（AlikeTo.steady_within、alike_iff_alikeTo_pairs）；有限、已定的框架的相同已判定（Alike.decided），而对每个有限框架判定相同即排中律（alike_decided_iff_em）；Choosing.branching_apart 给出看得到选择的检验。标题由“确定之处检验固定相同”改为“固定相同的检验”。同时迁移到 schema 2：主张拆为规律 1–2 与反例；限制中“核心中分支检验没有陈述”被新规律取代，读法与无伦理谓词入通用边界与对应。每句旧文本的去向见迁移对照表 [tests-fix-likeness-where-determined.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/tests-fix-likeness-where-determined.md)；迁移前的完整记录为 text_versions 末项。Becoming.Likeness 的证明绑定在落地运行后加入。",
+      "en": "14 October 2026, branching tests fix likeness (the work board's likeness row of Current math core; Becoming.Likeness): answers this record's next_delta. New laws 3–7: alike configurations pass the same branching tests; on finite decided frames configurations are alike exactly where they pass the same branching tests (alike_iff_sameBranchingTests), with a proof built from the decisions (AlikeTo, apart_of_not_alikeTo, stops_decreasing) in which likeness to depth stops refining within the number of pairs of configurations (AlikeTo.steady_within, alike_iff_alikeTo_pairs); likeness of finite decided frames is decided (Alike.decided), and deciding it for every finite frame is excluded middle (alike_decided_iff_em); Choosing.branching_apart gives the test that sees the choice. The title changed from “Tests fix likeness where determined” to “Tests that fix likeness”. Migrated to schema 2 at the same time: the claim became laws 1–2 and the counterexample; the limitation that branching tests are not stated in the core is superseded by the new laws; the readings and the absence of ethical predicates went to standard boundaries and the correspondence. Every earlier sentence is mapped in the migration table [tests-fix-likeness-where-determined.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/tests-fix-likeness-where-determined.md); the exact earlier record is the last text_versions entry. Proof bindings for Becoming.Likeness are added after the landing run."
     }
   ],
   "text_versions": [

@@ -7595,17 +7595,17 @@ theorem lineage_used_iff (law : StructuralCopying.Law) (p : Strand)
 
 ## 118. 相同之下补全：经等价承载规律与分支检验（Becoming.Likeness）
 
-2026-10-14。按 Ren 的“move towards 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)），工作板上“Current math core”的 likeness 一行，由整合会话批准，在开放问题计划之外。本节回答三项记录的下一步：determinacy-up-to-likeness 要求的 `carries_law_iff` 在相同之下的精确形式，以及像、`not_fixes_other_of_new` 与 `determined_dichotomy` 的相同之下形式；tests-fix-likeness-where-determined 要求的核心中分支检验固定相同的构造性证明，或它需要的逻辑原则；configurations-alike-by-relation 的 next_delta 列着这两项。
+2026-10-14。按 Ren 的“move towards 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)），工作板上“Current math core”的 likeness 一行，由整合会话批准，在开放问题计划之外。本节回答三项记录的下一步：determinacy-up-to-likeness 要求的 `carries_law_iff` 在相同之下的精确形式，以及像、`not_fixes_other_of_new`、实验之律经投影的读法（`not_fixesThrough_*`）与 `determined_dichotomy` 的相同之下形式；tests-fix-likeness-where-determined 要求的核心中分支检验固定相同的构造性证明，或它需要的逻辑原则；configurations-alike-by-relation 的 next_delta 列着这两项。
 
 ```text
 Result(s): 改写 determinacy-up-to-likeness 与 tests-fix-likeness-where-determined（两者迁移到 schema 2，
            对照表在 development/becoming-general-laws-plan/readability/migrations/）、
            configurations-alike-by-relation（schema 1，只缩短）；不新增记录
-Delta: 核心新模块 Becoming.Likeness（50 项定理／66 项声明）
+Delta: 核心新模块 Becoming.Likeness（61 项定理／79 项声明）
 Supplied premises / correspondence: 无新前提；分支检验之律以动作与主张被列出、两个框架为 FiniteDecided
            （某个列表包含每个配置，步与主张已判定）为条件
 Evidence: scratch_build 实编：每条声明公理报告为空，无警告；不是回执
-Boundary: 停止细分的深度只给出存在；去掉判定后等价是否成立开放；BranchingTest 与外围 Test 的桥接未写
+Boundary: 去掉判定后等价是否成立开放；BranchingTest 与外围 Test 的桥接未写
 Integration: §9 模块表；Becoming.lean 与 check_becoming.py 的模块列表；三项记录；Histories 头注两句
 ```
 
@@ -7630,7 +7630,7 @@ theorem image_determinedAt_iff {P : Process S A} {π : S → K} {claims : K → 
 
 但它不再刻画承载：在 `Parting` 中，起点以同一动作到一个能继续的配置和一个不能继续的配置；经恒等映射，像在起点处在相同之下不确定（`Parting.image_not_determinedAt`），而什么也不主张时恒等映射在相同之下承载规律（`Parting.carries`）。更大的过程可以使像所分开者相同。
 
-**从不返回；差别制造的二分。** 框架处处在相同之下确定、运行中没有配置与先前的相同时，在运行经过的每个配置处，记录在相同之下不固定那里所取动作以外的任何动作，对在一个主张上不同的结果（`Run.not_fixesAlike_other_of_new`，由 `Run.not_fixesAlike_of_untaken`）；在相同之下从不返回蕴涵从不返回（`Run.new_of_newAlike`）。`Joint` 的二分（`determined_dichotomy`）要动作决定步骤；它只需以该动作由扣除后的配置出发的每一步到达条件的同一水平：
+**从不返回；经投影；差别制造的二分。** 框架处处在相同之下确定、运行中没有配置与先前的相同时，在运行经过的每个配置处，记录在相同之下不固定那里所取动作以外的任何动作，对在一个主张上不同的结果（`Run.not_fixesAlike_other_of_new`，由 `Run.not_fixesAlike_of_untaken`）；在相同之下从不返回蕴涵从不返回（`Run.new_of_newAlike`）。经投影读时也是如此：描述上某个相同之下确定的过程容许经 `π` 读的各步、运行在 `t` 之前未在与 `k` 相同的描述处取 `a` 时，记录在相同之下不固定 `a` 在 `k` 的任何结果，对在一个主张上不同的两个描述（`Run.not_fixesThroughAlike_of_untaken`，经对整个相同类的干预 `retargetAlike`）；所以凡是有登记主张的等价使配置同行之处都是如此（`Run.not_fixesThroughAlike_of_goAlikeUnder`，经 `imageUnder`）。这是 Mechanism 的 `not_fixesThrough_of_untaken` 与 `not_fixesThrough_of_goAlike` 在相同之下的形式。`Joint` 的二分（`determined_dichotomy`）要动作决定步骤；它只需以该动作由扣除后的配置出发的每一步到达条件的同一水平：
 
 ```lean
 theorem dichotomy_of_same_level {P : Process S A} {withhold : F → S → S} {f : F} {s : S} {a : A}
@@ -7652,17 +7652,17 @@ theorem alike_iff_sameBranchingTests (moves : ∃ l : List A, ∀ a, a ∈ l)
     {s : S} {s' : S'} : Alike F G s s' ↔ SameBranchingTests F G s s'
 ```
 
-`FiniteDecided F`：某个列表包含 `F` 的每个配置，动作是否把一个配置带到另一个、配置是否实现某个主张都已判定（`Decided`，Becoming.Decidedness）。证明的每一步由判定构造：深度 `k` 的相同（`AlikeTo`：同样的主张，且对 `k + 1`，任一方的每一步由另一方以同一动作到深度 `k` 相同的配置的一步相配）已判定（`AlikeTo.decided`）；它不成立处，由判定找出不同的主张或无可匹配的一步，构造一个在一方成立、在另一方不成立的分支检验（`apart_of_not_alikeTo`）；深度的相同逐步变细，在某个深度停止（`AlikeTo.steady`，由 `stops_decreasing`：每个配置对一旦不相同便不再相同；对配置对的列表归纳，新的一对若在下一深度脱落，就从那里起对其余各对再求停止之处）；在那里它是互模拟（`AlikeTo.bisimulation`）。所以有限、已定的框架的相同已判定（`Alike.decided`），就是每个深度的相同（`alike_iff_alikeTo`）。这回答了 Becoming.Histories 头注留下的问题：外围的 `same_iff_bisimilar` 对每个动作只有有限多结果的模型成立，证明用经典逻辑。
+`FiniteDecided F`：某个列表包含 `F` 的每个配置，动作是否把一个配置带到另一个、配置是否实现某个主张都已判定（`Decided`，Becoming.Decidedness）。证明的每一步由判定构造：深度 `k` 的相同（`AlikeTo`：同样的主张，且对 `k + 1`，任一方的每一步由另一方以同一动作到深度 `k` 相同的配置的一步相配）已判定（`AlikeTo.decided`）；它不成立处，由判定找出不同的主张或无可匹配的一步，构造一个在一方成立、在另一方不成立的分支检验（`apart_of_not_alikeTo`）；深度的相同逐步变细，在不超过配置对数目的某个深度停止（`AlikeTo.steady_within`、`AlikeTo.steady`，由 `stops_decreasing`：每个配置对一旦不相同便不再相同，所以至多脱落一次；对配置对的列表归纳，新的一对若脱落，略去它脱落的那一步，其余各对在自己的列表长度之内停止）；在那里它是互模拟（`AlikeTo.bisimulation`）。所以有限、已定的框架的相同已判定（`Alike.decided`），就是每个深度的相同（`alike_iff_alikeTo`），也就是配置对数目之深度的相同（`alike_iff_alikeTo_pairs`）。这回答了 Becoming.Histories 头注留下的问题：外围的 `same_iff_bisimilar` 对每个动作只有有限多结果的模型成立，证明用经典逻辑。
 
 **判定不能从“判定相同”中去掉。** 对每一对只有一个配置、一个动作而没有主张的框架，判定其配置是否相同，恰是排中律（`alike_decided_iff_em`）：`OneLoop.frame p` 的配置恰在 `p` 成立时有到自身的一步，它与 `OneLoop.frame True` 的配置相同恰当 `p`（`OneLoop.alike_iff`）。
 
 **分支检验看得到选择在何时作出。** `Choosing.late` 与 `Choosing.early` 的起点通过同样的线性检验而不相同（Becoming.Histories）；“第一步可到达一个 `b` 与 `c` 都可取的配置”在前者成立、在后者不成立（`Choosing.branching_apart`）。
 
 **作者反审。**
-1. **新律还是重述？** `carries_law_alike_iff` 是新的双向形式（此前记录只有平凡性见证 `carries_unregistered`）；`image_determinedAt_iff` 与 `image_determined_iff` 同证；`dichotomy_of_same_level` 弱化 `determined_dichotomy` 的前提，证明形状相同；`alike_iff_sameBranchingTests` 在核心是新的，外围有经典的 `same_iff_bisimilar`，构造性证明是新的；`alike_decided_iff_em` 是边界。
+1. **新律还是重述？** `carries_law_alike_iff` 是新的双向形式（此前记录只有平凡性见证 `carries_unregistered`）；`image_determinedAt_iff` 与 `image_determined_iff` 同证；`dichotomy_of_same_level` 弱化 `determined_dichotomy` 的前提，证明形状相同；`Run.not_fixesThroughAlike_of_untaken` 与 `not_fixesThrough_of_untaken` 同证，干预换成对整个相同类的 `retargetAlike`，两个不同的结果换成在一个主张上不同的两个描述；`alike_iff_sameBranchingTests` 在核心是新的，外围有经典的 `same_iff_bisimilar`，构造性证明是新的；`alike_decided_iff_em` 是边界。
 2. **条件是否局部？** `Registers` 与 `GoAlikeUnder` 是对一个等价的一步条件，但右侧对等价作存在量化：以相等时条件只检查 `π` 本身（`GoAlike`），在相同之下要给出一个等价。没有证明存在一个最小的这样的等价。
 3. **判定用在哪里？** 判定深度 `k` 的相同、寻找区分的检验、停止的深度三处都用 `FiniteDecided`。由相同到检验不用判定；没有判定时由检验到相同是否成立，这里不知道；判定相同本身需要排中律。
-4. **深度的界。** `stops_decreasing` 只给出存在，递归可使深度成倍增长。以配置对的数目为界的版本（`AlikeTo.steady_within`、`alike_iff_alikeTo_pairs`：略去单个脱落之步，不计数）已在草稿中实编，空公理，应整合会话的要求不随本次落地。
+4. **深度的界。** 停止的深度不超过配置对的数目（`AlikeTo.steady_within`）：每一对至多脱落一次，略去它脱落的那一步，其余各对在自己的列表长度之内停止，不另计数。没有证明这个界是最小的。
 5. **重复的基础件。** `Decided.exists_listed` 是 `Decided.exists_mem`（Becoming.Decidedness，只对 `Type`）在每个宇宙上的副本，`pairsOf` 对应 Becoming.Standing 的 `pairs`；框架在每个宇宙上陈述，所以保留，可在以后统一。
 6. **范围。** 不含伦理谓词；读法是 AI 的，待 Ren。
 
@@ -8969,11 +8969,11 @@ New names are structural (the law of draws `draw` and `pairDraw`, `use`, `used`,
 
 Scratch builds only (core with empty axiom reports; the peripheries with standard axioms); the landing run checks the two core modules, then the two peripheries, and binds the six records' references to the new receipts, whose old batch-3 bindings for the four changed sources were removed; market-protected-continuation and formed-copying-correction keep their old bindings, and the landing updates their hashes and rebinds them (the declarations they cite are unchanged). Not yet independently reviewed.
 
-**Likeness completed: carrying a law through an equivalence, and branching tests (14 October 2026).** Under Ren's "move towards 100%", the likeness row of Current math core on the work board (approved by the integrator, outside the open-issues plan), section 118 answers the next steps of determinacy-up-to-likeness, tests-fix-likeness-where-determined and configurations-alike-by-relation, in `Becoming.Likeness` (50 theorems).
+**Likeness completed: carrying a law through an equivalence, and branching tests (14 October 2026).** Under Ren's "move towards 100%", the likeness row of Current math core on the work board (approved by the integrator, outside the open-issues plan), section 118 answers the next steps of determinacy-up-to-likeness, tests-fix-likeness-where-determined and configurations-alike-by-relation, in `Becoming.Likeness` (61 theorems).
 - **Carrying a law up to likeness.** Some process on the descriptions, determined up to likeness under the claims, admits every step read through `π` exactly when some equivalence on the descriptions relates only descriptions realizing the same claims and takes configurations whose descriptions it relates, by one move, to configurations whose descriptions it relates (`carries_law_alike_iff`). The carrier is the image closed under the equivalence. Where each description is its own claim the only such equivalence is equality, which is `carries_law_iff` (`carries_law_named_iff`).
 - **The image.** It is determined up to likeness exactly where configurations whose descriptions are alike in it go alike under it (`image_determinedAt_iff`), but it is no longer the least carrier: in `Parting` the identity carries a law up to likeness while its image is not determined up to likeness at the start.
-- **Never returning and difference-making.** A run that never returns up to likeness fixes up to likeness no move other than the one it takes (`Run.not_fixesAlike_other_of_new`). The dichotomy of difference-making needs only that every step by the move from the withheld configuration reaches one level of the condition (`Dependence.dichotomy_of_same_level`); determinacy up to likeness under claims registering the level, and determinacy, are cases.
-- **Branching tests fix likeness, constructively.** Alike configurations pass the same branching tests, with no premise. Where the moves and claims are listed and both frames are finite with decided steps and claims (`FiniteDecided`), configurations are alike exactly where they pass the same branching tests (`alike_iff_sameBranchingTests`). Likeness to depth k is decided, a separating test is built where it fails, and likeness to depth stops refining at some depth, where it is a bisimulation. So likeness of finite decided frames is decided (`Alike.decided`). Deciding it for every pair of one-configuration frames is excluded middle (`alike_decided_iff_em`). This answers the question `Becoming.Histories` left open; the periphery's `same_iff_bisimilar` reasons classically.
+- **Never returning, projections and difference-making.** A run that never returns up to likeness fixes up to likeness no move other than the one it takes (`Run.not_fixesAlike_other_of_new`). Read through a projection, a move not taken at a description alike to the one named is not fixed up to likeness, under any process on the descriptions determined up to likeness that admits the steps so read (`Run.not_fixesThroughAlike_of_untaken`), and so wherever some equivalence registering the claims makes configurations go alike (`Run.not_fixesThroughAlike_of_goAlikeUnder`): Mechanism's `not_fixesThrough_of_untaken` and `not_fixesThrough_of_goAlike` up to likeness. The dichotomy of difference-making needs only that every step by the move from the withheld configuration reaches one level of the condition (`Dependence.dichotomy_of_same_level`); determinacy up to likeness under claims registering the level, and determinacy, are cases.
+- **Branching tests fix likeness, constructively.** Alike configurations pass the same branching tests, with no premise. Where the moves and claims are listed and both frames are finite with decided steps and claims (`FiniteDecided`), configurations are alike exactly where they pass the same branching tests (`alike_iff_sameBranchingTests`). Likeness to depth k is decided, a separating test is built where it fails, and likeness to depth stops refining at a depth no greater than the number of pairs of configurations (`AlikeTo.steady_within`), where it is a bisimulation. So likeness of finite decided frames is decided (`Alike.decided`). Deciding it for every pair of one-configuration frames is excluded middle (`alike_decided_iff_em`). This answers the question `Becoming.Histories` left open; the periphery's `same_iff_bisimilar` reasons classically.
 - **When a choice is made.** The test that the first move can lead to a configuration where both `b` and `c` can be taken holds for `Choosing.late` and fails for `Choosing.early` (`Choosing.branching_apart`).
 
 The proof gives a stopping depth without a bound. A version bounding it by the number of pairs of configurations was built clean in scratch and kept out of this landing. Whether the equivalence needs the decisions is open, and the bridge from `BranchingTest` to the periphery's `Test` is not written. Two records were migrated to schema 2 with mapping tables. Scratch builds only, with empty axiom reports; the landing run binds the receipt. Not yet independently reviewed.

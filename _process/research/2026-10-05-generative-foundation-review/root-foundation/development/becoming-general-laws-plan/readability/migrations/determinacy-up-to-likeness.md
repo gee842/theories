@@ -4,7 +4,7 @@ Old record sha256 `6025cce14a75d45f4e4a5e305811138ec803276e97c7f999c3652964032da
 
 Labels number the old English sentences and clauses (split at full stops and semicolons outside parentheses): T title, S statement, C claim, L limitations, V validation_scope, R correspondence, N next_delta, H hypotheses, X counterexamples. The Chinese text of each field goes to the same place as its English counterpart; the old Chinese was read alongside, sentence by sentence.
 
-The migration goes with a content change. `Becoming.Likeness` answers the record's next step: laws 5–9 and the Parting counterexample are new, and the old text saying what was not yet restated is superseded by them. Rows marked *superseded* say which law replaces them.
+The migration goes with a content change. `Becoming.Likeness` answers the record's next step: laws 5–10 and the Parting counterexample are new, and the old text saying what was not yet restated is superseded by them. Rows marked *superseded* say which law replaces them.
 
 | Old text | Type | New place |
 |---|---|---|
@@ -18,14 +18,14 @@ The migration goes with a content change. `Becoming.Likeness` answers the record
 | C4 “with the noise forgotten, the standard model is determined up to likeness exactly where the noise makes no difference up to likeness (forget_inputs_determinedAt_iff);” | law | law 3 |
 | C5 “a move taken is fixed up to likeness (Run.fixesAlike_of_takes) and one occasion stands for its class (Run.generalizesAlike);” | law | law 4 |
 | C6 “a move taken at no configuration alike to the one named is not fixed, for outcomes that differ in a claim (Run.not_fixesAlike_of_untaken), through an intervention on a whole likeness class (retargetAlike, retargetAlike_determinedAt).” | law | law 4 |
-| C7 “These need equality, or claims registering what equality tells apart: retargeting one of two alike configurations breaks determinacy up to likeness (Twins.retarget_breaks);” | law + counterexample | law 10 (first clause); counterexamples[0] (Twins.retarget_breaks, unchanged); the framing “need equality” is in the statement |
-| C8 “a kept history returns up to likeness where its present does and nothing registers the past (keepFrame_alike_iff, keepHistory_returns_alike), so keepHistory_new needs the past registered (keepHistory_new_named);” | law | law 10 (“so keepHistory_new needs the past registered” → “so a kept history is new only with its past registered”; keepHistory_new_named among the declarations) |
-| C9 “with nothing claimed, every description carries a law and no confound is refuted (carries_unregistered, Confound.refutes_registered).” | law | law 7 (every description carries a law, carries_unregistered); law 11 (no confound is refuted) |
+| C7 “These need equality, or claims registering what equality tells apart: retargeting one of two alike configurations breaks determinacy up to likeness (Twins.retarget_breaks);” | law + counterexample | law 11 (first clause); counterexamples[0] (Twins.retarget_breaks, unchanged); the framing “need equality” is in the statement |
+| C8 “a kept history returns up to likeness where its present does and nothing registers the past (keepFrame_alike_iff, keepHistory_returns_alike), so keepHistory_new needs the past registered (keepHistory_new_named);” | law | law 11 (“so keepHistory_new needs the past registered” → “so a kept history is new only with its past registered”; keepHistory_new_named among the declarations) |
+| C9 “with nothing claimed, every description carries a law and no confound is refuted (carries_unregistered, Confound.refutes_registered).” | law | law 7 (every description carries a law, carries_unregistered); law 12 (no confound is refuted) |
 | C10 “No premise.” | premise | hypotheses[0]; standard_boundaries: no-ethical-premise |
 | L0 “The main theorems of Experiment and Mechanism on how configurations relate are restated;” | scope | statement (“the laws on how configurations relate hold up to likeness”) |
 | L1 “not restated: Mechanism's characterization of determinacy through a projection (Image, FactorsThrough), Experiment's not_fixes_other_of_new and Joint's determined_dichotomy;” | scope | *superseded*: law 8 (Image: image_determinedAt_iff, with Parting for Image.least), laws 6–7 (FactorsThrough: carries_law_alike_iff, carries_law_named_iff), law 5 (not_fixes_other_of_new), law 9 (determined_dichotomy) |
 | L2 “carries_law_iff has no two-way form up to likeness;” | scope | *superseded*: laws 6–7 |
-| L3 “instances stating that a process is determined give determinacy up to likeness directly through Determined.at;” | scope | does_not_show[1] |
+| L3 “instances stating that a process is determined give determinacy up to likeness directly through Determined.at;” | scope | does_not_show[0] |
 | L4 “the readings are the AI's, pending Ren;” | standard boundary | standard_boundaries: names-provisional; correspondence keeps “Reading (the AI's, pending Ren)” |
 | L5 “no ethical predicate occurs.” | standard boundary | standard_boundaries: no-evaluation (and no-ethical-premise) |
 | V0–V1 “14 October 2026: the current bytes of Becoming.Branching, Becoming.Mechanism, Becoming.Unfolding, Becoming.Joint are bound to consolidated receipt 20261013T221720.428753Z (passed: …; the 90-module core closure compiles from the prelude).” | evidence | validation_scope (the binding receipt); the counts stay in the receipt and the snapshot |
@@ -41,7 +41,7 @@ The migration goes with a content change. `Becoming.Likeness` answers the record
 | R2–R4 “Reading (the AI's, pending Ren): likeness is the unfolding's own identity of configurations; … What nothing registers is neither fixed nor refuted (compare the registers of Becoming.Testing).” | reading | correspondence (unchanged; one sentence added on carrying a law up to likeness) |
 | R5 “See the integration document §99.” | provenance | correspondence (“See §99 of the integration note and its section on Becoming.Likeness”) |
 | N0 “Give the exact form of carries_law_iff up to likeness (through registered descriptions);” | next step | *answered*: laws 6–7 |
-| N1 “restate up to likeness the characterization through Image and FactorsThrough, not_fixes_other_of_new and Joint's determined_dichotomy, or give witnesses that they need equality.” | next step | *answered*: laws 5, 8, 9 and the Parting counterexample; next_delta now names what is left, not_fixesThrough_* |
+| N1 “restate up to likeness the characterization through Image and FactorsThrough, not_fixes_other_of_new and Joint's determined_dichotomy, or give witnesses that they need equality.” | next step | *answered*: laws 5, 8, 9 and the Parting counterexample, and law 10 for the readings through a projection (not_fixesThrough_*); next_delta now names Ren's judgment of the readings |
 | H0 “carries_law_iff has no two-way form up to likeness, only the triviality witness;” | premise | *superseded*: laws 6–7 (the triviality witness is law 7's second clause) |
-| H0 “not_fixesThrough_* are not restated.” | scope | does_not_show[0]; next_delta |
+| H0 “not_fixesThrough_* are not restated.” | scope | *answered*: law 10 (Run.not_fixesThroughAlike_of_untaken, Run.not_fixesThroughAlike_of_goAlikeUnder) |
 | X0 “Twins.retarget_breaks: retargeting one of two alike twins breaks determinacy up to likeness.” | counterexample | counterexamples[0] (unchanged) |

@@ -107,6 +107,18 @@
       ]
     },
     {
+      "zh": "经投影读时，在与所命名者相同的描述处未取的动作，在相同之下不被固定，对在一个主张上不同的结果：在描述上任何相同之下确定、容许如此读的各步的过程之下都是如此，所以凡是有登记主张的等价使配置同行之处都是如此。",
+      "en": "Read through a projection, a move not taken at a description alike to the one named is not fixed up to likeness, for outcomes that differ in a claim: so under any process on the descriptions, determined up to likeness, that admits the steps so read, and so wherever some equivalence registering the claims makes configurations go alike.",
+      "declarations": [
+        "Becoming.Run.TakesThroughAlike",
+        "Becoming.Run.FixesThroughAlike",
+        "Becoming.Run.not_fixesThroughAlike_of_untaken",
+        "Becoming.Run.not_fixesThroughAlike_of_goAlikeUnder",
+        "Becoming.Run.not_fixesThrough_of_untaken",
+        "Becoming.Run.not_fixesThrough_of_goAlike"
+      ]
+    },
+    {
       "zh": "对相同配置之一的干预破坏相同之下的确定；保留的历史在没有什么登记过去时在相同之下返回，所以保留的历史只在过去被登记时是新的。",
       "en": "An intervention on one of two alike configurations breaks determinacy up to likeness; a kept history returns up to likeness where its present does and nothing registers the past, so a kept history is new only with its past registered.",
       "declarations": [
@@ -132,11 +144,6 @@
     }
   ],
   "does_not_show": [
-    {
-      "zh": "实验之律经投影的读法（not_fixesThrough_of_untaken、not_fixesThrough_of_goAlike）只以相等陈述。",
-      "en": "The readings of the experiment laws through a projection (not_fixesThrough_of_untaken, not_fixesThrough_of_goAlike) are stated with equality only.",
-      "kind": "scope"
-    },
     {
       "zh": "陈述某过程确定的实例保持原样；Determined.at 给出它们的相同之下的确定。",
       "en": "Instances stating that a process is determined are left as they are; Determined.at gives their determinacy up to likeness.",
@@ -169,8 +176,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Branching (receipt 20261013T094743.528770Z; current bytes bound by 20261013T221720.428753Z) and of Becoming.Likeness (receipt bound at landing) have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "zh": "在相同之下重述实验之律经投影的读法（not_fixesThrough_of_untaken、not_fixesThrough_of_goAlike），或给出它们需要相等的见证。",
-    "en": "Restate up to likeness the readings of the experiment laws through a projection (not_fixesThrough_of_untaken, not_fixesThrough_of_goAlike), or witness that they need equality."
+    "zh": "Ren 的判断：需要相等的律是否读作依赖于所登记的。",
+    "en": "Ren's judgment whether the laws that need equality read as depending on what is registered."
   },
   "correspondence": {
     "zh": "读法（AI 的，待 Ren）：相同是展开自身的配置同一；在相同之下成立的确定定理关乎配置如何相关，需要相等的那些依赖于所登记的：对相同者中一个名字的干预、没有登记的过去、没有登记的描述。没有登记的既不被固定也不被否证（比较 Becoming.Testing 的登记）。在相同之下，承载规律的是一个登记主张的等价，而不只是像：每个描述就是自己的主张时它是相等。见整合文档 §99 与 Becoming.Likeness 一节。",
@@ -190,7 +197,8 @@
     "Becoming.carries_law_alike_iff",
     "Becoming.image_determinedAt_iff",
     "Becoming.Run.not_fixesAlike_other_of_new",
-    "Becoming.Dependence.dichotomy_of_same_level"
+    "Becoming.Dependence.dichotomy_of_same_level",
+    "Becoming.Run.not_fixesThroughAlike_of_untaken"
   ],
   "dependencies": [
     {
@@ -346,7 +354,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "0621b2ef787194aa1b762ef67e2dd1a6f0460382723eb28cb371e7ad64ddc2a7",
+      "sha256": "bd999087660e64625d7f9e1acb7bf49d96225684e2729c412a4e3d0e94c18b24",
       "declarations": [
         "Becoming.Registers",
         "Becoming.GoAlikeUnder",
@@ -372,7 +380,10 @@
         "Becoming.Dependence.dichotomy_of_same_level",
         "Becoming.Dependence.dichotomy_of_determinedAt",
         "Becoming.Dependence.level_registers",
-        "Becoming.Dependence.dichotomy_of_determined"
+        "Becoming.Dependence.dichotomy_of_determined",
+        "Becoming.Run.TakesThroughAlike",
+        "Becoming.Run.not_fixesThroughAlike_of_untaken",
+        "Becoming.Run.not_fixesThroughAlike_of_goAlikeUnder"
       ]
     },
     {
@@ -406,7 +417,9 @@
         "Becoming.carries_law_iff",
         "Becoming.Image",
         "Becoming.Image.least",
-        "Becoming.image_determined_iff"
+        "Becoming.image_determined_iff",
+        "Becoming.Run.not_fixesThrough_of_untaken",
+        "Becoming.Run.not_fixesThrough_of_goAlike"
       ]
     },
     {
@@ -581,8 +594,8 @@
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
     },
     {
-      "zh": "2026-10-14，相同之下补全（工作板“Current math core”的 likeness 一行；Becoming.Likeness）：回答本记录的 next_delta。新增规律 5–9：carries_law_iff 在相同之下的精确形式（carries_law_alike_iff，命名实例 carries_law_named_iff）；像的相同之下的确定（image_determinedAt_iff），Parting 表明像在相同之下不再是最小承载者；not_fixes_other_of_new 的相同之下形式；差别制造的二分由动作之后的同一水平推出。同时迁移到 schema 2：主张拆为 11 条规律；前提中“carries_law_iff 没有双向形式”与限制中“没有重述的”三项被新规律取代，not_fixesThrough_* 与 Determined.at 两项入“未表明”；读法与无伦理谓词入通用边界与对应。每句旧文本的去向见迁移对照表 [determinacy-up-to-likeness.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/determinacy-up-to-likeness.md)；迁移前的完整记录为 text_versions 末项。Becoming.Likeness 的证明绑定在落地运行后加入。",
-      "en": "14 October 2026, likeness completed (the work board's likeness row of Current math core; Becoming.Likeness): answers this record's next_delta. New laws 5–9: the exact form of carries_law_iff up to likeness (carries_law_alike_iff, with carries_law_named_iff as the named instance); the image's determinacy up to likeness (image_determinedAt_iff), with Parting showing that up to likeness the image is no longer the least carrier; not_fixes_other_of_new up to likeness; the dichotomy of difference-making from one level after the move. Migrated to schema 2 at the same time: the claim became 11 laws; the hypothesis that carries_law_iff has no two-way form and the three items the limitations listed as not restated are superseded by the new laws; not_fixesThrough_* and Determined.at went to does-not-show items; the readings and the absence of ethical predicates went to standard boundaries and the correspondence. Every earlier sentence is mapped in the migration table [determinacy-up-to-likeness.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/determinacy-up-to-likeness.md); the exact earlier record is the last text_versions entry. Proof bindings for Becoming.Likeness are added after the landing run."
+      "zh": "2026-10-14，相同之下补全（工作板“Current math core”的 likeness 一行；Becoming.Likeness）：回答本记录的 next_delta。新增规律 5–10：carries_law_iff 在相同之下的精确形式（carries_law_alike_iff，命名实例 carries_law_named_iff）；像的相同之下的确定（image_determinedAt_iff），Parting 表明像在相同之下不再是最小承载者；not_fixes_other_of_new 的相同之下形式；差别制造的二分由动作之后的同一水平推出；实验之律经投影的读法在相同之下的形式（Run.not_fixesThroughAlike_of_untaken、Run.not_fixesThroughAlike_of_goAlikeUnder）。同时迁移到 schema 2：主张拆为 11 条规律；前提中“carries_law_iff 没有双向形式”与限制中“没有重述的”三项被新规律取代，前提中“not_fixesThrough_* 没有重述”由规律 10 回答，Determined.at 一项入“未表明”；读法与无伦理谓词入通用边界与对应。每句旧文本的去向见迁移对照表 [determinacy-up-to-likeness.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/determinacy-up-to-likeness.md)；迁移前的完整记录为 text_versions 末项。Becoming.Likeness 的证明绑定在落地运行后加入。",
+      "en": "14 October 2026, likeness completed (the work board's likeness row of Current math core; Becoming.Likeness): answers this record's next_delta. New laws 5–10: the exact form of carries_law_iff up to likeness (carries_law_alike_iff, with carries_law_named_iff as the named instance); the image's determinacy up to likeness (image_determinedAt_iff), with Parting showing that up to likeness the image is no longer the least carrier; not_fixes_other_of_new up to likeness; the dichotomy of difference-making from one level after the move; the readings of the experiment laws through a projection up to likeness (Run.not_fixesThroughAlike_of_untaken, Run.not_fixesThroughAlike_of_goAlikeUnder). Migrated to schema 2 at the same time: the claim became 11 laws; the hypothesis that carries_law_iff has no two-way form and the three items the limitations listed as not restated are superseded by the new laws; the hypothesis that not_fixesThrough_* are not restated is answered by law 10, and Determined.at went to a does-not-show item; the readings and the absence of ethical predicates went to standard boundaries and the correspondence. Every earlier sentence is mapped in the migration table [determinacy-up-to-likeness.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/determinacy-up-to-likeness.md); the exact earlier record is the last text_versions entry. Proof bindings for Becoming.Likeness are added after the landing run."
     }
   ],
   "text_versions": [

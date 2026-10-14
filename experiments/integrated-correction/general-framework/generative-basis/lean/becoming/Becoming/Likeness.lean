@@ -9,8 +9,8 @@ import Becoming.Decidedness
 determinacy up to likeness (`DeterminedAt`). `Becoming.Branching` (P81) restated the main theorems
 of `Becoming.Experiment` and `Becoming.Mechanism` up to likeness and named, with witnesses, those
 needing equality. This module completes that list: the exact form of `carries_law_iff`, the
-image's determinacy, `Run.not_fixes_other_of_new` and `Dependence.determined_dichotomy`, each up
-to likeness, with the theorem stated with equality as its named instance, and shows that
+image's determinacy, `Run.not_fixes_other_of_new`, the theorems on what a record through a
+projection does not fix and `Dependence.determined_dichotomy`, each up to likeness, with the theorem stated with equality as its named instance, and shows that
 branching tests fix likeness constructively where frames are finite and decided. No premise is
 added; every declaration has an empty axiom report.
 
@@ -32,7 +32,12 @@ added; every declaration has an empty axiom report.
   likeness a larger process can make alike what the image tells apart.
 * **A run that never returns up to likeness fixes no other move up to likeness**
   (`Run.not_fixesAlike_other_of_new`): `Run.not_fixes_other_of_new` with returning read as coming
-  back to an alike configuration.
+  back to an alike configuration. Read through a projection, a move the run has not taken at a
+  description alike to the one named is not fixed up to likeness, under any process on the
+  descriptions determined up to likeness that admits the steps so read
+  (`Run.not_fixesThroughAlike_of_untaken`), and so wherever an equivalence registering the
+  claims makes configurations go alike (`Run.not_fixesThroughAlike_of_goAlikeUnder`):
+  `Run.not_fixesThrough_of_untaken` and `Run.not_fixesThrough_of_goAlike` up to likeness.
 * **The dichotomy of difference-making needs only the level after the move to be one**
   (`Dependence.dichotomy_of_same_level`). Where every step by the move from the withheld
   configuration reaches the same level of the condition, either the part makes the difference or
@@ -51,9 +56,11 @@ added; every declaration has an empty axiom report.
   (`alike_iff_sameBranchingTests`). Each step is built from the decisions: likeness to depth `k`
   (`AlikeTo`) is decided (`AlikeTo.decided`); where it fails, a branching test holding at one
   configuration and failing at the other is built (`apart_of_not_alikeTo`); likeness to depth
-  stops refining at some depth (`AlikeTo.steady`, by `stops_decreasing`), and there it is a
-  bisimulation (`AlikeTo.bisimulation`). So likeness of finite decided frames is decided
-  (`Alike.decided`) and is likeness to every depth (`alike_iff_alikeTo`). This answers, for
+  stops refining at a depth no greater than the number of pairs of configurations
+  (`AlikeTo.steady_within`, by `stops_decreasing`), and there it is a bisimulation
+  (`AlikeTo.bisimulation`). So likeness of finite decided frames is decided (`Alike.decided`), is
+  likeness to every depth (`alike_iff_alikeTo`) and is likeness to the depth of the number of
+  pairs (`alike_iff_alikeTo_pairs`). This answers, for
   frames with finitely many configurations, the question `Becoming.Histories` left open: the
   periphery's `ExplanatoryBranching.same_iff_bisimilar` reasons classically, for frames with
   finitely many outcomes of each move.
@@ -65,10 +72,8 @@ added; every declaration has an empty axiom report.
   move can lead to a configuration where both `b` and `c` can be taken holds at the one and fails
   at the other (`Choosing.branching_apart`).
 
-What is not derived: a bound on the depth at which likeness to depth stops refining (the proof
-gives some depth; counting pairs would bound it by their number); whether configurations of
-finite frames passing the same branching tests are alike without the decisions of
-`FiniteDecided`; the correspondence of `BranchingTest` with the periphery's `Test`, which a bridge
+What is not derived: whether configurations of finite frames passing the same branching tests
+are alike without the decisions of `FiniteDecided`; the correspondence of `BranchingTest` with the periphery's `Test`, which a bridge
 would state.
 
 The readings are the AI's, pending Ren.
@@ -280,6 +285,46 @@ theorem Run.new_of_newAlike {F : Frame S A C} (r : Run F.P)
   fun i j lt same => new i j lt (Eq.subst (motive := fun y => Alike F F (r.state i) y) same
     (Alike.refl F (r.state i)))
 
+/-- Before step `t` the run takes `a` at a configuration whose description is alike to `k` in the
+frame of `Q` under `claims`. -/
+def Run.TakesThroughAlike {K : Type u'} {D : Type w'} {P : Process S A} (r : Run P) (π : S → K)
+    (Q : Process K A) (claims : K → D → Prop) (t : Nat) (k : K) (a : A) : Prop :=
+  ∃ n, n < t ∧ Alike (⟨Q, claims⟩ : Frame K A D) ⟨Q, claims⟩ (π (r.state n)) k ∧ r.act n = a
+
+/-- **A law through a projection is not fixed up to likeness where not yet taken.** Where a
+process on the description, determined up to likeness under `claims`, admits the run's steps
+before `t` read through `π`, and the run has not taken `a` at a configuration whose description
+is alike to `k` there, the record fixes up to likeness no outcome of `a` at `k`, for any two
+descriptions that differ in a claim: `Run.not_fixesThrough_of_untaken` up to likeness. -/
+theorem Run.not_fixesThroughAlike_of_untaken {K : Type u'} {D : Type w'} {P : Process S A}
+    (r : Run P) {π : S → K} {claims : K → D → Prop} {Q : Process K A}
+    (determined : ∀ k, DeterminedAt (⟨Q, claims⟩ : Frame K A D) k) {t : Nat}
+    (steps : r.StepsThrough π Q t) {k : K} {a : A} (untaken : ¬ r.TakesThroughAlike π Q claims t k a)
+    {x y : K} {d : D} (here : claims x d) (not_here : ¬ claims y d) :
+    ¬ ∃ κ, r.FixesThroughAlike π claims t k a κ :=
+  fun ⟨_, fixes⟩ =>
+    have retargeted : ∀ κ₀, r.StepsThrough π (retargetAlike ⟨Q, claims⟩ k a κ₀).P t :=
+      fun _ n before => .inl ⟨fun ⟨like, same⟩ => untaken ⟨n, before, like, same⟩, steps n before⟩
+    have to_x := fixes (retargetAlike ⟨Q, claims⟩ k a x).P
+      (retargetAlike_determinedAt determined k a x k) (retargeted x) x
+      (retargetAlike_step ⟨Q, claims⟩ k a x)
+    have to_y := fixes (retargetAlike ⟨Q, claims⟩ k a y).P
+      (retargetAlike_determinedAt determined k a y k) (retargeted y) y
+      (retargetAlike_step ⟨Q, claims⟩ k a y)
+    not_here ((to_y.realized d).mpr ((to_x.realized d).mp here))
+
+/-- **A law carried up to likeness is not fixed where not yet taken either.** Where an
+equivalence registering the claims makes configurations go alike under `π`, the record fixes up
+to likeness no outcome of a move at a description the run has not taken it at, up to likeness in
+the image closed under the equivalence: `Run.not_fixesThrough_of_goAlike` up to likeness. -/
+theorem Run.not_fixesThroughAlike_of_goAlikeUnder {K : Type u'} {D : Type w'} {P : Process S A}
+    (r : Run P) {π : S → K} {claims : K → D → Prop} {E : K → K → Prop} (eqv : Equivalence E)
+    (registers : Registers claims E) (go : GoAlikeUnder P π E) {t : Nat} {k : K} {a : A}
+    (untaken : ¬ r.TakesThroughAlike π (imageUnder P π E) claims t k a) {x y : K} {d : D}
+    (here : claims x d) (not_here : ¬ claims y d) : ¬ ∃ κ, r.FixesThroughAlike π claims t k a κ :=
+  r.not_fixesThroughAlike_of_untaken (imageUnder_determinedAt P π eqv registers go)
+    (r.stepsThrough_of_factors (factors_imageUnder P π eqv) t) untaken here not_here
+
 end NeverReturning
 
 /-! ## Branching tests fix likeness, constructively, where a frame is finite and decided -/
@@ -366,33 +411,110 @@ theorem mem_pairsOf {β : Type u} {γ : Type u'} {b : β} {c : γ} :
   | _, _, .head _, mem => mem_pairedWith_left mem
   | _, m, .tail _ listed, mem => mem_pairedWith_right m (mem_pairsOf listed mem)
 
-/-- What holds from step `m + j` of a decreasing family holds at `m`. -/
-theorem holds_before {X : Type u} {P : Nat → X → Prop} (down : ∀ k x, P (k + 1) x → P k x)
-    {m : Nat} {x : X} : ∀ j, P (m + j) x → P m x
-  | 0, holds => holds
-  | j + 1, holds => holds_before down j (down (m + j) x holds)
+/-- The length of the pairs of `b` before `rest`. -/
+theorem length_pairedWith {β : Type u} {γ : Type u'} {b : β} {rest : List (β × γ)} :
+    ∀ m : List γ, (pairedWith b m rest).length = rest.length + m.length
+  | [] => rfl
+  | _ :: m => congrArg (· + 1) (length_pairedWith m)
 
-/-- **A decreasing family decided at each step stops decreasing on a list at some step.** Where
-what holds at a step held at the step before, and whether it holds is decided, at some step
-nothing in the list that holds there fails at the next: each member, once it fails, fails from
-then on. -/
+/-- The number of pairs is the product of the lengths. -/
+theorem length_pairsOf {β : Type u} {γ : Type u'} (m : List γ) :
+    ∀ l : List β, (pairsOf l m).length = m.length * l.length
+  | [] => rfl
+  | _ :: l => (length_pairedWith m).trans (congrArg (· + m.length) (length_pairsOf m l))
+
+/-- What holds at a step of a decreasing family holds at every earlier step. -/
+theorem holds_below {X : Type u} {P : Nat → X → Prop} (down : ∀ k x, P (k + 1) x → P k x)
+    {x : X} {b : Nat} : ∀ {a : Nat}, b ≤ a → P a x → P b x := by
+  intro a le
+  induction le with
+  | refl => exact fun holds => holds
+  | step _ ih => exact fun holds => ih (down _ x holds)
+
+/-- Where something holds at the first step of a decreasing family and fails at step `N`, it holds
+at some step and fails at the next. -/
+theorem drops_somewhere {X : Type u} {P : Nat → X → Prop} {x : X}
+    (decided : ∀ k, Decided (P k x)) (first : P 0 x) :
+    ∀ N, ¬ P N x → ∃ m, P m x ∧ ¬ P (m + 1) x
+  | 0, fails => absurd first fails
+  | N + 1, fails => match decided N with
+    | .inl holds => ⟨N, holds, fails⟩
+    | .inr fails' => drops_somewhere decided first N fails'
+
+/-- The steps with step `m` left out: `skip m j` is `j` below `m` and `j + 1` from `m` on. -/
+def skip : Nat → Nat → Nat
+  | 0, j => j + 1
+  | _ + 1, 0 => 0
+  | m + 1, j + 1 => skip m j + 1
+
+theorem skip_le : ∀ m j, skip m j ≤ j + 1
+  | 0, _ => Nat.le_refl _
+  | _ + 1, 0 => Nat.zero_le _
+  | m + 1, j + 1 => Nat.succ_le_succ (skip_le m j)
+
+/-- Leaving out step `m` lands below `m` or above it. -/
+theorem skip_side : ∀ m j, skip m j < m ∨ m + 1 ≤ skip m j
+  | 0, j => .inr (Nat.succ_le_succ (Nat.zero_le j))
+  | m + 1, 0 => .inl (Nat.succ_pos m)
+  | m + 1, j + 1 => match skip_side m j with
+    | .inl below => .inl (Nat.succ_lt_succ below)
+    | .inr above => .inr (Nat.succ_le_succ above)
+
+/-- Leaving out one step moves on by one step or, across the step left out, by two. -/
+theorem skip_succ : ∀ m j, skip m (j + 1) = skip m j + 1 ∨ skip m (j + 1) = skip m j + 2
+  | 0, _ => .inl rfl
+  | 1, 0 => .inr rfl
+  | _ + 2, 0 => .inl rfl
+  | m + 1, j + 1 => match skip_succ m j with
+    | .inl one => .inl (congrArg (· + 1) one)
+    | .inr two => .inr (congrArg (· + 1) two)
+
+/-- **A decreasing family decided at each step stops decreasing on a list within its length.**
+Where what holds at a step held at the step before, and whether it holds is decided, at some step
+no later than the length of the list nothing in it that holds there fails at the next. Each
+member fails at most once, at the step after the last at which it holds; leaving that step out of
+the family, the rest of the list stops decreasing within its own length. -/
 theorem stops_decreasing {X : Type u} :
     ∀ (l : List X) (P : Nat → X → Prop), (∀ k x, P (k + 1) x → P k x) →
-      (∀ k x, Decided (P k x)) → ∃ k, ∀ x, x ∈ l → P k x → P (k + 1) x
-  | [], _, _, _ => ⟨0, fun _ mem => nomatch mem⟩
+      (∀ k x, Decided (P k x)) → ∃ k, k ≤ l.length ∧ ∀ x, x ∈ l → P k x → P (k + 1) x
+  | [], _, _, _ => ⟨0, Nat.le_refl 0, fun _ mem => nomatch mem⟩
   | y :: l, P, down, decided =>
-    match stops_decreasing l P down decided with
-    | ⟨k, steady⟩ => match decided (k + 1) y with
-      | .inl holds => ⟨k, fun x mem => match mem_cons_split mem with
-          | .inl same => fun _ => Eq.subst (motive := fun z => P (k + 1) z) same.symm holds
+    match decided (l.length + 1) y with
+    | .inl lasting =>
+      match stops_decreasing l P down decided with
+      | ⟨k, within, steady⟩ => ⟨k, Nat.le_succ_of_le within, fun x mem => match mem_cons_split mem with
+          | .inl same => fun _ => Eq.subst (motive := fun z => P (k + 1) z) same.symm
+              (holds_below down (Nat.succ_le_succ within) lasting)
           | .inr mem => steady x mem⟩
-      | .inr fails =>
-        match stops_decreasing l (fun j => P (k + 1 + j)) (fun j x => down (k + 1 + j) x)
-            (fun j x => decided (k + 1 + j) x) with
-        | ⟨j, steady'⟩ => ⟨k + 1 + j, fun x mem => match mem_cons_split mem with
-            | .inl same => fun holds => absurd (holds_before down j
-                (Eq.subst (motive := fun z => P (k + 1 + j) z) same holds)) fails
-            | .inr mem => steady' x mem⟩
+    | .inr ends =>
+      match decided 0 y with
+      | .inr never =>
+        match stops_decreasing l P down decided with
+        | ⟨k, within, steady⟩ => ⟨k, Nat.le_succ_of_le within, fun x mem =>
+            match mem_cons_split mem with
+            | .inl same => fun holds => absurd (holds_below down (Nat.zero_le k)
+                (Eq.subst (motive := fun z => P k z) same holds)) never
+            | .inr mem => steady x mem⟩
+      | .inl first =>
+        match drops_somewhere (fun k => decided k y) first (l.length + 1) ends with
+        | ⟨m, last, after⟩ =>
+          match stops_decreasing l (fun j => P (skip m j))
+              (fun j x holds => match skip_succ m j with
+                | .inl one => down _ x (Eq.subst (motive := fun z => P z x) one holds)
+                | .inr two => down _ x (down _ x (Eq.subst (motive := fun z => P z x) two holds)))
+              (fun j x => decided (skip m j) x) with
+          | ⟨k, within, steady⟩ =>
+            ⟨skip m k, Nat.le_trans (skip_le m k) (Nat.succ_le_succ within), fun x mem =>
+              match mem_cons_split mem with
+              | .inl same => match skip_side m k with
+                | .inl below => fun _ => Eq.subst (motive := fun z => P (skip m k + 1) z)
+                    same.symm (holds_below down below last)
+                | .inr above => fun holds => absurd (holds_below down above
+                    (Eq.subst (motive := fun z => P (skip m k) z) same holds)) after
+              | .inr mem => fun holds => match skip_succ m k with
+                | .inl one => Eq.subst (motive := fun z => P z x) one (steady x mem holds)
+                | .inr two => down _ x
+                    (Eq.subst (motive := fun z => P z x) two (steady x mem holds))⟩
 
 /-- A branching test: nothing, a claim, the failure of a test, two tests together, or that some
 step by a move leads to where a test holds. -/
@@ -463,6 +585,12 @@ theorem AlikeTo.of_succ {F : Frame S A C} {G : Frame S' A C} :
       | ⟨t', step', joined⟩ => ⟨t', step', AlikeTo.of_succ joined⟩,
      fun a t' step' => match back a t' step' with
       | ⟨t, step, joined⟩ => ⟨t, step, AlikeTo.of_succ joined⟩⟩
+
+/-- Alike to a depth is alike to every lower depth. -/
+theorem AlikeTo.down_to {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'} {b : Nat} :
+    ∀ {a : Nat}, b ≤ a → AlikeTo F G a s s' → AlikeTo F G b s s' :=
+  fun le => holds_below (P := fun k (x : S × S') => AlikeTo F G k x.1 x.2)
+    (fun _ _ alike => AlikeTo.of_succ alike) (x := (s, s')) le
 
 /-- Alike configurations are alike to every depth. -/
 theorem Alike.alikeTo {F : Frame S A C} {G : Frame S' A C} :
@@ -623,17 +751,29 @@ theorem SameBranchingTests.alikeTo (moves : ∃ l : List A, ∀ a, a ∈ l)
     match apart_of_not_alikeTo moves claims finite finite' k fails with
     | ⟨φ, holds, fails'⟩ => fails' ((same φ).mp holds)
 
+/-- **Likeness to depth stops refining within the number of pairs**: where lists hold the
+configurations of each frame, at some depth no greater than the number of pairs of their members,
+configurations alike to it are alike to the next. -/
+theorem AlikeTo.steady_within (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (finite : FiniteDecided F) (finite' : FiniteDecided G)
+    {l : List S} {l' : List S'} (all : ∀ s, s ∈ l) (all' : ∀ s', s' ∈ l') :
+    ∃ N, N ≤ l'.length * l.length ∧ ∀ s s', AlikeTo F G N s s' → AlikeTo F G (N + 1) s s' :=
+  match stops_decreasing (pairsOf l l') (fun k x => AlikeTo F G k x.1 x.2)
+      (fun _ _ alike => AlikeTo.of_succ alike)
+      (fun k x => AlikeTo.decided moves claims finite finite' k x.1 x.2) with
+  | ⟨N, within, steady⟩ =>
+    ⟨N, Eq.subst (motive := fun n => N ≤ n) (length_pairsOf l' l) within,
+     fun s s' => steady (s, s') (mem_pairsOf (all s) (all' s'))⟩
+
 /-- **Likeness to depth stops refining**: at some depth, configurations alike to it are alike to
 the next. -/
 theorem AlikeTo.steady (moves : ∃ l : List A, ∀ a, a ∈ l) (claims : ∃ l : List C, ∀ c, c ∈ l)
     (finite : FiniteDecided F) (finite' : FiniteDecided G) :
     ∃ N, ∀ s s', AlikeTo F G N s s' → AlikeTo F G (N + 1) s s' :=
   match finite.listed, finite'.listed with
-  | ⟨l, all⟩, ⟨l', all'⟩ =>
-    match stops_decreasing (pairsOf l l') (fun k x => AlikeTo F G k x.1 x.2)
-        (fun _ _ alike => AlikeTo.of_succ alike)
-        (fun k x => AlikeTo.decided moves claims finite finite' k x.1 x.2) with
-    | ⟨N, steady⟩ => ⟨N, fun s s' => steady (s, s') (mem_pairsOf (all s) (all' s'))⟩
+  | ⟨_, all⟩, ⟨_, all'⟩ =>
+    match AlikeTo.steady_within moves claims finite finite' all all' with
+    | ⟨N, _, steady⟩ => ⟨N, steady⟩
 
 /-- Where likeness to depth `N` does not refine, it is a bisimulation. -/
 theorem AlikeTo.bisimulation {N : Nat} (steady : ∀ s s', AlikeTo F G N s s' → AlikeTo F G (N + 1) s s') :
@@ -671,6 +811,18 @@ theorem alike_iff_alikeTo (moves : ∃ l : List A, ∀ a, a ∈ l)
   ⟨fun alike k => alike.alikeTo k, fun alike =>
     match AlikeTo.steady moves claims finite finite' with
     | ⟨N, steady⟩ => ⟨AlikeTo F G N, AlikeTo.bisimulation steady, alike N⟩⟩
+
+/-- **Likeness is likeness to the depth of the number of pairs.** Where lists hold the
+configurations of each frame, configurations are alike exactly where they are alike to the depth
+given by the number of pairs of their members. -/
+theorem alike_iff_alikeTo_pairs (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (finite : FiniteDecided F) (finite' : FiniteDecided G)
+    {l : List S} {l' : List S'} (all : ∀ s, s ∈ l) (all' : ∀ s', s' ∈ l') {s : S} {s' : S'} :
+    Alike F G s s' ↔ AlikeTo F G (l'.length * l.length) s s' :=
+  ⟨fun alike => alike.alikeTo _, fun alike =>
+    match AlikeTo.steady_within moves claims finite finite' all all' with
+    | ⟨N, within, steady⟩ =>
+      ⟨AlikeTo F G N, AlikeTo.bisimulation steady, AlikeTo.down_to within alike⟩⟩
 
 end BranchingTests
 

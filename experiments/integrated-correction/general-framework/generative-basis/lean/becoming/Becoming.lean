@@ -862,10 +862,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   premise. A description carries a law up to likeness exactly where some equivalence
   registering the claims makes configurations go alike, the law stated with equality being the
   case where each description is its own claim; the image is then no longer the least carrier;
-  a run never returning up to likeness fixes no other move; the dichotomy of difference-making
-  needs one level after the move. On finite frames whose steps and claims are decided,
-  configurations are alike exactly where they pass the same branching tests, by a constructive
-  proof; deciding likeness for every finite frame is excluded middle.
+  a run never returning up to likeness fixes no other move, and read through a projection a move
+  not taken is not fixed up to likeness; the dichotomy of difference-making needs one level after
+  the move. On finite frames whose steps and claims are decided, configurations are alike exactly
+  where they pass the same branching tests, by a constructive proof in which refinement stops
+  within the number of pairs of configurations; deciding likeness for every finite frame is
+  excluded middle.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
