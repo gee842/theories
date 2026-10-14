@@ -2,12 +2,12 @@ import Becoming.Viability
 import Becoming.Recurrence
 
 /-!
-# Lasting: a number of steps, exhaustion, and never reaching
+# Lasting: a number of steps, exhaustion, never reaching and reaching
 
 `Becoming.Viability` states where no course ever leaves a guard. This module states the same for
 a finite number of steps and reads it from both sides: what suffices for lasting `n` steps and
-what lasting `n` steps requires. It then states when a guard is exhausted, and where a
-determined law never reaches a target.
+what lasting `n` steps requires. It then states when a guard is exhausted, where a determined
+law never reaches a target, and, dually, when a law reaches a target within `n` steps.
 
 * **Lasting a horizon.** `Lasts f adm guard n s`: `s` is within the guard and, for `n` more
   steps, so is every configuration an admissible disturbance takes it to. A **ladder** is a
@@ -41,11 +41,33 @@ determined law never reaches a target.
   avoids the target exactly when no such set contains a seed (`none_avoid_iff`); read with
   excluded middle, which the core does not use, the left side says every seed reaches the
   target. A fixed configuration outside the target is such a set by itself (`fixed_avoids`).
+* **Reaching.** `Reaches f adm target n s`: `s` is in the target, or every admissible disturbance
+  takes it to a configuration that reaches the target within `n - 1` steps. A **funnel** is a
+  family of levels whose level `0` lies in the target and whose configurations at level `k + 1`
+  are in the target or go to level `k` under every admissible disturbance (`Funnel`). A start
+  reaches the target within `n` steps exactly when some funnel holds it at level `n`
+  (`reaches_iff_funnel`), and exactly when every **basin** (the target at every level, and what
+  every admissible disturbance takes to level `k` at level `k + 1`) holds it there
+  (`reaches_iff_basin`); `Reaches` is the largest funnel and the least basin. Reaching composes
+  (`Reaches.trans`). What reaches meets the target within `n` steps on every admissible
+  history (`Reaches.histories`); the converse holds for a decided target given one admissible
+  disturbance (`reaches_iff_histories`), and needs the decision: for one law it is the limited
+  principle of omniscience (`Search.histories_need_decision`). A numeric **variant** (a level
+  in `Nat` that every step from outside the target lowers) at most `n` at the start reaches
+  within `n` steps (`Variant.reaches`). For a determined law, reaching is meeting the target on
+  the orbit (`reaches_iff_orbit`), the funnel law needs no decision
+  (`orbit_reaches_iff_funnel`), and with a decided target the orbit meets it within `n` steps
+  exactly when a numeric variant is at most `n` at the start (`orbit_reaches_iff_variant`); a
+  numeric variant for every law and target would decide equality (`numeric_needs_decision`).
+  Reaching and lasting outside the target exclude each other where a disturbance is admissible
+  (`Reaches.not_lasts`); for a determined law and a decided target they are complements
+  (`reaches_iff_not_lasts`), and without the decision double negation would be eliminated
+  (`dual_needs_decision`).
 
 Every condition named here is local: one step from each configuration. Which guard, levels,
 quantity, threshold and target an application uses are supplied with it; nothing here says that
-some ladder, drained family or closed set exists. No premise is added; every declaration has an
-empty axiom report.
+some ladder, drained family, closed set or funnel exists. No premise is added; every declaration
+has an empty axiom report.
 -/
 
 namespace Becoming
@@ -478,6 +500,389 @@ theorem fixed_avoids {x : S} (fixed : next x = x) (outside : ¬ target x) :
     fun _ same => Eq.mpr (congrArg (fun z => next z = x) same) fixed⟩
 
 end Reaching
+
+/-! ## Reaching a target -/
+
+section Reaches
+
+variable {target : S → Prop}
+
+/-- `Reaches f adm target n s`: `s` is in the target, or `n` steps remain and every admissible
+disturbance takes `s` to a configuration that reaches the target within one step fewer. -/
+def Reaches (f : S → A → S) (adm : A → Prop) (target : S → Prop) : Nat → S → Prop
+  | 0, s => target s
+  | n + 1, s => target s ∨ ∀ a, adm a → Reaches f adm target n (f s a)
+
+/-- A **funnel** into a target: level `0` lies in the target, and a configuration at level
+`k + 1` is in the target or every admissible disturbance takes it to level `k`. -/
+structure Funnel (f : S → A → S) (adm : A → Prop) (target : S → Prop) (F : Nat → S → Prop) :
+    Prop where
+  base : ∀ x, F 0 x → target x
+  descends : ∀ k x, F (k + 1) x → target x ∨ ∀ a, adm a → F k (f x a)
+
+/-- A **basin** of a target: the target lies at every level, and a configuration that every
+admissible disturbance takes to level `k` is at level `k + 1`. -/
+structure Basin (f : S → A → S) (adm : A → Prop) (target : S → Prop) (L : Nat → S → Prop) :
+    Prop where
+  holds : ∀ k x, target x → L k x
+  gathers : ∀ k x, (∀ a, adm a → L k (f x a)) → L (k + 1) x
+
+/-- **Every funnel reaches**: a start at level `n` of a funnel reaches the target within `n`
+steps. -/
+theorem Funnel.reaches {F : Nat → S → Prop} (funnel : Funnel f adm target F) :
+    ∀ (n : Nat) (s : S), F n s → Reaches f adm target n s
+  | 0, s, held => funnel.base s held
+  | n + 1, s, held => match funnel.descends n s held with
+    | .inl inside => .inl inside
+    | .inr next => .inr (fun a admitted => Funnel.reaches funnel n (f s a) (next a admitted))
+
+/-- **`Reaches` is a funnel.** -/
+theorem reaches_funnel : Funnel f adm target (Reaches f adm target) :=
+  ⟨fun _ held => held, fun _ _ held => held⟩
+
+/-- **The reaching law.** A start reaches the target within `n` steps on every admissible
+disturbance exactly when some funnel holds it at level `n`. -/
+theorem reaches_iff_funnel {n : Nat} {s : S} :
+    Reaches f adm target n s ↔ ∃ F : Nat → S → Prop, F n s ∧ Funnel f adm target F :=
+  ⟨fun reaches => ⟨Reaches f adm target, reaches, reaches_funnel⟩,
+   fun ⟨_, held, funnel⟩ => funnel.reaches n s held⟩
+
+/-- What is in the target reaches it within every number of steps. -/
+theorem Reaches.of_target : ∀ (n : Nat) {s : S}, target s → Reaches f adm target n s
+  | 0, _, inside => inside
+  | _ + 1, _, inside => .inl inside
+
+/-- **Every basin holds what reaches.** -/
+theorem Basin.of_reaches {L : Nat → S → Prop} (basin : Basin f adm target L) :
+    ∀ (n : Nat) (s : S), Reaches f adm target n s → L n s
+  | 0, s, inside => basin.holds 0 s inside
+  | n + 1, s, .inl inside => basin.holds (n + 1) s inside
+  | n + 1, s, .inr next =>
+      basin.gathers n s (fun a admitted => Basin.of_reaches basin n (f s a) (next a admitted))
+
+/-- **`Reaches` is a basin.** -/
+theorem reaches_basin : Basin f adm target (Reaches f adm target) :=
+  ⟨fun k _ inside => Reaches.of_target k inside, fun _ _ next => .inr next⟩
+
+/-- **A start reaches the target within `n` steps exactly when every basin holds it at level
+`n`.** `Reaches` is the largest funnel and the least basin. -/
+theorem reaches_iff_basin {n : Nat} {s : S} :
+    Reaches f adm target n s ↔ ∀ L : Nat → S → Prop, Basin f adm target L → L n s :=
+  ⟨fun reaches _ basin => basin.of_reaches n s reaches,
+   fun every => every (Reaches f adm target) reaches_basin⟩
+
+/-- **A family that is both a funnel and a basin is exactly reaching.** -/
+theorem reaches_iff_of_exact {C : Nat → S → Prop} (funnel : Funnel f adm target C)
+    (basin : Basin f adm target C) (n : Nat) (s : S) : Reaches f adm target n s ↔ C n s :=
+  ⟨basin.of_reaches n s, funnel.reaches n s⟩
+
+/-- What reaches within `n` steps reaches within `n + 1`. -/
+theorem Reaches.succ : ∀ {n : Nat} {s : S}, Reaches f adm target n s →
+    Reaches f adm target (n + 1) s
+  | 0, _, inside => .inl inside
+  | _ + 1, _, .inl inside => .inl inside
+  | _ + 1, _, .inr next => .inr (fun a admitted => Reaches.succ (next a admitted))
+
+/-- What reaches within `n` steps reaches within `n + j`. -/
+theorem Reaches.add {n : Nat} {s : S} (reaches : Reaches f adm target n s) :
+    ∀ j, Reaches f adm target (n + j) s
+  | 0 => reaches
+  | j + 1 => Reaches.succ (Reaches.add reaches j)
+
+/-- What reaches within `n` steps reaches within every larger number. -/
+theorem Reaches.mono {n m : Nat} {s : S} (reaches : Reaches f adm target n s) (le : n ≤ m) :
+    Reaches f adm target m s := by
+  induction le with
+  | refl => exact reaches
+  | step _ before => exact Reaches.succ before
+
+/-- **Reaching composes.** Where a start reaches a region within `m` steps and every
+configuration of the region reaches the target within `k`, the start reaches the target within
+`k + m`. -/
+theorem Reaches.trans {B : S → Prop} {k : Nat} (onward : ∀ x, B x → Reaches f adm target k x) :
+    ∀ {m : Nat} {s : S}, Reaches f adm B m s → Reaches f adm target (k + m) s
+  | 0, s, inside => onward s inside
+  | m + 1, s, .inl inside => Reaches.add (onward s inside) (m + 1)
+  | _ + 1, _, .inr next => .inr (fun a admitted => Reaches.trans onward (next a admitted))
+
+/-! ### Histories -/
+
+/-- **What reaches the target within `n` steps meets it within the first `n` steps of every
+admissible history.** -/
+theorem Reaches.histories : ∀ {n : Nat} {s : S}, Reaches f adm target n s →
+    ∀ d : Nat → A, (∀ k, adm (d k)) → ∃ k, k ≤ n ∧ target (history f s d k)
+  | 0, _, inside, _, _ => ⟨0, Nat.le_refl 0, inside⟩
+  | _ + 1, _, .inl inside, _, _ => ⟨0, Nat.zero_le _, inside⟩
+  | _ + 1, s, .inr next, d, admissible =>
+    match Reaches.histories (next (d 0) (admissible 0)) (fun k => d (k + 1))
+        (fun k => admissible (k + 1)) with
+    | ⟨k, bound, inside⟩ => ⟨k + 1, Nat.succ_le_succ bound,
+        Eq.mpr (congrArg target (history_shift f s d k)) inside⟩
+
+/-- Given one admissible disturbance and a decided target, what meets the target within the
+first `n` steps of every admissible history reaches it within `n` steps. -/
+theorem reaches_of_histories [DecidablePred target] {a₀ : A} (h₀ : adm a₀) :
+    ∀ {n : Nat} {s : S},
+      (∀ d : Nat → A, (∀ k, adm (d k)) → ∃ k, k ≤ n ∧ target (history f s d k)) →
+        Reaches f adm target n s
+  | 0, _, every => match every (fun _ => a₀) (fun _ => h₀) with
+    | ⟨0, _, inside⟩ => inside
+    | ⟨_ + 1, bound, _⟩ => absurd bound (Nat.not_succ_le_zero _)
+  | _ + 1, s, every =>
+    if inside : target s then .inl inside else
+    .inr (fun a admitted => reaches_of_histories h₀ (fun d admissible =>
+      match every (prepend a d) (prepend_admissible admitted admissible) with
+      | ⟨0, _, first⟩ => absurd first inside
+      | ⟨k + 1, bound, later⟩ => ⟨k, Nat.le_of_succ_le_succ bound,
+          Eq.mp (congrArg target (history_shift f s (prepend a d) k)) later⟩))
+
+/-- **Given one admissible disturbance and a decided target, a start reaches the target within
+`n` steps exactly when every admissible history meets it within its first `n` steps.**
+`Search.histories_need_decision` shows that the direction from histories needs a decision. -/
+theorem reaches_iff_histories [DecidablePred target] {a₀ : A} (h₀ : adm a₀) {n : Nat} {s : S} :
+    Reaches f adm target n s ↔
+      ∀ d : Nat → A, (∀ k, adm (d k)) → ∃ k, k ≤ n ∧ target (history f s d k) :=
+  ⟨fun reaches => Reaches.histories reaches, reaches_of_histories h₀⟩
+
+/-- **Reaching and lasting outside the target exclude each other** where some disturbance is
+admissible. -/
+theorem Reaches.not_lasts {a₀ : A} (h₀ : adm a₀) : ∀ {n : Nat} {s : S},
+    Reaches f adm target n s → ¬ Lasts f adm (fun x => ¬ target x) n s
+  | 0, _, inside, lasts => lasts inside
+  | _ + 1, _, .inl inside, lasts => And.left lasts inside
+  | _ + 1, _, .inr next, lasts => Reaches.not_lasts h₀ (next a₀ h₀) (And.right lasts a₀ h₀)
+
+/-! ### A numeric variant -/
+
+/-- A **variant** for reaching within `n`: a level in `Nat` such that a configuration at a level
+at most `n` is in the target, or is at a positive level and every admissible disturbance takes
+it to a lower one. -/
+def Variant (f : S → A → S) (adm : A → Prop) (target : S → Prop) (n : Nat) (V : S → Nat) :
+    Prop :=
+  ∀ x, V x ≤ n → target x ∨ (0 < V x ∧ ∀ a, adm a → V (f x a) < V x)
+
+/-- **A variant gives a funnel**: the configurations at a level at most `k` and at most `n`. -/
+theorem Variant.funnel {n : Nat} {V : S → Nat} (variant : Variant f adm target n V) :
+    Funnel f adm target (fun k x => V x ≤ k ∧ V x ≤ n) :=
+  ⟨fun x ⟨low, bound⟩ => match variant x bound with
+    | .inl inside => inside
+    | .inr ⟨pos, _⟩ => absurd (Nat.lt_of_lt_of_le pos low) (Nat.lt_irrefl 0),
+   fun _ x ⟨low, bound⟩ => match variant x bound with
+    | .inl inside => .inl inside
+    | .inr ⟨_, lowers⟩ => .inr (fun a admitted =>
+        ⟨Nat.le_of_lt_succ (Nat.lt_of_lt_of_le (lowers a admitted) low),
+         Nat.le_trans (Nat.le_of_lt (lowers a admitted)) bound⟩)⟩
+
+/-- **A variant at most `n` at the start reaches within `n` steps.** -/
+theorem Variant.reaches {n : Nat} {V : S → Nat} (variant : Variant f adm target n V) {s : S}
+    (start : V s ≤ n) : Reaches f adm target n s :=
+  variant.funnel.reaches n s ⟨start, start⟩
+
+/-! ### A determined law -/
+
+section Determined
+
+variable {next : S → S}
+
+/-- **For a determined law, reaching within `n` steps is meeting the target on the orbit within
+`n` steps**, with no premise. -/
+theorem reaches_iff_orbit : ∀ {n : Nat} {s : S},
+    Reaches (determined next) (fun _ => True) target n s ↔
+      ∃ k, k ≤ n ∧ target (Law.orbit next s k)
+  | 0, _ => ⟨fun inside => ⟨0, Nat.le_refl 0, inside⟩, fun found => match found with
+      | ⟨0, _, inside⟩ => inside
+      | ⟨_ + 1, bound, _⟩ => absurd bound (Nat.not_succ_le_zero _)⟩
+  | _ + 1, s => ⟨fun reaches => match reaches with
+      | .inl inside => ⟨0, Nat.zero_le _, inside⟩
+      | .inr onward => match reaches_iff_orbit.mp (onward () trivial) with
+        | ⟨k, bound, inside⟩ => ⟨k + 1, Nat.succ_le_succ bound,
+            Eq.mpr (congrArg target (Law.orbit_shift next s k)) inside⟩,
+     fun found => match found with
+      | ⟨0, _, inside⟩ => .inl inside
+      | ⟨k + 1, bound, inside⟩ => .inr (fun _ _ => reaches_iff_orbit.mpr
+          ⟨k, Nat.le_of_succ_le_succ bound,
+            Eq.mp (congrArg target (Law.orbit_shift next s k)) inside⟩)⟩
+
+/-- **The reaching law for a determined law.** The orbit meets the target within `n` steps
+exactly when some funnel holds the start at level `n`: level `0` lies in the target, and a
+configuration at level `k + 1` is in the target or its successor is at level `k`. No decision
+of the target is used. -/
+theorem orbit_reaches_iff_funnel {n : Nat} {s : S} :
+    (∃ k, k ≤ n ∧ target (Law.orbit next s k)) ↔
+      ∃ F : Nat → S → Prop, F n s ∧ (∀ x, F 0 x → target x) ∧
+        ∀ k x, F (k + 1) x → target x ∨ F k (next x) :=
+  reaches_iff_orbit.symm.trans (reaches_iff_funnel.trans
+    ⟨fun ⟨F, held, funnel⟩ => ⟨F, held, funnel.base, fun k x level =>
+      match funnel.descends k x level with
+      | .inl inside => .inl inside
+      | .inr onward => .inr (onward () trivial)⟩,
+     fun ⟨F, held, base, descends⟩ => ⟨F, held, ⟨base, fun k x level =>
+      match descends k x level with
+      | .inl inside => .inl inside
+      | .inr onward => .inr (fun _ _ => onward)⟩⟩⟩)
+
+/-- Steps to the target along the orbit, counted up to `m`: `0` in the target, otherwise one
+more than from the successor; `0` once no steps remain. -/
+def hitTime (target : S → Prop) [DecidablePred target] (next : S → S) : Nat → S → Nat
+  | 0, _ => 0
+  | m + 1, x => if target x then 0 else hitTime target next m (next x) + 1
+
+theorem hitTime_succ [DecidablePred target] (m : Nat) (x : S) :
+    hitTime target next (m + 1) x = if target x then 0 else hitTime target next m (next x) + 1 :=
+  rfl
+
+/-- A count reached below its bound does not change with a larger bound. -/
+theorem hitTime_stable [DecidablePred target] : ∀ (m : Nat) (y : S),
+    hitTime target next m y < m → hitTime target next (m + 1) y = hitTime target next m y
+  | 0, _, lt => absurd lt (Nat.lt_irrefl 0)
+  | m + 1, y, lt =>
+    if inside : target y then
+      (hitTime_succ (m + 1) y).trans
+        ((if_pos inside).trans ((hitTime_succ m y).trans (if_pos inside)).symm)
+    else
+      have counted : hitTime target next (m + 1) y = hitTime target next m (next y) + 1 :=
+        (hitTime_succ m y).trans (if_neg inside)
+      have lt' : hitTime target next m (next y) + 1 < m + 1 :=
+        Eq.mp (congrArg (· < m + 1) counted) lt
+      (hitTime_succ (m + 1) y).trans ((if_neg inside).trans
+        ((congrArg (· + 1) (hitTime_stable m (next y) (Nat.lt_of_succ_lt_succ lt'))).trans
+          counted.symm))
+
+/-- What reaches within `m` steps is counted at most `m` with bound `m + 1`. -/
+theorem hitTime_of_reaches [DecidablePred target] : ∀ (m : Nat) (y : S),
+    Reaches (determined next) (fun _ => True) target m y → hitTime target next (m + 1) y ≤ m
+  | 0, y, inside => Nat.le_of_eq ((hitTime_succ 0 y).trans (if_pos (c := target y) inside))
+  | m + 1, y, reaches =>
+    if inside : target y then
+      Nat.le_trans (Nat.le_of_eq ((hitTime_succ (m + 1) y).trans (if_pos inside))) (Nat.zero_le _)
+    else
+      Nat.le_trans (Nat.le_of_eq ((hitTime_succ (m + 1) y).trans (if_neg inside)))
+        (match reaches with
+          | .inl found => absurd found inside
+          | .inr onward => Nat.succ_le_succ (hitTime_of_reaches m (next y) (onward () trivial)))
+
+/-- The count with bound `n + 1` lowers along every step from a configuration outside the target
+at a level at most `n`. -/
+theorem hitTime_lowers [DecidablePred target] (n : Nat) (x : S)
+    (low : hitTime target next (n + 1) x ≤ n) :
+    target x ∨ hitTime target next (n + 1) (next x) < hitTime target next (n + 1) x :=
+  if inside : target x then .inl inside else
+    have counted : hitTime target next (n + 1) x = hitTime target next n (next x) + 1 :=
+      (hitTime_succ n x).trans (if_neg inside)
+    have low' : hitTime target next n (next x) < n := Eq.mp (congrArg (· ≤ n) counted) low
+    .inr (Eq.mpr (congrArg (· < hitTime target next (n + 1) x) (hitTime_stable n (next x) low'))
+      (Eq.mpr (congrArg (hitTime target next n (next x) < ·) counted) (Nat.lt_succ_self _)))
+
+/-- **The reaching law with a numeric variant.** Where the target is decided, the orbit meets it
+within `n` steps exactly when some level in `Nat`, at most `n` at the start, is lowered by every
+step from a configuration outside the target at a level at most `n`. The direction from a
+variant to reaching uses no decision; `numeric_needs_decision` shows that the other one needs
+one. -/
+theorem orbit_reaches_iff_variant [DecidablePred target] {n : Nat} {s : S} :
+    (∃ k, k ≤ n ∧ target (Law.orbit next s k)) ↔
+      ∃ V : S → Nat, V s ≤ n ∧ ∀ x, V x ≤ n → target x ∨ V (next x) < V x :=
+  ⟨fun found => ⟨hitTime target next (n + 1),
+     hitTime_of_reaches n s (reaches_iff_orbit.mpr found), hitTime_lowers n⟩,
+   fun ⟨V, start, lowers⟩ => reaches_iff_orbit.mp
+     (Variant.reaches (f := determined next) (adm := fun _ => True) (n := n) (V := V)
+       (fun x bound => match lowers x bound with
+         | .inl inside => .inl inside
+         | .inr lt => .inr ⟨Nat.lt_of_le_of_lt (Nat.zero_le _) lt, fun _ _ => lt⟩) start)⟩
+
+/-- For a determined law and a decided target, what does not last outside the target reaches
+it. -/
+theorem reaches_of_not_lasts [DecidablePred target] : ∀ {n : Nat} {s : S},
+    ¬ Lasts (determined next) (fun _ => True) (fun x => ¬ target x) n s →
+      Reaches (determined next) (fun _ => True) target n s
+  | 0, s, not_lasts => if inside : target s then inside else absurd inside not_lasts
+  | _ + 1, s, not_lasts => if inside : target s then .inl inside else
+      .inr (fun _ _ => reaches_of_not_lasts (fun lasts => not_lasts ⟨inside, fun _ _ => lasts⟩))
+
+/-- **For a determined law and a decided target, reaching within `n` steps is not lasting
+outside the target for `n` steps.** `dual_needs_decision` shows that the decision is
+needed. -/
+theorem reaches_iff_not_lasts [DecidablePred target] {n : Nat} {s : S} :
+    Reaches (determined next) (fun _ => True) target n s ↔
+      ¬ Lasts (determined next) (fun _ => True) (fun x => ¬ target x) n s :=
+  ⟨Reaches.not_lasts (a₀ := ()) trivial, reaches_of_not_lasts⟩
+
+end Determined
+
+/-! ### Where a decision is needed -/
+
+/-- **The lasting duality needs a decision.** If not lasting outside every target gave reaching
+it, at the start with no step, double negation would be eliminated. -/
+theorem dual_needs_decision {next : S → S} {s : S}
+    (dual : ∀ target : S → Prop,
+      ¬ Lasts (determined next) (fun _ => True) (fun x => ¬ target x) 0 s →
+        Reaches (determined next) (fun _ => True) target 0 s)
+    (p : Prop) : ¬ ¬ p → p :=
+  dual (fun _ => p)
+
+/-- A numeric variant for the law that keeps every configuration, with the target `{s}`, decides
+at every configuration whether it is `s`. -/
+theorem variant_decides {s : S} {n : Nat} {V : S → Nat} (start : V s ≤ n)
+    (lowers : ∀ x, V x ≤ n → x = s ∨ V x < V x) (x : S) : x = s ↔ V x ≤ n :=
+  ⟨fun same => Eq.mpr (congrArg (fun y => V y ≤ n) same) start,
+   fun low => match lowers x low with
+    | .inl same => same
+    | .inr lt => absurd lt (Nat.lt_irrefl _)⟩
+
+/-- **The numeric form needs a decision.** If every determined law meeting a target within `n`
+steps had a numeric variant, equality of configurations would be decided. -/
+theorem numeric_needs_decision
+    (numeric : ∀ (next : S → S) (target : S → Prop) (n : Nat) (s : S),
+      (∃ k, k ≤ n ∧ target (Law.orbit next s k)) →
+        ∃ V : S → Nat, V s ≤ n ∧ ∀ x, V x ≤ n → target x ∨ V (next x) < V x)
+    (x y : S) : x = y ∨ ¬ x = y :=
+  match numeric (fun z => z) (fun z => z = y) 0 y ⟨0, Nat.le_refl 0, rfl⟩ with
+  | ⟨V, start, lowers⟩ =>
+    match Nat.decLe (V x) 0 with
+    | isTrue low => .inl ((variant_decides start lowers x).mpr low)
+    | isFalse high => .inr (fun same => high ((variant_decides start lowers x).mp same))
+
+namespace Search
+
+/-- Before a choice, or after the choice of `a`. -/
+def step (_ : Option Nat) (a : Nat) : Option Nat := some a
+
+/-- Before the choice the target is that `g` holds somewhere; after the choice of `a`, that `g`
+fails at `a`. -/
+def found (g : Nat → Bool) : Option Nat → Prop
+  | none => ∃ b, g b = true
+  | some a => g a = false
+
+/-- Every history from before the choice meets the target within one step. -/
+theorem every_history (g : Nat → Bool) (d : Nat → Nat) (_ : ∀ k, (fun _ => True) (d k)) :
+    ∃ k, k ≤ 1 ∧ found g (history step none d k) :=
+  match h : g (d 0) with
+  | true => ⟨0, Nat.zero_le 1, ⟨d 0, h⟩⟩
+  | false => ⟨1, Nat.le_refl 1, h⟩
+
+/-- Reaching within one step from before the choice is the limited principle of omniscience for
+`g`. -/
+theorem reaches_iff_lpo (g : Nat → Bool) :
+    Reaches step (fun _ => True) (found g) 1 none ↔ (∃ b, g b = true) ∨ ∀ a, g a = false :=
+  ⟨fun reaches => match reaches with
+    | .inl inside => .inl inside
+    | .inr onward => .inr (fun a => onward a trivial),
+   fun lpo => match lpo with
+    | .inl inside => .inl inside
+    | .inr never => .inr (fun a _ => never a)⟩
+
+/-- **The histories form needs a decision.** If meeting the target on every admissible history
+gave reaching it for this law, the limited principle of omniscience would hold. -/
+theorem histories_need_decision
+    (converse : ∀ g : Nat → Bool,
+      (∀ d : Nat → Nat, (∀ k, (fun _ => True) (d k)) →
+          ∃ k, k ≤ 1 ∧ found g (history step none d k)) →
+        Reaches step (fun _ => True) (found g) 1 none)
+    (g : Nat → Bool) : (∃ b, g b = true) ∨ ∀ a, g a = false :=
+  (reaches_iff_lpo g).mp (converse g (every_history g))
+
+end Search
+
+end Reaches
 
 end Lasting
 

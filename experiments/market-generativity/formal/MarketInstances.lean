@@ -27,7 +27,9 @@ instances of the pure core's laws are stated here; the core does not import this
   nonnegative shock costs the stock one unit above the floor `5`. So a physical start whose
   share times `(3/2)^N` is at most `1/6` and whose stock is below `5 + N` stops within `N`
   steps on every such history: `finite_support_forces_failure` is an instance
-  (`forces_failure_instance`).
+  (`forces_failure_instance`), and so is `every_finite_stock_has_obstructed_positive_seeds`
+  (`obstructed_seeds_instance`); the number of steps and the seed limit are this market's
+  content.
 * **Supported finite transition (`Becoming.Lasting`, ladders).** The cover recurrence is a
   ladder for every correction schedule and every disturbance whose shock is at most the cost
   (`cover_ladder`), so a physical start whose stock covers `N` steps runs within the essential
@@ -43,6 +45,19 @@ instances of the pure core's laws are stated here; the core does not import this
   quality `3/8` under the worst influence `1` is nonnegative (`lands_iff_margin`), and exactly
   when no such closed set contains a positive seed (`lands_iff_no_closed`). Above the boundary
   the fixed configuration is such a set by itself (`fixed_point_instance`).
+* **The landing side as reaching (`Becoming.Lasting`, reaching).** Every positive seed lands
+  exactly when every positive seed is held by some funnel into landing (`lands_iff_funnel`). A
+  quantity that every step from a region outside the target raises by a fixed gain, up to a
+  bound, gives a funnel for every determined rational law (`rising_funnel`). For
+  `0 ≤ b ≤ 5/12` the market's gain estimates supply three such funnels: in the settled region
+  for a seed share `2a` (kept by the law, `settled_kept`) the share gains `a * (a/16) / 10` a
+  step below `7/8`, then the influence falls `1/32` a step above `1/4`, then the quality gains
+  `1/16` a step below `1/2`; composed by `Reaches.trans`, every settled configuration lands
+  (`settled_reaches_landing`). A positive seed comes into its settled region by the old seed
+  retention and positive gap estimates (`seed_reaches_settled`), so every positive seed reaches
+  landing (`seed_reaches_landing`, `landing_side_instance`), and the 5/12 boundary follows from
+  the core's laws (`landing_boundary_instance`). The gain estimates are facts about this one
+  rational law; they are the instance's content.
 
 Every declaration may depend on the standard axioms through rational arithmetic only.
 -/
@@ -403,5 +418,295 @@ theorem fixed_point_instance (b : Rat) (hb : 5/12 < b) (hu : b ≤ 3/4) :
     apply Lasting.fixed_avoids (RegimeAttraction.middle_fixed b (by grind) hu)
     unfold RegimeTransition.Landing RegimeAttraction.middle
     grind
+
+/-! ## The landing side as reaching -/
+
+section Reaching
+
+open RegimeAttraction RegimeTransition
+
+/-- **A rising quantity gives a funnel**, for every determined law over the rationals. Let every
+step from a region outside the target keep the region, let a quantity be at most `top` there
+outside the target, and let every such step raise it by at least `gain`. Then the configurations
+of the region whose quantity is less than `k` gains below `top` form a funnel into the target. -/
+theorem rising_funnel {S : Type} (next : S → S) (target R : S → Prop) (q : S → Rat)
+    (top gain : Rat)
+    (kept : ∀ x, R x → ¬ target x → R (next x))
+    (bounded : ∀ x, R x → ¬ target x → q x ≤ top)
+    (rises : ∀ x, R x → ¬ target x → q x + gain ≤ q (next x)) :
+    Lasting.Funnel (Lasting.determined next) (fun _ => True) target
+      (fun k x => R x ∧ top - q x < (k : Rat) * gain) := by
+  constructor
+  · intro x ⟨hr, hlt⟩
+    by_cases ht : target x
+    · exact ht
+    · have hb := bounded x hr ht
+      have h0 : ((0 : Nat) : Rat) * gain = 0 := by simp
+      grind
+  · intro k x ⟨hr, hlt⟩
+    by_cases ht : target x
+    · exact .inl ht
+    · refine .inr (fun _ _ => ⟨kept x hr ht, ?_⟩)
+      have hrise := rises x hr ht
+      show top - q (next x) < ((k : Nat) : Rat) * gain
+      have hk : ((k + 1 : Nat) : Rat) * gain = (k : Rat) * gain + gain := by
+        simp only [Rat.natCast_add, Rat.natCast_ofNat]
+        grind
+      grind
+
+/-- Where every configuration of the region is less than `n` gains below `top`, every one
+reaches the target within `n` steps. -/
+theorem rising_reaches {S : Type} {next : S → S} {target R : S → Prop} {q : S → Rat}
+    {top gain : Rat}
+    (kept : ∀ x, R x → ¬ target x → R (next x))
+    (bounded : ∀ x, R x → ¬ target x → q x ≤ top)
+    (rises : ∀ x, R x → ¬ target x → q x + gain ≤ q (next x)) {n : Nat}
+    (within : ∀ x, R x → top - q x < (n : Rat) * gain) :
+    ∀ x, R x → Lasting.Reaches (Lasting.determined next) (fun _ => True) target n x :=
+  fun x hr => (rising_funnel next target R q top gain kept bounded rises).reaches n x
+    ⟨hr, within x hr⟩
+
+/-- The settled region for a seed share `2a`: physical, with share at least `a`, quality at least
+`3/8 + a/16` and influence at most `1 - a/2`. -/
+def Settled (a : Rat) (x : RegimeBoundary.OperatingState) : Prop :=
+  physical x ∧ a ≤ x.1 ∧ 3/8 + a/16 ≤ x.2.1 ∧ x.2.2 ≤ 1 - a/2
+
+/-- The share does not fall where the quality is at least `3/8`. -/
+theorem share_kept (b : Rat) (x : RegimeBoundary.OperatingState) (hx : physical x)
+    (hq : 3/8 ≤ x.2.1) : x.1 ≤ (family b x).1 :=
+  (MarketGenerativity.share_step_bounds x.1 (1/5) (4*(x.2.1-3/8)) hx.1 hx.2.1
+    (by decide +kernel) (by grind) (by have := hx.2.2.2.1; grind)).1
+
+/-- The influence moves a quarter of the way to `1` minus the share. -/
+theorem influence_le (b w0 : Rat) (x : RegimeBoundary.OperatingState) (hw : x.2.2 ≤ w0) :
+    (family b x).2.2 ≤ (3/4)*w0 + (1/4)*(1 - x.1) := by
+  change MarketGenerativity.influenceStep x.2.2 (1/4) 1 x.1 ≤ _
+  unfold MarketGenerativity.influenceStep
+  grind
+
+/-- **The settled region is kept** by the regime law for `0 ≤ b ≤ 5/12`. -/
+theorem settled_kept (b a : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (ha0 : 0 ≤ a) (ha1 : a ≤ 1/2)
+    (x : RegimeBoundary.OperatingState) (hx : Settled a x) : Settled a (family b x) := by
+  obtain ⟨hp, hxa, hq, hw⟩ := hx
+  have hm := PartialRegimeTransition.partial_positive_margin b a hb0 hb1 ha0 ha1
+  have hs := share_kept b x hp (by grind)
+  have hi := influence_le b (1 - a/2) x hw
+  refine ⟨family_physical b x hp, by grind, ?_, by grind⟩
+  exact PartialRegimeTransition.quality_keeps b (1-a/2) (3/8+a/16) x hb0 hb1 hp (by grind) hw
+    (by grind) (by grind) hq (by grind)
+
+/-- The share has risen to `7/8` in the settled region. -/
+def ShareHigh (a : Rat) (x : RegimeBoundary.OperatingState) : Prop :=
+  Settled a x ∧ 7/8 ≤ x.1
+
+/-- The influence has fallen to `1/4` with the share high. -/
+def InfluenceLow (a : Rat) (x : RegimeBoundary.OperatingState) : Prop :=
+  ShareHigh a x ∧ x.2.2 ≤ 1/4
+
+/-- **The share's gain is a variant** in the settled region: below `7/8` it rises by at least
+`a * (a/16) / 10` a step (`share_progress`). Where `7/8 < n * (a * (a/16) / 10)`, every settled
+configuration reaches a high share within `n` steps. -/
+theorem settled_reaches_share (b a : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (ha0 : 0 ≤ a)
+    (ha1 : a ≤ 1/2) {n : Nat} (hn : 7/8 < (n : Rat) * (a*(a/16)/10)) :
+    ∀ x, Settled a x →
+      Lasting.Reaches (Lasting.determined (family b)) (fun _ => True) (ShareHigh a) n x :=
+  rising_reaches (q := fun x => x.1) (top := 7/8)
+    (fun x hx _ => settled_kept b a hb0 hb1 ha0 ha1 x hx)
+    (fun x _ hn => by
+      unfold ShareHigh at hn
+      by_cases h : 7/8 ≤ x.1
+      · exact absurd ⟨by assumption, h⟩ hn
+      · grind)
+    (fun x hx hn => by
+      unfold ShareHigh at hn
+      have hlow : x.1 < 7/8 := by
+        by_cases h : 7/8 ≤ x.1
+        · exact absurd ⟨hx, h⟩ hn
+        · grind
+      exact PartialRegimeTransition.share_progress b a (a/16) x hx.1 ha0 (by grind) hx.2.1
+        (by grind) hx.2.2.1)
+    (fun x hx => by have := hx.2.1; have := hx.1.1; grind)
+
+/-- **The influence's fall is a variant** once the share is high: above `1/4` it falls by at
+least `1/32` a step, so within `25` steps it is at most `1/4`. -/
+theorem share_reaches_influence (b a : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (ha0 : 0 ≤ a)
+    (ha1 : a ≤ 1/2) :
+    ∀ x, ShareHigh a x →
+      Lasting.Reaches (Lasting.determined (family b)) (fun _ => True) (InfluenceLow a) 25 x :=
+  rising_reaches (q := fun x => -x.2.2) (top := -1/4) (gain := 1/32)
+    (fun x hx _ => ⟨settled_kept b a hb0 hb1 ha0 ha1 x hx.1,
+      by have := share_kept b x hx.1.1 (by have := hx.1.2.2.1; grind); have := hx.2; grind⟩)
+    (fun x hx hn => by
+      unfold InfluenceLow at hn
+      by_cases h : x.2.2 ≤ 1/4
+      · exact absurd ⟨hx, h⟩ hn
+      · show -x.2.2 ≤ -1/4
+        grind)
+    (fun x hx hn => by
+      unfold InfluenceLow at hn
+      have hhigh : 1/4 < x.2.2 := by
+        by_cases h : x.2.2 ≤ 1/4
+        · exact absurd ⟨hx, h⟩ hn
+        · grind
+      have hi := influence_le b x.2.2 x Rat.le_refl
+      have := hx.2
+      show -x.2.2 + 1/32 ≤ -(family b x).2.2
+      grind)
+    (fun x hx => by
+      have := hx.1.1.2.2.2.2.2
+      have h25 : ((25 : Nat) : Rat) * (1/32) = 25/32 := by
+        simp only [Rat.natCast_ofNat]
+        grind
+      show -1/4 - -x.2.2 < ((25 : Nat) : Rat) * (1/32)
+      grind)
+
+/-- **The quality's gain is a variant** once the influence is low: below `1/2` it rises by at
+least `1/16` a step (`quality_progress`), so within `3` steps the configuration lands. -/
+theorem influence_reaches_landing (b a : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (ha0 : 0 ≤ a)
+    (ha1 : a ≤ 1/2) :
+    ∀ x, InfluenceLow a x →
+      Lasting.Reaches (Lasting.determined (family b)) (fun _ => True) Landing 3 x :=
+  rising_reaches (q := fun x => x.2.1) (top := 1/2) (gain := 1/16)
+    (fun x hx _ => ⟨⟨settled_kept b a hb0 hb1 ha0 ha1 x hx.1.1,
+      by have := share_kept b x hx.1.1.1 (by have := hx.1.1.2.2.1; grind); have := hx.1.2; grind⟩,
+      by have := influence_le b (1/4) x hx.2; have := hx.1.2; grind⟩)
+    (fun x hx hn => by
+      by_cases h : 1/2 ≤ x.2.1
+      · exact absurd ⟨hx.1.1.1, by have := hx.1.2; grind, h, hx.2⟩ hn
+      · show x.2.1 ≤ 1/2
+        grind)
+    (fun x hx hn => by
+      have hq : x.2.1 ≤ 1/2 := by
+        by_cases h : 1/2 ≤ x.2.1
+        · exact absurd ⟨hx.1.1.1, by have := hx.1.2; grind, h, hx.2⟩ hn
+        · grind
+      exact PartialRegimeTransition.quality_progress b (1/4) (1/2) (1/16) x hb0 hb1 hx.1.1.1 hx.2
+        (by decide +kernel) (by decide +kernel) hq (by grind))
+    (fun x hx => by
+      have := hx.1.1.2.2.1
+      have h3 : ((3 : Nat) : Rat) * (1/16) = 3/16 := by
+        simp only [Rat.natCast_ofNat]
+        grind
+      show 1/2 - x.2.1 < ((3 : Nat) : Rat) * (1/16)
+      grind)
+
+/-- From the settled region the configuration lands within `3 + 25 + n` steps, by composing the
+three variants (`Lasting.Reaches.trans`). -/
+theorem settled_reaches_landing (b a : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (ha0 : 0 ≤ a)
+    (ha1 : a ≤ 1/2) {n : Nat} (hn : 7/8 < (n : Rat) * (a*(a/16)/10)) :
+    ∀ x, Settled a x →
+      Lasting.Reaches (Lasting.determined (family b)) (fun _ => True) Landing (3 + 25 + n) x :=
+  fun x hx => Lasting.Reaches.trans
+    (fun y hy => Lasting.Reaches.trans (influence_reaches_landing b a hb0 hb1 ha0 ha1)
+      (share_reaches_influence b a hb0 hb1 ha0 ha1 y hy))
+    (settled_reaches_share b a hb0 hb1 ha0 ha1 hn x hx)
+
+/-- A positive seed comes into the settled region for half its share, by the old seed retention
+and positive gap estimates (`uniform_seed_floor`, `eventual_positive_gap`,
+`eventual_influence`). -/
+theorem seed_reaches_settled (b : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (s : RegimeBoundary.OperatingState)
+    (hs : physical s) (hx : 0 < s.1) :
+    ∃ M, Lasting.Reaches (Lasting.determined (family b)) (fun _ => True) (Settled (s.1/2)) M s := by
+  have ha0 : 0 < s.1/2 := by grind
+  have hshare := PartialRegimeTransition.uniform_seed_floor b s hb0 hb1 hs
+  obtain ⟨N1, hq⟩ := PartialRegimeTransition.eventual_positive_gap b s hb0 hb1 hs hx
+  obtain ⟨N2, _, hw⟩ := PartialRegimeTransition.eventual_influence b (s.1/2) (s.1/2/2) s 0 hs
+    (by grind) (by grind) (fun n _ => hshare n)
+  refine ⟨N1 + N2, Lasting.reaches_iff_orbit.mpr ⟨N1 + N2, Nat.le_refl _, ?_⟩⟩
+  rw [← path_eq]
+  have h1 := hq (N1 + N2) (Nat.le_add_right _ _)
+  have h2 := hw (N1 + N2) (Nat.le_add_left _ _)
+  exact ⟨PartialRegimeTransition.path_physical b s hs _, hshare _, by grind, by grind⟩
+
+/-- **The landing side is an instance of the reaching law.** For `0 ≤ b ≤ 5/12`, every positive
+physical seed reaches landing under the regime law within some number of steps. The funnels are
+supplied by the market's gain estimates (share, then influence, then quality); these estimates
+are facts about this one rational law and are the instance's content. -/
+theorem seed_reaches_landing (b : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12)
+    (s : RegimeBoundary.OperatingState) (hs : physical s) (hx : 0 < s.1) :
+    ∃ n, Lasting.Reaches (Lasting.determined (family b)) (fun _ => True) Landing n s := by
+  obtain ⟨M, hM⟩ := seed_reaches_settled b hb0 hb1 s hs hx
+  have ha0 : 0 < s.1/2 := by grind
+  have ha1 : s.1/2 ≤ 1/2 := by have := hs.2.1; grind
+  have hg : 0 < s.1/2*(s.1/2/16)/10 := by
+    have := Rat.mul_pos ha0 (show 0 < s.1/2/16 by grind)
+    grind
+  obtain ⟨n, hn⟩ := rational_natural_bound ((7/8)/(s.1/2*(s.1/2/16)/10))
+  have hn' := (Rat.div_lt_iff hg).mp hn
+  exact ⟨3 + 25 + n + M, Lasting.Reaches.trans
+    (settled_reaches_landing b (s.1/2) hb0 hb1 (by grind) ha1 hn') hM⟩
+
+/-- `partial_finite_landing` from the reaching law. -/
+theorem landing_side_instance (b : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12)
+    (s : RegimeBoundary.OperatingState) (hs : physical s) (hx : 0 < s.1) :
+    ∃ n, Landing (PartialRegimeTransition.path b s n) := by
+  obtain ⟨n, hn⟩ := seed_reaches_landing b hb0 hb1 s hs hx
+  obtain ⟨k, _, hk⟩ := Lasting.reaches_iff_orbit.mp hn
+  exact ⟨k, by rw [path_eq]; exact hk⟩
+
+/-- **`exact_universal_landing_boundary` from the core's laws**: for `0 ≤ b ≤ 3/4`, every positive
+seed lands exactly when `b ≤ 5/12`. The landing side is the reaching law with the gain
+estimates' funnels (`landing_side_instance`); the other side is a fixed configuration avoiding
+landing (`fixed_point_instance`, from `fixed_avoids`). -/
+theorem landing_boundary_instance (b : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 3/4) :
+    (∀ s, physical s → 0 < s.1 → ∃ n, Landing (PartialRegimeTransition.path b s n)) ↔
+      b ≤ 5/12 := by
+  constructor
+  · intro lands
+    by_cases hb : b ≤ 5/12
+    · exact hb
+    · obtain ⟨hp, hpos, never⟩ := fixed_point_instance b (by grind) hb1
+      obtain ⟨n, hn⟩ := lands (middle b) hp hpos
+      exact absurd hn (never n)
+  · intro hb s hs hx
+    exact landing_side_instance b hb0 hb s hs hx
+
+/-- **Every positive seed lands exactly when every positive seed is held by some funnel into
+landing**, for every correction strength (an instance of `orbit_reaches_iff_funnel`). -/
+theorem lands_iff_funnel (b : Rat) :
+    (∀ s, physical s → 0 < s.1 → ∃ n, Landing (PartialRegimeTransition.path b s n)) ↔
+      ∀ s, physical s → 0 < s.1 → ∃ (n : Nat) (F : Nat → RegimeBoundary.OperatingState → Prop),
+        F n s ∧ (∀ x, F 0 x → Landing x) ∧ ∀ k x, F (k + 1) x → Landing x ∨ F k (family b x) := by
+  constructor
+  · intro lands s hs hx
+    obtain ⟨n, hn⟩ := lands s hs hx
+    exact ⟨n, Lasting.orbit_reaches_iff_funnel.mp ⟨n, Nat.le_refl n, by rw [← path_eq]; exact hn⟩⟩
+  · intro funnels s hs hx
+    obtain ⟨n, held⟩ := funnels s hs hx
+    obtain ⟨k, _, hk⟩ := Lasting.orbit_reaches_iff_funnel.mpr held
+    exact ⟨k, by rw [path_eq]; exact hk⟩
+
+end Reaching
+
+/-! ## Obstructed positive seeds -/
+
+/-- **`every_finite_stock_has_obstructed_positive_seeds` is an instance of exhaustion**: the
+proof of the old theorem with `forces_failure_instance`, the instance of `Lasting.exhausts`, in
+place of `finite_support_forces_failure`. The number of steps `N` with `stock - 5 < N` and the
+seed limit `1/(6 (3/2)^N)` are this market's content. -/
+theorem obstructed_seeds_instance (stock : Rat) (hc : 5 ≤ stock) :
+    ∃ N, 0 < N ∧ 0 < FiniteSupportObstruction.seedLimit N ∧ ∀ x q w,
+      0 < x → x ≤ FiniteSupportObstruction.seedLimit N → 0 ≤ q → q ≤ 1 →
+      ∀ beta d, (∀ n, 0 ≤ (d n).shock 0) →
+        FiniteSupportObstruction.guarded beta d (RegimeAttraction.lift (x,q,w) stock) N = none := by
+  obtain ⟨N, hN⟩ := RegimeAttraction.rational_natural_bound (stock-5)
+  have hn0 : 0 < N := by
+    by_cases h : N = 0
+    · subst N; change stock-5 < (0 : Rat) at hN; grind
+    · omega
+  refine ⟨N, hn0, (FiniteSupportObstruction.seed_limit_bounds N).1, ?_⟩
+  intro x q w hx hxsmall hq0 hq1 beta d hd
+  have hp : FiniteSupportObstruction.PairPhysical (RegimeAttraction.lift (x,q,w) stock) := by
+    have hlim := (FiniteSupportObstruction.seed_limit_bounds N).2.1
+    unfold FiniteSupportObstruction.PairPhysical RegimeAttraction.lift
+    grind
+  have hm := Rat.mul_le_mul_of_nonneg_right hxsmall
+    (show 0 ≤ RegimeAttraction.radius (3/2) 1 N by
+      have := (RegimeAttraction.radius_growth_lower (3/2) 1 (by decide +kernel)
+        (by decide +kernel) N).1
+      grind)
+  rw [(FiniteSupportObstruction.seed_limit_bounds N).2.2] at hm
+  exact forces_failure_instance beta d _ N hp hc hd hm
+    (by change stock < 5+(N : Rat); grind)
 
 end Becoming.MarketInstances
