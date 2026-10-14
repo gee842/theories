@@ -294,8 +294,8 @@ Plan: [OPEN-ISSUES-PLAN.md](research/2026-10-05-generative-foundation-review/roo
 | A | corrections, plan items 2–10 (records, chapter §8 row) | **done** a04727a4 (items 2–5, 7–10, eight records, paired history notes); item 6, the chapter §8 row, rides with batch 4 |
 | B1 | reaching law (dual of Lasting's ladder) in `Becoming.Lasting`; market 5/12 landing side and the obstructed-seeds theorem as instances; copying residuals (`finite_lineage_inherits` converse, `registered_copy_cells` bonds) | worktree agent; batch 4 |
 | B2 | history-supplies-inputs law for scene, encounter and retrospective binding; acquired-revision, pending-task, joint-practice, formed-goal rows | worktree agent; batch 4 |
-| C1 | “credit” → `includes` (Lean names in Dependence, Horizon, Ranking, Substitution; record and chapter prose; zh 记入 unchanged) | integrator; rides with batch 4 |
-| C3 | name check for new spine declarations and schema-2 public fields | integrator |
+| C1 | “credit” → `includes` (Lean names in Dependence, Horizon, Ranking, Substitution; record and chapter prose; zh 记入 unchanged) | integrator; on branch `batch4` (b7126563 Lean, 1bbde36d records, chapter, rename row; item 6 with it); lands with batch 4 |
+| C3 | name check for new spine declarations and schema-2 public fields | **done** a196e31e: `research.py lint` rule `market-word` (warning), `check_becoming.py` receipt key `market_names`; tests |
 | D | generativity-chain whole review | after batch 4 |
 | E | independent review of batches 1–4 | agent, after batch 4 |
 | F | schema-2 migration of the 45 records with the most lint findings | agents, after batch 4, two at a time |
