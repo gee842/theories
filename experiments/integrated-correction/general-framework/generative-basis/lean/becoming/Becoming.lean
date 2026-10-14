@@ -85,6 +85,7 @@ import Becoming.Segmentation
 import Becoming.Readout
 import Becoming.Gated
 import Becoming.Viability
+import Becoming.Countdown
 
 /-!
 # The Theory of Becoming: the formal core
@@ -804,6 +805,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   driven by admissible disturbances, given one admissible disturbance, no history ever leaves the
   guard exactly when some set containing the start lies within the guard and is closed under
   every admissible disturbance; a guarded history stops exactly where the history leaves it.
+* `Becoming.Countdown` (L2): counted work, kept properties of admitted courses and a reserved
+  exit, with no premise. An admitted course keeps a property exactly when every admitted step
+  does; work done one unit per tick for one unit of fuel finishes in `work + 1` ticks exactly
+  when the fuel covers them, and no shorter run finishes; where every admitted move stays valid
+  and takes the exit or lowers a margin by one, every admitted course longer than the margin ends
+  at the exit, a bound that is attained.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
