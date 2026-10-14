@@ -1,18 +1,35 @@
 import Becoming.Histories
 
 /-!
-# Every choice postponed until it shows (scratch prototype, not for landing)
+# Postponement: what linear tests see
 
-A frame's choices postponed: a configuration is a family of configurations, those a course of
-moves may have reached; a move goes from a family to the family of all its members' outcomes by
-that move, where some member can take it; a family realizes a claim where some member does. So
-no choice is made until what it leads to shows in a move that can be taken or a claim realized.
+`Becoming.Histories` showed that linear tests, a course of moves followed by a claim, fix
+likeness where both frames are determined up to likeness (`alike_iff_sameTests`), and that
+without this they need not: `Choosing.late` and `Choosing.early` pass the same tests and are not
+alike, the one branching after the first move and the other at it. This module says exactly what
+linear tests see. Postponing every branching until it shows, a configuration becomes the family
+of configurations a course may have reached (`Frame.postponed`): a move goes from a family to the
+family of its members' outcomes by that move, where some member can take it, and a family
+realizes a claim where some member does. No premise is added; every declaration has an empty
+axiom report.
 
-* **Linear tests are likeness with every choice postponed** (`sameTests_iff_postponed_alike`).
-* **A frame is alike to its postponement exactly where its choices make no difference up to
-  likeness** (`alike_postponed_iff_determined`).
+* **The postponed frame does not branch**: it is determined up to likeness everywhere
+  (`Frame.postponed_determinedAt`), families with the same members being alike
+  (`Frame.postponed_members`).
+* **Linear tests are likeness with every branching postponed.** Two configurations pass the same
+  linear tests exactly where, every branching postponed until it shows, they are alike
+  (`sameTests_iff_postponed_alike`); a configuration passes the tests its postponement passes
+  (`sameTests_postponed`).
+* **A frame is alike to its postponement exactly where its branchings make no difference up to
+  likeness** (`alike_postponed_iff_determined`); a configuration alike to its postponement is
+  determined up to likeness (`DeterminedAt.of_alike_postponed`).
+* **The witness.** With every branching postponed, `Choosing.late` and `Choosing.early` are alike
+  (`Choosing.postponed_alike`); `Choosing.early` is not alike to its postponement, its two
+  outcomes of the first move being unlike (`Choosing.early_not_alike_postponed`).
 
-So what linear tests do not see is exactly when choices are made.
+So what linear tests do not see is exactly where the unfolding branches. The families are
+predicates on configurations compared member by member; no quotient and no extensionality is
+used.
 -/
 
 namespace Becoming
@@ -25,7 +42,7 @@ section Postponement
 
 variable {S : Type u} {S' : Type u'} {A : Type v} {C : Type w}
 
-/-- **The frame with every choice postponed until it shows.** -/
+/-- **The frame with every branching postponed until it shows.** -/
 def Frame.postponed (F : Frame S A C) : Frame (S → Prop) A C :=
   ⟨⟨fun X a Y => (∃ s t, X s ∧ F.P.step s a t) ∧ ∀ t, Y t ↔ ∃ s, X s ∧ F.P.step s a t⟩,
    fun X c => ∃ s, X s ∧ F.realized s c⟩
@@ -47,7 +64,7 @@ theorem Frame.postponed_members (F : Frame S A C) :
                   fun mem' => match (image t).mp mem' with
                     | ⟨s, mem, step⟩ => ⟨s, (same s).mpr mem, step⟩⟩⟩⟩
 
-/-- **The postponed frame makes no choice**: it is determined up to likeness everywhere. -/
+/-- **The postponed frame does not branch**: it is determined up to likeness everywhere. -/
 theorem Frame.postponed_determinedAt (F : Frame S A C) (X : S → Prop) :
     DeterminedAt F.postponed X :=
   fun _ _ _ ⟨_, image⟩ ⟨_, image'⟩ =>
@@ -141,23 +158,23 @@ theorem sameTests_postponed_iff {F : Frame S A C} {G : Frame S' A C} {s : S} {s'
      fun as c => (F.postponed_tests_one s as c).trans
         ((claims as c).trans (G.postponed_tests_one s' as c).symm)⟩⟩
 
-/-- **Linear tests are likeness with every choice postponed**: two configurations pass the same
-tests exactly where, with every choice postponed until it shows, they are alike. -/
+/-- **Linear tests are likeness with every branching postponed**: two configurations pass the same
+tests exactly where, with every branching postponed until it shows, they are alike. -/
 theorem sameTests_iff_postponed_alike {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'} :
     SameTests F G s s' ↔ Alike F.postponed G.postponed (Eq s) (Eq s') :=
   sameTests_postponed_iff.symm.trans
     (alike_iff_sameTests F.postponed_determinedAt G.postponed_determinedAt).symm
 
-/-- A configuration alike to its postponement makes no choice that makes a difference up to
-likeness. -/
+/-- A configuration alike to its postponement is determined up to likeness: its branchings make
+no difference up to likeness. -/
 theorem DeterminedAt.of_alike_postponed {F : Frame S A C} {s : S}
     (alike : Alike F F.postponed s (Eq s)) : DeterminedAt F s :=
   fun _ _ _ step step' => match alike.step step, alike.step step' with
   | ⟨_, ⟨_, image⟩, joined⟩, ⟨_, ⟨_, image'⟩, joined'⟩ =>
-    Alike.trans joined (Alike.trans ⟨_, F.postponed_members, fun t => (image t).trans (image' t).symm⟩
-      joined'.symm)
+    Alike.trans joined
+      (Alike.trans ⟨_, F.postponed_members, fun t => (image t).trans (image' t).symm⟩ joined'.symm)
 
-/-- **A frame is alike to its postponement exactly where its choices make no difference up to
+/-- **A frame is alike to its postponement exactly where its branchings make no difference up to
 likeness.** -/
 theorem alike_postponed_iff_determined {F : Frame S A C} :
     (∀ s, Alike F F.postponed s (Eq s)) ↔ ∀ s, DeterminedAt F s :=
@@ -166,5 +183,21 @@ theorem alike_postponed_iff_determined {F : Frame S A C} :
      (sameTests_postponed F s)⟩
 
 end Postponement
+
+namespace Choosing
+
+/-- **With every branching postponed, the frame branching after the first move and the frame
+branching at it are alike.** -/
+theorem postponed_alike : Alike late.postponed early.postponed (Eq .p0) (Eq .p0) :=
+  sameTests_iff_postponed_alike.mp sameTests
+
+/-- **The frame branching at the first move is not alike to its postponement**: the two outcomes
+of its first move are unlike, one taking `b` and the other not. -/
+theorem early_not_alike_postponed : ¬ Alike early early.postponed .p0 (Eq .p0) :=
+  fun alike => match ((DeterminedAt.of_alike_postponed alike) .a .p1 .p2 .toLeft .toRight).step
+      (Early.left : early.P.step .p1 .b .p3) with
+  | ⟨_, step, _⟩ => nomatch step
+
+end Choosing
 
 end Becoming
