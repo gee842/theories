@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "census-balance",
   "title": {
     "zh": "普查的平衡",
@@ -8,15 +8,86 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-14T11:10:00+00:00",
   "statement": {
     "zh": "终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的；读于复现，它是精确的。",
     "en": "The list at the end with what ceased is the list at the start with what came; read of recurrence, it is exact."
   },
-  "claim": {
-    "zh": "一个规定每步的成立者被不重复地列出（Listed）且可判定时，跨过每一步，步后的列表长度加上跨步不再成立的成员数，等于步前的列表长度加上跨步开始成立的成员数（Listed.across）：跨步保持成立的成员在两张列表上计数相同（marks_le_of_sub）。所以任一段步上，终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的（Listed.over_stretch，由 balance_over_stretch 逐步累加）；不再成立的至多是开始成立的加上起点的列表，开始成立的至多是不再成立的加上终点的列表（Listed.ceasings_within、Listed.comings_within）。读于活动：普查之下，终点活跃的形成连同其间止息的，恰是起点活跃的连同其间生起的（Web.Census.over_stretch）；读于水平：所立者的普查之下，终点所立者连同其间不再作为条件而在的，恰是起点所立者连同其间开始作为条件而在的（Web.StandingCensus.over_stretch）。读于依存：依存的普查之下，终点的依存连同其间消解的，恰是起点的依存连同其间形成的（Web.DependenceCensus.over_stretch）。读于复现，平衡是精确的：不再成立复现，恰当从每一步起某个后来的列表短于起点的列表连同其间开始成立的（Listed.ceasing_iff_shortfall）；开始成立复现，恰当起点的列表长于某个后来的列表连同其间不再成立的（Listed.coming_iff_excess）。普查定律与有界定律由此推出（ceasing-needs-arising、bounded-census-keeps-pace）。这是 §26 有限家族定律（held_over_stretch、keep_pace）的普查形式：不要求固定的有限家族，只要求每步的列表。不用伦理前提，也不用 Lean 公理。",
-    "en": "Where the members of which a determination holds are listed at each step, each once (Listed), and the determination is decided, across each step the length of the list after it with the number of members that ceased to be across it equals the length of the list before it with the number that came to be (Listed.across): the members kept across the step are counted alike on both lists (marks_le_of_sub). So over any stretch the list at the end with what ceased between is the list at the start with what came between (Listed.over_stretch, summed step by step by balance_over_stretch); what ceases is at most what comes and the list at the start, and what comes at most what ceases and the list at the end (Listed.ceasings_within, Listed.comings_within). Read of activity: under a census, the formations active at the end with those that ceased between are those active at the start with those that arose between (Web.Census.over_stretch); read of standing: under a census of what stands, what stands at the end with what ceased to stand between is what stood at the start with what came to stand between (Web.StandingCensus.over_stretch). Read of dependence: under a census of dependences, the dependences at the end with those that dissolved between are those at the start with those that formed between (Web.DependenceCensus.over_stretch). Read of recurrence the balance is exact: ceasing to be recurs exactly when, from each step, some later list is shorter than the list at the start with what came to be between (Listed.ceasing_iff_shortfall), and coming to be recurs exactly when the list at the start is longer than some later list with what ceased to be between (Listed.coming_iff_excess). The census law and the bounded law follow from it (ceasing-needs-arising, bounded-census-keeps-pace). This is the census form of section 26's law of a finite family (held_over_stretch, keep_pace): no fixed finite family is needed, only the list at each step. No ethical premise and no Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "一个规定每步的成立者被不重复地列出且可判定时，跨过每一步，步后的列表长度加上跨步不再成立的成员数，等于步前的列表长度加上跨步开始成立的成员数：跨步保持成立的成员在两张列表上计数相同。",
+      "en": "Where the members of which a determination holds are listed at each step, each once, and the determination is decided, across each step the length of the list after it with the number of members that ceased to be across it equals the length of the list before it with the number that came to be: the members kept across the step are counted alike on both lists.",
+      "declarations": [
+        "Becoming.Listed",
+        "Becoming.Listed.across",
+        "Becoming.marks_le_of_sub"
+      ]
+    },
+    {
+      "zh": "所以任一段步上，终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的（逐步累加）；不再成立的至多是开始成立的加上起点的列表，开始成立的至多是不再成立的加上终点的列表。",
+      "en": "So over any stretch the list at the end with what ceased between is the list at the start with what came between, summed step by step; what ceases is at most what comes and the list at the start, and what comes at most what ceases and the list at the end.",
+      "declarations": [
+        "Becoming.balance_over_stretch",
+        "Becoming.Listed.over_stretch",
+        "Becoming.Listed.ceasings_within",
+        "Becoming.Listed.comings_within"
+      ]
+    },
+    {
+      "zh": "读于活动：普查之下，终点活跃的形成连同其间止息的，恰是起点活跃的连同其间生起的；读于水平：所立者的普查之下，终点所立者连同其间不再作为条件而在的，恰是起点所立者连同其间开始作为条件而在的。",
+      "en": "Read of activity: under a census, the formations active at the end with those that ceased between are those active at the start with those that arose between; read of standing: under a census of what stands, what stands at the end with what ceased to stand between is what stood at the start with what came to stand between.",
+      "declarations": [
+        "Becoming.Web.Census",
+        "Becoming.Web.Census.over_stretch",
+        "Becoming.Web.StandingCensus",
+        "Becoming.Web.StandingCensus.over_stretch"
+      ]
+    },
+    {
+      "zh": "读于依存：依存的普查之下，终点的依存连同其间消解的，恰是起点的依存连同其间形成的。",
+      "en": "Read of dependence: under a census of dependences, the dependences at the end with those that dissolved between are those at the start with those that formed between.",
+      "declarations": [
+        "Becoming.Web.DependenceCensus",
+        "Becoming.Web.DependenceCensus.over_stretch"
+      ]
+    },
+    {
+      "zh": "读于复现，平衡是精确的：不再成立复现，恰当从每一步起某个后来的列表短于起点的列表连同其间开始成立的；开始成立复现，恰当起点的列表长于某个后来的列表连同其间不再成立的。普查定律与有界定律由此推出（ceasing-needs-arising、bounded-census-keeps-pace）。",
+      "en": "Read of recurrence the balance is exact: ceasing to be recurs exactly when, from each step, some later list is shorter than the list at the start with what came to be between, and coming to be recurs exactly when the list at the start is longer than some later list with what ceased to be between. The census law and the bounded law follow from it (ceasing-needs-arising, bounded-census-keeps-pace).",
+      "declarations": [
+        "Becoming.Listed.ceasing_iff_shortfall",
+        "Becoming.Listed.coming_iff_excess"
+      ]
+    },
+    {
+      "zh": "这是有限家族定律（held_over_stretch、keep_pace，见 coming-and-ceasing-keep-pace）的普查形式：不要求固定的有限家族，只要求每步的列表。",
+      "en": "This is the census form of the law of a finite family (held_over_stretch, keep_pace, in coming-and-ceasing-keep-pace): no fixed finite family is needed, only the list at each step.",
+      "declarations": [
+        "Becoming.held_over_stretch",
+        "Becoming.keep_pace"
+      ]
+    },
+    {
+      "zh": "平衡对每个世界有局部形式，局部条件写在规律之内：一步的平衡只用该步两端的列出；一段上的平衡只用该段内每步的平衡或列出；读于活动、依存与水平亦然。原来的形式是它们的推论。",
+      "en": "The balance holds of every world in a local form, the local condition inside the law: across a step, only the listings at the step's two ends; over a stretch, only balance or the listings at each step of the stretch; and so read of activity, dependence and standing. The earlier forms are their corollaries.",
+      "declarations": [
+        "Becoming.balance_over_stretch_on",
+        "Becoming.Listed.across_at",
+        "Becoming.Listed.over_stretch_on",
+        "Becoming.Web.Census.over_stretch_on",
+        "Becoming.Web.DependenceCensus.over_stretch_on",
+        "Becoming.Web.StandingCensus.over_stretch_on"
+      ]
+    },
+    {
+      "zh": "复现读法的两个当且仅当，在成立者从某步起被列出的尾段上仍是确切的；Listed.ceasing_iff_shortfall 与 Listed.coming_iff_excess 是其推论。",
+      "en": "The two iffs of the recurrence reading stay exact on a tail from some step on at each step of which what holds is listed; Listed.ceasing_iff_shortfall and Listed.coming_iff_excess are their corollaries.",
+      "declarations": [
+        "Becoming.Listed.ceasing_iff_shortfall_from",
+        "Becoming.Listed.coming_iff_excess_from"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "列出：每步成立者被不重复地列出；成员总共可以无限多。",
@@ -27,9 +98,45 @@
       "en": "Decidability: counting needs it decided whether each member holds at adjacent steps; read of standing this holds automatically, read of activity it is decided activity, read of dependence decided dependence. It is a logical commitment of the representation."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "只对每步有限的成立者陈述。",
+      "en": "Stated for holders finitely many at each step.",
+      "kind": "scope"
+    },
+    {
+      "zh": "平衡是计数，不说哪个成员进入或离开，也不说进入与离开有因果关联。",
+      "en": "The balance is a count, saying neither which member enters or leaves nor that entering and leaving are causally linked.",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "detail": {
+        "zh": "Attrition：无穷多个形成从一开始就活跃，依次止息而没有生起；没有列出，止息比生起多出的没有界，所以比率要求列出。Accretion：有列出而无界，生起比止息多出的随终点的数目无界增长，所以生起一侧的界是终点的数目，不是常数。",
+        "en": "Attrition: infinitely many formations active from the start cease one after another while nothing arises; with no listing, ceasings exceed comings without bound, so the rates need the listing. Accretion: listed but unbounded, comings exceed ceasings by the count at the end, which grows without bound, so the bound on comings is the count at the end, not a constant."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "decidability",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z，含本记录的局部规律；Dependence、Generation 由 20261014T091930.724493Z 绑定；外围 20261013T095049.338744Z 通过）：Becoming.Population、Becoming.Openness 与 Becoming.Locality 的定理公理报告为空，检查器并核对核心纯净。作者反审见整合文档两节；第十一次独立审查接受其数学，更正见整合文档，未再经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z, with this record's local laws; Dependence and Generation bound by 20261014T091930.724493Z; periphery 20261013T095049.338744Z passed): the theorems of Becoming.Population, Becoming.Openness and Becoming.Locality have empty axiom reports, and the checker verifies core purity. Author counterreview in two sections of the integration note; the eleventh independent review accepts the mathematics; its corrections, handled in the integration note, are not yet independently reviewed."
+  },
+  "next_delta": {
+    "zh": "名称由 Ren 选定。",
+    "en": "Ren's choice of names."
+  },
   "correspondence": {
-    "zh": "§26 的 held_over_stretch 对一个固定的有限家族成立；关系项无限多时没有这样的家族。本结果说明只要每步的成立者有限且被列出，同样的平衡成立，而且给出比率：在任一段步上，止息比生起多出的不超过起点的计数，生起比止息多出的不超过终点的计数。P26 与 P27 的复现定律由它推出：止息不断而生起停止会使计数无穷地下降；计数回到界内时，生起不断而止息停止会使计数越过界。P30 之前它们直接用列表的长短证明，与平衡是两条路线；现在只有经过平衡的一条（P30）。作者的读法（AI 论证）：在每步有限的展开中，进入与离开在每一步上精确相抵，差额只是在场者的数目。这是活动、水平与任何规定的读法，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠；若取不重叠，这一读法就不是其所指，这是 AI 的推论）；它也不评价生起或止息。",
-    "en": "Section 26's held_over_stretch holds of one fixed finite family; with infinitely many relata there is no such family. This result shows that wherever the holders at each step are finitely many and listed, the same balance holds, and it gives rates: over any stretch, ceasings exceed comings by at most the count at the start, and comings exceed ceasings by at most the count at the end. The recurrence laws of P26 and P27 follow from it: endless ceasing with arising stopped would lower the count without end, and with the count returning within a bound endless arising with ceasing stopped would carry it past the bound. Before P30 they were proved from the lengths of the lists directly, a second route beside the balance; now there is one route, through the balance (P30). The author's reading (an AI argument): in an unfolding finite at each step, entering and leaving cancel exactly at each step, the difference being only the number present. This is a reading of activity, standing and any determination, arising and ceasing being names Ren confirmed (2026-10-09-arising-ceasing-names); whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap; if non-overlap is taken, this reading is not what is meant, the AI's inference). It evaluates neither arising nor ceasing."
+    "zh": "有限家族的定律（coming-and-ceasing-keep-pace 的 held_over_stretch）对一个固定的有限家族成立；关系项无限多时没有这样的家族。只要每步的成立者有限且被列出，同样的平衡成立，并有比率：任一段步上，止息比生起多出的不超过起点的计数，生起比止息多出的不超过终点的计数。普查定律与有界定律由它推出：止息不断而生起停止会使计数无穷地下降；计数回到界内时，生起不断而止息停止会使计数越过界。作者的读法（AI 论证）：在每步有限的展开中，进入与离开在每一步上精确相抵，差额只是在场者的数目。这是活动、水平与任何规定的读法；英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠；若取不重叠，这一读法就不是其所指，这是 AI 的推论）。",
+    "en": "The finite-family law (held_over_stretch in coming-and-ceasing-keep-pace) holds of one fixed finite family; with infinitely many relata there is no such family. Wherever holders at each step are finitely many and listed, the same balance holds, with rates: over any stretch ceasings exceed comings by at most the count at the start, comings ceasings by at most the count at the end. The census and bounded laws follow from it: endless ceasing with arising stopped would lower the count without end, and with the count returning within a bound endless arising with ceasing stopped would carry it past the bound. The author's reading (an AI argument): in an unfolding finite at each step, entering and leaving cancel exactly at each step, the difference being only the number present. It reads activity, standing, any determination; arising and ceasing are names Ren confirmed (2026-10-09-arising-ceasing-names); whether this reading is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap; if non-overlap is taken, this reading is not what is meant, the AI's inference)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
   "aliases": [
@@ -146,23 +253,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
-      "detail": {
-        "zh": "Attrition：无穷多个形成从一开始就活跃，依次止息而没有生起；没有列出，止息比生起多出的没有界，所以比率要求列出。Accretion：有列出而无界，生起比止息多出的随终点的数目无界增长，所以生起一侧的界是终点的数目，不是常数。",
-        "en": "Attrition: infinitely many formations active from the start cease one after another while nothing arises; with no listing, ceasings exceed comings without bound, so the rates need the listing. Accretion: listed but unbounded, comings exceed ceasings by the count at the end, which grows without bound, so the bound on comings is the count at the end, not a constant."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "只对离散步与每步有限的成立者陈述；要求可判定（逻辑承诺）；平衡是计数，不说哪个成员进入或离开，也不说进入与离开有因果关联；不评价生起或止息；名称由 Ren 定。",
-    "en": "Stated for discrete steps and holders finitely many at each step; needs decidability (a logical commitment); the balance is a count, saying neither which member enters or leaves nor that entering and leaving are causally linked; evaluates neither arising nor ceasing; names are Ren's to choose."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Population 的 130 项定理（P28 新增 mark_one、mark_zero、mark_add_not、total_congr_on、mem_insert、distinct_remove、marks_le_of_sub、balance_over_stretch、Listed.across、Listed.over_stretch、Listed.ceasings_within、Listed.comings_within、Web.Census.over_stretch 与依存的读法；P30 新增 Listed.ceasing_iff_shortfall、Listed.coming_iff_excess 与 Web.DependenceCensus.over_stretch）与 Becoming.Openness 的 85 项定理（P28 新增 Web.StandingCensus.over_stretch）全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。作者反审见整合文档 §37 与 §40，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。Becoming.Locality 的 44 项定理亦空依赖（P48）。本记录的局部规律（P50）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 130 theorems of Becoming.Population (new in P28: mark_one, mark_zero, mark_add_not, total_congr_on, mem_insert, distinct_remove, marks_le_of_sub, balance_over_stretch, Listed.across, Listed.over_stretch, Listed.ceasings_within, Listed.comings_within, Web.Census.over_stretch and the reading of dependence; new in P30: Listed.ceasing_iff_shortfall, Listed.coming_iff_excess and Web.DependenceCensus.over_stretch) and the 85 theorems of Becoming.Openness (Web.StandingCensus.over_stretch new in P28) all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The author's counterreview is in §37 and §40 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed. The 44 theorems of Becoming.Locality (P48) also have empty axiom reports. This record's local laws (P50) are in the same receipt, with empty axiom reports."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
@@ -366,10 +456,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 balance_over_stretch_on、Listed.across_at、Listed.over_stretch_on、Listed.ceasing_iff_shortfall_from、Listed.coming_iff_excess_from、Web.Census.over_stretch_on、Web.DependenceCensus.over_stretch_on、Web.StandingCensus.over_stretch_on（P50），局部条件写在规律之内：一段之内每步平衡，或所成立者只在一步两端、一段各步或某步以后各步被列出；复现读法的两个当且仅当在列出的尾段上仍是确切的；balance_over_stretch、Listed.across、Listed.over_stretch、Listed.ceasing_iff_shortfall、Listed.coming_iff_excess、Web.Census.over_stretch、Web.DependenceCensus.over_stretch、Web.StandingCensus.over_stretch是它们的推论；名称（Ren）。复现定律由平衡推出（两条路线合一）与平衡读于依存已在 P30 给出。",
-    "en": "The exact restatement for every world is this record's balance_over_stretch_on, Listed.across_at, Listed.over_stretch_on, Listed.ceasing_iff_shortfall_from, Listed.coming_iff_excess_from, Web.Census.over_stretch_on, Web.DependenceCensus.over_stretch_on, Web.StandingCensus.over_stretch_on (P50), the local condition inside the law: balance across each step of the stretch, or what holds listed only at the step's two ends, at each step of the stretch, or at each step from some step on; the two iffs of the recurrence reading stay exact on a listed tail; balance_over_stretch, Listed.across, Listed.over_stretch, Listed.ceasing_iff_shortfall, Listed.coming_iff_excess, Web.Census.over_stretch, Web.DependenceCensus.over_stretch, Web.StandingCensus.over_stretch are their corollaries; names (Ren). Deriving the recurrence laws from the balance, so that the two routes are one, and the balance read of dependence are given in P30."
-  },
   "history": [
     {
       "zh": "2026-10-09：作为整合计划 P28 新增，按 Ren“aim a complete theory of becoming, and finish related work”；回答 bounded-census-keeps-pace 与 ceasing-needs-arising 的下一步“带比率的版本”；见整合文档 §37。",
@@ -634,6 +720,20 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划 F 流：lint 发现最多的 schema 1 记录）：主张拆为 8 条规律并写出其声明；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。下一步中的局部重述（P50）改为规律 7 与 8；“由平衡推出复现定律（两条路线合一）与平衡读于依存已在 P30 给出”及对应中 P30 之前另有列表长短一路的说明留在这里与快照中。主张与对应中 §26 的有限家族定律、P26 与 P27 的复现定律以其记录指称（coming-and-ceasing-keep-pace、ceasing-needs-arising、bounded-census-keeps-pace）。证据段中逐轮新增的定理名单与计数留在回执与快照中，作者反审所在两节是整合文档 §37 与 §40，独立审查的更正在 §42。每句旧文本的去向见迁移对照表 [census-balance.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/census-balance.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan, stream F: the schema-1 records with the most lint findings): the claim became eight laws with their declarations; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The local restatement in the next step (P50) became laws 7 and 8; that deriving the recurrence laws from the balance (one route) and the dependence reading came in P30, and the correspondence's note that before P30 they were proved from the lengths of the lists, stay here and in the snapshot. In the claim and correspondence, section 26's law of a finite family and the recurrence laws of P26 and P27 are named by their records (coming-and-ceasing-keep-pace, ceasing-needs-arising, bounded-census-keeps-pace). The per-round lists of new theorems and counts in the evidence stay in the receipt and the snapshot; the two sections of the author's counterreview are §37 and §40 of the integration note, the independent review's corrections §42. Every earlier sentence is mapped in the migration table [census-balance.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/census-balance.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/c738317088d54539/census-balance.json",
+      "sha256": "c738317088d545394fb9246bfa472d5c1e6cdc41ca6e274ae0258ee64677703a",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
