@@ -662,8 +662,8 @@
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#one-relation-for-content-and-continuation"
     },
     {
-      "en": "Alternative action: records, warranted laws and generated responses are distinguished; static accounts keeping the relations earn equal credit, and a record class missing actual laws cannot refute the full theory.",
-      "zh": "替代行动：区别实际记录、有根据的规律与由其生成的回应，保留关系的静态说明得到同等信用；未保留一切实际规律的记录类不能据此否定完整理论。",
+      "en": "Alternative action: records, warranted laws and generated responses are distinguished; static accounts keeping the relations stand equally, and a record class missing actual laws cannot refute the full theory.",
+      "zh": "替代行动：区别实际记录、有根据的规律与由其生成的回应，保留关系的静态说明具有同等地位；未保留一切实际规律的记录类不能据此否定完整理论。",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#static-description-and-warranted-alternatives"
     },
     {
@@ -1553,6 +1553,10 @@
     {
       "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2, starting from the readability draft. The target becomes the statement. The limitations (4,834 characters), the section-by-section correspondence (sections 15–31) and the section-by-section evidence (5,529 characters of receipt matching) become sixteen progress lines with anchored study links, six not-required items, nine does-not-show items, two shared boundaries, a shorter correspondence and one evidence paragraph. Kept here and in the snapshot rather than in public text: section and round labels (P75, P76, P83, P89, P91, P93, P99, P103, P53/P68/P80, P69), receipt timestamps and per-section audit counts, the earlier next step’s instruction not to rebuild the common operational factor and joint content/step preservation, and the remark that the three non-statistical branches are no longer left unaddressed. The third counterexample drops its section labels. No premise, status, dependency, related entry, reference, proof binding or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md); the exact earlier record is text_versions[0].",
       "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2，以可读性草案为起点。目标成为陈述。限制（4,834 字符）、逐节对应（第15–31节）与逐节证据（5,529 字符的回执核对）改为十六行带锚点研究链接的“已接通”、六项“不要求”、九项“未表明”、两项通用边界、较短的对应与一段证据。以下保留于本沿革与快照而不入公开字段：章节与轮次标记（P75、P76、P83、P89、P91、P93、P99、P103、P53/P68/P80、P69）、回执时间戳与逐节审计计数、原下一步中“共同操作因子及内容／步骤同一关系保留已接通、不再重建”的指示，以及“三个非统计分支不再列为未处理”的说明。第三个反例去掉章节标记。前提、状态、依赖、相关条目、引用、证明绑定及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md)；迁移前的完整记录为 text_versions[0]。"
+    },
+    {
+      "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
+      "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
     }
   ],
   "text_versions": [

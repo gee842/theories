@@ -151,7 +151,7 @@ class MarketWordTests(unittest.TestCase):
         self.assertEqual(self.found(v1_record(claim={'en': 'The reading credits each event.', 'zh': '记入。'})), [])
         self.assertEqual(self.found(v2_record(validation_scope={'en': 'Paid receipts.', 'zh': '回执。'})), [])
         r = v2_record(statement={'en': "The counting form of Price's equation; credit assignment; the full account.",
-                                 'zh': '生成本身承担要求。'})
+                                 'zh': '生成本身承担要求；形成本身；完成本目标。'})
         self.assertEqual(self.found(r), [])
 
     def test_checker_uses_the_same_words(self):

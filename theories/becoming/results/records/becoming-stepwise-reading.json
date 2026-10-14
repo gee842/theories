@@ -15,7 +15,7 @@
   },
   "claim": {
     "zh": "在依存网上，一个事件（形成，步）在更新之内，当它活跃，且该步维持它所参与的每个条件上的每个依存。整段运行的更新使每个活跃步都在更新之内；断裂所参与条件上依存的步不在更新之内；一个形成可以在自己的每个活跃步都在更新之内而整段不更新。一个形成对某条件的关系在某步侵蚀，当它在该步汲取该条件，而该步之后，条件既低于一个依存现在的所需，也低于该依存在不间断成立期间的某步曾被满足的所需；在断裂某个依存之步汲取（断裂）是侵蚀的一种，在更新之内的事件既不侵蚀也不断裂。以“活跃且不侵蚀”为 living、以各自步上共同参与某一条件为 related：被断裂者在断裂之步不在更新之内，但不侵蚀，所以被记入；损失之后继续的汲取不再断裂任何依存，却侵蚀，而同样的第一步之后若不再取（动作为 0），条件回到；在依存成立期间从未以其所需被满足的依存不使任何事件侵蚀，所需下降时也如此；只低于增长到从未被满足的所需，不算侵蚀；所需增长之后，把水平取到曾被满足的所需之下的汲取侵蚀而不断裂；依存中断一步即开始新的一段。侵蚀读的是共同参与一个未恢复的短缺，不是汲取的效果：在外来崩塌之后，一个不改变任何水平的汲取者也侵蚀。整段读法与这一读法两个方向都有分歧：先在更新之内汲取、后来超出的形成，整段记为消耗，第一个事件逐步被记入；先超出一次、条件随后恢复的形成，整段不记为消耗，断裂之步的事件逐步不被记入；两种读法都记入被断裂者在断裂之步的事件。每个活的事件都参与的条件使整体连通，于是 G0 恰等于种子加 N_rel 加 N_std；在断裂之步汲取的事件不是活的，并与被断裂形成参与该条件的每个事件相关，在 N_rel 下珍视它的立场必珍视那些活的事件。关系层读法以（形成，条件，步）为主张，活的关系是活跃、参与且不侵蚀；一个事件的逐步读法恰是它所参与关系的读法的合取，同一事件可以有一个活的关系和一个侵蚀的关系。依存不变时整段与逐步读法的 related 相同。",
-    "en": "On a web of dependence, an event (formation, step) is within renewal when it is active and its step keeps every dependence on every condition it participates in. Whole-run renewal credits every active step; a step breaking a dependence on a condition the event participates in is not within renewal; a formation can be within renewal at each of its own active steps without renewing in the run. A formation's relation to a condition undermines at a step when it draws on the condition at that step and, after the step, the condition is below both the present need of a dependence on it and a need that dependence met at some step of its unbroken tenure; drawing at a step that breaks a dependence (breaking) is a case of undermining, and an event within renewal neither undermines nor breaks. Taking “active and not undermining” as `living` and participation in a common condition at the events' steps as `related`: the broken formation is not within renewal at the breaking step but does not undermine, so it is credited; drawing after a loss breaks nothing further yet undermines, while with the same first step and nothing further taken (action 0) the condition returns; a requirement never met at its own need while it held makes no event undermine, also when the need falls; falling short only of a need grown beyond anything met does not undermine, while after a need has grown a draw taking the level below a need that was met undermines without breaking; and a dependence that lapses for a step starts a new tenure. Undermining reads co-participation in an unrestored shortfall, not what a draw does: after an exogenous collapse, a drawer that changes no level undermines too. The whole-run reading and this one differ in both directions: a formation drawing within renewal at first and beyond it later is consuming on the whole-run reading while its first event is credited stepwise; a formation that draws beyond renewal once while the condition later returns is not consuming on the whole-run reading while its event at the breaking step is not credited stepwise; both credit the broken formation's event at the breaking step. A condition in which every living event participates makes the whole connected, so G0 is exactly a seed with N_rel and N_std; an event drawing at a breaking step is not living and is related to every event of the broken formation participating in that condition, so under N_rel a standpoint valuing it holds those living events significant. A relation-level reading takes (formation, condition, step) as claims, a living relation being active, participating and not undermining; an event's stepwise reading is exactly the conjunction over the relations it takes part in, and one event can have a living and an undermining relation. With constant dependence the whole-run and stepwise readings have the same `related`."
+    "en": "On a web of dependence, an event (formation, step) is within renewal when it is active and its step keeps every dependence on every condition it participates in. Whole-run renewal includes every active step; a step breaking a dependence on a condition the event participates in is not within renewal; a formation can be within renewal at each of its own active steps without renewing in the run. A formation's relation to a condition undermines at a step when it draws on the condition at that step and, after the step, the condition is below both the present need of a dependence on it and a need that dependence met at some step of its unbroken tenure; drawing at a step that breaks a dependence (breaking) is a case of undermining, and an event within renewal neither undermines nor breaks. Taking “active and not undermining” as `living` and participation in a common condition at the events' steps as `related`: the broken formation is not within renewal at the breaking step but does not undermine, so it is included; drawing after a loss breaks nothing further yet undermines, while with the same first step and nothing further taken (action 0) the condition returns; a requirement never met at its own need while it held makes no event undermine, also when the need falls; falling short only of a need grown beyond anything met does not undermine, while after a need has grown a draw taking the level below a need that was met undermines without breaking; and a dependence that lapses for a step starts a new tenure. Undermining reads co-participation in an unrestored shortfall, not what a draw does: after an exogenous collapse, a drawer that changes no level undermines too. The whole-run reading and this one differ in both directions: a formation drawing within renewal at first and beyond it later is consuming on the whole-run reading while its first event is included stepwise; a formation that draws beyond renewal once while the condition later returns is not consuming on the whole-run reading while its event at the breaking step is not included stepwise; both include the broken formation's event at the breaking step. A condition in which every living event participates makes the whole connected, so G0 is exactly a seed with N_rel and N_std; an event drawing at a breaking step is not living and is related to every event of the broken formation participating in that condition, so under N_rel a standpoint valuing it holds those living events significant. A relation-level reading takes (formation, condition, step) as claims, a living relation being active, participating and not undermining; an event's stepwise reading is exactly the conjunction over the relations it takes part in, and one event can have a living and an undermining relation. With constant dependence the whole-run and stepwise readings have the same `related`."
   },
   "hypotheses": [
     {
@@ -36,14 +36,14 @@
     }
   ],
   "correspondence": {
-    "zh": "逐步读法读的是事件所处的关系，不是它的因果贡献。整段读法问形成在整段运行中是否消耗；逐步的更新分类问事件之步是否维持其条件；逐步的 living 问事件是否在这样一步汲取：之后一个依存不被满足，而它在不间断成立期间曾以不小于现在的所需被满足。逐步 living 先后有三个候选（在更新之内、不断裂、不侵蚀），每个都保留在核心中：前两个连同使它不被采用的见证，第三个“不侵蚀”是待 Ren 选择的工作候选，连同它的代价（整合文档 §7、§11、§12）。以哪一种或哪种组合作为生生的读法，是 Ren 方向内的选择，本结果不替 Ren 作出（整合文档 §8.5）。",
-    "en": "The stepwise reading reads the relations an event stands in, not its causal contribution. The whole-run reading asks whether a formation consumes over the run; the stepwise classification asks whether an event's step keeps its conditions; stepwise living asks whether an event draws at a step after which a dependence is unmet that was met, during its unbroken tenure, at a need no smaller than the present one. Stepwise living had three candidates in turn (within renewal, not breaking, not undermining), each kept on the core: the first two with the witness that sets them aside, the third, “not undermining”, as the working candidate pending Ren's choice, with its cost (integration note §§7, 11, 12). Which reading, or combination, is the reading of 生生 is a choice within Ren's direction that this result does not make on Ren's behalf (integration note §8.5)."
+    "zh": "逐步读法读的是事件所处的关系，不是它的因果贡献。整段读法问形成在整段运行中是否消耗；逐步的更新分类问事件之步是否维持其条件；逐步的 living 问事件是否在这样一步汲取：之后一个依存不被满足，而它在不间断成立期间曾以不小于现在的所需被满足。逐步 living 先后有三个候选（在更新之内、不断裂、不侵蚀），每个都保留在核心中：前两个连同使它不被采用的见证，第三个“不侵蚀”是待 Ren 选择的工作候选，连同它所放弃的（整合文档 §7、§11、§12）。以哪一种或哪种组合作为生生的读法，是 Ren 方向内的选择，本结果不替 Ren 作出（整合文档 §8.5）。",
+    "en": "The stepwise reading reads the relations an event stands in, not its causal contribution. The whole-run reading asks whether a formation consumes over the run; the stepwise classification asks whether an event's step keeps its conditions; stepwise living asks whether an event draws at a step after which a dependence is unmet that was met, during its unbroken tenure, at a need no smaller than the present one. Stepwise living had three candidates in turn (within renewal, not breaking, not undermining), each kept on the core: the first two with the witness that sets them aside, the third, “not undermining”, as the working candidate pending Ren's choice, with what it gives up (integration note §§7, 11, 12). Which reading, or combination, is the reading of 生生 is a choice within Ren's direction that this result does not make on Ren's behalf (integration note §8.5)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
   "aliases": [
     "Becoming.Web.renewing_at_active",
     "Becoming.Web.not_renewing_at_of_broken",
-    "Becoming.Renewable.stepwise_credits_before_escalation",
+    "Becoming.Renewable.stepwise_includes_before_escalation",
     "Becoming.Renewable.dip_breaks_without_consuming",
     "Becoming.Dip.renewing_at_each_step_not_in_run",
     "Becoming.Web.connected_of_common",
@@ -143,7 +143,7 @@
       "id": "relational-renewal-classification",
       "detail": {
         "zh": "该结果已示“起于更新之内的加码可以消耗”；本结果说明逐步读法仍记入加码之前的事件。差别制造归属与周期层面的更新由 joint-difference-making 与 becoming-return-grades 承接。",
-        "en": "That result shows that escalation beginning within renewal can consume; this one shows that the stepwise reading still credits the events before escalation. Difference-making attribution and cycle-level renewal are taken up by joint-difference-making and becoming-return-grades."
+        "en": "That result shows that escalation beginning within renewal can consume; this one shows that the stepwise reading still includes the events before escalation. Difference-making attribution and cycle-level renewal are taken up by joint-difference-making and becoming-return-grades."
       }
     },
     {
@@ -156,8 +156,8 @@
     {
       "id": "becoming-finite-horizon",
       "detail": {
-        "zh": "事件层面的逐步读法由有限的历史决定，所以在条件还满足依存时，它记入渐进耗竭的事件；该结果说明任何由有限前缀决定、并记入每次整段更新运行的读法都如此，而按数量的读法以不记入每次整段更新运行为代价避开它。",
-        "en": "The event-level stepwise reading is fixed by a finite history, so it credits the events of a gradual depletion while the condition still meets dependence; that result shows every reading fixed by a finite prefix that credits every whole-run-renewing run does, while an amount reading avoids this at the price of not crediting every such run."
+        "zh": "事件层面的逐步读法由有限的历史决定，所以在条件还满足依存时，它记入渐进耗竭的事件；该结果说明任何由有限前缀决定、并记入每次整段更新运行的读法都如此，而按数量的读法避开它，但不记入每次整段更新运行。",
+        "en": "The event-level stepwise reading is fixed by a finite history, so it includes the events of a gradual depletion while the condition still meets dependence; that result shows every reading fixed by a finite prefix that includes every whole-run-renewing run does, while an amount reading avoids this but does not include every such run."
       }
     },
     {
@@ -170,8 +170,8 @@
     {
       "id": "condition-correspondence-discipline",
       "detail": {
-        "zh": "该结果给出一条条件的对应纪律：只有交互才经由条件相关；惰性条件不再免费连通，在声明的类中连通仍成立。",
-        "en": "That result states a correspondence discipline for conditions: only interaction relates through a condition; idle conditions no longer connect for free, and connection holds for a declared class."
+        "zh": "该结果给出一条条件的对应纪律：只有交互才经由条件相关；惰性条件不再无需交互即连通，在声明的类中连通仍成立。",
+        "en": "That result states a correspondence discipline for conditions: only interaction relates through a condition; idle conditions no longer connect without interaction, and connection holds for a declared class."
       }
     },
     {
@@ -184,15 +184,15 @@
     {
       "id": "substitution-preserves-consumption",
       "detail": {
-        "zh": "逐步读法在维持者失去支持之前记入替代的消耗者，自那一步起到它转向替代条件为止扣下它：在 extracting 中是一步（Substitution.stepwise_credits_substitution），在 slow 中第 2、3 步都被扣下（Substitution.slow_withheld_two_steps）。",
-        "en": "The stepwise reading credits the substituting consumer before the sustaining formation loses support and withholds it from that step until it switches to the alternative: one step in extracting (Substitution.stepwise_credits_substitution), steps 2 and 3 in slow (Substitution.slow_withheld_two_steps)."
+        "zh": "逐步读法在维持者失去支持之前记入替代的消耗者，自那一步起到它转向替代条件为止扣下它：在 extracting 中是一步（Substitution.stepwise_includes_substitution），在 slow 中第 2、3 步都被扣下（Substitution.slow_withheld_two_steps）。",
+        "en": "The stepwise reading includes the substituting consumer before the sustaining formation loses support and withholds it from that step until it switches to the alternative: one step in extracting (Substitution.stepwise_includes_substitution), steps 2 and 3 in slow (Substitution.slow_withheld_two_steps)."
       }
     },
     {
       "id": "unceasing-generation-needs-renewal",
       "detail": {
         "zh": "逐步读法扣下振荡者（一个不息地再生起的形成）的每一次生起（Oscillation.readings），两步周期的读法记入它：“不损”的读法与继续生成分离。",
-        "en": "The stepwise reading withholds each arising of the oscillator, a formation that arises again and again (Oscillation.readings), while the reading over cycles of two credits it: the “no harm” readings and further generation come apart."
+        "en": "The stepwise reading withholds each arising of the oscillator, a formation that arises again and again (Oscillation.readings), while the reading over cycles of two includes it: the “no harm” readings and further generation come apart."
       }
     }
   ],
@@ -200,8 +200,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "detail": {
-        "zh": "两个方向的分歧（Renewable.stepwise_credits_before_escalation、Renewable.dip_breaks_without_consuming）与 Dip.renewing_at_each_step_not_in_run：逐步读法不是整段读法的细化，整段更新也不是自身各步的合取。",
-        "en": "Divergence in both directions (Renewable.stepwise_credits_before_escalation, Renewable.dip_breaks_without_consuming) and Dip.renewing_at_each_step_not_in_run: the stepwise reading does not refine the whole-run reading, and whole-run renewal is not the conjunction of a formation's steps."
+        "zh": "两个方向的分歧（Renewable.stepwise_includes_before_escalation、Renewable.dip_breaks_without_consuming）与 Dip.renewing_at_each_step_not_in_run：逐步读法不是整段读法的细化，整段更新也不是自身各步的合取。",
+        "en": "Divergence in both directions (Renewable.stepwise_includes_before_escalation, Renewable.dip_breaks_without_consuming) and Dip.renewing_at_each_step_not_in_run: the stepwise reading does not refine the whole-run reading, and whole-run renewal is not the conjunction of a formation's steps."
       }
     },
     {
@@ -215,14 +215,14 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "detail": {
         "zh": "“不断裂”（审查 Q12）不作为 living：损失之后继续的汲取不再断裂任何依存，于是被它记入，虽然在 Renewable 见证中它使条件回不来（Renewable.drawing_after_loss）。",
-        "en": "“Not breaking” (review Q12) is not taken as living: drawing after a loss breaks no further dependence and so is credited by it, though in the `Renewable` witness it keeps the condition from returning (Renewable.drawing_after_loss)."
+        "en": "“Not breaking” (review Q12) is not taken as living: drawing after a loss breaks no further dependence and so is included by it, though in the `Renewable` witness it keeps the condition from returning (Renewable.drawing_after_loss)."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "detail": {
-        "zh": "“不侵蚀”的代价：draws 不带数量，侵蚀也不涉及汲取的效果，所以在一个曾被满足而尚未恢复的依存之下，任何汲取都被扣下，哪怕取得很少；事件层面的逐步读法由有限的历史决定，所以记入渐进耗竭在越过阈值之前的事件（becoming-finite-horizon）。周期读法见 becoming-return-grades。",
-        "en": "The cost of “not undermining”: draws carries no amount and undermining does not ask what a draw does, so under a dependence once met and not yet restored any draw is withheld, however small; and being fixed by a finite history, the event-level reading credits the events of a gradual depletion before the threshold (becoming-finite-horizon). Cycle readings are in becoming-return-grades."
+        "zh": "“不侵蚀”所放弃的：draws 不带数量，侵蚀也不涉及汲取的效果，所以在一个曾被满足而尚未恢复的依存之下，任何汲取都被扣下，哪怕取得很少；事件层面的逐步读法由有限的历史决定，所以记入渐进耗竭在越过阈值之前的事件（becoming-finite-horizon）。周期读法见 becoming-return-grades。",
+        "en": "What “not undermining” gives up: draws carries no amount and undermining does not ask what a draw does, so under a dependence once met and not yet restored any draw is withheld, however small; and being fixed by a finite history, the event-level reading includes the events of a gradual depletion before the threshold (becoming-finite-horizon). Cycle readings are in becoming-return-grades."
       }
     },
     {
@@ -284,8 +284,8 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
       "detail": {
-        "zh": "第三次独立审查：P8、P9 与 P7b 的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法的代价、节制、替代、交互与剩余的免费连通上强于 Lean（已更正，整合文档 §12）。",
-        "en": "Third independent review: every P8, P9 and P7b declaration is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on the stepwise cost, restraint, substitution, interaction and the residual free connection (corrected, integration note §12)."
+        "zh": "第三次独立审查：P8、P9 与 P7b 的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法所放弃的、节制、替代、交互与剩余的无需实际汲取的连通上强于 Lean（已更正，整合文档 §12）。",
+        "en": "Third independent review: every P8, P9 and P7b declaration is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on what the stepwise reading gives up, restraint, substitution, interaction and the remaining connection that needs no actual drawing (corrected, integration note §12)."
       }
     },
     {
@@ -342,7 +342,7 @@
         "Becoming.Web.renewing_at_active",
         "Becoming.Web.not_renewing_at_of_broken",
         "Becoming.Renewable.escalating",
-        "Becoming.Renewable.stepwise_credits_before_escalation",
+        "Becoming.Renewable.stepwise_includes_before_escalation",
         "Becoming.Renewable.dipping",
         "Becoming.Renewable.dip_breaks_without_consuming",
         "Becoming.Dip.web",
@@ -806,6 +806,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "en": "Open-issues plan item 15 (Ren chose “includes”): a reading now includes an event, where it was said to credit it, a market word; the Lean names follow (old and new in the unification plan §10); zh 记入 unchanged. Item 17: other market words in this record (cost, price, free) replaced by structural ones; the meaning is unchanged.",
+      "zh": "开放问题计划第 15 项（Ren 选定 includes）：读法“记入”事件的英文由市场词 credit 改为 include，Lean 名随之更改（新旧对照见统一计划 §10）；中文“记入”不变。第 17 项：本记录中的其他市场词（代价、免费等）改为结构词，意思不变。"
     }
   ]
 }

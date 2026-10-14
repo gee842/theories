@@ -146,8 +146,8 @@
     "en": "Lean 4.29.1 check passed: 35 theorems / 60 declaration audits, every axiom set empty; 4 compiled application examples. The shared receipt also checks RenewalComparison (credited to relational-reading-comparison). The general laws and instance theorems connecting this result to the spine (Becoming.Continuation, bridge module Becoming.RenewalBridge) are checked in consolidated receipt 20261013T221720.428753Z with empty axiom reports. Author counterreview; no independent-agent review."
   },
   "next_delta": {
-    "zh": "在 becoming-return-grades、substitution-preserves-consumption 与 joint-difference-making 已承接的周期层面更新、条件间替代与共同消耗中的差别制造之外：多条件下的替代链与代价；更精细的归属；为具体案例建立经验对应。",
-    "en": "Beyond the cycle-level renewal, substitution between conditions and difference-making within joint consumption taken up by becoming-return-grades, substitution-preserves-consumption and joint-difference-making: chains of substitution and their costs across several conditions; finer attribution; empirical correspondence for particular cases."
+    "zh": "在 becoming-return-grades、substitution-preserves-consumption 与 joint-difference-making 已承接的周期层面更新、条件间替代与共同消耗中的差别制造之外：多条件下的替代链及其损失；更精细的归属；为具体案例建立经验对应。",
+    "en": "Beyond the cycle-level renewal, substitution between conditions and difference-making within joint consumption taken up by becoming-return-grades, substitution-preserves-consumption and joint-difference-making: chains of substitution and their losses across several conditions; finer attribution; empirical correspondence for particular cases."
   },
   "correspondence": {
     "zh": "形成、条件与依存是同一展开中分化的方面，不是交换资源的所有者。把规律族读作恶性增长、升级竞赛或以消耗取胜属于解释；实际案例须为其依存、支持水平与速率取得证据。`formed` 计数新组织单位，不是复杂度量。其伦理意义不是 G0 之外另欠的工作：G0 的对象是生生，本分类描述的正是生生（这是 Ren 的更正，此处为 AI 的转述；Ren 问：“为什么？我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，见所引来源）；消耗与其不发生在 C 下的比较，见另一记录 relational-reading-comparison。",
@@ -177,8 +177,8 @@
     {
       "id": "renewing-consuming-formation",
       "detail": {
-        "en": "Narrower law-class result proved independently the same day: under a supplied wear law it bounds total formation by stock plus a triangular renewal budget, shows the local first-step reversal and gives a G0 event-reading interface. Here irreversibility is derived from the renewer's dependence rather than assumed, the classification is general, and externalizing consumption is covered. No import either way.",
-        "zh": "同日独立证明的较窄规律类结果：在给定磨损规律下以所持条件加三角更新预算界定总形成量，给出第一步局部反转及 G0 逐事件接口。本结果的不可逆由更新者的依存推出而非假定，分类是一般的，并覆盖外部化消耗。互不导入。"
+        "en": "Narrower law-class result proved independently the same day: under a supplied wear law it bounds total formation by stock plus a triangular renewal bound, shows the local first-step reversal and gives a G0 event-reading interface. Here irreversibility is derived from the renewer's dependence rather than assumed, the classification is general, and externalizing consumption is covered. No import either way.",
+        "zh": "同日独立证明的较窄规律类结果：在给定磨损规律下以所持条件加三角更新量界定总形成量，给出第一步局部反转及 G0 逐事件接口。本结果的不可逆由更新者的依存推出而非假定，分类是一般的，并覆盖外部化消耗。互不导入。"
       }
     },
     {
@@ -363,6 +363,10 @@
     {
       "zh": "2026-10-14，开放问题计划第7项：对应中“G0 的对象是生生”原未注明出处；它是 Ren 的更正（2026-10-09，来源 renewing-consuming-without-axioms 的 Ren 追问），此处标明为 AI 的转述并照录 Ren 原话。",
       "en": "14 October 2026, open-issues plan item 7: \"G0's object is 生生\" in the correspondence was unattributed; it is Ren's correction (9 October 2026, Ren's follow-up in the source renewing-consuming-without-axioms), now marked as the AI's wording with Ren's words quoted verbatim."
+    },
+    {
+      "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
+      "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
     }
   ],
   "text_versions": [

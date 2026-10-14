@@ -181,8 +181,8 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
       "detail": {
-        "zh": "饱和合并对手可以计入每项较轻损失而给其合力永久上限；正机会对手要求较重一方始终有机会。两者未被逻辑排除，构成 FR 的实质争论与机会代价。",
-        "en": "A saturating rival can count every lesser loss while imposing a permanent ceiling; a chance rival requires a positive chance for the graver claimant at every scale. Neither is logically excluded; they identify substantive disagreement and FR’s opportunity cost."
+        "zh": "饱和合并对手可以计入每项较轻损失而给其合力永久上限；正机会对手要求较重一方始终有机会。两者未被逻辑排除，构成 FR 的实质争论及其所放弃的。",
+        "en": "A saturating rival can count every lesser loss while imposing a permanent ceiling; a chance rival requires a positive chance for the graver claimant at every scale. Neither is logically excluded; they identify substantive disagreement and what FR forgoes."
       }
     },
     {
@@ -231,8 +231,8 @@
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#complete-episodes-and-relational-remainders"
     },
     {
-      "en": "Sustained harm: nondecomposable sustained harm can be compared through whole-course repair relations and inherit insufficient or sufficient judgments from independently warranted whole references, without a universal duration price.",
-      "zh": "持续损伤：不可分解的持续损伤可按整段修复关系直接比较，并从独立成立的完整参照接续不足或充分判断，毋须统一时长价格。",
+      "en": "Sustained harm: nondecomposable sustained harm can be compared through whole-course repair relations and inherit insufficient or sufficient judgments from independently warranted whole references, without one universal weight for duration.",
+      "zh": "持续损伤：不可分解的持续损伤可按整段修复关系直接比较，并从独立成立的完整参照接续不足或充分判断，毋须统一的时长权重。",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#whole-course-comparison-of-sustained-harm"
     }
   ],
@@ -549,6 +549,10 @@
     {
       "zh": "2026-10-14，开放问题计划第10项（复核迁移的判断）：定律3原说严格匹配是“严格序”，但所证只有非自反与不对称（`StrictLossMatch.length_lt`），没有传递性，改为只说所证；定律5原说失去共同支持的配置“在任何配置之下都没有严格匹配”，方向不清，按 `not_strictLossMatch_of_base_lost`（它不作为较好者严格匹配任何配置）改写。定律4、6与陈述经对照 Lean 确认。",
       "en": "14 October 2026, open-issues plan item 10 (review of the migration's judgment calls): law 3 called strict matching \"a strict order\", but only irreflexivity and asymmetry are proved (`StrictLossMatch.length_lt`), not transitivity, so it now says only what is proved; law 5 said a configuration losing the common support \"is strictly matched below no configuration\", an unclear direction, and is rewritten after `not_strictLossMatch_of_base_lost` (it is the better side of no strict match). Laws 4 and 6 and the statement were confirmed against the Lean."
+    },
+    {
+      "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
+      "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
     }
   ],
   "text_versions": [

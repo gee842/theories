@@ -71,7 +71,7 @@ MARKET_EN = re.compile(r"\b(?:cost(?:s|ly|ing)?|charg(?:e|es|ed|ing)|budget(?:s|
                        r"pric(?:e|es|ed|ing)|spend(?:s|ing)?|spent|accounting|credit(?:s|ed|ing)?|fees?|"
                        r"profit(?:s|able)?|fund(?:s|ed|ing)?)\b", re.I)
 # “account” is left out: here it means an explanation (“the full account”).
-MARKET_ZH = re.compile(r'付费|支付|预算|(?<!生)成本|价格|花费|费用|利润|资金|记账|账户|收费|开销|代价|免费|信用')
+MARKET_ZH = re.compile(r'付费|支付|预算|(?<![生形构组完达变造促合养现落集])成本|价格|花费|费用|利润|资金|记账|账户|收费|开销|代价|免费|信用')
 # Scientific terms that contain such a word.
 MARKET_ALLOWED = re.compile(r"Price(?:['’]s)? equation|credit assignment|electric charge", re.I)
 

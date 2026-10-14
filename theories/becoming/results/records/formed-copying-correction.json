@@ -69,8 +69,8 @@
     }
   ],
   "limitations": {
-    "zh": "未导出参考选择、故障定位、比较／替换微观规律、自动修复计划、自供、误差率或种群优势；编码与动力学校对及同机制传统模型保留比较信用。",
-    "en": "Reference selection, fault localization, microscopic comparison/exchange, autonomous repair planning, renewal, error rates and population advantage are not derived; coding, kinetic proofreading and equivalent conventional mechanisms retain comparative credit."
+    "zh": "未导出参考选择、故障定位、比较／替换微观规律、自动修复计划、自供、误差率或种群优势；编码与动力学校对及同机制传统模型保有可比地位。",
+    "en": "Reference selection, fault localization, microscopic comparison/exchange, autonomous repair planning, renewal, error rates and population advantage are not derived; coding, kinetic proofreading and equivalent conventional mechanisms keep comparable standing."
   },
   "validation_scope": {
     "zh": "27项新定理声明／45项新审计，529项实际闭包中484项继承分列；两份原始论文按记录范围阅读并检查关键页，无新经验复算。一般律已由检查器回执绑定。",
@@ -199,6 +199,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Copying 由核心回执 20261014T044840.291323Z；CopyingInstances 由外围回执 20261014T045347.438672Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Copying by core receipt 20261014T044840.291323Z; CopyingInstances by peripheral receipt 20261014T045347.438672Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
+    },
+    {
+      "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
+      "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
     }
   ]
 }

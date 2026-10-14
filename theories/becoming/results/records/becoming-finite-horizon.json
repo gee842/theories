@@ -15,7 +15,7 @@
   },
   "claim": {
     "zh": "在 Becoming.Renewal 的可更新条件的过程中，对每个视界 h，有两次运行在 h 之前的配置与动作都相同：焦点形成每一步都汲取两个单位（每步更新一个），而它的每个事件都在更新之内。此后一次在更新之内汲取，焦点形成在运行中是更新的；另一次继续超出，焦点形成是消耗的。因此，任何由前 h 步的配置与动作决定、并记入每次更新运行的读法，必记入某次消耗运行。分类不仅不是初始配置的函数，也不是任何有限前缀的函数。有反馈时也如此：在支持门控定律中，同一起点、h 之前每步汲取两个单位，在 h 停止则更新，继续则消耗；停止的一次从不到达支持阈值。这一结论的力量来自“记入每次更新运行”：那次更新运行在 h 之前每步都超出更新地汲取，整段读法记入这些事件；按数量的读法（该步所取不超过更新）由有限前缀决定，扣下两次运行在 h 之前的每个事件，只是不记入每次整段更新的运行。形成层面的周期读法不由任何有限前缀决定。不用伦理前提，也不用 Lean 公理。推论（P49，Becoming.Testing）：没有由前 h 步决定的读法恰是整段的分类（Renewable.no_exact_finite_reading）；不认可任何消耗的运行的这种读法，不认可某个更新的运行（Renewable.finite_reading_withholds_renewal）。",
-    "en": "In the renewable process of Becoming.Renewal, for every horizon h there are two runs whose configurations and actions agree before h: the focal formation draws two units at every step (one is renewed each step), and each of its events is within renewal. Afterwards one run draws within renewal and the focal formation renews in it; the other keeps exceeding and the focal formation consumes. Hence any reading fixed by the configurations and actions of the first h steps that credits every renewing run credits some consuming run. The classification is a function neither of the initial configuration nor of any finite prefix. The same holds with feedback: in the support-gated law, from one start and drawing two units at every step before h, stopping at h renews and continuing consumes; the stopping schedule never reaches the support threshold. The force of the conclusion lies in “credits every renewing run”: that renewing run draws beyond renewal at every step before h, and the whole-run reading credits those events; an amount reading (taking no more than is renewed at the step) is fixed by finite prefixes and withholds every event before h in both runs, failing only to credit every whole-run-renewing run. The formation-level cycle reading is fixed by no finite prefix. No ethical premise and no Lean axiom is used. Corollaries (P49, Becoming.Testing): no reading decided by the first h steps is the whole-run classification (Renewable.no_exact_finite_reading); such a reading crediting no consuming run withholds credit from some renewing run (Renewable.finite_reading_withholds_renewal)."
+    "en": "In the renewable process of Becoming.Renewal, for every horizon h there are two runs whose configurations and actions agree before h: the focal formation draws two units at every step (one is renewed each step), and each of its events is within renewal. Afterwards one run draws within renewal and the focal formation renews in it; the other keeps exceeding and the focal formation consumes. Hence any reading fixed by the configurations and actions of the first h steps that includes every renewing run includes some consuming run. The classification is a function neither of the initial configuration nor of any finite prefix. The same holds with feedback: in the support-gated law, from one start and drawing two units at every step before h, stopping at h renews and continuing consumes; the stopping schedule never reaches the support threshold. The force of the conclusion lies in “includes every renewing run”: that renewing run draws beyond renewal at every step before h, and the whole-run reading includes those events; an amount reading (taking no more than is renewed at the step) is fixed by finite prefixes and withholds every event before h in both runs, failing only to include every whole-run-renewing run. The formation-level cycle reading is fixed by no finite prefix. No ethical premise and no Lean axiom is used. Corollaries (P49, Becoming.Testing): no reading decided by the first h steps is the whole-run classification (Renewable.no_exact_finite_reading); such a reading including no consuming run excludes some renewing run (Renewable.finite_reading_withholds_renewal)."
   },
   "hypotheses": [
     {
@@ -24,11 +24,11 @@
     },
     {
       "zh": "那次更新运行在 h 之前每步都超出更新地汲取（每步两个单位，更新一个），由足够高的起点吸收；所以“记入每次更新运行”包括记入超出更新的汲取（第二次独立审查 F2）。",
-      "en": "The renewing run draws beyond renewal at every step before h (two units, one renewed), absorbed by a high enough start; so “credits every renewing run” includes crediting drawing beyond renewal (second independent review F2)."
+      "en": "The renewing run draws beyond renewal at every step before h (two units, one renewed), absorbed by a high enough start; so “includes every renewing run” means including drawing beyond renewal (second independent review F2)."
     },
     {
       "zh": "“读法”是运行上的任意命题；结论只要求它由前 h 步决定并记入每次更新运行。",
-      "en": "A “reading” is any proposition on runs; the conclusion requires only that it be fixed by the first h steps and credit every renewing run."
+      "en": "A “reading” is any proposition on runs; the conclusion requires only that it be fixed by the first h steps and include every renewing run."
     }
   ],
   "correspondence": {
@@ -38,8 +38,8 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
   "aliases": [
     "Becoming.Renewable.prefix_does_not_decide",
-    "Becoming.Renewable.finite_reading_credits_consumption",
-    "Becoming.Renewable.whole_run_credits_overdraw",
+    "Becoming.Renewable.finite_reading_includes_consumption",
+    "Becoming.Renewable.whole_run_includes_overdraw",
     "Becoming.Renewable.amount_reading",
     "Becoming.Renewable.cycle_reading_not_finite",
     "Becoming.Feedback.prefix_does_not_decide",
@@ -75,7 +75,7 @@
       "relation": "formal-reuse",
       "detail": {
         "zh": "前缀中的每个事件在更新之内（RenewingAt）；由此逐步读法记入消耗运行的前缀。",
-        "en": "Each event of the prefix is within renewal (RenewingAt), so the stepwise reading credits the prefix of the consuming run."
+        "en": "Each event of the prefix is within renewal (RenewingAt), so the stepwise reading includes the prefix of the consuming run."
       },
       "interface": {
         "output": {
@@ -121,8 +121,8 @@
     {
       "id": "relational-reading-comparison",
       "detail": {
-        "zh": "该结果的整段读法扣下消耗者的全部事件，也记入一次更新运行中超出更新的汲取（Renewable.whole_run_credits_overdraw）。本结果表明，任何由有限前缀决定、并记入每次整段更新运行的读法，必记入某次消耗运行；若对 Ren 所采纳的问题的判决覆盖越过阈值之前的事件，它就需要关于整段继续的判断。按数量的读法可由有限历史判定，并扣下每一次超出（Renewable.amount_reading；整合文档 §8.5、§11）。",
-        "en": "That result's whole-run reading withholds every event of a consumer, and also credits drawing beyond renewal in a renewing run (Renewable.whole_run_credits_overdraw). This one shows that any reading fixed by a finite prefix that credits every whole-run-renewing run credits some consuming run; if a verdict on the problem Ren adopted covers events before the threshold, it needs a judgment about whole continuations. An amount reading is decidable from a finite history and withholds every overdraw (Renewable.amount_reading; integration note §§8.5, 11)."
+        "zh": "该结果的整段读法扣下消耗者的全部事件，也记入一次更新运行中超出更新的汲取（Renewable.whole_run_includes_overdraw）。本结果表明，任何由有限前缀决定、并记入每次整段更新运行的读法，必记入某次消耗运行；若对 Ren 所采纳的问题的判决覆盖越过阈值之前的事件，它就需要关于整段继续的判断。按数量的读法可由有限历史判定，并扣下每一次超出（Renewable.amount_reading；整合文档 §8.5、§11）。",
+        "en": "That result's whole-run reading withholds every event of a consumer, and also includes drawing beyond renewal in a renewing run (Renewable.whole_run_includes_overdraw). This one shows that any reading fixed by a finite prefix that includes every whole-run-renewing run includes some consuming run; if a verdict on the problem Ren adopted covers events before the threshold, it needs a judgment about whole continuations. An amount reading is decidable from a finite history and withholds every overdraw (Renewable.amount_reading; integration note §§8.5, 11)."
       }
     },
     {
@@ -138,14 +138,14 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "detail": {
         "zh": "事件层面的逐步与周期读法由有限的历史决定，所以在条件还满足依存时，它们记入渐进的耗竭（Renewable.prefix_does_not_decide）；形成层面的周期读法不由有限前缀决定（Renewable.cycle_reading_not_finite；第二次独立审查 F9）。",
-        "en": "The event-level stepwise and cycle readings are fixed by a finite history, so they credit gradual depletion while the condition still meets dependence (Renewable.prefix_does_not_decide); the formation-level cycle reading is fixed by no finite prefix (Renewable.cycle_reading_not_finite; second independent review F9)."
+        "en": "The event-level stepwise and cycle readings are fixed by a finite history, so they include gradual depletion while the condition still meets dependence (Renewable.prefix_does_not_decide); the formation-level cycle reading is fixed by no finite prefix (Renewable.cycle_reading_not_finite; second independent review F9)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "detail": {
         "zh": "按数量的读法逃出本结果（Renewable.amount_reading）：它由有限前缀决定，扣下每一次超出更新的汲取，只是不记入每次整段更新的运行；依存网上 draws 不带数量，它在 Web 上不能表达（第二次独立审查 F2）。",
-        "en": "An amount reading escapes this result (Renewable.amount_reading): it is fixed by finite prefixes and withholds every draw beyond renewal, failing only to credit every whole-run-renewing run; draws on webs carry no amount, so it cannot be expressed on Web (second independent review F2)."
+        "en": "An amount reading escapes this result (Renewable.amount_reading): it is fixed by finite prefixes and withholds every draw beyond renewal, failing only to include every whole-run-renewing run; draws on webs carry no amount, so it cannot be expressed on Web (second independent review F2)."
       }
     },
     {
@@ -182,8 +182,8 @@
         "Becoming.Run.cons",
         "Becoming.Run.AgreeUpTo",
         "Becoming.Renewable.prefix_does_not_decide",
-        "Becoming.Renewable.finite_reading_credits_consumption",
-        "Becoming.Renewable.whole_run_credits_overdraw",
+        "Becoming.Renewable.finite_reading_includes_consumption",
+        "Becoming.Renewable.whole_run_includes_overdraw",
         "Becoming.Renewable.amount_reading",
         "Becoming.Renewable.cycle_reading_not_finite",
         "Becoming.Feedback.law",
@@ -611,6 +611,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "en": "Open-issues plan item 15 (Ren chose “includes”): a reading now includes an event, where it was said to credit it, a market word; the Lean names follow (old and new in the unification plan §10); zh 记入 unchanged.",
+      "zh": "开放问题计划第 15 项（Ren 选定 includes）：读法“记入”事件的英文由市场词 credit 改为 include，Lean 名随之更改（新旧对照见统一计划 §10）；中文“记入”不变。"
     }
   ]
 }
