@@ -41,6 +41,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [fallible-inspection-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fallible-inspection-verification.json) | — |
 | integration | [FALLIBLE-INSPECTION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| proof | [Readout.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean) | `Becoming.Readout.Explains`, `Becoming.Readout.CommonWitness`, `Becoming.Readout.no_common_report_iff`, `Becoming.Readout.no_common_report_envelopes_iff` |
+| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.explains_complete_iff`, `Becoming.compatible_complete_iff`, `Becoming.complete_diagnosability_iff_by_core` |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -48,8 +50,9 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 复用辨别条件；实际变化中的故障范围和执行能力仍需具体证明。 / Reuse diagnosability; fault coverage through actual change and response capacity need their own evidence.
 
-Aliases / 别名: `FallibleInspection.complete_diagnosability_iff_cross_separation`
+Aliases / 别名: `FallibleInspection.complete_diagnosability_iff_cross_separation`, `Becoming.complete_diagnosability_iff_by_core`
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心（Becoming.Readout）无前提地证明：对不同的答案，列出见证者的完整报告不能同时由一答案（某些见证者有误）与另一答案（另一些有误）解释，恰当某见证者不在两误集之中（no_common_report_iff）；在所承认的误集包络下，恰当所承认的每两误集都留下共同的可靠见证者（no_common_report_envelopes_iff）；若每一见证者都在其一之中，归咎于一集的报告解释两者。在完整报告上，FallibleInspection 的布尔相容即核心在所承认误集下的解释（explains_complete_iff、compatible_complete_iff），交叉分离即该共同见证条件，所以 complete_diagnosability_iff_cross_separation 即核心定律（complete_diagnosability_iff_by_core），证明不用外围的经典步骤，公理报告为空（草稿构建；回执随落地）；所用列表事实在桥接中重证，因库中引理用 propext。外围证明及其回执保持原范围；桥接自此导入 FallibleInspection，脊柱运行将其及其导入作为继承模块编译。 / 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core (Becoming.Readout) proves that, for different answers, no complete report of listed witnesses is explained both by one answer with some witnesses at fault and by the other with others at fault exactly where some witness is in neither fault set (no_common_report_iff), and, under admitted envelopes, exactly where every two admitted fault sets leave a common faithful witness (no_common_report_envelopes_iff); where every witness is in one of them, the report blaming one set explains both. On complete reports FallibleInspection's Boolean compatibility is the core's explanation under an admitted fault set (explains_complete_iff, compatible_complete_iff) and cross-separation is that common-witness condition, so complete_diagnosability_iff_cross_separation is the core law (complete_diagnosability_iff_by_core), proved without the periphery's classical step and with empty axiom reports (scratch build; the receipt comes with the landing); the list facts used are reproved in the bridge, since the library's use propext. The periphery proof and its receipt keep their scope; the bridge now imports FallibleInspection, which the spine run compiles as an inherited module with its imports.

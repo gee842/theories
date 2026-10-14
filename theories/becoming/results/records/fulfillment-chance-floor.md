@@ -42,6 +42,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [chance-adequacy-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-adequacy-verification.json) | — |
 | integration | [CHANCE-ADEQUACY-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| proof | [Weighted.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean) | `Becoming.mass`, `Becoming.IncludedOn`, `Becoming.mass_mono`, `Becoming.mass_lt_of_added`, `Becoming.dirac`, `Becoming.every_weighting_iff` |
+| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.chance_mass_eq`, `Becoming.all_weights_preserve_mass_iff_by_core`, `Becoming.fulfillment_floor_by_core` |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -49,8 +51,9 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 接管时复用此桥；新增任务仍须建立真实实施与有效承担。 / Reuse this bridge for takeover; additional tasks still require actual implementation and warranted undertakings.
 
-Aliases / 别名: `ChanceAdequacy.fulfillment_gives_chance_floor`, `ChanceAdequacy.all_weights_preserve_mass_iff`
+Aliases / 别名: `ChanceAdequacy.fulfillment_gives_chance_floor`, `ChanceAdequacy.all_weights_preserve_mass_iff`, `Becoming.all_weights_preserve_mass_iff_by_core`, `Becoming.fulfillment_floor_by_core`
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心（Becoming.Weighted）无前提地证明：在列出的定义域上，事件的质量在每一权重下随包含而不减（mass_mono），加入正权重的条目时严格上升（mass_lt_of_added）；每一权重都不使事件质量下降，恰当事件在定义域上被包含（every_weighting_iff），只计一个条目的权重（dirac）区分事件。ChanceAdequacy 的质量即核心的质量（chance_mass_eq），所以 all_weights_preserve_mass_iff 即 every_weighting_iff（all_weights_preserve_mass_iff_by_core），机会下限即两次 mass_mono（fulfillment_floor_by_core），公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 ChanceAdequacy，脊柱运行将其作为继承模块编译。 / 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core (Becoming.Weighted) proves that on a listed domain the mass of an event follows inclusion under every weighting (mass_mono) and rises strictly where an entry of positive weight is added (mass_lt_of_added), and that every weighting keeps an event's mass from falling exactly where the event is included on the domain (every_weighting_iff), the weightings counting one entry (dirac) telling events apart. ChanceAdequacy's mass is the core's (chance_mass_eq), so all_weights_preserve_mass_iff is every_weighting_iff (all_weights_preserve_mass_iff_by_core) and the chance floor is mass_mono twice (fulfillment_floor_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports ChanceAdequacy, which the spine run compiles as an inherited module.

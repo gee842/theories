@@ -25,7 +25,9 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
   "aliases": [
-    "Generative.ExplanatoryJointness.same_target_unique"
+    "Generative.ExplanatoryJointness.same_target_unique",
+    "Becoming.same_target_unique_by_core",
+    "Becoming.SameJointTests.functional"
   ],
   "dependencies": [],
   "related": [
@@ -80,6 +82,23 @@
       "role": "provenance",
       "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
+      "role": "proof",
+      "sha256": "e3d81fb001ae3a64ca8f1ee08b8c3720ddf87524a86d8a0fcf089b0124cbc4ec",
+      "declarations": [
+        "Becoming.JointFrame",
+        "Becoming.SameJointTests.functional"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CompositionBridge.lean",
+      "role": "proof",
+      "sha256": "1ebdb280164ae841ad06d7a66afe36cc7d6c3e8d16bef29a8ec9facee98cc798",
+      "declarations": [
+        "Becoming.same_target_unique_by_core"
+      ]
     }
   ],
   "proof_bindings": [
@@ -99,6 +118,10 @@
     {
       "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
       "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述。新的核心模块 Becoming.Composition（只导入 Becoming.Likeness）加入一配置把两配置作为部分共同持有的关系（JointFrame），以及联合检验、联合相同、紧致、嵌套计划与足迹；Becoming.CompositionBridge 把 ExplanatoryJointness 与 ExplanatoryFootprints 读作实例。联合检验区分框架之配置处，一配置至多与其中一者通过相同联合检验（SameJointTests.functional）；same_target_unique 即此定律在模型框架上（same_target_unique_by_core），无附加假设，公理报告为空（草稿构建；回执随落地）。外围证明、其回执与共享支持的反例保持原范围。",
+      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. Where joint tests tell a frame's configurations apart, a configuration passes the same joint tests as at most one of them (SameJointTests.functional); same_target_unique is that law on the model's frame (same_target_unique_by_core), with no added hypothesis and empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof, its receipt and the shared-support counterexample keep their scope."
     }
   ]
 }

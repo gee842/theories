@@ -54,6 +54,8 @@ Boundary source / 边界来源: [ExplanatoryFootprints.lean](../../../../experim
 | proof | [ExplanatoryFootprints.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean) | `Generative.ExplanatoryFootprints.code_plan_has_global_support` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-global-realization-checks/20261008T085919.976102Z/receipt.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| proof | [Composition.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean) | `Becoming.JointPlan.supports_of_image` |
+| proof | [CompositionBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CompositionBridge.lean) | `Becoming.code_plan_has_global_support_of_stable` |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -61,9 +63,10 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 复用既有二步组合，不重证叶项支持；应用时明示同一原生关系。 / Reuse the existing two-stage composition instead of reproving leaf support; identify the same native relation in applications.
 
-Aliases / 别名: `Generative.ExplanatoryFootprints.code_plan_has_global_support`
+Aliases / 别名: `Generative.ExplanatoryFootprints.code_plan_has_global_support`, `Becoming.code_plan_has_global_support_of_stable`, `Becoming.JointPlan.supports_of_image`
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。 / 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.
+- 2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述，附加一个假设。新的核心模块 Becoming.Composition（只导入 Becoming.Likeness）加入一配置把两配置作为部分共同持有的关系（JointFrame），以及联合检验、联合相同、紧致、嵌套计划与足迹；Becoming.CompositionBridge 把 ExplanatoryJointness 与 ExplanatoryFootprints 读作实例。在部分可提升的描述处实现的计划，其叶所汲取者合起来无重复，且在所描述整体的足迹之内（JointPlan.supports_of_image）；code_plan_has_global_support 即提升与此定律的组合，在模型检验稳定处于脊柱上成立（code_plan_has_global_support_of_stable），稳定只用于提升一步，排中律给出之。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围。 / 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine, with one added hypothesis. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. Wherever a plan is realized at a description whose parts lift, what its leaves draw on, joined, repeats nothing and lies within the described whole's footprint (JointPlan.supports_of_image); code_plan_has_global_support is the lifting composed with this law and holds on the spine where the model's tests are stable (code_plan_has_global_support_of_stable), stability being used only by the lifting stage and given by excluded middle. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope.

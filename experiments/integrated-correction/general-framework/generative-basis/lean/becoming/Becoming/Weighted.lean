@@ -44,6 +44,12 @@ holds for every weighting and listing it names.
     what it needs (`Memory.of_kept`).
   - *Loops.* Around a loop of two moves the courses double at every step (`Loop.courses_double`),
     so a sum over every horizon has no finite value without something more.
+* **What every weighting of a listed domain sees.** The mass of an event on a listed domain
+  follows inclusion under every weighting (`mass_mono`) and rises strictly where an entry of
+  positive weight is added (`mass_lt_of_added`). Every weighting keeps an event's mass from
+  falling exactly where the event is included on the domain (`every_weighting_iff`): the
+  weightings counting one entry (`dirac`) tell events apart, so inclusion is all that every
+  weighting agrees on, and one weighting can see less.
 
 **Readings.** The AI's, pending Ren. The AI reads "Fermi's diagrams" as Feynman diagrams, whose
 sum over histories has this shape: the weight of a history is composed of the weights of its
@@ -599,5 +605,110 @@ theorem courses_double : ∀ n, courses n = 2 ^ n
     rw [courses_double n, Nat.one_mul, Nat.add_zero, Nat.mul_two]
 
 end Loop
+
+/-! ## What every weighting of a listed domain sees -/
+
+section Mass
+
+variable {Ω : Type u}
+
+/-- The mass of an event on a listed domain under a weighting of its entries. An entry listed
+twice counts twice. -/
+def mass (domain : List Ω) (weight : Ω → Nat) (event : Ω → Bool) : Nat :=
+  match domain with
+  | [] => 0
+  | h :: tail => (if event h = true then weight h else 0) + mass tail weight event
+
+/-- One event included in another on a listed domain. -/
+def IncludedOn (domain : List Ω) (before after : Ω → Bool) : Prop :=
+  ∀ h ∈ domain, before h = true → after h = true
+
+theorem IncludedOn.tail {h : Ω} {tail : List Ω} {before after : Ω → Bool}
+    (included : IncludedOn (h :: tail) before after) : IncludedOn tail before after :=
+  fun x mem => included x (List.Mem.tail h mem)
+
+/-- An entry's contribution follows inclusion. -/
+theorem entry_le {before after : Ω → Bool} (weight : Ω → Nat) {h : Ω}
+    (included : before h = true → after h = true) :
+    (if before h = true then weight h else 0) ≤ (if after h = true then weight h else 0) := by
+  cases hb : before h with
+  | false => exact Nat.zero_le _
+  | true =>
+    cases ha : after h with
+    | false => exact Bool.noConfusion (ha.symm.trans (included hb))
+    | true => exact Nat.le_refl _
+
+/-- **Mass follows inclusion**, under every weighting. -/
+theorem mass_mono {before after : Ω → Bool} (weight : Ω → Nat) :
+    ∀ {domain : List Ω}, IncludedOn domain before after →
+      mass domain weight before ≤ mass domain weight after
+  | [], _ => Nat.le_refl 0
+  | h :: tail, included =>
+    Nat.add_le_add (entry_le weight (included h (List.Mem.head tail))) (mass_mono weight included.tail)
+
+/-- **Mass rises where a weighted entry is added**: an event included in another, lacking an
+entry of the domain the other has, has less mass under a weighting giving that entry weight. -/
+theorem mass_lt_of_added {before after : Ω → Bool} (weight : Ω → Nat) {x : Ω}
+    (positive : 0 < weight x) (absent : before x = false) (present : after x = true) :
+    ∀ {domain : List Ω}, IncludedOn domain before after → x ∈ domain →
+      mass domain weight before < mass domain weight after
+  | _ :: tail, included, .head _ => by
+    show (if before x = true then weight x else 0) + mass tail weight before <
+      (if after x = true then weight x else 0) + mass tail weight after
+    cases hb : before x with
+    | true => exact Bool.noConfusion (absent.symm.trans hb)
+    | false =>
+      cases ha : after x with
+      | false => exact Bool.noConfusion (ha.symm.trans present)
+      | true => exact Nat.add_lt_add_of_lt_of_le positive (mass_mono weight included.tail)
+  | h :: _, included, .tail _ mem =>
+    Nat.add_lt_add_of_le_of_lt (entry_le weight (included h (List.Mem.head _)))
+      (mass_lt_of_added weight positive absent present included.tail mem)
+
+/-- The weighting counting the entry `x` once. -/
+def dirac [DecidableEq Ω] (x : Ω) (y : Ω) : Nat :=
+  if y = x then 1 else 0
+
+theorem mem_of_mass_dirac_pos [DecidableEq Ω] {x : Ω} {event : Ω → Bool} :
+    ∀ {domain : List Ω}, 0 < mass domain (dirac x) event → x ∈ domain ∧ event x = true
+  | [], pos => absurd pos (Nat.lt_irrefl 0)
+  | h :: tail, pos => by
+    have pos : 0 < (if event h = true then dirac x h else 0) + mass tail (dirac x) event := pos
+    cases he : event h with
+    | false =>
+      rw [he] at pos
+      have rest := mem_of_mass_dirac_pos (Nat.zero_add (mass tail (dirac x) event) ▸ pos)
+      exact ⟨List.Mem.tail h rest.1, rest.2⟩
+    | true =>
+      rw [he] at pos
+      exact Decidable.byCases (dec := inferInstanceAs (Decidable (h = x)))
+        (fun same : h = x => same ▸ ⟨List.Mem.head tail, he⟩)
+        (fun other : ¬ h = x => by
+          have zero : dirac x h = 0 := if_neg other
+          have rest := mem_of_mass_dirac_pos (Nat.zero_add (mass tail (dirac x) event) ▸
+            zero ▸ pos)
+          exact ⟨List.Mem.tail h rest.1, rest.2⟩)
+
+theorem mass_dirac_pos [DecidableEq Ω] {x : Ω} {event : Ω → Bool} (occurs : event x = true) :
+    ∀ {domain : List Ω}, x ∈ domain → 0 < mass domain (dirac x) event
+  | _ :: tail, .head _ => by
+    show 0 < (if event x = true then dirac x x else 0) + mass tail (dirac x) event
+    rw [occurs]
+    have one : dirac x x = 1 := if_pos rfl
+    exact Nat.lt_of_lt_of_le (one ▸ Nat.zero_lt_one) (Nat.le_add_right _ _)
+  | _ :: _, .tail _ mem => Nat.lt_of_lt_of_le (mass_dirac_pos occurs mem) (Nat.le_add_left _ _)
+
+/-- **Every weighting keeps an event's mass from falling exactly where it is included.** The
+weightings counting one entry (`dirac`) separate events on the domain, so inclusion is all that
+every weighting agrees on; one weighting, the law of chance of an actual unfolding, can see
+less. -/
+theorem every_weighting_iff [DecidableEq Ω] {domain : List Ω} {before after : Ω → Bool} :
+    (∀ weight : Ω → Nat, mass domain weight before ≤ mass domain weight after) ↔
+      IncludedOn domain before after :=
+  ⟨fun all x mem occurs => (mem_of_mass_dirac_pos
+      (Nat.lt_of_lt_of_le (mass_dirac_pos occurs mem) (all (dirac x)))).2,
+   fun included weight => mass_mono weight included⟩
+
+end Mass
 
 end Becoming

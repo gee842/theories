@@ -56,6 +56,13 @@ Results:
   from A with G0's unindexed significance.
 * `universal_reason`: a sound inquiry whose goal is new living content gives every
   position with access a contributory reason for it.
+* What C asks of the comparison it constrains, with no premise. Extensions are irreflexive
+  and compose (`Extension.irrefl`, `Extension.trans`). A comparison read off a description of
+  configurations and comparing no description with itself satisfies C only if the description
+  tells every extension apart from its base (`Comparison.separates`). A natural-number score
+  satisfying C rises by at least one at every link of an endless chain of extensions
+  (`Comparison.climbs`), so it ranks some link above any configuration whatever
+  (`Comparison.outgrows`); a bounded score is not constrained so.
 * Minimality: dropping the seed, N_rel, N_std, connection or A each leaves a
   consistent countermodel. Each rival accepts the same rule inside a formed
   boundary: its own region, its own standpoint, or endorsers.
@@ -267,6 +274,50 @@ def Extension (F : Frame S A C) (living : C → Prop) (s t : S) : Prop :=
 /-- C on the frame. `Better s t` says that `t` is strictly better. -/
 def Comparison (F : Frame S A C) (living : C → Prop) (Better : S → S → Prop) : Prop :=
   ∀ s t, Extension F living s t → Better s t
+
+/-- **What C needs to see.** Where a comparison is read off a description of configurations and
+compares no description with itself, C makes the description tell every extension apart from its
+base: a description identifying a configuration with an extension of it supports no comparison
+satisfying C. -/
+theorem Comparison.separates {F : Frame S A C} {living : C → Prop} {D : Type} {π : S → D}
+    {compare : D → D → Prop} (irreflexive : ∀ d, ¬ compare d d)
+    (comparison : Comparison F living fun s t => compare (π s) (π t)) {s t : S}
+    (extension : Extension F living s t) : π s ≠ π t :=
+  fun same => irreflexive (π t) (Eq.subst (motive := fun d => compare d (π t)) same
+    (comparison s t extension))
+
+/-- No configuration extends itself. -/
+theorem Extension.irrefl {F : Frame S A C} {living : C → Prop} {s : S} :
+    ¬ Extension F living s s :=
+  fun ⟨_, _, _, now, before⟩ => before now
+
+/-- Extensions compose. -/
+theorem Extension.trans {F : Frame S A C} {living : C → Prop} {s t u : S}
+    (first : Extension F living s t) (second : Extension F living t u) : Extension F living s u :=
+  ⟨fun c held => second.1 c (first.1 c held),
+    let ⟨c, live, now, before⟩ := second.2
+    ⟨c, live, now, fun earlier => before (first.1 c earlier)⟩⟩
+
+/-- **A natural-number score satisfying C climbs.** Along an endless chain of extensions, a
+natural-number score whose strict order satisfies C rises by at least one at every link. -/
+theorem Comparison.climbs {F : Frame S A C} {living : C → Prop} {score : S → Nat}
+    (comparison : Comparison F living fun s t => score s < score t) {next : Nat → S}
+    (chain : ∀ i, Extension F living (next i) (next (i + 1))) :
+    ∀ m, score (next 0) + m ≤ score (next m)
+  | 0 => Nat.le_refl _
+  | m + 1 => Nat.le_trans (Nat.succ_le_succ (Comparison.climbs comparison chain m))
+      (comparison _ _ (chain m))
+
+/-- **No configuration stays above an endless chain of extensions.** A natural-number score
+satisfying C ranks some link of the chain above any configuration whatever: the link
+`score s + 1` steps along. The force is the unit step of the natural numbers: a bounded score
+(with values `k / (k + 1)`, say) can satisfy C without this. -/
+theorem Comparison.outgrows {F : Frame S A C} {living : C → Prop} {score : S → Nat}
+    (comparison : Comparison F living fun s t => score s < score t) {next : Nat → S}
+    (chain : ∀ i, Extension F living (next i) (next (i + 1))) (s : S) :
+    score s < score (next (score s + 1)) :=
+  Nat.le_trans (Nat.le_add_left (score s + 1) (score (next 0)))
+    (Comparison.climbs comparison chain (score s + 1))
 
 /-- L, conservative default: every outcome of `a` is better than every outcome of `b`. -/
 def LiftBetter (F : Frame S A C) (better : S → S → Prop) (s : S) (a b : A) : Prop :=

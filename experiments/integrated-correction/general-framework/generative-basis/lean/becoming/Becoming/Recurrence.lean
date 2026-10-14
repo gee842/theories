@@ -22,7 +22,10 @@ assumed of any unfolding; it is the condition written into each law that uses it
   marks it (`not_marks`).
 * **What every law keeps and loses.** Under a determined law a possibility lost stays lost
   (`lost_stays`), and under every process a configuration no longer reachable stays so along
-  every continuation (`Reach.lost_stays`). Configurations merged stay merged: no later step
+  every continuation (`Reach.lost_stays`). Every configuration reachable from `s` stays
+  reachable from `t` exactly when `t` leads back to `s` (`keeps_reach_iff_returns`,
+  `same_reach_iff_returns`), and no way back is a lost possibility, `s` itself being one
+  (`not_returns_iff_loses`). Configurations merged stay merged: no later step
   tells them apart (`merged_stays`). A law under which every configuration returns merges
   nothing (`lossless_of_returns`), and a configuration that returns can be had at every step
   (`Returns.reachable`). Undoing is going on: where `s` returns, further steps of the same
@@ -580,6 +583,24 @@ theorem Run.change_not_recurring (r : Run P) {l : List S} (held : ∀ n, r.state
 theorem Reach.lost_stays {t u t' : S} (lost : ¬ Reach P t u) (onward : Reach P t t') :
     ¬ Reach P t' u :=
   fun back => lost (onward.trans back)
+
+/-- **What can be had from a configuration is kept exactly where it can be had again.** Every
+configuration reachable from `s` is reachable from `t` exactly when `t` leads back to `s`. -/
+theorem keeps_reach_iff_returns {s t : S} : (∀ u, Reach P s u → Reach P t u) ↔ Reach P t s :=
+  ⟨fun keeps => keeps s (Reach.refl P s), fun back _ there => back.trans there⟩
+
+/-- **Along a path, the same possibilities exactly where it can be undone.** For `t` reached
+from `s`, the configurations reachable from both are the same exactly when `t` leads back to
+`s`. -/
+theorem same_reach_iff_returns {s t : S} (onward : Reach P s t) :
+    (∀ u, Reach P s u ↔ Reach P t u) ↔ Reach P t s :=
+  ⟨fun same => (same s).mp (Reach.refl P s),
+   fun back _ => ⟨fun there => back.trans there, fun there => onward.trans there⟩⟩
+
+/-- **No way back is a lost possibility, with a witness.** `t` does not lead back to `s` exactly
+when some configuration reachable from `s` is not reachable from `t`: `s` itself is one. -/
+theorem not_returns_iff_loses {s t : S} : ¬ Reach P t s ↔ ∃ u, Reach P s u ∧ ¬ Reach P t u :=
+  ⟨fun away => ⟨s, Reach.refl P s, away⟩, fun ⟨_, there, lost⟩ back => lost (back.trans there)⟩
 
 end Runs
 

@@ -46,6 +46,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [ExplanatoryContextualStructure.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean) | `Generative.ExplanatoryContextualStructure.unique_common_operational_structure` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json) | — |
 | integration | [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md) | — |
+| proof | [Joining.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean) | `Becoming.Joining.common_operation` |
+| proof | [JoiningBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean) | `Becoming.Joining.unique_common_operational_structure_by_core` |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -53,7 +55,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 复用有限条件程序与真实余项恢复；继续建立内部语法不同的说明之间余项、判断与实际形成关系的有据翻译，区分语义可判定与实际取得。 / Reuse finite guarded programs and coherent residual recovery; establish warranted residual/guard/formation translation between descriptions with different internal syntax, distinguishing semantic tests from actual acquisition.
 
-Aliases / 别名: `Generative.ExplanatoryContextualStructure.unique_common_operational_structure`
+Aliases / 别名: `Generative.ExplanatoryContextualStructure.unique_common_operational_structure`, `Becoming.Joining.unique_common_operational_structure_by_core`, `Becoming.Joining.common_operation`
 
 ## 沿革 History
 
@@ -61,3 +63,4 @@ Aliases / 别名: `Generative.ExplanatoryContextualStructure.unique_common_opera
 - 2026-10-08 接续：原主张、前提与回执保持；审读同一研究新增共同细化、无引用退化及保留引用修复，更新后续连接。 / 2026-10-08 continuation: retained the original claim, premises and receipts; read the appended refinement, unanchored-collapse and retained-reference repair and updated the next connection.
 - 2026-10-09：复用本成果接通固定有限操作粒度；旧主张、假设与证明绑定不变。新前缀遗漏及继续检验见同一研究第22—26节。 / 2026-10-09: reuse this result in finite-granularity continuation; preserve its claim, hypotheses and proof bindings. New prefix omission and resumption testing appear in the same study §§22–26.
 - 2026-10-09接续：研究新增有限条件程序、余项恢复及35项实查声明；原成果的主张、假设和证明绑定保持，见原研究§27—32。 / 2026-10-09 continuation: finite guarded programs, residual recovery and 35 checked declarations added in the same study §§27–32; this result retains its claim, assumptions and proof bindings.
+- 2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述。新的核心模块 Becoming.Joining（只导入 Becoming.Likeness）把片段的结合经伙伴、角色与保留引用读作脊柱的框架；描述提升一结合，恰当同一编码是伙伴框架的互模拟，无前提（Joining.lifts_iff）；Becoming.JoiningBridge 把结合研究读作实例。函数性结合的伙伴框架是确定的，通过相同检验已是相同，无需判定（Joining.common_operation）。外围的上下文即其动作路径所达（realizes_iff_trace），所以 unique_common_operational_structure 在脊柱上逐字成立（Joining.unique_common_operational_structure_by_core），无附加假设，公理报告为空（草稿构建；回执随落地）（外围原证明用到 propext）。外围证明及其回执保持原范围。 / 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. The new core module Becoming.Joining, importing only Becoming.Likeness, reads a joining of fragments as frames of the spine, through partners, roles and retained references; a description lifts a joining exactly where having one code is a bisimulation of the partner frame, with no premise (Joining.lifts_iff); Becoming.JoiningBridge reads the joining studies as instances. For a functional joining the partner frame is determined, and passing the same tests already is likeness, with no decision (Joining.common_operation). A context of the periphery realizes exactly what its course of moves reaches (realizes_iff_trace), so unique_common_operational_structure holds on the spine as stated (Joining.unique_common_operational_structure_by_core), with no added hypothesis and empty axiom reports (scratch build; the receipt comes with the landing) (the periphery proof uses propext). The periphery proof and its receipt keep their scope.
