@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "unceasing-generation-needs-renewal",
   "title": {
     "zh": "不息的生成需要更新",
@@ -8,23 +8,122 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
+  "reviewed_at_utc": "2026-10-14T10:28:57+00:00",
   "statement": {
     "zh": "生起消耗有限条件时，不息的生成需要更新复现；更新却不蕴含生成。",
     "en": "Where arising depletes finitely many conditions, unceasing generation needs renewal to recur; renewal does not imply generation."
   },
-  "claim": {
-    "zh": "在依存网上，一个形成跨某步生起，当它在该步不活跃、在其后活跃；生成不息，当某个形成在任意晚的步生起（同一形成可以再生起）。生起（变为活跃）是生生第二个“生”的一种读法的形式载体（作者的读法）。一个事件消耗一个有限的条件家族，当在它的每一步，若家族中没有条件上升，则其中某个条件下降；这恰是说事件的每一步家族中有条件变化，与事件的关系不论。从某步起家族中没有条件上升时，消耗它的事件不在任意晚的步发生。因此，若生起消耗家族，不息的生成使家族中某个条件在任意晚的步上升（净上升）；若每次上升都由某个活跃形成更新该条件造成，更新的活动在任意晚的步复现。在平衡的流中有不需要净上升的形式：任意晚的步上有正的取用，家族就在任意晚的步得到补充；在其第一个活跃步从家族取用的形成在任意晚的步生起是其一种情形，补充者于是在任意晚的步出现，恒定的取用者而没有任何生起是另一种；生起在这一形式中只经由它带来的取用起作用。这一形式看得见与汲取同步的补充。一个在每个活跃步都使家族中某个条件下降的形成，在家族不再上升之后不在任意晚的步活跃，无论它怎样在其中转移依存：替代推迟终结而不逃脱终结。若一个量从不上升而每次生起都使它下降（耗散），生成不是不息的；一个总水平不变的封闭循环可以维持不息的生成。更新可以复现而没有任何生起（月亮更新的潮水），所以在这些前提下不息的生成严格强于复现的更新。形成在汲取一个不被更新的条件时可以接连生起，条件被消耗，生起不复现；消耗者可以从一个来源转向另一个而终结。一个形成在源所更新的条件上反复生起，满足全部前提，生成不息；工作候选的逐步读法扣下它的每一次生起，两步周期的读法记入它。不用伦理前提，也不用 Lean 公理。",
-    "en": "On a web of dependence, a formation arises across a step when it is inactive at the step and active after it; generation is unceasing when some formation arises at arbitrarily late steps (the same formation may arise again). Arising, becoming active, is the formal carrier of one reading of the second 生 of 生生 (the author's reading). An event depletes a finite family of conditions when, at each of its steps at which no condition of the family rises, one of them falls; this says exactly that some condition of the family changes at each step of the event, whatever its relation to the event. If from some step none of them rises, events depleting the family do not occur at arbitrarily late steps. Hence, if arising depletes the family, unceasing generation makes some condition of the family rise (a net rise) at arbitrarily late steps; and if every rise is made by some active formation renewing the condition, renewing activity recurs. Balanced flows give a form that needs no net rise: positive uptake at arbitrarily late steps needs the family replenished at arbitrarily late steps; formations taking from the family at their first active step and arising at arbitrarily late steps are one case, in which renewers recur, and a constant consumer with nothing arising is another; in this form arising works only through the uptake it brings. This form sees replenishment concurrent with drawing. A formation lowering some condition of the family at each active step is not active at arbitrarily late steps once none of them rises any more, however it moves its dependence among them: substitution defers the end and does not escape it. If a quantity never rises and every arising lowers it (dissipation), generation is not unceasing; a closed cycle whose total stays constant sustains unceasing generation. Renewal can recur with nothing arising (a tide the moon renews), so under these premises unceasing generation is strictly stronger than recurring renewal. Formations can arise one after another while drawing an unrenewed condition, consume it, and arising does not recur; a consumer can move from one source to another and end. A formation arising again and again on a condition the source renews meets every premise and generation is unceasing; the stepwise working candidate withholds each of its arisings, and the reading over cycles of two includes it. No ethical premise and no Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "在依存网上，一个形成跨某步生起，当它在该步不活跃、在其后活跃；生成不息，当某个形成在任意晚的步生起（同一形成可以再生起）。生起（变为活跃）是生生第二个“生”的一种读法的形式载体（作者的读法）。",
+      "en": "On a web of dependence, a formation arises across a step when it is inactive at the step and active after it; generation is unceasing when some formation arises at arbitrarily late steps (the same formation may arise again). Arising, becoming active, is the formal carrier of one reading of the second 生 of 生生 (the author's reading).",
+      "declarations": [
+        "Becoming.Web.Arises",
+        "Becoming.Web.Unceasing"
+      ]
+    },
+    {
+      "zh": "一个事件消耗一个有限的条件家族，当在它的每一步，若家族中没有条件上升，则其中某个条件下降；这恰是说事件的每一步家族中有条件变化，与事件的关系不论。从某步起家族中没有条件上升时，消耗它的事件不在任意晚的步发生。",
+      "en": "An event depletes a finite family of conditions when, at each of its steps at which no condition of the family rises, one of them falls; this says exactly that some condition of the family changes at each step of the event, whatever its relation to the event. If from some step none of them rises, events depleting the family do not occur at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.Web.Rises",
+        "Becoming.Web.Falls",
+        "Becoming.Web.Still",
+        "Becoming.Web.Depletes",
+        "Becoming.Web.depletes_iff",
+        "Becoming.Web.stock",
+        "Becoming.Web.depletion_not_recurring"
+      ]
+    },
+    {
+      "zh": "因此，若生起消耗家族，不息的生成使家族中某个条件在任意晚的步上升（净上升）；若每次上升都由某个活跃形成更新该条件造成，更新的活动在任意晚的步复现。",
+      "en": "Hence, if arising depletes the family, unceasing generation makes some condition of the family rise (a net rise) at arbitrarily late steps; and if every rise is made by some active formation renewing the condition, renewing activity recurs.",
+      "declarations": [
+        "Becoming.Web.Unceasing.rises",
+        "Becoming.Web.RenewedBy",
+        "Becoming.Web.Regenerating",
+        "Becoming.Web.Unceasing.regeneration_recurs"
+      ]
+    },
+    {
+      "zh": "在平衡的流中有不需要净上升的形式：任意晚的步上有正的取用，家族就在任意晚的步得到补充；在其第一个活跃步从家族取用的形成在任意晚的步生起是其一种情形，补充者于是在任意晚的步出现，恒定的取用者而没有任何生起是另一种；生起在这一形式中只经由它带来的取用起作用。",
+      "en": "Balanced flows give a form that needs no net rise: positive uptake at arbitrarily late steps needs the family replenished at arbitrarily late steps; formations taking from the family at their first active step and arising at arbitrarily late steps are one case, in which renewers recur, and a constant consumer with nothing arising is another; in this form arising works only through the uptake it brings.",
+      "declarations": [
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.uptake",
+        "Becoming.Flow.replenishment",
+        "Becoming.Flow.ArisesTaking",
+        "Becoming.Flow.uptake_needs_replenishment",
+        "Becoming.Flow.replenishment_recurs",
+        "Becoming.Flow.renewing_recurs",
+        "Becoming.Steady.steady"
+      ]
+    },
+    {
+      "zh": "一个在每个活跃步都使家族中某个条件下降的形成，在家族不再上升之后不在任意晚的步活跃，无论它怎样在其中转移依存：替代推迟终结而不逃脱终结。",
+      "en": "A formation lowering some condition of the family at each active step is not active at arbitrarily late steps once none of them rises any more, however it moves its dependence among them: substitution defers the end and does not escape it.",
+      "declarations": [
+        "Becoming.Web.substitution_defers",
+        "Becoming.Relay.web",
+        "Becoming.Relay.defers"
+      ]
+    },
+    {
+      "zh": "若一个量从不上升而每次生起都使它下降（耗散），生成不是不息的；一个总水平不变的封闭循环可以维持不息的生成。",
+      "en": "If a quantity never rises and every arising lowers it (dissipation), generation is not unceasing; a closed cycle whose total stays constant sustains unceasing generation.",
+      "declarations": [
+        "Becoming.Web.dissipation_generation_not_recurring",
+        "Becoming.Recycle.web",
+        "Becoming.Recycle.renews",
+        "Becoming.Recycle.closed_unceasing"
+      ]
+    },
+    {
+      "zh": "更新可以复现而没有任何生起（月亮更新的潮水），所以在这些前提下不息的生成严格强于复现的更新。",
+      "en": "Renewal can recur with nothing arising (a tide the moon renews), so under these premises unceasing generation is strictly stronger than recurring renewal.",
+      "declarations": [
+        "Becoming.Tide.web",
+        "Becoming.Tide.renews",
+        "Becoming.Tide.renewal_without_arising"
+      ]
+    },
+    {
+      "zh": "形成在汲取一个不被更新的条件时可以接连生起，条件被消耗，生起不复现；消耗者可以从一个来源转向另一个而终结。",
+      "en": "Formations can arise one after another while drawing an unrenewed condition, consume it, and arising does not recur; a consumer can move from one source to another and end.",
+      "declarations": [
+        "Becoming.Growth.web",
+        "Becoming.Growth.ceases",
+        "Becoming.Relay.defers"
+      ]
+    },
+    {
+      "zh": "一个形成在源所更新的条件上反复生起，满足全部前提，生成不息；工作候选的逐步读法扣下它的每一次生起，两步周期的读法记入它。",
+      "en": "A formation arising again and again on a condition the source renews meets every premise and generation is unceasing; the stepwise working candidate withholds each of its arisings, and the reading over cycles of two includes it.",
+      "declarations": [
+        "Becoming.Oscillation.web",
+        "Becoming.Oscillation.renews",
+        "Becoming.Oscillation.unceasing",
+        "Becoming.Oscillation.readings"
+      ]
+    },
+    {
+      "zh": "流的形式在任一世界中成立，局部条件写在规律之内：只要求该家族从某步起平衡；平衡处处成立时的形式是它们的推论。",
+      "en": "The flow form holds in every world with the local condition inside the law: balance on the family only from some step on; the forms with balance everywhere are their corollaries.",
+      "declarations": [
+        "Becoming.Flow.uptake_needs_replenishment_from",
+        "Becoming.Flow.replenishment_recurs_from",
+        "Becoming.Flow.renewing_recurs_from"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "条件家族是有限列表；水平与流中的量是自然数。",
       "en": "The family of conditions is a finite list; levels and amounts in flows are natural numbers."
     },
     {
-      "zh": "消耗前提（P11b 前称支付前提）：在家族都不上升之步，每次生起使家族中某个条件下降。它只要求家族中有条件变化，不涉及生起的形成（Tide）；这是对应前提，不是结论。",
-      "en": "The depletion premise (before P11b, the payment premise): at a step where no condition of the family rises, each arising lowers one of them. It asks only that some condition of the family change and does not involve the arising formation (Tide); it is a correspondence premise, not a conclusion."
+      "zh": "消耗前提：在家族都不上升之步，每次生起使家族中某个条件下降。它只要求家族中有条件变化，不涉及生起的形成（Tide）；这是对应前提，不是结论。",
+      "en": "The depletion premise: at a step where no condition of the family rises, each arising lowers one of them. It asks only that some condition of the family change and does not involve the arising formation (Tide); it is a correspondence premise, not a conclusion."
     },
     {
       "zh": "更新由形成造成（RenewedBy）：每次上升都由某个活跃形成更新该条件造成，展开之外没有更新的来源，太阳或河流也是其中的形成。renews 是应用给出的可观测量；结论只与它一样强。",
@@ -43,9 +142,140 @@
       "en": "“Unceasing” reads only that arising recurs at arbitrarily late steps, not “more”, diversity or complexity."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "不推出“不息更好”或任何排序。",
+      "en": "Yields no “unceasing is better” or any ranking.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不陈述“更多”、多样性与复杂性；生成成分没有加入 living 的读法。",
+      "en": "Does not state “more”, diversity or complexity; the generation component is not added to any reading of living.",
+      "kind": "scope"
+    },
+    {
+      "zh": "消耗前提只要求家族中有条件变化（depletes_iff），不筛掉命名造成的生起（TideFlip）。",
+      "en": "The depletion premise asks only that some condition of the family change (depletes_iff) and does not screen out arisings made by naming (TideFlip).",
+      "kind": "scope",
+      "witness": "Becoming.TideFlip.naming_meets_premises"
+    },
+    {
+      "zh": "两类读法的流的形式中生起只经由取用起作用（Steady），生起的关系项体现时生起本身就是补充（generation-is-replenishment）。",
+      "en": "In the flow form of the two-kind reading arising works only through uptake (Steady), while the arising of an embodied relatum is itself replenishment (generation-is-replenishment).",
+      "kind": "scope",
+      "witness": "Becoming.Steady.steady"
+    },
+    {
+      "zh": "Unceasing 依赖跨步的同一（identity-across-steps）：保持持续活动的命名不制造生起，要把定理读作关于生成的定理，需要这样的命名。",
+      "en": "Unceasing depends on identity across steps (identity-across-steps): a naming that keeps continuing activity makes no arising, and reading the theorems as about generation needs such a naming.",
+      "kind": "scope"
+    },
+    {
+      "zh": "Rises 是净上升，同步的补充只在流的形式中看得见。",
+      "en": "Rises is a net rise, and concurrent replenishment is visible only in the flow form.",
+      "kind": "scope",
+      "witness": "Becoming.Expansion.undepleted"
+    },
+    {
+      "zh": "见证都是最小见证。",
+      "en": "The witnesses are minimal.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "更新不蕴含生成（Tide.renewal_without_arising）：潮水由月亮更新，在任意晚的步上升，月亮的更新复现，而没有任何生起；这是在本结果自身意义上的严格性。Renewable 见证（Renewable.renewal_without_generation）是“依存保持，没有生起”，其中没有上升（第四次独立审查 H5）。",
+        "en": "Renewal does not imply generation (Tide.renewal_without_arising): a tide the moon renews rises at arbitrarily late steps and the moon's renewing recurs while nothing arises; this is strictness in this result's own sense. The `Renewable` witness (Renewable.renewal_without_generation) is “dependence kept, no arising”, with no rise (fourth independent review H5)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "消耗前提不涉及生起的形成（Tide.unrelated_depletion）：一个不依存、也不汲取任何条件的闪现者在每个奇数步生起，每次都由与它无关的潮落满足消耗前提，全部前提成立（第四次独立审查 H4）。",
+        "en": "The depletion premise does not involve the arising formation (Tide.unrelated_depletion): a flicker that depends and draws on nothing arises at every odd step, each time meeting the premise through the unrelated fall of a tide, and every premise holds (fourth independent review H4)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "正面见证只空洞地满足消耗前提（Oscillation.arises_on_rise）：振荡者只在源把条件恢复之时生起，即在上升之步，在下一步才汲取。",
+        "en": "The positive witness meets the depletion premise only vacuously (Oscillation.arises_on_rise): the oscillator arises only when the source has restored its condition, at a rise, and draws at the next step."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "没有耗散，封闭的有限家族可以不息（Recycle.closed_unceasing）：一个单位在两个池之间循环，总水平恒为一，全部前提成立，生成不息；dissipation_generation_not_recurring 需要每次生起都使所论的量下降（第四次独立审查 H6）。",
+        "en": "Without dissipation a closed finite family can be unceasing (Recycle.closed_unceasing): one unit cycles between two pools, the total stays one, every premise holds and generation is unceasing; dissipation_generation_not_recurring needs every arising to lower the quantity concerned (fourth independent review H6)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "detail": {
+        "zh": "净上升看不见同步的补充（Expansion.undepleted）：扩张中更新者与生长者每步生起，水平从不上升，消耗前提不成立；流的形式 replenishment_recurs 适用（Expansion.growers_take）。",
+        "en": "A net rise cannot see concurrent replenishment (Expansion.undepleted): in the expansion renewers and growers arise at every step, the level never rises, and the depletion premise fails; the flow form replenishment_recurs applies (Expansion.growers_take)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "detail": {
+        "zh": "流的形式不需要生起（Steady.steady）：一个消耗者与一个补充者始终活跃，流平衡，取用每步为正，没有任何生起，补充同样须在任意晚的步出现；需要补充的是复现的取用（第五次独立审查 I3）。",
+        "en": "The flow form does not need arising (Steady.steady): a consumer and a renewer are always active, the flow balances, uptake is positive at every step and nothing arises, and replenishment is still needed at arbitrarily late steps; what needs it is the recurring uptake (fifth independent review I3)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "命名造成的生起满足全部前提（TideFlip.naming_meets_premises）：没有生起的潮水与月亮，每个奇数步交换名字，生成不息，Depletes 与 RenewedBy 成立；结论只关乎条件，所以成立，生成却是命名的（第五次独立审查 I8）。",
+        "en": "Arisings made by naming meet every premise (TideFlip.naming_meets_premises): the tide and the moon with nothing arising, their names exchanged at every odd step, give unceasing generation with Depletes and RenewedBy; the conclusion concerns conditions only and holds, while the generation is the naming's (fifth independent review I8)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "接连生起不证明不息（Growth.ceases）：形成在汲取不被更新的条件时接连生起，以消耗为条件的生起不复现。",
+        "en": "Arising one after another does not certify unceasing generation (Growth.ceases): formations arise while drawing an unrenewed condition, and arising on a consumed condition does not recur."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "逐步读法与生成分离（Oscillation.readings）：一个不息地再生起的形成（振荡者），在工作候选的逐步读法下没有一个活的生起事件；两步周期的读法记入它。",
+        "en": "The stepwise reading and generation come apart (Oscillation.readings): a formation arising again and again (the oscillator) has no living arising under the stepwise working candidate; the reading over cycles of two includes it."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
+      "detail": {
+        "zh": "第四次独立审查：所审的全部声明接受，公理报告为空；现名 Depletes 的定义不涉及生起的形成，严格性所引见证没有上升，“任何有限部分都不能独自不息”需要耗散，“生生的第二个生”与“以消耗进行的生成”未标为作者的读法，交换用语与 Ren 的纠正相冲突（已在整合文档中更正）。",
+        "en": "Fourth independent review: every declaration under review is accepted with empty axiom reports; the definition now named Depletes did not involve the arising formation, the cited strictness witness had no rise, “no finite part is unceasing on its own” needs dissipation, “the second 生 of 生生” and “generation by consumption” were not labelled as the author's reading, and the vocabulary of exchange conflicted with Ren's corrections (corrected in the integration note)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
+      "detail": {
+        "zh": "第五次独立审查：所审的全部声明接受，公理报告为空；流的形式只用到生起带来的取用，整合文档中的一条反驳强于定理；命名造成的生起可满足全部前提；不息依赖同一而本记录未注明（已在整合文档中更正）。",
+        "en": "Fifth independent review: every declaration under review is accepted with empty axiom reports; the flow form uses only the uptake arising brings, and a rebuttal in the integration note was stronger than the theorem; naming-made arisings can meet every premise; unceasing generation depends on identity, which this record did not note (corrected in the integration note)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；Becoming.Generation 的当前字节绑定回执 20261014T091930.724493Z）：Becoming.Generation 的定理与 Becoming.Flow 中流的形式的定理公理报告为空；检查器并核对核心纯净。作者反审见整合文档；第四次独立审查（见来源）的更正在整合文档中处理，第五次审查这些更正并补出流的形式只用到取用与命名造成的生起，第六次接受这些更正。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Generation bound to receipt 20261014T091930.724493Z): the theorems of Becoming.Generation and the flow-form theorems of Becoming.Flow have empty axiom reports; core purity verified. Author counterreview in the integration note; the fourth independent review (see sources) is handled there, the fifth reviewed those corrections and added that the flow form uses only uptake and that naming can make the arisings, and the sixth accepted them."
+  },
+  "next_delta": {
+    "zh": "陈述可能性、多样性与复杂性的上升；把生成成分与 Frame.Novel 和 universal_reason 的“新的活的内容”接通；检验生成成分能否进入 living 的读法而不重复“不损”所放弃的。第二个“生”的范围与以消耗为条件的生起是否为生成，属于 Ren。",
+    "en": "State rising possibility, diversity and complexity; connect the generation component to Frame.Novel and to the “new living content” of universal_reason; test whether a generation component can enter a reading of living without repeating what “no harm” gives up. The scope of the second 生 and whether arising on a consumed condition is generation are Ren's to say."
+  },
   "correspondence": {
-    "zh": "Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。本结果只形式化“不断…生”，并把它陈述在整体的继续上，这是作者的读法；生起是第二个“生”的一种读法的形式载体，第二个“生”的范围留给 Ren。在这些前提下，由不被更新的条件承担的生起不能不息；在继续的层面，这与 Ren 所说的生成与退化不重叠相合（作者的读法）；在单个事件的层面，Arises 包括以消耗为条件的生起。所以结果支持来源中 AI 修正说明的看法，即“持续形成新组织”的“持续”已排除消耗型；它没有证明每个非消耗的样式都能不息。作者进一步诠释：在耗散之下，任何有限部分都不能独自不息，不息属于更大的展开（AI 论证；对流中的取用，no-finite-part-bears-taking 在耗散前提下证明了它）；没有耗散，封闭循环可以不息（Recycle）。实际展开是否满足消耗前提、RenewedBy、流的对应与耗散，是经验问题。",
-    "en": "Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). This result formalizes only “unceasingly … 生” and states it on the whole's continuation, which is the author's reading; arising is the formal carrier of one reading of the second 生, whose scope is left to Ren. Under these premises, arising borne by unrenewed conditions cannot be unceasing; at the level of continuation this accords with Ren's statement that generation and degeneration do not overlap (the author's reading), while at the level of single events Arises includes arising on a consumed condition. So the result supports the source's AI correction note that the “持续” of “持续形成新组织” already excludes the consuming type; it does not show that every non-consuming pattern can be unceasing. The author further interprets: under dissipation no finite part is unceasing on its own, and unceasing generation belongs to a larger unfolding (an AI argument; for taking in flows, no-finite-part-bears-taking proves it under the dissipation premise); without dissipation a closed cycle can be unceasing (Recycle). Whether actual unfoldings meet the depletion premise, RenewedBy, the flow correspondence and dissipation is an empirical question."
+    "zh": "Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。本结果只形式化“不断…生”，并把它陈述在整体的继续上，这是作者的读法；第二个“生”的范围留给 Ren。在这些前提下，由不被更新的条件承担的生起不能不息；在继续的层面，这与 Ren 所说的生成与退化不重叠相合（作者的读法）；在单个事件的层面，Arises 包括以消耗为条件的生起。所以结果支持来源中 AI 修正说明的看法，即“持续形成新组织”的“持续”已排除消耗型；它没有证明每个非消耗的样式都能不息。作者进一步诠释：在耗散之下，任何有限部分都不能独自不息，不息属于更大的展开（AI 论证；对流中的取用，no-finite-part-bears-taking 在耗散前提下证明了它）。实际展开是否满足消耗前提、RenewedBy、流的对应与耗散，是经验问题。新名称是审查的建议，最终由 Ren 定。",
+    "en": "Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). This result formalizes only “unceasingly … 生” and states it on the whole's continuation, which is the author's reading; the scope of the second 生 is left to Ren. Under these premises, arising borne by unrenewed conditions cannot be unceasing; at the level of continuation this accords with Ren's statement that generation and degeneration do not overlap (the author's reading), while at the level of single events Arises includes arising on a consumed condition. So the result supports the source's AI correction note that the “持续” of “持续形成新组织” already excludes the consuming type; it does not show that every non-consuming pattern can be unceasing. The author further interprets: under dissipation no finite part is unceasing on its own, and unceasing generation belongs to a larger unfolding (an AI argument; for taking in flows, no-finite-part-bears-taking proves it under the dissipation premise). Whether actual unfoldings meet the depletion premise, RenewedBy, the flow correspondence and dissipation is an empirical question. The new names are the reviewer's suggestions; the final choice is Ren's."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
   "aliases": [
@@ -217,93 +447,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "detail": {
-        "zh": "更新不蕴含生成（Tide.renewal_without_arising）：潮水由月亮更新，在任意晚的步上升，月亮的更新复现，而没有任何生起；这是在本结果自身意义上的严格性。Renewable 见证（Renewable.renewal_without_generation）是“依存保持，没有生起”，其中没有上升（第四次独立审查 H5）。",
-        "en": "Renewal does not imply generation (Tide.renewal_without_arising): a tide the moon renews rises at arbitrarily late steps and the moon's renewing recurs while nothing arises; this is strictness in this result's own sense. The `Renewable` witness (Renewable.renewal_without_generation) is “dependence kept, no arising”, with no rise (fourth independent review H5)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "detail": {
-        "zh": "消耗前提不涉及生起的形成（Tide.unrelated_depletion）：一个不依存、也不汲取任何条件的闪现者在每个奇数步生起，每次都由与它无关的潮落满足消耗前提，全部前提成立（第四次独立审查 H4）。",
-        "en": "The depletion premise does not involve the arising formation (Tide.unrelated_depletion): a flicker that depends and draws on nothing arises at every odd step, each time meeting the premise through the unrelated fall of a tide, and every premise holds (fourth independent review H4)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "detail": {
-        "zh": "正面见证只空洞地满足消耗前提（Oscillation.arises_on_rise）：振荡者只在源把条件恢复之时生起，即在上升之步，在下一步才汲取。",
-        "en": "The positive witness meets the depletion premise only vacuously (Oscillation.arises_on_rise): the oscillator arises only when the source has restored its condition, at a rise, and draws at the next step."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "detail": {
-        "zh": "没有耗散，封闭的有限家族可以不息（Recycle.closed_unceasing）：一个单位在两个池之间循环，总水平恒为一，全部前提成立，生成不息；dissipation_generation_not_recurring 需要每次生起都使所论的量下降（第四次独立审查 H6）。",
-        "en": "Without dissipation a closed finite family can be unceasing (Recycle.closed_unceasing): one unit cycles between two pools, the total stays one, every premise holds and generation is unceasing; dissipation_generation_not_recurring needs every arising to lower the quantity concerned (fourth independent review H6)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "detail": {
-        "zh": "净上升看不见同步的补充（Expansion.undepleted）：扩张中更新者与生长者每步生起，水平从不上升，消耗前提不成立；流的形式 replenishment_recurs 适用（Expansion.growers_take）。",
-        "en": "A net rise cannot see concurrent replenishment (Expansion.undepleted): in the expansion renewers and growers arise at every step, the level never rises, and the depletion premise fails; the flow form replenishment_recurs applies (Expansion.growers_take)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "detail": {
-        "zh": "流的形式不需要生起（Steady.steady）：一个消耗者与一个补充者始终活跃，流平衡，取用每步为正，没有任何生起，补充同样须在任意晚的步出现；需要补充的是复现的取用（第五次独立审查 I3）。",
-        "en": "The flow form does not need arising (Steady.steady): a consumer and a renewer are always active, the flow balances, uptake is positive at every step and nothing arises, and replenishment is still needed at arbitrarily late steps; what needs it is the recurring uptake (fifth independent review I3)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "命名造成的生起满足全部前提（TideFlip.naming_meets_premises）：没有生起的潮水与月亮，每个奇数步交换名字，生成不息，Depletes 与 RenewedBy 成立；结论只关乎条件，所以成立，生成却是命名的（第五次独立审查 I8）。",
-        "en": "Arisings made by naming meet every premise (TideFlip.naming_meets_premises): the tide and the moon with nothing arising, their names exchanged at every odd step, give unceasing generation with Depletes and RenewedBy; the conclusion concerns conditions only and holds, while the generation is the naming's (fifth independent review I8)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "detail": {
-        "zh": "接连生起不证明不息（Growth.ceases）：形成在汲取不被更新的条件时接连生起，以消耗为条件的生起不复现。",
-        "en": "Arising one after another does not certify unceasing generation (Growth.ceases): formations arise while drawing an unrenewed condition, and arising on a consumed condition does not recur."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "detail": {
-        "zh": "逐步读法与生成分离（Oscillation.readings）：一个不息地再生起的形成（振荡者），在工作候选的逐步读法下没有一个活的生起事件；两步周期的读法记入它。",
-        "en": "The stepwise reading and generation come apart (Oscillation.readings): a formation arising again and again (the oscillator) has no living arising under the stepwise working candidate; the reading over cycles of two includes it."
-      }
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
-      "detail": {
-        "zh": "第四次独立审查：P10 的全部声明接受，公理报告为空；Paid 不涉及生起的形成，严格性所引见证没有上升，“任何有限部分都不能独自不息”需要耗散，“生生的第二个生”与“以消耗进行的生成”未标为作者的读法，支付用语与 Ren 的纠正相冲突（已更正，整合文档 §15）。",
-        "en": "Fourth independent review: every P10 declaration is accepted with empty axiom reports; Paid did not involve the arising formation, the cited strictness witness had no rise, “no finite part is unceasing on its own” needs dissipation, “the second 生 of 生生” and “generation by consumption” were not labelled as the author's reading, and the payment vocabulary conflicted with Ren's corrections (corrected, integration note §15)."
-      }
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
-      "detail": {
-        "zh": "第五次独立审查：P11b 的全部声明接受，公理报告为空；流的形式只用到生起带来的取用，§15.4 反驳 2 强于定理；命名造成的生起可满足全部前提；不息依赖同一而本记录未注明（已更正，整合文档 §19）。",
-        "en": "Fifth independent review: every P11b declaration is accepted with empty axiom reports; the flow form uses only the uptake arising brings, and rebuttal 2 of §15.4 was stronger than the theorem; naming-made arisings can meet every premise; unceasing generation depends on identity, which this record did not note (corrected, integration note §19)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "不含伦理谓词，不推出“不息更好”或任何排序；不陈述“更多”、多样性与复杂性；生成成分没有加入 living 的读法；消耗前提只要求家族中有条件变化（depletes_iff），不筛掉命名造成的生起（TideFlip）；两类读法的流的形式中生起只经由取用起作用（Steady），生起的关系项体现时生起本身就是补充（generation-is-replenishment）；Unceasing 依赖跨步的同一（identity-across-steps）：保持持续活动的命名不制造生起，要把定理读作关于生成的定理，需要这样的命名；Rises 是净上升，同步的补充只在流的形式中看得见；RenewedBy 的结论只与应用给出的 renews 一样强；耗散是物理前提（对封闭家族中体现成员的生起，它由平衡、流上的耗散与体现推出，见 generation-is-replenishment），总水平预设单位可公度；条件家族有限；见证都是最小见证；消耗前提、ArisesTaking、RenewedBy 与耗散是应用义务；新名称是审查的建议，最终由 Ren 定。",
-    "en": "Contains no ethical predicate and yields no “unceasing is better” or any ranking; does not state “more”, diversity or complexity; the generation component is not added to any reading of living; the depletion premise asks only that some condition of the family change (depletes_iff) and does not screen out arisings made by naming (TideFlip); in the flow form of the two-kind reading arising works only through uptake (Steady), while the arising of an embodied relatum is itself replenishment (generation-is-replenishment); Unceasing depends on identity across steps (identity-across-steps): a naming that keeps continuing activity makes no arising, and reading the theorems as about generation needs such a naming; Rises is a net rise, and concurrent replenishment is visible only in the flow form; the conclusion of RenewedBy is only as strong as the renews the application supplies; dissipation is a physical premise (for the arisings of embodied members of a closed family it follows from balance, dissipation on flows and embodiment; see generation-is-replenishment), and the total presupposes commensurable units; families of conditions are finite; the witnesses are minimal; the depletion premise, ArisesTaking, RenewedBy and dissipation are application duties; the new names are the reviewer's suggestions, and the final choice is Ren's."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Generation 30 项定理与 Becoming.Flow 中流的形式的定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §13；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P9B-P10-P11-REVIEW.md），其更正在整合文档 §15 处理；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）审查了这些更正，补出流的形式只用到取用与命名造成的生起，见 §19；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这些更正，见 §22。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): all 30 theorems of Becoming.Generation and the flow-form theorems of Becoming.Flow have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §13 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections are handled in §15; a fifth independent review (BECOMING-P11B-P12-REVIEW.md) reviewed those corrections and added that the flow form uses only uptake and that naming can make the arisings, see §19; the sixth independent review (BECOMING-P13-P14-P12B-REVIEW.md) accepted these corrections, see §22. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
@@ -488,10 +631,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Flow.uptake_needs_replenishment_from、replenishment_recurs_from、renewing_recurs_from（P57），局部条件写在规律之内：只要求该家族从某步起平衡；Flow.uptake_needs_replenishment、replenishment_recurs、renewing_recurs是它们的推论；“更多”的一种读法（取用者的数目）已由 more-needs-renewers 陈述，流上的耗散由 no-finite-part-bears-taking 陈述；可能性、多样性与复杂性的上升，把生成成分与 Frame.Novel 和 universal_reason 的“新的活的内容”接通，以及生成成分能否进入 living 的读法而不重复“不损”所放弃的，仍开放；第二个“生”的范围与以消耗为条件的生起是否为生成，属于 Ren。",
-    "en": "The exact restatement for every world is this record's Flow.uptake_needs_replenishment_from, replenishment_recurs_from, renewing_recurs_from (P57), the local condition inside the law: balance on the family only from some step on; Flow.uptake_needs_replenishment, replenishment_recurs, renewing_recurs are their corollaries; one reading of “more” (the number of takers) is stated in more-needs-renewers, and dissipation on flows in no-finite-part-bears-taking; rising possibility, diversity and complexity, connecting the generation component to Frame.Novel and to the “new living content” of universal_reason, and whether a generation component can enter a reading of living without repeating what “no harm” gives up remain open; the scope of the second 生 and whether arising on a consumed condition is generation are Ren's to say."
-  },
   "history": [
     {
       "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P10，承接判据 (d) 与整合文档 §7.3 第 4 项。",
@@ -836,6 +975,20 @@
     {
       "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Generation.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；Dependence.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；Return.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；BECOMING-UNIFICATION-PLAN.md（10月14日改名表增一行（credits → includes）；其余文字不变）。",
       "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Generation.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); Dependence.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); Return.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); BECOMING-UNIFICATION-PLAN.md (one row added to the 14 October rename table (credits → includes); no other text changed)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题与陈述不变；主张拆为 9 条规律，原附在下一步中的局部规律改为规律 10；限制与逐轮回执说明分入“未表明”、通用边界、前提（重复者）、对应、证据段与沿革。规律、状态、证明绑定与来源哈希均未改变。前提 2 去掉“（P11b 前称支付前提）”这一旧名说明（见沿革与快照）。对应中“生起是第二个‘生’的一种读法的形式载体”与规律 1 重复，只留“第二个‘生’的范围留给 Ren”；“没有耗散，封闭循环可以不息（Recycle）”见规律 6 与反例；限制中“新名称是审查的建议，最终由 Ren 定”移入对应。下一步中已完成的接通（“更多”见 more-needs-renewers，流上的耗散见 no-finite-part-bears-taking）由关联条目与对应承载。两次审查概括中的轮次与章节号改为“所审的”与“整合文档”，“Paid”写作现名 Depletes 的定义，“支付用语”写作“交换用语”。每句旧文本的去向见迁移对照表 [unceasing-generation-needs-renewal.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/unceasing-generation-needs-renewal.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title and statement are kept; the claim was split into 9 laws, and the local laws appended to the next step became law 10; limitations and per-round receipt notes went to does-not-show items, standard boundaries, the hypotheses (where they repeated them), the correspondence, the evidence paragraph and history. No law, status, proof binding or source hash changed. Hypothesis 2 lost the old-name note “(before P11b, the payment premise)” (kept in history and the snapshot). In the correspondence, “arising is the formal carrier of one reading of the second 生” repeated law 1, so only “the scope of the second 生 is left to Ren” stays; “without dissipation a closed cycle can be unceasing (Recycle)” is law 6 and a counterexample; the limitation that the new names are the reviewer's suggestions moved to the correspondence. The next step's completed connections (“more” in more-needs-renewers, dissipation on flows in no-finite-part-bears-taking) are carried by the related entry and the correspondence. Round and section labels in two review summaries became “under review” and “the integration note”, “Paid” became the definition now named Depletes, and “payment vocabulary” became “vocabulary of exchange”. Every earlier sentence is mapped in the migration table [unceasing-generation-needs-renewal.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/unceasing-generation-needs-renewal.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/5b1ab679ee0e6c3a/unceasing-generation-needs-renewal.json",
+      "sha256": "5b1ab679ee0e6c3a00664622a3fad6904d248f80171f212d5a5a87f547dfc125",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
