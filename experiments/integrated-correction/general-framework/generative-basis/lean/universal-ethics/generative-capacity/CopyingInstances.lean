@@ -13,17 +13,17 @@ old examples are instances.
 
 * **Exact copying and release.** Copying a template strand reproduces its tokens exactly when
   the pool holds each token at least as often as the strand uses it and the support covers the
-  local charges (`copy_cells_iff`); it is released exactly when the support also covers one
+  local draws (`copy_cells_iff`); it is released exactly when the support also covers one
   more unit (`reproduce_iff`), for every pool. The old law of the support needed, with the
   template's own tokens in the pool, is the instance (`template_pool_reproduce_iff`).
 * **One shared pool.** Reproducing strands in turn from one pool and support, every strand is
   released exactly when the pool supplies all their tokens together and the support covers
-  all their charges and releases (`batch_all_released_iff`); exchanging adjacent strands keeps
+  all their draws and releases (`batch_all_released_iff`); exchanging adjacent strands keeps
   this (`batch_all_released_swap`).
-* **Local charges.** The machine's charges are the core's local charges with first charge 1
-  (`charge_eq`), so the ranking of the alternating and clustered strands
+* **Local draws.** The machine's draws are the core's local draws with first draw 1
+  (`draw_eq`), so the ranking of the alternating and clustered strands
   (`local_ranking_from_law`) and the constraint on the mixed strand
-  (`third_structure_from_law`) are instances of `cost_lt_iff` and `cost_midpoint`.
+  (`third_structure_from_law`) are instances of `use_lt_iff` and `use_midpoint`.
 * **Chain growth and doubling rounds.** End attachment grows a chain by the alternating word
   exactly when the pool supplies that word and the support covers one unit per token
   (`grow_iff`); from the empty chain, the mature chain forms exactly when the pool holds at
@@ -33,8 +33,8 @@ old examples are instances.
   process with draw 9 runs `n` rounds (`rounds_follow_doubling`).
 * **Reading through contacts.** For every registration state, operating as many copy moves as
   a word has tokens extends the product by that word exactly when each site reads the word's
-  token through the actual contacts, the pool supplies the word and the support covers its
-  charges (`operate_copies_iff`); complete registration is the instance
+  token through the actual contacts, the pool supplies the word and the support covers what it
+  draws (`operate_copies_iff`); complete registration is the instance
   (`registered_copy_cells`). Every course keeps the built product as a prefix
   (`product_extends_along`); only copy moves change the product (`product_gated`,
   `contact_course_keeps_product`), and every course keeps the totals of connectors, material
@@ -100,25 +100,25 @@ open RecurrentAssembly
 def view (w : StructuralCopying.CopyState) : Copying.Scan Bool :=
   ⟨w.previous, w.pending, w.built.cells, w.supply.pool, w.supply.free, w.supply.spent⟩
 
-/-- The machine's charges are the core's local charges with first charge 1. -/
-theorem charge_eq (law : StructuralCopying.Law) :
-    StructuralCopying.charge law = Copying.pairCharge 1 law.equal law.unequal := by
+/-- The machine's draws are the core's local draws with first draw 1. -/
+theorem draw_eq (law : StructuralCopying.Law) :
+    StructuralCopying.charge law = Copying.pairDraw 1 law.equal law.unequal := by
   funext p x
   cases p <;> rfl
 
-theorem cost_eq (law : StructuralCopying.Law) : ∀ (p : Option Bool) (w : List Bool),
-    StructuralCopying.cost law p w = Copying.cost (StructuralCopying.charge law) p w
+theorem use_eq (law : StructuralCopying.Law) : ∀ (p : Option Bool) (w : List Bool),
+    StructuralCopying.cost law p w = Copying.use (StructuralCopying.charge law) p w
   | _, [] => rfl
-  | p, x :: xs => congrArg (StructuralCopying.charge law p x + ·) (cost_eq law (some x) xs)
+  | p, x :: xs => congrArg (StructuralCopying.charge law p x + ·) (use_eq law (some x) xs)
 
-theorem cost_pair_eq (law : StructuralCopying.Law) (p : Option Bool) (w : List Bool) :
-    StructuralCopying.cost law p w = Copying.cost (Copying.pairCharge 1 law.equal law.unequal) p w := by
-  rw [cost_eq, charge_eq]
+theorem use_pair_eq (law : StructuralCopying.Law) (p : Option Bool) (w : List Bool) :
+    StructuralCopying.cost law p w = Copying.use (Copying.pairDraw 1 law.equal law.unequal) p w := by
+  rw [use_eq, draw_eq]
 
 /-- One machine move is one core move. -/
 theorem view_tick (law : StructuralCopying.Law) (w : StructuralCopying.CopyState) :
     view (StructuralCopying.tick law w) = Copying.tick (StructuralCopying.charge law) (view w) := by
-  rcases w with ⟨prev, pending, built, ⟨pool, free, spent⟩⟩
+  rcases w with ⟨prev, pending, built, ⟨pool, free, used⟩⟩
   cases pending with
   | nil => rfl
   | cons x xs =>
@@ -144,14 +144,14 @@ theorem view_copy (law : StructuralCopying.Law) (parent : Strand)
   exact view_steps law _ _
 
 /-- **Exact copying.** Copying a template strand reproduces its tokens exactly when the pool
-supplies them and the support covers the local charges, for every pool (from
+supplies them and the support covers the local draws, for every pool (from
 `Copying.built_iff`). -/
 theorem copy_cells_iff (law : StructuralCopying.Law) (parent : Strand)
     (hp : parent.bonds = path parent.cells.length) (hn : parent.cells ≠ []) (r : Supply) :
     (StructuralCopying.copy law parent r).built.cells = parent.cells ↔
       Copying.Supplies parent.cells r.pool ∧ StructuralCopying.cost law none parent.cells ≤ r.free := by
   have h := Copying.built_iff (StructuralCopying.charge law) none [] parent.cells r.pool r.free r.spent
-  rw [← view_copy law parent hp hn r, ← cost_eq] at h
+  rw [← view_copy law parent hp hn r, ← use_eq] at h
   exact h
 
 theorem copy_tracks (law : StructuralCopying.Law) (parent : Strand)
@@ -164,7 +164,7 @@ theorem copy_tracks (law : StructuralCopying.Law) (parent : Strand)
   simpa [StructuralCopying.start] using h
 
 /-- **Exact reproduction.** A template strand is copied and released exactly when the pool
-supplies its tokens and the support covers its charges and the release, for every pool (from
+supplies its tokens and the support covers its draws and the release, for every pool (from
 `Copying.releases_iff`). -/
 theorem reproduce_iff (law : StructuralCopying.Law) (parent : Strand)
     (hp : parent.bonds = path parent.cells.length) (hn : parent.cells ≠ []) (r : Supply) :
@@ -172,7 +172,7 @@ theorem reproduce_iff (law : StructuralCopying.Law) (parent : Strand)
       Copying.Supplies parent.cells r.pool ∧ StructuralCopying.cost law none parent.cells + 1 ≤ r.free := by
   have h := Copying.releases_iff (StructuralCopying.charge law) 1 none [] parent.cells r.pool r.free
     r.spent
-  rw [← view_copy law parent hp hn r, ← cost_eq] at h
+  rw [← view_copy law parent hp hn r, ← use_eq] at h
   unfold StructuralCopying.reproduce StructuralCopying.release
   constructor
   · intro hr
@@ -193,8 +193,8 @@ theorem reproduce_iff (law : StructuralCopying.Law) (parent : Strand)
 pool. -/
 theorem template_pool_reproduce_iff (law : StructuralCopying.Law) (parent : Strand)
     (hp : parent.bonds = path parent.cells.length) (hn : parent.cells ≠ [])
-    (tail : List Bool) (free spent : Nat) :
-    (StructuralCopying.reproduce law parent ⟨parent.cells ++ tail, free, spent⟩).1 = true ↔
+    (tail : List Bool) (free used : Nat) :
+    (StructuralCopying.reproduce law parent ⟨parent.cells ++ tail, free, used⟩).1 = true ↔
       StructuralCopying.cost law none parent.cells + 1 ≤ free :=
   (reproduce_iff law parent hp hn _).trans
     ⟨fun h => h.2, fun h => ⟨supplies_prefix _ _, h⟩⟩
@@ -204,7 +204,7 @@ theorem release_view (w : StructuralCopying.CopyState) (filled : w.pending = [] 
     (StructuralCopying.release w).2.supply =
       ⟨w.supply.pool, cond (Copying.released 1 (view w)) (w.supply.free - 1) w.supply.free,
         cond (Copying.released 1 (view w)) (w.supply.spent + 1) w.supply.spent⟩ := by
-  rcases w with ⟨prev, pending, built, ⟨pool, free, spent⟩⟩
+  rcases w with ⟨prev, pending, built, ⟨pool, free, used⟩⟩
   cases pending with
   | nil =>
     have ne := filled rfl
@@ -246,8 +246,8 @@ theorem batch_view (law : StructuralCopying.Law) : ∀ (ps : List Strand) (r : S
     have supply' : (StructuralCopying.reproduce law p r).2.supply =
         ⟨(copied law p r).pool, cond (Copying.released 1 (copied law p r)) ((copied law p r).free - 1)
           (copied law p r).free,
-         cond (Copying.released 1 (copied law p r)) ((copied law p r).spent + 1)
-          (copied law p r).spent⟩ := by
+         cond (Copying.released 1 (copied law p r)) ((copied law p r).used + 1)
+          (copied law p r).used⟩ := by
       rw [← e]
       exact supply
     have ih := batch_view law ps (StructuralCopying.reproduce law p r).2.supply
@@ -259,28 +259,28 @@ theorem batch_view (law : StructuralCopying.Law) : ∀ (ps : List Strand) (r : S
         Copying.released 1 (copied law p r) ::
           (Copying.batch (StructuralCopying.charge law) 1 (ps.map Strand.cells) (copied law p r).pool
             (cond (Copying.released 1 (copied law p r)) ((copied law p r).free - 1) (copied law p r).free)
-            (cond (Copying.released 1 (copied law p r)) ((copied law p r).spent + 1)
-              (copied law p r).spent)).1
+            (cond (Copying.released 1 (copied law p r)) ((copied law p r).used + 1)
+              (copied law p r).used)).1
       rw [flag', supply']
       exact congrArg _ ih.1
     · show (StructuralCopying.batch law ps (StructuralCopying.reproduce law p r).2.supply).2 =
         ⟨(Copying.batch (StructuralCopying.charge law) 1 (ps.map Strand.cells) (copied law p r).pool
             (cond (Copying.released 1 (copied law p r)) ((copied law p r).free - 1) (copied law p r).free)
-            (cond (Copying.released 1 (copied law p r)) ((copied law p r).spent + 1)
-              (copied law p r).spent)).2.1,
+            (cond (Copying.released 1 (copied law p r)) ((copied law p r).used + 1)
+              (copied law p r).used)).2.1,
          (Copying.batch (StructuralCopying.charge law) 1 (ps.map Strand.cells) (copied law p r).pool
             (cond (Copying.released 1 (copied law p r)) ((copied law p r).free - 1) (copied law p r).free)
-            (cond (Copying.released 1 (copied law p r)) ((copied law p r).spent + 1)
-              (copied law p r).spent)).2.2.1,
+            (cond (Copying.released 1 (copied law p r)) ((copied law p r).used + 1)
+              (copied law p r).used)).2.2.1,
          (Copying.batch (StructuralCopying.charge law) 1 (ps.map Strand.cells) (copied law p r).pool
             (cond (Copying.released 1 (copied law p r)) ((copied law p r).free - 1) (copied law p r).free)
-            (cond (Copying.released 1 (copied law p r)) ((copied law p r).spent + 1)
-              (copied law p r).spent)).2.2.2⟩
+            (cond (Copying.released 1 (copied law p r)) ((copied law p r).used + 1)
+              (copied law p r).used)).2.2.2⟩
       rw [supply']
       exact ih.2
 
 /-- **One shared pool.** Every strand of a batch is released exactly when the pool supplies all
-their tokens together and the support covers all their charges and releases. -/
+their tokens together and the support covers all their draws and releases. -/
 theorem batch_all_released_iff (law : StructuralCopying.Law) (ps : List Strand) (r : Supply)
     (shaped : ∀ p, p ∈ ps → p.bonds = path p.cells.length ∧ p.cells ≠ []) :
     Copying.Every ((StructuralCopying.batch law ps r).1.map Prod.fst) ↔
@@ -289,8 +289,8 @@ theorem batch_all_released_iff (law : StructuralCopying.Law) (ps : List Strand) 
           r.free := by
   rw [(batch_view law ps r shaped).1]
   have fe : (fun w => StructuralCopying.cost law none w + 1) =
-      (fun w => Copying.cost (StructuralCopying.charge law) none w + 1) :=
-    funext fun w => congrArg (· + 1) (cost_eq law none w)
+      (fun w => Copying.use (StructuralCopying.charge law) none w + 1) :=
+    funext fun w => congrArg (· + 1) (use_eq law none w)
   rw [fe]
   exact Copying.batch_all_iff (StructuralCopying.charge law) 1 _ r.pool r.free r.spent
 
@@ -313,28 +313,28 @@ theorem batch_all_released_swap (law : StructuralCopying.Law) (pre post : List S
   exact Copying.batch_all_swap (StructuralCopying.charge law) 1 _ _ _ _ r.pool r.free r.spent
 
 /-- **Local ranking** of the alternating and clustered strands, an instance of
-`Copying.cost_lt_iff`. -/
+`Copying.use_lt_iff`. -/
 theorem local_ranking_from_law (law : StructuralCopying.Law) :
     StructuralCopying.cost law none StructuralCopying.alternating.cells <
         StructuralCopying.cost law none StructuralCopying.clustered.cells ↔
       law.unequal < law.equal := by
-  rw [cost_pair_eq, cost_pair_eq]
-  exact Copying.cost_lt_iff 1 law.equal law.unequal (x := false) (y := false)
+  rw [use_pair_eq, use_pair_eq]
+  exact Copying.use_lt_iff 1 law.equal law.unequal (x := false) (y := false)
     (l := [false, true, true]) (m := [true, false, true]) rfl (d := 2) rfl (by decide)
 
-/-- **The third arrangement**, an instance of `Copying.cost_midpoint`. -/
+/-- **The third arrangement**, an instance of `Copying.use_midpoint`. -/
 theorem third_structure_from_law (law : StructuralCopying.Law) :
     2 * (StructuralCopying.cost law none StructuralCopying.mixed.cells + 1) =
       (StructuralCopying.cost law none StructuralCopying.alternating.cells + 1) +
         (StructuralCopying.cost law none StructuralCopying.clustered.cells + 1) := by
-  have h := Copying.cost_midpoint 1 law.equal law.unequal (x := false) (y := false) (z := false)
+  have h := Copying.use_midpoint 1 law.equal law.unequal (x := false) (y := false) (z := false)
     (l := [true, false, true]) (m := [true, true, false]) (k := [false, true, true]) rfl rfl rfl
-  rw [cost_pair_eq, cost_pair_eq, cost_pair_eq]
-  show 2 * (Copying.cost (Copying.pairCharge 1 law.equal law.unequal) none
+  rw [use_pair_eq, use_pair_eq, use_pair_eq]
+  show 2 * (Copying.use (Copying.pairDraw 1 law.equal law.unequal) none
         (false :: [true, true, false]) + 1) =
-      (Copying.cost (Copying.pairCharge 1 law.equal law.unequal) none
+      (Copying.use (Copying.pairDraw 1 law.equal law.unequal) none
         (false :: [true, false, true]) + 1) +
-      (Copying.cost (Copying.pairCharge 1 law.equal law.unequal) none
+      (Copying.use (Copying.pairDraw 1 law.equal law.unequal) none
         (false :: [false, true, true]) + 1)
   omega
 
@@ -358,9 +358,9 @@ theorem length_alternatingFrom : ∀ (b : Bool) (n : Nat), (alternatingFrom b n)
 /-- Every attachment draws one unit. -/
 def unit : Option Bool → Bool → Nat := fun _ _ => 1
 
-theorem cost_unit : ∀ (p : Option Bool) (w : List Bool), Copying.cost unit p w = w.length
+theorem use_unit : ∀ (p : Option Bool) (w : List Bool), Copying.use unit p w = w.length
   | _, [] => rfl
-  | _, _ :: xs => (Nat.add_comm 1 _).trans (congrArg (· + 1) (cost_unit _ xs))
+  | _, _ :: xs => (Nat.add_comm 1 _).trans (congrArg (· + 1) (use_unit _ xs))
 
 theorem grow_fixed (s : Strand) (r : Supply) (fixed : attach s r = (s, r)) :
     ∀ n, grow n s r = (s, r)
@@ -376,9 +376,9 @@ def ofGrow (t : Strand × Supply) : List Bool × List Bool × Nat × Nat :=
 
 /-- The product and supply of a core copy. -/
 def ofScan (c : Copying.Scan Bool) : List Bool × List Bool × Nat × Nat :=
-  (c.built, c.pool, c.free, c.spent)
+  (c.built, c.pool, c.free, c.used)
 
-/-- End attachment is the core copy of the alternating word with unit charges. -/
+/-- End attachment is the core copy of the alternating word with unit draws. -/
 theorem grow_view : ∀ (n : Nat) (s : Strand) (r : Supply) (prev : Option Bool),
     s.cells.length + n ≤ 8 →
       ofGrow (grow n s r) =
@@ -426,7 +426,7 @@ theorem grow_iff (n : Nat) (s : Strand) (r : Supply) (room : s.cells.length + n 
       Copying.Supplies (alternatingFrom (wanted s) n) r.pool ∧ n ≤ r.free := by
   rw [show (grow n s r).1.cells = _ from congrArg Prod.fst (grow_view n s r none room)]
   have h := Copying.built_iff unit none s.cells (alternatingFrom (wanted s) n) r.pool r.free r.spent
-  rw [cost_unit, length_alternatingFrom] at h
+  rw [use_unit, length_alternatingFrom] at h
   exact h
 
 /-- From the empty chain, the mature chain forms exactly when the pool holds at least four of
@@ -440,53 +440,53 @@ theorem required_eq : ∀ n k : Nat, Copying.required n k = RecurrentAssembly.re
   | 0, _ => rfl
   | n + 1, k => congrArg (k + ·) (required_eq n (2 * k))
 
-theorem attach_spent (s : Strand) (r : Supply) :
+theorem attach_used (s : Strand) (r : Supply) :
     (attach s r).2.spent + s.cells.length = r.spent + (attach s r).1.cells.length := by
   unfold attach
   split <;> simp <;> omega
 
-theorem grow_spent : ∀ (n : Nat) (s : Strand) (r : Supply),
+theorem grow_used : ∀ (n : Nat) (s : Strand) (r : Supply),
     (grow n s r).2.spent + s.cells.length = r.spent + (grow n s r).1.cells.length
   | 0, _, _ => rfl
   | n + 1, s, r => by
-    have a := attach_spent s r
-    have g := grow_spent n (attach s r).1 (attach s r).2
+    have a := attach_used s r
+    have g := grow_used n (attach s r).1 (attach s r).2
     show (grow n (attach s r).1 (attach s r).2).2.spent + s.cells.length =
       r.spent + (grow n (attach s r).1 (attach s r).2).1.cells.length
     omega
 
-/-- Each attachment and each cleavage draws one unit: support spent grows with size plus
+/-- Each attachment and each cleavage draws one unit: support used grows with size plus
 number of chains. -/
-theorem reproduce_spent (s : Strand) (r : Supply) :
+theorem reproduce_used (s : Strand) (r : Supply) :
     (reproduce s r).2.spent + s.cells.length + 1 =
       r.spent + size (reproduce s r).1 + (reproduce s r).1.length := by
   unfold reproduce
   split
   · rename_i h
-    have ha := grow_spent 4 (fragment s 0 4) ⟨r.pool, r.free - 1, r.spent + 1⟩
-    have hb := grow_spent 4 (fragment s 4 4) (grow 4 (fragment s 0 4) ⟨r.pool, r.free - 1, r.spent + 1⟩).2
+    have ha := grow_used 4 (fragment s 0 4) ⟨r.pool, r.free - 1, r.spent + 1⟩
+    have hb := grow_used 4 (fragment s 4 4) (grow 4 (fragment s 0 4) ⟨r.pool, r.free - 1, r.spent + 1⟩).2
     simp only [size, fragment, List.drop_zero, List.length_take, List.length_drop, h.1] at *
     simp only [List.length_cons, List.length_nil]
     omega
   · simp [size]
 
-theorem generation_spent : ∀ (ss : List Strand) (r : Supply),
+theorem generation_used : ∀ (ss : List Strand) (r : Supply),
     (generation ss r).2.spent + size ss + ss.length =
       r.spent + size (generation ss r).1 + (generation ss r).1.length
   | [], _ => rfl
   | s :: ss, r => by
-    have h := reproduce_spent s r
-    have hi := generation_spent ss (reproduce s r).2
+    have h := reproduce_used s r
+    have hi := generation_used ss (reproduce s r).2
     simp only [generation, size_append, size, List.length_append, List.length_cons]
     omega
 
-theorem rounds_spent : ∀ (n : Nat) (ss : List Strand) (r : Supply),
+theorem rounds_used : ∀ (n : Nat) (ss : List Strand) (r : Supply),
     (rounds n ss r).2.spent + size ss + ss.length =
       r.spent + size (rounds n ss r).1 + (rounds n ss r).1.length
   | 0, _, _ => rfl
   | n + 1, ss, r => by
-    have h := generation_spent ss r
-    have hi := rounds_spent n (generation ss r).1 (generation ss r).2
+    have h := generation_used ss r
+    have hi := rounds_used n (generation ss r).1 (generation ss r).2
     show (rounds n (generation ss r).1 (generation ss r).2).2.spent + size ss + ss.length =
       r.spent + size (rounds n (generation ss r).1 (generation ss r).2).1 +
         (rounds n (generation ss r).1 (generation ss r).2).1.length
@@ -494,39 +494,39 @@ theorem rounds_spent : ∀ (n : Nat) (ss : List Strand) (r : Supply),
 
 /-- **Doubling rounds.** From `k` mature chains with the material for `n` rounds, the rounds
 reach `k * 2 ^ n` mature chains exactly when the support covers `9 * required n k`. -/
-theorem rounds_mature_iff (n k : Nat) (tail : List Bool) (free spent : Nat) :
-    (rounds n (List.replicate k mature) ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, spent⟩).1 =
+theorem rounds_mature_iff (n k : Nat) (tail : List Bool) (free used : Nat) :
+    (rounds n (List.replicate k mature) ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, used⟩).1 =
         List.replicate (k * 2 ^ n) mature ↔
       9 * RecurrentAssembly.required n k ≤ free := by
   constructor
   · intro h
-    have hs := rounds_spent n (List.replicate k mature)
-      ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, spent⟩
+    have hs := rounds_used n (List.replicate k mature)
+      ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, used⟩
     have ha := (rounds_accounts n (List.replicate k mature)
-      ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, spent⟩).2
+      ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, used⟩).2
     rw [h, size_replicate, size_replicate, List.length_replicate, List.length_replicate] at hs
     have g := required_as_growth n k
     dsimp only at ha hs
     revert hs ha g
     generalize (rounds n (List.replicate k mature)
-      ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, spent⟩).2 = r'
+      ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, used⟩).2 = r'
     generalize k * 2 ^ n = K
     generalize RecurrentAssembly.required n k = R
     intro hs ha g
     omega
   · intro h
-    have e := supported_rounds n k tail (free - 9 * RecurrentAssembly.required n k) spent
+    have e := supported_rounds n k tail (free - 9 * RecurrentAssembly.required n k) used
     rw [Nat.sub_add_cancel h] at e
     rw [e]
 
 /-- **The rounds follow the core's doubling.** The machine reaches `k * 2 ^ n` mature chains
 exactly when the doubling process with draw 9 runs `n` rounds from `k` units and the free
 support. -/
-theorem rounds_follow_doubling (n k : Nat) (tail : List Bool) (free spent : Nat) :
-    (rounds n (List.replicate k mature) ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, spent⟩).1 =
+theorem rounds_follow_doubling (n k : Nat) (tail : List Bool) (free used : Nat) :
+    (rounds n (List.replicate k mature) ⟨blocks (RecurrentAssembly.required n k) ++ tail, free, used⟩).1 =
         List.replicate (k * 2 ^ n) mature ↔
       ∃ t, Trace (Copying.doubling 9) (k, free) (Copying.rounds n) t :=
-  (rounds_mature_iff n k tail free spent).trans
+  (rounds_mature_iff n k tail free used).trans
     ⟨fun h => ⟨_, Copying.doubling_runs 9 n k free (by rw [required_eq]; exact h)⟩,
      fun ⟨t, path⟩ => by
       have h := ((Copying.doubling_iff 9 n k free t).mp path).1
@@ -560,11 +560,11 @@ actual contacts. -/
 theorem tick_work_view (law : StructuralCopying.Law) (s : CopyingRegistration.State) :
     view (CopyingRegistration.tick law s).work =
       Copying.readTick (StructuralCopying.charge law) (CopyingRegistration.readAt s) (view s.work) := by
-  rcases s with ⟨template, ⟨prev, pending, built, ⟨pool, free, spent⟩⟩, contacts, spare⟩
-  show view (CopyingRegistration.tick law ⟨template, ⟨prev, pending, built, ⟨pool, free, spent⟩⟩,
+  rcases s with ⟨template, ⟨prev, pending, built, ⟨pool, free, used⟩⟩, contacts, spare⟩
+  show view (CopyingRegistration.tick law ⟨template, ⟨prev, pending, built, ⟨pool, free, used⟩⟩,
       contacts, spare⟩).work =
-    Copying.readStep (StructuralCopying.charge law) ⟨prev, pending, built.cells, pool, free, spent⟩
-      (CopyingRegistration.readAt ⟨template, ⟨prev, pending, built, ⟨pool, free, spent⟩⟩,
+    Copying.readStep (StructuralCopying.charge law) ⟨prev, pending, built.cells, pool, free, used⟩
+      (CopyingRegistration.readAt ⟨template, ⟨prev, pending, built, ⟨pool, free, used⟩⟩,
         contacts, spare⟩ built.cells.length)
   unfold CopyingRegistration.tick
   generalize CopyingRegistration.readAt _ built.cells.length = o
@@ -596,7 +596,7 @@ theorem operate_view (law : StructuralCopying.Law) : ∀ (n : Nat) (s : CopyingR
 
 /-- **Reading through contacts.** For every registration state, as many copy moves as a word has
 tokens extend the product by that word exactly when each site reads the word's token through
-the actual contacts, the pool supplies the word and the support covers its charges (from
+the actual contacts, the pool supplies the word and the support covers what it draws (from
 `Copying.reading_iff`). -/
 theorem operate_copies_iff (law : StructuralCopying.Law) (s : CopyingRegistration.State)
     (word : List Bool) (len : s.work.pending.length = word.length) :
@@ -607,7 +607,7 @@ theorem operate_copies_iff (law : StructuralCopying.Law) (s : CopyingRegistratio
   have h := Copying.reading_iff (StructuralCopying.charge law) (CopyingRegistration.readAt s) word
     s.work.pending s.work.previous s.work.built.cells s.work.supply.pool s.work.supply.free
     s.work.supply.spent len
-  rw [← cost_eq] at h
+  rw [← use_eq] at h
   have h' : (view (CopyingRegistration.operate law word.length s).work).built =
       s.work.built.cells ++ word ↔
         Copying.Reads (CopyingRegistration.readAt s) s.work.built.cells.length word ∧
@@ -630,11 +630,11 @@ theorem reads_of_getElem (read : Nat → Option Bool) : ∀ (word : List Bool) (
 /-- Complete registration is the instance: the product is the template's tokens, for every
 template (the old inheritance theorem adds the template's bonds). -/
 theorem registered_copy_cells (law : StructuralCopying.Law) (p : Strand) (tail : List Bool)
-    (free spent : Nat) (contacts : List (Nat × Nat)) (spare : Nat)
+    (free used : Nat) (contacts : List (Nat × Nat)) (spare : Nat)
     (hreg : CopyingRegistration.Registered ⟨p, StructuralCopying.start p
-      ⟨p.cells ++ tail, free + StructuralCopying.cost law none p.cells, spent⟩, contacts, spare⟩) :
+      ⟨p.cells ++ tail, free + StructuralCopying.cost law none p.cells, used⟩, contacts, spare⟩) :
     (CopyingRegistration.operate law p.cells.length ⟨p, StructuralCopying.start p
-      ⟨p.cells ++ tail, free + StructuralCopying.cost law none p.cells, spent⟩, contacts, spare⟩).work.built.cells =
+      ⟨p.cells ++ tail, free + StructuralCopying.cost law none p.cells, used⟩, contacts, spare⟩).work.built.cells =
       p.cells :=
   (operate_copies_iff law _ p.cells rfl).mpr
     ⟨reads_of_getElem _ p.cells 0 fun i hi => by rw [Nat.zero_add]; exact hreg i hi,
@@ -689,7 +689,7 @@ theorem product_change_passes_copy (law : StructuralCopying.Law) {s t : CopyingR
     (changed : t.work.built ≠ s.work.built) : ∃ e, e ∈ plan ∧ copyGate e = true :=
   Gated.change_passes_gate (product_gated law) path changed
 
-/-- Connectors with spare ones, material in product and pool, support free and spent. -/
+/-- Connectors with spare ones, material in product and pool, support free and used. -/
 def totals (s : CopyingRegistration.State) : Nat × Nat × Nat :=
   (s.contacts.length + s.spare, s.work.built.cells.length + s.work.supply.pool.length,
     s.work.supply.free + s.work.supply.spent)
@@ -737,7 +737,7 @@ theorem exchange_view (i : Nat) (x : Bool) (w : StructuralCopying.CopyState) :
     · rw [if_neg c, if_neg fun d => c ⟨d.1, (mem_iff_pos _ _).mpr d.2.1, d.2.2⟩]
 
 /-- One inspection of the correction machine is one core inspection against its reference with
-unit charges. -/
+unit draws. -/
 theorem inspect_view (i : Nat) (s : CopyingCorrection.State) :
     view (CopyingCorrection.inspect i s).assembly.work =
       Copying.inspect 1 1 (CopyingCorrection.reference s) i (view s.assembly.work) := by
@@ -784,7 +784,7 @@ def withWork (s : CopyingCorrection.State) (w : StructuralCopying.CopyState) : C
 
 /-- A core copy as a machine copy with an unbonded product. -/
 def ofCopy (c : Copying.Scan Bool) : StructuralCopying.CopyState :=
-  ⟨c.previous, c.pending, ⟨c.built, []⟩, ⟨c.pool, c.free, c.spent⟩⟩
+  ⟨c.previous, c.pending, ⟨c.built, []⟩, ⟨c.pool, c.free, c.used⟩⟩
 
 /-- **Inspection never increases the defects exactly where the reference is faithful.** For
 every correction state and site, inspecting the site never increases the defects against the
@@ -839,7 +839,7 @@ theorem scan_faithful_instance (s : CopyingCorrection.State) (is : List Nat)
   scan_le_from_law is s fun i _ => faithfulAt_of_faithful s h i
 
 /-- The single-site criterion is an instance of `Copying.inspect_matches_iff` with unit
-charges. -/
+draws. -/
 theorem matches_reference_from_law (s : CopyingCorrection.State) (i : Nat) (x old : Bool)
     (hr : CopyingCorrection.reference s i = some x)
     (hb : s.assembly.work.built.cells[i]? = some old) (ne : old ≠ x) :

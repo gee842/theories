@@ -5,34 +5,33 @@ import Becoming.Gated
 
 A copy reads a template in order and, for each token, attaches a matching component taken from
 a pool, drawing support for the attachment. This module states, for every alphabet with
-decidable equality and every law of charges, when such a copy completes, what a copy reading
+decidable equality and every law of draws, when such a copy completes, what a copy reading
 through contacts reproduces, what inspection against a reference does to the product, and what
 repeated doubling draws. The constructed copy machines of the periphery are instances
 (`CopyingInstances`).
 
 * **Exact copying.** A pool supplies a word where it holds every token at least as often as the
   word uses it (`Supplies`, a condition on each token's count). A copy of a word completes
-  exactly when the pool supplies the word and the support covers the charges of its
-  attachments (`completes_iff`), and its product is then the word (`built_iff`); it then holds
-  the word, the pool without it, and the support
-  less those charges (`copies`). With `r` left over to release the product, exactly when the
-  support covers the charges and `r` (`releases_iff`). A stalled copy stays where it stalled
+  exactly when the pool supplies the word and the support covers what its attachments draw
+  (`completes_iff`), and its product is then the word (`built_iff`); it then holds the word,
+  the pool without it, and the support less what was drawn (`copies`). With `r` left over to
+  release the product, exactly when the support covers the draws and `r` (`releases_iff`). A stalled copy stays where it stalled
   (`steps_fixed`).
 * **Copies from one shared pool.** Copying words in turn from one pool and support, every copy
   is released exactly when the pool supplies all the words together and the support covers all
-  their charges and releases (`batch_all_iff`); exchanging adjacent words, and so any
+  their draws and releases (`batch_all_iff`); exchanging adjacent words, and so any
   reordering, leaves this as it was (`batch_all_swap`), though which copies are released can
   change. The pool supplies one word followed by another exactly when it supplies the first and
   its remainder the second (`supplies_append_iff`).
-* **Local charges.** Where the first attachment draws `first` and each further one `same` after
-  a like token and `differ` after an unlike one (`pairCharge`), a word's charges depend on the
-  law only through its number of unlike adjacent pairs (`cost_word`). So among words of one
-  length, costs are in arithmetic progression where the unlike pairs are (`cost_midpoint`),
-  and the word with more unlike pairs costs less exactly when an unlike attachment draws less
-  (`cost_lt_iff`).
+* **Local draws.** Where the first attachment draws `first` and each further one `same` after
+  a like token and `differ` after an unlike one (`pairDraw`), a word's use of support depends
+  on the law only through its number of unlike adjacent pairs (`use_word`). So among words of
+  one length, uses are in arithmetic progression where the unlike pairs are (`use_midpoint`),
+  and the word with more unlike pairs draws less exactly when an unlike attachment draws less
+  (`use_lt_iff`).
 * **Reading through contacts.** A copy that attaches at each site what a registration reads
   there reproduces a word exactly when every site reads the word's token, the pool supplies the
-  word and the support covers its charges (`reading_iff`). Its product only grows
+  word and the support covers what it draws (`reading_iff`). Its product only grows
   (`readSteps_extends`).
 * **The product only grows.** For every process, an output extended by every step is extended
   along every course, and conversely (`extends_along_iff`).
@@ -41,7 +40,7 @@ repeated doubling draws. The constructed copy machines of the periphery are inst
   support, exactly when the reference agrees with the template at that site (`inspect_le_iff`);
   every scan of such sites never increases them (`scan_le`). At a defective site, the
   inspection leaves the reference's token exactly when the pool holds it and the support covers
-  both charges (`inspect_matches_iff`). A product of the template's length has no defect
+  both draws (`inspect_matches_iff`). A product of the template's length has no defect
   exactly when it is the template (`defects_zero_iff`). An exchange keeps the count of every
   token across product and pool (`exchange_keeps_counts`).
 * **Doubling.** Where every unit draws `d` from one stock and becomes two, `n` rounds from `k`
@@ -287,37 +286,37 @@ theorem supplies_cons_iff {x : α} {xs pool : List α} :
 /-! ## Exact copying -/
 
 /-- A copy in progress: the token last attached, the tokens still to attach, the product, the
-pool, and the support free and spent. -/
+pool, and the support free and used. -/
 structure Scan (α : Type u) where
   previous : Option α
   pending : List α
   built : List α
   pool : List α
   free : Nat
-  spent : Nat
+  used : Nat
 
-variable (charge : Option α → α → Nat)
+variable (draw : Option α → α → Nat)
 
 /-- One move of the copy: the next pending token is attached where the pool holds it and the
-free support covers its charge after the token last attached; otherwise nothing changes. -/
+free support covers what it draws after the token last attached; otherwise nothing changes. -/
 def tick (s : Scan α) : Scan α :=
   match s.pending with
   | [] => s
   | x :: xs =>
-    if 0 < countOf x s.pool ∧ charge s.previous x ≤ s.free then
-      ⟨some x, xs, s.built ++ [x], remove x s.pool, s.free - charge s.previous x,
-        s.spent + charge s.previous x⟩
+    if 0 < countOf x s.pool ∧ draw s.previous x ≤ s.free then
+      ⟨some x, xs, s.built ++ [x], remove x s.pool, s.free - draw s.previous x,
+        s.used + draw s.previous x⟩
     else s
 
 /-- `n` moves of the copy. -/
 def steps : Nat → Scan α → Scan α
   | 0, s => s
-  | n + 1, s => steps n (tick charge s)
+  | n + 1, s => steps n (tick draw s)
 
 /-- What a word's attachments draw in all, after the token `previous`. -/
-def cost : Option α → List α → Nat
+def use : Option α → List α → Nat
   | _, [] => 0
-  | p, x :: xs => charge p x + cost (some x) xs
+  | p, x :: xs => draw p x + use (some x) xs
 
 /-- The token last attached after attaching a word. -/
 def lastOr : Option α → List α → Option α
@@ -329,118 +328,118 @@ def removeAll : List α → List α → List α
   | [], pool => pool
   | x :: xs, pool => removeAll xs (remove x pool)
 
-theorem tick_cons (prev : Option α) (x : α) (xs built pool : List α) (free spent : Nat) :
-    tick charge ⟨prev, x :: xs, built, pool, free, spent⟩ =
-      if 0 < countOf x pool ∧ charge prev x ≤ free then
-        ⟨some x, xs, built ++ [x], remove x pool, free - charge prev x, spent + charge prev x⟩
-      else ⟨prev, x :: xs, built, pool, free, spent⟩ := rfl
+theorem tick_cons (prev : Option α) (x : α) (xs built pool : List α) (free used : Nat) :
+    tick draw ⟨prev, x :: xs, built, pool, free, used⟩ =
+      if 0 < countOf x pool ∧ draw prev x ≤ free then
+        ⟨some x, xs, built ++ [x], remove x pool, free - draw prev x, used + draw prev x⟩
+      else ⟨prev, x :: xs, built, pool, free, used⟩ := rfl
 
 /-- **A stalled copy stays where it stalled.** -/
-theorem steps_fixed {s : Scan α} (fixed : tick charge s = s) : ∀ n, steps charge n s = s
+theorem steps_fixed {s : Scan α} (fixed : tick draw s = s) : ∀ n, steps draw n s = s
   | 0 => rfl
-  | n + 1 => (congrArg (steps charge n) fixed).trans (steps_fixed fixed n)
+  | n + 1 => (congrArg (steps draw n) fixed).trans (steps_fixed fixed n)
 
 /-- **A supplied and covered copy completes**: it holds the word, the pool without it, and the
-support less the charges. -/
-theorem copies : ∀ (prev : Option α) (built word pool : List α) (free spent : Nat),
-    Supplies word pool → cost charge prev word ≤ free →
-      steps charge word.length ⟨prev, word, built, pool, free, spent⟩ =
+support less what was drawn. -/
+theorem copies : ∀ (prev : Option α) (built word pool : List α) (free used : Nat),
+    Supplies word pool → use draw prev word ≤ free →
+      steps draw word.length ⟨prev, word, built, pool, free, used⟩ =
         ⟨lastOr prev word, [], built ++ word, removeAll word pool,
-          free - cost charge prev word, spent + cost charge prev word⟩
-  | prev, built, [], pool, free, spent, _, _ => by
-    exact congrArg (fun l => (⟨prev, [], l, pool, free, spent⟩ : Scan α)) (append_empty built).symm
-  | prev, built, x :: xs, pool, free, spent, supplies, covered => by
+          free - use draw prev word, used + use draw prev word⟩
+  | prev, built, [], pool, free, used, _, _ => by
+    exact congrArg (fun l => (⟨prev, [], l, pool, free, used⟩ : Scan α)) (append_empty built).symm
+  | prev, built, x :: xs, pool, free, used, supplies, covered => by
     have ⟨pos, rest⟩ := supplies_cons_iff.mp supplies
     have ⟨first, more⟩ := add_le_iff.mp
-      (show charge prev x + cost charge (some x) xs ≤ free from covered)
-    show steps charge xs.length (tick charge ⟨prev, x :: xs, built, pool, free, spent⟩) = _
+      (show draw prev x + use draw (some x) xs ≤ free from covered)
+    show steps draw xs.length (tick draw ⟨prev, x :: xs, built, pool, free, used⟩) = _
     rw [tick_cons, if_pos ⟨pos, first⟩,
       copies (some x) (built ++ [x]) xs (remove x pool) _ _ rest more,
       append_regroup, sub_twice, Nat.add_assoc]
     all_goals rfl
 
 /-- A completed copy was supplied and covered. -/
-theorem supplied_of_completes : ∀ (prev : Option α) (built word pool : List α) (free spent : Nat),
-    (steps charge word.length ⟨prev, word, built, pool, free, spent⟩).pending = [] →
-      Supplies word pool ∧ cost charge prev word ≤ free
+theorem supplied_of_completes : ∀ (prev : Option α) (built word pool : List α) (free used : Nat),
+    (steps draw word.length ⟨prev, word, built, pool, free, used⟩).pending = [] →
+      Supplies word pool ∧ use draw prev word ≤ free
   | _, _, [], pool, free, _, _ => ⟨supplies_nil pool, Nat.zero_le free⟩
-  | prev, built, x :: xs, pool, free, spent, done => by
-    have done' : (steps charge xs.length
-        (tick charge ⟨prev, x :: xs, built, pool, free, spent⟩)).pending = [] := done
-    match Nat.decLt 0 (countOf x pool), Nat.decLe (charge prev x) free with
+  | prev, built, x :: xs, pool, free, used, done => by
+    have done' : (steps draw xs.length
+        (tick draw ⟨prev, x :: xs, built, pool, free, used⟩)).pending = [] := done
+    match Nat.decLt 0 (countOf x pool), Nat.decLe (draw prev x) free with
     | isTrue pos, isTrue first =>
       rw [tick_cons, if_pos ⟨pos, first⟩] at done'
       have ⟨rest, more⟩ := supplied_of_completes (some x) (built ++ [x]) xs _ _ _ done'
       exact ⟨supplies_cons_iff.mpr ⟨pos, rest⟩, add_le_iff.mpr ⟨first, more⟩⟩
     | isFalse absent, _ =>
-      have fixed : tick charge ⟨prev, x :: xs, built, pool, free, spent⟩ =
-          ⟨prev, x :: xs, built, pool, free, spent⟩ :=
-        (tick_cons charge prev x xs built pool free spent).trans (if_neg fun h => absent h.1)
-      rw [fixed, steps_fixed charge fixed] at done'
+      have fixed : tick draw ⟨prev, x :: xs, built, pool, free, used⟩ =
+          ⟨prev, x :: xs, built, pool, free, used⟩ :=
+        (tick_cons draw prev x xs built pool free used).trans (if_neg fun h => absent h.1)
+      rw [fixed, steps_fixed draw fixed] at done'
       exact nomatch done'
     | isTrue _, isFalse over =>
-      have fixed : tick charge ⟨prev, x :: xs, built, pool, free, spent⟩ =
-          ⟨prev, x :: xs, built, pool, free, spent⟩ :=
-        (tick_cons charge prev x xs built pool free spent).trans (if_neg fun h => over h.2)
-      rw [fixed, steps_fixed charge fixed] at done'
+      have fixed : tick draw ⟨prev, x :: xs, built, pool, free, used⟩ =
+          ⟨prev, x :: xs, built, pool, free, used⟩ :=
+        (tick_cons draw prev x xs built pool free used).trans (if_neg fun h => over h.2)
+      rw [fixed, steps_fixed draw fixed] at done'
       exact nomatch done'
 
 /-- **Exact copying.** A copy of a word completes exactly when the pool supplies the word and
-the support covers the charges of its attachments. -/
-theorem completes_iff (prev : Option α) (built word pool : List α) (free spent : Nat) :
-    (steps charge word.length ⟨prev, word, built, pool, free, spent⟩).pending = [] ↔
-      Supplies word pool ∧ cost charge prev word ≤ free :=
-  ⟨supplied_of_completes charge prev built word pool free spent,
+the support covers what its attachments draw. -/
+theorem completes_iff (prev : Option α) (built word pool : List α) (free used : Nat) :
+    (steps draw word.length ⟨prev, word, built, pool, free, used⟩).pending = [] ↔
+      Supplies word pool ∧ use draw prev word ≤ free :=
+  ⟨supplied_of_completes draw prev built word pool free used,
    fun ⟨supplies, covered⟩ =>
-    (congrArg Scan.pending (copies charge prev built word pool free spent supplies covered)).trans rfl⟩
+    (congrArg Scan.pending (copies draw prev built word pool free used supplies covered)).trans rfl⟩
 
 /-- **The product is the word exactly when the copy is supplied and covered.** -/
-theorem built_iff : ∀ (prev : Option α) (built word pool : List α) (free spent : Nat),
-    (steps charge word.length ⟨prev, word, built, pool, free, spent⟩).built = built ++ word ↔
-      Supplies word pool ∧ cost charge prev word ≤ free
+theorem built_iff : ∀ (prev : Option α) (built word pool : List α) (free used : Nat),
+    (steps draw word.length ⟨prev, word, built, pool, free, used⟩).built = built ++ word ↔
+      Supplies word pool ∧ use draw prev word ≤ free
   | _, _, [], pool, free, _ =>
     ⟨fun _ => ⟨supplies_nil pool, Nat.zero_le free⟩, fun _ => (append_empty _).symm⟩
-  | prev, built, x :: xs, pool, free, spent =>
+  | prev, built, x :: xs, pool, free, used =>
     ⟨fun done => by
-      have done' : (steps charge xs.length
-          (tick charge ⟨prev, x :: xs, built, pool, free, spent⟩)).built = built ++ x :: xs := done
-      match Nat.decLt 0 (countOf x pool), Nat.decLe (charge prev x) free with
+      have done' : (steps draw xs.length
+          (tick draw ⟨prev, x :: xs, built, pool, free, used⟩)).built = built ++ x :: xs := done
+      match Nat.decLt 0 (countOf x pool), Nat.decLe (draw prev x) free with
       | isTrue pos, isTrue first =>
         rw [tick_cons, if_pos ⟨pos, first⟩] at done'
         have ⟨rest, more⟩ := (built_iff (some x) (built ++ [x]) xs _ _ _).mp
           (done'.trans (append_regroup built [x] xs).symm)
         exact ⟨supplies_cons_iff.mpr ⟨pos, rest⟩, add_le_iff.mpr ⟨first, more⟩⟩
       | isFalse absent, _ =>
-        have fixed : tick charge ⟨prev, x :: xs, built, pool, free, spent⟩ =
-            ⟨prev, x :: xs, built, pool, free, spent⟩ :=
-          (tick_cons charge prev x xs built pool free spent).trans (if_neg fun h => absent h.1)
-        rw [fixed, steps_fixed charge fixed] at done'
+        have fixed : tick draw ⟨prev, x :: xs, built, pool, free, used⟩ =
+            ⟨prev, x :: xs, built, pool, free, used⟩ :=
+          (tick_cons draw prev x xs built pool free used).trans (if_neg fun h => absent h.1)
+        rw [fixed, steps_fixed draw fixed] at done'
         exact absurd done' (ne_append_cons built x xs)
       | isTrue _, isFalse over =>
-        have fixed : tick charge ⟨prev, x :: xs, built, pool, free, spent⟩ =
-            ⟨prev, x :: xs, built, pool, free, spent⟩ :=
-          (tick_cons charge prev x xs built pool free spent).trans (if_neg fun h => over h.2)
-        rw [fixed, steps_fixed charge fixed] at done'
+        have fixed : tick draw ⟨prev, x :: xs, built, pool, free, used⟩ =
+            ⟨prev, x :: xs, built, pool, free, used⟩ :=
+          (tick_cons draw prev x xs built pool free used).trans (if_neg fun h => over h.2)
+        rw [fixed, steps_fixed draw fixed] at done'
         exact absurd done' (ne_append_cons built x xs),
      fun ⟨supplies, covered⟩ =>
-      congrArg Scan.built (copies charge prev built (x :: xs) pool free spent supplies covered)⟩
+      congrArg Scan.built (copies draw prev built (x :: xs) pool free used supplies covered)⟩
 
 /-- **Exact copying with release.** A copy completes with `r` free to release it exactly when
-the pool supplies the word and the support covers its charges and `r`. -/
-theorem releases_iff (r : Nat) (prev : Option α) (built word pool : List α) (free spent : Nat) :
-    ((steps charge word.length ⟨prev, word, built, pool, free, spent⟩).pending = [] ∧
-        r ≤ (steps charge word.length ⟨prev, word, built, pool, free, spent⟩).free) ↔
-      Supplies word pool ∧ cost charge prev word + r ≤ free :=
+the pool supplies the word and the support covers its draws and `r`. -/
+theorem releases_iff (r : Nat) (prev : Option α) (built word pool : List α) (free used : Nat) :
+    ((steps draw word.length ⟨prev, word, built, pool, free, used⟩).pending = [] ∧
+        r ≤ (steps draw word.length ⟨prev, word, built, pool, free, used⟩).free) ↔
+      Supplies word pool ∧ use draw prev word + r ≤ free :=
   ⟨fun ⟨done, left⟩ =>
-    have ⟨supplies, covered⟩ := supplied_of_completes charge prev built word pool free spent done
-    have left' : r ≤ free - cost charge prev word := by
-      rw [copies charge prev built word pool free spent supplies covered] at left
+    have ⟨supplies, covered⟩ := supplied_of_completes draw prev built word pool free used done
+    have left' : r ≤ free - use draw prev word := by
+      rw [copies draw prev built word pool free used supplies covered] at left
       exact left
     ⟨supplies, add_le_iff.mpr ⟨covered, left'⟩⟩,
    fun ⟨supplies, covered⟩ =>
     have ⟨within, left⟩ := add_le_iff.mp covered
     by
-      rw [copies charge prev built word pool free spent supplies within]
+      rw [copies draw prev built word pool free used supplies within]
       exact ⟨rfl, left⟩⟩
 
 /-! ## Copies from one shared pool -/
@@ -489,39 +488,39 @@ theorem released_iff (r : Nat) : ∀ t : Scan α, released r t = true ↔ t.pend
 empty product. A copy complete with `r` free is released, drawing `r`; one that is not keeps what
 it drew. The flags say which copies were released. -/
 def batch (r : Nat) : List (List α) → List α → Nat → Nat → List Bool × List α × Nat × Nat
-  | [], pool, free, spent => ([], pool, free, spent)
-  | w :: ws, pool, free, spent =>
-    let t := steps charge w.length ⟨none, w, [], pool, free, spent⟩
+  | [], pool, free, used => ([], pool, free, used)
+  | w :: ws, pool, free, used =>
+    let t := steps draw w.length ⟨none, w, [], pool, free, used⟩
     let ok := released r t
-    let rest := batch r ws t.pool (cond ok (t.free - r) t.free) (cond ok (t.spent + r) t.spent)
+    let rest := batch r ws t.pool (cond ok (t.free - r) t.free) (cond ok (t.used + r) t.used)
     (ok :: rest.1, rest.2)
 
 /-- **Copies from one shared pool.** Every copy of the batch is released exactly when the pool
-supplies all the words together and the support covers all their charges and releases. The
+supplies all the words together and the support covers all their draws and releases. The
 order of the words does not matter for this. -/
-theorem batch_all_iff (r : Nat) : ∀ (words : List (List α)) (pool : List α) (free spent : Nat),
-    Every (batch charge r words pool free spent).1 ↔
-      Supplies (joinAll words) pool ∧ totalOf (fun w => cost charge none w + r) words ≤ free
+theorem batch_all_iff (r : Nat) : ∀ (words : List (List α)) (pool : List α) (free used : Nat),
+    Every (batch draw r words pool free used).1 ↔
+      Supplies (joinAll words) pool ∧ totalOf (fun w => use draw none w + r) words ≤ free
   | [], pool, free, _ => ⟨fun _ => ⟨supplies_nil pool, Nat.zero_le free⟩, fun _ => trivial⟩
-  | w :: ws, pool, free, spent => by
-    show (released r (steps charge w.length ⟨none, w, [], pool, free, spent⟩) = true ∧
-        Every (batch charge r ws (steps charge w.length ⟨none, w, [], pool, free, spent⟩).pool
-          (cond (released r (steps charge w.length ⟨none, w, [], pool, free, spent⟩))
-            ((steps charge w.length ⟨none, w, [], pool, free, spent⟩).free - r)
-            (steps charge w.length ⟨none, w, [], pool, free, spent⟩).free)
-          (cond (released r (steps charge w.length ⟨none, w, [], pool, free, spent⟩))
-            ((steps charge w.length ⟨none, w, [], pool, free, spent⟩).spent + r)
-            (steps charge w.length ⟨none, w, [], pool, free, spent⟩).spent)).1) ↔
+  | w :: ws, pool, free, used => by
+    show (released r (steps draw w.length ⟨none, w, [], pool, free, used⟩) = true ∧
+        Every (batch draw r ws (steps draw w.length ⟨none, w, [], pool, free, used⟩).pool
+          (cond (released r (steps draw w.length ⟨none, w, [], pool, free, used⟩))
+            ((steps draw w.length ⟨none, w, [], pool, free, used⟩).free - r)
+            (steps draw w.length ⟨none, w, [], pool, free, used⟩).free)
+          (cond (released r (steps draw w.length ⟨none, w, [], pool, free, used⟩))
+            ((steps draw w.length ⟨none, w, [], pool, free, used⟩).used + r)
+            (steps draw w.length ⟨none, w, [], pool, free, used⟩).used)).1) ↔
       Supplies (w ++ joinAll ws) pool ∧
-        (cost charge none w + r) + totalOf (fun w => cost charge none w + r) ws ≤ free
-    match h : released r (steps charge w.length ⟨none, w, [], pool, free, spent⟩) with
+        (use draw none w + r) + totalOf (fun w => use draw none w + r) ws ≤ free
+    match h : released r (steps draw w.length ⟨none, w, [], pool, free, used⟩) with
     | true =>
-      have ⟨supplies, covered⟩ := (releases_iff charge r none [] w pool free spent).mp
+      have ⟨supplies, covered⟩ := (releases_iff draw r none [] w pool free used).mp
         ((released_iff r _).mp h)
       have within := (add_le_iff.mp covered).1
-      rw [copies charge none [] w pool free spent supplies within]
-      have ih := batch_all_iff r ws (removeAll w pool) (free - cost charge none w - r)
-        (spent + cost charge none w + r)
+      rw [copies draw none [] w pool free used supplies within]
+      have ih := batch_all_iff r ws (removeAll w pool) (free - use draw none w - r)
+        (used + use draw none w + r)
       exact ⟨fun ⟨_, every⟩ =>
           have ⟨s2, t2⟩ := ih.mp every
           ⟨(supplies_append_iff w (joinAll ws) pool).mpr ⟨supplies, s2⟩,
@@ -535,7 +534,7 @@ theorem batch_all_iff (r : Nat) : ∀ (words : List (List α)) (pool : List α) 
         have s1 := ((supplies_append_iff w (joinAll ws) pool).mp s).1
         have covered := (add_le_iff.mp total).1
         have done := (released_iff r _).mpr
-          ((releases_iff charge r none [] w pool free spent).mpr ⟨s1, covered⟩)
+          ((releases_iff draw r none [] w pool free used).mpr ⟨s1, covered⟩)
         nomatch h.symm.trans done⟩
 
 theorem countOf_joinAll_swap (a : α) (u v : List α) (post : List (List α)) :
@@ -557,22 +556,22 @@ theorem totalOf_swap (f : List α → Nat) (u v : List α) (post : List (List α
 
 /-- **The order does not decide whether all are released.** Exchanging two adjacent words of a
 batch, which generates every reordering, leaves whether every copy is released as it was. -/
-theorem batch_all_swap (r : Nat) (pre post : List (List α)) (u v pool : List α) (free spent : Nat) :
-    Every (batch charge r (pre ++ u :: v :: post) pool free spent).1 ↔
-      Every (batch charge r (pre ++ v :: u :: post) pool free spent).1 :=
-  (batch_all_iff charge r _ pool free spent).trans
+theorem batch_all_swap (r : Nat) (pre post : List (List α)) (u v pool : List α) (free used : Nat) :
+    Every (batch draw r (pre ++ u :: v :: post) pool free used).1 ↔
+      Every (batch draw r (pre ++ v :: u :: post) pool free used).1 :=
+  (batch_all_iff draw r _ pool free used).trans
     (Iff.trans
       ⟨fun ⟨s, t⟩ => ⟨fun a => Nat.le_trans (Nat.le_of_eq (countOf_joinAll_swap a u v post pre).symm)
           (s a), Nat.le_trans (Nat.le_of_eq (totalOf_swap _ u v post pre).symm) t⟩,
        fun ⟨s, t⟩ => ⟨fun a => Nat.le_trans (Nat.le_of_eq (countOf_joinAll_swap a u v post pre))
           (s a), Nat.le_trans (Nat.le_of_eq (totalOf_swap _ u v post pre)) t⟩⟩
-      (batch_all_iff charge r _ pool free spent).symm)
+      (batch_all_iff draw r _ pool free used).symm)
 
-/-! ## Local charges -/
+/-! ## Local draws -/
 
 /-- The first attachment draws `first`; each further one draws `same` after a like token and
 `differ` after an unlike one. -/
-def pairCharge (first same differ : Nat) : Option α → α → Nat
+def pairDraw (first same differ : Nat) : Option α → α → Nat
   | none, _ => first
   | some y, x => if y = x then same else differ
 
@@ -581,13 +580,13 @@ def unlikeFrom : α → List α → Nat
   | _, [] => 0
   | x, y :: rest => (if x = y then 0 else 1) + unlikeFrom y rest
 
-theorem cost_pair (first same differ : Nat) : ∀ (x : α) (l : List α),
-    cost (pairCharge first same differ) (some x) l + same * unlikeFrom x l =
+theorem use_pair (first same differ : Nat) : ∀ (x : α) (l : List α),
+    use (pairDraw first same differ) (some x) l + same * unlikeFrom x l =
       same * l.length + differ * unlikeFrom x l
   | _, [] => rfl
   | x, y :: rest => by
-    have ih := cost_pair first same differ y rest
-    show ((if x = y then same else differ) + cost (pairCharge first same differ) (some y) rest) +
+    have ih := use_pair first same differ y rest
+    show ((if x = y then same else differ) + use (pairDraw first same differ) (some y) rest) +
         same * ((if x = y then 0 else 1) + unlikeFrom y rest) =
       same * rest.length + same + differ * ((if x = y then 0 else 1) + unlikeFrom y rest)
     match decEq x y with
@@ -599,11 +598,11 @@ theorem cost_pair (first same differ : Nat) : ∀ (x : α) (l : List α),
         Nat.add_add_add_comm, ih, Nat.add_comm (same * rest.length) same,
         Nat.add_add_add_comm same (same * rest.length) differ, Nat.add_comm same differ]
 
-/-- **A word's charges depend on the law only through its unlike adjacent pairs.** -/
-theorem cost_word (first same differ : Nat) (x : α) (l : List α) :
-    cost (pairCharge first same differ) none (x :: l) + same * unlikeFrom x l =
+/-- **A word's use of support depends on the law only through its unlike adjacent pairs.** -/
+theorem use_word (first same differ : Nat) (x : α) (l : List α) :
+    use (pairDraw first same differ) none (x :: l) + same * unlikeFrom x l =
       first + same * l.length + differ * unlikeFrom x l :=
-  (Nat.add_assoc _ _ _).trans ((congrArg (first + ·) (cost_pair first same differ x l)).trans
+  (Nat.add_assoc _ _ _).trans ((congrArg (first + ·) (use_pair first same differ x l)).trans
     (Nat.add_assoc _ _ _).symm)
 
 theorem midpoint_arith {A B C F e u U1 U2 U3 : Nat} (h1 : A + e * U1 = F + u * U1)
@@ -627,41 +626,41 @@ theorem midpoint_arith {A B C F e u U1 U2 U3 : Nat} (h1 : A + e * U1 = F + u * U
           (congrArg (C + C + ·) (Nat.left_distrib e U2 U2).symm)
     _ = 2 * C + e * (U1 + U3) := by rw [mid, Nat.two_mul, Nat.two_mul])
 
-/-- **Costs in arithmetic progression.** Among words of one length whose unlike pairs are in
-arithmetic progression, the costs are too, for every law of local charges. -/
-theorem cost_midpoint (first same differ : Nat) {x y z : α} {l m k : List α}
+/-- **Uses in arithmetic progression.** Among words of one length whose unlike pairs are in
+arithmetic progression, their uses of support are too, for every law of local draws. -/
+theorem use_midpoint (first same differ : Nat) {x y z : α} {l m k : List α}
     (lm : l.length = m.length) (km : k.length = m.length)
     (mid : unlikeFrom x l + unlikeFrom z k = 2 * unlikeFrom y m) :
-    cost (pairCharge first same differ) none (x :: l) +
-        cost (pairCharge first same differ) none (z :: k) =
-      2 * cost (pairCharge first same differ) none (y :: m) := by
-  have h1 := cost_word first same differ x l
-  have h3 := cost_word first same differ z k
-  have h2 := cost_word first same differ y m
+    use (pairDraw first same differ) none (x :: l) +
+        use (pairDraw first same differ) none (z :: k) =
+      2 * use (pairDraw first same differ) none (y :: m) := by
+  have h1 := use_word first same differ x l
+  have h3 := use_word first same differ z k
+  have h2 := use_word first same differ y m
   rw [lm] at h1
   rw [km] at h3
   exact midpoint_arith h1 h3 h2 mid
 
-/-- **Ranking by local charges.** Among words of one length, the word with more unlike pairs
-costs less exactly when an unlike attachment draws less than a like one. -/
-theorem cost_lt_iff (first same differ : Nat) {x y : α} {l m : List α}
+/-- **Ranking by local draws.** Among words of one length, the word with more unlike pairs
+draws less exactly when an unlike attachment draws less than a like one. -/
+theorem use_lt_iff (first same differ : Nat) {x y : α} {l m : List α}
     (lm : l.length = m.length) {d : Nat} (more : unlikeFrom y m = unlikeFrom x l + d)
     (pos : 0 < d) :
-    cost (pairCharge first same differ) none (y :: m) <
-        cost (pairCharge first same differ) none (x :: l) ↔ differ < same := by
-  have h1 := cost_word first same differ x l
-  have h2 := cost_word first same differ y m
+    use (pairDraw first same differ) none (y :: m) <
+        use (pairDraw first same differ) none (x :: l) ↔ differ < same := by
+  have h1 := use_word first same differ x l
+  have h2 := use_word first same differ y m
   rw [lm] at h1
   rw [more, Nat.left_distrib, Nat.left_distrib, ← Nat.add_assoc, ← Nat.add_assoc] at h2
-  rw [← h1, Nat.add_right_comm (cost (pairCharge first same differ) none (x :: l))] at h2
+  rw [← h1, Nat.add_right_comm (use (pairDraw first same differ) none (x :: l))] at h2
   -- h2 : C' + same * U + same * d = C + same * U + differ * d
-  rw [Nat.add_right_comm (cost (pairCharge first same differ) none (y :: m))] at h2
+  rw [Nat.add_right_comm (use (pairDraw first same differ) none (y :: m))] at h2
   have turn := cancel_right (same * unlikeFrom x l) h2
   -- turn : C' + same * d = C + differ * d
   constructor
   · intro less
-    have h : cost (pairCharge first same differ) none (x :: l) + differ * d <
-        cost (pairCharge first same differ) none (x :: l) + same * d := by
+    have h : use (pairDraw first same differ) none (x :: l) + differ * d <
+        use (pairDraw first same differ) none (x :: l) + same * d := by
       rw [← turn]
       exact Nat.add_lt_add_right less _
     have h' := Nat.lt_of_add_lt_add_left h
@@ -670,8 +669,8 @@ theorem cost_lt_iff (first same differ : Nat) {x y : α} {l m : List α}
     | isFalse ge =>
       exact absurd h' (Nat.not_lt_of_le (Nat.mul_le_mul_right d (Nat.le_of_not_lt ge)))
   · intro lt
-    have h : cost (pairCharge first same differ) none (y :: m) + same * d <
-        cost (pairCharge first same differ) none (x :: l) + same * d := by
+    have h : use (pairDraw first same differ) none (y :: m) + same * d <
+        use (pairDraw first same differ) none (x :: l) + same * d := by
       rw [turn]
       exact Nat.add_lt_add_left (Nat.mul_lt_mul_of_lt_of_le lt (Nat.le_refl d) pos) _
     exact Nat.lt_of_add_lt_add_right h
@@ -691,127 +690,127 @@ def readStep (s : Scan α) : Option α → Scan α
     match s.pending with
     | [] => s
     | _ :: xs =>
-      if 0 < countOf x s.pool ∧ charge s.previous x ≤ s.free then
-        ⟨some x, xs, s.built ++ [x], remove x s.pool, s.free - charge s.previous x,
-          s.spent + charge s.previous x⟩
+      if 0 < countOf x s.pool ∧ draw s.previous x ≤ s.free then
+        ⟨some x, xs, s.built ++ [x], remove x s.pool, s.free - draw s.previous x,
+          s.used + draw s.previous x⟩
       else s
 
 /-- One move of a copy reading through the registration `read`: the token attached at site `i`
 is what `read` reads at `i`. -/
-def readTick (read : Nat → Option α) (s : Scan α) : Scan α := readStep charge s (read s.built.length)
+def readTick (read : Nat → Option α) (s : Scan α) : Scan α := readStep draw s (read s.built.length)
 
 /-- `n` moves of a copy reading through `read`. -/
 def readSteps (read : Nat → Option α) : Nat → Scan α → Scan α
   | 0, s => s
-  | n + 1, s => readSteps read n (readTick charge read s)
+  | n + 1, s => readSteps read n (readTick draw read s)
 
-theorem readSteps_fixed (read : Nat → Option α) {s : Scan α} (fixed : readTick charge read s = s) :
-    ∀ n, readSteps charge read n s = s
+theorem readSteps_fixed (read : Nat → Option α) {s : Scan α} (fixed : readTick draw read s = s) :
+    ∀ n, readSteps draw read n s = s
   | 0 => rfl
-  | n + 1 => (congrArg (readSteps charge read n) fixed).trans (readSteps_fixed read fixed n)
+  | n + 1 => (congrArg (readSteps draw read n) fixed).trans (readSteps_fixed read fixed n)
 
 theorem readStep_extends : ∀ (s : Scan α) (o : Option α),
-    ∃ tail, (readStep charge s o).built = s.built ++ tail
+    ∃ tail, (readStep draw s o).built = s.built ++ tail
   | _, none => ⟨[], (append_empty _).symm⟩
   | s, some x =>
     match s with
     | ⟨_, [], _, _, _, _⟩ => ⟨[], (append_empty _).symm⟩
-    | ⟨prev, p :: xs, built, pool, free, spent⟩ => by
-      show ∃ tail, (if 0 < countOf x pool ∧ charge prev x ≤ free then
-        (⟨some x, xs, built ++ [x], remove x pool, free - charge prev x, spent + charge prev x⟩ :
-          Scan α) else ⟨prev, p :: xs, built, pool, free, spent⟩).built = built ++ tail
+    | ⟨prev, p :: xs, built, pool, free, used⟩ => by
+      show ∃ tail, (if 0 < countOf x pool ∧ draw prev x ≤ free then
+        (⟨some x, xs, built ++ [x], remove x pool, free - draw prev x, used + draw prev x⟩ :
+          Scan α) else ⟨prev, p :: xs, built, pool, free, used⟩).built = built ++ tail
       exact ite_cases (fun r : Scan α => ∃ tail, r.built = built ++ tail)
         (fun _ => ⟨[x], rfl⟩) (fun _ => ⟨[], (append_empty built).symm⟩)
 
 /-- **The product of a reading copy only grows.** -/
 theorem readSteps_extends (read : Nat → Option α) :
-    ∀ (n : Nat) (s : Scan α), ∃ tail, (readSteps charge read n s).built = s.built ++ tail
+    ∀ (n : Nat) (s : Scan α), ∃ tail, (readSteps draw read n s).built = s.built ++ tail
   | 0, _ => ⟨[], (append_empty _).symm⟩
   | n + 1, s =>
-    match readStep_extends charge s (read s.built.length),
-      readSteps_extends read n (readTick charge read s) with
+    match readStep_extends draw s (read s.built.length),
+      readSteps_extends read n (readTick draw read s) with
     | ⟨first, h1⟩, ⟨rest, h2⟩ =>
       ⟨first ++ rest, h2.trans ((congrArg (· ++ rest) h1).trans (append_regroup _ _ _))⟩
 
 /-- **A copy reading through a registration reproduces a word exactly when every site reads
-the word's token there, the pool supplies the word and the support covers its charges.** -/
+the word's token there, the pool supplies the word and the support covers what it draws.** -/
 theorem reading_iff (read : Nat → Option α) : ∀ (word pending : List α) (prev : Option α)
-    (built pool : List α) (free spent : Nat), pending.length = word.length →
-    ((readSteps charge read word.length ⟨prev, pending, built, pool, free, spent⟩).built =
+    (built pool : List α) (free used : Nat), pending.length = word.length →
+    ((readSteps draw read word.length ⟨prev, pending, built, pool, free, used⟩).built =
         built ++ word ↔
-      Reads read built.length word ∧ Supplies word pool ∧ cost charge prev word ≤ free)
-  | [], _, prev, built, pool, free, spent, _ =>
+      Reads read built.length word ∧ Supplies word pool ∧ use draw prev word ≤ free)
+  | [], _, prev, built, pool, free, used, _ =>
     ⟨fun _ => ⟨trivial, supplies_nil pool, Nat.zero_le free⟩,
      fun _ => (append_empty built).symm⟩
   | _ :: _, [], _, _, _, _, _, lengths => nomatch lengths
-  | x :: xs, p :: ps, prev, built, pool, free, spent, lengths => by
+  | x :: xs, p :: ps, prev, built, pool, free, used, lengths => by
     have lengths' : ps.length = xs.length := Nat.succ.inj lengths
-    show (readSteps charge read xs.length
-        (readStep charge ⟨prev, p :: ps, built, pool, free, spent⟩ (read built.length))).built =
+    show (readSteps draw read xs.length
+        (readStep draw ⟨prev, p :: ps, built, pool, free, used⟩ (read built.length))).built =
           built ++ x :: xs ↔ _
     match hr : read built.length with
     | none =>
-      have fixed : readTick charge read ⟨prev, p :: ps, built, pool, free, spent⟩ =
-          ⟨prev, p :: ps, built, pool, free, spent⟩ :=
-        congrArg (readStep charge ⟨prev, p :: ps, built, pool, free, spent⟩) hr
-      have fixed' : readStep charge ⟨prev, p :: ps, built, pool, free, spent⟩ none =
-          ⟨prev, p :: ps, built, pool, free, spent⟩ := rfl
-      rw [fixed', readSteps_fixed charge read fixed]
+      have fixed : readTick draw read ⟨prev, p :: ps, built, pool, free, used⟩ =
+          ⟨prev, p :: ps, built, pool, free, used⟩ :=
+        congrArg (readStep draw ⟨prev, p :: ps, built, pool, free, used⟩) hr
+      have fixed' : readStep draw ⟨prev, p :: ps, built, pool, free, used⟩ none =
+          ⟨prev, p :: ps, built, pool, free, used⟩ := rfl
+      rw [fixed', readSteps_fixed draw read fixed]
       exact ⟨fun same => absurd same (ne_append_cons built x xs),
         fun ⟨reads, _⟩ => nomatch hr.symm.trans reads.1⟩
     | some y =>
-      match Nat.decLt 0 (countOf y pool), Nat.decLe (charge prev y) free with
+      match Nat.decLt 0 (countOf y pool), Nat.decLe (draw prev y) free with
       | isTrue pos, isTrue first =>
-        have moved : readStep charge ⟨prev, p :: ps, built, pool, free, spent⟩ (some y) =
-            ⟨some y, ps, built ++ [y], remove y pool, free - charge prev y, spent + charge prev y⟩ :=
+        have moved : readStep draw ⟨prev, p :: ps, built, pool, free, used⟩ (some y) =
+            ⟨some y, ps, built ++ [y], remove y pool, free - draw prev y, used + draw prev y⟩ :=
           if_pos ⟨pos, first⟩
         rw [moved]
         match decEq y x with
         | isTrue e =>
           subst e
           have ih := reading_iff read xs ps (some y) (built ++ [y]) (remove y pool)
-            (free - charge prev y) (spent + charge prev y) lengths'
+            (free - draw prev y) (used + draw prev y) lengths'
           rw [append_regroup, length_appended] at ih
           exact ih.trans ⟨fun ⟨reads, rest, more⟩ =>
               ⟨⟨hr, reads⟩, supplies_cons_iff.mpr ⟨pos, rest⟩, add_le_iff.mpr ⟨first, more⟩⟩,
             fun ⟨⟨_, reads⟩, supplies, covered⟩ =>
               ⟨reads, (supplies_cons_iff.mp supplies).2,
-                (add_le_iff.mp (show charge prev y + cost charge (some y) xs ≤ free from covered)).2⟩⟩
+                (add_le_iff.mp (show draw prev y + use draw (some y) xs ≤ free from covered)).2⟩⟩
         | isFalse ne =>
-          have ⟨tail, grown⟩ := readSteps_extends charge read xs.length
-            ⟨some y, ps, built ++ [y], remove y pool, free - charge prev y, spent + charge prev y⟩
+          have ⟨tail, grown⟩ := readSteps_extends draw read xs.length
+            ⟨some y, ps, built ++ [y], remove y pool, free - draw prev y, used + draw prev y⟩
           exact ⟨fun same => by
               have h := grown.symm.trans same
               rw [append_regroup] at h
               exact absurd (List.cons.inj (append_cancel built h)).1 ne,
             fun ⟨reads, _⟩ => absurd (Option.some.inj (hr.symm.trans reads.1)) ne⟩
       | isFalse absent, _ =>
-        have fixed : readTick charge read ⟨prev, p :: ps, built, pool, free, spent⟩ =
-            ⟨prev, p :: ps, built, pool, free, spent⟩ :=
-          (congrArg (readStep charge ⟨prev, p :: ps, built, pool, free, spent⟩) hr).trans
+        have fixed : readTick draw read ⟨prev, p :: ps, built, pool, free, used⟩ =
+            ⟨prev, p :: ps, built, pool, free, used⟩ :=
+          (congrArg (readStep draw ⟨prev, p :: ps, built, pool, free, used⟩) hr).trans
             (if_neg fun h => absent h.1)
-        have fixed' : readStep charge ⟨prev, p :: ps, built, pool, free, spent⟩ (some y) =
-            ⟨prev, p :: ps, built, pool, free, spent⟩ := if_neg fun h => absent h.1
-        rw [fixed', readSteps_fixed charge read fixed]
+        have fixed' : readStep draw ⟨prev, p :: ps, built, pool, free, used⟩ (some y) =
+            ⟨prev, p :: ps, built, pool, free, used⟩ := if_neg fun h => absent h.1
+        rw [fixed', readSteps_fixed draw read fixed]
         exact ⟨fun same => absurd same (ne_append_cons built x xs),
           fun ⟨reads, supplies, _⟩ => by
             have e : y = x := Option.some.inj (hr.symm.trans reads.1)
             subst e
             exact absurd (pos_of_supplies supplies) absent⟩
       | isTrue _, isFalse over =>
-        have fixed : readTick charge read ⟨prev, p :: ps, built, pool, free, spent⟩ =
-            ⟨prev, p :: ps, built, pool, free, spent⟩ :=
-          (congrArg (readStep charge ⟨prev, p :: ps, built, pool, free, spent⟩) hr).trans
+        have fixed : readTick draw read ⟨prev, p :: ps, built, pool, free, used⟩ =
+            ⟨prev, p :: ps, built, pool, free, used⟩ :=
+          (congrArg (readStep draw ⟨prev, p :: ps, built, pool, free, used⟩) hr).trans
             (if_neg fun h => over h.2)
-        have fixed' : readStep charge ⟨prev, p :: ps, built, pool, free, spent⟩ (some y) =
-            ⟨prev, p :: ps, built, pool, free, spent⟩ := if_neg fun h => over h.2
-        rw [fixed', readSteps_fixed charge read fixed]
+        have fixed' : readStep draw ⟨prev, p :: ps, built, pool, free, used⟩ (some y) =
+            ⟨prev, p :: ps, built, pool, free, used⟩ := if_neg fun h => over h.2
+        rw [fixed', readSteps_fixed draw read fixed]
         exact ⟨fun same => absurd same (ne_append_cons built x xs),
           fun ⟨reads, _, covered⟩ => by
             have e : y = x := Option.some.inj (hr.symm.trans reads.1)
             subst e
             exact absurd (add_le_iff.mp
-              (show charge prev y + cost charge (some y) xs ≤ free from covered)).1 over⟩
+              (show draw prev y + use draw (some y) xs ≤ free from covered)).1 over⟩
 
 /-! ## Inspection against a reference -/
 
@@ -827,8 +826,8 @@ def FaithfulAt (ref : Nat → Option α) (t : List α) (i : Nat) : Prop :=
   ∀ x y, ref i = some x → nth t i = some y → x = y
 
 /-- Draw `c` from the free support. -/
-def spend (c : Nat) (s : Scan α) : Scan α :=
-  ⟨s.previous, s.pending, s.built, s.pool, s.free - c, s.spent + c⟩
+def drawSupport (c : Nat) (s : Scan α) : Scan α :=
+  ⟨s.previous, s.pending, s.built, s.pool, s.free - c, s.used + c⟩
 
 /-- Exchange the token `old` found at site `i` for `x`, drawing `ce`, where the two differ, the
 pool holds `x` and the support covers `ce`; the displaced token returns to the pool. -/
@@ -837,7 +836,7 @@ def exchangeAt (ce i : Nat) (x : α) (s : Scan α) : Option α → Scan α
   | some old =>
     if ¬ old = x ∧ 0 < countOf x s.pool ∧ ce ≤ s.free then
       ⟨final (setAt s.built i x), s.pending, setAt s.built i x, remove x s.pool ++ [old],
-        s.free - ce, s.spent + ce⟩
+        s.free - ce, s.used + ce⟩
     else s
 
 /-- Exchange the token at site `i` for `x`. -/
@@ -847,7 +846,7 @@ def exchange (ce i : Nat) (x : α) (s : Scan α) : Scan α := exchangeAt ce i x 
 def inspectAt (ci ce i : Nat) (s : Scan α) : Option α → Option α → Scan α
   | none, _ => s
   | some _, none => s
-  | some x, some _ => if ci ≤ s.free then exchange ce i x (spend ci s) else s
+  | some x, some _ => if ci ≤ s.free then exchange ce i x (drawSupport ci s) else s
 
 /-- Inspect site `i` against the reference reading `ref`. -/
 def inspect (ci ce : Nat) (ref : Nat → Option α) (i : Nat) (s : Scan α) : Scan α :=
@@ -939,7 +938,7 @@ theorem inspect_le {t : List α} {ref : Nat → Option α} {i : Nat} (faithful :
   | some _, none => exact Nat.le_refl _
   | some x, some _ =>
     exact ite_cases (fun r : Scan α => defects t r.built ≤ defects t s.built)
-      (fun _ => exchange_le t ce i x (spend ci s) fun y ht => faithful x y hr ht)
+      (fun _ => exchange_le t ce i x (drawSupport ci s) fun y ht => faithful x y hr ht)
       (fun _ => Nat.le_refl _)
 
 /-- **Inspection never increases the defects exactly where the reference is faithful.** For
@@ -957,10 +956,10 @@ theorem inspect_le_iff (ci ce : Nat) (t : List α) (ref : Nat → Option α) (i 
           setAt t i x := by
         show (inspectAt ci ce i ⟨none, [], t, [x], ci + ce, 0⟩ (ref i) (nth t i)).built = _
         rw [hr, ht]
-        show (if ci ≤ ci + ce then exchange ce i x (spend ci ⟨none, [], t, [x], ci + ce, 0⟩)
+        show (if ci ≤ ci + ce then exchange ce i x (drawSupport ci ⟨none, [], t, [x], ci + ce, 0⟩)
           else _).built = _
         rw [if_pos (Nat.le_add_right ci ce)]
-        show (exchangeAt ce i x (spend ci ⟨none, [], t, [x], ci + ce, 0⟩) (nth t i)).built = _
+        show (exchangeAt ce i x (drawSupport ci ⟨none, [], t, [x], ci + ce, 0⟩) (nth t i)).built = _
         rw [ht]
         have avail : 0 < countOf x [x] := by
           rw [countOf_self]
@@ -981,14 +980,14 @@ theorem scan_le {t : List α} {ref : Nat → Option α} (ci ce : Nat) :
       (inspect_le (faithful i (.head is)) ci ce s)
 
 /-- **The single-site criterion.** At a site holding `old`, where the reference reads `x ≠ old`,
-inspection leaves `x` there exactly when the pool holds `x` and the support covers the charges of
+inspection leaves `x` there exactly when the pool holds `x` and the support covers the draws of
 inspection and exchange. -/
 theorem inspect_matches_iff (ci ce : Nat) {ref : Nat → Option α} {i : Nat} {x old : α}
     (s : Scan α) (hr : ref i = some x) (hb : nth s.built i = some old) (ne : old ≠ x) :
     nth (inspect ci ce ref i s).built i = some x ↔ ci + ce ≤ s.free ∧ 0 < countOf x s.pool := by
   show nth (inspectAt ci ce i s (ref i) (nth s.built i)).built i = some x ↔ _
   rw [hr, hb]
-  show nth (if ci ≤ s.free then exchange ce i x (spend ci s) else s).built i = some x ↔ _
+  show nth (if ci ≤ s.free then exchange ce i x (drawSupport ci s) else s).built i = some x ↔ _
   match Nat.decLe ci s.free with
   | isFalse nle =>
     rw [if_neg nle]
@@ -996,19 +995,19 @@ theorem inspect_matches_iff (ci ce : Nat) {ref : Nat → Option α} {i : Nat} {x
       fun ⟨cover, _⟩ => absurd (Nat.le_trans (Nat.le_add_right ci ce) cover) nle⟩
   | isTrue le =>
     rw [if_pos le]
-    show nth (exchangeAt ce i x (spend ci s) (nth s.built i)).built i = some x ↔ _
+    show nth (exchangeAt ce i x (drawSupport ci s) (nth s.built i)).built i = some x ↔ _
     rw [hb]
     match Nat.decLt 0 (countOf x s.pool), Nat.decLe ce (s.free - ci) with
     | isTrue pos, isTrue left =>
-      rw [show exchangeAt ce i x (spend ci s) (some old) = _ from if_pos ⟨ne, pos, left⟩]
+      rw [show exchangeAt ce i x (drawSupport ci s) (some old) = _ from if_pos ⟨ne, pos, left⟩]
       exact ⟨fun _ => ⟨add_le_iff.mpr ⟨le, left⟩, pos⟩, fun _ => nth_setAt_self s.built i x hb⟩
     | isFalse absent, _ =>
-      rw [show exchangeAt ce i x (spend ci s) (some old) = spend ci s from
+      rw [show exchangeAt ce i x (drawSupport ci s) (some old) = drawSupport ci s from
         if_neg (fun h => absent h.2.1)]
       exact ⟨fun h => absurd (Option.some.inj (hb.symm.trans h)) ne,
         fun ⟨_, pos⟩ => absurd pos absent⟩
     | isTrue _, isFalse over =>
-      rw [show exchangeAt ce i x (spend ci s) (some old) = spend ci s from
+      rw [show exchangeAt ce i x (drawSupport ci s) (some old) = drawSupport ci s from
         if_neg (fun h => over h.2.2)]
       exact ⟨fun h => absurd (Option.some.inj (hb.symm.trans h)) ne,
         fun ⟨cover, _⟩ => absurd (add_le_iff.mp cover).2 over⟩
@@ -1086,7 +1085,7 @@ theorem inspect_keeps_counts (ci ce : Nat) (ref : Nat → Option α) (i : Nat) (
   | some _, none => rfl
   | some x, some _ =>
     exact ite_cases (fun r : Scan α => countOf a (r.built ++ r.pool) = countOf a (s.built ++ s.pool))
-      (fun _ => exchange_keeps_counts ce i x (spend ci s) a) (fun _ => rfl)
+      (fun _ => exchange_keeps_counts ce i x (drawSupport ci s) a) (fun _ => rfl)
 
 end Pool
 
