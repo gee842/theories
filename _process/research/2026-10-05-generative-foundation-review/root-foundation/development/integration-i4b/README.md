@@ -50,7 +50,7 @@ What the branch holds:
   - A scratch run of the inventory on this core, with only the receipt check skipped, passes with nothing unclassified; proof-only stays 224.
 - The I4a table: PrefixSafety becomes joined, and PrefixSafetyCorrespondence gets a row, giving 600 rows (joined 61, join candidate 62). The reach theme loses PrefixSafety.
   - IdealWarrant stays a join candidate. Its run-level case is now on the spine (`Refutable.adheres_iff`, `refutable_passes`, through PrefixSafety).
-  - Its poset form needs the ideal vocabulary of CompletionRole and HistoryIdeals, which Ren left outside for now. Whether IdealWarrant counts with that line is Ren's call.
+  - Correction (16 October 2026): this note first said the poset form needs the vocabulary of CompletionRole and HistoryIdeals. It is the other way round: IdealWarrant defines posets and ideals itself, and CompletionRole and HistoryIdeals import it. Ren chose to keep it with that general mathematical line outside the spine (“(a)”, [source](../../../../../../sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md)); the I4a table moves it to the general-mathematics theme.
 - `s_i4b3_zh.md` and `s_i4b3_en.md`, the study section (heading number left to the integrator).
 
 Landing order, after the core run with these bytes:
@@ -141,3 +141,23 @@ Landing order, after the core run with these bytes:
    - the instance, PluralRecords.lean and TieBreaking.lean to the instance receipt.
    - It asserts the caps; its English statement is 292 characters.
 4. Regenerate DECIDABILITY-INVENTORY.md (MODULE-CLASSIFICATION.md is current), insert the study section, run the Lean catalogue, then `make research-render` and `make research-check`.
+
+## Item 2 follow-up: selection through a model of the options (Becoming.Selection, Becoming.Learning)
+
+Ren, 16 October 2026, of item 2's title: “selection's “record-only” doesn't seem right - it is about the cognitive model, not just record, which feels as long as we remember all pasts we can move forward without wisdom”; after the AI's investigation, “go ahead with the reframing, first title, keep names, (a)” ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md)). The result becomes “Selection through a model of the options / 经选项模型的选择”; the `_by_core` names stay; IdealWarrant stays with the general mathematical line.
+
+- `selection_model_lean.py` (applied): Selection.lean's section and docstrings name the model; comments only, the code outside comments asserted unchanged; 67 theorems.
+- Becoming/Learning.lean gains the section “Selection through a model of the options” (75 → 83 theorems, no new import): `selects_through_lumping`, `values_lumped`, `selects_right_through`, `selects_not_right_of_parted`, `selects_right_of_reads`, `values_right_lumped`, `values_not_right_of_parted`, `values_right_of_reads`. `scratch_build.py` on main `a2caf2fd`: Selection 67 and Learning 83 theorems, empty axiom reports; the root compiles with its closure.
+- `selection_model_docs.py` (parts `learning root readme chapter notes periphery inventory i4a` applied; `study --section N` at landing): the Learning header and reading, the Becoming.lean bullets, the Lean README rows, §9's Selection and Learning rows (Learning 83) with the periphery row and instance lists, FORMAL-NOTES, SelectionRelabelCorrespondence's comments and `relabel.json` (checker regenerated with `make_relabel_checker.py`), the inventory comment, and the I4a rows (IdealWarrant's note corrected and its theme moved to general mathematics; MODULE-CLASSIFICATION.md regenerated: reach 4 → 3, general mathematics 17 → 18).
+- Periphery dry run (a temporary checker copy writing to a scratch folder, removed after): passed, 13 theorems and 72 declaration audits all empty; the only missing receipt is the new Becoming.Selection.
+- Decidability inventory, scratch run on the current bytes: the 8 new theorems are statement-level, “exchanging two values”, nothing unclassified (statement-level +8).
+- `s_i4b2b_zh.md`, `s_i4b2b_en.md`: the study section, with a forward note on section 151 (its text stays as evidence).
+- `selection_model_records.py SECTION`: renames selection-by-the-record-alone to selection-through-a-model-of-the-options (`git mv`, the old id an alias), rewrites it (title, statement, laws with a Learning law, hypotheses, correspondence with the withdrawn reading, next steps, links), binds Selection.lean and Learning.lean to the retained core receipt and the instance with its originals to the instance receipt, and rebinds the nine other records citing Selection.lean or Learning.lean (selection-through-registration's link follows the new id; generalization-through-lumping links the new record). A dry run (`--dry`, receipts unchecked, then reset) left only the expected receipt-binding and alias-elaboration errors, which the new receipts resolve.
+
+Landing order, after the core run with these bytes:
+1. Run `check_selection_relabel_correspondence.py`; it must pass against the new core receipt.
+2. `python3 -B selection_model_docs.py study --section N`, N the next free study section.
+3. `python3 -B selection_model_records.py N`.
+4. Regenerate DECIDABILITY-INVENTORY.md, move the chapter totals to the new receipt, rebind the chapter- and study-bound records, then `make research-render` and `make research-check`.
+
+After a merge that conflicts in a file this follow-up edits, take the merged file without this branch's edits and run its part of `selection_model_docs.py` again.

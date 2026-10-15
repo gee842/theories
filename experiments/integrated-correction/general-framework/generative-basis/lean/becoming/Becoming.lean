@@ -749,9 +749,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   is blind beyond the registration closure, so an ending within a candidate's reach closure and
   beyond the selector's registration closure is not selected, while pooled registration selects
   it; where reaching beyond raises what registers, selection favours it. The readings are the
-  AI's, adopted on Ren's delegation of 15 October 2026. By the record alone: two options are selected alike by every
-  selection reading only a record exactly when the record ties them, one is singled out exactly
-  where the record parts it from every other, and tied options are valued alike.
+  AI's, adopted on Ren's delegation of 15 October 2026. Through a model of the options: two
+  options are selected alike by every selection through the model exactly when the model ties
+  them, one is singled out exactly where the model separates it from every other, and tied
+  options are valued alike.
 * `Becoming.Learning` (L4): no record fixes the next value: two courses share any record and
   differ at its next step, also among worlds held by a list, and for every learner a course
   refutes each of its claims, the registration of a law keeping its record, so open. Learning by
@@ -761,9 +762,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   determines exactly the inputs it lumps with the data and is right exactly where the world goes
   alike across it; structure and change are one lumping; the class of every function fixes no
   untried value; training selects through the data, and its fit is right beyond them exactly
-  where the class is determined there. 理 is read as Ren reads it, the modeling of the laws of
-  structure and of change; the other readings are the AI's, adopted on Ren's delegation of 15
-  October 2026.
+  where the class is determined there; a selection through a model of the options is right about
+  what matters only where what matters goes alike across the model's lumping. 理 is read as Ren
+  reads it, the modeling of the laws of structure and of change; the other readings are the AI's,
+  adopted on Ren's delegation of 15 October 2026 or, for selection through a model, approved by
+  Ren on 16 October 2026.
 * `Becoming.Contacts` (L4): registration through addressed contacts. Registration by agreement
   on data selects a value exactly where its address is in the data, and a change of data keeps
   every old selection exactly where it keeps the old data. A revision rule registers every
