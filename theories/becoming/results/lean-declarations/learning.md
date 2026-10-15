@@ -1507,7 +1507,7 @@ Imports: `Mathlib.Tactic`
 <details>
 <summary>ContinuationCorrespondence.lean — 17 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean`
 

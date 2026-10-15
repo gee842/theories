@@ -1759,7 +1759,7 @@ Imports: `Std`
 <details>
 <summary>SharedStockInstances.lean — 5 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/SharedStockInstances.lean`
 

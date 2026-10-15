@@ -1,8 +1,8 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261015T150956.178111Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261015T152724.599820Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261015T150956.178111Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261015T152724.599820Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
@@ -423,10 +423,10 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Granularity | `Recipe.outcomes` | `Becoming.TestsDecided F` | 造出列表 / builds a list | — |
 | Identification | `Identification.bounded_induction` | `DecidableEq O` | 分辨相同 / tells same from different | — |
 | Identification | `Identification.fits_of_unrefuted` | `DecidableEq O` | 分辨相同 / tells same from different | — |
-| Identification | `Identification.sameAhead_iff_classes` | `∀ (n m : Nat), Becoming.Decided (o n = o m)` | 分辨相同 / tells same from different | `Identification.sameAhead_iff_below`（2N − 1，无前提 / no premise） |
+| Identification | `Identification.sameAhead_iff_classes` | `∀ (n m : Nat), Becoming.Decided (o n = o m)` | 分辨相同 / tells same from different | `Identification.sameAhead_iff_within`（N − 1，无前提，判定位置 / no premise, positions decided）；`Identification.sameAhead_iff_below`（2N − 1，无前提 / no premise） |
 | Identification | `Identification.unrefuted_persists` | `DecidableEq O` | 分辨相同 / tells same from different | — |
 | Identification | `Law.AgreeTo.decided` | `∀ (s s' : S), s ∈ l → s' ∈ l → Becoming.Decided (o s = o s')` | 分情形 / splits on a case | — |
-| Identification | `Law.sameFuture_iff_classes` | `∀ (s s' : S), s ∈ l → s' ∈ l → Becoming.Decided (o s = o s')` | 分辨相同 / tells same from different | `Law.sameFuture_classes_unrefuted`（不判定，不被否证 / no decision, refuted by nothing）；`Law.sameFuture_iff_below`（2N − 1，无前提 / no premise） |
+| Identification | `Law.sameFuture_iff_classes` | `∀ (s s' : S), s ∈ l → s' ∈ l → Becoming.Decided (o s = o s')` | 分辨相同 / tells same from different | `Law.sameFuture_iff_within`（N − 1，无前提，判定位置 / no premise, positions decided）；`Law.sameFuture_classes_unrefuted`（不判定，不被否证 / no decision, refuted by nothing）；`Law.sameFuture_iff_below`（2N − 1，无前提 / no premise） |
 | Identity | `Flow.More.unceasingFrom` | `(t : Nat) → (f : F) → Decidable (W.Continues R t f)` | 找出 / finds | — |
 | Identity | `Flow.More.unceasing_reidentified` | `(t : Nat) → (f : F) → Decidable (W.active t f)` | 找出 / finds | — |
 | Identity | `Flow.More.unceasing_reidentified_covering` | `(s : Nat) → (f : F) → S ≤ s → Decidable (W.active s f)` | 找出 / finds | — |

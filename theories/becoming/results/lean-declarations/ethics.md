@@ -2386,7 +2386,7 @@ Imports: `Becoming.Learning`, `CompositionalAcquisition`, `UpdaterConsequences`
 <details>
 <summary>TransmissionCorrespondence.lean — 20 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean`
 

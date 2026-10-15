@@ -344,7 +344,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "9561618ae9d59955bbc164e7640da210e605061263151620dd155478c9a98a07",
+      "sha256": "bf3c0fc2d55f57dd16b882f8b163e5390f63c7237e17132a6f6ea8c2204c6fb4",
       "declarations": [
         "Becoming.Identification.held_learner_rests",
         "Becoming.Identification.record_eq_iff",
@@ -387,12 +387,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "31088ed4f46d5fbfeffa39ffce01e3485e9f6fa65cb57ad2fbe9d10e3ca6575d"
+      "sha256": "72f9930d06be99c1a90645646ce8ff3c398afe4e5e6c59b5c0094d2598e3af54"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "d181a9e12fafa615caf9ea096671df0dcb6597f30276d571fe9b5679fbf333e7"
+      "sha256": "ba7da8ea18562fcde97fd1b34126cc91d4c858cf7e87b28565985e81646453ac"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md",
@@ -409,6 +409,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "role": "receipt",
       "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T152724.599820Z/verification.json",
+      "role": "receipt",
+      "sha256": "d6b6b1a0296e9f50dfe666eb8c59b337ac6d7255cb05dbcdf8773bcb340f61d6",
       "declarations": []
     }
   ],
@@ -429,7 +435,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T152724.599820Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -480,6 +486,10 @@
     {
       "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Identification.lean（P83b 与 P83c：新增 bounded_agree_exact（N + N′ − 1 对每一对界恰好）与 Moore 界（sameFuture_iff_classes、sameAhead_iff_classes）；导入 Refinement；头注更新；原有陈述不变）；Recurrence.lean（整合 I3b：新增共同实现的界（WithinMoves.after_course、lost_together_not_returns）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83b 与 P83c（Identification、Likeness、Refinement）、整合 I3b（Granularity 及其桥接）与 Keeping 的 §9 各行，总数改据新回执）。",
       "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Identification.lean (P83b and P83c: bounded_agree_exact (N + N′ − 1 exact for every pair of bounds) and Moore's bound (sameFuture_iff_classes, sameAhead_iff_classes) added; imports Refinement; docstring updated; earlier statements unchanged); Recurrence.lean (integration I3b: bounds on realizing a bundle together added (WithinMoves.after_course, lost_together_not_returns); earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for P83b and P83c (Identification, Likeness, Refinement), integration I3b (Granularity and its bridge) and Keeping, and the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3c 与 P83d 落地（研究第129–130节）：改绑新回执并更新哈希：Identification.lean（P83d：新增不加前提的 Moore 界（Law.sameFuture_iff_within、Identification.sameAhead_iff_within，判定位置而非值）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第129节（整合 I3c：四项外围记录接入；Becoming.Keeping、共享存量与传递）与第130节（P83d：不加前提的 Moore 界）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 新增 I3c 的三个外围实例模块的行（SharedStockInstances、ContinuationCorrespondence、TransmissionCorrespondence）并在实例模块一句中列出；P83d 的 Identification 一行与正文；总数改据新回执）。",
+      "en": "15 October 2026, landing integration I3c and P83d (study sections 129–130): rebound to the new receipts and rehashed: Identification.lean (P83d: Moore's bound with no premise added (Law.sameFuture_iff_within, Identification.sameAhead_iff_within, deciding positions rather than values); earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 129 (integration I3c: four periphery records joined; Becoming.Keeping, the shared stock, transmission) and 130 (P83d: Moore's bound with no premise) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for the three I3c periphery instance modules (SharedStockInstances, ContinuationCorrespondence, TransmissionCorrespondence) and the instance-module sentence; P83d's Identification row and text; the totals moved to the new receipt)."
     }
   ],
   "text_versions": []

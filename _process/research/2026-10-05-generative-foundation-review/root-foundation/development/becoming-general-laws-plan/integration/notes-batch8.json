@@ -1,0 +1,39 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T152724.599820Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "en": "P83d: the Identification bullet names Moore's bound with no premise",
+   "zh": "P83d：Identification 一条写明不加前提的 Moore 界"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "en": "P83d: the scope text names Moore's bound with no premise",
+   "zh": "P83d：范围文字写明不加前提的 Moore 界"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "en": "P83d: the Identification row names Moore's bound with no premise",
+   "zh": "P83d：Identification 一行写明不加前提的 Moore 界"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean": {
+   "en": "P83d: Moore's bound with no premise added (Law.sameFuture_iff_within, Identification.sameAhead_iff_within, deciding positions rather than values); earlier statements unchanged",
+   "zh": "P83d：新增不加前提的 Moore 界（Law.sameFuture_iff_within、Identification.sameAhead_iff_within，判定位置而非值）；原有陈述不变"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "en": "§9 rows for the three I3c periphery instance modules (SharedStockInstances, ContinuationCorrespondence, TransmissionCorrespondence) and the instance-module sentence; P83d's Identification row and text; the totals moved to the new receipt",
+   "zh": "§9 新增 I3c 的三个外围实例模块的行（SharedStockInstances、ContinuationCorrespondence、TransmissionCorrespondence）并在实例模块一句中列出；P83d 的 Identification 一行与正文；总数改据新回执"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "en": "sections 129 (integration I3c: four periphery records joined; Becoming.Keeping, the shared stock, transmission) and 130 (P83d: Moore's bound with no premise) with their English paragraphs; earlier sections unchanged",
+   "zh": "新增第129节（整合 I3c：四项外围记录接入；Becoming.Keeping、共享存量与传递）与第130节（P83d：不加前提的 Moore 界）及其英文段；此前各节不变"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "en": "regenerated on receipt 20261015T152724.599820Z; counts unchanged; Moore's bound's classes forms now cite the forms with no premise (P83d)",
+   "zh": "在回执 20261015T152724.599820Z 上重新生成；各数不变；Moore 界的以类计形式改引不加前提的形式（P83d）"
+  }
+ },
+ "history": {
+  "en": "15 October 2026, landing integration I3c and P83d (study sections 129–130): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月15日，整合 I3c 与 P83d 落地（研究第129–130节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}
