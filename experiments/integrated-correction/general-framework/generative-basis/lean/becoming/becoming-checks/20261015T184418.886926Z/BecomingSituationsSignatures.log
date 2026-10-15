@@ -1,0 +1,33 @@
+Becoming.Situations.sum_upto : ∀ (c k : Nat), (Becoming.counting.sum (Becoming.Situations.upto k) fun x => c) = k * c
+@Becoming.Situations.sum_one : ∀ {α : Type u_1} (l : List α), (Becoming.counting.sum l fun x => 1) = l.length
+@Becoming.Situations.finerLaw_determined : ∀ {S : Type u_1} {A : Type u_2} (weight : S → A → S → Nat),
+  Becoming.Determined (Becoming.Situations.finerLaw weight)
+@Becoming.Situations.finerLaw_step_iff : ∀ {S : Type u_1} {A : Type u_2} (weight : S → A → S → Nat) {s m : S} {a : A},
+  (∃ k, (Becoming.Situations.finerLaw weight).step s (a, m, k) m) ↔ 0 < weight s a m
+@Becoming.Situations.sum_finer : ∀ {S : Type u_1} {A : Type u_2} (weight : S → A → S → Nat) (moves : List A)
+  (all : List S) (n : Nat) (s : S) (g : List (A × S) → Nat),
+  (Becoming.counting.sum (Becoming.Situations.finer weight moves all n s) fun h => g (Becoming.Situations.coarse h)) =
+    Becoming.counting.sum (Becoming.courses moves all n) fun c => Becoming.counting.along weight (fun x => 1) s c * g c
+@Becoming.Situations.finer_count : ∀ {S : Type u_1} {A : Type u_2} (weight : S → A → S → Nat) (moves : List A)
+  (all : List S) (n : Nat) (s : S),
+  (Becoming.Situations.finer weight moves all n s).length = Becoming.counting.transfer weight moves all (fun x => 1) n s
+Becoming.Situations.sum_courses_values : ∀ (F : List Bool → Nat) (n : Nat),
+  (Becoming.counting.sum (Becoming.courses [()] [true, false] n) fun c => F (List.map Prod.snd c)) =
+    Becoming.Typicality.total (Becoming.Typicality.courses n) F
+Becoming.Situations.situations_count : ∀ (p q n : Nat) (s : Bool),
+  (Becoming.Situations.finer (Becoming.Typicality.stepWeight p q) [()] [true, false] n s).length = (p + q) ^ n
+Becoming.Situations.mul_indicator : ∀ (x : Nat) (c : Prop) [inst : Decidable c],
+  (x * if c then 1 else 0) = if c then x else 0
+Becoming.Situations.total_only : ∀ (f : List Bool → Nat) (n : Nat) (w : List Bool),
+  w.length = n → (Becoming.Typicality.total (Becoming.Typicality.courses n) fun v => if v = w then f v else 0) = f w
+Becoming.Situations.situations_of_course : ∀ (p q : Nat) (s : Bool) (w : List Bool),
+  (Becoming.counting.sum (Becoming.Situations.finer (Becoming.Typicality.stepWeight p q) [()] [true, false] w.length s)
+      fun h => if List.map Prod.snd (Becoming.Situations.coarse h) = w then 1 else 0) =
+    Becoming.Typicality.weight p q w
+Becoming.Situations.weight_far : ∀ (p q d : Nat) (w : List Bool),
+  Becoming.Typicality.weight p q w * Becoming.Situations.far p q d w = Becoming.Typicality.offBy p q d w
+Becoming.Situations.situations_typical : ∀ (p q n d : Nat) (s : Bool),
+  (Becoming.counting.sum (Becoming.Situations.finer (Becoming.Typicality.stepWeight p q) [()] [true, false] n s)
+        fun h => Becoming.Situations.far p q d (List.map Prod.snd (Becoming.Situations.coarse h))) *
+      d ≤
+    n * (p * q * (p + q) ^ n)

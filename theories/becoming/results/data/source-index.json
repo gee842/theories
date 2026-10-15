@@ -5413,6 +5413,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/Admission.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/formal/FunctionGraphs.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/admission/verification/KernelAudit.lean",
@@ -8754,6 +8755,8 @@
       "title": "Integration I4b: the closest gaps of the I4 table",
       "local_links": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean",
         "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md"
       ]
     },
@@ -10175,6 +10178,8 @@
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/HistoryIdeals.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/check_prefix_safety_correspondence.py",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification/CompletionAudit.lean",
         "sources/15-codex-theory-conversations/2026-10-07-lean-proof-requirement.md",
@@ -13003,7 +13008,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T184418.886926Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
@@ -13020,6 +13025,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean",
         "experiments/market-generativity/formal/MarketInstances.lean",
         "experiments/market-generativity/meta-attractor/SharedStockInstances.lean",
         "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",

@@ -1330,6 +1330,31 @@ Imports: `Std`
 
 </details>
 
+<a id="module-8f571422b6d0"></a>
+
+<details>
+<summary>PrefixSafetyCorrespondence.lean — 9 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean`
+
+Imports: `Becoming.Horizon`, `PrefixSafety`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.PrefixSafetyCorrespondence.samePrefix_iff_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean#L35) | 35 |
+| [Becoming.PrefixSafetyCorrespondence.finiteRefutable_iff_refutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean#L40) | 40 |
+| [Becoming.PrefixSafetyCorrespondence.prefixClosure_iff_adheres](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean#L48) | 48 |
+| [Becoming.PrefixSafetyCorrespondence.holds_of_prefixClosure_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean#L57) | 57 |
+| [Becoming.PrefixSafetyCorrespondence.prefixClosure_least_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean#L63) | 63 |
+| [Becoming.PrefixSafetyCorrespondence.recurrence_not_finiteRefutable_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean#L69) | 69 |
+| [Becoming.PrefixSafetyCorrespondence.terminationEvent_not_finiteRefutable_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean#L72) | 72 |
+| [Becoming.PrefixSafetyCorrespondence.markov_classical](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean#L76) | 76 |
+| [Becoming.PrefixSafetyCorrespondence.boundary_closed_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean#L85) | 85 |
+
+</details>
+
 <a id="module-d133a5ed4253"></a>
 
 <details>

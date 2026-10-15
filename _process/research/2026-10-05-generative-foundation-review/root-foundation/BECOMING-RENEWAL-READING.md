@@ -9227,6 +9227,45 @@ Integration: 第 6 节新段落对（在运行分开一段之后）与该段读�
 
 **检查。** 在暂存区对 main 6c62e13e（P115 之后）编译：`Becoming.Situations` 13 项定理、19 项声明，`Becoming.Parting` 18／27、`Becoming.Typicality` 32／44（只改说明）；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
+## 145. 有限历史所否证者（整合 I4b 第三项）：可否证、附着与 Markov 原则，PrefixSafety 接入
+
+2026-10-16。Ren 对 I4 归类表选择“Closest gaps first”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）。表把 PrefixSafety 读作待接入的律：对无穷迹，有限可否证的性质在其前缀闭包内即成立，前缀闭包是最小的有限可否证超集，复现与终于为真不可有限否证，由前缀测试给出的性质可有限否证。Becoming.Horizon 陈述了有限前缀不决定什么，未陈述有限历史否证什么（§139）。本节对每个过程陈述它，PrefixSafety 的前缀拓扑是所有序列构成的过程的实例。IdealWarrant 在偏序上推广同一形式，属 Ren 暂留脊柱外的一般数学线。
+
+```text
+Result(s): 新记录 what-a-finite-history-refutes；becoming-finite-horizon 与 no-finite-part-bears-taking 改绑（论断不变）
+Delta: 核心：Becoming.Horizon 加“有限历史所否证者”一节（12 → 34 项定理），含一条边界定理；
+       外围实例模块及其检查器：PrefixSafetyCorrespondence（9 项定理），在完成包旁；
+       可判定性清点：边界定理加 refutable_passes_iff_markov，边界句加“在门上定位起源、由前缀检验否证”；只在证明中用到的不变（224）
+Supplied premises / correspondence: 核心律不加前提：过程、读法与运行任意，测试是布尔值并由到其步的历史决定；Markov 原则与稳定是所用定理的假设；实例沿用 PrefixSafety 的迹（自然数上的函数）
+Evidence: 核心由核心运行审计（回执 20261015T184418.886926Z）；外围检查器实跑（回执 20261015T184605.889457Z）；PrefixSafety 经实例回执绑定，其字节与完成包回执相合
+Boundary: 见下文“边界与读法”
+Integration: §9 Horizon 一行（陈述改为中英，计数）与一个外围行；Becoming.lean 的模块条目；完成包 README；一项新记录；两项记录改绑；一个外围检查器；可判定性清点；归类表中 PrefixSafety 改为已接入
+```
+
+**到界一致、可否证与附着（不加前提）。** 两个运行到一界一致是自反、对称、传递的，界缩小仍一致（`Run.AgreeUpTo.refl`、`symm`、`trans`、`mono`）。读法可否证（`Refutable`）：其外每个运行有一界，界内与它一致的运行都在读法之外；可证实（`Verifiable`）对偶。运行附着于读法（`Adheres`）：每一界内它都与读法内某运行一致。读法内的运行附着于它，附着随读法扩大，附着于附着者即附着（`Adheres.of`、`mono`、`adheres`）。
+
+**可否证的读法在附着处成立，于双重否定下。** 可否证的读法在每个附着于它的运行上不能不成立（`Refutable.not_not`）：否则其界内有读法内的运行与它一致，而界内一致者都在读法之外。可否证的超集在附着于子集的运行上亦然（`Refutable.adheres_least`），这是前缀闭包最小的核心形式。读法稳定（不能不成立即成立）时，附着即成立（`Refutable.adheres_iff`）。
+
+**不可否证与不可证实的见证。** 运行附着于读法而在其外，读法不可否证（`not_refutable_of_adheres`）；附着于补集而在其内，读法不可证实（`not_verifiable_of_adheres`）。在所有序列构成的过程（`Sequences.process`，动作序列即运行）中，把序列在一界后接成常值，界内一致不变（`splice_agree`、`splice_after`）。于是全假的序列附着于复现与终于发生而在其外：两者皆不可否证（`Sequences.recurs_not_refutable`、`eventually_not_refutable`），从不发生不可证实（`never_not_verifiable`）。
+
+**由测试构成的读法。** 第 n 个测试是布尔值，由到第 n + 1 步的历史决定（`ByPrefixes`），读法即没有测试失败（`Passes`）。它在每个附着于它的运行上成立（`adheres_passes`），不需双重否定：测试已定。给定 Markov 原则（`Markov`：不全为假的布尔序列有真项），它可否证（`refutable_passes`）：不全通过时找到失败的测试 n，界取 n + 1。布尔序列的每个有限前缀或全假或已见真项（`false_below_or_true`），由归纳，不加前提。
+
+**边界。** 对每个过程都要求时，由测试构成的读法可否证恰是 Markov 原则（`refutable_passes_iff_markov`）。见证：所有布尔序列的过程，第 n 个测试读第 n 项。给定不全为假的序列 s，可否证给出一界 h；h 之前若已见真项即得；若全假，把 s 在 h 后接成全假，与 s 界内一致，却通过全部测试，矛盾。所以否证所需的，正是在只知并非全部通过时找到失败的测试。PrefixSafety 的 `boundary_closed` 以经典推理得之，那里这一步是隐含的。
+
+**PrefixSafety（PrefixSafetyCorrespondence，外围，自有检查器）。** PrefixSafety 的迹是所有序列过程的运行，`SamePrefix` 即核心的 `Run.AgreeUpTo`（`samePrefix_iff_agree`），有限可否证即 `Refutable`，前缀闭包即附着（`finiteRefutable_iff_refutable`、`prefixClosure_iff_adheres`）；复现与终止事件不可有限否证由核心的 `Sequences` 律给出（`recurrence_not_finiteRefutable_by_core`、`terminationEvent_not_finiteRefutable_by_core`）。这五项公理报告为空。以经典推理去掉双重否定，`Refutable.not_not` 与 `adheres_least` 给出闭包内即成立与闭包最小（`holds_of_prefixClosure_by_core`、`prefixClosure_least_by_core`）；经典推理给出核心的 `Markov`（`markov_classical`），`refutable_passes` 给出 `boundary_closed`（`boundary_closed_by_core`）。这四项只用标准公理。PrefixSafety 的定义与陈述不变，其包回执仍有效。
+
+**检查器。** PrefixSafety 在核心模块索引的 Lean 根之外（完成包，Lean 4.29.1，导入 Std）。`check_prefix_safety_correspondence.py` 由 `make_checker.py` 生成后做三处改动（`make_prefix_checker.py`）：Lean 根指向 `generative-basis/lean`；PrefixSafety 与实例从完成包加入索引；PrefixSafety 与完成包回执匹配，该回执由包的 `check.py` 只在全部模块新编译、全部审计通过后写出。干跑（回执写到临时目录）在 Lean 4.30.0-rc2 下通过：9 项定理，五项公理报告为空；唯一没有回执的是新的 Becoming.Horizon，待核心运行。
+
+**作者反审。**
+1. **新律还是重述？** 对脊柱是新的：Horizon 只有不决定之律。核心形式在任意过程上，PrefixSafety 只在 `Nat → A` 上且用经典推理。Markov 边界是全新的，PrefixSafety 没有相应结果。
+2. **为何是双重否定？** 不是有意减弱：读法只是命题，“不能不成立”到“成立”需要读法稳定；`adheres_iff` 表明稳定时附着即成立。此处未证明稳定恰是所需。
+3. **与有限视界的关系。** `prefix_does_not_decide` 说没有有限前缀的读法与整段分类相符。`Renewable` 中“更新”一类是否可否证，这里未作实例：其两个运行随界而变，没有固定的运行附着于另一类。
+4. **没有证明的。** IdealWarrant 在偏序上的形式；`refutable_passes` 的逆（每个可否证读法都是某组测试的通过集）。
+
+**边界与读法。** 本律说可否证给出什么，不说哪些实际读法可否证：这取决于读它的过程。PrefixSafety 的迹是自然数上的函数，不是实际历史的模型。读法（AI 的，待 Ren）：有限记录能显示的，是运行在可否证读法之外；运行在其内只是未被否证。由测试否证，须在只知并非全部通过时找到失败的测试。
+
+**下一步（I4b）。** Lasting（有限分支的 König 提升，FiniteBranching）；Selection（交换不变的服务恰当无并列，PluralRecords、TieBreaking；在 P110 落地之后）。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -10727,3 +10766,40 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 - **Ren's judgment.** On 16 October, answering the report of this section's results, which restated these readings, Ren wrote “yes, i take those readings”. The four readings above are therefore Ren's; the three notes on Ren's words remain the AI's notes. Whether, with a bound, a class's name reads as its finite future is still for Ren.
 - **Notes on Ren's words (the AI's).** The law of gravitation is shared by all planets; the value of gravity on each is situational, so the example holds of the value. Representing the actual change as fixed by a situation needs no axiom, but where weights cancel or readings depend on context (`Interference.cancels`, `Becoming.Context`, `Becoming.Quantum`, P112 in progress), the situation must include the context of the reading: counts of context-free situations do not give those statistics. “Just saying we are all one doesn't make it true” agrees with the nondual method: oneness is a requirement of method, and particular truths come from the situation.
 - **Boundaries.** Natural weights only; counting per course and the law of large numbers for two values only (per course for every process needs listings without repetition); which situation is actual is not derived. Scratch build on main 6c62e13e: empty axiom reports. Not yet independently reviewed.
+
+**What a finite history refutes, integration I4b item 3 (16 October 2026).** Ren chose “Closest gaps first” on the I4 classification table ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)). The table read PrefixSafety as a join candidate. On infinite traces, a finitely refutable property holds within its prefix closure, and the prefix closure is the least finitely refutable superset. Recurrence and eventual truth are not finitely refutable, and properties given by prefix tests are. Becoming.Horizon stated what no finite prefix decides, but not what a finite history refutes (section 139). This section states it for every process, with PrefixSafety's prefix topology as the instance of the process of all sequences. IdealWarrant generalizes the same form to posets; it belongs to the general mathematical line Ren left outside the spine for now.
+- **Agreement, refutability, adherence** (`Becoming.Horizon`, no premise; 12 → 34 theorems).
+  - Agreement up to a horizon is reflexive, symmetric and transitive, and holds at every smaller horizon (`Run.AgreeUpTo.refl`, `symm`, `trans`, `mono`).
+  - A reading is refutable where every run outside it has a horizon within which every agreeing run is outside (`Refutable`); verifiable dually (`Verifiable`).
+  - A run adheres to a reading where at every horizon it agrees with a run inside (`Adheres`). Runs inside adhere, adherence grows with the reading, and adhering to the adherent is adhering.
+- **A refutable reading holds where a run adheres, up to double negation** (`Refutable.not_not`). A refutable superset so holds at every run adhering to the subset (`Refutable.adheres_least`), the core form of the closure being least. For a stable reading, adhering is holding (`Refutable.adheres_iff`).
+- **Witnesses.**
+  - A run adhering to a reading while outside it shows the reading is not refutable (`not_refutable_of_adheres`), and dually not verifiable (`not_verifiable_of_adheres`).
+  - In the process whose runs are all sequences (`Sequences.process`), splicing a constant after a horizon keeps agreement within it. So recurrence and eventual occurrence are not refutable, and never occurring is not verifiable (`Sequences.recurs_not_refutable`, `eventually_not_refutable`, `never_not_verifiable`).
+- **Readings made of tests.**
+  - The test at n is Boolean and fixed by the history through step n + 1 (`ByPrefixes`), and the reading is that no test fails (`Passes`).
+  - It holds at every run adhering to it, with no double negation, since the tests are decided (`adheres_passes`).
+  - Given Markov's principle, that a Boolean sequence not all false has a true term (`Markov`), it is refutable (`refutable_passes`).
+- **Boundary.** Asked of every process, refutability of every reading made of tests is exactly Markov's principle (`refutable_passes_iff_markov`).
+  - The witness is the process of all Boolean sequences, with the test at n reading term n.
+  - A refuting horizon for a sequence not all false either shows a true term or, spliced to all false after it, gives an agreeing run passing every test.
+  - What a refuting history must find is a failed test where it is only known that not all pass. PrefixSafety's `boundary_closed` takes this step implicitly, by classical reasoning.
+- **PrefixSafety** (`PrefixSafetyCorrespondence`, periphery, with its own checker).
+  - Correspondences: `SamePrefix` is `Run.AgreeUpTo` on the runs of the sequences; finite refutability is `Refutable`; and the prefix closure is adherence. Recurrence and the termination event are not finitely refutable by the core's `Sequences` laws. These five have empty axiom reports.
+  - With classical reasoning: holding within the closure, the closure being least, and `boundary_closed` follow from `Refutable.not_not`, `adheres_least`, `Markov` and `refutable_passes`. These four use standard axioms only.
+  - PrefixSafety's statements and its package receipt are unchanged.
+- **Checker.** PrefixSafety lies outside the Lean root the core indexes. `check_prefix_safety_correspondence.py` is generated by `make_checker.py` and then patched by `make_prefix_checker.py`:
+  - the Lean root points to `generative-basis/lean`;
+  - PrefixSafety and the instance are indexed from the completion package;
+  - PrefixSafety matches the package receipt, which `check.py` writes only after a fresh compile with every audit passing.
+  - A dry run under Lean 4.30.0-rc2 passed, with its receipt written to a scratch folder: 9 theorems, five of them with empty reports. Only the new Becoming.Horizon lacked a receipt, pending the core run.
+- **Decidability inventory.** `refutable_passes_iff_markov` joins the boundary theorems, and the boundary sentence gains the gate origin and prefix refutation. Proof-only theorems are unchanged (224).
+- **Records.** The new record what-a-finite-history-refutes reuses becoming-finite-horizon's `Run.AgreeUpTo`. becoming-finite-horizon and no-finite-part-bears-taking are rebound, their claims unchanged.
+- **Not stated.**
+  - Whether `Renewable`'s renewing class is refutable: the two runs of `prefix_does_not_decide` vary with the horizon, so no fixed run adheres to the other class.
+  - That stability is exactly what removing the double negation needs.
+  - IdealWarrant's poset form, and the converse of `refutable_passes`.
+- **Boundary and reading.** The law says what refutability gives, not which actual readings are refutable; that depends on the process. PrefixSafety's traces are functions on the natural numbers, not a model of an actual history. The reading, which is the AI's and pending Ren: what a finite record can show is that a run lies outside a refutable reading; that it lies inside is only not refuted.
+- **Next in I4b.**
+  - Lasting: König lifting (FiniteBranching).
+  - Selection: PluralRecords and TieBreaking, after P110 lands.

@@ -157,6 +157,7 @@ def record():
     assert sorted(listed) == sorted(new + instance), set(listed) ^ set(new + instance)
     core_receipt = passed(CORE_POINTER, 'Becoming.Horizon', HORIZON)
     instance_receipt = passed(INSTANCE_POINTER, 'PrefixSafetyCorrespondence', INSTANCE)
+    assert passed(INSTANCE_POINTER, 'PrefixSafety', PREFIX) == instance_receipt
     package_passed()
     theorems = sum(1 for line in (ROOT / HORIZON).read_text().splitlines() if line.startswith('theorem '))
     bindings = [
@@ -165,8 +166,11 @@ def record():
         {'source': INSTANCE, 'receipt': instance_receipt,
          'sha256_pointer': '/source_sha256/PrefixSafetyCorrespondence',
          'success_pointer': '/status', 'success_value': 'passed'},
-        {'source': PREFIX, 'receipt': PACKAGE, 'sha256_pointer': '/source_sha256/PrefixSafety.lean',
-         'success_pointer': '/fresh_build', 'success_value': True},
+        # The instance receipt also hashes PrefixSafety, matched to the package receipt, whose own format
+        # (`modules` a count) the research check's receipt reader does not take; the package receipt stays a
+        # reference (integrator, landing I4b-3).
+        {'source': PREFIX, 'receipt': instance_receipt, 'sha256_pointer': '/source_sha256/PrefixSafety',
+         'success_pointer': '/status', 'success_value': 'passed'},
     ]
     r = {
         'schema_version': 2,
@@ -250,7 +254,7 @@ def record():
         'references': [
             {'path': HORIZON, 'role': 'proof', 'sha256': sha(HORIZON), 'declarations': new},
             {'path': INSTANCE, 'role': 'proof', 'sha256': sha(INSTANCE), 'declarations': instance},
-            {'path': PREFIX, 'role': 'integration', 'sha256': sha(PREFIX),
+            {'path': PREFIX, 'role': 'proof', 'sha256': sha(PREFIX),
              'declarations': ['CompletionWarrant.PrefixSafety.FiniteRefutable',
                               'CompletionWarrant.PrefixSafety.PrefixClosure',
                               'CompletionWarrant.PrefixSafety.finiteRefutable_iff_prefixClosure',
