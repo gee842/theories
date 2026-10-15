@@ -119,6 +119,10 @@ FORMS = {
     'ExchangeLaw.Nonanticipating.through_of_observed': '`ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
     'ExchangeLaw.Nonanticipating.through_sensitive': '`ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
     'comparison_through_sensitivity': '`comparison_of_courses`（经律所经的识，不判定 / through a registration the law reads through, no decision, P80）',
+    # 2026-10-15, P83c
+    'Law.sameFuture_iff_classes': '`Law.sameFuture_classes_unrefuted`（不判定，不被否证 / no decision, refuted by '
+                                  'nothing）；`Law.sameFuture_iff_below`（2N − 1，无前提 / no premise）',
+    'Identification.sameAhead_iff_classes': '`Identification.sameAhead_iff_below`（2N − 1，无前提 / no premise）',
 }
 
 # Why a statement depends on decidedness: the decidability-taking definitions it mentions (Lean's `ment` column).
@@ -259,6 +263,10 @@ PROOF_KIND = {
         'Lasting.reaches_iff_histories', 'Frame.exists_fresh']},
     'Lasting.orbit_reaches_iff_variant': 'indicate',
     'TimedResponse.different_answers_require_reached': 'split',
+    # 2026-10-15, P83c: refinement stops within its classes; Moore's bound with values decided
+    **{n: 'split' for n in ['Decided.exists_within', 'Refining.grow', 'Law.AgreeTo.decided']},
+    **{n: 'find' for n in ['Refining.steady_or_grown', 'Refining.steady_within']},
+    **{n: 'same' for n in ['Law.sameFuture_iff_classes', 'Identification.sameAhead_iff_classes']},
     # 2026-10-14, `Decided` binders read at default transparency (a decided proposition, not excluded middle)
     **{n: 'split' for n in [
         'Decided.and', 'Decided.not', 'Decided.imp', 'Decided.iff', 'Decided.of_not_not', 'Decided.exists_mem',
