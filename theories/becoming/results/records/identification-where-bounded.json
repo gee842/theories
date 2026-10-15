@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-15T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-15T12:00:00+00:00",
   "statement": {
     "zh": "有界的记录确定历程，记录长度恰好。界给定时归纳即演绎：给定界的学习者从 2N − 1 起每步都对且不能更早；未给定界的学习者在界给出的一步之前静止。有限的名命名有意义的切分，不用商。",
     "en": "A bounded record fixes the course at an exact length. With the bound given, induction is deduction: the learner given it is right from 2N − 1 on and none can always speak sooner; the learner not given it rests by a step the bound gives. Finite names name the split that makes sense, with no quotient."
@@ -131,6 +131,28 @@
         "Becoming.Law.name_carries",
         "Becoming.Law.decideAlike"
       ]
+    },
+    {
+      "zh": "Moore 界：确定的律下，N 个成员的列表对律封闭、成员的值判定相同时，两个成员的所识的未来相同，恰当它们在 N − 1 步内相同。在 k + 1 步内相同（Law.AgreeTo）是一条等价链，每一步比前一步细；值不同的成员给出两类，每次严格细分多一类，两两分开的成员不多于列表，所以链在 N − 2 步之内停止细分，律确定，此后不再细分。不判定时，处处相同不被否证。对每个 N ≥ 2 恰好：N 个位置的路径走到停住的最后一个，只识是否到了最后，前两个位置在 N − 2 步内相同而在下一步不同。值已定、至多 N 个状态的历史的两个时刻，恰在 N − 1 步内相同时是同一状态。",
+      "en": "Moore's bound: under a determined law on a list of N members closed under it, with the members' values compared decidedly, two members have the same registered future exactly where they agree for N − 1 steps. Agreeing for k + 1 steps (Law.AgreeTo) is a chain of equivalences, each finer than the one before; members with different values make two classes, each strict refinement adds one, and members pairwise apart are no more than the list, so the chain stops refining within N − 2 steps and, the law being determined, never refines again. With no decision, that they agree everywhere is refuted by nothing. Exact for every N ≥ 2: on a path of N positions to a last one that stays, registering only whether the last is reached, the first two positions agree for N − 2 steps and differ at the next. Two moments of a history with at most N states and decided values are one state exactly where they agree for N − 1 steps.",
+      "declarations": [
+        "Becoming.Law.AgreeTo",
+        "Becoming.Law.agreeTo_iff",
+        "Becoming.Law.agreeTo_refining",
+        "Becoming.Law.AgreeTo.decided",
+        "Becoming.Law.AgreeTo.steady_on",
+        "Becoming.Law.sameFuture_iff_classes",
+        "Becoming.Law.sameFuture_classes_unrefuted",
+        "Becoming.Law.sameFuture_classes_exact",
+        "Becoming.Identification.sameAhead_iff_classes",
+        "Becoming.DistinctUnder",
+        "Becoming.DistinctUnder.length_le",
+        "Becoming.Refining",
+        "Becoming.SteadyAt",
+        "Becoming.Refining.grow",
+        "Becoming.Refining.steady_within",
+        "Becoming.not_not_within"
+      ]
     }
   ],
   "hypotheses": [
@@ -145,6 +167,10 @@
     {
       "zh": "只陈述确定的律与单个所识的历程；有分支的框架与概率没有陈述。",
       "en": "Only determined laws and single registered courses are stated; branching frames and probabilities are not."
+    },
+    {
+      "zh": "Moore 界（Law.sameFuture_iff_classes、Identification.sameAhead_iff_classes）要成员的值两两判定相同（对列表中的每一对，Decided，不要判定程序）；Law.sameFuture_classes_unrefuted 不要，只说处处相同不被否证。",
+      "en": "Moore's bound (Law.sameFuture_iff_classes, Identification.sameAhead_iff_classes) needs the members' values compared decidedly (Decided for each pair of the list, no decision procedure); Law.sameFuture_classes_unrefuted does not, and states only that agreeing everywhere is refuted by nothing."
     }
   ],
   "does_not_show": [
@@ -154,8 +180,8 @@
       "kind": "scope"
     },
     {
-      "zh": "同一历史、同一世界的更锐的 Moore 界没有陈述。",
-      "en": "Moore's sharper bound for one history or one world is not stated.",
+      "zh": "不判定时 Moore 界 N − 1 是否成立没有表明：不判定时只是不被否证；2N − 1 的界不需判定。",
+      "en": "Whether Moore's bound N − 1 holds with no decision is not shown: without one it is only refuted by nothing; the bound 2N − 1 needs none.",
       "kind": "scope"
     },
     {
@@ -168,8 +194,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "detail": {
-        "zh": "record_short：一个状态的历程与 T + 1 个状态的历程有相同的长 T 的记录而在 T 不同；record_short_twice：两个 M + 2 个状态的历程（每 M + 2 步与每 M + 1 步标记一次）有相同的长 M + M + 2 的记录而在那里不同；bounded_agree_exact：对每一对 M、M′，以周期 M + 1 标记、标记落在第 M + M′ 步的历程，与在第 M′ 步之前随它、之后不标记的历程，有相同的长 M + M′ 的记录而在那里不同；answer_exceeds_bound：回答给定 N 的学习者的历程超出 N 个状态。",
-        "en": "record_short: a course with one state and one with T + 1 share their record before T and differ at T; record_short_twice: two courses with M + 2 states (marking every M + 2 and every M + 1 steps) share their record before M + M + 2 and differ there; bounded_agree_exact: for every M and M′, the course marking one step in every M + 1, with a mark at M + M′, and the course following it before M′ and unmarked from then on share their record before M + M′ and differ there; answer_exceeds_bound: the course answering the learner given N exceeds N states."
+        "zh": "record_short：一个状态的历程与 T + 1 个状态的历程有相同的长 T 的记录而在 T 不同；record_short_twice：两个 M + 2 个状态的历程（每 M + 2 步与每 M + 1 步标记一次）有相同的长 M + M + 2 的记录而在那里不同；bounded_agree_exact：对每一对 M、M′，以周期 M + 1 标记、标记落在第 M + M′ 步的历程，与在第 M′ 步之前随它、之后不标记的历程，有相同的长 M + M′ 的记录而在那里不同；answer_exceeds_bound：回答给定 N 的学习者的历程超出 N 个状态；Law.sameFuture_classes_exact：对每个 M，M + 2 个位置走到停住的最后一个、只识是否到了最后的路径上，前两个位置在 M 步内相同而在第 M 步不同。",
+        "en": "record_short: a course with one state and one with T + 1 share their record before T and differ at T; record_short_twice: two courses with M + 2 states (marking every M + 2 and every M + 1 steps) share their record before M + M + 2 and differ there; bounded_agree_exact: for every M and M′, the course marking one step in every M + 1, with a mark at M + M′, and the course following it before M′ and unmarked from then on share their record before M + M′ and differ there; answer_exceeds_bound: the course answering the learner given N exceeds N states; Law.sameFuture_classes_exact: for every M, on the path of M + 2 positions to a last one that stays, registering only whether the last is reached, the first two positions agree for M steps and differ at step M."
       }
     }
   ],
@@ -183,8 +209,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Identification have empty axiom reports (receipt 20261013T094743.528770Z, some declarations under former names; the current bytes of Identification, Description and Unfolding bound by 20261013T204910.042715Z), and the checker verifies core purity. Author counterreview, with the scope of the independent review, in the integration note."
   },
   "next_delta": {
-    "zh": "同一世界的 Moore 界；未给定界的学习者的最优静止之步；有分支的框架下的辨识（以 Becoming.Unfolding 的 Alike 与 Becoming.Histories 的检验）；与 alike_iff_sameTests 的实例定理；Ren 对“按情境就是界”与有限名读法的判断。",
-    "en": "Moore's bound for one world; the optimal rest step of the learner not given the bound; identification for branching frames (with Alike of Becoming.Unfolding and the tests of Becoming.Histories); the instance theorem to alike_iff_sameTests; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
+    "zh": "未给定界的学习者的最优静止之步；不判定时 Moore 界 N − 1 是否成立；与 alike_iff_sameTests 的实例定理；Ren 对“按情境就是界”与有限名读法的判断。",
+    "en": "The optimal rest step of the learner not given the bound; whether Moore's bound N − 1 holds with no decision; the instance theorem to alike_iff_sameTests; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有记录确定下一个值；学习者静止这一点不被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。",
@@ -219,7 +245,14 @@
     "finite name",
     "有限的名",
     "bounded rest",
-    "有界的静止"
+    "有界的静止",
+    "Becoming.Law.sameFuture_iff_classes",
+    "Becoming.Law.sameFuture_classes_unrefuted",
+    "Becoming.Law.sameFuture_classes_exact",
+    "Becoming.Identification.sameAhead_iff_classes",
+    "Becoming.Refining.steady_within",
+    "Moore's bound",
+    "Moore 界"
   ],
   "dependencies": [
     {
@@ -342,7 +375,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "c545a77bced15ebfd148bb65315d4d78ecf68adefe183e27bf0c1cfadb8103e0",
+      "sha256": "9561618ae9d59955bbc164e7640da210e605061263151620dd155478c9a98a07",
       "declarations": [
         "Becoming.Identification.residue",
         "Becoming.Identification.periodic_whole",
@@ -396,7 +429,42 @@
         "Becoming.Law.name",
         "Becoming.Law.name_identifiesAlike",
         "Becoming.Law.name_carries",
-        "Becoming.Law.decideAlike"
+        "Becoming.Law.decideAlike",
+        "Becoming.Law.AgreeTo",
+        "Becoming.Law.agreeTo_iff",
+        "Becoming.Law.AgreeTo.self",
+        "Becoming.Law.AgreeTo.symm",
+        "Becoming.Law.AgreeTo.trans",
+        "Becoming.Law.AgreeTo.of_succ",
+        "Becoming.Law.agreeTo_refining",
+        "Becoming.Law.AgreeTo.decided",
+        "Becoming.Law.AgreeTo.steady_on",
+        "Becoming.Law.sameFuture_iff_classes",
+        "Becoming.Law.sameFuture_classes_unrefuted",
+        "Becoming.Law.upto_length",
+        "Becoming.Law.sameFuture_classes_exact",
+        "Becoming.Identification.sameAhead_iff_classes"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean",
+      "role": "proof",
+      "sha256": "6d9071d866adbb5ceb44f0c5991799ea4d3416f36d4d0066096b942532643423",
+      "declarations": [
+        "Becoming.DistinctUnder",
+        "Becoming.DistinctUnder.mono",
+        "Becoming.DistinctUnder.unique",
+        "Becoming.remove_mem",
+        "Becoming.DistinctUnder.length_le",
+        "Becoming.Decided.exists_within",
+        "Becoming.not_not_within",
+        "Becoming.Refining",
+        "Becoming.SteadyAt",
+        "Becoming.Refining.grow",
+        "Becoming.Refining.steady_or_grown",
+        "Becoming.Refining.steady_within",
+        "Becoming.DistinctUnder.single",
+        "Becoming.le_pred_of_succ_le"
       ]
     },
     {
@@ -509,6 +577,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Refinement",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -637,6 +712,10 @@
     {
       "zh": "2026-10-15 P83b：按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”，完成 next_delta 的第一项：新增 Identification.bounded_agree_exact，对每一对界，长 N + N′ − 2 的记录不确定历程，所以 N + N′ − 1 对每一对界恰好（此前只在 N = 1 与 N = N′ 证明）；第四条规律、反例与 next_delta 随之修订，删去“只在 N = 1 与 N = N′ 证明为恰好”的范围说明；Identification 的引用哈希指向新字节；验证范围待整合者的合并检查器运行后重新指向。见整合文档 §126。断言的其余部分不变。",
       "en": "2026-10-15 P83b: following Ren's ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’ of 12 October 2026 06:01, the first item of next_delta is done: Identification.bounded_agree_exact is added, so that for every pair of bounds the record before N + N′ − 2 does not fix the course and N + N′ − 1 is exact for every pair (shown before only for N = 1 and N = N′); the fourth law, the counterexamples and next_delta are revised, and the scope note ‘shown exact only for N = 1 and N = N′’ is removed; the Identification reference hash points to the new bytes; the validation scope is re-pointed after the integrator's consolidated checker run. See §126 of the integration note. The rest of the claim is unchanged."
+    },
+    {
+      "zh": "2026-10-15 P83c：按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”与 2026-10-15 的“offer it to them, keep proving”，完成 next_delta 中的“同一世界的 Moore 界”：新增核心模块 Becoming.Refinement（精化链在其类数之内停止，Refining.steady_within）与 Identification 中的 Moore 界（Law.sameFuture_iff_classes，值已定，N − 1 步；Law.sameFuture_classes_unrefuted，不判定时不被否证；Law.sameFuture_classes_exact，对每个 N ≥ 2 恰好；Identification.sameAhead_iff_classes，同一历史）；新增第十三条规律与一项假设，反例增补，删去“同一历史、同一世界的更锐的 Moore 界没有陈述”，代以“不判定时是否成立没有表明”；“有分支的框架下的辨识”由 tests-fix-likeness-where-determined 的新规律回答（一个框架之内深度 N − 1，恰好；两个框架之间 N + N′ − 1），从 next_delta 移去；Identification 的引用哈希指向新字节，新增 Refinement 的引用与证明绑定（待整合者的合并检查器运行后重新指向）。见整合文档 §128。断言的其余部分不变。",
+      "en": "2026-10-15 P83c: following Ren's ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’ of 12 October 2026 06:01 and ‘offer it to them, keep proving’ of 15 October, the next_delta item ‘Moore's bound for one world’ is done: the core module Becoming.Refinement is added (a chain of equivalences stops within its classes, Refining.steady_within), with Moore's bound in Identification (Law.sameFuture_iff_classes, values decided, N − 1 steps; Law.sameFuture_classes_unrefuted, refuted by nothing with no decision; Law.sameFuture_classes_exact, exact for every N ≥ 2; Identification.sameAhead_iff_classes, for one history). A thirteenth law and a hypothesis are added and the counterexamples extended; ‘Moore's sharper bound for one history or one world is not stated’ gives way to ‘whether it holds with no decision is not shown’. ‘Identification for branching frames’ is answered by the new law of tests-fix-likeness-where-determined (depth N − 1 within one frame, exactly; N + N′ − 1 across two) and leaves next_delta. The Identification reference hash points to the new bytes, and a Refinement reference and proof binding are added, re-pointed after the integrator's consolidated checker run. See §128 of the integration note. The rest of the claim is unchanged."
     }
   ],
   "text_versions": [

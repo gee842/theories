@@ -44,6 +44,7 @@ import Becoming.Sampling
 import Becoming.Tower
 import Becoming.Openness
 import Becoming.Decidedness
+import Becoming.Refinement
 import Becoming.Counting
 import Becoming.Standing
 import Becoming.Resolution
@@ -426,6 +427,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   none; decided from some step on, the recurrence law holds. The rest theorems of
   `Becoming.Space` and `Becoming.Openness` use no decision procedure. The readings are the
   AI's, pending Ren.
+* `Becoming.Refinement` (L3): a chain of equivalences stops within its classes (P83c), with no
+  premise beyond the decisions it counts. Members a list holds that a relation keeps pairwise
+  apart are no more than the list; where two members joined at one step are apart at the next, a
+  list pairwise apart grows by one; so where each step's relation is decided among `N` members
+  and `c` are apart at the first step, the chain stops refining within `N - c` steps. Moore's
+  bound for determined laws (`Becoming.Identification`) and the depth by classes for branching
+  frames (`Becoming.Likeness`) are its instances. The decisions of finitely many propositions are
+  together refuted by nothing. The readings are the AI's, pending Ren.
 * `Becoming.Counting` (L3): what the premises add to the laws of counting, the tally being
   the whole law of counting with no premise (`Becoming.Population`). Premises lacking
   balance or embodiment leave counting free: every tally is the census of a world meeting
@@ -749,7 +758,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   steps is never refuted again, so the learner by refutation over the lasso hypotheses is right
   at every step from `N + (2N - 1) * tri N` on, a step its record does not show. In a world a
   list holds, naming configurations by their registered futures for `2N - 1` steps makes sense
-  and carries the law, with no quotient. The readings are the AI's.
+  and carries the law, with no quotient. Within one world or one history Moore's bound is
+  sharper: with the values decided, configurations have the same registered future exactly where
+  they agree for `N - 1` steps, exact for every `N ≥ 2`, and with no decision their agreeing at
+  every step is refuted by nothing. The readings are the AI's.
 * `Becoming.Learnable` (L4): what a learner can learn through its registration, with no
   premise. Two configurations with the same registered future give every learner the same
   record, so where their targets differ a claim is right on at most one, and a learner resting
@@ -877,8 +889,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   not taken is not fixed up to likeness; the dichotomy of difference-making needs one level after
   the move. On finite frames whose steps and claims are decided, configurations are alike exactly
   where they pass the same branching tests, by a constructive proof in which refinement stops
-  within the number of pairs of configurations; deciding likeness for every finite frame is
-  excluded middle.
+  within the number of pairs of configurations and, counting classes, within `N - 1` for one
+  frame of `N` configurations, exactly, and `N + N' - 1` across two; deciding likeness for every
+  finite frame is excluded middle.
 * `Becoming.Postponement` (L3): what linear tests see, with no premise. Postponing every branching
   until it shows (a configuration becoming the family a course may have reached), two
   configurations pass the same linear tests exactly where they are alike, and a frame is alike to

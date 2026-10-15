@@ -8085,6 +8085,61 @@ Integration: identification-where-bounded 的恰好性由“只在 N = 1 与 N =
 
 **检查。** 在暂存区对 main（69ba40bd）编译：`Becoming.Identification` 43 项定理、55 项声明，没有错误或警告，公理报告全部为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。证明不用 `Nat` 的取模与减法引理：标记的位置由 P73 的套索世界（`lassoPos_early`、`lassoPos_period`）与 `periodic_whole` 给出，移位 M·M′ 使第 M′ 步落在循环的开头。合并检查器在整合者的运行中检查。本节尚未经独立审查。
 
+## 128. 精化在类数之内停止：Moore 界与有分支的框架以类计的深度（P83c）
+
+2026-10-15，P83 的下一步（[identification-where-bounded](../../../../theories/becoming/results/records/identification-where-bounded.md) 的 next_delta “同一世界的 Moore 界”与“有分支的框架下的辨识”），按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）与 2026-10-15 的“offer it to them, keep proving”（把有分支的框架的部分交给 `Becoming.Likeness` 的所有者，后者同意：加而不替换）。工作板上认领为 P83c。§97 与 §126 给出两段各有其界的历史的长度 N + N′ − 1（Fine–Wilf），同一世界的两个配置只用了 2N − 1；`Becoming.Likeness` 以配置对的数目 N·N′ 为深度的界。本节以类计数，给出两者更锐的界。新增核心模块 `Becoming.Refinement`（导入 `Decidedness` 与 `Recurrence`）；`Becoming.Identification` 与 `Becoming.Likeness` 只增加声明，导入 `Refinement`，已有声明不变。不加公理；除了所计数的判定不加前提。
+
+```text
+Result(s): 复用 identification-where-bounded（Law.SameFuture、orbit_held、sameFuture_iff_below、lassoPos_early、
+           statesBelow_iff_lasso、StatesBelow、SameAhead；Learning.lassoNext、upto、mem_upto、lasso_realized）；
+           tests-fix-likeness-where-determined（AlikeTo、AlikeTo.of_succ、AlikeTo.decided、AlikeTo.down_to、
+           AlikeTo.bisimulation、FiniteDecided、Alike.alikeTo）；configurations-alike-by-relation（Law.registered）；
+           recurrence-without-premise（Law.orbit、orbit_shift、orbit_add、mem_cons_split）；Decidedness（Decided、
+           Decided.and、Decided.not、Decided.of_not_not、not_not_decided）；不新增记录，两条记录各增一条规律
+Delta: Becoming.Refinement（DistinctUnder、Refining、SteadyAt、DistinctUnder.length_le、Refining.grow、
+       Refining.steady_within、not_not_within）；Law.AgreeTo、Law.sameFuture_iff_classes、
+       Law.sameFuture_classes_unrefuted、Law.sameFuture_classes_exact、Identification.sameAhead_iff_classes；
+       AlikeTo.refining、AlikeAcross、AlikeTo.steady_within_classes、alike_iff_alikeTo_classes、
+       AlikeTo.steady_within_across、alike_iff_alikeTo_across、alikeTo_registered_iff、EndOfPath.classes_exact
+Supplied premises / correspondence: 不加公理；列表（N 个成员）写在定理中；Moore 界要成员的值两两判定相同（Decided，
+       不要判定程序），不判定的形式只说不被否证；有分支的框架用 FiniteDecided（已有的条件）
+Evidence: scratch_build 对 main 69ba40bd 上的 P83b：Becoming.Refinement 11 项定理、14 项声明；Becoming.Identification
+       56 项定理、69 项声明（P83b 为 43、55）；Becoming.Likeness 137 项定理、181 项声明（此前 114、151）；
+       公理报告全部为空；合并检查器回执待整合者的运行
+Boundary: 两个有分支的框架之间深度 N + N′ − 1 是否恰好没有表明；不判定时 N − 1 是否成立没有表明；不含伦理谓词
+Integration: identification-where-bounded 的 next_delta 中“同一世界的 Moore 界”完成，“有分支的框架下的辨识”由
+       tests-fix-likeness-where-determined 的第十三条规律回答；AlikeTo.steady_within 与 alike_iff_alikeTo_pairs 保留
+```
+
+| 声明 | 内容 |
+|---|---|
+| `DistinctUnder.length_le` | **两两分开的成员不多于列表。** 关系使每个成员与自身相连时，列表 l 持有的、两两不相连的成员 s 满足 s.length ≤ l.length（`Population` 的 `Distinct` 是相等的情形）。证明从 l 中取出 s 的第一个成员的一次出现，余下的仍持有 s 的其余成员；不需判定 |
+| `Refining.grow` | **严格细分多一类。** 在一条等价链（`Refining`：自反、对称、传递，每步比前一步细）中，x、y 在第 j 步相连、第 j + 1 步分开时，第 j 步两两分开的列表 r 加上 l 的一个成员，成为第 j + 1 步两两分开的列表：若 x 与 r 中无一相连，加 x；若与 a 相连，x、y 中至少一个在第 j + 1 步与 a 分开，加它 |
+| `Refining.steady_within` | **链在其类数之内停止。** 每步的关系在 l 的成员之间已定、第一步有 c 个成员两两分开时，在某个 k（k + c ≤ l.length）处，第 k 步相连的成员在第 k + 1 步仍相连（`SteadyAt`）。证明逐步：要么已停止，要么两两分开的成员已有 c + j 个，而它们不多于 l |
+| `not_not_within` | 有限多个命题各自不被否证时，合起来也不被否证；所以有限多个判定合起来不被否证 |
+| `Law.sameFuture_iff_classes` | **Moore 界。** 确定的律下，列表 l（N 个成员）对律封闭、成员的值两两判定相同时，两个成员所识的未来相同，恰当它们在 N − 1 步内相同。在 k + 1 步内相同（`Law.AgreeTo`）是一条等价链；若所有成员的值相同，处处相同；否则值不同的两个成员给出两类，链在 N − 2 之内停止，律确定，此后不再细分（`Law.AgreeTo.steady_on`） |
+| `Law.sameFuture_classes_unrefuted` | 不判定时，在 N − 1 步内相同的两个成员处处相同，这一点不被否证：所需的判定只有列表中有限多对，合起来不被否证 |
+| `Law.sameFuture_classes_exact` | **对每个 N ≥ 2 恰好。** M + 2 个位置的路径（`Learning.lassoNext (M + 1) 0`，最后一个停住），只识是否到了最后一个：位置 0 与 1 在前 M 步相同，在第 M 步不同 |
+| `Identification.sameAhead_iff_classes` | 至多 N 个状态、值两两判定相同的历史中，两个时刻是同一状态，恰当其后在 N − 1 步内相同：历史是其套索世界的历程，位置不多于 N |
+| `AlikeTo.steady_within_classes`、`alike_iff_alikeTo_classes` | **一个框架之内深度 N − 1。** 深度的相同是一条等价链（`AlikeTo.refining`，由 `AlikeTo.self`、`symm`、`trans`）；N 个配置持有有限、已定的框架时，它在 k + c ≤ N 处停止（c 为两两实现不同主张的配置数），所以相同恰是深度 N − 1 的相同 |
+| `AlikeTo.steady_within_across`、`alike_iff_alikeTo_across` | **两个框架之间深度 N + N′ − 1。** 两个框架合起来读作一个（`AlikeAcross`，在 S ⊕ S′ 上），它们的配置恰在深度 N + N′ − 1 相同时相同 |
+| `EndOfPath.classes_exact` | **一个框架之内 N − 1 恰好。** N = M + 2 个位置、每个走到下一个、最后一个不再有步、没有主张的框架：前两个位置在深度 M = N − 2 相同而不相同 |
+| `alikeTo_registered_iff` | 确定的律经登记读出时，深度 k 的相同就是 k + 1 步内的一致（两个律、两个登记亦然） |
+
+**它回答了什么。** 一条逐步变细的等价链，每次严格细分多一类，而在 N 个成员之间至多有 N 类：这就是 Moore（1956）的论证，这里在核心中不用公理陈述为一条一般的律（`Refining.steady_within`），三处是它的实例。同一世界中，两个配置所识的未来相同，恰当它们在 N − 1 步内相同（此前用 2N − 1）；同一历史的两个时刻亦然。有分支的框架上，深度以类计：一个框架之内 N − 1，两个框架之间 N + N′ − 1（此前以配置对的数目 N·N′ 计）。所以“有分支的框架下的辨识”有了深度的形式：两个有限、已定的框架，各有 N 与 N′ 个配置，其配置是否相同由深度 N + N′ − 1 的分支检验确定。
+
+**三个界连成一体。** 两段历史至多有 N 与 N′ 个状态时，Fine–Wilf 的 N + N′ − 1 就是两个系统合起来（N + N′ 个配置）的 Moore 界，对每一对界恰好（§126）。同一世界中配置共用它们的类，Moore 界是 N − 1，更锐。有分支的框架上多一步：确定的律经登记读出时，深度 k 的相同即 k + 1 步内的一致（`alikeTo_registered_iff`），所以那里深度 N − 2（同一世界）与 N + N′ − 2（两个世界）就够，均恰好；一般的框架需要 N − 1，`EndOfPath` 表明这一步不能省：多出的一步在于一个动作能否被取本身被识（死路）。
+
+**判定在何处。** 以类计数要判定：Moore 界要列表中每一对成员的值判定相同（只这有限多对，不要判定程序）。不判定时，结论不被否证（`Law.sameFuture_classes_unrefuted`），因为有限多个判定合起来不被否证（`not_not_within`），这与 `Becoming.Decidedness` 的“静止不需判定”同一形式。2N − 1 的界（`Law.sameFuture_iff_below`，经 Fine–Wilf）完全不需判定。所以更短的界与判定相连：N − 1 用判定，2N − 1 不用。不判定时 N − 1 是否成立没有表明。
+
+**作者反审。**
+1. **已知的结果。** Moore 的界（1956）、等价的划分细化与其类数论证在自动机理论中都已知；有分支的系统中以类计的互模拟深度（划分细化，Kanellakis–Smolka、Paige–Tarjan）亦然。增量是：在核心中不用公理、不用判定程序陈述，把判定局部化到有限多对值；并与 §97、§126 和 `Becoming.Likeness` 连成一体，三处是一条律的实例。
+2. **两个框架之间的恰好性没有证明。** 一个框架之内 N − 1 恰好（`EndOfPath.classes_exact`）。两个框架之间，以动作作为所识（每个配置只有一个带标记的动作），由 §126 的两个历程构造应给出 N + N′ − 1 的恰好性；这需要有限类型上的套索框架，留作下一步。
+3. **不判定时的 N − 1。** 只证明它不被否证；是否在核心中不判定地成立，或需要某个原则，没有表明。
+4. **名字。** `DistinctUnder`（`Distinct` 的关系形式）、`Refining`、`SteadyAt`、`AgreeTo`、`AlikeAcross`、`EndOfPath` 都是结构性的名字。
+
+**检查。** 在暂存区对 main 69ba40bd 上的 P83b 编译：`Becoming.Refinement` 11 项定理、14 项声明；`Becoming.Identification` 56 项定理、69 项声明；`Becoming.Likeness` 137 项定理、181 项声明；没有错误或警告，公理报告全部为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。证明不用 `simp`、`omega` 或 `Nat` 的取模与减法引理（`Nat.add_sub_cancel` 会带入 `propext`，以定义上的化简代替）。可判定性清点：`Decided.exists_within`、`Refining.grow`、`Law.AgreeTo.decided` 归为分情形，`Refining.steady_or_grown`、`Refining.steady_within` 归为找出，`Law.sameFuture_iff_classes`、`Identification.sameAhead_iff_classes` 归为分辨相同（另一形式见 `Law.sameFuture_classes_unrefuted` 与 `sameFuture_iff_below`、`sameAhead_iff_below`）；清点在落地回执之后重新生成。合并检查器在整合者的运行中检查。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -9370,3 +9425,5 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **Names (G8–G11).** Market words become structural ones: `Flow.surplus_raises_at`, `Flow.surplus_bounded_at` → `net_give_raises_at`, `net_give_bounded_at`; `SupportGated.surplus`, `surplus_active`, `surplus_step` → `netGive`, `netGive_active`, `netGive_step`; `ProtocolInstances.charge_some`, `charge_none` → `unit_drawn`, `stalls_unsupported`; "joint surplus" → "joint net giving", "funded completion" → "supported completion", "cost one level" → "lower the level by one", "costs the stock a unit" → "takes one unit of the stock". Old machines keep their names. Statements and proofs are unchanged.
 
 **Exactness of the bounded record for every pair of bounds, P83b (15 October 2026).** P83's own next step, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October. Section 97 proved that histories with at most N and N′ states are fixed by their record before N + N′ − 1, and that no shorter record does for N = 1 and N = N′. Section 126 shows it for every pair: given two values, for all M and M′ a history with at most M + 1 states and one with at most M′ + 1 share their record before M + M′ and differ at M + M′ (`Identification.bounded_agree_exact`). The first marks one step in every M + 1, with a mark at M + M′; the second follows it before M′ and then stays unmarked. One theorem is added to `Becoming.Identification`, with no new import, no existing statement changed and no axiom. For the two systems taken together this is Moore's bound, attained for every pair. The sharper bound within one history or one world, and for branching frames a depth bounded by the number of classes rather than of pairs, are not stated. Scratch build: 43 theorems, 55 declarations, empty axiom reports; the consolidated receipt follows the integrator's run. Not yet independently reviewed.
+
+**Moore's bound and the depth by classes for branching frames, P83c (15 October 2026).** P83's next step, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October and “offer it to them, keep proving” of 15 October (the branching part was offered to the owner of `Becoming.Likeness`, who agreed: add, don't replace). Section 128 adds the core module `Becoming.Refinement`: members a list holds that a relation keeps pairwise apart are no more than the list (`DistinctUnder.length_le`); a strict refinement adds a class (`Refining.grow`); so a chain of equivalences, each finer than the one before and decided among N members, with c of them apart at the first step, stops refining within N − c steps (`Refining.steady_within`). Three instances follow. Under a determined law on a list of N members closed under it, with the members' values compared decidedly, two members have the same registered future exactly where they agree for N − 1 steps (Moore's bound, `Law.sameFuture_iff_classes`; 2N − 1 before), exact for every N ≥ 2 (`Law.sameFuture_classes_exact`), refuted by nothing with no decision (`Law.sameFuture_classes_unrefuted`), and so too for two moments of one history (`Identification.sameAhead_iff_classes`). For finite decided branching frames, configurations are alike exactly where alike to depth N − 1 within one frame (`alike_iff_alikeTo_classes`, exact by `EndOfPath.classes_exact`) and N + N′ − 1 across two (`alike_iff_alikeTo_across`), sharpening the bound by the number of pairs, which is kept. The bounds connect: Fine and Wilf's N + N′ − 1 is Moore's bound for two systems read as one; within one world the configurations share their classes; for determined laws read through registrations, likeness to depth k is agreement for k + 1 steps (`alikeTo_registered_iff`), so a frame's extra step is where whether a move can be taken registers. Counting classes needs the values decided, only for the finitely many pairs; the bound 2N − 1 needs none. Not shown: exactness of N + N′ − 1 between two frames, and whether N − 1 holds with no decision. Scratch build: Refinement 11 theorems, Identification 56, Likeness 137, empty axiom reports; the consolidated receipt follows the integrator's run. Not yet independently reviewed.

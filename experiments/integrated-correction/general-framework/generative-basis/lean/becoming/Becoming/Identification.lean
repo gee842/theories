@@ -1,4 +1,5 @@
 import Becoming.Description
+import Becoming.Refinement
 
 /-!
 # Identification: what a bounded record fixes
@@ -63,12 +64,26 @@ states. With no premise beyond the bound:
   function extensionality, which Lean proves from the quotient axiom `Quot.sound`; the bound
   makes the finite name enough. The states of a history with at most `N` states are read the same way
   (`sameAhead_iff_below`, `statesBelow_shift`).
+* **Moore's bound: within one world, `N - 1` steps.** Under a determined law, two members of a
+  list of `N` members closed under the law have the same registered future exactly where their
+  registered futures agree for `N - 1` steps, wherever the values of the members are compared
+  decidedly (`Law.sameFuture_iff_classes`). Agreeing for `k + 1` steps (`Law.AgreeTo`) is a chain
+  of equivalences, each finer than the one before (`Law.agreeTo_refining`); members registering
+  different values make two classes, each strict refinement adds one, and so the chain stops
+  within `N - 2` (`Refining.steady_within` of `Becoming.Refinement`), after which, the law being
+  determined, it never refines again (`Law.AgreeTo.steady_on`). With no decision at all, that
+  they agree at every step is refuted by nothing (`Law.sameFuture_classes_unrefuted`); the
+  bound `2N - 1` above needs no decision. For every `N ≥ 2` the bound is exact: on a path of `N`
+  positions to a last one that stays, registering only whether the last is reached, the first
+  two positions agree for `N - 2` steps and differ at the next (`Law.sameFuture_classes_exact`).
+  Two moments of a history with at most `N` states whose values are decided are one state
+  exactly where they agree for `N - 1` steps (`sameAhead_iff_classes`).
 
 The world in these statements is any world a list holds: a controller or a cognition inside it
 is part of what is registered, as in `Becoming.Description`'s `Law.adaptive_identifiesAlike_iff`.
 The bound `N + N' - 1` is the one of Fine and Wilf, and for two histories it is Moore's bound
-(1956) for the two systems taken together, attained for every pair of bounds; the sharper bound
-for two moments of one history, or two configurations of one world, is not stated here.
+(1956) for the two systems taken together, attained for every pair of bounds. Within one world,
+or one history, the configurations share their classes, and Moore's bound is `N - 1`.
 -/
 
 namespace Becoming
@@ -985,6 +1000,203 @@ def decideAlike [DecidableEq R] {next : S → S} {o : S → R} {l : List S} (wor
     (s s' : S) : Decidable (Alike (Law.registered next o) (Law.registered next o) s s') :=
   decidable_of_iff _ (name_identifiesAlike world s s')
 
+/-! ## Moore's bound: the classes of one world -/
+
+section Classes
+
+variable {next : S → S} {o : S → R}
+
+/-- Two configurations register the same values for `k + 1` steps under a law. -/
+def AgreeTo (next : S → S) (o : S → R) : Nat → S → S → Prop
+  | 0, s, s' => o s = o s'
+  | k + 1, s, s' => o s = o s' ∧ AgreeTo next o k (next s) (next s')
+
+/-- Agreeing for `k + 1` steps is agreeing at each step up to `k`. -/
+theorem agreeTo_iff : ∀ {k : Nat} {s s' : S},
+    AgreeTo next o k s s' ↔ ∀ n, n ≤ k → o (Law.orbit next s n) = o (Law.orbit next s' n)
+  | 0, _, _ =>
+    ⟨fun same n le => match n, le with
+      | 0, _ => same
+      | m + 1, le => absurd le (Nat.not_succ_le_zero m),
+     fun agree => agree 0 (Nat.le_refl 0)⟩
+  | _ + 1, s, s' =>
+    ⟨fun ⟨same, ahead⟩ n le => match n, le with
+      | 0, _ => same
+      | m + 1, le =>
+        (congrArg o (Law.orbit_shift next s m)).trans
+          ((agreeTo_iff.mp ahead m (Nat.le_of_succ_le_succ le)).trans
+            (congrArg o (Law.orbit_shift next s' m)).symm),
+     fun agree => ⟨agree 0 (Nat.zero_le _), agreeTo_iff.mpr fun m le =>
+      (congrArg o (Law.orbit_shift next s m)).symm.trans
+        ((agree (m + 1) (Nat.succ_le_succ le)).trans (congrArg o (Law.orbit_shift next s' m)))⟩⟩
+
+theorem AgreeTo.self : ∀ (k : Nat) (s : S), AgreeTo next o k s s
+  | 0, _ => rfl
+  | k + 1, s => ⟨rfl, AgreeTo.self k (next s)⟩
+
+theorem AgreeTo.symm : ∀ {k : Nat} {s s' : S}, AgreeTo next o k s s' → AgreeTo next o k s' s
+  | 0, _, _, same => Eq.symm same
+  | _ + 1, _, _, ⟨same, ahead⟩ => ⟨Eq.symm same, AgreeTo.symm ahead⟩
+
+theorem AgreeTo.trans : ∀ {k : Nat} {s s' s'' : S},
+    AgreeTo next o k s s' → AgreeTo next o k s' s'' → AgreeTo next o k s s''
+  | 0, _, _, _, same, same' => Eq.trans same same'
+  | _ + 1, _, _, _, ⟨same, ahead⟩, ⟨same', ahead'⟩ => ⟨Eq.trans same same', AgreeTo.trans ahead ahead'⟩
+
+theorem AgreeTo.of_succ : ∀ {k : Nat} {s s' : S}, AgreeTo next o (k + 1) s s' → AgreeTo next o k s s'
+  | 0, _, _, ⟨same, _⟩ => same
+  | _ + 1, _, _, ⟨same, ahead⟩ => ⟨same, AgreeTo.of_succ ahead⟩
+
+/-- Agreeing for more and more steps is a chain of equivalences, each finer than the one
+before. -/
+theorem agreeTo_refining (next : S → S) (o : S → R) : Refining (AgreeTo next o) :=
+  ⟨AgreeTo.self, AgreeTo.symm, AgreeTo.trans, AgreeTo.of_succ⟩
+
+/-- Among members of a list closed under the law, agreeing for `k + 1` steps is decided where
+the values of the members are compared decidedly. -/
+theorem AgreeTo.decided {l : List S} (closed : ∀ s, s ∈ l → next s ∈ l)
+    (values : ∀ s s', s ∈ l → s' ∈ l → Decided (o s = o s')) :
+    ∀ k s s', s ∈ l → s' ∈ l → Decided (AgreeTo next o k s s')
+  | 0, s, s', mem, mem' => values s s' mem mem'
+  | k + 1, s, s', mem, mem' =>
+    (values s s' mem mem').and
+      (AgreeTo.decided closed values k (next s) (next s') (closed s mem) (closed s' mem'))
+
+/-- Under a law, where agreeing stops refining it never refines again. -/
+theorem AgreeTo.steady_on {l : List S} (closed : ∀ s, s ∈ l → next s ∈ l) {k : Nat}
+    (steady : SteadyAt (AgreeTo next o) l k) :
+    ∀ j {s s' : S}, s ∈ l → s' ∈ l → AgreeTo next o k s s' → AgreeTo next o (k + j) s s'
+  | 0, _, _, _, _, agree => agree
+  | j + 1, s, s', mem, mem', agree =>
+    match steady s s' mem mem' agree with
+    | ⟨same, ahead⟩ =>
+      ⟨same, AgreeTo.steady_on closed steady j (closed s mem) (closed s' mem') ahead⟩
+
+/-- **Moore's bound: one world's configurations are told apart within `N - 1` steps.** Under a
+determined law, two members of a list of `N` members closed under the law have the same
+registered future exactly where their registered futures agree for `N - 1` steps, wherever
+the values of the members are compared decidedly. Agreeing for `k + 1` steps is a chain of
+equivalences (`agreeTo_refining`); configurations registering different values make two
+classes, and each strict refinement adds one (`Refining.steady_within`). -/
+theorem sameFuture_iff_classes {l : List S} (closed : ∀ s, s ∈ l → next s ∈ l)
+    (values : ∀ s s', s ∈ l → s' ∈ l → Decided (o s = o s')) {s s' : S} (mem : s ∈ l)
+    (mem' : s' ∈ l) :
+    Law.SameFuture next o s s' ↔
+      ∀ n, n < l.length - 1 → o (Law.orbit next s n) = o (Law.orbit next s' n) :=
+  ⟨fun same n _ => same n, fun agree =>
+    match Decided.exists_within (l := l) (fun x inx =>
+        Decided.exists_within (l := l) fun y iny => (values x y inx iny).not) with
+    | .inr absent => fun n =>
+      (values _ _ (orbit_held closed mem n) (orbit_held closed mem' n)).of_not_not fun differ =>
+        absent ⟨_, orbit_held closed mem n, _, orbit_held closed mem' n, differ⟩
+    | .inl ⟨x, inx, y, iny, differ⟩ =>
+      have apart : DistinctUnder (AgreeTo next o 0) [x, y] :=
+        ⟨fun _ inz same => match mem_cons_split inz with
+          | .inl here => differ (Eq.subst (motive := fun w => o x = o w) here same)
+          | .inr later => (nomatch later),
+         DistinctUnder.single y⟩
+      have within : ∀ z, z ∈ [x, y] → z ∈ l := fun _ inz => match mem_cons_split inz with
+        | .inl here => Eq.subst (motive := fun w => w ∈ l) here.symm inx
+        | .inr later => match mem_cons_split later with
+          | .inl here => Eq.subst (motive := fun w => w ∈ l) here.symm iny
+          | .inr none' => nomatch none'
+      match (agreeTo_refining next o).steady_within (AgreeTo.decided closed values) apart within with
+      | ⟨k, bound, steady⟩ => fun n =>
+        agreeTo_iff.mp
+          (AgreeTo.steady_on closed steady n mem mem' (agreeTo_iff.mpr fun m le =>
+            agree m (le_pred_of_succ_le (Nat.le_trans (Nat.add_le_add_right le 2) bound))))
+          n (Nat.le_add_left n k)⟩
+
+/-- **Moore's bound with no premise: refuted by nothing.** Under a determined law, that two
+members of a list of `N` members closed under the law, agreeing for `N - 1` steps, agree at a
+step is refuted by nothing. -/
+theorem sameFuture_classes_unrefuted {l : List S} (closed : ∀ s, s ∈ l → next s ∈ l) {s s' : S}
+    (mem : s ∈ l) (mem' : s' ∈ l)
+    (agree : ∀ n, n < l.length - 1 → o (Law.orbit next s n) = o (Law.orbit next s' n)) (n : Nat) :
+    ¬ ¬ o (Law.orbit next s n) = o (Law.orbit next s' n) :=
+  fun refuted => not_not_within (P := fun x => ∀ y, y ∈ l → Decided (o x = o y))
+    (fun x => not_not_within (fun y => not_not_decided (o x = o y)) l) l
+    fun values => refuted
+      ((sameFuture_iff_classes closed (fun x y inx iny => values x inx y iny) mem mem').mpr agree n)
+
+/-- The positions `0, …, m` are `m + 1`. -/
+theorem upto_length : ∀ m, (Learning.upto m).length = m + 1
+  | 0 => rfl
+  | m + 1 => congrArg (· + 1) (upto_length m)
+
+/-- **Moore's bound is exact for every `N ≥ 2`.** A path of `N = M + 2` positions to a last one
+that stays, registering only whether the last is reached: its first two positions agree for
+`M` steps and differ at the next. -/
+theorem sameFuture_classes_exact {x y : R} (two : x ≠ y) (M : Nat) :
+    ∃ (next : Nat → Nat) (o : Nat → R) (l : List Nat), l.length = M + 2 ∧
+      (∀ p, p ∈ l → next p ∈ l) ∧ 0 ∈ l ∧ 1 ∈ l ∧
+      (∀ n, n < M → o (Law.orbit next 0 n) = o (Law.orbit next 1 n)) ∧
+      o (Law.orbit next 0 M) ≠ o (Law.orbit next 1 M) :=
+  let next := Learning.lassoNext (M + 1) 0
+  let o : Nat → R := fun p => if p < M + 1 then x else y
+  have closed : ∀ p, next p ∈ Learning.upto (M + 1) := fun p =>
+    match Nat.lt_or_ge p (M + 1) with
+    | .inl inside => Eq.subst (motive := fun v => v ∈ Learning.upto (M + 1))
+        (if_pos inside : next p = p + 1).symm (Learning.mem_upto inside)
+    | .inr last => Eq.subst (motive := fun v => v ∈ Learning.upto (M + 1))
+        (if_neg (fun inside => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le inside last)) : next p = M + 1).symm
+        (Learning.mem_upto (Nat.le_refl _))
+  have from0 : ∀ n, n ≤ M + 1 → Law.orbit next 0 n = n := fun n le =>
+    Identification.lassoPos_early (i := M + 1) (q := 0) n le
+  have start : next 0 = 1 := if_pos (Nat.zero_lt_succ M)
+  have from1 : ∀ n, n ≤ M → Law.orbit next 1 n = n + 1 := fun n le =>
+    (congrArg (fun v => Law.orbit next v n) start.symm).trans
+      ((Law.orbit_shift next 0 n).symm.trans (from0 (n + 1) (Nat.succ_le_succ le)))
+  ⟨next, o, Learning.upto (M + 1), upto_length (M + 1), fun p _ => closed p,
+   Learning.mem_upto (Nat.zero_le _), Learning.mem_upto (Nat.succ_le_succ (Nat.zero_le M)),
+   fun n early =>
+    (congrArg o (from0 n (Nat.le_trans (Nat.le_of_lt early) (Nat.le_succ M)))).trans
+      ((if_pos (Nat.lt_succ_of_lt early) : o n = x).trans
+        ((if_pos (Nat.succ_lt_succ early) : o (n + 1) = x).symm.trans
+          (congrArg o (from1 n (Nat.le_of_lt early))).symm)),
+   fun same => two
+    ((if_pos (Nat.lt_succ_self M) : o M = x).symm.trans
+      ((congrArg o (from0 M (Nat.le_succ M))).symm.trans
+        (same.trans ((congrArg o (from1 M (Nat.le_refl M))).trans
+          (if_neg (Nat.lt_irrefl (M + 1)) : o (M + 1) = y)))))⟩
+
+end Classes
+
 end Law
+
+namespace Identification
+
+variable {O : Type u}
+
+/-- **Moore's bound for one history: two moments are one state where they agree for `N - 1`
+steps.** On a history with at most `N` states whose values are compared decidedly, two moments
+are one state exactly where what is registered from them agrees for `N - 1` steps. The history is
+the course of its lasso world (`Learning.lasso_realized`), whose positions are at most `N`. -/
+theorem sameAhead_iff_classes {o : Nat → O} {N : Nat} (bound : StatesBelow o N)
+    (values : ∀ n m, Decided (o n = o m)) {t t' : Nat} :
+    SameAhead o t t' ↔ ∀ n, n < N - 1 → o (t + n) = o (t' + n) :=
+  ⟨fun same n _ => same n, fun agree =>
+    match statesBelow_iff_lasso.mp bound with
+    | ⟨i, q, within, lasso⟩ =>
+      let next := Learning.lassoNext i q
+      have closed : ∀ p, p ∈ Learning.upto (i + q) → next p ∈ Learning.upto (i + q) := fun p _ =>
+        match Nat.lt_or_ge p (i + q) with
+        | .inl inside => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+            (if_pos inside : next p = p + 1).symm (Learning.mem_upto inside)
+        | .inr last => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+            (if_neg (fun inside => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le inside last)) : next p = i).symm
+            (Learning.mem_upto (Nat.le_add_right i q))
+      have ahead : ∀ u k, o (Law.orbit next (Law.orbit next 0 u) k) = o (u + k) := fun u k =>
+        (congrArg o (Law.orbit_add next 0 u k).symm).trans ((Learning.lasso_realized lasso).2 (u + k))
+      have same := (Law.sameFuture_iff_classes (o := o) closed (fun p p' _ _ => values p p')
+        ((Learning.lasso_realized lasso).1 t) ((Learning.lasso_realized lasso).1 t')).mpr
+        fun n early =>
+          have early' : n < i + q :=
+            Eq.subst (motive := fun L => n < L - 1) (Law.upto_length (i + q)) early
+          (ahead t n).trans ((agree n (Nat.lt_of_lt_of_le early' (le_pred_of_succ_le within))).trans
+            (ahead t' n).symm)
+      fun n => (ahead t n).symm.trans ((same n).trans (ahead t' n))⟩
+
+end Identification
 
 end Becoming

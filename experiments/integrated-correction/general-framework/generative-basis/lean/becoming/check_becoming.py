@@ -56,7 +56,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Seeking", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
-        "Becoming.Openness", "Becoming.Decidedness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
+        "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
         "Becoming.Continuation", "Becoming.Admission",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Ranking", "Becoming.LossMatching",
@@ -827,6 +827,10 @@ SCOPE = (
     "finitely many formations and in finite worlds, a covering list asking decidedness only of "
     "its members; an amount that does not rise settles, so the rest theorems need no decision "
     "procedure. "
+    "Refinement: members of a list pairwise apart under a relation joining each member to itself "
+    "are no more than the list; a chain of equivalences, each finer than the one before and decided "
+    "among N listed members, with c of them apart at the first step, stops refining at some k with "
+    "k + c <= N, and the decisions of finitely many propositions are together refuted by nothing. "
     "Counting: what the premises add to the laws of counting, the tally being the whole law "
     "of counting with no premise: "
     "relata queuing with nothing flowing meet every premise but "
@@ -1351,7 +1355,11 @@ SCOPE = (
     "refutation over the lasso hypotheses claims and is right at every step from N + (N + N - 1) * tri N "
     "on, in a world a list of length N holds too; under a determined law on a list closed under "
     "it, the same registered future is agreement for 2N - 1 steps, and naming by that finite future "
-    "makes sense, carries the law and decides likeness. "
+    "makes sense, carries the law and decides likeness; with the values of the members decided, the "
+    "same registered future is agreement for N - 1 steps, refuted by nothing with no decision and "
+    "exact for every N >= 2 on a path to a last position that stays, and two moments of a history "
+    "with at most N states and decided values are one state exactly where they agree for N - 1 "
+    "steps. "
     "Learnable: two configurations with the same registered future give every learner the same "
     "record at every step, so where their targets differ a claim is right on at most one and, the "
     "targets decided, refuted on one with the records equal; a learner resting on both has targets "

@@ -1,6 +1,7 @@
 import Becoming.Branching
 import Becoming.Histories
 import Becoming.Decidedness
+import Becoming.Refinement
 
 /-!
 # Likeness: the laws stated with equality, completed up to likeness
@@ -66,6 +67,26 @@ No premise is added; every declaration has an empty axiom report.
   frames with finitely many configurations, the question `Becoming.Histories` left open: the
   periphery's `ExplanatoryBranching.same_iff_bisimilar` reasons classically, for frames with
   finitely many outcomes of each move.
+* **Within the classes** (Moore, 1956). Within one frame, likeness to depth is a chain of
+  equivalences, each finer than the one before (`AlikeTo.refining`). Where a list of `N`
+  configurations holds a finite decided frame, it stops refining at a depth `k` with `k + c ≤ N`,
+  `c` configurations realizing pairwise different claims (`AlikeTo.steady_within_classes`, by
+  `Refining.steady_within` of `Becoming.Refinement`): each strict refinement adds a class. So
+  configurations are alike exactly where they are alike to depth `N - 1`
+  (`alike_iff_alikeTo_classes`). Two frames held by lists of `N` and `N'` configurations, read as
+  one (`AlikeAcross`), stop refining at a depth `k` with `k + c ≤ N + N'`
+  (`AlikeTo.steady_within_across`), and their configurations are alike exactly where they are
+  alike to depth `N + N' - 1` (`alike_iff_alikeTo_across`). This sharpens the earlier bound by the
+  number of pairs, `N · N'` (`AlikeTo.steady_within`, `alike_iff_alikeTo_pairs`, kept). Within
+  one frame `N - 1` is exact: on a path of `N` places ending where nothing steps, the first two
+  places are alike to depth `N - 2` and are not alike (`EndOfPath.classes_exact`). For determined
+  laws read through registrations, likeness to depth `k` is agreement for `k + 1` steps
+  (`alikeTo_registered_iff`). There one step less suffices: `N - 2` within one world
+  (`Law.sameFuture_iff_classes` of `Becoming.Identification`) and `N + N' - 2` across two
+  (`Identification.bounded_agree`), each exact for laws and courses
+  (`Law.sameFuture_classes_exact`, `Identification.bounded_agree_exact`). A frame's extra step is
+  where whether a move can be taken at all registers. Whether `N + N' - 1` is exact across two
+  frames is not stated here.
 * **The decisions cannot be dropped from deciding likeness.** Asked of every pair of frames with
   one configuration, one move and no claims, whether their configurations are alike is decided
   exactly under excluded middle (`alike_decided_iff_em`, through `OneLoop`).
@@ -874,6 +895,322 @@ theorem alike_iff_alikeTo_pairs (moves : ∃ l : List A, ∀ a, a ∈ l)
       ⟨AlikeTo F G N, AlikeTo.bisimulation steady, AlikeTo.down_to within alike⟩⟩
 
 end BranchingTests
+
+/-! ## Within the classes -/
+
+section Classes
+
+variable {S : Type u} {S' : Type u'} {A : Type v} {C : Type w}
+
+/-- A configuration is alike to itself to every depth. -/
+theorem AlikeTo.self (F : Frame S A C) : ∀ (k : Nat) (s : S), AlikeTo F F k s s
+  | 0, _ => fun _ => Iff.rfl
+  | k + 1, _ =>
+    ⟨fun _ => Iff.rfl, fun _ t step => ⟨t, step, AlikeTo.self F k t⟩,
+     fun _ t step => ⟨t, step, AlikeTo.self F k t⟩⟩
+
+/-- Alike to a depth, read the other way. -/
+theorem AlikeTo.symm {F : Frame S A C} {G : Frame S' A C} :
+    ∀ {k : Nat} {s : S} {s' : S'}, AlikeTo F G k s s' → AlikeTo G F k s' s
+  | 0, _, _, alike => fun c => Iff.symm (alike c)
+  | _ + 1, _, _, ⟨claims, forth, back⟩ =>
+    ⟨fun c => Iff.symm (claims c),
+     fun a t' step' => match back a t' step' with
+      | ⟨t, step, joined⟩ => ⟨t, step, AlikeTo.symm joined⟩,
+     fun a t step => match forth a t step with
+      | ⟨t', step', joined⟩ => ⟨t', step', AlikeTo.symm joined⟩⟩
+
+/-- Alike to a depth, through a third frame. -/
+theorem AlikeTo.trans {S'' : Type w'} {F : Frame S A C} {G : Frame S' A C} {H : Frame S'' A C} :
+    ∀ {k : Nat} {s : S} {s' : S'} {s'' : S''},
+      AlikeTo F G k s s' → AlikeTo G H k s' s'' → AlikeTo F H k s s''
+  | 0, _, _, _, alike, alike' => fun c => Iff.trans (alike c) (alike' c)
+  | _ + 1, _, _, _, ⟨claims, forth, back⟩, ⟨claims', forth', back'⟩ =>
+    ⟨fun c => Iff.trans (claims c) (claims' c),
+     fun a t step => match forth a t step with
+      | ⟨t', step', joined⟩ => match forth' a t' step' with
+        | ⟨t'', step'', joined'⟩ => ⟨t'', step'', AlikeTo.trans joined joined'⟩,
+     fun a t'' step'' => match back' a t'' step'' with
+      | ⟨t', step', joined'⟩ => match back a t' step' with
+        | ⟨t, step, joined⟩ => ⟨t, step, AlikeTo.trans joined joined'⟩⟩
+
+/-- Within one frame, likeness to depth is a chain of equivalences, each finer than the one
+before. -/
+theorem AlikeTo.refining (F : Frame S A C) : Refining (AlikeTo F F) :=
+  ⟨AlikeTo.self F, AlikeTo.symm, AlikeTo.trans, AlikeTo.of_succ⟩
+
+/-- Alike to depth `k` across two frames read as one: a configuration of either with a
+configuration of either. -/
+def AlikeAcross (F : Frame S A C) (G : Frame S' A C) (k : Nat) : Sum S S' → Sum S S' → Prop
+  | .inl s, .inl t => AlikeTo F F k s t
+  | .inl s, .inr t' => AlikeTo F G k s t'
+  | .inr s', .inl t => AlikeTo G F k s' t
+  | .inr s', .inr t' => AlikeTo G G k s' t'
+
+/-- Across two frames, likeness to depth is a chain of equivalences, each finer than the one
+before. -/
+theorem AlikeAcross.refining (F : Frame S A C) (G : Frame S' A C) : Refining (AlikeAcross F G) :=
+  ⟨fun k x => match x with
+    | .inl s => AlikeTo.self F k s
+    | .inr s' => AlikeTo.self G k s',
+   fun {_ x y} => match x, y with
+    | .inl _, .inl _ => AlikeTo.symm
+    | .inl _, .inr _ => AlikeTo.symm
+    | .inr _, .inl _ => AlikeTo.symm
+    | .inr _, .inr _ => AlikeTo.symm,
+   fun {_ x y z} => match x, y, z with
+    | .inl _, .inl _, .inl _ => AlikeTo.trans
+    | .inl _, .inl _, .inr _ => AlikeTo.trans
+    | .inl _, .inr _, .inl _ => AlikeTo.trans
+    | .inl _, .inr _, .inr _ => AlikeTo.trans
+    | .inr _, .inl _, .inl _ => AlikeTo.trans
+    | .inr _, .inl _, .inr _ => AlikeTo.trans
+    | .inr _, .inr _, .inl _ => AlikeTo.trans
+    | .inr _, .inr _, .inr _ => AlikeTo.trans,
+   fun {_ x y} => match x, y with
+    | .inl _, .inl _ => AlikeTo.of_succ
+    | .inl _, .inr _ => AlikeTo.of_succ
+    | .inr _, .inl _ => AlikeTo.of_succ
+    | .inr _, .inr _ => AlikeTo.of_succ⟩
+
+/-- The members of a list, as members of either. -/
+def rightsOf {β : Type u} {γ : Type u'} : List γ → List (Sum β γ)
+  | [] => []
+  | c :: l' => .inr c :: rightsOf l'
+
+/-- The members of two lists, as one list of either. -/
+def bothOf {β : Type u} {γ : Type u'} (l' : List γ) : List β → List (Sum β γ)
+  | [] => rightsOf l'
+  | b :: l => .inl b :: bothOf l' l
+
+theorem length_rightsOf {β : Type u} {γ : Type u'} :
+    ∀ l' : List γ, (rightsOf (β := β) l').length = l'.length
+  | [] => rfl
+  | _ :: l' => congrArg (· + 1) (length_rightsOf l')
+
+theorem length_bothOf {β : Type u} {γ : Type u'} (l' : List γ) :
+    ∀ l : List β, (bothOf l' l).length = l.length + l'.length
+  | [] => (length_rightsOf l').trans (Nat.zero_add _).symm
+  | _ :: l => (congrArg (· + 1) (length_bothOf l' l)).trans (Nat.succ_add _ _).symm
+
+theorem mem_rightsOf {β : Type u} {γ : Type u'} {c : γ} :
+    ∀ {l' : List γ}, c ∈ l' → (Sum.inr c : Sum β γ) ∈ rightsOf l'
+  | [], mem => nomatch mem
+  | d :: l', mem => match mem_cons_split mem with
+    | .inl here => Eq.subst (motive := fun w => (Sum.inr w : Sum β γ) ∈ rightsOf (d :: l'))
+        here.symm (List.Mem.head _)
+    | .inr later => List.Mem.tail _ (mem_rightsOf later)
+
+theorem mem_bothOf_right {β : Type u} {γ : Type u'} {c : γ} {l' : List γ} (mem : c ∈ l') :
+    ∀ l : List β, (Sum.inr c : Sum β γ) ∈ bothOf l' l
+  | [] => mem_rightsOf mem
+  | _ :: l => List.Mem.tail _ (mem_bothOf_right mem l)
+
+theorem mem_bothOf_left {β : Type u} {γ : Type u'} {l' : List γ} {b : β} :
+    ∀ {l : List β}, b ∈ l → (Sum.inl b : Sum β γ) ∈ bothOf l' l
+  | [], mem => nomatch mem
+  | d :: l, mem => match mem_cons_split mem with
+    | .inl here => Eq.subst (motive := fun w => (Sum.inl w : Sum β γ) ∈ bothOf l' (d :: l))
+        here.symm (List.Mem.head _)
+    | .inr later => List.Mem.tail _ (mem_bothOf_left later)
+
+variable {F : Frame S A C} {G : Frame S' A C}
+
+/-- Across two finite decided frames, likeness to every depth is decided. -/
+theorem AlikeAcross.decided (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (finite : FiniteDecided F) (finite' : FiniteDecided G) :
+    ∀ k x y, Decided (AlikeAcross F G k x y)
+  | k, .inl s, .inl t => AlikeTo.decided moves claims finite finite k s t
+  | k, .inl s, .inr t' => AlikeTo.decided moves claims finite finite' k s t'
+  | k, .inr s', .inl t => AlikeTo.decided moves claims finite' finite k s' t
+  | k, .inr s', .inr t' => AlikeTo.decided moves claims finite' finite' k s' t'
+
+/-- **Within one frame, likeness to depth stops refining within its classes** (Moore, 1956).
+Where a list of `N` configurations holds a finite decided frame and `c` configurations realize
+pairwise different claims, at some depth `k` with `k + c ≤ N` configurations alike to it are
+alike to the next: each strict refinement adds a class (`Refining.steady_within`).
+`AlikeTo.steady_within` bounds the depth by the number of pairs. -/
+theorem AlikeTo.steady_within_classes (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (finite : FiniteDecided F) {l : List S}
+    (all : ∀ s, s ∈ l) {apart : List S} (distinct : DistinctUnder (AlikeTo F F 0) apart) :
+    ∃ N, N + apart.length ≤ l.length ∧ ∀ s s', AlikeTo F F N s s' → AlikeTo F F (N + 1) s s' :=
+  match (AlikeTo.refining F).steady_within (l := l)
+      (fun k s s' _ _ => AlikeTo.decided moves claims finite finite k s s') distinct
+      (fun s _ => all s) with
+  | ⟨N, within, steady⟩ => ⟨N, within, fun s s' => steady s s' (all s) (all s')⟩
+
+/-- **Within one frame of `N` configurations, likeness is likeness to depth `N - 1`.** -/
+theorem alike_iff_alikeTo_classes (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (finite : FiniteDecided F) {l : List S}
+    (all : ∀ s, s ∈ l) {s s' : S} : Alike F F s s' ↔ AlikeTo F F (l.length - 1) s s' :=
+  ⟨fun alike => alike.alikeTo _, fun alike =>
+    match AlikeTo.steady_within_classes moves claims finite all (DistinctUnder.single s) with
+    | ⟨N, within, steady⟩ =>
+      ⟨AlikeTo F F N, AlikeTo.bisimulation steady, AlikeTo.down_to (le_pred_of_succ_le within) alike⟩⟩
+
+/-- **Across two frames, likeness to depth stops refining within their classes.** Where lists of
+`N` and `N'` configurations hold two finite decided frames and `c` configurations of either
+realize pairwise different claims, at some depth `k` with `k + c ≤ N + N'` configurations alike
+to it are alike to the next: the two frames are read as one. -/
+theorem AlikeTo.steady_within_across (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (finite : FiniteDecided F) (finite' : FiniteDecided G)
+    {l : List S} {l' : List S'} (all : ∀ s, s ∈ l) (all' : ∀ s', s' ∈ l')
+    {apart : List (Sum S S')} (distinct : DistinctUnder (AlikeAcross F G 0) apart) :
+    ∃ N, N + apart.length ≤ l.length + l'.length ∧
+      ∀ s s', AlikeTo F G N s s' → AlikeTo F G (N + 1) s s' :=
+  have every : ∀ x : Sum S S', x ∈ bothOf l' l := fun x => match x with
+    | .inl s => mem_bothOf_left (all s)
+    | .inr s' => mem_bothOf_right (all' s') l
+  match (AlikeAcross.refining F G).steady_within (l := bothOf l' l)
+      (fun k x y _ _ => AlikeAcross.decided moves claims finite finite' k x y) distinct
+      (fun x _ => every x) with
+  | ⟨N, within, steady⟩ =>
+    ⟨N, Eq.subst (motive := fun n => N + apart.length ≤ n) (length_bothOf l' l) within,
+     fun s s' => steady (.inl s) (.inr s') (every _) (every _)⟩
+
+/-- **Across two frames of `N` and `N'` configurations, likeness is likeness to depth
+`N + N' - 1`.** -/
+theorem alike_iff_alikeTo_across (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (finite : FiniteDecided F) (finite' : FiniteDecided G)
+    {l : List S} {l' : List S'} (all : ∀ s, s ∈ l) (all' : ∀ s', s' ∈ l') {s : S} {s' : S'} :
+    Alike F G s s' ↔ AlikeTo F G (l.length + l'.length - 1) s s' :=
+  ⟨fun alike => alike.alikeTo _, fun alike =>
+    match AlikeTo.steady_within_across moves claims finite finite' all all'
+        (DistinctUnder.single (Sum.inl s)) with
+    | ⟨N, within, steady⟩ =>
+      ⟨AlikeTo F G N, AlikeTo.bisimulation steady, AlikeTo.down_to (le_pred_of_succ_le within) alike⟩⟩
+
+/-- **For determined laws read through registrations, likeness to depth `k` is agreement for
+`k + 1` steps.** -/
+theorem alikeTo_registered_iff {R : Type w} {next : S → S} {next' : S' → S'} {o : S → R}
+    {o' : S' → R} : ∀ {k : Nat} {s : S} {s' : S'},
+    AlikeTo (Law.registered next o) (Law.registered next' o') k s s' ↔
+      ∀ n, n ≤ k → o (Law.orbit next s n) = o' (Law.orbit next' s' n)
+  | 0, s, _ =>
+    ⟨fun alike n le => match n, le with
+      | 0, _ => ((alike (o s)).mp rfl).symm
+      | m + 1, le => absurd le (Nat.not_succ_le_zero m),
+     fun agree _ => ⟨fun at_s => (agree 0 (Nat.le_refl 0)).symm.trans at_s,
+       fun at_s' => (agree 0 (Nat.le_refl 0)).trans at_s'⟩⟩
+  | k + 1, s, s' =>
+    ⟨fun ⟨claims, forth, _⟩ n le => match n, le with
+      | 0, _ => ((claims (o s)).mp rfl).symm
+      | m + 1, le => match forth () (next s) rfl with
+        | ⟨_, step', joined⟩ =>
+          (congrArg o (Law.orbit_shift next s m)).trans
+            ((alikeTo_registered_iff.mp
+                (Eq.subst (motive := fun t' => AlikeTo (Law.registered next o)
+                  (Law.registered next' o') k (next s) t') (step' : _ = next' s') joined)
+                m (Nat.le_of_succ_le_succ le)).trans
+              (congrArg o' (Law.orbit_shift next' s' m)).symm),
+     fun agree =>
+      have ahead : AlikeTo (Law.registered next o) (Law.registered next' o') k (next s) (next' s') :=
+        alikeTo_registered_iff.mpr fun m le =>
+          (congrArg o (Law.orbit_shift next s m)).symm.trans
+            ((agree (m + 1) (Nat.succ_le_succ le)).trans (congrArg o' (Law.orbit_shift next' s' m)))
+      ⟨fun _ => ⟨fun at_s => (agree 0 (Nat.zero_le _)).symm.trans at_s,
+         fun at_s' => (agree 0 (Nat.zero_le _)).trans at_s'⟩,
+       fun _ t step => ⟨next' s', rfl, Eq.subst (motive := fun v => AlikeTo (Law.registered next o)
+         (Law.registered next' o') k v (next' s')) (step : t = next s).symm ahead⟩,
+       fun _ t' step' => ⟨next s, rfl, Eq.subst (motive := fun v => AlikeTo (Law.registered next o)
+         (Law.registered next' o') k (next s) v) (step' : t' = next' s').symm ahead⟩⟩⟩
+
+end Classes
+
+/-! ### Within one frame the depth `N - 1` is exact -/
+
+/-- The places below `k` among `n`, latest first. -/
+def finBelow (n : Nat) : (k : Nat) → k ≤ n → List (Fin n)
+  | 0, _ => []
+  | k + 1, le => ⟨k, le⟩ :: finBelow n k (Nat.le_of_succ_le le)
+
+theorem length_finBelow (n : Nat) : ∀ k (le : k ≤ n), (finBelow n k le).length = k
+  | 0, _ => rfl
+  | k + 1, le => congrArg (· + 1) (length_finBelow n k (Nat.le_of_succ_le le))
+
+theorem mem_finBelow {n : Nat} (i : Fin n) : ∀ k (le : k ≤ n), i.val < k → i ∈ finBelow n k le
+  | 0, _, lt => absurd lt (Nat.not_lt_zero _)
+  | k + 1, le, lt => match Nat.lt_or_ge i.val k with
+    | .inl below => List.Mem.tail _ (mem_finBelow i k (Nat.le_of_succ_le le) below)
+    | .inr above => Eq.subst (motive := fun j => j ∈ finBelow n (k + 1) le)
+        (Fin.eq_of_val_eq (i := ⟨k, le⟩) (j := i)
+          (Nat.le_antisymm (Nat.le_of_lt_succ lt) above).symm) (List.Mem.head _)
+
+/-- Room for one step and `k` more is room for `k` more after the step. -/
+theorem room_after {a k n : Nat} (room : a + (k + 1) ≤ n) : a + 1 + k ≤ n :=
+  Eq.subst (motive := fun v => v ≤ n) (Nat.succ_add a k).symm room
+
+namespace EndOfPath
+
+/-- A path of `M + 2` places, each stepping to the next and the last stepping nowhere, with
+nothing claimed. -/
+def frame (M : Nat) : Frame (Fin (M + 2)) Unit Empty :=
+  ⟨⟨fun s _ t => t.val = s.val + 1⟩, fun _ c => nomatch c⟩
+
+/-- The path is finite and decided. -/
+theorem finite (M : Nat) : FiniteDecided (frame M) :=
+  ⟨⟨finBelow (M + 2) (M + 2) (Nat.le_refl _), fun i => mem_finBelow i (M + 2) _ i.isLt⟩,
+   fun s _ t => match Nat.decEq t.val (s.val + 1) with
+    | isTrue same => .inl same
+    | isFalse differ => .inr differ,
+   fun _ c => nomatch c⟩
+
+/-- Places with room for `k` steps are alike to depth `k`. -/
+theorem alikeTo_room (M : Nat) : ∀ k (s t : Fin (M + 2)), s.val + k ≤ M + 1 → t.val + k ≤ M + 1 →
+    AlikeTo (frame M) (frame M) k s t
+  | 0, _, _, _, _ => fun c => nomatch c
+  | k + 1, s, t, room, room' =>
+    ⟨fun c => (nomatch c),
+     fun _ s' step =>
+      ⟨⟨t.val + 1, Nat.lt_succ_of_le (Nat.le_trans (Nat.succ_le_succ (Nat.le_add_right t.val k)) room')⟩,
+       rfl, alikeTo_room M k s' _
+        (Eq.subst (motive := fun v => v + k ≤ M + 1) (step : s'.val = s.val + 1).symm (room_after room))
+        (room_after room')⟩,
+     fun _ t' step' =>
+      ⟨⟨s.val + 1, Nat.lt_succ_of_le (Nat.le_trans (Nat.succ_le_succ (Nat.le_add_right s.val k)) room)⟩,
+       rfl, alikeTo_room M k _ t' (room_after room)
+        (Eq.subst (motive := fun v => v + k ≤ M + 1) (step' : t'.val = t.val + 1).symm (room_after room'))⟩⟩
+
+/-- A place with room for more than `k` steps and one with room for exactly `k` are not alike to
+depth `k + 1`. -/
+theorem not_alikeTo_past (M : Nat) : ∀ k (s t : Fin (M + 2)), s.val + k < M + 1 →
+    t.val + k = M + 1 → ¬ AlikeTo (frame M) (frame M) (k + 1) s t
+  | 0, s, t, room, last, ⟨_, forth, _⟩ =>
+    match forth () ⟨s.val + 1, Nat.succ_lt_succ room⟩ rfl with
+    | ⟨t', step', _⟩ => Nat.lt_irrefl (M + 2) (Eq.subst (motive := fun v => v < M + 2)
+        ((step' : t'.val = t.val + 1).trans (congrArg (· + 1) last)) t'.isLt)
+  | k + 1, s, t, room, last, ⟨_, forth, _⟩ =>
+    have inside : s.val + 1 < M + 2 := Nat.lt_trans
+      (Nat.lt_of_le_of_lt (Nat.succ_le_succ (Nat.le_add_right s.val k)) room) (Nat.lt_succ_self _)
+    match forth () ⟨s.val + 1, inside⟩ rfl with
+    | ⟨t', step', joined⟩ =>
+      not_alikeTo_past M k ⟨s.val + 1, inside⟩ t'
+        (Eq.subst (motive := fun v => v < M + 1) (Nat.succ_add s.val k).symm room)
+        (Eq.subst (motive := fun v => v + k = M + 1) (step' : t'.val = t.val + 1).symm
+          ((Nat.succ_add t.val k).trans last)) joined
+
+/-- The first place. -/
+def first (M : Nat) : Fin (M + 2) := ⟨0, Nat.zero_lt_succ _⟩
+
+/-- The second place. -/
+def second (M : Nat) : Fin (M + 2) := ⟨1, Nat.succ_lt_succ (Nat.zero_lt_succ M)⟩
+
+/-- **Within one frame the depth `N - 1` is exact.** On the path of `N = M + 2` places, which a
+list of `N` members holds, the first two places are alike to depth `N - 2` and are not alike:
+likeness is likeness to depth `N - 1` (`alike_iff_alikeTo_classes`) and to no lower depth. -/
+theorem classes_exact (M : Nat) :
+    FiniteDecided (frame M) ∧ (finBelow (M + 2) (M + 2) (Nat.le_refl _)).length = M + 2 ∧
+      AlikeTo (frame M) (frame M) M (first M) (second M) ∧
+      ¬ Alike (frame M) (frame M) (first M) (second M) :=
+  ⟨finite M, length_finBelow (M + 2) (M + 2) _,
+   alikeTo_room M M (first M) (second M)
+    (Eq.subst (motive := fun v => v ≤ M + 1) (Nat.zero_add M).symm (Nat.le_succ M))
+    (Eq.subst (motive := fun v => v ≤ M + 1) (Nat.add_comm M 1) (Nat.le_refl (M + 1))),
+   fun alike => not_alikeTo_past M M (first M) (second M)
+    (Eq.subst (motive := fun v => v < M + 1) (Nat.zero_add M).symm (Nat.lt_succ_self M))
+    (Nat.add_comm 1 M) (alike.alikeTo (M + 1))⟩
+
+end EndOfPath
 
 /-! ## Where likeness is not decided -/
 
