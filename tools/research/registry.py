@@ -2,6 +2,7 @@
 """Render and check canonical claim records. Never compiles Lean or refreshes hashes.
 
 Run from any directory. --check is read-only; --search searches claims and aliases.
+A Markdown source changed only outside what a record cites keeps its review (RESULT-WORKFLOW.md).
 Exit 1: invalid metadata/rendering. Exit 2: reviewed source bytes changed.
 Source hashes mark documentary review, not a proof build or semantic equivalence.
 """
@@ -32,6 +33,118 @@ SHA256 = re.compile(r'[0-9a-f]{64}')
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+# Where a Markdown source changed only outside what a record cites, the bytes the record
+# was reviewed against are still there and its review stands. The reviewed version is
+# found in the history of HEAD by its sha256; blob hashes are cached outside the
+# repository, since a blob never changes. Lean and other sources still need exact bytes.
+VERSION_CACHE = Path(os.environ.get('RESEARCH_SOURCE_CACHE') or Path.home() / '.cache' / 'research-source-versions.json')
+_versions, _comparisons = {}, {}
+
+
+def reviewed_version(path, sha256):
+    """The text of `path` as committed with this sha256 in HEAD's history, or None."""
+    import subprocess
+    if path not in _versions:
+        try:
+            log = subprocess.check_output(['git', 'log', '-m', '--format=', '--raw', '--no-abbrev', '--no-renames', 'HEAD', '--', path],
+                                          cwd=ROOT, text=True, stderr=subprocess.DEVNULL)
+        except (OSError, subprocess.CalledProcessError):
+            log = ''
+        blobs = list(dict.fromkeys(blob for line in log.splitlines() if line.startswith(':')
+                                   for blob in line.split()[2:4] if blob.strip('0')))
+        try:
+            cache = json.loads(VERSION_CACHE.read_text())
+        except (OSError, ValueError):
+            cache = {}
+        missing = [b for b in blobs if b not in cache]
+        if missing:
+            p = subprocess.run(['git', 'cat-file', '--batch'], cwd=ROOT, input=''.join(b + '\n' for b in missing).encode(),
+                               stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+            out, at = p.stdout, 0
+            for blob in missing:
+                header_end = out.index(b'\n', at)
+                size = int(out[at:header_end].split()[2])
+                cache[blob] = hashlib.sha256(out[header_end + 1:header_end + 1 + size]).hexdigest()
+                at = header_end + 1 + size + 1
+            try:
+                VERSION_CACHE.parent.mkdir(parents=True, exist_ok=True)
+                temporary = VERSION_CACHE.with_name(f'.{VERSION_CACHE.name}.{os.getpid()}')
+                temporary.write_text(json.dumps(cache))
+                os.replace(temporary, VERSION_CACHE)
+            except OSError:
+                pass  # The cache only saves work.
+        _versions[path] = {cache[b]: b for b in blobs if b in cache}
+    blob = _versions[path].get(sha256)
+    if blob is None:
+        return None
+    import subprocess
+    return subprocess.check_output(['git', 'cat-file', 'blob', blob], cwd=ROOT).decode()
+
+
+def sections(lines):
+    """For each line, the level-2 heading it falls under; None for the title and the text
+    before the first such heading, which bear on every record."""
+    current, out = None, []
+    for line in lines:
+        if re.match(r'##\s', line):
+            current = line.strip()
+        out.append(current)
+    return out
+
+
+def changed_lines(path, sha256, current):
+    """Compare the reviewed version with the current text. None: the reviewed version is not
+    in HEAD's history. Otherwise (heading, removed lines, replacing lines) for each place a
+    line was removed or rewritten; lines only added are not listed. A Markdown paragraph,
+    list item or table row is one line."""
+    import difflib
+    key = (path, sha256)
+    if key not in _comparisons:
+        old = reviewed_version(path, sha256)
+        if old is None:
+            _comparisons[key] = None
+        else:
+            a, b = old.splitlines(), current.splitlines()
+            heads = sections(a)
+            _comparisons[key] = [(heads[i1], a[i1:i2], b[j1:j2])
+                                 for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes()
+                                 if op in ('replace', 'delete')]
+    return _comparisons[key]
+
+
+def links_record(record, text):
+    return bool(re.search(r'records/' + re.escape(record.get('id', '')) + r'\.(?:md|json)\b', text))
+
+
+def cited_headings(record, path):
+    """Anchors of `path` the record cites (`path#anchor` anywhere in the record)."""
+    return set(re.findall(re.escape(path) + r'#([^\s"\')\]]+)', json.dumps(record, ensure_ascii=False)))
+
+
+def scoped_drift(record, path, expected, current_path):
+    """For a source whose bytes changed since the record's review: None when every change lies
+    outside what the record cites, otherwise where it does not. What a record cites in a
+    Markdown source is each line linking the record's page and each section it cites by
+    anchor; lines only added change nothing reviewed. A record the source neither links nor
+    cites by anchor has no located part, so any rewritten line counts, as does a rewrite
+    before the first heading. Other sources need their exact bytes."""
+    from tools.research.reading_catalogue import anchors_from_text
+    if not path.endswith('.md'):
+        return ['(not Markdown: exact bytes required)']
+    current = current_path.read_text()
+    changes = changed_lines(path, expected, current)
+    if changes is None:
+        return ['(reviewed version not in history)']
+    anchors = cited_headings(record, path)
+    located = bool(anchors) or links_record(record, current)
+    bearing = []
+    for heading, removed, added in changes:
+        if (not located or heading is None or links_record(record, '\n'.join(removed + added))
+                or anchors & anchors_from_text(heading)):
+            bearing.append(heading or '(before the first heading)')
+    return sorted(set(bearing)) or None
 
 
 def pair(value):
@@ -74,6 +187,56 @@ def declaration_in_source(text, name):
         r'(?:(?:protected|private|noncomputable)\s+)*' + command +
         r'\s+(?:[\w\'.]+\.)?' + re.escape(name.split('.')[-1]) +
         r'(?=\s|\{|\(|\[|:)', text, re.M) is not None
+
+
+DECLARATION = re.compile(
+    r'^[ \t]*(?:@\[[^\]\n]*\]\s*)*(?:(?:protected|private|noncomputable)\s+)*'
+    r'(?:theorem|lemma|def|abbrev|structure|inductive|instance(?:\s+\(priority\s*:=\s*[^)\n]+\))?)'
+    r"\s+([\w'.]+)(?=\s|\{|\(|\[|:)", re.M)
+
+
+class Sources:
+    """Files read during one validation, each read, hashed, parsed or scanned once."""
+    def __init__(self):
+        self.texts, self.digests, self.receipts, self.listed, self.declared = {}, {}, {}, {}, {}
+
+    def text(self, p):
+        if p not in self.texts:
+            self.texts[p] = p.read_text()
+        return self.texts[p]
+
+    def digest(self, p):
+        if p not in self.digests:
+            self.digests[p] = digest(p)
+        return self.digests[p]
+
+    def receipt(self, path):
+        if path not in self.receipts:
+            self.receipts[path] = json.loads((ROOT / path).read_text())
+        return self.receipts[path]
+
+    def receipt_names(self, path):
+        if path not in self.listed:
+            self.listed[path] = receipt_declaration_names(self.receipt(path))
+        return self.listed[path]
+
+    def elaborated(self, path, module):
+        """Names Lean elaborated for `module`, as the receipt lists them."""
+        key = (path, module)
+        if key not in self.listed:
+            data = self.receipt(path)
+            self.listed[key] = {d.get('name') for m in data.get('modules', []) if isinstance(m, dict) and m.get('module') == module
+                                for d in m.get('declarations', []) if isinstance(d, dict)}
+        return self.listed[key]
+
+    def declares(self, p, name):
+        """`declaration_in_source`, with each source scanned once for plain identifiers."""
+        last = name.split('.')[-1]
+        if not re.fullmatch(r"[\w']+", last):
+            return declaration_in_source(self.text(p), name)
+        if p not in self.declared:
+            self.declared[p] = {token.split('.')[-1] for token in DECLARATION.findall(self.text(p))}
+        return last in self.declared[p]
 
 
 def config():
@@ -241,9 +404,14 @@ def receipt_declaration_names(data):
     return names
 
 
+GROWN = []  # sources changed only outside what the record cites, from the last validate()
+
+
 def validate(records):
     from tools.research import style
     errors, drift = [], []
+    GROWN.clear()
+    read = Sources()
     ids, aliases = {}, {}
     settings = config()
     errors += validate_standard_boundaries(settings)
@@ -321,10 +489,15 @@ def validate(records):
             expected = ref.get('sha256', '')
             if not re.fullmatch(r'[0-9a-f]{64}', expected):
                 fail(f'invalid reviewed hash {path}')
-            elif digest(p) != expected:
-                drift.append({'id': ident, 'path': path, 'reviewed_sha256': expected, 'current_sha256': digest(p)})
+            elif read.digest(p) != expected:
+                bearing = scoped_drift(r, path, expected, p)
+                entry = {'id': ident, 'path': path, 'reviewed_sha256': expected, 'current_sha256': read.digest(p)}
+                if bearing:
+                    drift.append({**entry, 'changed_sections': bearing})
+                else:
+                    GROWN.append(entry)
             for name in ref.get('declarations', []):
-                if not declaration_in_source(p.read_text(), name):
+                if not read.declares(p, name):
                     fail(f'declaration not found: {name} in {path}')
         if r.get('canonical_source') not in paths:
             fail('canonical source must be a hashed reference')
@@ -340,7 +513,7 @@ def validate(records):
                 receipt = refs_by_path[binding['receipt']]
                 if source['role'] != 'proof' or receipt['role'] != 'receipt':
                     raise ValueError('binding roles must be proof and receipt')
-                data = json.loads((ROOT / receipt['path']).read_text())
+                data = read.receipt(receipt['path'])
                 if at_pointer(data, binding['sha256_pointer']) != source['sha256']:
                     raise ValueError('receipt does not bind the reviewed proof source')
                 if at_pointer(data, binding['success_pointer']) != binding['success_value'] or binding['success_value'] not in (True, 'passed'):
@@ -348,9 +521,8 @@ def validate(records):
                 # Where the receipt lists the declarations Lean elaborated for the bound
                 # module, each declaration the record names must be among them by full name.
                 module = binding['sha256_pointer'].rsplit('/', 1)[-1]
-                elaborated = {d.get('name') for m in data.get('modules', []) if isinstance(m, dict) and m.get('module') == module
-                              for d in m.get('declarations', []) if isinstance(d, dict)}
-                listed |= receipt_declaration_names(data)
+                elaborated = read.elaborated(receipt['path'], module)
+                listed |= read.receipt_names(receipt['path'])
                 unknown = [n for n in source.get('declarations', []) if elaborated and n not in elaborated]
                 if unknown:
                     raise ValueError(f'declarations not elaborated in {module}: {", ".join(unknown)}')
