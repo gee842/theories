@@ -111,5 +111,14 @@ class SourcesTests(unittest.TestCase):
                     self.assertEqual(registry.Sources().declares(p, name), registry.declaration_in_source(text, name))
 
 
+class ScrubTests(unittest.TestCase):
+    """Expected outputs fixed from the character-by-character scrubber this one replaced."""
+    def test_blanks_comments_and_strings_keeping_offsets(self):
+        from tools.research.lean_catalogue import scrub
+        for source, expected in [('"a\\"b" x', '       x'), ('/- /- -/ -/ y', '            y'), ('-- c\nz', '    \nz'), ('"\\\n"', '  \n '), ('/- unclosed', '           '), ('"unclosed', '         '), ('a"\\', 'a  '), ('x--', 'x  '), ('/-', '  '), ('"\\', '  '), ('theorem t : "s" = "s" := rfl -- done\n/-! doc /- nested -/ -/\ndef x := 1', 'theorem t :     =     := rfl        \n                       \ndef x := 1')]:
+            with self.subTest(source=source):
+                self.assertEqual(scrub(source), expected)
+
+
 if __name__ == '__main__':
     unittest.main()
