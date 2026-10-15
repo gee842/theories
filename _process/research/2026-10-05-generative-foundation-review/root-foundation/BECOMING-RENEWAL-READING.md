@@ -8582,6 +8582,62 @@ Integration: next_delta “最优静止之步”完成；陈述修订（原文�
 
 **检查。** 在暂存区对 main ff1f2957 编译：`Becoming.Identification` 74 项定理、94 项声明；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`；证明不用 `simp`、`omega`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
+## 134. 外围证明接入脊柱（整合 I3d）：经约化的判者、经部分的读取、汲取而不补充的水平；对齐方向的比较即 BetterAt
+
+2026-10-15。延续 §124、§127、§129 的 I 列（Ren：“push as far as possible, as strong as possible, generally agree with your direction - but i also realize - a lot proofs are probably not integrated”，[来源](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md)）。I3c 之后主证明仍在脊柱运行之外的 6 项，I3d 全部取来：material-preparation-output、growth-constrained-fragmentation、risk-certificate-outcome-distinction、binding-preserving-substitution、renewing-consuming-formation、alignment-direction-g0-j。§129 把其中五项归为具体构造、工具或文档、待 I4，一项待 E 列；再读之下，每一项的主定理都有一般律之形，只是其中五项所需的律核心原先没有。所以 I3d 在四个既有核心模块中各加一段律（不新增核心模块），在桥接中加一段，另写四个外围实例模块，各有检查器，核心不导入它们。对 alignment-direction-g0-j，按整合者的约定，论断、Ren 的话与 G0 的折叠都不变，只加一个确切的实例。
+
+```text
+Result(s): 改写 6 项记录（脊柱别名、核心／桥接与实例模块的引用、实例回执与绑定、依赖、历史）：
+           material-preparation-output、growth-constrained-fragmentation、risk-certificate-outcome-distinction、
+           binding-preserving-substitution、renewing-consuming-formation、alignment-direction-g0-j；不新增记录
+Delta: 核心：Becoming.Readout 加列出之族的判断与经由部分的读取（15 → 22 项定理），Becoming.Copying 加 empties_iff（68 → 71），
+       Becoming.Stock 加所汲取而不补充的水平（40 → 46），Becoming.Feedback 加 closure_iff_certified、not_within_of_closed（100 → 102）；
+       桥接：Becoming.Bridge 加保护优先比较的框架与对齐实例（113 → 120），导入 AlignmentDirection；
+       外围实例模块及其检查器：PreparationCorrespondence（14 项定理／16 项声明）、JudgingCorrespondence（4／7）、
+       RenewingCorrespondence（10／13）、SubstitutionCorrespondence（4／10）
+Supplied premises / correspondence: 核心律不加前提；各实例沿用原模块的前提（所给配方、局部生产律与存量；生长史与采样；
+           两条有限事件律、等权与三分之一界；无恢复的磨损律；有限类型项语言与求值；J1–J4 与约定的 AI 服务选择）；
+           代入引理是外围的定理，核心给出判据
+Evidence: 核心与桥接由核心运行审计（回执 20261015T161154.555289Z）；四个外围检查器各自实跑（回执 20261015T161348.626052Z、20261015T161403.083389Z、20261015T161417.899487Z、20261015T161423.129149Z），
+          闭包中每个其他模块的当前字节都有通过的回执
+Boundary: 见下文“边界”
+Integration: §9 四行新增、五行计数（随核心运行）；六项记录；四个外围检查器
+```
+
+**测量。** 以落地回执，`SPINE-INTEGRATION.py`：在脊柱上陈述 184 → 190，运行之外 5 → 0，无 Lean 证明 10；较宽口径（引用某项脊柱证明）188 → 194。主证明在脊柱运行之外的记录已无。四个外围实例模块不在脊柱运行之内（需 Std 的策略或 Mathlib）：五项“在脊柱上陈述”，是指其别名命名所实例化的核心律，实例由各自的检查器实查；对齐一项的实例在桥接之内，随核心运行审计，公理报告为空。
+
+**列出之族的判断（Becoming.Readout，不加前提）。** 一个判者只读约化值 `π s`。它对列出之族的每个成员都给出观测 `f`（`Judges`），恰当 `f` 在约化所合并的成员间一致（`LumpedOn`；`judges_iff_lumpedOn`）。由右向左不用选择：判者以每个约化值的第一个列出成员作答（`firstJudge`），无列出成员处答以给定的 `d`。故约化合并两个观测所分开的成员时，没有这样的判者（`no_judge_of_merged`）。
+
+**经由部分的读取（Becoming.Readout，不加前提）。** 一个构型有诸部分（`part s p`），一族读取各读构型（`read c s`）。每个读取只经部分读取（`ThroughParts`：在每部分一致的构型被读作一样），且每部分都被某个读取直接读出（`ReadsDirectly`）时，两构型在每个读取下一致，恰当在每部分一致（`agree_iff_parts`）。于是，替换的每个读取都是它所供给之构型的读取时，替换在每个读取下与原物一致，恰当所供给的构型在每部分与原物一致（`supplied_agree_iff_parts`）。两个条件各有所用：不读某部分的读取在那部分上不能分辨；而若读取不只经部分，部分一致推不出读取一致。
+
+**复制使池用尽（Becoming.Copying，不加前提）。** 自池逐记号复制一词，池最后为空，恰当池中每个记号恰如词中所用，且空闲支持覆盖各次接合的汲取（`empties_iff`）。移去之后，每个记号的计数即原计数减去词中的计数（`countOf_removeAll`）。
+
+**所汲取而不补充的水平（Becoming.Stock，不加前提）。** 每步之后所存加所汲取不超过之前所存时（`FallsBy`），沿任何历程，终存加汲取总和不超过初存（`trace_falls`）；每步如此，恰当每个历程如此（`falls_iff`）。此外正水平上每步都有所汲取时，与初存一样长的历程止于零（`exhausted_within`，经 `trace_exhausts`），零处的步不汲取（`draws_nothing_from_empty`）。
+
+**闭包的证书（Becoming.Feedback，不加前提）。** 一个区域恰是一个形成在关系下的闭包，当且仅当它含该形成、对关系封闭、且在闭包之内（`closure_iff_certified`）；在有限的情形，这几项可由有限计算核查。含一形成而不含另一形成的封闭区域分开二者：后者不在前者的闭包之内（`not_within_of_closed`）。
+
+**保护优先的比较即配置的比较（桥接，公理报告为空）。** `PracticalJudgment.Better protect gain` 的选项，是一个无步之框架的配置：左边实现所保护的论断，右边实现所得（`Judgment.frame`）。以所保护者为 basic、所得为 living，这一比较恰是 `BetterAt`（`Judgment.better_iff_betterAt`），前沿亦同（`Judgment.frontier_iff`）。此前桥接只说 `BetterAt` 由 `Better` 定义；现在反过来也成立：每个保护优先的比较都是某个框架上的 `BetterAt`。
+
+**材料准备与碎裂（PreparationCorrespondence）。** `route` 完成、池中余 `rest`、支持余 `left`，恰当每次接合汲取一单位的复制如此（`route_some_iff`）。故由 `Copying.empties_iff`，准备完成且池用尽，恰当池是配方的排列、且配方不长于支持，所余支持为支持减去配方长度（`preparation_empties_iff`、`preparation_leaves`），即 material-preparation-output 的论断。由键相连，即在对称读取之键下的闭包之内（`connected_iff_within`）；含根且对每条余下之键封闭的分量即该闭包（`component_is_closure`，由 `closure_iff_certified`），故 `certificate_exact_split` 由核心律给出（`certificate_exact_split_by_core`），证书确认的切割分开两端（`cut_separates`，由 `not_within_of_closed`）。组成相同的两个生长图切割回报不同（`returns_differ`），故由 `Readout.no_judge_of_merged`，亲代摘要的任何函数都不同时给出二者（`no_parent_summary_predictor_by_core`）。
+
+**先验风险证书（JudgingCorrespondence）。** 每条律与它的每个模式是一个容许的实现，所列诸律的实现是一个列出的族（`realizations`）；所到终点是实现的约化（`endpoint`），律是否以三分之一为路线 0 之风险的界是观测（`certificate`）。外围的判者陈述即核心在此族上的 `Judges`（`judges_iff`）。于是只看终点的判者对每个容许实现分类证书，恰当到达同一终点的实现带同一证书（`endpoint_judge_iff`，由 `judges_iff_lumpedOn`）。均匀律与偏倚律的模式 1 到达同一终点，而界对前者成立、对后者不成立，故 `no_endpoint_only_prior_certificate` 由 `no_judge_of_merged` 给出（`no_endpoint_only_prior_certificate_by_core`）。
+
+**更新与消耗型形成（RenewingCorrespondence）。** 超出当前更新率的步是一个过程的步，每步记录压力与所形成者（`beyond`）。每步之后，所余之界（所持条件加三角形更新界，外围称 `budget`）至少减去所形成者（`remaining_falls`，即 `Stock.FallsBy`）；该界为正处总有所形成（`forms_while_held`）。两者都来自外围的 `beyond_step`。超出当前更新率之历程的前 n 步是该过程的轨迹（`path_trace`），所汲取的即所形成的总和（`total_moves`）。于是由 `Stock.trace_falls`，整个展开的形成以该界为限（`beyond_current_bounded_by_core`）；由 `Stock.exhausted_within` 与 `draws_nothing_from_empty`，自等于该界之时起不再形成（`beyond_current_ceases_by_core`）；分给任何部分的份额，含共享形成，随之终止（`shared_formation_ends_by_core`）。
+
+**保留绑定的代入（SubstitutionCorrespondence）。** 对一个语境的赋值，是以位置为部分的构型（`part`）；一个消费者，即带形式的项，以求值读它（`read`）。求值只经位置读取（`through`，用函数外延），位置的直接使用读出该位置（`direct`）。外围的代入引理（`extract_substitute`）说，替换后每个消费者的读取，即它对生产者所供给之赋值的读取（`supplies`）。于是由 `Readout.supplied_agree_iff_parts`，全部消费者在代入前后求值相同，恰当每个生产者在其位置给出原来的根据（`all_terms_agree_iff_positions_by_core`）。核心给出判据；代入引理，即求值与代入可交换，仍是外围关于其语言的定理。
+
+**对齐方向（桥接）。** `AlignmentDirection` 对计划的比较 `Better protection realization`，即框架 `Judgment.frame protection realization` 上的 `BetterAt`（`alignment_better_iff_betterAt`），合格计划的前沿亦同（`alignment_frontier_iff`）。故转移优于扩张（`transfer_over_expansion`）与扩张被排除出前沿（`expansion_excluded`）是脊柱上比较的陈述。记录的论断、Ren 的话与 G0 的折叠都不变：`BetterAt` 陈述 J1/J2，是核心之外的公开承诺，这里不用也不断言 G0。以需求为指标的覆盖（`Covered`：只有承诺而无交付的接替不覆盖需要）在脊柱上没有确切的对应：`Becoming.Wholes` 的 `Web.Covered` 说部分自某步起覆盖每一步，不以需求为指标。故这两条留在外围，记录如此注明。
+
+**作者反审。**
+1. **新律还是重述？** 五段核心律都是一般的、不加前提的律，外围定理是其实例。`agree_iff_parts` 的证明很短：它的内容是把“全部消费者”判据拆成两个可分别核查的条件，其中“只经部分”由外围的代入引理承担。`judges_iff_lumpedOn` 的实质在由右向左：判者不用选择而构造出来。
+2. **对齐一项是否确切？** 等价对每对计划都成立，故是确切的实例，不是近似。但它只把 J1/J2 的比较放到配置上，不给出 G0 或 J1–J4 的根据，也不使任何部署遵循它。
+3. **§129 的归类为何改变？** §129 把这五项看作具体构造或工具。重读之下，它们的主定理各有一般律之形：经约化的判者、经部分的读取、闭包的证书、汲取而不补充的水平、复制使池用尽。具体的构造仍在外围；接入的是律。
+4. **公理。** 核心与桥接的新声明公理报告为空。外围实例只用标准公理：SubstitutionCorrespondence 只用 Quot.sound（函数外延）；PreparationCorrespondence 的置换对应用库的 Classical.choice；其余用 propext 与 Quot.sound。
+
+**边界。** 核心律只在其所陈述的条件下成立；哪个约化、哪些部分、哪个水平对应一项实际活动，随每项应用给出。外围实例保持原模块的范围（前提见上）：三分之一的界是数值规定，不是伦理许可；磨损律是所给的；代入引理只关于所给的有限类型项语言；对齐的实例不证明服从、部署可靠性或 G0 的无公理必然性。六项记录的旧回执保留；新别名绑定到核心回执与四个外围回执。
+
+**下一步（I 列）。** 主证明在脊柱运行之外的记录已无。I 列余下 I4（约 500 个模块的归类），待 Ren。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -9907,3 +9963,20 @@ The author's counterreview concedes three points. The necessary side follows dir
 **Distinguishing: the tests are a bounded record, and the depth across two frames is exact, P83e (15 October 2026).** Two open items, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October and “offer it to them, keep proving” of 15 October: the instance theorem to `alike_iff_sameTests` (identification-where-bounded) and the exactness of N + N′ − 1 between two branching frames (tests-fix-likeness-where-determined). Section 132 adds the core module `Becoming.Distinguishing`, the first to import both `Identification` and `Likeness`; no existing module changes. Under a determined law read through a registration, in a world a list of N configurations holds, two configurations pass the same tests exactly where their registered futures agree for N − 1 steps (`Law.sameTests_iff_within`). Across two worlds of N and N′ configurations the length is N + N′ − 1 (`Law.sameTests_iff_below_across`). Infinitely many tests are fixed by finitely many registered values. Where each configuration's single move is named by what is registered there (`Law.labelled`), likeness to depth k is agreement for k steps (`Law.alikeTo_labelled_iff`). Every history with at most N states is the course of a law on N configurations (`Law.realized_within`). So the two courses of `Identification.bounded_agree_exact` give, for every N and N′, finite decided frames of N and N′ configurations alike to depth N + N′ − 2 and not alike (`labelled_across_exact`), and registered worlds agreeing for N + N′ − 2 steps that do not pass the same tests (`registered_across_exact`). One pair of courses thus witnesses three exactness results: Fine and Wilf's N + N′ − 1, the length of the tests across two worlds, and the depth across two branching frames. Not constructed: exactness of N − 1 for the tests of one world wholly held by N configurations. Scratch build: 10 theorems, 11 declarations, empty axiom reports. Not yet independently reviewed.
 
 **The rest step needs no bound: 2N − 1 for every learner, and the bound buys only silence, P83f (15 October 2026).** This answers identification-where-bounded's open item “the optimal rest step of the learner not given the bound”, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October. Section 133 adds the learner by the least bound (`leastBound`). It is given no bound, and claims by the first lasso hypothesis the record bears out within the least bound within which one is. On every history with at most N states it is right at every step from 2N − 1 on, for every N (`leastBound_exact`), because what it finds lies within the true bound and Fine and Wilf's bound makes it the law. Given two values, no learner, given the bound or not, is right at step 2N − 2 on every such history (`rest_earliest`, from `record_short_twice`). So 2N − 1 is the optimal rest step, and being given the bound does not move it. What the bound buys is silence: no learner right at step 1 on every one-state history is refuted nowhere on every two-state history (`rest_without_bound_refuted`), whereas the learner given the bound stays silent and is refuted nowhere. The record's statement is revised accordingly (the former statement kept in its history). The learner by refutation's own exact step stays open; `learner_rests` is kept. Reading (the AI's): deriving needs the bound to hold, not to be known. Edits `Becoming.Identification` only; scratch build: 74 theorems, 94 declarations, empty axiom reports. Not yet independently reviewed.
+
+**Periphery proofs joined to the spine, integration I3d (15 October 2026).** Continuing column I, section 134 joins the last six records whose main proof lay outside the spine run: material preparation, grown fragmentation, the prior risk certificate, binding-preserving substitution, renewing and consuming formation, and the alignment direction. Section 129 had set five of them aside as constructions, tools or documentation; read again, each main theorem has the shape of a general law, which the core lacked in five cases. I3d adds a section of laws to each of four existing core modules and one to the bridge, and writes four periphery instance modules, each with its own checker, which the core does not import. The measure goes from 184 to 190 stated on the spine and from 5 to 0 outside: no record's main proof now lies outside the spine run.
+- **Core laws, no premise.**
+  - **Judging a listed family through a reduction** (`Becoming.Readout`). A judge reading only the reduced value gives the observable at every member exactly where the observable goes alike across what the reduction merges (`judges_iff_lumpedOn`). The judge answers with the first listed member of each reduced value, so no choice is used. Where the reduction merges two members the observable tells apart, no judge exists (`no_judge_of_merged`).
+  - **Readings through parts** (`Becoming.Readout`). Where every reading reads only through the parts and each part is read directly by some reading, two configurations agree under every reading exactly where they agree at every part (`agree_iff_parts`). So a replacement agrees with the original under every reading exactly where it supplies every part (`supplied_agree_iff_parts`).
+  - **Emptying the pool** (`Becoming.Copying`). Copying a word from a pool leaves it empty exactly where the pool holds each token as often as the word uses it and the support covers the draws (`empties_iff`).
+  - **A level drawn on and not replenished** (`Becoming.Stock`). Where each step's draw and what then stands are at most what stood before, everything drawn along a course is at most the starting level (`trace_falls`). Where moreover every step from a positive level draws something, a course as long as that level ends at nothing (`exhausted_within`).
+  - **Certified closures** (`Becoming.Feedback`). A region is a formation's closure exactly where it holds the formation, is closed under the relation and lies within the closure (`closure_iff_certified`). A closed region holding one formation and not another separates them (`not_within_of_closed`).
+  - **Protection-first comparisons** (bridge, empty axiom reports). Every `PracticalJudgment.Better` is `BetterAt` on the frame of its options, with the same frontier (`Judgment.better_iff_betterAt`, `Judgment.frontier_iff`).
+- **Instances.**
+  - **Material preparation** (`PreparationCorrespondence`). Routing is copying with a unit draw per attachment, so its exact completion with an empty pool is `Copying.empties_iff`.
+  - **Grown fragmentation** (`PreparationCorrespondence`). A cut's certified components are closures, and a certified cut separates its ends. Matched composition with different cut returns is `no_judge_of_merged`.
+  - **The prior risk certificate** (`JudgingCorrespondence`). The endpoint test is `Judges` on the admitted realizations, and its impossibility is `no_judge_of_merged`.
+  - **Renewing and consuming formation** (`RenewingCorrespondence`). Formation beyond the current renewal rate draws on a level that is not replenished. So its bound and its end are `Stock.trace_falls` and `Stock.exhausted_within`, for every share, shared formation included.
+  - **Binding-preserving substitution** (`SubstitutionCorrespondence`). Evaluation reads only through positions. With the periphery's substitution lemma, its exact position criterion is `supplied_agree_iff_parts`. The core supplies the criterion, not the lemma.
+  - **The alignment direction** (bridge). Its comparison of plans and its frontier are `BetterAt`'s (`alignment_better_iff_betterAt`, `alignment_frontier_iff`). Its claims, Ren's words and the fold of G0 are unchanged: `BetterAt` states J1/J2, and G0 is neither used nor asserted. Demand-indexed coverage has no exact counterpart on the spine and stays in the periphery.
+- **Remaining.** Column I's remaining step is I4, the classification of about 500 modules, which awaits Ren.

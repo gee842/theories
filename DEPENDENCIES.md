@@ -2262,6 +2262,10 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
 
+## growth-constrained-fragmentation ← risk-certificate-outcome-distinction
+
+`formal-reuse` — 复用 Becoming.Readout.no_judge_of_merged：组成相同的两个生长图切割回报不同，故亲代摘要的任何函数都不同时给出二者（PreparationCorrespondence.no_parent_summary_predictor_by_core）。 / Reuses Becoming.Readout.no_judge_of_merged: the two grown graphs have the same parent summary and different mean cut returns, so no function of the summary gives both (PreparationCorrespondence.no_parent_summary_predictor_by_core).
+
 ## guarded-program-question-recovery ← branching-tests-bisimulation
 
 `formal-reuse` — 用后继匹配恢复条件程序的边界历史。 / Use successor matching to recover guarded-program boundary histories.

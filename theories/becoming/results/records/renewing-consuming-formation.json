@@ -53,7 +53,9 @@
     "RenewingFormation.comparison_does_not_apply",
     "RenewingFormation.event_comparison_ranks_rest_below",
     "RenewingFormation.ceaseless_separates",
-    "RenewingFormation.capacity_separates"
+    "RenewingFormation.capacity_separates",
+    "Becoming.Stock.trace_falls",
+    "Becoming.Stock.exhausted_within"
   ],
   "dependencies": [],
   "related": [
@@ -204,6 +206,55 @@
       "role": "review",
       "sha256": "73e9039c26a96b2ff8b6bbbbcf60ec99a9a4741262486d5b56362c574c3825fe",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
+      "role": "proof",
+      "sha256": "d9abec4ff1f686aa4d6e0c04d32d6fafb99cd03e794c12426b6556c0b2725905",
+      "declarations": [
+        "Becoming.Stock.FallsBy",
+        "Becoming.Stock.trace_falls",
+        "Becoming.Stock.falls_iff",
+        "Becoming.Stock.trace_exhausts",
+        "Becoming.Stock.zero_of_add_le",
+        "Becoming.Stock.exhausted_within",
+        "Becoming.Stock.draws_nothing_from_empty"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "role": "receipt",
+      "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean",
+      "role": "proof",
+      "sha256": "06daa2b84d9abcbefdf37c5646b2b4ca13897cbd2462ff30f9413e3b0675b898",
+      "declarations": [
+        "Becoming.RenewingCorrespondence.beyond",
+        "Becoming.RenewingCorrespondence.formedOf",
+        "Becoming.RenewingCorrespondence.remaining_falls",
+        "Becoming.RenewingCorrespondence.forms_while_held",
+        "Becoming.RenewingCorrespondence.moves",
+        "Becoming.RenewingCorrespondence.path_trace",
+        "Becoming.RenewingCorrespondence.total_moves",
+        "Becoming.RenewingCorrespondence.beyond_current_bounded_by_core",
+        "Becoming.RenewingCorrespondence.beyond_current_ceases_by_core",
+        "Becoming.RenewingCorrespondence.shared_formation_ends_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/renewing-correspondence-checks/20261015T161417.899487Z/verification.json",
+      "role": "receipt",
+      "sha256": "0004399ce47516439980a6bf3411afc41c1ce83d4336aec9b2d639bf039992da",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_renewing_correspondence.py",
+      "role": "provenance",
+      "sha256": "9b3a7b10f675e8048cd2ad8ccbb10657611206eff53d071ecbb5db54a574896e",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -218,6 +269,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
       "sha256_pointer": "/source_sha256/GenerativeComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Stock",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/renewing-correspondence-checks/20261015T161417.899487Z/verification.json",
+      "sha256_pointer": "/source_sha256/RenewingCorrespondence",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -258,6 +323,10 @@
     {
       "zh": "2026-10-14，开放问题计划第9项：主张中的“预算”是市场用语（Ren 2026-10-06：付费记录“太市场了，不够基本”），改为“更新量”“此界”；意义不变。",
       "en": "14 October 2026, open-issues plan item 9: \"budget\" in the claim is a market word (Ren, 6 October 2026, on 付费记录: “太市场了，不够基本”); it becomes \"bound\", meaning unchanged."
+    },
+    {
+      "zh": "2026-10-15，整合 I3d（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Stock 的所汲取而不补充的水平，新增，不加前提）。每步之后所存加所汲取不超过之前所存时（FallsBy），沿任何历程终存加汲取总和不超过初存（trace_falls，每步如此恰当每历程如此，falls_iff）；正水平上每步都有所汲取时，与初存一样长的历程止于零（exhausted_within），零处的步不汲取（draws_nothing_from_empty）。外围实例 RenewingCorrespondence：超出当前更新率的步是一个过程的步（beyond），每步之后所余之界（所持条件加三角形更新界，外围的 budget）至少减去所形成者（remaining_falls），为正处总有所形成（forms_while_held），两者都来自外围的 beyond_step；超出当前更新率之历程的前 n 步是其轨迹（path_trace），汲取即所形成的总和（total_moves）。故整个展开的形成以该界为限（beyond_current_bounded_by_core），自等于该界之时起不再形成（beyond_current_ceases_by_core），分给任何部分（含共享形成）的份额随之终止（shared_formation_ends_by_core）。无恢复的磨损律保持原范围。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T161417.899487Z），只用标准公理（propext、Quot.sound），beyond、formedOf 与 moves 的公理报告为空；所实例化的核心律由核心运行审计（回执 20261015T161154.555289Z，公理报告为空）。",
+      "en": "15 October 2026, integration I3d (Ren: “a lot proofs are probably not integrated”): stated on the spine (the new laws of Becoming.Stock for a level drawn on and not replenished, no premise). Where what stands after each step plus what it draws is at most what stood before (FallsBy), what stands at the end of every course plus everything drawn along it is at most what stood at its start (trace_falls; each step so exactly when every course so, falls_iff); where moreover every step from a positive level draws something, every course as long as the starting level ends at nothing (exhausted_within), and a step from nothing draws nothing (draws_nothing_from_empty). Periphery instance RenewingCorrespondence: steps beyond the current renewal rate are the moves of one process (beyond); across each the remaining bound (held conditions plus the triangular renewal bound, the periphery’s budget) falls by at least what forms (remaining_falls), and something forms wherever it is positive (forms_while_held), both from the periphery’s beyond_step; the first n steps of a course beyond the current rate are its trace (path_trace), drawing in all what formed (total_moves). So the whole unfolding’s formation is within that bound (beyond_current_bounded_by_core), nothing forms from the time equal to it (beyond_current_ceases_by_core), and every share of it, shared formation included, ends with it (shared_formation_ends_by_core). The no-recovery wear law keeps its scope. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T161417.899487Z), standard axioms only (propext, Quot.sound), beyond, formedOf and moves with empty reports; the core laws it instantiates are audited by the core run (receipt 20261015T161154.555289Z, empty axiom reports)."
     }
   ]
 }

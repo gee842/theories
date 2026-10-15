@@ -29,7 +29,9 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean",
   "aliases": [
-    "Generative.InferentialSubstitution.all_terms_agree_iff_positions"
+    "Generative.InferentialSubstitution.all_terms_agree_iff_positions",
+    "Becoming.Readout.agree_iff_parts",
+    "Becoming.Readout.supplied_agree_iff_parts"
   ],
   "dependencies": [],
   "related": [
@@ -114,6 +116,50 @@
       "role": "provenance",
       "sha256": "1508261e4e9249b4e3c6b9c45f21f3c9a57522bebb1bb22f959507212cf120fc",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+      "role": "proof",
+      "sha256": "08725e834290ab83cfe8f2acf9cb3ede7e8b01b7be233987e4be95ad51d2f94a",
+      "declarations": [
+        "Becoming.Readout.ThroughParts",
+        "Becoming.Readout.ReadsDirectly",
+        "Becoming.Readout.agree_iff_parts",
+        "Becoming.Readout.supplied_agree_iff_parts"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "role": "receipt",
+      "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean",
+      "role": "proof",
+      "sha256": "0226c956c66cc3931a9896861738d581271247a334910d70ac4455e10b55572d",
+      "declarations": [
+        "Becoming.SubstitutionCorrespondence.part",
+        "Becoming.SubstitutionCorrespondence.read",
+        "Becoming.SubstitutionCorrespondence.use",
+        "Becoming.SubstitutionCorrespondence.through",
+        "Becoming.SubstitutionCorrespondence.direct",
+        "Becoming.SubstitutionCorrespondence.supplied",
+        "Becoming.SubstitutionCorrespondence.supplies",
+        "Becoming.SubstitutionCorrespondence.all_terms_agree_iff_positions_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/substitution-correspondence-checks/20261015T161423.129149Z/verification.json",
+      "role": "receipt",
+      "sha256": "919e50cdc15afec795449e9b5988000965eca495876c70ad68f0a300f4ce5a89",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_substitution_correspondence.py",
+      "role": "provenance",
+      "sha256": "d49af9717c58004d5113616a25b75848974140a0bcf5c9cd36b27c1598b576df",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -130,6 +176,20 @@
       "sha256_pointer": "/modules/1/sha256",
       "success_pointer": "/passed",
       "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Readout",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/substitution-correspondence-checks/20261015T161423.129149Z/verification.json",
+      "sha256_pointer": "/source_sha256/SubstitutionCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -144,6 +204,10 @@
     {
       "zh": "2026-10-09：阅读并接入构成性评估；只调和三份文档来源、新后继与相关评估。定理、证明绑定及冻结回执未变、未重编。",
       "en": "2026-10-09: reconciles three read documentary sources, the successor question and related constitutive assessment. Theorems, proof bindings and frozen receipts are unchanged and not recompiled."
+    },
+    {
+      "zh": "2026-10-15，整合 I3d（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Readout 的经由部分的读取，新增，不加前提）。一族读取只经部分读取（ThroughParts）、每部分都被某读取直接读出（ReadsDirectly）时，两构型在每个读取下一致恰当在每部分一致（agree_iff_parts）；故替换的每个读取都是自它供给之构型的读取时，替换在每个读取下与原物一致，恰当所供给的构型在每部分与原物一致（supplied_agree_iff_parts）。外围实例 SubstitutionCorrespondence：对一个语境的赋值是以位置为部分的构型，消费者以求值读它；求值只经位置读取（through，用函数外延），位置的直接使用读出该位置（direct）；外围的代入引理 extract_substitute 说替换后每个消费者的读取即它对生产者所供给之赋值的读取（supplies）。故全部消费者在代入前后求值相同，恰当每个替换项给出其原位置的根据（all_terms_agree_iff_positions_by_core）。核心给出判据；代入引理仍是外围对其语言的定理，语言与绑定的解释保持原范围。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T161423.129149Z），只用 Quot.sound（函数外延，与外围的代入引理相同），part、read、use、direct 与 supplied 的公理报告为空；所实例化的核心律由核心运行审计（回执 20261015T161154.555289Z，公理报告为空）。",
+      "en": "15 October 2026, integration I3d (Ren: “a lot proofs are probably not integrated”): stated on the spine (the new law of Becoming.Readout for readings through parts, no premise). Where every reading of a family reads only through the parts (ThroughParts) and each part is read directly by some reading (ReadsDirectly), two configurations agree under every reading exactly where they agree at every part (agree_iff_parts); so where each reading of a replacement is the reading of the configuration it supplies, the replacement agrees with the original under every reading exactly where the supplied configuration agrees with it at every part (supplied_agree_iff_parts). Periphery instance SubstitutionCorrespondence: an assignment to a context is a configuration whose parts are its positions, and a consumer reads it by evaluation; evaluation reads only through the positions (through, with function extensionality) and the direct use of a position reads that position (direct); the periphery’s substitution lemma extract_substitute makes each consumer’s reading after replacement its reading of the assignment the producers supply (supplies). So every consumer evaluates alike before and after replacement exactly where each replacement term supplies the ground at its original position (all_terms_agree_iff_positions_by_core). The core supplies the criterion; the substitution lemma remains the periphery’s theorem about its language, and the language and the interpretation of binding keep their scope. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T161423.129149Z), Quot.sound only (function extensionality, as in the periphery’s substitution lemma), part, read, use, direct and supplied with empty reports; the core laws it instantiates are audited by the core run (receipt 20261015T161154.555289Z, empty axiom reports)."
     }
   ]
 }

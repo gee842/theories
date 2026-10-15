@@ -24,7 +24,10 @@
     "en": "The constructed case distinguishes expansion, service, transfer and abrupt withdrawal; the same relevant relations can apply across intelligence types."
   },
   "canonical_source": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
-  "aliases": [],
+  "aliases": [
+    "Becoming.alignment_better_iff_betterAt",
+    "Becoming.alignment_frontier_iff"
+  ],
   "dependencies": [
     {
       "id": "practical-judgment-g0-j",
@@ -144,6 +147,27 @@
       "path": "sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md",
       "role": "provenance",
       "sha256": "2900e16d2a0b4e0a7778078dfc4649854d5a2637480afaace2bb11f96ede5f32"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "a6e81fe80646c5c153db0f4205dccd901e68ff27cbc47d2d09b542c68efdcf53",
+      "declarations": [
+        "Becoming.BetterAt",
+        "Becoming.Judgment.frame",
+        "Becoming.Judgment.protecting",
+        "Becoming.Judgment.gaining",
+        "Becoming.Judgment.better_iff_betterAt",
+        "Becoming.Judgment.frontier_iff",
+        "Becoming.alignment_better_iff_betterAt",
+        "Becoming.alignment_frontier_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "role": "receipt",
+      "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -151,6 +175,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
       "sha256_pointer": "/source_sha256/AlignmentDirection",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -183,6 +214,10 @@
     {
       "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句（与原唯一“反例”逐字相同，实为范围边界）拆为 3 项分类“未表明”，重复的反例条目并入其中；“完成的是方向论证”由种类与状态表达；证据中的“本次仅登记”移入沿革（见第一条）；2 行“已接通”链接整合研究第1、3节。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/alignment-direction-g0-j.md)；迁移前的完整记录为 text_versions[0]。",
       "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former only “counterexample”, which was a scope boundary) became 3 typed does-not-show items, absorbing that duplicate entry; “the completed result is a direction argument” is carried by kind and status; “this turn only registers that evidence” moved from the evidence to history (see the first entry); 2 progress lines link sections 1 and 3 of the integration study. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/alignment-direction-g0-j.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "zh": "2026-10-15，整合 I3d（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（桥接中的确切实例）。每个保护优先的比较 PracticalJudgment.Better 都是其选项框架上的 BetterAt：选项是无步之框架的配置，左边实现所保护的论断、右边实现所得，以前者为 basic、后者为 living（Judgment.frame、Judgment.better_iff_betterAt），前沿亦同（Judgment.frontier_iff）。故 AlignmentDirection 对计划的比较与合格计划的前沿就是脊柱上 BetterAt 的比较与前沿（alignment_better_iff_betterAt、alignment_frontier_iff），转移优于扩张与扩张被排除出前沿是脊柱上比较的陈述。论断、Ren 的话与 G0 的折叠不变：BetterAt 陈述 J1/J2，即核心之外的公开承诺，这里不用也不断言 G0。需求覆盖（Covered）在脊柱上没有确切的对应（Becoming.Wholes 的 Web.Covered 不以需求为指标），故 covered_transfer_with_old_model_stopped 与 promised_successor_without_delivery_fails 留在外围。桥接由核心运行编译与审计（回执 20261015T161154.555289Z），新增声明的公理报告为空；AlignmentDirection 与 PracticalJudgment 作为继承模块随运行编译，其既有回执不变。",
+      "en": "15 October 2026, integration I3d (Ren: “a lot proofs are probably not integrated”): stated on the spine (an exact instance in the bridge). Every protection-first comparison PracticalJudgment.Better is BetterAt on the frame of its options: the options are the configurations of a frame with no moves realizing the protected claims on the left and the gains on the right, the former read as basic and the latter as living (Judgment.frame, Judgment.better_iff_betterAt), with the same frontier (Judgment.frontier_iff). So AlignmentDirection’s comparison of plans and its frontier of eligible plans are the comparison and frontier of the spine’s BetterAt (alignment_better_iff_betterAt, alignment_frontier_iff), and transfer over expansion and the exclusion of expansion from the frontier are statements of the spine’s comparison. The claims, Ren’s words and the fold of G0 are unchanged: BetterAt states J1/J2, disclosed commitments outside the core, and G0 is neither used nor asserted here. Demand-indexed coverage (Covered) has no exact counterpart on the spine (Becoming.Wholes’ Web.Covered is not indexed by demand), so covered_transfer_with_old_model_stopped and promised_successor_without_delivery_fails stay in the periphery. The bridge is compiled and audited by the core run (receipt 20261015T161154.555289Z), the new declarations with empty axiom reports; AlignmentDirection and PracticalJudgment compile in the run as inherited modules, their earlier receipt unchanged."
     }
   ],
   "text_versions": [

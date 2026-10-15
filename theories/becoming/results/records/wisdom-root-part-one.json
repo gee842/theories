@@ -426,13 +426,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "review",
-      "sha256": "fcf2eda1c90df93abfce7b6180eb3d33b95730f9a582eb705743b76fb48bd52c",
+      "sha256": "814147e961f0919378e811091f3a28bb9e2f868fed61327c0ef5e2f1dc349647",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "fe3428622cb4a51698845c81968afd845c22eb38876d59e63dd26162fbc30822",
+      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635",
       "declarations": []
     },
     {
@@ -870,6 +870,10 @@
     {
       "zh": "2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：Identification.lean（P83f：新增以最小的界读记录的学习者（orFit、leastFit、leastFit_sound、leastFit_within、leastBound、leastBound_exact：不被给予界而从 2N − 1 起每步都对；rest_earliest、rest_without_bound_refuted：这一步对每个学习者最优）；头注增一段；原有陈述不变）。",
       "en": "15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: Identification.lean (P83f: the learner reading the record by the least bound added (orFit, leastFit, leastFit_sound, leastFit_within, leastBound, leastBound_exact: given no bound, right at every step from 2N − 1 on; rest_earliest, rest_without_bound_refuted: that step is optimal for every learner); the docstring gains a passage; earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
     }
   ],
   "text_versions": [
