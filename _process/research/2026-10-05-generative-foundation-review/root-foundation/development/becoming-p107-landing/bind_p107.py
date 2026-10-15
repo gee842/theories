@@ -47,6 +47,14 @@ FILES = {
     LEANDIR + 'Becoming.lean': (
         '导入 Novelty、Reading、Readings 并加模块说明；Imbalance 一项记 Ren 的采用',
         'imports Novelty, Reading and Readings with their module notes; the Imbalance note records Ren\'s adoption'),
+    # the new records were written before integration I3a added theorems to these two modules
+    LEANDIR + 'Becoming/Recurrence.lean': (
+        '整合 I3a 加入 keeps_reach_iff_returns、same_reach_iff_returns、not_returns_iff_loses 及其说明；本记录所引的声明不变',
+        'integration I3a added keeps_reach_iff_returns, same_reach_iff_returns and not_returns_iff_loses with their summary; '
+        'the declarations this record cites are unchanged'),
+    LEANDIR + 'Becoming/Unfolding.lean': (
+        '整合 I3a 加入 same_steps_iff_traces 及其说明；本记录所引的声明不变',
+        'integration I3a added same_steps_iff_traces with its summary; the declarations this record cites are unchanged'),
     LEANDIR + 'check_becoming.py': (
         'CORE 列表加入三个新模块', 'the CORE list adds the three new modules'),
     LEANDIR + 'becoming-verification.json': (
@@ -58,8 +66,8 @@ FILES = {
     RF + 'DECIDABILITY-INVENTORY.py': (
         'upto_or_fails 归为“找出”', 'upto_or_fails classified as finding a step'),
 }
-NOTE_ZH = f'2026年10月14日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第{N}节）：'
-NOTE_EN = ('14 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study '
+NOTE_ZH = f'2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第{N}节）：'
+NOTE_EN = ('15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study '
            f'section {N}): ')
 DID = {False: ('更新哈希：', 'rehashed: '), True: ('更新哈希并改绑新回执：', 'rehashed and rebound to the new receipt: ')}
 # a record whose subject is a changed file says, after reading the change, that its claims stand
@@ -220,11 +228,11 @@ def main():
             note = r['history'][-1]
             assert note['zh'].startswith(prefix[0]) and note['en'].startswith(prefix[1]), (rid, note['en'][:60])
             if rid in NEW:
-                note['zh'] += f'落地时绑定核心回执 {utc}' + ('，并更新哈希：' + '；'.join(zh) if zh else '') + '。'
-                note['en'] += f' At landing, bound to the core receipt {utc}' + ('; rehashed: ' + '; '.join(en) if en else '') + '.'
+                note['zh'] += f'10月15日落地时绑定核心回执 {utc}' + ('，并更新哈希：' + '；'.join(zh) if zh else '') + '。'
+                note['en'] += f' At landing on 15 October, bound to the core receipt {utc}' + ('; rehashed: ' + '; '.join(en) if en else '') + '.'
             elif zh:
-                note['zh'] += '落地时更新哈希：' + '；'.join(zh) + '。'
-                note['en'] += ' At landing, rehashed: ' + '; '.join(en) + '.'
+                note['zh'] += '10月15日落地时更新哈希：' + '；'.join(zh) + '。'
+                note['en'] += ' At landing on 15 October, rehashed: ' + '; '.join(en) + '.'
         else:
             tail_zh, tail_en = STANDS.get(rid, ('', ''))
             r.setdefault('history', []).append({'zh': NOTE_ZH + DID[rebound][0] + '；'.join(zh) + tail_zh + '。',
