@@ -101,6 +101,7 @@ import Becoming.Postponement
 import Becoming.Novelty
 import Becoming.Reading
 import Becoming.Readings
+import Becoming.Coupling
 
 /-!
 # The Theory of Becoming: the formal core
@@ -955,6 +956,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   rest counted every world is one run of the law of exchange. Under the same standard of invariance,
   significance from a standpoint holds within a boundary only by holding for everything, a
   restatement of `Becoming.Boundaries`. The readings are the AI's, pending Ren.
+* `Becoming.Coupling` (L4): where a move is formed, with no premise beyond what each law names. In a
+  part and the rest coupled by one move formed within the whole, the move is the part's exactly
+  where it is a policy of the part, the rest's exactly where it is a policy of the rest, and both
+  only where it is the same everywhere; an own move closes the part and is the rest's input. Every
+  run of a labelled process, whatever its moves, is the part's course in a whole whose rest, a
+  clock, forms them; moves formed within a whole held by a list repeat, and every lasso is so
+  formed. The record of one course fixes whose move it is only where a configuration recurs with
+  the move varied; where nothing recurs, as with a kept history, every reading fits.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

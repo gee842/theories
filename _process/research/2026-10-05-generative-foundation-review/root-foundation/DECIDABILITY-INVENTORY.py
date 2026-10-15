@@ -151,6 +151,9 @@ CONSTRUCTIONS = {
     'Viability.guardedStep': 'guard', 'Viability.guardedHistory': 'guard', 'ite': 'split',
     # 2026-10-15, integration I3a (classified at the I3a landing)
     'Readout.pick': 'indicate', 'dirac': 'same',
+    # 2026-10-15, P109 where a move is formed (Becoming.Coupling): the policy read off a finite stretch compares
+    # configurations
+    'policyUpto': 'same',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -290,6 +293,9 @@ PROOF_KIND = {
     # 2026-10-15, integration I3b: decided tests pick the side of a choice, or list where a guard lets through
     **{n: 'find' for n in ['Recipe.holds_after', 'Frame.holds_byRecipes', 'Frame.byRecipes_translates']},
     'Recipe.outcomes': 'build',
+    # 2026-10-15, P109 where a move is formed (Becoming.Coupling): the policy on a finite stretch is built by comparing
+    # configurations; where none exists, a configuration recurring with the move varied is found
+    'lumped_upto_iff': 'same', 'no_policy_upto_iff': 'find', 'throughout_or_fails': 'find',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
