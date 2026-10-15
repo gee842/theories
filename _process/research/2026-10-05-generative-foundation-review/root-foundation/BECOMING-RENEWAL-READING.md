@@ -8897,7 +8897,6 @@ theorem extension_classification_robust_iff (living : C → Prop) (g : S → G �
 **检查。** 在暂存区对 main（`c143e7d9`，P113 之后）编译：`Becoming.Courses` 87 项定理、97 项声明，`Becoming.CoursesBridge` 3 项定理，没有错误或警告，公理报告全部为空；根模块 `Becoming` 与其导入闭包一同编译，没有重名；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。清点（`DECIDABILITY-INVENTORY.lean`）在同一字节上运行（跳过回执核对）：陈述依赖可判定性者 347 → 363，只在证明中用到者 202 → 212，取可判定族的定义 94 → 96，不用到者 0，每一新行都已分类。合并检查器在整合者的运行中检查。本节尚未经独立审查。
 
 **边界。** 落地运行须在 `check_becoming.py` 中编译与审计两个新模块，再由 `becoming-p114-landing/apply_p114.py` 把 26 项记录绑定到回执（引用、绑定、别名与历史；论断、假设与 Ren 的话不变）。`DECIDABILITY-INVENTORY.py` 把 `Courses.release` 与 `Courses.inspection` 记作分辨相同的构造，把十条只在证明中用到可判定性的实例按所实例化之律分类。既有模块的字节不变。
-
 ## 139. 脊柱运行之外的模块归类（整合 I4a，草稿待 Ren）：598 个模块，31 个较早的版本连到脊柱，64 条待接入的律
 
 2026-10-16。延续 §124、§127、§129、§134、§135 的 I 列。I3e 之后，主证明在脊柱运行之外的记录已无（§135）。I 列余下的是不属于任何记录的模块。Ren 在 I4 的选项中选了“Draft the table first”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-15-i4-classification-table.md)；选项文字由 AI 拟写）：先只读地列出每个模块所提议的类别与理由；对较早的版本，列出取代它的脊柱结果；作为研究草稿交 Ren 审阅，Ren 决定之前不标注、不移动任何东西。整合者另提一项：每行列出它所连到的脊柱律或模块，使“较早的版本”是一条边，不是判词。本节是这张表的说明。
@@ -8974,6 +8973,67 @@ Integration: 不改任何 Lean 模块、记录、§9 表或生成的总览；Ren
 2. 是否接入待接入的律，按主题进行。提议的次序：先是最近的缺口（对既有核心模块的小扩充），再是更新与闭合一线，再是比较、探究与控制三组。一般数学（17）与推导演算（2）是否属于脊柱是范围问题，不是缺口。
 3. 是否把 `SPINE-INTEGRATION.py` 改为按完整模块名排除运行模块，并采用本表的副本规则（数字会如上文所示地变动）。
 4. 应用（310）照旧；工作证据（97）与快照（39）作为证据保留，不删除。
+
+## 140. 运行分开之处的辨识，计数中的典型（P116）
+
+2026-10-16。Ren 2026-10-15 的第四条消息：“not sure what's the reading 1, but reality is always situational. for what i mean by the core, is the whole that covers the whole reality where "things and changes" exists, 0 axiom / "What this line doesn’t reach" is also worth doing / if my earlier words are unreasonable, please keep note, not follow blindly”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)）。辨识一线（§97、§126、§132、§133、§136）对确定的律陈述；它没有达到的是识的限度（已由 §119 的 `Becoming.Learnable` 恰好给出，这里引用，不重证），以及有分支与有权重的世界。本节在第一部分之内回答后两者：不加公理，除各律所写者不加前提。工作板上认领为 P116。
+
+```text
+Result(s): 新增 identification-where-runs-part 与 typicality-by-counting；复用 identification-where-bounded（leastBound_exact、
+           rest_earliest、statesBelow_iff_lasso、statesBelow_mono、below_all、not_ne_bool、le_of_add_right）；
+           tests-fix-likeness-where-determined（Law.realized_within）；learning-by-refutation（record、record_congr、holdFrom、
+           diagonal、diagonal_refutes、diagonal_not_lasso、learner、lassos）；recurrence-without-premise（revisits_within、gap_of_le、
+           mem_cons_split、Law.process、Law.orbit）；the-split-that-makes-sense（StatesBelow、SameAhead、statesBelow_of_same）；
+           sum-over-histories-exact（counting、Weights.along、Weights.transfer、Weights.sum_courses、courses、add_mul_split、
+           mul_assoc_nat）；Becoming.Frame 的 Run、Becoming.Joint 的 Determined；引用 learnable-through-registration（识的限度）
+Delta: 新核心模块 Becoming.Parting（导入 Distinguishing；18 项定理／27 项声明）与 Becoming.Typicality（导入 Identification 与
+       Weighted；32 项定理／44 项声明）；不改已有模块
+Supplied premises / correspondence: 不加公理；各律所写者写在定理中：运行被列表所持、从一个配置出发运行不分开；所识的值可判定
+       （unparted_iff、leastBound_right、free_open）；两个值、自然数权重（Typicality）
+Evidence: scratch_build 对 main b34b8027（P114 之后）：Becoming.Parting 18 项定理、27 项声明，Becoming.Typicality 32 项、44 项，
+          根模块 Becoming 与其导入闭包（113 个核心模块）一同编译，无重名，公理报告全部为空，无警告；合并检查器回执待整合者的运行
+Boundary: 学习者读配置所识的值，不读动作；只在某步之后不分开时的静止之步没有陈述；给定世界时某学习者在每个运行上于某步都对恰当
+          那一步不分开（有限、已定的过程）没有陈述；典型只对两个值、以切比雪夫之界陈述；发生的历程典型不被推出；不含伦理谓词
+Integration: §8 的进一步证明“路径分支时”、状态行、Ren 的读法、第一部分的总陈述“认识”、界一项、§9 新增两行、术语表三行；
+       identification-where-bounded 的 next_delta 与 related；Becoming.lean 的导入与模块说明；check_becoming.py 的核心之列与范围；
+       Lean README 两行与层内导入；两项新记录
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Parting.after`、`Parting.before`、`Parting.joinAt`、`joinAt_before`、`joinAt_after` | **运行从某步起、在一步之前加一步、在一步连接两个运行。** 连接的运行到第 k 步是 `r`，此后是 `r'`，起点是 `r` 的起点 |
+| `Parting.PartAt`、`Parting.Unparted`、`Parting.RightAt` | 两个运行在某步分开：之前所识相同，该步不同；从 `s` 出发不分开：从 `s` 出发的每两个运行所识的是同一历程；学习者读所识的记录，在某步对 |
+| `not_right_on_both`、`not_parting_of_right` | **分开之处没有学习者在两者上都对**，无论它被给予什么；在从 `s` 出发的每个运行上从 `T` 起都对的学习者，使这些运行在 `T` 之后不分开 |
+| `unparted_iff` | 所识的值可判定时，不分开恰是没有一步分开 |
+| `Unparted.along` | **不分开沿运行保持**（经 `joinAt`） |
+| `course_statesBelow`、`leastBound_right` | **运行不分开之处界成立**：被 N 个配置的列表所持的运行，其所识的历程至多有 N 个状态；以最小的界读记录的学习者从 N + N − 1 起每步都对 |
+| `rest_earliest_runs` | 对过程亦恰好：没有学习者在 N = M + 2 个配置的每个过程的每个不分开的运行上于 N + N − 2 都对（经 `Law.realized_within` 与 `Identification.rest_earliest`） |
+| `states_agree`、`unparted_of_determined` | 一个动作的确定过程处处不分开：确定的律是实例 |
+| `free`、`freeRun`、`freeRun_course`、`free_unparted_const` | **自由分支**：每个配置都可接每个配置，每个历程都是一个运行的历程；分支不显于所识者不分开 |
+| `free_parts_after`、`free_open`、`free_never_right`、`free_held`、`free_unbounded` | 每个记录之后两个运行分开，没有记录表明世界不会分开；每个学习者在每个记录之后在某个运行上于下一步不对，且有一个运行处处不对；自由分支在两个值上被两个配置的列表所持，其中一个运行的历程没有状态数的界 |
+| `Typicality.courses`、`mem_courses_iff`、`courses_length`、`weight`、`total_weight` | n 步的历程恰是 n 个值的列表，共 2ⁿ 个；以 p、q 计数，合起来重 (p + q)ⁿ |
+| `ahead`、`behind`、`square`、`cross`、`spread` | **平方偏差之和恰好**：x = q·a、y = p·b，加权的 x·x + y·y 之和是加权的 2·x·y 之和加 n·p·q·(p + q)ⁿ |
+| `two_mul_le`、`offBy`、`offBy_le`、`typical` | **多数历程显示权重**：偏差至少为 d 的历程之重乘 d 至多 n·p·q·(p + q)ⁿ |
+| `stepWeight`、`along_weight`、`transfer_weight`、`sum_courses_weight` | **权重就是 `Becoming.Weighted` 的**：自由分支以计数加权，沿历史复合的就是这里的权重，历史之和就是这里的总重 |
+
+**它回答了什么。** “这条线没有达到的”有三项。识的限度已由 §119 恰好给出：被列表所持的世界中，某个读识的学习者在每个配置上静止，恰当所识的未来相同的配置其目标从某步起一致（`Learnable.learnable_iff`）；这里不重证。有分支的世界：辨识一线的界，对每个过程，恰在运行于所识中不分开之处成立，确定的律是其中一例；分开之处，即使给定世界，下一个值也不由记录确定，界不约束历程（两个配置上的历程可以没有状态数的界）。有权重的世界：记录识历程，不识权重；计数（不加前提）给出多数历程的频率接近权重之比，权重之份额以 p·q / ((p + q)²·ε²·n) 随 n 下降；发生的那一个历程是否在多数之中，不被推出。
+
+**关于 Ren 的话（AI 的注，按 Ren 2026-10-15“if my earlier words are unreasonable, please keep note, not follow blindly”）。**
+1. **“the full "truth" can be derived, situationally”（2026-10-12）。** 按本节与 §97：所识的一切从有限的记录推出，限于状态数有界、运行在所识中不分开之处；分开处，下一个值不由任何先前所识者固定，连知道世界的也不能，只在被走时定下；权重不被记录确定，只经典型的历程显示，而典型不被推出。所以“完整的真”若包括分开处的路径与发生的历程，就不能推出；若指律（何者可能、各有多重），则可推出的限于所识、限于所走过的（`Becoming.Experiment`：动作造成什么只在配置返回之处由记录固定）。
+2. **“reality is always situational”（2026-10-15）。** 若“情境的”指每个识都在某个情境之内（语境的），这与核心一致（`Becoming.Readings`：语境中的诸识是一个世界的关系项）。若指每个情境的状态数有界，这是关于每个世界的实质前提，不由零公理推出：核心中有没有界的世界，其中没有记录确定下一个值（`Learning.no_record_fixes_next`、`Parting.free_unbounded`）。核心不断言它，也不否定它；它对每个世界陈述其中可推出的。
+3. **“the core … covers the whole reality where "things and changes" exists, 0 axiom”。** 核心的规律对每个过程陈述（确定的、有分支的、有权重的），在这个意义上覆盖全部；覆盖不等于推出每个事实：在分开处与对发生的历程，核心推出的恰是什么不能被固定。
+4. **读法 1。** Ren 未把“按情境就是界”取为自己的；理论第 8 节的读法一项已改为把它作为 AI 的读法，连同上面的限定，交 Ren。
+
+**读法（AI 的，待 Ren）。** 所识的一切按情境推出，限于运行不分开之处；分开处的分支只在被走时定下，这是开放的未来在辨识中的形式；把权重读作发生的机会，是在计数之上加“发生的历程是典型的”这一前提，概率的读法正在于此。
+
+**作者反审。**
+1. **已知的结果。** 分开之处无学习者两者都对，是不可区分论证；自由分支上的对角是 `Becoming.Learning` 的对角；典型是二项分布的切比雪夫不等式（伯努利的弱大数定律）。增量是：在核心中不用公理地陈述，确定的律与有分支的过程在“运行不分开”这一条件下统一，权重接到 `Becoming.Weighted`，并标出发生的历程典型这一不被推出的前提。
+2. **恰好与否。** `not_right_on_both` 对每一步、每个学习者成立；反方向（给定世界的学习者在每个运行上于不分开之步都对）需要从记录选出一个运行的值，对有限、已定的过程可构造，没有陈述。只在某步之后不分开时，界给出的静止之步依赖那一步，没有陈述。
+3. **典型的强度。** 切比雪夫之界随 n 线性下降；指数的集中（Chernoff）没有陈述；多于两个值与实数权重没有陈述（实数在外围）。
+4. **名字。** `Parting`、`PartAt`、`Unparted`、`joinAt`、`free`、`Typicality`、`spread`、`typical`、`offBy` 都是结构性的名字。
+5. **证明。** 不用 `simp`、`omega`；`ac_rfl` 引入 propext 与 Quot.sound，`Nat.add_mul`、`Nat.mul_assoc`、`Nat.mul_left_comm` 引入 propext，改用核心已有的 `add_mul_split`、`mul_assoc_nat` 与本模块的 `left_comm`。`Unparted.along` 用连接运行，不用函数外延性。
+
+**检查。** 在暂存区对 main b34b8027（P114 之后）编译：`Becoming.Parting` 18 项定理、27 项声明，`Becoming.Typicality` 32 项、44 项，根模块与其导入闭包（113 个核心模块）一同编译；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
 ## English summary
 
@@ -10410,3 +10470,8 @@ The author's counterreview concedes three points. The necessary side follows dir
   3. Whether `SPINE-INTEGRATION.py` should match run modules by full name and adopt the table's copy rule.
 
   Applications stay as they are. Working artifacts and snapshots stay as evidence. Nothing is deleted.
+**Identification where runs part, and typicality by counting (P116, 16 October 2026).** Ren's fourth message of 15 October: “not sure what's the reading 1, but reality is always situational … "What this line doesn’t reach" is also worth doing … if my earlier words are unreasonable, please keep note, not follow blindly” ([source](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)). The identification line is stated for determined laws; what it did not reach was the registration's limit, already exact in `Becoming.Learnable` (section 119, cited, not reproved), and worlds that branch or carry weights. Section 138 adds two core modules, with no axiom and no premise beyond what each law names.
+- **`Becoming.Parting` (18 theorems).** Two runs part at a step where they register the same before it and differ at it; at a parting no learner, whatever it is given, the world included, is right on both (`not_right_on_both`). Not parting is kept along runs (`Unparted.along`, by joining runs at a step); so on a run from an unparted configuration held by N configurations the registered course has at most N states, and the learner by the least bound is right from N + N − 1 on (`course_statesBelow`, `leastBound_right`), exact for processes as for laws (`rest_earliest_runs`). A determined process with one move parts nowhere; so does a branching that does not show in what is registered. Under free branching every course is a run's course: after every record two runs part, every learner has a run on which it is never right, and a run on two configurations has a course with no bound on its states (`free_parts_after`, `free_never_right`, `free_unbounded`).
+- **`Becoming.Typicality` (32 theorems).** With two values counted by natural weights p and q, the weighted squared deviations (q·a − p·b)² of the courses of n steps add up exactly to n·p·q·(p + q)ⁿ (`spread`), so the courses deviating by at least d weigh, times d, at most that (`typical`): the counting form of the weak law of large numbers, with no premise. The weights are `Becoming.Weighted`'s counting weights of free branching (`sum_courses_weight`). That the course which happens is typical is not derived: every course is a run.
+- **Notes on Ren's words (the AI's).** “The full truth can be derived, situationally” holds for what is registered, as far as runs do not part; at a parting the next value is fixed by nothing registered before it, not even for a knower of the world, and weights show only through typical courses, typicality not being derived. “Reality is always situational” agrees with the core if it means every registration is within a context; if it means every situation has a bound on its states, it is a substantive premise that no axiom-free derivation gives, since the core has worlds with no bound. The core covers every world in that its laws are stated for every process; it does not derive every fact, and at partings it derives exactly what cannot be fixed. Ren did not adopt reading 1 (“situationally means the bound”); it stays the AI's reading with these qualifications.
+- **Boundaries.** The learner reads configurations, not moves; the rest step where runs part only before some step, and the exact converse with a learner given the world, are not stated; typicality is stated for two values with Chebyshev's bound only. Scratch build on main b34b8027 (after P114): empty axiom reports, the root and its 113-module core closure compiled. Not yet independently reviewed.

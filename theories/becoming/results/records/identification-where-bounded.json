@@ -186,7 +186,7 @@
     },
     {
       "zh": "按否证学习者的静止之步是立方阶的：在 N = 2m + 3 个位置的环上的二值否定（oddCycle，至多 N 个状态）上，它在第 (N³ − N)/4 步被否证（learner_refuted_late），周期 N 之前每个偶数位移花去整整一圈；所以在至多 N 个状态的二值历史上，(N³ − N)/4 之前没有一步使它处处静止（learner_rest_cubic）。",
-      "en": "The learner by refutation rests at a cubic step: on the two-valued negation along a cycle of N = 2m + 3 places (oddCycle), with at most N states, it is refuted at step (N³ − N)/4 (learner_refuted_late), each even shift before the period N costing a whole turn; so no step before (N³ − N)/4 bounds its rest on every two-valued history with at most N states (learner_rest_cubic).",
+      "en": "The learner by refutation rests at a cubic step: on the two-valued negation along a cycle of N = 2m + 3 places (oddCycle), with at most N states, it is refuted at step (N³ − N)/4 (learner_refuted_late), each even shift before the period N taking a whole turn; so no step before (N³ − N)/4 bounds its rest on every two-valued history with at most N states (learner_rest_cubic).",
       "declarations": [
         "Becoming.Identification.oddCycle",
         "Becoming.Identification.oddCycle_below",
@@ -250,12 +250,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Identification have empty axiom reports (receipt 20261013T094743.528770Z, some declarations under former names; the current bytes of Identification, Description and Unfolding bound by 20261013T204910.042715Z), and the checker verifies core purity. Author counterreview, with the scope of the independent review, in the integration note."
   },
   "next_delta": {
-    "zh": "Ren 对“按情境就是界”与有限名读法的判断。",
-    "en": "Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
+    "zh": "Ren 对有限名读法的判断，及对“按情境”连同其限定（推出到运行不分开为止，权重只经典型的历程显示）的判断。",
+    "en": "Ren's judgment on the finite-name reading, and on reading ‘situationally’ with its qualification (derived as far as runs do not part, weights showing only through typical courses)."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有记录确定下一个值；学习者静止这一点不被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。",
-    "en": "Ren's speculation on 12 October 2026, ‘the full \"truth\" can be derived, situationally, including the cognition/controller part’, and the later ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’: this answers the last two questions Description, Diagonal and Context left open, deriving the law from a finite record and naming with no axiom the classes of the split that makes sense. Learning by refutation gives the side with no bound (no record fixes the next value; the learner's coming to rest is unrefuted); this gives the side with the bound given, its exact boundary, and the step by which the learner not given the bound rests, which the bound gives and the learner's record does not show. Known results: Fine and Wilf's two periods (1965), Moore's finite experiments (1956), Gold's identification in the limit (1967), here reproved in the core with no axiom and connected. Readings (the AI's, pending Ren): ‘situationally’ is the bound; a finite record is a projection, which the bound makes lose nothing of the course; the controller is inside the bounded world, and only a world answering it defeats it, which exceeds the bound; with a bound, a class's name is its finite future; being given the bound and not being given it differ in when the learner is right and whether it can know it is, not in whether it ends right."
+    "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有记录确定下一个值；学习者静止这一点不被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。Ren 2026-10-15 未把“按情境就是界”取为自己的（“not sure what's the reading 1, but reality is always situational”）；这一读法的限定见 identification-where-runs-part 与 typicality-by-counting。",
+    "en": "Ren's speculation on 12 October 2026, ‘the full \"truth\" can be derived, situationally, including the cognition/controller part’, and the later ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’: this answers the last two questions Description, Diagonal and Context left open, deriving the law from a finite record and naming with no axiom the classes of the split that makes sense. Learning by refutation gives the side with no bound (no record fixes the next value; the learner's coming to rest is unrefuted); this gives the side with the bound given, its exact boundary, and the step by which the learner not given the bound rests, which the bound gives and the learner's record does not show. Known results: Fine and Wilf's two periods (1965), Moore's finite experiments (1956), Gold's identification in the limit (1967), here reproved in the core with no axiom and connected. Readings (the AI's, pending Ren): ‘situationally’ is the bound; a finite record is a projection, which the bound makes lose nothing of the course; the controller is inside the bounded world, and only a world answering it defeats it, which exceeds the bound; with a bound, a class's name is its finite future; being given the bound and not being given it differ in when the learner is right and whether it can know it is, not in whether it ends right. Ren, 15 October 2026, did not take ‘situationally means the bound’ as theirs (“not sure what's the reading 1, but reality is always situational”); the reading's qualification is in identification-where-runs-part and typicality-by-counting."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
   "aliases": [
@@ -422,6 +422,13 @@
       "detail": {
         "zh": "其“学习”一项说按否证学习者静止这一点不被否证；held_learner_rests 给出这一步，是列表长度的函数，学习者自己没有它。",
         "en": "Its learning clause says the learner by refutation's coming to rest is unrefuted; held_learner_rests states the step, a function of the list's length, which the learner does not have."
+      }
+    },
+    {
+      "id": "identification-where-runs-part",
+      "detail": {
+        "zh": "这里对确定的律陈述；那里对每个过程，恰在运行不分开之处，确定的律是实例。",
+        "en": "Here for determined laws; there for every process, exactly where its runs do not part, determined laws being the instance."
       }
     }
   ],
@@ -895,6 +902,10 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Identification.lean（P83g：新增一节 CubicRest（oddCycle、learner_refuted_late、learner_rest_cubic 及其沿各转的推演，34 项声明：按否证学习者的静止之步是立方阶的）；原有陈述不变）；THE-THEORY-OF-BECOMING.md（整合 I3e：§9 中 Decidedness 与桥接两行写入新律与定理数，新增 OrganizationCorrespondence 一行，实例模块一句列出它；P83g：辨识两行与开放项写入立方阶的静止之步与一个世界之内的恰好性，Identification 与 Distinguishing 定理数更新；总数改据新回执）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Identification.lean (P83g: a section CubicRest added (oddCycle, learner_refuted_late, learner_rest_cubic and their walk through the turns, 34 declarations: the refutation learner's rest step is cubic); earlier statements unchanged); THE-THEORY-OF-BECOMING.md (integration I3e: in §9 the Decidedness and Bridge rows name the new laws and counts, an OrganizationCorrespondence row added and the instance-module sentence lists it; P83g: the identification rows and open items gain the cubic rest step and the exactness within one world, the Identification and Distinguishing counts updated; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16 P116：next_delta 改为有限名读法与“按情境”连同其限定；correspondence 记 Ren 2026-10-15 未取读法一；related 新增 identification-where-runs-part；研究 §140。原 next_delta：“Ren 对“按情境就是界”与有限名读法的判断。”第十六条规律英文的“costing a whole turn”改为“taking a whole turn”（结构性用语）。",
+      "en": "16 October 2026, P116: next_delta now asks for the finite-name reading and ‘situationally’ with its qualification; correspondence notes that Ren did not take reading 1 on 15 October; related gains identification-where-runs-part; study section 140. Former next_delta: “Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading.” The sixteenth law's ‘costing a whole turn’ now reads ‘taking a whole turn’ (a structural word)."
     }
   ],
   "text_versions": [
