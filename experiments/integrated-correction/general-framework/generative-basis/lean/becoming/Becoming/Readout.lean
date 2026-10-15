@@ -18,6 +18,11 @@ when an observable and a law of change can still be read from what it keeps.
   reduction merges (`judges_iff_lumpedOn`); the judge answers with the first listed member of each
   reduced value, so no choice is used. So no judge reads through a reduction that merges two
   members the observable tells apart (`no_judge_of_merged`).
+* **Readings through parts.** Where every reading of a family reads a configuration only through
+  its parts and each part is read directly by some reading, two configurations agree under every
+  reading exactly where they agree at every part (`agree_iff_parts`). So a replacement whose
+  readings are the readings of a configuration supplied from it agrees with the original under
+  every reading exactly where it supplies every part (`supplied_agree_iff_parts`).
 * **Futures through a reduction.** For a law that need not be determined, the law read through
   a reduction (`image`) takes from each reduced value exactly the words the configuration can
   take, for every configuration, exactly when configurations the reduction merges can take the
@@ -289,5 +294,43 @@ theorem no_judge_of_merged {family : List S} {π : S → K} {f : S → V} {s s' 
     (mem : s ∈ family) (mem' : s' ∈ family) (merged : π s = π s') (apart : f s ≠ f s') :
     ¬ ∃ judge, Judges family π f judge :=
   fun ⟨_, judges⟩ => apart (lumpedOn_of_judges judges s s' mem mem' merged)
+
+/-! ## Readings through parts -/
+
+section Parts
+
+universe y z
+
+variable {P : Type v} {G : P → Type w} {C : Type x} {W : C → Type y}
+
+/-- Every reading of a family reads a configuration only through its parts: configurations that
+agree at every part are read alike. -/
+def ThroughParts (part : S → (p : P) → G p) (read : (c : C) → S → W c) : Prop :=
+  ∀ c s s', (∀ p, part s p = part s' p) → read c s = read c s'
+
+/-- `use p` reads part `p` directly: configurations it reads alike agree at that part. -/
+def ReadsDirectly (part : S → (p : P) → G p) (read : (c : C) → S → W c) (use : P → C) : Prop :=
+  ∀ p s s', read (use p) s = read (use p) s' → part s p = part s' p
+
+/-- **Agreement under every reading is agreement at every part**, where every reading reads only
+through the parts and each part is read directly by some reading. -/
+theorem agree_iff_parts {part : S → (p : P) → G p} {read : (c : C) → S → W c} {use : P → C}
+    (through : ThroughParts part read) (direct : ReadsDirectly part read use) {s s' : S} :
+    (∀ c, read c s = read c s') ↔ ∀ p, part s p = part s' p :=
+  ⟨fun all p => direct p s s' (all (use p)), fun parts c => through c s s' parts⟩
+
+/-- **A replacement agrees with the original under every reading exactly where it supplies every
+part**: where each reading of the replacement at `t` is the reading of the configuration supplied
+from `t`, it agrees with the original `s` under every reading exactly where the supplied
+configuration agrees with `s` at every part. -/
+theorem supplied_agree_iff_parts {T : Type z} {part : S → (p : P) → G p}
+    {read : (c : C) → S → W c} {use : P → C} {replaced : (c : C) → T → W c} {supply : T → S}
+    (through : ThroughParts part read) (direct : ReadsDirectly part read use)
+    (supplies : ∀ c t, replaced c t = read c (supply t)) {t : T} {s : S} :
+    (∀ c, replaced c t = read c s) ↔ ∀ p, part (supply t) p = part s p :=
+  ⟨fun all => (agree_iff_parts through direct).mp fun c => (supplies c t).symm.trans (all c),
+   fun parts c => (supplies c t).trans ((agree_iff_parts through direct).mpr parts c)⟩
+
+end Parts
 
 end Becoming.Readout
