@@ -65,7 +65,10 @@ for stem, entries in mods.items():
                 'records': sorted({c for p in paths for c in cited.get(p, [])}),
                 'mathlib': any(i.startswith('Mathlib') for e in entries for i in e['imports']),
                 'sorry': any(e['sorry'] for e in entries), 'axiom': any(e['axiom'] for e in entries),
-                'doc': entries[0]['doc'], 'names': entries[0]['names'][:400], 'defs': entries[0]['defs'][:200]})
+                'doc': entries[0]['doc'], 'names': entries[0]['names'][:400], 'defs': entries[0]['defs'][:200],
+                # Each path's own reading: files sharing a stem in different folders can be different modules.
+                'by_path': {e['path']: {'imports': e['imports'], 'theorems': e['theorems'], 'names': e['names'][:400],
+                                        'mathlib': any(i.startswith('Mathlib') for i in e['imports'])} for e in entries}})
 json.dump(out, open(sys.argv[1], 'w'), ensure_ascii=False, indent=1)
 print(len(out), 'stems;', sum(len(o['paths']) for o in out), 'paths;', sum(o['theorems'] for o in out), 'theorems')
 fam = collections.Counter(o['family'] for o in out)

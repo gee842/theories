@@ -11,6 +11,9 @@ for o in m:
     o['live']=[p for p in o['paths'] if not any(SNAP.match(seg) for seg in p.split('/')[:-1])]
     # The canonical path: a module's own folder before a review, landing or development copy of it.
     o['live'].sort(key=lambda p: (p.startswith(('_process/', 'drafts/')) or '/development/' in p, p))
+    # Read the canonical file's own imports, theorems and names, not those pooled over files sharing its stem.
+    own=o['by_path'][(o['live'] or o['paths'])[0]]
+    o['imports'], o['theorems'], o['names'], o['mathlib'] = own['imports'], own['theorems'], own['names'], own['mathlib']
 receipt=json.load(open(L+'becoming/becoming-verification.json'))
 layer={mm['module']:mm.get('layer') for mm in receipt['modules']}
 run_by_stem={mod.split('.')[-1]:mod for mod in receipt['source_paths']}
