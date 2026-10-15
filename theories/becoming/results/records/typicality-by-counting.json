@@ -69,8 +69,8 @@
   ],
   "does_not_show": [
     {
-      "zh": "发生的历程是典型的：每个历程都是自由分支的一个运行，全是一的历程亦然；把权重读作机会者加上这一前提。",
-      "en": "That the course which happens is typical: every course is a run of free branching, the all-ones course among them; reading weights as chances adds this premise.",
+      "zh": "发生的历程是典型的：每个历程都是自由分支的一个运行，全是一的历程亦然；权重读作情境之数时，哪个情境发生固定历程，不由计数（weights-count-situations）。",
+      "en": "That the course which happens is typical: every course is a run of free branching, the all-ones course among them; with weights read as numbers of situations, which situation happens fixes the course, not a count (weights-count-situations).",
       "kind": "correspondence"
     },
     {
@@ -92,12 +92,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T173702.509759Z): the 44 declarations of Becoming.Typicality, 32 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 140; not independently reviewed."
   },
   "next_delta": {
-    "zh": "指数之界的集中与多于两个值；外围中实数权重作为实例；Ren 对读法的判断（概率是计数加上“发生的历程是典型的”这一前提）。",
-    "en": "Concentration with exponential bounds, and more than two values; real weights in the periphery as an instance; Ren's judgment on the reading (probability as counting plus the premise that the course which happens is typical)."
+    "zh": "指数之界的集中与多于两个值；外围中实数权重作为实例。",
+    "en": "Concentration with exponential bounds, and more than two values; real weights in the periphery as an instance."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-15：“\"What this line doesn’t reach\" is also worth doing”，其中之一是有概率的世界。已知的结果：二项分布的切比雪夫不等式（伯努利的弱大数定律）。这里在核心中不用公理地给出，接到 Becoming.Weighted 的计数权重，并标出不被推出的前提。读法（AI 的，待 Ren）：权重是在历程之间计数的，不是一个历程所识的；记录显示权重，恰在发生的历程典型之处，而计数只说多数典型；概率的读法正在于加上这一前提。",
-    "en": "Ren, 15 October 2026: “\"What this line doesn’t reach\" is also worth doing”, worlds with probability among it. Known result: Chebyshev's inequality for the binomial (Bernoulli's weak law of large numbers). Here it is given in the core with no axiom, joined to the counting weights of Becoming.Weighted, and the premise not derived is marked. Readings (the AI's, pending Ren): weights are counted across courses, not registered in one; a record shows the weights exactly where the course that happens is typical, and counting says only that most are; the reading of probability lies in adding that premise."
+    "zh": "Ren 2026-10-15：“\"What this line doesn’t reach\" is also worth doing”，其中之一是有概率的世界。已知的结果：二项分布的切比雪夫不等式（伯努利的弱大数定律）。这里在核心中不用公理地给出，接到 Becoming.Weighted 的计数权重，并标出不被推出的前提。原先的 AI 读法“概率是计数加上发生的历程典型这一前提”已由 Ren 的说明取代。Ren 2026-10-16 对此：“we are describing what everything obeys, but at every moment, the actual change depends on the situation … the situation makes it true”。读法（AI 对 Ren 的话的读法，Ren 同日已取）：自然数权重是走每一步的情境之数，大数定律计数情境，哪个情境发生由情境固定，不是计数（weights-count-situations）。",
+    "en": "Ren, 15 October 2026: “\"What this line doesn’t reach\" is also worth doing”, worlds with probability among it. Known result: Chebyshev's inequality for the binomial (Bernoulli's weak law of large numbers). Here it is given in the core with no axiom, joined to the counting weights of Becoming.Weighted, and the premise not derived is marked. The AI's first reading, “probability is counting plus the premise that the course which happens is typical”, is replaced following Ren's clarification. Ren, 16 October 2026, of this: “we are describing what everything obeys, but at every moment, the actual change depends on the situation … the situation makes it true”. Read so (the AI's reading of Ren's words, which Ren took the same day): natural weights are the numbers of situations taking each step, the law of large numbers counts situations, and which situation happens is fixed by the situation, not by a count (weights-count-situations)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
   "aliases": [
@@ -238,13 +238,20 @@
         "zh": "其 next_delta 中的概率的读法：计数给出多数历程的频率接近权重之比。",
         "en": "The probabilistic reading in its next_delta: counting gives that the frequencies of most courses are near the ratio of the weights."
       }
+    },
+    {
+      "id": "weights-count-situations",
+      "detail": {
+        "zh": "权重是走每一步的情境之数；大数定律计数情境。",
+        "en": "Weights are the numbers of situations taking each step; the law of large numbers counts situations."
+      }
     }
   ],
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "dc7734f567a27ae3835adf4b69722c0bbe90b10627423059cd4739ab74b2c950",
+      "sha256": "2af8c3eafb4cbb791efb856fba9503c6f1fb4ba695d09fd20597e3e95b492f4d",
       "declarations": [
         "Becoming.Typicality.left_comm",
         "Becoming.Typicality.ones",
@@ -341,7 +348,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "role": "proof",
-      "sha256": "c04feeec04bdb6bdedcb1831c87b92a17ab14e294164d663d459f02aa9ccbefc",
+      "sha256": "d5c0a564062a3c5a98f5658176991e1ad72692b5387b7ca37e73e9ecc7cde9e1",
       "declarations": [
         "Becoming.Parting.freeRun",
         "Becoming.Parting.free_parts_after"
@@ -350,13 +357,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9cbdaf0dd8d951153546681432598bd8d6a6bff83a4036f126bf516ffbe39009",
+      "sha256": "4fa415c72b068f6693aa34e450eb3e8d29de3f6f2223e8a9fa1b918b14d2bdd7",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "abf8718845a33c9734bb97509b95fc6ba7cab7f85dc9d4adc89cb409994dd4ca",
+      "sha256": "dd2aff28f02d53397f05c8fe2f3dba2784bea54e6c89d13017f9854fbf21736e",
       "declarations": []
     },
     {
@@ -369,6 +376,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
       "role": "receipt",
       "sha256": "07766c064414edcf59eba809d0948ec08900a62f892b4f7dad4875b08a1873a8",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md",
+      "role": "provenance",
+      "sha256": "389f7b68cc90e2b62afb8a360494fb1601572d22490563edc056ca1cf87ca058",
       "declarations": []
     }
   ],
@@ -427,6 +440,14 @@
     {
       "zh": "2026-10-16：新增，按 Ren 2026-10-15 的“\"What this line doesn’t reach\" is also worth doing”（P116）；研究 §140。",
       "en": "16 October 2026: added, following Ren's “\"What this line doesn’t reach\" is also worth doing” of 15 October (P116); study section 140."
+    },
+    {
+      "zh": "2026-10-16 P117：按 Ren 2026-10-16 的说明（“the situation makes it true”）以“机会是同类情境之数”取代读法“概率是计数加上发生的历程典型这一前提”，correspondence、next_delta 与 does_not_show 第一项改写；related 新增 weights-count-situations；Typicality.lean 只改模块说明中的读法，声明不变，落地时重新绑定回执；研究 §144。原 does_not_show 第一项：“……把权重读作机会者加上这一前提。”",
+      "en": "16 October 2026, P117: following Ren's clarification of 16 October (“the situation makes it true”), the reading “probability is counting plus the premise that the course which happens is typical” is replaced by “a chance is a number of situations of a kind”; correspondence, next_delta and the first does_not_show item rewritten; related gains weights-count-situations; Typicality.lean changes only the reading in its module header, no declaration changes, and the receipt is rebound at landing; study section 144. The former first does_not_show item ended “reading weights as chances adds this premise”."
+    },
+    {
+      "zh": "2026-10-16：Ren 取了这些读法（“yes, i take those readings”）；correspondence 标为 Ren 已取，next_delta 去掉“Ren 对读法的判断”；研究 §144。原文：“读法（AI 对 Ren 的话的读法，待 Ren）”。",
+      "en": "16 October 2026: Ren took these readings (“yes, i take those readings”); correspondence marks them as taken and next_delta drops Ren's judgment on the readings; study section 144. Former wording: “Readings (the AI's reading of Ren's words, pending Ren)”."
     }
   ],
   "text_versions": []

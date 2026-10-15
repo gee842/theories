@@ -107,6 +107,7 @@ import Becoming.Sensitivity
 import Becoming.Courses
 import Becoming.Parting
 import Becoming.Typicality
+import Becoming.Situations
 import Becoming.Propagation
 
 /-!
@@ -1027,6 +1028,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   weigh, times d, at most that, out of (p + q)^n: the counting form of the law of large numbers.
   The weights are `Becoming.Weighted`'s counting weights of free branching. That the course which
   happens is typical is not derived: every course is a run.
+* `Becoming.Situations` (L4): what natural weights count, with no premise. Where each step is
+  taken in as many situations as its weight, the law whose moves are the situations is
+  determined, and a law whose steps are those of positive weight is it with the situation
+  forgotten. Summing any reading over the finer courses is summing it over the courses, each
+  counted by its weight, so the finer courses number the sum over histories. On two values with
+  `p` and `q` situations, the weight of a course is the number of situations that take it, and
+  of the `(p + q)^n` finer courses those deviating by at least `d` number, times `d`, at most
+  `n·p·q·(p + q)^n`: the law of large numbers counts situations. Which situation happens is not
+  a count.
 * `Becoming.Propagation` (L4): how much difference arrives, with no premise beyond what each law
   names. In two balanced flows a condition's gap changes across a step by exactly the difference
   given less the difference taken. An exchange is coupled to a level with strength at most `k`

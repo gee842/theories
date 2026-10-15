@@ -9138,7 +9138,6 @@ Integration: 不需核心运行；31 个模块都不在核心回执中
 **哈希。** 读这两个文件字节的记录有三项，都在读过改动（只有注释）后改绑，各加一条历史：trace-law-equivalence（GenerativeModel，集成引用）、guarded-program-question-recovery（ExplanatoryResumptionCases，反例引用）、residual-continuation-correspondence（ExplanatoryResumptionCases，证明引用；证明绑定移到新回执，ExplanatoryResiduals 仍绑定原回执）。其他提到这些路径的较早检查文件是旧字节的历史证据，保持原样。
 
 **边界。** 注记说某条脊柱声明陈述了模块的主定理，以何种关系；不说模块无用。`ContinuationRenewal.renewal_within_rank_plus_one_steps` 在继承模块中，属于脊柱运行。
-
 ## 143. 每个起源都经过门（整合 I4b 第一项）：单向的门律，LivingOrganization 接入
 
 2026-10-16。Ren 对 I4 归类表选择“Closest gaps first”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）。表把 LivingOrganization 读作待接入的律：对任意反应网络，终态出现的池或初始即在，或经某进入步进入；Becoming.Gated 只陈述未经门的步双向保持的量，单向的轨迹律未陈述（§139）。本节陈述它，并把 Gated 的旧律作为其情形。
@@ -9172,6 +9171,61 @@ Integration: §9 一行（Gated 的陈述与计数）；Becoming.lean 的模块�
 **边界与读法。** 门只定位改变或起源能从哪里进入，不说门控动作改变任何东西。LivingOrganization 的配方、准入反应与所选的池不对应任何实际化学的论断：闭合是所准入配方的已查性质。读法（AI 的，待 Ren）：反映即“后有则前有”，一个组织的池或早已在，或经一次进入而在。
 
 **下一步（I4b）。** Horizon（有限否证与前缀闭包，PrefixSafety、IdealWarrant），Lasting（有限分支的 König 提升，FiniteBranching），Selection（交换不变的服务恰当无并列，PluralRecords、TieBreaking；在 P110 落地之后）。
+
+## 144. 权重计数情境（P117）
+
+2026-10-16。Ren 对 §140 的两条 AI 读法（“分开处的分支只在被走时定下，这是开放的未来在辨识中的形式”；“把权重读作机会，要加上发生的历程典型这一前提”）回答：“i mean we are describing what everything obeys, but at every moment, the actual change depends on the situation. for example, we don't need to gravity for one to see if the logic holds, but in every planet gravity is different, so the whole evolution will also be different, just saying we are all one doesn't make it true, the situation makes it true”；对第二条：“not sure what your typical means, but can you see what to do with my clarification above?”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md)）。`Becoming.Weighted` 不说权重从何而来，`Becoming.Typicality` 不推出发生的历程典型。本节在第一部分之内、不加公理与前提地陈述：每一步以其自然数权重那么多的情境被走、每个情境固定这一步时，权重是什么。工作板上认领为 P117。
+
+```text
+Result(s): 新增 weights-count-situations；复用 typicality-by-counting（courses、extend、total、total_extend、total_add、
+           total_congr、weight、cross、square、offBy、typical、stepWeight、along_weight、transfer_weight）；
+           sum-over-histories-exact（counting、joinMap、openSteps、courses、Weights.along、Weights.transfer、Weights.sum_courses、
+           Weights.sum_joinMap、Weights.sum_map、Weights.sum_congr、Weights.mul_sum、mul_assoc_nat）；Becoming.Joint 的 Determined；
+           引用 losses-of-the-sum-over-histories（Interference.cancels）与 counting_transfer_iff 作界；
+           改写 identification-where-runs-part 与 typicality-by-counting 的读法（Ren 的说明）
+Delta: 新核心模块 Becoming.Situations（导入 Typicality；13 项定理／19 项声明）；Parting 与 Typicality 只改模块说明中的读法，
+       定理与声明不变
+Supplied premises / correspondence: 不加公理；自然数的步之权重、列出的动作与配置写在定理中（sum_finer、finer_count）；
+       两个值（situations_*）；按历程计数用到历程相等可判定（total_only、situations_of_course）
+Evidence: scratch_build 对 main 6c62e13e（P115 之后）：Becoming.Situations 13 项定理、19 项声明，Parting 18／27 与
+          Typicality 32／44 只改说明后重编译，公理报告全部为空，无警告；根模块见下“检查”；合并检查器回执待整合者的运行
+Boundary: 只陈述自然数权重；带符号的权重会相消，不是情境之数；按历程计数与大数定律只对两个值陈述；哪个情境实际发生
+          不是计数，不被推出；“情境”在这里是走一步的方式，Ren 的“情境”更广（哪个世界、它的局部之律）；不含伦理谓词
+Integration: 第 6 节新段落对（在运行分开一段之后）与该段读法的改写；§8 状态行、辨识的读法、路径分支时的开放项；
+       理论的完整陈述一条；界一项；第一部分的总陈述“认识”；§9 一行；术语表一行；Becoming.lean 的导入与模块说明；
+       check_becoming.py 的核心之列与范围；Lean README 一行与层内导入；一项新记录，两项记录的读法
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Situations.upto`、`sum_upto`、`sum_one` | 前 k 个数；常数读数在其上之和是 k 倍；计一之和是长度 |
+| `Situations.finerLaw`、`finerLaw_determined`、`finerLaw_step_iff` | **以情境为动作，律是确定的。** 情境 (a, m, k) 把 s 带到 m，当它是从 s 经 a 到 m 的 weight s a m 个情境之一；这个律是确定的，恰在步的权重为正处走这一步 |
+| `finerSteps`、`finer`、`coarse` | 从一个配置出发的情境、n 步的细历程、细历程忘掉情境所走的历程 |
+| `sum_finer` | **自然数权重计数情境。** 对每个列出动作与配置、以自然数为步之权重的过程，历程的任一读数在 n 步细历程上之和，是它在历程上、每个乘以其权重之和（一次对步数的归纳，经 `Weights.sum_joinMap`） |
+| `finer_count` | 细历程之数就是历史之和（经 `Weights.sum_courses`） |
+| `sum_courses_values` | `Becoming.Weighted` 中两个值的自由分支的历程，就是 `Becoming.Typicality` 的历程 |
+| `situations_count`、`mul_indicator`、`total_only`、`situations_of_course` | **一个历程的权重是走它的情境之数**：每步 p 个与 q 个情境时细历程共 (p + q)ⁿ 个；每个历程在历程之列中只出现一次 |
+| `far`、`weight_far`、`situations_typical` | **大数定律计数情境**：历程偏差至少为 d 的细历程之数乘 d 至多 n·p·q·(p + q)ⁿ（经 `Typicality.typical`） |
+
+**它回答了什么。** Ren 的说明分两层。其一，理论描述每样东西所遵从的：核心的每条定理对每个过程、世界与运行成立，不固定任何情境，就像逻辑不需要一个重力之值。其二，实际的变化依赖情境，情境使之为真：哪个世界、它的关系项与交换、起点与局部之律，固定实际的历程；不同的行星给出不同的演化。第二层对 §140 的两条读法各有一个回答。分开处：记录与所给的律都不固定走哪条路，情境固定它；“开放的未来”的读法撤回。这与 Ren 2026-10-12 已同意的读法一致（“there are no two realities”）：一段历史显示的律，连同保留的历史读，只容许这一段（`Run.keepHistory_shown`，§91）；本节补上计数的一面：以情境为动作，律是确定的（`finerLaw_determined`）。机会：自然数权重是走每一步的情境之数（`sum_finer`、`situations_of_course`），大数定律说同类情境中多数给出接近权重之比的频率（`situations_typical`）；哪个情境发生不是计数。所以陈述机会不需要“发生的历程典型”这一前提，它是同类情境之数；预言发生的那一个历程，则需要它的情境。
+
+**关于 Ren 的话（AI 的注，按 Ren 2026-10-15“if my earlier words are unreasonable, please keep note, not follow blindly”）。**
+1. **重力的例子。** 万有引力之律是所有行星共同遵从的，各行星表面的重力之值是情境的。例子在这个意义上成立：“we don't need gravity”指不需要它的值，不是不需要引力之律；引力之律本身属于“每样东西所遵从的”一边（若它是普遍的），而核心不推出它，它是一个经验的律，以一个过程给出。
+2. **“the situation makes it true”。** 在核心中，以情境为动作，律是确定的；一段历史显示的律只容许这一段。所以“实际的变化由情境固定”在表示上总能做到，不需要公理。它不说情境比记录或所给的律更少：分开处，固定下一个值的情境不在先前所识之中（`Parting.not_right_on_both`）。它也不说情境是不依语境的：带符号的权重会相消（`Interference.cancels`），语境中的识不总能粘成一个不依语境的赋值（`Becoming.Context`、`Becoming.Quantum`，以及进行中的 P112）；在这些地方，使之为真的情境必须包括读它的语境，不依语境的情境之数给不出这些统计。
+3. **“just saying we are all one doesn't make it true”。** 这与方法一致：一元是方法上的要求（AGENTS 与 NONDUAL-METHOD），不是推出特定事实的前提；核心的一元在于所有定理陈述同一展开，特定的真由情境给出。
+
+**读法（AI 对 Ren 的话的读法，待 Ren）。** 核心陈述每个情境所遵从的；实际的变化由情境使之为真；分支的律是一个确定的律忘掉了情境；机会是同类情境之数。§140 的两条读法由此取代；§140 保留原文作为历史。
+
+**Ren 的判断。** 2026-10-16，对报告本节结果、并重述上面读法的回答，Ren 说：“yes, i take those readings”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md)）。所以上面四条读法（核心陈述每个情境所遵从的；实际的变化由情境使之为真；分支的律是忘掉情境的确定的律，分开处由情境固定；机会是同类情境之数）是 Ren 取了的读法；“关于 Ren 的话”中的三条注仍是 AI 的注。有界时类的名是否读作它的有限的未来，仍待 Ren。
+
+**作者反审。**
+1. **已知的结果。** 以同等可能的情况之数读概率（拉普拉斯）、以微观状态之数读宏观的权重（玻尔兹曼），以及把非确定的系统表示为一个确定的系统在更细状态上的投影，都是已知的。增量是：在核心中不用公理，接到 `Becoming.Weighted` 的历史之和与 `Becoming.Typicality` 的大数定律，并且对每个过程（`sum_finer`），不只对两个值。
+2. **强度。** `sum_finer` 是对任一读数的推前，所以对每个过程都成立；“一个历程的权重是走它的情境之数”只对两个值陈述，因为它要每个历程在列表中只出现一次（`total_only`）；对任意过程，这要求列出的动作与配置无重复，没有陈述。
+3. **“情境”的范围。** 这里的情境是走一步的方式。Ren 的“情境”更广：哪个世界、它的局部之律（各行星的重力）。后者在核心中就是对过程的量化：每条定理对每个过程成立，所以一个世界的局部之律是哪一个过程；不需要新定理。
+4. **名字。** `Situations`、`finerLaw`、`finer`、`coarse`、`upto`、`far` 都是结构性的名字；“情境”取自 Ren 的话。
+5. **证明。** 不用 `simp`、`omega`；结合律用 `mul_assoc_nat`；`if_pos`、`if_neg` 与 `List.cons.inj`；`Nat.succ_mul` 与 `Nat.one_mul` 不引入公理（审计为空）。
+
+**检查。** 在暂存区对 main 6c62e13e（P115 之后）编译：`Becoming.Situations` 13 项定理、19 项声明，`Becoming.Parting` 18／27、`Becoming.Typicality` 32／44（只改说明）；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
 ## English summary
 
@@ -10608,7 +10662,7 @@ The author's counterreview concedes three points. The necessary side follows dir
   3. Whether `SPINE-INTEGRATION.py` should match run modules by full name and adopt the table's copy rule.
 
   Applications stay as they are. Working artifacts and snapshots stay as evidence. Nothing is deleted.
-**Identification where runs part, and typicality by counting (P116, 16 October 2026).** Ren's fourth message of 15 October: “not sure what's the reading 1, but reality is always situational … "What this line doesn’t reach" is also worth doing … if my earlier words are unreasonable, please keep note, not follow blindly” ([source](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)). The identification line is stated for determined laws; what it did not reach was the registration's limit, already exact in `Becoming.Learnable` (section 119, cited, not reproved), and worlds that branch or carry weights. Section 138 adds two core modules, with no axiom and no premise beyond what each law names.
+**Identification where runs part, and typicality by counting (P116, 16 October 2026).** Ren's fourth message of 15 October: “not sure what's the reading 1, but reality is always situational … "What this line doesn’t reach" is also worth doing … if my earlier words are unreasonable, please keep note, not follow blindly” ([source](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)). The identification line is stated for determined laws; what it did not reach was the registration's limit, already exact in `Becoming.Learnable` (section 119, cited, not reproved), and worlds that branch or carry weights. Section 140 adds two core modules, with no axiom and no premise beyond what each law names.
 - **`Becoming.Parting` (18 theorems).** Two runs part at a step where they register the same before it and differ at it; at a parting no learner, whatever it is given, the world included, is right on both (`not_right_on_both`). Not parting is kept along runs (`Unparted.along`, by joining runs at a step); so on a run from an unparted configuration held by N configurations the registered course has at most N states, and the learner by the least bound is right from N + N − 1 on (`course_statesBelow`, `leastBound_right`), exact for processes as for laws (`rest_earliest_runs`). A determined process with one move parts nowhere; so does a branching that does not show in what is registered. Under free branching every course is a run's course: after every record two runs part, every learner has a run on which it is never right, and a run on two configurations has a course with no bound on its states (`free_parts_after`, `free_never_right`, `free_unbounded`).
 - **`Becoming.Typicality` (32 theorems).** With two values counted by natural weights p and q, the weighted squared deviations (q·a − p·b)² of the courses of n steps add up exactly to n·p·q·(p + q)ⁿ (`spread`), so the courses deviating by at least d weigh, times d, at most that (`typical`): the counting form of the weak law of large numbers, with no premise. The weights are `Becoming.Weighted`'s counting weights of free branching (`sum_courses_weight`). That the course which happens is typical is not derived: every course is a run.
 - **Notes on Ren's words (the AI's).** “The full truth can be derived, situationally” holds for what is registered, as far as runs do not part; at a parting the next value is fixed by nothing registered before it, not even for a knower of the world, and weights show only through typical courses, typicality not being derived. “Reality is always situational” agrees with the core if it means every registration is within a context; if it means every situation has a bound on its states, it is a substantive premise that no axiom-free derivation gives, since the core has worlds with no bound. The core covers every world in that its laws are stated for every process; it does not derive every fact, and at partings it derives exactly what cannot be fixed. Ren did not adopt reading 1 (“situationally means the bound”); it stays the AI's reading with these qualifications.
@@ -10664,3 +10718,12 @@ This section covers the first. Each of the 31 earlier versions now names, on its
   - Horizon: finite refutation and prefix closure (PrefixSafety, IdealWarrant).
   - Lasting: König lifting (FiniteBranching).
   - Selection: PluralRecords and TieBreaking, after P110 lands.
+
+**Weights count situations (P117, 16 October 2026).** Of section 140's two AI readings (“at a parting the branch is settled only when taken, the form the open future takes in identification”; “reading weights as chances adds the premise that the course which happens is typical”), Ren wrote: “i mean we are describing what everything obeys, but at every moment, the actual change depends on the situation … just saying we are all one doesn't make it true, the situation makes it true”, and asked what to do with this for the second ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md)). Section 144 adds one core module, `Becoming.Situations` (13 theorems, no axiom, no premise beyond what each law names), on Weighted's and Typicality's definitions.
+- **With the situation as the move, the law is determined.** A step weighing k is taken in k situations; the law whose moves are the situations is determined and takes exactly the steps of positive weight (`finerLaw_determined`, `finerLaw_step_iff`). A law whose steps are those of positive weight is this law with the situation forgotten.
+- **Natural weights count situations.** For every process with listed moves and configurations and natural weights of steps, summing any reading of the courses over the finer courses of n steps is summing it over the courses, each times its weight (`sum_finer`), so the finer courses number the sum over histories (`finer_count`).
+- **The law of large numbers counts situations.** On two values with p and q situations a step there are (p + q)ⁿ finer courses, a course is taken by its weight of them (`situations_of_course`, each course occurring once, `total_only`), and those whose course deviates by at least d number, times d, at most n·p·q·(p + q)ⁿ (`situations_typical`). Which situation happens is not a count.
+- **Readings (the AI's reading of Ren's words, pending Ren).** The core states what every situation obeys; the situation makes the actual change true; a branching law is a determined law with the situation forgotten; a chance is a number of situations of a kind, so stating it needs no premise of typicality, while foretelling the course needs its situation. These replace section 140's two readings, whose text stays as history.
+- **Ren's judgment.** On 16 October, answering the report of this section's results, which restated these readings, Ren wrote “yes, i take those readings”. The four readings above are therefore Ren's; the three notes on Ren's words remain the AI's notes. Whether, with a bound, a class's name reads as its finite future is still for Ren.
+- **Notes on Ren's words (the AI's).** The law of gravitation is shared by all planets; the value of gravity on each is situational, so the example holds of the value. Representing the actual change as fixed by a situation needs no axiom, but where weights cancel or readings depend on context (`Interference.cancels`, `Becoming.Context`, `Becoming.Quantum`, P112 in progress), the situation must include the context of the reading: counts of context-free situations do not give those statistics. “Just saying we are all one doesn't make it true” agrees with the nondual method: oneness is a requirement of method, and particular truths come from the situation.
+- **Boundaries.** Natural weights only; counting per course and the law of large numbers for two values only (per course for every process needs listings without repetition); which situation is actual is not derived. Scratch build on main 6c62e13e: empty axiom reports. Not yet independently reviewed.
