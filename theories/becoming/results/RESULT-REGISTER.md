@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-203 migrated records: 199 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+206 migrated records: 202 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -155,6 +155,7 @@
 | `positive-ground-open-futures` | [可见未来中的确定正面根据与开放形态 / Certain positive ground with open forms in visible futures](records/positive-ground-open-futures.md) | theorem | recorded-checked |
 | `practical-judgment-g0-j` | [G0/J 下的一般实践判断 / Practical judgment under G0/J](records/practical-judgment-g0-j.md) | argument | reviewed-scoped |
 | `prefix-observation-loss` | [全部前缀问答仍可遗漏中途失续 / All prefix questions can still omit an intermediate loss](records/prefix-observation-loss.md) | theorem | recorded-checked |
+| `premises-read-off-the-exchange` | [从交换读出的前提 / Premises read off the exchange](records/premises-read-off-the-exchange.md) | theorem | recorded-checked |
 | `presupposition-scopes` | [自身之预设的两种辖域 / Two scopes of the self's presupposition](records/presupposition-scopes.md) | theorem | recorded-checked |
 | `process-and-frame-as-readings` | [过程与框架作为一个展开的读法 / Process and frame as readings of one unfolding](records/process-and-frame-as-readings.md) | theorem | recorded-checked |
 | `projection-carrying-a-law` | [承载规律的投影 / A projection carrying a law](records/projection-carrying-a-law.md) | theorem | recorded-checked |
@@ -179,6 +180,7 @@
 | `rest-with-refinement-counted` | [细分算作给予 / Refinement counted as a giving](records/rest-with-refinement-counted.md) | theorem | recorded-checked |
 | `retained-reference-joining-recovery` | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](records/retained-reference-joining-recovery.md) | theorem | recorded-checked |
 | `retrospective-source-binding` | [后得来源关系接通保留记录的绑定 / Later source learning binds retained records](records/retrospective-source-binding.md) | theorem | recorded-checked |
+| `returning-novelty-forgetting-on-levels` | [只用水平的回返、新与遗忘 / Returning, novelty and forgetting on the levels alone](records/returning-novelty-forgetting-on-levels.md) | theorem | recorded-checked |
 | `returning-where-the-course-branches` | [分支过程的返回 / Returning where the course branches](records/returning-where-the-course-branches.md) | theorem | recorded-checked |
 | `rising-and-falling-in-one-exchange` | [同一交换中的上升与下降 / Rising and falling in one exchange](records/rising-and-falling-in-one-exchange.md) | theorem | recorded-checked |
 | `risk-certificate-outcome-distinction` | [风险界限与实现结果的区别 / Risk bounds and realized outcomes](records/risk-certificate-outcome-distinction.md) | theorem | recorded-checked |
@@ -210,6 +212,7 @@
 | `transmission-is-inheritance-and-need` | [传递作为承继加所需之界 / Transmission as inheritance with a bounded need](records/transmission-is-inheritance-and-need.md) | theorem | recorded-checked |
 | `unanchored-incidence-collapse` | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](records/unanchored-incidence-collapse.md) | theorem | recorded-checked |
 | `unceasing-generation-needs-renewal` | [不息的生成需要更新 / Unceasing generation needs renewal](records/unceasing-generation-needs-renewal.md) | theorem | recorded-checked |
+| `unity-of-readings` | [一个展开在语境中的读法 / One unfolding, read in context](records/unity-of-readings.md) | theorem | recorded-checked |
 | `universal-practical-warrant` | [普遍实践权威的更强目标 / Stronger universal practical warrant target](records/universal-practical-warrant.md) | target | open |
 | `versioned-request-completion` | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](records/versioned-request-completion.md) | theorem | recorded-checked |
 | `whole-first-and-bounded-centers` | [整体优先，与以依存为界的中心 / The whole first, and centers bounded by dependence](records/whole-first-and-bounded-centers.md) | theorem | recorded-checked |
