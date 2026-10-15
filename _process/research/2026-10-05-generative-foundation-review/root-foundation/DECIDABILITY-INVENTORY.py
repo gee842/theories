@@ -275,6 +275,8 @@ PROOF_KIND = {
     **{n: 'find' for n in [
         'Readout.commonWitness_or_covered', 'Readout.no_common_report_iff', 'Readout.no_common_report_envelopes_iff']},
     'every_weighting_iff': 'indicate',
+    # 2026-10-14, the relation-first re-founding (Becoming.Novelty): finitely many steps checked, a failing one found
+    'upto_or_fails': 'find',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',

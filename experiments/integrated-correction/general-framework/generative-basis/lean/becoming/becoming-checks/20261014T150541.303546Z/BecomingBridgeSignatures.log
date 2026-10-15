@@ -1,0 +1,276 @@
+@Becoming.Closure.base : ∀ {X : Type u_1} {seed : X → Prop} {edge : X → X → Prop} {x : X},
+  seed x → Becoming.Closure seed edge x
+@Becoming.Closure.step : ∀ {X : Type u_1} {seed : X → Prop} {edge : X → X → Prop} {x y : X},
+  Becoming.Closure seed edge x → edge x y → Becoming.Closure seed edge y
+@Becoming.Closure.induction : ∀ {X : Type u_1} {seed : X → Prop} {edge : X → X → Prop} {motive : X → Prop},
+  (∀ (x : X), seed x → motive x) →
+    (∀ (x y : X), motive x → edge x y → motive y) → ∀ {x : X}, Becoming.Closure seed edge x → motive x
+@Becoming.reached_iff_closure : ∀ {X : Type u_1} {seed : X → Prop} {edge : X → X → Prop} {x : X},
+  WholeGroundCoverage.Reached seed edge x ↔ Becoming.Closure seed edge x
+@Becoming.cutReach_iff_closure : ∀ {X : Type u_1} {seed : X → Prop} {edge : X → X → Prop} {x : X},
+  UniversalEthics.CutCoverageAudit.Reach seed edge x ↔ Becoming.Closure seed edge x
+@Becoming.withinClosure_iff_closure : ∀ {X : Type} {rel : X → X → Prop} {f g : X},
+  Becoming.WithinClosure rel f g ↔ Becoming.Closure (fun x => x = f) rel g
+@Becoming.chain_iff_reach : ∀ {X : Type} {step : X → X → Prop} {p q : X},
+  EvaluatorGrounding.Chain step p q ↔ Becoming.Reach (Becoming.edgeProcess step) p q
+@Becoming.Frame.map_preserves_bundles : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {S' : Type u_1}
+  (F : Becoming.Frame S A C) (G : Becoming.Frame S' A C) (q : S → S'),
+  (∀ (s : S) (a : A) (t : S), F.P.step s a t → G.P.step (q s) a (q t)) →
+    (∀ (s : S) (c : C), F.realized s c → G.realized (q s) c) →
+      ∀ (root : S),
+        JointContinuationClassification.PreservesJointBundles (F.continuations root) (G.continuations (q root))
+@Becoming.Frame.lift_reflects_bundles : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {S' : Type u_1}
+  (F : Becoming.Frame S A C) (G : Becoming.Frame S' A C) (q : S → S'),
+  (∀ (s : S) (a : A) (r : S'), G.P.step (q s) a r → ∃ t, F.P.step s a t ∧ q t = r) →
+    (∀ (s : S) (c : C), G.realized (q s) c → F.realized s c) →
+      ∀ (root : S),
+        JointContinuationClassification.PreservesJointBundles (G.continuations (q root)) (F.continuations root)
+@Becoming.commonResponse_is_robust : ∀ {S R : Type} {A : Type u_1} (P : Generative.Process S A)
+  (safe : S → A → S → Prop) (goal : S → Prop) (response : R → List A) (B : S → Prop) (r : R),
+  Generative.InquirySufficiency.CommonResponse P safe goal response B r ↔
+    PracticalJudgment.Robust B (fun s r => Generative.InquirySufficiency.Completes P safe goal s (response r)) r
+@Becoming.robust_iff_commonResponse : ∀ {W H : Type} (live : W → Prop) (admissible : W → H → Prop) (a : H),
+  PracticalJudgment.Robust live admissible a ↔
+    Generative.InquirySufficiency.CommonResponse (Becoming.judgeProcess admissible) (fun x x_1 x_2 => True)
+      (fun x => True) (fun a => [a]) (Becoming.sees live) a
+@Becoming.guarantees_iff_completes : ∀ {S A : Type} (P : Generative.Process S A) (s : S) (a : A) (goal : S → Prop),
+  PracticalReach.Guarantees (fun a t => P.step s a t) a goal ↔
+    Generative.InquirySufficiency.Completes P (fun x x_1 x_2 => True) goal s [a]
+@Becoming.liveStep_iff_enabled : ∀ {S A : Type} (step : S → A → S → Prop) (s : S) (a : A),
+  CorrectionInfrastructure.LiveStep step s a ↔ Generative.Enabled { step := step } s a
+@Becoming.after_observe_iff : ∀ {S : Type u_1} {Q : Type u_2} {k : Nat} (obs : S → Q → Fin k) (B : S → Prop) (q : Q)
+  (o : Fin k) (t : S),
+  Generative.InquirySufficiency.After Becoming.observe (fun s q x => obs s q) B q o t ↔ B t ∧ obs t q = o
+@Becoming.encode_inj : ∀ {a b : Bool}, Becoming.encode a = Becoming.encode b → a = b
+@Becoming.mem_filter : ∀ {α : Type} (p : α → Bool) (x : α) (l : List α), x ∈ List.filter p l ↔ x ∈ l ∧ p x = true
+Becoming.beq_true_iff : ∀ (x b : Bool), (x == b) = true ↔ x = b
+@Becoming.revise_is_after : ∀ {Q : Type} (hs : List (Generative.StandardsBridge.Rule Q)) (q : Q) (b : Bool)
+  (h : Generative.StandardsBridge.Rule Q),
+  h ∈ Generative.StandardsBridge.revise hs (q, b) ↔
+    Generative.InquirySufficiency.After Becoming.observe (fun g q x => Becoming.encode (g q)) (fun x => x ∈ hs) q
+      (Becoming.encode b) h
+@Becoming.g0_iff : ∀ {S A C : Type} (F : Becoming.Frame S A C) (living : C → Prop) (positive : S → C → Prop),
+  Becoming.G0 F living positive ↔ GenerativeComparison.G0 (F.inventory living) positive
+@Becoming.extension_iff : ∀ {S A C : Type} (F : Becoming.Frame S A C) (living : C → Prop) (s t : S),
+  Becoming.Extension F living s t ↔ GenerativeComparison.GenerativeExtension (F.inventory living) s t
+@Becoming.comparison_iff : ∀ {S A C : Type} (F : Becoming.Frame S A C) (living : C → Prop) (Better : S → S → Prop),
+  Becoming.Comparison F living Better ↔ GenerativeComparison.ComparisonPrinciple (F.inventory living) Better
+@Becoming.securesPositiveGround_iff : ∀ {C H R : Type} (admitted : R → H → Prop) (before positive : H → C → Prop)
+  (r : R),
+  Becoming.SecuresPositiveGround admitted before positive r ↔
+    PositionedPositiveReason.SecuresPositiveGround admitted before positive r
+@Becoming.positionedArticulation_iff : ∀ {C Pos H R : Type} (access : Pos → R → Prop) (admitted : R → H → Prop)
+  (before positive : H → C → Prop) (Reason : Pos → R → Prop),
+  Becoming.PositionedArticulation access admitted before positive Reason ↔
+    PositionedPositiveReason.PositionedArticulation access admitted before positive Reason
+@Becoming.Conditions.living_iff_relational : ∀ {S A Pos F Cond : Type} {P : Generative.Process S A}
+  (K : Becoming.Conditions S F Cond) (r : Becoming.Run P) (own sig : Pos → F × Nat → Prop) (e : F × Nat),
+  (K.valuation r own sig).living e ↔ (RenewalComparison.relationalInventory fun x => K.along r).realized () e
+@Becoming.Ranking.wholeRun_iff : ∀ {W F Cond : Type} (U : W → RelationalRenewal.Unfolding F Cond) (w : W) (e : F × Nat),
+  Becoming.Ranking.wholeRun U w e ↔ (RenewalComparison.relationalInventory U).realized w e
+Becoming.Ranking.undisturbed_eq : ∀ (L : RelationalRenewal.Law) (t : Nat),
+  Becoming.Ranking.undisturbed L t = RenewalComparison.undisturbed L t
+@Becoming.inventory_g0_of_unrestricted : ∀ {H Q F Pos : Type} (inventory : GenerativeComparison.Inventory H Q)
+  {sig : Pos → Nat → F → Prop},
+  Becoming.Unrestricted sig →
+    ∀ (formation : Q → F) (step : Q → Nat),
+      GenerativeComparison.G0 inventory fun h q =>
+        inventory.generative q ∧ inventory.realized h q ∧ ∀ (p : Pos), sig p (step q) (formation q)
+@Becoming.relevance_inventory_iff : ∀ {S A Q F Pos : Type} (M : Becoming.Frame S A Q) (living : Q → Prop)
+  (sig : Pos → Nat → F → Prop) (formation : Q → F) (step : Q → Nat) (s : S) (c : Q),
+  M.relevance living sig formation step s c ↔
+    (M.inventory living).generative c ∧ (M.inventory living).realized s c ∧ ∀ (p : Pos), sig p (step c) (formation c)
+@Becoming.new_realization_of_unrestricted : ∀ {H Q F Pos : Type} {inventory : GenerativeComparison.Inventory H Q}
+  {sig : Pos → Nat → F → Prop},
+  Becoming.Unrestricted sig →
+    ∀ (formation : Q → F) (step : Q → Nat) {first second : H},
+      GenerativeComparison.GenerativeExtension inventory first second →
+        ∃ q,
+          (inventory.generative q ∧ inventory.realized second q ∧ ∀ (p : Pos), sig p (step q) (formation q)) ∧
+            ¬inventory.realized first q
+@Becoming.contingent_generation_of_unrestricted : ∀ {H Q F Pos : Type} (admitted : H → Prop) (before : H → Q → Prop)
+  (inventory : GenerativeComparison.Inventory H Q) {sig : Pos → Nat → F → Prop},
+  Becoming.Unrestricted sig →
+    ∀ (formation : Q → F) (step : Q → Nat),
+      (∀ (h : H), admitted h → ∃ q, inventory.generative q ∧ inventory.realized h q ∧ ¬before h q) →
+        ∀ (h : H),
+          admitted h →
+            ∃ q,
+              (inventory.generative q ∧ inventory.realized h q ∧ ∀ (p : Pos), sig p (step q) (formation q)) ∧
+                ¬before h q
+@Becoming.every_situated_position_has_reason_of_unrestricted : ∀ {Pos H Q R F : Type} (access : Pos → R → Prop)
+  (admitted : R → H → Prop) (before : H → Q → Prop) (inventory : GenerativeComparison.Inventory H Q)
+  {sig : Pos → Nat → F → Prop},
+  Becoming.Unrestricted sig →
+    ∀ (formation : Q → F) (step : Q → Nat) (Reason : Pos → R → Prop),
+      PositionedPositiveReason.PositionedArticulation access admitted before
+          (fun h q => inventory.generative q ∧ inventory.realized h q ∧ ∀ (p : Pos), sig p (step q) (formation q))
+          Reason →
+        ∀ (a : R),
+          (∀ (h : H), admitted a h → ∃ q, inventory.generative q ∧ inventory.realized h q ∧ ¬before h q) →
+            ∀ (p : Pos), access p a → Reason p a
+@Becoming.Run.novel_by_handoff : ∀ {S A Q : Type} (M : Becoming.Frame S A Q) (r : Becoming.Run M.P) (living : Q → Prop)
+  (before : S → Q → Prop) (rank : Nat → S → Nat) (completed : Nat → Prop) [DecidablePred completed] (bound : Nat),
+  rank 0 (r.state 0) ≤ bound →
+    (∀ (n : Nat), ¬completed n → rank n (r.state (n + 1)) < rank n (r.state n)) →
+      (∀ (n : Nat), ¬completed n → rank (n + 1) (r.state (n + 1)) ≤ rank n (r.state (n + 1))) →
+        (∀ (n : Nat), completed n → Becoming.Novel M living before (r.state (n + 1))) →
+          ∃ n, n ≤ bound ∧ Becoming.Novel M living before (r.state (n + 1))
+@Becoming.Run.relevance_by_handoff_of_unrestricted : ∀ {S A Q F Pos : Type} (M : Becoming.Frame S A Q)
+  (r : Becoming.Run M.P) (living : Q → Prop) (before : S → Q → Prop) (rank : Nat → S → Nat) (completed : Nat → Prop)
+  [DecidablePred completed] (bound : Nat),
+  rank 0 (r.state 0) ≤ bound →
+    (∀ (n : Nat), ¬completed n → rank n (r.state (n + 1)) < rank n (r.state n)) →
+      (∀ (n : Nat), ¬completed n → rank (n + 1) (r.state (n + 1)) ≤ rank n (r.state (n + 1))) →
+        (∀ (n : Nat), completed n → Becoming.Novel M living before (r.state (n + 1))) →
+          ∀ {sig : Pos → Nat → F → Prop},
+            Becoming.Unrestricted sig →
+              ∀ (formation : Q → F) (step : Q → Nat),
+                ∃ n,
+                  n ≤ bound ∧
+                    ∃ q, M.relevance living sig formation step (r.state (n + 1)) q ∧ ¬before (r.state (n + 1)) q
+@Becoming.positive_ground_by_bound_of_unrestricted : ∀ {H Q F Pos : Type} (admitted : H → Prop)
+  (appears : H → Nat → Q → Prop) (generative : Q → Prop) (before : H → Q → Prop) (bound : Nat)
+  {sig : Pos → Nat → F → Prop},
+  Becoming.Unrestricted sig →
+    ∀ (formation : Q → F) (step : Q → Nat),
+      (∀ (h : H),
+          admitted h →
+            ∃ q,
+              (OpenFutureRevision.boundedInventory appears generative bound).generative q ∧
+                (OpenFutureRevision.boundedInventory appears generative bound).realized h q ∧ ¬before h q) →
+        ∀ (h : H),
+          admitted h →
+            ∃ q,
+              (generative q ∧ (∃ n, n ≤ bound ∧ appears h n q) ∧ ∀ (p : Pos), sig p (step q) (formation q)) ∧
+                ¬before h q
+@Becoming.revised_generation_by_bound_of_unrestricted : ∀ {H S Q F Pos : Type} (admitted : H → Prop)
+  (states : H → Nat → S) (rank : H → Nat → S → Nat) (completed : H → Nat → Prop)
+  (decideEvent : (h : H) → DecidablePred (completed h)) (appears : H → Nat → Q → Prop) (generative : Q → Prop)
+  (before : H → Q → Prop) (bound : Nat),
+  (∀ (h : H), admitted h → rank h 0 (states h 0) ≤ bound) →
+    (∀ (h : H), admitted h → ∀ (n : Nat), ¬completed h n → rank h n (states h (n + 1)) < rank h n (states h n)) →
+      (∀ (h : H),
+          admitted h → ∀ (n : Nat), ¬completed h n → rank h (n + 1) (states h (n + 1)) ≤ rank h n (states h (n + 1))) →
+        (∀ (h : H), admitted h → ∀ (n : Nat), completed h n → ∃ q, generative q ∧ appears h n q ∧ ¬before h q) →
+          ∀ {sig : Pos → Nat → F → Prop},
+            Becoming.Unrestricted sig →
+              ∀ (formation : Q → F) (step : Q → Nat) (h : H),
+                admitted h →
+                  ∃ q,
+                    (generative q ∧ (∃ n, n ≤ bound ∧ appears h n q) ∧ ∀ (p : Pos), sig p (step q) (formation q)) ∧
+                      ¬before h q
+@Becoming.comparison_lifts : ∀ {S A C : Type} {F : Becoming.Frame S A C} {living : C → Prop} {Better : S → S → Prop},
+  Becoming.Comparison F living Better →
+    ∀ {s : S} {a b : A}, Becoming.LiftExtension F living s a b → Becoming.LiftBetter F (fun x y => Better y x) s b a
+@Becoming.lifted_comparison_supplies_reason : ∀ {S A C : Type} {F : Becoming.Frame S A C} {living : C → Prop}
+  {Better : S → S → Prop} {s : S} {Reason : A → A → Prop},
+  Becoming.Comparison F living Better →
+    Becoming.LiftedArticulation F Better s Reason →
+      ∀ {a b : A},
+        Generative.Enabled F.P s a → Generative.Enabled F.P s b → Becoming.LiftExtension F living s a b → Reason a b
+@Becoming.lift_coherent_selection_survives : ∀ {S A C : Type} {F : Becoming.Frame S A C} {living : C → Prop}
+  {Better : S → S → Prop} {s : S} {Selected : A → Prop},
+  Becoming.Comparison F living Better →
+    Becoming.LiftCoherence F Better s Selected → ∀ {a : A}, Selected a → Becoming.LiftSurvives F living s a
+@Becoming.lift_continual_improvement_has_no_survivor : ∀ {S A C : Type} {F : Becoming.Frame S A C} {living : C → Prop}
+  {s : S},
+  (∀ (a : A), Generative.Enabled F.P s a → ∃ b, Generative.Enabled F.P s b ∧ Becoming.LiftExtension F living s a b) →
+    ∀ (a : A), ¬Becoming.LiftSurvives F living s a
+@Becoming.situation_enabled_iff : ∀ {S A : Type} (situation : GenerativeComparison.Situation S A) (s : S) (a : A),
+  Generative.Enabled (Becoming.situationProcess situation s) s a ↔ situation.feasible a
+@Becoming.situation_lift_iff : ∀ {S A C : Type} (situation : GenerativeComparison.Situation S A) (s : S)
+  (realized : S → C → Prop) (better : S → S → Prop) {a b : A},
+  situation.feasible a →
+    situation.feasible b →
+      (Becoming.LiftBetter { P := Becoming.situationProcess situation s, realized := realized } better s a b ↔
+        better (situation.realize a) (situation.realize b))
+@Becoming.articulation_iff_lifted : ∀ {S A C : Type} (situation : GenerativeComparison.Situation S A) (s : S)
+  (realized : S → C → Prop) (Better : S → S → Prop) (Reason : A → A → Prop),
+  GenerativeComparison.PracticalArticulation situation Better Reason ↔
+    Becoming.LiftedArticulation { P := Becoming.situationProcess situation s, realized := realized } Better s Reason
+Becoming.LiftModel.some_outcome_does_not_lift : (∃ t t',
+    Becoming.LiftModel.frame.P.step 0 Becoming.LiftModel.Act.mixed t ∧
+      Becoming.LiftModel.frame.P.step 0 Becoming.LiftModel.Act.high t' ∧ Becoming.LiftModel.larger t t') ∧
+  ¬Becoming.LiftBetter Becoming.LiftModel.frame Becoming.LiftModel.larger 0 Becoming.LiftModel.Act.mixed
+        Becoming.LiftModel.Act.high ∧
+    ¬Becoming.LiftBetter Becoming.LiftModel.frame Becoming.LiftModel.larger 0 Becoming.LiftModel.Act.high
+        Becoming.LiftModel.Act.mixed
+Becoming.LiftModel.lift_needs_live_middle : Becoming.LiftBetter Becoming.LiftModel.frame Becoming.LiftModel.larger 0
+    Becoming.LiftModel.Act.low Becoming.LiftModel.Act.dead ∧
+  Becoming.LiftBetter Becoming.LiftModel.frame Becoming.LiftModel.larger 0 Becoming.LiftModel.Act.dead
+      Becoming.LiftModel.Act.high ∧
+    ¬Becoming.LiftBetter Becoming.LiftModel.frame Becoming.LiftModel.larger 0 Becoming.LiftModel.Act.low
+        Becoming.LiftModel.Act.high
+@Becoming.deeper_bisimulation_iff : ∀ {S : Type u_1} {T : Type u_3} {A : Type u_2} {P : Generative.Process S A}
+  {Q : Generative.Process T A} {B : S → T → Prop},
+  Generative.Deeper.Bisimulation P Q B ↔ Becoming.Bisimulation (Becoming.Frame.bare P) (Becoming.Frame.bare Q) B
+Becoming.static_toggle_alike : ∀ (s t : Bool),
+  Becoming.Alike (Becoming.Frame.bare Generative.Deeper.static) (Becoming.Frame.bare Generative.Deeper.toggle) s t
+@Becoming.branching_bisimulation_iff : ∀ {S : Type u_1} {T : Type u_3} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} {n : Generative.ExplanatoryBranching.Model T A O}
+  {R : S → T → Prop},
+  Generative.ExplanatoryBranching.Bisimulation m n R ↔
+    Becoming.Bisimulation (Becoming.Frame.ofModel m) (Becoming.Frame.ofModel n) R
+@Becoming.Alike.same : ∀ {S : Type u_1} {T : Type u_3} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} {n : Generative.ExplanatoryBranching.Model T A O} {s : S} {t : T},
+  Becoming.Alike (Becoming.Frame.ofModel m) (Becoming.Frame.ofModel n) s t →
+    Generative.ExplanatoryBranching.Same m n s t
+@Becoming.BranchingTest.toTest_ofTest : ∀ {A O : Type u_1} (f : Generative.ExplanatoryBranching.Test A O),
+  (Becoming.BranchingTest.ofTest f).toTest = f
+@Becoming.BranchingTest.ofTest_toTest : ∀ {A O : Type u_1} (φ : Becoming.BranchingTest A O),
+  Becoming.BranchingTest.ofTest φ.toTest = φ
+@Becoming.BranchingTest.holds_toTest : ∀ {S : Type u_1} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} (φ : Becoming.BranchingTest A O) (s : S),
+  Becoming.BranchingTest.Holds (Becoming.Frame.ofModel m) s φ ↔ Generative.ExplanatoryBranching.Holds m s φ.toTest
+@Becoming.sameBranchingTests_iff_same : ∀ {S : Type u_1} {T : Type u_3} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} {n : Generative.ExplanatoryBranching.Model T A O} {s : S} {t : T},
+  Becoming.SameBranchingTests (Becoming.Frame.ofModel m) (Becoming.Frame.ofModel n) s t ↔
+    Generative.ExplanatoryBranching.Same m n s t
+@Becoming.same_iff_alike_of_finiteDecided : ∀ {S : Type u_1} {T : Type u_3} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} {n : Generative.ExplanatoryBranching.Model T A O},
+  (∃ l, ∀ (a : A), a ∈ l) →
+    (∃ l, ∀ (o : O), o ∈ l) →
+      Becoming.FiniteDecided (Becoming.Frame.ofModel m) →
+        Becoming.FiniteDecided (Becoming.Frame.ofModel n) →
+          ∀ {s : S} {t : T},
+            Generative.ExplanatoryBranching.Same m n s t ↔
+              Becoming.Alike (Becoming.Frame.ofModel m) (Becoming.Frame.ofModel n) s t
+@Becoming.same_iff_alike_of_imageFinite : ∀ {S : Type u_1} {T : Type u_3} {A O : Type u_2},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ {m : Generative.ExplanatoryBranching.Model S A O} {n : Generative.ExplanatoryBranching.Model T A O},
+      Generative.ExplanatoryBranching.ImageFinite m →
+        Generative.ExplanatoryBranching.ImageFinite n →
+          ∀ {s : S} {t : T},
+            Generative.ExplanatoryBranching.Same m n s t ↔
+              Becoming.Alike (Becoming.Frame.ofModel m) (Becoming.Frame.ofModel n) s t
+@Becoming.same_iff_bisimilar_of_em : ∀ {S : Type u_1} {T : Type u_3} {A O : Type u_2},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ {m : Generative.ExplanatoryBranching.Model S A O} {n : Generative.ExplanatoryBranching.Model T A O},
+      Generative.ExplanatoryBranching.ImageFinite m →
+        Generative.ExplanatoryBranching.ImageFinite n →
+          ∀ (s : S) (t : T),
+            Generative.ExplanatoryBranching.Same m n s t ↔
+              ∃ R, Generative.ExplanatoryBranching.Bisimulation m n R ∧ R s t
+@Becoming.separated_iff : ∀ {T : Type u_2} {A O : Type u_1} {n : Generative.ExplanatoryBranching.Model T A O},
+  Generative.ExplanatoryBranching.Separated n ↔
+    ∀ (t t' : T), Becoming.SameBranchingTests (Becoming.Frame.ofModel n) (Becoming.Frame.ofModel n) t t' → t = t'
+@Becoming.tolerant_iff_neutral : ∀ {Gen Prof : Type} {s : EvaluatorGrounding.Standpoint Gen Prof} {val : Prof → Prop}
+  {step : Prof → Prof → Prop},
+  EvaluatorGrounding.Tolerant val step ↔ Becoming.Neutral (Becoming.profileValuation s val step).transmits
+@Becoming.chain_iff_reach_profiles : ∀ {Gen Prof : Type} {s : EvaluatorGrounding.Standpoint Gen Prof}
+  {val : Prof → Prop} {step : Prof → Prof → Prop} {p q : Prof},
+  EvaluatorGrounding.Chain step p q ↔ Becoming.Reach (Becoming.profileValuation s val step).relations p q
+@Becoming.selfGood_profiles : ∀ {Gen Prof : Type} {s : EvaluatorGrounding.Standpoint Gen Prof} {val : Prof → Prop}
+  {step : Prof → Prof → Prop},
+  EvaluatorGrounding.Supervenes s val →
+    EvaluatorGrounding.SelfGood s → (Becoming.profileValuation s val step).SelfGood ()
+@Becoming.tolerant_chain_reaches_by_core : ∀ {Gen Prof : Type} (s : EvaluatorGrounding.Standpoint Gen Prof)
+  (val : Prof → Prop) (step : Prof → Prof → Prop),
+  EvaluatorGrounding.Supervenes s val →
+    EvaluatorGrounding.SelfGood s →
+      EvaluatorGrounding.Tolerant val step →
+        (∀ (g' : Gen),
+            s.reach g' →
+              s.living g' → ∃ g, s.own g ∧ s.living g ∧ EvaluatorGrounding.Chain step (s.prof g) (s.prof g')) →
+          ∀ (g' : Gen), s.reach g' → s.living g' → s.sig g'
