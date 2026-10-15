@@ -51,7 +51,11 @@ states. With no premise beyond the bound:
   `N + (N + N - 1) * tri N` on and is right (`learner_rests`); in a world a list holds, `N` is
   the list's length (`held_learner_rests`), and on a lasso course the rest that
   `Becoming.Learning` leaves unrefuted is found (`rests_of_lasso`). The step is a function of
-  the bound, which the learner does not have: its record does not show it.
+  the bound, which the learner does not have: its record does not show it. The step is cubic in
+  `N`: on the two-valued negation along a cycle of `N = 2m + 3` places, which is broken once in
+  every turn, the learner is refuted at step `(N³ - N) / 4` (`learner_refuted_late`), each even
+  shift it passes costing a whole turn, so no earlier step bounds its rest on every history with
+  at most `N` states (`learner_rest_cubic`).
 * **The rest step needs no bound.** The learner by the least bound (`leastBound`), given no
   bound, claims by the first lasso hypothesis the record bears out within the least bound within
   which one is; it is right at every step from `N + N - 1` on of every history with at most `N`
@@ -1091,6 +1095,440 @@ theorem rest_without_bound_refuted {x y : O} (two : x ≠ y) (pred : List O → 
       two (right.trans (Learning.holdFrom_after (fun _ => x) y (Nat.le_refl 1)))⟩
 
 end LeastBound
+
+/-! ## The learner by refutation rests at a cubic step -/
+
+section CubicRest
+
+/-- Two negations are none. -/
+theorem not_not_bool : ∀ b : Bool, (!(!b)) = b
+  | true => rfl
+  | false => rfl
+
+/-- A negation moves every value. -/
+theorem not_ne_bool : ∀ b : Bool, (!b) ≠ b
+  | true, same => nomatch (same : false = true)
+  | false, same => nomatch (same : true = false)
+
+theorem register_two (a : Nat) : Negation.register (a + 2) = Negation.register a :=
+  not_not_bool (Negation.register a)
+
+theorem register_even (a : Nat) : ∀ e, Negation.register (a + 2 * e) = Negation.register a
+  | 0 => rfl
+  | e + 1 => (register_two (a + 2 * e)).trans (register_even a e)
+
+theorem register_double : ∀ e, Negation.register (2 * e) = true
+  | 0 => rfl
+  | e + 1 => (register_two (2 * e)).trans (register_double e)
+
+theorem register_odd (e : Nat) : Negation.register (2 * e + 1) = false :=
+  congrArg (fun b => !b) (register_double e)
+
+/-- The place along a cycle of `n + 1` places. -/
+def cyclePos (n t : Nat) : Nat := Law.orbit (Learning.lassoNext 0 n) 0 t
+
+theorem cyclePos_block (n : Nat) : ∀ (j : Nat) {x : Nat}, x ≤ n → cyclePos n ((n + 1) * j + x) = x
+  | 0, x, le =>
+    (congrArg (cyclePos n) (Nat.zero_add x)).trans
+      (lassoPos_early (i := 0) (q := n) x
+        (Eq.subst (motive := fun b => x ≤ b) (Nat.zero_add n).symm le))
+  | j + 1, x, le =>
+    have shape : (n + 1) * (j + 1) + x = 0 + ((n + 1) * j + x) + (n + 1) :=
+      (Nat.add_right_comm ((n + 1) * j) (n + 1) x).trans
+        (congrArg (· + (n + 1)) (Nat.zero_add _).symm)
+    (congrArg (cyclePos n) shape).trans
+      ((lassoPos_period (i := 0) (q := n) ((n + 1) * j + x)).trans
+        ((congrArg (cyclePos n) (Nat.zero_add _)).trans (cyclePos_block n j le)))
+
+/-- **The two-valued negation along a cycle of `n + 1` places.** Where `n + 1` is odd, the
+negation cannot close around the cycle: it is broken once in every turn. -/
+def oddCycle (n t : Nat) : Bool := Negation.register (cyclePos n t)
+
+theorem oddCycle_block (n j : Nat) {x : Nat} (le : x ≤ n) :
+    oddCycle n ((n + 1) * j + x) = Negation.register x :=
+  congrArg Negation.register (cyclePos_block n j le)
+
+/-- The negation along a cycle of `n + 1` places has at most `n + 1` states. -/
+theorem oddCycle_lasso (n : Nat) : Learning.Lasso (oddCycle n) 0 n := fun u _ =>
+  congrArg Negation.register
+    ((congrArg (cyclePos n) (congrArg (· + (n + 1)) (Nat.zero_add u).symm)).trans
+      ((lassoPos_period (i := 0) (q := n) u).trans (congrArg (cyclePos n) (Nat.zero_add u))))
+
+theorem oddCycle_below (n : Nat) : StatesBelow (oddCycle n) (n + 1) :=
+  statesBelow_iff_lasso.mpr ⟨0, n, Nat.le_of_eq (congrArg (· + 1) (Nat.zero_add n)),
+    oddCycle_lasso n⟩
+
+/-- A lasso hypothesis claims the value `q + 1` steps back. -/
+theorem lasso_back {O : Type u} {o : Nat → O} {i q u : Nat} (from_i : i ≤ u) :
+    Learning.lasso (i, q) (Learning.record o (u + q + 1)) = some (o u) :=
+  (Learning.lasso_claims (o := o) (h := (i, q))
+    (Nat.succ_le_succ (Nat.add_le_add_right from_i q))).trans (Learning.back_record o u q)
+
+/-- The learner by refutation keeps a hypothesis not refuted. -/
+theorem run_kept {O : Type u} [DecidableEq O] {H : Nat → List O → Option O} {o : Nat → O}
+    {s k : Nat} (held : Learning.index H o s = k) :
+    ∀ w, (∀ d, d < w → ¬ Learning.Refuted (H k (Learning.record o (s + d))) (o (s + d))) →
+      Learning.index H o (s + w) = k
+  | 0, _ => held
+  | w + 1, right =>
+    have before : Learning.index H o (s + w) = k :=
+      run_kept held w (fun d lt => right d (Nat.lt_succ_of_lt lt))
+    (Learning.index_kept (fun refuted => right w (Nat.lt_succ_self w)
+      (Eq.subst (motive := fun j => Learning.Refuted (H j (Learning.record o (s + w))) (o (s + w)))
+        before refuted))).trans before
+
+/-- The learner by refutation moves on from a hypothesis refuted. -/
+theorem moved_on {O : Type u} [DecidableEq O] {H : Nat → List O → Option O} {o : Nat → O}
+    {t k : Nat} (held : Learning.index H o t = k)
+    (wrong : Learning.Refuted (H k (Learning.record o t)) (o t)) :
+    Learning.RefutedAt (Learning.learner H) o t ∧ Learning.index H o (t + 1) = k + 1 :=
+  have refuted : Learning.RefutedAt (Learning.learner H) o t :=
+    Eq.subst (motive := fun j => Learning.Refuted (H j (Learning.record o t)) (o t)) held.symm wrong
+  ⟨refuted, (Learning.index_refuted refuted).trans (congrArg (· + 1) held)⟩
+
+theorem refuted_of {v w : Bool} {c : Option Bool} (claims : c = some v) (differs : v ≠ w) :
+    Learning.Refuted c w := ⟨v, claims, differs⟩
+
+theorem unrefuted_of {v w : Bool} {c : Option Bool} (claims : c = some v) (same : v = w) :
+    ¬ Learning.Refuted c w :=
+  Eq.subst (motive := fun c => ¬ Learning.Refuted c w) claims.symm
+    (Eq.subst (motive := fun x => ¬ Learning.Refuted (some x) w) same.symm Learning.not_refuted_self)
+
+theorem le_of_add_right : ∀ {a c : Nat} (b : Nat), a + b ≤ c + b → a ≤ c
+  | _, _, 0, le => le
+  | _, _, b + 1, le => le_of_add_right b (Nat.le_of_succ_le_succ le)
+
+theorem four_assoc (a x q : Nat) : a + x + q + 1 = a + (x + q + 1) :=
+  congrArg (· + 1) (Nat.add_assoc a x q)
+
+theorem shift_run (a x q d : Nat) : a + x + q + 1 + d = a + (x + d) + q + 1 :=
+  (Nat.add_right_comm (a + x + q) 1 d).trans
+    (congrArg (· + 1) ((Nat.add_right_comm (a + x) q d).trans
+      (congrArg (· + q) (Nat.add_assoc a x d))))
+
+variable {n : Nat}
+
+/-- **An even shift runs to the end of the turn.** The hypothesis claiming the value `2e + 2`
+steps back, held from a place at least `2e + 2` into a turn of the odd cycle, is right to the
+end of the turn and refuted at its first place. -/
+theorem even_shift_runs {e g j s₀ w i k : Nat} (fit : 2 * e + 2 + (2 * g + 1) = n + 1)
+    (run : s₀ + w = 2 * g + 1) (from_i : i ≤ (n + 1) * j + s₀)
+    (pair : Learning.pairAt k = (i, 2 * e + 1))
+    (held : Learning.index Learning.lassos (oddCycle n) ((n + 1) * j + s₀ + (2 * e + 1) + 1) = k) :
+    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle n) ((n + 1) * (j + 1)) ∧
+      Learning.index Learning.lassos (oddCycle n) ((n + 1) * (j + 1) + 1) = k + 1 := by
+  let B := (n + 1) * j
+  let o := oddCycle n
+  have claim : ∀ x, i ≤ B + x →
+      Learning.lassos k (Learning.record o (B + x + (2 * e + 1) + 1)) = some (o (B + x)) :=
+    fun x le => (congrArg (fun h => Learning.lasso h (Learning.record o (B + x + (2 * e + 1) + 1)))
+      pair).trans (lasso_back le)
+  have room : ∀ d, d < w → s₀ + d + (2 * e + 2) ≤ n := fun d lt =>
+    Nat.le_of_lt_succ (Eq.subst (motive := fun b => s₀ + d + (2 * e + 2) < b) fit
+      (Eq.subst (motive := fun b => s₀ + d + (2 * e + 2) < b)
+        (Nat.add_comm (2 * g + 1) (2 * e + 2))
+        (Nat.add_lt_add_right (Eq.subst (motive := fun b => s₀ + d < b) run
+          (Nat.add_lt_add_left lt s₀)) (2 * e + 2))))
+  have kept := run_kept held w fun d lt =>
+    have le := room d lt
+    unrefuted_of
+      ((congrArg (fun t => Learning.lassos k (Learning.record o t)) (shift_run B s₀ (2 * e + 1) d)).trans
+        ((claim (s₀ + d) (Nat.le_trans from_i (Nat.add_le_add_left (Nat.le_add_right s₀ d) B))).trans
+          (congrArg some (oddCycle_block n j
+            (Nat.le_trans (Nat.le_add_right (s₀ + d) (2 * e + 2)) le)))))
+      ((register_even (s₀ + d) (e + 1)).symm.trans
+        ((oddCycle_block n j le).symm.trans
+          (congrArg o ((four_assoc B (s₀ + d) (2 * e + 1)).symm.trans
+            (shift_run B s₀ (2 * e + 1) d).symm))))
+  have at_end : (n + 1) * j + s₀ + (2 * e + 1) + 1 + w = (n + 1) * (j + 1) :=
+    (shift_run B s₀ (2 * e + 1) w).trans
+      ((congrArg (fun x => B + x + (2 * e + 1) + 1) run).trans
+        ((four_assoc B (2 * g + 1) (2 * e + 1)).trans
+          (congrArg (B + ·) ((Nat.add_comm (2 * g + 1) (2 * e + 2)).trans fit))))
+  have g_le : 2 * g + 1 ≤ n := Nat.le_of_lt_succ (Eq.subst (motive := fun b => 2 * g + 1 < b) fit
+    (Eq.subst (motive := fun b => 2 * g + 1 < b) (Nat.add_comm (2 * g + 1) (2 * e + 2))
+      (Nat.lt_add_of_pos_right (Nat.zero_lt_succ _))))
+  have held_end : Learning.index Learning.lassos o ((n + 1) * (j + 1)) = k :=
+    Eq.subst (motive := fun t => Learning.index Learning.lassos o t = k) at_end kept
+  have wrong : Learning.Refuted (Learning.lassos k (Learning.record o ((n + 1) * (j + 1))))
+      (o ((n + 1) * (j + 1))) :=
+    refuted_of
+      ((congrArg (fun t => Learning.lassos k (Learning.record o t))
+        ((at_end.symm.trans (shift_run B s₀ (2 * e + 1) w)).trans
+          (congrArg (fun x => B + x + (2 * e + 1) + 1) run))).trans
+        ((claim (2 * g + 1) (Eq.subst (motive := fun x => i ≤ B + x) run
+          (Nat.le_trans from_i (Nat.add_le_add_left (Nat.le_add_right s₀ w) B)))).trans
+          (congrArg some ((oddCycle_block n j g_le).trans (register_odd g)))))
+      (fun same => nomatch (same.trans (oddCycle_block n (j + 1) (Nat.zero_le n)) : false = true))
+  exact moved_on held_end wrong
+
+/-- **An odd shift runs to its own place.** The hypothesis claiming the value `2e + 1` steps
+back, held from a place `a ≤ 2e + 1` of a turn after the first, is right before place `2e + 1`
+and refuted there. -/
+theorem odd_shift_runs {e h j a w i k : Nat} (fit : 2 * e + 1 + 2 * (h + 1) = n + 1)
+    (run : a + w = 2 * e + 1) (diag : i + 2 * e ≤ n)
+    (pair : Learning.pairAt k = (i, 2 * e))
+    (held : Learning.index Learning.lassos (oddCycle n) ((n + 1) * (j + 1) + a) = k) :
+    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle n)
+        ((n + 1) * (j + 1) + (2 * e + 1)) ∧
+      Learning.index Learning.lassos (oddCycle n) ((n + 1) * (j + 1) + (2 * e + 1) + 1) = k + 1 := by
+  let B' := (n + 1) * j
+  let B := (n + 1) * (j + 1)
+  let o := oddCycle n
+  have claim : ∀ u, i ≤ u →
+      Learning.lassos k (Learning.record o (u + 2 * e + 1)) = some (o u) :=
+    fun u le => (congrArg (fun p => Learning.lasso p (Learning.record o (u + 2 * e + 1)))
+      pair).trans (lasso_back le)
+  have i_le : i ≤ n := Nat.le_trans (Nat.le_add_right i (2 * e)) diag
+  have late : n + 1 ≤ B := Nat.le_add_left (n + 1) B'
+  have back_turn : ∀ r, B' + (r + 2 * (h + 1)) + 2 * e + 1 = B + r := fun r =>
+    (four_assoc B' (r + 2 * (h + 1)) (2 * e)).trans
+      ((congrArg (B' + ·) ((congrArg (· + 1) (Nat.add_assoc r (2 * (h + 1)) (2 * e))).trans
+        ((congrArg (r + ·) ((Nat.add_comm (2 * (h + 1)) (2 * e + 1)).trans fit)).trans
+          (Nat.add_comm r (n + 1))))).trans (Nat.add_assoc B' (n + 1) r).symm)
+  have kept := run_kept held w fun d lt =>
+    have r_lt : a + d < 2 * e + 1 := Eq.subst (motive := fun b => a + d < b) run
+      (Nat.add_lt_add_left lt a)
+    have r_le : a + d ≤ n := Nat.le_trans (Nat.le_of_lt_succ r_lt)
+      (Nat.le_trans (Nat.le_add_left (2 * e) i) diag)
+    have u_le : a + d + 2 * (h + 1) ≤ n := Nat.le_of_lt_succ
+      (Eq.subst (motive := fun b => a + d + 2 * (h + 1) < b) fit
+        (Nat.add_lt_add_right r_lt (2 * (h + 1))))
+    have at_t : B + a + d = B' + (a + d + 2 * (h + 1)) + 2 * e + 1 :=
+      (Nat.add_assoc B a d).trans (back_turn (a + d)).symm
+    have chain : i + 2 * e + 1 ≤ B' + (a + d + 2 * (h + 1)) + 2 * e + 1 :=
+      Nat.le_trans (Nat.le_trans (Nat.succ_le_succ diag) late)
+        (Eq.subst (motive := fun b => B ≤ b) (back_turn (a + d)).symm (Nat.le_add_right B (a + d)))
+    have from_i : i ≤ B' + (a + d + 2 * (h + 1)) :=
+      le_of_add_right (2 * e) (Nat.le_of_succ_le_succ chain)
+    unrefuted_of
+      ((congrArg (fun t => Learning.lassos k (Learning.record o t)) at_t).trans
+        ((claim _ from_i).trans (congrArg some (oddCycle_block n j u_le))))
+      ((register_even (a + d) (h + 1)).trans
+        ((oddCycle_block n (j + 1) r_le).symm.trans
+          (congrArg o (Nat.add_assoc B a d).symm)))
+  have at_end : (n + 1) * (j + 1) + a + w = (n + 1) * (j + 1) + (2 * e + 1) :=
+    (Nat.add_assoc B a w).trans (congrArg (B + ·) run)
+  have held_end : Learning.index Learning.lassos o (B + (2 * e + 1)) = k :=
+    Eq.subst (motive := fun t => Learning.index Learning.lassos o t = k) at_end kept
+  have e_le : 2 * e + 1 ≤ n := Nat.le_of_lt_succ (Eq.subst (motive := fun b => 2 * e + 1 < b) fit
+    (Nat.lt_add_of_pos_right (Nat.zero_lt_succ _)))
+  have wrong : Learning.Refuted (Learning.lassos k (Learning.record o (B + (2 * e + 1))))
+      (o (B + (2 * e + 1))) :=
+    refuted_of ((claim B (Nat.le_trans i_le (Nat.le_trans (Nat.le_succ n) late))).trans
+        (congrArg some (oddCycle_block n (j + 1) (Nat.zero_le n))))
+      (fun same => nomatch (same.trans ((oddCycle_block n (j + 1) e_le).trans (register_odd e)) :
+        true = false))
+  exact moved_on held_end wrong
+
+/-- **The shift by one is refuted at once** anywhere inside a turn. -/
+theorem unit_shift_refuted {j x i k : Nat} (inside : x + 1 ≤ n) (from_i : i ≤ (n + 1) * j + x)
+    (pair : Learning.pairAt k = (i, 0))
+    (held : Learning.index Learning.lassos (oddCycle n) ((n + 1) * j + x + 1) = k) :
+    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle n) ((n + 1) * j + x + 1) ∧
+      Learning.index Learning.lassos (oddCycle n) ((n + 1) * j + x + 1 + 1) = k + 1 :=
+  moved_on held (refuted_of
+    ((congrArg (fun p => Learning.lasso p (Learning.record (oddCycle n) ((n + 1) * j + x + 1)))
+      pair).trans ((lasso_back (q := 0) from_i).trans
+        (congrArg some (oddCycle_block n j (Nat.le_of_succ_le inside)))))
+    (fun same => not_ne_bool (Negation.register x)
+      (same.trans (oddCycle_block n j (x := x + 1) inside)).symm))
+
+/-- The pair the learner over the lasso hypotheses holds one step into turn `J` of the
+negation along a cycle of `n + 1` places. -/
+def turnHeld (n J : Nat) : Nat × Nat :=
+  Learning.pairAt (Learning.index Learning.lassos (oddCycle n) ((n + 1) * J + 1))
+
+theorem turn_fit {e M : Nat} (lt : e < M) : ∃ g, 2 * e + 2 + (2 * g + 1) = 2 * M + 1 :=
+  match gap_of_lt lt with
+  | ⟨g, at_M⟩ => ⟨g, congrArg (· + 1)
+      (((Nat.add_assoc (2 * e) 2 (2 * g)).trans (congrArg (2 * e + ·) (Nat.add_comm 2 (2 * g)))).trans
+        ((Nat.left_distrib 2 e (g + 1)).symm.trans (congrArg (2 * ·) at_M.symm)))⟩
+
+theorem turn_room {e g M : Nat} (fit : 2 * e + 2 + (2 * g + 1) = 2 * M + 1) : 2 * e + 2 ≤ 2 * M :=
+  Nat.le_of_succ_le_succ (Eq.subst (motive := fun b => 2 * e + 2 + 1 ≤ b) fit
+    (Nat.add_le_add_left (Nat.succ_le_succ (Nat.zero_le (2 * g))) (2 * e + 2)))
+
+/-- **A pair of shifts in one turn.** Held one step into a turn, an odd shift `2e + 1` not
+ending its diagonal is refuted at its place and the even shift after it at the start of the
+next turn. -/
+theorem turn_pair {M e i j : Nat} (lt : e < M) (diag : i + 1 + 2 * e ≤ 2 * M)
+    (now : turnHeld (2 * M) (j + 1) = (i + 1, 2 * e)) :
+    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle (2 * M))
+        ((2 * M + 1) * (j + 1 + 1)) ∧
+      turnHeld (2 * M) (j + 1 + 1) = Learning.nextPair (i, 2 * e + 1) :=
+  let k := Learning.index Learning.lassos (oddCycle (2 * M)) ((2 * M + 1) * (j + 1) + 1)
+  match turn_fit lt with
+  | ⟨g, fit⟩ =>
+    have fitO : 2 * e + 1 + 2 * (g + 1) = 2 * M + 1 :=
+      (congrArg (· + 1) (Nat.add_right_comm (2 * e + 1) 1 (2 * g))).symm.trans fit
+    have pair₁ : Learning.pairAt (k + 1) = (i, 2 * e + 1) := congrArg Learning.nextPair now
+    match odd_shift_runs (n := 2 * M) (a := 1) (w := 2 * e) (k := k) fitO (Nat.add_comm 1 (2 * e))
+      diag now rfl with
+    | ⟨_, next⟩ =>
+      match even_shift_runs (n := 2 * M) (j := j + 1) (s₀ := 0) (w := 2 * g + 1) (k := k + 1) fit
+        (Nat.zero_add _)
+        (Nat.le_trans (Nat.le_trans (Nat.le_succ i)
+          (Nat.le_trans (Nat.le_add_right (i + 1) (2 * e)) diag))
+          (Nat.le_trans (Nat.le_succ (2 * M)) (Nat.le_add_left (2 * M + 1) ((2 * M + 1) * j))))
+        pair₁ next with
+      | ⟨refuted, after⟩ =>
+        ⟨refuted, ((congrArg Learning.pairAt after).trans
+          (congrArg Learning.nextPair pair₁ : Learning.pairAt (k + 1 + 1) = _))⟩
+
+/-- **The end of a diagonal of odd length.** Held one step into a turn, the odd shift `2e + 1`
+ending its diagonal is refuted at its place, the shift by one opening the next diagonal at
+once, and the shift by two at the start of the next turn. -/
+theorem turn_end {M e j : Nat} (lt : e < M) (now : turnHeld (2 * M) (j + 1) = (0, 2 * e)) :
+    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle (2 * M))
+        ((2 * M + 1) * (j + 1 + 1)) ∧
+      turnHeld (2 * M) (j + 1 + 1) = Learning.nextPair (2 * e, 1) :=
+  let k := Learning.index Learning.lassos (oddCycle (2 * M)) ((2 * M + 1) * (j + 1) + 1)
+  match turn_fit lt with
+  | ⟨g, fit⟩ =>
+    have fitO : 2 * e + 1 + 2 * (g + 1) = 2 * M + 1 :=
+      (congrArg (· + 1) (Nat.add_right_comm (2 * e + 1) 1 (2 * g))).symm.trans fit
+    have pair₁ : Learning.pairAt (k + 1) = (2 * e + 1, 0) := congrArg Learning.nextPair now
+    have pair₂ : Learning.pairAt (k + 1 + 1) = (2 * e, 2 * 0 + 1) := congrArg Learning.nextPair pair₁
+    have room := turn_room fit
+    match odd_shift_runs (n := 2 * M) (a := 1) (w := 2 * e) (k := k) fitO (Nat.add_comm 1 (2 * e))
+      (Eq.subst (motive := fun b => b ≤ 2 * M) (Nat.zero_add (2 * e)).symm
+        (Nat.le_trans (Nat.le_add_right (2 * e) 2) room)) now rfl with
+    | ⟨_, first⟩ =>
+      match unit_shift_refuted (n := 2 * M) (j := j + 1) (x := 2 * e + 1) (k := k + 1) room
+        (Nat.le_add_left (2 * e + 1) _) pair₁ first with
+      | ⟨_, second⟩ =>
+        have fitE : 2 * 0 + 2 + (2 * (e + g) + 1) = 2 * M + 1 :=
+          (congrArg (· + 1) ((congrArg (2 + ·) (Nat.left_distrib 2 e g)).trans
+            ((Nat.add_comm 2 (2 * e + 2 * g)).trans
+              (Nat.add_right_comm (2 * e) 2 (2 * g)).symm))).trans fit
+        match even_shift_runs (n := 2 * M) (e := 0) (g := e + g) (j := j + 1) (s₀ := 2 * e + 1)
+          (w := 2 * g) (k := k + 1 + 1) fitE
+          ((Nat.add_right_comm (2 * e) 1 (2 * g)).trans
+            (congrArg (· + 1) (Nat.left_distrib 2 e g).symm))
+          (Nat.le_trans (Nat.le_succ (2 * e)) (Nat.le_add_left (2 * e + 1) _))
+          pair₂ second with
+        | ⟨refuted, after⟩ =>
+          ⟨refuted, ((congrArg Learning.pairAt after).trans
+            (congrArg Learning.nextPair pair₂ : Learning.pairAt (k + 1 + 1 + 1) = _))⟩
+
+/-- **A walk along a diagonal.** From an odd shift `2e + 1`, each pair of shifts takes one
+turn. -/
+theorem turn_walk {M : Nat} : ∀ (f e j i : Nat), e + f ≤ M → i + 2 * f + 2 * e ≤ 2 * M →
+    turnHeld (2 * M) (j + 1) = (i + 2 * f, 2 * e) → turnHeld (2 * M) (j + 1 + f) = (i, 2 * (e + f))
+  | 0, _, _, _, _, _, now => now
+  | f + 1, e, j, i, room, diag, now =>
+    match turn_pair (i := i + 2 * f + 1)
+      (Nat.lt_of_lt_of_le (Nat.lt_succ_of_le (Nat.le_add_right e f)) room) diag now with
+    | ⟨_, next⟩ =>
+      have after := turn_walk f (e + 1) (j + 1) i
+        (Eq.subst (motive := fun b => b ≤ M) (Nat.add_right_comm e f 1) room)
+        (Eq.subst (motive := fun b => b ≤ 2 * M) (Nat.add_right_comm (i + 2 * f) 2 (2 * e)) diag)
+        next
+      (congrArg (turnHeld (2 * M)) (Nat.add_right_comm (j + 1) 1 f).symm).trans
+        (after.trans (congrArg (fun x => (i, 2 * x)) (Nat.add_right_comm e 1 f)))
+
+/-- **Two diagonals take an odd number of turns.** One step into a turn at the start of the
+diagonal `2c + 2`, the learner is one step into the turn `2c + 3` later at the start of the
+diagonal `2c + 4`. -/
+theorem turn_double {M c j : Nat} (room : c + 2 ≤ M)
+    (now : turnHeld (2 * M) (j + 1) = (2 * (c + 1), 0)) :
+    turnHeld (2 * M) (j + (c + 1) + 1 + c + 1 + 1) = (2 * (c + 2), 0) :=
+  have twice : 2 * c + 4 ≤ 2 * M := Nat.mul_le_mul_left 2 room
+  have first := turn_walk (M := M) (c + 1) 0 j 0
+    (Eq.subst (motive := fun b => b ≤ M) (Nat.zero_add (c + 1)).symm (Nat.le_of_succ_le room))
+    (Eq.subst (motive := fun b => b + 2 * 0 ≤ 2 * M) (Nat.zero_add (2 * (c + 1))).symm
+      (Nat.le_trans (Nat.le_add_right (2 * c + 2) 2) twice))
+    (now.trans (congrArg (·, 0) (Nat.zero_add (2 * (c + 1))).symm))
+  have first' : turnHeld (2 * M) (j + (c + 1) + 1) = (0, 2 * (c + 1)) :=
+    (congrArg (turnHeld (2 * M)) (Nat.add_right_comm j 1 (c + 1))).symm.trans
+      (first.trans (congrArg (fun x => (0, 2 * x)) (Nat.zero_add (c + 1))))
+  match turn_end (e := c + 1) room first' with
+  | ⟨_, turned⟩ =>
+    have second := turn_walk (M := M) c 1 (j + (c + 1) + 1) 1
+      (Eq.subst (motive := fun b => b ≤ M) (Nat.add_comm c 1) (Nat.le_of_succ_le room))
+      (Eq.subst (motive := fun b => b + 2 * 1 ≤ 2 * M) (Nat.add_comm (2 * c) 1)
+        (Nat.le_trans (Nat.le_succ (2 * c + 3)) twice))
+      ((turned : turnHeld (2 * M) (j + (c + 1) + 1 + 1) = (2 * c + 1, 2)).trans
+        (congrArg (·, 2) (Nat.add_comm (2 * c) 1)))
+    match turn_pair (i := 0) (e := 1 + c) (j := j + (c + 1) + 1 + c)
+      (Eq.subst (motive := fun b => b + 1 ≤ M) (Nat.add_comm c 1) room)
+      (Eq.subst (motive := fun b => 0 + 1 + 2 * b ≤ 2 * M) (Nat.add_comm c 1)
+        (Eq.subst (motive := fun b => b ≤ 2 * M) (Nat.add_comm (2 * (c + 1)) 1)
+          (Nat.le_trans (Nat.le_succ (2 * c + 3)) twice)))
+      ((congrArg (turnHeld (2 * M)) (Nat.add_right_comm (j + (c + 1) + 1) 1 c)).symm.trans second) with
+    | ⟨_, ended⟩ =>
+      (ended : turnHeld (2 * M) _ = (2 * (1 + c) + 1 + 1, 0)).trans
+        (congrArg (fun x => (2 * (x + 1), 0)) (Nat.add_comm 1 c))
+
+/-- **The first turn.** One step into the second turn the learner holds the start of the
+diagonal `2`. -/
+theorem start_turn (m : Nat) : turnHeld (2 * (m + 1)) 1 = (2, 0) :=
+  have first : Learning.index Learning.lassos (oddCycle (2 * (m + 1))) 1 = 0 := rfl
+  match unit_shift_refuted (n := 2 * (m + 1)) (j := 0) (x := 0) (i := 0) (k := 0)
+    (Nat.succ_le_succ (Nat.zero_le _)) (Nat.zero_le _) rfl first with
+  | ⟨_, second⟩ =>
+    match unit_shift_refuted (n := 2 * (m + 1)) (j := 0) (x := 1) (i := 1) (k := 0 + 1)
+      (Nat.succ_le_succ (Nat.succ_le_succ (Nat.zero_le _))) (Nat.le_refl _) rfl second with
+    | ⟨_, third⟩ =>
+      match even_shift_runs (n := 2 * (m + 1)) (e := 0) (g := m) (j := 0) (s₀ := 1) (w := 2 * m) (i := 0)
+        (k := 0 + 1 + 1)
+        (congrArg (· + 1) (Nat.add_comm 2 (2 * m)) : 2 * 0 + 2 + (2 * m + 1) = 2 * (m + 1) + 1)
+        (Nat.add_comm 1 (2 * m)) (Nat.zero_le _) rfl third with
+      | ⟨_, fourth⟩ => congrArg Learning.pairAt fourth
+
+/-- **The diagonals in pairs.** One step into turn `(c + 1)²` the learner holds the start of the
+diagonal `2c + 2`. -/
+theorem turn_diagonals (m : Nat) : ∀ c, c + 1 ≤ m + 1 →
+    turnHeld (2 * (m + 1)) ((c + 1) * (c + 1)) = (2 * (c + 1), 0)
+  | 0, _ => start_turn m
+  | c + 1, room =>
+    (congrArg (turnHeld (2 * (m + 1)))
+      (congrArg (fun y => y + (c + 2) + (c + 2)) (Nat.succ_mul (c + 1) c) :
+        (c + 1 + 1) * (c + 1 + 1) = (c + 1) * c + c + (c + 1) + 1 + c + 1 + 1)).trans
+      (turn_double (j := (c + 1) * c + c) room (turn_diagonals m c (Nat.le_of_succ_le room)))
+
+/-- **The learner by refutation is refuted at a cubic step.** On the two-valued negation along a
+cycle of `N = 2m + 3` places, a history with at most `N` states, the learner by refutation over
+the lasso hypotheses is refuted at step `(N³ - N) / 4 = (2m + 3)(m + 1)(m + 2)`: it passes every
+diagonal of hypotheses before the one holding the period `N`, each even shift costing a whole
+turn. -/
+theorem learner_refuted_late (m : Nat) :
+    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle (2 * (m + 1)))
+      ((2 * (m + 1) + 1) * ((m + 1) * (m + 1) + (m + 1))) :=
+  have last := turn_diagonals m m (Nat.le_refl _)
+  have along := turn_walk (M := m + 1) m 0 ((m + 1) * m + m) 2
+    (Nat.le_trans (Nat.le_of_eq (Nat.zero_add m)) (Nat.le_succ m))
+    (Nat.le_of_eq (Nat.add_comm 2 (2 * m)))
+    (last.trans (congrArg (·, 0) (Nat.add_comm (2 * m) 2)))
+  match turn_pair (M := m + 1) (i := 1) (e := 0 + m) (j := (m + 1) * m + m + m)
+    (Nat.lt_succ_of_le (Nat.le_of_eq (Nat.zero_add m)))
+    (Eq.subst (motive := fun b => 1 + 1 + 2 * b ≤ 2 * (m + 1)) (Nat.zero_add m).symm
+      (Nat.le_of_eq (Nat.add_comm 2 (2 * m))))
+    ((congrArg (turnHeld (2 * (m + 1))) (Nat.add_right_comm ((m + 1) * m + m) 1 m)).symm.trans
+      along) with
+  | ⟨refuted, _⟩ =>
+    Eq.subst (motive := fun y => Learning.RefutedAt (Learning.learner Learning.lassos)
+        (oddCycle (2 * (m + 1))) ((2 * (m + 1) + 1) * (y + 1)))
+      (Nat.add_right_comm ((m + 1) * m + m) 1 m).symm refuted
+
+/-- **The learner by refutation rests no earlier than a cubic step.** A step from which the
+learner by refutation over the lasso hypotheses is right on every two-valued history with at
+most `N = 2m + 3` states comes after `(N³ - N) / 4`. With `learner_rests` its rest step is cubic
+in `N`; the learner by the least bound rests from `2N - 1` (`leastBound_exact`). -/
+theorem learner_rest_cubic (m : Nat) {T : Nat}
+    (rests : ∀ o : Nat → Bool, StatesBelow o (2 * m + 3) → ∀ t, T ≤ t →
+      Learning.learner Learning.lassos (Learning.record o t) = some (o t)) :
+    (2 * m + 3) * ((m + 1) * (m + 2)) < T :=
+  match Nat.lt_or_ge ((2 * m + 3) * ((m + 1) * (m + 2))) T with
+  | .inl early => early
+  | .inr late =>
+    match learner_refuted_late m with
+    | ⟨_, claims, differs⟩ =>
+      absurd (Option.some.inj (claims.symm.trans
+        (rests (oddCycle (2 * (m + 1))) (oddCycle_below (2 * (m + 1))) _ late))) differs
+
+end CubicRest
 
 end Identification
 
