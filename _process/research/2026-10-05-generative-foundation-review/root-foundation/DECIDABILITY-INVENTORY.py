@@ -175,6 +175,9 @@ CONSTRUCTIONS = {
     # 2026-10-15, P114 the apart laws read on the shared base (Becoming.Courses): the release law of copies from one
     # shared pool and inspection as a process take the copy's moves, which compare tokens
     'Courses.release': 'same', 'Courses.inspection': 'same',
+    # 2026-10-16, P115 how much difference arrives (Becoming.Propagation): one history mixed into another at
+    # listed levels, each a step with a condition, as mixIn mixes condition by condition
+    'mixCells': 'mix',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -346,6 +349,13 @@ PROOF_KIND = {
     # 2026-10-16, P116 identification where runs part (Becoming.Parting): the proofs split on whether two registered
     # values, or a claim and a value, are the same
     'Parting.unparted_iff': 'same', 'Parting.free_open': 'same',
+    # 2026-10-16, P115 how much difference arrives (Becoming.Propagation): the strengths add up by mixing the
+    # other history in level by level, and the carrying law splits on whether a level is the one that differs
+    **{n: 'same' for n in [
+        'ExchangeLaw.exchangeGap_le_strengths', 'ExchangeLaw.exchangeGap_le_strengths_listed',
+        'ExchangeLaw.exchangeGap_le_shares', 'ExchangeLaw.insensitiveAt_iff_strength_zero',
+        'ExchangeLaw.sensitive_iff_strength', 'gap_le_carried', 'ExchangeLaw.carrying_respondsWithin',
+        'most_difference_arrives', 'levels_alike_of_not_conveyed']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',

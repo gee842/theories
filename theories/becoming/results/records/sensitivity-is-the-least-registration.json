@@ -166,8 +166,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T164401.170999Z): the 58 declarations of Becoming.Sensitivity, 47 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 137; not independently reviewed."
   },
   "next_delta": {
-    "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；敏感的度量与差别到达多少；按时间先后读的敏感；独立审查；对读法（识就是敏感；不依存于任何部分的整体是尾）的判断。",
-    "en": "The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; a measure of sensitivity and of how much difference arrives; sensitivity in temporal order; an independent review; a judgment on the readings (registration as sensitivity; a whole depending on no part as a tail)."
+    "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查；对读法（识就是敏感；不依存于任何部分的整体是尾）的判断。",
+    "en": "The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review; a judgment on the readings (registration as sensitivity; a whole depending on no part as a tail)."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。读法（AI 的，待 Ren 或按其 2026-10-15 的交托判断）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
@@ -261,6 +261,13 @@
       "detail": {
         "zh": "如 Listed.lpo_of_few：要求一个对所有情形都够的列表需要全知；这里对所有历史都够的一个列表也可以没有（Pointer.no_list）。",
         "en": "Like Listed.lpo_of_few: asking for one list good for every case needs omniscience; here one list good for every history may not exist (Pointer.no_list)."
+      }
+    },
+    {
+      "id": "how-much-difference-arrives",
+      "detail": {
+        "zh": "回答其下一步中的度量：耦合强度度量敏感，对读已立者的律强度为零恰是不敏感（ExchangeLaw.insensitiveAt_iff_strength_zero）；差别到达多少至多是所携带的量，恰好达到。",
+        "en": "Answers the measure in its next step: the coupling strengths measure sensitivity, strength zero being exactly insensitivity for a law of what has stood (ExchangeLaw.insensitiveAt_iff_strength_zero); how much difference arrives is at most the carried amount, which is attained."
       }
     }
   ],
@@ -438,6 +445,10 @@
     {
       "zh": "2026-10-15：新增，回答 counterfactual-is-the-course 的 next_delta（P113）；研究 §137。",
       "en": "15 October 2026: added, answering the next_delta of counterfactual-is-the-course (P113); study section 137."
+    },
+    {
+      "zh": "2026-10-16 P115（差别到达多少，研究 §141）：下一步中“敏感的度量与差别到达多少”由耦合强度与所携带的量回答，删去；related 加 how-much-difference-arrives。陈述与证明不变；does_not_show 仍对本记录的定理成立。",
+      "en": "16 October 2026, P115 (how much difference arrives, study section 141): in the next step, “a measure of sensitivity and of how much difference arrives” is answered by the coupling strengths and the carried amount, and removed; related adds how-much-difference-arrives. Statement and proofs unchanged; does_not_show still holds of this record's theorems."
     }
   ],
   "text_versions": []
