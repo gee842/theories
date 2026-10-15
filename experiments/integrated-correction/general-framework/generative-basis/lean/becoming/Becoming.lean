@@ -107,6 +107,7 @@ import Becoming.Sensitivity
 import Becoming.Courses
 import Becoming.Parting
 import Becoming.Typicality
+import Becoming.Propagation
 import Becoming.Gain
 import Becoming.Gluing
 
@@ -1044,6 +1045,18 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   weigh, times d, at most that, out of (p + q)^n: the counting form of the law of large numbers.
   The weights are `Becoming.Weighted`'s counting weights of free branching. That the course which
   happens is typical is not derived: every course is a run.
+* `Becoming.Propagation` (L4): how much difference arrives, with no premise beyond what each law
+  names. In two balanced flows a condition's gap changes across a step by exactly the difference
+  given less the difference taken. An exchange is coupled to a level with strength at most `k`
+  where changing that level alone changes what it exchanges by at most `k` times as much
+  (`ExchangeLaw.RespondsWithin`): strength zero is insensitivity, and strengths add up over levels
+  changed one at a time, bounding a part's share of a move. Where the rest follows a law of what
+  has stood with such strengths, every gap is at most the carried amount, the course one law
+  generates from the part's gaps and the strengths (`gap_le_carried`); that law attains it, so the
+  carried amount is the most difference that can arrive (`most_difference_arrives`). It is
+  positive exactly along a route in time of positive strengths, on routes of `TimedResponse`'s
+  spread where they are registered; carried differences add. A held difference arrives without
+  bound through a chain, and a loop of strength one doubles it every step.
 * `Becoming.Gain` (L3): where novelty's gain comes from, with no premise. With the rest of the
   whole counted, every rise is given: across a step at which a family's stock rises, some relatum
   gives it more than it takes, a formation taking part or the rest, found by checking each one taking

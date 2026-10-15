@@ -506,6 +506,24 @@ SPECIFIC = {
         ("；奇偶障碍的一般定理；", "；"),
         ("; the general parity obstruction;", ";"),
     ],
+    # P115's readings, left by its owner to Ren or this delegation (D39).
+    "how-much-difference-arrives": [
+        ("读法（AI 的，待 Ren 或按其 2026-10-15 的交托判断）：耦合强度是敏感所缺的度量，读作识的强弱；",
+         f"读法（AI 的，依 Ren 的交托以确切范围采用，{DC} D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，"
+         "在形式上读作识的强弱；"),
+        ("纠缠读作交换与彼此水平耦合的强度。", "纠缠读作交换与彼此水平耦合的强度，不等同于量子的纠缠。"),
+        ("Readings (the AI's, pending Ren or decided on Ren's delegation of 15 October): the coupling strength "
+         "is the measure sensitivity lacked, read as how strongly a formation registers;",
+         f"Readings (the AI's, adopted with exact scope on Ren's delegation, {DC} D39; 识 itself stays Ren's): "
+         "the coupling strength is the measure sensitivity lacked, read formally as how strongly a formation "
+         "registers;"),
+        ("entanglement reads as how strongly exchanges are coupled to each other's levels.",
+         "entanglement reads as how strongly exchanges are coupled to each other's levels, not as quantum "
+         "entanglement."),
+        ("；独立审查；对读法（强度是识的强弱；纠缠是耦合的强度）的判断。", "；独立审查。"),
+        ("; an independent review; a judgment on the readings (strength as how strongly one registers; "
+         "entanglement as the strength of coupling).", "; an independent review."),
+    ],
 }
 
 # Decision numbers per record, for the history note.
@@ -610,9 +628,9 @@ DNUM = {
     "whole-law-of-counting": "D2, D31, D36",
     "whole-persists-through-generation": "D5",
     "wisdom-root-part-one": "D26",
+    "how-much-difference-arrives": "D39",
 }
 
-# Paired related links for the two new results, and the note each pairing adds.
 # A sentence added to the history note where Ren's own words, not the delegation, decide.
 EXTRA_NOTE = {
     "identification-where-bounded": (
@@ -624,6 +642,7 @@ EXTRA_NOTE = {
 }
 
 
+# Paired related links for the two new results, and the note each pairing adds.
 RELATE = {
     "returning-novelty-forgetting-on-levels": ("where-novelty-gain-comes-from",
         "推进其“新而不止是来自部分之外的无界增益”的读法：算入其余，每次上升都是被给予的，新需要增益，在第一律之下经边界或来自其余。",

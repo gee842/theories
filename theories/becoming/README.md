@@ -22,7 +22,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 
 ## 已登记成果 / Registered results
 
-210 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+211 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -112,6 +112,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [被持有的生命上的 G0 / G0 on held lives](results/records/held-lives-g0-is-centering.md) | recorded-checked | [Standpoints.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean) |
 | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](results/records/historical-source-binding.md) | recorded-checked | [HistoricalBinding.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean) |
 | [律与历史的完备对应 / The complete correspondence of law and history](results/records/histories-fix-law-up-to-dead-ends.md) | recorded-checked | [Histories.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean) |
+| [差别到达多少 / How much difference arrives](results/records/how-much-difference-arrives.md) | recorded-checked | [Propagation.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean) |
 | [有界之处的辨识 / Identification where bounded](results/records/identification-where-bounded.md) | recorded-checked | [Identification.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean) |
 | [运行分开之处的辨识 / Identification where runs part](results/records/identification-where-runs-part.md) | recorded-checked | [Parting.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean) |
 | [跨步的同一 / Identity across steps](results/records/identity-across-steps.md) | recorded-checked | [Identity.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean) |

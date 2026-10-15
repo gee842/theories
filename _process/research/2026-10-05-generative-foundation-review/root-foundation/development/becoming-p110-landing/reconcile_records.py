@@ -155,9 +155,9 @@ def apply(record):
 
 
 # Study sections, provisional until landing (the integrator renumbers).
-SECTION = {"P110": int(os.environ.get("P110_SECTION", 141)),
-           "P111": int(os.environ.get("P111_SECTION", 142)),
-           "P112": int(os.environ.get("P112_SECTION", 143))}
+SECTION = {"P110": int(os.environ.get("P110_SECTION", 142)),
+           "P111": int(os.environ.get("P111_SECTION", 143)),
+           "P112": int(os.environ.get("P112_SECTION", 144))}
 MARK = "P110（依 Ren 2026-10-15 的交托"
 
 

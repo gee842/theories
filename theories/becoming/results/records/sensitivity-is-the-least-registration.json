@@ -166,8 +166,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T164401.170999Z): the 58 declarations of Becoming.Sensitivity, 47 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 137; not independently reviewed."
   },
   "next_delta": {
-    "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；敏感的度量与差别到达多少；按时间先后读的敏感；独立审查。",
-    "en": "The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; a measure of sensitivity and of how much difference arrives; sensitivity in temporal order; an independent review."
+    "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查。",
+    "en": "The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识本身仍是 Ren 的）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
@@ -261,6 +261,13 @@
       "detail": {
         "zh": "如 Listed.lpo_of_few：要求一个对所有情形都够的列表需要全知；这里对所有历史都够的一个列表也可以没有（Pointer.no_list）。",
         "en": "Like Listed.lpo_of_few: asking for one list good for every case needs omniscience; here one list good for every history may not exist (Pointer.no_list)."
+      }
+    },
+    {
+      "id": "how-much-difference-arrives",
+      "detail": {
+        "zh": "回答其下一步中的度量：耦合强度度量敏感，对读已立者的律强度为零恰是不敏感（ExchangeLaw.insensitiveAt_iff_strength_zero）；差别到达多少至多是所携带的量，恰好达到。",
+        "en": "Answers the measure in its next step: the coupling strengths measure sensitivity, strength zero being exactly insensitivity for a law of what has stood (ExchangeLaw.insensitiveAt_iff_strength_zero); how much difference arrives is at most the carried amount, which is attained."
       }
     }
   ],
@@ -383,7 +390,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "cc3283b8a69eaa23a83683df19a1032eb372a43bfb6c824c25271403e88d3e4e"
+      "sha256": "0004f1a79b4b9c23c9eadd3764b07034b55b719d02e3399ac946b6ca93e89d5d"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -440,8 +447,16 @@
       "en": "15 October 2026: added, answering the next_delta of counterfactual-is-the-course (P113); study section 137."
     },
     {
-      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D37）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
-      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D37): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+      "zh": "2026-10-16 P115（差别到达多少，研究 §141）：下一步中“敏感的度量与差别到达多少”由耦合强度与所携带的量回答，删去；related 加 how-much-difference-arrives。陈述与证明不变；does_not_show 仍对本记录的定理成立。",
+      "en": "16 October 2026, P115 (how much difference arrives, study section 141): in the next step, “a measure of sensitivity and of how much difference arrives” is answered by the coupling strengths and the carried amount, and removed; related adds how-much-difference-arrives. Statement and proofs unchanged; does_not_show still holds of this record's theorems."
+    },
+    {
+      "zh": "2026年10月16日，P115 落地（研究第141节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P115：§2 一段“差别到达多少（第一部分）”，其余响应之比较一段不再把差别到达多少列为未推出，§6.10 一句，第一部分总陈述一项，§8 状态行与“反馈与所及”下的进一步证明，§9 一行，术语两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P115 (study section 141): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P115: a §2 paragraph \"How much difference arrives (Part I)\", the paragraph of the comparison where the rest responds no longer listing how much difference arrives as not derived, a §6.10 sentence, one item in Part I stated whole, §8's status row and the further proofs under feedback and reach, one §9 row, two glossary rows; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §142，DELEGATED-CHOICES D37）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 142, DELEGATED-CHOICES D37): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ],
   "text_versions": []

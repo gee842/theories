@@ -1,0 +1,598 @@
+{
+  "schema_version": 2,
+  "id": "how-much-difference-arrives",
+  "title": {
+    "zh": "差别到达多少",
+    "en": "How much difference arrives"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "差别恰按交换之差到达；交换与水平的耦合强度度量敏感，强度为零恰是不敏感；其余遵从具有这些强度的律时，每个差至多是所携带的量，它恰好达到，是能到达的最大差别，恰沿正强度的时间路线为正。",
+    "en": "Difference arrives exactly as exchanged difference; the strength coupling an exchange to a level measures sensitivity, zero exactly where insensitive; where the rest follows a law with those strengths, every gap is at most the carried amount, attained, and positive exactly along routes in time."
+  },
+  "laws": [
+    {
+      "zh": "两个水平之差是任一方多于另一方者（自然数上的距离）。两个平衡的流中，一个条件之差跨一步恰按所给之差减所取之差改变；在场形成相同时，跨一步之差至多是步前之差加每个交换之差，每个交换都相同时不增。",
+      "en": "The gap of two amounts is what either has beyond the other, the distance on the natural numbers. In two balanced flows the difference of a condition's levels changes across a step by exactly the difference given less the difference taken; with the same formations present, the gap across a step is at most the gap before with every exchange's gap, and does not grow where every exchange is alike.",
+      "declarations": [
+        "Becoming.gap",
+        "Becoming.Propagation.sub_zero_of_le",
+        "Becoming.Propagation.sub_le_of_le_add",
+        "Becoming.Propagation.add_sub_self_left",
+        "Becoming.Propagation.rearrange",
+        "Becoming.Propagation.add_congr",
+        "Becoming.gap_comm",
+        "Becoming.gap_self",
+        "Becoming.gap_zero",
+        "Becoming.gap_add_self",
+        "Becoming.le_add_gap",
+        "Becoming.gap_le_of",
+        "Becoming.gap_le_iff",
+        "Becoming.gap_eq_zero_iff",
+        "Becoming.gap_triangle",
+        "Becoming.gap_add",
+        "Becoming.gap_mul_le",
+        "Becoming.gap_total",
+        "Becoming.gap_of_balances",
+        "Becoming.Flow.exchangeGap",
+        "Becoming.levels_step_exact",
+        "Becoming.gap_step",
+        "Becoming.Flow.exchangeGap_of_alike",
+        "Becoming.gap_step_of_alike"
+      ]
+    },
+    {
+      "zh": "跨过一步，交换与一个条件在某步的水平耦合、强度至多 k，是说只在该水平上不同的两个历史下，所取与所给之差合计至多是 k 乘该水平之差。对读已立者的律，强度为零恰是不敏感，敏感恰是并非每个强度都为零；它对该步之后的水平不耦合。给出水平平方的律没有有限的强度。",
+      "en": "Across a step an exchange is coupled to a condition's level at a step with strength at most k where, under two histories differing in that level only, its take and give differ in all by at most k times that level's gap. For a law of what has stood strength zero is insensitivity and sensitivity is that not every strength is zero; no later level is coupled. A law giving the square of a level has no finite strength.",
+      "declarations": [
+        "Becoming.ExchangeLaw.exchangeGap",
+        "Becoming.ExchangeLaw.RespondsWithin",
+        "Becoming.ExchangeLaw.exchangeGap_self",
+        "Becoming.ExchangeLaw.exchangeGap_triangle",
+        "Becoming.ExchangeLaw.exchangeGap_of_alike",
+        "Becoming.ExchangeLaw.alike_of_exchangeGap",
+        "Becoming.ExchangeLaw.RespondsWithin.mono",
+        "Becoming.ExchangeLaw.Nonanticipating.respondsWithin_later",
+        "Becoming.ExchangeLaw.insensitiveAt_iff_strength_zero",
+        "Becoming.ExchangeLaw.sensitive_iff_strength",
+        "Becoming.Propagation.Square.law",
+        "Becoming.Propagation.Square.succ_square",
+        "Becoming.Propagation.Square.not_respondsWithin"
+      ]
+    },
+    {
+      "zh": "强度沿逐个改变的水平相加：逐个水平换入第二个历史，交换之差至多是各水平的强度乘其差之和。所以在直到该步只在列出的条件上不同的两个历史下亦然（条件全部列出时对任意两个历史），一个动作的改变至多是部分的份额（其强度乘部分的改变）加其余的份额。",
+      "en": "Strengths add up over levels changed one at a time: mixing the second history in level by level, the exchange's gap is at most the sum of each level's strength times its gap. So likewise under two histories differing up to the step only on listed conditions (with every condition listed, under any two), and the change of a move is at most the part's share, its strengths times the part's change, with the rest's share.",
+      "declarations": [
+        "Becoming.Propagation.mem_steps_of_between",
+        "Becoming.Propagation.between_of_mem_steps",
+        "Becoming.Propagation.mem_steps_upto",
+        "Becoming.Propagation.le_of_mem_steps_upto",
+        "Becoming.Propagation.mem_map_pair",
+        "Becoming.Propagation.of_mem_map_pair",
+        "Becoming.Propagation.mem_append_cases",
+        "Becoming.cellsOf",
+        "Becoming.mem_cellsOf",
+        "Becoming.of_mem_cellsOf",
+        "Becoming.total_cellsOf",
+        "Becoming.mixCells",
+        "Becoming.mixCells_either",
+        "Becoming.mixCells_listed",
+        "Becoming.ExchangeLaw.exchangeGap_le_mixCells",
+        "Becoming.ExchangeLaw.exchangeGap_le_strengths",
+        "Becoming.ExchangeLaw.exchangeGap_le_strengths_listed",
+        "Becoming.ExchangeLaw.exchangeGap_le_shares"
+      ]
+    },
+    {
+      "zh": "携带之律让部分给出其差，其外的每个形成给出其强度对至今各水平所作的，什么也不取；所携带的量是它由起始之差生成的进程，每步增加部分之差与强度对至今所携带者所作的。其余在两个平衡的流中遵从具有这些强度的读已立者之律、部分与起始在给出的差之内、条件全部列出时，每个差至多是所携带的量。",
+      "en": "The carrying law has the part give its gaps and each formation outside it give what its strengths make of the levels so far, taking nothing; the carried amount is the course it generates from the starting gaps. Where in two balanced flows the rest follows a law of what has stood with those strengths, the part and the start within the given gaps and every condition listed, every gap is at most the carried amount.",
+      "declarations": [
+        "Becoming.ExchangeLaw.carrying",
+        "Becoming.carried",
+        "Becoming.carriedGive",
+        "Becoming.ExchangeLaw.carrying_nonanticipating",
+        "Becoming.carried_zero",
+        "Becoming.carried_succ",
+        "Becoming.carried_le_succ",
+        "Becoming.Propagation.webOf",
+        "Becoming.gap_le_carried"
+      ]
+    },
+    {
+      "zh": "条件各列一次时，携带之律自身具有这些强度，其进程平衡，与安静的进程之差恰是所携带的量。所以对一切具有这些强度的律与其满足上述条件的两个流，一个差至多是 a，恰当所携带的量至多是 a：所携带的量是能到达的最大差别。",
+      "en": "With each condition listed once, the carrying law has those strengths, its course balances, and its gap from the quiet course is exactly the carried amount. So a gap is at most a for every law with those strengths and every two flows of it as above exactly where the carried amount is at most a: the carried amount is the most difference that can arrive.",
+      "declarations": [
+        "Becoming.Propagation.cond_same",
+        "Becoming.carried_quiet",
+        "Becoming.carrying_balances",
+        "Becoming.carried_attained",
+        "Becoming.ExchangeLaw.carrying_respondsWithin",
+        "Becoming.most_difference_arrives"
+      ]
+    },
+    {
+      "zh": "所携带的量为正，恰当有差沿时间中的路线被送到：起始之差、保持、部分之差，或从一个已被送到差的水平经正强度。没有差被送到之处两个流的水平相同；正强度属于识该水平并与该条件交换的形成时，路线是 TimedResponse 之传播的路线。",
+      "en": "The carried amount is positive exactly where a gap is conveyed along a route in time: a starting gap, holding, a gap of the part, or a positive strength from a level to which a gap was conveyed. Where none is, the two flows' levels agree; where the positive strengths are of formations registering the level and exchanging with the condition, the routes are routes of TimedResponse's spread.",
+      "declarations": [
+        "Becoming.Conveyed",
+        "Becoming.Propagation.pos_of_mul_pos",
+        "Becoming.carriedGive_le",
+        "Becoming.carried_pos_iff",
+        "Becoming.Conveyed.spread",
+        "Becoming.levels_alike_of_not_conveyed"
+      ]
+    },
+    {
+      "zh": "两组差合起来所携带的，是各自所携带的之和；更多的差与更大的强度携带更多。",
+      "en": "What two sets of gaps carry together is the sum of what each carries; more gaps and larger strengths carry more.",
+      "declarations": [
+        "Becoming.Propagation.cond_add",
+        "Becoming.Propagation.cond_le_cond",
+        "Becoming.carried_add",
+        "Becoming.carried_mono"
+      ]
+    },
+    {
+      "zh": "一次给出的一个单位，其余每步以两倍于其水平转给第二个条件，到第 t + 1 步在那里到达 2t，没有回路也无界，携带之律的进程恰有这个差；强度为一的回路把它送回，到达 2^t。",
+      "en": "One unit given once, which the rest relays each step to a second condition at twice its level, arrives there as 2t by step t + 1, without bound and with no loop, the carrying course having exactly that gap; returned by a loop of strength one, it arrives as 2^t.",
+      "declarations": [
+        "Becoming.Propagation.total_steps_at",
+        "Becoming.Propagation.two",
+        "Becoming.Propagation.every_two",
+        "Becoming.Propagation.distinct_two",
+        "Becoming.Propagation.both",
+        "Becoming.Propagation.unitAct",
+        "Becoming.Propagation.carried_two_succ",
+        "Becoming.Propagation.Chain.relay",
+        "Becoming.Propagation.Chain.amount",
+        "Becoming.Propagation.Chain.first",
+        "Becoming.Propagation.Chain.relayed",
+        "Becoming.Propagation.Chain.keeps_arriving",
+        "Becoming.Propagation.Chain.gap_arrives",
+        "Becoming.Propagation.Loop.loop",
+        "Becoming.Propagation.Loop.amount",
+        "Becoming.Propagation.Loop.returned",
+        "Becoming.Propagation.Loop.runaway"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。各律所写者写在定理中：两个流平衡且在场形成相同；其余遵从一个读已立者的律（Nonanticipating、Follows）；耦合强度（RespondsWithin）是给出的界；部分之差与起始之差有界；条件全部列出（every），达到处不重复（Distinct）；条件的相等可判定只用于混合条件。",
+      "en": "No axiom. What each law needs is written into it: two balanced flows with the same formations present; the rest following a law of what has stood (Nonanticipating, Follows); the coupling strengths (RespondsWithin) as supplied bounds; bounds on the part's gaps and the starting gaps; every condition listed (every), each once where the amount is attained (Distinct); decided equality of conditions only for mixing."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "一个给定的律有哪些强度：它们作为给出的界进入每条定理；最小的强度需要对每个 k 判定 RespondsWithin。",
+      "en": "Which strengths a given law has: they enter every theorem as supplied bounds, and the least one would need RespondsWithin decided for each k.",
+      "kind": "scope"
+    },
+    {
+      "zh": "读已立者不推出有有限的耦合强度。",
+      "en": "Reading what has stood does not imply a finite coupling strength.",
+      "kind": "non-implication",
+      "witness": "Becoming.Propagation.Square.not_respondsWithin"
+    },
+    {
+      "zh": "有界的输入不推出有界的到达：一次给出的一个单位经一条链无界地到达，没有回路。",
+      "en": "A bounded input does not imply a bounded arrival: one unit given once arrives without bound through a chain, with no loop.",
+      "kind": "non-implication",
+      "witness": "Becoming.Propagation.Chain.keeps_arriving"
+    },
+    {
+      "zh": "对一个具体的律，实际的差可以远小于所携带的量：它是对一切具有这些强度之律的界，在其中一个律上达到。",
+      "en": "For a particular law the actual gap can be far below the carried amount: it bounds every law with those strengths and is attained by one of them.",
+      "kind": "scope"
+    },
+    {
+      "zh": "小于一的强度：量是自然数，衰减的交换只能以强度一为界，所以差别的衰减在这里看不到；实数的量与无穷多条件亦然。",
+      "en": "Strengths below one: amounts are natural numbers, so a decaying exchange is bounded only by strength one and the decay of a difference does not show here; likewise real amounts and infinitely many conditions.",
+      "kind": "scope"
+    },
+    {
+      "zh": "回路的一般理论（任一回路上的强度与失控），这里只有见证；中心怎样表示其所及。",
+      "en": "A general theory of loops, the strength around any loop and its runaway, of which there are only witnesses here; how a center represents what it reaches.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "detail": {
+        "zh": "交换水平平方的律读已立者，却对其水平没有有限的强度：有限的强度是律的条件，不是每个律都有。",
+        "en": "The law exchanging the square of a level reads what has stood and has no finite strength on that level: a finite strength is a condition on a law, not given with every law."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "detail": {
+        "zh": "一次给出的一个单位，其余每步以两倍于其水平转给第二个条件，在那里无界地到达，没有回路：水平持有所给的。",
+        "en": "One unit given once, relayed each step at twice its level to a second condition, arrives there without bound with no loop: levels hold what they are given."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T175539.984165Z）：Becoming.Propagation 的 97 项声明（78 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §141；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T175539.984165Z): the 97 declarations of Becoming.Propagation, 78 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 141; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "回路的一般理论（绕回路的强度与失控）；最小的强度（需判定）；小于一的强度与实数的量；条件无穷多时的界；中心怎样表示其所及；独立审查。",
+    "en": "A general theory of loops (the strength around a loop and its runaway); a least strength (needing a decision); strengths below one and real amounts; the bound with infinitely many conditions; how a center represents what it reaches; an independent review."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，在形式上读作识的强弱；差别到达多少本身是同一展开中由一个律生成的进程，不另加于展开；所持的差别不断到达；Ren 的“highly entangled system”中，纠缠读作交换与彼此水平耦合的强度，不等同于量子的纠缠。系统论中，强度是增量增益（Lipschitz 界），所携带的量是它们的比较系统（离散的 Grönwall 不等式），这里它恰好达到。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”），“增益”留给 P111。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the item of six records' next_delta on how much difference arrives and a measure of coupling. Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D39; 识 itself stays Ren's): the coupling strength is the measure sensitivity lacked, read formally as how strongly a formation registers; how much difference arrives is itself a course one law generates in the one unfolding, not added to it; a held difference keeps arriving; in Ren's “highly entangled system”, entanglement reads as how strongly exchanges are coupled to each other's levels, not as quantum entanglement. In systems terms the strengths are incremental gains (Lipschitz bounds) and the carried amount is their comparison system (a discrete Grönwall inequality), here attained. The name \"coupling strength\" follows the scope of levels-of-closure (\"does not measure the strength of coupling\"), leaving \"gain\" to P111."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+  "aliases": [
+    "how much difference arrives",
+    "差别到达多少",
+    "coupling strength",
+    "耦合强度",
+    "carried amount",
+    "所携带的量",
+    "measure of coupling",
+    "耦合的度量",
+    "measure of sensitivity",
+    "敏感的度量",
+    "most difference that can arrive",
+    "能到达的最大差别",
+    "incremental gain",
+    "增量增益",
+    "comparison system",
+    "比较系统"
+  ],
+  "dependencies": [
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ExchangeLaw、AgreeUpTo、GivesAlike、Nonanticipating、InsensitiveAt、Sensitive、Flow.Follows、levels、levels_succ、totals_under、course、course_balances_iff 与 course_follows：所携带的量由反事实进程的同一生成给出，强度为零恰是其不敏感。",
+        "en": "Reuses ExchangeLaw, AgreeUpTo, GivesAlike, Nonanticipating, InsensitiveAt, Sensitive, Flow.Follows, levels, levels_succ, totals_under, course, course_balances_iff and course_follows: the carried amount is given by the generation of the counterfactual course, and strength zero is exactly its insensitivity."
+      },
+      "interface": {
+        "output": {
+          "zh": "交换律、读已立者、遵从、不敏感与敏感；律生成的水平与进程，及其平衡之判据。",
+          "en": "Laws of exchange, reading what has stood, following, insensitivity and sensitivity; the levels and course a law generates, and when the course balances."
+        },
+        "input": {
+          "zh": "携带之律的进程即所携带的量；强度为零与不敏感相连。",
+          "en": "The carrying law's course is the carried amount; strength zero is tied to insensitivity."
+        },
+        "conditions": {
+          "zh": "条件的相等可判定（混合条件处）。",
+          "en": "Decided equality of conditions (where conditions are mixed)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    },
+    {
+      "id": "timely-response-necessity",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 TimedResponse.Spread、RegistersAt 与 TouchesAt：被送到的差在潜在传播的路线上。",
+        "en": "Reuses TimedResponse.Spread, RegistersAt and TouchesAt: conveyed gaps lie on routes of the potential propagation."
+      },
+      "interface": {
+        "output": {
+          "zh": "逐时的潜在传播：经当时的交换与登记到达的路线。",
+          "en": "Potential propagation in time: routes reached through the exchanges and registration at each time."
+        },
+        "input": {
+          "zh": "被送到的差的路线。",
+          "en": "The routes along which gaps are conveyed."
+        },
+        "conditions": {
+          "zh": "没有起始之差；部分的正差是与该条件交换的源；正强度属于识该水平并与该条件交换的形成。",
+          "en": "No starting gap; every positive gap of the part is a source exchanging with the condition; every positive strength is of a formation registering the level and exchanging with the condition."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "feedback-and-reach",
+      "detail": {
+        "zh": "其下一步“度量他者有回应时到达回应所及之内的差别有多少”由所携带的量回答，在其余遵从具有给定强度之律处。",
+        "en": "Its next step, measuring how much difference arrives within the responsive reach when others respond, is answered by the carried amount, where the rest follows a law with given strengths."
+      }
+    },
+    {
+      "id": "comparison-where-the-rest-responds",
+      "detail": {
+        "zh": "其下一步中按时间先后的所及与差别到达多少的度量，由所携带的量与其时间路线回答；回路的一般理论仍开放。",
+        "en": "Its next steps of ordering the reach in time and measuring how much difference arrives are answered by the carried amount and its routes in time; a general theory of loops stays open."
+      }
+    },
+    {
+      "id": "sensitivity-is-the-least-registration",
+      "detail": {
+        "zh": "其下一步“敏感的度量”：强度为零恰是不敏感，所以强度精化最小的识。",
+        "en": "Its next step, a measure of sensitivity: strength zero is exactly insensitivity, so the strengths refine the least registration."
+      }
+    },
+    {
+      "id": "where-a-move-is-formed",
+      "detail": {
+        "zh": "其下一步“耦合的度量（部分形成动作的多少）”：在交换律上，部分的份额至多是其强度乘部分的改变（ExchangeLaw.exchangeGap_le_shares）。",
+        "en": "Its next step, a measure of coupling (how much of a move a part forms): for laws of exchange, the part's share is at most its strengths times the part's change (ExchangeLaw.exchangeGap_le_shares)."
+      }
+    },
+    {
+      "id": "levels-of-closure",
+      "detail": {
+        "zh": "其范围说共同条件不度量耦合的强度；耦合强度度量它，所携带的量给出差别的时间路线。",
+        "en": "Its scope says the common condition does not measure the strength of coupling; the coupling strengths measure it, and the carried amount gives a difference's routes in time."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "7cbd5dd1a8dca8305d3577091db9e2462c7109c75bfde6c68e0c6564aa012cd1",
+      "declarations": [
+        "Becoming.gap",
+        "Becoming.Propagation.sub_zero_of_le",
+        "Becoming.Propagation.sub_le_of_le_add",
+        "Becoming.Propagation.add_sub_self_left",
+        "Becoming.Propagation.rearrange",
+        "Becoming.Propagation.add_congr",
+        "Becoming.gap_comm",
+        "Becoming.gap_self",
+        "Becoming.gap_zero",
+        "Becoming.gap_add_self",
+        "Becoming.le_add_gap",
+        "Becoming.gap_le_of",
+        "Becoming.gap_le_iff",
+        "Becoming.gap_eq_zero_iff",
+        "Becoming.gap_triangle",
+        "Becoming.gap_add",
+        "Becoming.gap_mul_le",
+        "Becoming.gap_total",
+        "Becoming.gap_of_balances",
+        "Becoming.Flow.exchangeGap",
+        "Becoming.levels_step_exact",
+        "Becoming.gap_step",
+        "Becoming.Flow.exchangeGap_of_alike",
+        "Becoming.gap_step_of_alike",
+        "Becoming.ExchangeLaw.exchangeGap",
+        "Becoming.ExchangeLaw.RespondsWithin",
+        "Becoming.ExchangeLaw.exchangeGap_self",
+        "Becoming.ExchangeLaw.exchangeGap_triangle",
+        "Becoming.ExchangeLaw.exchangeGap_of_alike",
+        "Becoming.ExchangeLaw.alike_of_exchangeGap",
+        "Becoming.ExchangeLaw.RespondsWithin.mono",
+        "Becoming.ExchangeLaw.Nonanticipating.respondsWithin_later",
+        "Becoming.Propagation.mem_steps_of_between",
+        "Becoming.Propagation.between_of_mem_steps",
+        "Becoming.Propagation.mem_steps_upto",
+        "Becoming.Propagation.le_of_mem_steps_upto",
+        "Becoming.Propagation.mem_map_pair",
+        "Becoming.Propagation.of_mem_map_pair",
+        "Becoming.Propagation.mem_append_cases",
+        "Becoming.cellsOf",
+        "Becoming.mem_cellsOf",
+        "Becoming.of_mem_cellsOf",
+        "Becoming.total_cellsOf",
+        "Becoming.mixCells",
+        "Becoming.mixCells_either",
+        "Becoming.mixCells_listed",
+        "Becoming.ExchangeLaw.exchangeGap_le_mixCells",
+        "Becoming.ExchangeLaw.exchangeGap_le_strengths",
+        "Becoming.ExchangeLaw.exchangeGap_le_strengths_listed",
+        "Becoming.ExchangeLaw.exchangeGap_le_shares",
+        "Becoming.ExchangeLaw.insensitiveAt_iff_strength_zero",
+        "Becoming.ExchangeLaw.carrying",
+        "Becoming.carried",
+        "Becoming.carriedGive",
+        "Becoming.ExchangeLaw.carrying_nonanticipating",
+        "Becoming.carried_zero",
+        "Becoming.carried_succ",
+        "Becoming.carried_le_succ",
+        "Becoming.Propagation.webOf",
+        "Becoming.gap_le_carried",
+        "Becoming.Propagation.cond_same",
+        "Becoming.carried_quiet",
+        "Becoming.carrying_balances",
+        "Becoming.carried_attained",
+        "Becoming.ExchangeLaw.carrying_respondsWithin",
+        "Becoming.most_difference_arrives",
+        "Becoming.Conveyed",
+        "Becoming.Propagation.pos_of_mul_pos",
+        "Becoming.carriedGive_le",
+        "Becoming.carried_pos_iff",
+        "Becoming.Conveyed.spread",
+        "Becoming.levels_alike_of_not_conveyed",
+        "Becoming.Propagation.cond_add",
+        "Becoming.Propagation.cond_le_cond",
+        "Becoming.carried_add",
+        "Becoming.carried_mono",
+        "Becoming.ExchangeLaw.sensitive_iff_strength",
+        "Becoming.Propagation.total_steps_at",
+        "Becoming.Propagation.two",
+        "Becoming.Propagation.every_two",
+        "Becoming.Propagation.distinct_two",
+        "Becoming.Propagation.both",
+        "Becoming.Propagation.unitAct",
+        "Becoming.Propagation.carried_two_succ",
+        "Becoming.Propagation.Chain.relay",
+        "Becoming.Propagation.Chain.amount",
+        "Becoming.Propagation.Chain.first",
+        "Becoming.Propagation.Chain.relayed",
+        "Becoming.Propagation.Chain.keeps_arriving",
+        "Becoming.Propagation.Chain.gap_arrives",
+        "Becoming.Propagation.Loop.loop",
+        "Becoming.Propagation.Loop.amount",
+        "Becoming.Propagation.Loop.returned",
+        "Becoming.Propagation.Loop.runaway",
+        "Becoming.Propagation.Square.law",
+        "Becoming.Propagation.Square.succ_square",
+        "Becoming.Propagation.Square.not_respondsWithin"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "a296d36ddc81ac77f72b0a01a1855874bad3e6261ecce9ef321592940c6a1798",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.AgreeUpTo",
+        "Becoming.ExchangeLaw.GivesAlike",
+        "Becoming.ExchangeLaw.Nonanticipating",
+        "Becoming.ExchangeLaw.InsensitiveAt",
+        "Becoming.ExchangeLaw.Sensitive",
+        "Becoming.Flow.Follows",
+        "Becoming.ExchangeLaw.levels",
+        "Becoming.ExchangeLaw.levels_succ",
+        "Becoming.ExchangeLaw.totals_under",
+        "Becoming.ExchangeLaw.course",
+        "Becoming.ExchangeLaw.course_balances_iff",
+        "Becoming.ExchangeLaw.course_follows"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+      "role": "proof",
+      "sha256": "8a93ea0479fee0d06c6f76ae311da72edbf0e3be6069a7657fc49f47e0b7400b",
+      "declarations": [
+        "Becoming.TimedResponse.Spread",
+        "Becoming.TimedResponse.RegistersAt",
+        "Becoming.TimedResponse.TouchesAt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow",
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.taken",
+        "Becoming.Flow.given",
+        "Becoming.steps"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "declarations": [
+        "Becoming.Web"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "5b420062ebf932b498e6d471b1289cbe2ee3c4cd1264aa7186abfc723b26843c",
+      "declarations": [
+        "Becoming.total"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "role": "proof",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "declarations": [
+        "Becoming.Distinct"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "bb692bfeafddff1162d40c2275f87aea31ae19c9a31775a9ab6311c43fed0160"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "a157279e29dcbd14df40baf9059ca25bff526a4e6614ab9563a1b4e1025022c1"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ab288272cd0af1cf0b1b7f2cdd9e695da9a10904fd4d542d4c2d0b1b8c44fe3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Propagation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.TimedResponse",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Population",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，回答六项记录 next_delta 中的差别到达多少与耦合的度量（P115）；研究 §141。",
+      "en": "16 October 2026: added, answering the item of six records' next_delta on how much difference arrives and a measure of coupling (P115); study section 141."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §142，DELEGATED-CHOICES D39）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 142, DELEGATED-CHOICES D39): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    }
+  ],
+  "text_versions": []
+}

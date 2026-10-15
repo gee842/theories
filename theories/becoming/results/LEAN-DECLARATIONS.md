@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 256 | 8,217 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 257 | 8,295 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -508,6 +508,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PreparationCorrespondence.lean](lean-declarations/ethics.md#module-eec9d88a220d) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [PretrainingEvidence.lean](lean-declarations/shared.md#module-c09aabdc4749) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [ProductTower.lean](lean-declarations/core.md#module-4d5adece21ab) | 生成核心与关系结构 / Generative core and relational structure |
+| [Propagation.lean](lean-declarations/core.md#module-b54c1e7958f2) | 生成核心与关系结构 / Generative core and relational structure |
 | [ProtectedScope.lean](lean-declarations/core.md#module-734a8db29b35) | 生成核心与关系结构 / Generative core and relational structure |
 | [ProtectedScopeLimits.lean](lean-declarations/core.md#module-a915d0fcaf85) | 生成核心与关系结构 / Generative core and relational structure |
 | [ProtectionLedger.lean](lean-declarations/shared.md#module-b0831c6b108c) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
