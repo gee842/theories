@@ -1,0 +1,32 @@
+# Landing package: the orders as a sum over histories (P121) and how loops form (P122)
+
+携带差别的阶作为历史之和（P121）与回路怎样在展开中形成（P122）的落地包。内容在分支 `p121-p122-orders-loops`；本目录保存内容的文本与写入它们的脚本。
+
+On 16 October 2026 Ren took P118's readings ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md)): the integration asked about on 12 October is P82's sum over histories with its four losses, P118's orders are of the same structural kind, and the two are not yet joined; loops form and dissolve within the unfolding, taken "pending until a loop-formation theorem exists". Ren then said: "joining P82's sum over histories with P118's orders; a theorem showing how loops form within the unfolding. let's finish both". Overall progress and claims [6a12d4] claimed them on the work board as P121 and P122.
+
+## Content
+
+- `Becoming/Routes.lean` (P121), a new core module in L4, imports `Becoming.Weighted` and `Becoming.Loops`: 30 theorems, 39 declarations. It needs only main.
+  - **Every sum over histories expands by order.** `Weights.within` splits each step's weight into ground and response parts; order j is exact at every horizon up to j (`Weights.within_exact`, right distributivity only), can be read order by order (`Weights.Hom.within`), and for counting rises to the sum (`counting_within_le_succ`, `counting_within_le_transfer`). With one configuration it is P118's `Loops.orderSum`, and the sum is (1 + M)^n (`Routes.SelfLoop`).
+  - **The carried amount is a sum over histories.** Routes back in time (`RoutePoint`, `responseWeight`, `routeWeight`, `routeSum`): the counting transfer of horizon j + 1 is `carriedWithin j` (`routeSum_eq_carriedWithin`), so each order and the carried amount are sums over courses (`carriedWithin_eq_courses`, `carried_eq_courses`), a cut is a truncation (`routeSum_exact`, `routeSum_mono`, `routeSum_le_carried`, `carried_le_routeSum_add`), and with stationary strengths a finite horizon is exact exactly where no loop lies upstream (`finite_horizon_iff_no_loop`).
+- `Becoming/Closing.lean` (P122), a new core module in L4, imports `Becoming.Remainder` (P120): 51 theorems, 61 declarations. From Remainder it uses `CouplesAt`, `couples_iff_couplesAt` and `Remainder.le_of_add_le_add_left_nat`, agreed with P120's owner.
+  - **Loops formed by a step.** `strengthsBefore T k` (the dual of P120's `strengthsFrom`) keeps the couplings acting before T (`couples_before_iff`), so P118's `OnLoop` and `Upstream` apply unchanged; a world's loops are those formed by some step (`coupled_formed`, `onLoop_iff_formed`, `upstream_iff_formed`).
+  - **A loop forms by closing** (`onLoop_succ_iff`, `forms_by_closing`, `responds_to_own_level`; chains join, `Coupled.append`, `onLoop_of_closing`).
+  - **Before a loop forms** (`carried_before`, `carried_le_polynomial_before`; the onset witness `Closing.Onset`: forms at T and not before, same amounts up to T as any later onset, doubling after).
+  - **Couplings read off the course** (`ReadsBefore`, `ExchangeLaw.carryingRead`, `formedCourse`, `formedCourse_eq_carried`; the threshold witness `Closing.Threshold`: level t up to θ, the loop forms at θ and not before, the level plus one doubling after, the course up to θ the same for every later threshold).
+- Scratch builds (`scratch_build.py`): each module has empty axiom reports and no warnings; the root `Becoming` compiles with its 121-module closure (main plus Remainder, Routes and Closing), all steps in the shared cache. Closing was built against P120's Remainder.lean as of sha256 `87588848…` in its owner's worktree.
+- Decidability inventory: a scratch run on main plus Remainder (with P120's one row), Routes and Closing, with only the receipt check skipped, reports 0 unused rows; neither new module adds a row (proof-only 237 → 238 is P120's). No edit to `DECIDABILITY-INVENTORY.py`.
+- Texts and scripts:
+  - `study-p121.md`, `study-p122.md`: study sections, provisionally §155 and §156 (the I4b-2 follow-up holds §153, P120 §154); `study-en.md`: the English paragraphs.
+  - `make_records.py ROOT [S121 S122]`: the new schema-2 records orders-as-a-sum-over-histories and how-loops-form, proof references hashed from ROOT (which needs Remainder.lean), `proof_bindings` empty, "receipt bound at landing". It asserts that the laws list every declaration of each module and that every reused declaration exists.
+  - `update_records.py ROOT [S121 S122]`: one paired history note each in how-a-carried-difference-grows (written on top of P120's edits to it: the two next_delta items P121/P122 answer are replaced by "joining the formation of loops and Becoming.Runaway's policies within one law"; one dated sentence after Ren's readings in correspondence, the readings themselves unchanged; related gains both records), losses-of-the-sum-over-histories (related) and runaway-distance-unregistered (the loop item notes formation; related).
+  - `make_docs_json.py` writes `docs.json`: root bullets, checker scope entries, Lean README rows, the chapter's §2 paragraphs, "Part I stated whole" items, §9 rows and glossary rows.
+  - `apply_docs.py W` (written once P120's texts are on the base): applies `docs.json` after P120's Remainder entries, and the chapter's §8 items and the Loops paragraph's pending clauses.
+
+## Order
+
+1. Base: main after P120 lands (or `p120-remainder`). Copy `Routes.lean` and `Closing.lean` in.
+2. `make_docs_json.py`, `apply_docs.py W`, apply the study sections and paragraph, `update_records.py W`, `make_records.py W`, in that order.
+3. Landing (integrator): the core checker (only Routes, Closing and the root are new steps, all in the shared cache); the decidability page regenerated on the checked bytes (no new rows); chapter §9 and Lean README totals from the receipt; bind the receipt to both new records; rehash the study and chapter references this changes, one reconciliation note per changed record; `research.py render`, the chain review of changed sources, the catalogues, `research.py check` and `make research-test`.
+
+Nothing here runs the checker, edits the board or commits.

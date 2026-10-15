@@ -1,6 +1,6 @@
-## 155. 回路怎样在展开中形成：耦合闭合一条链（Becoming.Closing）
+## 156. 回路怎样在展开中形成：耦合闭合一条链（Becoming.Closing）
 
-2026-10-16。Ren 取了 P118 第三项读法的精炼形式：“一个世界有哪些回路是其情境的一部分；回路在展开中形成与消解，定理按每步所立者取之”，并说“leave it pending until a loop-formation theorem exists”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md)）。同日 Ren 说：“joining P82's sum over histories with P118's orders; a theorem showing how loops form within the unfolding. let's finish both”。本节回答第二项，在第一部分之内：不加公理，除各定理所写的强度不加前提。工作板上认领为 P122；回路的消解（停止的耦合）与时序之链在 P120（`Becoming.Remainder`，§153）。
+2026-10-16。Ren 取了 P118 第三项读法的精炼形式：“一个世界有哪些回路是其情境的一部分；回路在展开中形成与消解，定理按每步所立者取之”，并说“leave it pending until a loop-formation theorem exists”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md)）。同日 Ren 说：“joining P82's sum over histories with P118's orders; a theorem showing how loops form within the unfolding. let's finish both”。本节回答第二项，在第一部分之内：不加公理，除各定理所写的强度不加前提。工作板上认领为 P122；回路的消解（停止的耦合）与时序之链在 P120（`Becoming.Remainder`，§154）。
 
 ```text
 Result(s): 新增 how-loops-form；回答 how-a-carried-difference-grows 的 next_delta 中“回路怎样形成，汲取与

@@ -1,4 +1,4 @@
-## 154. 携带差别的阶作为历史之和：P118 的阶是 P82 的视界（Becoming.Routes）
+## 155. 携带差别的阶作为历史之和：P118 的阶是 P82 的视界（Becoming.Routes）
 
 2026-10-16。Ren 取了 P118 读法的这一形式：Ren 2026-10-12 所问的积分，对不确定的律，是 P82 的历史之和及其四种损失（`Becoming.Weighted`）；P118 的阶是同一结构类的，按回应次数组织，如同费曼图按顶点数；两者尚未接合（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md)）。同日 Ren 说：“joining P82's sum over histories with P118's orders; a theorem showing how loops form within the unfolding. let's finish both”。本节回答第一项，在第一部分之内：不加公理，除各定理所写者不加前提。工作板上认领为 P121。
 
