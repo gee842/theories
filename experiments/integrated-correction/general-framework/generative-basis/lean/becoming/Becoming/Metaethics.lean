@@ -77,18 +77,17 @@ Results:
 * Read stepwise, with dependences that may change (`Web.valuation`), an event is
   living when it is active and not undermining: it does not draw on a condition at a
   step after which the condition is below both the present need of a dependence on it
-  and a need of that dependence met while it held. This is the stepwise
-  reading, kept beside the whole-run and relation-level readings on Ren's delegation of 15 October
-  2026; no comparison uses it (DELEGATED-CHOICES D1, D10). Being within renewal at the
-  step is not used as `living`, since it withholds the event of a formation whose own
-  dependence breaks (`Renewable.broken_formation`); not breaking is not used either, since
-  it includes drawing after a loss, which in `Renewable` keeps the condition from
-  returning (`Renewable.drawing_after_loss`). The same results hold: a common condition
-  discharges connection, and an event drawing at a step that breaks a dependence is
-  related to the broken formation, so under N_rel valuing it reaches that formation's
-  living events (`Web.valuing_breaking_reaches`). On fixed dependences the two readings share
-  `related`, both include the broken formation's own event, and they include different
-  events in both directions (`Renewable.readings_differ`).
+  and a need of that dependence met while it held. This is the stepwise reading, kept beside the
+  whole-run and relation-level readings on Ren's delegation of 15 October 2026; no comparison uses
+  it (DELEGATED-CHOICES D1, D10). Being within renewal at the step is not used as `living`, since it
+  withholds the event of a formation whose own dependence breaks (`Renewable.broken_formation`); not
+  breaking is not used either, since it includes drawing after a loss, which in `Renewable` keeps
+  the condition from returning (`Renewable.drawing_after_loss`). The same results hold: a common
+  condition discharges connection, and an event drawing at a step that breaks a dependence is
+  related to the broken formation, so under N_rel valuing it reaches that formation's living events
+  (`Web.valuing_breaking_reaches`). On fixed dependences the two readings share `related`, both
+  include the broken formation's own event, and they include different events in both directions
+  (`Renewable.readings_differ`).
 * Read through relations (`Web.relations`), a claim is a formation's relation to a
   condition at a step, living when the formation is active, participates in the
   condition and the relation is not undermining. The stepwise reading of events is the

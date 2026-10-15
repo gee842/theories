@@ -118,8 +118,7 @@ where the choice has consequences. `ending_breaks` counts drawing on a relatum t
 bears on itself, at the step at which it ends, against living, whatever ends it;
 on Ren's delegation of 15 October 2026 this stays a verdict of the stepwise reading, for every
 drawer, valuing no drawer (DELEGATED-CHOICES D6). Dissipation is the physical premise of
-`Becoming.Dissipation`. No ethical
-predicate, ranking or axiom occurs.
+`Becoming.Dissipation`. No ethical predicate, ranking or axiom occurs.
 -/
 
 open Generative

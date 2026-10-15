@@ -341,8 +341,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   that meets it. A target of more than now is met only by change and, met at every step, needs
   an open world; a target of above all others is met by at most one seeker at a state. Where
   what stands is listed, rising without end needs steps at which what stands does not run down,
-  and where it runs down from some step on the rises stop. The readings are the AI's, adopted
-  on Ren's delegation of 15 October 2026.
+  and where it runs down from some step on the rises stop. The readings are the AI's, adopted on
+  Ren's delegation of 15 October 2026.
 * `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
   two-kind reading embeds as the one in which no formation is a condition, and which
   condition is which formation is supplied by the shared index. Where a relatum stands
@@ -398,12 +398,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   relata either recurs without the other. Ren confirmed arising and ceasing as the
   English names of this reading; Ren's generative and degenerative read, on Ren's delegation of 15
   October 2026, as widening and narrowing what can form, which this reading is not
-  (DELEGATED-CHOICES D2). Each
-  premise is met by some worlds and not by others. Arising recurring or not,
-  and ceasing recurring or not, occur both with every event living and with some event
-  not living. Dissipation brings a finite,
-  balanced world whose activity is decided and whose arising is embodied to rest, and each
-  of these premises is needed.
+  (DELEGATED-CHOICES D2). Each premise is met by some worlds and not by others. Arising recurring or
+  not, and ceasing recurring or not, occur both with every event living and with some event not
+  living. Dissipation brings a finite, balanced world whose activity is decided and whose arising is
+  embodied to rest, and each of these premises is needed.
 * `Becoming.Premises` (L3): the map of premises. Activity needing support makes activity
   carried, embodiment makes whatever arises embodied, a finite world whose activity is
   decided has a census, and where only active relata take and the flow dissipates, only
@@ -640,9 +638,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   descends from or that descend from it (`Becoming.Evolution`). An embodied relatum that
   arises descends from another active formation, so under N_rel valuing that formation
   reaches the arisen relatum's living events, and generations each given by the one before
-  are connected by descent alone. On Ren's delegation of 15 October 2026 these
-  readings count as formed relations of continuation, not as direct valuations (DELEGATED-CHOICES
-  D9).
+  are connected by descent alone. On Ren's delegation of 15 October 2026 these readings count as
+  formed relations of continuation, not as direct valuations (DELEGATED-CHOICES D9).
 * `Becoming.Standpoints` (L4): whose continuation counts. Where every living claim is
   held, lying in the own region of some position, G0 is S0 at every position with
   standpoint neutrality, with neither connection nor relational neutrality; lives no
@@ -675,8 +672,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   What retains in the whole retains within every region, while centers bounded by their
   dependence license the free rider and disagree. Where nothing has significance nothing
   is ordered, so the axiom is needed. The reading is the AI's, adopted on Ren's delegation of 15
-  October 2026. G0 is a theorem
-  of this axiom and, since Ren folded it on 11 October 2026, no longer an axiom.
+  October 2026. G0 is a theorem of this axiom and, since Ren folded it on 11 October 2026, no longer
+  an axiom.
 * `Becoming.Interdependence` (L4): how far the route without axiom reaches. What a
   formation's continuation depends on is its feeding closure, the least region holding it
   that is closed under feeding, and nothing beyond the closure gives to what it requires.
@@ -843,12 +840,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   restraint and sharing as the whole-run reading does and withholds no event; it leaves
   a formation that adds no possibility unranked against its absence, where both
   readings of `living` rank its presence higher. The readings are the AI's, adopted on Ren's
-  delegation of 15 October 2026.
-  After this audit Ren folded G0 (11 October 2026): it is a condition with no axiom in
-  Part I and a theorem of the axiom in Part II. Ren then folded positive relevance into
-  significance, with which G0 is the axiom's condition on realized living content
-  (`g0_relevance_iff`), and left the comparison of courses to the AI, which compares
-  courses on possibilities.
+  delegation of 15 October 2026. After this audit Ren folded G0 (11 October 2026): it is a condition
+  with no axiom in Part I and a theorem of the axiom in Part II. Ren then folded positive relevance
+  into significance, with which G0 is the axiom's condition on realized living content
+  (`g0_relevance_iff`), and left the comparison of courses to the AI, which compares courses on
+  possibilities.
 
 * `Becoming.Assurance` (L2): when a plan secures its target, with no premise. For every
   process a completing plan runs, safely, into the goal; for every determined process the

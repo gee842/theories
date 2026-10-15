@@ -49,11 +49,9 @@ reading.
   identification, not embodiment.
 
 On Ren's delegation of 15 October 2026 living on a relatum and descent count as formed relations of
-continuation for N_rel, not as direct valuations, so that
-valuing the fox's eating reaches the hare and valuing a parent reaches its offspring
-(DELEGATED-CHOICES
-D9). Descent relates relata that come to stand; it does not
-make bringing them about better, which is the question of C. No axiom occurs.
+continuation for N_rel, not as direct valuations, so that valuing the fox's eating reaches the hare
+and valuing a parent reaches its offspring (DELEGATED-CHOICES D9). Descent relates relata that come
+to stand; it does not make bringing them about better, which is the question of C. No axiom occurs.
 -/
 
 namespace Becoming

@@ -10,18 +10,16 @@ every world. The laws stated with no premise hold of each world. The premises of
 theorems are met by some worlds and not by others, so they carve out parts.
 
 On Ren's delegation of 15 October 2026, Ren's "generative" and "degenerative" read as widening and
-narrowing what can form, and at the level of formations as renewing and consuming (DELEGATED-CHOICES
-D2). Ren wrote,
-"generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧", a tag question
-presuming that the two do not overlap. The spine offers two readings.
-Read as relations, a formation renewing what it takes part in and one consuming what it
-draws on (`Web.RenewingIn`, `Web.ConsumingIn`) never coincide
-(`Web.renewing_not_consuming`), though one occurrence can take part in both. Read as
-activity, arising recurring and ceasing recurring (`World.ArisingRecurs`,
-`World.CeasingRecurs`) coincide in finite worlds, so this reading is not what the pair names (D2).
-This module states the second. Ren
-confirmed arising and ceasing as the better names for it ("arising/ceasing is indeed better
-name"); they do not claim Ren's words.
+narrowing what can form, and at the level of formations as renewing and consuming
+(DELEGATED-CHOICES D2). Ren wrote,
+"generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧", a tag question presuming
+that the two do not overlap. The spine offers two readings. Read as relations, a formation renewing
+what it takes part in and one consuming what it draws on (`Web.RenewingIn`, `Web.ConsumingIn`) never
+coincide (`Web.renewing_not_consuming`), though one occurrence can take part in both. Read as
+activity, arising recurring and ceasing recurring (`World.ArisingRecurs`, `World.CeasingRecurs`)
+coincide in finite worlds, so this reading is not what the pair names (D2). This module states the
+second. Ren confirmed arising and ceasing as the better names for it
+("arising/ceasing is indeed better name"); they do not claim Ren's words.
 
 * **The space.** A world is its relata, read with one kind of relatum (`Becoming.Roles`),
   with the flow among them and their web (`World`). The two-kind reading of any flow and
@@ -51,15 +49,14 @@ name"); they do not claim Ren's words.
   drawing each on its own standing (`selfDrawing`) also has an event that is not living, but
   only on the stepwise verdict about drawing on a self-bearing relatum at its ending,
   a theorem of that reading which no comparison uses (DELEGATED-CHOICES D6). The grazer's event lies
-  outside that verdict as worded, yet
-  the browser whose dependence it undermines, active at that step, ends there
-  (`World.grazing_browser_ends`). Where activity needs support, a relatum whose unchanged
-  dependence is undermined is not active after the step, which is its ending where it was
-  active (`Web.Dependent.ceases_below`); where it was dormant, nothing ends: in `seedbank`
-  an event is not living while nothing in the world ever ceases (`World.seedbank_world`).
-  Undermining that co-occurs with the relatum depending not being active after the
-  step is a verdict of the same kind, for every drawer, and values no drawer: whether a course is
-  worse is for the comparison on possibilities (D6).
+  outside that verdict as worded, yet the browser whose dependence it undermines, active at that
+  step, ends there (`World.grazing_browser_ends`). Where activity needs support, a relatum whose
+  unchanged dependence is undermined is not active after the step, which is its ending where it was
+  active (`Web.Dependent.ceases_below`); where it was dormant, nothing ends: in `seedbank` an event
+  is not living while nothing in the world ever ceases (`World.seedbank_world`). Undermining that
+  co-occurs with the relatum depending not being active after the step is a verdict of the same
+  kind, for every drawer, and values no drawer: whether a course is worse is for the comparison on
+  possibilities (D6).
 * **Dissipation brings a finite world to rest.** In a finite, balanced, dissipative world
   in which whatever arises is embodied, that the world rests from some step on cannot be
   refuted (`World.rests_unrefuted`, `World.RestsFrom`), so neither arising nor ceasing recurs
@@ -419,10 +416,9 @@ theorem selfDrawing_finite : selfDrawing.Finite :=
 
 /-- The same activity as `shuttle`, so arising and ceasing recur, while not every event is
 living in the stepwise reading: the holder draws on its own standing as it hands it on,
-the undermining of `Embodied.ending_breaks`. On the stepwise reading such drawing at an
-ending is not living, for every drawer, and the verdict values no drawer (DELEGATED-CHOICES D6). The
-flow balances, only active sides give and take, and
-they take only from what they draw on. -/
+the undermining of `Embodied.ending_breaks`. On the stepwise reading such drawing at an ending is
+not living, for every drawer, and the verdict values no drawer (DELEGATED-CHOICES D6). The flow
+balances, only active sides give and take, and they take only from what they draw on. -/
 theorem selfDrawing_world :
     selfDrawing.Finite ∧ selfDrawing.ArisingRecurs ∧ selfDrawing.CeasingRecurs ∧
     ¬ selfDrawing.Living ∧ selfDrawing.Dependent ∧ selfDrawing.Balanced ∧ selfDrawing.Acting ∧

@@ -55,14 +55,13 @@ holds for every weighting and listing it names.
   (`entries_within_not_together`).
 
 **Readings.** The AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D30). The
-AI reads "Fermi's diagrams" as Feynman diagrams, whose
-sum over histories has this shape: the weight of a history is composed of the weights of its
-steps, and alternatives add. Read so, the module answers the question in four parts. The sum is
-exact, for every number of courses, with finitely many configurations and a bounded horizon. It
-is exact through a coarser description exactly where that description is lumpable. Its losses are
-the four above: a truncation misses exactly what it drops, possibility cannot see a cancellation,
-memory must be kept in the configuration, and loops multiply courses without bound. Every axiom
-report of the module is empty, as the core's are.
+AI reads "Fermi's diagrams" as Feynman diagrams, whose sum over histories has this shape: the weight
+of a history is composed of the weights of its steps, and alternatives add. Read so, the module
+answers the question in four parts. The sum is exact, for every number of courses, with finitely
+many configurations and a bounded horizon. It is exact through a coarser description exactly where
+that description is lumpable. Its losses are the four above: a truncation misses exactly what it
+drops, possibility cannot see a cancellation, memory must be kept in the configuration, and loops
+multiply courses without bound. Every axiom report of the module is empty, as the core's are.
 
 What is not derived: where weights come from, or which weighting an actual unfolding has; this is
 a further law or an empirical correspondence. Signed counts are the least weighting here that

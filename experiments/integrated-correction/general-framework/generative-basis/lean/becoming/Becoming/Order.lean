@@ -138,14 +138,14 @@ are taken in the other order.
   world without idle steps it reads (`World.withoutIdle_totals`, `World.withoutIdle_counts`).
 
 Reading (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D30): for the
-laws of one step, the totals and counts over a stretch,
-and recurrence, the step index carries nothing beyond the order of change; an idle step
-registers nothing, and removing it changes nothing the laws state. What is counted per step,
-rates and how long a reserve carries, is relative to the unit of the reading, as coarser steps
-were (`Becoming.Sampling`). Within the order, what registers is the order of exchanges joined
-through a relatum or a dependence: with a footprint, the order the laws need is the partial order
-`Precedes`, not a sequence of steps. Commuting exchanges it does not order keeps every premise and
-the order itself, and every arrangement of the same exchanges keeping it is reached so.
+laws of one step, the totals and counts over a stretch, and recurrence, the step index carries
+nothing beyond the order of change; an idle step registers nothing, and removing it changes nothing
+the laws state. What is counted per step, rates and how long a reserve carries, is relative to the
+unit of the reading, as coarser steps were (`Becoming.Sampling`). Within the order, what registers
+is the order of exchanges joined through a relatum or a dependence: with a footprint, the order the
+laws need is the partial order `Precedes`, not a sequence of steps. Commuting exchanges it does not
+order keeps every premise and the order itself, and every arrangement of the same exchanges keeping
+it is reached so.
 
 Not shown: a footprint derived from the world. The footprint is given and decided, and the order
 is relative to it; the least footprint, each step touching exactly what takes part in it or moves

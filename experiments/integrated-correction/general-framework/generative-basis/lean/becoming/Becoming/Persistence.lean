@@ -82,13 +82,13 @@ taken for the next, it induces a continuation (`World.Conserves`): `f` after the
   the class across the dormancy; only keeping the names of what holds does.
 
 Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D5): that what
-holds, rather than activity alone, carries a formation
-across dormancy, and that `Web.Holds` (activity or a held dependence) is the relation that does;
-the theorems hold for every `h`. That the balance of standing is the world's own relation across
-a step is a fact of `World`, whose other relations each belong to one step; reading conservation
-as *the* continuation the relations induce is a reading. Conservation follows standing, not a
-unit handed on: in the shuttle it follows the two sides, and the reading in which the unit is one
-formation travelling between them breaks the balance.
+holds, rather than activity alone, carries a formation across dormancy, and that `Web.Holds`
+(activity or a held dependence) is the relation that does; the theorems hold for every `h`. That the
+balance of standing is the world's own relation across a step is a fact of `World`, whose other
+relations each belong to one step; reading conservation as *the* continuation the relations induce
+is a reading. Conservation follows standing, not a unit handed on: in the shuttle it follows the two
+sides, and the reading in which the unit is one formation travelling between them breaks the
+balance.
 
 Not derived: undermining under naming within conservation (it follows a formation's tenure across
 steps, which conservation fixes only where standings are apart); class along a continuation that

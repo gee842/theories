@@ -44,14 +44,13 @@ histories, and states what tests fix of likeness. No premise beyond what each th
   claims are decided (`alike_iff_sameBranchingTests` of `Becoming.Likeness`).
 
 **Readings.** The AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D32). Ren
-agreed (12 October 2026) that law and history are one
-unfolding read two ways, the law read off the unfolding rather than set over it
-("there are no two realities"). Read with this module: a law read off histories is a family of
-histories holding its splices, and nothing else; what a law set over the unfolding can add are
-dead ends, which no history shows. The splice is memory's absence: a law answers from where one
-is, not from how one came there, so a family that remembers how it came (a kept history) shows a
-law with no other history (`Run.keepHistory_shown`). What tests cannot see is when a choice is
-made: with branching, only tests that branch see it.
+agreed (12 October 2026) that law and history are one unfolding read two ways, the law read off the
+unfolding rather than set over it ("there are no two realities"). Read with this module: a law read
+off histories is a family of histories holding its splices, and nothing else; what a law set over
+the unfolding can add are dead ends, which no history shows. The splice is memory's absence: a law
+answers from where one is, not from how one came there, so a family that remembers how it came (a
+kept history) shows a law with no other history (`Run.keepHistory_shown`). What tests cannot see is
+when a choice is made: with branching, only tests that branch see it.
 
 What is not derived: whether an unfolding's histories stop (the core's runs are unending, which is
 where dead ends come from; with histories that stop there are none); that

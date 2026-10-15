@@ -93,10 +93,9 @@ October 2026 (DELEGATED-CHOICES D23).
 - (Superseded: on 14 October 2026 Ren asked “why do we need "World"?” and approved the readings in
   context as the general case, `World` being the case where they glue, `Becoming.Readings`;
   DELEGATED-CHOICES D23.) `World` is where the core begins; a labelled process is a world read with
-  its configuration
-  split into what the law fixes and what it leaves open, and a frame is a world read through
-  its claims. The two directions are both proved: every run with its claims is a world that
-  fixes it, and every world is a run of the law it shows, and of the law of exchange where it
+  its configuration split into what the law fixes and what it leaves open, and a frame is a world
+  read through its claims. The two directions are both proved: every run with its claims is a world
+  that fixes it, and every world is a run of the law it shows, and of the law of exchange where it
   balances. Neither reading is the ground of the other; the world is stated first because its
   relations are among relata of one kind.
 - An agent's choice is not a second kind of cause beside the unfolding. What an outside mover

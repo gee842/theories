@@ -36,8 +36,8 @@ them, with no premise:
   (`registered_within_exact`).
 
 The readings are the AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D34):
-what tells configurations apart within a bounded world
-is a finite record, and its length is set by the number of configurations, exactly.
+what tells configurations apart within a bounded world is a finite record, and its length is set by
+the number of configurations, exactly.
 -/
 
 namespace Becoming

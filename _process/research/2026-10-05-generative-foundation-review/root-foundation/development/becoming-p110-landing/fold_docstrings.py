@@ -12,12 +12,17 @@ re-founding, 14 October 2026). What stays Ren's (section 10 of DELEGATED-CHOICES
 touched, and nothing outside comments changes: for every file, the text with comments and
 docstrings removed is asserted to be identical before and after, so no statement, proof or
 name can change. Each replacement is asserted to occur exactly once, matching across line
-breaks; where the original phrase wrapped, the line break is kept after the same word.
+breaks. In the Lean files each changed paragraph is then refilled at 100 columns (a wide
+character counting two) from its first changed line, changing line breaks only (asserted by
+comparing the words of the file).
+
+The fold is applied on the branch and is not idempotent (its exactly-once assertions fail on
+folded text): to apply it again, restore the files it changed from the commit before the fold.
 """
 import difflib
 import re
 import sys
-import textwrap
+import unicodedata
 from pathlib import Path
 
 LEAN = Path("experiments/integrated-correction/general-framework/generative-basis/lean/becoming")
@@ -259,23 +264,86 @@ def rewrap(matched, new):
     return new
 
 
-def wrap_changed(before, after, width=100):
-    """Wrap the lines the fold lengthened beyond `width`, keeping their indentation (a bullet's
-    continuation lines indented under its text), as the surrounding docstrings are wrapped."""
-    a, b = before.split("\n"), after.split("\n")
+BOUNDARY = re.compile(r"^(?:[*-] |\d{1,2}\. |-/|/-|#|\||```)")
+
+
+def indent(line):
+    return len(line) - len(line.lstrip(" "))
+
+
+def opened(token):
+    """Whether a code span or a quotation is still open at the end of the token."""
+    return (token.count("`") % 2 or token.count('"') % 2
+            or token.count("“") > token.count("”"))
+
+
+def tokens(text):
+    """Words, with a code span, a quotation of at most 80 columns and a decision's number kept
+    with DELEGATED-CHOICES as one, so that a refill does not break inside them."""
     out = []
+    for word in text.split():
+        if out and (opened(out[-1]) or out[-1].endswith(DC)):
+            out[-1] += " " + word
+        else:
+            out.append(word)
+    kept = []
+    for token in out:
+        quoted = '"' in token or "“" in token
+        kept.extend(token.split() if quoted and "`" not in token and columns(token) > 80 else [token])
+    return kept
+
+
+def columns(text):
+    """Display width: wide East Asian characters take two columns."""
+    return sum(2 if unicodedata.east_asian_width(ch) in "WF" else 1 for ch in text)
+
+
+def refill_changed(before, after, width=100):
+    """Refill each paragraph of a comment the fold changed, from its first changed line to its
+    end, at `width` columns, as the surrounding docstrings are wrapped: the first line keeps its
+    indentation and bullet, the rest the paragraph's own indentation. A paragraph ends at a blank
+    line, at a line with other indentation, at a line opening a bullet, heading, table or comment,
+    and at the end of a comment. Only line breaks change: the words of the file are asserted to be
+    the same."""
+    a, b = before.split("\n"), after.split("\n")
+    changed = set()
     for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
-        for line in b[j1:j2]:
-            if op == "equal" or len(line) <= width:
-                out.append(line)
-                continue
-            m = re.match(r"^(\s*)([*-] )?", line)
-            first = m.group(1) + (m.group(2) or "")
-            rest = m.group(1) + ("  " if m.group(2) else "")
-            out.extend(textwrap.wrap(line[len(first):], width=width, initial_indent=first,
-                                     subsequent_indent=rest, break_long_words=False,
-                                     break_on_hyphens=False))
-    return "\n".join(out)
+        if op != "equal":
+            changed.update(range(j1, j2))
+    out, j = [], 0
+    while j < len(b):
+        line = b[j]
+        stripped = line.strip()
+        if j not in changed or not stripped or stripped.startswith("--"):
+            out.append(line)
+            j += 1
+            continue
+        bullet = re.match(r"^(\s*)([*-] )", line)
+        first = bullet.group(0) if bullet else " " * indent(line)
+        nxt = b[j + 1] if j + 1 < len(b) else ""
+        if bullet:
+            rest = indent(line) + 2
+        elif stripped.startswith(("/--", "/-!")) and nxt.strip() and not BOUNDARY.match(nxt.strip()):
+            rest = indent(nxt)
+        else:
+            rest = indent(line)
+        k = j
+        while (k + 1 < len(b) and not b[k].rstrip().endswith("-/") and b[k + 1].strip()
+               and indent(b[k + 1]) == rest and not BOUNDARY.match(b[k + 1].strip())):
+            k += 1
+        words = tokens(line[len(first):] + " " + " ".join(x.strip() for x in b[j + 1:k + 1]))
+        current = first + words[0]
+        for word in words[1:]:
+            if columns(current) + 1 + columns(word) <= width:
+                current += " " + word
+            else:
+                out.append(current)
+                current = " " * rest + word
+        out.append(current)
+        j = k + 1
+    result = "\n".join(out)
+    assert result.split() == after.split(), "the refill changed more than line breaks"
+    return result
 
 
 def code_only(text):
@@ -338,7 +406,7 @@ def main():
             failures.append((rel.name, str(error)))
             continue
         if rel.suffix == ".lean":
-            text = wrap_changed(before, text)
+            text = refill_changed(before, text)
             assert code_only(text) == code_only(before), ("code outside comments changed", rel)
         left = [m.group(0) for line in text.split("\n") if not any(k in line for k in KEEP_LINES)
                 for m in PENDING.finditer(line)]

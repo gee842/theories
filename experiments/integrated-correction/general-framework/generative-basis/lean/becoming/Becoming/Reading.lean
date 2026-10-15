@@ -60,16 +60,15 @@ the ties hold by what the readings are.
   and no history fixes it.
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D27, D28).**
-Of the eight premises, balance, only active relata giving,
-only active relata taking and only from what they draw on, and activity needing support tie
-readings of one exchange together: read off the exchange, with the rest counted and requirement
-read as what the exchange responds to, they hold by what the readings are. What remains are states
-of parts: that the rest is idle (closure, which for a law is feasibility), dissipation (loss), that
-a relatum exchanges exactly while it stands (embodiment; a relatum standing while it does not
-exchange is dormant), bounded transmission of dependence, and that exchanging is decided where the
-active relata are to be listed. The independence of `World.independent` is the freedom of
-separately chosen readings: in its witnesses for these four premises a reading is chosen apart
-from the exchange it reads.
+Of the eight premises, balance, only active relata giving, only active relata taking and only from
+what they draw on, and activity needing support tie readings of one exchange together: read off the
+exchange, with the rest counted and requirement read as what the exchange responds to, they hold by
+what the readings are. What remains are states of parts: that the rest is idle (closure, which for a
+law is feasibility), dissipation (loss), that a relatum exchanges exactly while it stands
+(embodiment; a relatum standing while it does not exchange is dormant), bounded transmission of
+dependence, and that exchanging is decided where the active relata are to be listed. The
+independence of `World.independent` is the freedom of separately chosen readings: in its witnesses
+for these four premises a reading is chosen apart from the exchange it reads.
 
 What is not derived: which law of exchange holds; that a formation's exchange responds to any
 condition; the need at which it responds; and the states of parts named above. No ethical

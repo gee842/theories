@@ -43,10 +43,9 @@ what it carries.
   every arising is of one of the two, whose activity does not end (`Layered.arise_again`).
 
 Which formations are parts of which, and whether a lineage is read as the whole of its
-members, are representational choices. On Ren's delegation of 15 October 2026 生生不息 is read at the
-level of the whole, as arising that recurs through renewal, lineages and members being levels within
-it (DELEGATED-CHOICES D5). No
-ethical predicate, ranking or axiom occurs.
+members, are representational choices. On Ren's delegation of 15 October 2026 生生不息 is read at
+the level of the whole, as arising that recurs through renewal, lineages and members being levels
+within it (DELEGATED-CHOICES D5). No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming

@@ -54,8 +54,8 @@ center, whose continuation counts. This module states the center on the valuatio
   conveyed between two conditions relates their events (`Flow.roles_conveyance`), while
   interaction, living on and descent relate no two conditions at any steps
   (`Flow.roles_conditions_unrelated`), so the fuel and the resource of `Clearing` are
-  related by conveyance alone (`Clearing.conveyance_only`). On Ren's delegation of
-  15 October 2026 conveyance counts as a formed relation, as interaction, living on and descent do
+  related by conveyance alone (`Clearing.conveyance_only`). On Ren's delegation of 15 October 2026
+  conveyance counts as a formed relation, as interaction, living on and descent do
   (DELEGATED-CHOICES D9, D12).
 * **The center is not derived along dependence.** The continuation of an event's
   formation is *fed by* another event when, at their common step, the other's formation
@@ -75,10 +75,9 @@ center, whose continuation counts. This module states the center on the valuatio
 Reading S0 as what wanting is, the seed at each wanting point, and standpoint neutrality as
 the one axiom, so that what has significance from any center has it from every standpoint
 and no center is privileged, is the AI's reading of Ren's proposal, adopted on Ren's delegation of
-15 October 2026 (DELEGATED-CHOICES D11). G0 is no
-longer an axiom: Ren folded it on 11 October 2026. The source of `Clearing` requires
-nothing by stipulation. Decided holding is a disclosed logical commitment of
-`significant_iff_reached`, as decided equality is of the conveyance results. Names are
+15 October 2026 (DELEGATED-CHOICES D11). G0 is no longer an axiom: Ren folded it on 11 October 2026.
+The source of `Clearing` requires nothing by stipulation. Decided holding is a disclosed logical
+commitment of `significant_iff_reached`, as decided equality is of the conveyance results. Names are
 working names.
 -/
 

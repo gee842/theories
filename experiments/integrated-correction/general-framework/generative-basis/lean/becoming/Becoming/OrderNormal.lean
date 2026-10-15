@@ -83,12 +83,11 @@ read off the world.
     exactly where being unmoved is decided for the relata taking no part (`decidesIdle_iff`).
 
 Reading (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D30): the order
-of exchanges is an object of its own. Which arrangements
-of a stretch are the same course of change is fixed by the order of joined exchanges alone, with no
-decision; picking one arrangement to stand for each, a normal form, needs exactly that apartness be
-decided, and names for the exchanges. Counting what is active or stands does not depend on the
-order at all. Read off the world, the order is least where idleness is decided, and then it is the
-world's own rather than a footprint's.
+of exchanges is an object of its own. Which arrangements of a stretch are the same course of change
+is fixed by the order of joined exchanges alone, with no decision; picking one arrangement to stand
+for each, a normal form, needs exactly that apartness be decided, and names for the exchanges.
+Counting what is active or stands does not depend on the order at all. Read off the world, the order
+is least where idleness is decided, and then it is the world's own rather than a footprint's.
 
 Not shown: a normal form without names. The normal form is canonical relative to the names of the
 exchanges, here the steps of one arrangement (`Footprinted.normalize_reorder` names each exchange by

@@ -38,14 +38,13 @@ what each theorem states.
   no determined process admits the steps so read (`Confound.varied_refutes`).
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).** An
-experiment is varying one's own act where the
-configuration, read as the experimenter reads it, returns. Replication is that return. A
-control is the claim that what differs between the occasions is irrelevant: the model that
-the step factors through the reading. Varying the act independently of what the reading
-leaves out is what can refute a wrong control; acts in step with it never refute it. With the
-registration of `Becoming.Testing` as the reading, an experiment through what registers is
-right where the unfolding factors through what registers; threshold and reach blindness are
-cases where it does not.
+experiment is varying one's own act where the configuration, read as the experimenter reads it,
+returns. Replication is that return. A control is the claim that what differs between the occasions
+is irrelevant: the model that the step factors through the reading. Varying the act independently of
+what the reading leaves out is what can refute a wrong control; acts in step with it never refute
+it. With the registration of `Becoming.Testing` as the reading, an experiment through what registers
+is right where the unfolding factors through what registers; threshold and reach blindness are cases
+where it does not.
 
 What is not derived: that a formation varies its acts, keeps or forgets its history, or forms a
 projection; which projection the actual unfolding factors through; and that what is fixed is

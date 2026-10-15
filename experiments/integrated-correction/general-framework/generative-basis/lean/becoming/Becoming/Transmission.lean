@@ -99,8 +99,7 @@ support where the descendant is active as it comes to stand and levels are bound
 actual descent forms dependences so, how reconstruction and development carry them, and where
 descent forms new dependences, as when young come to depend on their parents, are matters of
 correspondence. The readings are the AI's, adopted on Ren's delegation of 15 October 2026
-(DELEGATED-CHOICES D31). No ethical predicate, ranking or axiom
-occurs.
+(DELEGATED-CHOICES D31). No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
