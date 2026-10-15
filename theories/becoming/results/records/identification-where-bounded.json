@@ -587,13 +587,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e4ba98b41c3e49bac2a63ffcbd549204147369af2b74de0fe48e8ef7dd1f4335",
+      "sha256": "fcf2eda1c90df93abfce7b6180eb3d33b95730f9a582eb705743b76fb48bd52c",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "d17289824136fd4b5761811ff2ed8d871fe2ee8cd96da087b9fec98aca608795",
+      "sha256": "fe3428622cb4a51698845c81968afd845c22eb38876d59e63dd26162fbc30822",
       "declarations": []
     },
     {
@@ -642,16 +642,16 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T152724.599820Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T154730.760380Z/verification.json",
       "role": "receipt",
-      "sha256": "d6b6b1a0296e9f50dfe666eb8c59b337ac6d7255cb05dbcdf8773bcb340f61d6",
+      "sha256": "af0ea641fd3841aeebe285ac4e7e0faeaa0ab1c9e7d2924fb1d2f85710bb8a0f",
       "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T152724.599820Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T154730.760380Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -824,6 +824,10 @@
     {
       "zh": "2026-10-15 P83f：按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”，回答 next_delta 中的“未给定界的学习者的最优静止之步”：对每个学习者最优的静止之步是 2N − 1，不需要界。新增第十五条规律（leastBound_exact、rest_earliest、rest_without_bound_refuted）；陈述由“……未给定界的学习者在界给出的一步之前静止。”改为“……不给定界时，以最小的界读记录的学习者从 2N − 1 起每步都对，与任何学习者能做到的一样早：界给出沉默，不给出更早的静止。”（原陈述英文：‘A bounded record fixes the course at an exact length. With the bound given, induction is deduction: the learner given it is right from 2N − 1 on and none can always speak sooner; the learner not given it rests by a step the bound gives. Finite names name the split that makes sense, with no quotient.’）；第二项假设写出新学习者要值可判定、两条否定的定理不要；“未表明”中“界必须给出”改为“界必须成立，学习者不必被给予它”，“静止之步粗”限定为按否证学习者自己的；next_delta 相应改为按否证学习者自己的确切静止之步；Identification 的引用列出新声明（只增加声明，已有声明不变）；验证范围待整合者的核心检查器运行后重新指向。见整合文档 §133。",
       "en": "2026-10-15 P83f: following Ren's ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’ of 12 October 2026 06:01, the next_delta item ‘the optimal rest step of the learner not given the bound’ is answered: the optimal rest step for every learner is 2N − 1, and it needs no bound. A fifteenth law is added (leastBound_exact, rest_earliest, rest_without_bound_refuted); the statement's ‘the learner not given it rests by a step the bound gives’ becomes ‘not given, the learner by the least bound is right from 2N − 1 on, as early as any learner can be: the bound buys silence, not speed’ (the former statement in full: ‘A bounded record fixes the course at an exact length. With the bound given, induction is deduction: the learner given it is right from 2N − 1 on and none can always speak sooner; the learner not given it rests by a step the bound gives. Finite names name the split that makes sense, with no quotient.’); the second hypothesis states that the new learner needs values decided and the two negative theorems do not; the does_not_show items ‘the bound must be given’ and ‘the rest step is coarse’ become ‘the bound must hold, the learner need not be given it’ and a note on the learner by refutation's own step; next_delta accordingly names the learner by refutation's own exact rest step; the Identification reference lists the new declarations (declarations only added, earlier ones unchanged); the validation scope is re-pointed after the integrator's core checker run. See §133 of the integration note."
+    },
+    {
+      "zh": "2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83e：辨识一段与“历史固定什么”“辨识”两行增检验即有界的记录及两个框架之间的恰好性，开放项相应删去，§9 一行（Becoming.Distinguishing）；P83f：辨识一行与 Identification 一行增以最小的界读记录的学习者；总数改据新回执）；Identification.lean。",
+      "en": "15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P83e: the identification paragraph and the rows ‘what histories fix’ and ‘identification’ gain the tests as a bounded record and the exactness across two frames, the open items trimmed accordingly, one §9 row (Becoming.Distinguishing); P83f: the identification row and the Identification row gain the learner reading the record by the least bound; the totals moved to the new receipt); Identification.lean."
     }
   ],
   "text_versions": [

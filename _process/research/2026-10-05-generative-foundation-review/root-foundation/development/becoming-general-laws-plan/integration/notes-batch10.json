@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T154730.760380Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "P83e：导入 Becoming.Distinguishing 并增其一条；P83f：Identification 一条增静止之步不需要界",
+   "en": "P83e: imports Becoming.Distinguishing with its bullet; P83f: the Identification bullet gains that the rest step needs no bound"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "P83e：核心之列加入 Becoming.Distinguishing，范围说明增其一句；P83f：Identification 的范围说明增最小界的学习者",
+   "en": "P83e: Becoming.Distinguishing added to the core list with a scope sentence; P83f: the Identification scope sentence gains the learner by the least bound"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "P83e：Becoming.Distinguishing 的 L4 一行及层内导入；P83f：Identification 一行增静止之步",
+   "en": "P83e: an L4 row for Becoming.Distinguishing and its within-layer imports; P83f: the Identification row gains the rest step"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "P83e：辨识一段与“历史固定什么”“辨识”两行增检验即有界的记录及两个框架之间的恰好性，开放项相应删去，§9 一行（Becoming.Distinguishing）；P83f：辨识一行与 Identification 一行增以最小的界读记录的学习者；总数改据新回执",
+   "en": "P83e: the identification paragraph and the rows ‘what histories fix’ and ‘identification’ gain the tests as a bounded record and the exactness across two frames, the open items trimmed accordingly, one §9 row (Becoming.Distinguishing); P83f: the identification row and the Identification row gain the learner reading the record by the least bound; the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变",
+   "en": "sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "en": "regenerated on receipt 20261015T154730.760380Z with P83e's and P83f's classifications: statements depending on decidedness 322 → 325, used only in proofs 186 → 187, definitions taking a decidability family 89 → 91",
+   "zh": "在回执 20261015T154730.760380Z 上重新生成，含 P83e 与 P83f 的分类：陈述依赖可判定 322 → 325，只在证明中用到 186 → 187，取可判定族的定义 89 → 91"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed",
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean": {
+   "zh": "P83f：新增以最小的界读记录的学习者（orFit、leastFit、leastFit_sound、leastFit_within、leastBound、leastBound_exact：不被给予界而从 2N − 1 起每步都对；rest_earliest、rest_without_bound_refuted：这一步对每个学习者最优）；头注增一段；原有陈述不变",
+   "en": "P83f: the learner reading the record by the least bound added (orFit, leastFit, leastFit_sound, leastFit_within, leastBound, leastBound_exact: given no bound, right at every step from 2N − 1 on; rest_earliest, rest_without_bound_refuted: that step is optimal for every learner); the docstring gains a passage; earlier statements unchanged"
+  }
+ },
+ "history": {
+  "en": "15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}

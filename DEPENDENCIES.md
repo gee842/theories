@@ -4868,7 +4868,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## tests-fix-likeness-where-determined ← identification-where-bounded
 
-`formal-reuse` — 复用 Becoming.Refinement 的 Refining、Refining.steady_within、DistinctUnder 与 le_pred_of_succ_le：深度的相同在类数之内停止。 / Reuses Refining, Refining.steady_within, DistinctUnder and le_pred_of_succ_le of Becoming.Refinement: likeness to depth stops within the classes.
+`formal-reuse` — 复用 Becoming.Refinement 的 Refining、Refining.steady_within、DistinctUnder 与 le_pred_of_succ_le：深度的相同在类数之内停止。复用 Law.sameFuture_iff_within、Identification.bounded_agree、bounded_agree_exact、statesBelow_iff_lasso、record_eq_iff 与 Law.statesBelow_held：检验即有界的记录，两个框架之间的深度恰好。 / Reuses Refining, Refining.steady_within, DistinctUnder and le_pred_of_succ_le of Becoming.Refinement: likeness to depth stops within the classes. Reuses Law.sameFuture_iff_within, Identification.bounded_agree, bounded_agree_exact, statesBelow_iff_lasso, record_eq_iff and Law.statesBelow_held: the tests are a bounded record, and the depth across two frames is exact.
 
 **Producer output / 上游输出:** 精化链在其类数之内停止。 / A chain of equivalences stops within its classes.
 
