@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-207 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+208 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -187,6 +187,7 @@
 | [经识的选择 / Selection through registration](theories/becoming/results/records/selection-through-registration.md) | recorded-checked | [Selection.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean) |
 | [登记关系改变时，哪些选择仍可表达与执行 / Which selections survive and remain executable when registration changes](theories/becoming/results/records/selection-under-registration-revision.md) | recorded-checked | [Revision.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean) |
 | [从立场自身之善到可及的 G0 / From a standpoint's own good to reachable G0](theories/becoming/results/records/self-good-reachable-g0.md) | recorded-checked | [EvaluatorGrounding.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean) |
+| [任意多条件下最小的识 / The least registration with any number of conditions](theories/becoming/results/records/sensitivity-is-the-least-registration.md) | recorded-checked | [Sensitivity.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean) |
 | [分离恰失去关系 / Separation loses exactly the relation](theories/becoming/results/records/separation-loses-the-relation.md) | recorded-checked | [Description.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean) |
 | [余量之内保留的意义 / Significance retained within the margin](theories/becoming/results/records/significance-retained-within-margin.md) | recorded-checked | [Significance.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean) |
 | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](theories/becoming/results/records/situated-recovery-empirical-correspondence.md) | reviewed-scoped | [README.md](experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md) |

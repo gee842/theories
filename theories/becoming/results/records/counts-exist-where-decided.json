@@ -223,7 +223,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "736f09933edcc79a386de0cb5caba24f9bb2866981ab81f7b6f9156249aa4b80"
+      "sha256": "894d98047a4ea94be9483bbd02deb43ece169d6be45bed45028a507b363fe64c"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -233,7 +233,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "f0263fb1566f220a38eeb0a9d637322ddff679f96f7a7b4d1750cb0b36735804"
+      "sha256": "e6f17d1d1a4949005d4e2b254cdcfebd33618665540b738608d24e71ece67b84"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
@@ -421,6 +421,10 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Decidedness.lean（整合 I3e：新增一节“不被胜过者”（WeaklyDecided、Decided.weakly、Undominated、exists_undominated、Undominated.not_not_has、undominated_has、bettered_of_undominated_has、undominated_has_iff，及两条界 exists_undominated_iff_weakly 与 undominated_has_iff_em）；原有陈述不变）；THE-THEORY-OF-BECOMING.md（整合 I3e：§9 中 Decidedness 与桥接两行写入新律与定理数，新增 OrganizationCorrespondence 一行，实例模块一句列出它；P83g：辨识两行与开放项写入立方阶的静止之步与一个世界之内的恰好性，Identification 与 Distinguishing 定理数更新；总数改据新回执）；DECIDABILITY-INVENTORY.md（在回执 20261015T163210.426211Z 上重新生成，含 I3e 的分类与两条界：陈述依赖可判定 329 → 331，只在证明中用到 188 → 193，证明可判定 131 → 132，取可判定族的定义 92 不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Decidedness.lean (integration I3e: a section on undominated members added (WeaklyDecided, Decided.weakly, Undominated, exists_undominated, Undominated.not_not_has, undominated_has, bettered_of_undominated_has, undominated_has_iff, and the boundaries exists_undominated_iff_weakly and undominated_has_iff_em); earlier statements unchanged); THE-THEORY-OF-BECOMING.md (integration I3e: in §9 the Decidedness and Bridge rows name the new laws and counts, an OrganizationCorrespondence row added and the instance-module sentence lists it; P83g: the identification rows and open items gain the cubic rest step and the exactness within one world, the Identification and Distinguishing counts updated; the totals moved to the new receipt); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T163210.426211Z with I3e's classifications and two boundaries: statements depending on decidedness 329 → 331, used only in proofs 188 → 193, proving decidedness 131 → 132, definitions taking a decidability family 92 unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P113 落地（研究第137节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P113：§2 中依动力学所给之回应一段的“未导出”一句指向 Becoming.Sensitivity（“动作何时是部分自己的”指向 Becoming.Coupling）；§8 中反馈与所及下的进一步证明改为已给出，状态一行、Ren 对 §6.10 的选择与逻辑承诺相应增补；“第一部分全貌”的概述；术语表“敏感”一行更新并增“读有限多个条件”一行；§9 一行（Becoming.Sensitivity）；总数改据新回执）；DECIDABILITY-INVENTORY.md（在回执 20261015T164401.170999Z 上重新生成，含 P113 的分类：陈述依赖可判定 331 → 347，只在证明中用到 193 → 202，证明可判定 132 → 136，取可判定族的定义 92 → 94）。",
+      "en": "15 October 2026, landing P113 (study section 137): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P113: in §2 the not-derived sentence of the response as the dynamics give points to Becoming.Sensitivity (and “when a move is the part's own” to Becoming.Coupling); in §8 the further proof under feedback and reach becomes given, with the status row, Ren's choices for §6.10 and the logical commitment extended; the summary in “Part I stated whole”; the glossary row “sensitive” updated and a row “reads finitely many conditions” added; one §9 row (Becoming.Sensitivity); the totals moved to the new receipt); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T164401.170999Z with P113's classifications: statements depending on decidedness 331 → 347, used only in proofs 193 → 202, proving decidedness 132 → 136, definitions taking a decidability family 92 → 94)."
     }
   ]
 }

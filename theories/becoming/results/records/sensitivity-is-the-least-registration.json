@@ -162,8 +162,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Sensitivity 的 58 项声明（47 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §137；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 58 declarations of Becoming.Sensitivity, 47 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 137; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T164401.170999Z）：Becoming.Sensitivity 的 58 项声明（47 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §137；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T164401.170999Z): the 58 declarations of Becoming.Sensitivity, 47 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 137; not independently reviewed."
   },
   "next_delta": {
     "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；敏感的度量与差别到达多少；按时间先后读的敏感；独立审查；对读法（识就是敏感；不依存于任何部分的整体是尾）的判断。",
@@ -389,9 +389,51 @@
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
       "role": "provenance",
       "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z/verification.json",
+      "role": "receipt",
+      "sha256": "92d20bb7d2f7fb1b3f74f628931136075e6cd69d76341e18a3c4fc3adb22d623",
+      "declarations": []
     }
   ],
-  "proof_bindings": [],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Sensitivity",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
   "history": [
     {
       "zh": "2026-10-15：新增，回答 counterfactual-is-the-course 的 next_delta（P113）；研究 §137。",

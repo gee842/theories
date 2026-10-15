@@ -1,0 +1,47 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "P113：导入 Becoming.Sensitivity 并增其一条",
+   "en": "P113: imports Becoming.Sensitivity with its bullet"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "落地提速（2）：检查器的 Lean 步骤按导入图并行运行（BECOMING_JOBS），回执与逐一运行相同；P113：核心之列加入 Becoming.Sensitivity",
+   "en": "landing speed (2): the checker's Lean steps run concurrently over the import graph (BECOMING_JOBS), with the same receipt as one at a time; P113: Becoming.Sensitivity added to the core list"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/scratch_build.py": {
+   "zh": "落地提速（2）：检查器的 Lean 步骤按导入图并行运行（BECOMING_JOBS），回执与逐一运行相同",
+   "en": "landing speed (2): the checker's Lean steps run concurrently over the import graph (BECOMING_JOBS), with the same receipt as one at a time"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_correction_inquiry.py": {
+   "zh": "落地提速（2）：检查器的 Lean 步骤按导入图并行运行（BECOMING_JOBS），回执与逐一运行相同",
+   "en": "landing speed (2): the checker's Lean steps run concurrently over the import graph (BECOMING_JOBS), with the same receipt as one at a time"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "P113：Becoming.Sensitivity 的 L4 一行及层内导入",
+   "en": "P113: an L4 row for Becoming.Sensitivity and its within-layer imports"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "P113：§2 中依动力学所给之回应一段的“未导出”一句指向 Becoming.Sensitivity（“动作何时是部分自己的”指向 Becoming.Coupling）；§8 中反馈与所及下的进一步证明改为已给出，状态一行、Ren 对 §6.10 的选择与逻辑承诺相应增补；“第一部分全貌”的概述；术语表“敏感”一行更新并增“读有限多个条件”一行；§9 一行（Becoming.Sensitivity）；总数改据新回执",
+   "en": "P113: in §2 the not-derived sentence of the response as the dynamics give points to Becoming.Sensitivity (and “when a move is the part's own” to Becoming.Coupling); in §8 the further proof under feedback and reach becomes given, with the status row, Ren's choices for §6.10 and the logical commitment extended; the summary in “Part I stated whole”; the glossary row “sensitive” updated and a row “reads finitely many conditions” added; one §9 row (Becoming.Sensitivity); the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第137节（P113：任意多条件下最小的识，Becoming.Sensitivity）及其英文段；此前各节不变",
+   "en": "section 137 (P113: the least registration with any number of conditions, Becoming.Sensitivity) with its English paragraph; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T164401.170999Z 上重新生成，含 P113 的分类：陈述依赖可判定 331 → 347，只在证明中用到 193 → 202，证明可判定 132 → 136，取可判定族的定义 92 → 94",
+   "en": "regenerated on receipt 20261015T164401.170999Z with P113's classifications: statements depending on decidedness 331 → 347, used only in proofs 193 → 202, proving decidedness 132 → 136, definitions taking a decidability family 92 → 94"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变",
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed"
+  }
+ },
+ "history": {
+  "en": "15 October 2026, landing P113 (study section 137): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月15日，P113 落地（研究第137节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}
