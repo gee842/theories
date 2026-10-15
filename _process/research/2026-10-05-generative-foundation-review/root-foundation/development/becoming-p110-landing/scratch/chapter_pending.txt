@@ -1,0 +1,146 @@
+30: 闭包时到达整体。中心自身的反馈至多识及能影响它的，即其影响闭包；有与无它自身部分的比较，在部分的交换所及之内决定（§6.10）。公理分解为自身的预设——边界之内者的延续有意义——与一步：这一预设不随自身的边界怎样划而变（§6.11）。这一步承载公理在预设之外的全部内容，所以分解定位它，不降低公理。这些读法是 AI 的，待 Ren。
+32: e step carries all of the axiom's content beyond the presupposition, so the decomposition locates it and does not lower the axiom. These readings are the AI's, pending Ren.
+62: 自己的条件，写在规律之内，经典地总是成立，对每个世界都要求时就是排中律，`Becoming.Decidedness`）、**规律**（不加前提，对每个这样表示的世界成立，已检查）、**定理**（在公开的前提下成立，已检查）、**公理**（第二部分所断言的一条公理，Ren 提议；G0 已折叠，不再是公理）、**读法**（属于 Ren 的选择）、**开放**。模块都在 Lean 包 Becoming 的纯净核心上
+66: 同索引给出。带标签的过程与框架是这一整体的读法，不是它的根据：动作读入配置而不失去什么，世界的动作是关系项的交换；每段历史是它所显示之律的运行，律与历史的对应不是同一，差别是记忆；主张是关系项；配置的相同由互模拟刻画（`Becoming.Unfolding`，定理；律与历史是同一展开的两种读法经 Ren 确认，其余读法待 Ren）。Ren 问“why do we need "World"?”（2026-10
+77:  的译名；“arising/ceasing is indeed better name”，[原话](../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)）。Ren 提议中的“生成的”“退化的”指哪个部分由 Ren 选择：Ren 说“generative和degenerate虽然都在一个becomi
+89: 在该步终结，`World.grazing_browser_ends`：活动需要支持时，对持续不变的依存的侵蚀使依存者在该步之后不活跃，依存者原本活跃时这就是它的终结（`Web.Dependent.ceases_below`），原本休眠时没有终结（`World.seedbank_world`）；这样的侵蚀是否计入不活由 Ren 选择）。规范上，G0 说整体中的生及其继续生成有基本的正面规范意义；它是一个条件，不 ‖ r_not_derived`）；每个活的主张都被某个立场持有时，G0 恰等于每个立场的 S0 加立场中立（`significant_iff_held`），在连通、每个立场都持有活主张的整体上，S0 加 N_rel 是另一种补全（`significant_of_transmits`）；AI 把立场中立读作提议的唯一公理，待 Ren。〔G0 不是公理（Ren 2026-10-11 折叠）：它的刻画是不用公理的定 ‖ 有活主张的整体上，S0 加 N_rel 是另一种补全（`significant_of_transmits`）；AI 把立场中立读作提议的唯一公理，待 Ren。〔G0 不是公理（Ren 2026-10-11 折叠）：它的刻画是不用公理的定理，上面的规律不决定它是否成立，在第二部分的公理之下它是定理；其余是定理；读法的选择属于 Ren；重述待 Ren 接受〕 ‖ S0 加 N_rel 是另一种补全（`significant_of_transmits`）；AI 把立场中立读作提议的唯一公理，待 Ren。〔G0 不是公理（Ren 2026-10-11 折叠）：它的刻画是不用公理的定理，上面的规律不决定它是否成立，在第二部分的公理之下它是定理；其余是定理；读法的选择属于 Ren；重述待 Ren 接受〕
+93: 表示的世界成立，每个生成是否都能这样表示，也是所需根据的一部分。不加实质公理、确立整体中的各规定是同一展开中内在相关的环节，这一演绎仍开放（[根基 §5](BECOMING-FOUNDATION.md#5-completion-audit-and-next-central-inference)）；“生”与“生生”的读法属于 Ren；实际展开是否满足各前提是经验问题。开放项按四类列在第 8 节。〔开放〕
+95: ** (holds under disclosed premises, checked), an **axiom** (the one axiom Part II asserts, Ren's proposal; G0 is folded and no longer an axiom), a **reading** (Ren's choice) or **open**.
+99: onfigurations are alike by bisimulation (`Becoming.Unfolding`, theorems; that law and history are one unfolding read two ways Ren confirmed, the other readings pending Ren). Ren asked “why do we need "World"?” (
+110: , [words](../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)). Which parts the proposal's ‘generative’ and ‘degenerative’ name is Ren's to choose: Ren said “generative和degener
+122:  where it was active (`Web.Dependent.ceases_below`) and no ending where it was dormant (`World.seedbank_world`); whether such undermining counts against living is Ren's to choose). Normatively, G0 says that l ‖ andpoint holds a living claim S0 with N_rel is another completion (`significant_of_transmits`); the AI reads standpoint neutrality as the proposal's one axiom, pending Ren. [G0 is not an axiom (folded by Ren, 11 ‖ theorems with no axiom, the laws above do not decide whether it holds, and under Part II's axiom it is a theorem; the rest are theorems; the choice of readings is Ren's; the restatement awaits Ren's acceptanc ‖ e laws above do not decide whether it holds, and under Part II's axiom it is a theorem; the rest are theorems; the choice of readings is Ren's; the restatement awaits Ren's acceptance]
+142: 事件为自身区域时恒成立；无人持有的生命经已形成的关系到达；持有可判定是 `Valuation.significant_iff_reached` 自己的条件（可判定性局部化） | `Valuation.Held` | Ren 2026-10-10 提议中“想要延续者”的形式读法（AI 的读法）；S0 是否即“想要”的读法待 Ren（§6.7） |
+143: ntinuation into the future has significance”）；延续之意义的边界中立 | `Unrestricted` | 第二部分只断言它（Ren 2026-10-11）；作为条件在 §6.8：G0、种子、S0、N_rel 与 N_std 由它推出，C 在水平路径上推出；读法是 AI 的，待 Ren；G0 的每处用法由它解除，它就是对任何东西的 G0（§6.12），Ren 20
+145: | 伦理 | S0 | 一个立场自身活的、继续生成的内容对它有正面意义 | `SelfGood` → `Seed` | 规范前提；AI 把 Ren 2026-10-10 的重述提议读作：S0 即想要自身延续，每个想要之点都是中心（§6.7），待 Ren；S0 只涉及活的主张，逐步读时已含“不损”的过滤；在第二部分的公理之下处处成立
+147: res` | 边界中立前提；AI 把它读作 Ren 2026-10-10 重述提议的唯一公理：从任一中心有意义的，从每个立场都有意义，没有哪个中心特殊；每个活的主张都被持有时，G0 恰等于每个立场的 S0 加 N_std（§6.7）；它不是唯一的补全（在连通、每个立场都持有活主张的整体上 S0 加 N_rel 亦可）；待 Ren。§6.8 依 Ren 后来的回答把唯一公理读作不受限的意义，N_std 由它推
+199: “yes, i do agree with your reading, there are no two realities”（[来源](../../../sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md)）。其余读法是 AI 的，待 Ren：起点是 `World`，带标签的过程与框架是它的读法，两个方向都已证明；行动不
+201:  ways, the law read off the unfolding rather than set over it: “yes, i do agree with your reading, there are no two realities”. The rest are the AI's readings, pending Ren. Not derived: the shared index of steps
+203: 是双射，结束关系的是它共同作用于两部分。在律之下，一对是有意义的切分：位置按速度变化而只识位置时，有意义的切分是位置与速度这一对，两者单独都没有意义（`Motion.neither_alone`）；没有什么经过时，位置单独有意义，一对是一（`Motion.still_identifiesAlike`）。读法（AI 的，待 Ren；Ren 要求就“What makes two a pair, then, is
+205: e split that makes sense is the pair, and neither alone makes sense; where nothing passes, position alone makes sense, and the pair is one. Readings (the AI's, pending Ren; Ren asked for “What makes two a pair, 
+207: 历史（`same_finite_histories_iff`）。两个框架处处在相同之下确定时，配置恰在通过同样的检验时相同（`alike_iff_sameTests`）；没有这一条件时未必如此：在第一步之后选择与在第一步选择的两个框架通过同样的检验而不相同（`Choosing.not_alike`）。读法是 AI 的，待 Ren：从历史读出的律就是含有拼接的历史族，置于展开之上的律所能多出的只是没有历史显示
+209: s the same tests; with branching they need not, a frame choosing after its first move and one choosing at it passing the same tests. The readings are the AI's, pending Ren: a law read off histories is a family h
+220: 部分的生成而持续；部分短暂时这可以是同样的部分反复生起（`Layered`），部分终结时是不断新的部分（`needs_new`），都不是数目增长；有永不终结的部分或无穷的同时储备时则不然（`Immortal`、`Countless`），部分不息地生起也不使整体持续（`Gaps`）。接续怎样读、“生生不息”读到哪个层次，属于 Ren。在普查、`present` 不重复与 Taking 之下，由“更多”迫使的不息
+232: mation and arising do; continuity read one way leaves succession open, read both ways it still leaves succession across dormancy, and the reading of succession is Ren's; under a census, with each formation ta
+235: pred_drawn_keeps`）。对每个过程，进入不变区域之后，其外的配置不再可达（`Invariant.locks_out`）；区域不变，恰当每个动作都保持它，离开需要一个不保持它的动作（`invariant_iff_every_move`、`Run.leaving_needs`、`Exit`）。读法（AI 的，待 Ren）：锁定就是不返回；未来收窄，吸引子是展开收窄自己的未来；Capture 中规则
+237: what lies outside cannot be had again; a region is invariant exactly where every move keeps it, and leaving it needs a move that does not. On the AI's reading, pending Ren, lock-in is not returning, an attractor
+239: t_breaks`、`keepHistory_new_named`、`carries_unregistered`）。Capture 的规则区域是吸收区域，只扰动状态会被吸回规则所持之处（`Law.rule_absorbing`、`Captured.state_perturbation_drawn`）。读法是 AI 的，待 Ren。不推出：从每个能动的配置出发的运行（选择）；在界内被吸入；分支路径上的度量。见
+241: escription need equality. Capture's rule region is absorbing, and perturbing the state alone is drawn back into what the rule holds. The readings are the AI's, pending Ren. Not derived: a run from every configur
+267: 步每个关系项的闲置可判定时，有最小包含足迹，其相连与次序被所有包含足迹包含；关系项相等可判定时，最小布尔包含足迹的存在恰等价于闲置可判定。 正规形依赖名字与有限段；没有无名、Foata 同时层或无界正规形。没有从实际世界导出所需判定，也未给不可判定闲置的具体世界。重排的两侧仍给定；连续时间对应开放。读法由 AI 提出，待 Ren。 见 [Becoming.OrderNormal](../../../expe
+269:  concrete undecidable-idleness world is given. The sides of reordering remain supplied; continuous-time correspondence remains open. The readings are the AI’s, pending Ren.
+273: `、`grazing`、`mutualism`、`drawdown`；`living_crosses_ceasing`）。活动相同的两个世界可以只因各侧是否汲取自身的水平而不同（`shuttle`、`selfDrawing`），但 `selfDrawing` 的不活只在逐步读法对终结之步自我汲取的判定之下成立，这一判定属于 Ren。有限、平衡、耗散且生起者体现的世界归于静止，生起与止息都不再复现，不用判定程序 ‖ 现是活动的读法，英文名称 arising/ceasing 经 Ren 确认（中文为 AI 的译名；[原话](../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)）；提议中的“生成的”“退化的”指哪个部分由 Ren 选择。Ren 在 2026-10-09 说，“generative和degenera
+277:  draws on its own standing (`shuttle`, `selfDrawing`), but `selfDrawing` fails to be living only on the stepwise verdict about self-drawing at an ending, which is Ren's to choose. A finite, balanced, dissipat ‖ ; [words](../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)); which parts the proposal's ‘generative’ and ‘degenerative’ name is Ren's to choose. On 9 October Ren said, ‘gene
+303: 作为 `living` 的逐步读法，四次独立审查之后的工作候选（待 Ren 选择）是“活跃且不侵蚀”。事件侵蚀，当它在某步汲取某条件，而该步之后，条件既低
+316: ts step keeps every dependence on the conditions it participates in. As the stepwise reading of `living`, the working candidate after four independent reviews, pending Ren's choice, an event lives when it is act
+327: tion is not unceasing; without it, a closed cycle can be. Only the “unceasing” of Ren's “unceasingly creating more 生” is stated here; the scope of the second 生 is Ren's.
+333: rises_given`）；给予它的形成不必体现，可以是一个不依存于任何东西的源（`SourceSeed`）。在只有体现的关系项给予这一表示前提下，给予它的关系项也体现（`arises_from_embodied`），它仍可以是一个不依存于任何东西的源（`EmbodiedSource`）。在把体现的关系项读作“生”这一属于 Ren 的读法下，作者把这读作原话中两个“生”之间关系的一种形式内容（AI 论证），不 ‖ tualism.apart_embodied`）。在承担自身的体现关系项终结之步汲取它，不论是什么终结了它，是断裂，所以不是 living（`Embodied.ending_breaks`、`Predation`）；这包括旁观的汲取者、自然的终结与该关系项自身的最后事件（`Wilting`）。是否应如此、对哪些汲取者，属于 Ren 对生生的读法。
+335: ta give, the relatum that gives is embodied too, and may still be a source depending on nothing (`EmbodiedSource`); taking embodied relata as 生, a reading that is Ren's, the author reads this as one formal co ‖ iving, whatever ends it: this includes a bystander, a natural ending and the relatum's own last event (`Wilting`). Whether it should be, and for which drawers, is Ren's reading.
+376: 以下是 AI 的读法，待 Ren：
+409: **AI reading, pending Ren:**
+463: 森林，有回应的比较在它们之间决定（`Trophic.within_response_iff`、`Trophic.responsive_comparison`）。`Loop` 中部分的动作改变另一个形成所识的，后者回应，差别回到部分自身的支持，而部分自身的交换从不到达那里（`Loop.returns`）。读法（AI 的，待 Ren）：一个动作有两种反事实，其余固定时只计部分直接到达的，其余经识回应时计回应所及
+465: s, the other responds, and the difference returns to the part's own support, which the part's own exchange never reaches (`Loop.returns`). On the AI's reading, pending Ren, an act has two counterfactuals: with t
+467: hown_iff`，关于 `Shown` 的一条律），所以进程历史之外的恰是它的反事实（`ExchangeLaw.counterfactual_beyond_shown`）；部分的动作由律在配置上形成时，`closedBy` 的运行就是进程（`ExchangeLaw.closedBy_course`）。读法（AI 的，待 Ren）：反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程，可行时存在、
+469: ond_shown`); with the part's move formed by a law on the configuration, a run of `closedBy` is the course (`ExchangeLaw.closedBy_course`). On the AI's reading, pending Ren, a counterfactual is not a second world
+473: _fixed_iff` 给出；每步之后所立之量区分所有关系项时也固定类别（`World.classes_fixed`）。`Lineage.world_readings` 与 `Hibernation.world_readings` 保留反例：平衡可同时容许不同的生起与类别。保持的读法及把守恒读作延续属于 AI 的解释，待 Ren；侵蚀、分裂／合并下的类别与混合普查的充分条件未证明。[记录](../resul
+489: 持分岔（`Flow.subthreshold_alike`、`Flow.difference_changes_after_divergence`），他者回应储量本身时则不然（`Attracting.higher_breaks_first`）。平衡只在被识的条件上逐步假设；回应的假设是给出的。读法（AI 的，经审查收窄，待 Ren）：经由支持的反馈有三种不见，各在其范围之内（阈下、视界之外、识闭包之外）；失控
+491: s' support diverges, and not where others respond to the stock itself. The response hypotheses are supplied; the readings are the AI's, narrowed by the review, pending Ren.
+493: 一个投影分解为确定过程时，一次场合代表投影相同的整个类（`Run.generalizes`），有限多个投影配置之内投影必返回（`Run.projection_returns`）。模型可以错：错误的投影把差别归于不造成差别的动作，动作与它所略去者同步时永不被否证，与之错开时被否证（`Confound`）。读法（AI 的，待 Ren）：重复是返回，对照是步骤经读法分解的模型，与略去者无关的变动是随机化的结构形式
+495: g: a wrong projection misattributes, is never refuted by moves in step with what it leaves out, and is refuted by moves varied against it. On the AI's reading, pending Ren, replication is return, a control is th
+497: 恰在规则对它不造成差别之处有自己的规律（`adaptive_state_law_iff`）；规则改变自己时，状态可以没有任何规律（`Switching.no_state_law`）。经投影的规律，即使是真的，也只在取过之处被记录固定（`Run.not_fixesThrough_of_goAlike`）。读法（AI 的，待 Ren）：机制是承载规律的投影；涌现是较粗描述上的相同者同去；改变自身因果的系统不需要
+499: ule changes itself the state can have no law at all. A law through a projection, even a true one, is fixed by the record only where taken. On the AI's reading, pending Ren, a mechanism is a projection that carri
+501: 的结果（`inputs_intervention_unfixed`，`Becoming.Experiment` 的实例），模型固定它（`inputs_model_fixes`）。噪声是未表示的动作：忘掉它，过程恰在噪声不造成差别之处仍确定（`forget_inputs_determined_iff`）。读法（AI 的，待 Ren）：干预由模型而不由记录固定；`retarget` 是在一个配置与一个动作上替换
+503:  model does. Noise is a move not represented: with it forgotten, the process stays determined exactly where the noise makes no difference. On the AI's reading, pending Ren, an intervention is fixed by a model an
+505: low.policy_uses_after_failure`）。断裂之前，对每个视界，都有储量抬高的世界与实际在形成所识的一切上相同，并撑过那个视界（`Web.break_not_bounded`）：断裂还有多远不被识；观察储量则立刻识之（`Web.observed_raise_registers`）。读法（AI 的，待 Ren）：失控是断裂之前自身之识与储量多出任意多的世界相同的回路；要避免它而又不放弃所
+507: ing the formation registers and lasts past it: how far off the break is does not register, while observing the stock registers it at once. On the AI's reading, pending Ren, a runaway is a loop whose own registra
+509: 目标的亲代留下更多后代时，目标的份额上升（`share_rises`），这是 Evolution 未陈述的选择项；所立者衰减不断则世系与选择停止（`Flow.descent_exhausted`）；下一配置取决于规则时，只扰动状态被重新吸收（`Law.perturbation_reabsorbed`）。读法（AI 的，待 Ren）：无明是使寻求锁定在不能于静止中满足之目标上的不见；明是识及支持所不标记者的识
+511: ing down stops descent and the selection; and where the next configuration depends on the rule, perturbing the state alone is re-absorbed. On the AI's reading, pending Ren, 无明 is the not-seeing that keeps seekin
+513: ，克制的流不被选中；经其识的每个选择又分不出它与不伸出的抬高（`Diversion.favours`、`Diversion.blind_to_source`）。选择给它所成立的亲代更多后代时，它们在后代中的份额上升，这是 `share_rises` 的应用（`share_rises_through`）。读法（AI 的，待 Ren）：任何由所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，缺口只经依存、
+515: . Where a selection gives the parents it holds for more offspring, their share rises among the offspring, an application of `share_rises`. On the AI's reading, pending Ren, any selection decided by what register
+530: orm_not_determined`），Hebb 式发展与更新路线是 `Becoming.Mechanism` 的 `adaptive` 系统，活动或网络单独没有律之处恰是权重或路线造成差别之处（`hebbian_no_activity_law`、`updating_no_network_law`）。读法（AI 的，待 Ren）：归纳被消解为规律而不是被保证；自然的一致性不是前提，而是世界经模型所归并者同
+532: ve systems of `Becoming.Mechanism`, activity or the network alone having no law exactly where the weights or the route make a difference. On the AI's readings, pending Ren, induction is resolved into laws rather
+538: `、`Diagonal.Unfolds.unheld`、`Diagonal.unfolding_open`）。说谎者读作修正：从不静止，二值时每两步返回，是没有静值的节律，不是矛盾（`Diagonal.revision_never_rests`、`Diagonal.negation_returns`）。读法（AI 的，待 Ren；Ren 同意了包含它们的回答）：对 Ren 的推测“完整的真可按情境推出”，从
+540:  exists. The liar read as revision never rests and, two-valued, returns every two steps: a rhythm with no still value, not a contradiction. Readings (the AI's, pending Ren; Ren agreed with the reply containing t
+542: n)，`no_context_free_values`），所以量子的识属于这一类。部分失去整体有两种方式，在同样的三对上：不给回整体（`Becoming.Description` 的奇偶，`evenBoxes_not_determined`），与允许没有整体有的（`Specker.no_whole`）。读法（AI 的，待 Ren；Ren 同意了包含它们的回答）：波与粒子都是向不依语境的值的投影；值是在语境中
+544:  the same three pairs: by not giving it back (the parity of `Becoming.Description`) and by allowing what no whole has (`Specker.no_whole`). Readings (the AI's, pending Ren; Ren agreed with the reply containing t
+546: cross_exact`）；动作承载所识的框架之间，深度 k 的相同恰是 k 步内的一致，所以有分支的框架之间的深度 N + N′ − 1 也对每一对恰好（`labelled_across_exact`）。两个历史合起来读作一个世界，Moore 界就是 Fine 与 Wilf 的 N + N′ − 1。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么。见[研究 §
+548: en branching frames is exact for every pair too. Two histories read as one world have Moore's bound N + N′ − 1, the bound of Fine and Wilf. Readings (the AI's, pending Ren): “situationally” is the bound; a finit
+550: 方向的学习者被给予世界与目标（`withWorld`）。经识同去（`Lumped`）的目标总可学（`learnable_of_lumped`）；律使每个配置不变时，可学的恰是这些（`still_learnable_iff_lumped`），即 `Becoming.Learning` 陈述推广所用的归并。读法（AI 的，待 Ren）：识为所学划界；这是阈下的不见（`Becoming.Testing`）在学习者
+552: e, and under a law leaving every configuration unchanged exactly those are: the lumping by which `Becoming.Learning` states generalization. Readings (the AI's, pending Ren): registration bounds what is learned; 
+690: 步活跃，但它不必体现，也不必活跃（`Drowsy`）。两者的定义都不含体现：这里进入估值的是一类读法的同一对应。它们使只依存于对方的蜂与花、各由前一代给予的世代连通，世代那里 G0 恰等于种子加 N_rel 加 N_std；在 N_rel 下，珍视狐的进食就到达兔的活，珍视给予的形成就到达生起者的活的事件。是否采用它们属于 Ren；`living` 与 C 不变（[Becoming.Descent](../.
+696: **读法由 Ren 选择。** 独立审查判定关系读法的哲学根据尚未确立（[审查](../../../_p
+702: ore; under N_rel valuing the fox's eating reaches the hare's living, and valuing a formation that gives reaches the living events of what arises. Adopting them is Ren's choice, and neither living nor C change
+705: he whole-run and stepwise readings differ in `living` in both directions. None includes further generation. Which reading, or combination, is the reading of 生生 is Ren's choice; the study's comparison supplies
+750: ### 6.7 从想要延续者重述（Ren 的提议，待定）/ Restating from what wants its continu
+766: 定不出中心；那条公理的唯一作用是让每一点都是中心。Ren 答“exactly”。形式上，“每个想要之点都是中心”落在 S0 上（每个想要之点的种子）；那条公理读作立场中立 N_std：从任一中心有意义的，从每个立场都有意义，没有哪个中心特殊。把 S0 读作“想要”、把 N_std 读作那条公理，是 AI 对提议的读法，待 Ren 判断。下面是已检查的形式内容（[计划](../../../_process/r ‖ /BECOMING-RENEWAL-READING.md)，[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-REVIEW.md)）；读法与名称属于 Ren；是否替代 G0，已由 G0 的折叠回答（§5）。
+774: **中心：一条公理（AI 的读法，待 Ren）**（[Becoming.Standpoints](../../../expe
+780: 那个关系项的活的事件（`Flow.valuing_reaches_source`）。以之为生之下，某个形成以之为生的区域也不是切口（`Clearing.resource_not_cut_living_on`）；输送新增的是两个条件之间的关系，沿流入的方向（`Clearing.conveyance_only`）。是否采用属于 Ren，如以之为生与世系。
+784: **弱式与强式（工作结构，AI 的建议，Ren 可改）。** 弱式对每个形成：不损的延续有意义；现有的三种 `living` 读法读出的都是“不损”。Ren 的“as long as not harm”也可读作义务式：每个延续的意义是对他者不施损害的要求，而不是只有不损的延续才算数；这一读法尚未形式化，两种读法由 Ren 选择。强式对整体：延续要创造更多的意义，即 G0 的继续生成，读作方向（`Flow.
+790: **仍待 Ren。** S0 是否即“想要”的读法（这样读时种子已含“不损”的过滤）；推出的范围
+792: ce from any center has it from every standpoint, and no center is privileged. Reading S0 as wanting and N_std as the axiom is the AI's reading of the proposal, pending Ren. The checked content follows, with the 
+795: - **Center, one axiom (the AI's reading, pending Ren)** (`Becoming.Standpoints`). Where ever ‖  no cut either (`Clearing.resource_not_cut_living_on`), and what conveyance adds is a relation between two conditions (`Clearing.conveyance_only`); adopting it is Ren's choice.
+797: as long as not harm” also admits a deontic reading, each continuation's significance being a claim on others not to harm it, not yet formalized, and the choice is Ren's; the strong form for the whole, continu
+798: - **Draft for Ren to judge, not accepted:** “Anything tha
+805: coming/Significance.lean)，[研究 §53](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md)）；读法与名称是 AI 的，待 Ren。
+811: ：一个从下一步起需要该条件的形成，无此部分时每步都被接纳，有此部分时之后每步都不被接纳。公理之下，这个部分失去一个有意义的延续（`Preemption.not_undermining_yet_loses`）。逐步读法只计已被满足的依存；保留还计仍能形成的。这两种“不损”的读法不同；G0 的 `living` 指哪一种，属于 Ren。
+816: **AI 的读法，待 Ren。** `Unrestricted` 读 Ren 的公理：形成的索引读“anyt
+820: ts continuation into the future has significance. The checked content follows (`Becoming.Significance`, study section 53); the readings and names are the AI's, pending Ren.
+826: g counts only dependences that have been met; retaining also counts what can still form. The two readings of not harm differ, and which one G0's `living` names is Ren's choice.
+831: **AI reading, pending Ren.** `Unrestricted` reads Ren's axiom: th
+843: ndence.lean)，[研究 §56](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md)）。公理只作为比较的假设出现；读法与名称是 AI 的，待 Ren。
+849: **AI 的读法，待 Ren。** 供给闭包读“what it actually depends on”，也
+851: 包与所及闭包都在系统之内，每个包含都可以是严格的（`Clearing.levels`、`Clearing.reach_middle`、`Trophic.mediates`）。系统不读 Ren 中间的层次：每个形成都参与一个条件时，它就是整体；系统划分形成，没有嵌套，也没有中心。为那一读法提供的是所及闭包（AI 的读法，待 Ren）。所以路线 (b) 到达自身及其所依存的；`Becoming.Interdep
+855: is route reaches (`Becoming.Interdependence`, study section 56). The axiom enters only as a hypothesis of the comparisons; the readings and names are the AI's, pending Ren.
+861: **AI reading, pending Ren.** The feeding closure reads “what it a
+863: **Correction (section 6.10).** The reading above also takes the feeding closure for Ren's “the system that one is in”, as the s ‖ erything it is the whole, and systems partition the formations, with no nesting and no center. For that reading the reach closure is offered (the AI's reading, pending Ren). So route (b) reaches the self and wha
+877: s/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#61-反馈与所及p42)）。结果有五个闭包而不是四个层次：所及闭包是加上的。公理只作为三个见证的假设出现；读法与名称是 AI 的，待 Ren。整合之前经[第十六次独立审查](../../../_process/resea
+884: **AI 的读法，待 Ren。**
+892:  has five closures, not four levels: the reach closure is added. The axiom enters only as a hypothesis of three witnesses; the readings and names are the AI's, pending Ren. Before integration it was checked by t
+899: **AI reading, pending Ren.**
+911: /../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#62-公理的分解p43)）：它是公理的精确分解，定位这一步，不降低公理的内容。读法与名称是 AI 的，待 Ren。
+920: **AI 的读法，待 Ren。**
+925: ，是预设读法的次序：超真；沿影响次真，在 §6.10 为所在的系统提供的所及闭包处；沿空关系次真，在自身处。较弱版本对所及之内的每个部分给出公理的比较。所及闭包指向前方：在这一读法上，次序一路降到单纯的自身，不经过供给闭包，供给闭包在另一支上（`Flow.presupposition_order`）。这一方向是否合适，由 Ren 判断。
+929: ies`, study section 62): an exact decomposition of the axiom that locates the step and does not lower the axiom's content. The readings and names are the AI's, pending Ren.
+938: **AI reading, pending Ren.**
+943:  the order runs down to the bare self, not through the feeding closure, which lies on another branch (`Flow.presupposition_order`). Whether this direction fits is Ren's to judge.
+951: esearch/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md)）。审计是干净的，其中一处读法是被迫的；在公理之下，以可能性读的 C 决定了 §6.5 留给读法选择的过度汲取。读法与名称是 AI 的，待 Ren。审计之后，Ren 2026-10-11 把 G0 折叠（§5），并把正面相关折
+971:  forced; and under the axiom, C read on possibilities decides the overdraw that section 6.5 left to the choice of reading. The readings and names are the AI's, pending Ren. After the audit Ren folded G0 on 11 Oc
+1007: ：混合的部分仍需要一个度量来定序。这句话作为区域的定义起作用，不是关于一切的事实：有的部分使能形成者变少。不随还原而来的是“应当”：使一个永不回到自身的未来变窄，对自身是错的。那是公理的不变之步（§6.11）；还原之后，它成为称生成的空间为好的内容，是根据的开放问题，不是任何规律的前提（§8）。读法与名称是 AI 的，待 Ren。
+1017: comes the content of calling the generative space good, an open question of warrant and no premise of any law (section 8). The readings and names are the AI's, pending Ren.
+1106: 每个活的主张都被持有时，恰是处处 S0 加立场中立（`Valuation.significant_iff_held`）；以每个主张为活、以从每个立场的意义读正面时，恰是第二部分的公理（`Web.unrestricted_iff_paths_g0`）。把部分的扩大、缩小与保持不变读作 Ren 的生成的、退化的与中性的，是待 Ren 确认的 AI 读法（§2）。第二部分在这里只加断言：断言之下 G0 是定理，保
+1159: nd the present forgets the kept history (`Flow.Balances.present_forgets`). Which quantity is called entropy, the history or the record in the conserved amount, is Ren's decision.
+1190: iom (`Web.unrestricted_iff_paths_g0`). Reading a part's widening, narrowing and keeping the same as Ren's generative, degenerative and neutral is an AI reading pending Ren (section 2). Part II adds only the asse
+1222: 身的规范根据开放（§8）。不用公理时，路线 (b) 到达自身及其所依存的（§6.9），公理所加的，是那些损失返回不到任何人的延续的意义。公理分解为自身的预设与不变的一步，断言在预设之外所加的，全在这一步（§6.11）；还原到可能性之后，这一步是称生成的空间为好的内容，它的根据开放（§6.13）。读法与名称是 AI 的，待 Ren。
+1237: n to possibilities, that step is the content of calling the generative space good, and its warrant is open (section 6.13). The readings and names are the AI's, pending Ren.
+1263: 第一张表列各目标的现状。其后，每个开放项归入四类之一：属于 Ren 的选择、哲学根据、经验对应、进一步的证明。形式陈述的完整（见“理论的完整陈述”
+1265: The first table gives the status of each target. Every open item is then placed in one of four classes: Ren's choice, philosophical warrant, empirical corre
+1277: 包给出：[feeding-closure](../results/records/feeding-closure.md)、[consumption-ends-with-feeders](../results/records/consumption-ends-with-feeders.md)）；把这些读作生成、退化与中性由 Ren 判断 |
+1278: ；有限家族中下降复现需要上升复现，开始成立与不再成立同步，一方复现恰当另一方复现；空间是每个世界，七个前提各有满足与不满足它的世界，活动可判定的有限世界中生起复现与止息复现是同一部分（活动的读法，Ren 确认其英文名称 arising/ceasing，中文为 AI 的译名；Ren 提议中的“生成的”“退化的”指什么由 Ren 选择），不给可判定性而对每个有限世界要求时这一规律等价于排中律，活跨越生起与止息，耗
+1281: nt-limits](../results/records/derived-extent-limits.md)），输送是候选的关系（[conveyance-crosses-the-boundary](../results/records/conveyance-crosses-the-boundary.md)）；是否接受属于 Ren；是否替代 G0，已由 G0 的折叠回答（§5） |
+1283: 意义就是公理，损失都在区域之内时以区域为界的判断就是公理的判断，所以供给闭包是整体时总是，而 `Clearing` 中两者分开（[closure-verdict-meets-axiom](../results/records/closure-verdict-meets-axiom.md)）。开放：路线 (b) 是否足够属于 Ren；中心怎样表示其闭包；整体之间选择的模型；尚未经独立审查 |
+1285: 覆盖部分所及的任何意义，有与无部分的比较就是公理的比较，任意两个流的比较在其差别所及之内决定（[comparison-within-reach](../results/records/comparison-within-reach.md)）。开放：所及闭包是否读出“the system that one is in”，属于 Ren；他者有回应的比较须给出第二个流；中心怎样知道其所及；已经第十六次独立审查 |
+1286: 到该立场上公理的条件句，有了预设与覆盖，它与对立场不变（N_std 的规则）等价，`Clearing` 的见证表明每个前提都需要（[axiom-decomposition](../results/records/axiom-decomposition.md)）。分解定位这一步，不降低公理。开放：预设、覆盖与不变的根据；Ren 是否持有这一步；已经第十六次独立审查 |
+1290: al-models-as-processes.md)）；每个确定的律恰吸入不返回者（[attraction-is-not-returning](../results/records/attraction-is-not-returning.md)）。开放：偏向伸出的一般形式；沿一个运行的状态规律；不确定过程上的吸引；读法待 Ren |
+1291: unterfactual-is-the-course.md)、[comparison-where-the-rest-responds](../results/records/comparison-where-the-rest-responds.md)）。开放：律本身；条件无穷多时敏感是否仍是最小的识；差别到达多少；读法待 Ren |
+1292: 当类在那里决定；习得链与连接主义模型是脊柱上的实例（[generalization-through-lumping](../results/records/generalization-through-lumping.md)）。开放：概率的或近似的学习、可数类的一般界、优化的动力学与隐式偏置；实际网络施加哪个归并；读法待 Ren |
+1293: md)）；配置由互模拟定为相同，作为相等的确定性依赖于命名，桥接把外围的关系的同一认同为核心的（[configurations-alike-by-relation](../results/records/configurations-alike-by-relation.md)）；律与历史的读法经 Ren 确认，其余读法待 Ren；共同的步序仍是表示的承诺 |
+1295: 步每个关系项的闲置可判定时，有最小包含足迹，其相连与次序被所有包含足迹包含；关系项相等可判定时，最小布尔包含足迹的存在恰等价于闲置可判定。 正规形依赖名字与有限段；没有无名、Foata 同时层或无界正规形。没有从实际世界导出所需判定，也未给不可判定闲置的具体世界。重排的两侧仍给定；连续时间对应开放。读法由 AI 提出，待 Ren。 [normal-forms-need-decided-apartness](
+1302: 定后此等价对每个有限框架成立恰是排中律，只列出每个动作的结果时恰需一个由排中律推出的原则，核心的分支检验就是外围的检验（[tests-fix-likeness-where-determined](../results/records/tests-fix-likeness-where-determined.md)）；读法待 Ren |
+1303: eturning.md)）；确定是相同之下确定的命名情形，以相等陈述的律在相同之下补全（描述承载规律恰当某个登记主张的等价使配置同行），需要相等之处有见证（[determinacy-up-to-likeness](../results/records/determinacy-up-to-likeness.md)）；读法待 Ren；在界内被吸入与分支路径上的度量开放 |
+1304: -it-registers.md)）；不依语境的主张是表示的承诺，恰在诸识粘合处合，量子的识不粘合（[contextual-registration](../results/records/contextual-registration.md)）。开放：有分支的框架下有意义的切分；概率的语境性；奇偶障碍的一般定理；读法待 Ren |
+1305: 每个 N ≥ 2 恰好（[identification-where-bounded](../results/records/identification-where-bounded.md)）；检验即 N − 1 步（两个世界之间 N + N′ − 1 步）的记录，对每一对恰好。开放：按否证学习者自己的确切静止之步；读法待 Ren |
+1306: /_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md)：数学接受，静止定理须写出每步立着的有限多，八个前提既不决定被围住也不决定开放，活动读法在正典中只作为由 Ren 选择的候选，网层面的用语改为生起复现，十一项更正已处理。止息需要生起与静止定理、普查
+1469: 两者分离；七个前提各有满足与不满足它的世界；活跨越生起与止息；耗散使有限、平衡且生起者体现的世界归于静止，不用判定程序：不上升的量的下降从某步起停止不能被否证，每个前提都不可少；放牧者满足生起复现而不活，被侵蚀的依存者在该步终结，种子库中被侵蚀的种子休眠而没有终结，渗漏的世界不平衡而生起复现；“生成的”“退化的”的读法属于 Ren | 65 |
+1613: | 输送 | conveying | 参与的形成从一个条件取用并向另一个给予，就有东西从前者输送到后者；以一类关系项读，它是 related 的一种候选读法（由 Ren 选择） | `Conveys`、`conveyance` |
+1632: | 接续 | succession | 把在某步终结的形成与在该步或其后开始的形成接为同一个（中间可以有不活跃、不依存的步，例如休眠）；单向的连续不排除它，双向的连续不排除跨过休眠的它，怎样读属于 Ren | `Lineage`、`Succession`、`Dormancy`（见证）
+1665: | 生成的／退化的 | generative / degenerative | Ren 的用语；Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠；所指的空间部分由 Ren 选择。一种关系读法是更新的形成与消耗的形成，作为关系不重叠。Ren 2026-10-
+1667: 动的读法，英文名称 arising/ceasing 经 Ren 确认，中文为 AI 的译名（[原话](../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)）；是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择（若取不重叠则不是，AI 的推论） | `World.ArisingRecurs
+1668: 称带 `unrefuted`，如 `World.rests_unrefuted`），由它生起与止息都不复现（`World.not_recurring_of_rests_unrefuted`）；只证不复现的，名称带 `not_recurring`；本章说一个定理“归于静止”时指它所证的强度（中文术语与“静止定理”这一标题由 Ren 定）。静止定理：有活动与所立者的普查、生起者体现、平衡、耗散且从某步起每步被围住所
+1670: | 开放 | openness | 不是从某步起每步都被围住：交换越出每个有限家族；有普查、关系项都体现、平衡且耗散的世界生起不息时如此；`exposed` 中净量为零；八个前提不决定它，它连同八个前提也不给生起不息（`holding`）；指在有限家族之外的交换还是流入由 Ren 选择 | `World.arising_opens`、`World.exposed_
+1681: | 持有 | held | 一个活的主张在某个立场的自身区域中；每个活的主张都被持有时，G0 恰等于处处 S0 加 N_std（AI 把 Ren 2026-10-10 的提议读作“想要延续者”，待 Ren） | `Held`、`Unheld`、`significant_iff_hel
+1689: | 不受限的意义 | unrestricted significance | 那一条公理，第二部分断言它（AI 对 Ren“for anything, its continuation into the future has significance”的读法，待 Ren）：从每个立场，任何东西在每一步的延续都有意义；延续之意义的边界中立 | `Un
+1692: | 供给闭包 | feeding closure | 含一个形成、对供给封闭（供给成员者都是成员）的最小区域；不用前提即推出；闭包之外的不向闭包所需的条件给予；读作“what it actually depends on”（AI 的读法，待 Ren）；对被供给的闭包，在影响闭包之内 | `Flow.WithinFeeding`
+1695: | 所及闭包 | reach closure | 对影响的闭包：一个形成的交换能逐环影响的；有中心、指向前方；为 Ren 的“the system that one is in”提供（AI 的读法，待 Ren） | `Flow.Affects`、`Flow.WithinReach` |
+1699: | 缺口 | gap | 候选者的所及闭包减去选择者的识闭包；`Clearing` 中其中的终结不被经选择者之识的选择选出，被栖居者之识与合起来的识选出；缺口只经依存、观察或他者之识合起来才合上，是 AI 的读法，待 Ren | `Clearing.dweller_within_reach`、`Clea
+1709: | 描述／承载规律 | description / carries a law | 配置的投影 π 是一个描述；它承载规律，指某个描述上的确定过程容许每一步经 π 读，恰当相同者同去：经 π 相同的配置以同一动作到达经 π 相同的配置；像是唯一需要检查的候选；读作机制（AI 的读法，待 Ren） | `GoAlike`、`Image`、`carries_law_iff`、
+1718: | 无明 | 无明 (not-seeing) | AI 的读法（待 Ren）：使寻求锁定在不能于静止中满足之目标上的不见；其边界是够 | `Becomin
+1719: | 劫持 | hijacking | AI 的读法（待 Ren）：奖赏不能静止者的选择所形成、由胜者所写之规则保持的目标；份额随后代上升，结果
+1730: | 预设 | presupposition | 从一个立场，边界之内一切的延续都有意义；超真是公理，沿一个关系次真是闭包上的意义；读 Ren 所说自身的“belief”（AI 的读法，待 Ren） | `SignificantWithin`、`presupposition_

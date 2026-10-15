@@ -1,0 +1,330 @@
+# attraction-is-not-returning
+   /correspondence | Readings (the AI's, pending Ren): an attractor is an absorbing region a configuration outside it enters, and its basin is what is drawn in;
+   /related[0]/detail | instance theorems for Law.Absorbing and Law.DrawnInto are not given (a reading, the AI's, pending Ren).
+   /related[3]/detail | here what a law can have n steps on narrows, and lost possibilities are drawn in (a reading, the AI's, pending Ren).
+# axiom-decomposition
+   /next_delta | Ren's choice whether to hold the step of invariance;
+   /correspondence | The author's reading (an AI argument, pending Ren): the presupposition reads the “belief” without which, Ren wrote, the self cannot justify itself, and using it as a premise is the AI's step;
+   /dependencies[6]/detail | the presupposition reads as the continuation form of S0 (the AI's reading, pending Ren), with no formal reuse.
+# becoming-renewal-reading
+   /next_delta | the choice of reading is Ren's (material in integration note §8.5);
+# becoming-stepwise-reading
+   /counterexamples[4]/detail | the choice of reading is Ren's.
+   /next_delta | Ren's choice of the reading of 生生 or a combination (see the integration note), and whether the verdict on winning by consumption covers events before the threshold;
+   /correspondence | Stepwise living had three candidates in turn (within renewal, not breaking, not undermining), each kept on the core: the first two with the witness that sets them aside, the third, “not undermining”, as the working candidate pending Ren's choice, with what it gives up (integration note).
+# bounded-census-keeps-pace
+   /next_delta | Ren's choice of names.
+   /correspondence | whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap;
+# causal-models-as-processes
+   /correspondence | Readings (the AI's, pending Ren): an intervention is a move not taken, fixed by a model and not by the record;
+   /limitations | the readings are the AI's, pending Ren;
+# ceasing-needs-arising
+   /next_delta | Ren's choice of names.
+   /correspondence | whether this reading is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap;
+# census-balance-under-continuation
+   /next_delta | names (Ren).
+   /correspondence | whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap;
+# census-balance
+   /next_delta | Ren's choice of names.
+   /correspondence | whether this reading is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap;
+# closing-needs-net-draw
+   /correspondence | Ren confirmed the reading, and this formalization is the AI's, pending Ren. … the names are for Ren to choose.
+# closure-verdict-meets-axiom
+   /hypotheses[0] | reading it as Ren's axiom is the AI's reading, pending Ren.
+   /next_delta | (zh only)
+   /correspondence | The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”. … the AI's reading, pending Ren). … The author's reading (an AI argument, pending Ren): route (b) reaches the self and what it depends on (corrected from “the self and the system one is in”), and the whole only where the whole is one feeding closure, where its verdict is the axiom's;
+# coming-and-ceasing-keep-pace
+   /next_delta | the level at which 生生不息 is read (Ren).
+   /correspondence | whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap; … The Chinese terms proposed for ceasing and coming to be are the AI's, and names are Ren's.
+# comparison-by-widening
+   /correspondence | Whether “flourishes/plurality” is read by widening alone, and whether it is the space of 生生, is Ren's choice (chapter section 8).
+   /limitations | Reading widening as Ren's “more futures” and as 生生 is the AI's reading, pending Ren.
+   /next_delta | Ren's choice whether widening reads “more futures” and 生生;
+# comparison-where-the-rest-responds
+   /next_delta | and Ren's judgment whether the two counterfactuals and the counterfactual meaning of the reach closure hold.
+   /correspondence | Readings (the AI's, pending Ren): an act has two counterfactuals, with the rest fixed, where only what the part reaches directly counts, and with the rest responding through its registration, where the part's closure under affecting what is registered counts;
+# comparison-within-reach
+   /hypotheses[2] | reading it as Ren's axiom is the AI's reading, pending Ren.
+   /next_delta | Whether the weaker version reads as significance covering what a center reaches is Ren's to judge.
+   /correspondence | The author's reading (an AI argument, pending Ren): the influence closure reads what a formation's own feedback can register once effects pass through the support and activity of others;
+   /related[1]/detail | Ren's weaker version reads: significance covering what a center reaches gives the axiom's comparison on every part within that reach whose levels without it exist, with the rest of the exchange fixed (the AI's reading, pending Ren).
+# condition-correspondence-discipline
+   /correspondence | which to adopt is Ren's decision.
+   /next_delta | Ren's choice between co-participation and interaction.
+# consumption-ends-with-feeders
+   /next_delta | The constraint reading is Ren's to judge.
+   /correspondence | The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”. … the AI's reading, pending Ren). … this reading remains the AI's, pending Ren.
+   /dependencies[3]/interface/conditions | The reading pending Ren.
+# contextual-registration
+   /correspondence | Readings (the AI's, pending Ren;
+# continued-change-needs-openness
+   /next_delta | whether ‘openness’ names exchange or inflow (Ren); … names (Ren).
+   /correspondence | whether ‘openness’ names exchange or inflow is Ren's to choose. … The readings and names of ‘openness’, ‘enclosed’ and ‘what stands’ are the AI's formulations and Ren's to choose;
+# continuing-self-fed-from-beyond
+   /next_delta | Whether conveyance counts as a formed relation is Ren's to judge.
+# continuous-time-as-tower
+   /hypotheses[1] | Representation: time as a family of discrete readings linked by the reading of Sampling (Ren's decision of 12 October);
+# conveyance-crosses-the-boundary
+   /hypotheses[0] | Conveyance as related is a correspondence premise: whether it counts as a formed relation along which N_rel transmits is Ren's choice, as for interaction, living on and descent.
+   /limitations | adopting it is Ren's choice; … the names are the AI's wording, for Ren to choose (conveyance, Cut and others).
+   /next_delta | Whether Ren adopts conveyance as a formed relation;
+# counterfactual-is-the-course
+   /next_delta | Ren's judgment on the two readings.
+   /correspondence | Readings (the AI's, pending Ren): a counterfactual is not a second world beside the actual one but the course of the same law where the part acts otherwise, existing where feasible and fixed by the act (the AI relates this to Ren's “there are no two realities”); … Further readings (the AI's, pending Ren): the course of an act not taken has the form of every unfolding, not a second kind of thing;
+# counting-standing-and-dependence
+   /next_delta | names (Ren).
+# counting-under-enclosure
+   /next_delta | names (Ren).
+   /correspondence | whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap;
+# counts-exist-where-decided
+   /correspondence | The reading awaits Ren.
+   /limitations | the readings are the AI's, pending Ren.
+# derived-extent-limits
+   /does_not_show[6] | At which level harm is read is Ren's choice.
+# entropy-history-and-record
+   /hypotheses[4] | The author's reading (AI, pending Ren): the record is what rises while every exchange conserves exactly.
+   /does_not_show[0] | Whether ‘entropy’ names the history or the record in the conserved amount is Ren's decision.
+   /next_delta | Ren's decision on the reading of ‘entropy’;
+   /correspondence | Answers to Ren's three questions (the AI's reading, pending Ren).
+# evolution-on-descent
+   /next_delta | names (Ren).
+   /correspondence | names are Ren's.
+# exchanges-commute-unless-joined
+   /next_delta | the readings (Ren).
+   /correspondence | Reading (the AI's, pending Ren): within the order, what registers is the order of exchanges joined through a relatum or a dependence;
+# experiment-needs-return
+   /correspondence | Readings (the AI's, pending Ren): an experiment is varying one's own act where the configuration, as the experimenter reads it, returns;
+# feedback-and-reach
+   /next_delta | (zh only)
+   /correspondence | The author's reading (an AI argument, pending Ren): the influence closure reads what a formation's own feedback can register once effects pass through the support and activity of others;
+# feeding-closure
+   /next_delta | The across-step feeding reading is Ren's to judge.
+   /correspondence | The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”. … the AI's reading, pending Ren).
+# four-cases-of-a-part
+   /correspondence | The author's reading (an AI argument, pending Ren): widening reads as generative, narrowing as degenerative and keeping the same as neutral;
+# generalization-through-lumping
+   /next_delta | Ren's judgment on the AI's formal reading of 理.
+   /correspondence | Readings (the AI's, pending Ren): when a model of what is irrelevant is right is when the world goes alike across what it lumps;
+# generation-is-replenishment
+   /next_delta | How far generation must be read as embodied (Ren);
+# held-lives-g0-is-centering
+   /hypotheses[0] | Reading ‘anything that wants its continuation’ as holding and S0 as wanting is the AI's proposed reading, for Ren to judge.
+   /hypotheses[4] | (zh only)
+   /does_not_show[1] | Which formations want, and whether wanting is S0, are for Ren to judge.
+   /does_not_show[4] | Whether lives no standpoint holds (a dormant seed, a coma, someone who no longer wants to go on) are within the axiom's range is Ren's choice.
+   /next_delta | Ren's judgments: whether S0 is wanting, the choice between the two completions, the axiom's range, the level of harm;
+   /correspondence | Reading S0 as wanting and N_std as the axiom is the AI's reading of the proposal, pending Ren.
+# histories-fix-law-up-to-dead-ends
+   /correspondence | Reading (the AI's, pending Ren): Ren agreed that law and history are one unfolding read two ways, the law read off the unfolding (“there are no two realities”);
+   /limitations | the readings are the AI's, pending Ren;
+   /next_delta | Ren's judgment whether a law reads as a family of histories holding its splices, and whether an unfolding's histories read as unending.
+# identification-where-bounded
+   /next_delta | Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading.
+   /correspondence | Readings (the AI's, pending Ren): ‘situationally’ is the bound;
+# identity-across-steps
+   /does_not_show[6] | How to read succession, whether the working reading lets a tenure continue through succession, and at which level 生生不息 is read are Ren's reading choices.
+   /next_delta | (zh only)
+   /correspondence | Whether 生生不息 is read at the level of the lineage, of its members or both is Ren's to choose;
+# imbalance-as-relatum
+   /correspondence | (zh only)
+   /limitations | the readings are the AI's, pending Ren;
+# laws-of-one-step-complete
+   /correspondence | Reading (the AI's, pending Ren): with the two missing laws below added, the laws of one step are all of them;
+   /limitations | the readings are the AI's, pending Ren;
+# laws-of-one-step
+   /does_not_show[2] | dropping it where infinitely many stand would change the representation of amounts, which is Ren's decision.
+   /does_not_show[5] | the name ‘closure bounds change’ is Ren's.
+   /next_delta | the representation decisions of class (b) and the names are Ren's.
+   /correspondence | Reading (AI, pending Ren): the laws of Part I that the premises bound are laws of each step and its relata, and the premises are one way of making their conditions hold everywhere.
+# learnable-through-registration
+   /next_delta | Ren's judgment on the reading that registration bounds what is learned.
+   /correspondence | Readings (the AI's, pending Ren): registration bounds what is learned;
+# learning-by-refutation
+   /correspondence | Readings (the AI's, pending Ren): induction is resolved into laws rather than certified;
+   /limitations | the readings other than 理 are the AI's, pending Ren;
+   /next_delta | Ren's judgment on “induction resolved into laws”.
+# least-footprint-where-idleness-decided
+   /correspondence | The reading is AI-authored, pending Ren;
+# levels-of-closure
+   /next_delta | Whether the reach closure reads “the system that one is in” is Ren's to judge.
+   /correspondence | The author's reading (an AI argument, pending Ren): the influence closure reads what a formation's own feedback can register once effects pass through the support and activity of others;
+   /related[0]/detail | Ren's levels “the whole … the system that one is in … the self”: the system does not read the intermediate level, and the reach closure is offered for it (the AI's reading, pending Ren).
+# life-as-condition-of-life
+   /does_not_show[3] | whether drawing on a self-bearing embodied relatum at its last step counts against living, and for which drawers, is Ren's choice.
+   /next_delta | (zh only)
+   /correspondence | The final choice of names is Ren's.
+# listing-once-is-decided-identity
+   /correspondence | Reading (the AI's, pending Ren): listing once commits to no more than this.
+   /limitations | the readings are the AI's, pending Ren;
+   /next_delta | Ren's judgment on reading listing once as decided identity.
+# living-on-and-descent
+   /hypotheses[1] | sustenance and descent are two candidate readings of related, correspondence premises: whether they count as formed relations along which N_rel transmits is Ren's choice.
+   /next_delta | Whether Ren adopts living on and descent as relations along which N_rel transmits; … relating descent to C, whether bringing about new arising makes an outcome better (Ren);
+   /correspondence | it neither replaces Ren's words nor decides whether Ren adopts these relations.
+# loss-beyond-a-region
+   /next_delta | Whether route (b) suffices is Ren's to judge (closure-verdict-meets-axiom).
+   /correspondence | The author's reading (an AI argument, pending Ren): regions of formations read as the self, the system one is in and the whole;
+# losses-of-the-sum-over-histories
+   /correspondence | Reading (the AI's, pending Ren): the limits of accuracy are these four losses, each a theorem: a truncation misses exactly what it drops;
+   /limitations | the readings are the AI's, pending Ren;
+# map-of-premises
+   /next_delta | names (Ren).
+   /correspondence | The names of the premises and of these worlds are the AI's formulations, and Ren's to choose.
+# metaethical-core-characterization
+   /next_delta | the reading choice still needs philosophical argument and is Ren's to make.
+# more-needs-renewers
+   /correspondence | the final choice is Ren's.
+# necessarily-drawn-is-not-returning
+   /correspondence | Reading (the AI's, pending Ren): possibly and necessarily drawn come apart exactly where the course is open: a configuration can be drawn in on one course and come back on another;
+# no-finite-part-bears-taking
+   /correspondence | The final choice of names is Ren's.
+# normal-forms-need-decided-apartness
+   /correspondence | The reading is AI-authored, pending Ren;
+# one-axiom-yields-g0
+   /hypotheses[0] | reading it as Ren's axiom is the AI's reading, pending Ren.
+   /hypotheses[5] | Reading A on living content is a reading, pending Ren.
+   /next_delta | Ren's judgments: whether Unrestricted reads the axiom, and whether A is read on living content;
+   /correspondence | The author's reading (an AI argument, pending Ren): the formation index reads “anything”, a formation's continuation at a step reads “its continuation into the future”, and the standpoint index reads “has significance” unqualified, with no center privileged; … P44's reading (an AI argument, pending Ren): positive relevance is read as the significance of realized living content, reading Ren's “doesn't have to be positive”: significance is not positive relevance, and what is positive is the living, 生生;
+   /dependencies[1]/interface/conditions | the reading pending Ren.
+# one-step-missing-laws
+   /correspondence | Reading (the AI's, pending Ren): that something taken has a taker, and that nothing is taken beyond what stood with what was given, belong to the laws of one step, and were before only implicit in the definitions.
+   /limitations | The readings are the AI's, pending Ren;
+# only-the-order-of-change-registers
+   /correspondence | Reading (the AI's, pending Ren): for the laws of one step, the totals and counts over a stretch, and recurrence, the step index carries nothing beyond the order of change;
+   /limitations | the readings are the AI's, pending Ren;
+# order-of-exchanges-is-the-invariant
+   /correspondence | Reading (the AI's, pending Ren): given a footprint, what the laws need is the partial order of joined exchanges, not a sequence of steps;
+   /limitations | the readings are the AI's, pending Ren;
+# own-count-misses-joint-excess
+   /next_delta | names (Ren).
+# premises-read-off-the-exchange
+   /does_not_show[0] | (zh only)
+   /next_delta | Ren's judgment on the readings.
+   /correspondence | Readings (the AI's, pending Ren): balance, only active relata giving, only active relata taking what they draw on, and activity needing support tie readings of one exchange together;
+# presupposition-scopes
+   /hypotheses[4] | (zh only)
+   /next_delta | Ren's judgments whether the presupposition reads Ren's belief and whether the levels read as three readings of the presupposition;
+   /correspondence | The author's reading (an AI argument, pending Ren): the presupposition reads the “belief” without which, Ren wrote, the self cannot justify itself, and using it as a premise is the AI's step;
+   /related[1]/detail | Ren's levels read as three readings of the presupposition: super-true, sub-true along affecting, and sub-true along the empty relation (the AI's reading, pending Ren);
+# process-and-frame-as-readings
+   /correspondence | Readings (the AI's, pending Ren): World is where the core begins, a labelled process is the reading that splits the configuration into what the law fixes and what it leaves open, and a frame is a world read through its claims;
+# projection-carrying-a-law
+   /correspondence | Readings (the AI's, pending Ren): a mechanism is a projection that carries a law, and the model of what is irrelevant (Becoming.Experiment) is characterized exactly by going alike;
+# ranking-under-readings
+   /next_delta | Ren's choice of the reading of 生生 (comparing courses on possibilities uses no reading of living, which answers whether G0 and C share one);
+   /correspondence | Which reading is the reading of 生生 is Ren's choice. … The interpretation of the possibility reading (an AI argument, pending Ren): it reads “what has significance is what can form” and Ren's “more possibilities of becoming”;
+# recurrence-without-decidedness
+   /correspondence | The reading awaits Ren.
+   /limitations | the readings are the AI's, pending Ren.
+# recurrence-without-premise
+   /correspondence | This is one path for Ren's question of 11 October 2026, ‘if "lossless exist", can we find a path, to figure out, and prove along the way?’, taken with no premise as Ren asked (‘zero-premise, zero axiom(we are not physics, we derive further)’).
+# registration-within-what-it-registers
+   /correspondence | Readings (the AI's, pending Ren;
+   /next_delta | Ren's judgment on the reading that from within not all can be said at once.
+# relata-counted-up-to-indiscernibility
+   /correspondence | Reading (the AI's, pending Ren): identity itself is read off the relations only up to indiscernibility, and the core's names give one decided identity more than the relations do: asked of every world, the count through relations is fixed only under excluded middle, as in P58's law_iff_em.
+   /limitations | the readings are the AI's, pending Ren;
+   /next_delta | Ren's judgment on reading names as giving one identity more than the relations.
+# represented-boundary-against-dependence
+   /correspondence | The author's reading (an AI argument, pending Ren): a region of conditions reads as the boundary a center represents, and the conditions a formation actually takes part in and requires as its actual dependence.
+   /limitations | reading a region of conditions as a represented boundary is the AI's reading, pending Ren; … the names (RenewingOver, Omitted and others) are the AI's wording, for Ren to choose.
+   /next_delta | whether route (b) suffices is Ren's judgment (P40;
+# reserve-defers-ending
+   /next_delta | where a held condition is represented, which reading the valuation uses (Ren);
+# rest-at-every-resolution
+   /laws[1] | the laws here are those without counting the refinement, kept as research notes by Ren's choice.
+   /next_delta | Research notes (Ren): attainment of the counting bounds;
+   /correspondence | The author's reading (an AI argument, pending Ren): without counting the refinement, the total standing counted in the unit of step T is a rational quantity, refining the unit representing amounts at finer resolution;
+# rest-with-refinement-counted
+   /hypotheses[1] | The author's reading (AI, pending Ren): an amount is a difference made, so a finer distinction is itself a becoming that something must give.
+   /correspondence | This answers Ren's ‘for the case of 0, why can't we have it?’ of 11 October 2026, read by the author as the case of zero premises (AI, pending Ren's confirmation).
+   /related[0]/detail | Unification plan R4: one dimension of the representation's scope, the unit of amounts, stated in its zero-premise form following Ren's choice of 11 October 2026;
+   /limitations | counting the refinement is a reading (Ren's direction, the author's elaboration pending Ren), not derived;
+# returning-novelty-forgetting-on-levels
+   /next_delta | Ren's judgment on the readings (curvature, gain from beyond the part, the bounded present).
+   /correspondence | Readings (the AI's, pending Ren): each condition is a state of the part the law is about, as curvature is a state of a region, so a necessary law needs no necessary condition;
+# returning-where-the-course-branches
+   /correspondence | Reading (the AI's, pending Ren): where the course branches, returning asks more than keeping every possibility;
+   /limitations | the readings are the AI's, pending Ren;
+# rising-and-falling-in-one-exchange
+   /next_delta | names (Ren).
+   /correspondence | ‘Rising’, ‘falling’ and ‘one exchange’ are the AI's terms, and names are Ren's.
+# runaway-distance-unregistered
+   /correspondence | Readings (the AI's, pending Ren): a runaway is a loop whose own registration before the break is that of a world with as much more stock as one likes;
+# runs-on-families-chosen-step-by-step
+   /correspondence | Reading (the AI's, pending Ren): a family need not be fixed;
+   /limitations | the readings are the AI's, pending Ren;
+# seeking-boundary
+   /correspondence | Readings (the AI's, pending Ren): 无明 is the not-seeing that keeps seeking locked onto a target that cannot be met at rest, and its boundary is B1;
+   /limitations | the readings are the AI's, pending Ren;
+   /validation_scope | not independently reviewed, whether it needs a review is Ren's call.
+# selection-through-registration
+   /correspondence | Readings (the AI's, pending Ren): any selection decided by what a selector registers (keeping, rewarding, reproducing, training) reaches exactly what it registers, blind to whatever a candidate's part does beyond the selector's registration closure, however far its reach closure extends;
+# separation-loses-the-relation
+   /correspondence | Readings (the AI's, pending Ren;
+   /next_delta | Ren's judgment on reading a correlation as the memory of a meeting.
+# significance-retained-within-margin
+   /hypotheses[0] | reading it as Ren's axiom is the AI's reading, pending Ren.
+   /correspondence | The author's reading (an AI argument, pending Ren): the formation index reads “anything”, a formation's continuation at a step reads “its continuation into the future”, and the standpoint index reads “has significance” unqualified, with no center privileged;
+   /limitations | which reading G0's living names is Ren's choice; … the readings and names are the AI's, pending Ren.
+   /next_delta | Ren's judgments: whether not harm reads as retaining or as the stepwise reading's not undermining;
+# space-and-its-parts
+   /laws[10] | The same activity while each side draws on its own standing (selfDrawing) also has an event that is not living, but only on the stepwise reading's verdict about drawing on a self-bearing embodied relatum at its ending, which is Ren's to choose.
+   /does_not_show[3] | (zh only)
+   /does_not_show[4] | Whether undermining that co-occurs with the depending relatum not being active after the step counts against living, and for which drawers, is Ren's to choose.
+   /next_delta | The reading of the proposal's ‘generative, degenerative’ (Ren); … names (Ren).
+   /correspondence | Which reading the proposal's ‘generative, degenerative’ takes is Ren's to choose (ninth independent review, M1). … ‘World’, ‘arising recurring’ and ‘ceasing recurring’ are the AI's formulations, and names are Ren's.
+# subthreshold-registration
+   /correspondence | So the readings recorded here are the AI's narrowed ones, pending Ren, not the wording Ren accepted.
+   /limitations | the readings are the AI's, narrowed by the review, pending Ren;
+# sum-over-histories-exact
+   /correspondence | Reading (the AI's, pending Ren): the AI reads “Fermi's diagrams” as Feynman diagrams, whose sum over histories has this shape: the weight of a history is composed of its steps' weights, and alternatives add.
+   /limitations | the readings are the AI's, pending Ren;
+   /next_delta | Instances of real and complex weightings in the periphery (probabilities and amplitudes), and Ren's judgment on the reading of the sum over histories.
+# support-from-the-supported
+   /correspondence | The author's reading (an AI argument, pending Ren): support gained only from the supported reads as the continuation of becoming continuing itself, since with nothing given from beyond what can form is opened only by what the supported give.
+# target-capture
+   /correspondence | Readings (the AI's, pending Ren): hijacking is a target formed and passed on by a selection that rewards what cannot rest, held in place by a rule its winners write;
+   /limitations | the readings are the AI's, pending Ren;
+   /validation_scope | not independently reviewed, whether it needs a review is Ren's call.
+# testing-within-registration
+   /correspondence | So the readings here are the AI's narrowed ones, pending Ren, not the wording Ren accepted.
+# the-split-that-makes-sense
+   /next_delta | Ren's judgment on the account of the pair and the reading of 阴阳.
+   /correspondence | Readings (the AI's, pending Ren;
+# transmission-independent-where-it-binds
+   /correspondence | Reading (the AI's, pending Ren): the seven other premises only limit dependence and never require one; … whether it, or another law of forming, is adopted is Ren's.
+   /limitations | whether drawing is depending is adopted is Ren's; … the names are the AI's wording, for Ren to choose (drop, DependsOnDrawn, DrawingDepends and others).
+   /next_delta | whether drawing is depending is adopted (Ren).
+# transmission-is-inheritance-and-need
+   /correspondence | Reading (the AI's, pending Ren): transmission is not an extra assumption about the whole but a law of how dependence forms at one descent; … Whether the world's Transmitting (every giver) is weakened to TransmitsFromSome (some supported giver) would change the map of premises and the selection tables, and is Ren's.
+   /limitations | the names are the AI's wording, for Ren to choose (InheritsAt, NeedsWithinAt, TransmitsFromSome and others).
+   /next_delta | whether Transmitting is weakened to TransmitsFromSome (Ren);
+# unceasing-generation-needs-renewal
+   /next_delta | The scope of the second 生 and whether arising on a consumed condition is generation are Ren's to say.
+   /correspondence | the final choice is Ren's.
+# unity-of-readings
+   /next_delta | Ren's judgment on the readings (the core's types as readings of one unfolding, the axiom coming to the presupposition).
+   /correspondence | Readings (the AI's, pending Ren): what the core states on many types are readings of one unfolding;
+# where-a-move-is-formed
+   /next_delta | Ren's judgment on the readings (acting and undergoing as one move read from its two sides, whose move it is as a claim about courses not taken).
+   /correspondence | Readings (the AI's, pending Ren): acting and undergoing are one move read from its two sides;
+# whole-first-and-bounded-centers
+   /hypotheses[0] | reading it as Ren's axiom is the AI's reading, pending Ren.
+   /next_delta | Ren's judgment whether route (b), reaching the self and what it depends on, suffices (see closure-verdict-meets-axiom);
+   /correspondence | The author's reading (an AI argument, pending Ren): the formation index reads “anything”, a formation's continuation at a step reads “its continuation into the future”, and the standpoint index reads “has significance” unqualified, with no center privileged; … The author's reading (an AI argument, pending Ren): Retains.within gives this order as an order of how complete a judgment is, not as what life does;
+   /dependencies[3]/interface/conditions | The reading pending Ren.
+   /related[3]/detail | the AI's reading, pending Ren).
+   /related[4]/detail | The reach closure, not the system, is offered for Ren's middle level “the system that one is in”: one common condition makes the system the whole.
+# whole-law-of-counting
+   /does_not_show[6] | the laws under a stronger reading of binding, in which each premise excludes something the representation allows, are not stated, that reading being Ren's to choose.
+   /next_delta | a reading of binding in which each premise excludes something the representation allows, and whether under it something arising is still the only added law (the reading is Ren's); … names (Ren).
+   /correspondence | whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap;
+# whole-persists-through-generation
+   /correspondence | (zh only)
+   /limitations | at which level 生生不息 is read is Ren's;
+   /next_delta | at which level 生生不息 is read (Ren).
+# wisdom-root-part-one
+   /hypotheses[1] | Matching the laws to aspects of wisdom (registration, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, 理 being Ren's and the rest pending Ren;
+   /correspondence | 理 is read as Ren reads it, and the other readings are the AI's, pending Ren.
+records: 101
