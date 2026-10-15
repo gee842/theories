@@ -30,6 +30,14 @@ assumed of any unfolding; it is the condition written into each law that uses it
   nothing (`lossless_of_returns`), and a configuration that returns can be had at every step
   (`Returns.reachable`). Undoing is going on: where `s` returns, further steps of the same
   law lead from `next s` back to `s` (`Returns.undo`).
+* **What can be realized together, and within how many moves.** A bundle of claims is realized
+  together within `n` moves where a course of at most `n` moves ends at a configuration
+  realizing every claim of it (`WithinMoves`). A course carries every such bound, its own
+  moves counted (`WithinMoves.after_course`); some bound exists exactly where a configuration
+  realizing the bundle is reachable (`withinMoves_iff_reach`), so along a course nothing becomes
+  realizable together that was not before (`together_after_reach`), and a bundle no longer
+  realizable together marks a course with no way back (`lost_together_not_returns`). The bound
+  is not kept: a step can shorten it, as the bridge's joint-activation instance shows.
 * **Within finitely many configurations, losing nothing is returning.** Where a list holds
   every configuration, three are one: the law merges nothing (`Lossless`), every
   configuration returns, and every configuration can be had at every step
@@ -69,7 +77,7 @@ No ethical predicate, ranking or axiom occurs.
 namespace Becoming
 open Generative
 
-universe u v
+universe u v w
 
 section Sequences
 
@@ -603,5 +611,54 @@ theorem not_returns_iff_loses {s t : S} : ¬ Reach P t s ↔ ∃ u, Reach P s u 
   ⟨fun away => ⟨s, Reach.refl P s, away⟩, fun ⟨_, there, lost⟩ back => lost (back.trans there)⟩
 
 end Runs
+
+
+section Together
+
+variable {S : Type u} {A : Type v} {C : Type w}
+
+/-- A bundle of claims realized together, at one configuration, at the end of a course of at most
+`n` moves from `s`. -/
+def WithinMoves (P : Process S A) (realized : S → C → Prop) (s : S) (n : Nat)
+    (bundle : C → Prop) : Prop :=
+  ∃ word t, Trace P s word t ∧ word.length ≤ n ∧ ∀ c, bundle c → realized t c
+
+variable {P : Process S A} {realized : S → C → Prop} {bundle : C → Prop}
+
+/-- One step before adds one move to the bound. -/
+theorem WithinMoves.before {s m : S} {a : A} {n : Nat} (step : P.step s a m) :
+    WithinMoves P realized m n bundle → WithinMoves P realized s (n + 1) bundle
+  | ⟨word, t, path, short, holds⟩ => ⟨a :: word, t, .cons step path, Nat.succ_le_succ short, holds⟩
+
+/-- **A course carries every bound on realizing a bundle together, its own moves counted.** -/
+theorem WithinMoves.after_course {n : Nat} :
+    ∀ {s t : S} {xs : List A}, Trace P s xs t → WithinMoves P realized t n bundle →
+      WithinMoves P realized s (xs.length + n) bundle
+  | _, _, _, .nil _, within =>
+    Eq.subst (motive := fun k => WithinMoves P realized _ k bundle) (Nat.zero_add n).symm within
+  | _, _, _, .cons step path, within =>
+    Eq.subst (motive := fun k => WithinMoves P realized _ k bundle) (Nat.succ_add _ n).symm
+      (WithinMoves.before step (WithinMoves.after_course path within))
+
+/-- **Realizable together within some bound is a reachable configuration realizing the
+bundle.** -/
+theorem withinMoves_iff_reach {s : S} :
+    (∃ n, WithinMoves P realized s n bundle) ↔ ∃ t, Reach P s t ∧ ∀ c, bundle c → realized t c :=
+  ⟨fun ⟨_, word, t, path, _, holds⟩ => ⟨t, ⟨word, path⟩, holds⟩,
+   fun ⟨t, ⟨word, path⟩, holds⟩ => ⟨word.length, word, t, path, Nat.le_refl _, holds⟩⟩
+
+/-- **Along a course nothing becomes realizable together that was not before.** -/
+theorem together_after_reach {s t : S} (onward : Reach P s t) :
+    (∃ n, WithinMoves P realized t n bundle) → ∃ n, WithinMoves P realized s n bundle
+  | ⟨n, within⟩ => match onward with
+    | ⟨xs, path⟩ => ⟨xs.length + n, WithinMoves.after_course path within⟩
+
+/-- **A bundle no longer realizable together marks a course with no way back.** -/
+theorem lost_together_not_returns {s t : S}
+    (before : ∃ n, WithinMoves P realized s n bundle)
+    (after : ¬ ∃ n, WithinMoves P realized t n bundle) : ¬ Reach P t s :=
+  fun back => after (together_after_reach back before)
+
+end Together
 
 end Becoming

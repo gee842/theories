@@ -19,6 +19,10 @@ import FallibleInspection
 import BecomingReversibility
 import DynamicConsequences
 import DerivedHistoryLaw
+import BecomingCompatibility
+import RelationalBecoming
+import ClassificationRobustJudgment
+import JointInterpretation
 
 /-!
 # Existing interfaces as instances of the spine
@@ -103,6 +107,38 @@ imports none of these modules; the dependency runs from them to the core.
 * `DerivedHistoryLaw.derivedProcess` is the law of a language's admitted histories read
   through the summary (`admittedProcess`, `derived_same_steps`), so `exact_iff_fiber_future` is
   the core's `Readout.futures_through_iff` (`exact_iff_fiber_future_by_core`).
+* `BecomingCompatibility`'s pooled, retained, evolving and erased laws are the core's laws in
+  context (`Becoming.Context`), so `pooling_exact_iff_join_closed`, `retained_realizes_union`,
+  `erasure_exact_iff_context_lifting`, `arrivals_append` and `arrivals_snoc` are
+  `pooledLaw_exact_iff_joinClosed`, `retainedLaw_realizes_inOne`, `erasedLaw_exact_iff_lifts`,
+  `arrives_append` and `arrives_snoc`, and its two witnesses are the core's `CrossingContexts`
+  and `ChangingContext` (`pooling_exact_iff_join_closed_by_core` and the others); the core
+  proves `changed_history_really_ends` without the `propext` the periphery's proof uses.
+* `RelationalBecoming.Within` is the core's `WithinMoves`, so `within_after_prefix` and
+  `eventual_after_prefix` are `WithinMoves.after_course` and `together_after_reach`
+  (`within_after_prefix_by_core`, `eventual_after_prefix_by_core`). On the joint-activation law
+  of `JointContinuationClassification`, one preparation step shortens the bound for joint
+  activation from two moves to one, releasing the coupling loses it at every bound, and the
+  prepared configuration can end one-sided (`actual_preparation_changes_effective_capacity_by_core`,
+  `actual_release_loses_eventual_joint_by_core`,
+  `prepared_capacity_can_end_without_joint_realization_by_core`), proved here without the
+  `propext` and `Quot.sound` of the periphery's proofs.
+* `ClassificationRobustJudgment.classification_robust_iff`, strict preference under every
+  classification of fresh contents into basic and secondary exactly where the fresh contents of
+  `b` are retained and `a` is better with all fresh contents secondary, holds with excluded
+  middle as a named hypothesis (`classification_robust_iff_of_em`); the forward direction needs
+  nothing (`compared_retains`, `compared_secondary`). Excluded middle is exactly what it needs:
+  with one fresh content whose retention is a proposition `R`, strict preference under the
+  classification making it basic is `R` or its failure (`classification_robust_iff_iff_em`).
+* `GenerativeClosure` and `JointInterpretation` judge derivations against a supplied inquiry
+  predicate. Read as the core's `Scope`, the configurations a policy's actual executions reach
+  from a belief, the inquiry is fixed by the dynamics: a claim derived from a basis holding over
+  the scope holds over it, and the whole closure does exactly where the basis does
+  (`derivation_sound_on_scope`, `closure_over_scope_iff_basis`); every claim derived from a
+  sound policy's goal holds over its scope (`sound_goal_closure`); and with a finite basis, each
+  derived claim realized somewhere in the scope is one configuration of the scope realizing them
+  all (`common_on_scope_iff`). Soundness itself is the periphery's theorem, compiled by the
+  spine run with an empty axiom report.
 
 Direction conventions differ and are kept: in `GenerativeComparison`,
 `Better first second` says the second is better; in `PracticalJudgment` and
@@ -1169,5 +1205,371 @@ theorem exact_iff_fiber_future_by_core (L : List A → Prop)
           ((fibers h.1 k.1 h.2 k.2 same word).trans (admitted_feasible_iff closed).symm)⟩)
 
 end DerivedHistory
+
+
+/-! ## Laws in context -/
+
+section ContextCoherence
+
+/-- **`pooling_exact_iff_join_closed` through the core**: `pooledLaw_exact_iff_joinClosed`. -/
+theorem pooling_exact_iff_join_closed_by_core {I : Type u} {S : Type v} {A : Type w}
+    (family : I → Process S A) (seed : I) :
+    (∀ s word t, Trace (BecomingCompatibility.pooled family) s word t ↔
+        BecomingCompatibility.InOne family s word t) ↔
+      BecomingCompatibility.JoinClosed family :=
+  pooledLaw_exact_iff_joinClosed seed
+
+/-- **`retained_realizes_union` through the core**: `retainedLaw_realizes_inOne`. -/
+theorem retained_realizes_union_by_core {I : Type u} {S : Type v} {A : Type w}
+    (family : I → Process S A) (s : S) (word : List A) (t : S) :
+    (∃ i j, Trace (BecomingCompatibility.retained family) (i, s) word (j, t)) ↔
+      BecomingCompatibility.InOne family s word t :=
+  retainedLaw_realizes_inOne
+
+/-- **`erasure_exact_iff_context_lifting` through the core**: `erasedLaw_exact_iff_lifts`, the
+foundation's `projection_exact_iff` read along `Prod.snd`. -/
+theorem erasure_exact_iff_context_lifting_by_core {I : Type u} {S : Type v} {A : Type w}
+    (R : I → S → A → I → S → Prop) :
+    (∀ i s a t, (∃ j k, R j s a k t) → ∃ k, R i s a k t) ↔
+      (∀ i s word t, Trace (BecomingCompatibility.eraseContext R) s word t ↔
+        ∃ j, Trace (BecomingCompatibility.evolving R) (i, s) word (j, t)) :=
+  erasedLaw_exact_iff_lifts R
+
+/-- **`arrivals_append` through the core**: `arrives_append`. -/
+theorem arrivals_append_by_core {I : Type u} {S : Type v} {A : Type w}
+    (R : I → S → A → I → S → Prop) (initial : I → Prop) (s : S) (xs ys : List A) (t : S)
+    (k : I) :
+    BecomingCompatibility.Arrives R initial s (xs ++ ys) t k ↔
+      ∃ m, BecomingCompatibility.Arrives R
+        (BecomingCompatibility.Arrives R initial s xs m) m ys t k :=
+  arrives_append
+
+/-- **`arrivals_snoc` through the core**: `arrives_snoc`. -/
+theorem arrivals_snoc_by_core {I : Type u} {S : Type v} {A : Type w}
+    (R : I → S → A → I → S → Prop) (initial : I → Prop) (s : S) (word : List A) (a : A) (t : S)
+    (j : I) :
+    BecomingCompatibility.Arrives R initial s (word ++ [a]) t j ↔
+      ∃ m, BecomingCompatibility.Advance R
+        (BecomingCompatibility.Arrives R initial s word m) m a t j :=
+  arrives_snoc
+
+/-- **`no_single_context_supports_crossing` through the core**: `CrossingContexts.not_inOne`. -/
+theorem no_single_context_supports_crossing_by_core :
+    ¬ BecomingCompatibility.InOne BecomingCompatibility.splitFamily 0 [(), ()] 2 :=
+  CrossingContexts.not_inOne
+
+/-- **`actual_context_change_joins_history` through the core**: `ChangingContext.joins`. -/
+theorem actual_context_change_joins_history_by_core :
+    Trace (BecomingCompatibility.evolving BecomingCompatibility.changingRelation) (false, 0)
+      [(), ()] (true, 2) :=
+  ChangingContext.joins
+
+/-- **`changed_history_really_ends` through the core**: `ChangingContext.ends`, with an empty
+axiom report. -/
+theorem changed_history_really_ends_by_core (j : Bool) (t : Nat) :
+    ¬ BecomingCompatibility.changingRelation true 2 () j t :=
+  ChangingContext.ends j t
+
+end ContextCoherence
+
+
+/-! ## Realized together within a bound -/
+
+section JointActivation
+
+open JointContinuationClassification
+
+/-- **`within_after_prefix` through the core**: `WithinMoves.after_course`. -/
+theorem within_after_prefix_by_core {S : Type u} {A : Type v} {C : Type w} {P : Process S A}
+    {realized : S → C → Prop} {s t : S} {earlierWord : List A} {n : Nat} {bundle : C → Prop}
+    (path : Trace P s earlierWord t) (next : RelationalBecoming.Within P realized t n bundle) :
+    RelationalBecoming.Within P realized s (earlierWord.length + n) bundle :=
+  WithinMoves.after_course path next
+
+/-- **`eventual_after_prefix` through the core**: `together_after_reach`. -/
+theorem eventual_after_prefix_by_core {S : Type u} {A : Type v} {C : Type w} {P : Process S A}
+    {realized : S → C → Prop} {s t : S} {earlierWord : List A} {bundle : C → Prop}
+    (path : Trace P s earlierWord t) (next : RelationalBecoming.Eventually P realized t bundle) :
+    RelationalBecoming.Eventually P realized s bundle :=
+  together_after_reach ⟨earlierWord, path⟩ next
+
+/-- The joint content of the activation law is the configuration with both active. -/
+theorem joint_content_both {s : Configuration}
+    (content : ∀ c, RelationalBecoming.both c → RelationalBecoming.realized s c) :
+    s = .bothActive :=
+  match content .leftRealized True.intro, content .rightRealized True.intro with
+  | .inl left, .inl right => Configuration.noConfusion (left.symm.trans right)
+  | _, .inr both => both
+  | .inr both, _ => both
+
+/-- Configurations past the release: released, or one side active. -/
+def PastRelease (s : Configuration) : Prop :=
+  s = .released ∨ s = .leftActive ∨ s = .rightActive
+
+theorem PastRelease.step {s m : Configuration} {a : Event} (step : Step s a m)
+    (past : PastRelease s) : PastRelease m :=
+  match step, past with
+  | .retainCoupling, .inl e => Configuration.noConfusion e
+  | .retainCoupling, .inr (.inl e) => Configuration.noConfusion e
+  | .retainCoupling, .inr (.inr e) => Configuration.noConfusion e
+  | .releaseCoupling, .inl e => Configuration.noConfusion e
+  | .releaseCoupling, .inr (.inl e) => Configuration.noConfusion e
+  | .releaseCoupling, .inr (.inr e) => Configuration.noConfusion e
+  | .activateLeftCoupled, .inl e => Configuration.noConfusion e
+  | .activateLeftCoupled, .inr (.inl e) => Configuration.noConfusion e
+  | .activateLeftCoupled, .inr (.inr e) => Configuration.noConfusion e
+  | .activateRightCoupled, .inl e => Configuration.noConfusion e
+  | .activateRightCoupled, .inr (.inl e) => Configuration.noConfusion e
+  | .activateRightCoupled, .inr (.inr e) => Configuration.noConfusion e
+  | .activateTogether, .inl e => Configuration.noConfusion e
+  | .activateTogether, .inr (.inl e) => Configuration.noConfusion e
+  | .activateTogether, .inr (.inr e) => Configuration.noConfusion e
+  | .activateLeftReleased, _ => .inr (.inl rfl)
+  | .activateRightReleased, _ => .inr (.inr rfl)
+
+theorem PastRelease.trace : ∀ {s t : Configuration} {word : List Event},
+    Trace RelationalBecoming.process s word t → PastRelease s → PastRelease t
+  | _, _, _, .nil _, past => past
+  | _, _, _, .cons step path, past => PastRelease.trace path (PastRelease.step step past)
+
+theorem PastRelease.not_both : ¬ PastRelease .bothActive
+  | .inl e => Configuration.noConfusion e
+  | .inr (.inl e) => Configuration.noConfusion e
+  | .inr (.inr e) => Configuration.noConfusion e
+
+theorem prepared_joint_within_one_by_core :
+    RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized .coupled 1
+      RelationalBecoming.both :=
+  ⟨[.activateTogether], .bothActive, trace_singleton_iff.mpr Step.activateTogether, Nat.le_refl _,
+   fun c _ => match c with
+     | .leftRealized => Or.inr rfl
+     | .rightRealized => Or.inr rfl⟩
+
+theorem initial_not_joint_within_one_by_core :
+    ¬ RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized .initial 1
+      RelationalBecoming.both
+  | ⟨word, _, path, short, content⟩ =>
+    have path : Trace RelationalBecoming.process .initial word .bothActive :=
+      Eq.subst (motive := fun x => Trace RelationalBecoming.process .initial word x)
+        (joint_content_both content) path
+    match word, path, short with
+    | [], path, _ => nomatch path
+    | [_], .cons step (.nil _), _ => nomatch step
+    | _ :: _ :: _, _, short => Nat.not_succ_le_zero _ (Nat.le_of_succ_le_succ short)
+
+/-- **`actual_preparation_changes_effective_capacity` through the core.** -/
+theorem actual_preparation_changes_effective_capacity_by_core :
+    Trace RelationalBecoming.process .initial [.retain] .coupled ∧
+    ¬ RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized .initial 1
+      RelationalBecoming.both ∧
+    RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized .coupled 1
+      RelationalBecoming.both ∧
+    RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized .initial 2
+      RelationalBecoming.both :=
+  ⟨trace_singleton_iff.mpr Step.retainCoupling, initial_not_joint_within_one_by_core,
+   prepared_joint_within_one_by_core,
+   WithinMoves.after_course (trace_singleton_iff.mpr Step.retainCoupling)
+     prepared_joint_within_one_by_core⟩
+
+/-- **`released_cannot_reach_joint` through the core.** -/
+theorem released_cannot_reach_joint_by_core :
+    ¬ RelationalBecoming.Eventually RelationalBecoming.process RelationalBecoming.realized
+      .released RelationalBecoming.both
+  | ⟨_, _, _, path, _, content⟩ =>
+    PastRelease.not_both (Eq.subst (motive := PastRelease) (joint_content_both content)
+      (PastRelease.trace path (.inl rfl)))
+
+/-- **`actual_release_loses_eventual_joint` through the core**: the core's
+`lost_together_not_returns` reads it as a course with no way back. -/
+theorem actual_release_loses_eventual_joint_by_core :
+    Trace RelationalBecoming.process .initial [.release] .released ∧
+    RelationalBecoming.Eventually RelationalBecoming.process RelationalBecoming.realized .initial
+      RelationalBecoming.both ∧
+    ¬ RelationalBecoming.Eventually RelationalBecoming.process RelationalBecoming.realized
+      .released RelationalBecoming.both :=
+  ⟨trace_singleton_iff.mpr Step.releaseCoupling,
+   ⟨2, actual_preparation_changes_effective_capacity_by_core.2.2.2⟩,
+   released_cannot_reach_joint_by_core⟩
+
+/-- Releasing the coupling has no way back. -/
+theorem release_not_returns :
+    ¬ Reach RelationalBecoming.process .released .initial :=
+  lost_together_not_returns (realized := RelationalBecoming.realized)
+    (bundle := RelationalBecoming.both)
+    actual_release_loses_eventual_joint_by_core.2.1 actual_release_loses_eventual_joint_by_core.2.2
+
+/-- **`prepared_capacity_can_end_without_joint_realization` through the core.** -/
+theorem prepared_capacity_can_end_without_joint_realization_by_core :
+    Trace RelationalBecoming.process .initial [.retain, .activateLeft] .leftActive ∧
+    RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized .coupled 1
+      RelationalBecoming.both ∧
+    ¬ RelationalBecoming.realized .leftActive .rightRealized ∧
+    (∀ a, ¬ Enabled RelationalBecoming.process .leftActive a) :=
+  ⟨.cons Step.retainCoupling (.cons Step.activateLeftCoupled (.nil _)),
+   prepared_joint_within_one_by_core,
+   fun h => match h with
+     | .inl e => Configuration.noConfusion e
+     | .inr e => Configuration.noConfusion e,
+   fun _ ⟨_, step⟩ => nomatch step⟩
+
+end JointActivation
+
+
+/-! ## Comparison under every classification of fresh contents -/
+
+section ClassificationRobust
+
+/-- Strict preference with every fresh content basic retains the fresh contents. -/
+theorem compared_retains {H C G N : Type} {p : H → C → Prop} {g : H → G → Prop}
+    {f : H → N → Prop} {a b : H}
+    (h : ClassificationRobustJudgment.compared p g f (fun _ => True) a b) :
+    PracticalJudgment.Included (f b) (f a) :=
+  fun n fb => match h with
+    | .inl strict => (strict.1 (.inr n) ⟨fb, True.intro⟩).1
+    | .inr ⟨forward, _, _⟩ => (forward (.inr n) ⟨fb, True.intro⟩).1
+
+/-- Strict preference with every fresh content secondary is preference with the fresh contents
+added as gains. -/
+theorem compared_secondary {H C G N : Type} {p : H → C → Prop} {g : H → G → Prop}
+    {f : H → N → Prop} {a b : H}
+    (h : ClassificationRobustJudgment.compared p g f (fun _ => False) a b) :
+    PracticalJudgment.Better p (ConcernExtension.extend g f) a b :=
+  match h with
+  | .inl ⟨forward, notBack⟩ =>
+    .inl ⟨fun c pb => forward (.inl c) pb,
+      fun back => notBack fun i => match i with
+        | .inl c => back c
+        | .inr _ => fun held => held.2.elim⟩
+  | .inr ⟨forward, back, gainForward, gainNotBack⟩ =>
+    .inr ⟨fun c pb => forward (.inl c) pb, fun c pa => back (.inl c) pa,
+      fun i => match i with
+        | .inl x => gainForward (.inl x)
+        | .inr n => fun fb => (gainForward (.inr n) ⟨fb, fun no => no⟩).1,
+      fun gainBack => gainNotBack fun i => match i with
+        | .inl x => gainBack (.inl x)
+        | .inr n => fun held => ⟨gainBack (.inr n) held.1, held.2⟩⟩
+
+/-- With excluded middle, retaining the fresh contents and being better with them secondary gives
+strict preference under every classification. -/
+theorem compared_of_em (em : ∀ p : Prop, Decided p) {H C G N : Type} {p : H → C → Prop}
+    {g : H → G → Prop} {f : H → N → Prop} {a b : H}
+    (fresh : PracticalJudgment.Included (f b) (f a))
+    (old : PracticalJudgment.Better p (ConcernExtension.extend g f) a b) (q : N → Prop) :
+    ClassificationRobustJudgment.compared p g f q a b :=
+  match old with
+  | .inl ⟨forward, notBack⟩ =>
+    .inl ⟨fun i => match i with
+        | .inl c => forward c
+        | .inr n => fun held => ⟨fresh n held.1, held.2⟩,
+      fun back => notBack fun c => back (.inl c)⟩
+  | .inr ⟨pba, _, gainForward, gainNotBack⟩ =>
+    have forward : PracticalJudgment.Included (ClassificationRobustJudgment.classifiedBasic p f q b)
+        (ClassificationRobustJudgment.classifiedBasic p f q a) := fun i => match i with
+      | .inl c => pba c
+      | .inr n => fun held => ⟨fresh n held.1, held.2⟩
+    match em (PracticalJudgment.Included (ClassificationRobustJudgment.classifiedBasic p f q a)
+        (ClassificationRobustJudgment.classifiedBasic p f q b)) with
+    | .inl back =>
+      .inr ⟨forward, back,
+        fun i => match i with
+          | .inl x => gainForward (.inl x)
+          | .inr n => fun held => ⟨fresh n held.1, held.2⟩,
+        fun gainBack => gainNotBack fun i => match i with
+          | .inl x => gainBack (.inl x)
+          | .inr n => fun fa => match em (q n) with
+            | .inl qn => (back (.inr n) ⟨fa, qn⟩).1
+            | .inr nq => (gainBack (.inr n) ⟨fa, nq⟩).1⟩
+    | .inr notBack => .inl ⟨forward, notBack⟩
+
+/-- **`classification_robust_iff` with excluded middle as a named hypothesis.** -/
+theorem classification_robust_iff_of_em (em : ∀ p : Prop, Decided p) {H C G N : Type}
+    (p : H → C → Prop) (g : H → G → Prop) (f : H → N → Prop) (a b : H) :
+    (∀ q, ClassificationRobustJudgment.compared p g f q a b) ↔
+      PracticalJudgment.Included (f b) (f a) ∧
+        PracticalJudgment.Better p (ConcernExtension.extend g f) a b :=
+  ⟨fun robust => ⟨compared_retains (robust _), compared_secondary (robust _)⟩,
+   fun ⟨fresh, old⟩ q => compared_of_em em fresh old q⟩
+
+/-- **`two_extremes_suffice` with excluded middle as a named hypothesis.** -/
+theorem two_extremes_suffice_of_em (em : ∀ p : Prop, Decided p) {H C G N : Type}
+    (p : H → C → Prop) (g : H → G → Prop) (f : H → N → Prop) (a b : H) :
+    (∀ q, ClassificationRobustJudgment.compared p g f q a b) ↔
+      ClassificationRobustJudgment.compared p g f (fun _ => False) a b ∧
+        ClassificationRobustJudgment.compared p g f (fun _ => True) a b :=
+  ⟨fun robust => ⟨robust _, robust _⟩,
+   fun ⟨secondary, basic⟩ q => compared_of_em em (compared_retains basic)
+     (compared_secondary secondary) q⟩
+
+/-- **Excluded middle is exactly what the robust comparison needs.** That strict preference under
+every classification follows from retaining the fresh contents and being better with them
+secondary, for all types, holds exactly where every proposition is decided: with `a = true`,
+`b = false`, one fresh content held at `true` and, at `false`, exactly where `R` holds, and one
+gain held only at `true`, the preference under the classification making the fresh content basic
+is `R` or its failure. -/
+theorem classification_robust_iff_iff_em :
+    (∀ (H C G N : Type) (p : H → C → Prop) (g : H → G → Prop) (f : H → N → Prop) (a b : H),
+      (∀ q, ClassificationRobustJudgment.compared p g f q a b) ↔
+        PracticalJudgment.Included (f b) (f a) ∧
+          PracticalJudgment.Better p (ConcernExtension.extend g f) a b) ↔
+      ∀ R : Prop, Decided R :=
+  ⟨fun robust R =>
+    match (robust Bool Unit Unit Unit (fun _ _ => True) (fun h _ => h = true)
+        (fun h _ => h = true ∨ R) true false).mpr
+        ⟨fun _ _ => Or.inl rfl,
+         .inr ⟨fun _ _ => True.intro, fun _ _ => True.intro,
+           ⟨fun i => match i with
+              | .inl _ => fun no => Bool.noConfusion no
+              | .inr _ => fun _ => Or.inl rfl,
+            fun back => Bool.noConfusion (back (.inl ()) rfl)⟩⟩⟩
+        (fun _ => True) with
+    | .inl ⟨_, notBack⟩ =>
+      .inr fun r => notBack fun i => match i with
+        | .inl _ => fun _ => True.intro
+        | .inr _ => fun _ => ⟨Or.inr r, True.intro⟩
+    | .inr ⟨_, back, _⟩ =>
+      match (back (.inr ()) ⟨Or.inl rfl, True.intro⟩).1 with
+      | .inl no => Bool.noConfusion no
+      | .inr r => .inl r,
+   fun em _ _ _ _ p g f a b => classification_robust_iff_of_em em p g f a b⟩
+
+end ClassificationRobust
+
+
+/-! ## Derivation over the scope of an inquiry -/
+
+section DerivationOverScope
+
+variable {S A R Index : Type} {k : Nat} {P : Process S A} {sense : S → A → S → Fin k}
+  {response : R → List A} {B : S → Prop} {policy : Policy A R k}
+  {basis : Index → InquiryRoot.Formula S}
+
+/-- **Derived claims hold over the scope where the basis does.** -/
+theorem derivation_sound_on_scope
+    (rootHolds : ∀ i, InquiryRoot.Necessary (Scope P sense response B policy) (basis i)) :
+    ∀ q, InquiryRoot.Derives basis [] q → InquiryRoot.Necessary (Scope P sense response B policy) q :=
+  InquiryRoot.all_closed_descendants_necessary rootHolds
+
+/-- **The whole closure holds over the scope exactly where its basis does.** -/
+theorem closure_over_scope_iff_basis :
+    (∀ q, InquiryRoot.Derives basis [] q →
+        InquiryRoot.Necessary (Scope P sense response B policy) q) ↔
+      ∀ i, InquiryRoot.Necessary (Scope P sense response B policy) (basis i) :=
+  InquiryRoot.entire_closure_necessary_iff_basis
+
+/-- **Every claim derived from a sound policy's goal holds over its scope.** -/
+theorem sound_goal_closure {safe : S → A → S → Prop} {goal : S → Prop}
+    (sound : Sound P safe goal sense response policy B) :
+    ∀ q, InquiryRoot.Derives (fun _ : Unit => goal) [] q →
+      InquiryRoot.Necessary (Scope P sense response B policy) q :=
+  derivation_sound_on_scope fun _ t inScope => Scope.secures sound t inScope
+
+/-- **With a finite basis, each derived claim realized somewhere in the scope is one
+configuration of the scope realizing them all.** -/
+theorem common_on_scope_iff (indices : List Index) (covers : ∀ i, i ∈ indices) :
+    (∀ q, InquiryRoot.Derives basis [] q → ∃ t, Scope P sense response B policy t ∧ q t) ↔
+      ∃ t, Scope P sense response B policy t ∧ ∀ q, InquiryRoot.Derives basis [] q → q t :=
+  InquiryRoot.JointInterpretation.pointwise_closure_iff_common basis indices covers _
+
+end DerivationOverScope
 
 end Becoming

@@ -8132,6 +8132,50 @@ Integration: identification-where-bounded 的恰好性由“只在 N = 1 与 N =
 
 **检查。** 在暂存区对 main（69ba40bd）编译：`Becoming.Identification` 43 项定理、55 项声明，没有错误或警告，公理报告全部为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。证明不用 `Nat` 的取模与减法引理：标记的位置由 P73 的套索世界（`lassoPos_early`、`lassoPos_period`）与 `periodic_whole` 给出，移位 M·M′ 使第 M′ 步落在循环的开头。合并检查器在整合者的运行中检查。本节尚未经独立审查。
 
+## 127. 外围证明接入脊柱（整合 I3b）：九项记录接入；语境中的规律、共同实现的界与粒度
+
+2026-10-14—15。延续 §124 的 I 列（Ren：“push as far as possible, as strong as possible, generally agree with your direction - but i also realize - a lot proofs are probably not integrated”，[来源](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md)）。I3a 之后主证明仍在脊柱运行之外的 21 项中，I3b 取能写成核心律或接到核心定义的 9 项；另有 2 项因桥接的新导入而由运行编译。粒度一族的核心模块由一个代理（Opus 5.5）起草，代理在写桥接之前因用量上限中止；机器重启清空临时目录后，该模块由代理的记录逐字重放重建（定理数与其构建一致），本会话审阅、写头注并编桥接。本会话其余的改动由 git 中留下的暂存提交恢复。
+
+```text
+Result(s): 改写 9 项记录（脊柱引用、别名、历史）：
+           becoming-context-coherence、effective-capacity-and-eventual-reachability、classification-robust-generative-comparison、
+           finite-granularity-question-recovery、guarded-program-question-recovery、residual-continuation-correspondence、
+           prefix-observation-loss（在脊柱上陈述）；derivation-soundness、finite-basis-common-interpretation
+           （由继承模块编译并经桥接接到核心的 Scope）；不新增记录
+Delta: 新核心模块 Becoming.Granularity（86 项定理／120 项声明，导入 Becoming.Joining 与 Becoming.Segmentation）；
+       新桥接模块 Becoming.GranularityBridge（39／41）；Context 28 → 46、Recurrence 58 → 63、Weighted 42 → 44；
+       Bridge 82 → 113（137 项声明）
+Supplied premises / correspondence: 分类稳健比较的反向以排中律为具名假设（em : ∀ p : Prop, Decided p），并证明恰需排中律；
+           粒度一族中跨粒度、条件程序与部分历史的匹配以 em 为具名假设，把每个配方读作单一检验恰是排中律；
+           两项见证在核心的 Midway 框架上重述（外围的见证模型编译后用 propext）
+Evidence: scratch_build 实编（对 I3a 加本节改动，184 个模块，含一个同时导入全部桥接模块与根模块的探针）：
+          改动与新增模块的每条声明公理报告为空，无警告；不是回执。继承模块 62 → 74，每个的当前字节都有通过的回执（已逐一核对）
+Boundary: 见下文“边界”
+Integration: §9 四行改动、两行新增；各模块头注；check_becoming.py 的核心与桥接清单；根模块；九项记录
+```
+
+**测量。** 以落地运行将编译的模块模拟回执，`SPINE-INTEGRATION.py`：在脊柱上陈述 169 → 176，继承模块中 3 → 7，运行之外 21 → 10，无 Lean 证明 10；较宽口径（引用某项脊柱证明）173 → 180。运行 169 → 183 个模块（核心 98 → 99、桥接 6 → 7、继承 62 → 74），运行之外活路径中的定理约 10 587 → 10 441、模块 515 → 503。继承模块中新增的四项里，organizational-formation-from-generative-comparison 与 wisdom-root 的主证明随 ClassificationRobustJudgment 与 GenerativeClosure 的导入闭包进入运行，这两项记录本身未改。
+
+**语境中的规律（Context，不加前提）。** 对有居民的规律族，合并的规律恰走某单一语境所走的路径，恰当这些路径对接合封闭（`pooledLaw_exact_iff_joinClosed`）；保留语境的规律恰走这些路径（`retainedLaw_trace_iff`、`retainedLaw_realizes_inOne`）；语境与配置一同变化时，遗忘语境的规律从每一语境恰走演化规律的路径，恰当每一语境能跟随每一被遗忘的步，即基础的 `projection_exact_iff` 沿 `Prod.snd` 读出（`erasedLaw_exact_iff_lifts`）；路径到达的语境逐步推进（`arrives_append`、`arrives_snoc`）。见证 `CrossingContexts`（合并出无单一语境走的路径）与 `ChangingContext`（语境在一条路径中改变，路径终止）。`BecomingCompatibility` 的定义按定义即核心的；核心证明 `changed_history_really_ends` 不用外围证明所用的 propext。
+
+**共同实现的界（Recurrence，不加前提）。** 一组主张在 n 步内共同实现，指至多 n 步的路径终于实现其每一主张的配置（`WithinMoves`）；路径携带每一这样的界并计入自身步数（`WithinMoves.after_course`）；有界恰当可达某实现该组的配置（`withinMoves_iff_reach`），故沿路径不出现此前不能共同实现者（`together_after_reach`），不再能共同实现的组标出无回路的路径（`lost_together_not_returns`）。`RelationalBecoming.Within` 按定义即 `WithinMoves`。在 `JointContinuationClassification` 的共同激活规律上，一步准备把共同激活的界自两步缩为一步，解除耦合后任何界都不能，所准备的配置可单侧终止，解除无回路（`actual_preparation_changes_effective_capacity_by_core`、`actual_release_loses_eventual_joint_by_core`、`prepared_capacity_can_end_without_joint_realization_by_core`、`release_not_returns`）；这些证明不用外围所用的 propext 与 Quot.sound。
+
+**分类稳健的比较（Bridge）。** 前向（各分类下严格偏好推出保留新内容、以新内容为次级时更好）不需任何原则（`compared_retains`、`compared_secondary`）；反向以 em 证明（`classification_robust_iff_of_em`、`two_extremes_suffice_of_em`），且对一切类型成立恰当每一命题已定（`classification_robust_iff_iff_em`）：见证取一个新内容，其在 b 处的保留是任意命题 R。比较仍是 PracticalJudgment 的 Better，即核心的 `BetterAt`。
+
+**推出与共同解释（Bridge）。** 读作核心的 `Scope`（策略的实际执行自信念所达的配置）：自在 Scope 上成立的根基推出的主张在 Scope 上成立，整个闭包恰在根基成立处成立（`derivation_sound_on_scope`、`closure_over_scope_iff_basis`），自健全策略的目标推出者在其 Scope 上成立（`sound_goal_closure`）；根基有限时，推出的每一主张在 Scope 中某处实现，恰当 Scope 中一个配置实现全部（`common_on_scope_iff`）。健全性与共同解释的归约仍是外围的定理，不在核心中重述。
+
+**粒度（Becoming.Granularity）。** 块是同一展开的有限路径（`Frame.blocks`）；块的每个检验都是较细检验，在相同配置成立，不加前提（`Frame.holds_blocks`）；较细粒度上相同或同测者在块中亦然（`Alike.blocks`、`SameBranchingTests.blocks`）；每个较细动作自成一块时块的检验恢复较细检验（`Frame.blocks_sameBranchingTests_iff`，充分非必要）。以另一粒度读同一展开的一般律：两框架的检验各自译入较细框架、译文在两配置处一致、接收侧每步的结果列出时，前者的每段历史由后者以相同步匹配，终点译文仍一致（`Translates.history_matches_of_em`，em 具名）；列出的结果给出每段有限路径的终点，不用选择（`outcomes_of_trace`）。配方在到达处选择：配方是否通向某检验成立之处，恰是有限多个分支检验之一成立，不加前提（`Recipe.leads_iff_afterAny`），所以同测者对每个配方问题回答相同（`SameBranchingTests.leads_iff`）；把配方读作单一检验（经否定与合取）在检验已定处精确（`Recipe.holds_after`），对每个框架都精确恰是排中律（`Recipe.holds_after_iff_em`）。余项：部分执行留下的配方在路径所在处续行，执行到底恰是不留余项的部分路径（`Recipe.leads_iff_leaves`）；自相同配置的部分路径相匹配，保留余项，不加前提（`Recipe.Leaves.alike`）；插入的动作与部分路径及续行接成一条路径，而不是配方的一部分（`Recipe.Leaves.inserted`）。见证 `Midway`：完整块与每个非空前缀的块都把 risky 与 safe 读作相同（由互模拟，不加前提），而中途失续是实在的，前缀的检验无一读出它（`Midway.no_prefix_reading`），在所到达处开放后缀即恢复区别（`Midway.resumption_recovers_loss`）；同一起点在同一配置留下不同余项，任何对续行精确的描述都区分它们（`Midway.remainder_codes_apart`）。
+
+**作者反审。**
+1. **新律还是重述？** 语境中的规律与共同实现的界是新的一般律，外围定理成为其实例；粒度是新的核心内容。较外围为强之处：`same_preserves_resumption` 外围以经典推理证明，核心不加前提（续行问题读作有限多个检验而非一个）；`finite_trace_endpoints` 与 `blocks_image_finite` 外围用经典选择，核心不用；`changed_history_really_ends` 与共同激活诸定理外围用 propext（与 Quot.sound），核心不用。
+2. **排中律在何处、是否必要。** 分类稳健比较的反向，与把每个配方或条件程序读作单一检验，对一切模型各自恰是排中律（`classification_robust_iff_iff_em`、`Recipe.holds_after_iff_em`、`diamond_correct_iff_em`），所以外围的经典用法在一般框架上不能去掉。跨粒度、条件程序与部分历史的匹配以 em 把同测接到逐步匹配（经 `SameBranchingTests.step_of_em`），其必要性未表明；自相同配置出发则不需要（`Recipe.Leaves.alike`）。
+3. **“已整合”的意义。** 七项在脊柱上陈述：语境、共同实现的界与粒度的三项是实例（外围定理按陈述成立，有的加具名 em）；prefix-observation-loss 与 residual-continuation-correspondence 的见证在核心的 Midway 上重述，未证明与外围模型的对应：外围的 `ExplanatoryGranularityBoundary.unfolding` 以带重叠通配分支的匹配定义，编译后用 propext，凡提及它（及 `ExplanatoryResumptionCases.answer`）的陈述公理报告都不为空。derivation-soundness 与 finite-basis-common-interpretation 只是由运行编译并接到核心的 Scope，健全性与归约本身未在核心中重述。
+4. **未接入者（10 项）。** draws-on-a-shared-stock：核心律已在（`every_event_within_iff`：每一事件的质量在界内恰当全域的质量在界内；`entries_within_not_together`：各项分别在界内不给共同在界内），实例须在外围的检查器中写（CorrectionDependence 的 selectedTotal 需 Nat.add_comm），留给 I3c；finite-continuation-plans、learned-procedure-transmission、joint-plan-composition 依 Mathlib，留给 I3c 的外围实例模块；binding-preserving-substitution、risk-certificate-outcome-distinction、growth-constrained-fragmentation、material-preparation-output、alignment-direction-g0-j 是具体构造、工具或只有文档，归入 I4；renewing-consuming-formation 待 E 列。
+
+**边界。** 落地运行须编译并审计改动的 Context、Recurrence、Weighted、Bridge 与新增的 Granularity、GranularityBridge 及根模块，再把新别名绑定到回执（九项记录的新别名在此之前为待回执）。桥接新导入的外围模块作为继承模块编译（12 个：BecomingCompatibility、RelationalBecoming、ClassificationRobustJudgment 及其闭包 RelationalOrganization、ConcernExtension，JointInterpretation 及其闭包 GenerativeClosure，ExplanatoryGranularity 及其闭包 ExplanatoryJoiningRegisters，ExplanatoryGuardedPrograms、ExplanatoryResiduals、ExplanatoryGranularityBoundary），每个的当前字节已有通过的回执；ExplanatoryResumptionCases 不进入运行。引用改动的核心文件、Bridge.lean、章或研究的记录，所引声明未变，在回执之后重新绑定。§9 的总数与回执一起更新。
+
+**下一步（I 列）。** I3c：外围实例模块（照 VersionedTaskInstances 的方式，各有检查器）写 draws-on-a-shared-stock 的实例与依 Mathlib 的三项；I4（约 503 个模块的归类）待 Ren。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -9423,3 +9467,9 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **Three senses of joined.** Ten records are instances with no added hypothesis (for two of them the trivial positivity conjunct is not restated). Six add one named hypothesis, stability of tests or excluded middle, which is what the periphery's classical proof used. Four are restated on the core's role or retained frames, because the periphery's incidence and register definitions compile through `propext`. The landing run compiles 26 more periphery modules as inherited (each has a passed receipt for its current bytes) and rebinds the new aliases. Next, I3b: the remaining 21, starting with the shared stock and the observation family; I4 awaits Ren.
 
 **Exactness of the bounded record for every pair of bounds, P83b (15 October 2026).** P83's own next step, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October. Section 97 proved that histories with at most N and N′ states are fixed by their record before N + N′ − 1, and that no shorter record does for N = 1 and N = N′. Section 126 shows it for every pair: given two values, for all M and M′ a history with at most M + 1 states and one with at most M′ + 1 share their record before M + M′ and differ at M + M′ (`Identification.bounded_agree_exact`). The first marks one step in every M + 1, with a mark at M + M′; the second follows it before M′ and then stays unmarked. One theorem is added to `Becoming.Identification`, with no new import, no existing statement changed and no axiom. For the two systems taken together this is Moore's bound, attained for every pair. The sharper bound within one history or one world, and for branching frames a depth bounded by the number of classes rather than of pairs, are not stated. Scratch build: 43 theorems, 55 declarations, empty axiom reports; the consolidated receipt follows the integrator's run. Not yet independently reviewed.
+
+**Periphery proofs joined to the spine, integration I3b (14–15 October 2026).** Continuing column I, section 127 joins nine more records: seven are stated on the spine, and two are compiled in the run and connected to the core's scope. The measure goes from 169 to 176 stated on the spine, from 3 to 7 in inherited modules and from 21 to 10 outside (citing a spine proof, 173 → 180).
+- **Laws in context and bounds on joint realization, no premise.** Pooling a family of laws runs exactly the courses some single context runs where those courses compose (`pooledLaw_exact_iff_joinClosed`); forgetting a changing context is exact where every context can follow each forgotten step (`erasedLaw_exact_iff_lifts`). A course carries every bound on realizing a bundle together, its own moves counted (`WithinMoves.after_course`), and a bundle no longer realizable together marks a course with no way back (`lost_together_not_returns`). The compatibility and joint-activation theorems are instances, and the core's proofs avoid the periphery's `propext` and `Quot.sound`.
+- **Excluded middle, exactly.** Classification-robust comparison holds forward with no principle, and its converse for every type is exactly excluded middle (`classification_robust_iff_iff_em`); so is reading every recipe, or every guarded program, as one test (`Recipe.holds_after_iff_em`, `diamond_correct_iff_em`).
+- **Granularity (Becoming.Granularity).** Every test of blocks is a finer test, with no premise; where the readings of two articulations agree, their histories match (excluded middle named). A recipe question is one of finitely many tests, so configurations passing the same tests answer it alike with no premise, which strengthens the periphery's classical `same_preserves_resumption`. What remains of a recipe resumes where the course stands. The witness `Midway` shows completed blocks and every nonempty prefix hiding a loss midway; it is restated on a core frame because the periphery's model compiles through `propext`.
+- **Remaining.** Ten records stay outside. The shared stock has its core law (`every_event_within_iff`) and awaits a periphery instance; three need Mathlib (I3c); five are constructions, tools or documentation (I4, awaiting Ren); one awaits column E.

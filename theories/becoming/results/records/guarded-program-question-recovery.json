@@ -12,6 +12,10 @@
     {
       "zh": "2026-10-09：沿既有接合研究推进；全部新增数学主张、反例与修复条件进入实际 Lean 检查。",
       "en": "2026-10-09: continued the existing joining study; all new mathematical claims, counterexamples and repair conditions actually checked in Lean."
+    },
+    {
+      "zh": "2026-10-15，整合 I3b（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Granularity 的“配方”）。配方在所到达的配置处选择：一个动作、在路径所在处的检验、先后两配方或二者之一（Recipe、Recipe.Leads）；其路径是框架的路径，检验与选择不加动作（Recipe.Leads.trace）。配方是否通向某检验成立之处，恰是有限多个分支检验之一成立，不加前提（Recipe.leads_iff_afterAny），所以同测的配置对每个配方问题回答相同（SameBranchingTests.leads_iff）。把配方读作单一检验（经否定与合取），在检验已定处精确（Recipe.holds_after）；对每个框架都精确，恰是排中律（Recipe.holds_after_iff_em）：外围的 holds_either 用经典推理，而这一用法不能去掉。在前段使检验在其通向的每个配置保持之处，先检验即后检验（Recipe.branch_earlier_iff）。桥接：外围的程序即核心的配方（Recipe.ofProgram、Recipe.leads_ofProgram），diamond 即 Recipe.after（Recipe.toTest_after）；diamond_correct 在检验已定处成立（diamond_correct_of_decided），对每个模型恰是排中律（diamond_correct_iff_em）；以 em 为具名假设，compile_correct、finite_program_endpoints、guarded_history_matches 逐字成立；word_program_exact、execution_has_native_trace、branch_executes、guard_hoisting_sound 不加假设。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围。",
+      "en": "15 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): stated on the spine (the recipes of Becoming.Granularity). A recipe chooses at the configuration reached: one move, a test where the course stands, one recipe after another, or either of two (Recipe, Recipe.Leads); its courses are courses of the frame, and tests and choices add no move (Recipe.Leads.trace). Whether a recipe leads to where a test holds is exactly one of finitely many branching tests holding, with no premise (Recipe.leads_iff_afterAny), so configurations passing the same tests answer every recipe question alike (SameBranchingTests.leads_iff). Read as one test, through negation and conjunction, a recipe is exact where the tests are decided (Recipe.holds_after); exact for every frame, it is exactly excluded middle (Recipe.holds_after_iff_em): the periphery’s holds_either reasons classically, and that use cannot be dropped. Testing before a prefix is testing after it where the prefix keeps the test at every configuration it leads to (Recipe.branch_earlier_iff). In the bridge, the periphery’s programs are the core’s recipes (Recipe.ofProgram, Recipe.leads_ofProgram) and diamond is Recipe.after (Recipe.toTest_after); diamond_correct holds where the tests are decided (diamond_correct_of_decided) and, for every model, is exactly excluded middle (diamond_correct_iff_em); with em named, compile_correct, finite_program_endpoints and guarded_history_matches hold as stated; word_program_exact, execution_has_native_trace, branch_executes and guard_hoisting_sound need nothing. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proofs and their receipts keep their scope."
     }
   ],
   "validation_scope": {
@@ -26,7 +30,10 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean",
   "aliases": [
     "Generative.ExplanatoryGuardedPrograms.guarded_history_matches",
-    "Generative.ExplanatoryGuardedPrograms.guard_hoisting_sound"
+    "Generative.ExplanatoryGuardedPrograms.guard_hoisting_sound",
+    "Becoming.Recipe.leads_iff_afterAny",
+    "Becoming.Recipe.holds_after_iff_em",
+    "Becoming.guarded_history_matches_of_em"
   ],
   "claim": {
     "zh": "有限判断、分支、顺序及提前结束的程序问题精确编译为原生问题。完整翻译问答一致且接收侧有限分支时，不同原生程序的有限宏历史有同测终点的对应。原固定词精确嵌入；前段的每个端点保持判断时，提前判断保真。",
@@ -125,6 +132,49 @@
       "role": "counterexample",
       "sha256": "e936cd2a3dcbbe264ae211863104927044df0e42d0e2397a93344b4d727c2fc1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
+      "role": "proof",
+      "sha256": "3e9fdb3436a565f150f6544ead09093c8d1a72f1fe772784552e7386b0035553",
+      "declarations": [
+        "Becoming.Recipe",
+        "Becoming.Recipe.Leads",
+        "Becoming.Recipe.after",
+        "Becoming.Recipe.holds_after",
+        "Becoming.Recipe.holds_after_iff_em",
+        "Becoming.Recipe.afterAny",
+        "Becoming.Recipe.leads_iff_afterAny",
+        "Becoming.SameBranchingTests.leads_iff",
+        "Becoming.Frame.byRecipes",
+        "Becoming.Frame.holds_byRecipes",
+        "Becoming.Recipe.outcomes",
+        "Becoming.Frame.byRecipes_history_matches_of_em",
+        "Becoming.Recipe.leads_word_iff",
+        "Becoming.Recipe.Leads.trace",
+        "Becoming.Recipe.leads_branch_iff",
+        "Becoming.Recipe.branch_earlier_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean",
+      "role": "proof",
+      "sha256": "0b1ba3d865521e09f73d5ef29b06ca829c95642e6cf6623c207a763d2c445df6",
+      "declarations": [
+        "Becoming.Recipe.ofProgram",
+        "Becoming.Recipe.leads_ofProgram",
+        "Becoming.Recipe.toTest_after",
+        "Becoming.diamond_correct_of_decided",
+        "Becoming.diamond_correct_of_em",
+        "Becoming.diamond_correct_iff_em",
+        "Becoming.program_compile_correct_of_em",
+        "Becoming.word_program_exact_by_core",
+        "Becoming.execution_has_native_trace_by_core",
+        "Becoming.finite_program_endpoints_of_em",
+        "Becoming.guarded_history_matches_of_em",
+        "Becoming.branch_executes_by_core",
+        "Becoming.guard_hoisting_sound_by_core"
+      ]
     }
   ],
   "proof_bindings": [

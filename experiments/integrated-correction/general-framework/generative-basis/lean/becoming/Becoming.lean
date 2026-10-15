@@ -94,6 +94,7 @@ import Becoming.CrossSituational
 import Becoming.Likeness
 import Becoming.Composition
 import Becoming.Joining
+import Becoming.Granularity
 import Becoming.Postponement
 
 /-!
@@ -892,6 +893,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   code is a bisimulation of the partner frame, with no premise; open maps of joinings are the
   open maps of role frames, two joinings with alike roots have a common refinement, and reading
   through roles loses what retained references keep.
+* `Becoming.Granularity` (L3): one unfolding read at a coarser grain. A block names a finite
+  course of the same unfolding, and every test of blocks is a finer test, with no premise; where
+  the readings of two articulations agree, their histories of blocks match (excluded middle
+  named). A recipe chooses at the configuration reached; whether it leads to where a test holds is
+  one of finitely many tests, so configurations passing the same tests answer it alike, while
+  reading every recipe as one test is exactly excluded middle. What remains of a recipe resumes
+  where the course stands. Completed blocks and every nonempty prefix can hide a loss midway.
 * `Becoming.Postponement` (L3): what linear tests see, with no premise. Postponing every branching
   until it shows (a configuration becoming the family a course may have reached), two
   configurations pass the same linear tests exactly where they are alike, and a frame is alike to

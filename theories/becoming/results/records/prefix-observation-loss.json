@@ -20,6 +20,10 @@
     {
       "zh": "2026-10-09接续：研究新增有限条件程序、余项恢复及35项实查声明；原成果的主张、假设和证明绑定保持，见原研究§27—32。",
       "en": "2026-10-09 continuation: finite guarded programs, residual recovery and 35 checked declarations added in the same study §§27–32; this result retains its claim, assumptions and proof bindings."
+    },
+    {
+      "zh": "2026-10-15，整合 I3b（Ren：“a lot proofs are probably not integrated”）：在脊柱上重述（Becoming.Granularity 的见证 Midway）。外围的 ExplanatoryGranularityBoundary.unfolding 以带重叠通配分支的匹配定义，编译后用 propext，凡提及它的陈述公理报告都不为空；所以见证在核心的框架 Midway.frame 上陈述：同样的六个配置、三个动作与六步，步为归纳关系。自同一起点的两支（Midway.shared_origin）在完整块中相同（Midway.same_completed_tests），在每个非空前缀的块中亦相同（Midway.same_prefix_tests，由互模拟给出，故同测不加前提），而中途失续是实在的（Midway.internal_loss）：前缀的检验无一读出该损失（Midway.no_prefix_reading），任何对较细检验精确的描述都区分两者（Midway.codes_apart），在所到达处开放后缀即恢复区别（Midway.resumption_recovers_loss），约化到前缀检验的描述不能扩展为较细检验的精确说明（Midway.reduced_prefix_cannot_extend）。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；未证明外围模型与 Midway 的对应（该对应须提及外围的定义）。",
+      "en": "15 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): restated on the spine (the witness Midway of Becoming.Granularity). The periphery’s ExplanatoryGranularityBoundary.unfolding is defined by a match with an overlapping wildcard case and compiles through propext, so no statement mentioning it has an empty axiom report; the witness is therefore stated on the core frame Midway.frame: the same six configurations, three moves and six steps, the steps an inductive relation. The two branches from one origin (Midway.shared_origin) are alike in completed blocks (Midway.same_completed_tests) and in blocks of every nonempty prefix (Midway.same_prefix_tests, by a bisimulation, so passing the same tests needs no premise), while the loss midway is real (Midway.internal_loss): no test of prefixes reads it (Midway.no_prefix_reading), every description exact for the finer tests keeps the two apart (Midway.codes_apart), exposing the suffix where the course stands recovers the difference (Midway.resumption_recovers_loss), and a description reduced to the prefix tests cannot be extended to an exact account of the finer tests (Midway.reduced_prefix_cannot_extend). Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proofs and their receipts keep their scope; a correspondence between the periphery’s model and Midway is not proved (it would have to mention the periphery’s definition)."
     }
   ],
   "id": "prefix-observation-loss",
@@ -48,7 +52,9 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean",
   "aliases": [
     "Generative.ExplanatoryGranularityBoundary.prefix_only_still_loses_failure",
-    "Generative.ExplanatoryGranularityBoundary.no_prefix_translation_of_loss"
+    "Generative.ExplanatoryGranularityBoundary.no_prefix_translation_of_loss",
+    "Becoming.Midway.same_prefix_tests",
+    "Becoming.Midway.no_prefix_reading"
   ],
   "dependencies": [
     {
@@ -145,6 +151,22 @@
       "role": "integration",
       "sha256": "8fef4fa01911d0e706e128caafe5717c08e218d5a0dee029147f80e1443444cf",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
+      "role": "proof",
+      "sha256": "3e9fdb3436a565f150f6544ead09093c8d1a72f1fe772784552e7386b0035553",
+      "declarations": [
+        "Becoming.Midway.frame",
+        "Becoming.Midway.shared_origin",
+        "Becoming.Midway.same_completed_tests",
+        "Becoming.Midway.internal_loss",
+        "Becoming.Midway.codes_apart",
+        "Becoming.Midway.same_prefix_tests",
+        "Becoming.Midway.no_prefix_reading",
+        "Becoming.Midway.resumption_recovers_loss",
+        "Becoming.Midway.reduced_prefix_cannot_extend"
+      ]
     }
   ],
   "proof_bindings": [
