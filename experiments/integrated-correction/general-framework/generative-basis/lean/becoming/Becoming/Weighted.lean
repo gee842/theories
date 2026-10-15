@@ -49,7 +49,10 @@ holds for every weighting and listing it names.
   positive weight is added (`mass_lt_of_added`). Every weighting keeps an event's mass from
   falling exactly where the event is included on the domain (`every_weighting_iff`): the
   weightings counting one entry (`dirac`) tell events apart, so inclusion is all that every
-  weighting agrees on, and one weighting can see less.
+  weighting agrees on, and one weighting can see less. Every event drawn from the domain stays
+  within a bound exactly where the whole domain does (`every_event_within_iff`), while each entry
+  within the bound does not put the entries together within it
+  (`entries_within_not_together`).
 
 **Readings.** The AI's, pending Ren. The AI reads "Fermi's diagrams" as Feynman diagrams, whose
 sum over histories has this shape: the weight of a history is composed of the weights of its
@@ -708,6 +711,22 @@ theorem every_weighting_iff [DecidableEq Ω] {domain : List Ω} {before after : 
   ⟨fun all x mem occurs => (mem_of_mass_dirac_pos
       (Nat.lt_of_lt_of_le (mass_dirac_pos occurs mem) (all (dirac x)))).2,
    fun included weight => mass_mono weight included⟩
+
+/-- **Every event drawn from a listed domain stays within a bound exactly where the whole domain
+does.** The whole domain is one event, and every event is included in it. -/
+theorem every_event_within_iff {domain : List Ω} {weight : Ω → Nat} {bound : Nat} :
+    (∀ event : Ω → Bool, mass domain weight event ≤ bound) ↔
+      mass domain weight (fun _ => true) ≤ bound :=
+  ⟨fun all => all _, fun whole _ => Nat.le_trans (mass_mono weight fun _ _ _ => rfl) whole⟩
+
+/-- **Each entry within the bound does not put the entries together within it.** Two entries of
+weight two each, against the bound two. -/
+theorem entries_within_not_together :
+    (∀ x, x ∈ [false, true] → (fun _ : Bool => 2) x ≤ 2) ∧
+      ¬ mass [false, true] (fun _ => 2) (fun _ => true) ≤ 2 :=
+  ⟨fun _ _ => Nat.le_refl 2, fun within =>
+    Nat.not_succ_le_zero 1 (Nat.le_of_succ_le_succ (Nat.le_of_succ_le_succ
+      (show 4 ≤ 2 from within)))⟩
 
 end Mass
 

@@ -82,6 +82,16 @@
       "role": "provenance",
       "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "bb1f1f5c5475ff1392877fbdb9e3ba4e6543e02278ab095ffa2cc940ea684795",
+      "declarations": [
+        "Becoming.derivation_sound_on_scope",
+        "Becoming.closure_over_scope_iff_basis",
+        "Becoming.sound_goal_closure"
+      ]
     }
   ],
   "proof_bindings": [
@@ -105,6 +115,10 @@
     {
       "zh": "P02：两处当前命题及归纳体相同；第二名称保存历史逻辑依赖削减，不抹去旧回执。",
       "en": "P02: the current statements and induction bodies coincide; the second name preserves historical dependency reduction and its receipts."
+    },
+    {
+      "zh": "2026-10-14，整合 I3b（Ren：“a lot proofs are probably not integrated”）：由脊柱运行编译并接到核心。桥接自此导入 GenerativeClosure，其各定理在脊柱运行中公理报告为空。读作核心的 Scope（策略的实际执行自信念所达的配置），探究谓词由动态确定：自在 Scope 上成立的根基推出的主张在 Scope 上成立，整个闭包恰在根基成立处成立（derivation_sound_on_scope、closure_over_scope_iff_basis）；自健全策略的目标推出的每一主张在其 Scope 上成立（sound_goal_closure）。健全性本身仍是外围的定理，不在核心中重述。（草稿构建；回执随落地）",
+      "en": "14 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): compiled by the spine run and connected to the core. The bridge now imports GenerativeClosure, whose theorems have empty axiom reports in the spine run. Read as the core’s Scope, the configurations a policy’s actual executions reach from a belief, the inquiry predicate is fixed by the dynamics: a claim derived from a basis holding over the scope holds over it, and the whole closure does exactly where the basis does (derivation_sound_on_scope, closure_over_scope_iff_basis); every claim derived from a sound policy’s goal holds over its scope (sound_goal_closure). Soundness itself stays the periphery’s theorem and is not restated in the core. (scratch build; the receipt comes with the landing)"
     }
   ]
 }

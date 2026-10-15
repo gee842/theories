@@ -97,6 +97,14 @@
       "role": "provenance",
       "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "bb1f1f5c5475ff1392877fbdb9e3ba4e6543e02278ab095ffa2cc940ea684795",
+      "declarations": [
+        "Becoming.common_on_scope_iff"
+      ]
     }
   ],
   "proof_bindings": [
@@ -136,6 +144,10 @@
     {
       "en": "9 October 2026: reconciled Ren’s whole/manifold correction. The necessity target is Becoming as a whole, with generativity within it. Earlier chapter/study content and proof sources are preserved; no new theorem or axiom.",
       "zh": "2026年10月9日：接入Ren关于整体／manifold的修正。必然性对象是Becoming整体，生成性位于其中。保留此前理论、研究及证明源码；无新增定理或公理。"
+    },
+    {
+      "zh": "2026-10-14，整合 I3b（Ren：“a lot proofs are probably not integrated”）：由脊柱运行编译并接到核心。桥接自此导入 JointInterpretation（其定理公理报告为空）。以核心的 Scope 为可接纳的解释：根基有限时，每一推出的主张在 Scope 中某处实现，恰当 Scope 中一个配置实现全部（common_on_scope_iff）。共同解释的归约本身仍是外围的定理。（草稿构建；回执随落地）",
+      "en": "14 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): compiled by the spine run and connected to the core. The bridge now imports JointInterpretation, whose theorems have empty axiom reports. With the core’s Scope as the admissible interpretations: with a finite basis, each derived claim realized somewhere in the scope is one configuration of the scope realizing them all (common_on_scope_iff). The common-interpretation reduction itself stays the periphery’s theorem. (scratch build; the receipt comes with the landing)"
     }
   ]
 }
