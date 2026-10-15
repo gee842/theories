@@ -63,6 +63,21 @@ registration is supplied, never derived.
   least `a` offspring and each other parent at most `b < a`, the share of the parents it holds for
   rises among the offspring (`share_rises_through`): `share_rises` of `Becoming.Capture`, the
   selection supplying which parents are carriers.
+* **By the record alone.** Options are told apart only by what a record holds of each. A
+  selection reads the record alone when exchanging two options' entries exchanges what it
+  selects (`Relabel.Equivariant`). Two options are selected alike by every such selection exactly
+  when the record ties them (`Relabel.selected_alike_iff`), as a selection through registration
+  reaches exactly what registers. One selecting at most one option singles out exactly the
+  options whose entry no other option shares (`Relabel.singled_iff_untied`, the selection
+  `Relabel.Alone`), and at a full tie of two or more options it selects none
+  (`Relabel.Equivariant.none_of_full_tie`). A valuation reading the record alone, such as a
+  weight on each option, gives tied options equal values (`Relabel.EquivariantValue.tied`,
+  `Relabel.valued_alike_iff`), and a choice of one option chooses no tied option and withholds at
+  a full tie (`Relabel.EquivariantChoice.untied`, `Relabel.EquivariantChoice.withholds_of_full_tie`).
+  Exchanging two options tells them apart: their equality is decided, a condition each statement
+  names. Reading (the AI's, pending Ren): which option is which is not part of the record's
+  relations; to part what the record ties takes a further recorded relation, such as an order of
+  arrival or an agreement.
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
 - Any selection decided by what a selector registers (keeping, rewarding, reproducing,
@@ -82,8 +97,9 @@ registration is supplied, never derived.
   that registration does not reach there.
 
 What is not derived: who selects, what the selector registers, that a selection is through
-registration at all (supplied as `Web.SelectsThrough`), that offspring follow the selection, and
-that reaching beyond is chosen. The law for scores in the converse direction takes the
+registration at all (supplied as `Web.SelectsThrough`), that offspring follow the selection,
+that reaching beyond is chosen, that a selection reads the record alone, and how an option it
+singles out is found (a search over listed options). The law for scores in the converse direction takes the
 decidability of registering alike as a hypothesis. No ethical predicate, ranking or axiom occurs.
 -/
 

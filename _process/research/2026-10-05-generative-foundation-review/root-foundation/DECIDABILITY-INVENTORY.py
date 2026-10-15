@@ -178,6 +178,9 @@ CONSTRUCTIONS = {
     # 2026-10-16, P115 how much difference arrives (Becoming.Propagation): one history mixed into another at
     # listed levels, each a step with a condition, as mixIn mixes condition by condition
     'mixCells': 'mix',
+    # integration I4b (2026-10-16): a selection by the record alone exchanges two options' entries
+    **{n: 'swap' for n in ['Relabel.swap', 'Relabel.Equivariant', 'Relabel.EquivariantValue',
+                           'Relabel.EquivariantChoice']},
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -363,6 +366,8 @@ PROOF_KIND = {
     **{n: 'same' for n in [
         'ParityConstraint.met_or_contradicts', 'ParitySystem.global_or_contradicts', 'ParitySystem.noGlobal_iff',
         'ParitySystem.glues_iff']},
+    # integration I4b (2026-10-16): at most one option holds an entry alone, told by whether two options are the same
+    **{n: 'same' for n in ['Relabel.alone_single']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
