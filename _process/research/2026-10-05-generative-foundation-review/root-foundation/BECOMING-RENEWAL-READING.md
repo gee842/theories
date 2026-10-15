@@ -9119,6 +9119,26 @@ theorem Propagation.Loop.runaway : ∀ t, amount (t + 1) true = 2 ^ t
 
 **边界。** 落地运行须在 `check_becoming.py` 中编译与审计新模块，再把新记录绑定到回执。`DECIDABILITY-INVENTORY.py` 把 `mixCells` 记作逐个水平换入的构造（如 `mixIn`），其陈述提到它的三条定理随之；把九条只在证明中用到条件之相等的定理记作分辨相同。既有模块的字节不变。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”）；“增益”留给 P111 的新的增益（另一个意思），不在此用。
 
+## 142. 较早的版本的文件头注记（整合 I4c）：31 个模块指向脊柱上陈述其主定理的声明
+
+2026-10-16。延续 §139 的 I4a 表。Ren 对表的三项决定（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）：较早的版本加注记（“Add the notes”）；待接入的律先接最近的缺口（“Closest gaps first”，I4b）；一般数学（17）与推导演算（2）暂留脊柱之外（“Leave outside for now”）。本节是第一项。
+
+```text
+Result(s): 不新增记录；改写 3 项记录的引用哈希与历史（其一移动证明绑定）
+Delta: 31 个较早的版本的第一行各加一条双语注释，列出其行所列的脊柱声明与关系（same / spine-generalizes / instance）；
+       归类表标出两个暂留之外的主题，并说明注记
+Supplied premises / correspondence: 注记取自 I4a 的行（读过双方陈述）；不改陈述与证明
+Evidence: explanatory-resumption 检查器对新字节重跑（回执 20261015T180520.693095Z：22 个模块、314 项审计，与 10 月 8 日的回执相同，只有 ExplanatoryResumptionCases 的字节不同）
+Boundary: 注记是边，不是判词；模块保留，不删除任何东西
+Integration: 不需核心运行；31 个模块都不在核心回执中
+```
+
+**注记放在哪里。** 文档中有约 800 个指向这 31 个文件的行锚链接（`File.lean#L…`），在文件头另起一行会使它们全部错位。所以注记接在原有的第一行之后：29 个文件是 import 行后的行注释，OneProcess 与 TrajectoryFidelity 以注释开头，注记写在该注释的第一行。没有行号移动；两种写法都在项目工具链（v4.29.1）下解析。
+
+**哈希。** 读这两个文件字节的记录有三项，都在读过改动（只有注释）后改绑，各加一条历史：trace-law-equivalence（GenerativeModel，集成引用）、guarded-program-question-recovery（ExplanatoryResumptionCases，反例引用）、residual-continuation-correspondence（ExplanatoryResumptionCases，证明引用；证明绑定移到新回执，ExplanatoryResiduals 仍绑定原回执）。其他提到这些路径的较早检查文件是旧字节的历史证据，保持原样。
+
+**边界。** 注记说某条脊柱声明陈述了模块的主定理，以何种关系；不说模块无用。`ContinuationRenewal.renewal_within_rank_plus_one_steps` 在继承模块中，属于脊柱运行。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -10567,3 +10587,22 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **Where it goes.** It is positive exactly along a route in time of positive strengths (`carried_pos_iff`), on routes of `TimedResponse.Spread` where the strengths are registered (`Conveyed.spread`); where no route reaches, the levels agree. Carried amounts add (`carried_add`).
 - **Witnesses.** A unit given once and relayed at twice its level arrives as 2t by step t + 1, with no loop, since levels hold what they are given (`Propagation.Chain.keeps_arriving`); a loop of strength one gives 2^t (`Propagation.Loop.runaway`).
 - **Readings (the AI's).** The coupling strength is the measure sensitivity lacked; how much difference arrives is itself a course of the one unfolding; a held difference keeps arriving; how entangled a whole is reads as how strongly its exchanges are coupled to each other's levels. Not derived: the strengths themselves (supplied bounds, no least one stated), a general theory of loops, infinitely many conditions, real amounts and continuous time. In systems terms the strengths are incremental gains and the carried amount their comparison system, here attained. The name "coupling strength" follows levels-of-closure, leaving "gain" to P111. Scratch build on main `416ff6b0`: 78 theorems, 97 declarations, empty axiom reports; the decidability inventory classifies every new row. Not yet independently reviewed.
+
+**Header notes on the earlier versions, integration I4c (16 October 2026).** Ren decided three things on the I4a table (section 139; [source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)):
+- the earlier versions get notes (“Add the notes”);
+- the join candidates start with the closest gaps (“Closest gaps first”, I4b);
+- general mathematics (17 modules) and the derivation calculus (2) stay outside the spine for now (“Leave outside for now”).
+
+This section covers the first. Each of the 31 earlier versions now names, on its first line, the spine declarations its row lists and the relation (same, spine-generalizes or instance).
+- **Placement.** The documents hold about 800 line-anchored links into these files, so the note never starts a new line, and no line number moves.
+  - In 29 files it is a trailing comment on the import line.
+  - In OneProcess and TrajectoryFidelity, which open with a comment, it is written on that comment's first line.
+  - Both forms parse under the project toolchain (v4.29.1).
+- **Hashes.** Three records read these bytes, and each was rebound with a history entry after the change was read:
+  - trace-law-equivalence: GenerativeModel, an integration reference.
+  - guarded-program-question-recovery: ExplanatoryResumptionCases, a counterexample reference.
+  - residual-continuation-correspondence: ExplanatoryResumptionCases, a proof reference. Its proof binding moves to a fresh explanatory-resumption receipt, 20261015T180520.693095Z: 22 modules and 314 audits, the same as on 8 October, with only that file's bytes different.
+  - Earlier check files that mention these paths are historical evidence of the old bytes, and they stay as they are.
+- **Core run.** None is needed; none of the 31 files is in the core receipt.
+- **The table.** It now marks the two themes kept outside, and it says that the notes exist.
+- **Boundary.** A note is an edge, not a verdict. The modules stay, and nothing is deleted.
