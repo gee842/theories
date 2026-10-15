@@ -9316,8 +9316,9 @@ Result(s): 扩展 identification-where-runs-part、typicality-by-counting 与 we
            recurrence-without-premise（revisits_within、gap_of_le）、learning-by-refutation（record、record_length）、
            sum-over-histories-exact（counting、signed、Weights.along、Weights.sum_courses、Weights.sum_joinMap、
            Weights.mul_sum、Weights.sum_map、openSteps、courses、add_mul_split、mul_assoc_nat）、
-           losses-of-the-sum-over-histories（Interference.weight、Interference.cancels）
-Delta: Becoming.Parting 18 → 39 项定理（27 → 58 项声明）；Becoming.Typicality 32 → 43（44 → 56）；
+           losses-of-the-sum-over-histories（Interference.weight、Interference.cancels）、
+           lifting-where-branching-is-finite（Lasting.Continues、Lasting.Unbounded）
+Delta: Becoming.Parting 18 → 43 项定理（27 → 62 项声明），并导入 Becoming.Lasting；Becoming.Typicality 32 → 43（44 → 56）；
        Becoming.Situations 13 → 38（19 → 54）；只加定理与定义，原有声明不变
 Supplied premises / correspondence: 不加公理。各律所写者：late_* 要运行从 T 起不分开、所识的值可判定、运行被列表所持；
        world_right、world_right_iff、some_right_iff 要动作与配置列出、步与所识的值可判定；concentrated 要 v ≤ u；
@@ -9338,7 +9339,8 @@ Integration: 第 6 节新段落对（在“权重计数情境”之后），该�
 | `Parting.unparted_at_of_late` | **只在 T 之前分开，T 处不分开。** 所识的值可判定时，从 s 出发的运行在 T 起都不分开，则从一个运行在 T 所在处出发没有两个运行分开（把两个运行接在 T，`joinAt`） |
 | `Parting.statesBelow_shift`、`late_statesBelow`、`late_right` | **只在 T 之前分开时的静止之步。** 从 T 起至多 N 个状态的历程至多有 T + N 个；被 N 个配置所持的运行其历程至多 T + N 个状态，以最小的界读记录的学习者从 2(T + N) − 1 起每步都对 |
 | `Parting.anyOf`、`keepIf`、`choose` 及其规律 | 布尔的“有一个”、按检验保留、在存在时找出一个：只用前奏 |
-| `Parting.live`、`live_succ_iff`、`live_of_run`、`path_of_live`、`live_cycle`、`live_persists` | **与配置数一样长的路可以继续。** 由之可走 N 步的配置（N 个配置列出），一步之后仍可走 N 步：长 N 的路重复一个配置（`revisits_within`），绕着重复可以走任意长 |
+| `Parting.path_of_continues`、`continues_cycle`、`continues_persists`、`continues_any`、`unbounded_of_continues` | **与配置数一样长的历程可以继续。** N 个配置的列表持有每个配置时，由之有 N 步历程（`Lasting.Continues`）的配置，一步之后仍然如此：长 N 的历程重复一个配置（`revisits_within`），绕着重复可以走任意长；所以它是 `Lasting.Unbounded` 的，不用判定也不用选取。`Lasting` 中有限分支的提升只到双重否定为止；配置有限时这里直接成立 |
+| `Parting.live`、`live_succ_iff`、`live_of_run`、`live_iff_continues`、`live_persists` | `live` 是判定了的 `Lasting.Continues`（动作与配置列出、步可判定） |
 | `Parting.advance`、`advanced`、`liveRun` | 由此造出从这样的配置出发的运行（每步取第一个仍可走 N 步的后继） |
 | `Parting.candidates`、`firstLive`、`worldLearner`、`run_in_candidates`、`candidates_run` | **被给予世界的学习者。** 从记录读出运行可能所在的配置：每个运行都在其中；其中每个配置都是某个有此记录的运行在该步所在之处 |
 | `Parting.world_right`、`world_right_iff`、`some_right_iff` | **反方向。** 被给予世界的学习者在某步于从 s 出发的每个运行上都对，恰当没有两个这样的运行在该步分开；某个学习者在那里对，恰当没有运行在那里分开 |
@@ -9368,7 +9370,7 @@ Integration: 第 6 节新段落对（在“权重计数情境”之后），该�
 4. **证明。** 不用 `simp`、`omega`；幂的加法用自写的 `pow_add_nat`，因为前奏的 `Nat.pow_add` 用到 `propext`（暂存探测）；`Nat.pow_le_pow_left`、`Nat.mul_le_mul_left`、`Nat.mul_le_mul_right` 不引入公理。被给予世界的学习者以 `choose`（从存在的证明在列表中找出一个，可计算）造出，不用 `Classical`。
 5. **判定性清单。** 新的取判定性的定义 `Parting.candidates`、`live`、`firstLive`、`worldLearner` 分为新类“可达”（判定步是否可走并分辨所识的值），`Situations.occ` 为“分辨相同”；只在证明中用到判定性的 `Parting.unparted_at_of_late`、`late_statesBelow` 为“分辨相同”，`some_right_iff` 为“可达”。
 
-**检查。** 在暂存区编译：`Becoming.Parting` 39 项定理、58 项声明，`Becoming.Typicality` 43／56，`Becoming.Situations` 38／54，根模块 `Becoming` 连同其闭包编译（没有名字冲突）；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。判定性清单的暂存运行（只跳过回执检查）0 项未用。核心检查器在整合者的运行中检查。本节尚未经独立审查。
+**检查。** 在暂存区编译：`Becoming.Parting` 43 项定理、62 项声明，`Becoming.Typicality` 43／56，`Becoming.Situations` 38／54，根模块 `Becoming` 连同其闭包编译（没有名字冲突）；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。判定性清单的暂存运行（只跳过回执检查）0 项未用。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
 ## English summary
 
@@ -10939,9 +10941,9 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 - **Next in I4b.** Selection: PluralRecords and TieBreaking, after P110 lands.
 
 **The open proofs of parting and counting (P119, 16 October 2026).** After the AI explained the finite-name reading, Ren wrote: “take 2, and do the open proofs” ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md)). P110 records option 2, the finite name as an analogy. Section 150 proves what sections 140 and 144 left open, with no axiom and no premise beyond what each law names; existing declarations do not change.
-- **Parting** (18 → 39 theorems).
+- **Parting** (18 → 43 theorems; it now imports `Becoming.Lasting`).
   - Where runs part only before step T, the learner by the least bound is right from 2(T + N) − 1 on (`late_right`).
-  - For a process with listed moves and configurations and decided steps and registered values, the learner given the world (`worldLearner`) is right at a step on every run exactly where no two runs part there (`world_right_iff`, `some_right_iff`). It is built from the prelude alone: a path as long as the list of configurations goes on without end (`live_persists`).
+  - For a process with listed moves and configurations and decided steps and registered values, the learner given the world (`worldLearner`) is right at a step on every run exactly where no two runs part there (`world_right_iff`, `some_right_iff`). It is built from the prelude alone: where a list of N holds every configuration, a course of N steps (`Lasting.Continues`) gives courses of every length, with no decidability and no selection (`unbounded_of_continues`), where Lasting's lifting for finite branching holds up to double negation.
 - **Typicality** (32 → 43). Concentration is exponential, the counting form of Chernoff's bound (`concentrated`, `few_far_ahead`).
 - **Situations** (13 → 38).
   - Through an event, any number of values counts as two (`sum_event`), so the law of large numbers and exponential concentration count situations for every event.

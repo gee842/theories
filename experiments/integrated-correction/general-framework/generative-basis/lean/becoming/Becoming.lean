@@ -1032,7 +1032,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   two configurations has no bound on its states. Where runs part only before step T, the course
   has at most T + N states and the learner by the least bound is right from 2(T + N) - 1 on. For
   a process with listed moves and configurations and decided steps, a learner given the world is
-  right at a step on every run exactly where no two runs part there.
+  right at a step on every run exactly where no two runs part there. Where a list of N holds every
+  configuration, a course of N steps from a configuration gives courses of every length, with no
+  decidability (`Lasting.Continues`).
 * `Becoming.Typicality` (L4): what counting says of the course that happens, with no premise.
   With natural weights p and q on two values, the squared deviations (q·a - p·b)² of the courses
   of n steps, weighted, add up exactly to n·p·q·(p + q)^n, so the courses deviating by at least d

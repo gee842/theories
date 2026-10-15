@@ -12,27 +12,28 @@ One commit on branch `p119-open-proofs`. Existing declarations do not change; ne
 
   | Module | Theorems | Declarations |
   |---|---|---|
-  | `Becoming/Parting.lean` | 18 → 39 | 27 → 58 |
+  | `Becoming/Parting.lean` | 18 → 43 | 27 → 62 |
   | `Becoming/Typicality.lean` | 32 → 43 | 44 → 56 |
   | `Becoming/Situations.lean` | 13 → 38 | 19 → 54 |
 
   - **Parting:**
     - the rest step 2(T + N) − 1 where runs part only before step T (`late_right`);
-    - the converse: for listed, decided processes, the learner given the world is right at a step on every run exactly where no two runs part there (`worldLearner`, `world_right_iff`, `some_right_iff`).
+    - the converse: for listed, decided processes, the learner given the world is right at a step on every run exactly where no two runs part there (`worldLearner`, `world_right_iff`, `some_right_iff`);
+    - built on `Lasting.Continues` (I4b-4): where a list of N holds every configuration, a course of N steps makes its start `Lasting.Unbounded`, with no decidability (`unbounded_of_continues`). Parting now imports `Becoming.Lasting` (L2).
   - **Typicality:** exponential concentration, the counting Chernoff bound (`concentrated`, `few_far_ahead`).
   - **Situations:**
     - any number of values through an event (`sum_event`, `event_typical`, `event_concentrated`, `event_count`);
     - counting per course for every process (`situations_take`, `situations_of_course_listed`);
     - counting by situations in any weights (`sum_finer_weights`);
     - signed weights as pairs of counts of situations (`signed_counts`, `cancels_situations`).
-- **`Becoming.lean`:** the three module bullets are extended. Imports are unchanged.
+- **`Becoming.lean`:** the three module bullets are extended. Imports are unchanged; `Parting.lean` gains `import Becoming.Lasting`, and the Lean README's within-L4 imports say so.
 - **`check_becoming.py`:** the three scope paragraphs are extended. The core list is unchanged.
 - **The Lean README:** the three L4 rows are extended in both languages.
 - **The theory chapter:**
   - a new paragraph pair, "the open proofs of parting and counting", after "weights count situations", plus one sentence in that pair;
   - the theory stated in full: two bullets in each language, and the bound item;
   - §8: the two status rows, and the open item "When the course branches";
-  - §9: three spine rows (39, 43, 38);
+  - §9: three spine rows (43, 43, 38);
   - the glossary: one row, the learner given the world.
 - **The study:** section 150, provisional, and an English paragraph at the end. The integrator lands I4b-4 as §146 and P110–P112 as §147–§149; renumber if needed.
 - **`DECIDABILITY-INVENTORY.py`:** new definitions are classified:

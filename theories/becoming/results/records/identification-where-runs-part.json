@@ -94,9 +94,14 @@
       ]
     },
     {
-      "zh": "动作与配置列出、步可判定时，由之可走与配置数一样长之路的配置，一步之后仍然如此：长 N 的路重复一个配置，绕着重复可以走任意长；所以由之有无尽的运行，可以每步取第一个仍可走下去的后继造出。",
-      "en": "With listed moves and configurations and decided steps, from where a path as long as the list of configurations is open, a step leads to where one is open: a path of N steps repeats a configuration and can go round it; so a run goes on from there, built by taking at each step the first successor from which it can.",
+      "zh": "N 个配置的列表持有每个配置时，由之有 N 步历程的配置，一步之后仍然如此：长 N 的历程重复一个配置，绕着重复可以走任意长；所以由之有任意长的历程，不用判定也不用选取。步可判定、动作列出时，由之有无尽的运行，每步取第一个仍可走下去的后继造出。",
+      "en": "Where a list of N holds every configuration, from where a course of N steps starts a step leads to where one starts: the course repeats a configuration and can go round; so courses of every length start there, with no decidability and no selection. With decided steps and listed moves, a run goes on from there, built by taking at each step the first successor from which one can.",
       "declarations": [
+        "Becoming.Parting.path_of_continues",
+        "Becoming.Parting.continues_cycle",
+        "Becoming.Parting.continues_persists",
+        "Becoming.Parting.continues_any",
+        "Becoming.Parting.unbounded_of_continues",
         "Becoming.Parting.anyOf",
         "Becoming.Parting.anyOf_true",
         "Becoming.Parting.anyOf_of_mem",
@@ -106,12 +111,13 @@
         "Becoming.Parting.live",
         "Becoming.Parting.live_succ_iff",
         "Becoming.Parting.live_of_run",
-        "Becoming.Parting.path_of_live",
-        "Becoming.Parting.live_cycle",
+        "Becoming.Parting.live_iff_continues",
         "Becoming.Parting.live_persists",
         "Becoming.Parting.advance",
         "Becoming.Parting.advanced",
-        "Becoming.Parting.liveRun"
+        "Becoming.Parting.liveRun",
+        "Becoming.Lasting.Continues",
+        "Becoming.Lasting.Unbounded"
       ]
     },
     {
@@ -178,8 +184,8 @@
     "names-provisional"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Parting 的 58 项声明（39 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140 与 §150；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 58 declarations of Becoming.Parting, 39 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study sections 140 and 150; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Parting 的 62 项声明（43 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140 与 §150；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 62 declarations of Becoming.Parting, 43 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study sections 140 and 150; not independently reviewed."
   },
   "next_delta": {
     "zh": "无限或步不可判定的过程中被给予世界的学习者能对之处；2(T + N) − 1 的恰好性。",
@@ -334,6 +340,29 @@
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean"
       }
+    },
+    {
+      "id": "lifting-where-branching-is-finite",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Lasting.Continues 与 Lasting.Unbounded：由一个配置出发有多长的历程。",
+        "en": "Reuses Lasting.Continues and Lasting.Unbounded: how long the courses from a configuration are."
+      },
+      "interface": {
+        "output": {
+          "zh": "有 n 步的历程从 s 出发；每个长度的历程都从 s 出发。",
+          "en": "Some course of n steps starts at s; courses of every length do."
+        },
+        "input": {
+          "zh": "配置有限时，N 步的历程给出任意长的历程，不用判定；被给予世界的学习者取由之可走下去的配置。",
+          "en": "With finitely many configurations, a course of N steps gives courses of every length, with no decidability; the learner given the world takes a configuration from which a run goes on."
+        },
+        "conditions": {
+          "zh": "一个列表持有每个配置。",
+          "en": "A list holds every configuration."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean"
+      }
     }
   ],
   "related": [
@@ -377,7 +406,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "role": "proof",
-      "sha256": "234c818fa28aa5507f88e3362afea1ed1c88652723795aeb21d77445f333c4f5",
+      "sha256": "02c81e67e88bbc8d53940684a5e00be442660f3c6a4ffee427eb5d860674f5b6",
       "declarations": [
         "Becoming.Parting.after",
         "Becoming.Parting.before",
@@ -409,11 +438,15 @@
         "Becoming.Parting.keepIf",
         "Becoming.Parting.mem_keepIf",
         "Becoming.Parting.choose",
+        "Becoming.Parting.path_of_continues",
+        "Becoming.Parting.continues_cycle",
+        "Becoming.Parting.continues_persists",
+        "Becoming.Parting.continues_any",
+        "Becoming.Parting.unbounded_of_continues",
         "Becoming.Parting.live",
         "Becoming.Parting.live_succ_iff",
         "Becoming.Parting.live_of_run",
-        "Becoming.Parting.path_of_live",
-        "Becoming.Parting.live_cycle",
+        "Becoming.Parting.live_iff_continues",
         "Becoming.Parting.live_persists",
         "Becoming.Parting.advance",
         "Becoming.Parting.advanced",
@@ -517,15 +550,24 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "role": "proof",
+      "sha256": "60947288306d2791eb7ebf0cb593bd77eab14209ee0ae652b641f49fff9ee919",
+      "declarations": [
+        "Becoming.Lasting.Continues",
+        "Becoming.Lasting.Unbounded"
+      ]
+    },
+    {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e6630f168db4ff0e2bfcfe22138239b23a3db2f363f02d9027f185df7462f35f",
+      "sha256": "08986b1163989e4bfa9dfad660bffeac9dd912f2e1a309178a6187641d548b65",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ede3062af11f30ad7fb6416d1c97cf3e2faddcc0952b165dee3d813fc1a4c383",
+      "sha256": "d7648cfb2ea8ae307e658190ac3e68bb805b7d7a1d3357eaad5d914e12b9c4c9",
       "declarations": []
     },
     {
@@ -638,8 +680,8 @@
       "en": "16 October 2026: wording only, hashes rebound: study section 144's readings heading now reads “taken by Ren the same day” in place of “pending Ren”, and the source names “the first message”; no declaration or claim changes."
     },
     {
-      "zh": "2026-10-16 P119：按 Ren 2026-10-16 的“take 2, and do the open proofs”，加三条规律（只在 T 步之前分开时的静止之步；由之可走下去的配置；反方向，被给予世界的学习者）；statement、hypotheses 第一项、does_not_show（反方向与静止之步两项已证，移去）与 next_delta 改写；研究 §150。原 statement 的第二句：“在分开之处，下一个值只在被走时定下：学习者无论被给予什么（世界在内），至多在两个运行之一上对。”",
-      "en": "16 October 2026, P119: following Ren's “take 2, and do the open proofs” of 16 October, three laws added (the rest step where runs part only before T; configurations from which a run goes on; the converse, with the learner given the world); statement, the first hypothesis, does_not_show (the converse and the rest step, now proved, removed) and next_delta rewritten; study section 150. The former second sentence of the statement: “At a parting the next value is settled only when taken: a learner, whatever it is given, the world included, is right on at most one of the two runs.”"
+      "zh": "2026-10-16 P119：按 Ren 2026-10-16 的“take 2, and do the open proofs”，加三条规律（只在 T 步之前分开时的静止之步；由之可走下去的配置；反方向，被给予世界的学习者）；statement、hypotheses 第一项、does_not_show（反方向与静止之步两项已证，移去）与 next_delta 改写；研究 §150。原 statement 的第二句：“在分开之处，下一个值只在被走时定下：学习者无论被给予什么（世界在内），至多在两个运行之一上对。” 之后同日：改以 Lasting.Continues 陈述可走下去（live_iff_continues），配置有限时 N 步的历程给出任意长的历程，不用判定（unbounded_of_continues）；Parting 导入 Lasting；dependencies 加 lifting-where-branching-is-finite。",
+      "en": "16 October 2026, P119: following Ren's “take 2, and do the open proofs” of 16 October, three laws added (the rest step where runs part only before T; configurations from which a run goes on; the converse, with the learner given the world); statement, the first hypothesis, does_not_show (the converse and the rest step, now proved, removed) and next_delta rewritten; study section 150. The former second sentence of the statement: “At a parting the next value is settled only when taken: a learner, whatever it is given, the world included, is right on at most one of the two runs.” Later the same day: going on is stated through Lasting.Continues (live_iff_continues), and with finitely many configurations a course of N steps gives courses of every length, with no decidability (unbounded_of_continues); Parting imports Lasting; dependencies gain lifting-where-branching-is-finite."
     }
   ],
   "text_versions": []

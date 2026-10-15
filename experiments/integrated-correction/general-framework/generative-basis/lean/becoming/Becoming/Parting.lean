@@ -1,4 +1,5 @@
 import Becoming.Distinguishing
+import Becoming.Lasting
 
 /-!
 # Parting: what a record fixes where the course branches
@@ -37,7 +38,11 @@ with no premise beyond what each law names, what a record fixes along the runs o
   moves and configurations, decided steps and decided registered values. The learner given the
   world (`worldLearner`) reads from the record the configurations a run from `s` can be at
   (`candidates`). It keeps the first from which a path as long as the list of configurations is
-  open (`live`, `firstLive`), and such a path goes on without end (`live_persists`, `liveRun`).
+  open (`live`, `firstLive`), and such a path goes on without end (`live_persists`, `liveRun`):
+  `live` is `Lasting.Continues` decided (`live_iff_continues`), and where a list of `N` holds
+  every configuration a course of `N` steps makes its start unbounded, with no decidability and
+  no selection (`continues_persists`, `unbounded_of_continues`), where `Lasting`'s lifting for
+  finite branching holds up to double negation.
   It claims what that configuration registers. It is right at step `t` on every run from `s`
   exactly where no two runs from `s` part at `t` (`world_right_iff`). So some learner is right
   there exactly where none part (`some_right_iff`): with `not_right_on_both`, at each step a
@@ -372,6 +377,61 @@ def choose {α : Type _} (p : α → Bool) : (l : List α) → (∃ x, x ∈ l �
         | .inl same => absurd (same ▸ passes') passes
         | .inr inside => ⟨y, inside, passes'⟩)
 
+section Continuing
+
+variable {S : Type u} {A : Type v} {P : Process S A}
+
+theorem path_of_continues : ∀ (m : Nat) (y : S), Lasting.Continues P m y →
+    ∃ g : Nat → S, g 0 = y ∧ ∀ k, k < m → ∃ a, P.step (g k) a (g (k + 1))
+  | 0, y, _ => ⟨fun _ => y, rfl, fun k lt => absurd lt (Nat.not_lt_zero k)⟩
+  | m + 1, y, ⟨a, z, step, rest⟩ => match path_of_continues m z rest with
+    | ⟨g, start, steps⟩ => ⟨fun | 0 => y | k + 1 => g k, rfl, fun
+        | 0, _ => ⟨a, Eq.subst (motive := fun x => P.step y a x) start.symm step⟩
+        | k + 1, lt => steps k (Nat.lt_of_succ_lt_succ lt)⟩
+
+/-- Along a path that returns to an earlier configuration, courses of every length start at each
+configuration before the return. -/
+theorem continues_cycle {g : Nat → S} {i j : Nat}
+    (steps : ∀ k, k < j → ∃ a, P.step (g k) a (g (k + 1))) (lt : i < j) (same : g i = g j) :
+    ∀ m k, k < j → Lasting.Continues P m (g k)
+  | 0, _, _ => trivial
+  | m + 1, k, below => match steps k below with
+    | ⟨a, step⟩ => ⟨a, g (k + 1), step,
+        match Nat.lt_or_ge (k + 1) j with
+        | .inl below' => continues_cycle steps lt same m (k + 1) below'
+        | .inr ge =>
+          Eq.subst (motive := fun x => Lasting.Continues P m x)
+            (same.trans (congrArg g (Nat.le_antisymm below ge)).symm)
+            (continues_cycle steps lt same m i lt)⟩
+
+/-- **Where a list holds every configuration, a course as long as the list goes on.** From where
+a course of `N` steps starts, `N` configurations listed, a step leads to where one starts: the
+course repeats a configuration and can go round. No decidability is used. -/
+theorem continues_persists {all : List S} (every : ∀ x, x ∈ all) {y : S}
+    (continues : Lasting.Continues P all.length y) :
+    ∃ a z, P.step y a z ∧ Lasting.Continues P all.length z :=
+  match path_of_continues all.length y continues with
+  | ⟨g, start, steps⟩ => match revisits_within all g (fun n _ => every (g n)) with
+    | ⟨i, _, lt, within, same⟩ =>
+      Eq.subst (motive := fun x => Lasting.Continues P (all.length + 1) x) start
+        (continues_cycle (fun k below => steps k (Nat.lt_of_lt_of_le below within)) lt same
+          (all.length + 1) 0 (Nat.lt_of_le_of_lt (Nat.zero_le i) lt))
+
+theorem continues_any {all : List S} (every : ∀ x, x ∈ all) :
+    ∀ (n : Nat) (y : S), Lasting.Continues P all.length y → Lasting.Continues P n y
+  | 0, _, _ => trivial
+  | n + 1, _, continues => match continues_persists every continues with
+    | ⟨a, z, step, rest⟩ => ⟨a, z, step, continues_any every n z rest⟩
+
+/-- **Where a list of `N` holds every configuration, a course of `N` steps from `s` makes `s`
+unbounded**: courses of every length start there. With no decidability and no selection, where
+`Lasting`'s lifting for finite branching holds up to double negation. -/
+theorem unbounded_of_continues {all : List S} (every : ∀ x, x ∈ all) {y : S}
+    (continues : Lasting.Continues P all.length y) : Lasting.Unbounded P y :=
+  fun n => continues_any every n y continues
+
+end Continuing
+
 variable {S : Type u} {A : Type v} {R : Type w} (P : Process S A)
   [∀ x a y, Decidable (P.step x a y)] (moves : List A) (all : List S)
 
@@ -398,41 +458,23 @@ theorem live_of_run (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
   | m + 1, n => (live_succ_iff every_move every).mpr
       ⟨r.act n, r.state (n + 1), r.step n, live_of_run every_move every r m (n + 1)⟩
 
-theorem path_of_live (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) : ∀ (m : Nat) (y : S),
-    live P moves all m y = true →
-      ∃ g : Nat → S, g 0 = y ∧ ∀ k, k < m → ∃ a, P.step (g k) a (g (k + 1))
-  | 0, y, _ => ⟨fun _ => y, rfl, fun k lt => absurd lt (Nat.not_lt_zero k)⟩
-  | m + 1, y, open_ => match (live_succ_iff every_move every).mp open_ with
-    | ⟨a, z, step, rest⟩ => match path_of_live every_move every m z rest with
-      | ⟨g, start, steps⟩ => ⟨fun | 0 => y | k + 1 => g k, rfl, fun
-          | 0, _ => ⟨a, Eq.subst (motive := fun x => P.step y a x) start.symm step⟩
-          | k + 1, lt => steps k (Nat.lt_of_succ_lt_succ lt)⟩
-
-theorem live_cycle (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) {g : Nat → S}
-    {i j : Nat} (steps : ∀ k, k < j → ∃ a, P.step (g k) a (g (k + 1))) (lt : i < j)
-    (same : g i = g j) : ∀ m k, k < j → live P moves all m (g k) = true
-  | 0, _, _ => rfl
-  | m + 1, k, below => match steps k below with
-    | ⟨a, step⟩ => (live_succ_iff every_move every).mpr ⟨a, g (k + 1), step,
-        match Nat.lt_or_ge (k + 1) j with
-        | .inl below' => live_cycle every_move every steps lt same m (k + 1) below'
-        | .inr ge =>
-          (congrArg (fun x => live P moves all m (g x)) (Nat.le_antisymm below ge)).trans
-            ((congrArg (live P moves all m) same.symm).trans
-              (live_cycle every_move every steps lt same m i lt))⟩
+/-- **The Boolean depth is `Lasting.Continues`.** With listed moves and configurations, a path of
+`m` steps is open from `y` exactly where some course of `m` steps starts at `y`. -/
+theorem live_iff_continues (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) :
+    ∀ (m : Nat) (y : S), live P moves all m y = true ↔ Lasting.Continues P m y
+  | 0, _ => ⟨fun _ => trivial, fun _ => rfl⟩
+  | m + 1, _ => (live_succ_iff every_move every).trans
+      ⟨fun ⟨a, z, step, rest⟩ => ⟨a, z, step, (live_iff_continues every_move every m z).mp rest⟩,
+       fun ⟨a, z, step, rest⟩ => ⟨a, z, step, (live_iff_continues every_move every m z).mpr rest⟩⟩
 
 /-- **A path as long as there are configurations goes on.** From where a path of `N` steps is
-open, `N` configurations listed, a step leads to where a path of `N` steps is open. -/
+open, `N` configurations listed, a step leads to where a path of `N` steps is open
+(`continues_persists`). -/
 theorem live_persists (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) {y : S}
     (open_ : live P moves all all.length y = true) :
     ∃ a z, P.step y a z ∧ live P moves all all.length z = true :=
-  match path_of_live every_move every all.length y open_ with
-  | ⟨g, start, steps⟩ => match revisits_within all g (fun n _ => every (g n)) with
-    | ⟨i, _, lt, within, same⟩ =>
-      (live_succ_iff every_move every).mp
-        (Eq.subst (motive := fun x => live P moves all (all.length + 1) x = true) start
-          (live_cycle every_move every (fun k below => steps k (Nat.lt_of_lt_of_le below within))
-            lt same (all.length + 1) 0 (Nat.lt_of_le_of_lt (Nat.zero_le i) lt)))
+  match continues_persists every ((live_iff_continues every_move every _ y).mp open_) with
+  | ⟨a, z, step, rest⟩ => ⟨a, z, step, (live_iff_continues every_move every _ z).mpr rest⟩
 
 /-- One step from where a path of `N` steps is open, to where one is open. -/
 def advance (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
