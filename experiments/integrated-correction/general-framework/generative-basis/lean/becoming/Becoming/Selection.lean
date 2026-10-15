@@ -361,6 +361,224 @@ theorem share_rises_through {history : α → Nat → C → Nat} {kids : α → 
 
 end Share
 
+/-! ## Selection by the record alone
+
+Options are told apart only by what a record holds of each: an entry per option, of any kind. A
+selection among them reads the record alone when exchanging two options' entries exchanges what it
+selects (`Relabel.Equivariant`); a valuation of the options, such as a weight on each, reads the
+record alone when it exchanges their values (`Relabel.EquivariantValue`); a choice of at most one
+option does when it exchanges the choice (`Relabel.EquivariantChoice`). As a selection through
+registration reaches exactly what registers (`Web.selects_alike_iff`), a selection by the record
+alone reaches exactly what the record parts. -/
+
+namespace Relabel
+
+universe u v w
+
+variable {K : Type u} {V : Type v} [DecidableEq K]
+
+/-- Exchange the options `a` and `b`. -/
+def swap (a b k : K) : K := if k = a then b else if k = b then a else k
+
+theorem swap_left (a b : K) : swap a b a = b := if_pos rfl
+
+theorem swap_right (a b : K) : swap a b b = a :=
+  match decEq b a with
+  | isTrue same => (show (if b = a then b else if b = b then a else b) = a from
+      (if_pos same).trans same)
+  | isFalse differ => (show (if b = a then b else if b = b then a else b) = a from
+      (if_neg differ).trans (if_pos rfl))
+
+theorem swap_other (a b : K) {k : K} (not_a : k ≠ a) (not_b : k ≠ b) : swap a b k = k :=
+  (if_neg not_a).trans (if_neg not_b)
+
+/-- Exchanging twice returns every option. -/
+theorem swap_swap (a b k : K) : swap a b (swap a b k) = k :=
+  match decEq k a with
+  | isTrue at_a =>
+    ((congrArg (swap a b) ((congrArg (swap a b) at_a).trans (swap_left a b))).trans
+      (swap_right a b)).trans at_a.symm
+  | isFalse not_a => match decEq k b with
+    | isTrue at_b =>
+      ((congrArg (swap a b) ((congrArg (swap a b) at_b).trans (swap_right a b))).trans
+        (swap_left a b)).trans at_b.symm
+    | isFalse not_b =>
+      (congrArg (swap a b) (swap_other a b not_a not_b)).trans (swap_other a b not_a not_b)
+
+theorem swap_inj (a b : K) {x y : K} (same : swap a b x = swap a b y) : x = y :=
+  (swap_swap a b x).symm.trans ((congrArg (swap a b) same).trans (swap_swap a b y))
+
+/-- A selection reads the record alone: where `r'` is `r` with the entries of `a` and `b`
+exchanged, it selects at `r'` what it selects at `r`, exchanged. -/
+def Equivariant (select : (K → V) → K → Prop) : Prop :=
+  ∀ r r' a b, (∀ k, r' k = r (swap a b k)) → ∀ i, select r' i ↔ select r (swap a b i)
+
+/-- A valuation of the options reads the record alone: exchanging two options' entries exchanges
+their values. -/
+def EquivariantValue {W : Type w} (value : (K → V) → K → W) : Prop :=
+  ∀ r r' a b, (∀ k, r' k = r (swap a b k)) → ∀ i, value r' i = value r (swap a b i)
+
+/-- A choice of at most one option reads the record alone: exchanging two options' entries
+exchanges the choice. -/
+def EquivariantChoice (rule : (K → V) → Option K) : Prop :=
+  ∀ r r' a b, (∀ k, r' k = r (swap a b k)) → rule r' = (rule r).map (swap a b)
+
+variable {r : K → V} {j k : K}
+
+/-- Exchanging two tied options leaves the record as it was. -/
+theorem fixed_of_tied (tie : r j = r k) : ∀ i, r i = r (swap j k i) := fun i =>
+  match decEq i j with
+  | isTrue at_j =>
+    (congrArg r at_j).trans (tie.trans ((congrArg r (swap_left j k)).symm.trans
+      (congrArg (fun x => r (swap j k x)) at_j.symm)))
+  | isFalse not_j => match decEq i k with
+    | isTrue at_k =>
+      (congrArg r at_k).trans (tie.symm.trans ((congrArg r (swap_right j k)).symm.trans
+        (congrArg (fun x => r (swap j k x)) at_k.symm)))
+    | isFalse not_k => congrArg r (swap_other j k not_j not_k).symm
+
+/-- **Tied options are selected alike.** -/
+theorem Equivariant.tied {select : (K → V) → K → Prop} (equivariant : Equivariant select)
+    (tie : r j = r k) : select r j ↔ select r k :=
+  (equivariant r r j k (fixed_of_tied tie) j).trans (iff_of_eq (congrArg (select r) (swap_left j k)))
+
+/-- **A selection by the record alone reaches exactly what the record parts.** Two options are
+selected alike by every selection reading the record alone exactly when the record ties them. -/
+theorem selected_alike_iff :
+    (∀ select : (K → V) → K → Prop, Equivariant select → (select r j ↔ select r k)) ↔ r j = r k :=
+  ⟨fun all => ((all (fun r' i => r' i = r j) (fun _ _ _ _ relabel i =>
+      ⟨fun holds => (relabel i).symm.trans holds, fun holds => (relabel i).trans holds⟩)).mp
+      rfl).symm,
+   fun tie _ equivariant => equivariant.tied tie⟩
+
+/-- **What is singled out is untied.** A selection reading the record alone that selects at most
+one option at `r` selects none that another option's entry ties. -/
+theorem Equivariant.untied {select : (K → V) → K → Prop} (equivariant : Equivariant select)
+    (single : ∀ i i', select r i → select r i' → i = i') (selected : select r k) :
+    ∀ j, j ≠ k → r j ≠ r k :=
+  fun j differ tie => differ (single j k ((equivariant.tied tie).mpr selected) selected)
+
+/-- At a full tie of two or more options, a selection reading the record alone that selects at
+most one option selects none. -/
+theorem Equivariant.none_of_full_tie {select : (K → V) → K → Prop}
+    (equivariant : Equivariant select) (single : ∀ i i', select r i → select r i' → i = i')
+    {a b : K} (two : a ≠ b) (tied : ∀ i i', r i = r i') : ∀ k, ¬ select r k :=
+  fun k selected => match decEq k a with
+  | isTrue at_a => equivariant.untied single selected b (fun same => two (at_a.symm.trans
+      same.symm)) (tied b k)
+  | isFalse not_a => equivariant.untied single selected a (fun same => not_a same.symm) (tied a k)
+
+/-- The option holding `v` alone in the record. -/
+def Alone (v : V) (r : K → V) (i : K) : Prop := r i = v ∧ ∀ j, j ≠ i → r j ≠ v
+
+/-- Holding an entry alone is read off the record alone. -/
+theorem alone_equivariant (v : V) : Equivariant (Alone (K := K) v) :=
+  fun r _ a b relabel i =>
+    ⟨fun ⟨holds, only⟩ => ⟨(relabel i).symm.trans holds, fun j differ same =>
+        only (swap a b j)
+          (fun at_i => differ ((swap_swap a b j).symm.trans (congrArg (swap a b) at_i)))
+          ((relabel (swap a b j)).trans ((congrArg r (swap_swap a b j)).trans same))⟩,
+     fun ⟨holds, only⟩ => ⟨(relabel i).trans holds, fun j differ same =>
+        only (swap a b j) (fun at_i => differ (swap_inj a b at_i)) ((relabel j).symm.trans same)⟩⟩
+
+/-- At most one option holds an entry alone. -/
+theorem alone_single {v : V} {i i' : K} (first : Alone v r i) (second : Alone v r i') : i = i' :=
+  match decEq i i' with
+  | isTrue same => same
+  | isFalse differ => absurd first.1 (second.2 i differ)
+
+/-- **An option is singled out exactly where the record parts it.** Some selection reading the
+record alone, selecting at most one option at each record, selects `k` at `r` exactly when no
+other option's entry ties `k`'s. -/
+theorem singled_iff_untied :
+    (∃ select : (K → V) → K → Prop, Equivariant select ∧
+      (∀ r' i i', select r' i → select r' i' → i = i') ∧ select r k) ↔
+      ∀ j, j ≠ k → r j ≠ r k :=
+  ⟨fun ⟨_, equivariant, single, selected⟩ => equivariant.untied (single r) selected,
+   fun untied => ⟨Alone (r k), alone_equivariant (r k), fun _ _ _ => alone_single,
+     ⟨rfl, untied⟩⟩⟩
+
+/-! ### Values -/
+
+section Values
+
+variable {W : Type w} {value : (K → V) → K → W}
+
+/-- **Tied options are valued alike**, a weight on each among them. -/
+theorem EquivariantValue.tied (equivariant : EquivariantValue value) (tie : r j = r k) :
+    value r j = value r k :=
+  (equivariant r r j k (fixed_of_tied tie) j).trans (congrArg (value r) (swap_left j k))
+
+/-- At a full tie every option is valued alike. -/
+theorem EquivariantValue.full_tie (equivariant : EquivariantValue value)
+    (tied : ∀ i i', r i = r i') (i i' : K) : value r i = value r i' :=
+  equivariant.tied (tied i i')
+
+/-- The options taking a given value form a selection reading the record alone. -/
+theorem EquivariantValue.level (equivariant : EquivariantValue value) (c : W) :
+    Equivariant (fun r i => value r i = c) :=
+  fun r r' a b relabel i => ⟨fun holds => (equivariant r r' a b relabel i).symm.trans holds,
+    fun holds => (equivariant r r' a b relabel i).trans holds⟩
+
+/-- A constant valuation, the same weight on every option, reads the record alone. -/
+theorem EquivariantValue.const (c : W) : EquivariantValue (fun (_ : K → V) (_ : K) => c) :=
+  fun _ _ _ _ _ _ => rfl
+
+end Values
+
+/-- The entry itself is a valuation reading the record alone. -/
+theorem entry_equivariant : EquivariantValue (fun (r : K → V) (i : K) => r i) :=
+  fun _ _ _ _ relabel i => relabel i
+
+/-- Two options are valued alike by every valuation reading the record alone exactly when the
+record ties them. -/
+theorem valued_alike_iff :
+    (∀ value : (K → V) → K → V, EquivariantValue value → value r j = value r k) ↔ r j = r k :=
+  ⟨fun all => all _ entry_equivariant, fun tie _ equivariant => equivariant.tied tie⟩
+
+/-! ### Choices -/
+
+section Choices
+
+variable {rule : (K → V) → Option K}
+
+theorem map_swap_eq_some (a b : K) {i : K} :
+    ∀ {o : Option K}, o.map (swap a b) = some i ↔ o = some (swap a b i)
+  | none => ⟨fun e => (nomatch e), fun e => (nomatch e)⟩
+  | some c => ⟨fun e => congrArg some ((swap_swap a b c).symm.trans
+        (congrArg (swap a b) (Option.some.inj e))),
+      fun e => congrArg some ((congrArg (swap a b) (Option.some.inj e)).trans (swap_swap a b i))⟩
+
+/-- A choice reading the record alone selects, reading the record alone, the option it chooses. -/
+theorem EquivariantChoice.selects (equivariant : EquivariantChoice rule) :
+    Equivariant (fun r i => rule r = some i) :=
+  fun r r' a b relabel _ =>
+    (iff_of_eq (congrArg (fun o => o = some _) (equivariant r r' a b relabel))).trans
+      (map_swap_eq_some a b)
+
+omit [DecidableEq K] in
+/-- A choice chooses at most one option. -/
+theorem EquivariantChoice.single (r : K → V) {i i' : K} (first : rule r = some i)
+    (second : rule r = some i') : i = i' :=
+  Option.some.inj (first.symm.trans second)
+
+/-- **A choice reading the record alone chooses no tied option.** -/
+theorem EquivariantChoice.untied (equivariant : EquivariantChoice rule) (chosen : rule r = some k) :
+    ∀ j, j ≠ k → r j ≠ r k :=
+  equivariant.selects.untied (fun _ _ => EquivariantChoice.single r) chosen
+
+/-- **At a full tie of two or more options a choice reading the record alone withholds.** -/
+theorem EquivariantChoice.withholds_of_full_tie (equivariant : EquivariantChoice rule) {a b : K}
+    (two : a ≠ b) (tied : ∀ i i', r i = r i') : rule r = none :=
+  match chosen : rule r with
+  | none => rfl
+  | some k => absurd chosen (equivariant.selects.none_of_full_tie
+      (fun _ _ => EquivariantChoice.single r) two tied k)
+
+end Choices
+
+end Relabel
+
 /-! ## Witnesses -/
 
 /-! ### The gap in `Clearing` -/
