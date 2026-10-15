@@ -282,7 +282,9 @@ PROOF_KIND = {
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
             'Web.lpo_of_ending', 'ChangeBound.lpo_of_ends', 'alike_decided_iff_em', 'alike_of_sameBranchingTests_iff_em',
-            'alike_of_sameBranchingTests_decided_steps_iff_em', 'alike_of_sameBranchingTests_outcomes_iff']
+            'alike_of_sameBranchingTests_decided_steps_iff_em', 'alike_of_sameBranchingTests_outcomes_iff',
+            # integrations I3a and I3b (added 2026-10-15; I3a's two were omitted at its landing by oversight)
+            'matchesParts_of_compact_iff_em', 'jointAlike_of_sameJointTests_iff_em', 'Recipe.holds_after_iff_em']
 
 rows = [l.rstrip('\n').split('\t') for l in ROWS.splitlines() if l.strip()]
 theorems = collections.OrderedDict()
@@ -396,10 +398,10 @@ if unused:
 lines += ['## 排中律或其受限形式作为假设 / Excluded middle, in full or restricted form, as a hypothesis', '',
           '这些是边界定理：它们表明排中律或其受限形式（例如 `NowhereDecided`：一个已判定的族是否处处不成立已判定）给出什么，配合 ' +
           '、'.join(f'`{b}`' for b in BOUNDARY) +
-          '，表明命名一步、对每个世界要求复现、或由检验判定相同的形式需要可判定性。 / These are boundary theorems: they show what '
+          '，表明命名一步、对每个世界要求复现、由检验判定相同、或把配方读作一个检验的形式需要可判定性。 / These are boundary theorems: they show what '
           'excluded middle, or a restricted form of it (such as `NowhereDecided`: whether a decided family holds nowhere is '
           'decided), gives, and with ' + ', '.join(f'`{b}`' for b in BOUNDARY) + ', that the forms naming a step, asking '
-          'recurrence of every world or fixing likeness by tests need decidedness.', '']
+          'recurrence of every world, fixing likeness by tests or reading a recipe as one test need decidedness.', '']
 lines += [f'- {m(mod)}: `{short}`' for mod, short in em] + ['']
 by_mod = collections.Counter(m(mod) for mod, *_ in supplied)
 lines += ['## 计数而可判定被证明 / Counting with decidedness proved', '',
