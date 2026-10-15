@@ -105,12 +105,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: Becoming.Gated has 13 theorems, and the 11 new declarations have empty axiom reports; the periphery instance LivingOrganizationCorrespondence is checked by its own checker (standard axioms). Author counterreview in study section 143; not independently reviewed."
   },
   "next_delta": {
-    "zh": "独立审查；判定 p 时的第一个起源步；其余最近的缺口（Horizon、Lasting、Selection，I4b）。",
-    "en": "An independent review; the first origin step where p is decided; the other closest gaps (Horizon, Lasting, Selection, I4b)."
+    "zh": "独立审查；判定 p 时的第一个起源步。",
+    "en": "An independent review; the first origin step where p is decided."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 LivingOrganization 读作待接入的律：Becoming.Gated 要求未经门的步双向保持，单向的轨迹律未陈述。本结果陈述它，并把 Gated 的旧律作为其情形。读法（AI 的，待 Ren）：门定位起源能从哪里进入；反映即“后有则前有”，一个组织的池或早已在，或经一次进入而在。",
-    "en": "Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read LivingOrganization as a join candidate: Becoming.Gated asked for keeping in both directions, and the one-directional trace law was unstated. This result states it, with the earlier Gated law as its case. Readings (the AI's, pending Ren): the gate locates where an origin can enter; reflecting is \"present after only if present before\", and an organization's pool was either there already or came in through an entry."
+    "zh": "Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 LivingOrganization 读作待接入的律：Becoming.Gated 要求未经门的步双向保持，单向的轨迹律未陈述。本结果陈述它，并把 Gated 的旧律作为其情形。读法（AI 的，Ren 2026-10-16 已取）：门定位起源能从哪里进入；反映即“后有则前有”，一个组织的池或早已在，或经一次进入而在。",
+    "en": "Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read LivingOrganization as a join candidate: Becoming.Gated asked for keeping in both directions, and the one-directional trace law was unstated. This result states it, with the earlier Gated law as its case. Readings (the AI's, which Ren took on 16 October 2026): the gate locates where an origin can enter; reflecting is \"present after only if present before\", and an organization's pool was either there already or came in through an entry."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean",
   "aliases": [
@@ -220,6 +220,11 @@
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
       "role": "provenance",
       "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
+      "role": "provenance",
+      "sha256": "cf83ac3219b39f47641327d95eb072286d6bd0b21452ab9351642abd895879bc"
     }
   ],
   "proof_bindings": [
@@ -274,6 +279,10 @@
     {
       "zh": "2026年10月16日，P118 落地（研究第152节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P118：所携带的差别怎样增长一对段落、§2 与 §8 的相应行、§9 的 Becoming.Loops 一行；总数改据新回执）。",
       "en": "16 October 2026, landing P118 (study section 152): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P118: a paragraph pair on how a carried difference grows, the corresponding §2 and §8 lines, and the §9 row of Becoming.Loops; totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月16日：Ren 同意交托之后提出的读法（“agree with other readings”）；AI 读作包括 I4b 的三项读法（含本记录的），Ren 未更正。correspondence 把读法标为 AI 的、Ren 已取，读法文字不变；next_delta 删去此后已落地的最近缺口。研究第143节的“待 Ren”作为证据保留。原措辞：“读法（AI 的，待 Ren）”。",
+      "en": "16 October 2026: Ren agreed with the readings posed after the delegation (“agree with other readings”); the AI read this as taking I4b's three readings, this record's among them, and Ren did not correct it. Correspondence marks the readings as the AI's which Ren took, the reading text unchanged; next_delta drops the closest gaps that have since landed. Study section 143's “pending Ren” stays as evidence. Former wording: “Readings (the AI's, pending Ren)”."
     }
   ],
   "text_versions": []

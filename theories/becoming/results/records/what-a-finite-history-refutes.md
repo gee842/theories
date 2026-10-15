@@ -38,13 +38,13 @@ Canonical source: [Horizon.lean](../../../../experiments/integrated-correction/g
 
 ## Next / 下一步
 
-An independent review; IdealWarrant's order form on posets (the general mathematical line, outside the spine for now); the other closest gaps (Lasting, Selection).<br>独立审查；IdealWarrant 在偏序上的形式（一般数学线，暂留脊柱外）；其余最近的缺口（Lasting、Selection）。
+An independent review; IdealWarrant's order form on posets (the general mathematical line, outside the spine for now).<br>独立审查；IdealWarrant 在偏序上的形式（一般数学线，暂留脊柱外）。
 
 <details><summary>Correspondence, dependencies, sources and history / 对应、依赖、来源与沿革</summary>
 
 ### Correspondence / 对应
 
-Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read PrefixSafety as a join candidate: Becoming.Horizon stated what no finite prefix decides, not what a finite history refutes. This result states it for every process, with PrefixSafety's prefix topology as the instance of the process of all sequences; its classical theorems become the core laws with double negation and Markov's principle. IdealWarrant generalizes it to posets and belongs to the general mathematical line Ren left outside the spine for now. Readings (the AI's, pending Ren): what a finite record can show is that a run lies outside a refutable reading; that a run lies inside is only not refuted; and refuting by tests means finding a failed test where it is only known that not all pass.<br>Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 PrefixSafety 读作待接入的律：Becoming.Horizon 陈述了有限前缀不决定什么，未陈述有限历史否证什么。本结果对每个过程陈述它，PrefixSafety 的前缀拓扑是所有序列过程的实例，其经典定理成为核心律加双重否定与 Markov 原则。IdealWarrant 在偏序上推广它，属 Ren 暂留脊柱外的一般数学线。读法（AI 的，待 Ren）：有限记录能显示的，是运行在可否证读法之外；运行在其内只是未被否证；由测试否证，须在只知并非全部通过时找到失败的测试。
+Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read PrefixSafety as a join candidate: Becoming.Horizon stated what no finite prefix decides, not what a finite history refutes. This result states it for every process, with PrefixSafety's prefix topology as the instance of the process of all sequences; its classical theorems become the core laws with double negation and Markov's principle. IdealWarrant generalizes it to posets and belongs to the general mathematical line Ren left outside the spine for now. Readings (the AI's, which Ren took on 16 October 2026): what a finite record can show is that a run lies outside a refutable reading; that a run lies inside is only not refuted; and refuting by tests means finding a failed test where it is only known that not all pass.<br>Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 PrefixSafety 读作待接入的律：Becoming.Horizon 陈述了有限前缀不决定什么，未陈述有限历史否证什么。本结果对每个过程陈述它，PrefixSafety 的前缀拓扑是所有序列过程的实例，其经典定理成为核心律加双重否定与 Markov 原则。IdealWarrant 在偏序上推广它，属 Ren 暂留脊柱外的一般数学线。读法（AI 的，Ren 2026-10-16 已取）：有限记录能显示的，是运行在可否证读法之外；运行在其内只是未被否证；由测试否证，须在只知并非全部通过时找到失败的测试。
 
 ### Dependencies / 依赖
 
@@ -67,6 +67,7 @@ Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification ta
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-16-i4-decisions.md](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md) | — |
 | provenance | [2026-10-12-move-towards-100.md](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md) | — |
+| provenance | [2026-10-16-loops-readings-and-delegated-choices.md](../../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md) | — |
 
 Aliases / 别名: `Becoming.Refutable`, `Becoming.Adheres`, `Becoming.refutable_passes_iff_markov`, `Becoming.Refutable.not_not`, `what a finite history refutes`, `有限历史所否证者`, `finite refutability`, `有限可否证`, `adherence`, `附着`
 
@@ -78,6 +79,7 @@ Aliases / 别名: `Becoming.Refutable`, `Becoming.Adheres`, `Becoming.refutable_
 - 2026年10月16日，P119 落地（研究第150节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P119：在“权重计数情境”之后加“分开与计数的开放证明”一对段落；整体陈述的两条与界一项、§8 的两行状态与“路径分支时”一项、§9 的三行（43、43、38）与术语表一行（被给予世界的学习者）；总数改据新回执）。 / 16 October 2026, landing P119 (study section 150): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P119: a paragraph pair on the open proofs of parting and counting after “weights count situations”; two bullets and the bound item of the theory stated whole, §8's two status rows and the open item “When the course branches”, §9's three rows (43, 43, 38) and a glossary row (the learner given the world); totals moved to the new receipt).
 - 2026年10月16日，I4b 第二项落地（研究第151节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第二项：§9 的 Becoming.Selection 一行（43 → 67 项定理，改为双语）与外围实例 SelectionRelabelCorrespondence 一行，外围实例的列举加入它；总数改据新回执）。 / 16 October 2026, landing I4b item 2 (study section 151): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 2: the §9 row of Becoming.Selection (43 → 67 theorems, now bilingual) and a peripheral-instance row for SelectionRelabelCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt).
 - 2026年10月16日，P118 落地（研究第152节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P118：所携带的差别怎样增长一对段落、§2 与 §8 的相应行、§9 的 Becoming.Loops 一行；总数改据新回执）。 / 16 October 2026, landing P118 (study section 152): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P118: a paragraph pair on how a carried difference grows, the corresponding §2 and §8 lines, and the §9 row of Becoming.Loops; totals moved to the new receipt).
+- 2026年10月16日：Ren 同意交托之后提出的读法（“agree with other readings”）；AI 读作包括 I4b 的三项读法（含本记录的），Ren 未更正。correspondence 把读法标为 AI 的、Ren 已取，读法文字不变；next_delta 删去此后已落地的最近缺口。研究第145节的“待 Ren”作为证据保留。原措辞：“读法（AI 的，待 Ren）”。 / 16 October 2026: Ren agreed with the readings posed after the delegation (“agree with other readings”); the AI read this as taking I4b's three readings, this record's among them, and Ren did not correct it. Correspondence marks the readings as the AI's which Ren took, the reading text unchanged; next_delta drops the closest gaps that have since landed. Study section 145's “pending Ren” stays as evidence. Former wording: “Readings (the AI's, pending Ren)”.
 
 </details>
 
