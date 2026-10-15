@@ -1,0 +1,16 @@
+'Generative.ExplanatoryGranularity.blocks' does not depend on any axioms
+'Generative.ExplanatoryGranularity.along' does not depend on any axioms
+'Generative.ExplanatoryGranularity.compile' does not depend on any axioms
+'Generative.ExplanatoryGranularity.holds_along' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularity.compile_correct' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularity.blocks_trace_iff' depends on axioms: [propext]
+'Generative.ExplanatoryGranularity.finite_trace_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGranularity.blocks_image_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGranularity.cross_granularity_history_matches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryGranularity.retained_block_provenance' depends on axioms: [propext]
+'Generative.ExplanatoryGranularity.liftTest' does not depend on any axioms
+'Generative.ExplanatoryGranularity.lift_compile' depends on axioms: [propext]
+'Generative.ExplanatoryGranularity.singleton_coverage_recovers_questions' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularity.full_and_block_reduced_kernels' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,12 @@
+'InquiryRoot.JointInterpretation.package' does not depend on any axioms
+'InquiryRoot.JointInterpretation.package_derivable' does not depend on any axioms
+'InquiryRoot.JointInterpretation.package_iff_list' does not depend on any axioms
+'InquiryRoot.JointInterpretation.package_iff_basis' does not depend on any axioms
+'InquiryRoot.JointInterpretation.basis_iff_relative_closure' does not depend on any axioms
+'InquiryRoot.JointInterpretation.common_basis_iff_common_closure' does not depend on any axioms
+'InquiryRoot.JointInterpretation.pointwise_closure_iff_common' does not depend on any axioms
+'InquiryRoot.JointInterpretation.pointwise_closure_gives_common_relative' does not depend on any axioms
+'InquiryRoot.JointInterpretation.incompatibleRows' does not depend on any axioms
+'InquiryRoot.JointInterpretation.separate_basis_rows_fit' does not depend on any axioms
+'InquiryRoot.JointInterpretation.separate_rows_have_no_common_interpretation' does not depend on any axioms
+'InquiryRoot.JointInterpretation.separate_rows_do_not_cover_full_closure' does not depend on any axioms

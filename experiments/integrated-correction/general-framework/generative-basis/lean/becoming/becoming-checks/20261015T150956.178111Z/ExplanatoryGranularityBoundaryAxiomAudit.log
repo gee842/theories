@@ -1,0 +1,21 @@
+'Generative.ExplanatoryGranularityBoundary.Phase' does not depend on any axioms
+'Generative.ExplanatoryGranularityBoundary.Event' does not depend on any axioms
+'Generative.ExplanatoryGranularityBoundary.unfolding' depends on axioms: [propext]
+'Generative.ExplanatoryGranularityBoundary.exists_phase' depends on axioms: [propext]
+'Generative.ExplanatoryGranularityBoundary.completed' does not depend on any axioms
+'Generative.ExplanatoryGranularityBoundary.prefixes' does not depend on any axioms
+'Generative.ExplanatoryGranularityBoundary.resumable' does not depend on any axioms
+'Generative.ExplanatoryGranularityBoundary.shared_origin' depends on axioms: [propext]
+'Generative.ExplanatoryGranularityBoundary.completed_endpoints' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.same_completed_questions' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.lostContinuation' does not depend on any axioms
+'Generative.ExplanatoryGranularityBoundary.real_internal_loss' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.exact_full_accounts_distinguish' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.terminal_questions' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.prefixes_terminals' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.prefix_steps' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.prefix_only_still_loses_failure' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.no_prefix_translation_of_loss' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.resumption_recovers_loss' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.reduced_prefix_account_cannot_extend' depends on axioms: [propext,
+ Quot.sound]

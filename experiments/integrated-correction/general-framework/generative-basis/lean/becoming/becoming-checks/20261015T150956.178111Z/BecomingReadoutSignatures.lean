@@ -1,0 +1,16 @@
+import Becoming.Readout
+#check @Becoming.Readout.reading_single_iff
+#check @Becoming.Readout.lumped_of_decodes
+#check @Becoming.Readout.decodes_iff_of_section
+#check @Becoming.Readout.decoder_pair_iff
+#check @Becoming.Readout.no_restore
+#check @Becoming.Readout.law_through_iff
+#check @Becoming.Readout.foldl_semiconj
+#check @Becoming.Readout.image_feasible
+#check @Becoming.Readout.feasible_of_image
+#check @Becoming.Readout.futures_through_iff
+#check @Becoming.Readout.commonWitness_or_covered
+#check @Becoming.Readout.pick_of
+#check @Becoming.Readout.pick_of_not
+#check @Becoming.Readout.no_common_report_iff
+#check @Becoming.Readout.no_common_report_envelopes_iff

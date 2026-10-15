@@ -1,0 +1,19 @@
+import RelationalBecoming
+#print axioms RelationalBecoming.Within
+#print axioms RelationalBecoming.Eventually
+#print axioms RelationalBecoming.within_after_prefix
+#print axioms RelationalBecoming.eventual_after_prefix
+#print axioms RelationalBecoming.no_new_eventual_bundle
+#print axioms RelationalBecoming.process
+#print axioms RelationalBecoming.realized
+#print axioms RelationalBecoming.both
+#print axioms RelationalBecoming.history_meaning
+#print axioms RelationalBecoming.joint_content_iff
+#print axioms RelationalBecoming.prepared_joint_within_one
+#print axioms RelationalBecoming.initial_not_joint_within_one
+#print axioms RelationalBecoming.actual_preparation_changes_effective_capacity
+#print axioms RelationalBecoming.belowRelease
+#print axioms RelationalBecoming.release_region_preserved
+#print axioms RelationalBecoming.released_cannot_reach_joint
+#print axioms RelationalBecoming.actual_release_loses_eventual_joint
+#print axioms RelationalBecoming.prepared_capacity_can_end_without_joint_realization

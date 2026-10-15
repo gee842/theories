@@ -1,0 +1,17 @@
+import ExplanatoryResiduals
+#print axioms Generative.ExplanatoryResiduals.Advance
+#print axioms Generative.ExplanatoryResiduals.unfolding
+#print axioms Generative.ExplanatoryResiduals.Cut
+#print axioms Generative.ExplanatoryResiduals.advance_resume
+#print axioms Generative.ExplanatoryResiduals.trace_resume
+#print axioms Generative.ExplanatoryResiduals.cut_resume
+#print axioms Generative.ExplanatoryResiduals.advance_has_native_trace
+#print axioms Generative.ExplanatoryResiduals.residual_trace_has_native_trace
+#print axioms Generative.ExplanatoryResiduals.cut_trans
+#print axioms Generative.ExplanatoryResiduals.cut_sequence
+#print axioms Generative.ExplanatoryResiduals.execution_reaches_skip
+#print axioms Generative.ExplanatoryResiduals.execution_iff_completed_cut
+#print axioms Generative.ExplanatoryResiduals.same_preserves_resumption
+#print axioms Generative.ExplanatoryResiduals.advance_matches
+#print axioms Generative.ExplanatoryResiduals.partial_history_matches
+#print axioms Generative.ExplanatoryResiduals.resumption_after_inserted_history

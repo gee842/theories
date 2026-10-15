@@ -1,0 +1,16 @@
+import ExplanatoryJoiningRegisters
+#print axioms Generative.ExplanatoryJoiningRegisters.Command
+#print axioms Generative.ExplanatoryJoiningRegisters.Step
+#print axioms Generative.ExplanatoryJoiningRegisters.model
+#print axioms Generative.ExplanatoryJoiningRegisters.Related
+#print axioms Generative.ExplanatoryJoiningRegisters.finite_outcomes_image_finite
+#print axioms Generative.ExplanatoryJoiningRegisters.retained_pair_result_matches
+#print axioms Generative.ExplanatoryJoiningRegisters.step_retains_configuration
+#print axioms Generative.ExplanatoryJoiningRegisters.trace_retains_configuration
+#print axioms Generative.ExplanatoryJoiningRegisters.trace_length
+#print axioms Generative.ExplanatoryJoiningRegisters.retained_history_matches
+#print axioms Generative.ExplanatoryJoiningRegisters.singleton_self_question
+#print axioms Generative.ExplanatoryJoiningRegisters.retained_question_corrects_coarse_failure
+#print axioms Generative.ExplanatoryJoiningRegisters.coarse_failure_not_related
+#print axioms Generative.ExplanatoryJoiningRegisters.idle_self_question
+#print axioms Generative.ExplanatoryJoiningRegisters.every_exact_account_retains_real_difference

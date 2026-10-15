@@ -1,0 +1,13 @@
+import JointInterpretation
+#print axioms InquiryRoot.JointInterpretation.package
+#print axioms InquiryRoot.JointInterpretation.package_derivable
+#print axioms InquiryRoot.JointInterpretation.package_iff_list
+#print axioms InquiryRoot.JointInterpretation.package_iff_basis
+#print axioms InquiryRoot.JointInterpretation.basis_iff_relative_closure
+#print axioms InquiryRoot.JointInterpretation.common_basis_iff_common_closure
+#print axioms InquiryRoot.JointInterpretation.pointwise_closure_iff_common
+#print axioms InquiryRoot.JointInterpretation.pointwise_closure_gives_common_relative
+#print axioms InquiryRoot.JointInterpretation.incompatibleRows
+#print axioms InquiryRoot.JointInterpretation.separate_basis_rows_fit
+#print axioms InquiryRoot.JointInterpretation.separate_rows_have_no_common_interpretation
+#print axioms InquiryRoot.JointInterpretation.separate_rows_do_not_cover_full_closure

@@ -1,0 +1,24 @@
+import Becoming.Learnable
+#print axioms Becoming.Learnable.course
+#print axioms Becoming.Learnable.RestsFrom
+#print axioms Becoming.Learnable.Rests
+#print axioms Becoming.Learnable.records_same
+#print axioms Becoming.Learnable.claim_not_right_on_both
+#print axioms Becoming.Learnable.refuted_on_one
+#print axioms Becoming.Learnable.agree_of_rests_both
+#print axioms Becoming.Learnable.not_rests_on_both
+#print axioms Becoming.Learnable.orbit_of_still
+#print axioms Becoming.Learnable.still_not_rests_on_both
+#print axioms Becoming.Learnable.still_lumped_of_rests
+#print axioms Becoming.Learnable.rests_through
+#print axioms Becoming.Learnable.firstFit_congr
+#print axioms Becoming.Learnable.withWorldAt
+#print axioms Becoming.Learnable.withWorld
+#print axioms Becoming.Learnable.learnable_iff
+#print axioms Becoming.Learnable.learnable_of_lumped
+#print axioms Becoming.Learnable.still_learnable_iff_lumped
+#print axioms Becoming.Learnable.Pair.still
+#print axioms Becoming.Learnable.Pair.stays
+#print axioms Becoming.Learnable.Pair.first_not_rests
+#print axioms Becoming.Learnable.Pair.not_lumped
+#print axioms Becoming.Learnable.Pair.whole_rests
