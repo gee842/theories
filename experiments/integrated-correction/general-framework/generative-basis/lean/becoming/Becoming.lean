@@ -740,8 +740,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Identification` (L4): identification, what a bounded record fixes (P83), with no
   premise beyond the bound on states. Two periods (Fine and Wilf): a course with period `p + 1`
   that comes back after `Q` steps at its first `p` steps does so at every step. Histories with at
-  most `N` and `N'` states are fixed by their record before `N + N' - 1`, and for `N = 1` and
-  `N = N'` no shorter record does. Where the bound is given induction is deduction: a lasso
+  most `N` and `N'` states are fixed by their record before `N + N' - 1`, and for every `N` and
+  `N'` no shorter record does. Where the bound is given induction is deduction: a lasso
   hypothesis within `N` unrefuted before `2N - 1` holds at every step; the learner given the
   bound is refuted nowhere and right from `2N - 1` on, and none can always speak sooner; the
   liar's rhythm is derived; a world answering that learner exceeds the bound. The learner not

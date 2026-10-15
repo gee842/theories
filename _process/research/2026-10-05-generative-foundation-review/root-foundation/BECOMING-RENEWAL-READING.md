@@ -8055,6 +8055,36 @@ Integration: §9 的 Continuation、LossMatching、Retrodiction、ProtocolInstan
 
 **边界。** 只改文字、名字与说明；定理陈述与证明不变，所以每条声明的公理报告不变。
 
+## 126. 有界记录的长度对每一对界恰好（P83b）
+
+2026-10-15，P83 自己的下一步（[identification-where-bounded](../../../../theories/becoming/results/records/identification-where-bounded.md) 的 next_delta 第一项），按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）。§97 证明：至多 N 与 N′ 个状态的两段所识的历史，在 N + N′ − 1 之前相同就处处相同（`bounded_agree`），但更短的不够只在 N = 1（`record_short`）与 N = N′（`record_short_twice`）时证明。本节对每一对界证明更短的不够。`Becoming.Identification` 增加一项定理，不加导入，不改已有声明；不加公理，除了两个界与两个不同的值不加前提。工作板上认领为 P83b。
+
+```text
+Result(s): 复用 identification-where-bounded（Identification.lassoPos_early、lassoPos_period、periodic_whole、mark、
+           statesBelow_iff_lasso、record_eq_iff）；learning-by-refutation（Learning.holdFrom、holdFrom_before、
+           holdFrom_after、holdFrom_lasso、Lasso、record、lassoNext）；recurrence-without-premise（Law.orbit、gap_of_le）；
+           不新增记录
+Delta: Identification.bounded_agree_exact
+Supplied premises / correspondence: 不加公理；两个不同的值；两个界写在定理中（StatesBelow o (M + 1)、StatesBelow o' (M' + 1)）
+Evidence: scratch_build 对 main 69ba40bd：Becoming.Identification 43 项定理、55 项声明，公理报告全部为空；合并检查器回执待整合者的运行
+Boundary: 只陈述两段历史各有其界；同一历史的两个时刻、同一世界的两个配置的更锐的界（Moore）没有陈述；有分支的框架下以类的数目为界的
+          深度没有陈述；不含伦理谓词
+Integration: identification-where-bounded 的恰好性由“只在 N = 1 与 N = N′”扩展到每一对界，next_delta 的第一项完成
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Identification.bounded_agree_exact` | **对每一对界，长度 N + N′ − 1 恰好。** 给出两个值，对每个 M、M′，有至多 M + 1 个状态的历程与至多 M′ + 1 个状态的历程，长 M + M′ 的记录相同而在第 M + M′ 步不同。前者以周期 M + 1 标记，标记放在第 M + M′ 步，所以第 M′ 到 M + M′ − 1 步都不标记；后者在第 M′ 步之前随前者，从第 M′ 步起不标记。M = 0 时是 `record_short` 的陈述，M = M′ 时是 `record_short_twice` 的陈述 |
+
+**它回答了什么。** 至多 N 与 N′ 个状态的两段所识的历史，长 N + N′ − 1 的记录确定它们（`bounded_agree`）；对每一对界，长 N + N′ − 2 的记录都不确定（`bounded_agree_exact`）。所以这个长度不是证明方法的产物，而由两个界本身给出：记录少一步，就有两段都在界内的历程分不开。分不开的两段并不特别：一段循环，一段停下。两者在第 M′ 步之前相同；之后一段继续循环，到循环的标记处才标记，另一段停在不标记处。最晚的分歧在一个循环之后。把两个系统合起来看（至多 N + N′ 个状态），这正是 Moore（1956）的界，这里它对每一对界都被达到。
+
+**作者反审。**
+1. **已知的结果。** Fine 与 Wilf 的极值构造在两个周期互素时给出纯周期的情形；这里用一个周期历程与一个最终常值的历程，对每一对界都成立，构造更简单。两个自动机等价所需观察长度的恰好性在自动机理论中已知。增量是：在核心中不用公理陈述，并与 §97 连成一体。
+2. **只对两段各有其界的历史。** 同一历史的两个时刻（`sameAhead_iff_below` 用 2N − 1）、同一世界的两个配置，界更锐（Moore：N − 1 步的观察），没有陈述。有分支的框架上，`Becoming.Likeness` 给出以配置对的数目为界的深度（`AlikeTo.steady_within`），以类的数目为界的更锐的深度没有陈述。
+3. **两个值。** 只有一个值时一切历程相同；定理以两个不同的值为条件，与 `record_short`、`record_short_twice` 相同。
+
+**检查。** 在暂存区对 main（69ba40bd）编译：`Becoming.Identification` 43 项定理、55 项声明，没有错误或警告，公理报告全部为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。证明不用 `Nat` 的取模与减法引理：标记的位置由 P73 的套索世界（`lassoPos_early`、`lassoPos_period`）与 `periodic_whole` 给出，移位 M·M′ 使第 M′ 步落在循环的开头。合并检查器在整合者的运行中检查。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -9338,3 +9368,5 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **Scope (G3–G5).** Substitution preserves consumption "exactly" under every such transformation (`Web.consumingIn_kept_iff`); the bracket law needs the relation to take two values and the end controls to read the same (`bracket_settles_iff`); `pending_before` gives "every shorter run leaves it pending", and "no shorter run finishes" needs pending and finished to exclude each other (`not_done_before`).
 - **Presentation (G6, G7).** Reading at episode time keeps a missed claim missed by the definition of `ReadsAt`, so whether an actual frame reads at episode time is the premise (`not_readsAt_of_recovery`). The support-gated family's balance as a flow holds by construction, since the focal take is defined as what the step removes; the instance's content is the given amounts and the family's arithmetic.
 - **Names (G8–G11).** Market words become structural ones: `Flow.surplus_raises_at`, `Flow.surplus_bounded_at` → `net_give_raises_at`, `net_give_bounded_at`; `SupportGated.surplus`, `surplus_active`, `surplus_step` → `netGive`, `netGive_active`, `netGive_step`; `ProtocolInstances.charge_some`, `charge_none` → `unit_drawn`, `stalls_unsupported`; "joint surplus" → "joint net giving", "funded completion" → "supported completion", "cost one level" → "lower the level by one", "costs the stock a unit" → "takes one unit of the stock". Old machines keep their names. Statements and proofs are unchanged.
+
+**Exactness of the bounded record for every pair of bounds, P83b (15 October 2026).** P83's own next step, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October. Section 97 proved that histories with at most N and N′ states are fixed by their record before N + N′ − 1, and that no shorter record does for N = 1 and N = N′. Section 126 shows it for every pair: given two values, for all M and M′ a history with at most M + 1 states and one with at most M′ + 1 share their record before M + M′ and differ at M + M′ (`Identification.bounded_agree_exact`). The first marks one step in every M + 1, with a mark at M + M′; the second follows it before M′ and then stays unmarked. One theorem is added to `Becoming.Identification`, with no new import, no existing statement changed and no axiom. For the two systems taken together this is Moore's bound, attained for every pair. The sharper bound within one history or one world, and for branching frames a depth bounded by the number of classes rather than of pairs, are not stated. Scratch build: 43 theorems, 55 declarations, empty axiom reports; the consolidated receipt follows the integrator's run. Not yet independently reviewed.

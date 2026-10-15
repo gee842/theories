@@ -26,9 +26,12 @@ states. With no premise beyond the bound:
   `N + N' - 1` agree at every step (`bounded_agree`): their records before `N + N' - 1` fix
   them (`record_fixes`). Before `N + N' - 2` they do not: for every `T` a history with one
   state and one with `T + 1` share their record before `T` and differ at `T`
-  (`record_short`), and for every `N ≥ 2` two histories with at most `N` states share their
-  record before `N + N - 2` and differ there (`record_short_twice`). Records are equal exactly
-  where the courses agree before their length (`record_eq_iff`).
+  (`record_short`), for every `N ≥ 2` two histories with at most `N` states share their
+  record before `N + N - 2` and differ there (`record_short_twice`), and for every `N` and `N'`
+  a history with at most `N` states and one with at most `N'` share their record before
+  `N + N' - 2` and differ there (`bounded_agree_exact`): the length `N + N' - 1` is exact for
+  every pair of bounds. Records are equal exactly where the courses agree before their length
+  (`record_eq_iff`).
 * **Induction is deduction where the bound is given.** On a history with at most `N` states, a
   lasso hypothesis within `N` that the record before `N + N - 1` bears out is the law of the
   whole course (`lasso_of_fits`, `bounded_induction`), and one always is
@@ -63,8 +66,9 @@ states. With no premise beyond the bound:
 
 The world in these statements is any world a list holds: a controller or a cognition inside it
 is part of what is registered, as in `Becoming.Description`'s `Law.adaptive_identifiesAlike_iff`.
-The bound `N + N' - 1` is the one of Fine and Wilf; the sharper bound for two moments of one
-history, or two configurations of one world (Moore, 1956), is not stated here.
+The bound `N + N' - 1` is the one of Fine and Wilf, and for two histories it is Moore's bound
+(1956) for the two systems taken together, attained for every pair of bounds; the sharper bound
+for two moments of one history, or two configurations of one world, is not stated here.
 -/
 
 namespace Becoming
@@ -416,6 +420,56 @@ theorem record_short_twice {x y : O} (two : x ≠ y) (M : Nat) :
     statesBelow_iff_lasso.mpr ⟨1, M, Nat.le_of_eq (congrArg (· + 1) (Nat.add_comm 1 M)), lasso'⟩,
     record_eq_iff.mpr agree,
     fun same => two (left.symm.trans (same.trans right))⟩
+
+/-- **The length `N + N' - 1` is exact for every pair of bounds.** Given two values, for all `M`
+and `M'`, a history with at most `M + 1` states and one with at most `M' + 1` share their record
+before `M + M'` and differ at `M + M'`. The first marks every `(M + 1)`-th step, placed so that
+the steps from `M'` to `M + M' - 1` are unmarked and step `M + M'` is marked; the second
+follows it before step `M'` and stays unmarked from then on. With `M = 0` this is
+`record_short`; with `M = M'` it is the case `N = N'` of `record_short_twice`. -/
+theorem bounded_agree_exact {x y : O} (two : x ≠ y) (M M' : Nat) :
+    ∃ o o' : Nat → O, StatesBelow o (M + 1) ∧ StatesBelow o' (M' + 1) ∧
+      Learning.record o (M + M') = Learning.record o' (M + M') ∧ o (M + M') ≠ o' (M + M') := by
+  let pos := Law.orbit (Learning.lassoNext 0 M) 0
+  have early : ∀ j, j ≤ M → pos j = j := fun j le =>
+    lassoPos_early (i := 0) (q := M) j
+      (Eq.subst (motive := fun k => j ≤ k) (Nat.zero_add M).symm le)
+  have period : ∀ u, pos (u + (M + 1)) = pos u := fun u =>
+    Eq.subst (motive := fun k => pos (k + (M + 1)) = pos k) (Nat.zero_add u)
+      (lassoPos_period (i := 0) (q := M) u)
+  have placed : ∀ j, j ≤ M → pos (M' + j + M * M') = j := fun j le =>
+    (congrArg pos ((congrArg (· + M * M') (Nat.add_comm M' j)).trans
+      ((Nat.add_assoc j M' (M * M')).trans (congrArg (j + ·)
+        ((Nat.add_comm M' (M * M')).trans (Nat.succ_mul M M').symm))))).trans
+      ((periodic_whole (x := pos) period j M').trans (early j le))
+  let o : Nat → O := fun n => mark 0 M M x y (n + M * M')
+  let o' : Nat → O := Learning.holdFrom o M' x
+  have lasso : Learning.Lasso o 0 M := fun u _ =>
+    congrArg (fun k => if k = M then y else x)
+      ((congrArg pos (Nat.add_right_comm u (M + 1) (M * M'))).trans (period (u + M * M')))
+  have agree : ∀ n, n < M + M' → o n = o' n := fun n lt =>
+    match Nat.lt_or_ge n M' with
+    | .inl before => (Learning.holdFrom_before o x before).symm
+    | .inr after =>
+      match gap_of_le after with
+      | ⟨j, at_n⟩ =>
+        have short : j < M :=
+          Nat.lt_of_add_lt_add_left
+            (Eq.subst (motive := fun k => k < M' + M) at_n
+              (Eq.subst (motive := fun k => n < k) (Nat.add_comm M M') lt))
+        have unmarked : o n = x := if_neg fun marked =>
+          Nat.ne_of_lt short ((placed j (Nat.le_of_lt short)).symm.trans
+            ((congrArg (fun k => pos (k + M * M')) at_n).symm.trans marked))
+        unmarked.trans (Learning.holdFrom_after o x after).symm
+  have marked : o (M + M') = y :=
+    if_pos ((congrArg (fun k => pos (k + M * M')) (Nat.add_comm M M')).trans
+      (placed M (Nat.le_refl M)))
+  have stays : o' (M + M') = x := Learning.holdFrom_after o x (Nat.le_add_left M' M)
+  exact ⟨o, o',
+    statesBelow_iff_lasso.mpr ⟨0, M, Nat.le_of_eq (congrArg (· + 1) (Nat.zero_add M)), lasso⟩,
+    statesBelow_iff_lasso.mpr ⟨M', 0, Nat.le_refl (M' + 1), Learning.holdFrom_lasso o M' x⟩,
+    record_eq_iff.mpr agree,
+    fun same => two (stays.symm.trans (same.symm.trans marked))⟩
 
 /-- A later stretch of a history with at most `N` states has at most `N` states. -/
 theorem statesBelow_shift {o : Nat → O} {N : Nat} (bound : StatesBelow o N) (t : Nat) :

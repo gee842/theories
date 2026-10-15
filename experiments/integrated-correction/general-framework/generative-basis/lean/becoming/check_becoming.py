@@ -1340,7 +1340,7 @@ SCOPE = (
     "back after Q steps at every step, and two lassos agreeing before (i + q + 1) + (i' + q') agree "
     "everywhere; a history has at most N states exactly where it is a lasso within N, histories with "
     "at most N and N' states agreeing before N + N' - 1 agree everywhere, records are equal exactly "
-    "where courses agree before their length, and for N = 1 and for N = N' two such histories share "
+    "where courses agree before their length, and for every N and N' two such histories share "
     "their record before N + N' - 2 and differ there; on a history with at most N states a lasso "
     "within N holding before 2N - 1 holds everywhere, the learner given N is refuted nowhere and "
     "right from 2N - 1 on, no learner refuted nowhere claims at 2N - 2 on every such history, the "
