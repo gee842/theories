@@ -119,10 +119,12 @@ FORMS = {
     'ExchangeLaw.Nonanticipating.through_of_observed': '`ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
     'ExchangeLaw.Nonanticipating.through_sensitive': '`ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
     'comparison_through_sensitivity': '`comparison_of_courses`（经律所经的识，不判定 / through a registration the law reads through, no decision, P80）',
-    # 2026-10-15, P83c
-    'Law.sameFuture_iff_classes': '`Law.sameFuture_classes_unrefuted`（不判定，不被否证 / no decision, refuted by '
+    # 2026-10-15, P83c; the forms with no premise from P83d
+    'Law.sameFuture_iff_classes': '`Law.sameFuture_iff_within`（N − 1，无前提，判定位置 / no premise, positions '
+                                  'decided）；`Law.sameFuture_classes_unrefuted`（不判定，不被否证 / no decision, refuted by '
                                   'nothing）；`Law.sameFuture_iff_below`（2N − 1，无前提 / no premise）',
-    'Identification.sameAhead_iff_classes': '`Identification.sameAhead_iff_below`（2N − 1，无前提 / no premise）',
+    'Identification.sameAhead_iff_classes': '`Identification.sameAhead_iff_within`（N − 1，无前提，判定位置 / no premise, '
+                                            'positions decided）；`Identification.sameAhead_iff_below`（2N − 1，无前提 / no premise）',
 }
 
 # Why a statement depends on decidedness: the decidability-taking definitions it mentions (Lean's `ment` column).

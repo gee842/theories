@@ -153,6 +153,22 @@
         "Becoming.Refining.steady_within",
         "Becoming.not_not_within"
       ]
+    },
+    {
+      "zh": "Moore 界不加前提：确定的律下，N 个成员的列表对律封闭时，两个成员的所识的未来相同，恰当它们在 N − 1 步内相同，不判定任何值。判定的是位置，不是值：律在列表的位置上读出（Law.orbit_memberAt；有限多个存在一并选出，不用选择公理），位置的相同是已定的；把记录中的一致在每一步所连的两个位置逐对合并（Law.merge、Law.joinOrbits），得到位置的一个标记，每个标记只有一个值（Law.joinOrbits_sound）；这个标记在 N − 1 步内一致，值已定的 Moore 界对它成立，再回到值。至多 N 个状态的历史的两个时刻，恰在 N − 1 步内相同时是同一状态，同样不加前提。",
+      "en": "Moore's bound with no premise: under a determined law on a list of N members closed under it, two members have the same registered future exactly where they agree for N − 1 steps, with no value compared decidedly. What is decided is the positions, not the values: the law is read on the positions of the list (Law.orbit_memberAt; finitely many existences chosen together, with no axiom of choice), whose equality is decided; joining, pair by pair, the two positions the record's agreement joins at each step (Law.merge, Law.joinOrbits) gives a labelling of the positions whose labels have one value each (Law.joinOrbits_sound); the labelling agrees for N − 1 steps, Moore's bound with decided values holds for it, and it carries over to the values. Two moments of a history with at most N states are one state exactly where they agree for N − 1 steps, with no premise too.",
+      "declarations": [
+        "Becoming.Law.orbit_memberAt",
+        "Becoming.Law.choose_below",
+        "Becoming.Law.merge",
+        "Becoming.Law.SoundFor",
+        "Becoming.Law.merge_sound",
+        "Becoming.Law.joinOrbits",
+        "Becoming.Law.joinOrbits_sound",
+        "Becoming.Law.joinOrbits_joins",
+        "Becoming.Law.sameFuture_iff_within",
+        "Becoming.Identification.sameAhead_iff_within"
+      ]
     }
   ],
   "hypotheses": [
@@ -169,19 +185,14 @@
       "en": "Only determined laws and single registered courses are stated; branching frames and probabilities are not."
     },
     {
-      "zh": "Moore 界（Law.sameFuture_iff_classes、Identification.sameAhead_iff_classes）要成员的值两两判定相同（对列表中的每一对，Decided，不要判定程序）；Law.sameFuture_classes_unrefuted 不要，只说处处相同不被否证。",
-      "en": "Moore's bound (Law.sameFuture_iff_classes, Identification.sameAhead_iff_classes) needs the members' values compared decidedly (Decided for each pair of the list, no decision procedure); Law.sameFuture_classes_unrefuted does not, and states only that agreeing everywhere is refuted by nothing."
+      "zh": "Moore 界以类计的形式（Law.sameFuture_iff_classes、Identification.sameAhead_iff_classes）要成员的值两两判定相同（对列表中的每一对，Decided，不要判定程序）；Law.sameFuture_iff_within 与 Identification.sameAhead_iff_within 不要：它们判定位置（Nat 的相等），不判定值。Law.sameFuture_classes_unrefuted 不要，只说处处相同不被否证。",
+      "en": "Moore's bound in its counting form (Law.sameFuture_iff_classes, Identification.sameAhead_iff_classes) needs the members' values compared decidedly (Decided for each pair of the list, no decision procedure); Law.sameFuture_iff_within and Identification.sameAhead_iff_within do not: they decide positions (equality in Nat), not values. Law.sameFuture_classes_unrefuted does not, and states only that agreeing everywhere is refuted by nothing."
     }
   ],
   "does_not_show": [
     {
       "zh": "界必须给出。",
       "en": "The bound must be given.",
-      "kind": "scope"
-    },
-    {
-      "zh": "不判定时 Moore 界 N − 1 是否成立没有表明：不判定时只是不被否证；2N − 1 的界不需判定。",
-      "en": "Whether Moore's bound N − 1 holds with no decision is not shown: without one it is only refuted by nothing; the bound 2N − 1 needs none.",
       "kind": "scope"
     },
     {
@@ -209,8 +220,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Identification have empty axiom reports (receipt 20261013T094743.528770Z, some declarations under former names; the current bytes of Identification, Description and Unfolding bound by 20261013T204910.042715Z), and the checker verifies core purity. Author counterreview, with the scope of the independent review, in the integration note."
   },
   "next_delta": {
-    "zh": "未给定界的学习者的最优静止之步；不判定时 Moore 界 N − 1 是否成立；与 alike_iff_sameTests 的实例定理；Ren 对“按情境就是界”与有限名读法的判断。",
-    "en": "The optimal rest step of the learner not given the bound; whether Moore's bound N − 1 holds with no decision; the instance theorem to alike_iff_sameTests; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
+    "zh": "未给定界的学习者的最优静止之步；与 alike_iff_sameTests 的实例定理；Ren 对“按情境就是界”与有限名读法的判断。",
+    "en": "The optimal rest step of the learner not given the bound; the instance theorem to alike_iff_sameTests; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有记录确定下一个值；学习者静止这一点不被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。",
@@ -252,7 +263,10 @@
     "Becoming.Identification.sameAhead_iff_classes",
     "Becoming.Refining.steady_within",
     "Moore's bound",
-    "Moore 界"
+    "Moore 界",
+    "Becoming.Law.sameFuture_iff_within",
+    "Becoming.Identification.sameAhead_iff_within",
+    "Becoming.Law.joinOrbits_sound"
   ],
   "dependencies": [
     {
@@ -375,7 +389,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "9561618ae9d59955bbc164e7640da210e605061263151620dd155478c9a98a07",
+      "sha256": "bf3c0fc2d55f57dd16b882f8b163e5390f63c7237e17132a6f6ea8c2204c6fb4",
       "declarations": [
         "Becoming.Identification.residue",
         "Becoming.Identification.periodic_whole",
@@ -443,7 +457,24 @@
         "Becoming.Law.sameFuture_classes_unrefuted",
         "Becoming.Law.upto_length",
         "Becoming.Law.sameFuture_classes_exact",
-        "Becoming.Identification.sameAhead_iff_classes"
+        "Becoming.Identification.sameAhead_iff_classes",
+        "Becoming.Law.memberAt",
+        "Becoming.Law.memberAt_mem",
+        "Becoming.Law.position_of_mem",
+        "Becoming.Law.choose_below",
+        "Becoming.Law.orbit_memberAt",
+        "Becoming.Law.merge",
+        "Becoming.Law.SoundFor",
+        "Becoming.Law.merge_sound",
+        "Becoming.Law.merge_keeps",
+        "Becoming.Law.merge_joins",
+        "Becoming.Law.joinOrbits",
+        "Becoming.Law.joinOrbits_sound",
+        "Becoming.Law.joinOrbits_joins",
+        "Becoming.Law.le_of_mem_upto",
+        "Becoming.Law.lt_of_le_pred",
+        "Becoming.Law.sameFuture_iff_within",
+        "Becoming.Identification.sameAhead_iff_within"
       ]
     },
     {
@@ -529,13 +560,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "31088ed4f46d5fbfeffa39ffce01e3485e9f6fa65cb57ad2fbe9d10e3ca6575d",
+      "sha256": "d6a9c5e3206f6ea2798867cc565ce0c58647e1b85044d06845b83b4aec5c687a",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "d181a9e12fafa615caf9ea096671df0dcb6597f30276d571fe9b5679fbf333e7",
+      "sha256": "5436fd3ad87d3cf387877db3ccaddd69657545fbd17a47e208a31c81a2ae9ee3",
       "declarations": []
     },
     {
@@ -740,6 +771,10 @@
     {
       "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Recurrence.lean（整合 I3b：新增共同实现的界（WithinMoves.after_course、lost_together_not_returns）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83b 与 P83c（Identification、Likeness、Refinement）、整合 I3b（Granularity 及其桥接）与 Keeping 的 §9 各行，总数改据新回执）；Identification.lean（P83b 与 P83c：新增 bounded_agree_exact（N + N′ − 1 对每一对界恰好）与 Moore 界（sameFuture_iff_classes、sameAhead_iff_classes）；导入 Refinement；头注更新；原有陈述不变）；Refinement.lean。",
       "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Recurrence.lean (integration I3b: bounds on realizing a bundle together added (WithinMoves.after_course, lost_together_not_returns); earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for P83b and P83c (Identification, Likeness, Refinement), integration I3b (Granularity and its bridge) and Keeping, and the totals moved to the new receipt); Identification.lean (P83b and P83c: bounded_agree_exact (N + N′ − 1 exact for every pair of bounds) and Moore's bound (sameFuture_iff_classes, sameAhead_iff_classes) added; imports Refinement; docstring updated; earlier statements unchanged); Refinement.lean."
+    },
+    {
+      "zh": "2026-10-15 P83d：按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”与 2026-10-15 的“offer it to them, keep proving”，回答 next_delta 中的“不判定时 Moore 界 N − 1 是否成立”：成立，不加前提。新增第十四条规律（Law.sameFuture_iff_within、Identification.sameAhead_iff_within：判定位置而不判定值，经位置的逐对合并）；第四项假设写出这两条不要判定；删去“未表明”中“不判定时 Moore 界 N − 1 是否成立没有表明”一项与 next_delta 中的相应一项；Identification 的引用指向新字节并列出新声明（只增加声明，已有声明不变）；验证范围待整合者的核心检查器运行后重新指向。见整合文档 §130。断言的其余部分不变。",
+      "en": "2026-10-15 P83d: following Ren's ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’ of 12 October 2026 06:01 and ‘offer it to them, keep proving’ of 15 October, the next_delta item ‘whether Moore's bound N − 1 holds with no decision’ is answered: it holds, with no premise. A fourteenth law is added (Law.sameFuture_iff_within, Identification.sameAhead_iff_within: positions decided, not values, by joining positions pair by pair); the fourth hypothesis states that these two need no decision; the does_not_show item ‘whether Moore's bound N − 1 holds with no decision is not shown’ and the corresponding next_delta item are removed; the Identification reference points to the new bytes and lists the new declarations (declarations only added, earlier ones unchanged); the validation scope is re-pointed after the integrator's core checker run. See §130 of the integration note. The rest of the claim is unchanged."
     }
   ],
   "text_versions": [

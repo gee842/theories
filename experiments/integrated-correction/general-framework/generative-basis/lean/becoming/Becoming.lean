@@ -766,9 +766,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   at every step from `N + (2N - 1) * tri N` on, a step its record does not show. In a world a
   list holds, naming configurations by their registered futures for `2N - 1` steps makes sense
   and carries the law, with no quotient. Within one world or one history Moore's bound is
-  sharper: with the values decided, configurations have the same registered future exactly where
-  they agree for `N - 1` steps, exact for every `N ≥ 2`, and with no decision their agreeing at
-  every step is refuted by nothing. The readings are the AI's.
+  sharper: configurations have the same registered future exactly where they agree for `N - 1`
+  steps, exact for every `N ≥ 2`. With the values decided this is the count of classes; with no
+  premise the positions are decided instead of the values: joining, pair by pair, the positions
+  the agreements join gives a labelling whose labels have one value each, and the bound for the
+  labelling carries over. The readings are the AI's.
 * `Becoming.Learnable` (L4): what a learner can learn through its registration, with no
   premise. Two configurations with the same registered future give every learner the same
   record, so where their targets differ a claim is right on at most one, and a learner resting

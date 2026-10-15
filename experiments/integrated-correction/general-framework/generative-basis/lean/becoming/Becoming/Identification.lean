@@ -71,19 +71,30 @@ states. With no premise beyond the bound:
   of equivalences, each finer than the one before (`Law.agreeTo_refining`); members registering
   different values make two classes, each strict refinement adds one, and so the chain stops
   within `N - 2` (`Refining.steady_within` of `Becoming.Refinement`), after which, the law being
-  determined, it never refines again (`Law.AgreeTo.steady_on`). With no decision at all, that
-  they agree at every step is refuted by nothing (`Law.sameFuture_classes_unrefuted`); the
-  bound `2N - 1` above needs no decision. For every `N ≥ 2` the bound is exact: on a path of `N`
-  positions to a last one that stays, registering only whether the last is reached, the first
-  two positions agree for `N - 2` steps and differ at the next (`Law.sameFuture_classes_exact`).
-  Two moments of a history with at most `N` states whose values are decided are one state
-  exactly where they agree for `N - 1` steps (`sameAhead_iff_classes`).
+  determined, it never refines again (`Law.AgreeTo.steady_on`). For every `N ≥ 2` the bound is
+  exact: on a path of `N` positions to a last one that stays, registering only whether the last
+  is reached, the first two positions agree for `N - 2` steps and differ at the next
+  (`Law.sameFuture_classes_exact`). Two moments of a history with at most `N` states whose
+  values are decided are one state exactly where they agree for `N - 1` steps
+  (`sameAhead_iff_classes`).
+* **Moore's bound needs no decision.** What is decided is the positions, not the values. Read
+  on the positions of the list, the law is a law on positions (`Law.orbit_memberAt`), whose
+  equality is decided. Joining, pair by pair, the positions the agreements join
+  (`Law.joinOrbits`) gives a labelling of the positions whose labels have one value each
+  (`Law.joinOrbits_sound`); the labelling's agreements are its own, and Moore's bound for it
+  carries over to the values. So two members of a list of `N` members closed under a determined
+  law have the same registered future exactly where their registered futures agree for `N - 1`
+  steps, with no premise (`Law.sameFuture_iff_within`), and two moments of a history with at
+  most `N` states are one state exactly where they agree for `N - 1` steps
+  (`sameAhead_iff_within`). Before this, with no decision, the agreement at every step was only
+  refuted by nothing (`Law.sameFuture_classes_unrefuted`).
 
 The world in these statements is any world a list holds: a controller or a cognition inside it
 is part of what is registered, as in `Becoming.Description`'s `Law.adaptive_identifiesAlike_iff`.
 The bound `N + N' - 1` is the one of Fine and Wilf, and for two histories it is Moore's bound
 (1956) for the two systems taken together, attained for every pair of bounds. Within one world,
-or one history, the configurations share their classes, and Moore's bound is `N - 1`.
+or one history, the configurations share their classes, and Moore's bound is `N - 1`, with no
+premise.
 -/
 
 namespace Becoming
@@ -1107,9 +1118,9 @@ theorem sameFuture_iff_classes {l : List S} (closed : ∀ s, s ∈ l → next s 
             agree m (le_pred_of_succ_le (Nat.le_trans (Nat.add_le_add_right le 2) bound))))
           n (Nat.le_add_left n k)⟩
 
-/-- **Moore's bound with no premise: refuted by nothing.** Under a determined law, that two
-members of a list of `N` members closed under the law, agreeing for `N - 1` steps, agree at a
-step is refuted by nothing. -/
+/-- **Moore's bound, refuted by nothing.** Under a determined law, that two members of a list of
+`N` members closed under the law, agreeing for `N - 1` steps, agree at a step is refuted by
+nothing. `sameFuture_iff_within` proves the agreement itself, with no premise. -/
 theorem sameFuture_classes_unrefuted {l : List S} (closed : ∀ s, s ∈ l → next s ∈ l) {s s' : S}
     (mem : s ∈ l) (mem' : s' ∈ l)
     (agree : ∀ n, n < l.length - 1 → o (Law.orbit next s n) = o (Law.orbit next s' n)) (n : Nat) :
@@ -1162,6 +1173,176 @@ theorem sameFuture_classes_exact {x y : R} (two : x ≠ y) (M : Nat) :
 
 end Classes
 
+/-! ## Moore's bound with no premise: positions decided, not values -/
+
+section Positions
+
+variable {next : S → S} {o : S → R}
+
+/-- The member at a position of a list, `d` past its end. -/
+def memberAt (d : S) : List S → Nat → S
+  | [], _ => d
+  | x :: _, 0 => x
+  | _ :: r, i + 1 => memberAt d r i
+
+theorem memberAt_mem (d : S) : ∀ {l : List S} {i : Nat}, i < l.length → memberAt d l i ∈ l
+  | [], _, lt => absurd lt (Nat.not_lt_zero _)
+  | _ :: r, 0, _ => List.Mem.head r
+  | x :: _, _ + 1, lt => List.Mem.tail x (memberAt_mem d (Nat.lt_of_succ_lt_succ lt))
+
+/-- A member of a list is at a position of it. -/
+theorem position_of_mem (d : S) : ∀ {l : List S} {x : S}, x ∈ l →
+    ∃ i, i < l.length ∧ memberAt d l i = x
+  | [], _, mem => nomatch mem
+  | _ :: _, _, mem => match mem_cons_split mem with
+    | .inl here => ⟨0, Nat.zero_lt_succ _, Eq.symm here⟩
+    | .inr later => match position_of_mem d later with
+      | ⟨i, lt, at_i⟩ => ⟨i + 1, Nat.succ_lt_succ lt, at_i⟩
+
+/-- Finitely many existences are chosen together. -/
+theorem choose_below {P : Nat → Nat → Prop} :
+    ∀ (m : Nat), (∀ i, i < m → ∃ k, P i k) → ∃ f : Nat → Nat, ∀ i, i < m → P i (f i)
+  | 0, _ => ⟨fun _ => 0, fun _ lt => absurd lt (Nat.not_lt_zero _)⟩
+  | m + 1, each =>
+    match choose_below m (fun i lt => each i (Nat.lt_succ_of_lt lt)), each m (Nat.lt_succ_self m) with
+    | ⟨f, holds⟩, ⟨k, at_m⟩ =>
+      ⟨fun i => if i < m then f i else k, fun i lt =>
+        match Nat.lt_or_ge i m with
+        | .inl inside => Eq.subst (motive := fun v => P i v)
+            (if_pos inside : (if i < m then f i else k) = f i).symm (holds i inside)
+        | .inr past => Eq.subst (motive := fun v => P i v)
+            (if_neg (fun inside => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le inside past)) :
+              (if i < m then f i else k) = k).symm
+            (Eq.subst (motive := fun j => P j k)
+              (Nat.le_antisymm (Nat.le_of_lt_succ lt) past).symm at_m)⟩
+
+/-- A law on the positions of a list carries the law on its members. -/
+theorem orbit_memberAt {l : List S} {d : S} {f : Nat → Nat}
+    (follows : ∀ i, i < l.length → f i < l.length ∧ next (memberAt d l i) = memberAt d l (f i))
+    {i : Nat} (lt : i < l.length) :
+    ∀ n, Law.orbit f i n < l.length ∧ Law.orbit next (memberAt d l i) n = memberAt d l (Law.orbit f i n)
+  | 0 => ⟨lt, rfl⟩
+  | n + 1 => match orbit_memberAt follows lt n with
+    | ⟨inside, at_n⟩ => ⟨(follows _ inside).1, (congrArg next at_n).trans (follows _ inside).2⟩
+
+/-- Relabel so that every position labelled as `b` is labelled as `a`. -/
+def merge (g : Nat → Nat) (a b : Nat) (i : Nat) : Nat := if g i = g b then g a else g i
+
+/-- A labelling of positions is sound for their values where positions of one label have one
+value. -/
+def SoundFor (v : Nat → R) (g : Nat → Nat) : Prop := ∀ i j, g i = g j → v i = v j
+
+/-- Merging two positions of one value keeps a labelling sound. -/
+theorem merge_sound {v : Nat → R} {g : Nat → Nat} {a b : Nat} (sound : SoundFor v g)
+    (same : v a = v b) : SoundFor v (merge g a b) := fun i j joined =>
+  match Nat.decEq (g i) (g b), Nat.decEq (g j) (g b) with
+  | isTrue at_i, isTrue at_j => (sound i b at_i).trans (sound j b at_j).symm
+  | isTrue at_i, isFalse off_j =>
+    (sound i b at_i).trans (same.symm.trans (sound a j
+      ((if_pos at_i : merge g a b i = g a).symm.trans
+        (joined.trans (if_neg off_j : merge g a b j = g j)))))
+  | isFalse off_i, isTrue at_j =>
+    (sound i a ((if_neg off_i : merge g a b i = g i).symm.trans
+      (joined.trans (if_pos at_j : merge g a b j = g a)))).trans
+      (same.trans (sound j b at_j).symm)
+  | isFalse off_i, isFalse off_j =>
+    sound i j ((if_neg off_i : merge g a b i = g i).symm.trans
+      (joined.trans (if_neg off_j : merge g a b j = g j)))
+
+/-- Merging keeps positions of one label together. -/
+theorem merge_keeps {g : Nat → Nat} {a b x y : Nat} (joined : g x = g y) :
+    merge g a b x = merge g a b y :=
+  match Nat.decEq (g x) (g b) with
+  | isTrue at_x => (if_pos at_x : merge g a b x = g a).trans
+      (if_pos (joined.symm.trans at_x) : merge g a b y = g a).symm
+  | isFalse off_x => (if_neg off_x : merge g a b x = g x).trans (joined.trans
+      (if_neg (fun at_y => off_x (joined.trans at_y)) : merge g a b y = g y).symm)
+
+/-- Merging joins the two positions merged. -/
+theorem merge_joins (g : Nat → Nat) (a b : Nat) : merge g a b a = merge g a b b :=
+  match Nat.decEq (g a) (g b) with
+  | isTrue at_a => (if_pos at_a : merge g a b a = g a).trans (if_pos rfl : merge g a b b = g a).symm
+  | isFalse off_a => (if_neg off_a : merge g a b a = g a).trans (if_pos rfl : merge g a b b = g a).symm
+
+/-- The labelling that joins, pair by pair, the positions two orbits of a law on positions reach
+at each of their first `k` steps. -/
+def joinOrbits (f : Nat → Nat) (p p' : Nat) : Nat → Nat → Nat
+  | 0 => fun i => i
+  | k + 1 => merge (joinOrbits f p p' k) (Law.orbit f p k) (Law.orbit f p' k)
+
+/-- Where the two orbits have one value at each of their first `k` steps, the labelling joining
+them is sound. -/
+theorem joinOrbits_sound {v : Nat → R} {f : Nat → Nat} {p p' : Nat} :
+    ∀ k, (∀ n, n < k → v (Law.orbit f p n) = v (Law.orbit f p' n)) →
+      SoundFor v (joinOrbits f p p' k)
+  | 0, _ => fun _ _ same => congrArg v same
+  | k + 1, agree => merge_sound (joinOrbits_sound k fun n lt => agree n (Nat.lt_succ_of_lt lt))
+      (agree k (Nat.lt_succ_self k))
+
+/-- The labelling joins the two orbits at each of their first `k` steps. -/
+theorem joinOrbits_joins {f : Nat → Nat} {p p' : Nat} :
+    ∀ k n, n < k → joinOrbits f p p' k (Law.orbit f p n) = joinOrbits f p p' k (Law.orbit f p' n)
+  | 0, _, lt => absurd lt (Nat.not_lt_zero _)
+  | k + 1, n, lt => match Nat.lt_or_ge n k with
+    | .inl inside => merge_keeps (joinOrbits_joins k n inside)
+    | .inr past => Eq.subst
+        (motive := fun m => joinOrbits f p p' (k + 1) (Law.orbit f p m) =
+          joinOrbits f p p' (k + 1) (Law.orbit f p' m))
+        (Nat.le_antisymm (Nat.le_of_lt_succ lt) past).symm (merge_joins _ _ _)
+
+theorem le_of_mem_upto : ∀ {m n : Nat}, n ∈ Learning.upto m → n ≤ m
+  | 0, _, mem => match mem_cons_split mem with
+    | .inl here => Nat.le_of_eq here
+    | .inr later => nomatch later
+  | _ + 1, _, mem => match mem_cons_split mem with
+    | .inl here => Nat.le_of_eq here
+    | .inr later => Nat.le_succ_of_le (le_of_mem_upto later)
+
+theorem lt_of_le_pred : ∀ {N i j : Nat}, j < N → i ≤ N - 1 → i < N
+  | 0, _, _, lt, _ => absurd lt (Nat.not_lt_zero _)
+  | _ + 1, _, _, _, le => Nat.lt_succ_of_le le
+
+/-- **Moore's bound with no premise: one world's configurations are told apart within `N - 1`
+steps.** Under a determined law, two members of a list of `N` members closed under the law have
+the same registered future exactly where their registered futures agree for `N - 1` steps. No
+value is compared decidedly. The law is read on the positions of the list, where equality is
+decided (`orbit_memberAt`); the positions the agreements join are joined, pair by pair, into a
+labelling of positions, each label of one value (`joinOrbits_sound`); and Moore's bound for the
+labelling (`sameFuture_iff_classes`) carries over to the values. -/
+theorem sameFuture_iff_within {l : List S} (closed : ∀ s, s ∈ l → next s ∈ l) {s s' : S}
+    (mem : s ∈ l) (mem' : s' ∈ l) :
+    Law.SameFuture next o s s' ↔
+      ∀ n, n < l.length - 1 → o (Law.orbit next s n) = o (Law.orbit next s' n) :=
+  ⟨fun same n _ => same n, fun agree =>
+    match choose_below (P := fun i k => k < l.length ∧ next (memberAt s l i) = memberAt s l k)
+        l.length (fun _ lt => match position_of_mem s (closed _ (memberAt_mem s lt)) with
+          | ⟨k, inside, at_k⟩ => ⟨k, inside, Eq.symm at_k⟩),
+      position_of_mem s mem, position_of_mem s mem' with
+    | ⟨f, follows⟩, ⟨p, inp, at_p⟩, ⟨p', inp', at_p'⟩ =>
+      have along : ∀ n, o (Law.orbit next s n) = o (memberAt s l (Law.orbit f p n)) := fun n =>
+        congrArg o ((congrArg (fun x => Law.orbit next x n) at_p).symm.trans
+          (orbit_memberAt follows inp n).2)
+      have along' : ∀ n, o (Law.orbit next s' n) = o (memberAt s l (Law.orbit f p' n)) := fun n =>
+        congrArg o ((congrArg (fun x => Law.orbit next x n) at_p').symm.trans
+          (orbit_memberAt follows inp' n).2)
+      have sound : SoundFor (fun i => o (memberAt s l i)) (joinOrbits f p p' (l.length - 1)) :=
+        joinOrbits_sound _ fun n lt => (along n).symm.trans ((agree n lt).trans (along' n))
+      have positions : ∀ i, i ∈ Learning.upto (l.length - 1) → f i ∈ Learning.upto (l.length - 1) :=
+        fun i inside => Learning.mem_upto
+          (le_pred_of_succ_le (follows i (lt_of_le_pred inp (le_of_mem_upto inside))).1)
+      have labelled := (sameFuture_iff_classes (next := f) (o := joinOrbits f p p' (l.length - 1))
+        positions (fun i j _ _ => match Nat.decEq (joinOrbits f p p' (l.length - 1) i)
+          (joinOrbits f p p' (l.length - 1) j) with
+          | isTrue same => .inl same
+          | isFalse differ => .inr differ)
+        (Learning.mem_upto (le_pred_of_succ_le inp)) (Learning.mem_upto (le_pred_of_succ_le inp'))).mpr
+        fun n early => joinOrbits_joins (l.length - 1) n
+          (Eq.subst (motive := fun L => n < L - 1) (upto_length (l.length - 1)) early :
+            n < l.length - 1 + 1 - 1)
+      fun n => (along n).trans ((sound _ _ (labelled n)).trans (along' n).symm)⟩
+
+end Positions
+
 end Law
 
 namespace Identification
@@ -1189,6 +1370,33 @@ theorem sameAhead_iff_classes {o : Nat → O} {N : Nat} (bound : StatesBelow o N
       have ahead : ∀ u k, o (Law.orbit next (Law.orbit next 0 u) k) = o (u + k) := fun u k =>
         (congrArg o (Law.orbit_add next 0 u k).symm).trans ((Learning.lasso_realized lasso).2 (u + k))
       have same := (Law.sameFuture_iff_classes (o := o) closed (fun p p' _ _ => values p p')
+        ((Learning.lasso_realized lasso).1 t) ((Learning.lasso_realized lasso).1 t')).mpr
+        fun n early =>
+          have early' : n < i + q :=
+            Eq.subst (motive := fun L => n < L - 1) (Law.upto_length (i + q)) early
+          (ahead t n).trans ((agree n (Nat.lt_of_lt_of_le early' (le_pred_of_succ_le within))).trans
+            (ahead t' n).symm)
+      fun n => (ahead t n).symm.trans ((same n).trans (ahead t' n))⟩
+
+/-- **Moore's bound for one history, with no premise.** On a history with at most `N` states, two
+moments are one state exactly where what is registered from them agrees for `N - 1` steps; no
+value is compared decidedly (`Law.sameFuture_iff_within`). -/
+theorem sameAhead_iff_within {o : Nat → O} {N : Nat} (bound : StatesBelow o N) {t t' : Nat} :
+    SameAhead o t t' ↔ ∀ n, n < N - 1 → o (t + n) = o (t' + n) :=
+  ⟨fun same n _ => same n, fun agree =>
+    match statesBelow_iff_lasso.mp bound with
+    | ⟨i, q, within, lasso⟩ =>
+      let next := Learning.lassoNext i q
+      have closed : ∀ p, p ∈ Learning.upto (i + q) → next p ∈ Learning.upto (i + q) := fun p _ =>
+        match Nat.lt_or_ge p (i + q) with
+        | .inl inside => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+            (if_pos inside : next p = p + 1).symm (Learning.mem_upto inside)
+        | .inr last => Eq.subst (motive := fun v => v ∈ Learning.upto (i + q))
+            (if_neg (fun inside => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le inside last)) : next p = i).symm
+            (Learning.mem_upto (Nat.le_add_right i q))
+      have ahead : ∀ u k, o (Law.orbit next (Law.orbit next 0 u) k) = o (u + k) := fun u k =>
+        (congrArg o (Law.orbit_add next 0 u k).symm).trans ((Learning.lasso_realized lasso).2 (u + k))
+      have same := (Law.sameFuture_iff_within (o := o) closed
         ((Learning.lasso_realized lasso).1 t) ((Learning.lasso_realized lasso).1 t')).mpr
         fun n early =>
           have early' : n < i + q :=
