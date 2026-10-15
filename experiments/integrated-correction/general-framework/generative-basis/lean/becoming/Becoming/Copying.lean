@@ -14,7 +14,9 @@ repeated doubling draws. The constructed copy machines of the periphery are inst
   word uses it (`Supplies`, a condition on each token's count). A copy of a word completes
   exactly when the pool supplies the word and the support covers what its attachments draw
   (`completes_iff`), and its product is then the word (`built_iff`); it then holds the word,
-  the pool without it, and the support less what was drawn (`copies`). With `r` left over to
+  the pool without it, and the support less what was drawn (`copies`). It leaves nothing in the
+  pool exactly when the pool holds each token exactly as often as the word uses it and the support
+  covers the draws (`empties_iff`). With `r` left over to
   release the product, exactly when the support covers the draws and `r` (`releases_iff`). A stalled copy stays where it stalled
   (`steps_fixed`).
 * **Copies from one shared pool.** Copying words in turn from one pool and support, every copy
@@ -444,6 +446,50 @@ theorem releases_iff (r : Nat) (prev : Option α) (built word pool : List α) (f
     by
       rw [copies draw prev built word pool free used supplies within]
       exact ⟨rfl, left⟩⟩
+
+/-- What the pool holds of each token once a supplied word is taken, with what the word used. -/
+theorem countOf_removeAll : ∀ (word pool : List α), Supplies word pool →
+    ∀ a, countOf a (removeAll word pool) + countOf a word = countOf a pool
+  | [], _, _, _ => rfl
+  | x :: xs, pool, supplies, a => by
+    have ⟨pos, rest⟩ := supplies_cons_iff.mp supplies
+    have taken := countOf_removeAll xs (remove x pool) rest a
+    show countOf a (removeAll xs (remove x pool)) + countOf a (x :: xs) = countOf a pool
+    match decEq x a with
+    | isTrue e =>
+      cases e
+      rw [countOf_self, ← Nat.add_assoc, taken, countOf_remove_self x pool pos]
+    | isFalse ne =>
+      rw [countOf_other ne, taken, countOf_remove_other ne pool]
+
+/-- A list is empty exactly when it holds no token. -/
+theorem nil_iff_countOf_zero : ∀ l : List α, l = [] ↔ ∀ a, countOf a l = 0
+  | [] => ⟨fun _ _ => rfl, fun _ => rfl⟩
+  | x :: xs => ⟨fun empty => (nomatch empty),
+      fun none => Nat.noConfusion ((countOf_self x xs).symm.trans (none x))⟩
+
+/-- **Exact copying that empties the pool.** A copy of a word completes with nothing left in the
+pool exactly when the pool holds each token exactly as often as the word uses it and the support
+covers what its attachments draw. -/
+theorem empties_iff (prev : Option α) (built word pool : List α) (free used : Nat) :
+    ((steps draw word.length ⟨prev, word, built, pool, free, used⟩).pending = [] ∧
+        (steps draw word.length ⟨prev, word, built, pool, free, used⟩).pool = []) ↔
+      (∀ a, countOf a word = countOf a pool) ∧ use draw prev word ≤ free :=
+  ⟨fun ⟨done, empty⟩ =>
+    have ⟨supplies, covered⟩ := supplied_of_completes draw prev built word pool free used done
+    have left : removeAll word pool = [] :=
+      (congrArg Scan.pool (copies draw prev built word pool free used supplies covered)).symm.trans empty
+    ⟨fun a => (Nat.zero_add _).symm.trans
+        (Eq.subst (motive := fun c => c + countOf a word = countOf a pool)
+          ((nil_iff_countOf_zero _).mp left a) (countOf_removeAll word pool supplies a)),
+      covered⟩,
+   fun ⟨same, covered⟩ =>
+    have supplies : Supplies word pool := fun a => Nat.le_of_eq (same a)
+    have done := copies draw prev built word pool free used supplies covered
+    ⟨congrArg Scan.pending done,
+     (congrArg Scan.pool done).trans ((nil_iff_countOf_zero _).mpr fun a =>
+        cancel_right (countOf a word)
+          ((countOf_removeAll word pool supplies a).trans ((same a).symm.trans (Nat.zero_add _).symm)))⟩⟩
 
 /-! ## Copies from one shared pool -/
 

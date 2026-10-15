@@ -13,6 +13,11 @@ when an observable and a law of change can still be read from what it keeps.
   enough (`decodes_iff_of_section`). On two configurations `π` merges, a decoder agreeing with
   `f` at both exists exactly when `f` agrees there (`decoder_pair_iff`); in particular `π` has no
   inverse on two different configurations it merges (`no_restore`).
+* **Judging a listed family.** A judge reading only the reduced value gives an observable at
+  every member of a listed family exactly when the observable goes alike across the members the
+  reduction merges (`judges_iff_lumpedOn`); the judge answers with the first listed member of each
+  reduced value, so no choice is used. So no judge reads through a reduction that merges two
+  members the observable tells apart (`no_judge_of_merged`).
 * **Futures through a reduction.** For a law that need not be determined, the law read through
   a reduction (`image`) takes from each reduced value exactly the words the configuration can
   take, for every configuration, exactly when configurations the reduction merges can take the
