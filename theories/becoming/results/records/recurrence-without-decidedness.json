@@ -218,7 +218,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "4c2e9f2ae10759656b821d96ed6d41e38f2de92e2a870f2c623cdcaa56b09ce9"
+      "sha256": "54c2c3de839ba9eeeb9b026798324eccd3e229421fd4216e497a079a959f4083"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -451,6 +451,10 @@
     {
       "zh": "2026年10月16日，I4b 第二项落地（研究第151节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第二项：§9 的 Becoming.Selection 一行（43 → 67 项定理，改为双语）与外围实例 SelectionRelabelCorrespondence 一行，外围实例的列举加入它；总数改据新回执）。",
       "en": "16 October 2026, landing I4b item 2 (study section 151): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 2: the §9 row of Becoming.Selection (43 → 67 theorems, now bilingual) and a peripheral-instance row for SelectionRelabelCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月16日，P118 落地（研究第152节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P118：所携带的差别怎样增长一对段落、§2 与 §8 的相应行、§9 的 Becoming.Loops 一行；总数改据新回执）。",
+      "en": "16 October 2026, landing P118 (study section 152): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P118: a paragraph pair on how a carried difference grows, the corresponding §2 and §8 lines, and the §9 row of Becoming.Loops; totals moved to the new receipt)."
     }
   ]
 }

@@ -2390,6 +2390,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean)
 
+## how-a-carried-difference-grows ← how-much-difference-arrives
+
+`formal-reuse` — 复用 carried、carriedGive、carried_succ、carried_le_succ、gap_le_carried、most_difference_arrives、gap、Flow.exchangeGap 与 ExchangeLaw.RespondsWithin：各阶是所携带的量的迭代，对一切律的陈述经 most_difference_arrives 与 gap_le_carried 得出。 / Reuses carried, carriedGive, carried_succ, carried_le_succ, gap_le_carried, most_difference_arrives, gap, Flow.exchangeGap and ExchangeLaw.RespondsWithin: the orders iterate the carried amount, and the statements for every law follow through most_difference_arrives and gap_le_carried.
+
+**Producer output / 上游输出:** 所携带的量及其一步；每个差至多是它，它是能到达的最大差别。 / The carried amount and its step; every gap is at most it, and it is the most difference that can arrive.
+
+**Consumer input / 下游输入:** 各阶、它们的界与回路上的增长；对一切律的多项式界与当且仅当。 / The orders, their bounds and the growth around loops; the polynomial bounds and the equivalence for every law.
+
+**Retained conditions / 保留条件:** 条件全部列出；对一切律时条件各列一次，条件的相等可判定只在证明中。 / Every condition listed; for every law, each condition listed once, with decided equality of conditions only in proofs.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean)
+
+## how-a-carried-difference-grows ← recurrence-without-premise
+
+`formal-reuse` — 复用 revisits_within、gap_of_le 与 gap_of_lt：与列表一样长的链两次经过同一个条件。 / Reuses revisits_within, gap_of_le and gap_of_lt: a chain as long as the list passes some condition twice.
+
+**Producer output / 上游输出:** 列表所持的序列在列表长度之内重访。 / A sequence held by a list revisits within the length of the list.
+
+**Consumer input / 下游输入:** 与列表一样长的耦合链经过回路。 / A chain of couplings as long as the list passes a loop.
+
+**Retained conditions / 保留条件:** 条件全部列出。 / Every condition listed.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
 ## how-much-difference-arrives ← counterfactual-is-the-course
 
 `formal-reuse` — 复用 ExchangeLaw、AgreeUpTo、GivesAlike、Nonanticipating、InsensitiveAt、Sensitive、Flow.Follows、levels、levels_succ、totals_under、course、course_balances_iff 与 course_follows：所携带的量由反事实进程的同一生成给出，强度为零恰是其不敏感。 / Reuses ExchangeLaw, AgreeUpTo, GivesAlike, Nonanticipating, InsensitiveAt, Sensitive, Flow.Follows, levels, levels_succ, totals_under, course, course_balances_iff and course_follows: the carried amount is given by the generation of the counterfactual course, and strength zero is exactly its insensitivity.

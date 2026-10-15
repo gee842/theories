@@ -212,8 +212,8 @@
    "en": "P111 and P112: imports Becoming.Gain and Becoming.Gluing, with two L3 module bullets; P110: the readings decided on the delegation folded into the bullets"
   },
   "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
-   "zh": "P111、P112：两行 L3（Gain、Gluing）与层内导入；P110：各行中依交托决定的读法写入；总数改据新回执",
-   "en": "P111 and P112: two L3 rows (Gain, Gluing) and the within-layer imports; P110: the readings decided on the delegation folded into the rows; totals moved to the new receipt"
+   "zh": "P111、P112：两行 L3（Gain、Gluing）与层内导入；P110：各行中依交托决定的读法写入",
+   "en": "P111 and P112: two L3 rows (Gain, Gluing) and the within-layer imports; P110: the readings decided on the delegation folded into the rows"
   },
   "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
    "zh": "P111、P112：Becoming.Gain 与 Becoming.Gluing 加入核心列表",
