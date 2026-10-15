@@ -162,6 +162,29 @@
         "Becoming.EndOfPath.classes_exact",
         "Becoming.alikeTo_registered_iff"
       ]
+    },
+    {
+      "zh": "检验即有界的记录：确定的律经登记读出时，N 个配置的列表持有的世界中，两个配置通过相同的检验，恰当它们所识的未来在 N − 1 步内相同（Law.sameTests_iff_within：检验固定相同，相同即所识的未来相同，那是 N − 1 步内的一致，Law.sameFuture_iff_within）；两个这样的世界（N 与 N′ 个配置）之间，恰当在 N + N′ − 1 步内相同（Law.sameTests_iff_below_across，经 Identification.bounded_agree）。两个经登记读出的律恰在所识的未来处处一致时相同（Law.alike_iff_agree）。不加前提。",
+      "en": "The tests are a bounded record: under a determined law read through a registration, in a world a list of N configurations holds, two configurations pass the same tests exactly where their registered futures agree for N − 1 steps (Law.sameTests_iff_within: tests fix likeness, likeness is the same registered future, and that is agreement for N − 1 steps, Law.sameFuture_iff_within); across two such worlds of N and N′ configurations, exactly where they agree for N + N′ − 1 steps (Law.sameTests_iff_below_across, through Identification.bounded_agree). Two laws read through registrations are alike exactly where their registered futures agree at every step (Law.alike_iff_agree). No premise.",
+      "declarations": [
+        "Becoming.Law.agree_bisimulation",
+        "Becoming.Law.alike_iff_agree",
+        "Becoming.Law.sameTests_iff_within",
+        "Becoming.Law.sameTests_iff_below_across"
+      ]
+    },
+    {
+      "zh": "两个有分支的框架之间深度 N + N′ − 1 对每一对恰好：每个配置只有一个动作、以该处所识命名、不主张什么的框架（Law.labelled）中，深度 k 的相同恰是 k 步内的一致（Law.alikeTo_labelled_iff），比所识作为主张时少一步；每个至多 N 个状态的历史是 N 个配置上的律的历程（Law.realized_within，其套索世界），这样的框架有限且已定（Law.labelled_finite）。由 Identification.bounded_agree_exact 的两个历程，对每个 N、N′ 有 N 与 N′ 个配置的这样的框架，其配置在深度 N + N′ − 2 相同而不相同（labelled_across_exact）；经登记读出时，有所识的未来在 N + N′ − 2 步内一致而不通过相同检验的配置（registered_across_exact），所以第十四条规律的长度 N + N′ − 1 也恰好。不加前提。",
+      "en": "Across two branching frames the depth N + N′ − 1 is exact for every pair: in a frame whose single move at each configuration is named by what is registered there and which claims nothing (Law.labelled), likeness to depth k is agreement for k steps (Law.alikeTo_labelled_iff), one step fewer than with the registration claimed; every history with at most N states is the course of a law on N configurations (Law.realized_within, its lasso world), and such a frame is finite and decided (Law.labelled_finite). From the two courses of Identification.bounded_agree_exact, for every N and N′ there are such frames of N and N′ configurations whose configurations are alike to depth N + N′ − 2 and not alike (labelled_across_exact); read through registrations, there are configurations whose registered futures agree for N + N′ − 2 steps and which do not pass the same tests (registered_across_exact), so the length N + N′ − 1 of the fourteenth law is exact too. No premise.",
+      "declarations": [
+        "Becoming.Law.labelled",
+        "Becoming.Law.alikeTo_labelled_iff",
+        "Becoming.Law.labelled_finite",
+        "Becoming.Law.orbit_fin",
+        "Becoming.Law.realized_within",
+        "Becoming.labelled_across_exact",
+        "Becoming.registered_across_exact"
+      ]
     }
   ],
   "hypotheses": [
@@ -182,11 +205,6 @@
     {
       "zh": "规律 9 的原则是否给出“一个已判定的族是否处处不成立已判定”或排中律，没有表明；表明它不给出需要核心之外的模型。",
       "en": "Whether the principle of law 9 gives that whether a decided family holds nowhere is decided, or excluded middle, is not shown; showing that it does not would take a model outside the core.",
-      "kind": "scope"
-    },
-    {
-      "zh": "两个有分支的框架之间深度 N + N′ − 1 是否恰好没有表明（一个框架之内 N − 1 恰好）。",
-      "en": "Whether the depth N + N′ − 1 is exact between two branching frames is not shown (within one frame N − 1 is).",
       "kind": "scope"
     }
   ],
@@ -224,8 +242,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Histories (receipt 20261013T094743.528770Z), of Becoming.Likeness (receipt 20261014T100026.593496Z) and of Becoming.Postponement (receipt 20261014T141427.442103Z) have empty axiom reports; the current bytes of Becoming.Unfolding are bound by 20261013T204910.042715Z; the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "zh": "外围中的一个模型：规律 9 的原则成立，而“一个已判定的族是否处处不成立已判定”不成立，以表明此原则较弱。两个有分支的框架之间深度 N + N′ − 1 的恰好性（以动作作为所识，由 Identification.bounded_agree_exact 的历程构造）。",
-    "en": "In the periphery, a model where the principle of law 9 holds and whether a decided family holds nowhere is not decided, showing the principle weaker. The exactness of the depth N + N′ − 1 between two branching frames (moves as what registers, built from the courses of Identification.bounded_agree_exact)."
+    "zh": "外围中的一个模型：规律 9 的原则成立，而“一个已判定的族是否处处不成立已判定”不成立，以表明此原则较弱。",
+    "en": "In the periphery, a model where the principle of law 9 holds and whether a decided family holds nowhere is not decided, showing the principle weaker."
   },
   "correspondence": {
     "zh": "读法（AI 的；Ren 2026-10-14 同意此方向）：线性检验看不到的恰是展开在何处分岔（规律 12）；只有分支的检验看得到。外围中像有限的模型的分支检验固定相同（same_iff_bisimilar，经典），经桥接（branching_bisimulation_iff）与核心的互模拟相连；核心中，在有限、已定的框架上它是构造性的，而对每个有限框架判定相同就是排中律。规律 9 的原则按标准名称是较小限定全知原则（LLPO），这里取递减族的形式；规律 11 的形式，即两个已判定存在式的德摩根律，是它的标准等价形式；“一个已判定的族是否处处不成立已判定”按标准名称是弱限定全知原则（WLPO）；Lean 名称保持结构性的，两者都不是前提。见整合文档 §98 与 Becoming.Likeness 一节。",
@@ -261,7 +279,14 @@
     "Becoming.alike_iff_alikeTo_across",
     "Becoming.EndOfPath.classes_exact",
     "likeness within the classes",
-    "在类数之内的相同"
+    "在类数之内的相同",
+    "Becoming.Law.sameTests_iff_within",
+    "Becoming.Law.sameTests_iff_below_across",
+    "Becoming.Law.alikeTo_labelled_iff",
+    "Becoming.labelled_across_exact",
+    "Becoming.registered_across_exact",
+    "the tests are a bounded record",
+    "检验即有界的记录"
   ],
   "dependencies": [
     {
@@ -291,8 +316,8 @@
       "id": "identification-where-bounded",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Becoming.Refinement 的 Refining、Refining.steady_within、DistinctUnder 与 le_pred_of_succ_le：深度的相同在类数之内停止。",
-        "en": "Reuses Refining, Refining.steady_within, DistinctUnder and le_pred_of_succ_le of Becoming.Refinement: likeness to depth stops within the classes."
+        "zh": "复用 Becoming.Refinement 的 Refining、Refining.steady_within、DistinctUnder 与 le_pred_of_succ_le：深度的相同在类数之内停止。复用 Law.sameFuture_iff_within、Identification.bounded_agree、bounded_agree_exact、statesBelow_iff_lasso、record_eq_iff 与 Law.statesBelow_held：检验即有界的记录，两个框架之间的深度恰好。",
+        "en": "Reuses Refining, Refining.steady_within, DistinctUnder and le_pred_of_succ_le of Becoming.Refinement: likeness to depth stops within the classes. Reuses Law.sameFuture_iff_within, Identification.bounded_agree, bounded_agree_exact, statesBelow_iff_lasso, record_eq_iff and Law.statesBelow_held: the tests are a bounded record, and the depth across two frames is exact."
       },
       "interface": {
         "output": {
@@ -644,6 +669,24 @@
       "role": "receipt",
       "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
+      "role": "proof",
+      "sha256": "4449bcc884d1be67ce87efa4936eea5e2b77908797d171e2c9c01eaa025b7313",
+      "declarations": [
+        "Becoming.Law.agree_bisimulation",
+        "Becoming.Law.alike_iff_agree",
+        "Becoming.Law.sameTests_iff_within",
+        "Becoming.Law.sameTests_iff_below_across",
+        "Becoming.Law.labelled",
+        "Becoming.Law.alikeTo_labelled_iff",
+        "Becoming.Law.labelled_finite",
+        "Becoming.Law.orbit_fin",
+        "Becoming.Law.realized_within",
+        "Becoming.labelled_across_exact",
+        "Becoming.registered_across_exact"
+      ]
     }
   ],
   "proof_bindings": [
@@ -700,6 +743,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Refinement",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T152724.599820Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Distinguishing",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -832,6 +882,10 @@
     {
       "zh": "2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P109：§8 中关系起点的进一步证明改为“动作在哪里形成已给出”，Ren 的选择增其读法；§9 一行（Becoming.Coupling）；总数改据新回执）。",
       "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P109: in §8 the further proof for the relational starting point becomes \"where a move is formed is given\" and Ren's choices gain its readings; one §9 row (Becoming.Coupling); the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-15 P83e：按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”与 2026-10-15 的“offer it to them, keep proving”，回答本记录 next_delta 中“两个有分支的框架之间深度 N + N′ − 1 的恰好性”与 identification-where-bounded 的“与 alike_iff_sameTests 的实例定理”：新增核心模块 Becoming.Distinguishing（导入 Identification 与 Likeness，不改已有模块）；新增第十四条规律（检验即有界的记录：一个世界 N − 1 步，两个世界 N + N′ − 1 步）与第十五条规律（动作承载所识的框架；两个框架之间深度 N + N′ − 1 与两个世界之间检验的长度对每一对恰好）；删去“未表明”中的相应一项与 next_delta 中的相应一句；新增 Distinguishing 的引用与证明绑定，对 identification-where-bounded 的依赖写出新复用（待整合者的核心检查器运行后重新指向）。见整合文档 §131。断言的其余部分不变。",
+      "en": "2026-10-15 P83e: following Ren's ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’ of 12 October 2026 06:01 and ‘offer it to them, keep proving’ of 15 October, this record's next_delta item ‘the exactness of the depth N + N′ − 1 between two branching frames’ and identification-where-bounded's ‘the instance theorem to alike_iff_sameTests’ are answered: the core module Becoming.Distinguishing is added (importing Identification and Likeness, changing no existing module), with a fourteenth law (the tests are a bounded record: N − 1 steps in one world, N + N′ − 1 across two) and a fifteenth (frames whose moves carry the registration; the depth N + N′ − 1 between two frames and the length of the tests across two worlds are exact for every pair); the corresponding does_not_show item and next_delta sentence are removed; the Distinguishing reference and proof binding are added, and the dependency on identification-where-bounded states the new reuse (re-pointed after the integrator's core checker run). See §131 of the integration note. The rest of the claim is unchanged."
     }
   ],
   "text_versions": [

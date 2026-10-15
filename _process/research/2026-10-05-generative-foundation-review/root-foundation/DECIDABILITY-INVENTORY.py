@@ -272,6 +272,8 @@ PROOF_KIND = {
     **{n: 'split' for n in ['Decided.exists_within', 'Refining.grow', 'Law.AgreeTo.decided']},
     **{n: 'find' for n in ['Refining.steady_or_grown', 'Refining.steady_within']},
     **{n: 'same' for n in ['Law.sameFuture_iff_classes', 'Identification.sameAhead_iff_classes']},
+    # 2026-10-15, P83e: a frame whose moves carry the registration is finite and decided
+    'Law.labelled_finite': 'same',
     # 2026-10-14, `Decided` binders read at default transparency (a decided proposition, not excluded middle)
     **{n: 'split' for n in [
         'Decided.and', 'Decided.not', 'Decided.imp', 'Decided.iff', 'Decided.of_not_not', 'Decided.exists_mem',

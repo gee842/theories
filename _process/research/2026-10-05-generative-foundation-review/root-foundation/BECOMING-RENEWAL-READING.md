@@ -8492,6 +8492,55 @@ theorem no_policy_upto_iff [DecidableEq K] [DecidableEq A] {g : Nat → K} {m : 
 
 **边界。** 落地运行须在 `check_becoming.py` 中编译与审计新模块，再把新记录绑定到回执。`DECIDABILITY-INVENTORY.py` 把 `policyUpto` 记作分辨相同的构造，把 `lumped_upto_iff` 记作只在证明中分辨相同，把 `no_policy_upto_iff` 与 `throughout_or_fails` 记作只在证明中找出一步。既有模块的字节不变。
 
+## 132. 区分：检验即有界的记录，两个框架之间的深度恰好（P83e）
+
+2026-10-15，两项开放问题：[identification-where-bounded](../../../../theories/becoming/results/records/identification-where-bounded.md) 的“与 `alike_iff_sameTests` 的实例定理”，与 [tests-fix-likeness-where-determined](../../../../theories/becoming/results/records/tests-fix-likeness-where-determined.md) 的“两个有分支的框架之间深度 N + N′ − 1 的恰好性”（§128 作者反审第 2 条）。依据 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）与 2026-10-15 的“offer it to them, keep proving”。工作板上认领为 P83e。此前没有模块同时导入 `Identification` 与 `Likeness`，所以新增核心模块 `Becoming.Distinguishing`，导入这两者，已有模块不改。不加公理，不加前提。
+
+```text
+Result(s): 复用 identification-where-bounded（Law.sameFuture_iff_within、Identification.bounded_agree、bounded_agree_exact、
+           statesBelow_iff_lasso、record_eq_iff、Law.statesBelow_held；Learning.lassoNext、lasso_realized）；
+           tests-fix-likeness-where-determined（SameTests、alike_iff_sameTests、Determined.alike_iff_sameTests、
+           AlikeTo、Alike.alikeTo、FiniteDecided、alikeTo_registered_iff、finBelow）；configurations-alike-by-relation
+           （Law.registered、Law.registered_determined、Law.alike_iff_sameFuture、Bisimulation、Alike）；不新增记录，
+           tests-fix-likeness-where-determined 增两条规律（第十四、十五条）
+Delta: Becoming.Distinguishing：Law.agree_bisimulation、Law.alike_iff_agree、Law.sameTests_iff_within、
+       Law.sameTests_iff_below_across、Law.labelled、Law.alikeTo_labelled_iff、Law.labelled_finite、Law.orbit_fin、
+       Law.realized_within、labelled_across_exact、registered_across_exact
+Supplied premises / correspondence: 不加公理，不加前提；世界被 N 个配置的列表持有写在定理中；labelled_finite 用配置与
+       名字的 DecidableEq（只用于给出 FiniteDecided，例中为 Fin 与 Bool）
+Evidence: scratch_build 对 P83d（06b21e3c，已落地为 ff1f2957）：Becoming.Distinguishing 10 项定理、11 项声明，公理报告为空；
+       核心检查器回执待整合者的运行
+Boundary: 一个世界之内检验的长度 N − 1 在整个世界被 N 个配置持有时是否恰好没有构造（在对律封闭的列表上恰好，
+       Law.sameFuture_classes_exact）；有分支的框架的深度界仍要 FiniteDecided；不含伦理谓词
+Integration: identification-where-bounded 的 next_delta “实例定理”与 tests-fix-likeness-where-determined 的
+       “两个框架之间的恰好性”完成；依赖方向不变（tests-fix-likeness-where-determined 依赖 identification-where-bounded）
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Law.agree_bisimulation`、`Law.alike_iff_agree` | 两个律经登记读出时，所识的未来处处一致是一个互模拟；所以它们恰在处处一致时相同（`Law.alike_iff_sameFuture` 的两个律的形式） |
+| `Law.sameTests_iff_within` | **检验即 N − 1 步的记录。** 确定的律经登记读出、N 个配置的列表持有世界时，两个配置通过相同的检验（每个动作的路线是否可走、走后能实现哪些主张），恰当所识的未来在 N − 1 步内相同：`Determined.alike_iff_sameTests`、`Law.alike_iff_sameFuture` 与 `Law.sameFuture_iff_within` 三者相连 |
+| `Law.sameTests_iff_below_across` | 两个这样的世界（N 与 N′ 个配置）之间，恰当在 N + N′ − 1 步内相同（`alike_iff_sameTests`、`Law.alike_iff_agree` 与 `Identification.bounded_agree`） |
+| `Law.labelled`、`Law.alikeTo_labelled_iff` | **动作承载所识。** 每个配置只有一个动作，以该处所识命名，到律的下一个，不主张什么。深度 k 的相同恰是 k 步内的一致；所识作为主张时是 k + 1 步（`alikeTo_registered_iff`），这里少一步，因为深度 0 不比较什么 |
+| `Law.labelled_finite` | 配置列出、配置与名字的相等可判定时，这样的框架有限且已定 |
+| `Law.orbit_fin`、`Law.realized_within` | **有界的历史是有限世界的历程。** 位置上留在 N 之下的律是 N 个配置上的律，轨道相同；所以至多 N 个状态的历史是 N 个配置上的律（其套索世界）从某个配置起的历程 |
+| `labelled_across_exact` | **两个框架之间深度 N + N′ − 1 恰好。** 由 `Identification.bounded_agree_exact` 的两个历程（至多 M + 1 与 M′ + 1 个状态，在 M + M′ 之前一致、在 M + M′ 处不同），得 N = M + 1 与 N′ = M′ + 1 个配置的两个这样的框架，有限且已定、被长 N 与 N′ 的列表持有，其起点在深度 N + N′ − 2 相同而不相同 |
+| `registered_across_exact` | 经登记读出时，同样的两个律有所识的未来在 N + N′ − 2 步内一致、却不通过相同检验的配置：`Law.sameTests_iff_below_across` 的长度恰好 |
+
+**它回答了什么。** 检验是无穷多的：每一条动作的路线，每一个主张。`Becoming.Histories` 表明它们在确定之处固定相同；`Becoming.Identification` 表明所识的未来由有界的记录固定。两者相连：在 N 个配置的世界中，无穷多的检验由 N − 1 个所识的值固定，两个世界之间由 N + N′ − 1 个。这就是 P83 的实例定理。
+
+**两个框架之间的恰好性。** §128 证明了一个框架之内 N − 1 恰好（`EndOfPath`，多出的一步来自死路），两个框架之间只给出界 N + N′ − 1。这里让动作本身承载所识：深度 k 的相同于是恰是 k 步内的一致，比所识作为主张时少一步。§126 的两个历程（Fine–Wilf 的界对每一对恰好）在 N 与 N′ 个配置上实现为这样的框架，所以两个框架之间的深度 N + N′ − 1 也对每一对恰好。三个恰好性于是是同一个：Fine–Wilf 的 N + N′ − 1（两段历史）、检验的长度 N + N′ − 1（两个经登记读出的世界）、深度 N + N′ − 1（两个有分支的框架），都由同两个历程见证。
+
+**读法（AI 的，待 Ren）。** 能把配置分开的，在有界的世界中是一个有限的记录，它的长度由配置的数目给出，恰好。说一个配置“是什么”（它通过的全部检验）就是说它接下来 N − 1 步所识的；不需要更多，也不能更少。
+
+**作者反审。**
+1. **已知的结果。** 有限自动机中，区分两个状态的实验的长度以状态数为界（Moore，1956），两个机器合起来读作一个时以状态数之和为界，界可达（文献中计数的约定可差一步）；检验与互模拟在确定的系统中一致也是已知的。增量是在核心中不用公理、不用判定地陈述，并把 `Histories`、`Identification` 与 `Likeness` 的三处连成一体。
+2. **一个世界之内检验的恰好性。** `Law.sameFuture_classes_exact` 在一个对律封闭的列表上给出 N − 1 的恰好性；一个整个被 N 个配置持有的世界中，检验的长度 N − 1 的恰好性这里没有构造（需要把那里的路径世界写在 Fin 上）。
+3. **`labelled_finite` 的可判定性。** 它要配置与名字的 `DecidableEq`，只用于给出 `FiniteDecided`；例中为 `Fin` 与 `Bool`，没有原则。可判定性清点中把它归为分辨相同。
+4. **名字。** `labelled`（动作被命名）、`realized_within`、`Distinguishing` 都是结构性的名字。
+
+**检查。** 在暂存区对 P83d 编译：`Becoming.Distinguishing` 10 项定理、11 项声明；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`；证明不用 `simp`、`omega`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -9813,3 +9862,5 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **No move needs supplying from outside the whole.** Every run of a labelled process is the part's course in a whole whose rest, a clock, forms its moves (`Run.withClock`), the counterpart for moves of `World.withRest`. A rest held by a list, under a law that is a function, forms exactly the moves that repeat from some step (`Run.moves_lasso_of_rest_held`, `Run.withLasso`), so moves that never settle into a cycle need a former that no list holds.
 - **What the record fixes.** Along a course the moves read as formed through the configurations exactly where some relation giving at most one move at each configuration gives them, with no decision (`lumped_iff_singleValued`); on a finite stretch with equality decided, no policy gives them exactly where a configuration recurs with the move varied (`no_policy_upto_iff`). Where nothing recurs every reading fits: a part keeping its history reads every move as its own (`Run.keepHistory_formed`), and one course is admitted by the part's law of the move and by the rest's (`TwoClocks.one_course_two_laws`), so, like requirement in `Becoming.Reading`, whose move it is belongs to the law. Experiment needs return (P53); attribution needs recurrence with variation.
 - **Readings (the AI's, pending Ren).** Acting and undergoing are one move read from its two sides; an input is the rest's configuration, and a label from outside is a move whose forming the representation leaves out; whose move it is, is a claim about courses not taken; reading more, more is one's own; closed is not own; novelty in what is done needs openness or growth.
+
+**Distinguishing: the tests are a bounded record, and the depth across two frames is exact, P83e (15 October 2026).** Two open items, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October and “offer it to them, keep proving” of 15 October: the instance theorem to `alike_iff_sameTests` (identification-where-bounded) and the exactness of N + N′ − 1 between two branching frames (tests-fix-likeness-where-determined). Section 131 adds the core module `Becoming.Distinguishing`, the first to import both `Identification` and `Likeness`; no existing module changes. Under a determined law read through a registration, in a world a list of N configurations holds, two configurations pass the same tests exactly where their registered futures agree for N − 1 steps (`Law.sameTests_iff_within`). Across two worlds of N and N′ configurations the length is N + N′ − 1 (`Law.sameTests_iff_below_across`). Infinitely many tests are fixed by finitely many registered values. Where each configuration's single move is named by what is registered there (`Law.labelled`), likeness to depth k is agreement for k steps (`Law.alikeTo_labelled_iff`). Every history with at most N states is the course of a law on N configurations (`Law.realized_within`). So the two courses of `Identification.bounded_agree_exact` give, for every N and N′, finite decided frames of N and N′ configurations alike to depth N + N′ − 2 and not alike (`labelled_across_exact`), and registered worlds agreeing for N + N′ − 2 steps that do not pass the same tests (`registered_across_exact`). One pair of courses thus witnesses three exactness results: Fine and Wilf's N + N′ − 1, the length of the tests across two worlds, and the depth across two branching frames. Not constructed: exactness of N − 1 for the tests of one world wholly held by N configurations. Scratch build: 10 theorems, 11 declarations, empty axiom reports. Not yet independently reviewed.

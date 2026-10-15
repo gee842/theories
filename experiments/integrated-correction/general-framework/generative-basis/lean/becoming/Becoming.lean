@@ -94,6 +94,7 @@ import Becoming.Copying
 import Becoming.Retrodiction
 import Becoming.CrossSituational
 import Becoming.Likeness
+import Becoming.Distinguishing
 import Becoming.Composition
 import Becoming.Joining
 import Becoming.Granularity
@@ -912,6 +913,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   within the number of pairs of configurations and, counting classes, within `N - 1` for one
   frame of `N` configurations, exactly, and `N + N' - 1` across two; deciding likeness for every
   finite frame is excluded middle.
+* `Becoming.Distinguishing` (L4): what tells configurations apart, and how deep, with no
+  premise. Under a determined law read through a registration, in a world a list of `N`
+  configurations holds, two configurations pass the same tests exactly where their registered
+  futures agree for `N - 1` steps, and across two worlds of `N` and `N'` configurations for
+  `N + N' - 1`. Where the single move at each configuration is named by what is registered there,
+  likeness to depth `k` is agreement for `k` steps, and every history with at most `N` states is
+  the course of a law on `N` configurations; so the depth `N + N' - 1` between two branching
+  frames, and the length `N + N' - 1` of the tests across two worlds, are exact for every pair.
+  The readings are the AI's.
 * `Becoming.Composition` (L3): a whole and the parts it holds together, one more relation among
   configurations of the same unfolding. Jointly alike configurations pass the same joint tests
   with no premise; where moves and pairs of parts are compact and the tests stable, passing the

@@ -220,8 +220,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Identification have empty axiom reports (receipt 20261013T094743.528770Z, some declarations under former names; the current bytes of Identification, Description and Unfolding bound by 20261013T204910.042715Z), and the checker verifies core purity. Author counterreview, with the scope of the independent review, in the integration note."
   },
   "next_delta": {
-    "zh": "未给定界的学习者的最优静止之步；与 alike_iff_sameTests 的实例定理；Ren 对“按情境就是界”与有限名读法的判断。",
-    "en": "The optimal rest step of the learner not given the bound; the instance theorem to alike_iff_sameTests; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
+    "zh": "未给定界的学习者的最优静止之步；Ren 对“按情境就是界”与有限名读法的判断。",
+    "en": "The optimal rest step of the learner not given the bound; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有记录确定下一个值；学习者静止这一点不被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。",
@@ -789,6 +789,10 @@
     {
       "zh": "2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P109：§8 中关系起点的进一步证明改为“动作在哪里形成已给出”，Ren 的选择增其读法；§9 一行（Becoming.Coupling）；总数改据新回执）。",
       "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P109: in §8 the further proof for the relational starting point becomes \"where a move is formed is given\" and Ren's choices gain its readings; one §9 row (Becoming.Coupling); the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-15 P83e：next_delta 中“与 alike_iff_sameTests 的实例定理”由 tests-fix-likeness-where-determined 的第十四条规律回答（Becoming.Distinguishing 的 Law.sameTests_iff_within：确定的律经登记读出时，N 个配置的世界中两个配置通过相同的检验，恰当所识的未来在 N − 1 步内相同；两个世界之间 N + N′ − 1，对每一对恰好），从 next_delta 移去。见整合文档 §131。规律、前提与证明绑定不变。",
+      "en": "2026-10-15 P83e: the next_delta item ‘the instance theorem to alike_iff_sameTests’ is answered by the fourteenth law of tests-fix-likeness-where-determined (Law.sameTests_iff_within of Becoming.Distinguishing: under a determined law read through a registration, in a world of N configurations two configurations pass the same tests exactly where their registered futures agree for N − 1 steps; across two worlds N + N′ − 1, exact for every pair) and is removed from next_delta. See §131 of the integration note. Laws, premises and proof bindings are unchanged."
     }
   ],
   "text_versions": [
