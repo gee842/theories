@@ -151,7 +151,7 @@ def apply(record):
 
 
 # Study sections, provisional until landing (the integrator renumbers).
-SECTION = {"P110": 139, "P111": 140, "P112": 141}
+SECTION = {"P110": 140, "P111": 141, "P112": 142}
 MARK = "P110（依 Ren 2026-10-15 的交托"
 
 

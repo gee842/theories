@@ -6,7 +6,7 @@ usage: python3 -B make_records.py ROOT [SECTION_P111 SECTION_P112]
 References are hashed from ROOT. The receipt references and the proof bindings are added at
 landing, so until then each record names "receipt bound at landing". The declarations listed in
 the laws are checked against the declarations of Becoming/Gain.lean and Becoming/Gluing.lean.
-The study sections default to the provisional 139 and 140 (P113 holds 137, P110 138).
+The study sections default to the provisional 141 and 142 (P114 holds 138, I4a 139, P110 140).
 """
 import hashlib
 import json
@@ -15,8 +15,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(sys.argv[1]).resolve()
-SECTION_GAIN = int(sys.argv[2]) if len(sys.argv) > 2 else 139
-SECTION_GLUE = int(sys.argv[3]) if len(sys.argv) > 3 else 140
+SECTION_GAIN = int(sys.argv[2]) if len(sys.argv) > 2 else 141
+SECTION_GLUE = int(sys.argv[3]) if len(sys.argv) > 3 else 142
 REC = ROOT / 'theories/becoming/results/records'
 BASE = 'experiments/integrated-correction/general-framework/generative-basis/lean/'
 LEAN = BASE + 'becoming/Becoming/'
