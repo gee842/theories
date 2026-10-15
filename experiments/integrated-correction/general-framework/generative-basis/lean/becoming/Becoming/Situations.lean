@@ -36,8 +36,9 @@ multiplication uses propositional extensionality.
 
 What is not derived: which situation is actual; weights that are not natural numbers. Signed
 weights cancel, and a count of situations does not (`Interference.cancels`,
-`counting_transfer_iff`). No ethical predicate, ranking or axiom occurs. The readings are the
-AI's, pending Ren.
+`counting_transfer_iff`). No ethical predicate, ranking or axiom occurs. Ren took the AI's readings of their words on
+16 October 2026 ("yes, i take those readings"): the core states what every situation obeys,
+the situation makes the actual change true, and a chance is a number of situations of a kind.
 -/
 
 namespace Becoming

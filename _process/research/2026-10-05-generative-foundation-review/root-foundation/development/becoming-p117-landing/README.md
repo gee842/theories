@@ -40,6 +40,19 @@ One commit on branch `p117-situations`. No theorem or declaration of an existing
     - the Parting.lean and Typicality.lean references are rehashed (header only), so their receipt bindings need the new receipt;
     - one history note each, keeping the former wording.
 
+## Ren took the readings (second commit)
+
+Ren, 16 October 2026: “yes, i take those readings”. A second commit on the branch records this. It is docs only, and no declaration changes:
+
+- the source file gains the message, and the directive line says the readings were taken;
+- "pending Ren" becomes "taken by Ren" for these readings in:
+  - the headers of Situations, Parting and Typicality, rebuilt and audited in scratch;
+  - the three Lean README rows;
+  - the chapter's two paragraph pairs, the two status rows and the identification item under Ren's choices, where the finite-name reading stays for Ren;
+  - the three records' correspondence, whose next_delta drops Ren's judgment, each with a history note;
+- study §144 gains "Ren's judgment" in both languages;
+- the references are rehashed.
+
 ## Landing
 
 `W` is the landing checkout.

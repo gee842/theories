@@ -41,8 +41,7 @@ runs do not part, from `N + N - 1` on; where they part, neither the record nor t
 which way the run goes. Ren, 16 October 2026: "we are describing what everything obeys, but at
 every moment, the actual change depends on the situation", and "the situation makes it true".
 Read so, a law that branches leaves open what the situation fixes: with the situation as the
-move, the law is determined (`Becoming.Situations`). This reading of Ren's words is the AI's,
-pending Ren.
+move, the law is determined (`Becoming.Situations`). Ren took this reading on 16 October 2026.
 -/
 
 namespace Becoming

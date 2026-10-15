@@ -46,7 +46,7 @@ ratio `p : q` exactly where `x = y`, and `(x - y)²`, stated without subtraction
 The AM–GM step `2·x·y ≤ x·x + y·y` is proved on the way (`two_mul_le`). The arithmetic uses
 the core's inductive forms of distributivity and associativity (`add_mul_split`,
 `mul_assoc_nat`, with `left_comm`), since the prelude's forms of these laws use propositional
-extensionality. The reading of Ren's words is the AI's, pending Ren.
+extensionality. Ren took the reading of their words on 16 October 2026.
 -/
 
 namespace Becoming

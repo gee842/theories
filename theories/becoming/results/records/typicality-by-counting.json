@@ -92,12 +92,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T173702.509759Z): the 44 declarations of Becoming.Typicality, 32 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 140; not independently reviewed."
   },
   "next_delta": {
-    "zh": "指数之界的集中与多于两个值；外围中实数权重作为实例；Ren 对读法的判断（机会是同类情境之数）。",
-    "en": "Concentration with exponential bounds, and more than two values; real weights in the periphery as an instance; Ren's judgment on the reading (a chance is a number of situations of a kind)."
+    "zh": "指数之界的集中与多于两个值；外围中实数权重作为实例。",
+    "en": "Concentration with exponential bounds, and more than two values; real weights in the periphery as an instance."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-15：“\"What this line doesn’t reach\" is also worth doing”，其中之一是有概率的世界。已知的结果：二项分布的切比雪夫不等式（伯努利的弱大数定律）。这里在核心中不用公理地给出，接到 Becoming.Weighted 的计数权重，并标出不被推出的前提。原先的 AI 读法“概率是计数加上发生的历程典型这一前提”已由 Ren 的说明取代。Ren 2026-10-16 对此：“we are describing what everything obeys, but at every moment, the actual change depends on the situation … the situation makes it true”。读法（AI 对 Ren 的话的读法，待 Ren）：自然数权重是走每一步的情境之数，大数定律计数情境，哪个情境发生由情境固定，不是计数（weights-count-situations）。",
-    "en": "Ren, 15 October 2026: “\"What this line doesn’t reach\" is also worth doing”, worlds with probability among it. Known result: Chebyshev's inequality for the binomial (Bernoulli's weak law of large numbers). Here it is given in the core with no axiom, joined to the counting weights of Becoming.Weighted, and the premise not derived is marked. The AI's first reading, “probability is counting plus the premise that the course which happens is typical”, is replaced following Ren's clarification. Ren, 16 October 2026, of this: “we are describing what everything obeys, but at every moment, the actual change depends on the situation … the situation makes it true”. Read so (the AI's reading of Ren's words, pending Ren): natural weights are the numbers of situations taking each step, the law of large numbers counts situations, and which situation happens is fixed by the situation, not by a count (weights-count-situations)."
+    "zh": "Ren 2026-10-15：“\"What this line doesn’t reach\" is also worth doing”，其中之一是有概率的世界。已知的结果：二项分布的切比雪夫不等式（伯努利的弱大数定律）。这里在核心中不用公理地给出，接到 Becoming.Weighted 的计数权重，并标出不被推出的前提。原先的 AI 读法“概率是计数加上发生的历程典型这一前提”已由 Ren 的说明取代。Ren 2026-10-16 对此：“we are describing what everything obeys, but at every moment, the actual change depends on the situation … the situation makes it true”。读法（AI 对 Ren 的话的读法，Ren 同日已取）：自然数权重是走每一步的情境之数，大数定律计数情境，哪个情境发生由情境固定，不是计数（weights-count-situations）。",
+    "en": "Ren, 15 October 2026: “\"What this line doesn’t reach\" is also worth doing”, worlds with probability among it. Known result: Chebyshev's inequality for the binomial (Bernoulli's weak law of large numbers). Here it is given in the core with no axiom, joined to the counting weights of Becoming.Weighted, and the premise not derived is marked. The AI's first reading, “probability is counting plus the premise that the course which happens is typical”, is replaced following Ren's clarification. Ren, 16 October 2026, of this: “we are describing what everything obeys, but at every moment, the actual change depends on the situation … the situation makes it true”. Read so (the AI's reading of Ren's words, which Ren took the same day): natural weights are the numbers of situations taking each step, the law of large numbers counts situations, and which situation happens is fixed by the situation, not by a count (weights-count-situations)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
   "aliases": [
@@ -251,7 +251,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "a6abad72e4d23c69e9342662dea542c7f1f1be0fc9c227d74bbdea8fa66f3b85",
+      "sha256": "2af8c3eafb4cbb791efb856fba9503c6f1fb4ba695d09fd20597e3e95b492f4d",
       "declarations": [
         "Becoming.Typicality.left_comm",
         "Becoming.Typicality.ones",
@@ -348,7 +348,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "role": "proof",
-      "sha256": "b11a3798e855a1810518618bbeff86749ddc03e55590979c78f2f64efff1fc9e",
+      "sha256": "d5c0a564062a3c5a98f5658176991e1ad72692b5387b7ca37e73e9ecc7cde9e1",
       "declarations": [
         "Becoming.Parting.freeRun",
         "Becoming.Parting.free_parts_after"
@@ -357,13 +357,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9d2ffddb76df3e6530ceabb43d89ff4754512569ae21016c00868032e2392779",
+      "sha256": "4fa415c72b068f6693aa34e450eb3e8d29de3f6f2223e8a9fa1b918b14d2bdd7",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "b03fe7244b16c99fede9f5d2bf97181ef5b36f8f32e9387a3827403361035b67",
+      "sha256": "dd2aff28f02d53397f05c8fe2f3dba2784bea54e6c89d13017f9854fbf21736e",
       "declarations": []
     },
     {
@@ -381,7 +381,7 @@
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md",
       "role": "provenance",
-      "sha256": "163eb096485bd3f2b0ef1e84c59a8d650924ddb274345497346b58f85d89f798",
+      "sha256": "389f7b68cc90e2b62afb8a360494fb1601572d22490563edc056ca1cf87ca058",
       "declarations": []
     }
   ],
@@ -444,6 +444,10 @@
     {
       "zh": "2026-10-16 P117：按 Ren 2026-10-16 的说明（“the situation makes it true”）以“机会是同类情境之数”取代读法“概率是计数加上发生的历程典型这一前提”，correspondence、next_delta 与 does_not_show 第一项改写；related 新增 weights-count-situations；Typicality.lean 只改模块说明中的读法，声明不变，落地时重新绑定回执；研究 §144。原 does_not_show 第一项：“……把权重读作机会者加上这一前提。”",
       "en": "16 October 2026, P117: following Ren's clarification of 16 October (“the situation makes it true”), the reading “probability is counting plus the premise that the course which happens is typical” is replaced by “a chance is a number of situations of a kind”; correspondence, next_delta and the first does_not_show item rewritten; related gains weights-count-situations; Typicality.lean changes only the reading in its module header, no declaration changes, and the receipt is rebound at landing; study section 144. The former first does_not_show item ended “reading weights as chances adds this premise”."
+    },
+    {
+      "zh": "2026-10-16：Ren 取了这些读法（“yes, i take those readings”）；correspondence 标为 Ren 已取，next_delta 去掉“Ren 对读法的判断”；研究 §144。原文：“读法（AI 对 Ren 的话的读法，待 Ren）”。",
+      "en": "16 October 2026: Ren took these readings (“yes, i take those readings”); correspondence marks them as taken and next_delta drops Ren's judgment on the readings; study section 144. Former wording: “Readings (the AI's reading of Ren's words, pending Ren)”."
     }
   ],
   "text_versions": []

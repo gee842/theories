@@ -94,12 +94,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 19 declarations of Becoming.Situations, 13 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 144; not independently reviewed."
   },
   "next_delta": {
-    "zh": "Ren 对读法的判断（核心陈述每个情境所遵从的；实际的变化由情境使之为真；机会是同类情境之数）；多于两个值；对任意过程按历程计数。",
-    "en": "Ren's judgment on the readings (the core states what every situation obeys; the situation makes the actual change true; a chance is a number of situations of a kind); more than two values; counting per course for every process."
+    "zh": "多于两个值的按历程计数与大数定律；对任意过程按历程计数（列出者无重复）。",
+    "en": "Counting per course and the law of large numbers for more than two values; counting per course for every process (listings without repetition)."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-16：“we are describing what everything obeys, but at every moment, the actual change depends on the situation … just saying we are all one doesn't make it true, the situation makes it true”，并问对机会的读法怎样处理。已知的结果：以同等可能的情况之数读概率（拉普拉斯），以微观状态之数读宏观的权重（玻尔兹曼），非确定的系统是确定系统在更细状态上的投影。这里在核心中不用公理地给出，对每个过程，接到历史之和与大数定律。读法（AI 对 Ren 的话的读法，待 Ren）：核心陈述每个情境所遵从的；实际的变化由情境使之为真；分支的律是忘掉情境的确定的律；机会是同类情境之数，陈述它不需要典型的前提。AI 的注：相消与语境处，使之为真的情境须包括读它的语境。",
-    "en": "Ren, 16 October 2026: “we are describing what everything obeys, but at every moment, the actual change depends on the situation … just saying we are all one doesn't make it true, the situation makes it true”, asking what this means for the reading of chance. Known results: probability as a number of equally possible cases (Laplace), macroscopic weights as numbers of microstates (Boltzmann), a nondeterministic system as the projection of a deterministic one on finer states. Here it is given in the core with no axiom, for every process, joined to the sum over histories and the law of large numbers. Readings (the AI's reading of Ren's words, pending Ren): the core states what every situation obeys; the situation makes the actual change true; a branching law is a determined law with the situation forgotten; a chance is a number of situations of a kind, and stating it needs no premise of typicality. The AI's note: where weights cancel or readings depend on context, the situation that makes it true must include the context of the reading."
+    "zh": "Ren 2026-10-16：“we are describing what everything obeys, but at every moment, the actual change depends on the situation … just saying we are all one doesn't make it true, the situation makes it true”，并问对机会的读法怎样处理。已知的结果：以同等可能的情况之数读概率（拉普拉斯），以微观状态之数读宏观的权重（玻尔兹曼），非确定的系统是确定系统在更细状态上的投影。这里在核心中不用公理地给出，对每个过程，接到历史之和与大数定律。读法（AI 对 Ren 的话的读法，Ren 2026-10-16 已取）：核心陈述每个情境所遵从的；实际的变化由情境使之为真；分支的律是忘掉情境的确定的律；机会是同类情境之数，陈述它不需要典型的前提。AI 的注：相消与语境处，使之为真的情境须包括读它的语境。",
+    "en": "Ren, 16 October 2026: “we are describing what everything obeys, but at every moment, the actual change depends on the situation … just saying we are all one doesn't make it true, the situation makes it true”, asking what this means for the reading of chance. Known results: probability as a number of equally possible cases (Laplace), macroscopic weights as numbers of microstates (Boltzmann), a nondeterministic system as the projection of a deterministic one on finer states. Here it is given in the core with no axiom, for every process, joined to the sum over histories and the law of large numbers. Readings (the AI's reading of Ren's words, taken by Ren on 16 October 2026): the core states what every situation obeys; the situation makes the actual change true; a branching law is a determined law with the situation forgotten; a chance is a number of situations of a kind, and stating it needs no premise of typicality. The AI's note: where weights cancel or readings depend on context, the situation that makes it true must include the context of the reading."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
   "aliases": [
@@ -198,7 +198,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
       "role": "proof",
-      "sha256": "8633797fc1ad5ccce41f6eb68ad763bf6103f23d89d392ac4b1c0a7318adc6f8",
+      "sha256": "d124a1b0a8dfdaa3cca0966c5517ea2766c3ddd368d9f727880e8a55178093b3",
       "declarations": [
         "Becoming.Situations.upto",
         "Becoming.Situations.sum_upto",
@@ -224,7 +224,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "a6abad72e4d23c69e9342662dea542c7f1f1be0fc9c227d74bbdea8fa66f3b85",
+      "sha256": "2af8c3eafb4cbb791efb856fba9503c6f1fb4ba695d09fd20597e3e95b492f4d",
       "declarations": [
         "Becoming.Typicality.courses",
         "Becoming.Typicality.extend",
@@ -281,19 +281,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9d2ffddb76df3e6530ceabb43d89ff4754512569ae21016c00868032e2392779",
+      "sha256": "4fa415c72b068f6693aa34e450eb3e8d29de3f6f2223e8a9fa1b918b14d2bdd7",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "b03fe7244b16c99fede9f5d2bf97181ef5b36f8f32e9387a3827403361035b67",
+      "sha256": "dd2aff28f02d53397f05c8fe2f3dba2784bea54e6c89d13017f9854fbf21736e",
       "declarations": []
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md",
       "role": "provenance",
-      "sha256": "163eb096485bd3f2b0ef1e84c59a8d650924ddb274345497346b58f85d89f798",
+      "sha256": "389f7b68cc90e2b62afb8a360494fb1601572d22490563edc056ca1cf87ca058",
       "declarations": []
     }
   ],
@@ -302,6 +302,10 @@
     {
       "zh": "2026-10-16：新增，按 Ren 2026-10-16 的说明（“the situation makes it true”）与其问题（“can you see what to do with my clarification above?”）（P117）；研究 §144。",
       "en": "16 October 2026: added, following Ren's clarification of 16 October (“the situation makes it true”) and question (“can you see what to do with my clarification above?”) (P117); study section 144."
+    },
+    {
+      "zh": "2026-10-16：Ren 取了这些读法（“yes, i take those readings”）；correspondence 标为 Ren 已取，next_delta 去掉“Ren 对读法的判断”；研究 §144。原文：“读法（AI 对 Ren 的话的读法，待 Ren）”。",
+      "en": "16 October 2026: Ren took these readings (“yes, i take those readings”); correspondence marks them as taken and next_delta drops Ren's judgment on the readings; study section 144. Former wording: “Readings (the AI's reading of Ren's words, pending Ren)”."
     }
   ],
   "text_versions": []
