@@ -10082,6 +10082,67 @@ theorem apart_only_downstream (r : law.ReadsInto part reads)
 4. **只一个方向。** 不在下游者相同；在下游者不必不同：一个形成可以读而不回应。见证给出在下游者实际不同（`Measure.registers_after`）。
 5. **范围。** 离散的步、自然数的量；律读什么、量度何时开始、记录是否及时被读是给出的；带误差的量度未陈述。不含伦理谓词。
 
+## 160. 整体而无部分之律所需：最小的识之反例的确切强度（Becoming.Tail）
+
+2026-10-16。P113（`Becoming.Sensitivity`，§137）表明：律在每个历史下读有限多个条件时，无论条件多少，敏感都是它所经的最小的识；条件无穷多时这一条件不能去掉：给定水平是否终将消失的判定（它给出有限全知原则），尾之律是反例；条件以自然数编号时，每个反例都给出弱有限全知原则。它留下反例之存在的确切强度，在弱有限全知原则与消失之判定之间（[sensitivity-is-the-least-registration](../../../../theories/becoming/results/records/sensitivity-is-the-least-registration.md) 的下一步首项；第 8 节“反馈与所及”）。Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）。本节回答此项，在第一部分之内：不加公理，除各定理所写者不加前提，按 Ren 2026-10-11 的先求零前提（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)）。工作板上认领为 P126。
+
+```text
+Result(s): 新增 what-a-law-of-the-whole-and-no-part-takes；回答 sensitivity-is-the-least-registration 的 next_delta
+           首项（反例之存在的确切强度）；复用 sensitivity-is-the-least-registration（VanishFrom、VanishFrom.of_agree、
+           vanishIndicator 与其引理、tailLaw、WLPO、seenBy 与其引理、alike_of_agree_from、
+           alike_of_agree_from_sensitive、Sensitivity.cond_either、ExchangeLaw.ReadsFinitely 与其
+           alike_of_insensitive）；counterfactual-is-the-course（ExchangeLaw、GivesAlike、Nonanticipating、
+           InsensitiveAt、Sensitive、Through）；coming-and-ceasing-keep-pace（LPO）
+Delta: 新核心模块 Becoming.Tail（导入 Sensitivity；39 项定理／53 项声明）；不改已有模块
+Supplied premises / correspondence: 不加公理；规则（对每个布尔序列判定它是否处处为假，或是否有真者）与消失之判定
+       在用到处作为假设写入，不假定；全知的定理以自然数为条件编号
+Evidence: scratch_build：Becoming.Tail 39 项定理、53 项声明，公理报告全部为空，无警告，根模块连同 125 个模块的闭包编译；
+          合并检查器回执待整合者的运行
+Boundary: 条件以自然数编号；命题 WLPO 是否给出规则、弱的规则是否给出有限全知原则、条件不编号时反例给出什么，没有
+          陈述；不含伦理谓词
+Integration: §2 新增一段，“回应由动力学给出”段加一句；第一部分的总陈述一条；§8 状态与进一步证明；§9 新增一行；
+       术语表两行；Becoming.lean 的导入与模块说明；check_becoming.py 的核心之列与范围说明；Lean README 一行与层内
+       导入；可判定性清单（四个以规则为参数的指示之定义；WLPO.of_rule、LPO.of_rule 只在证明中
+       分情形）；一项新记录与一项配对说明
+```
+
+**一、整体而无部分。** 从水平读出的一个数 f，只在一个条件上不同的水平给出相同的 f 时，说没有一个条件改变它（`ChangedByNoCondition`）。这恰是从某个条件起相同的水平给出相同的 f：其下的条件一次换一个（`ChangedByNoCondition.eq_of_agree_from`）；反向是因为只在 c 上不同的水平从 c + 1 起相同（`ChangedByNoCondition.of_agree_from`）。没有部分改变的，只由尾所定。整体之律（`wholeLaw f`）在每步与每个条件交换水平在第 0 步的 f，什么也不给。f 不被任何条件改变时，它读已立者（`wholeLaw_nonanticipating`），在每步不敏感于每个条件（`wholeLaw_insensitive`），所以不敏感于任何条件（`wholeLaw_not_sensitive`），且经从任一条件起的各条件而读（`wholeLaw_reads_from`、`wholeLaw_through_from`）。f 在两个水平之间不同时，它不经其敏感而读（`wholeLaw_not_through_sensitive`），不读有限多个条件（`wholeLaw_not_readsFinitely`），它所经的识没有最小的（`wholeLaw_no_least_registration`）。P113 的尾之律就是消失之指示的整体之律（`tailLaw_eq_wholeLaw`，按定义成立；`vanishIndicator_changedByNoCondition`）。
+
+**二、反例给出规则。** P113 沿一个布尔序列 s 混合两段历史，第二段从 s 的第一个真者起接手，再比较混合的历史与第一段历史所给的两个数（`mixed_decides`）。比较数是判定的，所以这一比较对每个 s 给出的不只是“s 处处为假或不然”，而是判定它的规则（`mixedDecision`）。在某步不敏感于每个条件而仍有差别的律（`insensitiveDiffersDecision`），与最小的识的每个反例（读已立者，两段历史在其所敏感的每个条件上到那步都相同，在那步给出不同；`notThroughSensitiveDecision`），各给出一个规则，对每个布尔序列判定它是否处处为假。规则给出 `WLPO`（`WLPO.of_rule`）。
+
+**三、规则给出反例。** 给定这样的规则，水平 α 从第 N 个条件起是否消失可判定：从 N 起每个水平是否大于 0 构成一个布尔序列（`Tail.levelsFrom`），规则判定它是否处处为假（`vanishesFrom`）。水平从哪个条件起都不消失，恰是这些回答处处为假（`vanishesFrom_never_iff`），规则再判定一次（`neverIndicator`：永不消失处为 1，不然为 0）。这个指示不被任何条件改变（`neverIndicator_changedByNoCondition`），在全为 0 与全为 1 的水平之间不同（`neverIndicator_zeros`、`neverIndicator_ones`）；也给定消失之判定时，两个指示之和为 1（`neverIndicator_add_vanishIndicator`）：同一个整体，从另一面读。它的整体之律（`neverLaw`）读已立者，在每步不敏感于每个条件，而仍有差别（`neverLaw_nonanticipating`、`neverLaw_insensitive`、`neverLaw_not_sensitive`、`neverLaw_differs`）：一个只由规则造出的反例。
+
+**四、恰好。** 不被任何条件改变而仍有差别的数、在某步不敏感于每个条件而仍有差别的律、最小的识的反例，各恰在这样的规则存在之处存在（`changedByNoCondition_iff_rule`、`insensitive_differs_iff_rule`、`not_through_sensitive_iff_rule`）。
+
+**五、消失之判定恰是有限全知原则作为规则。** 消失之判定给出一个规则，对每个布尔序列判定它是否有真者：在第一个真者之前为 1、自它起为 0 的水平，恰在有真者处消失（`lpoRuleOfVanishDecision`，P113 的 `lpo_of_vanish_decided` 的数据形式）。反之，这样的规则分两次判定消失：对每个 N 判定从 N 起是否有水平大于 0（`raisedFrom`），再判定是否有某个 N 的回答为否（`vanishDecisionOfLPORule`）。所以两者恰在同处存在（`vanishDecision_iff_lpoRule`）。这个规则给出弱的规则（`wlpoRuleOfLPORule`）与 `LPO`（`LPO.of_rule`）。尾之律所取的是有限全知原则作为规则，整体而无部分之律只需要弱的。
+
+```lean
+theorem not_through_sensitive_iff_rule :
+    (∃ (F : Type) (law : ExchangeLaw F Nat) (t : Nat) (h : F) (l l' : Nat → Nat → Nat) (c : Nat),
+      law.Nonanticipating ∧ (∀ e, law.Sensitive h e → ∀ s, s ≤ t → l s e = l' s e) ∧
+        ¬ (law.take t h l c = law.take t h l' c ∧ law.give t h l c = law.give t h l' c)) ↔
+      Nonempty (∀ s : Nat → Bool, Decidable (∀ n, s n = false))
+
+theorem changedByNoCondition_iff_rule :
+    (∃ f : (Nat → Nat) → Nat, ChangedByNoCondition f ∧ ∃ α β, f α ≠ f β) ↔
+      Nonempty (∀ s : Nat → Bool, Decidable (∀ n, s n = false))
+
+theorem vanishDecision_iff_lpoRule :
+    Nonempty (∀ α : Nat → Nat, Decidable (VanishFrom α)) ↔
+      Nonempty (∀ s : Nat → Bool, Decidable (∃ n, s n = true))
+```
+
+**读法（AI 的，待 Ren）。**
+1. **整体而无部分恰需判定无尽的是非记录是否全否。** 依存于整体而不依存于其任何部分者，恰在能对每个无尽的是非记录判定它是否全是否之处给出：每个这样的整体都给出这一判定，这一判定也造出一个。条件编号时，最小的识恰在这一全知处不成立，不需要更多；核心不假定它。
+2. **从“永不”读只需要弱的规则。** 读作水平是否终将消失，整体需要有限全知原则作为规则；读作水平是否永不消失，同一个整体分开同样的历史，只需要弱的规则。在这里，经由永不发生者说的整体，只由弱的规则给出。
+
+**作者反审。**
+1. **新律还是重述？** 反例给出规则，是 P113 的混合论证读作数据：比较两个数是判定的，P113 只取了它的命题形式。新的是：（a）反向：只由规则造出反例（永不消失之律），所以规则也是充分的；（b）三个当且仅当，以及“不被任何条件改变”与“只由尾所定”的等价；（c）尾之律的确切位置：消失之判定恰是有限全知原则作为规则，经两次判定。
+2. **规则与命题。** 当且仅当说的是规则（对每个序列给出判定的函数），不是命题 `WLPO`（每个序列处处为假或不然）。规则给出命题（`WLPO.of_rule`）；命题给出规则需要从关系选出函数，核心不假定这一选择原则。所以确切强度以规则陈述；在经典逻辑中两者都成立，没有分别。
+3. **弱与强是否真的不同。** 弱的规则是否给出有限全知原则的规则，这里不陈述；所以“尾之律取有限全知原则作为规则，反例只需要弱的”只说两者各是什么，不说后者严格较弱。
+4. **编号的作用。** 混合沿自然数的次序进行；条件不以自然数编号时反例给出什么，不陈述。
+5. **范围。** 离散的步；条件以自然数编号；不含伦理谓词。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -11791,3 +11852,12 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 - **Witness: a measurement.** From step `T` a formation adds the stock's level to a record and draws while the record shows at least `N` (`Observation.Measure`): before `T` nothing lies downstream of the stock and no loop passes through it; at `T` the route stock → record and the loop stock → record → draw form (`Measure.loop_at`); the record is alike up to `T` and differs by the raise after it (`Measure.registers_after`), and the draw responds to the record.
 - **Readings (the AI's, pending Ren).** Observation is not a second relation beside dependence: to observe a stock is to stand at the end of a route of readings from it, direct observation being the route of length zero, and a formation comes to observe what it did not by a reading that closes a route. The reading of the stock's level before the break that P124's second reading names is such a route, closing when a measurement starts.
 - **Boundaries.** Which schedule a law reads and when a measurement starts are supplied; only what lies off the downstream is shown alike (a formation may read without responding); measurement with error is not stated; discrete steps, natural amounts; no ethical predicate.
+
+**What a law of the whole and no part takes: the exact strength of a counterexample to the least registration (P126, 16 October 2026).** P113 (`Becoming.Sensitivity`, §137) left open where, between the weak limited principle of omniscience (`WLPO`) and the decision of vanishing (which gives `LPO`), the existence of a counterexample to the least registration lies. New core module `Becoming.Tail` (imports Sensitivity; 39 theorems, 53 declarations, empty axiom reports), no premise beyond what each statement names.
+- **A whole and no part.** A number read off levels is changed by no condition where levels differing at one condition only give it alike (`ChangedByNoCondition`), exactly where levels agreeing from some condition on give it alike (`ChangedByNoCondition.eq_of_agree_from`, `ChangedByNoCondition.of_agree_from`): what no part changes, only the tail sets. The law exchanging such a number of the levels at step 0 (`wholeLaw`) reads what has stood and is insensitive at every step to every condition; where the number differs it does not read through what it is sensitive to, nor finitely many conditions, and the registrations it reads through have no least one (`wholeLaw_not_through_sensitive`, `wholeLaw_not_readsFinitely`, `wholeLaw_no_least_registration`). P113's tail law is the instance of the indicator of vanishing (`tailLaw_eq_wholeLaw`).
+- **A counterexample gives a rule.** P113's mixing ends by comparing two numbers, which is decided, so it yields a rule deciding, of every Boolean sequence, whether it is false throughout (`mixedDecision`, `insensitiveDiffersDecision`, `notThroughSensitiveDecision`); the rule gives `WLPO` (`WLPO.of_rule`).
+- **A rule gives a counterexample.** With the rule, whether levels vanish from condition N on is decided (`vanishesFrom`), and whether they vanish from no condition on is decided by the rule again (`neverIndicator`, `vanishesFrom_never_iff`). The indicator of never vanishing is changed by no condition and tells levels all 0 from levels all 1; where the decision of vanishing is also given, it and the indicator of vanishing sum to 1 (`neverIndicator_add_vanishIndicator`). Its law (`neverLaw`) is a counterexample built from the rule alone.
+- **Exactly.** A number changed by no condition that still differs, a law insensitive at a step to every condition that still differs there, and a counterexample to the least registration each exist exactly where the rule does (`changedByNoCondition_iff_rule`, `insensitive_differs_iff_rule`, `not_through_sensitive_iff_rule`).
+- **The decision of vanishing is `LPO` as a rule** (`lpoRuleOfVanishDecision`, `raisedFrom`, `vanishDecisionOfLPORule`, `vanishDecision_iff_lpoRule`); that rule gives the weak rule and `LPO` (`wlpoRuleOfLPORule`, `LPO.of_rule`). So the tail law takes the limited principle as a rule, and a law of the whole and no part only the weak one.
+- **Readings (the AI's, pending Ren).** A whole that depends on no part of it is given exactly where it can be decided, of every unending record of yes and no, whether it says no throughout: every such whole gives that decision, and that decision builds one. With the conditions numbered, the least registration fails exactly at this omniscience and needs no more of it; the core does not assume it. Read as whether levels never vanish, the same whole takes only the weak rule; read as whether they vanish eventually, the rule of the limited principle.
+- **Boundaries.** The equivalences are stated for rules, not for the proposition `WLPO`: the proposition gives a rule only by choosing a function from a relation, which the core does not assume. Not stated: whether the weak rule gives the limited one; what a counterexample gives where the conditions are not numbered.
