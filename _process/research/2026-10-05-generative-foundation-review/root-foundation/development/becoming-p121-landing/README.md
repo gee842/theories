@@ -30,3 +30,7 @@ On 16 October 2026 Ren took P118's readings ([source](../../../../../../sources/
 3. Landing (integrator): the core checker (only Routes, Closing and the root are new steps, all in the shared cache); the decidability page regenerated on the checked bytes (no new rows); chapter §9 and Lean README totals from the receipt; bind the receipt to both new records; rehash the study and chapter references this changes, one reconciliation note per changed record; `research.py render`, the chain review of changed sources, the catalogues, `research.py check` and `make research-test`.
 
 Nothing here runs the checker, edits the board or commits.
+
+## Ren's readings (16 October 2026)
+
+`apply_ren_readings.py W` applies Ren's “alright, agree” ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md)): the readings of Routes and Closing taken in the AI's wording, and P118's third reading as revised by the loop-formation theorem. It edits the readings headers of `Routes.lean` and `Closing.lean` and adds one sentence after the third reading in `Loops.lean` (comments only; scratch build: Loops 113, Routes 30, Closing 51 theorems, empty axiom reports). It also edits the readings clauses of the chapter's §2 paragraphs, adds a dated paragraph and an English bullet each to study §155 and §156, and updates three records (correspondence, provenance reference, one paired history note each). Statements and proofs are unchanged; hashes are reconciled at landing.
