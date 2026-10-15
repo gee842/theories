@@ -189,8 +189,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Bridge and Becoming.Continuation bound to receipt 20261014T141427.442103Z): the theorems of Becoming.Feedback and the closure adapter of Becoming.Bridge, not an independent result, have empty axiom reports; core purity verified. Earlier receipts checked the same statements under former names. Author counterreview in the integration note; the sixteenth independent review read it before integration, and the text after its treatment is not yet independently reviewed."
   },
   "next_delta": {
-    "zh": "给出按步的闭包与耦合的度量。所及闭包是否读出“the system that one is in”，由 Ren 判断。",
-    "en": "Give the closures step by step and a measure of coupling. Whether the reach closure reads “the system that one is in” is Ren's to judge."
+    "zh": "给出按步的闭包（差别的时间路线见 how-much-difference-arrives）。所及闭包是否读出“the system that one is in”，由 Ren 判断。",
+    "en": "Give the closures step by step (a difference's routes in time are in how-much-difference-arrives). Whether the reach closure reads “the system that one is in” is Ren's to judge."
   },
   "correspondence": {
     "zh": "Ren 的长远目标：“I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”；Ren 要求“pursue the strongest claims and complete proof”。Ren 的层级：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”。作者的读法（AI 论证，待 Ren）：影响闭包读一个形成自身的反馈在效果经他者的支持与活动传递时所能识的；所及闭包读 Ren 中间的“the system that one is in”（供给闭包曾被读作所在系统，这一读法已撤回）；系统（对共享条件的闭包）界定每个效果，却不读那一层级：一个共同条件就使它成为整体，系统划分形成，没有嵌套与中心；“situational awareness”读作中心知道其部分在反馈之外所到达的。名称（ClosedUnder、WithinClosure、AffectedBy、WithinInfluence、Affects、WithinReach、TakesPart、Shares、WithinSystem、Reaches、ReachesBefore、DiffersBefore、Trophic 等）是 AI 按 Ren 的命名准则所选；营养级联是生态学用语。",
@@ -350,6 +350,13 @@
       "detail": {
         "zh": "影响闭包是形成自身的反馈所能识的上界；部分的交换在所及闭包与系统之内到达。",
         "en": "The influence closure bounds what a formation's own feedback can register; a part's exchange reaches within the reach closure and the system."
+      }
+    },
+    {
+      "id": "how-much-difference-arrives",
+      "detail": {
+        "zh": "回答其下一步中的度量：共同条件不度量耦合的强度，耦合强度度量它；所携带的量给出差别的时间路线（carried_pos_iff）。",
+        "en": "Answers the measure in its next step: the common condition does not measure the strength of coupling, and the coupling strengths do; the carried amount gives a difference's routes in time (carried_pos_iff)."
       }
     }
   ],
@@ -750,6 +757,10 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026-10-16 P115（差别到达多少，研究 §141）：下一步中“耦合的度量”由耦合强度回答，删去；按步的闭包仍开放；related 加 how-much-difference-arrives。陈述与证明不变；does_not_show 仍对本记录的定理成立。",
+      "en": "16 October 2026, P115 (how much difference arrives, study section 141): in the next step, “a measure of coupling” is answered by the coupling strengths, and removed; the closures step by step stay open; related adds how-much-difference-arrives. Statement and proofs unchanged; does_not_show still holds of this record's theorems."
     }
   ],
   "text_versions": [

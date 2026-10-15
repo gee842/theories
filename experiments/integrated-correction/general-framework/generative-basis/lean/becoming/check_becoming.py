@@ -65,7 +65,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking", "Becoming.LossMatching",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Courses", "Becoming.Parting", "Becoming.Typicality", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Courses", "Becoming.Parting", "Becoming.Typicality", "Becoming.Propagation", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge", "Becoming.CompositionBridge", "Becoming.JoiningBridge", "Becoming.GranularityBridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge", "Becoming.CoursesBridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -1298,6 +1298,20 @@ SCOPE = (
     "at the moves the run never takes, so the course's history shows its law and the moves beyond it "
     "are the counterfactuals; with the part's act formed by a law on the configuration, a run of the "
     "closed process is the course. "
+    "Propagation: in two balanced flows the difference of a condition's levels changes across a "
+    "step by exactly the difference given less the difference taken, so its gap is at most its gap "
+    "before with the gaps of every exchange with it; an exchange is coupled to a level with strength "
+    "at most k where, under two histories differing in that level only, it differs by at most k "
+    "times that level's gap; for a law of what has stood strength zero is insensitivity, strengths "
+    "add up over levels changed one at a time and bound a part's share of a move, and a law giving "
+    "the square of a level has no finite strength; where the rest follows such a law every gap is "
+    "at most the carried amount, the course of the carrying law from the starting gaps and the "
+    "part's gaps, which has those strengths and attains it, so the carried amount is the most "
+    "difference that can arrive; it is positive exactly along a route in time of positive "
+    "strengths, a route of TimedResponse's spread where the strengths are registered, and where no "
+    "route reaches the levels agree; carried amounts add and grow with the gaps and strengths; a "
+    "unit relayed at twice its level arrives as 2t by step t + 1, and a loop of strength one gives "
+    "2^t. "
     "Selection: two histories are selected alike by every selection through a selector's registration "
     "exactly when the selector registers them alike, and likewise for pooled registration; with the "
     "rest fixed, selection and scoring are blind beyond the registration closure; the clearer's "

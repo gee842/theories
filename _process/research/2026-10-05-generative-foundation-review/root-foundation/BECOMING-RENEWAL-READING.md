@@ -9035,6 +9035,90 @@ Integration: §8 的进一步证明“路径分支时”、状态行、Ren 的�
 
 **检查。** 在暂存区对 main b34b8027（P114 之后）编译：`Becoming.Parting` 18 项定理、27 项声明，`Becoming.Typicality` 32 项、44 项，根模块与其导入闭包（113 个核心模块）一同编译；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
+## 141. 差别到达多少：耦合强度度量敏感，所携带的量是能到达的最大差别（Becoming.Propagation）
+
+2026-10-16。P80 的记录 [counterfactual-is-the-course](../../../../theories/becoming/results/records/counterfactual-is-the-course.md) 的 next_delta 要求差别到达多少的度量，`Becoming.Counterfactual` 把“差别到达多少的任何度量”列为没有导出；[feedback-and-reach](../../../../theories/becoming/results/records/feedback-and-reach.md)、[comparison-where-the-rest-responds](../../../../theories/becoming/results/records/comparison-where-the-rest-responds.md)、[sensitivity-is-the-least-registration](../../../../theories/becoming/results/records/sensitivity-is-the-least-registration.md)（P113：“敏感的度量与差别到达多少”）、[where-a-move-is-formed](../../../../theories/becoming/results/records/where-a-move-is-formed.md)（P109：“耦合的度量（部分形成动作的多少）”）与 [levels-of-closure](../../../../theories/becoming/results/records/levels-of-closure.md)（“耦合的度量”；其范围说共同条件“不度量耦合的强度”）亦列它；理论第 8 节的进一步证明在“反馈与所及”下列“耦合的度量”。Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)），2026-10-15 又说“continue”。本节在第一部分之内回答：不加公理，除各律所写者不加前提。工作板上认领为 P115。
+
+```text
+Result(s): 新增 how-much-difference-arrives；回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”：counterfactual-is-the-course、
+           feedback-and-reach、comparison-where-the-rest-responds、sensitivity-is-the-least-registration、where-a-move-is-formed、
+           levels-of-closure；复用 counterfactual-is-the-course（ExchangeLaw、Nonanticipating、Follows、InsensitiveAt、Sensitive、
+           levels、levels_succ、totals_under、course、course_balances_iff、course_follows）；TimedResponse（Spread、RegistersAt、
+           TouchesAt）；Flow、Web 与 Balances
+Delta: 新核心模块 Becoming.Propagation（导入 Counterfactual 与 TimedResponse；78 项定理／97 项声明）；不改已有模块
+Supplied premises / correspondence: 不加公理；各律所写者写在定理中：律读已立者（Nonanticipating）；两个流平衡（Balances）、在场形成相同、
+       其余遵从律（Follows）；耦合强度（RespondsWithin，给出的界）；部分之差与起始之差的界；条件全部列出（every），达到处不重复
+       （Distinct）；条件的相等可判定（只在混合条件处）
+Evidence: scratch_build 对 main 416ff6b0（P114、I4a 与 P116 之后）：Becoming.Propagation 78 项定理、97 项声明，公理报告全部为空，无警告；
+          根模块 Becoming 与其导入闭包（114 个模块）一同编译，无重名；清点在同一字节上运行，每一新行都已分类；
+          合并检查器回执待整合者的运行
+Boundary: 离散的步、自然数的量（小于一的强度只能以一为界）；强度是给出的界，不陈述最小的强度；条件全部列出；
+          回路的一般理论开放；不含伦理谓词
+Integration: §2 新增一段（差别到达多少），其余回应时的比较一段中的“不推出”；§6.10 一句；第一部分的总陈述一条；§8 的状态行与
+       进一步证明各改一项；§9 新增一行；术语表新增两行；Becoming.lean 的导入与模块说明；check_becoming.py 的核心之列与范围说明；
+       Lean README 一行与层内导入；DECIDABILITY-INVENTORY.py 的分类；一项新记录与六项配对说明
+```
+
+**一、差别作为交换之差到达。** 两个水平之差 `gap a b` 是任一方多于另一方者（`(a - b) + (b - a)`，自然数上的距离）。两个平衡的流中，第一个流某条件步后的水平与第二个流步前的水平，加第一个所取与第二个所给，等于第二个步后的水平与第一个步前的水平，加第二个所取与第一个所给（`levels_step_exact`）：水平之差跨一步恰按所给之差减所取之差改变，没有别的来源。所以在场形成相同时，一个条件跨一步之差至多是步前之差加与它交换的每个形成的交换之差（`gap_step`；交换之差 `Flow.exchangeGap` 是所取之差加所给之差），每个交换都相同时不增（`gap_step_of_alike`）。
+
+**二、耦合强度，敏感的度量。** 跨过第 `t` 步，`h` 与条件 `c` 的交换与条件 `d` 在第 `s` 步的水平耦合、强度至多 `k`，是说在只在这一个水平上不同的任意两个历史下，所取之差与所给之差合计至多是 `k` 乘该水平之差（`ExchangeLaw.RespondsWithin`）：一个逐坐标的 Lipschitz 界。对读已立者的律，跨过第 `t` 步对 `d` 不敏感（`Becoming.Counterfactual` 的 `ExchangeLaw.InsensitiveAt`），恰是对 `d` 直到 `t` 的每个水平、对每个条件强度为零（`ExchangeLaw.insensitiveAt_iff_strength_zero`）；敏感恰是在某步并非每个这样的强度都为零（`ExchangeLaw.sensitive_iff_strength`）。读已立者的律对第 `t` 步之后的水平不耦合（`ExchangeLaw.Nonanticipating.respondsWithin_later`）。强度沿逐个改变的水平相加：把第二个历史一个水平一个水平地换入（`mixCells`），交换之差至多是各换入水平的强度乘该水平之差之和（`ExchangeLaw.exchangeGap_le_mixCells`）；所以在直到 `t` 只在列出的条件上不同的两个历史下，交换之差至多是这些步与条件上强度乘差之和（`ExchangeLaw.exchangeGap_le_strengths`；条件全部列出时对任意两个历史，`ExchangeLaw.exchangeGap_le_strengths_listed`）。条件分为部分的与其余的时，一个动作的改变至多是部分的份额（其强度乘部分的改变）加其余的份额（`ExchangeLaw.exchangeGap_le_shares`）：部分形成动作的多少的度量。有限的强度是律的条件，不是每个律都有：交换水平平方的律对其水平没有任何有限的强度（`Propagation.Square.not_respondsWithin`）。
+
+**三、所携带的量。** 携带之律让部分给出其差 `σ`，部分之外的每个形成给每个条件其强度 `k` 对至今各水平所作的（直到该步、在列出的条件上，强度乘水平之和），什么也不取（`ExchangeLaw.carrying`）；它读已立者（`ExchangeLaw.carrying_nonanticipating`）。所携带的量是它由起始之差 `δ` 生成的水平（`carried`），用的就是 `Becoming.Counterfactual` 的生成：跨每一步它增加部分之差与强度对至今所携带者所作的（`carried_succ`），从不减少（`carried_le_succ`）。两个平衡的流，在场形成相同，起始至多差 `δ`；部分的交换至多差 `σ`；其余在两者中遵从同一个读已立者之律，其交换对直到其步的每个水平具有强度 `k`；条件全部列出。于是每步每个条件之差至多是所携带的量（`gap_le_carried`）。证明逐步归纳：`gap_step` 给出一步之差，部分的交换之差由 `σ` 界定，其余的交换之差由 `ExchangeLaw.exchangeGap_le_strengths_listed` 界定，而此前各步之差由归纳界定。
+
+**四、它恰好达到。** 条件各列一次时，携带之律自身具有强度 `k`（`ExchangeLaw.carrying_respondsWithin`），它生成的进程平衡（`carrying_balances`）；没有起始之差、部分没有差时所携带的是零（`carried_quiet`），所以携带之律的进程与安静的进程之差，每步每个条件恰是所携带的量（`carried_attained`）。于是：对每个具有强度 `k` 的读已立者之律与它的每两个满足上述条件的流，第 `T` 步一个条件之差至多是 `a`，恰当所携带的量至多是 `a`（`most_difference_arrives`）。所携带的量就是能到达的最大差别：从强度得不出更小的界。
+
+**五、差别到哪里。** 一个差被送到第 `t` 步的一个条件（`Conveyed`），是经起始之差、经保持（水平持有它）、经部分在前一步的差，或经一个在场形成从一个已被送到差的、直到该步的水平到该条件的正强度：一条时间中的路线。所携带的量为正，恰当有差被送到（`carried_pos_iff`）；没有差被送到之处，两个流的水平相同（`levels_alike_of_not_conveyed`）。没有起始之差、部分的每个正差是与该条件交换的源、每个正强度属于识该水平并与该条件交换的形成时，每个被送到的差都在 `TimedResponse.Spread` 的一条路线上（`Conveyed.spread`）：`Becoming.TimedResponse` 的潜在传播，现在带着它的量。
+
+**六、所携带的差别相加。** 两组部分之差与两组起始之差合起来所携带的，是各自所携带的之和（`carried_add`）；更多的差与更大的强度携带更多（`carried_mono`）。
+
+**七、见证。** 两个条件 `true` 与 `false`：部分在第一步给 `true` 一个单位；其余每步给 `false` 两倍于 `true` 在该步的水平（`Propagation.Chain.relay`）。`true` 持有那一个单位（`Propagation.Chain.first`），`false` 到第 `t + 1` 步到达 `2t`（`Propagation.Chain.keeps_arriving`）：没有任何回路，一次的差别也无界地到达，因为水平持有所给的；携带之律的进程恰有这个差（`Propagation.Chain.gap_arrives`）。其余改为每步把 `true` 的水平送回 `true`（强度为一的回路，`Propagation.Loop.loop`），那一个单位到第 `t + 1` 步到达 `2^t`（`Propagation.Loop.runaway`）。
+
+```lean
+def RespondsWithin (t : Nat) (h : F) (c : C) (s : Nat) (d : C) (k : Nat) : Prop :=
+  ∀ l l' : Nat → C → Nat, (∀ s' e, ¬ (s' = s ∧ e = d) → l s' e = l' s' e) →
+    law.exchangeGap t h c l l' ≤ k * gap (l s d) (l' s d)
+
+theorem ExchangeLaw.insensitiveAt_iff_strength_zero (na : law.Nonanticipating) {t : Nat} {h : F}
+    {d : C} : law.InsensitiveAt t h d ↔ ∀ c s, s ≤ t → law.RespondsWithin t h c s d 0
+
+theorem most_difference_arrives (every : ∀ c, c ∈ cs) (distinct : Distinct cs) (T : Nat) (c : C)
+    (a : Nat) :
+    (∀ (law : ExchangeLaw F C) (L L' : Flow F C) (W W' : Web F C), law.Nonanticipating →
+      L.Balances W → L'.Balances W' → (∀ t, L.present t = present t) →
+      (∀ t, L'.present t = present t) → L.Follows law part W.level → L'.Follows law part W'.level →
+      (∀ t h c s d, part h = false → s ≤ t → law.RespondsWithin t h c s d (k t h c s d)) →
+      (∀ t h c, part h = true → L.exchangeGap L' t h c ≤ σ t h c) →
+      (∀ c, gap (W.level 0 c) (W'.level 0 c) ≤ δ c) →
+      gap (W.level T c) (W'.level T c) ≤ a) ↔
+      carried cs part σ k present δ T c ≤ a
+
+theorem carried_pos_iff (t : Nat) (c : C) :
+    0 < carried cs part σ k present δ t c ↔ Conveyed cs part σ k present δ t c
+
+theorem Propagation.Chain.keeps_arriving : ∀ t, amount (t + 1) false = 2 * t
+theorem Propagation.Loop.runaway : ∀ t, amount (t + 1) true = 2 ^ t
+```
+
+**读法（AI 的，待 Ren 或按 Ren 2026-10-15 的交托判断）。**
+1. **耦合强度是敏感所缺的度量。** 敏感说一个水平能否改变一个交换，强度说改变多少。以识读作敏感（P113），强度读作识的强弱：形成识其交换所能被改变者，强度说被改变多少。
+2. **差别到达多少本身是一个进程。** 所携带的量由一个律生成，用的是反事实进程的同一生成，所以一个动作的所及从展开读出，不另加于其上：度量不是外加的尺度，而是同一展开中的另一个进程。系统论中，强度是增量增益（Lipschitz 界），所携带的量是它们定义的比较系统；这里比较系统自身是同类的一个律，所以它恰好达到。
+3. **所持的差别不断到达。** 水平持有所给的（存量对流量积分），所以没有回路时，只要一个正强度读持有差别的水平，一个动作的差别就无界地到达；回路使之倍增。
+4. **整体有多纠缠。** 理论 §6.10 读 Ren 的“the whole earth has become a highly entangled system”，并说共同条件使所及为整体却不度量耦合。强度度量它：一个整体有多纠缠，读作其交换与彼此水平耦合的强度；所携带的量读作一个动作的差别在其中能多远、多快地增长。
+5. **部分形成动作的多少。** P109 所问的读作部分的份额：至多是部分的强度乘部分的改变；整个动作的改变还要加其余的份额。
+
+**作者反审。**
+1. **新律还是重述？** `levels_step_exact` 是平衡的代数。耦合强度是逐坐标的 Lipschitz 界，即系统论的增量增益；`gap_le_carried` 是离散的 Grönwall 不等式或比较原理：差由一个线性的上界系统控制；`most_difference_arrives` 说这个比较系统是紧的，因为它自身是同类的一个律。这些在数学上是标准的。新的是：（a）它们在核心的交换律上陈述，不加前提，用的是 `Becoming.Counterfactual` 的同一生成；（b）上界恰好达到，是一个当且仅当，所以从强度得不出更小的界；（c）强度为零恰是 `Becoming.Counterfactual` 的不敏感，所以这一度量精化 P113 的最小的识；（d）所携带的量为正之处恰是时间中的路线，接上 `TimedResponse` 的传播。
+2. **强度是给出的，不是推出的。** `RespondsWithin` 写在用它的每条定理的假设中；不是每个律都有有限的强度（`Propagation.Square.not_respondsWithin`）；最小的强度没有陈述（那要对每个 `k` 判定 `RespondsWithin`，或取上确界）。所以“差别到达多少”是相对于给出的强度的最坏情形：对一个具体的律，实际的差可以小得多；所携带的量对具有这些强度的一切律都是界，并且在其中一个律上达到。
+3. **自然数的量。** 强度是自然数，小于一的衰减只能以一为界（或为零），所以差别逐步减弱的耗散情形只给出不增的界，不给出衰减；实数的量与连续时间开放。
+4. **条件全部列出。** 界要求条件全部列出（`every`）；条件无穷多时（P113 的读有限多个条件之律）没有陈述。达到要求条件不重复（`Distinct`），否则携带之律会重复计数。
+5. **两个流的设定。** 两个流在场形成相同，其余在两者中遵从同一个律；部分可以做任何事，只要它的差至多是 `σ`。这正是 `Becoming.Counterfactual` 的反事实比较：有与无一个动作的两个进程。
+6. **见证中的“无界”。** 链中第二个条件的差 `2t` 来自水平持有所给的（积分器），不是回路：有界的输入经积分无界。回路的一般理论（任一回路上的强度与失控）开放；`Becoming.Runaway` 的失控是在策略上陈述的，这里的回路只是见证。
+7. **范围。** 不含伦理谓词；离散的步；混合条件处用条件的相等可判定（`DecidableEq C`），如 `Becoming.Counterfactual`。
+
+**检查。** 在暂存区对 main（416ff6b0，P114、I4a 与 P116 之后）编译：`Becoming.Propagation` 78 项定理、97 项声明，没有错误或警告，公理报告全部为空；根模块 `Becoming` 与其导入闭包（114 个模块）一同编译，没有重名；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`，证明不用 `omega`、`funext` 与依赖 `propext` 的引理，模式匹配不重叠。清点（`DECIDABILITY-INVENTORY.lean`）在同一字节上运行（跳过回执核对）：陈述依赖可判定性者 364 → 367，只在证明中用到者 214 → 223，取可判定族的定义 96 → 97，不用到者 0，每一新行都已分类。合并检查器在整合者的运行中检查。本节尚未经独立审查。
+
+**边界。** 落地运行须在 `check_becoming.py` 中编译与审计新模块，再把新记录绑定到回执。`DECIDABILITY-INVENTORY.py` 把 `mixCells` 记作逐个水平换入的构造（如 `mixIn`），其陈述提到它的三条定理随之；把九条只在证明中用到条件之相等的定理记作分辨相同。既有模块的字节不变。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”）；“增益”留给 P111 的新的增益（另一个意思），不在此用。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -10475,3 +10559,11 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **`Becoming.Typicality` (32 theorems).** With two values counted by natural weights p and q, the weighted squared deviations (q·a − p·b)² of the courses of n steps add up exactly to n·p·q·(p + q)ⁿ (`spread`), so the courses deviating by at least d weigh, times d, at most that (`typical`): the counting form of the weak law of large numbers, with no premise. The weights are `Becoming.Weighted`'s counting weights of free branching (`sum_courses_weight`). That the course which happens is typical is not derived: every course is a run.
 - **Notes on Ren's words (the AI's).** “The full truth can be derived, situationally” holds for what is registered, as far as runs do not part; at a parting the next value is fixed by nothing registered before it, not even for a knower of the world, and weights show only through typical courses, typicality not being derived. “Reality is always situational” agrees with the core if it means every registration is within a context; if it means every situation has a bound on its states, it is a substantive premise that no axiom-free derivation gives, since the core has worlds with no bound. The core covers every world in that its laws are stated for every process; it does not derive every fact, and at partings it derives exactly what cannot be fixed. Ren did not adopt reading 1 (“situationally means the bound”); it stays the AI's reading with these qualifications.
 - **Boundaries.** The learner reads configurations, not moves; the rest step where runs part only before some step, and the exact converse with a learner given the world, are not stated; typicality is stated for two values with Chebyshev's bound only. Scratch build on main b34b8027 (after P114): empty axiom reports, the root and its 113-module core closure compiled. Not yet independently reviewed.
+
+**How much difference arrives (P115, 16 October 2026).** The record of P80 asked for a measure of how much difference arrives, which `Becoming.Counterfactual` listed as not derived, as did five more records (P109's "a measure of coupling", P113's "a measure of sensitivity", feedback-and-reach, comparison-where-the-rest-responds and levels-of-closure) and the chapter's §8, under Ren's goal of 12 October, “move towards 100%” ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)). Section 141 adds one core module, `Becoming.Propagation` (78 theorems, no axiom, no premise beyond what each law names), on Counterfactual's definitions.
+- **Difference arrives as exchanged difference.** In two balanced flows the difference of a condition's levels changes across a step by exactly the difference given less the difference taken (`levels_step_exact`), so a gap across a step is at most the gap before with the gaps of every exchange (`gap_step`).
+- **Coupling strength, the measure of sensitivity.** An exchange is coupled to a level with strength at most `k` where, under two histories differing in that level only, it differs by at most `k` times that level's gap (`ExchangeLaw.RespondsWithin`, a coordinate-wise Lipschitz bound). For a law of what has stood, strength zero is insensitivity (`ExchangeLaw.insensitiveAt_iff_strength_zero`); strengths add up over levels changed one at a time (`ExchangeLaw.exchangeGap_le_strengths`), bounding a part's share of a move (`ExchangeLaw.exchangeGap_le_shares`); a law giving the square of a level has no finite strength (`Propagation.Square.not_respondsWithin`).
+- **The carried amount, attained.** Where the rest follows such a law, every gap is at most the carried amount, the course the carrying law generates by Counterfactual's generation from the starting gaps and the part's gaps (`gap_le_carried`); the carrying law has those strengths and attains it (`carried_attained`), so the carried amount is the most difference that can arrive (`most_difference_arrives`, an equivalence).
+- **Where it goes.** It is positive exactly along a route in time of positive strengths (`carried_pos_iff`), on routes of `TimedResponse.Spread` where the strengths are registered (`Conveyed.spread`); where no route reaches, the levels agree. Carried amounts add (`carried_add`).
+- **Witnesses.** A unit given once and relayed at twice its level arrives as 2t by step t + 1, with no loop, since levels hold what they are given (`Propagation.Chain.keeps_arriving`); a loop of strength one gives 2^t (`Propagation.Loop.runaway`).
+- **Readings (the AI's).** The coupling strength is the measure sensitivity lacked; how much difference arrives is itself a course of the one unfolding; a held difference keeps arriving; how entangled a whole is reads as how strongly its exchanges are coupled to each other's levels. Not derived: the strengths themselves (supplied bounds, no least one stated), a general theory of loops, infinitely many conditions, real amounts and continuous time. In systems terms the strengths are incremental gains and the carried amount their comparison system, here attained. The name "coupling strength" follows levels-of-closure, leaving "gain" to P111. Scratch build on main `416ff6b0`: 78 theorems, 97 declarations, empty axiom reports; the decidability inventory classifies every new row. Not yet independently reviewed.

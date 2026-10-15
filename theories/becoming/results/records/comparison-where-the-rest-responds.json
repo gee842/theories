@@ -234,8 +234,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T204910.042715Z; periphery receipt 20261013T095049.338744Z): the theorems of the Response module have empty axiom reports, and the checker verifies core purity, every source declaration in the core's import closure having an empty axiom report and the core compiling from Lean's prelude alone. Author counterreview in §87 of the integration note; no independent review."
   },
   "next_delta": {
-    "zh": "按时间先后的回应所及；差别到达多少的度量；回路的一般定义，以及在其中陈述增益与失控；Ren 的判断：两种反事实与所及闭包的反事实意义是否成立。",
-    "en": "Order the responsive reach in time; measure how much difference arrives; define a loop in general and state gain and runaway on it; and Ren's judgment whether the two counterfactuals and the counterfactual meaning of the reach closure hold."
+    "zh": "回路的一般定义，以及在其中陈述绕回路的强度与失控（how-much-difference-arrives 只给见证）；Ren 的判断：两种反事实与所及闭包的反事实意义是否成立。",
+    "en": "Define a loop in general and state the strength around it and its runaway (how-much-difference-arrives gives witnesses only); and Ren's judgment whether the two counterfactuals and the counterfactual meaning of the reach closure hold."
   },
   "correspondence": {
     "zh": "AI 把本理论与一般的因果系统（x_{t+1} = F(x_t, u_t, ε_t)、反馈、自适应参数、吸引子）作比较并提出五项改进之后，Ren 写道：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本项是其中第二项（提议是 AI 的）：其余回应时的反事实，回答本章开放项“其余交换随之调整的反事实”中其余经识回应的情形。读法（AI 的，待 Ren）：一个动作有两种反事实，其余固定时只计部分直接到达的，其余经识回应时计部分对经所识者影响的闭包；一个动作对与之相互作用的形成造成什么，在第二种之内决定；升级回路是每一方都经识回应、差别回到部分的情形，它不在其余固定的比较中出现；只识支持时回应所及是所及闭包之并，这给所及闭包一个反事实的意义：其余经其支持回应时，一个动作的差别所能到之处。来源中粘贴的因果系统文字（含军备竞赛的回路）作者未注明，不是 Ren 的话，也不是本理论的前提。",
@@ -402,6 +402,13 @@
       "detail": {
         "zh": "推出本记录的前提：其余遵从一个只读各形成所识的交换律时，其余经识回应是定理；第二个流是另一动作生成的进程，比较不另给第二个流与回应；Loop.responds 由律推出（Loop.responds_by_law）。",
         "en": "Derives this record's premise: where the rest follows a law of exchange reading only what each formation registers, responding through registration is a theorem; the second flow is the course another act generates, so the comparison supplies neither the second flow nor the response; Loop.responds follows from the law (Loop.responds_by_law)."
+      }
+    },
+    {
+      "id": "how-much-difference-arrives",
+      "detail": {
+        "zh": "回答其下一步中的两项：差别到达多少至多是所携带的量，恰好达到；它恰沿正强度的时间路线为正（carried_pos_iff）。回路只有见证：强度为一的回路使一个单位每步加倍（Propagation.Loop.runaway）。",
+        "en": "Answers two items of its next step: how much difference arrives is at most the carried amount, which is attained, and is positive exactly along a route in time of positive strengths (carried_pos_iff). Loops have witnesses only: a loop of strength one doubles a unit every step (Propagation.Loop.runaway)."
       }
     }
   ],
@@ -740,6 +747,10 @@
     {
       "zh": "2026年10月15日，P113 落地（研究第137节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P113：§2 中依动力学所给之回应一段的“未导出”一句指向 Becoming.Sensitivity（“动作何时是部分自己的”指向 Becoming.Coupling）；§8 中反馈与所及下的进一步证明改为已给出，状态一行、Ren 对 §6.10 的选择与逻辑承诺相应增补；“第一部分全貌”的概述；术语表“敏感”一行更新并增“读有限多个条件”一行；§9 一行（Becoming.Sensitivity）；总数改据新回执）。",
       "en": "15 October 2026, landing P113 (study section 137): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P113: in §2 the not-derived sentence of the response as the dynamics give points to Becoming.Sensitivity (and “when a move is the part's own” to Becoming.Coupling); in §8 the further proof under feedback and reach becomes given, with the status row, Ren's choices for §6.10 and the logical commitment extended; the summary in “Part I stated whole”; the glossary row “sensitive” updated and a row “reads finitely many conditions” added; one §9 row (Becoming.Sensitivity); the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16 P115（差别到达多少，研究 §141）：下一步中“按时间先后的回应所及”与“差别到达多少的度量”由所携带的量及其时间路线回答，删去；回路一项中“增益”改为“绕回路的强度”（名称与新记录一致）；related 加 how-much-difference-arrives。陈述与证明不变；does_not_show 仍对本记录的定理成立。",
+      "en": "16 October 2026, P115 (how much difference arrives, study section 141): in the next step, “order the responsive reach in time” and “measure how much difference arrives” are answered by the carried amount and its routes in time, and removed; in the item on loops “gain” becomes “the strength around it”, the name of the new record; related adds how-much-difference-arrives. Statement and proofs unchanged; does_not_show still holds of this record's theorems."
     }
   ],
   "text_versions": [
