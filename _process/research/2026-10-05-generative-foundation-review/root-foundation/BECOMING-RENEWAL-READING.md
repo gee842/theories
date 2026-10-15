@@ -9523,6 +9523,8 @@ Integration: 第 6 节新段落对（在“权重计数情境”之后），该�
 
 ## 151. 只读记录的选择（整合 I4b 第二项）：PluralRecords 与 TieBreaking 接入
 
+（同日后记：依 Ren 的更正，本节结果改称“经选项模型的选择”，读法撤回，见第153节；以下文字作为证据保留。）
+
 2026-10-16。Ren 对 I4 归类表选择“Closest gaps first”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）。表把 PluralRecords 与 TieBreaking 读作待接入的律：同等对待各中心的规则（交换两个中心的条目即交换其输出）能供给中心 k，恰当没有别的中心的条目等于 k 的（`servable_iff_untied`）；同等对待的抽签给并列的中心相同的权重（`tied_equal_weight`）。Becoming.Selection 陈述了经识的选择恰及所识（`Web.selects_alike_iff`），未陈述只读记录的选择（§139）。本节对任何选项与任何种类的条目陈述它。名依 Ren 同日的接入命名规则（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-joined-module-names.md)，工作板规则 8）：核心律、实例模块与记录标题都用核心的结构词汇，实例模块按核心律命名。
 
 ```text
@@ -9642,6 +9644,49 @@ theorem polynomial_iff_no_loop (every : ∀ c, c ∈ cs) (K : F → C → C → 
 5. **与 `Becoming.Runaway`（P55）。** 那里的失控是保持支持的策略，断裂的距离不被识；这里是差别绕耦合的回路增长。两者相遇于一个形成的汲取回应其自身汲取所降低的水平之处：一个回路；这里没有把两者连起来。
 6. **与 P82 的损失。** `Loop.courses_double` 数一个转移图中回路的历程（可能性）；这里耦合的回路乘以所携带的量。P82 的截断“恰好漏掉所弃者”，这里成为定量的界，并且达到。
 7. **范围。** 不含伦理谓词；离散的步、自然数的量；条件全部列出。
+
+## 153. 经选项模型的选择：第 151 节的重新框定（整合 I4b 第二项的后续）
+
+2026-10-16。Ren 读了第 151 节的结果后写道：“selection's “record-only” doesn't seem right - it is about the cognitive model, not just record, which feels as long as we remember all pasts we can move forward without wisdom”；读过 AI 的考察与建议后写道：“go ahead with the reframing, first title, keep names, (a)”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md)）。本节据此重新框定第 151 节的结果：不改任何 Lean 陈述，加一处与 `Becoming.Learning` 的归并的连接，撤回原读法。
+
+```text
+Result(s): selection-by-the-record-alone 改名为 selection-through-a-model-of-the-options（旧 ID 留作别名），
+           标题“经选项模型的选择 / Selection through a model of the options”；selection-through-registration 与
+           generalization-through-lumping 的关联随之更新；Selection.lean、Learning.lean 与外围实例所绑的记录改绑
+Delta: 核心：Becoming.Selection 只改注释（节名、节说明与文件说明，注释之外的代码断言不变，67 项定理不变）；
+       Becoming.Learning 加“经选项模型的选择”一节（75 → 83 项定理，8 项新定理），不加导入；
+       外围：SelectionRelabelCorrespondence 只改注释，检查器按新说明重生成；读法：撤回“到达的次序”一读
+Supplied premises / correspondence: 新定理不加前提：选项的相同已定（同 Relabel），所用的选择、取值经模型是假设；
+       要紧者是给出的谓词 p 或函数 f；充分方向要求读出的 q 或 h 给出
+Evidence: 草稿构建（main a2caf2fd 上，scratch_build.py）：Selection 67、Learning 83 项定理，公理报告皆空；
+       根模块及其闭包编译；核心与外围回执待运行
+Boundary: 见下文
+Integration: 记录改名与改写；§9 Selection、Learning 两行，外围一行与实例列举；Becoming.lean 两条；Lean README 两行；
+       FORMAL-NOTES；外围检查器说明；可判定性清点的注释；归类表三行，IdealWarrant 一行改正并移入一般数学主题
+```
+
+**为何重新框定。** 核心中“记录”指被保留的过去。第 151 节的标题“只读记录的选择”与读法“要分开记录所并列者，需另一被记录的关系，如到达的次序或约定”，暗示记得更多就够了。两个方向都不对：完全的记忆也分不开历史相同的选项；记忆分开它们之处（如谁先到），律不说这个差别是否要紧。第 151 节所读的条目是选择者对选项的模型：它能分辨什么。核心中模型就是一个归并（`Learning.Lumped`；理依 Ren 读作对结构与变化之规律的建模）。用“模型”而不是“认知模型”：律也涵盖没有认知的选择者，如排序规则或抽签。
+
+**第 151 节的律，重读。** 一个选择经模型，当交换两个选项的条目即交换所选者（`Relabel.Equivariant`）；两个选项被每个经模型的选择选得相同，恰当模型使二者并列（`Relabel.selected_alike_iff`）；至多选一个者单独选出一个选项，恰当没有别的选项的条目与它相同（`Relabel.singled_iff_untied`）；取值与选取同第 151 节。律与证明不变，只是所读之物改称其名。
+
+**新：模型是一个归并（`Becoming.Learning`，“经选项模型的选择”一节，8 项定理，不加前提）。**
+- 经模型的选择是经其归并的选择：模型所并者被选得相同（`selects_through_lumping`，即 `Training.Through` 在模型的归并上），经模型的取值经归并同去（`values_lumped`）。
+- 只在要紧者经归并同去之处正确：经模型的选择若恰选出满足 p 的选项，p 对模型所并者同真同假（`selects_right_through`）；取值若处处等于 f，f 经归并同去（`values_right_lumped`）。
+- 模型所并者，无一经它的选择可分开：p 对模型所并的两个选项一真一假时，没有经模型的选择恰选出满足 p 者（`selects_not_right_of_parted`；取值为 `values_not_right_of_parted`）。要分开，需要更细的模型。
+- 要紧者从模型读出时，经模型读出它即正确（`selects_right_of_reads`、`values_right_of_reads`）。
+
+这与 `lumped_right_iff` 同形：经归并的推广，正确恰在世界经归并同去之处；经模型的选择是推广的一种。
+
+**读法（AI 对 Ren 的更正的读法，Ren 同日认可）。** 选择的好坏取决于它所经的模型。模型所并者，经它的选择分不开；要分开，需要更细的模型；那个模型是否正确，在于它对要紧者的拟合，不在于记得多少：记录给出差别，不给出差别是否要紧。第 151 节的读法撤回。[TIE-BREAKING-LEGITIMACY](TIE-BREAKING-LEGITIMACY.md) 已说任何能分开的记录在形式上都可用，所以相关性不能交给形式；这里的定理说明为什么：形式只给出“经模型”，正确与否在模型与要紧者之间。
+
+**其余两项。** `_by_core` 的名保留（Ren：“keep names”）：工作板规则 8 管核心律、实例模块名与记录标题，后缀只指回所重述的原定理，与此前各实例模块同。IdealWarrant 留在 Ren 暂留脊柱外的一般数学线（Ren：“(a)”），日后与 CompletionRole、HistoryIdeals 一起接入，使三者共用核心的理想词汇；其运行层情形已在脊柱上（`Becoming.Refutable`，经 PrefixSafety，第 145 节）。归类表原说明有误：IdealWarrant 自己定义偏序与理想，CompletionRole 与 HistoryIdeals 导入它，不是相反；说明已改正，它移入“一般数学”主题。
+
+**作者反审。**
+1. **新结果还是连接？** 连接：8 项定理各一两行，都由 `Equivariant.tied` 与 `EquivariantValue.tied` 给出，不是新的独立结果。用处是使“模型”有确切意义：所读的条目即一个归并，选择的正确与否即 `lumped_right_iff` 的同一形式。
+2. **方向。** 必要方向（只在……之处正确）对任何经模型的选择成立；充分方向只对从模型读出的要紧者，要求读出的 q 或 h 给出。由 `Lumped r f` 构造 h 需要在模型的每个值上取一个原像，核心不陈述。
+3. **没有说的。** 律不说哪个模型对，也不说什么要紧：要紧者是给出的 p、f。较细的模型从哪里来、怎样学到，属学习（第 92–93 节）与识（第 70 节）。
+
+**边界。** 同第 151 节：抽签是否正当、按大小或轮次的优先，保持原文件的范围。
 
 ## English summary
 
@@ -11229,7 +11274,7 @@ This section covers the first. Each of the 31 earlier versions now names, on its
   - A signed weight is a pair of counts of situations, those composing to adding and those to subtracting (`signed_counts`). Where signed weights cancel, the situations do not (`cancels_situations`).
 - **Still open.** Real or complex amplitudes, infinite or undecided processes for the converse, and the exactness of 2(T + N) − 1.
 
-**Selection by the record alone, integration I4b item 2 (16 October 2026).** Ren chose “Closest gaps first” on the I4 classification table ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)). The table read PluralRecords and TieBreaking as join candidates: a rule treating the centers alike (exchanging two centers' entries exchanges its output) can serve center k exactly when no other center's entry equals k's (`servable_iff_untied`), and a lottery treating them alike gives tied centers equal weight (`tied_equal_weight`). Becoming.Selection stated that selection through registration reaches exactly what registers (`Web.selects_alike_iff`), not selection by the record alone (section 139). This section states it for any options and entries of any kind. The names follow Ren's rule of the same day for joined modules ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-joined-module-names.md), board rule 8): the core law, the instance module and the record's title use the core's structural vocabulary, and the instance module is named after the core law.
+**Selection by the record alone, integration I4b item 2 (16 October 2026).** (Reframed the same day in section 153 at Ren's correction, as selection through a model of the options, its reading withdrawn; the text below is kept as evidence.) Ren chose “Closest gaps first” on the I4 classification table ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)). The table read PluralRecords and TieBreaking as join candidates: a rule treating the centers alike (exchanging two centers' entries exchanges its output) can serve center k exactly when no other center's entry equals k's (`servable_iff_untied`), and a lottery treating them alike gives tied centers equal weight (`tied_equal_weight`). Becoming.Selection stated that selection through registration reaches exactly what registers (`Web.selects_alike_iff`), not selection by the record alone (section 139). This section states it for any options and entries of any kind. The names follow Ren's rule of the same day for joined modules ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-joined-module-names.md), board rule 8): the core law, the instance module and the record's title use the core's structural vocabulary, and the instance module is named after the core law.
 - **Reading the record alone** (`Becoming.Selection`, namespace `Relabel`, no premise; 43 → 67 theorems, no new import).
   - Options are told apart only by what a record holds of each. Exchanging two options (`Relabel.swap`) is an involution.
   - A selection reads the record alone (`Relabel.Equivariant`) when exchanging two options' entries exchanges what it selects; likewise a valuation (`EquivariantValue`) and a choice of at most one option (`EquivariantChoice`). Exchanging two tied options leaves the record as it was (`fixed_of_tied`).
@@ -11268,3 +11313,28 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 - **Polynomial exactly where no loop lies upstream.** Where no loop lies upstream the carried amount is at most a polynomial of degree one less than the number of conditions (`carried_le_polynomial`). With the same formations and strengths at every step (`stationary`), every loop at least doubles what reaches it every time around (`carried_doubles_around`, `carried_doubles_into`), and a doubling outgrows every polynomial (`Loops.not_poly_of_doubling`), so a polynomial bound holds exactly where no loop lies upstream (`polynomial_iff_no_loop`); by `most_difference_arrives` the same holds of the most difference that can arrive for every law with those strengths (`gap_polynomial_iff_no_loop`, with `most_difference_within` and `gap_le_polynomial` where no loop lies upstream).
 - **Readings (the AI's, pending Ren).** The orders are the integration Ren asked about, like a sum over diagrams by their number of vertices (the AI reads "Fermi's diagrams" as Feynman diagrams), `Loops.binom` counting the time orderings of the responses; the accuracy of a cut is the rest of the sum, attained; where no loop lies upstream a finite order loses nothing, and where one does every finite order loses something. `Becoming.Weighted` (P82) answered the same question for sums over histories. Only a loop makes a difference run away: P115's chain grows linearly and its self-loop doubles, the two ends of this law. Which loops a world has is its situation (Ren, 16 October, “the situation makes it true”).
 - **Boundaries.** The strengths are supplied; the equivalences need couplings at every step, stated for the same formations and strengths at every step; couplings that come and go, how fast a runaway is beyond the product of the strengths, real strengths and amounts, continuous time and infinitely many conditions are open; the runaway is of the most difference that can arrive, attained by the carrying law, not of every law. The mathematics is standard (Picard iteration of a linear comparison system, nilpotent on an acyclic coupling graph); what is new is its statement on the core's laws with no premise, the attained accuracy, and the equivalence for every law. Scratch build on main `5f8f7726`: 113 theorems, 137 declarations, empty axiom reports; the root compiles with its 118-module closure; the decidability inventory classifies every new row. Not yet independently reviewed.
+
+**Selection through a model of the options, a reframing of section 151 (I4b item 2 follow-up, 16 October 2026).** Having read section 151's result, Ren wrote: “selection's “record-only” doesn't seem right - it is about the cognitive model, not just record, which feels as long as we remember all pasts we can move forward without wisdom”. After the AI's investigation and recommendations Ren wrote “go ahead with the reframing, first title, keep names, (a)” ([words](../../../../sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md)). Section 153 reframes section 151's result accordingly. No Lean statement changes; one link to `Becoming.Learning`'s lumping is added, and the earlier reading is withdrawn.
+- **Why reframe.**
+  - In the core, “record” means the kept past. Section 151's title “Selection by the record alone” and its reading, “to part what the record ties takes a further recorded relation, such as an order of arrival or an agreement”, suggested that remembering more is enough.
+  - That is wrong on both counts. Perfect memory cannot separate options whose histories are alike. Where memory does separate them, as by who came first, the law says nothing about whether that difference matters.
+  - The entries section 151 reads are the selector's model of the options: what it can tell apart. In the core a model is a lumping (`Learning.Lumped`; 理, on Ren's reading, is the modeling of the laws of structure and change).
+  - The word is “model”, not “cognitive model”: the law also covers selectors without cognition, such as a sorting rule or a lottery.
+- **Section 151's laws, reread.** A selection is through the model when exchanging two options' entries exchanges what it selects (`Relabel.Equivariant`). Two options are selected alike by every selection through the model exactly when the model ties them (`Relabel.selected_alike_iff`). One selecting at most one option singles out an option exactly when no other option's entry ties it (`Relabel.singled_iff_untied`). Values and choices are as in section 151. The laws and proofs are unchanged; only what they read is named for what it is.
+- **New: the model is a lumping** (`Becoming.Learning`, section “Selection through a model of the options”, 8 theorems, no premise).
+  - A selection through a model is a selection through its lumping: what the model lumps is selected alike (`selects_through_lumping`, `Training.Through` on the model's lumping), and a valuation through the model goes alike across the lumping (`values_lumped`).
+  - It is right only where what matters goes alike across the lumping. If a selection through the model selects exactly the options satisfying p, then p holds alike of what the model lumps (`selects_right_through`). If a valuation gives every option its value under f, f goes alike across the lumping (`values_right_lumped`).
+  - What a model lumps, no selection through it separates: where p holds of one of two options the model lumps and not the other, no selection through the model selects exactly the options satisfying p (`selects_not_right_of_parted`; for values, `values_not_right_of_parted`). Separating them takes a finer model.
+  - Where what matters is read off the model, reading it through the model is right (`selects_right_of_reads`, `values_right_of_reads`).
+  - This has the form of `lumped_right_iff`: a generalization through a lumping is right exactly where the world goes alike across it, and a selection through a model is one kind of generalization.
+- **Reading** (the AI's reading of Ren's correction, which Ren approved the same day). A selection is as good as the model it goes through. What a model lumps, no selection through it separates. Separating them takes a finer model, and whether that model is right is its fit to what matters, not how much is remembered: the record gives distinctions, not their relevance. Section 151's reading is withdrawn. [TIE-BREAKING-LEGITIMACY](TIE-BREAKING-LEGITIMACY.md) already said that any distinguishing record works formally, so relevance cannot be left to form; these theorems show why: form gives only “through the model”, and rightness lies between the model and what matters.
+- **The other two answers.**
+  - The `_by_core` names stay (Ren: “keep names”). Board rule 8 governs core laws, instance module names and record titles; the suffix only points back to the original theorem restated, as in every earlier instance module.
+  - IdealWarrant stays with the general mathematical line Ren left outside the spine (Ren: “(a)”), to be joined later together with CompletionRole and HistoryIdeals so that the three share one core vocabulary of ideals. Its run-level case is already on the spine (`Becoming.Refutable`, through PrefixSafety, section 145).
+  - The table's note was wrong: IdealWarrant defines posets and ideals itself, and CompletionRole and HistoryIdeals import it, not the other way round. The note is corrected, and IdealWarrant moves to the theme of general mathematics.
+- **Author counterreview.**
+  - These are links, not a new independent result. Each of the 8 theorems takes a line or two from `Equivariant.tied` and `EquivariantValue.tied`. They give “model” an exact meaning: the entries read form a lumping, and a selection's rightness has the form of `lumped_right_iff`.
+  - The necessary direction (right only where) holds of every selection through the model. The sufficient direction holds only where what matters is read off the model, with the reading q or h given. Building h from `Lumped r f` would pick a preimage for each of the model's values, which the core does not state.
+  - Not said: which model is right, or what matters (p and f are given). Where a finer model comes from and how it is learned belongs to learning (sections 92–93) and registration (section 70).
+- **Boundary.** As in section 151: whether an equal chance legitimately breaks a tie, and priority by size or by turn, keep the originals' scope.
+- **Evidence.** Scratch build on main `a2caf2fd` (`scratch_build.py`): Selection 67 theorems and Learning 83, every axiom report empty; the root compiles with its closure. The core and periphery receipts await their runs. Not yet independently reviewed.

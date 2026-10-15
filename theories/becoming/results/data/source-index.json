@@ -1242,6 +1242,7 @@
         "sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md",
         "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
         "sources/15-codex-theory-conversations/2026-10-16-joined-module-names.md",
+        "sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md",
         "sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md",
         "theories/becoming/chapters/BECOMING-FOUNDATION.md",
         "theories/becoming/chapters/NONDUAL-METHOD.md",
@@ -8780,7 +8781,8 @@
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean",
-        "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md"
+        "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
+        "sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md"
       ]
     },
     "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md": {
@@ -10185,7 +10187,8 @@
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/check.py",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/check_selection_relabel_correspondence.py",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/inquiry-warrant/BUILD.md",
-        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json"
+        "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/verification.json",
+        "sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md"
       ]
     },
     "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/CONTRACT.md": {
@@ -13051,7 +13054,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T195010.513125Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",

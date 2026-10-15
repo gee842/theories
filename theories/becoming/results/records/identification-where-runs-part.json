@@ -490,7 +490,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "f709b169e362fbef75ca05f56bfe54adee9f16db2b114c890c13852478a11171",
+      "sha256": "72a74b7a05347fde0d1d74c9781fefb1429e583fc3ab0d6f17f6b1ddeef78683",
       "declarations": [
         "Becoming.Learning.record",
         "Becoming.Learning.record_congr",
@@ -604,6 +604,11 @@
       "path": "sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md",
       "role": "provenance",
       "sha256": "b2c60f7ef5e8308c08783018c8abb617276c4e6c806bde11cc4d99ca15044f5b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
+      "role": "receipt",
+      "sha256": "9627d189294357c1bc703df77f46e2e729b8cf4bc5e89c661d341ffbfb5b4fd7"
     }
   ],
   "proof_bindings": [
@@ -623,7 +628,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -703,6 +708,10 @@
     {
       "zh": "2026年10月16日，P119 落地（研究第150节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第150节（P119：分开与计数的开放证明）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P119：在“权重计数情境”之后加“分开与计数的开放证明”一对段落；整体陈述的两条与界一项、§8 的两行状态与“路径分支时”一项、§9 的三行（43、43、38）与术语表一行（被给予世界的学习者）；总数改据新回执）；Parting.lean（P119：加入定理（18 → 43）：只在 T 之前分开时的静止之步、被给予世界的学习者的逆命题、有限构型上 N 步的历程使起点无界；Parting 导入 Lasting；既有声明不变）。",
       "en": "16 October 2026, landing P119 (study section 150): rebound to the new receipt and rehashed: BECOMING-RENEWAL-READING.md (section 150 (P119: the open proofs of parting and counting) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P119: a paragraph pair on the open proofs of parting and counting after “weights count situations”; two bullets and the bound item of the theory stated whole, §8's two status rows and the open item “When the course branches”, §9's three rows (43, 43, 38) and a glossary row (the learner given the world); totals moved to the new receipt); Parting.lean (P119: theorems added (18 → 43): the rest step where runs part only before T, the converse with the learner given the world, a course of N steps over finitely many configurations making its start unbounded; Parting imports Lasting; existing declarations unchanged)."
+    },
+    {
+      "zh": "2026-10-16，整合 I4b 第二项的后续（研究第153节）：Selection.lean 只改注释（“只读记录的选择”一节改称“经选项模型的选择”），Learning.lean 加一节，8 项定理连接选项的模型与其归并；本记录所引的声明不变。Learning.lean 改用新哈希，证明绑定移到核心回执 20261015T202927.668755Z。",
+      "en": "16 October 2026, I4b item 2 follow-up (study section 153): Selection.lean changes only in comments (the section “Selection by the record alone” renamed “Selection through a model of the options”), and Learning.lean gains a section of eight theorems linking a model of the options to its lumping; the declarations this record cites are unchanged. Learning.lean take the new hashes, and the proof bindings move to core receipt 20261015T202927.668755Z."
     }
   ],
   "text_versions": []

@@ -291,7 +291,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "54c2c3de839ba9eeeb9b026798324eccd3e229421fd4216e497a079a959f4083"
+      "sha256": "7a2280838771b9ad620f3bd1be22507d1fbb5748eceae611b101f6f87a902e36"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -356,6 +356,10 @@
     {
       "zh": "2026年10月16日：Ren 同意交托之后提出的读法（“agree with other readings”）；AI 读作包括 I4b 的三项读法（含本记录的），Ren 未更正。correspondence 把读法标为 AI 的、Ren 已取，读法文字不变；next_delta 删去此后已落地的最近缺口。研究第146节的“待 Ren”作为证据保留。原措辞：“读法（AI 的，待 Ren）”。",
       "en": "16 October 2026: Ren agreed with the readings posed after the delegation (“agree with other readings”); the AI read this as taking I4b's three readings, this record's among them, and Ren did not correct it. Correspondence marks the readings as the AI's which Ren took, the reading text unchanged; next_delta drops the closest gaps that have since landed. Study section 146's “pending Ren” stays as evidence. Former wording: “Readings (the AI's, pending Ren)”."
+    },
+    {
+      "zh": "2026年10月16日，I4b 第二项的后续落地（研究第153节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第二项的后续：§9 的 Selection 与 Learning 两行（Learning 83 项定理）与外围实例一行改为经选项模型的选择；总数改据新回执）。",
+      "en": "16 October 2026, landing the I4b item 2 follow-up (study section 153): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 2 follow-up: the §9 Selection and Learning rows (Learning 83 theorems) and the periphery row now name selection through a model of the options; the totals moved to the new receipt)."
     }
   ],
   "text_versions": []

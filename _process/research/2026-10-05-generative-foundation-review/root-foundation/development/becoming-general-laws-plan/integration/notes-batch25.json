@@ -1,0 +1,55 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean": {
+   "zh": "I4b 第二项的后续（Ren 2026-10-16）：一节与文档注释改称经选项模型的选择（只改注释，注释之外的代码不变）",
+   "en": "I4b item 2 follow-up (Ren, 16 October 2026): the section and docstrings now name selection through a model of the options (comments only; the code outside comments unchanged)"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean": {
+   "zh": "I4b 第二项的后续：加“经选项模型的选择”一节，8 项定理把模型连到它的归并（75 → 83）；既有声明不变",
+   "en": "I4b item 2 follow-up: a section “selection through a model of the options”, 8 theorems linking a model to its lumping (75 → 83); existing declarations unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "I4b 第二项的后续：Selection 与 Learning 两条模块条目改写（注释）",
+   "en": "I4b item 2 follow-up: the Selection and Learning bullets reworded (comments)"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "I4b 第二项的后续：Selection 与 Learning 两行改写",
+   "en": "I4b item 2 follow-up: the Selection and Learning rows reworded"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "I4b 第二项的后续：§9 的 Selection 与 Learning 两行（Learning 83 项定理）与外围实例一行改为经选项模型的选择；总数改据新回执",
+   "en": "I4b item 2 follow-up: the §9 Selection and Learning rows (Learning 83 theorems) and the periphery row now name selection through a model of the options; the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第153节（经选项模型的选择：第151节的重新框定）及其英文段；第151节开头加一条向后的注记，其正文作为证据保留",
+   "en": "section 153 (selection through a model of the options: the reframing of section 151) with its English paragraph; a forward note at the top of section 151, whose text stays as evidence"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "I4b 第二项的后续：注释改写",
+   "en": "I4b item 2 follow-up: a comment reworded"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T202927.668755Z 上重新生成：Learning 的 8 项新定理归入陈述依赖它（交换两个值），409 → 417，其余各类不变",
+   "en": "regenerated on receipt 20261015T202927.668755Z: Learning's 8 new theorems at statement level (exchanging two values), 409 → 417, the other classes unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md": {
+   "zh": "I4b 第二项的后续：相关行改写；IdealWarrant 的注记更正（它自己定义偏序与理想，CompletionRole 与 HistoryIdeals 导入它），移入一般数学主题",
+   "en": "I4b item 2 follow-up: rows reworded; IdealWarrant's note corrected (it defines posets and ideals itself; CompletionRole and HistoryIdeals import it) and moved to the general-mathematics theme"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/FORMAL-NOTES.md": {
+   "zh": "I4b 第二项的后续：SelectionRelabelCorrespondence 一节改称经选项模型的选择",
+   "en": "I4b item 2 follow-up: the SelectionRelabelCorrespondence section now names selection through a model of the options"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean": {
+   "zh": "I4b 第二项的后续：只改注释",
+   "en": "I4b item 2 follow-up: comments only"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing the I4b item 2 follow-up (study section 153): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月16日，I4b 第二项的后续落地（研究第153节）：改绑新回执并更新哈希："
+ }
+}

@@ -194,7 +194,7 @@
 | `runs-on-families-chosen-step-by-step` | [逐步选定的家族 / Families chosen step by step](records/runs-on-families-chosen-step-by-step.md) | theorem | recorded-checked |
 | `scientific-inquiry-foundation` | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](records/scientific-inquiry-foundation.md) | target | open |
 | `seeking-boundary` | [寻求恰在律所不变、满足其目标的状态静止：“比现在更多”需要开放的世界，“高于一切他者”不同时满足两个；不断上升需要不衰减的步，衰减不断则上升停止 / Seeking rests exactly at a state the law leaves unchanged that meets its target: more than now needs an open world and above all others never holds of two; rising without end needs steps that do not run down, and running down stops it](records/seeking-boundary.md) | theorem | recorded-checked |
-| `selection-by-the-record-alone` | [只读记录的选择 / Selection by the record alone](records/selection-by-the-record-alone.md) | theorem | recorded-checked |
+| `selection-through-a-model-of-the-options` | [经选项模型的选择 / Selection through a model of the options](records/selection-through-a-model-of-the-options.md) | theorem | recorded-checked |
 | `selection-through-registration` | [经识的选择 / Selection through registration](records/selection-through-registration.md) | theorem | recorded-checked |
 | `selection-under-registration-revision` | [登记关系改变时，哪些选择仍可表达与执行 / Which selections survive and remain executable when registration changes](records/selection-under-registration-revision.md) | theorem | recorded-checked |
 | `self-good-reachable-g0` | [从立场自身之善到可及的 G0 / From a standpoint's own good to reachable G0](records/self-good-reachable-g0.md) | theorem | recorded-checked |

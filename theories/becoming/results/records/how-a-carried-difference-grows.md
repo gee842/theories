@@ -86,6 +86,7 @@ Aliases / 别名: `how a carried difference grows`, `所携带的差别怎样增
 ### History / 沿革
 
 - 2026-10-16：新增，回答 how-much-difference-arrives 的 next_delta 首项“回路的一般理论”与 comparison-where-the-rest-responds、runaway-distance-unregistered 中“一般地定义回路并陈述失控”（P118）；研究 §152。 / 16 October 2026: added, answering the first item of how-much-difference-arrives' next_delta, a general theory of loops, and the item of comparison-where-the-rest-responds and runaway-distance-unregistered asking to define a loop in general and state a runaway (P118); study section 152.
+- 2026年10月16日，I4b 第二项的后续落地（研究第153节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第153节（经选项模型的选择：第151节的重新框定）及其英文段；第151节开头加一条向后的注记，其正文作为证据保留）。 / 16 October 2026, landing the I4b item 2 follow-up (study section 153): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 153 (selection through a model of the options: the reframing of section 151) with its English paragraph; a forward note at the top of section 151, whose text stays as evidence).
 
 </details>
 

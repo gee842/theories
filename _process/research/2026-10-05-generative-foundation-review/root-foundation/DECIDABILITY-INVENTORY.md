@@ -1,14 +1,14 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261015T195010.513125Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261015T202927.668755Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261015T195010.513125Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261015T202927.668755Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
-| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 409 |
+| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 417 |
 | 只在证明中用到 / used only in proofs | 237 |
 | 不用到 / unused | 0 |
 | 排中律或其受限形式作为假设（边界定理）/ excluded middle, in full or restricted form, as a hypothesis (boundary theorems) | 33 |
@@ -32,7 +32,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 另一个值 / another value | 另一个值：取与给定值不同的值，需分辨值的相同 / another value: a value other than a given one, which tells values apart | 1 |
 | 不重复的列表 / a list without repetition | 不重复的列表：成员关系已定 / a list without repetition: membership decided | 7 |
 | 逐个条件换入 / mixed in condition by condition | 逐个条件换入另一段历史：需分辨条件的相同 / another history mixed in condition by condition: tells conditions apart | 8 |
-| 交换两个值 / exchanging two values | 交换两个值：需分辨输入是否为其中任一值 / exchanging two values: decides whether the input is either of the exchanged values | 32 |
+| 交换两个值 / exchanging two values | 交换两个值：需分辨输入是否为其中任一值 / exchanging two values: decides whether the input is either of the exchanged values | 40 |
 | 列表成员判定 / list membership | 列表成员的布尔判定：需逐项分辨值的相同 / boolean list membership: tells values apart at each listed member | 1 |
 | 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 185 |
 | 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 31 |
@@ -188,7 +188,15 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Learning | `Learning.refutations_not_recurring` | `DecidableEq O` | 按否证学习 / learning by refutation | 可判定是它自己的条件 / its own condition |
 | Learning | `Learning.refuted_before` | `DecidableEq O` | 按否证学习 / learning by refutation | 可判定是它自己的条件 / its own condition |
 | Learning | `Learning.rest_unrefuted` | `DecidableEq O` | 按否证学习 / learning by refutation | 可判定是它自己的条件 / its own condition |
+| Learning | `Learning.selects_not_right_of_parted` | `DecidableEq K` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Learning | `Learning.selects_right_of_reads` | `DecidableEq K` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Learning | `Learning.selects_right_through` | `DecidableEq K` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Learning | `Learning.selects_through_lumping` | `DecidableEq K` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
 | Learning | `Learning.swapTo_moves` | `DecidableEq O` | 另一个值 / another value | 可判定是它自己的条件 / its own condition |
+| Learning | `Learning.values_lumped` | `DecidableEq K` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Learning | `Learning.values_not_right_of_parted` | `DecidableEq K` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Learning | `Learning.values_right_lumped` | `DecidableEq K` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Learning | `Learning.values_right_of_reads` | `DecidableEq K` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
 | Listing | `Flow.BalancesOn.sample_byOccurrence` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
 | Listing | `Listed.of_listing` | `(t : Nat) → (a b : α) → a ∈ l t → b ∈ l t → Decidable (a = b)` | 不重复的列表 / a list without repetition | 可判定是它自己的条件 / its own condition |
 | Listing | `keepFresh_spec` | `Decidable (a ∈ l)` | 不重复的列表 / a list without repetition | 可判定是它自己的条件 / its own condition |
