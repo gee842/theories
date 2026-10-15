@@ -1754,6 +1754,30 @@ Imports: `Std`
 
 </details>
 
+<a id="module-cb1d1649776a"></a>
+
+<details>
+<summary>SharedStockInstances.lean — 5 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/market-generativity/meta-attractor/SharedStockInstances.lean`
+
+Imports: `Becoming.Weighted`, `CorrectionDependence`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SharedStockInstances.selectedTotal_eq_mass](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean#L33) | 33 |
+| [SharedStockInstances.total_eq_mass](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean#L42) | 42 |
+| [SharedStockInstances.every_selection_within_iff_total_within](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean#L52) | 52 |
+| [SharedStockInstances.each_within_alone_not_together](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean#L64) | 64 |
+
+定义与类型 / Definitions and types:
+
+- `def` [SharedStockInstances.firstDraws](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean#L28) (L28)
+
+</details>
+
 <a id="module-e1b765e5997b"></a>
 
 <details>

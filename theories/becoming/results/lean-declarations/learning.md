@@ -1502,6 +1502,42 @@ Imports: `Mathlib.Tactic`
 
 </details>
 
+<a id="module-cb0a713b7a8b"></a>
+
+<details>
+<summary>ContinuationCorrespondence.lean — 17 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean`
+
+Imports: `Becoming.Keeping`, `JointContinuation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.ContinuationCorrespondence.post_eq_seen](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L45) | 45 |
+| [Becoming.ContinuationCorrespondence.usable_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L50) | 50 |
+| [Becoming.ContinuationCorrespondence.viable_iff_keptFor](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L56) | 56 |
+| [Becoming.ContinuationCorrespondence.works_iff_keeps](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L78) | 78 |
+| [Becoming.ContinuationCorrespondence.keeps_iff_works](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L91) | 91 |
+| [Becoming.ContinuationCorrespondence.works_exists_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L104) | 104 |
+| [Becoming.ContinuationCorrespondence.classicalChoice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L112) | 112 |
+| [Becoming.ContinuationCorrespondence.viable_iff_plan_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L117) | 117 |
+| [Becoming.ContinuationCorrespondence.viable_iff_plan_listed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L127) | 127 |
+| [Becoming.ContinuationCorrespondence.toPlan_zip](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L142) | 142 |
+| [Becoming.ContinuationCorrespondence.compatible_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L150) | 150 |
+| [Becoming.ContinuationCorrespondence.joint_plan_composition_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L164) | 164 |
+| [Becoming.ContinuationCorrespondence.compatibility_necessary_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L190) | 190 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.ContinuationCorrespondence.processOf](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L39) (L39)
+- `def` [Becoming.ContinuationCorrespondence.successor](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L42) (L42)
+- `def` [Becoming.ContinuationCorrespondence.toPlan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L68) (L68)
+- `def` [Becoming.ContinuationCorrespondence.ofPlan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean#L73) (L73)
+
+</details>
+
 <a id="module-000cb4a6ef8b"></a>
 
 <details>

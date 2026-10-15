@@ -18,26 +18,26 @@
     "classification": "Path-based documentary roles; working-source is not a claim of accepted, complete, canonical or checked status. A file containing only #print axioms and no inventoried named declarations is an audit-driver."
   },
   "statistics": {
-    "lean_paths": 1241,
-    "distinct_byte_contents": 887,
+    "lean_paths": 1244,
+    "distinct_byte_contents": 890,
     "byte_identical_duplicate_groups": 97,
     "roles": {
       "audit-driver": 14,
       "development-attempt": 527,
       "historical-draft": 3,
       "imported-archive": 23,
-      "working-source": 674
+      "working-source": 677
     },
-    "working_named_theorem_lemma_occurrences": 17075,
-    "working_explicit_named_declaration_occurrences": 26496,
+    "working_named_theorem_lemma_occurrences": 17104,
+    "working_explicit_named_declaration_occurrences": 26538,
     "working_groups": {
       "abstraction": 41,
       "concern": 15,
       "core": 247,
-      "ethics": 138,
+      "ethics": 139,
       "inquiry": 72,
-      "learning": 50,
-      "other": 28,
+      "learning": 51,
+      "other": 29,
       "renewal": 12,
       "shared": 66,
       "valuation": 19
@@ -6606,6 +6606,15 @@
       "proof_status": "not_assessed_by_catalogue"
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean",
+      "sha256": "cd28afbeb20d83a45f7940d4e5625465ab15dea71eddf509b1bb5de569d3e9cc",
+      "role": "working-source",
+      "group": "learning",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean",
       "sha256": "786a52255cca3952c72a2da4a4d80184573dcb4d5ec3fcee269d56f028ff7c2f",
       "role": "working-source",
@@ -7479,6 +7488,15 @@
         "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
       ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean",
+      "sha256": "94a2fe61db45140c22417738f961e625575c81f16b3e8e47752e5f0b06ff7b07",
+      "role": "working-source",
+      "group": "ethics",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "direct_documentation_links_from": [],
       "proof_status": "not_assessed_by_catalogue"
     },
     {
@@ -9794,6 +9812,15 @@
       "direct_documentation_links_from": [
         "experiments/market-generativity/meta-attractor/RESPONSE-README.md"
       ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/SharedStockInstances.lean",
+      "sha256": "c936534c823952bbc76f7f8fbc8fde6d0e71183941cbfc09b05f1f7e5c4b4d2a",
+      "role": "working-source",
+      "group": "other",
+      "package_readme": "experiments/market-generativity/meta-attractor/README.md",
+      "direct_documentation_links_from": [],
       "proof_status": "not_assessed_by_catalogue"
     },
     {
@@ -138242,6 +138269,152 @@
       },
       "print_axioms_commands": 0
     },
+    "94a2fe61db45140c22417738f961e625575c81f16b3e8e47752e5f0b06ff7b07": {
+      "byte_size": 11853,
+      "line_count": 225,
+      "imports": [
+        "Becoming.Copying",
+        "Becoming.Stock",
+        "Becoming.Evolution",
+        "Becoming.Order",
+        "LearnedProcedureTransmission"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "kitWord",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.kitWord",
+          "line": 52
+        },
+        {
+          "kind": "def",
+          "name": "pool",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.pool",
+          "line": 55
+        },
+        {
+          "kind": "def",
+          "name": "attach",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.attach",
+          "line": 59
+        },
+        {
+          "kind": "theorem",
+          "name": "countOf_replicate",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.countOf_replicate",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "use_kitWord",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.use_kitWord",
+          "line": 68
+        },
+        {
+          "kind": "theorem",
+          "name": "lineage_released_iff",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.lineage_released_iff",
+          "line": 72
+        },
+        {
+          "kind": "theorem",
+          "name": "reconstruction_builds_longest_lineage",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.reconstruction_builds_longest_lineage",
+          "line": 93
+        },
+        {
+          "kind": "inductive",
+          "name": "Move",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.Move",
+          "line": 109
+        },
+        {
+          "kind": "def",
+          "name": "process",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.process",
+          "line": 114
+        },
+        {
+          "kind": "theorem",
+          "name": "material_balanced",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.material_balanced",
+          "line": 120
+        },
+        {
+          "kind": "theorem",
+          "name": "support_balanced",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.support_balanced",
+          "line": 128
+        },
+        {
+          "kind": "theorem",
+          "name": "course_conserves",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.course_conserves",
+          "line": 137
+        },
+        {
+          "kind": "def",
+          "name": "procedure",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.procedure",
+          "line": 147
+        },
+        {
+          "kind": "def",
+          "name": "successors",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.successors",
+          "line": 150
+        },
+        {
+          "kind": "theorem",
+          "name": "total_replicate",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.total_replicate",
+          "line": 153
+        },
+        {
+          "kind": "theorem",
+          "name": "faithful_procedure",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.faithful_procedure",
+          "line": 161
+        },
+        {
+          "kind": "theorem",
+          "name": "family_unchanged",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.family_unchanged",
+          "line": 167
+        },
+        {
+          "kind": "theorem",
+          "name": "faithful_selects",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.faithful_selects",
+          "line": 186
+        },
+        {
+          "kind": "def",
+          "name": "historyOut",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.historyOut",
+          "line": 204
+        },
+        {
+          "kind": "theorem",
+          "name": "history_selects",
+          "qualified_name_hint": "Becoming.TransmissionCorrespondence.history_selects",
+          "line": 208
+        }
+      ],
+      "declaration_counts": {
+        "def": 7,
+        "inductive": 1,
+        "theorem": 12
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "94c770bd95a8b19c13c8e74dd95b19ac01884f8f261e5284e23034eb2c4c95bc": {
       "byte_size": 4764,
       "line_count": 101,
@@ -186426,6 +186599,58 @@
       },
       "print_axioms_commands": 9
     },
+    "c936534c823952bbc76f7f8fbc8fde6d0e71183941cbfc09b05f1f7e5c4b4d2a": {
+      "byte_size": 3861,
+      "line_count": 72,
+      "imports": [
+        "Becoming.Weighted",
+        "CorrectionDependence"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "firstDraws",
+          "qualified_name_hint": "SharedStockInstances.firstDraws",
+          "line": 28
+        },
+        {
+          "kind": "theorem",
+          "name": "selectedTotal_eq_mass",
+          "qualified_name_hint": "SharedStockInstances.selectedTotal_eq_mass",
+          "line": 33
+        },
+        {
+          "kind": "theorem",
+          "name": "total_eq_mass",
+          "qualified_name_hint": "SharedStockInstances.total_eq_mass",
+          "line": 42
+        },
+        {
+          "kind": "theorem",
+          "name": "every_selection_within_iff_total_within",
+          "qualified_name_hint": "SharedStockInstances.every_selection_within_iff_total_within",
+          "line": 52
+        },
+        {
+          "kind": "theorem",
+          "name": "each_within_alone_not_together",
+          "qualified_name_hint": "SharedStockInstances.each_within_alone_not_together",
+          "line": 64
+        }
+      ],
+      "declaration_counts": {
+        "def": 1,
+        "theorem": 4
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b": {
       "byte_size": 6430,
       "line_count": 129,
@@ -188453,6 +188678,130 @@
       ],
       "declaration_counts": {
         "def": 11
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "cd28afbeb20d83a45f7940d4e5625465ab15dea71eddf509b1bb5de569d3e9cc": {
+      "byte_size": 11319,
+      "line_count": 203,
+      "imports": [
+        "Becoming.Keeping",
+        "JointContinuation"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "processOf",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.processOf",
+          "line": 39
+        },
+        {
+          "kind": "def",
+          "name": "successor",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.successor",
+          "line": 42
+        },
+        {
+          "kind": "theorem",
+          "name": "post_eq_seen",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.post_eq_seen",
+          "line": 45
+        },
+        {
+          "kind": "theorem",
+          "name": "usable_iff",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.usable_iff",
+          "line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "viable_iff_keptFor",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.viable_iff_keptFor",
+          "line": 56
+        },
+        {
+          "kind": "def",
+          "name": "toPlan",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.toPlan",
+          "line": 68
+        },
+        {
+          "kind": "def",
+          "name": "ofPlan",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.ofPlan",
+          "line": 73
+        },
+        {
+          "kind": "theorem",
+          "name": "works_iff_keeps",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.works_iff_keeps",
+          "line": 78
+        },
+        {
+          "kind": "theorem",
+          "name": "keeps_iff_works",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.keeps_iff_works",
+          "line": 91
+        },
+        {
+          "kind": "theorem",
+          "name": "works_exists_iff",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.works_exists_iff",
+          "line": 104
+        },
+        {
+          "kind": "theorem",
+          "name": "classicalChoice",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.classicalChoice",
+          "line": 112
+        },
+        {
+          "kind": "theorem",
+          "name": "viable_iff_plan_by_core",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.viable_iff_plan_by_core",
+          "line": 117
+        },
+        {
+          "kind": "theorem",
+          "name": "viable_iff_plan_listed",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.viable_iff_plan_listed",
+          "line": 127
+        },
+        {
+          "kind": "theorem",
+          "name": "toPlan_zip",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.toPlan_zip",
+          "line": 142
+        },
+        {
+          "kind": "theorem",
+          "name": "compatible_iff",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.compatible_iff",
+          "line": 150
+        },
+        {
+          "kind": "theorem",
+          "name": "joint_plan_composition_by_core",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.joint_plan_composition_by_core",
+          "line": 164
+        },
+        {
+          "kind": "theorem",
+          "name": "compatibility_necessary_by_core",
+          "qualified_name_hint": "Becoming.ContinuationCorrespondence.compatibility_necessary_by_core",
+          "line": 190
+        }
+      ],
+      "declaration_counts": {
+        "def": 4,
+        "theorem": 13
       },
       "textual_markers": {
         "sorry": [],

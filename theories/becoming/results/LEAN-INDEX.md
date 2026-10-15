@@ -14,7 +14,7 @@
 
 ## 覆盖范围 / Coverage
 
-本次目录包含 **1,241 个 `.lean` 路径、887 份不同字节内容**；其中 97 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **1,241 `.lean` paths and 887 distinct byte contents**, including 97 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
+本次目录包含 **1,244 个 `.lean` 路径、890 份不同字节内容**；其中 97 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **1,244 `.lean` paths and 890 distinct byte contents**, including 97 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
 
 | 文件角色 / File role | 路径数 / Paths |
 |---|---:|
@@ -22,9 +22,9 @@
 | 开发尝试 / Development attempt | 527 |
 | 历史草稿 / Historical draft | 3 |
 | 导入原件 / Imported archive | 23 |
-| 当前工作源 / Working source | 674 |
+| 当前工作源 / Working source | 677 |
 
-下方当前源与审计入口中，共扫描到 **17,075 个显式 theorem/lemma 声明位置**、26,496 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **17,075 explicit theorem/lemma occurrences** and 26,496 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
+下方当前源与审计入口中，共扫描到 **17,104 个显式 theorem/lemma 声明位置**、26,538 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **17,104 explicit theorem/lemma occurrences** and 26,538 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
 
 扫描包括隐藏、被忽略及未跟踪文件；排除 `.git`、`.lake`、`node_modules`、`.venv`、`venv`、`__pycache__` 目录与其他会话的工作树 `.claude/worktrees`，不追随目录符号链接。历史导入与开发尝试保存在 JSON 中，不在主表重复；运行、检查与快照目录中的冻结副本不读取也不列入，各由其运行的回执绑定，所以一次检查运行不改变本目录。当前源是按文件位置判断的文档角色，不等于已接受或已验证。 / Hidden, ignored and untracked files are included; dependency/cache directories listed above and other sessions' worktrees (`.claude/worktrees`) are excluded and directory symlinks are not followed. Archives and attempts remain in JSON without repeating them in the main table; saved copies in run, check and snapshot folders are neither read nor listed, each being bound by its own run's receipt, so a checker run leaves this catalogue unchanged. Working-source is a documentary role, not acceptance or verification status.
 
@@ -34,16 +34,16 @@
 
 | 方向 / Direction | 当前源与审计入口 / Entries |
 |---|---:|
-| [规范根据与生成方向 / Normative grounding and generative direction](#group-ethics) | 138 |
+| [规范根据与生成方向 / Normative grounding and generative direction](#group-ethics) | 139 |
 | [评价的形成与良知 / Valuation development and liangzhi](#group-valuation) | 19 |
 | [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](#group-inquiry) | 72 |
 | [支持与更新 / Support and renewal](#group-renewal) | 12 |
-| [学习、预测与动力学 / Learning, prediction and dynamics](#group-learning) | 50 |
+| [学习、预测与动力学 / Learning, prediction and dynamics](#group-learning) | 51 |
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](#group-abstraction) | 41 |
 | [关切与共同活动 / Concern and shared activity](#group-concern) | 15 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](#group-shared) | 66 |
 | [生成核心与关系结构 / Generative core and relational structure](#group-core) | 247 |
-| [其他形式研究 / Other formal studies](#group-other) | 28 |
+| [其他形式研究 / Other formal studies](#group-other) | 29 |
 
 <a id="group-ethics"></a>
 
@@ -101,6 +101,7 @@
 | [DriftMargins](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DriftMargins.lean) · [声明 / Names](lean-declarations/ethics.md#module-3d946731f17f) | 42 | 14 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md) |
 | [LearnedProcedureTransmission](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean) · [声明 / Names](lean-declarations/ethics.md#module-314ffd0b4f8a) | 37 | 20 | [理论 / Theory](../README.md) · [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md) |
 | [LearningCorrespondence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean) · [声明 / Names](lean-declarations/ethics.md#module-2aadf9f9573e) | 15 | 4 | [理论 / Theory](../chapters/COGNITION-LEARNING-AND-EVOLUTION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md) |
+| [TransmissionCorrespondence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean) · [声明 / Names](lean-declarations/ethics.md#module-cb7e432c0bed) | 12 | 8 | [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found |
 | [UpdaterConsequences](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/UpdaterConsequences.lean) · [声明 / Names](lean-declarations/ethics.md#module-290c62292425) | 36 | 21 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md) |
 | [AcquiredCorrection](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean) · [声明 / Names](lean-declarations/ethics.md#module-16aca933a540) | 24 | 21 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md) |
 | [AcquiredCorrectionCases](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrectionCases.lean) · [声明 / Names](lean-declarations/ethics.md#module-97814b0f3d34) | 0 | 7 | [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md) |
@@ -371,6 +372,7 @@
 | [AdaptiveCore](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/AdaptiveCore.lean) · [声明 / Names](lean-declarations/learning.md#module-c3234339b888) | 0 | 2 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARYING-DYNAMICS-INTEGRATION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) |
 | [ChangingDependency](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean) · [声明 / Names](lean-declarations/learning.md#module-751a219a4f11) | 25 | 11 | [理论 / Theory](../chapters/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) |
 | [ContinuationAdequacy](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean) · [声明 / Names](lean-declarations/learning.md#module-fa7b94dd1994) | 14 | 15 | [理论 / Theory](../chapters/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) |
+| [ContinuationCorrespondence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean) · [声明 / Names](lean-declarations/learning.md#module-cb0a713b7a8b) | 13 | 4 | [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found |
 | [DiagnosticTracking](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean) · [声明 / Names](lean-declarations/learning.md#module-000cb4a6ef8b) | 17 | 4 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) |
 | [EmbodiedChoiceScales](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean) · [声明 / Names](lean-declarations/learning.md#module-6883a5aecb08) | 14 | 12 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-PROOF.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) |
 | [EvidenceThroughChange](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean) · [声明 / Names](lean-declarations/learning.md#module-820a29505426) | 15 | 13 | [理论 / Theory](../chapters/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-THROUGH-CHANGE-INTEGRATION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) |
@@ -840,6 +842,7 @@
 | [RecursiveSelection](../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean) · [声明 / Names](lean-declarations/other.md#module-10f5394663dc) | 39 | 15 | [包说明 / Package notes](../../../experiments/market-generativity/meta-attractor/README.md) |
 | [ReproductionNetwork](../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean) · [声明 / Names](lean-declarations/other.md#module-6a029e611328) | 58 | 49 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md) · [包说明 / Package notes](../../../experiments/market-generativity/meta-attractor/README.md) |
 | [ResponseCapacity](../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean) · [声明 / Names](lean-declarations/other.md#module-fcd53f73ee36) | 46 | 7 | [包说明 / Package notes](../../../experiments/market-generativity/meta-attractor/README.md) |
+| [SharedStockInstances](../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean) · [声明 / Names](lean-declarations/other.md#module-cb1d1649776a) | 4 | 1 | [包说明 / Package notes](../../../experiments/market-generativity/meta-attractor/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found |
 | [TestingReorganization](../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean) · [声明 / Names](lean-declarations/other.md#module-e1b765e5997b) | 43 | 40 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md) · [包说明 / Package notes](../../../experiments/market-generativity/meta-attractor/README.md) |
 | [VersionedTaskInstances](../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean) · [声明 / Names](lean-declarations/other.md#module-f82d00be1c12) | 22 | 8 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../experiments/market-generativity/meta-attractor/README.md) |
 

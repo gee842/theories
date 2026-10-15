@@ -269,13 +269,15 @@ def measure():
     return json.loads(out)
 
 
-def insert_study(section, utc, m):
-    records = m['records']
+def insert_study(section, utc, before, m):
+    records, was = m['records'], before['records']
     stated, outside = records.get('stated on the spine', 0), records.get('outside the spine run', 0)
+    stated0, outside0 = was.get('stated on the spine', 0), was.get('outside the spine run', 0)
     fill = {'{CORE}': utc['core'], '{SHARED}': utc['shared'], '{CONT}': utc['continuation'],
-            '{TRANS}': utc['transmission'], '{STATED}': f'176 → {stated}', '{OUTSIDE}': f'10 → {outside}',
-            '{NOLEAN}': str(records.get('no Lean proof', 0)), '{CITING}': f'180 → {m["records_citing_a_spine_proof"]}',
-            '{STATED_SHORT}': str(stated), '{OUTSIDE_SHORT}': str(outside)}
+            '{TRANS}': utc['transmission'], '{STATED}': f'{stated0} → {stated}', '{OUTSIDE}': f'{outside0} → {outside}',
+            '{NOLEAN}': str(records.get('no Lean proof', 0)),
+            '{CITING}': f'{before["records_citing_a_spine_proof"]} → {m["records_citing_a_spine_proof"]}',
+            '{STATED_SHORT}': f'from {stated0} to {stated}', '{OUTSIDE_SHORT}': f'from {outside0} to {outside}'}
     zh, en = (KIT / 's129_zh.md').read_text(), (KIT / 's129_en.md').read_text()
     for key, value in fill.items():
         zh, en = zh.replace(key, value), en.replace(key, value)
@@ -294,11 +296,12 @@ def insert_study(section, utc, m):
 def main():
     section = int(sys.argv[1])
     utc = receipts()
+    before = measure()
     apply_records(utc)
     m = measure()
     print(json.dumps({k: m[k] for k in ('records', 'records_citing_a_spine_proof', 'records_outside_the_spine_run')},
                      ensure_ascii=False))
-    insert_study(section, utc, m)
+    insert_study(section, utc, before, m)
 
 
 if __name__ == '__main__':

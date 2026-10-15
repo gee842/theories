@@ -26,7 +26,9 @@
   "canonical_source": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
   "aliases": [
     "CorrectionDependence.every_selection_within_iff_total_within",
-    "aggregate-exit-funding"
+    "aggregate-exit-funding",
+    "Becoming.every_event_within_iff",
+    "Becoming.entries_within_not_together"
   ],
   "dependencies": [],
   "related": [
@@ -83,6 +85,46 @@
       "role": "provenance",
       "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "role": "proof",
+      "sha256": "bd182c924f76e1ffb740d6f4a1d2e95e3d6bed19869b8be1acd025d12d26fca9",
+      "declarations": [
+        "Becoming.mass",
+        "Becoming.every_event_within_iff",
+        "Becoming.entries_within_not_together"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/SharedStockInstances.lean",
+      "role": "proof",
+      "sha256": "c936534c823952bbc76f7f8fbc8fde6d0e71183941cbfc09b05f1f7e5c4b4d2a",
+      "declarations": [
+        "SharedStockInstances.firstDraws",
+        "SharedStockInstances.selectedTotal_eq_mass",
+        "SharedStockInstances.total_eq_mass",
+        "SharedStockInstances.every_selection_within_iff_total_within",
+        "SharedStockInstances.each_within_alone_not_together"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/shared-stock-instances-checks/20261015T151857.892080Z/verification.json",
+      "role": "receipt",
+      "sha256": "374eeb9102eda60722d4fd72f5683e5b583af740f44f3f55f5c3744819170036",
+      "declarations": []
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/check_shared_stock_instances.py",
+      "role": "provenance",
+      "sha256": "bfe2daa6dd403e50b3a35fac92535c15c7db0d35aeae9b6436395201ad6e4336",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -90,6 +132,20 @@
       "source": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
       "receipt": "experiments/market-generativity/meta-attractor/correction-dependence-verification.json",
       "sha256_pointer": "/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Weighted",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/market-generativity/meta-attractor/SharedStockInstances.lean",
+      "receipt": "experiments/market-generativity/meta-attractor/shared-stock-instances-checks/20261015T151857.892080Z/verification.json",
+      "sha256_pointer": "/source_sha256/SharedStockInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -110,6 +166,10 @@
     {
       "zh": "2026-10-10：按 Ren 的要求改用描述结构的内部名称：记录 ID 由 aggregate-exit-funding 改为 draws-on-a-shared-stock（旧 ID 留作别名，以便历史检查仍能找到），Lean 定理 all_coalitions_funded_iff_joint_total 与 individually_affordable_exits_can_fail_jointly 改名为 every_selection_within_iff_total_within 与 each_within_alone_not_together，参数 claims、reserve 改为 draws、stock；两项 Lean 检查重新运行并通过，证明内容不变。",
       "en": "2026-10-10: internal names restated in structural words at Ren's request. The record ID aggregate-exit-funding became draws-on-a-shared-stock, with the old ID kept as an alias so historical checks still resolve; the Lean theorems all_coalitions_funded_iff_joint_total and individually_affordable_exits_can_fail_jointly became every_selection_within_iff_total_within and each_within_alone_not_together, with parameters claims and reserve renamed draws and stock. Both Lean checks were rerun and passed; the proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-15，整合 I3c（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Weighted 的列出论域上的质量律）。前 n 项汲取依后先列出是一个论域（SharedStockInstances.firstDraws），一种选取是其上的事件，汲取是其权重：选取的总和即该事件的质量，总和即全域的质量（selectedTotal_eq_mass、total_eq_mass）。于是每种选取都在存量之内恰当总和在内，即核心的 every_event_within_iff（every_selection_within_iff_total_within）；两项各为二的汲取分别在二之内而合起来不在，全域的质量为四（each_within_alone_not_together，同核心的 entries_within_not_together）。CorrectionDependence 的原证明与回执保持原范围。外围实例模块由其检查器实查（Lean 4.30.0-rc2，回执 20261015T151857.892080Z），五条声明的公理报告都为空；所实例化的核心律由核心运行审计（回执 20261015T150956.178111Z）。",
+      "en": "15 October 2026, integration I3c (Ren: “a lot proofs are probably not integrated”): stated on the spine (Becoming.Weighted’s law of masses on a listed domain). The first n draws listed latest first are a domain (SharedStockInstances.firstDraws), a selection is an event on it and the draws are its weighting: the selected total is the selection’s mass and the total the whole domain’s (selectedTotal_eq_mass, total_eq_mass). So every selection fits within the stock exactly when the total does, which is the core’s every_event_within_iff (every_selection_within_iff_total_within), and two draws of two each fit a stock of two but not together, the whole domain’s mass being four (each_within_alone_not_together, as the core’s entries_within_not_together). CorrectionDependence’s proof and receipt keep their scope. The periphery instance module is checked by its own checker (Lean 4.30.0-rc2, receipt 20261015T151857.892080Z), all five declarations with empty axiom reports; the core law it instantiates is audited by the core run (receipt 20261015T150956.178111Z)."
     }
   ]
 }

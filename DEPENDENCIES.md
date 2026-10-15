@@ -2542,6 +2542,10 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)
 
+## joint-plan-composition ← finite-continuation-plans
+
+`formal-reuse` — 复用 Becoming.Keeping 的方案与保持（Plan、Plan.Keeps）及外围的方案互译（ContinuationCorrespondence.toPlan）；共同方案是两部分方案的合成。 / Reuses Becoming.Keeping’s plans and keeping (Plan, Plan.Keeps) and the periphery’s translation of plans (ContinuationCorrespondence.toPlan); a joint plan composes the parts’ plans.
+
 ## joint-practice-forms-continuation ← organizational-rule-inheritance
 
 `formal-reuse` — retry_produces_existing_review 接入原 review 操作；enrollment_consumes_review 实际使用 admitted_requires_review，交接及规则修订直接使用原 step。 / retry_produces_existing_review supplies the exact prior review operation; enrollment_consumes_review uses admitted_requires_review, and handoff/rule revision directly use the original step.
@@ -2749,6 +2753,14 @@ Curated result edges retain their exact interpretation. File imports can be expl
 ## learned-procedure-transmission ← encounter-selection-and-revision
 
 `interpretive` — 复用取得信息、进一步经历选择及实际使用的区分；新联结论历史不正式导入经历选择模型。 / Reuses the distinction between acquired information, selection of further encounters and actual use. This new connectionist history is not a formal import of the encounter-choice model.
+
+## learned-procedure-transmission ← inherited-structural-copying
+
+`formal-reuse` — 复用 Becoming.Copying.lineage_all_iff：容量即一个共享池与支持所释放的最长谱系（TransmissionCorrespondence.lineage_released_iff）。 / Reuses Becoming.Copying.lineage_all_iff: the capacity is the longest lineage one shared pool and its support release (TransmissionCorrespondence.lineage_released_iff).
+
+## learned-procedure-transmission ← evolution-on-descent
+
+`formal-reuse` — 复用 Becoming.price 的计数形式：忠实重构不升不降，后继中控制位的总数即各家族之位以其容量加权（TransmissionCorrespondence.faithful_selects）。 / Reuses the counting form of Becoming.price: faithful reconstruction raises and lowers nothing, so the successors’ total of the procedure bit is the families’ bits weighted by their capacities (TransmissionCorrespondence.faithful_selects).
 
 ## learning-by-refutation ← recurrence-without-premise
 

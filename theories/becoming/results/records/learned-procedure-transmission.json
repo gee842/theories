@@ -69,6 +69,31 @@
       "declarations": [
         "LearnedProcedureTransmission.complete_formation_transmission_use"
       ]
+    },
+    {
+      "zh": "容量即一个共享池所释放的最长谱系：后继的十三单位前体读作同一种记号的词、所持前体为池、二十单位支持在释放时汲取，n 个后继依次释放恰当 n 在容量之内，故重构恰建成所释放的最长谱系（Copying.lineage_all_iff 的实例）。",
+      "en": "The capacity is the longest lineage one shared pool releases: reading a successor’s thirteen precursor units as a word of one kind of token, the precursor held as the pool and its twenty support units as drawn at release, n successors are released in turn exactly when n is within the capacity, so a reconstruction builds exactly the longest lineage released (an instance of Copying.lineage_all_iff).",
+      "declarations": [
+        "Becoming.TransmissionCorrespondence.lineage_released_iff",
+        "Becoming.TransmissionCorrespondence.reconstruction_builds_longest_lineage"
+      ]
+    },
+    {
+      "zh": "每条由接触与重构组成的路径都保存材料与支持，不只一个循环（Stock.trace_balance 的实例，无汲取无补充）。",
+      "en": "Every course of exposures and reconstructions conserves material and support, not one cycle only (an instance of Stock.trace_balance with nothing drawn or replenished).",
+      "declarations": [
+        "Becoming.TransmissionCorrespondence.material_balanced",
+        "Becoming.TransmissionCorrespondence.support_balanced",
+        "Becoming.TransmissionCorrespondence.course_conserves"
+      ]
+    },
+    {
+      "zh": "忠实重构不升不降，后继中控制位的总数即各家族之位以其后继数（即容量）加权（Price 方程的计数形式）；历史中三个后继有两个带响应的更新方式，两个亲代中只有一个。",
+      "en": "Faithful reconstruction raises and lowers nothing, so the successors’ total of the procedure bit is the families’ bits weighted by their successor counts, each its capacity (the counting form of Price’s equation); in the history two of three successors carry the responsive procedure where one of two parents did.",
+      "declarations": [
+        "Becoming.TransmissionCorrespondence.faithful_selects",
+        "Becoming.TransmissionCorrespondence.history_selects"
+      ]
     }
   ],
   "hypotheses": [
@@ -132,7 +157,8 @@
     "LearnedProcedureTransmission.reconstruct_isSome_iff",
     "LearnedProcedureTransmission.reconstruct_inherits",
     "LearnedProcedureTransmission.cycle_transmits",
-    "LearnedProcedureTransmission.history_transmits"
+    "LearnedProcedureTransmission.history_transmits",
+    "Becoming.Stock.trace_balance"
   ],
   "dependencies": [
     {
@@ -141,6 +167,22 @@
       "detail": {
         "zh": "复用取得信息、进一步经历选择及实际使用的区分；新联结论历史不正式导入经历选择模型。",
         "en": "Reuses the distinction between acquired information, selection of further encounters and actual use. This new connectionist history is not a formal import of the encounter-choice model."
+      }
+    },
+    {
+      "id": "inherited-structural-copying",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Becoming.Copying.lineage_all_iff：容量即一个共享池与支持所释放的最长谱系（TransmissionCorrespondence.lineage_released_iff）。",
+        "en": "Reuses Becoming.Copying.lineage_all_iff: the capacity is the longest lineage one shared pool and its support release (TransmissionCorrespondence.lineage_released_iff)."
+      }
+    },
+    {
+      "id": "evolution-on-descent",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Becoming.price 的计数形式：忠实重构不升不降，后继中控制位的总数即各家族之位以其容量加权（TransmissionCorrespondence.faithful_selects）。",
+        "en": "Reuses the counting form of Becoming.price: faithful reconstruction raises and lowers nothing, so the successors’ total of the procedure bit is the families’ bits weighted by their capacities (TransmissionCorrespondence.faithful_selects)."
       }
     }
   ],
@@ -235,6 +277,73 @@
       "role": "provenance",
       "sha256": "ad4e0a9485bd7e87ce2f5b5ef9cf713a20ef885786ccff64e36ca1e1a9c79d20",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
+      "role": "proof",
+      "sha256": "362e277a256000c731ad6c3bd98eceda80ca9ff7ce8f67b97abc378ee151d479",
+      "declarations": [
+        "Becoming.Copying.lineage_all_iff",
+        "Becoming.Copying.batch"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
+      "role": "proof",
+      "sha256": "d1ac93985f6c1101548936c86ad153829718a4a945c31a434114a6352033434f",
+      "declarations": [
+        "Becoming.Stock.Balanced",
+        "Becoming.Stock.trace_balance"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "role": "proof",
+      "sha256": "e67ee59057675ac686f35ff210a01161eff80bad6195b59fc52a286467ac7e7e",
+      "declarations": [
+        "Becoming.price",
+        "Becoming.offspring",
+        "Becoming.selected"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean",
+      "role": "proof",
+      "sha256": "94a2fe61db45140c22417738f961e625575c81f16b3e8e47752e5f0b06ff7b07",
+      "declarations": [
+        "Becoming.TransmissionCorrespondence.kitWord",
+        "Becoming.TransmissionCorrespondence.pool",
+        "Becoming.TransmissionCorrespondence.attach",
+        "Becoming.TransmissionCorrespondence.lineage_released_iff",
+        "Becoming.TransmissionCorrespondence.reconstruction_builds_longest_lineage",
+        "Becoming.TransmissionCorrespondence.Move",
+        "Becoming.TransmissionCorrespondence.process",
+        "Becoming.TransmissionCorrespondence.material_balanced",
+        "Becoming.TransmissionCorrespondence.support_balanced",
+        "Becoming.TransmissionCorrespondence.course_conserves",
+        "Becoming.TransmissionCorrespondence.procedure",
+        "Becoming.TransmissionCorrespondence.successors",
+        "Becoming.TransmissionCorrespondence.faithful_selects",
+        "Becoming.TransmissionCorrespondence.history_selects"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/transmission-correspondence-checks/20261015T151904.501987Z/verification.json",
+      "role": "receipt",
+      "sha256": "43fb60f0b2a25b331a68fadc68cbcb6074bd282724cab160c624c2c401d57bd4",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/check_transmission_correspondence.py",
+      "role": "provenance",
+      "sha256": "a1a6156d7824bd93da595d43475b59f34bfe39505cd88e41c4b654d377a83eab",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -242,6 +351,34 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-checks/20261013T211356.378776Z/verification.json",
       "sha256_pointer": "/modules/5/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Copying",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Stock",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Evolution",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/transmission-correspondence-checks/20261015T151904.501987Z/verification.json",
+      "sha256_pointer": "/source_sha256/TransmissionCorrespondence",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -262,6 +399,10 @@
     {
       "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
       "zh": "开放问题计划第 17 项：市场词（代价、价格、预算、信用等）改为结构词，意思不变。"
+    },
+    {
+      "zh": "2026-10-15，整合 I3c（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Copying、Becoming.Stock 与 Becoming.Evolution 的一般律）。外围实例模块 TransmissionCorrespondence：容量即一个共享池所释放的最长谱系（lineage_released_iff、reconstruction_builds_longest_lineage，Copying.lineage_all_iff 的实例）；接触与重构是同一进程的两种步，每步之后材料与支持如前，故任意路径都保存二者（course_conserves，Stock.trace_balance 的实例）；忠实重构不升不降，后继中控制位的总数即各家族之位以其容量加权（faithful_selects，Becoming.price），历史中三个后继有两个带响应的更新方式而两个亲代中只有一个（history_selects）。Price 的形式是恒等式，不是适应度的度量；后继数由各家族实际任务成功所留的支持定出。构造的理想化前提保持不变。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T151904.501987Z）：不提及构造之状态的六条声明（kitWord、attach、countOf_replicate、use_kitWord、Move、total_replicate）公理报告为空，其余只有 Mathlib 的标准公理（propext、Classical.choice、Quot.sound）；所实例化的核心律由核心运行审计（回执 20261015T150956.178111Z）。",
+      "en": "15 October 2026, integration I3c (Ren: “a lot proofs are probably not integrated”): stated on the spine (the general laws of Becoming.Copying, Becoming.Stock and Becoming.Evolution). Periphery instance module TransmissionCorrespondence: the capacity is the longest lineage one shared pool releases (lineage_released_iff, reconstruction_builds_longest_lineage, instances of Copying.lineage_all_iff); exposures and reconstructions are two kinds of step of one process across which material and support stand as before, so every course conserves both (course_conserves, an instance of Stock.trace_balance); faithful reconstruction raises and lowers nothing, so the successors’ total of the procedure bit is the families’ bits weighted by their capacities (faithful_selects, Becoming.price), and in the history two of three successors carry the responsive procedure where one of two parents did (history_selects). Price’s form is an identity, not a measure of fitness; the counts are set by the support each family’s actual task success left. The construction’s idealized premises are unchanged. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T151904.501987Z): the six declarations that mention no state of the construction (kitWord, attach, countOf_replicate, use_kitWord, Move, total_replicate) have empty axiom reports, the rest Mathlib’s standard axioms only (propext, Classical.choice, Quot.sound); the core laws it instantiates are audited by the core run (receipt 20261015T150956.178111Z)."
     }
   ],
   "text_versions": [

@@ -2381,6 +2381,45 @@ Imports: `Becoming.Learning`, `CompositionalAcquisition`, `UpdaterConsequences`
 
 </details>
 
+<a id="module-cb7e432c0bed"></a>
+
+<details>
+<summary>TransmissionCorrespondence.lean — 20 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean`
+
+Imports: `Becoming.Copying`, `Becoming.Stock`, `Becoming.Evolution`, `Becoming.Order`, `LearnedProcedureTransmission`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.TransmissionCorrespondence.countOf_replicate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L61) | 61 |
+| [Becoming.TransmissionCorrespondence.use_kitWord](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L68) | 68 |
+| [Becoming.TransmissionCorrespondence.lineage_released_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L72) | 72 |
+| [Becoming.TransmissionCorrespondence.reconstruction_builds_longest_lineage](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L93) | 93 |
+| [Becoming.TransmissionCorrespondence.material_balanced](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L120) | 120 |
+| [Becoming.TransmissionCorrespondence.support_balanced](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L128) | 128 |
+| [Becoming.TransmissionCorrespondence.course_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L137) | 137 |
+| [Becoming.TransmissionCorrespondence.total_replicate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L153) | 153 |
+| [Becoming.TransmissionCorrespondence.faithful_procedure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L161) | 161 |
+| [Becoming.TransmissionCorrespondence.family_unchanged](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L167) | 167 |
+| [Becoming.TransmissionCorrespondence.faithful_selects](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L186) | 186 |
+| [Becoming.TransmissionCorrespondence.history_selects](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L208) | 208 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.TransmissionCorrespondence.kitWord](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L52) (L52)
+- `def` [Becoming.TransmissionCorrespondence.pool](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L55) (L55)
+- `def` [Becoming.TransmissionCorrespondence.attach](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L59) (L59)
+- `inductive` [Becoming.TransmissionCorrespondence.Move](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L109) (L109)
+- `def` [Becoming.TransmissionCorrespondence.process](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L114) (L114)
+- `def` [Becoming.TransmissionCorrespondence.procedure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L147) (L147)
+- `def` [Becoming.TransmissionCorrespondence.successors](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L150) (L150)
+- `def` [Becoming.TransmissionCorrespondence.historyOut](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean#L204) (L204)
+
+</details>
+
 <a id="module-290c62292425"></a>
 
 <details>

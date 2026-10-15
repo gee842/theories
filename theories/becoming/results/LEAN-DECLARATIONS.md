@@ -8,16 +8,16 @@
 
 | 方向 / Topic | 模块／审计入口 / Entries | theorem/lemma 位置 / Occurrences |
 |---|---:|---:|
-| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 138 | 2,482 |
+| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,494 |
 | [评价的形成与良知 / Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
 | [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 72 | 1,880 |
 | [支持与更新 / Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
-| [学习、预测与动力学 / Learning, prediction and dynamics](lean-declarations/learning.md) | 50 | 876 |
+| [学习、预测与动力学 / Learning, prediction and dynamics](lean-declarations/learning.md) | 51 | 889 |
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
 | [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 247 | 7,873 |
-| [其他形式研究 / Other formal studies](lean-declarations/other.md) | 28 | 869 |
+| [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
 
@@ -132,6 +132,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Continuation.lean](lean-declarations/core.md#module-104e85254609) | 生成核心与关系结构 / Generative core and relational structure |
 | [ContinuationAdequacy.lean](lean-declarations/learning.md#module-fa7b94dd1994) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [ContinuationConditions.lean](lean-declarations/core.md#module-e5007bff1b23) | 生成核心与关系结构 / Generative core and relational structure |
+| [ContinuationCorrespondence.lean](lean-declarations/learning.md#module-cb0a713b7a8b) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [ContinuationRenewal.lean](lean-declarations/ethics.md#module-3e3471402b88) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [ContinuationRenewalAudit.lean](lean-declarations/ethics.md#module-38d6a8892340) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [ContinuationScope.lean](lean-declarations/abstraction.md#module-62dd1356dc98) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
@@ -646,6 +647,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [SemanticAction.lean](lean-declarations/shared.md#module-a51c4566a005) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [SemanticCalibration.lean](lean-declarations/shared.md#module-ad79f81f6792) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [SettlingCorrespondence.lean](lean-declarations/ethics.md#module-4d312d4e9464) | 规范根据与生成方向 / Normative grounding and generative direction |
+| [SharedStockInstances.lean](lean-declarations/other.md#module-cb1d1649776a) | 其他形式研究 / Other formal studies |
 | [ShrinkingGain.lean](lean-declarations/learning.md#module-59ffcfa61113) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [SignatureTruth.lean](lean-declarations/abstraction.md#module-aacdf65172d8) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [Significance.lean](lean-declarations/core.md#module-892ef63d2e69) | 生成核心与关系结构 / Generative core and relational structure |
@@ -689,6 +691,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Tower.lean](lean-declarations/core.md#module-14bb83ca577e) | 生成核心与关系结构 / Generative core and relational structure |
 | [TrajectoryFidelity.lean](lean-declarations/valuation.md#module-baf6d4d24a70) | 评价的形成与良知 / Valuation development and liangzhi |
 | [Transmission.lean](lean-declarations/core.md#module-914f5b4db0b5) | 生成核心与关系结构 / Generative core and relational structure |
+| [TransmissionCorrespondence.lean](lean-declarations/ethics.md#module-cb7e432c0bed) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [TuningCorrespondence.lean](lean-declarations/learning.md#module-1745ec53c5aa) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [TypedRenewal.lean](lean-declarations/shared.md#module-04366373329a) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [TypedTruth.lean](lean-declarations/abstraction.md#module-77505a9c5a3f) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
