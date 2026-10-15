@@ -107,7 +107,7 @@ Landing order, after the core run with these bytes:
 
 The I4a table read [PluralRecords](../../../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/PluralRecords.lean) and [TieBreaking](../../../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean) as join candidates. Becoming.Selection stated selection through registration, not selection by the record alone. Names follow board rule 8 (Ren, 16 October 2026): the instance module is named after the core law.
 
-What the branch `i4b-selection` holds. It is based on `p110-frontier` (5d8db205), since P110 changes Selection.lean's docstring and lands first.
+What the branch `i4b-selection` holds. It was started on `p110-frontier` (5d8db205), since P110 changes Selection.lean's docstring, and merges main after P110's landing (b6f973cb).
 - `Becoming/Selection.lean` gains a section "Selection by the record alone" (namespace `Relabel`), taking it from 43 to 67 theorems (91 declarations), with no new import. `scratch_build.py` reports every axiom report empty and no warnings; Learning, which imports it, and the root `Becoming` rebuild cleanly. Its contents:
   - `swap` and its laws; `Equivariant`, `EquivariantValue` and `EquivariantChoice`; `fixed_of_tied`;
   - `Equivariant.tied` and `selected_alike_iff`;
@@ -118,7 +118,7 @@ What the branch `i4b-selection` holds. It is based on `p110-frontier` (5d8db205)
 - Its checker `check_selection_relabel_correspondence.py`, from `make_relabel_checker.py` (spec `relabel.json`).
   - The originals have no machine receipt, so the checker compiles and audits them as well: 72 declaration audits, all of which must be empty.
   - It allows exactly TieBreaking's one warning, the unused `noWithhold`.
-  - A dry run under Lean 4.30.0-rc2 passed. The missing receipts were only P110's 14 changed modules and Becoming.Selection.
+  - A dry run under Lean 4.30.0-rc2 on the merged branch passed. The only missing receipt was Becoming.Selection.
 - `apply_docs_selection.py`, already applied, with parts `module`, `chapter`, `package` and `notes`:
   - the Selection docstring bullet and the line on what is not derived;
   - the chapter's §9 Selection row, now bilingual, 67 theorems;
@@ -126,19 +126,18 @@ What the branch `i4b-selection` holds. It is based on `p110-frontier` (5d8db205)
   - the module bullet in `Becoming.lean`;
   - a section in the package's FORMAL-NOTES.md.
   - After a merge that conflicts in the chapter, take the merged chapter without this branch's edits and run the `chapter` part again.
-- `DECIDABILITY-INVENTORY.py`: Relabel's four definitions are classified `swap`, and `Relabel.alone_single` `same`. A scratch run passes with nothing unclassified; proof-only is 224 → 229 on this base (P110's 4, this branch's 1).
+- `DECIDABILITY-INVENTORY.py`: Relabel's four definitions are classified `swap`, and `Relabel.alone_single` `same`. A scratch run on the merged branch passes with nothing unclassified: statement-level 368 → 390 (the 22 laws naming the options' decided equality) and proof-only 230 → 231.
 - `apply_i4a_selection.py`, already applied to the rows:
   - PluralRecords and TieBreaking become joined, and SelectionRelabelCorrespondence gets a row.
   - The theme `symmetry`, which held only the two, is removed.
-  - On this base the pipeline gives 601 rows (joined 64, join candidates 60). The only stems missing rows are P110's Gain and Gluing, which the run covers once P110's receipt exists.
-  - Regenerate MODULE-CLASSIFICATION.md after merging main.
+  - On the merged branch the pipeline gives 602 rows (joined 66, join candidates 59, no problem); MODULE-CLASSIFICATION.md is regenerated.
 - `s_i4b2_zh.md` and `s_i4b2_en.md`, the study section (heading number left to the integrator).
 
-Landing order, after P110 lands, main is merged, and the core run with these bytes:
+Landing order, after the core run with these bytes:
 1. Run `check_selection_relabel_correspondence.py`; it must pass against the new core receipt.
 2. Run `update_records_selection.py`. It rebinds selection-through-registration, generalization-through-lumping and wisdom-root-part-one (new Selection hash, binding to the retained core receipt); the first also links the new record.
 3. Run `make_record_selection.py SECTION`. It writes selection-by-the-record-alone (F04) and binds:
    - Selection.lean to the retained core receipt;
    - the instance, PluralRecords.lean and TieBreaking.lean to the instance receipt.
    - It asserts the caps; its English statement is 292 characters.
-4. Regenerate DECIDABILITY-INVENTORY.md and MODULE-CLASSIFICATION.md (I4a pipeline), insert the study section, run the Lean catalogue, then `make research-render` and `make research-check`.
+4. Regenerate DECIDABILITY-INVENTORY.md (MODULE-CLASSIFICATION.md is current), insert the study section, run the Lean catalogue, then `make research-render` and `make research-check`.

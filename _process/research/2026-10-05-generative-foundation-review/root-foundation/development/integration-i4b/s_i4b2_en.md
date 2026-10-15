@@ -17,8 +17,8 @@
   - the originals are checked here, since they import only Lean's prelude and have no machine receipt (their build record is `inquiry-warrant/BUILD.md`): every declaration is audited with the instance's and must have an empty report;
   - the originals name declarations with `?` and `'`, so they are scanned with those characters admitted, and audit lines are read anchored at their start, so a primed name is read whole.
   - TieBreaking prints one warning, the unused hypothesis `noWithhold` of `full_tie_open_uniform`, kept as stated. It is the only output allowed, and the receipt records it.
-  - A dry run under Lean 4.30.0-rc2 passed, with its receipt in a scratch folder: 13 theorems and 72 declaration audits, all empty. The only missing receipts were the 14 modules whose docstrings P110 changed and the new Becoming.Selection, which await their core run.
-- **Decidability inventory.** Relabel's four definitions are classified as exchanging two values; proof-only theorems gain one, `Relabel.alone_single`, which tells whether two options are the same.
+  - A dry run under Lean 4.30.0-rc2 passed, with its receipt in a scratch folder: 13 theorems and 72 declaration audits, all empty. The only missing receipt was the new Becoming.Selection, which awaits its core run.
+- **Decidability inventory.** Relabel's four definitions are classified as exchanging two values. Statement-level uses go 368 → 390, the 22 laws naming the options' decided equality. Proof-only theorems go 230 → 231 with `Relabel.alone_single`, which tells whether two options are the same.
 - **Records.** The new record selection-by-the-record-alone (F04) is related to selection-through-registration. Three records citing Selection.lean are rebound, their claims unchanged.
 - **Author counterreview.**
   - The law is new to the spine: Selection had only the registration form. The core states it more generally than the originals: any options with decided equality, entries of any kind, as relations with no search over listed options. The originals' converse searches `Fin n` with `pick`; that step stays in the periphery.

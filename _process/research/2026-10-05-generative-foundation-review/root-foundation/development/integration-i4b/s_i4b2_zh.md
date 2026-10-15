@@ -6,7 +6,7 @@
 Result(s): 新记录 selection-by-the-record-alone；selection-through-registration、generalization-through-lumping、wisdom-root-part-one 改绑（论断不变）
 Delta: 核心：Becoming.Selection 加“只读记录的选择”一节（命名空间 Relabel，43 → 67 项定理），不加导入；
        外围实例模块及其检查器：SelectionRelabelCorrespondence（13 项定理），在 remaining-dependency 包旁；检查器也编译并审计未有回执的 PluralRecords 与 TieBreaking；
-       可判定性清点：Relabel 的四项定义归入“交换两个值”，只在证明中用到 +1（Relabel.alone_single，分辨两个选项是否相同）
+       可判定性清点：Relabel 的四项定义归入“交换两个值”，陈述依赖它者 368 → 390（22 条律写出选项的相同已定），只在证明中用到 230 → 231（Relabel.alone_single，分辨两个选项是否相同）
 Supplied premises / correspondence: 核心律不加前提：选项的相同已定（交换两个选项需要它，每条陈述都写出），条目任意种类；选择、取值或选取只读记录是所用定理的假设；实例沿用 PluralRecords 与 TieBreaking 的定义
 Evidence: 核心由核心运行审计（回执于落地时绑定）；外围检查器实跑（回执于落地时绑定），72 项声明审计公理报告皆空
 Boundary: 见下文“边界与读法”
@@ -23,7 +23,7 @@ Integration: §9 Selection 一行（改为双语，陈述与计数）与一个�
 
 **PluralRecords 与 TieBreaking（SelectionRelabelCorrespondence，外围，自有检查器）。** 记录即 `Fin n` 上的条目记录，交换两个中心即 `Relabel.swap`（`transpose_eq_swap`），同等对待中心的规则即只读记录的选取（`treatsAlike_iff`），同等对待的抽签其权重只读记录、不保留的权重不变（`lotteryAlike_iff`），单独持有即 `Relabel.Alone`（`alone_iff`）。核心律给出 `tied_not_served`、`all_tied_forces_withholding`、`servable_iff_untied`、`tied_equal_weight`、`full_tie_equal_weights`、`uniform_alike` 与 `point_mass_not_alike_at_tie`（各为 `_by_core`）；`servable_iff_untied` 的反方向由核心给出单独持有的不变性与唯一性，`PluralRecords.pick` 在 `Fin n` 中找出持有者。13 项定理的公理报告皆空。原文件的定义与陈述不变。
 
-**检查器。** `make_relabel_checker.py` 由 `../integration-i3e/make_checker.py relabel.json` 生成 `check_selection_relabel_correspondence.py`，并作四处改动：Lean 根目录；把两个原文件与实例加入模块索引；原文件在此检查（它们只导入 Lean 的前导，无机器回执，构建记录是 `inquiry-warrant/BUILD.md`），其每项声明与实例一起审计，报告须皆空；原文件的名含 `?` 与 `'`，故以容许这些字符的扫描读出，审计行按行首读，使带撇号的名完整。TieBreaking 打印一条警告（`full_tie_open_uniform` 未用的假设 `noWithhold`，按原陈述保留），它是唯一允许的输出，回执记下。干跑（回执写到临时目录）在 Lean 4.30.0-rc2 下通过：13 项定理，72 项声明审计皆空；缺回执的只有 P110 改过文件说明的 14 个模块与新的 Becoming.Selection，待其核心运行。
+**检查器。** `make_relabel_checker.py` 由 `../integration-i3e/make_checker.py relabel.json` 生成 `check_selection_relabel_correspondence.py`，并作四处改动：Lean 根目录；把两个原文件与实例加入模块索引；原文件在此检查（它们只导入 Lean 的前导，无机器回执，构建记录是 `inquiry-warrant/BUILD.md`），其每项声明与实例一起审计，报告须皆空；原文件的名含 `?` 与 `'`，故以容许这些字符的扫描读出，审计行按行首读，使带撇号的名完整。TieBreaking 打印一条警告（`full_tie_open_uniform` 未用的假设 `noWithhold`，按原陈述保留），它是唯一允许的输出，回执记下。干跑（回执写到临时目录）在 Lean 4.30.0-rc2 下通过：13 项定理，72 项声明审计皆空；缺回执的只有新的 Becoming.Selection，待其核心运行。
 
 **作者反审。**
 1. **新律还是重述？** 对脊柱是新的：Selection 只有经识的形式。核心的陈述比原文件更一般：选项任意（相同已定），条目任意种类，且以关系陈述，不需在列出的选项中搜索；原文件的反方向用 `pick` 在 `Fin n` 中搜索，这一步留在外围。
