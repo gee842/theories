@@ -50,7 +50,11 @@ imp_by=collections.defaultdict(set)
 for r in out:
     if not r['snap']:
         for i in r['imports_outside']: imp_by[i].add(r['stem'])
-for r in out: r['importers']=sorted(imp_by.get(r['stem'],()))
+for r in out:
+    r['importers']=sorted(imp_by.get(r['stem'],()))
+    kinds={layer.get(x) for x in r['reach_run']}
+    r['reach_kind']=('snapshot' if r['snap'] else 'core/bridge' if kinds & {'core','bridge'} else 'inherited' if 'inherited' in kinds
+                     else 'foundation only' if kinds else 'none')
 json.dump(out,open(S+'connect.json','w'),ensure_ascii=False,indent=1)
 c=collections.Counter()
 for r in out:
