@@ -51,7 +51,9 @@
     "ClassificationRobustJudgment.mixed_classifications_can_favor_opposite_routes",
     "ClassificationRobustJudgment.no_route_undefeated_under_every_classification",
     "Becoming.classification_robust_iff_of_em",
-    "Becoming.classification_robust_iff_iff_em"
+    "Becoming.classification_robust_iff_iff_em",
+    "Becoming.extension_classification_robust_iff",
+    "Becoming.frame_classification_robust_iff_of_em"
   ],
   "dependencies": [
     {
@@ -328,6 +330,22 @@
         "Becoming.two_extremes_suffice_of_em",
         "Becoming.classification_robust_iff_iff_em"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CoursesBridge.lean",
+      "role": "proof",
+      "sha256": "f1c5fd8ac0f939b317a305255c8d774c8a6e868baec73d2b40120447e13ec466",
+      "declarations": [
+        "Becoming.extension_classification_robust_iff",
+        "Becoming.frame_classification_robust_iff_of_em",
+        "Becoming.extension_classification_robust"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -379,6 +397,13 @@
       "sha256_pointer": "/source_sha256/ClassificationRobustJudgment",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CoursesBridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.CoursesBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -413,6 +438,10 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：（桥接 Becoming.CoursesBridge）在框架的构型上，基本内容即框架在那里实现者：每种新内容分类下的严格偏好，恰是保留新内容且以之为增益时更好，排中律为具名假设（frame_classification_robust_iff_of_em）；沿生成扩展（a 实现 b 所实现的一切及一个 b 所缺的活内容），不需排中律，a 在每种分类下都被严格偏好，恰当它保留 b 的每个新内容（extension_classification_robust、extension_classification_robust_iff）：排中律只在两边基本内容相同、比较转到增益时才需要。Becoming.CoursesBridge 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: (bridge Becoming.CoursesBridge) on a frame's configurations, the basic contents being what the frame realizes there: strict preference under every classification of fresh contents is retaining them and being better with them as gains, with excluded middle named (frame_classification_robust_iff_of_em); along a generative extension (a realizes everything b realizes and a living content b lacks) no excluded middle is needed, and a is strictly preferred under every classification exactly when it keeps every fresh content of b (extension_classification_robust, extension_classification_robust_iff): excluded middle is needed only where the basic contents are the same on both sides and the comparison passes to gains. Becoming.CoursesBridge is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
     }
   ]
 }

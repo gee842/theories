@@ -30,7 +30,9 @@
   "canonical_source": "theories/becoming/chapters/ETHICAL-LEARNING.md",
   "aliases": [
     "Becoming.undominated_has_iff",
-    "Becoming.Judgment.required_of_bettered"
+    "Becoming.Judgment.required_of_bettered",
+    "Becoming.Courses.extension_frontier_exists",
+    "Becoming.Courses.extension_frontier_has_iff"
   ],
   "dependencies": [
     {
@@ -204,6 +206,21 @@
       "role": "provenance",
       "sha256": "33ab5ef6ae1318c66f4e8047b9869c54f2bbfd6fb849141a9c9b8553023cdb02",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "role": "proof",
+      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "declarations": [
+        "Becoming.Courses.extension_frontier_exists",
+        "Becoming.Courses.extension_frontier_has_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -232,6 +249,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/organization-correspondence-checks/20261015T163336.437151Z/verification.json",
       "sha256_pointer": "/source_sha256/OrganizationCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -268,6 +292,10 @@
     {
       "zh": "2026-10-15，整合 I3e（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Decidedness 的列出之选项中不被胜过者，新增，不加前提；桥接 Judgment.required_of_bettered）。一个列出的非空选项表上，比较非自反、传递且在表上弱判定（¬p ∨ ¬¬p，WeaklyDecided；判定者都弱判定，Decided.weakly）时，有不被胜过的选项（exists_undominated）；不被胜过者不能缺少每个缺之者都被胜过的性质（Undominated.not_not_has），该性质判定时不被胜过者都有它（undominated_has）；比较与性质都判定时，不被胜过者都有它，恰当缺之的每个选项都被表上某选项胜过（undominated_has_iff）。在全部关系上，存在之律所需恰是弱排中律（exists_undominated_iff_weakly），去掉性质的判定恰是排中律（undominated_has_iff_em）。桥接：在确切列出的选项表上，PracticalJudgment 的前沿即不被胜过者（Judgment.frontier_iff_undominated），故比较弱判定、任务判定时，前沿非空且每个成员都完成任务（Judgment.required_of_bettered），即 formation_required_of_improvable_absence，不用经典推理。外围实例 OrganizationCorrespondence：以 Lean 的经典判定供给核心所要求者，formation_required_of_improvable_absence 由 exists_undominated 与 undominated_has 给出（formation_required_by_core），所构造的协调情形亦然（coordination_is_required_by_core）。比较、合格性与所构造的历史保持原范围；规范解释继承公开的 J 承诺。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T163336.437151Z），只用标准公理：frontier_iff_undominated 的公理报告为空，formation_required_by_core 与 coordination_is_required_by_core 以 Lean 的经典判定供给核心所要求者、并用外围的 simp 引理（propext、Classical.choice、Quot.sound）；所实例化的核心律与桥接定理由核心运行审计（回执 20261015T163210.426211Z，公理报告为空）。",
       "en": "15 October 2026, integration I3e (Ren: “a lot proofs are probably not integrated”): stated on the spine (the new laws of Becoming.Decidedness for undominated members of a listed menu, no premise; the bridge’s Judgment.required_of_bettered). On a nonempty listed menu where the comparison is irreflexive, transitive and weakly decided (¬p ∨ ¬¬p, WeaklyDecided; whatever is decided is weakly decided, Decided.weakly), some member is undominated (exists_undominated); an undominated member cannot lack a property every member lacking it is bettered in (Undominated.not_not_has), and has it where the property is decided (undominated_has); where comparison and property are both decided, every undominated member has the property exactly where every member lacking it is bettered by some member (undominated_has_iff). Over all relations, the existence law needs exactly weak excluded middle (exists_undominated_iff_weakly), and dropping the decidedness of the property is exactly excluded middle (undominated_has_iff_em). Bridge: on an exact listed menu the frontier of PracticalJudgment is the undominated members (Judgment.frontier_iff_undominated), so where the comparison is weakly decided and the task decided, the frontier is not empty and every member of it performs the task (Judgment.required_of_bettered): formation_required_of_improvable_absence with no classical reasoning. Periphery instance OrganizationCorrespondence: with Lean’s classical decidedness supplying what the core asks, formation_required_of_improvable_absence follows from exists_undominated and undominated_has (formation_required_by_core), and so does the constructed coordination case (coordination_is_required_by_core). The comparison, eligibility and the constructed history keep their scope; the normative interpretation inherits the explicit J commitments. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T163336.437151Z), standard axioms only: frontier_iff_undominated has an empty report, and formation_required_by_core and coordination_is_required_by_core supply what the core asks by Lean’s classical decidedness and use the periphery’s simp lemmas (propext, Classical.choice, Quot.sound); the core laws and bridge theorems it instantiates are audited by the core run (receipt 20261015T163210.426211Z, empty axiom reports)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：在框架构型的非空列出选项表上，生成扩展弱判定时，某个构型不被任何成员扩展（extension_frontier_exists）；扩展与任务都判定时，没有成员扩展的每个构型都完成任务，恰当每个缺任务的成员都被某个成员扩展（extension_frontier_has_iff）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: on a nonempty listed menu of a frame's configurations where generative extension is weakly decided, some configuration is extended by no member (extension_frontier_exists); with extension and the task decided, every configuration no member extends performs the task exactly when every member lacking it is extended by some member (extension_frontier_has_iff). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
     }
   ],
   "text_versions": [

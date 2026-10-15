@@ -29,7 +29,9 @@
     "Becoming.Countdown.Advances.completes",
     "Becoming.Countdown.pending_before",
     "Becoming.VersionedTaskInstances.head_completes",
-    "Becoming.VersionedTaskInstances.valid_head_instance"
+    "Becoming.VersionedTaskInstances.valid_head_instance",
+    "Becoming.Courses.Advances.completes_plan",
+    "Becoming.Courses.pending_before_course"
   ],
   "dependencies": [],
   "related": [
@@ -126,6 +128,21 @@
       "role": "receipt",
       "sha256": "a96ddf7c21bc027d5eed8b1bd3c7ba6c21731d3b2f9297a5f42f6b649af3ed55",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "role": "proof",
+      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "declarations": [
+        "Becoming.Courses.Advances.completes_plan",
+        "Becoming.Courses.pending_before_course"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -147,6 +164,13 @@
       "source": "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",
       "receipt": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T092502.891314Z/verification.json",
       "sha256_pointer": "/source_sha256/VersionedTaskInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -211,6 +235,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：无燃料的工作作为计时之律过程的计划，在 work + 1 步内完成（Advances.completes_plan）；该过程至多 work 步的每条历程都使任务仍待处理，工作减去所走的步数（pending_before_course）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: unfuelled work completes in work + 1 moves as a plan of the tick's process (Advances.completes_plan); every course of at most work moves of that process leaves the task pending, with the work lowered by the moves taken (pending_before_course). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
     }
   ]
 }

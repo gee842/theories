@@ -28,7 +28,9 @@
     "ChanceAdequacy.fulfillment_gives_chance_floor",
     "ChanceAdequacy.all_weights_preserve_mass_iff",
     "Becoming.all_weights_preserve_mass_iff_by_core",
-    "Becoming.fulfillment_floor_by_core"
+    "Becoming.fulfillment_floor_by_core",
+    "Becoming.Courses.claims_floor",
+    "Becoming.Courses.claims_every_weighting_iff"
   ],
   "dependencies": [],
   "related": [
@@ -120,6 +122,21 @@
       "role": "receipt",
       "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "role": "proof",
+      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "declarations": [
+        "Becoming.Courses.claims_floor",
+        "Becoming.Courses.claims_every_weighting_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -141,6 +158,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -169,6 +193,10 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：框架的主张在其列出的构型上由布尔事件读出：每个列出的、实现需求与旧支持的构型都实现新支持时，在每个权重下，被旧支持满足的需求质量在新支持的质量之内，后者在整体之内（claims_floor）；每个权重都使一个主张的质量在另一个之内，恰当凡实现前者的列出构型都实现后者（claims_every_weighting_iff）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: the claims of a frame read at its listed configurations by Boolean events: where every listed configuration realizing the demand and the old support realizes the new support, under every weighting the mass of demand met by old support is within the mass of the new support, and that within the whole (claims_floor); every weighting keeps one claim's mass within another's exactly where every listed configuration realizing the first realizes the second (claims_every_weighting_iff). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
     }
   ]
 }

@@ -28,7 +28,9 @@
     "CorrectionDependence.every_selection_within_iff_total_within",
     "aggregate-exit-funding",
     "Becoming.every_event_within_iff",
-    "Becoming.entries_within_not_together"
+    "Becoming.entries_within_not_together",
+    "Becoming.Courses.selections_within_iff",
+    "Becoming.Courses.supported_not_together"
   ],
   "dependencies": [],
   "related": [
@@ -125,6 +127,22 @@
       "role": "provenance",
       "sha256": "bfe2daa6dd403e50b3a35fac92535c15c7db0d35aeae9b6436395201ad6e4336",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "role": "proof",
+      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "declarations": [
+        "Becoming.Courses.selections_within_iff",
+        "Becoming.Courses.supported_not_together",
+        "Becoming.Courses.twoDrawers"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -146,6 +164,13 @@
       "source": "experiments/market-generativity/meta-attractor/SharedStockInstances.lean",
       "receipt": "experiments/market-generativity/meta-attractor/shared-stock-instances-checks/20261015T151857.892080Z/verification.json",
       "sha256_pointer": "/source_sha256/SharedStockInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -170,6 +195,10 @@
     {
       "zh": "2026-10-15，整合 I3c（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Weighted 的列出论域上的质量律）。前 n 项汲取依后先列出是一个论域（SharedStockInstances.firstDraws），一种选取是其上的事件，汲取是其权重：选取的总和即该事件的质量，总和即全域的质量（selectedTotal_eq_mass、total_eq_mass）。于是每种选取都在存量之内恰当总和在内，即核心的 every_event_within_iff（every_selection_within_iff_total_within）；两项各为二的汲取分别在二之内而合起来不在，全域的质量为四（each_within_alone_not_together，同核心的 entries_within_not_together）。CorrectionDependence 的原证明与回执保持原范围。外围实例模块由其检查器实查（Lean 4.30.0-rc2，回执 20261015T151857.892080Z），五条声明的公理报告都为空；所实例化的核心律由核心运行审计（回执 20261015T150956.178111Z）。",
       "en": "15 October 2026, integration I3c (Ren: “a lot proofs are probably not integrated”): stated on the spine (Becoming.Weighted’s law of masses on a listed domain). The first n draws listed latest first are a domain (SharedStockInstances.firstDraws), a selection is an event on it and the draws are its weighting: the selected total is the selection’s mass and the total the whole domain’s (selectedTotal_eq_mass, total_eq_mass). So every selection fits within the stock exactly when the total does, which is the core’s every_event_within_iff (every_selection_within_iff_total_within), and two draws of two each fit a stock of two but not together, the whole domain’s mass being four (each_within_alone_not_together, as the core’s entries_within_not_together). CorrectionDependence’s proof and receipt keep their scope. The periphery instance module is checked by its own checker (Lean 4.30.0-rc2, receipt 20261015T151857.892080Z), all five declarations with empty axiom reports; the core law it instantiates is audited by the core run (receipt 20261015T150956.178111Z)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：在网的一步，对一个列出的形成家族，每种选取在一个条件上的需要都在该条件水平之内，恰当整个家族的需要在内（selections_within_iff）；网 twoDrawers 中每个形成在步 0 都被支持，两者的需要合起来却超出条件的水平（supported_not_together）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: at a step of a web, for a listed family of formations, the needs on one condition of every selection are within the condition's level exactly when the needs of the whole family are (selections_within_iff); in the web twoDrawers each formation is supported at step 0 while their needs together exceed the level (supported_not_together). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
     }
   ]
 }

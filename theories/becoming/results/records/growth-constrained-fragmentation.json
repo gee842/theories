@@ -27,7 +27,9 @@
   "aliases": [
     "GrownFragmentation.certificate_exact_split",
     "Becoming.closure_iff_certified",
-    "Becoming.not_within_of_closed"
+    "Becoming.not_within_of_closed",
+    "Becoming.Courses.system_iff_certified",
+    "Becoming.Courses.not_within_system_of_closed"
   ],
   "dependencies": [
     {
@@ -124,6 +126,21 @@
       "role": "provenance",
       "sha256": "573fcfa1e98e12d5935c739b9983f5847b140da183f5b177e98f0a890c8c1338",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "role": "proof",
+      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "declarations": [
+        "Becoming.Courses.system_iff_certified",
+        "Becoming.Courses.not_within_system_of_closed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -145,6 +162,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261015T161348.626052Z/verification.json",
       "sha256_pointer": "/source_sha256/PreparationCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -173,6 +197,10 @@
     {
       "zh": "2026-10-15，整合 I3d（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Feedback 的闭包证书，新增，不加前提）。一个区域恰是一个形成在关系下的闭包，当且仅当它含该形成、对关系封闭且在闭包之内（closure_iff_certified），在有限情形可由有限计算核查；含一形成而不含另一形成的封闭区域分开二者的闭包（not_within_of_closed）。外围实例 PreparationCorrespondence：由键相连即在对称读取的键之下的闭包内（connected_iff_within）；含根且对每条余下之键封闭的分量即该闭包（component_is_closure），故 certificate_exact_split 由核心律给出（certificate_exact_split_by_core），证书确认的切割分开两端（cut_separates）；组成相同的两个生长图切割回报不同（returns_differ），由 Readout.no_judge_of_merged，亲代摘要的任何函数都不同时给出二者（no_parent_summary_predictor_by_core）。生长史、采样与局部生产律保持原范围。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T161348.626052Z），只用标准公理：unit、use_unit 与 adjacent 等不提及外围构造的声明公理报告为空，置换的对应用库的 Classical.choice；所实例化的核心律由核心运行审计（回执 20261015T161154.555289Z，公理报告为空）。",
       "en": "15 October 2026, integration I3d (Ren: “a lot proofs are probably not integrated”): stated on the spine (the new closure certificate of Becoming.Feedback, no premise). A region is a formation’s closure under a relation exactly where it holds the formation, is closed under the relation and lies within the closure (closure_iff_certified), which a finite computation can check in the finite case; a closed region holding one formation and not another separates their closures (not_within_of_closed). Periphery instance PreparationCorrespondence: being connected by the bonds is lying within the closure under the bonds read symmetrically (connected_iff_within); a component holding its root and closed on every remaining bond is that closure (component_is_closure), so certificate_exact_split follows from the core law (certificate_exact_split_by_core), and a certified cut leaves its two ends apart (cut_separates); the two grown graphs of matched composition have different mean cut returns (returns_differ), so by Readout.no_judge_of_merged no function of the parent summary gives both (no_parent_summary_predictor_by_core). Growth histories, sampling and the local production law keep their scope. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T161348.626052Z), standard axioms only: unit, use_unit, adjacent and the other declarations that mention no periphery construction have empty axiom reports, and the permutation correspondence uses the library’s Classical.choice; the core laws it instantiates are audited by the core run (receipt 20261015T161154.555289Z, empty axiom reports)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：一个区域是形成 f 的系统（在共同条件中共同参与的闭包，Flow.WithinSystem），恰当它含 f、在共享条件下封闭且在 f 的系统之内（system_iff_certified）；在共享下封闭、含 f 而不含 g 的区域表明 g 不在 f 的系统中（not_within_system_of_closed）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: a region is the system of formation f (the closure under taking part in a common condition, Flow.WithinSystem) exactly when it holds f, is closed under sharing a condition and lies within f's system (system_iff_certified); a region closed under sharing that holds f but not g shows g is not in f's system (not_within_system_of_closed). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
     }
   ]
 }

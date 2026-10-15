@@ -1,20 +1,20 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261015T164401.170999Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261015T172257.067968Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261015T164401.170999Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261015T172257.067968Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
-| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 347 |
-| 只在证明中用到 / used only in proofs | 202 |
+| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 363 |
+| 只在证明中用到 / used only in proofs | 212 |
 | 不用到 / unused | 0 |
 | 排中律或其受限形式作为假设（边界定理）/ excluded middle, in full or restricted form, as a hypothesis (boundary theorems) | 33 |
 | 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 94 |
 | 证明可判定的定义与实例 / definitions and instances proving decidedness | 136 |
-| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 94 |
+| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 96 |
 
 ## 理由 / Reasons
 
@@ -34,11 +34,11 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 逐个条件换入 / mixed in condition by condition | 逐个条件换入另一段历史：需分辨条件的相同 / another history mixed in condition by condition: tells conditions apart | 5 |
 | 交换两个值 / exchanging two values | 交换两个值：需分辨输入是否为其中任一值 / exchanging two values: decides whether the input is either of the exchanged values | 10 |
 | 列表成员判定 / list membership | 列表成员的布尔判定：需逐项分辨值的相同 / boolean list membership: tells values apart at each listed member | 1 |
-| 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 135 |
-| 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 29 |
+| 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 156 |
+| 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 31 |
 | 分情形 / splits on a case | 按规定分情形：证明分别用规定成立与不成立的情形 / splits on a determination: the proof uses both its holding and failing cases | 28 |
 | 守护之步 / a guarded step | 守护之步：每步判定守护是否成立，不成立处停止 / a guarded step: decides the guard at each step and stops where it fails | 10 |
-| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 84 |
+| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 87 |
 | 造出列表 / builds a list | 造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from decided members | 15 |
 
 ## 陈述依赖可判定性的定理（计数或构造） / Theorems whose statements depend on decidedness (counting or construction)
@@ -118,6 +118,22 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Counting | `World.taking_binds_counting` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Coupling | `policyUpto_agrees` | `DecidableEq K` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
 | Coupling | `policyUpto_taken` | `DecidableEq K` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.copy_built_iff` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.copy_completes_iff` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.copy_empties_iff` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.copy_grows` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.every_released_iff_course` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.inspection_course_le` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.inspection_le_iff` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.lineage_course_iff` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.no_run_record_groups` | `DecidableEq A` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.readSteps_orbit` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.reading_completes_iff` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.release_course_iff` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.run_settles` | `DecidableEq S` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.runs_settle_iff` | `DecidableEq S` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.steps_orbit` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
+| Courses | `Courses.tick_extends` | `DecidableEq α` | 分辨相同 / tells same from different | 可判定是它自己的条件 / its own condition |
 | Decidedness | `ceasings_counts` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Decidedness | `comings_counts` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Decidedness | `counts_total` | `(a : α) → Decidable (q a)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
@@ -431,6 +447,16 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Coupling | `lumped_upto_iff` | `DecidableEq K` | 分辨相同 / tells same from different | — |
 | Coupling | `no_policy_upto_iff` | `DecidableEq A`；`DecidableEq K` | 找出 / finds | — |
 | Coupling | `throughout_or_fails` | `(n : Nat) → Decidable (p n)` | 找出 / finds | — |
+| Courses | `Courses.claims_every_weighting_iff` | `DecidableEq S` | 造出指示 / builds an indicator | — |
+| Courses | `Courses.course_reaches_iff_variant` | `DecidablePred target` | 造出指示 / builds an indicator | — |
+| Courses | `Courses.course_resolves_every_iff` | `DecidableEq M` | 分辨相同 / tells same from different | — |
+| Courses | `Courses.extension_frontier_exists` | `∀ (a b : S), a ∈ x :: rest → b ∈ x :: rest → Becoming.WeaklyDecided (Becoming.Extension F living b a)` | 找出 / finds | — |
+| Courses | `Courses.extension_frontier_has_iff` | `∀ (a : S), a ∈ menu → Becoming.Decided (task a)`；`∀ (a b : S), a ∈ menu → b ∈ menu → Becoming.Decided (Becoming.Extension F living b a)` | 找出 / finds | — |
+| Courses | `Courses.run_judges_iff` | `DecidableEq K` | 找出 / finds | — |
+| Courses | `Courses.run_resolves_explained_iff` | `DecidableEq M` | 分辨相同 / tells same from different | — |
+| Courses | `Courses.run_resolves_iff` | `DecidableEq M` | 分辨相同 / tells same from different | — |
+| Courses | `Courses.runs_look_right_iff` | `DecidableEq O`；`DecidableEq V` | 分辨相同 / tells same from different | — |
+| Courses | `Courses.runs_reading_right_iff` | `DecidableEq O`；`DecidableEq V` | 分辨相同 / tells same from different | — |
 | CrossSituational | `CrossSituational.candidates_eq_iff` | `DecidableEq M` | 分辨相同 / tells same from different | — |
 | CrossSituational | `CrossSituational.reads_every_iff` | `DecidableEq M` | 分辨相同 / tells same from different | — |
 | CrossSituational | `CrossSituational.resolves_explained_iff` | `DecidableEq M` | 分辨相同 / tells same from different | — |
@@ -693,6 +719,8 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Counting | `World.CountsObey` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` |
 | Counting | `World.saturated_decided` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` |
 | Coupling | `policyUpto` | `DecidableEq K` |
+| Courses | `Courses.inspection` | `DecidableEq α` |
+| Courses | `Courses.release` | `DecidableEq α` |
 | Dissipation | `adjoin` | `DecidableEq α` |
 | Dissipation | `decideMem` | `DecidableEq α` |
 | Dissipation | `insertNew` | `Decidable (a ∈ l)` |

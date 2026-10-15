@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "P114：导入 Becoming.Courses 与 Becoming.CoursesBridge 并增其条目",
+   "en": "P114: imports Becoming.Courses and Becoming.CoursesBridge with their bullets"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "P114：核心之列加入 Becoming.Courses，桥接之列加入 Becoming.CoursesBridge",
+   "en": "P114: Becoming.Courses added to the core list and Becoming.CoursesBridge to the bridge list"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "P114：Becoming.Courses 的 L4 一行及层内导入",
+   "en": "P114: an L4 row for Becoming.Courses and its within-layer imports"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "P114：§9 两行（Becoming.Courses 与 Becoming.CoursesBridge）；总数改据新回执（桥接模块七 → 八）",
+   "en": "P114: two §9 rows (Becoming.Courses and Becoming.CoursesBridge); the totals moved to the new receipt (bridge modules seven → eight)"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第138节（P114：散立的模块在共同基底上陈述，Becoming.Courses、Becoming.CoursesBridge）及其英文段；此前各节不变",
+   "en": "section 138 (P114: the apart modules read on the shared base, Becoming.Courses and Becoming.CoursesBridge) with its English paragraph; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T172257.067968Z 上重新生成，含 P114 的分类：陈述依赖可判定 347 → 363，只在证明中用到 202 → 212，取可判定族的定义 94 → 96",
+   "en": "regenerated on receipt 20261015T172257.067968Z with P114's classifications: statements depending on decidedness 347 → 363, used only in proofs 202 → 212, definitions taking a decidability family 94 → 96"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变",
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-DUMP.lean": {
+   "zh": "P114：导入 Becoming.CoursesBridge，使测量覆盖每个脊柱模块",
+   "en": "P114: imports Becoming.CoursesBridge, so the measure covers every spine module"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing P114 (study section 138): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月16日，P114 落地（研究第138节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}

@@ -28,7 +28,9 @@
     "MaterialMaturation.actual_preparation_iff",
     "MaterialMaturation.route_sound",
     "MaterialMaturation.route_complete",
-    "Becoming.Copying.empties_iff"
+    "Becoming.Copying.empties_iff",
+    "Becoming.Courses.copy_empties_iff",
+    "Becoming.Courses.copy_completes_iff"
   ],
   "dependencies": [],
   "related": [
@@ -124,6 +126,23 @@
       "role": "provenance",
       "sha256": "573fcfa1e98e12d5935c739b9983f5847b140da183f5b177e98f0a890c8c1338",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "role": "proof",
+      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "declarations": [
+        "Becoming.Courses.copy_empties_iff",
+        "Becoming.Courses.copy_completes_iff",
+        "Becoming.Courses.steps_orbit",
+        "Becoming.Courses.completes_units_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "role": "receipt",
+      "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -147,6 +166,13 @@
       "sha256_pointer": "/source_sha256/PreparationCorrespondence",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -165,6 +191,10 @@
     {
       "zh": "2026-10-15，整合 I3d（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Copying 的池用尽之律，新增，不加前提）。自池逐记号复制一词，池最后为空恰当池中每个记号恰如词中所用、且空闲支持覆盖各次接合的汲取（empties_iff；countOf_removeAll：移去之后每个记号的计数即原计数减去词中的计数）。外围实例 PreparationCorrespondence：route 完成、池中余 rest、支持余 left，恰当以每次接合汲取一单位的复制如此（route_some_iff）；故准备完成且池用尽，恰当池是配方的排列且配方不长于支持，所余支持为支持减去配方长度（preparation_empties_iff、preparation_leaves），即本记录的论断。所给配方、局部生产律与存量保持原范围。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T161348.626052Z），只用标准公理：unit、use_unit 与 adjacent 等不提及外围构造的声明公理报告为空，置换的对应用库的 Classical.choice；所实例化的核心律由核心运行审计（回执 20261015T161154.555289Z，公理报告为空）。",
       "en": "15 October 2026, integration I3d (Ren: “a lot proofs are probably not integrated”): stated on the spine (the new law of Becoming.Copying for emptying the pool, no premise). Copying a word token by token from a pool leaves the pool empty exactly where the pool holds each token exactly as often as the word uses it and the free support covers the draws of the attachments (empties_iff; countOf_removeAll: after removal each token’s count is its count less the word’s). Periphery instance PreparationCorrespondence: route completes with rest left in the pool and left support free exactly when copying with a unit draw per attachment does (route_some_iff); so preparation completes with an empty residual pool exactly when the pool is a permutation of the recipe and the recipe is no longer than the support, the support left being the support less the recipe’s length (preparation_empties_iff, preparation_leaves), which is this record’s claim. The supplied recipe, production law and stocks keep their scope. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T161348.626052Z), standard axioms only: unit, use_unit, adjacent and the other declarations that mention no periphery construction have empty axiom reports, and the permutation correspondence uses the library’s Classical.choice; the core laws it instantiates are audited by the core run (receipt 20261015T161154.555289Z, empty axiom reports)."
+    },
+    {
+      "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：作为其确定过程的计划，复制完成而无待处理者，恰当池供给该词且支持覆盖其汲取（copy_completes_iff）；复制的过程使池中无剩余，恰当池中每个记号恰如词所用的次数、且支持覆盖汲取（copy_empties_iff）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
+      "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: as a plan of its determined process, the copy completes with nothing pending exactly when the pool supplies the word and the support covers its draws (copy_completes_iff); the copy's process leaves nothing in the pool exactly when the pool holds each token exactly as often as the word uses it and the support covers the draws (copy_empties_iff). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
     }
   ]
 }

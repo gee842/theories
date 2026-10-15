@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 252 | 8,077 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 254 | 8,167 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -168,6 +168,8 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [CoupledOccurrence.lean](lean-declarations/core.md#module-9f09dc9dc6b1) | 生成核心与关系结构 / Generative core and relational structure |
 | [Coupling.lean](lean-declarations/core.md#module-5b7c5e19e3f2) | 生成核心与关系结构 / Generative core and relational structure |
 | [CouplingOptima.lean](lean-declarations/abstraction.md#module-ad36cb089189) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
+| [Courses.lean](lean-declarations/core.md#module-031f22d71259) | 生成核心与关系结构 / Generative core and relational structure |
+| [CoursesBridge.lean](lean-declarations/core.md#module-f045988e4f6b) | 生成核心与关系结构 / Generative core and relational structure |
 | [CoverageBoundary.lean](lean-declarations/abstraction.md#module-83c27fd36c83) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [CoverageBoundary.lean](lean-declarations/abstraction.md#module-e839ddaa98f9) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [CrossSituational.lean](lean-declarations/core.md#module-03b040af0e79) | 生成核心与关系结构 / Generative core and relational structure |
