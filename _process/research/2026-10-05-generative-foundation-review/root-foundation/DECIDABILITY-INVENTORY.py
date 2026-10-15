@@ -169,6 +169,9 @@ CONSTRUCTIONS = {
     # 2026-10-15, P113 the least registration with any number of conditions (Becoming.Sensitivity): the tail law
     # exchanges the indicator of whether levels vanish from some condition on, given its decision
     'vanishIndicator': 'indicate', 'tailLaw': 'indicate',
+    # 2026-10-15, P114 the apart laws read on the shared base (Becoming.Courses): the release law of copies from one
+    # shared pool and inspection as a process take the copy's moves, which compare tokens
+    'Courses.release': 'same', 'Courses.inspection': 'same',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -329,6 +332,14 @@ PROOF_KIND = {
         'ExchangeLaw.Nonanticipating.through_sensitive_of_every', 'comparison_through_sensitivity_of_readsFinitely',
         'alike_of_insensitiveAt_within', 'ExchangeLaw.ReadsFinitely.alike_of_insensitive']},
     'lpo_of_vanish_decided': 'split',
+    # 2026-10-15, P114 the apart laws read on the shared base (Becoming.Courses): each is proved by the law it reads on
+    # the base and is classified as that law is
+    **{n: 'same' for n in [
+        'Courses.run_resolves_iff', 'Courses.run_resolves_explained_iff', 'Courses.course_resolves_every_iff',
+        'Courses.runs_reading_right_iff', 'Courses.runs_look_right_iff']},
+    **{n: 'indicate' for n in ['Courses.claims_every_weighting_iff', 'Courses.course_reaches_iff_variant']},
+    **{n: 'find' for n in [
+        'Courses.extension_frontier_exists', 'Courses.extension_frontier_has_iff', 'Courses.run_judges_iff']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
