@@ -48,15 +48,16 @@ TIMEOUT = int(os.environ.get("LEAN_TIMEOUT", "900"))
 SCOPE = (
     "On the Becoming core's laws of a level drawn on and not replenished: in RenewingFormation, steps "
     "beyond the current renewal rate are the moves of one process recording the pressure and what "
-    "forms; across each the budget (held conditions plus the triangular renewal bound) falls by at "
-    "least what forms and something forms wherever it is positive (budget_falls, forms_while_held, "
-    "from beyond_step). The first n steps of a course beyond the current rate are a trace drawing in "
-    "all what formed (path_trace, total_moves), so by Stock.trace_falls the whole-unfolding total is "
-    "bounded by the budget (beyond_current_bounded_by_core), by Stock.exhausted_within and "
-    "Stock.draws_nothing_from_empty nothing forms from the time equal to the budget "
-    "(beyond_current_ceases_by_core), and every allocation of that formation, shared formation "
-    "included, ends with it (shared_formation_ends_by_core). The wear law and the representation of "
-    "formation keep the earlier modules' scope; which real processes satisfy the law is not checked."
+    "forms; across each the remaining bound (held conditions plus the triangular renewal bound, the "
+    "periphery's budget) falls by at least what forms and something forms wherever it is positive "
+    "(remaining_falls, forms_while_held, from beyond_step). The first n steps of a course beyond the "
+    "current rate are a trace drawing in all what formed (path_trace, total_moves), so by "
+    "Stock.trace_falls the whole-unfolding total is bounded by the remaining bound "
+    "(beyond_current_bounded_by_core), by Stock.exhausted_within and Stock.draws_nothing_from_empty "
+    "nothing forms from the time equal to that bound (beyond_current_ceases_by_core), and every "
+    "allocation of that formation, shared formation included, ends with it "
+    "(shared_formation_ends_by_core). The wear law and the representation of formation keep the "
+    "earlier modules' scope; which real processes satisfy the law is not checked."
 )
 
 
