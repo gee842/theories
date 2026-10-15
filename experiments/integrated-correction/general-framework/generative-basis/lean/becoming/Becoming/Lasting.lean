@@ -64,6 +64,17 @@ law never reaches a target, and, dually, when a law reaches a target within `n` 
   (`Reaches.not_lasts`); for a determined law and a decided target they are complements
   (`reaches_iff_not_lasts`), and without the decision double negation would be eliminated
   (`dual_needs_decision`).
+* **Lasting some course.** `Lasts` asks every admissible course to stay; here some course goes
+  on. `Continues P n s`: some course of `n` steps starts at `s`; `Unbounded P s`: courses of
+  every length do. Where the process branches finitely (`FinitelyBranching`), the depth reached
+  is decided (`Continues.decided`), and an unbounded configuration cannot fail to have an
+  unbounded successor (`Unbounded.step_not_not`). That it has one follows from
+  `EitherThroughout` (`Unbounded.step_of_either`), and asked of every finitely branching process
+  it is exactly that principle (`step_iff_either`, witness the two chains of `Chains`). A
+  selection of a successor staying in a family gives a run from each member (`runOf`), so
+  `EitherThroughout` and a choice of an unbounded successor lift courses of every length to a run
+  (`lifting`). Where the branching is infinite, courses of every length need not continue one
+  another (`Fan.no_unbounded_step`).
 
 Every condition named here is local: one step from each configuration. Which guard, levels,
 quantity, threshold and target an application uses are supplied with it; nothing here says that
