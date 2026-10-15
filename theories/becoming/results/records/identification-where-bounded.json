@@ -250,8 +250,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Identification have empty axiom reports (receipt 20261013T094743.528770Z, some declarations under former names; the current bytes of Identification, Description and Unfolding bound by 20261013T204910.042715Z), and the checker verifies core purity. Author counterreview, with the scope of the independent review, in the integration note."
   },
   "next_delta": {
-    "zh": "Ren 对有限名读法的判断，及对“按情境”连同其限定（推出到运行不分开为止，权重只经典型的历程显示）的判断。",
-    "en": "Ren's judgment on the finite-name reading, and on reading ‘situationally’ with its qualification (derived as far as runs do not part, weights showing only through typical courses)."
+    "zh": "按否证学习者的确切静止之步：对奇数 N ≥ 3 穷举得 (N³ − N)/4 + 3，尚未证明。",
+    "en": "The exact rest step of the learner by refutation: exhaustive search finds (N³ − N)/4 + 3 for odd N ≥ 3, not yet proved."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有记录确定下一个值；学习者静止这一点不被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。Ren 2026-10-15 未把“按情境就是界”取为自己的（“not sure what's the reading 1, but reality is always situational”）；这一读法的限定见 identification-where-runs-part 与 typicality-by-counting。",
@@ -906,6 +906,10 @@
     {
       "zh": "2026-10-16 P116：next_delta 改为有限名读法与“按情境”连同其限定；correspondence 记 Ren 2026-10-15 未取读法一；related 新增 identification-where-runs-part；研究 §140。原 next_delta：“Ren 对“按情境就是界”与有限名读法的判断。”第十六条规律英文的“costing a whole turn”改为“taking a whole turn”（结构性用语）。",
       "en": "16 October 2026, P116: next_delta now asks for the finite-name reading and ‘situationally’ with its qualification; correspondence notes that Ren did not take reading 1 on 15 October; related gains identification-where-runs-part; study section 140. Former next_delta: “Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading.” The sixteenth law's ‘costing a whole turn’ now reads ‘taking a whole turn’ (a structural word)."
+    },
+    {
+      "zh": "2026-10-16 P119：按 Ren 2026-10-16 的“take 2, and do the open proofs”：next_delta 中两项判断都已由 Ren 作出（有限名取作类比；“按情境”由 Ren 2026-10-16 的说明“the situation makes it true”取代），next_delta 改为留下的证明；其余字段不动。原 next_delta：“Ren 对有限名读法的判断，及对“按情境”连同其限定（推出到运行不分开为止，权重只经典型的历程显示）的判断。”",
+      "en": "16 October 2026, P119: following Ren's “take 2, and do the open proofs” of 16 October: both judgments in next_delta are now Ren's (the finite name taken as an analogy; ‘situationally’ overtaken by Ren's clarification of 16 October, “the situation makes it true”), so next_delta names the proof left; no other field changes. The former next_delta: “Ren's judgment on the finite-name reading, and on reading ‘situationally’ with its qualification (derived as far as runs do not part, weights showing only through typical courses).”"
     }
   ],
   "text_versions": [

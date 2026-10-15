@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
-    "zh": "凡一个过程的运行所识的是同一历程之处，配置数为 N 时，记录从 2N − 1 起确定它，与确定的律一样。在分开之处，下一个值只在被走时定下：学习者无论被给予什么（世界在内），至多在两个运行之一上对。",
-    "en": "Wherever the runs of a process register one course, a record fixes it from 2N − 1 on with a bound of N configurations, as for determined laws. At a parting the next value is settled only when taken: a learner, whatever it is given, the world included, is right on at most one of the two runs."
+    "zh": "凡一个过程的运行所识的是同一历程之处，配置数为 N 时，记录从 2N − 1 起确定它，与确定的律一样。在分开之处，没有学习者，无论被给予什么（世界在内），在两个运行上都对；列出、可判定的过程中，被给予世界的学习者恰在不分开之处都对。",
+    "en": "Wherever the runs of a process register one course, a record fixes it from 2N − 1 on with N configurations, as for determined laws. At a parting no learner, whatever it is given, is right on both runs; for listed, decided processes a learner given the world is right exactly where none part."
   },
   "laws": [
     {
@@ -82,12 +82,61 @@
         "Becoming.Parting.free_held",
         "Becoming.Parting.free_unbounded"
       ]
+    },
+    {
+      "zh": "运行只在 T 步之前分开、此后不分开时，所识的值可判定，从一个运行在 T 所在处出发没有两个运行分开；被 N 个配置所持时其历程至多 T + N 个状态，以最小的界读记录的学习者从 2(T + N) − 1 起每步都对。",
+      "en": "Where runs part only before step T and never after, the registered values decided, no two runs part from where a run is at T; held by N configurations its course has at most T + N states, and the learner by the least bound is right from 2(T + N) − 1 on.",
+      "declarations": [
+        "Becoming.Parting.unparted_at_of_late",
+        "Becoming.Parting.statesBelow_shift",
+        "Becoming.Parting.late_statesBelow",
+        "Becoming.Parting.late_right"
+      ]
+    },
+    {
+      "zh": "动作与配置列出、步可判定时，由之可走与配置数一样长之路的配置，一步之后仍然如此：长 N 的路重复一个配置，绕着重复可以走任意长；所以由之有无尽的运行，可以每步取第一个仍可走下去的后继造出。",
+      "en": "With listed moves and configurations and decided steps, from where a path as long as the list of configurations is open, a step leads to where one is open: a path of N steps repeats a configuration and can go round it; so a run goes on from there, built by taking at each step the first successor from which it can.",
+      "declarations": [
+        "Becoming.Parting.anyOf",
+        "Becoming.Parting.anyOf_true",
+        "Becoming.Parting.anyOf_of_mem",
+        "Becoming.Parting.and_both",
+        "Becoming.Parting.and_of",
+        "Becoming.Parting.choose",
+        "Becoming.Parting.live",
+        "Becoming.Parting.live_succ_iff",
+        "Becoming.Parting.live_of_run",
+        "Becoming.Parting.path_of_live",
+        "Becoming.Parting.live_cycle",
+        "Becoming.Parting.live_persists",
+        "Becoming.Parting.advance",
+        "Becoming.Parting.advanced",
+        "Becoming.Parting.liveRun"
+      ]
+    },
+    {
+      "zh": "反方向：步与所识的值可判定时，被给予世界的学习者从记录读出运行可能所在的配置，取第一个由之可走下去者，说它所识的值；它在某步于从一个配置出发的每个运行上都对，恰当没有两个这样的运行在该步分开；所以某个学习者在那里对，恰当没有运行在那里分开。",
+      "en": "The converse: with decided steps and registered values, the learner given the world reads from the record the configurations a run can be at, takes the first from which a run goes on, and claims what it registers; it is right at a step on every run from a configuration exactly where no two of those runs part there, so some learner is right there exactly where none part.",
+      "declarations": [
+        "Becoming.Parting.keepIf",
+        "Becoming.Parting.mem_keepIf",
+        "Becoming.Parting.candidates",
+        "Becoming.Parting.firstLive",
+        "Becoming.Parting.firstLive_spec",
+        "Becoming.Parting.firstLive_found",
+        "Becoming.Parting.worldLearner",
+        "Becoming.Parting.run_in_candidates",
+        "Becoming.Parting.candidates_run",
+        "Becoming.Parting.world_right",
+        "Becoming.Parting.world_right_iff",
+        "Becoming.Parting.some_right_iff"
+      ]
     }
   ],
   "hypotheses": [
     {
-      "zh": "不加公理。各律所写者写在定理中：运行被列表所持，起点的配置不分开；unparted_iff、leastBound_right 与 free_open 要所识的值可判定；free_never_right、free_held 与 free_unbounded 陈述在两个值（Bool）上。",
-      "en": "No axiom. What each law needs is written into it: a run held by a list and an unparted start; unparted_iff, leastBound_right and free_open need the registered values decided; free_never_right, free_held and free_unbounded are stated on two values (Bool)."
+      "zh": "不加公理。各律所写者写在定理中：运行被列表所持，起点的配置不分开或从 T 起不分开；unparted_iff、leastBound_right、late_* 与 free_open 要所识的值可判定；world_right 等要动作与配置列出、步可判定；free_never_right、free_held 与 free_unbounded 陈述在两个值上。",
+      "en": "No axiom. What each law needs is written into it: a run held by a list, a start unparted or unparted from T on; unparted_iff, leastBound_right, the late_ laws and free_open need the registered values decided; world_right and its kin need listed moves and configurations and decided steps; free_never_right, free_held and free_unbounded are stated on two values (Bool)."
     },
     {
       "zh": "学习者读配置所识的值；动作只在识读它们时被识（例如配置带着它的上一个动作）。",
@@ -96,20 +145,20 @@
   ],
   "does_not_show": [
     {
-      "zh": "反方向：给定世界的学习者在每个运行上于某步都对，恰当从那个配置出发的运行在那一步不分开。",
-      "en": "The converse with a learner given the world: that some learner is right at a step on every run from a configuration exactly where no two of its runs part there.",
-      "kind": "converse"
-    },
-    {
-      "zh": "运行只在某步之前分开、此后不分开时的静止之步。",
-      "en": "The rest step where runs part only before some step and never after it.",
-      "kind": "scope"
-    },
-    {
       "zh": "配置数的界在运行分开之处不约束历程。",
       "en": "A bound on configurations bounds no course where runs part.",
       "kind": "non-implication",
       "witness": "Becoming.Parting.free_unbounded"
+    },
+    {
+      "zh": "无限或步不可判定的过程中被给予世界的学习者：构造要配置与动作列出、步可判定，那里由之能否走下去一般不可判定。",
+      "en": "The learner given the world for infinite or undecided processes: the construction needs listed moves and configurations and decided steps, and elsewhere whether a run goes on is not decided in general.",
+      "kind": "scope"
+    },
+    {
+      "zh": "2(T + N) − 1 对每个 T 是否恰好，没有表明。",
+      "en": "Whether 2(T + N) − 1 is exact for every T is not shown.",
+      "kind": "scope"
     }
   ],
   "counterexamples": [
@@ -129,12 +178,12 @@
     "names-provisional"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T173702.509759Z）：Becoming.Parting 的 27 项声明（18 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T173702.509759Z): the 27 declarations of Becoming.Parting, 18 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 140; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Parting 的 58 项声明（39 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140 与 §150；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 58 declarations of Becoming.Parting, 39 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study sections 140 and 150; not independently reviewed."
   },
   "next_delta": {
-    "zh": "对有限、已定的过程，给定世界的学习者在不分开之步都对（反方向）；只在某步之前分开时的静止之步。",
-    "en": "For finite, decided processes, the learner given the world right at every step where runs do not part (the converse); the rest step where runs part only before some step."
+    "zh": "无限或步不可判定的过程中被给予世界的学习者能对之处；2(T + N) − 1 的恰好性。",
+    "en": "Where a learner given the world can be right for infinite or undecided processes; the exactness of 2(T + N) − 1."
   },
   "correspondence": {
     "zh": "Ren 2026-10-15：“\"What this line doesn’t reach\" is also worth doing”，并说核心是覆盖有物与变化的全部实在、零公理者，且“if my earlier words are unreasonable, please keep note, not follow blindly”。辨识一线对确定的律陈述，这里对每个过程。已知：分开处无学习者两者都对是不可区分论证。AI 的注：2026-10-12 的“the full \"truth\" can be derived, situationally”对所识者成立，到运行不分开为止；每个情境都有界不由零公理推出。原先的 AI 读法“分开处的分支只在被走时定下”已撤回；Ren 2026-10-16：“the actual change depends on the situation … the situation makes it true”。读法（Ren 同日已取）：分开处记录与所给的律不固定的，由情境固定（weights-count-situations）。",
@@ -328,7 +377,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "role": "proof",
-      "sha256": "d5c0a564062a3c5a98f5658176991e1ad72692b5387b7ca37e73e9ecc7cde9e1",
+      "sha256": "234c818fa28aa5507f88e3362afea1ed1c88652723795aeb21d77445f333c4f5",
       "declarations": [
         "Becoming.Parting.after",
         "Becoming.Parting.before",
@@ -348,6 +397,37 @@
         "Becoming.Parting.states_agree",
         "Becoming.Parting.unparted_of_determined",
         "Becoming.Parting.rest_earliest_runs",
+        "Becoming.Parting.unparted_at_of_late",
+        "Becoming.Parting.statesBelow_shift",
+        "Becoming.Parting.late_statesBelow",
+        "Becoming.Parting.late_right",
+        "Becoming.Parting.anyOf",
+        "Becoming.Parting.anyOf_true",
+        "Becoming.Parting.anyOf_of_mem",
+        "Becoming.Parting.and_both",
+        "Becoming.Parting.and_of",
+        "Becoming.Parting.keepIf",
+        "Becoming.Parting.mem_keepIf",
+        "Becoming.Parting.choose",
+        "Becoming.Parting.live",
+        "Becoming.Parting.live_succ_iff",
+        "Becoming.Parting.live_of_run",
+        "Becoming.Parting.path_of_live",
+        "Becoming.Parting.live_cycle",
+        "Becoming.Parting.live_persists",
+        "Becoming.Parting.advance",
+        "Becoming.Parting.advanced",
+        "Becoming.Parting.liveRun",
+        "Becoming.Parting.candidates",
+        "Becoming.Parting.firstLive",
+        "Becoming.Parting.firstLive_spec",
+        "Becoming.Parting.firstLive_found",
+        "Becoming.Parting.worldLearner",
+        "Becoming.Parting.run_in_candidates",
+        "Becoming.Parting.candidates_run",
+        "Becoming.Parting.world_right",
+        "Becoming.Parting.world_right_iff",
+        "Becoming.Parting.some_right_iff",
         "Becoming.Parting.free",
         "Becoming.Parting.freeRun",
         "Becoming.Parting.freeRun_course",
@@ -370,7 +450,8 @@
         "Becoming.Identification.statesBelow_iff_lasso",
         "Becoming.Identification.statesBelow_mono",
         "Becoming.Identification.below_all",
-        "Becoming.Identification.not_ne_bool"
+        "Becoming.Identification.not_ne_bool",
+        "Becoming.Identification.record_eq_iff"
       ]
     },
     {
@@ -385,7 +466,8 @@
         "Becoming.Learning.diagonal_refutes",
         "Becoming.Learning.diagonal_not_lasso",
         "Becoming.Learning.learner",
-        "Becoming.Learning.lassos"
+        "Becoming.Learning.lassos",
+        "Becoming.Learning.record_length"
       ]
     },
     {
@@ -403,7 +485,9 @@
       "declarations": [
         "Becoming.revisits_within",
         "Becoming.Law.process",
-        "Becoming.Law.orbit"
+        "Becoming.Law.orbit",
+        "Becoming.gap_of_le",
+        "Becoming.mem_cons_split"
       ]
     },
     {
@@ -435,13 +519,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "aad09764bdcdd9209154d546b95b7ecff5a518aecd54942cb5d827526f1650ea",
+      "sha256": "e6630f168db4ff0e2bfcfe22138239b23a3db2f363f02d9027f185df7462f35f",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "dd2aff28f02d53397f05c8fe2f3dba2784bea54e6c89d13017f9854fbf21736e",
+      "sha256": "ede3062af11f30ad7fb6416d1c97cf3e2faddcc0952b165dee3d813fc1a4c383",
       "declarations": []
     },
     {
@@ -467,6 +551,11 @@
       "role": "receipt",
       "sha256": "f925b043b6f8fe7ea3ba0f14b5242923eb3e01d545e6c9915fcc6832c4757e8d",
       "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md",
+      "role": "provenance",
+      "sha256": "b2c60f7ef5e8308c08783018c8abb617276c4e6c806bde11cc4d99ca15044f5b"
     }
   ],
   "proof_bindings": [
@@ -547,6 +636,10 @@
     {
       "zh": "2026-10-16：只改措辞，重新绑定哈希：研究 §144 的读法标题由“待 Ren”改为“Ren 同日已取”，来源文件写明“第一条消息”；声明与结论不变。",
       "en": "16 October 2026: wording only, hashes rebound: study section 144's readings heading now reads “taken by Ren the same day” in place of “pending Ren”, and the source names “the first message”; no declaration or claim changes."
+    },
+    {
+      "zh": "2026-10-16 P119：按 Ren 2026-10-16 的“take 2, and do the open proofs”，加三条规律（只在 T 步之前分开时的静止之步；由之可走下去的配置；反方向，被给予世界的学习者）；statement、hypotheses 第一项、does_not_show（反方向与静止之步两项已证，移去）与 next_delta 改写；研究 §150。原 statement 的第二句：“在分开之处，下一个值只在被走时定下：学习者无论被给予什么（世界在内），至多在两个运行之一上对。”",
+      "en": "16 October 2026, P119: following Ren's “take 2, and do the open proofs” of 16 October, three laws added (the rest step where runs part only before T; configurations from which a run goes on; the converse, with the learner given the world); statement, the first hypothesis, does_not_show (the converse and the rest step, now proved, removed) and next_delta rewritten; study section 150. The former second sentence of the statement: “At a parting the next value is settled only when taken: a learner, whatever it is given, the world included, is right on at most one of the two runs.”"
     }
   ],
   "text_versions": []

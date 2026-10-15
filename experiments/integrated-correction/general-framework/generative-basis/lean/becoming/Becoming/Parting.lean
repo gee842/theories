@@ -27,6 +27,21 @@ with no premise beyond what each law names, what a record fixes along the runs o
   with one move parts nowhere (`unparted_of_determined`), so the determined case is the
   instance; a process can branch and part nowhere where its branching does not show in what is
   registered (`free_unparted_const`).
+* **Where runs part only before a step, the bound carries from there.** If no two runs from a
+  configuration part at any step from `T` on, the registered values decided, then no two runs
+  part from where a run from it is at `T` (`unparted_at_of_late`). Held by a list of `N`
+  configurations, its registered course then has at most `T + N` states (`late_statesBelow`,
+  through `statesBelow_shift`). The learner by the least bound is right at every step from
+  `2(T + N) - 1` on (`late_right`).
+* **Where no two runs part, a learner given the world is right.** Take a process with listed
+  moves and configurations, decided steps and decided registered values. The learner given the
+  world (`worldLearner`) reads from the record the configurations a run from `s` can be at
+  (`candidates`). It keeps the first from which a path as long as the list of configurations is
+  open (`live`, `firstLive`), and such a path goes on without end (`live_persists`, `liveRun`).
+  It claims what that configuration registers. It is right at step `t` on every run from `s`
+  exactly where no two runs from `s` part at `t` (`world_right_iff`). So some learner is right
+  there exactly where none part (`some_right_iff`): with `not_right_on_both`, at each step a
+  parting is exactly what neither the record nor the world settles.
 * **Where runs part, nothing bounds the course.** Under free branching, every configuration
   may follow every configuration (`free`), every course is the registered course of a run
   (`freeRun`). So after every record two runs of two configurations part, each with that record
@@ -216,6 +231,371 @@ theorem rest_earliest_runs {x y : R} (two : x ≠ y) (pred : List R → Option R
         (right.trans (congrArg some (reads (M + M + 2))))
 
 end Carries
+
+/-! ## Where runs part only before a step -/
+
+section Late
+
+variable {S : Type u} {A : Type v} {R : Type w} {P : Process S A}
+
+/-- **Not parting from `T` on leaves the configuration at `T` unparted.** If no two runs from `s`
+part at any step from `T` on, no two runs from where a run from `s` is at `T` part. -/
+theorem unparted_at_of_late [DecidableEq R] {reg : S → R} {s : S} {T : Nat}
+    (late : ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ∀ t, T ≤ t → ¬ PartAt reg r r' t)
+    {r : Run P} (start : r.state 0 = s) : Unparted P reg (r.state T) :=
+  fun q q' from_q from_q' n =>
+    have agree : ∀ m, reg ((joinAt T r q from_q).1.state m) = reg ((joinAt T r q' from_q').1.state m) :=
+      Identification.below_all fun m before =>
+        match decEq (reg ((joinAt T r q from_q).1.state m))
+            (reg ((joinAt T r q' from_q').1.state m)) with
+        | isTrue same => same
+        | isFalse differ =>
+          match Nat.lt_or_ge m T with
+          | .inl early => absurd (congrArg reg
+              ((joinAt_before T r q from_q m (Nat.le_of_lt early)).trans
+                (joinAt_before T r q' from_q' m (Nat.le_of_lt early)).symm)) differ
+          | .inr ge => absurd ⟨before, differ⟩ (late (joinAt T r q from_q).1 (joinAt T r q' from_q').1
+              ((joinAt T r q from_q).2.trans start) ((joinAt T r q' from_q').2.trans start) m ge)
+    ((congrArg reg (joinAt_after T r q from_q n)).symm.trans (agree (T + n))).trans
+      (congrArg reg (joinAt_after T r q' from_q' n))
+
+/-- A course whose part from `T` on has at most `N` states has at most `T + N`. -/
+theorem statesBelow_shift {O : Type w} {o : Nat → O} {T N : Nat}
+    (below : StatesBelow (fun n => o (T + n)) N) : StatesBelow o (T + N) :=
+  match Identification.statesBelow_iff_lasso.mp below with
+  | ⟨i, q, within, lasso⟩ =>
+    have bound : T + i + q + 1 ≤ T + N := by
+      rw [Nat.add_assoc T i q, Nat.add_assoc T (i + q) 1]
+      exact Nat.add_le_add_left within T
+    Identification.statesBelow_iff_lasso.mpr ⟨T + i, q, bound, fun u ge =>
+      match gap_of_le ge with
+      | ⟨d, at_u⟩ => by
+        have ahead : T + i + d + (q + 1) = T + (i + d + (q + 1)) := by
+          rw [Nat.add_assoc T i d, Nat.add_assoc T (i + d)]
+        rw [at_u, ahead, Nat.add_assoc T i d]
+        exact lasso (i + d) (Nat.le_add_right i d)⟩
+
+/-- **Where runs part only before `T`, the course has at most `T + N` states.** On a run from a
+configuration from which no two runs part at any step from `T` on, held by a list of `N`
+configurations. -/
+theorem late_statesBelow [DecidableEq R] {reg : S → R} {s : S} {T : Nat}
+    (late : ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ∀ t, T ≤ t → ¬ PartAt reg r r' t)
+    {r : Run P} (start : r.state 0 = s) {l : List S} (held : ∀ n, r.state n ∈ l) :
+    StatesBelow (course reg r) (T + l.length) :=
+  statesBelow_shift (course_statesBelow (unparted_at_of_late late start) (r := after r T) rfl
+    fun n => held (T + n))
+
+/-- **The rest step where runs part only before `T`.** The learner by the least bound, given
+nothing, is right at every step from `2(T + N) - 1` on, on every run from a configuration from
+which no two runs part at any step from `T` on, held by a list of `N` configurations. -/
+theorem late_right [DecidableEq R] {reg : S → R} {s : S} {T : Nat}
+    (late : ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ∀ t, T ≤ t → ¬ PartAt reg r r' t)
+    {r : Run P} (start : r.state 0 = s) {l : List S} (held : ∀ n, r.state n ∈ l) {t : Nat}
+    (from_late : (T + l.length) + (T + l.length) - 1 ≤ t) :
+    RightAt Identification.leastBound reg r t :=
+  Identification.leastBound_exact (late_statesBelow late start held) from_late
+
+end Late
+
+/-! ## Where runs do not part, a learner given the world is right -/
+
+section World
+
+/-- Whether some member of a list passes a test. -/
+def anyOf {α : Type _} : List α → (α → Bool) → Bool
+  | [], _ => false
+  | x :: l, p => p x || anyOf l p
+
+theorem anyOf_true {α : Type _} {p : α → Bool} : ∀ {l : List α}, anyOf l p = true →
+    ∃ x, x ∈ l ∧ p x = true
+  | [], nothing => Bool.noConfusion nothing
+  | x :: l, holds => by
+    cases here : p x with
+    | true => exact ⟨x, .head _, here⟩
+    | false =>
+      have rest : anyOf l p = true := by
+        have joined : (p x || anyOf l p) = true := holds
+        rw [here] at joined
+        exact joined
+      obtain ⟨y, mem, passes⟩ := anyOf_true rest
+      exact ⟨y, .tail _ mem, passes⟩
+
+theorem anyOf_of_mem {α : Type _} {p : α → Bool} {x : α} :
+    ∀ {l : List α}, x ∈ l → p x = true → anyOf l p = true
+  | _ :: _, .head _, passes => show (p x || _) = true by rw [passes]; rfl
+  | y :: _, .tail _ mem, passes => show (p y || _) = true by
+      rw [anyOf_of_mem mem passes]
+      cases p y <;> rfl
+
+theorem and_both {b c : Bool} (both : (b && c) = true) : b = true ∧ c = true := by
+  cases b <;> cases c <;> cases both <;> exact ⟨rfl, rfl⟩
+
+theorem and_of {b c : Bool} (hb : b = true) (hc : c = true) : (b && c) = true := by
+  rw [hb, hc]; rfl
+
+/-- The members of a list that pass a test. -/
+def keepIf {α : Type _} (p : α → Bool) : List α → List α
+  | [] => []
+  | x :: l => cond (p x) (x :: keepIf p l) (keepIf p l)
+
+theorem mem_keepIf {α : Type _} {p : α → Bool} {x : α} : ∀ {l : List α},
+    x ∈ keepIf p l ↔ x ∈ l ∧ p x = true
+  | [] => ⟨fun mem => (nomatch mem), fun ⟨mem, _⟩ => (nomatch mem)⟩
+  | y :: l => by
+    cases here : p y with
+    | true =>
+      show x ∈ cond (p y) (y :: keepIf p l) (keepIf p l) ↔ _
+      rw [here]
+      exact ⟨fun mem => match mem_cons_split mem with
+          | .inl same => ⟨.head _ |> Eq.subst (motive := fun z => z ∈ y :: l) same.symm,
+              same ▸ here⟩
+          | .inr inside => ⟨.tail _ (mem_keepIf.mp inside).1, (mem_keepIf.mp inside).2⟩,
+        fun ⟨mem, passes⟩ => match mem_cons_split mem with
+          | .inl same => same ▸ .head _
+          | .inr inside => .tail _ (mem_keepIf.mpr ⟨inside, passes⟩)⟩
+    | false =>
+      show x ∈ cond (p y) (y :: keepIf p l) (keepIf p l) ↔ _
+      rw [here]
+      exact ⟨fun mem => ⟨.tail _ (mem_keepIf.mp mem).1, (mem_keepIf.mp mem).2⟩,
+        fun ⟨mem, passes⟩ => match mem_cons_split mem with
+          | .inl same => absurd (here ▸ same ▸ passes : false = true) Bool.false_ne_true
+          | .inr inside => mem_keepIf.mpr ⟨inside, passes⟩⟩
+
+/-- A member of a list that passes a test, found where one exists. -/
+def choose {α : Type _} (p : α → Bool) : (l : List α) → (∃ x, x ∈ l ∧ p x = true) →
+    {x : α // p x = true}
+  | [], found => False.elim (match found with | ⟨_, mem, _⟩ => nomatch mem)
+  | x :: l, found =>
+    if passes : p x = true then ⟨x, passes⟩
+    else choose p l (match found with
+      | ⟨y, mem, passes'⟩ => match mem_cons_split mem with
+        | .inl same => absurd (same ▸ passes') passes
+        | .inr inside => ⟨y, inside, passes'⟩)
+
+variable {S : Type u} {A : Type v} {R : Type w} (P : Process S A)
+  [∀ x a y, Decidable (P.step x a y)] (moves : List A) (all : List S)
+
+/-- From `y` a path of `m` steps is open. -/
+def live : Nat → S → Bool
+  | 0, _ => true
+  | m + 1, y => anyOf moves fun a => anyOf all fun z => decide (P.step y a z) && live m z
+
+variable {P moves all}
+
+theorem live_succ_iff (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) {m : Nat} {y : S} :
+    live P moves all (m + 1) y = true ↔ ∃ a z, P.step y a z ∧ live P moves all m z = true :=
+  ⟨fun open_ => match anyOf_true open_ with
+    | ⟨a, _, inner⟩ => match anyOf_true inner with
+      | ⟨z, _, both⟩ => ⟨a, z, of_decide_eq_true (and_both both).1, (and_both both).2⟩,
+   fun ⟨a, z, step, rest⟩ =>
+     show anyOf moves (fun a => anyOf all fun z => decide (P.step y a z) && live P moves all m z) =
+       true from
+     anyOf_of_mem (every_move a) (anyOf_of_mem (every z) (and_of (decide_eq_true step) rest))⟩
+
+theorem live_of_run (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) (r : Run P) :
+    ∀ m n, live P moves all m (r.state n) = true
+  | 0, _ => rfl
+  | m + 1, n => (live_succ_iff every_move every).mpr
+      ⟨r.act n, r.state (n + 1), r.step n, live_of_run every_move every r m (n + 1)⟩
+
+theorem path_of_live (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) : ∀ (m : Nat) (y : S),
+    live P moves all m y = true →
+      ∃ g : Nat → S, g 0 = y ∧ ∀ k, k < m → ∃ a, P.step (g k) a (g (k + 1))
+  | 0, y, _ => ⟨fun _ => y, rfl, fun k lt => absurd lt (Nat.not_lt_zero k)⟩
+  | m + 1, y, open_ => match (live_succ_iff every_move every).mp open_ with
+    | ⟨a, z, step, rest⟩ => match path_of_live every_move every m z rest with
+      | ⟨g, start, steps⟩ => ⟨fun | 0 => y | k + 1 => g k, rfl, fun
+          | 0, _ => ⟨a, Eq.subst (motive := fun x => P.step y a x) start.symm step⟩
+          | k + 1, lt => steps k (Nat.lt_of_succ_lt_succ lt)⟩
+
+theorem live_cycle (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) {g : Nat → S}
+    {i j : Nat} (steps : ∀ k, k < j → ∃ a, P.step (g k) a (g (k + 1))) (lt : i < j)
+    (same : g i = g j) : ∀ m k, k < j → live P moves all m (g k) = true
+  | 0, _, _ => rfl
+  | m + 1, k, below => match steps k below with
+    | ⟨a, step⟩ => (live_succ_iff every_move every).mpr ⟨a, g (k + 1), step,
+        match Nat.lt_or_ge (k + 1) j with
+        | .inl below' => live_cycle every_move every steps lt same m (k + 1) below'
+        | .inr ge =>
+          (congrArg (fun x => live P moves all m (g x)) (Nat.le_antisymm below ge)).trans
+            ((congrArg (live P moves all m) same.symm).trans
+              (live_cycle every_move every steps lt same m i lt))⟩
+
+/-- **A path as long as there are configurations goes on.** From where a path of `N` steps is
+open, `N` configurations listed, a step leads to where a path of `N` steps is open. -/
+theorem live_persists (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) {y : S}
+    (open_ : live P moves all all.length y = true) :
+    ∃ a z, P.step y a z ∧ live P moves all all.length z = true :=
+  match path_of_live every_move every all.length y open_ with
+  | ⟨g, start, steps⟩ => match revisits_within all g (fun n _ => every (g n)) with
+    | ⟨i, _, lt, within, same⟩ =>
+      (live_succ_iff every_move every).mp
+        (Eq.subst (motive := fun x => live P moves all (all.length + 1) x = true) start
+          (live_cycle every_move every (fun k below => steps k (Nat.lt_of_lt_of_le below within))
+            lt same (all.length + 1) 0 (Nat.lt_of_le_of_lt (Nat.zero_le i) lt)))
+
+/-- One step from where a path of `N` steps is open, to where one is open. -/
+def advance (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
+    (y : {x : S // live P moves all all.length x = true}) :
+    {p : A × {x : S // live P moves all all.length x = true} // P.step y.1 p.1 p.2.1} :=
+  let a := choose (fun a => anyOf all fun z => decide (P.step y.1 a z) && live P moves all all.length z)
+    moves (match live_persists every_move every y.2 with
+      | ⟨a, z, step, rest⟩ => ⟨a, every_move a,
+          anyOf_of_mem (p := fun z => decide (P.step y.1 a z) && live P moves all all.length z)
+            (every z) (and_of (decide_eq_true step) rest)⟩)
+  let z := choose (fun z => decide (P.step y.1 a.1 z) && live P moves all all.length z) all
+    (anyOf_true a.2)
+  ⟨(a.1, ⟨z.1, (and_both z.2).2⟩), of_decide_eq_true (and_both z.2).1⟩
+
+/-- The configurations reached by advancing `n` times. -/
+def advanced (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
+    (y : {x : S // live P moves all all.length x = true}) :
+    Nat → {x : S // live P moves all all.length x = true}
+  | 0 => y
+  | n + 1 => (advance every_move every (advanced every_move every y n)).1.2
+
+/-- **A run from where a path of `N` steps is open.** -/
+def liveRun (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
+    (y : {x : S // live P moves all all.length x = true}) : Run P :=
+  ⟨fun n => (advanced every_move every y n).1,
+   fun n => (advance every_move every (advanced every_move every y n)).1.1,
+   fun n => (advance every_move every (advanced every_move every y n)).2⟩
+
+variable [DecidableEq R] (reg : S → R) (s : S)
+
+variable (P moves all) in
+/-- The configurations a run from `s` can be at, given the record before: those reached from
+one the record allows, registered as the record says. -/
+def candidates : List R → List S
+  | [] => [s]
+  | v :: record => keepIf (fun y => anyOf (candidates record) fun x =>
+      decide (reg x = v) && anyOf moves fun a => decide (P.step x a y)) all
+
+variable (P moves all) in
+/-- The first of a list from where a path of `N` steps is open. -/
+def firstLive : List S → Option S
+  | [] => none
+  | y :: l => cond (live P moves all all.length y) (some y) (firstLive l)
+
+theorem firstLive_spec : ∀ {l : List S} {y : S}, firstLive P moves all l = some y →
+    y ∈ l ∧ live P moves all all.length y = true
+  | [], _, nothing => nomatch nothing
+  | x :: l, y, found => by
+    cases here : live P moves all all.length x with
+    | true =>
+      have same : some x = some y := by
+        have found' : cond (live P moves all all.length x) (some x) (firstLive P moves all l) =
+          some y := found
+        rw [here] at found'
+        exact found'
+      exact ⟨Option.some.inj same ▸ .head _, Option.some.inj same ▸ here⟩
+    | false =>
+      have rest : firstLive P moves all l = some y := by
+        have found' : cond (live P moves all all.length x) (some x) (firstLive P moves all l) =
+          some y := found
+        rw [here] at found'
+        exact found'
+      exact ⟨.tail _ (firstLive_spec rest).1, (firstLive_spec rest).2⟩
+
+theorem firstLive_found : ∀ {l : List S} {y : S}, y ∈ l → live P moves all all.length y = true →
+    ∃ z, firstLive P moves all l = some z
+  | x :: l, y, mem, open_ => by
+    cases here : live P moves all all.length x with
+    | true => exact ⟨x, show cond _ _ _ = _ by rw [here]; rfl⟩
+    | false =>
+      have rest : ∃ z, firstLive P moves all l = some z :=
+        match mem_cons_split mem with
+        | .inl same => absurd
+            ((Eq.subst (motive := fun w => live P moves all all.length w = true) same open_).symm.trans
+              here) Bool.noConfusion
+        | .inr inside => firstLive_found inside open_
+      match rest with
+      | ⟨z, found⟩ => exact ⟨z, show cond _ _ _ = _ by rw [here]; exact found⟩
+
+variable (P moves all) in
+/-- **The learner given the world**: from the record, the configurations a run from `s` can be
+at; of these, the first from which the run can go on; what it registers. -/
+def worldLearner (record : List R) : Option R :=
+  (firstLive P moves all (candidates P moves all reg s record)).map reg
+
+theorem run_in_candidates (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) (r : Run P)
+    (start : r.state 0 = s) :
+    ∀ t, r.state t ∈ candidates P moves all reg s (Learning.record (course reg r) t)
+  | 0 => Eq.subst (motive := fun x => x ∈ [s]) start.symm (.head _)
+  | t + 1 => mem_keepIf.mpr ⟨every _, anyOf_of_mem (run_in_candidates every_move every r start t)
+      (and_of (decide_eq_true rfl) (anyOf_of_mem (every_move (r.act t)) (decide_eq_true (r.step t))))⟩
+
+theorem candidates_run : ∀ (record : List R) (y : S),
+    y ∈ candidates P moves all reg s record → ∀ q : Run P, q.state 0 = y →
+      ∃ r' : Run P, r'.state 0 = s ∧ Learning.record (course reg r') record.length = record ∧
+        ∀ n, r'.state (record.length + n) = q.state n
+  | [], y, mem, q, start =>
+    have at_s : y = s := match mem_cons_split mem with
+      | .inl same => same
+      | .inr inside => nomatch inside
+    ⟨q, start.trans at_s, rfl, fun n => congrArg q.state (Nat.zero_add n)⟩
+  | v :: record, y, mem, q, start =>
+    match anyOf_true (mem_keepIf.mp mem).2 with
+    | ⟨x, inside, both⟩ => match anyOf_true (and_both both).2 with
+      | ⟨a, _, moved⟩ =>
+        have into : P.step x a (q.state 0) :=
+          Eq.subst (motive := fun z => P.step x a z) start.symm (of_decide_eq_true moved)
+        match candidates_run record x inside (before x a q into) rfl with
+        | ⟨r', start', recorded, follows⟩ =>
+          ⟨r', start',
+           show course reg r' record.length :: Learning.record (course reg r') record.length =
+               v :: record by
+             rw [recorded]
+             exact congrArg (· :: record)
+               ((congrArg reg (follows 0)).trans (of_decide_eq_true (and_both both).1)),
+           fun n => (congrArg r'.state ((Nat.add_assoc _ _ _).trans
+             (congrArg _ (Nat.add_comm 1 n)))).trans (follows (n + 1))⟩
+
+/-- **Where no two runs part, the learner given the world is right.** For a process with listed
+moves and configurations and decided steps, the learner given the world is right at step `t`
+on every run from `s` where no two runs from `s` part at `t`. -/
+theorem world_right (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) {t : Nat}
+    (unparted : ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ¬ PartAt reg r r' t)
+    (r : Run P) (start : r.state 0 = s) : RightAt (worldLearner P moves all reg s) reg r t :=
+  match firstLive_found (run_in_candidates reg s every_move every r start t)
+      (live_of_run every_move every r all.length t) with
+  | ⟨y, found⟩ => match firstLive_spec found with
+    | ⟨inside, open_⟩ =>
+      match candidates_run reg s _ y inside (liveRun every_move every ⟨y, open_⟩) rfl with
+      | ⟨r', start', recorded, follows⟩ =>
+        have length : (Learning.record (course reg r) t).length = t := Learning.record_length _ t
+        have agree : ∀ n, n < t → reg (r.state n) = reg (r'.state n) :=
+          Identification.record_eq_iff.mp
+            (Eq.subst (motive := fun k => Learning.record (course reg r') k = _) length recorded).symm
+        have at_t : r'.state t = y :=
+          Eq.subst (motive := fun k => r'.state (k + 0) = y) length (follows 0)
+        have same : reg y = reg (r.state t) :=
+          match decEq (reg y) (reg (r.state t)) with
+          | isTrue same => same
+          | isFalse differ => absurd ⟨agree, fun e => differ ((congrArg reg at_t).symm.trans e.symm)⟩
+              (unparted r r' start start')
+        show (firstLive P moves all _).map reg = some (reg (r.state t)) by
+          rw [found]
+          exact congrArg some same
+
+/-- **A learner given the world is right at a step on every run exactly where no two runs part
+there.** For a process with listed moves and configurations and decided steps. -/
+theorem world_right_iff (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) (t : Nat) :
+    (∀ r : Run P, r.state 0 = s → RightAt (worldLearner P moves all reg s) reg r t) ↔
+      ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ¬ PartAt reg r r' t :=
+  ⟨fun right _ _ start start' part => not_right_on_both _ part ⟨right _ start, right _ start'⟩,
+   fun unparted => world_right reg s every_move every unparted⟩
+
+/-- **Some learner is right at a step on every run exactly where no two runs part there, and
+the learner given the world is one.** -/
+theorem some_right_iff (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) (t : Nat) :
+    (∃ pred : List R → Option R, ∀ r : Run P, r.state 0 = s → RightAt pred reg r t) ↔
+      ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ¬ PartAt reg r r' t :=
+  ⟨fun ⟨pred, right⟩ _ _ start start' part =>
+     not_right_on_both pred part ⟨right _ start, right _ start'⟩,
+   fun unparted => ⟨_, world_right reg s every_move every unparted⟩⟩
+
+end World
 
 /-! ## Where runs part, nothing bounds the course -/
 
