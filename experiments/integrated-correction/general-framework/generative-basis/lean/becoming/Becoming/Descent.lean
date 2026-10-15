@@ -48,9 +48,11 @@ reading.
   Neither reading mentions embodiment: what enters the valuation here is the
   identification, not embodiment.
 
-Whether living on a relatum and descent count as formed relations for N_rel, so that
-valuing the fox's eating reaches the hare and valuing a parent reaches its offspring, is
-a correspondence choice and Ren's. Descent relates relata that come to stand; it does not
+On Ren's delegation of 15 October 2026 living on a relatum and descent count as formed relations of
+continuation for N_rel, not as direct valuations, so that
+valuing the fox's eating reaches the hare and valuing a parent reaches its offspring
+(DELEGATED-CHOICES
+D9). Descent relates relata that come to stand; it does not
 make bringing them about better, which is the question of C. No axiom occurs.
 -/
 

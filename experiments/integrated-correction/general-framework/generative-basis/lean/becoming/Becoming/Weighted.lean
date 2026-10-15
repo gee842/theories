@@ -54,7 +54,8 @@ holds for every weighting and listing it names.
   within the bound does not put the entries together within it
   (`entries_within_not_together`).
 
-**Readings.** The AI's, pending Ren. The AI reads "Fermi's diagrams" as Feynman diagrams, whose
+**Readings.** The AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D30). The
+AI reads "Fermi's diagrams" as Feynman diagrams, whose
 sum over histories has this shape: the weight of a history is composed of the weights of its
 steps, and alternatives add. Read so, the module answers the question in four parts. The sum is
 exact, for every number of courses, with finitely many configurations and a bounded horizon. It

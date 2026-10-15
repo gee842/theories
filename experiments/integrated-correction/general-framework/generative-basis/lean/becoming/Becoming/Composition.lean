@@ -101,7 +101,8 @@ instances; the counterexamples of their study stay with them.
 **Reading.** Two tests both holding at a configuration is not one configuration holding together
 two parts that pass them: `both` asks the first, `together` the second, and what can hold together
 is a relation of the unfolding, not a sum of what holds separately. The readings are the AI's,
-pending Ren. No ethical predicate, ranking or axiom occurs.
+adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D33). No ethical predicate,
+ranking or axiom occurs.
 -/
 
 namespace Becoming

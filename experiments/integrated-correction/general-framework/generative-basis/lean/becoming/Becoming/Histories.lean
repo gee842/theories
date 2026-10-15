@@ -43,7 +43,8 @@ histories, and states what tests fix of likeness. No premise beyond what each th
   core they fix it constructively for frames with finitely many configurations whose steps and
   claims are decided (`alike_iff_sameBranchingTests` of `Becoming.Likeness`).
 
-**Readings.** The AI's, pending Ren. Ren agreed (12 October 2026) that law and history are one
+**Readings.** The AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D32). Ren
+agreed (12 October 2026) that law and history are one
 unfolding read two ways, the law read off the unfolding rather than set over it
 ("there are no two realities"). Read with this module: a law read off histories is a family of
 histories holding its splices, and nothing else; what a law set over the unfolding can add are

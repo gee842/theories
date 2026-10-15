@@ -78,7 +78,7 @@ under the local conditions each statement names.
   the stretch and the need (`Flow.unfed_meets_iff_at`). A store also feeds across steps what it
   was given, as in `Provision`.
 
-**AI reading, pending Ren.**
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D17).**
 - Delayed conveyance through a condition counts as feeding where what was given can still
   stand where it is required. The closure across steps reaches formations that filled a store
   and have since ended, which the same-step closure misses.

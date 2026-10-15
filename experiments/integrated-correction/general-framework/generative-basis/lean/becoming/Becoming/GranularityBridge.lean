@@ -42,7 +42,8 @@ it, or `ExplanatoryResumptionCases.answer`, can have an empty report. The witnes
 instead on `Midway.frame` of the core: the same six configurations, three moves and six steps, with
 the steps an inductive relation.
 
-The readings of these results are the AI's, pending Ren. No ethical predicate is used.
+The readings of these results are the AI's, adopted on Ren's delegation of 15 October 2026
+(DELEGATED-CHOICES D33). No ethical predicate is used.
 -/
 
 namespace Becoming

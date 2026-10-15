@@ -29,7 +29,7 @@ still add. This module states that count with no premise beyond those decisions.
   (`not_not_within`), so wherever a count needs them, its conclusion is refuted by nothing,
   with no premise.
 
-The readings are the AI's, pending Ren.
+The readings are the AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D34).
 -/
 
 namespace Becoming

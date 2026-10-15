@@ -102,8 +102,8 @@
       "en": "The one-kind reading: conditions and formations share an index, and which condition is which relatum is supplied by the shared index (relabel, see life-as-condition-of-life). Neither definition mentions embodiment: what enters the valuation is this identification, not embodiment, which enters only the conclusions of Embodied.descends and arisen_reached."
     },
     {
-      "zh": "sustenance 与 descent 是 related 的两种候选读法，是对应前提：它们是否算作 N_rel 所传递的形成关系，由 Ren 选择。N_rel 本身仍是前提（metaethical-core-characterization），在到达之律中是前件；本记录不用伦理前提，也不用 Lean 公理。",
-      "en": "sustenance and descent are two candidate readings of related, correspondence premises: whether they count as formed relations along which N_rel transmits is Ren's choice. N_rel itself remains a premise (metaethical-core-characterization), an antecedent of the reaching laws; the record uses no ethical premise and no Lean axiom."
+      "zh": "sustenance 与 descent 是 related 的两种读法，是对应前提：依 Ren 的交托决定，在用到该补全时它们算作 N_rel 所传递的形成关系，不作为直接的估值。N_rel 本身仍是前提（metaethical-core-characterization），在到达之律中是前件；本记录不用伦理前提，也不用 Lean 公理。",
+      "en": "sustenance and descent are two readings of related, correspondence premises: decided on Ren's delegation, they count as formed relations along which N_rel transmits where that completion is used, not as direct valuations. N_rel itself remains a premise (metaethical-core-characterization), an antecedent of the reaching laws; the record uses no ethical premise and no Lean axiom."
     },
     {
       "zh": "Embodied.descends 与 arisen_reached 需要流平衡依存网、只有活跃形成给予（Acting），以及生起的关系项体现。",
@@ -198,12 +198,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z): the theorems of Becoming.Descent have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; the eighth independent review (listed under sources) accepts the mathematics, and its corrections are in the integration note."
   },
   "next_delta": {
-    "zh": "Ren 是否采用以之为生与世系作为 N_rel 所传递的关系；排定时间、对效果敏感的以之为生；世系的传递闭包（祖先）与有限步内的世系；整段读法上的同一关系；把世系与 C 联系，即带来新的生起是否使结果更好（Ren）；与 universal_reason 的“新的活的内容”接通。",
-    "en": "Whether Ren adopts living on and descent as relations along which N_rel transmits; an ordered, effect-sensitive living on; the transitive closure of descent (ancestry) and descent within finitely many steps; the same relations for the whole-run reading; relating descent to C, whether bringing about new arising makes an outcome better (Ren); connecting to universal_reason's ‘new living content’."
+    "zh": "排定时间、对效果敏感的以之为生；世系的传递闭包（祖先）与有限步内的世系；整段读法上的同一关系；与 universal_reason 的“新的活的内容”接通。",
+    "en": "An ordered, effect-sensitive living on; the transitive closure of descent (ancestry) and descent within finitely many steps; the same relations for the whole-run reading; connecting to universal_reason's ‘new living content’."
   },
   "correspondence": {
-    "zh": "Becoming.Metaethics 把 related 读作形成的关系，列出条件、依存、世系与合作；此前的读法只经由共同的条件相关，life-as-condition-of-life 记下“直接读出体现的估值”为下一步，Mutualism.apart 是其反例：蜂与花都体现、互相依存，却不相关。本结果在一类读法中给出两种直接的关系：以之为生对应条件化与依存，世系对应世系。以之为生要求正需要的依存，沿用交互的纪律（连通由活的使用造成）；世系要求参与该步的形成正的给予与开始作为条件而在。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。在把体现的关系项读作“生”这一属于 Ren 的读法下（整合文档 §23 K6），作者把世系读作原话中两个“生”之间关系的一种形式内容：生起者由给予它的展开而来，并经由世系与整体相关（AI 论证）；这不替代原话，也不决定 Ren 是否采用这些关系。",
-    "en": "Becoming.Metaethics reads related as formed relation: conditioning, dependence, descent and cooperation; the earlier readings relate only through a shared condition, life-as-condition-of-life records ‘a valuation reading embodiment directly’ as a next step, and Mutualism.apart is its counterexample: a bee and a flower, both embodied and depending on each other, are unrelated. This result gives two direct relations in the one-kind reading: living on corresponds to conditioning and dependence, descent to descent. Living on requires dependence at a positive need, keeping interaction's discipline that connection is made by living use; descent requires a positive gift from a formation taking part in the step and coming to stand. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). Taking embodied relata as 生, Ren's reading (integration note §23, K6), the author reads descent as one formal content of the relation between the two 生 in those words: what arises comes from the unfolding that gives it, and is related to the whole through descent (an AI argument); it neither replaces Ren's words nor decides whether Ren adopts these relations."
+    "zh": "Becoming.Metaethics 把 related 读作形成的关系，列出条件、依存、世系与合作；此前的读法只经由共同的条件相关，life-as-condition-of-life 记下“直接读出体现的估值”为下一步，Mutualism.apart 是其反例：蜂与花都体现、互相依存，却不相关。本结果在一类读法中给出两种直接的关系：以之为生对应条件化与依存，世系对应世系。以之为生要求正需要的依存，沿用交互的纪律（连通由活的使用造成）；世系要求参与该步的形成正的给予与开始作为条件而在。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。在把体现的关系项读作“生”这一读法下（整合文档 §23 K6；依 Ren 的交托采用，DELEGATED-CHOICES D4），作者把世系读作原话中两个“生”之间关系的一种形式内容：生起者由给予它的展开而来，并经由世系与整体相关（AI 论证）；这不替代原话；以之为生与世系依 Ren 的交托采用，作为延续的已形成关系，不作为直接的估值（DELEGATED-CHOICES D9）。",
+    "en": "Becoming.Metaethics reads related as formed relation: conditioning, dependence, descent and cooperation; the earlier readings relate only through a shared condition, life-as-condition-of-life records ‘a valuation reading embodiment directly’ as a next step, and Mutualism.apart is its counterexample: a bee and a flower, both embodied and depending on each other, are unrelated. This result gives two direct relations in the one-kind reading: living on corresponds to conditioning and dependence, descent to descent. Living on requires dependence at a positive need, keeping interaction's discipline that connection is made by living use; descent requires a positive gift from a formation taking part in the step and coming to stand. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). Taking embodied relata as 生, a reading adopted on Ren's delegation (integration note §23, K6; DELEGATED-CHOICES D4), the author reads descent as one formal content of the relation between the two 生 in those words: what arises comes from the unfolding that gives it, and is related to the whole through descent (an AI argument); it does not replace Ren's words; living on and descent are adopted on Ren's delegation as formed relations of continuation, not as direct valuations (DELEGATED-CHOICES D9)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
   "aliases": [
@@ -821,6 +821,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D4, D9）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D4, D9): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ],
   "text_versions": [

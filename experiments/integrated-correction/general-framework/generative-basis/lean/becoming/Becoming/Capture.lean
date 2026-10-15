@@ -33,7 +33,7 @@ it, with no axiom and no premise beyond what each law names.
   itself: a perturbed state returns at once, and a perturbed rule changes the outcome
   (`Captured.state_perturbation_returns`, `Captured.rule_perturbation_changes`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26).**
 - The meta-attractor's selection of minds: where a target of more than now, or of above all
   others (`Becoming.Seeking`), leads its carriers to take more, and taking more leads to more
   offspring, the target's share rises; it does so only while the world is open, and enclosed,

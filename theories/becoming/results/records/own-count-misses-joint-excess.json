@@ -165,8 +165,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z, with this record's local laws; Flow bound by 20261013T094743.528770Z; periphery 20261013T095049.338744Z passed): the theorems of Becoming.Continuation have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; the independent review of the continuation grounding accepts its Lean, and its corrections are handled in the integration note."
   },
   "next_delta": {
-    "zh": "与 RelationalRenewal 的支持门控定律及外围磨损定律的实例定理；储备与延迟更新下的联合超出；份额与归属（不推出责任）；名称（Ren）。",
-    "en": "Instance theorems to RelationalRenewal's support-gated law and the periphery's wear law; joint excess under reserves and delayed renewal; shares and attribution (responsibility does not follow); names (Ren)."
+    "zh": "与 RelationalRenewal 的支持门控定律及外围磨损定律的实例定理；储备与延迟更新下的联合超出；份额与归属（不推出责任）。",
+    "en": "Instance theorems to RelationalRenewal's support-gated law and the periphery's wear law; joint excess under reserves and delayed renewal; shares and attribution (responsibility does not follow)."
   },
   "correspondence": {
     "zh": "Ren 的提议说，自我可以变得僵硬，“has to count the dynamics that happens beyond what the \"self\" sees”。外围的磨损定律已有同一现象：两个部分各在更新之内、只合起来超出时，共享的形成随之终止（renewing-consuming-formation 中的 jointly_exceeding_parts_end_shared_formation）。本结果把它陈述在脊柱上，以支持门控的网的形式，不用磨损定律：更新者依存于所更新者，联合超出使水平低于其需要，更新停止，以其所需依存者终结，取用者以这样的需要依存时也在内。作者的读法（AI 论证）：元吸引子选出取用更多的形成，它们起初形成更多，每步的计数偏好它们；各自只计自身的取用，合起来超出更新，共享的条件终结，以其所需依存于它的随之终结，胜者如此依存时也在内。想要的延续比共享条件所存更长远时，它必须计入对其所依存者的联合取用；n 步联合超出只需要 n 的水平，视界较短的想要可以在联合超出中被全部满足（Mortal，见 derived-extent-limits）。这是想要所要求的，不是对它的判决。",
@@ -592,6 +592,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D36）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ],
   "text_versions": [

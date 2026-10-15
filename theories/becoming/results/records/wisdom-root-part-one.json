@@ -130,8 +130,8 @@
       "en": "No axiom and no premise is added; each law's conditions stay in its theorems (balance only where used, the rest of the exchange fixed, decided values, a world held by a list and so on), as in the respective records."
     },
     {
-      "zh": "把规律对到智慧的各面（识、理、检验、学习、明、够、失控、代理、判断、元）是 AI 的读法，理依 Ren，其余待 Ren；“明”在这里只指看见自身所识之外要他者之识，不取其全部古典含义；“对每个表示成立”指每个学习者都受这些规律约束，不指有智慧者显式持有一个模型。",
-      "en": "Matching the laws to aspects of wisdom (registration, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, 理 being Ren's and the rest pending Ren; 明 here means only that seeing beyond one's own registration needs another's, not its whole classical sense; “holding of every representation” means every learner is bound by these laws, not that the wise hold an explicit model."
+      "zh": "把规律对到智慧的各面（识、理、检验、学习、明、够、失控、代理、判断、元）是 AI 的读法，理依 Ren，其余依 Ren 的交托采用；“明”在这里只指看见自身所识之外要他者之识，不取其全部古典含义；“对每个表示成立”指每个学习者都受这些规律约束，不指有智慧者显式持有一个模型。",
+      "en": "Matching the laws to aspects of wisdom (registration, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, adopted on Ren's delegation (理 is Ren's); 明 here means only that seeing beyond one's own registration needs another's, not its whole classical sense; “holding of every representation” means every learner is bound by these laws, not that the wise hold an explicit model."
     },
     {
       "zh": "“对每个表示成立”保持各定理的类型与条件。应用于智慧须另说明判断内容、根据、范围、强度及 E；不表示所有智慧活动都具有每个模块的功能或必须继续修改。",
@@ -139,8 +139,8 @@
     }
   ],
   "correspondence": {
-    "en": "Ren’s reading of 理 and the formal integration of the laws are retained. Correspondence to aspects of wisdom is an interpretive dependency, not a new Lean composition: which law constitutes which aspect of wisdom is an argument, not a theorem; 理 is read as Ren reads it, and the other readings are the AI's, pending Ren.",
-    "zh": "Ren 的理读法与各规律的形式整合保留。智慧各面的对应是解释性依赖，不是新增 Lean 组合：哪条规律构成智慧的哪一面是论证，不是定理；理依 Ren，其余读法是 AI 的，待 Ren。"
+    "en": "Ren’s reading of 理 and the formal integration of the laws are retained. Correspondence to aspects of wisdom is an interpretive dependency, not a new Lean composition: which law constitutes which aspect of wisdom is an argument, not a theorem; 理 is read as Ren reads it, and the other readings are the AI's, adopted on Ren's delegation.",
+    "zh": "Ren 的理读法与各规律的形式整合保留。智慧各面的对应是解释性依赖，不是新增 Lean 组合：哪条规律构成智慧的哪一面是论证，不是定理；理依 Ren，其余读法是 AI 的，依 Ren 的交托采用。"
   },
   "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
   "aliases": [
@@ -878,6 +878,10 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Identification.lean（P83g：新增一节 CubicRest（oddCycle、learner_refuted_late、learner_rest_cubic 及其沿各转的推演，34 项声明：按否证学习者的静止之步是立方阶的）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Identification.lean (P83g: a section CubicRest added (oddCycle, learner_refuted_late, learner_rest_cubic and their walk through the turns, 34 declarations: the refutation learner's rest step is cubic); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D26）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D26): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ],
   "text_versions": [

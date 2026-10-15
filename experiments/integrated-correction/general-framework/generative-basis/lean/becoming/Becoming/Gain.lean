@@ -46,10 +46,11 @@ amount within it, is exchange beyond that family at arbitrarily late steps: thro
 or from the rest. For a finite whole there is no boundary to cross, and with the rest idle the
 whole recurs: unceasing generation within a bounded whole is return, not novelty without end.
 
-**Readings (the AI's, decided on Ren's delegation of 15 October 2026; P110).** “Gain from beyond
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D7, D27).**
+“Gain from beyond
 the part” is read as these two ways in, the boundary and the rest. The rest counts what the listed
 relata do not, so a finite whole new without end is one whose listing leaves out what gives to it.
-`Becoming.Coupling` (P109) states the counterpart for moves: moves formed by a whole, rest or part
+`Becoming.Coupling` states the counterpart for moves: moves formed by a whole, rest or part
 that a list holds repeat within the list's length.
 
 What is not derived: whether an actual part is open, which relatum the rest is in an actual

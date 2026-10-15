@@ -32,8 +32,8 @@
     }
   ],
   "correspondence": {
-    "zh": "P70 的第一部分（工作板），按 Ren 2026-10-12 的“push the frontier, as far as possible”，回答 Ren 的“the framing may lose something”与“what makes a pair, a pair?”：分别描述各部分扣除的恰是关系；关系的“能一起是什么”是“怎样一起继续”在一刻的记录。读法（AI 的，待 Ren；Ren 同意了包含它们的回答）：相关是一次相遇的记忆；三生万物读作三是整体能持有任何部分都不持有的关系的最小数目。部分失去整体的另一种方式（部分允许没有整体有的）是 contextual-registration 的 no_whole，在同样的三对上。见整合文档 §94。",
-    "en": "The first part of P70 (work board), following Ren's “push the frontier, as far as possible” of 12 October 2026, answering Ren's “the framing may lose something” and “what makes a pair, a pair?”: what describing the parts separately deducts is exactly the relation; “what can go together” is the record at a moment of “how they go on”. Readings (the AI's, pending Ren; Ren agreed with the reply containing them): a correlation is the memory of a meeting; 三生万物 read as three being the least number at which a whole holds a relation no part holds. The other way parts fail a whole (parts allowing what no whole has) is no_whole of contextual-registration, on the same three pairs. See §94 of the integration note."
+    "zh": "P70 的第一部分（工作板），按 Ren 2026-10-12 的“push the frontier, as far as possible”，回答 Ren 的“the framing may lose something”与“what makes a pair, a pair?”：分别描述各部分扣除的恰是关系；关系的“能一起是什么”是“怎样一起继续”在一刻的记录。读法（AI 的，依 Ren 的交托采用；Ren 同意了包含它们的回答）：相关是一次相遇的记忆；三生万物读作三是整体能持有任何部分都不持有的关系的最小数目。部分失去整体的另一种方式（部分允许没有整体有的）是 contextual-registration 的 no_whole，在同样的三对上。见整合文档 §94。",
+    "en": "The first part of P70 (work board), following Ren's “push the frontier, as far as possible” of 12 October 2026, answering Ren's “the framing may lose something” and “what makes a pair, a pair?”: what describing the parts separately deducts is exactly the relation; “what can go together” is the record at a moment of “how they go on”. Readings (the AI's, adopted on Ren's delegation; Ren agreed with the reply containing them): a correlation is the memory of a meeting; 三生万物 read as three being the least number at which a whole holds a relation no part holds. The other way parts fail a whole (parts allowing what no whole has) is no_whole of contextual-registration, on the same three pairs. See §94 of the integration note."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
   "aliases": [
@@ -99,6 +99,13 @@
       "detail": {
         "zh": "投影承载规律恰当经它相同者同去；这里各自移动每个部分的律保持矩形，共同的律可以使部分相关或不再相关。",
         "en": "A projection carries a law exactly where what it lumps goes alike; here laws moving each part by itself keep wholes rectangular, and joint laws can relate or unrelate the parts."
+      }
+    },
+    {
+      "id": "gluing-under-parity",
+      "detail": {
+        "zh": "部分失去整体的同一类情形的确切规律：奇偶约束下，不依语境的读法恰在没有一组语境矛盾处存在。",
+        "en": "The exact law for the same kind of case of parts failing a whole: for parity constraints, context-free readings exist exactly where no selection of contexts contradicts."
       }
     }
   ],
@@ -242,8 +249,8 @@
     }
   ],
   "next_delta": {
-    "zh": "刻画保持矩形的共同的律；n 个部分的分离与“部分给回整体”的统一陈述；Ren 的判断：相关读作相遇的记忆。",
-    "en": "Characterizing the joint laws that keep wholes rectangular; one statement of separation and of parts giving back the whole for n parts; Ren's judgment on reading a correlation as the memory of a meeting."
+    "zh": "刻画保持矩形的共同的律；n 个部分的分离与“部分给回整体”的统一陈述。",
+    "en": "Characterizing the joint laws that keep wholes rectangular; one statement of separation and of parts giving back the whole for n parts."
   },
   "history": [
     {
@@ -373,6 +380,14 @@
     {
       "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：沿确定之律过程的历程，从整体出发 n 步所到达者（reachedFrom）：各部分各自移动时保持无关（矩形，courses_keep_unrelated）；两个移动都不合并时，关系沿每条历程持续（relation_persists_courses）；把第一部分复制入第二部分的一步使两部分相同，不是矩形（copy_relates_course）；遗忘一个部分使之无关（forgetting_unrelates_courses）；耦合一步关联，再作用一步解除（coupling_course）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
       "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: along the courses of a determined law's process, what n moves reach from a whole (reachedFrom): parts moved each by itself stay unrelated (rectangular, courses_keep_unrelated); where neither move merges, a relation persists along every course (relation_persists_courses); one move copying the first part into the second makes them go alike, which is not rectangular (copy_relates_course); forgetting a part unrelates it (forgetting_unrelates_courses); a coupling relates in one move and, acting again, unrelates (coupling_course). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D33）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D33): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026-10-15 P112（奇偶约束下语境中的读法何时粘合，研究 §143）：related 加 gluing-under-parity。陈述与证明不变。",
+      "en": "15 October 2026, P112 (when readings in context glue, for parity, study section 143): related adds gluing-under-parity. Statement and proofs unchanged."
     }
   ]
 }

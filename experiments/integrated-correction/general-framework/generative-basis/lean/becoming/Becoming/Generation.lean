@@ -6,9 +6,9 @@ import Becoming.Return
 The readings of `living` in `Becoming.Dependence` and `Becoming.Metaethics` read what an
 event does not harm. None of them reads further generation. This module reads arising on
 webs of dependence and relates it to renewal. Arising, becoming active, is the formal
-carrier of one reading of the second 生 of 生生 (the author's reading); which 生 the
-second 生 names, and whether an arising on a consumed condition is 生成 at all, are Ren's
-to say.
+carrier of one reading of the second 生 of 生生 (the author's reading); on Ren's delegation
+of 15 October 2026 the second 生 ranges over what can form, active or not, and arising on a consumed
+condition is classed by the comparison (DELEGATED-CHOICES D3).
 
 * A formation *arises* across a step when it is not active before the step and is
   active after it (`Arises`). Generation is *unceasing* when some formation arises at

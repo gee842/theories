@@ -127,6 +127,10 @@ SKIP_TOP = {"history", "text_versions", "proof_bindings", "canonical_source", "a
 
 FAILURES = []
 
+# Readings posed after Ren's reply of 15 October 2026 on the identification line ("reality is
+# always situational") and left for Ren by their owner; not within the delegation's list.
+EXCLUDE = {"identification-where-runs-part", "typicality-by-counting"}
+
 
 def apply(record):
     """Apply the replacements to one record in place; return the decisions used."""
@@ -151,7 +155,9 @@ def apply(record):
 
 
 # Study sections, provisional until landing (the integrator renumbers).
-SECTION = {"P110": 140, "P111": 141, "P112": 142}
+SECTION = {"P110": int(os.environ.get("P110_SECTION", 141)),
+           "P111": int(os.environ.get("P111_SECTION", 142)),
+           "P112": int(os.environ.get("P112_SECTION", 143))}
 MARK = "P110（依 Ren 2026-10-15 的交托"
 
 
@@ -199,6 +205,8 @@ def main():
     report = open(sys.argv[sys.argv.index("--dry") + 1], "w", encoding="utf-8") if dry else None
     changed = []
     for name, record in records(root):
+        if record["id"] in EXCLUDE:
+            continue
         if any(MARK in h.get("zh", "") for h in record.get("history", [])):
             print("already reconciled:", record["id"], file=sys.stderr)
             continue

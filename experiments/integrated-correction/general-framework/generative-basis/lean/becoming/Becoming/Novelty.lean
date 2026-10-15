@@ -42,7 +42,8 @@ each change.
   (`Flow.withImbalance`), no balance is supposed: a family gaining nothing with its rest counted
   stays within its stock at `T` (`Flow.bounded_counting_rest`).
 
-**Readings (the AI's, pending Ren).** Each law of this module holds of any becoming that has
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D27).** Each
+law of this module holds of any becoming that has
 levels, and each condition it uses is a state of the part it is about, as curvature is a state of
 a region. Returning is what a bounded part does; novelty without end is gain without bound,
 which must come from beyond the part; a bounded present cannot hold its own history; and loss at

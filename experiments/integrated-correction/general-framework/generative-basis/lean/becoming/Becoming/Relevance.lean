@@ -63,7 +63,7 @@ relevance - yes, let's fold”): it is the significance of realized living conte
 comparison of courses to the AI (“Comparing courses - you decide”), which compares courses on
 possibilities; the theorems of the other comparisons stay.
 
-**AI reading, pending Ren.**
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D1, D16).**
 - Significance need not be positive, and what is positive is the living, 生生: so the AI reads
   Ren's “doesn't have to be positive”.
 - The possibility reading of C reads “what has significance is what can form”

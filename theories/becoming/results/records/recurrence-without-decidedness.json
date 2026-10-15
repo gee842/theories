@@ -32,8 +32,8 @@
     }
   ],
   "correspondence": {
-    "zh": "Ren 2026-10-11：“give me more context, but i intuitively feel decidability is too dualist, also proved solutions and their pro/cons”，并以“please”接受 AI 的建议：可判定性局部化，不再是表示的承诺。AI 的读法：不终止的形式是双重否定的复现，不指出在哪一步，但排除“从某步起再没有”；这正是已证的界：不给已定时，命名一步需要有限全知原则（World.lpo_of_finite_ends、Listed.lpo_of_few、Web.lpo_of_ending），对每个有限世界要求复现需要排中律（World.law_iff_em）。读法待 Ren。",
-    "en": "Ren, 11 October 2026: “give me more context, but i intuitively feel decidability is too dualist, also proved solutions and their pro/cons”, and “please” to the AI's suggestion that decidability be made local, no longer a commitment of the representation. The AI's reading: the forms that never stop are recurrence doubly negated, naming no step but excluding “none from some step on”; this is the proved boundary: without decidedness, naming a step needs the limited principle of omniscience (World.lpo_of_finite_ends, Listed.lpo_of_few, Web.lpo_of_ending), and asking recurrence of every finite world needs excluded middle (World.law_iff_em). The reading awaits Ren."
+    "zh": "Ren 2026-10-11：“give me more context, but i intuitively feel decidability is too dualist, also proved solutions and their pro/cons”，并以“please”接受 AI 的建议：可判定性局部化，不再是表示的承诺。AI 的读法：不终止的形式是双重否定的复现，不指出在哪一步，但排除“从某步起再没有”；这正是已证的界：不给已定时，命名一步需要有限全知原则（World.lpo_of_finite_ends、Listed.lpo_of_few、Web.lpo_of_ending），对每个有限世界要求复现需要排中律（World.law_iff_em）。读法依 Ren 的交托采用。",
+    "en": "Ren, 11 October 2026: “give me more context, but i intuitively feel decidability is too dualist, also proved solutions and their pro/cons”, and “please” to the AI's suggestion that decidability be made local, no longer a commitment of the representation. The AI's reading: the forms that never stop are recurrence doubly negated, naming no step but excluding “none from some step on”; this is the proved boundary: without decidedness, naming a step needs the limited principle of omniscience (World.lpo_of_finite_ends, Listed.lpo_of_few, Web.lpo_of_ending), and asking recurrence of every finite world needs excluded middle (World.law_iff_em). The reading is adopted on Ren's delegation."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
   "aliases": [
@@ -140,8 +140,8 @@
     }
   ],
   "limitations": {
-    "zh": "不终止的形式不指出在哪一步；命名一步需要所寻之处已定，对每个世界要求复现需要从某步起已定；只对离散步陈述；读法是 AI 的，待 Ren。",
-    "en": "The forms that never stop name no step; naming one needs decidedness where it is sought, and asking recurrence of every world needs decidedness from some step on; stated for discrete steps; the readings are the AI's, pending Ren."
+    "zh": "不终止的形式不指出在哪一步；命名一步需要所寻之处已定，对每个世界要求复现需要从某步起已定；只对离散步陈述；读法是 AI 的，依 Ren 的交托采用。",
+    "en": "The forms that never stop name no step; naming one needs decidedness where it is sought, and asking recurrence of every world needs decidedness from some step on; stated for discrete steps; the readings are the AI's, adopted on Ren's delegation."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Decidedness 的 55 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §84；尚未经独立审查。",
@@ -415,6 +415,10 @@
     {
       "zh": "2026年10月16日，P116 落地（研究第140节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P116：§6 一对段落，第一部分“认识”、完整陈述与界一项，§8 的状态行、辨识读法与“路径分支时”，§9 两行，术语三行；总数改据新回执）。",
       "en": "16 October 2026, landing P116 (study section 140): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P116: a §6 paragraph pair, Part I \"Knowing\", the theory stated in full and its bound item, §8's status row, identification reading and \"When the course branches\", two §9 rows, three glossary rows; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D30）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ]
 }

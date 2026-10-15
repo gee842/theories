@@ -35,7 +35,8 @@ them, with no premise:
   last is reached, the first two places agree for `N - 2` steps and do not pass the same tests
   (`registered_within_exact`).
 
-The readings are the AI's, pending Ren: what tells configurations apart within a bounded world
+The readings are the AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D34):
+what tells configurations apart within a bounded world
 is a finite record, and its length is set by the number of configurations, exactly.
 -/
 

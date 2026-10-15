@@ -36,8 +36,8 @@
     }
   ],
   "correspondence": {
-    "zh": "P82（工作板），回应 Ren 2026-10-12 关于不确定规律的问题：“this is somewhat like quantum dynamics. For examples, Fermi's diagrams. … we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that”。核心的不确定规律陈述何者可能，不陈述多少；本结果陈述赋权加上什么，并证明历史之和在有限配置、有界视野下对任意多历程精确，经描述的积分恰在一步可归并处精确（P66 的 carries_law_iff 的加权形式）。读法（AI 的，待 Ren）：AI 把“Fermi's diagrams”读作费曼图，其历史求和有同样的形状：一段历史的权重由其各步的权重复合，备选相加。见整合文档 §104。",
-    "en": "P82 (work board), answering Ren's question of 12 October 2026 on laws that are not determined: “this is somewhat like quantum dynamics. For examples, Fermi's diagrams. … we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that”. The core's laws that are not determined state what is possible, not how much; this result states what a weighting adds and proves the sum over histories exact, for any number of courses, with finitely many configurations and a bounded horizon, and exact through a description exactly where the description is lumpable at one step (the weighted form of P66's carries_law_iff). Reading (the AI's, pending Ren): the AI reads “Fermi's diagrams” as Feynman diagrams, whose sum over histories has this shape: the weight of a history is composed of its steps' weights, and alternatives add. See the integration document §104."
+    "zh": "P82（工作板），回应 Ren 2026-10-12 关于不确定规律的问题：“this is somewhat like quantum dynamics. For examples, Fermi's diagrams. … we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that”。核心的不确定规律陈述何者可能，不陈述多少；本结果陈述赋权加上什么，并证明历史之和在有限配置、有界视野下对任意多历程精确，经描述的积分恰在一步可归并处精确（P66 的 carries_law_iff 的加权形式）。读法（AI 的，依 Ren 的交托采用）：AI 把“Fermi's diagrams”读作费曼图，其历史求和有同样的形状：一段历史的权重由其各步的权重复合，备选相加。见整合文档 §104。",
+    "en": "P82 (work board), answering Ren's question of 12 October 2026 on laws that are not determined: “this is somewhat like quantum dynamics. For examples, Fermi's diagrams. … we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that”. The core's laws that are not determined state what is possible, not how much; this result states what a weighting adds and proves the sum over histories exact, for any number of courses, with finitely many configurations and a bounded horizon, and exact through a description exactly where the description is lumpable at one step (the weighted form of P66's carries_law_iff). Reading (the AI's, adopted on Ren's delegation): the AI reads “Fermi's diagrams” as Feynman diagrams, whose sum over histories has this shape: the weight of a history is composed of its steps' weights, and alternatives add. See the integration document §104."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
   "aliases": [
@@ -131,8 +131,8 @@
     }
   ],
   "limitations": {
-    "zh": "权重从何而来、实际展开有哪个赋权没有陈述；无穷多配置或无界视野上的和及其收敛没有陈述；带相位的振幅（复数）属于外围；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "Where weights come from and which weighting an actual unfolding has are not stated; sums over infinitely many configurations or an unbounded horizon, with their convergence, are not stated; amplitudes with phases (complex numbers) belong to the periphery; the readings are the AI's, pending Ren; no ethical predicate occurs."
+    "zh": "权重从何而来、实际展开有哪个赋权没有陈述；无穷多配置或无界视野上的和及其收敛没有陈述；带相位的振幅（复数）属于外围；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
+    "en": "Where weights come from and which weighting an actual unfolding has are not stated; sums over infinitely many configurations or an unbounded horizon, with their convergence, are not stated; amplitudes with phases (complex numbers) belong to the periphery; the readings are the AI's, adopted on Ren's delegation; no ethical predicate occurs."
   },
   "validation_scope": {
     "zh": "2026-10-14：Becoming.Mechanism、Becoming.Weighted 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Weighted 的 35 项定理全部空依赖，其中含 Weights、Weights.sum_courses、Weights.transfer、Weights.along、courses、Weights.Hom、Weights.Hom.transfer、possibility、possibility_transfer_iff、counting、support、counting_transfer_iff、Weights.lumped_iff与 Lumping.loses；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §104；尚无独立审查。",
@@ -257,8 +257,8 @@
     }
   ],
   "next_delta": {
-    "zh": "外围的实数与复数赋权的实例（概率与振幅），以及 Ren 对“历史之和”读法的判断。",
-    "en": "Instances of real and complex weightings in the periphery (probabilities and amplitudes), and Ren's judgment on the reading of the sum over histories."
+    "zh": "外围的实数与复数赋权的实例（概率与振幅）。",
+    "en": "Instances of real and complex weightings in the periphery (probabilities and amplitudes)."
   },
   "history": [
     {
@@ -368,6 +368,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D30）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ]
 }

@@ -166,12 +166,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T164401.170999Z): the 58 declarations of Becoming.Sensitivity, 47 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 137; not independently reviewed."
   },
   "next_delta": {
-    "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；敏感的度量与差别到达多少；按时间先后读的敏感；独立审查；对读法（识就是敏感；不依存于任何部分的整体是尾）的判断。",
-    "en": "The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; a measure of sensitivity and of how much difference arrives; sensitivity in temporal order; an independent review; a judgment on the readings (registration as sensitivity; a whole depending on no part as a tail)."
+    "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；敏感的度量与差别到达多少；按时间先后读的敏感；独立审查。",
+    "en": "The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; a measure of sensitivity and of how much difference arrives; sensitivity in temporal order; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。读法（AI 的，待 Ren 或按其 2026-10-15 的交托判断）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least registration, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. Readings (the AI's, pending Ren or decided on Ren's delegation of 15 October): registration is sensitivity, a formation registering exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识本身仍是 Ren 的）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least registration, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; 识 itself stays Ren's): registration is sensitivity, a formation registering exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
   "aliases": [
@@ -438,6 +438,10 @@
     {
       "zh": "2026-10-15：新增，回答 counterfactual-is-the-course 的 next_delta（P113）；研究 §137。",
       "en": "15 October 2026: added, answering the next_delta of counterfactual-is-the-course (P113); study section 137."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D37）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D37): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ],
   "text_versions": []

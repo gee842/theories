@@ -77,8 +77,9 @@ Results:
 * Read stepwise, with dependences that may change (`Web.valuation`), an event is
   living when it is active and not undermining: it does not draw on a condition at a
   step after which the condition is below both the present need of a dependence on it
-  and a need of that dependence met while it held. This is the working
-  stepwise candidate, pending Ren's choice of the reading. Being within renewal at the
+  and a need of that dependence met while it held. This is the stepwise
+  reading, kept beside the whole-run and relation-level readings on Ren's delegation of 15 October
+  2026; no comparison uses it (DELEGATED-CHOICES D1, D10). Being within renewal at the
   step is not used as `living`, since it withholds the event of a formation whose own
   dependence breaks (`Renewable.broken_formation`); not breaking is not used either, since
   it includes drawing after a loss, which in `Renewable` keeps the condition from

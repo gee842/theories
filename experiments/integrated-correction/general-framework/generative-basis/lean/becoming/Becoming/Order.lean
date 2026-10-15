@@ -137,7 +137,8 @@ are taken in the other order.
   which it rises and falls, and the relata arising and ceasing, are those of the stretch of the
   world without idle steps it reads (`World.withoutIdle_totals`, `World.withoutIdle_counts`).
 
-Reading (the AI's, pending Ren): for the laws of one step, the totals and counts over a stretch,
+Reading (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D30): for the
+laws of one step, the totals and counts over a stretch,
 and recurrence, the step index carries nothing beyond the order of change; an idle step
 registers nothing, and removing it changes nothing the laws state. What is counted per step,
 rates and how long a reserve carries, is relative to the unit of the reading, as coarser steps

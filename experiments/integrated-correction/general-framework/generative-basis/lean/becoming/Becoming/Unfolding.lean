@@ -88,8 +88,12 @@ for one determined law.
 
 **Readings.** Ren, 12 October 2026, of the reading that law and history are one unfolding read
 two ways, the law read off the unfolding rather than set over it: "yes, i do agree with your
-reading, there are no two realities". The rest are the AI's, pending Ren.
-- `World` is where the core begins; a labelled process is a world read with its configuration
+reading, there are no two realities". The rest are the AI's, adopted on Ren's delegation of 15
+October 2026 (DELEGATED-CHOICES D23).
+- (Superseded: on 14 October 2026 Ren asked “why do we need "World"?” and approved the readings in
+  context as the general case, `World` being the case where they glue, `Becoming.Readings`;
+  DELEGATED-CHOICES D23.) `World` is where the core begins; a labelled process is a world read with
+  its configuration
   split into what the law fixes and what it leaves open, and a frame is a world read through
   its claims. The two directions are both proved: every run with its claims is a world that
   fixes it, and every world is a run of the law it shows, and of the law of exchange where it

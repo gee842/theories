@@ -30,7 +30,7 @@ needed, merge, then continue".
 * **Observation registers it.** Observing the stock, a formation registers any raise at once
   (`Web.observed_raise_registers`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26).**
 - A runaway is a loop whose registration cannot register the distance to its break: before the
   break, its own registration is the same as in a world with as much more stock as one likes.
   Its policy, however clever, cannot use what it does not register.

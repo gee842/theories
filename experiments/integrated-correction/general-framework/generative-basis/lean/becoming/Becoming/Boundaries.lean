@@ -97,7 +97,7 @@ does not lower the axiom's content.
   in `Clearing` (`Clearing.system_presupposition`). The step is not removed there: it has moved
   into drawing the self's boundary closed under the relation.
 
-**AI reading, pending Ren.**
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D21).**
 - The presupposition reads the “belief” without which, Ren wrote, the self “can not justify
   itself”. Ren wrote this of the self's limit; using the belief as a premise is the AI's step, and
   sub-truth along a relation is far stronger than that some continuation has significance.
@@ -131,7 +131,8 @@ does not lower the axiom's content.
   sub-true at the self, along the empty relation. The weaker version gives the axiom's comparison
   on every part within one's reach. The reach closure points forward: on this reading the order
   runs down to the bare self, not through the feeding closure, which lies on another branch
-  (`Flow.presupposition_order`). Whether this direction fits is Ren's to judge.
+  (`Flow.presupposition_order`). This direction is adopted as the reading of Ren's order of levels
+  on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D21).
 
 What is not derived:
 - covering, sub-truth and invariance themselves. The presupposition is supplied as every

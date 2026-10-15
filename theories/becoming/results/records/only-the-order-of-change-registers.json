@@ -32,8 +32,8 @@
     }
   ],
   "correspondence": {
-    "zh": "P78（工作板），按 Ren 2026-10-12 的“move towards 100%”：零前提计划把共享的离散步序号列为表示的承诺，像 P69 对出发点那样重新奠基。这里给出 Sampling 的严格递增读法的逆：插入空步。读法（AI 的，待 Ren）：对一步的规律、段上的总量与计数以及复现，步序号不携带变化次序以外的东西；空步什么也不登记；每步所计的相对于读法的单位，正如较粗的步。见整合文档 §102。",
-    "en": "P78 (work board), following Ren's “move towards 100%” of 12 October 2026: the zero-premise plan lists a shared discrete index of steps among the commitments of the representation, to be re-founded as P69 re-founded the starting point. This gives the converse of Sampling's strictly increasing reading: inserting idle steps. Reading (the AI's, pending Ren): for the laws of one step, the totals and counts over a stretch, and recurrence, the step index carries nothing beyond the order of change; an idle step registers nothing; what is counted per step is relative to the unit of the reading, as with coarser steps. See the integration document §102."
+    "zh": "P78（工作板），按 Ren 2026-10-12 的“move towards 100%”：零前提计划把共享的离散步序号列为表示的承诺，像 P69 对出发点那样重新奠基。这里给出 Sampling 的严格递增读法的逆：插入空步。读法（AI 的，依 Ren 的交托采用）：对一步的规律、段上的总量与计数以及复现，步序号不携带变化次序以外的东西；空步什么也不登记；每步所计的相对于读法的单位，正如较粗的步。见整合文档 §102。",
+    "en": "P78 (work board), following Ren's “move towards 100%” of 12 October 2026: the zero-premise plan lists a shared discrete index of steps among the commitments of the representation, to be re-founded as P69 re-founded the starting point. This gives the converse of Sampling's strictly increasing reading: inserting idle steps. Reading (the AI's, adopted on Ren's delegation): for the laws of one step, the totals and counts over a stretch, and recurrence, the step index carries nothing beyond the order of change; an idle step registers nothing; what is counted per step is relative to the unit of the reading, as with coarser steps. See the integration document §102."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
   "aliases": [
@@ -121,8 +121,8 @@
     }
   ],
   "limitations": {
-    "zh": "移除时每个原步的移动之步是给定的（Stutter.Moves）；第二部分的谓词的不变性没有证明；连续时间没有陈述；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "The moving step for each step read is supplied for the removal (Stutter.Moves); invariance of the predicates of Part II is not shown; continuous time is not stated; the readings are the AI's, pending Ren; no ethical predicate occurs."
+    "zh": "移除时每个原步的移动之步是给定的（Stutter.Moves）；第二部分的谓词的不变性没有证明；连续时间没有陈述；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
+    "en": "The moving step for each step read is supplied for the removal (Stutter.Moves); invariance of the predicates of Part II is not shown; continuous time is not stated; the readings are the AI's, adopted on Ren's delegation; no ethical predicate occurs."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Order 的 266 项定理全部空依赖，其中含 Stutter、World.stutter_premises_iff、stutter_total、World.stutter_arisingRecurs_iff、World.stutter_counted、Flow.sample_not_more、Expansion.more_step_relative、Lapse.reserve_step_relative、World.withoutIdle、World.IdleAt、Stutter.Moves、Stutter.moving_unique、World.withoutIdle_premises、World.withoutIdle_transmits、World.withoutIdle_counted、World.withoutIdle_totals与 World.withoutIdle_counts；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §102；尚无独立审查。",
@@ -402,6 +402,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D30）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ]
 }

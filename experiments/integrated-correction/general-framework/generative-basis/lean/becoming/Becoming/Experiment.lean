@@ -37,7 +37,8 @@ what each theorem states.
   (`Confound.confounded`); varying the move against it, a later step refutes the model, since
   no determined process admits the steps so read (`Confound.varied_refutes`).
 
-**Readings (the AI's, pending Ren).** An experiment is varying one's own act where the
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).** An
+experiment is varying one's own act where the
 configuration, read as the experimenter reads it, returns. Replication is that return. A
 control is the claim that what differs between the occasions is irrelevant: the model that
 the step factors through the reading. Varying the act independently of what the reading

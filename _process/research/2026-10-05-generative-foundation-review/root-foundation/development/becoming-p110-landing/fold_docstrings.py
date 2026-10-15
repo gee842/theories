@@ -14,8 +14,10 @@ docstrings removed is asserted to be identical before and after, so no statement
 name can change. Each replacement is asserted to occur exactly once, matching across line
 breaks; where the original phrase wrapped, the line break is kept after the same word.
 """
+import difflib
 import re
 import sys
+import textwrap
 from pathlib import Path
 
 LEAN = Path("experiments/integrated-correction/general-framework/generative-basis/lean/becoming")
@@ -221,6 +223,10 @@ README_GENERIC = [
     ("the other readings are the AI's, pending Ren", "the other readings are the AI's, adopted on Ren's delegation"),
 ]
 
+# Readings posed after Ren's reply of 15 October 2026 and left for Ren by their owner (the
+# rows of Becoming.Parting and Becoming.Typicality): their lines are not touched.
+KEEP_LINES = ("Becoming/Parting.lean", "Becoming/Typicality.lean")
+
 PENDING = re.compile(r"pending\s+Ren|Ren's\s+to\s+(?:choose|judge|decide|say)|Ren's\s+choice|待 Ren|由 Ren (?:选择|判断|定)")
 
 
@@ -251,6 +257,25 @@ def rewrap(matched, new):
         if "\n" in gap and index < len(words) - 1:
             return " ".join(words[:index + 1]) + gap + " ".join(words[index + 1:])
     return new
+
+
+def wrap_changed(before, after, width=100):
+    """Wrap the lines the fold lengthened beyond `width`, keeping their indentation (a bullet's
+    continuation lines indented under its text), as the surrounding docstrings are wrapped."""
+    a, b = before.split("\n"), after.split("\n")
+    out = []
+    for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
+        for line in b[j1:j2]:
+            if op == "equal" or len(line) <= width:
+                out.append(line)
+                continue
+            m = re.match(r"^(\s*)([*-] )?", line)
+            first = m.group(1) + (m.group(2) or "")
+            rest = m.group(1) + ("  " if m.group(2) else "")
+            out.extend(textwrap.wrap(line[len(first):], width=width, initial_indent=first,
+                                     subsequent_indent=rest, break_long_words=False,
+                                     break_on_hyphens=False))
+    return "\n".join(out)
 
 
 def code_only(text):
@@ -296,14 +321,27 @@ def main():
         try:
             for old, new in specific:
                 text, _ = replace(text, old, new)
-            for old, new in generic:
-                text, _ = replace(text, old, new, exactly_once=False)
+            if generic and rel.suffix == ".lean":
+                for old, new in generic:
+                    text, _ = replace(text, old, new, exactly_once=False)
+            elif generic:
+                # Table rows are single lines, so a row can be kept whole.
+                lines = text.split("\n")
+                for i, line in enumerate(lines):
+                    if any(k in line for k in KEEP_LINES):
+                        continue
+                    for old, new in generic:
+                        line, _ = replace(line, old, new, exactly_once=False)
+                    lines[i] = line
+                text = "\n".join(lines)
         except AssertionError as error:
             failures.append((rel.name, str(error)))
             continue
         if rel.suffix == ".lean":
+            text = wrap_changed(before, text)
             assert code_only(text) == code_only(before), ("code outside comments changed", rel)
-        left = [m.group(0) for m in PENDING.finditer(text)]
+        left = [m.group(0) for line in text.split("\n") if not any(k in line for k in KEEP_LINES)
+                for m in PENDING.finditer(line)]
         if left:
             print(f"{rel.name}: still {left}", file=sys.stderr)
         if text != before:

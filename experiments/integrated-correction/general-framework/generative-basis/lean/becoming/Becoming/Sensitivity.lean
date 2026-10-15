@@ -66,7 +66,8 @@ omniscience.
   vanishing one is given; that decision gives the limited principle itself
   (`lpo_of_vanish_decided`, through `seenBy_exists`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D37; 识
+itself stays Ren's reading).**
 - What a formation's exchange is sensitive to is what it registers, with any number of
   conditions, wherever the law reads finitely many conditions under each history: read as 识, a
   formation registers exactly what its own exchange can be changed by, one condition at a time,

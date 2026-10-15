@@ -59,7 +59,7 @@ or a process of the spine. Merging, returning and reachability are Recurrence's
   is absorbing under one move and not under the other, so not invariant; the run that only
   keeps stays locked in, and the run that leaves takes the other move.
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
 - An attractor is an absorbing region that a configuration outside it enters; its basin is
   what is drawn into it. Path dependence and lock-in are one law: what is drawn in never comes
   back, so where the course has gone decides what it can be again.

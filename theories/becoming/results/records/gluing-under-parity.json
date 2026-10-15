@@ -206,8 +206,8 @@
     "decidability"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Gluing 的 91 项声明（64 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 91 declarations of Becoming.Gluing, 64 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 140; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Gluing 的 91 项声明（64 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §143；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 91 declarations of Becoming.Gluing, 64 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 143; not independently reviewed."
   },
   "next_delta": {
     "zh": "超出奇偶约束的语境性：一般的有限可能性的确切障碍；概率的语境性与实数振幅下的量子值（外围）；独立审查。",
@@ -452,7 +452,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
       "role": "proof",
-      "sha256": "5b420062ebf932b498e6d471b1289cbe2ee3c4cd1264aa7186abfc723b26843c",
+      "sha256": "cfd8ee09066edeb632460acd056dfabd5615e31c7366fdae5377c7bab52b97d4",
       "declarations": [
         "Becoming.total"
       ]
@@ -460,17 +460,17 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e3786ad2fd58eb935e1fd6cd8eab85bdb16ad792668dccfeea715be95baf8d6f"
+      "sha256": "9cbdaf0dd8d951153546681432598bd8d6a6bff83a4036f126bf516ffbe39009"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "03fa3d2621a8cf3d53353f0b2154a07e4f60cc8b073aa57280f2b2f934477f45"
+      "sha256": "fccd24a3ee969b6ae2c12ae2490c783189fc9274d640ab20ff2e3336a2cbc928"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f786151c22f6b9aa6d1c655bc07bcdceae60811fc2ad59711152a492db83a991"
+      "sha256": "fc180aa7f13e7cab8cf616a67375a9b85d8fcfc1b524803c50a94638f4d6a91a"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md",
@@ -486,8 +486,8 @@
   "proof_bindings": [],
   "history": [
     {
-      "zh": "2026-10-15：新增，给出 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”中奇偶的部分（P112，Ren 2026-10-15 的交托与“push the frontier of completeness”）；研究 §140。",
-      "en": "15 October 2026: added, giving the parity part of the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality” (P112, on Ren's delegation of 15 October 2026 and “push the frontier of completeness”); study section 140."
+      "zh": "2026-10-15：新增，给出 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”中奇偶的部分（P112，Ren 2026-10-15 的交托与“push the frontier of completeness”）；研究 §143。",
+      "en": "15 October 2026: added, giving the parity part of the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality” (P112, on Ren's delegation of 15 October 2026 and “push the frontier of completeness”); study section 143."
     }
   ],
   "text_versions": []

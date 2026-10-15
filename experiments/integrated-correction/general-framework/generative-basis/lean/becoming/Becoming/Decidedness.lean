@@ -77,7 +77,8 @@ and across a list of steps the counts at each step sum (`CountsAcross`).
   Asked of every relation and determination, these are weak excluded middle and excluded middle
   (`exists_undominated_iff_weakly`, `undominated_has_iff_em`).
 
-**AI reading, pending Ren.** The yes or no of a state is not assumed of becoming. It is what an
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D30).** The yes or
+no of a state is not assumed of becoming. It is what an
 exact count needs, at the states counted, and what finding a step needs, at the steps searched.
 Laws relating counts need none, and the laws of recurrence hold with none, doubly negated.
 -/

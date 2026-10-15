@@ -191,8 +191,8 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
       "detail": {
-        "zh": "独立审查：关系读法作为生生读法的哲学根据尚未确立；读法的选择由 Ren 作出。现有读法读出的都是“不损”，不含继续生成。",
-        "en": "Independent review: the philosophical warrant for the relational reading as the reading of 生生 is not established; the choice of reading is Ren's. The present readings read “no harm” and include no further generation."
+        "zh": "独立审查：关系读法作为生生读法的哲学根据尚未确立；读法依 Ren 的交托决定：生生读作生成的空间，比较不用 living 的读法。现有读法读出的都是“不损”，不含继续生成。",
+        "en": "Independent review: the philosophical warrant for the relational reading as the reading of 生生 is not established; the reading is decided on Ren's delegation: 生生 is read as the generative space, and comparison uses no reading of living. The present readings read “no harm” and include no further generation."
       }
     },
     {
@@ -272,12 +272,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Dependence and Becoming.Metaethics bound to receipt 20261014T091930.724493Z): the stepwise theorems of both modules have empty axiom reports; core purity verified. Author counterreview in the integration note; independent reviews (see sources): the first's corrections are handled, the second to fourth brought undermining to its minimum form, the fifth asked that its dependence on identity across steps be noted, the sixth accepted that note."
   },
   "next_delta": {
-    "zh": "Ren 选择生生的读法或其组合（材料见整合文档），以及对以消耗取胜的判决是否覆盖越过阈值之前的事件；有界缺席之下的依存（休眠、迁出）怎样延续一段；带数量与更新率的依存网；条件对应纪律的时间次序；不依赖运行的读法及其与 universal_reason 的接通；在 living 中加入继续生成的成分。",
-    "en": "Ren's choice of the reading of 生生 or a combination (see the integration note), and whether the verdict on winning by consumption covers events before the threshold; tenure through bounded absence (dormancy, migration); webs with amounts and renewal rates; a time-ordered correspondence discipline for conditions; a run-independent reading connected to universal_reason; further generation in living."
+    "zh": "有界缺席之下的依存（休眠、迁出）怎样延续一段；带数量与更新率的依存网；条件对应纪律的时间次序；不依赖运行的读法及其与 universal_reason 的接通；在 living 中加入继续生成的成分。",
+    "en": "Tenure through bounded absence (dormancy, migration); webs with amounts and renewal rates; a time-ordered correspondence discipline for conditions; a run-independent reading connected to universal_reason; further generation in living."
   },
   "correspondence": {
-    "zh": "逐步读法读的是事件所处的关系，不是它的因果贡献。整段读法问形成在整段运行中是否消耗；逐步的更新分类问事件之步是否维持其条件；逐步的 living 问事件是否在这样一步汲取：之后一个依存不被满足，而它在不间断成立期间曾以不小于现在的所需被满足。逐步 living 先后有三个候选（在更新之内、不断裂、不侵蚀），每个都保留在核心中：前两个连同使它不被采用的见证，第三个“不侵蚀”是待 Ren 选择的工作候选，连同它所放弃的（整合文档）。以哪一种或哪种组合作为生生的读法，是 Ren 方向内的选择，本结果不替 Ren 作出（整合文档 §8.5）。",
-    "en": "The stepwise reading reads the relations an event stands in, not its causal contribution. The whole-run reading asks whether a formation consumes over the run; the stepwise classification asks whether an event's step keeps its conditions; stepwise living asks whether an event draws at a step after which a dependence is unmet that was met, during its unbroken tenure, at a need no smaller than the present one. Stepwise living had three candidates in turn (within renewal, not breaking, not undermining), each kept on the core: the first two with the witness that sets them aside, the third, “not undermining”, as the working candidate pending Ren's choice, with what it gives up (integration note). Which reading, or combination, is the reading of 生生 is a choice within Ren's direction that this result does not make on Ren's behalf (integration note §8.5)."
+    "zh": "逐步读法读的是事件所处的关系，不是它的因果贡献。整段读法问形成在整段运行中是否消耗；逐步的更新分类问事件之步是否维持其条件；逐步的 living 问事件是否在这样一步汲取：之后一个依存不被满足，而它在不间断成立期间曾以不小于现在的所需被满足。逐步 living 先后有三个候选（在更新之内、不断裂、不侵蚀），每个都保留在核心中：前两个连同使它不被采用的见证，第三个“不侵蚀”是工作读法，依 Ren 的交托保留，连同它所放弃的（整合文档；DELEGATED-CHOICES D10）。以哪一种或哪种组合作为生生的读法，是 Ren 方向内的选择，本结果不作出；依 Ren 的交托，生生读作生成的空间，比较不用 living 的读法（整合文档 §8.5；DELEGATED-CHOICES D1）。",
+    "en": "The stepwise reading reads the relations an event stands in, not its causal contribution. The whole-run reading asks whether a formation consumes over the run; the stepwise classification asks whether an event's step keeps its conditions; stepwise living asks whether an event draws at a step after which a dependence is unmet that was met, during its unbroken tenure, at a need no smaller than the present one. Stepwise living had three candidates in turn (within renewal, not breaking, not undermining), each kept on the core: the first two with the witness that sets them aside, the third, “not undermining”, as the working reading, kept on Ren's delegation, with what it gives up (integration note; DELEGATED-CHOICES D10). Which reading, or combination, is the reading of 生生 is a choice within Ren's direction that this result does not make; on Ren's delegation 生生 is read as the generative space, and comparison uses no reading of living (integration note §8.5; DELEGATED-CHOICES D1)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
   "aliases": [
@@ -981,6 +981,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-15 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §141，DELEGATED-CHOICES D1, D10）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 141, DELEGATED-CHOICES D1, D10): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ],
   "text_versions": [

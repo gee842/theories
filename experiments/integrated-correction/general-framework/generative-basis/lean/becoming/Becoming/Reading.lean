@@ -59,7 +59,8 @@ the ties hold by what the readings are.
   the second (`ExchangeLaw.requirement_beyond_course`). Requirement is a counterfactual of the law,
   and no history fixes it.
 
-**Readings (the AI's, pending Ren).** Of the eight premises, balance, only active relata giving,
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D27, D28).**
+Of the eight premises, balance, only active relata giving,
 only active relata taking and only from what they draw on, and activity needing support tie
 readings of one exchange together: read off the exchange, with the rest counted and requirement
 read as what the exchange responds to, they hold by what the readings are. What remains are states

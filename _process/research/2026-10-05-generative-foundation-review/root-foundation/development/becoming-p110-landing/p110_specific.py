@@ -204,18 +204,18 @@ SPECIFIC = {
     ],
     "identification-where-bounded": [
         # Ren's reply of 15 October 2026 ("reality is always situational") decides the first
-        # reading, not the delegation (DELEGATED-CHOICES D34); the other readings are adopted.
-        (f"读法（AI 的，{ZA}）：“按情境”就是界；",
-         "“按情境”不读作界：Ren 2026-10-15 写道“reality is always situational”，实在总是情境的；界是情境的"
-         f"有限记录确定所识一切的条件（{DC} D34）。读法（AI 的，{ZA}）："),
-        (f"Readings (the AI's, {EA}): ‘situationally’ is the bound; ",
-         "‘Situationally’ is not read as the bound: Ren wrote on 15 October 2026 that “reality is always "
-         "situational”; the bound is the condition under which a situation's finite record fixes "
-         f"everything registered ({DC} D34). Readings (the AI's, {EA}): "),
-        ("Ren 对“按情境就是界”与有限名读法的判断。",
-         "证明按否证学习者确切的静止之步：对奇数 N ≥ 3，穷举（二值历史 N ≤ 17，三值 N ≤ 9）得最坏者为 (N³ − N)/4 + 3，这是计算，不是证明。"),
-        ("Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading.",
-         "Prove the exact rest step of the learner by refutation: for odd N ≥ 3 exhaustive search (two-valued histories with N ≤ 17, three-valued with N ≤ 9) finds the worst one is (N³ − N)/4 + 3, a computation, not a proof."),
+        # reading, not the delegation; the correspondence already records it (P116). The other
+        # readings, the finite name among them, are adopted (DELEGATED-CHOICES D34). The judgment
+        # on "situationally" with its qualification was posed after Ren's reply and stays Ren's.
+        (f"读法（AI 的，{ZA}）：“按情境”就是界；", f"读法（AI 的，{ZA}，{DC} D34）："),
+        (f"Readings (the AI's, {EA}): ‘situationally’ is the bound; ", f"Readings (the AI's, {EA}, {DC} D34): "),
+        ("Ren 对有限名读法的判断，及对“按情境”连同其限定（推出到运行不分开为止，权重只经典型的历程显示）的判断。",
+         "Ren 对“按情境”连同其限定（推出到运行不分开为止，权重只经典型的历程显示）的判断；证明按否证学习者确切的静止之步，"
+         "穷举得奇数 N ≥ 3 时为 (N³ − N)/4 + 3。"),
+        ("Ren's judgment on the finite-name reading, and on reading ‘situationally’ with its qualification (derived as far as runs do not part, weights showing only through typical courses).",
+         "Ren's judgment on reading ‘situationally’ with its qualification (derived as far as runs do not part, "
+         "weights showing only through typical courses); prove the exact rest step of the learner by refutation, "
+         "found by exhaustive search to be (N³ − N)/4 + 3 for odd N ≥ 3."),
     ],
     "identity-across-steps": [
         ("接续怎样读、工作读法是否让任期经由接续延续、“生生不息”读到哪个层次，属于 Ren 的读法选择。",
@@ -616,10 +616,11 @@ DNUM = {
 # A sentence added to the history note where Ren's own words, not the delegation, decide.
 EXTRA_NOTE = {
     "identification-where-bounded": (
-        "“按情境”不读作界，由 Ren 2026-10-15 的回答“not sure what's the reading 1, but reality is always "
-        "situational”决定，不由交托决定。",
-        "‘Situationally’ is not read as the bound, as Ren's reply of 15 October 2026 decides, “not sure "
-        "what's the reading 1, but reality is always situational”, not the delegation."),
+        "“按情境就是界”不采用，由 Ren 2026-10-15 的回答决定，不由交托决定；有限名的读法采用；"
+        "“按情境”连同其限定的判断在 Ren 的回答之后提出，仍属 Ren。",
+        "‘Situationally’ as the bound is not adopted, as Ren's reply of 15 October 2026 decides, not the "
+        "delegation; the finite-name reading is adopted; the judgment on ‘situationally’ with its "
+        "qualification, posed after Ren's reply, stays Ren's."),
 }
 
 
