@@ -200,8 +200,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T204116.215501Z): the 66 declarations of Becoming.Remainder, 58 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 154; not independently reviewed."
   },
   "next_delta": {
-    "zh": "每个耦合时程是否终将安定（其确切强度）；复现耦合的回路是否都使最大差别失控、多快（谱半径）；实数的量、连续时间与无穷多条件；把截断所失与历史之和的损失连起来；独立审查；Ren 对读法的判断。",
-    "en": "Whether every schedule settles, and the exact strength of that claim; whether every loop of recurring couplings makes the most difference that can arrive run away, and how fast (a spectral radius); real amounts, continuous time and infinitely many conditions; joining what a cut loses to the losses of the sum over histories; an independent review; Ren's judgment on the readings."
+    "zh": "给定强度的失控多快（谱半径）；实数的量、连续时间与无穷多条件；独立审查；Ren 对读法的判断。",
+    "en": "How fast a runaway of given strengths is (a spectral radius); real amounts, continuous time and infinitely many conditions; an independent review; Ren's judgment on the readings."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 问回路：“how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”；2026-10-16 决定 Becoming.Loops 的读法时，把只在某些步成立的耦合留为开放。本结果回答 how-a-carried-difference-grows 的 next_delta 首项。读法（AI 的，待 Ren）：精确余项是 Ren 取为与历史之和同一结构的展开的余项，形同 Neumann 级数的余项，回应按时间次序，如 Dyson 级数；所失是截断的，不是理论的。决定截断所失的是耦合的时间次序：要紧的回路是继续着的耦合的回路，耦合停止的回路是过去的。能到达的最大差别快于每个多项式只经由继续着的耦合的回路；是否经由每个这样的回路不推出。数学是标准的：线性时变比较系统的 Neumann、Dyson 或 Peano–Baker 余项，恰在按时间次序的路径有界处幂零。",
@@ -300,8 +300,22 @@
     {
       "id": "losses-of-the-sum-over-histories",
       "detail": {
-        "zh": "Ren 取为同一结构的另一种积分：那里截断历史之和恰好漏掉所弃者；这里在 j 阶截断恰好失去更多次回应所携带的。两者尚未连起来。",
-        "en": "The other integration Ren took as the same structural kind: there a truncation of the sum over histories misses exactly what it drops; here a cut at order j loses exactly what more responses carry. The two are not yet joined."
+        "zh": "Ren 取为同一结构的另一种积分：那里截断历史之和恰好漏掉所弃者；这里在 j 阶截断恰好失去更多次回应所携带的。orders-as-a-sum-over-histories 把两者连起来：j 阶截断是历史之和在视界 j + 1 上的截断。",
+        "en": "The other integration Ren took as the same structural kind: there a truncation of the sum over histories misses exactly what it drops; here a cut at order j loses exactly what more responses carry. orders-as-a-sum-over-histories joins the two: a cut at order j is a truncation of the sum over histories at horizon j + 1."
+      }
+    },
+    {
+      "id": "orders-as-a-sum-over-histories",
+      "detail": {
+        "zh": "截断就是视界：j 阶截断是沿时间往回的路线之和在视界 j + 1 上的截断，所以截断所失就是历史之和的截断所弃者。",
+        "en": "A cut is a horizon: a cut at order j is the truncation at horizon j + 1 of the sum over routes back in time, so what a cut loses is what that truncation of the sum over histories drops."
+      }
+    },
+    {
+      "id": "how-often-couplings-act",
+      "detail": {
+        "zh": "回答其下一步的前两项：每个时程都安定恰是二分 RecursOrStops，给出有限全知原则；复现耦合的回路不一定失控，返回频繁时失控，失控的速度按耦合作用之步计。",
+        "en": "Answers the first two items of its next step: every schedule settling is exactly the dichotomy RecursOrStops, which gives the limited principle of omniscience; a loop of recurring couplings need not run away, runs away where its returns are frequent, and the rate counts the steps at which couplings act."
       }
     }
   ],
@@ -601,6 +615,10 @@
     {
       "zh": "2026年10月16日，Ren 同意 P121、P122 读法的落地：改绑新回执并更新哈希：Loops.lean（Ren 2026-10-16 取经回路形成定理修订的第三项读法，第三项读法后加一句（只改注释））。",
       "en": "16 October 2026, landing Ren's agreement with the P121/P122 readings: rebound to the new receipt and rehashed: Loops.lean (Ren took the third reading as revised by the loop-formation theorem on 16 October 2026; one sentence after the third reading (comments only))."
+    },
+    {
+      "zh": "2026-10-16 P123（耦合多常作用，研究 §158）：回答下一步前两项，每个时程都安定恰是二分 RecursOrStops（给出有限全知原则，核心不假定），复现耦合的回路不一定失控（稀疏的自环），返回频繁时失控，速度按耦合作用之步计，由自环达到；所以删去这两项，给定强度的谱半径留下；related 加 how-often-couplings-act。同时：“把截断所失与历史之和的损失连起来”已由 orders-as-a-sum-over-histories 回答（P121：j 阶截断是视界 j + 1 上的截断），P121 落地时留下了此项，所以删去；related 中“两者尚未连起来”改为由 orders-as-a-sum-over-histories 连起来，并加 orders-as-a-sum-over-histories。陈述与证明不变；does_not_show 仍对本记录的定理成立；correspondence 中的读法仍是 AI 的、待 Ren。",
+      "en": "16 October 2026, P123 (how often couplings act, study section 158): answers the first two items of the next step: every schedule settling is exactly the dichotomy RecursOrStops (which gives the limited principle of omniscience and which the core does not assume), and a loop of recurring couplings need not run away (the sparse self-loop), runs away where its returns are frequent, the rate counting the steps at which couplings act and attained by a self-loop; so both items are removed and the spectral radius of given strengths stays; related adds how-often-couplings-act. Also: “joining what a cut loses to the losses of the sum over histories” is answered by orders-as-a-sum-over-histories (P121: a cut at order j is a truncation at horizon j + 1), which the landing of P121 left in place, so it is removed; in related, “the two are not yet joined” becomes joined by orders-as-a-sum-over-histories, and orders-as-a-sum-over-histories is added. Statement and proofs unchanged; does_not_show still holds of this record's theorems; the readings in correspondence stay the AI's, pending Ren."
     }
   ],
   "text_versions": []

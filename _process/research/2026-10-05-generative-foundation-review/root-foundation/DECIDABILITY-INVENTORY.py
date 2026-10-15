@@ -390,6 +390,9 @@ PROOF_KIND = {
     # 2026-10-16, P120 what a cut loses (Becoming.Remainder): the equivalence for every law reads the
     # equality of conditions in its proof, through most_difference_arrives
     'gap_within_order_iff': 'same',
+    # 2026-10-16, P123 how often couplings act (Becoming.Frequency): the rate for every law reads the
+    # equality of conditions in its proof, through gap_le_carried
+    'gap_le_count': 'same',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
