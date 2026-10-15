@@ -4805,7 +4805,7 @@ Imports: `GenerativeCore`
 <a id="module-6f388ada14e2"></a>
 
 <details>
-<summary>Gated.lean — 5 explicit declarations</summary>
+<summary>Gated.lean — 16 explicit declarations</summary>
 
 [原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
 
@@ -4815,14 +4815,25 @@ Imports: `Becoming.Frame`
 
 | 定理／引理 / Theorem or lemma | 源行 / Line |
 |---|---:|
-| [Becoming.Gated.kept_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L33) | 33 |
-| [Becoming.Gated.kept_along_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L42) | 42 |
-| [Becoming.Gated.change_passes_gate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L53) | 53 |
-| [Becoming.Gated.change_located](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L67) | 67 |
+| [Becoming.Gated.kept_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L44) | 44 |
+| [Becoming.Gated.kept_along_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L53) | 53 |
+| [Becoming.Gated.change_passes_gate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L64) | 64 |
+| [Becoming.Gated.change_located](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L78) | 78 |
+| [Becoming.Gated.keptBy_iff_preserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L107) | 107 |
+| [Becoming.Gated.keptBy_iff_reflected](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L113) | 113 |
+| [Becoming.Gated.preserved_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L119) | 119 |
+| [Becoming.Gated.preserved_along_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L129) | 129 |
+| [Becoming.Gated.reflected_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L139) | 139 |
+| [Becoming.Gated.leaving_passes_gate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L149) | 149 |
+| [Becoming.Gated.origin](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L163) | 163 |
+| [Becoming.Gated.origin_of_decides](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L181) | 181 |
+| [Becoming.Gated.origin_of_propositions_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L197) | 197 |
 
 定义与类型 / Definitions and types:
 
-- `def` [Becoming.Gated.KeptBy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L29) (L29)
+- `def` [Becoming.Gated.KeptBy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L40) (L40)
+- `def` [Becoming.Gated.PreservedBy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L99) (L99)
+- `def` [Becoming.Gated.ReflectedBy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean#L103) (L103)
 
 </details>
 

@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-211 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+212 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -68,6 +68,7 @@
 | [取得的访问模型选择学习经历 / Acquired access selects learning encounters](../results/records/encounter-selection-and-revision.md) | recorded-checked | [EncounterChoice.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean) |
 | [端点可能性丧失与返回 / Endpoint opportunity loss and return](../results/records/endpoint-loss-and-return.md) | recorded-checked | [BecomingReversibility.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean) |
 | [熵的历史与记录 / Entropy, history and record](../results/records/entropy-history-and-record.md) | recorded-checked | [Entropy.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean) |
+| [每个起源都经过门 / Every origin passes the gate](../results/records/every-origin-passes-the-gate.md) | recorded-checked | [Gated.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean) |
 | [经世系的演化 / Evolution on descent](../results/records/evolution-on-descent.md) | recorded-checked | [Evolution.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean) |
 | [独立的交换可交换 / Independent exchanges commute](../results/records/exchanges-commute-unless-joined.md) | recorded-checked | [Order.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean) |
 | [局部排他支持推至全部叶项 / Exclusive footprints support all leaves](../results/records/exclusive-footprint-support.md) | recorded-checked | [ExplanatoryFootprints.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean) |

@@ -848,7 +848,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   reduced law commutes with every course.
 * `Becoming.Gated` (L2): what only a class of moves can change, with no premise. A quantity kept
   by every ungated step is kept along every ungated course, and conversely; a course that
-  changes it passes the gate, at a gated step that itself changes it.
+  changes it passes the gate, at a gated step that itself changes it. One direction suffices: a
+  course leaving a property the ungated steps preserve passes the gate, and a course ending where
+  a property the ungated steps reflect holds started where it held or has a gated step after
+  which it holds, nothing about the property decided. With the gate a proposition, the origin
+  law is exactly double-negation elimination.
 * `Becoming.Viability` (L2): where no course leaves a guard, with no premise. No course from a
   configuration leaves the guard exactly when some certificate (a set within the guard that every
   step keeps) contains it; the viability kernel is the largest certificate. For a law of change

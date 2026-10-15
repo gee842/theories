@@ -1,0 +1,23 @@
+**Every origin passes the gate, integration I4b item 1 (16 October 2026).** Ren chose “Closest gaps first” on the I4 classification table ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)). The table read LivingOrganization as a join candidate: over any reaction network, a pool present at the end was present initially or came in at an entry step. Becoming.Gated stated only quantities the ungated steps keep in both directions; the one-directional trace law was unstated (section 139). This section states it, with Gated's earlier law as its case.
+- **Preserved and reflected** (`Becoming.Gated`, no premise; 4 → 13 theorems).
+  - The ungated steps preserve p where it holding before a step gives it after (`PreservedBy`), and reflect p where it holding after gives it before (`ReflectedBy`).
+  - Keeping a quantity is preserving every value of it, and equally reflecting every value (`keptBy_iff_preserved`, `keptBy_iff_reflected`).
+  - Along courses these hold exactly as along steps (`preserved_along_iff`, `reflected_along`).
+- **Leaving passes the gate.** Where the ungated steps preserve p, a course from where p holds to where it fails contains a gated move (`leaving_passes_gate`). `change_passes_gate` is its case p := (q equals its starting value).
+- **Every origin passes the gate.** Where the ungated steps reflect p, a course ending where p holds either started where it held, or splits into a prefix, a gated step after which p holds, and the rest (`origin`). The proof splits only on the gate, which is already decided; p is not decided.
+- **Boundary.** With the gate a proposition, the law holds wherever every gate holds or fails (`origin_of_decides`). Asked of every process, it is exactly double-negation elimination (`origin_of_propositions_iff`).
+  - The witness is one move from `false` to `true`, with p holding at `true` and the gate Q. The move reflects p exactly where Q cannot fail, and the law then gives Q.
+  - So the law needs exactly a decided gate.
+- **LivingOrganization** (`LivingOrganizationCorrespondence`, periphery, with its own checker).
+  - The gate is the recipes entering the pool (`entryGate`). Every other step reflects pool presence (`presence_reflected`).
+  - So `trace_pool_origin` follows from `Gated.origin` (`trace_pool_origin_by_core`), which adds that the pool is present right after the entry step (`entry_then_present`). The periphery theorem decided the pool; the core law does not.
+  - Where every admitted recipe is closed, there is no gate, and `reflected_along` keeps an empty pool empty (`empty_pool_preserved_by_core`).
+  - Axiom reports: only propext and Quot.sound, from LivingOrganization's own arithmetic and list tactics. The core's new declarations have empty reports.
+- **Decidability inventory.** `origin_of_decides` splits on each gate: proof-only theorems go 223 → 224. `origin_of_propositions_iff` joins the boundary theorems.
+- **Record.** The new record every-origin-passes-the-gate reuses organizational-rule-inheritance's `KeptBy`.
+- **Not stated.** Where p is decided, the first gated step at which p comes to hold could be located as in `change_located`; this section does not state it.
+- **Boundary and reading.** The gate locates where change or origin can enter; it does not say a gated move changes anything. The recipes keep LivingOrganization's scope. The reading, which is the AI's and pending Ren: reflecting is "present after only if present before", so an organization's pool was there already or came in through an entry.
+- **Next in I4b.**
+  - Horizon: finite refutation and prefix closure (PrefixSafety, IdealWarrant).
+  - Lasting: König lifting (FiniteBranching).
+  - Selection: PluralRecords and TieBreaking, after P110 lands.

@@ -206,12 +206,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
       "role": "integration",
-      "sha256": "fae9c3e485011b551a84664e04cfca0d36d7571a9fcae1d2c18e70ac21f31133"
+      "sha256": "3e5db7e73d40b5bc6786cd6ede79e4427add614eb1133b49fec5ade83a43bed0"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0004f1a79b4b9c23c9eadd3764b07034b55b719d02e3399ac946b6ca93e89d5d"
+      "sha256": "9c2731898576c39e211caaaa8359ce0b19c5fed89088b8e56caf7fc9e586af4d"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -428,6 +428,10 @@
     {
       "zh": "2026年10月16日，P115 落地（研究第141节）：改绑新回执并更新哈希：ZERO-PREMISE-PLAN.md（(b2) 一项中由清点生成的数目改据新回执；其余文字不变）；THE-THEORY-OF-BECOMING.md（P115：§2 一段“差别到达多少（第一部分）”，其余响应之比较一段不再把差别到达多少列为未推出，§6.10 一句，第一部分总陈述一项，§8 状态行与“反馈与所及”下的进一步证明，§9 一行，术语两行；总数改据新回执）。",
       "en": "16 October 2026, landing P115 (study section 141): rebound to the new receipts and rehashed: ZERO-PREMISE-PLAN.md (the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed); THE-THEORY-OF-BECOMING.md (P115: a §2 paragraph \"How much difference arrives (Part I)\", the paragraph of the comparison where the rest responds no longer listing how much difference arrives as not derived, a §6.10 sentence, one item in Part I stated whole, §8's status row and the further proofs under feedback and reach, one §9 row, two glossary rows; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月16日，I4b 第一项落地（研究第143节）：改绑新回执并更新哈希：ZERO-PREMISE-PLAN.md（(b2) 一项中由清点生成的数目改据新回执；其余文字不变）；THE-THEORY-OF-BECOMING.md（I4b 第一项：§9 的 Becoming.Gated 一行（4 → 13 项定理）与外围实例 LivingOrganizationCorrespondence 一行，外围实例的列举加入它；总数改据新回执）。",
+      "en": "16 October 2026, landing I4b item 1 (study section 143): rebound to the new receipts and rehashed: ZERO-PREMISE-PLAN.md (the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed); THE-THEORY-OF-BECOMING.md (I4b item 1: the §9 row of Becoming.Gated (4 → 13 theorems) and a peripheral-instance row for LivingOrganizationCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt)."
     }
   ]
 }

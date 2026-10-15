@@ -5262,6 +5262,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingExpansion.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRecovery.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean",
@@ -8740,6 +8741,13 @@
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/global/formal/CoverageBoundary.lean",
         "sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md",
         "theories/becoming/chapters/NONDUAL-METHOD.md"
+      ]
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/integration-i4b/README.md": {
+      "title": "Integration I4b: the closest gaps of the I4 table",
+      "local_links": [
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean",
+        "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md"
       ]
     },
     "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md": {
@@ -12982,12 +12990,13 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T182202.414009Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean",
