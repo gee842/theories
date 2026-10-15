@@ -157,8 +157,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T204525.767887Z): the 61 declarations of Becoming.Closing, 51 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 156; not independently reviewed."
   },
   "next_delta": {
-    "zh": "对一切读出强度之律刻画回路何时形成；形成之后实际之差的失控（回应的下界）；把形成与 Becoming.Runaway 的策略在一个律中连起来；独立审查；Ren 对读法的判断。",
-    "en": "When loops of read strengths form, for every law; the runaway of the actual gap after formation (lower bounds on responses); joining formation and Becoming.Runaway's policies within one law; an independent review; Ren's judgment on the readings."
+    "zh": "对一切读出强度之律刻画回路何时形成；形成之后实际之差的失控（回应的下界）；独立审查。",
+    "en": "When loops of read strengths form, for every law; the runaway of the actual gap after formation (lower bounds on responses); an independent review."
   },
   "correspondence": {
     "zh": "Ren 2026-10-16 取了 P118 第三项读法的精炼形式：“一个世界有哪些回路是其情境的一部分；回路在展开中形成与消解，定理按每步所立者取之”，并说“leave it pending until a loop-formation theorem exists”；同日说“a theorem showing how loops form within the unfolding … let's finish both”。本结果是那条定理。读法（AI 的，Ren 2026-10-16 同意）：回路在展开中由闭合而形成，在某个交换开始回应它所给的条件下游的一个水平之步；强度从进程读出时回路是展开所形成的一部分；回路的形成不从它之前的量预见，这与 Becoming.Runaway 相遇：能识它的是识耦合本身者。回路的消解见 P120（停止的耦合）。",
@@ -258,8 +258,8 @@
     {
       "id": "runaway-distance-unregistered",
       "detail": {
-        "zh": "那里失控的断裂在其前不被识；这里使之失控的回路的形成也不被它所携带的量识。两者在一个律中的连接未陈述。",
-        "en": "There a runaway's break is not registered before it; here the formation of the loop that runs away is not registered by the amounts it carries either. Joining the two within one law is not stated."
+        "zh": "那里失控的断裂在其前不被识；这里使之失控的回路的形成也不被它所携带的量识。两者在一个律中的连接见 loops-within-what-a-law-reads。",
+        "en": "There a runaway's break is not registered before it; here the formation of the loop that runs away is not registered by the amounts it carries either. Joining the two within one law: loops-within-what-a-law-reads."
       }
     },
     {
@@ -267,6 +267,13 @@
       "detail": {
         "zh": "同日的另一项：P118 的阶作为 P82 的历史之和；回路是两者相乘之处，这里给出它形成的时刻。",
         "en": "The other item of the same day: P118's orders as P82's sum over histories; loops are where both multiply, and here is the moment they form."
+      }
+    },
+    {
+      "id": "loops-within-what-a-law-reads",
+      "detail": {
+        "zh": "在一个律中：回路在所读之内，在读增长之处形成；只在储量低于阈值时才读它的律，断裂之前没有经过储量的回路，回路在断裂处形成。",
+        "en": "Within one law: loops lie within what is read and form where reading grows; for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break."
       }
     }
   ],
@@ -532,6 +539,10 @@
     {
       "zh": "2026年10月16日，Ren 同意 P121、P122 读法的落地：改绑新回执并更新哈希：Closing.lean（Ren 2026-10-16 同意读法（“alright, agree”）写入读法说明（只改注释））；Loops.lean（Ren 2026-10-16 取经回路形成定理修订的第三项读法，第三项读法后加一句（只改注释））；BECOMING-RENEWAL-READING.md（第155、156节各加一段注明日期的说明（Ren 同意其读法）与一条英文；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§2 的读法分句写明 Ren 2026-10-16 同意 Routes 与 Closing 的读法及修订后的 P118 第三项读法；回执改据新运行）。",
       "en": "16 October 2026, landing Ren's agreement with the P121/P122 readings: rebound to the new receipt and rehashed: Closing.lean (Ren's agreement of 16 October 2026 (“alright, agree”) written into the readings header (comments only)); Loops.lean (Ren took the third reading as revised by the loop-formation theorem on 16 October 2026; one sentence after the third reading (comments only)); BECOMING-RENEWAL-READING.md (sections 155 and 156 each gain a dated paragraph (Ren's agreement with their readings) and an English bullet; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§2's readings clauses record Ren's agreement of 16 October 2026 with the readings of Routes and Closing and with P118's third reading as revised; the receipt moved to the new run)."
+    },
+    {
+      "zh": "2026-10-16 P124（回路在律所读之内，与断裂，研究 §157）：下一步中“把形成与 Becoming.Runaway 的策略在一个律中连起来”由 loops-within-what-a-law-reads 回答，“Ren 对读法的判断”已于 2026-10-16 给出（2026-10-16-routes-closing-readings），都去掉；related 中与 runaway-distance-unregistered 的连接指向 loops-within-what-a-law-reads，并加 loops-within-what-a-law-reads。陈述与证明不变。",
+      "en": "16 October 2026, P124 (loops within what a law reads, and the break, study section 157): in the next step, “joining formation and Becoming.Runaway's policies within one law” is answered by loops-within-what-a-law-reads and “Ren's judgment on the readings” was given on 16 October (2026-10-16-routes-closing-readings), so both are dropped; in related the joining with runaway-distance-unregistered points to loops-within-what-a-law-reads, and loops-within-what-a-law-reads is added. Statement and proofs unchanged."
     }
   ],
   "text_versions": []

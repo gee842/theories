@@ -130,8 +130,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z): the theorems of Becoming.Runaway and this record's local laws have empty axiom reports, and the checker verifies core purity; Testing and Dependence are now bound by 20261014T091930.724493Z. Author counterreview in the integration note; at Ren's “no extra review needed” there is no independent review."
   },
   "next_delta": {
-    "zh": "把这里的策略与回路相连：形成的汲取回应其自身汲取所降低的水平时，汲取与水平组成一个回路（具有给定耦合强度时，回路的一般定义与绕回路的失控由 how-a-carried-difference-grows 给出，回路的形成由 how-loops-form 给出）；他者回应储量时的策略形式；带误差的量度。",
-    "en": "Connect the policies here to loops: where a formation's draw responds to a level its own draw lowers, draw and level form a loop (for laws with given coupling strengths, a loop in general and the runaway around it are given by how-a-carried-difference-grows, and how a loop forms by how-loops-form); the policy form where others respond to the stock; measurement with error."
+    "zh": "一个形成怎样开始观察它所依赖的储量（这里的策略与回路的连接由 loops-within-what-a-law-reads 给出：只在储量低于阈值时才读它的律，断裂之前没有经过储量的回路，回路在断裂处形成）；他者回应储量时的策略形式；带误差的量度。",
+    "en": "How a formation comes to observe a stock it depends on (the connection of the policies here to loops is given by loops-within-what-a-law-reads: for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break); the policy form where others respond to the stock; measurement with error."
   },
   "correspondence": {
     "zh": "Ren 的“wisdoms to avoid run away feedbacks”；testing-within-registration 把失控读作在一种不见之中运行的回路，并标为启发；experiment-needs-return 之后 AI 提议在策略的层面陈述，Ren 答“no extra review needed, merge, then continue”。读法（AI 的，依 Ren 的交托采用）：失控是断裂之前自身之识与储量多出任意多的世界相同的回路；它的策略不能用上它所不识的；要避免它而又不放弃所有的，需要量度、模型（理）或他者之识；合于 Ren 10 月 4 日“理须调节心，使其正反馈循环不失控”。",
@@ -251,6 +251,13 @@
       "detail": {
         "zh": "这里失控的断裂在其前不被识；那里使之失控的回路的形成也不被它所携带的量识，能识它的是识耦合本身者。",
         "en": "Here a runaway's break is not registered before it; there the formation of the loop that runs away is not registered by the amounts it carries either: what registers it is what registers the couplings themselves."
+      }
+    },
+    {
+      "id": "loops-within-what-a-law-reads",
+      "detail": {
+        "zh": "在一个律中：回路在所读之内，在读增长之处形成；只在储量低于阈值时才读它的律，断裂之前没有经过储量的回路，回路在断裂处形成。",
+        "en": "Within one law: loops lie within what is read and form where reading grows; for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break."
       }
     }
   ],
@@ -564,6 +571,10 @@
     {
       "zh": "2026-10-16 P121 与 P122（携带差别的阶作为历史之和、回路怎样在展开中形成，研究 §155、§156）：下一步的回路一项注明回路的形成由 how-loops-form 给出，与策略的连接仍是下一步；related 加 how-loops-form。陈述与证明不变。",
       "en": "16 October 2026, P121 and P122 (the orders of a carried difference as a sum over histories, how loops form within the unfolding, study sections 155 and 156): the loop item of the next step notes that how a loop forms is given by how-loops-form, connecting it to the policies staying a next step; related adds how-loops-form. Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026-10-16 P124（回路在律所读之内，与断裂，研究 §157）：下一步的第一项“把这里的策略与回路相连”由 loops-within-what-a-law-reads 回答，改为一个形成怎样开始观察它所依赖的储量；related 加 loops-within-what-a-law-reads。陈述与证明不变。",
+      "en": "16 October 2026, P124 (loops within what a law reads, and the break, study section 157): the first item of the next step, connecting the policies here to loops, is answered by loops-within-what-a-law-reads and becomes how a formation comes to observe a stock it depends on; related adds loops-within-what-a-law-reads. Statement and proofs unchanged."
     }
   ],
   "text_versions": [
