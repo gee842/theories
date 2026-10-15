@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T14:20:00+00:00",
+  "reviewed_at_utc": "2026-10-15T00:00:00+00:00",
   "statement": {
     "zh": "有界的记录确定历程，记录长度恰好。界给定时归纳即演绎：给定界的学习者从 2N − 1 起每步都对且不能更早；未给定界的学习者在界给出的一步之前静止。有限的名命名有意义的切分，不用商。",
     "en": "A bounded record fixes the course at an exact length. With the bound given, induction is deduction: the learner given it is right from 2N − 1 on and none can always speak sooner; the learner not given it rests by a step the bound gives. Finite names name the split that makes sense, with no quotient."
@@ -43,12 +43,13 @@
       ]
     },
     {
-      "zh": "给出两个值：对每个 T，一个状态的历程与至多 T + 1 个状态的历程长 T 的记录相同而在 T 不同；对每个 M，两个至多 M + 2 个状态的历程长 M + M + 2 的记录相同而在那里不同。",
-      "en": "Given two values: for every T, a course with one state and one with at most T + 1 share their record before T and differ at T; for every M, two courses with at most M + 2 states share their record before M + M + 2 and differ there.",
+      "zh": "给出两个值：对每个 T，一个状态的历程与至多 T + 1 个状态的历程长 T 的记录相同而在 T 不同；对每个 M，两个至多 M + 2 个状态的历程长 M + M + 2 的记录相同而在那里不同。对每一对 M、M′，至多 M + 1 与至多 M′ + 1 个状态的两个历程，长 M + M′ 的记录相同而在第 M + M′ 步不同：长度 N + N′ − 1 对每一对界恰好。",
+      "en": "Given two values: for every T, a course with one state and one with at most T + 1 share their record before T and differ at T; for every M, two courses with at most M + 2 states share their record before M + M + 2 and differ there. For every M and M′, a course with at most M + 1 states and one with at most M′ + 1 share their record before M + M′ and differ at step M + M′: the length N + N′ − 1 is exact for every pair of bounds.",
       "declarations": [
         "Becoming.Identification.record_short",
         "Becoming.Identification.mark",
-        "Becoming.Identification.record_short_twice"
+        "Becoming.Identification.record_short_twice",
+        "Becoming.Identification.bounded_agree_exact"
       ]
     },
     {
@@ -153,11 +154,6 @@
       "kind": "scope"
     },
     {
-      "zh": "N + N' − 1 对一般的 N、N' 充分，只在 N = 1 与 N = N' 证明为恰好。",
-      "en": "N + N′ − 1 suffices for all N, N′ and is shown exact only for N = 1 and N = N′.",
-      "kind": "scope"
-    },
-    {
       "zh": "同一历史、同一世界的更锐的 Moore 界没有陈述。",
       "en": "Moore's sharper bound for one history or one world is not stated.",
       "kind": "scope"
@@ -172,8 +168,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "detail": {
-        "zh": "record_short：一个状态的历程与 T + 1 个状态的历程有相同的长 T 的记录而在 T 不同；record_short_twice：两个 M + 2 个状态的历程（每 M + 2 步与每 M + 1 步标记一次）有相同的长 M + M + 2 的记录而在那里不同；answer_exceeds_bound：回答给定 N 的学习者的历程超出 N 个状态。",
-        "en": "record_short: a course with one state and one with T + 1 share their record before T and differ at T; record_short_twice: two courses with M + 2 states (marking every M + 2 and every M + 1 steps) share their record before M + M + 2 and differ there; answer_exceeds_bound: the course answering the learner given N exceeds N states."
+        "zh": "record_short：一个状态的历程与 T + 1 个状态的历程有相同的长 T 的记录而在 T 不同；record_short_twice：两个 M + 2 个状态的历程（每 M + 2 步与每 M + 1 步标记一次）有相同的长 M + M + 2 的记录而在那里不同；bounded_agree_exact：对每一对 M、M′，以周期 M + 1 标记、标记落在第 M + M′ 步的历程，与在第 M′ 步之前随它、之后不标记的历程，有相同的长 M + M′ 的记录而在那里不同；answer_exceeds_bound：回答给定 N 的学习者的历程超出 N 个状态。",
+        "en": "record_short: a course with one state and one with T + 1 share their record before T and differ at T; record_short_twice: two courses with M + 2 states (marking every M + 2 and every M + 1 steps) share their record before M + M + 2 and differ there; bounded_agree_exact: for every M and M′, the course marking one step in every M + 1, with a mark at M + M′, and the course following it before M′ and unmarked from then on share their record before M + M′ and differ there; answer_exceeds_bound: the course answering the learner given N exceeds N states."
       }
     }
   ],
@@ -187,8 +183,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Identification have empty axiom reports (receipt 20261013T094743.528770Z, some declarations under former names; the current bytes of Identification, Description and Unfolding bound by 20261013T204910.042715Z), and the checker verifies core purity. Author counterreview, with the scope of the independent review, in the integration note."
   },
   "next_delta": {
-    "zh": "对一般的 N、N' 的恰好性（Fine–Wilf 的极值）；同一世界的 Moore 界；未给定界的学习者的最优静止之步；有分支的框架下的辨识（以 Becoming.Unfolding 的 Alike 与 Becoming.Histories 的检验）；与 alike_iff_sameTests 的实例定理；Ren 对“按情境就是界”与有限名读法的判断。",
-    "en": "Exactness for general N, N′ (the Fine–Wilf extremal words); Moore's bound for one world; the optimal rest step of the learner not given the bound; identification for branching frames (with Alike of Becoming.Unfolding and the tests of Becoming.Histories); the instance theorem to alike_iff_sameTests; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
+    "zh": "同一世界的 Moore 界；未给定界的学习者的最优静止之步；有分支的框架下的辨识（以 Becoming.Unfolding 的 Alike 与 Becoming.Histories 的检验）；与 alike_iff_sameTests 的实例定理；Ren 对“按情境就是界”与有限名读法的判断。",
+    "en": "Moore's bound for one world; the optimal rest step of the learner not given the bound; identification for branching frames (with Alike of Becoming.Unfolding and the tests of Becoming.Histories); the instance theorem to alike_iff_sameTests; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有记录确定下一个值；学习者静止这一点不被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。",
@@ -202,6 +198,7 @@
     "Becoming.Identification.bounded_agree",
     "Becoming.Identification.record_fixes",
     "Becoming.Identification.record_short_twice",
+    "Becoming.Identification.bounded_agree_exact",
     "Becoming.Identification.bounded_induction",
     "Becoming.Identification.withBound",
     "Becoming.Identification.withBound_exact",
@@ -345,7 +342,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "9a43ae375e5ea71d5c5f74e637c752ddca49321832ae53bee9e16750a6a46aa2",
+      "sha256": "c545a77bced15ebfd148bb65315d4d78ecf68adefe183e27bf0c1cfadb8103e0",
       "declarations": [
         "Becoming.Identification.residue",
         "Becoming.Identification.periodic_whole",
@@ -365,6 +362,7 @@
         "Becoming.Identification.record_short",
         "Becoming.Identification.mark",
         "Becoming.Identification.record_short_twice",
+        "Becoming.Identification.bounded_agree_exact",
         "Becoming.Identification.statesBelow_shift",
         "Becoming.Identification.sameAhead_iff_below",
         "Becoming.Identification.lasso_of_fits",
@@ -645,6 +643,10 @@
     {
       "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Unfolding.lean（整合 I3a：新增“规律由其迹固定”（same_steps_iff_traces）；原有陈述不变）；Recurrence.lean（整合 I3a：新增“所及保持恰当返回”；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
       "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Unfolding.lean (integration I3a: a law is fixed by its traces (same_steps_iff_traces) added; earlier statements unchanged); Recurrence.lean (integration I3a: reach kept exactly when return added; earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-15 P83b：按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”，完成 next_delta 的第一项：新增 Identification.bounded_agree_exact，对每一对界，长 N + N′ − 2 的记录不确定历程，所以 N + N′ − 1 对每一对界恰好（此前只在 N = 1 与 N = N′ 证明）；第四条规律、反例与 next_delta 随之修订，删去“只在 N = 1 与 N = N′ 证明为恰好”的范围说明；Identification 的引用哈希指向新字节；验证范围待整合者的合并检查器运行后重新指向。见整合文档 §126。断言的其余部分不变。",
+      "en": "2026-10-15 P83b: following Ren's ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’ of 12 October 2026 06:01, the first item of next_delta is done: Identification.bounded_agree_exact is added, so that for every pair of bounds the record before N + N′ − 2 does not fix the course and N + N′ − 1 is exact for every pair (shown before only for N = 1 and N = N′); the fourth law, the counterexamples and next_delta are revised, and the scope note ‘shown exact only for N = 1 and N = N′’ is removed; the Identification reference hash points to the new bytes; the validation scope is re-pointed after the integrator's consolidated checker run. See §126 of the integration note. The rest of the claim is unchanged."
     }
   ],
   "text_versions": [
