@@ -30,7 +30,10 @@ them, with no premise:
   Read through registrations, two worlds of `N` and `N'` configurations have configurations whose
   registered futures agree for `N + N' - 2` steps and which do not pass the same tests
   (`registered_across_exact`): `N + N' - 1` of `Law.sameTests_iff_below_across` is exact too. Both
-  come from the histories of `Identification.bounded_agree_exact`.
+  come from the histories of `Identification.bounded_agree_exact`. Within one world `N - 1` is
+  exact too: on the path of `N` places to a last one that stays, registering only whether the
+  last is reached, the first two places agree for `N - 2` steps and do not pass the same tests
+  (`registered_within_exact`).
 
 The readings are the AI's, pending Ren: what tells configurations apart within a bounded world
 is a finite record, and its length is set by the number of configurations, exactly.
@@ -231,5 +234,53 @@ theorem registered_across_exact (M M' : Nat) :
             (Determined.at (Law.registered_determined next o))
             (Determined.at (Law.registered_determined next' o'))).mpr same) (M + M')).trans
            (course' (M + M'))))⟩
+
+/-- **Within one world, `N - 1` is exact for the tests.** For every `N = M + 2` there is a law on
+`N` configurations, read through a registration, in a world a list of `N` members holds, with two
+configurations whose registered futures agree for `N - 2` steps and which do not pass the same
+tests: the length `N - 1` of `Law.sameTests_iff_within` is exact. The law is the path of `N`
+places to a last one that stays, registering only whether the last is reached. -/
+theorem registered_within_exact (M : Nat) :
+    ∃ (next : Fin (M + 2) → Fin (M + 2)) (o : Fin (M + 2) → Bool) (s s' : Fin (M + 2)),
+      (finBelow (M + 2) (M + 2) (Nat.le_refl _)).length = M + 2 ∧
+      (∀ t, t ∈ finBelow (M + 2) (M + 2) (Nat.le_refl _)) ∧
+      (∀ n, n < M → o (Law.orbit next s n) = o (Law.orbit next s' n)) ∧
+      ¬ SameTests (Law.registered next o) (Law.registered next o) s s' :=
+  have stays : ∀ p, Learning.lassoNext (M + 1) 0 p < M + 2 := fun p =>
+    match Nat.lt_or_ge p (M + 1) with
+    | .inl inside => Eq.subst (motive := fun v => v < M + 2)
+        (if_pos inside : Learning.lassoNext (M + 1) 0 p = p + 1).symm (Nat.succ_lt_succ inside)
+    | .inr last => Eq.subst (motive := fun v => v < M + 2)
+        (if_neg (fun inside => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le inside last)) :
+          Learning.lassoNext (M + 1) 0 p = M + 1).symm (Nat.lt_succ_self _)
+  let next : Fin (M + 2) → Fin (M + 2) := fun p => ⟨Learning.lassoNext (M + 1) 0 p.val, stays p.val⟩
+  let o : Fin (M + 2) → Bool := fun p => if p.val < M + 1 then true else false
+  let s : Fin (M + 2) := ⟨0, Nat.zero_lt_succ _⟩
+  let s' : Fin (M + 2) := ⟨1, Nat.succ_lt_succ (Nat.zero_lt_succ M)⟩
+  have reads : ∀ (x : Fin (M + 2)) (v : Nat), x.val = v → o x = if v < M + 1 then true else false :=
+    fun _ _ at_v => congrArg (fun w => if w < M + 1 then true else false) at_v
+  have from0 : ∀ n, n ≤ M + 1 → (Law.orbit next s n).val = n := fun n le =>
+    (Law.orbit_fin stays s n).trans (Identification.lassoPos_early (i := M + 1) (q := 0) n le)
+  have from1 : ∀ n, n ≤ M → (Law.orbit next s' n).val = n + 1 := fun n le =>
+    (Law.orbit_fin stays s' n).trans
+      ((congrArg (fun v => Law.orbit (Learning.lassoNext (M + 1) 0) v n)
+        (if_pos (Nat.zero_lt_succ M) : Learning.lassoNext (M + 1) 0 0 = 1).symm).trans
+        ((Law.orbit_shift _ 0 n).symm.trans
+          (Identification.lassoPos_early (i := M + 1) (q := 0) (n + 1) (Nat.succ_le_succ le))))
+  have world : ∀ t, t ∈ finBelow (M + 2) (M + 2) (Nat.le_refl _) := fun t =>
+    mem_finBelow t (M + 2) (Nat.le_refl _) t.isLt
+  ⟨next, o, s, s', length_finBelow (M + 2) (M + 2) (Nat.le_refl _), world,
+   fun n early =>
+    ((reads _ n (from0 n (Nat.le_trans (Nat.le_of_lt early) (Nat.le_succ M)))).trans
+      (if_pos (Nat.lt_succ_of_lt early))).trans
+      ((reads _ (n + 1) (from1 n (Nat.le_of_lt early))).trans
+        (if_pos (Nat.succ_lt_succ early))).symm,
+   fun same =>
+    have agree := (Law.sameTests_iff_within world).mp same M
+      (Eq.subst (motive := fun L => M < L - 1)
+        (length_finBelow (M + 2) (M + 2) (Nat.le_refl _)).symm (Nat.lt_succ_self M))
+    nomatch (((reads _ M (from0 M (Nat.le_succ M))).trans (if_pos (Nat.lt_succ_self M))).symm.trans
+      (agree.trans ((reads _ (M + 1) (from1 M (Nat.le_refl M))).trans
+        (if_neg (Nat.lt_irrefl (M + 1))))) : true = false)⟩
 
 end Becoming

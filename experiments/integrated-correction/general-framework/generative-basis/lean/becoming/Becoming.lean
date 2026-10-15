@@ -765,7 +765,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   liar's rhythm is derived; a world answering that learner exceeds the bound. The learner not
   given the bound rests within it: a lasso hypothesis within `N` unrefuted for `2N - 1`
   steps is never refuted again, so the learner by refutation over the lasso hypotheses is right
-  at every step from `N + (2N - 1) * tri N` on, a step its record does not show. The rest step
+  at every step from `N + (2N - 1) * tri N` on, a step its record does not show. That step is
+  cubic in `N`: on the two-valued negation along a cycle of `N = 2m + 3` places, broken once in
+  every turn, the learner is refuted at step `(N³ - N) / 4`. The rest step
   itself needs no bound: the learner by the least bound under which the record bears out a lasso
   hypothesis, given none, is right from `2N - 1` on for every `N`, and no learner is right at
   `2N - 2` on every such history; what the bound buys is silence, not an earlier rest. In a world a
@@ -919,7 +921,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Distinguishing` (L4): what tells configurations apart, and how deep, with no
   premise. Under a determined law read through a registration, in a world a list of `N`
   configurations holds, two configurations pass the same tests exactly where their registered
-  futures agree for `N - 1` steps, and across two worlds of `N` and `N'` configurations for
+  futures agree for `N - 1` steps, exact for every `N ≥ 2` in a world `N` configurations hold
+  wholly, and across two worlds of `N` and `N'` configurations for
   `N + N' - 1`. Where the single move at each configuration is named by what is registered there,
   likeness to depth `k` is agreement for `k` steps, and every history with at most `N` states is
   the course of a law on `N` configurations; so the depth `N + N' - 1` between two branching
