@@ -384,6 +384,9 @@ PROOF_KIND = {
     'Parting.some_right_iff': 'reach',
     # integration I4b (2026-10-16): at most one option holds an entry alone, told by whether two options are the same
     **{n: 'same' for n in ['Relabel.alone_single']},
+    # 2026-10-16, P118 how a carried difference grows (Becoming.Loops): the gap bounds of Propagation,
+    # gap_le_carried and most_difference_arrives, read the equality of conditions in their proofs
+    **{n: 'same' for n in ['most_difference_within', 'gap_le_polynomial', 'gap_polynomial_iff_no_loop']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
