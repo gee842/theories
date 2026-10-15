@@ -513,7 +513,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "b25b4e8eb827f4d037e779584b98e1c836ca08a84656399203de63419b8f5216",
+      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
       "declarations": [
         "Becoming.Law.orbit",
         "Becoming.gap_of_le",
@@ -529,13 +529,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "821fbfb3c06101bcd3a4bc3cea40d081fb246e13db3d922504a81b4bfa1b229e",
+      "sha256": "31088ed4f46d5fbfeffa39ffce01e3485e9f6fa65cb57ad2fbe9d10e3ca6575d",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8819b5028eee9e9196858cea06bd635cdb58b742a13e4bd8568a1bf7ed270eb3",
+      "sha256": "d181a9e12fafa615caf9ea096671df0dcb6597f30276d571fe9b5679fbf333e7",
       "declarations": []
     },
     {
@@ -576,12 +576,18 @@
         "Becoming.DistinctUnder.single",
         "Becoming.le_pred_of_succ_le"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -609,14 +615,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Refinement",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -730,6 +736,10 @@
     {
       "zh": "2026-10-15 P83c：按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”与 2026-10-15 的“offer it to them, keep proving”，完成 next_delta 中的“同一世界的 Moore 界”：新增核心模块 Becoming.Refinement（精化链在其类数之内停止，Refining.steady_within）与 Identification 中的 Moore 界（Law.sameFuture_iff_classes，值已定，N − 1 步；Law.sameFuture_classes_unrefuted，不判定时不被否证；Law.sameFuture_classes_exact，对每个 N ≥ 2 恰好；Identification.sameAhead_iff_classes，同一历史）；新增第十三条规律与一项假设，反例增补，删去“同一历史、同一世界的更锐的 Moore 界没有陈述”，代以“不判定时是否成立没有表明”；“有分支的框架下的辨识”由 tests-fix-likeness-where-determined 的新规律回答（一个框架之内深度 N − 1，恰好；两个框架之间 N + N′ − 1），从 next_delta 移去；Identification 的引用哈希指向新字节，新增 Refinement 的引用与证明绑定（待整合者的合并检查器运行后重新指向）。见整合文档 §128。断言的其余部分不变。",
       "en": "2026-10-15 P83c: following Ren's ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’ of 12 October 2026 06:01 and ‘offer it to them, keep proving’ of 15 October, the next_delta item ‘Moore's bound for one world’ is done: the core module Becoming.Refinement is added (a chain of equivalences stops within its classes, Refining.steady_within), with Moore's bound in Identification (Law.sameFuture_iff_classes, values decided, N − 1 steps; Law.sameFuture_classes_unrefuted, refuted by nothing with no decision; Law.sameFuture_classes_exact, exact for every N ≥ 2; Identification.sameAhead_iff_classes, for one history). A thirteenth law and a hypothesis are added and the counterexamples extended; ‘Moore's sharper bound for one history or one world is not stated’ gives way to ‘whether it holds with no decision is not shown’. ‘Identification for branching frames’ is answered by the new law of tests-fix-likeness-where-determined (depth N − 1 within one frame, exactly; N + N′ − 1 across two) and leaves next_delta. The Identification reference hash points to the new bytes, and a Refinement reference and proof binding are added, re-pointed after the integrator's consolidated checker run. See §128 of the integration note. The rest of the claim is unchanged."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Recurrence.lean（整合 I3b：新增共同实现的界（WithinMoves.after_course、lost_together_not_returns）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83b 与 P83c（Identification、Likeness、Refinement）、整合 I3b（Granularity 及其桥接）与 Keeping 的 §9 各行，总数改据新回执）；Identification.lean（P83b 与 P83c：新增 bounded_agree_exact（N + N′ − 1 对每一对界恰好）与 Moore 界（sameFuture_iff_classes、sameAhead_iff_classes）；导入 Refinement；头注更新；原有陈述不变）；Refinement.lean。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Recurrence.lean (integration I3b: bounds on realizing a bundle together added (WithinMoves.after_course, lost_together_not_returns); earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for P83b and P83c (Identification, Likeness, Refinement), integration I3b (Granularity and its bridge) and Keeping, and the totals moved to the new receipt); Identification.lean (P83b and P83c: bounded_agree_exact (N + N′ − 1 exact for every pair of bounds) and Moore's bound (sameFuture_iff_classes, sameAhead_iff_classes) added; imports Refinement; docstring updated; earlier statements unchanged); Refinement.lean."
     }
   ],
   "text_versions": [

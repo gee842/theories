@@ -143,13 +143,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "821fbfb3c06101bcd3a4bc3cea40d081fb246e13db3d922504a81b4bfa1b229e",
+      "sha256": "31088ed4f46d5fbfeffa39ffce01e3485e9f6fa65cb57ad2fbe9d10e3ca6575d",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8819b5028eee9e9196858cea06bd635cdb58b742a13e4bd8568a1bf7ed270eb3",
+      "sha256": "d181a9e12fafa615caf9ea096671df0dcb6597f30276d571fe9b5679fbf333e7",
       "declarations": []
     },
     {
@@ -271,6 +271,10 @@
     {
       "zh": "2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第125节）：更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（“完整陈述的理论”第1、3项补上 World 不是起点与前提的独立性；第一部分补上三条规律；§8 的表与 Ren 的选择补上从关系开始的重建；§9 新增 Novelty、Reading、Readings 三行，Imbalance 行与术语表记 Ren 2026-10-14 的采用；总数改据新回执；此外不变）。",
       "en": "15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study section 125): rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (the theory stated in full, items 1 and 3 (World is not the start; the independence of the premises); Part I (three laws); the §8 table and Ren's choices (the relation-first re-founding); §9 rows for Novelty, Reading and Readings, and the Imbalance row and glossary recording Ren's adoption of 14 October 2026; totals moved to the new receipt; otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83b 与 P83c（Identification、Likeness、Refinement）、整合 I3b（Granularity 及其桥接）与 Keeping 的 §9 各行，总数改据新回执）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for P83b and P83c (Identification, Likeness, Refinement), integration I3b (Granularity and its bridge) and Keeping, and the totals moved to the new receipt)."
     }
   ]
 }

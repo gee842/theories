@@ -89,7 +89,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
       "role": "proof",
-      "sha256": "9a40eab90be295c69e4f56f2cb08a5437917a4c3df1ec1aca888384b98aab7b5",
+      "sha256": "bd182c924f76e1ffb740d6f4a1d2e95e3d6bed19869b8be1acd025d12d26fca9",
       "declarations": [
         "Becoming.mass",
         "Becoming.IncludedOn",
@@ -102,7 +102,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
+      "sha256": "bb1f1f5c5475ff1392877fbdb9e3ba4e6543e02278ab095ffa2cc940ea684795",
       "declarations": [
         "Becoming.chance_mass_eq",
         "Becoming.all_weights_preserve_mass_iff_by_core",
@@ -110,9 +110,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "role": "receipt",
-      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
       "declarations": []
     }
   ],
@@ -126,14 +126,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Weighted",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -151,6 +151,10 @@
     {
       "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心（Becoming.Weighted）无前提地证明：在列出的定义域上，事件的质量在每一权重下随包含而不减（mass_mono），加入正权重的条目时严格上升（mass_lt_of_added）；每一权重都不使事件质量下降，恰当事件在定义域上被包含（every_weighting_iff），只计一个条目的权重（dirac）区分事件。ChanceAdequacy 的质量即核心的质量（chance_mass_eq），所以 all_weights_preserve_mass_iff 即 every_weighting_iff（all_weights_preserve_mass_iff_by_core），机会下限即两次 mass_mono（fulfillment_floor_by_core），公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 ChanceAdequacy，脊柱运行将其作为继承模块编译。",
       "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core (Becoming.Weighted) proves that on a listed domain the mass of an event follows inclusion under every weighting (mass_mono) and rises strictly where an entry of positive weight is added (mass_lt_of_added), and that every weighting keeps an event's mass from falling exactly where the event is included on the domain (every_weighting_iff), the weightings counting one entry (dirac) telling events apart. ChanceAdequacy's mass is the core's (chance_mass_eq), so all_weights_preserve_mass_iff is every_weighting_iff (all_weights_preserve_mass_iff_by_core) and the chance floor is mass_mono twice (fulfillment_floor_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports ChanceAdequacy, which the spine run compiles as an inherited module."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Weighted.lean（整合 I3b：新增 every_event_within_iff（共同存量的核心律）；原有陈述不变）；Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Weighted.lean (integration I3b: every_event_within_iff (the shared stock's core law) added; earlier statements unchanged); Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
     }
   ]
 }

@@ -159,7 +159,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
+      "sha256": "bb1f1f5c5475ff1392877fbdb9e3ba4e6543e02278ab095ffa2cc940ea684795",
       "declarations": [
         "Becoming.Frame.ofInventory",
         "Becoming.strict_comparison_through_marginals_by_core"
@@ -169,6 +169,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "role": "receipt",
       "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
       "declarations": []
     }
   ],
@@ -203,7 +209,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -221,6 +227,10 @@
     {
       "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心无前提地证明：读自配置描述、且不把任何描述与自身相比的比较，只有在描述区分每一扩展与其基础时才满足 C（Comparison.separates）。清单即无动作的框架（Frame.ofInventory）；保留耦合以相同的单项可能性扩展解除耦合，所以 strict_comparison_cannot_factor_through_marginals 即该定律在此的实例（strict_comparison_through_marginals_by_core），公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 RelationalGrounding，脊柱运行将其作为继承模块编译。",
       "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core proves that a comparison read off a description of configurations, comparing no description with itself, satisfies C only if the description tells every extension apart from its base (Comparison.separates). An inventory is a frame with no moves (Frame.ofInventory); retaining the coupling extends releasing it with the same marginal possibilities, so strict_comparison_cannot_factor_through_marginals is that law's instance here (strict_comparison_through_marginals_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports RelationalGrounding, which the spine run compiles as an inherited module."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
     }
   ]
 }

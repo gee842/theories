@@ -4854,6 +4854,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
 
+## tests-fix-likeness-where-determined ← identification-where-bounded
+
+`formal-reuse` — 复用 Becoming.Refinement 的 Refining、Refining.steady_within、DistinctUnder 与 le_pred_of_succ_le：深度的相同在类数之内停止。 / Reuses Refining, Refining.steady_within, DistinctUnder and le_pred_of_succ_le of Becoming.Refinement: likeness to depth stops within the classes.
+
+**Producer output / 上游输出:** 精化链在其类数之内停止。 / A chain of equivalences stops within its classes.
+
+**Consumer input / 下游输入:** 深度的相同在类数之内停止。 / Likeness to depth stops within the classes.
+
+**Retained conditions / 保留条件:** 每步的关系在列表成员之间已定（由 FiniteDecided 给出）。 / Each step's relation decided among the listed members (given by FiniteDecided).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean)
+
 ## the-split-that-makes-sense ← configurations-alike-by-relation
 
 `formal-reuse` — 复用 IdentifiesAlike、identifiesAlike_iff、identifiesAlike_id_iff、Alike、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.IdentifiesAlike.carries：这里给出确定的律下有意义的切分何时存在、部分何时单独有意义，以及时刻之律的相同。 / Reuses IdentifiesAlike, identifiesAlike_iff, identifiesAlike_id_iff, Alike, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.IdentifiesAlike.carries: here, when a split making sense exists under a determined law, when a part alone makes sense, and likeness under the law of moments.

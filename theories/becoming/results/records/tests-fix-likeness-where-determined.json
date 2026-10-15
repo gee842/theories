@@ -535,7 +535,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
+      "sha256": "bb1f1f5c5475ff1392877fbdb9e3ba4e6543e02278ab095ffa2cc940ea684795",
       "declarations": [
         "Becoming.Frame.ofModel",
         "Becoming.branching_bisimulation_iff",
@@ -587,13 +587,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "821fbfb3c06101bcd3a4bc3cea40d081fb246e13db3d922504a81b4bfa1b229e",
+      "sha256": "31088ed4f46d5fbfeffa39ffce01e3485e9f6fa65cb57ad2fbe9d10e3ca6575d",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8819b5028eee9e9196858cea06bd635cdb58b742a13e4bd8568a1bf7ed270eb3",
+      "sha256": "d181a9e12fafa615caf9ea096671df0dcb6597f30276d571fe9b5679fbf333e7",
       "declarations": []
     },
     {
@@ -638,6 +638,12 @@
         "Becoming.Refining.steady_within",
         "Becoming.le_pred_of_succ_le"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -671,14 +677,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -692,7 +698,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Refinement",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -814,6 +820,10 @@
     {
       "zh": "2026-10-15 P83c（Likeness 的所有者同意：“please add, don't replace”）：新增第十三条规律：深度的相同在类数之内停止，一个框架之内 N − 1（恰好，EndOfPath.classes_exact），两个框架之间 N + N′ − 1，使以配置对的数目为界的深度更锐；确定的律经登记读出时深度 k 的相同即 k + 1 步内的一致（alikeTo_registered_iff）。AlikeTo.steady_within 与 alike_iff_alikeTo_pairs 保留不变。增补一项范围说明（两个框架之间是否恰好）与 next_delta；新增对 identification-where-bounded（Becoming.Refinement）的依存；Likeness 的引用哈希指向新字节，待整合者的合并检查器运行后重新指向。见整合文档 §128。此前的规律不变。",
       "en": "2026-10-15 P83c (with the agreement of Likeness's owner: ‘please add, don't replace’): a thirteenth law is added: likeness to depth stops within the classes, N − 1 within one frame (exact, EndOfPath.classes_exact) and N + N′ − 1 across two, sharpening the depth bounded by the number of pairs; for determined laws read through registrations, likeness to depth k is agreement for k + 1 steps (alikeTo_registered_iff). AlikeTo.steady_within and alike_iff_alikeTo_pairs are kept unchanged. A scope note (exactness across two frames) and next_delta are extended; a dependency on identification-where-bounded (Becoming.Refinement) is added; the Likeness reference hash points to the new bytes, re-pointed after the integrator's consolidated checker run. See §128 of the integration note. The earlier laws are unchanged."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83b 与 P83c（Identification、Likeness、Refinement）、整合 I3b（Granularity 及其桥接）与 Keeping 的 §9 各行，总数改据新回执）；Likeness.lean（P83c：新增以类计的深度（AlikeTo.steady_within_classes、alike_iff_alikeTo_classes、两框架的形式、EndOfPath.classes_exact）；导入 Refinement；原有陈述不变）；Refinement.lean。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for P83b and P83c (Identification, Likeness, Refinement), integration I3b (Granularity and its bridge) and Keeping, and the totals moved to the new receipt); Likeness.lean (P83c: the depth by classes added (AlikeTo.steady_within_classes, alike_iff_alikeTo_classes, the across forms, EndOfPath.classes_exact); imports Refinement; earlier statements unchanged); Refinement.lean."
     }
   ],
   "text_versions": [

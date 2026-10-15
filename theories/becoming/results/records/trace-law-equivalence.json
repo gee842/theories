@@ -120,7 +120,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
+      "sha256": "bb1f1f5c5475ff1392877fbdb9e3ba4e6543e02278ab095ffa2cc940ea684795",
       "declarations": [
         "Becoming.same_steps_iff_endpoint_traces_by_core"
       ]
@@ -129,6 +129,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "role": "receipt",
       "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
       "declarations": []
     }
   ],
@@ -149,7 +155,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -175,6 +181,10 @@
     {
       "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述。核心（Becoming.Unfolding）无前提地证明：同一配置与动作上的两规律走相同的步，恰当二者具有两端皆保留的相同轨迹，一步之轨迹已足（same_steps_iff_traces）；Deeper.same_steps_iff_endpoint_traces 即此定律（same_steps_iff_endpoint_traces_by_core），Model.laws_iff_endpoint_histories 重述之，公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 DynamicConsequences，脊柱运行将其与 DynamicSymmetry 作为继承模块编译。",
       "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. With no premise the core (Becoming.Unfolding) proves that two laws on the same configurations and moves take the same steps exactly when they have the same traces with both ends kept, traces of one move sufficing (same_steps_iff_traces); Deeper.same_steps_iff_endpoint_traces is that law (same_steps_iff_endpoint_traces_by_core), and Model.laws_iff_endpoint_histories restates it, with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports DynamicConsequences, which the spine run compiles as an inherited module with DynamicSymmetry."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
     }
   ]
 }

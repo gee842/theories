@@ -1,0 +1,63 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "en": "P83b, P83c, integration I3b and I3c's Keeping: imports Becoming.Refinement, Becoming.Keeping, Becoming.Granularity; module list updated; the Identification and Likeness bullets name exactness for every pair of bounds and the depth by classes",
+   "zh": "P83b、P83c、整合 I3b 与 I3c 的 Keeping：导入 Becoming.Refinement、Becoming.Keeping、Becoming.Granularity；模块列表更新；Identification 与 Likeness 两条写明对每一对界恰好与以类计的深度"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "en": "Becoming.Refinement, Becoming.Keeping and Becoming.Granularity added to the core list, Becoming.GranularityBridge to the bridge list; the scope text names Refinement and exactness for every pair of bounds",
+   "zh": "核心之列加入 Becoming.Refinement、Becoming.Keeping 与 Becoming.Granularity，桥接之列加入 Becoming.GranularityBridge；范围文字写明 Refinement 与对每一对界恰好"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "en": "P83b and P83c: the Identification row names exactness for every pair of bounds and Moore's bound; the import paragraph names Refinement",
+   "zh": "P83b 与 P83c：Identification 一行写明对每一对界恰好与 Moore 界；导入段写明 Refinement"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean": {
+   "en": "P83b and P83c: bounded_agree_exact (N + N′ − 1 exact for every pair of bounds) and Moore's bound (sameFuture_iff_classes, sameAhead_iff_classes) added; imports Refinement; docstring updated; earlier statements unchanged",
+   "zh": "P83b 与 P83c：新增 bounded_agree_exact（N + N′ − 1 对每一对界恰好）与 Moore 界（sameFuture_iff_classes、sameAhead_iff_classes）；导入 Refinement；头注更新；原有陈述不变"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean": {
+   "en": "integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged",
+   "zh": "整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean": {
+   "en": "integration I3b: laws in context added (pooledLaw_exact_iff_joinClosed, erasedLaw_exact_iff_lifts); earlier statements unchanged",
+   "zh": "整合 I3b：新增语境中的规律（pooledLaw_exact_iff_joinClosed、erasedLaw_exact_iff_lifts）；原有陈述不变"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean": {
+   "en": "integration I3b: bounds on realizing a bundle together added (WithinMoves.after_course, lost_together_not_returns); earlier statements unchanged",
+   "zh": "整合 I3b：新增共同实现的界（WithinMoves.after_course、lost_together_not_returns）；原有陈述不变"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean": {
+   "en": "integration I3b: every_event_within_iff (the shared stock's core law) added; earlier statements unchanged",
+   "zh": "整合 I3b：新增 every_event_within_iff（共同存量的核心律）；原有陈述不变"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "en": "§9 rows for P83b and P83c (Identification, Likeness, Refinement), integration I3b (Granularity and its bridge) and Keeping, and the totals moved to the new receipt",
+   "zh": "P83b 与 P83c（Identification、Likeness、Refinement）、整合 I3b（Granularity 及其桥接）与 Keeping 的 §9 各行，总数改据新回执"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "en": "sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged",
+   "zh": "新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean": {
+   "en": "P83c: the depth by classes added (AlikeTo.steady_within_classes, alike_iff_alikeTo_classes, the across forms, EndOfPath.classes_exact); imports Refinement; earlier statements unchanged",
+   "zh": "P83c：新增以类计的深度（AlikeTo.steady_within_classes、alike_iff_alikeTo_classes、两框架的形式、EndOfPath.classes_exact）；导入 Refinement；原有陈述不变"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "en": "regenerated on receipt 20261015T150956.178111Z: statements depending on decidedness 318 → 320, used only in proofs 172 → 183, excluded middle or its restricted form as a hypothesis 24 → 33, decidedness proved 125 → 131; three boundary theorems added (two of I3a's, omitted at its landing, and I3b's)",
+   "zh": "在回执 20261015T150956.178111Z 上重新生成：陈述依赖可判定 318 → 320，只在证明中用到 172 → 183，排中律或其受限形式作为假设 24 → 33，证明可判定 125 → 131；新增三条边界定理（I3a 的两条，其落地时遗漏，与 I3b 的一条）"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed",
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变"
+  }
+ },
+ "history": {
+  "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}
