@@ -1,0 +1,35 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "P121、P122：导入 Becoming.Routes 与 Becoming.Closing，加两条 L4 模块条目",
+   "en": "P121 and P122: imports Becoming.Routes and Becoming.Closing, with two L4 module bullets"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "P121、P122：两行 L4（Routes、Closing）与层内导入",
+   "en": "P121 and P122: two L4 rows (Routes, Closing) and the within-layer imports"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "P121、P122：Becoming.Routes 与 Becoming.Closing 加入核心列表与范围说明",
+   "en": "P121 and P122: Becoming.Routes and Becoming.Closing added to the core list and the scope paragraphs"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "P121、P122：§2 的两对段落、整体陈述的条目、§8 的进一步证明、§9 的两行与术语表；Loops 段中 P121、P122 回答的两项读法后各加一个注明日期的分句（读法不变）；总数改据新回执",
+   "en": "P121 and P122: two paragraph pairs in §2, items of the theory stated whole, §8's further proofs, two §9 rows and glossary rows; one dated clause after each of the two readings in the Loops paragraph that P121 and P122 answer (the readings unchanged); totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第155节（P121：携带差别的阶作为历史之和，Becoming.Routes）与第156节（P122：回路怎样在展开中形成，Becoming.Closing）及其英文段；此前各节不变",
+   "en": "sections 155 (P121: the orders of a carried difference as a sum over histories, Becoming.Routes) and 156 (P122: how loops form within the unfolding, Becoming.Closing) with their English paragraphs; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T204525.767887Z 上重新生成；P121、P122 不加行，各类不变",
+   "en": "regenerated on receipt 20261015T204525.767887Z; P121 and P122 add no rows, every class unchanged"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing P121 and P122 (study sections 155 and 156): rebound to the new receipt and rehashed: ",
+  "zh": "2026年10月16日，P121、P122 落地（研究第155、156节）：改绑新回执并更新哈希："
+ }
+}

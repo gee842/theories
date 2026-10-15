@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 44 | 889 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 262 | 8,734 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 264 | 8,815 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -98,6 +98,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ClassificationRobustJudgment.lean](lean-declarations/ethics.md#module-6d2ff915d8b9) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [ClosedLoopAudit.lean](lean-declarations/valuation.md#module-a5bbd3ef7a72) | 评价的形成与良知 / Valuation development and liangzhi |
 | [ClosedLoopValuation.lean](lean-declarations/valuation.md#module-c43d59d00448) | 评价的形成与良知 / Valuation development and liangzhi |
+| [Closing.lean](lean-declarations/core.md#module-88d4b75f0562) | 生成核心与关系结构 / Generative core and relational structure |
 | [CollectiveDestruction.lean](lean-declarations/other.md#module-2b8dee3aab5f) | 其他形式研究 / Other formal studies |
 | [CommonCauseDiscovery.lean](lean-declarations/other.md#module-7ef37aae8095) | 其他形式研究 / Other formal studies |
 | [CommonOrganization.lean](lean-declarations/other.md#module-4501154a9279) | 其他形式研究 / Other formal studies |
@@ -644,6 +645,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [RootRealization.lean](lean-declarations/core.md#module-62ba3600c9f2) | 生成核心与关系结构 / Generative core and relational structure |
 | [RouteDiagnostics.lean](lean-declarations/shared.md#module-6d5ab3eb998c) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [RouteRevision.lean](lean-declarations/shared.md#module-39cee25a965f) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
+| [Routes.lean](lean-declarations/core.md#module-440f5dfa5696) | 生成核心与关系结构 / Generative core and relational structure |
 | [RoutesCorrespondenceSamples.lean](lean-declarations/ethics.md#module-b49c122e730b) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [Runaway.lean](lean-declarations/core.md#module-f356fab54591) | 生成核心与关系结构 / Generative core and relational structure |
 | [Sampling.lean](lean-declarations/core.md#module-ec60746f9d0b) | 生成核心与关系结构 / Generative core and relational structure |

@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-220 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+222 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -99,6 +99,7 @@
 | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](../results/records/historical-source-binding.md) | recorded-checked | [HistoricalBinding.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean) |
 | [律与历史的完备对应 / The complete correspondence of law and history](../results/records/histories-fix-law-up-to-dead-ends.md) | recorded-checked | [Histories.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean) |
 | [所携带的差别怎样增长 / How a carried difference grows](../results/records/how-a-carried-difference-grows.md) | recorded-checked | [Loops.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean) |
+| [回路怎样在展开中形成 / How loops form within the unfolding](../results/records/how-loops-form.md) | recorded-checked | [Closing.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean) |
 | [差别到达多少 / How much difference arrives](../results/records/how-much-difference-arrives.md) | recorded-checked | [Propagation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean) |
 | [有界之处的辨识 / Identification where bounded](../results/records/identification-where-bounded.md) | recorded-checked | [Identification.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean) |
 | [运行分开之处的辨识 / Identification where runs part](../results/records/identification-where-runs-part.md) | recorded-checked | [Parting.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean) |
@@ -149,6 +150,7 @@
 | [只有变化的次序被登记 / Only the order of change registers](../results/records/only-the-order-of-change-registers.md) | recorded-checked | [Order.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean) |
 | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](../results/records/open-form-realization-under-revision.md) | recorded-checked | [OpenFutureRevision.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean) |
 | [作为不变量的交换次序 / The order of exchanges as the invariant](../results/records/order-of-exchanges-is-the-invariant.md) | recorded-checked | [Order.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean) |
+| [携带差别的阶作为历史之和 / The orders of a carried difference as a sum over histories](../results/records/orders-as-a-sum-over-histories.md) | recorded-checked | [Routes.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Routes.lean) |
 | [完整生成比较下的组织形成要求 / Required organization under whole generative comparison](../results/records/organizational-formation-from-generative-comparison.md) | reviewed-scoped | [ETHICAL-LEARNING.md](ETHICAL-LEARNING.md) |
 | [社会组织中规则差异的形成与继承 / Formation and inheritance of organizational rule differences](../results/records/organizational-rule-inheritance.md) | recorded-checked | [OrganizationalRuleInheritance.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean) |
 | [只计自身的取用漏掉联合超出 / Counting one's own draw misses joint excess](../results/records/own-count-misses-joint-excess.md) | recorded-checked | [Continuation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean) |

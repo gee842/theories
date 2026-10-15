@@ -1,0 +1,519 @@
+{
+  "schema_version": 2,
+  "id": "how-loops-form",
+  "title": {
+    "zh": "回路怎样在展开中形成",
+    "en": "How loops form within the unfolding"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "回路由闭合而形成：到 T + 1 形成的回路，是到 T 形成的回路与经过在第 T 步作用、闭合一条链的耦合的回路；形成之前增长至多是多项式，且不显示它是否将形成；强度从进程读出时，进程是其所读强度的所携带的量，回路的形成从展开读出。",
+    "en": "A loop forms by closing: the loops formed by T + 1 are those formed by T and those through a coupling acting at T that closes a chain; before it forms growth is polynomial and does not show it will; with strengths read off the course, formation is read off the unfolding."
+  },
+  "laws": [
+    {
+      "zh": "第 T 步之前的强度保留在 T 之前作用的耦合、去掉其余；它的耦合恰是在 T 之前某步作用的耦合，随 T 上升。到 T 形成的回路就是它的回路；每条耦合的链都在某步形成，所以一个世界的回路恰是到某步形成的回路，上游亦然。",
+      "en": "The strengths before step T keep the couplings acting before T and drop the rest; its couplings are exactly those acting at some step before T, and they rise with T. The loops formed by T are its loops; every chain of couplings is formed by some step, so a world's loops are exactly the loops formed by some step, and likewise what lies upstream.",
+      "declarations": [
+        "Becoming.Closing.ble_false_of_lt",
+        "Becoming.strengthsBefore",
+        "Becoming.strengthsBefore_before",
+        "Becoming.strengthsBefore_from",
+        "Becoming.strengthsBefore_le",
+        "Becoming.couplesAt_before_iff",
+        "Becoming.couples_before_iff",
+        "Becoming.couples_before_mono",
+        "Becoming.couples_of_before",
+        "Becoming.couples_before_of_couplesAt",
+        "Becoming.Coupled.lift",
+        "Becoming.OnLoop.lift",
+        "Becoming.Upstream.lift",
+        "Becoming.coupled_formed",
+        "Becoming.onLoop_iff_formed",
+        "Becoming.upstream_iff_formed"
+      ]
+    },
+    {
+      "zh": "回路由闭合而形成：到 T + 1 形成的回路，是到 T 形成的回路，以及经过一个在第 T 步作用、闭合一条链的耦合的回路，它读 d 的水平、给 c，而已有链从 c 经回路的条件通到 d。所以一个形成的回路经过在它形成之步作用的耦合；一个交换开始回应它所给的条件的水平，形成一圈的回路。链可以接合；有链进出一个条件的耦合闭合经过它的回路。",
+      "en": "A loop forms by closing: the loops formed by T + 1 are the loops formed by T and those through a coupling acting at step T that closes a chain, reading a level of d and giving to c, with chains from c through the loop's condition to d. So a loop that forms passes through a coupling acting at the step it forms; an exchange coming to respond to the level of the condition it gives to forms a loop of one. Chains join, and a coupling with chains into and out of a condition closes a loop through it.",
+      "declarations": [
+        "Becoming.Closing.join",
+        "Becoming.Closing.join_below",
+        "Becoming.Closing.join_from",
+        "Becoming.Coupled.append",
+        "Becoming.Coupled.one",
+        "Becoming.onLoop_of_closing",
+        "Becoming.Upstream.refl",
+        "Becoming.Closing.split",
+        "Becoming.onLoop_succ_iff",
+        "Becoming.forms_by_closing",
+        "Becoming.responds_to_own_level"
+      ]
+    },
+    {
+      "zh": "到第 T 步所携带的量只读在 T 之前作用的耦合。所以条件全部列出、到 T 形成的回路都不在上游时，到 T 的每步所携带的量至多是步数的多项式，次数比条件数少一，不论此后耦合怎样。",
+      "en": "The carried amount up to step T reads only the couplings acting before T. So with every condition listed and no loop formed by T upstream, the carried amount at every step up to T is at most a polynomial in the steps, of degree one less than the number of conditions, whatever the couplings do later.",
+      "declarations": [
+        "Becoming.carriedGive_congr_strength",
+        "Becoming.carried_before",
+        "Becoming.inflow_before_le",
+        "Becoming.carried_le_polynomial_before"
+      ]
+    },
+    {
+      "zh": "形成之前的量不显示它是否将形成：在第 T 步形成的强度为一的自环，到 T 为止保持起始之差不变，此后每步加倍；它在 T 形成，之前没有；在任何更晚的步形成的回路，到 T 为止携带同样的量。",
+      "en": "The amounts before a loop forms do not show whether it will: a self-loop of strength one forming at step T carries the starting gap unchanged up to T and doubles it at every step after; it forms at T and not before; and a loop forming at any later step carries the same amounts up to T.",
+      "declarations": [
+        "Becoming.Closing.Onset.strengths",
+        "Becoming.Closing.Onset.amount",
+        "Becoming.Closing.Onset.strengths_early",
+        "Becoming.Closing.Onset.strengths_late",
+        "Becoming.Closing.Onset.amount_succ_early",
+        "Becoming.Closing.Onset.amount_succ_late",
+        "Becoming.Closing.Onset.amount_before",
+        "Becoming.Closing.Onset.amount_after",
+        "Becoming.Closing.Onset.forms",
+        "Becoming.Closing.Onset.not_formed",
+        "Becoming.Closing.Onset.unforeseen"
+      ]
+    },
+    {
+      "zh": "一个律每步的强度只从至该步的水平读出时，给出其读出强度对水平所作者的律读已立者，它生成的进程就是它所读强度的所携带的量：哪些回路形成、何时形成，从展开读出。",
+      "en": "Where a law's strengths at each step are read from the levels up to that step only, the law giving what its read strengths make of the levels reads what has stood, and the course it generates is the carried amount of the strengths it reads: which loops form, and when, is read off the unfolding.",
+      "declarations": [
+        "Becoming.ReadsBefore",
+        "Becoming.ExchangeLaw.carryingRead",
+        "Becoming.formedCourse",
+        "Becoming.ExchangeLaw.carryingRead_nonanticipating",
+        "Becoming.formedCourse_succ",
+        "Becoming.formedCourse_eq_carried"
+      ]
+    },
+    {
+      "zh": "阈值的见证：部分每步给一个单位，部分之外的形成与这个条件的交换在其水平达到 θ 后回应它。水平到 θ 为止是 t；回路在第 θ 步形成，之前没有；此后水平加一每步加倍；到 θ 为止，对 θ 之外的每个阈值进程相同。",
+      "en": "The threshold witness: the part gives one unit at each step, and the exchange of the formation outside it with the condition responds to its level once that level has reached θ. The level is t up to θ; the loop forms at step θ and not before; from then the level plus one doubles at every step; and up to θ the course is the same for every threshold beyond it.",
+      "declarations": [
+        "Becoming.Closing.Threshold.reading",
+        "Becoming.Closing.Threshold.reads",
+        "Becoming.Closing.Threshold.level",
+        "Becoming.Closing.Threshold.strengths",
+        "Becoming.Closing.Threshold.strengths_eq",
+        "Becoming.Closing.Threshold.level_succ",
+        "Becoming.Closing.Threshold.level_before",
+        "Becoming.Closing.Threshold.level_le_succ",
+        "Becoming.Closing.Threshold.level_ge",
+        "Becoming.Closing.Threshold.level_after",
+        "Becoming.Closing.Threshold.not_formed",
+        "Becoming.Closing.Threshold.forms",
+        "Becoming.Closing.Threshold.unforeseen"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。各定理所写者写在定理中：强度 k 是给出的界，或强度 κ 从至每步的水平读出（ReadsBefore）；多项式之界中条件全部列出、部分在起始之后不给差、起始之差至多 D、每步进入每个条件的强度至多 M。",
+      "en": "No axiom. What each theorem needs is written into it: the strengths k as supplied bounds, or strengths κ read from the levels up to each step (ReadsBefore); in the polynomial bound, every condition listed, the part giving no gap after the start, starting gaps at most D and the strengths into each condition at most M a step."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "闭合的耦合在 T 之前不作用：要挑出这样的耦合需要判定一个耦合在 T 之前是否作用，核心不假定排中律；定理只说它在第 T 步作用。",
+      "en": "That the closing coupling did not act before T: selecting such a coupling would need a decision of whether a coupling acted before T, and the core assumes no excluded middle; the theorem says it acts at step T.",
+      "kind": "scope"
+    },
+    {
+      "zh": "一个世界从其进程读出哪些强度；对一切律刻画读出强度的回路何时形成。",
+      "en": "Which strengths a world reads off its course; when loops of read strengths form, for every law.",
+      "kind": "scope"
+    },
+    {
+      "zh": "形成之后的失控对每个律：加倍的是能到达的最大差别（自环与阈值的见证），不是每个律的实际之差。",
+      "en": "A runaway after formation for every law: what doubles is the most difference that can arrive (the self-loop and threshold witnesses), not every law's actual gap.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+      "detail": {
+        "zh": "在第 T 步形成的自环与在更晚的步形成的自环，到 T 为止携带同样的量，此后一个加倍：形成之前的量推不出此后的界。",
+        "en": "A self-loop forming at step T and one forming later carry the same amounts up to T, after which one doubles: no bound on what follows comes from the amounts before formation."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T204525.767887Z）：Becoming.Closing 的 61 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §156；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T204525.767887Z): the 61 declarations of Becoming.Closing, 51 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 156; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "对一切读出强度之律刻画回路何时形成；形成之后实际之差的失控（回应的下界）；把形成与 Becoming.Runaway 的策略在一个律中连起来；独立审查；Ren 对读法的判断。",
+    "en": "When loops of read strengths form, for every law; the runaway of the actual gap after formation (lower bounds on responses); joining formation and Becoming.Runaway's policies within one law; an independent review; Ren's judgment on the readings."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-16 取了 P118 第三项读法的精炼形式：“一个世界有哪些回路是其情境的一部分；回路在展开中形成与消解，定理按每步所立者取之”，并说“leave it pending until a loop-formation theorem exists”；同日说“a theorem showing how loops form within the unfolding … let's finish both”。本结果是那条定理。读法（AI 的，待 Ren）：回路在展开中由闭合而形成，在某个交换开始回应它所给的条件下游的一个水平之步；强度从进程读出时回路是展开所形成的一部分；回路的形成不从它之前的量预见，这与 Becoming.Runaway 相遇：能识它的是识耦合本身者。回路的消解见 P120（停止的耦合）。",
+    "en": "On 16 October 2026 Ren took P118's third reading in its refined form, “which loops a world has is part of its situation; loops form and dissolve within the unfolding, and the theorems take them as they stand at each step”, and said “leave it pending until a loop-formation theorem exists”; the same day Ren asked for “a theorem showing how loops form within the unfolding … let's finish both”. This result is that theorem. Readings (the AI's, pending Ren): loops form within the unfolding by closing, at the step some exchange comes to respond to a level downstream of the condition it gives to; with strengths read off the course the loops are part of what the unfolding forms; a loop's formation is not foreseen from the amounts before it, which meets Becoming.Runaway: what registers it is what registers the couplings themselves. How loops dissolve is P120's (couplings that stop)."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+  "aliases": [
+    "how loops form",
+    "回路怎样形成",
+    "loop formation",
+    "回路的形成",
+    "a loop forms by closing",
+    "回路由闭合而形成",
+    "loops formed by a step",
+    "到某步形成的回路",
+    "strengths before a step",
+    "某步之前的强度",
+    "strengths read off the course",
+    "从进程读出的强度",
+    "onset of a loop",
+    "回路的开始",
+    "threshold witness",
+    "阈值的见证"
+  ],
+  "dependencies": [
+    {
+      "id": "what-a-cut-loses",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 CouplesAt 与 couples_iff_couplesAt：到某步形成的耦合按其作用之步陈述。",
+        "en": "Reuses CouplesAt and couples_iff_couplesAt: the couplings formed by a step are stated by the step at which they act."
+      },
+      "interface": {
+        "output": {
+          "zh": "在某步作用的耦合；耦合是在某步作用的耦合。",
+          "en": "Couplings acting at a step; a coupling is one acting at some step."
+        },
+        "input": {
+          "zh": "到某步形成的耦合与回路；闭合的耦合。",
+          "en": "The couplings and loops formed by a step; the closing coupling."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean"
+      }
+    },
+    {
+      "id": "how-a-carried-difference-grows",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Couples、Coupled、OnLoop、Upstream、carriedGive_congr、carried_le_polynomial 与 Loops.SelfLoop：到某步形成的回路就是截断之强度的回路，形成之前的界由 P118 的多项式之界得出。",
+        "en": "Reuses Couples, Coupled, OnLoop, Upstream, carriedGive_congr, carried_le_polynomial and Loops.SelfLoop: the loops formed by a step are the loops of the truncated strengths, and the bound before formation follows from P118's polynomial bound."
+      },
+      "interface": {
+        "output": {
+          "zh": "耦合、链、回路、上游；没有回路时的多项式之界；自环。",
+          "en": "Couplings, chains, loops, upstream; the polynomial bound with no loop; the self-loop."
+        },
+        "input": {
+          "zh": "形成的回路、闭合、形成之前的界、开始的见证。",
+          "en": "Formed loops, closing, the bound before formation, the onset witness."
+        },
+        "conditions": {
+          "zh": "条件全部列出（多项式之界）。",
+          "en": "Every condition listed (the polynomial bound)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ExchangeLaw、levels、levels_succ、totals_under、Nonanticipating 与 AgreeUpTo：读出强度之律的进程由同一生成给出。",
+        "en": "Reuses ExchangeLaw, levels, levels_succ, totals_under, Nonanticipating and AgreeUpTo: the course of a law with read strengths is given by the same generation."
+      },
+      "interface": {
+        "output": {
+          "zh": "读已立者之律生成的水平。",
+          "en": "The levels a law of what has stood generates."
+        },
+        "input": {
+          "zh": "读出强度的进程等于其所读强度的所携带的量。",
+          "en": "The course with read strengths equals the carried amount of the strengths it reads."
+        },
+        "conditions": {
+          "zh": "强度只读至每步的水平。",
+          "en": "Strengths read the levels up to each step only."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "runaway-distance-unregistered",
+      "detail": {
+        "zh": "那里失控的断裂在其前不被识；这里使之失控的回路的形成也不被它所携带的量识。两者在一个律中的连接未陈述。",
+        "en": "There a runaway's break is not registered before it; here the formation of the loop that runs away is not registered by the amounts it carries either. Joining the two within one law is not stated."
+      }
+    },
+    {
+      "id": "orders-as-a-sum-over-histories",
+      "detail": {
+        "zh": "同日的另一项：P118 的阶作为 P82 的历史之和；回路是两者相乘之处，这里给出它形成的时刻。",
+        "en": "The other item of the same day: P118's orders as P82's sum over histories; loops are where both multiply, and here is the moment they form."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+      "role": "proof",
+      "sha256": "9d5429abb5ac7308d09b78b0a0baee54810ac9a692b8bd673919c6c835fef106",
+      "declarations": [
+        "Becoming.Closing.ble_false_of_lt",
+        "Becoming.strengthsBefore",
+        "Becoming.strengthsBefore_before",
+        "Becoming.strengthsBefore_from",
+        "Becoming.strengthsBefore_le",
+        "Becoming.couplesAt_before_iff",
+        "Becoming.couples_before_iff",
+        "Becoming.couples_before_mono",
+        "Becoming.couples_of_before",
+        "Becoming.couples_before_of_couplesAt",
+        "Becoming.Coupled.lift",
+        "Becoming.OnLoop.lift",
+        "Becoming.Upstream.lift",
+        "Becoming.coupled_formed",
+        "Becoming.onLoop_iff_formed",
+        "Becoming.upstream_iff_formed",
+        "Becoming.Closing.join",
+        "Becoming.Closing.join_below",
+        "Becoming.Closing.join_from",
+        "Becoming.Coupled.append",
+        "Becoming.Coupled.one",
+        "Becoming.onLoop_of_closing",
+        "Becoming.Upstream.refl",
+        "Becoming.Closing.split",
+        "Becoming.onLoop_succ_iff",
+        "Becoming.forms_by_closing",
+        "Becoming.responds_to_own_level",
+        "Becoming.carriedGive_congr_strength",
+        "Becoming.carried_before",
+        "Becoming.inflow_before_le",
+        "Becoming.carried_le_polynomial_before",
+        "Becoming.Closing.Onset.strengths",
+        "Becoming.Closing.Onset.amount",
+        "Becoming.Closing.Onset.strengths_early",
+        "Becoming.Closing.Onset.strengths_late",
+        "Becoming.Closing.Onset.amount_succ_early",
+        "Becoming.Closing.Onset.amount_succ_late",
+        "Becoming.Closing.Onset.amount_before",
+        "Becoming.Closing.Onset.amount_after",
+        "Becoming.Closing.Onset.forms",
+        "Becoming.Closing.Onset.not_formed",
+        "Becoming.Closing.Onset.unforeseen",
+        "Becoming.ReadsBefore",
+        "Becoming.ExchangeLaw.carryingRead",
+        "Becoming.formedCourse",
+        "Becoming.ExchangeLaw.carryingRead_nonanticipating",
+        "Becoming.formedCourse_succ",
+        "Becoming.formedCourse_eq_carried",
+        "Becoming.Closing.Threshold.reading",
+        "Becoming.Closing.Threshold.reads",
+        "Becoming.Closing.Threshold.level",
+        "Becoming.Closing.Threshold.strengths",
+        "Becoming.Closing.Threshold.strengths_eq",
+        "Becoming.Closing.Threshold.level_succ",
+        "Becoming.Closing.Threshold.level_before",
+        "Becoming.Closing.Threshold.level_le_succ",
+        "Becoming.Closing.Threshold.level_ge",
+        "Becoming.Closing.Threshold.level_after",
+        "Becoming.Closing.Threshold.not_formed",
+        "Becoming.Closing.Threshold.forms",
+        "Becoming.Closing.Threshold.unforeseen"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+      "role": "proof",
+      "sha256": "346bf7aa5c64896066189d4388cfe735f2be7264526e77e9590a2ea4991d0a71",
+      "declarations": [
+        "Becoming.CouplesAt",
+        "Becoming.couples_iff_couplesAt",
+        "Becoming.Remainder.le_of_add_le_add_left_nat"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "role": "proof",
+      "sha256": "778d3763de5a77a54f13a24e1eddda05c8f76e197ab1bd0b442cb895b2ef2c8c",
+      "declarations": [
+        "Becoming.Couples",
+        "Becoming.Coupled",
+        "Becoming.OnLoop",
+        "Becoming.Upstream",
+        "Becoming.carriedGive_of_part",
+        "Becoming.carriedGive_of_rest",
+        "Becoming.carriedGive_congr",
+        "Becoming.carried_le_polynomial",
+        "Becoming.inflow",
+        "Becoming.Loops.orderSum",
+        "Becoming.Loops.SelfLoop.strengths",
+        "Becoming.Loops.SelfLoop.give",
+        "Becoming.Loops.beq_self",
+        "Becoming.Loops.two_pow_succ"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "7cbd5dd1a8dca8305d3577091db9e2462c7109c75bfde6c68e0c6564aa012cd1",
+      "declarations": [
+        "Becoming.carried",
+        "Becoming.carriedGive",
+        "Becoming.carried_succ",
+        "Becoming.Propagation.add_congr",
+        "Becoming.Propagation.add_sub_self_left",
+        "Becoming.Propagation.cond_same",
+        "Becoming.Propagation.total_steps_at"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.AgreeUpTo",
+        "Becoming.ExchangeLaw.Nonanticipating",
+        "Becoming.ExchangeLaw.levels",
+        "Becoming.ExchangeLaw.levels_succ",
+        "Becoming.ExchangeLaw.totals_under"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.steps",
+        "Becoming.total_le",
+        "Becoming.total_congr",
+        "Becoming.total_zero"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "declarations": [
+        "Becoming.gap_of_le",
+        "Becoming.gap_of_lt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "bf81218edd5c67f967e663472ef1d01fe66866b82f2f9025363941bb2a9f17b9",
+      "declarations": [
+        "Becoming.total"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "ef32bd585bc150367ee3b471c97c2b6293d702857616393cbb8fb69d8bdb6ba8"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "e4b31c0fa829088922b0883d6682ea5bb54c58dae760d4a67704817bdee4c5f8"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
+      "role": "provenance",
+      "sha256": "cf83ac3219b39f47641327d95eb072286d6bd0b21452ab9351642abd895879bc"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "role": "receipt",
+      "sha256": "55cc05698f23ed3ff343a524972640522d7a50e2fa0b15ff48e83892fdf23ef2",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Closing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Remainder",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Loops",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Propagation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，按 Ren 同日“a theorem showing how loops form within the unfolding”（P122）；P118 第三项读法所待的定理；研究 §156。",
+      "en": "16 October 2026: added, on Ren's “a theorem showing how loops form within the unfolding” of the same day (P122), the theorem P118's third reading was pending; study section 156."
+    },
+    {
+      "zh": "2026年10月16日，P121、P122 落地（研究第155、156节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P121、P122：§2 的两对段落、整体陈述的条目、§8 的进一步证明、§9 的两行与术语表；Loops 段中 P121、P122 回答的两项读法后各加一个注明日期的分句（读法不变）；总数改据新回执）。",
+      "en": "16 October 2026, landing P121 and P122 (study sections 155 and 156): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P121 and P122: two paragraph pairs in §2, items of the theory stated whole, §8's further proofs, two §9 rows and glossary rows; one dated clause after each of the two readings in the Loops paragraph that P121 and P122 answer (the readings unchanged); totals moved to the new receipt)."
+    }
+  ],
+  "text_versions": []
+}

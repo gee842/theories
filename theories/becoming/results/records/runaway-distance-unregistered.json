@@ -130,8 +130,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z): the theorems of Becoming.Runaway and this record's local laws have empty axiom reports, and the checker verifies core purity; Testing and Dependence are now bound by 20261014T091930.724493Z. Author counterreview in the integration note; at Ren's “no extra review needed” there is no independent review."
   },
   "next_delta": {
-    "zh": "把这里的策略与回路相连：形成的汲取回应其自身汲取所降低的水平时，汲取与水平组成一个回路（具有给定耦合强度时，回路的一般定义与绕回路的失控由 how-a-carried-difference-grows 给出）；他者回应储量时的策略形式；带误差的量度。",
-    "en": "Connect the policies here to loops: where a formation's draw responds to a level its own draw lowers, draw and level form a loop (for laws with given coupling strengths, a loop in general and the runaway around it are given by how-a-carried-difference-grows); the policy form where others respond to the stock; measurement with error."
+    "zh": "把这里的策略与回路相连：形成的汲取回应其自身汲取所降低的水平时，汲取与水平组成一个回路（具有给定耦合强度时，回路的一般定义与绕回路的失控由 how-a-carried-difference-grows 给出，回路的形成由 how-loops-form 给出）；他者回应储量时的策略形式；带误差的量度。",
+    "en": "Connect the policies here to loops: where a formation's draw responds to a level its own draw lowers, draw and level form a loop (for laws with given coupling strengths, a loop in general and the runaway around it are given by how-a-carried-difference-grows, and how a loop forms by how-loops-form); the policy form where others respond to the stock; measurement with error."
   },
   "correspondence": {
     "zh": "Ren 的“wisdoms to avoid run away feedbacks”；testing-within-registration 把失控读作在一种不见之中运行的回路，并标为启发；experiment-needs-return 之后 AI 提议在策略的层面陈述，Ren 答“no extra review needed, merge, then continue”。读法（AI 的，依 Ren 的交托采用）：失控是断裂之前自身之识与储量多出任意多的世界相同的回路；它的策略不能用上它所不识的；要避免它而又不放弃所有的，需要量度、模型（理）或他者之识；合于 Ren 10 月 4 日“理须调节心，使其正反馈循环不失控”。",
@@ -244,6 +244,13 @@
       "detail": {
         "zh": "回答其下一步中“一般地定义回路并把失控陈述为定理”，在具有给定耦合强度的交换律上：回路是经正强度的耦合回到出发条件的链，到达回路者每圈至少乘以一加其强度之积（carried_runaway）；所失控的是能到达的最大差别，由携带之律达到。这里的失控是保持支持的策略，两者的连接仍是下一步。",
         "en": "Answers the item of its next step asking to define a loop in general and state a runaway as a theorem, for laws of exchange with given coupling strengths: a loop is a chain of couplings of positive strength back to where it started, and what reaches it is multiplied every time around by at least one plus the product of its strengths (carried_runaway); what runs away is the most difference that can arrive, attained by the carrying law. The runaway here is a policy keeping support, and connecting the two stays a next step."
+      }
+    },
+    {
+      "id": "how-loops-form",
+      "detail": {
+        "zh": "这里失控的断裂在其前不被识；那里使之失控的回路的形成也不被它所携带的量识，能识它的是识耦合本身者。",
+        "en": "Here a runaway's break is not registered before it; there the formation of the loop that runs away is not registered by the amounts it carries either: what registers it is what registers the couplings themselves."
       }
     }
   ],
@@ -553,6 +560,10 @@
     {
       "zh": "2026-10-16 P118（所携带的差别怎样增长，研究 §152）：下一步中“一般地定义回路并把失控本身陈述为定理”在具有给定耦合强度的交换律上由新记录回答，改为把这里的策略与回路相连；related 加 how-a-carried-difference-grows。陈述与证明不变；does_not_show 仍对本记录的定理成立。",
       "en": "16 October 2026, P118 (how a carried difference grows, study section 152): in the next step, “define a loop in general and state a runaway itself as a theorem” is answered by the new record for laws of exchange with given coupling strengths, and becomes connecting the policies here to loops; related adds how-a-carried-difference-grows. Statement and proofs unchanged; does_not_show still holds of this record's theorems."
+    },
+    {
+      "zh": "2026-10-16 P121 与 P122（携带差别的阶作为历史之和、回路怎样在展开中形成，研究 §155、§156）：下一步的回路一项注明回路的形成由 how-loops-form 给出，与策略的连接仍是下一步；related 加 how-loops-form。陈述与证明不变。",
+      "en": "16 October 2026, P121 and P122 (the orders of a carried difference as a sum over histories, how loops form within the unfolding, study sections 155 and 156): the loop item of the next step notes that how a loop forms is given by how-loops-form, connecting it to the policies staying a next step; related adds how-loops-form. Statement and proofs unchanged."
     }
   ],
   "text_versions": [

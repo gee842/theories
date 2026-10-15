@@ -65,7 +65,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking", "Becoming.LossMatching",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Courses", "Becoming.Parting", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Courses", "Becoming.Parting", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge", "Becoming.CompositionBridge", "Becoming.JoiningBridge", "Becoming.GranularityBridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge", "Becoming.CoursesBridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -1336,6 +1336,24 @@ SCOPE = (
     "are bounded exactly where no loop of the couplings from step N on lies upstream, with no "
     "listing of every condition, and without such a loop the carried amount is at most a "
     "polynomial; the results of Loops on exactness follow as instances. "
+    "Routes: for every weighting with each step split into a ground and a response part, order "
+    "j of the sum over histories is exact at every horizon up to j, readings keeping the laws "
+    "can be taken order by order, and for counting the orders rise to the sum; with one "
+    "configuration, ground one and response M, order j at horizon n is the order sum of Loops "
+    "and the sum (1 + M)^n; with counting weights on routes back in time, each step one "
+    "response or an end at a source, the transfer of horizon j + 1 is order j of the carried "
+    "amount at every condition and step, so each order and the carried amount are sums over "
+    "courses, horizons rise to the carried amount and miss at most the bound on a cut, and with "
+    "stationary strengths a finite horizon is exact exactly where no loop lies upstream. "
+    "Closing: the couplings formed by step T are those acting before T, every chain is formed "
+    "by some step, so the loops are those formed by some step; the loops formed by T + 1 are "
+    "those formed by T and those through a coupling acting at T that closes a chain, and an "
+    "exchange responding to the level it gives to forms a loop of one; the carried amount up to "
+    "T reads only the couplings before T, so with no loop formed by T upstream it is at most a "
+    "polynomial up to T; a self-loop forming at T and one forming later agree up to T, one "
+    "doubling after; strengths read from the levels so far generate a course that is the "
+    "carried amount of the strengths it reads, and in the threshold witness the loop forms at "
+    "the step the level reaches the threshold and the level plus one doubles from then on. "
     "Selection: two histories are selected alike by every selection through a selector's registration "
     "exactly when the selector registers them alike, and likewise for pooled registration; with the "
     "rest fixed, selection and scoring are blind beyond the registration closure; the clearer's "

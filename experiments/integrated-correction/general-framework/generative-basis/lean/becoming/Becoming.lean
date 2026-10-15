@@ -111,6 +111,8 @@ import Becoming.Situations
 import Becoming.Propagation
 import Becoming.Loops
 import Becoming.Remainder
+import Becoming.Routes
+import Becoming.Closing
 import Becoming.Gain
 import Becoming.Gluing
 
@@ -1113,6 +1115,23 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   exactly where those chains are bounded. Where the schedule has settled, they are bounded exactly
   where no loop of the couplings that go on lies upstream, with no listing of every condition, and
   the most difference that can arrive grows faster than every polynomial only through such a loop.
+* `Becoming.Routes` (L4): the orders of a carried difference as a sum over histories, with no
+  premise beyond what each statement names. For every weighting whose steps split into a ground
+  and a response part, order `j` of the sum over histories is exact at every horizon up to `j`.
+  Traced back in time, a route steps by one response to an earlier level, the level holding
+  between, or ends at a source; with counting weights the transfer of horizon `j + 1` over the
+  route points is order `j` of the carried amount, so each order, and the carried amount, is a
+  sum over courses, a cut is a truncation, and a finite horizon is exact exactly where no loop
+  lies upstream (stationary strengths).
+* `Becoming.Closing` (L4): how loops form within the unfolding, with no premise beyond the
+  strengths each statement names. The loops formed by a step are the loops of the couplings
+  acting before it, and a world's loops are those formed by some step. The loops formed by
+  `T + 1` are those formed by `T` and those through a coupling acting at `T` that closes a
+  chain; an exchange coming to respond to the level it gives to forms a loop of one. Before a
+  loop forms upstream the carried amount is at most a polynomial, and the amounts before it do
+  not show whether it will. Strengths read off the course give a course that is the carried
+  amount of the strengths it reads; in the threshold witness a loop forms at the step a level
+  reaches the threshold and doubles from then on.
 * `Becoming.Gain` (L3): where novelty's gain comes from, with no premise. With the rest of the
   whole counted, every rise is given: across a step at which a family's stock rises, some relatum
   gives it more than it takes, a formation taking part or the rest, found by checking each one taking

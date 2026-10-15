@@ -9774,6 +9774,123 @@ theorem carried_le_polynomial_from {N : Nat} {c : C}
 6. **名称。** `CouplesAt`、`CoupledIntoBy`、`ConveyedThrough`、`CouplingRecurs`、`strengthsFrom`、`SettledFrom` 与 `Remainder` 都是结构的名称（板规第 8 条）；不含二元或限定范围的词，不含市场的词。
 7. **范围。** 不含伦理谓词；离散的步、自然数的量；强度与时程是给出的。
 
+## 155. 携带差别的阶作为历史之和：P118 的阶是 P82 的视界（Becoming.Routes）
+
+2026-10-16。Ren 取了 P118 读法的这一形式：Ren 2026-10-12 所问的积分，对不确定的律，是 P82 的历史之和及其四种损失（`Becoming.Weighted`）；P118 的阶是同一结构类的，按回应次数组织，如同费曼图按顶点数；两者尚未连起来（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md)）。同日 Ren 说：“joining P82's sum over histories with P118's orders; a theorem showing how loops form within the unfolding. let's finish both”。本节回答第一项，在第一部分之内：不加公理，除各定理所写者不加前提。工作板上认领为 P121。
+
+```text
+Result(s): 新增 orders-as-a-sum-over-histories；回答 how-a-carried-difference-grows 与 losses-of-the-sum-over-histories
+           的 next_delta 中“把各阶接到历史之和”；复用 losses-of-the-sum-over-histories（Weights、Weights.sum、
+           Weights.transfer、Weights.along、Weights.sum_courses、Weights.Hom、counting、openSteps、courses、joinMap）；
+           how-a-carried-difference-grows（carriedWithin、carriedFrom、carriedWithin_exact、carriedWithin_mono、
+           carriedWithin_le_carried、carried_eq_carriedWithin、carried_le_carriedWithin_add、
+           finite_order_iff_no_loop_stationary、Loops.orderSum、Loops.orderSum_step、Loops.missBound）；
+           how-much-difference-arrives（carried、carriedGive）
+Delta: 新核心模块 Becoming.Routes（导入 Weighted 与 Loops；30 项定理／39 项声明）；不改已有模块
+Supplied premises / correspondence: 不加公理；各定理所写者写在定理中：权重及其律（Weights）；列出的步与构形；
+       强度 k（给出的界）；截断之界中部分不给差、起始之差至多 D、每步进入每个条件的强度至多 M；当且仅当中条件全部
+       列出、形成与强度每步相同（stationary）
+Evidence: scratch_build 对 main 271ab66a：Becoming.Routes 30 项定理、39 项声明，公理报告全部为空，无警告；
+          合并检查器回执待整合者的运行
+Boundary: 计数的权重，不相消；离散的步、自然数的量；强度是给出的；按“恰好 i 次回应”分组需要可交换的相加，未陈述；
+          不含伦理谓词
+Integration: §2 新增一段；第一部分的总陈述一条；§8 进一步证明一项；§9 新增一行；术语表一行；Becoming.lean 的导入与
+       模块说明；check_becoming.py 的核心之列与范围说明；Lean README 一行与层内导入；一项新记录与两项配对说明
+```
+
+**一、每个历史之和按阶展开。** 对每一种权重（`Weights`），把每步的权重分成基础部分与回应部分。j 阶（`Weights.within`）跨每步由基础部分读 j 阶、由回应部分读 j − 1 阶，0 阶只读基础部分：正是 `carriedWithin` 的形状。n 步的历程至多有 n 次回应，所以 j 阶在每个不超过 j 的视界上就是整个历史之和（`Weights.within_exact`：证明只用右分配律，不用相加的交换）。保持权重之律的读法可以逐阶取（`Weights.Hom.within`）。计数时各阶上升（`counting_within_le_succ`），不超过历史之和（`counting_within_le_transfer`）。
+
+**二、P118 的时间次序是 P82 的阶。** 一个构形、基础权重为一、回应权重为 M 时，视界 n 上的 j 阶是 `Loops.orderSum M j n`，即对 i ≤ j 的 `Loops.binom n i * M ^ i` 之和（`Routes.SelfLoop.within_eq`，由 P118 的帕斯卡法则 `Loops.orderSum_step`）；整个和是 `(1 + M) ^ n`（`Routes.SelfLoop.transfer_eq`），于是 `Loops.orderSum M n n = (1 + M) ^ n`（`Routes.SelfLoop.within_exact`）。这是 P118 的自环；M 为一时是 P82 绕回路倍增的历程。
+
+**三、所携带的量是历史之和。** 把一个差别沿时间往回追：从第 τ 步 `c` 的水平（`RoutePoint.level τ c`）出发，一步是一次回应，到较早第 s 步 `d` 的水平，权重是强度在回应能发生的每一步上的和，其间水平保持（`responseWeight`，由 `respondAt` 逐步累加）；或者终于源（`RoutePoint.source`），权重是 0 阶（起始之差与部分之差，保持）；源停在源。这些是步的计数权重（`routeWeight`）；读到终点是否到达源（`routeRead`）。在列出的路线点上（源与第 T 步之前的水平，`routePoints`），P82 的转移（`routeSum`）在视界 j + 1 上就是 P118 的 j 阶，对 T 以内的每个条件与每步（`routeSum_eq_carriedWithin`）。证明的关键是线性：从给定水平 `l` 所携带的，是 0 阶加每次回应的权重乘它所读的水平（`carriedFrom_eq_routes`，由 `give_split`），而源在每个视界上给一（`routeSum_source`）。于是由 `Weights.sum_courses`，每一阶是 j + 1 步的一切历程的步权之积之和（`carriedWithin_eq_courses`），第 t 步所携带的量是 t + 1 步的一切历程之和（`carried_eq_courses`）。
+
+**四、截断是视界；回路是两者相乘之处。** P118 在 j 阶的截断就是 P82 在视界 j + 1 的截断：视界超过步数时精确（`routeSum_exact`），随视界上升（`routeSum_mono`），不超过所携带的量（`routeSum_le_carried`），所漏至多 `Loops.missBound M D j t`（`carried_le_routeSum_add`）。条件全部列出、形成与强度每步相同时，路线之和的某个有限视界从每个起始之差在每步精确，恰当上游没有回路（`finite_horizon_iff_no_loop`）。P82 的回路损失（历程绕回路相乘，没有一个视界足够）就是 P118 的失控。
+
+```lean
+def Weights.within (W : Weights R) (ground response : S → A → S → R) (moves : List A)
+    (all : List S) (f : S → R) : Nat → Nat → S → R
+  | _, 0, s => f s
+  | 0, n + 1, s => W.sum (openSteps moves all) fun p =>
+      W.mul (ground s p.1 p.2) (Weights.within W ground response moves all f 0 n p.2)
+  | j + 1, n + 1, s => W.sum (openSteps moves all) fun p =>
+      W.add (W.mul (ground s p.1 p.2) (Weights.within W ground response moves all f (j + 1) n p.2))
+        (W.mul (response s p.1 p.2) (Weights.within W ground response moves all f j n p.2))
+
+theorem routeSum_eq_carriedWithin {T : Nat} :
+    ∀ j τ, τ ≤ T → ∀ c, routeSum cs part σ k present δ T (j + 1) (.level τ c) =
+      carriedWithin cs part σ k present δ j τ c
+
+theorem carried_eq_courses (t : Nat) (c : C) :
+    carried cs part σ k present δ t c =
+      counting.sum (courses [()] (routePoints cs t) (t + 1))
+        (counting.along (routeWeight cs part σ k present δ) routeRead (.level t c))
+```
+
+**读法（AI 的，待 Ren）。**
+1. **一个积分。** 接合使结构上的对应成为确切的：沿时间往回的路线是 P82 意义上的历史，它的步是回应（图的顶点），顶点之间水平保持，对回应能发生的各步求和，如同传播子对中间时刻求和；它的阶是顶点数。所以 Ren 所问的“积分”是一个：P118 的各阶就是 P82 的历史之和，按视界组织，两者的损失相遇：和的截断就是展开的截断，P82 中使历程相乘的回路就是 P118 中使差别失控的回路。
+2. **结构的，不是物理的。** 权重是强度的计数，不是振幅；计数的权重不相消（`Becoming.Weighted` 的 `Interference.unseen`），所以这里没有干涉。
+
+**作者反审。**
+1. **新律还是重述？** 线性递推等于路径之和（转移矩阵的幂按路径展开）是标准的；Dyson 级数按相互作用次数展开亦然。新的是：（a）它把核心里两个独立陈述的模块确切地接上，P118 的阶与 P82 的视界在每个条件与每步相等，经 `Weights.sum_courses` 成为历程之和；（b）“每个历史之和按阶展开、j 阶到视界 j 精确”对每一种权重陈述，只用右分配律。
+2. **保持去哪了？** 路线点的一步跳过任意多步：保持被吸收进回应的权重（`responseWeight` 对回应能发生的每步求和）。另一种编码（每步一个“保持”）需要构形的相等可判定；这里不需要。
+3. **为什么只到“至多 j 次”。** 按“恰好 i 次回应”的分组要把各阶之和重新排列，需要相加可交换；对一般的 `Weights` 不成立（`Weights` 不假定交换），对计数成立但没有陈述。
+4. **范围。** 计数的权重；带号或复数的携带差别、无穷多路线点、无界的视界没有陈述。不含伦理谓词。
+
+## 156. 回路怎样在展开中形成：耦合闭合一条链（Becoming.Closing）
+
+2026-10-16。Ren 取了 P118 第三项读法的精炼形式：“一个世界有哪些回路是其情境的一部分；回路在展开中形成与消解，定理按每步所立者取之”，并说“leave it pending until a loop-formation theorem exists”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md)）。同日 Ren 说：“joining P82's sum over histories with P118's orders; a theorem showing how loops form within the unfolding. let's finish both”。本节回答第二项，在第一部分之内：不加公理，除各定理所写的强度不加前提。工作板上认领为 P122；回路的消解（停止的耦合）与时序之链在 P120（`Becoming.Remainder`，§154）。
+
+```text
+Result(s): 新增 how-loops-form；回答 how-a-carried-difference-grows 的 next_delta 中“回路怎样形成，汲取与
+           Becoming.Runaway 的策略相遇之处”，使其第三项读法不再待定；复用 what-a-cut-loses（CouplesAt、
+           couples_iff_couplesAt、Remainder.le_of_add_le_add_left_nat）；how-a-carried-difference-grows（Couples、
+           Coupled、OnLoop、Upstream、carriedGive_of_part、carriedGive_of_rest、carriedGive_congr、carried_le_polynomial、
+           Loops.SelfLoop.strengths、Loops.SelfLoop.give、Loops.beq_self、Loops.two_pow_succ）；how-much-difference-arrives
+           （carried、carried_succ、carriedGive）；counterfactual-is-the-course（ExchangeLaw、levels、levels_succ、
+           totals_under、Nonanticipating、AgreeUpTo）
+Delta: 新核心模块 Becoming.Closing（导入 Remainder；51 项定理／61 项声明）；不改已有模块
+Supplied premises / correspondence: 不加公理；各定理所写者写在定理中：强度 k（给出的界）或从水平读出的强度 κ
+       （ReadsBefore：每步只读至该步的水平）；多项式之界中条件全部列出、部分不给差、起始之差至多 D、每步进入每个条件的
+       强度至多 M
+Evidence: scratch_build（对 P120 提交 2a72060f，其 Remainder.lean）：Becoming.Closing 51 项定理、61 项声明，
+          公理报告全部为空，无警告；合并检查器回执待整合者的运行
+Boundary: 离散的步、自然数的量；强度或读出强度的方式是给出的；对一切律刻画读出强度的回路何时形成没有陈述；
+          不含伦理谓词
+Integration: §2 新增一段；第一部分的总陈述一条；§8 状态与进一步证明；§9 新增一行；术语表一行；Becoming.lean 的导入
+       与模块说明；check_becoming.py 的核心之列与范围说明；Lean README 一行与层内导入；一项新记录与两项配对说明
+```
+
+**一、到某步形成的回路。** 第 T 步之前的强度（`strengthsBefore T k`）保留在 T 之前作用的耦合，去掉其余；它的耦合恰是在 T 之前某步作用的耦合（`couples_before_iff`，用 P120 的 `CouplesAt`），随 T 上升（`couples_before_mono`）。到 T 形成的回路就是它的回路，于是 P118 的链、回路与上游的定义直接适用，不另立平行的定义。每条耦合的链都在某步形成（`coupled_formed`）：一个世界的回路恰是到某步形成的回路（`onLoop_iff_formed`），上游亦然（`upstream_iff_formed`）。
+
+**二、回路由闭合而形成。** 到 T + 1 形成的回路，是到 T 形成的回路，以及经过一个在第 T 步作用、闭合一条链的耦合的回路：它读 `d` 的水平、给 `c`，而已有链从 `c` 经回路的条件通到 `d`（`onLoop_succ_iff`）。证明把到 T + 1 的链分成：全部在 T 之前，或有一个耦合在第 T 步作用（`Closing.split`，只对作用的步做自然数的比较，不需判定耦合本身）；在那个耦合处把回路转开。反过来，有链进出一个条件的耦合闭合经过它的回路（`onLoop_of_closing`，由链的接合 `Coupled.append`）。所以一个形成的回路经过在它形成之步作用的耦合（`forms_by_closing`）；一个交换开始回应它所给的条件的水平，形成一圈的回路（`responds_to_own_level`）。
+
+**三、回路形成之前。** 到第 T 步所携带的量只读在 T 之前作用的耦合（`carried_before`）。所以到 T 形成的回路都不在 `c` 的上游时，`c` 处到 T 的每步所携带的量至多是步数的多项式，次数比条件数少一，不论此后耦合怎样（`carried_le_polynomial_before`，由 P118 的 `carried_le_polynomial` 与 `inflow_before_le`）。形成之前的量不显示它是否将形成：在第 T 步形成的强度为一的自环（`Closing.Onset.strengths`）到 T 为止保持起始之差不变（`Onset.amount_before`），此后每步加倍（`Onset.amount_after`）；它在 T 形成，之前没有（`Onset.forms`、`Onset.not_formed`）；在任何更晚的步形成的回路，到 T 为止携带同样的量（`Onset.unforeseen`）。
+
+**四、从展开读出的耦合。** 一个律每步的强度只从至该步的水平读出（`ReadsBefore`）时，给出其读出强度对水平所作者的律（`ExchangeLaw.carryingRead`，读已立者：`ExchangeLaw.carryingRead_nonanticipating`）生成一个进程（`formedCourse`，由 `Becoming.Counterfactual` 的生成），它就是它所读强度的所携带的量（`formedCourse_eq_carried`）。于是以上各条对这个进程自己形成的耦合成立：哪些回路形成、何时形成，从展开读出。阈值的见证（`Closing.Threshold`）：部分每步给一个单位，部分之外的形成与这个条件的交换在其水平达到 θ 后回应它。水平到 θ 为止是 t（`Threshold.level_before`）；回路在第 θ 步形成，之前没有（`Threshold.forms`、`Threshold.not_formed`）；此后水平加一每步加倍（`Threshold.level_after`）；到 θ 为止，对 θ 之外的每个阈值进程相同（`Threshold.unforeseen`）。
+
+```lean
+theorem onLoop_succ_iff {T : Nat} {e : C} :
+    OnLoop cs part (strengthsBefore (T + 1) k) present e ↔
+      OnLoop cs part (strengthsBefore T k) present e ∨
+        ∃ d c s, CouplesAt cs part k present T s d c ∧
+          Upstream cs part (strengthsBefore (T + 1) k) present c e ∧
+            Upstream cs part (strengthsBefore (T + 1) k) present e d
+
+theorem formedCourse_eq_carried (reads : ReadsBefore κ) :
+    ∀ t c, formedCourse cs part σ κ present δ t c =
+      carried cs part σ (κ (formedCourse cs part σ κ present δ)) present δ t c
+```
+
+**读法（AI 的，待 Ren）。**
+1. **回路由闭合而形成。** 一个回路在某步形成，恰在那一步某个交换开始回应它所给的条件下游的一个水平之处。强度从进程读出时，如阈值的见证，耦合以至回路都是展开所形成的一部分。这就是 Ren 让 P118 第三项读法待定所等的定理：读法现在可以说，回路以这种闭合在展开中形成与消解（消解见 P120：停止的耦合所携带的，有限阶携带），定理按每步所立者取之。
+2. **回路的形成不从它之前的量预见。** 形成之前增长至多是多项式；形成之步不由至今的进程显示；形成之后的量至少按几何级数增长。这与 `Becoming.Runaway`（P55）相遇：在那里失控的断裂在其前不被识；这里使之失控的回路的形成，也不被它所携带的量识。能识它的是识耦合本身者（在阈值的见证中，水平与 θ 的距离）。
+
+**作者反审。**
+1. **新律还是重述？** “新回路必经过新边”是图论的平凡事实；新的是：（a）它在核心的时变耦合上陈述为当且仅当，回路的定义复用 P118 而不另立；（b）形成之前的多项式界“不论此后耦合怎样”，把 P118 的界接到形成的时刻；（c）强度从进程读出时，进程等于其所读强度的所携带的量，所以形成本身在展开之内。
+2. **“新的”耦合。** `onLoop_succ_iff` 说闭合的耦合在第 T 步作用，没有说它在 T 之前不作用：要挑出一个此前不作用的耦合，需要判定一个耦合在 T 之前是否作用，核心不假定排中律。在第 T 步作用就够了：经过它的回路在 T + 1 形成。
+3. **见证的选择。** 阈值的见证用一个条件与一个自环：形成的最简单情形。它说明形成可以完全由进程决定；对一切律刻画读出强度的回路何时形成，没有陈述。
+4. **范围。** 离散的步、自然数的量；强度或读出强度的方式是给出的。不含伦理谓词。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -11435,3 +11552,18 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 - **`Becoming.Loops` as instances.** Order j exact up to step j, no loop upstream sufficing, the equivalence with couplings at every step, now with no listing of every condition, and the loop coupled once (`Remainder.carriedWithin_exact`, `Remainder.carriedWithin_exact_of_no_loop`, `Remainder.finite_order_iff_no_loop`, `Remainder.Once.exact`); for every law, every gap from every start is within order j exactly where no longer chain in time order ends there (`gap_within_order_iff`).
 - **Readings (the AI's, pending Ren).** The exact remainder is the remainder of the expansion Ren took as the same structural kind as the sum over histories, in the form of a Neumann series's remainder, its responses in time order as in the Dyson series; the loss is the cut's, not the theory's. What decides a cut's loss is the time order of the couplings: the loops that matter are those of the couplings that go on, a loop whose couplings stop being passing. The most difference that can arrive grows faster than every polynomial only through a loop of the couplings that go on; whether through every such loop is not derived.
 - **Boundaries.** That every schedule settles is classically true for finitely many conditions but is not derived: whether a coupling recurs is not decided here, and its exact strength is open. A loop of recurring couplings leaves every finite order inexact, which is not yet a rate; a self-loop coupled only at the powers of two should grow only linearly, which is not proved here. The mathematics is standard (the Neumann, Dyson or Peano–Baker remainder of a linear time-varying comparison system, nilpotent exactly where the time-respecting paths are bounded); what is new is its statement on the core's laws with no premise, the exact criteria, the settled schedules with no listing, and the statement for every law. Scratch build on main `e47a1ede` with P118's readings commit `51dcf0dc`: 58 theorems, 66 declarations, empty axiom reports; the root compiles with its closure; the decidability inventory classifies every new row. Not yet independently reviewed.
+
+**The orders of a carried difference as a sum over histories (P121, 16 October 2026).** Ren took the reading that the integration asked about on 12 October is P82's sum over histories with its four losses, that P118's orders are of the same structural kind, organized by number of responses as Feynman diagrams are by vertices, and that the two were not yet joined; the same day Ren asked to join them. New core module `Becoming.Routes` (imports Weighted and Loops; 30 theorems, 39 declarations, empty axiom reports), no premise beyond what each statement names.
+- **Every sum over histories expands by order.** For every weighting, each step's weight split into a ground and a response part, order j (`Weights.within`) reads order j through the ground part and order j − 1 through the response part, as `carriedWithin` does; it is exact at every horizon up to j (`Weights.within_exact`, using only the right distributive law), a reading that keeps the laws can be taken order by order (`Weights.Hom.within`), and for counting the orders rise to the sum (`counting_within_le_succ`, `counting_within_le_transfer`). With one configuration, ground one and response M, order j at horizon n is P118's `Loops.orderSum M j n` and the sum is (1 + M)^n (`Routes.SelfLoop.within_eq`, `transfer_eq`).
+- **The carried amount is a sum over histories.** Traced back in time, a route steps by one response to an earlier level, weighted by the strengths summed over the steps at which it can occur with the level holding between (`responseWeight`), or ends at a source weighed by order 0 (`routeWeight`). P82's transfer over the listed route points of horizon j + 1 is P118's order j at every condition and step (`routeSum_eq_carriedWithin`), so each order is a sum over every course of j + 1 steps (`carriedWithin_eq_courses`) and the carried amount at step t a sum over every course of t + 1 steps (`carried_eq_courses`).
+- **A cut is a truncation; loops are where both multiply.** A horizon past the step is exact (`routeSum_exact`), horizons rise to the carried amount (`routeSum_mono`, `routeSum_le_carried`) and miss at most P118's bound (`carried_le_routeSum_add`); with stationary strengths a finite horizon is exact from every start exactly where no loop lies upstream (`finite_horizon_iff_no_loop`).
+- **Readings (the AI's, pending Ren).** The structural match is now exact: a route is a history whose steps are responses (vertices) with holding summed between them (as a propagator sums over intermediate times), its order its number of vertices; the two integrations are one, and P82's loss by loops is P118's runaway. The match stays structural: counting weights do not cancel.
+- **Boundaries.** Counting weights; grouping by exactly i responses needs alternatives that commute and is not stated; signed or complex carried differences, infinitely many route points and unbounded horizons are open.
+
+**How loops form within the unfolding (P122, 16 October 2026).** Ren took P118's third reading, that loops form and dissolve within the unfolding and the theorems take them as they stand at each step, pending a loop-formation theorem, and asked for it the same day. New core module `Becoming.Closing` (imports Remainder; 51 theorems, 61 declarations, empty axiom reports), no premise beyond the strengths each statement names.
+- **Loops formed by a step.** The strengths before step T (`strengthsBefore`) keep the couplings acting before T; its couplings are exactly those (`couples_before_iff`, on P120's `CouplesAt`), so P118's chains and loops apply unchanged. Every chain is formed by some step (`coupled_formed`): a world's loops are exactly the loops formed by some step (`onLoop_iff_formed`, `upstream_iff_formed`).
+- **A loop forms by closing.** The loops formed by T + 1 are those formed by T and those through a coupling acting at step T that closes a chain, reading a level of d and giving to c with chains from c through the loop's condition to d (`onLoop_succ_iff`); a forming loop passes through such a coupling (`forms_by_closing`), and an exchange coming to respond to the level it gives to forms a loop of one (`responds_to_own_level`).
+- **Before a loop forms.** The carried amount up to T reads only the couplings before T (`carried_before`), so where no loop formed by T lies upstream it is at most a polynomial up to T, whatever comes later (`carried_le_polynomial_before`). The amounts before a loop forms do not show whether it will: a self-loop forming at T carries the starting gap unchanged up to T and doubles it after (`Closing.Onset`), and one forming later carries the same amounts up to T (`Onset.unforeseen`).
+- **Couplings read off the course.** Where strengths are read from the levels so far (`ReadsBefore`), the law giving what its read strengths make of the levels (`ExchangeLaw.carryingRead`) generates a course that is the carried amount of the strengths it reads (`formedCourse_eq_carried`). In the threshold witness (`Closing.Threshold`) a steady gap raises a level by one each step and the exchange responds to the level once it has reached θ: the level is t up to θ, the loop forms at θ and not before, the level plus one doubles from then on, and up to θ the course is the same for every later threshold.
+- **Readings (the AI's, pending Ren).** Loops form within the unfolding by closing, at the step some exchange comes to respond to a level downstream of what it gives to; where strengths are read off the course the loops are part of what the unfolding forms. A loop's formation is not foreseen from the amounts before it, which meets `Becoming.Runaway`: what registers it is what registers the couplings themselves.
+- **Boundaries.** The closing coupling acts at the forming step, but that it did not act before is not selected (which would need a decision the core does not assume); which strengths a world reads off its course, and when such loops form for every law, are not stated.

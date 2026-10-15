@@ -87,6 +87,13 @@
         "zh": "记忆的损失是描述的损失：保留所需的配置承载规律。",
         "en": "The loss of memory is a loss of the description: configurations keeping what is needed carry the law."
       }
+    },
+    {
+      "id": "orders-as-a-sum-over-histories",
+      "detail": {
+        "zh": "所携带的差别是计数权重的历史之和：Becoming.Loops 的 j 阶就是视界 j + 1；每个历史之和按阶展开，j 阶到视界 j 精确。",
+        "en": "The carried difference is a sum over histories of counting weights: order j of Becoming.Loops is horizon j + 1; every sum over histories expands by order, exact up to horizon j."
+      }
     }
   ],
   "counterexamples": [
@@ -322,6 +329,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Weighted.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026-10-16 P121 与 P122（携带差别的阶作为历史之和、回路怎样在展开中形成，研究 §155、§156）：related 加 orders-as-a-sum-over-histories：两个积分接合。陈述与证明不变。",
+      "en": "16 October 2026, P121 and P122 (the orders of a carried difference as a sum over histories, how loops form within the unfolding, study sections 155 and 156): related adds orders-as-a-sum-over-histories: the two integrations joined. Statement and proofs unchanged."
     }
   ]
 }

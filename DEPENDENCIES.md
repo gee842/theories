@@ -2414,6 +2414,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
 
+## how-loops-form ← what-a-cut-loses
+
+`formal-reuse` — 复用 CouplesAt 与 couples_iff_couplesAt：到某步形成的耦合按其作用之步陈述。 / Reuses CouplesAt and couples_iff_couplesAt: the couplings formed by a step are stated by the step at which they act.
+
+**Producer output / 上游输出:** 在某步作用的耦合；耦合是在某步作用的耦合。 / Couplings acting at a step; a coupling is one acting at some step.
+
+**Consumer input / 下游输入:** 到某步形成的耦合与回路；闭合的耦合。 / The couplings and loops formed by a step; the closing coupling.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean)
+
+## how-loops-form ← how-a-carried-difference-grows
+
+`formal-reuse` — 复用 Couples、Coupled、OnLoop、Upstream、carriedGive_congr、carried_le_polynomial 与 Loops.SelfLoop：到某步形成的回路就是截断之强度的回路，形成之前的界由 P118 的多项式之界得出。 / Reuses Couples, Coupled, OnLoop, Upstream, carriedGive_congr, carried_le_polynomial and Loops.SelfLoop: the loops formed by a step are the loops of the truncated strengths, and the bound before formation follows from P118's polynomial bound.
+
+**Producer output / 上游输出:** 耦合、链、回路、上游；没有回路时的多项式之界；自环。 / Couplings, chains, loops, upstream; the polynomial bound with no loop; the self-loop.
+
+**Consumer input / 下游输入:** 形成的回路、闭合、形成之前的界、开始的见证。 / Formed loops, closing, the bound before formation, the onset witness.
+
+**Retained conditions / 保留条件:** 条件全部列出（多项式之界）。 / Every condition listed (the polynomial bound).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean)
+
+## how-loops-form ← counterfactual-is-the-course
+
+`formal-reuse` — 复用 ExchangeLaw、levels、levels_succ、totals_under、Nonanticipating 与 AgreeUpTo：读出强度之律的进程由同一生成给出。 / Reuses ExchangeLaw, levels, levels_succ, totals_under, Nonanticipating and AgreeUpTo: the course of a law with read strengths is given by the same generation.
+
+**Producer output / 上游输出:** 读已立者之律生成的水平。 / The levels a law of what has stood generates.
+
+**Consumer input / 下游输入:** 读出强度的进程等于其所读强度的所携带的量。 / The course with read strengths equals the carried amount of the strengths it reads.
+
+**Retained conditions / 保留条件:** 强度只读至每步的水平。 / Strengths read the levels up to each step only.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
 ## how-much-difference-arrives ← counterfactual-is-the-course
 
 `formal-reuse` — 复用 ExchangeLaw、AgreeUpTo、GivesAlike、Nonanticipating、InsensitiveAt、Sensitive、Flow.Follows、levels、levels_succ、totals_under、course、course_balances_iff 与 course_follows：所携带的量由反事实进程的同一生成给出，强度为零恰是其不敏感。 / Reuses ExchangeLaw, AgreeUpTo, GivesAlike, Nonanticipating, InsensitiveAt, Sensitive, Flow.Follows, levels, levels_succ, totals_under, course, course_balances_iff and course_follows: the carried amount is given by the generation of the counterfactual course, and strength zero is exactly its insensitivity.
@@ -3597,6 +3633,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 包含交换的足迹；交换不相连。 / A footprint containing the exchanges; the exchanges commuted not joined.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean)
+
+## orders-as-a-sum-over-histories ← losses-of-the-sum-over-histories
+
+`formal-reuse` — 复用 Weights、Weights.sum、Weights.transfer、Weights.along、Weights.sum_courses、Weights.Hom、counting、openSteps、courses 与 joinMap：所携带的量是计数权重的转移，各阶经 sum_courses 成为历程之和。 / Reuses Weights, Weights.sum, Weights.transfer, Weights.along, Weights.sum_courses, Weights.Hom, counting, openSteps, courses and joinMap: the carried amount is a transfer of counting weights, and each order a sum over courses by sum_courses.
+
+**Producer output / 上游输出:** 历史之和是逐步的转移；保持律的读法可逐历程取。 / The sum over histories is the stepwise transfer; a reading keeping the laws can be taken course by course.
+
+**Consumer input / 下游输入:** 各阶的历史之和；所携带的量作为路线之和。 / The orders of a sum over histories; the carried amount as a sum over routes.
+
+**Retained conditions / 保留条件:** 列出的步与构形；路线点列到第 T 步。 / Listed moves and configurations; route points listed up to step T.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
+
+## orders-as-a-sum-over-histories ← how-a-carried-difference-grows
+
+`formal-reuse` — 复用 carriedWithin、carriedFrom、carriedWithin_exact、carriedWithin_mono、carriedWithin_le_carried、carried_le_carriedWithin_add、finite_order_iff_no_loop_stationary 与 Loops.orderSum：路线之和在每个视界上等于各阶，于是这些都是关于历史之和的定理。 / Reuses carriedWithin, carriedFrom, carriedWithin_exact, carriedWithin_mono, carriedWithin_le_carried, carried_le_carriedWithin_add, finite_order_iff_no_loop_stationary and Loops.orderSum: the sum over routes equals the orders at every horizon, so these become theorems of the sum over histories.
+
+**Producer output / 上游输出:** 各阶、它们的精确与界、恰在没有回路处的当且仅当。 / The orders, their exactness and bounds, the equivalence exactly where no loop lies.
+
+**Consumer input / 下游输入:** 路线之和的视界、它的精确与界、有限视界的当且仅当。 / The horizons of the sum over routes, their exactness and bounds, the equivalence for a finite horizon.
+
+**Retained conditions / 保留条件:** 同 P118：强度给出；截断之界与当且仅当的条件。 / As in P118: strengths supplied; the conditions of the bound and the equivalence.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean)
 
 ## organizational-formation-from-generative-comparison ← practical-judgment-g0-j
 

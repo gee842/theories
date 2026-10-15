@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-220 migrated records: 216 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+222 migrated records: 218 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -103,6 +103,7 @@
 | `historical-source-binding` | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](records/historical-source-binding.md) | theorem | recorded-checked |
 | `histories-fix-law-up-to-dead-ends` | [律与历史的完备对应 / The complete correspondence of law and history](records/histories-fix-law-up-to-dead-ends.md) | theorem | recorded-checked |
 | `how-a-carried-difference-grows` | [所携带的差别怎样增长 / How a carried difference grows](records/how-a-carried-difference-grows.md) | theorem | recorded-checked |
+| `how-loops-form` | [回路怎样在展开中形成 / How loops form within the unfolding](records/how-loops-form.md) | theorem | recorded-checked |
 | `how-much-difference-arrives` | [差别到达多少 / How much difference arrives](records/how-much-difference-arrives.md) | theorem | recorded-checked |
 | `identification-where-bounded` | [有界之处的辨识 / Identification where bounded](records/identification-where-bounded.md) | theorem | recorded-checked |
 | `identification-where-runs-part` | [运行分开之处的辨识 / Identification where runs part](records/identification-where-runs-part.md) | theorem | recorded-checked |
@@ -153,6 +154,7 @@
 | `only-the-order-of-change-registers` | [只有变化的次序被登记 / Only the order of change registers](records/only-the-order-of-change-registers.md) | theorem | recorded-checked |
 | `open-form-realization-under-revision` | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](records/open-form-realization-under-revision.md) | theorem | recorded-checked |
 | `order-of-exchanges-is-the-invariant` | [作为不变量的交换次序 / The order of exchanges as the invariant](records/order-of-exchanges-is-the-invariant.md) | theorem | recorded-checked |
+| `orders-as-a-sum-over-histories` | [携带差别的阶作为历史之和 / The orders of a carried difference as a sum over histories](records/orders-as-a-sum-over-histories.md) | theorem | recorded-checked |
 | `organizational-formation-from-generative-comparison` | [完整生成比较下的组织形成要求 / Required organization under whole generative comparison](records/organizational-formation-from-generative-comparison.md) | argument | reviewed-scoped |
 | `organizational-rule-inheritance` | [社会组织中规则差异的形成与继承 / Formation and inheritance of organizational rule differences](records/organizational-rule-inheritance.md) | theorem | recorded-checked |
 | `own-count-misses-joint-excess` | [只计自身的取用漏掉联合超出 / Counting one's own draw misses joint excess](records/own-count-misses-joint-excess.md) | theorem | recorded-checked |

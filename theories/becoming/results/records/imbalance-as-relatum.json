@@ -202,7 +202,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "e470fed95b5054ef55453fb5aad3639de75732abab8ccd6d3cb8df6fbbe4b999"
+      "sha256": "e4b31c0fa829088922b0883d6682ea5bb54c58dae760d4a67704817bdee4c5f8"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -454,6 +454,10 @@
     {
       "zh": "2026年10月16日，P120 连同 Ren 对 P118 读法的决定落地（研究第152、154节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（Ren 对 P118 读法的决定（§2 的 Loops 段）；P120：截断所失一对段落、§8 的相应行与 §9 的 Becoming.Remainder 一行；总数改据新回执）。",
       "en": "16 October 2026, landing P120 with Ren's P118 readings (study sections 152 and 154): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (Ren's decisions on P118's readings (the Loops paragraph of §2); P120: a paragraph pair on what a cut loses, the corresponding §8 lines and the §9 row of Becoming.Remainder; totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月16日，P121、P122 落地（研究第155、156节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P121、P122：§2 的两对段落、整体陈述的条目、§8 的进一步证明、§9 的两行与术语表；Loops 段中 P121、P122 回答的两项读法后各加一个注明日期的分句（读法不变）；总数改据新回执）。",
+      "en": "16 October 2026, landing P121 and P122 (study sections 155 and 156): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P121 and P122: two paragraph pairs in §2, items of the theory stated whole, §8's further proofs, two §9 rows and glossary rows; one dated clause after each of the two readings in the Loops paragraph that P121 and P122 answer (the readings unchanged); totals moved to the new receipt)."
     }
   ]
 }
