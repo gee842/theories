@@ -5314,6 +5314,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
 
+## what-a-finite-history-refutes ← becoming-finite-horizon
+
+`formal-reuse` — 复用 Becoming.Horizon 的 Run.AgreeUpTo：有限视界说没有有限前缀决定整段分类，本结果说有限前缀能否证什么。 / Reuses Becoming.Horizon's Run.AgreeUpTo: the finite horizon shows that no finite prefix decides the whole-run classification; this result says what a finite prefix can refute.
+
+**Producer output / 上游输出:** 到一界一致（Run.AgreeUpTo）。 / Agreement up to a horizon (Run.AgreeUpTo).
+
+**Consumer input / 下游输入:** 读法的可否证与附着都以它定义。 / Refutability and adherence of a reading are defined by it.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean)
+
 ## where-a-move-is-formed ← process-and-frame-as-readings
 
 `formal-reuse` — 复用 closedBy 与 Fork.label_couples：耦合的整体就是积的 closedBy，共享的动作是两方之间的关系。 / Reuses closedBy and Fork.label_couples: the coupled whole is the product's closedBy, and the shared move is the relation between the two sides.

@@ -236,6 +236,13 @@
         "zh": "回程等级与形成层面的周期读法由整段运行决定（Renewable.cycle_reading_not_finite），事件层面的周期读法由有限的历史决定；本结果约束后者。",
         "en": "Return grades and the formation-level cycle reading are fixed by the whole run (Renewable.cycle_reading_not_finite), the event-level cycle reading by a finite history; this result constrains the latter."
       }
+    },
+    {
+      "id": "what-a-finite-history-refutes",
+      "detail": {
+        "zh": "同一模块的另一半：有限前缀不决定整段分类；可由有限历史否证的读法在附着处于双重否定下成立，由测试构成的读法可否证恰是 Markov 原则。",
+        "en": "The other half of the module: no finite prefix decides the whole-run classification, while a reading finite histories refute holds, up to double negation, where a run adheres to it, and refutability of readings made of tests is exactly Markov's principle."
+      }
     }
   ],
   "references": [
@@ -251,7 +258,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "e208131f67c667fdb18d4662d620fcfc1441def73008a83e56e5b80173c8ac3c",
+      "sha256": "55bc0918d7108217177a406a495bed309e705d1025e22a064a7a524178680d82",
       "declarations": [
         "Becoming.Run.cons",
         "Becoming.Run.AgreeUpTo",
@@ -331,12 +338,17 @@
         "RelationalRenewal.Law.overdraw_consuming",
         "RelationalRenewal.Law.no_return_below_support"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T184418.886926Z/verification.json",
+      "role": "receipt",
+      "sha256": "eedff998ee3826ee2ca3992b48cc4a738fdaacac663cf6f52633914a7ef0fb1b"
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T184418.886926Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -729,6 +741,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-16，整合 I4b 第三项（Ren 选择“Closest gaps first”）：Horizon.lean 的文件说明加“有限历史所否证者”一段，其后加同名一节；本记录所引的声明不变。改用新哈希，Horizon 的证明绑定移到核心回执 20261015T184418.886926Z（Testing 的绑定不变）；关联新记录 what-a-finite-history-refutes。",
+      "en": "16 October 2026, integration I4b item 3 (Ren chose “Closest gaps first”): the docstring of Horizon.lean gains a paragraph on what a finite history refutes, and a section of that name follows; the declarations this record cites are unchanged. The reference takes the new hash, the Horizon proof binding moves to core receipt 20261015T184418.886926Z (the Testing binding is unchanged), and the new record what-a-finite-history-refutes is linked."
     }
   ],
   "text_versions": [

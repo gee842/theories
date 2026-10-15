@@ -38,6 +38,23 @@ the run goes, an account of its continuation, not only its past. In `Renewable` 
 dynamics are fixed by the actions, so what no prefix decides is the action still to be
 taken.
 
+**What a finite history refutes, for every process.** A reading of runs is refutable where
+every run outside it has a horizon beyond which no agreeing run is inside (`Refutable`), and a
+run adheres to a reading where every finite stretch of it is a stretch of a run inside
+(`Adheres`). With no premise:
+* a refutable reading holds, up to double negation, at every run adhering to it
+  (`Refutable.not_not`), and a refutable superset holds so at every run adhering to the subset
+  (`Refutable.adheres_least`); for a stable reading, adhering is holding (`Refutable.adheres_iff`);
+* a run adhering to a reading it lies outside shows the reading is not refutable
+  (`not_refutable_of_adheres`), and dually not verifiable (`not_verifiable_of_adheres`); in the
+  process whose runs are all sequences, recurrence and eventual occurrence are neither
+  (`Sequences.recurs_not_refutable`, `Sequences.eventually_not_refutable`);
+* a reading made of tests, each fixed by the history through its step, holds at every run
+  adhering to it (`adheres_passes`). It is refutable given Markov's principle
+  (`refutable_passes`), and asked of every process exactly then
+  (`refutable_passes_iff_markov`): what a refuting history must find is a failed test it is
+  only known not to miss.
+
 No ethical predicate, ranking or axiom occurs. Whether an actual history continues
 one way or the other is a question for inquiry into it.
 -/
@@ -238,5 +255,200 @@ theorem prefix_does_not_decide (h : Nat) :
      fun _ _ => Nat.lt_succ_self 1).1⟩
 
 end Feedback
+
+
+/-! ## What a finite history refutes -/
+
+theorem Run.AgreeUpTo.refl {P : Process S A} (r : Run P) (h : Nat) : r.AgreeUpTo h r :=
+  ⟨fun _ _ => rfl, fun _ _ => rfl⟩
+
+theorem Run.AgreeUpTo.symm {P : Process S A} {h : Nat} {r r' : Run P} (agree : r.AgreeUpTo h r') :
+    r'.AgreeUpTo h r :=
+  ⟨fun t upTo => (agree.1 t upTo).symm, fun t before => (agree.2 t before).symm⟩
+
+theorem Run.AgreeUpTo.trans {P : Process S A} {h : Nat} {r r' r'' : Run P}
+    (agree : r.AgreeUpTo h r') (agree' : r'.AgreeUpTo h r'') : r.AgreeUpTo h r'' :=
+  ⟨fun t upTo => (agree.1 t upTo).trans (agree'.1 t upTo),
+   fun t before => (agree.2 t before).trans (agree'.2 t before)⟩
+
+theorem Run.AgreeUpTo.mono {P : Process S A} {h h' : Nat} {r r' : Run P} (le : h' ≤ h)
+    (agree : r.AgreeUpTo h r') : r.AgreeUpTo h' r' :=
+  ⟨fun t upTo => agree.1 t (Nat.le_trans upTo le),
+   fun t before => agree.2 t (Nat.lt_of_lt_of_le before le)⟩
+
+/-- A reading of runs is refutable where every run outside it has a horizon beyond which no
+run agreeing with it up to there is inside. -/
+def Refutable {P : Process S A} (K : Run P → Prop) : Prop :=
+  ∀ r, ¬ K r → ∃ h, ∀ r', r.AgreeUpTo h r' → ¬ K r'
+
+/-- A reading of runs is verifiable where every run inside it has a horizon up to which every
+agreeing run is inside. -/
+def Verifiable {P : Process S A} (K : Run P → Prop) : Prop :=
+  ∀ r, K r → ∃ h, ∀ r', r.AgreeUpTo h r' → K r'
+
+/-- A run adheres to a reading where every finite stretch of it is a stretch of a run inside the
+reading. -/
+def Adheres {P : Process S A} (K : Run P → Prop) (r : Run P) : Prop :=
+  ∀ h, ∃ r', K r' ∧ r.AgreeUpTo h r'
+
+theorem Adheres.of {P : Process S A} {K : Run P → Prop} {r : Run P} (inside : K r) : Adheres K r :=
+  fun h => ⟨r, inside, .refl r h⟩
+
+theorem Adheres.mono {P : Process S A} {K L : Run P → Prop} {r : Run P} (sub : ∀ r, K r → L r)
+    (adheres : Adheres K r) : Adheres L r :=
+  fun h => match adheres h with
+    | ⟨r', inside, agree⟩ => ⟨r', sub r' inside, agree⟩
+
+/-- Adhering to what adheres is adhering. -/
+theorem Adheres.adheres {P : Process S A} {K : Run P → Prop} {r : Run P}
+    (adheres : Adheres (Adheres K) r) : Adheres K r :=
+  fun h => match adheres h with
+    | ⟨_, adheres', agree⟩ => match adheres' h with
+      | ⟨r'', inside, agree'⟩ => ⟨r'', inside, agree.trans agree'⟩
+
+/-- **A refutable reading holds, up to double negation, at every run adhering to it.** -/
+theorem Refutable.not_not {P : Process S A} {K : Run P → Prop} {r : Run P} (refutable : Refutable K)
+    (adheres : Adheres K r) : ¬ ¬ K r :=
+  fun outside => match refutable r outside with
+    | ⟨h, blocked⟩ => match adheres h with
+      | ⟨r', inside, agree⟩ => blocked r' agree inside
+
+/-- **The least refutable reading.** A refutable reading containing `K` holds, up to double
+negation, at every run adhering to `K`. -/
+theorem Refutable.adheres_least {P : Process S A} {K L : Run P → Prop} {r : Run P}
+    (refutable : Refutable L) (sub : ∀ r, K r → L r) (adheres : Adheres K r) : ¬ ¬ L r :=
+  refutable.not_not (adheres.mono sub)
+
+/-- **For a stable refutable reading, adhering is holding.** -/
+theorem Refutable.adheres_iff {P : Process S A} {K : Run P → Prop} {r : Run P}
+    (refutable : Refutable K) (stable : ∀ r, ¬ ¬ K r → K r) : Adheres K r ↔ K r :=
+  ⟨fun adheres => stable r (refutable.not_not adheres), Adheres.of⟩
+
+/-- **A run adhering to a reading it lies outside shows the reading is not refutable.** -/
+theorem not_refutable_of_adheres {P : Process S A} {K : Run P → Prop} {r : Run P}
+    (adheres : Adheres K r) (outside : ¬ K r) : ¬ Refutable K :=
+  fun refutable => refutable.not_not adheres outside
+
+/-- **A run inside a reading and adhering to its complement shows it is not verifiable.** -/
+theorem not_verifiable_of_adheres {P : Process S A} {K : Run P → Prop} {r : Run P}
+    (adheres : Adheres (fun r => ¬ K r) r) (inside : K r) : ¬ Verifiable K :=
+  fun verifiable => match verifiable r inside with
+    | ⟨h, all⟩ => match adheres h with
+      | ⟨r', outside, agree⟩ => outside (all r' agree)
+
+/-- The reading of passing every test: no test fails. -/
+def Passes {P : Process S A} (fails : Nat → Run P → Bool) (r : Run P) : Prop :=
+  ∀ n, fails n r = false
+
+/-- Each test is fixed by the history through its step. -/
+def ByPrefixes {P : Process S A} (fails : Nat → Run P → Bool) : Prop :=
+  ∀ n r r', r.AgreeUpTo (n + 1) r' → fails n r = fails n r'
+
+/-- **A run adhering to the reading of tests passes them.** -/
+theorem adheres_passes {P : Process S A} {fails : Nat → Run P → Bool} {r : Run P}
+    (byPrefixes : ByPrefixes fails) (adheres : Adheres (Passes fails) r) : Passes fails r :=
+  fun n => match adheres (n + 1) with
+    | ⟨r', passes, agree⟩ => (byPrefixes n r r' agree).trans (passes n)
+
+/-- Markov's principle: a sequence of Booleans that is not false throughout is true somewhere. -/
+def Markov : Prop :=
+  ∀ s : Nat → Bool, ¬ (∀ n, s n = false) → ∃ n, s n = true
+
+/-- **Given Markov's principle, the reading of tests is refutable.** -/
+theorem refutable_passes {P : Process S A} {fails : Nat → Run P → Bool} (markov : Markov)
+    (byPrefixes : ByPrefixes fails) : Refutable (Passes fails) :=
+  fun r outside => match markov (fun n => fails n r) outside with
+    | ⟨n, failed⟩ => ⟨n + 1, fun r' agree passes =>
+        nomatch failed.symm.trans ((byPrefixes n r r' agree).trans (passes n))⟩
+
+/-- A sequence of Booleans is false before `h`, or true somewhere. -/
+theorem false_below_or_true (s : Nat → Bool) : ∀ h, (∀ t, t < h → s t = false) ∨ ∃ t, s t = true
+  | 0 => .inl fun _ before => absurd before (Nat.not_lt_zero _)
+  | h + 1 =>
+    match false_below_or_true s h with
+    | .inr found => .inr found
+    | .inl below =>
+      match e : s h with
+      | true => .inr ⟨h, e⟩
+      | false => .inl fun t before =>
+        match Nat.lt_or_eq_of_le (Nat.le_of_lt_succ before) with
+        | .inl lt => below t lt
+        | .inr eq => eq ▸ e
+
+namespace Sequences
+
+/-- The process whose runs are all sequences of moves. -/
+def process (A : Type v) : Process Unit A := ⟨fun _ _ _ => True⟩
+
+/-- The run taking the moves `s`. -/
+def run {A : Type v} (s : Nat → A) : Run (process A) := ⟨fun _ => (), s, fun _ => trivial⟩
+
+/-- Runs of the sequences agree up to `h` exactly where their moves agree before `h`. -/
+theorem agree_iff {A : Type v} {h : Nat} {r r' : Run (process A)} :
+    r.AgreeUpTo h r' ↔ ∀ t, t < h → r.act t = r'.act t :=
+  ⟨fun agree => agree.2, fun acts => ⟨fun _ _ => rfl, acts⟩⟩
+
+/-- The run that takes `s` before `h` and `c` from `h` on. -/
+def splice {A : Type v} (s : Nat → A) (h : Nat) (c : A) : Run (process A) :=
+  run fun t => if t < h then s t else c
+
+theorem splice_agree {A : Type v} (s : Nat → A) (h : Nat) (c : A) :
+    (run s).AgreeUpTo h (splice s h c) :=
+  agree_iff.mpr fun _ before => (if_pos before).symm
+
+theorem splice_after {A : Type v} (s : Nat → A) {h t : Nat} (c : A) (after : h ≤ t) :
+    (splice s h c).act t = c :=
+  if_neg (Nat.not_lt_of_le after)
+
+/-- The moves recur: from every step on, some later move is `true`. -/
+def Recurs (r : Run (process Bool)) : Prop := ∀ n, ∃ m, n ≤ m ∧ r.act m = true
+
+/-- Some move is `true`. -/
+def Eventually (r : Run (process Bool)) : Prop := ∃ m, r.act m = true
+
+/-- **Recurrence is not refutable**: the run of `false` throughout adheres to it. -/
+theorem recurs_not_refutable : ¬ Refutable Recurs :=
+  not_refutable_of_adheres (r := run fun _ => false)
+    (fun h => ⟨splice (fun _ => false) h true,
+      fun n => ⟨n + h, Nat.le_add_right n h, splice_after _ true (Nat.le_add_left h n)⟩,
+      splice_agree _ h true⟩)
+    (fun recurs => match recurs 0 with
+      | ⟨_, _, atTrue⟩ => nomatch atTrue)
+
+/-- **Eventual occurrence is not refutable**: the run of `false` throughout adheres to it. -/
+theorem eventually_not_refutable : ¬ Refutable Eventually :=
+  not_refutable_of_adheres (r := run fun _ => false)
+    (fun h => ⟨splice (fun _ => false) h true, ⟨h, splice_after _ true (Nat.le_refl h)⟩,
+      splice_agree _ h true⟩)
+    (fun ⟨_, atTrue⟩ => nomatch atTrue)
+
+/-- **Never occurring is not verifiable**: the run of `false` throughout adheres to its
+complement. -/
+theorem never_not_verifiable : ¬ Verifiable (fun r : Run (process Bool) => ¬ Eventually r) :=
+  not_verifiable_of_adheres (r := run fun _ => false)
+    (fun h => ⟨splice (fun _ => false) h true, fun never =>
+      never ⟨h, splice_after _ true (Nat.le_refl h)⟩, splice_agree _ h true⟩)
+    (fun ⟨_, atTrue⟩ => nomatch atTrue)
+
+end Sequences
+
+/-- **Asked of every process, the reading of tests is refutable exactly under Markov's
+principle.** The witness: the sequences, the test at `n` failing where the move is `true`; a
+refuting horizon for a sequence not false throughout bounds a search for its `true`. -/
+theorem refutable_passes_iff_markov :
+    (∀ (S A : Type) (P : Process S A) (fails : Nat → Run P → Bool),
+      ByPrefixes fails → Refutable (Passes fails)) ↔ Markov :=
+  ⟨fun law s notFalse =>
+    match law Unit Bool (Sequences.process Bool) (fun n r => r.act n)
+        (fun n _ _ agree => agree.2 n (Nat.lt_succ_self n)) (Sequences.run s) notFalse with
+    | ⟨h, blocked⟩ =>
+      match false_below_or_true s h with
+      | .inr found => found
+      | .inl below => absurd (fun t =>
+          match Nat.lt_or_ge t h with
+          | .inl before => (if_pos before).trans (below t before)
+          | .inr after => Sequences.splice_after s false after)
+          (blocked (Sequences.splice s h false) (Sequences.splice_agree s h false)),
+   fun markov _ _ _ _ byPrefixes => refutable_passes markov byPrefixes⟩
 
 end Becoming

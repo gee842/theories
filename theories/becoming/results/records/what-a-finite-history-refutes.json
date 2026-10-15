@@ -1,0 +1,322 @@
+{
+  "schema_version": 2,
+  "id": "what-a-finite-history-refutes",
+  "title": {
+    "zh": "有限历史所否证者",
+    "en": "What a finite history refutes"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "对每个过程：有限历史可否证的读法，在每个附着于它的运行上于双重否定下成立；其外有附着运行的读法既不可否证也不可证实；由前缀测试构成的读法皆可否证，恰是 Markov 原则。",
+    "en": "For every process: a reading that finite histories refute holds, up to double negation, at every run adhering to it; a reading with an adhering run outside it is neither refutable nor verifiable; and refutability of every reading made of prefix tests is exactly Markov's principle."
+  },
+  "laws": [
+    {
+      "zh": "两个运行到一界一致，是自反、对称、传递的，界缩小仍一致。读法可否证：其外每个运行有一界，界内与它一致的运行都在读法之外；可证实对偶。运行附着于读法：每一界内它都与读法内某运行一致。读法内的运行附着于它，附着随读法扩大，附着于附着者即附着。",
+      "en": "Agreement of two runs up to a horizon is reflexive, symmetric and transitive, and holds at every smaller horizon. A reading is refutable where every run outside it has a horizon within which every agreeing run is outside; verifiable dually. A run adheres to a reading where at every horizon it agrees with a run inside. Runs inside adhere, adherence grows with the reading, and adhering to the adherent is adhering.",
+      "declarations": [
+        "Becoming.Run.AgreeUpTo.refl",
+        "Becoming.Run.AgreeUpTo.symm",
+        "Becoming.Run.AgreeUpTo.trans",
+        "Becoming.Run.AgreeUpTo.mono",
+        "Becoming.Refutable",
+        "Becoming.Verifiable",
+        "Becoming.Adheres",
+        "Becoming.Adheres.of",
+        "Becoming.Adheres.mono",
+        "Becoming.Adheres.adheres"
+      ]
+    },
+    {
+      "zh": "可否证的读法在每个附着于它的运行上于双重否定下成立；可否证的超集在附着于子集的运行上亦然；读法稳定（双重否定下成立即成立）时，附着即成立。",
+      "en": "A refutable reading holds, up to double negation, at every run adhering to it, and a refutable superset so holds at every run adhering to the subset; where the reading is stable (holding up to double negation is holding), adhering is holding.",
+      "declarations": [
+        "Becoming.Refutable.not_not",
+        "Becoming.Refutable.adheres_least",
+        "Becoming.Refutable.adheres_iff"
+      ]
+    },
+    {
+      "zh": "运行附着于读法而在其外，读法不可否证；附着于补集而在其内，读法不可证实。在所有序列构成的过程中，把序列在一界后接成常值，界内一致不变，故复现与终于发生皆不可否证，从不发生不可证实。",
+      "en": "A run adhering to a reading while outside it shows the reading is not refutable, and one adhering to the complement while inside shows it is not verifiable. In the process whose runs are all sequences, splicing a constant after a horizon keeps agreement within it, so recurrence and eventual occurrence are not refutable and never occurring is not verifiable.",
+      "declarations": [
+        "Becoming.not_refutable_of_adheres",
+        "Becoming.not_verifiable_of_adheres",
+        "Becoming.Sequences.process",
+        "Becoming.Sequences.run",
+        "Becoming.Sequences.agree_iff",
+        "Becoming.Sequences.splice",
+        "Becoming.Sequences.splice_agree",
+        "Becoming.Sequences.splice_after",
+        "Becoming.Sequences.Recurs",
+        "Becoming.Sequences.Eventually",
+        "Becoming.Sequences.recurs_not_refutable",
+        "Becoming.Sequences.eventually_not_refutable",
+        "Becoming.Sequences.never_not_verifiable"
+      ]
+    },
+    {
+      "zh": "由测试构成的读法：第 n 个测试是布尔值，由到第 n + 1 步的历史决定，读法即没有测试失败；它在每个附着于它的运行上成立。给定 Markov 原则（不全为假的布尔序列有真项），它可否证；布尔序列的每个有限前缀或全假或已见真项。",
+      "en": "A reading made of tests: the test at n is Boolean and fixed by the history through step n + 1, and the reading is that no test fails; it holds at every run adhering to it. Given Markov's principle (a Boolean sequence not all false has a true term) it is refutable; every finite prefix of a Boolean sequence is all false or shows a true term.",
+      "declarations": [
+        "Becoming.Passes",
+        "Becoming.ByPrefixes",
+        "Becoming.adheres_passes",
+        "Becoming.Markov",
+        "Becoming.refutable_passes",
+        "Becoming.false_below_or_true"
+      ]
+    },
+    {
+      "zh": "对每个过程都要求时，由测试构成的读法可否证恰是 Markov 原则（见证：所有布尔序列的过程，第 n 个测试读第 n 项）。",
+      "en": "Asked of every process, refutability of every reading made of tests is exactly Markov's principle (witness: the process of all Boolean sequences, the test at n reading term n).",
+      "declarations": [
+        "Becoming.refutable_passes_iff_markov"
+      ]
+    },
+    {
+      "zh": "实例（外围，自有检查器）：PrefixSafety 的迹是所有序列过程的运行，同前缀即到界一致，有限可否证即可否证，前缀闭包即附着；其经典定理由核心律加经典推理给出：闭包内即成立、闭包最小、复现与终止事件不可有限否证、前缀测试性质可有限否证。",
+      "en": "Instance (periphery, own checker): PrefixSafety's traces are the runs of the process of all sequences, a shared prefix is agreement up to a horizon, finite refutability is refutability and the prefix closure is adherence; its classical theorems follow from the core laws with classical reasoning: holding within the closure, the least closure, recurrence and termination not finitely refutable, prefix tests refutable.",
+      "declarations": [
+        "Becoming.PrefixSafetyCorrespondence.samePrefix_iff_agree",
+        "Becoming.PrefixSafetyCorrespondence.finiteRefutable_iff_refutable",
+        "Becoming.PrefixSafetyCorrespondence.prefixClosure_iff_adheres",
+        "Becoming.PrefixSafetyCorrespondence.holds_of_prefixClosure_by_core",
+        "Becoming.PrefixSafetyCorrespondence.prefixClosure_least_by_core",
+        "Becoming.PrefixSafetyCorrespondence.recurrence_not_finiteRefutable_by_core",
+        "Becoming.PrefixSafetyCorrespondence.terminationEvent_not_finiteRefutable_by_core",
+        "Becoming.PrefixSafetyCorrespondence.markov_classical",
+        "Becoming.PrefixSafetyCorrespondence.boundary_closed_by_core"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。过程、读法与运行任意；测试是布尔值（已定），由到其步的历史决定（ByPrefixes）；Markov 原则是 refutable_passes 的假设，稳定是 Refutable.adheres_iff 的假设。",
+      "en": "No axiom. The process, reading and run are arbitrary; tests are Boolean (decided) and fixed by the history through their step (ByPrefixes); Markov's principle is a hypothesis of refutable_passes, and stability one of Refutable.adheres_iff."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "哪些实际读法可否证：这取决于读它的过程；本律说可否证给出什么。",
+      "en": "Which actual readings are refutable: that depends on the process they are read on; the law says what refutability gives.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不用 Markov 原则时，由测试构成的读法可否证：对每个过程要求它恰是 Markov 原则。",
+      "en": "Refutability of readings made of tests without Markov's principle: asked of every process it is exactly Markov's principle.",
+      "kind": "non-implication",
+      "witness": "Becoming.refutable_passes_iff_markov"
+    },
+    {
+      "zh": "可否证的读法在附着处径直成立：这需要读法稳定，外围实例以经典推理供给。",
+      "en": "That a refutable reading holds outright at an adhering run: that needs the reading stable, which the periphery instance supplies by classical reasoning.",
+      "kind": "scope"
+    },
+    {
+      "zh": "PrefixSafety 的迹是实际历史的模型：迹是自然数上的函数。",
+      "en": "That PrefixSafety's traces model an actual history: traces are functions on the natural numbers.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Horizon 共 34 项定理，新增 33 项声明公理报告为空。外围实例 PrefixSafetyCorrespondence 由其检查器实查（Lean 4.30.0-rc2；五项对应公理报告为空，其余四项只用标准公理），PrefixSafety 与完成包回执一致。作者反审见研究 §145；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: Becoming.Horizon has 34 theorems, and the 33 new declarations have empty axiom reports. The periphery instance PrefixSafetyCorrespondence is checked by its own checker (Lean 4.30.0-rc2; five correspondences with empty axiom reports, the other four with standard axioms only), PrefixSafety matching the completion package receipt. Author counterreview in study section 145; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "独立审查；IdealWarrant 在偏序上的形式（一般数学线，暂留脊柱外）；其余最近的缺口（Lasting、Selection）。",
+    "en": "An independent review; IdealWarrant's order form on posets (the general mathematical line, outside the spine for now); the other closest gaps (Lasting, Selection)."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 PrefixSafety 读作待接入的律：Becoming.Horizon 陈述了有限前缀不决定什么，未陈述有限历史否证什么。本结果对每个过程陈述它，PrefixSafety 的前缀拓扑是所有序列过程的实例，其经典定理成为核心律加双重否定与 Markov 原则。IdealWarrant 在偏序上推广它，属 Ren 暂留脊柱外的一般数学线。读法（AI 的，待 Ren）：有限记录能显示的，是运行在可否证读法之外；运行在其内只是未被否证；由测试否证，须在只知并非全部通过时找到失败的测试。",
+    "en": "Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read PrefixSafety as a join candidate: Becoming.Horizon stated what no finite prefix decides, not what a finite history refutes. This result states it for every process, with PrefixSafety's prefix topology as the instance of the process of all sequences; its classical theorems become the core laws with double negation and Markov's principle. IdealWarrant generalizes it to posets and belongs to the general mathematical line Ren left outside the spine for now. Readings (the AI's, pending Ren): what a finite record can show is that a run lies outside a refutable reading; that a run lies inside is only not refuted; and refuting by tests means finding a failed test where it is only known that not all pass."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+  "aliases": [
+    "Becoming.Refutable",
+    "Becoming.Adheres",
+    "Becoming.refutable_passes_iff_markov",
+    "Becoming.Refutable.not_not",
+    "what a finite history refutes",
+    "有限历史所否证者",
+    "finite refutability",
+    "有限可否证",
+    "adherence",
+    "附着"
+  ],
+  "dependencies": [
+    {
+      "id": "becoming-finite-horizon",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Becoming.Horizon 的 Run.AgreeUpTo：有限视界说没有有限前缀决定整段分类，本结果说有限前缀能否证什么。",
+        "en": "Reuses Becoming.Horizon's Run.AgreeUpTo: the finite horizon shows that no finite prefix decides the whole-run classification; this result says what a finite prefix can refute."
+      },
+      "interface": {
+        "output": {
+          "zh": "到一界一致（Run.AgreeUpTo）。",
+          "en": "Agreement up to a horizon (Run.AgreeUpTo)."
+        },
+        "input": {
+          "zh": "读法的可否证与附着都以它定义。",
+          "en": "Refutability and adherence of a reading are defined by it."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean"
+      }
+    }
+  ],
+  "related": [],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+      "role": "proof",
+      "sha256": "55bc0918d7108217177a406a495bed309e705d1025e22a064a7a524178680d82",
+      "declarations": [
+        "Becoming.Run.AgreeUpTo.refl",
+        "Becoming.Run.AgreeUpTo.symm",
+        "Becoming.Run.AgreeUpTo.trans",
+        "Becoming.Run.AgreeUpTo.mono",
+        "Becoming.Refutable",
+        "Becoming.Verifiable",
+        "Becoming.Adheres",
+        "Becoming.Adheres.of",
+        "Becoming.Adheres.mono",
+        "Becoming.Adheres.adheres",
+        "Becoming.Refutable.not_not",
+        "Becoming.Refutable.adheres_least",
+        "Becoming.Refutable.adheres_iff",
+        "Becoming.not_refutable_of_adheres",
+        "Becoming.not_verifiable_of_adheres",
+        "Becoming.Passes",
+        "Becoming.ByPrefixes",
+        "Becoming.adheres_passes",
+        "Becoming.Markov",
+        "Becoming.refutable_passes",
+        "Becoming.false_below_or_true",
+        "Becoming.Sequences.process",
+        "Becoming.Sequences.run",
+        "Becoming.Sequences.agree_iff",
+        "Becoming.Sequences.splice",
+        "Becoming.Sequences.splice_agree",
+        "Becoming.Sequences.splice_after",
+        "Becoming.Sequences.Recurs",
+        "Becoming.Sequences.Eventually",
+        "Becoming.Sequences.recurs_not_refutable",
+        "Becoming.Sequences.eventually_not_refutable",
+        "Becoming.Sequences.never_not_verifiable",
+        "Becoming.refutable_passes_iff_markov"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean",
+      "role": "proof",
+      "sha256": "ee7bd2a3fd3fc3b9bdb6f9dc43ddfd45a3767123ff057d5cd1bd47097fc75a0f",
+      "declarations": [
+        "Becoming.PrefixSafetyCorrespondence.samePrefix_iff_agree",
+        "Becoming.PrefixSafetyCorrespondence.finiteRefutable_iff_refutable",
+        "Becoming.PrefixSafetyCorrespondence.prefixClosure_iff_adheres",
+        "Becoming.PrefixSafetyCorrespondence.holds_of_prefixClosure_by_core",
+        "Becoming.PrefixSafetyCorrespondence.prefixClosure_least_by_core",
+        "Becoming.PrefixSafetyCorrespondence.recurrence_not_finiteRefutable_by_core",
+        "Becoming.PrefixSafetyCorrespondence.terminationEvent_not_finiteRefutable_by_core",
+        "Becoming.PrefixSafetyCorrespondence.markov_classical",
+        "Becoming.PrefixSafetyCorrespondence.boundary_closed_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean",
+      "role": "proof",
+      "sha256": "828f59ccd66b2a8ffaaace509842701458b74fb701c20e631b68797195646f0c",
+      "declarations": [
+        "CompletionWarrant.PrefixSafety.FiniteRefutable",
+        "CompletionWarrant.PrefixSafety.PrefixClosure",
+        "CompletionWarrant.PrefixSafety.finiteRefutable_iff_prefixClosure",
+        "CompletionWarrant.PrefixSafety.prefixClosure_least",
+        "CompletionWarrant.PrefixSafety.boundary_closed",
+        "CompletionWarrant.PrefixSafety.recurrence_not_finiteRefutable",
+        "CompletionWarrant.PrefixSafety.terminationEvent_not_finiteRefutable"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T184418.886926Z/verification.json",
+      "role": "receipt",
+      "sha256": "eedff998ee3826ee2ca3992b48cc4a738fdaacac663cf6f52633914a7ef0fb1b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/prefix-safety-correspondence-checks/20261015T184605.889457Z/verification.json",
+      "role": "receipt",
+      "sha256": "e45c59e4981ea5c25e90a9f7039c5c775585a28699b68a91672d25b4ffc9652d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification.json",
+      "role": "receipt",
+      "sha256": "2b41c6771f3836ccb598e4c5e9acbc3a4e3a9ef5bf7fcea21dbb74f40bc33be4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "aad09764bdcdd9209154d546b95b7ecff5a518aecd54942cb5d827526f1650ea"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "7ff8bbccb9f842523feacc96127b38742525f80c9ef969b0f38538f6ab4ada91"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
+      "role": "provenance",
+      "sha256": "4e8c900528a2b4b7239e1930b84e80e457b2a29e61ef2b8c3c3f59b5c67ec699"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T184418.886926Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Horizon",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/prefix-safety-correspondence-checks/20261015T184605.889457Z/verification.json",
+      "sha256_pointer": "/source_sha256/PrefixSafetyCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/prefix-safety-correspondence-checks/20261015T184605.889457Z/verification.json",
+      "sha256_pointer": "/source_sha256/PrefixSafety",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，整合 I4b 第三项（Ren 选择“Closest gaps first”）；研究 §145。",
+      "en": "16 October 2026: added, integration I4b item 3 (Ren chose “Closest gaps first”); study section 145."
+    }
+  ],
+  "text_versions": []
+}

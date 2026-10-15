@@ -209,7 +209,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "604b84c78b76ed203ae2714ee826270b8079b8c6119ff0cc3d3c218482b9d19f"
+      "sha256": "7ff8bbccb9f842523feacc96127b38742525f80c9ef969b0f38538f6ab4ada91"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -250,6 +250,10 @@
     {
       "zh": "2026-10-16，P117 措辞更正：读过改动后重新哈希 BECOMING-RENEWAL-READING.md（只改第 144 节读法标题“待 Ren”为“Ren 同日已取”及其英文段的同一标题；本记录所引之处不变）。",
       "en": "16 October 2026, P117 wording fix: rehashed BECOMING-RENEWAL-READING.md after reading the change (only section 144's readings heading, “pending Ren” to “taken by Ren the same day”, and the same heading in its English paragraph; nothing this record cites changes)."
+    },
+    {
+      "zh": "2026年10月16日，I4b 第三项落地（研究第145节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第三项：§9 的 Becoming.Horizon 一行（12 → 34 项定理，改为双语）与外围实例 PrefixSafetyCorrespondence 一行，外围实例的列举加入它；总数改据新回执）。",
+      "en": "16 October 2026, landing I4b item 3 (study section 145): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 3: the §9 row of Becoming.Horizon (12 → 34 theorems, now bilingual) and a peripheral-instance row for PrefixSafetyCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt)."
     }
   ],
   "text_versions": []
