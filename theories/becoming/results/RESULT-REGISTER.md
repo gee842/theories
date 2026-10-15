@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-224 migrated records: 220 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+225 migrated records: 221 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -151,6 +151,7 @@
 | `necessarily-drawn-is-not-returning` | [可能与必然被吸入 / Possibly and necessarily drawn](records/necessarily-drawn-is-not-returning.md) | theorem | recorded-checked |
 | `no-finite-part-bears-taking` | [复现的取用打开有限家族 / Recurring taking opens finite families](records/no-finite-part-bears-taking.md) | theorem | recorded-checked |
 | `normal-forms-need-decided-apartness` | [有名交换的正规形恰需要段内不相连可判定 / Normal forms of named exchanges need exactly decided apartness on the stretch](records/normal-forms-need-decided-apartness.md) | theorem | recorded-checked |
+| `observation-is-a-route` | [观察是从所观察者出发的路线：差别只往下游去 / Observation is a route from what is observed: a difference goes only downstream](records/observation-is-a-route.md) | theorem | recorded-checked |
 | `one-axiom-yields-g0` | [一条公理推出 G0 / One axiom yields G0](records/one-axiom-yields-g0.md) | theorem | recorded-checked |
 | `one-step-missing-laws` | [所陈述的一步之律所遗漏的 / What the stated laws of one step miss](records/one-step-missing-laws.md) | theorem | recorded-checked |
 | `only-the-order-of-change-registers` | [只有变化的次序被登记 / Only the order of change registers](records/only-the-order-of-change-registers.md) | theorem | recorded-checked |

@@ -3598,6 +3598,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean)
 
+## observation-is-a-route ← how-much-difference-arrives
+
+`formal-reuse` — 复用 Conveyed、carried 与 carried_pos_iff：差被传到之处；RespondsWithin 与 exchangeGap：耦合强度。 / Reuses Conveyed, carried and carried_pos_iff: where a gap is conveyed; RespondsWithin and exchangeGap: coupling strength.
+
+**Producer output / 上游输出:** 差被传到之处；所携带的量；耦合强度。 / Where a gap is conveyed; the carried amount; coupling strengths.
+
+**Consumer input / 下游输入:** 差只往下游去；所携带的量在别处为零；未读入的水平强度为零。 / A gap goes only downstream; the carried amount zero elsewhere; strength zero on levels unread.
+
+**Retained conditions / 保留条件:** 起始之差只在储量上，部分不给差。 / The starting gap at the stock alone, none from the part.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean)
+
+## observation-is-a-route ← how-a-carried-difference-grows
+
+`formal-reuse` — 复用 Couples、Coupled、OnLoop 与 Upstream：下游即路线。 / Reuses Couples, Coupled, OnLoop and Upstream: downstream is a route.
+
+**Producer output / 上游输出:** 耦合、链、回路、上游。 / Couplings, chains, loops, upstream.
+
+**Consumer input / 下游输入:** 差所到之处在下游；所识者在下游。 / Where a difference arrives lies downstream; what is registered lies downstream.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean)
+
+## observation-is-a-route ← how-loops-form
+
+`formal-reuse` — 复用 strengthsBefore、couples_before_*、Closing.split 与 onLoop_of_closing：路线由闭合而形成。 / Reuses strengthsBefore, couples_before_*, Closing.split and onLoop_of_closing: a route forms by closing.
+
+**Producer output / 上游输出:** 到某步形成的耦合；链的分裂；闭合的回路。 / Couplings formed by a step; splitting a chain; closing a loop.
+
+**Consumer input / 下游输入:** 路线由闭合而形成；量度见证中的回路。 / A route forms by closing; the loop in the measurement witness.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean)
+
+## observation-is-a-route ← loops-within-what-a-law-reads
+
+`formal-reuse` — 复用 ReadsAt、Through.readsAt、held_while 与 same_step：读一个时程是读入每个条件的特例；见证的进程。 / Reuses ReadsAt, Through.readsAt, held_while and same_step: reading a schedule is the case of reading into each condition alike; the witness courses.
+
+**Producer output / 上游输出:** 读一个时程的律；保持直到读。 / Laws reading a schedule; holding until read.
+
+**Consumer input / 下游输入:** 读入每个条件；经识而读者的所识在下游。 / Reading into each condition; what a law reading through registration registers lies downstream.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean)
+
+## observation-is-a-route ← counterfactual-is-the-course
+
+`formal-reuse` — 复用 ExchangeLaw、Through、Follows 与 ActsAlike：律与两个进程的比较。 / Reuses ExchangeLaw, Through, Follows and ActsAlike: the law and the comparison of two courses.
+
+**Producer output / 上游输出:** 交换之律；经识而读；进程遵从律。 / Laws of exchange; reading through registration; courses following a law.
+
+**Consumer input / 下游输入:** 只在下游不同。 / Apart only downstream.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
 ## one-axiom-yields-g0 ← metaethical-core-characterization
 
 `formal-reuse` — 复用 Valuation、Significant、SelfGood、Seed、transmits、shares、Neutral、Within、G0、Extension 与 Comparison；原刻画保持其范围。P44 另复用 SecuresPositiveGround、articulates、PositionedArticulation 与 universal_reason 的论证，给出读在活的内容上的 A 与不用连通的普遍理由。 / Reuses Valuation, Significant, SelfGood, Seed, transmits, shares, Neutral, Within, G0, Extension and Comparison; the earlier characterization keeps its scope. P44 also reuses SecuresPositiveGround, articulates, PositionedArticulation and the argument of universal_reason, giving A read on living content and the universal reason with no connection.

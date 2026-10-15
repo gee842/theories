@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-224 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+225 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -147,6 +147,7 @@
 | [可能与必然被吸入 / Possibly and necessarily drawn](../results/records/necessarily-drawn-is-not-returning.md) | recorded-checked | [Branching.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean) |
 | [复现的取用打开有限家族 / Recurring taking opens finite families](../results/records/no-finite-part-bears-taking.md) | recorded-checked | [Dissipation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean) |
 | [有名交换的正规形恰需要段内不相连可判定 / Normal forms of named exchanges need exactly decided apartness on the stretch](../results/records/normal-forms-need-decided-apartness.md) | recorded-checked | [OrderNormal.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean) |
+| [观察是从所观察者出发的路线：差别只往下游去 / Observation is a route from what is observed: a difference goes only downstream](../results/records/observation-is-a-route.md) | recorded-checked | [Observation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean) |
 | [一条公理推出 G0 / One axiom yields G0](../results/records/one-axiom-yields-g0.md) | recorded-checked | [Significance.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean) |
 | [所陈述的一步之律所遗漏的 / What the stated laws of one step miss](../results/records/one-step-missing-laws.md) | recorded-checked | [OneStep.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean) |
 | [只有变化的次序被登记 / Only the order of change registers](../results/records/only-the-order-of-change-registers.md) | recorded-checked | [Order.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean) |

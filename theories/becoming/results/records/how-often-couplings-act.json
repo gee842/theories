@@ -673,7 +673,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "4da62bc1852edddccc5c4761fe25ece2d93c2ddc94c6c6627c462a2434cf0dcb"
+      "sha256": "5f7296d40a7d810e0b3e1596f3cf6247feb99f37c69fcecb3f7d81d93cccbc89"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -780,6 +780,10 @@
     {
       "zh": "2026-10-16：新增，回答 what-a-cut-loses 的 next_delta 前两项（每个时程是否安定及其确切强度；复现耦合的回路是否都使之失控、多快）（P123）；研究 §158。",
       "en": "16 October 2026: added, answering the first two items of what-a-cut-loses' next_delta (whether every schedule settles and the exact strength of that claim; whether every loop of recurring couplings makes the difference run away, and how fast) (P123); study section 158."
+    },
+    {
+      "zh": "2026年10月16日，P125（Becoming.Observation，研究第159节）落地，并带 Ren 对 P124 读法的同意：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（加入第159节（Becoming.Observation）及英文段；第157节加 Ren 的决定一段；此前各节其余不变）。",
+      "en": "16 October 2026, landing P125 (Becoming.Observation, study section 159) with Ren's agreement with P124's readings: rebound to the new receipt and rehashed: BECOMING-RENEWAL-READING.md (section 159 (Becoming.Observation) and its English paragraph added; section 157 gains a paragraph on Ren's decision; earlier sections otherwise unchanged)."
     }
   ],
   "text_versions": []

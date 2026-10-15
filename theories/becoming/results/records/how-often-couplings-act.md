@@ -110,6 +110,7 @@ Aliases / 别名: `how often couplings act`, `耦合多常作用`, `frequency of
 ### History / 沿革
 
 - 2026-10-16：新增，回答 what-a-cut-loses 的 next_delta 前两项（每个时程是否安定及其确切强度；复现耦合的回路是否都使之失控、多快）（P123）；研究 §158。 / 16 October 2026: added, answering the first two items of what-a-cut-loses' next_delta (whether every schedule settles and the exact strength of that claim; whether every loop of recurring couplings makes the difference run away, and how fast) (P123); study section 158.
+- 2026年10月16日，P125（Becoming.Observation，研究第159节）落地，并带 Ren 对 P124 读法的同意：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（加入第159节（Becoming.Observation）及英文段；第157节加 Ren 的决定一段；此前各节其余不变）。 / 16 October 2026, landing P125 (Becoming.Observation, study section 159) with Ren's agreement with P124's readings: rebound to the new receipt and rehashed: BECOMING-RENEWAL-READING.md (section 159 (Becoming.Observation) and its English paragraph added; section 157 gains a paragraph on Ren's decision; earlier sections otherwise unchanged).
 
 </details>
 
