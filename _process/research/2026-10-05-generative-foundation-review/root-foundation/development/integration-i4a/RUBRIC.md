@@ -4,7 +4,7 @@ Ren, 15 October 2026, chose “Draft the table first” for I4 ([source](../../.
 
 ## Population
 
-Every tracked live Lean module outside the spine run, one row per file stem (594 stems: 555 with a live path, 39 only in snapshot folders). `inventory.py`, `connect.py` and `similar.py` compute these signals:
+Every tracked Lean module whose full module name the spine run does not compile, one row per file stem (598 stems on core receipt 20261015T164401.170999Z: 558 with a live path, 40 only in snapshot folders). `inventory.py`, `connect.py` and `similar.py` compute these signals:
 - the run modules each module reaches through imports (core and bridge, inherited, or the foundation only);
 - the records citing the module;
 - its importers;
@@ -41,7 +41,7 @@ One JSON object per line:
 
 ```json
 {"stem": "…", "path": "…", "category": "…", "spine": ["Becoming.Module.decl", "…"], "relation": "same | spine-generalizes | instance | ",
- "basis": "statements read | header read", "reason_en": "≤ 40 words", "reason_zh": "≤ 60 字"}
+ "basis": "statements read | header read", "reason_en": "≤ 60 words", "reason_zh": "≤ 75 个汉字"}
 ```
 
 **Writing.**
@@ -49,3 +49,16 @@ One JSON object per line:
 - Do not use market words (budget, price, cost, pay, credit, profit, …) except as a module's own identifier in backticks.
 - Do not quote or attribute anything to Ren.
 - Write reasons as readings ("states …", "is a constructed …"), not verdicts on worth.
+
+## Reproducing the table
+
+From the repository root, with `DIR` any scratch folder:
+
+```sh
+python3 -B …/integration-i4a/inventory.py DIR/modules.json
+python3 -B …/integration-i4a/connect.py DIR
+python3 -B …/integration-i4a/similar.py DIR
+python3 -B …/integration-i4a/table.py DIR --write
+```
+
+`table.py` checks every row and renders `MODULE-CLASSIFICATION.md`. A new spine receipt can add or remove stems; `table.py` then reports the stems without a row, and those rows are read and added before rendering. `themes.json` groups the join candidates (an AI grouping); every join candidate needs exactly one theme.

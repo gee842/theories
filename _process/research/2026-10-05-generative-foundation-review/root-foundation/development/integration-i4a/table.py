@@ -6,7 +6,7 @@ rows/*.jsonl beside this script. Checks every row against RUBRIC.md: every stem 
 basis, `statements read` for an earlier version or a join candidate, reasons within length, and no market word
 outside backticks. Prints the counts as JSON. With --write, renders MODULE-CLASSIFICATION.md in the study folder:
 - the counts;
-- the earlier versions and join candidates (what Ren decides on);
+- the earlier versions, and the join candidates grouped by the themes in themes.json (what Ren decides on);
 - every module by family.
 """
 import collections
@@ -16,6 +16,7 @@ import sys
 from pathlib import Path
 
 KIT = Path(__file__).resolve().parent
+THEMES = json.loads((KIT / 'themes.json').read_text())['themes']
 STUDY_DIR = KIT.parents[1]
 OUT = STUDY_DIR / 'MODULE-CLASSIFICATION.md'
 # The P3 classification of the ethics modules (9 October), for the modules it shares with this table.
@@ -80,6 +81,10 @@ def load(directory):
                     problems.append(f'{where}: {key} missing or {size} long')
                 if MARKET.search(re.sub(r'`[^`]*`', '', text)):
                     problems.append(f'{where}: market word in {key}')
+    themed = collections.Counter(x for t in THEMES.values() for x in t['stems'])
+    for k, r in rows.items():
+        if (r.get('category') == 'join-candidate') != (themed[k] == 1):
+            problems.append(f'{k}: {r.get("category")} with {themed[k]} themes')
     missing = sorted(set(signals) - set(rows))
     return signals, rows, problems, missing
 
@@ -113,14 +118,22 @@ def render(signals, rows):
               '|---|' + '---:|' * len(CATEGORIES)]
     for k, (zh, en) in REACH.items():
         lines.append(f'| {zh} / {en} | ' + ' | '.join(str(by_reach[(k, c)]) for c in CATEGORIES) + ' |')
-    for c in ('earlier-version', 'join-candidate'):
-        zh, en = CATEGORIES[c]
-        picked = [(s, r) for s, r in merged if r['category'] == c]
-        lines += ['', f'## {zh} / {en} ({len(picked)})', '',
-                  '| 模块 / Module | 脊柱 / Spine | 关系 / Relation | 理由 / Reason |', '|---|---|---|---|']
+    def decision_table(picked):
+        out = ['| 模块 / Module | 脊柱 / Spine | 关系 / Relation | 理由 / Reason |', '|---|---|---|---|']
         for s, r in picked:
-            lines.append(f'| [{s["stem"]}]({UP}{r["path"]}) | ' + ', '.join(f'`{x}`' for x in r.get('spine', [])) +
-                         f' | {r.get("relation") or "—"} | {cell(r["reason_zh"])} / {cell(r["reason_en"])} |')
+            out.append(f'| [{s["stem"]}]({UP}{r["path"]}) | ' + ', '.join(f'`{x}`' for x in r.get('spine', [])) +
+                       f' | {r.get("relation") or "—"} | {cell(r["reason_zh"])} / {cell(r["reason_en"])} |')
+        return out
+    zh, en = CATEGORIES['earlier-version']
+    picked = [(s, r) for s, r in merged if r['category'] == 'earlier-version']
+    lines += ['', f'## {zh} / {en} ({len(picked)})', ''] + decision_table(picked)
+    zh, en = CATEGORIES['join-candidate']
+    picked = [(s, r) for s, r in merged if r['category'] == 'join-candidate']
+    lines += ['', f'## {zh} / {en} ({len(picked)})', '',
+              '按主题分组（AI 的分组，见 `development/integration-i4a/themes.json`）。 / Grouped by theme (an AI grouping, in `development/integration-i4a/themes.json`).']
+    for t in THEMES.values():
+        group = [(s, r) for s, r in picked if s['stem'] in t['stems']]
+        lines += ['', f'### {t["zh"]} / {t["en"]} ({len(group)})', ''] + decision_table(group)
     shared = sorted(k for k in p3 if k in rows)
     lines += ['', '## 与 P3 分类的对照 / Against the P3 classification', '',
               f'[P3 的分类](BECOMING-INSTANCE-CLASSIFICATION.md)（10 月 9 日）归类了 46 个含类型多态定理的伦理模块；其中 {len(shared)} 个在脊柱运行之外，见于本表，逐行标出其 P3 类别。P3 的“已在核心上”指陈述直接写在基础的 `Process`／`Trace` 上，不指某条脊柱律陈述了它；本表给这些模块补上所及的脊柱声明。',

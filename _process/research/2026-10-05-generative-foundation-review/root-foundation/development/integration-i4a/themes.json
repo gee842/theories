@@ -1,0 +1,117 @@
+{
+ "_note": "I4a: the theme of each join candidate, for grouping the decision table (an AI grouping).",
+ "themes": {
+  "renewal": {
+   "zh": "更新与闭合",
+   "en": "Renewal and closure",
+   "stems": [
+    "RenewalAccounting",
+    "RenewalCharacterization",
+    "RenewalClosure",
+    "RenewalConfigurations",
+    "RenewalLink",
+    "RenewalSufficiency",
+    "ResourceContinuation",
+    "SupportNecessity"
+   ]
+  },
+  "comparison": {
+   "zh": "比较、组合与描述",
+   "en": "Comparison, composition and description",
+   "stems": [
+    "CoupledOccurrence",
+    "EmbeddedEvaluation",
+    "ExplanatoryComposition",
+    "ExplanatoryHistoryInterfaces",
+    "ExplanatoryRecovery",
+    "FormationSymmetry",
+    "GeneratedContraction",
+    "RelationalContinuation",
+    "RelationalFormation",
+    "SystemIndividuation"
+   ]
+  },
+  "inquiry": {
+   "zh": "探究与判断",
+   "en": "Inquiry and judgment",
+   "stems": [
+    "InquiryAdequacy",
+    "AttainableQuestions",
+    "ReachedInquiryComposition",
+    "SituatedPractice",
+    "SelectorReviewCoverage",
+    "PurposeCorrection",
+    "PremiseNecessity",
+    "WholePracticalRestriction",
+    "CorrectionRelations"
+   ]
+  },
+  "control": {
+   "zh": "控制、学习与估值",
+   "en": "Control, learning and valuation",
+   "stems": [
+    "ControlledRefinement",
+    "ControllerRevision",
+    "ProtocolComposition",
+    "ProtocolCompletion",
+    "ClosedLoopValuation",
+    "ExplorationCoverage",
+    "ValuationBridges",
+    "ValuationDevelopment",
+    "RelationsAcrossScales"
+   ]
+  },
+  "reach": {
+   "zh": "所及、持续与有限否证",
+   "en": "Reach, persistence and finite refutation",
+   "stems": [
+    "EnactedOrientation",
+    "RegeneratingPersistence",
+    "LivingOrganization",
+    "FiniteBranching",
+    "PrefixSafety",
+    "IdealWarrant",
+    "ContinuationScope"
+   ]
+  },
+  "symmetry": {
+   "zh": "对称与并列",
+   "en": "Symmetry and ties",
+   "stems": [
+    "PluralRecords",
+    "TieBreaking"
+   ]
+  },
+  "mathematics": {
+   "zh": "一般数学：完备、容许与真",
+   "en": "General mathematics: completion, admission and truth",
+   "stems": [
+    "Admission",
+    "FunctionGraphs",
+    "IndexedAssembly",
+    "FiniteAdmission",
+    "SignatureTruth",
+    "DependentCompletion",
+    "FamilyAdmission",
+    "EqualityGenerativity",
+    "WitnessHull",
+    "SecondOrder",
+    "TypedTruth",
+    "InductiveDomain",
+    "Initiality",
+    "DenseOrder",
+    "PotentialTruth",
+    "CompletionRole",
+    "HistoryIdeals"
+   ]
+  },
+  "derivation": {
+   "zh": "推导演算",
+   "en": "Derivation calculus",
+   "stems": [
+    "CoreTreeRearticulation",
+    "WholeTheoryDischarge"
+   ]
+  }
+ }
+}
