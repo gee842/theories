@@ -125,6 +125,13 @@ FORMS = {
                                   'nothing）；`Law.sameFuture_iff_below`（2N − 1，无前提 / no premise）',
     'Identification.sameAhead_iff_classes': '`Identification.sameAhead_iff_within`（N − 1，无前提，判定位置 / no premise, '
                                             'positions decided）；`Identification.sameAhead_iff_below`（2N − 1，无前提 / no premise）',
+    # 2026-10-15, P113 the least registration with any number of conditions (Becoming.Sensitivity)
+    'alike_of_sensitive_agree_within': '`ExchangeLaw.ReadsFinitely.nonanticipating` 与 `ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P113）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
+    'ExchangeLaw.ReadsFinitely.through_of_observed': '`ExchangeLaw.ReadsFinitely.nonanticipating` 与 `ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P113）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
+    'ExchangeLaw.ReadsFinitely.through_sensitive': '`ExchangeLaw.ReadsFinitely.nonanticipating` 与 `ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P113）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
+    'ExchangeLaw.ReadsFinitely.least_registration': '`ExchangeLaw.ReadsFinitely.nonanticipating` 与 `ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P113）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
+    'ExchangeLaw.Nonanticipating.through_sensitive_of_every': '`ExchangeLaw.ReadsFinitely.nonanticipating` 与 `ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P113）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
+    'comparison_through_sensitivity_of_readsFinitely': '`comparison_of_courses`（经律所经的识，不判定 / through a registration the law reads through, no decision, P113）',
 }
 
 # Why a statement depends on decidedness: the decidability-taking definitions it mentions (Lean's `ment` column).
@@ -159,6 +166,9 @@ CONSTRUCTIONS = {
     # 2026-10-15, integration I3d: the judge of a listed family answers with the first listed member of each reduced
     # value
     'Readout.firstJudge': 'first',
+    # 2026-10-15, P113 the least registration with any number of conditions (Becoming.Sensitivity): the tail law
+    # exchanges the indicator of whether levels vanish from some condition on, given its decision
+    'vanishIndicator': 'indicate', 'tailLaw': 'indicate',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -310,6 +320,15 @@ PROOF_KIND = {
     # the member bettering one lacking the determination, and the determination is read off its refuted failure
     **{n: 'find' for n in ['exists_undominated', 'bettered_of_undominated_has', 'undominated_has_iff']},
     **{n: 'split' for n in ['Decided.weakly', 'undominated_has']},
+    # 2026-10-15, P113 the least registration with any number of conditions (Becoming.Sensitivity): one history is
+    # mixed into another condition by condition, as in Becoming.Counterfactual; the decision of vanishing gives LPO
+    # by both its cases
+    **{n: 'same' for n in [
+        'alike_of_sensitive_agree_within', 'ExchangeLaw.ReadsFinitely.through_of_observed',
+        'ExchangeLaw.ReadsFinitely.through_sensitive', 'ExchangeLaw.ReadsFinitely.least_registration',
+        'ExchangeLaw.Nonanticipating.through_sensitive_of_every', 'comparison_through_sensitivity_of_readsFinitely',
+        'alike_of_insensitiveAt_within', 'ExchangeLaw.ReadsFinitely.alike_of_insensitive']},
+    'lpo_of_vanish_decided': 'split',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
