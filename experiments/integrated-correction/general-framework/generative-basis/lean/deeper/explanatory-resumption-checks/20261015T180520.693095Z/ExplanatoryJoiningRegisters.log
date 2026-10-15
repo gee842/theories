@@ -1,0 +1,15 @@
+'Generative.ExplanatoryJoiningRegisters.finite_outcomes_image_finite' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJoiningRegisters.retained_pair_result_matches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryJoiningRegisters.step_retains_configuration' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRegisters.trace_retains_configuration' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRegisters.trace_length' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRegisters.retained_history_matches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryJoiningRegisters.singleton_self_question' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRegisters.retained_question_corrects_coarse_failure' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRegisters.coarse_failure_not_related' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRegisters.idle_self_question' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningRegisters.every_exact_account_retains_real_difference' depends on axioms: [propext]

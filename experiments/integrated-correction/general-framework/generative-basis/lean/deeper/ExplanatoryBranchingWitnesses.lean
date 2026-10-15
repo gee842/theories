@@ -1,4 +1,4 @@
-import ExplanatoryBranching
+import ExplanatoryBranching -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Histories.Choosing.sameTests`, `Becoming.Histories.Choosing.not_alike`, `Becoming.Likeness.Choosing.branching_apart` — 同一陈述 / the same statement; MODULE-CLASSIFICATION.md
 
 /-! Independent finite continuation/capacity questions witness why word lists
 lose branch correlations. Forward questions also have a checked history limit.

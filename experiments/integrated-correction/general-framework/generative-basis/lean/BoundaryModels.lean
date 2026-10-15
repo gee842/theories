@@ -1,4 +1,4 @@
-import Std
+import Std -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Readout.no_judge_of_merged`, `Becoming.Pair.own_not_joint` — 是其实例 / an instance of it; MODULE-CLASSIFICATION.md
 
 /-!
 # Finite boundary models for the generative candidate

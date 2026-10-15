@@ -1,4 +1,4 @@
-import GenerativeCore
+import GenerativeCore -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Stock.trace_falls`, `Becoming.Run.renewal_recurs`, `ContinuationRenewal.renewal_within_rank_plus_one_steps` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 import ContinuationRenewal
 
 /-!

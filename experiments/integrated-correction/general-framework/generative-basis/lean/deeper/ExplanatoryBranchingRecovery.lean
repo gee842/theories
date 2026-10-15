@@ -1,4 +1,4 @@
-import ExplanatoryBranching
+import ExplanatoryBranching -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Unfolding.identifiesAlike_iff`, `Becoming.Bridge.same_iff_alike_of_imageFinite` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-! Derive a branch-faithful code law from accurate reduced finite-test answers.
 Every coded history lifts from each compatible native representative. This is

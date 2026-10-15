@@ -1,4 +1,4 @@
-import ExplanatoryResiduals
+import ExplanatoryResiduals -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Midway.formation_changes_guard`, `Becoming.Midway.testing_before_formation_changes_results`, `Becoming.Midway.same_start_distinct_remainders` — 同一陈述 / the same statement; MODULE-CLASSIFICATION.md
 import ExplanatoryGranularityBoundary
 
 /-! All witnesses reuse the preceding single connected unfolding. The branch

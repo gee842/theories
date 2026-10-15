@@ -1,4 +1,4 @@
-import ClosedLoopValuation
+import ClosedLoopValuation -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Gated.kept_along`, `Becoming.Assurance.trace_ofPartial_iff` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 import FormationClosure
 
 /-!

@@ -1,4 +1,4 @@
-import Std
+import Std -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Stock.covered_iff_prefix`, `Becoming.Stock.covered_append`, `Becoming.Stock.repeat_covered_iff` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-!
 Pathwise stock requirements and repeated renewal under an explicit block contract.

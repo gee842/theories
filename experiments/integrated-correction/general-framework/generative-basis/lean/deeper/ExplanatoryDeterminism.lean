@@ -1,4 +1,4 @@
-import ExplanatoryUniversality
+import ExplanatoryUniversality -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Histories.alike_iff_sameTests`, `Becoming.Histories.Determined.alike_iff_sameTests`, `Becoming.Likeness.Alike.functional` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-! A repair, explicitly conditional on deterministic total realization,
 reachability and separation by all finite marked continuations. The state spaces

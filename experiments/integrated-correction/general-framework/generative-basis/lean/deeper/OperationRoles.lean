@@ -1,4 +1,4 @@
-import RelationalCoordinates
+import RelationalCoordinates -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Readout.decodes_iff_of_section`, `Becoming.Readout.lumped_of_decodes` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-!
 # Distinctions derived from an operation, with representation covariance

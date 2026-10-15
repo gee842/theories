@@ -1,4 +1,4 @@
-import Std
+import Std -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.falls_not_recurring`, `Becoming.Stock.trace_falls`, `Becoming.Readout.decoder_pair_iff` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-!
 Conditional structural results for WHITEPAPER-v0.4.

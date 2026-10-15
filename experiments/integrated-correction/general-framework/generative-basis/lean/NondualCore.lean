@@ -1,4 +1,4 @@
-import GenerativeCore
+import GenerativeCore -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Bisimulation.trace`, `Becoming.Readout.reading_single_iff` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-!
 The existing Generative.Process is already free of primitive actor/patient

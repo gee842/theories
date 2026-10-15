@@ -1,4 +1,4 @@
-import Std
+import Std -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Diagonal.fixed_of_complete`, `Becoming.Diagonal.claims_incomplete` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-!
 Checked limits on one fixed self-indexed representation family.

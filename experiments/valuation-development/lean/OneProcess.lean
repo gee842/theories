@@ -1,4 +1,4 @@
-/-
+/- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.closedBy_determined`, `Becoming.closedBy_runs_agree`, `Becoming.adaptive_determined` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
   One process: the study's splits as cuts of a single unfolding.
 
   7 October 2026. AI-authored formal companion to §19 of

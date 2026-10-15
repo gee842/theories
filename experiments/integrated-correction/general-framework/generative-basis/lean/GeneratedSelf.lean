@@ -1,4 +1,4 @@
-import HistoryRealization
+import HistoryRealization -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Readout.reading_single_iff`, `Becoming.Readout.futures_through_iff` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 import DynamicConsequences
 
 /-!

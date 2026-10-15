@@ -1,4 +1,4 @@
-import RevisingPort
+import RevisingPort -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Gated.change_located` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-!
 # Activity and formation as a relation, not two kinds of event

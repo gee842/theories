@@ -103,7 +103,11 @@
     "PotentialTruth",
     "CompletionRole",
     "HistoryIdeals"
-   ]
+   ],
+   "scope": {
+    "zh": "暂留脊柱之外（Ren，10 月 16 日）",
+    "en": "outside the spine for now (Ren, 16 October)"
+   }
   },
   "derivation": {
    "zh": "推导演算",
@@ -111,7 +115,11 @@
    "stems": [
     "CoreTreeRearticulation",
     "WholeTheoryDischarge"
-   ]
+   ],
+   "scope": {
+    "zh": "暂留脊柱之外（Ren，10 月 16 日）",
+    "en": "outside the spine for now (Ren, 16 October)"
+   }
   }
  }
 }
