@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-219 migrated records: 215 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+220 migrated records: 216 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -225,6 +225,7 @@
 | `universal-practical-warrant` | [普遍实践权威的更强目标 / Stronger universal practical warrant target](records/universal-practical-warrant.md) | target | open |
 | `versioned-request-completion` | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](records/versioned-request-completion.md) | theorem | recorded-checked |
 | `weights-count-situations` | [权重计数情境 / Weights count situations](records/weights-count-situations.md) | theorem | recorded-checked |
+| `what-a-cut-loses` | [截断所失：任意耦合时程 / What a cut loses, for every schedule of couplings](records/what-a-cut-loses.md) | theorem | recorded-checked |
 | `what-a-finite-history-refutes` | [有限历史所否证者 / What a finite history refutes](records/what-a-finite-history-refutes.md) | theorem | recorded-checked |
 | `where-a-move-is-formed` | [动作在哪里形成 / Where a move is formed](records/where-a-move-is-formed.md) | theorem | recorded-checked |
 | `where-novelty-gain-comes-from` | [新的增益从哪里来 / Where novelty's gain comes from](records/where-novelty-gain-comes-from.md) | theorem | recorded-checked |

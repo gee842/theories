@@ -5398,6 +5398,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
 
+## what-a-cut-loses ← how-a-carried-difference-grows
+
+`formal-reuse` — 复用各阶（carriedFrom、carriedWithin、orderBelow）、耦合的链与回路（Couples、CoupledInto、OnLoop、Upstream、loop_of_coupledInto）、各阶的界（carriedWithin_le_withinBound、carried_le_carriedWithin_add）、自环与 Loops.Once。 / Reuses the orders (carriedFrom, carriedWithin, orderBelow), the chains and loops of couplings (Couples, CoupledInto, OnLoop, Upstream, loop_of_coupledInto), the bounds on the orders (carriedWithin_le_withinBound, carried_le_carriedWithin_add), the self-loop and Loops.Once.
+
+**Producer output / 上游输出:** 各阶及其界；耦合的链与回路；比条件数长的链经过回路；自环与耦合一次的回路。 / The orders and their bounds; the chains and loops of couplings; a chain longer than the conditions passing a loop; the self-loop and the loop coupled once.
+
+**Consumer input / 下游输入:** 精确余项；按时间次序的链；复现的耦合与安定的时程；Becoming.Loops 的精确性结果作为实例。 / The exact remainder; the chains in time order; recurring couplings and settled schedules; the exactness results of Becoming.Loops as instances.
+
+**Retained conditions / 保留条件:** 耦合强度是给出的界；条件的列表任意。 / The coupling strengths as supplied bounds; any list of conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean)
+
+## what-a-cut-loses ← how-much-difference-arrives
+
+`formal-reuse` — 复用 carried、carriedGive、Conveyed、carried_pos_iff、most_difference_arrives 与 gap：精确余项展开所携带的量，对一切律的陈述经 most_difference_arrives 得出。 / Reuses carried, carriedGive, Conveyed, carried_pos_iff, most_difference_arrives and gap: the exact remainder expands the carried amount, and the statement for every law follows through most_difference_arrives.
+
+**Producer output / 上游输出:** 所携带的量及其一步；它为正恰在差别按时间传到处；它是能到达的最大差别。 / The carried amount and its step; it is positive exactly where a gap is conveyed in time; it is the most difference that can arrive.
+
+**Consumer input / 下游输入:** 所失的位置；对一切律的当且仅当。 / Where a cut loses; the equivalence for every law.
+
+**Retained conditions / 保留条件:** 对一切律时条件各列一次，条件的相等可判定只在证明中。 / For every law, each condition listed once, with decided equality of conditions only in proofs.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean)
+
+## what-a-cut-loses ← recurrence-without-premise
+
+`formal-reuse` — 复用 revisits_within、gap_of_le 与 gap_of_lt：每个耦合读一个列出的条件，比列表长一的链两次经过同一个条件。 / Reuses revisits_within, gap_of_le and gap_of_lt: each coupling reads a listed condition, so a chain one longer than the list passes some condition twice.
+
+**Producer output / 上游输出:** 列表所持的序列在列表长度之内重访。 / A sequence held by a list revisits within the length of the list.
+
+**Consumer input / 下游输入:** 比列表长一的耦合链经过回路，不需列出每个条件。 / A chain of couplings one longer than the list passes a loop, with no listing of every condition.
+
+**Retained conditions / 保留条件:** 序列的项都在列表中：每个耦合读一个列出的条件。 / The terms of the sequence are listed: each coupling reads a listed condition.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
 ## what-a-finite-history-refutes ← becoming-finite-horizon
 
 `formal-reuse` — 复用 Becoming.Horizon 的 Run.AgreeUpTo：有限视界说没有有限前缀决定整段分类，本结果说有限前缀能否证什么。 / Reuses Becoming.Horizon's Run.AgreeUpTo: the finite horizon shows that no finite prefix decides the whole-run classification; this result says what a finite prefix can refute.

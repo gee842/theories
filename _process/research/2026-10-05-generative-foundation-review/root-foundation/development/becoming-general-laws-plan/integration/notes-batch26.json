@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean": {
+   "zh": "Ren 2026-10-16 对 P118 读法的决定写入文档注释（只改注释）：第一项取 AI 的措辞，第二项 Ren 称对，第三项以细化的形式暂取、待回路形成的定理",
+   "en": "Ren's decisions of 16 October 2026 on P118's readings written into the docstring (comments only): the first in the AI's wording, the second called right, the third taken in refined form pending a loop-formation theorem"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "P120：导入 Becoming.Remainder，加一条 L4 模块条目",
+   "en": "P120: imports Becoming.Remainder, with an L4 module bullet"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "P120：一行 L4（Remainder）与层内导入",
+   "en": "P120: an L4 row (Remainder) and the within-layer imports"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "P120：Becoming.Remainder 加入核心列表与范围说明",
+   "en": "P120: Becoming.Remainder added to the core list and the scope paragraphs"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "Ren 对 P118 读法的决定（§2 的 Loops 段）；P120：截断所失一对段落、§8 的相应行与 §9 的 Becoming.Remainder 一行；总数改据新回执",
+   "en": "Ren's decisions on P118's readings (the Loops paragraph of §2); P120: a paragraph pair on what a cut loses, the corresponding §8 lines and the §9 row of Becoming.Remainder; totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "第152节加 Ren 对 P118 读法的决定；新增第154节（P120：截断所失，Becoming.Remainder）及其英文段；此前各节其余不变",
+   "en": "section 152 gains Ren's decisions on P118's readings; section 154 (P120: what a cut loses, Becoming.Remainder) with its English paragraph; earlier sections otherwise unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "P120：Remainder 的一项只在证明中用到的定理归入“分辨相同”",
+   "en": "P120: Remainder's one proof-only theorem classified as telling same from different"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T204116.215501Z 上重新生成，含 P120 的分类：只在证明中用到 237 → 238，其余各类不变",
+   "en": "regenerated on receipt 20261015T204116.215501Z with P120's classification: used only in proofs 237 → 238, the other classes unchanged"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing P120 with Ren's P118 readings (study sections 152 and 154): rebound to the new receipt and rehashed: ",
+  "zh": "2026年10月16日，P120 连同 Ren 对 P118 读法的决定落地（研究第152、154节）：改绑新回执并更新哈希："
+ }
+}

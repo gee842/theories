@@ -196,8 +196,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Remainder 的 66 项声明（58 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §154；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 66 declarations of Becoming.Remainder, 58 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 154; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T204116.215501Z）：Becoming.Remainder 的 66 项声明（58 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §154；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T204116.215501Z): the 66 declarations of Becoming.Remainder, 58 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 154; not independently reviewed."
   },
   "next_delta": {
     "zh": "每个耦合时程是否终将安定（其确切强度）；复现耦合的回路是否都使最大差别失控、多快（谱半径）；实数的量、连续时间与无穷多条件；把截断所失与历史之和的损失连起来；独立审查；Ren 对读法的判断。",
@@ -514,9 +514,79 @@
       "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
       "role": "provenance",
       "sha256": "cf83ac3219b39f47641327d95eb072286d6bd0b21452ab9351642abd895879bc"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "role": "receipt",
+      "sha256": "495b00720b220aa147c4ab65879ae6a4e63a8c4e4aad7e83d025d0d6bb455e54",
+      "declarations": []
     }
   ],
-  "proof_bindings": [],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Remainder",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Loops",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Propagation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Population",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
   "history": [
     {
       "zh": "2026-10-16：新增，回答 how-a-carried-difference-grows 的 next_delta 首项“时有时无的耦合上的回路”（P120）；研究 §154。",

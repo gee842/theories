@@ -355,7 +355,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
       "role": "proof",
-      "sha256": "8aaaa55f099f4c1742a6664c8b6da7fc3ea457a9cdba8a55c81fd24b9660df44",
+      "sha256": "778d3763de5a77a54f13a24e1eddda05c8f76e197ab1bd0b442cb895b2ef2c8c",
       "declarations": [
         "Becoming.Loops.zero_or_pos",
         "Becoming.Loops.ble_succ_self",
@@ -597,7 +597,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "5128477c864466a6fd63593f36e0f77f33a4c389bb48cfda3be784c862bfb405"
+      "sha256": "e470fed95b5054ef55453fb5aad3639de75732abab8ccd6d3cb8df6fbbe4b999"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -619,12 +619,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
       "role": "provenance",
       "sha256": "cf83ac3219b39f47641327d95eb072286d6bd0b21452ab9351642abd895879bc"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "role": "receipt",
+      "sha256": "495b00720b220aa147c4ab65879ae6a4e63a8c4e4aad7e83d025d0d6bb455e54",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T195010.513125Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Loops",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -702,6 +708,10 @@
     {
       "zh": "2026-10-16 P120（截断所失，研究 §154）：回答下一步首项“时有时无的耦合上的回路”，就精确性而言对每个耦合时程，就增长而言在一个方向：能到达的最大差别快于每个多项式，只经由继续着的耦合的回路（carried_le_polynomial_from）；是否经由每个这样的回路、多快，由新记录的下一步承接，所以删去此项；related 加 what-a-cut-loses。陈述与证明不变；does_not_show 仍对本记录的定理成立；correspondence 保持 Ren 所决定的读法。",
       "en": "16 October 2026, P120 (what a cut loses, study section 154): answers the first item of the next step, loops whose couplings come and go, for exactness for every schedule of couplings, and for growth in one direction: the most difference that can arrive outgrows every polynomial only through a loop of the couplings that go on (carried_le_polynomial_from); whether through every such loop, and how fast, the new record's next step carries on, so the item is removed; related adds what-a-cut-loses. Statement and proofs unchanged; does_not_show still holds of this record's theorems; correspondence keeps the readings Ren decided."
+    },
+    {
+      "zh": "2026年10月16日，P120 连同 Ren 对 P118 读法的决定落地（研究第152、154节）：改绑新回执并更新哈希：Loops.lean（Ren 2026-10-16 对 P118 读法的决定写入文档注释（只改注释）：第一项取 AI 的措辞，第二项 Ren 称对，第三项以细化的形式暂取、待回路形成的定理）；THE-THEORY-OF-BECOMING.md（Ren 对 P118 读法的决定（§2 的 Loops 段）；P120：截断所失一对段落、§8 的相应行与 §9 的 Becoming.Remainder 一行；总数改据新回执）。",
+      "en": "16 October 2026, landing P120 with Ren's P118 readings (study sections 152 and 154): rebound to the new receipt and rehashed: Loops.lean (Ren's decisions of 16 October 2026 on P118's readings written into the docstring (comments only): the first in the AI's wording, the second called right, the third taken in refined form pending a loop-formation theorem); THE-THEORY-OF-BECOMING.md (Ren's decisions on P118's readings (the Loops paragraph of §2); P120: a paragraph pair on what a cut loses, the corresponding §8 lines and the §9 row of Becoming.Remainder; totals moved to the new receipt)."
     }
   ],
   "text_versions": []

@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-219 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+220 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -221,6 +221,7 @@
 | [普遍实践权威的更强目标 / Stronger universal practical warrant target](theories/becoming/results/records/universal-practical-warrant.md) | open | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) |
 | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](theories/becoming/results/records/versioned-request-completion.md) | recorded-checked | [CorrectionVersioned.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean) |
 | [权重计数情境 / Weights count situations](theories/becoming/results/records/weights-count-situations.md) | recorded-checked | [Situations.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean) |
+| [截断所失：任意耦合时程 / What a cut loses, for every schedule of couplings](theories/becoming/results/records/what-a-cut-loses.md) | recorded-checked | [Remainder.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean) |
 | [有限历史所否证者 / What a finite history refutes](theories/becoming/results/records/what-a-finite-history-refutes.md) | recorded-checked | [Horizon.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean) |
 | [动作在哪里形成 / Where a move is formed](theories/becoming/results/records/where-a-move-is-formed.md) | recorded-checked | [Coupling.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean) |
 | [新的增益从哪里来 / Where novelty's gain comes from](theories/becoming/results/records/where-novelty-gain-comes-from.md) | recorded-checked | [Gain.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean) |
