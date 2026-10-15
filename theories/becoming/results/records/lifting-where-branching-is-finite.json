@@ -298,7 +298,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "298a63579cbff61bb54d03f1a471b28078435c54e1a8ef8fe2b5a52c4f22e469"
+      "sha256": "35f9576e1a104cc88a0f1e7bc4daa6dea1da4e8f5d94c513064603c1ffe9f3ee"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -399,6 +399,10 @@
     {
       "zh": "2026-10-16 P127（运行在何处延续，研究 §161）：下一步“不用选取时的运行（依赖选择的边界）”由 where-a-run-goes-on 回答：有限多配置之内不需选取，测试认出移动处经搜索，对每个过程要求它恰是依赖选择；所以删去此项，下一步只余独立审查；related 加 where-a-run-goes-on。陈述、证明与 does_not_show 不变：仍对本记录的定理成立。",
       "en": "16 October 2026, P127 (where a run goes on, study section 161): the next step, a run without a selection (the boundary of dependent choice), is answered by where-a-run-goes-on: within finitely many configurations no selection is needed, where a test recognizes the moves a run is built by search, and asked of every process it is exactly dependent choice; so the item is removed, leaving an independent review; related adds where-a-run-goes-on. Statement, proofs and does_not_show unchanged: they still hold of this record's theorems."
+    },
+    {
+      "zh": "2026年10月16日，P127（Becoming.Onward，研究第161节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§1 加入运行在何处继续一段，§8 随之，§9 加一行与术语；回执与合计改据新运行（7089 项定理、9753 项声明审计，核心闭包 126 个模块，包 131 个））。",
+      "en": "16 October 2026, landing P127 (Becoming.Onward, study section 161): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§1 gains the paragraph on where a run goes on, with §8, and §9 gains a row and glossary entries; receipt and totals moved to the new run (7089 theorems, 9753 declaration audits, core closure 126 modules, package 131))."
     }
   ],
   "text_versions": []

@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean": {
+   "zh": "新核心模块（P127：运行在何处继续；28 项定理、40 项声明），本回执首次检查",
+   "en": "new core module (P127: where a run goes on; 28 theorems, 40 declarations), first checked by this receipt"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "根模块加入 Becoming.Onward 的导入与条目",
+   "en": "the root gains the import and bullet for Becoming.Onward"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "核心列表加入 Onward，范围同步",
+   "en": "the core list gains Onward, with its scope"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "L4 加入 Onward 一行及其层内导入",
+   "en": "L4 gains the Onward row and its within-layer imports"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "§1 加入运行在何处继续一段，§8 随之，§9 加一行与术语；回执与合计改据新运行（7089 项定理、9753 项声明审计，核心闭包 126 个模块，包 131 个）",
+   "en": "§1 gains the paragraph on where a run goes on, with §8, and §9 gains a row and glossary entries; receipt and totals moved to the new run (7089 theorems, 9753 declaration audits, core closure 126 modules, package 131)"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "加入第161节（Becoming.Onward）及英文段；此前各节不变",
+   "en": "section 161 (Becoming.Onward) and its English paragraph added; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "加入 Onward.decidedTest（造出指示）一行与 run_decided（结果）一行",
+   "en": "gains the rows Onward.decidedTest (builds an indicator) and run_decided (a result)"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T231055.702986Z 上重新生成：陈述依赖 435 → 436、证明可判定 145 → 146、取可判定族的定义 116 → 117，新增各行来自 Onward",
+   "en": "regenerated on receipt 20261015T231055.702986Z: statements depending 435 → 436, proving decidedness 145 → 146, definitions taking a family 116 → 117, every new row from Onward"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing P127 (Becoming.Onward, study section 161): rebound to the new receipt and rehashed: ",
+  "zh": "2026年10月16日，P127（Becoming.Onward，研究第161节）落地：改绑新回执并更新哈希："
+ }
+}

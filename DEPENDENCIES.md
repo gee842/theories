@@ -5842,6 +5842,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
 
+## where-a-run-goes-on ← returning-where-the-course-branches
+
+`formal-reuse` — 复用返回（Returns）、不合并（Lossless）、返回者的运行（Returns.run）与沿运行的定律（Lossless.returns、Lossless.no_rise）：本结果给出运行，使这些定律不给定运行而成立。 / Reuses returning (Returns), merging nothing (Lossless), the run of what returns (Returns.run) and the laws along runs (Lossless.returns, Lossless.no_rise): this result supplies the run, so the laws hold with no run given.
+
+**Producer output / 上游输出:** 返回；不合并；返回者绕返回而行的运行；不合并时沿运行返回、不上升。 / Returning; merging nothing; a run going round a return; returning and no rise along runs where nothing merges.
+
+**Consumer input / 下游输入:** 运行恰是通向返回的路径；沿运行的定律不给定运行。 / A run as a course into a return; the laws along runs with no run given.
+
+**Retained conditions / 保留条件:** 列出全部配置的列表。 / A list holding every configuration.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean)
+
+## where-a-run-goes-on ← lifting-where-branching-is-finite
+
+`formal-reuse` — 复用路径（Continues）与其深度之判定、无界（Unbounded）、有限分支、选取给出运行（runOf）与扇（Fan）。 / Reuses courses (Continues) and the decision of their depth, unboundedness (Unbounded), finite branching, a selection giving a run (runOf) and the fan (Fan).
+
+**Producer output / 上游输出:** n 步的路径；后继列出时其深度已定；选取给出运行；扇的根无界而无无界后继。 / Courses of n steps; their depth decided where successors are listed; a selection giving a run; the fan's root unbounded with no unbounded successor.
+
+**Consumer input / 下游输入:** 运行与路径的当且仅当；运行是否开始已定；搜索的运行；扇没有运行。 / The equivalences of runs and courses; whether a run starts, decided; the searched run; the fan has no run.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean)
+
+## where-a-run-goes-on ← identification-where-runs-part
+
+`formal-reuse` — 复用路径按位置（path_of_continues）与布尔的合取（and_both、and_of）。 / Reuses courses by position (path_of_continues) and Boolean conjunction (and_both, and_of).
+
+**Producer output / 上游输出:** n 步的路径按位置列出。 / A course of n steps listed by position.
+
+**Consumer input / 下游输入:** 与列表一样长的路径通向返回者。 / A course as long as the list leading to a return.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean)
+
+## where-a-run-goes-on ← recurrence-without-premise
+
+`formal-reuse` — 复用列表中的重复（revisits_within）与间隔（gap_of_lt）：与列表一样长的路径重复一个配置。 / Reuses repetition within a list (revisits_within) and gaps (gap_of_lt): a course as long as the list repeats a configuration.
+
+**Producer output / 上游输出:** 列表持有的序列在列表长度之内重复。 / A sequence a list holds repeats within the list's length.
+
+**Consumer input / 下游输入:** 路径重复一个配置，被重复者返回。 / A course repeats a configuration, which returns.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
 ## where-novelty-gain-comes-from ← returning-novelty-forgetting-on-levels
 
 `formal-reuse` — 复用 Web.exceeds_of_new、upto_or_fails、Web.revisits_of_bounded、Flow.uncarried_of_bounded、Web.counting 与 Web.counting_new：新的家族超出界，有界的家族回返而不承载历史。 / Reuses Web.exceeds_of_new, upto_or_fails, Web.revisits_of_bounded, Flow.uncarried_of_bounded, Web.counting and Web.counting_new: a new family exceeds its bound, and a bounded family returns and does not carry its history.

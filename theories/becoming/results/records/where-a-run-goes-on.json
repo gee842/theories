@@ -139,8 +139,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Onward 的 40 项声明（28 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §161；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 40 declarations of Becoming.Onward, 28 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 161; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T231055.702986Z）：Becoming.Onward 的 40 项声明（28 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §161；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T231055.702986Z): the 40 declarations of Becoming.Onward, 28 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 161; not independently reviewed."
   },
   "next_delta": {
     "zh": "不列出配置时沿运行的定律（例如以测试与枚举陈述）；在界内被吸入；独立审查；Ren 对读法的判断。",
@@ -424,9 +424,72 @@
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
       "role": "provenance",
       "sha256": "9a9b77159f5aae64310d30cbd3d48a380777613cc3852e517f1a32524dbcc61c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "role": "receipt",
+      "sha256": "4b3efdcf1d56bdde149704676f173ce1f9abcef66debdd25a4b3e8b708ec1387",
+      "declarations": []
     }
   ],
-  "proof_bindings": [],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Onward",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Branching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lasting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Parting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Horizon",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Decidedness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
   "history": [
     {
       "zh": "2026-10-16：新增，回答 returning-where-the-course-branches 的 next_delta 与 lifting-where-branching-is-finite 的 next_delta 第二项（P127）；研究 §161。",

@@ -39,7 +39,7 @@ Canonical source: [Lasting.lean](../../../../experiments/integrated-correction/g
 
 ## Next / 下一步
 
-An independent review; a run without a selection (the boundary of dependent choice).<br>独立审查；不用选取时的运行（依赖选择的边界）。
+An independent review.<br>独立审查。
 
 <details><summary>Correspondence, dependencies, sources and history / 对应、依赖、来源与沿革</summary>
 
@@ -54,6 +54,7 @@ Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification ta
   - Input / 输入: 无界后继由列表形式给出；边界的见证是两条链的分叉。 / The unbounded successor comes from the list form; the boundary's witness is the fork of the two chains.
   - Preserved conditions / 保留条件: 族已定且递减。 / The families decided and decreasing. [Likeness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean)
 - related, not a proved adapter / 关联而非已证转换: [market-supported-finite-transition](market-supported-finite-transition.md). 其 kernel_iff_lasts 是对偶：无进程离开者恰是持续每个步数者，不需有限分支或原则。 / Its kernel_iff_lasts is the dual: what no course leaves is what lasts every horizon, with no finite branching or principle needed.
+- related, not a proved adapter / 关联而非已证转换: [where-a-run-goes-on](where-a-run-goes-on.md). 回答其下一步“不用选取时的运行”：有限多配置之内，每个长度的路径都开始处有运行，不需选取也不需 EitherThroughout；测试认出移动处运行经搜索造出；对每个过程要求从每个保持运动的族的每个成员出发的运行，恰是依赖选择。 / Answers its next step, a run without a selection: within finitely many configurations a run starts wherever courses of every length do, with no selection and no EitherThroughout; where a test recognizes the moves a run is built by search; asked of every process, a run from every member of every family that keeps moving is exactly dependent choice.
 
 ### Sources / 来源
 
@@ -90,6 +91,8 @@ Aliases / 别名: `Becoming.Lasting.lifting`, `Becoming.Lasting.step_iff_either`
 - 2026年10月16日，P123（Becoming.Frequency，研究第158节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入耦合多常作用一段，“截断所失”一段加注明日期的括注，第一部分完整陈述加一项，§8 的状态行与进一步证明，§9 加一行与三条术语；回执与合计改据新运行（6995 项定理、9628 项声明审计，核心闭包 123 个模块，包 128 个））。 / 16 October 2026, landing P123 (Becoming.Frequency, study section 158): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on how often couplings act and a dated parenthetical in “What a cut loses”, Part I stated whole gains an item, §8's status row and further proofs, §9 gains a row and three glossary rows; receipt and totals moved to the new run (6995 theorems, 9628 declaration audits, core closure 123 modules, package 128)).
 - 2026年10月16日，P125（Becoming.Observation，研究第159节）落地，并带 Ren 对 P124 读法的同意：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入观察一段，P124 一段写明 Ren 同意两项读法，§8 与 §9、术语随之；回执与合计改据新运行（7022 项定理、9660 项声明审计，核心闭包 124 个模块，包 129 个））。 / 16 October 2026, landing P125 (Becoming.Observation, study section 159) with Ren's agreement with P124's readings: rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on observation and the P124 paragraph records Ren's agreement with both readings, with §8, §9 and the glossary; receipt and totals moved to the new run (7022 theorems, 9660 declaration audits, core closure 124 modules, package 129)).
 - 2026年10月16日，P126（Becoming.Tail，研究第160节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入整体而无部分之律一段，§8 的反馈与所及（反例存在的确切强度已给出），§9 加一行与术语；回执与合计改据新运行（7061 项定理、9713 项声明审计，核心闭包 125 个模块，包 130 个））。 / 16 October 2026, landing P126 (Becoming.Tail, study section 160): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on a law of the whole and no part, §8 under feedback and reach (the exact strength of a counterexample's existence is given), §9 gains a row and glossary entries; receipt and totals moved to the new run (7061 theorems, 9713 declaration audits, core closure 125 modules, package 130)).
+- 2026-10-16 P127（运行在何处延续，研究 §161）：下一步“不用选取时的运行（依赖选择的边界）”由 where-a-run-goes-on 回答：有限多配置之内不需选取，测试认出移动处经搜索，对每个过程要求它恰是依赖选择；所以删去此项，下一步只余独立审查；related 加 where-a-run-goes-on。陈述、证明与 does_not_show 不变：仍对本记录的定理成立。 / 16 October 2026, P127 (where a run goes on, study section 161): the next step, a run without a selection (the boundary of dependent choice), is answered by where-a-run-goes-on: within finitely many configurations no selection is needed, where a test recognizes the moves a run is built by search, and asked of every process it is exactly dependent choice; so the item is removed, leaving an independent review; related adds where-a-run-goes-on. Statement, proofs and does_not_show unchanged: they still hold of this record's theorems.
+- 2026年10月16日，P127（Becoming.Onward，研究第161节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§1 加入运行在何处继续一段，§8 随之，§9 加一行与术语；回执与合计改据新运行（7089 项定理、9753 项声明审计，核心闭包 126 个模块，包 131 个））。 / 16 October 2026, landing P127 (Becoming.Onward, study section 161): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§1 gains the paragraph on where a run goes on, with §8, and §9 gains a row and glossary entries; receipt and totals moved to the new run (7089 theorems, 9753 declaration audits, core closure 126 modules, package 131)).
 
 </details>
 

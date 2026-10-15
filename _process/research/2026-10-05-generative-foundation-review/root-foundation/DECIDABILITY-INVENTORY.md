@@ -1,20 +1,20 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261015T224751.654308Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261015T231055.702986Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261015T224751.654308Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261015T231055.702986Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
-| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 435 |
+| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 436 |
 | 只在证明中用到 / used only in proofs | 241 |
 | 不用到 / unused | 0 |
 | 排中律或其受限形式作为假设（边界定理）/ excluded middle, in full or restricted form, as a hypothesis (boundary theorems) | 33 |
 | 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 94 |
-| 证明可判定的定义与实例 / definitions and instances proving decidedness | 145 |
-| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 116 |
+| 证明可判定的定义与实例 / definitions and instances proving decidedness | 146 |
+| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 117 |
 
 ## 理由 / Reasons
 
@@ -35,7 +35,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 交换两个值 / exchanging two values | 交换两个值：需分辨输入是否为其中任一值 / exchanging two values: decides whether the input is either of the exchanged values | 40 |
 | 列表成员判定 / list membership | 列表成员的布尔判定：需逐项分辨值的相同 / boolean list membership: tells values apart at each listed member | 1 |
 | 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 187 |
-| 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 49 |
+| 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 50 |
 | 分情形 / splits on a case | 按规定分情形：证明分别用规定成立与不成立的情形 / splits on a determination: the proof uses both its holding and failing cases | 33 |
 | 守护之步 / a guarded step | 守护之步：每步判定守护是否成立，不成立处停止 / a guarded step: decides the guard at each step and stops where it fails | 10 |
 | 可达 / reached | 可达：证明以已定的步与所识的值造出被给予世界的学习者 / reached: the proof builds the learner given the world from decided steps and registered values | 11 |
@@ -210,6 +210,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | LossMatching | `Frame.mem_lostOf` | `(c : C) → Decidable (F.realized s c)` | 保留的列表 / a kept list | 可判定是它自己的条件 / its own condition |
 | LossMatching | `Frame.strictLossMatch_iff_counts` | `DecidableEq C`；`DecidableEq K` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | LossMatching | `Frame.strictLossMatch_of_counts` | `DecidableEq C`；`DecidableEq K` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Onward | `Onward.decidedTest_finds` | `(s : S) → (a : A) → (t : S) → Decidable (P.step s a t)`；`(s : S) → Decidable (K s)` | 造出指示 / builds an indicator | 可判定是它自己的条件 / its own condition |
 | Order | `Flow.sample_idle_balancesOn` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
 | Order | `Flow.sample_idle_closedAt` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
 | Order | `Flow.sample_idle_dissipatesOn` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
@@ -853,6 +854,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | LossMatching | `Frame.classCount` | `DecidableEq K` |
 | LossMatching | `Frame.lostOf` | `(c : C) → Decidable (F.realized s c)` |
 | LossMatching | `LossMatching.decideDistinct` | `DecidableEq α` |
+| Onward | `Onward.decidedTest` | `(s : S) → (a : A) → (t : S) → Decidable (P.step s a t)`；`(s : S) → Decidable (K s)` |
 | Order | `Web.commuteDecided` | `(n : Nat) → (f : F) → Decidable (W.active n f)` |
 | OrderNormal | `Footprinted.inList` | `DecidableEq X` |
 | Parting | `Parting.advance` | `(x : S) → (a : A) → (y : S) → Decidable (P.step x a y)` |

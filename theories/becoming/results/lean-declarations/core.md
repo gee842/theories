@@ -1063,7 +1063,7 @@ Imports: `GenerativeCore`
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean`
 
-Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Recurrence`, `Becoming.Diagonal`, `Becoming.Context`, `Becoming.Quantum`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Experiment`, `Becoming.Mechanism`, `Becoming.Unfolding`, `Becoming.Histories`, `Becoming.Branching`, `Becoming.Listing`, `Becoming.Order`, `Becoming.OrderNormal`, `Becoming.OneStep`, `Becoming.Weighted`, `Becoming.Transmission`, `Becoming.Succession`, `Becoming.Attraction`, `Becoming.Substitution`, `Becoming.Generation`, `Becoming.Flow`, `Becoming.Stock`, `Becoming.Change`, `Becoming.Population`, `Becoming.Identity`, `Becoming.Persistence`, `Becoming.Wholes`, `Becoming.Dissipation`, `Becoming.Locality`, `Becoming.Seeking`, `Becoming.Roles`, `Becoming.Reserve`, `Becoming.Evolution`, `Becoming.Capture`, `Becoming.Space`, `Becoming.Premises`, `Becoming.Sampling`, `Becoming.Tower`, `Becoming.Openness`, `Becoming.Decidedness`, `Becoming.Refinement`, `Becoming.Counting`, `Becoming.Standing`, `Becoming.Resolution`, `Becoming.Entropy`, `Becoming.Units`, `Becoming.Imbalance`, `Becoming.Continuation`, `Becoming.Admission`, `Becoming.Regions`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.LossMatching`, `Becoming.Correspondence`, `Becoming.Descent`, `Becoming.Standpoints`, `Becoming.Significance`, `Becoming.Interdependence`, `Becoming.Feeding`, `Becoming.Feedback`, `Becoming.Boundaries`, `Becoming.Relevance`, `Becoming.Testing`, `Becoming.Runaway`, `Becoming.Response`, `Becoming.TimedResponse`, `Becoming.Counterfactual`, `Becoming.Regrouping`, `Becoming.Selection`, `Becoming.Learning`, `Becoming.Revision`, `Becoming.Contacts`, `Becoming.RegroupingSelection`, `Becoming.ReferencePlan`, `Becoming.ContinuingRevision`, `Becoming.Description`, `Becoming.Identification`, `Becoming.Learnable`, `Becoming.Assurance`, `Becoming.Segmentation`, `Becoming.Readout`, `Becoming.Gated`, `Becoming.Viability`, `Becoming.Keeping`, `Becoming.Countdown`, `Becoming.Lasting`, `Becoming.Copying`, `Becoming.Retrodiction`, `Becoming.CrossSituational`, `Becoming.Likeness`, `Becoming.Distinguishing`, `Becoming.Composition`, `Becoming.Joining`, `Becoming.Granularity`, `Becoming.Postponement`, `Becoming.Novelty`, `Becoming.Reading`, `Becoming.Readings`, `Becoming.Coupling`, `Becoming.Sensitivity`, `Becoming.Tail`, `Becoming.Courses`, `Becoming.Parting`, `Becoming.Typicality`, `Becoming.Situations`, `Becoming.Propagation`, `Becoming.Loops`, `Becoming.Remainder`, `Becoming.Routes`, `Becoming.Closing`, `Becoming.Thresholds`, `Becoming.Observation`, `Becoming.Frequency`, `Becoming.Gain`, `Becoming.Gluing`
+Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Recurrence`, `Becoming.Diagonal`, `Becoming.Context`, `Becoming.Quantum`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Experiment`, `Becoming.Mechanism`, `Becoming.Unfolding`, `Becoming.Histories`, `Becoming.Branching`, `Becoming.Listing`, `Becoming.Order`, `Becoming.OrderNormal`, `Becoming.OneStep`, `Becoming.Weighted`, `Becoming.Transmission`, `Becoming.Succession`, `Becoming.Attraction`, `Becoming.Substitution`, `Becoming.Generation`, `Becoming.Flow`, `Becoming.Stock`, `Becoming.Change`, `Becoming.Population`, `Becoming.Identity`, `Becoming.Persistence`, `Becoming.Wholes`, `Becoming.Dissipation`, `Becoming.Locality`, `Becoming.Seeking`, `Becoming.Roles`, `Becoming.Reserve`, `Becoming.Evolution`, `Becoming.Capture`, `Becoming.Space`, `Becoming.Premises`, `Becoming.Sampling`, `Becoming.Tower`, `Becoming.Openness`, `Becoming.Decidedness`, `Becoming.Refinement`, `Becoming.Counting`, `Becoming.Standing`, `Becoming.Resolution`, `Becoming.Entropy`, `Becoming.Units`, `Becoming.Imbalance`, `Becoming.Continuation`, `Becoming.Admission`, `Becoming.Regions`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.LossMatching`, `Becoming.Correspondence`, `Becoming.Descent`, `Becoming.Standpoints`, `Becoming.Significance`, `Becoming.Interdependence`, `Becoming.Feeding`, `Becoming.Feedback`, `Becoming.Boundaries`, `Becoming.Relevance`, `Becoming.Testing`, `Becoming.Runaway`, `Becoming.Response`, `Becoming.TimedResponse`, `Becoming.Counterfactual`, `Becoming.Regrouping`, `Becoming.Selection`, `Becoming.Learning`, `Becoming.Revision`, `Becoming.Contacts`, `Becoming.RegroupingSelection`, `Becoming.ReferencePlan`, `Becoming.ContinuingRevision`, `Becoming.Description`, `Becoming.Identification`, `Becoming.Learnable`, `Becoming.Assurance`, `Becoming.Segmentation`, `Becoming.Readout`, `Becoming.Gated`, `Becoming.Viability`, `Becoming.Keeping`, `Becoming.Countdown`, `Becoming.Lasting`, `Becoming.Copying`, `Becoming.Retrodiction`, `Becoming.CrossSituational`, `Becoming.Likeness`, `Becoming.Distinguishing`, `Becoming.Composition`, `Becoming.Joining`, `Becoming.Granularity`, `Becoming.Postponement`, `Becoming.Novelty`, `Becoming.Reading`, `Becoming.Readings`, `Becoming.Coupling`, `Becoming.Sensitivity`, `Becoming.Tail`, `Becoming.Courses`, `Becoming.Parting`, `Becoming.Onward`, `Becoming.Typicality`, `Becoming.Situations`, `Becoming.Propagation`, `Becoming.Loops`, `Becoming.Remainder`, `Becoming.Routes`, `Becoming.Closing`, `Becoming.Thresholds`, `Becoming.Observation`, `Becoming.Frequency`, `Becoming.Gain`, `Becoming.Gluing`
 
 没有扫描到显式 theorem/lemma；可能是导入、审计或定义模块。 / No explicit theorem/lemma scanned; this may be an import, audit or definition module.
 
@@ -8090,6 +8090,65 @@ Imports: `Becoming.Counting`, `Becoming.Sampling`
 - `def` [Becoming.OneStep.StepRunRealized](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean#L3510) (L3510)
 - `def` [Becoming.OneStep.swapped](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean#L3574) (L3574)
 - `def` [Becoming.OneStep.vanishing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean#L3625) (L3625)
+
+</details>
+
+<a id="module-d8b9f7e31a6f"></a>
+
+<details>
+<summary>Onward.lean — 40 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean`
+
+Imports: `Becoming.Parting`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.Onward.continues_of_run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L75) | 75 |
+| [Becoming.Onward.unbounded_of_run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L79) | 79 |
+| [Becoming.Onward.reach_of_run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L83) | 83 |
+| [Becoming.Onward.run_of_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L87) | 87 |
+| [Becoming.Onward.run_of_reach](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L95) | 95 |
+| [Becoming.Onward.run_of_returning](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L102) | 102 |
+| [Becoming.Onward.reach_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L108) | 108 |
+| [Becoming.Onward.returning_of_continues](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L122) | 122 |
+| [Becoming.Onward.run_of_continues](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L146) | 146 |
+| [Becoming.Onward.run_iff_continues](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L153) | 153 |
+| [Becoming.Onward.run_iff_unbounded](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L161) | 161 |
+| [Becoming.Onward.run_iff_returning](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L168) | 168 |
+| [Becoming.Onward.run_decided](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L176) | 176 |
+| [Becoming.Onward.fan_no_run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L184) | 184 |
+| [Becoming.Onward.ofWithin_within](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L205) | 205 |
+| [Becoming.Onward.KeepsMoving.continues](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L210) | 210 |
+| [Becoming.Onward.KeepsMoving.run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L219) | 219 |
+| [Becoming.Onward.lossless_returns_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L230) | 230 |
+| [Becoming.Onward.KeepsMoving.returns](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L243) | 243 |
+| [Becoming.Onward.lossless_no_rise](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L252) | 252 |
+| [Becoming.Onward.rise_needs_merge](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L270) | 270 |
+| [Becoming.Onward.lossless_unlisted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L279) | 279 |
+| [Becoming.Onward.acc_below](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L299) | 299 |
+| [Becoming.Onward.searchedRun_start](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L334) | 334 |
+| [Becoming.Onward.searchedRun_within](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L338) | 338 |
+| [Becoming.Onward.decidedTest_finds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L351) | 351 |
+| [Becoming.Onward.moveOf_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L378) | 378 |
+| [Becoming.Onward.runs_iff_selection](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L385) | 385 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.Onward.KeepsMoving](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L194) (L194)
+- `def` [Becoming.Onward.within](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L198) (L198)
+- `def` [Becoming.Onward.ofWithin](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L202) (L202)
+- `def` [Becoming.Onward.Later](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L287) (L287)
+- `def` [Becoming.Onward.searchFrom](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L290) (L290)
+- `def` [Becoming.Onward.search](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L308) (L308)
+- `def` [Becoming.Onward.Finds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L314) (L314)
+- `def` [Becoming.Onward.searchedStep](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L323) (L323)
+- `def` [Becoming.Onward.searchedRun](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L330) (L330)
+- `def` [Becoming.Onward.decidedTest](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L345) (L345)
+- `def` [Becoming.Onward.DependentSelection](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L369) (L369)
+- `def` [Becoming.Onward.moveOf](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean#L374) (L374)
 
 </details>
 

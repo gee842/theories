@@ -276,7 +276,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "298a63579cbff61bb54d03f1a471b28078435c54e1a8ef8fe2b5a52c4f22e469"
+      "sha256": "35f9576e1a104cc88a0f1e7bc4daa6dea1da4e8f5d94c513064603c1ffe9f3ee"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -377,6 +377,10 @@
     {
       "zh": "2026年10月16日，P126（Becoming.Tail，研究第160节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入整体而无部分之律一段，§8 的反馈与所及（反例存在的确切强度已给出），§9 加一行与术语；回执与合计改据新运行（7061 项定理、9713 项声明审计，核心闭包 125 个模块，包 130 个））。",
       "en": "16 October 2026, landing P126 (Becoming.Tail, study section 160): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on a law of the whole and no part, §8 under feedback and reach (the exact strength of a counterexample's existence is given), §9 gains a row and glossary entries; receipt and totals moved to the new run (7061 theorems, 9713 declaration audits, core closure 125 modules, package 130))."
+    },
+    {
+      "zh": "2026年10月16日，P127（Becoming.Onward，研究第161节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§1 加入运行在何处继续一段，§8 随之，§9 加一行与术语；回执与合计改据新运行（7089 项定理、9753 项声明审计，核心闭包 126 个模块，包 131 个））。",
+      "en": "16 October 2026, landing P127 (Becoming.Onward, study section 161): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§1 gains the paragraph on where a run goes on, with §8, and §9 gains a row and glossary entries; receipt and totals moved to the new run (7089 theorems, 9753 declaration audits, core closure 126 modules, package 131))."
     }
   ],
   "text_versions": []
