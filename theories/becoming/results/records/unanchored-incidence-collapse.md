@@ -56,6 +56,7 @@ Boundary source / 边界来源: [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](..
 | proof | [ExplanatoryJoining.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean) | `Generative.ExplanatoryJoining.spend_cannot_self_join` |
 | proof | [Joining.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean) | `Becoming.Joining.RoleTotal.alike`, `Becoming.Joining.RoleTotal.collapse`, `Becoming.Joining.RoleTotal.open_not_pairLifting` |
 | proof | [JoiningBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean) | `Becoming.Joining.roleTotal_of_hasUnits`, `Becoming.Joining.units_alike_in_roles`, `Becoming.Joining.single_step_roles_alike`, `Becoming.Joining.trace_has_units_by_core`, `Becoming.Joining.open_map_does_not_force_pair_lifting_by_core` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 

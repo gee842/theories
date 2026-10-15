@@ -50,6 +50,7 @@ Lean 4.29.1实际编译；6项新定理、5项定义，共11项新空审计，�
 | provenance | [check_derived_history_law.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_derived_history_law.py) | — |
 | proof | [Readout.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean) | `Becoming.Readout.image`, `Becoming.Readout.SameFutures`, `Becoming.Readout.futures_through_iff` |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.admittedProcess`, `Becoming.admitted_feasible_iff`, `Becoming.derived_same_steps`, `Becoming.exact_iff_fiber_future_by_core` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 

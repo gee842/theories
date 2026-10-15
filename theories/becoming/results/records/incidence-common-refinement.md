@@ -56,6 +56,7 @@ Boundary source / 边界来源: [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](..
 | proof | [ExplanatoryJoiningAnchors.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean) | `Generative.ExplanatoryJoiningAnchors.open_map_does_not_force_pair_lifting` |
 | proof | [Joining.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean) | `Becoming.Joining.roleFrame`, `Becoming.Joining.common_refinement`, `Becoming.Joining.common_refinement_of_em` |
 | proof | [JoiningBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean) | `Becoming.Joining.openMap_iff_incidence`, `Becoming.Joining.locallyFinite_iff` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 

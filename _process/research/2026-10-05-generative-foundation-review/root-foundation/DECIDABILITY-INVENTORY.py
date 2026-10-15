@@ -143,6 +143,8 @@ CONSTRUCTIONS = {
     'Contacts.spot': 'indicate', 'Web.requiredLevel': 'indicate', 'Frame.classCount': 'count',
     'Frame.lostOf': 'keep', 'Identification.withBound': 'first', 'Lasting.hitTime': 'first',
     'Viability.guardedStep': 'guard', 'Viability.guardedHistory': 'guard', 'ite': 'split',
+    # 2026-10-15, integration I3a (classified at the I3a landing)
+    'Readout.pick': 'indicate', 'dirac': 'same',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -269,6 +271,10 @@ PROOF_KIND = {
     **{n: 'build' for n in [
         'listsOnce_of_decided', 'listsOnceBy_of_decided', 'of_listsOnce', 'Flow.standing_lowers_decided',
         'Chains.outcomes', 'Chains.outcomesListed']},
+    # 2026-10-15, integration I3a (classified at the I3a landing)
+    **{n: 'find' for n in [
+        'Readout.commonWitness_or_covered', 'Readout.no_common_report_iff', 'Readout.no_common_report_envelopes_iff']},
+    'every_weighting_iff': 'indicate',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',

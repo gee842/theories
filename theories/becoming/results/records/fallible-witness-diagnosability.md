@@ -43,6 +43,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Readout.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean) | `Becoming.Readout.Explains`, `Becoming.Readout.CommonWitness`, `Becoming.Readout.no_common_report_iff`, `Becoming.Readout.no_common_report_envelopes_iff` |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.explains_complete_iff`, `Becoming.compatible_complete_iff`, `Becoming.complete_diagnosability_iff_by_core` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
