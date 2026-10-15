@@ -469,7 +469,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "40dd6a8d0fdbaf1f1b08d99b66b10b5c4a461b35a1bbe25c16314767ee736cc9",
+      "sha256": "ef1fab746fb47159fa2d0a81bfdc8683e5457333f87e589b68a4dbd8181f1503",
       "declarations": [
         "Becoming.Web.selects_alike_iff",
         "Becoming.Flow.unselected_beyond_registration",
@@ -588,6 +588,11 @@
       "role": "receipt",
       "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193630.814921Z/verification.json",
+      "role": "receipt",
+      "sha256": "f6cb418cc5f79662048e110c9a55e98fd23b840c93060fd3ad0457621fb267b9"
     }
   ],
   "proof_bindings": [
@@ -614,7 +619,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193630.814921Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -886,6 +891,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Experiment.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Selection.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Seeking.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Runaway.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Mechanism.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Learning.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Experiment.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Selection.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Seeking.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Runaway.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Learning.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026-10-16，整合 I4b 第二项（Ren 选择“Closest gaps first”）：Selection.lean 的文件说明加“只读记录的选择”一条，见证之前加同名一节；本记录所引的声明不变。改用新哈希，证明绑定移到核心回执 20261015T193630.814921Z。",
+      "en": "16 October 2026, integration I4b item 2 (Ren chose “Closest gaps first”): Selection.lean's docstring gains a bullet on selection by the record alone, and a section of that name precedes the witnesses; the declarations this record cites are unchanged. The reference takes the new hash and its proof binding moves to core receipt 20261015T193630.814921Z."
     }
   ],
   "text_versions": [

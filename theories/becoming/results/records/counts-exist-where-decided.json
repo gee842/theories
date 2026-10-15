@@ -223,7 +223,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "586a72c88090a1a1bf6b8353b9b6d91ae83e28c855903cc12f5c1d340638bfac"
+      "sha256": "4c2e9f2ae10759656b821d96ed6d41e38f2de92e2a870f2c623cdcaa56b09ce9"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -233,7 +233,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "a8204305d0a02a681ff7638f80374ae9fc09ab40e52d4d288f8d5adae84a100d"
+      "sha256": "752496d3d55e2fbd8e886256bdb3ea55f6e07de579d321a4c411807436f6373d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
@@ -465,6 +465,10 @@
     {
       "zh": "2026年10月16日，P119 落地（研究第150节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P119：在“权重计数情境”之后加“分开与计数的开放证明”一对段落；整体陈述的两条与界一项、§8 的两行状态与“路径分支时”一项、§9 的三行（43、43、38）与术语表一行（被给予世界的学习者）；总数改据新回执）；DECIDABILITY-INVENTORY.md（在回执 20261015T193101.075446Z 上重新生成，含 P119 的分类：陈述依赖它 368 → 387，只在证明中用到 230 → 233，取可判定族的定义 97 → 105，新的一类“可达”（11 项），其余各类不变）。",
       "en": "16 October 2026, landing P119 (study section 150): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P119: a paragraph pair on the open proofs of parting and counting after “weights count situations”; two bullets and the bound item of the theory stated whole, §8's two status rows and the open item “When the course branches”, §9's three rows (43, 43, 38) and a glossary row (the learner given the world); totals moved to the new receipt); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T193101.075446Z with P119's classifications: statements depending on it 368 → 387, used only in proofs 230 → 233, definitions taking a decidability family 97 → 105, a new kind “reached” (11 entries), the other classes unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，I4b 第二项落地（研究第151节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第二项：§9 的 Becoming.Selection 一行（43 → 67 项定理，改为双语）与外围实例 SelectionRelabelCorrespondence 一行，外围实例的列举加入它；总数改据新回执）；DECIDABILITY-INVENTORY.md（在回执 20261015T193630.814921Z 上重新生成，含 I4b 第二项的分类：陈述依赖它 387 → 409，只在证明中用到 233 → 234，取可判定族的定义 105 → 109，其余各类不变）。",
+      "en": "16 October 2026, landing I4b item 2 (study section 151): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 2: the §9 row of Becoming.Selection (43 → 67 theorems, now bilingual) and a peripheral-instance row for SelectionRelabelCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T193630.814921Z with I4b item 2's classifications: statements depending on it 387 → 409, used only in proofs 233 → 234, definitions taking a decidability family 105 → 109, the other classes unchanged)."
     }
   ]
 }

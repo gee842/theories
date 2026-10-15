@@ -814,6 +814,35 @@ Imports: `GenerativeCore`
 
 </details>
 
+<a id="module-d28f30cfca89"></a>
+
+<details>
+<summary>SelectionRelabelCorrespondence.lean — 13 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean`
+
+Imports: `Becoming.Selection`, `TieBreaking`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.SelectionRelabelCorrespondence.transpose_eq_swap](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L36) | 36 |
+| [Becoming.SelectionRelabelCorrespondence.treatsAlike_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L39) | 39 |
+| [Becoming.SelectionRelabelCorrespondence.lotteryAlike_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L45) | 45 |
+| [Becoming.SelectionRelabelCorrespondence.alone_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L53) | 53 |
+| [Becoming.SelectionRelabelCorrespondence.tied_not_served_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L57) | 57 |
+| [Becoming.SelectionRelabelCorrespondence.first_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L61) | 61 |
+| [Becoming.SelectionRelabelCorrespondence.all_tied_forces_withholding_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L64) | 64 |
+| [Becoming.SelectionRelabelCorrespondence.servable_iff_untied_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L71) | 71 |
+| [Becoming.SelectionRelabelCorrespondence.tied_equal_weight_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L80) | 80 |
+| [Becoming.SelectionRelabelCorrespondence.full_tie_equal_weights_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L84) | 84 |
+| [Becoming.SelectionRelabelCorrespondence.uniform_alike_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L89) | 89 |
+| [Becoming.SelectionRelabelCorrespondence.pointMass_one](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L93) | 93 |
+| [Becoming.SelectionRelabelCorrespondence.point_mass_not_alike_at_tie_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/SelectionRelabelCorrespondence.lean#L101) | 101 |
+
+</details>
+
 <a id="module-c67844003d2b"></a>
 
 <details>

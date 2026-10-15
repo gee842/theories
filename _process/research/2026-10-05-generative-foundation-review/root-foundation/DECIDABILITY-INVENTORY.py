@@ -182,6 +182,9 @@ CONSTRUCTIONS = {
     # deciding steps and telling registered values apart; a course's multiplicity in a list compares courses
     **{n: 'reach' for n in ['Parting.candidates', 'Parting.live', 'Parting.firstLive', 'Parting.worldLearner']},
     'Situations.occ': 'same',
+    # integration I4b (2026-10-16): a selection by the record alone exchanges two options' entries
+    **{n: 'swap' for n in ['Relabel.swap', 'Relabel.Equivariant', 'Relabel.EquivariantValue',
+                           'Relabel.EquivariantChoice']},
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -379,6 +382,8 @@ PROOF_KIND = {
     # world being built from decided steps and values
     **{n: 'same' for n in ['Parting.unparted_at_of_late', 'Parting.late_statesBelow']},
     'Parting.some_right_iff': 'reach',
+    # integration I4b (2026-10-16): at most one option holds an entry alone, told by whether two options are the same
+    **{n: 'same' for n in ['Relabel.alone_single']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',

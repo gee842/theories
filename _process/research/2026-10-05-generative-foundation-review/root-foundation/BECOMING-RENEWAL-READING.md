@@ -9521,6 +9521,43 @@ Integration: 第 6 节新段落对（在“权重计数情境”之后），该�
 
 **检查。** 在暂存区编译：`Becoming.Parting` 43 项定理、62 项声明，`Becoming.Typicality` 43／56，`Becoming.Situations` 38／54，根模块 `Becoming` 连同其闭包编译（没有名字冲突）；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。判定性清单的暂存运行（只跳过回执检查）0 项未用。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
+## 151. 只读记录的选择（整合 I4b 第二项）：PluralRecords 与 TieBreaking 接入
+
+2026-10-16。Ren 对 I4 归类表选择“Closest gaps first”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）。表把 PluralRecords 与 TieBreaking 读作待接入的律：同等对待各中心的规则（交换两个中心的条目即交换其输出）能供给中心 k，恰当没有别的中心的条目等于 k 的（`servable_iff_untied`）；同等对待的抽签给并列的中心相同的权重（`tied_equal_weight`）。Becoming.Selection 陈述了经识的选择恰及所识（`Web.selects_alike_iff`），未陈述只读记录的选择（§139）。本节对任何选项与任何种类的条目陈述它。名依 Ren 同日的接入命名规则（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-joined-module-names.md)，工作板规则 8）：核心律、实例模块与记录标题都用核心的结构词汇，实例模块按核心律命名。
+
+```text
+Result(s): 新记录 selection-by-the-record-alone；selection-through-registration、generalization-through-lumping、wisdom-root-part-one 改绑（论断不变）
+Delta: 核心：Becoming.Selection 加“只读记录的选择”一节（命名空间 Relabel，43 → 67 项定理），不加导入；
+       外围实例模块及其检查器：SelectionRelabelCorrespondence（13 项定理），在 remaining-dependency 包旁；检查器也编译并审计未有回执的 PluralRecords 与 TieBreaking；
+       可判定性清点：Relabel 的四项定义归入“交换两个值”，陈述依赖它者 387 → 409（22 条律写出选项的相同已定），只在证明中用到 233 → 234（Relabel.alone_single，分辨两个选项是否相同）
+Supplied premises / correspondence: 核心律不加前提：选项的相同已定（交换两个选项需要它，每条陈述都写出），条目任意种类；选择、取值或选取只读记录是所用定理的假设；实例沿用 PluralRecords 与 TieBreaking 的定义
+Evidence: 核心由核心运行审计（回执 20261015T193630.814921Z）；外围检查器实跑（回执 20261015T193732.676982Z），72 项声明审计公理报告皆空
+Boundary: 见下文“边界与读法”
+Integration: §9 Selection 一行（改为双语，陈述与计数）与一个外围行；Becoming.lean 的模块条目；Selection 的文件说明；remaining-dependency 的 FORMAL-NOTES；一项新记录；三项记录改绑；一个外围检查器；可判定性清点；归类表中 PluralRecords、TieBreaking 改为已接入，主题“对称与并列”随之取消
+```
+
+**只读记录（不加前提）。** 选项只由记录对每个所持的条目分开。交换两个选项（`Relabel.swap`）是对合。一个选择只读记录（`Relabel.Equivariant`），当交换两个选项的条目即交换所选者；取值（`EquivariantValue`）与至多一个的选取（`EquivariantChoice`）同样。交换两个并列的选项，记录不变（`fixed_of_tied`）。
+
+**只读记录的选择恰分开记录所分开者。** 并列的选项被选得相同（`Equivariant.tied`）；两个选项被每个只读记录的选择选得相同，恰当记录使二者并列（`selected_alike_iff`），见证是选出条目等于给定值的选项。这与经识的选择恰及所识（`Web.selects_alike_iff`）同形。
+
+**单独选出。** 至多选一个的只读记录的选择不选并列的选项（`Equivariant.untied`），两个以上选项全并列时不选（`Equivariant.none_of_full_tie`）。单独持有一个条目（`Alone`）是只读记录且至多一个的选择（`alone_equivariant`、`alone_single`），所以一个选项能被单独选出，恰当没有别的选项的条目与它相同（`singled_iff_untied`）。两个方向都作为关系陈述，不需搜索。
+
+**取值与选取。** 只读记录的取值（如每个选项的权重）给并列的选项相同的值，全并列时处处相同（`EquivariantValue.tied`、`full_tie`）；取某值的选项是只读记录的选择（`level`）；常值只读记录（`const`）；两个选项被每个这样的取值取得相同，恰当二者并列（`valued_alike_iff`）。只读记录的选取，其所选取者是只读记录的选择（`EquivariantChoice.selects`），所以它不选取并列的选项，全并列时不选取（`untied`、`withholds_of_full_tie`）。
+
+**PluralRecords 与 TieBreaking（SelectionRelabelCorrespondence，外围，自有检查器）。** 记录即 `Fin n` 上的条目记录，交换两个中心即 `Relabel.swap`（`transpose_eq_swap`），同等对待中心的规则即只读记录的选取（`treatsAlike_iff`），同等对待的抽签其权重只读记录、不保留的权重不变（`lotteryAlike_iff`），单独持有即 `Relabel.Alone`（`alone_iff`）。核心律给出 `tied_not_served`、`all_tied_forces_withholding`、`servable_iff_untied`、`tied_equal_weight`、`full_tie_equal_weights`、`uniform_alike` 与 `point_mass_not_alike_at_tie`（各为 `_by_core`）；`servable_iff_untied` 的反方向由核心给出单独持有的不变性与唯一性，`PluralRecords.pick` 在 `Fin n` 中找出持有者。13 项定理的公理报告皆空。原文件的定义与陈述不变。
+
+**检查器。** `make_relabel_checker.py` 由 `../integration-i3e/make_checker.py relabel.json` 生成 `check_selection_relabel_correspondence.py`，并作四处改动：Lean 根目录；把两个原文件与实例加入模块索引；原文件在此检查（它们只导入 Lean 的前导，无机器回执，构建记录是 `inquiry-warrant/BUILD.md`），其每项声明与实例一起审计，报告须皆空；原文件的名含 `?` 与 `'`，故以容许这些字符的扫描读出，审计行按行首读，使带撇号的名完整。TieBreaking 打印一条警告（`full_tie_open_uniform` 未用的假设 `noWithhold`，按原陈述保留），它是唯一允许的输出，回执记下。干跑（回执写到临时目录）在 Lean 4.30.0-rc2 下通过：13 项定理，72 项声明审计皆空；缺回执的只有新的 Becoming.Selection，待其核心运行。
+
+**作者反审。**
+1. **新律还是重述？** 对脊柱是新的：Selection 只有经识的形式。核心的陈述比原文件更一般：选项任意（相同已定），条目任意种类，且以关系陈述，不需在列出的选项中搜索；原文件的反方向用 `pick` 在 `Fin n` 中搜索，这一步留在外围。
+2. **相同已定。** 交换两个选项要分辨输入是否为其中之一，所以 `DecidableEq` 是每条陈述的条件（清点中归入“交换两个值”，与 Learning 的 `swapTo` 同）。没有它，`swap` 无从定义；对任意置换而非对换陈述可去掉定义上的需要，但“并列即选得相同”仍需对换存在。
+3. **命名。** 依工作板规则 8，原文件的 `TreatsAlike`、`LotteryAlike`、`servable` 不带入核心；核心用 `Relabel`、`Equivariant`、`Alone`、`singled_iff_untied`，实例模块按核心律命名为 SelectionRelabelCorrespondence。`_by_core` 定理沿用原定理的名，以指明所重述者。
+4. **没有证明的。** 选出的选项由选取函数找到（需搜索）；两两关系之记录（条目是选项之间的关系）上的同一律。
+
+**边界与读法。** 核心律说的是只读记录的选择能分开什么，不说哪种选择应当被用：平局中等概率的抽签是否正当、按条目大小或按轮次的优先，保持原文件的范围（[TIE-BREAKING-LEGITIMACY](TIE-BREAKING-LEGITIMACY.md)）。读法（AI 的，待 Ren）：哪个选项是哪个不在记录的关系之中；要分开记录所并列者，需另一被记录的关系，如到达的次序或约定，正如经识选择的缺口只经关系而合。
+
+**下一步（I4b）。** I4b 的四项至此齐备（Gated、Selection、Horizon、Lasting）；IdealWarrant 留待 Ren 安置，接入时依规则 8 改名。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -11106,3 +11143,33 @@ This section covers the first. Each of the 31 earlier versions now names, on its
   - In any weights, steps weighing the sum over their situations are counted by them (`sum_finer_weights`).
   - A signed weight is a pair of counts of situations, those composing to adding and those to subtracting (`signed_counts`). Where signed weights cancel, the situations do not (`cancels_situations`).
 - **Still open.** Real or complex amplitudes, infinite or undecided processes for the converse, and the exactness of 2(T + N) − 1.
+
+**Selection by the record alone, integration I4b item 2 (16 October 2026).** Ren chose “Closest gaps first” on the I4 classification table ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)). The table read PluralRecords and TieBreaking as join candidates: a rule treating the centers alike (exchanging two centers' entries exchanges its output) can serve center k exactly when no other center's entry equals k's (`servable_iff_untied`), and a lottery treating them alike gives tied centers equal weight (`tied_equal_weight`). Becoming.Selection stated that selection through registration reaches exactly what registers (`Web.selects_alike_iff`), not selection by the record alone (section 139). This section states it for any options and entries of any kind. The names follow Ren's rule of the same day for joined modules ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-joined-module-names.md), board rule 8): the core law, the instance module and the record's title use the core's structural vocabulary, and the instance module is named after the core law.
+- **Reading the record alone** (`Becoming.Selection`, namespace `Relabel`, no premise; 43 → 67 theorems, no new import).
+  - Options are told apart only by what a record holds of each. Exchanging two options (`Relabel.swap`) is an involution.
+  - A selection reads the record alone (`Relabel.Equivariant`) when exchanging two options' entries exchanges what it selects; likewise a valuation (`EquivariantValue`) and a choice of at most one option (`EquivariantChoice`). Exchanging two tied options leaves the record as it was (`fixed_of_tied`).
+- **It parts exactly what the record parts.** Tied options are selected alike (`Equivariant.tied`), and two options are selected alike by every selection reading the record alone exactly when the record ties them (`selected_alike_iff`). The witness selects the options whose entry equals a given value. This is the form of `Web.selects_alike_iff`.
+- **Singling out.** A selection reading the record alone that selects at most one option selects no tied option (`Equivariant.untied`), and none at a full tie of two or more (`Equivariant.none_of_full_tie`). Holding an entry alone (`Alone`) is such a selection (`alone_equivariant`, `alone_single`), so an option can be singled out exactly when no other option's entry ties it (`singled_iff_untied`). Both directions are stated as relations, with no search.
+- **Values and choices.**
+  - A valuation reading the record alone, such as a weight on each option, gives tied options equal values, and every option the same at a full tie (`EquivariantValue.tied`, `full_tie`). The options taking a value form a selection reading the record alone (`level`); a constant valuation reads it (`const`); two options are valued alike by every such valuation exactly when tied (`valued_alike_iff`).
+  - The option a choice reading the record alone chooses is a selection reading it (`EquivariantChoice.selects`), so the choice chooses no tied option and withholds at a full tie (`untied`, `withholds_of_full_tie`).
+- **PluralRecords and TieBreaking** (`SelectionRelabelCorrespondence`, periphery, with its own checker).
+  - Correspondences: a record is the core's record of entries over `Fin n`; exchanging two centers is `Relabel.swap` (`transpose_eq_swap`); a rule treating the centers alike is a choice reading the record alone (`treatsAlike_iff`); a lottery treating them alike has weights reading the record alone and an unchanged withholding weight (`lotteryAlike_iff`); and holding an entry alone is `Relabel.Alone` (`alone_iff`).
+  - The core laws give `tied_not_served`, `all_tied_forces_withholding`, `servable_iff_untied`, `tied_equal_weight`, `full_tie_equal_weights`, `uniform_alike` and `point_mass_not_alike_at_tie`, each `_by_core`. For the converse of `servable_iff_untied` the core gives holding alone its invariance and uniqueness, and `PluralRecords.pick` finds the holder in `Fin n`.
+  - All 13 theorems have empty axiom reports. The originals' definitions and statements are unchanged.
+- **Checker.** `make_relabel_checker.py` generates `check_selection_relabel_correspondence.py` from `../integration-i3e/make_checker.py relabel.json` and makes four changes:
+  - the Lean root;
+  - the two originals and the instance are added to the module index;
+  - the originals are checked here, since they import only Lean's prelude and have no machine receipt (their build record is `inquiry-warrant/BUILD.md`): every declaration is audited with the instance's and must have an empty report;
+  - the originals name declarations with `?` and `'`, so they are scanned with those characters admitted, and audit lines are read anchored at their start, so a primed name is read whole.
+  - TieBreaking prints one warning, the unused hypothesis `noWithhold` of `full_tie_open_uniform`, kept as stated. It is the only output allowed, and the receipt records it.
+  - A dry run under Lean 4.30.0-rc2 passed, with its receipt in a scratch folder: 13 theorems and 72 declaration audits, all empty. The only missing receipt was the new Becoming.Selection, which awaits its core run.
+- **Decidability inventory.** Relabel's four definitions are classified as exchanging two values. Statement-level uses go 387 → 409, the 22 laws naming the options' decided equality. Proof-only theorems go 233 → 234 with `Relabel.alone_single`, which tells whether two options are the same.
+- **Records.** The new record selection-by-the-record-alone (F04) is related to selection-through-registration. Three records citing Selection.lean are rebound, their claims unchanged.
+- **Author counterreview.**
+  - The law is new to the spine: Selection had only the registration form. The core states it more generally than the originals: any options with decided equality, entries of any kind, as relations with no search over listed options. The originals' converse searches `Fin n` with `pick`; that step stays in the periphery.
+  - Exchanging two options tells whether the input is either of them, so `DecidableEq` is a condition each statement names (classified like Learning's `swapTo`). Stating the law for arbitrary permutations rather than transpositions would remove the need from the definition, but "tied options are selected alike" still needs the transposition to exist.
+  - Names follow board rule 8: the originals' `TreatsAlike`, `LotteryAlike` and `servable` are not carried into the core, which uses `Relabel`, `Equivariant`, `Alone` and `singled_iff_untied`; the instance module is named after the core law. The `_by_core` theorems keep the original theorems' names to show what they restate.
+  - Not proved: that an option singled out is found by a choice function (a search); the same law over records of pairwise relations.
+- **Boundary and reading.** The core law says what a selection reading the record alone can part, not which selection should be used. Whether an equal chance legitimately breaks a tie, and priority by size or by turn, keep the originals' scope ([TIE-BREAKING-LEGITIMACY](TIE-BREAKING-LEGITIMACY.md)). The reading, which is the AI's and pending Ren: which option is which is not among the record's relations; to part what the record ties takes a further recorded relation, such as an order of arrival or an agreement, as the gap of selection through registration closes only through relations.
+- **Next in I4b.** The four items are complete: Gated, Selection, Horizon and Lasting. IdealWarrant waits for Ren to place it; when joined it takes a structural name under rule 8.

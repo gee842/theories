@@ -748,7 +748,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   is blind beyond the registration closure, so an ending within a candidate's reach closure and
   beyond the selector's registration closure is not selected, while pooled registration selects
   it; where reaching beyond raises what registers, selection favours it. The readings are the
-  AI's, adopted on Ren's delegation of 15 October 2026.
+  AI's, adopted on Ren's delegation of 15 October 2026. By the record alone: two options are selected alike by every
+  selection reading only a record exactly when the record ties them, one is singled out exactly
+  where the record parts it from every other, and tied options are valued alike.
 * `Becoming.Learning` (L4): no record fixes the next value: two courses share any record and
   differ at its next step, also among worlds held by a list, and for every learner a course
   refutes each of its claims, the registration of a law keeping its record, so open. Learning by

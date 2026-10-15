@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193630.814921Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean": {
+   "zh": "I4b 第二项：加“只读记录的选择”一节（Relabel，43 → 67 项定理）与文档注释一条；既有声明不变",
+   "en": "I4b item 2: a section “selection by the record alone” (Relabel, 43 → 67 theorems) and a docstring bullet; existing declarations unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "I4b 第二项：Becoming.Selection 的条目加只读记录的选择",
+   "en": "I4b item 2: the Becoming.Selection bullet gains selection by the record alone"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "I4b 第二项：§9 的 Becoming.Selection 一行（43 → 67 项定理，改为双语）与外围实例 SelectionRelabelCorrespondence 一行，外围实例的列举加入它；总数改据新回执",
+   "en": "I4b item 2: the §9 row of Becoming.Selection (43 → 67 theorems, now bilingual) and a peripheral-instance row for SelectionRelabelCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第151节（整合 I4b 第二项：只读记录的选择，PluralRecords 与 TieBreaking 接入）及其英文段；此前各节不变",
+   "en": "section 151 (integration I4b item 2: selection by the record alone, PluralRecords and TieBreaking joined) with its English paragraph; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "I4b 第二项：Relabel 的四项定义归入“交换两个值”，Relabel.alone_single 归入“分辨相同”",
+   "en": "I4b item 2: Relabel's four definitions classified as exchanging two values, Relabel.alone_single as telling same from different"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T193630.814921Z 上重新生成，含 I4b 第二项的分类：陈述依赖它 387 → 409，只在证明中用到 233 → 234，取可判定族的定义 105 → 109，其余各类不变",
+   "en": "regenerated on receipt 20261015T193630.814921Z with I4b item 2's classifications: statements depending on it 387 → 409, used only in proofs 233 → 234, definitions taking a decidability family 105 → 109, the other classes unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md": {
+   "zh": "I4b 第二项：PluralRecords 与 TieBreaking 改为已接入，加 SelectionRelabelCorrespondence 一行，去掉只含二者的主题“对称与并列”（602 行：已接入 66，待接入 59）",
+   "en": "I4b item 2: PluralRecords and TieBreaking marked joined, with a row for SelectionRelabelCorrespondence, and the theme “symmetry and ties”, which held only the two, removed (602 rows: joined 66, join candidates 59)"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/FORMAL-NOTES.md": {
+   "zh": "I4b 第二项：一节说明 SelectionRelabelCorrespondence 及其检查器；PluralRecords 与 TieBreaking 不变",
+   "en": "I4b item 2: a section on SelectionRelabelCorrespondence and its checker; PluralRecords and TieBreaking unchanged"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing I4b item 2 (study section 151): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月16日，I4b 第二项落地（研究第151节）：改绑新回执并更新哈希："
+ }
+}

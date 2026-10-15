@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-217 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+218 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -189,6 +189,7 @@
 | [逐步选定的家族 / Families chosen step by step](../results/records/runs-on-families-chosen-step-by-step.md) | recorded-checked | [OneStep.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean) |
 | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](../results/records/scientific-inquiry-foundation.md) | open | [SCIENTIFIC-PHILOSOPHY.md](SCIENTIFIC-PHILOSOPHY.md) |
 | [寻求恰在律所不变、满足其目标的状态静止：“比现在更多”需要开放的世界，“高于一切他者”不同时满足两个；不断上升需要不衰减的步，衰减不断则上升停止 / Seeking rests exactly at a state the law leaves unchanged that meets its target: more than now needs an open world and above all others never holds of two; rising without end needs steps that do not run down, and running down stops it](../results/records/seeking-boundary.md) | recorded-checked | [Seeking.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean) |
+| [只读记录的选择 / Selection by the record alone](../results/records/selection-by-the-record-alone.md) | recorded-checked | [Selection.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean) |
 | [经识的选择 / Selection through registration](../results/records/selection-through-registration.md) | recorded-checked | [Selection.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean) |
 | [登记关系改变时，哪些选择仍可表达与执行 / Which selections survive and remain executable when registration changes](../results/records/selection-under-registration-revision.md) | recorded-checked | [Revision.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean) |
 | [从立场自身之善到可及的 G0 / From a standpoint's own good to reachable G0](../results/records/self-good-reachable-g0.md) | recorded-checked | [EvaluatorGrounding.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean) |

@@ -362,7 +362,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "40dd6a8d0fdbaf1f1b08d99b66b10b5c4a461b35a1bbe25c16314767ee736cc9",
+      "sha256": "ef1fab746fb47159fa2d0a81bfdc8683e5457333f87e589b68a4dbd8181f1503",
       "declarations": [
         "Becoming.Web.SelectsThrough"
       ]
@@ -416,6 +416,11 @@
       "role": "receipt",
       "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193630.814921Z/verification.json",
+      "role": "receipt",
+      "sha256": "f6cb418cc5f79662048e110c9a55e98fd23b840c93060fd3ad0457621fb267b9"
     }
   ],
   "proof_bindings": [
@@ -442,7 +447,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193630.814921Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -599,6 +604,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Learning.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Mechanism.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Selection.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Learning.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Selection.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16，整合 I4b 第二项（Ren 选择“Closest gaps first”）：Selection.lean 的文件说明加“只读记录的选择”一条，见证之前加同名一节；本记录所引的声明不变。改用新哈希，证明绑定移到核心回执 20261015T193630.814921Z。",
+      "en": "16 October 2026, integration I4b item 2 (Ren chose “Closest gaps first”): Selection.lean's docstring gains a bullet on selection by the record alone, and a section of that name precedes the witnesses; the declarations this record cites are unchanged. The reference takes the new hash and its proof binding moves to core receipt 20261015T193630.814921Z."
     }
   ],
   "text_versions": [

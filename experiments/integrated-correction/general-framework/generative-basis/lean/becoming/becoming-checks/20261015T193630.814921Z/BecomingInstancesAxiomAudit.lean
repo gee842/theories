@@ -1,0 +1,26 @@
+import Becoming.Instances
+#print axioms Becoming.Instances.assured_iff_completes
+#print axioms Becoming.Instances.routes_eq
+#print axioms Becoming.Instances.routes_assured_iff
+#print axioms Becoming.Instances.regulation_assured_iff
+#print axioms Becoming.Instances.chunks_eq
+#print axioms Becoming.Instances.flatten_eq_join
+#print axioms Becoming.Instances.encode_eq
+#print axioms Becoming.Instances.wordFirst
+#print axioms Becoming.Instances.wordRest
+#print axioms Becoming.Instances.spelled
+#print axioms Becoming.Instances.two_word_iff
+#print axioms Becoming.Instances.ideal_two_word
+#print axioms Becoming.Instances.diagonal_no_decoder
+#print axioms Becoming.Instances.dephase_no_restore
+#print axioms Becoming.Instances.local_pair_no_update
+#print axioms Becoming.Instances.local_pair_carries_no_law
+#print axioms Becoming.Instances.evolve_eq_foldl
+#print axioms Becoming.Instances.adopts
+#print axioms Becoming.Instances.ite_some
+#print axioms Becoming.Instances.process_eq
+#print axioms Becoming.Instances.run_eq
+#print axioms Becoming.Instances.trace_iff_run
+#print axioms Becoming.Instances.rule_kept
+#print axioms Becoming.Instances.rule_inherited
+#print axioms Becoming.Instances.rule_change_located

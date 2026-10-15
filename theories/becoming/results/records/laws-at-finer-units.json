@@ -211,7 +211,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "586a72c88090a1a1bf6b8353b9b6d91ae83e28c855903cc12f5c1d340638bfac"
+      "sha256": "4c2e9f2ae10759656b821d96ed6d41e38f2de92e2a870f2c623cdcaa56b09ce9"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -452,6 +452,10 @@
     {
       "zh": "2026年10月16日，P119 落地（研究第150节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P119：在“权重计数情境”之后加“分开与计数的开放证明”一对段落；整体陈述的两条与界一项、§8 的两行状态与“路径分支时”一项、§9 的三行（43、43、38）与术语表一行（被给予世界的学习者）；总数改据新回执）。",
       "en": "16 October 2026, landing P119 (study section 150): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P119: a paragraph pair on the open proofs of parting and counting after “weights count situations”; two bullets and the bound item of the theory stated whole, §8's two status rows and the open item “When the course branches”, §9's three rows (43, 43, 38) and a glossary row (the learner given the world); totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月16日，I4b 第二项落地（研究第151节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第二项：§9 的 Becoming.Selection 一行（43 → 67 项定理，改为双语）与外围实例 SelectionRelabelCorrespondence 一行，外围实例的列举加入它；总数改据新回执）。",
+      "en": "16 October 2026, landing I4b item 2 (study section 151): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 2: the §9 row of Becoming.Selection (43 → 67 theorems, now bilingual) and a peripheral-instance row for SelectionRelabelCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt)."
     }
   ]
 }
