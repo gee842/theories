@@ -1,0 +1,16 @@
+{
+  "dir": "universal-ethics/generative-capacity",
+  "checker": "check_renewing_correspondence.py",
+  "depth": 1,
+  "target": "RenewingCorrespondence",
+  "stem": "renewing-correspondence",
+  "namespace": "Becoming.RenewingCorrespondence",
+  "empty": [
+    "beyond",
+    "formedOf",
+    "moves"
+  ],
+  "empty_comment": "# Declarations that add no axiom and must have empty reports; the others use the periphery's\n# arithmetic of the wear law and the library's list lemmas, which use the standard axioms.",
+  "doc": "Check the peripheral instance of the Becoming core's laws of a level drawn on and not replenished in\nformation beyond renewal.\n\n`RenewingCorrespondence` imports `Becoming.Stock` and `RenewingFormation` (with `GenerativeComparison`,\nwhich use Lean's standard library and its tactics), so it is compiled with Lean 4.30.0-rc2, as the other\ninstance modules are, with the installed Mathlib on the path (`SYSTEMS_MATHLIB_PROJECT`, default\n`~/repos/生生不息`), though it imports none. This checker follows `check_continuation_correspondence.py`:\nmodule resolution, declaration scanning and passed-receipt matching are those of the core checker, and\nevery other module in the closure must match a passed receipt. Each declaration's axiom report is\nrecorded: it may name only the standard axioms (propext, Classical.choice, Quot.sound), and the\ndeclarations in EMPTY must have empty reports. The core does not import this module. Lean steps are\nreused as in the core checker, keyed also by the Mathlib revision; `BECOMING_FRESH=1` runs every step.\nThe run folder keeps the receipt, the drivers and logs of the steps that ran, and a copy of each file\n`main` does not hold byte for byte.",
+  "scope": "On the Becoming core's laws of a level drawn on and not replenished: in RenewingFormation, steps beyond the current renewal rate are the moves of one process recording the pressure and what forms; across each the remaining bound (held conditions plus the triangular renewal bound, the periphery's budget) falls by at least what forms and something forms wherever it is positive (remaining_falls, forms_while_held, from beyond_step). The first n steps of a course beyond the current rate are a trace drawing in all what formed (path_trace, total_moves), so by Stock.trace_falls the whole-unfolding total is bounded by the remaining bound (beyond_current_bounded_by_core), by Stock.exhausted_within and Stock.draws_nothing_from_empty nothing forms from the time equal to that bound (beyond_current_ceases_by_core), and every allocation of that formation, shared formation included, ends with it (shared_formation_ends_by_core). The wear law and the representation of formation keep the earlier modules' scope; which real processes satisfy the law is not checked."
+}

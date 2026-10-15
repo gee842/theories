@@ -1,0 +1,18 @@
+{
+  "dir": "universal-ethics",
+  "checker": "check_preparation_correspondence.py",
+  "depth": 0,
+  "target": "PreparationCorrespondence",
+  "stem": "preparation-correspondence",
+  "namespace": "Becoming.PreparationCorrespondence",
+  "empty": [
+    "unit",
+    "use_unit",
+    "adjacent",
+    "connected_of_adjacent",
+    "connected_iff_within"
+  ],
+  "empty_comment": "# Declarations that add no axiom and must have empty reports; the others mention the\n# periphery's routing, graphs or rational returns, whose library lemmas use the standard axioms.",
+  "doc": "Check the peripheral instances of the Becoming core's laws in material preparation and grown fragmentation.\n\n`PreparationCorrespondence` imports `Becoming.Copying`, `Becoming.Feedback`, `Becoming.Readout` and\n`GrownFragmentation` (with `MaterialMaturation`, which use Lean's standard library and its tactics), so\nit is compiled with Lean 4.30.0-rc2, as the other instance modules are, with the installed Mathlib on\nthe path (`SYSTEMS_MATHLIB_PROJECT`, default `~/repos/生生不息`), though it imports none. This checker\nfollows `check_continuation_correspondence.py`: module resolution, declaration scanning and\npassed-receipt matching are those of the core checker, and every other module in the closure must\nmatch a passed receipt. Each declaration's axiom report is recorded: it may name only the standard\naxioms (propext, Classical.choice, Quot.sound), and the declarations in EMPTY must have empty reports.\nThe core does not import this module. Lean steps are reused as in the core checker, keyed also by the\nMathlib revision; `BECOMING_FRESH=1` runs every step. The run folder keeps the receipt, the drivers\nand logs of the steps that ran, and a copy of each file `main` does not hold byte for byte.",
+  "scope": "On the Becoming core's laws of copying, closure and judging through a reduction: MaterialMaturation's route is copying a recipe from a pool with one unit of support drawn per attachment (route_some_iff), so by Copying.empties_iff preparation completes with an empty residual pool exactly when the pool is a permutation of the recipe and the recipe is no longer than the support (preparation_empties_iff, preparation_leaves). In GrownFragmentation, being connected by the bonds is lying within the closure under them (connected_iff_within); a component holding its root and closed on every remaining bond is that closure by closure_iff_certified (component_is_closure, certificate_exact_split_by_core), and a certified cut leaves its two ends apart by not_within_of_closed (cut_separates). The two grown graphs share a parent summary and differ in mean cut return, so by Readout.no_judge_of_merged no function of the summary gives both (no_parent_summary_predictor_by_core). The production law, sampling, recipe, stocks and growth histories keep the earlier modules' scope; correspondence to actual material or tissue is not checked."
+}
