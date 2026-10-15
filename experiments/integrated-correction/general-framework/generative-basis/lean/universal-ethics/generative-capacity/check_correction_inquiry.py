@@ -7,9 +7,10 @@ Lean 4.30.0-rc2 against the installed Mathlib (`SYSTEMS_MATHLIB_PROJECT`, defaul
 matching are those of the core checker. Every other module in the closure must
 match a passed receipt; the bridge's own declarations must have empty axiom reports.
 The core does not import this module. Lean steps are reused as in the core checker,
-keyed also by the Mathlib revision; `BECOMING_FRESH=1` runs every step. As in the core
-checker, the run folder keeps the receipt, the drivers and logs of the steps that ran,
-and a copy of each file `main` does not hold byte for byte.
+keyed also by the Mathlib revision, and run concurrently (`BECOMING_JOBS`);
+`BECOMING_FRESH=1` runs every step. As in the core checker, the run folder keeps the
+receipt, the drivers and logs of the steps that ran, and a copy of each file `main` does
+not hold byte for byte.
 """
 from datetime import datetime, timezone
 import json
@@ -163,20 +164,33 @@ def main():
                 target = work / core.source_file(name)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes(data)
-            for name in order:
-                olean = core.source_file(name)[:-5] + ".olean"
-                run(["-o", olean, core.source_file(name)], name + ".log", key=keys[name], outputs=[olean])
             audit = f"import {TARGET}\n" + "".join(f"#print axioms {d['name']}\n" for d in registry)
             signatures = f"import {TARGET}\n" + "".join(
                 f"#check @{d['name']}\n" for d in registry if d["kind"] == "theorem")
             for label, text in [("AxiomAudit", audit), ("Signatures", signatures)]:
                 (work / (TARGET + label + ".lean")).write_text(text)
-            output = run([TARGET + "AxiomAudit.lean"], TARGET + "AxiomAudit.log",
-                         key=core.step_key(context, TARGET + "AxiomAudit.lean", audit.encode(), keys),
-                         driver=TARGET + "AxiomAudit.lean")
-            run([TARGET + "Signatures.lean"], TARGET + "Signatures.log",
-                key=core.step_key(context, TARGET + "Signatures.lean", signatures.encode(), keys),
-                driver=TARGET + "Signatures.lean")
+
+            def compile_step(name):
+                olean = core.source_file(name)[:-5] + ".olean"
+                return lambda: run(["-o", olean, core.source_file(name)], name + ".log", key=keys[name],
+                                   outputs=[olean])
+
+            def driver_step(label, text):
+                driver = TARGET + label + ".lean"
+                return lambda: run([driver], TARGET + label + ".log",
+                                   key=core.step_key(context, driver, text.encode(), keys), driver=driver)
+
+            # Steps run concurrently as in the core checker, each once the compiles of the
+            # modules it imports have passed; the receipt lists them in one-at-a-time order.
+            tasks = {"compile " + name: (["compile " + m for m in core.imports_of(sources[name]) if m in keys],
+                                         compile_step(name)) for name in order}
+            tasks["audit"] = (["compile " + TARGET], driver_step("AxiomAudit", audit))
+            tasks["signatures"] = (["compile " + TARGET], driver_step("Signatures", signatures))
+            try:
+                output = core.run_graph(tasks)["audit"]
+            finally:
+                core.in_serial_order(steps, ["version.log"] + [name + ".log" for name in order]
+                                     + [TARGET + "AxiomAudit.log", TARGET + "Signatures.log"])
         dependencies = {}
         for item in registry:
             assert f"'{item['name']}' does not depend on any axioms" in output, (item["name"], output)
