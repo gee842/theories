@@ -9951,6 +9951,8 @@ theorem break_carried_nowhere {c : C} {θ : Nat → Nat} (r : law.ReadsBelow par
 1. **断裂就是回路形成之处。** 能识断裂还有多远的回路，在断裂之前不存在：律只在储量失去支持时才读它。`Becoming.Runaway` 的不识与 `Becoming.Closing` 的形成是同一件事的两面：从形成所识之处看，断裂不被预见；从耦合看，经过储量的回路在断裂处才闭合。
 2. **能识距离者是断裂之前对储量水平的读。** 观察储量使回路更早形成，在还有储量时回应（P55 的 `Web.observed_raise_registers`）；这是 P55 读法中“量度、模型或他者之识”在耦合上的形式。
 
+**Ren 的决定（2026-10-16）。** P124 落地之后，对两项读法与改名的问题，Ren 答：“agree in general, need more explanation for c”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-thresholds-readings-and-measure-question.md)；c 是脊柱整合量度的修正，另行解释，不在本节）。AI 读为 Ren 取这两项读法，并同意把 `Thresholds.le_of_not_lt` 改名为 `Thresholds.le_of_not_not`（它的前提是 `¬¬ a ≤ b`，新名字恰说它所证者），陈述与证明不变；改名随 P125（§159）落地。“in general”没有指出保留，AI 不读为对落地文字每一字的判断。
+
 **作者反审。**
 1. **新律还是重述？** “只读未变者则给得相同”是非预期与读的定义的直接推论，逐步平衡的归纳是标准的。新的是：（a）把 P55 的策略、P115 的耦合强度、P118 的回路与 P122 的形成放在一个律上：读限制强度，回路在所读之内，形成在读增长之处；（b）P55 的断裂不被识对整个律成立，前提从“其余固定”换成“律只在低于阈值时读储量”，后者对经识而不观察的律是定理；（c）立律给出断裂之前的动力学，没有经过储量的回路。
 2. **两个前提不比较强弱。** P55 允许其余任意但固定；这里其余也遵从律，但不必固定。两者都不蕴含另一个；这里说的是整个律的进程。
@@ -10022,6 +10024,63 @@ theorem settled_iff_recursOrStops :
 3. **稀疏的见证的选择。** 比 2 的幂少一的步是对数频度的最简单情形。界的次数 M 并不紧（实际增长约为 t 的 log₂(1 + M) 次幂），只用作多项式之界。
 4. **二分的强度。** `RecursOrStops` 的形式是“每行某处为真，或某行处处为假”（算术层级中的 Σ⁰₂）；这里证明它与每个时程都安定等价，并给出 `LPO`。它在排中律与 `LPO` 之间的更细位置属于构造性的反推数学，这里不陈述。
 5. **范围。** 离散的步、自然数的量；强度与时程是给出的；自环之外，能到达的最大差别是否达到按返回的下界或按耦合步数的上界，没有陈述。不含伦理谓词。
+
+## 159. 观察是从所观察者出发的路线：差别只往下游去（Becoming.Observation）
+
+2026-10-16。P124 留下“一个形成怎样开始观察它所依赖的储量”（loops-within-what-a-law-reads 与 runaway-distance-unregistered 的 next_delta；`Becoming.Runaway` 中观察 `obs` 是给出的）。Ren 对 P124 的做法答：“approve your approach, please continue”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-thresholds-approach-approved.md)）；AI 读为认可做法、继续这一项。本节在第一部分之内回答：不加公理，除各定理所写者不加前提。工作板上认领为 P125。
+
+```text
+Result(s): 新增 observation-is-a-route；回答 loops-within-what-a-law-reads 与 runaway-distance-unregistered 的 next_delta 中
+           “一个形成怎样开始观察它所依赖的储量”；复用 how-much-difference-arrives（Conveyed、carried、carried_pos_iff、
+           RespondsWithin、exchangeGap、gap、gap_eq_zero_iff）、how-a-carried-difference-grows（Couples、Coupled、OnLoop、
+           Upstream、Loops.beq_self）、what-a-cut-loses（CouplesAt）、how-loops-form（strengthsBefore、couples_before_iff、
+           couples_before_mono、couples_before_of_couplesAt、Upstream.lift、Upstream.refl、Closing.join、Coupled.append、
+           Coupled.one、Closing.split、onLoop_of_closing）、loops-within-what-a-law-reads（ExchangeLaw.ReadsAt、
+           ExchangeLaw.Through.readsAt、held_while、Thresholds.same_step）、counterfactual-is-the-course（ExchangeLaw、
+           Through、Follows、ActsAlike）
+Delta: 新核心模块 Becoming.Observation（导入 Thresholds；27 项定理／32 项声明）；Becoming.Thresholds 只改一个名字
+       （Thresholds.le_of_not_lt 改为 Thresholds.le_of_not_not，陈述与证明不变）与模块说明中读法的状态
+Supplied premises / correspondence: 不加公理；各定理所写者写在定理中：律读入每个条件的时程（ReadsInto），所读的水平列出；
+       起始之差只在储量上、部分不给差；两个进程平衡、在场的形成相同、部分动作相同、其余遵从律
+Evidence: scratch_build 对 main ed704543：Becoming.Observation 27 项定理、32 项声明，Becoming.Thresholds 38 项定理、45 项声明，
+          公理报告全部为空，无警告；合并检查器回执待整合者的运行
+Boundary: 离散的步、自然数的量；律读什么、量度何时开始是给出的；只说不在下游者相同，不说在下游者必不同（读而不回应）；
+          带误差的量度、他者的识作为路线未单独陈述；不含伦理谓词
+Integration: §2 新增一段；第一部分的总陈述一条；§8 进一步证明一项；§9 新增一行；术语表两行；Becoming.lean 的导入与模块
+       说明；check_becoming.py 的核心之列与范围说明；Lean README 一行与层内导入；一项新记录与两项配对说明
+```
+
+**一、差别只往下游去。** 起始之差只在储量 c 为正、部分不给差时，在第 t 步被传到的条件都在 c 的下游，按到 t 为止形成的耦合（`conveyed_upstream`，对 P115 的 `Conveyed` 归纳：起始在 c 自身；保持由形成单调，`Upstream.before_mono`；部分的输入为零；回应把链加长一个耦合，`Upstream.snoc`）。所以所携带的量，即能到达的最多的差，在不在下游之处为零（`carried_zero_off_downstream`，由 `carried_pos_iff`）。链可接（`Upstream.single`、`Upstream.trans`）。
+
+**二、读入每个条件。** 一个律读入每个条件一个时程（`ExchangeLaw.ReadsInto`），是说部分之外的每个形成与一个条件的交换，只由时程为那个条件所标的水平决定。`Becoming.Thresholds` 的读一个时程是它的特例：对所有条件读得一样（`ExchangeLaw.ReadsAt.readsInto`），所以经识而读的律也是（`ExchangeLaw.Through.readsInto`）。读入一个条件时未读的水平耦合强度为零（`ExchangeLaw.ReadsInto.respondsWithin_unread`），所以限于所读的强度（`restrictInto`）是律的强度（`ExchangeLaw.ReadsInto.restrict`），其路线都是所读的路线（`readCouplings`：所标之处为一；`couplesAt_readCouplings`、`upstream_readCouplings`）。
+
+**三、所识即在下游。** 对每个读入每个条件一个时程、所读水平列出的律：两个平衡的进程，在场的形成相同、部分动作相同、其余遵从律，起始只在 c 上不同，那么在每一步，凡不在 c 下游（按到那一步形成的所读路线）的条件，两个进程都相同（`apart_only_downstream`，对步归纳：在 t + 1 不在下游者在 t 也不在；它的每个交换所读的水平若在下游，读它的耦合就把它接到下游，矛盾；不需判定条件，也不需条件有限）。所以一个形成与一个条件的交换，凡它在那一步读入的水平都不在下游，在两个进程中就相同（`exchange_alike_off_downstream`）；经识而读的律，凡它所识者都不在下游，它的交换就相同（`ExchangeLaw.Through.alike_off_downstream`）。它所观察的储量在自身的下游，长度为零的路线；它所识的其他条件只经一条所读的路线在下游。
+
+```lean
+theorem apart_only_downstream (r : law.ReadsInto part reads)
+    (listed : ∀ t h e s d, reads t h e s d = true → d ∈ cs)
+    (balances : L.Balances W) (balances' : L'.Balances W')
+    (present : ∀ t, L.present t = L'.present t) (acts : L.ActsAlike L' part)
+    (follows : L.Follows law part W.level) (follows' : L'.Follows law part W'.level)
+    {c : C} (others : ∀ e, e ≠ c → W.level 0 e = W'.level 0 e) :
+    ∀ t e, ¬ Upstream cs part (strengthsBefore t (readCouplings reads)) L.present c e →
+      W.level t e = W'.level t e
+```
+
+**四、路线由闭合而形成。** 到 T + 1 形成的从 c 出发的路线，是到 T 形成的路线，与经过一个在第 T 步作用的耦合者：从一条从 c 到某个水平 d 的路线，经那个耦合到 d'，再从 d' 继续（`upstream_succ_iff`、`route_forms_by_closing`），如 `Becoming.Closing` 中回路的形成。
+
+**五、量度的见证。** 一个形成既量度又汲取（`Observation.Measure.law`）：从第 T 步起每步把储量（`true`）的水平加到记录（`false`）上；每步在记录显示至少 N 时从储量汲取一个单位。它读入储量的只是那一步的记录，读入记录的只是从 T 起那一步的储量（`Measure.reads`、`Measure.readsInto`、`Measure.listed`）。T 之前没有读储量者（`Measure.no_coupling_from_stock`），储量下游只有它自己，没有经过它的回路（`Measure.downstream_before`、`Measure.no_loop_before`）；在第 T 步从储量到记录的路线形成（`Measure.route_at`；汲取每步读记录，`Measure.record_into_stock`），储量 → 记录 → 汲取的回路随之形成（`Measure.loop_at`）。两个只在储量上不同的进程，记录到 T 为止相同、储量高 d，跨过第 T 步记录多升 d（`Measure.registers_after`）；汲取回应记录（`Measure.draw_responds`）：抬高经记录被识，不涉储量的任何阈值。
+
+**读法（AI 的，待 Ren）。**
+1. **观察不是依赖之外的第二种关系。** 观察一个储量，就是站在从它出发的一条所读路线的末端：直接观察是长度为零的路线，量度、模型或他者之识是更长的路线。一个形成开始观察它原先不观察者，是一次读闭合一条路线，在某一步，如回路闭合。`Becoming.Runaway` 中给出的 `obs` 在这里是这条路线本身。
+2. **能识断裂还有多远者，是在断裂之前闭合的路线。** P124 的第二项读法（Ren 同日取）说能识距离者是断裂之前对储量水平的读；这里它是一条路线：记录在量度开始之步形成，经过储量的回路随之形成，可以在断裂之前。
+
+**作者反审。**
+1. **新律还是重述？** 差别只沿耦合传，在所携带的量的定义里已有；新的是：（a）对每个读入每个条件的律，在实际的进程上陈述，不经所携带的量，不判定条件、不需条件有限（只需所读者列出）；（b）`Becoming.Runaway` 的 `obs` 不是原始的：一个形成的交换回应储量之差，只经从储量到它所读之处的路线；（c）路线的形成与回路的形成同形。
+2. **为什么另立 ReadsInto。** `ExchangeLaw.ReadsAt` 按形成读，不分它与哪个条件交换：一个读储量的形成可以改变它与任何条件的交换，路线就没有方向。`ExchangeLaw.ReadsInto` 细化它（`ExchangeLaw.ReadsAt.readsInto`），不另立平行的定义；强度的路线在所读的路线之内（`upstream_readCouplings`），反之不然：读而强度为零。
+3. **为什么进程的定理不用强度陈述。** 由强度界一个在多处不同的历史之差，要逐处换历史，需要判定条件的相等与有限多处（`gap_le_carried` 用 `DecidableEq`）。所以对进程的定理用读的时程，对所携带的量的定理用强度（`conveyed_upstream`），两者都不判定条件。
+4. **只一个方向。** 不在下游者相同；在下游者不必不同：一个形成可以读而不回应。见证给出在下游者实际不同（`Measure.registers_after`）。
+5. **范围。** 离散的步、自然数的量；律读什么、量度何时开始、记录是否及时被读是给出的；带误差的量度未陈述。不含伦理谓词。
 
 ## English summary
 
@@ -11712,7 +11771,8 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 - **Reading bounds coupling.** A law reading a schedule (`ExchangeLaw.ReadsAt`) is coupled to every unread level with strength zero (`ExchangeLaw.ReadsAt.respondsWithin_unread`), so the strengths restricted to what is read are strengths of it (`ExchangeLaw.ReadsAt.restrict`); a law reading through a registration reads every schedule covering it (`ExchangeLaw.Through.readsAt`), and its courses are policies through registration (`ExchangeLaw.Through.policyThrough`).
 - **Loops lie within what is read.** Every coupling reads its level (`couples_reads`), a draw responds to the level it lowers only where it reads it (`self_coupling_reads`), no loop passes through a level nothing reads (`not_onLoop_unread`), and a loop forms at a step only through a formation reading there a level downstream of where it gives (`onLoop_succ_reads`).
 - **What nothing reads is carried nowhere; the break.** For every law, courses apart only in an unread stock are alike elsewhere (`unread_carried_nowhere`). A law reading a stock only below a threshold (`ExchangeLaw.ReadsBelow`; every law reading through a registration with the stock unobserved is one, `ExchangeLaw.Through.readsBelow`) carries a raise of it nowhere up to the break (`break_carried_nowhere`), and before the break is its standing law, with no loop through the stock (`ExchangeLaw.ReadsBelow.standing_no_loop`): the loop forms at the break. In the draw witness every strength couples the stock into itself (`Draw.onLoop`) and a raise shows only after the break (`Draw.diverges_at_break`).
-- **Readings (the AI's, pending Ren).** A runaway's break is where a loop forms: the blindness of `Becoming.Runaway` and the formation of `Becoming.Closing` are one event seen from two sides. What registers the distance is a reading of the stock's level before the break, which forms the loop earlier.
+- **Readings (the AI's, agreed by Ren).** A runaway's break is where a loop forms: the blindness of `Becoming.Runaway` and the formation of `Becoming.Closing` are one event seen from two sides. What registers the distance is a reading of the stock's level before the break, which forms the loop earlier.
+- **Ren's decision (16 October 2026).** Asked after P124 landed about the two readings and the renaming, Ren wrote “agree in general, need more explanation for c” ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-thresholds-readings-and-measure-question.md); c is the fix to the spine-integration measure, explained separately), read by the AI as taking both readings and agreeing to rename `Thresholds.le_of_not_lt` to `Thresholds.le_of_not_not`, which states exactly what it proves; the rename lands with P125 (section 159).
 - **Boundaries.** Which schedule a law reads and where the threshold lies are supplied; how a formation comes to observe a stock is not stated; reading only above a threshold or in other shapes is not stated; discrete steps, natural amounts; no ethical predicate.
 
 **How often couplings act: settling, runaway and its rate (P123, 16 October 2026).** P120 left three questions in what-a-cut-loses' next step and the chapter's §8: whether every schedule settles, whether every loop of recurring couplings makes the most difference that can arrive run away, and how fast a runaway is. New core module `Becoming.Frequency` (imports Closing; 83 theorems, 98 declarations, empty axiom reports), no premise beyond the strengths each statement names.
@@ -11723,3 +11783,11 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 - **Instances.** P118's self-loop couples at every step, and P122's onset at the steps from T (`Frequency.SelfLoop.always_carried`, `Frequency.SelfLoop.onset_amount`).
 - **Readings (the AI's, pending Ren).** A runaway is set by how often couplings act, not by how strong they are; strength sets only the degree. Ren called the AI's reading of "only a loop makes a difference run away" right, a reading that left couplings at only some steps open; that case now closes both ways. Only a loop of the couplings that go on can make it run away, and such a loop need not; for a self-loop, how often it couples decides exactly. That every schedule settles is a principle of reasoning, not a fact the theory asserts or denies of the unfolding.
 - **Boundaries.** Natural amounts: a positive strength is at least one, and with real amounts strengths shrinking fast enough could keep frequent returns from running away. Not stated: whether, beyond the self-loop, the most difference that can arrive meets the bound by returns or the bound by coupling steps; the spectral radius of given strengths.
+
+**Observation as a route from what is observed (P125, 16 October 2026).** P124 left open how a formation comes to observe a stock it depends on (`Becoming.Runaway` takes observation, `obs`, as given); Ren approved P124's approach and wrote "please continue". Section 159 adds one core module, `Becoming.Observation` (27 theorems, 32 declarations, empty axiom reports in a scratch build; imports Thresholds).
+- **A difference goes only downstream.** With the starting gap at one stock alone and none from the part, a gap conveyed to a condition at step `t` lies downstream of the stock by the couplings formed by `t` (`conveyed_upstream`), so the carried amount is zero everywhere else (`carried_zero_off_downstream`).
+- **Reading into each condition.** A law reads into each condition a schedule (`ExchangeLaw.ReadsInto`) when what a formation exchanges with a condition is fixed by the levels marked for it; reading a schedule in `Becoming.Thresholds`'s sense is the case alike for every condition (`ExchangeLaw.ReadsAt.readsInto`, `ExchangeLaw.Through.readsInto`); unread levels have strength zero (`ExchangeLaw.ReadsInto.respondsWithin_unread`), and routes of the restricted strengths are routes of reading (`upstream_readCouplings`).
+- **Registering is being downstream.** For every such law, two balanced courses apart at the start only in a stock are alike at every condition and step not downstream of it by the readings formed by then (`apart_only_downstream`), with no decision on conditions and no finiteness beyond the levels read being listed; a formation whose readings lie off the downstream exchanges alike (`exchange_alike_off_downstream`, and for laws reading through registration `ExchangeLaw.Through.alike_off_downstream`). A route forms by closing, as a loop does (`upstream_succ_iff`).
+- **Witness: a measurement.** From step `T` a formation adds the stock's level to a record and draws while the record shows at least `N` (`Observation.Measure`): before `T` nothing lies downstream of the stock and no loop passes through it; at `T` the route stock → record and the loop stock → record → draw form (`Measure.loop_at`); the record is alike up to `T` and differs by the raise after it (`Measure.registers_after`), and the draw responds to the record.
+- **Readings (the AI's, pending Ren).** Observation is not a second relation beside dependence: to observe a stock is to stand at the end of a route of readings from it, direct observation being the route of length zero, and a formation comes to observe what it did not by a reading that closes a route. The reading of the stock's level before the break that P124's second reading names is such a route, closing when a measurement starts.
+- **Boundaries.** Which schedule a law reads and when a measurement starts are supplied; only what lies off the downstream is shown alike (a formation may read without responding); measurement with error is not stated; discrete steps, natural amounts; no ethical predicate.

@@ -65,7 +65,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking", "Becoming.LossMatching",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Courses", "Becoming.Parting", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Frequency", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Courses", "Becoming.Parting", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.Frequency", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge", "Becoming.CompositionBridge", "Becoming.JoiningBridge", "Becoming.GranularityBridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge", "Becoming.CoursesBridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -1365,6 +1365,15 @@ SCOPE = (
     "break gives as its standing law, which does not read the stock and has no loop through it; in "
     "the draw witness every strength couples the stock into itself, and a raise shows only after "
     "the break. "
+    "Observation: a gap of one stock alone is conveyed only downstream of it, so the carried amount "
+    "is zero elsewhere; a law reading a schedule reads it into every condition, a level unread into "
+    "a condition is coupled into it with strength zero, and routes of the restricted strengths are "
+    "routes of reading; for every law reading into each condition a schedule of listed levels, two "
+    "courses apart at the start only in a stock are alike at every condition and step not downstream "
+    "of it by the readings formed by then, so a formation exchanges alike where its readings lie off "
+    "the downstream; a route forms by closing; in the measurement witness the route and the loop "
+    "through the stock form at the step the measurement starts, and the raise registers in the "
+    "record after it. "
     "Frequency: counting the steps at which anything couples, the carried amount is at most D "
     "times (1 + M) to their number, attained by a self-loop coupling at the steps of any "
     "schedule; every return around a loop at least doubles what reached it, so returns with 2^i "
