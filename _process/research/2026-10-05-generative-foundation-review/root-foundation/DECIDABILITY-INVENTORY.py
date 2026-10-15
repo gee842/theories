@@ -154,6 +154,8 @@ CONSTRUCTIONS = {
     # 2026-10-15, P109 where a move is formed (Becoming.Coupling): the policy read off a finite stretch compares
     # configurations
     'policyUpto': 'same',
+    # 2026-10-15, P83f: the learner by the least bound
+    'Identification.leastFit': 'first', 'Identification.leastBound': 'first',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '

@@ -765,7 +765,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   liar's rhythm is derived; a world answering that learner exceeds the bound. The learner not
   given the bound rests within it: a lasso hypothesis within `N` unrefuted for `2N - 1`
   steps is never refuted again, so the learner by refutation over the lasso hypotheses is right
-  at every step from `N + (2N - 1) * tri N` on, a step its record does not show. In a world a
+  at every step from `N + (2N - 1) * tri N` on, a step its record does not show. The rest step
+  itself needs no bound: the learner by the least bound under which the record bears out a lasso
+  hypothesis, given none, is right from `2N - 1` on for every `N`, and no learner is right at
+  `2N - 2` on every such history; what the bound buys is silence, not an earlier rest. In a world a
   list holds, naming configurations by their registered futures for `2N - 1` steps makes sense
   and carries the law, with no quotient. Within one world or one history Moore's bound is
   sharper: configurations have the same registered future exactly where they agree for `N - 1`

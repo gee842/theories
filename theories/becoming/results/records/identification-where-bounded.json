@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-15T12:00:00+00:00",
   "statement": {
-    "zh": "有界的记录确定历程，记录长度恰好。界给定时归纳即演绎：给定界的学习者从 2N − 1 起每步都对且不能更早；未给定界的学习者在界给出的一步之前静止。有限的名命名有意义的切分，不用商。",
-    "en": "A bounded record fixes the course at an exact length. With the bound given, induction is deduction: the learner given it is right from 2N − 1 on and none can always speak sooner; the learner not given it rests by a step the bound gives. Finite names name the split that makes sense, with no quotient."
+    "zh": "有界的记录确定历程，记录长度恰好。界给定时归纳即演绎；不给定界时，以最小的界读记录的学习者从 2N − 1 起每步都对，与任何学习者能做到的一样早：界给出沉默，不给出更早的静止。有限的名命名有意义的切分，不用商。",
+    "en": "A bounded record fixes the course at an exact length. With the bound given, induction is deduction; not given, the learner by the least bound is right from 2N − 1 on, as early as any learner can be: the bound buys silence, not speed. Finite names name the split that makes sense, with no quotient."
   },
   "laws": [
     {
@@ -169,6 +169,20 @@
         "Becoming.Law.sameFuture_iff_within",
         "Becoming.Identification.sameAhead_iff_within"
       ]
+    },
+    {
+      "zh": "静止之步不需要界：以最小的界读记录的学习者（leastBound），不被给予界，按记录在其内证实某个套索假设的最小的界中第一个被证实的假设作主张（leastFit）；它在至多 N 个状态的每个历史上从 N + N − 1 起每步都对，对每个 N（leastBound_exact）：所找到的假设在真实的界之内，因为真实的假设被证实，而 N 之内、在 N + N − 1 之前被证实的假设处处成立。给定两个值，没有学习者（给定界与否）在每个至多 M + 2 个状态的历史上于第 M + M + 2 步都对（rest_earliest），所以 N + N − 1 是对每个学习者最优的静止之步，给定界不改变它。界给出的是沉默：没有学习者既在每个一个状态的历史上于第 1 步都对，又在每个两个状态的历史上处处不被否证（rest_without_bound_refuted）；给定界的学习者在 N + N − 1 之前沉默而处处不被否证（第七条规律）。",
+      "en": "The rest step needs no bound: the learner by the least bound (leastBound), given no bound, claims by the first lasso hypothesis the record bears out within the least bound within which one is (leastFit); it is right at every step from N + N − 1 on of every history with at most N states, for every N (leastBound_exact): what it finds is within the true bound, since the true hypothesis is borne out, and a hypothesis within N borne out before N + N − 1 holds everywhere. Given two values, no learner, given the bound or not, is right at step M + M + 2 on every history with at most M + 2 states (rest_earliest), so N + N − 1 is the optimal rest step for every learner, and being given the bound does not move it. What the bound buys is silence: no learner is both right at step 1 on every history with one state and refuted at no step of every history with two states (rest_without_bound_refuted); the learner given the bound is silent before N + N − 1 and refuted nowhere (the seventh law).",
+      "declarations": [
+        "Becoming.Identification.orFit",
+        "Becoming.Identification.leastFit",
+        "Becoming.Identification.leastFit_sound",
+        "Becoming.Identification.leastFit_within",
+        "Becoming.Identification.leastBound",
+        "Becoming.Identification.leastBound_exact",
+        "Becoming.Identification.rest_earliest",
+        "Becoming.Identification.rest_without_bound_refuted"
+      ]
     }
   ],
   "hypotheses": [
@@ -177,8 +191,8 @@
       "en": "No axiom; no premise beyond the bound on states, written into each theorem (StatesBelow o N, or a world held by a list of length N)."
     },
     {
-      "zh": "学习者与按名判定相同要所识的值可判定（DecidableEq O、DecidableEq R），即 learning-by-refutation 的“值可判定”；bounded_agree、lasso_of_fits、Law.name_identifiesAlike 不要。",
-      "en": "The learner and deciding likeness by names need registered values decided (DecidableEq O, DecidableEq R), the ‘values decided’ of learning-by-refutation; bounded_agree, lasso_of_fits and Law.name_identifiesAlike do not."
+      "zh": "学习者与按名判定相同要所识的值可判定（DecidableEq O、DecidableEq R），即 learning-by-refutation 的“值可判定”；以最小的界读记录的学习者（leastBound）亦然；bounded_agree、lasso_of_fits、Law.name_identifiesAlike、rest_earliest 与 rest_without_bound_refuted 不要。",
+      "en": "The learner and deciding likeness by names need registered values decided (DecidableEq O, DecidableEq R), the ‘values decided’ of learning-by-refutation; so does the learner by the least bound (leastBound); bounded_agree, lasso_of_fits, Law.name_identifiesAlike, rest_earliest and rest_without_bound_refuted do not."
     },
     {
       "zh": "只陈述确定的律与单个所识的历程；有分支的框架与概率没有陈述。",
@@ -191,13 +205,13 @@
   ],
   "does_not_show": [
     {
-      "zh": "界必须给出。",
-      "en": "The bound must be given.",
+      "zh": "界必须成立（历程至多有 N 个状态）；学习者不必被给予它（第十五条规律），但没有界时没有记录确定下一个值。",
+      "en": "The bound must hold (the course has at most N states); the learner need not be given it (the fifteenth law), but with no bound no record fixes the next value.",
       "kind": "scope"
     },
     {
-      "zh": "静止之步 N + (2N − 1)·tri N 粗，不是最优。",
-      "en": "The rest step N + (2N − 1)·tri N is coarse, not optimal.",
+      "zh": "按否证学习者（Becoming.Learning 的 learner lassos）的静止之步 N + (2N − 1)·tri N 粗，它自己的确切静止之步没有表明；对每个学习者最优的是 2N − 1（第十五条规律）。",
+      "en": "The rest step N + (2N − 1)·tri N of the learner by refutation (learner lassos of Becoming.Learning) is coarse, and its own exact rest step is not shown; the optimum over learners is 2N − 1 (the fifteenth law).",
       "kind": "scope"
     }
   ],
@@ -220,8 +234,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Identification have empty axiom reports (receipt 20261013T094743.528770Z, some declarations under former names; the current bytes of Identification, Description and Unfolding bound by 20261013T204910.042715Z), and the checker verifies core purity. Author counterreview, with the scope of the independent review, in the integration note."
   },
   "next_delta": {
-    "zh": "未给定界的学习者的最优静止之步；Ren 对“按情境就是界”与有限名读法的判断。",
-    "en": "The optimal rest step of the learner not given the bound; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
+    "zh": "按否证学习者自己的确切静止之步；Ren 对“按情境就是界”与有限名读法的判断。",
+    "en": "The exact rest step of the learner by refutation itself; Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有记录确定下一个值；学习者静止这一点不被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。",
@@ -266,7 +280,12 @@
     "Moore 界",
     "Becoming.Law.sameFuture_iff_within",
     "Becoming.Identification.sameAhead_iff_within",
-    "Becoming.Law.joinOrbits_sound"
+    "Becoming.Law.joinOrbits_sound",
+    "Becoming.Identification.leastBound_exact",
+    "Becoming.Identification.rest_earliest",
+    "Becoming.Identification.rest_without_bound_refuted",
+    "the learner by the least bound",
+    "以最小的界读记录的学习者"
   ],
   "dependencies": [
     {
@@ -389,7 +408,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "bf3c0fc2d55f57dd16b882f8b163e5390f63c7237e17132a6f6ea8c2204c6fb4",
+      "sha256": "874f19c39146388a5073d8888f14030ecec44b668cbc435f5bcd4fd30011e111",
       "declarations": [
         "Becoming.Identification.residue",
         "Becoming.Identification.periodic_whole",
@@ -474,7 +493,15 @@
         "Becoming.Law.le_of_mem_upto",
         "Becoming.Law.lt_of_le_pred",
         "Becoming.Law.sameFuture_iff_within",
-        "Becoming.Identification.sameAhead_iff_within"
+        "Becoming.Identification.sameAhead_iff_within",
+        "Becoming.Identification.orFit",
+        "Becoming.Identification.leastFit",
+        "Becoming.Identification.leastFit_sound",
+        "Becoming.Identification.leastFit_within",
+        "Becoming.Identification.leastBound",
+        "Becoming.Identification.leastBound_exact",
+        "Becoming.Identification.rest_earliest",
+        "Becoming.Identification.rest_without_bound_refuted"
       ]
     },
     {
@@ -791,8 +818,12 @@
       "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P109: in §8 the further proof for the relational starting point becomes \"where a move is formed is given\" and Ren's choices gain its readings; one §9 row (Becoming.Coupling); the totals moved to the new receipt)."
     },
     {
-      "zh": "2026-10-15 P83e：next_delta 中“与 alike_iff_sameTests 的实例定理”由 tests-fix-likeness-where-determined 的第十四条规律回答（Becoming.Distinguishing 的 Law.sameTests_iff_within：确定的律经登记读出时，N 个配置的世界中两个配置通过相同的检验，恰当所识的未来在 N − 1 步内相同；两个世界之间 N + N′ − 1，对每一对恰好），从 next_delta 移去。见整合文档 §131。规律、前提与证明绑定不变。",
-      "en": "2026-10-15 P83e: the next_delta item ‘the instance theorem to alike_iff_sameTests’ is answered by the fourteenth law of tests-fix-likeness-where-determined (Law.sameTests_iff_within of Becoming.Distinguishing: under a determined law read through a registration, in a world of N configurations two configurations pass the same tests exactly where their registered futures agree for N − 1 steps; across two worlds N + N′ − 1, exact for every pair) and is removed from next_delta. See §131 of the integration note. Laws, premises and proof bindings are unchanged."
+      "zh": "2026-10-15 P83e：next_delta 中“与 alike_iff_sameTests 的实例定理”由 tests-fix-likeness-where-determined 的第十四条规律回答（Becoming.Distinguishing 的 Law.sameTests_iff_within：确定的律经登记读出时，N 个配置的世界中两个配置通过相同的检验，恰当所识的未来在 N − 1 步内相同；两个世界之间 N + N′ − 1，对每一对恰好），从 next_delta 移去。见整合文档 §132。规律、前提与证明绑定不变。",
+      "en": "2026-10-15 P83e: the next_delta item ‘the instance theorem to alike_iff_sameTests’ is answered by the fourteenth law of tests-fix-likeness-where-determined (Law.sameTests_iff_within of Becoming.Distinguishing: under a determined law read through a registration, in a world of N configurations two configurations pass the same tests exactly where their registered futures agree for N − 1 steps; across two worlds N + N′ − 1, exact for every pair) and is removed from next_delta. See §132 of the integration note. Laws, premises and proof bindings are unchanged."
+    },
+    {
+      "zh": "2026-10-15 P83f：按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”，回答 next_delta 中的“未给定界的学习者的最优静止之步”：对每个学习者最优的静止之步是 2N − 1，不需要界。新增第十五条规律（leastBound_exact、rest_earliest、rest_without_bound_refuted）；陈述由“……未给定界的学习者在界给出的一步之前静止。”改为“……不给定界时，以最小的界读记录的学习者从 2N − 1 起每步都对，与任何学习者能做到的一样早：界给出沉默，不给出更早的静止。”（原陈述英文：‘A bounded record fixes the course at an exact length. With the bound given, induction is deduction: the learner given it is right from 2N − 1 on and none can always speak sooner; the learner not given it rests by a step the bound gives. Finite names name the split that makes sense, with no quotient.’）；第二项假设写出新学习者要值可判定、两条否定的定理不要；“未表明”中“界必须给出”改为“界必须成立，学习者不必被给予它”，“静止之步粗”限定为按否证学习者自己的；next_delta 相应改为按否证学习者自己的确切静止之步；Identification 的引用列出新声明（只增加声明，已有声明不变）；验证范围待整合者的核心检查器运行后重新指向。见整合文档 §133。",
+      "en": "2026-10-15 P83f: following Ren's ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’ of 12 October 2026 06:01, the next_delta item ‘the optimal rest step of the learner not given the bound’ is answered: the optimal rest step for every learner is 2N − 1, and it needs no bound. A fifteenth law is added (leastBound_exact, rest_earliest, rest_without_bound_refuted); the statement's ‘the learner not given it rests by a step the bound gives’ becomes ‘not given, the learner by the least bound is right from 2N − 1 on, as early as any learner can be: the bound buys silence, not speed’ (the former statement in full: ‘A bounded record fixes the course at an exact length. With the bound given, induction is deduction: the learner given it is right from 2N − 1 on and none can always speak sooner; the learner not given it rests by a step the bound gives. Finite names name the split that makes sense, with no quotient.’); the second hypothesis states that the new learner needs values decided and the two negative theorems do not; the does_not_show items ‘the bound must be given’ and ‘the rest step is coarse’ become ‘the bound must hold, the learner need not be given it’ and a note on the learner by refutation's own step; next_delta accordingly names the learner by refutation's own exact rest step; the Identification reference lists the new declarations (declarations only added, earlier ones unchanged); the validation scope is re-pointed after the integrator's core checker run. See §133 of the integration note."
     }
   ],
   "text_versions": [

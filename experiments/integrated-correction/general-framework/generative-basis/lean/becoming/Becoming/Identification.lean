@@ -52,6 +52,15 @@ states. With no premise beyond the bound:
   the list's length (`held_learner_rests`), and on a lasso course the rest that
   `Becoming.Learning` leaves unrefuted is found (`rests_of_lasso`). The step is a function of
   the bound, which the learner does not have: its record does not show it.
+* **The rest step needs no bound.** The learner by the least bound (`leastBound`), given no
+  bound, claims by the first lasso hypothesis the record bears out within the least bound within
+  which one is; it is right at every step from `N + N - 1` on of every history with at most `N`
+  states, for every `N` (`leastBound_exact`). No learner, given the bound or not, is right at step
+  `N + N - 2` on every such history for `N ≥ 2` (`rest_earliest`), so `N + N - 1` is the optimal
+  rest step and being given the bound does not move it. What the bound buys is silence: no learner
+  right at step `1` on every history with one state is refuted at no step of every history with
+  two states (`rest_without_bound_refuted`), while the learner given the bound is silent before
+  `N + N - 1` and refuted nowhere (`withBound_holds`).
 * **A world answering its own learner exceeds the bound.** The course that answers every claim
   of the learner given `N` has more than `N` states (`answer_exceeds_bound`): a world that
   includes the learner and answers it is not within the bound the learner is given.
@@ -953,6 +962,135 @@ theorem held_learner_rests {S : Type v} {next : S → S} {s : S} {l : List S}
   learner_rests (statesBelow_iff_lasso.mpr (Learning.lasso_of_held held reg))
 
 end Resting
+
+/-! ## The rest step needs no bound -/
+
+section LeastBound
+
+variable {O : Type u}
+
+/-- The hypothesis found, or else the next search. -/
+def orFit (found next : Option (Nat × Nat)) : Option (Nat × Nat) :=
+  match found with
+  | some h => some h
+  | none => next
+
+/-- The first lasso hypothesis the record bears out within the least bound `M ≤ m` within which
+one is borne out. -/
+def leastFit [DecidableEq O] (l : List O) : Nat → Option (Nat × Nat)
+  | 0 => none
+  | m + 1 => orFit (leastFit l m) (firstFit (Fits (m + 1) l) (decFits (m + 1) l) (grid (m + 1) (m + 1)))
+
+/-- What the least bound finds within `m` is within `m` and borne out by the record. -/
+theorem leastFit_sound [DecidableEq O] {l : List O} :
+    ∀ {m : Nat} {h : Nat × Nat}, leastFit l m = some h → Fits m l h
+  | 0, h, found => nomatch (found : (none : Option (Nat × Nat)) = some h)
+  | m + 1, h, found =>
+    match e : leastFit l m with
+    | some h' =>
+      have same : h' = h := Option.some.inj
+        ((congrArg (fun f => orFit f (firstFit (Fits (m + 1) l) (decFits (m + 1) l)
+          (grid (m + 1) (m + 1)))) e).symm.trans found)
+      match leastFit_sound e with
+      | ⟨within, borne⟩ => Eq.subst (motive := fun g => Fits (m + 1) l g) same
+          ⟨Nat.le_succ_of_le within, borne⟩
+    | none => firstFit_sound
+        ((congrArg (fun f => orFit f (firstFit (Fits (m + 1) l) (decFits (m + 1) l)
+          (grid (m + 1) (m + 1)))) e).symm.trans found)
+
+/-- Where a hypothesis within `N` is borne out, the least bound finds one within `N`. -/
+theorem leastFit_within [DecidableEq O] {l : List O} {N : Nat} {h₀ : Nat × Nat}
+    (fits : Fits N l h₀) : ∀ {m : Nat}, N ≤ m → ∃ h, leastFit l m = some h ∧ h.1 + h.2 + 1 ≤ N
+  | 0, le => absurd (Nat.le_trans fits.1 le) (Nat.not_succ_le_zero _)
+  | m + 1, le =>
+    have unfolds : ∀ f : Option (Nat × Nat), leastFit l m = f → leastFit l (m + 1) =
+        orFit f (firstFit (Fits (m + 1) l) (decFits (m + 1) l) (grid (m + 1) (m + 1))) :=
+      fun _ e => congrArg (fun f => orFit f (firstFit (Fits (m + 1) l) (decFits (m + 1) l)
+        (grid (m + 1) (m + 1)))) e
+    match e : leastFit l m with
+    | some h =>
+      ⟨h, unfolds _ e, match le_succ_cases le with
+        | .inl le' => match leastFit_within fits le' with
+          | ⟨_, found, within⟩ => Eq.subst (motive := fun g => g.1 + g.2 + 1 ≤ N)
+              (Option.some.inj (found.symm.trans e)) within
+        | .inr top => Eq.subst (motive := fun n => h.1 + h.2 + 1 ≤ n) top.symm
+            (Nat.le_succ_of_le (leastFit_sound e).1)⟩
+    | none => match le_succ_cases le with
+      | .inl le' => match leastFit_within fits le' with
+        | ⟨h', found, _⟩ => nomatch (found.symm.trans e : some h' = none)
+      | .inr top =>
+        have fits' : Fits (m + 1) l h₀ := Eq.subst (motive := fun n => Fits n l h₀) top fits
+        have member : h₀ ∈ grid (m + 1) (m + 1) :=
+          mem_grid (Nat.lt_of_lt_of_le (Nat.lt_succ_of_le (Nat.le_add_left h₀.2 h₀.1)) fits'.1)
+            (Nat.lt_of_lt_of_le (Nat.lt_succ_of_le (Nat.le_add_right h₀.1 h₀.2)) fits'.1)
+        match firstFit_found (dec := decFits (m + 1) l) member fits' with
+        | ⟨h, found⟩ => ⟨h, (unfolds _ e).trans found,
+            Eq.subst (motive := fun n => h.1 + h.2 + 1 ≤ n) top.symm (firstFit_sound found).1⟩
+
+/-- **The learner by the least bound.** Given no bound, it claims by the first lasso hypothesis
+the record bears out within the least bound within which one is. -/
+def leastBound [DecidableEq O] (l : List O) : Option O := claimBy l (leastFit l l.length)
+
+/-- **The rest step needs no bound.** The learner by the least bound, given no bound, is right at
+every step from `N + N - 1` on of every history with at most `N` states, for every `N`: as early
+as the learner given `N` (`withBound_exact`), and as early as any learner can be
+(`rest_earliest`). What it finds is within the true bound, since the true hypothesis is borne out,
+and a hypothesis within `N` borne out before `N + N - 1` holds (`bounded_induction`). -/
+theorem leastBound_exact [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : StatesBelow o N)
+    (late : N + N - 1 ≤ t) : leastBound (Learning.record o t) = some (o t) :=
+  have N_le : N ≤ N + N - 1 := le_twice_less_one (statesBelow_pos bound)
+  have long : N ≤ (Learning.record o t).length :=
+    Eq.subst (motive := fun n => N ≤ n) (Learning.record_length o t).symm (Nat.le_trans N_le late)
+  match bounded_hypothesis bound with
+  | ⟨i, q, within, holds⟩ =>
+    match leastFit_within (l := Learning.record o t) (h₀ := (i, q))
+        ⟨within, borneOut_record_iff.mpr fun t' _ => holds t'⟩ long with
+    | ⟨(i', q'), found, within'⟩ =>
+      have borne := (leastFit_sound found).2
+      have speaks : i' + q' + 1 ≤ t := Nat.le_trans within' (Nat.le_trans N_le late)
+      have holds' : Learning.Holds (Learning.lasso (i', q')) o :=
+        bounded_induction bound within' fun t' lt =>
+          borneOut_record_iff.mp borne t' (Nat.lt_of_lt_of_le lt late)
+      match Learning.back_made o
+          (Nat.lt_of_lt_of_le (Nat.lt_succ_of_le (Nat.le_add_left q' i')) speaks) with
+      | ⟨v, at_back⟩ =>
+        have value : Learning.lasso (i', q') (Learning.record o t) = some v :=
+          (Learning.lasso_claims (o := o) (h := (i', q')) speaks).trans at_back
+        have right : v = o t :=
+          Learning.eq_of_not_refuted
+            (Eq.subst (motive := fun c => ¬ Learning.Refuted c (o t)) value (holds' t))
+        (congrArg (claimBy (Learning.record o t)) found).trans (value.trans (congrArg some right))
+
+/-- **No learner rests sooner.** Given two values, no learner is right at step `M + M + 2` on
+every history with at most `M + 2` states: with or without the bound, `N + N - 1` is the earliest
+step from which a learner can be right on every history with at most `N ≥ 2` states. -/
+theorem rest_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M : Nat) :
+    ¬ ∀ o : Nat → O, StatesBelow o (M + 2) →
+      pred (Learning.record o (M + M + 2)) = some (o (M + M + 2)) :=
+  fun all => match record_short_twice two M with
+    | ⟨o, o', bound, bound', same, differ⟩ =>
+      differ (Option.some.inj ((all o bound).symm.trans ((congrArg pred same).trans (all o' bound'))))
+
+/-- **Being given the bound buys silence, not an earlier rest.** Given two values, no learner
+right at step `1` on every history with one state is refuted at no step of every history with
+two states. A learner not given the bound that rests at `N + N - 1` for every `N`, as the learner by
+the least bound does, speaks where a larger bound would keep it silent, and is refuted there;
+the learner given the bound is silent instead (`withBound_holds`). -/
+theorem rest_without_bound_refuted {x y : O} (two : x ≠ y) (pred : List O → Option O) :
+    ¬ ((∀ o : Nat → O, StatesBelow o 1 → pred (Learning.record o 1) = some (o 1)) ∧
+      ∀ o : Nat → O, StatesBelow o 2 → Learning.Holds pred o) :=
+  fun ⟨rests, holds⟩ =>
+    have still_one : StatesBelow (fun _ => x) 1 :=
+      statesBelow_iff_lasso.mpr ⟨0, 0, Nat.le_refl 1, fun _ _ => rfl⟩
+    have turn_two : StatesBelow (Learning.holdFrom (fun _ => x) 1 y) 2 :=
+      statesBelow_iff_lasso.mpr ⟨1, 0, Nat.le_refl 2, Learning.holdFrom_lasso (fun _ => x) 1 y⟩
+    have same : Learning.record (Learning.holdFrom (fun _ => x) 1 y) 1 =
+        Learning.record (fun _ => x) 1 :=
+      congrArg (· :: []) (Learning.holdFrom_before (fun _ => x) y Nat.zero_lt_one)
+    holds _ turn_two 1 ⟨x, (congrArg pred same).trans (rests _ still_one), fun right =>
+      two (right.trans (Learning.holdFrom_after (fun _ => x) y (Nat.le_refl 1)))⟩
+
+end LeastBound
 
 end Identification
 

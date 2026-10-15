@@ -8541,6 +8541,47 @@ Integration: identification-where-bounded 的 next_delta “实例定理”与 t
 
 **检查。** 在暂存区对 P83d 编译：`Becoming.Distinguishing` 10 项定理、11 项声明；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`；证明不用 `simp`、`omega`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
+## 133. 静止之步不需要界：对每个学习者 2N − 1，界只给出沉默（P83f）
+
+2026-10-15，[identification-where-bounded](../../../../theories/becoming/results/records/identification-where-bounded.md) 的 next_delta “未给定界的学习者的最优静止之步”。依据 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）。工作板上认领为 P83f。只编辑 `Becoming.Identification`，只增加声明，已有声明不变；不加公理。学习者要值可判定（与所有学习者相同）；两条否定的定理不要。
+
+```text
+Result(s): 复用 identification-where-bounded（Fits、decFits、grid、mem_grid、firstFit、firstFit_sound、firstFit_found、claimBy、
+           BorneOut、borneOut_record_iff、bounded_hypothesis、bounded_induction、statesBelow_iff_lasso、statesBelow_pos、
+           le_twice_less_one、record_short_twice、withBound_holds）；learning-by-refutation（Learning.record、lasso、
+           lasso_claims、back_made、eq_of_not_refuted、Holds、RefutedAt、holdFrom、holdFrom_lasso）；recurrence-without-premise
+           （le_succ_cases）；不新增记录，identification-where-bounded 增一条规律（第十五条），陈述随之修订
+Delta: Identification.orFit、leastFit、leastFit_sound、leastFit_within、leastBound、leastBound_exact、rest_earliest、
+       rest_without_bound_refuted
+Supplied premises / correspondence: 不加公理；leastBound 要值可判定（DecidableEq O，同 withBound）；rest_earliest 与
+       rest_without_bound_refuted 只要两个不同的值
+Evidence: scratch_build 对 main ff1f2957：Becoming.Identification 74 项定理、94 项声明（P83d 为 69、86），公理报告为空；
+       核心检查器回执待整合者的运行
+Boundary: 按否证学习者（Becoming.Learning 的 learner lassos）自己的确切静止之步没有表明（其 N + (2N − 1)·tri N 仍粗）；
+       历程必须有界（没有界时没有记录确定下一个值）；不含伦理谓词
+Integration: next_delta “最优静止之步”完成；陈述修订（原文存于记录沿革）
+```
+
+| 声明 | 内容 |
+|---|---|
+| `leastFit`、`leastFit_sound`、`leastFit_within` | **以最小的界搜索。** 对 M = 1, 2, …，在 M 之内的套索假设中找第一个被记录证实的（`Fits M`，与给定界的学习者同一条件），找到即停。找到的在其界之内且被证实；凡有某个 N 之内的假设被证实，且搜索至少到 N，就找到一个 N 之内的 |
+| `leastBound` | **以最小的界读记录的学习者。** 不被给予界；在长 t 的记录上，以搜索到 t 时找到的假设作主张 |
+| `leastBound_exact` | **静止之步不需要界。** 在至多 N 个状态的每个历史上，从 2N − 1 起每步都对，对每个 N。真实的假设（N 之内）被证实，所以找到的在 N 之内；N 之内、在 2N − 1 之前被证实的假设处处成立（`bounded_induction`），所以它的主张对 |
+| `rest_earliest` | **没有学习者更早。** 给定两个值，没有学习者在每个至多 M + 2 个状态的历史上于第 M + M + 2 步都对：`record_short_twice` 的两个历史在那之前记录相同、在那里不同，同一个记录上的主张至多对一个 |
+| `rest_without_bound_refuted` | **界给出沉默。** 给定两个值，没有学习者既在每个一个状态的历史上于第 1 步都对，又在每个两个状态的历史上处处不被否证：常值历史与从第 1 步起换值的历史在第 1 步之前记录相同 |
+
+**它回答了什么。** §97 留下：未给定界的按否证学习者从 N + (2N − 1)·tri N 起每步都对，这一步粗。这里回答更强的问题：在所有学习者中，最优的静止之步是 2N − 1，而达到它不需要被给予界。以最小的界读记录，就是在每一步用记录所容许的最小的界：真实的界使这个最小的界不超过它，而 Fine–Wilf 的界使任何 N 之内、在 2N − 1 之前被证实的假设都是整个历程的律。所以给定界与不给定界在静止之步上没有差别；差别在于沉默：给定界的学习者在 2N − 1 之前不说，因而处处不被否证（`withBound_holds`）；不给定界的学习者要在每个 N 上都于 2N − 1 静止，就必须在较小的界上已说，因而在较大的界的历史上被否证（`rest_without_bound_refuted`）。
+
+**读法（AI 的，待 Ren）。** Ren 推测“the full "truth" can be derived, situationally, including the cognition/controller part”。§97 的读法是：“按情境”就是界。这里更进一步：推出不需要知道界，只需要界成立。在有界的世界中，一个不知道界的认知者，以记录所容许的最简的律作主张，与知道界的认知者同样早地得到律；知道界只让它在那之前不出错。读法是 AI 的，Ren 的判断未给出。
+
+**作者反审。**
+1. **已知的结果。** 以与数据一致的最简假设作主张（Occam 式、按大小枚举的一致学习者）在归纳推理中是标准的；Gold（1967）的极限中的辨识与按枚举的辨识亦然。增量是：在核心中不用公理地给出确切的静止之步 2N − 1，表明它对每个学习者最优且与是否被给予界无关，并把界的作用精确为沉默（refuted nowhere）。
+2. **按否证学习者。** `Becoming.Learning` 的按否证学习者只在被否证时前进一个假设，不跳到第一个一致的；它自己的确切静止之步仍未表明。`learner_rests` 保留。
+3. **可判定性。** `leastBound` 要值可判定，与 `withBound` 相同；两条否定的定理不要。可判定性清点中 `leastFit` 与 `leastBound` 归为“首个符合者”。
+4. **名字。** `leastFit`、`leastBound`（以最小的界）、`rest_earliest`、`rest_without_bound_refuted` 都是结构性的名字。
+
+**检查。** 在暂存区对 main ff1f2957 编译：`Becoming.Identification` 74 项定理、94 项声明；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`；证明不用 `simp`、`omega`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -9863,4 +9904,6 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **What the record fixes.** Along a course the moves read as formed through the configurations exactly where some relation giving at most one move at each configuration gives them, with no decision (`lumped_iff_singleValued`); on a finite stretch with equality decided, no policy gives them exactly where a configuration recurs with the move varied (`no_policy_upto_iff`). Where nothing recurs every reading fits: a part keeping its history reads every move as its own (`Run.keepHistory_formed`), and one course is admitted by the part's law of the move and by the rest's (`TwoClocks.one_course_two_laws`), so, like requirement in `Becoming.Reading`, whose move it is belongs to the law. Experiment needs return (P53); attribution needs recurrence with variation.
 - **Readings (the AI's, pending Ren).** Acting and undergoing are one move read from its two sides; an input is the rest's configuration, and a label from outside is a move whose forming the representation leaves out; whose move it is, is a claim about courses not taken; reading more, more is one's own; closed is not own; novelty in what is done needs openness or growth.
 
-**Distinguishing: the tests are a bounded record, and the depth across two frames is exact, P83e (15 October 2026).** Two open items, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October and “offer it to them, keep proving” of 15 October: the instance theorem to `alike_iff_sameTests` (identification-where-bounded) and the exactness of N + N′ − 1 between two branching frames (tests-fix-likeness-where-determined). Section 131 adds the core module `Becoming.Distinguishing`, the first to import both `Identification` and `Likeness`; no existing module changes. Under a determined law read through a registration, in a world a list of N configurations holds, two configurations pass the same tests exactly where their registered futures agree for N − 1 steps (`Law.sameTests_iff_within`). Across two worlds of N and N′ configurations the length is N + N′ − 1 (`Law.sameTests_iff_below_across`). Infinitely many tests are fixed by finitely many registered values. Where each configuration's single move is named by what is registered there (`Law.labelled`), likeness to depth k is agreement for k steps (`Law.alikeTo_labelled_iff`). Every history with at most N states is the course of a law on N configurations (`Law.realized_within`). So the two courses of `Identification.bounded_agree_exact` give, for every N and N′, finite decided frames of N and N′ configurations alike to depth N + N′ − 2 and not alike (`labelled_across_exact`), and registered worlds agreeing for N + N′ − 2 steps that do not pass the same tests (`registered_across_exact`). One pair of courses thus witnesses three exactness results: Fine and Wilf's N + N′ − 1, the length of the tests across two worlds, and the depth across two branching frames. Not constructed: exactness of N − 1 for the tests of one world wholly held by N configurations. Scratch build: 10 theorems, 11 declarations, empty axiom reports. Not yet independently reviewed.
+**Distinguishing: the tests are a bounded record, and the depth across two frames is exact, P83e (15 October 2026).** Two open items, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October and “offer it to them, keep proving” of 15 October: the instance theorem to `alike_iff_sameTests` (identification-where-bounded) and the exactness of N + N′ − 1 between two branching frames (tests-fix-likeness-where-determined). Section 132 adds the core module `Becoming.Distinguishing`, the first to import both `Identification` and `Likeness`; no existing module changes. Under a determined law read through a registration, in a world a list of N configurations holds, two configurations pass the same tests exactly where their registered futures agree for N − 1 steps (`Law.sameTests_iff_within`). Across two worlds of N and N′ configurations the length is N + N′ − 1 (`Law.sameTests_iff_below_across`). Infinitely many tests are fixed by finitely many registered values. Where each configuration's single move is named by what is registered there (`Law.labelled`), likeness to depth k is agreement for k steps (`Law.alikeTo_labelled_iff`). Every history with at most N states is the course of a law on N configurations (`Law.realized_within`). So the two courses of `Identification.bounded_agree_exact` give, for every N and N′, finite decided frames of N and N′ configurations alike to depth N + N′ − 2 and not alike (`labelled_across_exact`), and registered worlds agreeing for N + N′ − 2 steps that do not pass the same tests (`registered_across_exact`). One pair of courses thus witnesses three exactness results: Fine and Wilf's N + N′ − 1, the length of the tests across two worlds, and the depth across two branching frames. Not constructed: exactness of N − 1 for the tests of one world wholly held by N configurations. Scratch build: 10 theorems, 11 declarations, empty axiom reports. Not yet independently reviewed.
+
+**The rest step needs no bound: 2N − 1 for every learner, and the bound buys only silence, P83f (15 October 2026).** This answers identification-where-bounded's open item “the optimal rest step of the learner not given the bound”, under Ren's “keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them” of 12 October. Section 133 adds the learner by the least bound (`leastBound`). It is given no bound, and claims by the first lasso hypothesis the record bears out within the least bound within which one is. On every history with at most N states it is right at every step from 2N − 1 on, for every N (`leastBound_exact`), because what it finds lies within the true bound and Fine and Wilf's bound makes it the law. Given two values, no learner, given the bound or not, is right at step 2N − 2 on every such history (`rest_earliest`, from `record_short_twice`). So 2N − 1 is the optimal rest step, and being given the bound does not move it. What the bound buys is silence: no learner right at step 1 on every one-state history is refuted nowhere on every two-state history (`rest_without_bound_refuted`), whereas the learner given the bound stays silent and is refuted nowhere. The record's statement is revised accordingly (the former statement kept in its history). The learner by refutation's own exact step stays open; `learner_rests` is kept. Reading (the AI's): deriving needs the bound to hold, not to be known. Edits `Becoming.Identification` only; scratch build: 74 theorems, 94 declarations, empty axiom reports. Not yet independently reviewed.
