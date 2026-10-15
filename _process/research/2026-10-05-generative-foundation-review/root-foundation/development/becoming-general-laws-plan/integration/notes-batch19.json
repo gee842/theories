@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T184418.886926Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "I4b 第三项：Becoming.Horizon 的条目加有限历史否证什么",
+   "en": "I4b item 3: the Becoming.Horizon bullet gains what a finite history refutes"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "I4b 第三项：§9 的 Becoming.Horizon 一行（12 → 34 项定理，改为双语）与外围实例 PrefixSafetyCorrespondence 一行，外围实例的列举加入它；总数改据新回执",
+   "en": "I4b item 3: the §9 row of Becoming.Horizon (12 → 34 theorems, now bilingual) and a peripheral-instance row for PrefixSafetyCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第145节（整合 I4b 第三项：有限历史否证什么，PrefixSafety 接入）及其英文段；此前各节不变",
+   "en": "section 145 (integration I4b item 3: what a finite history refutes, PrefixSafety joined) with its English paragraph; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "I4b 第三项：refutable_passes_iff_markov 列入边界，边界句加门处的起源与前缀检验的否证",
+   "en": "I4b item 3: refutable_passes_iff_markov added to the boundary, whose sentence gains the origin at a gate and refutation by prefix tests"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T184418.886926Z 上重新生成：边界句加门处的起源与前缀检验的否证；各类数目不变",
+   "en": "regenerated on receipt 20261015T184418.886926Z: the boundary sentence gains the origin at a gate and refutation by prefix tests; every count unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变",
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md": {
+   "zh": "I4b 第三项：PrefixSafety 改为已接入，加 PrefixSafetyCorrespondence 一行",
+   "en": "I4b item 3: PrefixSafety marked joined, with a row for PrefixSafetyCorrespondence"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md": {
+   "zh": "I4b 第三项：一段说明 PrefixSafetyCorrespondence 及其检查器；PrefixSafety 不变",
+   "en": "I4b item 3: a paragraph on PrefixSafetyCorrespondence and its checker; PrefixSafety unchanged"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing I4b item 3 (study section 145): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月16日，I4b 第三项落地（研究第145节）：改绑新回执并更新哈希："
+ }
+}

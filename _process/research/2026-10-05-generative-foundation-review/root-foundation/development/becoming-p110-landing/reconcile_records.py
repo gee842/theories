@@ -130,10 +130,12 @@ FAILURES = []
 # Readings posed after Ren's reply of 15 October 2026 on the identification line ("reality is
 # always situational") and left for Ren by their owner; not within the delegation's list. Ren took
 # the AI's reading of Ren's clarification on 16 October 2026 (P117). Records added after the
-# delegation keep their own status: I4b-1's every-origin-passes-the-gate (its reading pending
-# Ren) and P117's weights-count-situations (readings Ren took).
+# delegation keep their own status: I4b-1's every-origin-passes-the-gate and I4b-3's
+# what-a-finite-history-refutes (readings pending Ren), and P117's weights-count-situations
+# (readings Ren took).
 EXCLUDE = {"identification-where-runs-part", "typicality-by-counting",
-           "every-origin-passes-the-gate", "weights-count-situations"}
+           "every-origin-passes-the-gate", "weights-count-situations",
+           "what-a-finite-history-refutes"}
 
 
 def apply(record):

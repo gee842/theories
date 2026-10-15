@@ -13,10 +13,10 @@
 | [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 72 | 1,880 |
 | [支持与更新 / Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
 | [学习、预测与动力学 / Learning, prediction and dynamics](lean-declarations/learning.md) | 51 | 889 |
-| [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
+| [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 42 | 867 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 258 | 8,317 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 258 | 8,339 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -504,6 +504,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PredictionProtocolCompletion.lean](lean-declarations/learning.md#module-6e3dabe05d89) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [PredictionProtocolObservation.lean](lean-declarations/learning.md#module-befd3cdaff45) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [PrefixSafety.lean](lean-declarations/abstraction.md#module-ecba5d8a9232) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
+| [PrefixSafetyCorrespondence.lean](lean-declarations/abstraction.md#module-8f571422b6d0) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [PremiseNecessity.lean](lean-declarations/core.md#module-2c46d6d47a5c) | 生成核心与关系结构 / Generative core and relational structure |
 | [Premises.lean](lean-declarations/core.md#module-5515a55f2204) | 生成核心与关系结构 / Generative core and relational structure |
 | [PreparationCorrespondence.lean](lean-declarations/ethics.md#module-eec9d88a220d) | 规范根据与生成方向 / Normative grounding and generative direction |

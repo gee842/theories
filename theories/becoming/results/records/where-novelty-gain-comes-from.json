@@ -150,8 +150,8 @@
     "conditional-not-universal"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Gain 的 35 项声明（30 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §146；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 35 declarations of Becoming.Gain, 30 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 146; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Gain 的 35 项声明（30 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §147；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 35 declarations of Becoming.Gain, 30 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 147; not independently reviewed."
   },
   "next_delta": {
     "zh": "界的可达：有家族实现界内构型数那么多次首次到访；增益与新的确切比例；分支过程上的同样规律；实数的量；独立审查。",
@@ -504,17 +504,17 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "5327953672ba2f9b89d64aae018663ba91b3cd6214327747da8dfc446009ab2b"
+      "sha256": "62072edfed76bc13fb41718cec6aaa038621c32807583b537e97d339cdf4d6c6"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "5aaf0e4a19f783180acfd03cfd3e65c7da601dac83139c50ce70a2a5b41917d5"
+      "sha256": "44b85e32bea73b58c487c4ed66d1e1948c8bbffad4d2d87316322843aeada2a1"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7f1aa4ae79a5f5b4eafa0ef183f7883d67cb9a7c9760321c482b30baa6ed2765"
+      "sha256": "4f2136c0ca5326386eeb08b36f2fbe4e644b01f98f09336d63da27780042c337"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md",
@@ -530,8 +530,8 @@
   "proof_bindings": [],
   "history": [
     {
-      "zh": "2026-10-16：新增，证明 returning-novelty-forgetting-on-levels 的读法“新而不止是来自部分之外的增益”（P111，Ren 2026-10-15 的交托与“push the frontier of completeness”）；研究 §146。",
-      "en": "16 October 2026: added, proving the reading of returning-novelty-forgetting-on-levels that novelty without end is gain from beyond the part (P111, on Ren's delegation of 15 October 2026 and “push the frontier of completeness”); study section 146."
+      "zh": "2026-10-16：新增，证明 returning-novelty-forgetting-on-levels 的读法“新而不止是来自部分之外的增益”（P111，Ren 2026-10-15 的交托与“push the frontier of completeness”）；研究 §147。",
+      "en": "16 October 2026: added, proving the reading of returning-novelty-forgetting-on-levels that novelty without end is gain from beyond the part (P111, on Ren's delegation of 15 October 2026 and “push the frontier of completeness”); study section 147."
     }
   ],
   "text_versions": []
