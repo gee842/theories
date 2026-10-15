@@ -9,6 +9,8 @@ m=json.load(open(S+'modules.json'))
 SNAP=re.compile(r'^(\d{9,}|\d{8}T\d{6}.*|.*-runs?|runs?|.*-checks|checks|sources|.*-verification|verification|.*-history|history)$')
 for o in m:
     o['live']=[p for p in o['paths'] if not any(SNAP.match(seg) for seg in p.split('/')[:-1])]
+    # The canonical path: a module's own folder before a review, landing or development copy of it.
+    o['live'].sort(key=lambda p: (p.startswith(('_process/', 'drafts/')) or '/development/' in p, p))
 receipt=json.load(open(L+'becoming/becoming-verification.json'))
 layer={mm['module']:mm.get('layer') for mm in receipt['modules']}
 run_by_stem={mod.split('.')[-1]:mod for mod in receipt['source_paths']}
