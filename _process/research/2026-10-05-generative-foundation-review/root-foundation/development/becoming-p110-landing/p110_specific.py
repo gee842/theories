@@ -205,10 +205,15 @@ SPECIFIC = {
     "identification-where-bounded": [
         # Ren's reply of 15 October 2026 ("reality is always situational") decides the first
         # reading, not the delegation; the correspondence already records it (P116). The other
-        # readings, the finite name among them, are adopted (DELEGATED-CHOICES D34). The judgment
-        # on "situationally" with its qualification was posed after Ren's reply and stays Ren's.
-        (f"读法（AI 的，{ZA}）：“按情境”就是界；", f"读法（AI 的，{ZA}，{DC} D34）："),
-        (f"Readings (the AI's, {EA}): ‘situationally’ is the bound; ", f"Readings (the AI's, {EA}, {DC} D34): "),
+        # readings are adopted (DELEGATED-CHOICES D34); the finite name, which D34 adopted as an
+        # analogy, Ren took on 16 October 2026 ("take 2"). The judgment on "situationally" with
+        # its qualification was posed after Ren's reply and stays Ren's; P119's owner holds this
+        # record's next step on it.
+        (f"读法（AI 的，{ZA}）：“按情境”就是界；",
+         f"读法（AI 的，{ZA}，{DC} D34；有限的名由 Ren 2026-10-16 取作类比，“take 2”：定理是有界时类有有限的名，“名可名”只是类比）："),
+        (f"Readings (the AI's, {EA}): ‘situationally’ is the bound; ",
+         f"Readings (the AI's, {EA}, {DC} D34; the finite name taken by Ren on 16 October 2026 as an analogy, “take 2”: "
+         "the theorem is that within a bound kinds have finite names, and 名可名 is an analogy only): "),
         ("Ren 对有限名读法的判断，及对“按情境”连同其限定（推出到运行不分开为止，权重只经典型的历程显示）的判断。",
          "Ren 对“按情境”连同其限定（推出到运行不分开为止，权重只经典型的历程显示）的判断；证明按否证学习者确切的静止之步，"
          "穷举得奇数 N ≥ 3 时为 (N³ − N)/4 + 3。"),
@@ -634,11 +639,11 @@ DNUM = {
 # A sentence added to the history note where Ren's own words, not the delegation, decide.
 EXTRA_NOTE = {
     "identification-where-bounded": (
-        "“按情境就是界”不采用，由 Ren 2026-10-15 的回答决定，不由交托决定；有限名的读法采用；"
-        "“按情境”连同其限定的判断在 Ren 的回答之后提出，仍属 Ren。",
+        "“按情境就是界”不采用，由 Ren 2026-10-15 的回答决定，不由交托决定；有限名的读法由 Ren "
+        "2026-10-16 取作类比（“take 2”）；“按情境”连同其限定的判断在 Ren 的回答之后提出，仍属 Ren。",
         "‘Situationally’ as the bound is not adopted, as Ren's reply of 15 October 2026 decides, not the "
-        "delegation; the finite-name reading is adopted; the judgment on ‘situationally’ with its "
-        "qualification, posed after Ren's reply, stays Ren's."),
+        "delegation; Ren took the finite-name reading as an analogy on 16 October 2026 (“take 2”); the "
+        "judgment on ‘situationally’ with its qualification, posed after Ren's reply, stays Ren's."),
 }
 
 
