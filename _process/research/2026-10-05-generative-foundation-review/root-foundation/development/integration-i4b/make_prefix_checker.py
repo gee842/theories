@@ -1,26 +1,30 @@
 #!/usr/bin/env python3
-"""Integration I4b item 3: write the PrefixSafety instance checker (run from the repository root):
-python3 -B make_prefix_checker.py
+"""Integration I4b items 3 and 4: write the instance checker of a completion-package module (run from the
+repository root): python3 -B make_prefix_checker.py [SPEC MODULE]
 
-It runs `../integration-i3e/make_checker.py prefix.json` and then makes the three changes a module outside the
-Lean root needs, each asserted to apply once:
+With no arguments it writes the PrefixSafety checker from `prefix.json` (item 3); item 4 runs it with
+`branching.json FiniteBranching`. It runs `../integration-i3e/make_checker.py SPEC` and then makes the three changes
+a module outside the Lean root needs, each asserted to apply once:
 * the Lean root is `generative-basis/lean`, two folders up from the completion package and down into `lean`;
-* the core's module index covers that root only, so `PrefixSafety` and the target are added from the package
+* the core's module index covers that root only, so the package module and the target are added from the package
   folder, and source paths are written relative to the Lean root with `os.path.relpath`;
-* `PrefixSafety` matches the package receipt `verification.json`. The package checker `check.py` writes no status
+* the package module matches the package receipt `verification.json`. The package checker `check.py` writes no status
   field: it writes the receipt only after every module compiled fresh and every audit passed, so the receipt counts
   as passed when it says so (`fresh_build`, no custom axiom, no proof hole).
 """
+import json
+import os
 import subprocess
 import sys
 from pathlib import Path
 
 KIT = Path(__file__).resolve().parent
-OUT = Path('experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/'
-           'formal/check_prefix_safety_correspondence.py')
+SPEC, MODULE = (KIT / sys.argv[1], sys.argv[2]) if len(sys.argv) > 2 else (KIT / 'prefix.json', 'PrefixSafety')
+spec = json.loads(SPEC.read_text())
+OUT = Path(os.path.normpath(Path('experiments/integrated-correction/general-framework/generative-basis/lean')
+                            / spec['dir'] / spec['checker']))
 
-subprocess.run([sys.executable, '-B', str(KIT.parent / 'integration-i3e' / 'make_checker.py'), str(KIT / 'prefix.json')],
-               check=True)
+subprocess.run([sys.executable, '-B', str(KIT.parent / 'integration-i3e' / 'make_checker.py'), str(SPEC)], check=True)
 s = OUT.read_text()
 
 
@@ -46,9 +50,9 @@ change('''            receipts.append((str(path.relative_to(LEAN_ROOT)), text))
     return receipts
 ''')
 change('''    index = core.module_index()
-''', '''    index = core.module_index()
-    # The core indexes its Lean root only; PrefixSafety and this module sit in the completion package.
-    for name in ("PrefixSafety", TARGET):
+''', f'''    index = core.module_index()
+    # The core indexes its Lean root only; {MODULE} and this module sit in the completion package.
+    for name in ("{MODULE}", TARGET):
         assert name not in index, name
         index[name] = [HERE / (name + ".lean")]
 ''')
