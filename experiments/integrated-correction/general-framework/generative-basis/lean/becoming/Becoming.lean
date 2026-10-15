@@ -1024,6 +1024,25 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   weigh, times d, at most that, out of (p + q)^n: the counting form of the law of large numbers.
   The weights are `Becoming.Weighted`'s counting weights of free branching. That the course which
   happens is typical is not derived: every course is a run.
+* `Becoming.Gain` (L3): where novelty's gain comes from, with no premise. With the rest of the
+  whole counted, every rise is given: across a step at which a family's stock rises, some relatum
+  gives it more than it takes, a formation taking part or the rest, found by checking each one taking
+  part. Under the first law a family without repetition that rises is given net by the rest or is
+  open there; a finite whole has no boundary to cross, so every rise of it is the rest's, and with the
+  rest giving it nothing net it stays within its stock, returns and forgets, and is not new at every
+  step. Novelty needs gain, first visits without end included, and so does new formation without end
+  where what forms requires a fixed amount within the family: no finite family closes over endless
+  novelty. Counting on is given each unit by the rest.
+* `Becoming.Gluing` (L3): when readings in context glue, for parity, with no premise beyond the
+  listed claims and contexts. A contradiction is a selection of contexts, repetition allowed,
+  counting every claim an even number of times while the parities it requires add up to odd: every
+  context-free assignment fails an odd number of its contexts. With equality of claims decided and
+  the claims listed without repetition this is the only obstruction: for every list of contexts
+  either a context-free assignment meets each of them or a selection of them contradicts, found by
+  eliminating the claims one at a time, so the readings glue exactly where no selection contradicts.
+  A mixture of context-free assignments meets at most `m − 1` of a contradiction's `m` contexts on
+  average, while readings indexed by context meet all `m`: Specker's boxes, the CHSH game and the
+  Mermin–Peres square are instances.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
