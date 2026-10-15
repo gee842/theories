@@ -6,7 +6,9 @@ The old receipts are the base's; the new ones are the working tree's. In each re
 old core and periphery stamps, the old package counts and the periphery's closure count become the new
 ones, and the record gets one history entry saying so (the integrator's convention since P58b). A
 reference hash is refreshed only where the stored hash equals the base's bytes, that is, where the drift is
-this landing's edit, read before this step; any other stale reference is reported and left alone. The
+this landing's edit, read before this step; any other stale reference is reported and left alone. A
+Markdown reference whose change lies outside what the record cites keeps its hash: the research check
+already accepts it (RESULT-WORKFLOW.md), so the record is not rewritten. The
 new records written by make_records.py are skipped. This is not permission to refresh unrelated drift.
 Run only after reviewing the source changes of this landing.
 """
@@ -29,6 +31,9 @@ D = 'experiments/integrated-correction/general-framework/generative-basis/lean'
 RCPT = f'{D}/becoming/becoming-verification.json'
 PERI = f'{D}/universal-ethics/generative-capacity/correction-inquiry-verification.json'
 SKIP = set(config.RECORDS)
+sys.path.insert(0, str(ROOT))
+from tools.research import registry
+registry.ROOT = ROOT
 
 
 def git(*args):
@@ -78,7 +83,7 @@ for path in changed:
         head_sha[path] = hashlib.sha256(git('show', f'{BASE}:{path}')).hexdigest()
     except subprocess.CalledProcessError:
         head_sha[path] = None
-repointed, rewritten, stale = 0, 0, []
+repointed, rewritten, stale, kept = 0, 0, [], 0
 for f in sorted(glob.glob(str(ROOT / 'theories/becoming/results/records/*.json'))):
     record = json.loads(Path(f).read_text())
     if record['id'] in SKIP:
@@ -100,13 +105,16 @@ for f in sorted(glob.glob(str(ROOT / 'theories/becoming/results/records/*.json')
         path = ref['path']
         if path in changed:
             now = hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
-            if ref.get('sha256') == head_sha[path]:
-                ref['sha256'] = now
+            if ref.get('sha256') == head_sha[path] != now:
+                if registry.scoped_drift(record, path, ref['sha256'], ROOT / path) is None:
+                    kept += 1
+                else:
+                    ref['sha256'] = now
             elif ref.get('sha256') != now:
                 stale.append((record['id'], path))
     if json.dumps(record, ensure_ascii=False) != before:
         Path(f).write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')
         rewritten += 1
-print('records re-pointed:', repointed, 'rewritten:', rewritten)
+print('records re-pointed:', repointed, 'rewritten:', rewritten, 'references kept (changed outside what they cite):', kept)
 for item in stale:
     print('stale, left alone:', *item)

@@ -229,7 +229,10 @@ def check_or_render(render=False, base=None, ids=None):
         errors.append('Research inputs changed during this operation; rerun against the latest source versions.')
     scoped = [d for d in drift if d['id'] in selected]
     result = {'records': len(records), 'selected_records': sorted(selected), 'errors': errors, 'source_drift': scoped, 'unrelated_source_drift': [d for d in drift if d['id'] not in selected],
-              'style_warnings': {**style.summary(warnings), 'list': 'python3 -B tools/research/research.py lint [--ids ...]'}}
+              'style_warnings': {**style.summary(warnings), 'list': 'python3 -B tools/research/research.py lint [--ids ...]'},
+              # Reviewed Markdown sources changed only outside what each record cites: the
+              # reviewed lines are intact, so the record needs no new review.
+              'changed_outside_cited': len([g for g in registry.GROWN if g['id'] in selected])}
     if ids or base:
         result['selected_style_warnings'] = [f for f in warnings if f['id'] in selected]
     result['scope'] = 'Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation.'

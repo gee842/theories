@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter, defaultdict
+from functools import lru_cache
 import hashlib
 import json
 import os
@@ -56,54 +57,56 @@ def discover(glob: str) -> list[str]:
     return sorted(x.decode("utf-8") for x in result.stdout.split(b"\0") if x)
 
 
+SCRUB_NEXT = {"code": re.compile(r'/-|--|"'), "comment": re.compile(r"/-|-/"), "string": re.compile(r'\\|"')}
+
+
 def scrub(source: str) -> str:
     """Blank nested comments and strings while retaining offsets and line breaks."""
-    out = list(source)
+    out = []
     i = 0
     depth = 0
     string = False
-    while i < len(source):
-        if depth:
-            if source.startswith("/-", i):
-                out[i:i + 2] = "  "
-                depth += 1
-                i += 2
-            elif source.startswith("-/", i):
-                out[i:i + 2] = "  "
-                depth -= 1
-                i += 2
-            else:
-                if source[i] != "\n":
-                    out[i] = " "
-                i += 1
-        elif string:
-            if source[i] == "\\":
-                out[i] = " "
-                if i + 1 < len(source) and source[i + 1] != "\n":
-                    out[i + 1] = " "
-                i += 2
-            else:
-                if source[i] == '"':
-                    string = False
-                if source[i] != "\n":
-                    out[i] = " "
-                i += 1
-        elif source.startswith("/-", i):
-            out[i:i + 2] = "  "
-            depth = 1
-            i += 2
-        elif source.startswith("--", i):
-            stop = source.find("\n", i)
-            if stop == -1:
-                stop = len(source)
-            out[i:stop] = " " * (stop - i)
-            i = stop
-        elif source[i] == '"':
-            out[i] = " "
-            string = True
-            i += 1
+    n = len(source)
+
+    def blank(j: int, k: int) -> None:
+        out.append(re.sub(r"[^\n]", " ", source[j:k]))
+
+    while i < n:
+        mode = "comment" if depth else "string" if string else "code"
+        match = SCRUB_NEXT[mode].search(source, i)
+        stop = match.start() if match else n
+        if mode == "code":
+            out.append(source[i:stop])
         else:
-            i += 1
+            blank(i, stop)
+        if not match:
+            break
+        token = match.group()
+        if mode == "comment":
+            depth += 1 if token == "/-" else -1
+            blank(stop, stop + 2)
+            i = stop + 2
+        elif mode == "string":
+            if token == '"':
+                string = False
+                blank(stop, stop + 1)
+                i = stop + 1
+            else:
+                blank(stop, min(stop + 2, n))
+                i = stop + 2
+        elif token == "/-":
+            depth = 1
+            blank(stop, stop + 2)
+            i = stop + 2
+        elif token == "--":
+            end = source.find("\n", stop)
+            end = n if end == -1 else end
+            blank(stop, end)
+            i = end
+        else:
+            string = True
+            blank(stop, stop + 1)
+            i = stop + 1
     return "".join(out)
 
 
@@ -191,6 +194,7 @@ def group(path: str) -> str:
     return "other"
 
 
+@lru_cache(maxsize=None)
 def local_link(doc: str, target: str) -> str | None:
     target = target.strip("<>")
     parsed = urlsplit(target)
