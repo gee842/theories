@@ -312,8 +312,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z; periphery receipt 20261013T095049.338744Z): the theorems of the Counterfactual module have empty axiom reports, and the checker verifies core purity, every source declaration in the core's import closure having an empty axiom report and the core compiling from Lean's prelude alone. Author counterreview in §100 of the integration note; no independent review."
   },
   "next_delta": {
-    "zh": "条件无穷多时敏感是否仍是最小的识（或反例）；按时间先后的回应所及与差别到达多少的度量；两类的律读作一个世界；何时一个动作是部分自己的；带噪声的律及其进程；Ren 对两种读法的判断。",
-    "en": "Whether sensitivity remains the least registration with infinitely many conditions, or a counterexample; the responsive reach ordered in time, with a measure of how much difference arrives; a law over two kinds read as one world; when a move is the part's own; a law with noise and its course; Ren's judgment on the two readings."
+    "zh": "条件无穷多时敏感是否仍是最小的识（或反例）；按时间先后的回应所及与差别到达多少的度量；两类的律读作一个世界；带噪声的律及其进程；Ren 对两种读法的判断。",
+    "en": "Whether sensitivity remains the least registration with infinitely many conditions, or a counterexample; the responsive reach ordered in time, with a measure of how much difference arrives; a law over two kinds read as one world; a law with noise and its course; Ren's judgment on the two readings."
   },
   "correspondence": {
     "zh": "Ren 写道：“another agent has got this far, maybe merge first and see if there is something to work on”。AI 随后认领本章与“其余回应时的比较”相接的开放项：“他者有回应的比较，由动力学给出回应而不是另给第二个流”；该记录写明其定理仍取的假设，本记录陈述新的定律。读法（AI 的，待 Ren）：反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程，可行时存在、由动作固定（AI 把它与 Ren 所说的“there are no two realities”相对应）；对遵从读已立者之律的其余，经识回应不是另加的关于形成怎样行为的假设，无论其余遵从哪个这样的律，条件有限时它都经其敏感而读，读作识：形成识其交换所敏感的；未取的动作是标准因果模型意义上的干预。读法增加（AI 的，待 Ren）：未取之动作的进程与每个展开同形，不是第二种东西；律在它所管的历史之外添加的恰是历史未取的动作，所以反事实是律在其历史之外的一步，不是旁边的第二段历史；部分的动作在展开之内由律形成时，进程从起始处固定，另作即部分另是的律。",
@@ -497,6 +497,13 @@
       "detail": {
         "zh": "P53 说动作造成什么只相对于无此动作之历史的模型才可检验；这里那个模型就是律，未取的动作的结果由律固定（ExchangeLaw.act_not_taken）。",
         "en": "P53 says that what an act causes is testable only relative to a model of the history without the act; here that model is the law, which fixes the outcome of an act not taken (ExchangeLaw.act_not_taken)."
+      }
+    },
+    {
+      "id": "where-a-move-is-formed",
+      "detail": {
+        "zh": "推进其下一步：动作是部分自己的，恰当它经部分的配置形成；进程的标准模型中，不读任何东西的律的动作只经阶段形成，如钟所形成者（ExchangeLaw.ofMoves_lumped_stage）。",
+        "en": "Advances its next step: a move is the part's own exactly where it is formed through the part's configuration; in a course's standard model, the act of a law that reads nothing is formed through the stage alone, as a clock forms moves (ExchangeLaw.ofMoves_lumped_stage)."
       }
     }
   ],
@@ -917,6 +924,10 @@
     {
       "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Recurrence.lean（整合 I3b：新增共同实现的界（WithinMoves.after_course、lost_together_not_returns）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83b 与 P83c（Identification、Likeness、Refinement）、整合 I3b（Granularity 及其桥接）与 Keeping 的 §9 各行，总数改据新回执）。",
       "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Recurrence.lean (integration I3b: bounds on realizing a bundle together added (WithinMoves.after_course, lost_together_not_returns); earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for P83b and P83c (Identification, Likeness, Refinement), integration I3b (Granularity and its bridge) and Keeping, and the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-15 P109（动作在哪里形成，研究 §131）：下一步中“何时一个动作是部分自己的”由 where-a-move-is-formed 回答，删去；related 加 where-a-move-is-formed。陈述与证明不变。",
+      "en": "15 October 2026, P109 (where a move is formed, study section 131): in the next step, “when a move is the part's own” is answered by where-a-move-is-formed and removed; related adds where-a-move-is-formed. Statement and proofs unchanged."
     }
   ],
   "text_versions": [
