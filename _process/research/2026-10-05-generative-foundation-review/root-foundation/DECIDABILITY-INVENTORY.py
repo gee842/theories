@@ -156,6 +156,9 @@ CONSTRUCTIONS = {
     'policyUpto': 'same',
     # 2026-10-15, P83f: the learner by the least bound
     'Identification.leastFit': 'first', 'Identification.leastBound': 'first',
+    # 2026-10-15, integration I3d: the judge of a listed family answers with the first listed member of each reduced
+    # value
+    'Readout.firstJudge': 'first',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -300,6 +303,9 @@ PROOF_KIND = {
     # 2026-10-15, P109 where a move is formed (Becoming.Coupling): the policy on a finite stretch is built by comparing
     # configurations; where none exists, a configuration recurring with the move varied is found
     'lumped_upto_iff': 'same', 'no_policy_upto_iff': 'find', 'throughout_or_fails': 'find',
+    # 2026-10-15, integration I3d: a judge of a listed family exists where the observable is lumped, found from the first
+    # listed members
+    'Readout.judges_iff_lumpedOn': 'find',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
