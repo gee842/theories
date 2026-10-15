@@ -32,8 +32,11 @@ ratio `p : q` exactly where `x = y`, and `(x - y)²`, stated without subtraction
   free branching (`Becoming.Parting`'s `freeRun`), the all-ones course among them, and no
   record shows that a world will not part (`Parting.free_parts_after`). Counting weighs
   courses; it does not choose one. That the course which happens is typical, so that its
-  frequencies show the weights, is a premise that reading weights as chances adds, not a
-  theorem of the core.
+  frequencies show the weights, is not a theorem of the core. Where each step is taken in as
+  many situations as its weight, each fixing it, the weights count situations and this count is
+  of situations (`Becoming.Situations`): most situations of a kind give frequencies near the
+  ratio, and which situation it is fixes the course. Ren, 16 October 2026: "the situation makes
+  it true".
 
 * **The weights are those of `Becoming.Weighted`.** Free branching on two values weighted by
   counting (`stepWeight`) composes along each history the weight of its values
@@ -43,7 +46,7 @@ ratio `p : q` exactly where `x = y`, and `(x - y)²`, stated without subtraction
 The AM–GM step `2·x·y ≤ x·x + y·y` is proved on the way (`two_mul_le`). The arithmetic uses
 the core's inductive forms of distributivity and associativity (`add_mul_split`,
 `mul_assoc_nat`, with `left_comm`), since the prelude's forms of these laws use propositional
-extensionality. The readings are the AI's, pending Ren.
+extensionality. The reading of Ren's words is the AI's, pending Ren.
 -/
 
 namespace Becoming

@@ -381,8 +381,9 @@ for mod, kind, name, pos, k, ty, stmt, proof, ment in rows:
     else:
         defs.setdefault((mod, short), []).append((k, ty, stmt == 'true', proof == 'true'))
 
-# Statements naming Lean's own `if … then … else` (its condition decided) and no core definition (2026-10-14).
-ITE_STATEMENTS = ['Copying.ite_cases']
+# Statements naming Lean's own `if … then … else` (its condition decided) and no core definition (2026-10-14;
+# `Situations.mul_indicator` 2026-10-16, P117).
+ITE_STATEMENTS = ['Copying.ite_cases', 'Situations.mul_indicator']
 for key in [key for key in theorems if key[1] in ITE_STATEMENTS]:
     theorems[key] = [(k, ty, s, p, ment or 'ite') for k, ty, s, p, ment in theorems[key]]
 

@@ -37,8 +37,12 @@ with no premise beyond what each law names, what a record fixes along the runs o
   with no bound on its states (`free_unbounded`).
 
 So with a bound on configurations a record fixes the registered course exactly as far as the
-runs do not part, from `N + N - 1` on; a branching that shows in what is registered is settled
-only when it is taken. The readings are the AI's, pending Ren.
+runs do not part, from `N + N - 1` on; where they part, neither the record nor the law fixes
+which way the run goes. Ren, 16 October 2026: "we are describing what everything obeys, but at
+every moment, the actual change depends on the situation", and "the situation makes it true".
+Read so, a law that branches leaves open what the situation fixes: with the situation as the
+move, the law is determined (`Becoming.Situations`). This reading of Ren's words is the AI's,
+pending Ren.
 -/
 
 namespace Becoming

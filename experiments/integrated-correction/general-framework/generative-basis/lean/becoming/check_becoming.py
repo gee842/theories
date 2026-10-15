@@ -65,7 +65,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking", "Becoming.LossMatching",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Courses", "Becoming.Parting", "Becoming.Typicality", "Becoming.Propagation", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Courses", "Becoming.Parting", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge", "Becoming.CompositionBridge", "Becoming.JoiningBridge", "Becoming.GranularityBridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge", "Becoming.CoursesBridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -1424,6 +1424,13 @@ SCOPE = (
     "so the courses with x*x + y*y >= 2*x*y + d weigh, times d, at most n*p*q*(p + q)^n; the "
     "weights are the counting weights composed along the histories of free branching, and the "
     "sum over them is that total weight. "
+    "Situations: with each step of a law taken in as many situations as its natural weight, the "
+    "law whose moves are the situations is determined and takes exactly the steps of positive "
+    "weight; summing any reading of the courses over the finer courses of n steps is summing it "
+    "over the courses, each times its weight composed along it, so the finer courses number the "
+    "sum over histories; on two values with p and q situations a step, there are (p + q)^n finer "
+    "courses, a course is taken by its weight of them, and those whose course deviates by at "
+    "least d number, times d, at most n*p*q*(p + q)^n. "
     "Boundaries: along a relation a boundary of a formation is a region holding it that is closed "
     "under the relation, the closure the least and the whole the greatest, and the only one where "
     "everything lies within the closure; a claim about a drawn region is super-true when it holds "
