@@ -151,8 +151,8 @@
     "decidability"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Reading 的 50 项声明（34 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §124；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 50 declarations of Becoming.Reading, 34 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 124; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Reading 的 50 项声明（34 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §125；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 50 declarations of Becoming.Reading, 34 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 125; not independently reviewed."
   },
   "next_delta": {
     "zh": "当前规律在 Flow.BalancesOn 上的陈述是否改写为其余在该家族上闲置（每条经 Flow.balancesOn_iff_idle 等价）；要求读作回应时在分支过程上的形式；独立审查；Ren 对读法的判断。",
@@ -382,8 +382,8 @@
   "proof_bindings": [],
   "history": [
     {
-      "zh": "2026-10-14：新增，按 Ren 批准从关系开始的重建（“please, finish all”）的第二步；研究 §124。",
-      "en": "14 October 2026: added under Ren's approval of the relation-first re-founding (“please, finish all”), step 2; study section 124."
+      "zh": "2026-10-14：新增，按 Ren 批准从关系开始的重建（“please, finish all”）的第二步；研究 §125。",
+      "en": "14 October 2026: added under Ren's approval of the relation-first re-founding (“please, finish all”), step 2; study section 125."
     }
   ],
   "text_versions": []

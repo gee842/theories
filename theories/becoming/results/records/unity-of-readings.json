@@ -102,8 +102,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Readings 的 16 项声明（13 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §124；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 16 declarations of Becoming.Readings, 13 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 124; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Readings 的 16 项声明（13 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §125；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 16 declarations of Becoming.Readings, 13 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 125; not independently reviewed."
   },
   "next_delta": {
     "zh": "主张之间的关系作为 Contextual.world 的流与依存；连续时间与实数的量；独立审查；Ren 对读法（核心的诸类型是一个展开的读法、公理归于预设）的判断。",
@@ -347,8 +347,8 @@
   "proof_bindings": [],
   "history": [
     {
-      "zh": "2026-10-14：新增，按 Ren 批准从关系开始的重建（“please, finish all”）的第三步；研究 §124。",
-      "en": "14 October 2026: added under Ren's approval of the relation-first re-founding (“please, finish all”), step 3; study section 124."
+      "zh": "2026-10-14：新增，按 Ren 批准从关系开始的重建（“please, finish all”）的第三步；研究 §125。",
+      "en": "14 October 2026: added under Ren's approval of the relation-first re-founding (“please, finish all”), step 3; study section 125."
     }
   ],
   "text_versions": []
