@@ -356,6 +356,8 @@ PROOF_KIND = {
         'ExchangeLaw.exchangeGap_le_shares', 'ExchangeLaw.insensitiveAt_iff_strength_zero',
         'ExchangeLaw.sensitive_iff_strength', 'gap_le_carried', 'ExchangeLaw.carrying_respondsWithin',
         'most_difference_arrives', 'levels_alike_of_not_conveyed']},
+    # integration I4b (2026-10-16): the origin law where each gate is decided
+    **{n: 'split' for n in ['Gated.origin_of_decides']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
@@ -365,7 +367,10 @@ BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends',
             'matchesParts_of_compact_iff_em', 'jointAlike_of_sameJointTests_iff_em', 'Recipe.holds_after_iff_em',
             # integration I3e (added 2026-10-15): weak excluded middle for undominated members, excluded middle for
             # what every undominated member has
-            'exists_undominated_iff_weakly', 'undominated_has_iff_em']
+            'exists_undominated_iff_weakly', 'undominated_has_iff_em',
+            # integration I4b (2026-10-16): with the gate a proposition, the origin law is double-negation
+            # elimination
+            'Gated.origin_of_propositions_iff']
 
 rows = [l.rstrip('\n').split('\t') for l in ROWS.splitlines() if l.strip()]
 theorems = collections.OrderedDict()
