@@ -18,6 +18,11 @@ from pathlib import Path
 KIT = Path(__file__).resolve().parent
 STUDY_DIR = KIT.parents[1]
 OUT = STUDY_DIR / 'MODULE-CLASSIFICATION.md'
+# The P3 classification of the ethics modules (9 October), for the modules it shares with this table.
+P3 = STUDY_DIR / 'BECOMING-INSTANCE-CLASSIFICATION.md'
+P3_DATA = STUDY_DIR / 'BECOMING-INSTANCE-CHECKS.json'
+P3_NAMES = {'interface': 'interface instantiated', 'core': 'already on the core', 'history': 'polymorphic over histories',
+            'renewal': 'renewal bounds on runs', 'mathlib': 'Mathlib leaf', 'model': 'concrete model', 'bridge': 'bridge'}
 UP = '../../../../'
 L = 'experiments/integrated-correction/general-framework/generative-basis/'
 CATEGORIES = {
@@ -67,9 +72,10 @@ def load(directory):
                 problems.append(f'{where}: {r["category"]} needs statements read')
             if r.get('category') == 'earlier-version' and not r.get('spine'):
                 problems.append(f'{where}: earlier version names no spine declaration')
-            for key, limit in (('reason_en', 60), ('reason_zh', 90)):
+            # English in words; Chinese in Chinese characters (identifiers in backticks or Latin script not counted).
+            for key, limit in (('reason_en', 60), ('reason_zh', 75)):
                 text = r.get(key) or ''
-                size = len(text.split()) if key == 'reason_en' else len(text)
+                size = len(text.split()) if key == 'reason_en' else len(re.findall(r'[\u4e00-\u9fff]', text))
                 if not text or size > limit:
                     problems.append(f'{where}: {key} missing or {size} long')
                 if MARKET.search(re.sub(r'`[^`]*`', '', text)):
@@ -87,6 +93,7 @@ def cell(text):
 
 
 def render(signals, rows):
+    p3 = {k: v['category'] for k, v in json.loads(P3_DATA.read_text())['modules'].items()}
     merged = [(signals[k], rows[k]) for k in sorted(rows, key=lambda k: (family(rows[k]['path']), k.lower()))]
     by_cat = collections.Counter(r['category'] for _, r in merged)
     by_reach = collections.Counter((reach(s), r['category']) for s, r in merged)
@@ -114,6 +121,11 @@ def render(signals, rows):
         for s, r in picked:
             lines.append(f'| [{s["stem"]}]({UP}{r["path"]}) | ' + ', '.join(f'`{x}`' for x in r.get('spine', [])) +
                          f' | {r.get("relation") or "—"} | {cell(r["reason_zh"])} / {cell(r["reason_en"])} |')
+    shared = sorted(k for k in p3 if k in rows)
+    lines += ['', '## 与 P3 分类的对照 / Against the P3 classification', '',
+              f'[P3 的分类](BECOMING-INSTANCE-CLASSIFICATION.md)（10 月 9 日）归类了 46 个含类型多态定理的伦理模块；其中 {len(shared)} 个在脊柱运行之外，见于本表，逐行标出其 P3 类别。P3 的“已在核心上”指陈述直接写在基础的 `Process`／`Trace` 上，不指某条脊柱律陈述了它；本表给这些模块补上所及的脊柱声明。',
+              '',
+              f'[The P3 classification](BECOMING-INSTANCE-CLASSIFICATION.md) (9 October) sorted the 46 ethics modules with type-polymorphic theorems. {len(shared)} of them lie outside the spine run and appear here, each row naming its P3 category. P3’s “already on the core” means stated directly on the foundation’s `Process` and `Trace`, not that a spine law states it; this table adds the spine declarations those modules reach.']
     lines += ['', '## 逐模块 / Every module', '']
     for fam, group in collections.OrderedDict((f, [x for x in merged if family(x[1]['path']) == f])
                                              for f in dict.fromkeys(family(r['path']) for _, r in merged)).items():
@@ -123,8 +135,9 @@ def render(signals, rows):
         for s, r in group:
             others = f' (+{len(s["others"])})' if s.get('others') else ''
             spine = ', '.join(f'`{x}`' for x in r.get('spine', [])[:4]) + (f' ({r["relation"]})' if r.get('relation') else '')
+            earlier = f' (P3: {P3_NAMES.get(p3[s["stem"]], p3[s["stem"]])})' if s['stem'] in p3 else ''
             lines.append(f'| [{s["stem"]}]({UP}{r["path"]}){others} | {s["theorems"]} | {REACH[reach(s)][1]} | '
-                         f'{CATEGORIES[r["category"]][1]} | {spine or "—"} | {r["basis"]} | {cell(r["reason_zh"])} / {cell(r["reason_en"])} |')
+                         f'{CATEGORIES[r["category"]][1]}{earlier} | {spine or "—"} | {r["basis"]} | {cell(r["reason_zh"])} / {cell(r["reason_en"])} |')
         lines.append('')
     OUT.write_text('\n'.join(lines).rstrip('\n') + '\n')
 
