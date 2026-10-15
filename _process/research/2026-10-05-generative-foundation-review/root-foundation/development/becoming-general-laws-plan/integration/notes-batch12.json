@@ -15,8 +15,8 @@
    "en": "P83g: a section CubicRest added (oddCycle, learner_refuted_late, learner_rest_cubic and their walk through the turns, 34 declarations: the refutation learner's rest step is cubic); earlier statements unchanged"
   },
   "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean": {
-   "zh": "P83g：新增 Law.registered_within_exact（一个世界之内检验的 N − 1 恰好）；原有陈述不变",
-   "en": "P83g: Law.registered_within_exact added (N − 1 exact for the tests within one world); earlier statements unchanged"
+   "zh": "P83g：新增 registered_within_exact（一个世界之内检验的 N − 1 恰好）；原有陈述不变",
+   "en": "P83g: registered_within_exact added (N − 1 exact for the tests within one world); earlier statements unchanged"
   },
   "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
    "zh": "P83g：Identification 与 Distinguishing 两条写明立方阶的静止之步与一个世界之内的恰好性",
