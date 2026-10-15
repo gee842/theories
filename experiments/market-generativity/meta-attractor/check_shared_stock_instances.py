@@ -114,7 +114,8 @@ def main():
     order = closure(index)
     paths = {name: index[name][0] for name in order}
     sources = {name: paths[name].read_bytes() for name in order}
-    helper_paths = [Path(__file__).resolve(), LEAN_ROOT / "becoming/check_becoming.py"]
+    helper_paths = [Path(__file__).resolve(), LEAN_ROOT / "becoming/check_becoming.py",
+                    LEAN_ROOT / "universal-ethics/generative-capacity/check.py"]
     helpers = {p.name: p.read_bytes() for p in helper_paths}
     commit, held = core.held_in_main({**{p: helpers[p.name] for p in helper_paths},
                                       **{paths[name]: sources[name] for name in order}})
