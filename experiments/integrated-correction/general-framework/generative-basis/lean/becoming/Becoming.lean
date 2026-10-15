@@ -107,6 +107,8 @@ import Becoming.Sensitivity
 import Becoming.Courses
 import Becoming.Parting
 import Becoming.Typicality
+import Becoming.Gain
+import Becoming.Gluing
 
 /-!
 # The Theory of Becoming: the formal core
