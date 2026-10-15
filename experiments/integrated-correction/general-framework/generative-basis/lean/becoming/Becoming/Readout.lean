@@ -227,4 +227,62 @@ theorem no_common_report_envelopes_iff {roster : List D} {fa fb : List (List D)}
 
 end Witnesses
 
+/-! ## Judging a listed family through a reduction -/
+
+section Judges
+
+/-- `f` goes alike across the members of `family` that `π` merges. -/
+def LumpedOn (family : List S) (π : S → K) (f : S → V) : Prop :=
+  ∀ s s', s ∈ family → s' ∈ family → π s = π s' → f s = f s'
+
+/-- `judge`, reading only the reduced value, gives `f` at every member of `family`. -/
+def Judges (family : List S) (π : S → K) (f : S → V) (judge : K → V) : Prop :=
+  ∀ s, s ∈ family → judge (π s) = f s
+
+/-- A judge exists only where `f` goes alike across the members `π` merges. -/
+theorem lumpedOn_of_judges {family : List S} {π : S → K} {f : S → V} {judge : K → V}
+    (judges : Judges family π f judge) : LumpedOn family π f :=
+  fun s s' mem mem' same => (judges s mem).symm.trans ((congrArg judge same).trans (judges s' mem'))
+
+/-- A member of a listed family is its first member or a member of the rest. -/
+theorem member_cons_cases {x s : S} {rest : List S} : s ∈ x :: rest → s = x ∨ s ∈ rest
+  | .head _ => .inl rfl
+  | .tail _ later => .inr later
+
+variable [DecidableEq K]
+
+/-- The judge answering with `f` at the first listed member of the reduced value, and `d` where
+none is listed. -/
+def firstJudge (π : S → K) (f : S → V) (d : V) : List S → K → V
+  | [], _ => d
+  | x :: rest, k => if π x = k then f x else firstJudge π f d rest k
+
+theorem firstJudge_judges (π : S → K) (f : S → V) (d : V) :
+    ∀ family : List S, LumpedOn family π f → Judges family π f (firstJudge π f d family)
+  | [], _ => fun _ mem => nomatch mem
+  | x :: rest, lumped => fun s mem =>
+    match decEq (π x) (π s) with
+    | .isTrue same => (if_pos same).trans (lumped x s (.head rest) mem same)
+    | .isFalse differ => (if_neg differ).trans (match member_cons_cases mem with
+      | .inl at_x => absurd (congrArg π at_x).symm differ
+      | .inr later => firstJudge_judges π f d rest
+          (fun a b ma mb => lumped a b (.tail x ma) (.tail x mb)) s later)
+
+/-- **A judge of a listed family through a reduction exists exactly where the observable goes
+alike across the members the reduction merges.** No choice is used: the judge answers with the
+first listed member of each reduced value (`firstJudge`); `d` answers where none is listed. -/
+theorem judges_iff_lumpedOn (family : List S) (π : S → K) (f : S → V) (d : V) :
+    (∃ judge, Judges family π f judge) ↔ LumpedOn family π f :=
+  ⟨fun ⟨_, judges⟩ => lumpedOn_of_judges judges,
+   fun lumped => ⟨firstJudge π f d family, firstJudge_judges π f d family lumped⟩⟩
+
+end Judges
+
+/-- **No judge of a family reads through a reduction that merges two of its members the
+observable tells apart.** -/
+theorem no_judge_of_merged {family : List S} {π : S → K} {f : S → V} {s s' : S}
+    (mem : s ∈ family) (mem' : s' ∈ family) (merged : π s = π s') (apart : f s ≠ f s') :
+    ¬ ∃ judge, Judges family π f judge :=
+  fun ⟨_, judges⟩ => apart (lumpedOn_of_judges judges s s' mem mem' merged)
+
 end Becoming.Readout
