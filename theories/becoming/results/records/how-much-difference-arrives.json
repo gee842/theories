@@ -229,8 +229,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T175539.984165Z): the 97 declarations of Becoming.Propagation, 78 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 141; not independently reviewed."
   },
   "next_delta": {
-    "zh": "回路的一般理论（绕回路的强度与失控）；最小的强度（需判定）；小于一的强度与实数的量；条件无穷多时的界；中心怎样表示其所及；独立审查。",
-    "en": "A general theory of loops (the strength around a loop and its runaway); a least strength (needing a decision); strengths below one and real amounts; the bound with infinitely many conditions; how a center represents what it reaches; an independent review."
+    "zh": "最小的强度（需判定）；小于一的强度与实数的量；条件无穷多时的界；中心怎样表示其所及；独立审查。",
+    "en": "A least strength (needing a decision); strengths below one and real amounts; the bound with infinitely many conditions; how a center represents what it reaches; an independent review."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”。读法（AI 的，依 Ren 的交托采用，DELEGATED-CHOICES D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，形式上读作识的强弱；差别到达多少本身是同一展开中由一个律生成的进程，不另加于展开；所持的差别不断到达；Ren 的“highly entangled system”中，纠缠读作交换与彼此水平耦合的强度，不等同于量子的纠缠。系统论中，强度是增量增益（Lipschitz 界），所携带的量是它们的比较系统（离散的 Grönwall 不等式），这里它恰好达到。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”），“增益”留给 P111。",
@@ -314,8 +314,8 @@
     {
       "id": "comparison-where-the-rest-responds",
       "detail": {
-        "zh": "其下一步中按时间先后的所及与差别到达多少的度量，由所携带的量与其时间路线回答；回路的一般理论仍开放。",
-        "en": "Its next steps of ordering the reach in time and measuring how much difference arrives are answered by the carried amount and its routes in time; a general theory of loops stays open."
+        "zh": "其下一步中按时间先后的所及与差别到达多少的度量，由所携带的量与其时间路线回答；回路的一般理论见 how-a-carried-difference-grows。",
+        "en": "Its next steps of ordering the reach in time and measuring how much difference arrives are answered by the carried amount and its routes in time; a general theory of loops is given in how-a-carried-difference-grows."
       }
     },
     {
@@ -337,6 +337,13 @@
       "detail": {
         "zh": "其范围说共同条件不度量耦合的强度；耦合强度度量它，所携带的量给出差别的时间路线。",
         "en": "Its scope says the common condition does not measure the strength of coupling; the coupling strengths measure it, and the carried amount gives a difference's routes in time."
+      }
+    },
+    {
+      "id": "how-a-carried-difference-grows",
+      "detail": {
+        "zh": "回答其下一步首项：所携带的量按阶展开；上游没有回路处有限阶精确、增长至多是多项式，截断所漏有界且由自环达到；回路每绕一圈至少乘以一加其强度之积（carried_runaway）；形成与强度每步相同时，能到达的最大差别有多项式界，恰在上游没有回路处（gap_polynomial_iff_no_loop）。本记录的链与自环是这条规律的两端。",
+        "en": "Answers the first item of its next step: the carried amount expands by order; where no loop lies upstream a finite order is exact and the growth at most polynomial, a cut missing at most a bound a self-loop attains; a loop multiplies what reaches it every time around by at least one plus the product of its strengths (carried_runaway); with the same formations and strengths at every step, the most difference that can arrive is polynomially bounded exactly where no loop lies upstream (gap_polynomial_iff_no_loop). This record's chain and self-loop are the two ends of that law."
       }
     }
   ],
@@ -610,6 +617,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Counterfactual.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Generation.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Counterfactual.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16 P118（所携带的差别怎样增长，研究 §152）：下一步首项“回路的一般理论（绕回路的强度与失控）”由新记录回答，删去；related 中关于 comparison-where-the-rest-responds 的“回路的一般理论仍开放”改为指向新记录；related 加 how-a-carried-difference-grows。陈述与证明不变；does_not_show 仍对本记录的定理成立。",
+      "en": "16 October 2026, P118 (how a carried difference grows, study section 152): in the next step, the first item, “a general theory of loops (the strength around a loop and its runaway)”, is answered by the new record and removed; in related, “a general theory of loops stays open” of comparison-where-the-rest-responds now points to the new record; related adds how-a-carried-difference-grows. Statement and proofs unchanged; does_not_show still holds of this record's theorems."
     }
   ],
   "text_versions": []

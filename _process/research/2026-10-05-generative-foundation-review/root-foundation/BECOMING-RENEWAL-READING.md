@@ -9558,6 +9558,91 @@ Integration: §9 Selection 一行（改为双语，陈述与计数）与一个�
 
 **下一步（I4b）。** I4b 的四项至此齐备（Gated、Selection、Horizon、Lasting）；IdealWarrant 留待 Ren 安置，接入时依规则 8 改名。
 
+## 152. 所携带的差别怎样增长：上游没有回路处有限阶精确、增长至多是多项式，回路使之失控（Becoming.Loops）
+
+2026-10-16。P115 的记录 [how-much-difference-arrives](../../../../theories/becoming/results/records/how-much-difference-arrives.md) 的 next_delta 首项是“回路的一般理论（绕回路的强度与失控）”，`Becoming.Propagation` 把“回路的一般理论，绕每个回路的强度与其失控，见证之外”列为没有导出；[comparison-where-the-rest-responds](../../../../theories/becoming/results/records/comparison-where-the-rest-responds.md) 要求“回路的一般定义，以及在其中陈述绕回路的强度与失控”，[runaway-distance-unregistered](../../../../theories/becoming/results/records/runaway-distance-unregistered.md)（P55）要求“一般地定义回路……并把失控本身陈述为定理”；理论第 8 节的进一步证明在“反馈与所及”下列“回路的一般理论”。Ren 2026-10-12 把理论比作量子动力学与“Fermi's diagrams”，说：“there are so many patterns and loops but we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）；2026-10-16 又说“continue”。本节在第一部分之内回答：不加公理，除各定理所写的强度不加前提。工作板上认领为 P118。
+
+```text
+Result(s): 新增 how-a-carried-difference-grows；回答 how-much-difference-arrives 的 next_delta 首项“回路的一般理论”，
+           以及 comparison-where-the-rest-responds 与 runaway-distance-unregistered 的 next_delta 中“一般地定义回路并陈述
+           失控”（在其余遵从具有给定耦合强度之律处）；复用 how-much-difference-arrives（carried、carriedGive、carried_succ、
+           carried_le_succ、gap_le_carried、most_difference_arrives、gap、Flow.exchangeGap、ExchangeLaw.RespondsWithin）；
+           recurrence-without-premise（revisits_within、gap_of_le、gap_of_lt）；Flow、Web、Balances 与 Follows
+Delta: 新核心模块 Becoming.Loops（导入 Propagation；113 项定理／137 项声明）；不改已有模块
+Supplied premises / correspondence: 不加公理；各定理所写者写在定理中：耦合强度 k（给出的界）；条件全部列出（every）；
+       界的定理中部分在起始之后不给差、起始之差至多 D、每步进入每个条件的强度至多 M；失控的定理中耦合每步成立
+       （CouplesAlways、CoupledWith）或形成与强度每步相同（stationary）；对一切律的定理中条件不重复（Distinct）与条件的
+       相等可判定（经 most_difference_arrives、gap_le_carried，只在证明中）
+Evidence: scratch_build 对 main 5f8f7726（I4b-2 之后）：Becoming.Loops 113 项定理、137 项声明，公理报告全部为空，无警告；
+          根模块 Becoming 与其导入闭包（118 个模块）一同编译，无重名；清点在同一字节上运行，三条新行已分类；
+          合并检查器回执待整合者的运行
+Boundary: 离散的步、自然数的量；强度是给出的界；条件全部列出；当且仅当只对形成与强度每步相同者陈述；时有时无的耦合、
+          比强度之积更细的失控速度开放；不含伦理谓词
+Integration: §2 新增一段（所携带的差别怎样增长），差别到达多少一段中的“不推出”；第一部分的总陈述一条；§8 的状态行与
+       进一步证明各改一项；§9 新增一行；术语表新增两行；Becoming.lean 的导入与模块说明；check_becoming.py 的核心之列与
+       范围说明；Lean README 一行与层内导入；DECIDABILITY-INVENTORY.py 的分类；一项新记录与三项配对说明
+```
+
+**一、按阶展开。** 所携带的量（`carried`）每步增加部分之差与强度对至今所携带者所作的。把“至今所携带者”换成任意给定的水平 `l`，得到一步所携带的（`carriedFrom`）；所携带的量是它自身的不动点（`carriedFrom_carried`）。j 阶（`carriedWithin`）从安静的水平（零）起，把这一步作用 j + 1 次：0 阶只携带起始之差与部分之差，每多一阶，路线上多一次回应。各阶随 j 上升（`carriedWithin_mono`），每一阶都不超过所携带的量（`carriedWithin_le_carried`）；到第 t 步的路线至多有 t 次回应，所以 j 阶到第 j 步为止恰是所携带的量（`carriedWithin_exact`），所携带的量是各阶的极限（`carried_eq_carriedWithin`）。
+
+**二、耦合、链、回路与上游。** 条件 `d` 的水平耦合到 `c`（`Couples`），是说在某步 `t` 一个在场、在部分之外的形成，以正强度在 `d` 至该步的某个水平上与 `c` 交换。耦合的链（`Coupled v j`）沿 `v` 前 j 个条件各耦合到下一个；j 个耦合的链终于 `c`（`CoupledInto`）；回路（`OnLoop e`）是一个或多个耦合的、从 `e` 回到 `e` 的链；`e` 在 `c` 的上游（`Upstream e c`），是说有链从 `e` 通到 `c`。
+
+**三、上游没有回路处，有限阶精确。** 没有 j + 1 个耦合的链终于 `c` 处，j 阶在 `c` 处每步都精确（`carriedWithin_exact_of_not_coupledInto`）：证明对 j 归纳，j 阶与所携带的量在每个正强度所读的水平上一致。条件全部列出时，与列表一样长的链两次经过同一个条件（`Recurrence.revisits_within`，鸽笼），那个条件在一个回路上，且在链的终点的上游（`loop_of_coupledInto`）。所以 `c` 的上游没有回路、`n + 1` 不少于条件数时，n 阶在 `c` 处每步精确（`carriedWithin_exact_of_no_loop`）：有限的展开没有损失。
+
+**四、上游有回路处，每一阶都漏掉一些。** 耦合每步都成立（`CouplesAlways`：每步都有一个在场、在部分之外的形成以正强度在当前水平上耦合）时，一个阶在某步、某条件处漏掉一些，下一个阶就在下一步、在它耦合到的条件处漏掉一些（`orderBelow_lt_succ`）：沿每步成立的链，所漏的阶每个耦合升高一（`orderBelow_lt_along`），绕回路每圈升高回路的长度（`orderBelow_lt_around`）。回路在某步有所携带时，0 阶之下（什么也不携带）在那里有所漏；所以有每步成立的链从回路通到 `c` 时，每一阶都在某步在 `c` 处漏掉一些（`carriedWithin_lt_of_loop`）。合起来：条件全部列出、每个耦合每步成立时，存在一个从每个起始之差都精确的有限阶，恰当 `c` 的上游没有回路（`finite_order_iff_no_loop`）。耦合须每步成立：一个形成只在第一步把一个条件的水平送回它自身时，这个条件在回路上、在它自身的上游，1 阶却从每个起始之差都每步精确（`Loops.Once.not_always`）。
+
+**五、绕回路的强度与失控。** 链 `v` 的每个耦合在每步的强度至少是 `w i`（`CoupledWith`）时，到达链起点者乘以这些强度之积，经与链的耦合数一样多的步到达终点（`carried_along`）。回路有 m + 1 个耦合时，到达回路者每绕一圈至少乘以一加回路上强度之积（`carried_around`）：“一”来自水平持有所给的，强度之积来自绕回来的；绕 R 圈是这个因子的 R 次方（`carried_runaway`）。
+
+**六、各阶携带多少；截断的精度。** 部分在起始之后不给差（σ = 0），起始之差至多 D，每步进入每个条件的强度（`inflow`：在场、部分之外的形成，在至该步的每个水平与每个列出的条件上的强度之和）合计至多 M。于是 j 阶至多是 `Loops.withinBound M D j t`（`carriedWithin_le_withinBound`），它等于 D 乘以对 i ≤ j 的和：在 t 步中安放 i 次回应的方式数 `Loops.binom t i` 乘 `M ^ i`（`Loops.withinBound_eq`，帕斯卡法则 `Loops.orderSum_step`），t 的 j 次多项式。所携带的量至多 `D * (1 + M) ^ t`（`carried_le_geomBound`、`Loops.geomBound_eq`），在 j 阶截断所漏的至多是 `Loops.missBound M D j t`（`carried_le_carriedWithin_add`），而 `missBound` 加 `withinBound` 恰是 `D * (1 + M) ^ t`（`Loops.missBound_add_withinBound`）：截断所漏至多是剩下的和。一个条件、一个形成，每步以强度 M 把该条件的当前水平送回它自身（自环，`Loops.SelfLoop.strengths`），恰好达到这三者（`Loops.SelfLoop.carried_eq`、`Loops.SelfLoop.carriedWithin_eq`、`Loops.SelfLoop.attained`）：由 D 与 M 推不出更小的界。
+
+**七、上游没有回路处至多是多项式；形成与强度每步相同时恰在那里。** 上游没有回路、`n + 1` 不少于条件数时，所携带的量至多是 `D * Loops.orderSum M n t`，t 的 n 次多项式（`carried_le_polynomial`）。强度每步相同（`stationary K`：每个形成每步以同一强度 `K h c d` 在 `d` 的当前水平上与 `c` 交换），形成每步相同时，每个耦合每步成立（`couplesAlways_of_stationary`），所以有限阶精确恰在上游没有回路处（`finite_order_iff_no_loop_stationary`）；正强度是自然数，至少为一，所以回路每绕一圈至少使到达者加倍（`carried_doubles_around`），到达上游回路者如此加倍地到达 `c`（`carried_doubles_into`）。每个多项式都被 2 的幂超过（`Loops.poly_lt_two_pow`），所以加倍的量没有多项式界（`Loops.not_poly_of_doubling`）；有限阶之和至多是 `(n + 1) * (1 + M) ^ n * (t + 1) ^ n`（`Loops.orderSum_le_poly`）。合起来：所携带的量从每个起始之差都有多项式界，恰当 `c` 的上游没有回路（`polynomial_iff_no_loop`）。
+
+**八、对一切律。** 由 `most_difference_arrives`（所携带的量是能到达的最大差别）与 `gap_le_carried`，以上都是关于一切具有这些强度的读已立者之律及其两个平衡的流的陈述。上游没有回路时，第 T 步 `c` 处之差对一切这样的律与流至多是 a，恰当 n 阶所携带的至多是 a（`most_difference_within`）；每个差至多是那个多项式（`gap_le_polynomial`）。形成与强度每步相同、条件各列一次时，对一切这样的律与流之差有一个多项式界（对每个起始之差的界），恰当 `c` 的上游没有回路（`gap_polynomial_iff_no_loop`）。
+
+```lean
+def carriedWithin (cs : List C) (part : F → Bool) (σ : Nat → F → C → Nat)
+    (k : Nat → F → C → Nat → C → Nat) (present : Nat → List F) (δ : C → Nat) :
+    Nat → Nat → C → Nat
+  | 0 => carriedFrom cs part σ k present δ fun _ _ => 0
+  | j + 1 => carriedFrom cs part σ k present δ (carriedWithin cs part σ k present δ j)
+
+theorem carriedWithin_exact_of_no_loop (every : ∀ c, c ∈ cs) {c : C}
+    (noLoop : ∀ e, Upstream cs part k present e c → ¬ OnLoop cs part k present e) {n : Nat}
+    (long : cs.length ≤ n + 1) (t : Nat) :
+    carriedWithin cs part σ k present δ n t c = carried cs part σ k present δ t c
+
+theorem carried_runaway {v : Nat → C} {w : Nat → Nat} {m : Nat} {e : C} (start : v 0 = e)
+    (back : v (m + 1) = e) (loop : CoupledWith cs part k present v w (m + 1)) (t : Nat) :
+    ∀ R, (1 + Loops.product w (m + 1)) ^ R * carried cs part σ k present δ t e ≤
+      carried cs part σ k present δ (t + (m + 1) * R) e
+
+theorem carried_le_carriedWithin_add {M D : Nat} (start : ∀ c, δ c ≤ D)
+    (into : ∀ t c, inflow cs part k present t c ≤ M) :
+    ∀ j t c, carried cs part (fun _ _ _ => 0) k present δ t c ≤
+      carriedWithin cs part (fun _ _ _ => 0) k present δ j t c + Loops.missBound M D j t
+
+theorem polynomial_iff_no_loop (every : ∀ c, c ∈ cs) (K : F → C → C → Nat) (hs : List F)
+    (c : C) :
+    (∀ δ : C → Nat, ∃ A n, ∀ t,
+        carried cs part (fun _ _ _ => 0) (stationary K) (fun _ => hs) δ t c ≤ A * (t + 1) ^ n) ↔
+      ∀ e, Upstream cs part (stationary K) (fun _ => hs) e c →
+        ¬ OnLoop cs part (stationary K) (fun _ => hs) e
+```
+
+**读法（AI 的，待 Ren）。**
+1. **积分、精度与损失。** Ren 问到像图那样的模式与回路能否积分、精度多少、界限在哪里、有没有损失。`Becoming.Weighted`（P82，§104）对历史之和以四种损失回答；这里对所携带的差别回答。各阶就是那种积分：如同按顶点数求图之和（AI 把“Fermi's diagrams”读作费曼图），每一阶加上多一次回应的路线，`Loops.binom t i` 数 i 次回应在 t 步中的时间次序。截断的精度是剩下的和，并且恰好达到：这是只由强度与起始之差所能有的极限。上游没有回路处，有限阶没有损失；有回路且耦合每步成立处，每个有限阶都有损失，到达回路者至少按几何级数增长。
+2. **只有回路使差别失控。** 没有回路时，所持的差别不断到达，但至多按多项式增长，次数小于条件数（`Propagation.Chain` 是一次的）；有回路时至少按几何级数增长（`Propagation.Loop` 是强度为一的自环）。P115 的两个见证是这条一般规律的两端。
+3. **一个世界有哪些回路，是其情境。** 强度是给出的，如在 `Becoming.Propagation` 中：这些陈述对每一组强度成立，哪一组成立由情境使之为真（Ren 2026-10-16：“the situation makes it true”，§144 中 Ren 已取的读法）。
+
+**作者反审。**
+1. **新律还是重述？** 按阶展开是线性比较系统的 Picard 迭代（Neumann 级数、Dyson 级数的离散形式）；有向无环则邻接矩阵幂零，有限级数精确；`D * Σ C(t, i) M^i` 是 `(1 + M)^t` 的二项展开截断。这些在数学上是标准的。新的是：（a）它们在核心的交换律上陈述，不加前提，并经 `most_difference_arrives` 成为关于一切具有这些强度之律的陈述；（b）截断的界恰好达到（自环）；（c）形成与强度每步相同时的当且仅当：有多项式界恰在上游没有回路处，对一切律亦然。
+2. **为什么是“一加”强度之积。** 水平持有所给的（积分器），所以绕一圈的因子是一加回路的强度之积。强度是自然数，正强度至少为一，所以每个耦合每步成立的回路至少加倍。实数的强度下，只要回路的强度之积为正，因子仍大于一，几何增长应当仍在；这里没有证明。
+3. **耦合时有时无。** 当且仅当要求耦合每步成立；只在某些步成立的回路不必使每一阶都不精确（只在第一步耦合的回路，`Loops.Once.not_always`）。一般时变强度下的刻画开放。
+4. **最坏情形，不是每个律。** 所携带的量是一切具有这些强度之律的上界，由携带之律达到：失控说的是能到达的最大差别。对一个具体的律，即使有回路，实际的差也可以有界（例如什么也不交换的律，其强度在任何界之下）；一个律自身的失控需要其回应的下界，这里没有陈述。
+5. **与 `Becoming.Runaway`（P55）。** 那里的失控是保持支持的策略，断裂的距离不被识；这里是差别绕耦合的回路增长。两者相遇于一个形成的汲取回应其自身汲取所降低的水平之处：一个回路；这里没有把两者连起来。
+6. **与 P82 的损失。** `Loop.courses_double` 数一个转移图中回路的历程（可能性）；这里耦合的回路乘以所携带的量。P82 的截断“恰好漏掉所弃者”，这里成为定量的界，并且达到。
+7. **范围。** 不含伦理谓词；离散的步、自然数的量；条件全部列出。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -11173,3 +11258,13 @@ This section covers the first. Each of the 31 earlier versions now names, on its
   - Not proved: that an option singled out is found by a choice function (a search); the same law over records of pairwise relations.
 - **Boundary and reading.** The core law says what a selection reading the record alone can part, not which selection should be used. Whether an equal chance legitimately breaks a tie, and priority by size or by turn, keep the originals' scope ([TIE-BREAKING-LEGITIMACY](TIE-BREAKING-LEGITIMACY.md)). The reading, which is the AI's and pending Ren: which option is which is not among the record's relations; to part what the record ties takes a further recorded relation, such as an order of arrival or an agreement, as the gap of selection through registration closes only through relations.
 - **Next in I4b.** The four items are complete: Gated, Selection, Horizon and Lasting. IdealWarrant waits for Ren to place it; when joined it takes a structural name under rule 8.
+
+**How a carried difference grows (P118, 16 October 2026).** P115's record how-much-difference-arrives listed a general theory of loops, the strength around a loop and its runaway, first in its next steps, as `Becoming.Propagation` listed it among what is not derived; comparison-where-the-rest-responds and runaway-distance-unregistered (P55) asked to define a loop in general and state a runaway as a theorem, and the chapter's §8 lists the general theory of loops under feedback and reach. On 12 October Ren compared the theory with quantum dynamics and "Fermi's diagrams": “there are so many patterns and loops but we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that uh what is the limitation do we have losses”, with the goal “move towards 100%” ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)). Section 152 adds one core module, `Becoming.Loops` (113 theorems, no axiom, no premise beyond the strengths each theorem names), on Propagation's carried amount.
+- **Orders.** Order j (`carriedWithin`) is what routes of at most j responses carry, each order being what the strengths make of the order below (`carriedFrom`); the orders rise to the carried amount, and order j is exact up to step j (`carriedWithin_exact`).
+- **No loop upstream, a finite order is exact.** Couplings (`Couples`), chains (`Coupled`), loops (`OnLoop`) and upstream (`Upstream`) are defined on the positive strengths. Where no chain of j + 1 couplings ends at c, order j is exact there; with every condition listed a chain as long as the list passes a loop (`loop_of_coupledInto`, pigeonhole by `revisits_within`), so where no loop lies upstream the order one less than the number of conditions is exact at every step (`carriedWithin_exact_of_no_loop`).
+- **A loop upstream, every order misses.** Where the couplings hold at every step, the order missed rises by one per coupling and by the loop's length every time around, so a fed loop upstream leaves every order inexact (`carriedWithin_lt_of_loop`), and a finite order is exact from every start exactly where no loop lies upstream (`finite_order_iff_no_loop`); the couplings must hold at every step, as a loop coupled at the first step only leaves order one exact (`Loops.Once.not_always`).
+- **The strength around a loop.** Along a chain, what reaches its start arrives times the product of the strengths (`carried_along`); around a loop it returns multiplied, every time around, by at least one plus the product of the strengths (`carried_around`, `carried_runaway`), the one from levels holding what they are given.
+- **Accuracy of a cut.** With the part giving no gap after the start, starting gaps at most D and the strengths into each condition at most M a step, order j carries at most D times the sum over i ≤ j of C(t, i)·M^i (`carriedWithin_le_withinBound`, `Loops.withinBound_eq`), the carried amount at most D(1 + M)^t (`carried_le_geomBound`), and a cut at order j misses at most the rest of that sum (`carried_le_carriedWithin_add`); a self-loop attains all three (`Loops.SelfLoop.attained`).
+- **Polynomial exactly where no loop lies upstream.** Where no loop lies upstream the carried amount is at most a polynomial of degree one less than the number of conditions (`carried_le_polynomial`). With the same formations and strengths at every step (`stationary`), every loop at least doubles what reaches it every time around (`carried_doubles_around`, `carried_doubles_into`), and a doubling outgrows every polynomial (`Loops.not_poly_of_doubling`), so a polynomial bound holds exactly where no loop lies upstream (`polynomial_iff_no_loop`); by `most_difference_arrives` the same holds of the most difference that can arrive for every law with those strengths (`gap_polynomial_iff_no_loop`, with `most_difference_within` and `gap_le_polynomial` where no loop lies upstream).
+- **Readings (the AI's, pending Ren).** The orders are the integration Ren asked about, like a sum over diagrams by their number of vertices (the AI reads "Fermi's diagrams" as Feynman diagrams), `Loops.binom` counting the time orderings of the responses; the accuracy of a cut is the rest of the sum, attained; where no loop lies upstream a finite order loses nothing, and where one does every finite order loses something. `Becoming.Weighted` (P82) answered the same question for sums over histories. Only a loop makes a difference run away: P115's chain grows linearly and its self-loop doubles, the two ends of this law. Which loops a world has is its situation (Ren, 16 October, “the situation makes it true”).
+- **Boundaries.** The strengths are supplied; the equivalences need couplings at every step, stated for the same formations and strengths at every step; couplings that come and go, how fast a runaway is beyond the product of the strengths, real strengths and amounts, continuous time and infinitely many conditions are open; the runaway is of the most difference that can arrive, attained by the carrying law, not of every law. The mathematics is standard (Picard iteration of a linear comparison system, nilpotent on an acyclic coupling graph); what is new is its statement on the core's laws with no premise, the attained accuracy, and the equivalence for every law. Scratch build on main `5f8f7726`: 113 theorems, 137 declarations, empty axiom reports; the root compiles with its 118-module closure; the decidability inventory classifies every new row. Not yet independently reviewed.

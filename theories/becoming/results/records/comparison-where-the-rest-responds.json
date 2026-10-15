@@ -234,8 +234,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T204910.042715Z; periphery receipt 20261013T095049.338744Z): the theorems of the Response module have empty axiom reports, and the checker verifies core purity, every source declaration in the core's import closure having an empty axiom report and the core compiling from Lean's prelude alone. Author counterreview in §87 of the integration note; no independent review."
   },
   "next_delta": {
-    "zh": "回路的一般定义，以及在其中陈述绕回路的强度与失控（how-much-difference-arrives 只给见证）。",
-    "en": "Define a loop in general and state the strength around it and its runaway (how-much-difference-arrives gives witnesses only)."
+    "zh": "没有有限耦合强度之律上的回路（具有给定强度时由 how-a-carried-difference-grows 回答）。",
+    "en": "Loops under laws with no finite coupling strength (answered by how-a-carried-difference-grows where the strengths are given)."
   },
   "correspondence": {
     "zh": "AI 把本理论与一般的因果系统（x_{t+1} = F(x_t, u_t, ε_t)、反馈、自适应参数、吸引子）作比较并提出五项改进之后，Ren 写道：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本项是其中第二项（提议是 AI 的）：其余回应时的反事实，回答本章开放项“其余交换随之调整的反事实”中其余经识回应的情形。读法（AI 的，依 Ren 的交托采用）：一个动作有两种反事实，其余固定时只计部分直接到达的，其余经识回应时计部分对经所识者影响的闭包；一个动作对与之相互作用的形成造成什么，在第二种之内决定；升级回路是每一方都经识回应、差别回到部分的情形，它不在其余固定的比较中出现；只识支持时回应所及是所及闭包之并，这给所及闭包一个反事实的意义：其余经其支持回应时，一个动作的差别所能到之处。来源中粘贴的因果系统文字（含军备竞赛的回路）作者未注明，不是 Ren 的话，也不是本理论的前提。",
@@ -409,6 +409,13 @@
       "detail": {
         "zh": "回答其下一步中的两项：差别到达多少至多是所携带的量，恰好达到；它恰沿正强度的时间路线为正（carried_pos_iff）。回路只有见证：强度为一的回路使一个单位每步加倍（Propagation.Loop.runaway）。",
         "en": "Answers two items of its next step: how much difference arrives is at most the carried amount, which is attained, and is positive exactly along a route in time of positive strengths (carried_pos_iff). Loops have witnesses only: a loop of strength one doubles a unit every step (Propagation.Loop.runaway)."
+      }
+    },
+    {
+      "id": "how-a-carried-difference-grows",
+      "detail": {
+        "zh": "回答其下一步中回路的一项，在其余遵从具有给定耦合强度之律处：回路是经正强度的耦合回到出发条件的链（OnLoop），绕回路的强度是一加回路上强度之积，到达回路者每圈至少乘以它（carried_runaway），形成与强度每步相同时有多项式界恰在上游没有回路处。",
+        "en": "Answers the item on loops in its next step, where the rest follows a law with given coupling strengths: a loop is a chain of couplings of positive strength back to where it started (OnLoop), the strength around it is one plus the product of its strengths, by which what reaches it is multiplied every time around (carried_runaway), and with the same formations and strengths at every step a polynomial bound holds exactly where no loop lies upstream."
       }
     }
   ],
@@ -763,6 +770,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Response.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Feedback.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Counterfactual.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Response.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Feedback.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Counterfactual.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16 P118（所携带的差别怎样增长，研究 §152）：下一步中“回路的一般定义，以及在其中陈述绕回路的强度与失控”在具有给定耦合强度之律上由新记录回答，收窄为没有有限强度之律上的回路；related 加 how-a-carried-difference-grows。陈述与证明不变；does_not_show 仍对本记录的定理成立。",
+      "en": "16 October 2026, P118 (how a carried difference grows, study section 152): in the next step, “define a loop in general and state the strength around it and its runaway” is answered by the new record for laws with given coupling strengths, and narrowed to loops under laws with no finite strength; related adds how-a-carried-difference-grows. Statement and proofs unchanged; does_not_show still holds of this record's theorems."
     }
   ],
   "text_versions": [

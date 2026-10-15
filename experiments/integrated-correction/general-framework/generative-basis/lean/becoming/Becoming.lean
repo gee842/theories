@@ -109,6 +109,7 @@ import Becoming.Parting
 import Becoming.Typicality
 import Becoming.Situations
 import Becoming.Propagation
+import Becoming.Loops
 import Becoming.Gain
 import Becoming.Gluing
 
@@ -1091,6 +1092,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   positive exactly along a route in time of positive strengths, on routes of `TimedResponse`'s
   spread where they are registered; carried differences add. A held difference arrives without
   bound through a chain, and a loop of strength one doubles it every step.
+* `Becoming.Loops` (L4): how a carried difference grows, with no premise beyond the strengths each
+  statement names. The carried amount expands by order: order `j`, what routes of at most `j`
+  responses carry, rises to the carried amount and is exact up to step `j`. Where no loop of
+  couplings lies upstream of a condition, a finite order is exact there at every step and the
+  carried amount is at most a polynomial in the steps; a cut at order `j` misses at most a bound
+  that a self-loop attains. Around a loop what reaches it returns multiplied, every time around, by
+  at least one plus the product of its strengths. With the same formations and strengths at every
+  step, a finite order is exact, and the most difference that can arrive is bounded by a
+  polynomial, exactly where no loop lies upstream.
 * `Becoming.Gain` (L3): where novelty's gain comes from, with no premise. With the rest of the
   whole counted, every rise is given: across a step at which a family's stock rises, some relatum
   gives it more than it takes, a formation taking part or the rest, found by checking each one taking
