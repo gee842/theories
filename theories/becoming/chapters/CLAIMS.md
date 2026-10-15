@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-212 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+213 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -216,6 +216,7 @@
 | [一个展开在语境中的读法 / One unfolding, read in context](../results/records/unity-of-readings.md) | recorded-checked | [Readings.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean) |
 | [普遍实践权威的更强目标 / Stronger universal practical warrant target](../results/records/universal-practical-warrant.md) | open | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](ZERO-AXIOM-PRACTICAL-JUDGMENT.md) |
 | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](../results/records/versioned-request-completion.md) | recorded-checked | [CorrectionVersioned.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean) |
+| [权重计数情境 / Weights count situations](../results/records/weights-count-situations.md) | recorded-checked | [Situations.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean) |
 | [动作在哪里形成 / Where a move is formed](../results/records/where-a-move-is-formed.md) | recorded-checked | [Coupling.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean) |
 | [整体优先，与以依存为界的中心 / The whole first, and centers bounded by dependence](../results/records/whole-first-and-bounded-centers.md) | recorded-checked | [Significance.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean) |
 | [计数表是计数的全部规律 / The tally is the whole law of counting](../results/records/whole-law-of-counting.md) | recorded-checked | [Population.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean) |

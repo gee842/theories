@@ -21,7 +21,7 @@
 
 ## Does not show / 未表明
 
-- That the course which happens is typical: every course is a run of free branching, the all-ones course among them; reading weights as chances adds this premise.<br>发生的历程是典型的：每个历程都是自由分支的一个运行，全是一的历程亦然；把权重读作机会者加上这一前提。
+- That the course which happens is typical: every course is a run of free branching, the all-ones course among them; with weights read as numbers of situations, which situation happens fixes the course, not a count (weights-count-situations).<br>发生的历程是典型的：每个历程都是自由分支的一个运行，全是一的历程亦然；权重读作情境之数时，哪个情境发生固定历程，不由计数（weights-count-situations）。
 - Exponential concentration (Chernoff), more than two values, and weights that are not natural numbers.<br>指数的集中（Chernoff）、多于两个值与非自然数的权重。
 
 **Standard boundaries / 通用边界:** No ethical premise and no Lean axiom is used. 不用伦理前提，也不用 Lean 公理。 · Contains no ethical predicate and evaluates neither arising nor ceasing. 不含伦理谓词，不评价生起或消失。 · Stated for discrete steps. 按离散步骤陈述。 · A law of the formal model; its correspondence to actual systems is a separate obligation. 形式模型中的规律；与实际系统的对应是另一项责任。 · Names follow Ren's naming criteria of 10 October 2026; readings remain Ren's. 名称依 Ren 2026年10月10日的命名标准；读法由 Ren 决定。
@@ -34,13 +34,13 @@ Canonical source: [Typicality.lean](../../../../experiments/integrated-correctio
 
 ## Next / 下一步
 
-Concentration with exponential bounds, and more than two values; real weights in the periphery as an instance; Ren's judgment on the reading (probability as counting plus the premise that the course which happens is typical).<br>指数之界的集中与多于两个值；外围中实数权重作为实例；Ren 对读法的判断（概率是计数加上“发生的历程是典型的”这一前提）。
+Concentration with exponential bounds, and more than two values; real weights in the periphery as an instance.<br>指数之界的集中与多于两个值；外围中实数权重作为实例。
 
 <details><summary>Correspondence, dependencies, sources and history / 对应、依赖、来源与沿革</summary>
 
 ### Correspondence / 对应
 
-Ren, 15 October 2026: “"What this line doesn’t reach" is also worth doing”, worlds with probability among it. Known result: Chebyshev's inequality for the binomial (Bernoulli's weak law of large numbers). Here it is given in the core with no axiom, joined to the counting weights of Becoming.Weighted, and the premise not derived is marked. Readings (the AI's, pending Ren): weights are counted across courses, not registered in one; a record shows the weights exactly where the course that happens is typical, and counting says only that most are; the reading of probability lies in adding that premise.<br>Ren 2026-10-15：“"What this line doesn’t reach" is also worth doing”，其中之一是有概率的世界。已知的结果：二项分布的切比雪夫不等式（伯努利的弱大数定律）。这里在核心中不用公理地给出，接到 Becoming.Weighted 的计数权重，并标出不被推出的前提。读法（AI 的，待 Ren）：权重是在历程之间计数的，不是一个历程所识的；记录显示权重，恰在发生的历程典型之处，而计数只说多数典型；概率的读法正在于加上这一前提。
+Ren, 15 October 2026: “"What this line doesn’t reach" is also worth doing”, worlds with probability among it. Known result: Chebyshev's inequality for the binomial (Bernoulli's weak law of large numbers). Here it is given in the core with no axiom, joined to the counting weights of Becoming.Weighted, and the premise not derived is marked. The AI's first reading, “probability is counting plus the premise that the course which happens is typical”, is replaced following Ren's clarification. Ren, 16 October 2026, of this: “we are describing what everything obeys, but at every moment, the actual change depends on the situation … the situation makes it true”. Read so (the AI's reading of Ren's words, which Ren took the same day): natural weights are the numbers of situations taking each step, the law of large numbers counts situations, and which situation happens is fixed by the situation, not by a count (weights-count-situations).<br>Ren 2026-10-15：“"What this line doesn’t reach" is also worth doing”，其中之一是有概率的世界。已知的结果：二项分布的切比雪夫不等式（伯努利的弱大数定律）。这里在核心中不用公理地给出，接到 Becoming.Weighted 的计数权重，并标出不被推出的前提。原先的 AI 读法“概率是计数加上发生的历程典型这一前提”已由 Ren 的说明取代。Ren 2026-10-16 对此：“we are describing what everything obeys, but at every moment, the actual change depends on the situation … the situation makes it true”。读法（AI 对 Ren 的话的读法，Ren 同日已取）：自然数权重是走每一步的情境之数，大数定律计数情境，哪个情境发生由情境固定，不是计数（weights-count-situations）。
 
 ### Dependencies / 依赖
 
@@ -59,6 +59,7 @@ Ren, 15 October 2026: “"What this line doesn’t reach" is also worth doing”
 - related, not a proved adapter / 关联而非已证转换: [identification-where-runs-part](identification-where-runs-part.md). 每个历程都是自由分支的运行，没有记录表明世界不会分开；所以发生的历程典型不被推出。 / Every course is a run of free branching, and no record shows that a world will not part; so that the course which happens is typical is not derived.
 - related, not a proved adapter / 关联而非已证转换: [losses-of-the-sum-over-histories](losses-of-the-sum-over-histories.md). 历史之和的损失；这里是历史之和关于单个历程说了什么。 / The losses of the sum over histories; here, what the sum says of one course.
 - related, not a proved adapter / 关联而非已证转换: [learning-by-refutation](learning-by-refutation.md). 其 next_delta 中的概率的读法：计数给出多数历程的频率接近权重之比。 / The probabilistic reading in its next_delta: counting gives that the frequencies of most courses are near the ratio of the weights.
+- related, not a proved adapter / 关联而非已证转换: [weights-count-situations](weights-count-situations.md). 权重是走每一步的情境之数；大数定律计数情境。 / Weights are the numbers of situations taking each step; the law of large numbers counts situations.
 
 ### Sources / 来源
 
@@ -75,12 +76,17 @@ Ren, 15 October 2026: “"What this line doesn’t reach" is also worth doing”
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-15-situational-and-the-whole-core.md](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json) | — |
+| provenance | [2026-10-16-the-situation-makes-it-true.md](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json) | — |
 
 Aliases / 别名: `Becoming.Typicality.left_comm`, `Becoming.Typicality.ones`, `Becoming.Typicality.zeros`, `Becoming.Typicality.weight`, `Becoming.Typicality.extend`, `Becoming.Typicality.courses`, `Becoming.Typicality.total`, `Becoming.Typicality.mem_extend_true`, `Becoming.Typicality.of_mem_extend`, `Becoming.Typicality.mem_courses_iff`, `Becoming.Typicality.extend_length`, `Becoming.Typicality.courses_length`, `Becoming.Typicality.total_extend`, `Becoming.Typicality.total_congr`, `Becoming.Typicality.total_add`, `Becoming.Typicality.total_mul`, `Becoming.Typicality.total_mul_right`, `Becoming.Typicality.total_le`, `Becoming.Typicality.total_weight`, `Becoming.Typicality.ahead`, `Becoming.Typicality.behind`, `Becoming.Typicality.square`, `Becoming.Typicality.cross`, `Becoming.Typicality.sq_add`, `Becoming.Typicality.square_true`, `Becoming.Typicality.square_false`, `Becoming.Typicality.cross_true`, `Becoming.Typicality.cross_false`, `Becoming.Typicality.split`, `Becoming.Typicality.regroup`, `Becoming.Typicality.steps_leave`, `Becoming.Typicality.weighted_square`, `Becoming.Typicality.weighted_cross`, `Becoming.Typicality.step_weight`, `Becoming.Typicality.spread`, `Becoming.Typicality.two_mul_le_of_le`, `Becoming.Typicality.two_mul_le`, `Becoming.Typicality.offBy`, `Becoming.Typicality.offBy_le`, `Becoming.Typicality.typical`, `Becoming.Typicality.stepWeight`, `Becoming.Typicality.along_weight`, `Becoming.Typicality.transfer_weight`, `Becoming.Typicality.sum_courses_weight`
 
 ### History / 沿革
 
 - 2026-10-16：新增，按 Ren 2026-10-15 的“"What this line doesn’t reach" is also worth doing”（P116）；研究 §140。 / 16 October 2026: added, following Ren's “"What this line doesn’t reach" is also worth doing” of 15 October (P116); study section 140.
+- 2026-10-16 P117：按 Ren 2026-10-16 的说明（“the situation makes it true”）以“机会是同类情境之数”取代读法“概率是计数加上发生的历程典型这一前提”，correspondence、next_delta 与 does_not_show 第一项改写；related 新增 weights-count-situations；Typicality.lean 只改模块说明中的读法，声明不变，落地时重新绑定回执；研究 §144。原 does_not_show 第一项：“……把权重读作机会者加上这一前提。” / 16 October 2026, P117: following Ren's clarification of 16 October (“the situation makes it true”), the reading “probability is counting plus the premise that the course which happens is typical” is replaced by “a chance is a number of situations of a kind”; correspondence, next_delta and the first does_not_show item rewritten; related gains weights-count-situations; Typicality.lean changes only the reading in its module header, no declaration changes, and the receipt is rebound at landing; study section 144. The former first does_not_show item ended “reading weights as chances adds this premise”.
+- 2026-10-16：Ren 取了这些读法（“yes, i take those readings”）；correspondence 标为 Ren 已取，next_delta 去掉“Ren 对读法的判断”；研究 §144。原文：“读法（AI 对 Ren 的话的读法，待 Ren）”。 / 16 October 2026: Ren took these readings (“yes, i take those readings”); correspondence marks them as taken and next_delta drops Ren's judgment on the readings; study section 144. Former wording: “Readings (the AI's reading of Ren's words, pending Ren)”.
+- 2026年10月16日，P117 落地（研究第144节）：改绑新回执并更新哈希：Typicality.lean（P117：只改文件说明中的读法（Ren 2026-10-16：“the situation makes it true”，并取其读法）；声明不变）；Parting.lean（P117：只改文件说明中的读法（Ren 2026-10-16：“the situation makes it true”，并取其读法）；声明不变）。 / 16 October 2026, landing P117 (study section 144): rebound to the new receipts and rehashed: Typicality.lean (P117: only the reading in the module header changes (Ren, 16 October 2026: “the situation makes it true”, and took the readings); no declaration changes); Parting.lean (P117: only the reading in the module header changes (Ren, 16 October 2026: “the situation makes it true”, and took the readings); no declaration changes).
 
 </details>
 

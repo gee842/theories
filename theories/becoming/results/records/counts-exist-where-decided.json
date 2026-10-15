@@ -223,7 +223,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9c2731898576c39e211caaaa8359ce0b19c5fed89088b8e56caf7fc9e586af4d"
+      "sha256": "604b84c78b76ed203ae2714ee826270b8079b8c6119ff0cc3d3c218482b9d19f"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -233,7 +233,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "6dac4ae38ac00c1dcd8f3c2e53e770704e29730940dbe165eaf27782627893e9"
+      "sha256": "4b6f7ebbc10b863bbe1d74ea145d507407fbbb280c529a8298c446d8130c0c0c"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
@@ -441,6 +441,10 @@
     {
       "zh": "2026年10月16日，I4b 第一项落地（研究第143节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第一项：§9 的 Becoming.Gated 一行（4 → 13 项定理）与外围实例 LivingOrganizationCorrespondence 一行，外围实例的列举加入它；总数改据新回执）；DECIDABILITY-INVENTORY.md（在回执 20261015T182202.414009Z 上重新生成，含 I4b 第一项的分类：只在证明中用到 223 → 224（分情形 28 → 29），其余各类不变）。",
       "en": "16 October 2026, landing I4b item 1 (study section 143): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 1: the §9 row of Becoming.Gated (4 → 13 theorems) and a peripheral-instance row for LivingOrganizationCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T182202.414009Z with I4b item 1's classifications: used only in proofs 223 → 224 (splits on a case 28 → 29), the other classes unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P117 落地（研究第144节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P117：新增一对段落（权重计数情境），P116 的读法按 Ren 的澄清改写并标为 Ren 所取，第一部分“认识”、完整陈述与界一项、§8 状态行、Ren 的选择与开放项、§9 一行、术语一行；总数改据新回执）；DECIDABILITY-INVENTORY.md（在回执 20261015T183102.290672Z 上重新生成，含 P117 的分类：陈述依赖可判定 367 → 368（分情形 29 → 30），其余各类不变）。",
+      "en": "16 October 2026, landing P117 (study section 144): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P117: a new paragraph pair (weights count situations), P116's readings rewritten after Ren's clarification and marked as taken by Ren, Part I \"Knowing\", the theory stated in full and its bound item, §8's status row, Ren's choices and open item, one §9 row, one glossary row; the totals moved to the new receipt); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T183102.290672Z with P117's classification: statements depending on decidedness 367 → 368 (splits on a case 29 → 30), the other classes unchanged)."
     }
   ]
 }

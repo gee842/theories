@@ -5290,6 +5290,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean)
 
+## weights-count-situations ← typicality-by-counting
+
+`formal-reuse` — 复用 courses、extend、total、total_extend、total_add、total_congr、weight、cross、square、offBy、typical、stepWeight、along_weight、transfer_weight。 / Reuses courses, extend, total, total_extend, total_add, total_congr, weight, cross, square, offBy, typical, stepWeight, along_weight and transfer_weight.
+
+**Producer output / 上游输出:** 偏差至少为 d 的历程之重乘 d 至多 n·p·q·(p + q)ⁿ；以 p、q 计数的自由分支沿历史复合的是历程的权重。 / The courses deviating by at least d weigh, times d, at most n·p·q·(p + q)ⁿ; free branching counted by p and q composes along each history the weight of its course.
+
+**Consumer input / 下游输入:** 细历程之数按历程推前到历程之重。 / The number of finer courses pushed forward to the weights of the courses.
+
+**Retained conditions / 保留条件:** 两个值、自然数权重。 / Two values, natural weights.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean)
+
+## weights-count-situations ← sum-over-histories-exact
+
+`formal-reuse` — 复用 counting、joinMap、openSteps、courses、Weights.along、Weights.transfer、Weights.sum_courses、Weights.sum_joinMap、Weights.sum_map、Weights.sum_congr、Weights.mul_sum 与 mul_assoc_nat。 / Reuses counting, joinMap, openSteps, courses, Weights.along, Weights.transfer, Weights.sum_courses, Weights.sum_joinMap, Weights.sum_map, Weights.sum_congr, Weights.mul_sum and mul_assoc_nat.
+
+**Producer output / 上游输出:** 以计数加权的历史之和是逐步的转移。 / The sum over histories weighted by counting is the step-by-step transfer.
+
+**Consumer input / 下游输入:** 细历程之数是历史之和。 / The number of finer courses is the sum over histories.
+
+**Retained conditions / 保留条件:** 列出的动作与配置。 / Listed moves and configurations.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
+
 ## where-a-move-is-formed ← process-and-frame-as-readings
 
 `formal-reuse` — 复用 closedBy 与 Fork.label_couples：耦合的整体就是积的 closedBy，共享的动作是两方之间的关系。 / Reuses closedBy and Fork.label_couples: the coupled whole is the product's closedBy, and the shared move is the relation between the two sides.

@@ -514,7 +514,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "bb692bfeafddff1162d40c2275f87aea31ae19c9a31775a9ab6311c43fed0160"
+      "sha256": "2df6895e0994cdadab40d2d5ab6069fbed49bf1963eb8ac29c16fac30eb31865"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -588,6 +588,10 @@
     {
       "zh": "2026-10-16：新增，回答六项记录 next_delta 中的差别到达多少与耦合的度量（P115）；研究 §141。",
       "en": "16 October 2026: added, answering the item of six records' next_delta on how much difference arrives and a measure of coupling (P115); study section 141."
+    },
+    {
+      "zh": "2026年10月16日，P117 落地（研究第144节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第144节（P117：权重计数情境，Becoming.Situations）及其英文段，排在第142、143节之后；第140节英文段的节号更正；此前各节内容不变）。",
+      "en": "16 October 2026, landing P117 (study section 144): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 144 (P117: weights count situations, Becoming.Situations) with its English paragraph, after sections 142 and 143; the section number in section 140's English paragraph corrected; earlier sections otherwise unchanged)."
     }
   ],
   "text_versions": []
