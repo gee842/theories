@@ -1,18 +1,18 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261014T154159.148254Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261015T143041.527461Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261014T154159.148254Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261015T143041.527461Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
-| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 318 |
-| 只在证明中用到 / used only in proofs | 171 |
+| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 320 |
+| 只在证明中用到 / used only in proofs | 172 |
 | 不用到 / unused | 0 |
 | 排中律或其受限形式作为假设（边界定理）/ excluded middle, in full or restricted form, as a hypothesis (boundary theorems) | 24 |
-| 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 86 |
+| 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 87 |
 | 证明可判定的定义与实例 / definitions and instances proving decidedness | 125 |
 | 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 88 |
 
@@ -26,7 +26,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 较粗的读法 / coarser reading | 较粗的读法：粗步内每个关系项只列一次，需分辨关系项的相同 / a coarser reading: each relatum listed once within a coarse step, which tells relata apart | 88 |
 | 抬高一个条件 / one condition raised | 抬高一个条件：需分辨条件的相同 / one condition raised: tells conditions apart | 8 |
 | 移开依存 / dependence moved | 在不被支持之步移开依存：支持已定 / dependence moved at unsupported steps: support decided | 3 |
-| 保留的列表 / a kept list | 按规定保留的列表：对其成员已定 / a list kept by a determination: decided of its members | 7 |
+| 保留的列表 / a kept list | 按规定保留的列表：对其成员已定 / a list kept by a determination: decided of its members | 9 |
 | 按否证学习 / learning by refutation | 按否证学习：判定主张是否被否证，以保留假设或选出记录所支持的假设，需分辨值的相同 / learning by refutation: decides whether claims are refuted, to retain a hypothesis or select one borne out by the record, which tells values apart | 23 |
 | 首个符合者 / first fitting member | 选出首个符合者：依次判定列表成员是否满足规定 / first fitting member: decides the condition on each listed member in order | 10 |
 | 另一个值 / another value | 另一个值：取与给定值不同的值，需分辨值的相同 / another value: a value other than a given one, which tells values apart | 1 |
@@ -38,7 +38,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 14 |
 | 分情形 / splits on a case | 按规定分情形：证明分别用规定成立与不成立的情形 / splits on a determination: the proof uses both its holding and failing cases | 22 |
 | 守护之步 / a guarded step | 守护之步：每步判定守护是否成立，不成立处停止 / a guarded step: decides the guard at each step and stops where it fails | 10 |
-| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 72 |
+| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 73 |
 | 造出列表 / builds a list | 造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from decided members | 14 |
 
 ## 陈述依赖可判定性的定理（计数或构造） / Theorems whose statements depend on decidedness (counting or construction)
@@ -260,6 +260,8 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Premises | `keep_distinct` | `(a : α) → Decidable (p a)` | 保留的列表 / a kept list | 可判定是它自己的条件 / its own condition |
 | Premises | `listed_of_ever` | `(a : α) → (t : Nat) → Decidable (p a t)` | 保留的列表 / a kept list | 可判定是它自己的条件 / its own condition |
 | Premises | `mem_keep` | `(a : α) → Decidable (p a)` | 保留的列表 / a kept list | 可判定是它自己的条件 / its own condition |
+| Reading | `Flow.adopt_census` | `(t : Nat) → (f : Option F) → Decidable ((L.withImbalance W).Exchanging t f)` | 保留的列表 / a kept list | 可判定是它自己的条件 / its own condition |
+| Reading | `Flow.readOff_census` | `(t : Nat) → (f : F) → Decidable (L.Exchanging t f)` | 保留的列表 / a kept list | 可判定是它自己的条件 / its own condition |
 | Readout | `Readout.pick_of` | `Decidable p` | 造出指示 / builds an indicator | 可判定是它自己的条件 / its own condition |
 | Readout | `Readout.pick_of_not` | `Decidable p` | 造出指示 / builds an indicator | 可判定是它自己的条件 / its own condition |
 | Regrouping | `Web.admits_iff_requiredLevel` | `(t : Nat) → (f : F) → (c : C) → Decidable (W.requires t f c)` | 造出指示 / builds an indicator | 可判定是它自己的条件 / its own condition |
@@ -471,6 +473,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Locality | `coming_of_ceasing_covered` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | `Covers.not_not_coming_from`、`Covers.ceasing_not_recurring`（无前提 / no premise, P48） |
 | LossMatching | `Frame.exists_fresh` | `DecidableEq C` | 找出 / finds | — |
 | LossMatching | `Frame.strictLossMatch_iff_length_of_alike` | `DecidableEq C` | 分辨相同 / tells same from different | — |
+| Novelty | `upto_or_fails` | `(n : Nat) → Decidable (p n)` | 找出 / finds | — |
 | Openness | `Flow.Enclosed.aroundStanding` | `DecidableEq C` | 造出列表 / builds a list | `Flow.Enclosed.aroundStanding_not_not`（不判定 / no decision） |
 | Openness | `Listed.few_of_quiet` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | `Listed.few_of_stop_unrefuted`（不判定 / no decision, P58） |
 | Openness | `World.CountedBy.arising_iff_ceasing` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
@@ -580,6 +583,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 - Learning: 2
 - Locality: 1
 - LossMatching: 1
+- Novelty: 1
 - Openness: 2
 - Order: 1
 - Population: 14

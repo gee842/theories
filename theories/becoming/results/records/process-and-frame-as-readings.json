@@ -253,6 +253,13 @@
         "zh": "实例（P80b）：交换律的进程是一个世界，按交换之律而行恰当可行；确定的律在 Shown 之外的步恰在运行未取的动作（Run.beyond_shown_iff，关于 Shown 的一条律，暂放在 Counterfactual），所以进程历史之外的是反事实；部分的动作由律在配置上形成时，closedBy 的运行就是进程。",
         "en": "Instances (P80b): the course of a law of exchange is a world, running by the law of exchange exactly where feasible; a determined law's steps beyond Shown are exactly at the moves the run never takes (Run.beyond_shown_iff, a law about Shown, kept in Counterfactual for now), so what lies beyond the course's history is its counterfactuals; with the part's move formed by a law on the configuration, a run of closedBy is the course."
       }
+    },
+    {
+      "id": "unity-of-readings",
+      "detail": {
+        "zh": "读一个展开的都是语境中的读法，诸读法总是一个世界（Contextual.world，如 Frame.world）；World 是粘合的读法，算入其余时每个世界都是交换之律的一次运行（World.unity），World.exchangeRun 的平衡前提由此去掉。Ren 批准语境中的读法为一般情形、World 为粘合的情形，过程与框架同是一个展开的读法。",
+        "en": "Whatever reads an unfolding is a reading in context, and the readings are always one world (Contextual.world, as Frame.world); World is the glued reading, and with the rest counted every world is one run of the law of exchange (World.unity), which drops the balance premise of World.exchangeRun. Ren approved the readings in context as the general case and World as the glued case, the process and the frame being readings of one unfolding."
+      }
     }
   ],
   "counterexamples": [
@@ -286,8 +293,8 @@
     }
   ],
   "limitations": {
-    "zh": "共同的步序是表示的承诺，不由关系推出（见 Becoming.Sampling 与 Becoming.Tower）；动作在展开之内形成与否、由什么形成，一个形成把它的历史读作显示哪条律，都不推出；律只指确定的过程，概率没有陈述；GenerativeCore 不变，其中的过程仍以带标签的形式陈述，这里给出的是读法与桥接，不是另一个基础；Frame.world 不含流与依存，主张之间的关系没有陈述；主定理多近于定义，增量在于两个方向都证明、对应何处不是同一，以及代价；读法是 AI 的，Ren 只确认了律与历史的读法；不含伦理谓词。",
-    "en": "The shared index of steps is a commitment of the representation and is not derived from relations (see Becoming.Sampling and Becoming.Tower); that a move is formed within the unfolding, or by what, and which law a formation takes its history to show, are not derived; a law means a determined process, and probabilities are not treated; GenerativeCore is unchanged and still states processes in labelled form, so what is given here is a reading and a bridge, not another foundation; Frame.world has no flow or web, and relations among claims are not stated; most main theorems are near-definitional, the delta being that both directions are proved, where the correspondence fails to be an identity, and its price; the readings are the AI's, Ren having confirmed only the reading of law and history; contains no ethical predicate."
+    "zh": "共同的步序是表示的承诺，不由关系推出（见 Becoming.Sampling 与 Becoming.Tower）；动作在展开之内形成与否、由什么形成，一个形成把它的历史读作显示哪条律，都不推出；律只指确定的过程，概率没有陈述；GenerativeCore 不变，其中的过程仍以带标签的形式陈述，这里给出的是读法与桥接，不是另一个基础；Frame.world 不含流与依存，主张之间的关系没有陈述；主定理多近于定义，增量在于两个方向都证明、对应何处不是同一，以及代价；读法是 AI 的，Ren 确认了律与历史的读法并批准了语境中的读法；不含伦理谓词。",
+    "en": "The shared index of steps is a commitment of the representation and is not derived from relations (see Becoming.Sampling and Becoming.Tower); that a move is formed within the unfolding, or by what, and which law a formation takes its history to show, are not derived; a law means a determined process, and probabilities are not treated; GenerativeCore is unchanged and still states processes in labelled form, so what is given here is a reading and a bridge, not another foundation; Frame.world has no flow or web, and relations among claims are not stated; most main theorems are near-definitional, the delta being that both directions are proved, where the correspondence fails to be an identity, and its price; the readings are the AI's, Ren having confirmed the reading of law and history and approved readings in context; contains no ethical predicate."
   },
   "validation_scope": {
     "zh": "2026-10-14：Becoming.Mechanism、Becoming.Unfolding、Becoming.Joint 的当前字节由合并检查器回执 20261013T221720.428753Z 绑定（通过：包 91 个模块，4983 项定理、7020 项声明审计，源声明公理报告全空；核心闭包 90 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Unfolding 的 67 项定理全部空依赖，其中含 withMove_determined_iff、closedBy_runs_agree、Fork.label_couples、World.balances_iff_exchange、exchange_runs_agree、exists_law_iff、Shown.runs_of_new、Splice.spliced、DeadEnd.no_history、Frame.novel_iff_arises与 Frame.world_fixes_run；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261011T232716.311380Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §91；尚无独立审查。",
@@ -449,13 +456,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d",
+      "sha256": "821fbfb3c06101bcd3a4bc3cea40d081fb246e13db3d922504a81b4bfa1b229e",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f",
+      "sha256": "8819b5028eee9e9196858cea06bd635cdb58b742a13e4bd8568a1bf7ed270eb3",
       "declarations": []
     },
     {
@@ -568,8 +575,8 @@
     }
   ],
   "next_delta": {
-    "zh": "从关系推出共同的步序，或说明它为何是表示的承诺；动作在展开之内形成的条件（何时一个动作是某个形成的，而不是外来的）；主张之间的关系作为 Frame.world 的流与依存；Ren 的判断：起点是否读作 World，过程与框架是否读作它的读法。",
-    "en": "Deriving the shared index of steps from relations, or saying why it is a commitment of the representation; when a move is formed within the unfolding (when it is a formation's, not supplied from outside); relations among claims as the flow and web of Frame.world; Ren's judgment whether the starting point reads as World, with the process and the frame as its readings."
+    "zh": "从关系推出共同的步序，或说明它为何是表示的承诺；动作在展开之内形成的条件（何时一个动作是某个形成的，而不是外来的）；主张之间的关系作为 Frame.world 的流与依存。",
+    "en": "Deriving the shared index of steps from relations, or saying why it is a commitment of the representation; when a move is formed within the unfolding (when it is a formation's, not supplied from outside); relations among claims as the flow and web of Frame.world."
   },
   "history": [
     {
@@ -687,6 +694,10 @@
     {
       "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Unfolding.lean（整合 I3a：新增“规律由其迹固定”（same_steps_iff_traces）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
       "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Unfolding.lean (integration I3a: a law is fixed by its traces (same_steps_iff_traces) added; earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-14 P107（从关系开始的重建，研究 §125）：下一步中“Ren 的判断：起点是否读作 World，过程与框架是否读作它的读法”由 Ren 2026-10-14 的批准（“please, finish all”）回答，删去；限制中“Ren 只确认了律与历史的读法”改为“Ren 确认了律与历史的读法并批准了语境中的读法”；related 加 unity-of-readings，说明所批准的读法。陈述与证明不变。10月15日落地时更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（“完整陈述的理论”第1、3项补上 World 不是起点与前提的独立性；第一部分补上三条规律；§8 的表与 Ren 的选择补上从关系开始的重建；§9 新增 Novelty、Reading、Readings 三行，Imbalance 行与术语表记 Ren 2026-10-14 的采用；总数改据新回执；此外不变）。",
+      "en": "14 October 2026, P107 (the relation-first re-founding, study section 125): in the next step, “Ren's judgment whether the starting point reads as World, with the process and the frame as its readings” is answered by Ren's approval of 14 October 2026 (“please, finish all”) and removed; in the limitations, “Ren having confirmed only the reading of law and history” becomes “Ren having confirmed the reading of law and history and approved readings in context”; related adds unity-of-readings, stating the approved reading. Statement and proofs unchanged. At landing on 15 October, rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (the theory stated in full, items 1 and 3 (World is not the start; the independence of the premises); Part I (three laws); the §8 table and Ren's choices (the relation-first re-founding); §9 rows for Novelty, Reading and Readings, and the Imbalance row and glossary recording Ren's adoption of 14 October 2026; totals moved to the new receipt; otherwise unchanged)."
     }
   ]
 }

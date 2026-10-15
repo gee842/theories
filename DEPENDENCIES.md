@@ -3514,6 +3514,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean)
 
+## premises-read-off-the-exchange ← imbalance-as-relatum
+
+`formal-reuse` — 复用 Flow.withImbalance、Flow.withImbalance_balances 与 Web.withRefinement：其余作为关系项，Ren 2026-10-14 采用。 / Reuses Flow.withImbalance, Flow.withImbalance_balances and Web.withRefinement: the rest as a relatum, adopted by Ren on 14 October 2026.
+
+**Producer output / 上游输出:** 算入不平衡，每个流都平衡；平衡恰是新增关系项闲置。 / With the imbalance counted every flow balances; balance is exactly the added relatum idle.
+
+**Consumer input / 下游输入:** 从交换读出活跃，使其余的闲置就是封闭。 / Activity read off the exchange, so that the rest idle is closure.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean)
+
+## premises-read-off-the-exchange ← counterfactual-is-the-course
+
+`formal-reuse` — 复用 ExchangeLaw、ExchangeLaw.course、levels、levels_succ、Feasible、Nonanticipating 与 course_balances_iff。 / Reuses ExchangeLaw, ExchangeLaw.course, levels, levels_succ, Feasible, Nonanticipating and course_balances_iff.
+
+**Producer output / 上游输出:** 律生成的历程；读已立者时历程恰在可行处平衡。 / The course a law generates; under a law reading what has stood, it balances exactly where feasible.
+
+**Consumer input / 下游输入:** 从律读出的要求；其余闲置恰当可行。 / Requirement read off the law; the rest idle exactly where feasible.
+
+**Retained conditions / 保留条件:** 律只读已立者（只在 rest_idle_iff_feasible 与 readWorld_closed_iff）。 / The law reads only what has stood (only in rest_idle_iff_feasible and readWorld_closed_iff).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
 ## presupposition-scopes ← levels-of-closure
 
 `formal-reuse` — 复用闭包 WithinClosure、ClosedUnder 与层次的关系 Flow.Shares、Flow.Affects、Flow.AffectedBy、Flow.FedFrom。 / Reuses the closure WithinClosure, ClosedUnder and the relations of the levels Flow.Shares, Flow.Affects, Flow.AffectedBy, Flow.FedFrom.
@@ -4109,6 +4133,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 ## retrospective-source-binding ← encounter-control-and-retention
 
 `interpretive` — 复用选择不自动产生保留优势的经验约束；无数据到Lean状态的已验证转换。 / Reuses the empirical limit on automatic control-to-retention advantage; no verified conversion from data to Lean states.
+
+## returning-novelty-forgetting-on-levels ← entropy-history-and-record
+
+`formal-reuse` — 复用 Web.config、config_within、configurationsWithin、Web.rests_of_never_revisits、nonrising_between、Flow.CarriesHistory、Flow.history 与 Flow.exchanges_pos；first_law_cases 检查 Balances.recurs、Balances.rests_of_never_revisits 与 World.forgets 是其情形。 / Reuses Web.config, config_within, configurationsWithin, Web.rests_of_never_revisits, nonrising_between, Flow.CarriesHistory, Flow.history and Flow.exchanges_pos; first_law_cases checks that Balances.recurs, Balances.rests_of_never_revisits and World.forgets are its cases.
+
+**Producer output / 上游输出:** 家族的构型与总量内构型的有限列表；交换的计数及其承载；第一律之下的回返、静止与遗忘。 / A family's configuration and the finite list of configurations within a total; the count of exchanges and carrying it; returning, resting and forgetting under the first law.
+
+**Consumer input / 下游输入:** 同样的规律只用水平，界作为部分的状态。 / The same laws on the levels alone, the bound a state of the part.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean)
+
+## returning-novelty-forgetting-on-levels ← recurrence-without-premise
+
+`formal-reuse` — 复用 revisits_from、revisits_within、sumOver 与 le_sumOver：有限多构型中的鸽巢式重访与读数之界。 / Reuses revisits_from, revisits_within, sumOver and le_sumOver: pigeonhole revisiting within finitely many configurations and the bound on a reading.
+
+**Producer output / 上游输出:** 有限多构型中的序列从每一步起都重访。 / A sequence within finitely many configurations revisits from every step on.
+
+**Consumer input / 下游输入:** 存量之界给出有限多构型。 / A bound on the stock gives finitely many configurations.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## returning-novelty-forgetting-on-levels ← imbalance-as-relatum
+
+`formal-reuse` — 复用 Flow.withImbalance 与 Flow.withImbalance_balances：算入其余时每个流都平衡。 / Reuses Flow.withImbalance and Flow.withImbalance_balances: with the rest counted, every flow balances.
+
+**Producer output / 上游输出:** 算入不平衡，每个流都平衡。 / With the imbalance counted, every flow balances.
+
+**Consumer input / 下游输入:** 算入其余的存量之界。 / The bound on the stock with the rest counted.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean)
 
 ## returning-where-the-course-branches ← recurrence-without-premise
 
@@ -4997,6 +5057,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)
+
+## unity-of-readings ← contextual-registration
+
+`formal-reuse` — 复用 Contextual、Contextual.indexed、Glues、Agree、glues_iff_agree、FitsFree 与 fitsFree_iff。 / Reuses Contextual, Contextual.indexed, Glues, Agree, glues_iff_agree, FitsFree and fitsFree_iff.
+
+**Producer output / 上游输出:** 语境中的识；粘合恰当语境相合；不依语境的主张的框架恰在处处粘合时相合。 / Registrations in context; gluing exactly where contexts agree; a frame of context-free claims fitting exactly where they glue everywhere.
+
+**Consumer input / 下游输入:** 诸读法是一个世界；两种变化读法的粘合。 / The readings as one world; the gluing of two readings of change.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)
+
+## unity-of-readings ← process-and-frame-as-readings
+
+`formal-reuse` — 复用 Frame.world、Frame.world_active 与 World.exchangeRun：主张作为关系项；平衡的世界是交换的运行。 / Reuses Frame.world, Frame.world_active and World.exchangeRun: claims as relata; a balanced world is a run of exchange.
+
+**Producer output / 上游输出:** 框架沿运行是一个世界；平衡的世界是交换的运行。 / A frame along a run is a world; a balanced world is a run of exchange.
+
+**Consumer input / 下游输入:** 诸读法的世界；算入其余时每个世界都是交换的运行。 / The world of the readings; with the rest counted every world is a run of exchange.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
+## unity-of-readings ← premises-read-off-the-exchange
+
+`formal-reuse` — 复用 World.withRest、World.withRest_balanced 与 World.withRest_closed_iff。 / Reuses World.withRest, World.withRest_balanced and World.withRest_closed_iff.
+
+**Producer output / 上游输出:** 每个世界算入其余都平衡，平衡恰是其余从不活跃。 / Every world with its rest counted balances; balance is exactly the rest never active.
+
+**Consumer input / 下游输入:** 每个世界都是交换之律的一次运行。 / Every world is one run of the law of exchange.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean)
+
+## unity-of-readings ← axiom-decomposition
+
+`formal-reuse` — 重述 boundaryInvariant_iff_conditional 与 boundaryInvariant_iff_all，并引 not_subTrue_of_invariant；不加结果。 / Restates boundaryInvariant_iff_conditional and boundaryInvariant_iff_all and cites not_subTrue_of_invariant; adds no result.
+
+**Producer output / 上游输出:** 不变恰是从预设到公理的条件句。 / Invariance is exactly the conditional from presupposition to axiom.
+
+**Consumer input / 下游输入:** 在同样的标准下意义不停在边界上。 / Under the same standard no significance stops at a boundary.
+
+**Retained conditions / 保留条件:** 整体可容许。 / The whole admissible.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean)
 
 ## whole-first-and-bounded-centers ← loss-beyond-a-region
 

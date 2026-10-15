@@ -275,6 +275,8 @@ PROOF_KIND = {
     **{n: 'find' for n in [
         'Readout.commonWitness_or_covered', 'Readout.no_common_report_iff', 'Readout.no_common_report_envelopes_iff']},
     'every_weighting_iff': 'indicate',
+    # 2026-10-14, the relation-first re-founding (Becoming.Novelty): finitely many steps checked, a failing one found
+    'upto_or_fails': 'find',
     # 2026-10-15, integration I3b: decided tests pick the side of a choice, or list where a guard lets through
     **{n: 'find' for n in ['Recipe.holds_after', 'Frame.holds_byRecipes', 'Frame.byRecipes_translates']},
     'Recipe.outcomes': 'build',

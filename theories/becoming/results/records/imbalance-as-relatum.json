@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "Ren 2026-10-11 以“please”接受 AI 的建议：把不平衡算作关系项，先作为与现行表示等价的表示加以证明，是否采用由 Ren 定（零前提计划 §1.4 的重新奠定）。AI 的读法：算入不平衡后，平衡是表示的性质，它对世界所说的改由一个关系项的不活跃来说；哪种读法更好由 Ren 定。核心的规律仍以 Flow.BalancesOn 为局部条件。",
-    "en": "Ren, 11 October 2026: “please”, to the AI's suggestion that counting an imbalance as a relatum first be proved as a representation equivalent to the current one, adoption staying with Ren (the re-founding of the zero-premise plan, section 1.4). The AI's reading: with the imbalance counted, balance is a property of the representation, and what it said of a world is said instead by the inactivity of one relatum; which reading is better is Ren's. The laws of the core keep Flow.BalancesOn as a local condition."
+    "zh": "Ren 2026-10-11 以“please”接受 AI 的建议：把不平衡算作关系项，先作为与现行表示等价的表示加以证明，是否采用由 Ren 定（零前提计划 §1.4 的重新奠定）；Ren 2026-10-14 采用。AI 的读法：算入不平衡后，平衡是表示的性质，它对世界所说的改由一个关系项的不活跃来说。核心的规律仍以 Flow.BalancesOn 为局部条件。",
+    "en": "Ren, 11 October 2026: “please”, to the AI's suggestion that counting an imbalance as a relatum first be proved as a representation equivalent to the current one, adoption staying with Ren (the re-founding of the zero-premise plan, section 1.4); Ren adopted it on 14 October 2026. The AI's reading: with the imbalance counted, balance is a property of the representation, and what it said of a world is said instead by the inactivity of one relatum. The laws of the core keep Flow.BalancesOn as a local condition."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean",
   "aliases": [
@@ -105,20 +105,34 @@
         "zh": "那里一个世界满足平衡以外的每个前提（World.unbalanced_but）；这里平衡恰是新增关系项闲置（Flow.balancesOn_iff_idle）。",
         "en": "There a world meets every premise but balance (World.unbalanced_but); here balance is exactly the added relatum idle (Flow.balancesOn_iff_idle)."
       }
+    },
+    {
+      "id": "premises-read-off-the-exchange",
+      "detail": {
+        "zh": "采用之后：每个世界算入其余都平衡，平衡恰是其余从不活跃（World.withRest_balanced、World.withRest_closed_iff）；核心现有的规律保留 Flow.BalancesOn 的陈述，经 Flow.balancesOn_iff_idle 读作其余闲置。",
+        "en": "After the adoption: every world with its rest counted balances, and balance is exactly the rest never active (World.withRest_balanced, World.withRest_closed_iff); the existing laws keep their statements on Flow.BalancesOn, read through Flow.balancesOn_iff_idle as the rest idle."
+      }
+    },
+    {
+      "id": "unity-of-readings",
+      "detail": {
+        "zh": "其余的交换是所立与交换两种变化读法之差；算入它，两种读法处处粘合（Flow.changeReadings_glue_counting_rest）。",
+        "en": "The rest's exchange is the difference between the standing's and the exchange's readings of change; counted, the two glue at every step (Flow.changeReadings_glue_counting_rest)."
+      }
     }
   ],
   "counterexamples": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "detail": {
-        "zh": "unbalanced 世界，即没有流的 Shuttle 两侧，满足平衡以外的每个前提（World.unbalanced_but）：平衡是世界在满足其余前提时仍可不满足的条件。算入不平衡不去掉这一条件，只移动它：流在一个家族上跨一步平衡，恰当新增的关系项在那里闲置（Flow.balancesOn_iff_idle）；扩展的流在那里满足活动前提，恰当原流满足它们且在那里平衡（Flow.withImbalance_acting_taking_on_iff）。等价不是采用；核心仍以平衡为局部条件。",
-        "en": "The unbalanced world, the sides of Shuttle with no flow, meets every premise but balance (World.unbalanced_but): balance is a condition a world can fail while meeting the others. Counting the imbalance does not remove the condition but moves it: a flow balances on a family across a step exactly where the added relatum is idle there (Flow.balancesOn_iff_idle), and the extended flow meets the activity premises there exactly where the flow meets them and balances there (Flow.withImbalance_acting_taking_on_iff). The equivalence is not an adoption; the core keeps balance as a local condition."
+        "zh": "unbalanced 世界，即没有流的 Shuttle 两侧，满足平衡以外的每个前提（World.unbalanced_but）：平衡是世界在满足其余前提时仍可不满足的条件。算入不平衡不去掉这一条件，只移动它：流在一个家族上跨一步平衡，恰当新增的关系项在那里闲置（Flow.balancesOn_iff_idle）；扩展的流在那里满足活动前提，恰当原流满足它们且在那里平衡（Flow.withImbalance_acting_taking_on_iff）。采用之后，这一条件仍是部分的状态：其余是否闲置（World.withRest_closed_iff）。",
+        "en": "The unbalanced world, the sides of Shuttle with no flow, meets every premise but balance (World.unbalanced_but): balance is a condition a world can fail while meeting the others. Counting the imbalance does not remove the condition but moves it: a flow balances on a family across a step exactly where the added relatum is idle there (Flow.balancesOn_iff_idle), and the extended flow meets the activity premises there exactly where the flow meets them and balances there (Flow.withImbalance_acting_taking_on_iff). Adopted, the condition stays a state of a part: whether the rest is idle (World.withRest_closed_iff)."
       }
     }
   ],
   "limitations": {
-    "zh": "这是表示之间的等价，不是采用：核心的规律仍以平衡为局部条件；等价不说明哪种读法更好，也不说明世界在哪里平衡；只对离散步与自然数的量陈述；读法是 AI 的，待 Ren；尚无独立审查。",
-    "en": "This is an equivalence of representations, not an adoption: the laws of the core keep balance as a local condition; the equivalence says neither which reading is better nor where a world balances; stated for discrete steps and natural-number amounts; the readings are the AI's, pending Ren; not yet independently reviewed."
+    "zh": "这是表示之间的等价，使采用无损：核心的规律仍以平衡为局部条件；等价不说明哪种读法更好，也不说明世界在哪里平衡；只对离散步与自然数的量陈述；读法是 AI 的，待 Ren；尚无独立审查。",
+    "en": "This is an equivalence of representations, which makes the adoption lossless: the laws of the core keep balance as a local condition; the equivalence says neither which reading is better nor where a world balances; stated for discrete steps and natural-number amounts; the readings are the AI's, pending Ren; not yet independently reviewed."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Imbalance 的 15 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §85；尚未经独立审查。",
@@ -183,12 +197,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d"
+      "sha256": "821fbfb3c06101bcd3a4bc3cea40d081fb246e13db3d922504a81b4bfa1b229e"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f"
+      "sha256": "8819b5028eee9e9196858cea06bd635cdb58b742a13e4bd8568a1bf7ed270eb3"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -227,8 +241,8 @@
     }
   ],
   "next_delta": {
-    "zh": "Ren 决定是否采用；采用时核心的规律以新增关系项的闲置陈述平衡。",
-    "en": "Ren's decision whether to adopt it; adopted, the core's laws would state balance as the added relatum idle."
+    "zh": "核心现有的规律在 Flow.BalancesOn 上的陈述是否改写为其余在该家族上闲置（每条经 Flow.balancesOn_iff_idle 等价）；实际生成中其余是什么（它的交换作为差读出，不是观察）；独立审查。",
+    "en": "Whether the existing laws stated on Flow.BalancesOn are rewritten as the rest idle on the family (each is equivalent through Flow.balancesOn_iff_idle); what the rest is in an actual becoming (its exchange is read off as a difference, not observed); an independent review."
   },
   "history": [
     {
@@ -346,6 +360,10 @@
     {
       "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
       "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-14 P107（从关系开始的重建，研究 §125）：记录 Ren 2026-10-14 的采用（“please, finish all”，批准从关系开始的重建）：对应中“哪种读法更好由 Ren 定”改为采用；限制中“这是表示之间的等价，不是采用”改为“使采用无损”；反例说明末句“等价不是采用；核心仍以平衡为局部条件”改为采用后的读法；下一步原为“Ren 决定是否采用；采用时核心的规律以新增关系项的闲置陈述平衡”，改为陈述的改写、其余是什么与独立审查；采用的形式（Becoming.Reading 的 World.withRest，Becoming.Novelty 的 Flow.bounded_counting_rest）在 premises-read-off-the-exchange 中陈述，related 加它与 unity-of-readings。陈述与证明不变。10月15日落地时更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（“完整陈述的理论”第1、3项补上 World 不是起点与前提的独立性；第一部分补上三条规律；§8 的表与 Ren 的选择补上从关系开始的重建；§9 新增 Novelty、Reading、Readings 三行，Imbalance 行与术语表记 Ren 2026-10-14 的采用；总数改据新回执；此外不变）。",
+      "en": "14 October 2026, P107 (the relation-first re-founding, study section 125): records Ren's adoption of 14 October 2026 (“please, finish all”, approving the relation-first re-founding): in the correspondence “which reading is better is Ren's” becomes the adoption; in the limitations “This is an equivalence of representations, not an adoption” becomes “which makes the adoption lossless”; the counterexample's last sentence “The equivalence is not an adoption; the core keeps balance as a local condition” becomes the reading after adoption; the next step, formerly “Ren's decision whether to adopt it; adopted, the core's laws would state balance as the added relatum idle”, becomes the rewriting of statements, what the rest is and an independent review; the adoption's form (World.withRest in Becoming.Reading, Flow.bounded_counting_rest in Becoming.Novelty) is stated in premises-read-off-the-exchange, which related adds with unity-of-readings. Statement and proofs unchanged. At landing on 15 October, rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (the theory stated in full, items 1 and 3 (World is not the start; the independence of the premises); Part I (three laws); the §8 table and Ren's choices (the relation-first re-founding); §9 rows for Novelty, Reading and Readings, and the Imbalance row and glossary recording Ren's adoption of 14 October 2026; totals moved to the new receipt; otherwise unchanged)."
     }
   ]
 }

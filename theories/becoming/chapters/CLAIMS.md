@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-203 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+206 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -151,6 +151,7 @@
 | [可见未来中的确定正面根据与开放形态 / Certain positive ground with open forms in visible futures](../results/records/positive-ground-open-futures.md) | recorded-checked | [PositiveGroundUncertainty.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean) |
 | [G0/J 下的一般实践判断 / Practical judgment under G0/J](../results/records/practical-judgment-g0-j.md) | reviewed-scoped | [PRACTICAL-JUDGMENT.md](PRACTICAL-JUDGMENT.md) |
 | [全部前缀问答仍可遗漏中途失续 / All prefix questions can still omit an intermediate loss](../results/records/prefix-observation-loss.md) | recorded-checked | [ExplanatoryGranularityBoundary.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean) |
+| [从交换读出的前提 / Premises read off the exchange](../results/records/premises-read-off-the-exchange.md) | recorded-checked | [Reading.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean) |
 | [自身之预设的两种辖域 / Two scopes of the self's presupposition](../results/records/presupposition-scopes.md) | recorded-checked | [Boundaries.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean) |
 | [过程与框架作为一个展开的读法 / Process and frame as readings of one unfolding](../results/records/process-and-frame-as-readings.md) | recorded-checked | [Unfolding.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean) |
 | [承载规律的投影 / A projection carrying a law](../results/records/projection-carrying-a-law.md) | recorded-checked | [Mechanism.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean) |
@@ -175,6 +176,7 @@
 | [细分算作给予 / Refinement counted as a giving](../results/records/rest-with-refinement-counted.md) | recorded-checked | [Resolution.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean) |
 | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](../results/records/retained-reference-joining-recovery.md) | recorded-checked | [ExplanatoryJoiningRegisters.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean) |
 | [后得来源关系接通保留记录的绑定 / Later source learning binds retained records](../results/records/retrospective-source-binding.md) | recorded-checked | [RetrospectiveBinding.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean) |
+| [只用水平的回返、新与遗忘 / Returning, novelty and forgetting on the levels alone](../results/records/returning-novelty-forgetting-on-levels.md) | recorded-checked | [Novelty.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean) |
 | [分支过程的返回 / Returning where the course branches](../results/records/returning-where-the-course-branches.md) | recorded-checked | [Branching.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean) |
 | [同一交换中的上升与下降 / Rising and falling in one exchange](../results/records/rising-and-falling-in-one-exchange.md) | recorded-checked | [Dissipation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean) |
 | [风险界限与实现结果的区别 / Risk bounds and realized outcomes](../results/records/risk-certificate-outcome-distinction.md) | recorded-checked | [WisdomFallibleJudgment.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean) |
@@ -206,6 +208,7 @@
 | [传递作为承继加所需之界 / Transmission as inheritance with a bounded need](../results/records/transmission-is-inheritance-and-need.md) | recorded-checked | [Transmission.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean) |
 | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](../results/records/unanchored-incidence-collapse.md) | recorded-checked | [ExplanatoryJoiningAnchors.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean) |
 | [不息的生成需要更新 / Unceasing generation needs renewal](../results/records/unceasing-generation-needs-renewal.md) | recorded-checked | [Generation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) |
+| [一个展开在语境中的读法 / One unfolding, read in context](../results/records/unity-of-readings.md) | recorded-checked | [Readings.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean) |
 | [普遍实践权威的更强目标 / Stronger universal practical warrant target](../results/records/universal-practical-warrant.md) | open | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](ZERO-AXIOM-PRACTICAL-JUDGMENT.md) |
 | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](../results/records/versioned-request-completion.md) | recorded-checked | [CorrectionVersioned.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean) |
 | [整体优先，与以依存为界的中心 / The whole first, and centers bounded by dependence](../results/records/whole-first-and-bounded-centers.md) | recorded-checked | [Significance.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean) |

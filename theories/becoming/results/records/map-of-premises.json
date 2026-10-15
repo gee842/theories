@@ -202,6 +202,11 @@
       "zh": "起约束只说某个条件被满足，普查的起约束只说世界不有限，不说前提在该世界中独立于其余前提。",
       "en": "Binding says only that some condition is met, and for a census only that the world is not finite, not that the premise is independent of the others in that world.",
       "kind": "non-implication"
+    },
+    {
+      "zh": "独立性在 World 分别选取的八个字段之间，是表示的自由，不是生成的偶然；从交换读出、算入其余时，其中四个由读法成立（premises-read-off-the-exchange）。",
+      "en": "The independence is among World's eight separately chosen fields, the freedom of the representation, not contingency in becoming; read off the exchange with the rest counted, four of them hold by reading (premises-read-off-the-exchange).",
+      "kind": "scope"
     }
   ],
   "counterexamples": [
@@ -417,6 +422,13 @@
         "zh": "有限世界中全部前提一起使其从某步起静止不能被否证，是那里 generation_not_recurring 读于满足全部前提的世界。",
         "en": "That all premises together leave a finite world resting unrefuted is generation_not_recurring read of worlds meeting every premise."
       }
+    },
+    {
+      "id": "premises-read-off-the-exchange",
+      "detail": {
+        "zh": "读出时四个前提（平衡、只有活跃者给予、只有活跃者取用其所汲取的、对交换之律的活动需要支持）由读法成立；它们在这里的独立性见证（World.unbalanced_but、strained_but、scatter_but、morsel_but）都把一个读法选得与它所读的交换不符。",
+        "en": "Read off, four premises (balance, only active relata giving, only active relata taking what they draw on, and activity needing support under a law of exchange) hold by reading; their independence witnesses here (World.unbalanced_but, strained_but, scatter_but, morsel_but) each choose a reading apart from the exchange it reads."
+      }
     }
   ],
   "references": [
@@ -580,7 +592,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d"
+      "sha256": "821fbfb3c06101bcd3a4bc3cea40d081fb246e13db3d922504a81b4bfa1b229e"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
@@ -934,6 +946,10 @@
     {
       "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）。",
       "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14 P107（从关系开始的重建，研究 §125）：不显示的一项补上：独立性度量 World 分别选取的字段的自由，不度量生成的偶然；读出时四个前提由读法成立。起因是 Ren 问“why do we need \"World\"?”与那天对前一个回答（以独立性为规律不必然的证据）的更正。related 加 premises-read-off-the-exchange。陈述、规律与证明不变。10月15日落地时更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）。",
+      "en": "14 October 2026, P107 (the relation-first re-founding, study section 125): a does-not-show item added: the independence measures the freedom of World's separately chosen fields, not contingency in becoming, and read off the exchange four premises hold by reading. Prompted by Ren's question “why do we need \"World\"?” and that day's correction of an earlier answer that had used the independence as evidence that the laws are not necessary. related adds premises-read-off-the-exchange. Statement, laws and proofs unchanged. At landing on 15 October, rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged)."
     }
   ],
   "text_versions": [

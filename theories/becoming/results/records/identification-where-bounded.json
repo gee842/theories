@@ -482,13 +482,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d",
+      "sha256": "821fbfb3c06101bcd3a4bc3cea40d081fb246e13db3d922504a81b4bfa1b229e",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f",
+      "sha256": "8819b5028eee9e9196858cea06bd635cdb58b742a13e4bd8568a1bf7ed270eb3",
       "declarations": []
     },
     {
@@ -647,6 +647,10 @@
     {
       "zh": "2026-10-15 P83b：按 Ren 2026-10-12 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”，完成 next_delta 的第一项：新增 Identification.bounded_agree_exact，对每一对界，长 N + N′ − 2 的记录不确定历程，所以 N + N′ − 1 对每一对界恰好（此前只在 N = 1 与 N = N′ 证明）；第四条规律、反例与 next_delta 随之修订，删去“只在 N = 1 与 N = N′ 证明为恰好”的范围说明；Identification 的引用哈希指向新字节；验证范围待整合者的合并检查器运行后重新指向。见整合文档 §126。断言的其余部分不变。",
       "en": "2026-10-15 P83b: following Ren's ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’ of 12 October 2026 06:01, the first item of next_delta is done: Identification.bounded_agree_exact is added, so that for every pair of bounds the record before N + N′ − 2 does not fix the course and N + N′ − 1 is exact for every pair (shown before only for N = 1 and N = N′); the fourth law, the counterexamples and next_delta are revised, and the scope note ‘shown exact only for N = 1 and N = N′’ is removed; the Identification reference hash points to the new bytes; the validation scope is re-pointed after the integrator's consolidated checker run. See §126 of the integration note. The rest of the claim is unchanged."
+    },
+    {
+      "zh": "2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第125节）：更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（“完整陈述的理论”第1、3项补上 World 不是起点与前提的独立性；第一部分补上三条规律；§8 的表与 Ren 的选择补上从关系开始的重建；§9 新增 Novelty、Reading、Readings 三行，Imbalance 行与术语表记 Ren 2026-10-14 的采用；总数改据新回执；此外不变）。",
+      "en": "15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study section 125): rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (the theory stated in full, items 1 and 3 (World is not the start; the independence of the premises); Part I (three laws); the §8 table and Ren's choices (the relation-first re-founding); §9 rows for Novelty, Reading and Readings, and the Imbalance row and glossary recording Ren's adoption of 14 October 2026; totals moved to the new receipt; otherwise unchanged)."
     }
   ],
   "text_versions": [

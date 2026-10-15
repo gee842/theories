@@ -345,12 +345,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d"
+      "sha256": "821fbfb3c06101bcd3a4bc3cea40d081fb246e13db3d922504a81b4bfa1b229e"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f"
+      "sha256": "8819b5028eee9e9196858cea06bd635cdb58b742a13e4bd8568a1bf7ed270eb3"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -600,6 +600,10 @@
     {
       "zh": "2026-10-14 迁移到 schema 2（开放问题计划 F 项：lint 发现最多的 45 条 schema-1 记录的迁移；Ren：“please, do all”，经整合会话转达）：主张拆为 6 条规律；限制分入“未表明”与通用边界；证据成为一段。限制与 next_delta 中的 P40 移出公开字段：P40 表明沿依存的区域恰是各形成的供给闭包（Clearing.dependenceRegion_iff），成为一条“未表明”；P40 表明不用公理时以依存为界的中心在其供给闭包之外仍容许搭便车者，并入路线 (b) 一条，next_delta 以“见 closure-verdict-meets-axiom”指向它。“不用 Lean 公理”并入证据；不引用通用边界 no-ethical-premise，因为公理 Unrestricted 是规范前提。证据中的定理数、模块与审计总数、核心纯净的细节及外围回执 20261013T095049.338744Z 留在回执与 text_versions 末项中。规律、前提、状态、证明绑定与来源哈希均未改变。每句旧文本的去向见迁移对照表 [whole-first-and-bounded-centers.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/whole-first-and-bounded-centers.md)；迁移前的完整记录为 text_versions 末项。",
       "en": "14 October 2026, migrated to schema 2 (item F of the open-issues plan: the migration of the 45 schema-1 records with the most lint findings; Ren: “please, do all”, relayed by the integrating session): the claim became 6 laws; the limitations went to does-not-show items and standard boundaries; the evidence became one paragraph. P40 leaves the public fields: its finding that the region along dependence is exactly each formation's feeding closure (Clearing.dependenceRegion_iff) is a does-not-show item, and its finding that without the axiom centers bounded by their dependence still license the free rider beyond their feeding closure joins the route (b) item, to which next_delta points with “see closure-verdict-meets-axiom”. “No Lean axiom is used” joined the evidence; the standard boundary no-ethical-premise is not cited, since the axiom Unrestricted is a normative premise. The theorem, module and audit counts, the core-purity detail and the periphery receipt 20261013T095049.338744Z of the evidence stay in the receipts and the last text_versions entry. No law, premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [whole-first-and-bounded-centers.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/whole-first-and-bounded-centers.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第125节）：更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（“完整陈述的理论”第1、3项补上 World 不是起点与前提的独立性；第一部分补上三条规律；§8 的表与 Ren 的选择补上从关系开始的重建；§9 新增 Novelty、Reading、Readings 三行，Imbalance 行与术语表记 Ren 2026-10-14 的采用；总数改据新回执；此外不变）。",
+      "en": "15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study section 125): rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (the theory stated in full, items 1 and 3 (World is not the start; the independence of the premises); Part I (three laws); the §8 table and Ren's choices (the relation-first re-founding); §9 rows for Novelty, Reading and Readings, and the Imbalance row and glossary recording Ren's adoption of 14 October 2026; totals moved to the new receipt; otherwise unchanged)."
     }
   ],
   "text_versions": [
