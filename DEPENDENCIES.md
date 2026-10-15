@@ -2274,6 +2274,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
 
+## gluing-under-parity ← contextual-registration
+
+`formal-reuse` — 复用 Contextual、Contextual.Glues、Contextual.Respects、Contextual.not_glues、Local、NoGlobal，以及 Specker 与 Square 的可能性、world 与 respects：奇偶系统的可能性是局部的，其实例的可能性就是那里的。 / Reuses Contextual, Contextual.Glues, Contextual.Respects, Contextual.not_glues, Local and NoGlobal, and the possibilities, world and respects of Specker and Square: a parity system's possibilities are local, and its instances' possibilities are those there.
+
+**Producer output / 上游输出:** 语境中的识、粘合、局部性与没有不依语境的读法；Specker 与 Mermin–Peres 的可能性。 / Registration in context, gluing, locality and no context-free reading; the possibilities of Specker and Mermin–Peres.
+
+**Consumer input / 下游输入:** 奇偶系统的矛盾给出没有不依语境的读法与不粘合。 / A parity system's contradiction gives no context-free reading and no gluing.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)
+
+## gluing-under-parity ← more-needs-renewers
+
+`formal-reuse` — 复用 total、total_le、total_add、total_ones、count、Distinct、search、mem_cons_cases 与 mem_map_of：列表上的计数与核对。 / Reuses total, total_le, total_add, total_ones, count, Distinct, search, mem_cons_cases and mem_map_of: counting and checking along a list.
+
+**Producer output / 上游输出:** 列表上的总量与计数；不重复的列表；逐个核对。 / Totals and counts over a list; a list without repetition; checking one by one.
+
+**Consumer input / 下游输入:** 混合的平均之界；消去中逐个核对。 / The mixture's average bound; checking one by one in elimination.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## growth-constrained-fragmentation ← risk-certificate-outcome-distinction
 
 `formal-reuse` — 复用 Becoming.Readout.no_judge_of_merged：组成相同的两个生长图切割回报不同，故亲代摘要的任何函数都不同时给出二者（PreparationCorrespondence.no_parent_summary_predictor_by_core）。 / Reuses Becoming.Readout.no_judge_of_merged: the two grown graphs have the same parent summary and different mean cut returns, so no function of the summary gives both (PreparationCorrespondence.no_parent_summary_predictor_by_core).
@@ -5445,6 +5469,90 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
+
+## where-novelty-gain-comes-from ← returning-novelty-forgetting-on-levels
+
+`formal-reuse` — 复用 Web.exceeds_of_new、upto_or_fails、Web.revisits_of_bounded、Flow.uncarried_of_bounded、Web.counting 与 Web.counting_new：新的家族超出界，有界的家族回返而不承载历史。 / Reuses Web.exceeds_of_new, upto_or_fails, Web.revisits_of_bounded, Flow.uncarried_of_bounded, Web.counting and Web.counting_new: a new family exceeds its bound, and a bounded family returns and does not carry its history.
+
+**Producer output / 上游输出:** 只用水平的回返、新与遗忘；每步都新的计数。 / Returning, novelty and forgetting on the levels alone; counting, new at every step.
+
+**Consumer input / 下游输入:** 超出界之后某步上升；整体在其余闲置时有界。 / After the bound is exceeded some step rises; the whole is bounded with the rest idle.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean)
+
+## where-novelty-gain-comes-from ← imbalance-as-relatum
+
+`formal-reuse` — 复用 Flow.withImbalance、Flow.withImbalance_balances、Flow.balancesOn_iff_idle、mem_of_some_mem 与 sub_eq_zero_of_le：算入其余每个流都平衡。 / Reuses Flow.withImbalance, Flow.withImbalance_balances, Flow.balancesOn_iff_idle, mem_of_some_mem and sub_eq_zero_of_le: with the rest counted, every flow balances.
+
+**Producer output / 上游输出:** 算入不平衡，每个流都平衡；在家族上平衡恰是其余闲置。 / With the imbalance counted every flow balances; balance on a family is exactly the rest idle.
+
+**Consumer input / 下游输入:** 净给予者在算入其余的流中找到。 / The net giver is found in the flow with the rest counted.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean)
+
+## where-novelty-gain-comes-from ← entropy-history-and-record
+
+`formal-reuse` — 复用 Web.config、Web.config_within、configurationsWithin、nonrising_between、Flow.Gainless、Flow.GainlessOn、Flow.Balances.nonrising、Flow.CarriesHistory 与 Flow.exchanges：第一律，平衡而不增益的家族不上升。 / Reuses Web.config, Web.config_within, configurationsWithin, nonrising_between, Flow.Gainless, Flow.GainlessOn, Flow.Balances.nonrising, Flow.CarriesHistory and Flow.exchanges: the first law, and a balanced family gaining nothing does not rise.
+
+**Producer output / 上游输出:** 构型与界内构型的列表；第一律；不上升；承载历史。 / Configurations and the list of those within a bound; the first law; not rising; carrying history.
+
+**Consumer input / 下游输入:** 第一律之下增益来自其余或越过边界。 / Under the first law gain comes from the rest or across the boundary.
+
+**Retained conditions / 保留条件:** 第一律（Flow.Gainless）是各相关定理的条件。 / The first law (Flow.Gainless) is a condition of the theorems that use it.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean)
+
+## where-novelty-gain-comes-from ← continued-change-needs-openness
+
+`formal-reuse` — 复用 Flow.ClosedAt 与 total_eq_zero：家族在一步封闭，指参与的形成不与其外交换。 / Reuses Flow.ClosedAt and total_eq_zero: a family is closed at a step where no formation taking part exchanges beyond it.
+
+**Producer output / 上游输出:** 一步上的封闭。 / Closure at a step.
+
+**Consumer input / 下游输入:** 开放即不封闭，是增益进入的一条路。 / Open, not closed, is one way in for gain.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
+
+## where-novelty-gain-comes-from ← more-needs-renewers
+
+`formal-reuse` — 复用 rises_between、search、Distinct、total 与 Web.stock：一段上的上升落在某一步，在列表上逐个核对。 / Reuses rises_between, search, Distinct, total and Web.stock: a rise over a stretch falls at some step, checked one by one along a list.
+
+**Producer output / 上游输出:** 一段上的上升在某步；列表上的核对；不重复的列表；存量。 / A rise over a stretch at some step; checking along a list; a list without repetition; the stock.
+
+**Consumer input / 下游输入:** 给予者由核对找到。 / The giver found by checking.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## where-novelty-gain-comes-from ← recurrence-without-premise
+
+`formal-reuse` — 复用 revisits_within：有限多构型中的重访。 / Reuses revisits_within: revisiting within finitely many configurations.
+
+**Producer output / 上游输出:** 有限多构型中的序列重访。 / A sequence within finitely many configurations revisits.
+
+**Consumer input / 下游输入:** 首次到访不止需要上升。 / First visits without end need rises.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## where-novelty-gain-comes-from ← becoming-dependence-dynamics
+
+`formal-reuse` — 复用 Web.Supported：水平满足形成的每项所需。 / Reuses Web.Supported: the levels meet every need of a formation.
+
+**Producer output / 上游输出:** 支持。 / Support.
+
+**Consumer input / 下游输入:** 新形成即首次被支持。 / New formation as being first supported.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
 ## whole-first-and-bounded-centers ← loss-beyond-a-region
 

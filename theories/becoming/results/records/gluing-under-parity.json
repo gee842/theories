@@ -1,0 +1,592 @@
+{
+  "schema_version": 2,
+  "id": "gluing-under-parity",
+  "title": {
+    "zh": "奇偶约束下语境中的读法何时粘合",
+    "en": "When readings in context glue, for parity"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "每个语境要求奇偶时，有不依语境的读法，恰当没有语境的选择矛盾（每个主张被计偶数次而所要求的奇偶相加为奇）；有矛盾时，不依语境之读法的混合平均至多满足 m 个语境中的 m − 1 个，按语境索引的读法满足全部 m 个。",
+    "en": "Where each context requires a parity, a context-free reading exists exactly where no selection of contexts contradicts (each claim counted evenly, the parities adding to odd); then mixtures of context-free readings meet at most m − 1 of the m contexts on average, readings in context all m."
+  },
+  "laws": [
+    {
+      "zh": "奇偶上的算术：两个奇偶相加（addParity）与一个量在列表上的奇偶（oddOver）；结合、交换、自消，奇偶在映射与逐项相加下的传递，及计数之界。",
+      "en": "Arithmetic of parity: parities added (addParity) and the parity of a quantity over a list (oddOver); association, exchange and self-cancelling, parity carried through maps and termwise addition, and the bounds on counting.",
+      "declarations": [
+        "Becoming.addParity",
+        "Becoming.oddOver",
+        "Becoming.addParity_false",
+        "Becoming.addParity_self",
+        "Becoming.addParity_assoc",
+        "Becoming.addParity_swap",
+        "Becoming.addParity_and",
+        "Becoming.addParity_solve",
+        "Becoming.addParity_cancel",
+        "Becoming.true_of_ne_false",
+        "Becoming.cond_le_one",
+        "Becoming.and_congr_of",
+        "Becoming.oddOver_add",
+        "Becoming.oddOver_and",
+        "Becoming.oddOver_congr",
+        "Becoming.oddOver_false",
+        "Becoming.oddOver_swap",
+        "Becoming.oddOver_map",
+        "Becoming.image_of_mem_map",
+        "Becoming.count_le_length",
+        "Becoming.count_all",
+        "Becoming.met_step",
+        "Becoming.even_le_of_odd"
+      ]
+    },
+    {
+      "zh": "奇偶约束给所计的主张与所要求的奇偶；约束相加仍是约束；一组约束矛盾，指它们相加后不计任何所列主张而要求奇；矛盾时每个赋值不满足其中奇数个。",
+      "en": "A parity constraint gives the claims it counts and the parity it requires; constraints added are a constraint; a list of constraints contradicts where, added, it counts no listed claim and requires odd; where they contradict, every assignment fails an odd number of them.",
+      "declarations": [
+        "Becoming.ParityConstraint",
+        "Becoming.ParityConstraint.value",
+        "Becoming.ParityConstraint.add",
+        "Becoming.ParityConstraint.value_add",
+        "Becoming.ParityConstraint.Contradicts",
+        "Becoming.ParityConstraint.value_even",
+        "Becoming.ParityConstraint.unmet_odd"
+      ]
+    },
+    {
+      "zh": "消去：主张的相等可判定、列举不重复时，逐一消去所列主张，如在两个值上解线性方程；对每组约束，或有赋值满足每一个，或其中一组矛盾，消去后找到的矛盾带回它所来自的约束。",
+      "en": "Elimination: with equality of claims decided and the claims listed without repetition, the listed claims are eliminated one at a time, as in solving linear equations over two values; for every list of constraints either an assignment meets each or a selection of them contradicts, a contradiction found after an elimination carried back to the constraints it came from.",
+      "declarations": [
+        "Becoming.ParityConstraint.eliminate",
+        "Becoming.ParityConstraint.counts_after",
+        "Becoming.ParityConstraint.eliminate_counts",
+        "Becoming.ParityConstraint.met_after",
+        "Becoming.ParityConstraint.pulled",
+        "Becoming.ParityConstraint.pull_back",
+        "Becoming.ParityConstraint.met_or_contradicts"
+      ]
+    },
+    {
+      "zh": "奇偶系统列出主张，给每个语境它所计的主张与所要求的奇偶（ParitySystem）；赋值在语境的可能之内，恰当其所计主张之值的奇偶是所要求的；语境能显示的只取决于它所识的主张；矛盾是语境的一个选择（可重复），每个主张被计偶数次而所要求的奇偶相加为奇。",
+      "en": "A parity system gives each context the claims it counts and the parity it requires (ParitySystem); an assignment lies within a context's possibilities where its parity on the counted claims is the required one, which depends only on the claims the context registers; a contradiction is a selection of contexts, repetition allowed, counting every claim an even number of times while the required parities add up to odd.",
+      "declarations": [
+        "Becoming.ParitySystem",
+        "Becoming.ParitySystem.constraint",
+        "Becoming.ParitySystem.within",
+        "Becoming.ParitySystem.value",
+        "Becoming.ParitySystem.support",
+        "Becoming.ParitySystem.met",
+        "Becoming.ParitySystem.Contradicts",
+        "Becoming.ParitySystem.local_",
+        "Becoming.ParitySystem.contradicts_iff"
+      ]
+    },
+    {
+      "zh": "障碍：每个不依语境的赋值不满足矛盾中奇数个语境，逐个核对即找到一个，所以没有不依语境的读法在每个语境的可能之内；它至多满足矛盾的 m 个语境中的 m − 1 个，其混合（可重复计入的赋值列表）平均亦然；每个语境单独可满足时，按语境索引的读法满足全部 m 个。",
+      "en": "The obstruction: every context-free assignment fails an odd number of a contradiction's contexts, one found by checking each, so no context-free reading lies within every context's possibilities; it meets at most m − 1 of the m contexts, and so does a mixture (assignments counted with repetition) on average; where each context can be met alone, readings indexed by context meet all m.",
+      "declarations": [
+        "Becoming.ParitySystem.unmet_odd",
+        "Becoming.ParitySystem.unmet_of_contradicts",
+        "Becoming.ParitySystem.contradicts_noGlobal",
+        "Becoming.ParitySystem.met_le",
+        "Becoming.ParitySystem.mixture_le",
+        "Becoming.ParitySystem.indexed_met"
+      ]
+    },
+    {
+      "zh": "唯一的障碍：主张的相等可判定、列举不重复时，对每个语境列表，或有不依语境的赋值满足其中每个语境，或其中某个选择矛盾；所以语境被列出时，没有不依语境的读法恰当有选择矛盾，有登记每个语境所计者、尊重其可能、在其配置粘合的世界恰当没有。",
+      "en": "The only obstruction: with equality of claims decided and the claims listed without repetition, for every list of contexts a context-free assignment meets each or a selection contradicts; so, the contexts listed, no context-free reading exists exactly where a selection contradicts, and a world registering what each context counts, respecting the possibilities and gluing, exists exactly where none does.",
+      "declarations": [
+        "Becoming.ParitySystem.lift_selection",
+        "Becoming.ParitySystem.global_or_contradicts",
+        "Becoming.ParitySystem.noGlobal_iff",
+        "Becoming.ParitySystem.glues_iff"
+      ]
+    },
+    {
+      "zh": "Specker 的三个盒子：每次打开计其两个盒子并要求奇；三次打开矛盾，每个混合平均至多满足三中之二，每次打开以自己的放置满足全部三个；Becoming.Context 的 Specker.noGlobal 由矛盾推出。",
+      "en": "Specker's three boxes: each opening counts its two boxes and requires odd; the three openings contradict, every mixture meets at most two of the three on average, and each opening read by its own placement meets all three; Becoming.Context's Specker.noGlobal follows from the contradiction.",
+      "declarations": [
+        "Becoming.Specker.paritySystem",
+        "Becoming.Specker.two_iff",
+        "Becoming.Specker.two_iff_swap",
+        "Becoming.Specker.support_iff",
+        "Becoming.Specker.openings",
+        "Becoming.Specker.openings_contradict",
+        "Becoming.Specker.noGlobal_of_contradiction",
+        "Becoming.Specker.mixture_le",
+        "Becoming.Specker.indexed_met"
+      ]
+    },
+    {
+      "zh": "CHSH 博弈（Clauser、Horne、Shimony、Holt，1969）：两个站各有两个设置，结果恰在两个设置都是第二个时须不同；四对设置矛盾，不依语境之结果的每个混合平均至多赢四中之三（经典之界），在语境中读出的结果赢全部四个。",
+      "en": "The CHSH game (Clauser, Horne, Shimony and Holt, 1969): two stations with two settings each, whose outcomes must differ exactly where both settings are the second; the four pairs of settings contradict, every mixture of context-free outcomes wins at most three of the four on average (the classical bound), and outcomes read in their pair win all four.",
+      "declarations": [
+        "Becoming.CHSH.Outcome",
+        "Becoming.CHSH.outcomes",
+        "Becoming.CHSH.same",
+        "Becoming.CHSH.paritySystem",
+        "Becoming.CHSH.two_iff",
+        "Becoming.CHSH.support_iff",
+        "Becoming.CHSH.pairs",
+        "Becoming.CHSH.pairs_contradict",
+        "Becoming.CHSH.mixture_le",
+        "Becoming.CHSH.inPair",
+        "Becoming.CHSH.inPair_support",
+        "Becoming.CHSH.indexed_met"
+      ]
+    },
+    {
+      "zh": "Mermin–Peres 方阵：每条线计其三个格，只有第三列要求奇；六条线矛盾，每个混合平均至多满足六中之五，在线中读出的值满足全部六条；Becoming.Context 的 Square.noGlobal 由矛盾推出。",
+      "en": "The Mermin–Peres square: each line counts its three cells, and only the third column requires odd; the six lines contradict, every mixture meets at most five of the six on average, and values read in their line meet all six; Becoming.Context's Square.noGlobal follows from the contradiction.",
+      "declarations": [
+        "Becoming.Square.cells",
+        "Becoming.Square.counts",
+        "Becoming.Square.paritySystem",
+        "Becoming.Square.lines",
+        "Becoming.Square.three_iff",
+        "Becoming.Square.not_beyond",
+        "Becoming.Square.support_iff",
+        "Becoming.Square.cells_even",
+        "Becoming.Square.lines_contradict",
+        "Becoming.Square.noGlobal_of_contradiction",
+        "Becoming.Square.mixture_le",
+        "Becoming.Square.inLine",
+        "Becoming.Square.inLine_support",
+        "Becoming.Square.indexed_met"
+      ]
+    },
+    {
+      "zh": "环：主张 0, …, n 成环，相邻者以相等或相异相关（Cycle.system），每个主张沿其关系被计两次；所以相异关系为奇数个时这些关系矛盾，混合平均至多满足 n + 1 个中的 n 个；为偶数个时沿环走出的赋值满足全部关系，二者互斥（Cycle.met_iff_even）。",
+      "en": "A cycle: the claims 0, …, n in a cycle, neighbours related as equal or different (Cycle.system), each claim counted twice along its relations; so with an odd number of differ relations they contradict and mixtures meet at most n of the n + 1 on average; with an even number the assignment walked along the cycle meets them all, and the two exclude each other (Cycle.met_iff_even).",
+      "declarations": [
+        "Becoming.Cycle.down",
+        "Becoming.Cycle.system",
+        "Becoming.Cycle.edges",
+        "Becoming.Cycle.polarity",
+        "Becoming.Cycle.length_edges",
+        "Becoming.Cycle.lt_of_mem_down",
+        "Becoming.Cycle.shift",
+        "Becoming.Cycle.cross",
+        "Becoming.Cycle.returns",
+        "Becoming.Cycle.eq_of_even",
+        "Becoming.Cycle.beq_self",
+        "Becoming.Cycle.beq_of_ne",
+        "Becoming.Cycle.telescope",
+        "Becoming.Cycle.counts_even",
+        "Becoming.Cycle.contradicts",
+        "Becoming.Cycle.mixture_le",
+        "Becoming.Cycle.miss",
+        "Becoming.Cycle.pick",
+        "Becoming.Cycle.value_pair",
+        "Becoming.Cycle.walk",
+        "Becoming.Cycle.walk_meets",
+        "Becoming.Cycle.met_iff_even"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。主张与语境被列出；障碍与 m − 1 之界不用其他条件；唯一性（消去）以主张的相等可判定、主张列举不重复为条件；混合是可重复计入的赋值列表，以自然数计权重。",
+      "en": "No axiom. The claims and contexts are listed; the obstruction and the m − 1 bound need nothing more; uniqueness (elimination) takes equality of claims decided and the claims listed without repetition; a mixture is a list of assignments counted with repetition, its weights natural numbers."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "量子值：Tsirelson 之界需要实数振幅，这里不陈述（Becoming.Quantum 以整数矩阵实现方阵）。",
+      "en": "The quantum values: Tsirelson's bound needs real amplitudes and is not stated here (Becoming.Quantum realizes the square with integer matrices).",
+      "kind": "scope"
+    },
+    {
+      "zh": "超出奇偶约束的语境性（一般的可能性、概率的语境性）没有给出确切规律。",
+      "en": "Contextuality beyond parity constraints (general possibilities, probabilistic contextuality) is given no exact law.",
+      "kind": "scope"
+    },
+    {
+      "zh": "实际展开的哪些识是这种奇偶的：这是对应。",
+      "en": "Which registrations of an actual unfolding are of this parity kind: that is correspondence.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "没有矛盾不推出每个语境都单独可满足之外的东西：按语境索引的读法满足全部 m 个，需要每个语境单独可满足。",
+      "en": "Readings indexed by context meet all m only where each context can be met alone; without a contradiction nothing more follows about them.",
+      "kind": "non-implication",
+      "witness": "Becoming.ParitySystem.indexed_met"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
+      "detail": {
+        "zh": "Specker 的盒子、CHSH 与 Mermin–Peres 方阵：每个都矛盾，所以没有不依语境的读法，而按语境索引的读法满足每个语境；有奇数个相异关系的环同样矛盾。",
+        "en": "Specker's boxes, CHSH and the Mermin–Peres square: each contradicts, so no context-free reading exists, while readings indexed by context meet every context; a cycle with an odd number of differ relations contradicts likewise."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "formal-not-empirical",
+    "names-provisional",
+    "decidability"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Gluing 的 113 项声明（81 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §149；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 113 declarations of Becoming.Gluing, 81 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 149; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "超出奇偶约束的语境性：一般的有限可能性的确切障碍；概率的语境性与实数振幅下的量子值（外围）；以对应定理把外围的 CorrectionRelations 环律接到这里；独立审查。",
+    "en": "Contextuality beyond parity: the exact obstruction for general finite possibilities; probabilistic contextuality and the quantum values with real amplitudes (periphery); a correspondence theorem joining the periphery's CorrectionRelations cycle law to this one; an independent review."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-12 问框架所失去的是否像“wave/particle”，并同意了把值读作语境中的识的回答；2026-10-15：“please make best of your judgement, and push the frontier of completeness”。本结果是 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”：对奇偶约束，“不依语境的主张是表示的承诺”成为确切的规律，这一承诺恰在一个可检查的障碍处失效，障碍给出 Bell 型的界。读法（AI 的，依 Ren 2026-10-15 的交托采用，DELEGATED-CHOICES D33）：m − 1 与 m 之差，是语境所承载的；值是语境中的识，一个关系。",
+    "en": "Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle”, and agreed with the reply reading a value as a registration in context; on 15 October 2026: “please make best of your judgement, and push the frontier of completeness”. This result is the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality”: for parity constraints, “context-free claims are a commitment of the representation” becomes an exact law, the commitment failing exactly at a checkable obstruction, which gives a Bell-type bound. Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D33): the difference between m − 1 and m is what the context carries; a value is a registration in context, a relation."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
+  "aliases": [
+    "when readings in context glue, for parity",
+    "奇偶约束下语境中的读法何时粘合",
+    "the parity law of gluing",
+    "粘合的奇偶律",
+    "a Bell-type bound without probability",
+    "不用概率的 Bell 型界",
+    "the only obstruction to context-free values",
+    "不依语境之值的唯一障碍",
+    "the parity law of a cycle",
+    "环的奇偶律"
+  ],
+  "dependencies": [
+    {
+      "id": "contextual-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Contextual、Contextual.Glues、Contextual.Respects、Contextual.not_glues、Local、NoGlobal，以及 Specker 与 Square 的可能性、world 与 respects：奇偶系统的可能性是局部的，其实例的可能性就是那里的。",
+        "en": "Reuses Contextual, Contextual.Glues, Contextual.Respects, Contextual.not_glues, Local and NoGlobal, and the possibilities, world and respects of Specker and Square: a parity system's possibilities are local, and its instances' possibilities are those there."
+      },
+      "interface": {
+        "output": {
+          "zh": "语境中的识、粘合、局部性与没有不依语境的读法；Specker 与 Mermin–Peres 的可能性。",
+          "en": "Registration in context, gluing, locality and no context-free reading; the possibilities of Specker and Mermin–Peres."
+        },
+        "input": {
+          "zh": "奇偶系统的矛盾给出没有不依语境的读法与不粘合。",
+          "en": "A parity system's contradiction gives no context-free reading and no gluing."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean"
+      }
+    },
+    {
+      "id": "more-needs-renewers",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 total、total_le、total_add、total_ones、count、Distinct、search、mem_cons_cases 与 mem_map_of：列表上的计数与核对。",
+        "en": "Reuses total, total_le, total_add, total_ones, count, Distinct, search, mem_cons_cases and mem_map_of: counting and checking along a list."
+      },
+      "interface": {
+        "output": {
+          "zh": "列表上的总量与计数；不重复的列表；逐个核对。",
+          "en": "Totals and counts over a list; a list without repetition; checking one by one."
+        },
+        "input": {
+          "zh": "混合的平均之界；消去中逐个核对。",
+          "en": "The mixture's average bound; checking one by one in elimination."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "unity-of-readings",
+      "detail": {
+        "zh": "语境中的诸识总是一个世界的被索引的主张，不用粘合；这里给出奇偶约束下不依语境的读法何时存在。",
+        "en": "Readings in context are always one world of indexed claims, with no gluing; here, when a context-free reading exists under parity constraints."
+      }
+    },
+    {
+      "id": "separation-loses-the-relation",
+      "detail": {
+        "zh": "分离的描述恰在整体为矩形时给回整体；不依语境的读法恰在没有矛盾时存在：两者都是描述所失去的确切位置。",
+        "en": "A separated description gives back the whole exactly where it is rectangular; a context-free reading exists exactly where nothing contradicts: both locate exactly what a description loses."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
+      "role": "proof",
+      "sha256": "eb2f58408fb1faa4bed791fe4875ad0986d98146f0c47088caf778345cafa264",
+      "declarations": [
+        "Becoming.addParity",
+        "Becoming.oddOver",
+        "Becoming.addParity_false",
+        "Becoming.addParity_self",
+        "Becoming.addParity_assoc",
+        "Becoming.addParity_swap",
+        "Becoming.addParity_and",
+        "Becoming.addParity_solve",
+        "Becoming.addParity_cancel",
+        "Becoming.true_of_ne_false",
+        "Becoming.cond_le_one",
+        "Becoming.and_congr_of",
+        "Becoming.oddOver_add",
+        "Becoming.oddOver_and",
+        "Becoming.oddOver_congr",
+        "Becoming.oddOver_false",
+        "Becoming.oddOver_swap",
+        "Becoming.oddOver_map",
+        "Becoming.image_of_mem_map",
+        "Becoming.count_le_length",
+        "Becoming.count_all",
+        "Becoming.met_step",
+        "Becoming.even_le_of_odd",
+        "Becoming.ParityConstraint",
+        "Becoming.ParityConstraint.value",
+        "Becoming.ParityConstraint.add",
+        "Becoming.ParityConstraint.value_add",
+        "Becoming.ParityConstraint.Contradicts",
+        "Becoming.ParityConstraint.value_even",
+        "Becoming.ParityConstraint.unmet_odd",
+        "Becoming.ParityConstraint.eliminate",
+        "Becoming.ParityConstraint.counts_after",
+        "Becoming.ParityConstraint.eliminate_counts",
+        "Becoming.ParityConstraint.met_after",
+        "Becoming.ParityConstraint.pulled",
+        "Becoming.ParityConstraint.pull_back",
+        "Becoming.ParityConstraint.met_or_contradicts",
+        "Becoming.ParitySystem",
+        "Becoming.ParitySystem.constraint",
+        "Becoming.ParitySystem.within",
+        "Becoming.ParitySystem.value",
+        "Becoming.ParitySystem.support",
+        "Becoming.ParitySystem.met",
+        "Becoming.ParitySystem.Contradicts",
+        "Becoming.ParitySystem.local_",
+        "Becoming.ParitySystem.contradicts_iff",
+        "Becoming.ParitySystem.unmet_odd",
+        "Becoming.ParitySystem.unmet_of_contradicts",
+        "Becoming.ParitySystem.contradicts_noGlobal",
+        "Becoming.ParitySystem.met_le",
+        "Becoming.ParitySystem.mixture_le",
+        "Becoming.ParitySystem.indexed_met",
+        "Becoming.ParitySystem.lift_selection",
+        "Becoming.ParitySystem.global_or_contradicts",
+        "Becoming.ParitySystem.noGlobal_iff",
+        "Becoming.ParitySystem.glues_iff",
+        "Becoming.Specker.paritySystem",
+        "Becoming.Specker.two_iff",
+        "Becoming.Specker.two_iff_swap",
+        "Becoming.Specker.support_iff",
+        "Becoming.Specker.openings",
+        "Becoming.Specker.openings_contradict",
+        "Becoming.Specker.noGlobal_of_contradiction",
+        "Becoming.Specker.mixture_le",
+        "Becoming.Specker.indexed_met",
+        "Becoming.CHSH.Outcome",
+        "Becoming.CHSH.outcomes",
+        "Becoming.CHSH.same",
+        "Becoming.CHSH.paritySystem",
+        "Becoming.CHSH.two_iff",
+        "Becoming.CHSH.support_iff",
+        "Becoming.CHSH.pairs",
+        "Becoming.CHSH.pairs_contradict",
+        "Becoming.CHSH.mixture_le",
+        "Becoming.CHSH.inPair",
+        "Becoming.CHSH.inPair_support",
+        "Becoming.CHSH.indexed_met",
+        "Becoming.Square.cells",
+        "Becoming.Square.counts",
+        "Becoming.Square.paritySystem",
+        "Becoming.Square.lines",
+        "Becoming.Square.three_iff",
+        "Becoming.Square.not_beyond",
+        "Becoming.Square.support_iff",
+        "Becoming.Square.cells_even",
+        "Becoming.Square.lines_contradict",
+        "Becoming.Square.noGlobal_of_contradiction",
+        "Becoming.Square.mixture_le",
+        "Becoming.Square.inLine",
+        "Becoming.Square.inLine_support",
+        "Becoming.Square.indexed_met",
+        "Becoming.Cycle.down",
+        "Becoming.Cycle.system",
+        "Becoming.Cycle.edges",
+        "Becoming.Cycle.polarity",
+        "Becoming.Cycle.length_edges",
+        "Becoming.Cycle.lt_of_mem_down",
+        "Becoming.Cycle.shift",
+        "Becoming.Cycle.cross",
+        "Becoming.Cycle.returns",
+        "Becoming.Cycle.eq_of_even",
+        "Becoming.Cycle.beq_self",
+        "Becoming.Cycle.beq_of_ne",
+        "Becoming.Cycle.telescope",
+        "Becoming.Cycle.counts_even",
+        "Becoming.Cycle.contradicts",
+        "Becoming.Cycle.mixture_le",
+        "Becoming.Cycle.miss",
+        "Becoming.Cycle.pick",
+        "Becoming.Cycle.value_pair",
+        "Becoming.Cycle.walk",
+        "Becoming.Cycle.walk_meets",
+        "Becoming.Cycle.met_iff_even"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
+      "role": "proof",
+      "sha256": "fa48d5a6cc480b7c044b15776756fc30354ab6a776cffaad9d6320eea348f6b8",
+      "declarations": [
+        "Becoming.Contextual",
+        "Becoming.Contextual.Glues",
+        "Becoming.Contextual.Respects",
+        "Becoming.Contextual.not_glues",
+        "Becoming.Local",
+        "Becoming.NoGlobal",
+        "Becoming.Specker.Box",
+        "Becoming.Specker.Opening",
+        "Becoming.Specker.first",
+        "Becoming.Specker.second",
+        "Becoming.Specker.marks",
+        "Becoming.Specker.support",
+        "Becoming.Specker.noGlobal",
+        "Becoming.Specker.world",
+        "Becoming.Specker.respects",
+        "Becoming.Square.Cell",
+        "Becoming.Square.Line",
+        "Becoming.Square.i0",
+        "Becoming.Square.i1",
+        "Becoming.Square.i2",
+        "Becoming.Square.at_",
+        "Becoming.Square.parity",
+        "Becoming.Square.odd",
+        "Becoming.Square.support",
+        "Becoming.Square.noGlobal",
+        "Becoming.Square.pos",
+        "Becoming.Square.pos_at",
+        "Becoming.Square.fill",
+        "Becoming.Square.fill_parity"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.count",
+        "Becoming.total_le",
+        "Becoming.total_add",
+        "Becoming.total_ones"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "role": "proof",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "declarations": [
+        "Becoming.Distinct",
+        "Becoming.search",
+        "Becoming.mem_cons_cases",
+        "Becoming.mem_map_of"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "bf81218edd5c67f967e663472ef1d01fe66866b82f2f9025363941bb2a9f17b9",
+      "declarations": [
+        "Becoming.total"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "dc341972ca71c09c107a58592de9a6c4e82eab29c6ed89e35b3eb8b66f13f440"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+      "role": "integration",
+      "sha256": "44b85e32bea73b58c487c4ed66d1e1948c8bbffad4d2d87316322843aeada2a1"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md",
+      "role": "provenance",
+      "sha256": "f637528d485209f1596b62ba688c350a2fc4029e4bb0c9106c2eb4b75be3ef3e"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md",
+      "role": "provenance",
+      "sha256": "93e89d2880eb068ac19822be3a1d95ea842d7e60fef9ba81b419f874e7e01799"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Gluing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Context",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Population",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，给出 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”中奇偶的部分，以及以相等或相异相关之环的奇偶律（P112，Ren 2026-10-15 的交托与“push the frontier of completeness”）；研究 §149。",
+      "en": "16 October 2026: added, giving the parity part of the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality”, and the parity law of a cycle of equal and differ relations (P112, on Ren's delegation of 15 October 2026 and “push the frontier of completeness”); study section 149."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
+    }
+  ],
+  "text_versions": []
+}

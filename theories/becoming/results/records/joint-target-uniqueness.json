@@ -86,7 +86,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
       "role": "proof",
-      "sha256": "e3d81fb001ae3a64ca8f1ee08b8c3720ddf87524a86d8a0fcf089b0124cbc4ec",
+      "sha256": "56583fc834919a1129d4f1228eddbd9882d01091f619e760acf46d74f891f742",
       "declarations": [
         "Becoming.JointFrame",
         "Becoming.SameJointTests.functional"
@@ -105,6 +105,12 @@
       "role": "receipt",
       "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -117,7 +123,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Composition",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -142,6 +148,10 @@
     {
       "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述。新的核心模块 Becoming.Composition（只导入 Becoming.Likeness）加入一配置把两配置作为部分共同持有的关系（JointFrame），以及联合检验、联合相同、紧致、嵌套计划与足迹；Becoming.CompositionBridge 把 ExplanatoryJointness 与 ExplanatoryFootprints 读作实例。联合检验区分框架之配置处，一配置至多与其中一者通过相同联合检验（SameJointTests.functional）；same_target_unique 即此定律在模型框架上（same_target_unique_by_core），无附加假设，公理报告为空（草稿构建；回执随落地）。外围证明、其回执与共享支持的反例保持原范围。",
       "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. Where joint tests tell a frame's configurations apart, a configuration passes the same joint tests as at most one of them (SameJointTests.functional); same_target_unique is that law on the model's frame (same_target_unique_by_core), with no added hypothesis and empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof, its receipt and the shared-support counterexample keep their scope."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Composition.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Composition.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ]
 }

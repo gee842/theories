@@ -243,8 +243,8 @@
     "en": "The gap for one's own act as a general theorem: where an act differs only on conditions no member of the registration closure registers, every selection through it misses the act; favouring reaching beyond in general: when a part raising what registers must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond."
   },
   "correspondence": {
-    "zh": "2026-10-12，Ren 问“hows cause–effect system comparing to our theory?”，并贴入一段作者未注明的因果系统说明（不是 Ren 的话，也不是前提）；AI 作比较并提出五项可学之处后，Ren 写“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本记录是其中第一项，五项提议是 AI 的。读法（AI 的，待 Ren）：任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，对候选者的部分在选择者识闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去识闭包，只经依存、观察或他者之识合起来才合上；伸出而抬高所识者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及奖励所识。AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接；这是 AI 的联系。见整合文档 §86。",
-    "en": "On 12 October 2026 Ren asked “hows cause–effect system comparing to our theory?” and pasted an explanation of causal systems of unstated authorship (neither Ren's wording nor a premise); after the AI's comparison and its five proposals, Ren wrote “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This record is the first of them. Readings (the AI's, pending Ren): any selection decided by what a selector registers (keeping, rewarding, reproducing, training) reaches exactly what it registers, blind to whatever a candidate's part does beyond the selector's registration closure, however far its reach closure extends; the gap is the reach closure less the registration closure, closing only through dependence, observation or another's registration pooled; where reaching beyond raises what registers, selection favours it, and with share_rises the share of what reaches beyond rises while the world is open; for AI training, a reward process is a selector and training reaches only what the reward registers. The AI, on its own account, connects this with the title of Ren's paper “When Capability Outruns Correction”. See §86 of the integration note."
+    "zh": "2026-10-12，Ren 问“hows cause–effect system comparing to our theory?”，并贴入一段作者未注明的因果系统说明（不是 Ren 的话，也不是前提）；AI 作比较并提出五项可学之处后，Ren 写“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本记录是其中第一项，五项提议是 AI 的。读法（AI 的，依 Ren 的交托采用）：任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，对候选者的部分在选择者识闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去识闭包，只经依存、观察或他者之识合起来才合上；伸出而抬高所识者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及奖励所识。AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接；这是 AI 的联系。见整合文档 §86。",
+    "en": "On 12 October 2026 Ren asked “hows cause–effect system comparing to our theory?” and pasted an explanation of causal systems of unstated authorship (neither Ren's wording nor a premise); after the AI's comparison and its five proposals, Ren wrote “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This record is the first of them. Readings (the AI's, adopted on Ren's delegation): any selection decided by what a selector registers (keeping, rewarding, reproducing, training) reaches exactly what it registers, blind to whatever a candidate's part does beyond the selector's registration closure, however far its reach closure extends; the gap is the reach closure less the registration closure, closing only through dependence, observation or another's registration pooled; where reaching beyond raises what registers, selection favours it, and with share_rises the share of what reaches beyond rises while the world is open; for AI training, a reward process is a selector and training reaches only what the reward registers. The AI, on its own account, connects this with the title of Ren's paper “When Capability Outruns Correction”. See §86 of the integration note."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
   "aliases": [
@@ -398,7 +398,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "d15d9f1f3417067487d431858957e59bc63dd60ccb3fd0513f0de0a9b6c6b7ab",
+      "sha256": "40dd6a8d0fdbaf1f1b08d99b66b10b5c4a461b35a1bbe25c16314767ee736cc9",
       "declarations": [
         "Becoming.Web.SelectsThrough",
         "Becoming.Web.ScoresThrough",
@@ -486,7 +486,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "role": "proof",
-      "sha256": "ddedd2e25fec868f9116893f95cf9d87ecc6dc32bab02af57884e506937d6db3",
+      "sha256": "bf2a0fdce8641d57432465c179129ab9ad74ccc684e31486bc6c500e65ff8c22",
       "declarations": [
         "Becoming.WithinClosure",
         "Becoming.ClosedUnder",
@@ -498,7 +498,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
       "role": "proof",
-      "sha256": "aee13a1d93a93d7a5de9d6f5c1878feb367257fdddc148941ce82dffd303d27b",
+      "sha256": "a56802715a61e381d6e83afd4d8e2342f140847811666f86c92fc1f16f1c7b01",
       "declarations": [
         "Becoming.offspringCount",
         "Becoming.share_rises"
@@ -527,7 +527,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635",
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01",
       "declarations": []
     },
     {
@@ -537,9 +537,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
-      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
     },
     {
@@ -558,7 +558,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -572,14 +572,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feedback",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Capture",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -752,6 +752,14 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Feedback.lean（整合 I3d：新增闭包证书（closure_iff_certified、not_within_of_closed）；头注增一句；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Feedback.lean (integration I3d: the closure certificate added (closure_iff_certified, not_within_of_closed); the docstring gains a sentence; earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D25）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D25): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Selection.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Feedback.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Capture.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Selection.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Feedback.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Capture.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ],
   "text_versions": [

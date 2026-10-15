@@ -252,7 +252,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "integration",
-      "sha256": "f65ad8fc8849b1bbc732dc10a01ccf52b6a25c31eaadb222deff2d522ac1ee2c"
+      "sha256": "ee06233145943c60c5f9122c073d35f5ceefb8d5bd450e3ff7af0ddd9e2f96d8"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean",
@@ -291,7 +291,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3cb7f88b54b41d528bd403a87f1c1ab864720b37a049e9eb9c35fec807e01a67"
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -331,6 +331,10 @@
     {
       "zh": "2026-10-16：新增，整合 I4b 第四项（Ren 选择“Closest gaps first”）；研究 §146。",
       "en": "16 October 2026: added, integration I4b item 4 (Ren chose “Closest gaps first”); study section 146."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Likeness.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Likeness.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ],
   "text_versions": []

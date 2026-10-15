@@ -50,7 +50,7 @@ applied to significance, leaves the axiom of Part II as one horn of a dichotomy.
   standpoint, holding within some boundary is holding for everything. These two theorems restate
   checked results of `Becoming.Boundaries` as this dichotomy; they are not new results.
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D23).**
 - What the core states on many types (flows, webs, worlds, processes, frames, contextual systems)
   are readings of one unfolding. A reading is a context; where the readings agree, a description
   free of context is their gluing, and `World` is such a description. The general case is the

@@ -24,8 +24,8 @@
     }
   ],
   "correspondence": {
-    "zh": "Ren 10 月 10 日：“the seeking system got locked in, what they are pursuing is illusion(in south asia and Buddhism)”，“find the boundary condition for 无明”；10 月 11 日：“yes let's do 无明”。无明边界计划的 B1（够）与 B2（扩张或耗尽）在这里陈述；B3（反馈）与 B4（明）是 P49、P53、P55 的定理读到寻求上，不重述；B5（劫持）没有陈述。读法（AI 的，待 Ren）：无明是使寻求锁定在不能于静止中满足之目标上的不见，其边界是 B1；明是识及支持所不标记者的识；知足、知止是边界之内的目标；支配本身不在所排除者之内。见整合文档 §83。",
-    "en": "Ren on 10 October: “the seeking system got locked in, what they are pursuing is illusion(in south asia and Buddhism)” and “find the boundary condition for 无明”; on 11 October: “yes let's do 无明”. B1 (enough) and B2 (expansion or exhaustion) of the 无明 boundary plan are stated here; B3 (feedback) and B4 (明) are the theorems of P49, P53 and P55 read for seeking, not restated; B5 (hijacking) is not stated. Readings (the AI's, pending Ren): 无明 is the not-seeing that keeps seeking locked onto a target that cannot be met at rest, and its boundary is B1; 明 is registration reaching what support does not mark; 知足 and 知止 are targets within the boundary; dominance as such is not the target ruled out. See §83 of the integration note."
+    "zh": "Ren 10 月 10 日：“the seeking system got locked in, what they are pursuing is illusion(in south asia and Buddhism)”，“find the boundary condition for 无明”；10 月 11 日：“yes let's do 无明”。无明边界计划的 B1（够）与 B2（扩张或耗尽）在这里陈述；B3（反馈）与 B4（明）是 P49、P53、P55 的定理读到寻求上，不重述；B5（劫持）没有陈述。读法（AI 的，依 Ren 的交托采用）：无明是使寻求锁定在不能于静止中满足之目标上的不见，其边界是 B1；明是识及支持所不标记者的识；知足、知止是边界之内的目标；支配本身不在所排除者之内。见整合文档 §83。",
+    "en": "Ren on 10 October: “the seeking system got locked in, what they are pursuing is illusion(in south asia and Buddhism)” and “find the boundary condition for 无明”; on 11 October: “yes let's do 无明”. B1 (enough) and B2 (expansion or exhaustion) of the 无明 boundary plan are stated here; B3 (feedback) and B4 (明) are the theorems of P49, P53 and P55 read for seeking, not restated; B5 (hijacking) is not stated. Readings (the AI's, adopted on Ren's delegation): 无明 is the not-seeing that keeps seeking locked onto a target that cannot be met at rest, and its boundary is B1; 明 is registration reaching what support does not mark; 知足 and 知止 are targets within the boundary; dominance as such is not the target ruled out. See §83 of the integration note."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
   "aliases": [
@@ -137,8 +137,8 @@
     }
   ],
   "limitations": {
-    "zh": "目标怎样形成、怎样修正，寻求者追求其目标，实际形成持有哪些目标，都不推出；劫持（B5）另在 target-capture 中陈述；rests_iff 只对确定的律；B2 只说上升不再复现，耗尽终结寻求者自身没有陈述；B1 的计数是初等的，实质在于把它们陈述为展开之中的目标；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "How a target forms or is revised, that a seeker pursues it, and which targets actual formations hold are not derived; hijacking (B5) is stated separately, in target-capture; rests_iff is for determined laws only; B2 says only that the rises stop recurring, not that exhaustion ends the seekers themselves; the counting of B1 is elementary, and the substance is in stating it of targets within the unfolding; the readings are the AI's, pending Ren; contains no ethical predicate."
+    "zh": "目标怎样形成、怎样修正，寻求者追求其目标，实际形成持有哪些目标，都不推出；劫持（B5）另在 target-capture 中陈述；rests_iff 只对确定的律；B2 只说上升不再复现，耗尽终结寻求者自身没有陈述；B1 的计数是初等的，实质在于把它们陈述为展开之中的目标；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
+    "en": "How a target forms or is revised, that a seeker pursues it, and which targets actual formations hold are not derived; hijacking (B5) is stated separately, in target-capture; rests_iff is for determined laws only; B2 says only that the rises stop recurring, not that exhaustion ends the seekers themselves; the counting of B1 is elementary, and the substance is in stating it of targets within the unfolding; the readings are the AI's, adopted on Ren's delegation; contains no ethical predicate."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Seeking 的 13 项定理全部空依赖，其中含 Law.rests_iff、more_needs_open、aboveAll_unique、Flow.more_needs_unrun 与 Flow.more_exhausted；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §83；未作独立审查，是否需要交 Ren。",
@@ -148,7 +148,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
       "role": "proof",
-      "sha256": "230aab49dc985252ed7cb93ec21318c90c9da3ef4e8b917e410f7398d6a882ff",
+      "sha256": "cb31fea622b45a2a122feff277ab7cf8db62b5862d71ab6d732b4a5e8f9671d9",
       "declarations": [
         "Becoming.MoreThanNow",
         "Becoming.RestsAt",
@@ -204,7 +204,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635",
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01",
       "declarations": []
     },
     {
@@ -230,12 +230,18 @@
       "role": "receipt",
       "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Seeking",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -403,6 +409,14 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D26）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D26): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Seeking.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Seeking.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ]
 }

@@ -361,6 +361,11 @@ PROOF_KIND = {
     # integration I4b (2026-10-16): lasting some course where the process branches finitely
     **{n: 'split' for n in ['Lasting.list_throughout_not_not']},
     **{n: 'build' for n in ['Lasting.TwoChains.branching']},
+    # 2026-10-16, P112 when readings in context glue, for parity (Becoming.Gluing): elimination splits on whether a
+    # claim is the one being eliminated
+    **{n: 'same' for n in [
+        'ParityConstraint.met_or_contradicts', 'ParitySystem.global_or_contradicts', 'ParitySystem.noGlobal_iff',
+        'ParitySystem.glues_iff']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',

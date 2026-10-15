@@ -45,15 +45,15 @@ any condition on the configuration, the seeker's own or the others'.
   one's own act does is fixed only where the configuration returns, under a model of what is
   irrelevant (`Run.fixes_on_return`, `Run.generalizes`).
 
-**Readings (the AI's, pending Ren).** 无明 is the not-seeing that keeps seeking locked onto a
-target that cannot be met at rest: "more than now", or "above all others" among two or more. Its
-boundary is B1: seeking can rest only where its target is met at a state the unfolding leaves
-unchanged. B2 is what such seeking does: it needs a beyond, and where there is none it ends by
-exhaustion. B3 says why the locked seeking is not corrected by its own feedback, and B4 what
-corrects it. Dominance as such is not the target ruled out: power held within an order that
-meets its targets, regulated, or taken by one who understands when order cannot be agreed,
-serves a target that can be met. Hijacking (B5), the formation and transmission of such targets,
-is not stated.
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26).** 无明
+is the not-seeing that keeps seeking locked onto a target that cannot be met at rest:
+"more than now", or "above all others" among two or more. Its boundary is B1: seeking can rest only
+where its target is met at a state the unfolding leaves unchanged. B2 is what such seeking does: it
+needs a beyond, and where there is none it ends by exhaustion. B3 says why the locked seeking is not
+corrected by its own feedback, and B4 what corrects it. Dominance as such is not the target ruled
+out: power held within an order that meets its targets, regulated, or taken by one who understands
+when order cannot be agreed, serves a target that can be met. Hijacking (B5), the formation and
+transmission of such targets, is not stated.
 
 What is not derived: how a target forms or is revised; that a seeker pursues it; which targets
 actual formations hold. No ethical predicate, ranking or axiom occurs.

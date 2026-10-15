@@ -20,6 +20,10 @@
     {
       "zh": "2026-10-16，整合 I4c（Ren 选择“Add the notes”）：ExplanatoryResumptionCases.lean 的第一行加一条注释，指向脊柱上陈述其主定理的声明；陈述与证明不变，行号不变。其证明引用改用新的哈希，证明绑定移到 explanatory-resumption 检查器对新字节的回执（20261015T180520.693095Z，通过）；ExplanatoryResiduals 仍绑定原回执。",
       "en": "16 October 2026, integration I4c (Ren selected “Add the notes”): the first line of ExplanatoryResumptionCases.lean gains a comment naming the spine declarations that state its main theorem; statements, proofs and line numbers are unchanged. Its proof reference takes the new hash, and its proof binding moves to the explanatory-resumption checker's receipt for the new bytes (20261015T180520.693095Z, passed); ExplanatoryResiduals stays bound to the earlier receipt."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Granularity.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；GranularityBridge.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Granularity.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); GranularityBridge.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ],
   "validation_scope": {
@@ -190,7 +194,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
       "role": "proof",
-      "sha256": "3e9fdb3436a565f150f6544ead09093c8d1a72f1fe772784552e7386b0035553",
+      "sha256": "78e280076fadc82f9f3df9334cd0c902809366963fcf8c41a4c6b8689a9923c1",
       "declarations": [
         "Becoming.Recipe.Advance",
         "Becoming.Recipe.unfolding",
@@ -213,7 +217,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean",
       "role": "proof",
-      "sha256": "0b1ba3d865521e09f73d5ef29b06ca829c95642e6cf6623c207a763d2c445df6",
+      "sha256": "577db2868e40cb2a51ed5aae50eabb43338c69443724964b8f62dad657fb248c",
       "declarations": [
         "Becoming.Recipe.advance_ofProgram",
         "Becoming.Recipe.Advance.toProgram",

@@ -91,7 +91,7 @@ Significance here is not graded, and, as Ren wrote, it need not be positive. A p
 harm when the levels with it retain what has significance without it, and it is generative when
 it also adds.
 
-**AI reading, pending Ren.**
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D16).**
 - `Unrestricted` reads Ren's axiom. The formation index reads “anything”, a formation's
   continuation at a step reads “its continuation into the future”, and the standpoint index
   reads “has significance” unqualified, with no center privileged.

@@ -120,12 +120,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T143041.527461Z): the 20 declarations of Becoming.Novelty, 19 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 125; not independently reviewed."
   },
   "next_delta": {
-    "zh": "分支过程上的同样规律（Becoming.Branching），界作为部分的状态；连续时间与实数的量；独立审查；Ren 对读法（曲率、来自部分之外的增益、有界的当下）的判断。",
-    "en": "The same laws over branching processes (Becoming.Branching), with the bound as a state of the part; continuous time and real amounts; an independent review; Ren's judgment on the readings (curvature, gain from beyond the part, the bounded present)."
+    "zh": "分支过程上的同样规律（Becoming.Branching），界作为部分的状态；连续时间与实数的量；独立审查。",
+    "en": "The same laws over branching processes (Becoming.Branching), with the bound as a state of the part; continuous time and real amounts; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-14：“why do we need \"World\"? wasn't this about the whole and its parts, about everything?”，“no hard role has to be so - right now i think we are trapped by our speculative conditions”，“for us, non-Euclidean, or causality, still work”；对从关系开始的三步重建：“please, finish all”。本结果是第一步：规律不带推测的条件。读法（AI 的，待 Ren）：每个条件是它所说的部分的状态，如曲率是区域的状态，所以必然的规律不需要必然的条件；回返是有界的部分所做的；新而不止是无界的增益，必须来自部分之外；有界的当下不能承载自身的历史；每次变化都损失时，变化在至多与单位一样多的变化之内结束。",
-    "en": "Ren, 14 October 2026: “why do we need \"World\"? wasn't this about the whole and its parts, about everything?”, “no hard role has to be so - right now i think we are trapped by our speculative conditions”, “for us, non-Euclidean, or causality, still work”; and, to the relation-first re-founding in three steps, “please, finish all”. This result is the first step: the laws without the speculative conditions. Readings (the AI's, pending Ren): each condition is a state of the part the law is about, as curvature is a state of a region, so a necessary law needs no necessary condition; returning is what a bounded part does; novelty without end is gain without bound, which must come from beyond the part; a bounded present cannot hold its own history; and loss at each change ends change within as many changes as there are units."
+    "zh": "Ren 2026-10-14：“why do we need \"World\"? wasn't this about the whole and its parts, about everything?”，“no hard role has to be so - right now i think we are trapped by our speculative conditions”，“for us, non-Euclidean, or causality, still work”；对从关系开始的三步重建：“please, finish all”。本结果是第一步：规律不带推测的条件。读法（AI 的，依 Ren 的交托采用）：每个条件是它所说的部分的状态，如曲率是区域的状态（方法的类比，不是同一），所以必然的规律不需要必然的条件；回返是有界的部分所做的；新而不止是无界的增益，必须来自部分之外；有界的当下不能承载自身的历史；每次变化都损失时，变化在至多与单位一样多的变化之内结束。",
+    "en": "Ren, 14 October 2026: “why do we need \"World\"? wasn't this about the whole and its parts, about everything?”, “no hard role has to be so - right now i think we are trapped by our speculative conditions”, “for us, non-Euclidean, or causality, still work”; and, to the relation-first re-founding in three steps, “please, finish all”. This result is the first step: the laws without the speculative conditions. Readings (the AI's, adopted on Ren's delegation): each condition is a state of the part the law is about, as curvature is a state of a region (an analogy of method, not an identification), so a necessary law needs no necessary condition; returning is what a bounded part does; novelty without end is gain without bound, which must come from beyond the part; a bounded present cannot hold its own history; and loss at each change ends change within as many changes as there are units."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean",
   "aliases": [
@@ -228,13 +228,20 @@
         "zh": "同一重建的第二步：前提从交换读出，余下的是部分的状态。",
         "en": "Step 2 of the same re-founding: the premises read off the exchange, with states of parts remaining."
       }
+    },
+    {
+      "id": "where-novelty-gain-comes-from",
+      "detail": {
+        "zh": "推进其“新而不止是来自部分之外的无界增益”的读法：算入其余，每次上升都是被给予的，新需要增益，在第一律之下经边界或来自其余。",
+        "en": "Advances its reading “novelty without end is gain without bound from beyond the part”: with the rest counted every rise is given, and novelty needs gain, under the first law through the boundary or from the rest."
+      }
     }
   ],
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean",
       "role": "proof",
-      "sha256": "9fac2ee3645a3697e1ae5111499290fae8a5c1f67628e8746a11a23bf33169d7",
+      "sha256": "9a469850500102ad15dfee34671e93691c77e88e25c28c65e379e1b6bfab1d8b",
       "declarations": [
         "Becoming.upto_or_fails",
         "Becoming.Web.revisits_of_bounded",
@@ -293,7 +300,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean",
       "role": "proof",
-      "sha256": "4952f2b987be3c45f5aea970fdbe4599c7c62a7ff919b32edca21cda54bec0a0",
+      "sha256": "c1857d223f8b8b51e2242347d2cc744155e62009a9f3e0a219e94c2711c8c891",
       "declarations": [
         "Becoming.Flow.withImbalance",
         "Becoming.Flow.withImbalance_balances"
@@ -307,7 +314,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635"
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
@@ -325,12 +332,18 @@
       "role": "receipt",
       "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T143041.527461Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Novelty",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -351,7 +364,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T143041.527461Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Imbalance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -381,6 +394,18 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D27）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D27): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026-10-16 P111（新的增益从哪里来，研究 §148）：related 加 where-novelty-gain-comes-from。陈述与证明不变。",
+      "en": "16 October 2026, P111 (where novelty's gain comes from, study section 148): related adds where-novelty-gain-comes-from. Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Novelty.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Imbalance.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Novelty.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Imbalance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ],
   "text_versions": []

@@ -59,7 +59,8 @@ remains (`Midway.testing_before_formation_changes_results`, `Midway.remainder_co
 
 Excluded middle enters only as a named hypothesis: to match histories from configurations passing
 the same tests, and to read every recipe as one test. The readings of these results are the AI's,
-pending Ren. No ethical predicate is used.
+adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D33). No ethical predicate is
+used.
 -/
 
 namespace Becoming

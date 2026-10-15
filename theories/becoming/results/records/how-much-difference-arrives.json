@@ -229,12 +229,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T175539.984165Z): the 97 declarations of Becoming.Propagation, 78 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 141; not independently reviewed."
   },
   "next_delta": {
-    "zh": "回路的一般理论（绕回路的强度与失控）；最小的强度（需判定）；小于一的强度与实数的量；条件无穷多时的界；中心怎样表示其所及；独立审查；对读法（强度是识的强弱；纠缠是耦合的强度）的判断。",
-    "en": "A general theory of loops (the strength around a loop and its runaway); a least strength (needing a decision); strengths below one and real amounts; the bound with infinitely many conditions; how a center represents what it reaches; an independent review; a judgment on the readings (strength as how strongly one registers; entanglement as the strength of coupling)."
+    "zh": "回路的一般理论（绕回路的强度与失控）；最小的强度（需判定）；小于一的强度与实数的量；条件无穷多时的界；中心怎样表示其所及；独立审查。",
+    "en": "A general theory of loops (the strength around a loop and its runaway); a least strength (needing a decision); strengths below one and real amounts; the bound with infinitely many conditions; how a center represents what it reaches; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”。读法（AI 的，待 Ren 或按其 2026-10-15 的交托判断）：耦合强度是敏感所缺的度量，读作识的强弱；差别到达多少本身是同一展开中由一个律生成的进程，不另加于展开；所持的差别不断到达；Ren 的“highly entangled system”中，纠缠读作交换与彼此水平耦合的强度。系统论中，强度是增量增益（Lipschitz 界），所携带的量是它们的比较系统（离散的 Grönwall 不等式），这里它恰好达到。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”），“增益”留给 P111。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the item of six records' next_delta on how much difference arrives and a measure of coupling. Readings (the AI's, pending Ren or decided on Ren's delegation of 15 October): the coupling strength is the measure sensitivity lacked, read as how strongly a formation registers; how much difference arrives is itself a course one law generates in the one unfolding, not added to it; a held difference keeps arriving; in Ren's “highly entangled system”, entanglement reads as how strongly exchanges are coupled to each other's levels. In systems terms the strengths are incremental gains (Lipschitz bounds) and the carried amount is their comparison system (a discrete Grönwall inequality), here attained. The name \"coupling strength\" follows the scope of levels-of-closure (\"does not measure the strength of coupling\"), leaving \"gain\" to P111."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”。读法（AI 的，依 Ren 的交托采用，DELEGATED-CHOICES D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，形式上读作识的强弱；差别到达多少本身是同一展开中由一个律生成的进程，不另加于展开；所持的差别不断到达；Ren 的“highly entangled system”中，纠缠读作交换与彼此水平耦合的强度，不等同于量子的纠缠。系统论中，强度是增量增益（Lipschitz 界），所携带的量是它们的比较系统（离散的 Grönwall 不等式），这里它恰好达到。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”），“增益”留给 P111。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the item of six records' next_delta on how much difference arrives and a measure of coupling. Readings (the AI's, adopted on Ren's delegation, DELEGATED-CHOICES D39; 识 itself stays Ren's): the coupling strength is the measure sensitivity lacked, read formally as how strongly a formation registers; how much difference arrives is itself a course one law generates in the one unfolding, not added to it; a held difference keeps arriving; in Ren's “highly entangled system”, entanglement reads as how strongly exchanges are coupled to each other's levels, not as quantum entanglement. In systems terms the strengths are incremental gains (Lipschitz bounds) and the carried amount is their comparison system (a discrete Grönwall inequality), here attained. The name \"coupling strength\" follows the scope of levels-of-closure (\"does not measure the strength of coupling\"), leaving \"gain\" to P111."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
   "aliases": [
@@ -448,7 +448,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "a296d36ddc81ac77f72b0a01a1855874bad3e6261ecce9ef321592940c6a1798",
+      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.AgreeUpTo",
@@ -498,7 +498,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
       "role": "proof",
-      "sha256": "5b420062ebf932b498e6d471b1289cbe2ee3c4cd1264aa7186abfc723b26843c",
+      "sha256": "bf81218edd5c67f967e663472ef1d01fe66866b82f2f9025363941bb2a9f17b9",
       "declarations": [
         "Becoming.total"
       ]
@@ -519,7 +519,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a157279e29dcbd14df40baf9059ca25bff526a4e6614ab9563a1b4e1025022c1"
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -530,6 +530,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
       "role": "receipt",
       "sha256": "5ab288272cd0af1cf0b1b7f2cdd9e695da9a10904fd4d542d4c2d0b1b8c44fe3",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
     }
   ],
@@ -543,7 +549,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -571,7 +577,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Generation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -596,6 +602,14 @@
     {
       "zh": "2026-10-16，P117 措辞更正：读过改动后重新哈希 BECOMING-RENEWAL-READING.md（只改第 144 节读法标题“待 Ren”为“Ren 同日已取”及其英文段的同一标题；本记录所引之处不变）。",
       "en": "16 October 2026, P117 wording fix: rehashed BECOMING-RENEWAL-READING.md after reading the change (only section 144's readings heading, “pending Ren” to “taken by Ren the same day”, and the same heading in its English paragraph; nothing this record cites changes)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D39）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D39): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Counterfactual.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Generation.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Counterfactual.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ],
   "text_versions": []

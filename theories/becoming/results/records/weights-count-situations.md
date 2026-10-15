@@ -25,7 +25,7 @@
 - That actual weights are numbers of situations: a correspondence for a world, not a theorem; signed weights cancel and are not numbers of situations, and context-dependent statistics are not counts of context-free situations.<br>实际的权重是情境之数：这是对一个世界的对应，不是定理；带符号的权重会相消，不是情境之数，语境依赖的统计也不由不依语境的情境计数给出。
 - Counting per course and the law of large numbers for more than two values; counting per course for every process (needing listings without repetition).<br>按历程计数与大数定律对多于两个值；对任意过程按历程计数（要求列出者无重复）。
 
-**Standard boundaries / 通用边界:** No ethical premise and no Lean axiom is used. 不用伦理前提，也不用 Lean 公理。 · Contains no ethical predicate and evaluates neither arising nor ceasing. 不含伦理谓词，不评价生起或消失。 · Stated for discrete steps. 按离散步骤陈述。 · A law of the formal model; its correspondence to actual systems is a separate obligation. 形式模型中的规律；与实际系统的对应是另一项责任。 · Names follow Ren's naming criteria of 10 October 2026; readings remain Ren's. 名称依 Ren 2026年10月10日的命名标准；读法由 Ren 决定。
+**Standard boundaries / 通用边界:** No ethical premise and no Lean axiom is used. 不用伦理前提，也不用 Lean 公理。 · Contains no ethical predicate and evaluates neither arising nor ceasing. 不含伦理谓词，不评价生起或消失。 · Stated for discrete steps. 按离散步骤陈述。 · A law of the formal model; its correspondence to actual systems is a separate obligation. 形式模型中的规律；与实际系统的对应是另一项责任。 · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. 名称依 Ren 2026年10月10日的命名标准，在陈述有其确切意义处采用（Ren，2026年10月12日）；未注明属于 Ren 的读法，依 Ren 2026年10月15日的交托由 AI 决定，Ren 可以改动。
 
 ## Evidence / 证据
 
@@ -70,6 +70,7 @@ Ren, 16 October 2026: “we are describing what everything obeys, but at every m
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-16-the-situation-makes-it-true.md](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 
 Aliases / 别名: `Becoming.Situations.upto`, `Becoming.Situations.sum_upto`, `Becoming.Situations.sum_one`, `Becoming.Situations.finerLaw`, `Becoming.Situations.finerLaw_determined`, `Becoming.Situations.finerLaw_step_iff`, `Becoming.Situations.finerSteps`, `Becoming.Situations.finer`, `Becoming.Situations.coarse`, `Becoming.Situations.sum_finer`, `Becoming.Situations.finer_count`, `Becoming.Situations.sum_courses_values`, `Becoming.Situations.situations_count`, `Becoming.Situations.mul_indicator`, `Becoming.Situations.total_only`, `Becoming.Situations.situations_of_course`, `Becoming.Situations.far`, `Becoming.Situations.weight_far`, `Becoming.Situations.situations_typical`
 
@@ -78,6 +79,7 @@ Aliases / 别名: `Becoming.Situations.upto`, `Becoming.Situations.sum_upto`, `B
 - 2026-10-16：新增，按 Ren 2026-10-16 的说明（“the situation makes it true”）与其问题（“can you see what to do with my clarification above?”）（P117）；研究 §144。 / 16 October 2026: added, following Ren's clarification of 16 October (“the situation makes it true”) and question (“can you see what to do with my clarification above?”) (P117); study section 144.
 - 2026-10-16：Ren 取了这些读法（“yes, i take those readings”）；correspondence 标为 Ren 已取，next_delta 去掉“Ren 对读法的判断”；研究 §144。原文：“读法（AI 对 Ren 的话的读法，待 Ren）”。 / 16 October 2026: Ren took these readings (“yes, i take those readings”); correspondence marks them as taken and next_delta drops Ren's judgment on the readings; study section 144. Former wording: “Readings (the AI's reading of Ren's words, pending Ren)”.
 - 2026-10-16：只改措辞，重新绑定哈希：研究 §144 的读法标题由“待 Ren”改为“Ren 同日已取”，来源文件写明“第一条消息”；声明与结论不变。 / 16 October 2026: wording only, hashes rebound: study section 144's readings heading now reads “taken by Ren the same day” in place of “pending Ren”, and the source names “the first message”; no declaration or claim changes.
+- 2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Weighted.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Capture.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。 / 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Capture.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 
 </details>
 

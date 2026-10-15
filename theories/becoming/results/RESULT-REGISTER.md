@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-215 migrated records: 211 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+217 migrated records: 213 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -96,6 +96,7 @@
 | `functional-joining-common-structure` | [单值接合的共同操作结构 / Common operational structure for functional joining](records/functional-joining-common-structure.md) | theorem | recorded-checked |
 | `generalization-through-lumping` | [经归并的推广 / Generalization through a lumping](records/generalization-through-lumping.md) | theorem | recorded-checked |
 | `generation-is-replenishment` | [生成即补充 / Generation is replenishment](records/generation-is-replenishment.md) | theorem | recorded-checked |
+| `gluing-under-parity` | [奇偶约束下语境中的读法何时粘合 / When readings in context glue, for parity](records/gluing-under-parity.md) | theorem | recorded-checked |
 | `growth-constrained-fragmentation` | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](records/growth-constrained-fragmentation.md) | theorem | recorded-checked |
 | `guarded-program-question-recovery` | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](records/guarded-program-question-recovery.md) | theorem | recorded-checked |
 | `held-lives-g0-is-centering` | [被持有的生命上的 G0 / G0 on held lives](records/held-lives-g0-is-centering.md) | theorem | recorded-checked |
@@ -224,6 +225,7 @@
 | `weights-count-situations` | [权重计数情境 / Weights count situations](records/weights-count-situations.md) | theorem | recorded-checked |
 | `what-a-finite-history-refutes` | [有限历史所否证者 / What a finite history refutes](records/what-a-finite-history-refutes.md) | theorem | recorded-checked |
 | `where-a-move-is-formed` | [动作在哪里形成 / Where a move is formed](records/where-a-move-is-formed.md) | theorem | recorded-checked |
+| `where-novelty-gain-comes-from` | [新的增益从哪里来 / Where novelty's gain comes from](records/where-novelty-gain-comes-from.md) | theorem | recorded-checked |
 | `whole-first-and-bounded-centers` | [整体优先，与以依存为界的中心 / The whole first, and centers bounded by dependence](records/whole-first-and-bounded-centers.md) | theorem | recorded-checked |
 | `whole-law-of-counting` | [计数表是计数的全部规律 / The tally is the whole law of counting](records/whole-law-of-counting.md) | theorem | recorded-checked |
 | `whole-persists-through-generation` | [整体经由部分的生成而持续 / A whole persists through the generation of its parts](records/whole-persists-through-generation.md) | theorem | recorded-checked |

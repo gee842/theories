@@ -60,7 +60,7 @@ premise each law names.
   returns to the part's own support, which the part's own exchange never reaches
   (`Loop.returns`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
 - An act has two counterfactuals. With the rest of the exchange fixed (P42), only what the part
   reaches directly counts (`Flow.Balances.comparison_within_reach`). With the rest responding
   through its registration, the part's closure under affecting what is registered counts. What an

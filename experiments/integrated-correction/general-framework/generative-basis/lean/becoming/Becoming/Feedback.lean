@@ -109,7 +109,7 @@ enters only as a hypothesis of three witnesses.
   part gives what others take, the levels without it may not exist, and there is no comparison by
   withheld levels (`Clearing.no_levels_without_source`).
 
-**AI reading, pending Ren.**
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D20).**
 - The influence closure reads what a formation's own feedback can register, once effects pass
   through the support and activity of others. With the rest of the exchange fixed, only the parts
   that reach it register.

@@ -49,7 +49,8 @@ references the two are apart.
 Excluded middle enters only as a named hypothesis, and only to identify passing the same branching
 tests with likeness (through `alike_of_sameBranchingTests_of_em` of `Becoming.Likeness`). The
 uniqueness of the factor is stated at every fragment rather than as an equality of functions.
-The readings of these results are the AI's, pending Ren. No ethical predicate is used.
+The readings of these results are the AI's, adopted on Ren's delegation of 15 October 2026
+(DELEGATED-CHOICES D33). No ethical predicate is used.
 -/
 
 namespace Becoming

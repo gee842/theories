@@ -101,8 +101,8 @@
       ]
     },
     {
-      "zh": "同样的活动而每侧汲取自身的水平（selfDrawing）也有不活的事件，但只在逐步读法对体现关系项终结之步自我汲取的判定之下，这一判定属于 Ren。",
-      "en": "The same activity while each side draws on its own standing (selfDrawing) also has an event that is not living, but only on the stepwise reading's verdict about drawing on a self-bearing embodied relatum at its ending, which is Ren's to choose.",
+      "zh": "同样的活动而每侧汲取自身的水平（selfDrawing）也有不活的事件，但只在逐步读法对体现关系项终结之步自我汲取的判定之下；这一判定是逐步读法的定理，比较不用它。",
+      "en": "The same activity while each side draws on its own standing (selfDrawing) also has an event that is not living, but only on the stepwise reading's verdict about drawing on a self-bearing embodied relatum at its ending, a theorem of that reading which no comparison uses.",
       "declarations": [
         "Becoming.World.selfDrawing_world",
         "Becoming.World.SelfDrawing.undermines"
@@ -224,13 +224,13 @@
       "kind": "scope"
     },
     {
-      "zh": "Ren 的“生成的”“退化的”指空间的哪些部分由 Ren 定，本结果只陈述活动的读法。",
-      "en": "Ren chooses which parts of the space Ren's ‘generative’ and ‘degenerative’ name; this result states only the reading of activity.",
+      "zh": "本结果只陈述活动的读法；Ren 的“生成的”“退化的”依 Ren 的交托决定，读作对能形成者的扩大与缩小，不是这一读法。",
+      "en": "This result states only the reading of activity; Ren's ‘generative’ and ‘degenerative’ are decided on Ren's delegation to read as widening and narrowing what can form, not this reading.",
       "kind": "correspondence"
     },
     {
-      "zh": "与依存者在该步之后不活跃同时的侵蚀是否计入不活、对哪些汲取者，由 Ren 选择。",
-      "en": "Whether undermining that co-occurs with the depending relatum not being active after the step counts against living, and for which drawers, is Ren's to choose.",
+      "zh": "与依存者在该步之后不活跃同时的侵蚀，在逐步读法下对每个汲取者都计入不活，这一判定不是对汲取者的估值。",
+      "en": "Undermining that co-occurs with the depending relatum not being active after the step counts against living on the stepwise reading, for every drawer, a verdict that is no valuation of the drawer.",
       "kind": "scope"
     }
   ],
@@ -261,12 +261,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; periphery receipt 20261013T095049.338744Z passed): the theorems of Becoming.Space and Becoming.Roles, with this record's local laws, have empty axiom reports, and the checker verifies core purity. Author counterreview in §30 of the integration note; the ninth to twelfth independent reviews, listed under sources, accept the mathematics each reviewed, the eleventh and the twelfth covering the corrections made after the tenth and the eleventh."
   },
   "next_delta": {
-    "zh": "提议中“生成的、退化的”的读法（Ren）；更多的部分（更多、可能性与多样性的上升）与前提组合的地图；不可判定活动时有限世界的规律已在纯净核心中以排中律为假设陈述（law_of_em）；名称（Ren）。",
-    "en": "The reading of the proposal's ‘generative, degenerative’ (Ren); a map of further parts (more, the rise of possibility and diversity) and of combinations of premises; the law for finite worlds without decidable activity is stated in the pure core with excluded middle as a hypothesis (law_of_em); names (Ren)."
+    "zh": "更多的部分（更多、可能性与多样性的上升）与前提组合的地图；不可判定活动时有限世界的规律已在纯净核心中以排中律为假设陈述（law_of_em）。",
+    "en": "A map of further parts (more, the rise of possibility and diversity) and of combinations of premises; the law for finite worlds without decidable activity is stated in the pure core with excluded middle as a hypothesis (law_of_em)."
   },
   "correspondence": {
-    "zh": "Ren 的原话（2026-10-08-theory-of-becoming-priority）：“when we add axiom, we can define what is good, which is a part of the whole space generative model projects / but, if we count all space, generative, degenerative, we get The theory of evolution, or the theory of becoming/life, which doesn't even require axiom, i think can be done with 0”。计划 P22 把这读作：规律对整个空间成立，前提划出部分。作者的读法（AI 论证）：本结果给出这一提议的一种结构。整体是每个世界；不加关于展开的前提的规律（变化的规律、算术恒等式，以及活动可判定的有限世界中生起与止息的同时复现）对整体成立；各定理的前提每一个都划出真部分，不是隐藏的规律。Ren 在 2026-10-09 说：“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”（2026-10-09-renewing-consuming-without-axioms）。所以本结果不把生起复现与止息复现称为生成的与退化的部分：二者在有限世界中重合；作为关系，更新的形成与消耗的形成不重叠（Web.renewing_not_consuming），同一事件可以参与二者。提议中的“生成的、退化的”取哪种读法属于 Ren（第九次独立审查 M1）。Ren 说加上公理可以定义好，“好”是整个空间的一部分；这里的 Living 是逐步读法中“每个事件都活”的结构条件，是 G0 所计的 living 的一个部分，它跨越生起与止息，不与其中任何一个重合：生起不是活的同义词，止息也不是不活。这不证明整个生成之论不需要任何公理：它显示哪些陈述不需要前提、哪些前提划出哪些部分；“不加实质公理的整体演绎必然性”仍是开放的首要目标。“世界”“生起复现”“止息复现”是 AI 的表述，名称由 Ren 定。英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）。",
-    "en": "Ren's words (2026-10-08-theory-of-becoming-priority): ‘when we add axiom, we can define what is good, which is a part of the whole space generative model projects / but, if we count all space, generative, degenerative, we get The theory of evolution, or the theory of becoming/life, which doesn't even require axiom, i think can be done with 0’. Plan P22 reads this as: the laws hold of the whole space, and premises carve parts. The author's reading (an AI argument): this result gives one structure for that proposal. The whole is every world; the laws with no premise about the unfolding (the laws of change, the arithmetic identity, and arising and ceasing recurring together in finite worlds whose activity is decided) hold of the whole; each premise of the theorems carves a proper part and is not a hidden law. On 9 October Ren said: ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’ (2026-10-09-renewing-consuming-without-axioms). So this result does not call arising recurring and ceasing recurring the generative and degenerative parts: they coincide in finite worlds, while read as relations renewing and consuming formations do not overlap (Web.renewing_not_consuming), though one event can take part in both. Which reading the proposal's ‘generative, degenerative’ takes is Ren's to choose (ninth independent review, M1). Ren says that with an axiom we can define the good as a part of the whole space; Living here is the structural condition that every event is living in the stepwise reading, one part of what G0 counts as living, and it crosses arising and ceasing without coinciding with either: arising is not a synonym for living, and ceasing is not not-living. This does not prove that the theory of becoming needs no axiom at all: it shows which statements need no premise and which premises carve which parts; the deductive necessity of the whole without added substantive axioms remains the open first priority. ‘World’, ‘arising recurring’ and ‘ceasing recurring’ are the AI's formulations, and names are Ren's. Ren confirmed the English names arising and ceasing (2026-10-09-arising-ceasing-names)."
+    "zh": "Ren 的原话（2026-10-08-theory-of-becoming-priority）：“when we add axiom, we can define what is good, which is a part of the whole space generative model projects / but, if we count all space, generative, degenerative, we get The theory of evolution, or the theory of becoming/life, which doesn't even require axiom, i think can be done with 0”。计划 P22 把这读作：规律对整个空间成立，前提划出部分。作者的读法（AI 论证）：本结果给出这一提议的一种结构。整体是每个世界；不加关于展开的前提的规律（变化的规律、算术恒等式，以及活动可判定的有限世界中生起与止息的同时复现）对整体成立；各定理的前提每一个都划出真部分，不是隐藏的规律。Ren 在 2026-10-09 说：“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”（2026-10-09-renewing-consuming-without-axioms）。所以本结果不把生起复现与止息复现称为生成的与退化的部分：二者在有限世界中重合；作为关系，更新的形成与消耗的形成不重叠（Web.renewing_not_consuming），同一事件可以参与二者。依 Ren 的交托，提议中的“生成的、退化的”读作对能形成者的扩大与缩小，在形成的层次上是更新与消耗，不取活动的读法（第九次独立审查 M1；DELEGATED-CHOICES D2）。Ren 说加上公理可以定义好，“好”是整个空间的一部分；这里的 Living 是逐步读法中“每个事件都活”的结构条件，是 G0 所计的 living 的一个部分，它跨越生起与止息，不与其中任何一个重合：生起不是活的同义词，止息也不是不活。这不证明整个生成之论不需要任何公理：它显示哪些陈述不需要前提、哪些前提划出哪些部分；“不加实质公理的整体演绎必然性”仍是开放的首要目标。“世界”“生起复现”“止息复现”是 AI 的表述，按 Ren 的命名规则采用（DELEGATED-CHOICES D36）。英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）。",
+    "en": "Ren's words (2026-10-08-theory-of-becoming-priority): ‘when we add axiom, we can define what is good, which is a part of the whole space generative model projects / but, if we count all space, generative, degenerative, we get The theory of evolution, or the theory of becoming/life, which doesn't even require axiom, i think can be done with 0’. Plan P22 reads this as: the laws hold of the whole space, and premises carve parts. The author's reading (an AI argument): this result gives one structure for that proposal. The whole is every world; the laws with no premise about the unfolding (the laws of change, the arithmetic identity, and arising and ceasing recurring together in finite worlds whose activity is decided) hold of the whole; each premise of the theorems carves a proper part and is not a hidden law. On 9 October Ren said: ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’ (2026-10-09-renewing-consuming-without-axioms). So this result does not call arising recurring and ceasing recurring the generative and degenerative parts: they coincide in finite worlds, while read as relations renewing and consuming formations do not overlap (Web.renewing_not_consuming), though one event can take part in both. On Ren's delegation the proposal's ‘generative, degenerative’ reads as widening and narrowing what can form, renewing and consuming at the level of formations, not as the activity reading (ninth independent review, M1; DELEGATED-CHOICES D2). Ren says that with an axiom we can define the good as a part of the whole space; Living here is the structural condition that every event is living in the stepwise reading, one part of what G0 counts as living, and it crosses arising and ceasing without coinciding with either: arising is not a synonym for living, and ceasing is not not-living. This does not prove that the theory of becoming needs no axiom at all: it shows which statements need no premise and which premises carve which parts; the deductive necessity of the whole without added substantive axioms remains the open first priority. ‘World’, ‘arising recurring’ and ‘ceasing recurring’ are the AI's formulations, adopted under Ren's naming rule (DELEGATED-CHOICES D36). Ren confirmed the English names arising and ceasing (2026-10-09-arising-ceasing-names)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
   "aliases": [
@@ -500,7 +500,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "3abd887dc3955de148e3c81a2bccb4f90fc46accf3c0a0be57b586512737838d",
+      "sha256": "0acf50c8d6fe6c28fef710e15f5b4138b259c3d67520df545cdd7a1b21987e26",
       "declarations": [
         "Becoming.Flow.still",
         "Becoming.Flow.still_dissipative",
@@ -598,7 +598,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "e0a766eb2e0f7ec22acab4644b2ff1dded83065f107b7c41f8b6a583dd9d3efc",
+      "sha256": "d6e867b830b46a5b716646099fafc4e23f7f84e70e13b2792a3455be7bec5ce7",
       "declarations": [
         "Becoming.Web.roles",
         "Becoming.Web.roles_unceasing",
@@ -730,12 +730,18 @@
       "role": "receipt",
       "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -749,7 +755,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1086,6 +1092,14 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D2, D6, D36）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D2, D6, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Space.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Roles.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ],
   "text_versions": [

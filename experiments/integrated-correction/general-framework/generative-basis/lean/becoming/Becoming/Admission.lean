@@ -77,7 +77,8 @@ The comparison holds the rest of the exchange fixed, as the but-for test of `Bec
 holds the move fixed. Where no level path balances the flow without the part, there is
 nothing to compare. Each witness exhibits its levels without the part.
 
-**AI reading, pending Ren.** The mapping onto Ren's terms is the AI's reading:
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D2, D22, D35).** The
+mapping onto Ren's terms is the AI's reading:
 - inclusion and exceeding read as Ren's “more future, not less”;
 - widening reads as generative, narrowing as degenerative, keeping the same as neutral;
 - support gained only from the supported reads as the continuation of becoming continuing

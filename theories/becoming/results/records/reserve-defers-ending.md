@@ -64,7 +64,7 @@ Canonical source: [Reserve.lean](../../../../experiments/integrated-correction/g
 
 ## Next / 下一步
 
-The least bound over the chains of a graph; who replenishes a held condition under dissipation; where a held condition is represented, which reading the valuation uses (Ren); the empirical correspondence for fat, seed banks and savings.<br>图上各链的最小界；耗散之下谁补充所持的条件；在所持条件被表示的地方，估值用哪种读法（Ren）；脂肪、种子库与储蓄的经验对应。
+The least bound over the chains of a graph; who replenishes a held condition under dissipation; the empirical correspondence for fat, seed banks and savings.<br>图上各链的最小界；耗散之下谁补充所持的条件；脂肪、种子库与储蓄的经验对应。
 
 <details><summary>Correspondence, dependencies, sources and history / 对应、依赖、来源与沿革</summary>
 
@@ -196,6 +196,8 @@ Aliases / 别名: `Becoming.Web.Carries`, `Becoming.Web.carries_zero`, `Becoming
 - 2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）。 / 15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged).
 - 2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）。 / 15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged).
 - 2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。 / 15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged).
+- 2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D8）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。 / 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D8): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
+- 2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Generation.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Roles.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。 / 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 
 ### Earlier text / 早期文本
 

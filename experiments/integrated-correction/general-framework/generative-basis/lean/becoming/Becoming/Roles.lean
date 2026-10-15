@@ -116,9 +116,9 @@ water stands without being active. Generation carries a requirement of its own w
 the arising relatum is embodied, and need not where it is not (`Flicker`), so that is
 where the choice has consequences. `ending_breaks` counts drawing on a relatum that
 bears on itself, at the step at which it ends, against living, whatever ends it;
-whether it should, and for which drawers, belongs to the reading of 生生, which is
-Ren's. Dissipation is the physical premise of `Becoming.Dissipation`. No ethical
-predicate, ranking or axiom occurs.
+on Ren's delegation of 15 October 2026 this stays a verdict of the stepwise reading, for every
+drawer, valuing no drawer (DELEGATED-CHOICES D6). Dissipation is the physical premise of
+`Becoming.Dissipation`. No ethical predicate, ranking or axiom occurs.
 -/
 
 open Generative

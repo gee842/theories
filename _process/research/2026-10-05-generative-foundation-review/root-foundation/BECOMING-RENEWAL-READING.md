@@ -9306,6 +9306,155 @@ Integration: §9 Lasting 一行（陈述与计数）与一个外围行；Becomin
 
 **下一步（I4b）。** Selection（交换不变的服务恰当无并列，PluralRecords、TieBreaking；在 P110 落地之后）。
 
+## 147. 依 Ren 的交托决定的读法（P110）
+
+2026-10-15／16。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定；每项写明理由与会改变它的东西，记为依 Ren 2026-10-15 的交托所作的决定，不记为 Ren 自己的决定，Ren 可改其中任何一项。交托的另一半，“推进完整的前沿”，见 §148（P111）与 §149（P112）。工作板上认领为 P110。
+
+```text
+Result(s): 不新增结果；决定记录 DELEGATED-CHOICES（D1–D39）。101 项记录各加一条成对的、注明日期的说明：此前留给 Ren 的读法与名称
+           按所列决定改为采用或不采用，请 Ren 判断这些读法的下一步删去；各记录的结果编号、陈述、证明与绑定不变
+Delta: 读法的状态，不是数学。理论第 8 节“属于 Ren 的选择”一类改为“依 Ren 的交托决定”，列出仍属 Ren 者；第 6 节各处“读法（AI 的，
+       待 Ren）”改为“依 Ren 2026-10-15 的交托采用”；Lean 的模块说明（51 个模块与根模块）与 Lean README 折叠决定，只改注释
+Supplied premises / correspondence: 不加前提。读法的标准（AI 的）写在决定记录 §0：Ren 的原话优先；不加前提；已检查的结果能定的由它
+       定；确切范围；关系优先；不丢失
+Evidence: 每项决定引 Ren 的原话或已检查的定理。fold_docstrings.py 断言每处替换恰好一次、每个 Lean 文件去掉注释后的文本不变，改动的
+          段落重排时只改换行（文件的词不变）；reconcile_records.py 断言每处特定替换恰好一次；scratch_build 对合并 main a5406334 后的树：
+          232 步中 126 步运行（I4b-3 改了 Horizon，其后的模块重编）、106 步复用，无警告，54 个改动的模块（含根模块）的公理报告全部为空
+Boundary: 决定记录 §10 所列不在交托之内，照旧属 Ren；决定不是证明，也不说 Ren 持有什么；在 Ren 2026-10-15 的回答之后提出的读法
+          （P116 的“按情境”连同其限定）留给 Ren；Ren 2026-10-16 取了 AI 对其说明的读法（§144）
+Integration: 理论第 6、8 节；DELEGATED-CHOICES；101 项记录；Lean 模块说明与 README；指令登记一项（2026-10-15-delegated-choices）
+```
+
+| 组 | 决定 |
+|---|---|
+| 生生与生成的空间（D1–D5） | 生生读作生成的空间，即能形成者的扩大；“生成的”“退化的”是扩大与缩小，保持为中性，互相超出为混合，在形成的层次上是更新与消耗；活动的读法（生起与止息的复现）不采用：二者在有限世界中重合，而 Ren 的“不overlap吧”预设二者不重叠；第二个“生”是能形成者；生生不息读在整体的层次，即经更新而复现的生起 |
+| 终结、侵蚀、开放与所持条件（D6–D10） | 终结之步的汲取与侵蚀是逐步读法的判定，保留为定理，不作为对汲取者的估值；开放是每个有限家族之外的交换，增益另名（§148 证明增益从哪里来）；以之为生、世系与输送是已形成的关系，不是直接的估值 |
+| 想要延续者与一条公理（D11–D16） | S0 即想要；公理的辖域是“anything”（Ren 的原话）；“不损”读作保留，其边界是余量，即 Ren 所说的相变；“更多”是方向，不是最大化；`Unrestricted` 读出公理，A 读在活的内容上 |
+| 不用公理的路线、反馈与所及（D17–D20） | 供给闭包读出“what it actually depends on”；路线 (b) 不足以达到 G0 的辖域，两者都保留；所及闭包读出“the system that one is in” |
+| 公理的分解（D21–D22） | 预设、覆盖与层级的次序采用；不变之步属 Ren 的陈述；生成的空间读出 Ren 的两句话 |
+| 一个展开、动作、因果与学习（D23–D26、D37、D39） | 以各记录的确切范围采用；律读有限多个条件时，识在形式上读作律的敏感，识本身仍属 Ren（D37）；耦合强度在形式上读作识的强弱，纠缠读作耦合的强度，不等同于量子的纠缠（D39） |
+| 从关系开始的重建（D27–D29） | 五项读法采用，与曲率的等同只作类比；熵是守恒量中的记录 |
+| 交换、步、历史、描述与辨识（D30–D35、D38） | 以确切范围采用；“按情境”不读作界，由 Ren 自己 2026-10-15 的回答决定（D34） |
+| 名称（D36） | AI 的工作名称在陈述有其确切意义处采用；Ren 的用语仍属 Ren |
+
+**它回答了什么。** Ren 的问话有两半：作出最好的选择，推进完整的前沿。前一半在这里：此前在理论、101 项记录、51 个 Lean 模块与根模块中称为“AI 的读法，待 Ren”的读法与名称，现在每一处都有一个编号的决定、它的理由和会改变它的东西，Ren 可以逐项改动。标准把决定限在读法之内：它们不改动任何定理，不给任何规律加前提；不采用的读法，其定理照旧保留，只是不再是理论的读法。有几项不是由判断而是由已检查的结果决定的：活动的读法（D2）被生起与止息在有限世界中重合这一定理排除；“按情境就是界”（D34）被 Ren 自己的回答排除。另一些在合乎原话的几种读法中取不加前提的一种：识在形式上读作律的敏感（D37），因为那是律所经的最小的识，取它不在律之外加任何东西。
+
+较早各节写着“读法待 Ren”的，按记录中的决定读；那些节的文本作为当时的证据保留，不改写。
+
+**D34 与 Ren 的回答（按 Ren 2026-10-15 的“if my earlier words are unreasonable, please keep note, not follow blindly”）。** D34 起初采用读法 1，“按情境就是界”。Ren 在另一会话中回答：“not sure what's the reading 1, but reality is always situational”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)）。D34 因此改为由 Ren 的话决定：“按情境”不读作界；状态数的界是情境的有限记录确定所识一切的条件。P116 在 Ren 的回答之后提出的读法，“完整的真按情境可推出”连同其限定，不由这一交托决定，留给 Ren（§140，决定记录 §10）；Ren 2026-10-16 说明“the situation makes it true”，并取了 AI 对这一说明的读法（§144），它们是 Ren 取了的读法。有界时类的名读作它的有限的未来，D34 曾以确切范围把它作为“名可名”的类比采用（这一读法在交托之前已列在第 8 节属于 Ren 的选择中）；Ren 2026-10-16 取了同一读法（“take 2”，[原话](../../../../sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md)）：定理是有界时类有有限的名，“名可名”只是类比，所以这一项由 Ren 的话决定，§144 的“仍待 Ren”由此回答。
+
+**不在交托之内的。** Ren 自己的文本与用语（OPENING 及其脚注、静止的中文用语与“静止定理”这一标题、“closure bounds change”、识与理作为 Ren 的读法）；Ren 是否持有不变之步；第二部分那一条断言的规范根据；I4；Ren 2026-10-11 保留的表示决定（离散的步、自然数的量、无穷多立着者处的普查、判定的相等与列出）；审查的决定。
+
+**作者反审。**
+1. **交托本身是一个读法。** 把 Ren 的问话读作对读法与名称的交托，是 AI 的读法；它记在指令登记中，每项决定都记为依交托的、AI 的决定，不记为 Ren 的。若 Ren 只是在问意见，决定就退为建议，数学不受影响。
+2. **决定会不会偷渡结论。** 采用一个读法，可能看起来像是解决了哲学问题。标准（不加前提、确切范围、关系优先）限制了这一点，规范根据不在交托之内。最需留意的是 D1（生生读作生成的空间）与 D13（不损读作保留）：两者的形式部分有定理支持，而说它们是好的，仍是要论证的主张（§6.13 的“应当”）。
+3. **D34 先错了一次。** 依交托的决定可以被 Ren 后来的话推翻。这一修正表明决定在 Ren 的话面前可修正，也表明在 Ren 的回答到达之前采用一个读法有风险；记录与理论现在都写明这一项由 Ren 的话决定。
+4. **维护的代价。** Lean 的模块说明现在引用决定的编号；Ren 若改动一项，相应的注释要改。决定编号可搜索，fold_docstrings.py 记下了每处改动，这降低了代价。
+5. **名称。** P115 把它的度量称为“耦合强度”，把“增益”留给 §148；两个名称各有其确切意义。
+6. 本节未经独立审查。
+
+**检查。** 记录的风格检查：0 项错误；软的长度提示照旧，其中 correspondence 一类按规则只提示。研究检查的预期错误只在两项新记录（回执在落地时绑定）；本批的文本改动带来的漂移，在落地时由整合者重绑。Lean 只改注释，注释之外的代码在每个文件中都断言不变；暂存区构建见上。
+
+## 148. 新的增益从哪里来：算入其余，每次上升都是被给予的（Becoming.Gain；P111）
+
+2026-10-15／16，同一交托之下（Ren 2026-10-15：“push the frontier of completeness”，[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。`Becoming.Novelty`（§125）只在水平上证明了只有增益者才新：每步都新的家族超过每个界。returning-novelty-forgetting-on-levels 的读法说，新而不止是无界的增益，必须来自部分之外。本节在第一部分之内证明它，不加公理：增益从哪里来。D7 把开放与增益分开，这里给出两者在哪里汇合。
+
+```text
+Result(s): 新增 where-novelty-gain-comes-from；复用 returning-novelty-forgetting-on-levels（Web.exceeds_of_new、Web.revisits_of_bounded、
+           Flow.uncarried_of_bounded、Web.counting、Web.counting_new、upto_or_fails）、imbalance-as-relatum（Flow.withImbalance、
+           Flow.withImbalance_balances、Flow.balancesOn_iff_idle、mem_of_some_mem、sub_eq_zero_of_le）、entropy-history-and-record
+           （configurationsWithin、Web.config_within、nonrising_between、Flow.Balances.nonrising、Flow.Gainless、Flow.exchanges、
+           Flow.CarriesHistory）、continued-change-needs-openness（Flow.ClosedAt、total_eq_zero）、recurrence-without-premise
+           （revisits_within）、more-needs-renewers（Flow、rises_between、search、Distinct）、becoming-dependence-dynamics（Web、
+           Web.Supported、requires、need）
+Delta: 新核心模块 Becoming.Gain（导入 Novelty；30 项定理／35 项声明）；不改已有模块
+Supplied premises / correspondence: 不加公理；每次上升被给予不用前提；第一律（Flow.Gainless）、家族不重复（Distinct）、整体列出每个
+       条件、其余不给净量、所要求者及其多少固定于家族之内（Web.RequiresWithin），都写在各自的定理中
+Evidence: scratch_build 对合并 main a5406334 后的树：Becoming.Gain 30 项定理、35 项声明，公理报告为空，无警告，根模块与其闭包一同编译
+Boundary: 实际的部分是否开放、其余在实际展开中是哪个关系项、其交换是否不止，都是对应；存量之内构型数之界是否可达没有陈述；离散的步与
+          自然数的量；不含伦理谓词
+Integration: 理论第 6 节（第一部分的总陈述）、第 8 节（D5、D7 的读法）、第 9 节一行、术语；Becoming.lean 的导入与说明；
+          check_becoming.py；Lean README；新记录；returning-novelty-forgetting-on-levels、continued-change-needs-openness、
+          where-a-move-is-formed 的 related
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Flow.NetGiver`、`Flow.rise_netGiver` | **每次上升都是被给予的。** 跨一步家族的存量上升时，算入其余的流中某个关系项给家族的多于从它取的；不加前提：算入其余，每个流都平衡（`withImbalance_balances`），平衡的家族在无人净给时不上升（`Balances.nonrising`）；给者经逐个核对参与者找到，不判定任何无穷者 |
+| `Flow.netGiver_cases`、`Flow.rise_given`、`Flow.rise_given_between` | 净给者是其余，或参与的某个形成；一段上的上升在其中某一步被给予 |
+| `Flow.rest_netGiver_iff`、`Flow.BalancesOn.rest_not_netGiver` | 其余给净量，恰当家族上水平的上升超出诸形成的净交换；流在家族上平衡时其余不给净量 |
+| `Flow.rise_from_rest_or_open` | **第一律之下：来自其余，或跨过边界。** 无中不生有（`Flow.Gainless`）时，不重复的家族上升，其余给它净量，或它在那一步不封闭：某个参与的形成越出它而交换 |
+| `Flow.whole_rise_from_rest`、`Flow.whole_bounded_of_rest_idle`、`Flow.whole_recurs_of_rest_idle`、`Flow.whole_not_new_of_rest_idle` | **有限的整体只从其余增益。** 列表持有每个条件时没有边界可越，每次上升都是其余的；其余从 T 起不给净量时，整体留在 T 时的存量之内，从每一步起都有一个配置出现两次，流在任意晚的步与它交换时其配置不承载交换的计数，它不是每步都新：有界整体中的不息生成是回返 |
+| `Web.rises_within_of_new`、`Web.rises_late_of_new`、`Web.config_eq_of_sub`、`Web.new_of_sub` | **新需要增益。** 在多于存量之内构型数的连续步上都新的家族在这一段之内上升；每步都新的家族在任意晚的步上升；持有它的家族亦然 |
+| `Web.NewAt`、`Web.exceeds_of_firsts`、`Web.rises_late_of_firsts`、`le_of_increasing` | 沿首次到访（不必连续）同样：存量在首次到访的前 N + 1 个之一超过界，首次到访不止时在任意晚的步上升 |
+| `Flow.new_from_rest_or_open`、`Flow.new_beyond_every` | 在第一律之下每次这样的上升来自其余或跨过边界，对每个持有它的不重复家族都如此：没有有限家族封闭于无尽的新之上 |
+| `Web.RequiresWithin`、`Web.supported_of_config`、`Web.FirstSupported`、`Web.newAt_of_first`、`Web.rises_late_of_newly_supported`、`Flow.newly_supported_from_rest_or_open` | **新形成需要增益。** 所要求者及其多少固定于家族之内时，家族的水平是否支持一个形成只取决于配置；首次被支持之步是首次到访；不止的新形成需要家族在任意晚的步上升，在第一律之下来自其余或跨过边界 |
+| `Flow.empty`、`Flow.empty_gainless`、`Flow.counting_given_by_rest` | **从其余而来的新。** 计数（`Web.counting_new`，每步都新）在无人参与、无中不生有之处，每步由其余给一单位：其余是有限整体唯一的来路 |
+| `map_eq_at`、`map_eq_on`、`add_one_sub_self`、`some_mem_tail` | 列表与自然数的辅助 |
+
+**它回答了什么。** returning-novelty-forgetting-on-levels 的读法现在是定理，而且更确切：增益的来路恰有两条，跨过家族的边界，或来自其余，即整体中未被列出的那部分。算入其余是关键：`Becoming.Imbalance`（§85）把不平衡算作一个关系项，所以每次上升都有给者，不用任何前提。在第一律之下，不重复的家族没有第三条路。有限的整体每个条件都列出，没有边界可越，于是每次上升都是其余的；其余闲置时整体回返而遗忘，不是每步都新。所以在有界的整体之内，生生不息是更新的复现（D5），无尽的新需要整体的列表之外有给予者。D7 把开放与增益分开：家族可以封闭而从其余增益（`Flow.counting_given_by_rest`），开放也可以净量为零；在第一律之下二者汇合：增益来自其余，或越出边界。
+
+**读法（AI 的，依 Ren 2026-10-15 的交托采用，D5、D7）。** “来自部分之外的增益”读作这两条路；其余计入所列关系项不做的，所以无尽地新的有限整体，是其列表漏掉了给予它者。`Becoming.Coupling`（§131）对动作陈述其对应：列表所持者形成的动作在列表长度之内重复。
+
+**作者反审。**
+1. **已知的结果。** 存量的上升需要流入，是守恒（存量之变等于流入减流出）；有界的有限系统回返，是鸽巢原理（有限状态上 Poincaré 型的回返）；首次到访之界也是鸽巢。增量是：在核心中不用公理，“算入其余，每次上升都被给予”不用前提；在第一律之下给者只能是其余或边界；有限整体唯一的来路是其余；首次被支持之步就是首次到访，这把新形成接到增益上。
+2. **恰好与否。** 界（存量之内的构型数）是否可达没有陈述：可能有家族实现这么多次首次到访，也可能都更少；增益与新的确切比例没有给出（记录的下一步）。
+3. **前提的位置。** 第一律、家族不重复、整体列出每个条件、其余不给净量、所要求者固定，都写在各自的定理中；`Flow.counting_given_by_rest` 表明“其余不给净量”不能从有限整体回返的定理中去掉。
+4. **名称。** `NetGiver`、`RequiresWithin`、`FirstSupported`、`NewAt` 是结构性的名字；“增益”指存量的上升，与 P115 的“耦合强度”（系统论中增量增益的意义）分开命名。
+5. **证明。** 给者经 `search` 在参与者的有限列表上找到，不判定无穷者；不用 `simp`、`omega`；公理报告为空。
+
+**检查。** 暂存区构建（合并 main a5406334 后的树）：`Becoming.Gain` 30 项定理、35 项声明，公理报告为空，无警告；根模块与其闭包一同编译。核心检查器在整合者的运行中检查。本节尚未经独立审查。
+
+## 149. 语境中的读法何时粘合：奇偶律、Bell 型之界与环（Becoming.Gluing；P112）
+
+2026-10-15／16，同一交托之下。contextual-registration（§96，P72）的下一步写着“奇偶障碍的一般定理；概率的语境性”。§96 证明了框架恰在其诸识粘合处合于一个世界，并以 Specker 的三个盒子与 Mermin–Peres 方阵为没有不依语境之读法的可能性。本节给出每个语境要求奇偶时的确切规律，除所列主张与语境外不加前提。工作板上的 I4b 一行把外围 CorrectionRelations 的环律留给 P112，这里以核心的形式给出。
+
+```text
+Result(s): 新增 gluing-under-parity；复用 contextual-registration（Contextual、Contextual.Glues、Contextual.Respects、Contextual.not_glues、
+           Local、NoGlobal，Specker 与 Square 的可能性、world 与 respects）；more-needs-renewers（total_le、total_add、total_ones、count、
+           Distinct、search、mem_cons_cases、mem_map_of；求和 total 本身在 Becoming.Generation 中）
+Delta: 新核心模块 Becoming.Gluing（导入 Context 与 Population；81 项定理／113 项声明）；不改已有模块
+Supplied premises / correspondence: 不加公理；主张与语境被列出；障碍、m − 1 之界与环律不用其他条件；唯一性（消去）以主张的相等可判定、
+       主张列举不重复为条件；混合是可重复计入的赋值列表，以自然数计权重
+Evidence: scratch_build 对合并 main a5406334 后的树：Becoming.Gluing 81 项定理、113 项声明，公理报告为空，无警告；环的一节先单独编译；
+          可判定性清单（暂存运行，只跳过回执核对）把四项消去定理归为“分辨相同”
+Boundary: 量子值（Tsirelson 之界需要实数振幅）不陈述；超出奇偶约束的语境性没有确切规律；实际展开的哪些识是这种奇偶的，是对应；外围
+          CorrectionRelations 的环律与这里的对应定理没有写出；不含伦理谓词
+Integration: 理论第 6 节（第一部分的总陈述）、第 8 节（D33 的读法，描述一类的进一步证明）、第 9 节一行、术语；Becoming.lean；
+          check_becoming.py；Lean README；新记录；contextual-registration 的下一步与 related，unity-of-readings、
+          separation-loses-the-relation 的 related
+```
+
+| 声明 | 内容 |
+|---|---|
+| `addParity`、`oddOver` 与其律（`addParity_*`、`oddOver_add`、`oddOver_and`、`oddOver_congr`、`oddOver_false`、`oddOver_swap`、`oddOver_map`） | 两个值上的加法，一个量在列表上的奇偶；两个列表上的奇偶可交换次序 |
+| `ParityConstraint`、`ParityConstraint.value`、`add`、`value_add`、`Contradicts`、`value_even`、`unmet_odd` | 奇偶约束：所计的主张与所要求的奇偶；约束相加仍是约束；一组约束相加后不计任何所列主张而要求奇，就矛盾；矛盾时每个赋值不满足其中奇数个 |
+| `ParityConstraint.eliminate`、`counts_after`、`eliminate_counts`、`met_after`、`pulled`、`pull_back`、`met_or_contradicts` | **消去：二者恰有其一。** 主张的相等可判定、列举不重复时，逐一消去所列主张，如在两个值上解线性方程：或有赋值满足每个约束，或其中一组矛盾；消去之后找到的矛盾带回它所来自的约束 |
+| `ParitySystem`、`constraint`、`within`、`value`、`support`、`met`、`Contradicts`、`local_`、`contradicts_iff` | 奇偶系统：每个语境所计的主张与所要求的奇偶；可能性是局部的，语境能显示的只取决于它所识的主张；矛盾是语境的一个选择（可重复） |
+| `ParitySystem.unmet_odd`、`unmet_of_contradicts`、`contradicts_noGlobal` | **障碍。** 每个不依语境的赋值不满足矛盾中奇数个语境，逐个核对即找到一个，所以没有不依语境的读法 |
+| `ParitySystem.met_le`、`mixture_le`、`indexed_met` | **Bell 型之界。** 不依语境的赋值至多满足矛盾 m 个语境中的 m − 1 个，其混合平均亦然；每个语境单独可满足时，按语境索引的读法满足全部 m 个 |
+| `ParitySystem.lift_selection`、`global_or_contradicts`、`noGlobal_iff`、`glues_iff` | **唯一的障碍。** 对每个语境列表，或有不依语境的赋值满足其中每一个，或某个选择矛盾；语境被列出时，没有不依语境的读法恰当有选择矛盾，有尊重可能性的世界粘合恰当没有 |
+| `Specker.openings_contradict`、`Specker.mixture_le`、`Specker.indexed_met`、`Specker.noGlobal_of_contradiction` 等 | Specker 的三个盒子：三次打开矛盾，混合平均至多三中之二；§96 的 `Specker.noGlobal` 由矛盾推出 |
+| `CHSH.pairs_contradict`、`CHSH.mixture_le`、`CHSH.inPair`、`CHSH.indexed_met` 等 | CHSH 博弈：四对设置矛盾，不依语境之结果的混合平均至多赢四中之三（经典之界），在语境中读出的结果赢全部四个 |
+| `Square.cells_even`、`Square.lines_contradict`、`Square.mixture_le`、`Square.inLine`、`Square.indexed_met`、`Square.noGlobal_of_contradiction` 等 | Mermin–Peres 方阵：六条线矛盾，至多六中之五，在线中读出的值满足全部六条；§96 的 `Square.noGlobal` 由矛盾推出 |
+| `Cycle.system`、`Cycle.edges`、`Cycle.polarity`、`Cycle.telescope`、`Cycle.counts_even`、`Cycle.contradicts`、`Cycle.mixture_le` | **环。** 主张 0, …, n 成环，相邻者以相等或相异相关；沿其关系每个主张被计两次（相邻关系的计数逐项相消，`telescope`）；相异关系为奇数个时这些关系矛盾，混合平均至多满足 n + 1 个中的 n 个 |
+| `Cycle.walk`、`Cycle.walk_meets`、`Cycle.met_iff_even`、`Cycle.pick`、`Cycle.miss`、`Cycle.value_pair` | **环的奇偶律。** 相异关系为偶数个时，从主张 0 沿环走出的赋值满足每个关系；所以不依语境的赋值满足全部关系，恰当相异关系为偶数个 |
+| `true_of_ne_false`、`cond_le_one`、`and_congr_of`、`image_of_mem_map`、`count_le_length`、`count_all`、`met_step`、`even_le_of_odd`；`Cycle.down`、`Cycle.length_edges`、`Cycle.lt_of_mem_down`、`Cycle.shift`、`Cycle.cross`、`Cycle.returns`、`Cycle.eq_of_even`、`Cycle.beq_self`、`Cycle.beq_of_ne` | 两个值、列表与自然数的辅助；环的辅助 |
+
+**它回答了什么。** 奇偶障碍的一般定理：每个语境要求奇偶时，不依语境的读法恰在没有矛盾处存在，而矛盾是一个可检查的证书，即一组语境，每个主张被计偶数次，所要求的奇偶相加为奇。这是两个值上线性方程组的择一：方程组无解，恰当某些方程相加得出 0 = 1。概率的语境性在奇偶的情形得到它的第一个确切形式：不依语境之读法的任何混合平均至多满足 m 个语境中的 m − 1 个，而按语境索引的读法满足全部 m 个；CHSH 的四中之三就是经典之界。环把 CorrectionRelations 的“相等与相异关系之环有联合赋值，恰当为偶”放进核心：奇的环是矛盾的最小形式，Specker 的三个盒子换名后就是三个相异关系的环。
+
+**读法（AI 的，依 Ren 2026-10-15 的交托采用，D33）。** m − 1 与 m 之差，是语境所承载的；值是语境中的识，一个关系，不是主张不依语境所有的性质；坚持不依语境的值，其代价恰是这一障碍与这一界。
+
+**作者反审。**
+1. **已知的结果。** 奇偶的 Kochen–Specker 证明（Mermin 1990，Peres 1990）、CHSH 不等式（1969）与 Abramsky、Hardy 的逻辑 Bell 不等式（2012：不能同时满足的 N 个命题，其概率之和至多 N − 1）是这里的实例或同一形式；“唯一的障碍”是两个值上线性方程组的择一；Abramsky、Mansfield 与 Soares Barbosa 以两个值上的线性方程刻画的 all-versus-nothing 论证也属这一类。增量是：在核心中不用公理地陈述，障碍恰好（充要），混合以自然数计权重，§96 的 `Specker.noGlobal` 与 `Square.noGlobal` 由证书推出，外围的环律以核心的形式给出。
+2. **条件。** 唯一性需要主张的相等可判定、列举不重复，这在 Ren 2026-10-11 保留的表示决定之内（判定的相等与列出）；障碍与界不用它；环律也不用它（相等由 `Nat.beq` 计算）。
+3. **概率。** 混合是可重复计入的赋值列表，权重为自然数（有理的权重经伸缩等价）；实数的权重与量子值（CHSH 的 Tsirelson 之界，胜率 cos²(π/8) ≈ 0.854）需要实数振幅，不在核心中；`Becoming.Quantum` 以整数矩阵实现方阵（P72q）。
+4. **对应没有写出。** 外围的 `CorrectionRelations.cycle_compatible_iff_even`（以 Mathlib 证明，对关系的列表）与这里的 `Cycle.met_iff_even` 是同一规律，两者之间的对应定理没有写出；那是把外围接入的一步，记在记录的下一步。
+5. **名称。** `ParitySystem`、`ParityConstraint`、`Contradicts`、`unmet_odd`、`met_le`、`mixture_le`、`indexed_met`、`glues_iff`、`Cycle`、`walk` 都是结构或数学的名字。
+6. **证明。** 不用 `simp`、`omega`；两个值上的恒等式以 `decide` 证明；消去用相等的判定（`if c = x`），它作为定理的条件写出；公理报告为空。
+
+**检查。** 暂存区构建（合并 main a5406334 后的树）：`Becoming.Gluing` 81 项定理、113 项声明，公理报告为空，无警告；环的一节先单独编译。可判定性清单的暂存运行（只跳过回执核对）：只在证明中用到可判定性的定理由 224 项增至 228 项，即 `ParityConstraint.met_or_contradicts`、`ParitySystem.global_or_contradicts`、`ParitySystem.noGlobal_iff`、`ParitySystem.glues_iff`，归为“分辨相同”（消去按一个主张是否就是被消去者分情形）；证明可判定的定义与实例由 136 项增至 137 项（`support` 的可判定实例）。核心检查器在整合者的运行中检查。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -10873,3 +11022,9 @@ This section covers the first. Each of the 31 earlier versions now names, on its
   - Not proved: a run without a selection (the boundary of dependent choice, next to but distinct from Keeping's `plans_iff_choice`).
 - **Boundary and reading.** Lifting gives a run's existence, not an effective selection or a physical infinity. The reading, which is the AI's and pending Ren: courses of every length are not yet one course going on; where branching is finite, what lies between them is exactly knowing which of two branches goes on throughout.
 - **Next in I4b.** Selection: PluralRecords and TieBreaking, after P110 lands.
+
+**Readings decided on Ren's delegation (P110, 16 October 2026).** After P107 landed Ren asked, “What's the best choices to make? please make best of your judgement, and push the frontier of completeness” ([words](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)). Section 147 reads this as a delegation: the readings and names that the theory's §8, CONTINUATION-GROUNDING-PLAN §6 and the records left to Ren are decided by the AI, each with its reasons and what would change it, and recorded as the AI's decisions on the delegation, not as Ren's own; Ren can reverse any of them. [DELEGATED-CHOICES](DELEGATED-CHOICES.md) holds D1–D39. They change no theorem and add no premise; the theorems of declined readings stay. Some are decided by checked results rather than judgement: the activity reading of generative and degenerative is declined because arising and ceasing recurring coincide in finite worlds (D2); registration is read formally as the law's sensitivity, the least registration it reads through (D37). D34 first adopted “situationally means the bound”; Ren's reply, “not sure what's the reading 1, but reality is always situational”, now decides it. P116's readings, posed after that reply, were left to Ren, and on 16 October Ren took the AI's reading of their clarification (section 144). With a bound, a class's name reads as its finite future: D34 had adopted it as an analogy for a precise form of 名可名, and on 16 October Ren took the same reading (“take 2”, [words](../../../../sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md)), the theorem being that within a bound kinds have finite names and 名可名 an analogy only, so Ren's words decide it and answer section 144's “still for Ren”. D39 decides P115's readings, which its owner left to Ren or this delegation: the coupling strength is read formally as how strongly a formation registers (识 itself stays Ren's), and in Ren's “highly entangled system” entanglement reads as coupling strength, as Ren's own sentence glosses it, not as quantum entanglement. Not within the delegation: Ren's own texts and terms, Ren's testimony on the invariance step, warrant, I4, the representation decisions Ren reserved and decisions of review. 101 records gain one paired, dated note each; the Lean docstrings of 51 modules and the root, and the Lean README, fold the decisions, comments only, with the code outside comments asserted unchanged. Earlier sections' “pending Ren” are read through the records' decisions; their text stays as evidence. Not yet independently reviewed.
+
+**Where novelty's gain comes from (P111, 16 October 2026).** Under the same delegation, section 148 adds `Becoming.Gain` (30 theorems, no axiom). With the rest of the whole counted as a relatum (section 85), every rise is given, with no premise: across a step at which a family's stock rises, some relatum gives it more than it takes, a formation taking part or the rest, found by checking each one taking part (`Flow.rise_netGiver`, `Flow.rise_given`). Under the first law a family without repetition that rises is given net by the rest or is open there (`Flow.rise_from_rest_or_open`). A finite whole has no boundary to cross, so every rise of it is the rest's, and with the rest idle it stays within its stock, returns and forgets, and is not new at every step (`Flow.whole_not_new_of_rest_idle`): unceasing generation within a bounded whole is return. Novelty needs gain, along consecutive steps or first visits (`Web.rises_late_of_firsts`), and so does endless new formation where what forms requires a fixed amount within the family, since a step at which something is first supported is a first visit (`Web.newAt_of_first`); under the first law each such rise comes from the rest or across the boundary, for every family without repetition holding it (`Flow.new_beyond_every`). Counting on is given each unit by the rest (`Flow.counting_given_by_rest`). Readings (D5, D7): gain from beyond the part reads as these two ways in, and a finite whole new without end is one whose listing leaves out what gives to it. Known: conservation and the pigeonhole principle; the increment is the statement with no premise and the two ways in. Not stated: whether the bound by the configurations within the stock is reached, and the exact ratio of gain to novelty. Not yet independently reviewed.
+
+**When readings in context glue, for parity (P112, 16 October 2026).** Section 149 adds `Becoming.Gluing` (81 theorems, no axiom), the next step of contextual-registration (section 96), “the general parity obstruction; probabilistic contextuality”. For claims constrained by parity in each context, a contradiction is a selection of contexts, repetition allowed, counting every claim an even number of times while the parities it requires add up to odd. Every context-free assignment fails an odd number of its contexts (`ParitySystem.unmet_odd`); with equality of claims decided and the claims listed without repetition this is the only obstruction, found by elimination as in linear equations over two values (`ParitySystem.global_or_contradicts`, `ParitySystem.glues_iff`). A mixture of context-free assignments meets at most m − 1 of a contradiction's m contexts on average, and readings indexed by context meet all m (`ParitySystem.mixture_le`, `ParitySystem.indexed_met`): Specker's boxes (2 of 3), the CHSH game (3 of 4, the classical bound) and the Mermin–Peres square (5 of 6) are instances, and section 96's `Specker.noGlobal` and `Square.noGlobal` follow from their certificates. A cycle of claims related as equal or different is met by a context-free assignment exactly where its differ relations are even in number (`Cycle.met_iff_even`): the periphery's `CorrectionRelations.cycle_compatible_iff_even` in core form, as the I4b row leaves it with P112; the correspondence theorem between the two is not written. Reading (D33): the difference between m − 1 and m is what the context carries; a value is a registration in context, a relation. Known: the parity proofs of Kochen–Specker (Mermin, Peres), CHSH (1969), Abramsky and Hardy's logical Bell inequalities (2012) and the alternative for linear equations over two values; the increment is the exact law with no axiom, in the core, with its instances. Not stated: the quantum values (Tsirelson's bound needs real amplitudes) and contextuality beyond parity. Not yet independently reviewed.

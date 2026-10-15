@@ -35,7 +35,7 @@
 - **Counterexample / 反例:** Each within what is given is not enough to continue: in Exceeding each taker is within what is given and all three end after two steps (Exceeding.all_end); with one taker the same renewer and taker continue (Alone.all_continue).<br>各自在所给之内不足以延续：Exceeding 中每个取用者都在所给之内，三者都在两步后终结（Exceeding.all_end）；同一更新者只有一个取用者时都延续（Alone.all_continue）。 [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
 - **Counterexample / 反例:** A description in which joint excess goes on for ever is the flow of no balanced web: in Pair no web balances the flow (Pair.no_web).<br>没有平衡时联合超出可以永远持续的描述不是任何平衡网的流：Pair 中没有网使流平衡（Pair.no_web）。 [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
 
-**Standard boundaries / 通用边界:** No ethical premise and no Lean axiom is used. 不用伦理前提，也不用 Lean 公理。 · Contains no ethical predicate and evaluates neither arising nor ceasing. 不含伦理谓词，不评价生起或消失。 · Stated for discrete steps. 按离散步骤陈述。 · Names follow Ren's naming criteria of 10 October 2026; readings remain Ren's. 名称依 Ren 2026年10月10日的命名标准；读法由 Ren 决定。
+**Standard boundaries / 通用边界:** No ethical premise and no Lean axiom is used. 不用伦理前提，也不用 Lean 公理。 · Contains no ethical predicate and evaluates neither arising nor ceasing. 不含伦理谓词，不评价生起或消失。 · Stated for discrete steps. 按离散步骤陈述。 · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. 名称依 Ren 2026年10月10日的命名标准，在陈述有其确切意义处采用（Ren，2026年10月12日）；未注明属于 Ren 的读法，依 Ren 2026年10月15日的交托由 AI 决定，Ren 可以改动。
 
 ## Evidence / 证据
 
@@ -45,7 +45,7 @@ Canonical source: [Continuation.lean](../../../../experiments/integrated-correct
 
 ## Next / 下一步
 
-Instance theorems to RelationalRenewal's support-gated law and the periphery's wear law; joint excess under reserves and delayed renewal; shares and attribution (responsibility does not follow); names (Ren).<br>与 RelationalRenewal 的支持门控定律及外围磨损定律的实例定理；储备与延迟更新下的联合超出；份额与归属（不推出责任）；名称（Ren）。
+Instance theorems to RelationalRenewal's support-gated law and the periphery's wear law; joint excess under reserves and delayed renewal; shares and attribution (responsibility does not follow).<br>与 RelationalRenewal 的支持门控定律及外围磨损定律的实例定理；储备与延迟更新下的联合超出；份额与归属（不推出责任）。
 
 <details><summary>Correspondence, dependencies, sources and history / 对应、依赖、来源与沿革</summary>
 
@@ -142,6 +142,7 @@ Aliases / 别名: `Becoming.Flow.WithinOwn`, `Becoming.Flow.WithinJoint`, `Becom
 - 2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）。 / 15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged).
 - 2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）。 / 15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged).
 - 2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。 / 15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged).
+- 2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D36）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。 / 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 
 ### Earlier text / 早期文本
 

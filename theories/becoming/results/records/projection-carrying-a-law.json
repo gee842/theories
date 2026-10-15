@@ -233,8 +233,8 @@
     "en": "A constructive iff along one run: some determined process admits the steps read through π up to a step exactly where two steps alike under π with the same move reach configurations alike under π. The instance with Becoming.Testing's registration as the projection; the bridge to GenerativeCore's exact projection; the state's law over long stretches where the rule changes slowly."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 问：“hows cause–effect system comparing to our theory?”，贴入一段作者未注明的说明（不是 Ren 的话，不是前提），又写“think for one more round, what can we learn, being inspired, and improve?”；对 AI 的五项提议答：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。这是第三项（机制是一种分解，不是另一种规律）。读法（AI 的，待 Ren）：机制是承载规律的投影，“关于何者无关的模型”（Becoming.Experiment）由相同者同去精确刻画；配置的投影是时间读法与更细的量的单位之外的第三种东西；较粗描述上的规律（涌现）就是那里的相同者同去，不分任何东西的描述总承载规律，所以内容在于哪个描述；规则持有结果（Becoming.Capture）是只依于规则；改变自身因果的系统的规律在状态与规则的联合配置上，不需要另一种规律；读 理 为投影（Becoming.Experiment），它何时承载规律由此给出。",
-    "en": "On 12 October 2026 Ren asked “hows cause–effect system comparing to our theory?”, pasted an explanation whose author is not stated (not Ren's wording, not a premise), asked “think for one more round, what can we learn, being inspired, and improve?”, and to the AI's five proposals answered “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This is the third proposal (a mechanism is a factoring, not a further kind of law). Readings (the AI's, pending Ren): a mechanism is a projection that carries a law, and the model of what is irrelevant (Becoming.Experiment) is characterized exactly by going alike; a projection of configuration is a third thing beside readings of time and finer units of amount; a law at a coarser description (emergence) is going alike there, and since the description that distinguishes nothing always carries one, the content lies in which description carries it; the rule holding the outcome (Becoming.Capture) is dependence on the rule only; a system that changes its own causality has its law on the joint configuration of state and rule, and needs no further kind of law; reading 理 as a projection (Becoming.Experiment), this says when 理 carries a law."
+    "zh": "Ren 2026-10-12 问：“hows cause–effect system comparing to our theory?”，贴入一段作者未注明的说明（不是 Ren 的话，不是前提），又写“think for one more round, what can we learn, being inspired, and improve?”；对 AI 的五项提议答：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。这是第三项（机制是一种分解，不是另一种规律）。读法（AI 的，依 Ren 的交托采用）：机制是承载规律的投影，“关于何者无关的模型”（Becoming.Experiment）由相同者同去精确刻画；配置的投影是时间读法与更细的量的单位之外的第三种东西；较粗描述上的规律（涌现）就是那里的相同者同去，不分任何东西的描述总承载规律，所以内容在于哪个描述；规则持有结果（Becoming.Capture）是只依于规则；改变自身因果的系统的规律在状态与规则的联合配置上，不需要另一种规律；读 理 为投影（Becoming.Experiment），它何时承载规律由此给出。",
+    "en": "On 12 October 2026 Ren asked “hows cause–effect system comparing to our theory?”, pasted an explanation whose author is not stated (not Ren's wording, not a premise), asked “think for one more round, what can we learn, being inspired, and improve?”, and to the AI's five proposals answered “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This is the third proposal (a mechanism is a factoring, not a further kind of law). Readings (the AI's, adopted on Ren's delegation): a mechanism is a projection that carries a law, and the model of what is irrelevant (Becoming.Experiment) is characterized exactly by going alike; a projection of configuration is a third thing beside readings of time and finer units of amount; a law at a coarser description (emergence) is going alike there, and since the description that distinguishes nothing always carries one, the content lies in which description carries it; the rule holding the outcome (Becoming.Capture) is dependence on the rule only; a system that changes its own causality has its law on the joint configuration of state and rule, and needs no further kind of law; reading 理 as a projection (Becoming.Experiment), this says when 理 carries a law."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
   "aliases": [
@@ -382,7 +382,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "eb8327cf10113b666c7648a5ad52a675fdef5953802c6518d9112fd7f23c3bad",
+      "sha256": "ce0cbaa9eae78046d860abeb963b0eab87d8981451044ed9bb85d2fb66ab5b68",
       "declarations": [
         "Becoming.Image",
         "Becoming.factors_image",
@@ -427,7 +427,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
       "role": "proof",
-      "sha256": "753d32b44a0800699576f15f31c9fc11a57e15efe62fde8c0c2f6be6962535cc",
+      "sha256": "622ffc32049bf3318fe709473198a88d626207b8cc8c9fecf38b18ae48e35914",
       "declarations": [
         "Becoming.FactorsThrough",
         "Becoming.Run.StepsThrough",
@@ -456,9 +456,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
-      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
     },
     {
@@ -470,7 +470,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635",
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01",
       "declarations": []
     },
     {
@@ -495,14 +495,14 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Experiment",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -674,6 +674,14 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D25）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D25): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Mechanism.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Experiment.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Experiment.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ],
   "text_versions": [

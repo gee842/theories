@@ -78,21 +78,21 @@ orbit; a learner is any claim made from the record before a step.
   one notion (`goAlike_iff_lumped`). What such a model carries beyond the record is what it
   lumps with what registered, and it is right there exactly where the world goes alike across
   the lumping. This reading of the formal terms is the AI's.
-- (The AI's, pending Ren.) Induction is resolved into laws rather than certified. No record
-  fixes the next value, even among finite worlds. No learner rests on every course; the course
-  defeating a learner registers its claims and keeps its record, an open world. In every world
-  held by a list learning by refutation is refuted a number of times bounded by the number of
-  configurations, its coming to rest is unrefuted, and its record never shows that it has come
-  to rest; it rests only there. The uniformity of nature is
-  no premise: it is the local condition of a law, that the world goes alike across what the
-  model lumps.
-- (The AI's, pending Ren.) For a trained network the class is what training can reach, and the
-  loss selects only through the data. Generalization is right exactly where the world goes
-  alike across the lumping that the architecture and the updates impose (sharing across
-  positions, invariance, composition); explaining it is identifying that lumping and its
-  correspondence to the world, not the loss.
-- (The AI's, pending Ren.) The meta level is learning again, over a merged enumeration, and
-  there is no top.
+- (The AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26.) Induction is
+  resolved into laws rather than certified. No record fixes the next value, even among finite
+  worlds. No learner rests on every course; the course defeating a learner registers its claims and
+  keeps its record, an open world. In every world held by a list learning by refutation is refuted a
+  number of times bounded by the number of configurations, its coming to rest is unrefuted, and its
+  record never shows that it has come to rest; it rests only there. The uniformity of nature is no
+  premise: it is the local condition of a law, that the world goes alike across what the model
+  lumps.
+- (The AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26.) For a trained
+  network the class is what training can reach, and the loss selects only through the data.
+  Generalization is right exactly where the world goes alike across the lumping that the
+  architecture and the updates impose (sharing across positions, invariance, composition);
+  explaining it is identifying that lumping and its correspondence to the world, not the loss.
+- (The AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26.) The meta level
+  is learning again, over a merged enumeration, and there is no top.
 
 What is not derived: which hypotheses, classes or lumpings an actual formation holds or can
 reach; that its registration tells values apart; that its world is held by a list; that an

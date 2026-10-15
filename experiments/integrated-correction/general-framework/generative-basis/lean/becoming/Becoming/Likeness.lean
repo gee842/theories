@@ -132,7 +132,7 @@ showing that it does not would take a model outside the core; and whether a prin
 excluded middle suffices where the moves or the claims are not listed. `Becoming.Bridge` reads `BranchingTest` as the
 periphery's `Test` (`sameBranchingTests_iff_same`).
 
-The readings are the AI's, pending Ren.
+The readings are the AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D23).
 -/
 
 namespace Becoming

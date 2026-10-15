@@ -14,7 +14,7 @@
 
 ## 覆盖范围 / Coverage
 
-本次目录包含 **1,262 个 `.lean` 路径、909 份不同字节内容**；其中 96 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **1,262 `.lean` paths and 909 distinct byte contents**, including 96 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
+本次目录包含 **1,264 个 `.lean` 路径、919 份不同字节内容**；其中 88 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **1,264 `.lean` paths and 919 distinct byte contents**, including 88 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
 
 | 文件角色 / File role | 路径数 / Paths |
 |---|---:|
@@ -22,9 +22,9 @@
 | 开发尝试 / Development attempt | 528 |
 | 历史草稿 / Historical draft | 3 |
 | 导入原件 / Imported archive | 23 |
-| 当前工作源 / Working source | 694 |
+| 当前工作源 / Working source | 696 |
 
-下方当前源与审计入口中，共扫描到 **17,639 个显式 theorem/lemma 声明位置**、27,222 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **17,639 explicit theorem/lemma occurrences** and 27,222 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
+下方当前源与审计入口中，共扫描到 **17,750 个显式 theorem/lemma 声明位置**、27,370 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **17,750 explicit theorem/lemma occurrences** and 27,370 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
 
 扫描包括隐藏、被忽略及未跟踪文件；排除 `.git`、`.lake`、`node_modules`、`.venv`、`venv`、`__pycache__` 目录与其他会话的工作树 `.claude/worktrees`，不追随目录符号链接。历史导入与开发尝试保存在 JSON 中，不在主表重复；运行、检查与快照目录中的冻结副本不读取也不列入，各由其运行的回执绑定，所以一次检查运行不改变本目录。当前源是按文件位置判断的文档角色，不等于已接受或已验证。 / Hidden, ignored and untracked files are included; dependency/cache directories listed above and other sessions' worktrees (`.claude/worktrees`) are excluded and directory symlinks are not followed. Archives and attempts remain in JSON without repeating them in the main table; saved copies in run, check and snapshot folders are neither read nor listed, each being bound by its own run's receipt, so a checker run leaves this catalogue unchanged. Working-source is a documentary role, not acceptance or verification status.
 
@@ -42,7 +42,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](#group-abstraction) | 43 |
 | [关切与共同活动 / Concern and shared activity](#group-concern) | 15 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](#group-shared) | 66 |
-| [生成核心与关系结构 / Generative core and relational structure](#group-core) | 258 |
+| [生成核心与关系结构 / Generative core and relational structure](#group-core) | 260 |
 | [其他形式研究 / Other formal studies](#group-other) | 29 |
 
 <a id="group-ethics"></a>
@@ -635,8 +635,10 @@
 | [Feeding](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feeding.lean) · [声明 / Names](lean-declarations/core.md#module-8abf1ff0ab50) | 41 | 23 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |
 | [Flow](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean) · [声明 / Names](lean-declarations/core.md#module-1ab3e6b83532) | 97 | 39 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |
 | [Frame](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean) · [声明 / Names](lean-declarations/core.md#module-4aeb3fe7fb22) | 11 | 6 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |
+| [Gain](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean) · [声明 / Names](lean-declarations/core.md#module-188ce1040026) | 30 | 5 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |
 | [Gated](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean) · [声明 / Names](lean-declarations/core.md#module-6f388ada14e2) | 13 | 3 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |
 | [Generation](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) · [声明 / Names](lean-declarations/core.md#module-b20d97b0f1ca) | 30 | 32 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |
+| [Gluing](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean) · [声明 / Names](lean-declarations/core.md#module-0ec713783baa) | 81 | 32 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |
 | [Granularity](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean) · [声明 / Names](lean-declarations/core.md#module-78a06760a6af) | 86 | 34 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |
 | [GranularityBridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean) · [声明 / Names](lean-declarations/core.md#module-5a2cd7a614ce) | 39 | 2 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |
 | [Histories](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean) · [声明 / Names](lean-declarations/core.md#module-41f2b00bb90e) | 27 | 14 | [理论 / Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) |

@@ -103,7 +103,7 @@ states Capture's rule region as an instance of P67's absorbing regions.
   state or a perturbed rule is drawn in and never returns (`Captured.state_perturbation_drawn`,
   `Captured.rule_perturbation_drawn`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D32).**
 - Where the course branches, returning asks more than keeping every possibility: a
   configuration can be had again and again from elsewhere and never come back to itself. What
   returns is what its own course can have again; the exact condition is local to the regions a

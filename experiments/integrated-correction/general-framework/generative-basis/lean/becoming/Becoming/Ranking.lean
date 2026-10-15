@@ -8,8 +8,8 @@ is living when its formation is active and does not consume in that course. With
 reading, C ranks the course of the support-gated law without an overdrawing formation
 strictly above the course with it, and ranks sharing above winning by consumption.
 Here both comparisons are stated on the core, and repeated under the stepwise reading,
-the working candidate after review pending Ren's choice: an event is living when it is
-active and not undermining.
+kept beside the whole-run reading on Ren's delegation of 15 October 2026, with no comparison using
+it (DELEGATED-CHOICES D1, D10): an event is living when it is active and not undermining.
 
 A reading is compared through a frame whose configurations are the courses and whose
 realized claims are the events the reading includes; C is `Comparison` on that frame.

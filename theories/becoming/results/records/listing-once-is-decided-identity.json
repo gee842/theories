@@ -32,8 +32,8 @@
     }
   ],
   "correspondence": {
-    "zh": "P77（工作板），按 Ren 2026-10-12 的“move towards 100%”：零前提计划把每个关系项列出一次、家族不重复（Distinct）列为表示的承诺（(b) 类第 4 项）。像 P58 对可判定性那样，这里找出这一承诺是什么：它就是在求和或计数之处其成员之间同一已定，一个局部条件。清点（inventory）：15 个模块中 169 个声明直接用到 Distinct；30 个不需要任何前提，33 个是按成员求和的局部条件，31 个是计数关系项的局部条件，9 个按出现重新奠基，其余是数、工具或见证。读法（AI 的，待 Ren）：列出一次所承诺的不多于此。见整合文档 §101。",
-    "en": "P77 (work board), following Ren's “move towards 100%” of 12 October 2026: the zero-premise plan lists among the commitments of the representation that each relatum is listed once and families are without repetition (Distinct; class (b), item 4). As P58 did for decidedness, this finds what the commitment is: identity decided among the members where a sum or count is taken, a local condition. Inventory: 169 declarations in 15 modules use Distinct directly; 30 need no premise, 33 are local conditions of a sum once per member, 31 local conditions of a count of relata, 9 are re-founded by occurrence, and the rest are numbers, tools or witnesses. Reading (the AI's, pending Ren): listing once commits to no more than this. See the integration document §101."
+    "zh": "P77（工作板），按 Ren 2026-10-12 的“move towards 100%”：零前提计划把每个关系项列出一次、家族不重复（Distinct）列为表示的承诺（(b) 类第 4 项）。像 P58 对可判定性那样，这里找出这一承诺是什么：它就是在求和或计数之处其成员之间同一已定，一个局部条件。清点（inventory）：15 个模块中 169 个声明直接用到 Distinct；30 个不需要任何前提，33 个是按成员求和的局部条件，31 个是计数关系项的局部条件，9 个按出现重新奠基，其余是数、工具或见证。读法（AI 的，依 Ren 的交托采用）：列出一次所承诺的不多于此。见整合文档 §101。",
+    "en": "P77 (work board), following Ren's “move towards 100%” of 12 October 2026: the zero-premise plan lists among the commitments of the representation that each relatum is listed once and families are without repetition (Distinct; class (b), item 4). As P58 did for decidedness, this finds what the commitment is: identity decided among the members where a sum or count is taken, a local condition. Inventory: 169 declarations in 15 modules use Distinct directly; 30 need no premise, 33 are local conditions of a sum once per member, 31 local conditions of a count of relata, 9 are re-founded by occurrence, and the rest are numbers, tools or witnesses. Reading (the AI's, adopted on Ren's delegation): listing once commits to no more than this. See the integration document §101."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
   "aliases": [
@@ -153,8 +153,8 @@
     }
   ],
   "limitations": {
-    "zh": "30 个不需前提的用处中只有 6 个作为推论证明，其余由陈述分类；计数关系项不能不加前提；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "Of the 30 uses needing no premise, 6 are proved as corollaries and the rest classified from their statements; counting relata cannot be made free of a premise; the readings are the AI's, pending Ren; no ethical predicate occurs."
+    "zh": "30 个不需前提的用处中只有 6 个作为推论证明，其余由陈述分类；计数关系项不能不加前提；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
+    "en": "Of the 30 uses needing no premise, 6 are proved as corollaries and the rest classified from their statements; counting relata cannot be made free of a premise; the readings are the AI's, adopted on Ren's delegation; no ethical predicate occurs."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Listing 的 85 项定理全部空依赖，其中含 IdentityDecided、ListsOnce、listsOnce_iff_decided、not_not_listsOnce、listOnce、Numbers、numbers_iff_decided、not_of_listsOnce、World.Enumerated、World.finite_iff、World.Enumerated.not_recurring、Flow.enclosed_iff、Flow.dissipative_iff与 Doubled.needs_once；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §101；尚无独立审查。",
@@ -164,7 +164,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
       "role": "proof",
-      "sha256": "f6fc2325aa54c0a667e11d94de3443e4d6e96873e8c66b308032afecaf66e6af",
+      "sha256": "17c0f4f7cdf2ab4f2da9e15b8712f39b262dfd3b5e231b5b1e6998ad1e2a02fa",
       "declarations": [
         "Becoming.IdentityDecided",
         "Becoming.ListsOnce",
@@ -236,7 +236,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "3abd887dc3955de148e3c81a2bccb4f90fc46accf3c0a0be57b586512737838d",
+      "sha256": "0acf50c8d6fe6c28fef710e15f5b4138b259c3d67520df545cdd7a1b21987e26",
       "declarations": [
         "Becoming.World.rests_unrefuted",
         "Becoming.World.Finite"
@@ -253,7 +253,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
       "role": "proof",
-      "sha256": "ed09ce614679228d1654bc784eadd022b18d87d3a65f8b6a5d6cad83254e7b66",
+      "sha256": "9c401845bf7254fba72a74c82a5b4cc373ed68e72c2c151dfaf80933a3a73508",
       "declarations": [
         "Becoming.Decided"
       ]
@@ -289,16 +289,16 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
-      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Listing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -312,7 +312,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -326,15 +326,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Decidedness",
       "success_pointer": "/status",
       "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "把其余 24 个不需前提的用处证明为推论；Ren 对“列出一次就是已定的同一”这一读法的判断。",
-    "en": "Prove the other 24 uses needing no premise as corollaries; Ren's judgment on reading listing once as decided identity."
+    "zh": "把其余 24 个不需前提的用处证明为推论。",
+    "en": "Prove the other 24 uses needing no premise as corollaries."
   },
   "history": [
     {
@@ -452,6 +452,14 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Decidedness.lean（整合 I3e：新增一节“不被胜过者”（WeaklyDecided、Decided.weakly、Undominated、exists_undominated、Undominated.not_not_has、undominated_has、bettered_of_undominated_has、undominated_has_iff，及两条界 exists_undominated_iff_weakly 与 undominated_has_iff_em）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Decidedness.lean (integration I3e: a section on undominated members added (WeaklyDecided, Decided.weakly, Undominated, exists_undominated, Undominated.not_not_has, undominated_has, bettered_of_undominated_has, undominated_has_iff, and the boundaries exists_undominated_iff_weakly and undominated_has_iff_em); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D30）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Listing.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Space.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Decidedness.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Listing.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Decidedness.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ]
 }

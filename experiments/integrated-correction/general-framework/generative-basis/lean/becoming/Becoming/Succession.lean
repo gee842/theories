@@ -19,10 +19,10 @@ which no particular source formation recurs. This module gives it, under Ren's "
   particular source condition nor a particular source formation need recur: what continuing
   needs is being fed, not any one feeder.
 
-Read (the AI's, pending Ren): the dependence of a continuing family on what lies beyond is on
-the conveying, which can pass from formation to formation. Not shown: that the sources
-themselves arise from the flow (here each is given at its step); a world-level form. No ethical
-predicate, ranking or axiom occurs.
+Read (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D12): the
+dependence of a continuing family on what lies beyond is on the conveying, which can pass from
+formation to formation. Not shown: that the sources themselves arise from the flow (here each is
+given at its step); a world-level form. No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming

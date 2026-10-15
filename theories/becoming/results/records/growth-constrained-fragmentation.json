@@ -86,7 +86,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "role": "proof",
-      "sha256": "ddedd2e25fec868f9116893f95cf9d87ecc6dc32bab02af57884e506937d6db3",
+      "sha256": "bf2a0fdce8641d57432465c179129ab9ad74ccc684e31486bc6c500e65ff8c22",
       "declarations": [
         "Becoming.ClosedUnder",
         "Becoming.WithinClosure",
@@ -95,9 +95,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
-      "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
     },
     {
@@ -153,7 +153,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feedback",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -201,6 +201,10 @@
     {
       "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：一个区域是形成 f 的系统（在共同条件中共同参与的闭包，Flow.WithinSystem），恰当它含 f、在共享条件下封闭且在 f 的系统之内（system_iff_certified）；在共享下封闭、含 f 而不含 g 的区域表明 g 不在 f 的系统中（not_within_system_of_closed）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
       "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: a region is the system of formation f (the closure under taking part in a common condition, Flow.WithinSystem) exactly when it holds f, is closed under sharing a condition and lies within f's system (system_iff_certified); a region closed under sharing that holds f but not g shows g is not in f's system (not_within_system_of_closed). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Feedback.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Feedback.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ]
 }

@@ -112,7 +112,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "d7cf089a726aacef3def03dce987b04ddc5ffa5e91f00098a27a88d0fde481cb",
+      "sha256": "f0488ab0cba15a0caf609d0052718e9b1f5e88828c3ad9fcd52a6910e77f03e3",
       "declarations": [
         "Becoming.same_steps_iff_traces"
       ]
@@ -126,9 +126,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
-      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -197,6 +197,10 @@
     {
       "zh": "2026-10-16，整合 I4c（Ren 选择“Add the notes”）：GenerativeModel.lean 的第一行加一条注释，指向脊柱上陈述其主定理的声明；陈述与证明不变，行号不变。其集成引用改用新的哈希。",
       "en": "16 October 2026, integration I4c (Ren selected “Add the notes”): the first line of GenerativeModel.lean gains a comment naming the spine declarations that state its main theorem; statements, proofs and line numbers are unchanged. Its integration reference takes the new hash."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Unfolding.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ]
 }

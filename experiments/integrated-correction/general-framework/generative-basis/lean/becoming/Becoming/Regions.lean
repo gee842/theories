@@ -74,7 +74,7 @@ derives along dependence.
 A region of conditions is a parameter of the statement. Nothing here models how a center
 comes to represent it, and the region has no status outside the unfolding.
 
-**AI reading, pending Ren.**
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D20).**
 - Regions of formations read as Ren's self, system and whole; a region of conditions reads
   as the boundary a center represents.
 - These theorems order the criteria by strength. They do not say which criterion a

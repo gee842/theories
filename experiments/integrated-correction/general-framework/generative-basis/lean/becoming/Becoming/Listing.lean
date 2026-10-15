@@ -77,15 +77,16 @@ decidedness and `Becoming.Imbalance` for balance: nothing is adopted, and no oth
   both has two members by name and holds one relatum read through relations
   (`World.probe_named_apart`).
 
-**AI reading, pending Ren.** Listing once commits to no more than this: identity among what is
-summed or counted is decided where it is summed or counted. That is a local condition, as P58 made
-decidedness. Laws of membership, and laws refuting something, need nothing. Laws that sum or count
-over a family hold of the sum or count once per member, which exists exactly where identity among
-the members is decided and is then one number. In the flow, listing once fixes what one taking
-part is: each occurrence, read as its own relatum, makes every flow one listed once, so for the
-amounts it restricts nothing. Identity itself is read off the relations only up to
-indiscernibility, and the core's names give one decided identity more than the relations do:
-asked of every world, the relational count is fixed only under excluded middle.
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D30).** Listing once
+commits to no more than this: identity among what is summed or counted is decided where it is summed
+or counted. That is a local condition, as P58 made decidedness. Laws of membership, and laws
+refuting something, need nothing. Laws that sum or count over a family hold of the sum or count once
+per member, which exists exactly where identity among the members is decided and is then one number.
+In the flow, listing once fixes what one taking part is: each occurrence, read as its own relatum,
+makes every flow one listed once, so for the amounts it restricts nothing. Identity itself is read
+off the relations only up to indiscernibility, and the core's names give one decided identity more
+than the relations do: asked of every world, the relational count is fixed only under excluded
+middle.
 -/
 
 namespace Becoming

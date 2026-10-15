@@ -166,12 +166,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T164401.170999Z): the 58 declarations of Becoming.Sensitivity, 47 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 137; not independently reviewed."
   },
   "next_delta": {
-    "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查；对读法（识就是敏感；不依存于任何部分的整体是尾）的判断。",
-    "en": "The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review; a judgment on the readings (registration as sensitivity; a whole depending on no part as a tail)."
+    "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查。",
+    "en": "The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。读法（AI 的，待 Ren 或按其 2026-10-15 的交托判断）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least registration, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. Readings (the AI's, pending Ren or decided on Ren's delegation of 15 October): registration is sensitivity, a formation registering exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识本身仍是 Ren 的）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least registration, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; 识 itself stays Ren's): registration is sensitivity, a formation registering exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
   "aliases": [
@@ -275,7 +275,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
       "role": "proof",
-      "sha256": "d39e22346b80a283feb8b275122ad37006ed297f5749cbc765baf3f6169c22c3",
+      "sha256": "393d928e1759881570252f902f76e45aca273cb84233afeeac03dc03c5dfbee6",
       "declarations": [
         "Becoming.ExchangeLaw.ReadsWithin",
         "Becoming.ExchangeLaw.ReadsFinitely",
@@ -340,7 +340,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "a296d36ddc81ac77f72b0a01a1855874bad3e6261ecce9ef321592940c6a1798",
+      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.ExchangeLaw.GivesAlike",
@@ -390,7 +390,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0004f1a79b4b9c23c9eadd3764b07034b55b719d02e3399ac946b6ca93e89d5d"
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -402,19 +402,25 @@
       "role": "receipt",
       "sha256": "92d20bb7d2f7fb1b3f74f628931136075e6cd69d76341e18a3c4fc3adb22d623",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Sensitivity",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -453,6 +459,14 @@
     {
       "zh": "2026年10月16日，P115 落地（研究第141节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P115：§2 一段“差别到达多少（第一部分）”，其余响应之比较一段不再把差别到达多少列为未推出，§6.10 一句，第一部分总陈述一项，§8 状态行与“反馈与所及”下的进一步证明，§9 一行，术语两行；总数改据新回执）。",
       "en": "16 October 2026, landing P115 (study section 141): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P115: a §2 paragraph \"How much difference arrives (Part I)\", the paragraph of the comparison where the rest responds no longer listing how much difference arrives as not derived, a §6.10 sentence, one item in Part I stated whole, §8's status row and the further proofs under feedback and reach, one §9 row, two glossary rows; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D37）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D37): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Sensitivity.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Counterfactual.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Sensitivity.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Counterfactual.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ],
   "text_versions": []

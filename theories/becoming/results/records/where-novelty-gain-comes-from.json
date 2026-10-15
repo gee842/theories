@@ -1,0 +1,619 @@
+{
+  "schema_version": 2,
+  "id": "where-novelty-gain-comes-from",
+  "title": {
+    "zh": "新的增益从哪里来",
+    "en": "Where novelty's gain comes from"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "算入其余，每次上升都是被给予的；在第一律之下，不重复的家族的增益来自其余或跨过边界；其余不给净量的有限整体回返，不是每步都新；新与不止的新形成需要增益。",
+    "en": "With the rest counted, every rise is given; under the first law a family without repetition gains from the rest or across its boundary; a finite whole the rest gives nothing net returns and is not new at every step; novelty and endless new formation need gain."
+  },
+  "laws": [
+    {
+      "zh": "算入整体的其余（Flow.withImbalance），跨一步家族的存量上升时，某个参与的关系项给家族的多于从它取的，是参与的形成或其余；它由逐个核对参与者找到，不判定任何无穷的事；一段上的上升在其中某步被给予。",
+      "en": "With the rest of the whole counted (Flow.withImbalance), across a step at which a family's stock rises some relatum taking part gives the family more than it takes from it, a formation taking part or the rest; it is found by checking each one taking part, deciding nothing infinite; a rise over a stretch is given at some step of it.",
+      "declarations": [
+        "Becoming.Flow.NetGiver",
+        "Becoming.Flow.rise_netGiver",
+        "Becoming.Flow.netGiver_cases",
+        "Becoming.Flow.rise_given",
+        "Becoming.Flow.rise_given_between",
+        "Becoming.some_mem_tail"
+      ]
+    },
+    {
+      "zh": "其余给家族净量，恰当在家族上相加，水平的上升超出各形成净给予的多于水平的下降超出它们净取用的；流在家族上平衡时，其余不给净量。",
+      "en": "The rest gives the family net exactly where, summed over the family, the levels rose beyond what the formations gave net by more than they fell beyond what the formations took net; where the flow balances on the family, the rest gives it nothing net.",
+      "declarations": [
+        "Becoming.Flow.rest_netGiver_iff",
+        "Becoming.Flow.BalancesOn.rest_not_netGiver"
+      ]
+    },
+    {
+      "zh": "在第一律之下（Flow.Gainless），不重复的家族跨一步上升时，其余给它净量，或它在那里开放（某个参与的形成与家族之外交换）。",
+      "en": "Under the first law (Flow.Gainless), a family without repetition that rises across a step is given net by the rest or is open there: some formation taking part exchanges beyond it.",
+      "declarations": [
+        "Becoming.Flow.rise_from_rest_or_open"
+      ]
+    },
+    {
+      "zh": "一个列表不重复地持有每个条件时，整体没有边界可越，在第一律之下每次上升都是其余的；从 T 起其余不给净量时，整体留在 T 处的存量之内，从每一步起有两步构型相同，交换不止时不承载交换的计数，所以不是每步都新。",
+      "en": "Where a list holds every condition without repetition, the whole has no boundary to cross, and under the first law every rise of it is the rest's; with the rest giving it nothing net from T on, it stays within its stock at T, has two equal configurations from every step on, does not carry the count of endless exchanges, and is not new at every step.",
+      "declarations": [
+        "Becoming.Flow.whole_rise_from_rest",
+        "Becoming.Flow.whole_bounded_of_rest_idle",
+        "Becoming.Flow.whole_recurs_of_rest_idle",
+        "Becoming.Flow.whole_not_new_of_rest_idle"
+      ]
+    },
+    {
+      "zh": "新需要增益：T 到 T + N 各步构型两两不同、N 为 T 处存量内构型之数时，家族在其中某步上升；每步都新的家族在任意晚处上升；首次到访（构型自 T 起未曾有过）不止亦然，不必连续。",
+      "en": "Novelty needs gain: a family whose configurations at the steps T, …, T + N all differ, N the number of configurations within its stock at T, rises at one of those steps; one new at every step rises at arbitrarily late steps; so do first visits without end (configurations not had since T), consecutive or not.",
+      "declarations": [
+        "Becoming.le_of_increasing",
+        "Becoming.Web.rises_within_of_new",
+        "Becoming.Web.rises_late_of_new",
+        "Becoming.Web.NewAt",
+        "Becoming.Web.exceeds_of_firsts",
+        "Becoming.Web.rises_late_of_firsts"
+      ]
+    },
+    {
+      "zh": "含一个每步都新的家族之成员的家族也每步都新；在第一律之下，每次这样的上升来自其余或跨过家族的边界，对含它的每个不重复的家族都如此：没有有限的家族封闭于无尽的新。",
+      "en": "A family holding the members of one new at every step is new at every step too; under the first law each such rise comes from the rest or across the family's boundary, for every family without repetition holding it: no finite family closes over endless novelty.",
+      "declarations": [
+        "Becoming.map_eq_at",
+        "Becoming.map_eq_on",
+        "Becoming.Web.config_eq_of_sub",
+        "Becoming.Web.new_of_sub",
+        "Becoming.Flow.new_from_rest_or_open",
+        "Becoming.Flow.new_beyond_every"
+      ]
+    },
+    {
+      "zh": "新形成需要增益：一个形成所要求者及其多少固定、只在家族之内时（Web.RequiresWithin），家族的水平是否支持它只取决于构型，所以它首次被支持之步是一次首次到访；首次被支持的形成不止时，家族在任意晚处上升，在第一律之下来自其余或跨过边界。",
+      "en": "New formation needs gain: where what a formation requires, and how much, stays fixed and lies within the family (Web.RequiresWithin), whether the family's levels support it depends on the configuration alone, so a step at which it is first supported is a first visit; with formations first supported without end, the family rises at arbitrarily late steps, under the first law from the rest or across the boundary.",
+      "declarations": [
+        "Becoming.Web.RequiresWithin",
+        "Becoming.Web.supported_of_config",
+        "Becoming.Web.FirstSupported",
+        "Becoming.Web.newAt_of_first",
+        "Becoming.Web.rises_late_of_newly_supported",
+        "Becoming.Flow.newly_supported_from_rest_or_open"
+      ]
+    },
+    {
+      "zh": "见证：Web.counting 的水平就是步数，没有形成参与（Flow.empty，无中生有不成立）；它每步都新，其余每步给它一单位，这是有限的整体唯一的增益之路。",
+      "en": "Witness: in Web.counting, whose level is the step, nothing takes part (Flow.empty, under which nothing comes from nothing); it is new at every step, and the rest gives it one unit at every step, the one way in that a finite whole has.",
+      "declarations": [
+        "Becoming.add_one_sub_self",
+        "Becoming.Flow.empty",
+        "Becoming.Flow.empty_gainless",
+        "Becoming.Flow.counting_given_by_rest"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。各律所写者写在定理中：第一律（Flow.Gainless），家族列举不重复（Distinct），对整体有一个列表持有每个条件，从 T 起其余不给净量，形成所要求者固定于家族之内（Web.RequiresWithin）；给予者由逐个核对参与者找到，只判定自然数的不等式。",
+      "en": "No axiom. What each law needs is written into it: the first law (Flow.Gainless), the family listed without repetition (Distinct), for the whole a list holding every condition, the rest giving nothing net from T on, what a formation requires fixed within the family (Web.RequiresWithin); the giver is found by checking each relatum taking part, deciding only inequalities of natural numbers."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "实际的部分是否开放，其余在实际展开中是哪个关系项，其交换是否不止：这些是对应，按应用给出。",
+      "en": "Whether an actual part is open, which relatum the rest is in an actual unfolding, or whether its exchange is without end: these are correspondence, given per application.",
+      "kind": "scope"
+    },
+    {
+      "zh": "增益不是开放：家族可以封闭而从其余得到增益，开放也可以净量为零。",
+      "en": "Gain is not openness: a family can be closed and gain from the rest, and openness can carry a net of zero.",
+      "kind": "non-implication",
+      "witness": "Becoming.Flow.counting_given_by_rest"
+    },
+    {
+      "zh": "界内构型数之界是否可达（是否有家族实现这么多次首次到访）没有陈述。",
+      "en": "Whether the bound by the configurations within the stock is reached, by a family realizing that many first visits, is not stated.",
+      "kind": "scope"
+    },
+    {
+      "zh": "与热力学的开放系统或自由能的对应不由此检查。",
+      "en": "No correspondence to open systems or free energy in thermodynamics is checked.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "连续时间与实数的量没有陈述。",
+      "en": "Continuous time and real amounts are not stated.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean",
+      "detail": {
+        "zh": "Web.counting 与 Flow.empty：没有形成参与、家族封闭，计数仍每步都新，其余每步给一单位；所以有限整体回返的定理中“其余不给净量”不能去掉。",
+        "en": "Web.counting with Flow.empty: nothing takes part and the family is closed, yet counting on is new at every step, the rest giving one unit at every step; so the condition that the rest gives nothing net cannot be dropped from the return of a finite whole."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "conditional-not-universal"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Gain 的 35 项声明（30 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §148；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 35 declarations of Becoming.Gain, 30 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 148; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "界的可达：有家族实现界内构型数那么多次首次到访；增益与新的确切比例；分支过程上的同样规律；实数的量；独立审查。",
+    "en": "Reaching the bound: a family realizing as many first visits as there are configurations within its stock; the exact ratio of gain to novelty; the same laws over branching processes; real amounts; an independent review."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-15：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”。returning-novelty-forgetting-on-levels 的读法“新而不止是无界的增益，必须来自部分之外”与“有界的当下不能承载自身的历史”在此成为定理：算入其余，每次上升都是被给予的；在第一律之下增益只有两条路，跨过边界或来自其余；有限的整体没有边界，其余闲置时它回返而遗忘。读法（AI 的，依 Ren 2026-10-15 的交托采用，DELEGATED-CHOICES D5、D7）：“来自部分之外的增益”读作这两条路；开放与增益分开；生生不息读在整体的层次，在其余闲置的有界整体中它是回返，不是无尽的新；其余计入所列关系项不做的，所以无尽地新的有限整体，是其列表漏掉了给予它者。Becoming.Coupling 对动作陈述其对应：列表所持者形成的动作在列表长度之内重复。",
+    "en": "Ren, 15 October 2026: “What's the best choices to make? please make best of your judgement, and push the frontier of completeness”. The readings of returning-novelty-forgetting-on-levels, that novelty without end is gain without bound which must come from beyond the part, and that a bounded present cannot hold its own history, become theorems here: with the rest counted every rise is given; under the first law gain has two ways in, across the boundary or from the rest; a finite whole has no boundary, and with the rest idle it returns and forgets. Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D5, D7): “gain from beyond the part” reads as these two ways in; openness and gain are kept apart; 生生不息 reads at the level of the whole, where in a bounded whole with the rest idle it is return, not endless novelty; the rest counts what the listed relata do not, so a finite whole new without end is one whose listing leaves out what gives to it. Becoming.Coupling states the counterpart for moves: moves formed by what a list holds repeat within the list's length."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean",
+  "aliases": [
+    "where novelty's gain comes from",
+    "新的增益从哪里来",
+    "every rise is given",
+    "每次上升都是被给予的",
+    "endless novelty is exchange beyond every finite family",
+    "无尽的新是越出每个有限家族的交换",
+    "unceasing generation within a bounded whole is return",
+    "有界整体中的不息生成是回返"
+  ],
+  "dependencies": [
+    {
+      "id": "returning-novelty-forgetting-on-levels",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Web.exceeds_of_new、upto_or_fails、Web.revisits_of_bounded、Flow.uncarried_of_bounded、Web.counting 与 Web.counting_new：新的家族超出界，有界的家族回返而不承载历史。",
+        "en": "Reuses Web.exceeds_of_new, upto_or_fails, Web.revisits_of_bounded, Flow.uncarried_of_bounded, Web.counting and Web.counting_new: a new family exceeds its bound, and a bounded family returns and does not carry its history."
+      },
+      "interface": {
+        "output": {
+          "zh": "只用水平的回返、新与遗忘；每步都新的计数。",
+          "en": "Returning, novelty and forgetting on the levels alone; counting, new at every step."
+        },
+        "input": {
+          "zh": "超出界之后某步上升；整体在其余闲置时有界。",
+          "en": "After the bound is exceeded some step rises; the whole is bounded with the rest idle."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean"
+      }
+    },
+    {
+      "id": "imbalance-as-relatum",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.withImbalance、Flow.withImbalance_balances、Flow.balancesOn_iff_idle、mem_of_some_mem 与 sub_eq_zero_of_le：算入其余每个流都平衡。",
+        "en": "Reuses Flow.withImbalance, Flow.withImbalance_balances, Flow.balancesOn_iff_idle, mem_of_some_mem and sub_eq_zero_of_le: with the rest counted, every flow balances."
+      },
+      "interface": {
+        "output": {
+          "zh": "算入不平衡，每个流都平衡；在家族上平衡恰是其余闲置。",
+          "en": "With the imbalance counted every flow balances; balance on a family is exactly the rest idle."
+        },
+        "input": {
+          "zh": "净给予者在算入其余的流中找到。",
+          "en": "The net giver is found in the flow with the rest counted."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean"
+      }
+    },
+    {
+      "id": "entropy-history-and-record",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Web.config、Web.config_within、configurationsWithin、nonrising_between、Flow.Gainless、Flow.GainlessOn、Flow.Balances.nonrising、Flow.CarriesHistory 与 Flow.exchanges：第一律，平衡而不增益的家族不上升。",
+        "en": "Reuses Web.config, Web.config_within, configurationsWithin, nonrising_between, Flow.Gainless, Flow.GainlessOn, Flow.Balances.nonrising, Flow.CarriesHistory and Flow.exchanges: the first law, and a balanced family gaining nothing does not rise."
+      },
+      "interface": {
+        "output": {
+          "zh": "构型与界内构型的列表；第一律；不上升；承载历史。",
+          "en": "Configurations and the list of those within a bound; the first law; not rising; carrying history."
+        },
+        "input": {
+          "zh": "第一律之下增益来自其余或越过边界。",
+          "en": "Under the first law gain comes from the rest or across the boundary."
+        },
+        "conditions": {
+          "zh": "第一律（Flow.Gainless）是各相关定理的条件。",
+          "en": "The first law (Flow.Gainless) is a condition of the theorems that use it."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean"
+      }
+    },
+    {
+      "id": "continued-change-needs-openness",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.ClosedAt 与 total_eq_zero：家族在一步封闭，指参与的形成不与其外交换。",
+        "en": "Reuses Flow.ClosedAt and total_eq_zero: a family is closed at a step where no formation taking part exchanges beyond it."
+      },
+      "interface": {
+        "output": {
+          "zh": "一步上的封闭。",
+          "en": "Closure at a step."
+        },
+        "input": {
+          "zh": "开放即不封闭，是增益进入的一条路。",
+          "en": "Open, not closed, is one way in for gain."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean"
+      }
+    },
+    {
+      "id": "more-needs-renewers",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 rises_between、search、Distinct、total 与 Web.stock：一段上的上升落在某一步，在列表上逐个核对。",
+        "en": "Reuses rises_between, search, Distinct, total and Web.stock: a rise over a stretch falls at some step, checked one by one along a list."
+      },
+      "interface": {
+        "output": {
+          "zh": "一段上的上升在某步；列表上的核对；不重复的列表；存量。",
+          "en": "A rise over a stretch at some step; checking along a list; a list without repetition; the stock."
+        },
+        "input": {
+          "zh": "给予者由核对找到。",
+          "en": "The giver found by checking."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 revisits_within：有限多构型中的重访。",
+        "en": "Reuses revisits_within: revisiting within finitely many configurations."
+      },
+      "interface": {
+        "output": {
+          "zh": "有限多构型中的序列重访。",
+          "en": "A sequence within finitely many configurations revisits."
+        },
+        "input": {
+          "zh": "首次到访不止需要上升。",
+          "en": "First visits without end need rises."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "becoming-dependence-dynamics",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Web.Supported：水平满足形成的每项所需。",
+        "en": "Reuses Web.Supported: the levels meet every need of a formation."
+      },
+      "interface": {
+        "output": {
+          "zh": "支持。",
+          "en": "Support."
+        },
+        "input": {
+          "zh": "新形成即首次被支持。",
+          "en": "New formation as being first supported."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "continued-change-needs-openness",
+      "detail": {
+        "zh": "持续的变化需要开放；新需要增益，在第一律之下增益来自其余或跨过边界：两者分开陈述。",
+        "en": "Continued change needs openness; novelty needs gain, which under the first law comes from the rest or across the boundary: the two are stated apart."
+      }
+    },
+    {
+      "id": "unceasing-generation-needs-renewal",
+      "detail": {
+        "zh": "不息的生成需要更新复现；在其余闲置的有界整体中，不息的生成是回返，不是无尽的新。",
+        "en": "Unceasing generation needs recurring renewal; within a bounded whole with the rest idle, unceasing generation is return, not endless novelty."
+      }
+    },
+    {
+      "id": "where-a-move-is-formed",
+      "detail": {
+        "zh": "对动作的对应：列表所持的整体、其余或部分形成的动作在列表长度之内重复，从不进入循环的动作需要不被列表所持的形成者。",
+        "en": "The counterpart for moves: moves formed by a whole, rest or part a list holds repeat within the list's length, and moves that never settle into a cycle need a former no list holds."
+      }
+    },
+    {
+      "id": "whole-persists-through-generation",
+      "detail": {
+        "zh": "部分短暂而整体持续，需要部分不断生起；这里给出不断的新从哪里来。",
+        "en": "A persisting whole of transient parts needs parts to keep arising; here, where endless novelty comes from."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean",
+      "role": "proof",
+      "sha256": "df89a94db2d93146569091fec7e39018f0ee1b60c164ac52c8f46f19e17ea07d",
+      "declarations": [
+        "Becoming.le_of_increasing",
+        "Becoming.map_eq_at",
+        "Becoming.map_eq_on",
+        "Becoming.add_one_sub_self",
+        "Becoming.some_mem_tail",
+        "Becoming.Web.rises_within_of_new",
+        "Becoming.Web.rises_late_of_new",
+        "Becoming.Web.config_eq_of_sub",
+        "Becoming.Web.new_of_sub",
+        "Becoming.Web.NewAt",
+        "Becoming.Web.exceeds_of_firsts",
+        "Becoming.Web.rises_late_of_firsts",
+        "Becoming.Web.RequiresWithin",
+        "Becoming.Web.supported_of_config",
+        "Becoming.Web.FirstSupported",
+        "Becoming.Web.newAt_of_first",
+        "Becoming.Web.rises_late_of_newly_supported",
+        "Becoming.Flow.NetGiver",
+        "Becoming.Flow.rise_netGiver",
+        "Becoming.Flow.netGiver_cases",
+        "Becoming.Flow.rest_netGiver_iff",
+        "Becoming.Flow.BalancesOn.rest_not_netGiver",
+        "Becoming.Flow.rise_given",
+        "Becoming.Flow.rise_given_between",
+        "Becoming.Flow.rise_from_rest_or_open",
+        "Becoming.Flow.whole_rise_from_rest",
+        "Becoming.Flow.whole_bounded_of_rest_idle",
+        "Becoming.Flow.whole_recurs_of_rest_idle",
+        "Becoming.Flow.whole_not_new_of_rest_idle",
+        "Becoming.Flow.new_from_rest_or_open",
+        "Becoming.Flow.new_beyond_every",
+        "Becoming.Flow.newly_supported_from_rest_or_open",
+        "Becoming.Flow.empty",
+        "Becoming.Flow.empty_gainless",
+        "Becoming.Flow.counting_given_by_rest"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean",
+      "role": "proof",
+      "sha256": "9a469850500102ad15dfee34671e93691c77e88e25c28c65e379e1b6bfab1d8b",
+      "declarations": [
+        "Becoming.upto_or_fails",
+        "Becoming.Web.exceeds_of_new",
+        "Becoming.Web.revisits_of_bounded",
+        "Becoming.Flow.uncarried_of_bounded",
+        "Becoming.Web.counting",
+        "Becoming.Web.counting_new"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean",
+      "role": "proof",
+      "sha256": "c1857d223f8b8b51e2242347d2cc744155e62009a9f3e0a219e94c2711c8c891",
+      "declarations": [
+        "Becoming.Flow.withImbalance",
+        "Becoming.Flow.withImbalance_balances",
+        "Becoming.Flow.balancesOn_iff_idle",
+        "Becoming.mem_of_some_mem",
+        "Becoming.sub_eq_zero_of_le"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "role": "proof",
+      "sha256": "1cba13043e8de03404856b080b92321dadaa80016770bd67b4dc48e30fc49a3d",
+      "declarations": [
+        "Becoming.Web.config",
+        "Becoming.Web.config_within",
+        "Becoming.configurationsWithin",
+        "Becoming.nonrising_between",
+        "Becoming.Flow.GainlessOn",
+        "Becoming.Flow.Gainless",
+        "Becoming.Flow.Balances.nonrising",
+        "Becoming.Flow.CarriesHistory",
+        "Becoming.Flow.exchanges"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "role": "proof",
+      "sha256": "91accf4b40601b6f5439c1a3e8f3ede72b68018b0701099e78d71e7959f6fd9d",
+      "declarations": [
+        "Becoming.Flow.ClosedAt",
+        "Becoming.total_eq_zero"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "role": "proof",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "declarations": [
+        "Becoming.Distinct",
+        "Becoming.search",
+        "Becoming.rises_between"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "bf81218edd5c67f967e663472ef1d01fe66866b82f2f9025363941bb2a9f17b9",
+      "declarations": [
+        "Becoming.total",
+        "Becoming.Web.stock"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "declarations": [
+        "Becoming.revisits_within"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "declarations": [
+        "Becoming.Web.Supported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow.BalancesOn"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "dc341972ca71c09c107a58592de9a6c4e82eab29c6ed89e35b3eb8b66f13f440"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+      "role": "integration",
+      "sha256": "44b85e32bea73b58c487c4ed66d1e1948c8bbffad4d2d87316322843aeada2a1"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md",
+      "role": "provenance",
+      "sha256": "f637528d485209f1596b62ba688c350a2fc4029e4bb0c9106c2eb4b75be3ef3e"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
+      "role": "provenance",
+      "sha256": "980885e3829d06e83fd7335ac66ccc451a67417748996d4a79223482a2a5bac3"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Gain",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Novelty",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Imbalance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Entropy",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dissipation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Population",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，证明 returning-novelty-forgetting-on-levels 的读法“新而不止是来自部分之外的增益”（P111，Ren 2026-10-15 的交托与“push the frontier of completeness”）；研究 §148。",
+      "en": "16 October 2026: added, proving the reading of returning-novelty-forgetting-on-levels that novelty without end is gain from beyond the part (P111, on Ren's delegation of 15 October 2026 and “push the frontier of completeness”); study section 148."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
+    }
+  ],
+  "text_versions": []
+}

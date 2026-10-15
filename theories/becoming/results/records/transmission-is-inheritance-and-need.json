@@ -32,8 +32,8 @@
     }
   ],
   "correspondence": {
-    "zh": "P84（工作板），按 Ren 2026-10-12 的“move towards 100%”，回答章 §8 的进一步证明“由依存的形成推出传递（TransmitsWithin 现为前提）”与 evolution-on-descent 的 next_delta。读法（AI 的，待 Ren）：传递不是关于整体的额外假设，而是一次世系上依存怎样形成的规律；它让世系改变所需而不新增所依存者，所以后代在世系中新形成对父母的依存（幼体依存亲代）不在它之内，是对应问题。是否把世界的 Transmitting（每个给予者）放宽为 TransmitsFromSome（某个被支持的给予者），会改动前提的地图与选择表，属于 Ren。见整合文档 §105。",
-    "en": "P84 (work board), following Ren's ‘move towards 100%’ of 12 October 2026, answering the chapter's §8 further proof ‘deriving transmission from how dependence forms (TransmitsWithin is now a premise)’ and the next_delta of evolution-on-descent. Reading (the AI's, pending Ren): transmission is not an extra assumption about the whole but a law of how dependence forms at one descent; it lets descent vary a need without adding what is depended on, so young coming to depend on their parents through descent is outside it, a matter of correspondence. Whether the world's Transmitting (every giver) is weakened to TransmitsFromSome (some supported giver) would change the map of premises and the selection tables, and is Ren's. See the integration document §105."
+    "zh": "P84（工作板），按 Ren 2026-10-12 的“move towards 100%”，回答章 §8 的进一步证明“由依存的形成推出传递（TransmitsWithin 现为前提）”与 evolution-on-descent 的 next_delta。读法（AI 的，依 Ren 的交托采用）：传递不是关于整体的额外假设，而是一次世系上依存怎样形成的规律；它让世系改变所需而不新增所依存者，所以后代在世系中新形成对父母的依存（幼体依存亲代）不在它之内，是对应问题。世界的 Transmitting（每个给予者）依 Ren 的交托不放宽为 TransmitsFromSome（某个被支持的给予者），后者作为较弱的规律已陈述（D31）。见整合文档 §105。",
+    "en": "P84 (work board), following Ren's ‘move towards 100%’ of 12 October 2026, answering the chapter's §8 further proof ‘deriving transmission from how dependence forms (TransmitsWithin is now a premise)’ and the next_delta of evolution-on-descent. Reading (the AI's, adopted on Ren's delegation): transmission is not an extra assumption about the whole but a law of how dependence forms at one descent; it lets descent vary a need without adding what is depended on, so young coming to depend on their parents through descent is outside it, a matter of correspondence. On Ren's delegation the world's Transmitting (every giver) is not weakened to TransmitsFromSome (some supported giver), which is stated as the weaker law where it binds (D31). See the integration document §105."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean",
   "aliases": [
@@ -115,8 +115,8 @@
     }
   ],
   "limitations": {
-    "zh": "只对离散步、自然数的量陈述；所需之界 δ 是对水平的粗界，所需是自由的数，没有读法把它们与所取所给的量联系起来；形成的规律只在后代先前不依存之处恰是承继，核心的见证（Drawdown、Slack、hatch）中后代的依存在立足前就已持有；不陈述普查的规律；世系中新形成的依存（幼体依存亲代）不在传递之内；名称是 AI 的表述，由 Ren 定（InheritsAt、NeedsWithinAt、TransmitsFromSome 等）。",
-    "en": "Stated for discrete steps and natural-number amounts; the need bound δ is a coarse bound on levels, needs are free numbers, and no reading ties them to the amounts taken and given; the law of forming is exactly inheritance only where the descendant held no dependence before, while in the core's witnesses (Drawdown, Slack, hatch) the descendant's dependence is held before it stands; no census law is stated; dependences formed newly by descent (young depending on their parents) are outside transmission; the names are the AI's wording, for Ren to choose (InheritsAt, NeedsWithinAt, TransmitsFromSome and others)."
+    "zh": "只对离散步、自然数的量陈述；所需之界 δ 是对水平的粗界，所需是自由的数，没有读法把它们与所取所给的量联系起来；形成的规律只在后代先前不依存之处恰是承继，核心的见证（Drawdown、Slack、hatch）中后代的依存在立足前就已持有；不陈述普查的规律；世系中新形成的依存（幼体依存亲代）不在传递之内；名称是 AI 的表述，按 Ren 的命名规则采用（InheritsAt、NeedsWithinAt、TransmitsFromSome 等）。",
+    "en": "Stated for discrete steps and natural-number amounts; the need bound δ is a coarse bound on levels, needs are free numbers, and no reading ties them to the amounts taken and given; the law of forming is exactly inheritance only where the descendant held no dependence before, while in the core's witnesses (Drawdown, Slack, hatch) the descendant's dependence is held before it stands; no census law is stated; dependences formed newly by descent (young depending on their parents) are outside transmission; the names are the AI's wording, adopted under Ren's naming rule (InheritsAt, NeedsWithinAt, TransmitsFromSome and others)."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Transmission 的 64 项定理全部空依赖，其中含 Web.InheritsAt、Web.NeedsWithinAt、Web.transmits_at_iff、Web.InheritsAt.split、Web.inheritsAt_iff_forming、Web.inheritsAt_of_split、Web.inheritsAt_not_not、split_iff_em、Flow.Inherits、Flow.NeedsWithin、Flow.transmitsWithin_iff、Flow.transmitsWithin_iff_forming、Flow.transmitsWithin_iff_split、Flow.descends_of_comes、Flow.no_new_dependence、Flow.inherited_supported_at、Flow.inherited_within_at、Flow.TransmitsFromSome、Flow.fromSome_supported、Flow.TransmitsWithin.fromSome、TwoGivers.twofold与 Drawdown.carried；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §105；尚无独立审查。",
@@ -126,7 +126,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean",
       "role": "proof",
-      "sha256": "d581a0d1e4490d1300a7fe13d4cb30e5d184b3e1bbab443516d9eddab7213349",
+      "sha256": "d39c36486a8b9d93dd907c108262d4bdd2af85140fda2797bdf7cd994e16cfc4",
       "declarations": [
         "Becoming.Web.InheritsAt",
         "Becoming.Web.NeedsWithinAt",
@@ -218,12 +218,18 @@
       "role": "provenance",
       "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Transmission",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -237,8 +243,8 @@
     }
   ],
   "next_delta": {
-    "zh": "所需与所取所给的量相联系的读法；是否把 Transmitting 放宽为 TransmitsFromSome（Ren）；世系中新形成依存的规律；多步的累积。",
-    "en": "A reading tying needs to the amounts taken and given; whether Transmitting is weakened to TransmitsFromSome (Ren); a law of dependences newly formed by descent; accumulation over many steps."
+    "zh": "所需与所取所给的量相联系的读法；世系中新形成依存的规律；多步的累积。",
+    "en": "A reading tying needs to the amounts taken and given; a law of dependences newly formed by descent; accumulation over many steps."
   },
   "history": [
     {
@@ -348,6 +354,14 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D31, D36）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D31, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Transmission.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Transmission.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ]
 }

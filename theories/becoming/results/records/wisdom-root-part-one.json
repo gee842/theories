@@ -130,8 +130,8 @@
       "en": "No axiom and no premise is added; each law's conditions stay in its theorems (balance only where used, the rest of the exchange fixed, decided values, a world held by a list and so on), as in the respective records."
     },
     {
-      "zh": "把规律对到智慧的各面（识、理、检验、学习、明、够、失控、代理、判断、元）是 AI 的读法，理依 Ren，其余待 Ren；“明”在这里只指看见自身所识之外要他者之识，不取其全部古典含义；“对每个表示成立”指每个学习者都受这些规律约束，不指有智慧者显式持有一个模型。",
-      "en": "Matching the laws to aspects of wisdom (registration, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, 理 being Ren's and the rest pending Ren; 明 here means only that seeing beyond one's own registration needs another's, not its whole classical sense; “holding of every representation” means every learner is bound by these laws, not that the wise hold an explicit model."
+      "zh": "把规律对到智慧的各面（识、理、检验、学习、明、够、失控、代理、判断、元）是 AI 的读法，理依 Ren，其余依 Ren 的交托采用；“明”在这里只指看见自身所识之外要他者之识，不取其全部古典含义；“对每个表示成立”指每个学习者都受这些规律约束，不指有智慧者显式持有一个模型。",
+      "en": "Matching the laws to aspects of wisdom (registration, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, adopted on Ren's delegation (理 is Ren's); 明 here means only that seeing beyond one's own registration needs another's, not its whole classical sense; “holding of every representation” means every learner is bound by these laws, not that the wise hold an explicit model."
     },
     {
       "zh": "“对每个表示成立”保持各定理的类型与条件。应用于智慧须另说明判断内容、根据、范围、强度及 E；不表示所有智慧活动都具有每个模块的功能或必须继续修改。",
@@ -139,8 +139,8 @@
     }
   ],
   "correspondence": {
-    "en": "Ren’s reading of 理 and the formal integration of the laws are retained. Correspondence to aspects of wisdom is an interpretive dependency, not a new Lean composition: which law constitutes which aspect of wisdom is an argument, not a theorem; 理 is read as Ren reads it, and the other readings are the AI's, pending Ren.",
-    "zh": "Ren 的理读法与各规律的形式整合保留。智慧各面的对应是解释性依赖，不是新增 Lean 组合：哪条规律构成智慧的哪一面是论证，不是定理；理依 Ren，其余读法是 AI 的，待 Ren。"
+    "en": "Ren’s reading of 理 and the formal integration of the laws are retained. Correspondence to aspects of wisdom is an interpretive dependency, not a new Lean composition: which law constitutes which aspect of wisdom is an argument, not a theorem; 理 is read as Ren reads it, and the other readings are the AI's, adopted on Ren's delegation.",
+    "zh": "Ren 的理读法与各规律的形式整合保留。智慧各面的对应是解释性依赖，不是新增 Lean 组合：哪条规律构成智慧的哪一面是论证，不是定理；理依 Ren，其余读法是 AI 的，依 Ren 的交托采用。"
   },
   "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
   "aliases": [
@@ -459,7 +459,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
       "role": "proof",
-      "sha256": "753d32b44a0800699576f15f31c9fc11a57e15efe62fde8c0c2f6be6962535cc",
+      "sha256": "622ffc32049bf3318fe709473198a88d626207b8cc8c9fecf38b18ae48e35914",
       "declarations": [
         "Becoming.Run.not_fixes_of_untaken",
         "Becoming.Run.fixes_on_return",
@@ -469,7 +469,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "d15d9f1f3417067487d431858957e59bc63dd60ccb3fd0513f0de0a9b6c6b7ab",
+      "sha256": "40dd6a8d0fdbaf1f1b08d99b66b10b5c4a461b35a1bbe25c16314767ee736cc9",
       "declarations": [
         "Becoming.Web.selects_alike_iff",
         "Becoming.Flow.unselected_beyond_registration",
@@ -480,7 +480,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
       "role": "proof",
-      "sha256": "230aab49dc985252ed7cb93ec21318c90c9da3ef4e8b917e410f7398d6a882ff",
+      "sha256": "cb31fea622b45a2a122feff277ab7cf8db62b5862d71ab6d732b4a5e8f9671d9",
       "declarations": [
         "Becoming.Law.rests_iff",
         "Becoming.more_needs_open",
@@ -490,7 +490,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
       "role": "proof",
-      "sha256": "a034a3989e458bc599d11e14750a3e10731e800b5e023347ed6fe415afc9bb76",
+      "sha256": "014cbac478d3eff0eccbc1bce3fee73315b78262e745842d1ce4c6c61be1d55a",
       "declarations": [
         "Becoming.Web.break_not_bounded",
         "Becoming.Web.observed_raise_registers"
@@ -499,7 +499,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "eb8327cf10113b666c7648a5ad52a675fdef5953802c6518d9112fd7f23c3bad",
+      "sha256": "ce0cbaa9eae78046d860abeb963b0eab87d8981451044ed9bb85d2fb66ab5b68",
       "declarations": [
         "Becoming.carries_law_iff",
         "Becoming.adaptive_state_law_iff"
@@ -508,7 +508,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "b5d869ba9bfa90ef5a8f81c2166fcfb45f8811d6cd2c41daec6ccec5cab6537b",
+      "sha256": "f709b169e362fbef75ca05f56bfe54adee9f16db2b114c890c13852478a11171",
       "declarations": [
         "Becoming.Learning.no_record_fixes_next",
         "Becoming.Learning.every_determines_nothing",
@@ -572,9 +572,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
-      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
     },
     {
@@ -607,42 +607,42 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Experiment",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Seeking",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Runaway",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -878,6 +878,14 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Identification.lean（P83g：新增一节 CubicRest（oddCycle、learner_refuted_late、learner_rest_cubic 及其沿各转的推演，34 项声明：按否证学习者的静止之步是立方阶的）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Identification.lean (P83g: a section CubicRest added (oddCycle, learner_refuted_late, learner_rest_cubic and their walk through the turns, 34 declarations: the refutation learner's rest step is cubic); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D26）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D26): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Experiment.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Selection.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Seeking.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Runaway.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Mechanism.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Learning.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Experiment.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Selection.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Seeking.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Runaway.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Learning.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ],
   "text_versions": [

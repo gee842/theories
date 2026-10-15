@@ -67,7 +67,7 @@ the axiom. The axiom enters only as a hypothesis of the comparisons.
   standpoint, within the dweller's own closure, it loses the dweller too
   (`Clearing.within_closure_yet_loses`).
 
-**AI reading, pending Ren.**
+**AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D17).**
 - The feeding closure reads “what it actually depends on”. It is reached without axiom. How a
   center comes to represent it is not modelled. P40 also read it as Ren's “the system that one
   is in”; `Becoming.Feedback` withdraws that reading and offers the reach closure.

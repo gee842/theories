@@ -82,7 +82,7 @@ beyond the law of exchange itself and what each theorem names.
   by case, follows from the law (`Loop.responds_by_law`); and each is the only balanced course of
   the law with its act (`Loop.courses_fixed`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
 - A counterfactual is not a second world beside the actual one. It is the course the same law
   gives with the part acting otherwise, fixed by the act where it exists, and it exists only where
   the law could be followed: a course that would take more than stands and is given is no

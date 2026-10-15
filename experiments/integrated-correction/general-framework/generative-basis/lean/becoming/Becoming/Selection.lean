@@ -64,7 +64,7 @@ registration is supplied, never derived.
   rises among the offspring (`share_rises_through`): `share_rises` of `Becoming.Capture`, the
   selection supplying which parents are carriers.
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
 - Any selection decided by what a selector registers (keeping, rewarding, reproducing,
   training) reaches exactly what that selector registers. It is blind to whatever a candidate's
   part does beyond the selector's registration closure, however far the candidate's reach

@@ -143,12 +143,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261014T091930.724493Z): the 23 declarations of Becoming.Learnable, 17 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in the study; not independently reviewed."
   },
   "next_delta": {
-    "zh": "不被给予世界、对每个可学目标静止的学习者，或其不存在的见证；不确定过程上与概率读法下的可学性；实际的识（阈值、注意）的实例；Ren 对“识为所学划界”这一读法的判断。",
-    "en": "A learner given nothing that rests on every learnable target, or a witness that none does; learnability over undetermined processes and on a probabilistic reading; instances for actual registrations (thresholds, attention); Ren's judgment on the reading that registration bounds what is learned."
+    "zh": "不被给予世界、对每个可学目标静止的学习者，或其不存在的见证；不确定过程上与概率读法下的可学性；实际的识（阈值、注意）的实例。",
+    "en": "A learner given nothing that rests on every learnable target, or a witness that none does; learnability over undetermined processes and on a probabilistic reading; instances for actual registrations (thresholds, attention)."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12：“please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”。按否证学习的结果留下：识不分辨值时的学习没有陈述。本结果陈述它：经识，学习者所能学的，恰是所识的未来相同者从某步起一致之处。读法（AI 的，待 Ren）：识为所学划界；依 Ren 的读法，理是对结构与变化之规律的建模，这一建模经识被学到，正如它经识被检验；阈下的差别（依存而不观察的条件只以阈值被识）只在它在所识的未来中显现、或从目标中消失之处可学；识之外者只经扩大识到达：新的观察、他者之识。",
-    "en": "Ren, 12 October 2026: “please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”. Learning by refutation left learning where registration does not tell values apart unstated. This result states it: what a learner can learn through a registration is exactly where configurations with the same registered future agree from some step on. Readings (the AI's, pending Ren): registration bounds what is learned; on Ren's reading 理 is the modeling of the laws of structure and of change, and that modeling is learned through registration as it is tested through it; a difference below threshold (a condition depended on and not observed registers only whether it meets the need) is learnable only where it shows in the registered future or vanishes from the target; what lies beyond registration is reached only by widening it: new observation, another's registration."
+    "zh": "Ren 2026-10-12：“please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”。按否证学习的结果留下：识不分辨值时的学习没有陈述。本结果陈述它：经识，学习者所能学的，恰是所识的未来相同者从某步起一致之处。读法（AI 的，依 Ren 的交托采用）：识为所学划界；依 Ren 的读法，理是对结构与变化之规律的建模，这一建模经识被学到，正如它经识被检验；阈下的差别（依存而不观察的条件只以阈值被识）只在它在所识的未来中显现、或从目标中消失之处可学；识之外者只经扩大识到达：新的观察、他者之识。",
+    "en": "Ren, 12 October 2026: “please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”. Learning by refutation left learning where registration does not tell values apart unstated. This result states it: what a learner can learn through a registration is exactly where configurations with the same registered future agree from some step on. Readings (the AI's, adopted on Ren's delegation): registration bounds what is learned; on Ren's reading 理 is the modeling of the laws of structure and of change, and that modeling is learned through registration as it is tested through it; a difference below threshold (a condition depended on and not observed registers only whether it meets the need) is learnable only where it shows in the registered future or vanishes from the target; what lies beyond registration is reached only by widening it: new observation, another's registration."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean",
   "aliases": [
@@ -329,7 +329,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "b5d869ba9bfa90ef5a8f81c2166fcfb45f8811d6cd2c41daec6ccec5cab6537b",
+      "sha256": "f709b169e362fbef75ca05f56bfe54adee9f16db2b114c890c13852478a11171",
       "declarations": [
         "Becoming.Learning.record",
         "Becoming.Learning.record_congr",
@@ -358,7 +358,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "d7cf089a726aacef3def03dce987b04ddc5ffa5e91f00098a27a88d0fde481cb",
+      "sha256": "f0488ab0cba15a0caf609d0052718e9b1f5e88828c3ad9fcd52a6910e77f03e3",
       "declarations": [
         "Becoming.Law.SameFuture"
       ]
@@ -366,7 +366,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
       "role": "proof",
-      "sha256": "230aab49dc985252ed7cb93ec21318c90c9da3ef4e8b917e410f7398d6a882ff",
+      "sha256": "cb31fea622b45a2a122feff277ab7cf8db62b5862d71ab6d732b4a5e8f9671d9",
       "declarations": [
         "Becoming.Law.fixed_rests"
       ]
@@ -392,7 +392,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635"
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md",
@@ -400,9 +400,9 @@
       "sha256": "c648f395f1da2e423e27a2b801e2421550867f71209ac7c63c3aa7fb1f071e1e"
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
-      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
     },
     {
@@ -428,7 +428,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -442,14 +442,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Seeking",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -510,6 +510,14 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Identification.lean（P83g：新增一节 CubicRest（oddCycle、learner_refuted_late、learner_rest_cubic 及其沿各转的推演，34 项声明：按否证学习者的静止之步是立方阶的）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Identification.lean (P83g: a section CubicRest added (oddCycle, learner_refuted_late, learner_rest_cubic and their walk through the turns, 34 declarations: the refutation learner's rest step is cubic); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D26）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D26): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Learning.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Unfolding.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Seeking.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Learning.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Seeking.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ],
   "text_versions": []

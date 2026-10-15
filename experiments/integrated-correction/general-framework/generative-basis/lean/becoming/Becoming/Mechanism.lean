@@ -48,7 +48,7 @@ reading of time nor a finer unit of amount (`Becoming.Resolution`).
   move does not determine the configuration, yet its first part carries a determined law
   (`Coarse.not_determined`, `Coarse.goAlike`, `Coarse.carries`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
 - A mechanism is a projection of configuration that carries a law. P53's model of what is
   irrelevant is now characterized exactly and with no premise (`carries_law_iff`): what is
   irrelevant to the change, read through `π`, is what configurations alike under `π` differ in.

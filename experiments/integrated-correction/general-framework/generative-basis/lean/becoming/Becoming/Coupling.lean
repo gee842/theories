@@ -87,7 +87,8 @@ needs supplying from outside the whole, and what the record of one course fixes 
 
 **Readings.** Ren, 12 October 2026, of the reading that law and history are one unfolding read
 two ways: "yes, i do agree with your reading, there are no two realities". The readings below,
-which carry it to the move, are the AI's, pending Ren.
+which carry it to the move, are the AI's, adopted on Ren's delegation of 15 October 2026, with their
+qualifiers (DELEGATED-CHOICES D24).
 - Acting and undergoing are one move read from its two sides. An actor is not a kind of being but
   a part through whose configuration a move is formed, relative to where the whole is cut into
   part and rest; whose move it is, is a relation of the move to configurations, not a property of

@@ -312,12 +312,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z; periphery receipt 20261013T095049.338744Z): the theorems of the Counterfactual module have empty axiom reports, and the checker verifies core purity, every source declaration in the core's import closure having an empty axiom report and the core compiling from Lean's prelude alone. Author counterreview in §100 of the integration note; no independent review."
   },
   "next_delta": {
-    "zh": "两类的律读作一个世界；带噪声的律及其进程；Ren 对两种读法的判断。",
-    "en": "A law over two kinds read as one world; a law with noise and its course; Ren's judgment on the two readings."
+    "zh": "两类的律读作一个世界；带噪声的律及其进程。",
+    "en": "A law over two kinds read as one world; a law with noise and its course."
   },
   "correspondence": {
-    "zh": "Ren 写道：“another agent has got this far, maybe merge first and see if there is something to work on”。AI 随后认领本章与“其余回应时的比较”相接的开放项：“他者有回应的比较，由动力学给出回应而不是另给第二个流”；该记录写明其定理仍取的假设，本记录陈述新的定律。读法（AI 的，待 Ren）：反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程，可行时存在、由动作固定（AI 把它与 Ren 所说的“there are no two realities”相对应）；对遵从读已立者之律的其余，经识回应不是另加的关于形成怎样行为的假设，无论其余遵从哪个这样的律，条件有限时它都经其敏感而读，读作识：形成识其交换所敏感的；未取的动作是标准因果模型意义上的干预。读法增加（AI 的，待 Ren）：未取之动作的进程与每个展开同形，不是第二种东西；律在它所管的历史之外添加的恰是历史未取的动作，所以反事实是律在其历史之外的一步，不是旁边的第二段历史；部分的动作在展开之内由律形成时，进程从起始处固定，另作即部分另是的律。",
-    "en": "Ren wrote: “another agent has got this far, maybe merge first and see if there is something to work on”. The AI then took up the chapter's open item that joins the comparison where the rest responds: “a comparison in which others respond as the dynamics give, not through a second flow supplied”; that record states which hypotheses its theorem still takes, and this one states the new laws. Readings (the AI's, pending Ren): a counterfactual is not a second world beside the actual one but the course of the same law where the part acts otherwise, existing where feasible and fixed by the act (the AI relates this to Ren's “there are no two realities”); for a rest following a law of what has stood, responding through registration is no further assumption about how formations behave: whatever such law the rest follows, with finitely many conditions it reads through its sensitivity, read as 识, a formation registering what its exchange is sensitive to; an act not taken is an intervention in the sense of the standard causal model. Further readings (the AI's, pending Ren): the course of an act not taken has the form of every unfolding, not a second kind of thing; what a law adds beyond the history it governs is exactly the moves the history never takes, so a counterfactual is the law's step beyond its history, not a second history beside it; with the part's move formed within the unfolding by a law, the course is fixed from the start, and acting otherwise is a law of the part otherwise."
+    "zh": "Ren 写道：“another agent has got this far, maybe merge first and see if there is something to work on”。AI 随后认领本章与“其余回应时的比较”相接的开放项：“他者有回应的比较，由动力学给出回应而不是另给第二个流”；该记录写明其定理仍取的假设，本记录陈述新的定律。读法（AI 的，依 Ren 的交托采用）：反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程，可行时存在、由动作固定（AI 把它与 Ren 所说的“there are no two realities”相对应）；对遵从读已立者之律的其余，经识回应不是另加的关于形成怎样行为的假设，无论其余遵从哪个这样的律，条件有限时它都经其敏感而读，读作识：形成识其交换所敏感的；未取的动作是标准因果模型意义上的干预。读法增加（AI 的，依 Ren 的交托采用）：未取之动作的进程与每个展开同形，不是第二种东西；律在它所管的历史之外添加的恰是历史未取的动作，所以反事实是律在其历史之外的一步，不是旁边的第二段历史；部分的动作在展开之内由律形成时，进程从起始处固定，另作即部分另是的律。",
+    "en": "Ren wrote: “another agent has got this far, maybe merge first and see if there is something to work on”. The AI then took up the chapter's open item that joins the comparison where the rest responds: “a comparison in which others respond as the dynamics give, not through a second flow supplied”; that record states which hypotheses its theorem still takes, and this one states the new laws. Readings (the AI's, adopted on Ren's delegation): a counterfactual is not a second world beside the actual one but the course of the same law where the part acts otherwise, existing where feasible and fixed by the act (the AI relates this to Ren's “there are no two realities”); for a rest following a law of what has stood, responding through registration is no further assumption about how formations behave: whatever such law the rest follows, with finitely many conditions it reads through its sensitivity, read as 识, a formation registering what its exchange is sensitive to; an act not taken is an intervention in the sense of the standard causal model. Further readings (the AI's, adopted on Ren's delegation): the course of an act not taken has the form of every unfolding, not a second kind of thing; what a law adds beyond the history it governs is exactly the moves the history never takes, so a counterfactual is the law's step beyond its history, not a second history beside it; with the part's move formed within the unfolding by a law, the course is fixed from the start, and acting otherwise is a law of the part otherwise."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
   "aliases": [
@@ -525,7 +525,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "a296d36ddc81ac77f72b0a01a1855874bad3e6261ecce9ef321592940c6a1798",
+      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.AgreeUpTo",
@@ -604,7 +604,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
       "role": "proof",
-      "sha256": "49d133ab792d88d7678c3b1b5c74b9770fcd7b22ec4e6fbabe58f8c6e7a716c5",
+      "sha256": "fdb173d166d4666b9fbc299fcf387138783d207f1e7d8f9c81899f95037603e1",
       "declarations": [
         "Becoming.Flow.RespondsThroughRegistration",
         "Becoming.Flow.WithinResponse",
@@ -632,7 +632,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "eb8327cf10113b666c7648a5ad52a675fdef5953802c6518d9112fd7f23c3bad",
+      "sha256": "ce0cbaa9eae78046d860abeb963b0eab87d8981451044ed9bb85d2fb66ab5b68",
       "declarations": [
         "Becoming.inputs",
         "Becoming.trajectory",
@@ -644,7 +644,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "d7cf089a726aacef3def03dce987b04ddc5ffa5e91f00098a27a88d0fde481cb",
+      "sha256": "f0488ab0cba15a0caf609d0052718e9b1f5e88828c3ad9fcd52a6910e77f03e3",
       "declarations": [
         "Becoming.Exchange",
         "Becoming.exchange",
@@ -661,7 +661,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "3abd887dc3955de148e3c81a2bccb4f90fc46accf3c0a0be57b586512737838d",
+      "sha256": "0acf50c8d6fe6c28fef710e15f5b4138b259c3d67520df545cdd7a1b21987e26",
       "declarations": [
         "Becoming.World"
       ]
@@ -697,7 +697,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
       "role": "proof",
-      "sha256": "5b420062ebf932b498e6d471b1289cbe2ee3c4cd1264aa7186abfc723b26843c",
+      "sha256": "bf81218edd5c67f967e663472ef1d01fe66866b82f2f9025363941bb2a9f17b9",
       "declarations": [
         "Becoming.total"
       ]
@@ -725,7 +725,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0004f1a79b4b9c23c9eadd3764b07034b55b719d02e3399ac946b6ca93e89d5d",
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01",
       "declarations": []
     },
     {
@@ -747,9 +747,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
-      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
     },
     {
@@ -762,14 +762,14 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Response",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -783,21 +783,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -825,7 +825,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Generation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -974,6 +974,14 @@
     {
       "zh": "2026年10月16日，P115 落地（研究第141节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P115：§2 一段“差别到达多少（第一部分）”，其余响应之比较一段不再把差别到达多少列为未推出，§6.10 一句，第一部分总陈述一项，§8 状态行与“反馈与所及”下的进一步证明，§9 一行，术语两行；总数改据新回执）。",
       "en": "16 October 2026, landing P115 (study section 141): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P115: a §2 paragraph \"How much difference arrives (Part I)\", the paragraph of the comparison where the rest responds no longer listing how much difference arrives as not derived, a §6.10 sentence, one item in Part I stated whole, §8's status row and the further proofs under feedback and reach, one §9 row, two glossary rows; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D25, D37）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D25, D37): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Counterfactual.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Response.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Mechanism.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Unfolding.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Space.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Generation.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Counterfactual.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Response.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ],
   "text_versions": [

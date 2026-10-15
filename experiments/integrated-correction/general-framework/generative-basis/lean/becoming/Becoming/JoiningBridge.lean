@@ -40,7 +40,8 @@ claims built on them are stated instead on `Joining.roleFrame` and `Joining.reta
 `every_exact_account_retains_real_difference_by_core`, and in the core `Joining.common_refinement`,
 `Joining.universal_factor` and `Joining.retained_history_matches`).
 
-The readings of these results are the AI's, pending Ren. No ethical predicate is used.
+The readings of these results are the AI's, adopted on Ren's delegation of 15 October 2026
+(DELEGATED-CHOICES D33). No ethical predicate is used.
 -/
 
 namespace Becoming

@@ -204,12 +204,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T153317.850533Z): the 72 declarations of Becoming.Coupling, 51 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 131; not independently reviewed."
   },
   "next_delta": {
-    "zh": "部分在动作中的份额在本记录的运行上陈述；反事实之动作经部分自身的识读出；非确定之律的后继由什么形成；连续时间；独立审查；Ren 对读法（行与受是同一动作的两面、动作是谁的是关于未走之进程的主张）的判断。",
-    "en": "The part's share of a move stated on this record's runs; the counterfactual's act read through the part's own registration; what forms the successor of a law that is not determined; continuous time; an independent review; Ren's judgment on the readings (acting and undergoing as one move read from its two sides, whose move it is as a claim about courses not taken)."
+    "zh": "部分在动作中的份额在本记录的运行上陈述；反事实之动作经部分自身的识读出；非确定之律的后继由什么形成；连续时间；独立审查。",
+    "en": "The part's share of a move stated on this record's runs; the counterfactual's act read through the part's own registration; what forms the successor of a law that is not determined; continuous time; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 对律与历史是同一展开的两种读法：“yes, i do agree with your reading, there are no two realities”；2026-10-14 对从关系开始的重建：“please, finish all”。本结果回答 process-and-frame-as-readings 与 counterfactual-is-the-course 的 next_delta：动作何时在展开之内形成（总可如此读，其余形成它），何时是部分自己的（恰当它经部分的配置形成；一段进程只在配置复现而动作不同之处固定这一点）。读法（AI 的，待 Ren）：行与受是同一个动作的两面；输入是其余的配置，外来的标签是表示略去其形成的动作；动作是谁的是关于未走之进程的主张；识得越多，越多是自己的；封闭不是自己的；所做之事的新需要开放或增长。",
-    "en": "Ren, 12 October 2026, on law and history as one unfolding read two ways: “yes, i do agree with your reading, there are no two realities”; 14 October 2026, on the relation-first re-founding: “please, finish all”. This result answers the next_delta of process-and-frame-as-readings and counterfactual-is-the-course: when a move is formed within the unfolding (it can always be read so, its rest forming it) and when it is the part's own (exactly where it is formed through the part's configuration; one course fixes this only where a configuration recurs with the move varied). Readings (the AI's, pending Ren): acting and undergoing are one move read from its two sides; an input is the rest's configuration, and a label from outside is a move whose forming the representation leaves out; whose move it is, is a claim about courses not taken; reading more, more is one's own; closed is not own; novelty in what is done needs openness or growth."
+    "zh": "Ren 2026-10-12 对律与历史是同一展开的两种读法：“yes, i do agree with your reading, there are no two realities”；2026-10-14 对从关系开始的重建：“please, finish all”。本结果回答 process-and-frame-as-readings 与 counterfactual-is-the-course 的 next_delta：动作何时在展开之内形成（总可如此读，其余形成它），何时是部分自己的（恰当它经部分的配置形成；一段进程只在配置复现而动作不同之处固定这一点）。读法（AI 的，依 Ren 的交托采用）：行与受是同一个动作的两面；输入是其余的配置，外来的标签是表示略去其形成的动作；动作是谁的是关于未走之进程的主张；识得越多，越多是自己的；封闭不是自己的；所做之事的新需要开放或增长。",
+    "en": "Ren, 12 October 2026, on law and history as one unfolding read two ways: “yes, i do agree with your reading, there are no two realities”; 14 October 2026, on the relation-first re-founding: “please, finish all”. This result answers the next_delta of process-and-frame-as-readings and counterfactual-is-the-course: when a move is formed within the unfolding (it can always be read so, its rest forming it) and when it is the part's own (exactly where it is formed through the part's configuration; one course fixes this only where a configuration recurs with the move varied). Readings (the AI's, adopted on Ren's delegation): acting and undergoing are one move read from its two sides; an input is the rest's configuration, and a label from outside is a move whose forming the representation leaves out; whose move it is, is a claim about courses not taken; reading more, more is one's own; closed is not own; novelty in what is done needs openness or growth."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
   "aliases": [
@@ -452,13 +452,20 @@
         "zh": "对交换律回答其下一步中的度量：耦合强度是耦合的度量，部分的份额至多是其强度乘部分的改变（ExchangeLaw.exchangeGap_le_shares）；与本记录的运行相连尚未陈述。",
         "en": "Answers the measure in its next step for laws of exchange: the coupling strengths measure coupling, and the part's share of a move is at most its strengths times the part's change (ExchangeLaw.exchangeGap_le_shares); the link to this record's runs is not yet stated."
       }
+    },
+    {
+      "id": "where-novelty-gain-comes-from",
+      "detail": {
+        "zh": "第六项读法（所做之事的新需要开放或增长）在存量层次的对应：新需要增益，算入其余时来自其余或经边界。",
+        "en": "The stock-level counterpart of the sixth reading (novelty in what is done needs openness or growth): novelty needs gain, which with the rest counted comes from the rest or across the boundary."
+      }
     }
   ],
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
       "role": "proof",
-      "sha256": "b66617508b01bd6c3ed9ad166784b4afde1f9cb23b6d917b0ddaa12ce69563b8",
+      "sha256": "ba393a6a8a50f03363ac7d57fbc722ed51f02f237a1c6b31a0172b3588432cfd",
       "declarations": [
         "Becoming.coupled",
         "Becoming.Run.part",
@@ -570,7 +577,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "eb8327cf10113b666c7648a5ad52a675fdef5953802c6518d9112fd7f23c3bad",
+      "sha256": "ce0cbaa9eae78046d860abeb963b0eab87d8981451044ed9bb85d2fb66ab5b68",
       "declarations": [
         "Becoming.GoAlike",
         "Becoming.GoAlike.runs_agree",
@@ -581,7 +588,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
       "role": "proof",
-      "sha256": "753d32b44a0800699576f15f31c9fc11a57e15efe62fde8c0c2f6be6962535cc",
+      "sha256": "622ffc32049bf3318fe709473198a88d626207b8cc8c9fecf38b18ae48e35914",
       "declarations": [
         "Becoming.keepHistory",
         "Becoming.keepHistory_length"
@@ -590,7 +597,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "d7cf089a726aacef3def03dce987b04ddc5ffa5e91f00098a27a88d0fde481cb",
+      "sha256": "f0488ab0cba15a0caf609d0052718e9b1f5e88828c3ad9fcd52a6910e77f03e3",
       "declarations": [
         "Becoming.closedBy",
         "Becoming.Fork.label_couples"
@@ -599,7 +606,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "a296d36ddc81ac77f72b0a01a1855874bad3e6261ecce9ef321592940c6a1798",
+      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
       "declarations": [
         "Becoming.ExchangeLaw.ofMoves",
         "Becoming.ExchangeLaw.policy",
@@ -609,7 +616,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "b5d869ba9bfa90ef5a8f81c2166fcfb45f8811d6cd2c41daec6ccec5cab6537b",
+      "sha256": "f709b169e362fbef75ca05f56bfe54adee9f16db2b114c890c13852478a11171",
       "declarations": [
         "Becoming.Learning.Lumped",
         "Becoming.Learning.Lasso",
@@ -635,7 +642,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
       "role": "proof",
-      "sha256": "8785f29984e68d38522df23319c0cfc0a8cee537bb7df4e90c73fa2c9f76dd58",
+      "sha256": "aa0e051de0783cc47458f5c4ec23a0ec1da2a636bf223c3c0570f07e2ded453d",
       "declarations": [
         "Becoming.World.withRest",
         "Becoming.ExchangeLaw.requirement_beyond_course"
@@ -644,7 +651,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
       "role": "proof",
-      "sha256": "083f513ada19e6b2b9f808f5b018fb7816ed3dd716becd57689c09adc765f87e",
+      "sha256": "03addad8f34b6f2e034f38ef41fe5d829e779b254cdb2528ec016ce45c57edec",
       "declarations": [
         "Becoming.World.unity"
       ]
@@ -657,7 +664,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3cb7f88b54b41d528bd403a87f1c1ab864720b37a049e9eb9c35fec807e01a67"
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md",
@@ -680,12 +687,18 @@
       "role": "receipt",
       "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Coupling",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -713,35 +726,35 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Experiment",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -755,14 +768,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Reading",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -824,6 +837,18 @@
     {
       "zh": "2026年10月16日，I4b 第四项落地（研究第146节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第四项：§9 的 Becoming.Lasting 一行（69 → 89 项定理）与外围实例 FiniteBranchingCorrespondence 一行，外围实例的列举加入它；总数改据新回执）。",
       "en": "16 October 2026, landing I4b item 4 (study section 146): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 4: the §9 row of Becoming.Lasting (69 → 89 theorems) and a peripheral-instance row for FiniteBranchingCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D24）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D24): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026-10-16 P111（新的增益从哪里来，研究 §148）：related 加 where-novelty-gain-comes-from。陈述与证明不变。",
+      "en": "16 October 2026, P111 (where novelty's gain comes from, study section 148): related adds where-novelty-gain-comes-from. Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Coupling.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Mechanism.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Experiment.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Unfolding.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Counterfactual.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Learning.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Reading.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Readings.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Coupling.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Experiment.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Counterfactual.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Learning.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Reading.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Readings.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
     }
   ],
   "text_versions": []

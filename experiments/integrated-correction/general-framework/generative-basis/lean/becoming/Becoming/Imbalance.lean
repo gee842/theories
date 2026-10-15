@@ -32,10 +32,10 @@ inert, never active and requiring nothing, as for the refinement of `Becoming.Re
   `Flow.withImbalance_acting_taking_iff`). Counting the imbalance turns balance into the activity
   premises at the added relatum: it adds nothing and removes nothing.
 
-**AI reading, pending Ren.** With the imbalance counted, balance is a property of the
-representation, and what it said of a world is said instead by the inactivity of one relatum.
-Whether to adopt the re-founding is Ren's; the laws of the core keep balance as a local condition
-(`Flow.BalancesOn`).
+**AI reading, adopted by Ren with the re-founding on 14 October 2026.** With the imbalance counted,
+balance is a property of the representation, and what it said of a world is said instead by the
+inactivity of one relatum. Ren adopted the re-founding on 14 October 2026 (“please, finish all”);
+the laws of the core keep balance as a local condition (`Flow.BalancesOn`).
 -/
 
 namespace Becoming
