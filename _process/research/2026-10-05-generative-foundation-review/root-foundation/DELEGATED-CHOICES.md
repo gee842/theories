@@ -1,8 +1,8 @@
 # 依 Ren 交托决定的读法 / Readings decided on Ren's delegation (P110)
 
-2026-10-15。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定。本记录是这些决定。全文由 AI 撰写（会话 “Overall progress and claims” [d8df1a]），引号中的 Ren 原话除外。每项决定是 **AI 依 Ren 2026-10-15 的交托决定**，不是 Ren 自己的决定；Ren 可以改其中任何一项。工作板上认领为 P110；同一交托之下推进的证明是 P111（`Becoming.Gain`）与 P112（`Becoming.Gluing`），结果在其记录与研究中。
+2026-10-15。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定。本记录是这些决定。全文由 AI 撰写（会话 “Overall progress and claims” [d8df1a]，现为 [6a12d4]），引号中的 Ren 原话除外。每项决定是 **AI 依 Ren 2026-10-15 的交托决定**，不是 Ren 自己的决定；Ren 可以改其中任何一项。工作板上认领为 P110；同一交托之下推进的证明是 P111（`Becoming.Gain`）与 P112（`Becoming.Gluing`），结果在其记录与研究中。
 
-On 15 October 2026, after P107 landed, Ren asked: “What's the best choices to make? please make best of your judgement, and push the frontier of completeness” ([words](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)). This is read as a delegation: the readings and names that the theory's section 8 lists as Ren's choices, that [CONTINUATION-GROUNDING-PLAN](CONTINUATION-GROUNDING-PLAN.md) §6 lists, and that the result records hold for Ren are decided by the AI with its best judgement. This record gives the decisions. It is written by the AI throughout (session “Overall progress and claims” [d8df1a]), except for Ren's words in quotation marks. Every decision is **decided by the AI on Ren's delegation of 15 October 2026**, not Ren's own decision, and Ren can reverse any of them. It is claimed on the work board as P110; the proofs pushed under the same delegation are P111 (`Becoming.Gain`) and P112 (`Becoming.Gluing`), whose results are in their records and the study.
+On 15 October 2026, after P107 landed, Ren asked: “What's the best choices to make? please make best of your judgement, and push the frontier of completeness” ([words](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)). This is read as a delegation: the readings and names that the theory's section 8 lists as Ren's choices, that [CONTINUATION-GROUNDING-PLAN](CONTINUATION-GROUNDING-PLAN.md) §6 lists, and that the result records hold for Ren are decided by the AI with its best judgement. This record gives the decisions. It is written by the AI throughout (session “Overall progress and claims” [d8df1a], now [6a12d4]), except for Ren's words in quotation marks. Every decision is **decided by the AI on Ren's delegation of 15 October 2026**, not Ren's own decision, and Ren can reverse any of them. It is claimed on the work board as P110; the proofs pushed under the same delegation are P111 (`Becoming.Gain`) and P112 (`Becoming.Gluing`), whose results are in their records and the study.
 
 ## 0. 怎样读这份记录 / How to read this record
 
@@ -83,9 +83,11 @@ On 15 October 2026, after P107 landed, Ren asked: “What's the best choices to 
 | D31 | 传递与约束 / transmission and binding | 读法采用；前提的地图不变 / reading adopted; the map unchanged |
 | D32 | 历史与分支 / histories and branching | 采用 / adopted |
 | D33 | 描述 / descriptions | 采用；P112 给出奇偶的确切规律 / adopted; P112 gives the exact law for parity |
-| D34 | 辨识 / identification | 采用，确切范围 / adopted with exact scope |
+| D34 | 辨识 / identification | “按情境”不读作界（Ren 2026-10-15 的话）；有限名以确切范围采用 / ‘situationally’ not read as the bound (Ren's words of 15 October); the finite name adopted with exact scope |
 | D35 | 由被支持者支持；关闭与打开 / support, closing | 采用 / adopted |
 | D36 | 名称 / names | AI 的工作名称采用；Ren 的用语仍属 Ren / the AI's working names adopted; Ren's terms stay Ren's |
+| D37 | 任意多条件下的识；尾 / registration with any number of conditions; the tail | 形式上读作律的敏感，识本身属 Ren；尾取确切意义 / formally the law's sensitivity, 识 itself Ren's; the tail in its exact sense |
+| D38 | 细分的计入；分辨率 / counting the refinement; resolution | 两项都以确切范围采用；研究笔记照旧 / both adopted with exact scope; the research notes unchanged |
 
 ## 1. 生生与生成的空间 / 生生 and the generative space
 
@@ -537,15 +539,15 @@ Where: section 8, seventeenth item; [where-a-move-is-formed](../../../../theorie
 
 ### D34. 辨识 / Identification
 
-所在：第 8 节第二十三项；[identification-where-bounded](../../../../theories/becoming/results/records/identification-where-bounded.md)。
+所在：第 8 节第二十三项；[identification-where-bounded](../../../../theories/becoming/results/records/identification-where-bounded.md)；Ren 2026-10-15 对这一读法的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)）。
 
-**决定。** 以确切范围采用：“the full truth can be derived situationally”读作“给出状态数的界 N，所识的一切从长 2N − 1 的记录推出”（两个之间为 N + N′ − 1，对每一对恰好；这一步对每个学习者最优，界只给出沉默，P83f）；有界时类的名读作它的有限的未来，作为“名可名”的一种精确化的类比，不作为对老子的解释。
-**理由。** 定理的读法，带其确切的界。
-**会改变它的。** Ren 的“situationally”所指不是界。
+**决定。** “按情境”不读作界。Ren 2026-10-15 回答这一读法时写道“not sure what's the reading 1, but reality is always situational”，这一项由 Ren 自己的话决定，不由交托决定。实在总是情境的；状态数的界 N 不是“情境”的意思，而是情境的有限记录确定所识一切的条件：有界 N 时，长 2N − 1 的记录推出所识的一切（两个之间为 N + N′ − 1，对每一对恰好；这一步对每个学习者最优，界只给出沉默，P83f）；有限多个状态而没有界时，学习者在一个它永远不能确认的步静止；没有有限的状态数时，没有学习者在每个世界上静止。所以 Ren 2026-10-12 的推测“the full truth can be derived situationally”在这些定理所说之处成立，在其外不成立；这里按 Ren 的“please keep note, not follow blindly”记下（同一来源）。确定的世界之外的部分（识不分开的，分支与概率的世界）由工作板上的另一项承担。有界时类的名读作它的有限的未来，以确切范围采用，作为“名可名”的一种精确化的类比，不作为对老子的解释。
+**理由。** Ren 自己的话；定理的读法，带其确切的界。
+**会改变它的。** Ren 对“situational”的进一步说明；有限名的读法，Ren 的另一读法。
 
-**Decision.** Adopted with exact scope: “the full truth can be derived situationally” reads as “given the bound N on states, everything registered is derived from the record of 2N − 1 steps” (N + N′ − 1 between two, exact for every pair; that step is optimal for every learner, the bound giving only silence, P83f); with a bound, a class's name reads as its finite future, as an analogy for a precise form of 名可名, not as an interpretation of Laozi.
-**Reasons.** The theorems' readings, with their exact bounds.
-**What would change it.** Ren's “situationally” meaning something other than the bound.
+**Decision.** “Situationally” is not read as the bound. Answering that reading on 15 October 2026, Ren wrote “not sure what's the reading 1, but reality is always situational”; Ren's own words decide this item, not the delegation. Reality is always situational; a bound N on states is not what “situational” means but the condition under which a situation's finite record fixes everything registered: with the bound N, the record of 2N − 1 steps derives everything registered (N + N′ − 1 between two, exact for every pair; that step is optimal for every learner, the bound giving only silence, P83f); with finitely many states and no bound, the learner rests at a step it can never certify; with no finite count of states, no learner rests on every world. So Ren's speculation of 12 October 2026, “the full truth can be derived situationally”, holds where these theorems say and not beyond; this is noted as Ren asked, “please keep note, not follow blindly” (same source). What lies beyond determined worlds (what the registration does not separate; branching and probabilistic worlds) is held by another item on the work board. With a bound, a class's name reads as its finite future, adopted with exact scope as an analogy for a precise form of 名可名, not as an interpretation of Laozi.
+**Reasons.** Ren's own words; the theorems' readings, with their exact bounds.
+**What would change it.** Ren saying more of what “situational” means; for the finite name, another reading by Ren.
 
 ### D35. 由被支持者支持；关闭与打开 / Support from the supported; closing and opening
 
@@ -558,6 +560,18 @@ Where: section 8, seventeenth item; [where-a-move-is-formed](../../../../theorie
 **Decision.** Support gained only from the supported reads Ren's “it is about if the continuation of becoming continues itself” (10 October 2026): with nothing given from beyond, what can form is opened only by what the supported give. The formalization of closing needing net draw and opening needing net giving is adopted (Ren confirmed its reading).
 **Reasons.** The theorems' readings.
 **What would change it.** Ren's “continues itself” meaning something other than the source of support.
+
+### D38. 细分的计入与分辨率 / Counting the refinement, and resolution
+
+所在：[rest-with-refinement-counted](../../../../theories/becoming/results/records/rest-with-refinement-counted.md)、[rest-at-every-resolution](../../../../theories/becoming/results/records/rest-at-every-resolution.md)。这两项记录把读法留给 Ren，而第 8 节没有列出它们；编号在 D37 之后，因为它们在核对记录时才被找出。
+
+**决定。** 两项读法以确切范围采用。（1）算入细分：量是做出的差别，所以更细的分辨本身是一个生成，须有所给予。这是 Ren 2026-10-11 所给方向的展开（Ren 已确认“the case of 0”读作零前提）；它是读法，不是推出的：`Flow.balancesAt_iff_withRefinement` 是恒等式，不算入细分的规律也照旧陈述。（2）不算入细分时，以步 T 的单位计的总水平是有理量，细化单位即以更细的分辨率表示量；按比例的损失是效率的上界，1/p 是计入变化的尺度；在这一读法下，效率有界时，被围住的任何固定尺度的生成都会停止，在围住之内只能越来越细或越来越接近无损而继续。这只对有理量与离散步陈述，连续时间与实数量仍开放。这些不算入细分的规律照 Ren 的选择保留为研究笔记，本决定不改动这一点。
+**理由。** 两项都在定理的确切范围之内，不加前提：（1）展开 Ren 所给的方向，其零前提的读法 Ren 已确认；（2）是有理量下定理的直接读法。
+**会改变它的。** Ren 把细分读作表示的改变（那就属于 Ren 保留的表示决定，§10），或给出量的另一种读法。
+
+**Decision.** Both readings are adopted with exact scope. (1) Counting the refinement: an amount is a difference made, so a finer distinction is itself a becoming that something must give. This elaborates the direction Ren gave on 11 October 2026 (Ren confirmed the reading of “the case of 0” as the case of zero premises); it is a reading, not derived: `Flow.balancesAt_iff_withRefinement` is an identity, and the laws without counting the refinement are stated too. (2) Without counting the refinement, the total standing counted in the unit of step T is a rational quantity, refining the unit representing amounts at finer resolution; loss in proportion is an upper bound on efficiency, and 1/p is the size at which change is counted; on this reading, with bounded efficiency, enclosed generation of any fixed size stops, and inside an enclosure it can continue only ever finer or ever closer to lossless. This is stated for rational amounts and discrete steps; continuous time and real amounts stay open. These laws without counting the refinement stay research notes by Ren's choice, which this decision does not change.
+**Reasons.** Both lie within the theorems' exact scope and add no premise: (1) elaborates the direction Ren gave, whose zero-premise reading Ren confirmed; (2) is the direct reading of the theorems for rational amounts.
+**What would change it.** Ren reading the refinement as a change of representation (it would then belong to the representation decisions Ren reserved, section 10), or another reading of amounts.
 
 ## 9. 名称 / Names
 
@@ -577,7 +591,7 @@ Where: section 8, seventeenth item; [where-a-move-is-formed](../../../../theorie
 
 ## 10. 不在交托之内的 / Not within the delegation
 
-- **Ren 自己的文本与用语。** OPENING 及其脚注；静止的中文用语（归于静止或停）与标题“the rest theorem”（P58c 的工作板行）；Ren 命名的“closure bounds change”（[laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md) 指出约束变化的是耗尽，不是封闭；名称仍属 Ren）；“识”与“理”作为 Ren 的读法；Ren 已确认的读法。
+- **Ren 自己的文本与用语。** OPENING 及其脚注；静止的中文用语（归于静止或停）与标题“the rest theorem”（P58c 的工作板行）；Ren 命名的“closure bounds change”（[laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md) 指出约束变化的是耗尽，不是封闭；名称仍属 Ren）；“识”与“理”作为 Ren 的读法；Ren 已确认的读法，以及 Ren 后来的话所决定的（D34 的“按情境”）。
 - **Ren 的陈述。** Ren 是否持有不变之步（D21）；任何“某读法是否是 Ren 的读法”。
 - **根据。** 第二部分那一条断言的规范根据；称生成的空间为好的根据（§6.13 的“应当”）；N 的哲学根据与 A 的外在论辩护；读法选择的哲学论证（[metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md)）。它们是要论证的主张，不是要选择的读法。
 - **I4。** 整合一线的所有者持有。
@@ -585,7 +599,7 @@ Where: section 8, seventeenth item; [where-a-move-is-formed](../../../../theorie
 - **审查的决定。** 两项记录（[seeking-boundary](../../../../theories/becoming/results/records/seeking-boundary.md)、[target-capture](../../../../theories/becoming/results/records/target-capture.md)）说是否需要独立审查由 Ren 决定：那是检查的决定，不是读法。
 - **经验对应与进一步的证明** 留在第 8 节各自的类中。
 
-- **Ren's own texts and terms.** OPENING and its footnote; the Chinese term for coming to rest (归于静止 or 停) and the heading “the rest theorem” (the P58c row of the work board); “closure bounds change”, Ren's name ([laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md) notes that running down, not closure, bounds change; the name stays Ren's); 识 and 理 as Ren's readings; readings Ren has confirmed.
+- **Ren's own texts and terms.** OPENING and its footnote; the Chinese term for coming to rest (归于静止 or 停) and the heading “the rest theorem” (the P58c row of the work board); “closure bounds change”, Ren's name ([laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md) notes that running down, not closure, bounds change; the name stays Ren's); 识 and 理 as Ren's readings; readings Ren has confirmed, and those Ren's later words decide (D34's “situationally”).
 - **Ren's testimony.** Whether Ren holds the step of invariance (D21); any question whether a reading is Ren's.
 - **Warrant.** The normative warrant of Part II's one assertion; the warrant for calling the generative space good (the “ought” of section 6.13); the philosophical warrant of N and the externalist defence of A; the philosophical argument for a reading choice ([metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md)). These are claims to be argued, not readings to be chosen.
 - **I4.** Held by the integration stream's owner.
@@ -607,5 +621,6 @@ Where: section 8, seventeenth item; [where-a-move-is-formed](../../../../theorie
 
 - Ren 2026-10-15 的交托（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）与[指令登记](../../../RESEARCH-DIRECTIVES.md)中的一项。/ Ren's delegation of 15 October 2026 and its entry in the [directive register](../../../RESEARCH-DIRECTIVES.md).
 - P109 所有者的[读法说明](development/becoming-p110-landing/P109-READING-NOTES.md)（D24）。/ The P109 owner's [notes on the readings](development/becoming-p110-landing/P109-READING-NOTES.md) (D24).
+- Ren 2026-10-15 对“按情境”这一读法的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)），决定 D34 的第一部分。/ Ren's reply of 15 October 2026 on the reading of “situationally” ([words](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)), which decides the first part of D34.
 - 早先 AI 依 Ren 交托所作的决定：继续之间以可能性比较（2026-10-11，§6.12）。/ The AI's earlier decision on Ren's delegation: comparing courses on possibilities (11 October 2026, section 6.12).
 - 同一交托之下推进的证明：P111 `Becoming.Gain`（新的增益从哪里来）与 P112 `Becoming.Gluing`（奇偶约束下语境中的读法何时粘合），见其记录与研究。/ The proofs pushed under the same delegation: P111 `Becoming.Gain` (where novelty's gain comes from) and P112 `Becoming.Gluing` (when readings in context glue, for parity constraints), in their records and the study.
