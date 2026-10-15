@@ -459,7 +459,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "7f8ddc2edd8783f7f670d26ced609b881a665e2c18a86bd43b2fd4b235b71dc8",
+      "sha256": "a0302948019608ab86f48702bedc2d7ee5c89d7e4eb51626b86c5fb5be97330b",
       "declarations": [
         "Becoming.Valuation",
         "Becoming.Valuation.significant_iff"
@@ -473,7 +473,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0"
+      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
@@ -793,6 +793,10 @@
     {
       "zh": "2026-10-14 迁移到 schema 2（开放问题计划 F 项：lint 发现最多的 45 条 schema-1 记录的迁移；Ren：“please, do all”，经整合会话转达）：长标题改为短名“以之为生与世系”，原标题的内容成为陈述，连同主张的第一句（逐步读法、保留 living、加在交互之上）；主张拆为 9 条规律；限制分入“未表明”、前提与通用边界；证据成为一段。“它与交互一样不是免费的：它需要……”中“不是免费的”（市场词）改为直接说它需要什么（“与交互一样需要实际的汲取与能落空的依存”），内容是原句冒号后的部分。“不用伦理前提，也不用 Lean 公理”留在前提中，与“N_rel 本身仍是前提”同列，并写明 N_rel 是到达之律的前件；没有引用通用边界 no-ethical-premise，因为 N_rel 是规范前提（见 metaethical-core-characterization），该键的引用条件要求前提中没有伦理前提。对应中“两种关系的定义都不含体现”一句移入一类读法的前提，“所以不由空的给予或不参与者的给予项造成”由规律 5 承担，“不推出生起是好的”由“未表明”第一项承担。规律、前提、状态、证明绑定与来源哈希均未改变。每句旧文本的去向见迁移对照表 [living-on-and-descent.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/living-on-and-descent.md)；迁移前的完整记录为 text_versions 末项。",
       "en": "14 October 2026, migrated to schema 2 (item F of the open-issues plan: the migration of the 45 schema-1 records with the most lint findings; Ren: “please, do all”, relayed by the integrating session): the long title became the short name “Living on and descent”, its content now the statement together with the claim's first sentence (the stepwise reading, living kept, each relation added to interaction); the claim became 9 laws; the limitations went to does-not-show items, hypotheses and standard boundaries; the evidence became one paragraph. “Like interaction it is not free: it needs …” now says directly what it needs (“Like interaction, living on needs an actual drawing and a dependence that can fail”), the content of the old sentence after its colon; the zh 不是免费的 was a market word. “No ethical premise and no Lean axiom is used” stays in the hypotheses, next to “N_rel itself remains a premise”, which now says that N_rel is an antecedent of the reaching laws; the shared key no-ethical-premise is not cited, because N_rel is a normative premise (see metaethical-core-characterization) and the key is cited only where the hypotheses hold no ethical premise. In the correspondence, the sentence that neither definition mentions embodiment moved to the one-kind hypothesis, “so neither empty giving nor the give entry of a formation taking no part makes it” is carried by law 5, and “does not show that arising is good” by the first does-not-show item. No law, premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [living-on-and-descent.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/living-on-and-descent.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Metaethics.lean（整合 I3a：新增比较律（Comparison.separates、climbs、outgrows）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Metaethics.lean (integration I3a: comparison laws added (Comparison.separates, climbs, outgrows); earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged)."
     }
   ],
   "text_versions": [

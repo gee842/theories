@@ -220,6 +220,27 @@ def snapshot_record(ident, settings=None):
             'note': {'zh': f'迁移前的记录原始字节（schema {schema}）。', 'en': f'Exact record bytes before the migration (schema {schema}).'}}
 
 
+def receipt_declaration_names(data):
+    """Declaration names a receipt lists for its modules, in any of the receipt formats in use:
+    `declarations` and `audits` entries (names or objects with a `name`), `audited_declarations`
+    and `empty_axiom_audits` lists, and the keys of `axioms_by_declaration`, `axiom_dependencies`,
+    `standard_axiom_audits`, `standard_dependency_audits`, `nonempty_audits` and `empty_axiom_audits`."""
+    names = set()
+    for m in data.get('modules', []) if isinstance(data.get('modules'), list) else []:
+        if not isinstance(m, dict):
+            continue
+        for key in ('declarations', 'audits', 'audited_declarations', 'empty_axiom_audits',
+                    'axioms_by_declaration', 'axiom_dependencies', 'standard_axiom_audits',
+                    'standard_dependency_audits', 'nonempty_audits'):
+            value = m.get(key)
+            if isinstance(value, dict):
+                names |= {k for k in value if isinstance(k, str)}
+            elif isinstance(value, list):
+                names |= {d.get('name') if isinstance(d, dict) else d for d in value
+                          if isinstance(d, str) or (isinstance(d, dict) and isinstance(d.get('name'), str))}
+    return names
+
+
 def validate(records):
     from tools.research import style
     errors, drift = [], []
@@ -329,8 +350,7 @@ def validate(records):
                 module = binding['sha256_pointer'].rsplit('/', 1)[-1]
                 elaborated = {d.get('name') for m in data.get('modules', []) if isinstance(m, dict) and m.get('module') == module
                               for d in m.get('declarations', []) if isinstance(d, dict)}
-                listed |= {d.get('name') for m in data.get('modules', []) if isinstance(m, dict)
-                           for d in m.get('declarations', []) if isinstance(d, dict) and d.get('name')}
+                listed |= receipt_declaration_names(data)
                 unknown = [n for n in source.get('declarations', []) if elaborated and n not in elaborated]
                 if unknown:
                     raise ValueError(f'declarations not elaborated in {module}: {", ".join(unknown)}')

@@ -386,12 +386,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0"
+      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "fa7e01a63746a05a47147f5756d9746d5df951a6646079622ad9b7091bb7b2ec"
+      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -657,6 +657,10 @@
     {
       "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述、前提、反例与对应不变；主张拆为 10 条规律，各按其定理的结论陈述（Web.GainsSupport.rises、Web.LosesSupport.falls 与 Flow.gains_from_supported 的结论是并非所需条件或被支持的给予者全都没有，所以规律写作“……都不……就不能……”）；下一步中已完成的局部规律成为第 8 条规律；限制分入“未表明”、通用边界与前提（重复者）；验证范围与下一步中的轮次标签 P50、P57–P61 移出（保留在沿革与快照）。前提、状态、证明绑定与来源哈希均未改变。验证范围按证明绑定写明当前绑定。每句旧文本的去向见迁移对照表 [support-from-the-supported.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/support-from-the-supported.md)；迁移前的完整记录为 text_versions 末项。",
       "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement, hypotheses, counterexamples and correspondence are kept; the claim was split into 10 laws, each stated with its theorem's conclusion (Web.GainsSupport.rises, Web.LosesSupport.falls and Flow.gains_from_supported conclude that not every required condition, or supported giver, is absent, so the laws say “cannot … with no …”); the next step's completed local laws became law 8; limitations went to does-not-show items, standard boundaries and the hypotheses (where they repeated them); the round labels P50 and P57–P61 left the validation scope and next step (they stay in history and the snapshot). No premise, status, proof binding or source hash changed. The validation scope names the current bindings from the proof bindings. Every earlier sentence is mapped in the migration table [support-from-the-supported.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/support-from-the-supported.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
     }
   ],
   "text_versions": [

@@ -415,7 +415,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "6f0ac24745c6d4d6a337239fa709c55a7242bf4ed395974163b0c1bd9fc62c62",
+      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
       "declarations": [
         "Becoming.withinClosure_iff_closure",
         "Becoming.Closure"
@@ -465,12 +465,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0"
+      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "fa7e01a63746a05a47147f5756d9746d5df951a6646079622ad9b7091bb7b2ec"
+      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -494,9 +494,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "role": "receipt",
-      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
       "declarations": []
     },
     {
@@ -516,7 +516,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -718,6 +718,10 @@
     {
       "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述、前提与反例不变；主张拆为 11 条规律，各按其定理的条件陈述（共同供给条件写明每个形成在该步在场，这是 Flow.feeding_whole_of_common 的前提；栖居者的所及闭包写作不含清除者，这是 Clearing.reach_centred 所陈述的）；限制分入“未表明”、通用边界与对应；主张与对应中的轮次标签 P40 移出（保留在沿革与快照）；Static 的规律只陈述 Static.shares_unaffected 证明的那一方向。前提、状态、证明绑定与来源哈希均未改变。验证范围按证明绑定写明当前绑定；P89 的适配说明保留在沿革（已有条目）。每句旧文本的去向见迁移对照表 [levels-of-closure.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/levels-of-closure.md)；迁移前的完整记录为 text_versions 末项。",
       "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement, hypotheses and counterexample are kept; the claim was split into 11 laws, each stated with its theorem's conditions (the common feeding condition names every formation as taking part at the step, as Flow.feeding_whole_of_common requires; the dweller's reach closure is said not to hold the clearer, which is what Clearing.reach_centred states); limitations went to does-not-show items, standard boundaries and the correspondence; the round label P40 left the claim and correspondence (it stays in history and the snapshot); the Static law states the one direction Static.shares_unaffected proves. No premise, status, proof binding or source hash changed. The validation scope names the current bindings from the proof bindings; the P89 adapter note stays in history (existing entry). Every earlier sentence is mapped in the migration table [levels-of-closure.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/levels-of-closure.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Bridge.lean（整合 I3a：七个外围族的实例节（RelationalGrounding、ProtectionPriorityRival、ChanceAdequacy、FallibleInspection、BecomingReversibility、DynamicConsequences、DerivedHistoryLaw）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Bridge.lean (integration I3a: instance sections for seven periphery families (RelationalGrounding, ProtectionPriorityRival, ChanceAdequacy, FallibleInspection, BecomingReversibility, DynamicConsequences, DerivedHistoryLaw); earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
     }
   ],
   "text_versions": [

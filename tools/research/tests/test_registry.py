@@ -39,6 +39,25 @@ class SourceDeclarationTests(unittest.TestCase):
         self.assertFalse(registry.declaration_in_source("def Example.value' : Nat := 0", 'Example.value'))
 
 
+class ReceiptDeclarationNameTests(unittest.TestCase):
+    def test_every_receipt_format_lists_its_names(self):
+        receipt = {'modules': [
+            {'module': 'Becoming.A', 'declarations': [{'kind': 'theorem', 'name': 'Becoming.a'}],
+             'axiom_dependencies': {'Becoming.a': []}},
+            {'audited_declarations': ['Generative.Model.b'], 'axioms_by_declaration': {'Generative.Model.c': []}},
+            {'empty_axiom_audits': ['Generative.D.d'], 'standard_axiom_audits': {'Generative.D.e': ['propext']},
+             'standard_dependency_audits': {'Generative.D.f': ['propext']}, 'nonempty_audits': {'Generative.D.g': ['propext']}},
+            {'declarations': ['Generative.E.h'], 'audits': [{'name': 'Generative.E.i'}], 'empty_axiom_audits': 0},
+            'not a module']}
+        self.assertEqual(registry.receipt_declaration_names(receipt),
+                         {'Becoming.a', 'Generative.Model.b', 'Generative.Model.c', 'Generative.D.d', 'Generative.D.e',
+                          'Generative.D.f', 'Generative.D.g', 'Generative.E.h', 'Generative.E.i'})
+
+    def test_receipt_without_module_list_lists_nothing(self):
+        self.assertEqual(registry.receipt_declaration_names({'modules': {'x': 1}}), set())
+        self.assertEqual(registry.receipt_declaration_names({}), set())
+
+
 class RegistryTests(unittest.TestCase):
     def setUp(self):
         self.records = [json.loads(p.read_text()) for p in sorted(registry.RECORDS.glob('*.json'))]

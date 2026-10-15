@@ -218,12 +218,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0"
+      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "fa7e01a63746a05a47147f5756d9746d5df951a6646079622ad9b7091bb7b2ec"
+      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -383,6 +383,10 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批：审读以下改动后重新绑定：DECIDABILITY-INVENTORY.md（在核心回执 20261014T141427.442103Z 上重新生成；整合 I1 的三项 Likeness 定理以排中律为假设，该类 11 → 14；“陈述依赖它”一类不变，仍为 314 条，本记录的陈述与局限不变）。",
       "en": "14 October 2026, batch 5 of the open-issues plan: reconciled after reading the changes to DECIDABILITY-INVENTORY.md (regenerated on core receipt 20261014T141427.442103Z; integration I1's three Likeness theorems take excluded middle as a hypothesis, so that class goes 11 → 14; the class of statements depending on it is unchanged at 314, and this record's statement and limitations stand)."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
     }
   ]
 }

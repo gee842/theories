@@ -346,7 +346,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "3dc81c57525c2c5fdfca8222e39ddc0c4de905ddb97eb03f705bb9dc3ccd586c",
+      "sha256": "b25b4e8eb827f4d037e779584b98e1c836ca08a84656399203de63419b8f5216",
       "declarations": [
         "Becoming.Law.Returns"
       ]
@@ -377,13 +377,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0",
+      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "fa7e01a63746a05a47147f5756d9746d5df951a6646079622ad9b7091bb7b2ec",
+      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f",
       "declarations": []
     },
     {
@@ -396,6 +396,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "role": "receipt",
       "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "role": "receipt",
+      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
       "declarations": []
     }
   ],
@@ -416,7 +422,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -536,6 +542,10 @@
     {
       "en": "14 October 2026, landing the schema-2 migration (open-issues plan F): the four declarations the laws name in their text, `Branching.Returns.run`, `Branching.Determined.moves_decide`, `Run.enters_returning` and `Branching.Transit.returning_not_invariant`, all in Branching.lean, are added to that reference and cited by laws 3, 6 and 8 and by the first does-not-show item, as the migration flagged; statements unchanged.",
       "zh": "2026年10月14日，schema 2 迁移落地（开放问题计划 F）：定律文字中提到的四项声明 `Branching.Returns.run`、`Branching.Determined.moves_decide`、`Run.enters_returning` 与 `Branching.Transit.returning_not_invariant`（都在 Branching.lean）加入该引用，并由第3、6、8条定律与第一条“不表明”项引用，如迁移所标；陈述不变。"
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Recurrence.lean（整合 I3a：新增“所及保持恰当返回”；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Recurrence.lean (integration I3a: reach kept exactly when return added; earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
     }
   ],
   "text_versions": [

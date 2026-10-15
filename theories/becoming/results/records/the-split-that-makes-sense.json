@@ -415,7 +415,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "0959f4804f5afba1b16f69851f7f29f086519f89e74b77a3220fa8bcdbee878d",
+      "sha256": "d7cf089a726aacef3def03dce987b04ddc5ffa5e91f00098a27a88d0fde481cb",
       "declarations": [
         "Becoming.Alike",
         "Becoming.Alike.refl",
@@ -443,7 +443,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "3dc81c57525c2c5fdfca8222e39ddc0c4de905ddb97eb03f705bb9dc3ccd586c",
+      "sha256": "b25b4e8eb827f4d037e779584b98e1c836ca08a84656399203de63419b8f5216",
       "declarations": [
         "Becoming.Law.orbit",
         "Becoming.Law.orbit_add",
@@ -484,13 +484,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0",
+      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "fa7e01a63746a05a47147f5756d9746d5df951a6646079622ad9b7091bb7b2ec",
+      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f",
       "declarations": []
     },
     {
@@ -510,6 +510,12 @@
       "role": "receipt",
       "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "role": "receipt",
+      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -522,7 +528,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -536,7 +542,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -656,6 +662,10 @@
     {
       "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述、前提（一个工作项标签改为其模块名 Becoming.Unfolding）、反例与下一步不变；主张拆为 11 条规律，各条对照其 Lean 声明核读；限制分入“未表明”、通用边界与前提（重复者）。前提、状态、证明绑定与来源哈希均未改变。工作项标签改为模块名（Becoming.Unfolding、Becoming.Learning、Becoming.Mechanism）；对应保留 Ren 的原话与读法，其中与 Becoming.Learning 的同一即规律 11，工作项与整合文档节号见第一条沿革。证据段写明证明绑定的回执，计数见回执与迁移前的记录。每句旧文本的去向见迁移对照表 [the-split-that-makes-sense.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/the-split-that-makes-sense.md)；迁移前的完整记录为 text_versions 末项。",
       "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement, hypotheses (one work-item label replaced by its module name, Becoming.Unfolding), counterexamples and next step are kept; the claim was split into 11 laws, each read against its Lean declarations; limitations went to does-not-show items, standard boundaries and the hypotheses (where they repeated them). No premise, status, proof binding or source hash changed. Work-item labels became module names (Becoming.Unfolding, Becoming.Learning, Becoming.Mechanism); the correspondence keeps Ren's words and the readings, its identities with Becoming.Learning are law 11, and the work item and integration-note section are in the first history entry. The evidence paragraph names the binding receipts of the proof bindings, the counts staying in the receipts and the earlier record. Every earlier sentence is mapped in the migration table [the-split-that-makes-sense.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/the-split-that-makes-sense.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Unfolding.lean（整合 I3a：新增“规律由其迹固定”（same_steps_iff_traces）；原有陈述不变）；Recurrence.lean（整合 I3a：新增“所及保持恰当返回”；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Unfolding.lean (integration I3a: a law is fixed by its traces (same_steps_iff_traces) added; earlier statements unchanged); Recurrence.lean (integration I3a: reach kept exactly when return added; earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
     }
   ],
   "text_versions": [

@@ -211,7 +211,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "6f0ac24745c6d4d6a337239fa709c55a7242bf4ed395974163b0c1bd9fc62c62",
+      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
       "declarations": [
         "Becoming.g0_iff",
         "Becoming.securesPositiveGround_iff",
@@ -321,6 +321,10 @@
     {
       "zh": "2026-10-14，整合 I1：脊柱把本结果的 G0（g0_iff）、确保的正面根据（securesPositiveGround_iff）、稳健回应（robust_iff_commonResponse）、标准修订（revise_is_after）与共同接续束的传递（Frame.map_preserves_bundles）读作自己的，并由 Becoming.Significance 的公理推出中心定理：偶然生成具有正面根据（contingent_generation_of_unrestricted）。脊柱运行 20261014T100026.593496Z 将本模块作为继承模块编译，公理报告如验证范围所列。有限积分、见证构造与证据例子未在脊柱上重述。",
       "en": "14 October 2026, integration I1: the spine reads this result's G0 (g0_iff), secured positive ground (securesPositiveGround_iff), robust responses (robust_iff_commonResponse), standards revision (revise_is_after) and joint-bundle transport (Frame.map_preserves_bundles) as its own, and derives the central theorem, that contingent generation has positive ground, from the axiom of Becoming.Significance (contingent_generation_of_unrestricted). The spine run 20261014T100026.593496Z compiles the module as inherited, with the axiom reports the validation scope lists. The finite integral, the witness construction and the evidence examples are not restated on the spine."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Bridge.lean（整合 I3a：七个外围族的实例节（RelationalGrounding、ProtectionPriorityRival、ChanceAdequacy、FallibleInspection、BecomingReversibility、DynamicConsequences、DerivedHistoryLaw）；原有陈述不变）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Bridge.lean (integration I3a: instance sections for seven periphery families (RelationalGrounding, ProtectionPriorityRival, ChanceAdequacy, FallibleInspection, BecomingReversibility, DynamicConsequences, DerivedHistoryLaw); earlier statements unchanged)."
     }
   ],
   "overview": {

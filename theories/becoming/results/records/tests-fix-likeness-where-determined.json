@@ -456,7 +456,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "6f0ac24745c6d4d6a337239fa709c55a7242bf4ed395974163b0c1bd9fc62c62",
+      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
       "declarations": [
         "Becoming.Frame.ofModel",
         "Becoming.branching_bisimulation_iff",
@@ -473,7 +473,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "0959f4804f5afba1b16f69851f7f29f086519f89e74b77a3220fa8bcdbee878d",
+      "sha256": "d7cf089a726aacef3def03dce987b04ddc5ffa5e91f00098a27a88d0fde481cb",
       "declarations": [
         "Becoming.Bisimulation",
         "Becoming.Alike",
@@ -508,13 +508,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0",
+      "sha256": "67c472de8d74fdcf8bf890e9ffba45c33663537ad178a005efdb5cd1725f915d",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "fa7e01a63746a05a47147f5756d9746d5df951a6646079622ad9b7091bb7b2ec",
+      "sha256": "1c39b546e7ec54c3a548a41b10b5646720a21b9ae37fbba4e7f16b23af28738f",
       "declarations": []
     },
     {
@@ -524,9 +524,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "role": "receipt",
-      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
       "declarations": []
     },
     {
@@ -558,7 +558,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -586,7 +586,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -703,6 +703,10 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Likeness.lean（整合 I1：新增五项定理（各动作结果列出时以排中律为假设；目标唯一）；原有陈述不变）；Bridge.lean（整合 I1：same_iff_bisimilar 作为以排中律为假设的核心定理、separated_iff，以及自身之善第二步即剖面上的 N_rel；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（第十七次审查后更正 §9 各行（Continuation“共同净给予”；LossMatching 的方向；Retrodiction 的两值与两端读数相同；“受支持的完成”）；新增 Postponement 行；总数改据新回执；整合 I1 后的 Likeness 与 Bridge 行）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Likeness.lean (integration I1: five theorems added (excluded middle as a hypothesis where each move's outcomes are listed; target uniqueness); earlier statements unchanged); Bridge.lean (integration I1: same_iff_bisimilar as a core theorem with excluded middle a hypothesis, separated_iff, and the self-good second step as N_rel on profiles; earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1)."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Bridge.lean（整合 I3a：七个外围族的实例节（RelationalGrounding、ProtectionPriorityRival、ChanceAdequacy、FallibleInspection、BecomingReversibility、DynamicConsequences、DerivedHistoryLaw）；原有陈述不变）；Unfolding.lean（整合 I3a：新增“规律由其迹固定”（same_steps_iff_traces）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Bridge.lean (integration I3a: instance sections for seven periphery families (RelationalGrounding, ProtectionPriorityRival, ChanceAdequacy, FallibleInspection, BecomingReversibility, DynamicConsequences, DerivedHistoryLaw); earlier statements unchanged); Unfolding.lean (integration I3a: a law is fixed by its traces (same_steps_iff_traces) added; earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
     }
   ],
   "text_versions": [
