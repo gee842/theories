@@ -77,6 +77,7 @@ Aliases / 别名: `Becoming.Situations.upto`, `Becoming.Situations.sum_upto`, `B
 
 - 2026-10-16：新增，按 Ren 2026-10-16 的说明（“the situation makes it true”）与其问题（“can you see what to do with my clarification above?”）（P117）；研究 §144。 / 16 October 2026: added, following Ren's clarification of 16 October (“the situation makes it true”) and question (“can you see what to do with my clarification above?”) (P117); study section 144.
 - 2026-10-16：Ren 取了这些读法（“yes, i take those readings”）；correspondence 标为 Ren 已取，next_delta 去掉“Ren 对读法的判断”；研究 §144。原文：“读法（AI 对 Ren 的话的读法，待 Ren）”。 / 16 October 2026: Ren took these readings (“yes, i take those readings”); correspondence marks them as taken and next_delta drops Ren's judgment on the readings; study section 144. Former wording: “Readings (the AI's reading of Ren's words, pending Ren)”.
+- 2026-10-16：只改措辞，重新绑定哈希：研究 §144 的读法标题由“待 Ren”改为“Ren 同日已取”，来源文件写明“第一条消息”；声明与结论不变。 / 16 October 2026: wording only, hashes rebound: study section 144's readings heading now reads “taken by Ren the same day” in place of “pending Ren”, and the source names “the first message”; no declaration or claim changes.
 
 </details>
 

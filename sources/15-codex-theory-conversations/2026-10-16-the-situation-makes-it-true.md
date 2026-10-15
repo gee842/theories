@@ -1,10 +1,10 @@
 # Ren: the theory describes what everything obeys; the situation makes it true
 
-16 October 2026, Asia/Bangkok. This file holds two exact user messages from the Claude Code conversation in `/Users/ren/theories` (Claude desktop app, session "Current math core (fork)"). AI-authored context follows it under its own heading. It is not a complete export of the conversation.
+16 October 2026, Asia/Bangkok. This file holds two exact user messages from the Claude Code conversation in `/Users/ren/theories` (Claude desktop app, session "Current math core (fork)"). AI-authored context follows them under its own heading. It is not a complete export of the conversation.
 
 ## Ren's words
 
-The message answers two readings the AI had offered after P116 landed. Ren quoted each reading and wrote beneath it:
+The first message answers two readings the AI had offered after P116 landed. Ren quoted each reading and wrote beneath it:
 
 > \* A branch at a parting is settled only when it is taken. I read this as the form the open future takes in identification.
 >

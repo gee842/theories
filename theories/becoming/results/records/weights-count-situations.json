@@ -281,7 +281,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "4fa415c72b068f6693aa34e450eb3e8d29de3f6f2223e8a9fa1b918b14d2bdd7",
+      "sha256": "aad09764bdcdd9209154d546b95b7ecff5a518aecd54942cb5d827526f1650ea",
       "declarations": []
     },
     {
@@ -293,7 +293,7 @@
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md",
       "role": "provenance",
-      "sha256": "389f7b68cc90e2b62afb8a360494fb1601572d22490563edc056ca1cf87ca058",
+      "sha256": "9501978d539ed71b817ab559435158329c183ffbdf1f5c4cd4b1d36107f23248",
       "declarations": []
     },
     {
@@ -348,6 +348,10 @@
     {
       "zh": "2026-10-16：Ren 取了这些读法（“yes, i take those readings”）；correspondence 标为 Ren 已取，next_delta 去掉“Ren 对读法的判断”；研究 §144。原文：“读法（AI 对 Ren 的话的读法，待 Ren）”。",
       "en": "16 October 2026: Ren took these readings (“yes, i take those readings”); correspondence marks them as taken and next_delta drops Ren's judgment on the readings; study section 144. Former wording: “Readings (the AI's reading of Ren's words, pending Ren)”."
+    },
+    {
+      "zh": "2026-10-16：只改措辞，重新绑定哈希：研究 §144 的读法标题由“待 Ren”改为“Ren 同日已取”，来源文件写明“第一条消息”；声明与结论不变。",
+      "en": "16 October 2026: wording only, hashes rebound: study section 144's readings heading now reads “taken by Ren the same day” in place of “pending Ren”, and the source names “the first message”; no declaration or claim changes."
     }
   ],
   "text_versions": []
