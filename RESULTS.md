@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-223 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+224 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -101,6 +101,7 @@
 | [所携带的差别怎样增长 / How a carried difference grows](theories/becoming/results/records/how-a-carried-difference-grows.md) | recorded-checked | [Loops.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean) |
 | [回路怎样在展开中形成 / How loops form within the unfolding](theories/becoming/results/records/how-loops-form.md) | recorded-checked | [Closing.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean) |
 | [差别到达多少 / How much difference arrives](theories/becoming/results/records/how-much-difference-arrives.md) | recorded-checked | [Propagation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean) |
+| [耦合多常作用：安定、失控与其速度 / How often couplings act: settling, runaway and its rate](theories/becoming/results/records/how-often-couplings-act.md) | recorded-checked | [Frequency.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean) |
 | [有界之处的辨识 / Identification where bounded](theories/becoming/results/records/identification-where-bounded.md) | recorded-checked | [Identification.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean) |
 | [运行分开之处的辨识 / Identification where runs part](theories/becoming/results/records/identification-where-runs-part.md) | recorded-checked | [Parting.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean) |
 | [跨步的同一 / Identity across steps](theories/becoming/results/records/identity-across-steps.md) | recorded-checked | [Identity.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean) |

@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 44 | 889 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 265 | 8,853 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 266 | 8,936 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -309,6 +309,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [FormedSelection.lean](lean-declarations/shared.md#module-c9712e044702) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [FormedUnfoldingPreservation.lean](lean-declarations/core.md#module-a72842bcdb02) | 生成核心与关系结构 / Generative core and relational structure |
 | [Frame.lean](lean-declarations/core.md#module-4aeb3fe7fb22) | 生成核心与关系结构 / Generative core and relational structure |
+| [Frequency.lean](lean-declarations/core.md#module-c700e68ef3a2) | 生成核心与关系结构 / Generative core and relational structure |
 | [FreshRevision.lean](lean-declarations/shared.md#module-b592dcce60e2) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [FulfillmentStatus.lean](lean-declarations/shared.md#module-641fa8f3ad8b) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [FunctionGraphs.lean](lean-declarations/abstraction.md#module-967f5a53d7df) | 抽象、适用性与构成 / Abstraction, applicability and constitution |

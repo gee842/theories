@@ -2474,6 +2474,78 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean)
 
+## how-often-couplings-act ← what-a-cut-loses
+
+`formal-reuse` — 复用耦合（CouplesAt）、复现的耦合（CouplingRecurs）、安定的时程（SettledFrom）、couples_strengthsFrom_iff 与 carriedWithin_lt_of_recurring_loop：安定与失控按这些陈述。 / Reuses couplings at a step (CouplesAt), recurring couplings (CouplingRecurs), settled schedules (SettledFrom), couples_strengthsFrom_iff and carriedWithin_lt_of_recurring_loop: settling and runaway are stated through them.
+
+**Producer output / 上游输出:** 一步的耦合；复现的耦合；安定的时程；复现耦合的回路使每个有限阶都有所漏。 / Couplings at a step; recurring couplings; settled schedules; a loop of recurring couplings making every finite order miss something.
+
+**Consumer input / 下游输入:** 按时间次序的返回；停止的耦合与局部的安定；安定恰是二分；稀疏的自环每个有限阶都有所漏。 / Returns in time order; couplings that stop and settling as local; settling as exactly the dichotomy; every finite order of the sparse self-loop missing something.
+
+**Retained conditions / 保留条件:** 耦合强度是给出的界；条件的列表任意。 / The coupling strengths as supplied bounds; any list of conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean)
+
+## how-often-couplings-act ← how-a-carried-difference-grows
+
+`formal-reuse` — 复用 inflow、total_give_le_inflow、carried_mono_steps、carriedGive_of_rest、carriedWithin、自环与幂的引理：速度是 carried_le_geomBound 只在作用之步计的同一归纳。 / Reuses inflow, total_give_le_inflow, carried_mono_steps, carriedGive_of_rest, carriedWithin, the self-loop and the lemmas on powers: the rate is the induction of carried_le_geomBound counting only the steps that act.
+
+**Producer output / 上游输出:** 进入一个条件的强度；一步的给出至多是它乘以所读的；自环；幂的单调与乘法。 / The strengths into a condition; a step's giving at most these times what is read; the self-loop; monotonicity and products of powers.
+
+**Consumer input / 下游输入:** 按耦合作用之步计数的速度；时程上的自环；Loops 的自环作为每步耦合的实例。 / The rate counting the steps at which couplings act; the self-loop on a schedule; Loops' self-loop as the instance coupling at every step.
+
+**Retained conditions / 保留条件:** 部分在起始之后不给差；起始之差与强度的界给出。 / The part giving no gap after the start; bounds on starting gaps and strengths supplied.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean)
+
+## how-often-couplings-act ← how-loops-form
+
+`formal-reuse` — 复用 carriedGive_congr_strength、Closing.ble_false_of_lt 与 Closing.Onset：在 T 形成的回路是自 T 起耦合的时程。 / Reuses carriedGive_congr_strength, Closing.ble_false_of_lt and Closing.Onset: the loop forming at T is the schedule coupling from T on.
+
+**Producer output / 上游输出:** 强度逐点相同时给出相同；在 T 形成的自环及其量。 / Equal giving under pointwise equal strengths; the self-loop forming at T and its amount.
+
+**Consumer input / 下游输入:** 时程上的自环；形成之后的量作为实例。 / The self-loop on a schedule; the amount after formation as an instance.
+
+**Retained conditions / 保留条件:** 强度是给出的。 / The strengths supplied.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean)
+
+## how-often-couplings-act ← how-much-difference-arrives
+
+`formal-reuse` — 复用 carried、carriedGive、carried_succ、gap、Conveyed 与 gap_le_carried：速度经 gap_le_carried 约束每个律之差。 / Reuses carried, carriedGive, carried_succ, gap, Conveyed and gap_le_carried: through gap_le_carried the rate bounds the gaps of every law.
+
+**Producer output / 上游输出:** 所携带的量及其一步；它约束每个有这些强度的律之差。 / The carried amount and its step; it bounds the gaps of every law with the strengths.
+
+**Consumer input / 下游输入:** 速度、返回的加倍与对一切律的速度。 / The rate, the doubling at returns and the rate for every law.
+
+**Retained conditions / 保留条件:** 对一切律时条件全部列出，条件的相等可判定只在证明中。 / For every law, every condition listed, with decided equality of conditions only in proofs.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean)
+
+## how-often-couplings-act ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用 LPO、clear 与第一个真者的引理（Clear.or_first、Clear.first_of_true、Clear.first_unique 等）：只耦合一次的自环与二分给出有限全知原则。 / Reuses LPO, clear and the lemmas on the first true step (Clear.or_first, Clear.first_of_true, Clear.first_unique and others): the self-loop coupling once and the dichotomy give the limited principle of omniscience.
+
+**Producer output / 上游输出:** 有限全知原则；判定序列中至今未真之标记与第一个真者。 / The limited principle of omniscience; the mark of a decided sequence not yet true, and its first true step.
+
+**Consumer input / 下游输入:** 每个时程都安定给出有限全知原则；二分给出它；有限全知原则判定有限多行。 / Every schedule settling gives the limited principle of omniscience; so does the dichotomy; that principle decides finitely many rows.
+
+**Retained conditions / 保留条件:** 序列是判定的。 / The sequences decided.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## how-often-couplings-act ← recurrence-without-premise
+
+`formal-reuse` — 复用 le_succ_cases：至多 n + 1 者至多 n 或等于 n + 1。 / Reuses le_succ_cases: what is at most n + 1 is at most n or equals n + 1.
+
+**Producer output / 上游输出:** 自然数的分情形。 / Case analysis on natural numbers.
+
+**Consumer input / 下游输入:** 稀疏的时程的界与计数。 / The bounds and the count of the sparse schedule.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
 ## identification-where-bounded ← learning-by-refutation
 
 `formal-reuse` — 复用 Learning.Lasso、lasso_of_held、lasso、lasso_claims、lasso_holds、Holds、RefutedAt、record、back_record、back_made、holdFrom、lassoNext 与 diagonal_unrested：界给定时补上它在界未知时的结果；复用按否证学习的 learner、lassos、index 及其引理与 lasso_learner_bounded，给出它的静止之步。 / Reuses Learning.Lasso, lasso_of_held, lasso, lasso_claims, lasso_holds, Holds, RefutedAt, record, back_record, back_made, holdFrom, lassoNext and diagonal_unrested: it completes, with the bound given, what that record states with the bound unknown; reuses the learner by refutation (learner, lassos, index and its lemmas, lasso_learner_bounded) to state the step at which it rests.

@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-223 migrated records: 219 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+224 migrated records: 220 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -105,6 +105,7 @@
 | `how-a-carried-difference-grows` | [所携带的差别怎样增长 / How a carried difference grows](records/how-a-carried-difference-grows.md) | theorem | recorded-checked |
 | `how-loops-form` | [回路怎样在展开中形成 / How loops form within the unfolding](records/how-loops-form.md) | theorem | recorded-checked |
 | `how-much-difference-arrives` | [差别到达多少 / How much difference arrives](records/how-much-difference-arrives.md) | theorem | recorded-checked |
+| `how-often-couplings-act` | [耦合多常作用：安定、失控与其速度 / How often couplings act: settling, runaway and its rate](records/how-often-couplings-act.md) | theorem | recorded-checked |
 | `identification-where-bounded` | [有界之处的辨识 / Identification where bounded](records/identification-where-bounded.md) | theorem | recorded-checked |
 | `identification-where-runs-part` | [运行分开之处的辨识 / Identification where runs part](records/identification-where-runs-part.md) | theorem | recorded-checked |
 | `identity-across-steps` | [跨步的同一 / Identity across steps](records/identity-across-steps.md) | theorem | recorded-checked |
