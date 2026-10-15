@@ -22,7 +22,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 
 ## 已登记成果 / Registered results
 
-214 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+217 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -108,6 +108,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [单值接合的共同操作结构 / Common operational structure for functional joining](results/records/functional-joining-common-structure.md) | recorded-checked | [ExplanatoryContextualStructure.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean) |
 | [经归并的推广 / Generalization through a lumping](results/records/generalization-through-lumping.md) | recorded-checked | [Learning.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean) |
 | [生成即补充 / Generation is replenishment](results/records/generation-is-replenishment.md) | recorded-checked | [Roles.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean) |
+| [奇偶约束下语境中的读法何时粘合 / When readings in context glue, for parity](results/records/gluing-under-parity.md) | recorded-checked | [Gluing.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean) |
 | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](results/records/growth-constrained-fragmentation.md) | recorded-checked | [GrownFragmentation.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean) |
 | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](results/records/guarded-program-question-recovery.md) | recorded-checked | [ExplanatoryGuardedPrograms.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean) |
 | [被持有的生命上的 G0 / G0 on held lives](results/records/held-lives-g0-is-centering.md) | recorded-checked | [Standpoints.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean) |
@@ -139,6 +140,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [闲置可判定处的最小足迹与最少次序 / The least footprint and least order where idleness is decided](results/records/least-footprint-where-idleness-decided.md) | recorded-checked | [OrderNormal.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean) |
 | [闭包的五个层次 / Five levels of closure](results/records/levels-of-closure.md) | recorded-checked | [Feedback.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean) |
 | [生作为生的条件 / Life as a condition of life](results/records/life-as-condition-of-life.md) | recorded-checked | [Roles.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean) |
+| [有限分支处的提升 / Lifting where branching is finite](results/records/lifting-where-branching-is-finite.md) | recorded-checked | [Lasting.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean) |
 | [列出一次就是已定的同一 / Listing once is decided identity](results/records/listing-once-is-decided-identity.md) | recorded-checked | [Listing.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean) |
 | [以之为生与世系 / Living on and descent](results/records/living-on-and-descent.md) | recorded-checked | [Descent.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean) |
 | [区域之外的损失 / Loss beyond a region](results/records/loss-beyond-a-region.md) | recorded-checked | [Regions.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean) |
@@ -235,6 +237,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [权重计数情境 / Weights count situations](results/records/weights-count-situations.md) | recorded-checked | [Situations.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean) |
 | [有限历史所否证者 / What a finite history refutes](results/records/what-a-finite-history-refutes.md) | recorded-checked | [Horizon.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean) |
 | [动作在哪里形成 / Where a move is formed](results/records/where-a-move-is-formed.md) | recorded-checked | [Coupling.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean) |
+| [新的增益从哪里来 / Where novelty's gain comes from](results/records/where-novelty-gain-comes-from.md) | recorded-checked | [Gain.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean) |
 | [整体优先，与以依存为界的中心 / The whole first, and centers bounded by dependence](results/records/whole-first-and-bounded-centers.md) | recorded-checked | [Significance.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean) |
 | [计数表是计数的全部规律 / The tally is the whole law of counting](results/records/whole-law-of-counting.md) | recorded-checked | [Population.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean) |
 | [整体经由部分的生成而持续 / A whole persists through the generation of its parts](results/records/whole-persists-through-generation.md) | recorded-checked | [Wholes.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean) |

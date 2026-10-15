@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T190408.610189Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "I4b 第四项：Becoming.Lasting 的条目加有限分支处的提升",
+   "en": "I4b item 4: the Becoming.Lasting bullet gains lifting where branching is finite"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "I4b 第四项：§9 的 Becoming.Lasting 一行（69 → 89 项定理）与外围实例 FiniteBranchingCorrespondence 一行，外围实例的列举加入它；总数改据新回执",
+   "en": "I4b item 4: the §9 row of Becoming.Lasting (69 → 89 theorems) and a peripheral-instance row for FiniteBranchingCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第146节（整合 I4b 第四项：有限分支处的提升，FiniteBranching 接入）及其英文段；此前各节不变",
+   "en": "section 146 (integration I4b item 4: lifting where branching is finite, FiniteBranching joined) with its English paragraph; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "I4b 第四项：Lasting 的新定理分类，step_iff_either 列入边界",
+   "en": "I4b item 4: Lasting's new theorems classified, step_iff_either added to the boundary"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T190408.610189Z 上重新生成，含 I4b 第四项的分类：只在证明中用到 224 → 226，证明可判定的定义与实例 136 → 137，其余各类不变",
+   "en": "regenerated on receipt 20261015T190408.610189Z with I4b item 4's classifications: used only in proofs 224 → 226, definitions and instances proving decidedness 136 → 137, the other classes unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变",
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md": {
+   "zh": "I4b 第四项：FiniteBranching 改为已接入，加 FiniteBranchingCorrespondence 一行",
+   "en": "I4b item 4: FiniteBranching marked joined, with a row for FiniteBranchingCorrespondence"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md": {
+   "zh": "I4b 第四项：一段说明 FiniteBranchingCorrespondence 及其检查器；FiniteBranching 不变",
+   "en": "I4b item 4: a paragraph on FiniteBranchingCorrespondence and its checker; FiniteBranching unchanged"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing I4b item 4 (study section 146): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月16日，I4b 第四项落地（研究第146节）：改绑新回执并更新哈希："
+ }
+}

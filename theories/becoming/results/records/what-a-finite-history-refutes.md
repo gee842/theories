@@ -28,7 +28,7 @@
 - That a refutable reading holds outright at an adhering run: that needs the reading stable, which the periphery instance supplies by classical reasoning.<br>可否证的读法在附着处径直成立：这需要读法稳定，外围实例以经典推理供给。
 - That PrefixSafety's traces model an actual history: traces are functions on the natural numbers.<br>PrefixSafety 的迹是实际历史的模型：迹是自然数上的函数。
 
-**Standard boundaries / 通用边界:** No ethical premise and no Lean axiom is used. 不用伦理前提，也不用 Lean 公理。 · Contains no ethical predicate and evaluates neither arising nor ceasing. 不含伦理谓词，不评价生起或消失。 · Stated for discrete steps. 按离散步骤陈述。 · A law of the formal model; its correspondence to actual systems is a separate obligation. 形式模型中的规律；与实际系统的对应是另一项责任。 · Names follow Ren's naming criteria of 10 October 2026; readings remain Ren's. 名称依 Ren 2026年10月10日的命名标准；读法由 Ren 决定。 · A relation omitted by a weaker description does not refute the fuller account. 较弱描述省略某一关系，不构成对较完整说明的反驳。
+**Standard boundaries / 通用边界:** No ethical premise and no Lean axiom is used. 不用伦理前提，也不用 Lean 公理。 · Contains no ethical predicate and evaluates neither arising nor ceasing. 不含伦理谓词，不评价生起或消失。 · Stated for discrete steps. 按离散步骤陈述。 · A law of the formal model; its correspondence to actual systems is a separate obligation. 形式模型中的规律；与实际系统的对应是另一项责任。 · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. 名称依 Ren 2026年10月10日的命名标准，在陈述有其确切意义处采用（Ren，2026年10月12日）；未注明属于 Ren 的读法，依 Ren 2026年10月15日的交托由 AI 决定，Ren 可以改动。 · A relation omitted by a weaker description does not refute the fuller account. 较弱描述省略某一关系，不构成对较完整说明的反驳。
 
 ## Evidence / 证据
 
@@ -73,6 +73,8 @@ Aliases / 别名: `Becoming.Refutable`, `Becoming.Adheres`, `Becoming.refutable_
 ### History / 沿革
 
 - 2026-10-16：新增，整合 I4b 第三项（Ren 选择“Closest gaps first”）；研究 §145。 / 16 October 2026: added, integration I4b item 3 (Ren chose “Closest gaps first”); study section 145.
+- 2026年10月16日，I4b 第四项落地（研究第146节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第四项：§9 的 Becoming.Lasting 一行（69 → 89 项定理）与外围实例 FiniteBranchingCorrespondence 一行，外围实例的列举加入它；总数改据新回执）。 / 16 October 2026, landing I4b item 4 (study section 146): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 4: the §9 row of Becoming.Lasting (69 → 89 theorems) and a peripheral-instance row for FiniteBranchingCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt).
+- 2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。 / 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 
 </details>
 

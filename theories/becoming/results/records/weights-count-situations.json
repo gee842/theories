@@ -245,7 +245,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
       "role": "proof",
-      "sha256": "bd182c924f76e1ffb740d6f4a1d2e95e3d6bed19869b8be1acd025d12d26fca9",
+      "sha256": "0919450bd52537debe5098b9a6d8da657d4570183f9a64c5543a05b8d94b852c",
       "declarations": [
         "Becoming.counting",
         "Becoming.joinMap",
@@ -265,7 +265,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
       "role": "proof",
-      "sha256": "aee13a1d93a93d7a5de9d6f5c1878feb367257fdddc148941ce82dffd303d27b",
+      "sha256": "a56802715a61e381d6e83afd4d8e2342f140847811666f86c92fc1f16f1c7b01",
       "declarations": [
         "Becoming.mul_assoc_nat"
       ]
@@ -301,6 +301,12 @@
       "role": "receipt",
       "sha256": "f925b043b6f8fe7ea3ba0f14b5242923eb3e01d545e6c9915fcc6832c4757e8d",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -320,14 +326,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Weighted",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Capture",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -352,6 +358,10 @@
     {
       "zh": "2026-10-16：只改措辞，重新绑定哈希：研究 §144 的读法标题由“待 Ren”改为“Ren 同日已取”，来源文件写明“第一条消息”；声明与结论不变。",
       "en": "16 October 2026: wording only, hashes rebound: study section 144's readings heading now reads “taken by Ren the same day” in place of “pending Ren”, and the source names “the first message”; no declaration or claim changes."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Weighted.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Capture.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Capture.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ],
   "text_versions": []

@@ -18,9 +18,9 @@ Branch `p110-frontier`, merged with main `a5406334`. No statement, proof or name
   - §8: “Ren's choices” becomes “Readings decided on Ren's delegation” and “What stays Ren's”. The identification item carries Ren's clarification of 16 October and the readings Ren took.
   - Readings formerly marked pending Ren elsewhere in the chapter now carry their decision numbers.
   - The D39 lines.
-- Records: 101 records each gain one paired, dated history note (study section 146). Next steps asking for Ren's judgment on a decided reading are removed.
+- Records: 101 records each gain one paired, dated history note (study section 147). Next steps asking for Ren's judgment on a decided reading are removed.
   - Specific rewrites are in `p110_specific.py`, with decision numbers in `DNUM`.
-  - `EXCLUDE` keeps five records as they are. Their readings were posed after Ren's reply of 15 October, or after the delegation, or Ren took them: identification-where-runs-part, typicality-by-counting, every-origin-passes-the-gate, weights-count-situations, what-a-finite-history-refutes.
+  - `EXCLUDE` keeps six records as they are. Their readings were posed after Ren's reply of 15 October, or after the delegation, or Ren took them: identification-where-runs-part, typicality-by-counting, every-origin-passes-the-gate, weights-count-situations, what-a-finite-history-refutes, and I4b-4's lifting-where-branching-is-finite (added at landing).
   - identification-where-bounded:
     - reading 1 is dropped (D34);
     - the finite name is labelled as Ren's (“take 2”);
@@ -55,7 +55,7 @@ Branch `p110-frontier`, merged with main `a5406334`. No statement, proof or name
 - `check_becoming.py`: both modules in the core list, before `Becoming.Relevance`.
 - The Lean README: two L3 rows, and the within-layer imports in both languages.
 - The study:
-  - [sections 146, 147 and 148](../../BECOMING-RENEWAL-READING.md), before the English summary;
+  - [sections 147, 148 and 149](../../BECOMING-RENEWAL-READING.md), before the English summary;
   - three English paragraphs at its end.
   - Main holds sections 142 to 145.
 - `DECIDABILITY-INVENTORY.py`: Gluing's four elimination theorems use decided equality only in their proofs (`same`): `ParityConstraint.met_or_contradicts`, `ParitySystem.global_or_contradicts`, `ParitySystem.noGlobal_iff` and `ParitySystem.glues_iff`.
@@ -86,9 +86,9 @@ Run from the checkout root (`ROOT`):
    ```bash
    for f in $(git ls-tree --name-only main theories/becoming/results/records/ | grep "\.json$"); do git show main:$f > $f; done
    ```
-2. Reconcile: `python3 -B reconcile_records.py ROOT`. The sections come from `P110_SECTION`, `P111_SECTION` and `P112_SECTION` (defaults 146, 147, 148).
+2. Reconcile: `python3 -B reconcile_records.py ROOT`. The sections come from `P110_SECTION`, `P111_SECTION` and `P112_SECTION` (defaults 147, 148, 149; provisionally 146–148 until I4b-4 took 146).
    - Add `--dry OUT` to write what would still be pending. 21 residuals are expected; they are what stays Ren's.
-3. Regenerate the new records: `python3 -B make_records.py ROOT [SECTION_P111 SECTION_P112]` (defaults 147, 148).
+3. Regenerate the new records: `python3 -B make_records.py ROOT [SECTION_P111 SECTION_P112]` (defaults 148, 149).
 
 The reconcile fails rather than guess:
 

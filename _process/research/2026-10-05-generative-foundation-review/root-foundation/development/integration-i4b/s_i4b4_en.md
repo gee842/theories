@@ -1,0 +1,29 @@
+**Lifting where branching is finite, integration I4b item 4 (16 October 2026).** Ren chose “Closest gaps first” on the I4 classification table ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)). The table read FiniteBranching as a join candidate: for a finitely branching relation, finite paths of every length from a node give an infinite path (König lifting). Becoming.Lasting stated that every admissible course stays (`Lasts`; what no course leaves is what lasts every horizon, `kernel_iff_lasts`), but not that some course goes on (section 139). This section states it for every process and says what each step needs.
+- **Lasting some course** (`Becoming.Lasting`, no premise; 69 → 89 theorems; Lasting now imports Becoming.Likeness).
+  - `Continues P n s`: some course of n steps starts at s. `Unbounded P s`: courses of every length do. `FinitelyBranching`: the successors of each configuration are listed.
+  - Where the process branches finitely, the depth reached is decided (`Continues.decided`), level by level through the listed successors, with no decision of equality.
+- **An unbounded successor, up to double negation** (`Unbounded.step_not_not`). Where each step of a decided decreasing family is met by some member of a list, some member meets every step, up to double negation (`list_throughout_not_not`). The goal is a refutation, so whether the first member fails somewhere may be taken as decided.
+- **Given `EitherThroughout`**, an unbounded configuration has an unbounded successor (`Unbounded.step_of_either`), and of finitely many starts one is unbounded (`unbounded_start_of_either`). Both are Likeness's `EitherThroughout.list` on the listed successors or starts.
+- **A run from a selection.** A selection of a step staying in a family gives a run from each member (`runOf`). So `EitherThroughout` and a choice of an unbounded successor lift courses of every length to a run along unbounded configurations (`lifting`).
+- **Boundary.** Asked of every finitely branching process, an unbounded successor is exactly `EitherThroughout` (`step_iff_either`).
+  - The witness is Likeness's `Chains`: with two decided decreasing families, one holding at each step, the fork `two` is unbounded (`TwoChains.two_unbounded`).
+  - An unbounded successor is a chain start whose family holds throughout (`TwoChains.side_of_unbounded`).
+- **Without finite branching: the fan.** A root stepping to an arm of every length has courses of every length (`Fan.root_unbounded`), but the arm of length n has no course of n + 1 steps, so no successor is unbounded (`Fan.no_unbounded_step`). Finite branching is what lifting needs, not only what the proof uses.
+- **FiniteBranching** (`FiniteBranchingCorrespondence`, periphery, with its own checker).
+  - Correspondences: a relation is the process with one move; `Reach` is `Continues` and `Unbounded` is `Unbounded`; and listed children make the process finitely branching. These four have empty axiom reports.
+  - Classical reasoning gives `EitherThroughout`, and Lean's choice selects an unbounded successor. `finite_unbounded`, `unbounded_child` and the three liftings then follow from the core laws, each `_by_core`, with standard axioms only.
+  - FiniteBranching's statements and its package receipt are unchanged.
+- **Checker.** It follows the PrefixSafety pattern. `make_prefix_checker.py` now takes `SPEC MODULE`; with no arguments it reproduces the PrefixSafety checker byte for byte.
+  - A dry run under Lean 4.30.0-rc2 passed: 9 theorems and 10 declarations, four of them with empty reports. Only the new Becoming.Lasting lacked a receipt.
+  - FiniteBranching is bound through the instance receipt, as fixed at the I4b-3 landing.
+- **Decidability inventory.**
+  - Proof-only theorems go 224 → 226: `list_throughout_not_not` splits, and `TwoChains.branching` builds a list.
+  - Theorems proving decidedness go 136 → 137 (`Continues.decided`).
+  - `Lasting.step_iff_either` joins the boundary theorems.
+- **Records.** The new record lifting-where-branching-is-finite reuses tests-fix-likeness-where-determined's `EitherThroughout` and `Chains`. Three market records citing Lasting are rebound, their claims unchanged.
+- **Author counterreview.**
+  - The core separates the two classical steps of the periphery proof: `Classical.not_forall` is exactly `EitherThroughout`, and `Classical.choose` is a selection.
+  - Importing Likeness grows Lasting's closure from 5 to 31 modules. The five modules depending on Lasting rebuild with empty reports.
+  - Not proved: a run without a selection (the boundary of dependent choice, next to but distinct from Keeping's `plans_iff_choice`).
+- **Boundary and reading.** Lifting gives a run's existence, not an effective selection or a physical infinity. The reading, which is the AI's and pending Ren: courses of every length are not yet one course going on; where branching is finite, what lies between them is exactly knowing which of two branches goes on throughout.
+- **Next in I4b.** Selection: PluralRecords and TieBreaking, after P110 lands.

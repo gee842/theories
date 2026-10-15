@@ -914,7 +914,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   level `k + 1` outside the target going to level `k`) holds it at level `n`, and exactly when
   every basin does; for a determined law and a decided target, exactly when a numeric variant
   is at most `n` at the start. Where the histories form, the numeric form and the duality with
-  lasting need a decision, a theorem shows it.
+  lasting need a decision, a theorem shows it. Some course lasting: where the process branches
+  finitely, the depth reached is decided, and a configuration with courses of every length
+  cannot fail to have a successor with them; it has one given `EitherThroughout`, exactly that
+  principle asked of every finitely branching process, and a selection gives a run. Where the
+  branching is infinite it need not.
 * `Becoming.Copying` (L2): reproducing a sequence token by token from a shared pool, for every
   alphabet and law of draws, with no premise. A copy completes exactly when the pool holds
   every token as often as the word uses it and the support covers what it draws; copies from

@@ -96,7 +96,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
       "role": "proof",
-      "sha256": "e3d81fb001ae3a64ca8f1ee08b8c3720ddf87524a86d8a0fcf089b0124cbc4ec",
+      "sha256": "56583fc834919a1129d4f1228eddbd9882d01091f619e760acf46d74f891f742",
       "declarations": [
         "Becoming.JointPlan",
         "Becoming.JointPlan.realizes_image_iff",
@@ -116,6 +116,12 @@
       "role": "receipt",
       "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -128,7 +134,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Composition",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -157,6 +163,10 @@
     {
       "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述，附加一个假设。新的核心模块 Becoming.Composition（只导入 Becoming.Likeness）加入一配置把两配置作为部分共同持有的关系（JointFrame），以及联合检验、联合相同、紧致、嵌套计划与足迹；Becoming.CompositionBridge 把 ExplanatoryJointness 与 ExplanatoryFootprints 读作实例。若描述所认同的配置把部分匹配到其所认同的配置且叶的读法正确，则描述实现一嵌套计划，恰当其所描述的每一配置实现之（JointPlan.realizes_image_iff）；计划自每一配置提升即部分匹配（JointPlan.plans_lift_iff）。所以在模型检验稳定处 joint_plan_lifts 在脊柱上成立（joint_plan_lifts_of_stable）；排中律给出稳定，无稳定时经典步骤恰是排中律。公理报告为空（草稿构建；回执随落地）。每一节点各有见证；外围证明及其回执保持原范围。",
       "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine, with one added hypothesis. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. Where configurations a description identifies match parts into configurations it identifies and the leaves are read correctly, a description realizes a nested plan exactly where every configuration it describes does (JointPlan.realizes_image_iff), and plans lifting from every configuration is matching parts (JointPlan.plans_lift_iff). So joint_plan_lifts holds on the spine where the model's tests are stable (joint_plan_lifts_of_stable); excluded middle gives stability, and without it the classical step is exactly excluded middle. Empty axiom reports (scratch build; the receipt comes with the landing). Each node keeps its own witness; the periphery proof and its receipt keep their scope."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Composition.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Composition.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ]
 }

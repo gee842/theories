@@ -376,7 +376,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "b5d869ba9bfa90ef5a8f81c2166fcfb45f8811d6cd2c41daec6ccec5cab6537b",
+      "sha256": "f709b169e362fbef75ca05f56bfe54adee9f16db2b114c890c13852478a11171",
       "declarations": [
         "Becoming.Learning.record",
         "Becoming.Learning.record_congr",
@@ -391,7 +391,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
       "role": "proof",
-      "sha256": "5bcb0047ec2f67ee170138f26345f7df0a185b56b62f5a412abd95a3d9c79efa",
+      "sha256": "d14074029d26520b8b26883b8cf8b53be7485140868cc1df8208c06ee572f871",
       "declarations": [
         "Becoming.Law.realized_within"
       ]
@@ -467,6 +467,12 @@
       "role": "receipt",
       "sha256": "f925b043b6f8fe7ea3ba0f14b5242923eb3e01d545e6c9915fcc6832c4757e8d",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -486,14 +492,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Distinguishing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -547,6 +553,10 @@
     {
       "zh": "2026-10-16：只改措辞，重新绑定哈希：研究 §144 的读法标题由“待 Ren”改为“Ren 同日已取”，来源文件写明“第一条消息”；声明与结论不变。",
       "en": "16 October 2026: wording only, hashes rebound: study section 144's readings heading now reads “taken by Ren the same day” in place of “pending Ren”, and the source names “the first message”; no declaration or claim changes."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Learning.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Distinguishing.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Learning.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Distinguishing.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
     }
   ],
   "text_versions": []

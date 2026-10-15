@@ -361,6 +361,9 @@ PROOF_KIND = {
         'most_difference_arrives', 'levels_alike_of_not_conveyed']},
     # integration I4b (2026-10-16): the origin law where each gate is decided
     **{n: 'split' for n in ['Gated.origin_of_decides']},
+    # integration I4b (2026-10-16): lasting some course where the process branches finitely
+    **{n: 'split' for n in ['Lasting.list_throughout_not_not']},
+    **{n: 'build' for n in ['Lasting.TwoChains.branching']},
     # 2026-10-16, P112 when readings in context glue, for parity (Becoming.Gluing): elimination splits on whether a
     # claim is the one being eliminated
     **{n: 'same' for n in [
@@ -383,7 +386,10 @@ BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends',
             'Gated.origin_of_propositions_iff',
             # integration I4b (2026-10-16): asked of every process, refutability of a reading made of prefix
             # tests is Markov's principle
-            'refutable_passes_iff_markov']
+            'refutable_passes_iff_markov',
+            # integration I4b (2026-10-16): asked of every finitely branching process, an unbounded successor is
+            # EitherThroughout
+            'Lasting.step_iff_either']
 
 rows = [l.rstrip('\n').split('\t') for l in ROWS.splitlines() if l.strip()]
 theorems = collections.OrderedDict()
@@ -498,11 +504,12 @@ if unused:
 lines += ['## 排中律或其受限形式作为假设 / Excluded middle, in full or restricted form, as a hypothesis', '',
           '这些是边界定理：它们表明排中律或其受限形式（例如 `NowhereDecided`：一个已判定的族是否处处不成立已判定）给出什么，配合 ' +
           '、'.join(f'`{b}`' for b in BOUNDARY) +
-          '，表明命名一步、对每个世界要求复现、由检验判定相同、把配方读作一个检验、找出不被胜过的选项、在门上定位起源、或由前缀检验否证的形式需要可判定性。 / These are boundary theorems: they show what '
+          '，表明命名一步、对每个世界要求复现、由检验判定相同、把配方读作一个检验、找出不被胜过的选项、在门上定位起源、由前缀检验否证、或在有限分支处找到无界的后继的形式需要可判定性。 / These are boundary theorems: they show what '
           'excluded middle, or a restricted form of it (such as `NowhereDecided`: whether a decided family holds nowhere is '
           'decided), gives, and with ' + ', '.join(f'`{b}`' for b in BOUNDARY) + ', that the forms naming a step, asking '
           'recurrence of every world, fixing likeness by tests, reading a recipe as one test, finding an undominated choice, '
-          'locating an origin at a gate or refuting by prefix tests need '
+          'locating an origin at a gate, refuting by prefix tests or finding an unbounded successor where branching '
+          'is finite need '
           'decidedness.', '']
 lines += [f'- {m(mod)}: `{short}`' for mod, short in em] + ['']
 by_mod = collections.Counter(m(mod) for mod, *_ in supplied)

@@ -130,12 +130,12 @@ FAILURES = []
 # Readings posed after Ren's reply of 15 October 2026 on the identification line ("reality is
 # always situational") and left for Ren by their owner; not within the delegation's list. Ren took
 # the AI's reading of Ren's clarification on 16 October 2026 (P117). Records added after the
-# delegation keep their own status: I4b-1's every-origin-passes-the-gate and I4b-3's
-# what-a-finite-history-refutes (readings pending Ren), and P117's weights-count-situations
-# (readings Ren took).
+# delegation keep their own status: I4b-1's every-origin-passes-the-gate, I4b-3's
+# what-a-finite-history-refutes and I4b-4's lifting-where-branching-is-finite (readings pending
+# Ren), and P117's weights-count-situations (readings Ren took).
 EXCLUDE = {"identification-where-runs-part", "typicality-by-counting",
            "every-origin-passes-the-gate", "weights-count-situations",
-           "what-a-finite-history-refutes"}
+           "what-a-finite-history-refutes", "lifting-where-branching-is-finite"}
 
 
 def apply(record):
@@ -161,9 +161,9 @@ def apply(record):
 
 
 # Study sections, provisional until landing (the integrator renumbers).
-SECTION = {"P110": int(os.environ.get("P110_SECTION", 146)),
-           "P111": int(os.environ.get("P111_SECTION", 147)),
-           "P112": int(os.environ.get("P112_SECTION", 148))}
+SECTION = {"P110": int(os.environ.get("P110_SECTION", 147)),
+           "P111": int(os.environ.get("P111_SECTION", 148)),
+           "P112": int(os.environ.get("P112_SECTION", 149))}
 MARK = "P110（依 Ren 2026-10-15 的交托"
 
 
