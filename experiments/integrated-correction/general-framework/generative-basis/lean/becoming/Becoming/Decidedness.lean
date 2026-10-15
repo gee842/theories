@@ -68,6 +68,15 @@ and across a list of steps the counts at each step sum (`CountsAcross`).
   The forms here that use no decidedness state that something is not refuted, or never stops
   for good, rather than at which step it happens.
 
+* **Undominated members of a listed menu.** A nonempty listed menu under a relation that is
+  irreflexive and transitive on it has a member no member betters, where whether one member
+  betters another is weakly decided, its failure decided or refuted (`exists_undominated`). Every
+  undominated member has a determination exactly where every member lacking it is bettered by some
+  member (`undominated_has_iff`): one direction asks only that the relation be decided, the other
+  only that the determination be, and without that gives it unrefuted (`Undominated.not_not_has`).
+  Asked of every relation and determination, these are weak excluded middle and excluded middle
+  (`exists_undominated_iff_weakly`, `undominated_has_iff_em`).
+
 **AI reading, pending Ren.** The yes or no of a state is not assumed of becoming. It is what an
 exact count needs, at the states counted, and what finding a step needs, at the steps searched.
 Laws relating counts need none, and the laws of recurrence hold with none, doubly negated.
@@ -789,5 +798,135 @@ theorem arising_iff_ceasing_covered {ds : List w.Relatum} {T : Nat}
       | ⟨t, x, later, _, arises⟩ => ⟨t, x, later, arises⟩⟩
 
 end World
+
+/-! ## Undominated members of a listed menu -/
+
+section Undominated
+
+variable {β : Type} {better : β → β → Prop}
+
+/-- Whether a proposition fails is decided: it fails, or its failure is refuted. -/
+def WeaklyDecided (p : Prop) : Prop :=
+  ¬ p ∨ ¬ ¬ p
+
+/-- A decided proposition is weakly decided. -/
+theorem Decided.weakly {p : Prop} (decided : Decided p) : WeaklyDecided p :=
+  match decided with
+  | .inl holds => .inr fun fails => fails holds
+  | .inr fails => .inl fails
+
+/-- `a` is a member of `menu` that no member betters. -/
+def Undominated (menu : List β) (better : β → β → Prop) (a : β) : Prop :=
+  a ∈ menu ∧ ∀ b, b ∈ menu → ¬ better b a
+
+/-- **A nonempty listed menu has an undominated member** where the relation is irreflexive and
+transitive on it and whether one member betters another is weakly decided. The member is found
+by one pass along the list, keeping the member no later one is known to better. -/
+theorem exists_undominated : ∀ (x : β) (rest : List β),
+    (∀ a b, a ∈ x :: rest → b ∈ x :: rest → WeaklyDecided (better a b)) →
+    (∀ a, a ∈ x :: rest → ¬ better a a) →
+    (∀ a b c, a ∈ x :: rest → b ∈ x :: rest → c ∈ x :: rest → better a b → better b c → better a c) →
+    ∃ a, Undominated (x :: rest) better a
+  | x, [], _, irreflexive, _ =>
+    ⟨x, .head [], fun _ mem => match mem_cons_cases mem with
+      | .inl same => Eq.subst (motive := fun c => ¬ better c x) same.symm (irreflexive x (.head []))
+      | .inr never => nomatch never⟩
+  | x, y :: rest, weakly, irreflexive, transitive =>
+    match exists_undominated y rest (fun a b ma mb => weakly a b (.tail x ma) (.tail x mb))
+        (fun a ma => irreflexive a (.tail x ma))
+        (fun a b c ma mb mc => transitive a b c (.tail x ma) (.tail x mb) (.tail x mc)) with
+    | ⟨u, mem, unbeaten⟩ => match weakly x u (.head _) (.tail x mem) with
+      | .inl loses => ⟨u, .tail x mem, fun b mb => match mem_cons_cases mb with
+        | .inl same => Eq.subst (motive := fun c => ¬ better c u) same.symm loses
+        | .inr later => unbeaten b later⟩
+      | .inr unrefuted => ⟨x, .head _, fun b mb => match mem_cons_cases mb with
+        | .inl same => Eq.subst (motive := fun c => ¬ better c x) same.symm (irreflexive x (.head _))
+        | .inr later => fun beats => unrefuted fun wins =>
+            unbeaten b later (transitive b x u (.tail x later) (.head _) (.tail x mem) beats wins)⟩
+
+/-- An undominated member has `P` unrefuted wherever every member lacking `P` is bettered by
+some member. No decidedness is used. -/
+theorem Undominated.not_not_has {P : β → Prop} {menu : List β}
+    (bettered : ∀ a, a ∈ menu → ¬ P a → ∃ b, b ∈ menu ∧ better b a) {a : β}
+    (undominated : Undominated menu better a) : ¬ ¬ P a :=
+  fun fails => match bettered a undominated.1 fails with
+    | ⟨b, mb, beats⟩ => undominated.2 b mb beats
+
+/-- **Every undominated member has `P` wherever every member lacking `P` is bettered**, with `P`
+decided on the menu. -/
+theorem undominated_has {P : β → Prop} {menu : List β} (decided : ∀ a, a ∈ menu → Decided (P a))
+    (bettered : ∀ a, a ∈ menu → ¬ P a → ∃ b, b ∈ menu ∧ better b a) :
+    ∀ a, Undominated menu better a → P a :=
+  fun a undominated => (decided a undominated.1).of_not_not (undominated.not_not_has bettered)
+
+/-- Where every undominated member has `P`, every member lacking `P` is bettered by some member,
+with the relation decided on the menu. -/
+theorem bettered_of_undominated_has {P : β → Prop} {menu : List β}
+    (decided : ∀ a b, a ∈ menu → b ∈ menu → Decided (better a b))
+    (has : ∀ a, Undominated menu better a → P a) :
+    ∀ a, a ∈ menu → ¬ P a → ∃ b, b ∈ menu ∧ better b a :=
+  fun a mem fails =>
+    match Decided.exists_mem (l := menu) (P := fun b => better b a) fun b mb => decided b a mb mem with
+    | .inl found => found
+    | .inr absent => absurd (has a ⟨mem, fun b mb beats => absent ⟨b, mb, beats⟩⟩) fails
+
+/-- **Every undominated member of a listed menu has `P` exactly where every member lacking `P` is
+bettered by some member**, with the relation and `P` decided on the menu. -/
+theorem undominated_has_iff {P : β → Prop} {menu : List β}
+    (decidedBetter : ∀ a b, a ∈ menu → b ∈ menu → Decided (better a b))
+    (decidedHas : ∀ a, a ∈ menu → Decided (P a)) :
+    (∀ a, Undominated menu better a → P a) ↔ ∀ a, a ∈ menu → ¬ P a → ∃ b, b ∈ menu ∧ better b a :=
+  ⟨bettered_of_undominated_has decidedBetter, undominated_has decidedHas⟩
+
+/-- Two members, each bettering the other exactly where `p` holds or fails. -/
+def Opposed (p : Prop) : Bool → Bool → Prop
+  | true, true => False
+  | true, false => p
+  | false, true => ¬ p
+  | false, false => False
+
+theorem Opposed.irreflexive (p : Prop) : ∀ a, ¬ Opposed p a a
+  | true => fun never => never
+  | false => fun never => never
+
+theorem Opposed.transitive (p : Prop) : ∀ a b c, Opposed p a b → Opposed p b c → Opposed p a c
+  | true, true, _ => fun never _ => False.elim never
+  | false, false, _ => fun never _ => False.elim never
+  | true, false, true => fun holds fails => fails holds
+  | true, false, false => fun _ never => False.elim never
+  | false, true, false => fun fails holds => fails holds
+  | false, true, true => fun _ never => False.elim never
+
+/-- **Asked of every relation, the weak decidedness is exactly weak excluded middle.** That every
+nonempty listed menu under an irreflexive transitive relation has an undominated member holds
+exactly where whether every proposition fails is decided: in `Opposed p`, `false` is undominated
+exactly where `p` fails and `true` exactly where its failure is refuted. -/
+theorem exists_undominated_iff_weakly :
+    (∀ (β : Type) (better : β → β → Prop) (x : β) (rest : List β),
+        (∀ a, a ∈ x :: rest → ¬ better a a) →
+        (∀ a b c, a ∈ x :: rest → b ∈ x :: rest → c ∈ x :: rest → better a b → better b c →
+          better a c) →
+        ∃ a, Undominated (x :: rest) better a) ↔ ∀ p : Prop, WeaklyDecided p :=
+  ⟨fun exists_ p =>
+    match exists_ Bool (Opposed p) false [true] (fun a _ => Opposed.irreflexive p a)
+        (fun a b c _ _ _ => Opposed.transitive p a b c) with
+    | ⟨false, _, unbeaten⟩ => .inl (unbeaten true (.tail false (.head [])))
+    | ⟨true, _, unbeaten⟩ => .inr (unbeaten false (.head [true])),
+   fun weakly _ _ x rest irreflexive transitive =>
+    exists_undominated x rest (fun _ _ _ _ => weakly _) irreflexive transitive⟩
+
+/-- **Asked of every determination, the decidedness of `P` is exactly excluded middle.** That every
+undominated member has `P` wherever every member lacking `P` is bettered holds for every menu,
+relation and `P` exactly where every proposition is decided: on a menu of one member with no
+relation, it is `p` wherever its failure is refuted. -/
+theorem undominated_has_iff_em :
+    (∀ (β : Type) (better : β → β → Prop) (P : β → Prop) (menu : List β),
+        (∀ a, a ∈ menu → ¬ P a → ∃ b, b ∈ menu ∧ better b a) →
+        ∀ a, Undominated menu better a → P a) ↔ ∀ p : Prop, Decided p :=
+  ⟨fun has p => has Unit (fun _ _ => False) (fun _ => Decided p) [()]
+      (fun _ _ fails => absurd fails (not_not_decided p)) () ⟨.head [], fun _ _ never => never⟩,
+   fun em _ _ _ _ bettered => undominated_has (fun _ _ => em _) bettered⟩
+
+end Undominated
 
 end Becoming

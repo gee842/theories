@@ -100,6 +100,11 @@ imports none of these modules; the dependency runs from them to the core.
   alignment direction's comparison of plans and its frontier are the spine's
   (`alignment_better_iff_betterAt`, `alignment_frontier_iff`). `BetterAt` states J1/J2,
   commitments outside the core; G0 is neither used nor asserted here.
+  On a listed menu the frontier is the undominated members (`Judgment.frontier_iff_undominated`),
+  so `PracticalJudgment.finite_frontier` and `RelationalOrganization`'s requirement of formation
+  hold with the comparison weakly decided and the task decided, with no classical reasoning
+  (`Judgment.frontier_exists`, `Judgment.required_of_bettered`, from `exists_undominated` and
+  `undominated_has` of `Becoming.Decidedness`).
 * `FallibleInspection`'s Boolean explanation, on complete reports, is the core's explanation by
   fallible witnesses (`explains_complete_iff`, `compatible_complete_iff`), so its
   characterization of complete diagnosability by cross-separation is
@@ -1041,6 +1046,48 @@ theorem frontier_iff {eligible : H → Prop} {a : H} :
     ⟨admitted, fun b other better => unbeaten b other (better_iff_betterAt.mpr better)⟩,
    fun ⟨admitted, unbeaten⟩ =>
     ⟨admitted, fun b other better => unbeaten b other (better_iff_betterAt.mp better)⟩⟩
+
+/-- On an exact listed menu, the frontier is the undominated members. -/
+theorem frontier_iff_undominated {eligible : H → Prop} {better : H → H → Prop} {menu : List H}
+    (exact : ∀ a, eligible a ↔ a ∈ menu) {a : H} :
+    PracticalJudgment.Frontier eligible better a ↔ Undominated menu better a :=
+  ⟨fun ⟨admitted, unbeaten⟩ =>
+    ⟨(exact a).mp admitted, fun b mem => unbeaten b ((exact b).mpr mem)⟩,
+   fun ⟨mem, unbeaten⟩ =>
+    ⟨(exact a).mpr mem, fun b admitted => unbeaten b ((exact b).mp admitted)⟩⟩
+
+/-- **The frontier of a nonempty listed menu is not empty** where the comparison is irreflexive,
+transitive and weakly decided on it (`exists_undominated`): `PracticalJudgment.finite_frontier`
+with no classical reasoning. -/
+theorem frontier_exists {eligible : H → Prop} {better : H → H → Prop} (x : H) (rest : List H)
+    (exact : ∀ a, eligible a ↔ a ∈ x :: rest)
+    (weakly : ∀ a b, eligible a → eligible b → WeaklyDecided (better a b))
+    (irreflexive : ∀ a, ¬ better a a)
+    (transitive : ∀ {a b c}, better a b → better b c → better a c) :
+    ∃ a, PracticalJudgment.Frontier eligible better a :=
+  match exists_undominated x rest (fun a b ma mb => weakly a b ((exact a).mpr ma) ((exact b).mpr mb))
+      (fun a _ => irreflexive a) (fun _ _ _ _ _ _ first second => transitive first second) with
+  | ⟨a, undominated⟩ => ⟨a, (frontier_iff_undominated exact).mpr undominated⟩
+
+/-- **What every eligible option lacking it is bettered in is required of the frontier**: on a
+nonempty listed menu with the comparison irreflexive, transitive and weakly decided, and the task
+decided, the frontier is not empty and every member performs the task (`exists_undominated`,
+`undominated_has`): `RelationalOrganization.formation_required_of_improvable_absence` with no
+classical reasoning. -/
+theorem required_of_bettered {eligible : H → Prop} {better : H → H → Prop} {task : H → Prop}
+    (x : H) (rest : List H) (exact : ∀ a, eligible a ↔ a ∈ x :: rest)
+    (weakly : ∀ a b, eligible a → eligible b → WeaklyDecided (better a b))
+    (irreflexive : ∀ a, ¬ better a a)
+    (transitive : ∀ {a b c}, better a b → better b c → better a c)
+    (decided : ∀ a, eligible a → Decided (task a))
+    (bettered : ∀ a, eligible a → ¬ task a → ∃ b, eligible b ∧ better b a) :
+    PracticalJudgment.Required (PracticalJudgment.Frontier eligible better) task :=
+  ⟨frontier_exists x rest exact weakly irreflexive transitive,
+   fun a frontier => undominated_has (menu := x :: rest) (better := better)
+     (fun a mem => decided a ((exact a).mpr mem))
+     (fun a mem fails => match bettered a ((exact a).mpr mem) fails with
+       | ⟨b, admitted, beats⟩ => ⟨b, (exact b).mp admitted, beats⟩)
+     a ((frontier_iff_undominated exact).mp frontier)⟩
 
 end Judgment
 
