@@ -1,0 +1,55 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean": {
+   "zh": "整合 I3e：新增一节“不被胜过者”（WeaklyDecided、Decided.weakly、Undominated、exists_undominated、Undominated.not_not_has、undominated_has、bettered_of_undominated_has、undominated_has_iff，及两条界 exists_undominated_iff_weakly 与 undominated_has_iff_em）；原有陈述不变",
+   "en": "integration I3e: a section on undominated members added (WeaklyDecided, Decided.weakly, Undominated, exists_undominated, Undominated.not_not_has, undominated_has, bettered_of_undominated_has, undominated_has_iff, and the boundaries exists_undominated_iff_weakly and undominated_has_iff_em); earlier statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean": {
+   "zh": "整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变",
+   "en": "integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean": {
+   "zh": "P83g：新增一节 CubicRest（oddCycle、learner_refuted_late、learner_rest_cubic 及其沿各转的推演，34 项声明：按否证学习者的静止之步是立方阶的）；原有陈述不变",
+   "en": "P83g: a section CubicRest added (oddCycle, learner_refuted_late, learner_rest_cubic and their walk through the turns, 34 declarations: the refutation learner's rest step is cubic); earlier statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean": {
+   "zh": "P83g：新增 Law.registered_within_exact（一个世界之内检验的 N − 1 恰好）；原有陈述不变",
+   "en": "P83g: Law.registered_within_exact added (N − 1 exact for the tests within one world); earlier statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "P83g：Identification 与 Distinguishing 两条写明立方阶的静止之步与一个世界之内的恰好性",
+   "en": "P83g: the Identification and Distinguishing bullets name the cubic rest step and the exactness within one world"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "P83g：Identification 与 Distinguishing 的范围说明相应增补",
+   "en": "P83g: the Identification and Distinguishing scope sentences extended accordingly"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "P83g：Identification 与 Distinguishing 两行相应增补",
+   "en": "P83g: the Identification and Distinguishing rows extended accordingly"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "整合 I3e：§9 中 Decidedness 与桥接两行写入新律与定理数，新增 OrganizationCorrespondence 一行，实例模块一句列出它；P83g：辨识两行与开放项写入立方阶的静止之步与一个世界之内的恰好性，Identification 与 Distinguishing 定理数更新；总数改据新回执",
+   "en": "integration I3e: in §9 the Decidedness and Bridge rows name the new laws and counts, an OrganizationCorrespondence row added and the instance-module sentence lists it; P83g: the identification rows and open items gain the cubic rest step and the exactness within one world, the Identification and Distinguishing counts updated; the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第135节（整合 I3e：继承模块中的记录接入脊柱）与第136节（P83g：立方阶的静止之步，一个世界之内的恰好性）及其英文段；此前各节不变",
+   "en": "sections 135 (integration I3e: records in an inherited module joined to the spine) and 136 (P83g: the cubic rest step, exactness within one world) with their English paragraphs; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T163210.426211Z 上重新生成，含 I3e 的分类与两条界：陈述依赖可判定 329 → 331，只在证明中用到 188 → 193，证明可判定 131 → 132，取可判定族的定义 92 不变",
+   "en": "regenerated on receipt 20261015T163210.426211Z with I3e's classifications and two boundaries: statements depending on decidedness 329 → 331, used only in proofs 188 → 193, proving decidedness 131 → 132, definitions taking a decidability family 92 unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变",
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed"
+  }
+ },
+ "history": {
+  "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}

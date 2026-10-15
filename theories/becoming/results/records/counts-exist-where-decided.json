@@ -145,7 +145,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
       "role": "proof",
-      "sha256": "d294acbfa2db418304bd0e5aa2aaad8522f11eb3390216b3d69922913b09ea2c",
+      "sha256": "ed09ce614679228d1654bc784eadd022b18d87d3a65f8b6a5d6cad83254e7b66",
       "declarations": [
         "Becoming.Decided",
         "Becoming.not_not_decided",
@@ -223,7 +223,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635"
+      "sha256": "736f09933edcc79a386de0cb5caba24f9bb2866981ab81f7b6f9156249aa4b80"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -233,13 +233,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "d85732c112532538e80dfcde843bcf9cad7440eb381e28297098c1ca163ee4a1"
+      "sha256": "f0263fb1566f220a38eeb0a9d637322ddff679f96f7a7b4d1750cb0b36735804"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "role": "receipt",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Decidedness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -411,6 +417,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））；DECIDABILITY-INVENTORY.md（在回执 20261015T161154.555289Z 上重新生成，含 I3d 的分类：陈述依赖可判定 325 → 329，只在证明中用到 187 → 188，取可判定族的定义 91 → 92）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78)); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T161154.555289Z with I3d's classifications: statements depending on decidedness 325 → 329, used only in proofs 187 → 188, definitions taking a decidability family 91 → 92)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Decidedness.lean（整合 I3e：新增一节“不被胜过者”（WeaklyDecided、Decided.weakly、Undominated、exists_undominated、Undominated.not_not_has、undominated_has、bettered_of_undominated_has、undominated_has_iff，及两条界 exists_undominated_iff_weakly 与 undominated_has_iff_em）；原有陈述不变）；THE-THEORY-OF-BECOMING.md（整合 I3e：§9 中 Decidedness 与桥接两行写入新律与定理数，新增 OrganizationCorrespondence 一行，实例模块一句列出它；P83g：辨识两行与开放项写入立方阶的静止之步与一个世界之内的恰好性，Identification 与 Distinguishing 定理数更新；总数改据新回执）；DECIDABILITY-INVENTORY.md（在回执 20261015T163210.426211Z 上重新生成，含 I3e 的分类与两条界：陈述依赖可判定 329 → 331，只在证明中用到 188 → 193，证明可判定 131 → 132，取可判定族的定义 92 不变）。",
+      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Decidedness.lean (integration I3e: a section on undominated members added (WeaklyDecided, Decided.weakly, Undominated, exists_undominated, Undominated.not_not_has, undominated_has, bettered_of_undominated_has, undominated_has_iff, and the boundaries exists_undominated_iff_weakly and undominated_has_iff_em); earlier statements unchanged); THE-THEORY-OF-BECOMING.md (integration I3e: in §9 the Decidedness and Bridge rows name the new laws and counts, an OrganizationCorrespondence row added and the instance-module sentence lists it; P83g: the identification rows and open items gain the cubic rest step and the exactness within one world, the Identification and Distinguishing counts updated; the totals moved to the new receipt); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T163210.426211Z with I3e's classifications and two boundaries: statements depending on decidedness 329 → 331, used only in proofs 188 → 193, proving decidedness 131 → 132, definitions taking a decidability family 92 unchanged)."
     }
   ]
 }

@@ -8638,6 +8638,56 @@ Integration: §9 四行新增、五行计数（随核心运行）；六项记录
 
 **下一步（I 列）。** 主证明在脊柱运行之外的记录已无。I 列余下 I4（约 500 个模块的归类），待 Ren。
 
+## 135. 继承模块中的记录接入脊柱（整合 I3e）：列出之选项中不被胜过者；弱排中与排中两条界
+
+2026-10-15。延续 §124、§127、§129、§134 的 I 列（Ren：“push as far as possible, as strong as possible, generally agree with your direction - but i also realize - a lot proofs are probably not integrated”，[来源](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md)）。I3d 之后，主证明在脊柱运行之外的记录已无；主证明在继承模块中的还有 7 项。I3e 取其中两项：organizational-formation-from-generative-comparison 与 practical-judgment-g0-j。两项的主定理都是“有限菜单上有不被胜过的选项”及其推论，外围以经典推理证明（`PracticalJudgment.finite_frontier` 用 `classical`）。核心原先没有这条律。I3e 在既有核心模块 Becoming.Decidedness 中加一段律（不新增核心模块），说明它所需的恰是什么；在桥接中加三条定理，另写一个外围实例模块，有自己的检查器，核心不导入它。按整合者的约定，practical-judgment-g0-j 只改引用、别名与历史；论断、Ren 的话与 G0 的折叠都不变。
+
+```text
+Result(s): 改写 2 项记录（脊柱别名、核心／桥接与实例模块的引用、实例回执与绑定、历史）：
+           organizational-formation-from-generative-comparison、practical-judgment-g0-j；不新增记录
+Delta: 核心：Becoming.Decidedness 加列出之选项中不被胜过者（55 → 65 项定理），含两条边界定理；
+       桥接：Becoming.Bridge 的判断框架一节加 frontier_iff_undominated、frontier_exists、required_of_bettered（120 → 123）；
+       外围实例模块及其检查器：OrganizationCorrespondence（3 项定理）；
+       可判定性清点：只在证明中用到 188 → 193（逐条分类），证明可判定者 131 → 132，边界句加两条定理
+Supplied premises / correspondence: 核心律不加前提，弱判定与判定是各条律自己的条件；实例沿用原模块的前提
+           （有限非空且确切列出的合格选项、非自反传递的比较、每个缺少组织关系的接续都有更好的合格构造、所构造的协调情形）；
+           规范解释继承公开的 J 承诺
+Evidence: 核心与桥接由核心运行审计（回执 20261015T163210.426211Z）；外围检查器实跑（回执 20261015T163336.437151Z），闭包中每个其他模块的当前字节都有通过的回执
+Boundary: 见下文“边界”
+Integration: §9 一行新增、两行计数（随核心运行）；两项记录；一个外围检查器；可判定性清点
+```
+
+**测量。** 以落地回执，`SPINE-INTEGRATION.py`：在脊柱上陈述 190 → 192，继承模块中 7 → 5，运行之外 0，无 Lean 证明 10；较宽口径（引用某项脊柱证明）194 → 195。外围实例模块不在脊柱运行之内（需 Std 的策略与 Mathlib 路径）：组织形成一项“在脊柱上陈述”，是指其别名命名的核心律与桥接定理；实例由检查器实查。
+
+**列出之选项中不被胜过者（Becoming.Decidedness，不加前提）。** 一个命题弱判定，是说它不成立，或它的不成立被否证（`WeaklyDecided p`：`¬ p ∨ ¬ ¬ p`）；判定者都弱判定（`Decided.weakly`）。一个非空的列出选项表上，比较在表上非自反、传递，且一个选项是否胜过另一个弱判定时，有不被表上任何选项胜过的选项（`exists_undominated`）。证明沿列表走一遍：保留后面的选项中尚无一个被知道胜过它的那个，不用选择，也不用排中律。对一个性质，若缺之的每个选项都被表上某选项胜过，则不被胜过者不能缺少它（`Undominated.not_not_has`，不用判定），性质判定时它就有（`undominated_has`）。反之，比较判定时，若不被胜过者都有该性质，缺之的每个选项都被某选项胜过（`bettered_of_undominated_has`）。故比较与性质都判定时，不被胜过者都有该性质，恰当缺之的每个选项都被胜过（`undominated_has_iff`）。
+
+**两条界（Becoming.Decidedness）。** 整合者要求：去掉判定若恰是排中律，就写成边界定理。结果分两层。
+- 要求对每个关系成立时，存在之律所需恰是弱排中律（`exists_undominated_iff_weakly`）。在两个选项上，取 `Opposed p`：`true` 胜过 `false` 恰当 `p`，`false` 胜过 `true` 恰当 `¬ p`。它非自反、传递，且不需判定。`false` 不被胜过恰当 `p` 不成立，`true` 不被胜过恰当 `p` 的不成立被否证。所以完全的判定不是存在所需的：弱判定足够，而且在全部关系上必需。
+- 要求对每个菜单、关系与性质成立时，去掉性质的判定恰是排中律（`undominated_has_iff_em`）。在只有一个选项、没有关系的菜单上，以“`p` 已判定”为性质：缺之者被胜过的条件成立（`p` 是否判定，其否定被否证），结论就是 `p ∨ ¬ p`。
+两条都列入可判定性清点的边界定理。
+
+**桥接（公理报告为空）。** 在确切列出的选项表上，`PracticalJudgment` 的前沿即核心的不被胜过者（`Judgment.frontier_iff_undominated`）。于是比较非自反、传递且弱判定时，前沿非空（`Judgment.frontier_exists`）。这就是 `PracticalJudgment.finite_frontier`，不用经典推理。任务也判定时，前沿非空且每个成员都完成任务（`Judgment.required_of_bettered`），即 `RelationalOrganization.formation_required_of_improvable_absence`，同样不用经典推理。
+
+**组织形成（OrganizationCorrespondence）。** 外围的定理以 `Classical.em` 供给核心所要求的判定：`formation_required_of_improvable_absence` 由 `exists_undominated` 与 `undominated_has` 给出（`formation_required_by_core`），所构造的协调情形亦然（`coordination_is_required_by_core`，用外围的 simp 引理）。在确切列出的菜单上，前沿即不被胜过者（`frontier_iff_undominated`），公理报告为空。
+
+**一般实践判断（桥接）。** practical-judgment-g0-j 的比较已在 I3d 读作 `BetterAt`（`Judgment.better_iff_betterAt`、`Judgment.frontier_iff`）。现在它的有限前沿也是脊柱上的律（`Judgment.frontier_exists`，经 `Becoming.exists_undominated`）。记录的论断、Ren 的话与 G0 的折叠都不变：`BetterAt` 陈述 J1/J2，是核心之外的公开承诺，这里不用也不断言 G0。`Robust` 即核心的 `CommonResponse`（既有）。以需求为指标的覆盖（`Covered`）在脊柱上没有确切的对应，留在外围（同 §134）。
+
+**留在继承模块中的五项，及理由。**
+1. derivation-soundness、finite-basis-common-interpretation：健全性与归约属于 InquiryRoot 的推导演算（`Derives`）。桥接把它们读到核心的 `Scope` 上（`derivation_sound_on_scope`、`common_on_scope_iff`，§127），但这些桥接定理的证明就是 InquiryRoot 的定理。核心没有推导演算；以它们为别名会把外围的证明说成脊柱的律。
+2. positioned-positive-reason、positive-ground-open-futures：脊柱上的中心陈述已是别的记录的别名（`universal_reason` 属 metaethical-core-characterization，`every_situated_position_has_reason_of_unrestricted` 与 `contingent_generation_of_unrestricted` 属 one-axiom-yields-g0，定义的同一属 becoming-spine-instances），别名须唯一。以明示 G0 为假设的形式、最小路线理由与有限积分仍只在继承模块中证明。
+3. wisdom-root：是目标，不是定理；它的形式部分在 wisdom-root-part-one 中完成（§93）。
+
+**无 Lean 证明的十项。** 七项是评估：五项是经验或公开数据的对应（context-sensitive-updating-correspondence、encounter-control-and-retention、formed-software-continuation、naming-attention-coverage、situated-recovery-empirical-correspondence），两项是对奠基的评估（conditional-foundation-assessment、constitutive-binding-assessment）。另三项是开放的目标（scientific-inquiry-foundation、theory-of-becoming-foundation、universal-practical-warrant）。它们都不是待接入的证明。
+
+**作者反审。**
+1. **新律还是重述？** `exists_undominated` 的外围形式是熟知的有限极大元存在。新的是它所需的恰是什么：弱判定足够；在全部关系上，弱排中律必需（`exists_undominated_iff_weakly`）。另一条是：去掉性质的判定恰是排中律（`undominated_has_iff_em`）。没有判定时，律仍给出不被胜过者不能缺少该性质（`Undominated.not_not_has`）。
+2. **实践判断一项是否确切？** `exists_undominated` 的结论即 `finite_frontier` 的结论，`frontier_exists` 把它读作前沿（`frontier_iff_undominated`）。核心的形式把比较的弱判定写成前提，证明不用经典推理；以经典推理，这一前提总成立，故外围定理是它的实例。比较是 J1/J2 的 `Better`，已由 I3d 的 `better_iff_betterAt` 读作配置上的比较。实际交接中以需求为指标的覆盖（`Covered`）仍在外围，记录如此注明。
+3. **公理。** 核心与桥接的新声明公理报告为空。外围实例：`frontier_iff_undominated` 为空，另两条用 propext、Classical.choice 与 Quot.sound（经典判定与外围的 simp）。
+
+**边界。** 核心律只在其所陈述的条件下成立；哪个菜单、哪个比较对应一项实际选择，随每项应用给出。组织形成的实例保持原模块的范围：比较、合格性与所构造的历史是所给的，规范解释继承公开的 J 承诺，不证明服从或部署。两项记录的旧回执保留；新别名绑定到核心回执与外围回执。
+
+**下一步（I 列）。** 主证明在运行之外的记录已无。继承模块中的五项按上文的理由留下，无 Lean 证明的十项不是待接入的证明。I 列余下 I4（约 500 个模块的归类），待 Ren。
+
 ## 136. 按否证学习者的静止之步是立方阶的；一个世界之内检验的 N − 1 恰好（P83g）
 
 2026-10-15，[identification-where-bounded](../../../../theories/becoming/results/records/identification-where-bounded.md) 与 [tests-fix-likeness-where-determined](../../../../theories/becoming/results/records/tests-fix-likeness-where-determined.md) 余下的两项小的开放问题。依据 Ren 2026-10-15 的“let's finish Still open, all minor”。工作板上认领为 P83g。编辑 `Becoming.Identification`（以最小的界一节之后新增一节）与 `Becoming.Distinguishing`（一条定理），只增加声明，已有声明不变；不加公理，不加前提。
@@ -8651,7 +8701,7 @@ Result(s): 复用 identification-where-bounded（lassoPos_early、lassoPos_perio
            一条规律（第十六条）
 Delta: Identification.cyclePos、oddCycle、oddCycle_below、even_shift_runs、odd_shift_runs、unit_shift_refuted、turnHeld、
        turn_pair、turn_end、turn_walk、turn_double、start_turn、turn_diagonals、learner_refuted_late、learner_rest_cubic
-       （及其辅助引理，共 34 项声明）；Law.registered_within_exact
+       （及其辅助引理，共 34 项声明）；registered_within_exact
 Supplied premises / correspondence: 不加公理；立方阶的定理陈述在两个值（Bool）上，值已判定
 Evidence: scratch_build 对 main 0d93e617：Becoming.Identification 105 项定理、128 项声明（P83f 为 74、94），
        Becoming.Distinguishing 11 项、12 项，Becoming.Learnable 重建，公理报告为空；核心检查器回执待整合者的运行；
@@ -8672,7 +8722,7 @@ Integration: identification-where-bounded 的“按否证学习者自己的确�
 | `turn_walk`、`turn_double`、`start_turn`、`turn_diagonals` | **对角线成对。** 沿一条对角线每对位移花一圈；对角线 2c + 2 与 2c + 3 合起来花 2c + 3 圈；所以第 (c + 1)² 圈的第一步之后，学习者持有对角线 2c + 2 的开头 |
 | `learner_refuted_late` | **在立方阶的一步被否证。** N = 2m + 3 时，学习者在第 (N³ − N)/4 = (2m + 3)(m + 1)(m + 2) 步被否证：持有周期 N 的假设之前，(N² − 1)/4 个偶数位移每个花去整整一圈 |
 | `learner_rest_cubic` | **静止之步在立方阶之后。** 使学习者在每个至多 N 个状态的二值历史上都对的一步在 (N³ − N)/4 之后 |
-| `Law.registered_within_exact` | **一个世界之内 N − 1 恰好。** 对每个 N = M + 2，Fin N 上走到停住的最后一个、只识是否到了最后的路径，世界由 N 个成员的列表（`finBelow`）持有；前两个位置所识的未来在 N − 2 步内一致而不通过相同的检验 |
+| `registered_within_exact` | **一个世界之内 N − 1 恰好。** 对每个 N = M + 2，Fin N 上走到停住的最后一个、只识是否到了最后的路径，世界由 N 个成员的列表（`finBelow`）持有；前两个位置所识的未来在 N − 2 步内一致而不通过相同的检验 |
 
 **它回答了什么。** §97 与 §133 留下按否证学习者自己的确切静止之步。§133 已表明对所有学习者最优的是 2N − 1，按否证学习者的上界 N + (2N − 1)·tri N 是立方阶的。这里表明这一上界在阶上不粗：在奇数个位置的环上的二值否定上，学习者在 (N³ − N)/4 被否证。所以一次否证一个假设的学习与以最小的界读记录的学习，差别在立方阶与线性之间：两者都静止，差在何时。确切的常数没有证明。对至多 N 个状态的历史穷举（二值 N ≤ 17，三值 N ≤ 9），奇数 N ≥ 3 的最坏静止之步是 (N³ − N)/4 + 3，达到它的是同一否定从另一个位置开始；偶数 N 从 12 到 16 是 N − 1 的值加一。这是计算，不是证明。§132 中检验的 N − 1 只在律下封闭的列表上由 `Law.sameFuture_classes_exact` 给出恰好；这里对整个由 N 个配置持有的世界（Fin N）给出。
 
@@ -10030,4 +10080,20 @@ The author's counterreview concedes three points. The necessary side follows dir
   - **The alignment direction** (bridge). Its comparison of plans and its frontier are `BetterAt`'s (`alignment_better_iff_betterAt`, `alignment_frontier_iff`). Its claims, Ren's words and the fold of G0 are unchanged: `BetterAt` states J1/J2, and G0 is neither used nor asserted. Demand-indexed coverage has no exact counterpart on the spine and stays in the periphery.
 - **Remaining.** Column I's remaining step is I4, the classification of about 500 modules, which awaits Ren.
 
-**The learner by refutation rests at a cubic step, and N − 1 is exact for the tests within one world, P83g (15 October 2026).** The two minor open items of identification-where-bounded and tests-fix-likeness-where-determined, under Ren's “let's finish Still open, all minor” of 15 October. Section 136 adds a section to `Becoming.Identification` and one theorem to `Becoming.Distinguishing`; declarations are only added, with no axiom and no premise. On the two-valued negation along a cycle of N = 2m + 3 places (`oddCycle`), which cannot close around an odd cycle and breaks once in every turn, a history with at most N states, the learner by refutation over the lasso hypotheses is refuted at step (N³ − N)/4 (`learner_refuted_late`). From the second turn on, every even shift it holds runs to the end of a turn and is refuted at the start of the next, and every odd shift is refuted within the turn, so each of the (N² − 1)/4 even shifts before the period N costs a whole turn. A step from which it is right on every two-valued history with at most N states therefore comes after (N³ − N)/4 (`learner_rest_cubic`): with `learner_rests` its rest step is cubic in N, while the learner by the least bound rests from 2N − 1 (section 133). The constant is not proved. Exhaustive search over histories with at most N states (two values, N ≤ 17; three, N ≤ 9) finds the worst rest step (N³ − N)/4 + 3 for odd N ≥ 3, attained by the same negation started elsewhere; that is a computation, not a proof. Within one world the tests' N − 1 is exact for every N ≥ 2: on Fin N, along the path to a last place that stays, registering only whether the last is reached, the first two places agree for N − 2 steps and do not pass the same tests (`Law.registered_within_exact`). Readings (the AI's, pending Ren): deriving does not need the bound known, but how the record is read sets when; refuting one hypothesis at a time derives the law a cubic order later than reading by the simplest law.
+**Records in an inherited module joined to the spine, integration I3e (15 October 2026).** Continuing column I, section 135 takes two of the seven records whose main proof lay in an inherited module: organizational formation from generative comparison and practical judgment under G0/J. The main theorem of each is that a finite menu has an undominated choice, or follows from it. The periphery proves that classically (`PracticalJudgment.finite_frontier` uses `classical`), and the core had no such law. I3e adds a section of laws to the existing core module Becoming.Decidedness that says exactly what the law needs. It adds three theorems to the bridge and writes one periphery instance module with its own checker, which the core does not import. For practical judgment only references, aliases and history change: its claims, Ren's words and the fold of G0 are unchanged. The measure goes from 190 to 192 stated on the spine and from 7 to 5 in an inherited module.
+- **Core laws, no premise** (`Becoming.Decidedness`).
+  - **Existence.** A proposition is weakly decided where it fails or its failure is refuted (`WeaklyDecided`, `¬ p ∨ ¬ ¬ p`). A nonempty listed menu has an undominated member where the comparison is irreflexive, transitive and weakly decided on it (`exists_undominated`). The member is found by one pass along the list, using no choice and no excluded middle.
+  - **What undominated members have.** Where every member lacking a property is bettered by some member, an undominated member cannot lack it (`Undominated.not_not_has`, no decidedness), and has it where the property is decided (`undominated_has`). With comparison and property decided, this holds exactly where every member lacking the property is bettered (`undominated_has_iff`).
+- **Two boundaries.** Asked of every relation, the existence law needs exactly weak excluded middle (`exists_undominated_iff_weakly`). The witness is `Opposed p` on two members: `true` betters `false` exactly where `p` holds, and `false` betters `true` exactly where `p` fails. Asked of every menu, relation and property, dropping the property's decidedness is exactly excluded middle (`undominated_has_iff_em`). Both join the boundary theorems of the decidability inventory.
+- **Bridge** (empty axiom reports). On an exact listed menu, the frontier of `PracticalJudgment` is the undominated members (`Judgment.frontier_iff_undominated`). So it is not empty where the comparison is weakly decided (`Judgment.frontier_exists`): `finite_frontier` with no classical reasoning. Where the task is decided too, every member of the frontier performs it (`Judgment.required_of_bettered`): `formation_required_of_improvable_absence` with no classical reasoning.
+- **Instances.**
+  - **Organizational formation** (`OrganizationCorrespondence`). With `Classical.em` supplying the decidedness the core asks, `formation_required_of_improvable_absence` and the constructed coordination case follow from `exists_undominated` and `undominated_has` (`formation_required_by_core`, `coordination_is_required_by_core`).
+  - **Practical judgment** (bridge). Its comparison was read as `BetterAt` in I3d. Its finite frontier is now a law on the spine too. `BetterAt` states J1/J2, and G0 is neither used nor asserted. Demand-indexed coverage stays in the periphery.
+- **What stays inherited, and why.**
+  - Derivation soundness and finite-basis common interpretation are theorems of InquiryRoot's derivation calculus. The bridge reads them on `Scope` (section 127), but those bridge theorems are proved by InquiryRoot's, and the core has no derivation calculus.
+  - Positioned positive reason and positive ground for open futures have their spine statements already owned as aliases by other records (metaethical-core-characterization, one-axiom-yields-g0, becoming-spine-instances). Their explicit-G0 forms, least route reason and finite integral are proved only in the inherited module.
+  - The wisdom root is a target, whose formal part is wisdom-root-part-one (section 93).
+- **No Lean proof.** Ten records have none: five empirical or public-data correspondences, two assessments of the foundation, and three open targets. None is a proof waiting to be joined.
+- **Remaining.** Column I's remaining step is I4, the classification of about 500 modules, which awaits Ren.
+
+**The learner by refutation rests at a cubic step, and N − 1 is exact for the tests within one world, P83g (15 October 2026).** The two minor open items of identification-where-bounded and tests-fix-likeness-where-determined, under Ren's “let's finish Still open, all minor” of 15 October. Section 136 adds a section to `Becoming.Identification` and one theorem to `Becoming.Distinguishing`; declarations are only added, with no axiom and no premise. On the two-valued negation along a cycle of N = 2m + 3 places (`oddCycle`), which cannot close around an odd cycle and breaks once in every turn, a history with at most N states, the learner by refutation over the lasso hypotheses is refuted at step (N³ − N)/4 (`learner_refuted_late`). From the second turn on, every even shift it holds runs to the end of a turn and is refuted at the start of the next, and every odd shift is refuted within the turn, so each of the (N² − 1)/4 even shifts before the period N costs a whole turn. A step from which it is right on every two-valued history with at most N states therefore comes after (N³ − N)/4 (`learner_rest_cubic`): with `learner_rests` its rest step is cubic in N, while the learner by the least bound rests from 2N − 1 (section 133). The constant is not proved. Exhaustive search over histories with at most N states (two values, N ≤ 17; three, N ≤ 9) finds the worst rest step (N³ − N)/4 + 3 for odd N ≥ 3, attained by the same negation started elsewhere; that is a computation, not a proof. Within one world the tests' N − 1 is exact for every N ≥ 2: on Fin N, along the path to a last place that stays, registering only whether the last is reached, the first two places agree for N − 2 steps and do not pass the same tests (`registered_within_exact`). Readings (the AI's, pending Ren): deriving does not need the bound known, but how the record is read sets when; refuting one hypothesis at a time derives the law a cubic order later than reading by the simplest law.

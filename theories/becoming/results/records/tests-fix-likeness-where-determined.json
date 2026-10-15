@@ -187,10 +187,10 @@
       ]
     },
     {
-      "zh": "一个世界之内 N − 1 对检验恰好：对每个 N ≥ 2，在 N 个位置走到停住的最后一个、只识是否到了最后的路径上，世界整个由 N 个配置持有，前两个位置在 N − 2 步内一致而不通过相同的检验（Law.registered_within_exact）。不加前提。",
-      "en": "Within one world N − 1 is exact for the tests: for every N ≥ 2, on the path of N places to a last one that stays, registering whether the last is reached, in a world N configurations hold wholly, the first two places agree for N − 2 steps and do not pass the same tests (Law.registered_within_exact). No premise.",
+      "zh": "一个世界之内 N − 1 对检验恰好：对每个 N ≥ 2，在 N 个位置走到停住的最后一个、只识是否到了最后的路径上，世界整个由 N 个配置持有，前两个位置在 N − 2 步内一致而不通过相同的检验（registered_within_exact）。不加前提。",
+      "en": "Within one world N − 1 is exact for the tests: for every N ≥ 2, on the path of N places to a last one that stays, registering whether the last is reached, in a world N configurations hold wholly, the first two places agree for N − 2 steps and do not pass the same tests (registered_within_exact). No premise.",
       "declarations": [
-        "Becoming.Law.registered_within_exact"
+        "Becoming.registered_within_exact"
       ]
     }
   ],
@@ -294,7 +294,7 @@
     "Becoming.registered_across_exact",
     "the tests are a bounded record",
     "检验即有界的记录",
-    "Becoming.Law.registered_within_exact"
+    "Becoming.registered_within_exact"
   ],
   "dependencies": [
     {
@@ -568,7 +568,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "a6e81fe80646c5c153db0f4205dccd901e68ff27cbc47d2d09b542c68efdcf53",
+      "sha256": "05d99f43f8eedebf164266ee6e1a6b1b5c56cc35d832e5324aaafdd1cc9e91a7",
       "declarations": [
         "Becoming.Frame.ofModel",
         "Becoming.branching_bisimulation_iff",
@@ -681,7 +681,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
       "role": "proof",
-      "sha256": "4449bcc884d1be67ce87efa4936eea5e2b77908797d171e2c9c01eaa025b7313",
+      "sha256": "5bcb0047ec2f67ee170138f26345f7df0a185b56b62f5a412abd95a3d9c79efa",
       "declarations": [
         "Becoming.Law.agree_bisimulation",
         "Becoming.Law.alike_iff_agree",
@@ -694,13 +694,13 @@
         "Becoming.Law.realized_within",
         "Becoming.labelled_across_exact",
         "Becoming.registered_across_exact",
-        "Becoming.Law.registered_within_exact"
+        "Becoming.registered_within_exact"
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T154730.760380Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
       "role": "receipt",
-      "sha256": "af0ea641fd3841aeebe285ac4e7e0faeaa0ab1c9e7d2924fb1d2f85710bb8a0f",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
       "declarations": []
     },
     {
@@ -748,7 +748,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -769,7 +769,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T154730.760380Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Distinguishing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -917,8 +917,12 @@
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
     },
     {
-      "zh": "2026-10-15 P83g：按 Ren 2026-10-15 的“let's finish Still open, all minor”，回答第十四条规律在一个世界之内是否恰好：新增第十六条规律（Law.registered_within_exact）：对每个 N ≥ 2，整个由 N 个配置持有的世界中，N − 1 对检验恰好。Distinguishing 的引用列出新声明（只增加声明，已有声明不变）；验证范围待整合者的核心检查器运行后重新指向。见整合文档中 P83g 一节。",
-      "en": "2026-10-15 P83g: following Ren's ‘let's finish Still open, all minor’ of 15 October 2026, whether the fourteenth law is exact within one world is answered: a sixteenth law is added (Law.registered_within_exact): for every N ≥ 2, N − 1 is exact for the tests in a world wholly held by N configurations. The Distinguishing reference lists the new declaration (declarations only added, earlier ones unchanged); the validation scope is re-pointed after the integrator's core checker run. See the P83g section of the integration note."
+      "zh": "2026-10-15 P83g：按 Ren 2026-10-15 的“let's finish Still open, all minor”，回答第十四条规律在一个世界之内是否恰好：新增第十六条规律（registered_within_exact）：对每个 N ≥ 2，整个由 N 个配置持有的世界中，N − 1 对检验恰好。Distinguishing 的引用列出新声明（只增加声明，已有声明不变）；验证范围待整合者的核心检查器运行后重新指向。见整合文档中 P83g 一节。",
+      "en": "2026-10-15 P83g: following Ren's ‘let's finish Still open, all minor’ of 15 October 2026, whether the fourteenth law is exact within one world is answered: a sixteenth law is added (registered_within_exact): for every N ≥ 2, N − 1 is exact for the tests in a world wholly held by N configurations. The Distinguishing reference lists the new declaration (declarations only added, earlier ones unchanged); the validation scope is re-pointed after the integrator's core checker run. See the P83g section of the integration note."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）；Distinguishing.lean（P83g：新增 Law.registered_within_exact（一个世界之内检验的 N − 1 恰好）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged); Distinguishing.lean (P83g: Law.registered_within_exact added (N − 1 exact for the tests within one world); earlier statements unchanged)."
     }
   ],
   "text_versions": [

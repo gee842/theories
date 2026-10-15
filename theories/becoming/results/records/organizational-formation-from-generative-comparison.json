@@ -28,7 +28,10 @@
     "en": "One support history forms links, retains a basis and bears an opportunity loss; the two carriers are routes. Concrete eligibility means physical feasibility only and does not certify real authority."
   },
   "canonical_source": "theories/becoming/chapters/ETHICAL-LEARNING.md",
-  "aliases": [],
+  "aliases": [
+    "Becoming.undominated_has_iff",
+    "Becoming.Judgment.required_of_bettered"
+  ],
   "dependencies": [
     {
       "id": "practical-judgment-g0-j",
@@ -146,6 +149,61 @@
       "role": "provenance",
       "sha256": "e4971470ddececbd5e6d7800a4fb7ae1f3708e680ab6cef8485820bdf31c61da",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "role": "proof",
+      "sha256": "ed09ce614679228d1654bc784eadd022b18d87d3a65f8b6a5d6cad83254e7b66",
+      "declarations": [
+        "Becoming.WeaklyDecided",
+        "Becoming.Decided.weakly",
+        "Becoming.Undominated",
+        "Becoming.exists_undominated",
+        "Becoming.Undominated.not_not_has",
+        "Becoming.undominated_has",
+        "Becoming.bettered_of_undominated_has",
+        "Becoming.undominated_has_iff",
+        "Becoming.exists_undominated_iff_weakly",
+        "Becoming.undominated_has_iff_em"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "05d99f43f8eedebf164266ee6e1a6b1b5c56cc35d832e5324aaafdd1cc9e91a7",
+      "declarations": [
+        "Becoming.Judgment.frontier_iff_undominated",
+        "Becoming.Judgment.frontier_exists",
+        "Becoming.Judgment.required_of_bettered"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "role": "receipt",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean",
+      "role": "proof",
+      "sha256": "ae4e273947ed19b773c148bb2b44cfaa80c1890f9f77a7c04c118a9a6336838a",
+      "declarations": [
+        "Becoming.OrganizationCorrespondence.frontier_iff_undominated",
+        "Becoming.OrganizationCorrespondence.formation_required_by_core",
+        "Becoming.OrganizationCorrespondence.coordination_is_required_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/organization-correspondence-checks/20261015T163336.437151Z/verification.json",
+      "role": "receipt",
+      "sha256": "a96823f08f28b03ac360192a437d46135eb73d97b77174638eb2ee68642dc73c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_organization_correspondence.py",
+      "role": "provenance",
+      "sha256": "33ab5ef6ae1318c66f4e8047b9869c54f2bbfd6fb849141a9c9b8553023cdb02",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -153,6 +211,27 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json",
       "sha256_pointer": "/source_sha256/RelationalOrganization",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Decidedness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/organization-correspondence-checks/20261015T163336.437151Z/verification.json",
+      "sha256_pointer": "/source_sha256/OrganizationCorrespondence",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -185,6 +264,10 @@
     {
       "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 3 项分类“未表明”，“无经验验证”移入证据，“已有公理与条件成果保持有效范围”由通用边界 zero-axiom-target-open 承担；4 行“已接通”链接研究第74、75、78、79节；下一步第一句（分类稳健比较已接通）移入第四行“已接通”。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md)；迁移前的完整记录为 text_versions[0]。",
       "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations became 3 typed does-not-show items, “no empirical validation” moved to the evidence, and “existing axioms and conditional results retain their scope” is carried by the standard boundary zero-axiom-target-open; 4 progress lines link study sections 74, 75, 78 and 79; the next step's first sentence (robust classification connected) became the fourth progress line. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "zh": "2026-10-15，整合 I3e（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Decidedness 的列出之选项中不被胜过者，新增，不加前提；桥接 Judgment.required_of_bettered）。一个列出的非空选项表上，比较非自反、传递且在表上弱判定（¬p ∨ ¬¬p，WeaklyDecided；判定者都弱判定，Decided.weakly）时，有不被胜过的选项（exists_undominated）；不被胜过者不能缺少每个缺之者都被胜过的性质（Undominated.not_not_has），该性质判定时不被胜过者都有它（undominated_has）；比较与性质都判定时，不被胜过者都有它，恰当缺之的每个选项都被表上某选项胜过（undominated_has_iff）。在全部关系上，存在之律所需恰是弱排中律（exists_undominated_iff_weakly），去掉性质的判定恰是排中律（undominated_has_iff_em）。桥接：在确切列出的选项表上，PracticalJudgment 的前沿即不被胜过者（Judgment.frontier_iff_undominated），故比较弱判定、任务判定时，前沿非空且每个成员都完成任务（Judgment.required_of_bettered），即 formation_required_of_improvable_absence，不用经典推理。外围实例 OrganizationCorrespondence：以 Lean 的经典判定供给核心所要求者，formation_required_of_improvable_absence 由 exists_undominated 与 undominated_has 给出（formation_required_by_core），所构造的协调情形亦然（coordination_is_required_by_core）。比较、合格性与所构造的历史保持原范围；规范解释继承公开的 J 承诺。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T163336.437151Z），只用标准公理：frontier_iff_undominated 的公理报告为空，formation_required_by_core 与 coordination_is_required_by_core 以 Lean 的经典判定供给核心所要求者、并用外围的 simp 引理（propext、Classical.choice、Quot.sound）；所实例化的核心律与桥接定理由核心运行审计（回执 20261015T163210.426211Z，公理报告为空）。",
+      "en": "15 October 2026, integration I3e (Ren: “a lot proofs are probably not integrated”): stated on the spine (the new laws of Becoming.Decidedness for undominated members of a listed menu, no premise; the bridge’s Judgment.required_of_bettered). On a nonempty listed menu where the comparison is irreflexive, transitive and weakly decided (¬p ∨ ¬¬p, WeaklyDecided; whatever is decided is weakly decided, Decided.weakly), some member is undominated (exists_undominated); an undominated member cannot lack a property every member lacking it is bettered in (Undominated.not_not_has), and has it where the property is decided (undominated_has); where comparison and property are both decided, every undominated member has the property exactly where every member lacking it is bettered by some member (undominated_has_iff). Over all relations, the existence law needs exactly weak excluded middle (exists_undominated_iff_weakly), and dropping the decidedness of the property is exactly excluded middle (undominated_has_iff_em). Bridge: on an exact listed menu the frontier of PracticalJudgment is the undominated members (Judgment.frontier_iff_undominated), so where the comparison is weakly decided and the task decided, the frontier is not empty and every member of it performs the task (Judgment.required_of_bettered): formation_required_of_improvable_absence with no classical reasoning. Periphery instance OrganizationCorrespondence: with Lean’s classical decidedness supplying what the core asks, formation_required_of_improvable_absence follows from exists_undominated and undominated_has (formation_required_by_core), and so does the constructed coordination case (coordination_is_required_by_core). The comparison, eligibility and the constructed history keep their scope; the normative interpretation inherits the explicit J commitments. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T163336.437151Z), standard axioms only: frontier_iff_undominated has an empty report, and formation_required_by_core and coordination_is_required_by_core supply what the core asks by Lean’s classical decidedness and use the periphery’s simp lemmas (propext, Classical.choice, Quot.sound); the core laws and bridge theorems it instantiates are audited by the core run (receipt 20261015T163210.426211Z, empty axiom reports)."
     }
   ],
   "text_versions": [

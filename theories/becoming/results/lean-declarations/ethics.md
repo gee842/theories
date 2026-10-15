@@ -5576,6 +5576,25 @@ Imports: `ContinuationRenewal`, `PositiveGroundUncertainty`
 
 </details>
 
+<a id="module-c045ec9ae1ef"></a>
+
+<details>
+<summary>OrganizationCorrespondence.lean — 3 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean`
+
+Imports: `Becoming.Decidedness`, `RelationalOrganization`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.OrganizationCorrespondence.frontier_iff_undominated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean#L31) | 31 |
+| [Becoming.OrganizationCorrespondence.formation_required_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean#L41) | 41 |
+| [Becoming.OrganizationCorrespondence.coordination_is_required_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean#L63) | 63 |
+
+</details>
+
 <a id="module-04bd31edc270"></a>
 
 <details>

@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635",
+      "sha256": "736f09933edcc79a386de0cb5caba24f9bb2866981ab81f7b6f9156249aa4b80",
       "declarations": []
     },
     {
@@ -341,6 +341,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））；Stock.lean（整合 I3d：新增所汲取而不补充的水平（FallsBy、trace_falls、falls_iff、trace_exhausts、zero_of_add_le、exhausted_within、draws_nothing_from_empty）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78)); Stock.lean (integration I3d: a level drawn on and not replenished added (FallsBy, trace_falls, falls_iff, trace_exhausts, zero_of_add_le, exhausted_within, draws_nothing_from_empty); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（整合 I3e：§9 中 Decidedness 与桥接两行写入新律与定理数，新增 OrganizationCorrespondence 一行，实例模块一句列出它；P83g：辨识两行与开放项写入立方阶的静止之步与一个世界之内的恰好性，Identification 与 Distinguishing 定理数更新；总数改据新回执）。",
+      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (integration I3e: in §9 the Decidedness and Bridge rows name the new laws and counts, an OrganizationCorrespondence row added and the instance-module sentence lists it; P83g: the identification rows and open items gain the cubic rest step and the exactness within one world, the Identification and Distinguishing counts updated; the totals moved to the new receipt)."
     }
   ]
 }

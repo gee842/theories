@@ -8,7 +8,7 @@
 
 | 方向 / Topic | 模块／审计入口 / Entries | theorem/lemma 位置 / Occurrences |
 |---|---:|---:|
-| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 141 | 2,518 |
+| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 142 | 2,521 |
 | [评价的形成与良知 / Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
 | [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 72 | 1,880 |
 | [支持与更新 / Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 251 | 7,985 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 251 | 8,030 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -447,6 +447,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [OperativeCoherence.lean](lean-declarations/core.md#module-9712b4ea2312) | 生成核心与关系结构 / Generative core and relational structure |
 | [Order.lean](lean-declarations/core.md#module-af11d6893eaf) | 生成核心与关系结构 / Generative core and relational structure |
 | [OrderNormal.lean](lean-declarations/core.md#module-7412c6ab20ba) | 生成核心与关系结构 / Generative core and relational structure |
+| [OrganizationCorrespondence.lean](lean-declarations/ethics.md#module-c045ec9ae1ef) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [OrganizationalRuleInheritance.lean](lean-declarations/ethics.md#module-d6cdb351c744) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [OrganizedScaleLoop.lean](lean-declarations/learning.md#module-fa24e61409c5) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [OutcomeContinuation.lean](lean-declarations/core.md#module-c48ee824a0b3) | 生成核心与关系结构 / Generative core and relational structure |

@@ -178,7 +178,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "a6e81fe80646c5c153db0f4205dccd901e68ff27cbc47d2d09b542c68efdcf53",
+      "sha256": "05d99f43f8eedebf164266ee6e1a6b1b5c56cc35d832e5324aaafdd1cc9e91a7",
       "declarations": [
         "Becoming.positionedArticulation_iff",
         "Becoming.securesPositiveGround_iff",
@@ -287,6 +287,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
     }
   ]
 }

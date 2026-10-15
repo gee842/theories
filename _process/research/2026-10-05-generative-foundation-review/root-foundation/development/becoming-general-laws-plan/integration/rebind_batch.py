@@ -9,6 +9,8 @@ NOTES.json: {"core_receipt": run-folder verification.json,
              "history": {"en": lead sentence, "zh": ...},
              "scope_old": [[en_old, en_new], [zh_old, zh_new], ...]}
 For every record:
+- a Markdown reference whose change lies outside what the record cites keeps its hash
+  (registry.scoped_drift; the research check accepts it);
 - a reference whose file changed and whose path is in "files" gets the current sha256;
   a changed file not in "files" is reported and left alone;
 - a proof binding whose receipt does not bind the current source sha is re-pointed to
@@ -22,6 +24,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path.cwd()
+sys.path.insert(0, str(ROOT))
+from tools.research import registry  # noqa: E402
+registry.ROOT = ROOT
 RECORDS = ROOT / 'theories/becoming/results/records'
 
 
@@ -54,7 +59,7 @@ def main():
 
     core = notes['core_receipt']
     extras = notes.get('extra_receipts', {})
-    report = {'changed': [], 'unhandled_drift': [], 'unbound': []}
+    report = {'changed': [], 'unhandled_drift': [], 'unbound': [], 'kept': 0}
     for p in sorted(RECORDS.glob('*.json')):
         r = json.loads(p.read_text())
         touched_files = []
@@ -64,6 +69,12 @@ def main():
                 continue
             cur = sha(path)
             if cur != ref['sha256']:
+                # A Markdown reference whose change lies outside what the record cites keeps its
+                # hash: the research check accepts it (RESULT-WORKFLOW.md), so the record is not
+                # rewritten (as the landing kit's repoint.py does since the landing-speed change).
+                if path.endswith('.md') and registry.scoped_drift(r, path, ref['sha256'], ROOT / path) is None:
+                    report['kept'] += 1
+                    continue
                 if path in notes['files']:
                     ref['sha256'] = cur
                     touched_files.append(path)
@@ -116,7 +127,7 @@ def main():
         if write:
             p.write_text(json.dumps(r, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps({'changed': len(report['changed']), 'unhandled_drift': report['unhandled_drift'],
-                      'unbound': report['unbound']}, ensure_ascii=False, indent=1))
+                      'unbound': report['unbound'], 'kept_outside_cited': report['kept']}, ensure_ascii=False, indent=1))
     if '--list' in sys.argv:
         for x in report['changed']:
             print(x[0], [t.rsplit('/', 1)[-1] for t in x[1]], x[2])

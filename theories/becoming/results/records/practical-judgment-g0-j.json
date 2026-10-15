@@ -29,7 +29,10 @@
   },
   "canonical_source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
   "aliases": [
-    "Practical judgment G0/J1–J4"
+    "Practical judgment G0/J1–J4",
+    "Becoming.Judgment.better_iff_betterAt",
+    "Becoming.Judgment.frontier_exists",
+    "Becoming.exists_undominated"
   ],
   "dependencies": [
     {
@@ -214,17 +217,41 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "a6e81fe80646c5c153db0f4205dccd901e68ff27cbc47d2d09b542c68efdcf53",
+      "sha256": "05d99f43f8eedebf164266ee6e1a6b1b5c56cc35d832e5324aaafdd1cc9e91a7",
       "declarations": [
         "Becoming.BetterAt",
         "Becoming.robust_iff_commonResponse",
-        "Becoming.commonResponse_is_robust"
+        "Becoming.commonResponse_is_robust",
+        "Becoming.Judgment.frame",
+        "Becoming.Judgment.protecting",
+        "Becoming.Judgment.gaining",
+        "Becoming.Judgment.better_iff_betterAt",
+        "Becoming.Judgment.frontier_iff",
+        "Becoming.Judgment.frontier_iff_undominated",
+        "Becoming.Judgment.frontier_exists"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
       "role": "receipt",
       "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "role": "proof",
+      "sha256": "ed09ce614679228d1654bc784eadd022b18d87d3a65f8b6a5d6cad83254e7b66",
+      "declarations": [
+        "Becoming.WeaklyDecided",
+        "Becoming.Undominated",
+        "Becoming.exists_undominated",
+        "Becoming.exists_undominated_iff_weakly"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "role": "receipt",
+      "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -239,6 +266,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
       "sha256_pointer": "/source_sha256/PracticalJudgment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Decidedness",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -295,6 +336,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026-10-15，整合 I3e（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（桥接中的确切实例；只改引用、别名与历史）。每个保护优先的比较 PracticalJudgment.Better 都是其选项框架上的 BetterAt，前沿亦同（Judgment.better_iff_betterAt、Judgment.frontier_iff，I3d）。在确切列出的选项表上，前沿即核心的不被胜过者（Judgment.frontier_iff_undominated）；比较非自反、传递且弱判定时前沿非空（Judgment.frontier_exists，由 Becoming.exists_undominated），即 PracticalJudgment.finite_frontier 不用经典推理；在全部关系上，这恰需弱排中律（exists_undominated_iff_weakly）。论断、Ren 的话与 G0 的折叠不变：BetterAt 陈述 J1/J2，即核心之外的公开承诺，这里不用也不断言 G0；Robust 即核心的 CommonResponse（既有）；以需求为指标的覆盖（Covered）在脊柱上没有确切的对应，留在外围（同 I3d）。桥接与 Becoming.Decidedness 由核心运行编译与审计（回执 20261015T163210.426211Z），新增声明的公理报告为空；PracticalJudgment 作为继承模块随运行编译，其既有回执不变。已引用的源随本次整合改哈希：Bridge.lean（整合 I3e：判断的框架一节加 frontier_iff_undominated、frontier_exists、required_of_bettered；原有陈述不变）。",
+      "en": "15 October 2026, integration I3e (Ren: “a lot proofs are probably not integrated”): stated on the spine (exact instances in the bridge; only references, aliases and history change). Every protection-first comparison PracticalJudgment.Better is BetterAt on the frame of its options, with the same frontier (Judgment.better_iff_betterAt, Judgment.frontier_iff, I3d). On an exact listed menu the frontier is the core’s undominated members (Judgment.frontier_iff_undominated), and it is not empty where the comparison is irreflexive, transitive and weakly decided (Judgment.frontier_exists, by Becoming.exists_undominated): PracticalJudgment.finite_frontier with no classical reasoning; over all relations this needs exactly weak excluded middle (exists_undominated_iff_weakly). The claims, Ren’s words and the fold of G0 are unchanged: BetterAt states J1/J2, disclosed commitments outside the core, and G0 is neither used nor asserted here; Robust is the core’s CommonResponse (as before); demand-indexed coverage (Covered) has no exact counterpart on the spine and stays in the periphery (as in I3d). The bridge and Becoming.Decidedness are compiled and audited by the core run (receipt 20261015T163210.426211Z), the new declarations with empty axiom reports; PracticalJudgment compiles in the run as an inherited module, its earlier receipt unchanged. Sources already referenced take the hash of this integration: Bridge.lean (integration I3e: frontier_iff_undominated, frontier_exists and required_of_bettered added to the section on judged frames; earlier statements unchanged)."
     }
   ],
   "text_versions": [
