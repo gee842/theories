@@ -140,8 +140,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: Becoming.Lasting has 89 theorems, and the 29 new declarations (20 theorems) have empty axiom reports. The periphery instance FiniteBranchingCorrespondence is checked by its own checker (Lean 4.30.0-rc2; four correspondences with empty axiom reports, the other six with standard axioms only); FiniteBranching is bound through the instance receipt, its bytes matching the completion package receipt. Author counterreview in study section 146; not independently reviewed."
   },
   "next_delta": {
-    "zh": "独立审查；不用选取时的运行（依赖选择的边界）。",
-    "en": "An independent review; a run without a selection (the boundary of dependent choice)."
+    "zh": "独立审查。",
+    "en": "An independent review."
   },
   "correspondence": {
     "zh": "Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 FiniteBranching 读作待接入的律：Becoming.Lasting 陈述了每个可容许进程都留下（Lasts、kernel_iff_lasts），未陈述某段进程延续。本结果陈述它，FiniteBranching 的提升是一个动作的过程的实例，其经典步分别是 EitherThroughout 与选取。读法（AI 的，Ren 2026-10-16 已取）：有每个长度的进程尚不是一段延续的进程；有限分支处二者之间所隔的，恰是在两支之间知道哪一支处处延续。",
@@ -192,6 +192,13 @@
       "detail": {
         "zh": "其 kernel_iff_lasts 是对偶：无进程离开者恰是持续每个步数者，不需有限分支或原则。",
         "en": "Its kernel_iff_lasts is the dual: what no course leaves is what lasts every horizon, with no finite branching or principle needed."
+      }
+    },
+    {
+      "id": "where-a-run-goes-on",
+      "detail": {
+        "zh": "回答其下一步“不用选取时的运行”：有限多配置之内，每个长度的路径都开始处有运行，不需选取也不需 EitherThroughout；测试认出移动处运行经搜索造出；对每个过程要求从每个保持运动的族的每个成员出发的运行，恰是依赖选择。",
+        "en": "Answers its next step, a run without a selection: within finitely many configurations a run starts wherever courses of every length do, with no selection and no EitherThroughout; where a test recognizes the moves a run is built by search; asked of every process, a run from every member of every family that keeps moving is exactly dependent choice."
       }
     }
   ],
@@ -388,6 +395,10 @@
     {
       "zh": "2026年10月16日，P126（Becoming.Tail，研究第160节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入整体而无部分之律一段，§8 的反馈与所及（反例存在的确切强度已给出），§9 加一行与术语；回执与合计改据新运行（7061 项定理、9713 项声明审计，核心闭包 125 个模块，包 130 个））。",
       "en": "16 October 2026, landing P126 (Becoming.Tail, study section 160): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on a law of the whole and no part, §8 under feedback and reach (the exact strength of a counterexample's existence is given), §9 gains a row and glossary entries; receipt and totals moved to the new run (7061 theorems, 9713 declaration audits, core closure 125 modules, package 130))."
+    },
+    {
+      "zh": "2026-10-16 P127（运行在何处延续，研究 §161）：下一步“不用选取时的运行（依赖选择的边界）”由 where-a-run-goes-on 回答：有限多配置之内不需选取，测试认出移动处经搜索，对每个过程要求它恰是依赖选择；所以删去此项，下一步只余独立审查；related 加 where-a-run-goes-on。陈述、证明与 does_not_show 不变：仍对本记录的定理成立。",
+      "en": "16 October 2026, P127 (where a run goes on, study section 161): the next step, a run without a selection (the boundary of dependent choice), is answered by where-a-run-goes-on: within finitely many configurations no selection is needed, where a test recognizes the moves a run is built by search, and asked of every process it is exactly dependent choice; so the item is removed, leaving an independent review; related adds where-a-run-goes-on. Statement, proofs and does_not_show unchanged: they still hold of this record's theorems."
     }
   ],
   "text_versions": []

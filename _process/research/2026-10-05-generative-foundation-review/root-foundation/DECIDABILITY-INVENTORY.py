@@ -189,6 +189,9 @@ CONSTRUCTIONS = {
     # from a condition on, or some level from it on is above zero, decided by a rule, the indicator of
     # never vanishing and its law
     **{n: 'indicate' for n in ['vanishesFrom', 'raisedFrom', 'neverIndicator', 'neverLaw']},
+    # 2026-10-16, P127 where a run goes on (Becoming.Onward): the test of each enumerated move, true where
+    # the step is taken and its target is in the family
+    'Onward.decidedTest': 'indicate',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
