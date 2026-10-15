@@ -1,0 +1,18 @@
+{
+  "dir": "../mathematical-abstraction/completion/formal",
+  "checker": "check_prefix_safety_correspondence.py",
+  "depth": 2,
+  "target": "PrefixSafetyCorrespondence",
+  "stem": "prefix-safety-correspondence",
+  "namespace": "Becoming.PrefixSafetyCorrespondence",
+  "empty": [
+    "samePrefix_iff_agree",
+    "finiteRefutable_iff_refutable",
+    "prefixClosure_iff_adheres",
+    "recurrence_not_finiteRefutable_by_core",
+    "terminationEvent_not_finiteRefutable_by_core"
+  ],
+  "empty_comment": "# The five correspondences of prefixes, refutability, closure and the two non-refutable properties must have\n# empty reports. The other four take the classical step PrefixSafety's statements need (`Classical.byContradiction`,\n# and deciding the prefix tests); the core laws they instantiate have empty reports.",
+  "doc": "Check the peripheral instance of the Becoming core's laws of what a finite history refutes in the prefix order\nof infinite traces.\n\n`PrefixSafetyCorrespondence` imports `Becoming.Horizon` and `PrefixSafety`, the completion package's prefix-safety\nmodule (it imports `Std`; `check.py` in this folder checks the package under Lean 4.29.1). It is compiled with\nLean 4.30.0-rc2, as the other instance modules are, with the installed Mathlib on the path\n(`SYSTEMS_MATHLIB_PROJECT`, default `~/repos/生生不息`), though it imports none. This checker follows\n`check_continuation_correspondence.py`: module resolution, declaration scanning and passed-receipt matching are\nthose of the core checker, and every other module in the closure must match a passed receipt. The core's module\nindex covers its Lean root only, so `PrefixSafety` and this module are added from this folder, and `PrefixSafety`\nmatches the package receipt `verification.json`, which `check.py` writes only after every module compiled fresh and\nevery audit passed. Each declaration's axiom report is recorded: it may name only the standard axioms (propext,\nClassical.choice, Quot.sound). The core does not import this module. Lean steps are reused as in the core checker,\nkeyed also by the Mathlib revision; `BECOMING_FRESH=1` runs every step. The run folder keeps the receipt, the\ndrivers and logs of the steps that ran, and a copy of each file `main` does not hold byte for byte.",
+  "scope": "On the Becoming core's laws of what a finite history refutes: PrefixSafety's traces are the runs of Becoming.Sequences.process, and SamePrefix is the core's Run.AgreeUpTo there (samePrefix_iff_agree). Finite refutability is the core's Refutable and the prefix closure is adherence (finiteRefutable_iff_refutable, prefixClosure_iff_adheres), and recurrence and the termination event are not finitely refutable by the core's Sequences laws. With Lean's classical reasoning, the core's Refutable.not_not and Refutable.adheres_least give holds_of_prefixClosure_by_core and prefixClosure_least_by_core, and the core's Markov and refutable_passes give boundary_closed_by_core; the core shows that refutability of every property given by prefix tests needs exactly Markov's principle (refutable_passes_iff_markov). PrefixSafety's statements keep their scope: traces are functions from Nat, not a model of a physical history."
+}
