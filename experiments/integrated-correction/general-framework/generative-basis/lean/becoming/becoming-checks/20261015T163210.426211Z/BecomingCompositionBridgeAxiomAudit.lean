@@ -1,0 +1,27 @@
+import Becoming.CompositionBridge
+#print axioms Becoming.mem_map_image
+#print axioms Becoming.mem_map_preimage
+#print axioms Becoming.Compact.translate
+#print axioms Becoming.JointFrame.ofModel
+#print axioms Becoming.jointBisimulation_iff
+#print axioms Becoming.JointTest.toTest
+#print axioms Becoming.JointTest.ofTest
+#print axioms Becoming.JointTest.toTest_ofTest
+#print axioms Becoming.JointTest.ofTest_toTest
+#print axioms Becoming.JointTest.holds_toTest
+#print axioms Becoming.sameJointTests_iff_same
+#print axioms Becoming.jointSeparated_iff
+#print axioms Becoming.same_target_unique_by_core
+#print axioms Becoming.testsStable_ofModel
+#print axioms Becoming.stepCompact_ofModel
+#print axioms Becoming.jointCompact_ofModel
+#print axioms Becoming.compact_same_iff_bisimilar_of_stable
+#print axioms Becoming.kernel_of_exact_reduced
+#print axioms Becoming.matchesParts_of_exact_reduced
+#print axioms Becoming.code_joint_lifts_from_whole_of_stable
+#print axioms Becoming.JointPlan.ofPlan
+#print axioms Becoming.JointPlan.realizes_ofPlan
+#print axioms Becoming.joint_plan_lifts_of_stable
+#print axioms Becoming.JointPlan.draws_ofPlan
+#print axioms Becoming.realized_requests_supported_by_core
+#print axioms Becoming.code_plan_has_global_support_of_stable
