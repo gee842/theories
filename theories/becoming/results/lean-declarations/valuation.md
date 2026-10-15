@@ -30,7 +30,7 @@ Imports: `ValuationDevelopment`
 <details>
 <summary>AxiomFree.lean — 21 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/AxiomFree.lean) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/AxiomFree.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/AxiomFree.lean`
 
@@ -65,7 +65,7 @@ Imports: `ValuationDevelopment`
 <details>
 <summary>BridgesAudit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/BridgesAudit.lean) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/BridgesAudit.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/BridgesAudit.lean`
 
@@ -82,7 +82,7 @@ Imports: `ValuationBridges`
 <details>
 <summary>ClosedLoopAudit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/ClosedLoopAudit.lean) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/ClosedLoopAudit.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ClosedLoopAudit.lean`
 
@@ -143,7 +143,7 @@ Imports: `ValuationDevelopment`
 <details>
 <summary>CompletionAudit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/CompletionAudit.lean) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/CompletionAudit.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/CompletionAudit.lean`
 
@@ -160,7 +160,7 @@ Imports: `ValuationCompletion`
 <details>
 <summary>ExplorationAudit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/ExplorationAudit.lean) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/ExplorationAudit.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ExplorationAudit.lean`
 
@@ -216,7 +216,7 @@ Imports: `ClosedLoopValuation`
 <details>
 <summary>LineageAudit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/LineageAudit.lean) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/LineageAudit.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/LineageAudit.lean`
 
@@ -301,7 +301,7 @@ Imports: `ValuationRenewal`
 <details>
 <summary>OneProcessAudit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/OneProcessAudit.lean) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/OneProcessAudit.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/OneProcessAudit.lean`
 
@@ -589,7 +589,7 @@ Imports: `LineageInProcess`
 <details>
 <summary>ValuationRenewalAudit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationRenewalAudit.lean) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationRenewalAudit.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ValuationRenewalAudit.lean`
 
@@ -623,7 +623,7 @@ Imports: `TrajectoryFidelity`
 <details>
 <summary>TrajectoryFidelity.lean — 41 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/perspectival/TrajectoryFidelity.lean) · [包说明 / Package notes](../../../../experiments/valuation-development/lean/perspectival/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/perspectival/TrajectoryFidelity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/valuation-development/lean/perspectival/README.md)
 
 `experiments/valuation-development/lean/perspectival/TrajectoryFidelity.lean`
 

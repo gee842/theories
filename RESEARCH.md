@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-208 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+210 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -97,6 +97,7 @@
 | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](theories/becoming/results/records/historical-source-binding.md) | recorded-checked | [HistoricalBinding.lean](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean) |
 | [律与历史的完备对应 / The complete correspondence of law and history](theories/becoming/results/records/histories-fix-law-up-to-dead-ends.md) | recorded-checked | [Histories.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean) |
 | [有界之处的辨识 / Identification where bounded](theories/becoming/results/records/identification-where-bounded.md) | recorded-checked | [Identification.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean) |
+| [运行分开之处的辨识 / Identification where runs part](theories/becoming/results/records/identification-where-runs-part.md) | recorded-checked | [Parting.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean) |
 | [跨步的同一 / Identity across steps](theories/becoming/results/records/identity-across-steps.md) | recorded-checked | [Identity.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean) |
 | [不平衡作为关系项 / Imbalance as a relatum](theories/becoming/results/records/imbalance-as-relatum.md) | recorded-checked | [Imbalance.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean) |
 | [关联问题导出跨分节共同细化 / Incidence questions yield a common relational refinement](theories/becoming/results/records/incidence-common-refinement.md) | recorded-checked | [ExplanatoryJoiningIncidence.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean) |
@@ -207,6 +208,7 @@
 | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](theories/becoming/results/records/transition-grouping-word-partition.md) | recorded-checked | [AcquiredSegmentation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean) |
 | [传递在其起约束之处的独立性 / Independence of transmission where it binds](theories/becoming/results/records/transmission-independent-where-it-binds.md) | recorded-checked | [Transmission.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean) |
 | [传递作为承继加所需之界 / Transmission as inheritance with a bounded need](theories/becoming/results/records/transmission-is-inheritance-and-need.md) | recorded-checked | [Transmission.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean) |
+| [计数中的典型 / Typicality by counting](theories/becoming/results/records/typicality-by-counting.md) | recorded-checked | [Typicality.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean) |
 | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](theories/becoming/results/records/unanchored-incidence-collapse.md) | recorded-checked | [ExplanatoryJoiningAnchors.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean) |
 | [不息的生成需要更新 / Unceasing generation needs renewal](theories/becoming/results/records/unceasing-generation-needs-renewal.md) | recorded-checked | [Generation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) |
 | [一个展开在语境中的读法 / One unfolding, read in context](theories/becoming/results/records/unity-of-readings.md) | recorded-checked | [Readings.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean) |

@@ -129,8 +129,8 @@
     "names-provisional"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Parting 的 27 项声明（18 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 27 declarations of Becoming.Parting, 18 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 140; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T173702.509759Z）：Becoming.Parting 的 27 项声明（18 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T173702.509759Z): the 27 declarations of Becoming.Parting, 18 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 140; not independently reviewed."
   },
   "next_delta": {
     "zh": "对有限、已定的过程，给定世界的学习者在不分开之步都对（反方向）；只在某步之前分开时的静止之步；Ren 对读法的判断（所识的一切推出到运行不分开为止；分开处的分支只在被走时定下）。",
@@ -442,9 +442,72 @@
       "role": "provenance",
       "sha256": "296b8548f039011b230f00dcc4c25798ddfb45e44adf5be14706794221f6c2b2",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "role": "receipt",
+      "sha256": "07766c064414edcf59eba809d0948ec08900a62f892b4f7dad4875b08a1873a8",
+      "declarations": []
     }
   ],
-  "proof_bindings": [],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Parting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Identification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Learning",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Distinguishing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Description",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
   "history": [
     {
       "zh": "2026-10-16：新增，按 Ren 2026-10-15 的“\"What this line doesn’t reach\" is also worth doing”（P116）；研究 §140。",

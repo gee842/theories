@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 254 | 8,167 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 256 | 8,217 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -459,6 +459,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PaidRecipientReasons.lean](lean-declarations/shared.md#module-c2e841f7d5e2) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [PairedPlasticity.lean](lean-declarations/shared.md#module-0f653cfbf240) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [PartialRegimeTransition.lean](lean-declarations/other.md#module-5a3139fb2b49) | 其他形式研究 / Other formal studies |
+| [Parting.lean](lean-declarations/core.md#module-cfce0a952f3b) | 生成核心与关系结构 / Generative core and relational structure |
 | [PatientConcern.lean](lean-declarations/concern.md#module-5ad0b8e8fd94) | 关切与共同活动 / Concern and shared activity |
 | [PendingTaskApplicability.lean](lean-declarations/other.md#module-2d39360c8f48) | 其他形式研究 / Other formal studies |
 | [PeriodCostSelection.lean](lean-declarations/inquiry.md#module-e674e69e840d) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
@@ -705,6 +706,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [TuningCorrespondence.lean](lean-declarations/learning.md#module-1745ec53c5aa) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [TypedRenewal.lean](lean-declarations/shared.md#module-04366373329a) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [TypedTruth.lean](lean-declarations/abstraction.md#module-77505a9c5a3f) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
+| [Typicality.lean](lean-declarations/core.md#module-a0da035da8f6) | 生成核心与关系结构 / Generative core and relational structure |
 | [UnequalBasicLosses.lean](lean-declarations/ethics.md#module-1e5c5fb9e755) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [Unfolding.lean](lean-declarations/core.md#module-05f6ca088224) | 生成核心与关系结构 / Generative core and relational structure |
 | [UnfoldingPreservation.lean](lean-declarations/core.md#module-cc65e367cbd3) | 生成核心与关系结构 / Generative core and relational structure |

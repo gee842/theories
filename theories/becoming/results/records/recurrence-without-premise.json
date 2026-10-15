@@ -208,7 +208,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ce075030855655f0ffdf17be578b0d83b985c97dc6d8a53a297604ab0d5afa3c",
+      "sha256": "7b95818849a823b52327c96a78dc6969927c4073d26eaad33bce26c5cc4288cd",
       "declarations": []
     },
     {
@@ -428,6 +428,10 @@
     {
       "zh": "2026年10月16日，P114 落地（研究第138节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P114：§9 两行（Becoming.Courses 与 Becoming.CoursesBridge）；总数改据新回执（桥接模块七 → 八））。",
       "en": "16 October 2026, landing P114 (study section 138): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P114: two §9 rows (Becoming.Courses and Becoming.CoursesBridge); the totals moved to the new receipt (bridge modules seven → eight))."
+    },
+    {
+      "zh": "2026年10月16日，P116 落地（研究第140节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P116：§6 一对段落，第一部分“认识”、完整陈述与界一项，§8 的状态行、辨识读法与“路径分支时”，§9 两行，术语三行；总数改据新回执）。",
+      "en": "16 October 2026, landing P116 (study section 140): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P116: a §6 paragraph pair, Part I \"Knowing\", the theory stated in full and its bound item, §8's status row, identification reading and \"When the course branches\", two §9 rows, three glossary rows; the totals moved to the new receipt)."
     }
   ]
 }

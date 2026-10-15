@@ -992,7 +992,7 @@ Imports: `SourceReliance`, `AcquiredBinding`
 <details>
 <summary>ScientificCompatibility.lean — 18 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean`
 
@@ -1029,7 +1029,7 @@ Imports: `Std`
 <details>
 <summary>ScientificInquiryNecessity.lean — 27 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean`
 
@@ -1075,7 +1075,7 @@ Imports: `Std`
 <details>
 <summary>SelectiveRevision.lean — 32 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-REVISION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean`
 
@@ -1126,7 +1126,7 @@ Imports: `FormedGrounds`
 <details>
 <summary>SelectiveRevisionCases.lean — 5 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevisionCases.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-REVISION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevisionCases.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevisionCases.lean`
 
@@ -1381,7 +1381,7 @@ Imports: `InquirySufficiency`
 <details>
 <summary>CalibratedMacro.lean — 4 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/CalibratedMacro.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-ENTRY-DEPENDENCY-MAP.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/CalibratedMacro.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/CalibratedMacro.lean`
 
@@ -1662,7 +1662,7 @@ Imports: `FormationClosure`, `PhasePeriodSelection`
 <details>
 <summary>FormedContactCycle.lean — 7 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormedContactCycle.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-SELECTION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormedContactCycle.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormedContactCycle.lean`
 
@@ -1798,7 +1798,7 @@ Imports: `PhaseRecoveredContact`, `WholePortContinuation`, `PortRenewalBoundary`
 <details>
 <summary>NativePacketCases.lean — 94 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketCases.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketCases.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketCases.lean`
 
@@ -2200,7 +2200,7 @@ Imports: `NativePacketProcess`, `OnePacketAdmissibility`
 <details>
 <summary>PeriodCostSelection.lean — 2 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCostSelection.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCostSelection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCostSelection.lean`
 
@@ -2220,7 +2220,7 @@ Imports: `PeriodGeneralProof`
 <details>
 <summary>PeriodCoverData.lean — 20 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCoverData.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCoverData.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCoverData.lean`
 
@@ -2261,7 +2261,7 @@ Imports: `PeriodLocalCertificate`, `PhasePeriodSelection`
 <details>
 <summary>PeriodCoverRules.lean — 61 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCoverRules.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCoverRules.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCoverRules.lean`
 
@@ -2340,7 +2340,7 @@ Imports: `PeriodCoverData`
 <details>
 <summary>PeriodCycleWindows.lean — 16 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCycleWindows.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OPEN-OBLIGATIONS-CONTINUATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCycleWindows.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodCycleWindows.lean`
 
@@ -2377,7 +2377,7 @@ Imports: `PeriodLocalCertificate`
 <details>
 <summary>PeriodFirstRead.lean — 11 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodFirstRead.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERIOD-GENERAL-PROOF-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodFirstRead.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodFirstRead.lean`
 
@@ -2409,7 +2409,7 @@ Imports: `PeriodStrategySemantics`, `PeriodCycleWindows`
 <details>
 <summary>PeriodGeneralProof.lean — 5 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodGeneralProof.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERIOD-GENERAL-PROOF-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodGeneralProof.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodGeneralProof.lean`
 
@@ -2510,7 +2510,7 @@ Imports: `PhaseCycleDerivation`, `PeriodWindowPruning`
 <details>
 <summary>PeriodPolicyCover.lean — 6 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodPolicyCover.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERIOD-GENERAL-PROOF-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodPolicyCover.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodPolicyCover.lean`
 
@@ -2537,7 +2537,7 @@ Imports: `PeriodCoverRules`, `PeriodFirstRead`
 <details>
 <summary>PeriodPrunedCover.lean — 642 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodPrunedCover.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodPrunedCover.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodPrunedCover.lean`
 
@@ -3232,7 +3232,7 @@ Imports: `PhasePeriodSelection`
 <details>
 <summary>PeriodWindowPeriodicity.lean — 32 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodWindowPeriodicity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OPEN-OBLIGATIONS-CONTINUATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodWindowPeriodicity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodWindowPeriodicity.lean`
 
@@ -3313,7 +3313,7 @@ Imports: `PeriodCycleWindows`, `PhasePeriodSelection`
 <details>
 <summary>PhaseCycleDerivation.lean — 52 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-CYCLE-DERIVATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean`
 
@@ -3386,7 +3386,7 @@ Imports: `PacketLawDerivation`
 <details>
 <summary>PhasePeriodSelection.lean — 36 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-SELECTION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean`
 
@@ -3443,7 +3443,7 @@ Imports: `PhaseCycleDerivation`
 <details>
 <summary>PhasePeriodUniversal.lean — 47 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-ASSUMPTIONS.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean`
 
@@ -3511,7 +3511,7 @@ Imports: `PhasePeriodSelection`
 <details>
 <summary>PhaseRecoveredContact.lean — 53 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseRecoveredContact.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-RECOVERED-CONTACT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseRecoveredContact.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseRecoveredContact.lean`
 
@@ -3654,7 +3654,7 @@ Imports: `PortRenewalLawClosure`
 <details>
 <summary>PortRenewalBoundary.lean — 20 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalBoundary.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PORT-CONTINUATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalBoundary.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalBoundary.lean`
 
@@ -3695,7 +3695,7 @@ Imports: `WholePortContinuation`, `RelationalCut`, `RenewalAccounting`
 <details>
 <summary>PortRenewalLawClosure.lean — 41 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalLawClosure.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PORT-RENEWAL-LAW-CLOSURE.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalLawClosure.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalLawClosure.lean`
 
@@ -3834,7 +3834,7 @@ Imports: `AttainableQuestions`
 <details>
 <summary>RecoveryQuantum.lean — 30 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOVERY-QUANTUM.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean`
 
@@ -4002,7 +4002,7 @@ Imports: `PortValuation`, `ValuationInCore`
 <details>
 <summary>StartingStock.lean — 25 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/StartingStock.lean`
 
@@ -4077,7 +4077,7 @@ Imports: `ClosedLoopValuation`, `FormationClosure`
 <details>
 <summary>WholePortContinuation.lean — 51 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/WholePortContinuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PORT-CONTINUATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/WholePortContinuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/WholePortContinuation.lean`
 

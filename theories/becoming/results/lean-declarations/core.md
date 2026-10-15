@@ -553,7 +553,7 @@ Imports: `GenerativeAttainableQuestionsModel`, `DerivedInquiryCertificates`, `Re
 <details>
 <summary>GenerativeDerivedProcessLawModel.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean) · [理论 / Theory](../../chapters/FORMAL-CORE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean) · [理论 / Theory](../../chapters/FORMAL-CORE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean`
 
@@ -763,7 +763,7 @@ Imports: `FormedSelection`
 <details>
 <summary>GenerativeRepairApplicability.lean — 22 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean`
 
@@ -970,7 +970,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>RecipientContinuationProjection.lean — 12 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean`
 
@@ -1063,7 +1063,7 @@ Imports: `GenerativeCore`
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean`
 
-Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Recurrence`, `Becoming.Diagonal`, `Becoming.Context`, `Becoming.Quantum`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Experiment`, `Becoming.Mechanism`, `Becoming.Unfolding`, `Becoming.Histories`, `Becoming.Branching`, `Becoming.Listing`, `Becoming.Order`, `Becoming.OrderNormal`, `Becoming.OneStep`, `Becoming.Weighted`, `Becoming.Transmission`, `Becoming.Succession`, `Becoming.Attraction`, `Becoming.Substitution`, `Becoming.Generation`, `Becoming.Flow`, `Becoming.Stock`, `Becoming.Change`, `Becoming.Population`, `Becoming.Identity`, `Becoming.Persistence`, `Becoming.Wholes`, `Becoming.Dissipation`, `Becoming.Locality`, `Becoming.Seeking`, `Becoming.Roles`, `Becoming.Reserve`, `Becoming.Evolution`, `Becoming.Capture`, `Becoming.Space`, `Becoming.Premises`, `Becoming.Sampling`, `Becoming.Tower`, `Becoming.Openness`, `Becoming.Decidedness`, `Becoming.Refinement`, `Becoming.Counting`, `Becoming.Standing`, `Becoming.Resolution`, `Becoming.Entropy`, `Becoming.Units`, `Becoming.Imbalance`, `Becoming.Continuation`, `Becoming.Admission`, `Becoming.Regions`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.LossMatching`, `Becoming.Correspondence`, `Becoming.Descent`, `Becoming.Standpoints`, `Becoming.Significance`, `Becoming.Interdependence`, `Becoming.Feeding`, `Becoming.Feedback`, `Becoming.Boundaries`, `Becoming.Relevance`, `Becoming.Testing`, `Becoming.Runaway`, `Becoming.Response`, `Becoming.TimedResponse`, `Becoming.Counterfactual`, `Becoming.Regrouping`, `Becoming.Selection`, `Becoming.Learning`, `Becoming.Revision`, `Becoming.Contacts`, `Becoming.RegroupingSelection`, `Becoming.ReferencePlan`, `Becoming.ContinuingRevision`, `Becoming.Description`, `Becoming.Identification`, `Becoming.Learnable`, `Becoming.Assurance`, `Becoming.Segmentation`, `Becoming.Readout`, `Becoming.Gated`, `Becoming.Viability`, `Becoming.Keeping`, `Becoming.Countdown`, `Becoming.Lasting`, `Becoming.Copying`, `Becoming.Retrodiction`, `Becoming.CrossSituational`, `Becoming.Likeness`, `Becoming.Distinguishing`, `Becoming.Composition`, `Becoming.Joining`, `Becoming.Granularity`, `Becoming.Postponement`, `Becoming.Novelty`, `Becoming.Reading`, `Becoming.Readings`, `Becoming.Coupling`, `Becoming.Sensitivity`, `Becoming.Courses`
+Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Recurrence`, `Becoming.Diagonal`, `Becoming.Context`, `Becoming.Quantum`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Experiment`, `Becoming.Mechanism`, `Becoming.Unfolding`, `Becoming.Histories`, `Becoming.Branching`, `Becoming.Listing`, `Becoming.Order`, `Becoming.OrderNormal`, `Becoming.OneStep`, `Becoming.Weighted`, `Becoming.Transmission`, `Becoming.Succession`, `Becoming.Attraction`, `Becoming.Substitution`, `Becoming.Generation`, `Becoming.Flow`, `Becoming.Stock`, `Becoming.Change`, `Becoming.Population`, `Becoming.Identity`, `Becoming.Persistence`, `Becoming.Wholes`, `Becoming.Dissipation`, `Becoming.Locality`, `Becoming.Seeking`, `Becoming.Roles`, `Becoming.Reserve`, `Becoming.Evolution`, `Becoming.Capture`, `Becoming.Space`, `Becoming.Premises`, `Becoming.Sampling`, `Becoming.Tower`, `Becoming.Openness`, `Becoming.Decidedness`, `Becoming.Refinement`, `Becoming.Counting`, `Becoming.Standing`, `Becoming.Resolution`, `Becoming.Entropy`, `Becoming.Units`, `Becoming.Imbalance`, `Becoming.Continuation`, `Becoming.Admission`, `Becoming.Regions`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.LossMatching`, `Becoming.Correspondence`, `Becoming.Descent`, `Becoming.Standpoints`, `Becoming.Significance`, `Becoming.Interdependence`, `Becoming.Feeding`, `Becoming.Feedback`, `Becoming.Boundaries`, `Becoming.Relevance`, `Becoming.Testing`, `Becoming.Runaway`, `Becoming.Response`, `Becoming.TimedResponse`, `Becoming.Counterfactual`, `Becoming.Regrouping`, `Becoming.Selection`, `Becoming.Learning`, `Becoming.Revision`, `Becoming.Contacts`, `Becoming.RegroupingSelection`, `Becoming.ReferencePlan`, `Becoming.ContinuingRevision`, `Becoming.Description`, `Becoming.Identification`, `Becoming.Learnable`, `Becoming.Assurance`, `Becoming.Segmentation`, `Becoming.Readout`, `Becoming.Gated`, `Becoming.Viability`, `Becoming.Keeping`, `Becoming.Countdown`, `Becoming.Lasting`, `Becoming.Copying`, `Becoming.Retrodiction`, `Becoming.CrossSituational`, `Becoming.Likeness`, `Becoming.Distinguishing`, `Becoming.Composition`, `Becoming.Joining`, `Becoming.Granularity`, `Becoming.Postponement`, `Becoming.Novelty`, `Becoming.Reading`, `Becoming.Readings`, `Becoming.Coupling`, `Becoming.Sensitivity`, `Becoming.Courses`, `Becoming.Parting`, `Becoming.Typicality`
 
 没有扫描到显式 theorem/lemma；可能是导入、审计或定义模块。 / No explicit theorem/lemma scanned; this may be an import, audit or definition module.
 
@@ -4309,7 +4309,7 @@ Imports: `Becoming.Joint`, `Becoming.Recurrence`
 <details>
 <summary>FallibleInquiry.lean — 37 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean`
 
@@ -8035,6 +8035,52 @@ Imports: `Becoming.Order`
 
 </details>
 
+<a id="module-cfce0a952f3b"></a>
+
+<details>
+<summary>Parting.lean — 27 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean`
+
+Imports: `Becoming.Distinguishing`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.Parting.joinAt_before](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L76) | 76 |
+| [Becoming.Parting.joinAt_after](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L86) | 86 |
+| [Becoming.Parting.not_right_on_both](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L119) | 119 |
+| [Becoming.Parting.not_parting_of_right](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L128) | 128 |
+| [Becoming.Parting.unparted_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L135) | 135 |
+| [Becoming.Parting.Unparted.along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L155) | 155 |
+| [Becoming.Parting.course_statesBelow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L166) | 166 |
+| [Becoming.Parting.leastBound_right](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L178) | 178 |
+| [Becoming.Parting.states_agree](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L185) | 185 |
+| [Becoming.Parting.unparted_of_determined](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L194) | 194 |
+| [Becoming.Parting.rest_earliest_runs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L201) | 201 |
+| [Becoming.Parting.freeRun_course](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L229) | 229 |
+| [Becoming.Parting.free_unparted_const](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L232) | 232 |
+| [Becoming.Parting.free_parts_after](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L238) | 238 |
+| [Becoming.Parting.free_open](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L252) | 252 |
+| [Becoming.Parting.free_never_right](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L263) | 263 |
+| [Becoming.Parting.free_held](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L270) | 270 |
+| [Becoming.Parting.free_unbounded](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L277) | 277 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.Parting.after](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L57) (L57)
+- `def` [Becoming.Parting.before](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L61) (L61)
+- `def` [Becoming.Parting.joinAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L67) (L67)
+- `def` [Becoming.Parting.course](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L102) (L102)
+- `def` [Becoming.Parting.PartAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L105) (L105)
+- `def` [Becoming.Parting.Unparted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L109) (L109)
+- `def` [Becoming.Parting.RightAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L114) (L114)
+- `def` [Becoming.Parting.free](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L224) (L224)
+- `def` [Becoming.Parting.freeRun](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean#L227) (L227)
+
+</details>
+
 <a id="module-d452c7cb8398"></a>
 
 <details>
@@ -11507,6 +11553,69 @@ Imports: `Becoming.Premises`
 
 </details>
 
+<a id="module-a0da035da8f6"></a>
+
+<details>
+<summary>Typicality.lean — 44 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean`
+
+Imports: `Becoming.Identification`, `Becoming.Weighted`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.Typicality.left_comm](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L55) | 55 |
+| [Becoming.Typicality.mem_extend_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L93) | 93 |
+| [Becoming.Typicality.of_mem_extend](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L99) | 99 |
+| [Becoming.Typicality.mem_courses_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L112) | 112 |
+| [Becoming.Typicality.extend_length](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L129) | 129 |
+| [Becoming.Typicality.courses_length](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L134) | 134 |
+| [Becoming.Typicality.total_extend](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L141) | 141 |
+| [Becoming.Typicality.total_congr](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L149) | 149 |
+| [Becoming.Typicality.total_add](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L156) | 156 |
+| [Becoming.Typicality.total_mul](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L163) | 163 |
+| [Becoming.Typicality.total_mul_right](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L170) | 170 |
+| [Becoming.Typicality.total_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L177) | 177 |
+| [Becoming.Typicality.total_weight](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L183) | 183 |
+| [Becoming.Typicality.sq_add](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L207) | 207 |
+| [Becoming.Typicality.square_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L211) | 211 |
+| [Becoming.Typicality.square_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L217) | 217 |
+| [Becoming.Typicality.cross_true](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L223) | 223 |
+| [Becoming.Typicality.cross_false](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L229) | 229 |
+| [Becoming.Typicality.split](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L236) | 236 |
+| [Becoming.Typicality.regroup](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L239) | 239 |
+| [Becoming.Typicality.steps_leave](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L243) | 243 |
+| [Becoming.Typicality.weighted_square](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L254) | 254 |
+| [Becoming.Typicality.weighted_cross](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L269) | 269 |
+| [Becoming.Typicality.step_weight](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L279) | 279 |
+| [Becoming.Typicality.spread](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L288) | 288 |
+| [Becoming.Typicality.two_mul_le_of_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L302) | 302 |
+| [Becoming.Typicality.two_mul_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L313) | 313 |
+| [Becoming.Typicality.offBy_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L324) | 324 |
+| [Becoming.Typicality.typical](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L337) | 337 |
+| [Becoming.Typicality.along_weight](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L355) | 355 |
+| [Becoming.Typicality.transfer_weight](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L361) | 361 |
+| [Becoming.Typicality.sum_courses_weight](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L373) | 373 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.Typicality.ones](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L61) (L61)
+- `def` [Becoming.Typicality.zeros](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L67) (L67)
+- `def` [Becoming.Typicality.weight](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L73) (L73)
+- `def` [Becoming.Typicality.extend](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L79) (L79)
+- `def` [Becoming.Typicality.courses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L84) (L84)
+- `def` [Becoming.Typicality.total](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L89) (L89)
+- `def` [Becoming.Typicality.ahead](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L195) (L195)
+- `def` [Becoming.Typicality.behind](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L198) (L198)
+- `def` [Becoming.Typicality.square](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L201) (L201)
+- `def` [Becoming.Typicality.cross](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L205) (L205)
+- `def` [Becoming.Typicality.offBy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L321) (L321)
+- `def` [Becoming.Typicality.stepWeight](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean#L350) (L350)
+
+</details>
+
 <a id="module-05f6ca088224"></a>
 
 <details>
@@ -12258,7 +12367,7 @@ Imports: `HistoryRealization`
 <details>
 <summary>ContractionMechanisms.lean — 42 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean) · [理论 / Theory](../../chapters/GENERATED-LOGIC.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean) · [理论 / Theory](../../chapters/GENERATED-LOGIC.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean`
 
@@ -14744,7 +14853,7 @@ Imports: `FormedGrounds`, `UnfoldingPreservation`
 <details>
 <summary>GeneratedContraction.lean — 20 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean) · [理论 / Theory](../../chapters/GENERATED-LOGIC.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean) · [理论 / Theory](../../chapters/GENERATED-LOGIC.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean`
 
@@ -14957,7 +15066,7 @@ Imports: `InferentialGrounds`
 <details>
 <summary>JudgingCorrespondence.lean — 7 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean`
 
@@ -15342,7 +15451,7 @@ Imports: `GenerativeCore`, `JointContinuationClassification`
 <details>
 <summary>RelationalContinuation.lean — 17 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalContinuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-OPEN-ITEMS-CONTEXT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalContinuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalContinuation.lean`
 
@@ -15755,7 +15864,7 @@ Imports: `FormationProfileGap`
 <details>
 <summary>SubstitutionCorrespondence.lean — 10 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean`
 
@@ -15933,7 +16042,7 @@ Imports: `SystemIndividuation`
 <details>
 <summary>WisdomFallibleJudgment.lean — 9 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean`
 
@@ -16145,7 +16254,7 @@ Imports: `RegeneratingPersistence`
 <details>
 <summary>NaturalismIdentity.lean — 28 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/NaturalismIdentity.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/NaturalismIdentity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/NaturalismIdentity.lean`
 
@@ -16194,7 +16303,7 @@ Imports: `WholeQualityNaturalism`
 <details>
 <summary>NaturalismReview.lean — 13 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/NaturalismReview.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/NaturalismReview.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/NaturalismReview.lean`
 
@@ -16228,7 +16337,7 @@ Imports: `NaturalismIdentity`
 <details>
 <summary>PremiseNecessity.lean — 13 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/PremiseNecessity.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/PremiseNecessity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/PremiseNecessity.lean`
 
@@ -16394,7 +16503,7 @@ Imports: `EmbeddedEvaluation`
 <details>
 <summary>WholeQualityNaturalism.lean — 43 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/WholeQualityNaturalism.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/WholeQualityNaturalism.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/WholeQualityNaturalism.lean`
 

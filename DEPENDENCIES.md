@@ -2402,6 +2402,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
 
+## identification-where-runs-part ← identification-where-bounded
+
+`formal-reuse` — 复用 leastBound_exact、rest_earliest、statesBelow_iff_lasso、statesBelow_mono、below_all 与 not_ne_bool：确定的律的辨识推广到每个过程中运行不分开之处。 / Reuses leastBound_exact, rest_earliest, statesBelow_iff_lasso, statesBelow_mono, below_all and not_ne_bool: identification under determined laws extended to every process where runs do not part.
+
+**Producer output / 上游输出:** 至多 N 个状态的历程上，以最小的界读记录的学习者从 2N − 1 起都对；2N − 2 不够。 / On a course with at most N states the learner by the least bound is right from 2N − 1 on; 2N − 2 does not suffice.
+
+**Consumer input / 下游输入:** 不分开的运行所识的历程至多有 N 个状态。 / The registered course of an unparted run has at most N states.
+
+**Retained conditions / 保留条件:** 所识的值可判定。 / Registered values decided.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean)
+
+## identification-where-runs-part ← learning-by-refutation
+
+`formal-reuse` — 复用 record、record_congr、holdFrom、diagonal、diagonal_refutes、diagonal_not_lasso、learner 与 lassos：自由分支上的对角与开放。 / Reuses record, record_congr, holdFrom, diagonal, diagonal_refutes, diagonal_not_lasso, learner and lassos: the diagonal and openness on free branching.
+
+**Producer output / 上游输出:** 对每个学习者都有否证它每个主张的历程，且它不是套索。 / For every learner a course refuting each of its claims, and it is no lasso.
+
+**Consumer input / 下游输入:** 这一历程是自由分支的一个运行。 / That course is a run of free branching.
+
+**Retained conditions / 保留条件:** 两个值。 / Two values.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
+
+## identification-where-runs-part ← tests-fix-likeness-where-determined
+
+`formal-reuse` — 复用 Law.realized_within：至多 N 个状态的历程是 N 个配置上的律的历程，给出对过程的恰好。 / Reuses Law.realized_within: a course with at most N states is the course of a law on N configurations, giving exactness for processes.
+
+**Producer output / 上游输出:** Fin N 上的律、识与起点，其所识的历程是给定的历程。 / A law, registration and start on Fin N whose registered course is the given course.
+
+**Consumer input / 下游输入:** 一个动作的确定过程的不分开的运行。 / An unparted run of a determined process with one move.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean)
+
+## identification-where-runs-part ← recurrence-without-premise
+
+`formal-reuse` — 复用 revisits_within、Law.process 与 Law.orbit：被列表所持的运行在列表长度之内复现一个配置。 / Reuses revisits_within, Law.process and Law.orbit: a run held by a list revisits a configuration within the list's length.
+
+**Producer output / 上游输出:** 被长 N 的列表所持的序列在 N 之内有两处相同。 / A sequence held by a list of length N repeats within N.
+
+**Consumer input / 下游输入:** 运行在两处有同一配置，从那里起所识的历程相同。 / A run at one configuration twice, the registered courses from there agreeing.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## identification-where-runs-part ← the-split-that-makes-sense
+
+`formal-reuse` — 复用 StatesBelow、SameAhead 与 statesBelow_of_same：两个时刻是同一状态时，历程至多有后者那么多状态。 / Reuses StatesBelow, SameAhead and statesBelow_of_same: where two moments are one state, the course has at most as many states as the later.
+
+**Producer output / 上游输出:** 同一状态的两个时刻给出状态数的界。 / Two moments of one state give a bound on states.
+
+**Consumer input / 下游输入:** 复现的配置给出同一状态的两个时刻。 / A revisited configuration gives two moments of one state.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean)
+
 ## identity-across-steps ← becoming-dependence-dynamics
 
 `formal-reuse` — 复用依存网、支持、保持、断裂、任期、侵蚀、形成与消解，以及该记录下一步中的个体化问题。 / Reuses webs, support, keeping, breaking, tenure, undermining, forming and dissolving, and the individuation question in that record's next step.
@@ -5049,6 +5109,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 平衡；只有活跃者给予；活动需要支持。 / Balance; only active relata give; activity needs support.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean)
+
+## typicality-by-counting ← sum-over-histories-exact
+
+`formal-reuse` — 复用 counting、Weights.along、Weights.transfer、Weights.sum_courses、courses、add_mul_split 与 mul_assoc_nat：计数权重与历史之和。 / Reuses counting, Weights.along, Weights.transfer, Weights.sum_courses, courses, add_mul_split and mul_assoc_nat: counting weights and the sum over histories.
+
+**Producer output / 上游输出:** 以计数加权的历史之和是逐步的转移。 / The sum over histories weighted by counting is the step-by-step transfer.
+
+**Consumer input / 下游输入:** 自由分支以 p、q 计数，转移是 (p + q)ⁿ。 / Free branching counted by p and q, the transfer being (p + q)ⁿ.
+
+**Retained conditions / 保留条件:** 列出的动作与配置。 / Listed moves and configurations.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
+
+## typicality-by-counting ← identification-where-bounded
+
+`formal-reuse` — 复用 le_of_add_right：不经命题外延性消去加数。 / Reuses le_of_add_right: cancelling an addend without propositional extensionality.
+
+**Producer output / 上游输出:** a + b ≤ c + b 给出 a ≤ c。 / a + b ≤ c + b gives a ≤ c.
+
+**Consumer input / 下游输入:** 偏差大者之重乘 d 加交叉项之和不超过平方项之和。 / The weight far off times d plus the cross terms is at most the squared terms.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean)
+
+## typicality-by-counting ← recurrence-without-premise
+
+`formal-reuse` — 复用 gap_of_le 与 mem_cons_split。 / Reuses gap_of_le and mem_cons_split.
+
+**Producer output / 上游输出:** x ≤ y 时 y = x + e；列表头的成员拆分。 / x ≤ y gives y = x + e; membership in a list split at its head.
+
+**Consumer input / 下游输入:** 2·x·y ≤ x·x + y·y 的证明；历程列表的成员。 / The proof of 2·x·y ≤ x·x + y·y; members of the list of courses.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
 
 ## unanchored-incidence-collapse ← joining-open-map-factor
 

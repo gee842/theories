@@ -68,7 +68,7 @@ Imports: `ReserveTurnover`
 <details>
 <summary>RenewalLedger.lean — 43 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/RenewalLedger.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
 
 `experiments/shared-renewal-capability/formal/RenewalLedger.lean`
 
@@ -132,7 +132,7 @@ Imports: `Std`
 <details>
 <summary>ReserveTurnover.lean — 8 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/ReserveTurnover.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
 
 `experiments/shared-renewal-capability/formal/ReserveTurnover.lean`
 
@@ -230,7 +230,7 @@ Imports: `RenewalLedger`
 <details>
 <summary>Retention.lean — 51 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean`
 
@@ -302,7 +302,7 @@ Imports: `Std`
 <details>
 <summary>RootBridge.lean — 9 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean`
 
@@ -387,7 +387,7 @@ Imports: `FormationRoot`
 <details>
 <summary>SupportHandoff.lean — 54 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean) · [理论 / Theory](../../chapters/LIANGZHI-EVOLUTION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean) · [理论 / Theory](../../chapters/LIANGZHI-EVOLUTION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean`
 
@@ -928,7 +928,7 @@ Imports: `Std`
 <details>
 <summary>ProtectionLedger.lean — 36 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ProtectionLedger.lean`
 
@@ -1461,7 +1461,7 @@ Imports: `Std`
 <details>
 <summary>RecipientIdentification.lean — 92 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean`
 
@@ -1574,7 +1574,7 @@ Imports: `GenerativeCore`, `RecipientCorrection`
 <details>
 <summary>ArchivePreparation.lean — 28 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean`
 
@@ -1684,7 +1684,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>PaidArchiveReader.lean — 28 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean`
 
@@ -1733,7 +1733,7 @@ Imports: `RecipientArchive`
 <details>
 <summary>RecipientArchive.lean — 39 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean`
 
@@ -1793,7 +1793,7 @@ Imports: `EmissionArchive`, `RecipientIdentification`
 <details>
 <summary>ActionPreparation.lean — 21 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean`
 
@@ -1835,7 +1835,7 @@ Imports: `ReasonPreparation`
 <details>
 <summary>ActionWitness.lean — 74 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean`
 
@@ -2326,7 +2326,7 @@ Imports: `RevisionWitness`, `PlasticityPreparation`
 <details>
 <summary>PlasticityPreparation.lean — 15 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean`
 
@@ -2439,7 +2439,7 @@ Imports: `PairedPlasticity`
 <details>
 <summary>PretrainingEvidence.lean — 21 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean`
 
@@ -2814,7 +2814,7 @@ Imports: `SuccessionWitness`
 <details>
 <summary>SuccessionPreparation.lean — 15 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean`
 
@@ -3022,7 +3022,7 @@ Imports: `FulfillmentStatus`
 <details>
 <summary>FreshRevision.lean — 54 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean`
 
@@ -3097,7 +3097,7 @@ Imports: `ActionWitness`, `PublicationBridge`, `RevisionPreparation`
 <details>
 <summary>RevisionPreparation.lean — 17 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean`
 
@@ -3135,7 +3135,7 @@ Imports: `ActionPreparation`
 <details>
 <summary>RevisionWitness.lean — 56 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean`
 
@@ -3275,7 +3275,7 @@ Imports: `RecipientReasons`
 <details>
 <summary>ReasonPreparation.lean — 18 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean`
 
@@ -3314,7 +3314,7 @@ Imports: `ArchivePreparation`
 <details>
 <summary>ReasonReplayBridge.lean — 19 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean`
 
@@ -3412,7 +3412,7 @@ Imports: `PaidArchiveReader`, `ReasonReplay`
 <details>
 <summary>PublicationBridge.lean — 11 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean`
 
@@ -3444,7 +3444,7 @@ Imports: `PublicationBudget`
 <details>
 <summary>PublicationBudget.lean — 14 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean`
 
@@ -3479,7 +3479,7 @@ Imports: `PublicationSafety`
 <details>
 <summary>PublicationSafety.lean — 26 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean`
 
@@ -3569,7 +3569,7 @@ Imports: `RecipientIdentification`
 <details>
 <summary>InspectionPreparation.lean — 16 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean`
 
@@ -3606,7 +3606,7 @@ Imports: `ActionPreparation`
 <details>
 <summary>InspectionWitness.lean — 12 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean`
 
@@ -3639,7 +3639,7 @@ Imports: `ActionWitness`, `PaidPreImport`, `InspectionPreparation`
 <details>
 <summary>PaidPreImport.lean — 29 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean`
 
@@ -3689,7 +3689,7 @@ Imports: `RecipientAction`, `SemanticCalibration`
 <details>
 <summary>SemanticAction.lean — 31 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean`
 
@@ -3741,7 +3741,7 @@ Imports: `Std`
 <details>
 <summary>RouteDiagnostics.lean — 31 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean) · [理论 / Theory](../../chapters/ROUTE-DIAGNOSTICS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-DIAGNOSTICS-REVIEW.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean) · [理论 / Theory](../../chapters/ROUTE-DIAGNOSTICS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean`
 
@@ -3887,7 +3887,7 @@ Imports: `SuccessorLearning`, `RouteDiagnostics`
 <details>
 <summary>RevisionSuccession.lean — 32 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RevisionSuccession.lean`
 
@@ -4202,7 +4202,7 @@ Imports: `RecipientCorrection`
 <details>
 <summary>RenewalLiquidity.lean — 53 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/RenewalLiquidity.lean`
 

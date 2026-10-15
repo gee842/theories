@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "P116：导入 Becoming.Parting 与 Becoming.Typicality 并增其条目",
+   "en": "P116: imports Becoming.Parting and Becoming.Typicality with their bullets"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "P116：核心之列加入 Becoming.Parting 与 Becoming.Typicality，并增两段范围说明",
+   "en": "P116: Becoming.Parting and Becoming.Typicality added to the core list, with two scope paragraphs"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "P116：Becoming.Parting 与 Becoming.Typicality 的两行 L4 及层内导入",
+   "en": "P116: two L4 rows for Becoming.Parting and Becoming.Typicality and their within-layer imports"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "P116：§6 一对段落，第一部分“认识”、完整陈述与界一项，§8 的状态行、辨识读法与“路径分支时”，§9 两行，术语三行；总数改据新回执",
+   "en": "P116: a §6 paragraph pair, Part I \"Knowing\", the theory stated in full and its bound item, §8's status row, identification reading and \"When the course branches\", two §9 rows, three glossary rows; the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第140节（P116：运行分开之处的辨识与计数中的典型，Becoming.Parting、Becoming.Typicality）及其英文段；此前各节不变",
+   "en": "section 140 (P116: identification where runs part and typicality by counting, Becoming.Parting and Becoming.Typicality) with its English paragraph; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "P116：Parting.unparted_iff 与 Parting.free_open 归为只在证明中用到（same）",
+   "en": "P116: Parting.unparted_iff and Parting.free_open classified as used only in proofs (same)"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T173702.509759Z 上重新生成，含 P116 的分类：陈述依赖可判定 363 → 364，只在证明中用到 212 → 214，取可判定族的定义不变（96）",
+   "en": "regenerated on receipt 20261015T173702.509759Z with P116's classifications: statements depending on decidedness 363 → 364, used only in proofs 212 → 214, definitions taking a decidability family unchanged (96)"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变",
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing P116 (study section 140): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月16日，P116 落地（研究第140节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}

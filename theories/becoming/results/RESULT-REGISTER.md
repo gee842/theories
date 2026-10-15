@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-208 migrated records: 204 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+210 migrated records: 206 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -101,6 +101,7 @@
 | `historical-source-binding` | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](records/historical-source-binding.md) | theorem | recorded-checked |
 | `histories-fix-law-up-to-dead-ends` | [律与历史的完备对应 / The complete correspondence of law and history](records/histories-fix-law-up-to-dead-ends.md) | theorem | recorded-checked |
 | `identification-where-bounded` | [有界之处的辨识 / Identification where bounded](records/identification-where-bounded.md) | theorem | recorded-checked |
+| `identification-where-runs-part` | [运行分开之处的辨识 / Identification where runs part](records/identification-where-runs-part.md) | theorem | recorded-checked |
 | `identity-across-steps` | [跨步的同一 / Identity across steps](records/identity-across-steps.md) | theorem | recorded-checked |
 | `imbalance-as-relatum` | [不平衡作为关系项 / Imbalance as a relatum](records/imbalance-as-relatum.md) | theorem | recorded-checked |
 | `incidence-common-refinement` | [关联问题导出跨分节共同细化 / Incidence questions yield a common relational refinement](records/incidence-common-refinement.md) | theorem | recorded-checked |
@@ -211,6 +212,7 @@
 | `transition-grouping-word-partition` | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](records/transition-grouping-word-partition.md) | theorem | recorded-checked |
 | `transmission-independent-where-it-binds` | [传递在其起约束之处的独立性 / Independence of transmission where it binds](records/transmission-independent-where-it-binds.md) | theorem | recorded-checked |
 | `transmission-is-inheritance-and-need` | [传递作为承继加所需之界 / Transmission as inheritance with a bounded need](records/transmission-is-inheritance-and-need.md) | theorem | recorded-checked |
+| `typicality-by-counting` | [计数中的典型 / Typicality by counting](records/typicality-by-counting.md) | theorem | recorded-checked |
 | `unanchored-incidence-collapse` | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](records/unanchored-incidence-collapse.md) | theorem | recorded-checked |
 | `unceasing-generation-needs-renewal` | [不息的生成需要更新 / Unceasing generation needs renewal](records/unceasing-generation-needs-renewal.md) | theorem | recorded-checked |
 | `unity-of-readings` | [一个展开在语境中的读法 / One unfolding, read in context](records/unity-of-readings.md) | theorem | recorded-checked |

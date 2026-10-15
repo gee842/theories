@@ -923,7 +923,7 @@ Imports: `UpdaterFormation`
 <details>
 <summary>Evaluate.lean — 6 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Evaluate.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Evaluate.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Evaluate.lean`
 
@@ -947,7 +947,7 @@ Imports: `Exposure`
 <details>
 <summary>Exposure.lean — 47 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Exposure.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Exposure.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/Exposure.lean`
 
@@ -1015,7 +1015,7 @@ Imports: `Std`
 <details>
 <summary>ExposureExamples.lean — 19 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/ExposureExamples.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/ExposureExamples.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/ExposureExamples.lean`
 
@@ -1055,7 +1055,7 @@ Imports: `FiniteExposureKernel`
 <details>
 <summary>FiniteExposureKernel.lean — 27 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/FiniteExposureKernel.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/FiniteExposureKernel.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/FiniteExposureKernel.lean`
 
@@ -1103,7 +1103,7 @@ Imports: `Exposure`
 <details>
 <summary>PredictionOverlap.lean — 13 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/PredictionOverlap.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-APPLICATIONS.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/PredictionOverlap.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/PredictionOverlap.lean`
 
@@ -1137,7 +1137,7 @@ Imports: `Exposure`, `PredictionAction`
 <details>
 <summary>FeedbackDynamics.lean — 26 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FeedbackDynamics.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FeedbackDynamics.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FeedbackDynamics.lean`
 
@@ -1184,7 +1184,7 @@ Imports: `Std`
 <details>
 <summary>SymbolicDynamics.lean — 50 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SymbolicDynamics.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SymbolicDynamics.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SymbolicDynamics.lean`
 
@@ -1507,7 +1507,7 @@ Imports: `Mathlib.Tactic`
 <details>
 <summary>ContinuationCorrespondence.lean — 17 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationCorrespondence.lean`
 
@@ -2016,7 +2016,7 @@ Imports: `EmbodiedChoiceScales`
 <details>
 <summary>RealFeedback.lean — 32 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean) · [理论 / Theory](../../chapters/SYSTEMS-COMPLEXITY-CHAOS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean) · [理论 / Theory](../../chapters/SYSTEMS-COMPLEXITY-CHAOS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean`
 
@@ -2069,7 +2069,7 @@ Imports: `Mathlib.Analysis.SpecificLimits.Basic`, `Mathlib.Tactic`, `SystemsComp
 <details>
 <summary>RelationsAcrossScales.lean — 26 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean`
 

@@ -604,7 +604,7 @@ Imports: `RecursiveSelectionInheritance`
 <details>
 <summary>GeneratedSelectionRecurrenceAudit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GeneratedSelectionRecurrenceAudit.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GeneratedSelectionRecurrenceAudit.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GeneratedSelectionRecurrenceAudit.lean`
 
@@ -1197,7 +1197,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>PreparationCorrespondence.lean — 16 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean`
 
@@ -1291,7 +1291,7 @@ Imports: `Std`
 <details>
 <summary>RecurrentAssembly.lean — 47 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean) · [理论 / Theory](../../README.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean) · [理论 / Theory](../../README.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean`
 
@@ -1438,7 +1438,7 @@ Imports: `RecursiveGenerativeSelection`
 <details>
 <summary>RecursiveSelectionInheritanceAudit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecursiveSelectionInheritanceAudit.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecursiveSelectionInheritanceAudit.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecursiveSelectionInheritanceAudit.lean`
 
@@ -1702,7 +1702,7 @@ Imports: `RecurrentAssembly`
 <details>
 <summary>StructuralInheritance.lean — 40 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralInheritance.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralInheritance.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralInheritance.lean`
 
@@ -2383,7 +2383,7 @@ Imports: `CalibrationRenewal`
 <details>
 <summary>LearningCorrespondence.lean — 19 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean) · [理论 / Theory](../../chapters/COGNITION-LEARNING-AND-EVOLUTION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean) · [理论 / Theory](../../chapters/COGNITION-LEARNING-AND-EVOLUTION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean`
 
@@ -2421,7 +2421,7 @@ Imports: `Becoming.Learning`, `CompositionalAcquisition`, `UpdaterConsequences`
 <details>
 <summary>TransmissionCorrespondence.lean — 20 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/TransmissionCorrespondence.lean`
 
@@ -2600,7 +2600,7 @@ Imports: `EffectiveCommand`
 <details>
 <summary>AcquiredCorrectionCases.lean — 7 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrectionCases.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrectionCases.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrectionCases.lean`
 
@@ -3060,7 +3060,7 @@ Imports: `PracticalJudgment`
 <details>
 <summary>CopyingInstances.lean — 98 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean`
 
@@ -3779,7 +3779,7 @@ Imports: `CorrectionRelations`, `CorrectionHandoff`
 <details>
 <summary>CorrespondenceSamples.lean — 6 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrespondenceSamples.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrespondenceSamples.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrespondenceSamples.lean`
 
@@ -4986,7 +4986,7 @@ Imports: `Std`
 <details>
 <summary>KitchenTransitions.lean — 12 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/KitchenTransitions.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/KitchenTransitions.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/KitchenTransitions.lean`
 
@@ -5017,7 +5017,7 @@ Imports: `Std`
 <details>
 <summary>MachineInstances.lean — 114 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean`
 
@@ -5581,7 +5581,7 @@ Imports: `ContinuationRenewal`, `PositiveGroundUncertainty`
 <details>
 <summary>OrganizationCorrespondence.lean — 3 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OrganizationCorrespondence.lean`
 
@@ -5896,7 +5896,7 @@ Imports: `GenerativeComparison`, `PracticalJudgment`
 <details>
 <summary>ProtocolInstances.lean — 31 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean`
 
@@ -6030,7 +6030,7 @@ Imports: `FormationRoutes`
 <details>
 <summary>ReconfigurationCorrespondenceSamples.lean — 10 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurationCorrespondenceSamples.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurationCorrespondenceSamples.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurationCorrespondenceSamples.lean`
 
@@ -6337,7 +6337,7 @@ Imports: `PracticalJudgment`
 <details>
 <summary>RenewingCorrespondence.lean — 13 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean`
 
@@ -6543,7 +6543,7 @@ Imports: `ReservedShutdown`, `MediatedControlCases`
 <details>
 <summary>RetrodictionInstances.lean — 27 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean`
 
@@ -6669,7 +6669,7 @@ Imports: `Std`
 <details>
 <summary>RoutesCorrespondenceSamples.lean — 11 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RoutesCorrespondenceSamples.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RoutesCorrespondenceSamples.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RoutesCorrespondenceSamples.lean`
 
@@ -6778,7 +6778,7 @@ Imports: `SelectorReviewCoverage`
 <details>
 <summary>SituatedKitchen.lean — 20 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SituatedKitchen.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SituatedKitchen.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SituatedKitchen.lean`
 
@@ -7078,7 +7078,7 @@ Imports: `RenewingFormation`, `ProtectionPriorityRival`
 <details>
 <summary>ReviewProbes.lean — 11 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean`
 
@@ -7108,7 +7108,7 @@ Imports: `RenewingFormation`, `ProtectionPriorityRival`
 <details>
 <summary>ReviewProbes2.lean — 3 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean`
 
@@ -7130,7 +7130,7 @@ Imports: `RenewingFormation`
 <details>
 <summary>ReviewProbes3.lean — 3 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean`
 

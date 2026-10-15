@@ -165,7 +165,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>NativePortContinuation.lean — 32 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/NativePortContinuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-ENTRY-DEPENDENCY-MAP.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/NativePortContinuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/native-port/NativePortContinuation.lean`
 
@@ -218,7 +218,7 @@ Imports: `NativePacketProcess`, `ResourceContinuation`, `Depletion`
 <details>
 <summary>RenewalAccounting.lean — 27 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalAccounting.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PORT-RENEWAL-LAW-CLOSURE.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalAccounting.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalAccounting.lean`
 
@@ -266,7 +266,7 @@ Imports: `GenerativeCore`, `Depletion`, `RenewalBasics`
 <details>
 <summary>RenewalBasics.lean — 35 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalBasics.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalBasics.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalBasics.lean`
 
@@ -406,7 +406,7 @@ Imports: `RenewalSufficiency`, `RenewalLink`
 <details>
 <summary>RenewalClosure.lean — 25 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalClosure.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalClosure.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalClosure.lean`
 
@@ -452,7 +452,7 @@ Imports: `GenerativeCore`, `SupportNecessity`, `RenewalBasics`
 <details>
 <summary>RenewalConfigurations.lean — 37 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalConfigurations.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalConfigurations.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalConfigurations.lean`
 
@@ -510,7 +510,7 @@ Imports: `RenewalCharacterization`
 <details>
 <summary>RenewalLink.lean — 24 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalLink.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalLink.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalLink.lean`
 
@@ -602,7 +602,7 @@ Imports: `RenewalConfigurations`
 <details>
 <summary>RenewalSufficiency.lean — 36 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalSufficiency.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalSufficiency.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalSufficiency.lean`
 

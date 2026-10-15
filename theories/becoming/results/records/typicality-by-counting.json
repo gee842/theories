@@ -88,8 +88,8 @@
     "names-provisional"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Typicality 的 44 项声明（32 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 44 declarations of Becoming.Typicality, 32 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 140; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T173702.509759Z）：Becoming.Typicality 的 44 项声明（32 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T173702.509759Z): the 44 declarations of Becoming.Typicality, 32 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 140; not independently reviewed."
   },
   "next_delta": {
     "zh": "指数之界的集中与多于两个值；外围中实数权重作为实例；Ren 对读法的判断（概率是计数加上“发生的历程是典型的”这一前提）。",
@@ -364,9 +364,65 @@
       "role": "provenance",
       "sha256": "296b8548f039011b230f00dcc4c25798ddfb45e44adf5be14706794221f6c2b2",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "role": "receipt",
+      "sha256": "07766c064414edcf59eba809d0948ec08900a62f892b4f7dad4875b08a1873a8",
+      "declarations": []
     }
   ],
-  "proof_bindings": [],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Typicality",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Weighted",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Resolution",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Capture",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Identification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Parting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
   "history": [
     {
       "zh": "2026-10-16：新增，按 Ren 2026-10-15 的“\"What this line doesn’t reach\" is also worth doing”（P116）；研究 §140。",

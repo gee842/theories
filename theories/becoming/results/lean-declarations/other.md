@@ -13,7 +13,7 @@
 <details>
 <summary>Driver.lean — 5 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean`
 
@@ -169,7 +169,7 @@ Imports: `Std`
 <details>
 <summary>MarketInstances.lean — 53 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/formal/MarketInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/market-generativity/formal/README.md)
+[原源码 / Source](../../../../experiments/market-generativity/formal/MarketInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/formal/README.md)
 
 `experiments/market-generativity/formal/MarketInstances.lean`
 
@@ -970,7 +970,7 @@ Imports: `CorrectionVersioned`, `GoalFormationRevision`
 <details>
 <summary>CorrectionCommitment.lean — 47 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/CorrectionCommitment.lean`
 
@@ -1278,7 +1278,7 @@ Imports: `Std`
 <details>
 <summary>MarketDiagnosis.lean — 12 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/MarketDiagnosis.lean`
 
@@ -1350,7 +1350,7 @@ Imports: `CommonTaskRevision`
 <details>
 <summary>PopulationCorrection.lean — 82 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/PopulationCorrection.lean`
 
@@ -1451,7 +1451,7 @@ Imports: `CollectiveDestruction`
 <details>
 <summary>PopulationRealization.lean — 18 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/PopulationRealization.lean`
 
@@ -1488,7 +1488,7 @@ Imports: `PopulationCorrection`, `GenerativeCore`
 <details>
 <summary>RecursiveSelection.lean — 54 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/RecursiveSelection.lean`
 
@@ -1687,7 +1687,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>ResponseCapacity.lean — 53 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/ResponseCapacity.lean`
 
@@ -1759,7 +1759,7 @@ Imports: `Std`
 <details>
 <summary>SharedStockInstances.lean — 5 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/SharedStockInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/SharedStockInstances.lean`
 
@@ -1885,7 +1885,7 @@ Imports: `AdmissionRevision`
 <details>
 <summary>VersionedTaskInstances.lean — 30 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
 
 `experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean`
 

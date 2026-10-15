@@ -234,7 +234,7 @@ Imports: `GenerativeCore`, `FormedSelection`
 <details>
 <summary>Cases.lean — 24 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/Cases.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/Cases.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/Cases.lean`
 
