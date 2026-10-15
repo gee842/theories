@@ -1,0 +1,14 @@
+{
+  "dir": "universal-ethics/generative-capacity",
+  "checker": "check_organization_correspondence.py",
+  "depth": 1,
+  "target": "OrganizationCorrespondence",
+  "stem": "organization-correspondence",
+  "namespace": "Becoming.OrganizationCorrespondence",
+  "empty": [
+    "frontier_iff_undominated"
+  ],
+  "empty_comment": "# Declarations that add no axiom and must have empty reports; the others supply decidedness by\n# Lean's classical reasoning or use the periphery's simp lemmas.",
+  "doc": "Check the peripheral instance of the Becoming core's laws of undominated members of a listed menu in\nformation required of undominated choices.\n\n`OrganizationCorrespondence` imports `Becoming.Decidedness` and `RelationalOrganization` (with\n`PracticalJudgment`, which use Lean's standard library and its tactics), so it is compiled with Lean 4.30.0-rc2, as the other\ninstance modules are, with the installed Mathlib on the path (`SYSTEMS_MATHLIB_PROJECT`, default\n`~/repos/生生不息`), though it imports none. This checker follows `check_continuation_correspondence.py`:\nmodule resolution, declaration scanning and passed-receipt matching are those of the core checker, and\nevery other module in the closure must match a passed receipt. Each declaration's axiom report is\nrecorded: it may name only the standard axioms (propext, Classical.choice, Quot.sound), and the\ndeclarations in EMPTY must have empty reports. The core does not import this module. Lean steps are\nreused as in the core checker, keyed also by the Mathlib revision; `BECOMING_FRESH=1` runs every step.\nThe run folder keeps the receipt, the drivers and logs of the steps that ran, and a copy of each file\n`main` does not hold byte for byte.",
+  "scope": "On the Becoming core's laws of undominated members of a listed menu: in RelationalOrganization, on an exact listed menu the frontier of PracticalJudgment is the core's undominated members (frontier_iff_undominated); with Lean's classical decidedness supplying what the core asks, the frontier is not empty by exists_undominated and every member includes the organizational relation by undominated_has, so formation_required_of_improvable_absence follows from the core laws (formation_required_by_core), and so does the constructed case (coordination_is_required_by_core). Where the comparison is weakly decided and the relation decided with no classical reasoning, the bridge states the theorem itself (Becoming.Judgment.required_of_bettered). The comparison, eligibility and the constructed history keep the earlier modules' scope."
+}
