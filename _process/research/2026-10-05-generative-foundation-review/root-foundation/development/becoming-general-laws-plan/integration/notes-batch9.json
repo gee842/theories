@@ -1,0 +1,39 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "en": "P109: imports Becoming.Coupling; module list and its bullet added",
+   "zh": "P109：导入 Becoming.Coupling；模块列表与其一条新增"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "en": "P109: Becoming.Coupling added to the core list",
+   "zh": "P109：核心之列加入 Becoming.Coupling"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "en": "P109: an L4 row for Becoming.Coupling and its within-layer imports",
+   "zh": "P109：Becoming.Coupling 的 L4 一行及层内导入"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "en": "P109: in §8 the further proof for the relational starting point becomes \"where a move is formed is given\" and Ren's choices gain its readings; one §9 row (Becoming.Coupling); the totals moved to the new receipt",
+   "zh": "P109：§8 中关系起点的进一步证明改为“动作在哪里形成已给出”，Ren 的选择增其读法；§9 一行（Becoming.Coupling）；总数改据新回执"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "en": "section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged",
+   "zh": "新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "en": "regenerated on receipt 20261015T153317.850533Z with P109's classifications: statements depending on decidedness 320 → 322, used only in proofs 183 → 186, definitions taking a decidability family 88 → 89",
+   "zh": "在回执 20261015T153317.850533Z 上重新生成，含 P109 的分类：陈述依赖可判定 320 → 322，只在证明中用到 183 → 186，取可判定族的定义 88 → 89"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed",
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变"
+  }
+ },
+ "history": {
+  "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}

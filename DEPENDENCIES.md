@@ -5130,6 +5130,114 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean)
 
+## where-a-move-is-formed ← process-and-frame-as-readings
+
+`formal-reuse` — 复用 closedBy 与 Fork.label_couples：耦合的整体就是积的 closedBy，共享的动作是两方之间的关系。 / Reuses closedBy and Fork.label_couples: the coupled whole is the product's closedBy, and the shared move is the relation between the two sides.
+
+**Producer output / 上游输出:** closedBy：动作由配置的策略形成；共享的动作是部分之间的关系。 / closedBy: a move formed by a policy of the configuration; a shared move as a relation between parts.
+
+**Consumer input / 下游输入:** 耦合的整体与积的 closedBy 是同一个运行的两种读法。 / The coupled whole and the product's closedBy as two readings of one run.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
+## where-a-move-is-formed ← counterfactual-is-the-course
+
+`formal-reuse` — 复用 ExchangeLaw.ofMoves、ExchangeLaw.policy 与 ExchangeLaw.stepBy：供给的动作在进程的标准模型中只经阶段形成。 / Reuses ExchangeLaw.ofMoves, ExchangeLaw.policy and ExchangeLaw.stepBy: supplied moves are formed through the stage alone in a course's standard model.
+
+**Producer output / 上游输出:** 进程的标准模型；不读任何东西的律给出供给的动作。 / A course's standard model; a law that reads nothing gives the supplied moves.
+
+**Consumer input / 下游输入:** 供给的动作如钟所形成的动作。 / Supplied moves as the moves a clock forms.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
+## where-a-move-is-formed ← causal-models-as-processes
+
+`formal-reuse` — 复用 trajectory：每一方的进程是以动作为输入的标准模型的轨迹。 / Reuses trajectory: each side's course is the trajectory of the standard model with the move as input.
+
+**Producer output / 上游输出:** 标准模型的轨迹。 / The trajectory of the standard model.
+
+**Consumer input / 下游输入:** 自己的动作是其余的输入。 / An own move as the rest's input.
+
+**Retained conditions / 保留条件:** 律是函数。 / The laws are functions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
+## where-a-move-is-formed ← projection-carrying-a-law
+
+`formal-reuse` — 复用 GoAlike、GoAlike.runs_agree 与 carries_law_iff：自己的动作封闭部分。 / Reuses GoAlike, GoAlike.runs_agree and carries_law_iff: an own move closes the part.
+
+**Producer output / 上游输出:** 投影承载规律；同行的投影使运行一致。 / A projection carrying a law; runs agreeing under it.
+
+**Consumer input / 下游输入:** 部分承载自己的律，不论其余如何。 / The part carrying a law of its own, whatever the rest.
+
+**Retained conditions / 保留条件:** 部分的律确定。 / The part's law determined.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
+## where-a-move-is-formed ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit：自己的动作在部分之内循环，整体按一个确定的律循环。 / Reuses Law.orbit: an own move goes round within the part, and the whole goes round by one determined law.
+
+**Producer output / 上游输出:** 一个函数之律的轨道。 / The orbit of a law that is a function.
+
+**Consumer input / 下游输入:** 部分、其余与整体的进程作为轨道。 / The courses of the part, the rest and the whole as orbits.
+
+**Retained conditions / 保留条件:** 律是函数。 / The laws are functions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## where-a-move-is-formed ← generalization-through-lumping
+
+`formal-reuse` — 复用 Learning.Lumped：经一个读法形成即随它所归并者同行。 / Reuses Learning.Lumped: formed through a reading is going alike across what it lumps.
+
+**Producer output / 上游输出:** 归并：随读法所归并者同行。 / Lumping: going alike across what a reading lumps.
+
+**Consumer input / 下游输入:** 动作经部分、其余或配置形成。 / A move formed through the part, the rest or the configurations.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
+
+## where-a-move-is-formed ← learning-by-refutation
+
+`formal-reuse` — 复用 Learning.Lasso、lasso_of_held、lassoNext、lasso_positions、upto 与 mem_upto：列表所持者形成套索，每个套索都如此形成。 / Reuses Learning.Lasso, lasso_of_held, lassoNext, lasso_positions, upto and mem_upto: what a list holds forms a lasso, and every lasso is so formed.
+
+**Producer output / 上游输出:** 列表所持的轨道是套索；套索的位置。 / An orbit held by a list is a lasso; the positions of a lasso.
+
+**Consumer input / 下游输入:** 列表所持的形成者只形成套索。 / A former held by a list forms only lassos.
+
+**Retained conditions / 保留条件:** 律是函数，配置在列表之内。 / The laws are functions and the configurations within a list.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
+
+## where-a-move-is-formed ← control-coherence-loss
+
+`formal-reuse` — 复用 Readout.Reading、SingleValued、reading_single_iff、Decodes 与 lumped_of_decodes：记录所显示的动作之律。 / Reuses Readout.Reading, SingleValued, reading_single_iff, Decodes and lumped_of_decodes: the law of the move a record shows.
+
+**Producer output / 上游输出:** 经约化的读出单值恰当它随约化同行；解码者。 / A reading through a reduction is single-valued exactly where it goes alike; decoders.
+
+**Consumer input / 下游输入:** 记录固定动作是谁的之处。 / Where the record fixes whose move it is.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean)
+
+## where-a-move-is-formed ← experiment-needs-return
+
+`formal-reuse` — 复用 keepHistory 与 keepHistory_length：保留历史的部分把每个动作读作自己的。 / Reuses keepHistory and keepHistory_length: a part keeping its history reads every move as its own.
+
+**Producer output / 上游输出:** 保留的历史及其长度。 / The kept history and its length.
+
+**Consumer input / 下游输入:** 历史的长度告诉步数，所以一个配置的策略给出每个动作。 / The length of the history tells the step, so a policy of the configuration gives every move.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
+
 ## whole-first-and-bounded-centers ← loss-beyond-a-region
 
 `formal-reuse` — 复用 Web.AdmitsWithin、AdmitsWithin.narrow 与清除者的见证（Clearing.withheld、admitted_without、unsupported_with、alongDependence、loses_beyond）。 / Reuses Web.AdmitsWithin, AdmitsWithin.narrow and the clearer's witness (Clearing.withheld, admitted_without, unsupported_with, alongDependence, loses_beyond).
