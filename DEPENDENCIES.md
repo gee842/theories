@@ -5698,6 +5698,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean)
 
+## what-a-law-of-the-whole-and-no-part-takes ← sensitivity-is-the-least-registration
+
+`formal-reuse` — 复用消失（VanishFrom）、消失之指示与尾之律、WLPO、seenBy 与其引理、alike_of_agree_from、alike_of_agree_from_sensitive、Sensitivity.cond_either 与 ReadsFinitely.alike_of_insensitive：反例给出规则的证明是其混合，读作数据。 / Reuses vanishing (VanishFrom), the indicator of vanishing and the tail law, WLPO, seenBy and its lemmas, alike_of_agree_from, alike_of_agree_from_sensitive, Sensitivity.cond_either and ReadsFinitely.alike_of_insensitive: the proof that a counterexample gives a rule is its mixing, read as data.
+
+**Producer output / 上游输出:** 消失与其指示；尾之律；沿序列的混合给出相同；弱有限全知原则；读有限多个条件且不敏感者处处给出相同。 / Vanishing and its indicator; the tail law; mixing along a sequence giving alike; the weak limited principle of omniscience; a law reading finitely many conditions and sensitive to none giving alike.
+
+**Consumer input / 下游输入:** 反例与规则的当且仅当；整体之律与其无最小的识；尾之律作为实例；永不消失之指示。 / The equivalence of counterexamples and rules; the law of a whole with no least registration; the tail law as an instance; the indicator of never vanishing.
+
+**Retained conditions / 保留条件:** 条件以自然数编号；规则与消失之判定作为假设。 / Conditions numbered by the natural numbers; the rule and the decision of vanishing as hypotheses.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean)
+
+## what-a-law-of-the-whole-and-no-part-takes ← counterfactual-is-the-course
+
+`formal-reuse` — 复用交换律（ExchangeLaw）、给出相同、读已立者、不敏感、敏感与经识而读（Through）：反例按这些陈述。 / Reuses laws of exchange (ExchangeLaw), giving alike, reading what has stood, insensitivity, sensitivity and reading through a registration (Through): the counterexamples are stated through them.
+
+**Producer output / 上游输出:** 交换律；读已立者；一步的不敏感与敏感；经识而读。 / Laws of exchange; reading what has stood; insensitivity at a step and sensitivity; reading through a registration.
+
+**Consumer input / 下游输入:** 整体之律、永不消失之律与反例的当且仅当。 / The law of a whole, the law of levels that never vanish and the equivalences for counterexamples.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
+## what-a-law-of-the-whole-and-no-part-takes ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用有限全知原则（LPO）：判定是否有真者的规则给出它。 / Reuses the limited principle of omniscience (LPO): a rule deciding whether a sequence has a true gives it.
+
+**Producer output / 上游输出:** 有限全知原则。 / The limited principle of omniscience.
+
+**Consumer input / 下游输入:** 有限全知原则作为规则给出它（LPO.of_rule）。 / The limited principle as a rule giving it (LPO.of_rule).
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
 ## where-a-move-is-formed ← process-and-frame-as-readings
 
 `formal-reuse` — 复用 closedBy 与 Fork.label_couples：耦合的整体就是积的 closedBy，共享的动作是两方之间的关系。 / Reuses closedBy and Fork.label_couples: the coupled whole is the product's closedBy, and the shared move is the relation between the two sides.

@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-225 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+226 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -228,6 +228,7 @@
 | [权重计数情境 / Weights count situations](../results/records/weights-count-situations.md) | recorded-checked | [Situations.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean) |
 | [截断所失：任意耦合时程 / What a cut loses, for every schedule of couplings](../results/records/what-a-cut-loses.md) | recorded-checked | [Remainder.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean) |
 | [有限历史所否证者 / What a finite history refutes](../results/records/what-a-finite-history-refutes.md) | recorded-checked | [Horizon.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean) |
+| [整体而无部分之律所需 / What a law of the whole and no part takes](../results/records/what-a-law-of-the-whole-and-no-part-takes.md) | recorded-checked | [Tail.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean) |
 | [动作在哪里形成 / Where a move is formed](../results/records/where-a-move-is-formed.md) | recorded-checked | [Coupling.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean) |
 | [新的增益从哪里来 / Where novelty's gain comes from](../results/records/where-novelty-gain-comes-from.md) | recorded-checked | [Gain.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean) |
 | [整体优先，与以依存为界的中心 / The whole first, and centers bounded by dependence](../results/records/whole-first-and-bounded-centers.md) | recorded-checked | [Significance.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean) |

@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T224751.654308Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean": {
+   "zh": "新核心模块（P126：整体而无部分之律所需；39 项定理、53 项声明），本回执首次检查",
+   "en": "new core module (P126: what a law of the whole and no part takes; 39 theorems, 53 declarations), first checked by this receipt"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "根模块加入 Becoming.Tail 的导入与条目",
+   "en": "the root gains the import and bullet for Becoming.Tail"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "核心列表加入 Tail，范围同步",
+   "en": "the core list gains Tail, with its scope"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "L4 加入 Tail 一行及其层内导入",
+   "en": "L4 gains the Tail row and its within-layer imports"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "§2 加入整体而无部分之律一段，§8 的反馈与所及（反例存在的确切强度已给出），§9 加一行与术语；回执与合计改据新运行（7061 项定理、9713 项声明审计，核心闭包 125 个模块，包 130 个）",
+   "en": "§2 gains the paragraph on a law of the whole and no part, §8 under feedback and reach (the exact strength of a counterexample's existence is given), §9 gains a row and glossary entries; receipt and totals moved to the new run (7061 theorems, 9713 declaration audits, core closure 125 modules, package 130)"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "加入第160节（Becoming.Tail）及英文段；此前各节不变",
+   "en": "section 160 (Becoming.Tail) and its English paragraph added; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "加入 Tail 的四项造出指示的定义与两项分情形的定理",
+   "en": "gains Tail's four indicator-building definitions and two case-splitting theorems"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T224751.654308Z 上重新生成：陈述依赖 417 → 435、只在证明中 239 → 241、证明可判定 138 → 145、取可判定族的定义 109 → 116，新增各行都来自 Tail（规则是其陈述自己的条件）",
+   "en": "regenerated on receipt 20261015T224751.654308Z: statements depending 417 → 435, proof-only 239 → 241, proving decidedness 138 → 145, definitions taking a family 109 → 116, every new row from Tail (the rule is the statement's own condition)"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing P126 (Becoming.Tail, study section 160): rebound to the new receipt and rehashed: ",
+  "zh": "2026年10月16日，P126（Becoming.Tail，研究第160节）落地：改绑新回执并更新哈希："
+ }
+}

@@ -397,7 +397,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "4ce8286b9a426cd6fc1c4e1a137eca340c010a4e78242087187c304f399b2d93"
+      "sha256": "298a63579cbff61bb54d03f1a471b28078435c54e1a8ef8fe2b5a52c4f22e469"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -490,6 +490,10 @@
     {
       "zh": "2026-10-16 P126（整体而无部分之律所需，研究 §160）：下一步首项“反例之存在的确切强度”由 what-a-law-of-the-whole-and-no-part-takes 回答：条件以自然数编号时，反例恰在一个规则判定每个布尔序列是否处处为假之处存在（弱有限全知原则作为规则），消失之判定恰是有限全知原则作为规则；所以删去此项；related 加 what-a-law-of-the-whole-and-no-part-takes。陈述与证明不变；does_not_show 仍对本记录的定理成立；correspondence 中的读法仍按其所注。",
       "en": "16 October 2026, P126 (what a law of the whole and no part takes, study section 160): the first item of the next step, the exact strength of a counterexample's existence, is answered by what-a-law-of-the-whole-and-no-part-takes: with the conditions numbered by the natural numbers, a counterexample exists exactly where a rule decides, of every Boolean sequence, whether it is false throughout (the weak limited principle of omniscience as a rule), and the decision of vanishing is exactly the limited principle as a rule; so the item is removed; related adds what-a-law-of-the-whole-and-no-part-takes. Statement and proofs unchanged; does_not_show still holds of this record's theorems; the readings in correspondence stay as marked there."
+    },
+    {
+      "zh": "2026年10月16日，P126（Becoming.Tail，研究第160节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入整体而无部分之律一段，§8 的反馈与所及（反例存在的确切强度已给出），§9 加一行与术语；回执与合计改据新运行（7061 项定理、9713 项声明审计，核心闭包 125 个模块，包 130 个））。",
+      "en": "16 October 2026, landing P126 (Becoming.Tail, study section 160): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on a law of the whole and no part, §8 under feedback and reach (the exact strength of a counterexample's existence is given), §9 gains a row and glossary entries; receipt and totals moved to the new run (7061 theorems, 9713 declaration audits, core closure 125 modules, package 130))."
     }
   ],
   "text_versions": []

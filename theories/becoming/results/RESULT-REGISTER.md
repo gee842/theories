@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-225 migrated records: 221 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+226 migrated records: 222 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -232,6 +232,7 @@
 | `weights-count-situations` | [权重计数情境 / Weights count situations](records/weights-count-situations.md) | theorem | recorded-checked |
 | `what-a-cut-loses` | [截断所失：任意耦合时程 / What a cut loses, for every schedule of couplings](records/what-a-cut-loses.md) | theorem | recorded-checked |
 | `what-a-finite-history-refutes` | [有限历史所否证者 / What a finite history refutes](records/what-a-finite-history-refutes.md) | theorem | recorded-checked |
+| `what-a-law-of-the-whole-and-no-part-takes` | [整体而无部分之律所需 / What a law of the whole and no part takes](records/what-a-law-of-the-whole-and-no-part-takes.md) | theorem | recorded-checked |
 | `where-a-move-is-formed` | [动作在哪里形成 / Where a move is formed](records/where-a-move-is-formed.md) | theorem | recorded-checked |
 | `where-novelty-gain-comes-from` | [新的增益从哪里来 / Where novelty's gain comes from](records/where-novelty-gain-comes-from.md) | theorem | recorded-checked |
 | `whole-first-and-bounded-centers` | [整体优先，与以依存为界的中心 / The whole first, and centers bounded by dependence](records/whole-first-and-bounded-centers.md) | theorem | recorded-checked |

@@ -223,7 +223,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7b0f09697405cd07fb538d6c8e796f7784a746e8e776f14d50c134ce78586847"
+      "sha256": "298a63579cbff61bb54d03f1a471b28078435c54e1a8ef8fe2b5a52c4f22e469"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -233,7 +233,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "c794a803a6f62483d34fa2f93b00f9478c9ffafd31ad6c8d523e96165232a959"
+      "sha256": "072685172aa29c3d1f83987a73ca275070843847678142606b878c3ff04f9b47"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
@@ -501,6 +501,10 @@
     {
       "zh": "2026年10月16日，P125（Becoming.Observation，研究第159节）落地，并带 Ren 对 P124 读法的同意：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入观察一段，P124 一段写明 Ren 同意两项读法，§8 与 §9、术语随之；回执与合计改据新运行（7022 项定理、9660 项声明审计，核心闭包 124 个模块，包 129 个））；DECIDABILITY-INVENTORY.md（在回执 20261015T221156.459698Z 上重新生成，各类不变，新模块不加行）。",
       "en": "16 October 2026, landing P125 (Becoming.Observation, study section 159) with Ren's agreement with P124's readings: rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on observation and the P124 paragraph records Ren's agreement with both readings, with §8, §9 and the glossary; receipt and totals moved to the new run (7022 theorems, 9660 declaration audits, core closure 124 modules, package 129)); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T221156.459698Z, every class unchanged, no row for the new module)."
+    },
+    {
+      "zh": "2026年10月16日，P126（Becoming.Tail，研究第160节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入整体而无部分之律一段，§8 的反馈与所及（反例存在的确切强度已给出），§9 加一行与术语；回执与合计改据新运行（7061 项定理、9713 项声明审计，核心闭包 125 个模块，包 130 个））；DECIDABILITY-INVENTORY.md（在回执 20261015T224751.654308Z 上重新生成：陈述依赖 417 → 435、只在证明中 239 → 241、证明可判定 138 → 145、取可判定族的定义 109 → 116，新增各行都来自 Tail（规则是其陈述自己的条件））。",
+      "en": "16 October 2026, landing P126 (Becoming.Tail, study section 160): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on a law of the whole and no part, §8 under feedback and reach (the exact strength of a counterexample's existence is given), §9 gains a row and glossary entries; receipt and totals moved to the new run (7061 theorems, 9713 declaration audits, core closure 125 modules, package 130)); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T224751.654308Z: statements depending 417 → 435, proof-only 239 → 241, proving decidedness 138 → 145, definitions taking a family 109 → 116, every new row from Tail (the rule is the statement's own condition))."
     }
   ]
 }
