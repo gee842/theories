@@ -154,7 +154,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Return` (L3): renewal graded by the time to return; readings over cycles.
 * `Becoming.Horizon` (L3): no finite stretch of a run decides whether its drawing
   renews or consumes in the whole-run sense, with or without feedback; a reading of
-  amounts is decided step by step.
+  amounts is decided step by step. What a finite history refutes, with no premise: a
+  refutable reading holds, up to double negation, at every run adhering to it; a reading
+  with an adhering run outside it is neither refutable nor verifiable; a reading made of
+  tests holds where it adheres, and asked of every process its refutability is exactly
+  Markov's principle.
 * `Becoming.Joint` (L3): difference-making, relative to a move that can still be taken
   once a part is withheld and read as intended when the move determines the step,
   belongs to the joint activity among formations; over a formation's events the run-level outcome is

@@ -22,3 +22,45 @@ Landing order, after the core run with these bytes:
 2. Run `update_records.py`: organizational-rule-inheritance takes the new Gated.lean hash and its binding moves to the retained core receipt, with a history entry.
 3. Run `make_record.py SECTION`: it writes the record every-origin-passes-the-gate, binding Gated.lean and the instance module to their retained receipts.
 4. Regenerate DECIDABILITY-INVENTORY.md, insert the study section, run the Lean catalogue, then `make research-render` and `make research-check`. The nine §9-bound records drift as at every landing that changes a §9 row.
+
+## Item 3: what a finite history refutes (Becoming.Horizon)
+
+The I4a table read [PrefixSafety](../../../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/PrefixSafety.lean) and [IdealWarrant](../../../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealWarrant.lean) as join candidates. Becoming.Horizon stated what no finite prefix decides, but not what a finite history refutes.
+
+What the branch holds:
+- `Becoming/Horizon.lean` gains a docstring paragraph and a section "What a finite history refutes", taking it from 12 to 34 theorems (50 declarations). `scratch_build.py` reports every axiom report empty and no warnings. Its contents:
+  - agreement laws `Run.AgreeUpTo.refl/symm/trans/mono`; `Refutable`, `Verifiable`, `Adheres` and the adherence laws;
+  - `Refutable.not_not`, `Refutable.adheres_least`, `Refutable.adheres_iff`: a refutable reading holds, up to double negation, where a run adheres;
+  - `not_refutable_of_adheres`, `not_verifiable_of_adheres`, and the process of all sequences (`Sequences`), where recurrence and eventual occurrence are not refutable and never occurring is not verifiable;
+  - readings made of tests (`Passes`, `ByPrefixes`, `adheres_passes`), refutable given `Markov` (`refutable_passes`), and the boundary `refutable_passes_iff_markov`.
+- `mathematical-abstraction/completion/formal/PrefixSafetyCorrespondence.lean`, the periphery instance (9 theorems), beside PrefixSafety. Five correspondences have empty reports; four use classical reasoning, with standard axioms only.
+- Its checker `check_prefix_safety_correspondence.py`, from `make_prefix_checker.py` (spec `prefix.json`). The script runs `../integration-i3e/make_checker.py` and then makes the three changes a module outside the Lean root needs:
+  - the Lean root;
+  - index entries for PrefixSafety and the instance;
+  - PrefixSafety matching the completion package receipt, which `check.py` writes only after every compile and audit passed.
+  - A dry run under Lean 4.30.0-rc2 passed, with its receipt in a scratch folder: 9 theorems, 6 Lean steps run and 6 reused. Only Becoming.Horizon lacked a receipt.
+- `apply_docs_horizon.py`, already applied:
+  - the chapter's §9 Horizon row, now bilingual, 34 theorems;
+  - a §9 periphery row for PrefixSafetyCorrespondence, and its name in the chapter's lists of peripheral instance modules, zh and en;
+  - the module bullet in `Becoming.lean`;
+  - a paragraph in the completion package README.
+- `apply_inventory_horizon.py`, already applied:
+  - `refutable_passes_iff_markov` joins BOUNDARY;
+  - the page's boundary sentence gains the gate origin (item 1) and refutation by prefix tests.
+  - A scratch run of the inventory on this core, with only the receipt check skipped, passes with nothing unclassified; proof-only stays 224.
+- The I4a table: PrefixSafety becomes joined, and PrefixSafetyCorrespondence gets a row, giving 600 rows (joined 61, join candidate 62). The reach theme loses PrefixSafety.
+  - IdealWarrant stays a join candidate. Its run-level case is now on the spine (`Refutable.adheres_iff`, `refutable_passes`, through PrefixSafety).
+  - Its poset form needs the ideal vocabulary of CompletionRole and HistoryIdeals, which Ren left outside for now. Whether IdealWarrant counts with that line is Ren's call.
+- `s_i4b3_zh.md` and `s_i4b3_en.md`, the study section (heading number left to the integrator).
+
+Landing order, after the core run with these bytes:
+1. Run `check_prefix_safety_correspondence.py` (from the repository root, or anywhere: it resolves its own paths). It must pass against the new core receipt.
+2. Run `update_records_horizon.py`, which rebinds:
+   - becoming-finite-horizon: new hash, Horizon binding to the retained core receipt, Testing binding unchanged, link to the new record;
+   - no-finite-part-bears-taking: new hash.
+3. Run `make_record_horizon.py SECTION`. It writes the record what-a-finite-history-refutes (F01) and binds three sources:
+   - Horizon.lean to the retained core receipt;
+   - the instance to its retained receipt;
+   - PrefixSafety.lean to the package receipt.
+   It asserts the hard length caps; its English statement is 281 characters.
+4. Regenerate DECIDABILITY-INVENTORY.md, insert the study section, run the Lean catalogue, then `make research-render` and `make research-check`. The nine §9-bound records drift as at every landing that changes a §9 row.
