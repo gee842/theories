@@ -1,0 +1,215 @@
+#!/usr/bin/env python3
+"""P123: write docs.json, the texts apply_docs.py inserts (kept here so the JSON stays valid)."""
+import json
+import textwrap
+from pathlib import Path
+
+LEAN = '../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean'
+RECORD = '../results/records/how-often-couplings-act.md'
+CUT = '../results/records/what-a-cut-loses.md'
+SOURCE = '../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md'
+SOURCE16 = '../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md'
+QUOTE = 'how how accurate can we do that uh what is the limitation do we have losses'
+
+bullet = """* `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
+  schedule each statement names. Counting only the steps at which anything couples, the most
+  difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return
+  around a loop at least doubles what reached it, so frequent returns run away and rare coupling
+  steps stay polynomial whatever the strengths; a self-loop is polynomial exactly where two to its
+  count is, and a loop coupling at the steps one less than a power of two recurs yet stays
+  polynomial. A coupling that stops does not recur, and settling is local; that every schedule
+  settles is exactly a dichotomy on decided two-place families, which gives the limited principle
+  of omniscience, even for schedules coupling at most once."""
+assert all(len(line) <= 100 for line in bullet.splitlines())
+
+SCOPE = (
+    'Frequency: counting the steps at which anything couples, the carried amount is at most D times '
+    '(1 + M) to their number, attained by a self-loop coupling at the steps of any schedule; every return '
+    'around a loop at least doubles what reached it, so returns with 2^i outgrowing every polynomial in '
+    'their steps run away whatever the strengths, and where 2 to the count is polynomial so is the carried '
+    'amount; a self-loop is polynomial exactly where 2 to its count is; the sparse self-loop at 0, 1, 3, 7, '
+    '... recurs, leaves every finite order inexact and stays polynomial; a coupling that stops does not '
+    'recur, and where each recurs or stops the schedule settles; every schedule settles exactly where every '
+    'decided two-place family has every row true somewhere or some row false throughout, which gives LPO, '
+    'and the self-loops coupling once at the first true step of a decided sequence all settle only under '
+    'LPO; the loops of Loops and Closing are instances.')
+scope = ''.join(f'    "{line} "\n' for line in textwrap.wrap(SCOPE, width=92))
+assert all(len(line) <= 100 for line in scope.splitlines())
+
+readme_row = (
+    '| L4 | [`Becoming.Frequency`](Becoming/Frequency.lean) | 耦合多常作用：安定、失控与其速度（除了各定理所写的强度与时程不加前提）：'
+    '时程标出一些步（`Frequency.count`）；只在标出之步计，所携带的量至多是 D·(1 + M)^a（`carried_le_count`），有耦合作用的步就是这样的'
+    '时程（`Frequency.coupling`、`carried_le_coupling`），2^a 有多项式界时它亦然，不论强度（`carried_le_of_rare`）；时程上的自环恰在标出'
+    '之步耦合（`Frequency.SelfLoop.couplesAt_iff`），恰好携带这个界（`Frequency.SelfLoop.carried_eq`），有多项式界恰在 2^a 有处'
+    '（`Frequency.SelfLoop.polynomial_iff`）；耦合跨其步至少增加所读者（`carried_step_ge_at`），按时间次序的链（`ChainInTime`、'
+    '`carried_along_in_time`），返回（`Returns`）至少加倍（`carried_doubles_return`、`carried_returns`），返回频繁时失控'
+    '（`runaway_of_returns`）；稀疏的时程（`Frequency.Sparse`）上的自环复现而有多项式界（`Frequency.Sparse.inexact`、'
+    '`Frequency.Sparse.polynomial`）；停止的耦合（`StopsBy`）不复现，每个复现或停止时安定（`settled_of_each`）；二分'
+    '（`RecursOrStops`）给出 `LPO`（`RecursOrStops.lpo`），恰是每个时程都安定（`settled_of_recursOrStops`、'
+    '`settled_iff_recursOrStops`、`settled_every_iff`），只耦合一次的时程都安定就给出 `LPO`（`Frequency.First`、`lpo_of_settled`），'
+    '复现恰在每行都在某处为真的时程（`Frequency.Rows.recurs_iff`）；`Becoming.Loops` 与 `Becoming.Closing` 的自环作为实例'
+    '（`Frequency.SelfLoop.always_carried`、`Frequency.SelfLoop.onset_amount`）；对一切具有这些强度的律：`gap_le_count`；读法是 AI '
+    '的，待 Ren / how often couplings act: settling, runaway and its rate (no premise beyond the strengths and the '
+    'schedule each theorem names): a schedule marks steps (`Frequency.count`); counting only the marked steps, the '
+    'carried amount is at most D·(1 + M)^a (`carried_le_count`), the steps at which anything couples are such a '
+    'schedule (`Frequency.coupling`, `carried_le_coupling`), and where 2^a is bounded by a polynomial so is the carried '
+    'amount, whatever the strengths (`carried_le_of_rare`); the self-loop on a schedule couples exactly at the marked '
+    'steps (`Frequency.SelfLoop.couplesAt_iff`), carries exactly the bound (`Frequency.SelfLoop.carried_eq`) and is '
+    'polynomial exactly where 2^a is (`Frequency.SelfLoop.polynomial_iff`); a coupling adds across its step at least '
+    'what it reads (`carried_step_ge_at`), chains in time order (`ChainInTime`, `carried_along_in_time`) and returns '
+    '(`Returns`) at least double (`carried_doubles_return`, `carried_returns`), and frequent returns run away '
+    '(`runaway_of_returns`); the self-loop on the sparse schedule (`Frequency.Sparse`) recurs yet stays polynomial '
+    '(`Frequency.Sparse.inexact`, `Frequency.Sparse.polynomial`); a coupling that stops (`StopsBy`) does not recur, and '
+    'where each recurs or stops the schedule settles (`settled_of_each`); the dichotomy (`RecursOrStops`) gives `LPO` '
+    '(`RecursOrStops.lpo`) and is exactly every schedule settling (`settled_of_recursOrStops`, '
+    '`settled_iff_recursOrStops`, `settled_every_iff`), the schedules coupling once all settling gives `LPO` '
+    '(`Frequency.First`, `lpo_of_settled`), and a schedule recurring exactly where every row is true somewhere '
+    '(`Frequency.Rows.recurs_iff`); the self-loops of `Becoming.Loops` and `Becoming.Closing` as instances '
+    '(`Frequency.SelfLoop.always_carried`, `Frequency.SelfLoop.onset_amount`); for every law with the strengths: '
+    '`gap_le_count`; the readings are the AI\'s, pending Ren |')
+
+chapter_row = (
+    f'| L4 | [Becoming.Frequency]({LEAN}) | 耦合多常作用：安定、失控与其速度（除了各定理所写的强度与时程不加前提）：只在有耦合作用之步计，'
+    '能到达的最大差别至多是 D·(1 + M)^a，由自环达到；每次绕回路的返回至少使之加倍，返回频繁时失控，耦合之步稀少时不论强度都是多项式，'
+    '自环有多项式界恰在 2^a 有处；在比 2 的幂少一之步耦合的自环复现而有多项式界；停止的耦合不复现，安定是局部的；每个时程都安定恰是一个'
+    '判定二元族的二分，给出有限全知原则，只耦合一次的时程亦然。/ How often couplings act: settling, runaway and its rate, with no '
+    'premise beyond the strengths and the schedule each theorem names: counting only the steps at which anything '
+    'couples, the most difference that can arrive is at most D·(1 + M)^a, attained by a self-loop; every return around '
+    'a loop at least doubles it, frequent returns run away and rare coupling steps stay polynomial whatever the '
+    'strengths, a self-loop being polynomial exactly where 2^a is; the self-loop coupling at the steps one less than a '
+    'power of two recurs yet stays polynomial; a coupling that stops does not recur, and settling is local; that every '
+    'schedule settles is exactly a dichotomy on decided two-place families, which gives the limited principle of '
+    'omniscience, even for schedules coupling at most once. | 83 |')
+
+paragraph_zh = (
+    '**耦合多常作用：安定、失控与其速度（第一部分）。** `Becoming.Remainder` 留下三项：每个耦合时程是否终将安定，复现耦合的回路是否都使'
+    f'能到达的最大差别失控，失控多快（[Becoming.Frequency]({LEAN})）。时程（`on`）标出一些步，`Frequency.count` 数第 t 步之前标出的步。'
+    '部分在起始之后不给差、起始之差至多 D、每步进入每个条件的强度至多 M、在未标出的步为零时，第 t 步所携带的量至多是 D·(1 + M)^a，a 是'
+    '之前标出的步数（`carried_le_count`）：`Becoming.Loops` 的几何之界只在标出之步相乘；条件全部列出时，有耦合作用的步就是这样的时程'
+    '（`Frequency.coupling`、`carried_le_coupling`）。一个条件以强度 M 在任一时程的步上把水平送回自身，恰在这些步耦合'
+    '（`Frequency.SelfLoop.couplesAt_iff`），恰好携带 D·(1 + M)^a（`Frequency.SelfLoop.carried_eq`）：从 D、M 与耦合作用之步推不出'
+    '更小的界；经 `most_difference_arrives`，这个速度约束每个有这些强度的律之差（`gap_le_count`）。一个耦合读较早的水平时，跨其步至少'
+    '增加到那里所到达的（`carried_step_ge_at`）；按时间次序的链把到达其起点者带到终点（`ChainInTime`、`carried_along_in_time`），返回'
+    '（`Returns`）是从一个条件回到它的这种链。每次返回至少使到达者加倍：它一次保持着、一次绕回路到达，因为正的强度至少是一'
+    '（`carried_doubles_return`），R 次返回至少乘以 2^R（`carried_returns`）；所以有所到达、返回在第 T i 步而 2^i 超过 T i 的每个多项式时，'
+    '能到达的最大差别快于每个多项式，不论强度（`runaway_of_returns`）。反之 2^a 有多项式界时所携带的量也有，不论强度'
+    '（`carried_le_of_rare`）；自环处两者相遇：它有多项式界恰在 2^a 有处（`Frequency.SelfLoop.polynomial_iff`）。稀疏的时程标出比 2 的'
+    '幂少一的步，0、1、3、7、……（`Frequency.Sparse`）：在这些步耦合的自环复现，每个有限阶都有所漏（`Frequency.Sparse.inexact`），所携带的'
+    '量却至多是 D·2^M·(t + 1)^M（`Frequency.Sparse.polynomial`）：复现耦合的回路不一定失控。耦合到第 N 步停止（`StopsBy`）时不复现；'
+    '条件全部列出、每个耦合复现或停止时，时程到某步已安定（`settled_of_each`）：安定是局部的。第 m 步一个耦合是否读第 n 步起的水平是'
+    '判定的（`Frequency.readsLate`），所以给定二分“对每个判定的二元族，每行在某处为真，或某行处处为假”（`RecursOrStops`），每个时程都'
+    '安定（`settled_of_recursOrStops`）；反之，一个条件回到自身的每个时程都安定恰是这一二分（`settled_iff_recursOrStops`），条件全部'
+    '列出的每个世界亦然（`settled_every_iff`）。在判定的序列第一次为真之步耦合的自环至多耦合一次（`Frequency.First.once`），这些时程都'
+    '安定就给出有限全知原则（`lpo_of_settled`）；读第 s 步水平、在到第 s 行的各行都已在某处为真之后耦合的自环，复现恰在每行都在某处为真'
+    '处（`Frequency.Rows.recurs_iff`）。`Becoming.Loops` 的自环与 `Becoming.Closing` 在 T 形成的回路是实例'
+    '（`Frequency.SelfLoop.always_carried`、`Frequency.SelfLoop.onset_amount`）。读法（AI 的，待 Ren）：Ren 2026-10-12 问回路'
+    f'“{QUOTE}”（[来源]({SOURCE})）；失控多快由耦合多常作用定：返回频繁则失控，耦合之步稀少则不论强度都是多项式，强度只改变大小；'
+    '对自环，耦合多常作用恰好决定。Ren 2026-10-16 称 AI 对“只有回路使差别失控”的读法是对的，那一读法把只在某些步成立的耦合留为开放'
+    f'（[来源]({SOURCE16})）；这一情形两个方向都已关闭：只有继续着的耦合的回路能使之失控，这样的回路不一定失控。每个时程都安定是一个推理'
+    '原则，不是理论对展开断言或否认的事实；定理在需要处把安定的时程作为前提写入。自环之外按返回的下界与按耦合之步的上界何者达到、给定强度的'
+    '谱半径、实数的量（正的强度可小于一，收缩的强度可使频繁的返回不失控）、在一步读无穷多条件之律与连续时间不推出。见 '
+    f'[how-often-couplings-act]({RECORD})。')
+
+paragraph_en = (
+    '**How often couplings act: settling, runaway and its rate (Part I).** `Becoming.Remainder` leaves three '
+    'questions: whether every schedule of couplings settles, whether every loop of recurring couplings makes the most '
+    f'difference that can arrive run away, and how fast a runaway is ([Becoming.Frequency]({LEAN})). A schedule (`on`) '
+    'marks steps, and `Frequency.count` counts those before step t. With the part giving no gap after the start, '
+    'starting gaps at most D, and the strengths into each condition at most M at each step and zero at unmarked steps, '
+    'the carried amount at step t is at most D·(1 + M)^a, a the marked steps before it (`carried_le_count`): the '
+    'geometric bound of `Becoming.Loops` multiplies only at marked steps; with every condition listed, the steps at '
+    'which anything couples are such a schedule (`Frequency.coupling`, `carried_le_coupling`). One condition returning '
+    'its level to itself with strength M at the steps of any schedule couples exactly there '
+    '(`Frequency.SelfLoop.couplesAt_iff`) and carries exactly D·(1 + M)^a (`Frequency.SelfLoop.carried_eq`): no '
+    'smaller bound follows from D, M and the steps at which couplings act; by `most_difference_arrives` the rate '
+    'bounds the gaps of every law with the strengths (`gap_le_count`). A coupling reading an earlier level adds, '
+    'across its step, at least what had reached that level (`carried_step_ge_at`); a chain in time order carries what '
+    'reached its start to its end (`ChainInTime`, `carried_along_in_time`), and a return (`Returns`) is such a chain '
+    'from a condition back to it. Every return at least doubles what had reached the condition, which arrives once '
+    'held and once around the loop, a positive strength being at least one (`carried_doubles_return`), and R returns '
+    'multiply it by 2^R (`carried_returns`); so where something has arrived and returns come at steps T i with 2^i '
+    'outgrowing every polynomial in T i, the most difference that can arrive outgrows every polynomial, whatever the '
+    'strengths (`runaway_of_returns`). Conversely, where 2^a is bounded by a polynomial so is the carried amount, '
+    'whatever the strengths (`carried_le_of_rare`); for a self-loop the two meet: it is polynomial exactly where 2^a '
+    'is (`Frequency.SelfLoop.polynomial_iff`). The sparse schedule marks the steps one less than a power of two, 0, 1, '
+    '3, 7, … (`Frequency.Sparse`): the self-loop coupling there recurs, so every finite order misses something '
+    '(`Frequency.Sparse.inexact`), yet it carries at most D·2^M·(t + 1)^M (`Frequency.Sparse.polynomial`): a loop of '
+    'recurring couplings need not run away. A coupling that stops by step N (`StopsBy`) does not recur; with every '
+    'condition listed, where each coupling recurs or stops, the schedule has settled by some step '
+    '(`settled_of_each`): settling is local. Whether a coupling at step m reads a level from step n on is decided '
+    '(`Frequency.readsLate`), so given the dichotomy that every decided two-place family has every row true somewhere '
+    'or some row false throughout (`RecursOrStops`), every schedule settles (`settled_of_recursOrStops`); conversely, '
+    'every schedule of one condition returning to itself settles exactly where the dichotomy holds '
+    '(`settled_iff_recursOrStops`), and so for every world with its conditions listed (`settled_every_iff`). The '
+    'self-loop coupling at the first step a decided sequence is true couples at most once (`Frequency.First.once`), '
+    'and these schedules all settling gives the limited principle of omniscience (`lpo_of_settled`); the self-loop '
+    'reading level s once every row up to s has been true somewhere recurs exactly where every row is '
+    '(`Frequency.Rows.recurs_iff`). The self-loop of `Becoming.Loops` and the loop of `Becoming.Closing` forming at T '
+    'are instances (`Frequency.SelfLoop.always_carried`, `Frequency.SelfLoop.onset_amount`). On the AI\'s reading, '
+    f'pending Ren: Ren asked on 12 October “{QUOTE}” ([source]({SOURCE})); how fast a difference runs away is set by '
+    'how often couplings act: frequent returns make it run away and rare coupling steps keep it polynomial whatever '
+    'the strengths, strength changing only how large; for a self-loop, how often it couples decides exactly. On 16 '
+    'October Ren called the AI\'s reading of “only a loop makes a difference run away” right, a reading that left '
+    f'couplings at only some steps open ([source]({SOURCE16})); that case is now closed both ways: only a loop of the '
+    'couplings that go on can make it run away, and such a loop need not. That every schedule settles is a principle '
+    'of reasoning, not a fact the theory asserts or denies of the unfolding; the theorems write a settled schedule in '
+    'as a premise where they need one. Not derived: which of the bound by returns and the bound by coupling steps is '
+    'met beyond the self-loop, the spectral radius of given strengths, real amounts (a positive strength may be below '
+    'one, and strengths shrinking fast enough could keep frequent returns from running away), laws reading infinitely '
+    f'many conditions at a step, and continuous time. See [how-often-couplings-act]({RECORD}).')
+
+cut_zh = ('（2026-10-16：`Becoming.Frequency` 回答其中三项，见下文“耦合多常作用”：不必经由每个这样的回路；每个时程都安定恰是一个推理'
+          '原则；失控多快按耦合作用的步数计，给定强度的谱半径仍不推出）')
+cut_en = (' (16 October 2026: `Becoming.Frequency`, under “How often couplings act” below, answers three of these: not '
+          'through every such loop; that every schedule settles is exactly a principle of reasoning; the rate counts the '
+          'steps at which couplings act, the spectral radius of given strengths still not derived)')
+
+whole_zh = (
+    '- **耦合多常作用。** 只在有耦合作用之步计，能到达的最大差别至多是 D·(1 + M)^a，由自环达到（`carried_le_coupling`、'
+    '`Frequency.SelfLoop.carried_eq`）；每次返回至少使之加倍（`carried_doubles_return`），返回频繁时失控（`runaway_of_returns`），'
+    '耦合之步稀少时不论强度都是多项式（`carried_le_of_rare`）；复现耦合的回路不一定失控（`Frequency.Sparse.polynomial`）；每个时程都'
+    '安定恰是一个推理原则，给出有限全知原则（`settled_iff_recursOrStops`、`lpo_of_settled`）。')
+whole_en = (
+    '- **How often couplings act.** Counting only the steps at which anything couples, the most difference that can '
+    'arrive is at most D·(1 + M)^a, attained by a self-loop (`carried_le_coupling`, `Frequency.SelfLoop.carried_eq`); '
+    'every return at least doubles it (`carried_doubles_return`), frequent returns make it run away '
+    '(`runaway_of_returns`), and rare coupling steps keep it polynomial whatever the strengths (`carried_le_of_rare`); '
+    'a loop of recurring couplings need not run away (`Frequency.Sparse.polynomial`); that every schedule settles is '
+    'exactly a principle of reasoning, which gives the limited principle of omniscience (`settled_iff_recursOrStops`, '
+    '`lpo_of_settled`).')
+
+status_zh = (
+    '；耦合多常作用：能到达的最大差别至多是起始之差乘以一加强度的有耦合作用之步数次幂，由自环达到，返回频繁则失控、耦合之步稀少则为多项式，'
+    f'不论强度，复现耦合的回路不一定失控，每个时程都安定恰是一个推理原则（[how-often-couplings-act]({RECORD})）')
+open_zh = '开放：律本身；反例之存在的确切强度；给定强度的失控速度（谱半径）'
+
+further_zh = (
+    '耦合多常作用已给出（`Becoming.Frequency`：能到达的最大差别至多是起始之差乘以一加强度的有耦合作用之步数次幂，由自环达到；每次返回'
+    '至少使之加倍，返回频繁则失控，耦合之步稀少则不论强度都是多项式；复现耦合的回路不一定失控；每个时程都安定恰是一个推理原则，给出有限'
+    '全知原则）；')
+further_tail_zh = '；给定强度的失控多快（谱半径，需要实数的量）。'
+further_en = (
+    'how often couplings act is given (`Becoming.Frequency`: the most difference that can arrive is at most the '
+    'starting gap times one plus the strength to the number of steps at which couplings act, attained by a self-loop; '
+    'every return at least doubles it, so frequent returns make it run away and rare coupling steps keep it polynomial '
+    'whatever the strengths; a loop of recurring couplings need not run away; that every schedule settles is exactly a '
+    'principle of reasoning, which gives the limited principle of omniscience); ')
+further_tail_en = '; how fast a runaway of given strengths is (a spectral radius, which needs real amounts).'
+
+glossary = [
+    '| 返回（绕回路） | return (around a loop) | 从一个条件回到它的按时间次序的耦合链：第一个耦合读起始之步起的水平，其后每个读前一个作用'
+    '之后的水平；每次返回至少使到达者加倍 | `ChainInTime`、`Returns`、`carried_doubles_return`、`carried_returns`、'
+    '`runaway_of_returns` |',
+    '| 耦合的频度 | how often couplings act | 有耦合作用的步之计数 a：能到达的最大差别至多是 D·(1 + M)^a，由自环达到；2^a 有多项式界'
+    '时它亦然，不论强度 | `Frequency.count`、`Frequency.coupling`、`carried_le_count`、`carried_le_of_rare`、'
+    '`Frequency.SelfLoop.polynomial_iff` |',
+    '| 复现或停止 | recurs or stops | 每个判定的二元族每行在某处为真、或某行处处为假的二分；恰是每个时程都安定，给出有限全知原则 | '
+    '`RecursOrStops`、`StopsBy`、`settled_iff_recursOrStops`、`settled_every_iff`、`lpo_of_settled` |',
+]
+
+docs = {'bullet': bullet, 'scope': scope, 'readme_row': readme_row, 'chapter_row': chapter_row,
+        'paragraph_zh': paragraph_zh, 'paragraph_en': paragraph_en, 'cut_zh': cut_zh, 'cut_en': cut_en,
+        'whole_zh': whole_zh, 'whole_en': whole_en, 'status_zh': status_zh, 'open_zh': open_zh,
+        'further_zh': further_zh, 'further_tail_zh': further_tail_zh, 'further_en': further_en,
+        'further_tail_en': further_tail_en, 'glossary': glossary}
+(Path(__file__).resolve().parent / 'docs.json').write_text(json.dumps(docs, ensure_ascii=False, indent=2) + '\n')

@@ -245,8 +245,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T195010.513125Z): the 137 declarations of Becoming.Loops, 113 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 152; not independently reviewed."
   },
   "next_delta": {
-    "zh": "比强度之积更细的失控速度（谱半径）；实数的强度与量、连续时间与无穷多条件；一个律自身失控所需的回应下界；独立审查。",
-    "en": "How fast a runaway is beyond the product of the strengths (a spectral radius); real strengths and amounts, continuous time and infinitely many conditions; the lower bounds on responses a particular law's own runaway needs; an independent review."
+    "zh": "给定强度的、比强度之积与耦合作用之步数更细的失控速度（谱半径）；实数的强度与量、连续时间与无穷多条件；一个律自身失控所需的回应下界；独立审查。",
+    "en": "How fast a runaway of given strengths is beyond the product of the strengths and the count of steps at which couplings act (a spectral radius); real strengths and amounts, continuous time and infinitely many conditions; the lower bounds on responses a particular law's own runaway needs; an independent review."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 把理论比作量子动力学与“Fermi's diagrams”，说：“there are so many patterns and loops but we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”。本结果回答 how-much-difference-arrives 的 next_delta 首项（回路的一般理论），以及 comparison-where-the-rest-responds 与 runaway-distance-unregistered 中“一般地定义回路并陈述失控”（在其余遵从具有给定耦合强度之律处）。读法（Ren 2026-10-16 决定）：Ren 指的是费曼图，相合是结构上的，不是物理上的；Ren 所问的积分，对不确定的律，是历史之和及其四种损失（P82，losses-of-the-sum-over-histories），这里的各阶是同一结构的另一种，按回应次数组织，如费曼图按顶点数，两者尚未连起来；只有回路使差别失控，失控是快于每个多项式，说的是能到达的最大差别：只经由回路，且经由每个每步耦合的回路，只在某些步成立的耦合开放；一个世界有哪些回路是其情境的一部分（Ren 2026-10-16：“the situation makes it true”），回路在展开之中形成与消散，定理按每步的样子取用它们，暂取此形式，待有回路形成之定理时可修订。（2026-10-16 之后：两者由 orders-as-a-sum-over-histories 接合，各阶是沿时间往回的路线之和；回路形成的定理是 how-loops-form，回路由闭合而形成；Ren 2026-10-16 同意第三项读法修订为：一个世界有哪些回路是其情境的一部分：回路在展开中由闭合而形成，在某个交换开始回应它所给条件下游的一个水平之步形成；在其耦合停止处消解（时程安定之后，有限阶精确恰在其后的耦合没有回路在上游处）；强度从进程读出时，哪些回路形成、何时形成从展开读出；定理按每步所立者取之，强度或读出强度的方式是给出的。）数学是标准的：线性比较系统的 Picard 迭代，耦合图无环时幂零。",
@@ -369,6 +369,13 @@
       "detail": {
         "zh": "在一个律中：回路在所读之内，在读增长之处形成；只在储量低于阈值时才读它的律，断裂之前没有经过储量的回路，回路在断裂处形成。",
         "en": "Within one law: loops lie within what is read and form where reading grows; for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break."
+      }
+    },
+    {
+      "id": "how-often-couplings-act",
+      "detail": {
+        "zh": "几何之界只在耦合作用之步计数仍成立且由自环达到；Ren 认为对的读法“只有回路使差别失控”中只在某些步成立的耦合，两个方向都已关闭：只有继续着的耦合的回路能使之失控，这样的回路不一定失控，返回频繁时失控。",
+        "en": "The geometric bound holds counting only the steps at which couplings act and is attained by a self-loop; in the reading Ren called right, “only a loop makes a difference run away”, couplings at only some steps are closed both ways: only a loop of the couplings that go on can make it run away, such a loop need not, and it does where its returns are frequent."
       }
     }
   ],
@@ -758,6 +765,10 @@
     {
       "zh": "2026-10-16 P124（回路在律所读之内，与断裂，研究 §157）：下一步中“在一个律中把回路的形成与 Becoming.Runaway 的策略连起来”由 loops-within-what-a-law-reads 回答，去掉；related 加 loops-within-what-a-law-reads。陈述与证明不变。",
       "en": "16 October 2026, P124 (loops within what a law reads, and the break, study section 157): in the next step, “joining the formation of loops and Becoming.Runaway's policies within one law” is answered by loops-within-what-a-law-reads and dropped; related adds loops-within-what-a-law-reads. Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026-10-16 P123（耦合多常作用，研究 §158）：下一步首项“比强度之积更细的失控速度”部分回答：能到达的最大差别至多是起始之差乘以一加强度的有耦合作用之步数次幂，由自环达到；每次返回至少使之加倍；所以此项改为给定强度的、比这更细的速度（谱半径）。Ren 2026-10-16 所定读法中开放的只在某些步成立的耦合，由 how-often-couplings-act 两个方向回答；related 加 how-often-couplings-act。陈述与证明不变；does_not_show 仍对本记录的定理成立；correspondence 保持 Ren 所决定的读法。",
+      "en": "16 October 2026, P123 (how often couplings act, study section 158): the first item of the next step, how fast a runaway is beyond the product of the strengths, is answered in part: the most difference that can arrive is at most the starting gap times one plus the strength to the number of steps at which couplings act, attained by a self-loop, and every return at least doubles it; so the item becomes how fast a runaway of given strengths is beyond that (a spectral radius). The case left open in the readings Ren decided on 16 October, couplings at only some steps, is answered both ways by how-often-couplings-act; related adds how-often-couplings-act. Statement and proofs unchanged; does_not_show still holds of this record's theorems; correspondence keeps the readings Ren decided."
     }
   ],
   "text_versions": []

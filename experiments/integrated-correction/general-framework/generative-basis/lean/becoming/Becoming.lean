@@ -114,6 +114,7 @@ import Becoming.Remainder
 import Becoming.Routes
 import Becoming.Closing
 import Becoming.Thresholds
+import Becoming.Frequency
 import Becoming.Gain
 import Becoming.Gluing
 
@@ -1141,6 +1142,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   only below a threshold, as one registering it without observing it does, carries a raise of the
   stock nowhere up to the break; before the break it is its standing law, with no loop through the
   stock, so the loop through the stock forms at the break, unforeseen.
+* `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
+  schedule each statement names. Counting only the steps at which anything couples, the most
+  difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return
+  around a loop at least doubles what reached it, so frequent returns run away and rare coupling
+  steps stay polynomial whatever the strengths; a self-loop is polynomial exactly where two to its
+  count is, and a loop coupling at the steps one less than a power of two recurs yet stays
+  polynomial. A coupling that stops does not recur, and settling is local; that every schedule
+  settles is exactly a dichotomy on decided two-place families, which gives the limited principle
+  of omniscience, even for schedules coupling at most once.
 * `Becoming.Gain` (L3): where novelty's gain comes from, with no premise. With the rest of the
   whole counted, every rise is given: across a step at which a family's stock rises, some relatum
   gives it more than it takes, a formation taking part or the rest, found by checking each one taking
