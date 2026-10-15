@@ -21,7 +21,10 @@ tracked = sorted(os.path.normpath(t) for t in tracked if t)
 mods = collections.OrderedDict()
 for p in tracked:
     path = Path(p)
-    if p in in_run or path.stem in run_stems or COPY.search(p):
+    # A copy of a run module (same module name) is an older version of it and is left out; a different module that
+    # only shares a run module's last name component (a local `Admission` beside `Becoming.Admission`) is kept.
+    name = ('Becoming.' + path.stem) if path.parent.name == 'Becoming' else path.stem
+    if p in in_run or name in run_mods or COPY.search(p):
         continue
     text = path.read_text(encoding='utf-8', errors='replace')
     thms = DECL.findall(text)

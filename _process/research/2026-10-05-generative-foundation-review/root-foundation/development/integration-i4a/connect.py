@@ -16,7 +16,8 @@ for o in m:
     o['imports'], o['theorems'], o['names'], o['mathlib'] = own['imports'], own['theorems'], own['names'], own['mathlib']
 receipt=json.load(open(L+'becoming/becoming-verification.json'))
 layer={mm['module']:mm.get('layer') for mm in receipt['modules']}
-run_by_stem={mod.split('.')[-1]:mod for mod in receipt['source_paths']}
+# Imports are matched to run modules by their full module name.
+run_names=set(receipt['source_paths'])
 live={o['stem']:o for o in m if o['live']}
 def first_comment(path):
     t=open(path,encoding='utf-8',errors='replace').read()
@@ -33,8 +34,7 @@ def to_run(stem,stack=()):
     o=live.get(stem); res=set()
     if o is None: return res
     for i,full in zip(imps(o),o['imports']):
-        if full.startswith('Becoming'): res.add(full)
-        elif i in run_by_stem: res.add(run_by_stem[i])
+        if full in run_names or full.startswith('Becoming'): res.add(full)
         elif i in live and i not in stack: res|=to_run(i,stack+(stem,))
     memo[stem]=res; return res
 out=[]
@@ -43,7 +43,7 @@ for o in m:
     row={'stem':st,'path':(o['live'] or o['paths'])[0],'snap':not o['live'],'theorems':o['theorems'],
          'others':[p for p in o['live'][1:]],
          'imports_outside':sorted({i for i in imps(o) if i in live and i!=st}),
-         'direct_run':sorted({full if full.startswith('Becoming') else run_by_stem[i] for i,full in zip(imps(o),o['imports']) if full.startswith('Becoming') or i in run_by_stem}),
+         'direct_run':sorted({full for full in o['imports'] if full in run_names or full.startswith('Becoming')}),
          'reach_run':sorted(to_run(st)) if o['live'] else [],
          'records':sorted({r for r,role in o['records']}),
          'mathlib':o['mathlib'],'sorry':o['sorry'],'axiom':o['axiom'],
