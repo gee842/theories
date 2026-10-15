@@ -177,9 +177,11 @@ def changes(utc):
                                                               'erase_eq_remove', 'route_some_iff', 'preparation_empties_iff',
                                                               'preparation_leaves']])),
             'aliases': ['Becoming.Copying.empties_iff'],
-            'dependencies': [{'id': 'inherited-structural-copying', 'relation': 'formal-reuse', 'detail': {
-                'zh': '复用 Becoming.Copying 的逐记号复制（steps、use、countOf）：准备即每次接合汲取一单位的复制（PreparationCorrespondence.route_some_iff），池用尽的条件即 Copying.empties_iff。',
-                'en': 'Reuses Becoming.Copying’s token-by-token copying (steps, use, countOf): preparation is copying with a unit draw per attachment (PreparationCorrespondence.route_some_iff), and emptying the pool is Copying.empties_iff.'}}],
+            # recurrent-chain-assembly, on which inherited-structural-copying depends, depends on this record, so the
+            # shared copying law enters as a related link, not a dependency.
+            'related': [{'id': 'inherited-structural-copying', 'detail': {
+                'zh': '同用 Becoming.Copying 的逐记号复制（steps、use、countOf）：准备即每次接合汲取一单位的复制（PreparationCorrespondence.route_some_iff），池用尽的条件即 Copying.empties_iff。',
+                'en': 'Uses the same token-by-token copying of Becoming.Copying (steps, use, countOf): preparation is copying with a unit draw per attachment (PreparationCorrespondence.route_some_iff), and emptying the pool is Copying.empties_iff.'}}],
             'evidence': evidence(utc, 'preparation', *prep_ax),
             'zh': I3 + '在脊柱上陈述（Becoming.Copying 的池用尽之律，新增，不加前提）。自池逐记号复制一词，池最后为空恰当池中每个记号恰如词中所用、且空闲支持覆盖各次接合的汲取（empties_iff；countOf_removeAll：移去之后每个记号的计数即原计数减去词中的计数）。外围实例 PreparationCorrespondence：route 完成、池中余 rest、支持余 left，恰当以每次接合汲取一单位的复制如此（route_some_iff）；故准备完成且池用尽，恰当池是配方的排列且配方不长于支持，所余支持为支持减去配方长度（preparation_empties_iff、preparation_leaves），即本记录的论断。所给配方、局部生产律与存量保持原范围。',
             'en': I3_EN + 'stated on the spine (the new law of Becoming.Copying for emptying the pool, no premise). Copying a word token by token from a pool leaves the pool empty exactly where the pool holds each token exactly as often as the word uses it and the free support covers the draws of the attachments (empties_iff; countOf_removeAll: after removal each token’s count is its count less the word’s). Periphery instance PreparationCorrespondence: route completes with rest left in the pool and left support free exactly when copying with a unit draw per attachment does (route_some_iff); so preparation completes with an empty residual pool exactly when the pool is a permutation of the recipe and the recipe is no longer than the support, the support left being the support less the recipe’s length (preparation_empties_iff, preparation_leaves), which is this record’s claim. The supplied recipe, production law and stocks keep their scope.',
@@ -248,6 +250,9 @@ def apply_records(utc):
         for edge in change.get('dependencies', []):
             assert edge['id'] not in {e['id'] for e in d['dependencies']}, (rid, edge['id'])
             d['dependencies'].append(edge)
+        for link in change.get('related', []):
+            assert link['id'] not in {e['id'] for e in d.get('related', [])}, (rid, link['id'])
+            d.setdefault('related', []).append(link)
         if 'counterexample' in change:
             d['counterexamples'].append(change['counterexample'])
         if 'laws' in change:
