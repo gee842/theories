@@ -27,7 +27,7 @@ CHOICES = '_process/research/2026-10-05-generative-foundation-review/root-founda
 DELEGATION = 'sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md'
 REFOUNDING = 'sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md'
 FRAMING = 'sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md'
-REVIEWED = '2026-10-15T00:00:00+00:00'
+REVIEWED = '2026-10-16T00:00:00+00:00'
 
 
 def sha(path):
@@ -209,6 +209,16 @@ GLUE_LAWS = [
          'Square.not_beyond', 'Square.support_iff', 'Square.cells_even', 'Square.lines_contradict',
          'Square.noGlobal_of_contradiction', 'Square.mixture_le', 'Square.inLine', 'Square.inLine_support',
          'Square.indexed_met']),
+    law('环：主张 0, …, n 成环，相邻者以相等或相异相关（Cycle.system），每个主张沿其关系被计两次；所以相异关系为奇数个时这些关系'
+        '矛盾，混合平均至多满足 n + 1 个中的 n 个；为偶数个时沿环走出的赋值满足全部关系，二者互斥（Cycle.met_iff_even）。',
+        'A cycle: the claims 0, …, n in a cycle, neighbours related as equal or different (Cycle.system), each claim '
+        'counted twice along its relations; so with an odd number of differ relations they contradict and mixtures '
+        'meet at most n of the n + 1 on average; with an even number the assignment walked along the cycle meets them '
+        'all, and the two exclude each other (Cycle.met_iff_even).',
+        ['Cycle.down', 'Cycle.system', 'Cycle.edges', 'Cycle.polarity', 'Cycle.length_edges', 'Cycle.lt_of_mem_down',
+         'Cycle.shift', 'Cycle.cross', 'Cycle.returns', 'Cycle.eq_of_even', 'Cycle.beq_self', 'Cycle.beq_of_ne',
+         'Cycle.telescope', 'Cycle.counts_even', 'Cycle.contradicts', 'Cycle.mixture_le', 'Cycle.miss', 'Cycle.pick',
+         'Cycle.value_pair', 'Cycle.walk', 'Cycle.walk_meets', 'Cycle.met_iff_even']),
 ]
 
 
@@ -286,7 +296,7 @@ def gain_record():
             'Ren 2026-10-15：“What\'s the best choices to make? please make best of your judgement, and push the frontier of '
             'completeness”。returning-novelty-forgetting-on-levels 的读法“新而不止是无界的增益，必须来自部分之外”与“有界的当下不能承载'
             '自身的历史”在此成为定理：算入其余，每次上升都是被给予的；在第一律之下增益只有两条路，跨过边界或来自其余；有限的整体没有边界，'
-            '其余闲置时它回返而遗忘。读法（AI 的，依 Ren 2026-10-15 的交托决定，DELEGATED-CHOICES D5、D7）：“来自部分之外的增益”读作这两条路；'
+            '其余闲置时它回返而遗忘。读法（AI 的，依 Ren 2026-10-15 的交托采用，DELEGATED-CHOICES D5、D7）：“来自部分之外的增益”读作这两条路；'
             '开放与增益分开；生生不息读在整体的层次，在其余闲置的有界整体中它是回返，不是无尽的新；其余计入所列关系项不做的，所以无尽地新的'
             '有限整体，是其列表漏掉了给予它者。Becoming.Coupling 对动作陈述其对应：列表所持者形成的动作在列表长度之内重复。',
             'Ren, 15 October 2026: “What\'s the best choices to make? please make best of your judgement, and push the '
@@ -294,7 +304,7 @@ def gain_record():
             'is gain without bound which must come from beyond the part, and that a bounded present cannot hold its own '
             'history, become theorems here: with the rest counted every rise is given; under the first law gain has two '
             'ways in, across the boundary or from the rest; a finite whole has no boundary, and with the rest idle it '
-            'returns and forgets. Readings (the AI\'s, decided on Ren\'s delegation of 15 October 2026, DELEGATED-CHOICES '
+            'returns and forgets. Readings (the AI\'s, adopted on Ren\'s delegation of 15 October 2026, DELEGATED-CHOICES '
             'D5, D7): “gain from beyond the part” reads as these two ways in; openness and gain are kept apart; 生生不息 '
             'reads at the level of the whole, where in a bounded whole with the rest idle it is return, not endless '
             'novelty; the rest counts what the listed relata do not, so a finite whole new without end is one whose '
@@ -403,9 +413,9 @@ def gain_record():
         ],
         'proof_bindings': [],
         'history': [pair(
-            f'2026-10-15：新增，证明 returning-novelty-forgetting-on-levels 的读法“新而不止是来自部分之外的增益”（P111，Ren 2026-10-15 '
+            f'2026-10-16：新增，证明 returning-novelty-forgetting-on-levels 的读法“新而不止是来自部分之外的增益”（P111，Ren 2026-10-15 '
             f'的交托与“push the frontier of completeness”）；研究 §{SECTION_GAIN}。',
-            f'15 October 2026: added, proving the reading of returning-novelty-forgetting-on-levels that novelty without '
+            f'16 October 2026: added, proving the reading of returning-novelty-forgetting-on-levels that novelty without '
             f'end is gain from beyond the part (P111, on Ren\'s delegation of 15 October 2026 and “push the frontier of '
             f'completeness”); study section {SECTION_GAIN}.')],
         'text_versions': [],
@@ -454,9 +464,11 @@ def glue_record():
         ],
         'counterexamples': [
             {'path': glue,
-             'detail': pair('Specker 的盒子、CHSH 与 Mermin–Peres 方阵：每个都矛盾，所以没有不依语境的读法，而按语境索引的读法满足每个语境。',
+             'detail': pair('Specker 的盒子、CHSH 与 Mermin–Peres 方阵：每个都矛盾，所以没有不依语境的读法，而按语境索引的读法满足每个语境；'
+                            '有奇数个相异关系的环同样矛盾。',
                             'Specker\'s boxes, CHSH and the Mermin–Peres square: each contradicts, so no context-free '
-                            'reading exists, while readings indexed by context meet every context.')}],
+                            'reading exists, while readings indexed by context meet every context; a cycle with an odd '
+                            'number of differ relations contradicts likewise.')}],
         'standard_boundaries': ['no-ethical-premise', 'no-evaluation', 'formal-not-empirical', 'names-provisional',
                                 'decidability'],
         'validation_scope': pair(
@@ -466,26 +478,29 @@ def glue_record():
             f'declarations of Becoming.Gluing, {n} of them theorems, have empty axiom reports; the checker verifies core '
             f'purity. Author counterreview in study section {SECTION_GLUE}; not independently reviewed.'),
         'next_delta': pair(
-            '超出奇偶约束的语境性：一般的有限可能性的确切障碍；概率的语境性与实数振幅下的量子值（外围）；独立审查。',
+            '超出奇偶约束的语境性：一般的有限可能性的确切障碍；概率的语境性与实数振幅下的量子值（外围）；以对应定理把外围的 '
+            'CorrectionRelations 环律接到这里；独立审查。',
             'Contextuality beyond parity: the exact obstruction for general finite possibilities; probabilistic '
-            'contextuality and the quantum values with real amplitudes (periphery); an independent review.'),
+            'contextuality and the quantum values with real amplitudes (periphery); a correspondence theorem joining the '
+            'periphery\'s CorrectionRelations cycle law to this one; an independent review.'),
         'correspondence': pair(
             'Ren 2026-10-12 问框架所失去的是否像“wave/particle”，并同意了把值读作语境中的识的回答；2026-10-15：“please make best of your '
             'judgement, and push the frontier of completeness”。本结果是 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”：'
             '对奇偶约束，“不依语境的主张是表示的承诺”成为确切的规律，这一承诺恰在一个可检查的障碍处失效，障碍给出 Bell 型的界。读法（AI 的，'
-            '依 Ren 2026-10-15 的交托决定，DELEGATED-CHOICES D33）：m − 1 与 m 之差，是语境所承载的；值是语境中的识，一个关系。',
+            '依 Ren 2026-10-15 的交托采用，DELEGATED-CHOICES D33）：m − 1 与 m 之差，是语境所承载的；值是语境中的识，一个关系。',
             'Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle”, and agreed with the reply '
             'reading a value as a registration in context; on 15 October 2026: “please make best of your judgement, and '
             'push the frontier of completeness”. This result is the next step of contextual-registration, “the general '
             'parity obstruction; probabilistic contextuality”: for parity constraints, “context-free claims are a '
             'commitment of the representation” becomes an exact law, the commitment failing exactly at a checkable '
-            'obstruction, which gives a Bell-type bound. Readings (the AI\'s, decided on Ren\'s delegation of 15 October '
+            'obstruction, which gives a Bell-type bound. Readings (the AI\'s, adopted on Ren\'s delegation of 15 October '
             '2026, DELEGATED-CHOICES D33): the difference between m − 1 and m is what the context carries; a value is a '
             'registration in context, a relation.'),
         'canonical_source': glue,
         'aliases': ['when readings in context glue, for parity', '奇偶约束下语境中的读法何时粘合', 'the parity law of gluing',
                     '粘合的奇偶律', 'a Bell-type bound without probability', '不用概率的 Bell 型界',
-                    'the only obstruction to context-free values', '不依语境之值的唯一障碍'],
+                    'the only obstruction to context-free values', '不依语境之值的唯一障碍', 'the parity law of a cycle',
+                    '环的奇偶律'],
         'dependencies': [
             dep('contextual-registration',
                 '复用 Contextual、Contextual.Glues、Contextual.Respects、Contextual.not_glues、Local、NoGlobal，以及 Specker 与 '
@@ -543,11 +558,12 @@ def glue_record():
         ],
         'proof_bindings': [],
         'history': [pair(
-            f'2026-10-15：新增，给出 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”中奇偶的部分（P112，Ren 2026-10-15 '
-            f'的交托与“push the frontier of completeness”）；研究 §{SECTION_GLUE}。',
-            f'15 October 2026: added, giving the parity part of the next step of contextual-registration, “the general '
-            f'parity obstruction; probabilistic contextuality” (P112, on Ren\'s delegation of 15 October 2026 and “push '
-            f'the frontier of completeness”); study section {SECTION_GLUE}.')],
+            f'2026-10-16：新增，给出 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”中奇偶的部分，以及以相等或'
+            f'相异相关之环的奇偶律（P112，Ren 2026-10-15 的交托与“push the frontier of completeness”）；研究 §{SECTION_GLUE}。',
+            f'16 October 2026: added, giving the parity part of the next step of contextual-registration, “the general '
+            f'parity obstruction; probabilistic contextuality”, and the parity law of a cycle of equal and differ '
+            f'relations (P112, on Ren\'s delegation of 15 October 2026 and “push the frontier of completeness”); study '
+            f'section {SECTION_GLUE}.')],
         'text_versions': [],
     }
 

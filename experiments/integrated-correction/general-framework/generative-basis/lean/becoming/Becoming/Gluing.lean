@@ -7,9 +7,9 @@ import Becoming.Population
 `Becoming.Context` showed that a frame of context-free claims fits a world exactly where its
 registrations glue, with Specker's three boxes and the Mermin–Peres square as possibilities no
 context-free reading fits. This module gives the exact law for claims constrained by parity in
-each context, with no premise beyond the listed claims and contexts: the next step of P72's
-record, “the general parity obstruction; probabilistic contextuality” (Ren, 15 October 2026:
-“please make best of your judgement, and push the frontier of completeness”).
+each context, with no premise beyond the listed claims and contexts: the next step of the record
+of contextual registration, “the general parity obstruction; probabilistic contextuality” (Ren, 15
+October 2026: “please make best of your judgement, and push the frontier of completeness”).
 
 A parity system (`ParitySystem`) lists claims and gives each context the claims it counts and the
 parity it requires. An assignment of values to the claims meets a context where the parity of its
@@ -39,14 +39,25 @@ added together, say that nothing has odd parity.
 * **Instances.** Specker's three boxes are a parity system whose three openings contradict
   (`Specker.openings_contradict`): every mixture of placements meets at most two of the three on
   average (`Specker.mixture_le`), each opening's own placement meets all three
-  (`Specker.indexed_met`), and P72's `Specker.noGlobal` follows (`Specker.noGlobal_of_contradiction`).
+  (`Specker.indexed_met`), and `Becoming.Context`'s `Specker.noGlobal` follows
+  (`Specker.noGlobal_of_contradiction`).
   The CHSH game (Clauser, Horne, Shimony and Holt, 1969), two stations each with two settings,
   whose outcomes must differ exactly where both settings are the second: its four pairs of
   settings contradict, so every mixture of context-free outcomes wins at most three of the four
   on average (`CHSH.mixture_le`), the classical bound, while outcomes in context win all four
   (`CHSH.indexed_met`). The Mermin–Peres square's six lines contradict
   (`Square.lines_contradict`): at most five of the six on average (`Square.mixture_le`), all six
-  in context (`Square.indexed_met`), and `Square.noGlobal` follows (`Square.noGlobal_of_contradiction`).
+  in context (`Square.indexed_met`), and `Square.noGlobal` follows
+  (`Square.noGlobal_of_contradiction`).
+* **A cycle.** A cycle of claims, each related to the next as equal or different and the last to
+  the first (`Cycle.system`), counts every claim twice along its relations (`Cycle.counts_even`).
+  So its relations contradict where an odd number of them are differ relations
+  (`Cycle.contradicts`), and then every mixture of context-free assignments meets at most `n` of
+  its `n + 1` relations on average (`Cycle.mixture_le`); a context-free assignment meets them all
+  exactly where that number is even, found by walking the cycle from one claim
+  (`Cycle.met_iff_even`). Specker's three boxes are, relabelled, the cycle of three differ
+  relations, and `CorrectionRelations.cycle_compatible_iff_even` in the periphery is the same law
+  for a list of relations.
 
 What is not derived: the quantum values, which need real amplitudes (Tsirelson's bound for CHSH is
 not stated here; `Becoming.Quantum` realizes the square with integer matrices); contextuality
@@ -77,7 +88,8 @@ theorem addParity_swap : ∀ a b c d,
   decide
 theorem addParity_and : ∀ a b c, (addParity a b && c) = addParity (a && c) (b && c) := by decide
 theorem addParity_solve : ∀ a b c, addParity a b = c → a = addParity c b := by decide
-theorem addParity_cancel : ∀ a b c, addParity (addParity b c) (addParity (addParity a b) c) = a := by
+theorem addParity_cancel : ∀ a b c,
+    addParity (addParity b c) (addParity (addParity a b) c) = a := by
   decide
 theorem true_of_ne_false : ∀ b : Bool, ¬ b = false → b = true := by decide
 theorem cond_le_one : ∀ b : Bool, cond b 1 0 ≤ 1 := by decide
@@ -107,13 +119,15 @@ theorem oddOver_congr {q r : α → Bool} :
     ∀ {l : List α}, (∀ a, a ∈ l → q a = r a) → oddOver l q = oddOver l r
   | [], _ => rfl
   | a :: l, same => show addParity (q a) (oddOver l q) = addParity (r a) (oddOver l r) from
-      congr (congrArg addParity (same a (.head l))) (oddOver_congr fun b mem => same b (.tail a mem))
+      congr (congrArg addParity (same a (.head l)))
+        (oddOver_congr fun b mem => same b (.tail a mem))
 
 theorem oddOver_false {q : α → Bool} :
     ∀ {l : List α}, (∀ a, a ∈ l → q a = false) → oddOver l q = false
   | [], _ => rfl
   | a :: l, zero => show addParity (q a) (oddOver l q) = addParity false false from
-      congr (congrArg addParity (zero a (.head l))) (oddOver_false fun b mem => zero b (.tail a mem))
+      congr (congrArg addParity (zero a (.head l)))
+        (oddOver_false fun b mem => zero b (.tail a mem))
 
 /-- Parities over two lists may be taken in either order. -/
 theorem oddOver_swap (q : α → β → Bool) (m : List β) : ∀ l : List α,
@@ -244,7 +258,8 @@ theorem pulled {rs : List (ParityConstraint C)} {p r : ParityConstraint C}
     (counts : ∀ c, oddOver ks (fun r => r.counts c) = oddOver rest (fun r => r.counts c))
     (odd : oddOver ks (fun r => r.odd) = oddOver rest (fun r => r.odd)) :
     ∀ b, ∃ ks₀, (∀ k, k ∈ ks₀ → k ∈ rs) ∧
-      (∀ c, oddOver ks₀ (fun r => r.counts c) = oddOver (cond b (r.add p) r :: rest) (fun r => r.counts c)) ∧
+      (∀ c, oddOver ks₀ (fun r => r.counts c) =
+        oddOver (cond b (r.add p) r :: rest) (fun r => r.counts c)) ∧
         oddOver ks₀ (fun r => r.odd) = oddOver (cond b (r.add p) r :: rest) (fun r => r.odd)
   | false => ⟨r :: ks, (fun k mem => match k, mem with
       | _, .head _ => rmem
@@ -259,7 +274,8 @@ theorem pulled {rs : List (ParityConstraint C)} {p r : ParityConstraint C}
     (addParity_assoc r.odd p.odd (oddOver ks fun r => r.odd)).symm.trans
       (congrArg (addParity (addParity r.odd p.odd)) odd)⟩
 
-theorem pull_back {rs : List (ParityConstraint C)} {x : C} {p : ParityConstraint C} (pmem : p ∈ rs) :
+theorem pull_back {rs : List (ParityConstraint C)} {x : C} {p : ParityConstraint C}
+    (pmem : p ∈ rs) :
     ∀ ks' : List (ParityConstraint C), (∀ k, k ∈ ks' → k ∈ rs.map (eliminate x p)) →
       ∃ ks, (∀ k, k ∈ ks → k ∈ rs) ∧
         (∀ c, oddOver ks (fun r => r.counts c) = oddOver ks' (fun r => r.counts c)) ∧
@@ -401,7 +417,8 @@ assignment. -/
 theorem mixture_le {ks : List K} (contra : S.Contradicts ks) (mix : List (C → Bool)) :
     total mix (fun v => total ks (fun k => cond (S.met k v) 1 0)) + mix.length ≤
       total mix (fun _ => ks.length) :=
-  Nat.le_trans (Nat.le_of_eq ((congrArg (total mix (fun v => total ks fun k => cond (S.met k v) 1 0) + ·)
+  Nat.le_trans (Nat.le_of_eq
+    ((congrArg (total mix (fun v => total ks fun k => cond (S.met k v) 1 0) + ·)
       (total_ones mix).symm).trans (total_add _ (fun _ => 1) mix).symm))
     (total_le mix fun v _ => met_le contra v)
 
@@ -665,5 +682,158 @@ theorem indexed_met : total lines (fun l => cond (paritySystem.met l (inLine l))
   ParitySystem.indexed_met inLine fun l _ => (support_iff l _).mpr (inLine_support l)
 
 end Square
+
+/-! ## A cycle of equal and differ relations -/
+
+namespace Cycle
+
+/-- The numbers below `n`, listed downward. -/
+def down : Nat → List Nat
+  | 0 => []
+  | n + 1 => n :: down n
+
+/-- A cycle of the claims `0, …, n`. For `k < n` the context `some k` relates the claims `k` and
+`k + 1`, requiring them equal where `pol k` is `false` and different where it is `true`; the context
+`none` closes the cycle, relating the claims `n` and `0` by `close`. -/
+def system (n : Nat) (pol : Nat → Bool) (close : Bool) : ParitySystem (Option Nat) Nat :=
+  ⟨down (n + 1),
+   fun k c => match k with
+    | some k => addParity (Nat.beq c k) (Nat.beq c (k + 1))
+    | none => addParity (Nat.beq c n) (Nat.beq c 0),
+   fun k => match k with
+    | some k => pol k
+    | none => close⟩
+
+/-- The cycle's `n + 1` relations. -/
+def edges (n : Nat) : List (Option Nat) := none :: (down n).map some
+
+/-- Whether the cycle holds an odd number of differ relations. -/
+def polarity (n : Nat) (pol : Nat → Bool) (close : Bool) : Bool :=
+  addParity close (oddOver (down n) pol)
+
+theorem length_edges : ∀ n, (edges n).length = n + 1
+  | 0 => rfl
+  | n + 1 => congrArg (· + 1) (length_edges n)
+
+theorem lt_of_mem_down : ∀ {n k : Nat}, k ∈ down n → k < n
+  | 0, _, mem => nomatch mem
+  | n + 1, _, .head _ => Nat.lt_succ_self n
+  | _ + 1, _, .tail _ mem => Nat.lt_succ_of_lt (lt_of_mem_down mem)
+
+theorem shift : ∀ a b d : Bool, addParity (addParity b d) (addParity a b) = addParity a d := by
+  decide
+theorem cross : ∀ a b : Bool, addParity (addParity b a) (addParity a b) = false := by decide
+theorem returns : ∀ a p : Bool, addParity a (addParity p a) = p := by decide
+theorem eq_of_even : ∀ c p : Bool, addParity c p = false → p = c := by decide
+
+theorem beq_self : ∀ n, Nat.beq n n = true
+  | 0 => rfl
+  | n + 1 => beq_self n
+
+theorem beq_of_ne {a b : Nat} (ne : a ≠ b) : Nat.beq a b = false :=
+  match same : Nat.beq a b with
+  | true => absurd (Nat.eq_of_beq_eq_true same) ne
+  | false => rfl
+
+/-- Along the relations `k — k + 1` for `k < n`, every claim is counted as often as `0` and `n`
+together: the claims between them twice. -/
+theorem telescope (c : Nat) : ∀ n,
+    oddOver (down n) (fun k => addParity (Nat.beq c k) (Nat.beq c (k + 1))) =
+      addParity (Nat.beq c 0) (Nat.beq c n)
+  | 0 => (addParity_self (Nat.beq c 0)).symm
+  | n + 1 =>
+    (congrArg (addParity (addParity (Nat.beq c n) (Nat.beq c (n + 1)))) (telescope c n)).trans
+      (shift (Nat.beq c 0) (Nat.beq c n) (Nat.beq c (n + 1)))
+
+/-- With the closing relation, every claim is counted an even number of times. -/
+theorem counts_even (n : Nat) (pol : Nat → Bool) (close : Bool) (c : Nat) :
+    oddOver (edges n) (fun k => (system n pol close).counts k c) = false :=
+  (congrArg (addParity (addParity (Nat.beq c n) (Nat.beq c 0)))
+    ((oddOver_map some (fun k => (system n pol close).counts k c) (down n)).trans
+      (telescope c n))).trans
+    (cross (Nat.beq c 0) (Nat.beq c n))
+
+/-- **An odd cycle contradicts**: its relations, taken once each, count every claim twice while
+the parities they require add up to odd. -/
+theorem contradicts {n : Nat} {pol : Nat → Bool} {close : Bool}
+    (odd : polarity n pol close = true) : (system n pol close).Contradicts (edges n) :=
+  ⟨fun c _ => counts_even n pol close c,
+   (congrArg (addParity close) (oddOver_map some (system n pol close).odd (down n))).trans odd⟩
+
+/-- So every mixture of context-free assignments meets at most `n` of an odd cycle's `n + 1`
+relations on average. -/
+theorem mixture_le {n : Nat} {pol : Nat → Bool} {close : Bool}
+    (odd : polarity n pol close = true) (mix : List (Nat → Bool)) :
+    total mix (fun v => total (edges n) (fun k => cond ((system n pol close).met k v) 1 0)) +
+        mix.length ≤ total mix (fun _ => n + 1) :=
+  Nat.le_trans (ParitySystem.mixture_le (contradicts odd) mix)
+    (Nat.le_of_eq (congrArg (fun m => total mix (fun _ => m)) (length_edges n)))
+
+/-- Below its own number, a claim is not counted. -/
+theorem miss (x : Nat → Bool) {j : Nat} :
+    ∀ {m}, m ≤ j → oddOver (down m) (fun c => Nat.beq c j && x c) = false
+  | 0, _ => rfl
+  | m + 1, le =>
+    show addParity (Nat.beq m j && x m) (oddOver (down m) fun c => Nat.beq c j && x c) = false from
+      congr (congrArg addParity (congrArg (· && x m) (beq_of_ne (Nat.ne_of_lt le))))
+        (miss x (Nat.le_of_succ_le le))
+
+/-- A claim listed once is read once: its value is the parity of the values of the claims below
+`m` that are it. -/
+theorem pick (x : Nat → Bool) {j : Nat} :
+    ∀ {m}, j < m → oddOver (down m) (fun c => Nat.beq c j && x c) = x j
+  | 0, lt => absurd lt (Nat.not_lt_zero j)
+  | m + 1, lt => match Nat.decEq j m with
+    | isTrue same =>
+      Eq.subst (motive := fun i =>
+          addParity (Nat.beq m i && x m) (oddOver (down m) fun c => Nat.beq c i && x c) = x i)
+        same.symm
+        ((congr (congrArg addParity (congrArg (· && x m) (beq_self m)))
+          (miss x (Nat.le_refl m))).trans (addParity_false (x m)))
+    | isFalse diff =>
+      show addParity (Nat.beq m j && x m) (oddOver (down m) fun c => Nat.beq c j && x c) = x j from
+        (congrArg (addParity (Nat.beq m j && x m))
+          (pick x (Nat.lt_of_le_of_ne (Nat.le_of_lt_succ lt) diff))).trans
+          (congrArg (addParity · (x j))
+            (congrArg (· && x m) (beq_of_ne fun same => diff same.symm)))
+
+/-- The parity, over the listed claims, of an assignment's values on two of them. -/
+theorem value_pair (n : Nat) (v : Nat → Bool) {a b : Nat} (alt : a < n + 1) (blt : b < n + 1) :
+    oddOver (down (n + 1)) (fun c => addParity (Nat.beq c a) (Nat.beq c b) && v c) =
+      addParity (v a) (v b) :=
+  (oddOver_congr fun c _ => addParity_and (Nat.beq c a) (Nat.beq c b) (v c)).trans
+    ((oddOver_add (fun c => Nat.beq c a && v c) (fun c => Nat.beq c b && v c) (down (n + 1))).trans
+      (congr (congrArg addParity (pick v alt)) (pick v blt)))
+
+/-- The values found by walking the cycle from claim `0`: at claim `c`, the parity of the first
+`c` relations. -/
+def walk (pol : Nat → Bool) (c : Nat) : Bool := oddOver (down c) pol
+
+/-- **An even cycle is met**: walking it from claim `0` meets every relation. -/
+theorem walk_meets {n : Nat} {pol : Nat → Bool} {close : Bool}
+    (even : polarity n pol close = false) :
+    ∀ k, k ∈ edges n → (system n pol close).support k (walk pol)
+  | none, _ => (value_pair n (walk pol) (Nat.lt_succ_self n) (Nat.zero_lt_succ n)).trans
+      ((addParity_false (walk pol n)).trans (eq_of_even close (walk pol n) even))
+  | some _, .tail _ mem => match image_of_mem_map mem with
+    | ⟨k, below, same⟩ =>
+      Eq.subst (motive := fun j => (system n pol close).support j (walk pol)) same
+        ((value_pair n (walk pol) (Nat.lt_succ_of_lt (lt_of_mem_down below))
+          (Nat.succ_lt_succ (lt_of_mem_down below))).trans (returns (walk pol k) (pol k)))
+
+/-- **The parity law of a cycle.** A context-free assignment meets every relation of a cycle of
+equal and differ relations exactly where it holds an even number of differ relations;
+`CorrectionRelations.cycle_compatible_iff_even` in the periphery is the case of a list of
+polarities with `close` equal. -/
+theorem met_iff_even (n : Nat) (pol : Nat → Bool) (close : Bool) :
+    (∃ v : Nat → Bool, ∀ k, k ∈ edges n → (system n pol close).support k v) ↔
+      polarity n pol close = false :=
+  ⟨fun ⟨v, all⟩ => match parity : polarity n pol close with
+    | false => rfl
+    | true => match ParitySystem.unmet_of_contradicts (contradicts parity) v with
+      | ⟨k, mem, unmet⟩ => absurd (all k mem) unmet,
+   fun even => ⟨walk pol, walk_meets even⟩⟩
+
+end Cycle
 
 end Becoming

@@ -509,12 +509,12 @@ SPECIFIC = {
     # P115's readings, left by its owner to Ren or this delegation (D39).
     "how-much-difference-arrives": [
         ("读法（AI 的，待 Ren 或按其 2026-10-15 的交托判断）：耦合强度是敏感所缺的度量，读作识的强弱；",
-         f"读法（AI 的，依 Ren 的交托以确切范围采用，{DC} D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，"
-         "在形式上读作识的强弱；"),
+         f"读法（AI 的，依 Ren 的交托采用，{DC} D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，"
+         "形式上读作识的强弱；"),
         ("纠缠读作交换与彼此水平耦合的强度。", "纠缠读作交换与彼此水平耦合的强度，不等同于量子的纠缠。"),
         ("Readings (the AI's, pending Ren or decided on Ren's delegation of 15 October): the coupling strength "
          "is the measure sensitivity lacked, read as how strongly a formation registers;",
-         f"Readings (the AI's, adopted with exact scope on Ren's delegation, {DC} D39; 识 itself stays Ren's): "
+         f"Readings (the AI's, adopted on Ren's delegation, {DC} D39; 识 itself stays Ren's): "
          "the coupling strength is the measure sensitivity lacked, read formally as how strongly a formation "
          "registers;"),
         ("entanglement reads as how strongly exchanges are coupled to each other's levels.",

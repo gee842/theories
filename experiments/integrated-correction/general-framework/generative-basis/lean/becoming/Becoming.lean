@@ -1075,7 +1075,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   eliminating the claims one at a time, so the readings glue exactly where no selection contradicts.
   A mixture of context-free assignments meets at most `m − 1` of a contradiction's `m` contexts on
   average, while readings indexed by context meet all `m`: Specker's boxes, the CHSH game and the
-  Mermin–Peres square are instances.
+  Mermin–Peres square are instances. A cycle of claims related as equal or different is met by a
+  context-free assignment exactly where the number of differ relations is even, and contradicts
+  where it is odd.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

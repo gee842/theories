@@ -163,10 +163,10 @@ MARK = "P110（依 Ren 2026-10-15 的交托"
 
 def note(record, decisions):
     extra_zh, extra_en = EXTRA_NOTE.get(record["id"], ("", ""))
-    zh = (f"2026-10-15 {MARK}决定的读法，研究 §{SECTION['P110']}，{DC} {decisions}）："
+    zh = (f"2026-10-16 {MARK}决定的读法，研究 §{SECTION['P110']}，{DC} {decisions}）："
           "此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。"
           f"{extra_zh}陈述、证明与绑定不变；Ren 可改其中任何一项决定。")
-    en = (f"15 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study "
+    en = (f"16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study "
           f"section {SECTION['P110']}, {DC} {decisions}): readings and names formerly left to Ren are "
           "adopted or declined as those decisions say, and next steps asking for Ren's judgment on "
           f"them are removed.{' ' + extra_en if extra_en else ''} Statements, proofs and bindings "
@@ -186,8 +186,8 @@ def relate(record):
     if record["id"] == "contextual-registration":
         body_zh, body_en = CONTEXTUAL_NOTE[0] + body_zh, CONTEXTUAL_NOTE[1] + " " + body_en
     record["history"].append({
-        "zh": f"2026-10-15 {item}（{title_zh}，研究 §{SECTION[item]}）：{body_zh}",
-        "en": f"15 October 2026, {item} ({title_en}, study section {SECTION[item]}): {body_en}"})
+        "zh": f"2026-10-16 {item}（{title_zh}，研究 §{SECTION[item]}）：{body_zh}",
+        "en": f"16 October 2026, {item} ({title_en}, study section {SECTION[item]}): {body_en}"})
     return True
 
 

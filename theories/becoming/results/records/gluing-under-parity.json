@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-15T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
     "zh": "每个语境要求奇偶时，有不依语境的读法，恰当没有语境的选择矛盾（每个主张被计偶数次而所要求的奇偶相加为奇）；有矛盾时，不依语境之读法的混合平均至多满足 m 个语境中的 m − 1 个，按语境索引的读法满足全部 m 个。",
     "en": "Where each context requires a parity, a context-free reading exists exactly where no selection of contexts contradicts (each claim counted evenly, the parities adding to odd); then mixtures of context-free readings meet at most m − 1 of the m contexts on average, readings in context all m."
@@ -158,6 +158,34 @@
         "Becoming.Square.inLine_support",
         "Becoming.Square.indexed_met"
       ]
+    },
+    {
+      "zh": "环：主张 0, …, n 成环，相邻者以相等或相异相关（Cycle.system），每个主张沿其关系被计两次；所以相异关系为奇数个时这些关系矛盾，混合平均至多满足 n + 1 个中的 n 个；为偶数个时沿环走出的赋值满足全部关系，二者互斥（Cycle.met_iff_even）。",
+      "en": "A cycle: the claims 0, …, n in a cycle, neighbours related as equal or different (Cycle.system), each claim counted twice along its relations; so with an odd number of differ relations they contradict and mixtures meet at most n of the n + 1 on average; with an even number the assignment walked along the cycle meets them all, and the two exclude each other (Cycle.met_iff_even).",
+      "declarations": [
+        "Becoming.Cycle.down",
+        "Becoming.Cycle.system",
+        "Becoming.Cycle.edges",
+        "Becoming.Cycle.polarity",
+        "Becoming.Cycle.length_edges",
+        "Becoming.Cycle.lt_of_mem_down",
+        "Becoming.Cycle.shift",
+        "Becoming.Cycle.cross",
+        "Becoming.Cycle.returns",
+        "Becoming.Cycle.eq_of_even",
+        "Becoming.Cycle.beq_self",
+        "Becoming.Cycle.beq_of_ne",
+        "Becoming.Cycle.telescope",
+        "Becoming.Cycle.counts_even",
+        "Becoming.Cycle.contradicts",
+        "Becoming.Cycle.mixture_le",
+        "Becoming.Cycle.miss",
+        "Becoming.Cycle.pick",
+        "Becoming.Cycle.value_pair",
+        "Becoming.Cycle.walk",
+        "Becoming.Cycle.walk_meets",
+        "Becoming.Cycle.met_iff_even"
+      ]
     }
   ],
   "hypotheses": [
@@ -193,8 +221,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
       "detail": {
-        "zh": "Specker 的盒子、CHSH 与 Mermin–Peres 方阵：每个都矛盾，所以没有不依语境的读法，而按语境索引的读法满足每个语境。",
-        "en": "Specker's boxes, CHSH and the Mermin–Peres square: each contradicts, so no context-free reading exists, while readings indexed by context meet every context."
+        "zh": "Specker 的盒子、CHSH 与 Mermin–Peres 方阵：每个都矛盾，所以没有不依语境的读法，而按语境索引的读法满足每个语境；有奇数个相异关系的环同样矛盾。",
+        "en": "Specker's boxes, CHSH and the Mermin–Peres square: each contradicts, so no context-free reading exists, while readings indexed by context meet every context; a cycle with an odd number of differ relations contradicts likewise."
       }
     }
   ],
@@ -206,16 +234,16 @@
     "decidability"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Gluing 的 91 项声明（64 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §144；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 91 declarations of Becoming.Gluing, 64 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 144; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Gluing 的 113 项声明（81 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §144；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 113 declarations of Becoming.Gluing, 81 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 144; not independently reviewed."
   },
   "next_delta": {
-    "zh": "超出奇偶约束的语境性：一般的有限可能性的确切障碍；概率的语境性与实数振幅下的量子值（外围）；独立审查。",
-    "en": "Contextuality beyond parity: the exact obstruction for general finite possibilities; probabilistic contextuality and the quantum values with real amplitudes (periphery); an independent review."
+    "zh": "超出奇偶约束的语境性：一般的有限可能性的确切障碍；概率的语境性与实数振幅下的量子值（外围）；以对应定理把外围的 CorrectionRelations 环律接到这里；独立审查。",
+    "en": "Contextuality beyond parity: the exact obstruction for general finite possibilities; probabilistic contextuality and the quantum values with real amplitudes (periphery); a correspondence theorem joining the periphery's CorrectionRelations cycle law to this one; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 问框架所失去的是否像“wave/particle”，并同意了把值读作语境中的识的回答；2026-10-15：“please make best of your judgement, and push the frontier of completeness”。本结果是 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”：对奇偶约束，“不依语境的主张是表示的承诺”成为确切的规律，这一承诺恰在一个可检查的障碍处失效，障碍给出 Bell 型的界。读法（AI 的，依 Ren 2026-10-15 的交托决定，DELEGATED-CHOICES D33）：m − 1 与 m 之差，是语境所承载的；值是语境中的识，一个关系。",
-    "en": "Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle”, and agreed with the reply reading a value as a registration in context; on 15 October 2026: “please make best of your judgement, and push the frontier of completeness”. This result is the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality”: for parity constraints, “context-free claims are a commitment of the representation” becomes an exact law, the commitment failing exactly at a checkable obstruction, which gives a Bell-type bound. Readings (the AI's, decided on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D33): the difference between m − 1 and m is what the context carries; a value is a registration in context, a relation."
+    "zh": "Ren 2026-10-12 问框架所失去的是否像“wave/particle”，并同意了把值读作语境中的识的回答；2026-10-15：“please make best of your judgement, and push the frontier of completeness”。本结果是 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”：对奇偶约束，“不依语境的主张是表示的承诺”成为确切的规律，这一承诺恰在一个可检查的障碍处失效，障碍给出 Bell 型的界。读法（AI 的，依 Ren 2026-10-15 的交托采用，DELEGATED-CHOICES D33）：m − 1 与 m 之差，是语境所承载的；值是语境中的识，一个关系。",
+    "en": "Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle”, and agreed with the reply reading a value as a registration in context; on 15 October 2026: “please make best of your judgement, and push the frontier of completeness”. This result is the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality”: for parity constraints, “context-free claims are a commitment of the representation” becomes an exact law, the commitment failing exactly at a checkable obstruction, which gives a Bell-type bound. Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D33): the difference between m − 1 and m is what the context carries; a value is a registration in context, a relation."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
   "aliases": [
@@ -226,7 +254,9 @@
     "a Bell-type bound without probability",
     "不用概率的 Bell 型界",
     "the only obstruction to context-free values",
-    "不依语境之值的唯一障碍"
+    "不依语境之值的唯一障碍",
+    "the parity law of a cycle",
+    "环的奇偶律"
   ],
   "dependencies": [
     {
@@ -296,7 +326,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
       "role": "proof",
-      "sha256": "deaf01f1e5d5dfd5e3c4389f6c974612b0ac7ac910263f181bd4fd8697096120",
+      "sha256": "eb2f58408fb1faa4bed791fe4875ad0986d98146f0c47088caf778345cafa264",
       "declarations": [
         "Becoming.addParity",
         "Becoming.oddOver",
@@ -388,7 +418,29 @@
         "Becoming.Square.mixture_le",
         "Becoming.Square.inLine",
         "Becoming.Square.inLine_support",
-        "Becoming.Square.indexed_met"
+        "Becoming.Square.indexed_met",
+        "Becoming.Cycle.down",
+        "Becoming.Cycle.system",
+        "Becoming.Cycle.edges",
+        "Becoming.Cycle.polarity",
+        "Becoming.Cycle.length_edges",
+        "Becoming.Cycle.lt_of_mem_down",
+        "Becoming.Cycle.shift",
+        "Becoming.Cycle.cross",
+        "Becoming.Cycle.returns",
+        "Becoming.Cycle.eq_of_even",
+        "Becoming.Cycle.beq_self",
+        "Becoming.Cycle.beq_of_ne",
+        "Becoming.Cycle.telescope",
+        "Becoming.Cycle.counts_even",
+        "Becoming.Cycle.contradicts",
+        "Becoming.Cycle.mixture_le",
+        "Becoming.Cycle.miss",
+        "Becoming.Cycle.pick",
+        "Becoming.Cycle.value_pair",
+        "Becoming.Cycle.walk",
+        "Becoming.Cycle.walk_meets",
+        "Becoming.Cycle.met_iff_even"
       ]
     },
     {
@@ -470,7 +522,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "22f405974239042698deee1c6ae9dfed1dc0299559199756da29dc482b5e2d69"
+      "sha256": "641d03e8b980eeb4e014247ea32696ba26d9b86199480770509e0520c78fc769"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md",
@@ -486,8 +538,8 @@
   "proof_bindings": [],
   "history": [
     {
-      "zh": "2026-10-15：新增，给出 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”中奇偶的部分（P112，Ren 2026-10-15 的交托与“push the frontier of completeness”）；研究 §144。",
-      "en": "15 October 2026: added, giving the parity part of the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality” (P112, on Ren's delegation of 15 October 2026 and “push the frontier of completeness”); study section 144."
+      "zh": "2026-10-16：新增，给出 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”中奇偶的部分，以及以相等或相异相关之环的奇偶律（P112，Ren 2026-10-15 的交托与“push the frontier of completeness”）；研究 §144。",
+      "en": "16 October 2026: added, giving the parity part of the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality”, and the parity law of a cycle of equal and differ relations (P112, on Ren's delegation of 15 October 2026 and “push the frontier of completeness”); study section 144."
     }
   ],
   "text_versions": []
