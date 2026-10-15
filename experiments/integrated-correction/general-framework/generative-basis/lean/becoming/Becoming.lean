@@ -113,6 +113,7 @@ import Becoming.Loops
 import Becoming.Remainder
 import Becoming.Routes
 import Becoming.Closing
+import Becoming.Thresholds
 import Becoming.Gain
 import Becoming.Gluing
 
@@ -1132,6 +1133,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   not show whether it will. Strengths read off the course give a course that is the carried
   amount of the strengths it reads; in the threshold witness a loop forms at the step a level
   reaches the threshold and doubles from then on.
+* `Becoming.Thresholds` (L4): loops within what a law reads, and the break, with no premise
+  beyond what each statement names. A law reading a schedule is coupled to every unread level with
+  strength zero, so every coupling, chain and loop runs through levels read, and a loop forms at a
+  step only through a formation reading there a level downstream of where it gives. For every law,
+  two courses apart only in a stock nothing reads are alike everywhere else. A law reading a stock
+  only below a threshold, as one registering it without observing it does, carries a raise of the
+  stock nowhere up to the break; before the break it is its standing law, with no loop through the
+  stock, so the loop through the stock forms at the break, unforeseen.
 * `Becoming.Gain` (L3): where novelty's gain comes from, with no premise. With the rest of the
   whole counted, every rise is given: across a step at which a family's stock rises, some relatum
   gives it more than it takes, a formation taking part or the rest, found by checking each one taking

@@ -1,0 +1,507 @@
+{
+  "schema_version": 2,
+  "id": "loops-within-what-a-law-reads",
+  "title": {
+    "zh": "回路在律所读之内，经过储量的回路在断裂处形成",
+    "en": "Loops lie within what a law reads, and the loop through a stock forms at its break"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "未读的水平耦合强度为零，所以回路在律所读之内，在读增长之处形成；对每个只在储量低于阈值时才读它的律，储量的抬高到断裂为止不被带到任何处，断裂之前没有经过储量的回路：经过储量的回路在断裂处形成。",
+    "en": "An unread level is coupled with strength zero, so loops lie within what a law reads and form where reading grows; for every law reading a stock only below a threshold, a raise is carried nowhere up to the break, with no loop through the stock before it: that loop forms at the break."
+  },
+  "laws": [
+    {
+      "zh": "一个律读一个时程：对部分之外的每个形成，在所标条件上至该步一致的历史下律给得相同。未读的水平耦合强度为零，所以限于所读的强度是律的强度。每个读已立者的律读全部；经识而读的律读每个覆盖其识的时程，其进程是经识的策略。",
+      "en": "A law reads a schedule when, for each formation outside the part, it gives alike under histories agreeing up to the step on the conditions marked. An unread level is coupled with strength zero, so the strengths restricted to what is read are strengths of the law. Every law of what has stood reads everything; a law reading through a registration reads every schedule covering it, and its courses are policies through registration.",
+      "declarations": [
+        "Becoming.ExchangeLaw.ReadsAt",
+        "Becoming.restrictReads",
+        "Becoming.ExchangeLaw.ReadsAt.respondsWithin_unread",
+        "Becoming.ExchangeLaw.ReadsAt.restrict",
+        "Becoming.ExchangeLaw.Nonanticipating.readsAt_all",
+        "Becoming.ExchangeLaw.Through.readsAt",
+        "Becoming.ExchangeLaw.Through.policyThrough"
+      ]
+    },
+    {
+      "zh": "回路在所读之内：限于所读的强度的每个耦合读其水平；汲取回应它所降低的水平只在它读之处；无人读的水平下游只有它自己，没有回路经过它；回路在一步形成只经过在那一步读其所给之处下游一个水平的形成。",
+      "en": "Loops lie within what is read: every coupling of the restricted strengths reads its level; a draw responds to the level it lowers only where it reads it; downstream of a level nothing reads lies only itself, and no loop passes through it; a loop forms at a step only through a formation reading there a level downstream of where it gives.",
+      "declarations": [
+        "Becoming.Thresholds.cond_pos",
+        "Becoming.Thresholds.pos_cond",
+        "Becoming.couplesAt_reads",
+        "Becoming.couplesAt_of_reads",
+        "Becoming.couples_reads",
+        "Becoming.self_coupling_reads",
+        "Becoming.upstream_unread",
+        "Becoming.not_onLoop_unread",
+        "Becoming.onLoop_succ_reads"
+      ]
+    },
+    {
+      "zh": "无人读者不被带到任何处：对每个读一个时程的律，两个平衡的进程在场的形成相同、部分动作相同、其余遵从律，起始只在一个储量上不同时，在部分之外无人读这个储量之前，别处都相同，储量之差保持。",
+      "en": "What nothing reads is carried nowhere: for every law reading a schedule, two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in a stock, are alike everywhere else, the stock's gap held, until something outside the part reads the stock.",
+      "declarations": [
+        "Becoming.Thresholds.raise_step",
+        "Becoming.Thresholds.same_step",
+        "Becoming.held_while",
+        "Becoming.unread_carried_nowhere"
+      ]
+    },
+    {
+      "zh": "断裂：律只在储量低于阈值时才读它，是说储量立于阈值时它只读储量立着；经识而读、部分之外无人观察储量、阈值不低于各自所需者的律都是这样。对每个这样的律，储量抬高多少，到断裂为止别处都相同、储量高出所抬高者：断裂还有多远不被带到任何处。",
+      "en": "The break: a law reads a stock only below a threshold when, while the stock stands at the threshold, it reads only that it stands; every law reading through a registration in which no formation outside the part observes the stock, with the threshold at least each need of it, is such a law. For every such law, however much the stock is raised, up to the break everything else is alike and the stock stands higher by the raise: the distance to the break is carried nowhere.",
+      "declarations": [
+        "Becoming.ExchangeLaw.ReadsBelow",
+        "Becoming.break_carried_nowhere",
+        "Becoming.Thresholds.le_of_not_lt",
+        "Becoming.ExchangeLaw.Through.readsBelow"
+      ]
+    },
+    {
+      "zh": "断裂之前律就是其立律（储量低于阈值之处读作立于阈值）；立律不读储量，对储量的耦合强度为零，没有经过储量的回路，储量下游只有它自己：经过储量的回路在断裂处形成。储量在条件中由给出的标记标出，不判定条件。",
+      "en": "Before the break the law is its standing law, reading the stock as standing at its threshold wherever it stands below it; the standing law does not read the stock, is coupled to it with strength zero and has no loop through it, only the stock lying downstream of it: the loop through the stock forms at the break. The stock is marked among the conditions by a marking given with it, so no decision on conditions is used.",
+      "declarations": [
+        "Becoming.standAt",
+        "Becoming.offStock",
+        "Becoming.ExchangeLaw.standing",
+        "Becoming.standAt_stock",
+        "Becoming.standAt_unmarked",
+        "Becoming.standAt_of_stands",
+        "Becoming.offStock_stock",
+        "Becoming.offStock_other",
+        "Becoming.ExchangeLaw.ReadsBelow.standing_readsAt",
+        "Becoming.ExchangeLaw.ReadsBelow.standing_unread",
+        "Becoming.ExchangeLaw.ReadsBelow.standing_no_loop",
+        "Becoming.ExchangeLaw.Nonanticipating.standing_alike",
+        "Becoming.Flow.follows_standing_before"
+      ]
+    },
+    {
+      "zh": "汲取的见证：一个形成在储量立于 N + 1 时每步从储量汲取一个单位给产物，只在低于 N + 1 时读储量。它的每个强度都把储量耦合到自身，一圈的回路，而断裂之前它给得如其立律，对储量强度为零；一步上一个进程的储量低于阈值、抬高者的立着，那一步抬高者多给产物一。",
+      "en": "The draw witness: a formation draws one unit from a stock and gives it to a product at each step while the stock stands at N + 1, reading the stock only below N + 1. Every strengths of it couple the stock into itself, a loop of one, while before the break it gives as its standing law, with strength zero from the stock; at a step where one course's stock stands below the threshold and a raised one's at it, the raised course gives one more to the product across that step.",
+      "declarations": [
+        "Becoming.Thresholds.Draw.law",
+        "Becoming.Thresholds.Draw.nonanticipating",
+        "Becoming.Thresholds.Draw.reads",
+        "Becoming.Thresholds.Draw.strength_pos",
+        "Becoming.Thresholds.Draw.onLoop",
+        "Becoming.Thresholds.Draw.only",
+        "Becoming.Thresholds.Draw.forms_at_break",
+        "Becoming.Thresholds.Draw.diverges_at_break"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。各定理所写者写在定理中：律所读的时程（ReadsAt）或只在储量低于阈值时才读它（ReadsBelow）；强度 k 是给出的界；两个进程平衡、在场的形成相同、部分动作相同、其余遵从律，起始只在储量上不同；立律与断裂之前的一致要求律读已立者。",
+      "en": "No axiom. What each theorem needs is written into it: the schedule a law reads (ReadsAt) or its reading a stock only below a threshold (ReadsBelow); the strengths k as supplied bounds; two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in the stock; the agreement with the standing law before the break needs the law to read what has stood."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "一个形成怎样开始观察它所依赖的储量；律读什么、阈值在哪里。",
+      "en": "How a formation comes to observe a stock it depends on; which schedule a law reads and where its threshold lies.",
+      "kind": "scope"
+    },
+    {
+      "zh": "只在高于阈值时才读或其他形状的读：抬高可能改变读，未陈述。",
+      "en": "Reading only above a threshold, or in other shapes: a raise may change the reading, not stated.",
+      "kind": "scope"
+    },
+    {
+      "zh": "与 Becoming.Runaway 的“其余固定”比较强弱：那里其余任意而固定，这里其余遵从律而不必固定，两者都不蕴含另一个。",
+      "en": "A comparison with the rest fixed in Becoming.Runaway: there the rest is arbitrary but fixed, here it follows the law without being fixed, and neither implies the other.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
+      "detail": {
+        "zh": "汲取的见证：律的每个强度都把储量耦合到自身，强度之界看不出回路只在断裂处闭合；断裂之前的动力学是没有这个回路的立律。",
+        "en": "The draw witness: every strengths of the law couple the stock into itself, so a bound on strengths does not show that the loop closes only at the break; before the break the dynamics are those of the standing law, which has no such loop."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Thresholds 的 45 项声明（38 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §157；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 45 declarations of Becoming.Thresholds, 38 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 157; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "一个形成怎样开始观察它所依赖的储量；只在高于阈值时或其他形状的读；断裂之后实际的失控（回应的下界）；独立审查；Ren 对读法的判断。",
+    "en": "How a formation comes to observe a stock it depends on; reading only above a threshold, or in other shapes; the actual runaway after the break (lower bounds on responses); an independent review; Ren's judgment on the readings."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-16 取的 P118 第三项读法与 P122 留下“一个形成的汲取开始回应其汲取所降低的水平，那里与 Becoming.Runaway 相遇”；AI 问是否开始把回路的形成与 Runaway 的策略接起来，Ren 答“please”。本结果在一个律中接起来。读法（AI 的，待 Ren）：失控的断裂就是回路形成之处，Becoming.Runaway 的不识与 Becoming.Closing 的形成是同一件事的两面；能识距离者是断裂之前对储量水平的读，它使回路更早形成。",
+    "en": "P118's third reading as Ren took it on 16 October 2026, and P122, left open “where a formation's drawing comes to respond to the level its drawing lowers, where this meets Becoming.Runaway”; asked whether to start joining loop formation with Runaway's policies, Ren wrote “please”. This result joins them within one law. Readings (the AI's, pending Ren): a runaway's break is where a loop forms, the blindness of Becoming.Runaway and the formation of Becoming.Closing being one event seen from two sides; what registers the distance is a reading of the stock's level before the break, which forms the loop earlier."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
+  "aliases": [
+    "loops within what a law reads",
+    "回路在律所读之内",
+    "what a law reads",
+    "律所读",
+    "reading bounds coupling",
+    "读限制耦合",
+    "the break",
+    "断裂",
+    "standing law",
+    "立律",
+    "stock read only below a threshold",
+    "只在低于阈值时才读的储量",
+    "distance to the break carried nowhere",
+    "断裂还有多远不被带到任何处",
+    "draw witness",
+    "汲取的见证"
+  ],
+  "dependencies": [
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ExchangeLaw、GivesAlike、Nonanticipating、Through、Follows、ActsAlike 与 totals_alike_of_each：律、读与两个进程的比较。",
+        "en": "Reuses ExchangeLaw, GivesAlike, Nonanticipating, Through, Follows, ActsAlike and totals_alike_of_each: the law, its reading and the comparison of two courses."
+      },
+      "interface": {
+        "output": {
+          "zh": "交换之律；经识而读；进程遵从律。",
+          "en": "Laws of exchange; reading through registration; courses following a law."
+        },
+        "input": {
+          "zh": "读一个时程的律；只在低于阈值时读储量的律；两个进程的保持。",
+          "en": "Laws reading a schedule; laws reading a stock only below a threshold; holding across two courses."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    },
+    {
+      "id": "how-much-difference-arrives",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 RespondsWithin、exchangeGap 与 gap：耦合强度。",
+        "en": "Reuses RespondsWithin, exchangeGap and gap: coupling strength."
+      },
+      "interface": {
+        "output": {
+          "zh": "耦合强度。",
+          "en": "Coupling strengths."
+        },
+        "input": {
+          "zh": "未读的水平强度为零；限于所读的强度；见证的强度为正。",
+          "en": "Strength zero on unread levels; restricted strengths; positive strength in the witness."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean"
+      }
+    },
+    {
+      "id": "how-a-carried-difference-grows",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Couples、Coupled、OnLoop 与 Upstream：回路在所读之内。",
+        "en": "Reuses Couples, Coupled, OnLoop and Upstream: loops lie within what is read."
+      },
+      "interface": {
+        "output": {
+          "zh": "耦合、链、回路、上游。",
+          "en": "Couplings, chains, loops, upstream."
+        },
+        "input": {
+          "zh": "每个耦合读其水平；没有回路经过无人读的水平。",
+          "en": "Every coupling reads its level; no loop passes through a level nothing reads."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean"
+      }
+    },
+    {
+      "id": "how-loops-form",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 strengthsBefore 与 onLoop_succ_iff：回路在读增长之处形成。",
+        "en": "Reuses strengthsBefore and onLoop_succ_iff: loops form where reading grows."
+      },
+      "interface": {
+        "output": {
+          "zh": "到某步形成的回路；回路由闭合而形成。",
+          "en": "Loops formed by a step; a loop forms by closing."
+        },
+        "input": {
+          "zh": "回路在一步形成只经过在那一步读的形成。",
+          "en": "A loop forms at a step only through a formation reading there."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean"
+      }
+    },
+    {
+      "id": "runaway-distance-unregistered",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.PolicyThrough：经识而读之律的进程是经识的策略；断裂不被识对整个律成立。",
+        "en": "Reuses Flow.PolicyThrough: the courses of a law reading through registration are policies through it; the break unregistered holds for whole laws."
+      },
+      "interface": {
+        "output": {
+          "zh": "经识的策略；断裂之前储量抬高不被识。",
+          "en": "Policies through registration; a raise unregistered before the break."
+        },
+        "input": {
+          "zh": "对每个只在低于阈值时读储量的律，抬高到断裂为止不被带到任何处。",
+          "en": "For every law reading a stock only below a threshold, a raise carried nowhere up to the break."
+        },
+        "conditions": {
+          "zh": "其余遵从律（不是其余固定）。",
+          "en": "The rest following the law (not the rest fixed)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "what-a-cut-loses",
+      "detail": {
+        "zh": "复用 CouplesAt：在某步作用的耦合。",
+        "en": "Reuses CouplesAt: couplings acting at a step."
+      }
+    },
+    {
+      "id": "every-origin-passes-the-gate",
+      "detail": {
+        "zh": "那里识与检验之门；这里识限制耦合，回路在所读之内。",
+        "en": "There the gate of registration and testing; here registration bounds coupling, and loops lie within what is read."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
+      "role": "proof",
+      "sha256": "ade21fdf9bcc008fbb4297e61618f612ca880e71d8086821a173853b62858cb0",
+      "declarations": [
+        "Becoming.Thresholds.cond_pos",
+        "Becoming.Thresholds.pos_cond",
+        "Becoming.Thresholds.raise_step",
+        "Becoming.Thresholds.same_step",
+        "Becoming.ExchangeLaw.ReadsAt",
+        "Becoming.restrictReads",
+        "Becoming.ExchangeLaw.ReadsAt.respondsWithin_unread",
+        "Becoming.ExchangeLaw.ReadsAt.restrict",
+        "Becoming.ExchangeLaw.Nonanticipating.readsAt_all",
+        "Becoming.ExchangeLaw.Through.readsAt",
+        "Becoming.ExchangeLaw.Through.policyThrough",
+        "Becoming.couplesAt_reads",
+        "Becoming.couplesAt_of_reads",
+        "Becoming.couples_reads",
+        "Becoming.self_coupling_reads",
+        "Becoming.upstream_unread",
+        "Becoming.not_onLoop_unread",
+        "Becoming.onLoop_succ_reads",
+        "Becoming.held_while",
+        "Becoming.unread_carried_nowhere",
+        "Becoming.ExchangeLaw.ReadsBelow",
+        "Becoming.break_carried_nowhere",
+        "Becoming.Thresholds.le_of_not_lt",
+        "Becoming.ExchangeLaw.Through.readsBelow",
+        "Becoming.standAt",
+        "Becoming.offStock",
+        "Becoming.ExchangeLaw.standing",
+        "Becoming.standAt_stock",
+        "Becoming.standAt_unmarked",
+        "Becoming.standAt_of_stands",
+        "Becoming.offStock_stock",
+        "Becoming.offStock_other",
+        "Becoming.ExchangeLaw.ReadsBelow.standing_readsAt",
+        "Becoming.ExchangeLaw.ReadsBelow.standing_unread",
+        "Becoming.ExchangeLaw.ReadsBelow.standing_no_loop",
+        "Becoming.ExchangeLaw.Nonanticipating.standing_alike",
+        "Becoming.Flow.follows_standing_before",
+        "Becoming.Thresholds.Draw.law",
+        "Becoming.Thresholds.Draw.nonanticipating",
+        "Becoming.Thresholds.Draw.reads",
+        "Becoming.Thresholds.Draw.strength_pos",
+        "Becoming.Thresholds.Draw.onLoop",
+        "Becoming.Thresholds.Draw.only",
+        "Becoming.Thresholds.Draw.forms_at_break",
+        "Becoming.Thresholds.Draw.diverges_at_break"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.GivesAlike",
+        "Becoming.ExchangeLaw.Nonanticipating",
+        "Becoming.ExchangeLaw.Through",
+        "Becoming.Flow.Follows",
+        "Becoming.Flow.ActsAlike",
+        "Becoming.Flow.totals_alike_of_each"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "7cbd5dd1a8dca8305d3577091db9e2462c7109c75bfde6c68e0c6564aa012cd1",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsWithin",
+        "Becoming.ExchangeLaw.exchangeGap",
+        "Becoming.ExchangeLaw.exchangeGap_of_alike",
+        "Becoming.gap",
+        "Becoming.gap_add_self"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "role": "proof",
+      "sha256": "d1b1aa59dc90ce1c2bc8dc02fd62eed2caff3e090a26392f5bf1041a27dd9ce7",
+      "declarations": [
+        "Becoming.Couples",
+        "Becoming.Coupled",
+        "Becoming.OnLoop",
+        "Becoming.Upstream",
+        "Becoming.Loops.beq_self",
+        "Becoming.Loops.ble_succ_self"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+      "role": "proof",
+      "sha256": "346bf7aa5c64896066189d4388cfe735f2be7264526e77e9590a2ea4991d0a71",
+      "declarations": [
+        "Becoming.CouplesAt",
+        "Becoming.couples_iff_couplesAt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+      "role": "proof",
+      "sha256": "e9bc3132e3359e9e513a638f7999bd8bf1c1b08ae382ef708a2c7682f8afbe17",
+      "declarations": [
+        "Becoming.strengthsBefore",
+        "Becoming.onLoop_succ_iff",
+        "Becoming.Closing.ble_false_of_lt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
+      "role": "proof",
+      "sha256": "014cbac478d3eff0eccbc1bce3fee73315b78262e745842d1ce4c6c61be1d55a",
+      "declarations": [
+        "Becoming.Flow.PolicyThrough"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "39b89d106a813b1c700d979f56aea2a0465fca3200b1c32e8e37bed437ff9064",
+      "declarations": [
+        "Becoming.Web.Registers",
+        "Becoming.Web.RegistersAlikeUpTo"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow",
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.taken",
+        "Becoming.Flow.given"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "declarations": [
+        "Becoming.Web",
+        "Becoming.add_right_cancel"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "role": "proof",
+      "sha256": "7f4d7591518044d188644cbaa426e532a92a18818b517c6b6cf7bd958b83046e",
+      "declarations": [
+        "Becoming.Web.Admits"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "role": "proof",
+      "sha256": "bf2a0fdce8641d57432465c179129ab9ad74ccc684e31486bc6c500e65ff8c22",
+      "declarations": [
+        "Becoming.Web.DependsOn"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "declarations": [
+        "Becoming.le_succ_cases"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "bf81218edd5c67f967e663472ef1d01fe66866b82f2f9025363941bb2a9f17b9",
+      "declarations": [
+        "Becoming.total"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "970b53cb8eb2cca633352f898f5b780936db57d60bd22ee8965e7f5ec8d02ea9"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "6ec9380c5e6005da458a85fab63d8dcd43dd62c6de59e1e41dc2d98c64c23d5f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-loop-formation-and-policies-go.md",
+      "role": "provenance",
+      "sha256": "15dd681e5c75f76bc4ad03147001f97b86d3f5594a70085ed40f29931396c686"
+    }
+  ],
+  "proof_bindings": [],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，按 Ren 同日“please”（P124）：在一个律中把回路的形成与 Becoming.Runaway 的策略接起来；研究 §157。",
+      "en": "16 October 2026: added, on Ren's “please” of the same day (P124): joining loop formation and Becoming.Runaway's policies within one law; study section 157."
+    }
+  ],
+  "text_versions": []
+}
