@@ -104,6 +104,7 @@ import Becoming.Reading
 import Becoming.Readings
 import Becoming.Coupling
 import Becoming.Sensitivity
+import Becoming.Courses
 
 /-!
 # The Theory of Becoming: the formal core
@@ -991,6 +992,19 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   of the tail is sensitive to no condition and still differs, and the registrations it reads
   through have no least one; with the conditions numbered, every counterexample to the least
   registration gives the weak limited principle of omniscience.
+* `Becoming.Courses` (L4): the apart laws read on the shared base, with no premise beyond what each
+  law names. Laws stated for a sequence, a history, a law of change, a pool or a list of
+  configurations are stated on the courses of a process, a frame's configurations or a web's
+  conditions: an admissible history is a run of the disturbed process, a determined law's orbit
+  is the course of its process, a partial law's run is a trace of its process, a dated history is
+  a run, and a reduction of a run is a run of the law read through it. So lasting, exhaustion and
+  reaching, the reserved exit and unfuelled work, retrodiction, copying and inspection, grouping
+  and reading words, resolution across situations, readout and judging through a reduction,
+  fallible witnesses, masses of claims and draws on a condition, a formation's system, relations
+  among parts and the generative frontier are each a law of the one unfolding's courses; no
+  definition changes. `Becoming.CoursesBridge`, outside the core, reads the comparison under every
+  classification of fresh contents on a frame's configurations, where a generative extension
+  needs no excluded middle.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

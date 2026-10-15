@@ -7,6 +7,7 @@ import Becoming.GranularityBridge
 import Becoming.RepairComparison
 import Becoming.Instances
 import Becoming.RenewalBridge
+import Becoming.CoursesBridge
 open Lean
 
 /-!

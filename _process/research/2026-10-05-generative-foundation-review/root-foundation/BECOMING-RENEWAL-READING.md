@@ -8809,6 +8809,95 @@ theorem lpo_of_vanish_decided (decides : ∀ α : Nat → Nat, Decidable (Vanish
 
 **边界。** 落地运行须在 `check_becoming.py` 中编译与审计新模块，再把新记录绑定到回执。`DECIDABILITY-INVENTORY.py` 把 `vanishIndicator` 与 `tailLaw` 记作造出指示的构造（其陈述以消失之判定为自己的条件），把最小的识的八条定理记作只在证明中分辨相同（混合条件，如 `Becoming.Counterfactual`），把 `lpo_of_vanish_decided` 记作只在证明中分情形；`WLPO.of_lpo`、`mixed_decides`、`wlpo_of_insensitive_differs` 与 `wlpo_of_not_through_sensitive` 的结论是已判定的命题，记为证明可判定的行。既有模块的字节不变。理论中回应由动力学给出一段原列“何时一个动作是部分自己的”为不推出，P109 落地时没有改；本节一并指向 `Becoming.Coupling`。
 
+## 138. 散立的模块在共同基底上陈述：每条律是同一展开之历程的律（Becoming.Courses、Becoming.CoursesBridge；P114）
+
+2026-10-16。Ren 2026-10-15 问：“so for our theories, they are proved in a dag order and can be all connected right?”（[测量](THEOREM-CONNECTIVITY.md)）。证明按有向无环的次序排列由 Lean 保证；在定理层面，main `c143e7d9`（P113 之后）的 6136 条脊柱定理中 971 条既不用到基础（过程族 `Generative.Process`／`Trace`、`Becoming.Frame`／`Run`，或世界族 `Becoming.World`／`Flow`／`Web`），也不被用到基础的定理所用；26 项有脊柱别名的记录只靠这样的定理。依 Ren 2026-10-11 “one theory, worked together”与 2026-10-14 “a lot proofs are probably not integrated”，本节在第一部分之内把这些模块的主律在基础上陈述：不加公理，不加前提，只有实例。两族是否由一族定义另一族（一个定义之根）不在此处，待 Ren。工作板上认领为 P114。
+
+```text
+Result(s): 不新增成果；26 项既有记录各得一个陈述到达基础的别名（成果与范围不变）：acquired-binding-compositional-use、
+           binding-preserving-substitution、classification-robust-generative-comparison、control-coherence-loss、
+           draws-on-a-shared-stock、enacted-scene-binding、encounter-selection-and-revision、fallible-witness-diagnosability、
+           formed-copying-correction、formed-copying-registration、fulfillment-chance-floor、growth-constrained-fragmentation、
+           historical-source-binding、inherited-structural-copying、losses-of-the-sum-over-histories、
+           market-finite-support-obstruction、market-partial-correction-boundary、market-supported-finite-transition、
+           material-preparation-output、organizational-formation-from-generative-comparison、reserved-shutdown-during-recovery、
+           retrospective-source-binding、risk-certificate-outcome-distinction、separation-loses-the-relation、
+           transition-grouping-word-partition、versioned-request-completion
+Delta: 新核心模块 Becoming.Courses（L4；87 项定理、97 项声明）与新桥接模块 Becoming.CoursesBridge（3 项定理）；不改已有模块与定义
+Supplied premises / correspondence: 不加公理与前提；每条实例的假设即所实例化之律的假设；对应是识别：受扰之律的可容许历史是受扰过程
+       的运行，确定之律的轨道是其过程的历程，部分之律的运行是其过程的轨迹，带日期的历史是运行，约化运行是经约化而读之律的运行，
+       网的步经条件水平而读，形成的系统是共享条件下的闭包，框架的构型是被比较的历史
+Evidence: scratch_build 对 main c143e7d9：Becoming.Courses 87 项定理、Becoming.CoursesBridge 3 项，公理报告全部为空，无警告；
+          根模块 Becoming 与其导入闭包一同编译，无重名；定理层面的测量（THEOREM-CONNECTIVITY.py）与清点在同一字节上运行；
+          合并检查器回执待整合者的运行
+Boundary: 只是实例；两族仍互不到达；799 条定理仍独立（380 条不被任何常量使用），整模块独立的 Quantum、Learnable 不被任何记录
+          所依；不含新的伦理谓词（CoursesBridge 读既有的 J1/J2 比较，不用也不断言 G0）
+Integration: §9 新增两行；Becoming.lean 的导入与模块说明；check_becoming.py 的核心与桥接之列；Lean README 一行与层内导入；
+       DECIDABILITY-INVENTORY.py 的分类；THEOREM-CONNECTIVITY-DUMP.lean 导入新桥接模块；26 项记录的引用、绑定、别名与历史在落地时写入
+       （becoming-p114-landing/apply_p114.py）
+```
+
+**一、识别。** 散立的模块对一个序列、一段历史、一个变化之律、一个池或一张构型列表陈述其律，所陈述的对象就是基础自己的对象。受扰之律 `f` 在可容许扰动下的历史，就是受扰过程 `Viability.disturbed f adm` 的运行（`run_history`、`run_admissible`；反之 `historyRun`）。确定之律 `next` 的轨道就是其过程 `Law.process next` 的历程：历程止于其长度处的轨道（`trace_orbit`），轨道第 `k` 处是 `k` 步历程的终点（`orbit_trace`），过程所到达者恰是轨道（`reach_iff_orbit`），`k` 步的计划完成恰当目标在轨道第 `k` 处成立（`completes_units_iff`）。部分之律的运行是其过程 `Assurance.ofPartial` 的轨迹。带日期的历史是运行；每种变化都被容许的过程（`anyChange`）使每个构型序列都是运行（`anyRun`）。一个运行的约化是经约化而读之律的运行（`reducedRun`，`Readout.image`）。
+
+**二、主律在历程上。** 每条都是所实例化之律经上面的识别而得，假设不变。
+- **持续与到达**（Lasting）：起点持续 `n` 步，恰当受扰过程从它出发、至多 `n` 个扰动的每条历程都留在护栏之内（`lasts_iff_courses`），所以恰当有梯级族或每个必要族在第 `n` 级含起点（`courses_iff_ladder`、`courses_iff_necessary`）；耗竭在每个运行上成立（`Drains.leaves_run`、`exhausts_run`）。确定之律永不到达目标，恰当一个含起点、避开目标的封闭集存在（`avoids_iff_closed_reach`、`some_avoids_iff_reach`、`fixed_avoids_reach`）；漏斗与盆在每个运行上到达（`Funnel.runs`、`basin_runs`），至多 `n` 步的历程到达恰当一个漏斗含起点，目标判定时恰当一个数值变式（`course_reaches_iff_funnel`、`course_reaches_iff_variant`）。
+- **保留的出口与无燃料的工作**（Countdown）：被容许的计划作为部分之律过程的计划完成于有效构型，长于余量者完成于出口（`runs_valid_completes`、`exits_completes`）；无燃料的工作在 `work + 1` 步内完成，更短的每条历程都使任务待处理（`Advances.completes_plan`、`pending_before_course`）。
+- **回溯**（Retrodiction）：以运行为历史，读对恰是每个对手运行被某个带日期的控制分开（`runs_reading_right_iff`、`runs_look_right_iff`）；两端的控制使其间的日期在每个运行上都已定，恰当至多容许一次变化或其间没有日期（`runs_settle_iff`）。
+- **复制与检验**（Copying）：复制完成、产出该词、使池为空，作为其确定过程的计划，恰如复制之律所说（`copy_completes_iff`、`copy_built_iff`、`copy_empties_iff`），产物沿每条历程只增（`copy_grows`），经接触而读亦然（`reading_completes_iff`）；检验是一个过程，在忠实位置上的历程不使缺陷上升（`inspection_le_iff`、`inspection_course_le`）；共享一个池的复制是释放之律的历程（`every_released_iff_course`、`release_course_iff`、`lineage_course_iff`）。
+- **词与解析**（Segmentation、CrossSituational）：每个词是从 `s` 回到 `s` 的历程时，每个由词组成者也是（`encode_course`），分组与读出对每条这样的历程成立（`course_words_iff`、`course_chunks_iff`、`no_run_record_groups`、`course_reads_iff`）；运行的诸步作为记录只收窄候选（`run_candidates_append`、`run_narrows`、`run_stays_iff`），解析恰是分开（`run_resolves_iff`、`run_resolves_explained_iff`、`course_resolves_every_iff`）。
+- **约化、证人与质量**（Readout、Weighted）：约化不还原它所合并的两个运行，解码与判断恰在观察量于合并处相同时可能（`runs_no_restore`、`runs_decoder_pair_iff`、`run_judges_iff`、`no_run_judge_of_merged`）；网的两步在经条件的每个读法下相同恰当水平相同（`steps_agree_iff_levels`、`supplied_agree_iff_levels`）；运行在列出日期上的识是可错的证人（`run_reports_apart`、`dates_no_common_report_iff`、`dates_no_common_report_envelopes_iff`）；框架构型上主张的质量、网中对一个条件的汲取、环上历程的加倍（`claims_every_weighting_iff`、`claims_floor`、`selections_within_iff`、`supported_not_together`、`loop_courses_double`）。
+- **系统、关系与前沿**（Feedback、Description、Decidedness）：形成的系统即共享条件下的闭包，由封闭区域证明（`system_iff_certified`、`not_within_system_of_closed`）；沿确定之律的历程，各自移动的部分保持无关，不合并的移动保持关系，复制关联，遗忘解除，耦合关联又解除（`courses_keep_unrelated`、`relation_persists_courses`、`copy_relates_course`、`forgetting_unrelates_courses`、`coupling_course`）；框架构型的列出选项表在生成扩展下有前沿，任务由前沿完成恰当缺之者都被扩展（`extension_frontier_exists`、`extension_frontier_has_iff`）。
+
+**三、分类未定的比较在框架上（桥接）。** `ClassificationRobustJudgment` 对任意类型的历史比较其基本内容、增益与新内容，新内容以任意 `q` 分为基本或增益。`Becoming.Bridge` 以具名排中律证其判据，并证排中律恰是它对每个类型所需（`classification_robust_iff_of_em`、`classification_robust_iff_iff_em`）。在框架的构型上，基本内容即框架在那里实现者，判据如前（`frame_classification_robust_iff_of_em`）。沿生成扩展（`Extension F living b a`：`a` 实现 `b` 所实现的一切及一个 `b` 所缺的活内容）不需排中律：`a` 在每种分类下都被严格偏好，恰当它保留 `b` 的每个新内容（`extension_classification_robust`、`extension_classification_robust_iff`）。排中律只在两边基本内容相同、比较转到增益时才需要；生成扩展不到那一情形。
+
+```lean
+theorem lasts_iff_courses {n : Nat} {s : S} :
+    Lasts f adm guard n s ↔
+      ∀ plan t, Trace (disturbed f adm) s plan t → plan.length ≤ n → guard t
+
+theorem avoids_iff_closed_reach {s : S} :
+    (∀ t, Reach (Law.process next) s t → ¬ target t) ↔
+      ∃ K : S → Prop, K s ∧ (∀ x, K x → ¬ target x) ∧ ∀ x, K x → K (next x)
+
+theorem run_judges_iff [DecidableEq K] {V : Type x} (π : S → K) (f : S → V) (d : V) (r : Run P)
+    (n : Nat) :
+    (∃ judge : K → V, ∀ k, k < n → judge ((reducedRun π r).state k) = f (r.state k)) ↔
+      ∀ j k, j < n → k < n → π (r.state j) = π (r.state k) → f (r.state j) = f (r.state k)
+
+theorem extension_classification_robust_iff (living : C → Prop) (g : S → G → Prop)
+    (f : S → N → Prop) {a b : S} (wider : Extension F living b a) :
+    (∀ q, ClassificationRobustJudgment.compared F.realized g f q a b) ↔
+      PracticalJudgment.Included (f b) (f a)
+```
+
+**四、测量。** `THEOREM-CONNECTIVITY.py` 在同一字节上（不重新编译，从共享缓存还原）：
+
+| 类 / Class | `c143e7d9` | P114 |
+|---|---:|---:|
+| 陈述用到两族 / statement on both families | 124 | 124 |
+| 陈述用到过程族 / statement on Process/Frame/Run/Trace | 1,110 | 1,186 |
+| 陈述用到世界族 / statement on World/Flow/Web | 2,615 | 2,621 |
+| 证明经过某一族 / proof through a family | 19 | 19 |
+| 被基础上的定理使用 / used by a theorem on the base | 1,297 | 1,477 |
+| 独立 / apart（自身词汇 + 只用前导库） | 971（885 + 86） | 799（736 + 63） |
+| **共计 / total** | **6,136** | **6,226** |
+
+独立而不被任何常量使用者 416 → 380；无向依存图的连通分支 63 → 59，主分支之外的定理 34 → 10。新定理 90 条，独立者减少 172 条：所实例化之律因被用到而不再独立。整模块独立的 Segmentation（17/17）与 Feedback 中的两条已无独立者；Copying 58 → 17、Lasting 63 → 33、CrossSituational 37 → 14、Weighted 30 → 16、Readout 18 → 5、Retrodiction 17 → 6。记录按其最佳别名之类：加上落地包的别名后，26 项都到达陈述的类（过程族 62 → 85，世界族 67 → 70），只靠独立定理者 26 → 0（落地包 `--dry` 在临时副本上计）。
+
+**读法（AI 的，待 Ren）。**
+1. **一个展开，不是许多模型。** 这些模块原是对“一个序列”“一个池”陈述的；识别表明它们的对象本是同一展开的历程：扰动历史、轨道、计划、带日期的记录、约化，都是过程的运行或轨迹。所以“每条律是同一展开之历程的律”在这些模块上已证，而不是形式上的另一模型。
+2. **两族仍是两个根。** 过程族与世界族在 124 条陈述中相遇，互不到达；本节不改变这一点。是否以一族定义另一族，待 Ren。
+
+**作者反审。**
+1. **新成果还是包装？** 这些是实例，多数证明只有几行：识别加上所实例化之律。AGENTS.md 说包装、重查与改名不是独立成果；所以本节不新增记录，只给既有记录到达基础的别名。几处有实质的步骤：`run_history` 与 `historyRun` 把可容许历史与受扰过程的运行一一对应；`reach_iff_orbit` 使确定之律的到达成为轨道；`run_judges_iff` 在运行的前 `n` 个日期上不用选择给出判断者（经 `visited` 列出已访构型）；`runs_settle_iff` 是对所有运行的等价，从对所有运行成立推出条件时用 `anyRun` 把任意构型序列作为运行；`extension_classification_robust_iff` 指出生成扩展上分类判据不需排中律，这一点 `Becoming.Bridge` 没有陈述。
+2. **是否偷换了律的含义？** 每条实例的假设与所实例化之律相同，只是对象换成基础的对象；识别本身是定理（`run_history`、`trace_orbit`、`orbit_trace`、`reach_iff_orbit`、`completes_units_iff`、`steps_orbit`），不是假设。`anyChange` 容许每种变化，所以以它的运行陈述的等价（`runs_settle_iff`、`dates_no_common_report_iff`）与原来对一切序列的陈述等价；对受限过程只有充分方向（`run_settles`、`run_reports_apart`）。
+3. **测量是检查吗？** 不是：它读编译环境中的依存，不判断陈述的意义。到达基础只说明 Lean 中有一条陈述把律读作基础上的律；律的科学意义与范围仍由各记录说明。
+4. **范围。** 799 条仍独立。Identification（67/105）、Learning（63/75）、ReferencePlan（46/58）、Quantum（37/37）、Learnable（17/17）等不被任何只靠独立定理的记录所依，本节未处理；可同样以实例接入。
+
+**检查。** 在暂存区对 main（`c143e7d9`，P113 之后）编译：`Becoming.Courses` 87 项定理、97 项声明，`Becoming.CoursesBridge` 3 项定理，没有错误或警告，公理报告全部为空；根模块 `Becoming` 与其导入闭包一同编译，没有重名；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。清点（`DECIDABILITY-INVENTORY.lean`）在同一字节上运行（跳过回执核对）：陈述依赖可判定性者 347 → 363，只在证明中用到者 202 → 212，取可判定族的定义 94 → 96，不用到者 0，每一新行都已分类。合并检查器在整合者的运行中检查。本节尚未经独立审查。
+
+**边界。** 落地运行须在 `check_becoming.py` 中编译与审计两个新模块，再由 `becoming-p114-landing/apply_p114.py` 把 26 项记录绑定到回执（引用、绑定、别名与历史；论断、假设与 Ren 的话不变）。`DECIDABILITY-INVENTORY.py` 把 `Courses.release` 与 `Courses.inspection` 记作分辨相同的构造，把十条只在证明中用到可判定性的实例按所实例化之律分类。既有模块的字节不变。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -10176,3 +10265,10 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **The tail.** The condition cannot be dropped: given a decision of whether levels vanish from some condition on, the tail law exchanges its indicator; it reads what has stood, is sensitive to no condition and still differs (`tailLaw_not_sensitive`, `tailLaw_differs`), and the registrations it reads through, from any condition on, have no least one (`tailLaw_no_least_registration`).
 - **Every counterexample gives omniscience.** With the conditions numbered by the natural numbers, a law of what has stood giving differently under two histories that agree on what it is sensitive to gives the weak limited principle of omniscience (`wlpo_of_not_through_sensitive`, `WLPO`), as does every law insensitive to every condition that still differs (`wlpo_of_insensitive_differs`), by mixing the two histories along a Boolean sequence; the decision the tail law takes gives the limited principle itself (`lpo_of_vanish_decided`). So no counterexample can be exhibited in the core, and the existence of one lies between `WLPO` and that decision.
 - **Readings (the AI's).** Registration is sensitivity: a formation registers what its own exchange can be changed by, one condition at a time. What depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions would be Brouwer's continuity principle, which refutes `WLPO`, and which the core neither states nor refutes. Not stated: a measure of sensitivity, and exactly where between `WLPO` and the decision of vanishing a counterexample lies. Scratch build on main `108e278e`: 47 theorems, 58 declarations, empty axiom reports; the decidability inventory classifies every new row. Not yet independently reviewed.
+
+**The apart modules read on the shared base (P114, 16 October 2026).** Ren asked on 15 October, “so for our theories, they are proved in a dag order and can be all connected right?” Lean guarantees the DAG order; at the level of theorems, on main `c143e7d9` 971 of 6136 spine theorems neither used the base (the Process family, `Generative.Process`/`Trace` with `Becoming.Frame`/`Run`, or the World family, `Becoming.World`/`Flow`/`Web`) nor were used by a theorem that does, and 26 records with spine aliases rested only on such theorems ([measure](THEOREM-CONNECTIVITY.md)). Section 138 adds one core module, `Becoming.Courses` (87 theorems), and one bridge module, `Becoming.CoursesBridge` (3), with no axiom, no premise and no definition changed.
+- **Identifications.** The apart modules' objects are the base's own: an admissible history of a disturbed law is a run of the disturbed process (`run_history`, `historyRun`); a determined law's orbit is the course of its process, so what the process reaches is the orbit and a plan of `k` moves completes exactly when the goal holds there (`trace_orbit`, `orbit_trace`, `reach_iff_orbit`, `completes_units_iff`); a partial law's run is a trace of its process; a dated history is a run; and a reduction of a run is a run of the law read through it (`reducedRun`).
+- **The laws on courses.** Lasting, exhaustion, reaching and avoiding (`lasts_iff_courses`, `Drains.leaves_run`, `avoids_iff_closed_reach`, `course_reaches_iff_funnel`), the reserved exit and unfuelled work (`runs_valid_completes`, `pending_before_course`), retrodiction (`runs_reading_right_iff`, `runs_settle_iff`), copying, inspection and copies from one pool (`copy_built_iff`, `inspection_course_le`, `release_course_iff`), grouping and resolving words (`course_words_iff`, `run_resolves_iff`), reduction and judging (`runs_no_restore`, `run_judges_iff`, with no choice), fallible witnesses (`dates_no_common_report_envelopes_iff`), masses and draws on a condition (`claims_floor`, `selections_within_iff`), a formation's system (`system_iff_certified`), relations among parts along courses (`relation_persists_courses`) and the generative frontier (`extension_frontier_has_iff`) are each stated on the courses of a process, a frame's configurations or a web's conditions, with the hypotheses of the law instantiated.
+- **Bridge.** On a frame's configurations, comparison under every classification of fresh contents is the bridge's criterion with excluded middle named (`frame_classification_robust_iff_of_em`); along a generative extension no excluded middle is needed, and preference under every classification is exactly keeping every fresh content (`extension_classification_robust_iff`).
+- **Measure.** Apart theorems 971 → 799 (416 → 380 used by nothing); theorems outside the main component 34 → 10. With the landing kit's aliases, all 26 records reach a class whose statement uses the base, and none rests only on apart theorems. The two families still do not reach each other; whether one is defined from the other awaits Ren.
+- These are instances, not new results: no record is added, and the 26 records gain references, bindings, aliases and a history entry at landing (`becoming-p114-landing/apply_p114.py`). Scratch build on main `c143e7d9`: empty axiom reports; the decidability inventory classifies every new row (347 → 363 statement rows). Not yet independently reviewed.
