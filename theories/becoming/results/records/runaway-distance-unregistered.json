@@ -130,8 +130,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z): the theorems of Becoming.Runaway and this record's local laws have empty axiom reports, and the checker verifies core purity; Testing and Dependence are now bound by 20261014T091930.724493Z. Author counterreview in the integration note; at Ren's “no extra review needed” there is no independent review."
   },
   "next_delta": {
-    "zh": "一个形成怎样开始观察它所依赖的储量（这里的策略与回路的连接由 loops-within-what-a-law-reads 给出：只在储量低于阈值时才读它的律，断裂之前没有经过储量的回路，回路在断裂处形成）；他者回应储量时的策略形式；带误差的量度。",
-    "en": "How a formation comes to observe a stock it depends on (the connection of the policies here to loops is given by loops-within-what-a-law-reads: for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break); the policy form where others respond to the stock; measurement with error."
+    "zh": "他者回应储量时的策略形式；带误差的量度。",
+    "en": "The policy form where others respond to the stock; measurement with error."
   },
   "correspondence": {
     "zh": "Ren 的“wisdoms to avoid run away feedbacks”；testing-within-registration 把失控读作在一种不见之中运行的回路，并标为启发；experiment-needs-return 之后 AI 提议在策略的层面陈述，Ren 答“no extra review needed, merge, then continue”。读法（AI 的，依 Ren 的交托采用）：失控是断裂之前自身之识与储量多出任意多的世界相同的回路；它的策略不能用上它所不识的；要避免它而又不放弃所有的，需要量度、模型（理）或他者之识；合于 Ren 10 月 4 日“理须调节心，使其正反馈循环不失控”。",
@@ -258,6 +258,13 @@
       "detail": {
         "zh": "在一个律中：回路在所读之内，在读增长之处形成；只在储量低于阈值时才读它的律，断裂之前没有经过储量的回路，回路在断裂处形成。",
         "en": "Within one law: loops lie within what is read and form where reading grows; for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break."
+      }
+    },
+    {
+      "id": "observation-is-a-route",
+      "detail": {
+        "zh": "观察是从所观察者出发的所读路线：差别只往下游去，形成只经它所读的、在储量下游的水平识储量；路线由闭合而形成。",
+        "en": "Observation is a route of readings from what is observed: a difference goes only downstream, and a formation registers a stock only through a level it reads downstream of it; a route forms by closing."
       }
     }
   ],
@@ -575,6 +582,10 @@
     {
       "zh": "2026-10-16 P124（回路在律所读之内，与断裂，研究 §157）：下一步的第一项“把这里的策略与回路相连”由 loops-within-what-a-law-reads 回答，改为一个形成怎样开始观察它所依赖的储量；related 加 loops-within-what-a-law-reads。陈述与证明不变。",
       "en": "16 October 2026, P124 (loops within what a law reads, and the break, study section 157): the first item of the next step, connecting the policies here to loops, is answered by loops-within-what-a-law-reads and becomes how a formation comes to observe a stock it depends on; related adds loops-within-what-a-law-reads. Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026-10-16 P125（观察是从所观察者出发的路线，研究 §159）：下一步的第一项“一个形成怎样开始观察它所依赖的储量”由 observation-is-a-route 回答（这里给出的 obs 是从所观察者出发的路线，直接观察是长度为零的路线），去掉；related 加 observation-is-a-route。陈述与证明不变。",
+      "en": "16 October 2026, P125 (observation as a route from what is observed, study section 159): the first item of the next step, how a formation comes to observe a stock it depends on, is answered by observation-is-a-route (the obs given here is a route from what is observed, direct observation being the route of length zero) and dropped; related adds observation-is-a-route. Statement and proofs unchanged."
     }
   ],
   "text_versions": [

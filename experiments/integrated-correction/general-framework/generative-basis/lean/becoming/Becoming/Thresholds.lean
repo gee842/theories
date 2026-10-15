@@ -36,7 +36,7 @@ exchange, with no premise beyond what each theorem names.
   the stock stands at the threshold, it reads only that it stands: every law reading through a
   registration in which no one observes the stock, with the threshold at least every need of it,
   is such a law (`ExchangeLaw.Through.readsBelow`, deciding only numbers,
-  `Thresholds.le_of_not_lt`), so `Becoming.Runaway`'s formation is an instance. For every such law, raising the stock by any amount changes nothing else up to the
+  `Thresholds.le_of_not_not`), so `Becoming.Runaway`'s formation is an instance. For every such law, raising the stock by any amount changes nothing else up to the
   break (`break_carried_nowhere`): the distance to the break is carried nowhere, for every law and
   not only for one policy with the rest fixed. With the stock marked among the conditions (a
   marking given with it, so that no decision on conditions is used), before the break the law is
@@ -57,7 +57,7 @@ exchange, with no premise beyond what each theorem names.
   more to the product across that step (`Draw.diverges_at_break`): the raise that changed nothing
   up to the break shows after it.
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, agreed by Ren on 16 October 2026: "agree in general").**
 - A runaway's break is where a loop forms: the loop through the stock that would register the
   distance is not there before the break, because the law reads the stock only once it fails.
   The blindness of `Becoming.Runaway` and the formation of `Becoming.Closing` are one event seen
@@ -67,9 +67,9 @@ exchange, with no premise beyond what each theorem names.
   (`Web.observed_raise_registers`).
 
 What is not derived: which schedule a law reads, which threshold, and whether a formation draws
-more than is renewed; how a formation comes to observe what it did not; laws reading a stock only
-above a threshold or in other shapes than a threshold. The representation commits to discrete
-steps and natural amounts. No ethical predicate, ranking or axiom occurs.
+more than is renewed; how a formation comes to observe what it did not (given in
+`Becoming.Observation`); laws reading a stock only above a threshold or in other shapes than a
+threshold. The representation commits to discrete steps and natural amounts. No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -384,8 +384,8 @@ theorem break_carried_nowhere {c : C} {θ : Nat → Nat} (r : law.ReadsBelow par
       fun s le e other => (upto s le).1 e other
 
 
-/-- A level at least a bound where not below it: decided on numbers, with no decision on conditions. -/
-theorem Thresholds.le_of_not_lt {a b : Nat} (notBelow : ¬ ¬ a ≤ b) : a ≤ b :=
+/-- An order of numbers not refuted holds: decided on numbers, with no decision on conditions. -/
+theorem Thresholds.le_of_not_not {a b : Nat} (notBelow : ¬ ¬ a ≤ b) : a ≤ b :=
   match Nat.decLe a b with
   | isTrue le => le
   | isFalse nle => absurd nle notBelow
@@ -405,7 +405,7 @@ theorem ExchangeLaw.Through.readsBelow {W : Web F C} {obs : F → C → Prop} {c
         (∀ s, s ≤ t → θ s ≤ m' s c) → (∀ e, e ≠ c → m s e = m' s e) →
         W.need s h e ≤ m s e → W.need s h e ≤ m' s e :=
       fun s le e requires _ _ stands' alike admits =>
-        Thresholds.le_of_not_lt fun below =>
+        Thresholds.le_of_not_not fun below =>
           below (alike e (fun same => below (same ▸ Nat.le_trans (needs h s out (same ▸ requires))
               (stands' s le))) ▸ admits)
     through h out t l l' fun s le =>
@@ -456,7 +456,7 @@ theorem standAt_of_stands (only : ∀ e, e ≠ c → mark e = false) {θ : Nat �
   cases hm : mark e with
   | false => rfl
   | true =>
-    have at_ : θ s ≤ l s e := Thresholds.le_of_not_lt fun below =>
+    have at_ : θ s ≤ l s e := Thresholds.le_of_not_not fun below =>
       Bool.noConfusion ((only e fun same => below (same ▸ stands)).symm.trans hm)
     show (bif Nat.ble (θ s) (l s e) then l s e else θ s) = l s e
     rw [Nat.ble_eq_true_of_le at_]

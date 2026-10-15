@@ -114,6 +114,7 @@ import Becoming.Remainder
 import Becoming.Routes
 import Becoming.Closing
 import Becoming.Thresholds
+import Becoming.Observation
 import Becoming.Frequency
 import Becoming.Gain
 import Becoming.Gluing
@@ -1142,6 +1143,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   only below a threshold, as one registering it without observing it does, carries a raise of the
   stock nowhere up to the break; before the break it is its standing law, with no loop through the
   stock, so the loop through the stock forms at the break, unforeseen.
+* `Becoming.Observation` (L4): observation as a route from what is observed, with no premise
+  beyond what each statement names. A gap of one stock alone is conveyed only downstream of it, so
+  the carried amount is zero elsewhere. For every law reading into each condition a schedule, two
+  courses apart at the start only in a stock are alike at every condition not downstream of it by
+  the readings formed so far: a formation's exchange registers the stock only through a level it
+  reads that lies downstream, observing the stock itself being the route of length zero. A route
+  forms by closing, as a loop does; in the measurement witness the route stock → record and the loop
+  through the draw form at the step the measurement starts, and the raise registers after it.
 * `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return
