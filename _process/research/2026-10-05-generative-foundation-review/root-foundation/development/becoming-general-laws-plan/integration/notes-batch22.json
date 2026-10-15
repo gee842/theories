@@ -1,0 +1,51 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean": {
+   "zh": "P119：加入定理（18 → 43）：只在 T 之前分开时的静止之步、被给予世界的学习者的逆命题、有限构型上 N 步的历程使起点无界；Parting 导入 Lasting；既有声明不变",
+   "en": "P119: theorems added (18 → 43): the rest step where runs part only before T, the converse with the learner given the world, a course of N steps over finitely many configurations making its start unbounded; Parting imports Lasting; existing declarations unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean": {
+   "zh": "P119：加入定理（32 → 43）：指数的集中（计数的 Chernoff 界）；既有声明不变",
+   "en": "P119: theorems added (32 → 43): exponential concentration (the counting Chernoff bound); existing declarations unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean": {
+   "zh": "P119：加入定理（13 → 38）：经一个事件的任意多个值、对每个过程按历程计数、任意权重中按情境计数、带符号的权重作为情境计数之对；既有声明不变",
+   "en": "P119: theorems added (13 → 38): any number of values through an event, counting per course for every process, counting by situations in any weights, signed weights as pairs of counts of situations; existing declarations unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "P119：Parting、Typicality、Situations 三条模块条目扩充；导入不变",
+   "en": "P119: the Parting, Typicality and Situations bullets extended; imports unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "P119：三段范围说明扩充；核心列表不变",
+   "en": "P119: three scope paragraphs extended; the core list unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "P119：三行 L4（Parting、Typicality、Situations）扩充，层内导入加 Parting 导入 Lasting；总数改据新回执",
+   "en": "P119: the three L4 rows (Parting, Typicality, Situations) extended, and the within-layer imports add Parting importing Lasting; totals moved to the new receipt"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "P119：在“权重计数情境”之后加“分开与计数的开放证明”一对段落；整体陈述的两条与界一项、§8 的两行状态与“路径分支时”一项、§9 的三行（43、43、38）与术语表一行（被给予世界的学习者）；总数改据新回执",
+   "en": "P119: a paragraph pair on the open proofs of parting and counting after “weights count situations”; two bullets and the bound item of the theory stated whole, §8's two status rows and the open item “When the course branches”, §9's three rows (43, 43, 38) and a glossary row (the learner given the world); totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第150节（P119：分开与计数的开放证明）及其英文段；此前各节不变",
+   "en": "section 150 (P119: the open proofs of parting and counting) with its English paragraph; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "P119：Parting 的新定义列为新的一类 reach，Situations.occ 与两项只在证明中用到的定理列为 same，some_right_iff 列为 reach",
+   "en": "P119: Parting's new definitions classified under a new kind, reach; Situations.occ and two proof-only theorems under same, some_right_iff under reach"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T193101.075446Z 上重新生成，含 P119 的分类：陈述依赖它 368 → 387，只在证明中用到 230 → 233，取可判定族的定义 97 → 105，新的一类“可达”（11 项），其余各类不变",
+   "en": "regenerated on receipt 20261015T193101.075446Z with P119's classifications: statements depending on it 368 → 387, used only in proofs 230 → 233, definitions taking a decidability family 97 → 105, a new kind “reached” (11 entries), the other classes unchanged"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing P119 (study section 150): rebound to the new receipt and rehashed: ",
+  "zh": "2026年10月16日，P119 落地（研究第150节）：改绑新回执并更新哈希："
+ }
+}

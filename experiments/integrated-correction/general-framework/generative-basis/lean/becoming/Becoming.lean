@@ -1051,13 +1051,19 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   the least bound, given nothing, is right from N + N - 1 on, exactly as for determined laws, the
   instance. Under free branching every course is a run's course: after every record two runs of
   two configurations part, every learner has a run on which it is never right, and a course of
-  two configurations has no bound on its states.
+  two configurations has no bound on its states. Where runs part only before step T, the course
+  has at most T + N states and the learner by the least bound is right from 2(T + N) - 1 on. For
+  a process with listed moves and configurations and decided steps, a learner given the world is
+  right at a step on every run exactly where no two runs part there. Where a list of N holds every
+  configuration, a course of N steps from a configuration gives courses of every length, with no
+  decidability (`Lasting.Continues`).
 * `Becoming.Typicality` (L4): what counting says of the course that happens, with no premise.
   With natural weights p and q on two values, the squared deviations (q·a - p·b)² of the courses
   of n steps, weighted, add up exactly to n·p·q·(p + q)^n, so the courses deviating by at least d
   weigh, times d, at most that, out of (p + q)^n: the counting form of the law of large numbers.
   The weights are `Becoming.Weighted`'s counting weights of free branching. That the course which
-  happens is typical is not derived: every course is a run.
+  happens is typical is not derived: every course is a run. Concentration is exponential: for
+  every u ≥ v, the courses with at least k ones weigh, times u^k·v^n, at most (p·u + q·v)^n·v^k.
 * `Becoming.Situations` (L4): what natural weights count, with no premise. Where each step is
   taken in as many situations as its weight, the law whose moves are the situations is
   determined, and a law whose steps are those of positive weight is it with the situation
@@ -1065,8 +1071,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   counted by its weight, so the finer courses number the sum over histories. On two values with
   `p` and `q` situations, the weight of a course is the number of situations that take it, and
   of the `(p + q)^n` finer courses those deviating by at least `d` number, times `d`, at most
-  `n·p·q·(p + q)^n`: the law of large numbers counts situations. Which situation happens is not
-  a count.
+  `n·p·q·(p + q)^n`: the law of large numbers counts situations. Through any event, any number of
+  values counts as two, so the law of large numbers and exponential concentration count
+  situations for every event. Where every move and configuration is listed once, a course is
+  taken by its weight of situations, for every process. Signed weights are pairs of counts of
+  situations, those composing to adding and those composing to subtracting. Which situation
+  happens is not a count.
 * `Becoming.Propagation` (L4): how much difference arrives, with no premise beyond what each law
   names. In two balanced flows a condition's gap changes across a step by exactly the difference
   given less the difference taken. An exchange is coupled to a level with strength at most `k`

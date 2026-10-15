@@ -28,6 +28,13 @@ ratio `p : q` exactly where `x = y`, and `(x - y)²`, stated without subtraction
   `p·q / ((p + q)²·ε²·n)` of it, which falls as `n` grows: the counting form of the law of large
   numbers. With `p = q = 1` every course weighs one, and the count of courses of `n` steps
   whose ones and zeros differ by at least `δ`, times `δ²`, is at most `n·2^n`.
+* **Concentration is exponential.** Weighting each one by `u` and each zero by `v` multiplies
+  the weights step by step (`weight_mul`). So for every `u ≥ v`, the courses of `n` steps with at
+  least `k` ones weigh, times `u ^ k · v ^ n`, at most `(p·u + q·v) ^ n · v ^ k`
+  (`concentrated`): the counting form of Chernoff's bound. With `p = q = 1`, `u = 3` and `v = 1`,
+  of the `2 ^ n` courses those with at least `k` ones number, times `3 ^ k`, at most `4 ^ n`
+  (`few_far_ahead`). For `k ≥ 3n/4` their share is below `0.88 ^ n`, where the bound by the
+  spread falls only as `1/n`.
 * **Nothing derived says the course that happens is among them.** Every course is a run of
   free branching (`Becoming.Parting`'s `freeRun`), the all-ones course among them, and no
   record shows that a world will not part (`Parting.free_parts_after`). Counting weighs
@@ -44,8 +51,8 @@ ratio `p : q` exactly where `x = y`, and `(x - y)²`, stated without subtraction
   (`sum_courses_weight`, through `Weights.sum_courses`).
 
 The AM–GM step `2·x·y ≤ x·x + y·y` is proved on the way (`two_mul_le`). The arithmetic uses
-the core's inductive forms of distributivity and associativity (`add_mul_split`,
-`mul_assoc_nat`, with `left_comm`), since the prelude's forms of these laws use propositional
+the core's inductive forms of distributivity, associativity and powers (`add_mul_split`,
+`mul_assoc_nat`, with `left_comm`, and `pow_add_nat`), since the prelude's forms of these laws use propositional
 extensionality. Ren took the reading of their words on 16 October 2026.
 -/
 
@@ -345,6 +352,105 @@ theorem typical (p q n d : Nat) :
       rw [total_add, total_mul_right, spread] at bound
       rw [Nat.add_comm (n * _)]
       exact bound)
+
+/-! ## Concentration is exponential -/
+
+/-- `x ^ (a + b) = x ^ a · x ^ b`, by induction, without the prelude's form. -/
+theorem pow_add_nat (x a : Nat) : ∀ b, x ^ (a + b) = x ^ a * x ^ b
+  | 0 => (Nat.mul_one _).symm
+  | b + 1 => by
+    show x ^ (a + b) * x = x ^ a * (x ^ b * x)
+    rw [pow_add_nat x a b, mul_assoc_nat]
+
+/-- A course has as many ones and zeros as steps. -/
+theorem ones_add_zeros : ∀ w : List Bool, ones w + zeros w = w.length
+  | [] => rfl
+  | true :: w => (Nat.add_right_comm _ _ _).trans (congrArg (· + 1) (ones_add_zeros w))
+  | false :: w => (Nat.add_assoc _ _ _).symm.trans (congrArg (· + 1) (ones_add_zeros w))
+
+/-- The weight of a course is `p ^ a · q ^ b` for `a` ones and `b` zeros. -/
+theorem weight_pow (p q : Nat) : ∀ w : List Bool, weight p q w = p ^ ones w * q ^ zeros w
+  | [] => rfl
+  | true :: w => by
+    show p * weight p q w = p ^ ones w * p * q ^ zeros w
+    rw [weight_pow p q w, Nat.mul_comm (p ^ ones w) p, mul_assoc_nat]
+  | false :: w => by
+    show q * weight p q w = p ^ ones w * (q ^ zeros w * q)
+    rw [weight_pow p q w, Nat.mul_comm (q ^ zeros w) q, left_comm]
+
+theorem mul_mul_mul (a b c d : Nat) : (a * b) * (c * d) = (a * c) * (b * d) := by
+  rw [mul_assoc_nat, left_comm b c d, ← mul_assoc_nat]
+
+/-- **Weights multiply step by step.** -/
+theorem weight_mul (p q u v : Nat) : ∀ w : List Bool,
+    weight p q w * weight u v w = weight (p * u) (q * v) w
+  | [] => rfl
+  | true :: w => by
+    show (p * weight p q w) * (u * weight u v w) = (p * u) * weight (p * u) (q * v) w
+    rw [← weight_mul p q u v w, mul_mul_mul]
+  | false :: w => by
+    show (q * weight p q w) * (v * weight u v w) = (q * v) * weight (p * u) (q * v) w
+    rw [← weight_mul p q u v w, mul_mul_mul]
+
+/-- Tilting toward ones: with `v ≤ u` and at least `k` of `a` ones, `u ^ k · v ^ (a + b)` is at
+most `u ^ a · v ^ b · v ^ k`. -/
+theorem tilt_le {u v : Nat} (le : v ≤ u) {k a : Nat} (enough : k ≤ a) (b : Nat) :
+    u ^ k * v ^ (a + b) ≤ (u ^ a * v ^ b) * v ^ k :=
+  match gap_of_le enough with
+  | ⟨e, at_a⟩ => by
+    rw [at_a, pow_add_nat u k e, Nat.add_assoc, pow_add_nat v k (e + b), pow_add_nat v e b,
+      mul_assoc_nat (u ^ k) (u ^ e)]
+    have left : v ^ k * (v ^ e * v ^ b) = v ^ e * (v ^ b * v ^ k) :=
+      (Nat.mul_comm _ _).trans (mul_assoc_nat _ _ _)
+    have right : (u ^ k * (u ^ e * v ^ b)) * v ^ k = u ^ k * (u ^ e * (v ^ b * v ^ k)) :=
+      (mul_assoc_nat _ _ _).trans (congrArg (u ^ k * ·) (mul_assoc_nat _ _ _))
+    rw [left, right]
+    exact Nat.mul_le_mul_left _ (Nat.mul_le_mul_right _ (Nat.pow_le_pow_left le e))
+
+/-- The weight of a course with at least `k` ones, and nothing otherwise. -/
+def atLeast (p q k : Nat) (w : List Bool) : Nat :=
+  if k ≤ ones w then weight p q w else 0
+
+theorem atLeast_le (p q k : Nat) {u v : Nat} (le : v ≤ u) (w : List Bool) :
+    atLeast p q k w * (u ^ k * v ^ w.length) ≤ weight (p * u) (q * v) w * v ^ k :=
+  if enough : k ≤ ones w then by
+    show (if k ≤ ones w then weight p q w else 0) * _ ≤ _
+    rw [if_pos enough, ← weight_mul p q u v w, mul_assoc_nat, ← ones_add_zeros w,
+      weight_pow u v w]
+    exact Nat.mul_le_mul_left _ (tilt_le le enough _)
+  else by
+    show (if k ≤ ones w then weight p q w else 0) * _ ≤ _
+    rw [if_neg enough, Nat.zero_mul]
+    exact Nat.zero_le _
+
+theorem total_le_mem {f g : List Bool → Nat} :
+    ∀ ws : List (List Bool), (∀ w, w ∈ ws → f w ≤ g w) → total ws f ≤ total ws g
+  | [], _ => Nat.le_refl 0
+  | w :: ws, le => Nat.add_le_add (le w (.head _)) (total_le_mem ws fun v mem => le v (.tail _ mem))
+
+theorem total_congr_mem {f g : List Bool → Nat} :
+    ∀ ws : List (List Bool), (∀ w, w ∈ ws → f w = g w) → total ws f = total ws g
+  | [], _ => rfl
+  | w :: ws, same => by
+    show f w + total ws f = g w + total ws g
+    rw [same w (.head _), total_congr_mem ws fun v mem => same v (.tail _ mem)]
+
+/-- **Concentration is exponential.** For every `u ≥ v`, the courses of `n` steps with at least
+`k` ones weigh, times `u ^ k · v ^ n`, at most `(p·u + q·v) ^ n · v ^ k`. -/
+theorem concentrated (p q k n : Nat) {u v : Nat} (le : v ≤ u) :
+    total (courses n) (atLeast p q k) * (u ^ k * v ^ n) ≤ (p * u + q * v) ^ n * v ^ k := by
+  rw [← total_mul_right, ← total_weight (p * u) (q * v) n, ← total_mul_right]
+  exact total_le_mem _ fun w mem => by
+    have len : w.length = n := mem_courses_iff.mp mem
+    rw [← len]
+    exact atLeast_le p q k le w
+
+/-- **Exponentially few courses run far ahead.** Of the `2 ^ n` courses of `n` steps, those with
+at least `k` ones number, times `3 ^ k`, at most `4 ^ n`. -/
+theorem few_far_ahead (k n : Nat) : total (courses n) (atLeast 1 1 k) * 3 ^ k ≤ 4 ^ n := by
+  have bound := concentrated 1 1 k n (by decide : 1 ≤ 3)
+  rw [Nat.one_pow, Nat.one_pow, Nat.mul_one, Nat.mul_one] at bound
+  exact bound
 
 /-! ## The weights are counting weights of steps -/
 

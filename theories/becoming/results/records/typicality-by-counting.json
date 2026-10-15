@@ -59,12 +59,30 @@
         "Becoming.Typicality.transfer_weight",
         "Becoming.Typicality.sum_courses_weight"
       ]
+    },
+    {
+      "zh": "集中是指数的：一乘 u、零乘 v 时权重逐步相乘；对每个 u ≥ v，至少 k 个一的历程之重乘 uᵏ·vⁿ 至多 (p·u + q·v)ⁿ·vᵏ；p = q = 1 时其数乘 3ᵏ 至多 4ⁿ，k ≥ 3n/4 时所占不到 0.88ⁿ。",
+      "en": "Concentration is exponential: weighting each one by u and each zero by v multiplies the weights step by step; for every u ≥ v, the courses with at least k ones weigh, times uᵏ·vⁿ, at most (p·u + q·v)ⁿ·vᵏ; with p = q = 1 they number, times 3ᵏ, at most 4ⁿ, a share below 0.88ⁿ for k ≥ 3n/4.",
+      "declarations": [
+        "Becoming.Typicality.pow_add_nat",
+        "Becoming.Typicality.ones_add_zeros",
+        "Becoming.Typicality.weight_pow",
+        "Becoming.Typicality.mul_mul_mul",
+        "Becoming.Typicality.weight_mul",
+        "Becoming.Typicality.tilt_le",
+        "Becoming.Typicality.atLeast",
+        "Becoming.Typicality.atLeast_le",
+        "Becoming.Typicality.total_le_mem",
+        "Becoming.Typicality.total_congr_mem",
+        "Becoming.Typicality.concentrated",
+        "Becoming.Typicality.few_far_ahead"
+      ]
     }
   ],
   "hypotheses": [
     {
-      "zh": "不加公理，不加前提：两个值与自然数权重 p、q 写在每条定理中；实数权重属于外围。",
-      "en": "No axiom and no premise: two values and natural weights p and q, written into each theorem; real weights belong to the periphery."
+      "zh": "不加公理，不加前提：两个值与自然数权重 p、q 写在每条定理中，指数之界中 v ≤ u；实数权重属于外围。",
+      "en": "No axiom and no premise: two values and natural weights p and q, written into each theorem, with v ≤ u in the exponential bound; real weights belong to the periphery."
     }
   ],
   "does_not_show": [
@@ -74,8 +92,8 @@
       "kind": "correspondence"
     },
     {
-      "zh": "指数的集中（Chernoff）、多于两个值与非自然数的权重。",
-      "en": "Exponential concentration (Chernoff), more than two values, and weights that are not natural numbers.",
+      "zh": "实数或复数的权重；至少 k 个零的指数之界由交换 p 与 q 得到，没有另写；多于两个值经事件见 weights-count-situations。",
+      "en": "Real or complex weights; the exponential bound for at least k zeros follows by exchanging p and q and is not written out; more than two values, through an event, are in weights-count-situations.",
       "kind": "scope"
     }
   ],
@@ -88,12 +106,12 @@
     "names-provisional"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T173702.509759Z）：Becoming.Typicality 的 44 项声明（32 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T173702.509759Z): the 44 declarations of Becoming.Typicality, 32 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 140; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T193101.075446Z）：Becoming.Typicality 的 56 项声明（43 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §140 与 §150；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T193101.075446Z): the 56 declarations of Becoming.Typicality, 43 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study sections 140 and 150; not independently reviewed."
   },
   "next_delta": {
-    "zh": "指数之界的集中与多于两个值；外围中实数权重作为实例。",
-    "en": "Concentration with exponential bounds, and more than two values; real weights in the periphery as an instance."
+    "zh": "外围中实数权重作为实例；强大数定律（几乎每个无限历程），它需要无限历程上的测度。",
+    "en": "Real weights in the periphery as an instance; the strong law (almost every infinite course), which needs a measure on infinite courses."
   },
   "correspondence": {
     "zh": "Ren 2026-10-15：“\"What this line doesn’t reach\" is also worth doing”，其中之一是有概率的世界。已知的结果：二项分布的切比雪夫不等式（伯努利的弱大数定律）。这里在核心中不用公理地给出，接到 Becoming.Weighted 的计数权重，并标出不被推出的前提。原先的 AI 读法“概率是计数加上发生的历程典型这一前提”已由 Ren 的说明取代。Ren 2026-10-16 对此：“we are describing what everything obeys, but at every moment, the actual change depends on the situation … the situation makes it true”。读法（AI 对 Ren 的话的读法，Ren 同日已取）：自然数权重是走每一步的情境之数，大数定律计数情境，哪个情境发生由情境固定，不是计数（weights-count-situations）。",
@@ -251,7 +269,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "2af8c3eafb4cbb791efb856fba9503c6f1fb4ba695d09fd20597e3e95b492f4d",
+      "sha256": "64c945b572fe4a7c3a0dec98a3ea9869c193bc09d963707b07a2b84f4c11f6a1",
       "declarations": [
         "Becoming.Typicality.left_comm",
         "Becoming.Typicality.ones",
@@ -293,6 +311,18 @@
         "Becoming.Typicality.offBy",
         "Becoming.Typicality.offBy_le",
         "Becoming.Typicality.typical",
+        "Becoming.Typicality.pow_add_nat",
+        "Becoming.Typicality.ones_add_zeros",
+        "Becoming.Typicality.weight_pow",
+        "Becoming.Typicality.mul_mul_mul",
+        "Becoming.Typicality.weight_mul",
+        "Becoming.Typicality.tilt_le",
+        "Becoming.Typicality.atLeast",
+        "Becoming.Typicality.atLeast_le",
+        "Becoming.Typicality.total_le_mem",
+        "Becoming.Typicality.total_congr_mem",
+        "Becoming.Typicality.concentrated",
+        "Becoming.Typicality.few_far_ahead",
         "Becoming.Typicality.stepWeight",
         "Becoming.Typicality.along_weight",
         "Becoming.Typicality.transfer_weight",
@@ -348,7 +378,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "role": "proof",
-      "sha256": "d5c0a564062a3c5a98f5658176991e1ad72692b5387b7ca37e73e9ecc7cde9e1",
+      "sha256": "02c81e67e88bbc8d53940684a5e00be442660f3c6a4ffee427eb5d860674f5b6",
       "declarations": [
         "Becoming.Parting.freeRun",
         "Becoming.Parting.free_parts_after"
@@ -357,13 +387,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "aad09764bdcdd9209154d546b95b7ecff5a518aecd54942cb5d827526f1650ea",
+      "sha256": "3f5319a0697c2a4a87bad2c958535da6de388bbad14d2dc4c8d7cc5613d79271",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "dd2aff28f02d53397f05c8fe2f3dba2784bea54e6c89d13017f9854fbf21736e",
+      "sha256": "586a72c88090a1a1bf6b8353b9b6d91ae83e28c855903cc12f5c1d340638bfac",
       "declarations": []
     },
     {
@@ -385,9 +415,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
       "role": "receipt",
-      "sha256": "f925b043b6f8fe7ea3ba0f14b5242923eb3e01d545e6c9915fcc6832c4757e8d",
+      "sha256": "b11c84ca126f223c34d56695753c6426ec4bb669f32ce435eed00c446d93a75b",
       "declarations": []
     },
     {
@@ -395,12 +425,17 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md",
+      "role": "provenance",
+      "sha256": "b2c60f7ef5e8308c08783018c8abb617276c4e6c806bde11cc4d99ca15044f5b"
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Typicality",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -442,7 +477,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Parting",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -472,6 +507,14 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Weighted.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Capture.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Capture.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026-10-16 P119：按 Ren 2026-10-16 的“take 2, and do the open proofs”，加一条规律（指数的集中，计数形式的 Chernoff 界）；hypotheses、does_not_show 的范围一项（指数的集中与多于两个值已证）与 next_delta 改写；研究 §150。原范围一项：“指数的集中（Chernoff）、多于两个值与非自然数的权重。”",
+      "en": "16 October 2026, P119: following Ren's “take 2, and do the open proofs” of 16 October, one law added (exponential concentration, the counting form of Chernoff's bound); hypotheses, the scope item of does_not_show (exponential concentration and more than two values now proved) and next_delta rewritten; study section 150. The former scope item: “Exponential concentration (Chernoff), more than two values, and weights that are not natural numbers.”"
+    },
+    {
+      "zh": "2026年10月16日，P119 落地（研究第150节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第150节（P119：分开与计数的开放证明）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P119：在“权重计数情境”之后加“分开与计数的开放证明”一对段落；整体陈述的两条与界一项、§8 的两行状态与“路径分支时”一项、§9 的三行（43、43、38）与术语表一行（被给予世界的学习者）；总数改据新回执）；Typicality.lean（P119：加入定理（32 → 43）：指数的集中（计数的 Chernoff 界）；既有声明不变）；Parting.lean（P119：加入定理（18 → 43）：只在 T 之前分开时的静止之步、被给予世界的学习者的逆命题、有限构型上 N 步的历程使起点无界；Parting 导入 Lasting；既有声明不变）。",
+      "en": "16 October 2026, landing P119 (study section 150): rebound to the new receipt and rehashed: BECOMING-RENEWAL-READING.md (section 150 (P119: the open proofs of parting and counting) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P119: a paragraph pair on the open proofs of parting and counting after “weights count situations”; two bullets and the bound item of the theory stated whole, §8's two status rows and the open item “When the course branches”, §9's three rows (43, 43, 38) and a glossary row (the learner given the world); totals moved to the new receipt); Typicality.lean (P119: theorems added (32 → 43): exponential concentration (the counting Chernoff bound); existing declarations unchanged); Parting.lean (P119: theorems added (18 → 43): the rest step where runs part only before T, the converse with the learner given the world, a course of N steps over finitely many configurations making its start unbounded; Parting imports Lasting; existing declarations unchanged)."
     }
   ],
   "text_versions": []

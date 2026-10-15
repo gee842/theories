@@ -2522,6 +2522,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean)
 
+## identification-where-runs-part ← lifting-where-branching-is-finite
+
+`formal-reuse` — 复用 Lasting.Continues 与 Lasting.Unbounded：由一个配置出发有多长的历程。 / Reuses Lasting.Continues and Lasting.Unbounded: how long the courses from a configuration are.
+
+**Producer output / 上游输出:** 有 n 步的历程从 s 出发；每个长度的历程都从 s 出发。 / Some course of n steps starts at s; courses of every length do.
+
+**Consumer input / 下游输入:** 配置有限时，N 步的历程给出任意长的历程，不用判定；被给予世界的学习者取由之可走下去的配置。 / With finitely many configurations, a course of N steps gives courses of every length, with no decidability; the learner given the world takes a configuration from which a run goes on.
+
+**Retained conditions / 保留条件:** 一个列表持有每个配置。 / A list holds every configuration.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean)
+
 ## identity-across-steps ← becoming-dependence-dynamics
 
 `formal-reuse` — 复用依存网、支持、保持、断裂、任期、侵蚀、形成与消解，以及该记录下一步中的个体化问题。 / Reuses webs, support, keeping, breaking, tenure, undermining, forming and dissolving, and the individuation question in that record's next step.
@@ -5345,6 +5357,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Producer output / 上游输出:** 以计数加权的历史之和是逐步的转移。 / The sum over histories weighted by counting is the step-by-step transfer.
 
 **Consumer input / 下游输入:** 细历程之数是历史之和。 / The number of finer courses is the sum over histories.
+
+**Retained conditions / 保留条件:** 列出的动作与配置。 / Listed moves and configurations.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
+
+## weights-count-situations ← losses-of-the-sum-over-histories
+
+`formal-reuse` — 复用 signed、Interference.weight 与 Interference.cancels：带符号的权重与相消。 / Reuses signed, Interference.weight and Interference.cancels: signed weights and cancellation.
+
+**Producer output / 上游输出:** 两条历程，一加一减，带符号的转移是 (1, 1)。 / Two courses, one adding and one subtracting, with signed transfer (1, 1).
+
+**Consumer input / 下游输入:** 带符号的权重是加的与减的情境之数之对；平衡的 (1, 1) 是两个情境。 / Signed weights are pairs of numbers of situations that add and that subtract; the balanced (1, 1) is two situations.
 
 **Retained conditions / 保留条件:** 列出的动作与配置。 / Listed moves and configurations.
 

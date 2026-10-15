@@ -9455,6 +9455,72 @@ Integration: 理论第 6 节（第一部分的总陈述）、第 8 节（D33 的
 
 **检查。** 暂存区构建（合并 main a5406334 后的树）：`Becoming.Gluing` 81 项定理、113 项声明，公理报告为空，无警告；环的一节先单独编译。可判定性清单的暂存运行（只跳过回执核对）：只在证明中用到可判定性的定理由 224 项增至 228 项，即 `ParityConstraint.met_or_contradicts`、`ParitySystem.global_or_contradicts`、`ParitySystem.noGlobal_iff`、`ParitySystem.glues_iff`，归为“分辨相同”（消去按一个主张是否就是被消去者分情形）；证明可判定的定义与实例由 136 项增至 137 项（`support` 的可判定实例）。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
+## 150. 分开与计数的开放证明（P119）
+
+2026-10-16。Ren 问 P117 报告中“Nothing else is pending … the finite-name reading”是什么意思，AI 解释后，Ren 说：“take 2, and do the open proofs”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md)）。“take 2”取第二种：有限名的定理是“有界时类有有限的名”，名可名是类比；这一条由 P110 记入（DELEGATED-CHOICES D34、§8 与它的研究节），本节不重复。“do the open proofs”所指的是 §140 与 §144 留下的证明：分开的反方向与只在某步之前分开时的静止之步；指数的集中；多于两个值；对每个过程按历程计数；非自然数的权重。工作板上认领为 P119。本节在第一部分之内、除了各律所写者不加公理与前提，把它们全部证完。
+
+```text
+Result(s): 扩展 identification-where-runs-part、typicality-by-counting 与 weights-count-situations（各加规律）；
+           复用 identification-where-bounded（statesBelow_iff_lasso、leastBound_exact、below_all、record_eq_iff）、
+           recurrence-without-premise（revisits_within、gap_of_le）、learning-by-refutation（record、record_length）、
+           sum-over-histories-exact（counting、signed、Weights.along、Weights.sum_courses、Weights.sum_joinMap、
+           Weights.mul_sum、Weights.sum_map、openSteps、courses、add_mul_split、mul_assoc_nat）、
+           losses-of-the-sum-over-histories（Interference.weight、Interference.cancels）、
+           lifting-where-branching-is-finite（Lasting.Continues、Lasting.Unbounded）
+Delta: Becoming.Parting 18 → 43 项定理（27 → 62 项声明），并导入 Becoming.Lasting；Becoming.Typicality 32 → 43（44 → 56）；
+       Becoming.Situations 13 → 38（19 → 54）；只加定理与定义，原有声明不变
+Supplied premises / correspondence: 不加公理。各律所写者：late_* 要运行从 T 起不分开、所识的值可判定、运行被列表所持；
+       world_right、world_right_iff、some_right_iff 要动作与配置列出、步与所识的值可判定；concentrated 要 v ≤ u；
+       situations_take 要动作与配置的相等可判定，situations_of_course_listed 还要每个只列一次；
+       sum_finer_weights 要每步之权重是其情境之和
+Evidence: scratch_build 对 main d84868b7（I4b-4 之后）：三个模块与根模块
+          编译，无错误或警告，公理报告全部为空；判定性清单的暂存运行 0 项未用，见下“检查”；合并检查器回执待整合者的运行
+Boundary: 实数或复数振幅、无限和不在内；哪个情境发生不被推出；被给予世界的学习者要世界有限且可判定，无界或不可判定的
+          过程不在内；指数集中只对至少 k 个一陈述（至少 k 个零由交换 p 与 q 得到，没有另写）；不含伦理谓词
+Integration: 第 6 节新段落对（在“权重计数情境”之后），该段一句改写；§8 两个状态行、路径分支时的开放项；理论的完整陈述两条；
+       界一项；§9 三行；术语表一行；Becoming.lean 三条模块说明；check_becoming.py 三段范围；Lean README 三行；
+       DECIDABILITY-INVENTORY.py 的分类（新类“可达”）；三项记录的规律、next_delta 与 does_not_show；
+       identification-where-bounded 只改 next_delta 中“按情境”一项
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Parting.unparted_at_of_late` | **只在 T 之前分开，T 处不分开。** 所识的值可判定时，从 s 出发的运行在 T 起都不分开，则从一个运行在 T 所在处出发没有两个运行分开（把两个运行接在 T，`joinAt`） |
+| `Parting.statesBelow_shift`、`late_statesBelow`、`late_right` | **只在 T 之前分开时的静止之步。** 从 T 起至多 N 个状态的历程至多有 T + N 个；被 N 个配置所持的运行其历程至多 T + N 个状态，以最小的界读记录的学习者从 2(T + N) − 1 起每步都对 |
+| `Parting.anyOf`、`keepIf`、`choose` 及其规律 | 布尔的“有一个”、按检验保留、在存在时找出一个：只用前奏 |
+| `Parting.path_of_continues`、`continues_cycle`、`continues_persists`、`continues_any`、`unbounded_of_continues` | **与配置数一样长的历程可以继续。** N 个配置的列表持有每个配置时，由之有 N 步历程（`Lasting.Continues`）的配置，一步之后仍然如此：长 N 的历程重复一个配置（`revisits_within`），绕着重复可以走任意长；所以它是 `Lasting.Unbounded` 的，不用判定也不用选取。`Lasting` 中有限分支的提升只到双重否定为止；配置有限时这里直接成立 |
+| `Parting.live`、`live_succ_iff`、`live_of_run`、`live_iff_continues`、`live_persists` | `live` 是判定了的 `Lasting.Continues`（动作与配置列出、步可判定） |
+| `Parting.advance`、`advanced`、`liveRun` | 由此造出从这样的配置出发的运行（每步取第一个仍可走 N 步的后继） |
+| `Parting.candidates`、`firstLive`、`worldLearner`、`run_in_candidates`、`candidates_run` | **被给予世界的学习者。** 从记录读出运行可能所在的配置：每个运行都在其中；其中每个配置都是某个有此记录的运行在该步所在之处 |
+| `Parting.world_right`、`world_right_iff`、`some_right_iff` | **反方向。** 被给予世界的学习者在某步于从 s 出发的每个运行上都对，恰当没有两个这样的运行在该步分开；某个学习者在那里对，恰当没有运行在那里分开 |
+| `Typicality.pow_add_nat`、`ones_add_zeros`、`weight_pow`、`mul_mul_mul`、`weight_mul` | 幂的加法（不经命题外延性）；权重逐步相乘 |
+| `Typicality.tilt_le`、`atLeast`、`atLeast_le`、`total_le_mem`、`total_congr_mem`、`concentrated` | **集中是指数的。** 对每个 u ≥ v，至少 k 个一的历程之重乘 uᵏ·vⁿ 至多 (p·u + q·v)ⁿ·vᵏ（计数形式的 Chernoff 界） |
+| `Typicality.few_far_ahead` | p = q = 1、u = 3、v = 1：至少 k 个一的历程之数乘 3ᵏ 至多 4ⁿ |
+| `Situations.keep`、`drop`、`inside`、`outside`、`keep_drop`、`sum_split`、`inside_add_outside`、`valueWeight`、`seen` | 一个事件之重与其余之重；值上的读数按事件分成两份 |
+| `Situations.sum_event` | **任意多个值经一个事件读作两个值。** 历程上按权重计的任一读数之和，等于 Typicality 的历程上以事件之重与其余之重计的和 |
+| `Situations.event_typical`、`event_concentrated`、`event_count` | 对每个事件，大数定律与指数集中计数情境；细历程共 (P + Q)ⁿ 个 |
+| `Situations.occ`、`sum_only`、`situations_take`、`occ_map_cons`、`occ_map_pair`、`occ_openSteps`、`occ_courses`、`occ_courses_once`、`situations_of_course_listed` | **对每个过程按历程计数。** 走一个历程的细历程之数是其权重乘它被列出的次数；每个动作与配置只列一次时就是其权重 |
+| `Situations.signs`、`sum_mul_right`、`sum_finer_weights` | **任何权重中，步之权重是其情境之和时由情境计数**（`sum_finer` 推广到每个 `Weights`） |
+| `Situations.sign`、`both`、`sum_adding`、`sum_signed`、`signed_sums`、`signed_situations`、`signs_unit`、`sum_units`、`signed_counts` | **带符号的权重是两类情境之数之对。** 一步 (P, N) 是 P 个加的与 N 个减的情境；每个细历程合成为加或为减；带符号的转移是这两类之数 |
+| `Situations.cancels_situations` | `Interference.cancels` 的平衡 (1, 1) 是两个情境 |
+
+**它回答了什么。**
+1. **分开恰是记录与世界都不固定之处。** §140 只有一个方向：分开之处没有学习者两者都对。现在两个方向都有：对列出、可判定的过程，被给予世界的学习者在某步于每个运行上都对，恰当没有两个运行在该步分开（`world_right_iff`）。所以“分开”不是表示的缺陷，而正是这样一个界：知道世界也越不过它，不分开处知道世界就够了。按 Ren 2026-10-16 已取的读法，分开处记录与律不固定的由情境固定，这里证明它们在其余处都固定。
+2. **只在某步之前分开。** 辨识一线的静止之步 2N − 1 推广为 2(T + N) − 1：分开只在前 T 步时，历程最多多 T 个状态。
+3. **指数的集中。** §140 的切比雪夫形式随 1/n 下降；这里是 Chernoff 形式，指数下降，仍只用自然数（u、v 是自然数，比 u/v 起 eᵗ 的作用）。
+4. **多于两个值。** 不另起一套多值的历程：每个事件把值分成两类，`sum_event` 把多值的历程之和归到 Typicality 的两值历程，所以两值的一切结果对每个事件成立，每个值的频率亦然。
+5. **对每个过程按历程计数。** §144 只对两个值；这里对每个过程，列出无重复时一个历程的权重就是走它的情境之数，有重复时乘重复的次数（这是表示的计数，不是世界的）。
+6. **非自然数的权重。** 带符号的权重（`signed`）是情境之数之对：加的与减的。相消是两类之数相等，不是情境不在；`Interference.cancels` 的两条历程是两个情境。这把“带符号的权重不是情境之数”精确化：它不是一个数，是两个数。实数与复数振幅不在内：它们不是有限多个单位之和。
+
+**作者反审。**
+1. **已知的结果。** 反方向是可区分性的标准论证（集合论地：一个信息状态里所有可能世界给出同一个值时，知道就够了）；Chernoff 界、多项分布按事件约化为二项分布、以计数读概率、以带符号的计数读相消（例如 Feynman 对路径之和的带符号计数）都是已知的。增量是：在核心中不用公理，接到 `Becoming.Parting` 与 `Becoming.Weighted`，给出有限过程上被给予世界的学习者的显式构造（只用前奏，可计算）。
+2. **强度与范围。** 被给予世界的学习者要过程有限且可判定。对无限的过程，“某个运行由此可走下去”一般不可判定，构造不成立；这里没有陈述那一侧的界。`late_right` 给出 2(T + N) − 1，没有证明它对每个 T 恰好。指数集中只写了“至少 k 个一”；“至少 k 个零”交换 p、q 即得，没有另写。`few_far_ahead` 是一个实例，不是最优常数。
+3. **名字。** 由之可走 N 步的配置叫 `live`，意为可走下去，不涉及生命；`worldLearner`、`candidates`、`occ`、`signs` 都是结构性的名字。“情境”沿用 §144。
+4. **证明。** 不用 `simp`、`omega`；幂的加法用自写的 `pow_add_nat`，因为前奏的 `Nat.pow_add` 用到 `propext`（暂存探测）；`Nat.pow_le_pow_left`、`Nat.mul_le_mul_left`、`Nat.mul_le_mul_right` 不引入公理。被给予世界的学习者以 `choose`（从存在的证明在列表中找出一个，可计算）造出，不用 `Classical`。
+5. **判定性清单。** 新的取判定性的定义 `Parting.candidates`、`live`、`firstLive`、`worldLearner` 分为新类“可达”（判定步是否可走并分辨所识的值），`Situations.occ` 为“分辨相同”；只在证明中用到判定性的 `Parting.unparted_at_of_late`、`late_statesBelow` 为“分辨相同”，`some_right_iff` 为“可达”。
+
+**检查。** 在暂存区编译：`Becoming.Parting` 43 项定理、62 项声明，`Becoming.Typicality` 43／56，`Becoming.Situations` 38／54，根模块 `Becoming` 连同其闭包编译（没有名字冲突）；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。判定性清单的暂存运行（只跳过回执检查）0 项未用。核心检查器在整合者的运行中检查。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -11028,3 +11094,15 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 **Where novelty's gain comes from (P111, 16 October 2026).** Under the same delegation, section 148 adds `Becoming.Gain` (30 theorems, no axiom). With the rest of the whole counted as a relatum (section 85), every rise is given, with no premise: across a step at which a family's stock rises, some relatum gives it more than it takes, a formation taking part or the rest, found by checking each one taking part (`Flow.rise_netGiver`, `Flow.rise_given`). Under the first law a family without repetition that rises is given net by the rest or is open there (`Flow.rise_from_rest_or_open`). A finite whole has no boundary to cross, so every rise of it is the rest's, and with the rest idle it stays within its stock, returns and forgets, and is not new at every step (`Flow.whole_not_new_of_rest_idle`): unceasing generation within a bounded whole is return. Novelty needs gain, along consecutive steps or first visits (`Web.rises_late_of_firsts`), and so does endless new formation where what forms requires a fixed amount within the family, since a step at which something is first supported is a first visit (`Web.newAt_of_first`); under the first law each such rise comes from the rest or across the boundary, for every family without repetition holding it (`Flow.new_beyond_every`). Counting on is given each unit by the rest (`Flow.counting_given_by_rest`). Readings (D5, D7): gain from beyond the part reads as these two ways in, and a finite whole new without end is one whose listing leaves out what gives to it. Known: conservation and the pigeonhole principle; the increment is the statement with no premise and the two ways in. Not stated: whether the bound by the configurations within the stock is reached, and the exact ratio of gain to novelty. Not yet independently reviewed.
 
 **When readings in context glue, for parity (P112, 16 October 2026).** Section 149 adds `Becoming.Gluing` (81 theorems, no axiom), the next step of contextual-registration (section 96), “the general parity obstruction; probabilistic contextuality”. For claims constrained by parity in each context, a contradiction is a selection of contexts, repetition allowed, counting every claim an even number of times while the parities it requires add up to odd. Every context-free assignment fails an odd number of its contexts (`ParitySystem.unmet_odd`); with equality of claims decided and the claims listed without repetition this is the only obstruction, found by elimination as in linear equations over two values (`ParitySystem.global_or_contradicts`, `ParitySystem.glues_iff`). A mixture of context-free assignments meets at most m − 1 of a contradiction's m contexts on average, and readings indexed by context meet all m (`ParitySystem.mixture_le`, `ParitySystem.indexed_met`): Specker's boxes (2 of 3), the CHSH game (3 of 4, the classical bound) and the Mermin–Peres square (5 of 6) are instances, and section 96's `Specker.noGlobal` and `Square.noGlobal` follow from their certificates. A cycle of claims related as equal or different is met by a context-free assignment exactly where its differ relations are even in number (`Cycle.met_iff_even`): the periphery's `CorrectionRelations.cycle_compatible_iff_even` in core form, as the I4b row leaves it with P112; the correspondence theorem between the two is not written. Reading (D33): the difference between m − 1 and m is what the context carries; a value is a registration in context, a relation. Known: the parity proofs of Kochen–Specker (Mermin, Peres), CHSH (1969), Abramsky and Hardy's logical Bell inequalities (2012) and the alternative for linear equations over two values; the increment is the exact law with no axiom, in the core, with its instances. Not stated: the quantum values (Tsirelson's bound needs real amplitudes) and contextuality beyond parity. Not yet independently reviewed.
+
+**The open proofs of parting and counting (P119, 16 October 2026).** After the AI explained the finite-name reading, Ren wrote: “take 2, and do the open proofs” ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md)). P110 records option 2, the finite name as an analogy. Section 150 proves what sections 140 and 144 left open, with no axiom and no premise beyond what each law names; existing declarations do not change.
+- **Parting** (18 → 43 theorems; it now imports `Becoming.Lasting`).
+  - Where runs part only before step T, the learner by the least bound is right from 2(T + N) − 1 on (`late_right`).
+  - For a process with listed moves and configurations and decided steps and registered values, the learner given the world (`worldLearner`) is right at a step on every run exactly where no two runs part there (`world_right_iff`, `some_right_iff`). It is built from the prelude alone: where a list of N holds every configuration, a course of N steps (`Lasting.Continues`) gives courses of every length, with no decidability and no selection (`unbounded_of_continues`), where Lasting's lifting for finite branching holds up to double negation.
+- **Typicality** (32 → 43). Concentration is exponential, the counting form of Chernoff's bound (`concentrated`, `few_far_ahead`).
+- **Situations** (13 → 38).
+  - Through an event, any number of values counts as two (`sum_event`), so the law of large numbers and exponential concentration count situations for every event.
+  - For every process, a course is taken by its weight of situations times how often it is listed (`situations_take`, `situations_of_course_listed`).
+  - In any weights, steps weighing the sum over their situations are counted by them (`sum_finer_weights`).
+  - A signed weight is a pair of counts of situations, those composing to adding and those to subtracting (`signed_counts`). Where signed weights cancel, the situations do not (`cancels_situations`).
+- **Still open.** Real or complex amplitudes, infinite or undecided processes for the converse, and the exactness of 2(T + N) − 1.

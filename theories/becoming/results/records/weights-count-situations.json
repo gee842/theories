@@ -56,12 +56,65 @@
         "Becoming.Situations.weight_far",
         "Becoming.Situations.situations_typical"
       ]
+    },
+    {
+      "zh": "任意多个值经一个事件读作两个值：值上按自然数权重的历程之和，等于两个值的历程以事件之重与其余之重计之和；所以大数定律与指数集中对每个事件计数情境，细历程共 (P + Q)ⁿ 个。",
+      "en": "Through an event, any number of values counts as two: summing over the courses of values, each by its natural weight, is summing over two-valued courses with the event's weight and the rest's; so the law of large numbers and exponential concentration count situations for every event, of (P + Q)ⁿ finer courses.",
+      "declarations": [
+        "Becoming.Situations.keep",
+        "Becoming.Situations.drop",
+        "Becoming.Situations.inside",
+        "Becoming.Situations.outside",
+        "Becoming.Situations.keep_drop",
+        "Becoming.Situations.sum_split",
+        "Becoming.Situations.inside_add_outside",
+        "Becoming.Situations.valueWeight",
+        "Becoming.Situations.seen",
+        "Becoming.Situations.sum_event",
+        "Becoming.Situations.event_typical",
+        "Becoming.Situations.event_concentrated",
+        "Becoming.Situations.event_count"
+      ]
+    },
+    {
+      "zh": "对每个过程，走一个历程的细历程之数是其权重乘它被列出的次数；每个动作与配置只列一次时就是其权重。",
+      "en": "For every process, the finer courses taking a course number its weight times how often the course is listed; where every move and configuration is listed once, they number its weight.",
+      "declarations": [
+        "Becoming.Situations.occ",
+        "Becoming.Situations.sum_only",
+        "Becoming.Situations.situations_take",
+        "Becoming.Situations.occ_map_cons",
+        "Becoming.Situations.occ_map_pair",
+        "Becoming.Situations.occ_openSteps",
+        "Becoming.Situations.occ_courses",
+        "Becoming.Situations.occ_courses_once",
+        "Becoming.Situations.situations_of_course_listed"
+      ]
+    },
+    {
+      "zh": "任何权重中，步之权重是其情境之和时由情境计数；带符号的一步 (P, N) 是 P 个加的与 N 个减的情境，带符号的转移是合成为加与合成为减的细历程之数这一对；带符号的权重抵消之处，情境不抵消。",
+      "en": "In any weights, steps weighing the sum over their situations are counted by them; a signed step (P, N) is P situations that add and N that subtract, and the signed transfer is the pair of the numbers of finer courses composing to adding and to subtracting; where signed weights cancel, the situations do not.",
+      "declarations": [
+        "Becoming.Situations.signs",
+        "Becoming.Situations.sum_mul_right",
+        "Becoming.Situations.sum_finer_weights",
+        "Becoming.Situations.sign",
+        "Becoming.Situations.both",
+        "Becoming.Situations.sum_adding",
+        "Becoming.Situations.sum_signed",
+        "Becoming.Situations.signed_sums",
+        "Becoming.Situations.signed_situations",
+        "Becoming.Situations.signs_unit",
+        "Becoming.Situations.sum_units",
+        "Becoming.Situations.signed_counts",
+        "Becoming.Situations.cancels_situations"
+      ]
     }
   ],
   "hypotheses": [
     {
-      "zh": "不加公理，不加前提：自然数的步之权重、列出的动作与配置与两个值写在定理中；按历程计数用到历程相等可判定。",
-      "en": "No axiom and no premise: natural weights of steps, listed moves and configurations, and two values, written into the theorems; counting per course uses decided equality of courses."
+      "zh": "不加公理，不加前提：自然数或带符号的步之权重、列出的动作与配置写在定理中；按历程计数用到历程相等可判定，且要每个动作与配置只列一次（situations_of_course_listed）。",
+      "en": "No axiom and no premise: natural or signed weights of steps and listed moves and configurations, written into the theorems; counting per course uses decided equality of courses, and situations_of_course_listed needs every move and configuration listed once."
     }
   ],
   "does_not_show": [
@@ -71,13 +124,13 @@
       "kind": "correspondence"
     },
     {
-      "zh": "实际的权重是情境之数：这是对一个世界的对应，不是定理；带符号的权重会相消，不是情境之数，语境依赖的统计也不由不依语境的情境计数给出。",
-      "en": "That actual weights are numbers of situations: a correspondence for a world, not a theorem; signed weights cancel and are not numbers of situations, and context-dependent statistics are not counts of context-free situations.",
+      "zh": "实际的权重是情境之数：这是对一个世界的对应，不是定理；带符号的权重是加的与减的情境之数之对，不是一个数；语境依赖的统计不由不依语境的情境计数给出。",
+      "en": "That actual weights are numbers of situations: a correspondence for a world, not a theorem; a signed weight is two counts, adding and subtracting, not one number; context-dependent statistics are not counts of context-free situations.",
       "kind": "correspondence"
     },
     {
-      "zh": "按历程计数与大数定律对多于两个值；对任意过程按历程计数（要求列出者无重复）。",
-      "en": "Counting per course and the law of large numbers for more than two values; counting per course for every process (needing listings without repetition).",
+      "zh": "实数或复数振幅：它们不是有限个单位之和；无限步。",
+      "en": "Real or complex amplitudes, which are not sums of finitely many units; infinitely many steps.",
       "kind": "scope"
     }
   ],
@@ -90,12 +143,12 @@
     "names-provisional"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T183102.290672Z）：Becoming.Situations 的 19 项声明（13 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §144；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T183102.290672Z): the 19 declarations of Becoming.Situations, 13 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 144; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T193101.075446Z）：Becoming.Situations 的 54 项声明（38 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §144 与 §150；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T193101.075446Z): the 54 declarations of Becoming.Situations, 38 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study sections 144 and 150; not independently reviewed."
   },
   "next_delta": {
-    "zh": "多于两个值的按历程计数与大数定律；对任意过程按历程计数（列出者无重复）。",
-    "en": "Counting per course and the law of large numbers for more than two values; counting per course for every process (listings without repetition)."
+    "zh": "实数或复数振幅（外围）：给出情境的读法或说明为什么没有；语境依赖的统计与情境（Becoming.Context）。",
+    "en": "Real or complex amplitudes (periphery): a reading by situations, or why there is none; context-dependent statistics and situations (Becoming.Context)."
   },
   "correspondence": {
     "zh": "Ren 2026-10-16：“we are describing what everything obeys, but at every moment, the actual change depends on the situation … just saying we are all one doesn't make it true, the situation makes it true”，并问对机会的读法怎样处理。已知的结果：以同等可能的情况之数读概率（拉普拉斯），以微观状态之数读宏观的权重（玻尔兹曼），非确定的系统是确定系统在更细状态上的投影。这里在核心中不用公理地给出，对每个过程，接到历史之和与大数定律。读法（AI 对 Ren 的话的读法，Ren 2026-10-16 已取）：核心陈述每个情境所遵从的；实际的变化由情境使之为真；分支的律是忘掉情境的确定的律；机会是同类情境之数，陈述它不需要典型的前提。AI 的注：相消与语境处，使之为真的情境须包括读它的语境。",
@@ -169,6 +222,29 @@
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean"
       }
+    },
+    {
+      "id": "losses-of-the-sum-over-histories",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 signed、Interference.weight 与 Interference.cancels：带符号的权重与相消。",
+        "en": "Reuses signed, Interference.weight and Interference.cancels: signed weights and cancellation."
+      },
+      "interface": {
+        "output": {
+          "zh": "两条历程，一加一减，带符号的转移是 (1, 1)。",
+          "en": "Two courses, one adding and one subtracting, with signed transfer (1, 1)."
+        },
+        "input": {
+          "zh": "带符号的权重是加的与减的情境之数之对；平衡的 (1, 1) 是两个情境。",
+          "en": "Signed weights are pairs of numbers of situations that add and that subtract; the balanced (1, 1) is two situations."
+        },
+        "conditions": {
+          "zh": "列出的动作与配置。",
+          "en": "Listed moves and configurations."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean"
+      }
     }
   ],
   "related": [
@@ -177,13 +253,6 @@
       "detail": {
         "zh": "分开处记录与律不固定的，由情境固定；读法按 Ren 的说明改写。",
         "en": "What the record and the law leave open at a parting the situation fixes; its reading rewritten following Ren's clarification."
-      }
-    },
-    {
-      "id": "losses-of-the-sum-over-histories",
-      "detail": {
-        "zh": "带符号的权重会相消（Interference.cancels），情境之数不会。",
-        "en": "Signed weights cancel (Interference.cancels); numbers of situations do not."
       }
     },
     {
@@ -198,7 +267,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
       "role": "proof",
-      "sha256": "d124a1b0a8dfdaa3cca0966c5517ea2766c3ddd368d9f727880e8a55178093b3",
+      "sha256": "7f13731b5cbf58f0d4e49a48dee6273fb6311f895d08ddd105ee573abc563ec7",
       "declarations": [
         "Becoming.Situations.upto",
         "Becoming.Situations.sum_upto",
@@ -218,13 +287,48 @@
         "Becoming.Situations.situations_of_course",
         "Becoming.Situations.far",
         "Becoming.Situations.weight_far",
-        "Becoming.Situations.situations_typical"
+        "Becoming.Situations.situations_typical",
+        "Becoming.Situations.keep",
+        "Becoming.Situations.drop",
+        "Becoming.Situations.inside",
+        "Becoming.Situations.outside",
+        "Becoming.Situations.keep_drop",
+        "Becoming.Situations.sum_split",
+        "Becoming.Situations.inside_add_outside",
+        "Becoming.Situations.valueWeight",
+        "Becoming.Situations.seen",
+        "Becoming.Situations.sum_event",
+        "Becoming.Situations.event_typical",
+        "Becoming.Situations.event_concentrated",
+        "Becoming.Situations.event_count",
+        "Becoming.Situations.occ",
+        "Becoming.Situations.sum_only",
+        "Becoming.Situations.situations_take",
+        "Becoming.Situations.occ_map_cons",
+        "Becoming.Situations.occ_map_pair",
+        "Becoming.Situations.occ_openSteps",
+        "Becoming.Situations.occ_courses",
+        "Becoming.Situations.occ_courses_once",
+        "Becoming.Situations.situations_of_course_listed",
+        "Becoming.Situations.signs",
+        "Becoming.Situations.sum_mul_right",
+        "Becoming.Situations.sum_finer_weights",
+        "Becoming.Situations.sign",
+        "Becoming.Situations.both",
+        "Becoming.Situations.sum_adding",
+        "Becoming.Situations.sum_signed",
+        "Becoming.Situations.signed_sums",
+        "Becoming.Situations.signed_situations",
+        "Becoming.Situations.signs_unit",
+        "Becoming.Situations.sum_units",
+        "Becoming.Situations.signed_counts",
+        "Becoming.Situations.cancels_situations"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "2af8c3eafb4cbb791efb856fba9503c6f1fb4ba695d09fd20597e3e95b492f4d",
+      "sha256": "64c945b572fe4a7c3a0dec98a3ea9869c193bc09d963707b07a2b84f4c11f6a1",
       "declarations": [
         "Becoming.Typicality.courses",
         "Becoming.Typicality.extend",
@@ -239,7 +343,10 @@
         "Becoming.Typicality.typical",
         "Becoming.Typicality.stepWeight",
         "Becoming.Typicality.along_weight",
-        "Becoming.Typicality.transfer_weight"
+        "Becoming.Typicality.transfer_weight",
+        "Becoming.Typicality.atLeast",
+        "Becoming.Typicality.concentrated",
+        "Becoming.Typicality.total_mul"
       ]
     },
     {
@@ -259,7 +366,10 @@
         "Becoming.Weights.sum_congr",
         "Becoming.Weights.mul_sum",
         "Becoming.Interference.cancels",
-        "Becoming.counting_transfer_iff"
+        "Becoming.counting_transfer_iff",
+        "Becoming.signed",
+        "Becoming.pair_eq",
+        "Becoming.Interference.weight"
       ]
     },
     {
@@ -281,13 +391,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "aad09764bdcdd9209154d546b95b7ecff5a518aecd54942cb5d827526f1650ea",
+      "sha256": "3f5319a0697c2a4a87bad2c958535da6de388bbad14d2dc4c8d7cc5613d79271",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "dd2aff28f02d53397f05c8fe2f3dba2784bea54e6c89d13017f9854fbf21736e",
+      "sha256": "586a72c88090a1a1bf6b8353b9b6d91ae83e28c855903cc12f5c1d340638bfac",
       "declarations": []
     },
     {
@@ -307,19 +417,30 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md",
+      "role": "provenance",
+      "sha256": "b2c60f7ef5e8308c08783018c8abb617276c4e6c806bde11cc4d99ca15044f5b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
+      "role": "receipt",
+      "sha256": "b11c84ca126f223c34d56695753c6426ec4bb669f32ce435eed00c446d93a75b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Situations",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Typicality",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -362,6 +483,14 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Weighted.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Capture.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Capture.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026-10-16 P119：按 Ren 2026-10-16 的“take 2, and do the open proofs”，加三条规律（任意多个值经一个事件；对每个过程按历程计数；任何权重中由情境计数，带符号的权重是两类情境之数之对）；hypotheses、does_not_show（范围一项已证，移去；对应一项改写）与 next_delta 改写；losses-of-the-sum-over-histories 由 related 移入 dependencies；研究 §150。原对应一项：“……带符号的权重会相消，不是情境之数……”",
+      "en": "16 October 2026, P119: following Ren's “take 2, and do the open proofs” of 16 October, three laws added (any number of values through an event; counting per course for every process; counting by situations in any weights, a signed weight being a pair of numbers of situations); hypotheses, does_not_show (the scope item, now proved, removed; the correspondence item rewritten) and next_delta rewritten; losses-of-the-sum-over-histories moved from related to dependencies; study section 150. The former correspondence item read “… signed weights cancel and are not numbers of situations …”."
+    },
+    {
+      "zh": "2026年10月16日，P119 落地（研究第150节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第150节（P119：分开与计数的开放证明）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P119：在“权重计数情境”之后加“分开与计数的开放证明”一对段落；整体陈述的两条与界一项、§8 的两行状态与“路径分支时”一项、§9 的三行（43、43、38）与术语表一行（被给予世界的学习者）；总数改据新回执）；Situations.lean（P119：加入定理（13 → 38）：经一个事件的任意多个值、对每个过程按历程计数、任意权重中按情境计数、带符号的权重作为情境计数之对；既有声明不变）；Typicality.lean（P119：加入定理（32 → 43）：指数的集中（计数的 Chernoff 界）；既有声明不变）。",
+      "en": "16 October 2026, landing P119 (study section 150): rebound to the new receipt and rehashed: BECOMING-RENEWAL-READING.md (section 150 (P119: the open proofs of parting and counting) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P119: a paragraph pair on the open proofs of parting and counting after “weights count situations”; two bullets and the bound item of the theory stated whole, §8's two status rows and the open item “When the course branches”, §9's three rows (43, 43, 38) and a glossary row (the learner given the world); totals moved to the new receipt); Situations.lean (P119: theorems added (13 → 38): any number of values through an event, counting per course for every process, counting by situations in any weights, signed weights as pairs of counts of situations; existing declarations unchanged); Typicality.lean (P119: theorems added (32 → 43): exponential concentration (the counting Chernoff bound); existing declarations unchanged)."
     }
   ],
   "text_versions": []

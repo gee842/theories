@@ -28,8 +28,8 @@
       "imported-archive": 23,
       "working-source": 696
     },
-    "working_named_theorem_lemma_occurrences": 17750,
-    "working_explicit_named_declaration_occurrences": 27370,
+    "working_named_theorem_lemma_occurrences": 17811,
+    "working_explicit_named_declaration_occurrences": 27452,
     "working_groups": {
       "abstraction": 43,
       "concern": 15,
@@ -2054,7 +2054,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
-      "sha256": "9cf8132a8fb8f24fc4d35778bd7fb121c7b014ffcb40513b34edc7303aa25e50",
+      "sha256": "78ffb83da225646ca70a81b56c83b7ea764b99d5477e8766e17840822463648b",
       "role": "working-source",
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
@@ -2933,6 +2933,7 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
+        "DEPENDENCIES.md",
         "RESEARCH.md",
         "RESULTS.md",
         "theories/becoming/README.md",
@@ -3165,7 +3166,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
-      "sha256": "d5c0a564062a3c5a98f5658176991e1ad72692b5387b7ca37e73e9ecc7cde9e1",
+      "sha256": "02c81e67e88bbc8d53940684a5e00be442660f3c6a4ffee427eb5d860674f5b6",
       "role": "working-source",
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
@@ -3716,7 +3717,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
-      "sha256": "d124a1b0a8dfdaa3cca0966c5517ea2766c3ddd368d9f727880e8a55178093b3",
+      "sha256": "7f13731b5cbf58f0d4e49a48dee6273fb6311f895d08ddd105ee573abc563ec7",
       "role": "working-source",
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
@@ -3895,7 +3896,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
-      "sha256": "2af8c3eafb4cbb791efb856fba9503c6f1fb4ba695d09fd20597e3e95b492f4d",
+      "sha256": "64c945b572fe4a7c3a0dec98a3ea9869c193bc09d963707b07a2b84f4c11f6a1",
       "role": "working-source",
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
@@ -18097,6 +18098,400 @@
       "declaration_counts": {
         "def": 8,
         "theorem": 34
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "02c81e67e88bbc8d53940684a5e00be442660f3c6a4ffee427eb5d860674f5b6": {
+      "byte_size": 39212,
+      "line_count": 712,
+      "imports": [
+        "Becoming.Distinguishing",
+        "Becoming.Lasting"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "after",
+          "qualified_name_hint": "Becoming.Parting.after",
+          "line": 80
+        },
+        {
+          "kind": "def",
+          "name": "before",
+          "qualified_name_hint": "Becoming.Parting.before",
+          "line": 84
+        },
+        {
+          "kind": "def",
+          "name": "joinAt",
+          "qualified_name_hint": "Becoming.Parting.joinAt",
+          "line": 90
+        },
+        {
+          "kind": "theorem",
+          "name": "joinAt_before",
+          "qualified_name_hint": "Becoming.Parting.joinAt_before",
+          "line": 99
+        },
+        {
+          "kind": "theorem",
+          "name": "joinAt_after",
+          "qualified_name_hint": "Becoming.Parting.joinAt_after",
+          "line": 109
+        },
+        {
+          "kind": "def",
+          "name": "course",
+          "qualified_name_hint": "Becoming.Parting.course",
+          "line": 125
+        },
+        {
+          "kind": "def",
+          "name": "PartAt",
+          "qualified_name_hint": "Becoming.Parting.PartAt",
+          "line": 128
+        },
+        {
+          "kind": "def",
+          "name": "Unparted",
+          "qualified_name_hint": "Becoming.Parting.Unparted",
+          "line": 132
+        },
+        {
+          "kind": "def",
+          "name": "RightAt",
+          "qualified_name_hint": "Becoming.Parting.RightAt",
+          "line": 137
+        },
+        {
+          "kind": "theorem",
+          "name": "not_right_on_both",
+          "qualified_name_hint": "Becoming.Parting.not_right_on_both",
+          "line": 142
+        },
+        {
+          "kind": "theorem",
+          "name": "not_parting_of_right",
+          "qualified_name_hint": "Becoming.Parting.not_parting_of_right",
+          "line": 151
+        },
+        {
+          "kind": "theorem",
+          "name": "unparted_iff",
+          "qualified_name_hint": "Becoming.Parting.unparted_iff",
+          "line": 158
+        },
+        {
+          "kind": "theorem",
+          "name": "Unparted.along",
+          "qualified_name_hint": "Becoming.Parting.Unparted.along",
+          "line": 178
+        },
+        {
+          "kind": "theorem",
+          "name": "course_statesBelow",
+          "qualified_name_hint": "Becoming.Parting.course_statesBelow",
+          "line": 189
+        },
+        {
+          "kind": "theorem",
+          "name": "leastBound_right",
+          "qualified_name_hint": "Becoming.Parting.leastBound_right",
+          "line": 201
+        },
+        {
+          "kind": "theorem",
+          "name": "states_agree",
+          "qualified_name_hint": "Becoming.Parting.states_agree",
+          "line": 208
+        },
+        {
+          "kind": "theorem",
+          "name": "unparted_of_determined",
+          "qualified_name_hint": "Becoming.Parting.unparted_of_determined",
+          "line": 217
+        },
+        {
+          "kind": "theorem",
+          "name": "rest_earliest_runs",
+          "qualified_name_hint": "Becoming.Parting.rest_earliest_runs",
+          "line": 224
+        },
+        {
+          "kind": "theorem",
+          "name": "unparted_at_of_late",
+          "qualified_name_hint": "Becoming.Parting.unparted_at_of_late",
+          "line": 248
+        },
+        {
+          "kind": "theorem",
+          "name": "statesBelow_shift",
+          "qualified_name_hint": "Becoming.Parting.statesBelow_shift",
+          "line": 268
+        },
+        {
+          "kind": "theorem",
+          "name": "late_statesBelow",
+          "qualified_name_hint": "Becoming.Parting.late_statesBelow",
+          "line": 286
+        },
+        {
+          "kind": "theorem",
+          "name": "late_right",
+          "qualified_name_hint": "Becoming.Parting.late_right",
+          "line": 296
+        },
+        {
+          "kind": "def",
+          "name": "anyOf",
+          "qualified_name_hint": "Becoming.Parting.anyOf",
+          "line": 310
+        },
+        {
+          "kind": "theorem",
+          "name": "anyOf_true",
+          "qualified_name_hint": "Becoming.Parting.anyOf_true",
+          "line": 314
+        },
+        {
+          "kind": "theorem",
+          "name": "anyOf_of_mem",
+          "qualified_name_hint": "Becoming.Parting.anyOf_of_mem",
+          "line": 328
+        },
+        {
+          "kind": "theorem",
+          "name": "and_both",
+          "qualified_name_hint": "Becoming.Parting.and_both",
+          "line": 335
+        },
+        {
+          "kind": "theorem",
+          "name": "and_of",
+          "qualified_name_hint": "Becoming.Parting.and_of",
+          "line": 338
+        },
+        {
+          "kind": "def",
+          "name": "keepIf",
+          "qualified_name_hint": "Becoming.Parting.keepIf",
+          "line": 342
+        },
+        {
+          "kind": "theorem",
+          "name": "mem_keepIf",
+          "qualified_name_hint": "Becoming.Parting.mem_keepIf",
+          "line": 346
+        },
+        {
+          "kind": "def",
+          "name": "choose",
+          "qualified_name_hint": "Becoming.Parting.choose",
+          "line": 370
+        },
+        {
+          "kind": "theorem",
+          "name": "path_of_continues",
+          "qualified_name_hint": "Becoming.Parting.path_of_continues",
+          "line": 384
+        },
+        {
+          "kind": "theorem",
+          "name": "continues_cycle",
+          "qualified_name_hint": "Becoming.Parting.continues_cycle",
+          "line": 394
+        },
+        {
+          "kind": "theorem",
+          "name": "continues_persists",
+          "qualified_name_hint": "Becoming.Parting.continues_persists",
+          "line": 410
+        },
+        {
+          "kind": "theorem",
+          "name": "continues_any",
+          "qualified_name_hint": "Becoming.Parting.continues_any",
+          "line": 420
+        },
+        {
+          "kind": "theorem",
+          "name": "unbounded_of_continues",
+          "qualified_name_hint": "Becoming.Parting.unbounded_of_continues",
+          "line": 429
+        },
+        {
+          "kind": "def",
+          "name": "live",
+          "qualified_name_hint": "Becoming.Parting.live",
+          "line": 439
+        },
+        {
+          "kind": "theorem",
+          "name": "live_succ_iff",
+          "qualified_name_hint": "Becoming.Parting.live_succ_iff",
+          "line": 445
+        },
+        {
+          "kind": "theorem",
+          "name": "live_of_run",
+          "qualified_name_hint": "Becoming.Parting.live_of_run",
+          "line": 455
+        },
+        {
+          "kind": "theorem",
+          "name": "live_iff_continues",
+          "qualified_name_hint": "Becoming.Parting.live_iff_continues",
+          "line": 463
+        },
+        {
+          "kind": "theorem",
+          "name": "live_persists",
+          "qualified_name_hint": "Becoming.Parting.live_persists",
+          "line": 473
+        },
+        {
+          "kind": "def",
+          "name": "advance",
+          "qualified_name_hint": "Becoming.Parting.advance",
+          "line": 480
+        },
+        {
+          "kind": "def",
+          "name": "advanced",
+          "qualified_name_hint": "Becoming.Parting.advanced",
+          "line": 493
+        },
+        {
+          "kind": "def",
+          "name": "liveRun",
+          "qualified_name_hint": "Becoming.Parting.liveRun",
+          "line": 500
+        },
+        {
+          "kind": "def",
+          "name": "candidates",
+          "qualified_name_hint": "Becoming.Parting.candidates",
+          "line": 511
+        },
+        {
+          "kind": "def",
+          "name": "firstLive",
+          "qualified_name_hint": "Becoming.Parting.firstLive",
+          "line": 518
+        },
+        {
+          "kind": "theorem",
+          "name": "firstLive_spec",
+          "qualified_name_hint": "Becoming.Parting.firstLive_spec",
+          "line": 522
+        },
+        {
+          "kind": "theorem",
+          "name": "firstLive_found",
+          "qualified_name_hint": "Becoming.Parting.firstLive_found",
+          "line": 542
+        },
+        {
+          "kind": "def",
+          "name": "worldLearner",
+          "qualified_name_hint": "Becoming.Parting.worldLearner",
+          "line": 560
+        },
+        {
+          "kind": "theorem",
+          "name": "run_in_candidates",
+          "qualified_name_hint": "Becoming.Parting.run_in_candidates",
+          "line": 563
+        },
+        {
+          "kind": "theorem",
+          "name": "candidates_run",
+          "qualified_name_hint": "Becoming.Parting.candidates_run",
+          "line": 570
+        },
+        {
+          "kind": "theorem",
+          "name": "world_right",
+          "qualified_name_hint": "Becoming.Parting.world_right",
+          "line": 599
+        },
+        {
+          "kind": "theorem",
+          "name": "world_right_iff",
+          "qualified_name_hint": "Becoming.Parting.world_right_iff",
+          "line": 625
+        },
+        {
+          "kind": "theorem",
+          "name": "some_right_iff",
+          "qualified_name_hint": "Becoming.Parting.some_right_iff",
+          "line": 633
+        },
+        {
+          "kind": "def",
+          "name": "free",
+          "qualified_name_hint": "Becoming.Parting.free",
+          "line": 649
+        },
+        {
+          "kind": "def",
+          "name": "freeRun",
+          "qualified_name_hint": "Becoming.Parting.freeRun",
+          "line": 652
+        },
+        {
+          "kind": "theorem",
+          "name": "freeRun_course",
+          "qualified_name_hint": "Becoming.Parting.freeRun_course",
+          "line": 654
+        },
+        {
+          "kind": "theorem",
+          "name": "free_unparted_const",
+          "qualified_name_hint": "Becoming.Parting.free_unparted_const",
+          "line": 657
+        },
+        {
+          "kind": "theorem",
+          "name": "free_parts_after",
+          "qualified_name_hint": "Becoming.Parting.free_parts_after",
+          "line": 663
+        },
+        {
+          "kind": "theorem",
+          "name": "free_open",
+          "qualified_name_hint": "Becoming.Parting.free_open",
+          "line": 677
+        },
+        {
+          "kind": "theorem",
+          "name": "free_never_right",
+          "qualified_name_hint": "Becoming.Parting.free_never_right",
+          "line": 688
+        },
+        {
+          "kind": "theorem",
+          "name": "free_held",
+          "qualified_name_hint": "Becoming.Parting.free_held",
+          "line": 695
+        },
+        {
+          "kind": "theorem",
+          "name": "free_unbounded",
+          "qualified_name_hint": "Becoming.Parting.free_unbounded",
+          "line": 702
+        }
+      ],
+      "declaration_counts": {
+        "def": 19,
+        "theorem": 43
       },
       "textual_markers": {
         "sorry": [],
@@ -54601,292 +54996,6 @@
         "abbrev": 1,
         "def": 4,
         "theorem": 26
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
-    "2af8c3eafb4cbb791efb856fba9503c6f1fb4ba695d09fd20597e3e95b492f4d": {
-      "byte_size": 18332,
-      "line_count": 385,
-      "imports": [
-        "Becoming.Identification",
-        "Becoming.Weighted"
-      ],
-      "declarations": [
-        {
-          "kind": "theorem",
-          "name": "left_comm",
-          "qualified_name_hint": "Becoming.Typicality.left_comm",
-          "line": 58
-        },
-        {
-          "kind": "def",
-          "name": "ones",
-          "qualified_name_hint": "Becoming.Typicality.ones",
-          "line": 64
-        },
-        {
-          "kind": "def",
-          "name": "zeros",
-          "qualified_name_hint": "Becoming.Typicality.zeros",
-          "line": 70
-        },
-        {
-          "kind": "def",
-          "name": "weight",
-          "qualified_name_hint": "Becoming.Typicality.weight",
-          "line": 76
-        },
-        {
-          "kind": "def",
-          "name": "extend",
-          "qualified_name_hint": "Becoming.Typicality.extend",
-          "line": 82
-        },
-        {
-          "kind": "def",
-          "name": "courses",
-          "qualified_name_hint": "Becoming.Typicality.courses",
-          "line": 87
-        },
-        {
-          "kind": "def",
-          "name": "total",
-          "qualified_name_hint": "Becoming.Typicality.total",
-          "line": 92
-        },
-        {
-          "kind": "theorem",
-          "name": "mem_extend_true",
-          "qualified_name_hint": "Becoming.Typicality.mem_extend_true",
-          "line": 96
-        },
-        {
-          "kind": "theorem",
-          "name": "of_mem_extend",
-          "qualified_name_hint": "Becoming.Typicality.of_mem_extend",
-          "line": 102
-        },
-        {
-          "kind": "theorem",
-          "name": "mem_courses_iff",
-          "qualified_name_hint": "Becoming.Typicality.mem_courses_iff",
-          "line": 115
-        },
-        {
-          "kind": "theorem",
-          "name": "extend_length",
-          "qualified_name_hint": "Becoming.Typicality.extend_length",
-          "line": 132
-        },
-        {
-          "kind": "theorem",
-          "name": "courses_length",
-          "qualified_name_hint": "Becoming.Typicality.courses_length",
-          "line": 137
-        },
-        {
-          "kind": "theorem",
-          "name": "total_extend",
-          "qualified_name_hint": "Becoming.Typicality.total_extend",
-          "line": 144
-        },
-        {
-          "kind": "theorem",
-          "name": "total_congr",
-          "qualified_name_hint": "Becoming.Typicality.total_congr",
-          "line": 152
-        },
-        {
-          "kind": "theorem",
-          "name": "total_add",
-          "qualified_name_hint": "Becoming.Typicality.total_add",
-          "line": 159
-        },
-        {
-          "kind": "theorem",
-          "name": "total_mul",
-          "qualified_name_hint": "Becoming.Typicality.total_mul",
-          "line": 166
-        },
-        {
-          "kind": "theorem",
-          "name": "total_mul_right",
-          "qualified_name_hint": "Becoming.Typicality.total_mul_right",
-          "line": 173
-        },
-        {
-          "kind": "theorem",
-          "name": "total_le",
-          "qualified_name_hint": "Becoming.Typicality.total_le",
-          "line": 180
-        },
-        {
-          "kind": "theorem",
-          "name": "total_weight",
-          "qualified_name_hint": "Becoming.Typicality.total_weight",
-          "line": 186
-        },
-        {
-          "kind": "def",
-          "name": "ahead",
-          "qualified_name_hint": "Becoming.Typicality.ahead",
-          "line": 198
-        },
-        {
-          "kind": "def",
-          "name": "behind",
-          "qualified_name_hint": "Becoming.Typicality.behind",
-          "line": 201
-        },
-        {
-          "kind": "def",
-          "name": "square",
-          "qualified_name_hint": "Becoming.Typicality.square",
-          "line": 204
-        },
-        {
-          "kind": "def",
-          "name": "cross",
-          "qualified_name_hint": "Becoming.Typicality.cross",
-          "line": 208
-        },
-        {
-          "kind": "theorem",
-          "name": "sq_add",
-          "qualified_name_hint": "Becoming.Typicality.sq_add",
-          "line": 210
-        },
-        {
-          "kind": "theorem",
-          "name": "square_true",
-          "qualified_name_hint": "Becoming.Typicality.square_true",
-          "line": 214
-        },
-        {
-          "kind": "theorem",
-          "name": "square_false",
-          "qualified_name_hint": "Becoming.Typicality.square_false",
-          "line": 220
-        },
-        {
-          "kind": "theorem",
-          "name": "cross_true",
-          "qualified_name_hint": "Becoming.Typicality.cross_true",
-          "line": 226
-        },
-        {
-          "kind": "theorem",
-          "name": "cross_false",
-          "qualified_name_hint": "Becoming.Typicality.cross_false",
-          "line": 232
-        },
-        {
-          "kind": "theorem",
-          "name": "split",
-          "qualified_name_hint": "Becoming.Typicality.split",
-          "line": 239
-        },
-        {
-          "kind": "theorem",
-          "name": "regroup",
-          "qualified_name_hint": "Becoming.Typicality.regroup",
-          "line": 242
-        },
-        {
-          "kind": "theorem",
-          "name": "steps_leave",
-          "qualified_name_hint": "Becoming.Typicality.steps_leave",
-          "line": 246
-        },
-        {
-          "kind": "theorem",
-          "name": "weighted_square",
-          "qualified_name_hint": "Becoming.Typicality.weighted_square",
-          "line": 257
-        },
-        {
-          "kind": "theorem",
-          "name": "weighted_cross",
-          "qualified_name_hint": "Becoming.Typicality.weighted_cross",
-          "line": 272
-        },
-        {
-          "kind": "theorem",
-          "name": "step_weight",
-          "qualified_name_hint": "Becoming.Typicality.step_weight",
-          "line": 282
-        },
-        {
-          "kind": "theorem",
-          "name": "spread",
-          "qualified_name_hint": "Becoming.Typicality.spread",
-          "line": 291
-        },
-        {
-          "kind": "theorem",
-          "name": "two_mul_le_of_le",
-          "qualified_name_hint": "Becoming.Typicality.two_mul_le_of_le",
-          "line": 305
-        },
-        {
-          "kind": "theorem",
-          "name": "two_mul_le",
-          "qualified_name_hint": "Becoming.Typicality.two_mul_le",
-          "line": 316
-        },
-        {
-          "kind": "def",
-          "name": "offBy",
-          "qualified_name_hint": "Becoming.Typicality.offBy",
-          "line": 324
-        },
-        {
-          "kind": "theorem",
-          "name": "offBy_le",
-          "qualified_name_hint": "Becoming.Typicality.offBy_le",
-          "line": 327
-        },
-        {
-          "kind": "theorem",
-          "name": "typical",
-          "qualified_name_hint": "Becoming.Typicality.typical",
-          "line": 340
-        },
-        {
-          "kind": "def",
-          "name": "stepWeight",
-          "qualified_name_hint": "Becoming.Typicality.stepWeight",
-          "line": 353
-        },
-        {
-          "kind": "theorem",
-          "name": "along_weight",
-          "qualified_name_hint": "Becoming.Typicality.along_weight",
-          "line": 358
-        },
-        {
-          "kind": "theorem",
-          "name": "transfer_weight",
-          "qualified_name_hint": "Becoming.Typicality.transfer_weight",
-          "line": 364
-        },
-        {
-          "kind": "theorem",
-          "name": "sum_courses_weight",
-          "qualified_name_hint": "Becoming.Typicality.sum_courses_weight",
-          "line": 376
-        }
-      ],
-      "declaration_counts": {
-        "def": 12,
-        "theorem": 32
       },
       "textual_markers": {
         "sorry": [],
@@ -109908,6 +110017,364 @@
       },
       "print_axioms_commands": 0
     },
+    "64c945b572fe4a7c3a0dec98a3ea9869c193bc09d963707b07a2b84f4c11f6a1": {
+      "byte_size": 23824,
+      "line_count": 491,
+      "imports": [
+        "Becoming.Identification",
+        "Becoming.Weighted"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "left_comm",
+          "qualified_name_hint": "Becoming.Typicality.left_comm",
+          "line": 65
+        },
+        {
+          "kind": "def",
+          "name": "ones",
+          "qualified_name_hint": "Becoming.Typicality.ones",
+          "line": 71
+        },
+        {
+          "kind": "def",
+          "name": "zeros",
+          "qualified_name_hint": "Becoming.Typicality.zeros",
+          "line": 77
+        },
+        {
+          "kind": "def",
+          "name": "weight",
+          "qualified_name_hint": "Becoming.Typicality.weight",
+          "line": 83
+        },
+        {
+          "kind": "def",
+          "name": "extend",
+          "qualified_name_hint": "Becoming.Typicality.extend",
+          "line": 89
+        },
+        {
+          "kind": "def",
+          "name": "courses",
+          "qualified_name_hint": "Becoming.Typicality.courses",
+          "line": 94
+        },
+        {
+          "kind": "def",
+          "name": "total",
+          "qualified_name_hint": "Becoming.Typicality.total",
+          "line": 99
+        },
+        {
+          "kind": "theorem",
+          "name": "mem_extend_true",
+          "qualified_name_hint": "Becoming.Typicality.mem_extend_true",
+          "line": 103
+        },
+        {
+          "kind": "theorem",
+          "name": "of_mem_extend",
+          "qualified_name_hint": "Becoming.Typicality.of_mem_extend",
+          "line": 109
+        },
+        {
+          "kind": "theorem",
+          "name": "mem_courses_iff",
+          "qualified_name_hint": "Becoming.Typicality.mem_courses_iff",
+          "line": 122
+        },
+        {
+          "kind": "theorem",
+          "name": "extend_length",
+          "qualified_name_hint": "Becoming.Typicality.extend_length",
+          "line": 139
+        },
+        {
+          "kind": "theorem",
+          "name": "courses_length",
+          "qualified_name_hint": "Becoming.Typicality.courses_length",
+          "line": 144
+        },
+        {
+          "kind": "theorem",
+          "name": "total_extend",
+          "qualified_name_hint": "Becoming.Typicality.total_extend",
+          "line": 151
+        },
+        {
+          "kind": "theorem",
+          "name": "total_congr",
+          "qualified_name_hint": "Becoming.Typicality.total_congr",
+          "line": 159
+        },
+        {
+          "kind": "theorem",
+          "name": "total_add",
+          "qualified_name_hint": "Becoming.Typicality.total_add",
+          "line": 166
+        },
+        {
+          "kind": "theorem",
+          "name": "total_mul",
+          "qualified_name_hint": "Becoming.Typicality.total_mul",
+          "line": 173
+        },
+        {
+          "kind": "theorem",
+          "name": "total_mul_right",
+          "qualified_name_hint": "Becoming.Typicality.total_mul_right",
+          "line": 180
+        },
+        {
+          "kind": "theorem",
+          "name": "total_le",
+          "qualified_name_hint": "Becoming.Typicality.total_le",
+          "line": 187
+        },
+        {
+          "kind": "theorem",
+          "name": "total_weight",
+          "qualified_name_hint": "Becoming.Typicality.total_weight",
+          "line": 193
+        },
+        {
+          "kind": "def",
+          "name": "ahead",
+          "qualified_name_hint": "Becoming.Typicality.ahead",
+          "line": 205
+        },
+        {
+          "kind": "def",
+          "name": "behind",
+          "qualified_name_hint": "Becoming.Typicality.behind",
+          "line": 208
+        },
+        {
+          "kind": "def",
+          "name": "square",
+          "qualified_name_hint": "Becoming.Typicality.square",
+          "line": 211
+        },
+        {
+          "kind": "def",
+          "name": "cross",
+          "qualified_name_hint": "Becoming.Typicality.cross",
+          "line": 215
+        },
+        {
+          "kind": "theorem",
+          "name": "sq_add",
+          "qualified_name_hint": "Becoming.Typicality.sq_add",
+          "line": 217
+        },
+        {
+          "kind": "theorem",
+          "name": "square_true",
+          "qualified_name_hint": "Becoming.Typicality.square_true",
+          "line": 221
+        },
+        {
+          "kind": "theorem",
+          "name": "square_false",
+          "qualified_name_hint": "Becoming.Typicality.square_false",
+          "line": 227
+        },
+        {
+          "kind": "theorem",
+          "name": "cross_true",
+          "qualified_name_hint": "Becoming.Typicality.cross_true",
+          "line": 233
+        },
+        {
+          "kind": "theorem",
+          "name": "cross_false",
+          "qualified_name_hint": "Becoming.Typicality.cross_false",
+          "line": 239
+        },
+        {
+          "kind": "theorem",
+          "name": "split",
+          "qualified_name_hint": "Becoming.Typicality.split",
+          "line": 246
+        },
+        {
+          "kind": "theorem",
+          "name": "regroup",
+          "qualified_name_hint": "Becoming.Typicality.regroup",
+          "line": 249
+        },
+        {
+          "kind": "theorem",
+          "name": "steps_leave",
+          "qualified_name_hint": "Becoming.Typicality.steps_leave",
+          "line": 253
+        },
+        {
+          "kind": "theorem",
+          "name": "weighted_square",
+          "qualified_name_hint": "Becoming.Typicality.weighted_square",
+          "line": 264
+        },
+        {
+          "kind": "theorem",
+          "name": "weighted_cross",
+          "qualified_name_hint": "Becoming.Typicality.weighted_cross",
+          "line": 279
+        },
+        {
+          "kind": "theorem",
+          "name": "step_weight",
+          "qualified_name_hint": "Becoming.Typicality.step_weight",
+          "line": 289
+        },
+        {
+          "kind": "theorem",
+          "name": "spread",
+          "qualified_name_hint": "Becoming.Typicality.spread",
+          "line": 298
+        },
+        {
+          "kind": "theorem",
+          "name": "two_mul_le_of_le",
+          "qualified_name_hint": "Becoming.Typicality.two_mul_le_of_le",
+          "line": 312
+        },
+        {
+          "kind": "theorem",
+          "name": "two_mul_le",
+          "qualified_name_hint": "Becoming.Typicality.two_mul_le",
+          "line": 323
+        },
+        {
+          "kind": "def",
+          "name": "offBy",
+          "qualified_name_hint": "Becoming.Typicality.offBy",
+          "line": 331
+        },
+        {
+          "kind": "theorem",
+          "name": "offBy_le",
+          "qualified_name_hint": "Becoming.Typicality.offBy_le",
+          "line": 334
+        },
+        {
+          "kind": "theorem",
+          "name": "typical",
+          "qualified_name_hint": "Becoming.Typicality.typical",
+          "line": 347
+        },
+        {
+          "kind": "theorem",
+          "name": "pow_add_nat",
+          "qualified_name_hint": "Becoming.Typicality.pow_add_nat",
+          "line": 359
+        },
+        {
+          "kind": "theorem",
+          "name": "ones_add_zeros",
+          "qualified_name_hint": "Becoming.Typicality.ones_add_zeros",
+          "line": 366
+        },
+        {
+          "kind": "theorem",
+          "name": "weight_pow",
+          "qualified_name_hint": "Becoming.Typicality.weight_pow",
+          "line": 372
+        },
+        {
+          "kind": "theorem",
+          "name": "mul_mul_mul",
+          "qualified_name_hint": "Becoming.Typicality.mul_mul_mul",
+          "line": 381
+        },
+        {
+          "kind": "theorem",
+          "name": "weight_mul",
+          "qualified_name_hint": "Becoming.Typicality.weight_mul",
+          "line": 385
+        },
+        {
+          "kind": "theorem",
+          "name": "tilt_le",
+          "qualified_name_hint": "Becoming.Typicality.tilt_le",
+          "line": 397
+        },
+        {
+          "kind": "def",
+          "name": "atLeast",
+          "qualified_name_hint": "Becoming.Typicality.atLeast",
+          "line": 411
+        },
+        {
+          "kind": "theorem",
+          "name": "atLeast_le",
+          "qualified_name_hint": "Becoming.Typicality.atLeast_le",
+          "line": 414
+        },
+        {
+          "kind": "theorem",
+          "name": "total_le_mem",
+          "qualified_name_hint": "Becoming.Typicality.total_le_mem",
+          "line": 426
+        },
+        {
+          "kind": "theorem",
+          "name": "total_congr_mem",
+          "qualified_name_hint": "Becoming.Typicality.total_congr_mem",
+          "line": 431
+        },
+        {
+          "kind": "theorem",
+          "name": "concentrated",
+          "qualified_name_hint": "Becoming.Typicality.concentrated",
+          "line": 440
+        },
+        {
+          "kind": "theorem",
+          "name": "few_far_ahead",
+          "qualified_name_hint": "Becoming.Typicality.few_far_ahead",
+          "line": 450
+        },
+        {
+          "kind": "def",
+          "name": "stepWeight",
+          "qualified_name_hint": "Becoming.Typicality.stepWeight",
+          "line": 459
+        },
+        {
+          "kind": "theorem",
+          "name": "along_weight",
+          "qualified_name_hint": "Becoming.Typicality.along_weight",
+          "line": 464
+        },
+        {
+          "kind": "theorem",
+          "name": "transfer_weight",
+          "qualified_name_hint": "Becoming.Typicality.transfer_weight",
+          "line": 470
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_courses_weight",
+          "qualified_name_hint": "Becoming.Typicality.sum_courses_weight",
+          "line": 482
+        }
+      ],
+      "declaration_counts": {
+        "def": 13,
+        "theorem": 43
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "653731cdda419f2f931dfde187769ec95de1de3485a9ef8483dba37c397664ac": {
       "byte_size": 13340,
       "line_count": 241,
@@ -125258,6 +125725,135 @@
       },
       "print_axioms_commands": 0
     },
+    "78ffb83da225646ca70a81b56c83b7ea764b99d5477e8766e17840822463648b": {
+      "byte_size": 93065,
+      "line_count": 1124,
+      "imports": [
+        "Becoming.Frame",
+        "Becoming.Inquiry",
+        "Becoming.Recurrence",
+        "Becoming.Diagonal",
+        "Becoming.Context",
+        "Becoming.Quantum",
+        "Becoming.Renewal",
+        "Becoming.Dependence",
+        "Becoming.Return",
+        "Becoming.Horizon",
+        "Becoming.Joint",
+        "Becoming.Experiment",
+        "Becoming.Mechanism",
+        "Becoming.Unfolding",
+        "Becoming.Histories",
+        "Becoming.Branching",
+        "Becoming.Listing",
+        "Becoming.Order",
+        "Becoming.OrderNormal",
+        "Becoming.OneStep",
+        "Becoming.Weighted",
+        "Becoming.Transmission",
+        "Becoming.Succession",
+        "Becoming.Attraction",
+        "Becoming.Substitution",
+        "Becoming.Generation",
+        "Becoming.Flow",
+        "Becoming.Stock",
+        "Becoming.Change",
+        "Becoming.Population",
+        "Becoming.Identity",
+        "Becoming.Persistence",
+        "Becoming.Wholes",
+        "Becoming.Dissipation",
+        "Becoming.Locality",
+        "Becoming.Seeking",
+        "Becoming.Roles",
+        "Becoming.Reserve",
+        "Becoming.Evolution",
+        "Becoming.Capture",
+        "Becoming.Space",
+        "Becoming.Premises",
+        "Becoming.Sampling",
+        "Becoming.Tower",
+        "Becoming.Openness",
+        "Becoming.Decidedness",
+        "Becoming.Refinement",
+        "Becoming.Counting",
+        "Becoming.Standing",
+        "Becoming.Resolution",
+        "Becoming.Entropy",
+        "Becoming.Units",
+        "Becoming.Imbalance",
+        "Becoming.Continuation",
+        "Becoming.Admission",
+        "Becoming.Regions",
+        "Becoming.Metaethics",
+        "Becoming.Ranking",
+        "Becoming.LossMatching",
+        "Becoming.Correspondence",
+        "Becoming.Descent",
+        "Becoming.Standpoints",
+        "Becoming.Significance",
+        "Becoming.Interdependence",
+        "Becoming.Feeding",
+        "Becoming.Feedback",
+        "Becoming.Boundaries",
+        "Becoming.Relevance",
+        "Becoming.Testing",
+        "Becoming.Runaway",
+        "Becoming.Response",
+        "Becoming.TimedResponse",
+        "Becoming.Counterfactual",
+        "Becoming.Regrouping",
+        "Becoming.Selection",
+        "Becoming.Learning",
+        "Becoming.Revision",
+        "Becoming.Contacts",
+        "Becoming.RegroupingSelection",
+        "Becoming.ReferencePlan",
+        "Becoming.ContinuingRevision",
+        "Becoming.Description",
+        "Becoming.Identification",
+        "Becoming.Learnable",
+        "Becoming.Assurance",
+        "Becoming.Segmentation",
+        "Becoming.Readout",
+        "Becoming.Gated",
+        "Becoming.Viability",
+        "Becoming.Keeping",
+        "Becoming.Countdown",
+        "Becoming.Lasting",
+        "Becoming.Copying",
+        "Becoming.Retrodiction",
+        "Becoming.CrossSituational",
+        "Becoming.Likeness",
+        "Becoming.Distinguishing",
+        "Becoming.Composition",
+        "Becoming.Joining",
+        "Becoming.Granularity",
+        "Becoming.Postponement",
+        "Becoming.Novelty",
+        "Becoming.Reading",
+        "Becoming.Readings",
+        "Becoming.Coupling",
+        "Becoming.Sensitivity",
+        "Becoming.Courses",
+        "Becoming.Parting",
+        "Becoming.Typicality",
+        "Becoming.Situations",
+        "Becoming.Propagation",
+        "Becoming.Gain",
+        "Becoming.Gluing"
+      ],
+      "declarations": [],
+      "declaration_counts": {},
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "790e54a70168aaf1a346850fd9c40936c25713f189fd6868633fa714c583213f": {
       "byte_size": 1544,
       "line_count": 39,
@@ -127619,6 +128215,351 @@
       "declaration_counts": {
         "def": 1,
         "theorem": 16
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "7f13731b5cbf58f0d4e49a48dee6273fb6311f895d08ddd105ee573abc563ec7": {
+      "byte_size": 38374,
+      "line_count": 712,
+      "imports": [
+        "Becoming.Typicality"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "upto",
+          "qualified_name_hint": "Becoming.Situations.upto",
+          "line": 75
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_upto",
+          "qualified_name_hint": "Becoming.Situations.sum_upto",
+          "line": 80
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_one",
+          "qualified_name_hint": "Becoming.Situations.sum_one",
+          "line": 87
+        },
+        {
+          "kind": "def",
+          "name": "finerLaw",
+          "qualified_name_hint": "Becoming.Situations.finerLaw",
+          "line": 101
+        },
+        {
+          "kind": "theorem",
+          "name": "finerLaw_determined",
+          "qualified_name_hint": "Becoming.Situations.finerLaw_determined",
+          "line": 105
+        },
+        {
+          "kind": "theorem",
+          "name": "finerLaw_step_iff",
+          "qualified_name_hint": "Becoming.Situations.finerLaw_step_iff",
+          "line": 109
+        },
+        {
+          "kind": "def",
+          "name": "finerSteps",
+          "qualified_name_hint": "Becoming.Situations.finerSteps",
+          "line": 116
+        },
+        {
+          "kind": "def",
+          "name": "finer",
+          "qualified_name_hint": "Becoming.Situations.finer",
+          "line": 122
+        },
+        {
+          "kind": "def",
+          "name": "coarse",
+          "qualified_name_hint": "Becoming.Situations.coarse",
+          "line": 129
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_finer",
+          "qualified_name_hint": "Becoming.Situations.sum_finer",
+          "line": 136
+        },
+        {
+          "kind": "theorem",
+          "name": "finer_count",
+          "qualified_name_hint": "Becoming.Situations.finer_count",
+          "line": 174
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_courses_values",
+          "qualified_name_hint": "Becoming.Situations.sum_courses_values",
+          "line": 188
+        },
+        {
+          "kind": "theorem",
+          "name": "situations_count",
+          "qualified_name_hint": "Becoming.Situations.situations_count",
+          "line": 208
+        },
+        {
+          "kind": "theorem",
+          "name": "mul_indicator",
+          "qualified_name_hint": "Becoming.Situations.mul_indicator",
+          "line": 213
+        },
+        {
+          "kind": "theorem",
+          "name": "total_only",
+          "qualified_name_hint": "Becoming.Situations.total_only",
+          "line": 220
+        },
+        {
+          "kind": "theorem",
+          "name": "situations_of_course",
+          "qualified_name_hint": "Becoming.Situations.situations_of_course",
+          "line": 249
+        },
+        {
+          "kind": "def",
+          "name": "far",
+          "qualified_name_hint": "Becoming.Situations.far",
+          "line": 261
+        },
+        {
+          "kind": "theorem",
+          "name": "weight_far",
+          "qualified_name_hint": "Becoming.Situations.weight_far",
+          "line": 264
+        },
+        {
+          "kind": "theorem",
+          "name": "situations_typical",
+          "qualified_name_hint": "Becoming.Situations.situations_typical",
+          "line": 271
+        },
+        {
+          "kind": "def",
+          "name": "keep",
+          "qualified_name_hint": "Becoming.Situations.keep",
+          "line": 292
+        },
+        {
+          "kind": "def",
+          "name": "drop",
+          "qualified_name_hint": "Becoming.Situations.drop",
+          "line": 297
+        },
+        {
+          "kind": "def",
+          "name": "inside",
+          "qualified_name_hint": "Becoming.Situations.inside",
+          "line": 302
+        },
+        {
+          "kind": "def",
+          "name": "outside",
+          "qualified_name_hint": "Becoming.Situations.outside",
+          "line": 306
+        },
+        {
+          "kind": "theorem",
+          "name": "keep_drop",
+          "qualified_name_hint": "Becoming.Situations.keep_drop",
+          "line": 309
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_split",
+          "qualified_name_hint": "Becoming.Situations.sum_split",
+          "line": 320
+        },
+        {
+          "kind": "theorem",
+          "name": "inside_add_outside",
+          "qualified_name_hint": "Becoming.Situations.inside_add_outside",
+          "line": 333
+        },
+        {
+          "kind": "def",
+          "name": "valueWeight",
+          "qualified_name_hint": "Becoming.Situations.valueWeight",
+          "line": 343
+        },
+        {
+          "kind": "def",
+          "name": "seen",
+          "qualified_name_hint": "Becoming.Situations.seen",
+          "line": 346
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_event",
+          "qualified_name_hint": "Becoming.Situations.sum_event",
+          "line": 352
+        },
+        {
+          "kind": "theorem",
+          "name": "event_typical",
+          "qualified_name_hint": "Becoming.Situations.event_typical",
+          "line": 392
+        },
+        {
+          "kind": "theorem",
+          "name": "event_concentrated",
+          "qualified_name_hint": "Becoming.Situations.event_concentrated",
+          "line": 411
+        },
+        {
+          "kind": "theorem",
+          "name": "event_count",
+          "qualified_name_hint": "Becoming.Situations.event_count",
+          "line": 428
+        },
+        {
+          "kind": "def",
+          "name": "occ",
+          "qualified_name_hint": "Becoming.Situations.occ",
+          "line": 446
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_only",
+          "qualified_name_hint": "Becoming.Situations.sum_only",
+          "line": 450
+        },
+        {
+          "kind": "theorem",
+          "name": "situations_take",
+          "qualified_name_hint": "Becoming.Situations.situations_take",
+          "line": 460
+        },
+        {
+          "kind": "theorem",
+          "name": "occ_map_cons",
+          "qualified_name_hint": "Becoming.Situations.occ_map_cons",
+          "line": 470
+        },
+        {
+          "kind": "theorem",
+          "name": "occ_map_pair",
+          "qualified_name_hint": "Becoming.Situations.occ_map_pair",
+          "line": 486
+        },
+        {
+          "kind": "theorem",
+          "name": "occ_openSteps",
+          "qualified_name_hint": "Becoming.Situations.occ_openSteps",
+          "line": 502
+        },
+        {
+          "kind": "theorem",
+          "name": "occ_courses",
+          "qualified_name_hint": "Becoming.Situations.occ_courses",
+          "line": 507
+        },
+        {
+          "kind": "theorem",
+          "name": "occ_courses_once",
+          "qualified_name_hint": "Becoming.Situations.occ_courses_once",
+          "line": 516
+        },
+        {
+          "kind": "theorem",
+          "name": "situations_of_course_listed",
+          "qualified_name_hint": "Becoming.Situations.situations_of_course_listed",
+          "line": 528
+        },
+        {
+          "kind": "def",
+          "name": "signs",
+          "qualified_name_hint": "Becoming.Situations.signs",
+          "line": 546
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_mul_right",
+          "qualified_name_hint": "Becoming.Situations.sum_mul_right",
+          "line": 550
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_finer_weights",
+          "qualified_name_hint": "Becoming.Situations.sum_finer_weights",
+          "line": 559
+        },
+        {
+          "kind": "def",
+          "name": "sign",
+          "qualified_name_hint": "Becoming.Situations.sign",
+          "line": 611
+        },
+        {
+          "kind": "def",
+          "name": "both",
+          "qualified_name_hint": "Becoming.Situations.both",
+          "line": 615
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_adding",
+          "qualified_name_hint": "Becoming.Situations.sum_adding",
+          "line": 618
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_signed",
+          "qualified_name_hint": "Becoming.Situations.sum_signed",
+          "line": 627
+        },
+        {
+          "kind": "theorem",
+          "name": "signed_sums",
+          "qualified_name_hint": "Becoming.Situations.signed_sums",
+          "line": 638
+        },
+        {
+          "kind": "theorem",
+          "name": "signed_situations",
+          "qualified_name_hint": "Becoming.Situations.signed_situations",
+          "line": 644
+        },
+        {
+          "kind": "theorem",
+          "name": "signs_unit",
+          "qualified_name_hint": "Becoming.Situations.signs_unit",
+          "line": 655
+        },
+        {
+          "kind": "theorem",
+          "name": "sum_units",
+          "qualified_name_hint": "Becoming.Situations.sum_units",
+          "line": 670
+        },
+        {
+          "kind": "theorem",
+          "name": "signed_counts",
+          "qualified_name_hint": "Becoming.Situations.signed_counts",
+          "line": 691
+        },
+        {
+          "kind": "theorem",
+          "name": "cancels_situations",
+          "qualified_name_hint": "Becoming.Situations.cancels_situations",
+          "line": 703
+        }
+      ],
+      "declaration_counts": {
+        "def": 16,
+        "theorem": 38
       },
       "textual_markers": {
         "sorry": [],
@@ -153702,135 +154643,6 @@
         "structure": 1,
         "theorem": 119
       },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
-    "9cf8132a8fb8f24fc4d35778bd7fb121c7b014ffcb40513b34edc7303aa25e50": {
-      "byte_size": 92069,
-      "line_count": 1114,
-      "imports": [
-        "Becoming.Frame",
-        "Becoming.Inquiry",
-        "Becoming.Recurrence",
-        "Becoming.Diagonal",
-        "Becoming.Context",
-        "Becoming.Quantum",
-        "Becoming.Renewal",
-        "Becoming.Dependence",
-        "Becoming.Return",
-        "Becoming.Horizon",
-        "Becoming.Joint",
-        "Becoming.Experiment",
-        "Becoming.Mechanism",
-        "Becoming.Unfolding",
-        "Becoming.Histories",
-        "Becoming.Branching",
-        "Becoming.Listing",
-        "Becoming.Order",
-        "Becoming.OrderNormal",
-        "Becoming.OneStep",
-        "Becoming.Weighted",
-        "Becoming.Transmission",
-        "Becoming.Succession",
-        "Becoming.Attraction",
-        "Becoming.Substitution",
-        "Becoming.Generation",
-        "Becoming.Flow",
-        "Becoming.Stock",
-        "Becoming.Change",
-        "Becoming.Population",
-        "Becoming.Identity",
-        "Becoming.Persistence",
-        "Becoming.Wholes",
-        "Becoming.Dissipation",
-        "Becoming.Locality",
-        "Becoming.Seeking",
-        "Becoming.Roles",
-        "Becoming.Reserve",
-        "Becoming.Evolution",
-        "Becoming.Capture",
-        "Becoming.Space",
-        "Becoming.Premises",
-        "Becoming.Sampling",
-        "Becoming.Tower",
-        "Becoming.Openness",
-        "Becoming.Decidedness",
-        "Becoming.Refinement",
-        "Becoming.Counting",
-        "Becoming.Standing",
-        "Becoming.Resolution",
-        "Becoming.Entropy",
-        "Becoming.Units",
-        "Becoming.Imbalance",
-        "Becoming.Continuation",
-        "Becoming.Admission",
-        "Becoming.Regions",
-        "Becoming.Metaethics",
-        "Becoming.Ranking",
-        "Becoming.LossMatching",
-        "Becoming.Correspondence",
-        "Becoming.Descent",
-        "Becoming.Standpoints",
-        "Becoming.Significance",
-        "Becoming.Interdependence",
-        "Becoming.Feeding",
-        "Becoming.Feedback",
-        "Becoming.Boundaries",
-        "Becoming.Relevance",
-        "Becoming.Testing",
-        "Becoming.Runaway",
-        "Becoming.Response",
-        "Becoming.TimedResponse",
-        "Becoming.Counterfactual",
-        "Becoming.Regrouping",
-        "Becoming.Selection",
-        "Becoming.Learning",
-        "Becoming.Revision",
-        "Becoming.Contacts",
-        "Becoming.RegroupingSelection",
-        "Becoming.ReferencePlan",
-        "Becoming.ContinuingRevision",
-        "Becoming.Description",
-        "Becoming.Identification",
-        "Becoming.Learnable",
-        "Becoming.Assurance",
-        "Becoming.Segmentation",
-        "Becoming.Readout",
-        "Becoming.Gated",
-        "Becoming.Viability",
-        "Becoming.Keeping",
-        "Becoming.Countdown",
-        "Becoming.Lasting",
-        "Becoming.Copying",
-        "Becoming.Retrodiction",
-        "Becoming.CrossSituational",
-        "Becoming.Likeness",
-        "Becoming.Distinguishing",
-        "Becoming.Composition",
-        "Becoming.Joining",
-        "Becoming.Granularity",
-        "Becoming.Postponement",
-        "Becoming.Novelty",
-        "Becoming.Reading",
-        "Becoming.Readings",
-        "Becoming.Coupling",
-        "Becoming.Sensitivity",
-        "Becoming.Courses",
-        "Becoming.Parting",
-        "Becoming.Typicality",
-        "Becoming.Situations",
-        "Becoming.Propagation",
-        "Becoming.Gain",
-        "Becoming.Gluing"
-      ],
-      "declarations": [],
-      "declaration_counts": {},
       "textual_markers": {
         "sorry": [],
         "admit": [],
@@ -198707,141 +199519,6 @@
       },
       "print_axioms_commands": 22
     },
-    "d124a1b0a8dfdaa3cca0966c5517ea2766c3ddd368d9f727880e8a55178093b3": {
-      "byte_size": 14143,
-      "line_count": 267,
-      "imports": [
-        "Becoming.Typicality"
-      ],
-      "declarations": [
-        {
-          "kind": "def",
-          "name": "upto",
-          "qualified_name_hint": "Becoming.Situations.upto",
-          "line": 55
-        },
-        {
-          "kind": "theorem",
-          "name": "sum_upto",
-          "qualified_name_hint": "Becoming.Situations.sum_upto",
-          "line": 60
-        },
-        {
-          "kind": "theorem",
-          "name": "sum_one",
-          "qualified_name_hint": "Becoming.Situations.sum_one",
-          "line": 67
-        },
-        {
-          "kind": "def",
-          "name": "finerLaw",
-          "qualified_name_hint": "Becoming.Situations.finerLaw",
-          "line": 81
-        },
-        {
-          "kind": "theorem",
-          "name": "finerLaw_determined",
-          "qualified_name_hint": "Becoming.Situations.finerLaw_determined",
-          "line": 85
-        },
-        {
-          "kind": "theorem",
-          "name": "finerLaw_step_iff",
-          "qualified_name_hint": "Becoming.Situations.finerLaw_step_iff",
-          "line": 89
-        },
-        {
-          "kind": "def",
-          "name": "finerSteps",
-          "qualified_name_hint": "Becoming.Situations.finerSteps",
-          "line": 96
-        },
-        {
-          "kind": "def",
-          "name": "finer",
-          "qualified_name_hint": "Becoming.Situations.finer",
-          "line": 102
-        },
-        {
-          "kind": "def",
-          "name": "coarse",
-          "qualified_name_hint": "Becoming.Situations.coarse",
-          "line": 109
-        },
-        {
-          "kind": "theorem",
-          "name": "sum_finer",
-          "qualified_name_hint": "Becoming.Situations.sum_finer",
-          "line": 116
-        },
-        {
-          "kind": "theorem",
-          "name": "finer_count",
-          "qualified_name_hint": "Becoming.Situations.finer_count",
-          "line": 154
-        },
-        {
-          "kind": "theorem",
-          "name": "sum_courses_values",
-          "qualified_name_hint": "Becoming.Situations.sum_courses_values",
-          "line": 168
-        },
-        {
-          "kind": "theorem",
-          "name": "situations_count",
-          "qualified_name_hint": "Becoming.Situations.situations_count",
-          "line": 188
-        },
-        {
-          "kind": "theorem",
-          "name": "mul_indicator",
-          "qualified_name_hint": "Becoming.Situations.mul_indicator",
-          "line": 193
-        },
-        {
-          "kind": "theorem",
-          "name": "total_only",
-          "qualified_name_hint": "Becoming.Situations.total_only",
-          "line": 200
-        },
-        {
-          "kind": "theorem",
-          "name": "situations_of_course",
-          "qualified_name_hint": "Becoming.Situations.situations_of_course",
-          "line": 229
-        },
-        {
-          "kind": "def",
-          "name": "far",
-          "qualified_name_hint": "Becoming.Situations.far",
-          "line": 241
-        },
-        {
-          "kind": "theorem",
-          "name": "weight_far",
-          "qualified_name_hint": "Becoming.Situations.weight_far",
-          "line": 244
-        },
-        {
-          "kind": "theorem",
-          "name": "situations_typical",
-          "qualified_name_hint": "Becoming.Situations.situations_typical",
-          "line": 251
-        }
-      ],
-      "declaration_counts": {
-        "def": 6,
-        "theorem": 13
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
     "d14074029d26520b8b26883b8cf8b53be7485140868cc1df8208c06ee572f871": {
       "byte_size": 17886,
       "line_count": 287,
@@ -204552,189 +205229,6 @@
         "def": 17,
         "structure": 1,
         "theorem": 27
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
-    "d5c0a564062a3c5a98f5658176991e1ad72692b5387b7ca37e73e9ecc7cde9e1": {
-      "byte_size": 15732,
-      "line_count": 290,
-      "imports": [
-        "Becoming.Distinguishing"
-      ],
-      "declarations": [
-        {
-          "kind": "def",
-          "name": "after",
-          "qualified_name_hint": "Becoming.Parting.after",
-          "line": 60
-        },
-        {
-          "kind": "def",
-          "name": "before",
-          "qualified_name_hint": "Becoming.Parting.before",
-          "line": 64
-        },
-        {
-          "kind": "def",
-          "name": "joinAt",
-          "qualified_name_hint": "Becoming.Parting.joinAt",
-          "line": 70
-        },
-        {
-          "kind": "theorem",
-          "name": "joinAt_before",
-          "qualified_name_hint": "Becoming.Parting.joinAt_before",
-          "line": 79
-        },
-        {
-          "kind": "theorem",
-          "name": "joinAt_after",
-          "qualified_name_hint": "Becoming.Parting.joinAt_after",
-          "line": 89
-        },
-        {
-          "kind": "def",
-          "name": "course",
-          "qualified_name_hint": "Becoming.Parting.course",
-          "line": 105
-        },
-        {
-          "kind": "def",
-          "name": "PartAt",
-          "qualified_name_hint": "Becoming.Parting.PartAt",
-          "line": 108
-        },
-        {
-          "kind": "def",
-          "name": "Unparted",
-          "qualified_name_hint": "Becoming.Parting.Unparted",
-          "line": 112
-        },
-        {
-          "kind": "def",
-          "name": "RightAt",
-          "qualified_name_hint": "Becoming.Parting.RightAt",
-          "line": 117
-        },
-        {
-          "kind": "theorem",
-          "name": "not_right_on_both",
-          "qualified_name_hint": "Becoming.Parting.not_right_on_both",
-          "line": 122
-        },
-        {
-          "kind": "theorem",
-          "name": "not_parting_of_right",
-          "qualified_name_hint": "Becoming.Parting.not_parting_of_right",
-          "line": 131
-        },
-        {
-          "kind": "theorem",
-          "name": "unparted_iff",
-          "qualified_name_hint": "Becoming.Parting.unparted_iff",
-          "line": 138
-        },
-        {
-          "kind": "theorem",
-          "name": "Unparted.along",
-          "qualified_name_hint": "Becoming.Parting.Unparted.along",
-          "line": 158
-        },
-        {
-          "kind": "theorem",
-          "name": "course_statesBelow",
-          "qualified_name_hint": "Becoming.Parting.course_statesBelow",
-          "line": 169
-        },
-        {
-          "kind": "theorem",
-          "name": "leastBound_right",
-          "qualified_name_hint": "Becoming.Parting.leastBound_right",
-          "line": 181
-        },
-        {
-          "kind": "theorem",
-          "name": "states_agree",
-          "qualified_name_hint": "Becoming.Parting.states_agree",
-          "line": 188
-        },
-        {
-          "kind": "theorem",
-          "name": "unparted_of_determined",
-          "qualified_name_hint": "Becoming.Parting.unparted_of_determined",
-          "line": 197
-        },
-        {
-          "kind": "theorem",
-          "name": "rest_earliest_runs",
-          "qualified_name_hint": "Becoming.Parting.rest_earliest_runs",
-          "line": 204
-        },
-        {
-          "kind": "def",
-          "name": "free",
-          "qualified_name_hint": "Becoming.Parting.free",
-          "line": 227
-        },
-        {
-          "kind": "def",
-          "name": "freeRun",
-          "qualified_name_hint": "Becoming.Parting.freeRun",
-          "line": 230
-        },
-        {
-          "kind": "theorem",
-          "name": "freeRun_course",
-          "qualified_name_hint": "Becoming.Parting.freeRun_course",
-          "line": 232
-        },
-        {
-          "kind": "theorem",
-          "name": "free_unparted_const",
-          "qualified_name_hint": "Becoming.Parting.free_unparted_const",
-          "line": 235
-        },
-        {
-          "kind": "theorem",
-          "name": "free_parts_after",
-          "qualified_name_hint": "Becoming.Parting.free_parts_after",
-          "line": 241
-        },
-        {
-          "kind": "theorem",
-          "name": "free_open",
-          "qualified_name_hint": "Becoming.Parting.free_open",
-          "line": 255
-        },
-        {
-          "kind": "theorem",
-          "name": "free_never_right",
-          "qualified_name_hint": "Becoming.Parting.free_never_right",
-          "line": 266
-        },
-        {
-          "kind": "theorem",
-          "name": "free_held",
-          "qualified_name_hint": "Becoming.Parting.free_held",
-          "line": 273
-        },
-        {
-          "kind": "theorem",
-          "name": "free_unbounded",
-          "qualified_name_hint": "Becoming.Parting.free_unbounded",
-          "line": 280
-        }
-      ],
-      "declaration_counts": {
-        "def": 9,
-        "theorem": 18
       },
       "textual_markers": {
         "sorry": [],

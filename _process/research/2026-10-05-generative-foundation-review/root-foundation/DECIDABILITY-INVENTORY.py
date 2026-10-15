@@ -178,6 +178,10 @@ CONSTRUCTIONS = {
     # 2026-10-16, P115 how much difference arrives (Becoming.Propagation): one history mixed into another at
     # listed levels, each a step with a condition, as mixIn mixes condition by condition
     'mixCells': 'mix',
+    # 2026-10-16, P119 the open proofs: the learner given the world reads the configurations reached under the record,
+    # deciding steps and telling registered values apart; a course's multiplicity in a list compares courses
+    **{n: 'reach' for n in ['Parting.candidates', 'Parting.live', 'Parting.firstLive', 'Parting.worldLearner']},
+    'Situations.occ': 'same',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -209,6 +213,8 @@ MENT_REASON = {
              '`if … then … else`, whose condition must be decided',
     'guard': '守护之步：每步判定守护是否成立，不成立处停止 / a guarded step: decides the guard at each step and stops '
              'where it fails',
+    'reach': '可达：判定步是否可走，并分辨所识的值 / reached: decides whether steps are admissible and tells '
+             'registered values apart',
 }
 LABEL = {
     'count': '计数 / counts', 'coarse': '较粗的读法 / coarser reading', 'raise': '抬高一个条件 / one condition raised',
@@ -218,7 +224,7 @@ LABEL = {
     'same': '分辨相同 / tells same from different', 'split': '分情形 / splits on a case',
     'indicate': '造出指示 / builds an indicator', 'mix': '逐个条件换入 / mixed in condition by condition',
     'swap': '交换两个值 / exchanging two values', 'member': '列表成员判定 / list membership',
-    'guard': '守护之步 / a guarded step',
+    'guard': '守护之步 / a guarded step', 'reach': '可达 / reached',
 }
 # Why a proof uses decidedness its statement does not mention. Every such theorem is classified here (asserted).
 PROOF_REASON = {
@@ -234,6 +240,8 @@ PROOF_REASON = {
     'indicate': '造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the '
                 'proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such '
                 'as a score',
+    'reach': '可达：证明以已定的步与所识的值造出被给予世界的学习者 / reached: the proof builds the learner given the '
+             'world from decided steps and registered values',
 }
 PROOF_KIND = {
     **{n: 'find' for n in [
@@ -366,6 +374,11 @@ PROOF_KIND = {
     **{n: 'same' for n in [
         'ParityConstraint.met_or_contradicts', 'ParitySystem.global_or_contradicts', 'ParitySystem.noGlobal_iff',
         'ParitySystem.glues_iff']},
+    # 2026-10-16, P119 the open proofs (Becoming.Parting): where runs part only before a step, the proofs split on
+    # whether two registered values are the same; some learner is right exactly where none part, the learner given the
+    # world being built from decided steps and values
+    **{n: 'same' for n in ['Parting.unparted_at_of_late', 'Parting.late_statesBelow']},
+    'Parting.some_right_iff': 'reach',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',

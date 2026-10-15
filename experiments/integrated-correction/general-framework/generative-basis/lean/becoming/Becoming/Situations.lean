@@ -30,13 +30,33 @@ each step is taken in situations that each fix it.
   branching as Typicality's).
   Most situations of a kind give frequencies near the ratio of the weights. Which situation is
   the one that happens is not a count, and nothing here fixes it.
+* **Any number of values counts as two through an event.** Take free branching on any listed
+  values, each with a natural weight (`valueWeight`), read through any event. Summing a reading
+  of what the event registers over the courses, each counted by its weight, is summing it over
+  Typicality's courses with the event's weight `P` (`inside`) for one and the rest's `Q`
+  (`outside`) for the other (`sum_event`). So the law of large numbers (`event_typical`) and
+  exponential concentration (`event_concentrated`) count situations for every event, out of
+  `(P + Q) ^ n` finer courses (`event_count`). Each value is an event, so in most situations
+  each value's frequency is near its share of the weight.
+* **Counting per course, for every process.** The finer courses taking a course number its
+  weight times how often the course is listed (`situations_take`). Where every move and
+  configuration is listed once, they number its weight (`situations_of_course_listed`).
+* **Signed weights count situations of two kinds.** In any weights, steps whose weights are sums
+  over their situations are counted by those situations (`sum_finer_weights`). A signed step
+  `(P, N)` is `P` situations that add and `N` that subtract (`signed_sums`). Every finer course
+  composes to adding or to subtracting (`signs_unit`), and the signed transfer is the pair of
+  the two counts (`signed_counts`). Where signed weights cancel, the situations do not: the
+  balanced `(1, 1)` of `Interference.cancels` is two situations (`cancels_situations`). A
+  cancellation is a balance between counts of situations of opposite sign, not an absence of
+  situations.
 
-The arithmetic uses the core's `mul_assoc_nat`, since the prelude's associativity of
+The arithmetic uses the core's `mul_assoc_nat` and `add_mul_split`, since the prelude's associativity of
 multiplication uses propositional extensionality.
 
-What is not derived: which situation is actual; weights that are not natural numbers. Signed
-weights cancel, and a count of situations does not (`Interference.cancels`,
-`counting_transfer_iff`). No ethical predicate, ranking or axiom occurs. Ren took the AI's readings of their words on
+What is not derived: which situation is actual; weights that are neither natural numbers nor
+pairs of them, such as real or complex amplitudes. A count of situations does not cancel
+(`counting_transfer_iff`); signed weights cancel in what adds against what subtracts, and the
+situations they count do not (`cancels_situations`). No ethical predicate, ranking or axiom occurs. Ren took the AI's readings of their words on
 16 October 2026 ("yes, i take those readings"): the core states what every situation obeys,
 the situation makes the actual change true, and a chance is a number of situations of a kind.
 -/
@@ -261,6 +281,431 @@ theorem situations_typical (p q n d : Nat) (s : Bool) :
         (Typicality.total_congr (weight_far p q d) _)
   rw [count]
   exact Typicality.typical p q n d
+
+/-! ## Any number of values: an event -/
+
+section Event
+
+variable {V : Type u}
+
+/-- A weight kept where the event holds. -/
+def keep : Bool → Nat → Nat
+  | true, x => x
+  | false, _ => 0
+
+/-- A weight kept where the event fails. -/
+def drop : Bool → Nat → Nat
+  | true, _ => 0
+  | false, x => x
+
+/-- The weight of the values where the event holds. -/
+def inside (vals : List V) (wt : V → Nat) (event : V → Bool) : Nat :=
+  counting.sum vals fun v => keep (event v) (wt v)
+
+/-- The weight of the values where the event fails. -/
+def outside (vals : List V) (wt : V → Nat) (event : V → Bool) : Nat :=
+  counting.sum vals fun v => drop (event v) (wt v)
+
+theorem keep_drop (G : Bool → Nat) (x : Nat) : ∀ b,
+    x * G b = keep b x * G true + drop b x * G false
+  | true => by
+    show x * G true = x * G true + 0 * G false
+    rw [Nat.zero_mul, Nat.add_zero]
+  | false => by
+    show x * G false = 0 * G true + x * G false
+    rw [Nat.zero_mul, Nat.zero_add]
+
+/-- A reading of the event, summed over the values with their weights, splits into the event's
+weight and the rest's. -/
+theorem sum_split (wt : V → Nat) (event : V → Bool) (G : Bool → Nat) : ∀ vals : List V,
+    counting.sum vals (fun v => wt v * G (event v)) =
+      inside vals wt event * G true + outside vals wt event * G false
+  | [] => by
+    show 0 = 0 * G true + 0 * G false
+    rw [Nat.zero_mul, Nat.zero_mul]
+  | v :: vals => by
+    show wt v * G (event v) + counting.sum vals (fun v => wt v * G (event v)) =
+      (keep (event v) (wt v) + inside vals wt event) * G true +
+        (drop (event v) (wt v) + outside vals wt event) * G false
+    rw [sum_split wt event G vals, keep_drop G (wt v) (event v), add_mul_split, add_mul_split,
+      Nat.add_add_add_comm]
+
+theorem inside_add_outside (wt : V → Nat) (event : V → Bool) : ∀ vals : List V,
+    inside vals wt event + outside vals wt event = counting.sum vals wt
+  | [] => rfl
+  | v :: vals => by
+    show (keep (event v) (wt v) + inside vals wt event) +
+        (drop (event v) (wt v) + outside vals wt event) = wt v + counting.sum vals wt
+    rw [Nat.add_add_add_comm, inside_add_outside wt event vals]
+    exact congrArg (· + _) (match event v with | true => Nat.add_zero _ | false => Nat.zero_add _)
+
+/-- Free branching on any values, a step to `v` weighing `wt v` whatever it comes from. -/
+def valueWeight (wt : V → Nat) (_ : V) (_ : Unit) (v : V) : Nat := wt v
+
+/-- What an event registers along a course of values. -/
+def seen (event : V → Bool) (c : List (Unit × V)) : List Bool := c.map fun x => event x.2
+
+/-- **Any number of values, read through an event, counts as two.** For every list of values
+with natural weights and every event, summing a reading of what the event registers over the
+courses of `n` steps, each counted by its weight, is summing it over Typicality's courses with
+the event's weight for one and the rest's for the other. -/
+theorem sum_event (vals : List V) (wt : V → Nat) (event : V → Bool) : ∀ (n : Nat) (s : V)
+    (F : List Bool → Nat),
+    counting.sum (Becoming.courses [()] vals n)
+        (fun c => counting.along (valueWeight wt) (fun _ => 1) s c * F (seen event c)) =
+      Typicality.total (Typicality.courses n)
+        (fun w => Typicality.weight (inside vals wt event) (outside vals wt event) w * F w)
+  | 0, _, F => by
+    show 1 * F [] + 0 = 1 * F [] + 0
+    rfl
+  | n + 1, s, F =>
+    have each : ∀ v : V,
+        counting.sum ((Becoming.courses [()] vals n).map fun h => ((), v) :: h)
+            (fun c => counting.along (valueWeight wt) (fun _ => 1) s c * F (seen event c)) =
+          wt v * Typicality.total (Typicality.courses n)
+            (fun w => Typicality.weight (inside vals wt event) (outside vals wt event) w *
+              F (event v :: w)) :=
+      fun v => (Weights.sum_map _ _ _).trans <|
+        (Weights.sum_congr _ fun c _ => mul_assoc_nat (wt v) _ _).trans <|
+        (Weights.mul_sum (W := counting) (wt v) _ _).symm.trans
+          (congrArg (wt v * ·) (sum_event vals wt event n v fun w => F (event v :: w)))
+    have steps : ∀ g : Unit × V → Nat,
+        counting.sum (openSteps [()] vals) g = counting.sum vals fun v => g ((), v) :=
+      fun g => (Weights.sum_joinMap _ _ _).trans <|
+        (Nat.add_zero _).trans (Weights.sum_map _ _ _)
+    (Weights.sum_joinMap _ _ _).trans <|
+      (steps _).trans <|
+      (Weights.sum_congr _ fun v _ => each v).trans <|
+      (sum_split wt event (fun b => Typicality.total (Typicality.courses n)
+        (fun w => Typicality.weight (inside vals wt event) (outside vals wt event) w *
+          F (b :: w))) vals).trans <| by
+      show _ = Typicality.total (Typicality.extend (Typicality.courses n)) _
+      rw [Typicality.total_extend, Typicality.total_add, ← Typicality.total_mul,
+        ← Typicality.total_mul]
+      exact congr (congrArg _ (Typicality.total_congr (fun w => (mul_assoc_nat _ _ _).symm) _))
+        (Typicality.total_congr (fun w => (mul_assoc_nat _ _ _).symm) _)
+
+/-- **The law of large numbers counts situations for every event.** With `wt v` situations for
+each value `v` at each step, the finer courses of `n` steps whose event deviates by at least `d`
+from the ratio of the event's weight to the rest's number, times `d`, at most
+`n·P·Q·(P + Q)^n`, where `P + Q` is the weight of all values. -/
+theorem event_typical (vals : List V) (wt : V → Nat) (event : V → Bool) (n d : Nat) (s : V) :
+    counting.sum (finer (valueWeight wt) [()] vals n s)
+        (fun h => far (inside vals wt event) (outside vals wt event) d (seen event (coarse h))) * d ≤
+      n * (inside vals wt event * outside vals wt event *
+        (inside vals wt event + outside vals wt event) ^ n) := by
+  have count : counting.sum (finer (valueWeight wt) [()] vals n s)
+        (fun h => far (inside vals wt event) (outside vals wt event) d (seen event (coarse h))) =
+      Typicality.total (Typicality.courses n)
+        (Typicality.offBy (inside vals wt event) (outside vals wt event) d) :=
+    (sum_finer _ _ _ n s fun c =>
+        far (inside vals wt event) (outside vals wt event) d (seen event c)).trans <|
+      (sum_event vals wt event n s _).trans
+        (Typicality.total_congr (weight_far _ _ d) _)
+  rw [count]
+  exact Typicality.typical _ _ n d
+
+/-- **Exponentially few situations run far ahead for every event.** For every `u ≥ v`, the
+finer courses of `n` steps in which the event holds at least `k` times number, times
+`u ^ k · v ^ n`, at most `(P·u + Q·v) ^ n · v ^ k`. -/
+theorem event_concentrated (vals : List V) (wt : V → Nat) (event : V → Bool) (k n : Nat)
+    (s : V) {u v : Nat} (le : v ≤ u) :
+    counting.sum (finer (valueWeight wt) [()] vals n s)
+        (fun h => if k ≤ Typicality.ones (seen event (coarse h)) then 1 else 0) *
+        (u ^ k * v ^ n) ≤
+      (inside vals wt event * u + outside vals wt event * v) ^ n * v ^ k := by
+  have count : counting.sum (finer (valueWeight wt) [()] vals n s)
+        (fun h => if k ≤ Typicality.ones (seen event (coarse h)) then 1 else 0) =
+      Typicality.total (Typicality.courses n)
+        (Typicality.atLeast (inside vals wt event) (outside vals wt event) k) :=
+    (sum_finer _ _ _ n s fun c => if k ≤ Typicality.ones (seen event c) then 1 else 0).trans <|
+      (sum_event vals wt event n s _).trans
+        (Typicality.total_congr (fun w => mul_indicator _ (k ≤ Typicality.ones w)) _)
+  rw [count]
+  exact Typicality.concentrated _ _ k n le
+
+/-- The finer courses number `(P + Q) ^ n`, the weight of all values to the `n`. -/
+theorem event_count (vals : List V) (wt : V → Nat) (n : Nat) (s : V) :
+    (finer (valueWeight wt) [()] vals n s).length = (counting.sum vals wt) ^ n :=
+  (sum_one _).symm.trans <|
+    (sum_finer _ _ _ n s fun _ => 1).trans <|
+    (sum_event vals wt (fun _ => true) n s fun _ => 1).trans <|
+    (Typicality.total_congr (fun _ => Nat.mul_one _) _).trans <|
+    (Typicality.total_weight _ _ n).trans
+      (congrArg (· ^ n) (inside_add_outside wt (fun _ => true) vals))
+
+end Event
+
+/-! ## Counting per course, for every process -/
+
+section Course
+
+variable {S : Type u} {A : Type v}
+
+/-- How often a list holds `a`. -/
+def occ {α : Type u} [DecidableEq α] (l : List α) (a : α) : Nat :=
+  counting.sum l fun x => if x = a then 1 else 0
+
+/-- A reading kept at `a` alone sums to how often the list holds `a`, times its value. -/
+theorem sum_only {α : Type u} [DecidableEq α] (a : α) (K : Nat) : ∀ l : List α,
+    counting.sum l (fun x => if x = a then K else 0) = occ l a * K
+  | [] => (Nat.zero_mul K).symm
+  | x :: l => by
+    show (if x = a then K else 0) + counting.sum l (fun x => if x = a then K else 0) =
+      ((if x = a then 1 else 0) + occ l a) * K
+    rw [sum_only a K l, add_mul_split, Nat.mul_comm (if x = a then 1 else 0) K, mul_indicator]
+
+/-- **The situations taking a course number its weight times how often it is listed.** For
+every process with listed moves and configurations and every natural weighting of its steps. -/
+theorem situations_take [DecidableEq A] [DecidableEq S] (weight : S → A → S → Nat)
+    (moves : List A) (all : List S) (n : Nat) (s : S) (c : List (A × S)) :
+    counting.sum (finer weight moves all n s) (fun h => if coarse h = c then 1 else 0) =
+      occ (courses moves all n) c * counting.along weight (fun _ => 1) s c :=
+  (sum_finer weight moves all n s fun c' => if c' = c then 1 else 0).trans <|
+    (Weights.sum_congr _ fun c' _ => (mul_indicator _ _).trans
+      (if same : c' = c then by rw [if_pos same, if_pos same, same]
+       else by rw [if_neg same, if_neg same])).trans
+      (sum_only c _ _)
+
+theorem occ_map_cons {α : Type u} [DecidableEq α] (p' p : α) (c : List α) :
+    ∀ l : List (List α), occ (l.map (p' :: ·)) (p :: c) = if p' = p then occ l c else 0
+  | [] => if same : p' = p then (if_pos same).symm else (if_neg same).symm
+  | x :: l => by
+    show (if p' :: x = p :: c then 1 else 0) + occ (l.map (p' :: ·)) (p :: c) =
+      if p' = p then (if x = c then 1 else 0) + occ l c else 0
+    rw [occ_map_cons p' p c l]
+    exact if first : p' = p then
+      if rest : x = c then by
+        rw [if_pos (show p' :: x = p :: c by rw [first, rest]), if_pos first, if_pos first,
+          if_pos rest]
+      else by
+        rw [if_neg (fun e => rest (List.cons.inj e).2), if_pos first, if_pos first, if_neg rest]
+    else by
+      rw [if_neg (fun e => first (List.cons.inj e).1), if_neg first, if_neg first]
+
+theorem occ_map_pair [DecidableEq A] [DecidableEq S] (a' a : A) (m : S) :
+    ∀ l : List S, occ (l.map fun m' => (a', m')) (a, m) = if a' = a then occ l m else 0
+  | [] => if same : a' = a then (if_pos same).symm else (if_neg same).symm
+  | x :: l => by
+    show (if (a', x) = (a, m) then 1 else 0) + occ (l.map fun m' => (a', m')) (a, m) =
+      if a' = a then (if x = m then 1 else 0) + occ l m else 0
+    rw [occ_map_pair a' a m l]
+    exact if first : a' = a then
+      if rest : x = m then by
+        rw [if_pos (show (a', x) = (a, m) by rw [first, rest]), if_pos first, if_pos first,
+          if_pos rest]
+      else by
+        rw [if_neg (fun e => rest (Prod.mk.inj e).2), if_pos first, if_pos first, if_neg rest]
+    else by
+      rw [if_neg (fun e => first (Prod.mk.inj e).1), if_neg first, if_neg first]
+
+theorem occ_openSteps [DecidableEq A] [DecidableEq S] (moves : List A) (all : List S) (a : A)
+    (m : S) : occ (openSteps moves all) (a, m) = occ moves a * occ all m :=
+  (Weights.sum_joinMap _ _ _).trans <|
+    (Weights.sum_congr _ fun a' _ => occ_map_pair a' a m all).trans (sum_only a _ _)
+
+theorem occ_courses [DecidableEq A] [DecidableEq S] (moves : List A) (all : List S) (n : Nat)
+    (p : A × S) (c : List (A × S)) :
+    occ (courses moves all (n + 1)) (p :: c) =
+      occ (openSteps moves all) p * occ (courses moves all n) c :=
+  (Weights.sum_joinMap _ _ _).trans <|
+    (Weights.sum_congr _ fun p' _ => occ_map_cons p' p c _).trans (sum_only p _ _)
+
+/-- Where every move and configuration is listed once, every course of `n` steps is listed
+once among the courses of `n` steps. -/
+theorem occ_courses_once [DecidableEq A] [DecidableEq S] {moves : List A} {all : List S}
+    (once_moves : ∀ a, occ moves a = 1) (once_all : ∀ m, occ all m = 1) :
+    ∀ c : List (A × S), occ (courses moves all c.length) c = 1
+  | [] => by
+    show (if ([] : List (A × S)) = [] then 1 else 0) + 0 = 1
+    rw [if_pos rfl]
+  | p :: c => by
+    rw [List.length_cons, occ_courses, occ_courses_once once_moves once_all c,
+      occ_openSteps moves all p.1 p.2, once_moves, once_all]
+
+/-- **Natural weights count situations course by course, for every process.** Where every move
+and configuration is listed once, the finer courses taking a course number its weight. -/
+theorem situations_of_course_listed [DecidableEq A] [DecidableEq S] (weight : S → A → S → Nat)
+    {moves : List A} {all : List S} (once_moves : ∀ a, occ moves a = 1)
+    (once_all : ∀ m, occ all m = 1) (s : S) (c : List (A × S)) :
+    counting.sum (finer weight moves all c.length s) (fun h => if coarse h = c then 1 else 0) =
+      counting.along weight (fun _ => 1) s c := by
+  rw [situations_take, occ_courses_once once_moves once_all c, Nat.one_mul]
+
+end Course
+
+/-! ## Weights that are sums over situations -/
+
+section Sums
+
+universe w
+
+variable {S : Type u} {A : Type v} {R : Type w}
+
+/-- What the situations of a finer course compose to, in any weights. -/
+def signs (W : Weights R) (σ : S → A → S → Nat → R) : S → List (A × S × Nat) → R
+  | _, [] => W.one
+  | s, x :: h => W.mul (σ s x.1 x.2.1 x.2.2) (signs W σ x.2.1 h)
+
+theorem sum_mul_right (W : Weights R) {α : Type u} (c : R) (f : α → R) :
+    ∀ l : List α, W.mul (W.sum l f) c = W.sum l fun a => W.mul (f a) c
+  | [] => W.zero_mul c
+  | _ :: l => (W.right_distrib _ _ _).trans (congrArg (W.add _) (sum_mul_right W c f l))
+
+/-- **Weights that are sums over situations count them.** For every weights and every weighting
+of steps in which each step weighs the sum of what its situations contribute, summing a reading
+of the courses over the finer courses, each with what its situations compose to, is summing it
+over the courses, each with its weight. -/
+theorem sum_finer_weights (W : Weights R) (count : S → A → S → Nat) (σ : S → A → S → Nat → R)
+    (weight : S → A → S → R) (sums : ∀ s a m, weight s a m = W.sum (upto (count s a m)) (σ s a m))
+    (moves : List A) (all : List S) : ∀ (n : Nat) (s : S) (g : List (A × S) → R),
+      W.sum (finer count moves all n s) (fun h => W.mul (signs W σ s h) (g (coarse h))) =
+        W.sum (courses moves all n) (fun c => W.mul (W.along weight (fun _ => W.one) s c) (g c))
+  | 0, _, _ => rfl
+  | n + 1, s, g =>
+    have inner : ∀ x : A × S × Nat,
+        W.sum ((finer count moves all n x.2.1).map fun h => x :: h)
+            (fun h => W.mul (signs W σ s h) (g (coarse h))) =
+          W.mul (σ s x.1 x.2.1 x.2.2) (W.sum (courses moves all n)
+            (fun c => W.mul (W.along weight (fun _ => W.one) x.2.1 c) (g ((x.1, x.2.1) :: c)))) :=
+      fun x => (Weights.sum_map _ _ _).trans <|
+        (Weights.sum_congr _ fun _ _ => W.mul_assoc _ _ _).trans <|
+        (Weights.mul_sum _ _ _).symm.trans
+          (congrArg (W.mul _) (sum_finer_weights W count σ weight sums moves all n x.2.1
+            fun c => g ((x.1, x.2.1) :: c)))
+    have each : ∀ p : A × S,
+        W.sum ((upto (count s p.1 p.2)).map fun k => (p.1, p.2, k))
+            (fun x => W.mul (σ s x.1 x.2.1 x.2.2) (W.sum (courses moves all n)
+              (fun c => W.mul (W.along weight (fun _ => W.one) x.2.1 c)
+                (g ((x.1, x.2.1) :: c))))) =
+          W.mul (weight s p.1 p.2) (W.sum (courses moves all n)
+            (fun c => W.mul (W.along weight (fun _ => W.one) p.2 c) (g (p :: c)))) :=
+      fun p => (Weights.sum_map _ _ _).trans <|
+        (sum_mul_right W (W.sum (courses moves all n)
+            (fun c => W.mul (W.along weight (fun _ => W.one) p.2 c) (g (p :: c))))
+          (σ s p.1 p.2) _).symm.trans
+          (congrArg (fun x => W.mul x _) (sums s p.1 p.2).symm)
+    have whole : W.sum (courses moves all (n + 1))
+          (fun c => W.mul (W.along weight (fun _ => W.one) s c) (g c)) =
+        W.sum (openSteps moves all) (fun p => W.mul (weight s p.1 p.2)
+          (W.sum (courses moves all n)
+            (fun c => W.mul (W.along weight (fun _ => W.one) p.2 c) (g (p :: c))))) :=
+      (Weights.sum_joinMap _ _ _).trans (Weights.sum_congr _ fun _ _ =>
+        (Weights.sum_map _ _ _).trans <|
+          (Weights.sum_congr _ fun _ _ => W.mul_assoc _ _ _).trans (Weights.mul_sum _ _ _).symm)
+    (Weights.sum_joinMap _ _ _).trans <|
+      (Weights.sum_congr _ fun x _ => inner x).trans <|
+      (Weights.sum_joinMap _ _ _).trans <|
+      (Weights.sum_congr _ fun p _ => each p).trans whole.symm
+
+end Sums
+
+/-! ## Signed weights count situations of two kinds -/
+
+section Signed
+
+variable {S : Type u} {A : Type v}
+
+/-- The situations of a step of signed weight `(P, N)`: the first `P` add, the next `N`
+subtract. -/
+def sign (weight : S → A → S → Nat × Nat) (s : S) (a : A) (m : S) (k : Nat) : Nat × Nat :=
+  if k < (weight s a m).1 then (1, 0) else (0, 1)
+
+/-- The number of situations of a step of signed weight `(P, N)`: `P + N`. -/
+def both (weight : S → A → S → Nat × Nat) (s : S) (a : A) (m : S) : Nat :=
+  (weight s a m).1 + (weight s a m).2
+
+theorem sum_adding (P : Nat) : ∀ k, k ≤ P →
+    signed.sum (upto k) (fun k => if k < P then (1, 0) else (0, 1)) = (k, 0)
+  | 0, _ => rfl
+  | k + 1, le => by
+    show signed.add (if k < P then (1, 0) else (0, 1))
+      (signed.sum (upto k) (fun k => if k < P then (1, 0) else (0, 1))) = (k + 1, 0)
+    rw [if_pos (show k < P from le), sum_adding P k (Nat.le_of_succ_le le)]
+    exact pair_eq (Nat.add_comm 1 k) rfl
+
+theorem sum_signed (P : Nat) : ∀ N,
+    signed.sum (upto (P + N)) (fun k => if k < P then (1, 0) else (0, 1)) = (P, N)
+  | 0 => sum_adding P P (Nat.le_refl P)
+  | N + 1 => by
+    show signed.add (if P + N < P then (1, 0) else (0, 1))
+      (signed.sum (upto (P + N)) (fun k => if k < P then (1, 0) else (0, 1))) = (P, N + 1)
+    rw [if_neg (fun lt => Nat.lt_irrefl P (Nat.lt_of_le_of_lt (Nat.le_add_right P N) lt)),
+      sum_signed P N]
+    exact pair_eq (Nat.zero_add P) (Nat.add_comm 1 N)
+
+/-- A signed weight is the sum of its situations. -/
+theorem signed_sums (weight : S → A → S → Nat × Nat) (s : S) (a : A) (m : S) :
+    weight s a m = signed.sum (upto (both weight s a m)) (sign weight s a m) :=
+  (sum_signed (weight s a m).1 (weight s a m).2).symm
+
+/-- **Signed weights count signed situations.** The signed transfer is the sum, over the finer
+courses through the `P + N` situations of each step, of what their situations compose to. -/
+theorem signed_situations (weight : S → A → S → Nat × Nat) (moves : List A) (all : List S)
+    (n : Nat) (s : S) :
+    signed.transfer weight moves all (fun _ => signed.one) n s =
+      signed.sum (finer (both weight) moves all n s) (signs signed (sign weight) s) :=
+  (Weights.sum_courses weight moves all _ n s).symm.trans <|
+    (Weights.sum_congr _ fun _ _ => (signed.mul_one _).symm).trans <|
+    (sum_finer_weights signed (both weight) (sign weight) weight (signed_sums weight) moves all n s
+      fun _ => signed.one).symm.trans
+      (Weights.sum_congr _ fun _ _ => signed.mul_one _)
+
+/-- Every finer course composes to adding or to subtracting. -/
+theorem signs_unit (weight : S → A → S → Nat × Nat) : ∀ (s : S) (h : List (A × S × Nat)),
+    signs signed (sign weight) s h = (1, 0) ∨ signs signed (sign weight) s h = (0, 1)
+  | _, [] => Or.inl rfl
+  | s, x :: h =>
+    have here : sign weight s x.1 x.2.1 x.2.2 = (1, 0) ∨ sign weight s x.1 x.2.1 x.2.2 = (0, 1) :=
+      if lt : x.2.2 < (weight s x.1 x.2.1).1 then Or.inl (if_pos lt) else Or.inr (if_neg lt)
+    show signed.mul (sign weight s x.1 x.2.1 x.2.2) (signs signed (sign weight) x.2.1 h) = (1, 0) ∨
+      signed.mul (sign weight s x.1 x.2.1 x.2.2) (signs signed (sign weight) x.2.1 h) = (0, 1) from
+    match here, signs_unit weight x.2.1 h with
+    | .inl a, .inl b => Or.inl (by rw [a, b]; rfl)
+    | .inl a, .inr b => Or.inr (by rw [a, b]; rfl)
+    | .inr a, .inl b => Or.inr (by rw [a, b]; rfl)
+    | .inr a, .inr b => Or.inl (by rw [a, b]; rfl)
+
+/-- A signed sum of contributions each adding or subtracting one is the pair of their counts. -/
+theorem sum_units {α : Type u} (f : α → Nat × Nat) : ∀ l : List α,
+    (∀ x, x ∈ l → f x = (1, 0) ∨ f x = (0, 1)) →
+      signed.sum l f = (counting.sum l (fun x => if f x = (1, 0) then 1 else 0),
+        counting.sum l (fun x => if f x = (0, 1) then 1 else 0))
+  | [], _ => rfl
+  | x :: l, unit => by
+    show signed.add (f x) (signed.sum l f) =
+      ((if f x = (1, 0) then 1 else 0) + counting.sum l (fun x => if f x = (1, 0) then 1 else 0),
+       (if f x = (0, 1) then 1 else 0) + counting.sum l (fun x => if f x = (0, 1) then 1 else 0))
+    rw [sum_units f l fun y mem => unit y (.tail _ mem)]
+    exact match unit x (.head _) with
+      | .inl adds => by
+        rw [adds, if_pos rfl, if_neg (by decide : ((1, 0) : Nat × Nat) ≠ (0, 1))]
+        rfl
+      | .inr subtracts => by
+        rw [subtracts, if_pos rfl, if_neg (by decide : ((0, 1) : Nat × Nat) ≠ (1, 0))]
+        rfl
+
+/-- **A signed weight is a pair of counts of situations.** The signed transfer counts, among the
+finer courses, those whose situations compose to adding and those whose situations compose to
+subtracting. -/
+theorem signed_counts (weight : S → A → S → Nat × Nat) (moves : List A) (all : List S)
+    (n : Nat) (s : S) :
+    signed.transfer weight moves all (fun _ => signed.one) n s =
+      (counting.sum (finer (both weight) moves all n s)
+          (fun h => if signs signed (sign weight) s h = (1, 0) then 1 else 0),
+        counting.sum (finer (both weight) moves all n s)
+          (fun h => if signs signed (sign weight) s h = (0, 1) then 1 else 0)) :=
+  (signed_situations weight moves all n s).trans
+    (sum_units _ _ fun h _ => signs_unit weight s h)
+
+/-- **Where signed weights cancel, the situations do not.** The two courses of
+`Interference.cancels` balance, and two situations take them. -/
+theorem cancels_situations :
+    signed.transfer Interference.weight [true, false] [()] (fun _ => signed.one) 1 () = (1, 1) ∧
+      (finer (both Interference.weight) [true, false] [()] 1 ()).length = 2 :=
+  ⟨rfl, rfl⟩
+
+end Signed
 
 end Situations
 
