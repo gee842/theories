@@ -9139,6 +9139,40 @@ Integration: 不需核心运行；31 个模块都不在核心回执中
 
 **边界。** 注记说某条脊柱声明陈述了模块的主定理，以何种关系；不说模块无用。`ContinuationRenewal.renewal_within_rank_plus_one_steps` 在继承模块中，属于脊柱运行。
 
+## 143. 每个起源都经过门（整合 I4b 第一项）：单向的门律，LivingOrganization 接入
+
+2026-10-16。Ren 对 I4 归类表选择“Closest gaps first”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）。表把 LivingOrganization 读作待接入的律：对任意反应网络，终态出现的池或初始即在，或经某进入步进入；Becoming.Gated 只陈述未经门的步双向保持的量，单向的轨迹律未陈述（§139）。本节陈述它，并把 Gated 的旧律作为其情形。
+
+```text
+Result(s): 新记录 every-origin-passes-the-gate；不改写其他记录的论断
+Delta: 核心：Becoming.Gated 加“单向：保持与反映”一节（4 → 13 项定理），含一条边界定理；
+       外围实例模块及其检查器：LivingOrganizationCorrespondence（4 项定理）；
+       可判定性清点：只在证明中用到 223 → 224（origin_of_decides，分情形），边界句加 origin_of_propositions_iff
+Supplied premises / correspondence: 核心律不加前提：门是动作上的已定标记，性质不判定；实例沿用 LivingOrganization 的配方、准入反应与所选的池
+Evidence: 核心与桥接由核心运行审计（回执 20261015T182202.414009Z）；外围检查器实跑（回执 20261015T182331.625376Z）
+Boundary: 见下文“边界”
+Integration: §9 一行（Gated 的陈述与计数）；Becoming.lean 的模块条目；一项新记录；一个外围检查器；可判定性清点；归类表中 LivingOrganization 改为已接入
+```
+
+**保持与反映（Becoming.Gated，不加前提）。** 非门控步保持性质 p，是说步前成立则步后成立（`PreservedBy`）；反映 p，是说步后成立则步前成立（`ReflectedBy`）。保持一个量恰是保持它的每个值，也恰是反映它的每个值（`keptBy_iff_preserved`、`keptBy_iff_reflected`）；性质沿每段非门控进程被保持（被反映），恰当每个非门控步保持（反映）它（`preserved_along_iff`、`reflected_along`）。
+
+**离开经过门。** 非门控步保持 p 时，从 p 成立处到 p 不成立处的进程含门控动作（`leaving_passes_gate`）。旧律 `change_passes_gate` 是其 p 为“q 等于起点之值”的情形。
+
+**每个起源都经过门。** 非门控步反映 p 时，终于 p 成立处的进程或始于 p 成立处，或分为前段、一个之后 p 成立的门控步与其余（`origin`）。证明沿进程走一遍，只按门分情形：门是 `A → Bool`，已定；p 不判定。
+
+**边界。** 门是命题而非已定时，起源之律在每个门都成立或不成立处成立（`origin_of_decides`）；对每个过程都要求时，它恰是双重否定消去（`origin_of_propositions_iff`）。见证：一步从 `false` 到 `true`，p 在 `true` 处成立，门为 Q；这一步反映 p 恰当 Q 不能不成立，律于是给出 Q。所以门的已定正是这一律所需，不多不少。
+
+**LivingOrganization（LivingOrganizationCorrespondence，外围，自有检查器）。** 以进入池的配方（输出池成员而不输入任何池成员）为门（`entryGate`），其他步反映池的出现（`presence_reflected`，由 `step_pool_origin`）。于是 `trace_pool_origin` 由 `Gated.origin` 给出（`trace_pool_origin_by_core`），并多给出进入步之后池即出现（`entry_then_present`）。外围原定理需要池的可判定；核心律不需要。凡准入配方都闭合时，没有门，`reflected_along` 使空池保持为空（`empty_pool_preserved_by_core`）。实例的公理报告只有 propext 与 Quot.sound，来自 LivingOrganization 自身的算术与列表策略；核心的新声明公理报告为空。
+
+**作者反审。**
+1. **新律还是重述？** 旧的双向律是新律的情形，不是反过来。起源之律对核心是新的：外围形式要判定池，核心形式只用门已定。
+2. **边界说了什么？** 它说门的已定恰是所需：以命题为门、对每个过程要求时，等于双重否定消去，因而等于排中律。
+3. **没有证明的。** 判定 p 时，第一个使 p 成立的门控步（之前 p 不成立）可以由 `change_located` 的方法给出，这里未陈述。
+
+**边界与读法。** 门只定位改变或起源能从哪里进入，不说门控动作改变任何东西。LivingOrganization 的配方、准入反应与所选的池不对应任何实际化学的论断：闭合是所准入配方的已查性质。读法（AI 的，待 Ren）：反映即“后有则前有”，一个组织的池或早已在，或经一次进入而在。
+
+**下一步（I4b）。** Horizon（有限否证与前缀闭包，PrefixSafety、IdealWarrant），Lasting（有限分支的 König 提升，FiniteBranching），Selection（交换不变的服务恰当无并列，PluralRecords、TieBreaking；在 P110 落地之后）。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -10606,3 +10640,27 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 - **Core run.** None is needed; none of the 31 files is in the core receipt.
 - **The table.** It now marks the two themes kept outside, and it says that the notes exist.
 - **Boundary.** A note is an edge, not a verdict. The modules stay, and nothing is deleted.
+
+**Every origin passes the gate, integration I4b item 1 (16 October 2026).** Ren chose “Closest gaps first” on the I4 classification table ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)). The table read LivingOrganization as a join candidate: over any reaction network, a pool present at the end was present initially or came in at an entry step. Becoming.Gated stated only quantities the ungated steps keep in both directions; the one-directional trace law was unstated (section 139). This section states it, with Gated's earlier law as its case.
+- **Preserved and reflected** (`Becoming.Gated`, no premise; 4 → 13 theorems).
+  - The ungated steps preserve p where it holding before a step gives it after (`PreservedBy`), and reflect p where it holding after gives it before (`ReflectedBy`).
+  - Keeping a quantity is preserving every value of it, and equally reflecting every value (`keptBy_iff_preserved`, `keptBy_iff_reflected`).
+  - Along courses these hold exactly as along steps (`preserved_along_iff`, `reflected_along`).
+- **Leaving passes the gate.** Where the ungated steps preserve p, a course from where p holds to where it fails contains a gated move (`leaving_passes_gate`). `change_passes_gate` is its case p := (q equals its starting value).
+- **Every origin passes the gate.** Where the ungated steps reflect p, a course ending where p holds either started where it held, or splits into a prefix, a gated step after which p holds, and the rest (`origin`). The proof splits only on the gate, which is already decided; p is not decided.
+- **Boundary.** With the gate a proposition, the law holds wherever every gate holds or fails (`origin_of_decides`). Asked of every process, it is exactly double-negation elimination (`origin_of_propositions_iff`).
+  - The witness is one move from `false` to `true`, with p holding at `true` and the gate Q. The move reflects p exactly where Q cannot fail, and the law then gives Q.
+  - So the law needs exactly a decided gate.
+- **LivingOrganization** (`LivingOrganizationCorrespondence`, periphery, with its own checker).
+  - The gate is the recipes entering the pool (`entryGate`). Every other step reflects pool presence (`presence_reflected`).
+  - So `trace_pool_origin` follows from `Gated.origin` (`trace_pool_origin_by_core`), which adds that the pool is present right after the entry step (`entry_then_present`). The periphery theorem decided the pool; the core law does not.
+  - Where every admitted recipe is closed, there is no gate, and `reflected_along` keeps an empty pool empty (`empty_pool_preserved_by_core`).
+  - Axiom reports: only propext and Quot.sound, from LivingOrganization's own arithmetic and list tactics. The core's new declarations have empty reports.
+- **Decidability inventory.** `origin_of_decides` splits on each gate: proof-only theorems go 223 → 224. `origin_of_propositions_iff` joins the boundary theorems.
+- **Record.** The new record every-origin-passes-the-gate reuses organizational-rule-inheritance's `KeptBy`.
+- **Not stated.** Where p is decided, the first gated step at which p comes to hold could be located as in `change_located`; this section does not state it.
+- **Boundary and reading.** The gate locates where change or origin can enter; it does not say a gated move changes anything. The recipes keep LivingOrganization's scope. The reading, which is the AI's and pending Ren: reflecting is "present after only if present before", so an organization's pool was there already or came in through an entry.
+- **Next in I4b.**
+  - Horizon: finite refutation and prefix closure (PrefixSafety, IdealWarrant).
+  - Lasting: König lifting (FiniteBranching).
+  - Selection: PluralRecords and TieBreaking, after P110 lands.

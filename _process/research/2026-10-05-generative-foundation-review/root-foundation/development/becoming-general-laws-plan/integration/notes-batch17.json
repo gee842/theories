@@ -1,0 +1,39 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T182202.414009Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "I4b 第一项：Becoming.Gated 的条目加单向律与起源之律",
+   "en": "I4b item 1: the Becoming.Gated bullet gains the one-directional laws and the origin law"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "I4b 第一项：§9 的 Becoming.Gated 一行（4 → 13 项定理）与外围实例 LivingOrganizationCorrespondence 一行，外围实例的列举加入它；总数改据新回执",
+   "en": "I4b item 1: the §9 row of Becoming.Gated (4 → 13 theorems) and a peripheral-instance row for LivingOrganizationCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第143节（整合 I4b 第一项：每个起源都经过门，LivingOrganization 接入）及其英文段；此前各节不变",
+   "en": "section 143 (integration I4b item 1: every origin passes the gate, LivingOrganization joined) with its English paragraph; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "I4b 第一项：origin_of_decides 归为 split，origin_of_propositions_iff 列入边界",
+   "en": "I4b item 1: origin_of_decides classified split, origin_of_propositions_iff added to the boundary"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T182202.414009Z 上重新生成，含 I4b 第一项的分类：只在证明中用到 223 → 224（分情形 28 → 29），其余各类不变",
+   "en": "regenerated on receipt 20261015T182202.414009Z with I4b item 1's classifications: used only in proofs 223 → 224 (splits on a case 28 → 29), the other classes unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变",
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md": {
+   "zh": "I4b 第一项：LivingOrganization 改为已接入，加 LivingOrganizationCorrespondence 一行",
+   "en": "I4b item 1: LivingOrganization marked joined, with a row for LivingOrganizationCorrespondence"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing I4b item 1 (study section 143): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月16日，I4b 第一项落地（研究第143节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}

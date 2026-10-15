@@ -1818,6 +1818,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean)
 
+## every-origin-passes-the-gate ← organizational-rule-inheritance
+
+`formal-reuse` — 复用 Becoming.Gated 的 KeptBy：保持一个量恰是保持（反映）它的每个值，change_passes_gate 是 leaving_passes_gate 的情形。 / Reuses Becoming.Gated.KeptBy: keeping a quantity is preserving (reflecting) every value of it, and change_passes_gate is a case of leaving_passes_gate.
+
+**Producer output / 上游输出:** 非门控步保持的量（KeptBy）；改变经过门。 / A quantity the ungated steps keep (KeptBy); change passes the gate.
+
+**Consumer input / 下游输入:** 保持读作保持或反映每个值。 / Keeping read as preserving or reflecting every value.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean)
+
 ## evolution-on-descent ← living-on-and-descent
 
 `formal-reuse` — 复用 P18 引入、P18b 改正的世系关系（给予的形成须参与该步）；定义移入 Becoming.Evolution（DescendsAt、Descends），在估值中的读法留在 Becoming.Descent。 / Reuses the descent relation introduced in P18 and corrected in P18b (the formation giving must take part in the step); its definition moves to Becoming.Evolution (DescendsAt, Descends), and its readings in valuation stay in Becoming.Descent.

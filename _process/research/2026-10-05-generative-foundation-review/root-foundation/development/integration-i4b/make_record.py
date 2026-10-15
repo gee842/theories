@@ -147,12 +147,11 @@ def record():
         'family': 'F10',
         'reviewed_at_utc': REVIEWED,
         'statement': pair(
-            '对每个过程与动作上的已定之门：非门控步反映的性质，终于其成立处的进程或始于其成立处，或在一个门控步之后它成立，不判定该性质；'
-            '非门控步保持的性质，离开它的进程经过门。门是命题时这一律恰是双重否定消去。',
-            'For every process and a decided gate on its moves: a course ending where a property the ungated steps reflect '
-            'holds started where it held or has a gated step after which it holds, nothing about the property decided; a '
-            'course leaving a property the ungated steps preserve passes the gate. With the gate a proposition, the law '
-            'is exactly double-negation elimination.'),
+            '对每个过程与动作上的已定之门：非门控步反映的性质，终于其成立处的进程或始于其成立处，或经一个之后它成立的门控步，不判定该性质；'
+            '离开非门控步保持的性质经过门。门是命题时这一律恰是双重否定消去。',
+            'For every process and decided gate: where ungated steps reflect a property, a course ending where it holds '
+            'started there or passes a gated step after which it holds, the property undecided; leaving a preserved '
+            'property passes the gate. With a propositional gate this is double-negation elimination.'),
         'laws': LAWS,
         'hypotheses': [pair(
             '不加公理。门是动作到布尔值的映射（已定）；性质 p 是任意命题，不判定。以命题为门的形式把每个门成立或不成立写作假设。',
