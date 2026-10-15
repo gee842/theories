@@ -8737,6 +8737,78 @@ Integration: identification-where-bounded 的“按否证学习者自己的确�
 
 **检查。** 在暂存区对 main 0d93e617 编译：`Becoming.Identification` 105 项定理、128 项声明，`Becoming.Distinguishing` 11 项、12 项，`Becoming.Learnable` 重建；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
+## 137. 任意多条件下最小的识：读有限多个条件的律经其敏感而读，尾需要全知（Becoming.Sensitivity）
+
+2026-10-15。P80 的记录 [counterfactual-is-the-course](../../../../theories/becoming/results/records/counterfactual-is-the-course.md) 的 next_delta 问：条件无穷多时，敏感是否仍是最小的识，或有反例；`Becoming.Counterfactual` 把这一点列为没有导出，理论第 8 节的进一步证明在“反馈与所及”下亦列它。Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）。本节在第一部分之内回答：不加公理，除各律所写者不加前提。工作板上认领为 P113。
+
+```text
+Result(s): 新增 sensitivity-is-the-least-registration；回答 counterfactual-is-the-course 的 next_delta 中“条件无穷多时敏感是否仍是最小的识（或反例）”；
+           复用 counterfactual-is-the-course（ExchangeLaw、GivesAlike、Nonanticipating、Through、InsensitiveAt、Sensitive、mixIn、
+           mixIn_listed、mixIn_alike、swap_alike、nat_eq_of_not_not、ExchangeLaw.Through.registers_of_sensitive、comparison_of_courses、
+           ExchangeLaw.Nonanticipating.through_sensitive）；Becoming.Change 的 LPO
+Delta: 新核心模块 Becoming.Sensitivity（只导入 Counterfactual；47 项定理／58 项声明）；不改已有模块
+Supplied premises / correspondence: 不加公理；各律所写者写在定理中：律读有限多个条件（ReadsFinitely）或读已立者（Nonanticipating）、
+       条件的相等可判定（只在混合条件处）；尾之律以水平是否终将消失的判定为假设；全知原则的两条定理以条件以自然数编号
+Evidence: scratch_build 对 main 108e278e（P109、P83e、P83f、I3d、I3e 与 P83g 之后）：Becoming.Sensitivity 47 项定理、58 项声明，公理报告全部为空，
+          无警告；根模块 Becoming 与其导入闭包（110 个模块）一同编译，无重名；清点在同一字节上运行，每一新行都已分类；
+          合并检查器回执待整合者的运行
+Boundary: 离散的步；敏感是有或无，不陈述其度量；“每个律都读有限多个条件”不导出（连续性原则，独立于核心）；
+          反例之存在的确切强度开放；不含伦理谓词
+Integration: §9 新增一行；§8 的进一步证明、状态行、Ren 的选择与逻辑承诺各改一项；回应由动力学给出一段中的“不推出”；
+       第一部分的总陈述一条；术语表一行改、一行新增；Becoming.lean 的导入与模块说明；check_becoming.py 的核心之列；
+       Lean README 一行与层内导入；DECIDABILITY-INVENTORY.py 的分类；一项新记录与一项配对说明
+```
+
+**一、读有限多个条件。** 在步 `t`、对形成 `h`、在水平历史 `l` 下，律读一个条件列表 `cs` 之内，是说每个在 `cs` 的条件上直到 `t` 都与 `l` 相同的历史，与 `l` 交换相同（`ExchangeLaw.ReadsWithin`）。律读有限多个条件，是说它在每一步、对每个形成、在每个历史下都读某个列表之内，列表可随历史而变（`ExchangeLaw.ReadsFinitely`）。这就是律作为水平历史之函数的逐点连续性：值由有限多个坐标固定，所需的坐标随点而变。这样的律读已立者（`ExchangeLaw.ReadsFinitely.nonanticipating`）。条件有限时，每个读已立者的律都读有限多个条件，列表就是全体条件（`ExchangeLaw.Nonanticipating.readsWithin_of_every`、`ExchangeLaw.Nonanticipating.readsFinitely_of_every`）。条件无穷多时，“随历史而变”不能去掉：一个形成与每个条件交换的，是步 `0` 时条件 `0` 的水平所指那个条件在步 `0` 的水平；它在每个历史下读两个条件（`Pointer.readsWithin`、`Pointer.readsFinitely`），却不在任何一个列表之内读所有历史（`Pointer.no_list`）。
+
+**二、敏感是最小的识，条件任意多。** 读已立者的律在两个于其所敏感者上相同的历史下交换相同，只要它在其中一个历史下读某个列表之内（`alike_of_sensitive_agree_within`）。证明如 `Becoming.Counterfactual`：把列出的条件一个一个换成第二个历史的水平（`mixIn`），敏感的条件两者本来相同，不敏感的条件单独改变不改变交换；换完的历史在列出的条件上与第二个历史相同，于是交换相同。所以读有限多个条件的律，经每个观察其所敏感者的识而读（`ExchangeLaw.ReadsFinitely.through_of_observed`），经其敏感而读（`ExchangeLaw.ReadsFinitely.through_sensitive`）；它所经的每个识，连同形成所依存的，都不漏掉其敏感的任何条件（`ExchangeLaw.Through.registers_of_sensitive`），所以敏感是它所经的最小的识（`ExchangeLaw.ReadsFinitely.least_registration`）。由动力学给出的比较对这样的律在任意多的条件下成立，所经的识就是律的敏感（`comparison_through_sensitivity_of_readsFinitely`，经 `comparison_of_courses`）。`Becoming.Counterfactual` 中条件有限的情形是一个列表含全体条件的实例（`ExchangeLaw.Nonanticipating.through_sensitive_of_every`）。
+
+**三、依存于整体者依存于某个部分。** 律在某步对每个条件都不敏感时，它在两个历史下交换相同，只要它在其中一个历史下读某个列表之内（`mixIn_alike_of_insensitiveAt`、`alike_of_insensitiveAt_within`）。读有限多个条件、又不敏感于任何条件的律，在每两个历史下交换相同（`ExchangeLaw.ReadsFinitely.alike_of_insensitive`）：不被任何单个条件改变者，根本不被改变。
+
+**四、尾。** 条件无穷多时，第一点的条件不能去掉。水平序列 `α` 从某个条件起消失（`VanishFrom α`：存在 `n`，此后每个条件的水平为零）；在某个条件之后相同的两个序列一起消失或一起不消失（`VanishFrom.of_agree`）。给定对每个序列是否消失的判定，消失的指示（`vanishIndicator`：消失取 `1`，否则取 `0`）不随任何单个条件改变（`vanishIndicator_eq_of_agree`），而全零与全一给出不同（`vanishIndicator_zeros`、`vanishIndicator_ones`）。尾之律让一个形成在每一步与每个条件交换步 `0` 的水平的这一指示（`tailLaw`）。它读已立者（`tailLaw_nonanticipating`），经识从任何一个条件起的全部条件而读（`tailLaw_reads_from`、`tailLaw_through_from`），在每一步对每个条件都不敏感（`tailLaw_insensitive`），所以不敏感于任何条件（`tailLaw_not_sensitive`），却在两个历史之间不同（`tailLaw_differs`）。它不经其敏感而读（`tailLaw_not_through_sensitive`；形成不依存于任何东西的网中，`tailLaw_not_through`），不读有限多个条件（`tailLaw_not_readsFinitely`），它所经的识没有最小的（`tailLaw_no_least_registration`：每个“从 `n` 起”的识都够，它们的交是空的）。
+
+**五、每个反例都给出全知原则。** 弱有限全知原则 `WLPO`：每个布尔序列处处为假或否。`Becoming.Change` 的有限全知原则给出它（`WLPO.of_lpo`）；没有构造性证明给出它。条件以自然数编号时：读已立者的律，若两个历史在其所敏感的每个条件上直到 `t` 相同，在 `t` 却交换不同，就给出 `WLPO`（`wlpo_of_not_through_sensitive`）；律若在某步对每个条件都不敏感，在那里却在两个历史之间不同，也给出 `WLPO`，读不读已立者都一样（`wlpo_of_insensitive_differs`）。证明沿布尔序列混合两个历史：条件 `m` 取第二个历史的水平，恰当序列在 `m` 之前或在 `m` 处已有一个真（`seenBy`）；序列处处为假时混合就是第一个历史，有一个真时混合从那里起是第二个历史，逐个条件换回（`alike_of_agree_from_sensitive`、`alike_of_agree_from`）；混合与第一个历史交换是否相同，是两个数的比较（`mixed_decides`）。所以条件编号时，最小的识的反例不经全知原则不能给出。反过来，尾之律所取的消失之判定给出有限全知原则本身（`lpo_of_vanish_decided`，经 `seenBy_exists`：在序列的第一个真之前取 `1`、之后取 `0` 的水平消失，恰当序列有一个真）。所以反例之存在位于 `WLPO` 与消失之判定之间。
+
+```lean
+def ExchangeLaw.ReadsFinitely (law : ExchangeLaw F C) : Prop :=
+  ∀ t h l, ∃ cs : List C, law.ReadsWithin t h l cs
+
+theorem ExchangeLaw.ReadsFinitely.least_registration [DecidableEq C] (fin : law.ReadsFinitely)
+    (W : Web F C) (part : F → Bool) :
+    law.Through W law.Sensitive part ∧
+      ∀ obs : F → C → Prop, law.Through W obs part →
+        ∀ h, part h = false → ∀ c, law.Sensitive h c → ¬ ¬ W.Registers obs h c
+
+theorem tailLaw_no_least_registration {W : Web Unit Nat} (free : ∀ t c, ¬ W.requires t () c) :
+    ¬ ∃ obs : Unit → Nat → Prop, (tailLaw decides).Through W obs (fun _ => false) ∧
+      ∀ obs' : Unit → Nat → Prop, (tailLaw decides).Through W obs' (fun _ => false) →
+        ∀ c, obs () c → obs' () c
+
+theorem wlpo_of_not_through_sensitive {law : ExchangeLaw F Nat} (na : law.Nonanticipating)
+    {t : Nat} {h : F} {l l' : Nat → Nat → Nat}
+    (agree : ∀ c, law.Sensitive h c → ∀ s, s ≤ t → l s c = l' s c) {c : Nat}
+    (differs : ¬ (law.take t h l c = law.take t h l' c ∧ law.give t h l c = law.give t h l' c)) :
+    WLPO
+
+theorem lpo_of_vanish_decided (decides : ∀ α : Nat → Nat, Decidable (VanishFrom α)) : LPO
+```
+
+**读法（AI 的，待 Ren 或按 Ren 2026-10-15 的交托判断）。**
+1. **识就是敏感。** 律在每个历史下读有限多个条件处，读作识，形成恰识其交换所能被改变者，一次一个条件；不需要另给列表，条件多少都一样。
+2. **依存于整体者依存于某个部分。** 不被任何单个条件改变、又读有限多个条件的律，根本不被改变。依存于整体而不依存于其任何部分者是尾，如水平是否终将消失、长程平均：它在于无穷多个条件上不同、在任何一个上都相同的历史之间不同，给出它需要关于无穷的判定，构造不能给出。
+3. **对照。** 尾之律是 Kolmogorov 零一律之尾事件不带概率的对应。“核心能给出的每个律都读有限多个条件”是 Brouwer 的连续性原则，它驳斥 `WLPO`；核心既不陈述也不驳斥它，所以最小的识在核心中对读有限多个条件的律陈述。
+
+**作者反审。**
+1. **新律还是重述？** `ExchangeLaw.ReadsFinitely` 是 Baire 空间上（离散的值）的逐点连续性；`Pointer` 是读坐标 `0` 所指之坐标的标准例子，逐点连续而无一致的模。“连续函数对每个单独坐标不变则为常值”与“对所敏感的坐标相同则值相同”是由有限改变连接任意两点附近的初等事实。条件有限的情形在 `Becoming.Counterfactual` 中已有。新的是四点合起来对一个未决问题的完整回答：（a）不需要条件有限，也不需要列表一致；（b）连续性不能去掉，消失之判定给出反例；（c）条件编号时，反例之存在给出 `WLPO`，所以在构造性核心中不能给出反例；（d）该判定给出 `LPO`。`WLPO` 即 Π⁰₁ 形式的排中律；“从某个条件起消失”是 Σ⁰₂ 形式（存在一个起点，此后皆零），其判定是该形式之排中律的实例（Akama、Berardi、Hayashi 与 Kohlenbach 2004 的排中律算术层级）。已知 `LPO` 恰是 `WLPO` 加 Markov 原则；反例之存在在这一层级中的确切位置没有陈述。
+2. **是不是把连续性当作公理偷渡？** 不是：`ReadsFinitely` 写在用它的每条定理的假设中，核心不断言每个律连续，也不否定。条件有限时它是定理（`ExchangeLaw.Nonanticipating.readsFinitely_of_every`），不是假设。核心与经典逻辑及连续性原则都相容，因为两者它都不用。
+3. **尾之律是不是病态的例子？** 它是“依存于整体而不依存于任何部分”的精确形式：`wlpo_of_insensitive_differs` 说每个这样的律都给出 `WLPO`，读不读已立者都一样。科学中的对应是长程行为：极限、长程平均、终将如何。对这样的量作反应的形成，正是最小的识失效之处：它所经的识可以从任何一处开始，没有最小的。
+4. **双重否定。** `least_registration` 的第二部分给出 `¬ ¬ W.Registers`，与 `Becoming.Counterfactual` 相同；识是否成立不可判定时，这是不用判定所能得到的。
+5. **范围。** 不含伦理谓词；离散的步；敏感是有或无，没有度量（敏感的多少与差别到达多少，理论第 8 节的进一步证明）；全知原则的两条定理只对以自然数编号的条件陈述；混合条件处用条件的相等可判定（`DecidableEq C`），如 `Becoming.Counterfactual`。
+
+**检查。** 在暂存区对 main（108e278e，I3e 与 P83g 之后）编译：`Becoming.Sensitivity` 47 项定理、58 项声明，没有错误或警告，公理报告全部为空；根模块 `Becoming` 与其导入闭包（110 个模块）一同编译，没有重名；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`，证明不用 `funext` 与依赖 `propext` 的引理。清点（`DECIDABILITY-INVENTORY.lean`）在同一字节上运行（跳过回执核对）：陈述依赖可判定性者 331 → 347，只在证明中用到者 193 → 202，证明可判定者 132 → 136，取可判定族的定义 92 → 94，不用到者 0，每一新行都已分类。合并检查器在整合者的运行中检查。本节尚未经独立审查。
+
+**边界。** 落地运行须在 `check_becoming.py` 中编译与审计新模块，再把新记录绑定到回执。`DECIDABILITY-INVENTORY.py` 把 `vanishIndicator` 与 `tailLaw` 记作造出指示的构造（其陈述以消失之判定为自己的条件），把最小的识的八条定理记作只在证明中分辨相同（混合条件，如 `Becoming.Counterfactual`），把 `lpo_of_vanish_decided` 记作只在证明中分情形；`WLPO.of_lpo`、`mixed_decides`、`wlpo_of_insensitive_differs` 与 `wlpo_of_not_through_sensitive` 的结论是已判定的命题，记为证明可判定的行。既有模块的字节不变。理论中回应由动力学给出一段原列“何时一个动作是部分自己的”为不推出，P109 落地时没有改；本节一并指向 `Becoming.Coupling`。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -10097,3 +10169,10 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **Remaining.** Column I's remaining step is I4, the classification of about 500 modules, which awaits Ren.
 
 **The learner by refutation rests at a cubic step, and N − 1 is exact for the tests within one world, P83g (15 October 2026).** The two minor open items of identification-where-bounded and tests-fix-likeness-where-determined, under Ren's “let's finish Still open, all minor” of 15 October. Section 136 adds a section to `Becoming.Identification` and one theorem to `Becoming.Distinguishing`; declarations are only added, with no axiom and no premise. On the two-valued negation along a cycle of N = 2m + 3 places (`oddCycle`), which cannot close around an odd cycle and breaks once in every turn, a history with at most N states, the learner by refutation over the lasso hypotheses is refuted at step (N³ − N)/4 (`learner_refuted_late`). From the second turn on, every even shift it holds runs to the end of a turn and is refuted at the start of the next, and every odd shift is refuted within the turn, so each of the (N² − 1)/4 even shifts before the period N costs a whole turn. A step from which it is right on every two-valued history with at most N states therefore comes after (N³ − N)/4 (`learner_rest_cubic`): with `learner_rests` its rest step is cubic in N, while the learner by the least bound rests from 2N − 1 (section 133). The constant is not proved. Exhaustive search over histories with at most N states (two values, N ≤ 17; three, N ≤ 9) finds the worst rest step (N³ − N)/4 + 3 for odd N ≥ 3, attained by the same negation started elsewhere; that is a computation, not a proof. Within one world the tests' N − 1 is exact for every N ≥ 2: on Fin N, along the path to a last place that stays, registering only whether the last is reached, the first two places agree for N − 2 steps and do not pass the same tests (`registered_within_exact`). Readings (the AI's, pending Ren): deriving does not need the bound known, but how the record is read sets when; refuting one hypothesis at a time derives the law a cubic order later than reading by the simplest law.
+
+**The least registration with any number of conditions (P113, 15 October 2026).** The record of P80 asked whether, with infinitely many conditions, sensitivity remains the least registration, or a counterexample; `Becoming.Counterfactual` listed it as not derived, under Ren's goal of 12 October, “move towards 100%” ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)). Section 137 adds one core module, `Becoming.Sensitivity` (47 theorems, no axiom, no premise beyond what each law names), on Counterfactual's definitions.
+- **Reading finitely many conditions.** A law reads finitely many conditions where at every step, for every formation and under every history, what it exchanges is fixed by the levels of some list of conditions, the list possibly depending on the history (`ExchangeLaw.ReadsFinitely`): pointwise continuity on histories. Such a law reads what has stood; with finitely many conditions every law of what has stood does; with infinitely many a law can read two conditions under each history and within no one list under all (`Pointer.no_list`).
+- **Sensitivity is the least registration, with any number of conditions.** Such a law reads through what it is sensitive to, and every registration it reads through holds every condition it is sensitive to (`ExchangeLaw.ReadsFinitely.through_sensitive`, `ExchangeLaw.ReadsFinitely.least_registration`); the comparison as the dynamics give holds with any number of conditions (`comparison_through_sensitivity_of_readsFinitely`), Counterfactual's finite case being an instance. A law reading finitely many conditions and sensitive to none gives alike everywhere (`ExchangeLaw.ReadsFinitely.alike_of_insensitive`): what depends on the whole depends on some part.
+- **The tail.** The condition cannot be dropped: given a decision of whether levels vanish from some condition on, the tail law exchanges its indicator; it reads what has stood, is sensitive to no condition and still differs (`tailLaw_not_sensitive`, `tailLaw_differs`), and the registrations it reads through, from any condition on, have no least one (`tailLaw_no_least_registration`).
+- **Every counterexample gives omniscience.** With the conditions numbered by the natural numbers, a law of what has stood giving differently under two histories that agree on what it is sensitive to gives the weak limited principle of omniscience (`wlpo_of_not_through_sensitive`, `WLPO`), as does every law insensitive to every condition that still differs (`wlpo_of_insensitive_differs`), by mixing the two histories along a Boolean sequence; the decision the tail law takes gives the limited principle itself (`lpo_of_vanish_decided`). So no counterexample can be exhibited in the core, and the existence of one lies between `WLPO` and that decision.
+- **Readings (the AI's).** Registration is sensitivity: a formation registers what its own exchange can be changed by, one condition at a time. What depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions would be Brouwer's continuity principle, which refutes `WLPO`, and which the core neither states nor refutes. Not stated: a measure of sensitivity, and exactly where between `WLPO` and the decision of vanishing a counterexample lies. Scratch build on main `108e278e`: 47 theorems, 58 declarations, empty axiom reports; the decidability inventory classifies every new row. Not yet independently reviewed.

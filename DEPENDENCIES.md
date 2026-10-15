@@ -4522,6 +4522,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)
 
+## sensitivity-is-the-least-registration ← counterfactual-is-the-course
+
+`formal-reuse` — 复用 ExchangeLaw、GivesAlike、Nonanticipating、Through、InsensitiveAt、Sensitive、mixIn、mixIn_listed、mixIn_alike、swap_alike、nat_eq_of_not_not、ExchangeLaw.Through.registers_of_sensitive 与 comparison_of_courses：条件有限时的最小的识推广到读有限多个条件的律。 / Reuses ExchangeLaw, GivesAlike, Nonanticipating, Through, InsensitiveAt, Sensitive, mixIn, mixIn_listed, mixIn_alike, swap_alike, nat_eq_of_not_not, ExchangeLaw.Through.registers_of_sensitive and comparison_of_courses: the least registration with finitely many conditions extended to laws reading finitely many conditions.
+
+**Producer output / 上游输出:** 交换律、敏感、经识而读；逐个条件换入；所经之识不漏掉敏感者；律所经之识内的比较。 / Laws of exchange, sensitivity, reading through a registration; mixing one condition at a time; a registration read through holding what is sensitive; the comparison within a registration read through.
+
+**Consumer input / 下游输入:** 列出的条件逐个换入；经敏感而读给出比较。 / The listed conditions changed one at a time; reading through sensitivity gives the comparison.
+
+**Retained conditions / 保留条件:** 条件的相等可判定（混合条件处）。 / Decided equality of conditions (where conditions are mixed).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
+## sensitivity-is-the-least-registration ← testing-within-registration
+
+`formal-reuse` — 复用 Web.Registers：最小的识以形成所识者（所依存或观察的条件）陈述。 / Reuses Web.Registers: the least registration is stated with what a formation registers (the conditions it depends on or observes).
+
+**Producer output / 上游输出:** 形成识一个条件：依存于它或观察它。 / A formation registers a condition: it depends on it or observes it.
+
+**Consumer input / 下游输入:** 所经之识（连同所依存的）不漏掉敏感者。 / A registration read through, with what is depended on, holding what is sensitive.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
 ## separation-loses-the-relation ← contextual-registration
 
 `formal-reuse` — 复用 restrict、Glued、PartsDetermine 与 Specker 的盒子和对：奇偶在同样的三对上是诸对不给回的整体。 / Reuses restrict, Glued, PartsDetermine and Specker's boxes and pairs: on the same three pairs parity is a whole its pairs do not give back.

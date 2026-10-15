@@ -103,6 +103,7 @@ import Becoming.Novelty
 import Becoming.Reading
 import Becoming.Readings
 import Becoming.Coupling
+import Becoming.Sensitivity
 
 /-!
 # The Theory of Becoming: the formal core
@@ -980,6 +981,16 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   clock, forms them; moves formed within a whole held by a list repeat, and every lasso is so
   formed. The record of one course fixes whose move it is only where a configuration recurs with
   the move varied; where nothing recurs, as with a kept history, every reading fits.
+* `Becoming.Sensitivity` (L4): the least registration with any number of conditions, with no
+  premise beyond what each law names. A law reading finitely many conditions under each history,
+  the list possibly depending on the history, reads through what it is sensitive to: sensitivity
+  is the least registration it reads through, and the comparison as the dynamics give holds with
+  any number of conditions; such a law sensitive to no condition gives alike under every two
+  histories. With infinitely many conditions this cannot be dropped: given a decision of whether
+  levels vanish from some condition on, which gives the limited principle of omniscience, a law
+  of the tail is sensitive to no condition and still differs, and the registrations it reads
+  through have no least one; with the conditions numbered, every counterexample to the least
+  registration gives the weak limited principle of omniscience.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

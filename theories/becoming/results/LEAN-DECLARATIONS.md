@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 251 | 8,030 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 252 | 8,077 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -652,6 +652,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [SelfModelCertification.lean](lean-declarations/shared.md#module-2633962036d2) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [SemanticAction.lean](lean-declarations/shared.md#module-a51c4566a005) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [SemanticCalibration.lean](lean-declarations/shared.md#module-ad79f81f6792) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
+| [Sensitivity.lean](lean-declarations/core.md#module-4db5dac62437) | 生成核心与关系结构 / Generative core and relational structure |
 | [SettlingCorrespondence.lean](lean-declarations/ethics.md#module-4d312d4e9464) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [SharedStockInstances.lean](lean-declarations/other.md#module-cb1d1649776a) | 其他形式研究 / Other formal studies |
 | [ShrinkingGain.lean](lean-declarations/learning.md#module-59ffcfa61113) | 学习、预测与动力学 / Learning, prediction and dynamics |

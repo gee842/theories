@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-207 migrated records: 203 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+208 migrated records: 204 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -191,6 +191,7 @@
 | `selection-through-registration` | [经识的选择 / Selection through registration](records/selection-through-registration.md) | theorem | recorded-checked |
 | `selection-under-registration-revision` | [登记关系改变时，哪些选择仍可表达与执行 / Which selections survive and remain executable when registration changes](records/selection-under-registration-revision.md) | theorem | recorded-checked |
 | `self-good-reachable-g0` | [从立场自身之善到可及的 G0 / From a standpoint's own good to reachable G0](records/self-good-reachable-g0.md) | theorem | recorded-checked |
+| `sensitivity-is-the-least-registration` | [任意多条件下最小的识 / The least registration with any number of conditions](records/sensitivity-is-the-least-registration.md) | theorem | recorded-checked |
 | `separation-loses-the-relation` | [分离恰失去关系 / Separation loses exactly the relation](records/separation-loses-the-relation.md) | theorem | recorded-checked |
 | `significance-retained-within-margin` | [余量之内保留的意义 / Significance retained within the margin](records/significance-retained-within-margin.md) | theorem | recorded-checked |
 | `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |
