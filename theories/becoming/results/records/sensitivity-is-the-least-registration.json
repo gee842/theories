@@ -166,8 +166,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T164401.170999Z): the 58 declarations of Becoming.Sensitivity, 47 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 137; not independently reviewed."
   },
   "next_delta": {
-    "zh": "反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查。",
-    "en": "The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review."
+    "zh": "条件不编号时反例给出什么；按时间先后读的敏感；独立审查。",
+    "en": "What a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识本身仍是 Ren 的）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
@@ -268,6 +268,13 @@
       "detail": {
         "zh": "回答其下一步中的度量：耦合强度度量敏感，对读已立者的律强度为零恰是不敏感（ExchangeLaw.insensitiveAt_iff_strength_zero）；差别到达多少至多是所携带的量，恰好达到。",
         "en": "Answers the measure in its next step: the coupling strengths measure sensitivity, strength zero being exactly insensitivity for a law of what has stood (ExchangeLaw.insensitiveAt_iff_strength_zero); how much difference arrives is at most the carried amount, which is attained."
+      }
+    },
+    {
+      "id": "what-a-law-of-the-whole-and-no-part-takes",
+      "detail": {
+        "zh": "回答其下一步首项：条件编号时，反例恰在一个规则判定每个布尔序列是否处处为假之处存在（弱有限全知原则作为规则），由只由规则造出的永不消失之律达到；尾之律所取的消失之判定恰是有限全知原则作为规则。",
+        "en": "Answers the first item of its next step: with the conditions numbered, a counterexample exists exactly where a rule decides, of every Boolean sequence, whether it is false throughout (the weak limited principle as a rule), attained by the law of levels that never vanish, built from the rule alone; the decision of vanishing the tail law takes is exactly the limited principle as a rule."
       }
     }
   ],
@@ -479,6 +486,10 @@
     {
       "zh": "2026年10月16日，P123（Becoming.Frequency，研究第158节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入耦合多常作用一段，“截断所失”一段加注明日期的括注，第一部分完整陈述加一项，§8 的状态行与进一步证明，§9 加一行与三条术语；回执与合计改据新运行（6995 项定理、9628 项声明审计，核心闭包 123 个模块，包 128 个））。",
       "en": "16 October 2026, landing P123 (Becoming.Frequency, study section 158): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on how often couplings act and a dated parenthetical in “What a cut loses”, Part I stated whole gains an item, §8's status row and further proofs, §9 gains a row and three glossary rows; receipt and totals moved to the new run (6995 theorems, 9628 declaration audits, core closure 123 modules, package 128))."
+    },
+    {
+      "zh": "2026-10-16 P126（整体而无部分之律所需，研究 §160）：下一步首项“反例之存在的确切强度”由 what-a-law-of-the-whole-and-no-part-takes 回答：条件以自然数编号时，反例恰在一个规则判定每个布尔序列是否处处为假之处存在（弱有限全知原则作为规则），消失之判定恰是有限全知原则作为规则；所以删去此项；related 加 what-a-law-of-the-whole-and-no-part-takes。陈述与证明不变；does_not_show 仍对本记录的定理成立；correspondence 中的读法仍按其所注。",
+      "en": "16 October 2026, P126 (what a law of the whole and no part takes, study section 160): the first item of the next step, the exact strength of a counterexample's existence, is answered by what-a-law-of-the-whole-and-no-part-takes: with the conditions numbered by the natural numbers, a counterexample exists exactly where a rule decides, of every Boolean sequence, whether it is false throughout (the weak limited principle of omniscience as a rule), and the decision of vanishing is exactly the limited principle as a rule; so the item is removed; related adds what-a-law-of-the-whole-and-no-part-takes. Statement and proofs unchanged; does_not_show still holds of this record's theorems; the readings in correspondence stay as marked there."
     }
   ],
   "text_versions": []

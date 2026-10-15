@@ -104,6 +104,7 @@ import Becoming.Reading
 import Becoming.Readings
 import Becoming.Coupling
 import Becoming.Sensitivity
+import Becoming.Tail
 import Becoming.Courses
 import Becoming.Parting
 import Becoming.Typicality
@@ -1042,6 +1043,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   of the tail is sensitive to no condition and still differs, and the registrations it reads
   through have no least one; with the conditions numbered, every counterexample to the least
   registration gives the weak limited principle of omniscience.
+* `Becoming.Tail` (L4): what a law of the whole and no part takes, with no premise beyond what each
+  statement names. A number read off levels that no single condition changes is set by the tail
+  alone; the law exchanging it reads what has stood and is insensitive to every condition, and where
+  the number differs it has no least registration. With the conditions numbered, such a number, a
+  law insensitive at a step to every condition that still differs there, and a counterexample to the
+  least registration each exist exactly where a rule decides, of every Boolean sequence, whether it
+  is false throughout: the weak limited principle of omniscience as a rule. The decision of
+  vanishing is exactly the limited principle as a rule, so the tail law takes the limited principle
+  where a counterexample needs only the weak rule, which the indicator of never vanishing takes.
 * `Becoming.Courses` (L4): the apart laws read on the shared base, with no premise beyond what each
   law names. Laws stated for a sequence, a history, a law of change, a pool or a list of
   configurations are stated on the courses of a process, a frame's configurations or a web's

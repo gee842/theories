@@ -185,6 +185,10 @@ CONSTRUCTIONS = {
     # integration I4b (2026-10-16): a selection through a model of the options exchanges two options' entries
     **{n: 'swap' for n in ['Relabel.swap', 'Relabel.Equivariant', 'Relabel.EquivariantValue',
                            'Relabel.EquivariantChoice']},
+    # 2026-10-16, P126 what a law of the whole and no part takes (Becoming.Tail): whether levels vanish
+    # from a condition on, or some level from it on is above zero, decided by a rule, the indicator of
+    # never vanishing and its law
+    **{n: 'indicate' for n in ['vanishesFrom', 'raisedFrom', 'neverIndicator', 'neverLaw']},
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -393,6 +397,9 @@ PROOF_KIND = {
     # 2026-10-16, P123 how often couplings act (Becoming.Frequency): the rate for every law reads the
     # equality of conditions in its proof, through gap_le_carried
     'gap_le_count': 'same',
+    # 2026-10-16, P126 what a law of the whole and no part takes (Becoming.Tail): a rule gives the
+    # principle by both its cases
+    **{n: 'split' for n in ['WLPO.of_rule', 'LPO.of_rule']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
