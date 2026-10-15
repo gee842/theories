@@ -33,6 +33,11 @@ condition each law names.
   the converse fails (`accumulating`). An unending course of a registration process is carried
   by the stock exactly where each step's draw is within the stock then standing
   (`carried_iff`).
+* **A level drawn on and not replenished.** Where what stands after each step and what it draws
+  are at most what stood before (`FallsBy`), everything drawn along a course and what stands at
+  its end are at most what stood at its start (`trace_falls`, `falls_iff`). Where moreover every
+  step from a positive level draws something, every course as long as the level ends at nothing
+  (`exhausted_within`), and from nothing a step draws nothing (`draws_nothing_from_empty`).
 * **One model.** The stock along a run is a flow on one condition, balanced exactly where the
   process is balanced along the run (`Run.stockFlow_balances_iff`), so every law of balanced
   flows (renewal, dissipation, the kept history) applies to it.
@@ -531,6 +536,75 @@ theorem accumulating_never_draws :
     (∀ N, ∃ n, N ≤ n ∧ 0 < (fun _ : Unit => 1) (accumulating.act n)) ∧
       ∀ n, ¬ 0 < (fun _ : Unit => 0) (accumulating.act n) :=
   ⟨fun N => ⟨N, Nat.le_refl N, Nat.zero_lt_one⟩, fun _ h => Nat.lt_irrefl 0 h⟩
+
+/-! ## A level drawn on and not replenished -/
+
+/-- Across every step, what stands after it and what it draws are at most what stood before it:
+nothing is replenished, and more than the draw may be lost. -/
+def FallsBy {S : Type u} {A : Type} (P : Process S A) (σ : S → Nat) (draw : A → Nat) : Prop :=
+  ∀ s a t, P.step s a t → σ t + draw a ≤ σ s
+
+/-- **A level falling by at least each draw bounds every course's total draw.** Along every
+course, what stands at its end and everything drawn on it are at most what stood at its start. -/
+theorem trace_falls {S : Type u} {A : Type} {P : Process S A} {σ : S → Nat} {draw : A → Nat}
+    (falls : FallsBy P σ draw) {s t : S} {as : List A} (h : Trace P s as t) :
+    σ t + total as draw ≤ σ s := by
+  induction h with
+  | nil s => exact Nat.le_refl _
+  | @cons s m t a as step _ ih =>
+    calc σ t + (draw a + total as draw)
+        = draw a + (σ t + total as draw) := Nat.add_left_comm _ _ _
+      _ ≤ draw a + σ m := Nat.add_le_add_left ih _
+      _ = σ m + draw a := Nat.add_comm _ _
+      _ ≤ σ s := falls s a m step
+
+/-- **Falling at every step is falling along every course.** -/
+theorem falls_iff {S : Type u} {A : Type} {P : Process S A} {σ : S → Nat} {draw : A → Nat} :
+    FallsBy P σ draw ↔ ∀ s as t, Trace P s as t → σ t + total as draw ≤ σ s :=
+  ⟨fun falls _ _ _ h => trace_falls falls h,
+   fun all s a t step => all s [a] t (.cons step (.nil t))⟩
+
+/-- Along every course, the level ends at nothing or lower than it started by the course's length,
+where every step from a positive level draws something. -/
+theorem trace_exhausts {S : Type u} {A : Type} {P : Process S A} {σ : S → Nat} {draw : A → Nat}
+    (falls : FallsBy P σ draw) (draws : ∀ s a t, P.step s a t → 0 < σ s → 0 < draw a)
+    {s t : S} {as : List A} (h : Trace P s as t) : σ t = 0 ∨ σ t + as.length ≤ σ s := by
+  induction h with
+  | nil s => exact .inr (Nat.le_refl _)
+  | @cons s m t a as step _ ih =>
+    match ih, Nat.eq_zero_or_pos (σ s) with
+    | .inl ended, _ => exact .inl ended
+    | .inr lower, .inl empty =>
+      have none : σ m + draw a ≤ 0 := Nat.le_trans (falls s a m step) (Nat.le_of_eq empty)
+      have m_empty : σ m ≤ 0 := Nat.le_trans (Nat.le_add_right _ _) none
+      exact .inl (Nat.eq_zero_of_le_zero
+        (Nat.le_trans (Nat.le_add_right _ _) (Nat.le_trans lower m_empty)))
+    | .inr lower, .inr positive =>
+      have one : σ m + 1 ≤ σ s :=
+        Nat.le_trans (Nat.add_le_add_left (draws s a m step positive) _) (falls s a m step)
+      exact .inr (Nat.le_trans (Nat.add_le_add_right lower 1) one)
+
+theorem zero_of_add_le : ∀ {a : Nat} (n : Nat), a + n ≤ n → a = 0
+  | _, 0, h => Nat.eq_zero_of_le_zero h
+  | _, n + 1, h => zero_of_add_le n (Nat.le_of_succ_le_succ h)
+
+/-- **A level falling by each draw, where anything positive draws, is exhausted within as many
+steps as it holds**: every course at least that long ends at nothing, and every step from nothing
+draws nothing. -/
+theorem exhausted_within {S : Type u} {A : Type} {P : Process S A} {σ : S → Nat}
+    {draw : A → Nat} (falls : FallsBy P σ draw)
+    (draws : ∀ s a t, P.step s a t → 0 < σ s → 0 < draw a)
+    {s t : S} {as : List A} (h : Trace P s as t) (long : σ s ≤ as.length) : σ t = 0 :=
+  match trace_exhausts falls draws h with
+  | .inl ended => ended
+  | .inr lower => zero_of_add_le as.length (Nat.le_trans lower long)
+
+/-- From nothing, a step draws nothing. -/
+theorem draws_nothing_from_empty {S : Type u} {A : Type} {P : Process S A} {σ : S → Nat}
+    {draw : A → Nat} (falls : FallsBy P σ draw) {s t : S} {a : A} (step : P.step s a t)
+    (empty : σ s = 0) : draw a = 0 :=
+  Nat.eq_zero_of_le_zero
+    (Nat.le_trans (Nat.le_add_left _ _) (Nat.le_trans (falls s a t step) (Nat.le_of_eq empty)))
 
 end Stock
 

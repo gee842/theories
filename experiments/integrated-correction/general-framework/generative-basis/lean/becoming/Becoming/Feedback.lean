@@ -19,7 +19,10 @@ enters only as a hypothesis of three witnesses.
   grows with the relation, and is symmetric under a symmetric relation (`WithinClosure.refl`,
   `WithinClosure.trans`, `WithinClosure.mono`, `WithinClosure.symm`). It is what is reached from
   the formation along the relation, the seed–edge closure of `Becoming.Bridge` from one seed
-  (`withinClosure_iff_closure` there).
+  (`withinClosure_iff_closure` there). A region is a formation's closure exactly when it holds
+  the formation, is closed under the relation and lies within the closure, which a finite
+  computation can certify (`closure_iff_certified`); a closed region holding one formation and
+  not another separates their closures (`not_within_of_closed`).
 * **Five levels.** The feeding closure of `Becoming.Interdependence` is the closure under being
   fed at some step (`Flow.withinFeeding_iff`). A formation is affected by another when the other
   exchanges with a condition it depends on (`Flow.AffectedBy`). The closure under being affected
@@ -203,6 +206,24 @@ end WithinClosure
 theorem closedUnder_withinClosure {rel : F → F → Prop} (f : F) :
     ClosedUnder rel (WithinClosure rel f) :=
   fun _ _ within related => within.trans (WithinClosure.of_rel related)
+
+/-- **A certificate of a closure.** A region is a formation's closure exactly when it holds the
+formation, is closed under the relation and lies within the formation's closure: what the region
+holds is reached, and nothing reached leaves it. -/
+theorem closure_iff_certified {rel : F → F → Prop} {region : F → Prop} {f : F} :
+    (∀ g, region g ↔ WithinClosure rel f g) ↔
+      region f ∧ ClosedUnder rel region ∧ ∀ g, region g → WithinClosure rel f g :=
+  ⟨fun exact => ⟨(exact f).mpr (WithinClosure.refl f),
+      fun g h inside related => (exact h).mpr (((exact g).mp inside).trans (WithinClosure.of_rel related)),
+      fun g inside => (exact g).mp inside⟩,
+   fun ⟨holds, closed, reached⟩ g => ⟨reached g, fun within => within region closed holds⟩⟩
+
+/-- **Certified regions apart are closures apart.** Where a closed region holds `f` but not `g`,
+`g` is not within `f`'s closure. -/
+theorem not_within_of_closed {rel : F → F → Prop} {region : F → Prop} {f g : F}
+    (closed : ClosedUnder rel region) (holds : region f) (outside : ¬ region g) :
+    ¬ WithinClosure rel f g :=
+  fun within => outside (within region closed holds)
 
 /-- `g` depends on `c` at some step. -/
 def Web.DependsOn (W : Web F C) (g : F) (c : C) : Prop :=

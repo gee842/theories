@@ -30,8 +30,7 @@ Boundary source / 边界来源: [GrownFragmentation.lean](../../../../experiment
 
 ## 依赖与关联 Dependencies and related results
 
-No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
-
+- **formal-reuse**: [risk-certificate-outcome-distinction](risk-certificate-outcome-distinction.md). 复用 Becoming.Readout.no_judge_of_merged：组成相同的两个生长图切割回报不同，故亲代摘要的任何函数都不同时给出二者（PreparationCorrespondence.no_parent_summary_predictor_by_core）。 / Reuses Becoming.Readout.no_judge_of_merged: the two grown graphs have the same parent summary and different mean cut returns, so no function of the summary gives both (PreparationCorrespondence.no_parent_summary_predictor_by_core).
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -40,6 +39,11 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [GrownFragmentation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean) | `GrownFragmentation.certificate_exact_split`, `GrownFragmentation.central_cut_pools`, `GrownFragmentation.oldest_cut_reverses_ranking`, `GrownFragmentation.bypass_survives_cut` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/grown-fragmentation-verification/verification.json) | — |
 | integration | [GROWN-FRAGMENTATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) | — |
+| proof | [Feedback.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean) | `Becoming.ClosedUnder`, `Becoming.WithinClosure`, `Becoming.closure_iff_certified`, `Becoming.not_within_of_closed` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json) | — |
+| proof | [PreparationCorrespondence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean) | `Becoming.PreparationCorrespondence.adjacent`, `Becoming.PreparationCorrespondence.connected_of_adjacent`, `Becoming.PreparationCorrespondence.connected_iff_within`, `Becoming.PreparationCorrespondence.component_is_closure`, `Becoming.PreparationCorrespondence.certificate_exact_split_by_core`, `Becoming.PreparationCorrespondence.cut_separates`, `Becoming.PreparationCorrespondence.returns_differ`, `Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261015T161348.626052Z/verification.json) | — |
+| provenance | [check_preparation_correspondence.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_preparation_correspondence.py) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -47,7 +51,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 复用已完成分割；本轮链状接续只覆盖一个结构类，变化的生成规律及真实断裂仍待说明。 / Reuse completed fragmentation; the new chain continuation covers one structural class, leaving changing generative laws and actual fracture to explain.
 
-Aliases / 别名: `GrownFragmentation.certificate_exact_split`
+Aliases / 别名: `GrownFragmentation.certificate_exact_split`, `Becoming.closure_iff_certified`, `Becoming.not_within_of_closed`
 
 ## 沿革 History
 
@@ -55,3 +59,4 @@ Aliases / 别名: `GrownFragmentation.certificate_exact_split`
 - 2026-10-09：审读同一研究新增模板复制段；原证明和结论保持，端点适配及额外复制前提分列。 / 2026-10-09: reviewed the added template-copying section in the same study; original proofs and claims remain, with endpoint correspondence and added copying premises separated.
 - 2026-10-09：重读并接入同一研究的配准形成段；旧数学主张及原回执不变，修正旧比较段中完美复制前提的指称。 / 2026-10-09: reconciles the same study’s registration-formation continuation; prior mathematics and receipts remain unchanged, and the old comparison clarifies that perfect copying was this model’s premise.
 - 2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。 / 2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope.
+- 2026-10-15，整合 I3d（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Feedback 的闭包证书，新增，不加前提）。一个区域恰是一个形成在关系下的闭包，当且仅当它含该形成、对关系封闭且在闭包之内（closure_iff_certified），在有限情形可由有限计算核查；含一形成而不含另一形成的封闭区域分开二者的闭包（not_within_of_closed）。外围实例 PreparationCorrespondence：由键相连即在对称读取的键之下的闭包内（connected_iff_within）；含根且对每条余下之键封闭的分量即该闭包（component_is_closure），故 certificate_exact_split 由核心律给出（certificate_exact_split_by_core），证书确认的切割分开两端（cut_separates）；组成相同的两个生长图切割回报不同（returns_differ），由 Readout.no_judge_of_merged，亲代摘要的任何函数都不同时给出二者（no_parent_summary_predictor_by_core）。生长史、采样与局部生产律保持原范围。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T161348.626052Z），只用标准公理：unit、use_unit 与 adjacent 等不提及外围构造的声明公理报告为空，置换的对应用库的 Classical.choice；所实例化的核心律由核心运行审计（回执 20261015T161154.555289Z，公理报告为空）。 / 15 October 2026, integration I3d (Ren: “a lot proofs are probably not integrated”): stated on the spine (the new closure certificate of Becoming.Feedback, no premise). A region is a formation’s closure under a relation exactly where it holds the formation, is closed under the relation and lies within the closure (closure_iff_certified), which a finite computation can check in the finite case; a closed region holding one formation and not another separates their closures (not_within_of_closed). Periphery instance PreparationCorrespondence: being connected by the bonds is lying within the closure under the bonds read symmetrically (connected_iff_within); a component holding its root and closed on every remaining bond is that closure (component_is_closure), so certificate_exact_split follows from the core law (certificate_exact_split_by_core), and a certified cut leaves its two ends apart (cut_separates); the two grown graphs of matched composition have different mean cut returns (returns_differ), so by Readout.no_judge_of_merged no function of the parent summary gives both (no_parent_summary_predictor_by_core). Growth histories, sampling and the local production law keep their scope. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T161348.626052Z), standard axioms only: unit, use_unit, adjacent and the other declarations that mention no periphery construction have empty axiom reports, and the permutation correspondence uses the library’s Classical.choice; the core laws it instantiates are audited by the core run (receipt 20261015T161154.555289Z, empty axiom reports).

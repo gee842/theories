@@ -13,6 +13,16 @@ when an observable and a law of change can still be read from what it keeps.
   enough (`decodes_iff_of_section`). On two configurations `π` merges, a decoder agreeing with
   `f` at both exists exactly when `f` agrees there (`decoder_pair_iff`); in particular `π` has no
   inverse on two different configurations it merges (`no_restore`).
+* **Judging a listed family.** A judge reading only the reduced value gives an observable at
+  every member of a listed family exactly when the observable goes alike across the members the
+  reduction merges (`judges_iff_lumpedOn`); the judge answers with the first listed member of each
+  reduced value, so no choice is used. So no judge reads through a reduction that merges two
+  members the observable tells apart (`no_judge_of_merged`).
+* **Readings through parts.** Where every reading of a family reads a configuration only through
+  its parts and each part is read directly by some reading, two configurations agree under every
+  reading exactly where they agree at every part (`agree_iff_parts`). So a replacement whose
+  readings are the readings of a configuration supplied from it agrees with the original under
+  every reading exactly where it supplies every part (`supplied_agree_iff_parts`).
 * **Futures through a reduction.** For a law that need not be determined, the law read through
   a reduction (`image`) takes from each reduced value exactly the words the configuration can
   take, for every configuration, exactly when configurations the reduction merges can take the
@@ -226,5 +236,101 @@ theorem no_common_report_envelopes_iff {roster : List D} {fa fb : List (List D)}
       (no_common_report_iff different).mpr (cross a ma b mb) report first second⟩
 
 end Witnesses
+
+/-! ## Judging a listed family through a reduction -/
+
+section Judges
+
+/-- `f` goes alike across the members of `family` that `π` merges. -/
+def LumpedOn (family : List S) (π : S → K) (f : S → V) : Prop :=
+  ∀ s s', s ∈ family → s' ∈ family → π s = π s' → f s = f s'
+
+/-- `judge`, reading only the reduced value, gives `f` at every member of `family`. -/
+def Judges (family : List S) (π : S → K) (f : S → V) (judge : K → V) : Prop :=
+  ∀ s, s ∈ family → judge (π s) = f s
+
+/-- A judge exists only where `f` goes alike across the members `π` merges. -/
+theorem lumpedOn_of_judges {family : List S} {π : S → K} {f : S → V} {judge : K → V}
+    (judges : Judges family π f judge) : LumpedOn family π f :=
+  fun s s' mem mem' same => (judges s mem).symm.trans ((congrArg judge same).trans (judges s' mem'))
+
+/-- A member of a listed family is its first member or a member of the rest. -/
+theorem member_cons_cases {x s : S} {rest : List S} : s ∈ x :: rest → s = x ∨ s ∈ rest
+  | .head _ => .inl rfl
+  | .tail _ later => .inr later
+
+variable [DecidableEq K]
+
+/-- The judge answering with `f` at the first listed member of the reduced value, and `d` where
+none is listed. -/
+def firstJudge (π : S → K) (f : S → V) (d : V) : List S → K → V
+  | [], _ => d
+  | x :: rest, k => if π x = k then f x else firstJudge π f d rest k
+
+theorem firstJudge_judges (π : S → K) (f : S → V) (d : V) :
+    ∀ family : List S, LumpedOn family π f → Judges family π f (firstJudge π f d family)
+  | [], _ => fun _ mem => nomatch mem
+  | x :: rest, lumped => fun s mem =>
+    match decEq (π x) (π s) with
+    | .isTrue same => (if_pos same).trans (lumped x s (.head rest) mem same)
+    | .isFalse differ => (if_neg differ).trans (match member_cons_cases mem with
+      | .inl at_x => absurd (congrArg π at_x).symm differ
+      | .inr later => firstJudge_judges π f d rest
+          (fun a b ma mb => lumped a b (.tail x ma) (.tail x mb)) s later)
+
+/-- **A judge of a listed family through a reduction exists exactly where the observable goes
+alike across the members the reduction merges.** No choice is used: the judge answers with the
+first listed member of each reduced value (`firstJudge`); `d` answers where none is listed. -/
+theorem judges_iff_lumpedOn (family : List S) (π : S → K) (f : S → V) (d : V) :
+    (∃ judge, Judges family π f judge) ↔ LumpedOn family π f :=
+  ⟨fun ⟨_, judges⟩ => lumpedOn_of_judges judges,
+   fun lumped => ⟨firstJudge π f d family, firstJudge_judges π f d family lumped⟩⟩
+
+end Judges
+
+/-- **No judge of a family reads through a reduction that merges two of its members the
+observable tells apart.** -/
+theorem no_judge_of_merged {family : List S} {π : S → K} {f : S → V} {s s' : S}
+    (mem : s ∈ family) (mem' : s' ∈ family) (merged : π s = π s') (apart : f s ≠ f s') :
+    ¬ ∃ judge, Judges family π f judge :=
+  fun ⟨_, judges⟩ => apart (lumpedOn_of_judges judges s s' mem mem' merged)
+
+/-! ## Readings through parts -/
+
+section Parts
+
+universe y z
+
+variable {P : Type v} {G : P → Type w} {C : Type x} {W : C → Type y}
+
+/-- Every reading of a family reads a configuration only through its parts: configurations that
+agree at every part are read alike. -/
+def ThroughParts (part : S → (p : P) → G p) (read : (c : C) → S → W c) : Prop :=
+  ∀ c s s', (∀ p, part s p = part s' p) → read c s = read c s'
+
+/-- `use p` reads part `p` directly: configurations it reads alike agree at that part. -/
+def ReadsDirectly (part : S → (p : P) → G p) (read : (c : C) → S → W c) (use : P → C) : Prop :=
+  ∀ p s s', read (use p) s = read (use p) s' → part s p = part s' p
+
+/-- **Agreement under every reading is agreement at every part**, where every reading reads only
+through the parts and each part is read directly by some reading. -/
+theorem agree_iff_parts {part : S → (p : P) → G p} {read : (c : C) → S → W c} {use : P → C}
+    (through : ThroughParts part read) (direct : ReadsDirectly part read use) {s s' : S} :
+    (∀ c, read c s = read c s') ↔ ∀ p, part s p = part s' p :=
+  ⟨fun all p => direct p s s' (all (use p)), fun parts c => through c s s' parts⟩
+
+/-- **A replacement agrees with the original under every reading exactly where it supplies every
+part**: where each reading of the replacement at `t` is the reading of the configuration supplied
+from `t`, it agrees with the original `s` under every reading exactly where the supplied
+configuration agrees with `s` at every part. -/
+theorem supplied_agree_iff_parts {T : Type z} {part : S → (p : P) → G p}
+    {read : (c : C) → S → W c} {use : P → C} {replaced : (c : C) → T → W c} {supply : T → S}
+    (through : ThroughParts part read) (direct : ReadsDirectly part read use)
+    (supplies : ∀ c t, replaced c t = read c (supply t)) {t : T} {s : S} :
+    (∀ c, replaced c t = read c s) ↔ ∀ p, part (supply t) p = part s p :=
+  ⟨fun all => (agree_iff_parts through direct).mp fun c => (supplies c t).symm.trans (all c),
+   fun parts c => (supplies c t).trans ((agree_iff_parts through direct).mpr parts c)⟩
+
+end Parts
 
 end Becoming.Readout

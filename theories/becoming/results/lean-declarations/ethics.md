@@ -1192,6 +1192,41 @@ Imports: `GenerativeCore`
 
 </details>
 
+<a id="module-eec9d88a220d"></a>
+
+<details>
+<summary>PreparationCorrespondence.lean — 16 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean`
+
+Imports: `Becoming.Copying`, `Becoming.Feedback`, `Becoming.Readout`, `GrownFragmentation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.PreparationCorrespondence.use_unit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L42) | 42 |
+| [Becoming.PreparationCorrespondence.countOf_eq_count](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L48) | 48 |
+| [Becoming.PreparationCorrespondence.mem_iff_countOf_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L56) | 56 |
+| [Becoming.PreparationCorrespondence.erase_eq_remove](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L59) | 59 |
+| [Becoming.PreparationCorrespondence.route_some_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L69) | 69 |
+| [Becoming.PreparationCorrespondence.preparation_empties_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L99) | 99 |
+| [Becoming.PreparationCorrespondence.preparation_leaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L118) | 118 |
+| [Becoming.PreparationCorrespondence.connected_of_adjacent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L138) | 138 |
+| [Becoming.PreparationCorrespondence.connected_iff_within](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L143) | 143 |
+| [Becoming.PreparationCorrespondence.component_is_closure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L158) | 158 |
+| [Becoming.PreparationCorrespondence.certificate_exact_split_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L166) | 166 |
+| [Becoming.PreparationCorrespondence.cut_separates](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L182) | 182 |
+| [Becoming.PreparationCorrespondence.returns_differ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L195) | 195 |
+| [Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L200) | 200 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.PreparationCorrespondence.unit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L40) (L40)
+- `def` [Becoming.PreparationCorrespondence.adjacent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L136) (L136)
+
+</details>
+
 <a id="module-900bc4daaa41"></a>
 
 <details>
@@ -6275,6 +6310,38 @@ Imports: `PracticalJudgment`
 - `def` [RelationalOrganization.usesRight](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean#L74) (L74)
 - `def` [RelationalOrganization.constructionReport](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean#L160) (L160)
 - `def` [RelationalOrganization.repairedBasisJudgment](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean#L181) (L181)
+
+</details>
+
+<a id="module-c2db8f7aa255"></a>
+
+<details>
+<summary>RenewingCorrespondence.lean — 13 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean`
+
+Imports: `Becoming.Stock`, `RenewingFormation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.RenewingCorrespondence.remaining_falls](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L41) | 41 |
+| [Becoming.RenewingCorrespondence.forms_while_held](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L51) | 51 |
+| [Becoming.RenewingCorrespondence.moves_length](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L63) | 63 |
+| [Becoming.RenewingCorrespondence.moves_succ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L67) | 67 |
+| [Becoming.RenewingCorrespondence.total_append](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L71) | 71 |
+| [Becoming.RenewingCorrespondence.total_moves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L78) | 78 |
+| [Becoming.RenewingCorrespondence.path_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L86) | 86 |
+| [Becoming.RenewingCorrespondence.beyond_current_bounded_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L97) | 97 |
+| [Becoming.RenewingCorrespondence.beyond_current_ceases_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L106) | 106 |
+| [Becoming.RenewingCorrespondence.shared_formation_ends_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L118) | 118 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.RenewingCorrespondence.beyond](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L34) (L34)
+- `def` [Becoming.RenewingCorrespondence.formedOf](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L38) (L38)
+- `def` [Becoming.RenewingCorrespondence.moves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean#L60) (L60)
 
 </details>
 

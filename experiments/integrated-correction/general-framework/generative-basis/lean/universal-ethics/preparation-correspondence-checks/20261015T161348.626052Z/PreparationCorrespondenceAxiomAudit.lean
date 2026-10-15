@@ -1,0 +1,17 @@
+import PreparationCorrespondence
+#print axioms Becoming.PreparationCorrespondence.unit
+#print axioms Becoming.PreparationCorrespondence.use_unit
+#print axioms Becoming.PreparationCorrespondence.countOf_eq_count
+#print axioms Becoming.PreparationCorrespondence.mem_iff_countOf_pos
+#print axioms Becoming.PreparationCorrespondence.erase_eq_remove
+#print axioms Becoming.PreparationCorrespondence.route_some_iff
+#print axioms Becoming.PreparationCorrespondence.preparation_empties_iff
+#print axioms Becoming.PreparationCorrespondence.preparation_leaves
+#print axioms Becoming.PreparationCorrespondence.adjacent
+#print axioms Becoming.PreparationCorrespondence.connected_of_adjacent
+#print axioms Becoming.PreparationCorrespondence.connected_iff_within
+#print axioms Becoming.PreparationCorrespondence.component_is_closure
+#print axioms Becoming.PreparationCorrespondence.certificate_exact_split_by_core
+#print axioms Becoming.PreparationCorrespondence.cut_separates
+#print axioms Becoming.PreparationCorrespondence.returns_differ
+#print axioms Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core

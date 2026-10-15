@@ -319,7 +319,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "bb1f1f5c5475ff1392877fbdb9e3ba4e6543e02278ab095ffa2cc940ea684795",
+      "sha256": "a6e81fe80646c5c153db0f4205dccd901e68ff27cbc47d2d09b542c68efdcf53",
       "declarations": [
         "Becoming.compared_retains",
         "Becoming.compared_secondary",
@@ -405,6 +405,10 @@
     {
       "zh": "2026-10-14，整合 I3b（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述，排中律为具名假设，并表明它恰是所需。前向（各分类下严格偏好推出保留新内容、以新内容为次级时更好）不需任何原则（compared_retains、compared_secondary）。反向在外围以经典推理证明；桥接以 em : ∀ p : Prop, Decided p 证明之（classification_robust_iff_of_em、two_extremes_suffice_of_em）。排中律不能去掉：对一切类型成立此反向，恰当每一命题已定（classification_robust_iff_iff_em）；见证取一个新内容，其在 b 处的保留是任意命题 R，使其为基本的分类下的严格偏好即 R 或其否定。比较仍是 PracticalJudgment 的 Better，即核心的 BetterAt。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 ClassificationRobustJudgment，脊柱运行将其（及 RelationalOrganization、ConcernExtension）作为继承模块编译。",
       "en": "14 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): stated on the spine, with excluded middle a named hypothesis shown to be exactly what is needed. The forward direction, from strict preference under every classification to retaining the fresh contents and being better with them secondary, needs no principle (compared_retains, compared_secondary). The periphery proves the converse classically; the bridge proves it with em : ∀ p : Prop, Decided p (classification_robust_iff_of_em, two_extremes_suffice_of_em). Excluded middle cannot be dropped: the converse holds for all types exactly where every proposition is decided (classification_robust_iff_iff_em); the witness takes one fresh content whose retention at b is an arbitrary proposition R, and strict preference under the classification making it basic is R or its failure. The comparison is still PracticalJudgment’s Better, the core’s BetterAt. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports ClassificationRobustJudgment, which the spine run compiles, with RelationalOrganization and ConcernExtension, as inherited modules."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
     }
   ]
 }

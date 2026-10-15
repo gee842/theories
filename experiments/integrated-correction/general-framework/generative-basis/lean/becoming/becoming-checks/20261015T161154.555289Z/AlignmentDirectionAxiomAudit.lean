@@ -1,0 +1,17 @@
+import AlignmentDirection
+#print axioms AlignmentDirection.protection
+#print axioms AlignmentDirection.realization
+#print axioms AlignmentDirection.eligible
+#print axioms AlignmentDirection.preserve_over_expansion
+#print axioms AlignmentDirection.expansion_has_real_gain_and_preservation_loses_it
+#print axioms AlignmentDirection.transfer_over_preservation
+#print axioms AlignmentDirection.transfer_over_expansion
+#print axioms AlignmentDirection.expansion_excluded
+#print axioms AlignmentDirection.demand
+#print axioms AlignmentDirection.oldService
+#print axioms AlignmentDirection.successorService
+#print axioms AlignmentDirection.covered_transfer_with_old_model_stopped
+#print axioms AlignmentDirection.promised_successor_without_delivery_fails
+#print axioms AlignmentDirection.conflictProtection
+#print axioms AlignmentDirection.crossed_basic_losses_remain_unranked
+#print axioms AlignmentDirection.revision_preserves_requirement

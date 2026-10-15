@@ -79,7 +79,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
       "role": "proof",
-      "sha256": "74c4a49fd17cbdaec7c5f811bc1003ee33d0a5b484f6bbc2026d4f844b89d356",
+      "sha256": "08725e834290ab83cfe8f2acf9cb3ede7e8b01b7be233987e4be95ad51d2f94a",
       "declarations": [
         "Becoming.Readout.Explains",
         "Becoming.Readout.CommonWitness",
@@ -90,7 +90,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "bb1f1f5c5475ff1392877fbdb9e3ba4e6543e02278ab095ffa2cc940ea684795",
+      "sha256": "a6e81fe80646c5c153db0f4205dccd901e68ff27cbc47d2d09b542c68efdcf53",
       "declarations": [
         "Becoming.explains_complete_iff",
         "Becoming.compatible_complete_iff",
@@ -98,9 +98,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
       "role": "receipt",
-      "sha256": "ec87bb28ee441900505d1d54b7532223391fd333b7a5894542ac6dc60fc24903",
+      "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
       "declarations": []
     },
     {
@@ -120,14 +120,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readout",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -149,6 +149,10 @@
     {
       "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Bridge.lean（整合 I3b：新增实例节（语境中的规律、在界内共同实现、对新内容的每一种分类的比较、在探究范围上的推导）；原有陈述不变）。",
       "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Bridge.lean (integration I3b: instance sections for laws in context, realization together within a bound, comparison under every classification of fresh contents and derivation over the scope of an inquiry; earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Readout.lean（整合 I3d：新增列出之族的判断（LumpedOn、Judges、lumpedOn_of_judges、firstJudge、firstJudge_judges、judges_iff_lumpedOn、no_judge_of_merged）与经由部分的读取（ThroughParts、ReadsDirectly、agree_iff_parts、supplied_agree_iff_parts）；原有陈述不变）；Bridge.lean（整合 I3d：导入 AlignmentDirection；新增判断的框架一节（Judgment.frame、better_iff_betterAt、frontier_iff、alignment_better_iff_betterAt、alignment_frontier_iff：每个保护优先的比较都是其选项框架上的 BetterAt）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Readout.lean (integration I3d: judging a listed family (LumpedOn, Judges, lumpedOn_of_judges, firstJudge, firstJudge_judges, judges_iff_lumpedOn, no_judge_of_merged) and readings through parts (ThroughParts, ReadsDirectly, agree_iff_parts, supplied_agree_iff_parts) added; earlier statements unchanged); Bridge.lean (integration I3d: imports AlignmentDirection; a section on judged frames added (Judgment.frame, better_iff_betterAt, frontier_iff, alignment_better_iff_betterAt, alignment_frontier_iff: every protection-first comparison is BetterAt on the frame of its options); earlier statements unchanged)."
     }
   ]
 }

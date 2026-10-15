@@ -281,7 +281,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
       "role": "proof",
-      "sha256": "362e277a256000c731ad6c3bd98eceda80ca9ff7ce8f67b97abc378ee151d479",
+      "sha256": "5a2ba29f2a623d8040aca86e29c88d8dfde639686ed13cb02f26035df7159e80",
       "declarations": [
         "Becoming.Copying.lineage_all_iff",
         "Becoming.Copying.batch"
@@ -290,7 +290,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
       "role": "proof",
-      "sha256": "d1ac93985f6c1101548936c86ad153829718a4a945c31a434114a6352033434f",
+      "sha256": "d9abec4ff1f686aa4d6e0c04d32d6fafb99cd03e794c12426b6556c0b2725905",
       "declarations": [
         "Becoming.Stock.Balanced",
         "Becoming.Stock.trace_balance"
@@ -344,6 +344,12 @@
       "role": "provenance",
       "sha256": "a1a6156d7824bd93da595d43475b59f34bfe39505cd88e41c4b654d377a83eab",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "role": "receipt",
+      "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -356,14 +362,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Copying",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Stock",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -403,6 +409,10 @@
     {
       "zh": "2026-10-15，整合 I3c（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Copying、Becoming.Stock 与 Becoming.Evolution 的一般律）。外围实例模块 TransmissionCorrespondence：容量即一个共享池所释放的最长谱系（lineage_released_iff、reconstruction_builds_longest_lineage，Copying.lineage_all_iff 的实例）；接触与重构是同一进程的两种步，每步之后材料与支持如前，故任意路径都保存二者（course_conserves，Stock.trace_balance 的实例）；忠实重构不升不降，后继中控制位的总数即各家族之位以其容量加权（faithful_selects，Becoming.price），历史中三个后继有两个带响应的更新方式而两个亲代中只有一个（history_selects）。Price 的形式是恒等式，不是适应度的度量；后继数由各家族实际任务成功所留的支持定出。构造的理想化前提保持不变。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T151904.501987Z）：不提及构造之状态的六条声明（kitWord、attach、countOf_replicate、use_kitWord、Move、total_replicate）公理报告为空，其余只有 Mathlib 的标准公理（propext、Classical.choice、Quot.sound）；所实例化的核心律由核心运行审计（回执 20261015T150956.178111Z）。",
       "en": "15 October 2026, integration I3c (Ren: “a lot proofs are probably not integrated”): stated on the spine (the general laws of Becoming.Copying, Becoming.Stock and Becoming.Evolution). Periphery instance module TransmissionCorrespondence: the capacity is the longest lineage one shared pool releases (lineage_released_iff, reconstruction_builds_longest_lineage, instances of Copying.lineage_all_iff); exposures and reconstructions are two kinds of step of one process across which material and support stand as before, so every course conserves both (course_conserves, an instance of Stock.trace_balance); faithful reconstruction raises and lowers nothing, so the successors’ total of the procedure bit is the families’ bits weighted by their capacities (faithful_selects, Becoming.price), and in the history two of three successors carry the responsive procedure where one of two parents did (history_selects). Price’s form is an identity, not a measure of fitness; the counts are set by the support each family’s actual task success left. The construction’s idealized premises are unchanged. The periphery instance module is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T151904.501987Z): the six declarations that mention no state of the construction (kitWord, attach, countOf_replicate, use_kitWord, Move, total_replicate) have empty axiom reports, the rest Mathlib’s standard axioms only (propext, Classical.choice, Quot.sound); the core laws it instantiates are audited by the core run (receipt 20261015T150956.178111Z)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Copying.lean（整合 I3d：新增池用尽之律（countOf_removeAll、nil_iff_countOf_zero、empties_iff）；头注增一句；原有陈述不变）；Stock.lean（整合 I3d：新增所汲取而不补充的水平（FallsBy、trace_falls、falls_iff、trace_exhausts、zero_of_add_le、exhausted_within、draws_nothing_from_empty）；原有陈述不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Copying.lean (integration I3d: the law for emptying the pool added (countOf_removeAll, nil_iff_countOf_zero, empties_iff); the docstring gains a sentence; earlier statements unchanged); Stock.lean (integration I3d: a level drawn on and not replenished added (FallsBy, trace_falls, falls_iff, trace_exhausts, zero_of_add_le, exhausted_within, draws_nothing_from_empty); earlier statements unchanged)."
     }
   ],
   "text_versions": [

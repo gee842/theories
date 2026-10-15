@@ -1,0 +1,15 @@
+import PreparationCorrespondence
+#check @Becoming.PreparationCorrespondence.use_unit
+#check @Becoming.PreparationCorrespondence.countOf_eq_count
+#check @Becoming.PreparationCorrespondence.mem_iff_countOf_pos
+#check @Becoming.PreparationCorrespondence.erase_eq_remove
+#check @Becoming.PreparationCorrespondence.route_some_iff
+#check @Becoming.PreparationCorrespondence.preparation_empties_iff
+#check @Becoming.PreparationCorrespondence.preparation_leaves
+#check @Becoming.PreparationCorrespondence.connected_of_adjacent
+#check @Becoming.PreparationCorrespondence.connected_iff_within
+#check @Becoming.PreparationCorrespondence.component_is_closure
+#check @Becoming.PreparationCorrespondence.certificate_exact_split_by_core
+#check @Becoming.PreparationCorrespondence.cut_separates
+#check @Becoming.PreparationCorrespondence.returns_differ
+#check @Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core
