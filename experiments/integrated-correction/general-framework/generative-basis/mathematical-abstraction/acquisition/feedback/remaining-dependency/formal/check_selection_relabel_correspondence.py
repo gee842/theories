@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Check the peripheral instance of the Becoming core's laws of selection by the record alone in PluralRecords and
-TieBreaking.
+"""Check the peripheral instance of the Becoming core's laws of selection through a model of the options in
+PluralRecords and TieBreaking.
 
 `SelectionRelabelCorrespondence` imports `Becoming.Selection` and `TieBreaking`, which imports `PluralRecords`;
 the two originals import only Lean's prelude and have no machine receipt (their build record is
@@ -54,11 +54,11 @@ ALLOWED_WARNINGS = {"TieBreaking": "TieBreaking.lean:63:46: warning: unused vari
 TIMEOUT = int(os.environ.get("LEAN_TIMEOUT", "900"))
 
 SCOPE = (
-    "On the Becoming core's laws of selection by the record alone (Becoming.Selection, Relabel): "
-    "PluralRecords' records are the core's records of entries over the options Fin n, exchanging two "
-    "centers is Relabel.swap, a rule treating the centers alike is a choice reading the record alone, "
-    "a lottery treating them alike has weights reading the record alone, and holding an entry alone "
-    "is Relabel.Alone. The core's laws give tied_not_served, all_tied_forces_withholding, "
+    "On the Becoming core's laws of selection through a model of the options (Becoming.Selection, "
+    "Relabel): PluralRecords' records are the core's models of the options Fin n, exchanging two "
+    "centers is Relabel.swap, a rule treating the centers alike is a choice through the model, a "
+    "lottery treating them alike has weights through the model, and holding an entry alone is "
+    "Relabel.Alone. The core's laws give tied_not_served, all_tied_forces_withholding, "
     "servable_iff_untied (with PluralRecords.pick finding the center holding the entry alone), "
     "tied_equal_weight, full_tie_equal_weights, uniform_alike and point_mass_not_alike_at_tie, each "
     "with an empty axiom report. Whether an equal chance legitimately breaks a tie, and priority by "

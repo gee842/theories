@@ -2,14 +2,14 @@ import Becoming.Selection
 import TieBreaking
 
 /-!
-# Plural records and equal chances as instances of selection by the record alone
+# Plural records and equal chances as instances of selection through a model of the options
 
 `PluralRecords` asks which center a rule may serve when it treats the centers alike, and
-`TieBreaking` which weights a lottery may give them. A record is the core's record of entries over
-the options `Fin n`, and there:
+`TieBreaking` which weights a lottery may give them. A record (`Record n`) is the core's model of
+the options `Fin n`, an entry for each, and there:
 * exchanging two centers is the core's `Relabel.swap` (`transpose_eq_swap`); a rule treats the
-  centers alike exactly when it is a choice reading the record alone (`treatsAlike_iff`), a
-  lottery exactly when its weights are a valuation reading the record alone and its withholding
+  centers alike exactly when it is a choice through the model (`treatsAlike_iff`), a lottery
+  exactly when its weights are a valuation through the model and its withholding
   weight does not change (`lotteryAlike_iff`), and holding an entry alone is the core's
   `Relabel.Alone` (`alone_iff`);
 * the core's `Relabel.EquivariantChoice.untied` gives `tied_not_served`
@@ -24,7 +24,7 @@ the options `Fin n`, and there:
   `Relabel.Equivariant.none_of_full_tie` gives `point_mass_not_alike_at_tie` (each `_by_core`).
 
 The core states these for any options with decided equality and entries of any kind, as
-relations: a selection reading the record alone singles out exactly the options the record parts
+relations: a selection through the model singles out exactly the options the model separates
 (`Relabel.singled_iff_untied`), with no search. `PluralRecords`' and `TieBreaking`'s definitions
 and statements are unchanged.
 -/
@@ -35,12 +35,12 @@ open PluralRecords TieBreaking
 
 theorem transpose_eq_swap {n : Nat} (a b k : Fin n) : transpose a b k = Relabel.swap a b k := rfl
 
-/-- A rule treats the centers alike exactly when it is a choice reading the record alone. -/
+/-- A rule treats the centers alike exactly when it is a choice through the model. -/
 theorem treatsAlike_iff {n : Nat} (rule : Rule n) :
     TreatsAlike rule ↔ Relabel.EquivariantChoice rule :=
   Iff.rfl
 
-/-- A lottery treats the centers alike exactly when its weights read the record alone and its
+/-- A lottery treats the centers alike exactly when its weights are through the model and its
 withholding weight does not change. -/
 theorem lotteryAlike_iff {n : Nat} (lot : Lottery n) :
     LotteryAlike lot ↔ Relabel.EquivariantValue (fun r i => (lot r).serve i) ∧
@@ -97,7 +97,7 @@ theorem pointMass_one {n : Nat} {rule : Rule n} {r : Record n} {i : Fin n}
   | isFalse other => absurd ((if_neg other).symm.trans one) (fun zero => one_ne_zero' zero.symm)
 
 /-- **`point_mass_not_alike_at_tie` from the core**: the centers weighted one form a selection
-reading the record alone that selects at most one, so at a full tie it selects none. -/
+through the model that selects at most one, so at a full tie it selects none. -/
 theorem point_mass_not_alike_at_tie_by_core {n : Nat} (rule : Rule n)
     (alike : LotteryAlike (pointMass rule)) (two : 2 ≤ n) (r : Record n)
     (tied : ∀ i j, r i = r j) : rule r = none :=

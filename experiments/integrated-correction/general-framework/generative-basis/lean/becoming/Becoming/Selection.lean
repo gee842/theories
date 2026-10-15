@@ -63,21 +63,26 @@ registration is supplied, never derived.
   least `a` offspring and each other parent at most `b < a`, the share of the parents it holds for
   rises among the offspring (`share_rises_through`): `share_rises` of `Becoming.Capture`, the
   selection supplying which parents are carriers.
-* **By the record alone.** Options are told apart only by what a record holds of each. A
-  selection reads the record alone when exchanging two options' entries exchanges what it
-  selects (`Relabel.Equivariant`). Two options are selected alike by every such selection exactly
-  when the record ties them (`Relabel.selected_alike_iff`), as a selection through registration
-  reaches exactly what registers. One selecting at most one option singles out exactly the
-  options whose entry no other option shares (`Relabel.singled_iff_untied`, the selection
-  `Relabel.Alone`), and at a full tie of two or more options it selects none
-  (`Relabel.Equivariant.none_of_full_tie`). A valuation reading the record alone, such as a
-  weight on each option, gives tied options equal values (`Relabel.EquivariantValue.tied`,
+* **Through a model of the options.** A selector tells options apart only through its model of
+  them: an entry for each option, of any kind; options given one entry are tied, lumped together
+  by the model. A selection is through the model when exchanging two options' entries exchanges
+  what it selects (`Relabel.Equivariant`). Two options are selected alike by every such selection
+  exactly when the model ties them (`Relabel.selected_alike_iff`), as a selection through
+  registration reaches exactly what registers. One selecting at most one option singles out
+  exactly the options whose entry no other option shares (`Relabel.singled_iff_untied`, the
+  selection `Relabel.Alone`), and at a full tie of two or more options it selects none
+  (`Relabel.Equivariant.none_of_full_tie`). A valuation through the model, such as a weight on
+  each option, gives tied options equal values (`Relabel.EquivariantValue.tied`,
   `Relabel.valued_alike_iff`), and a choice of one option chooses no tied option and withholds at
   a full tie (`Relabel.EquivariantChoice.untied`, `Relabel.EquivariantChoice.withholds_of_full_tie`).
   Exchanging two options tells them apart: their equality is decided, a condition each statement
-  names. Reading (the AI's, pending Ren): which option is which is not part of the record's
-  relations; to part what the record ties takes a further recorded relation, such as an order of
-  arrival or an agreement.
+  names. The model is a lumping (`Lumped` of `Becoming.Learning`), and a selection through it is
+  right about what matters only where what matters goes alike across the lumping
+  (`Learning.selects_right_through`, `Learning.selects_not_right_of_parted`). Reading (the AI's
+  reading of Ren's correction of 16 October 2026, which Ren approved the same day): what a model
+  lumps, no selection through it can separate; separating them takes a finer model, and whether
+  that model is right is its fit to what matters, which a longer memory does not supply: memory
+  gives distinctions, not their relevance.
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
 - Any selection decided by what a selector registers (keeping, rewarding, reproducing,
@@ -98,7 +103,7 @@ registration is supplied, never derived.
 
 What is not derived: who selects, what the selector registers, that a selection is through
 registration at all (supplied as `Web.SelectsThrough`), that offspring follow the selection,
-that reaching beyond is chosen, that a selection reads the record alone, and how an option it
+that reaching beyond is chosen, that a selection is through a given model, and how an option it
 singles out is found (a search over listed options). The law for scores in the converse direction takes the
 decidability of registering alike as a hypothesis. No ethical predicate, ranking or axiom occurs.
 -/
@@ -377,15 +382,16 @@ theorem share_rises_through {history : α → Nat → C → Nat} {kids : α → 
 
 end Share
 
-/-! ## Selection by the record alone
+/-! ## Selection through a model of the options
 
-Options are told apart only by what a record holds of each: an entry per option, of any kind. A
-selection among them reads the record alone when exchanging two options' entries exchanges what it
-selects (`Relabel.Equivariant`); a valuation of the options, such as a weight on each, reads the
-record alone when it exchanges their values (`Relabel.EquivariantValue`); a choice of at most one
-option does when it exchanges the choice (`Relabel.EquivariantChoice`). As a selection through
-registration reaches exactly what registers (`Web.selects_alike_iff`), a selection by the record
-alone reaches exactly what the record parts. -/
+A selector tells options apart only through its model of them: an entry per option, of any kind,
+the options given one entry being tied, lumped together by the model (`Lumped` of
+`Becoming.Learning`). A selection among them is through the model when exchanging two options'
+entries exchanges what it selects (`Relabel.Equivariant`); a valuation of the options, such as a
+weight on each, is through the model when it exchanges their values (`Relabel.EquivariantValue`);
+a choice of at most one option is when it exchanges the choice (`Relabel.EquivariantChoice`). As a
+selection through registration reaches exactly what registers (`Web.selects_alike_iff`), a
+selection through a model separates exactly what the model separates. -/
 
 namespace Relabel
 
@@ -424,24 +430,24 @@ theorem swap_swap (a b k : K) : swap a b (swap a b k) = k :=
 theorem swap_inj (a b : K) {x y : K} (same : swap a b x = swap a b y) : x = y :=
   (swap_swap a b x).symm.trans ((congrArg (swap a b) same).trans (swap_swap a b y))
 
-/-- A selection reads the record alone: where `r'` is `r` with the entries of `a` and `b`
+/-- A selection is through the model: where `r'` is `r` with the entries of `a` and `b`
 exchanged, it selects at `r'` what it selects at `r`, exchanged. -/
 def Equivariant (select : (K → V) → K → Prop) : Prop :=
   ∀ r r' a b, (∀ k, r' k = r (swap a b k)) → ∀ i, select r' i ↔ select r (swap a b i)
 
-/-- A valuation of the options reads the record alone: exchanging two options' entries exchanges
+/-- A valuation of the options is through the model: exchanging two options' entries exchanges
 their values. -/
 def EquivariantValue {W : Type w} (value : (K → V) → K → W) : Prop :=
   ∀ r r' a b, (∀ k, r' k = r (swap a b k)) → ∀ i, value r' i = value r (swap a b i)
 
-/-- A choice of at most one option reads the record alone: exchanging two options' entries
+/-- A choice of at most one option is through the model: exchanging two options' entries
 exchanges the choice. -/
 def EquivariantChoice (rule : (K → V) → Option K) : Prop :=
   ∀ r r' a b, (∀ k, r' k = r (swap a b k)) → rule r' = (rule r).map (swap a b)
 
 variable {r : K → V} {j k : K}
 
-/-- Exchanging two tied options leaves the record as it was. -/
+/-- Exchanging two tied options leaves the model as it was. -/
 theorem fixed_of_tied (tie : r j = r k) : ∀ i, r i = r (swap j k i) := fun i =>
   match decEq i j with
   | isTrue at_j =>
@@ -458,8 +464,8 @@ theorem Equivariant.tied {select : (K → V) → K → Prop} (equivariant : Equi
     (tie : r j = r k) : select r j ↔ select r k :=
   (equivariant r r j k (fixed_of_tied tie) j).trans (iff_of_eq (congrArg (select r) (swap_left j k)))
 
-/-- **A selection by the record alone reaches exactly what the record parts.** Two options are
-selected alike by every selection reading the record alone exactly when the record ties them. -/
+/-- **A selection through a model separates exactly what the model separates.** Two options are
+selected alike by every selection through the model exactly when the model ties them. -/
 theorem selected_alike_iff :
     (∀ select : (K → V) → K → Prop, Equivariant select → (select r j ↔ select r k)) ↔ r j = r k :=
   ⟨fun all => ((all (fun r' i => r' i = r j) (fun _ _ _ _ relabel i =>
@@ -467,15 +473,15 @@ theorem selected_alike_iff :
       rfl).symm,
    fun tie _ equivariant => equivariant.tied tie⟩
 
-/-- **What is singled out is untied.** A selection reading the record alone that selects at most
-one option at `r` selects none that another option's entry ties. -/
+/-- **What is singled out is untied.** A selection through the model that selects at most one
+option at `r` selects none that another option's entry ties. -/
 theorem Equivariant.untied {select : (K → V) → K → Prop} (equivariant : Equivariant select)
     (single : ∀ i i', select r i → select r i' → i = i') (selected : select r k) :
     ∀ j, j ≠ k → r j ≠ r k :=
   fun j differ tie => differ (single j k ((equivariant.tied tie).mpr selected) selected)
 
-/-- At a full tie of two or more options, a selection reading the record alone that selects at
-most one option selects none. -/
+/-- At a full tie of two or more options, a selection through the model that selects at most one
+option selects none. -/
 theorem Equivariant.none_of_full_tie {select : (K → V) → K → Prop}
     (equivariant : Equivariant select) (single : ∀ i i', select r i → select r i' → i = i')
     {a b : K} (two : a ≠ b) (tied : ∀ i i', r i = r i') : ∀ k, ¬ select r k :=
@@ -484,10 +490,10 @@ theorem Equivariant.none_of_full_tie {select : (K → V) → K → Prop}
       same.symm)) (tied b k)
   | isFalse not_a => equivariant.untied single selected a (fun same => not_a same.symm) (tied a k)
 
-/-- The option holding `v` alone in the record. -/
+/-- The option holding `v` alone in the model. -/
 def Alone (v : V) (r : K → V) (i : K) : Prop := r i = v ∧ ∀ j, j ≠ i → r j ≠ v
 
-/-- Holding an entry alone is read off the record alone. -/
+/-- Holding an entry alone is read through the model. -/
 theorem alone_equivariant (v : V) : Equivariant (Alone (K := K) v) :=
   fun r _ a b relabel i =>
     ⟨fun ⟨holds, only⟩ => ⟨(relabel i).symm.trans holds, fun j differ same =>
@@ -503,8 +509,8 @@ theorem alone_single {v : V} {i i' : K} (first : Alone v r i) (second : Alone v 
   | isTrue same => same
   | isFalse differ => absurd first.1 (second.2 i differ)
 
-/-- **An option is singled out exactly where the record parts it.** Some selection reading the
-record alone, selecting at most one option at each record, selects `k` at `r` exactly when no
+/-- **An option is singled out exactly where the model separates it.** Some selection through the
+model, selecting at most one option at each model, selects `k` at `r` exactly when no
 other option's entry ties `k`'s. -/
 theorem singled_iff_untied :
     (∃ select : (K → V) → K → Prop, Equivariant select ∧
@@ -530,24 +536,24 @@ theorem EquivariantValue.full_tie (equivariant : EquivariantValue value)
     (tied : ∀ i i', r i = r i') (i i' : K) : value r i = value r i' :=
   equivariant.tied (tied i i')
 
-/-- The options taking a given value form a selection reading the record alone. -/
+/-- The options taking a given value form a selection through the model. -/
 theorem EquivariantValue.level (equivariant : EquivariantValue value) (c : W) :
     Equivariant (fun r i => value r i = c) :=
   fun r r' a b relabel i => ⟨fun holds => (equivariant r r' a b relabel i).symm.trans holds,
     fun holds => (equivariant r r' a b relabel i).trans holds⟩
 
-/-- A constant valuation, the same weight on every option, reads the record alone. -/
+/-- A constant valuation, the same weight on every option, is through the model. -/
 theorem EquivariantValue.const (c : W) : EquivariantValue (fun (_ : K → V) (_ : K) => c) :=
   fun _ _ _ _ _ _ => rfl
 
 end Values
 
-/-- The entry itself is a valuation reading the record alone. -/
+/-- The entry itself is a valuation through the model. -/
 theorem entry_equivariant : EquivariantValue (fun (r : K → V) (i : K) => r i) :=
   fun _ _ _ _ relabel i => relabel i
 
-/-- Two options are valued alike by every valuation reading the record alone exactly when the
-record ties them. -/
+/-- Two options are valued alike by every valuation through the model exactly when the model
+ties them. -/
 theorem valued_alike_iff :
     (∀ value : (K → V) → K → V, EquivariantValue value → value r j = value r k) ↔ r j = r k :=
   ⟨fun all => all _ entry_equivariant, fun tie _ equivariant => equivariant.tied tie⟩
@@ -565,7 +571,7 @@ theorem map_swap_eq_some (a b : K) {i : K} :
         (congrArg (swap a b) (Option.some.inj e))),
       fun e => congrArg some ((congrArg (swap a b) (Option.some.inj e)).trans (swap_swap a b i))⟩
 
-/-- A choice reading the record alone selects, reading the record alone, the option it chooses. -/
+/-- A choice through the model selects, through the model, the option it chooses. -/
 theorem EquivariantChoice.selects (equivariant : EquivariantChoice rule) :
     Equivariant (fun r i => rule r = some i) :=
   fun r r' a b relabel _ =>
@@ -578,12 +584,12 @@ theorem EquivariantChoice.single (r : K → V) {i i' : K} (first : rule r = some
     (second : rule r = some i') : i = i' :=
   Option.some.inj (first.symm.trans second)
 
-/-- **A choice reading the record alone chooses no tied option.** -/
+/-- **A choice through the model chooses no tied option.** -/
 theorem EquivariantChoice.untied (equivariant : EquivariantChoice rule) (chosen : rule r = some k) :
     ∀ j, j ≠ k → r j ≠ r k :=
   equivariant.selects.untied (fun _ _ => EquivariantChoice.single r) chosen
 
-/-- **At a full tie of two or more options a choice reading the record alone withholds.** -/
+/-- **At a full tie of two or more options a choice through the model withholds.** -/
 theorem EquivariantChoice.withholds_of_full_tie (equivariant : EquivariantChoice rule) {a b : K}
     (two : a ≠ b) (tied : ∀ i i', r i = r i') : rule r = none :=
   match chosen : rule r with

@@ -182,7 +182,7 @@ CONSTRUCTIONS = {
     # deciding steps and telling registered values apart; a course's multiplicity in a list compares courses
     **{n: 'reach' for n in ['Parting.candidates', 'Parting.live', 'Parting.firstLive', 'Parting.worldLearner']},
     'Situations.occ': 'same',
-    # integration I4b (2026-10-16): a selection by the record alone exchanges two options' entries
+    # integration I4b (2026-10-16): a selection through a model of the options exchanges two options' entries
     **{n: 'swap' for n in ['Relabel.swap', 'Relabel.Equivariant', 'Relabel.EquivariantValue',
                            'Relabel.EquivariantChoice']},
 }
