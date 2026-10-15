@@ -1052,6 +1052,35 @@ Imports: `Std`
 
 </details>
 
+<a id="module-48f866de95b4"></a>
+
+<details>
+<summary>FiniteBranchingCorrespondence.lean — 10 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean`
+
+Imports: `Becoming.Lasting`, `FiniteBranching`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.FiniteBranchingCorrespondence.reach_iff_continues](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L39) | 39 |
+| [Becoming.FiniteBranchingCorrespondence.unbounded_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L46) | 46 |
+| [Becoming.FiniteBranchingCorrespondence.finitelyBranching](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L52) | 52 |
+| [Becoming.FiniteBranchingCorrespondence.either_classical](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L58) | 58 |
+| [Becoming.FiniteBranchingCorrespondence.finite_unbounded_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L63) | 63 |
+| [Becoming.FiniteBranchingCorrespondence.unbounded_child_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L70) | 70 |
+| [Becoming.FiniteBranchingCorrespondence.infinite_from_unbounded_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L79) | 79 |
+| [Becoming.FiniteBranchingCorrespondence.finite_initial_lifting_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L90) | 90 |
+| [Becoming.FiniteBranchingCorrespondence.labelled_lifting_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L103) | 103 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.FiniteBranchingCorrespondence.process](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean#L36) (L36)
+
+</details>
+
 <a id="module-81928aacbe61"></a>
 
 <details>

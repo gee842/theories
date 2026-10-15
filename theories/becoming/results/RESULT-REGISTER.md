@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-214 migrated records: 210 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+215 migrated records: 211 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -127,6 +127,7 @@
 | `least-footprint-where-idleness-decided` | [闲置可判定处的最小足迹与最少次序 / The least footprint and least order where idleness is decided](records/least-footprint-where-idleness-decided.md) | theorem | recorded-checked |
 | `levels-of-closure` | [闭包的五个层次 / Five levels of closure](records/levels-of-closure.md) | theorem | recorded-checked |
 | `life-as-condition-of-life` | [生作为生的条件 / Life as a condition of life](records/life-as-condition-of-life.md) | theorem | recorded-checked |
+| `lifting-where-branching-is-finite` | [有限分支处的提升 / Lifting where branching is finite](records/lifting-where-branching-is-finite.md) | theorem | recorded-checked |
 | `listing-once-is-decided-identity` | [列出一次就是已定的同一 / Listing once is decided identity](records/listing-once-is-decided-identity.md) | theorem | recorded-checked |
 | `living-on-and-descent` | [以之为生与世系 / Living on and descent](records/living-on-and-descent.md) | theorem | recorded-checked |
 | `loss-beyond-a-region` | [区域之外的损失 / Loss beyond a region](records/loss-beyond-a-region.md) | theorem | recorded-checked |

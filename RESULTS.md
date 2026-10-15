@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-214 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+215 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -123,6 +123,7 @@
 | [闲置可判定处的最小足迹与最少次序 / The least footprint and least order where idleness is decided](theories/becoming/results/records/least-footprint-where-idleness-decided.md) | recorded-checked | [OrderNormal.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean) |
 | [闭包的五个层次 / Five levels of closure](theories/becoming/results/records/levels-of-closure.md) | recorded-checked | [Feedback.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean) |
 | [生作为生的条件 / Life as a condition of life](theories/becoming/results/records/life-as-condition-of-life.md) | recorded-checked | [Roles.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean) |
+| [有限分支处的提升 / Lifting where branching is finite](theories/becoming/results/records/lifting-where-branching-is-finite.md) | recorded-checked | [Lasting.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean) |
 | [列出一次就是已定的同一 / Listing once is decided identity](theories/becoming/results/records/listing-once-is-decided-identity.md) | recorded-checked | [Listing.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean) |
 | [以之为生与世系 / Living on and descent](theories/becoming/results/records/living-on-and-descent.md) | recorded-checked | [Descent.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean) |
 | [区域之外的损失 / Loss beyond a region](theories/becoming/results/records/loss-beyond-a-region.md) | recorded-checked | [Regions.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean) |

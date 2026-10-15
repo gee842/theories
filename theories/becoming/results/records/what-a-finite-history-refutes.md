@@ -73,6 +73,7 @@ Aliases / 别名: `Becoming.Refutable`, `Becoming.Adheres`, `Becoming.refutable_
 ### History / 沿革
 
 - 2026-10-16：新增，整合 I4b 第三项（Ren 选择“Closest gaps first”）；研究 §145。 / 16 October 2026: added, integration I4b item 3 (Ren chose “Closest gaps first”); study section 145.
+- 2026年10月16日，I4b 第四项落地（研究第146节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第四项：§9 的 Becoming.Lasting 一行（69 → 89 项定理）与外围实例 FiniteBranchingCorrespondence 一行，外围实例的列举加入它；总数改据新回执）。 / 16 October 2026, landing I4b item 4 (study section 146): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 4: the §9 row of Becoming.Lasting (69 → 89 theorems) and a peripheral-instance row for FiniteBranchingCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt).
 
 </details>
 

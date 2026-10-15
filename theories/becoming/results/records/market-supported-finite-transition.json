@@ -86,6 +86,13 @@
         "zh": "已完成的有限支持阻碍，保留本记录较窄结论。",
         "en": "Completed finite-support obstruction preserving this record’s narrower result."
       }
+    },
+    {
+      "id": "lifting-where-branching-is-finite",
+      "detail": {
+        "zh": "kernel_iff_lasts 的对偶：无进程离开者恰是持续每个步数者；某段进程的情形，有每个长度进程者在有限分支处给出运行，需 EitherThroughout 与选取。",
+        "en": "The dual of kernel_iff_lasts: what no course leaves is what lasts every horizon; for some course, courses of every length give a run where branching is finite, given EitherThroughout and a selection."
+      }
     }
   ],
   "counterexamples": [
@@ -141,7 +148,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
       "role": "proof",
-      "sha256": "6b98f95cf3524c95dca197f95e8eb9058578998d216a3f02351ae4e83f79fce4",
+      "sha256": "60947288306d2791eb7ebf0cb593bd77eab14209ee0ae652b641f49fff9ee919",
       "declarations": [
         "Becoming.Lasting.Lasts",
         "Becoming.Lasting.Ladder",
@@ -175,12 +182,6 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
-      "role": "receipt",
-      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
-      "declarations": []
-    },
-    {
       "path": "experiments/market-generativity/formal/market-instances-checks/20261014T141058.867757Z/verification.json",
       "role": "receipt",
       "sha256": "86c5bd405e45fbf123e8eab5663a08275bea633dae27f137c359de524ca81a32",
@@ -202,6 +203,11 @@
       "role": "receipt",
       "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T190408.610189Z/verification.json",
+      "role": "receipt",
+      "sha256": "47259fe19127209f0f481b03f8ab92ae59c7864e4d7f0ea578afc8520eb625f6"
     }
   ],
   "proof_bindings": [
@@ -214,7 +220,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T190408.610189Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Lasting",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -314,6 +320,10 @@
     {
       "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：起点持续 n 步，恰当受扰过程从它出发、至多 n 个可容许扰动的每条历程都留在护栏之内（lasts_iff_courses）；所以这样的历程都留在护栏之内，恰当某个梯级族在第 n 级含起点（courses_iff_ladder），恰当每个必要族在第 n 级含起点（courses_iff_necessary）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
       "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: a start lasts n steps exactly when every course of the disturbed process from it with at most n admissible disturbances stays within the guard (lasts_iff_courses); so every such course stays within the guard exactly when some ladder holds the start at level n (courses_iff_ladder), and exactly when every necessary family does (courses_iff_necessary). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
+    },
+    {
+      "zh": "2026-10-16，整合 I4b 第四项（Ren 选择“Closest gaps first”）：Lasting.lean 导入 Becoming.Likeness，文件说明加“持续某段进程”一条，其后加同名一节；本记录所引的声明不变。改用新哈希，证明绑定移到核心回执 20261015T190408.610189Z；关联新记录 lifting-where-branching-is-finite。",
+      "en": "16 October 2026, integration I4b item 4 (Ren chose “Closest gaps first”): Lasting.lean imports Becoming.Likeness, its docstring gains a bullet on lasting some course, and a section of that name follows; the declarations this record cites are unchanged. The reference takes the new hash and its proof binding moves to core receipt 20261015T190408.610189Z; the new record lifting-where-branching-is-finite is linked."
     }
   ]
 }

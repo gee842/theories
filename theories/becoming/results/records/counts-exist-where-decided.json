@@ -223,7 +223,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7ff8bbccb9f842523feacc96127b38742525f80c9ef969b0f38538f6ab4ada91"
+      "sha256": "3cb7f88b54b41d528bd403a87f1c1ab864720b37a049e9eb9c35fec807e01a67"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -233,7 +233,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "e696b62a055af1acec1bb00a8c1d89719e054548ecbdd676f451c676254500a3"
+      "sha256": "fd54c0388fb9dcada541ee4c2303f8546ae1836b366930739e0176817d59f48d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
@@ -449,6 +449,10 @@
     {
       "zh": "2026年10月16日，I4b 第三项落地（研究第145节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第三项：§9 的 Becoming.Horizon 一行（12 → 34 项定理，改为双语）与外围实例 PrefixSafetyCorrespondence 一行，外围实例的列举加入它；总数改据新回执）；DECIDABILITY-INVENTORY.md（在回执 20261015T184418.886926Z 上重新生成：边界句加门处的起源与前缀检验的否证；各类数目不变）。",
       "en": "16 October 2026, landing I4b item 3 (study section 145): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 3: the §9 row of Becoming.Horizon (12 → 34 theorems, now bilingual) and a peripheral-instance row for PrefixSafetyCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T184418.886926Z: the boundary sentence gains the origin at a gate and refutation by prefix tests; every count unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，I4b 第四项落地（研究第146节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第四项：§9 的 Becoming.Lasting 一行（69 → 89 项定理）与外围实例 FiniteBranchingCorrespondence 一行，外围实例的列举加入它；总数改据新回执）；DECIDABILITY-INVENTORY.md（在回执 20261015T190408.610189Z 上重新生成，含 I4b 第四项的分类：只在证明中用到 224 → 226，证明可判定的定义与实例 136 → 137，其余各类不变）。",
+      "en": "16 October 2026, landing I4b item 4 (study section 146): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 4: the §9 row of Becoming.Lasting (69 → 89 theorems) and a peripheral-instance row for FiniteBranchingCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt); DECIDABILITY-INVENTORY.md (regenerated on receipt 20261015T190408.610189Z with I4b item 4's classifications: used only in proofs 224 → 226, definitions and instances proving decidedness 136 → 137, the other classes unchanged)."
     }
   ]
 }

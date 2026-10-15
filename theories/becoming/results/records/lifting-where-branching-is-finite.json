@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "id": "lifting-where-branching-is-finite",
+  "title": {
+    "zh": "有限分支处的提升",
+    "en": "Lifting where branching is finite"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "对每个有限分支的过程：所达深度已定；有每个长度进程的配置不能没有同样的后继；有之由 EitherThroughout 给出，对每个这样的过程要求时恰是此原则；选取给出运行。",
+    "en": "For every finitely branching process: the depth reached is decided; a configuration with courses of every length cannot fail to have a successor with them; it has one given EitherThroughout, exactly that principle asked of every such process; and a selection gives a run."
+  },
+  "laws": [
+    {
+      "zh": "某段 n 步的进程始于 s（Continues）；每个长度的进程都始于 s（Unbounded）；过程有限分支：每个配置的后继列出。n + 1 步的进程以 n 步的进程开始；有限分支处所达深度已定。",
+      "en": "Some course of n steps starts at s (Continues); courses of every length do (Unbounded); the process branches finitely where the successors of each configuration are listed. A course of n + 1 steps begins one of n, and where the process branches finitely the depth reached is decided.",
+      "declarations": [
+        "Becoming.Lasting.Continues",
+        "Becoming.Lasting.Unbounded",
+        "Becoming.Lasting.FinitelyBranching",
+        "Becoming.Lasting.Continues.down",
+        "Becoming.Lasting.Continues.decided"
+      ]
+    },
+    {
+      "zh": "列表的成员满足已定递减族的每一步时，某成员处处满足，于双重否定下；所以有限分支处，无界配置不能没有无界后继。不用原则：目标是否证，故首个成员是否某处不满足可当作已定。",
+      "en": "Where each step of a decided decreasing family is met by some member of a list, some member meets every step, up to double negation; so where the process branches finitely, an unbounded configuration cannot fail to have an unbounded successor. No principle is used: the goal is a refutation.",
+      "declarations": [
+        "Becoming.Lasting.list_throughout_not_not",
+        "Becoming.Lasting.Unbounded.successors",
+        "Becoming.Lasting.Unbounded.step_not_not"
+      ]
+    },
+    {
+      "zh": "给定 EitherThroughout，无界配置有无界后继，有限个起点中有每个长度进程者时其一无界（EitherThroughout.list 用于列出的后继或起点）。",
+      "en": "Given EitherThroughout, an unbounded configuration has an unbounded successor, and of finitely many starts among which courses of every length start, one is unbounded (EitherThroughout.list on the listed successors or starts).",
+      "declarations": [
+        "Becoming.Lasting.Unbounded.step_of_either",
+        "Becoming.Lasting.unbounded_start_of_either"
+      ]
+    },
+    {
+      "zh": "留在一族之内的步的选取，从族的每个成员给出留在族内的运行。提升：有限分支处，EitherThroughout 与在有无界后继处对它的选取，使每个无界配置开始一个沿无界配置的运行。",
+      "en": "A selection of a step staying in a family gives a run from each member, staying in the family. Lifting: where the process branches finitely, EitherThroughout and a choice of an unbounded successor wherever one exists give every unbounded configuration a run along unbounded configurations.",
+      "declarations": [
+        "Becoming.Lasting.along",
+        "Becoming.Lasting.runOf",
+        "Becoming.Lasting.runOf_start",
+        "Becoming.Lasting.runOf_within",
+        "Becoming.Lasting.lifting"
+      ]
+    },
+    {
+      "zh": "对每个有限分支过程都要求时，无界配置有无界后继恰是 EitherThroughout。见证：两个已定递减族每步有一个成立，使 Chains 两条链的分叉无界；无界后继是其族处处成立的链首。",
+      "en": "Asked of every finitely branching process, an unbounded configuration having an unbounded successor is exactly EitherThroughout. Witness: two decided decreasing families, one holding at each step, make the fork of the two chains of Chains unbounded; an unbounded successor is a chain start whose family holds throughout.",
+      "declarations": [
+        "Becoming.Lasting.TwoChains.process",
+        "Becoming.Lasting.TwoChains.branching",
+        "Becoming.Lasting.TwoChains.chain_continues",
+        "Becoming.Lasting.TwoChains.chain_holds",
+        "Becoming.Lasting.TwoChains.two_unbounded",
+        "Becoming.Lasting.TwoChains.side_of_unbounded",
+        "Becoming.Lasting.step_iff_either"
+      ]
+    },
+    {
+      "zh": "无有限分支时：根步到每个长度的臂，有每个长度的进程，而其后继都没有（长 n 的臂没有 n + 1 步的进程）。",
+      "en": "Without finite branching: a root stepping to an arm of every length has courses of every length, and none of its successors does (the arm of length n has no course of n + 1 steps).",
+      "declarations": [
+        "Becoming.Lasting.Fan.Pos",
+        "Becoming.Lasting.Fan.Step",
+        "Becoming.Lasting.Fan.process",
+        "Becoming.Lasting.Fan.arm_continues",
+        "Becoming.Lasting.Fan.arm_bounded",
+        "Becoming.Lasting.Fan.root_unbounded",
+        "Becoming.Lasting.Fan.no_unbounded_step"
+      ]
+    },
+    {
+      "zh": "实例（外围，自有检查器）：FiniteBranching 的关系即一个动作的过程，Reach 即 Continues，列出的子节点使其有限分支；经典推理给出 EitherThroughout，Lean 的选择选取无界后继，其五条提升定理由核心律给出。",
+      "en": "Instance (periphery, own checker): in FiniteBranching a relation is the process with one move, Reach is Continues and Unbounded is Unbounded, and listed children make the process finitely branching; classical reasoning gives EitherThroughout and Lean's choice selects an unbounded successor, so its five lifting theorems (finite_unbounded to labelled_lifting) follow from the core.",
+      "declarations": [
+        "Becoming.FiniteBranchingCorrespondence.process",
+        "Becoming.FiniteBranchingCorrespondence.reach_iff_continues",
+        "Becoming.FiniteBranchingCorrespondence.unbounded_iff",
+        "Becoming.FiniteBranchingCorrespondence.finitelyBranching",
+        "Becoming.FiniteBranchingCorrespondence.either_classical",
+        "Becoming.FiniteBranchingCorrespondence.finite_unbounded_by_core",
+        "Becoming.FiniteBranchingCorrespondence.unbounded_child_by_core",
+        "Becoming.FiniteBranchingCorrespondence.infinite_from_unbounded_by_core",
+        "Becoming.FiniteBranchingCorrespondence.finite_initial_lifting_by_core",
+        "Becoming.FiniteBranchingCorrespondence.labelled_lifting_by_core"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。过程任意；有限分支是假设（每个配置的后继列出）；EitherThroughout 是 step_of_either 与 lifting 的假设，对无界后继的选取是 lifting 的假设。",
+      "en": "No axiom. The process is arbitrary; finite branching is a hypothesis (the successors of each configuration listed); EitherThroughout is a hypothesis of step_of_either and lifting, and a choice of an unbounded successor one of lifting."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "不用 EitherThroughout 时无界后继存在：对每个有限分支过程要求它恰是此原则。",
+      "en": "An unbounded successor without EitherThroughout: asked of every finitely branching process it is exactly that principle.",
+      "kind": "non-implication",
+      "witness": "Becoming.Lasting.step_iff_either"
+    },
+    {
+      "zh": "无有限分支时的提升：扇有每个长度的进程，其后继都没有。",
+      "en": "Lifting without finite branching: the fan has courses of every length and none of its successors does.",
+      "kind": "non-implication",
+      "witness": "Becoming.Lasting.Fan.no_unbounded_step"
+    },
+    {
+      "zh": "不经选取的运行：运行由在有无界后继处对它的选取造出，此处不由原则推出选取。",
+      "en": "A run with no selection: the run is built from a choice of an unbounded successor wherever one exists, which the principle does not give here.",
+      "kind": "scope"
+    },
+    {
+      "zh": "提升给出运行的存在，不给有效的选取或物理的无穷。",
+      "en": "That lifting selects effectively or realizes a physical infinity: it gives a run's existence.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Lasting 共 89 项定理，新增 29 项声明（20 项定理）公理报告为空。外围实例 FiniteBranchingCorrespondence 由其检查器实查（Lean 4.30.0-rc2；四项对应公理报告为空，其余六项只用标准公理），FiniteBranching 经实例回执绑定，其字节与完成包回执相合。作者反审见研究 §146；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: Becoming.Lasting has 89 theorems, and the 29 new declarations (20 theorems) have empty axiom reports. The periphery instance FiniteBranchingCorrespondence is checked by its own checker (Lean 4.30.0-rc2; four correspondences with empty axiom reports, the other six with standard axioms only); FiniteBranching is bound through the instance receipt, its bytes matching the completion package receipt. Author counterreview in study section 146; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "独立审查；不用选取时的运行（依赖选择的边界）；其余最近的缺口（Selection）。",
+    "en": "An independent review; a run without a selection (the boundary of dependent choice); the other closest gap (Selection)."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 FiniteBranching 读作待接入的律：Becoming.Lasting 陈述了每个可容许进程都留下（Lasts、kernel_iff_lasts），未陈述某段进程延续。本结果陈述它，FiniteBranching 的提升是一个动作的过程的实例，其经典步分别是 EitherThroughout 与选取。读法（AI 的，待 Ren）：有每个长度的进程尚不是一段延续的进程；有限分支处二者之间所隔的，恰是在两支之间知道哪一支处处延续。",
+    "en": "Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read FiniteBranching as a join candidate: Becoming.Lasting stated that every admissible course stays (Lasts, kernel_iff_lasts), not that some course goes on. This result states it, with FiniteBranching's lifting as the instance of the process with one move; its classical steps are EitherThroughout and a selection. Readings (the AI's, pending Ren): courses of every length are not yet one course going on; where branching is finite, what lies between them is exactly knowing which of two branches goes on throughout."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+  "aliases": [
+    "Becoming.Lasting.lifting",
+    "Becoming.Lasting.step_iff_either",
+    "Becoming.Lasting.Unbounded",
+    "Becoming.Lasting.Unbounded.step_not_not",
+    "Becoming.Lasting.FinitelyBranching",
+    "lifting where branching is finite",
+    "有限分支处的提升",
+    "König lifting",
+    "Kőnig lifting",
+    "lasting some course",
+    "持续某段进程"
+  ],
+  "dependencies": [
+    {
+      "id": "tests-fix-likeness-where-determined",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Becoming.Likeness 的 EitherThroughout、EitherThroughout.list、Decided.exists_listed、holds_below 与 Chains（两条链及其列出的后继）。",
+        "en": "Reuses Becoming.Likeness's EitherThroughout, EitherThroughout.list, Decided.exists_listed, holds_below and Chains (the two chains and their listed outcomes)."
+      },
+      "interface": {
+        "output": {
+          "zh": "EitherThroughout 及其列表形式；Chains 的过程与列出的后继。",
+          "en": "EitherThroughout and its list form; the process of Chains with its listed outcomes."
+        },
+        "input": {
+          "zh": "无界后继由列表形式给出；边界的见证是两条链的分叉。",
+          "en": "The unbounded successor comes from the list form; the boundary's witness is the fork of the two chains."
+        },
+        "conditions": {
+          "zh": "族已定且递减。",
+          "en": "The families decided and decreasing."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "market-supported-finite-transition",
+      "detail": {
+        "zh": "其 kernel_iff_lasts 是对偶：无进程离开者恰是持续每个步数者，不需有限分支或原则。",
+        "en": "Its kernel_iff_lasts is the dual: what no course leaves is what lasts every horizon, with no finite branching or principle needed."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "role": "proof",
+      "sha256": "60947288306d2791eb7ebf0cb593bd77eab14209ee0ae652b641f49fff9ee919",
+      "declarations": [
+        "Becoming.Lasting.Continues",
+        "Becoming.Lasting.Unbounded",
+        "Becoming.Lasting.FinitelyBranching",
+        "Becoming.Lasting.Continues.down",
+        "Becoming.Lasting.Continues.decided",
+        "Becoming.Lasting.list_throughout_not_not",
+        "Becoming.Lasting.Unbounded.successors",
+        "Becoming.Lasting.Unbounded.step_not_not",
+        "Becoming.Lasting.Unbounded.step_of_either",
+        "Becoming.Lasting.unbounded_start_of_either",
+        "Becoming.Lasting.along",
+        "Becoming.Lasting.runOf",
+        "Becoming.Lasting.runOf_start",
+        "Becoming.Lasting.runOf_within",
+        "Becoming.Lasting.lifting",
+        "Becoming.Lasting.TwoChains.process",
+        "Becoming.Lasting.TwoChains.branching",
+        "Becoming.Lasting.TwoChains.chain_continues",
+        "Becoming.Lasting.TwoChains.chain_holds",
+        "Becoming.Lasting.TwoChains.two_unbounded",
+        "Becoming.Lasting.TwoChains.side_of_unbounded",
+        "Becoming.Lasting.step_iff_either",
+        "Becoming.Lasting.Fan.Pos",
+        "Becoming.Lasting.Fan.Step",
+        "Becoming.Lasting.Fan.process",
+        "Becoming.Lasting.Fan.arm_continues",
+        "Becoming.Lasting.Fan.arm_bounded",
+        "Becoming.Lasting.Fan.root_unbounded",
+        "Becoming.Lasting.Fan.no_unbounded_step"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean",
+      "role": "proof",
+      "sha256": "acc1814fd424a2c6b6a8543327511e3d7af11bdd1b1760ab94b034f84a2ba0d3",
+      "declarations": [
+        "Becoming.FiniteBranchingCorrespondence.process",
+        "Becoming.FiniteBranchingCorrespondence.reach_iff_continues",
+        "Becoming.FiniteBranchingCorrespondence.unbounded_iff",
+        "Becoming.FiniteBranchingCorrespondence.finitelyBranching",
+        "Becoming.FiniteBranchingCorrespondence.either_classical",
+        "Becoming.FiniteBranchingCorrespondence.finite_unbounded_by_core",
+        "Becoming.FiniteBranchingCorrespondence.unbounded_child_by_core",
+        "Becoming.FiniteBranchingCorrespondence.infinite_from_unbounded_by_core",
+        "Becoming.FiniteBranchingCorrespondence.finite_initial_lifting_by_core",
+        "Becoming.FiniteBranchingCorrespondence.labelled_lifting_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
+      "role": "integration",
+      "sha256": "f65ad8fc8849b1bbc732dc10a01ccf52b6a25c31eaadb222deff2d522ac1ee2c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean",
+      "role": "proof",
+      "sha256": "8db027bf112dae881fa65ed57a820832e8f221677ee96b8975dec3e338b0d56d",
+      "declarations": [
+        "CompletionLifting.Reach",
+        "CompletionLifting.Unbounded",
+        "CompletionLifting.finite_unbounded",
+        "CompletionLifting.unbounded_child",
+        "CompletionLifting.infinite_from_unbounded",
+        "CompletionLifting.finite_initial_lifting",
+        "CompletionLifting.labelled_lifting"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T190408.610189Z/verification.json",
+      "role": "receipt",
+      "sha256": "47259fe19127209f0f481b03f8ab92ae59c7864e4d7f0ea578afc8520eb625f6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/finite-branching-correspondence-checks/20261015T190529.548268Z/verification.json",
+      "role": "receipt",
+      "sha256": "2cc4a093a656d5ab9c9151ed7ca49e06a9bc7b7e9ff2ed2610b7d3c0fa6a775f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification.json",
+      "role": "receipt",
+      "sha256": "2b41c6771f3836ccb598e4c5e9acbc3a4e3a9ef5bf7fcea21dbb74f40bc33be4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "837f75dcdfee75645a649ff6b1e7f011e7aa31a8b8e9b0993b8d0ffe232387a7"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "3cb7f88b54b41d528bd403a87f1c1ab864720b37a049e9eb9c35fec807e01a67"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
+      "role": "provenance",
+      "sha256": "4e8c900528a2b4b7239e1930b84e80e457b2a29e61ef2b8c3c3f59b5c67ec699"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T190408.610189Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lasting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/finite-branching-correspondence-checks/20261015T190529.548268Z/verification.json",
+      "sha256_pointer": "/source_sha256/FiniteBranchingCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/finite-branching-correspondence-checks/20261015T190529.548268Z/verification.json",
+      "sha256_pointer": "/source_sha256/FiniteBranching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，整合 I4b 第四项（Ren 选择“Closest gaps first”）；研究 §146。",
+      "en": "16 October 2026: added, integration I4b item 4 (Ren chose “Closest gaps first”); study section 146."
+    }
+  ],
+  "text_versions": []
+}

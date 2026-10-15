@@ -13,10 +13,10 @@
 | [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 72 | 1,880 |
 | [支持与更新 / Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
 | [学习、预测与动力学 / Learning, prediction and dynamics](lean-declarations/learning.md) | 51 | 889 |
-| [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 42 | 867 |
+| [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 43 | 876 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 258 | 8,339 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 258 | 8,359 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -284,6 +284,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Feeding.lean](lean-declarations/core.md#module-8abf1ff0ab50) | 生成核心与关系结构 / Generative core and relational structure |
 | [FiniteAdmission.lean](lean-declarations/abstraction.md#module-910666c286d1) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [FiniteBranching.lean](lean-declarations/abstraction.md#module-5f36470a468d) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
+| [FiniteBranchingCorrespondence.lean](lean-declarations/abstraction.md#module-48f866de95b4) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [FiniteExposureKernel.lean](lean-declarations/learning.md#module-be5433d0f096) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [FiniteInquiryClassification.lean](lean-declarations/inquiry.md#module-13aee3c0e811) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [FiniteSupportObstruction.lean](lean-declarations/other.md#module-805a098f4dbd) | 其他形式研究 / Other formal studies |

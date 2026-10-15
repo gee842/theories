@@ -263,6 +263,9 @@ def record():
         'references': [
             {'path': LASTING, 'role': 'proof', 'sha256': sha(LASTING), 'declarations': new},
             {'path': INSTANCE, 'role': 'proof', 'sha256': sha(INSTANCE), 'declarations': instance},
+            # the dependency interface's evidence must be a reviewed reference (integrator, landing I4b-4)
+            {'path': BASE + 'lean/becoming/Becoming/Likeness.lean', 'role': 'integration',
+             'sha256': sha(BASE + 'lean/becoming/Becoming/Likeness.lean')},
             {'path': BRANCHING, 'role': 'proof', 'sha256': sha(BRANCHING),
              'declarations': ['CompletionLifting.Reach', 'CompletionLifting.Unbounded',
                               'CompletionLifting.finite_unbounded', 'CompletionLifting.unbounded_child',

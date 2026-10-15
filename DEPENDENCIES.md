@@ -2994,6 +2994,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## lifting-where-branching-is-finite ← tests-fix-likeness-where-determined
+
+`formal-reuse` — 复用 Becoming.Likeness 的 EitherThroughout、EitherThroughout.list、Decided.exists_listed、holds_below 与 Chains（两条链及其列出的后继）。 / Reuses Becoming.Likeness's EitherThroughout, EitherThroughout.list, Decided.exists_listed, holds_below and Chains (the two chains and their listed outcomes).
+
+**Producer output / 上游输出:** EitherThroughout 及其列表形式；Chains 的过程与列出的后继。 / EitherThroughout and its list form; the process of Chains with its listed outcomes.
+
+**Consumer input / 下游输入:** 无界后继由列表形式给出；边界的见证是两条链的分叉。 / The unbounded successor comes from the list form; the boundary's witness is the fork of the two chains.
+
+**Retained conditions / 保留条件:** 族已定且递减。 / The families decided and decreasing.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean)
+
 ## listing-once-is-decided-identity ← counts-exist-where-decided
 
 `formal-reuse` — 复用 P58 的 Decided 与普查：普查决定其所列者之间的同一，带同一判定的列出给出普查。 / Reuses P58's Decided and censuses: a census decides identity among what it lists, and a listing with identity decided gives a census.
