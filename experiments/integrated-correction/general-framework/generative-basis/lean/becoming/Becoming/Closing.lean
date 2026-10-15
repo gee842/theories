@@ -46,7 +46,7 @@ states how loops form, within Part I and with no premise beyond the strengths ea
   (`Threshold.level_after`); and up to `θ` the course is the same for every threshold beyond it
   (`Threshold.unforeseen`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, taken by Ren on 16 October 2026).**
 - Loops form within the unfolding by closing: a loop forms at the step at which some exchange comes
   to respond to a level downstream of the condition it gives to. Where the strengths are read off
   the course, as in the threshold witness, the couplings, and so the loops, are part of what the

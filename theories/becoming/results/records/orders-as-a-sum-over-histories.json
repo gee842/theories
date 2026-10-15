@@ -125,8 +125,8 @@
     "en": "Grouping by exactly i responses (for alternatives that commute); signed carried differences and cancellation; infinitely many route points and unbounded horizons; an independent review; Ren's judgment on the readings."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 问不确定的律的积分（“how how accurate can we do that uh what is the limitation do we have losses”）。Ren 2026-10-16 取了读法：所问的积分是 P82 的历史之和及其四种损失，P118 的阶是同一结构类的，按回应次数组织，如同费曼图按顶点数，两者尚未连起来；并说“joining P82's sum over histories with P118's orders … let's finish both”。本结果完成接合，回答 how-a-carried-difference-grows 与 losses-of-the-sum-over-histories 中把两者接上的一项。读法（AI 的，待 Ren）：沿时间往回的路线是历史，它的步是回应（顶点），顶点之间水平保持，如同传播子对中间时刻求和；两个积分是一个，P82 的回路损失就是 P118 的失控；对应是结构的，不是物理的，计数的权重不相消。数学是标准的：线性递推的路径之和与按相互作用次数的展开。",
-    "en": "Ren, 12 October 2026, asked about the integration for laws that are not determined (“how how accurate can we do that uh what is the limitation do we have losses”). On 16 October Ren took the reading that the integration asked about is P82's sum over histories with its four losses, that P118's orders are of the same structural kind, organized by number of responses as Feynman diagrams are by vertices, and that the two were not yet joined, and said “joining P82's sum over histories with P118's orders … let's finish both”. This result makes the join, answering the item of how-a-carried-difference-grows and losses-of-the-sum-over-histories that joins them. Readings (the AI's, pending Ren): a route back in time is a history whose steps are responses (vertices), the level holding between them as a propagator sums over intermediate times; the two integrations are one, and P82's loss by loops is P118's runaway; the match is structural, not physical, and counting weights do not cancel. The mathematics is standard: the path sum of a linear recursion and the expansion by number of interactions."
+    "zh": "Ren 2026-10-12 问不确定的律的积分（“how how accurate can we do that uh what is the limitation do we have losses”）。Ren 2026-10-16 取了读法：所问的积分是 P82 的历史之和及其四种损失，P118 的阶是同一结构类的，按回应次数组织，如同费曼图按顶点数，两者尚未连起来；并说“joining P82's sum over histories with P118's orders … let's finish both”。本结果完成接合，回答 how-a-carried-difference-grows 与 losses-of-the-sum-over-histories 中把两者接上的一项。读法（AI 的，Ren 2026-10-16 同意）：沿时间往回的路线是历史，它的步是回应（顶点），顶点之间水平保持，如同传播子对中间时刻求和；两个积分是一个，P82 的回路损失就是 P118 的失控；对应是结构的，不是物理的，计数的权重不相消。数学是标准的：线性递推的路径之和与按相互作用次数的展开。",
+    "en": "Ren, 12 October 2026, asked about the integration for laws that are not determined (“how how accurate can we do that uh what is the limitation do we have losses”). On 16 October Ren took the reading that the integration asked about is P82's sum over histories with its four losses, that P118's orders are of the same structural kind, organized by number of responses as Feynman diagrams are by vertices, and that the two were not yet joined, and said “joining P82's sum over histories with P118's orders … let's finish both”. This result makes the join, answering the item of how-a-carried-difference-grows and losses-of-the-sum-over-histories that joins them. Readings (the AI's, agreed by Ren on 16 October 2026): a route back in time is a history whose steps are responses (vertices), the level holding between them as a propagator sums over intermediate times; the two integrations are one, and P82's loss by loops is P118's runaway; the match is structural, not physical, and counting weights do not cancel. The mathematics is standard: the path sum of a linear recursion and the expansion by number of interactions."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Routes.lean",
   "aliases": [
@@ -386,6 +386,11 @@
       "role": "receipt",
       "sha256": "55cc05698f23ed3ff343a524972640522d7a50e2fa0b15ff48e83892fdf23ef2",
       "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md",
+      "role": "provenance",
+      "sha256": "274cf514417e8596a4e58747a1db057abb645f8b7557fe0062934cbbcee9bade"
     }
   ],
   "proof_bindings": [
@@ -468,6 +473,10 @@
     {
       "zh": "2026年10月16日，P121、P122 落地（研究第155、156节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P121、P122：§2 的两对段落、整体陈述的条目、§8 的进一步证明、§9 的两行与术语表；Loops 段中 P121、P122 回答的两项读法后各加一个注明日期的分句（读法不变）；总数改据新回执）。",
       "en": "16 October 2026, landing P121 and P122 (study sections 155 and 156): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P121 and P122: two paragraph pairs in §2, items of the theory stated whole, §8's further proofs, two §9 rows and glossary rows; one dated clause after each of the two readings in the Loops paragraph that P121 and P122 answer (the readings unchanged); totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16：Ren 答 P121 与 P122 落地的报告：“alright, agree”（来源 sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md）。AI 读为 Ren 取本记录的读法，用 AI 的措辞；correspondence 注明，references 加来源。陈述与证明不变。",
+      "en": "16 October 2026: answering the report that P121 and P122 had landed, Ren wrote “alright, agree” (source sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md). The AI reads it as Ren taking this record's readings in the AI's wording; correspondence says so and references add the source. Statement and proofs unchanged."
     }
   ],
   "text_versions": []

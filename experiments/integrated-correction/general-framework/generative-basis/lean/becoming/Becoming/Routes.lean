@@ -48,7 +48,7 @@ it, within Part I and with no premise beyond what each statement names.
   `(1 + M) ^ n` (`SelfLoop.transfer_eq`): the self-loop of `Becoming.Loops`, and P82's courses that
   double around a loop where `M` is one.
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, taken by Ren on 16 October 2026).**
 - The join makes the structural match exact. A route back in time is a history in P82's sense: its
   steps are responses, the vertices of a diagram, and between them the level holds, summed over the
   steps at which a response can occur, as a propagator sums over intermediate times. Its order is

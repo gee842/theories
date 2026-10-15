@@ -89,6 +89,11 @@ second right with its qualifiers, and took the third in a refined form, for now.
   now, open to revision once a theorem states how loops form within the unfolding, for example
   where a formation's drawing comes to respond to the level its drawing lowers, where this meets
   `Becoming.Runaway`.
+  On 16 October, with the loop-formation theorem of `Becoming.Closing`, Ren took the reading as
+  revised: loops form within the unfolding by closing, at the step at which some exchange comes
+  to respond to a level downstream of the condition it gives to, and dissolve where their
+  couplings stop (`Becoming.Remainder`); where the strengths are read off the course, which loops
+  form and when is read off the unfolding.
 
 What is not derived: the strengths themselves; the growth where couplings come and go, a loop
 upstream then not leaving every order inexact (`Loops.Once.not_always`); how fast a runaway is
