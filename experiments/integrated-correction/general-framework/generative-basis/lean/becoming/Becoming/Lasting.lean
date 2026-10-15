@@ -1,5 +1,6 @@
 import Becoming.Viability
 import Becoming.Recurrence
+import Becoming.Likeness
 
 /-!
 # Lasting: a number of steps, exhaustion, never reaching and reaching
@@ -63,6 +64,17 @@ law never reaches a target, and, dually, when a law reaches a target within `n` 
   (`Reaches.not_lasts`); for a determined law and a decided target they are complements
   (`reaches_iff_not_lasts`), and without the decision double negation would be eliminated
   (`dual_needs_decision`).
+* **Lasting some course.** `Lasts` asks every admissible course to stay; here some course goes
+  on. `Continues P n s`: some course of `n` steps starts at `s`; `Unbounded P s`: courses of
+  every length do. Where the process branches finitely (`FinitelyBranching`), the depth reached
+  is decided (`Continues.decided`), and an unbounded configuration cannot fail to have an
+  unbounded successor (`Unbounded.step_not_not`). That it has one follows from
+  `EitherThroughout` (`Unbounded.step_of_either`), and asked of every finitely branching process
+  it is exactly that principle (`step_iff_either`, witness the two chains of `Chains`). A
+  selection of a successor staying in a family gives a run from each member (`runOf`), so
+  `EitherThroughout` and a choice of an unbounded successor lift courses of every length to a run
+  (`lifting`). Where the branching is infinite, courses of every length need not continue one
+  another (`Fan.no_unbounded_step`).
 
 Every condition named here is local: one step from each configuration. Which guard, levels,
 quantity, threshold and target an application uses are supplied with it; nothing here says that
@@ -883,6 +895,254 @@ theorem histories_need_decision
 end Search
 
 end Reaches
+
+/-! ## Lasting some course: lifting where the process branches finitely
+
+`Lasts` asks every admissible course to stay. Here some course goes on: `Continues P n s` says
+that some course of `n` steps starts at `s`, and `Unbounded P s` that courses of every length
+do. Whether some course goes on for ever is not decided by the courses of each length: a
+configuration stepping to arms of every length has courses of every length, but no successor
+does (`Fan.no_unbounded_step`). Where the process branches finitely (`FinitelyBranching`: the
+successors of each configuration are listed), the depth reached is decided
+(`Continues.decided`). An unbounded configuration then cannot fail to have an unbounded
+successor (`Unbounded.step_not_not`), with no premise. That it has one is
+`EitherThroughout.list` applied to the listed successors (`Unbounded.step_of_either`), and asked
+of every finitely branching process this is exactly `EitherThroughout` (`step_iff_either`;
+witness: the two chains of `Chains`). A selection of an unbounded successor wherever there is
+one gives a run (`runOf`, `lifting`): the principle and the selection are hypotheses of the law,
+never assumed.
+-/
+
+section Lifting
+
+/-- Some course of `n` steps starts at `s`. -/
+def Continues (P : Process S A) : Nat → S → Prop
+  | 0, _ => True
+  | n + 1, s => ∃ a t, P.step s a t ∧ Continues P n t
+
+/-- Courses of every length start at `s`. -/
+def Unbounded (P : Process S A) (s : S) : Prop :=
+  ∀ n, Continues P n s
+
+/-- The process branches finitely: the successors of each configuration are listed. -/
+def FinitelyBranching (P : Process S A) : Prop :=
+  ∀ s, ∃ l : List S, ∀ t, (∃ a, P.step s a t) ↔ t ∈ l
+
+/-- A course of `n + 1` steps begins one of `n` steps. -/
+theorem Continues.down {P : Process S A} : ∀ (n : Nat) (s : S), Continues P (n + 1) s → Continues P n s
+  | 0, _, _ => trivial
+  | n + 1, _, ⟨a, t, step, onward⟩ => ⟨a, t, step, Continues.down n t onward⟩
+
+/-- **Where the process branches finitely, the depth reached is decided.** -/
+theorem Continues.decided {P : Process S A} (branching : FinitelyBranching P) :
+    ∀ (n : Nat) (s : S), Decided (Continues P n s)
+  | 0, _ => .inl trivial
+  | n + 1, s => match branching s with
+    | ⟨_, listed⟩ =>
+      match Decided.exists_listed (P := fun t => Continues P n t)
+          (fun t _ => Continues.decided branching n t) with
+      | .inl ⟨t, mem, onward⟩ => match (listed t).mpr mem with
+        | ⟨a, step⟩ => .inl ⟨a, t, step, onward⟩
+      | .inr refuted => .inr fun ⟨a, t, step, onward⟩ => refuted ⟨t, (listed t).mp ⟨a, step⟩, onward⟩
+
+/-- **Some member of a list holds throughout, up to double negation**, where each step of a
+decided decreasing family is met by some member. No principle is used: the goal is a refutation,
+so whether the first member fails somewhere may be taken as decided. -/
+theorem list_throughout_not_not {β : Type w} {Q : Nat → β → Prop} (decided : ∀ k b, Decided (Q k b))
+    (down : ∀ k b, Q (k + 1) b → Q k b) :
+    ∀ l : List β, (∀ k, ∃ b, b ∈ l ∧ Q k b) → ¬ ¬ ∃ b, b ∈ l ∧ ∀ k, Q k b
+  | [], each => fun _ => match each 0 with
+    | ⟨_, mem, _⟩ => nomatch mem
+  | b :: l, each => fun refuted => not_not_decided (∃ k, ¬ Q k b) fun failsOrNot => match failsOrNot with
+    | .inr never =>
+      refuted ⟨b, .head l, fun k => (decided k b).of_not_not fun fails => never ⟨k, fails⟩⟩
+    | .inl ⟨k₀, fails⟩ => list_throughout_not_not decided down l
+        (fun k => match each (k + k₀) with
+          | ⟨c, mem, holds⟩ => match mem_cons_split mem with
+            | .inl same => absurd (holds_below (P := Q) down (Nat.le_add_left k₀ k)
+                (Eq.subst (motive := Q (k + k₀)) same holds)) fails
+            | .inr mem => ⟨c, mem, holds_below (P := Q) down (Nat.le_add_right k k₀) holds⟩)
+        (fun ⟨c, mem, all⟩ => refuted ⟨c, .tail b mem, all⟩)
+
+/-- Where the process branches finitely, the listed successors of an unbounded configuration meet
+every depth. -/
+theorem Unbounded.successors {P : Process S A} {s : S} (unbounded : Unbounded P s) {l : List S}
+    (listed : ∀ t, (∃ a, P.step s a t) ↔ t ∈ l) : ∀ k, ∃ t, t ∈ l ∧ Continues P k t :=
+  fun k => match unbounded (k + 1) with
+    | ⟨a, t, step, onward⟩ => ⟨t, (listed t).mp ⟨a, step⟩, onward⟩
+
+/-- **An unbounded configuration cannot fail to have an unbounded successor**, where the process
+branches finitely. No premise. -/
+theorem Unbounded.step_not_not {P : Process S A} (branching : FinitelyBranching P) {s : S}
+    (unbounded : Unbounded P s) : ¬ ¬ ∃ t, (∃ a, P.step s a t) ∧ Unbounded P t :=
+  match branching s with
+  | ⟨l, listed⟩ => fun refuted =>
+    list_throughout_not_not (Q := fun k t => Continues P k t)
+      (fun k t => Continues.decided branching k t) (fun k t => Continues.down k t) l
+      (unbounded.successors listed) (fun ⟨t, mem, all⟩ => refuted ⟨t, (listed t).mpr mem, all⟩)
+
+/-- **An unbounded configuration has an unbounded successor**, where the process branches
+finitely, given `EitherThroughout`: the principle applied to the listed successors
+(`EitherThroughout.list`). -/
+theorem Unbounded.step_of_either (either : EitherThroughout) {P : Process S A}
+    (branching : FinitelyBranching P) {s : S} (unbounded : Unbounded P s) :
+    ∃ t, (∃ a, P.step s a t) ∧ Unbounded P t :=
+  match branching s with
+  | ⟨l, listed⟩ =>
+    match EitherThroughout.list either (P := fun k t => Continues P k t)
+        (fun k t => Continues.decided branching k t) (fun k t => Continues.down k t) l
+        (unbounded.successors listed) with
+    | ⟨t, mem, all⟩ => ⟨t, (listed t).mpr mem, all⟩
+
+/-- Of finitely many starts with courses of every length among them, one is unbounded, given
+`EitherThroughout`. -/
+theorem unbounded_start_of_either (either : EitherThroughout) {P : Process S A}
+    (branching : FinitelyBranching P) (starts : List S)
+    (each : ∀ n, ∃ s, s ∈ starts ∧ Continues P n s) : ∃ s, s ∈ starts ∧ Unbounded P s :=
+  EitherThroughout.list either (P := fun k t => Continues P k t)
+    (fun k t => Continues.decided branching k t) (fun k t => Continues.down k t) starts each
+
+/-- The configurations along a family, each step taken by a selection that stays in it. -/
+def along {P : Process S A} {K : S → Prop} (select : ∀ s, K s → {p : A × S // P.step s p.1 p.2 ∧ K p.2})
+    (s : S) (held : K s) : Nat → {x : S // K x}
+  | 0 => ⟨s, held⟩
+  | n + 1 => ⟨(select (along select s held n).1 (along select s held n).2).1.2,
+      (select (along select s held n).1 (along select s held n).2).2.2⟩
+
+/-- **A selection of a step that stays in a family gives a run from each of its members.** -/
+def runOf {P : Process S A} {K : S → Prop} (select : ∀ s, K s → {p : A × S // P.step s p.1 p.2 ∧ K p.2})
+    (s : S) (held : K s) : Run P :=
+  ⟨fun n => (along select s held n).1,
+   fun n => (select (along select s held n).1 (along select s held n).2).1.1,
+   fun n => (select (along select s held n).1 (along select s held n).2).2.1⟩
+
+theorem runOf_start {P : Process S A} {K : S → Prop}
+    (select : ∀ s, K s → {p : A × S // P.step s p.1 p.2 ∧ K p.2}) (s : S) (held : K s) :
+    (runOf select s held).state 0 = s :=
+  rfl
+
+theorem runOf_within {P : Process S A} {K : S → Prop}
+    (select : ∀ s, K s → {p : A × S // P.step s p.1 p.2 ∧ K p.2}) (s : S) (held : K s) (n : Nat) :
+    K ((runOf select s held).state n) :=
+  (along select s held n).2
+
+/-- **Lifting.** Where the process branches finitely, given `EitherThroughout` and a choice of an
+unbounded successor wherever one exists, every unbounded configuration starts a run along
+unbounded configurations. -/
+theorem lifting (either : EitherThroughout) {P : Process S A} (branching : FinitelyBranching P)
+    (choose : ∀ s, (∃ t, (∃ a, P.step s a t) ∧ Unbounded P t) →
+      {p : A × S // P.step s p.1 p.2 ∧ Unbounded P p.2})
+    {s : S} (unbounded : Unbounded P s) :
+    ∃ r : Run P, r.state 0 = s ∧ ∀ n, Unbounded P (r.state n) :=
+  ⟨runOf (fun x held => choose x (Unbounded.step_of_either either branching held)) s unbounded, rfl,
+   runOf_within _ s unbounded⟩
+
+/-! ### The boundary: two chains -/
+
+namespace TwoChains
+
+variable {α β : Nat → Prop}
+
+/-- The process of `Chains`: `two` steps to the starts of the chains, and the chain on a side
+goes on from `n` exactly where its family holds at `n`. -/
+def process (α β : Nat → Prop) : Process Chains.Pos Unit :=
+  (Chains.frame α β).P
+
+theorem branching (decided : ∀ k, Decided (α k)) (decided' : ∀ k, Decided (β k)) :
+    FinitelyBranching (process α β) :=
+  fun s => match Chains.outcomes decided decided' s with
+    | ⟨l, listed⟩ => ⟨l, fun t => ⟨fun ⟨_, step⟩ => (listed t).mp step, fun mem => ⟨(), (listed t).mpr mem⟩⟩⟩
+
+/-- Where a decreasing family holds at `n + m`, the chain on its side goes on `n` steps from `m`. -/
+theorem chain_continues {b : Bool} (down : ∀ k, Chains.Side α β b (k + 1) → Chains.Side α β b k) :
+    ∀ (n m : Nat), Chains.Side α β b (n + m) → Continues (process α β) n (.on b m)
+  | 0, _, _ => trivial
+  | n + 1, m, holds =>
+    ⟨(), .on b (m + 1),
+     .onward b m (holds_below (P := fun k (_ : Unit) => Chains.Side α β b k) (x := ())
+       (fun k _ holds => down k holds) (Nat.le_add_left m (n + 1)) holds),
+     chain_continues down n (m + 1) (Eq.subst (motive := Chains.Side α β b) (Nat.succ_add n m) holds)⟩
+
+/-- Where the chain on a side goes on `n + 1` steps from `m`, its family holds at `m + n`. -/
+theorem chain_holds {b : Bool} : ∀ (n m : Nat), Continues (process α β) (n + 1) (.on b m) →
+    Chains.Side α β b (m + n)
+  | 0, _, ⟨_, _, .onward _ _ holds, _⟩ => holds
+  | n + 1, m, ⟨_, _, .onward _ _ _, onward⟩ =>
+    Eq.subst (motive := Chains.Side α β b) (Nat.succ_add m n) (chain_holds n (m + 1) onward)
+
+/-- Where one of two decreasing families holds at each step, `two` is unbounded. -/
+theorem two_unbounded (down : ∀ k, α (k + 1) → α k) (down' : ∀ k, β (k + 1) → β k)
+    (each : ∀ k, α k ∨ β k) : Unbounded (process α β) .two
+  | 0 => trivial
+  | n + 1 => match each n with
+    | .inl holds => ⟨(), .on true 0, .twoOn true, chain_continues (b := true) down n 0 holds⟩
+    | .inr holds => ⟨(), .on false 0, .twoOn false, chain_continues (b := false) down' n 0 holds⟩
+
+/-- An unbounded chain start has its family holding at every step. -/
+theorem side_of_unbounded {b : Bool} (unbounded : Unbounded (process α β) (.on b 0)) (k : Nat) :
+    Chains.Side α β b k :=
+  Eq.subst (motive := Chains.Side α β b) (Nat.zero_add k) (chain_holds k 0 (unbounded (k + 1)))
+
+end TwoChains
+
+/-- **The boundary.** Asked of every finitely branching process, that an unbounded configuration
+has an unbounded successor is exactly `EitherThroughout`. Witness: two decreasing decided
+families, one holding at each step, give the two chains of `Chains`, whose fork `two` is
+unbounded; an unbounded successor is a chain start whose family holds throughout. -/
+theorem step_iff_either :
+    (∀ (S A : Type) (P : Process S A), FinitelyBranching P → ∀ s, Unbounded P s →
+      ∃ t, (∃ a, P.step s a t) ∧ Unbounded P t) ↔ EitherThroughout :=
+  ⟨fun law α β decided decided' down down' each =>
+    match law Chains.Pos Unit (TwoChains.process α β) (TwoChains.branching decided decided') .two
+        (TwoChains.two_unbounded down down' each) with
+    | ⟨_, ⟨_, .twoOn true⟩, unbounded⟩ => .inl (TwoChains.side_of_unbounded (b := true) unbounded)
+    | ⟨_, ⟨_, .twoOn false⟩, unbounded⟩ => .inr (TwoChains.side_of_unbounded (b := false) unbounded),
+   fun either _ _ _ branching _ unbounded => Unbounded.step_of_either either branching unbounded⟩
+
+/-! ### Without finite branching: the fan -/
+
+namespace Fan
+
+/-- Configurations: the root, and place `k` on the arm of length `n`. -/
+inductive Pos where
+  | root
+  | arm (n k : Nat)
+
+/-- The root steps to the start of every arm; an arm goes on to its end. -/
+inductive Step : Pos → Pos → Prop where
+  | out (n : Nat) : Step .root (.arm n 0)
+  | along (n k : Nat) : k < n → Step (.arm n k) (.arm n (k + 1))
+
+def process : Process Pos Unit :=
+  ⟨fun s _ t => Step s t⟩
+
+theorem arm_continues : ∀ (j k n : Nat), k + j ≤ n → Continues process j (.arm n k)
+  | 0, _, _, _ => trivial
+  | j + 1, k, n, within =>
+    ⟨(), .arm n (k + 1), .along n k (Nat.lt_of_le_of_lt (Nat.le_add_right k j) within),
+     arm_continues j (k + 1) n (Eq.subst (motive := fun x => x ≤ n) (Nat.succ_add k j).symm within)⟩
+
+theorem arm_bounded : ∀ (j k n : Nat), k ≤ n → Continues process j (.arm n k) → k + j ≤ n
+  | 0, _, _, within, _ => within
+  | j + 1, k, n, _, ⟨_, _, .along _ _ before, onward⟩ =>
+    Eq.subst (motive := fun x => x ≤ n) (Nat.succ_add k j) (arm_bounded j (k + 1) n before onward)
+
+/-- **The root has courses of every length.** -/
+theorem root_unbounded : Unbounded process .root
+  | 0 => trivial
+  | n + 1 => ⟨(), .arm n 0, .out n,
+      arm_continues n 0 n (Eq.subst (motive := fun x => x ≤ n) (Nat.zero_add n).symm (Nat.le_refl n))⟩
+
+/-- **No successor of the root is unbounded**: the arm of length `n` has no course of `n + 1`
+steps. So courses of every length need not continue one another where the branching is infinite. -/
+theorem no_unbounded_step : ¬ ∃ t, (∃ a, process.step .root a t) ∧ Unbounded process t
+  | ⟨_, ⟨_, .out n⟩, unbounded⟩ =>
+    Nat.lt_irrefl n (Eq.subst (motive := fun x => x ≤ n) (Nat.zero_add (n + 1))
+      (arm_bounded (n + 1) 0 n (Nat.zero_le n) (unbounded (n + 1))))
+
+end Fan
+
+end Lifting
 
 end Lasting
 

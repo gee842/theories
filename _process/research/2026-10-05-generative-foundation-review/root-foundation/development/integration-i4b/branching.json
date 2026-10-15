@@ -1,0 +1,17 @@
+{
+  "dir": "../mathematical-abstraction/completion/formal",
+  "checker": "check_finite_branching_correspondence.py",
+  "depth": 2,
+  "target": "FiniteBranchingCorrespondence",
+  "stem": "finite-branching-correspondence",
+  "namespace": "Becoming.FiniteBranchingCorrespondence",
+  "empty": [
+    "process",
+    "reach_iff_continues",
+    "unbounded_iff",
+    "finitelyBranching"
+  ],
+  "empty_comment": "# The relation as a process and the correspondences of reaching, unboundedness and listed children must have empty\n# reports. The other six take the classical steps FiniteBranching's statements need (excluded middle for\n# `EitherThroughout`, Lean's choice for the selection); the core laws they instantiate have empty reports.",
+  "doc": "Check the peripheral instance of the Becoming core's laws of lasting some course in the completion package's\nfinite-branching lifting.\n\n`FiniteBranchingCorrespondence` imports `Becoming.Lasting` and `FiniteBranching`, the completion package's lifting\nmodule (it imports `Std`; `check.py` in this folder checks the package under Lean 4.29.1). It is compiled with\nLean 4.30.0-rc2, as the other instance modules are, with the installed Mathlib on the path\n(`SYSTEMS_MATHLIB_PROJECT`, default `~/repos/生生不息`), though it imports none. This checker follows\n`check_continuation_correspondence.py`: module resolution, declaration scanning and passed-receipt matching are\nthose of the core checker, and every other module in the closure must match a passed receipt. The core's module\nindex covers its Lean root only, so `FiniteBranching` and this module are added from this folder, and\n`FiniteBranching` matches the package receipt `verification.json`, which `check.py` writes only after every module\ncompiled fresh and every audit passed. Each declaration's axiom report is recorded: it may name only the standard\naxioms (propext, Classical.choice, Quot.sound). The core does not import this module. Lean steps are reused as in\nthe core checker, keyed also by the Mathlib revision; `BECOMING_FRESH=1` runs every step. The run folder keeps the\nreceipt, the drivers and logs of the steps that ran, and a copy of each file `main` does not hold byte for byte.",
+  "scope": "On the Becoming core's laws of lasting some course: a relation is the process with one move whose steps are its pairs, and there FiniteBranching's Reach is the core's Lasting.Continues and its Unbounded the core's Lasting.Unbounded (reach_iff_continues, unbounded_iff), listed children making the process finitely branching (finitelyBranching). With Lean's classical reasoning supplying EitherThroughout (either_classical), the core's EitherThroughout.list and Lasting.Unbounded.step_of_either give finite_unbounded and unbounded_child; with Lean's choice selecting an unbounded successor, the core's Lasting.lifting and Lasting.unbounded_start_of_either give infinite_from_unbounded, finite_initial_lifting and labelled_lifting. The core shows that the unbounded successor, asked of every finitely branching process, is exactly EitherThroughout (Lasting.step_iff_either). FiniteBranching's statements keep their scope: a path's existence, not its effective selection or a physical infinity."
+}

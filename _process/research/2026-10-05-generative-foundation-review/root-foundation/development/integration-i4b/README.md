@@ -64,3 +64,41 @@ Landing order, after the core run with these bytes:
    - PrefixSafety.lean to the package receipt.
    It asserts the hard length caps; its English statement is 281 characters.
 4. Regenerate DECIDABILITY-INVENTORY.md, insert the study section, run the Lean catalogue, then `make research-render` and `make research-check`. The nine §9-bound records drift as at every landing that changes a §9 row.
+
+## Item 4: lifting where branching is finite (Becoming.Lasting)
+
+The I4a table read [FiniteBranching](../../../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean) as a join candidate. Becoming.Lasting stated that every admissible course stays, but not that some course goes on.
+
+What the branch holds:
+- `Becoming/Lasting.lean` imports `Becoming.Likeness`, gains a docstring bullet and a section "Lasting some course", taking it from 69 to 89 theorems (112 declarations). `scratch_build.py` reports every axiom report empty and no warnings; Courses, RenewalBridge, CoursesBridge, GranularityBridge and Bridge rebuild cleanly. Its contents:
+  - `Continues`, `Unbounded`, `FinitelyBranching`; `Continues.decided`;
+  - `list_throughout_not_not` and `Unbounded.step_not_not` (no premise);
+  - `Unbounded.step_of_either` and `unbounded_start_of_either` (given `EitherThroughout`);
+  - `runOf` and `lifting` (given a selection);
+  - the boundary `step_iff_either` (witness `TwoChains`, on Likeness's `Chains`);
+  - the counterexample `Fan.no_unbounded_step`.
+- `mathematical-abstraction/completion/formal/FiniteBranchingCorrespondence.lean`, the periphery instance (9 theorems), beside FiniteBranching. Four correspondences have empty reports; six use classical reasoning, with standard axioms only.
+- Its checker `check_finite_branching_correspondence.py`, from `make_prefix_checker.py branching.json FiniteBranching`.
+  - The script now takes `SPEC MODULE`; with no arguments it reproduces the PrefixSafety checker byte for byte.
+  - A dry run under Lean 4.30.0-rc2 passed, with its receipt in a scratch folder: 9 theorems, 18 Lean steps run and 18 reused. Only Becoming.Lasting lacked a receipt.
+- `apply_docs_lasting.py`, already applied:
+  - the Lasting docstring bullet;
+  - the chapter's §9 Lasting row, 89 theorems;
+  - a §9 periphery row for FiniteBranchingCorrespondence, and its name in the zh and en instance lists;
+  - the module bullet in `Becoming.lean`;
+  - a paragraph in the completion package README.
+- `apply_inventory_lasting.py`, already applied:
+  - `list_throughout_not_not` is classified `split` and `TwoChains.branching` `build`;
+  - `Lasting.step_iff_either` joins BOUNDARY, and the boundary sentence names it.
+  - A scratch run passes: proof-only 224 → 226, and theorems proving decidedness 136 → 137.
+- The I4a table: FiniteBranching becomes joined, and FiniteBranchingCorrespondence gets a row, giving 601 rows (joined 63, join candidate 61). The reach theme loses FiniteBranching.
+- `s_i4b4_zh.md` and `s_i4b4_en.md`, the study section (heading number left to the integrator).
+
+Landing order, after the core run with these bytes:
+1. Run `check_finite_branching_correspondence.py`; it must pass against the new core receipt.
+2. Run `update_records_lasting.py`. It rebinds market-supported-finite-transition, market-partial-correction-boundary and market-finite-support-obstruction (new Lasting hash, binding to the retained core receipt); the first also links the new record.
+3. Run `make_record_lasting.py SECTION`. It writes lifting-where-branching-is-finite (F01) and binds:
+   - Lasting.lean to the retained core receipt;
+   - the instance and FiniteBranching.lean to the instance receipt, from the start.
+   - Its English statement is 271 characters and its zh 86.
+4. Regenerate DECIDABILITY-INVENTORY.md, insert the study section, run the Lean catalogue, then `make research-render` and `make research-check`.
