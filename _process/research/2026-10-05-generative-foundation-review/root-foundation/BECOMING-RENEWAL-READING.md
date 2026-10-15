@@ -8898,6 +8898,83 @@ theorem extension_classification_robust_iff (living : C → Prop) (g : S → G �
 
 **边界。** 落地运行须在 `check_becoming.py` 中编译与审计两个新模块，再由 `becoming-p114-landing/apply_p114.py` 把 26 项记录绑定到回执（引用、绑定、别名与历史；论断、假设与 Ren 的话不变）。`DECIDABILITY-INVENTORY.py` 把 `Courses.release` 与 `Courses.inspection` 记作分辨相同的构造，把十条只在证明中用到可判定性的实例按所实例化之律分类。既有模块的字节不变。
 
+## 139. 脊柱运行之外的模块归类（整合 I4a，草稿待 Ren）：598 个模块，31 个较早的版本连到脊柱，64 条待接入的律
+
+2026-10-16。延续 §124、§127、§129、§134、§135 的 I 列。I3e 之后，主证明在脊柱运行之外的记录已无（§135）。I 列余下的是不属于任何记录的模块。Ren 在 I4 的选项中选了“Draft the table first”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-15-i4-classification-table.md)；选项文字由 AI 拟写）：先只读地列出每个模块所提议的类别与理由；对较早的版本，列出取代它的脊柱结果；作为研究草稿交 Ren 审阅，Ren 决定之前不标注、不移动任何东西。整合者另提一项：每行列出它所连到的脊柱律或模块，使“较早的版本”是一条边，不是判词。本节是这张表的说明。
+
+```text
+Result(s): 不新增、不改写记录；一张只读的归类表 MODULE-CLASSIFICATION.md（脚本生成），每行的类别是 AI 的读法
+Delta: 运行之外的 598 个文件名（558 个有活的路径，40 个只在快照文件夹中）逐一归类：
+       已接入 57、较早的版本 31、待接入的律 64、应用 310、工作证据 97、仅存快照 39；
+       较早的版本与待接入的律都读过双方的陈述，各连到所及的脊柱声明（边，不是判词）；
+       待接入的律按八个主题分组；与 P3 的分类（10 月 9 日）共有的 24 个模块逐行标出其 P3 类别
+Supplied premises / correspondence: 归类规则见 RUBRIC.md；导入、引用与用词相似是计算出的信号，类别由读陈述而定
+Evidence: 脚本 inventory.py、connect.py、similar.py、table.py（development/integration-i4a/），
+          以核心回执 20261015T164401.170999Z 的运行模块表（基础 3、核心 107、继承 75、桥接 7）；
+          行由四个子代理（Opus 5.5）与作者读出，作者抽查见下
+Boundary: 见下文“边界”
+Integration: 不改任何 Lean 模块、记录、§9 表或生成的总览；Ren 决定之前不标注、不移动、不删除
+```
+
+**总体与方法。** 总体是每个受跟踪的 Lean 文件，其完整模块名不在脊柱运行中，按文件名归组。一个路径中有以时间戳或运行编号命名的文件夹，或在运行、检查、来源副本、验证或历史文件夹之下，算作副本。一个文件名有多个活的路径时，取模块自己文件夹中的那个，开发与评审副本在后（14 个文件名另有活的副本，表中注出）。所及是由导入传递地计算的：到核心或桥接、到继承模块、只到基础，或不及运行。四个子代理各读一组家族，作者读 `_process` 与三个名字冲突的文件名。较早的版本与待接入的律必须读过双方的陈述；应用、工作证据与已接入可以只读文件头，表中逐行写明依据（读陈述 325 行，读文件头 273 行）。
+
+**总数。**
+
+| 类别 | 模块 | 定理 |
+|---|---:|---:|
+| 已接入 | 57 | 1400 |
+| 较早的版本 | 31 | 473 |
+| 待接入的律 | 64 | 1329 |
+| 应用 | 310 | 6516 |
+| 工作证据 | 97 | 745 |
+| 仅存快照 | 39 | 0 |
+| 合计 | 598 | 10463 |
+
+所及与类别交叉：不及运行的 148 个模块中有 31 条待接入的律与 19 个已接入者（后者是外围实例模块所读的外围来源，经实例模块及其检查器接入，自己不导入运行）；到核心或桥接的 36 个都是已接入者或工作证据。
+
+**较早的版本：31 条边。** 每一条的主定理都是一条脊柱律的特例或较早形式，关系分三种：`same`（脊柱逐字或同义陈述）、`spine-generalizes`（脊柱的律更一般）、`instance`（模块的定理是脊柱律的一个实例）。例如：
+- `Depletion.no_infinite_execution_under_depletion` 被逐字重述为 `Becoming.no_execution_of_depletion`（same）。
+- `GenerativeModel.laws_iff_endpoint_histories` 即 `Becoming.same_steps_iff_traces`（same）。
+- RenewalLiquidity 的前缀偿付是 `Stock.covered_iff_prefix` 的情形。
+- OneProcess 的组织与后果律作为一个确定过程，是 `closedBy_determined` 的情形。
+- FormationClosure 的形成律是 `Gated.change_passes_gate` 的两族情形。
+- 草稿 OpenFuture 的 `observation_limit` 是 `Readout.decoder_pair_iff` 的一个方向。
+
+根目录家族（31 个模块中 6 个较早的版本、24 个应用）是生成基础的较早一代，其中心定理今由核心陈述。较早的版本是边：模块保留，原定理与回执不变。
+
+**待接入的律：64 条，八个主题。** 每条是对任意过程、关系或历史量化的一般律，脊柱尚未陈述；每行写出最近的脊柱模块与要加的东西。
+1. 更新与闭合（8）：`lean/conditional/renewal` 的六个模块是一条连着的线，从更新势的下降、闭合特征、充分性到二者在同一执行上的连接，最近的是 Generation、Interdependence 与 Descent；另有 ResourceContinuation（Stock）与 SupportNecessity（Descent）。
+2. 比较、组合与描述（10）：经约化的组合同余、历史接口、过去谓词的关系性恢复、形成对称、关系性（非确定、换类型）的描述步等，最近的是 Joining、Readout、Description、Histories 与 Unfolding。
+3. 探究与判断（9）：可达问题之序、在已达叶上继续探究、按读取指标的回应、评审描述的覆盖、生产性限制为最大完成者、整体实践限制的粘合、关系边界的奇偶律等，最近的是 Inquiry、Viability、Contextual 与 Metaethics。
+4. 控制、学习与估值（9）：确切抽象在闭环下的保持、控制器记忆由观测词决定、协议的宏步与完成、估值的收缩与探索覆盖、跨尺度的界，最近的是 Coupling、Web、Granularity、Law、Weights 与 Tower。
+5. 所及、持续与有限否证（7）：严格失去所及的路程之界、可再生的持续、单向的门（非门步保持缺席）、König 提升、前缀闭与 Scott 闭的有限否证、未达者不计，最近的是 Attraction、Branching、Gated、Lasting、Horizon 与 Bridge。
+6. 对称与并列（2）：交换中心不变的规则服务一个中心恰当它不与他者并列；推到权重，最近的是 Selection 与 Weighted。
+7. 一般数学（17）：理想完备、谓词类的满容许、函数图、依赖族、签名与高阶的真、Tarski–Vaught、归纳与初始性、稠密序、潜在的真。最近的是 Context、Histories、Lasting 与 Horizon，但它们是一条远的一般数学线。
+8. 推导演算（2）：CoreTreeRearticulation 与 WholeTheoryDischarge 陈述推导演算的律；核心没有推导演算（同 §135 的理由）。
+
+最近的缺口是对既有核心模块的小扩充：PrefixSafety 与 IdealWarrant 之于 Horizon（`prefix_does_not_decide` 是一般分类的一个特定情形），FiniteBranching 之于 Lasting，PluralRecords 与 TieBreaking 之于 Selection，LivingOrganization 之于 Gated（Gated 要求未经门的步双向保持，单向形式未陈述），CorrectionRelations 的奇偶律之于 Contextual（P112 进行中，落地后该行改为较早的版本）。
+
+**与 P3 分类的对照。** P3（10 月 9 日）归类了 46 个含类型多态定理的伦理模块，其中 24 个在本表中，逐行标出 P3 类别。P3 的“已在核心上”指陈述直接写在基础的 `Process`／`Trace` 上，不指某条脊柱律陈述了它；本表给这些模块补上所及的脊柱声明。两者不冲突。
+
+**测量。** 本表的总体比 `SPINE-INTEGRATION.py` 的“运行之外的 Lean”严一些：后者活的路径中 510 个模块、10497 项定理，本表 508 个有定理的活模块、10463 项定理。差别有两个来源。一是副本规则：本表把以时间戳命名的文件夹、检查与验证文件夹也算作副本，并只读每个文件名的规范文件。二是名字冲突：测量按文件名的最后一段排除运行模块，于是同名的本地文件被藏在运行模块之后（Admission 被藏在 `Becoming.Admission` 之后；Continuation、Correspondence 同理）；本表按完整模块名匹配，找回这三个，并纠正了七个模块被误记为到核心或桥接的所及。
+
+**作者抽查。** 读双方陈述核对了六行：RenewalLiquidity → `Stock.covered_iff_prefix`、OneProcess → `closedBy_determined`、FormationClosure → `Gated.change_passes_gate`、Depletion → `no_execution_of_depletion`（逐字）、PrefixSafety（待接入）、LivingOrganization（待接入）。六行都成立。PrefixSafety 的理由原引 `finiteRefutable_iff_closed`，那是定义展开（`Iff.rfl`），改引承载内容的 `finiteRefutable_iff_prefixClosure`。
+
+**作者反审。**
+1. **类别是不是判词？** 不是。每行是 AI 的读法；较早的版本是一条边，说它的主定理在脊柱上以何种关系出现，不说模块无用。原定理、回执与记录都不变。
+2. **读文件头的 273 行可靠吗？** 只到其类别所需：应用、工作证据与快照不声称一条脊柱律；其中可能还有未发现的较早版本或一般律。较早的版本与待接入的律两类都读过陈述。
+3. **相似度提示误导吗？** 用词相似给出过错误的提示（GeneratedSelf → FallibleInquiry，因共用“residual”）；故规则要求读陈述，提示只用来找候选。
+4. **文件名归组会丢东西吗？** 14 个文件名另有活的副本；表只归类规范文件，副本在 `_process`、`drafts` 或开发文件夹中，作为工作证据。不同模块恰好同名而都在运行之外的情形，本表未单独分开。
+5. **所及是否确切？** 是由正则读导入计算的，不运行 Lean；一个模块所及的运行模块只说明它建在其上，不说明它的定理是否接入。
+
+**边界。** 本表不证明任何新定理，也不改变任何记录的论断。“较早的版本”“待接入的律”是提议，接入须写 Lean 并实查。Ren 决定之前不标注、不移动、不删除。
+
+**待 Ren 决定。**
+1. 是否在 31 个较早的版本的文件头加一行注记，指向所及的脊柱声明（边；模块保留）。
+2. 是否接入待接入的律，按主题进行。提议的次序：先是最近的缺口（对既有核心模块的小扩充），再是更新与闭合一线，再是比较、探究与控制三组。一般数学（17）与推导演算（2）是否属于脊柱是范围问题，不是缺口。
+3. 是否把 `SPINE-INTEGRATION.py` 改为按完整模块名排除运行模块，并采用本表的副本规则（数字会如上文所示地变动）。
+4. 应用（310）照旧；工作证据（97）与快照（39）作为证据保留，不删除。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -10272,3 +10349,64 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **Bridge.** On a frame's configurations, comparison under every classification of fresh contents is the bridge's criterion with excluded middle named (`frame_classification_robust_iff_of_em`); along a generative extension no excluded middle is needed, and preference under every classification is exactly keeping every fresh content (`extension_classification_robust_iff`).
 - **Measure.** Apart theorems 971 → 799 (416 → 380 used by nothing); theorems outside the main component 34 → 10. With the landing kit's aliases, all 26 records reach a class whose statement uses the base, and none rests only on apart theorems. The two families still do not reach each other; whether one is defined from the other awaits Ren.
 - These are instances, not new results: no record is added, and the 26 records gain references, bindings, aliases and a history entry at landing (`becoming-p114-landing/apply_p114.py`). Scratch build on main `c143e7d9`: empty axiom reports; the decidability inventory classifies every new row (347 → 363 statement rows). Not yet independently reviewed.
+
+**Modules outside the spine run classified, integration I4a (draft for Ren, 16 October 2026).** Continuing column I, section 139 covers the Lean modules that no record names. After I3e no record has its main proof outside the spine run (section 135). For I4 Ren chose “Draft the table first” ([source](../../../../sources/15-codex-theory-conversations/2026-10-15-i4-classification-table.md); the option text was written by the AI). The section introduces that table, `MODULE-CLASSIFICATION.md`, which is read-only and generated by a script. It changes no Lean module, record, §9 table or generated overview, and nothing is marked, moved or deleted before Ren decides.
+- **Population and method.**
+  - **Which modules.** Every tracked Lean file whose full module name the spine run does not compile, grouped by file stem: 598 stems. 558 have a live path; 40 are only in snapshot folders. The run is core receipt 20261015T164401.170999Z: 3 foundation, 107 core, 75 inherited and 7 bridge modules.
+  - **Copies.** A path counts as a copy when a folder in it is named by a timestamp or run id, or is a run, check, source-copy, verification or history folder. Where a stem has several live paths, the module's own folder comes before development and review copies. 14 stems have such a copy.
+  - **Reach.** Computed transitively through imports: core or bridge, an inherited module, the foundation only, or none.
+  - **Who read the rows.** Four Opus 5.5 subagents read one group of families each; the author read `_process` and three stems a name collision had hidden.
+  - **Categories.** Each category is an AI reading. Earlier versions and join candidates need both statements read. Other rows may rest on the header, and each row says which: 325 rest on statements read, 273 on the header.
+  - **Edges.** Each row names the spine declarations it reaches, as the integrator asked, so an earlier version is an edge, not a verdict.
+- **Totals.**
+
+  | Category | Modules | Theorems |
+  |---|---:|---:|
+  | joined | 57 | 1400 |
+  | earlier version | 31 | 473 |
+  | join candidate | 64 | 1329 |
+  | application | 310 | 6516 |
+  | working artifact | 97 | 745 |
+  | snapshot only | 39 | 0 |
+
+  - **Reaching nothing in the run (148 modules).** These include 31 join candidates and 19 joined modules. The 19 are periphery sources that an instance module reads and checks; they do not import the run themselves.
+  - **Reaching the core or bridge (36 modules).** All are joined modules or working artifacts.
+- **Earlier versions: 31 edges.** Each module's main theorem is a special case or earlier form of a spine law. The relation is one of three:
+  - `same`: for example, `Depletion.no_infinite_execution_under_depletion` is restated verbatim as `Becoming.no_execution_of_depletion`, and `GenerativeModel.laws_iff_endpoint_histories` is `Becoming.same_steps_iff_traces`;
+  - `spine-generalizes`: for example, RenewalLiquidity is a case of `Stock.covered_iff_prefix`, OneProcess of `closedBy_determined`, and FormationClosure of `Gated.change_passes_gate`;
+  - `instance`: for example, BoundaryModels is a two-state instance of `Readout.no_judge_of_merged`.
+
+  The root family of the generative basis has 6 earlier versions and 24 applications. It is the earlier generation, whose central theorems the core now states. The modules, their theorems and their receipts stay as they are.
+- **Join candidates: 64 general laws, in eight themes.** Each is quantified over arbitrary processes, relations or histories, and the spine does not state it. Each row names the nearest spine module and what would be added.
+  1. Renewal and closure (8). The six `conditional/renewal` modules form one connected line toward Generation, Interdependence and Descent.
+  2. Comparison, composition and description (10), toward Joining, Readout, Description, Histories and Unfolding.
+  3. Inquiry and judgment (9), toward Inquiry, Viability, Contextual and Metaethics.
+  4. Control, learning and valuation (9), toward Coupling, Web, Granularity, Law, Weights and Tower.
+  5. Reach, persistence and finite refutation (7), toward Attraction, Branching, Gated, Lasting and Horizon.
+  6. Symmetry and ties (2), toward Selection and Weighted.
+  7. General mathematics (17): completion, admission and truth. This is a distant line.
+  8. Derivation calculus (2). The core has no derivation calculus (section 135).
+
+  The closest gaps are small extensions of existing core modules:
+  - PrefixSafety and IdealWarrant → Horizon. `prefix_does_not_decide` is one case of their general classification.
+  - FiniteBranching → Lasting.
+  - PluralRecords and TieBreaking → Selection.
+  - LivingOrganization → Gated. Gated keeps both directions; the one-sided law is unstated.
+  - The parity law of CorrectionRelations → Contextual. P112 is in progress; when it lands, that row becomes an earlier version.
+- **P3.** 24 of the 46 ethics modules in the P3 classification (9 October) appear in the table, each with its P3 category. They agree once the meaning of P3's “already on the core” is fixed. P3 meant that a statement is written on the foundation's `Process` and `Trace`. It did not mean that a spine law states it.
+- **Measure.** `SPINE-INTEGRATION.py` counts 510 live modules and 10,497 theorems outside the run. The table counts 508 live modules with theorems and 10,463 theorems. The difference has two sources.
+  - **Copy rule.** The table's rule is stricter, and it reads one canonical file per stem.
+  - **Name collisions.** The measure leaves out run modules by the last component of their name, so a same-named local file disappears behind a run module (Admission behind `Becoming.Admission`). The table matches full module names. That restores Admission, Continuation and Correspondence, and corrects seven modules wrongly counted as reaching the core or bridge.
+- **Spot checks.** The author read both statements for six rows: RenewalLiquidity, OneProcess, FormationClosure, Depletion, PrefixSafety and LivingOrganization. All six held. PrefixSafety's reason had cited `finiteRefutable_iff_closed`, which holds by definition (`Iff.rfl`). It now cites `finiteRefutable_iff_prefixClosure`, which carries the content.
+- **Counter-review.**
+  1. **The categories are readings, not verdicts.** An earlier version is an edge.
+  2. **Header-read rows.** Rows read only at the header claim no spine law, and may hide further earlier versions or general laws.
+  3. **The word-similarity hint misled once.** GeneratedSelf → FallibleInquiry shared only “residual”. That is why the earlier-version and join-candidate categories require statements read.
+  4. **Grouping by stem.** It does not separate two distinct modules outside the run that happen to share a name.
+  5. **Reach is not proof.** It is computed by regular expressions over imports. Reaching a run module says what a module builds on, not that its theorems are joined.
+- **Awaiting Ren.**
+  1. Whether to add a header note on each earlier version, naming its spine declarations (an edge; the module stays).
+  2. Whether to join the candidates, theme by theme. The proposed order is the closest gaps first, then the renewal–closure line, then comparison, inquiry and control. Whether general mathematics and the derivation calculus belong on the spine is a question of scope, not a gap.
+  3. Whether `SPINE-INTEGRATION.py` should match run modules by full name and adopt the table's copy rule.
+
+  Applications stay as they are. Working artifacts and snapshots stay as evidence. Nothing is deleted.
