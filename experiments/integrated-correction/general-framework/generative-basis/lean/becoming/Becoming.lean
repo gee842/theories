@@ -107,6 +107,7 @@ import Becoming.Sensitivity
 import Becoming.Tail
 import Becoming.Courses
 import Becoming.Parting
+import Becoming.Onward
 import Becoming.Typicality
 import Becoming.Situations
 import Becoming.Propagation
@@ -1079,6 +1080,16 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   right at a step on every run exactly where no two runs part there. Where a list of N holds every
   configuration, a course of N steps from a configuration gives courses of every length, with no
   decidability (`Lasting.Continues`).
+* `Becoming.Onward` (L4): where a run goes on, with no premise beyond what each law names. Within
+  finitely many configurations a run is a course into a return: a run starts at a configuration
+  exactly where a course as long as the list of configurations does, exactly where courses of
+  every length do and exactly where a course leads to a configuration that returns, with no
+  decision and no selection; a run starts at each member of a family that keeps moving and stays
+  in it, and the laws along runs of `Becoming.Branching` (returning and no rise where nothing
+  merges, needing openness) hold for every such configuration with no run given. Where a test
+  recognizes, among enumerated moves, a step staying in the family, a run is built by search,
+  with no selection. Asked of every process, a run from every member of every family that keeps
+  moving is exactly dependent choice (`DependentSelection`).
 * `Becoming.Typicality` (L4): what counting says of the course that happens, with no premise.
   With natural weights p and q on two values, the squared deviations (q·a - p·b)² of the courses
   of n steps, weighted, add up exactly to n·p·q·(p + q)^n, so the courses deviating by at least d

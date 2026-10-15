@@ -100,6 +100,13 @@
         "zh": "同一模块：可能与必然被吸入。",
         "en": "The same module: possibly and necessarily drawn."
       }
+    },
+    {
+      "id": "where-a-run-goes-on",
+      "detail": {
+        "zh": "回答其下一步：有限多配置之内运行恰是通向返回的路径，不需判定也不需选取；沿运行的定律对每个能继续运动的配置成立，不给定运行（lossless_returns_iff、lossless_no_rise、lossless_unlisted）；对每个过程要求运行恰是依赖选择。",
+        "en": "Answers its next step: within finitely many configurations a run is a course into a return, with no decision and no selection; the laws along runs hold for every configuration that can keep moving, with no run given (lossless_returns_iff, lossless_no_rise, lossless_unlisted); asked of every process, a run is exactly dependent choice."
+      }
     }
   ],
   "counterexamples": [
@@ -332,8 +339,8 @@
     }
   ],
   "next_delta": {
-    "zh": "对每个能动的配置不加选择地陈述沿运行的定律（例如对有限的、可判定的过程）。",
-    "en": "State the laws along runs for every configuration that can move without a choice (for instance for finite, decidable processes)."
+    "zh": "在界内被吸入（见 limitations）。",
+    "en": "Being drawn in within a bound (see limitations)."
   },
   "history": [
     {
@@ -467,6 +474,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Branching.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Unfolding.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Branching.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16 P127（运行在何处延续，研究 §161）：下一步“对每个能动的配置不加选择地陈述沿运行的定律”由 where-a-run-goes-on 回答：有限多配置之内运行恰是通向返回的路径，不需判定也不需选取，沿运行的定律对每个能继续运动的配置成立，不给定运行；所以下一步改为 limitations 所列的在界内被吸入；related 加 where-a-run-goes-on。陈述、证明、hypotheses 与 limitations 不变：仍对本记录的定理成立。",
+      "en": "16 October 2026, P127 (where a run goes on, study section 161): the next step, stating the laws along runs for every configuration that can move without a choice, is answered by where-a-run-goes-on: within finitely many configurations a run is a course into a return, with no decision and no selection, and the laws along runs hold for every configuration that can keep moving with no run given; so the next step becomes being drawn in within a bound, listed under limitations; related adds where-a-run-goes-on. Statement, proofs, hypotheses and limitations unchanged: they still hold of this record's theorems."
     }
   ]
 }
