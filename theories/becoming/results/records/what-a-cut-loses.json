@@ -1,0 +1,527 @@
+{
+  "schema_version": 2,
+  "id": "what-a-cut-loses",
+  "title": {
+    "zh": "截断所失：任意耦合时程",
+    "en": "What a cut loses, for every schedule of couplings"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "对每个耦合时程：在 j 阶截断恰好失去 j + 1 次回应所携带的，恰在有按时间次序的更长的链到达处；时程安定时，有限阶精确恰在上游没有继续着的耦合的回路处；快于每个多项式的增长只经由这样的回路。",
+    "en": "For every schedule of couplings, a cut at order j loses exactly what j + 1 responses carry, where a longer chain in time order arrives; once the schedule settles, a finite order is exact exactly where no loop of continuing couplings lies upstream, the only way past every polynomial."
+  },
+  "laws": [
+    {
+      "zh": "一次回应把强度对给定水平所作的携带到一个条件，没有起始之差与部分之差；j 次回应依次携带。给出与携带对所读水平可加，所以所携带的量是低于 j 的各阶加上 j 次回应依次从它携带的：在 j 阶截断恰好失去 j + 1 次回应所携带的。所失随阶上升而不增。",
+      "en": "One response carries to a condition what the strengths make of given levels, with no starting gap and no gap of the part; j responses carry in turn. Giving and carrying are additive in the levels read, so the carried amount is the orders below j plus what j responses in turn carry from it: a cut at order j loses exactly what j + 1 responses carry. The loss does not grow as the order rises.",
+      "declarations": [
+        "Becoming.Remainder.mul_pos_nat",
+        "Becoming.Remainder.add_left_cancel_nat",
+        "Becoming.Remainder.le_of_add_le_add_left_nat",
+        "Becoming.responded",
+        "Becoming.responses",
+        "Becoming.responded_zero",
+        "Becoming.responded_succ",
+        "Becoming.carriedGive_add",
+        "Becoming.carriedFrom_add",
+        "Becoming.carried_eq_orderBelow_add",
+        "Becoming.carried_eq_carriedWithin_add",
+        "Becoming.responses_antitone"
+      ]
+    },
+    {
+      "zh": "部分在起始之后不给差、起始之差至多 D、每步进入每个条件的强度合计至多 M 时，无论耦合时程如何，截断所失至多是 Becoming.Loops 的界；自环恰好失去这个界。",
+      "en": "With the part giving no gap after the start, starting gaps at most D and the strengths into each condition summing to at most M at each step, what a cut loses is at most the bound of Becoming.Loops, whatever the schedule of couplings; the self-loop loses exactly that bound.",
+      "declarations": [
+        "Becoming.responses_le_missBound",
+        "Becoming.Loops.SelfLoop.responses_eq"
+      ]
+    },
+    {
+      "zh": "一次回应把一些携带到 c 到第 t 步，恰当在较早的某步有一个正水平耦合到 c。差别经 j 次或更多回应传到 c，是按时间的路线到达一个条件，再由 j 个耦合传下去，每个读前一个已到达的水平；低于 j 的各阶在 c、第 t 步漏掉一些，恰当差别如此传到那里。",
+      "en": "One response carries something to c by step t exactly where, at an earlier step, a positive level is coupled into c. A gap is conveyed through j responses or more where a route in time reaches a condition and j couplings carry it on, each reading a level the one before had reached; the orders below j miss something at c at step t exactly where a gap is so conveyed there.",
+      "declarations": [
+        "Becoming.CouplesAt",
+        "Becoming.couples_iff_couplesAt",
+        "Becoming.responded_pos_iff",
+        "Becoming.ConveyedThrough",
+        "Becoming.responses_pos_iff",
+        "Becoming.orderBelow_lt_iff",
+        "Becoming.carriedWithin_lt_iff",
+        "Becoming.carriedWithin_eq_iff"
+      ]
+    },
+    {
+      "zh": "按时间次序的 j 个耦合的链终于 c 到第 t 步，每个读前一个已到达的水平；它需要 j 步，去掉时间就是耦合的链。j 阶从每个起始在 c、第 t 步精确，恰当没有这样的 j + 1 个耦合的链终于那里；某个有限阶从每个起始在 c 每步精确，恰当这样的链有界，那时一个阶对一切起始都精确。",
+      "en": "A chain of j couplings in time order ends at c by step t, each reading a level the one before had reached; it needs j steps, and without time it is a chain of couplings. Order j is exact at c at step t from every start exactly where no such chain of j + 1 couplings ends there; a finite order is exact at c at every step from every start exactly where those chains are bounded, one order then serving every start.",
+      "declarations": [
+        "Becoming.CoupledIntoBy",
+        "Becoming.ConveyedThrough.coupledIntoBy",
+        "Becoming.conveyed_ones",
+        "Becoming.CoupledIntoBy.conveyedThrough_ones",
+        "Becoming.CoupledIntoBy.later",
+        "Becoming.CoupledIntoBy.shorten",
+        "Becoming.CoupledIntoBy.le_steps",
+        "Becoming.CoupledIntoBy.coupledInto",
+        "Becoming.exact_every_start_iff",
+        "Becoming.finite_order_iff_bounded",
+        "Becoming.finite_order_uniform_iff"
+      ]
+    },
+    {
+      "zh": "一个耦合复现，是它在任意晚的步读水平。差别到达一个复现耦合的回路、复现的耦合又通到 c 时，每绕一圈多出回路长度那么多次回应，所以每一阶都在某步在 c 漏掉一些，终于 c 的按时间次序的链没有上界。从第 N 步起没有耦合读水平时，N 阶处处、从每个起始都精确。",
+      "en": "A coupling recurs where it reads levels at steps as late as one likes. Where a gap reaches a loop of recurring couplings, and recurring couplings lead on to c, each time around adds the loop's length to the responses, so every order misses something at c and the chains in time order into c are unbounded. Where no coupling reads a level from step N on, order N is exact everywhere from every start.",
+      "declarations": [
+        "Becoming.CouplingRecurs",
+        "Becoming.CouplesAlways.recurs",
+        "Becoming.Conveyed.later",
+        "Becoming.ConveyedThrough.later",
+        "Becoming.conveyedThrough_along",
+        "Becoming.conveyedThrough_around",
+        "Becoming.carriedWithin_lt_of_recurring_loop",
+        "Becoming.unbounded_of_recurring_loop",
+        "Becoming.exact_of_reading_before"
+      ]
+    },
+    {
+      "zh": "每个耦合读一个列出的条件，所以比列表长一的耦合链经过一个回路，不需列出每个条件；上游没有回路处，终于 c 的按时间次序的链至多与条件一样多个耦合（列出每个条件时少一个）。耦合每步成立时它们复现，所以链有界恰当上游没有回路。",
+      "en": "Each coupling reads a listed condition, so a chain one longer than the list passes a loop, with no listing of every condition; where no loop lies upstream of c, a chain in time order into c has at most as many couplings as there are conditions (one fewer with every condition listed). Couplings holding at every step recur, so there the chains are bounded exactly where no loop lies upstream.",
+      "declarations": [
+        "Becoming.loop_of_coupledInto_succ",
+        "Becoming.no_chain_of_no_loop",
+        "Becoming.no_chain_of_no_loop_listed",
+        "Becoming.bounded_iff_no_loop"
+      ]
+    },
+    {
+      "zh": "从第 N 步起的强度去掉读 N 之前水平的每一个。一个耦合复现，恰当它从每一步起都耦合；N + j 个耦合的按时间次序的链，后 j 个从 N 起耦合。从 N 起的每个耦合都复现时，时程已安定；那时无论条件怎样列出，有限阶从每个起始在 c 精确，恰当上游没有这些耦合的回路。",
+      "en": "The strengths from step N on drop every reading of a level before N. A coupling recurs exactly where it couples from every step on; the last j of a chain in time order of N + j couplings couple from N on. The schedule has settled by step N where every coupling from N on recurs; then, for any list of conditions, a finite order is exact at c from every start exactly where no loop of those couplings lies upstream.",
+      "declarations": [
+        "Becoming.strengthsFrom",
+        "Becoming.couplesAt_strengthsFrom",
+        "Becoming.couples_strengthsFrom_iff",
+        "Becoming.couplingRecurs_iff",
+        "Becoming.CoupledIntoBy.tail",
+        "Becoming.SettledFrom",
+        "Becoming.settledFrom_zero_of_always",
+        "Becoming.bounded_iff_no_loop_from",
+        "Becoming.finite_order_iff_no_loop_from"
+      ]
+    },
+    {
+      "zh": "无论时程如何，上游没有从某步 N 起的耦合的回路时，终于 c 的按时间次序的链至多有 N 加条件数个耦合；所携带的量，即能到达的最大差别，至多是 D 乘一个这样次数的步数多项式：快于每个多项式只经由继续着的耦合的回路。",
+      "en": "Whatever the schedule, where no loop of the couplings from some step N on lies upstream of c, a chain in time order into c has at most N plus the number of conditions couplings, and the carried amount, the most difference that can arrive, is at most D times a polynomial in the steps of that degree: faster than every polynomial only through a loop of the couplings that go on.",
+      "declarations": [
+        "Becoming.no_chain_of_no_loop_from",
+        "Becoming.carried_le_polynomial_from"
+      ]
+    },
+    {
+      "zh": "Loops.Once 的回路只读第一步：没有两个耦合的按时间次序的链，从第二步起什么也不耦合，时程已安定。Becoming.Loops 关于精确的结果是实例：j 阶到第 j 步精确；上游没有回路即足够；耦合每步成立时的当且仅当，不再列出每个条件；耦合一次的回路 1 阶精确。",
+      "en": "The loop of Loops.Once reads the first step only: it has no chain of two couplings in time order, nothing couples from the second step on, and its schedule has settled. The results of Becoming.Loops on exactness are instances: order j is exact up to step j; no loop upstream suffices; the equivalence where couplings hold at every step, without its listing; order one is exact for the loop coupled once.",
+      "declarations": [
+        "Becoming.Loops.Once.reads_first",
+        "Becoming.Loops.Once.no_chain_of_two",
+        "Becoming.Loops.Once.none_from_one",
+        "Becoming.Loops.Once.settled",
+        "Becoming.Remainder.carriedWithin_exact",
+        "Becoming.Remainder.carriedWithin_exact_of_no_loop",
+        "Becoming.Remainder.finite_order_iff_no_loop",
+        "Becoming.Remainder.Once.exact"
+      ]
+    },
+    {
+      "zh": "条件各列一次时，对一切具有这些强度的读已立者之律及其两个平衡的流，从每个起始，c 处第 T 步的每个差至多是 j 阶所携带的，恰当没有 j + 1 个耦合的按时间次序的链终于那里。",
+      "en": "With each condition listed once: for every law of what has stood with these strengths and every two balanced flows of it, every gap at c at step T, from every start, is at most what order j carries exactly where no chain of j + 1 couplings in time order ends there.",
+      "declarations": [
+        "Becoming.gap_within_order_iff"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。耦合强度（RespondsWithin 的 k）是给出的界；耦合时程任意，条件的列表也任意，列出每个条件只在写入 every 的定理中。",
+      "en": "No axiom. The coupling strengths (the k of RespondsWithin) are supplied bounds; the schedule of couplings is arbitrary, and so is the list of conditions, every condition being listed only where a theorem writes every."
+    },
+    {
+      "zh": "界的定理中部分在起始之后不给差、起始之差至多 D、每步进入每个条件的强度至多 M；安定的当且仅当中时程到第 N 步已安定（SettledFrom），作为假设写入。",
+      "en": "In the bounds, the part giving no gap after the start, starting gaps at most D and the strengths into each condition at most M at each step; in the settled equivalences, the schedule settled by step N (SettledFrom), written in as a hypothesis."
+    },
+    {
+      "zh": "对一切律的定理中条件各列一次（Distinct），条件的相等可判定只在其证明中经 most_difference_arrives 用到。",
+      "en": "In the theorem for every law, each condition listed once (Distinct), with decided equality of conditions used only in its proof, through most_difference_arrives."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "每个耦合时程都终将安定：有限多个条件时古典地成立，但一个耦合是否复现这里不判定，核心不假定排中律。",
+      "en": "That every schedule settles at some step: classically true for finitely many conditions, but whether a coupling recurs is not decided here, and the core assumes no excluded middle.",
+      "kind": "scope"
+    },
+    {
+      "zh": "上游有回路不推出没有有限阶精确：回路只在第一步耦合时，没有两个耦合的按时间次序的链到达。",
+      "en": "A loop upstream does not imply that no finite order is exact: where the loop couples at the first step only, no chain of two couplings in time order arrives.",
+      "kind": "non-implication",
+      "witness": "Becoming.Loops.Once.no_chain_of_two"
+    },
+    {
+      "zh": "复现耦合的每个回路都使能到达的最大差别失控，以及失控多快：每个有限阶都不精确还不是速度。",
+      "en": "That every loop of recurring couplings makes the most difference that can arrive run away, or how fast: every finite order being inexact is no rate.",
+      "kind": "scope"
+    },
+    {
+      "zh": "一个给定的律有哪些强度与时程；实数的量、连续时间与一步读无穷多条件之律。",
+      "en": "Which strengths and schedule a given law has; real amounts, continuous time, and laws reading infinitely many conditions at a step.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "detail": {
+        "zh": "耦合一次的回路：一个条件、一个形成只在第一步把它的水平送回它自身；回路在上游，按时间次序的链却至多一个耦合，所以 1 阶从每个起始精确：要紧的是继续着的耦合的回路。",
+        "en": "The loop coupled once: one condition, whose one formation returns its level to it at the first step only; the loop lies upstream, yet chains in time order have at most one coupling, so order one is exact from every start: the loops that matter are those of the couplings that go on."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Remainder 的 66 项声明（58 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §154；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 66 declarations of Becoming.Remainder, 58 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 154; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "每个耦合时程是否终将安定（其确切强度）；复现耦合的回路是否都使最大差别失控、多快（谱半径）；实数的量、连续时间与无穷多条件；把截断所失与历史之和的损失连起来；独立审查；Ren 对读法的判断。",
+    "en": "Whether every schedule settles, and the exact strength of that claim; whether every loop of recurring couplings makes the most difference that can arrive run away, and how fast (a spectral radius); real amounts, continuous time and infinitely many conditions; joining what a cut loses to the losses of the sum over histories; an independent review; Ren's judgment on the readings."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-12 问回路：“how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”；2026-10-16 决定 Becoming.Loops 的读法时，把只在某些步成立的耦合留为开放。本结果回答 how-a-carried-difference-grows 的 next_delta 首项。读法（AI 的，待 Ren）：精确余项是 Ren 取为与历史之和同一结构的展开的余项，形同 Neumann 级数的余项，回应按时间次序，如 Dyson 级数；所失是截断的，不是理论的。决定截断所失的是耦合的时间次序：要紧的回路是继续着的耦合的回路，耦合停止的回路是过去的。能到达的最大差别快于每个多项式只经由继续着的耦合的回路；是否经由每个这样的回路不推出。数学是标准的：线性时变比较系统的 Neumann、Dyson 或 Peano–Baker 余项，恰在按时间次序的路径有界处幂零。",
+    "en": "Ren, 12 October 2026, on the loops: “how how accurate can we do that uh what is the limitation do we have losses”, with the goal “move towards 100%”; on 16 October, deciding the readings of Becoming.Loops, Ren left couplings at only some steps open. This result answers the first item of how-a-carried-difference-grows' next_delta. Readings (the AI's, pending Ren): the exact remainder is the remainder of the expansion Ren took as the same structural kind as the sum over histories, in the form of a Neumann series's remainder, its responses in time order as in the Dyson series; the loss is the cut's, not the theory's. What decides a cut's loss is the time order of the couplings: the loops that matter are those of the couplings that go on, and a loop whose couplings stop is passing. The most difference that can arrive outgrows every polynomial only through a loop of the couplings that go on; whether through every such loop is not derived. The mathematics is standard: the Neumann, Dyson or Peano–Baker remainder of a linear time-varying comparison system, nilpotent exactly where the time-respecting paths are bounded."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+  "aliases": [
+    "what a cut loses",
+    "截断所失",
+    "exact remainder",
+    "精确余项",
+    "chain of couplings in time order",
+    "按时间次序的耦合链",
+    "time-respecting path",
+    "coupling that recurs",
+    "复现的耦合",
+    "settled schedule",
+    "安定的时程",
+    "couplings that come and go",
+    "时有时无的耦合",
+    "loop of the couplings that go on",
+    "继续着的耦合的回路"
+  ],
+  "dependencies": [
+    {
+      "id": "how-a-carried-difference-grows",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用各阶（carriedFrom、carriedWithin、orderBelow）、耦合的链与回路（Couples、CoupledInto、OnLoop、Upstream、loop_of_coupledInto）、各阶的界（carriedWithin_le_withinBound、carried_le_carriedWithin_add）、自环与 Loops.Once。",
+        "en": "Reuses the orders (carriedFrom, carriedWithin, orderBelow), the chains and loops of couplings (Couples, CoupledInto, OnLoop, Upstream, loop_of_coupledInto), the bounds on the orders (carriedWithin_le_withinBound, carried_le_carriedWithin_add), the self-loop and Loops.Once."
+      },
+      "interface": {
+        "output": {
+          "zh": "各阶及其界；耦合的链与回路；比条件数长的链经过回路；自环与耦合一次的回路。",
+          "en": "The orders and their bounds; the chains and loops of couplings; a chain longer than the conditions passing a loop; the self-loop and the loop coupled once."
+        },
+        "input": {
+          "zh": "精确余项；按时间次序的链；复现的耦合与安定的时程；Becoming.Loops 的精确性结果作为实例。",
+          "en": "The exact remainder; the chains in time order; recurring couplings and settled schedules; the exactness results of Becoming.Loops as instances."
+        },
+        "conditions": {
+          "zh": "耦合强度是给出的界；条件的列表任意。",
+          "en": "The coupling strengths as supplied bounds; any list of conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean"
+      }
+    },
+    {
+      "id": "how-much-difference-arrives",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 carried、carriedGive、Conveyed、carried_pos_iff、most_difference_arrives 与 gap：精确余项展开所携带的量，对一切律的陈述经 most_difference_arrives 得出。",
+        "en": "Reuses carried, carriedGive, Conveyed, carried_pos_iff, most_difference_arrives and gap: the exact remainder expands the carried amount, and the statement for every law follows through most_difference_arrives."
+      },
+      "interface": {
+        "output": {
+          "zh": "所携带的量及其一步；它为正恰在差别按时间传到处；它是能到达的最大差别。",
+          "en": "The carried amount and its step; it is positive exactly where a gap is conveyed in time; it is the most difference that can arrive."
+        },
+        "input": {
+          "zh": "所失的位置；对一切律的当且仅当。",
+          "en": "Where a cut loses; the equivalence for every law."
+        },
+        "conditions": {
+          "zh": "对一切律时条件各列一次，条件的相等可判定只在证明中。",
+          "en": "For every law, each condition listed once, with decided equality of conditions only in proofs."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 revisits_within、gap_of_le 与 gap_of_lt：每个耦合读一个列出的条件，比列表长一的链两次经过同一个条件。",
+        "en": "Reuses revisits_within, gap_of_le and gap_of_lt: each coupling reads a listed condition, so a chain one longer than the list passes some condition twice."
+      },
+      "interface": {
+        "output": {
+          "zh": "列表所持的序列在列表长度之内重访。",
+          "en": "A sequence held by a list revisits within the length of the list."
+        },
+        "input": {
+          "zh": "比列表长一的耦合链经过回路，不需列出每个条件。",
+          "en": "A chain of couplings one longer than the list passes a loop, with no listing of every condition."
+        },
+        "conditions": {
+          "zh": "序列的项都在列表中：每个耦合读一个列出的条件。",
+          "en": "The terms of the sequence are listed: each coupling reads a listed condition."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "losses-of-the-sum-over-histories",
+      "detail": {
+        "zh": "Ren 取为同一结构的另一种积分：那里截断历史之和恰好漏掉所弃者；这里在 j 阶截断恰好失去更多次回应所携带的。两者尚未连起来。",
+        "en": "The other integration Ren took as the same structural kind: there a truncation of the sum over histories misses exactly what it drops; here a cut at order j loses exactly what more responses carry. The two are not yet joined."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+      "role": "proof",
+      "sha256": "346bf7aa5c64896066189d4388cfe735f2be7264526e77e9590a2ea4991d0a71",
+      "declarations": [
+        "Becoming.Remainder.mul_pos_nat",
+        "Becoming.Remainder.add_left_cancel_nat",
+        "Becoming.Remainder.le_of_add_le_add_left_nat",
+        "Becoming.responded",
+        "Becoming.responses",
+        "Becoming.responded_zero",
+        "Becoming.responded_succ",
+        "Becoming.carriedGive_add",
+        "Becoming.carriedFrom_add",
+        "Becoming.carried_eq_orderBelow_add",
+        "Becoming.carried_eq_carriedWithin_add",
+        "Becoming.responses_antitone",
+        "Becoming.responses_le_missBound",
+        "Becoming.Loops.SelfLoop.responses_eq",
+        "Becoming.CouplesAt",
+        "Becoming.couples_iff_couplesAt",
+        "Becoming.responded_pos_iff",
+        "Becoming.ConveyedThrough",
+        "Becoming.responses_pos_iff",
+        "Becoming.orderBelow_lt_iff",
+        "Becoming.carriedWithin_lt_iff",
+        "Becoming.carriedWithin_eq_iff",
+        "Becoming.CoupledIntoBy",
+        "Becoming.ConveyedThrough.coupledIntoBy",
+        "Becoming.conveyed_ones",
+        "Becoming.CoupledIntoBy.conveyedThrough_ones",
+        "Becoming.CoupledIntoBy.later",
+        "Becoming.CoupledIntoBy.shorten",
+        "Becoming.CoupledIntoBy.le_steps",
+        "Becoming.CoupledIntoBy.coupledInto",
+        "Becoming.exact_every_start_iff",
+        "Becoming.finite_order_iff_bounded",
+        "Becoming.finite_order_uniform_iff",
+        "Becoming.CouplingRecurs",
+        "Becoming.CouplesAlways.recurs",
+        "Becoming.Conveyed.later",
+        "Becoming.ConveyedThrough.later",
+        "Becoming.conveyedThrough_along",
+        "Becoming.conveyedThrough_around",
+        "Becoming.carriedWithin_lt_of_recurring_loop",
+        "Becoming.unbounded_of_recurring_loop",
+        "Becoming.exact_of_reading_before",
+        "Becoming.loop_of_coupledInto_succ",
+        "Becoming.no_chain_of_no_loop",
+        "Becoming.no_chain_of_no_loop_listed",
+        "Becoming.bounded_iff_no_loop",
+        "Becoming.strengthsFrom",
+        "Becoming.couplesAt_strengthsFrom",
+        "Becoming.couples_strengthsFrom_iff",
+        "Becoming.couplingRecurs_iff",
+        "Becoming.CoupledIntoBy.tail",
+        "Becoming.no_chain_of_no_loop_from",
+        "Becoming.SettledFrom",
+        "Becoming.settledFrom_zero_of_always",
+        "Becoming.bounded_iff_no_loop_from",
+        "Becoming.finite_order_iff_no_loop_from",
+        "Becoming.carried_le_polynomial_from",
+        "Becoming.Loops.Once.reads_first",
+        "Becoming.Loops.Once.no_chain_of_two",
+        "Becoming.Loops.Once.none_from_one",
+        "Becoming.Loops.Once.settled",
+        "Becoming.Remainder.carriedWithin_exact",
+        "Becoming.Remainder.carriedWithin_exact_of_no_loop",
+        "Becoming.Remainder.finite_order_iff_no_loop",
+        "Becoming.Remainder.Once.exact",
+        "Becoming.gap_within_order_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "role": "proof",
+      "sha256": "778d3763de5a77a54f13a24e1eddda05c8f76e197ab1bd0b442cb895b2ef2c8c",
+      "declarations": [
+        "Becoming.carriedFrom",
+        "Becoming.carriedWithin",
+        "Becoming.orderBelow",
+        "Becoming.carriedGive_of_part",
+        "Becoming.carriedGive_of_rest",
+        "Becoming.carriedFrom_carried",
+        "Becoming.carriedFrom_congr",
+        "Becoming.carriedWithin_eq_carriedFrom",
+        "Becoming.carriedWithin_le_carried",
+        "Becoming.orderBelow_mono",
+        "Becoming.carried_le_carriedWithin_add",
+        "Becoming.carriedWithin_le_withinBound",
+        "Becoming.inflow",
+        "Becoming.Couples",
+        "Becoming.CoupledInto",
+        "Becoming.coupledInto_zero",
+        "Becoming.CoupledInto.succ",
+        "Becoming.CoupledInto.shorten",
+        "Becoming.OnLoop",
+        "Becoming.Upstream",
+        "Becoming.CouplesAlways",
+        "Becoming.loop_of_coupledInto",
+        "Becoming.Loops.zero_or_pos",
+        "Becoming.Loops.mul_lt_mul_of_pos",
+        "Becoming.Loops.le_mul_of_pos",
+        "Becoming.Loops.missBound",
+        "Becoming.Loops.orderSum",
+        "Becoming.Loops.withinBound_eq",
+        "Becoming.Loops.SelfLoop.strengths",
+        "Becoming.Loops.SelfLoop.attained",
+        "Becoming.Loops.Once.strengths"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "7cbd5dd1a8dca8305d3577091db9e2462c7109c75bfde6c68e0c6564aa012cd1",
+      "declarations": [
+        "Becoming.carried",
+        "Becoming.carriedGive",
+        "Becoming.Conveyed",
+        "Becoming.carried_pos_iff",
+        "Becoming.most_difference_arrives",
+        "Becoming.gap",
+        "Becoming.Flow.exchangeGap",
+        "Becoming.ExchangeLaw.RespondsWithin",
+        "Becoming.Propagation.add_congr",
+        "Becoming.Propagation.pos_of_mul_pos",
+        "Becoming.Propagation.mem_steps_upto",
+        "Becoming.Propagation.le_of_mem_steps_upto"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "declarations": [
+        "Becoming.revisits_within",
+        "Becoming.gap_of_le",
+        "Becoming.gap_of_lt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.Nonanticipating",
+        "Becoming.Flow.Follows"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow",
+        "Becoming.Flow.Balances",
+        "Becoming.steps",
+        "Becoming.total_add",
+        "Becoming.total_pos",
+        "Becoming.total_pos_of_mem",
+        "Becoming.lt_iff_pos"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "role": "proof",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "declarations": [
+        "Becoming.total_congr_on",
+        "Becoming.Distinct"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "declarations": [
+        "Becoming.Web"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "bf81218edd5c67f967e663472ef1d01fe66866b82f2f9025363941bb2a9f17b9",
+      "declarations": [
+        "Becoming.total"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "d4336fd1f5b2bb20a1eb9902edafe130690bd7466099cc1098e711f1375238b3"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "28baa46f92ca16a070897e5daabdcba6bc6243ed685002fa6be2454e12144f5c"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
+      "role": "provenance",
+      "sha256": "cf83ac3219b39f47641327d95eb072286d6bd0b21452ab9351642abd895879bc"
+    }
+  ],
+  "proof_bindings": [],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，回答 how-a-carried-difference-grows 的 next_delta 首项“时有时无的耦合上的回路”（P120）；研究 §154。",
+      "en": "16 October 2026: added, answering the first item of how-a-carried-difference-grows' next_delta, loops whose couplings come and go (P120); study section 154."
+    }
+  ],
+  "text_versions": []
+}

@@ -245,8 +245,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T195010.513125Z): the 137 declarations of Becoming.Loops, 113 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 152; not independently reviewed."
   },
   "next_delta": {
-    "zh": "时有时无的耦合上的回路；比强度之积更细的失控速度（谱半径）；实数的强度与量、连续时间与无穷多条件；一个律自身失控所需的回应下界；回路怎样在展开中形成（汲取与 Becoming.Runaway 的策略相遇处）；把各阶与历史之和连起来；独立审查。",
-    "en": "Loops whose couplings come and go; how fast a runaway is beyond the product of the strengths (a spectral radius); real strengths and amounts, continuous time and infinitely many conditions; the lower bounds on responses a particular law's own runaway needs; how loops form, where a draw meets Becoming.Runaway's policies; joining the orders to the sum over histories; an independent review."
+    "zh": "比强度之积更细的失控速度（谱半径）；实数的强度与量、连续时间与无穷多条件；一个律自身失控所需的回应下界；回路怎样在展开中形成（汲取与 Becoming.Runaway 的策略相遇处）；把各阶与历史之和连起来；独立审查。",
+    "en": "How fast a runaway is beyond the product of the strengths (a spectral radius); real strengths and amounts, continuous time and infinitely many conditions; the lower bounds on responses a particular law's own runaway needs; how loops form, where a draw meets Becoming.Runaway's policies; joining the orders to the sum over histories; an independent review."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 把理论比作量子动力学与“Fermi's diagrams”，说：“there are so many patterns and loops but we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”。本结果回答 how-much-difference-arrives 的 next_delta 首项（回路的一般理论），以及 comparison-where-the-rest-responds 与 runaway-distance-unregistered 中“一般地定义回路并陈述失控”（在其余遵从具有给定耦合强度之律处）。读法（Ren 2026-10-16 决定）：Ren 指的是费曼图，相合是结构上的，不是物理上的；Ren 所问的积分，对不确定的律，是历史之和及其四种损失（P82，losses-of-the-sum-over-histories），这里的各阶是同一结构的另一种，按回应次数组织，如费曼图按顶点数，两者尚未连起来；只有回路使差别失控，失控是快于每个多项式，说的是能到达的最大差别：只经由回路，且经由每个每步耦合的回路，只在某些步成立的耦合开放；一个世界有哪些回路是其情境的一部分（Ren 2026-10-16：“the situation makes it true”），回路在展开之中形成与消散，定理按每步的样子取用它们，暂取此形式，待有回路形成之定理时可修订。数学是标准的：线性比较系统的 Picard 迭代，耦合图无环时幂零。",
@@ -341,6 +341,13 @@
       "detail": {
         "zh": "回答 Ren 2026-10-12 同一问题的另一半：那里历史之和的四种损失（截断恰好漏掉所弃者；回路使历程倍增）；这里所携带的差别按阶展开，截断所漏有界且达到，有限阶恰在上游没有回路处没有损失。",
         "en": "Answers the other half of Ren's question of 12 October: there, four losses of the sum over histories (a truncation misses exactly what it drops; loops double the courses); here, the carried difference expands by order, a cut misses at most a bound that is attained, and a finite order loses nothing exactly where no loop lies upstream."
+      }
+    },
+    {
+      "id": "what-a-cut-loses",
+      "detail": {
+        "zh": "对每个耦合时程回答其下一步首项“时有时无的耦合上的回路”：截断所失恰是更多次回应所携带的，恰在有按时间次序的更长的链处；时程安定时有限阶精确恰在上游没有继续着的耦合的回路；没有这样的回路时有多项式界。",
+        "en": "Answers the first item of its next step, loops whose couplings come and go, for every schedule: a cut loses exactly what more responses carry, exactly where a longer chain in time order arrives; once the schedule has settled, a finite order is exact exactly where no loop of the couplings that go on lies upstream; without such a loop the growth is polynomial."
       }
     }
   ],
@@ -691,6 +698,10 @@
     {
       "zh": "2026-10-16：Ren 决定三条读法（来源 sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md）。一、取 AI 的措辞：Ren 指的是费曼图，相合是结构上的；Ren 所问的积分对不确定的律是历史之和及其四种损失，这里的各阶是同一结构的另一种，两者尚未连起来。二、“只有回路使差别失控”是对的，附限定：失控是快于每个多项式，说的是能到达的最大差别，只在某些步成立的耦合开放。三、取精炼的形式：一个世界有哪些回路是其情境的一部分，回路在展开中形成与消散，待有回路形成之定理时可修订。correspondence 改为所决定的读法；next_delta 去掉“Ren 对读法的判断”，“与 Becoming.Runaway 的策略相连”并入回路怎样在展开中形成，加把各阶与历史之和连起来；references 加来源；Loops.lean 的模块说明、理论第 2 节的段落与研究 §152 相应修改（只改说明与读法）。陈述与证明不变。",
       "en": "16 October 2026: Ren decided the three readings (source sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md). (1) Taken in the AI's wording: Ren meant Feynman diagrams, the match structural; the integration Ren asked about, for laws that are not determined, is the sum over histories with its four losses, and the orders are the same structural kind, the two not yet joined. (2) “Only a loop makes a difference run away” is right, with the qualifiers that running away means faster than every polynomial, that it is of the most difference that can arrive, and that couplings at only some steps are open. (3) Taken in a refined form: which loops a world has is part of its situation, loops forming and dissolving within the unfolding, open to revision once a loop-formation theorem exists. correspondence states the decided readings; next_delta drops Ren's judgment on the readings, folds the link to Becoming.Runaway's policies into how loops form, and adds joining the orders to the sum over histories; references add the source; Loops.lean's module docstring, the chapter's §2 paragraph and study section 152 change accordingly (comments and readings only). Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026-10-16 P120（截断所失，研究 §154）：回答下一步首项“时有时无的耦合上的回路”，就精确性而言对每个耦合时程，就增长而言在一个方向：能到达的最大差别快于每个多项式，只经由继续着的耦合的回路（carried_le_polynomial_from）；是否经由每个这样的回路、多快，由新记录的下一步承接，所以删去此项；related 加 what-a-cut-loses。陈述与证明不变；does_not_show 仍对本记录的定理成立；correspondence 保持 Ren 所决定的读法。",
+      "en": "16 October 2026, P120 (what a cut loses, study section 154): answers the first item of the next step, loops whose couplings come and go, for exactness for every schedule of couplings, and for growth in one direction: the most difference that can arrive outgrows every polynomial only through a loop of the couplings that go on (carried_le_polynomial_from); whether through every such loop, and how fast, the new record's next step carries on, so the item is removed; related adds what-a-cut-loses. Statement and proofs unchanged; does_not_show still holds of this record's theorems; correspondence keeps the readings Ren decided."
     }
   ],
   "text_versions": []
