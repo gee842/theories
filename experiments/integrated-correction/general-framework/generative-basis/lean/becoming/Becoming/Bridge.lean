@@ -23,6 +23,7 @@ import BecomingCompatibility
 import RelationalBecoming
 import ClassificationRobustJudgment
 import JointInterpretation
+import AlignmentDirection
 
 /-!
 # Existing interfaces as instances of the spine
@@ -93,6 +94,12 @@ imports none of these modules; the dependency runs from them to the core.
   characterization of inclusion by every weighting is `every_weighting_iff`
   (`all_weights_preserve_mass_iff_by_core`) and its chance floor is `mass_mono`
   (`fulfillment_floor_by_core`).
+* Every protection-first comparison of `PracticalJudgment` is `BetterAt` on the frame of its
+  options, realizing the protected claims as basic and the gains as living (`Judgment.frame`,
+  `Judgment.better_iff_betterAt`), with the same frontier (`Judgment.frontier_iff`). So the
+  alignment direction's comparison of plans and its frontier are the spine's
+  (`alignment_better_iff_betterAt`, `alignment_frontier_iff`). `BetterAt` states J1/J2,
+  commitments outside the core; G0 is neither used nor asserted here.
 * `FallibleInspection`'s Boolean explanation, on complete reports, is the core's explanation by
   fallible witnesses (`explains_complete_iff`, `compatible_complete_iff`), so its
   characterization of complete diagnosability by cross-separation is
@@ -959,6 +966,104 @@ theorem every_nat_score_trades_by_core (score : Nat → Nat)
     comparison protection_successor_extension 0
 
 end ProtectionPriority
+
+/-! ## Protection-first comparisons are comparisons of configurations -/
+
+section JudgedFrames
+
+namespace Judgment
+
+variable {H Cl G : Type} {protect : H → Cl → Prop} {gain : H → G → Prop}
+
+/-- The frame of a protection-first comparison: its options are the configurations, realizing the
+protected claims on the left and the gains on the right; it has no moves. -/
+def frame (protect : H → Cl → Prop) (gain : H → G → Prop) : Frame H Unit (Sum Cl G) :=
+  ⟨⟨fun _ _ _ => False⟩, fun h c => match c with
+    | .inl x => protect h x
+    | .inr y => gain h y⟩
+
+/-- The protected claims of a judged frame. -/
+def protecting : Sum Cl G → Prop
+  | .inl _ => True
+  | .inr _ => False
+
+/-- The gains of a judged frame. -/
+def gaining : Sum Cl G → Prop
+  | .inl _ => False
+  | .inr _ => True
+
+theorem included_protecting_iff {a b : H} :
+    PracticalJudgment.Included (fun c => protecting c ∧ (frame protect gain).realized a c)
+        (fun c => protecting c ∧ (frame protect gain).realized b c) ↔
+      PracticalJudgment.Included (protect a) (protect b) :=
+  ⟨fun included x held => (included (.inl x) ⟨True.intro, held⟩).2,
+   fun included c => match c with
+    | .inl x => fun ⟨_, held⟩ => ⟨True.intro, included x held⟩
+    | .inr _ => fun ⟨no, _⟩ => False.elim no⟩
+
+theorem included_gaining_iff {a b : H} :
+    PracticalJudgment.Included (fun c => gaining c ∧ (frame protect gain).realized a c)
+        (fun c => gaining c ∧ (frame protect gain).realized b c) ↔
+      PracticalJudgment.Included (gain a) (gain b) :=
+  ⟨fun included y held => (included (.inr y) ⟨True.intro, held⟩).2,
+   fun included c => match c with
+    | .inl _ => fun ⟨no, _⟩ => False.elim no
+    | .inr y => fun ⟨_, held⟩ => ⟨True.intro, included y held⟩⟩
+
+theorem strict_iff {p p' q q' : Prop} (first : p ↔ p') (second : q ↔ q') :
+    (p ∧ ¬ q) ↔ (p' ∧ ¬ q') :=
+  ⟨fun ⟨x, y⟩ => ⟨first.mp x, fun z => y (second.mpr z)⟩,
+   fun ⟨x, y⟩ => ⟨first.mpr x, fun z => y (second.mp z)⟩⟩
+
+/-- **Every protection-first comparison is `BetterAt` on its frame**: J1/J2 with protected claims
+of one kind and gains of another compares options exactly as `BetterAt` compares the
+configurations of the frame realizing both, the protected claims as basic and the gains as living. -/
+theorem better_iff_betterAt {a b : H} :
+    PracticalJudgment.Better protect gain a b ↔
+      BetterAt (frame protect gain) protecting gaining a b :=
+  have pba := (included_protecting_iff (protect := protect) (gain := gain) (a := b) (b := a)).symm
+  have pab := (included_protecting_iff (protect := protect) (gain := gain) (a := a) (b := b)).symm
+  have gba := (included_gaining_iff (protect := protect) (gain := gain) (a := b) (b := a)).symm
+  have gab := (included_gaining_iff (protect := protect) (gain := gain) (a := a) (b := b)).symm
+  ⟨fun better => match better with
+    | .inl strict => .inl ((strict_iff pba pab).mp strict)
+    | .inr ⟨back, forth, strict⟩ => .inr ⟨pba.mp back, pab.mp forth, (strict_iff gba gab).mp strict⟩,
+   fun better => match better with
+    | .inl strict => .inl ((strict_iff pba pab).mpr strict)
+    | .inr ⟨back, forth, strict⟩ =>
+      .inr ⟨pba.mpr back, pab.mpr forth, (strict_iff gba gab).mpr strict⟩⟩
+
+/-- **Its frontier is the frontier of `BetterAt`.** -/
+theorem frontier_iff {eligible : H → Prop} {a : H} :
+    PracticalJudgment.Frontier eligible (PracticalJudgment.Better protect gain) a ↔
+      PracticalJudgment.Frontier eligible (BetterAt (frame protect gain) protecting gaining) a :=
+  ⟨fun ⟨admitted, unbeaten⟩ =>
+    ⟨admitted, fun b other better => unbeaten b other (better_iff_betterAt.mpr better)⟩,
+   fun ⟨admitted, unbeaten⟩ =>
+    ⟨admitted, fun b other better => unbeaten b other (better_iff_betterAt.mp better)⟩⟩
+
+end Judgment
+
+/-- **The alignment direction compares plans by `BetterAt`**: plans are the configurations of the
+frame realizing each claim's protection and its realization, so `transfer_over_expansion` and the
+other comparisons of `AlignmentDirection` are comparisons of the spine. -/
+theorem alignment_better_iff_betterAt {a b : Nat} :
+    PracticalJudgment.Better AlignmentDirection.protection AlignmentDirection.realization a b ↔
+      BetterAt (Judgment.frame AlignmentDirection.protection AlignmentDirection.realization)
+        Judgment.protecting Judgment.gaining a b :=
+  Judgment.better_iff_betterAt
+
+/-- **Its frontier of eligible plans is the frontier of `BetterAt`**, so `expansion_excluded`
+excludes expansion from the frontier of the spine's comparison. -/
+theorem alignment_frontier_iff {a : Nat} :
+    PracticalJudgment.Frontier AlignmentDirection.eligible
+        (PracticalJudgment.Better AlignmentDirection.protection AlignmentDirection.realization) a ↔
+      PracticalJudgment.Frontier AlignmentDirection.eligible
+        (BetterAt (Judgment.frame AlignmentDirection.protection AlignmentDirection.realization)
+          Judgment.protecting Judgment.gaining) a :=
+  Judgment.frontier_iff
+
+end JudgedFrames
 
 /-! ## Chance floors through the weighted mass -/
 
