@@ -87,12 +87,14 @@ Ren, 12 October 2026, on the loops: “how how accurate can we do that uh what i
 | provenance | [2026-10-12-move-towards-100.md](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md) | — |
 | provenance | [2026-10-16-loops-readings-and-delegated-choices.md](../../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T212327.206058Z/verification.json) | — |
 
 Aliases / 别名: `what a cut loses`, `截断所失`, `exact remainder`, `精确余项`, `chain of couplings in time order`, `按时间次序的耦合链`, `time-respecting path`, `coupling that recurs`, `复现的耦合`, `settled schedule`, `安定的时程`, `couplings that come and go`, `时有时无的耦合`, `loop of the couplings that go on`, `继续着的耦合的回路`
 
 ### History / 沿革
 
 - 2026-10-16：新增，回答 how-a-carried-difference-grows 的 next_delta 首项“时有时无的耦合上的回路”（P120）；研究 §154。 / 16 October 2026: added, answering the first item of how-a-carried-difference-grows' next_delta, loops whose couplings come and go (P120); study section 154.
+- 2026年10月16日，Ren 同意 P121、P122 读法的落地：改绑新回执并更新哈希：Loops.lean（Ren 2026-10-16 取经回路形成定理修订的第三项读法，第三项读法后加一句（只改注释））。 / 16 October 2026, landing Ren's agreement with the P121/P122 readings: rebound to the new receipt and rehashed: Loops.lean (Ren took the third reading as revised by the loop-formation theorem on 16 October 2026; one sentence after the third reading (comments only)).
 
 </details>
 

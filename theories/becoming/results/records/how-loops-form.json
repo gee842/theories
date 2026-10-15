@@ -274,7 +274,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
       "role": "proof",
-      "sha256": "9d5429abb5ac7308d09b78b0a0baee54810ac9a692b8bd673919c6c835fef106",
+      "sha256": "e9bc3132e3359e9e513a638f7999bd8bf1c1b08ae382ef708a2c7682f8afbe17",
       "declarations": [
         "Becoming.Closing.ble_false_of_lt",
         "Becoming.strengthsBefore",
@@ -352,7 +352,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
       "role": "proof",
-      "sha256": "778d3763de5a77a54f13a24e1eddda05c8f76e197ab1bd0b442cb895b2ef2c8c",
+      "sha256": "d1b1aa59dc90ce1c2bc8dc02fd62eed2caff3e090a26392f5bf1041a27dd9ce7",
       "declarations": [
         "Becoming.Couples",
         "Becoming.Coupled",
@@ -428,12 +428,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "ef32bd585bc150367ee3b471c97c2b6293d702857616393cbb8fb69d8bdb6ba8"
+      "sha256": "b61c5a5293984511e788ca8b3f2317995c26ffcb6bec2f72684b92d75b0a48f3"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "e4b31c0fa829088922b0883d6682ea5bb54c58dae760d4a67704817bdee4c5f8"
+      "sha256": "675159792701da6f3503620f013473aed0139a78e51dff12ded6cecbefc2a834"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
@@ -450,12 +450,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md",
       "role": "provenance",
       "sha256": "274cf514417e8596a4e58747a1db057abb645f8b7557fe0062934cbbcee9bade"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T212327.206058Z/verification.json",
+      "role": "receipt",
+      "sha256": "4f6bf94122c8dbac63ba8aaaf3b07b34cca6f7f0f9adb9473bd707ef810bb494",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T212327.206058Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Closing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -469,7 +475,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204525.767887Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T212327.206058Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Loops",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -522,6 +528,10 @@
     {
       "zh": "2026-10-16：Ren 答 P121 与 P122 落地的报告：“alright, agree”（来源 sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md）。AI 读为 Ren 取本记录的读法，用 AI 的措辞；correspondence 注明，references 加来源。陈述与证明不变。",
       "en": "16 October 2026: answering the report that P121 and P122 had landed, Ren wrote “alright, agree” (source sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md). The AI reads it as Ren taking this record's readings in the AI's wording; correspondence says so and references add the source. Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026年10月16日，Ren 同意 P121、P122 读法的落地：改绑新回执并更新哈希：Closing.lean（Ren 2026-10-16 同意读法（“alright, agree”）写入读法说明（只改注释））；Loops.lean（Ren 2026-10-16 取经回路形成定理修订的第三项读法，第三项读法后加一句（只改注释））；BECOMING-RENEWAL-READING.md（第155、156节各加一段注明日期的说明（Ren 同意其读法）与一条英文；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§2 的读法分句写明 Ren 2026-10-16 同意 Routes 与 Closing 的读法及修订后的 P118 第三项读法；回执改据新运行）。",
+      "en": "16 October 2026, landing Ren's agreement with the P121/P122 readings: rebound to the new receipt and rehashed: Closing.lean (Ren's agreement of 16 October 2026 (“alright, agree”) written into the readings header (comments only)); Loops.lean (Ren took the third reading as revised by the loop-formation theorem on 16 October 2026; one sentence after the third reading (comments only)); BECOMING-RENEWAL-READING.md (sections 155 and 156 each gain a dated paragraph (Ren's agreement with their readings) and an English bullet; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§2's readings clauses record Ren's agreement of 16 October 2026 with the readings of Routes and Closing and with P118's third reading as revised; the receipt moved to the new run)."
     }
   ],
   "text_versions": []

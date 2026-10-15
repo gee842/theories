@@ -382,7 +382,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
       "role": "proof",
-      "sha256": "778d3763de5a77a54f13a24e1eddda05c8f76e197ab1bd0b442cb895b2ef2c8c",
+      "sha256": "d1b1aa59dc90ce1c2bc8dc02fd62eed2caff3e090a26392f5bf1041a27dd9ce7",
       "declarations": [
         "Becoming.carriedFrom",
         "Becoming.carriedWithin",
@@ -520,6 +520,12 @@
       "role": "receipt",
       "sha256": "495b00720b220aa147c4ab65879ae6a4e63a8c4e4aad7e83d025d0d6bb455e54",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T212327.206058Z/verification.json",
+      "role": "receipt",
+      "sha256": "4f6bf94122c8dbac63ba8aaaf3b07b34cca6f7f0f9adb9473bd707ef810bb494",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -532,7 +538,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T204116.215501Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T212327.206058Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Loops",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -591,6 +597,10 @@
     {
       "zh": "2026-10-16：新增，回答 how-a-carried-difference-grows 的 next_delta 首项“时有时无的耦合上的回路”（P120）；研究 §154。",
       "en": "16 October 2026: added, answering the first item of how-a-carried-difference-grows' next_delta, loops whose couplings come and go (P120); study section 154."
+    },
+    {
+      "zh": "2026年10月16日，Ren 同意 P121、P122 读法的落地：改绑新回执并更新哈希：Loops.lean（Ren 2026-10-16 取经回路形成定理修订的第三项读法，第三项读法后加一句（只改注释））。",
+      "en": "16 October 2026, landing Ren's agreement with the P121/P122 readings: rebound to the new receipt and rehashed: Loops.lean (Ren took the third reading as revised by the loop-formation theorem on 16 October 2026; one sentence after the third reading (comments only))."
     }
   ],
   "text_versions": []
