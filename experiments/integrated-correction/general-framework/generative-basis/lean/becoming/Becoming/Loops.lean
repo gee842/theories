@@ -62,25 +62,33 @@ a loop upstream, and only a loop, makes a difference run away.
   formations at every step, the most difference that can arrive is bounded by a polynomial exactly
   where no loop lies upstream (`gap_polynomial_iff_no_loop`).
 
-**Readings (the AI's, pending Ren).**
-- On 12 October Ren compared the theory with quantum dynamics and "Fermi's diagrams" (read here
-  as Feynman diagrams): "there are so many patterns and loops but we can still find a way to to
-  integrate so we can still calculate this effects but how how accurate can we do that uh what is
-  the limitation do we have losses". `Becoming.Weighted` (P82) answered for sums over histories
-  with four losses, loops among them as a witness that courses double. Here the question is
-  answered for the carried difference. The orders are the integration: like a sum over diagrams by
-  their number of vertices, each order adds the routes with one more response, and
-  `Loops.binom t i` counts the time orderings of `i` responses. A cut at order `j` misses at most
-  the rest of the sum, and this is attained: it is the limit of accuracy for what the strengths and
-  the starting gaps alone allow. Where no loop lies upstream there is no loss at a finite order.
-  Where a loop lies upstream, coupled at every step, every finite order loses something, and what
-  reaches the loop grows at least geometrically.
-- Only a loop makes a difference run away. Without one, a held difference keeps arriving but grows
-  at most polynomially (`Propagation.Chain` is of degree one); with one, it grows at least
-  geometrically (`Propagation.Loop` is the self-loop of strength one).
-- Which loops a world has is its situation. The strengths are supplied, as in
-  `Becoming.Propagation`; the statements hold for every assignment, and which assignment holds is
-  what the situation makes true (Ren, 16 October: "the situation makes it true").
+**Readings (decided by Ren on 16 October 2026).** Ren took the first in the AI's wording, called the
+second right with its qualifiers, and took the third in a refined form, for now.
+- On 12 October Ren compared the theory with quantum dynamics and "Fermi's diagrams": "there are so
+  many patterns and loops but we can still find a way to to integrate so we can still calculate
+  this effects but how how accurate can we do that uh what is the limitation do we have losses".
+  Ren meant Feynman diagrams, and the match is structural, not physical. The integration Ren asked
+  about, for laws that are not determined, is the sum over histories with its four losses
+  (`Becoming.Weighted`). The orders here are the same structural kind, organized by the number of
+  responses as Feynman diagrams are by their vertices, `Loops.binom t i` counting the time
+  orderings of `i` responses. The two are not yet joined. A cut at order `j` misses at most the
+  rest of the sum, and this is attained: it is the limit of accuracy for what the strengths and the
+  starting gaps alone allow. Where no loop lies upstream there is no loss at a finite order. Where a
+  loop lies upstream, coupled at every step, every finite order loses something, and what reaches
+  the loop grows at least geometrically.
+- Only a loop makes a difference run away. Running away means growing faster than every
+  polynomial, and it is of the most difference that can arrive, not of what every law does.
+  Without a loop a held difference keeps arriving but grows at most polynomially
+  (`Propagation.Chain` is of degree one); with a loop that couples at every step it grows at least
+  geometrically (`Propagation.Loop` is the self-loop of strength one). So the most difference that
+  can arrive grows faster than every polynomial only through a loop, and through every loop that
+  couples at every step; couplings that hold only at some steps are open here.
+- Which loops a world has is part of its situation (Ren, 16 October: "the situation makes it
+  true"): loops form and dissolve within the unfolding, and the theorems take them as they stand
+  at each step. The strengths are supplied, as in `Becoming.Propagation`. This reading is taken for
+  now, open to revision once a theorem states how loops form within the unfolding, for example
+  where a formation's drawing comes to respond to the level its drawing lowers, where this meets
+  `Becoming.Runaway`.
 
 What is not derived: the strengths themselves; the growth where couplings come and go, a loop
 upstream then not leaving every order inexact (`Loops.Once.not_always`); how fast a runaway is

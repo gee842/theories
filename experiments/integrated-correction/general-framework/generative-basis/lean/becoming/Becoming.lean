@@ -110,6 +110,7 @@ import Becoming.Typicality
 import Becoming.Situations
 import Becoming.Propagation
 import Becoming.Loops
+import Becoming.Remainder
 import Becoming.Gain
 import Becoming.Gluing
 
@@ -1104,6 +1105,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   at least one plus the product of its strengths. With the same formations and strengths at every
   step, a finite order is exact, and the most difference that can arrive is bounded by a
   polynomial, exactly where no loop lies upstream.
+* `Becoming.Remainder` (L4): what a cut loses, for every schedule of couplings, with no premise
+  beyond the strengths each statement names. The carried amount is order `j` plus what `j + 1`
+  responses in turn carry from it, so a cut loses exactly that. Order `j` misses something exactly
+  where a gap is conveyed through `j + 1` responses in time order, and it is exact from every start
+  exactly where no chain of `j + 1` couplings in time order ends there; a finite order is exact
+  exactly where those chains are bounded. Where the schedule has settled, they are bounded exactly
+  where no loop of the couplings that go on lies upstream, with no listing of every condition, and
+  the most difference that can arrive grows faster than every polynomial only through such a loop.
 * `Becoming.Gain` (L3): where novelty's gain comes from, with no premise. With the rest of the
   whole counted, every rise is given: across a step at which a family's stock rises, some relatum
   gives it more than it takes, a formation taking part or the rest, found by checking each one taking

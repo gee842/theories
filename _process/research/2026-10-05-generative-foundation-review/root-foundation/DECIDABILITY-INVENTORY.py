@@ -387,6 +387,9 @@ PROOF_KIND = {
     # 2026-10-16, P118 how a carried difference grows (Becoming.Loops): the gap bounds of Propagation,
     # gap_le_carried and most_difference_arrives, read the equality of conditions in their proofs
     **{n: 'same' for n in ['most_difference_within', 'gap_le_polynomial', 'gap_polynomial_iff_no_loop']},
+    # 2026-10-16, P120 what a cut loses (Becoming.Remainder): the equivalence for every law reads the
+    # equality of conditions in its proof, through most_difference_arrives
+    'gap_within_order_iff': 'same',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
