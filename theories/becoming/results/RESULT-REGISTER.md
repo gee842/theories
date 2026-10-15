@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-222 migrated records: 218 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+223 migrated records: 219 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -133,6 +133,7 @@
 | `lifting-where-branching-is-finite` | [有限分支处的提升 / Lifting where branching is finite](records/lifting-where-branching-is-finite.md) | theorem | recorded-checked |
 | `listing-once-is-decided-identity` | [列出一次就是已定的同一 / Listing once is decided identity](records/listing-once-is-decided-identity.md) | theorem | recorded-checked |
 | `living-on-and-descent` | [以之为生与世系 / Living on and descent](records/living-on-and-descent.md) | theorem | recorded-checked |
+| `loops-within-what-a-law-reads` | [回路在律所读之内，经过储量的回路在断裂处形成 / Loops lie within what a law reads, and the loop through a stock forms at its break](records/loops-within-what-a-law-reads.md) | theorem | recorded-checked |
 | `loss-beyond-a-region` | [区域之外的损失 / Loss beyond a region](records/loss-beyond-a-region.md) | theorem | recorded-checked |
 | `losses-of-the-sum-over-histories` | [历史之和的损失 / Losses of the sum over histories](records/losses-of-the-sum-over-histories.md) | theorem | recorded-checked |
 | `map-of-premises` | [前提的地图 / The map of premises](records/map-of-premises.md) | theorem | recorded-checked |

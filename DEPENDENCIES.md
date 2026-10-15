@@ -3174,6 +3174,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## loops-within-what-a-law-reads ← counterfactual-is-the-course
+
+`formal-reuse` — 复用 ExchangeLaw、GivesAlike、Nonanticipating、Through、Follows、ActsAlike 与 totals_alike_of_each：律、读与两个进程的比较。 / Reuses ExchangeLaw, GivesAlike, Nonanticipating, Through, Follows, ActsAlike and totals_alike_of_each: the law, its reading and the comparison of two courses.
+
+**Producer output / 上游输出:** 交换之律；经识而读；进程遵从律。 / Laws of exchange; reading through registration; courses following a law.
+
+**Consumer input / 下游输入:** 读一个时程的律；只在低于阈值时读储量的律；两个进程的保持。 / Laws reading a schedule; laws reading a stock only below a threshold; holding across two courses.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
+## loops-within-what-a-law-reads ← how-much-difference-arrives
+
+`formal-reuse` — 复用 RespondsWithin、exchangeGap 与 gap：耦合强度。 / Reuses RespondsWithin, exchangeGap and gap: coupling strength.
+
+**Producer output / 上游输出:** 耦合强度。 / Coupling strengths.
+
+**Consumer input / 下游输入:** 未读的水平强度为零；限于所读的强度；见证的强度为正。 / Strength zero on unread levels; restricted strengths; positive strength in the witness.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean)
+
+## loops-within-what-a-law-reads ← how-a-carried-difference-grows
+
+`formal-reuse` — 复用 Couples、Coupled、OnLoop 与 Upstream：回路在所读之内。 / Reuses Couples, Coupled, OnLoop and Upstream: loops lie within what is read.
+
+**Producer output / 上游输出:** 耦合、链、回路、上游。 / Couplings, chains, loops, upstream.
+
+**Consumer input / 下游输入:** 每个耦合读其水平；没有回路经过无人读的水平。 / Every coupling reads its level; no loop passes through a level nothing reads.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean)
+
+## loops-within-what-a-law-reads ← how-loops-form
+
+`formal-reuse` — 复用 strengthsBefore 与 onLoop_succ_iff：回路在读增长之处形成。 / Reuses strengthsBefore and onLoop_succ_iff: loops form where reading grows.
+
+**Producer output / 上游输出:** 到某步形成的回路；回路由闭合而形成。 / Loops formed by a step; a loop forms by closing.
+
+**Consumer input / 下游输入:** 回路在一步形成只经过在那一步读的形成。 / A loop forms at a step only through a formation reading there.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean)
+
+## loops-within-what-a-law-reads ← runaway-distance-unregistered
+
+`formal-reuse` — 复用 Flow.PolicyThrough：经识而读之律的进程是经识的策略；断裂不被识对整个律成立。 / Reuses Flow.PolicyThrough: the courses of a law reading through registration are policies through it; the break unregistered holds for whole laws.
+
+**Producer output / 上游输出:** 经识的策略；断裂之前储量抬高不被识。 / Policies through registration; a raise unregistered before the break.
+
+**Consumer input / 下游输入:** 对每个只在低于阈值时读储量的律，抬高到断裂为止不被带到任何处。 / For every law reading a stock only below a threshold, a raise carried nowhere up to the break.
+
+**Retained conditions / 保留条件:** 其余遵从律（不是其余固定）。 / The rest following the law (not the rest fixed).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean)
+
 ## loss-beyond-a-region ← four-cases-of-a-part
 
 `formal-reuse` — 复用包含（Web.Includes）与 Clearing 扣留后的水平：Clearing.withheld、Clearing.admitted_without、Clearing.unsupported_with。 / Reuses inclusion (Web.Includes) and Clearing's levels without the clearer's part: Clearing.withheld, Clearing.admitted_without, Clearing.unsupported_with.

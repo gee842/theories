@@ -22,7 +22,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 
 ## 已登记成果 / Registered results
 
-222 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+223 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -145,6 +145,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [有限分支处的提升 / Lifting where branching is finite](results/records/lifting-where-branching-is-finite.md) | recorded-checked | [Lasting.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean) |
 | [列出一次就是已定的同一 / Listing once is decided identity](results/records/listing-once-is-decided-identity.md) | recorded-checked | [Listing.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean) |
 | [以之为生与世系 / Living on and descent](results/records/living-on-and-descent.md) | recorded-checked | [Descent.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean) |
+| [回路在律所读之内，经过储量的回路在断裂处形成 / Loops lie within what a law reads, and the loop through a stock forms at its break](results/records/loops-within-what-a-law-reads.md) | recorded-checked | [Thresholds.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean) |
 | [区域之外的损失 / Loss beyond a region](results/records/loss-beyond-a-region.md) | recorded-checked | [Regions.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean) |
 | [历史之和的损失 / Losses of the sum over histories](results/records/losses-of-the-sum-over-histories.md) | recorded-checked | [Weighted.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean) |
 | [前提的地图 / The map of premises](results/records/map-of-premises.md) | recorded-checked | [Premises.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean) |

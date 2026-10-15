@@ -1,0 +1,39 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean": {
+   "zh": "新核心模块（P124：回路在律所读之内，与断裂；38 项定理、45 项声明），本回执首次检查",
+   "en": "new core module (P124: loops within what a law reads, and the break; 38 theorems, 45 declarations), first checked by this receipt"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "根模块加入 Becoming.Thresholds 的导入与条目",
+   "en": "the root gains the import and bullet for Becoming.Thresholds"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "核心列表在 Closing 之后加入 Thresholds，范围同步",
+   "en": "the core list gains Thresholds after Closing, with its scope"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "L4 加入 Thresholds 一行及其层内导入",
+   "en": "L4 gains the Thresholds row and its within-layer imports"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "§2 加入回路在律所读之内与断裂一段，第一部分完整陈述加一项，§8 的进一步证明（Runaway 的接合已给出），§9 加一行与两条术语；回执与合计改据新运行（6912 项定理、9530 项声明审计，核心闭包 122 个模块，包 127 个）",
+   "en": "§2 gains the paragraph on loops within what a law reads and the break, Part I stated whole gains an item, §8's further proof (the Runaway join is given), §9 gains a row and two glossary rows; receipt and totals moved to the new run (6912 theorems, 9530 declaration audits, core closure 122 modules, package 127)"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "加入第157节（Becoming.Thresholds）及英文段；此前各节不变",
+   "en": "section 157 (Becoming.Thresholds) and its English paragraph added; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T214555.207438Z 上重新生成，各类不变，新模块不加行",
+   "en": "regenerated on receipt 20261015T214555.207438Z, every class unchanged, no row for the new module"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing P124 (Becoming.Thresholds, study section 157): rebound to the new receipt and rehashed: ",
+  "zh": "2026年10月16日，P124（Becoming.Thresholds，研究第157节）落地：改绑新回执并更新哈希："
+ }
+}

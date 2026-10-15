@@ -440,7 +440,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "675159792701da6f3503620f013473aed0139a78e51dff12ded6cecbefc2a834"
+      "sha256": "f09565bfb2341a7ee027cfda59df78fd64069938b748939a455e0c9a6df670a6"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
@@ -543,6 +543,10 @@
     {
       "zh": "2026-10-16 P124（回路在律所读之内，与断裂，研究 §157）：下一步中“把形成与 Becoming.Runaway 的策略在一个律中连起来”由 loops-within-what-a-law-reads 回答，“Ren 对读法的判断”已于 2026-10-16 给出（2026-10-16-routes-closing-readings），都去掉；related 中与 runaway-distance-unregistered 的连接指向 loops-within-what-a-law-reads，并加 loops-within-what-a-law-reads。陈述与证明不变。",
       "en": "16 October 2026, P124 (loops within what a law reads, and the break, study section 157): in the next step, “joining formation and Becoming.Runaway's policies within one law” is answered by loops-within-what-a-law-reads and “Ren's judgment on the readings” was given on 16 October (2026-10-16-routes-closing-readings), so both are dropped; in related the joining with runaway-distance-unregistered points to loops-within-what-a-law-reads, and loops-within-what-a-law-reads is added. Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P124（Becoming.Thresholds，研究第157节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入回路在律所读之内与断裂一段，第一部分完整陈述加一项，§8 的进一步证明（Runaway 的接合已给出），§9 加一行与两条术语；回执与合计改据新运行（6912 项定理、9530 项声明审计，核心闭包 122 个模块，包 127 个））。",
+      "en": "16 October 2026, landing P124 (Becoming.Thresholds, study section 157): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on loops within what a law reads and the break, Part I stated whole gains an item, §8's further proof (the Runaway join is given), §9 gains a row and two glossary rows; receipt and totals moved to the new run (6912 theorems, 9530 declaration audits, core closure 122 modules, package 127))."
     }
   ],
   "text_versions": []
