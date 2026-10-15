@@ -218,7 +218,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0004f1a79b4b9c23c9eadd3764b07034b55b719d02e3399ac946b6ca93e89d5d"
+      "sha256": "604b84c78b76ed203ae2714ee826270b8079b8c6119ff0cc3d3c218482b9d19f"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -421,8 +421,16 @@
       "en": "16 October 2026, landing P115 (study section 141): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P115: a §2 paragraph \"How much difference arrives (Part I)\", the paragraph of the comparison where the rest responds no longer listing how much difference arrives as not derived, a §6.10 sentence, one item in Part I stated whole, §8's status row and the further proofs under feedback and reach, one §9 row, two glossary rows; the totals moved to the new receipt)."
     },
     {
-      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §142，DELEGATED-CHOICES D30）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
-      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 142, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+      "zh": "2026年10月16日，I4b 第一项落地（研究第143节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（I4b 第一项：§9 的 Becoming.Gated 一行（4 → 13 项定理）与外围实例 LivingOrganizationCorrespondence 一行，外围实例的列举加入它；总数改据新回执）。",
+      "en": "16 October 2026, landing I4b item 1 (study section 143): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (I4b item 1: the §9 row of Becoming.Gated (4 → 13 theorems) and a peripheral-instance row for LivingOrganizationCorrespondence, which joins the list of peripheral instances; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月16日，P117 落地（研究第144节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P117：新增一对段落（权重计数情境），P116 的读法按 Ren 的澄清改写并标为 Ren 所取，第一部分“认识”、完整陈述与界一项、§8 状态行、Ren 的选择与开放项、§9 一行、术语一行；总数改据新回执）。",
+      "en": "16 October 2026, landing P117 (study section 144): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P117: a new paragraph pair (weights count situations), P116's readings rewritten after Ren's clarification and marked as taken by Ren, Part I \"Knowing\", the theory stated in full and its bound item, §8's status row, Ren's choices and open item, one §9 row, one glossary row; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §145，DELEGATED-CHOICES D30）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 145, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
     }
   ]
 }

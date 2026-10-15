@@ -1,4 +1,4 @@
-import SeededContinuation
+import SeededContinuation -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Invariant.reach`, `Becoming.Readout.no_judge_of_merged` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 namespace EvidenceThroughChange
 open ContinuationAdequacy JointContinuation SeededContinuation

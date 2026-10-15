@@ -1,4 +1,4 @@
-import ExplanatoryBranchingRecovery
+import ExplanatoryBranchingRecovery -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Composition.jointAlike_iff_sameJointTests`, `Becoming.Composition.SameJointTests.step_passing`, `Becoming.CompositionBridge.compact_same_iff_bisimilar_of_stable` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-! Successor compactness replaces finite branching. It is an explicit
 realization condition on the selected model, not a principle inferred from

@@ -89,6 +89,8 @@ Aliases / 别名: `how much difference arrives`, `差别到达多少`, `coupling
 ### History / 沿革
 
 - 2026-10-16：新增，回答六项记录 next_delta 中的差别到达多少与耦合的度量（P115）；研究 §141。 / 16 October 2026: added, answering the item of six records' next_delta on how much difference arrives and a measure of coupling (P115); study section 141.
+- 2026年10月16日，P117 落地（研究第144节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第144节（P117：权重计数情境，Becoming.Situations）及其英文段，排在第142、143节之后；第140节英文段的节号更正；此前各节内容不变）。 / 16 October 2026, landing P117 (study section 144): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 144 (P117: weights count situations, Becoming.Situations) with its English paragraph, after sections 142 and 143; the section number in section 140's English paragraph corrected; earlier sections otherwise unchanged).
+- 2026-10-16，P117 措辞更正：读过改动后重新哈希 BECOMING-RENEWAL-READING.md（只改第 144 节读法标题“待 Ren”为“Ren 同日已取”及其英文段的同一标题；本记录所引之处不变）。 / 16 October 2026, P117 wording fix: rehashed BECOMING-RENEWAL-READING.md after reading the change (only section 144's readings heading, “pending Ren” to “taken by Ren the same day”, and the same heading in its English paragraph; nothing this record cites changes).
 
 </details>
 

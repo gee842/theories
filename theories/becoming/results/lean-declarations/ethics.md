@@ -979,6 +979,30 @@ Imports: `GenerativeCore`
 
 </details>
 
+<a id="module-9cb35b771821"></a>
+
+<details>
+<summary>LivingOrganizationCorrespondence.lean — 5 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean`
+
+Imports: `Becoming.Gated`, `LivingOrganization`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.LivingOrganizationCorrespondence.presence_reflected](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean#L39) | 39 |
+| [Becoming.LivingOrganizationCorrespondence.trace_pool_origin_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean#L47) | 47 |
+| [Becoming.LivingOrganizationCorrespondence.entry_then_present](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean#L60) | 60 |
+| [Becoming.LivingOrganizationCorrespondence.empty_pool_preserved_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean#L76) | 76 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.LivingOrganizationCorrespondence.entryGate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean#L34) (L34)
+
+</details>
+
 <a id="module-90135b67b58c"></a>
 
 <details>

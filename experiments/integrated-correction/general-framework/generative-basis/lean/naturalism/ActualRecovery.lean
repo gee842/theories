@@ -1,4 +1,4 @@
-import EnactedOrientation
+import EnactedOrientation -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Change.held_over_stretch`, `Becoming.Change.over_stretch` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-!
 # Actual restoration keeps the interruption in the history

@@ -1,0 +1,256 @@
+{
+  "schema_version": 2,
+  "id": "every-origin-passes-the-gate",
+  "title": {
+    "zh": "每个起源都经过门",
+    "en": "Every origin passes the gate"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F10",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "对每个过程与动作上的已定之门：非门控步反映的性质，终于其成立处的进程或始于其成立处，或经一个之后它成立的门控步，不判定该性质；离开非门控步保持的性质经过门。门是命题时这一律恰是双重否定消去。",
+    "en": "For every process and decided gate: where ungated steps reflect a property, a course ending where it holds started there or passes a gated step after which it holds, the property undecided; leaving a preserved property passes the gate. With a propositional gate this is double-negation elimination."
+  },
+  "laws": [
+    {
+      "zh": "门是动作上的已定标记。非门控步保持性质 p，是说步前成立则步后成立；反映 p，是说步后成立则步前成立。保持一个量恰是保持它的每个值，也恰是反映它的每个值；性质沿每段非门控进程被保持（被反映），恰当每个非门控步保持（反映）它。",
+      "en": "A gate is a decided mark on moves. The ungated steps preserve a property p where it holding before a step gives it after, and reflect p where it holding after gives it before. Keeping a quantity is preserving every value of it, and equally reflecting every value; a property is preserved (reflected) along every ungated course exactly when every ungated step preserves (reflects) it.",
+      "declarations": [
+        "Becoming.Gated.PreservedBy",
+        "Becoming.Gated.ReflectedBy",
+        "Becoming.Gated.keptBy_iff_preserved",
+        "Becoming.Gated.keptBy_iff_reflected",
+        "Becoming.Gated.preserved_along",
+        "Becoming.Gated.preserved_along_iff",
+        "Becoming.Gated.reflected_along"
+      ]
+    },
+    {
+      "zh": "离开经过门：非门控步保持 p 时，从 p 成立处到 p 不成立处的进程含门控动作；保持量的旧律是其 p 为“q 等于起点之值”的情形。",
+      "en": "Leaving passes the gate: where the ungated steps preserve p, a course from where p holds to where it fails contains a gated move; the earlier law for a kept quantity is its case p := (q equals its starting value).",
+      "declarations": [
+        "Becoming.Gated.leaving_passes_gate"
+      ]
+    },
+    {
+      "zh": "每个起源都经过门：非门控步反映 p 时，终于 p 成立处的进程或始于 p 成立处，或分为前段、一个之后 p 成立的门控步与其余。不判定 p：门本身已定。",
+      "en": "Every origin passes the gate: where the ungated steps reflect p, a course ending where p holds started where it held, or splits into a prefix, a gated step after which p holds, and the rest. Nothing about p is decided: the gate itself is.",
+      "declarations": [
+        "Becoming.Gated.origin"
+      ]
+    },
+    {
+      "zh": "门是命题而非已定时，起源之律在每个门都成立或不成立处成立；对每个过程都要求时，它恰是双重否定消去（见证：一步从假到真，在真处 p 成立，门为 Q）。",
+      "en": "With the gate a proposition rather than decided, the origin law holds wherever every gate holds or fails; asked of every process it is exactly double-negation elimination (witness: one move from false to true, p holding at true, the gate Q).",
+      "declarations": [
+        "Becoming.Gated.origin_of_decides",
+        "Becoming.Gated.origin_of_propositions_iff"
+      ]
+    },
+    {
+      "zh": "实例（外围，自有检查器）：在 LivingOrganization 中，以进入池的配方为门，其他步反映池的出现，所以 trace_pool_origin 由 origin 给出，并多给出进入步之后池即出现；凡准入配方都闭合时，没有门，reflected_along 使空池保持为空。",
+      "en": "Instance (periphery, own checker): in LivingOrganization, with the recipes entering the pool as the gate, every other step reflects pool presence, so trace_pool_origin follows from origin, which adds that the pool is present right after the entry step; where every admitted recipe is closed there is no gate, and reflected_along keeps an empty pool empty.",
+      "declarations": [
+        "Becoming.LivingOrganizationCorrespondence.entryDecidable",
+        "Becoming.LivingOrganizationCorrespondence.entryGate",
+        "Becoming.LivingOrganizationCorrespondence.presence_reflected",
+        "Becoming.LivingOrganizationCorrespondence.trace_pool_origin_by_core",
+        "Becoming.LivingOrganizationCorrespondence.entry_then_present",
+        "Becoming.LivingOrganizationCorrespondence.empty_pool_preserved_by_core"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。门是动作到布尔值的映射（已定）；性质 p 是任意命题，不判定。以命题为门的形式把每个门成立或不成立写作假设。",
+      "en": "No axiom. The gate maps moves to Booleans (decided); the property p is any proposition and is not decided. The form with a propositional gate takes each gate's holding or failing as a hypothesis."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "门控动作改变任何东西：门只定位改变或起源能从哪里进入。",
+      "en": "That a gated move changes anything: the gate only locates where change or origin can enter.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不判定 p 时，起源之律给出第一个使 p 成立的门控步（之前 p 不成立）：它给出一个之后 p 成立的门控步。",
+      "en": "Without deciding p, the first gated step at which p comes to hold (failing before it): the law gives a gated step after which p holds.",
+      "kind": "scope"
+    },
+    {
+      "zh": "以命题为门而不判定时的起源之律：对每个过程要求它恰是双重否定消去。",
+      "en": "The origin law with a propositional gate and no decision: asked of every process it is exactly double-negation elimination.",
+      "kind": "non-implication",
+      "witness": "Becoming.Gated.origin_of_propositions_iff"
+    },
+    {
+      "zh": "LivingOrganization 的配方、准入反应与所选的池对应任何实际化学：闭合是所准入配方的已查性质，不是一切化学的定律。",
+      "en": "That LivingOrganization's recipes, admitted reactions and selected pool correspond to any actual chemistry: closure is a checked property of the admitted recipes, not a law of all chemistry.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Gated 共 13 项定理，新增 11 项声明公理报告为空；外围实例 LivingOrganizationCorrespondence 由其检查器实查（标准公理）。作者反审见研究 §143；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: Becoming.Gated has 13 theorems, and the 11 new declarations have empty axiom reports; the periphery instance LivingOrganizationCorrespondence is checked by its own checker (standard axioms). Author counterreview in study section 143; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "独立审查；判定 p 时的第一个起源步；其余最近的缺口（Horizon、Lasting、Selection，I4b）。",
+    "en": "An independent review; the first origin step where p is decided; the other closest gaps (Horizon, Lasting, Selection, I4b)."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 LivingOrganization 读作待接入的律：Becoming.Gated 要求未经门的步双向保持，单向的轨迹律未陈述。本结果陈述它，并把 Gated 的旧律作为其情形。读法（AI 的，待 Ren）：门定位起源能从哪里进入；反映即“后有则前有”，一个组织的池或早已在，或经一次进入而在。",
+    "en": "Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read LivingOrganization as a join candidate: Becoming.Gated asked for keeping in both directions, and the one-directional trace law was unstated. This result states it, with the earlier Gated law as its case. Readings (the AI's, pending Ren): the gate locates where an origin can enter; reflecting is \"present after only if present before\", and an organization's pool was either there already or came in through an entry."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean",
+  "aliases": [
+    "Becoming.Gated.origin",
+    "Becoming.Gated.leaving_passes_gate",
+    "Becoming.Gated.origin_of_propositions_iff",
+    "every origin passes the gate",
+    "每个起源都经过门",
+    "leaving passes the gate",
+    "离开经过门"
+  ],
+  "dependencies": [
+    {
+      "id": "organizational-rule-inheritance",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Becoming.Gated 的 KeptBy：保持一个量恰是保持（反映）它的每个值，change_passes_gate 是 leaving_passes_gate 的情形。",
+        "en": "Reuses Becoming.Gated.KeptBy: keeping a quantity is preserving (reflecting) every value of it, and change_passes_gate is a case of leaving_passes_gate."
+      },
+      "interface": {
+        "output": {
+          "zh": "非门控步保持的量（KeptBy）；改变经过门。",
+          "en": "A quantity the ungated steps keep (KeptBy); change passes the gate."
+        },
+        "input": {
+          "zh": "保持读作保持或反映每个值。",
+          "en": "Keeping read as preserving or reflecting every value."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean"
+      }
+    }
+  ],
+  "related": [],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean",
+      "role": "proof",
+      "sha256": "60fdb33f311489c00e405f173ad6439afc97e46b8bb6463dcc012eb29a4e6db0",
+      "declarations": [
+        "Becoming.Gated.PreservedBy",
+        "Becoming.Gated.ReflectedBy",
+        "Becoming.Gated.keptBy_iff_preserved",
+        "Becoming.Gated.keptBy_iff_reflected",
+        "Becoming.Gated.preserved_along",
+        "Becoming.Gated.preserved_along_iff",
+        "Becoming.Gated.reflected_along",
+        "Becoming.Gated.leaving_passes_gate",
+        "Becoming.Gated.origin",
+        "Becoming.Gated.origin_of_decides",
+        "Becoming.Gated.origin_of_propositions_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean",
+      "role": "proof",
+      "sha256": "e070a99988ad7c9c376705af725c8431f3a27fd0d76453ed6924ba0fb3563bbc",
+      "declarations": [
+        "Becoming.LivingOrganizationCorrespondence.entryDecidable",
+        "Becoming.LivingOrganizationCorrespondence.entryGate",
+        "Becoming.LivingOrganizationCorrespondence.presence_reflected",
+        "Becoming.LivingOrganizationCorrespondence.trace_pool_origin_by_core",
+        "Becoming.LivingOrganizationCorrespondence.entry_then_present",
+        "Becoming.LivingOrganizationCorrespondence.empty_pool_preserved_by_core"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean",
+      "role": "integration",
+      "sha256": "3e7f32f4aaca8a6cb025122d7e77dae4a1546746e38caddc89a391748a74305e",
+      "declarations": [
+        "Generative.LivingOrganization.trace_pool_origin",
+        "Generative.LivingOrganization.empty_pool_preserved",
+        "Generative.LivingOrganization.step_pool_origin",
+        "Generative.LivingOrganization.closed_step_preserves_absence"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T182202.414009Z/verification.json",
+      "role": "receipt",
+      "sha256": "6dd66856781b0d0c0528313acf2e0a7130fe3d8bd552344358917119a688371b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-organization-correspondence-checks/20261015T182331.625376Z/verification.json",
+      "role": "receipt",
+      "sha256": "540276fdb79ce88a87907d48029b6f01a307d5a70f5de4c468893b8033bc6774"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "aad09764bdcdd9209154d546b95b7ecff5a518aecd54942cb5d827526f1650ea"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "604b84c78b76ed203ae2714ee826270b8079b8c6119ff0cc3d3c218482b9d19f"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
+      "role": "provenance",
+      "sha256": "4e8c900528a2b4b7239e1930b84e80e457b2a29e61ef2b8c3c3f59b5c67ec699"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T182202.414009Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Gated",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganizationCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-organization-correspondence-checks/20261015T182331.625376Z/verification.json",
+      "sha256_pointer": "/source_sha256/LivingOrganizationCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，整合 I4b 第一项（Ren 选择“Closest gaps first”）；研究 §143。",
+      "en": "16 October 2026: added, integration I4b item 1 (Ren chose “Closest gaps first”); study section 143."
+    },
+    {
+      "zh": "2026年10月16日，P117 落地（研究第144节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第144节（P117：权重计数情境，Becoming.Situations）及其英文段，排在第142、143节之后；第140节英文段的节号更正；此前各节内容不变）；THE-THEORY-OF-BECOMING.md（P117：新增一对段落（权重计数情境），P116 的读法按 Ren 的澄清改写并标为 Ren 所取，第一部分“认识”、完整陈述与界一项、§8 状态行、Ren 的选择与开放项、§9 一行、术语一行；总数改据新回执）。",
+      "en": "16 October 2026, landing P117 (study section 144): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 144 (P117: weights count situations, Becoming.Situations) with its English paragraph, after sections 142 and 143; the section number in section 140's English paragraph corrected; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (P117: a new paragraph pair (weights count situations), P116's readings rewritten after Ren's clarification and marked as taken by Ren, Part I \"Knowing\", the theory stated in full and its bound item, §8's status row, Ren's choices and open item, one §9 row, one glossary row; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026-10-16，P117 措辞更正：读过改动后重新哈希 BECOMING-RENEWAL-READING.md（只改第 144 节读法标题“待 Ren”为“Ren 同日已取”及其英文段的同一标题；本记录所引之处不变）。",
+      "en": "16 October 2026, P117 wording fix: rehashed BECOMING-RENEWAL-READING.md after reading the change (only section 144's readings heading, “pending Ren” to “taken by Ren the same day”, and the same heading in its English paragraph; nothing this record cites changes)."
+    }
+  ],
+  "text_versions": []
+}

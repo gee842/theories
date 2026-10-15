@@ -1,4 +1,4 @@
-import ContactFormation
+import ContactFormation -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Frame.Reach.trans`, `Becoming.Frame.Reach.refl`, `Becoming.Recurrence.Reach.lost_stays` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 /-!
 Whole-process reachability and an actually formed condition are different

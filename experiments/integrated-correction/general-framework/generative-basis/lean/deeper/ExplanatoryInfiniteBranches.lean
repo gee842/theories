@@ -1,4 +1,4 @@
-import ExplanatoryCompactness
+import ExplanatoryCompactness -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Likeness.Unbounded.sameBranchingTests`, `Becoming.Likeness.Unbounded.not_alike`, `Becoming.Likeness.Unbounded.rest_holds_iff` — 同一陈述 / the same statement; MODULE-CLASSIFICATION.md
 
 /-! The classical finite-countdown / endless-branch comparison, strengthened
 from agreement on finite words to agreement on ALL finite Boolean modal tests.

@@ -126,14 +126,19 @@ def render(signals, rows):
         return out
     zh, en = CATEGORIES['earlier-version']
     picked = [(s, r) for s, r in merged if r['category'] == 'earlier-version']
-    lines += ['', f'## {zh} / {en} ({len(picked)})', ''] + decision_table(picked)
+    lines += ['', f'## {zh} / {en} ({len(picked)})', '',
+              '每个模块的第一行有一条注释，指向这里所列的脊柱声明（整合 I4c，Ren 2026-10-16 选择“Add the notes”，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）；陈述、证明与行号不变。 / '
+              'The first line of each module carries a comment naming the spine declarations listed here (integration I4c; Ren chose “Add the notes” on 16 October 2026, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)); statements, proofs and line numbers are unchanged.',
+              ''] + decision_table(picked)
     zh, en = CATEGORIES['join-candidate']
     picked = [(s, r) for s, r in merged if r['category'] == 'join-candidate']
     lines += ['', f'## {zh} / {en} ({len(picked)})', '',
-              '按主题分组（AI 的分组，见 `development/integration-i4a/themes.json`）。 / Grouped by theme (an AI grouping, in `development/integration-i4a/themes.json`).']
+              '按主题分组（AI 的分组，见 `development/integration-i4a/themes.json`）。Ren 2026-10-16 选择先接入最近的缺口，一般数学与推导演算暂留脊柱之外（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）。 / '
+              'Grouped by theme (an AI grouping, in `development/integration-i4a/themes.json`). On 16 October 2026 Ren chose to join the closest gaps first and to leave general mathematics and the derivation calculus outside the spine for now ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)).']
     for t in THEMES.values():
         group = [(s, r) for s, r in picked if s['stem'] in t['stems']]
-        lines += ['', f'### {t["zh"]} / {t["en"]} ({len(group)})', ''] + decision_table(group)
+        scope = f'：{t["scope"]["zh"]} / {t["scope"]["en"]}' if t.get('scope') else ''
+        lines += ['', f'### {t["zh"]} / {t["en"]} ({len(group)}){scope}', ''] + decision_table(group)
     shared = sorted(k for k in p3 if k in rows)
     lines += ['', '## 与 P3 分类的对照 / Against the P3 classification', '',
               f'[P3 的分类](BECOMING-INSTANCE-CLASSIFICATION.md)（10 月 9 日）归类了 46 个含类型多态定理的伦理模块；其中 {len(shared)} 个在脊柱运行之外，见于本表，逐行标出其 P3 类别。P3 的“已在核心上”指陈述直接写在基础的 `Process`／`Trace` 上，不指某条脊柱律陈述了它；本表给这些模块补上所及的脊柱声明。',

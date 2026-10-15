@@ -107,6 +107,7 @@ import Becoming.Sensitivity
 import Becoming.Courses
 import Becoming.Parting
 import Becoming.Typicality
+import Becoming.Situations
 import Becoming.Propagation
 import Becoming.Gain
 import Becoming.Gluing
@@ -868,7 +869,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   reduced law commutes with every course.
 * `Becoming.Gated` (L2): what only a class of moves can change, with no premise. A quantity kept
   by every ungated step is kept along every ungated course, and conversely; a course that
-  changes it passes the gate, at a gated step that itself changes it.
+  changes it passes the gate, at a gated step that itself changes it. One direction suffices: a
+  course leaving a property the ungated steps preserve passes the gate, and a course ending where
+  a property the ungated steps reflect holds started where it held or has a gated step after
+  which it holds, nothing about the property decided. With the gate a proposition, the origin
+  law is exactly double-negation elimination.
 * `Becoming.Viability` (L2): where no course leaves a guard, with no premise. No course from a
   configuration leaves the guard exactly when some certificate (a set within the guard that every
   step keeps) contains it; the viability kernel is the largest certificate. For a law of change
@@ -1045,6 +1050,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   weigh, times d, at most that, out of (p + q)^n: the counting form of the law of large numbers.
   The weights are `Becoming.Weighted`'s counting weights of free branching. That the course which
   happens is typical is not derived: every course is a run.
+* `Becoming.Situations` (L4): what natural weights count, with no premise. Where each step is
+  taken in as many situations as its weight, the law whose moves are the situations is
+  determined, and a law whose steps are those of positive weight is it with the situation
+  forgotten. Summing any reading over the finer courses is summing it over the courses, each
+  counted by its weight, so the finer courses number the sum over histories. On two values with
+  `p` and `q` situations, the weight of a course is the number of situations that take it, and
+  of the `(p + q)^n` finer courses those deviating by at least `d` number, times `d`, at most
+  `n·p·q·(p + q)^n`: the law of large numbers counts situations. Which situation happens is not
+  a count.
 * `Becoming.Propagation` (L4): how much difference arrives, with no premise beyond what each law
   names. In two balanced flows a condition's gap changes across a step by exactly the difference
   given less the difference taken. An exchange is coupled to a level with strength at most `k`

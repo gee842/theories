@@ -1,4 +1,4 @@
-import Std
+import Std -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.revisits_within`, `Becoming.Law.enters_returning` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 
 set_option autoImplicit false
 

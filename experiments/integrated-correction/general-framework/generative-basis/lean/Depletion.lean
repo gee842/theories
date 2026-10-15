@@ -1,4 +1,4 @@
-import GenerativeCore
+import GenerativeCore -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.no_execution_of_depletion`, `Becoming.Run.not_of_depletion`, `Becoming.Stock.trace_falls` — 同一陈述 / the same statement; MODULE-CLASSIFICATION.md
 
 /-!
 # A finite-reserve constraint on continuation

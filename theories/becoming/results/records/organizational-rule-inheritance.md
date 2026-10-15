@@ -34,6 +34,7 @@ Canonical source: [OrganizationalRuleInheritance.lean](../../../../experiments/i
 
 - **interpretive**: [recurrent-chain-assembly](recurrent-chain-assembly.md). 接续固定规律之后的组织变异问题；不导入其模型或宣称形式跨域适配。 / Continues the organizing-variation question left by fixed-law reconstruction; does not import that model or claim a formal cross-domain adapter.
 - Related, not a proved adapter / 关联而非已证转换: [joint-practice-forms-continuation](joint-practice-forms-continuation.md). 后续成果正式复用本程序，生成其审查输入并形成进一步参与；原成果的证明不依赖后续扩展。 / The later result formally reuses this protocol, produces its review input and forms further participation; this original proof does not depend on the extension.
+- Related, not a proved adapter / 关联而非已证转换: [every-origin-passes-the-gate](every-origin-passes-the-gate.md). Becoming.Gated 的单向律：保持一个量恰是保持（反映）它的每个值，change_passes_gate 是 leaving_passes_gate 的情形；起源之律经门。 / The one-directional laws of Becoming.Gated: keeping a quantity is preserving (reflecting) every value of it, change_passes_gate is a case of leaving_passes_gate, and every origin passes the gate.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -50,6 +51,7 @@ Canonical source: [OrganizationalRuleInheritance.lean](../../../../experiments/i
 | provenance | [systems-manifest.json](../../../../sources/evolutionary-selection/organizational-inheritance/systems-manifest.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T182202.414009Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -78,3 +80,4 @@ Aliases / 别名: `OrganizationalRuleInheritance.inherited_revision_continues`, 
 - 2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）。 / 15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged).
 - 2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）。 / 15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged).
 - 2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。 / 15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged).
+- 2026-10-16，整合 I4b 第一项（Ren 选择“Closest gaps first”）：Gated.lean 的文件说明加单向律，其后加“保持与反映”一节；本记录所用的 kept_along_iff、change_passes_gate、change_located 不变。改用新哈希，证明绑定移到核心回执 20261015T182202.414009Z；关联新记录 every-origin-passes-the-gate。 / 16 October 2026, integration I4b item 1 (Ren chose “Closest gaps first”): the docstring of Gated.lean gains the one-directional laws and a section on preserving and reflecting follows; kept_along_iff, change_passes_gate and change_located, which this record uses, are unchanged. The reference takes the new hash, its proof binding moves to core receipt 20261015T182202.414009Z, and the new record every-origin-passes-the-gate is linked.

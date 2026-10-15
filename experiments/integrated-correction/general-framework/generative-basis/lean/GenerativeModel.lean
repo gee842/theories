@@ -1,4 +1,4 @@
-import BoundaryModels
+import BoundaryModels -- 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.same_steps_iff_traces`, `Becoming.same_steps_iff_endpoint_traces_by_core` — 同一陈述 / the same statement; MODULE-CLASSIFICATION.md
 import Depletion
 import RootRealization
 import ProductTower

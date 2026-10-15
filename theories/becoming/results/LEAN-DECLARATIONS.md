@@ -8,7 +8,7 @@
 
 | 方向 / Topic | 模块／审计入口 / Entries | theorem/lemma 位置 / Occurrences |
 |---|---:|---:|
-| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 142 | 2,521 |
+| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 143 | 2,525 |
 | [评价的形成与良知 / Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
 | [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 72 | 1,880 |
 | [支持与更新 / Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 257 | 8,295 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 258 | 8,317 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 ## 按名称查找 / Find by name
@@ -402,6 +402,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [LivingAllocation.lean](lean-declarations/ethics.md#module-ffc7d48f4c9c) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [LivingExpansion.lean](lean-declarations/ethics.md#module-707a08ce1476) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [LivingOrganization.lean](lean-declarations/ethics.md#module-a48e0f306c41) | 规范根据与生成方向 / Normative grounding and generative direction |
+| [LivingOrganizationCorrespondence.lean](lean-declarations/ethics.md#module-9cb35b771821) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [LivingRealization.lean](lean-declarations/ethics.md#module-90135b67b58c) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [LivingRecovery.lean](lean-declarations/ethics.md#module-37187272c431) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [Locality.lean](lean-declarations/core.md#module-0ddb9a8ad442) | 生成核心与关系结构 / Generative core and relational structure |
@@ -667,6 +668,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [SituatedPractice.lean](lean-declarations/concern.md#module-618b534f95cf) | 关切与共同活动 / Concern and shared activity |
 | [SituatedRenewal.lean](lean-declarations/ethics.md#module-4c743231f0b3) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [SituatedTracking.lean](lean-declarations/learning.md#module-0484b39d8ec3) | 学习、预测与动力学 / Learning, prediction and dynamics |
+| [Situations.lean](lean-declarations/core.md#module-dadafeb9c9af) | 生成核心与关系结构 / Generative core and relational structure |
 | [SourceReliance.lean](lean-declarations/inquiry.md#module-c6d60dbda60c) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [SourceRelianceCases.lean](lean-declarations/inquiry.md#module-ca0448c58a45) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [Space.lean](lean-declarations/core.md#module-716b4d991654) | 生成核心与关系结构 / Generative core and relational structure |

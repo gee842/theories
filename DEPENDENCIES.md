@@ -1818,6 +1818,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean)
 
+## every-origin-passes-the-gate ← organizational-rule-inheritance
+
+`formal-reuse` — 复用 Becoming.Gated 的 KeptBy：保持一个量恰是保持（反映）它的每个值，change_passes_gate 是 leaving_passes_gate 的情形。 / Reuses Becoming.Gated.KeptBy: keeping a quantity is preserving (reflecting) every value of it, and change_passes_gate is a case of leaving_passes_gate.
+
+**Producer output / 上游输出:** 非门控步保持的量（KeptBy）；改变经过门。 / A quantity the ungated steps keep (KeptBy); change passes the gate.
+
+**Consumer input / 下游输入:** 保持读作保持或反映每个值。 / Keeping read as preserving or reflecting every value.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean)
+
 ## evolution-on-descent ← living-on-and-descent
 
 `formal-reuse` — 复用 P18 引入、P18b 改正的世系关系（给予的形成须参与该步）；定义移入 Becoming.Evolution（DescendsAt、Descends），在估值中的读法留在 Becoming.Descent。 / Reuses the descent relation introduced in P18 and corrected in P18b (the formation giving must take part in the step); its definition moves to Becoming.Evolution (DescendsAt, Descends), and its readings in valuation stay in Becoming.Descent.
@@ -5277,6 +5289,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 整体可容许。 / The whole admissible.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean)
+
+## weights-count-situations ← typicality-by-counting
+
+`formal-reuse` — 复用 courses、extend、total、total_extend、total_add、total_congr、weight、cross、square、offBy、typical、stepWeight、along_weight、transfer_weight。 / Reuses courses, extend, total, total_extend, total_add, total_congr, weight, cross, square, offBy, typical, stepWeight, along_weight and transfer_weight.
+
+**Producer output / 上游输出:** 偏差至少为 d 的历程之重乘 d 至多 n·p·q·(p + q)ⁿ；以 p、q 计数的自由分支沿历史复合的是历程的权重。 / The courses deviating by at least d weigh, times d, at most n·p·q·(p + q)ⁿ; free branching counted by p and q composes along each history the weight of its course.
+
+**Consumer input / 下游输入:** 细历程之数按历程推前到历程之重。 / The number of finer courses pushed forward to the weights of the courses.
+
+**Retained conditions / 保留条件:** 两个值、自然数权重。 / Two values, natural weights.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean)
+
+## weights-count-situations ← sum-over-histories-exact
+
+`formal-reuse` — 复用 counting、joinMap、openSteps、courses、Weights.along、Weights.transfer、Weights.sum_courses、Weights.sum_joinMap、Weights.sum_map、Weights.sum_congr、Weights.mul_sum 与 mul_assoc_nat。 / Reuses counting, joinMap, openSteps, courses, Weights.along, Weights.transfer, Weights.sum_courses, Weights.sum_joinMap, Weights.sum_map, Weights.sum_congr, Weights.mul_sum and mul_assoc_nat.
+
+**Producer output / 上游输出:** 以计数加权的历史之和是逐步的转移。 / The sum over histories weighted by counting is the step-by-step transfer.
+
+**Consumer input / 下游输入:** 细历程之数是历史之和。 / The number of finer courses is the sum over histories.
+
+**Retained conditions / 保留条件:** 列出的动作与配置。 / Listed moves and configurations.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
 
 ## where-a-move-is-formed ← process-and-frame-as-readings
 

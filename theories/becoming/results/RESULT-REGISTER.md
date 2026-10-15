@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-211 migrated records: 207 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+213 migrated records: 209 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -72,6 +72,7 @@
 | `encounter-selection-and-revision` | [取得的访问模型选择学习经历 / Acquired access selects learning encounters](records/encounter-selection-and-revision.md) | theorem | recorded-checked |
 | `endpoint-loss-and-return` | [端点可能性丧失与返回 / Endpoint opportunity loss and return](records/endpoint-loss-and-return.md) | theorem | recorded-checked |
 | `entropy-history-and-record` | [熵的历史与记录 / Entropy, history and record](records/entropy-history-and-record.md) | theorem | recorded-checked |
+| `every-origin-passes-the-gate` | [每个起源都经过门 / Every origin passes the gate](records/every-origin-passes-the-gate.md) | theorem | recorded-checked |
 | `evolution-on-descent` | [经世系的演化 / Evolution on descent](records/evolution-on-descent.md) | theorem | recorded-checked |
 | `exchanges-commute-unless-joined` | [独立的交换可交换 / Independent exchanges commute](records/exchanges-commute-unless-joined.md) | theorem | recorded-checked |
 | `exclusive-footprint-support` | [局部排他支持推至全部叶项 / Exclusive footprints support all leaves](records/exclusive-footprint-support.md) | theorem | recorded-checked |
@@ -219,6 +220,7 @@
 | `unity-of-readings` | [一个展开在语境中的读法 / One unfolding, read in context](records/unity-of-readings.md) | theorem | recorded-checked |
 | `universal-practical-warrant` | [普遍实践权威的更强目标 / Stronger universal practical warrant target](records/universal-practical-warrant.md) | target | open |
 | `versioned-request-completion` | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](records/versioned-request-completion.md) | theorem | recorded-checked |
+| `weights-count-situations` | [权重计数情境 / Weights count situations](records/weights-count-situations.md) | theorem | recorded-checked |
 | `where-a-move-is-formed` | [动作在哪里形成 / Where a move is formed](records/where-a-move-is-formed.md) | theorem | recorded-checked |
 | `whole-first-and-bounded-centers` | [整体优先，与以依存为界的中心 / The whole first, and centers bounded by dependence](records/whole-first-and-bounded-centers.md) | theorem | recorded-checked |
 | `whole-law-of-counting` | [计数表是计数的全部规律 / The tally is the whole law of counting](records/whole-law-of-counting.md) | theorem | recorded-checked |

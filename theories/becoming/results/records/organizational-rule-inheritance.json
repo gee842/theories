@@ -59,6 +59,13 @@
         "zh": "后续成果正式复用本程序，生成其审查输入并形成进一步参与；原成果的证明不依赖后续扩展。",
         "en": "The later result formally reuses this protocol, produces its review input and forms further participation; this original proof does not depend on the extension."
       }
+    },
+    {
+      "id": "every-origin-passes-the-gate",
+      "detail": {
+        "zh": "Becoming.Gated 的单向律：保持一个量恰是保持（反映）它的每个值，change_passes_gate 是 leaving_passes_gate 的情形；起源之律经门。",
+        "en": "The one-directional laws of Becoming.Gated: keeping a quantity is preserving (reflecting) every value of it, change_passes_gate is a case of leaving_passes_gate, and every origin passes the gate."
+      }
     }
   ],
   "counterexamples": [
@@ -94,7 +101,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean",
       "role": "proof",
-      "sha256": "f09a04e5ae4e3725f39bbbc0cb3482b8adf5489bf479facf636d2c055fda6d40",
+      "sha256": "60fdb33f311489c00e405f173ad6439afc97e46b8bb6463dcc012eb29a4e6db0",
       "declarations": [
         "Becoming.Gated.KeptBy",
         "Becoming.Gated.kept_along",
@@ -164,6 +171,11 @@
       "role": "receipt",
       "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T182202.414009Z/verification.json",
+      "role": "receipt",
+      "sha256": "6dd66856781b0d0c0528313acf2e0a7130fe3d8bd552344358917119a688371b"
     }
   ],
   "proof_bindings": [
@@ -176,7 +188,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T182202.414009Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Gated",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -261,6 +273,10 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-16，整合 I4b 第一项（Ren 选择“Closest gaps first”）：Gated.lean 的文件说明加单向律，其后加“保持与反映”一节；本记录所用的 kept_along_iff、change_passes_gate、change_located 不变。改用新哈希，证明绑定移到核心回执 20261015T182202.414009Z；关联新记录 every-origin-passes-the-gate。",
+      "en": "16 October 2026, integration I4b item 1 (Ren chose “Closest gaps first”): the docstring of Gated.lean gains the one-directional laws and a section on preserving and reflecting follows; kept_along_iff, change_passes_gate and change_located, which this record uses, are unchanged. The reference takes the new hash, its proof binding moves to core receipt 20261015T182202.414009Z, and the new record every-origin-passes-the-gate is linked."
     }
   ]
 }

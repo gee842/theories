@@ -9119,6 +9119,114 @@ theorem Propagation.Loop.runaway : ∀ t, amount (t + 1) true = 2 ^ t
 
 **边界。** 落地运行须在 `check_becoming.py` 中编译与审计新模块，再把新记录绑定到回执。`DECIDABILITY-INVENTORY.py` 把 `mixCells` 记作逐个水平换入的构造（如 `mixIn`），其陈述提到它的三条定理随之；把九条只在证明中用到条件之相等的定理记作分辨相同。既有模块的字节不变。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”）；“增益”留给 P111 的新的增益（另一个意思），不在此用。
 
+## 142. 较早的版本的文件头注记（整合 I4c）：31 个模块指向脊柱上陈述其主定理的声明
+
+2026-10-16。延续 §139 的 I4a 表。Ren 对表的三项决定（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）：较早的版本加注记（“Add the notes”）；待接入的律先接最近的缺口（“Closest gaps first”，I4b）；一般数学（17）与推导演算（2）暂留脊柱之外（“Leave outside for now”）。本节是第一项。
+
+```text
+Result(s): 不新增记录；改写 3 项记录的引用哈希与历史（其一移动证明绑定）
+Delta: 31 个较早的版本的第一行各加一条双语注释，列出其行所列的脊柱声明与关系（same / spine-generalizes / instance）；
+       归类表标出两个暂留之外的主题，并说明注记
+Supplied premises / correspondence: 注记取自 I4a 的行（读过双方陈述）；不改陈述与证明
+Evidence: explanatory-resumption 检查器对新字节重跑（回执 20261015T180520.693095Z：22 个模块、314 项审计，与 10 月 8 日的回执相同，只有 ExplanatoryResumptionCases 的字节不同）
+Boundary: 注记是边，不是判词；模块保留，不删除任何东西
+Integration: 不需核心运行；31 个模块都不在核心回执中
+```
+
+**注记放在哪里。** 文档中有约 800 个指向这 31 个文件的行锚链接（`File.lean#L…`），在文件头另起一行会使它们全部错位。所以注记接在原有的第一行之后：29 个文件是 import 行后的行注释，OneProcess 与 TrajectoryFidelity 以注释开头，注记写在该注释的第一行。没有行号移动；两种写法都在项目工具链（v4.29.1）下解析。
+
+**哈希。** 读这两个文件字节的记录有三项，都在读过改动（只有注释）后改绑，各加一条历史：trace-law-equivalence（GenerativeModel，集成引用）、guarded-program-question-recovery（ExplanatoryResumptionCases，反例引用）、residual-continuation-correspondence（ExplanatoryResumptionCases，证明引用；证明绑定移到新回执，ExplanatoryResiduals 仍绑定原回执）。其他提到这些路径的较早检查文件是旧字节的历史证据，保持原样。
+
+**边界。** 注记说某条脊柱声明陈述了模块的主定理，以何种关系；不说模块无用。`ContinuationRenewal.renewal_within_rank_plus_one_steps` 在继承模块中，属于脊柱运行。
+## 143. 每个起源都经过门（整合 I4b 第一项）：单向的门律，LivingOrganization 接入
+
+2026-10-16。Ren 对 I4 归类表选择“Closest gaps first”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)）。表把 LivingOrganization 读作待接入的律：对任意反应网络，终态出现的池或初始即在，或经某进入步进入；Becoming.Gated 只陈述未经门的步双向保持的量，单向的轨迹律未陈述（§139）。本节陈述它，并把 Gated 的旧律作为其情形。
+
+```text
+Result(s): 新记录 every-origin-passes-the-gate；不改写其他记录的论断
+Delta: 核心：Becoming.Gated 加“单向：保持与反映”一节（4 → 13 项定理），含一条边界定理；
+       外围实例模块及其检查器：LivingOrganizationCorrespondence（4 项定理）；
+       可判定性清点：只在证明中用到 223 → 224（origin_of_decides，分情形），边界句加 origin_of_propositions_iff
+Supplied premises / correspondence: 核心律不加前提：门是动作上的已定标记，性质不判定；实例沿用 LivingOrganization 的配方、准入反应与所选的池
+Evidence: 核心与桥接由核心运行审计（回执 20261015T182202.414009Z）；外围检查器实跑（回执 20261015T182331.625376Z）
+Boundary: 见下文“边界”
+Integration: §9 一行（Gated 的陈述与计数）；Becoming.lean 的模块条目；一项新记录；一个外围检查器；可判定性清点；归类表中 LivingOrganization 改为已接入
+```
+
+**保持与反映（Becoming.Gated，不加前提）。** 非门控步保持性质 p，是说步前成立则步后成立（`PreservedBy`）；反映 p，是说步后成立则步前成立（`ReflectedBy`）。保持一个量恰是保持它的每个值，也恰是反映它的每个值（`keptBy_iff_preserved`、`keptBy_iff_reflected`）；性质沿每段非门控进程被保持（被反映），恰当每个非门控步保持（反映）它（`preserved_along_iff`、`reflected_along`）。
+
+**离开经过门。** 非门控步保持 p 时，从 p 成立处到 p 不成立处的进程含门控动作（`leaving_passes_gate`）。旧律 `change_passes_gate` 是其 p 为“q 等于起点之值”的情形。
+
+**每个起源都经过门。** 非门控步反映 p 时，终于 p 成立处的进程或始于 p 成立处，或分为前段、一个之后 p 成立的门控步与其余（`origin`）。证明沿进程走一遍，只按门分情形：门是 `A → Bool`，已定；p 不判定。
+
+**边界。** 门是命题而非已定时，起源之律在每个门都成立或不成立处成立（`origin_of_decides`）；对每个过程都要求时，它恰是双重否定消去（`origin_of_propositions_iff`）。见证：一步从 `false` 到 `true`，p 在 `true` 处成立，门为 Q；这一步反映 p 恰当 Q 不能不成立，律于是给出 Q。所以门的已定正是这一律所需，不多不少。
+
+**LivingOrganization（LivingOrganizationCorrespondence，外围，自有检查器）。** 以进入池的配方（输出池成员而不输入任何池成员）为门（`entryGate`），其他步反映池的出现（`presence_reflected`，由 `step_pool_origin`）。于是 `trace_pool_origin` 由 `Gated.origin` 给出（`trace_pool_origin_by_core`），并多给出进入步之后池即出现（`entry_then_present`）。外围原定理需要池的可判定；核心律不需要。凡准入配方都闭合时，没有门，`reflected_along` 使空池保持为空（`empty_pool_preserved_by_core`）。实例的公理报告只有 propext 与 Quot.sound，来自 LivingOrganization 自身的算术与列表策略；核心的新声明公理报告为空。
+
+**作者反审。**
+1. **新律还是重述？** 旧的双向律是新律的情形，不是反过来。起源之律对核心是新的：外围形式要判定池，核心形式只用门已定。
+2. **边界说了什么？** 它说门的已定恰是所需：以命题为门、对每个过程要求时，等于双重否定消去，因而等于排中律。
+3. **没有证明的。** 判定 p 时，第一个使 p 成立的门控步（之前 p 不成立）可以由 `change_located` 的方法给出，这里未陈述。
+
+**边界与读法。** 门只定位改变或起源能从哪里进入，不说门控动作改变任何东西。LivingOrganization 的配方、准入反应与所选的池不对应任何实际化学的论断：闭合是所准入配方的已查性质。读法（AI 的，待 Ren）：反映即“后有则前有”，一个组织的池或早已在，或经一次进入而在。
+
+**下一步（I4b）。** Horizon（有限否证与前缀闭包，PrefixSafety、IdealWarrant），Lasting（有限分支的 König 提升，FiniteBranching），Selection（交换不变的服务恰当无并列，PluralRecords、TieBreaking；在 P110 落地之后）。
+
+## 144. 权重计数情境（P117）
+
+2026-10-16。Ren 对 §140 的两条 AI 读法（“分开处的分支只在被走时定下，这是开放的未来在辨识中的形式”；“把权重读作机会，要加上发生的历程典型这一前提”）回答：“i mean we are describing what everything obeys, but at every moment, the actual change depends on the situation. for example, we don't need to gravity for one to see if the logic holds, but in every planet gravity is different, so the whole evolution will also be different, just saying we are all one doesn't make it true, the situation makes it true”；对第二条：“not sure what your typical means, but can you see what to do with my clarification above?”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md)）。`Becoming.Weighted` 不说权重从何而来，`Becoming.Typicality` 不推出发生的历程典型。本节在第一部分之内、不加公理与前提地陈述：每一步以其自然数权重那么多的情境被走、每个情境固定这一步时，权重是什么。工作板上认领为 P117。
+
+```text
+Result(s): 新增 weights-count-situations；复用 typicality-by-counting（courses、extend、total、total_extend、total_add、
+           total_congr、weight、cross、square、offBy、typical、stepWeight、along_weight、transfer_weight）；
+           sum-over-histories-exact（counting、joinMap、openSteps、courses、Weights.along、Weights.transfer、Weights.sum_courses、
+           Weights.sum_joinMap、Weights.sum_map、Weights.sum_congr、Weights.mul_sum、mul_assoc_nat）；Becoming.Joint 的 Determined；
+           引用 losses-of-the-sum-over-histories（Interference.cancels）与 counting_transfer_iff 作界；
+           改写 identification-where-runs-part 与 typicality-by-counting 的读法（Ren 的说明）
+Delta: 新核心模块 Becoming.Situations（导入 Typicality；13 项定理／19 项声明）；Parting 与 Typicality 只改模块说明中的读法，
+       定理与声明不变
+Supplied premises / correspondence: 不加公理；自然数的步之权重、列出的动作与配置写在定理中（sum_finer、finer_count）；
+       两个值（situations_*）；按历程计数用到历程相等可判定（total_only、situations_of_course）
+Evidence: scratch_build 对 main 6c62e13e（P115 之后）：Becoming.Situations 13 项定理、19 项声明，Parting 18／27 与
+          Typicality 32／44 只改说明后重编译，公理报告全部为空，无警告；根模块见下“检查”；合并检查器回执待整合者的运行
+Boundary: 只陈述自然数权重；带符号的权重会相消，不是情境之数；按历程计数与大数定律只对两个值陈述；哪个情境实际发生
+          不是计数，不被推出；“情境”在这里是走一步的方式，Ren 的“情境”更广（哪个世界、它的局部之律）；不含伦理谓词
+Integration: 第 6 节新段落对（在运行分开一段之后）与该段读法的改写；§8 状态行、辨识的读法、路径分支时的开放项；
+       理论的完整陈述一条；界一项；第一部分的总陈述“认识”；§9 一行；术语表一行；Becoming.lean 的导入与模块说明；
+       check_becoming.py 的核心之列与范围；Lean README 一行与层内导入；一项新记录，两项记录的读法
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Situations.upto`、`sum_upto`、`sum_one` | 前 k 个数；常数读数在其上之和是 k 倍；计一之和是长度 |
+| `Situations.finerLaw`、`finerLaw_determined`、`finerLaw_step_iff` | **以情境为动作，律是确定的。** 情境 (a, m, k) 把 s 带到 m，当它是从 s 经 a 到 m 的 weight s a m 个情境之一；这个律是确定的，恰在步的权重为正处走这一步 |
+| `finerSteps`、`finer`、`coarse` | 从一个配置出发的情境、n 步的细历程、细历程忘掉情境所走的历程 |
+| `sum_finer` | **自然数权重计数情境。** 对每个列出动作与配置、以自然数为步之权重的过程，历程的任一读数在 n 步细历程上之和，是它在历程上、每个乘以其权重之和（一次对步数的归纳，经 `Weights.sum_joinMap`） |
+| `finer_count` | 细历程之数就是历史之和（经 `Weights.sum_courses`） |
+| `sum_courses_values` | `Becoming.Weighted` 中两个值的自由分支的历程，就是 `Becoming.Typicality` 的历程 |
+| `situations_count`、`mul_indicator`、`total_only`、`situations_of_course` | **一个历程的权重是走它的情境之数**：每步 p 个与 q 个情境时细历程共 (p + q)ⁿ 个；每个历程在历程之列中只出现一次 |
+| `far`、`weight_far`、`situations_typical` | **大数定律计数情境**：历程偏差至少为 d 的细历程之数乘 d 至多 n·p·q·(p + q)ⁿ（经 `Typicality.typical`） |
+
+**它回答了什么。** Ren 的说明分两层。其一，理论描述每样东西所遵从的：核心的每条定理对每个过程、世界与运行成立，不固定任何情境，就像逻辑不需要一个重力之值。其二，实际的变化依赖情境，情境使之为真：哪个世界、它的关系项与交换、起点与局部之律，固定实际的历程；不同的行星给出不同的演化。第二层对 §140 的两条读法各有一个回答。分开处：记录与所给的律都不固定走哪条路，情境固定它；“开放的未来”的读法撤回。这与 Ren 2026-10-12 已同意的读法一致（“there are no two realities”）：一段历史显示的律，连同保留的历史读，只容许这一段（`Run.keepHistory_shown`，§91）；本节补上计数的一面：以情境为动作，律是确定的（`finerLaw_determined`）。机会：自然数权重是走每一步的情境之数（`sum_finer`、`situations_of_course`），大数定律说同类情境中多数给出接近权重之比的频率（`situations_typical`）；哪个情境发生不是计数。所以陈述机会不需要“发生的历程典型”这一前提，它是同类情境之数；预言发生的那一个历程，则需要它的情境。
+
+**关于 Ren 的话（AI 的注，按 Ren 2026-10-15“if my earlier words are unreasonable, please keep note, not follow blindly”）。**
+1. **重力的例子。** 万有引力之律是所有行星共同遵从的，各行星表面的重力之值是情境的。例子在这个意义上成立：“we don't need gravity”指不需要它的值，不是不需要引力之律；引力之律本身属于“每样东西所遵从的”一边（若它是普遍的），而核心不推出它，它是一个经验的律，以一个过程给出。
+2. **“the situation makes it true”。** 在核心中，以情境为动作，律是确定的；一段历史显示的律只容许这一段。所以“实际的变化由情境固定”在表示上总能做到，不需要公理。它不说情境比记录或所给的律更少：分开处，固定下一个值的情境不在先前所识之中（`Parting.not_right_on_both`）。它也不说情境是不依语境的：带符号的权重会相消（`Interference.cancels`），语境中的识不总能粘成一个不依语境的赋值（`Becoming.Context`、`Becoming.Quantum`，以及进行中的 P112）；在这些地方，使之为真的情境必须包括读它的语境，不依语境的情境之数给不出这些统计。
+3. **“just saying we are all one doesn't make it true”。** 这与方法一致：一元是方法上的要求（AGENTS 与 NONDUAL-METHOD），不是推出特定事实的前提；核心的一元在于所有定理陈述同一展开，特定的真由情境给出。
+
+**读法（AI 对 Ren 的话的读法，Ren 同日已取，见下）。** 核心陈述每个情境所遵从的；实际的变化由情境使之为真；分支的律是一个确定的律忘掉了情境；机会是同类情境之数。§140 的两条读法由此取代；§140 保留原文作为历史。
+
+**Ren 的判断。** 2026-10-16，对报告本节结果、并重述上面读法的回答，Ren 说：“yes, i take those readings”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md)）。所以上面四条读法（核心陈述每个情境所遵从的；实际的变化由情境使之为真；分支的律是忘掉情境的确定的律，分开处由情境固定；机会是同类情境之数）是 Ren 取了的读法；“关于 Ren 的话”中的三条注仍是 AI 的注。有界时类的名是否读作它的有限的未来，仍待 Ren。
+
+**作者反审。**
+1. **已知的结果。** 以同等可能的情况之数读概率（拉普拉斯）、以微观状态之数读宏观的权重（玻尔兹曼），以及把非确定的系统表示为一个确定的系统在更细状态上的投影，都是已知的。增量是：在核心中不用公理，接到 `Becoming.Weighted` 的历史之和与 `Becoming.Typicality` 的大数定律，并且对每个过程（`sum_finer`），不只对两个值。
+2. **强度。** `sum_finer` 是对任一读数的推前，所以对每个过程都成立；“一个历程的权重是走它的情境之数”只对两个值陈述，因为它要每个历程在列表中只出现一次（`total_only`）；对任意过程，这要求列出的动作与配置无重复，没有陈述。
+3. **“情境”的范围。** 这里的情境是走一步的方式。Ren 的“情境”更广：哪个世界、它的局部之律（各行星的重力）。后者在核心中就是对过程的量化：每条定理对每个过程成立，所以一个世界的局部之律是哪一个过程；不需要新定理。
+4. **名字。** `Situations`、`finerLaw`、`finer`、`coarse`、`upto`、`far` 都是结构性的名字；“情境”取自 Ren 的话。
+5. **证明。** 不用 `simp`、`omega`；结合律用 `mul_assoc_nat`；`if_pos`、`if_neg` 与 `List.cons.inj`；`Nat.succ_mul` 与 `Nat.one_mul` 不引入公理（审计为空）。
+
+**检查。** 在暂存区对 main 6c62e13e（P115 之后）编译：`Becoming.Situations` 13 项定理、19 项声明，`Becoming.Parting` 18／27、`Becoming.Typicality` 32／44（只改说明）；没有错误或警告，公理报告为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。核心检查器在整合者的运行中检查。本节尚未经独立审查。
+
 ## 145. 依 Ren 的交托决定的读法（P110）
 
 2026-10-15／16。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定；每项写明理由与会改变它的东西，记为依 Ren 2026-10-15 的交托所作的决定，不记为 Ren 自己的决定，Ren 可改其中任何一项。交托的另一半，“推进完整的前沿”，见 §146（P111）与 §147（P112）。工作板上认领为 P110。
@@ -9127,14 +9235,14 @@ theorem Propagation.Loop.runaway : ∀ t, amount (t + 1) true = 2 ^ t
 Result(s): 不新增结果；决定记录 DELEGATED-CHOICES（D1–D39）。101 项记录各加一条成对的、注明日期的说明：此前留给 Ren 的读法与名称
            按所列决定改为采用或不采用，请 Ren 判断这些读法的下一步删去；各记录的结果编号、陈述、证明与绑定不变
 Delta: 读法的状态，不是数学。理论第 8 节“属于 Ren 的选择”一类改为“依 Ren 的交托决定”，列出仍属 Ren 者；第 6 节各处“读法（AI 的，
-       待 Ren）”改为“依 Ren 2026-10-15 的交托采用”；Lean 的模块说明（52 个模块与根模块）与 Lean README 折叠决定，只改注释
+       待 Ren）”改为“依 Ren 2026-10-15 的交托采用”；Lean 的模块说明（51 个模块与根模块）与 Lean README 折叠决定，只改注释
 Supplied premises / correspondence: 不加前提。读法的标准（AI 的）写在决定记录 §0：Ren 的原话优先；不加前提；已检查的结果能定的由它
        定；确切范围；关系优先；不丢失
 Evidence: 每项决定引 Ren 的原话或已检查的定理。fold_docstrings.py 断言每处替换恰好一次、每个 Lean 文件去掉注释后的文本不变，改动的
-          段落重排时只改换行（文件的词不变）；reconcile_records.py 断言每处特定替换恰好一次；scratch_build 对合并 main 723d9c33 后的树：
-          177 个模块，142 步运行，89 步复用，无警告，54 个模块的公理报告全部为空
+          段落重排时只改换行（文件的词不变）；reconcile_records.py 断言每处特定替换恰好一次；scratch_build 对合并 main c7371b53 后的树：
+          232 步中 9 步运行、223 步复用，无警告，54 个改动的模块（含根模块）的公理报告全部为空
 Boundary: 决定记录 §10 所列不在交托之内，照旧属 Ren；决定不是证明，也不说 Ren 持有什么；在 Ren 2026-10-15 的回答之后提出的读法
-          （P116 的“按情境”连同其限定）留给 Ren
+          （P116 的“按情境”连同其限定）留给 Ren；Ren 2026-10-16 取了 AI 对其说明的读法（§144）
 Integration: 理论第 6、8 节；DELEGATED-CHOICES；101 项记录；Lean 模块说明与 README；指令登记一项（2026-10-15-delegated-choices）
 ```
 
@@ -9150,11 +9258,11 @@ Integration: 理论第 6、8 节；DELEGATED-CHOICES；101 项记录；Lean 模�
 | 交换、步、历史、描述与辨识（D30–D35、D38） | 以确切范围采用；“按情境”不读作界，由 Ren 自己 2026-10-15 的回答决定（D34） |
 | 名称（D36） | AI 的工作名称在陈述有其确切意义处采用；Ren 的用语仍属 Ren |
 
-**它回答了什么。** Ren 的问话有两半：作出最好的选择，推进完整的前沿。前一半在这里：此前在理论、101 项记录与 52 个 Lean 模块中称为“AI 的读法，待 Ren”的读法与名称，现在每一处都有一个编号的决定、它的理由和会改变它的东西，Ren 可以逐项改动。标准把决定限在读法之内：它们不改动任何定理，不给任何规律加前提；不采用的读法，其定理照旧保留，只是不再是理论的读法。有几项不是由判断而是由已检查的结果决定的：活动的读法（D2）被生起与止息在有限世界中重合这一定理排除；“按情境就是界”（D34）被 Ren 自己的回答排除。另一些在合乎原话的几种读法中取不加前提的一种：识在形式上读作律的敏感（D37），因为那是律所经的最小的识，取它不在律之外加任何东西。
+**它回答了什么。** Ren 的问话有两半：作出最好的选择，推进完整的前沿。前一半在这里：此前在理论、101 项记录、51 个 Lean 模块与根模块中称为“AI 的读法，待 Ren”的读法与名称，现在每一处都有一个编号的决定、它的理由和会改变它的东西，Ren 可以逐项改动。标准把决定限在读法之内：它们不改动任何定理，不给任何规律加前提；不采用的读法，其定理照旧保留，只是不再是理论的读法。有几项不是由判断而是由已检查的结果决定的：活动的读法（D2）被生起与止息在有限世界中重合这一定理排除；“按情境就是界”（D34）被 Ren 自己的回答排除。另一些在合乎原话的几种读法中取不加前提的一种：识在形式上读作律的敏感（D37），因为那是律所经的最小的识，取它不在律之外加任何东西。
 
 较早各节写着“读法待 Ren”的，按记录中的决定读；那些节的文本作为当时的证据保留，不改写。
 
-**D34 与 Ren 的回答（按 Ren 2026-10-15 的“if my earlier words are unreasonable, please keep note, not follow blindly”）。** D34 起初采用读法 1，“按情境就是界”。Ren 在另一会话中回答：“not sure what's the reading 1, but reality is always situational”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)）。D34 因此改为由 Ren 的话决定：“按情境”不读作界；状态数的界是情境的有限记录确定所识一切的条件。P116 在 Ren 的回答之后提出的读法，“完整的真按情境可推出”连同其限定，不由这一交托决定，仍属 Ren（§140，决定记录 §10）。
+**D34 与 Ren 的回答（按 Ren 2026-10-15 的“if my earlier words are unreasonable, please keep note, not follow blindly”）。** D34 起初采用读法 1，“按情境就是界”。Ren 在另一会话中回答：“not sure what's the reading 1, but reality is always situational”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)）。D34 因此改为由 Ren 的话决定：“按情境”不读作界；状态数的界是情境的有限记录确定所识一切的条件。P116 在 Ren 的回答之后提出的读法，“完整的真按情境可推出”连同其限定，不由这一交托决定，留给 Ren（§140，决定记录 §10）；Ren 2026-10-16 说明“the situation makes it true”，并取了 AI 对这一说明的读法（§144），它们是 Ren 取了的读法。有界时类的名读作它的有限的未来，作为“名可名”的一种精确化的类比，由 D34 以确切范围采用：这一读法在交托之前已列在第 8 节属于 Ren 的选择中；§144 写它仍待 Ren，写在本节落地之前，按 D34 读，Ren 可以改。
 
 **不在交托之内的。** Ren 自己的文本与用语（OPENING 及其脚注、静止的中文用语与“静止定理”这一标题、“closure bounds change”、识与理作为 Ren 的读法）；Ren 是否持有不变之步；第二部分那一条断言的规范根据；I4；Ren 2026-10-11 保留的表示决定（离散的步、自然数的量、无穷多立着者处的普查、判定的相等与列出）；审查的决定。
 
@@ -9183,7 +9291,7 @@ Result(s): 新增 where-novelty-gain-comes-from；复用 returning-novelty-forge
 Delta: 新核心模块 Becoming.Gain（导入 Novelty；30 项定理／35 项声明）；不改已有模块
 Supplied premises / correspondence: 不加公理；每次上升被给予不用前提；第一律（Flow.Gainless）、家族不重复（Distinct）、整体列出每个
        条件、其余不给净量、所要求者及其多少固定于家族之内（Web.RequiresWithin），都写在各自的定理中
-Evidence: scratch_build 对合并 main 723d9c33 后的树：Becoming.Gain 30 项定理、35 项声明，公理报告为空，无警告，根模块与其闭包一同编译
+Evidence: scratch_build 对合并 main c7371b53 后的树：Becoming.Gain 30 项定理、35 项声明，公理报告为空，无警告，根模块与其闭包一同编译
 Boundary: 实际的部分是否开放、其余在实际展开中是哪个关系项、其交换是否不止，都是对应；存量之内构型数之界是否可达没有陈述；离散的步与
           自然数的量；不含伦理谓词
 Integration: 理论第 6 节（第一部分的总陈述）、第 8 节（D5、D7 的读法）、第 9 节一行、术语；Becoming.lean 的导入与说明；
@@ -9216,7 +9324,7 @@ Integration: 理论第 6 节（第一部分的总陈述）、第 8 节（D5、D7
 4. **名称。** `NetGiver`、`RequiresWithin`、`FirstSupported`、`NewAt` 是结构性的名字；“增益”指存量的上升，与 P115 的“耦合强度”（系统论中增量增益的意义）分开命名。
 5. **证明。** 给者经 `search` 在参与者的有限列表上找到，不判定无穷者；不用 `simp`、`omega`；公理报告为空。
 
-**检查。** 暂存区构建（合并 main 723d9c33 后的树）：`Becoming.Gain` 30 项定理、35 项声明，公理报告为空，无警告；根模块与其闭包一同编译。核心检查器在整合者的运行中检查。本节尚未经独立审查。
+**检查。** 暂存区构建（合并 main c7371b53 后的树）：`Becoming.Gain` 30 项定理、35 项声明，公理报告为空，无警告；根模块与其闭包一同编译。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
 ## 147. 语境中的读法何时粘合：奇偶律、Bell 型之界与环（Becoming.Gluing；P112）
 
@@ -9229,7 +9337,8 @@ Result(s): 新增 gluing-under-parity；复用 contextual-registration（Context
 Delta: 新核心模块 Becoming.Gluing（导入 Context 与 Population；81 项定理／113 项声明）；不改已有模块
 Supplied premises / correspondence: 不加公理；主张与语境被列出；障碍、m − 1 之界与环律不用其他条件；唯一性（消去）以主张的相等可判定、
        主张列举不重复为条件；混合是可重复计入的赋值列表，以自然数计权重
-Evidence: scratch_build 对合并 main 723d9c33 后的树：Becoming.Gluing 81 项定理、113 项声明，公理报告为空，无警告；环的一节先单独编译
+Evidence: scratch_build 对合并 main c7371b53 后的树：Becoming.Gluing 81 项定理、113 项声明，公理报告为空，无警告；环的一节先单独编译；
+          可判定性清单（暂存运行，只跳过回执核对）把四项消去定理归为“分辨相同”
 Boundary: 量子值（Tsirelson 之界需要实数振幅）不陈述；超出奇偶约束的语境性没有确切规律；实际展开的哪些识是这种奇偶的，是对应；外围
           CorrectionRelations 的环律与这里的对应定理没有写出；不含伦理谓词
 Integration: 理论第 6 节（第一部分的总陈述）、第 8 节（D33 的读法，描述一类的进一步证明）、第 9 节一行、术语；Becoming.lean；
@@ -9265,7 +9374,7 @@ Integration: 理论第 6 节（第一部分的总陈述）、第 8 节（D33 的
 5. **名称。** `ParitySystem`、`ParityConstraint`、`Contradicts`、`unmet_odd`、`met_le`、`mixture_le`、`indexed_met`、`glues_iff`、`Cycle`、`walk` 都是结构或数学的名字。
 6. **证明。** 不用 `simp`、`omega`；两个值上的恒等式以 `decide` 证明；消去用相等的判定（`if c = x`），它作为定理的条件写出；公理报告为空。
 
-**检查。** 暂存区构建（合并 main 723d9c33 后的树）：`Becoming.Gluing` 81 项定理、113 项声明，公理报告为空，无警告；环的一节先单独编译。核心检查器在整合者的运行中检查。本节尚未经独立审查。
+**检查。** 暂存区构建（合并 main c7371b53 后的树）：`Becoming.Gluing` 81 项定理、113 项声明，公理报告为空，无警告；环的一节先单独编译。可判定性清单的暂存运行（只跳过回执核对）：只在证明中用到可判定性的定理由 224 项增至 228 项，即 `ParityConstraint.met_or_contradicts`、`ParitySystem.global_or_contradicts`、`ParitySystem.noGlobal_iff`、`ParitySystem.glues_iff`，归为“分辨相同”（消去按一个主张是否就是被消去者分情形）；证明可判定的定义与实例由 136 项增至 137 项（`support` 的可判定实例）。核心检查器在整合者的运行中检查。本节尚未经独立审查。
 
 ## English summary
 
@@ -10702,7 +10811,7 @@ The author's counterreview concedes three points. The necessary side follows dir
   3. Whether `SPINE-INTEGRATION.py` should match run modules by full name and adopt the table's copy rule.
 
   Applications stay as they are. Working artifacts and snapshots stay as evidence. Nothing is deleted.
-**Identification where runs part, and typicality by counting (P116, 16 October 2026).** Ren's fourth message of 15 October: “not sure what's the reading 1, but reality is always situational … "What this line doesn’t reach" is also worth doing … if my earlier words are unreasonable, please keep note, not follow blindly” ([source](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)). The identification line is stated for determined laws; what it did not reach was the registration's limit, already exact in `Becoming.Learnable` (section 119, cited, not reproved), and worlds that branch or carry weights. Section 138 adds two core modules, with no axiom and no premise beyond what each law names.
+**Identification where runs part, and typicality by counting (P116, 16 October 2026).** Ren's fourth message of 15 October: “not sure what's the reading 1, but reality is always situational … "What this line doesn’t reach" is also worth doing … if my earlier words are unreasonable, please keep note, not follow blindly” ([source](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)). The identification line is stated for determined laws; what it did not reach was the registration's limit, already exact in `Becoming.Learnable` (section 119, cited, not reproved), and worlds that branch or carry weights. Section 140 adds two core modules, with no axiom and no premise beyond what each law names.
 - **`Becoming.Parting` (18 theorems).** Two runs part at a step where they register the same before it and differ at it; at a parting no learner, whatever it is given, the world included, is right on both (`not_right_on_both`). Not parting is kept along runs (`Unparted.along`, by joining runs at a step); so on a run from an unparted configuration held by N configurations the registered course has at most N states, and the learner by the least bound is right from N + N − 1 on (`course_statesBelow`, `leastBound_right`), exact for processes as for laws (`rest_earliest_runs`). A determined process with one move parts nowhere; so does a branching that does not show in what is registered. Under free branching every course is a run's course: after every record two runs part, every learner has a run on which it is never right, and a run on two configurations has a course with no bound on its states (`free_parts_after`, `free_never_right`, `free_unbounded`).
 - **`Becoming.Typicality` (32 theorems).** With two values counted by natural weights p and q, the weighted squared deviations (q·a − p·b)² of the courses of n steps add up exactly to n·p·q·(p + q)ⁿ (`spread`), so the courses deviating by at least d weigh, times d, at most that (`typical`): the counting form of the weak law of large numbers, with no premise. The weights are `Becoming.Weighted`'s counting weights of free branching (`sum_courses_weight`). That the course which happens is typical is not derived: every course is a run.
 - **Notes on Ren's words (the AI's).** “The full truth can be derived, situationally” holds for what is registered, as far as runs do not part; at a parting the next value is fixed by nothing registered before it, not even for a knower of the world, and weights show only through typical courses, typicality not being derived. “Reality is always situational” agrees with the core if it means every registration is within a context; if it means every situation has a bound on its states, it is a substantive premise that no axiom-free derivation gives, since the core has worlds with no bound. The core covers every world in that its laws are stated for every process; it does not derive every fact, and at partings it derives exactly what cannot be fixed. Ren did not adopt reading 1 (“situationally means the bound”); it stays the AI's reading with these qualifications.
@@ -10716,7 +10825,58 @@ The author's counterreview concedes three points. The necessary side follows dir
 - **Witnesses.** A unit given once and relayed at twice its level arrives as 2t by step t + 1, with no loop, since levels hold what they are given (`Propagation.Chain.keeps_arriving`); a loop of strength one gives 2^t (`Propagation.Loop.runaway`).
 - **Readings (the AI's).** The coupling strength is the measure sensitivity lacked; how much difference arrives is itself a course of the one unfolding; a held difference keeps arriving; how entangled a whole is reads as how strongly its exchanges are coupled to each other's levels. Not derived: the strengths themselves (supplied bounds, no least one stated), a general theory of loops, infinitely many conditions, real amounts and continuous time. In systems terms the strengths are incremental gains and the carried amount their comparison system, here attained. The name "coupling strength" follows levels-of-closure, leaving "gain" to P111. Scratch build on main `416ff6b0`: 78 theorems, 97 declarations, empty axiom reports; the decidability inventory classifies every new row. Not yet independently reviewed.
 
-**Readings decided on Ren's delegation (P110, 16 October 2026).** After P107 landed Ren asked, “What's the best choices to make? please make best of your judgement, and push the frontier of completeness” ([words](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)). Section 145 reads this as a delegation: the readings and names that the theory's §8, CONTINUATION-GROUNDING-PLAN §6 and the records left to Ren are decided by the AI, each with its reasons and what would change it, and recorded as the AI's decisions on the delegation, not as Ren's own; Ren can reverse any of them. [DELEGATED-CHOICES](DELEGATED-CHOICES.md) holds D1–D39. They change no theorem and add no premise; the theorems of declined readings stay. Some are decided by checked results rather than judgement: the activity reading of generative and degenerative is declined because arising and ceasing recurring coincide in finite worlds (D2); registration is read formally as the law's sensitivity, the least registration it reads through (D37). D34 first adopted “situationally means the bound”; Ren's reply, “not sure what's the reading 1, but reality is always situational”, now decides it, and P116's reading posed after that reply stays Ren's. D39 decides P115's readings, which its owner left to Ren or this delegation: the coupling strength is read formally as how strongly a formation registers (识 itself stays Ren's), and in Ren's “highly entangled system” entanglement reads as coupling strength, as Ren's own sentence glosses it, not as quantum entanglement. Not within the delegation: Ren's own texts and terms, Ren's testimony on the invariance step, warrant, I4, the representation decisions Ren reserved and decisions of review. 101 records gain one paired, dated note each; the Lean docstrings of 52 modules and the root, and the Lean README, fold the decisions, comments only, with the code outside comments asserted unchanged. Earlier sections' “pending Ren” are read through the records' decisions; their text stays as evidence. Not yet independently reviewed.
+**Header notes on the earlier versions, integration I4c (16 October 2026).** Ren decided three things on the I4a table (section 139; [source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)):
+- the earlier versions get notes (“Add the notes”);
+- the join candidates start with the closest gaps (“Closest gaps first”, I4b);
+- general mathematics (17 modules) and the derivation calculus (2) stay outside the spine for now (“Leave outside for now”).
+
+This section covers the first. Each of the 31 earlier versions now names, on its first line, the spine declarations its row lists and the relation (same, spine-generalizes or instance).
+- **Placement.** The documents hold about 800 line-anchored links into these files, so the note never starts a new line, and no line number moves.
+  - In 29 files it is a trailing comment on the import line.
+  - In OneProcess and TrajectoryFidelity, which open with a comment, it is written on that comment's first line.
+  - Both forms parse under the project toolchain (v4.29.1).
+- **Hashes.** Three records read these bytes, and each was rebound with a history entry after the change was read:
+  - trace-law-equivalence: GenerativeModel, an integration reference.
+  - guarded-program-question-recovery: ExplanatoryResumptionCases, a counterexample reference.
+  - residual-continuation-correspondence: ExplanatoryResumptionCases, a proof reference. Its proof binding moves to a fresh explanatory-resumption receipt, 20261015T180520.693095Z: 22 modules and 314 audits, the same as on 8 October, with only that file's bytes different.
+  - Earlier check files that mention these paths are historical evidence of the old bytes, and they stay as they are.
+- **Core run.** None is needed; none of the 31 files is in the core receipt.
+- **The table.** It now marks the two themes kept outside, and it says that the notes exist.
+- **Boundary.** A note is an edge, not a verdict. The modules stay, and nothing is deleted.
+
+**Every origin passes the gate, integration I4b item 1 (16 October 2026).** Ren chose “Closest gaps first” on the I4 classification table ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md)). The table read LivingOrganization as a join candidate: over any reaction network, a pool present at the end was present initially or came in at an entry step. Becoming.Gated stated only quantities the ungated steps keep in both directions; the one-directional trace law was unstated (section 139). This section states it, with Gated's earlier law as its case.
+- **Preserved and reflected** (`Becoming.Gated`, no premise; 4 → 13 theorems).
+  - The ungated steps preserve p where it holding before a step gives it after (`PreservedBy`), and reflect p where it holding after gives it before (`ReflectedBy`).
+  - Keeping a quantity is preserving every value of it, and equally reflecting every value (`keptBy_iff_preserved`, `keptBy_iff_reflected`).
+  - Along courses these hold exactly as along steps (`preserved_along_iff`, `reflected_along`).
+- **Leaving passes the gate.** Where the ungated steps preserve p, a course from where p holds to where it fails contains a gated move (`leaving_passes_gate`). `change_passes_gate` is its case p := (q equals its starting value).
+- **Every origin passes the gate.** Where the ungated steps reflect p, a course ending where p holds either started where it held, or splits into a prefix, a gated step after which p holds, and the rest (`origin`). The proof splits only on the gate, which is already decided; p is not decided.
+- **Boundary.** With the gate a proposition, the law holds wherever every gate holds or fails (`origin_of_decides`). Asked of every process, it is exactly double-negation elimination (`origin_of_propositions_iff`).
+  - The witness is one move from `false` to `true`, with p holding at `true` and the gate Q. The move reflects p exactly where Q cannot fail, and the law then gives Q.
+  - So the law needs exactly a decided gate.
+- **LivingOrganization** (`LivingOrganizationCorrespondence`, periphery, with its own checker).
+  - The gate is the recipes entering the pool (`entryGate`). Every other step reflects pool presence (`presence_reflected`).
+  - So `trace_pool_origin` follows from `Gated.origin` (`trace_pool_origin_by_core`), which adds that the pool is present right after the entry step (`entry_then_present`). The periphery theorem decided the pool; the core law does not.
+  - Where every admitted recipe is closed, there is no gate, and `reflected_along` keeps an empty pool empty (`empty_pool_preserved_by_core`).
+  - Axiom reports: only propext and Quot.sound, from LivingOrganization's own arithmetic and list tactics. The core's new declarations have empty reports.
+- **Decidability inventory.** `origin_of_decides` splits on each gate: proof-only theorems go 223 → 224. `origin_of_propositions_iff` joins the boundary theorems.
+- **Record.** The new record every-origin-passes-the-gate reuses organizational-rule-inheritance's `KeptBy`.
+- **Not stated.** Where p is decided, the first gated step at which p comes to hold could be located as in `change_located`; this section does not state it.
+- **Boundary and reading.** The gate locates where change or origin can enter; it does not say a gated move changes anything. The recipes keep LivingOrganization's scope. The reading, which is the AI's and pending Ren: reflecting is "present after only if present before", so an organization's pool was there already or came in through an entry.
+- **Next in I4b.**
+  - Horizon: finite refutation and prefix closure (PrefixSafety, IdealWarrant).
+  - Lasting: König lifting (FiniteBranching).
+  - Selection: PluralRecords and TieBreaking, after P110 lands.
+
+**Weights count situations (P117, 16 October 2026).** Of section 140's two AI readings (“at a parting the branch is settled only when taken, the form the open future takes in identification”; “reading weights as chances adds the premise that the course which happens is typical”), Ren wrote: “i mean we are describing what everything obeys, but at every moment, the actual change depends on the situation … just saying we are all one doesn't make it true, the situation makes it true”, and asked what to do with this for the second ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md)). Section 144 adds one core module, `Becoming.Situations` (13 theorems, no axiom, no premise beyond what each law names), on Weighted's and Typicality's definitions.
+- **With the situation as the move, the law is determined.** A step weighing k is taken in k situations; the law whose moves are the situations is determined and takes exactly the steps of positive weight (`finerLaw_determined`, `finerLaw_step_iff`). A law whose steps are those of positive weight is this law with the situation forgotten.
+- **Natural weights count situations.** For every process with listed moves and configurations and natural weights of steps, summing any reading of the courses over the finer courses of n steps is summing it over the courses, each times its weight (`sum_finer`), so the finer courses number the sum over histories (`finer_count`).
+- **The law of large numbers counts situations.** On two values with p and q situations a step there are (p + q)ⁿ finer courses, a course is taken by its weight of them (`situations_of_course`, each course occurring once, `total_only`), and those whose course deviates by at least d number, times d, at most n·p·q·(p + q)ⁿ (`situations_typical`). Which situation happens is not a count.
+- **Readings (the AI's reading of Ren's words, taken by Ren the same day, below).** The core states what every situation obeys; the situation makes the actual change true; a branching law is a determined law with the situation forgotten; a chance is a number of situations of a kind, so stating it needs no premise of typicality, while foretelling the course needs its situation. These replace section 140's two readings, whose text stays as history.
+- **Ren's judgment.** On 16 October, answering the report of this section's results, which restated these readings, Ren wrote “yes, i take those readings”. The four readings above are therefore Ren's; the three notes on Ren's words remain the AI's notes. Whether, with a bound, a class's name reads as its finite future is still for Ren.
+- **Notes on Ren's words (the AI's).** The law of gravitation is shared by all planets; the value of gravity on each is situational, so the example holds of the value. Representing the actual change as fixed by a situation needs no axiom, but where weights cancel or readings depend on context (`Interference.cancels`, `Becoming.Context`, `Becoming.Quantum`, P112 in progress), the situation must include the context of the reading: counts of context-free situations do not give those statistics. “Just saying we are all one doesn't make it true” agrees with the nondual method: oneness is a requirement of method, and particular truths come from the situation.
+- **Boundaries.** Natural weights only; counting per course and the law of large numbers for two values only (per course for every process needs listings without repetition); which situation is actual is not derived. Scratch build on main 6c62e13e: empty axiom reports. Not yet independently reviewed.
+**Readings decided on Ren's delegation (P110, 16 October 2026).** After P107 landed Ren asked, “What's the best choices to make? please make best of your judgement, and push the frontier of completeness” ([words](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)). Section 145 reads this as a delegation: the readings and names that the theory's §8, CONTINUATION-GROUNDING-PLAN §6 and the records left to Ren are decided by the AI, each with its reasons and what would change it, and recorded as the AI's decisions on the delegation, not as Ren's own; Ren can reverse any of them. [DELEGATED-CHOICES](DELEGATED-CHOICES.md) holds D1–D39. They change no theorem and add no premise; the theorems of declined readings stay. Some are decided by checked results rather than judgement: the activity reading of generative and degenerative is declined because arising and ceasing recurring coincide in finite worlds (D2); registration is read formally as the law's sensitivity, the least registration it reads through (D37). D34 first adopted “situationally means the bound”; Ren's reply, “not sure what's the reading 1, but reality is always situational”, now decides it. P116's readings, posed after that reply, were left to Ren, and on 16 October Ren took the AI's reading of their clarification (section 144). With a bound, a class's name reads as its finite future, an analogy for a precise form of 名可名, adopted by D34 within the delegation, since it was listed among Ren's choices before it; section 144's “still for Ren” is read through D34. D39 decides P115's readings, which its owner left to Ren or this delegation: the coupling strength is read formally as how strongly a formation registers (识 itself stays Ren's), and in Ren's “highly entangled system” entanglement reads as coupling strength, as Ren's own sentence glosses it, not as quantum entanglement. Not within the delegation: Ren's own texts and terms, Ren's testimony on the invariance step, warrant, I4, the representation decisions Ren reserved and decisions of review. 101 records gain one paired, dated note each; the Lean docstrings of 51 modules and the root, and the Lean README, fold the decisions, comments only, with the code outside comments asserted unchanged. Earlier sections' “pending Ren” are read through the records' decisions; their text stays as evidence. Not yet independently reviewed.
 
 **Where novelty's gain comes from (P111, 16 October 2026).** Under the same delegation, section 146 adds `Becoming.Gain` (30 theorems, no axiom). With the rest of the whole counted as a relatum (section 85), every rise is given, with no premise: across a step at which a family's stock rises, some relatum gives it more than it takes, a formation taking part or the rest, found by checking each one taking part (`Flow.rise_netGiver`, `Flow.rise_given`). Under the first law a family without repetition that rises is given net by the rest or is open there (`Flow.rise_from_rest_or_open`). A finite whole has no boundary to cross, so every rise of it is the rest's, and with the rest idle it stays within its stock, returns and forgets, and is not new at every step (`Flow.whole_not_new_of_rest_idle`): unceasing generation within a bounded whole is return. Novelty needs gain, along consecutive steps or first visits (`Web.rises_late_of_firsts`), and so does endless new formation where what forms requires a fixed amount within the family, since a step at which something is first supported is a first visit (`Web.newAt_of_first`); under the first law each such rise comes from the rest or across the boundary, for every family without repetition holding it (`Flow.new_beyond_every`). Counting on is given each unit by the rest (`Flow.counting_given_by_rest`). Readings (D5, D7): gain from beyond the part reads as these two ways in, and a finite whole new without end is one whose listing leaves out what gives to it. Known: conservation and the pigeonhole principle; the increment is the statement with no premise and the two ways in. Not stated: whether the bound by the configurations within the stock is reached, and the exact ratio of gain to novelty. Not yet independently reviewed.
 

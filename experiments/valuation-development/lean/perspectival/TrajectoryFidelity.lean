@@ -1,4 +1,4 @@
-/-!
+/-! 脊柱上 / On the spine (I4, 2026-10-16): `Becoming.Readout.reading_single_iff`, `Becoming.Readout.law_through_iff`, `Becoming.Readout.foldl_semiconj` — 脊柱的律更一般 / the spine law is more general; MODULE-CLASSIFICATION.md
 # A formed perspective's present and future correspondence
 
 The shared process state can include acquired records, selective dispositions,
