@@ -38,7 +38,7 @@ that keeping is carried by plans whose later moves follow what was registered.
   move leading, whatever is registered, into the family, keeps each of its classes for every
   horizon (`keptFor_of_closed`). A certificate of `Viability` with a move allowed and enabled
   throughout it is such a family: every class within it is kept for every horizon
-  (`Certificate.keptFor`).
+  (`Certificate.keptFor`), the viability kernel among them (`Kernel.keptFor`).
 * **What is registered matters.** In `Matching`, a hidden bit must be matched by the second
   move. Registering the bit, the starts are kept for two steps; registering nothing, they are
   not (`Matching.registration_matters`).
@@ -326,6 +326,12 @@ theorem Certificate.keptFor {K : S → Prop} (cert : Certificate P guard K) {a :
     (fun _ inside => ⟨a, fun s held => usable s (inside s held),
       fun _ t seen => match seen with
         | ⟨s, held, step, _⟩ => cert.closed s a t step (inside s held)⟩)
+
+/-- **Where one move is allowed and enabled throughout the kernel, every class within the kernel is
+kept for every horizon**, whatever is registered. -/
+theorem Kernel.keptFor {a : A} (usable : Usable P allowed (Kernel P guard) a) :
+    ∀ n {B : S → Prop}, (∀ s, B s → Kernel P guard s) → KeptFor P sense guard allowed n B :=
+  Certificate.keptFor (kernel_certificate P guard) usable
 
 /-! ## What is registered matters -/
 

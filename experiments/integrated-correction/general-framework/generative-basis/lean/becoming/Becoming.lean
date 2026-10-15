@@ -86,6 +86,7 @@ import Becoming.Segmentation
 import Becoming.Readout
 import Becoming.Gated
 import Becoming.Viability
+import Becoming.Keeping
 import Becoming.Countdown
 import Becoming.Lasting
 import Becoming.Copying
@@ -825,6 +826,16 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   driven by admissible disturbances, given one admissible disturbance, no history ever leaves the
   guard exactly when some set containing the start lies within the guard and is closed under
   every admissible disturbance; a guarded history stops exactly where the history leaves it.
+* `Becoming.Keeping` (L2): a guard kept through what is registered, with no premise. A class is
+  kept for `n` steps where the guard holds throughout it and, with steps to go, some move usable
+  from it leaves, whatever the step registers, a class kept for one step fewer. A plan whose later
+  moves follow what was registered keeps the class for its length; where the registrations are
+  listed every kept class has such a plan, and for arbitrary registrations that every kept class
+  has one is exactly choice over the registrations. A finer registration keeps what a coarser one
+  keeps; a certificate with a move usable throughout keeps every class within it for every
+  horizon. Two parts' plans run together keep both guards where joint steps project onto the
+  parts and the joint moves are usable throughout, and every joint plan that keeps a guard has
+  them usable.
 * `Becoming.Countdown` (L2): counted work, kept properties of admitted courses and a reserved
   exit, with no premise. An admitted course keeps a property exactly when every admitted step
   does; work done one unit per tick for one unit of fuel finishes in `work + 1` ticks exactly
