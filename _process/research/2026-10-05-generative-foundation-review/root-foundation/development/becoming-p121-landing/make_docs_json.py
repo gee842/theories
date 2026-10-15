@@ -103,7 +103,7 @@ docs = {
         'the AI\'s, pending Ren |'),
     'paragraph_routes_zh': (
         f'**携带差别的阶作为历史之和（第一部分）。** Ren 取了读法：2026-10-12 所问的积分是 `Becoming.Weighted` 的历史之和及其损失，'
-        f'`Becoming.Loops` 的阶是同一结构类的，两者尚未接合（[Becoming.Routes]({LINK}Routes.lean)）。对每一种权重，把每步的权重分成基础部分与回应部分，j 阶（`Weights.within`）'
+        f'`Becoming.Loops` 的阶是同一结构类的，两者尚未连起来（[Becoming.Routes]({LINK}Routes.lean)）。对每一种权重，把每步的权重分成基础部分与回应部分，j 阶（`Weights.within`）'
         '跨每步由基础部分读 j 阶、由回应部分读 j − 1 阶，在每个不超过 j 的视界上就是整个历史之和（`Weights.within_exact`）；一个构形、'
         '基础一、回应 M 时，j 阶是 `Loops.orderSum M j n`，和是 (1 + M)^n（`Routes.SelfLoop.within_eq`、`Routes.SelfLoop.transfer_eq`）。'
         '把一个差别沿时间往回追，一步是一次回应，到较早的一个水平，权重是强度在回应能发生的各步上之和，其间水平保持（`responseWeight`）；'

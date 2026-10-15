@@ -14,7 +14,7 @@ Delta: 新核心模块 Becoming.Closing（导入 Remainder；51 项定理／61 �
 Supplied premises / correspondence: 不加公理；各定理所写者写在定理中：强度 k（给出的界）或从水平读出的强度 κ
        （ReadsBefore：每步只读至该步的水平）；多项式之界中条件全部列出、部分不给差、起始之差至多 D、每步进入每个条件的
        强度至多 M
-Evidence: scratch_build（对 main 271ab66a 加 P120 工作区的 Remainder.lean）：Becoming.Closing 51 项定理、61 项声明，
+Evidence: scratch_build（对 P120 提交 2a72060f，其 Remainder.lean）：Becoming.Closing 51 项定理、61 项声明，
           公理报告全部为空，无警告；合并检查器回执待整合者的运行
 Boundary: 离散的步、自然数的量；强度或读出强度的方式是给出的；对一切律刻画读出强度的回路何时形成没有陈述；
           不含伦理谓词

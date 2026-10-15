@@ -205,7 +205,7 @@ def routes_record(section):
         'correspondence': pair(
             'Ren 2026-10-12 问不确定的律的积分（“how how accurate can we do that uh what is the limitation do we have losses”）。'
             'Ren 2026-10-16 取了读法：所问的积分是 P82 的历史之和及其四种损失，P118 的阶是同一结构类的，按回应次数组织，如同费曼图按顶点数，'
-            '两者尚未接合；并说“joining P82\'s sum over histories with P118\'s orders … let\'s finish both”。本结果完成接合，回答 '
+            '两者尚未连起来；并说“joining P82\'s sum over histories with P118\'s orders … let\'s finish both”。本结果完成接合，回答 '
             'how-a-carried-difference-grows 与 losses-of-the-sum-over-histories 中把两者接上的一项。读法（AI 的，待 Ren）：沿时间往回的路线'
             '是历史，它的步是回应（顶点），顶点之间水平保持，如同传播子对中间时刻求和；两个积分是一个，P82 的回路损失就是 P118 的失控；对应是结构'
             '的，不是物理的，计数的权重不相消。数学是标准的：线性递推的路径之和与按相互作用次数的展开。',
