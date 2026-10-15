@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "utc": "20261015T164401.170999Z",
+  "utc": "20261015T172257.067968Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "becoming-checks/20261015T164401.170999Z",
+  "retained_run": "becoming-checks/20261015T172257.067968Z",
   "spine_modules": [
     "Becoming.Frame",
     "Becoming.Inquiry",
@@ -109,6 +109,7 @@
     "Becoming.Readings",
     "Becoming.Coupling",
     "Becoming.Sensitivity",
+    "Becoming.Courses",
     "Becoming.Relevance",
     "Becoming",
     "Becoming.Bridge",
@@ -117,7 +118,8 @@
     "Becoming.GranularityBridge",
     "Becoming.RepairComparison",
     "Becoming.Instances",
-    "Becoming.RenewalBridge"
+    "Becoming.RenewalBridge",
+    "Becoming.CoursesBridge"
   ],
   "core_modules": [
     "Becoming.Frame",
@@ -225,6 +227,7 @@
     "Becoming.Readings",
     "Becoming.Coupling",
     "Becoming.Sensitivity",
+    "Becoming.Courses",
     "Becoming.Relevance",
     "Becoming"
   ],
@@ -240,7 +243,8 @@
     "Becoming.GranularityBridge",
     "Becoming.RepairComparison",
     "Becoming.Instances",
-    "Becoming.RenewalBridge"
+    "Becoming.RenewalBridge",
+    "Becoming.CoursesBridge"
   ],
   "core_closure": [
     "GenerativeCore",
@@ -351,6 +355,7 @@
     "Becoming.Readings",
     "Becoming.Coupling",
     "Becoming.Sensitivity",
+    "Becoming.Courses",
     "Becoming.Relevance",
     "Becoming"
   ],
@@ -463,6 +468,7 @@
     "Becoming.Readings",
     "Becoming.Coupling",
     "Becoming.Sensitivity",
+    "Becoming.Courses",
     "Becoming.Relevance",
     "Becoming",
     "GenerativeComparison",
@@ -546,7 +552,8 @@
     "AcquiredSegmentation",
     "Becoming.Instances",
     "RenewalRecovery",
-    "Becoming.RenewalBridge"
+    "Becoming.RenewalBridge",
+    "Becoming.CoursesBridge"
   ],
   "source_paths": {
     "GenerativeCore": "GenerativeCore.lean",
@@ -657,6 +664,7 @@
     "Becoming.Readings": "becoming/Becoming/Readings.lean",
     "Becoming.Coupling": "becoming/Becoming/Coupling.lean",
     "Becoming.Sensitivity": "becoming/Becoming/Sensitivity.lean",
+    "Becoming.Courses": "becoming/Becoming/Courses.lean",
     "Becoming.Relevance": "becoming/Becoming/Relevance.lean",
     "Becoming": "becoming/Becoming.lean",
     "GenerativeComparison": "universal-ethics/generative-capacity/GenerativeComparison.lean",
@@ -740,7 +748,8 @@
     "AcquiredSegmentation": "inquiry-root/AcquiredSegmentation.lean",
     "Becoming.Instances": "becoming/Becoming/Instances.lean",
     "RenewalRecovery": "deeper/RenewalRecovery.lean",
-    "Becoming.RenewalBridge": "becoming/Becoming/RenewalBridge.lean"
+    "Becoming.RenewalBridge": "becoming/Becoming/RenewalBridge.lean",
+    "Becoming.CoursesBridge": "becoming/Becoming/CoursesBridge.lean"
   },
   "source_sha256": {
     "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
@@ -851,8 +860,9 @@
     "Becoming.Readings": "083f513ada19e6b2b9f808f5b018fb7816ed3dd716becd57689c09adc765f87e",
     "Becoming.Coupling": "b66617508b01bd6c3ed9ad166784b4afde1f9cb23b6d917b0ddaa12ce69563b8",
     "Becoming.Sensitivity": "d39e22346b80a283feb8b275122ad37006ed297f5749cbc765baf3f6169c22c3",
+    "Becoming.Courses": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
     "Becoming.Relevance": "e1eeab6627fb1085075525f2443792fb8fab3707b8bb96e8b2dcd94e4a98041c",
-    "Becoming": "d5398c7585f0c1ee188ac1724bf13a1bedf46efb5f38ecf2af15269527a989a0",
+    "Becoming": "622fc9bece140dbcc61b5839f9f02355d0a149bf67e2739364c79e3bef2fae91",
     "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
     "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
     "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
@@ -934,16 +944,18 @@
     "AcquiredSegmentation": "95fdab3a4c1707b754aab480a4f2265076867c8a38ed71a955c93d77a914301c",
     "Becoming.Instances": "b442e896d0ea8ec66adf9104b4777278a4764291a48b33e95f1fdebf61590e83",
     "RenewalRecovery": "693840cd3b0ff85e82cd093994e748255a2d407498cd89745a62ba3b9b70cfa3",
-    "Becoming.RenewalBridge": "f80c54a1b754fc6ffbd8ebf8605f82da28ffcd9ed079cbb456bbe34a022aadc4"
+    "Becoming.RenewalBridge": "f80c54a1b754fc6ffbd8ebf8605f82da28ffcd9ed079cbb456bbe34a022aadc4",
+    "Becoming.CoursesBridge": "f1c5fd8ac0f939b317a305255c8d774c8a6e868baec73d2b40120447e13ec466"
   },
   "checker_sha256": {
-    "check_becoming.py": "0e59f70ce2368bd222cd9b063739e584ec720745c96e818c758617f4b1af4eb2",
+    "check_becoming.py": "561d7188a5c2d9b44bd40e651f47e717a9d9be55967e43e5a128b94648973772",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
   },
   "source_commit": {
-    "main": "2ac2bd6111ac02bf53d4322eae0429972c7b0dda",
+    "main": "830a89fac8c2abd782b11896bad4eb38dddae105",
     "copied": [
-      "Becoming.Sensitivity.lean",
+      "Becoming.Courses.lean",
+      "Becoming.CoursesBridge.lean",
       "Becoming.lean",
       "check_becoming.py"
     ]
@@ -954,20 +966,15 @@
     "fresh": false,
     "ran": [
       "version.log",
-      "BecomingSensitivitySignatures.log",
+      "BecomingCoursesSignatures.log",
       "BecomingSignatures.log",
-      "Becoming.Bridge.log",
-      "BecomingBridgeAxiomAudit.log",
       "BecomingBridgeSignatures.log",
-      "Becoming.GranularityBridge.log",
-      "BecomingGranularityBridgeAxiomAudit.log",
       "BecomingGranularityBridgeSignatures.log",
-      "Becoming.RenewalBridge.log",
-      "BecomingRenewalBridgeAxiomAudit.log",
       "BecomingRenewalBridgeSignatures.log",
+      "BecomingCoursesBridgeSignatures.log",
       "EnvironmentAudit.log",
       "Controls.log",
-      "Becoming.Sensitivity.PreludeOnly.log",
+      "Becoming.Courses.PreludeOnly.log",
       "Becoming.PreludeOnly.log"
     ],
     "reused": {
@@ -2251,6 +2258,18 @@
         "utc": "20261015T162236.524701Z",
         "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/1f178615-4b17-48f5-bfb9-dadf60babcb0/scratchpad/p113/tree"
       },
+      "BecomingSensitivitySignatures.log": {
+        "utc": "20261015T164401.170999Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/batch5/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z"
+      },
+      "Becoming.Courses.log": {
+        "utc": "20261015T171106.904839Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
+      },
+      "BecomingCoursesAxiomAudit.log": {
+        "utc": "20261015T171106.904839Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
+      },
       "Becoming.Relevance.log": {
         "utc": "20261015T155824.907038Z",
         "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/i3d/tree"
@@ -2264,12 +2283,12 @@
         "retained": "/Users/ren/theories/.claude/worktrees/batch5/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z"
       },
       "Becoming.log": {
-        "utc": "20261015T164011.842990Z",
-        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/1f178615-4b17-48f5-bfb9-dadf60babcb0/scratchpad/p113/tree"
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
       },
       "BecomingAxiomAudit.log": {
-        "utc": "20261015T164011.842990Z",
-        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/1f178615-4b17-48f5-bfb9-dadf60babcb0/scratchpad/p113/tree"
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
       },
       "GenerativeComparison.log": {
         "utc": "20261010T223700.785065Z",
@@ -2623,6 +2642,14 @@
         "utc": "20261015T161154.555289Z",
         "retained": "/Users/ren/theories/.claude/worktrees/batch5/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z"
       },
+      "Becoming.Bridge.log": {
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
+      },
+      "BecomingBridgeAxiomAudit.log": {
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
+      },
       "ExplanatoryUniversality.log": {
         "utc": "20261014T142311.394160Z",
         "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/likeness/i3/joining/tree"
@@ -2775,6 +2802,14 @@
         "utc": "20261015T150956.178111Z",
         "retained": "/Users/ren/theories/.claude/worktrees/batch5/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z"
       },
+      "Becoming.GranularityBridge.log": {
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
+      },
+      "BecomingGranularityBridgeAxiomAudit.log": {
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
+      },
       "GenerativeLossComparison.log": {
         "utc": "20261013T120354.529666Z",
         "retained": "scratch build, not retained: /private/tmp/becoming-p100"
@@ -2918,6 +2953,22 @@
       "RenewalRecoveryAxiomAudit.log": {
         "utc": "20261013T221720.428753Z",
         "retained": "/Users/ren/theories/.claude/worktrees/batch2/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z"
+      },
+      "Becoming.RenewalBridge.log": {
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
+      },
+      "BecomingRenewalBridgeAxiomAudit.log": {
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
+      },
+      "Becoming.CoursesBridge.log": {
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
+      },
+      "BecomingCoursesBridgeAxiomAudit.log": {
+        "utc": "20261015T171229.618089Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-bold-stonebraker-811bc3/9db97bb6-840b-426e-b708-b32f45cf6c5d/scratchpad/p114/tree"
       },
       "GenerativeCore.PreludeOnly.log": {
         "utc": "20261010T223700.785065Z",
@@ -3347,6 +3398,10 @@
         "utc": "20261015T161154.555289Z",
         "retained": "/Users/ren/theories/.claude/worktrees/batch5/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z"
       },
+      "Becoming.Sensitivity.PreludeOnly.log": {
+        "utc": "20261015T164401.170999Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/batch5/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T164401.170999Z"
+      },
       "Becoming.Relevance.PreludeOnly.log": {
         "utc": "20261015T161154.555289Z",
         "retained": "/Users/ren/theories/.claude/worktrees/batch5/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z"
@@ -3674,12 +3729,15 @@
       "Becoming.Sensitivity.log": "ce2b77329819009d22258bad30e6e8169ba3ec466c28807c29bb0c12b7764ef0",
       "BecomingSensitivityAxiomAudit.log": "bc2bfafe4dc4b16615fa149147a94a74597d76d31663733dfc68069ec457aa8e",
       "BecomingSensitivitySignatures.log": "31198a173814206ad95c6437b4cbda05cf1e460af17b32e0c95a0d73d13af3f1",
+      "Becoming.Courses.log": "1adb02d064ab85b061939e783b532696d24f14fd6a80e91cef7c39332d00f53b",
+      "BecomingCoursesAxiomAudit.log": "fc1b5bdbbd327e5bac59679f1cf0334ffe4bd33f7f64f89ee7b8eafc42a28ed4",
+      "BecomingCoursesSignatures.log": "c95738d6f986abdb543a8c6a816ad12d547b872078e1f8bf0d2204da61159298",
       "Becoming.Relevance.log": "c921ff2e9c309cddd648dbded484555ab7aedc2781476bca31151b5004c3ba2c",
       "BecomingRelevanceAxiomAudit.log": "18b7a5607430d02cb999695ba279b5ae837373802e598d14efc5f28fd85c1cc5",
       "BecomingRelevanceSignatures.log": "0aa21a0d9d40058cb7677c57642b9e2bba7d0adc034dd7ea2304a02abda5d3ed",
-      "Becoming.log": "016a0bf92721608058a41dad5ff05926d73b63361ed2def6286ffd6fd181c14b",
-      "BecomingAxiomAudit.log": "730d54c44250c5bb4db37812270d3564986becabc4d469e7f7554595a6facdb3",
-      "BecomingSignatures.log": "96589eee9b0311a84189a2c70c28dcae8e155afca03ad094b5fff1e9e8de71fb",
+      "Becoming.log": "e3fabab40c17f4a81500153c36db68f9ae17d7828c2ec0917060e8dd29602d15",
+      "BecomingAxiomAudit.log": "0af2708f176c25badf70626e14cb9a802b08bc20729a50aac93ea847cddd7177",
+      "BecomingSignatures.log": "a3ee737e5a7a06547cb8478f1f4013b914b788d0b41258a50dc241b5c8ce67e2",
       "GenerativeComparison.log": "4737465ba06dbcf9896aca98711c3ea30eb8f6f45a945555723b050b0d272338",
       "GenerativeComparisonAxiomAudit.log": "32d01d01f71d9047e8992895775a524734f4faeaec26aef66a960255f92184e4",
       "PracticalJudgment.log": "2629dbbcc1e2643a920d692e88e9b31432d228cd0383ff046605ae202a6cd33c",
@@ -3768,9 +3826,9 @@
       "JointInterpretationAxiomAudit.log": "1b6aefa939d46c258e5db0f630accdb4fe7ab77ba387f0ccce6d8517cebf4f0d",
       "AlignmentDirection.log": "41e33fa91972a43170effad4e008449eb29a7b631fcb61287f26482ccb62e46c",
       "AlignmentDirectionAxiomAudit.log": "0a3e76af74f0f479a3b9ca3610844e6ffb525f9992516efb75c65555dd3d4879",
-      "Becoming.Bridge.log": "4703309e390605b8c8323d7acf9ea67dc9824d72d76c3857e35e328b88319d70",
-      "BecomingBridgeAxiomAudit.log": "aad6db1a1e510da03b26be61949a8f5ddbdeaf6b2805d131989f4bded198037b",
-      "BecomingBridgeSignatures.log": "1425e675e2087caec6f6ba2fe8036b047d98ef4f9138f73b58c8fc212089c50d",
+      "Becoming.Bridge.log": "27907669d0f00e346f007cdbe18e7a4635a4240f0f77da513cac12fe561e39b6",
+      "BecomingBridgeAxiomAudit.log": "8dac060bf59f11b6eb5aad9539a23cf601aeebd5b3d18dbbbaa323438ccba30e",
+      "BecomingBridgeSignatures.log": "0635898657fb1d022517150a4a2f784bf7baa2045afe6517a8a0354bfde27dd2",
       "ExplanatoryUniversality.log": "e75230f670b0cc608c8b1f631b67085d79bf13f92a8eb8c866c7781d97011412",
       "ExplanatoryUniversalityAxiomAudit.log": "2b1eb57d5d9a802a99ae184033f72d12828c8be2e3e9285a1b4e5357aaa301eb",
       "ExplanatoryJointness.log": "bec2d5b759267260db472748551056b79114b712c780972196d236c59087a598",
@@ -3809,9 +3867,9 @@
       "ExplanatoryResidualsAxiomAudit.log": "dcca9efc08105c010be0df378b3340adc44c6c1439c05e7964352f0faef24f31",
       "ExplanatoryGranularityBoundary.log": "070c07477d6afd49467dc476dab0b127d4c8969ad9866bbcffdda41d27a81bbd",
       "ExplanatoryGranularityBoundaryAxiomAudit.log": "4d32bf0cf873ef9525f0f3a4552db811b2fab3de5f81845f46260f00a2331455",
-      "Becoming.GranularityBridge.log": "497369bc03fecb27181685b12ffd5c2c61e64a2e279d77a045d23cb27679336a",
-      "BecomingGranularityBridgeAxiomAudit.log": "cc357da3eee8285036bf17b565d608274b41188cb5ffb4ef517e82acca268da3",
-      "BecomingGranularityBridgeSignatures.log": "0312d712a7947d827c49625f474239352330aff5c088f06889ef9ea9e6806d3a",
+      "Becoming.GranularityBridge.log": "371507d322136b83f4bdf91dc8c4b5c41753f3b891eaac49803a0abb353257ed",
+      "BecomingGranularityBridgeAxiomAudit.log": "ddff071406b957b4413f930e70fa5080ad24c567057d08a580ebb3dd015ed46d",
+      "BecomingGranularityBridgeSignatures.log": "3c2c32d71b8f391dbfe91b01887f3cbac56584c0d5569ac45c961afd7145d282",
       "GenerativeLossComparison.log": "36a8cdc6e9cb58d5f76eb225cd5a83c7895bcdd6d71d609205a2b6c811607b92",
       "GenerativeLossComparisonAxiomAudit.log": "aeddf885434d704d45613d49302890f0a107fc0ab0e6d851bb879e68df77e004",
       "Becoming.RepairComparison.log": "6f59c7565ac6c4d7f4e6ae85e66f59496894200e8eae8b5c4a4a23168442c19b",
@@ -3848,11 +3906,14 @@
       "BecomingInstancesSignatures.log": "7e4541666109386c07755f9568fbcc1c7e0adf1bb4d754a20e32ffa50c711b6f",
       "RenewalRecovery.log": "b7ec6b9a2d0381bea154476c53aceac5c2a15d238a077321ab24d229d34952f1",
       "RenewalRecoveryAxiomAudit.log": "2e8649bf4153e3550ef58467f84ff702d67b9956579e25023cb927f541767827",
-      "Becoming.RenewalBridge.log": "ac723cb1915d1458a5d0a73810f6f8644143319c9b9228f35570c901af6debb2",
-      "BecomingRenewalBridgeAxiomAudit.log": "ea4e9a234912006e21c3d0ae162dd19adf4b09561ed88f53ca39e7abed3164c0",
-      "BecomingRenewalBridgeSignatures.log": "d8ded8248607c5c25dbccc0e4ab6f614b0c735f2ecd6bbb633332adb6a064ee4",
-      "EnvironmentAudit.log": "151a769f7911ee105d16fbf54278b79e5016ce220f9dd007abdebb5cfb15260a",
-      "Controls.log": "fbd53685aa3b2f0b62c2aa3d25803eaf6fb93b4eb5c8306569fd927da048ff88",
+      "Becoming.RenewalBridge.log": "99e5698070b8e477abe764922757c871cf04ab883cdba9153d43d5e86e609cf5",
+      "BecomingRenewalBridgeAxiomAudit.log": "8d6f8fbdb2694a33a3856927c15f657bfd6a9dbeb53cf2c181a86704c767f109",
+      "BecomingRenewalBridgeSignatures.log": "d2b0b116e6d874c1331a75674f20f234298d96f24d711990537043bfee0dd373",
+      "Becoming.CoursesBridge.log": "d7c0b135c1bd1f8232da24472c2b398288a3370c5a8c5a7a651f586ba86b14ed",
+      "BecomingCoursesBridgeAxiomAudit.log": "b0f47f479366a1bc8f6e39fe196a9370f0ef53f30f05fc343de14e69f8e02a2b",
+      "BecomingCoursesBridgeSignatures.log": "f3d6274dd410e28b92824c89a55a4cf733e4505938443d4de59c9fd1f5b15994",
+      "EnvironmentAudit.log": "1312df882ceb66f597fbb75db61a2fc748d8a75fbaae8ea1affd7d8412dc205d",
+      "Controls.log": "6b7a5e1dc657090e808d979c5a5b14801f42de038f81a5cd8b972f28da793176",
       "GenerativeCore.PreludeOnly.log": "8b89f7b1018f5a43ae9994a797db0fc12d2d5fa076f5da8d895ce648ccee4367",
       "Becoming.Frame.PreludeOnly.log": "951016dff6a22d5c1ddb5c9b7ffd203053235c9ba1a2f59e92008cb94fe2c074",
       "InquirySufficiency.PreludeOnly.log": "cac5bbd3cc793b2b54fca50ca409a7e815c7161d517b461a8e15da84d6ad6d4e",
@@ -3961,8 +4022,9 @@
       "Becoming.Readings.PreludeOnly.log": "251d5996b2453000fa373094c44ec2282e5f5c784d84b836ad305c2920ca79d0",
       "Becoming.Coupling.PreludeOnly.log": "2670f56b4c71a23b9d7a889db8d8f56220e6ead969b2dcb092618f3b47271d3f",
       "Becoming.Sensitivity.PreludeOnly.log": "9dfcc2f074ea049474db73626d60ad81e193db2ac0e654fffa963a9ea2878346",
+      "Becoming.Courses.PreludeOnly.log": "450a478874f8cd074c5a682616e5be50379944f3aa13163e97b09372415c257e",
       "Becoming.Relevance.PreludeOnly.log": "87573ed38714b909d5e8d0c5afd47cae287f7011b55524620916cdc887bce3d8",
-      "Becoming.PreludeOnly.log": "5c65c1e5b0f53eccbb852c4f0359fbc0b4629e4bf2ee2155b571ee1ca97ecc74"
+      "Becoming.PreludeOnly.log": "29ae1db18b7d6e43d76d6acef26c99841d22fbab8e298b8ae9351d12cd84179a"
     }
   },
   "inherited_receipts": {
@@ -6560,6 +6622,7 @@
     "Becoming.Readings": 36,
     "Becoming.Coupling": 131,
     "Becoming.Sensitivity": 97,
+    "Becoming.Courses": 166,
     "Becoming.Relevance": 77,
     "Becoming": 0
   },
@@ -49370,6 +49433,502 @@
       "kernel_checked": true
     },
     {
+      "module": "Becoming.Courses",
+      "spine": true,
+      "layer": "core",
+      "theorems": 87,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_admissible"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.historyRun"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.lasts_of_courses"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.lasts_iff_courses"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.courses_iff_ladder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.courses_iff_necessary"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.Drains.leaves_run"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.exhausts_run"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.Reaches.runs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.Funnel.runs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.basin_runs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.trace_orbit"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.orbit_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.reach_iff_orbit"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.avoids_iff_closed_reach"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.some_avoids_iff_reach"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.fixed_avoids_reach"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.length_units"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.course_reaches_iff_orbit"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.course_reaches_iff_funnel"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.course_reaches_iff_variant"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.runs_valid_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.exits_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.Advances.completes_plan"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.pending_before_course"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.runs_reading_right_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.runs_look_right_iff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.anyChange"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.anyRun"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_settles"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.runs_settle_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.foldl_units"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.completes_units_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.steps_orbit"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.readSteps_orbit"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.copy_completes_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.copy_built_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.copy_empties_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.tick_extends"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.copy_grows"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.reading_completes_iff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.inspection_le_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.inspection_course_le"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.release"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.every_released_iff_course"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.release_course_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.lineage_course_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.encode_course"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.course_words_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.course_chunks_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.no_run_record_groups"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.course_reads_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.window_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_candidates_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_narrows"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_stays_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_resolves_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_resolves_explained_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.course_resolves_every_iff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.reducedRun"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.runs_no_restore"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.runs_decoder_pair_iff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.visited"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.mem_visited"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_judges_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.no_run_judge_of_merged"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.steps_agree_iff_levels"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.supplied_agree_iff_levels"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.run_reports_apart"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.dates_no_common_report_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.dates_no_common_report_envelopes_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.claims_every_weighting_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.claims_floor"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.selections_within_iff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.twoDrawers"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.supported_not_together"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.loop"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.loop_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.along_one"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.counting_sum_one"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.loop_courses_double"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.system_iff_certified"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.not_within_system_of_closed"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Courses.reachedFrom"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.reachedFrom_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.reachedFrom_zero"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.reachedFrom_succ"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.rectangular_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.courses_keep_unrelated"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.relation_persists_courses"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.copy_relates_course"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.forgetting_unrelates_courses"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.coupling_course"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.extension_frontier_exists"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Courses.extension_frontier_has_iff"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.Courses.run_history": [],
+        "Becoming.Courses.run_admissible": [],
+        "Becoming.Courses.historyRun": [],
+        "Becoming.Courses.lasts_of_courses": [],
+        "Becoming.Courses.lasts_iff_courses": [],
+        "Becoming.Courses.courses_iff_ladder": [],
+        "Becoming.Courses.courses_iff_necessary": [],
+        "Becoming.Courses.Drains.leaves_run": [],
+        "Becoming.Courses.exhausts_run": [],
+        "Becoming.Courses.Reaches.runs": [],
+        "Becoming.Courses.Funnel.runs": [],
+        "Becoming.Courses.basin_runs": [],
+        "Becoming.Courses.trace_orbit": [],
+        "Becoming.Courses.orbit_trace": [],
+        "Becoming.Courses.reach_iff_orbit": [],
+        "Becoming.Courses.avoids_iff_closed_reach": [],
+        "Becoming.Courses.some_avoids_iff_reach": [],
+        "Becoming.Courses.fixed_avoids_reach": [],
+        "Becoming.Courses.length_units": [],
+        "Becoming.Courses.course_reaches_iff_orbit": [],
+        "Becoming.Courses.course_reaches_iff_funnel": [],
+        "Becoming.Courses.course_reaches_iff_variant": [],
+        "Becoming.Courses.runs_valid_completes": [],
+        "Becoming.Courses.exits_completes": [],
+        "Becoming.Courses.Advances.completes_plan": [],
+        "Becoming.Courses.pending_before_course": [],
+        "Becoming.Courses.runs_reading_right_iff": [],
+        "Becoming.Courses.runs_look_right_iff": [],
+        "Becoming.Courses.anyChange": [],
+        "Becoming.Courses.anyRun": [],
+        "Becoming.Courses.run_settles": [],
+        "Becoming.Courses.runs_settle_iff": [],
+        "Becoming.Courses.foldl_units": [],
+        "Becoming.Courses.completes_units_iff": [],
+        "Becoming.Courses.steps_orbit": [],
+        "Becoming.Courses.readSteps_orbit": [],
+        "Becoming.Courses.copy_completes_iff": [],
+        "Becoming.Courses.copy_built_iff": [],
+        "Becoming.Courses.copy_empties_iff": [],
+        "Becoming.Courses.tick_extends": [],
+        "Becoming.Courses.copy_grows": [],
+        "Becoming.Courses.reading_completes_iff": [],
+        "Becoming.Courses.inspection": [],
+        "Becoming.Courses.inspection_le_iff": [],
+        "Becoming.Courses.inspection_course_le": [],
+        "Becoming.Courses.release": [],
+        "Becoming.Courses.every_released_iff_course": [],
+        "Becoming.Courses.release_course_iff": [],
+        "Becoming.Courses.lineage_course_iff": [],
+        "Becoming.Courses.encode_course": [],
+        "Becoming.Courses.course_words_iff": [],
+        "Becoming.Courses.course_chunks_iff": [],
+        "Becoming.Courses.no_run_record_groups": [],
+        "Becoming.Courses.course_reads_iff": [],
+        "Becoming.Courses.window_append": [],
+        "Becoming.Courses.run_candidates_append": [],
+        "Becoming.Courses.run_narrows": [],
+        "Becoming.Courses.run_stays_iff": [],
+        "Becoming.Courses.run_resolves_iff": [],
+        "Becoming.Courses.run_resolves_explained_iff": [],
+        "Becoming.Courses.course_resolves_every_iff": [],
+        "Becoming.Courses.reducedRun": [],
+        "Becoming.Courses.runs_no_restore": [],
+        "Becoming.Courses.runs_decoder_pair_iff": [],
+        "Becoming.Courses.visited": [],
+        "Becoming.Courses.mem_visited": [],
+        "Becoming.Courses.run_judges_iff": [],
+        "Becoming.Courses.no_run_judge_of_merged": [],
+        "Becoming.Courses.steps_agree_iff_levels": [],
+        "Becoming.Courses.supplied_agree_iff_levels": [],
+        "Becoming.Courses.run_reports_apart": [],
+        "Becoming.Courses.dates_no_common_report_iff": [],
+        "Becoming.Courses.dates_no_common_report_envelopes_iff": [],
+        "Becoming.Courses.claims_every_weighting_iff": [],
+        "Becoming.Courses.claims_floor": [],
+        "Becoming.Courses.selections_within_iff": [],
+        "Becoming.Courses.twoDrawers": [],
+        "Becoming.Courses.supported_not_together": [],
+        "Becoming.Courses.loop": [],
+        "Becoming.Courses.loop_trace": [],
+        "Becoming.Courses.along_one": [],
+        "Becoming.Courses.counting_sum_one": [],
+        "Becoming.Courses.loop_courses_double": [],
+        "Becoming.Courses.system_iff_certified": [],
+        "Becoming.Courses.not_within_system_of_closed": [],
+        "Becoming.Courses.reachedFrom": [],
+        "Becoming.Courses.reachedFrom_iff": [],
+        "Becoming.Courses.reachedFrom_zero": [],
+        "Becoming.Courses.reachedFrom_succ": [],
+        "Becoming.Courses.rectangular_congr": [],
+        "Becoming.Courses.courses_keep_unrelated": [],
+        "Becoming.Courses.relation_persists_courses": [],
+        "Becoming.Courses.copy_relates_course": [],
+        "Becoming.Courses.forgetting_unrelates_courses": [],
+        "Becoming.Courses.coupling_course": [],
+        "Becoming.Courses.extension_frontier_exists": [],
+        "Becoming.Courses.extension_frontier_has_iff": []
+      },
+      "kernel_checked": true
+    },
+    {
       "module": "Becoming.Relevance",
       "spine": true,
       "layer": "core",
@@ -64208,37 +64767,57 @@
         "Becoming.SupportGated.contest_extensions": []
       },
       "kernel_checked": true
+    },
+    {
+      "module": "Becoming.CoursesBridge",
+      "spine": true,
+      "layer": "bridge",
+      "theorems": 3,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Becoming.frame_classification_robust_iff_of_em"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.extension_classification_robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.extension_classification_robust_iff"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.frame_classification_robust_iff_of_em": [],
+        "Becoming.extension_classification_robust": [],
+        "Becoming.extension_classification_robust_iff": []
+      },
+      "kernel_checked": true
     }
   ],
   "artifact_sha256": {
-    "Becoming.Bridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.GranularityBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Courses.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Courses.lean": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+    "Becoming.CoursesBridge.lean": "f1c5fd8ac0f939b317a305255c8d774c8a6e868baec73d2b40120447e13ec466",
     "Becoming.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.RenewalBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Sensitivity.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Sensitivity.lean": "d39e22346b80a283feb8b275122ad37006ed297f5749cbc765baf3f6169c22c3",
-    "Becoming.lean": "d5398c7585f0c1ee188ac1724bf13a1bedf46efb5f38ecf2af15269527a989a0",
-    "BecomingBridgeAxiomAudit.lean": "0be481571429a2b0968da8fa6d26703cef851c5643518898c100de03aa0bf74f",
-    "BecomingBridgeAxiomAudit.log": "d112f3ca4f236a73ac3721c9e74c3d3d779d629897bafc48a6f7c041fb79cc8b",
+    "Becoming.lean": "622fc9bece140dbcc61b5839f9f02355d0a149bf67e2739364c79e3bef2fae91",
     "BecomingBridgeSignatures.lean": "60c36287d46ab85dd933fb9ace9a3cb442275de2df1e2f035570a3d53476f124",
     "BecomingBridgeSignatures.log": "67fd6912219aa56ff8ac7d1071b9f1098106caa4137e159c21501897736e5506",
-    "BecomingGranularityBridgeAxiomAudit.lean": "ff075f8130ffc87bfe83a8e8df541b2091a078f67b00b3dabc99ebff3b0b2ae2",
-    "BecomingGranularityBridgeAxiomAudit.log": "94d658813c0f1eab8d6fe6e236b6de83e660a0d76c62f6233621b5d7468ab436",
+    "BecomingCoursesBridgeSignatures.lean": "3d8e41a83063b46feaf1ad31b76285481fa4e616c7ce4f82f0192081d4a9c2b2",
+    "BecomingCoursesBridgeSignatures.log": "3d3eaac159a7d0810cd4306b7a9771fff609955b9c7388bc9660e9fd7eeb8304",
+    "BecomingCoursesSignatures.lean": "03f99111fd4bb6599ffa5c1b1557babede2c01d76adf65cc5bf0e493c54c6d21",
+    "BecomingCoursesSignatures.log": "f9adf6123f23f79d5708fba4263d176e19337994d4b9def5068c5607bcd96d42",
     "BecomingGranularityBridgeSignatures.lean": "10166d4e2c849439d777208861bda11aa5fde2e0951e449d82b5f75ed245a2e1",
     "BecomingGranularityBridgeSignatures.log": "e263761c60c8ff2fff758b059bdbd5975e7f193ea59009a6563108746065b207",
-    "BecomingRenewalBridgeAxiomAudit.lean": "4927db8fb0ae39b4dbcde4d7462a0d1bba93d41bd5042599b0813dc8864da463",
-    "BecomingRenewalBridgeAxiomAudit.log": "e3f8ef67e93f90afad4eb6e2c4473617e4a5b15c1a1ceea9afadf9a51af4c61e",
     "BecomingRenewalBridgeSignatures.lean": "418de40d825d6567d933d6b426c80610a04e4c7260877b375e9e122e4f3d51b6",
     "BecomingRenewalBridgeSignatures.log": "25b97239b6936b0bc72d9f84f2a8f391c7608ada5924180e2234243bc2c73c49",
-    "BecomingSensitivitySignatures.lean": "0677dcf682e6c30c6fb024a3919df4292c0d087f448c6f2a4a54247098e6314b",
-    "BecomingSensitivitySignatures.log": "80fea2640e54ea1be5e0e9c8e386cb4b4269a8282845394ce1b9641145359cf9",
     "BecomingSignatures.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingSignatures.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Controls.lean": "889320e9c37a781d4e846a48dfebbce63579a4050230e4f2e75d25883c808e30",
     "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "EnvironmentAudit.lean": "037804aee118774aaee7e4d66c70fa060fee86b0c599b42c8791439486da48da",
-    "EnvironmentAudit.log": "46793b476704ebfd706904b01692d7761f929ed6529a86e3cbbb35f6c8e6c57c",
-    "check_becoming.py": "0e59f70ce2368bd222cd9b063739e584ec720745c96e818c758617f4b1af4eb2",
+    "EnvironmentAudit.lean": "48aa61a5e743e9625eb866dd6a72af629824ff2015bc6984cda27723e46653c1",
+    "EnvironmentAudit.log": "81bc6b8a142847dc6568906a370d4905193b3df722c8ddc9749a5010e6c17ce1",
+    "check_becoming.py": "561d7188a5c2d9b44bd40e651f47e717a9d9be55967e43e5a128b94648973772",
     "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
   }
 }
