@@ -1,0 +1,43 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+ "extra_receipts": {},
+ "files": {
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean": {
+   "zh": "P115：导入 Becoming.Propagation 并增其条目",
+   "en": "P115: imports Becoming.Propagation with its bullet"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py": {
+   "zh": "P115：核心之列加入 Becoming.Propagation，并增一段范围说明",
+   "en": "P115: Becoming.Propagation added to the core list, with a scope entry"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md": {
+   "zh": "P115：Becoming.Propagation 的一行 L4 及层内导入",
+   "en": "P115: an L4 row for Becoming.Propagation and its within-layer imports"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "zh": "P115：§2 一段“差别到达多少（第一部分）”，其余响应之比较一段不再把差别到达多少列为未推出，§6.10 一句，第一部分总陈述一项，§8 状态行与“反馈与所及”下的进一步证明，§9 一行，术语两行；总数改据新回执",
+   "en": "P115: a §2 paragraph \"How much difference arrives (Part I)\", the paragraph of the comparison where the rest responds no longer listing how much difference arrives as not derived, a §6.10 sentence, one item in Part I stated whole, §8's status row and the further proofs under feedback and reach, one §9 row, two glossary rows; the totals moved to the new receipt"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md": {
+   "zh": "新增第141节（P115：差别到达多少，Becoming.Propagation）及其英文段；此前各节不变",
+   "en": "section 141 (P115: how much difference arrives, Becoming.Propagation) with its English paragraph; earlier sections unchanged"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.py": {
+   "zh": "P115：mixCells 归为逐个条件换入（mix），九项定理归为只在证明中用到（same）",
+   "en": "P115: mixCells classified as mixed in condition by condition (mix), nine theorems as used only in proofs (same)"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "在回执 20261015T175539.984165Z 上重新生成，含 P115 的分类：陈述依赖可判定 364 → 367，只在证明中用到 214 → 223，取可判定族的定义 96 → 97",
+   "en": "regenerated on receipt 20261015T175539.984165Z with P115's classifications: statements depending on decidedness 364 → 367, used only in proofs 214 → 223, definitions taking a decidability family 96 → 97"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md": {
+   "zh": "(b2) 一项中由清点生成的数目改据新回执；其余文字不变",
+   "en": "the counts generated from the inventory in item (b2) moved to the new receipt; no other text changed"
+  }
+ },
+ "history": {
+  "en": "16 October 2026, landing P115 (study section 141): rebound to the new receipts and rehashed: ",
+  "zh": "2026年10月16日，P115 落地（研究第141节）：改绑新回执并更新哈希："
+ },
+ "scope_old": []
+}

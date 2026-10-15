@@ -40,7 +40,7 @@ Canonical source: [Sensitivity.lean](../../../../experiments/integrated-correcti
 
 ## Next / 下一步
 
-The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; a measure of sensitivity and of how much difference arrives; sensitivity in temporal order; an independent review; a judgment on the readings (registration as sensitivity; a whole depending on no part as a tail).<br>反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；敏感的度量与差别到达多少；按时间先后读的敏感；独立审查；对读法（识就是敏感；不依存于任何部分的整体是尾）的判断。
+The exact strength of a counterexample's existence (between the weak limited principle and the decision of vanishing); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review; a judgment on the readings (registration as sensitivity; a whole depending on no part as a tail).<br>反例之存在的确切强度（在弱有限全知原则与消失之判定之间）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查；对读法（识就是敏感；不依存于任何部分的整体是尾）的判断。
 
 <details><summary>Correspondence, dependencies, sources and history / 对应、依赖、来源与沿革</summary>
 
@@ -62,6 +62,7 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
 - related, not a proved adapter / 关联而非已证转换: [feedback-and-reach](feedback-and-reach.md). 理论第 8 节在反馈与所及下的进一步证明列出这一问题；所及中的比较对读有限多个条件的律以其敏感为识。 / The chapter's further proofs under feedback and reach listed this question; the comparison within the reach takes, for laws reading finitely many conditions, their sensitivity as what is registered.
 - related, not a proved adapter / 关联而非已证转换: [reserve-defers-ending](reserve-defers-ending.md). 如 Web.lpo_of_ending：较强的形式给出一条全知原则，所以核心陈述较弱的形式；这里是弱有限全知原则，核心对读有限多个条件的律陈述最小的识。 / Like Web.lpo_of_ending: the stronger form gives a principle of omniscience, so the core states the weaker; here the weak limited principle, and the core states the least registration for laws reading finitely many conditions.
 - related, not a proved adapter / 关联而非已证转换: [continued-change-needs-openness](continued-change-needs-openness.md). 如 Listed.lpo_of_few：要求一个对所有情形都够的列表需要全知；这里对所有历史都够的一个列表也可以没有（Pointer.no_list）。 / Like Listed.lpo_of_few: asking for one list good for every case needs omniscience; here one list good for every history may not exist (Pointer.no_list).
+- related, not a proved adapter / 关联而非已证转换: [how-much-difference-arrives](how-much-difference-arrives.md). 回答其下一步中的度量：耦合强度度量敏感，对读已立者的律强度为零恰是不敏感（ExchangeLaw.insensitiveAt_iff_strength_zero）；差别到达多少至多是所携带的量，恰好达到。 / Answers the measure in its next step: the coupling strengths measure sensitivity, strength zero being exactly insensitivity for a law of what has stood (ExchangeLaw.insensitiveAt_iff_strength_zero); how much difference arrives is at most the carried amount, which is attained.
 
 ### Sources / 来源
 
@@ -82,6 +83,8 @@ Aliases / 别名: `least registration`, `最小的识`, `reads finitely many con
 ### History / 沿革
 
 - 2026-10-15：新增，回答 counterfactual-is-the-course 的 next_delta（P113）；研究 §137。 / 15 October 2026: added, answering the next_delta of counterfactual-is-the-course (P113); study section 137.
+- 2026-10-16 P115（差别到达多少，研究 §141）：下一步中“敏感的度量与差别到达多少”由耦合强度与所携带的量回答，删去；related 加 how-much-difference-arrives。陈述与证明不变；does_not_show 仍对本记录的定理成立。 / 16 October 2026, P115 (how much difference arrives, study section 141): in the next step, “a measure of sensitivity and of how much difference arrives” is answered by the coupling strengths and the carried amount, and removed; related adds how-much-difference-arrives. Statement and proofs unchanged; does_not_show still holds of this record's theorems.
+- 2026年10月16日，P115 落地（研究第141节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P115：§2 一段“差别到达多少（第一部分）”，其余响应之比较一段不再把差别到达多少列为未推出，§6.10 一句，第一部分总陈述一项，§8 状态行与“反馈与所及”下的进一步证明，§9 一行，术语两行；总数改据新回执）。 / 16 October 2026, landing P115 (study section 141): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P115: a §2 paragraph "How much difference arrives (Part I)", the paragraph of the comparison where the rest responds no longer listing how much difference arrives as not derived, a §6.10 sentence, one item in Part I stated whole, §8's status row and the further proofs under feedback and reach, one §9 row, two glossary rows; the totals moved to the new receipt).
 
 </details>
 

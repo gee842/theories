@@ -390,7 +390,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "cc3283b8a69eaa23a83683df19a1032eb372a43bfb6c824c25271403e88d3e4e"
+      "sha256": "0004f1a79b4b9c23c9eadd3764b07034b55b719d02e3399ac946b6ca93e89d5d"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -449,6 +449,10 @@
     {
       "zh": "2026-10-16 P115（差别到达多少，研究 §141）：下一步中“敏感的度量与差别到达多少”由耦合强度与所携带的量回答，删去；related 加 how-much-difference-arrives。陈述与证明不变；does_not_show 仍对本记录的定理成立。",
       "en": "16 October 2026, P115 (how much difference arrives, study section 141): in the next step, “a measure of sensitivity and of how much difference arrives” is answered by the coupling strengths and the carried amount, and removed; related adds how-much-difference-arrives. Statement and proofs unchanged; does_not_show still holds of this record's theorems."
+    },
+    {
+      "zh": "2026年10月16日，P115 落地（研究第141节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P115：§2 一段“差别到达多少（第一部分）”，其余响应之比较一段不再把差别到达多少列为未推出，§6.10 一句，第一部分总陈述一项，§8 状态行与“反馈与所及”下的进一步证明，§9 一行，术语两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P115 (study section 141): rebound to the new receipts and rehashed: THE-THEORY-OF-BECOMING.md (P115: a §2 paragraph \"How much difference arrives (Part I)\", the paragraph of the comparison where the rest responds no longer listing how much difference arrives as not derived, a §6.10 sentence, one item in Part I stated whole, §8's status row and the further proofs under feedback and reach, one §9 row, two glossary rows; the totals moved to the new receipt)."
     }
   ],
   "text_versions": []

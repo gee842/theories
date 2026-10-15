@@ -2354,6 +2354,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean)
 
+## how-much-difference-arrives ← counterfactual-is-the-course
+
+`formal-reuse` — 复用 ExchangeLaw、AgreeUpTo、GivesAlike、Nonanticipating、InsensitiveAt、Sensitive、Flow.Follows、levels、levels_succ、totals_under、course、course_balances_iff 与 course_follows：所携带的量由反事实进程的同一生成给出，强度为零恰是其不敏感。 / Reuses ExchangeLaw, AgreeUpTo, GivesAlike, Nonanticipating, InsensitiveAt, Sensitive, Flow.Follows, levels, levels_succ, totals_under, course, course_balances_iff and course_follows: the carried amount is given by the generation of the counterfactual course, and strength zero is exactly its insensitivity.
+
+**Producer output / 上游输出:** 交换律、读已立者、遵从、不敏感与敏感；律生成的水平与进程，及其平衡之判据。 / Laws of exchange, reading what has stood, following, insensitivity and sensitivity; the levels and course a law generates, and when the course balances.
+
+**Consumer input / 下游输入:** 携带之律的进程即所携带的量；强度为零与不敏感相连。 / The carrying law's course is the carried amount; strength zero is tied to insensitivity.
+
+**Retained conditions / 保留条件:** 条件的相等可判定（混合条件处）。 / Decided equality of conditions (where conditions are mixed).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
+## how-much-difference-arrives ← timely-response-necessity
+
+`formal-reuse` — 复用 TimedResponse.Spread、RegistersAt 与 TouchesAt：被送到的差在潜在传播的路线上。 / Reuses TimedResponse.Spread, RegistersAt and TouchesAt: conveyed gaps lie on routes of the potential propagation.
+
+**Producer output / 上游输出:** 逐时的潜在传播：经当时的交换与登记到达的路线。 / Potential propagation in time: routes reached through the exchanges and registration at each time.
+
+**Consumer input / 下游输入:** 被送到的差的路线。 / The routes along which gaps are conveyed.
+
+**Retained conditions / 保留条件:** 没有起始之差；部分的正差是与该条件交换的源；正强度属于识该水平并与该条件交换的形成。 / No starting gap; every positive gap of the part is a source exchanging with the condition; every positive strength is of a formation registering the level and exchanging with the condition.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean)
+
 ## identification-where-bounded ← learning-by-refutation
 
 `formal-reuse` — 复用 Learning.Lasso、lasso_of_held、lasso、lasso_claims、lasso_holds、Holds、RefutedAt、record、back_record、back_made、holdFrom、lassoNext 与 diagonal_unrested：界给定时补上它在界未知时的结果；复用按否证学习的 learner、lassos、index 及其引理与 lasso_learner_bounded，给出它的静止之步。 / Reuses Learning.Lasso, lasso_of_held, lasso, lasso_claims, lasso_holds, Holds, RefutedAt, record, back_record, back_made, holdFrom, lassoNext and diagonal_unrested: it completes, with the bound given, what that record states with the bound unknown; reuses the learner by refutation (learner, lassos, index and its lemmas, lasso_learner_bounded) to state the step at which it rests.
