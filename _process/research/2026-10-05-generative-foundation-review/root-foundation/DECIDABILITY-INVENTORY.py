@@ -132,6 +132,9 @@ FORMS = {
     'ExchangeLaw.ReadsFinitely.least_registration': '`ExchangeLaw.ReadsFinitely.nonanticipating` 与 `ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P113）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
     'ExchangeLaw.Nonanticipating.through_sensitive_of_every': '`ExchangeLaw.ReadsFinitely.nonanticipating` 与 `ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P113）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
     'comparison_through_sensitivity_of_readsFinitely': '`comparison_of_courses`（经律所经的识，不判定 / through a registration the law reads through, no decision, P113）',
+    # 2026-10-16, P116 identification where runs part (Becoming.Parting)
+    'Parting.unparted_iff': '`Parting.unparted_iff` 的正向与 `Parting.not_right_on_both`（不判定 / the forward direction and the parting law, no decision, P116）',
+    'Parting.free_open': '`Parting.free_parts_after` 与 `Parting.not_right_on_both`（无前提：不在两个运行上都对 / no premise: not right on both runs, P116）',
 }
 
 # Why a statement depends on decidedness: the decidability-taking definitions it mentions (Lean's `ment` column).
@@ -340,6 +343,9 @@ PROOF_KIND = {
     **{n: 'indicate' for n in ['Courses.claims_every_weighting_iff', 'Courses.course_reaches_iff_variant']},
     **{n: 'find' for n in [
         'Courses.extension_frontier_exists', 'Courses.extension_frontier_has_iff', 'Courses.run_judges_iff']},
+    # 2026-10-16, P116 identification where runs part (Becoming.Parting): the proofs split on whether two registered
+    # values, or a claim and a value, are the same
+    'Parting.unparted_iff': 'same', 'Parting.free_open': 'same',
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',

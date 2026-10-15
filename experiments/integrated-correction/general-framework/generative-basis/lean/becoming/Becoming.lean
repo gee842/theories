@@ -105,6 +105,8 @@ import Becoming.Readings
 import Becoming.Coupling
 import Becoming.Sensitivity
 import Becoming.Courses
+import Becoming.Parting
+import Becoming.Typicality
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1005,6 +1007,21 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   definition changes. `Becoming.CoursesBridge`, outside the core, reads the comparison under every
   classification of fresh contents on a frame's configurations, where a generative extension
   needs no excluded middle.
+* `Becoming.Parting` (L4): what a record fixes where the course branches, with no premise beyond
+  what each law names. Two runs part at a step where they register the same before it and differ
+  at it; at a parting no learner, whatever it is given, the world included, is right on both.
+  Where no two runs from a configuration part, not parting is kept along runs, and on a run held
+  by a list of N configurations the registered course has at most N states, so the learner by
+  the least bound, given nothing, is right from N + N - 1 on, exactly as for determined laws, the
+  instance. Under free branching every course is a run's course: after every record two runs of
+  two configurations part, every learner has a run on which it is never right, and a course of
+  two configurations has no bound on its states.
+* `Becoming.Typicality` (L4): what counting says of the course that happens, with no premise.
+  With natural weights p and q on two values, the squared deviations (q·a - p·b)² of the courses
+  of n steps, weighted, add up exactly to n·p·q·(p + q)^n, so the courses deviating by at least d
+  weigh, times d, at most that, out of (p + q)^n: the counting form of the law of large numbers.
+  The weights are `Becoming.Weighted`'s counting weights of free branching. That the course which
+  happens is typical is not derived: every course is a run.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
