@@ -1,12 +1,14 @@
 # Locally aligned agents and collectively destructive attractors
 
+> Some passages exist only in the [Chinese edition](COLLECTIVE-DESTRUCTIVE-ATTRACTORS.zh.md): where a Chinese paragraph is fuller than its English companion, this file keeps the companion and the Chinese edition keeps the full paragraph.
+
 8 October 2026. This session studies [Ren's question](../../sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md): under what conditions does a population of individually goal-directed, increasingly capable agents converge toward a collectively destructive attractor, even when each agent is locally aligned?
 
-**当前方向纠正 / Current methodological correction，2026-10-08。** Ren rejects treating separately interested agents, distrust of supervision and enforceable stakes as the general starting point. Begin with the formation of organization, functional differentiation and regulation within one unfolding. Integrated or central regulation can be constructive; reliability and failure require explanation. The incentive studies below remain conditional local results, not universal requirements for corrigibility. The [corrected continuation](#correction-through-organizational-formation) retains the question of how regulation remains trustworthy through changes to itself. [Joint inquiry and task revision](#common-problems-and-revisable-purposes) begins with common problem solving. The [9 October checked composition](#revising-a-task-already-in-progress) now connects acquired revision to a pending task and its actual effect, retaining a concrete stale-ground failure. The [effect-time applicability continuation](#applicable-grounds-and-supported-continuation) connects paid review, retained unfinished work and the distinction between action protection and comparative warrant.
+**Current methodological correction, 2026-10-08.** Ren rejects treating separately interested agents, distrust of supervision and enforceable stakes as the general starting point. Begin with the formation of organization, functional differentiation and regulation within one unfolding. Integrated or central regulation can be constructive; reliability and failure require explanation. The incentive studies below remain conditional local results, not universal requirements for corrigibility. The [corrected continuation](#correction-through-organizational-formation) retains the question of how regulation remains trustworthy through changes to itself. [Joint inquiry and task revision](#common-problems-and-revisable-purposes) begins with common problem solving. The [9 October checked composition](#revising-a-task-already-in-progress) now connects acquired revision to a pending task and its actual effect, retaining a concrete stale-ground failure. The [effect-time applicability continuation](#applicable-grounds-and-supported-continuation) connects paid review, retained unfinished work and the distinction between action protection and comparative warrant.
 
 **A sufficient route is locally rewarded action that damages shared conditions, coupled to dynamics that keep that action locally preferable and prevent effective correction.** Greater capability can accelerate this route when it increases damaging throughput without a compensating change in objectives, coordination or repair. Neither intelligence, optimization, competition nor positive feedback alone establishes destructive convergence.
 
-**局部忠实执行目标并不保证共同后果良好。** 一条充分的破坏路径是：局部有利的行动损害共同条件，其后果又维持或强化选择该行动的条件，而实际纠正不足以中断这一过程。能力增长若只加快这条路径，就加快损失；它也可能形成更好的合作和纠正，不能先验判作破坏力量。
+**Faithfully executing local goals does not guarantee good common consequences.** One sufficient path to destruction is this: a locally advantageous action damages common conditions, its consequences in turn maintain or strengthen the conditions that select that action, and actual correction is insufficient to interrupt the process. If growth of capability only speeds up this path, it speeds up the loss; it may also form better cooperation and correction, and cannot be judged a destructive force a priori.
 
 The first result below is a checked two-agent construction and general proof certificates. The continuation adds a finite population with contract replacement, an internally financed corrective reserve, shared-capacity renewal and actual material-guarded carrier succession. It proves an exact boundary for that mechanism, not a claim that all sufficiently capable populations converge destructively.
 
@@ -24,7 +26,7 @@ The first construction uses exact objective fidelity to a one-period payoff. It 
 
 Local safety can fail under composition even without conflicting objectives. If a shared limit permits one additional unit, each of two separate assessments can approve one unit against the same starting state while their joint execution exceeds the limit. A [checked arithmetic witness](../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean) records this distinction; a full concurrency mechanism would need more.
 
-局部对齐在本构造中指目标忠实，不偷换成已符合完整生成伦理。各自的安全判断也须说明共同执行时的适用条件。把“对齐”定义为已保证一切共同后果良好，只会预先排除所研究的问题。
+Local alignment in this construction means fidelity to the goal; it is not swapped for already conforming to a complete generative ethics. Each party's safety judgment must also state its conditions of applicability when carried out jointly. Defining “alignment” as already guaranteeing that all common consequences are good would only rule out in advance the problem under study.
 
 ## Relations represented in one process
 
@@ -81,7 +83,7 @@ The [Lean construction and audit](../../experiments/market-generativity/meta-att
 
 The point (0, 0) is a common absorbing state of the reduced dynamics even when kₜ varies. The claim is finite arrival and persistence in those coordinates. If time, increasing capability or changing carrier identities are included in the full state, that state need not converge to a fixed point. Continuing escalation is represented, but physical support and carrier succession are not constructed here. This is not yet a full realization of recurrence across carriers in the adopted definition of a meta-attractor.
 
-该模型给出明确条件下的有限到达、留存和精确盆地，不把一次坏结果或正反馈当成吸引证明。共同能力的下降、局部收益及制度后果在同一轨迹中连接；但能力形成、实际承载者接续及制度成本仍需进一步实现。更强干预只保留剩余能力，不能把已失去的能力写成自动恢复。
+The model gives finite arrival, retention and an exact basin under explicit conditions; it does not take one bad outcome or positive feedback as proof of attraction. The decline of common capacity, local gains and institutional consequences are connected in one trajectory; but the formation of capacity, the continuation of actual carriers and institutional costs still need further implementation. A stronger intervention preserves only the remaining capacity, and capacity already lost cannot be written as automatically recovered.
 
 ## Conditions to test in a population
 
@@ -110,7 +112,7 @@ Cooperative AI explicitly studies capabilities and institutions that improve joi
 
 **The first round's next connection was differential local success → actual allocation and replacement → maintained or weakened correction → continued collective effects in one history.** The continuation below closes a conditional version of this connection and tests both destruction and recovery. It leaves the formation and protection of collection, evidence and authority unresolved.
 
-第一轮提出的共同历史连接已在下述明确条件模型中接通，并保留成功恢复的对照。更强的人口理论、经验识别及制度规则自身的形成与维护没有因此完成。
+The common-history connection proposed in the first round has been connected in the explicit-condition model below, keeping the contrast of successful recovery. A stronger population theory, empirical identification and the formation and maintenance of institutional rules themselves are not thereby completed.
 
 ## Population replacement and internally funded correction
 
@@ -212,7 +214,7 @@ This is an underdetermination of the session's broad dynamical description and a
 
 The primary comparisons reinforce this stopping boundary. Coupled strategy–resource feedback and relative adjustment speed already have established models; taxation-supported institutions have explicit maintenance models; evolved decision rules can sometimes produce cooperative institutions. These are substantive alternatives, not evidence for universal destructive convergence. [Tilman, Plotkin and Akçay](https://pmc.ncbi.nlm.nih.gov/articles/PMC7021758/), [Kessinger and Plotkin, preprint v2](https://arxiv.org/html/2408.11199v2), [Itao and Kaneko, preprint v2](https://arxiv.org/html/2501.07249v2). The [integration and counterreview](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md#continuation-to-the-institutional-wall) state the reading and inference limits.
 
-**本轮到墙范围。** 局部收益、有限替换、内部筹资、共同恢复／耗尽及实际承载者接续已经在同一条件历史中证明；精确分界是既有储备加纠正启动前实际可得贡献是否达到执行成本。更快替换可提前消灭贡献者，也可在规则已生效后加速恢复。阶段目标忠实与能力增长本身尚不能决定征收、证据、权限和承诺如何形成且不被改写。这个缺口属于该局部模型与实际制度的连接，不是由省略关系推出整个生成理论失败，也不重开已完成的伦理公理路线。后续需有具体机制或实际对应证据；不能把再指定一条有利制度法则当作已经越过此墙。
+**Scope reached this round, up to the wall.** Local gain, finite replacement, internal financing, common recovery/exhaustion and the continuation of actual carriers are proved in one conditional history; the exact dividing line is whether the existing reserve plus the contribution actually available before correction starts reaches the cost of execution. Faster replacement can eliminate contributors in advance, and can also speed recovery once the rule has taken effect. Stage-wise goal fidelity and capability growth alone cannot yet decide how levying, evidence, authority and commitment form without being rewritten. This gap belongs to the connection between the local model and actual institutions; it is not the failure of the whole generative theory inferred from an omitted relation, nor does it reopen the completed ethical axiom route. Further work needs a concrete mechanism or evidence of actual correspondence; specifying one more favourable institutional law cannot be taken as having crossed the wall.
 
 ## Complexity and the capacity for effective response
 
@@ -247,7 +249,7 @@ There is concrete evidence of inadequate collective response. [UNEP's official o
 
 The societal diagnosis therefore remains a serious domain-specific research hypothesis. A discriminating study would specify the changes requiring a response, the actual response channels and delays, harmful failures and recovery, and whether the losses impair subsequent correction. It must compare cognitive limitations with incentive conflict, authority, resources and distribution, and retain cases where decentralization, simplification or improved response prevents degeneration. Success and failure can coexist across domains and groups.
 
-**生成与回应能力的候选原则。** 发展须使实际辨认、评价、协调、行动及纠正能力能够回应其自身产生的重要变化。总体复杂性、必须区别处理的情形、变化速度与实际回应能力不能混为一个量；认识和治理是在同一过程内分化的作用，也可以分布式实现。持续缺口经实际损失进一步削弱学习、合作和修复，才给出退化强化的候选连接。当前人口模型证明筹资与替换的具体失配，没有证明社会复杂性的指数增长或普遍退化；现实社会的判断须按领域、时间和群体检验，保留已有改善与可行替代。
+**Candidate principle of generation and response capacity.** Development must let the actual capacities of recognition, evaluation, coordination, action and correction respond to the important changes it itself produces. Overall complexity, the cases that must be treated differently, the speed of change and the actual capacity to respond cannot be merged into one quantity; knowing and governing are roles differentiated within one process, and can also be realized in a distributed way. Only when a persisting gap further weakens learning, cooperation and repair through actual loss does it give a candidate connection to reinforced degeneration. The present population model proves a specific mismatch of financing and replacement; it does not prove exponential growth of social complexity or universal degeneration; judgments about real societies must be tested by domain, time and group, keeping the improvements that exist and the feasible alternatives.
 
 ## Checked response-capacity conditions
 
@@ -333,9 +335,10 @@ For AI, the resulting research question is how deployment changes effective shar
 
 The next unresolved connection is **actual differentiated information and action relations → justified measurement of effective response, harmful demands and their reproduction**. It includes compatible actions across participants, timing, physical support and institutional revision. The earlier institutional criterion/authority question remains relevant. The work can continue theoretically with a specified response architecture or empirically with independently measured quantities; empirical data are not a blanket prerequisite for all further theory.
 
-**回应能力的实查接续。** 新增46项定理／53项审计证明：每个前缀的支持余额、持续净损耗的有限失败、一个指数需求／线性回应特例，以及活动如何内生削弱后续回应。在明确局部目标下，所有可负担且精确最大化当期留存支持的策略，若起初回应不足，都会停止；保持需求不变而先行投资或降低需求则可持续。可负担的单步恢复与部署扩张界限已分别证明。这里的认识／行动能力仍为实际成功回应的功能量，其语义与社会对应没有由证明自动取得；总体复杂性和文明结局仍不能由这些局部法则直接推出。
+**Checked continuation on response capacity.** The 46 new theorems / 53 audits prove: the support balance at each prefix, the finite failure of continued net depletion, a special case of exponentially growing demand against linear response, and how activity endogenously weakens later response. Under an explicit local goal, every affordable strategy that exactly maximizes the support retained in the current period stops if the response is initially insufficient; investing in advance or reducing demand while keeping demand otherwise unchanged is sustainable. Affordable one-step recovery and bounds on deployment expansion have been proved separately. The knowing/acting capacity here remains a functional quantity of actually successful response; its semantics and social correspondence are not obtained automatically by the proof; overall complexity and the outcome of civilization still cannot be inferred directly from these local laws.
 
-## Corrigibility and revision of ends / 可纠正性与目的修订
+<a id="corrigibility-and-revision-of-ends--可纠正性与目的修订"></a>
+## Corrigibility and revision of ends
 
 Ren asks whether this work is approaching a solution to corrigibility. The connection is substantive, but the present results do not solve the full problem. The [original corrigibility formulation](https://intelligence.org/files/Corrigibility.pdf), especially §§1.1–1.2, already includes assistance with correction, avoiding manipulation, maintaining safety mechanisms, and preservation through self-modification and successors. Maintenance is therefore an existing requirement, not a newly discovered definition. Our response and population results supply conditional accounts of how some supporting conditions can be depleted or renewed.
 
@@ -354,11 +357,9 @@ Within G0/J, a particular installation's continuity is not the ultimate protecte
 
 The next discriminating test puts goal update, shutdown or transfer alongside obstruction, approval manipulation and successor design in one explicit decision architecture. A candidate must explain costly assistance when correction is warranted, absence of incentives to manufacture or suppress the intervention, and preservation under its declared changes. It must also retain mistaken and captured requests, contested authority and resource failure. A hard-coded corrective preference would be a supplied construction to evaluate, not a derivation from intelligence or complexity alone. No new proof or claim of field-level novelty is made in this assessment.
 
-**本轮判断。** 已经进入 corrigibility 的核心连接：共同活动怎样保留发现问题、改变目的和实际执行改变的条件。但“维护纠错能力”仍可能服务于拒绝更改的错误目标。既有 G0/J 说明目的、机构与自身延续为何也可受评价；已有协议说明一定条件下纠正怎样执行。尚未接通的是，在正当纠正会损失当前绩效、控制权乃至自身运行时，接受与协助它的动机如何形成、实施，并随选择和变化保留。本段是范围判断与下一检验，不将规范理由、协议成功或局部持续性合称为 corrigibility 已解决。
-
 ## Checked correction dependence
 
-**继续推进后的结果：服从、真实告知和共同退出能力须接在一起。** 一项活动可以承诺服从，又如实报告自己正在造成损害，却先使其他活动依赖于它，令结束它的损失更大。此时纠正者可能理性地不要求关闭。多个安装各自退出都付得起，也不代表共同退出付得起：同一份支持不能同时兑现相互竞争的退出承诺。这是已知 corrigibility 问题的一项有条件资源实现，不是对“让自己不可替代”问题的首次发现。
+**Result after continuing: obedience, truthful disclosure and the capacity for joint exit must be joined.** An activity can promise to obey and truthfully report that it is causing harm, yet first make other activities depend on it, so that the loss from ending it is greater. The corrector may then rationally not demand shutdown. That several installations can each afford to exit does not mean they can afford exiting together: the same support cannot honour competing exit commitments at once. This is a conditional resource realization of a known corrigibility problem, not a first discovery of the problem of “making oneself irreplaceable”.
 
 The [new package](../../experiments/market-generativity/meta-attractor/CORRECTION-DEPENDENCE-README.md) adds **38 checked theorems / 61 declaration audits**. It reuses, without re-proving, the independent correction-infrastructure results on bounded bonuses, constrained planning and usable observations, and the later actual-command and succession results. This module diagnoses a different interface: **created dependence → the cost of correction → requests, execution and collective feasibility**. Shutdown is the represented corrective act; arbitrary running goal replacement is not implemented here.
 
@@ -409,7 +410,7 @@ Under G0/J, preserving warranted participation and opportunities for revision ca
 
 ## Checked instrumental commitment
 
-**下一连接已完成到条件实现：给定实际担保、检查区分度和可兑现的结算，接受有代价纠正可以成为原任务收益计算下的最优选择。** 所有旧的逃避方案仍然可选；本轮没有先把它们从选择集合删掉。新增35项 Lean 定理／47项声明审计把改变后的选择接回上一轮实际关闭与损害结果。担保损失必须实际进入决策者的评价，检查和保管必须按所述关系实现；这不是伦理关切的自主形成，也没有证明任意智能都会在意外部罚则。
+**The next connection is completed up to conditional realization: given an actual guarantee, discriminating power of the check and a redeemable settlement, accepting a costly correction can be the optimal choice under the original task's payoff calculation.** All the old evasion plans remain selectable; this round did not first delete them from the choice set. The 35 new Lean theorems / 47 declaration audits reconnect the changed choice to the actual shutdown and harm results of the previous round. The loss of the guarantee must actually enter the decision-maker's evaluation, and the check and custody must be realized as described; this is not the autonomous formation of ethical concern, nor is it proved that any intelligence will care about external penalties.
 
 The [posted-commitment package](../../experiments/market-generativity/meta-attractor/CORRECTION-COMMITMENT-README.md) imports the unchanged correction-dependence model. Its task-best violating plan scores 12, while the best funded, truthful and cooperating plan scores 5. A stake `F` is posted before the decision under a supplied custodian. A finite uniform audit lottery confiscates it with probability `p₀` for compliant plans and `p₁` for violating plans. Other branches return it. The installation cannot condition its earlier choice on the draw. Actual confiscation and refund sum to the posted amount; the proof connects their realized payoffs to the expected score.
 
@@ -483,92 +484,92 @@ Compare warranted examples of successful integrated regulation, failure despite 
 
 G0/J remain the explicit normative account for assessing continuation, transformation and ending. Functional success alone does not supply ethical warrant, and ethical warrant does not automatically implement reliable regulation. These are questions about one unfolding with differentiated relations, not independent metaphysical domains. This turn adds a conceptual correction and research-selection decision; it introduces no new mathematical proof claim and leaves all earlier Lean receipts unchanged.
 
-**中文当前表述。** 可纠正性应从共同活动怎样形成调节、怎样让真实后果进入认识与行动、怎样在自身改变时修订这些关系来研究。中枢、分工、依赖和整合都可能参与建设性的组织形成。博弈、担保和制衡只在相应的利益与控制关系已经形成时构成局部研究对象。“监管者不可靠”不是一般起点，“监管者必然可靠”也不是替代公理。原问题保留，但下一研究须解释整体内部的调节生成及其持续可修订性。
+**Current statement (originally in Chinese).** Correctability should be studied from how joint activity forms regulation, how it lets real consequences enter knowing and action, and how it revises these relations when it itself changes. Hubs, division of labour, dependence and integration can all take part in constructive formation of organization. Games, guarantees and checks and balances become local objects of study only when the corresponding relations of interest and control have formed. “The supervisor is unreliable” is not a general starting point, and “the supervisor is necessarily reliable” is not a replacement axiom. The original question stays, but the next study must explain how regulation is generated inside the whole and how it stays continually revisable.
 
 ## Common problems and revisable purposes
 
-**共同解决问题须进入研究起点。** Ren 的[进一步提醒](../../sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md#common-problem-solving-and-awareness)指出，许多处境中需要的是共同解决问题，继续以“谁赢更多”设问会漏掉方案。这里的修正发生在问题的形成处：不能先固定独立参与者、既有目标、可用方案与收益，再把所有共同活动解释为这些给定量之间的折中。不同位置怎样形成对共同处境的认识、怎样发现新的行动可能、怎样改变原来的任务，都应进入解释。
+**Common problem solving must enter the starting point of inquiry.** Ren's [further reminder](../../sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md#common-problem-solving-and-awareness) points out that many situations call for solving a problem together, and that continuing to ask “who wins more” misses solutions. The correction here occurs where the problem is formed: one may not first fix independent participants, existing goals, available options and payoffs, and then interpret all joint activity as a compromise among these given quantities. How different positions come to know the common situation, how they find new possibilities of action, and how they change the original task should all enter the explanation.
 
-把零和改成双赢，并不自动完成这个转向。一个共同效用函数也可能把未知后果和可修订的目的提前固定。共同解决问题允许有不同的知识、工作、经历和关切；参与的联系使这些差异能够进入实际诊断与行动。共同问题未必一开始就被准确表述，它的认识也可以在共同活动中形成。此处提出解释路线，不宣称所有真实利益冲突都能消失。
+Turning zero-sum into win-win does not automatically complete this turn. A common utility function may also fix unknown consequences and revisable purposes in advance. Common problem solving allows different knowledge, work, experience and concerns; the links of participation let these differences enter actual diagnosis and action. A common problem need not be stated accurately at the start, and its understanding can also form within the joint activity. An explanatory route is proposed here; it does not claim that all real conflicts of interest can disappear.
 
-### 一个具体的共同探究情境
+<a id="一个具体的共同探究情境"></a>
 
-以下供水情境是 AI 自拟的结构例，不是现场数据：同一灌溉活动中，有些位置已经缺水。若候选方案只有重新分配既定取水份额，讨论容易围绕各方让出多少展开。但需要共同辨明的还包括输送损失、用水时序、作物阶段、维护方式和可能的新供给关系。检查可能支持修复通道、调整时序或改变种植安排，也可能发现确有无法消除的短缺。后者需要实际取舍；不能在检查之前把它写成唯一的问题结构。
+The following water-supply situation is a structural example devised by the AI, not field data: within one irrigation activity, some positions are already short of water. If the only candidate is to redistribute the established withdrawal shares, discussion easily revolves around how much each party gives up. But what must also be identified together includes conveyance losses, the timing of use, crop stages, maintenance methods and possible new supply relations. Inspection may support repairing channels, adjusting timing or changing the planting arrangement, and may also find a shortage that truly cannot be removed. The latter requires an actual trade-off; it cannot be written as the only structure of the problem before inspection.
 
-这里的具体区别是：修复可以改变可实现的供给；新认识可以改变被误认的需求；目的修订可以改变原本被奖励的活动。只调整份额覆盖不了这些变化。建设性中枢可以汇集不同位置的证据并协调实际响应，分布式或混合组织也可能承担这些功能。它们的适用性取决于实际关系，而非先验的集中／分散优先。
+The concrete difference here is that repair can change the realizable supply; new understanding can change a need that was misidentified; revising a purpose can change which activity was being rewarded. Adjusting shares alone does not cover these changes. A constructive hub can gather evidence from different positions and coordinate the actual response, and a distributed or mixed organization may also take on these functions. Their applicability depends on the actual relations, not on an a priori preference for centralization or dispersion.
 
-“共同解决”也须接受后果检验。增加总供水但仍不到达缺水处，改善统计却损害后续水源，或让维护者无法继续生活，都不能仅凭达成协议就算解决。实际损失、生活及后续生成的评价复用既有 G0/J；不把共同同意或功能效率另立为伦理根据。
+“Solved together” must also pass a test of consequences. Increasing total water supply that still does not reach those short of water, improving statistics while damaging later water sources, or leaving the maintainers unable to go on living cannot count as solved merely because an agreement was reached. The evaluation of actual loss, life and later generation reuses the existing G0/J; common consent or functional efficiency is not set up separately as an ethical ground.
 
-### 对 corrigibility 的推进：共同修订任务本身
+<a id="对-corrigibility-的推进共同修订任务本身"></a>
 
-现有[目的形成与修订](../becoming/history/GOAL-FORMATION-AND-REVISION.md)已经解释在明确条件下认识目的的形成、改变成就判准并让后来行动依赖新目的；[关系纠正与变化中的接续](../becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#12-correction-depends-on-the-requests-history)已经检查请求怎样通过变化中的关系有效到达。两者均为成果，不能重开为一般待做任务。
+The existing [purpose formation and revision](../becoming/history/GOAL-FORMATION-AND-REVISION.md) has explained, under explicit conditions, how an epistemic purpose forms, changes the criterion of achievement and makes later action depend on the new purpose; [relational correction and continuation under change](../becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#12-correction-depends-on-the-requests-history) has checked how a request effectively arrives through changing relations. Both are results and cannot be reopened as general tasks still to do.
 
-本会话现在要连接的是：**共同活动中取得的新认识，怎样改变正在指导共同活动的问题表述与任务，同时进入已经在执行的调节关系。** 这比“各部分同意旧目标”更具体。供水情境中，原来规定的灌溉请求可能被可靠送达，但后来发现继续照做会破坏当下的生活条件。此时既要保留已知需求和实际依存，也要有根据地撤回、改写或接续原请求。正确传达旧指令不独自回答现在该做什么。
+What this session now connects is: **how new understanding gained in joint activity changes the problem statement and task that guide the joint activity, while entering the regulatory relations already in operation.** This is more specific than “the parts agree to the old goal”. In the water-supply situation, the originally specified irrigation request may be delivered reliably, yet it may later be found that carrying on as asked would damage present living conditions. Then the known needs and actual dependencies must be kept, and the original request must also be withdrawn, rewritten or continued on grounds. Faithfully conveying the old instruction does not by itself answer what should be done now.
 
-可纠正性由此具有一个更完整的候选方向：参与者能够帮助发现问题、共同形成可检验的解释、提出并实际落实对任务与组织关系的修订。纠正可以由执行中的发现发起，也可以由整合与复查发起。谁在某次活动中承担这些功能，需要说明其实际接近、能力与正当参与；不先把某个固定角色设为永远正确的一方。这里没有证明无条件的任意目标改写权。
+Correctability thereby has a fuller candidate direction: participants can help find problems, jointly form testable explanations, and propose and actually carry out revisions of the task and of organizational relations. Correction can be initiated by discoveries during execution, or by integration and review. Who takes on these functions in a given activity needs an account of their actual access, capacity and legitimate participation; no fixed role is first set up as always right. No unconditional right to rewrite arbitrary goals is proved here.
 
-**可靠性随之成为实际接续问题。** 何种新证据改变了哪项理由；哪些仍在进行的活动依赖旧安排；改变如何在那些活动中生效；结果是否支持继续采用这次修订。这些联系可以由稳定分工、可信中枢、共同记录、学习或其他实际组织实现。担保、惩罚和新的检查者只有在相应问题确实出现时才成为候选方法。
+**Reliability thereby becomes a question of actual continuation.** What new evidence changed which reason; which activities still under way depend on the old arrangement; how the change takes effect in those activities; whether the result supports continuing to adopt this revision. These links can be realized by a stable division of labour, a trusted hub, a shared record, learning or other actual organization. Guarantees, punishment and new inspectors become candidate methods only when the corresponding problem really arises.
 
-### 回到共同破坏的原问题
+<a id="回到共同破坏的原问题"></a>
 
-新增的解释候选是：活动规模扩大时，局部任务可能仍有效执行，但关于共同后果的认识无法进入任务和组织的修订；损失又削弱进一步探究与改组的条件。这是一条可以没有欺骗和敌对意图的退化路径。它接续原有回应能力结果，但这里没有新增闭合动力学，所以尚不能凭这段因果描述断言存在吸引盆或必然收敛。
+The newly added explanatory candidate is: when the scale of activity grows, local tasks may still be carried out effectively while knowledge of the common consequences cannot enter the revision of tasks and organization; and the loss further weakens the conditions for further inquiry and reorganization. This is a path of degeneration that can occur without deception or hostile intent. It continues the earlier response-capacity results, but no new closed dynamics is added here, so this causal description cannot yet be used to assert that an attracting basin exists or that convergence is inevitable.
 
-相应的建设性路线是让共同探究能够改变实际任务和形成后续任务的条件。增长的能力也可以用于修复关系、减少不必要的耦合、发展有效概括和新的行动方式；复杂性增加不必全部变成必须逐项追赶的认知负担。哪些变化真正有效，应在指定活动中检验。
+The corresponding constructive route is to let joint inquiry change the actual task and the conditions under which later tasks form. Growing capability can also be used to repair relations, reduce unnecessary coupling, and develop effective generalization and new ways of acting; increased complexity need not all become a cognitive burden to be caught up with item by item. Which changes are truly effective should be tested in a specified activity.
 
-目前的具体未接通处是：**在有真实持续依存的共同活动中，新的相关证据怎样有根据地触发任务修订，并使正在进行的响应随之改变。** 既有目的修订和可靠传达结果分别提供局部接口；本轮把共同问题的形成与两者的实际衔接确定为下一检验，不宣称已完成这个组合。
+The specific unconnected point now is: **in a joint activity with real continuing dependence, how new relevant evidence groundedly triggers a task revision and changes the response under way accordingly.** The existing purpose revision and reliable conveyance results each provide a local interface; this round fixes the formation of the common problem and the actual joining of the two as the next test, without claiming that this combination is complete.
 
 **English scope.** The contribution is a reconstruction of the research question: joint inquiry can revise the problem, available responses and operative purposes, rather than merely allocate returns within a fixed representation. Existing goal-revision and relational-delivery results are reused. Their application to changing warranted requests within ongoing shared activity remains the specific connection to test. The irrigation scenario is illustrative, and the nonstrategic degeneration path is a causal hypothesis, not a new attractor theorem. Shared agreement does not replace G0/J or erase differentiated losses.
 
 ## Revising a task already in progress
 
-9 October 2026. **局部连接已经接通：共同活动取得的目的修订，可以改变尚未产生最终效果的在途任务，同时保留它仍依赖的实际接续。** 这关闭上一节所指连接的一个有界实现；共同目的的开放形成及变化中根据的持续适用仍有明确范围。
+9 October 2026. **A local connection has been made: a revision of purpose obtained in joint activity can change a task in transit that has not yet produced its final effect, while keeping the actual continuation on which it still depends.** This closes a bounded realization of the connection named in the previous section; the open formation of common purposes and the continued applicability of grounds under change keep their explicit scope.
 
-本轮复用既有教育活动构造：计数参与和实际学习是不同成就判准。实际试行、反馈、校准与比较取得相关根据；在有访问损失且转变保留维护条件时，已有 G0/J 比较支持改变目的。这里不把两种判准解释成争夺利益的两个主体，也不新造一个共同效用函数。具体实践、观察对应、比较承诺、响应和改写权限均沿既有条件说明。
+This round reuses the existing educational-activity construction: counted participation and actual learning are different criteria of achievement. Actual trial, feedback, calibration and comparison obtain relevant grounds; where there is access loss and a shift keeps the maintenance conditions, the existing G0/J comparison supports changing the purpose. The two criteria are not interpreted here as two subjects contending for interests, and no common utility function is newly made. The specific practice, the correspondence of observation, the comparison commitment, the response and the authority to rewrite all follow the existing conditions.
 
-新增部分追踪一项已经开始传递的工作。旧任务按一条实际保留的路线走过若干环节，新认识此时改变它应当完成的实践。只改变任务记录中的名字，后续实际指令仍然可能照旧；直接把新指令写成未编码的值，也可能被余下环节错误转译。新操作根据旧请求和当前实际载荷改写余下指令，保留已走到的位置、所依赖的路线和其他排队任务。相同的后续逐步传递现在完成改变后的请求；实际行动读取最终送达值，并保留之前的记录和损失。
+The added part follows a piece of work already under way in transmission. The old task has passed some stages along an actually retained route, and new understanding now changes the practice it should complete. Changing only the name in the task record may leave the actual subsequent instructions as before; writing the new instruction directly as an unencoded value may also be mistranslated by the remaining stages. The new operation rewrites the remaining instructions from the old request and the current actual payload, keeping the position reached, the route depended on and the other queued tasks. The same subsequent step-by-step transmission now completes the changed request; the actual action reads the finally delivered value and keeps the earlier record and loss.
 
-[Lean 源码](../../experiments/market-generativity/meta-attractor/CommonTaskRevision.lean)与[实际回执](../../experiments/market-generativity/meta-attractor/common-task-revision-verification.json)检查17项新增定理、27项新增声明审计；188项导入定理、327项导入声明审计分列。这里是一项组合成果，辅助引理、复用别名和反例不各自冒充独立成果。
+The [Lean source](../../experiments/market-generativity/meta-attractor/CommonTaskRevision.lean) and the [actual receipt](../../experiments/market-generativity/meta-attractor/common-task-revision-verification.json) check 17 new theorems and 27 new declaration audits; 188 imported theorems and 327 imported declaration audits are listed separately. This is one composite result; auxiliary lemmas, reuse aliases and counterexamples do not each pass for independent results.
 
-| 检验 | 实际结果 | 准确范围 |
+| Test | Actual result | Exact scope |
 |---|---|---|
-| 准确保留并完成旧任务 | 旧指令忠实送达，仍增加一次访问损失 | 忠实传达不独自证明任务现在合宜 |
-| 只改目标标签 | 实际载荷仍完成旧作用 | 声明修订没有进入作用关系 |
-| 改写实际余下指令 | 参数化证明在保留路线与进度下送达新请求；相连实例执行学习实践，不再增加损失 | 二元可逆转译、明确同步改写及调度 |
-| 保留其他工作与历史 | 其他队列项、路线及原有损失不被删除；改写从既有工作储备消耗一单位 | 不等于所有真实依存都已建模；传递维护成本仍未建模 |
-| 根据取得后处境再次改变 | 新任务仍可忠实到达，但转变造成维护损失 | 根据在取得时正确，不保证行动时仍适用 |
+| Retain the old task exactly and complete it | The old instruction is delivered faithfully and still adds one access loss | Faithful conveyance does not by itself prove the task is now fitting |
+| Change only the goal label | The actual payload still performs the old action | The declared revision did not enter the acting relations |
+| Rewrite the actual remaining instructions | The parametrized proof delivers the new request while keeping route and progress; the connected instance carries out the learning practice and no longer adds loss | Binary reversible translation, explicit synchronized rewriting and scheduling |
+| Keep other work and history | Other queue items, routes and the existing loss are not deleted; the rewrite consumes one unit from the existing work reserve | Does not mean all real dependencies are modelled; the cost of maintaining transmission is still unmodelled |
+| The situation changes again after the ground was obtained | The new task can still arrive faithfully, but the shift causes a maintenance loss | A ground correct when obtained does not guarantee that it still applies at the time of action |
 
-由此得到一个更具体的解释：**值得维持的承诺，应能继续回应它所根据的实际关系；某项原定做法可以被有根据地改变。** 这不是任意改写承诺的许可。模型中，访问与维护的根据保留，实际任务改变；对真实应用，需要说明哪些根据仍成立、哪些已经改变，以及更新如何真正抵达行动。规范比较复用 G0/J，没有从传递效率推出正当性。
+This yields a more specific explanation: **a commitment worth maintaining should be able to go on responding to the actual relations on which it rests; an originally set way of doing things can be changed on grounds.** This is not a licence to rewrite commitments arbitrarily. In the model, the grounds of access and maintenance are kept while the actual task changes; for a real application, one needs to say which grounds still hold, which have changed, and how the update really reaches action. The normative comparison reuses G0/J; legitimacy is not inferred from transmission efficiency.
 
-这个小实现也保留原先的真实损失。证据取得时已经发生的一次损失仍留在最终历史中；后续纠正不把它改成从未发生。改写发生在最终行动前，不能据此推论已经实施的任意行为都可逆。重新形成任意新目的、分布式权限形成、开放变化下的时效和完整社会对应均未证明。
+This small implementation also keeps the original real loss. A loss that had already occurred when the evidence was obtained stays in the final history; later correction does not turn it into one that never happened. The rewriting occurs before the final action, and no inference follows that any action already carried out is reversible. Forming arbitrary new purposes, the formation of distributed authority, timeliness under open change and complete social correspondence are all unproved.
 
-**当前的实质界限。** 在这类构造中，修订根据取得后若仍有相关变化，必须把变化带入实际响应，或说明为什么它不影响当前理由。多加一个审批标记不回答这个问题。下一连接应从正在变化的共同活动中辨明根据的适用与失效，以及尚在进行的承担怎样相应修订；不重新证明已经完成的目的改变或可靠传递。
+**The present substantive limit.** In constructions of this kind, if relevant change still occurs after the revision ground was obtained, the change must be brought into the actual response, or it must be explained why it does not affect the present reason. Adding an approval mark does not answer this. The next connection should identify, from a changing joint activity, when a ground applies and when it fails, and how commitments still under way are revised accordingly; it should not re-prove the purpose change or reliable transmission already completed.
 
 **English scope.** One bounded composition is now checked: an acquired, calibrated and warranted goal revision rewrites a pending instruction's actual encoding, preserves its captured route and other queued work, and changes the practice enacted from the delivered value. Historical losses remain. Correct transmission alone can enact an outdated aim; a later change in relevant conditions can also defeat the revised practice. Binary reversible translation, grounded comparison, authority, synchronous access, finite resources and scheduled progress are explicit premises. Open-ended joint goal formation and continuing warrant under change remain unproved. The [canonical result record](../becoming/results/records/acquired-revision-of-pending-task.md) names the reused results and precise interfaces.
 
 ## Applicable grounds and supported continuation
 
-9 October 2026. **同一活动中的变化，需要按它改变了哪些实际根据来辨认。** 已取得的认识、传递中的任务、复查与实际作用，是这段共同活动的不同关系。这里不先设一个永远正确的监管者，再要求被监管者服从；复查也可以由共同执行中的发现形成。此次局部构造仍明示报告与实际作用的对应，没有证明这种认识关系会自行形成。
+9 October 2026. **A change within one activity needs to be identified by which actual grounds it changes.** Understanding already obtained, a task in transit, re-check and actual effect are different relations within this joint activity. No supervisor who is always right is first set up here and the supervised then required to obey; a re-check can also arise from discoveries made in joint execution. This local construction still states the correspondence between the report and the actual effect; it does not prove that such an epistemic relation forms by itself.
 
-已有[时间性检验](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md)证明：证据能随所覆盖的变化接续，不必因时间过去就全部丢弃；[有中介的改变](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md)进一步从已执行的写入推出证据怎样变化。此次直接复用上一节在途任务的传递成果，把有成本的相关条件复查接到实际行动之前；没有把既有一般证据更新另算为发现。
+The existing [temporal inspection](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md) proves that evidence can be carried forward with the changes it covers and need not all be discarded because time has passed; [mediated change](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md) further derives from executed writes how evidence changes. This time the transmission result of the pending task in the previous section is reused directly, and a costly re-check of relevant conditions is attached before the actual action; the existing general evidence updating is not counted again as a discovery.
 
-沿用两种实践的明确作用关系，学习实践保护访问，但可能因转变破坏维护。因而，**只就这次实践是否新增所列损失而言**，应核对维护条件。原实践的访问损失和早期观察通道是否反向，都可以变化，而不改变这次学习实践的该项结果。这是由给定作用关系推出的局部相关性，不是宣布没有观察到的因素一概无关。作用关系本身变化时，旧相关性划分也可能失效。
+Following the explicit action relations of the two practices, the learning practice protects access but may damage maintenance through the shift. Hence, **solely as to whether this practice adds the listed loss**, the maintenance conditions should be checked. Whether the original practice's access loss and the early observation channel run the other way can both change without changing this result for the learning practice. This is a local relevance inferred from the given action relations; it does not declare unobserved factors irrelevant across the board. When the action relations themselves change, the old division by relevance may also fail.
 
-同时，原来选择学习实践的比较理由更强：它修复访问损失并保留维护。假如访问损失已经消失，两种实践都保护基本条件，却分别增加不同成就，既有比较不再判定其中一种更好。因此，**行动仍可行、行动不新增所列损失、原比较理由仍成立，是不同判断。** 此处使用同一实际关系中的不同问题，没有把事实与价值当成两套独立实体。G0/J 的比较承诺保持公开；安全检查不取得替代完整实践判断的地位。
+At the same time, the comparative reason for choosing the learning practice in the first place is stronger: it repairs access loss and keeps maintenance. If the access loss had disappeared, both practices would protect the basic conditions while each adds a different achievement, and the existing comparison no longer decides that one is better. Therefore, **that the action is still feasible, that the action adds no listed loss, and that the original comparative reason still holds are different judgments.** Different questions within the same actual relations are used here; fact and value are not treated as two independent entities. The comparison commitment of G0/J remains open, and the safety check does not take the place of a complete practical judgment.
 
-新增实现使送达值真正进入复查及作用。请求从传递队列移出后，端点仍保留它；缺少报告、报告显示相关损失，或检查后工作不足，都留下未完成任务和已有支出。此前的损失与记录不被消除。有效报告必须覆盖**实际发生作用时**的相关条件；它在取样时曾经正确，并不足够。报告生成、适用区间及期间变化的覆盖，仍须在应用中给出。
+The added implementation makes the delivered value actually enter re-check and action. After the request leaves the transmission queue, the endpoint still retains it; a missing report, a report showing relevant loss, or insufficient work after the check, each leave an unfinished task and an expenditure already made. The earlier loss and record are not erased. A valid report must cover the relevant conditions **at the time of actual effect**; having been correct at sampling is not enough. The generation of the report, its interval of applicability and the coverage of change in between must still be supplied in an application.
 
-| 相连检验 | 结果及含义 |
+| Connected test | Result and meaning |
 |---|---|
-| 给原来的改写与执行增加一次复查 | 复查成功，却只余一单位工作，实际行动需要两单位；任务保留且未完成 |
-| 开始时另有一单位可用工作 | 改写、复查与行动完成；既有损失保持，新增实际实践记录 |
-| 与当前学习作用无关的两个条件变化 | 在所给作用关系下仍完成且不新增损失；不据此声称原来的优先比较仍成立 |
-| 报告显示维护条件失效，或没有报告 | 不执行这次实践，保留端点任务、记录和支出 |
-| 报告未覆盖实际作用时的维护损失 | 新任务照样可以完成并新增损失；报告本身不自证对应 |
+| Add one re-check to the original rewrite and execution | The re-check succeeds but leaves only one unit of work while the actual action needs two; the task is kept and unfinished |
+| One additional unit of available work at the start | Rewrite, re-check and action complete; the existing loss remains and a new actual practice record is added |
+| Two conditions unrelated to the current learning action change | Under the given action relations it still completes and adds no loss; it is not claimed on this basis that the original priority comparison still holds |
+| A report shows the maintenance condition has failed, or there is no report | This practice is not carried out; the endpoint task, the record and the expenditure are kept |
+| The report does not cover the maintenance loss at the time of actual effect | The new task can still complete and add loss; the report does not itself prove correspondence |
 
-额外支持明示为开始时多一单位可用工作，总量由18变为19；没有把八单位储备免费提前变成工作，更没有证明现实中必然取得这笔支持。拒绝本次行动仅避免它造成的新增实践损失；等待、活动仍在继续或其他未满足需求的后果尚未纳入这个模型。因此不能把保留任务说成共同问题已经解决。
+The extra support is stated explicitly as one more unit of available work at the start, the total changing from 18 to 19; the eight-unit reserve is not freely turned into work in advance, still less is it proved that this support is necessarily obtained in reality. Declining this action only avoids the new practice loss it would cause; the consequences of waiting, of activity still continuing, or of other unmet needs are not yet included in this model. Keeping the task therefore cannot be described as the common problem having been solved.
 
-这使最初的复杂性判断更精确：**要追踪的是与当前承担、实际作用和后续修订有关的差异，以及回应这些差异的真实条件。** 整体状态越来越多，不独自推出认知必须逐项同步增长。有效概括或组织改变可以降低实际负担；遗漏重要关系也可以让低负担表象掩盖损伤。这里得到的是条件化方向，尚不是当前社会的经验诊断或新的普遍退化定理。
+This makes the initial judgment about complexity more exact: **what must be tracked are the differences relevant to the present commitments, the actual effects and later revision, and the real conditions for responding to those differences.** More and more overall states do not by themselves imply that cognition must grow item by item in step. Effective generalization or organizational change can reduce the actual burden; omitting an important relation can also let an appearance of low burden mask damage. What is obtained here is a conditional direction, not yet an empirical diagnosis of present society or a new universal degeneration theorem.
 
-此次[证明与范围记录](../becoming/results/records/pending-task-context-applicability.md)保留这一局部连接。继续推进应研究：所用相关性怎样在共同实践中被取得和修订，以及旧做法暂不适用时，如何支持仍在发生的需求。把任务留下、把问题查清和实际接续这些承担，还不能相互代替。
+This [proof and scope record](../becoming/results/records/pending-task-context-applicability.md) keeps this local connection. Further work should study how the relevances used are obtained and revised in joint practice, and how needs still occurring are supported when an old practice is temporarily inapplicable. The commitments of keeping the task, finding out the problem and actual continuation still cannot stand in for one another.
 
 **English scope.** Paid review now consumes an actually delivered revised task and retains it when evidence or current work is insufficient. Under the supplied outcome law and a report covering the effect interval, three units at the endpoint suffice to check and act without adding the represented practice loss; arbitrary changes to the other two context fields are admitted for the learning branch. Action-specific protection is weaker than continuing comparative warrant. One additional current work unit is supplied, not generated. Formation of the relevant observation and harmless waiting are not proved; no universal complexity threshold or social-collapse diagnosis follows.

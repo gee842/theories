@@ -84,7 +84,6 @@ This adds an actual join at a specified connection; it does not derive an unlimi
 
 The stopping boundary recorded on 8 October 2026 was specific: the account still supplies the apparatus making failures legible, the repertoire of replacements and the paid retooling relation. The next construction should let ongoing consequences form or revise one of those relationships while preserving actual ordinary activity, costs and failures. The existing method-formation and expanding-inquiry results are constraints and resources for that construction, not tasks to redo. These remaining interfaces are limitations of the joined representation, not evidence that regulation requires an outside cause or that other branches have never formed sensing or candidate-generating capacities. General foundation, empirical adequacy and full historical proof migration remain distinct unfinished questions.
 
-
 <a id="registration-revision-on-the-spine"></a>
 ## 13 October: selection revises its registration on the Becoming spine
 
@@ -106,13 +105,7 @@ The local law also admits closing the link. `rebuild_then_close` includes actual
 
 **Integration and next connection.** The older selection result's output (choices constrained by registration) now meets a process whose actual transitions change that registration, with a checked preservation/loss criterion and an executed response. This completes that local interface. It does not yet connect the previously learned construction/reconstruction recipe to a changing observation domain in the *same* material history. The next substantive connection is to let acquired consequences revise which reconstructive procedure is available and selected, while retaining enough support to execute it. The fixed preference and fixed recipe are the present wall; adding another fixed supervisor or another illustration of resource depletion would not cross it.
 
-**中文对应。** 在同一关系展开中，活动改变后续能够分辨什么的关系。新结果复用主干已有选择、过程和历史定义：修改后保留此前所有可表达选择，当且仅当新登记不会合并旧登记所分开的情况；合并一对情况，就能构造一个失去表达能力的旧选择。该条件沿实际过程组合，且直接接回 Web 的旧选择定理。保留“当时实际留下的记录”与把“当前装置”追溯套用于过去不同；记录史本身不等于物理记忆。
-
-同一局部过程已经执行重构观察、耗尽支持、补充支持及实际回应改变，并保留关闭观察和支持不足的失败。构造律、供给、目标、重建偏好仍给定，不能说已解释这些关系自身的取得，更不能从空 Lean 公理报告推出没有实质前提。当前完成的是选择与登记修订的接口；下一连接是既有后果取得机制怎样在同一实际历史中修改重构方法与候选范围。没有重新宣称整个 meta-attractor、零公理根基或普遍可纠正性已完成。
-
-
 **Proof evidence / 证明证据。** Shared Lean 4.29.1 core check [20261013T113031.597794Z](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T113031.597794Z/verification.json) passed: the new module has **25 theorems / 35 source-declaration audits, all empty axiom reports**; the 79-module pure core compiles from the built-in prelude. The package totals 4,571 theorems / 6,442 declaration audits, not all new work. Twelve Lean steps ran and 349 reused identical passed inputs. The [peripheral compatibility run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T113252.623598Z/verification.json) passed as well (6 steps run, 80 reused; original bridge 7 theorems / 8 empty audits). 核心纯净及外围兼容均经实际编译检查；新贡献与继承总量分列。作者反审见上，无独立代理验收或经验验证。
-
 
 <a id="capacity-correspondence-and-reconstruction"></a>
 ## Continued reconciliation: capacity, correspondence and reconstruction
@@ -135,85 +128,67 @@ These are complementary conditional explanations within one relational approach.
 
 **The sharper remaining inference.** The missing connection is no longer “can apparatus or calibration ever form or change?” Existing mechanisms already answer that conditionally. It is whether consequences acquired in the course of use can revise the *procedure that builds or checks the next registration*, changing the actually available reconstruction candidates while ordinary support and response continue. The LearnedProcedureTransmission source explicitly holds its two procedures and recipe fixed; CalibrationRenewal supplies its inspection head, reference binding and commit law; P93 supplies its reconstruction preference. Thus none alone establishes this composition. A checked instance connecting an acquired recipe change to a changed actual registration and later use, with compatible support at the handoff and a failure comparison, would cross this boundary. A wider list of labels or an analyst swapping the recipe would not.
 
-**中文接续。** 本轮重新核对后，不再把观察装置形成、校准更新或更新方法传递笼统列作待做。已有校准研究已经把实际参考取得、比较、改写与同一网络的修复接通；其旧稳定区间问题也已有有界偏离接续。P93 新增的是统一主干上的选择能力保留条件，不能冒充解释正确、实际选择或实际修复。现在准确的剩余推论，是使用中取得的后果怎样修改下一次观察／检查装置的构造方法，继而改变实际可用候选并继续参与活动。当前研究已把这个接口和检验它所需的证据写明，尚无这项同历史组合的已检证明。
-
 <a id="consequences-revise-reference-plans"></a>
-## P99: consequences revise the next reference plan / 后果修改下一套参考计划
+<a id="p99-consequences-revise-the-next-reference-plan--后果修改下一套参考计划"></a>
+## P99: consequences revise the next reference plan
 
 **Result(s) and delta / 复用与新增量。** Reuse `selection-under-registration-revision`, `generalization-through-lumping` and `process-and-frame-as-readings`. The new result is `consequence-revised-reference-plan`, on the same Becoming spine in [ReferencePlan.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean). It closes the specific conditional connection left above: acquired mismatch changes the executable plan for the next reference acquisition; fresh, checked records construct the installed apparatus; that apparatus changes later response and available distinctions; a second acquired mismatch repeats the connection without resetting support. / 新结果接通上文准确留下的条件接口：取得的失配改变下一轮参考取得的可执行计划，新取得并检查的记录进入已安装装置，装置改变后续回应与可表达区分，第二次失配继续修改方法，支持账不重置。
 
-The starting point remains one activity unfolding through its relationships. “Channel,” “receipt,” “method,” “apparatus” and “response” name roles within that history, not independently given substances. The local configuration retains only the relationships needed for this connection. The supplied law is part of the represented activity, not an external cause excluded from reality. A proof under that law does not explain why its physical correspondence holds. / 起点仍是同一活动中的关系展开；接触、回执、方法、装置与回应是其中分化的作用，状态坐标不偷渡独立本体。局部律属于所表示的活动，但条件证明不等于已解释其物理对应。
+The starting point remains one activity unfolding through its relationships. “Channel,” “receipt,” “method,” “apparatus” and “response” name roles within that history, not independently given substances. The local configuration retains only the relationships needed for this connection. The supplied law is part of the represented activity, not an external cause excluded from reality. A proof under that law does not explain why its physical correspondence holds.
 
 **What has already been done / 已有成果。** The [consequence–inquiry reconstruction](../history/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md) already credits an acquired applicability family selecting its own distinguishing inquiry, discriminator suffixes changing subsequent native requests, and acquired construction edges changing candidate generation. CalibrationRenewal already changes actual reference records and later repair; LearnedProcedureTransmission already reconstructs learned organization. P99 does not rediscover these. It provides a new shared-spine, same-history instance of the narrower *method → fresh reference acquisition → installed registration → later use* connection. No unproved map from their distinct material budgets into this instance is asserted. / 旧查询选择、区分后缀、构造边、校准及重构成果继续有效。本次新增的是主干中方法修订与新参考取得、装置及后续使用的同历史连接，没有把不同旧材料账仅凭改名拼接。
 
-### The actual handoffs / 实际交接
+<a id="the-actual-handoffs--实际交接"></a>
+### The actual handoffs
 
 The retained method is a finite sequence of addressed contacts. A performed undertaking sends its target through the installed encoding and actual channel, and a faithful returned result supplies a mismatch address. `propose` prepends that acquired address to the retained sequence. This is a deliberately simple, nonminimal plan revision; repeated failure at an existing address can repeat its reference contacts. The rule and contact primitives remain supplied, while the particular address sequence is produced from the encountered receipts. There is no fixed two-method label and no channel inspection by the proposer.
 
-保留的方法是一段有地址的接触序列。活动经已安装编码和实际通道执行，可靠的实际返回在失配时留下地址。`propose` 把这个已取得地址接入下一计划开头；它是简单、非最小的修订法，同一地址再次失败会重复其参考接触。修订规则及接触原语给定，但实际地址序列由经历中的回执形成，没有由分析者传入两个方法标签或隐藏的通道答案。
-
 `revision_binds_plan` applies to every address: revision writes the generated method into the next pending sequence and preserves the old installed apparatus until commitment. `choose` consumes this pending sequence; `.probe` does not receive an externally selected address. The next contact acquires both Boolean reference responses through the named channel, removes that address from the pending plan, and retains the bound pair (`probe_binds_both_references`). Installation is blocked until the plan is complete and every pair separates its two references. It then installs those fresh records (`install_binds_fresh`), rather than inserting a correct key supplied by the proof.
-
-通用交接定理说明：方法进入待执行序列；控制器按该序列取得两个参考值，保存其地址绑定；计划未执行完或任一参考对不分离，就不能安装。安装消费本轮取得的记录，不由证明直接填写“正确参数”。旧装置保留到提交完成，这也允许检查停住时旧能力仍在。
 
 For a stable Boolean channel, separated reference responses suffice to construct an encoding correct at both possible targets (`checked_pair_correct`). The installed contact domain defines the registration used in `first_installed_choice` and `second_installed_choice`; these are on the existing `Learning.Training.Through`, not on a renamed selection concept. `old_selections_remain` directly uses P93's `Registration.keeps_iff`. The witness also checks actual encoding and response (`installed_response_correct`, `first_use_succeeds`, `second_use_succeeds`), so the expressibility statement is not substituted for actual use.
 
-在给定的稳定二值通道内，分离的两项参考足以支持两种目标的正确编码；装置实际安装的接触域才进入登记定义。旧选择保留直接复用 P93，新增区分接回原有 `Through`，并分别检查实际编码及回应，避免把“能表达”当作“已使用”。
+<a id="one-continuous-history-and-its-controls--一条连续历史及对照"></a>
+### One continuous history and its controls
 
-### One continuous history and its controls / 一条连续历史及对照
-
-| Stage / 阶段 | Retained method / 保留方法 | Actual effect / 实际后果 | Remaining / spent support / 剩余／已耗支持 |
+| Stage | Retained method | Actual effect | Remaining / spent support / 剩余／已耗支持 |
 |---|---|---|---|
-| Initial / 初始 | `[]` | No installed references; both represented channels reverse the sent bit / 尚无参考，两处通道均翻转输入 | 30 / 0 |
-| First failed use / 第一次失败 | `[]` | Target true returns false at address 0; acquire receipt 0 / 地址0取得失败回执 | 29 / 1 |
-| First policy repair / 第一次修订 | `[0]` | Generate plan, acquire two references, check and install / 生成计划、取得参考、检查、安装 | 25 / 5 |
-| Use and further failure / 使用及再次失败 | `[0]` | Address 0 now succeeds; address 1 still fails and supplies receipt 1 / 0成功，1失败并留下回执 | 23 / 7 |
-| Second policy repair / 第二次修订 | `[1,0]` | Acquire both new and retained contacts afresh, check and install / 重新取得新增及既有接触参考，检查并安装 | 17 / 13 |
-| Later actual use / 后续实际使用 | `[1,0]` | Both addresses succeed / 两处均成功 | 15 / 15 |
+| Initial | `[]` | No installed references; both represented channels reverse the sent bit | 30 / 0 |
+| First failed use | `[]` | Target true returns false at address 0; acquire receipt 0 | 29 / 1 |
+| First policy repair | `[0]` | Generate plan, acquire two references, check and install | 25 / 5 |
+| Use and further failure | `[0]` | Address 0 now succeeds; address 1 still fails and supplies receipt 1 | 23 / 7 |
+| Second policy repair | `[1,0]` | Acquire both new and retained contacts afresh, check and install | 17 / 13 |
+| Later actual use | `[1,0]` | Both addresses succeed | 15 / 15 |
 
 `first_policy_repair` and `second_policy_repair` execute the same `choose`; `complete_history` is a shared `Trace` with all intermediate states. The ordinary sequence of undertakings is supplied; autonomous choice of every undertaking is not proved. `step_account` and `trace_account` preserve remaining-plus-spent support for arbitrary admitted steps/traces; each ordinary operation costs one unit and each two-reference contact costs two. These are declared local costs, not physical units or universal minima. No replenishment occurs in the witness.
 
-两轮修订都执行同一个控制器，完整历史复用共享 `Trace`；普通任务的到达次序仍给定。任意已允许步骤／历史均保留剩余加已耗支持。一次普通操作计1、双参考接触计2，是公开的局部账，不是物理量单位或普遍下限；见证中没有补给。
-
 The second frozen-method control is particularly discriminating: after the same second failure it really executes the old `[0]` inspection plan, retains the first repaired contact and has more support remaining, yet address 1 still fails (`frozen_second_method_still_fails`). Erasing the acquired receipt prevents the controller from activating revision. Three remaining units pay for revision and both references but not installation: fresh information alone does not create a usable new apparatus. A constant channel consumes contact support and fails the separation check. Changing the channel after checking can restore actual failure and a fresh mismatch receipt. These are failures in the stated process, not unsupported toggles of an unrelated verdict.
 
-第二次冻结对照确实执行旧计划 `[0]`、保住第一次修复、拥有更多剩余支持，却仍在1失败。擦除回执使修订无法启动；3单位支持够修改计划和取得参考，却不够安装；常值通道取得参考后仍无法通过分离检查；检查后改变通道会再次导致真实失败。取得信息、生成候选、安装装置和有效执行各有自己的条件。
-
-### Author counterreview and exact completion / 作者反审与准确结项
+<a id="author-counterreview-and-exact-completion--作者反审与准确结项"></a>
+### Author counterreview and exact completion
 
 **Has “method revision” merely been renamed?** The changed sequence is read to select subsequent actual contacts; fresh records and installed keys differ; freezing that sequence preserves the old failure despite adequate support. Thus the method field is operative. The novelty is relative to the current method and installed apparatus, not impossibility under the encompassing transition law. The Boolean contact primitive and accessible address space were already available locally. A fixed law can generate changing internally retained programs; requiring the law itself to be learned at every level would add a different, endless obligation.
 
-**方法修订只是改名吗？** 修改的序列实际决定后续接触，接触产生新的安装记录；冻结它会保留失败。候选的新颖性相对于当前方法和装置，并非相对于全部可达世界。地址空间、参考原语及序列组合律仍给定；固定总律不取消内部方法的真实改变，也不自动解释原语自身的形成。
-
 **Is the revision rule itself acquired?** No. Prepending the failed address, the separation check, faithful feedback, reference binding, retention, assembly/commit capability, sufficient support and the two-point/stable-use correspondence remain premises. The model changes where the next apparatus obtains and tests references; it does not derive an unrestricted language for inventing sensors, an acquired reliability criterion, or a rule that rewrites this compiler. The earlier lost-record and common-fault limits therefore remain relevant. A misleading return can conceal the need for revision, and a non-Boolean or changing relation can defeat the supplied test. Those are sharper limits than saying all observation or method revision remains absent.
-
-**修订律也被取得了吗？** 没有。插入失败地址、分离检查、可靠回返、参考绑定、留存、装配／提交能力和支持仍是前提。本次改变下一套装置到哪里取得和检查参考，不声称已发明任意传感原语、取得全部可靠性标准或修改这个编译规则。误导的回返仍可掩盖修订需要，超出二值域或时变关系也可击败给定检查。不能因此重新把一切观察／方法修订列作不存在。
 
 **Completion.** The requested local interface is now closed conditionally: **actual acquired consequence → changed reference-construction plan → fresh checked apparatus → changed available distinctions and later response → another revision**, within one continuing supported history. It is a new instance on the shared spine, not a verified concatenation of every older chemical/network model. Generic meta-attraction, basin/approach diagnosis, physical validation, normative warrant and the stronger premise-free foundation remain distinct. P99 does not certify them or replace completed earlier results.
 
-**结项。** 本次要求的局部接口已在明确条件下接通：实际取得的后果改变下一参考构造计划，计划形成新检查记录及装置，装置改变后续可用区分和真实回应，并再次修订。它是共同主干内的新实例，不能冒充所有旧化学／网络模型的已证拼接；通用吸引、盆地与滑入诊断、物理验证、规范根据及更强的无实质前提目标分别保留。
-
-
 **P99 initial proof checkpoint / 首次证明检查。** The retained [core receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T120722.092811Z/verification.json) passes **42 new theorems / 67 source-declaration audits, all empty axiom reports**. The 80-module pure closure builds from the prelude; 12 steps ran and 353 reused identical passed inputs. The [peripheral compatibility receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T121014.405728Z/verification.json) also passes. These are actual Lean 4.29.1 checks, not metadata substitutes. Empty kernel axiom reports do not remove the supplied scientific premises. This is author proof checking and counterreview, without independent-agent or empirical validation. / 核心与外围均实际通过检查；新定理数与继承包分列，空公理报告不消除实质前提，未宣称独立代理验收或物理实验。
-
 
 **Final counterreview: registration scope and actual drift / 最终反审：登记范围与实际漂移。** The installed reference registration is one differentiated reading within the whole activity; it is not the system's entire access. Ordinary faithful return already provides the mismatch that activates reconstruction. Thus a new installed selection is unavailable through the *old installed reference domain*, not unknowable through every relationship. This preserves the reason that a blind installed reference reading can still be revised through acquired feedback. / 已安装参考登记只是整体活动内的一种分化读取，不是系统全部接触。可靠的活动回返提供启动修订的失配；新选择此前不能经旧参考登记表达，不等于此前在任何关系下都不可知。这里没有让全盲输入自己生出差异。
 
-The final source strengthens the drift control: `.drift` is an admitted, charged event of the same Process, followed by actual use of the previously checked apparatus. `drift_has_actual_history` supplies their shared Trace; `drift_after_check_can_fail` records the failure, acquired mismatch and remaining/spent account 23/7. The earlier 42-theorem checkpoint only tested use from an altered channel configuration. That earlier source and receipt remain frozen; the final source adds the missing drift transition, rather than describing an analyst's state replacement as an executed history. The drift primitive and its local charge are explicit supplied relations, not a derivation of environmental change from nothing. / 最终源文件把漂移也写成同一过程内被允许且有消耗的实际步骤，然后使用先前检查的装置；新增历史证明保留真实失败、再次失配及23／7支持账。首次42定理检查只从已改通道的配置测试使用，旧源及回执保留；最终补上漂移转移本身，不把分析者替换配置冒充已执行历史。漂移原语及成本仍是明确给定的局部关系。
-
+The final source strengthens the drift control: `.drift` is an admitted, charged event of the same Process, followed by actual use of the previously checked apparatus. `drift_has_actual_history` supplies their shared Trace; `drift_after_check_can_fail` records the failure, acquired mismatch and remaining/spent account 23/7. The earlier 42-theorem checkpoint only tested use from an altered channel configuration. That earlier source and receipt remain frozen; the final source adds the missing drift transition, rather than describing an analyst's state replacement as an executed history. The drift primitive and its local charge are explicit supplied relations, not a derivation of environmental change from nothing.
 
 **Final retained evidence / 最终冻结证据。** The strengthened [core receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122414.398959Z/verification.json) passes **43 theorems / 68 source-declaration audits, all empty axiom reports**, including `drift_has_actual_history`. The [final peripheral compatibility receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T122528.526650Z/verification.json) also passes. Both frozen checkpoints remain; the canonical record binds the final source to the final receipt. The infrastructure suite passed all 49 tests; scoped documentary checks remain distinct from proof checking. / 最终核心及外围均通过，新增实际漂移历史证明；两次冻结检查均保留，当前成果以最终源版本绑定最终回执。49项基础设施测试通过，文献一致性与证明检查分列。
 
 <a id="completion-ledger"></a>
-## P103: full integration and supported recurring revision / 完整整合与受支持的反复修订
+<a id="p103-full-integration-and-supported-recurring-revision--完整整合与受支持的反复修订"></a>
+## P103: full integration and supported recurring revision
 
 **Authority / 授权。** Ren now asks to finish the whole task and commit to main; [the exact instruction and scope](../../../../sources/15-codex-theory-conversations/2026-10-13-meta-attractor-completion-and-main.md) preserve that request. This completes the meta-attractor integration begun here, without taking over the independently authorized normative, wisdom or scientific-foundation sessions. The current account belongs to the same Becoming theory; separate evidence obligations do not create separate ontologies.
 
 **Reused results.** `selection-under-registration-revision`, `consequence-revised-reference-plan`, `generalization-through-lumping`, `process-and-frame-as-readings`, and the original formation, reproduction, diagnosis, admission, testing, discovery and expanding-inquiry studies. The mathematical reconciliation ledger above remains authoritative for its selected historical formulations. The older finite-kernel [closure study](../../../../experiments/history/2026-10-05-general-framework/closure-study/README.md) already distinguishes available correction from reproduced correction, and retention from recovery; its historical proofs, numerical checks and empirical limits are not recounted as new Lean results.
 
 **Exact delta.** [ContinuingRevision](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean) executes P99's actual operations inside a supported successor process. `formation_enters` starts with no method or installed reference and reaches the recurrent organization through acquired failure, construction and use. `one_cycle` proves the actual seven-operation cycle for every carrier index, and `all_cycles` concatenates the exact endpoint states. `continuing` is an infinite shared `Run` restricted by the same `choose`; `clock_step`, `run_at_cycle`, `run_installs` and `unbounded_succession` verify its native steps and successive carriers. This supplies the previously absent continuing connection, rather than inferring recurrence from P99's two finite repairs.
-
-**新增量。** 从空方法、空装置起步，形成过程实际到达接续组织；每轮失配改变方法、取得新参考并成功使用，实际生产回返支承更替与下一轮修订。共同 `Trace` 检查精确交接，共同 `Run` 给出任意时刻的已允许执行。时钟不提供新的行为、信息或支持；每一步另证符合实际控制器。不是由“两次成功”直接外推无限持续。
 
 ### The same history, including its support
 
@@ -228,8 +203,6 @@ The final source strengthens the drift control: `.drift` is an admitted, charged
 | `ready (n+1)` | Replacement consumes one unit, realizes nine, consumes the claim and retains the next acquired sample | 9 / `15+9n` / `9+9n` |
 
 `step_account` and `trace_account` track all actual native costs, replacement costs and receipts for every admitted trace in the process family. The productive return is not a reset: expenditure and receipts accumulate independently. Its scientific interpretation is an open productive relationship supporting the counted installation. There is no claim that a finite closed supply renews forever or that nine is a universal physical quantity. The addressed locus changes its installed reference and continuation; the carrier index alone is not counted as evidence of physical replacement.
-
-支承账逐步登记消耗、更替及回返；累计取得与累计消耗均不清零。承载更替的对应依赖新位置、保留参考与实际使用关系的变化，不能仅凭编号增加宣称物质重建。生产关系在本模型中给定，并向被计数的装置供给支持；这些条件属于表示的现实关系，不是被放到现实之外的原因。
 
 ### Producer outputs and consumer inputs
 
@@ -253,8 +226,6 @@ The final source strengthens the drift control: `.drift` is an admitted, charged
 5. **Does this concatenate all historical models?** No. The new formal join consumes P99's exact operations and selection lemmas. Earlier chemical, network and institutional histories are independent conditional realizations within one account, with explicit correspondences and different supplied laws. Declaring those material laws identical would introduce a false claim, not complete the theory.
 6. **Does completeness require another controller that revises this compiler?** No such requirement follows from Ren's adopted definition or the original integration request. Internally retained methods genuinely change while a fixed encompassing law describes their change. The disclosed grammar, stable reference domain and productive support remain scientific hypotheses. Arbitrary sensor invention, universal self-certification and guaranteed correction under every possible future are stronger claims; earlier counterexamples forbid treating them as consequences of the current account.
 
-**中文反审结论。** 这里检验的是实际形成与回返的组织，不靠“好结果”“可修订”或编号标签补上因果。固定总律不抹去内部方法的形成，也不证明该总律的普遍对应。切断回返是同一过程族的配对机制干预，耗尽储备和冻结方法则是原过程中的实际替代历史。正面接续、真实损失和失败共同构成解释；不存在一个自动获准的普遍好方向。
-
 ### Completion against the original request
 
 - **Place in the generative model:** a recurrent organization of one unfolding, with consequence-dependent reproduction of selection conditions; it is neither all becoming nor only generative expansion.
@@ -266,7 +237,5 @@ The final source strengthens the drift control: `.drift` is an admitted, charged
 - **Older formulations:** the selected source claims have a retain/restrict/correct/withdraw disposition. No current foundational claim relies on the rejected derivative, covariance, leading-mode or stability shortcuts. Original source bytes and unmigrated historical results retain their scopes.
 
 This completes the requested theoretical integration, including the previously missing sustained connection. It does not claim completion of every empirical application, all historical ODE proofs, arbitrary physical innovation or the separately authorized full normative/zero-premise programme. Those are distinct conclusions requiring their own evidence, not reasons to reset the completed mechanism work to “missing.” A new counterexample to the disclosed local claims or a failed producer/consumer correspondence would reopen the affected result.
-
-**结项。** 本会话完整解释已经覆盖形成、调节分化、后果对下一构造方法及候选的改变、实际使用、跨承载接续、损失与关闭；旧公式的错误和各项成立条件已逐项保留。完成的不是把所有情形判成同一种吸引，而是一套统一、可检验且有准确边界的理论整合。新的反例或对应失败会修订受影响结论，不因“已完成”标签而被排除。
 
 **P103 retained verification / 保存的验证。** [Core 20261013T125907.288531Z](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125907.288531Z/verification.json) checks **36 new theorems / 62 source declarations**, all with empty axiom reports, and compiles the pure core from the prelude. [Peripheral compatibility 20261013T130233.156038Z](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T130233.156038Z/verification.json) also passes. Earlier P93/P99 source-bound checks remain separate evidence; this is an author check and counterreview, not independent-agent acceptance or empirical validation. / 核心与外围实际通过，继承数量不计作本次新增；空公理依赖不消除公开的科学前提。

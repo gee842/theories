@@ -1,51 +1,21 @@
-# P47 独立审查：登记与检验 / Independent review of P47: registration and testing
+<a id="p47-独立审查登记与检验--independent-review-of-p47-registration-and-testing"></a>
+# Independent review of P47: registration and testing
 
-2026-10-11，Asia/Bangkok。**AI 独立审查（第十六次；另一 agent，未参与撰写）。**
+> Some passages exist only in the [Chinese edition](BECOMING-P49-REVIEW.zh.md): sections “Independent review of P47: registration and testing”; “摘要”; “F4（乙，中等）所及闭包的传递性在“其余交换不变”的比较中不起作用；已检查回应性版本 / The closure's transitivity is idle in the fixed-rest comparison; a responsive version is checked”.
 
-审查对象 / Object:
-- `scratchpad/p47/build/Becoming/Testing.lean`（P47，`Becoming.Testing`），sha256 `6ba242ddc8a927a97eca3ea38c071ae5a68b40da68e188b8e0ca3abe50f9646a`，696 行。
-- 与工作树 `.claude/worktrees/p47-testing/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean` 逐字节相同。构建目录中的其余模块（含 P42 `Becoming.Feedback`，c9c219e3）也与工作树逐字节相同。
-- 背景 / Context：计划 `/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md`（工作树中未跟踪 / untracked in the worktree），Ren 的原话 / Ren's words `sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md`，`AGENTS.md`，`theories/becoming/chapters/NONDUAL-METHOD.md`。
+Object:
 
 本审查只在 `review/` 下建文件。没有修改仓库文件，没有运行 make 目标或仓库检查器，没有改变 git 状态。只做了只读的 `git status`、`git diff`、`git show`。
 Only files under `review/` were created. No repository file was edited, no make target or repository checker was run, and git state was not changed. Only read-only `git status`, `git diff` and `git show` were used.
 
-分类（同此前审查）/ Classification, as in earlier reviews:
-- (甲) 表示省略了某一关系 / a relation omitted by the representation;
-- (乙) 未解决的推论或说过了头 / an unresolved inference or an overclaim;
-- (丙) 满足所述条件的真实反例 / a genuine counterexample under the stated conditions.
+Classification, as in earlier reviews:
+- a relation omitted by the representation;
+- an unresolved inference or an overclaim;
+- a genuine counterexample under the stated conditions.
 
 ---
 
-## 摘要
-
-**形式状态。**
-- Lean 4.29.1（`f72c35b3`）。模块副本重新编译，没有错误也没有警告。
-- 遍历模块的全部常量做公理审计：127 个，公理报告都是空的（`Audit.lean`）。
-- 每个定理都证明了它自己的陈述。问题都在散文、读法、名字和一个假设的范围上，不在证明上。
-- 探针共 192 个常量，都没有公理（`ProbeAudit.lean`）。另有 `ProbeNames.lean`，故意示范 `nomatch` 证明会带入 `propext`。
-
-**最重要的发现。**
-1. **（乙，重大）视界读法说过了头。** “关于整个运行的主张不被任何有限记录检验”，“每个有限的更新检验都在一侧出错”，这两句只在延续开放时成立（`Renewable` 的见证过程）。
-   - 对一切历史定义的 `Refutes` 而言，它们平凡成立（C2）。
-   - 相对于一个模型，它们是假的：模型固定了交换，观测储量的形成在第一步就否证关于整个运行的假主张（C3）。
-   - 相对于模型的否证，就是对“模型且主张”这个合取的否证（C6，迪昂–奎因）。这样的否证可错：模型错了，就否证真的主张（C4）。而登记本身可以否证模型（C4b）。
-2. **（甲／丙，重大）阈下不见依赖 `RespondsThrough`。** 这一假设要求：凡 `g` 所登记的条件，所有形成在其上的总交换都只随 `g` 的登记而变。它排除了直接回应储量的他者，也排除了随水平而变的更新。
-   - 在 `Attracting` 中，较丰的储量招来取用者，较丰的网反而先断（A7）。
-   - 读法“失控是收益被登记、损失要到断裂才被登记”，以及 README 那一行“较丰储量的盈余只在较贫者不再支持之后才被动用”，都没有写出这一假设。
-3. **（乙，重大）自身水平的决定。** 参数化的 `obs` 是对的。但把“在一类读法中自身水平算作已登记”当作默认，是较弱的选择。
-   - 脊柱已经有结构性的关系：`Web.SelfBearing`（`Becoming.Roles`），即依存于自身的水平。经由它，自身水平像其他条件一样经阈值登记（F3）。
-   - `Prey` 中“捕食者在影响闭包之外”只是因为猎物不依存于自身。猎物的水平与它的活动无关，捕食者以零水平活跃（F2）。这是省略了一个关系。
-   - 在 `ownStanding` 之下，对自身耗竭的阈下不见无法表达（F1）。而这恰是失控的核心情形。
-4. **（乙，中等）所及闭包的传递性在“其余交换不变”的比较中不起作用。** 在其中，起作用的只是直接交换。已检查一个回应性的版本（B1）：闭包内每个成员只经自己的登记回应时，闭包之外的差别永不在闭包之内被登记。它把 `unregistered_beyond_registration` 与 `Clearing.alike_for_clearer` 都作为实例包含进来（B3、B4）。
-5. **（乙，中等）阈值定理可以更精确。**
-   - 关于第二个网的 `requires` 与 `need` 的假设是空转的（A0）。
-   - 可以不用 `DecidableEq`，并允许多个储量的差别（A1、A2）。
-   - 起作用的断裂是两网支持的**分岔**（较丰者支持、较贫者不支持），不是较贫者的失败。两者同时失败时，储量差别保持不动（A4、A6）。
-   - 一步上的精确刻画：未观测的条件只登记它是否满足需要，被观测的条件登记它的水平（A8）。
-6. **（出处，中等）** “Ren 于 10 月 11 日接受了这些读法”，以及“Ren 请 AI 决定自身水平”，都没有保存在任何来源文件中。计划仍写“待 Ren”。
-
-**保留什么。** 全部 Lean 都保留。`Web.Refutes` 是对的“只凭记录”的否证概念，需要并列一个相对于模型的版本。阈值三定理在其假设下正确，`Gated` 是一个非平凡的见证。所及部分正确，作为 P42 的推广，增量不大。`tested_by_dweller` 正确且非空。`finite_reading_withholds_renewal` 正确，但它是一个推论（E），不是新的结果。
+<a id="摘要"></a>
 
 ## English summary
 
@@ -81,7 +51,8 @@ Only files under `review/` were created. No repository file was edited, no make 
 
 ---
 
-## 0. 范围与方法 / Scope and method
+<a id="0-范围与方法--scope-and-method"></a>
+## 0. Scope and method
 
 I read the module in full. I also read:
 - the parts of `Becoming.Feedback` it uses: closures, `support_agrees`, `agrees_of_quiet`, `admits_unreached`, `unregistered_beyond_influence`, and the `Clearing` and `Margin` witnesses;
@@ -95,7 +66,8 @@ Probes are run with
 `cd review && LEAN_PATH=<build> ~/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean <Probe>.lean`.
 For the combined audit, the probe files were compiled with `-o` into `review/olean/`, which holds copies of the probes and their `.olean` files. Nothing was written to the build directory.
 
-## 1. 形式复核 / Formal recheck
+<a id="1-形式复核--formal-recheck"></a>
+## 1. Formal recheck
 
 - **Identical sources.** Every `Becoming/*.lean` in the scratch build is byte-identical to the worktree. `Testing.lean` has the sha256 above.
 - **Recompilation.** `TestingCopy.lean` (the same bytes) compiles against the build with no output.
@@ -117,11 +89,11 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
 
 ---
 
-## 2. 发现 / Findings
+<a id="2-发现--findings"></a>
+## 2. Findings
 
-### F1（乙，重大）视界读法：关于整个运行的主张，只在延续开放时不被有限记录判定 / The horizon reading: whole-run claims are undecided by a finite record only where the continuation is open
-
-**中文。** 模块说“每个有限的更新检验都在一侧出错”，读法说“关于整个运行的主张不被任何有限记录检验”。所引的定理是 `Renewable.prefix_does_not_decide`：在一个特定过程中，行动不被前缀固定。`Becoming.Horizon` 自己说：“在 `Renewable` 中，动力学由行动固定，所以没有前缀判定的是尚待采取的行动。”在 `Refutes` 的意义下（量化一切水平历史），尾部主张平凡地不被否证（C2）。相对于固定交换的模型，观测储量的形成在第 0 步就否证“储量会降到零”这一假主张（C3）。这时否证是对“模型且主张”的否证（C6），模型错误时会否证真主张（C4），而登记可以否证模型本身（C4b）。所以这条读法应改为：延续开放时，有限记录不判定整个运行；模型使之可检验，代价是检验只相对于模型，而模型自己必须可被登记否证。
+<a id="f1乙重大视界读法关于整个运行的主张只在延续开放时不被有限记录判定--the-horizon-reading-whole-run-claims-are-undecided-by-a-finite-record-only-where-the-continuation-is-open"></a>
+### The horizon reading: whole-run claims are undecided by a finite record only where the continuation is open
 
 **English.**
 - **Location.**
@@ -143,9 +115,8 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
   - Add `RefutesWithin` and C3–C6 to the module.
 - **Probes.** `ProbeTesting.lean`: `tail_untested`, `model_refutes_tail`, `Stationary.model_error`, `Stationary.model_refuted`, `refutesWithin_iff_conjunction`, `Becoming.Renewable.no_exact_finite_reading`. All are free of axioms.
 
-### F2（甲／丙，重大）阈下不见取决于 `RespondsThrough`，读法和 README 没有写出它 / Threshold blindness rests on `RespondsThrough`, which the readings and README omit
-
-**中文。** `RespondsThrough` 不是 `g` 的回应方式，而是一个关于整个环境的假设：凡 `g` 登记的条件，所有在场形成在其上的总取用与总给予，在 `g` 登记相同时都相同。它排除了两类常见情形：其他形成直接回应储量的水平（开放渔场中丰富的鱼群招来更多船只），以及随水平而变的更新（逻辑斯谛再生）。`Attracting` 中，较丰的网（三单位）招来一个取用两单位的形成，`g` 在第 1 步就不被支持，而较贫的网仍支持它：较丰者先断（A7）。这里假设不成立，模块的定理不适用，所以不是对定理的反例；但它是对未加限定的读法的反例：“失控是收益被登记、损失直到断裂才被登记”，以及 README 那行“较丰储量的盈余只在较贫者不再支持之后才被动用”。
+<a id="f2甲丙重大阈下不见取决于-respondsthrough读法和-readme-没有写出它--threshold-blindness-rests-on-respondsthrough-which-the-readings-and-readme-omit"></a>
+### Threshold blindness rests on `RespondsThrough`, which the readings and README omit
 
 **English.**
 - **Location.**
@@ -168,12 +139,8 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
   - Preserve `Attracting` as the counterexample that marks the scope: where others respond to the stock itself, a larger stock can end `g` sooner.
 - **Probe.** `ProbeThreshold.lean`: `Attracting.richer_breaks_first`, free of axioms.
 
-### F3（乙，重大）自身水平应经“依存于自身”登记，而非默认为完全的量度；`Prey` 依赖一个省略 / Own standing should register through self-bearing, not as a default gauge; `Prey` rests on an omission
-
-**中文。** 见 §6。要点：
-- 脊柱已有 `Web.SelfBearing`（依存于自身水平，需要为正）。在其下，自身水平与其他条件一样，只经支持阈值登记（`SelfPrey`，F3 探针）：一口一单位（二到一）在阈值之上，不被登记；一口两单位经支持登记；捕食者在影响闭包之内。
-- `Prey` 的“捕食者在猎物的影响闭包之外”只因猎物不依存于自身。猎物在有无被咬时每一步都被支持、活跃（F2 探针），所以被登记的差别对猎物自己没有任何作用；捕食者以零水平活跃（不 `Embodied`）。
-- 在 `ownStanding` 下，一个其储量就是自身水平的形成（如 `Gauged`，F1 探针）永不阈下不见；对自身的耗竭无法表达阈下不见，而同一储量若表示为所持条件（`Reserve` 的 `hold f`）则有阈下不见：登记取决于切分方式。
+<a id="f3乙重大自身水平应经依存于自身登记而非默认为完全的量度prey-依赖一个省略--own-standing-should-register-through-self-bearing-not-as-a-default-gauge-prey-rests-on-an-omission"></a>
+### Own standing should register through self-bearing, not as a default gauge; `Prey` rests on an omission
 
 **English.**
 - **Location.**
@@ -200,9 +167,8 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
   - Add to "What is not derived": "that a formation gauges its own standing".
 - **Probes.** `ProbeStanding.lean`: `Gauged_own`, `Prey_omits`, `SelfPrey.within_influence`, `SelfPrey.threshold_on_oneself`. All are free of axioms.
 
-### F4（乙，中等）所及闭包的传递性在“其余交换不变”的比较中不起作用；已检查回应性版本 / The closure's transitivity is idle in the fixed-rest comparison; a responsive version is checked
-
-**中文。** `unregistered_beyond_registration` 用扣留水平比较，其余交换不变。在这一比较中，一个形成登记什么只取决于直接与它所登记者交换的成员（`admits_unreached`、`agrees_of_quiet`）；闭包只是让陈述对一个区域一致成立。P42 审查对影响闭包指出了同一点（P42 F2）。B1 给出闭包真正起作用的比较：两个平衡的流，同样的在场形成；一个区域在两个流中都对“经所登记者受影响”封闭；起点在成员所登记的一切上相同；每个成员在成员所登记的条件上的取用与给予只随它自己的登记而变。那么每个成员在每一步都同样登记，不论闭包之外的形成做什么、成员在无人登记的条件上做什么。P47 的定理（B3）与 `alike_for_clearer`（B4）都是它的实例：清除者的清除，是在其闭包中无人登记的条件上的行动。
+<a id="f4乙中等所及闭包的传递性在其余交换不变的比较中不起作用已检查回应性版本--the-closures-transitivity-is-idle-in-the-fixed-rest-comparison-a-responsive-version-is-checked"></a>
+### The closure's transitivity is idle in the fixed-rest comparison; a responsive version is checked
 
 **English.**
 - **Location.**
@@ -231,9 +197,9 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
   - Read the closure as the scope of registration where the members respond.
 - **Probe.** `ProbeReach.lean`, all 37 constants free of axioms.
 
-### F5（乙，中等）阈值定理可以更精确：断裂是分岔 / The threshold theorem sharpens: the break is a divergence
+<a id="f5乙中等阈值定理可以更精确断裂是分岔--the-threshold-theorem-sharpens-the-break-is-a-divergence"></a>
+### The threshold theorem sharpens: the break is a divergence
 
-**English.** (中文要点：第二个网的需要假设空转；无需 `DecidableEq`、可多储量；储量差别只在两网支持分岔之后改变；一步上的精确刻画。)
 - **Idle hypotheses (A0 `threshold_blind_no_webs`).** The module's theorem holds for every second web. The proof applies it to the second web with the first web's `requires` and `need` substituted: the conclusion mentions only `W.level`, `W'.level` and `W.Admits`. The agreement is needed only to read `W.Admits (W'.level t) t g` as `W'.Supported t g` (`Web.admits_iff_supported`).
 - **Differences kept (A1 `alike_keeps_difference`).** While `g` registers alike, exchange that follows registration keeps every difference on a registered condition exactly as it was at the start: `W'.level t e + W.level 0 e = W.level t e + W'.level 0 e`. A1 needs no start hypothesis and no `DecidableEq`.
 - **Several stocks (A2 `alike_while_poorer_supported`).** Suppose the second web is at least as rich on every registered condition at the start and alike on every observed one. Then `g` registers alike at every step before which the poorer web supported it. A2 needs no `DecidableEq`.
@@ -254,7 +220,8 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
   - Replace the theorem by A1, A2 and A4 with A8, and keep `threshold_blind` as the corollary A5.
 - **Probe.** `ProbeThreshold.lean`, all 67 constants free of axioms.
 
-### F6（乙，中等）`Refutes` 检验的是关于一条历史的主张；“我的行动造成什么”是反事实的 / `Refutes` tests claims about one history; what an act does is counterfactual
+<a id="f6乙中等refutes-检验的是关于一条历史的主张我的行动造成什么是反事实的--refutes-tests-claims-about-one-history-what-an-act-does-is-counterfactual"></a>
+### `Refutes` tests claims about one history; what an act does is counterfactual
 
 **English.**
 - **Location.** The Falsifiability reading (lines 70–72), and the plan's T3 ("the claim that the clearing ends the dweller").
@@ -266,7 +233,8 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
   - Mark intervention, varying one's own act and registering the difference, as the open route.
 - **Probes.** `ProbeTesting.lean`: `beyond_needs_model`, `ClearingModel.model_idles_registration`.
 
-### F7（出处，中等）“Ren 接受”没有来源记录 / Ren's acceptance is not in a preserved source
+<a id="f7出处中等ren-接受没有来源记录--rens-acceptance-is-not-in-a-preserved-source"></a>
+### Ren's acceptance is not in a preserved source
 
 - **Location.** Header line 61 ("Readings (the AI's, which Ren accepted on 11 October 2026)") and the README row ("accepted by Ren on 11 October 2026").
 - **What the sources contain.**
@@ -275,7 +243,8 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
   - No source file records the acceptance, or that Ren asked the AI to decide on own standing.
 - **Fix.** Before the module or README says "accepted by Ren", preserve Ren's words with date and provenance under `sources/15-codex-theory-conversations/`. AGENTS.md requires distinguishing Ren's words from AI elaboration, and preserving provenance. Until then, write "pending Ren". Record the own-standing choice as the AI's decision at Ren's request, citing the record.
 
-### F8（乙，次要）引错的定理 / Mis-citations
+<a id="f8乙次要引错的定理--mis-citations"></a>
+### Mis-citations
 
 - **Lines 53–56.** "while no response through support alone can (`Gauged.draws_surplus`)". The general impossibility is `surplus_untouched` (contrapositive). `Gauged.draws_surplus` shows only that this pair does not respond through support.
   - Its `RespondsThrough ... stock` holds **vacuously**: observing the stock, the formation registers the webs apart at step 0, so the hypothesis "alike up to t" never holds.
@@ -288,7 +257,8 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
   - Note that pooling presupposes a relation between the two (communication), which the representation does not have. Where it is represented, it is an exchange or an observation, and it widens the closure by B5.
 - **Lines 502–505.** `Gated.surplus_waits`: "registers the richer stock as the poorer up to the third step". At the third step (index 2) they differ. Say "before the third step".
 
-### F9（乙，次要）视界对偶是推论 / The horizon dual is a corollary
+<a id="f9乙次要视界对偶是推论--the-horizon-dual-is-a-corollary"></a>
+### The horizon dual is a corollary
 
 - **What follows from `finite_reading_credits_consumption` alone.**
   - A sound reading does not credit every renewing run (E `sound_not_complete`).
@@ -298,18 +268,21 @@ For the combined audit, the probe files were compiled with `-o` into `review/ole
 - **Already in prose.** The header of `Becoming.Horizon` states the dichotomy: "either withholds credit from a run that the whole-run reading classifies as renewing, or credits one it classifies as consuming".
 - **Fix.** Under AGENTS.md this is a corollary of the existing horizon result, not an independent result. Record it there, with this delta. Consider stating `no_exact_finite_reading` as the headline.
 
-### F10（次要）对 P42 的复用 / Reuse of P42
+<a id="f10次要对-p42-的复用--reuse-of-p42"></a>
+### Reuse of P42
 
 - **The delta of `unregistered_beyond_registration`.** It extends `unregistered_beyond_influence` with observed levels, through `agrees_of_quiet`. Under `supportOnly` it reduces to the P42 theorem (`withinRegistration_supportOnly`).
 - **Record.** It should be recorded as an extension of the P42 record, with the reused IDs and the delta (observation), not as an independent result. B1 (F4) is the substantive delta, if it is adopted.
 
-### F11（次要）`tested_by_dweller` 近乎定义 / `tested_by_dweller` is near-definitional
+<a id="f11次要tested_by_dweller-近乎定义--tested_by_dweller-is-near-definitional"></a>
+### `tested_by_dweller` is near-definitional
 
 - **The relation is correct.** The claim `Ended` is a claim about the dweller's admission, and the dweller's registration is its admission. So "the dweller refutes that it is ended" is close to definitional. "The clearer never refutes it" follows because the clearer registers nothing about the habitat.
 - **A more informative witness.** C5 `ClearingPooled.pooled`: in the spared world, at the third step, neither the clearer nor the dweller refutes "the dweller or the clearer is not admitted", and the pair does. That is testing that needs two positions.
 - **Fix.** Optionally add C5 beside `tested_by_dweller`.
 
-### F12（次要）缺少到 `Becoming.Inquiry` 的桥 / No bridge to `Becoming.Inquiry`
+<a id="f12次要缺少到-becominginquiry-的桥--no-bridge-to-becominginquiry"></a>
+### No bridge to `Becoming.Inquiry`
 
 The plan's T1 asked for this bridge. D gives it at the level of a judgment:
 - **Belief.** A formation's belief at `t` is the set of histories it registers alike with the actual up to `t`.
@@ -320,7 +293,8 @@ The plan's T1 asked for this bridge. D gives it at the level of a judgment:
 
 The multi-step `Scope` bridge, with a policy whose sensing factors through registration, remains open.
 
-### F13（次要）名字 / Names
+<a id="f13次要名字--names"></a>
+### Names
 
 See §5. In order of importance:
 - `RespondsThrough` misdescribes the hypothesis (F2).
@@ -335,7 +309,8 @@ See §5. In order of importance:
 
 ---
 
-## 3. 建议的更强定理 / Proposed stronger theorems (all checked)
+<a id="3-建议的更强定理--proposed-stronger-theorems-all-checked"></a>
+## 3. Proposed stronger theorems (all checked)
 
 | Id | Declaration | File | Statement in brief | Axioms |
 |---|---|---|---|---|
@@ -377,7 +352,8 @@ See §5. In order of importance:
 
 ---
 
-## 4. 读法评估 / The readings (question 7)
+<a id="4-读法评估--the-readings-question-7"></a>
+## 4. The readings (question 7)
 
 | Reading (module header / plan) | Assessment |
 |---|---|
@@ -397,7 +373,8 @@ See §5. In order of importance:
 
 ---
 
-## 5. 名字 / Names (question 8)
+<a id="5-名字--names-question-8"></a>
+## 5. Names (question 8)
 
 Ren's criteria (`2026-10-10-structural-names`, `zero-axiom-part-and-names`): formal, scientific and systems words; not social or financial; no limited-scope or dualist word where a structural one exists.
 
@@ -425,7 +402,8 @@ Ren's criteria (`2026-10-10-structural-names`, `zero-axiom-part-and-names`): for
 
 ---
 
-## 6. 自身水平的决定 / The decision on own standing (question 6)
+<a id="6-自身水平的决定--the-decision-on-own-standing-question-6"></a>
+## 6. The decision on own standing (question 6)
 
 **For counting own standing as registered (the module's choice).**
 - **One relatum.** In the one-kind reading, formation `g` and condition `g` are one relatum (`Becoming.Roles`). A change in `g`'s standing is a change in `g`. Denying that it registers in `g` could look like splitting the formation into an observer and its body.
@@ -451,7 +429,8 @@ Ren's criteria (`2026-10-10-structural-names`, `zero-axiom-part-and-names`): for
 
 ---
 
-## 7. 修正清单（按严重程度）/ Corrections, in order of severity
+<a id="7-修正清单按严重程度-corrections-in-order-of-severity"></a>
+## 7. Corrections, in order of severity
 
 1. **Horizon and falsifiability readings (F1).**
    - Restate both readings with the open-continuation scope.
@@ -487,7 +466,8 @@ Ren's criteria (`2026-10-10-structural-names`, `zero-axiom-part-and-names`): for
 
 ---
 
-## 8. 探针文件 / Probe files
+<a id="8-探针文件--probe-files"></a>
+## 8. Probe files
 
 All files are in `scratchpad/p47/review/`.
 

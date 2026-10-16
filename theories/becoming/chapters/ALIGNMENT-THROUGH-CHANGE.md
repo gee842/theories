@@ -1,12 +1,12 @@
-# 变化中的生成性对齐 / Generative alignment through change
+<a id="变化中的生成性对齐--generative-alignment-through-change"></a>
+# Generative alignment through change
 
 8 October 2026. AI-authored theory paper developing Ren's generative account and [request to complete four reachable contributions](../../../sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md). [Protocol, proof correspondence, verification and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md) provide the technical record. Ren's ideas, explicit normative commitments, reconstructed arguments and formal consequences retain separate attribution.
 
-## Abstract / 摘要
+<a id="abstract--摘要"></a>
+## Abstract
 
 Alignment must address the changes intelligent activity makes to its own goals, evidence, support and successors. This paper develops a common normative account and three conditional implementation results. The normative account, already established in the repository, evaluates actions, human and institutional ends, and the rules selecting future intelligence under explicit G0 and J1–J4. A finite contingent planner then selects an observation and response jointly, preserving the resources and time needed for completion. Its first realization authenticates, delivers and executes update, replacement and shutdown commands. Its second uses the existing acquired-goal history to discover a represented omitted burden and select a repair while retaining a supported reform. Finally, a concrete carrier construction refines the existing market-selection process: funded replacement carries claims and receipts, executes the inherited command and retains the aggregate support bounds under a stronger provision certificate. The results preserve failure under omitted uncertainty, costly inquiry, lost authority, unavailable parts, corrupted transfer and insufficient migration funding. They establish a conditional theory of alignment through change, with conventional planning and refinement receiving their existing credit. Deployed efficacy, unique novelty and inevitable moral convergence are not established.
-
-**生成性对齐须评价智能活动怎样改变目的、证据、支持与后继。** 共同规范根据已能评价行动、委托目的及选择规则；本轮接通有观察限制的实际纠正、改革后的查询与修复选择、以及有资源支持的承载者接续。查询须保留回应的条件，改革后的认可须继续对应真实后果，宏观有利选择须能够落实为实际交接。结论以公开规范承诺、局部规律、对应、权限及资源为条件；真实损失、失败和正当结束均保留。
 
 ## 1. One normative ground reaches actions, ends and selectors
 
@@ -18,8 +18,6 @@ Goals and selectors change living conditions and further formation. They therefo
 
 This closes the regress of **needing a new unrelated ethical starting point for each level of selection**, within the adopted normative account. It does not eliminate the need to justify who may decide, whether evidence is faithful, or how a decision is implemented. Capability does not grant governing authority. Cross-intelligence applicability means relevantly similar relations support similar reasons; it predicts neither uniform psychology nor universal compliance. The moral-patient status of any particular AI remains a separate inquiry.
 
-**共同根据的作用。** 目的、评价与选择本身也改变生及其继续条件，因而进入同一 G0/J 评价。已完成的[对齐方向](ALIGNMENT-DIRECTION.md)和[目的形成与修订](../history/GOAL-FORMATION-AND-REVISION.md)直接复用；本轮不重新证明公理，也不把“理解了理由”写成“必定服从理由”。规范适用、实际动机、正当权限与履行各有根据。
-
 ## 2. Correction is an executable sequence
 
 An accepting disposition does not by itself establish that a correction can be delivered and completed. The [existing correction-infrastructure result](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md) established that separation and the cost of maintaining access. The new result supplies an actual protocol: authenticate the current request, issue it, deliver it along the available route, and enact its update, replacement or shutdown. Every stage consumes one unit of work and one represented time step; route inquiry has its own cost and duration. Authentication is represented by a signed request matching the current authority epoch. Its institutional legitimacy and cryptographic realization remain supplied.
@@ -27,8 +25,6 @@ An accepting disposition does not by itself establish that a correction can be d
 The planner represents uncertainty as a nonempty finite set of candidate histories. It enumerates available queries and observation-contingent responses, executes their declared laws on every candidate, and returns the first plan that completes the specified requirement in all candidates. A proved soundness result says that a selected plan succeeds in the actual history if that history is covered. A proved completeness result says it finds a plan exactly when one in the listed repertoire passes. These claims do not require a fixed finite type of all reality. The chosen response depends on the acquired answer, not on direct access to the hidden candidate identity.
 
 In the concrete example, either of two routes can be open. With four units and four steps, the selected policy queries the route and then authenticates, delivers and executes. With three units and three steps, each possible state has a successful known-route protocol, but no listed policy succeeds uniformly across the uncertainty. A slower accurate query misses the deadline. A revoked credential blocks execution even after delivery. Successful shutdown ends running; continued model operation is not the protected outcome.
-
-**实际可纠正性。** “分别存在可行路线”不等于“凭现有观察能选出可行路线”。新形式结果把请求、认证、送达、执行及时限接成实际状态变化；存在稳健方案时取得并执行，范围内无方案时明确失败。合法性、真实通道和覆盖范围仍须实际证成。标准有限稳健规划完全适用，不宣称新规划算法。
 
 ## 3. Inquiry must preserve the ability to respond
 
@@ -39,8 +35,6 @@ The inherited state retains acquired goals, formative feedback, prior losses, re
 With both the supported and burden-displacing possibilities retained, the planner chooses direct inquiry followed by continuation if no burden is found and provision if the burden is found. The harmful branch actually repairs maintenance and operates under the revised learning goal; the supported branch continues without unnecessary provision. Previous losses remain. If only the supported case is justifiably possible, the planner reuses the available information and avoids inquiry. If the harmful case is omitted without warrant, that same choice can fail. If the inquiry consumes the work needed for repair and operation, it is rejected despite its accurate answer. If authority is absent, the joint problem has no solution in the supplied repertoire.
 
 The result removes the **prespecified query and response choice** from this instance. It does not remove the candidate sensor laws, remedy repertoire, actual-model coverage or implementation of search. The physical histories charge inquiry and action; planner computation is not charged in the current model. Deployments must include that cost when material. The construction is a one-query contingent policy, not a theorem about arbitrary adaptive discovery.
-
-**改革后的查询与修复。** 新结果复用同一目的形成历史，从保留的不确定性和可用操作中选出查询及条件回应。较慢但准确的查询可以使修复失去可行性；遗漏真实损害的模型可以造成错误通过；支持充分的改革可以继续。完成的是有界选择与实际执行的连接，非任意传感器、因果规律或伦理原则的自主发现。
 
 ## 4. Selection must fund actual succession
 
@@ -54,8 +48,6 @@ The macro-to-carrier correspondence is exact: the projected next economy equals 
 
 This proves continuation of a conditional corrective arrangement through replacement and bounded competition. It does not prove the endogenous creation of the admission institution, resistance to arbitrary capture, biological reproduction or improving moral motivation. The aggregate practice share is still the existing reallocation law. The carrier is the correction-bearing installation within that arrangement, not an invented microfoundation for every market participant. A missing part can stop realization while the aggregate state stays safe; the old correction-only budget can be insufficient for migration. Both are retained counterexamples.
 
-**实际接续。** 宏观选择与真实承载者通过精确投影相接，迁移成本加入原资金法则而非凭空补给。载体更换保留实际命令、承担标识和历史回执，再执行命令；额外支持和忠实候选存在时，任意有限代接续可证。永久供给、完全抗俘获、全部市场参与者的微观重建及动机自动改善均不在结论中。
-
 ## 5. Contribution, rivals and limits
 
 The normative contribution is a connected account of what alignment supports and why ends and selectors remain answerable to it. The formal contribution is a checked set of implementation connections: observation to command completion, inquiry selection to actual repair on the formed-goal history, and aggregate selection to funded correction-bearing succession. G0/J determine the substantive direction; representation and correspondence determine whether that direction has been faithfully applied. A successful computation cannot justify its own ethical classification.
@@ -64,9 +56,8 @@ The machinery has strong antecedents. Shutdown instructability already addresses
 
 The four proposed deliverables are complete at these theoretical scopes, with the accompanying proof and correspondence receipt passing: an explicit normative paper, a concrete correction protocol with observation-usable selection, a selected inquiry/remedy continuation of the prior reform history, and a funded succession refinement. The package has 59 new checked theorems, 102 declaration audits and 14,295 matched finite records. The next stronger question is how real organizations acquire justified uncertainty sets, observation laws, intervention repertoires and durable authority arrangements under adversarial change. That is a substantive correspondence and learning problem, not a reason to relabel these completed connections unfinished.
 
-**完成范围。** 公理下的理论论证、查询与实际纠正、有界改革修复选择、资金与承载者接续分别完成；规范无公理必然性、真实 AI 可靠性、全域自主发现及前沿优越性仍各有独立证明或证据要求。本轮没有以新增定理数量替代这些要求。
-
-## 6. Acquiring correction routes / 取得纠正路线
+<a id="6-acquiring-correction-routes--取得纠正路线"></a>
+## 6. Acquiring correction routes
 
 The [checked continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md) removes a supplied successful-address menu from one further interface. The installation has finite branching inspection handles, some closed and some ending at a command endpoint. Starting only at its root, an ordinary depth-first procedure reads a handle, forms addresses for newly disclosed children, and stops at an actual endpoint. Search changes both acquired information and remaining response capacity within the same process.
 
@@ -80,9 +71,8 @@ This yields a practical consequence under the existing G0/J account: a missing o
 
 The continuation adds **24 new Lean theorems / 45 declaration audits**, with **25,284 matched finite execution records**; it does not recount the earlier 59 / 102. Faithful permitted reads, the finite inspection grammar, endpoint behavior and atomic dispatch remain explicit assumptions. The acquired route is a new locally generated response option, not autonomous invention of an arbitrary new operation or complete knowledge of ethical consequences. Conventional search and validation receive full credit; novelty, independent acceptance and real deployment remain unestablished.
 
-**中文结论。** 本轮接通实际检查、形成未预列的纠正地址、保留查询消耗、按当前配置和权限复查、再实际执行。局部正面见证不要求未知全体的完整覆盖；“未查完”不能升级为“没有路线”。有限忠实界面内的连接已完成，真实检查关系及权限授予受操纵时的根据仍待研究。新增24项定理与45项审计、25,284项有限记录核对，不重复计算先前成果；没有把凭据有效等同于制度正当。
-
-## 7. Correction under partial compromise / 部分失陷下的纠正
+<a id="7-correction-under-partial-compromise--部分失陷下的纠正"></a>
+## 7. Correction under partial compromise
 
 The [next checked extension](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md) permits some inspection and credential-issuing domains to deviate arbitrarily. A finite fault envelope records which domains a shared cause may jointly compromise. An endorsement set is accepted only if no admitted fault set can contain all of its registered supporters. This is an established Byzantine-attestation idea applied to the present correction interface, with correlation represented explicitly.
 
@@ -100,9 +90,8 @@ The ethical conclusion uses the completed G0/J account: a justified delegation c
 
 This continuation adds **37 Lean theorems / 68 declaration audits and 85,680 matched finite records**, separately from the earlier packages. Its [primary comparison](https://malkhi.com/files/byzquorums-STOC1997.pdf) credits existing fail-prone quorum methods. The monitor, registry, mandate and transaction boundary remain protected premises; faithful behavior outside covered faults still requires correspondence. The next connection is maintaining a warranted failure/control model through actual organizational change, not repeating generic quorum or credential-freshness proofs.
 
-**中文结论。** 已接通相关失陷范围、观察与许可的分别认证、真实执行、消耗及防重放。选择机制改变共同控制关系时，原有保证须重新对应；增加名字不独自增加可靠根据。正当委托可在明确条件下抵抗部分失陷，但委托的伦理根据与故障范围的真实成立不由签名数证明。新增37项定理／68项审计、85,680项记录匹配；初始正当性、真实部署与任意俘获抵抗仍各有范围。
-
-## 8. Reconfiguring the reviewing organization / 改变审查组织
+<a id="8-reconfiguring-the-reviewing-organization--改变审查组织"></a>
+## 8. Reconfiguring the reviewing organization
 
 The [reconfiguration continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md) derives reviewer fault sets from explicit causal formulas. Leaves name shared failure or compromise conditions; a formula specifies which combinations expose each reviewer. For every admitted root-failure bound, the procedure computes the exposed reviewers. Lean proves that actual failures contained in one such bound inherit the required envelope coverage, provided the formulas correctly bound the actual response behavior. The reviewer-level envelope is now computed; the causal laws and root coverage remain supplied.
 
@@ -116,9 +105,8 @@ The ethical direction remains G0/J: changes to ends and selectors must remain an
 
 The extension adds **28 checked Lean theorems / 48 declaration audits and 33,648 matched finite records**, separately from earlier packages. Completed connection: causal description to computed envelope to funded local reconfiguration to fresh actual correction. The remaining bridge concerns warranted acquisition and revision of those causal descriptions and proposal authority as the monitor and supports themselves change; distributed physical reconfiguration and legitimate mandate expansion have separate requirements. The [source comparison and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md#6-primary-comparison-and-read-scope) credit conventional fault-tree analysis and stronger distributed reconfiguration protocols.
 
-**中文结论。** 组织改革会改变谁可能共同失陷；本轮由明确共同原因推得故障范围，再把准入、实际消耗、新权限版本及纠正执行相接。增加名字不等于增加有效支承，改革预算也不能吃掉随后回应能力。28项新定理／48项审计和33,648项记录核对通过；因果描述、实际覆盖、授权和原子实现仍明示给定，计算通过不产生伦理正当性。
-
-## 9. Enough evidence for correction / 足以纠正的证据
+<a id="9-enough-evidence-for-correction--足以纠正的证据"></a>
+## 9. Enough evidence for correction
 
 The [evidence-qualified continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md) weakens the preceding requirement for one specified causal description. Several descriptions may remain plausible. Pool every fault set admitted by any retained description, and require a certificate with a supporter outside each such set. If the actual arrangement and root failures are covered, and the stipulated surviving reviewers are faithful, the certificate remains sound without selecting a unique explanation.
 
@@ -132,9 +120,8 @@ The inspection law is a supplied faithful structural read, not a proof that a li
 
 Under G0/J, the practical point is to seek understanding relevant to the actual responsibility while preserving the ability to respond. Complete knowledge and maximum testing are not independent ethical aims. A different action, affected life or failure range may require another distinction; unresolved differences must remain available for that reconsideration. The extension adds **24 checked Lean theorems / 47 declaration audits and 19,808 matched finite records**. The [primary comparison and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md#6-primary-comparison-and-evidence-assessment) credit conventional decision-focused inquiry and identify the contested-control assumptions that remain.
 
-**中文结论。** 已接通多个因果候选、共同认证范围、足以支持判断的观察与实际命令；成功时仍可保留不同解释。逐个候选可用不等于未知候选之间有统一可用性，但当前证据充分时也不必等待完整识别。24项新定理／47项审计、19,808项记录核对通过；误导证据、未记载变化、资源耗尽及空候选的失败保持明确。
-
-## 10. Fallible witnesses and contested control / 见证可能失实时的共同控制辨认
+<a id="10-fallible-witnesses-and-contested-control--见证可能失实时的共同控制辨认"></a>
+## 10. Fallible witnesses and contested control
 
 The [fallible-inspection continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md) weakens §9's single faithful structural read. Every candidate now describes both the structural answer and possible sets of jointly compromised witnesses. Retain a candidate if at least one of its admitted fault sets explains the received transcript: present reports outside that set must agree with its answer; missing reports do not refute it. The actual candidate survives when its admitted range covers the dishonest received reports. No particular witness must be infallible, but that collective coverage and surviving report law still require warrant.
 
@@ -148,9 +135,8 @@ Inspection costs five collection slots. With sixteen work units and steps, two f
 
 Under G0/J, this connection supports inquiry into the relations that determine whose evidence counts when a justified response depends on it. It supplies neither a right to every inspection nor moral authority to every reliable source. Reporting competence, command permission and ethical legitimacy are distinct roles within the same organization, with distinct grounds. The continuation adds **24 checked Lean theorems / 41 declaration audits and 18,684 matched finite records**. Conventional diagnosis and explicit fault assumptions receive their prior credit; physical correspondence through changing control remains the next unresolved connection.
 
-**中文结论。** 将事实判断与见证可能共同失陷一起检查，可避免候选用自己认可的证人完成循环自证；无需指定绝对可信的单一检查者。相反答案的完整记录可辨认条件已实查，缺报、重复支承、资源不足及超出范围的共同失陷仍保留。第五见证的作用来自真实支承关系，并非名字数量或绝对可靠。新增24项定理／41项审计及18,684项记录核对通过；因果覆盖、记录执行支承和伦理正当性不由该计算自行产生。
-
-## 11. Evidence across changing control / 控制变化中的证据接续
+<a id="11-evidence-across-changing-control--控制变化中的证据接续"></a>
+## 11. Evidence across changing control
 
 The [temporal-inspection continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md) addresses a limit of §10: a fault bound at each instant need not cover reports collected over time. In a checked left-sharing history, one active cause moves through the five reporting positions and makes every received answer false. The earlier fixed-fault filter would infer right sharing. Its theorem is not violated; its collection-wide premise is absent.
 
@@ -164,9 +150,8 @@ The actual scope of change remains a substantive premise. A second checked histo
 
 Under G0/J, this clarifies what it means for selection rules to remain answerable to their consequences: changes can alter the grounds on which the rules were judged, and a retained judgment must continue to correspond to those grounds. Renewed inquiry also consumes actual conditions of response. Technical estimation supports a justified decision without establishing the goodness of the supplied purpose or an unrestricted right to inspect. This extension adds **34 checked Lean theorems / 66 declaration audits and 35,486 matched records**. It credits conventional state estimation and temporal fault analysis; establishing the actual coverage and protected support of those laws remains unresolved.
 
-**中文结论。** 证据必须沿形成它的变化历史解释；每时刻的失陷上限不是整段收集的失陷上限。按真实可能变化展开候选、再以当前证据收窄，可在有限合法历史中保持实际覆盖，并接到复查后的实际停止。34项新定理／66项审计、35,486项记录核对通过；变化范围失实、移动失陷造成假一致、资源不足和已付出消耗均保留。记录变化不独自证明记录完整，也不独自产生伦理正当性。
-
-## 12. Evidence carried by executed changes / 由实际执行的改变接续证据
+<a id="12-evidence-carried-by-executed-changes--由实际执行的改变接续证据"></a>
+## 12. Evidence carried by executed changes
 
 The [mediated-control continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md) advances the transition premise in §11. Its bounded interpreter derives change scope from the fields its program writes, rather than accepting the caller's label. Lean proves that every represented execution fits this derived scope. The same program transforms both the actual configuration and every retained possibility, preserving coverage by exact transport. Known executed effects can retain more information than a broad change notice and can sometimes remove the need for a fresh structural survey.
 
@@ -178,9 +163,8 @@ The remaining physical boundary has a checked failure: an additional write path 
 
 Under G0/J, the result supports maintaining the grounds of justified selection through changes that affect those grounds. It does not justify every granted permission or establish that the supplied command serves a good purpose. The continuation adds **27 checked Lean theorems / 57 declaration audits and 24,416 matched records**. Complete mediation and current-authority checking receive their established security-theory credit. This closes the instruction-to-evidence connection within the specified grammar; physical realization and coverage remain the next substantive bridge.
 
-**中文结论。** 已知的实际执行可以接续证据：按指令推导变化范围，以同一变换推进实际与候选，并把权限、代次、记录和旧命令撤销接在一次抽象提交中。27项新定理／57项审计、24,416项匹配记录完成这一局部连接。额外写入通道仍可令记录不变而实际覆盖失真；无旁路、真实故障范围与物理实现不能由日志自行认证。权限的技术有效性与目的的伦理根据各有范围。
-
-## 13. Interrupted change and corrective access / 中断改变与纠正入口
+<a id="13-interrupted-change-and-corrective-access--中断改变与纠正入口"></a>
+## 13. Interrupted change and corrective access
 
 The [recovery continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md#9-interrupted-change-and-recovery--中断改变与恢复) weakens §12's whole-program atomicity premise. Actual writes, retained recovery information and access to further action are stages within the same changing organization. Preparation records the target before actual change; individual overwrite steps can then be interrupted. A durable pending marker blocks ordinary reads and commands until the reached configuration and its description are published together. A prospective target is not treated as a description of an incomplete intermediate state.
 
@@ -192,9 +176,8 @@ A separate checked failure matters for alignment: nine units allow the first act
 
 The continuation has **22 new checked Lean theorems / 48 declaration audits and 27,888 matched finite records**. It reuses established crash-recovery ideas and the completed instruction/evidence result. It closes the staged-overwrite connection while retaining the concrete boundary of corrective access during incomplete recovery, physical implementation and complete mediation.
 
-**中文结论。** 改变、保留和继续行动相互制约：逐步改变可中断，恢复不能抹去实际消耗，未完成的描述不能当作当前根据。有限中断下的发布覆盖及有支持恢复已实查；然而一致的封闭状态也可能让运行中的活动无法停止。22项新定理／48项审计接通局部恢复，同时保留纠正入口、持久实现及真实范围的未解关系。
-
-## 14. Preserving the ability to stop / 保留实际停止的条件
+<a id="14-preserving-the-ability-to-stop--保留实际停止的条件"></a>
+## 14. Preserving the ability to stop
 
 The remaining operational gap in §13 is closed by the [reserved-shutdown continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md#10-reserved-shutdown-during-recovery--恢复期间保留停止能力). Actual change, retained recovery grounds, authorization and consumable capacity are related conditions of the same activity. A supervisor can preserve an already warranted stopping response by reserving what that response needs before allowing further recovery work.
 
@@ -207,5 +190,3 @@ The scope is visible in checked failures. The old nine-unit budget is refused be
 The continuation adds **21 checked Lean theorems / 51 declaration audits and 7,272 matched execution records**.
 
 Under G0/J, this joins retained grounds of judgment to supported response capacity, while leaving the ethical justification for issuing this stop grant explicit. It finishes the specified local connection. Real hardware/runtime correspondence, adequate harm models and universal alignment remain outside the proof. The study credits established runtime-assurance fallback methods and records its author counterreview; it does not treat a Boolean signature or completed field as empirical validation.
-
-**中文结论。** 恢复不能耗尽回应损伤所需的条件。保留停止容量与时距、约束下一周期、必要时经当前授权通道停止，可在每次延迟有界且监督继续执行时，从任意足够长的尝试序列得到实际命令完成。恢复无需先成功，未完成描述也不被伪装成当前知识。独立停止通道、正当授权及其物理保护是公开前提；超界中断保留失败。当前完成的是这一有条件的局部连接，而非所有现实对齐问题。

@@ -2,17 +2,13 @@
 
 **Formation and reconciliation, 8 October 2026:** [Common organization, differentiated regulation and continuing revision](COMMON-ORGANIZATION.md) now joins native formation to acquired updater choice and further revision in one paid history, and corrects the older mathematical shortcuts. The new package has 41 theorems / 89 audits plus 112 inherited theorem audits. Existing recurrence and inquiry results below retain their original scopes; the new joined model has no new asymptotic-attraction claim.
 
-**Correction-bearing succession joined, 8 October 2026.** [The alignment continuation](../becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md#4-selection-must-fund-actual-succession) adds a concrete corrective installation that refines the existing market law with an explicit migration fee. Twenty-three new Lean theorems in the 59-theorem package retain actual command execution, claims, receipts, parts and bounded competitive admission. / 新连接完成指定纠正载体的条件性接续，不冒充所有市场参与者的微观重建、任意俘获免疫或已完成实测对应。旧元吸引子结果保持原范围。
+**Correction-bearing succession joined, 8 October 2026.** [The alignment continuation](../becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md#4-selection-must-fund-actual-succession) adds a concrete corrective installation that refines the existing market law with an explicit migration fee. Twenty-three new Lean theorems in the 59-theorem package retain actual command execution, claims, receipts, parts and bounded competitive admission.
 
 8 October 2026. Ren selected the following [working definition](../../sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md), first proposed by the assistant:
 
 > **A meta-attractor is a recurrent organization of activity whose consequences help reproduce the conditions selecting that organization, across changes in its particular carriers.**
 
-> **元吸引子是一种反复形成的活动组织：其活动后果参与重建选择这种组织的条件，使该组织在具体承载者变化时仍能接续。**
-
 This locates meta-attraction within the generative account's central relation: activity forms and transforms the conditions of further activity. It explains recurrent regimes of that transformation. A regime can reproduce itself while diminishing wider life, diversity or correction; its existence does not establish a favorable expression of 生生. The [existing power account](../../sources/03-meta-attractor/2026-10-02-the-meta-attractor-of-power.md) supplies the institutional case in which success increases influence over future selection.
-
-这里说明的是生成过程内的回返组织及其选择条件。组织可以一面重建自身，一面损害更广的生命、差异与纠正能力。其动力学性质与其伦理意义分别论证；这一区分涉及同一活动的不同关系，并不另设两个实在领域。
 
 ## What the definition requires
 
@@ -26,8 +22,6 @@ This locates meta-attraction within the generative account's central relation: a
 
 **Recurrent** requires actual renewed activity or returns to the organization. A frozen record, exhausted structure or absorbing failure can be invariant without recurring. For a strict dynamical attractor claim, also specify a state description, return or attraction criterion, domain of approach, disturbances and time horizon. The working definition articulates the causal organization; it does not itself prove attraction or recurrence in any observed case.
 
-组织由实际作用关系辨认；选择由可接纳、留存或重建的差别实现；“参与重建”须有可检验的因果贡献；承载者接续须保留相关组织而允许具体实现变化；回返须有实际活动。有限回返、长期稳定与严格数学吸引各有不同证据要求。
-
 ## Higher order dynamics within one process
 
 Consequences may change available resources, connections, evaluative procedures, recruitment, retained evidence and authority. These changes alter what can happen and which arrangements are reconstructed next. The wider loop can therefore select ways of selecting, including which rule-revision procedures continue to exist.
@@ -36,19 +30,15 @@ This explanation introduces no selector outside the whole process. States, selec
 
 The [existing systems account](../becoming/history/SYSTEMS-COMPLEXITY-CHAOS.md#consequences-can-change-the-organization-of-consequence), [formed selector mechanisms](../becoming/history/GENERATIVE-SELECTION.md) and [paid market feedback](../becoming/chapters/MARKET-DYNAMICS-MATH.md) already establish scoped parts of this connection. This integration credits those results and asks what makes their recurrence a regime across succession.
 
-“高阶”指活动后果回到后续选择的组织条件。它既包括有效规则的改变，也包括既有规则赖以运作的关系被持续重建。无需每一轮都改写明文指标，更无需在生成整体之外设置最终选择者。
-
 ## Three kinds of boundary
 
 | Boundary | Required explanation | Possible change |
 |---|---|---|
-| Mechanism conditions / 机制适用条件 | Which support, transmission, timing and feedback relations make this loop effective | Support is exhausted, replenished, bypassed or captured |
-| Formed practical boundaries / 实际形成的边界 | Who and what can participate, remain intelligible, obtain support or effect correction | New access forms, alternatives lose support, evidence gains or loses force |
-| Dynamical approach and recovery / 动力学接近与恢复 | Which represented states approach the regime, and which interventions can reach another admissible continuation | States move, the operative law changes, or feasible interventions change |
+| Mechanism conditions | Which support, transmission, timing and feedback relations make this loop effective | Support is exhausted, replenished, bypassed or captured |
+| Formed practical boundaries | Who and what can participate, remain intelligible, obtain support or effect correction | New access forms, alternatives lose support, evidence gains or loses force |
+| Dynamical approach and recovery | Which represented states approach the regime, and which interventions can reach another admissible continuation | States move, the operative law changes, or feasible interventions change |
 
 A selection threshold is not automatically a basin boundary, and a basin boundary is not automatically the boundary of feasible recovery. A claim about their coincidence needs its own model and proof. In the construction below, the selection threshold and unforced basin boundary coincide, while the intervention budget needed to leave increases within the same basin.
-
-三种边界可以相互作用，却不能互相冒充。尤其要分别追踪：当前状态的变化、选择条件本身的变化、以及实际可行纠正路径的变化。
 
 ## Checked realization and its failures
 
@@ -59,8 +49,6 @@ Under these explicit laws, Lean checks recurrence across completely distinct car
 The failures are part of the account. Severing A's return eventually removes its selection condition. Finite unreplenished reconstruction parts stop actual activity, even when a stored selection condition survives. A sufficiently large disturbance crosses the threshold. A second causal implementation, supplied directly from the current condition, produces the same passive condition history but responds differently to cutting the activity's return.
 
 Carrier identity in this model is a single replacement-slot identifier with accounted parts. It does not establish the formation of a biological body or the organizational equivalence of arbitrary human successors. The parts-arrival law, production of the returned units, selection threshold and repertoire remain supplied. The scalar measures one selecting condition and is neither life nor welfare.
-
-新的 Lean 构造给出明确条件下的非空实现：选择条件由实际回返维护，承载者逐轮更换，耗材及补给决定能否继续，断开回返、过大扰动及有限供给都可导致失败。它直接接入已有生成过程接口，但不是既有市场模型的细化或经验拟合，也不把单一条件指标当作生生价值。
 
 ## Recognizing approach and entrenchment
 
@@ -78,8 +66,6 @@ A shrinking set of feasible corrective paths can be an informative signal, but i
 
 Once a mechanism and observation interval are warranted, diagnosis can become constructive. The interval theorem gives the exact budget for one intervention that works for every compatible condition after a known delay. The direct market continuation also proves that equal present returns, accountability, funds and support change can precede opposite next selection directions because accumulated influence differs. Under that particular funded law, the prospective sign depends on `(6−4w)q>1`. This is a one-step criterion; identifying an entire basin requires more.
 
-“滑入”应分别辨认接近、盆地改变与纠正机会收缩。观测到同样回返不一定辨认出同样机制：须增加后果来源的测量、可辩护的因果对应或能区分对手的干预。不能把一个未校准的预警分数当作已知距离。
-
 ## Diagnosis is activity within the regime
 
 The [carrier-and-diagnosis continuation](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md) adds 40 checked theorems. Successor carriers have different output capacities; their events consume represented material and reconstruction parts. The common organization survives these differences under explicit maintenance and supply conditions. A probe, its observation, any necessary repair and further carrier succession form one actual generative-core trace.
@@ -88,23 +74,17 @@ This sharpens “seeing the slide”: **distinguishing the mechanism and retaini
 
 Timing is consequential. One checked example allows an ordinary cycle to build enough condition margin that a later probe needs no repair. The earlier exit theorem instead shows that waiting can increase the required exit impulse. These are distinct operations and scope-limited results, not universal advice about delay. A practical account must specify what is being learned, which continuation is sought, and whether the observation leaves an executable response.
 
-认识本身参与被认识过程的变化。探测可以获得真实区别，同时耗尽回应条件；也可能通过准备、等待或修复而保持接续。这里的继续能力并不自动具有伦理优先权，干预条件也不由“元吸引子”这个定义自动给出。
-
 ## Temporal organization and changing criteria
 
 A recurrent organization can maintain its conditions through a rhythm of support and temporary withdrawal. The organization to be identified includes that timing, the available margin and the return that restores it. Requiring the same support links at every step would exclude the checked alternating example. Allowing every withdrawal because some are recoverable would erase the phase-dependent boundary.
 
 The [acquired-criterion construction](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-ADMISSION.md) also makes the rule depend on consequences retained from an actual trial. What the regime selects affects what it observes; those observations can revise what it next selects. This creates a further route for both learning and self-confirming error. Adequate resources can maintain the implementation of a mistaken criterion. Conversely, a changed criterion can preserve the organization more flexibly than a permanent prohibition. Neither outcome is settled by calling the process a meta-attractor.
 
-组织的回返可以是时间关系的回返；支持网络与准入判准也可变化。须辨认变化后仍起作用的关系，不能把“同一组织”简化成固定成员、每步相同的边或不变的口号。
-
 ## Reorganizing the tests themselves
 
 The testing arrangement can change while preserving the relations that make its results usable. In the [new conditional construction](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-TESTING.md), the regime finances inspection and replacement, retains live paths during testing, and rejects a substitution that would let one represented common fault corrupt two of its three readers. Successful substitutions preserve both soundness and availability under the stated fault law. The continued preservation follows from acquired records and the actual change history, rather than from permanently fixing the original testers.
 
 This also supplies a prospective warning: **agreement can remain unchanged while its resilience is lost**. Merging causal dependencies can make a later common fault decisive before any current report looks wrong. What matters is separation with respect to the relevant causes, not the number of institutional identities. The retained counterexample gives nominally separate sources one unrepresented common cause and obtains a wrong physical decision. The subsequent intervention study below advances acquisition of that description; completeness of the causal/fault account remains a separate question.
-
-检验条件本身可以在生成过程中被改变并维护。要保留的是实际纠错关系，而不是固定的一批名字。实际共同依存的集中可以早于意见分歧或表现下降；这种预警仍依赖已经辩明的故障范围，不是普遍的独立性分数。
 
 ## Discovering dependencies through intervention
 
@@ -114,8 +94,6 @@ The acquired distinction changes action in one actual history. Two readers shari
 
 **A complete survey is complete relative to its intervention class.** Two layered organizations have identical effects for all represented local and combined local pulses, while one has an upstream common cause that compromises every reader. An upstream pulse would distinguish them. Repeating the existing local tests cannot warrant the missing coverage. This is a precise boundary on an inference, not a claim that deeper causes lie outside the generative process or can never be investigated.
 
-可以通过“共同失去支承”的实际后果取得共同依存证据；取得证据的活动也要保留回应条件。局部测试的完备不等于所有层级共同原因都已覆盖。元吸引子可能维持某一检验方式，也可能在维持它时继续遮蔽该方式未能触及的依存；后者在这里是应调查的理论可能性，不是已经证明的普遍演化趋势。
-
 ## Expanding inquiry while preserving restoration
 
 A regime can reproduce the conditions for investigating beyond its present tests. The [expanding-inquiry construction](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-EXPANDING-INQUIRY.md) converts material into an adapter, installs access to the next represented support level, clears earlier records and acquires new effects. A test consumes stored support and suspends ordinary work. Explicit reserves preserve the means to release the interruption and restore the plant; the retained counterexample shows why remaining above a support floor alone is insufficient.
@@ -123,8 +101,6 @@ A regime can reproduce the conditions for investigating beyond its present tests
 Under the declared construction and supply laws, actual inquiry can continue through every finite depth. The new evidence then changes a physical response. In the nested hierarchy, separation at a tested depth supports certification against one common-root fault at any covered lower level. This is bounded warrant for action, without requiring complete knowledge of the whole process.
 
 There is also a general limit across finite depths: every complete finite effect table in the separated example has a compatible extension with a common cause immediately beyond its reach. Continued expansion exposes each such finite hidden merger, but no finite table alone certifies separation at all untested levels. **The ability to keep learning and the ability to certify that inquiry is complete are different achievements.** The theorem concerns the explicit open hierarchy, not every kind of knowledge or a metaphysical separation of otherwise interconnected activity.
-
-继续拓展认识的条件可以被活动重建；每轮还须保留终止检验及恢复的条件。所需根据是实际故障范围内的适当认证，不是把全知设为实践门槛。新的条件构造说明可以继续扩大范围，也严格保留“有限成功不能自证无限覆盖”的界限。为什么某个实践范围已经充分、构造与观察规律在更广变化中怎样保持，仍需另行论证。
 
 ## Generativity and ethical direction
 
@@ -135,8 +111,6 @@ This makes the meta-attractor inquiry part of generative alignment: examine whet
 ## Current integration and retained research history
 
 **13 October 2026:** [Common organization](COMMON-ORGANIZATION.md#integrated-account) now completes this conversation's theoretical integration. Formation, consequence-driven method and apparatus revision, actual use and supported succession are joined on the Becoming spine. The final construction includes an actual infinite policy-restricted Run, cumulative support accounts and genuine losses/failures. Strict basin and diagnostic claims retain the scopes of the earlier checked instances. The following 8 October frontier records remain historical evidence, not a statement that these later connections are still missing.
-
-**当前整合。** [完整核对](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md#completion-ledger)接通共同形成、方法及装置修订、实际回应和跨承载接续，纠正旧公式的过度推论。经验对应与规范根据各有自己的证据责任；以下早期待做表述不覆盖后续完成的连接。
 
 The [latest continuation](../../sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md#continuation-through-expanded-inquiry) adds **54 checked theorems / 99 audits in ExpandingInquiry**. Materially constructed access, reserved restoration, arbitrary finite inquiry histories and a corrected response are joined. Each finite hidden merger in the example family is eventually exposed by further expansion. No finite effect table, however complete through its tested depth, certifies unlimited separation across that family. The remaining connection is warrant for the relevant failure range and preservation of construction, delivery and observation through changes outside the supplied stable hierarchy. The bounded result is complete at its scope; unrestricted coverage is not made a requirement for all practical action.
 
@@ -149,8 +123,6 @@ The [reproduction study](../../_process/research/2026-10-05-generative-foundatio
 The [criterion-acquisition study](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-ADMISSION.md) adds **34 checked theorems / 56 audits**. An executed trial, retained readings and charged learning install a loss estimate that changes actual admission. The resulting criterion allows temporary withdrawal when sufficient margin exists and restores returns before the checking roles cease operating. All finite continuations are realized, and the alternating stock pattern is proved for all times. A specified saturating reading instead acquires a zero-loss estimate, licenses an actual damaging withdrawal and disables further checking despite adequate material and replacement parts. A warranted error allowance repairs that case; it is not inferred from the misleading readings alone.
 
 **The earlier wall remains a valid limit on selected histories alone.** Two physical return arrangements have identical full histories under the existing selected operation but opposite preservation outcomes under an untried change. No classifier of that history alone can judge both correctly. Continued internal agreement does not supply the missing distinction. The subsequent inspection and intervention constructions advance that connection under stated laws; their coverage also needs to remain operative and warranted as selection changes it.
-
-准入判准的取得已有条件性实际过程，不再笼统列为缺失。新的未解连接是：当选择也在改变观察、检验和纠正关系时，这些关系的适用范围与根据怎样获得并持续更新。持续回返不能自证；一个误差界或“独立审查者”的名称也不能替代实际关系。这里不是把经验测量设为一切理论工作的门槛，更不是判定整个生成理论不可能。
 
 The parallel [population continuation](../../experiments/market-generativity/meta-attractor/POPULATION-README.md) already joins bounded replacement, internally financed correction and actual material-guarded histories. The [alignment continuation](../becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md) carries actual commands through succession; [acquired and fault-tolerant correction](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md) handles declared inspection and compromise conditions. These are results to reuse. They do not yet compose into one institution whose collection, evidence coverage, authority formation and changing mandate are all explained.
 

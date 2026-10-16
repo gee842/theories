@@ -1,31 +1,10 @@
-# 延续的奠基：从想要延续者重述普遍元伦理核心 / Continuation grounding: restating the Universal Metaethical Core from what wants its continuation
-
-2026-10-10，Asia/Bangkok。AI（Claude Opus 5.5）应 Ren 的指示撰写。Ren 提出重述（“I think this can be much stronger”），对 AI 的分析答“exactly, please write these down, and get ready for implementation”（[原话与解释](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）。本文是计划：不向核心加入定理，不新建成果记录；[可行性草稿](../history/root-foundation/development/continuation-grounding-sketch/README.md)只作开发草稿保存。G0 在重述实现、检查、审查并经 Ren 接受之前，仍是所采用的公理。
+<a id="延续的奠基从想要延续者重述普遍元伦理核心--continuation-grounding-restating-the-universal-metaethical-core-from-what-wants-its-continuation"></a>
+# Continuation grounding: restating the Universal Metaethical Core from what wants its continuation
 
 2026-10-10, Asia/Bangkok. Written by the AI (Claude Opus 5.5) at Ren's instruction. This is a plan: nothing enters the core and no result is registered; the [feasibility sketch](../history/root-foundation/development/continuation-grounding-sketch/README.md) is kept as a development draft. G0 remains the adopted axiom until the restatement is implemented, checked, reviewed and accepted by Ren.
 
-## 0. 结论 / Summary
-
-**中文。** Ren 的提议把核心分成两半。
-
-1. **范围，不加伦理公理。** 想要自身延续者，从它所在之处使其延续有意义。顺着这一想要，它必须计入其延续所依赖的：边界之外、视界之外、自身取用之外。这一范围由动力学推出：
-   - 在平衡与耗散之下，持续的有限家族不封闭；被围住时，有东西从其外输送入；
-   - 没有有限的视界分得开更新与消耗；
-   - 各自在更新之内的取用，合起来可以超出更新，并终结以其所需依存于共享条件者；想要比条件所存更长远的延续，就必须计入联合的取用（W8 限定）。
-2. **中心，一条公理。** 动力学定出范围，定不出中心。推出的范围只朝所依赖者一个方向；它把他者作为条件、作为供给计入，而不是作为想要者计入；它以想要的视界为界；一个审慎的总体化者满足其全部。公理的唯一作用，是在每一点放一个中心。
-
-两半各去掉一种二元：前一半去掉封闭的自我，后一半去掉特权的中心。
-
-**形式内容（草稿，无公理）：**
-
-- 每个活的主张都在某个立场的自身区域中（被持有）时，G0 恰是每个立场的 S0 加立场中立 N_std，连通与 N_rel 都用不到（`significant_iff_held`）。
-- 一般地，每个活的主张都经已形成的关系从被持有者到达时，G0 恰是每个立场的 S0、N_std，加上只进入无人持有之主张的 N_rel（`significant_iff_reached`）。三项各有反模型，都不可少。
-
-所以对想要者而言，AI 把 Ren 的一条公理读作立场中立（待 Ren）：从任一中心有意义的，从每个立场都有意义，没有哪个中心特殊；每个想要之点都是中心，这是 S0。（W8 更正：原文写“Ren 的一条公理就是立场中立”，把 AI 的分解归于 Ren；N_std 也不是唯一的补全，在连通、每个立场都持有活主张的整体上，S0 加 N_rel 也给出 G0。）现有刻画从一颗种子出发，需要连通与 N_rel 把意义带到各处；新的刻画在每个想要之处放一颗种子，只需 N_std 使这些种子共有。N_rel 只留给没有立场持有的生命：休眠的种子、昏迷者、不再想活下去的人，在无人把它们计入自身区域时都是如此；不作为整体而想要的整体也是。
-
-**弱式与强式。** 弱式（“只要不损”）对应现有 `living` 的读法，它们读出的都是“不损”。强式（“创造更多意义”）对应整体的继续生成，即生生不息的方向，尚未进入 `living`。工作结构是 AI 的建议，Ren 以“exactly”肯定：每个形成取弱式，整体取强式。这正是 G0 自身的形状（生与继续生成），由下而上建起。
-
-计划分八个阶段 W1–W8（§5），列出六项属于 Ren 的选择（§6），并与并行会话轮流修改共享文件（§8）。
+<a id="0-结论--summary"></a>
+## 0. Summary
 
 **English.** Ren's proposal splits the core in two.
 
@@ -48,7 +27,8 @@ So for what wants, the AI reads Ren's one axiom as standpoint neutrality (pendin
 
 The plan has eight phases, W1–W8 (§5), six choices for Ren (§6), and turns with the parallel session on shared files (§8).
 
-## 1. Ren 的提议 / Ren's proposal
+<a id="1-ren-的提议--rens-proposal"></a>
+## 1. Ren's proposal
 
 Ren's words are in the [source](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md). The assistant restated them in five steps, and Ren answered “exactly”:
 
@@ -62,20 +42,23 @@ Ren's words are in the [source](../../../../sources/15-codex-theory-conversation
 
 **Nondual ground.** A self, its outside and a standpoint are differentiations within one unfolding. A family of relata is a formed region; `own` is a region of formed relations, not an owner; a position is where counting starts, not a separate substance. The extent half shows that no continuing formed region is closed. The center half refuses to privilege any position. Neither half introduces independent bearers of value.
 
-## 2. 两半 / The two halves
+<a id="2-两半--the-two-halves"></a>
+## 2. The two halves
 
-| 部分 / Part | 内容 / Content | 前提 / Premises | 地位 / Standing |
+| Part | Content | Premises | Standing |
 |---|---|---|---|
-| 种子 / Seed | 想要自身延续，就是从自身立场持其延续为有意义的：S0 读作想要本身。/ To want one's continuation is to hold it significant from one's own standpoint: S0 read as what wanting is. | 对想要的读法；意义相对于立场。/ A reading of wanting; significance relative to a standpoint. | 前提卡现列为规范前提；重述把它移为想要的读法，待 Ren 确认。/ Now a normative premise on the premise card; the restatement moves it to the reading of wanting, for Ren to confirm. |
-| 范围 / Extent | 想要者须计入其延续所依赖的：边界之外、视界之外、自身取用之外。/ What wants must count what its continuation depends on: beyond its boundary, its horizon and its own draw. | 平衡、耗散、被围住、体现；磨损规律（外围）；可判定的相等；从想要一个目的到对其所需有理由的一步。/ Balance, dissipation, enclosure, embodiment; the wear law (periphery); decided equality; the step from wanting an end to having reason for what it requires. | 部分已检查，部分在草稿中（§3）。/ Partly checked, partly sketched (§3). |
-| 中心 / Center | 每一点都是中心：从一个立场有意义的，从每个立场都有意义（N_std）；无人持有的生命经已形成的关系到达（只进入它们的 N_rel）。/ Every point a center: what has significance from one standpoint has it from every standpoint (N_std); lives no standpoint holds are reached through formed relations (N_rel into them only). | 一条伦理公理。/ One ethical axiom. | 草稿（§4）。/ Sketched (§4). |
-| 实践判断 / Practical judgment | 相冲突的延续之间的判断，损的层次。/ Judging between conflicting continuations; the level of harm. | C、L、J1–J4。 | 不变。/ Unchanged. |
+| Seed | To want one's continuation is to hold it significant from one's own standpoint: S0 read as what wanting is. | A reading of wanting; significance relative to a standpoint. | Now a normative premise on the premise card; the restatement moves it to the reading of wanting, for Ren to confirm. |
+| Extent | What wants must count what its continuation depends on: beyond its boundary, its horizon and its own draw. | Balance, dissipation, enclosure, embodiment; the wear law (periphery); decided equality; the step from wanting an end to having reason for what it requires. | Partly checked, partly sketched (§3). |
+| Center | Every point a center: what has significance from one standpoint has it from every standpoint (N_std); lives no standpoint holds are reached through formed relations (N_rel into them only). | One ethical axiom. | Sketched (§4). |
+| Practical judgment | Judging between conflicting continuations; the level of harm. | C、L、J1–J4。 | Unchanged. |
 
-## 3. 范围：动力学推出什么 / Extent: what the dynamics derives
+<a id="3-范围动力学推出什么--extent-what-the-dynamics-derives"></a>
+## 3. Extent: what the dynamics derives
 
 The extent half applies one premise of practical reason, that wanting an end gives reason for what the end requires, to the dynamics. What follows is what continuation requires. It does not say that continuation is good.
 
-### 3.1 边界之外：没有封闭的自我 / Beyond the boundary: no closed self continues
+<a id="31-边界之外没有封闭的自我--beyond-the-boundary-no-closed-self-continues"></a>
+### 3.1 Beyond the boundary: no closed self continues
 
 **Checked.** Balance says each change of a level is what is given minus what is taken. Dissipation says that across a step at which a finite family is closed, each formation gives it no more than it takes from it, and less whenever it takes. Under both, a finite family on which taking recurs is not closed at arbitrarily late steps; enclosed around from some step on, it draws in from beyond itself at arbitrarily late steps (`Flow.taking_draws_in`, [no-finite-part-bears-taking](../../../../theories/becoming/results/records/no-finite-part-bears-taking.md)). Embodied arising is itself replenishment and opens a family the same way (`generation_draws_in`, [generation-is-replenishment](../../../../theories/becoming/results/records/generation-is-replenishment.md)). A balanced, dissipative world with finitely many standing at each step, whose arising is embodied, comes to rest once every step from some point is enclosed around what stands (`World.comes_to_rest`, [continued-change-needs-openness](../../../../theories/becoming/results/records/continued-change-needs-openness.md)).
 
@@ -85,7 +68,8 @@ The extent half applies one premise of practical reason, that wanting an end giv
 
 **Scope.** Dissipation does the work. Without it a closed family can generate without end: two relata hand a unit back and forth (`Handing`), or a closed cycle keeps its total (`Recycle`). So “the pure self is an illusion” is a theorem under dissipation, not a law of every unfolding. Whether actual systems dissipate in this sense is empirical correspondence.
 
-### 3.2 视界之外：僵硬的自我 / Beyond the horizon: the rigid self
+<a id="32-视界之外僵硬的自我--beyond-the-horizon-the-rigid-self"></a>
+### 3.2 Beyond the horizon: the rigid self
 
 **Checked.** For every horizon `h` there are two runs that agree before `h`, one renewing and one consuming. A reading decided by the first `h` steps that credits every renewing run credits some consuming run (`finite_reading_credits_consumption`, [becoming-finite-horizon](../../../../theories/becoming/results/records/becoming-finite-horizon.md)). A reading of amounts, drawing at a step no more than is renewed, is fixed by the history through that step and withholds every draw beyond renewal before the horizon, in the renewing run as in the consuming one (`amount_reading`). Under the supplied wear law, consumption forms more at first and a one-step count prefers it; past a bound set by what was held and the renewal rate, every continuation within renewal has formed more than every exceeding one ([renewing-consuming-formation](../../../../theories/becoming/results/records/renewing-consuming-formation.md)).
 
@@ -93,7 +77,8 @@ The extent half applies one premise of practical reason, that wanting an end giv
 
 **Reading.** A self that judges by the outcomes visible within a window credits consumption. This is not a lack of information that more foresight would cure, since no finite window of outcomes separates the two. What separates them is counting the draw against renewal. A formation that wants its continuation without end must count that way. This is the formal content of “unable to see longer horizon”.
 
-### 3.3 自身取用之外：总体化的自我 / Beyond one's own draw: the totalizing self
+<a id="33-自身取用之外总体化的自我--beyond-ones-own-draw-the-totalizing-self"></a>
+### 3.3 Beyond one's own draw: the totalizing self
 
 **New (W3, sketched).** Each formation present can take from a condition within what the step gives it (`Flow.WithinOwn`) while together they take more (`Flow.WithinJoint` fails; `Pair.own_not_joint`). Taking jointly within what is given keeps the level (`Flow.joint_keeps`). Each step of joint excess lowers it by at least one (`Flow.excess_lowers`), so joint excess cannot outlast what was held, and in the two-formation case no web balances the flow at all (`Pair.no_web`).
 
@@ -101,7 +86,8 @@ The extent half applies one premise of practical reason, that wanting an end giv
 
 **Reading.** The meta-attractor selects formations that take more: they form more at first, and a count over a step prefers them. Each counts its own draw. Many of them together exceed renewal; the shared condition ends, and with it what depends on it at such a need, the winners among them where they so depend. A formation that wants its continuation beyond what the shared condition holds must count the joint draw on what it depends on (W8: `n` steps of joint excess need only a level of `n`, and `Mortal`'s want is fully met amid joint excess): “the dynamics that happens beyond what the "self" sees”. This is what the want requires, not a verdict passed on it.
 
-### 3.4 推出的范围达不到的 / What the derived extent does not reach (W4)
+<a id="34-推出的范围达不到的--what-the-derived-extent-does-not-reach-w4"></a>
+### 3.4 What the derived extent does not reach (W4)
 
 Following a want gives reason to secure what the wanted continuation needs. Four limits follow from that form. W4 builds a witness for each:
 
@@ -112,9 +98,11 @@ Following a want gives reason to secure what the wanted continuation needs. Four
 
 So the dynamics fixes the extent of a system, not its center. If the fourth witness could not be built, because the derived requirements forced standpoint neutrality, the center would follow from the dynamics. That would be a stronger result, and it would change the account (§9). (W8: as first implemented the test could not fail, since flow and web predicates never constrain significance. With closure along feeding it constrains significance; the line holds along dependence, and not along every formed relation.)
 
-## 4. 中心：一条公理 / Center: the one axiom
+<a id="4-中心一条公理--center-the-one-axiom"></a>
+## 4. Center: the one axiom
 
-### 4.1 形式内容 / Formal content
+<a id="41-形式内容--formal-content"></a>
+### 4.1 Formal content
 
 In `Becoming.Metaethics`, a valuation has positions, claims, `living`, `related`, `own p` (the region of formed relations position `p` counts as its own) and `sig p` (significance from `p`'s standpoint).
 
@@ -143,7 +131,8 @@ Decided holding is a logical commitment of the representation, disclosed like de
 
 **Planned instance (W5).** Read a web stepwise. Let each formation be a position whose own region is its own events (`own f e := e.1 = f`). Every living event is then held, so G0 there is S0 at every formation with N_std. Neither connection nor a correspondence for `related` is needed. This is the formal shape of “anything that wants its continuation”, where every formation wants its own.
 
-### 4.2 与现有刻画的关系 / Relation to the existing characterization
+<a id="42-与现有刻画的关系--relation-to-the-existing-characterization"></a>
+### 4.2 Relation to the existing characterization
 
 `significant_iff` holds on a connected whole with some living claim: G0 ↔ Seed ∧ N_rel ∧ N_std ([metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md)). That route starts from one seed and needs connection and N_rel to carry significance everywhere. Much of chapter §6.3 secures connection: the correspondence discipline, living on and descent. The new route seeds every wanting point and needs only N_std to make the seeds common. For held lives, connection and N_rel drop out; they keep a role only for unheld lives.
 
@@ -153,7 +142,8 @@ The shape of rivals in chapter §6.2 persists. In the new form the principal riv
 
 The evaluator route ([self-good-reachable-g0](../../../../theories/becoming/results/records/self-good-reachable-g0.md)) found that S0 with monotonicity and tolerance gives a standpoint-indexed instance on reachable generation. It left unindexed G0 needing a bridge from standpoint-relative to normative significance. The restatement names that bridge as the one axiom, and shows that on held lives it is all G0 needs beyond S0.
 
-### 4.3 弱式与强式 / Weak and strong forms
+<a id="43-弱式与强式--weak-and-strong-forms"></a>
+### 4.3 Weak and strong forms
 
 **Weak form, for each formation.** Ren: “doesn't have to be positive, we could argue as long as not harm”. All current readings of `living` read “no damage” (不损) and none contains further generation (chapter §6.3):
 
@@ -181,15 +171,15 @@ Direction, continuing capacity, per-step monotonic growth and scalar maximizatio
 
 **Working structure.** The weak form for each formation, the strong form for the whole.
 
-### 4.4 重述的草案 / Draft of the restatement
+<a id="44-重述的草案--draft-of-the-restatement"></a>
+### 4.4 Draft of the restatement
 
 For Ren to judge; it does not enter the chapter as accepted. Revised in W8 (C5, C6), as in chapter §6.7.
 
-> 任何想要自身延续者，从它所在之处使其延续有意义。顺着这一想要，它必须计入其延续所依赖的：在耗散之下，持续者不封闭，被围住时有东西从其外输送入；没有有限的视界分得开更新与消耗；各自在更新之内的取用合起来可以超出，并终结以其所需依存于共享条件者；想要比条件所存更长远的延续，就必须计入联合的取用。动力学定出这一计入的范围，定不出谁的延续算数。每个想要之点都是中心；一条公理使它们共同：从任一中心有意义的，从每个立场都有意义，没有哪个中心特殊。对被某个立场持有的生命，这就是 G0；无人持有的生命经已形成的关系到达。弱式：每个形成不损的延续有意义。强式：整体的延续要创造更多的意义。
-
 > Anything that wants its continuation gives that continuation significance from where it stands. Following that want, it must count what its continuation depends on. Under dissipation nothing that continues is closed, and, enclosed around, something is conveyed into it from beyond. No finite horizon separates renewal from consumption. Draws each within renewal can together exceed it and end what depends on the shared condition at its need; a continuation wanted beyond what the condition holds must count the joint draw. The dynamics fixes how far that count reaches, not whose continuation counts. Every wanting point is a center; one axiom makes them common: what has significance from any center has it from every standpoint, and no center is privileged. For lives some standpoint holds, this is G0; lives no standpoint holds are reached through formed relations. Weak form: each formation's undamaging continuation has significance. Strong form: the whole's continuation is to create more significance.
 
-### 4.5 公理之后仍在的 / What remains after the axiom
+<a id="45-公理之后仍在的--what-remains-after-the-axiom"></a>
+### 4.5 What remains after the axiom
 
 - **Non-ethical premises.**
   - physical: balance, dissipation, embodiment, enclosure;
@@ -202,7 +192,8 @@ For Ren to judge; it does not enter the chapter as accepted. Revised in W8 (C5, 
 
 “This closes the whole” therefore reads as follows: G0's content on held lives needs no further ethical premise. Practical judgment, correspondence and the non-ethical premises stay open as before.
 
-## 5. 阶段 / Phases
+<a id="5-阶段--phases"></a>
+## 5. Phases
 
 W labels avoid the P numbers of the [unification plan](BECOMING-UNIFICATION-PLAN.md).
 
@@ -220,7 +211,7 @@ W labels avoid the P numbers of the [unification plan](BECOMING-UNIFICATION-PLAN
 
 Order: W1 and W3 complete the L3 module. W5 then states the center, and W2 follows because it needs `Conveys`. W4 needs W1–W3 and W5. W6–W7 follow, and W8 comes last. Commits are made only with Ren's go-ahead.
 
-**实施状况（2026-10-10）/ Implementation status (10 October 2026).** 按 Ren“commit them, then start implementation all the way to full completion”，W1–W7 已完成，见[研究 §47](BECOMING-RENEWAL-READING.md#47-延续的奠基从想要延续者重述w1w5)：`Becoming.Continuation`（L3，40 项定理）与 `Becoming.Standpoints`（L4，17 项定理）进入核心，回执 20261009T222752.438253Z。Following Ren's instruction, W1–W7 are done (study §47).
+*Implementation status (10 October 2026).** 按 Ren“commit them, then start implementation all the way to full completion”，W1–W7 已完成，见[研究 §47](BECOMING-RENEWAL-READING.md#47-延续的奠基从想要延续者重述w1w5)：`Becoming.Continuation`（L3，40 项定理）与 `Becoming.Standpoints`（L4，17 项定理）进入核心，回执 20261009T222752.438253Z。Following Ren's instruction, W1–W7 are done (study §47).
 
 - W2 gained the comparison the table asks for: conveyance relates conditions that interaction, living on and descent never relate (`Flow.roles_conditions_unrelated`, `Totalizer.conveyance_only`); a new record, `conveyance-crosses-the-boundary`, rather than a delta on `living-on-and-descent`.
 - W3's link to `RelationalRenewal` and `RenewingFormation` is stated as interpretive; no instance theorem was built.
@@ -230,30 +221,29 @@ Order: W1 and W3 complete the L3 module. W5 then states the center, and W2 follo
 - W5b was not undertaken; it remains under further proofs in the chapter (§8).
 - W8 is done: an independent Opus 5.5 agent reviewed W1–W5 ([review](CONTINUATION-GROUNDING-REVIEW.md)); its thirteen findings are handled in study §47.1–47.4. The Lean gained `Valuation.own_transmission`, `Valuation.significant_of_transmits`, `Flow.FedBy`, `Totalizer.supply_not_cut_living_on`, `Totalizer.fedBy_sun` and `Totalizer.keeper_not_living`; `Apart.standpoint_neutrality_is_needed` became `Apart.not_enough`, and `Totalizer.center_not_derived` now has closure along feeding (`Becoming.Standpoints`, 22 theorems; receipt 20261009T231934.987085Z).
 
-## 6. 属于 Ren 的选择 / Choices for Ren
+<a id="6-属于-ren-的选择--choices-for-ren"></a>
+## 6. Choices for Ren
 
-1. **“想要者”还是“任何东西” / “Anything that wants” or “anything”.**
-   - 取“想要者”：公理是 N_std；无人持有的生命只经已形成的关系与只进入它们的 N_rel 得到意义，否则留给实践判断。
-   - 取“任何东西”：公理直接陈述 G0 的主张层内容；持有刻画说明，对想要者它只是去中心。
-   - 差别落在休眠的种子、昏迷者、不再想活下去的人，以及不作为整体而想要的整体（森林、河流）上。被他人计入自身区域的生命是被持有的：不再想活下去的人可以由家人持有，N_std 把这一意义带到每个立场，包括他自己的。这是否合适、与其自主怎样相处，由实践判断处理。
+1. “Anything that wants” or “anything”.**
    - With “anything that wants”, the axiom is N_std. Lives no standpoint holds get significance only through formed relations and N_rel into them; otherwise they are left to practical judgment.
    - With “anything”, the axiom states G0's claim-level content directly, and the held characterization explains that for what wants it is only de-centering.
    - The difference falls on the dormant seed, the unconscious patient, someone who no longer wants to go on, and wholes that do not want as wholes (a forest, a river). A life that others count in their own region is held. Someone who no longer wants to go on may be held by family, and N_std carries that significance to every standpoint, including their own. Whether that is fitting, and how it meets their autonomy, is for practical judgment.
-2. **损的层次 / The level of harm** for the weak form: members, lineages or the whole (§4.3).
-3. **“更多”的读法 / The reading of “more”** in the strong form:
-   - 更多的形成 / more formations (`Flow.More`);
-   - 生起复现 / arising that recurs;
-   - 可能性、多样性与复杂性 / possibility, diversity and complexity (open).
-   AI 的默认是方向，不是最大化。/ The AI's default is a direction, not maximization.
-4. **输送是否算已形成的关系 / Whether conveyance counts as a formed relation**, beside interaction, living on and descent.
+2. The level of harm** for the weak form: members, lineages or the whole (§4.3).
+3. The reading of “more”** in the strong form:
+   - more formations (`Flow.More`);
+   - arising that recurs;
+   - possibility, diversity and complexity (open).
+   The AI's default is a direction, not maximization.
+4. Whether conveyance counts as a formed relation**, beside interaction, living on and descent.
 4a. **推出的范围沿依存还是沿每个已形成的关系 / Whether the derived extent runs along dependence or along every formed relation** (added in W8). Along dependence the center is not derived; along every formed relation, or where dependence links every two lives, S0 with N_rel gives G0 (study §47.2 C1–C2).
 4b. **“不损”是过滤还是要求 / Whether “not harm” filters continuations or claims on others** (added in W8, §4.3).
 5. **名称 / Names.** `Becoming.Continuation`, `Becoming.Standpoints`, `Held`, `Unheld`, `Conveys`, `FedFromBeyond`, `Cut`, `WithinOwn`, `WithinJoint`, `Apart`, `Unclaimed`, `Relayed`, `Exceeding`, `Alone`, `Downstream`, `Mortal`, `Totalizer`, `FedBy` and `not_enough` are working names. 不以 Ren 的用语命名形式部分。/ No formal part is named after Ren's words.
-6. **确认 / Confirmation.**
-   - S0 作为想要的读法，移出“规范前提”一栏。/ S0 moves from “normative premise” to the reading of wanting.
-   - 重述实施并审查后，是否替代 G0 成为所采用的公理。/ After implementation and review, whether the restatement replaces G0 as the adopted axiom.
+6. Confirmation.**
+   - S0 moves from “normative premise” to the reading of wanting.
+   - After implementation and review, whether the restatement replaces G0 as the adopted axiom.
 
-## 7. 可行性 / Feasibility
+<a id="7-可行性--feasibility"></a>
+## 7. Feasibility
 
 The [sketch](../history/root-foundation/development/continuation-grounding-sketch/README.md) was compiled against the core as committed at `e448c56b`, built from committed bytes. It has 15 definitions and 15 theorems, and all 30 declarations report no axioms. It covers:
 
@@ -269,7 +259,8 @@ The checks surfaced two constructive points. `taking_draws_in` concludes a negat
 - `[DecidableEq C]` in the conveyance form, as in `Enclosed.around`;
 - decided holding in `significant_iff_reached`.
 
-## 8. 协调与执行 / Coordination and execution
+<a id="8-协调与执行--coordination-and-execution"></a>
+## 8. Coordination and execution
 
 - **The parallel session.** “Universal meta ethics of agency review (fork)” holds uncommitted edits to `Becoming.lean`, `Becoming/Reserve.lean`, the package README, the receipt `becoming-verification.json`, `check_becoming.py` and the chapter (§1, §8, §9, counts). W1–W7 touch the same shared files: the core list, root imports, receipt, chapter, study and the unification plan's §9.
   - No shared file is edited until that session's phase is committed.
@@ -285,7 +276,8 @@ The checks surfaced two constructive points. `taking_draws_in` concludes a negat
   5. Commit when Ren says so.
 - **Not done without a new request:** pushing, or changing G0's standing.
 
-## 9. 什么会改变这一论述 / What would change the account
+<a id="9-什么会改变这一论述--what-would-change-the-account"></a>
+## 9. What would change the account
 
 - **The careful totalizer cannot be built.** The derived requirements would force standpoint neutrality, the center would follow from the dynamics, and no ethical axiom would be needed for held lives. (W8: as first implemented this test could not fail; it is now posed with closure along feeding, which constrains significance, and it is passed along dependence. Along every formed relation, or in a whole where dependence links every two lives and every standpoint holds a living claim, S0 with N_rel gives G0. That is the case this bullet describes, reached under a reading of the relations; see study §47.2 C1–C2.)
 - **Conveyance is not adopted.** Crossing (W2) holds only for the readings where it is shown; W1 stands as dynamics.
@@ -295,7 +287,8 @@ The checks surfaced two constructive points. `taking_draws_in` concludes a negat
 - **The strong form is read as maximization.** It meets the bounds of what is held (`excess_bounded`) and of rest (`World.comes_to_rest`) and needs a different statement.
 - **A counterexample to a sketched theorem** under its stated premises would refute it. The sketch's checks make that unlikely for what is stated; the risk lies in the readings.
 
-## 10. 承接 / Lineage
+<a id="10-承接--lineage"></a>
+## 10. Lineage
 
 - **The relational self.** Ren, 19 April 2026: “we have this evolution drive to maintain existence at the self level, but beyond the drive, there is no self” ([original](../../../../sources/12-claude-ai-chats/2026-04-19_仁义礼智信的本质与顺序_8cff1c7f.md)). The [relational-self theory](../../../../theories/relational-self-and-datong/README.md) names its weakest joint: relation alone does not yield ethics (“a parasite is related to its host”). The extent half carries the first; the one axiom is the disclosed answer to the second.
 - **The meta-attractor.** The [meta-attractor](../../../../theories/meta-attractor/README.md)'s selected self is the totalizing, rigid self of §3.2–3.3. On 8 October Ren placed it in the generative model: “it fits, just not the generative part” ([source](../../../../sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md)). Here it lies within the dynamics of the extent half and outside the strong form.

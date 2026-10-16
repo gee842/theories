@@ -1,4 +1,5 @@
-# Repository architecture repair / 仓库架构修正
+<a id="repository-architecture-repair--仓库架构修正"></a>
+# Repository architecture repair
 
 8 October 2026. Implementation of [Ren's architecture request](../../sources/15-codex-theory-conversations/2026-10-08-repository-architecture-repair.md). This is a structural repair record, not another scientific result register.
 
@@ -10,8 +11,6 @@
 | Weak result identity and connection visibility | [RESULTS.md](../../RESULTS.md) reads the individual records; [DEPENDENCIES.md](../../DEPENDENCIES.md) renders typed relationships and explicit producer/output, consumer/input, retained-condition and evidence contracts where recorded. New connections retain their existing proof scope. |
 | Frozen copies dominate discovery | `make research-find QUERY=topic` searches canonical claims and active sources. Historical evidence requires `--archives`. `make research-imports` separates textual candidates from unresolved module names. |
 | No shared checks or safe rendering | Root Make targets, GitHub Actions, focused drift checks, source-bound receipt validation, local links/anchors, preserved-byte hashes, input-change checks, serialized rendering and per-output overwrite guards are in place. |
-
-当前概览由成果与授权记录生成，不再由各会话反复追加竞争的状态段落。稳定工具与旧命令兼容；完成范围、原反例、原证明与实际工作位置保持。检索区分工作源码和冻结证据，依赖区分正式复用、应用、解释及关联。
 
 ## Preservation and reconciliation
 
@@ -29,11 +28,12 @@ No Lean source was changed by this repair and no new mathematical claim was intr
 
 Historical semantic migration is not exhaustive. The register explicitly distinguishes migrated coverage from the full corpus; existing reading catalogues and studies retain unmigrated claims. Physical relocation of active workspaces, a universal Lean build, automatic hash refresh and universal semantic equivalence detection are not part of the repair. Future research should migrate the particular result it changes and reuse its existing evidence. New independent authorization remains valid even before its scope record is added.
 
-## Directory renames, 9 October 2026 / 目录改名
+<a id="directory-renames-9-october-2026--目录改名"></a>
+## Directory renames, 9 October 2026
 
 At [Ren's request](../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md#rens-follow-up-finish-the-renames-then-continue-the-theory), two directories were renamed so that their paths name what they hold.
 
-| Former path / 旧路径 | Path / 现路径 |
+| Former path | Path |
 |---|---|
 | `theories/shengsheng-buxi-generative-existence/` | [`theories/becoming/`](../../theories/becoming/README.md) |
 | `theories/shengsheng-buxi-generative-existence/unified-2026-10-05/` | [`theories/becoming/chapters/`](../../theories/becoming/chapters/THE-THEORY-OF-BECOMING.md) |
@@ -49,5 +49,3 @@ python3 -B _process/architecture/check_rename.py
 ```
 
 The checker re-derives each rewritten file from the base commit and compares hashes, and confirms that every carried hash moved from a file's hash before the rename to its hash after it.
-
-两处目录改名，使路径说出所放之物；移动本身不改任何文件内容。现行引用按五条有序规则改写，规则只匹配路径位置上的完整路径成分。指令记录只改 Markdown 链接目标，引用 Ren 原话的行不动。证据保留原字节与旧路径，按上表读。回执逐一列出改写文件改名前后的哈希，以及沿用的已审哈希：只有文件原本与之相符、且新字节恰为旧字节的替换时才沿用。因此各登记的新鲜程度与改名前相同。检查器从基准提交重新推出每个改写文件并核对哈希。

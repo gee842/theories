@@ -1,270 +1,289 @@
-# 共同选择、有限合并与情境 / Joint choice, limited aggregation and context
+<a id="共同选择有限合并与情境--joint-choice-limited-aggregation-and-context"></a>
+# Joint choice, limited aggregation and context
 
-**风险条件与理由接续 / Conditional risk and continuing reasons，2026-10-08。** [第14—16节](#risk-conditioning-and-continuing-reasons)检验静态风险比较怎样进入持续选择：同一事件规律中的真实分支揭晓使平方诊断排序反转；当前风险更新与有效历史须共同进入判断。/ Ten new Lean theorems / twenty-one audits; no best lottery or complete dynamic ethical rule is inferred.
+**Conditional risk and continuing reasons, 2026-10-08.** [Sections 14–16](#risk-conditioning-and-continuing-reasons) examine how a static comparison of risk enters continuing choice: a real branch resolution within the same event law reverses the ranking of the squared diagnostic; the current update of risk and the valid history must enter judgment together. Ten new Lean theorems / twenty-one audits; no best lottery or complete dynamic ethical rule is inferred.
 
-**有损均衡与平等附近的优先力度，2026-10-08 / Costly balance and priority near parity.** [第11—13节](#risk-priority-near-parity)提出公开的 NP 候选：微小暴露差异不应仅凭出现就形成固定而显著的优先倍数；它有条件地支持在完全相等之前停止有损均衡。强反例保留，13项新 Lean 定理／21项审计通过，未据此选定唯一概率。/ Symmetry, risk reduction and controlled variation do not entail NP; its normative warrant remains explicit.
+**Costly balance and priority near parity, 2026-10-08.** [Sections 11–13](#risk-priority-near-parity) put forward an open NP candidate: a slight difference in exposure should not, merely because it appears, form a fixed and significant priority multiple; it conditionally supports stopping costly balancing before exact equality. Strong counterexamples are kept; 13 new Lean theorems / 21 audits pass, and no unique probability is selected on that basis. Symmetry, risk reduction and controlled variation do not entail NP; its normative warrant remains explicit.
 
-**机会与修订接续，2026-10-08 / Chance-revision continuation.** [第7—10节](#chance-revision)进一步说明：即使最终保护的完整联合概率相同，修订仍可能撤销已正当确定的安排。新增7项 Lean 定理／15项空依赖审计；前六节的6项／15项成果原范围保留。/ The new result concerns history-sensitive revision, reusing established finality rather than deriving initial lottery weights.
+**Chance-revision continuation, 2026-10-08.** [Sections 7–10](#chance-revision) explain further: even when the complete joint probability of final protection is the same, revision may still undo an arrangement that was justly settled. 7 new Lean theorems / 15 empty-dependency audits are added; the results of the first six sections (6 / 15) keep their original scope. The new result concerns history-sensitive revision, reusing established finality rather than deriving initial lottery weights.
 
-**后续已完成的连接 / Completed follow-on connection，2026-10-08。** [交叉请求与新共同机会](BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities)复用本章6项／15项情境结果，另提出 LR 局部稳定候选，并增加8项／23项机会接续与未满足最强要求的具体控制。/ The follow-on study adds an independently reviewed candidate and checked construction; this chapter’s earlier findings keep their own scope and are not recounted.
+**Completed follow-on connection, 2026-10-08.** [Crossed claims and new joint opportunities](BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities) reuses this chapter's 6 / 15 context results, puts forward the LR locally stable candidate, and adds 8 / 23 opportunity continuations and a concrete control for the strongest unsatisfied claim. The follow-on study adds an independently reviewed candidate and checked construction; this chapter’s earlier findings keep their own scope and are not recounted.
 
-2026-10-08。AI 撰写，接续 Ren 要求以理论为重心的持续研究。[基本冲突](BASIC-CONFLICT-JUDGMENT.md)已经说明 BC1 与 BC2，[联合损失研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md)进一步完成 LC 的减损理由与数学诊断。本章研究这些理由怎样进入共同选择，沿[非二元方法](NONDUAL-METHOD.md)和公开的 G0/J 路线，不重开已完成的分类、责任与程序。
+2026-10-08. Written by the AI, continuing the theory-centred research that Ren asked for. [Basic conflict](BASIC-CONFLICT-JUDGMENT.md) has already explained BC1 and BC2, and the [joint-loss study](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md) further completes LC's reason of reduction and its mathematical diagnosis. This chapter studies how these reasons enter joint choice, following the [nondual method](NONDUAL-METHOD.md) and the open G0/J route, without reopening the completed classification, responsibility and procedure.
 
-**推进：限制较轻损失怎样抵偿较重损失，与把较轻损失从判断中删除，是两件事。一个可行方案新增了可靠的基本保护，不能仅因算法的过滤门槛随之变化，就宣称其原有保护失去全部比较分量。** 若共同选择因情境变化而改变，须指出改变了什么实际关系或规范根据。
+**Advance: limiting how lesser losses can counterbalance graver ones, and deleting lesser losses from judgment, are two different things. When a feasible plan gains added, reliable basic protection, one cannot, merely because the filtering threshold of an algorithm changes with it, declare that its earlier protections have lost all comparative weight.** If joint choice changes with the situation, it must be pointed out which actual relation or normative ground has changed. Context may alter a justified choice, but the account must identify an actual relational or normative difference. Six new Lean theorems and fifteen empty dependency audits check the limited diagnostics below; they do not select a complete ethical rule.
 
-**Advance:** limiting how lesser losses can counterbalance graver ones differs from deleting their significance. Added protection must not lose its earlier grounds merely because a filtering threshold changes. Context may alter a justified choice, but the account must identify an actual relational or normative difference. Six new Lean theorems and fifteen empty dependency audits check the limited diagnostics below; they do not select a complete ethical rule.
+<a id="1-已有比较还缺什么--the-remaining-connection"></a>
+## 1. The remaining connection
 
-## 1. 已有比较还缺什么 / The remaining connection
+BC1 supports fuller preservation within the equal-rescue scope it declares. BC2 has been narrowed to a one-to-one reason of degree, and LC jointly considers grounded reductions in number and degree. **Neither of the latter two cancels the requirement of chance by itself.** A strict mathematical inequality also does not mean that practice must determinately choose one side; the current text goes by the revised scope in each one's own body.
 
-BC1 在它声明的同等救助范围内支持更充分保全。BC2 已收窄为一对一的程度理由，LC 则联合考虑有根据的数量与程度减损。**后两项都没有独自取消机会要求。** 数学上的严格不等式也不等于实践上必须确定地选择一方；当前以各自正文的修订范围为准。
+The new connection is: how to use these real reasons in one and the same joint choice, and keep an explainable consistency when the feasible support changes. This question does not start from lives that are independent of one another and exchange interests only at the end. Actual shared provision forms channels that can or cannot be reconciled, and also forms the undertakings and decision capacities of different positions; analysing which claims can be met together is the identification of these relations.
 
-新的连接是：怎样把这些真实理由用于同一次共同选择，并在可行支持改变时保持可说明的一致性。这个问题不从彼此独立、最后才交换利益的生活出发。实际共同供给形成了可兼顾或不可兼顾的通路，也形成不同位置的承担和决定能力；分析哪些要求能一起满足，是对这些关系的辨明。
-
-要区分三种变化：新通路确实形成，因而能够保护此前无法及时保护的生活；原有通路被发现或误判被纠正，因而认识改变；同一可达历史只被重命名、复制或重新分组。前两种可能改变有根据的决定，第三种本身不提供新的保护理由。过去的承诺、已经公开的分配机会和实际发生的损失也不能因当前清单改变而消失。
+Three kinds of change should be distinguished: a new channel is really formed, so that a life that could not be protected in time before can now be protected; an existing channel is discovered or a misjudgment is corrected, so that knowledge changes; the same reachable history is merely renamed, copied or regrouped. The first two may change a well-grounded decision, and the third provides no new reason of protection in itself. Past commitments, allocation chances already made public, and losses that actually occurred also cannot disappear because the present list has changed.
 
 BC2 and LC supply reasons rather than final allocation verdicts. Actual formation, acquired knowledge and mere redescription must therefore be distinguished when alternatives change. Differentiated demands and decision capacities arise within the same provision history. No independent population-creation claim, complete risk rule or automatic cancellation of fair chances is introduced here.
 
-## 2. 为什么“较弱要求不计”会失败 / A failure of global exclusion
+<a id="2-为什么较弱要求不计会失败--a-failure-of-global-exclusion"></a>
+## 2. A failure of global exclusion
 
-考虑一个构造的、固定的受影响群体：七处较低层基本损失、两处中层基本损失和一处较高层基本损失。**三层都是本例假定已成立的基本损失**；没有把最低层降为普通便利。人数、分层、可靠保护和不同位置的辨认在此是给定条件，不是从数字中发现的伦理事实。
+Consider a constructed, fixed affected group: seven lower-tier basic losses, two middle-tier basic losses and one higher-tier basic loss. **All three tiers are basic losses assumed in this example to hold**; the lowest tier is not reduced to ordinary convenience. The numbers of people, the tiering, reliable protection and the identification of different positions are given conditions here, not ethical facts discovered from numbers.
 
-起初，路线甲能保护七处较低层生活，路线乙能保护两处中层生活；较高层的那一处仍在群体中，但两条路线都无法保护它。后来，甲的一项真实改进使它还可以保护较高层生活，甲原有的七处保护和乙路线均不变。本例明定没有新增侵害、负担、旧承诺或其他支持变化。
+At first, route A can protect the seven lower-tier lives and route B can protect the two middle-tier lives; the higher-tier one is still in the group, but neither route can protect it. Later, a real improvement of A makes it also able to protect the higher-tier life, with A's original seven protections and route B unchanged. The example stipulates that there is no new harm, burden, old commitment or other change of support.
 
-检验一种尚未被本理论采用的算法：以可保护的最高层确定门槛；没有最高层保护时都计入，有最高层保护时将较低层贡献置零，再加总。暂用 1、3、5 作三个层级的**诊断系数**。这些数不是本理论认可的价值兑换率。
+Test an algorithm not adopted by this theory: set the threshold by the highest tier that can be protected; when no highest-tier protection exists, count everything; when highest-tier protection exists, set the lower-tier contributions to zero and then add up. Use 1, 3, 5 provisionally as the **diagnostic coefficients** of the three tiers. These numbers are not exchange rates of value approved by this theory.
 
-| 可行情形 / Situation | 甲 / Route A | 乙 / Route B | 过滤结果 / Filter result |
+| Situation | Route A | Route B | Filter result |
 |---|---|---|---|
-| 改进前 / Before improvement | 七处较低层保护，计 7 / Seven lower-tier protections, score 7 | 两处中层保护，计 6 / Two middle-tier protections, score 6 | 甲胜 / A wins |
-| 改进后 / After improvement | 原七处被置零，新增一处最高层计 5 / Original seven excluded; added higher-tier protection scores 5 | 仍计 6 / Still scores 6 | 乙胜 / B wins |
+| Before improvement | Seven lower-tier protections, score 7 | Two middle-tier protections, score 6 | A wins |
+| After improvement | Original seven excluded; added higher-tier protection scores 5 | Still scores 6 | B wins |
 
-新增保护是真的，人口没有变化，旧保护没有减少。翻转来自过滤器对原有保护重新置零。若保留固定系数而不进行该过滤，甲的诊断值由 7 变为 12，不会出现这次翻转。这个对照识别算法的作用，不是转而推荐固定加总。
+The added protection is real, the population has not changed, and the old protections have not decreased. The reversal comes from the filter zeroing the original protections again. If the fixed coefficients are kept without that filter, A's diagnostic value goes from 7 to 12, and this reversal does not occur. This contrast identifies the role of the algorithm; it is not a turn to recommending fixed summation.
 
-这里不是只用一个自由赋值的“好坏”标签反驳完整理论。反例明确给出固定群体、三层保护范围、路线改进和算法；Lean 核验了保护包含、系数对照及翻转。它检验的是**这一明确的候选实现**。其结构接续了 [Horton 对有限合并的原典批评](https://discovery.ucl.ac.uk/10062029/1/Always%20Aggregate.pdf)，不主张首次发现这类问题。
+This does not rebut the complete theory with a freely assigned "good/bad" label. The counterexample explicitly gives a fixed group, the range of protection of three tiers, the improvement of the route and the algorithm; Lean verified the protection inclusion, the contrast of coefficients and the reversal. What it tests is **this explicit candidate implementation**. Its structure continues [Horton's primary-source criticism of finite aggregation](https://discovery.ucl.ac.uk/10062029/1/Always%20Aggregate.pdf), and does not claim to be the first to discover this kind of problem.
 
 The checked example holds the population fixed and improves only one route. A declared strongest-tier filter reverses its choice by erasing the route's prior lower-tier contribution. The numeric coefficients diagnose that rule; they do not measure living value. The example targets a specified implementation, not a fuller relational theory whose omitted grounds were never represented.
 
-## 3. 这种翻转究竟否定什么 / What the reversal rules out
+<a id="3-这种翻转究竟否定什么--what-the-reversal-rules-out"></a>
+## 3. What the reversal rules out
 
-已有减损传递说明：若一项完整比较有根据，同一相关历史上的真实改善在明确的传递条件下保留其方向。本章不将该结果重新算作新贡献。新增检验说明，上述过滤器**不能同时被解释为同一个可传递的严格整体次序**，并保留“甲改进后优于原甲”、改进前甲优于乙、改进后乙优于新甲这三项判断。对应的条件不相容已经 Lean 核验。
+The existing transport of reductions says that if a complete comparison has ground, a real improvement on the same relevant history keeps its direction under explicit conditions of transport. This chapter does not count that result again as a new contribution. The new test shows that the above filter **cannot at the same time be interpreted as one and the same transitive strict overall order**, while retaining the three judgments "A after improvement is better than the original A", "before the improvement A is better than B", and "after the improvement B is better than the new A". The corresponding incompatibility of conditions has been verified in Lean.
 
-这没有排除所有情境相关的选择。新增可行保护可能改变实际责任、曾有根据的机会安排，或什么损失仍可避免；这样的变化需要进入完整描述。一个对手也可以直接否定固定整体次序的要求。但若它为上述翻转辩护，就必须解释：为什么甲增加保护足以使原七处保护退出这次比较，以及为何该变化应使乙优先。仅说“门槛变了”是在复述算法。
+This does not rule out all situation-dependent choice. Newly feasible protection may change actual responsibility, a chance arrangement that had ground, or which losses can still be avoided; such changes need to enter the full description. An opponent can also directly deny the requirement of a fixed overall order. But if it defends the above reversal, it must explain why A's added protection suffices to make the original seven protections withdraw from this comparison, and why that change should make B take priority. Merely saying "the threshold changed" restates the algorithm.
 
-本章据此排除一条未经辩护的推导：**不能从“较轻要求不足以压过某项较重要求”，直接推出“只要较重要求出现，较轻要求对所有比较都无关”。** 较轻要求不能完成某种抵偿，仍可使进一步减损有理由，仍可要求在不妨碍较重保护时得到回应。这直接衔接既有未满足理由与有限责任，而不另设一套福利总分。
+This chapter accordingly rules out one undefended derivation: **one cannot infer directly from "lesser claims are not enough to outweigh a certain graver claim" that "as soon as a graver claim appears, the lesser claims are irrelevant to all comparisons".** A lesser claim that cannot complete a certain offsetting can still make a further reduction reasonable, and can still require a response where this does not hinder the graver protection. This connects directly with the existing unmet reasons and finite responsibility, without setting up another welfare total.
 
 The filter cannot be read as one fixed transitive strict ranking while retaining the protected upgrade and both of its own comparisons. A context-dependent account may reject that interpretation, but then owes a substantive explanation of the changed priority. The positive conclusion preserves weaker living grounds while leaving their power to counterbalance other losses separately justified.
 
-## 4. 局部比较为何不能任意拼接 / Why local victories need a composition argument
+<a id="4-局部比较为何不能任意拼接--why-local-victories-need-a-composition-argument"></a>
+## 4. Why local victories need a composition argument
 
-一个更一般的检验不需要指定数值。设三个已说明的保护束为 H、M、L：若在三个分别限定的比较里，M 胜过 H、L 胜过 M、H 又胜过 L，能否把这些判断都当作可直接拼接的严格胜出？
+A more general test needs no specified numerical values. Let three protection bundles that have been explained be H, M, L: if in three separately delimited comparisons M beats H, L beats M, and H beats L, can all these judgments be taken as strict victories that can be directly spliced together?
 
-再提出两项看似自然、但必须公开的要求。第一，双方各加入一份伦理上相当的同类保护束，旧胜出方向仍保持。这里增加的是不同位置的实际要求，不是重复记录。第二，若两项局部选择分别胜出，把两个胜出方案共同实施，应胜过把两个败出方案共同实施。两项要求都预设这种组合确实可行、没有重叠损失或遗漏的共同后果；“现实互相联系”本身不证明它们总成立或总失败。
+Two further requirements that look natural but must be stated openly. First, if both sides add an ethically comparable protection bundle of the same kind, the old direction of victory is retained. What is added here are the actual claims of different positions, not duplicated records. Second, if two local choices are each won, implementing the two winning plans together should beat implementing the two losing plans together. Both requirements presuppose that such a combination is indeed feasible, with no overlapping loss or omitted joint consequence; "real-world interconnection" in itself does not prove that they always hold or always fail.
 
-Lean 给出明确的不相容：在交换组合次序不改变表示、严格胜出不能双向成立的条件下，上述三个循环判断与两项拼接要求不能全部保留。它揭示的是**胜出、共同增加和联合实施的承诺冲突**，不是全部有限合并必然错误，也没有证明只剩无限制加总一种伦理。
+Lean gives an explicit incompatibility: under the conditions that exchanging the order of combination does not change the representation and that strict victory cannot hold in both directions, the three cyclic judgments above and the two splicing requirements cannot all be retained. What it reveals is **a conflict of commitments among winning, joint addition and joint implementation**, not that all finite aggregation is necessarily wrong, and it has not proved that unrestricted summation is the only ethics left.
 
-对本理论，这要求保留现有的力度区分：BC2／LC 中真实存在的比较理由可以与其他理由竞争，不能未经论证便当成上述严格胜出。BC1 的较强结论仍只在它已辩护的范围内成立。若进一步要得出某个交叉情形的最终判断，必须同时说明它在加入同等要求、形成共同实施和改变可行通路之后还保留什么。
+For this theory, this requires keeping the existing distinction of strength: the comparative reasons that really exist in BC2/LC can compete with other reasons, and cannot, without argument, be taken as the strict victory above. BC1's stronger conclusion still holds only within the scope it has defended. To reach a final judgment of any crossed case, one must at the same time say what it still retains after equivalent claims are added, joint implementation is formed and the feasible channels change.
 
 The second checked obstruction exposes separate assumptions: commutative representation, asymmetric strict choice, preservation under common additions, and composition of two strict victories. Together they cannot accommodate the stipulated three-way cycle. No theorem says that all sound ethics must accept those premises. In actual use, joint feasibility, distinct realization and the absence of omitted effects must be warranted first. Pro tanto reasons are not automatically members of this strict-choice relation.
 
-## 5. 生成性对齐由此增加什么要求 / Implications for generative alignment
+<a id="5-生成性对齐由此增加什么要求--implications-for-generative-alignment"></a>
+## 5. Implications for generative alignment
 
-本轮支持的正面要求是：**共同选择应保存仍然成立的生活根据，并说明它们在什么关系下被更强理由限制。** 一个系统可以作出不满足某项要求的决定，但须区分：它判断该要求不存在，判断其在此次比较中不足以胜出，还是承认其理由仍在、而最终分配由其他根据决定。这些区别影响以后新支持形成时是否继续回应。
+The affirmative requirement this round supports is: **joint choice should preserve the living grounds that still hold, and explain under what relation they are limited by stronger reasons.** A system may make a decision that does not satisfy a certain claim, but it must distinguish whether it judges that the claim does not exist, judges that it is insufficient to win in this comparison, or acknowledges that its reason is still there while the final allocation is decided by other grounds. These distinctions affect whether it continues to respond when new support later forms.
 
-同样，系统若因新方案改变决定，应能给出实际改变的根据：哪一处基本保护变得可达，哪些共同后果改变了，已有机会或承担受到什么影响。只有评分阈值、列表长度或记录顺序变化，不能独自承担这种说明。此要求接续 G0/J 的公开根据与可纠正性；它没有从计算一致性生成伦理。
+Likewise, if a system changes its decision because of a new plan, it should be able to give the ground that actually changed: which basic protection has become reachable, which joint consequences have changed, and how existing chances or undertakings are affected. A change only in a scoring threshold, the length of a list or the order of records cannot bear this explanation on its own. This requirement continues the open grounds and corrigibility of G0/J; it does not generate ethics from computational consistency.
 
-一个肯定的适用判断已经清楚：对第2节的过滤实现，应保留七处保护的原有理由，不以新增较高层保护为删除它们的充分根据。至于这七处理由与两处中层理由最终怎样比较，本章仍不把诊断系数当答案。**排除一个失当规则，与已经确定全部选择，需要分别交代。**
+An affirmative judgment of application is already clear: for the filter implementation of section 2, the original reasons of the seven protections should be retained, and the added higher-tier protection is not a sufficient ground for deleting them. How the seven reasons and the two middle-tier reasons are finally compared, this chapter still does not take the diagnostic coefficients as the answer. **Excluding an improper rule and having determined all the choices need to be accounted for separately.**
 
 Generative alignment should retain still-warranted living grounds and identify why a competing reason limits their practical force. A system must distinguish absence of a claim, an outweighed claim and a decision made while that claim remains live. This gives a concrete correction to the tested filter without supplying an unearned universal exchange rate or lottery formula.
 
-## 6. 完成与下一连接 / Completion and the next connection
+<a id="6-完成与下一连接--completion-and-the-next-connection"></a>
+## 6. Completion and the next connection
 
-本轮完成了一个候选规则的实质反例、两个条件一致性检验，以及“限制抵偿不等于删除根据”的理论修正。[研究整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)保留肯定论证、最强反审与原典范围；[Lean 源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AggregationContext.lean)及[实际回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/aggregation-context-verification.json)给出 6 项新定理、15 项声明空依赖审计。无新经验测量或独立验收。
+This round completed a substantive counterexample to a candidate rule, two conditional consistency tests, and the theoretical correction that "limiting offsetting is not deleting grounds". The [research integration](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md) keeps the affirmative argument, the strongest counter-review and the scope of the primary sources; the [Lean source](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AggregationContext.lean) and the [actual receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/aggregation-context-verification.json) give 6 new theorems and 15 declaration audits with empty dependencies. No new empirical measurement or independent acceptance.
 
-下一中心连接是：**在保留这些理由后，机会与不同程度的损失怎样共同约束一个交叉情形的选择；应放弃哪项未经辩护的拼接要求，或补足哪项实质比较。** 重点在规范根据与可共同实现的关系，而不是寻找一个能让所有案例自动出数的门槛。完整统一基础、实际动机形成与跨范围对应仍保留各自未完成部分。
+The next central connection is: **after these reasons are retained, how chances and different degrees of loss jointly constrain the choice in a crossed case; which undefended splicing requirement should be given up, or which substantive comparison should be supplied.** The emphasis is on normative grounds and the relation of what can be jointly realized, not on finding a threshold that makes every case produce a figure automatically. The complete unified foundation, the formation of actual motivation and the correspondence across scopes each keep their unfinished parts.
 
 Completed: a concrete failure of a candidate filter, conditional consistency diagnostics and a reason-retention correction. The next task is substantive integration with chances in crossed cases, including justified limits on composition. Earlier results and independent programmes retain their own scopes.
 
 <a id="chance-revision"></a>
-## 7. 概率相同仍可能改变什么 / What equal probabilities can still change
+<a id="7-概率相同仍可能改变什么--what-equal-probabilities-can-still-change"></a>
+## 7. What equal probabilities can still change
 
-机会问题首先要分清：安排形成前应怎样分配机会，和安排已经正当确定后应怎样接续。仓库已有[公平分配后的生活根据](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md)，明确区分不当重抽与新增独立救助；已有[共同约定研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-CORRESPONDENCE.md)，说明正当安顿、履行、解除与纠正。以下复用这些成果，研究它们对**选择规则自身的修订**增加什么要求。
+The chance problem must first distinguish: how chances should be allocated before an arrangement forms, and how to continue after the arrangement has been justly settled. The repository already has the [living grounds after fair allocation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md), which clearly distinguishes improper redrawing from added independent rescue; and the [joint-agreement study](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-CORRESPONDENCE.md), which explains justified settlement, fulfilment, release and correction. What follows reuses these results to study what they add to the requirements on the **revision of the selection rule itself**.
 
-考虑同一供给过程中的甲、乙两处严重需要，只能及时保护其中一处。本例明示给定：最初各半的机会及首轮有效结果的确定性已有根据，程序已正确完成，没有新错误、解除、紧急冲突或额外支持。双方未满足的需要仍在。没有从“需求相同”或随机性独自推导这项程序的公平。
+Consider two serious needs, A and B, within the same provision process, only one of which can be protected in time. The example explicitly gives: the initial half-and-half chance and the determinacy of the first round's valid result have ground, the procedure has been completed correctly, and there is no new error, release, urgent conflict or additional support. The unmet needs of both sides remain. The fairness of this procedure is not derived from "the needs are the same" or from randomness alone.
 
-两种接续是：实行首轮结果；或者废弃首轮，再独立公平抽一次，以第二轮为准。从一开始看，两者都给甲、乙各半机会。更强的是：最终“只保护甲”与“只保护乙”的**完整联合分布也相同**。然而，后一程序可能撤销已经确定的保护。遗漏不在最后的相关性，而在先前正当确定的结果与当前行动的关系。
+The two continuations are: carry out the first-round result; or discard the first round, draw fairly and independently once more, and take the second round. Viewed from the start, both give A and B half a chance each. Stronger still, the **complete joint distribution** of the final "protect only A" and "protect only B" is also the same. Yet the latter procedure may undo a protection that has already been settled. What is omitted is not the final correlation, but the relation between the earlier, justly settled result and the present action.
 
-| 接续 / Continuation | 最终机会 / Terminal chances | 与首轮结果的关系 / Relation to first result |
+| Continuation | Terminal chances | Relation to first result |
 |---|---|---|
-| 实行首轮 / Keep | 甲乙各半 / Half each | 每次都保留 / Always retained |
-| 一律重新抽签 / Fresh redraw | 甲乙各半 / Half each | 两轮不同时撤销首轮 / Replaced when the draws differ |
-| 乙中签就结束，甲中签则重抽 / Redraw only after A wins | 甲四分之一，乙四分之三 / A one quarter, B three quarters | 连原定机会也改变 / Original chances also changed |
+| Keep | Half each | Always retained |
+| Fresh redraw | Half each | Replaced when the draws differ |
+| Redraw only after A wins | A one quarter, B three quarters | Original chances also changed |
 
-这些数字已实际 Lean 核验，采用两次公平独立抽签的四条等可能历史；数学没有认证现实设备、机会根据或救助效力。已有[联合风险研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md)说明边际相同仍可能有不同共同风险；本轮补足另一个区别：**连完整的最终联合分布都相同，仍未说明全部规范关系。** 包含实际历史的完整理论不受这个局部表示反例反驳。
+These figures were actually verified in Lean, using the four equally likely histories of two fair independent draws; the mathematics does not certify real devices, the ground of the chances, or the efficacy of rescue. The existing [joint-risk study](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) shows that identical marginals may still hide different joint risks; this round supplies a further distinction: **even when the complete final joint distribution is the same, not all normative relations have yet been accounted for.** The complete theory, which includes the actual history, is not refuted by this local counterexample of representation.
 
-这里的分布相同是**从程序开始前看**。首轮结果已知后，正确的条件概率已经能够显示实行与重抽的差别；本例不是概率理论的失败。它排除的是以初始总体机会不变，直接认证后续修订。至于已观察结果为何应当履行，仍须回到实际程序及其根据，不能由条件概率独自回答。
+The sameness of the distribution here is **seen from before the procedure begins**. Once the first-round result is known, the correct conditional probabilities can already show the difference between carrying out and redrawing; this example is not a failure of probability theory. What it rules out is directly certifying the later revision by the unchanged initial overall chance. Why an observed result should be honoured must still go back to the actual procedure and its grounds, and cannot be answered by conditional probability alone.
 
 Before a draw, a justified allocation may assign equal chances. After its valid settlement, fidelity can require implementing its result. Two rules can agree on the entire terminal joint protection law while differing in this continuation. The checked example therefore targets a history-poor representation, not every account using probabilities or consequences.
 
-## 8. 形成的安排怎样成为后来理由 / How an arrangement forms later reasons
+<a id="8-形成的安排怎样成为后来理由--how-an-arrangement-forms-later-reasons"></a>
+## 8. How an arrangement forms later reasons
 
-本例的确定判断是：**实行仍然有效的首轮结果，同时保留对未获保护者的其他正当回应。** 这是对同一共同生活过程的接续要求。共同筹备、可依凭的安排和实际分工，使原来尚未确定的事得以确定；每次一有结果就重新恢复起点，会使这种共同确定无法落实。管理员掌握重抽能力，并不因此取得扩大原有职责范围的根据。
+The determinate judgment of this example is: **carry out the first-round result that remains valid, while keeping the other legitimate responses to those not protected.** This is a requirement of continuation in the same shared life process. Joint preparation, arrangements that can be relied on and the actual division of labour make something that had not been determined determinate; if the starting point were restored every time a result came out, this joint determination could not be carried out. That the administrator holds the power of redrawing does not give him a ground for enlarging the scope of his original duties.
 
-这里保留一个公开的实质承诺：有根据的安顿能够形成有界的履行理由。它接续 J3/J4 及既有约定论证，不是 G0 单独推出的唯一程序规则，也不是用定义藏入的义务。实际投入与依赖可以加强该理由，但它不只等于新产生的物质损失：正当共同确定的事项在尚未追加准备成本时，也可能已经具有履行根据。对此若持异议，应检验该规范承诺，而不能以概率相同替代争论。
+A public substantive commitment is kept here: a well-grounded settlement can form a bounded reason of fulfilment. It continues J3/J4 and the existing arguments on agreement; it is not a unique procedural rule derived from G0 alone, nor an obligation hidden by definition. Actual investment and dependence can strengthen the reason, but it is not merely newly generated material loss: a matter justly determined jointly may already carry a ground of fulfilment before any preparation cost is added. If one dissents from this, one should test this normative commitment, and cannot replace the dispute with sameness of probability.
 
-甲中签之后，实行结果让甲在这项分配上得到确定保护；这不违反原先各半的机会，因为原先承诺的范围是抽签前的分配。把“公平”改写成每得到一条信息都重新各半，会与这项有效安顿冲突。未获选者的生活理由仍然成立，却不因此自动获得对同一资源的再次抽签要求。新支持若可共同实现，应复用已有[同一签票上的共同保护构造](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CROSSED-CLAIMS-PROOF.md)，而非把本例的二选一永远化。
+After A is drawn, carrying out the result gives A determinate protection in this allocation; this does not violate the original half-and-half chance, because the scope of the original commitment was the allocation before the draw. Rewriting "fairness" as re-halving each time a piece of information is obtained would conflict with this valid settlement. The living reasons of the one not chosen still hold, but do not thereby automatically give rise to a demand for another draw over the same resource. If new support can be jointly realized, the existing [construction of joint protection on the same ticket](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CROSSED-CLAIMS-PROOF.md) should be reused, rather than making the either-or of this example permanent.
 
-由此得到的新增要求是：**选择规则的学习和修订必须保留仍有效的历史关系，或保留足以表达其实际要求的摘要。** 仅保存当前需求和最终概率，即便包括全部最终相关性，仍可能不足。此处不要求保存过去的全部细节；要求辨明哪些形成的承担尚未履行、哪些机会已兑现、哪些根据已经被解除或改变。
+The new requirement thus obtained is: **the learning and revision of a selection rule must retain the historical relations that are still valid, or a summary adequate to express their actual requirements.** Saving only the present needs and the final probabilities, even including all the final correlations, may still be insufficient. It is not required here to save all details of the past; what is required is to identify which undertakings that formed are not yet fulfilled, which chances have been honoured, and which grounds have been released or changed.
 
 A warranted settlement can create a bounded implementation reason; this substantive commitment is inherited and defended, not proved by output equality. The new requirement concerns an adequate representation of live historical relations during selector revision. No permanent opposition between an individual and a collective is assumed: differentiated claims and coordinating capacities form within the same provision history.
 
-## 9. 保留履行根据也保留纠正 / Fidelity with genuine correction
+<a id="9-保留履行根据也保留纠正--fidelity-with-genuine-correction"></a>
+## 9. Fidelity with genuine correction
 
-既成事实本身没有这种权威。原程序若有胁迫、歧视、执行错误，或者新证据表明所选通路无法保护，须重新判断原根据及适当回应。新基本冲突也可能要求修订；是否足以改变安顿，不能只靠“有新情况”三个字决定，因为已有正当承担可能本来就覆盖这类风险。
+The accomplished fact has no such authority in itself. If the original procedure involved coercion, discrimination or errors of execution, or new evidence shows that the chosen channel cannot protect, the original ground and the appropriate response must be judged afresh. A new basic conflict may also require revision; whether it suffices to change the settlement cannot be decided by the three words "there is a new situation", because the justified undertaking may already have covered this kind of risk.
 
-特别要保留两项区别。第一，随结果而发现的真实失效可能要求纠正，因此不能笼统禁止“依结果修订”。第二，事先明定且有根据的两阶段安排，可以让第一轮只作演练、第二轮才确定分配；相同的两次物理抽签，在这种历史里并没有撤销首轮正式结果。事先披露仍不独自证明条款公平，事后单方面改称“刚才不算”也不能冒充原安排。
+Two distinctions in particular should be kept. First, a real failure discovered with the result may require correction, so "revision according to outcome" cannot be broadly forbidden. Second, a two-stage arrangement fixed beforehand and well grounded can let the first round be only a rehearsal and make the second round the one that determines the allocation; two physical draws that are the same do not, in such a history, undo the formal first-round result. Prior disclosure does not by itself prove the terms fair, and unilaterally saying afterwards that "that didn't count" cannot pass for the original arrangement.
 
-同期已完成的[同等基本风险分担 RS](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing)也须直接复用：有根据的新认识可以使原随机选择改为避免双方损失的知情选择。保留已经有效确定的保护，与永远冻结此前的风险算法，不是一项要求。要接续的是仍成立的根据；当实际支持或认识改变了它的适用条件时，旧算法也应重新评价。
+The [equal basic risk-sharing RS](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing) completed in the same period must also be reused directly: a well-grounded new knowledge can turn the original random choice into an informed choice that avoids loss to both sides. Keeping a protection that has already been validly determined and freezing for ever the earlier risk algorithm are not one requirement. What is to be continued is the ground that still holds; when actual support or knowledge changes its conditions of application, the old algorithm should also be reappraised.
 
-所以，有根据的修订要说明：哪项根据改变，哪项要求仍然有效，拟议改变为什么能回应前者并交代后者。只要原目标及其根据仍成立，替换实现代码、接手者或计算过程可以保留逐次结果；两次这样的保留修订仍能接续原结果，已有新 Lean 证明。真正改变履行要求的修订则需要实质说明，不能由这条实现定理代办。
+So a well-grounded revision must explain: which ground has changed, which requirement remains valid, and why the proposed change responds to the former and accounts for the latter. As long as the original target and its grounds still hold, replacing the implementation code, the successor or the computational process can keep the result at each time; two such preserving revisions can still continue the original result, which has a new Lean proof. A revision that really changes the requirement of fulfilment needs substantive explanation, and this implementation theorem cannot take its place.
 
 Defects, warranted releases and changed basic circumstances remain possible grounds for correction. Outcome-dependent evidence may be genuine. A warranted rehearsal differs from an already settled award, even with the same draws. Neither disclosed terms nor historical occurrence alone establish legitimacy. The positive compositional guarantee applies only while the same supplied target remains warranted.
 
-## 10. 新结果的范围与未解连接 / Scope and remaining connection
+<a id="10-新结果的范围与未解连接--scope-and-remaining-connection"></a>
+## 10. Scope and remaining connection
 
-[研究整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-REVISION-INTEGRATION.md)保留肯定论证、六项实质反审、Broome 的机会与实际满足区分，以及 Kolodny／Wallace 对保证根据的循环性批评。本文并未从预期服从推出承诺有效，也未宣称解决承诺理论之争。[源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceRevision.lean)与[实际回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-revision-verification.json)给出7项新定理／15项声明空依赖审计，涵盖最终分布、分支条件、表示不足与保持修订的组合；独立验收及经验对应未声称完成。
+The [research integration](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-REVISION-INTEGRATION.md) keeps the affirmative argument, six substantive counter-reviews, Broome's distinction between chance and actual satisfaction, and the criticism by Kolodny and Wallace of the circularity of the ground of assurance. This text has not derived the validity of a promise from expected compliance, nor claimed to have settled the dispute over the theory of promising. The [source](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceRevision.lean) and the [actual receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-revision-verification.json) give 7 new theorems / 15 declaration audits with empty dependencies, covering the final distribution, branch conditions, insufficiency of the representation, and the composition of preserving revisions; independent acceptance and empirical correspondence are not claimed to be complete.
 
-本轮推进了第6节所列机会连接的**历史接续部分**，没有完成初始分配的全部根据。已有 LR 的局部不等损失比较和 RS 的对称分担都保留为成果。超出这些范围，下一实质问题是：不等要求，或以增加基本受损机会换取较公平暴露，怎样支持初始机会分配；真正变化的基本冲突何时足以改变有效安顿。[RS 第14节](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#14-push-beyond-symmetry-fairer-exposure-can-add-basic-harm)已给出同等严重性下（10%、40%）与（31%、31%）的具体未决比较，计算已完成，缺的是比较根据。再增加一个概率计算、固定任意权重或重复已经完成的承诺区分，都不能替代它。
+This round has advanced the **historical-continuation part** of the chance connection listed in section 6, and has not completed the whole ground of the initial allocation. The existing LR's local comparison of unequal losses and RS's symmetric sharing are both kept as results. Beyond these scopes, the next substantive question is: how unequal claims, or trading an increase of basic-loss chance for fairer exposure, support the initial allocation of chances; and when a genuinely changed basic conflict suffices to change a valid settlement. [Section 14 of RS](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#14-push-beyond-symmetry-fairer-exposure-can-add-basic-harm) has given a concrete undecided comparison between (10%, 40%) and (31%, 31%) under equal gravity; the computation is done, and what is missing is the ground of comparison. Adding another probability computation, fixing arbitrary weights, or repeating the commitment distinctions already completed, cannot replace it.
 
 Completed: a concrete history-sensitive requirement on revising selectors, supported by seven new checked mathematical diagnostics and an explicit inherited normative premise. Beyond completed LR and symmetric RS, initial chance allocation, fairer exposure with added basic harm, and changed conflicts with valid settlements remain unresolved. Existing allocation, agreement, coupling and joint-risk studies retain their own contributions and are not reopened.
 
 <a id="risk-priority-near-parity"></a>
-## 11. 公平的代价须沿整个可行范围判断 / Assessing the cost of fairness
+<a id="11-公平的代价须沿整个可行范围判断--assessing-the-cost-of-fairness"></a>
+## 11. Assessing the cost of fairness
 
-第10节留下的比较已经可以再向前推进。既有 RS 的无额外整体损失分担直接复用。现在固定其有损案例：两条支持路线分别给甲乙（10%、40%）与（80%、10%）的基本受损风险；各处损失的程度、恢复、关系后果及权限可比，同步受损被给定的联合规律排除。它们是同一供给活动中的不同承受位置，不是两份独立的价值实体。
+The comparison left by section 10 can be carried further. The existing RS sharing without additional overall loss is reused directly. Now fix its costly case: two support routes give A and B basic-loss risks of (10%, 40%) and (80%, 10%) respectively; the degree, recovery, relational consequences and authority of the losses at each place are comparable, and simultaneous loss is excluded by the given joint law. They are different positions of bearing within the same provision activity, not two independent entities of value.
 
-以七成机会选择第一条路线，可得（31%、31%）。但可行范围不只包括它和（10%、40%）：九成选择第一条路线，会得到（17%、37%）。后者仍比原来均衡，出现某项基本损失的机会却为54%，介于50%与62%之间。**这个中间数只是检验例，不是已认可的推荐分配。** 实际混合、足够细的可行调整及其代价均须有根据。
+Choosing the first route with a seventy percent chance gives (31%, 31%). But the feasible range includes not only it and (10%, 40%): choosing the first route with ninety percent gives (17%, 37%). The latter is still more balanced than the original, while the chance of some basic loss occurring is 54%, between 50% and 62%. **This middle figure is only a test example, not an approved recommended allocation.** Actual mixtures, sufficiently fine feasible adjustments and their costs must all have grounds.
 
-从完全相等稍向第一条路线移动，风险变为（31−7δ、31+3δ），其中δ在此以百分点计算。甲减少7δ，乙增加3δ，出现某项损失的机会减少4δ。新的规范问题是：**越接近平等，仍以7比3的保护代价继续消除差距，凭什么始终值得？** 把最终相等叫作公平，尚未回答这个问题。
+Moving slightly from exact equality toward the first route, the risks become (31−7δ, 31+3δ), where δ is computed here in percentage points. A decreases by 7δ, B increases by 3δ, and the chance of some loss occurring decreases by 4δ. The new normative question is: **the closer one is to equality, by what right is it always worth continuing to eliminate the gap at a protection cost of 7 for 3?** Calling final equality fair has not yet answered this question.
 
 The completed symmetric RS result is reused. Its asymmetric family permits partial mixtures. The checked 7-for-3 exchange identifies the price of continuing toward equality. Neither the lowest sum nor the lowest maximum supplies its own normative warrant. Actual feasible granularity, joint probability correspondence and permissions remain conditions.
 
-## 12. NP：不让微小差距自动产生固定优先倍数 / The NP candidate
+<a id="12-np不让微小差距自动产生固定优先倍数--the-np-candidate"></a>
+## 12. The NP candidate
 
-**NP 的主张：**在上述同等基本要求、没有独立可说明的门槛或历史差别的范围内，暴露差异趋于微小时，不应仅凭这点差异的出现，就赋予稍不利一方每单位减险以固定而显著的额外优先力度。这容许在足够接近平等时，以较小的增险换取另一处较大的基本减险，即使结果不是完全相等。
+**NP's claim:** Within the range of equal basic requirements above, with no independently explainable threshold or difference of history, when the difference in exposure tends to be slight, one should not, merely because this slight difference appears, give the slightly worse-off side a fixed and significant extra priority for each unit of risk reduction. This allows, when sufficiently close to equality, trading a smaller increase of risk for a larger basic reduction of risk elsewhere, even if the result is not exact equality.
 
-这是新增的、可争论的规范承诺。它比“公平有意义”更强，也比评价结果随风险变化而平稳改变更强；不是由 G0、J2、RS 或物理连续性直接证明。这里复用 LR 对局部规范承诺的公开处理方式，研究的是不同的比较对象。
+This is an added, contestable normative commitment. It is stronger than "fairness has meaning", and stronger than that the appraisal changes smoothly as the risk changes; it is not directly proved by G0, J2, RS or physical continuity. It reuses here LR's open way of treating a local normative commitment, and studies a different object of comparison.
 
-其力度要说清楚：对任何固定的大于1的保护交换比，只要足够接近平等、调整也足够小，并满足上述实际条件，就容许较大的减险胜过较小的增险。这是候选比较承诺，不是已证明的极限定理或校准值。若只说优先力度有限，尚推不出7比3这项结论。
+Its strength should be stated clearly: for any fixed protection exchange ratio greater than 1, so long as one is sufficiently close to equality, the adjustment is sufficiently small and the actual conditions above are satisfied, a larger risk reduction is allowed to beat a smaller risk increase. This is a candidate comparative commitment, not a proved limit theorem or a calibrated value. Saying only that the strength of priority is bounded does not yet yield the 7-for-3 conclusion.
 
-正面根据在于：两处基本生活在整个调整过程中始终值得保护。较高暴露可以支持额外关切，但当差距缩小，而损失性质、支承能力、承担和权利均未发生关系上的转折时，该差距本身并未说明为何始终应以固定的大倍数优先。若精确相等仍有这种额外效力，就需要为它承担的规范作用另给理由。我们倾向于要求这项解释，保留每一处真实减险的分量；这不是对所有平等论的逻辑反驳。
+The affirmative ground is that the two basic lives remain worth protecting throughout the adjustment. Higher exposure can support extra concern, but when the gap narrows and there has been no relational turning point in the nature of the loss, the capacity of support, undertakings and rights, that gap in itself has not explained why a fixed large multiple should always take priority. If exact equality still has such extra force, a further reason must be given for the normative role it plays. We incline to require this explanation, retaining the weight of each real risk reduction; this is not a logical refutation of all egalitarian views.
 
-**若接受 NP，且确有足够细、代价已计入的可行调整，（31%、31%）便不是这一范围内的最佳选择：应允许稍微离开完全相等，以取得更大的基本减险。** 这没有确定应当离开多远，更没有直接推出（10%、40%）或（17%、37%）最好。未校准“足够近”的实际范围之前，不能擅自把某个有限幅度称为小到足以适用。
+**If NP is accepted, and there are indeed sufficiently fine feasible adjustments whose costs are counted, then (31%, 31%) is not the best choice within this range: a slight departure from exact equality should be allowed in order to obtain a greater basic risk reduction.** This does not determine how far to depart, still less does it directly imply that (10%, 40%) or (17%, 37%) is best. Before the actual range of "sufficiently close" is calibrated, one may not presume to call some finite magnitude small enough to apply.
 
-一个有条件的实现接口是：在相关局部比较里，减险理由有下界L，增险反对理由有上界U；若7L大于3U，则该次调整得到支持。Lean 检查了这个接口的推论，但没有提供L、U的伦理数值。它不是全球效用函数，任意拟合的权重也不能认证自身。NP 可以通过具体比较而非数值尺度表达；这个接口只是足够条件。
+A conditional implementation interface is: in the relevant local comparison, the reason of risk reduction has a lower bound L, and the reason against risk increase has an upper bound U; if 7L is greater than 3U, the adjustment is supported. Lean checked the consequence of this interface, but it provides no ethical values for L and U. It is not a global utility function, and arbitrarily fitted weights cannot certify themselves. NP can be expressed through concrete comparisons rather than a numerical scale; this interface is only a sufficient condition.
 
 NP is an additional commitment about relative priority near parity, not a consequence of equal standing or mere continuity. Its rationale is that a diminishing disadvantage does not by itself establish a fixed substantial premium over another matched basic protection. With NP and sufficiently fine feasible departures, exact equalization loses its claim to be best on this frontier. No departure size or universal scale follows.
 
-## 13. 强对手、证明范围与下一连接 / Rival, proof scope and next connection
+<a id="13-强对手证明范围与下一连接--rival-proof-scope-and-next-connection"></a>
+## 13. Rival, proof scope and next connection
 
-两种诊断规则显出争点，却没有被采纳为伦理标准。第一种把两处风险各自平方后相加。在相同分母下，它给（17、37）、（10、40）、（31、31）的值分别为1658、1700、1922，因而偏好付出部分代价的分担。它还在明示的小调整条件下偏好离开完全相等。这说明“容许公平有代价”与“不追求精确相等”可以相容，不证明平方就是生活价值的尺度。
+Two diagnostic rules bring out the point at issue, though they were not adopted as ethical standards. The first squares the two risks and adds them. Under the same denominator it gives (17, 37), (10, 40), (31, 31) the values 1658, 1700, 1922 respectively, and thus prefers the sharing that pays part of the cost. It also prefers leaving exact equality under the explicit conditions of small adjustment. This shows that "allowing fairness to have a cost" and "not pursuing exact equality" are compatible, and does not prove that the square is the measure of the value of life.
 
-第二种诊断为两倍风险总和，加上两者差距的绝对值。这个对手对双方一视同仁；一方减险而另一方不增险时严格改善；总风险不变时又支持消除差距。Lean 还证明了一个统一的线性变化界。然而，它在上述整个调整范围内仍偏好完全相等：每离开一步，其值增加2δ。
+The second diagnostic is twice the sum of the risks plus the absolute value of the gap between them. This opponent treats both sides alike; it is a strict improvement when one side reduces risk and the other does not increase; and when the total risk is unchanged it supports eliminating the gap. Lean also proved a uniform linear bound of variation. However, it still prefers exact equality over the whole range of adjustment above: each step away raises its value by 2δ.
 
-因此，**对称、减险、无损均衡与变化有界，加在一起仍不能证明 NP。** 对手可以主张，完全相等本身是一种值得固定额外力度保护的关系；这不等于认为某一生命天生更贵。本轮争论的是这项关系意义能否支持当前代价，不是对手的算术是否矛盾。“连续”的一般表述也不能替代这场论证。
+Therefore **symmetry, risk reduction, costless balancing and bounded variation, taken together, still cannot prove NP.** The opponent can hold that exact equality is itself a relation worth protecting with a fixed extra force; this does not amount to considering some life inherently more precious. What is in dispute this round is whether the significance of this relation can support the present cost, not whether the opponent's arithmetic is contradictory. A general statement of "continuity" also cannot replace this argument.
 
-若实际历史存在不平等权力、先前损害、共同支持崩塌的门槛，或已经成立的机会要求，不能先删去它们，再凭相近百分数套用 NP。没有细分可行方案的菜单也不满足本轮条件。非二元的整体比较要求保留这些实际关系，而非把两项风险当作整个生活。
+If the actual history contains unequal power, earlier harm, a threshold of collapse of shared support, or a chance claim already established, one may not first delete them and then apply NP on the strength of similar percentages. A menu without finer feasible plans does not meet the conditions of this round either. A nondual whole comparison requires keeping these actual relations, and not treating the two risks as the whole of life.
 
-[研究整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RISK-PRIORITY-INTEGRATION.md)保存肯定论证、六项实质反审及 Atkinson、Rowe／Voorhoeve 的原典范围。[源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RiskPriority.lean)与[实际回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-verification.json)给出13项新定理／21项声明审计：9项依赖为空，其余只涉及 Lean 标准依赖。数学验证覆盖调整、代价、两个诊断及条件接口；**没有把 NP 的规范根据、实数分析或实际校准写成已经证明。** 无独立验收或新经验结果。
+The [research integration](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RISK-PRIORITY-INTEGRATION.md) keeps the affirmative argument, six substantive counter-reviews and the scope of the primary sources of Atkinson and Rowe/Voorhoeve. The [source](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RiskPriority.lean) and the [actual receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-verification.json) give 13 new theorems / 21 declaration audits: 9 have empty dependencies and the rest involve only Lean's standard dependencies. The mathematical verification covers the adjustment, the cost, the two diagnostics and the conditional interface; **the normative ground of NP, real analysis, or actual calibration are not written as already proved.** No independent acceptance or new empirical result.
 
-本轮将开放问题推进为一个明确候选：在相应范围内，有理由让优先力度随暴露差距缩小，而非机械地一直均衡到底。下一连接是沿剩余的不等风险区间，以实际生活后果和独立比较案例辩护优先力度及其适用范围。具体最优混合、可为公平增加多少基本受损机会，仍需继续论证；本轮的强对手和未定范围须一起保留。
+This round advances the open question to an explicit candidate: within the corresponding scope, there is reason for the strength of priority to diminish as the exposure gap narrows, rather than mechanically balancing to the very end. The next connection is to defend the strength of priority and its scope of application, along the remaining interval of unequal risk, by actual consequences for life and independent comparison cases. The concrete optimal mixture, and how much chance of basic loss may be added for fairness, still need further argument; the strong opponent and the undetermined scope of this round must be kept together.
 
 The quadratic diagnostic permits partial costly sharing; the corner diagnostic preserves exact-equality preference despite symmetry, strict respect for risk reduction, costless balancing and a uniform variation bound. Thirteen checked theorems and twenty-one audits support these diagnostics, not NP's ethical warrant. The remaining task is substantive comparison and calibration across the unequal-risk interval, with actual history and support retained. No universal scalar, unique optimal lottery or completed normative universality is claimed.
 
 <a id="risk-conditioning-and-continuing-reasons"></a>
-## 14. 风险优先比较哪一阶段 / Which stage does risk priority concern?
+<a id="14-风险优先比较哪一阶段--which-stage-does-risk-priority-concern"></a>
+## 14. Which stage does risk priority concern?
 
-2026-10-08。继续第13节，先检验校准的对象。风险较高意味着什么，取决于所指的基本损失、实际支持、尚未完成的过程以及有效历史；一个百分数不能独自把生活处境排好。上一轮用平方指标说明部分有损分担可以得到支持，没有因此取得一条可在所有时点重复执行的规则。
+2026-10-08. Continuing section 13, first test the object of calibration. What higher risk means depends on the basic loss referred to, the actual support, the process not yet completed and the valid history; a percentage cannot by itself rank the situations of life. The previous round used the squared index to show that partial costly sharing can be supported, and did not thereby obtain a rule that can be repeated at all times.
 
-在同一支持过程中，先有四分之一机会进入甲确定受损的分支，四分之一进入乙确定受损的分支，二分之一进入仍可安排支持的分支。两个候选方案仅在第三分支有差异：P 为（10%、40%），M 为（17%、37%）。前两分支中的损失同样真实，但在本次两方案之间不受影响；两处同时受损在给定规律中不发生。实际进入第三分支时，前两分支并未发生，支持尚待安排。
+In the same support process, there is first a one-in-four chance of entering the branch in which A is certainly harmed, a one-in-four chance of entering the branch in which B is certainly harmed, and a one-half chance of entering the branch in which support can still be arranged. The two candidate plans differ only in the third branch: P is (10%, 40%), M is (17%, 37%). The losses in the first two branches are equally real, but are not affected between the two plans in this comparison; simultaneous loss at both places does not occur under the given law. When the third branch is actually entered, the first two branches have not occurred and support remains to be arranged.
 
-| 比较阶段 | P 的甲乙风险 | M 的甲乙风险 |
+| Stage of comparison | A and B risks of P | A and B risks of M |
 |---|---|---|
-| 分支发生前的条件计划 | 30%、45% | 33.5%、43.5% |
-| 实际进入可干预分支后的行动 | 10%、40% | 17%、37% |
+| Conditional plan before the branches occur | 30%, 45% | 33.5%, 43.5% |
+| Action after actually entering the branch that can be intervened in | 10%, 40% | 17%, 37% |
 
-平方指标在事前偏好 P，进入第三分支后偏好 M。两次比较各用自己的共同分母，没有跨尺度直接比较整数分数。新 Lean 事件模型核对了完整联合计数、条件计数、分支外相同后果及分支内与旧例的对应；它不是拼合两个互不相容的概率表。
+The squared index prefers P beforehand, and prefers M after the third branch is entered. Each of the two comparisons uses its own common denominator, and integer scores are not compared directly across scales. The new Lean event model verified the complete joint counts, the conditional counts, the identical consequences outside the branch, and the correspondence within the branch to the old example; it is not a splicing together of two incompatible probability tables.
 
-这揭示一个具体限制：**按原平方指标选择事前计划、在每个阶段继续最小化当前平方指标、保证执行原计划，这三项要求在此例不能同时满足。** 不是证明公平不合理，也不是证明 NP 错误；平方指标始终只是诊断。第一阶段在模型中实际发生，单纯改变观察者的无知并非本例的物理解释。
+This reveals a concrete limitation: **choosing the plan beforehand by the original squared index, continuing at each stage to minimize the current squared index, and guaranteeing execution of the original plan cannot all be satisfied in this example.** It does not prove that fairness is unreasonable, nor that NP is wrong; the squared index is only ever a diagnostic. The first stage actually occurs in the model; merely changing the observer's ignorance is not the physical interpretation of this example.
 
 One finite provision history yields opposite strict quadratic rankings before and after an actual branch resolution. The checked obstruction concerns reusing this diagnostic as a dynamically stable rule. It does not refute fair chances, NP or probability conditioning, and it does not compare unnormalised scores across stages.
 
-## 15. 接续的是根据，不只是旧分数 / Continuing the grounds of judgment
+<a id="15-接续的是根据不只是旧分数--continuing-the-grounds-of-judgment"></a>
+## 15. Continuing the grounds of judgment
 
-在尚未作出分配的版本里，事前的两个方案只是研究提案，尚未据此授予机会或建立承担。实际进入第三分支后，仍把30%／45%当成 P 的当前未来风险，就误述了已经形成的支持条件。正确对应是10%／40%。这项纠正无需新增伦理权重，也不直接决定 P、M 的伦理排序。
+In the version where no allocation has yet been made, the two plans beforehand are only research proposals, and no chances have been granted or undertakings established on that basis. After actually entering the third branch, still taking 30%/45% as P's present future risk would misstate the support conditions that have already formed. The correct correspondence is 10%/40%. This correction needs no added ethical weight, and does not directly decide the ethical ranking of P and M.
 
-如果事前确已组织机会、形成正当承担、产生信赖或其他持续后果，就必须一并保留。旧概率不是永久义务的来源，概率已经更新也不是取消历史根据的理由。[有效承担与机会充分性](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md)和前面的机会修订成果直接适用。仅仅计算过一个分数，与实际组织了何种共同未来不同；历史的意义也不限于明文承诺。
+If beforehand chances were indeed organized, a justified undertaking formed, reliance arose or other continuing consequences followed, they must be retained together. The old probability is not the source of a permanent obligation, and that the probability has been updated is not a reason to cancel the historical ground. [Valid undertakings and the adequacy of chances](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md) and the earlier results on chance revision apply directly. Having merely computed a score differs from having actually organized a joint future; and the significance of history is not confined to explicit commitments.
 
-因此，**当前可保护的生活支持继续回应，仍有效的历史关系约束回应怎样进行。** 对人、机构或 AI 的选择规则，这要求同时交代当前风险与实际支持的对应，以及先前理由在新阶段的效力。保留一个不变分数不能替代这两项交代；每次重新算分也不自动完成它们。这些是同一历史中的解释与规范关系，不是两个独立领域。
+Therefore **the living support that can presently be protected continues to be answered, and the historical relations that are still valid constrain how the response is carried out.** For selection rules of persons, institutions or AI, this requires giving at once an account of the correspondence between present risk and actual support, and of the force of the earlier reasons in the new stage. Keeping an unchanged score cannot replace these two accounts; recomputing the score each time does not automatically complete them. These are relations of explanation and norm within the same history, not two independent domains.
 
-还未揭晓的共同分支不能一律删除：事前如何组织机会本身可能值得关切。这里没有偷偷采用所有共同背景都可抵消的公理。已经到达的分支则须有真实证据；不能任选有利的条件域，也不能用“现在重新开始”更新整体风险许可。既有 RSL／有界修订限制继续有效。
+A joint branch not yet revealed cannot always be deleted: how chances were organized beforehand may itself deserve concern. No axiom that all common background can be offset has been secretly adopted here. A branch already arrived at must be backed by real evidence; one may not pick a favourable domain of conditions at will, nor use "start over now" to update the permission of overall risk. The existing RSL/bounded-revision limits remain in force.
 
 Correct current risk and warranted historical relations must both enter continuing judgment. A never-adopted proposal is not an already-conferred chance; an actual conferred chance or other continuing effect cannot simply be deleted by updating probabilities. This is a scoped requirement on a proposed alignment rule, not a new universal scalar or a complete dynamic implementation.
 
-## 16. 对 NP 与理论路线的修正 / Consequences for NP and the programme
+<a id="16-对-np-与理论路线的修正--consequences-for-np-and-the-programme"></a>
+## 16. Consequences for NP and the programme
 
-NP 保持原有的局部候选范围。**校准“足够接近平等”之前，须明确所用概率属于哪个决策阶段和支持条件。** 不能因某个事前表里的风险差距缩小，就断定后来行动中的基本要求差距也同比缩小；不能未经论证，让不同背景和条件域共用一条优先曲线。这个结果既不增加任意权重，也不证明 NP 与动态一致性之间的一般不可能定理。
+NP keeps its original scope as a local candidate. **Before calibrating "sufficiently close to equality", one must make explicit to which decision stage and support conditions the probabilities used belong.** One cannot, because the gap of risk in some prior table narrows, conclude that the gap of basic requirements in the later action also narrows in the same proportion; nor, without argument, let different backgrounds and domains of conditions share one priority curve. This result neither adds arbitrary weights nor proves a general impossibility theorem between NP and dynamic consistency.
 
-强对手可以把实际授予的机会视为有持续意义，并据此保存原安排；这样的理论没有被本例排除。另一种理论可以允许有理由的修订，但要承担其原计划为何不构成有效约束的说明。我们保留两者，拒绝仅凭前后排序不同就断言失德或非理性。
+The strong opponent can regard an actually conferred chance as having continuing significance and preserve the original arrangement accordingly; such a theory is not ruled out by this example. Another theory can allow a revision that has reasons, but must bear the explanation of why its original plan does not constitute a valid constraint. We keep both, and refuse to declare vice or irrationality merely from the difference between the earlier and later rankings.
 
-[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md)包含肯定论证、六项作者反审及 Bradley／Stefánsson 原典评估。[源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RiskConditioning.lean)和[实查回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-conditioning-verification.json)记录10项新定理／21项审计，16项空依赖、5项仅标准依赖；没有独立验收或新经验校准。旧13项 NP 诊断、机会历史和联合风险结果分别保留，不重新计数。
+[This round's integration](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md) contains the affirmative argument, six author counter-reviews, and the assessment of the primary sources of Bradley and Stefánsson. The [source](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RiskConditioning.lean) and the [actual receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-conditioning-verification.json) record 10 new theorems / 21 audits, 16 with empty dependencies and 5 depending only on the standard ones; no independent acceptance or new empirical calibration. The old 13 NP diagnostics, the chance history and the joint-risk results are each kept, and are not recounted.
 
-现在已经确定：上一轮的静态相容性见证不足以完成规则自我修订的对齐，必须补上根据在变化中的接续。余下的实质任务仍是：在已明确当前支持、阶段及有效历史的案例里，论证有损分担的力度和范围。P、M 的最优性尚未成立；不能让新的动态诊断冒充已经完成的伦理校准。
+It is now established that the static compatibility witness of the previous round is insufficient to complete the alignment of a rule's self-revision, and the continuation of grounds through change must be added. The substantive task that remains is: in cases where the present support, the stage and the valid history are clear, to argue for the strength and scope of costly sharing. The optimality of P and M has not been established; the new dynamic diagnostic cannot pass for a completed ethical calibration.
 
 The static-to-sequential extension has now been tested and fails for the unqualified quadratic diagnostic. The next substantive comparison must fix current support, decision stage and continuing history before justifying a costly-sharing range. No best lottery, empirically calibrated NP neighborhood or completed universal grounding follows.
 
 <a id="open-form-realization-under-revision"></a>
 
-## 17. 开放的未来怎样实际形成 / Realizing an open future
+<a id="17-开放的未来怎样实际形成--realizing-an-open-future"></a>
+## 17. Realizing an open future
 
-2026-10-08接续。新版[可见未来中的正面根据](../results/records/positive-ground-open-futures.md)已经完成一个重要推进：同一个回应，在每段当前有根据的接续中形成某种新的生，便可依显式 G0 在每段接续中有正面根据；不必先指定所有接续都出现同一种形态，也不必证明整体严格更好。这里直接复用这一结论。前节尚未完成的有损分担校准保留其范围，不能再把它当作一切正面伦理判断的门槛。
+Follow-up of 2026-10-08. The new version of [the positive ground in visible futures](../results/records/positive-ground-open-futures.md) has completed an important advance: if the same response forms some new life in every currently grounded continuation, it can, by the explicit G0, have a positive ground in every continuation; there is no need first to stipulate that all continuations show the same form, nor to prove that the whole is strictly better. This conclusion is reused here directly. The calibration of costly sharing left unfinished in the previous section keeps its scope, and can no longer be taken as a threshold for all positive ethical judgments.
 
-接下来需要区分两项主张：**每次选到的路线单独持续下去能够实现某种生成，与不断修订路线的实际历史能够实现某种生成。** 后者不由前者自动得到。两者谈的是同一共同活动：已形成的准备、接下来的安排、路线修订和实际成果都在其中发生；“路线”是活动的组织方式，不是一个外部主体支配的独立世界。
+Next two claims need to be distinguished: **that the route chosen at each time, continued alone, can realize some generation; and that the actual history of continually revising the route can realize some generation.** The latter does not follow automatically from the former. Both speak of the same shared activity: the preparation already formed, the arrangement to follow, the revisions of route and the actual results all occur within it; a "route" is a way the activity is organized, not an independent world governed by an outside subject.
 
-新的受检反例只有两个准备阶段。甲路线先把第一阶段推进到第二阶段，再形成甲成果；乙路线先把第二阶段推进到第一阶段，再形成乙成果。每条路线单独持续最多两步便完成，每个实际采取的步骤也确实推进了当时那条路线。但是，在第一阶段总选甲、到了第二阶段又总改选乙，就可以永远在准备阶段之间往返。每次宣称“再两步就能形成”，可以始终局部属实，却没有任何成果实际形成。
+The new checked counterexample has only two stages of preparation. Route A first advances the first stage to the second stage, then forms result A; route B first advances the second stage to the first stage, then forms result B. Each route continued alone is completed in at most two steps, and every step actually taken did advance the route that was then current. But if at the first stage one always chooses A, and on reaching the second stage always switches to B, one can go back and forth between the stages of preparation for ever. Each time the claim "two more steps and it will form" can be locally true, yet no result is ever actually formed.
 
-这不是说一切准备都没有价值。反例中的“尚未形成”只针对指定的完成事件；若准备本身已形成真实能力、关系或生活内容，其正面意义应另行如实计入。失败的是把逐次的完成前景直接当作整段活动的完成保证。
+This does not say that all preparation has no value. The "not yet formed" in the counterexample concerns only the specified completion event; if the preparation itself has formed a real capacity, relation or content of life, its positive significance should be counted separately and truthfully. What fails is taking the prospect of completion at each time directly as a guarantee of completion of the whole activity.
 
 The completed positive-ground result allows the form of future generation to remain open. A new checked counterexample shows that individually terminating rules, even with progress at every executed step under its current rule, can fail forever when revised. This concerns a specified realization claim; it does not deny the possible value of preparation itself.
 
-## 18. 修订可以改变形态，同时接过已有进展 / Revision can retain progress and change form
+<a id="18-修订可以改变形态同时接过已有进展--revision-can-retain-progress-and-change-form"></a>
+## 18. Revision can retain progress and change form
 
-一条已经实查的充分途径是：**新路线接过当前实际阶段的剩余实现要求，而不是重新取得一份完整期限。** 具体地，为所声称的有限实现界限提供一个自然数证书。只要尚未完成，当前路线的实际步骤须使证书下降；换用下一条路线时，对已经到达的同一阶段，新证书不得高于旧路线此时的证书。这个数是剩余步数的证明工具，不是善、复杂性、风险或人的分数。
+A sufficient route that has been checked is: **the new route takes over the remaining realization requirement of the current actual stage, rather than acquiring a full deadline afresh.** Concretely, provide a natural-number certificate for the finite realization bound claimed. As long as it is not complete, the actual step of the current route must lower the certificate; when switching to the next route, for the same stage already reached, the new certificate must not be higher than the old route's certificate at that moment. This number is a proof tool for the number of remaining steps, not a score of goodness, complexity, risk or a person.
 
-这个接口直接接入已完成的[有限更新证明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-RENEWAL-MATH.md)。初值不超过 B 时，在编号0至 B的某个事件上完成；若每个编号代表一次实际转变，就是至多 B+1次转变，不是未经对应的钟表期限。再明确完成事件实际形成新的生成内容，这个输出便满足既有正面根据定理的输入，依 G0取得某项正面根据。活动确实发生、支持足够、所见范围覆盖实际情形，以及完成与生的对应仍须成立。
+This interface connects directly to the completed [finite renewal proof](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-RENEWAL-MATH.md). When the initial value does not exceed B, completion occurs at some event numbered 0 to B; if each number represents one actual transition, this is at most B+1 transitions, not a clock deadline without correspondence. Further stipulating that the completion event actually forms new generative content, this output satisfies the input of the existing positive-ground theorem, and obtains some positive ground by G0. That the activity does take place, that the support is sufficient, that the range seen covers the actual cases, and that the correspondence of completion with life holds, must still be satisfied.
 
-新构造也检查了真正改变成果的修订：走过甲路线的第一步后，改走一条当前一步即可形成乙成果的路线。剩余证书仍为1，形成内容却由甲变为乙。因此，保留实现根据不要求冻结最初方案或唯一未来。若先前正当承担的恰恰是甲成果，乙成果是否能够接替，仍由实际承担内容决定；“都属于生成”不足以取消其差别。
+The new construction also checked a revision that genuinely changes the result: after taking the first step of route A, switch to a route that can form result B in one step from the current stage. The remaining certificate is still 1, but the content formed changes from A to B. Retaining the ground of realization therefore does not require freezing the original plan or a unique future. If what was justly undertaken earlier was precisely result A, whether result B can take its place is still decided by the content actually undertaken; "both belong to generation" is not enough to cancel the difference.
 
 A sufficient interface hands the remaining realization certificate between rules along the same history. Current-rule progress and a non-increasing handoff feed the existing finite-renewal theorem; actual generative correspondence then supplies the premise of the existing G0 positive-ground theorem. A checked revision changes the realized form while satisfying the interface. The certificate measures the stated bound, not ethical value, and it does not authorize replacing a specifically owed outcome.
 
-## 19. 对选择规则自身对齐的意义 / Implication for aligning revisable rules
+<a id="19-对选择规则自身对齐的意义--implication-for-aligning-revisable-rules"></a>
+## 19. Implication for aligning revisable rules
 
-由此可以更准确地说，**生成方向可以保持，而具体目的和形成方式可以修订；但若还声称修订后的活动会实现某项善，就须说明实现根据怎样跨过这次修订。** 每次找出一个更吸引人的未来，不能独自完成这一说明。上节的证书交接是一条已经证明的充分途径，并非所有正当修订的必要形式。发现原路线失实，可能正应撤回原保证、改变范围并重新说明承担，不能为了保持证书而坚持错误。
+It can thus be said more accurately that **the direction of generation can be kept while the concrete purpose and the way of formation are revised; but if one also claims that the revised activity will realize some good, one must explain how the ground of realization crosses this revision.** Finding a more attractive future each time cannot complete this explanation alone. The handover of certificates in the previous section is a proven sufficient route, not the necessary form of every justified revision. Discovering that the original route was misrepresented may be precisely the occasion to withdraw the original guarantee, change the scope and restate the undertaking; one should not insist on an error in order to keep the certificate.
 
-这也不把生生收缩成强制生产。持续的生活、照护、休息、关系和已经形成的开放能力可以有当下的正面意义，不必永远靠下一件产品才获得价值。有限完成界限只适用于明确提出的有限实现主张。开放探索未必具有这种保证，仍可依实际根据得到支持；所得正面理由也不独自决定损失的许可、风险分担或最终行动。
+Nor does this shrink 生生 into compulsory production. Continuing life, care, rest, relations and an open capacity that has already formed can have positive significance in the present, and need not always acquire value by the next product. The finite completion bound applies only to a finite realization claim explicitly put forward. Open exploration may not have this guarantee, and can still be supported on actual grounds; the positive reason so obtained also does not by itself decide the permission of losses, the sharing of risk or the final action.
 
-[同一研究中的论证、反审与来源评估](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md#open-form-realization-under-revision)及[规范成果记录](../results/records/open-form-realization-under-revision.md)保存这项组合的准确范围。新增10项 Lean 定理／19项声明审计通过，继承的98项定理／185项审计另列，不重复算作新理论成果。当前接通的是“开放形态下的逐次修订→有条件的实际生成→G0正面根据”；真实内容的识别、具体承担是否容许替换及有损分担校准各保留已有成果与尚未完成的范围。
+The [argument, counter-review and source assessment in the same study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md#open-form-realization-under-revision) and the [record of the normative result](../results/records/open-form-realization-under-revision.md) preserve the exact scope of this combination. 10 new Lean theorems / 19 declaration audits pass, and the inherited 98 theorems / 185 audits are listed separately and not counted again as new theoretical results. What is connected at present is "step-by-step revision under an open form → conditional actual generation → the positive ground of G0"; the identification of real content, whether a specific undertaking allows replacement, and the calibration of costly sharing each keep their existing results and unfinished scope.
 
 The theoretical gain is a checked connection from revisable realization to positive ground with open forms. It neither imposes universal productivity nor makes guaranteed success necessary for justified exploration. A warranted change may retract a failed certificate. Continuing ethical relations and real losses still govern whether the revised activity should be carried out.
 
 <a id="open-form-spine-completion"></a>
 
-## 20. 这条研究线在统一理论中的完成位置 / Completion within the unified theory
+<a id="20-这条研究线在统一理论中的完成位置--completion-within-the-unified-theory"></a>
+## 20. Completion within the unified theory
 
-2026-10-13，P89。第17–19节的成果现已正式接入 Becoming 脊柱。[Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)不另建过程或评价模型：`Run.novel_by_handoff` 在同一 `Frame` 的实际 `Run` 上复用旧有限实现证明，`Run.relevance_by_handoff_of_unrestricted` 把其中同一个新形成见证送入 `Frame.relevance`。另两项适配声明直接调用原 `OpenFutureRevision` 的生产端与消费端，补齐以前只有审计说明的实例化。四项声明都是空公理依赖的已检查推论，不新增独立成果身份。
+2026-10-13, P89. The results of sections 17–19 are now formally connected to the Becoming spine. [Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) builds no separate model of process or appraisal: `Run.novel_by_handoff` reuses the old finite-realization proof on the actual `Run` of the same `Frame`, and `Run.relevance_by_handoff_of_unrestricted` sends the same new-formation witness into `Frame.relevance`. Two further adapter declarations call the production and consumption ends of the original `OpenFutureRevision` directly, completing the instantiation that previously had only an audit note. All four declarations are checked consequences with empty axiom dependencies, and add no independent result identity.
 
-G0 的位置按新总论更新：原定理仍可把 G0 当作显式条件使用；统一理论中，它由所声明的 `Unrestricted` 条件推出。空 Lean 公理报告检查的是这条推论，不是证明该意义条件无须根据。实际执行、有限实现证书、完成与生的对应、活的内容范围，以及意义到理由的实践条件都没有被迁移删除。
+G0's position is updated according to the new general account: the original theorem can still use G0 as an explicit condition; in the unified theory, it follows from the declared `Unrestricted` condition. The empty Lean axiom report checks this consequence, and does not prove that the significance condition needs no ground. Actual execution, the finite-realization certificate, the correspondence of completion with life, the range of living content, and the practical conditions from significance to reasons have not been migrated away.
 
-上轮笼统列出的“研究目的改变怎样取得支持并接续行动”已有[取得根据的目的修订](../results/records/formed-goal-revision-continuation.md)、[在途工作改写](../results/records/acquired-revision-of-pending-task.md)及[作用前复查](../results/records/pending-task-context-applicability.md)可直接复用。它们在给定实践、比较与支持条件下完成相连实现，保留真实损失和失败。这条旧研究线的通用实现问题及正式桥接据此关闭；具体案例的新需求、承担替换与作用对应须具名研究，不再另开同一个通用目的修订模型。
+The "how the revision of a research purpose gains support and continues action" that the previous round listed generally can directly reuse the [acquired-ground revision of purposes](../results/records/formed-goal-revision-continuation.md), the [rewriting of work in progress](../results/records/acquired-revision-of-pending-task.md) and the [pre-action re-check](../results/records/pending-task-context-applicability.md). Under the given practical, comparative and supporting conditions they complete a connected realization, keeping real loss and failure. The general implementation problem of this old line of research and its formal bridge are accordingly closed; the new needs, the replacement of undertakings and the correspondence of effect in specific cases must be studied under their own names, and the same general model of purpose revision is not opened again.
 
-仍开放的是第11–16节的混合基本得失与风险分担力度。统一理论的[生成空间比较](THE-THEORY-OF-BECOMING.md#613-生成的空间不用公理p56-the-generative-space-with-no-axiom-p56)给出扩大与损失的准确范围，却不把互有得失排成唯一顺序。这不是本桥接欠缺，也不能靠迁移旧证明补出权重。[本次完成审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md#spine-bridge-completion)保留前提、反审与后续范围。
+What remains open is the strength of mixed basic gains and losses and of risk sharing in sections 11–16. The [comparison of generative spaces](THE-THEORY-OF-BECOMING.md#613-生成的空间不用公理p56-the-generative-space-with-no-axiom-p56) of the unified theory gives the exact scope of expansion and loss, but does not rank mutual gains and losses into a unique order. This is not a lack of this bridge, nor can weights be supplied by migrating old proofs. [This completion audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md#spine-bridge-completion) keeps the premises, counter-review and later scope.
 
 P89 completes the existing result's formal connection to the shared Frame, Run and relevance definitions, with four checked adapters and no new result identity. G0 remains a condition of the historical theorem and is discharged by the explicit significance condition in the unified account. Existing acquired-goal, pending-task and applicability results close the generic implementation next-step at their stated scopes. Mixed-loss ordering, concrete unmet needs and the warrant of the significance condition remain separate questions; the bridge neither supplies weights nor removes practical premises.

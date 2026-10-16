@@ -1,6 +1,6 @@
-# 交叉损失的局部比较与新形成的共同保护
+> Some passages exist only in the [Chinese edition](CROSSED-CLAIMS-INTEGRATION.zh.md): sections “1. 本轮接续什么”; “2. LR：同等救助理由的局部延续”; “3. 为什么不能把局部延续变成全局删除”; “4. 新通路可以保住机会，同时增加保护”; “5. 对生成性对齐的具体推进”; “6. 验证与完成记录”.
 
-**完整片段与整段损伤 / Complete episodes and whole sustained harm，2026-10-13，P102。** Ren 要求完成两项连接。[原论证§12](CROSSED-CLAIMS-ARGUMENT.md#complete-episodes-and-relational-remainders)区分叙述切分、实际损失分化与比较可替换，给出活动边界、不重复、跨段关系、共同可行与内容相当五项对应准则；恢复间隔不独自认证同等计数。[§13](CROSSED-CLAIMS-ARGUMENT.md#whole-course-comparison-of-sustained-harm)以整段实际修复及有根据参照比较持续损伤，区分不足端与充分端。P100 的中间恢复变为持续阻断时，可取得原不足端的恶化输入，不能直接沿用原充分上端。
+<a id="交叉损失的局部比较与新形成的共同保护"></a>
 
 **Result, delta and interface / 成果、新增量与接入。** Reuses `finite-aggregation-within-restorable-basic-losses` (same record), `practical-judgment-g0-j`, and the interpretive fidelity discipline of `comparison-content-under-regrouping`. The actual boundary/interaction account supplies the content input left explicit by P100. An independently warranted sufficient whole-course anchor plus preservation of other relevant relations supplies the input to `GenerativeLossComparison.strict_rejection_transport` or `strict_improvement_transport`. These are already checked declarations in the P100 frozen receipt; no wrapper, new theorem or checker run is credited. BC1/BC2/LC/LR keep their distinct strength. / 新增量是内容资格与整段比较的哲学接通，未把接纳保真扩大为全部生活同一，也未把仅有减损理由提升成充分选择。
 
@@ -24,62 +24,20 @@
 
 8 October 2026. AI-authored continuation under G0/J following Ren's “继续”. [Protocol](../history/root-foundation/CROSSED-CLAIMS-PROTOCOL.md), [affirmative argument](CROSSED-CLAIMS-ARGUMENT.md), [proof scope](../history/root-foundation/CROSSED-CLAIMS-PROOF.md), [primary-source ledger](../history/root-foundation/CROSSED-CLAIMS-SOURCES.md) and [independent counterreview](../history/root-foundation/CROSSED-CLAIMS-REVIEW.md) distinguish their roles. This is normative theory and a finite formal construction, not a current clinical allocation policy.
 
-**新方向：在有根据的同等救助比较附近，一部分不等程度的冲突仍可能支持确定的多救；新形成的共同保护，也可能在不降低任何原有正当机会的情况下进一步减损。前者需要公开的局部稳定承诺，后者须由真实可共同实施的关系支持。**
-
 **The new connection:** a defended local extension can support some unequal-basic-loss comparisons, while new joint protection can improve a response without reducing any previously warranted chance. Ethical local stability, the warrant of the original chances and the feasibility of replacement remain distinct commitments. Neither a universal exchange rate nor a uniquely fair lottery follows.
 
-## 1. 本轮接续什么
+<a id="1-本轮接续什么"></a>
 
-[BC1/BC2](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md)与[LC](../history/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md)已有各自完成范围。本轮进行中，[有限合并的情境研究](../history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)也完成了六项定理／十五项审计、升级翻转和拼接障碍，以及“限制抵偿不等于删除根据”的正面修正。直接复用这些结果；本轮没有再次发现一般聚合循环、重新推导 J4，或把 LC 的比较理由升级为确定选择。
-
-现在要推进的是：数量与严重性反向时，能否正面支持至少一些判断，并说明真实新方案怎样改变机会。普遍目标要求这类选择约束能够解释其关系根据，而不能只服务于特定身份、文化或初始偏好。但具体损失跨生活形式的比较仍须证明适用；几种有限构造不等于普遍伦理已经完成。
-
-## 2. LR：同等救助理由的局部延续
-
-BC1 已在它的严格范围内支持保全更多同等基本生活。**LR 进一步承诺：至少在一类独立可说明的轻微加重中，少数一方的基本损失虽真实变重，原来多保护一段完整基本生活的理由仍足以支持较多者。** LR 是新增而可争论的规范承诺；不是 G0、BC1 或物理连续性的逻辑定理。
-
-它的肯定根据是：多保护的那段基本生活，在略有程度差别后并未停止存在，也没有变成可忽略的便利。相应的关切不必仅在数学上完全相等的一点才有决定作用。新增损伤同时仍是真实的反对理由。LR 主张其中一部分有限变化不足以立即推翻原比较，并公开承担这一主张的机会代价。
-
-一个严肃对手可以接受 BC1，却主张只要损伤略重，该处就应立即恢复获救机会，从而阻止确定地多救。这个立场不因不连续就自相矛盾。LR 拒绝这种普遍的相等边界，但未从 G0 证明对手不可能正确。若要把 LR 作为完整理论的一部分，应明确认可这个附加承诺，不能用一段数值程序替它作决定。
-
-“轻微”须根据独立的损伤内容说明。例如，同一共同沟通支持史中，既有严重隔绝增加一段很短而真实的阻断，仍保留可靠恢复、基本承受方式、共同通路和权限，且没有错失不可重来的参与、触发支持崩塌或转嫁基本负担。这些描述可以支持局部判断，却不提供一个跨所有生活的统一时长。**有限不等于轻微；没有发现某个结构阈值，也不证明所有伦理差异都已穷尽。**
-
-LR 因而给出一种正面的、带新增承诺的交叉比较路线，而不是自动判断任意案例的规则。“变化属于范围”不能定义为“选择不会翻转”；具体应用还须为这一归类辩护。没有测得通用数值边界，也没有证明任意近邻比较都可沿链条传递。
+<a id="2-lr同等救助理由的局部延续"></a>
 
 LR defends a limited persistence of BC1's stronger priority. It does not deny the smaller group's increased loss or its unfulfilled claim. Its rival may restore a chance at every departure from equality; that rival is not logically refuted. The new account argues that the additional basic protection can retain decisive significance through some independently characterized slight changes, with application-specific warrant and no universal calibrated radius.
 
-## 3. 为什么不能把局部延续变成全局删除
+<a id="3-为什么不能把局部延续变成全局删除"></a>
 
-[新原典反审](../history/root-foundation/CROSSED-CLAIMS-REVIEW.md)提出一个更具体的考验：甲的要求比丙强得多，可能给出让丙退让以保全甲的理由。但如果最后选的是乙、甲也没有被保全，就不能仅凭原来的甲丙比较，宣称丙对乙已经失去一切要求。要解释的是新的实际取舍，而不是把丙重新命名为“在此清单中不相关”。
-
-有限形式诊断用三类互斥救助束，给定人数与严重性系数：一项乘十、两项乘六、四项乘四；只计不低于当前最强程度一半的要求。两选时，四项束胜过两项束；加入一项最强束后，过滤器把四项束置零，却选择两项束而不满足最强要求。这些数只检查明确算则，不代表生活的价值，也不是 LR。
-
-该问题与已完成的升级翻转相连，但检验的实际连接不同：**被援引来排除别人的保护，是否真的实现；若没有，新的排除还有什么根据？** 这个要求不禁止一切情境变化，也不把固定菜单独立性当作无需论证的公理。机会、责任或共同可达性确实改变时，可以有新的理由；纯粹阈值变化本身不够。
-
-## 4. 新通路可以保住机会，同时增加保护
-
-考虑同一支持网络里三个已辨明的生活要求 P、Q、R。原来只能实施甲，保护 P；或乙，共同保护 Q、R。P 的损失可以较重，故原两选处于未定的交叉范围，不与 BC1 的同等多救结论冲突。既有正当程序若分给两条路线一些机会，这些机会的根据及范围须另行交代；不能从三处地位相同推得概率必然相同。
-
-后来形成了真正可实施的丙，可以共同保护 P、Q。它可靠保留甲对 P 的保护，并增加 Q 的保护；本构造另外声明许可、时机、负担、共同支持及相关程序承担得到保留。若只是换了路线名，或丙增加了被隐去的成本，这项应用便不成立。
-
-在同一个抽签结果上，把本来实施甲的结果改为实施丙，其余结果不动。P 和 R 的获保护结果保持，Q 则在原甲结果上也得到保护。**严格增加 Q 的获保护机会，要求原甲具有正概率；若原甲概率为零，转移只保持原结果。** 因此，这条修订路线不仅比较边际概率：它逐次说明原保护怎样实际接续。这比“大家平均风险没变”更强，同时仍只覆盖已经表示和辩护的共同后果。
-
-例如，原程序若有根据地在甲乙间各给一半机会，修订后在丙乙间各给一半，P、R 仍各有一半，Q 获得确定保护。**这不是普遍正确的二分之一公式；例子只展示新共同可能性能够做什么。** 一般构造也不要求原概率相等。保住一个已获根据的机会下界，不等于所有旧概率都不可改变，更不证明任何既成分配本来就公平。
-
-若此时仍强求三处最终概率必须完全相等，就会排除这项改善。这个控制检验过强的相等要求，不证明公平永远不能限制机会，也不主张较重与较轻损失本来应当等概率。机会之所以有伦理意义，仍须回到它如何公正地组织实际保护；不能把抽到一次签当作已经实现或补偿了生活。
+<a id="4-新通路可以保住机会同时增加保护"></a>
 
 The positive construction replaces the same lottery realization with newly feasible joint protection. P's and R's protected realizations remain; Q gains on the replaced realizations. Its mathematical scope is finite rational tickets with a common positive total. Permissions, reliability, omitted burdens, procedural commitments and the warrant of the original floor are supplied. Preserving these stated chances alone does not discharge every promise or prove the entire history improved.
 
-## 5. 对生成性对齐的具体推进
+<a id="5-对生成性对齐的具体推进"></a>
 
-一个面向生生的选择系统，不只需要在固定清单里排列已有损失。它还应能识别：哪些轻微变化可在公开承诺下保留旧理由，哪些变化实际跨过基本支持的边界，哪些新通路能够改变原来的互斥关系。新增可能性不按名字、复杂度或方案个数自动取得意义；其作用来自实际能共同保护什么。
-
-本轮由此推进两项不同连接：LR 为部分交叉损失提出正面比较；机会接续构造说明真实新生成怎样改善已有回应，而不先完成整个严重性兑换表。两者都保持差异化承受，整体不是一个吸收损失的更大主体。规范适用、对该规范的认识、实际动机和执行可靠性仍分列。
-
-**尚未越过的边界：** 对更远的程度差别，何种合并或机会强度有充分根据；具体变化何时已超出 LR；新保护有真实成本、风险或程序冲突时怎样取舍。这些问题需要新的实质比较，不能靠继续指定阈值完成。完整排序也不是继续采取已有根据行动的前提。
-
-## 6. 验证与完成记录
-
-本轮 **8 项新定理／23 项声明审计**已通过 Lean 4.29.1 实查；原实践模块的30项定理／46项审计作继承分列，另一个具体应用例不计新定理。确切范围、实际编译、源快照和依赖审计见[证明说明](../history/root-foundation/CROSSED-CLAIMS-PROOF.md)及其回执；LR 的伦理辩护不由该数学模块证明。[独立反审](../history/root-foundation/CROSSED-CLAIMS-REVIEW.md)分别审查正面论证、对手、源文本和形式回执，要求补明严格机会改善的正概率前提，本稿已据此修订。本轮没有新增经验测量。
-
-独立评审已按声明范围接受修订后的论证与形式产物；形式部分为独立源文件／回执核验，没有声称另跑一次编译。当前论述接入[基本冲突章节](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities)。[维护检查](../history/root-foundation/CROSSED-CLAIMS-CHECKS.json)核对本轮文件、链接、证明绑定和双语索引，不能据此认证未复核的并行来源或整个理论的真理。
+<a id="6-验证与完成记录"></a>

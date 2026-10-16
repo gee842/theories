@@ -4,8 +4,6 @@
 
 **Central candidate.** Cognitive activity forms when differentiated organization makes consequential relationships available in discrimination, skilled response, anticipation and, in some cases, representation and reflection. Learning changes that organization through its history. Development reconstructs and transforms the capacities through inherited organization and encountered activity. Evolution changes the distributions and relations through which development and transmission recur. Their coupling explains how a way of learning can itself develop, how a learned distinction can acquire new uses, and how cognition can alter its own future conditions. These are distinguishable relationships within one process; none is an independent substance or an automatic ethical achievement.
 
-**中文中心候选。** 认知形成于分化的组织使实际关系进入辨别、熟练回应、预期，并在某些情况下成为表征及反思。学习是这些组织关系在经历中的改变；发育通过承继的组织与实际活动重建及改变能力；演化改变发育、传递及接续怎样发生。它们在同一过程中相互形成，能够解释学习方式的形成、旧所得的新用途，以及认知对自身形成条件的改变。候选须由具体机制、真实对应与反例检验；“都是生成”本身没有完成解释。
-
 ## 1. The full target and its completion obligations
 
 The requested scope concerns cognition, learning and evolutionary psychology together. A satisfactory theory need not predict every particular thought from a bare ontology, but must explain the relevant kinds of capacity, their formation and limits without silently supplying the very capacity at issue. Local law inputs remain legitimate when identified and connected to the relevant biological, developmental or social account.
@@ -51,8 +49,6 @@ Longer duration alone supplies no missing feedback. Early transmission, changed 
 
 This gives cognition a route of formation and continuation, while its content still depends on what the retained relations distinguish, predict and enable. A successful proxy does not redefine a mistaken representation into truth. The [integrated argument](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md#8-learning-and-recursive-selection-the-connection-being-completed) connects the existing content/use results to this selection account and distinguishes general explanation from a complete empirical genealogy.
 
-**学习与跨层次选择。** 形成、保持和实际使用经活动后果进入后续组织而相连，学习方式自身也可参与接续。梯度修改、差异繁殖及制度评估各有实际机制；整体后果通过更新、支承和重构影响组成关系，不要求每一部分单独取得报酬。绝对接续、相对频率及整体更新分别判断。生成性可以经这些关系获得选择优势，但时间延长不自动修复遗漏的后果、传递或支持关系；完整认知目标也不由一般选择概念独自完成。
-
 ### A checked history from learning to reconstruction of the learner
 
 The [new formal composition](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md#9-executed-learning-enters-reconstruction-and-subsequent-use) begins with a zero network matrix. Two actual encounters form a usable record, retaining the two failed attempts in the account. Two supplied updating procedures then operate on the same repeated tasks. Their actual responses produce different amounts of available reconstruction support; no type label supplies a fitness score. Retained matrix entries and an operative procedure bit enter constructed successors, which subsequently use them.
@@ -61,15 +57,11 @@ One procedure produces forty successes in forty later tasks, the other thirty. T
 
 The [fresh Lean receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-verification.json) checks 30 new theorems / 50 declaration audits, with 251 inherited audits separately rebuilt. The source, precursor, task law, initial hardware, exact copying and reconstruction recipe remain supplied. The inherited matrix and updater bit are accompanied by newly acquired local calibration. Finite supplied support is converted rather than replenished, and task success is not identified with wider generative good. This closes a conditional **learning → retained use → reconstruction of the updating organization → further use** connection. It does not establish an ecological or ethical convergence theorem.
 
-**已查组合。** 零矩阵经两次实际接触形成记录；后续操作的真实结果决定可重构数量，重构所得的矩阵与更新控制确实进入后继操作。转化与擦除可保留后继数量而改变能力。该连接解释内部学习方式怎样经整体后果参与选择；给定任务、构造规律和有限支持保留，不能把局部回报自动当成生生或无限更新。
-
 ### Laws of learning on the Becoming spine (P73, P74)
 
 On 12 October 2026 Ren asked how completely the meta level, artificial neural networks, cognition and the wisdom about learning are explained, then wrote "please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved". The core module [Becoming.Learning](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean) states learning's general laws with no axiom ([study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#92-学习归纳推广训练与元层次p73p74)). No record fixes the next value, also among worlds held by a list. For every learner a course refutes each of its claims; that course is the registration of a law keeping its record, so open. Learning by refutation never passes a hypothesis that holds. Where a list holds the world it is refuted a bounded number of times and its coming to rest is unrefuted, while when it rests is not registered. Learning how to learn is the same learning over a merged enumeration of classes, and every merging has its diagonal course. Transfer is generalization through a lumping: the data determine an untried case exactly where the class lumps it with an observed one. The transfer is right exactly where the world takes one value across the lumping. Without a class, data fix nothing.
 
 The periphery bridge [LearningCorrespondence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean) reads this chapter's earlier constructions as instances. Under fixed weights, the network's development is the orbit of its step. Hebbian development and the network under a route of updating are one determined process on the joint configuration. Activity, or the network, has a law of its own exactly where the weights, or the route, make no difference. In the three-unit memory and at the starting network they do make a difference. The responsive route learns exactly where the task fails. These are laws of every learner at the stated scope. Which classes an actual learner holds or can reach, how its registration discriminates, and whether its world is finite are settled by correspondence, not by these theorems.
-
-**学习的规律（P73、P74）。** 核心模块不用公理陈述学习的一般规律：无记录固定下一个；每个学习者都有否证它每个主张的开放的序列；按否证学习从不越过成立的假设；被列表所持的世界中其否证有界，静止不能被否证，何时静止不被识；学会怎样学习是合并枚举上的同一学习。迁移是经归并的推广：数据恰在类把未试之例与已观察者归并之处决定它，正确恰在世界经归并取同一值之处。外围桥接把本章既有的构造读作实例：Hebb 式发展与更新路线下的网络是联合配置上的一个确定过程。实际学习者持有哪些类、怎样分辨、其世界是否有限，由对应决定，不由这些定理决定。
 
 ## 3. From organization to cognitive activity
 
@@ -97,11 +89,7 @@ The result preserves four limits. Primitive-only observations cannot identify ar
 
 This advances the larger theory by connecting **acquired distinctions → reusable operations → new combinations → finite supported response**. It does not derive the grammar, parser, repetition operation, training curriculum or truth of the uniform-law assumption. A conventional compositional interpreter can realize the same relationships. Neural and symbolic realizations remain serious candidates; this proof establishes neither architectural exclusivity nor algorithmic novelty.
 
-**新增连接。** 三次实际接触形成两个基本效果及组合次序的可用解释；在公开的递归法则范围内，后续解释适用于任意有限的新组合。形成出的解释须有剩余支持才能实际执行。原子效果不可区分时，内部次序未辨明也可能不妨碍当前新回答。语法、部件、接触安排与适用域仍有前提；这不是全部语言或认知已经证明。
-
 **On the Becoming spine (P74).** The uniform-law premise is a lumping of laws. Within the uniform family with distinguishable primitive effects, the three encounters determine every expression (`uniform_determines`, Becoming.Learning's `Determines`). Admitting the nonuniform law, they determine nothing at the novel expression (`nonuniform_not_determined`). The limit above, "a nonuniform law can agree with all three training encounters", is the general law that the class of every function fixes no untried value (`every_determines_nothing`).
-
-**脊柱上（P74）。** 一致律前提是规律的一个归并：在原子效果可分辨的一致律族中，三次接触决定每个表达式；容许非一致律时，在新表达式处什么也不决定。上文“非一致律可与三次训练接触都一致”是一般规律“一切函数之类不固定任何未试之值”的情形。
 
 ### Formation and repair of the operative connection
 
@@ -112,8 +100,6 @@ Construction admits additional alternatives: a route may duplicate one argument 
 **The expanded evidence theorem covers every finite expression within this four-route construction family, even when primitive effects coincide.** It requires the original records plus the asymmetric demonstration and the uniform recursive law. Exact internal order need not be known when both orders have identical effects. This extends the earlier result; it does not infer unrestricted induction from four examples.
 
 The [checked package](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-formation-verification.json) contains 37 new theorems / 65 new declaration audits and separately rebuilds 86 inherited audits. Grammar, recursion, connectors, query choice, faithful demonstration access, search procedure and local charges remain explicit premises. The model forms the operative join route; it does not explain the origin of the entire apparatus or identify a neural implementation. The four-route repertoire and search procedure are supplied; this extension does not newly prove their autonomous revision.
-
-**形成与修复。** 实际记录进入连接的构造、检验、失败与替换，新的组合确实经过形成出的连接。构造范围扩大能够使旧证据不足；新的不对称接触重新支持范围内的任意有限表达，而未必辨明所有内部次序。已消耗的支持与部件保留，发现错误不等于已能修复。37项新 Lean 定理是局部连接的完成，不是整体认知目标的完成。
 
 ## 5. Learning content, acquiring motives and changing ends
 
@@ -137,8 +123,6 @@ This supports several concrete explanatory possibilities. Selection can favor a 
 
 The [Liangzhi evidence assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md) already preserves developmental and transmission examples with important limitations. Their experiments must not be spliced into a single observed genealogy. The complete psychological explanation still requires an identified chain joining the relevant inherited/developmental contribution to acquired discrimination, motivation, action and subsequent transmission in the claimed domain.
 
-**演化心理的相连任务。** 说明某种心理能力现在怎样运行、实际怎样长成、改变什么接续条件、历史上怎样分布。遗传、发育与社会形成是同一过程中的不同关系，不能凭当下表现互相替代；当前适应成功不独自证明历史适应来源，更不证明伦理正当。
-
 ### Formation, retention and use can develop differently
 
 The [developmental assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#27-forming-an-access-distinction-and-bringing-it-into-later-learning) gives the candidate a more specific constraint. Experience can change later access-sensitive responses. But an ability to explain someone's earlier lack of access does not establish that this explanation guides subsequent word learning. Different tasks can expose different contributions of the same developing organization. Their coordination needs an identified mechanism; calling every difference contextual would merely rename the problem.
@@ -146,8 +130,6 @@ The [developmental assessment](../../../_process/research/2026-10-05-generative-
 The [comparative assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#28-comparative-components-and-the-limits-of-evolutionary-inference) likewise distinguishes memory for an item from how it was encountered, and acquired access sensitivity from comprehensive mental-state understanding. It preserves training demands, incomplete response samples and differences between outcome measures. The evolutionary question becomes which inherited and developmental changes form these contributions and connect them in actual use. Similar task performance alone cannot distinguish conserved organization, convergent acquisition and different trained solutions.
 
 This refines the interpretation of our models: available information enters a later judgment through an actual operation whose formation and task-dependent exercise require explanation. The existing checked constructions supply such operations under declared conditions; they do not make an explicit access judgment universally sufficient for successful learning. The [proposed comparison](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#29-revised-connection-counterreview-and-discriminating-observations) separates learning an access relation, retaining source/order, and using them in present reliance or retrospective endorsement. It is not an experiment already performed.
-
-**取得、保持与使用。** 同一经历形成的差异可以进入不同后续活动；形成访问辨别、保持来源与次序、在具体任务中实际调用须分别识别其连接。经验已限制自动迁移的概括，尚未确定唯一实现或演化史；已有条件证明不因此撤回。
 
 ### Acquired operations change what others learn
 
@@ -161,8 +143,6 @@ These claims require fresh support and parts for each new participant. They do n
 
 The primary-source comparison examines changes in expression across Nicaraguan sign-language cohorts and artificial-language accounts of compression and communication, with the methods and retrieval limits recorded in the study. Our inference is that the explanation must connect changes in public forms with learners’ reconstruction dispositions, while keeping distinct the evidence for cultural change and the evolutionary origin of learning capacities. The fixed-repertoire model supplies the former communication path but does not explain all those developmental changes.
 
-**沟通与传递。** 操作产生他人实际取得的记录，取得的记录重构操作，并继续改变后来学习的条件。忠实接续、取得不足而改变、稳定传递任务失误、同代纠正与支持不足分别保留。27项新定理覆盖这个接口；每个新参与者的供给、注意、信任与学习构造仍有前提。分节的后续局部连接见下文；社会注意和重构倾向的形成仍须解释，不把这些局部完成当成完整演化心理。
-
 ### Acquired grouping changes what reaches the operation
 
 The [segmentation continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) records elementary encounters, derives a grouping relation from their observed transitions, and uses that relation before decoding and compositional execution. Exposure changes the units available for use. General partition and decoding theorems cover every finite sequence in the stated two-word encoding; actual execution still requires remaining support. The successful history continues the previous training and construction without resetting their support or deleting their records.
@@ -170,8 +150,6 @@ The [segmentation continuation](../../../_process/research/2026-10-05-generative
 The [23 new checked theorems / 51 new audits](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json), with 196 inherited audits separately rebuilt, preserve concrete failures. Identical elementary-event frequencies can conceal different transition relations. Known observational gaps do not become invented adjacencies. Repetition can merge intended units; partial experience can parse one form while misgrouping another. A supplied failure-contingent continuation can repair grouping through additional actual records. This policy changes access but its origin is not explained here.
 
 In that first construction, elementary discrimination, the statistical criterion, chunk meanings, message assembly and available further encounters were supplied. The next continuation below replaces its fixed chunk-to-operation assignment. The raw stream's social production is still not connected to the earlier teacher's actual output. The study compares primary infant-learning evidence, credits established statistical and compositional mechanisms, and distinguishes formal construction from empirical replication.
-
-**分节进入使用。** 经历改变可用分节，再进入已有的组合执行；任意有限编码序列的对应与有限支持分开。频数相同而关系不同、重复造成跨界、部分经历只支持某一表达等反例保留。该首轮23项新定理完成分节接口，解码意义和进一步取得的策略当时仍有前提；后续绑定扩展如下。
 
 ### Acquiring and correcting the binding used in interpretation
 
@@ -181,8 +159,6 @@ The maintained result [acquired-binding-compositional-use](../results/records/ac
 
 This explains a new name-to-known-operation relationship. The original operations, categories, scene coverage and intersection rule remain supplied. It does not claim to derive all concepts or uniquely identify an infant learning algorithm. The primary comparisons support acquisition across ambiguous encounters and motivate investigating how bodily and social activity forms effective access; their scope and causal limits are recorded in the study. The existing knowledge/content and source-revision accounts are reused at their own scopes.
 
-**绑定的取得与修订。** 实际分节进入多次歧义接触所形成的绑定，再进入新组合及使用。错误唯一绑定、矛盾暂停、正确排除和误排来源分别保留。此轮接通新名称与已有操作，未把所有意义、分类或社会注意的形成宣告完成。
-
 ### Activity changes which encounters become available
 
 The [enacted-access continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#11-enacted-access-movement-and-naming-form-the-binding-scene) replaces supplied candidate lists with alternatives computed from a changing local arrangement. Supported movement changes the receiving position; naming concerns a site in that same situation; their conjunction generates the records used by the preceding binding mechanism. Movement and recording continue the existing support history. The [maintained composition](../results/records/enacted-scene-binding.md) directly reuses the earlier all-sequence interpretation theorem through a checked equality of its inputs, while preserving the additional movement costs.
@@ -190,8 +166,6 @@ The [enacted-access continuation](../../../_process/research/2026-10-05-generati
 The new comparisons distinguish access, retention and coordination. Stationary repetition can remain ambiguous. Preventing storage leaves the changed access intact without acquiring the bindings. Changed naming timing can invert the acquired bindings despite matching final position, naming counts and expenditure. A narrow view can omit the named target and produce a confident error. Thus reduced ambiguity and increased movement are not automatically improvements in learning.
 
 Sixteen new Lean-checked theorems establish this local connection. The geometry, perceptual range, categories, naming convention and action schedule remain premises; fixed range is not a complete attention mechanism. The study integrates positive and adverse developmental evidence, including a preregistered failure to generalize a motor-training benefit. These sources constrain correspondence without establishing one observed chain from bodily development to word learning or an evolutionary genealogy.
-
-**行动形成可取得的经历。** 空间关系与移动产生可见候选，命名同它们共同形成绑定记录，再进入已有组合使用。取得、保留及命名协调分别有可检验后果；安排的选择与修订、分类和注意的发育仍待接通。
 
 ### Acquired access guides further encounters
 
@@ -201,8 +175,6 @@ Twenty-two new Lean-checked theorems connect these selected encounters to the ex
 
 This advances the action-selection connection while sharpening the developmental question: how bodily and reciprocal social activity sustains the coverage on which learning depends. Primary studies of evidence-sensitive preschool exploration and parent–infant hand–eye coordination constrain different parts of that question; they do not identify this exact algorithm or establish one evolutionary genealogy. Existing inquiry revision and method formation retain their explanatory credit.
 
-**取得的信息改变后续探究。** 访问记录与绑定歧义产生实际选择，重看可以纠正已过时的访问预测；资源失败、可选范围不足与错误确信保留。选择准则、合作命名和初次巡查的形成并未由此证明，下一连接须以实际发育及社会协调的对应推进。
-
 ### Public gaze records constrain encounter coverage
 
 The [public-data assessment](../results/records/naming-attention-coverage.md) tests a concrete developmental correspondence. Among 1,508 naming events from 36 infants, 467 nominal three-second windows contain recorded other-object gaze with zero target gaze. Another 45 contain no gaze at any coded object and remain separate. The former pattern occurs for 35 infants and remains present in 393 five-second windows. These are repeated measurements of the same events, with participant-level summaries retained.
@@ -211,8 +183,6 @@ This limits automatic **naming → recorded target gaze** coverage. It does not 
 
 The existing conditional binding theorem remains valid at its checked scope. For developmental explanation, admission, weighting and correction must now be connected to actual coordination cues and retained use. The analyst's label for the intended target cannot become an unexplained input to the learner. This adds an empirical constraint on the higher-order organization of learning, without claiming a new learning algorithm, causal developmental result or evolutionary origin.
 
-**覆盖的经验范围。** 公开数据不支持把每次命名直接等同于所指注视；未记录任何物体注视的情况与记录到其他物体分开。既有条件证明保留。继续解释可取得的协调线索怎样形成经历接纳、加权与纠正，并以实际保留及使用区分候选机制。
-
 ### Encounter control and retained use must be connected
 
 The [control-to-retention assessment](../results/records/encounter-control-and-retention.md) adds an empirical learning outcome to the earlier coverage question. In a separate public dataset, the source-defined sample has 75 participants and 451 test trials. Our Curiosity−Yoked estimate is −1.34 percentage points in baseline-corrected target looking, with an unadjusted 95% Welch interval of −10.38 to +7.69. Curiosity−Random is +0.50, interval −8.08 to +9.08. These are participant-level comparisons, not percentages of words learned. Pair identifiers are unavailable, participant allocation is not established as randomized, and the conventional intervals have no demonstrated sequential-design coverage guarantee. The estimates neither establish an advantage nor prove equivalence.
@@ -220,8 +190,6 @@ The [control-to-retention assessment](../results/records/encounter-control-and-r
 The [reconstruction and substantive review](../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md) retain the 77-person pre-inclusion export as sensitivity and disclose reporting discrepancies. They compare a positive pointing/action-learning study without treating different ages, tasks and social arrangements as an isolated social cause. These are empirical constraints on the actual route from control to later use; they are not one observed developmental history.
 
 The existing input-preservation theorem fixes retained interpretation inputs. Matching displayed events does not establish those inputs are equal. Control can change sampling, retention, or the learned relation by which later evidence is admitted. The present data do not identify their respective contributions. The higher-order explanatory target is therefore a history-dependent change in **how new evidence is used**, with later binding, transfer and correction as discriminating consequences. Source-revision and method-formation mechanisms already exist; their connection to locally available developmental cues is the next substantive requirement.
-
-**控制与保留。** 新复算接入实际后续测量，但未建立选择优势或等效。选择取得什么、哪些关系被保留、以及先前协调经验如何改变后来证据的接纳，须在同一历史中分别接通。显示内容相同不等于保留输入相同；不能由当前总体结果指定唯一心理机制。既有条件成果保持，下一任务具体化为经历过的可靠性改变怎样进入后来证据使用、迁移及纠正。
 
 ### Later source learning changes the use of earlier records
 
@@ -233,8 +201,6 @@ A source can also change. The comparison shows that accurate late calibration ca
 
 The [developmental comparison](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#22-developmental-evidence-and-what-it-identifies) supports investigating retrospective source use while preserving memory checks, task order, age differences and serious alternative mechanisms. Controlled production probes in our model are not the same as observing a speaker name familiar objects. The specific cognitive realization, formation of source–content retention and historical transfer scope remain to identify. This completes the stated local composition; it does not establish all social understanding or an evolutionary origin.
 
-**后来所得改变早先记录的使用。** 来源关系的习得现接入既有绑定和组合机制，先前报告保留而当前解释改变。20项新定理完成此局部接口，并保留实际来源变化造成的倒推错误。来源—内容关联的形成、历史适用范围、发育差异和心理实现仍须解释；不把后来更准确直接等同于对过去更有根据。
-
 ### Evidence about when the source changed
 
 The [historical extension](../results/records/historical-source-binding.md) uses dated acquired controls to constrain possible production histories, then interprets a retained report using routes still possible **at its earlier date**. It permits a change in every gap between the four represented moments. The actual history and exact change point are not learner inputs. Ten Lean-checked theorems connect this inference to existing binding correctness and preserve failures when evidence cannot locate the change.
@@ -242,8 +208,6 @@ The [historical extension](../results/records/historical-source-binding.md) uses
 Under an explicit one-change envelope, matching controls before and after naming can support the old binding even when a later control shows deterioration. Conversely, later improvement does not make earlier false reports true. An omitted temporary change can still cause a wrong unique binding; allowing that history restores uncertainty. Chronology, source identity, controlled probes and the admitted change/disturbance families remain supplied. Their formation and natural adequacy are not established by this finite construction, which also adds no new physical cost account.
 
 The [primary-source comparison and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#25-updating-present-trust-does-not-identify-historical-reinterpretation) distinguish changing present reliance, retrospective endorsement and context-sensitive memory modification. Evidence for one cannot silently validate all three. This gives a more precise higher-order connection: learned relations govern the historical scope of evidence use, while the retained statements themselves remain unchanged. Psychological implementation, developmental formation and evolutionary history remain empirical questions.
-
-**历史适用范围。** 后得控制证据现约束可能的来源历史，再按旧记录发生时的路径解释内容；不再要求全程来源不变。实际变化点不是输入，但身份、时序、变化范围与扰动条件仍明示给定。迟来退化不自动推翻旧内容，后来改善也不使早先误报成真；遗漏暂时变化仍可致错。此局部连接不替代发育、演化和意识的完整要求。
 
 ## 7. What evidence would advance or revise this account
 

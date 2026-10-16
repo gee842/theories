@@ -1,105 +1,114 @@
-# 生成关系怎样变化 / How relations of becoming change
+<a id="生成关系怎样变化--how-relations-of-becoming-change"></a>
+# How relations of becoming change
+
+> Some passages exist only in the [Chinese edition](THEORY-OF-BECOMING.zh.md): where a Chinese paragraph is fuller than its English companion, this file keeps the companion and the Chinese edition keeps the full paragraph.
 
 9 October 2026, Asia/Bangkok. Current argument under [Ren's active goal](../../../sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md) and the [Theory of Becoming priority](../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md). This chapter develops the scope; it is not a declaration that the whole foundation is complete.
 
-## 从实际关系开始 / Begin with actual relations
+<a id="从实际关系开始--begin-with-actual-relations"></a>
+## Begin with actual relations
 
-活动怎样留下继续起作用的后果、这些后果怎样参与后续活动，是这里的起点。相对持久的组织、可以共同发生的活动、条件的消耗与恢复，沿这段发生分化。行动者、承受者与认识也须通过具体形成的关系说明；不能先把它们当作彼此完备的实体，再让“变化”在实体之间发生。
+How activity leaves consequences that go on operating, and how those consequences take part in later activity, is the starting point here. Relatively persistent organization, activities that can occur together, and the consumption and recovery of conditions differentiate along this occurrence. Actors, patients and knowing must likewise be explained through relations that actually form; one may not first treat them as mutually complete entities and then let “change” occur between entities.
 
-形成、维持、转化、退化与消失都在范围内。一次发生可能使某种继续成为现实能力，同时毁掉另一种条件。是否值得肯定由整体内公开的G0/J及对应说明；不将有利方向预先写进动力学。
+Formation, maintenance, transformation, degeneration and disappearance are all within scope. An occurrence may make one kind of continuation an actual capacity while destroying the conditions of another. Whether something is worth affirming is explained by G0/J and the corresponding accounts stated openly within the whole; the dynamics does not write a favourable direction in beforehand.
 
-[Ren 对整体与 manifold 的进一步澄清](../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md)明确：必然性主张针对 Becoming 整体，生成性位于其中。本章研究关系的变化，不要求每一次变化都具有生成、再生或良好方向；不能把这种要求另立为整体理论的完成门槛。The stronger necessity target concerns the whole Theory of Becoming, not universal generativity of every occurrence.
+[Ren's further clarification of the whole and the manifold](../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md) makes explicit that the necessity claim is directed at Becoming as a whole, with generativity located within it. This chapter studies the change of relations; it does not require every change to be generative, regenerative or of good direction, and that requirement cannot be set up separately as the bar for completing the theory of the whole. The stronger necessity target concerns the whole Theory of Becoming, not universal generativity of every occurrence.
 
 <a id="how-operative-relations-change"></a>
-## 关系怎样变化：作用、支承与后续 / How operative relations change
+<a id="关系怎样变化作用支承与后续--how-operative-relations-change"></a>
+## How operative relations change
 
-**当前共同解释候选：追踪实际活动怎样建立、运用和改变参与其中的关系，以及这些改变怎样维持、转化或结束后续活动的成立条件。** 支承、通达、协调和承受变化的位置从同一活动中分化；不能先假定独立的行动者与条件所有者。
+**Current candidate for a common explanation: trace how actual activity establishes, uses and changes the relations it takes part in, and how those changes maintain, transform or end the conditions under which later activity holds.** Positions of support, access, coordination and undergoing change differentiate out of the same activity; one may not first assume independent actors and owners of conditions.
 
-这里有一个关键区别：**某种形态还在，不等于它仍具备原来的作用能力。** 已有端口机制中，接触仍然开放、先前读数仍然保存、部分储备甚至增加，源头供给却已耗尽，下一次完整交互不能继续。也可能有别的活动继续发生。因此，局部能力的终止、整个配置的消失和整体活动的结束是不同判断。
+There is a key distinction here: **a form still being present does not mean it still has its former capacity to act.** In the existing port mechanism, contact remains open, an earlier reading is still stored, and some reserves even increase, yet the source supply is exhausted and the next complete interaction cannot continue. Other activity may also go on occurring. The ending of a local capacity, the disappearance of the whole configuration and the end of the whole activity are therefore different judgments.
 
-| 变化问题 | 需要解释的实际关系 |
+| Question of change | The actual relations to be explained |
 |---|---|
-| 形成 | 什么活动使关系实际成立，还需要哪些共同条件，而不只是事后给结果取名。 |
-| 维持 | 哪些作用通过使用、支承、替换或再形成继续成立；相同存量不能代替这一过程。 |
-| 转化 | 支承或参与方式怎样改变，原来的活动得以继续，还是另一种活动形成。 |
-| 退化 | 哪些具体能力或条件减弱，即使其他部分同时增长；须保留可行替代。 |
-| 消解与结束 | 什么关系不再成立，哪些后果仍在，其他活动还能怎样继续。 |
+| Formation | What activity makes a relation actually hold, and which joint conditions are still needed, rather than merely naming a result after the fact. |
+| Maintenance | Which operations continue to hold through use, support, replacement or re-formation; the same stock cannot stand in for this process. |
+| Transformation | How support or the manner of participation changes, and whether the original activity thereby continues or another activity forms. |
+| Degeneration | Which specific capacities or conditions weaken, even if other parts grow at the same time; feasible substitutes must be kept. |
+| Dissolution and ending | Which relations no longer hold, which consequences remain, and how other activities can still continue. |
 
-这些问题可以同时适用于一次发生，不是五个必经阶段。对仍需使用的某项条件，[已有一般证明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SITUATED-RENEWAL-PROOF.md)说明：实际用量超过原有支持时，继续发生需要补充或改变支承路径；原路径不能补充时，需要改变它。其局部支持规律明示。改变有必要，不等于改变后的路径已经充分；无法继续也是必须解释的结果。
+These questions can apply to one occurrence at once; they are not five stages every change must pass through. For a condition that is still needed, [an existing general proof](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SITUATED-RENEWAL-PROOF.md) shows that when actual use exceeds the original support, continued occurrence needs supplementation or a changed support path; when the original path cannot supplement, it needs to be changed. Its local support law is stated explicitly. That change is necessary does not mean the changed path suffices; being unable to continue is also a result that must be explained.
 
-因此，维持某种活动可以要求改变其支承关系。恢复一种材料条件也可能伴随另一种条件耗竭。这里的“退化”先针对明确的作用能力；它不自动等于整个变化在伦理上更坏。
+Maintaining an activity may therefore require changing its support relations. Restoring one material condition may also be accompanied by the exhaustion of another. “Degeneration” here first concerns a specified capacity to act; it does not automatically mean that the whole change is ethically worse.
 
-约束也须按作用理解。局部组织可以约束某项活动，同时在其他活动中被形成、改变或消解；核心对共同实现的相容要求，不等于要求所有局部组织永远不变。生物约束理论按过程与时间尺度区分作用和相对保存，为此提供一个具体比较，而非全体变化的无公理证明。[Montévil与Mossio，2015，§§2–3](https://montevil.org/publications/articles/2015-mm-organisation-closure-constraints/)。本章的“条件”还包括被消耗的支持，不能与该文较窄的约束定义混同。
+Constraints must likewise be understood as acting. A local organization can constrain one activity while being formed, changed or dissolved in other activities; the core's requirement of compatibility for joint realization does not require all local organization to stay unchanged forever. The theory of biological constraints distinguishes action from relative preservation by process and time scale, and so offers a concrete comparison, not an axiom-free proof for all change. [Montévil and Mossio, 2015, §§2–3](https://montevil.org/publications/articles/2015-mm-organisation-closure-constraints/). The “conditions” of this chapter also include consumed support, and must not be confused with the narrower definition of constraint in that paper.
 
 **English scope.** The candidate follows actual establishment, exercise and transformation of participating relations and their effects on further activity. Retained form, supported efficacy and continuing use differ. Formation, maintenance, transformation, degeneration and ending are overlapping explanatory questions, not a universal sequence of stages. Existing conditional mechanisms and general support results substantiate these distinctions. They do not alone prove the common constitution's universal necessity, its unique superiority over an equally faithful account of local operations, or the strong zero-substantive-axiom target. [Evidence, comparison and substantive counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md#operative-change-and-maintenance) retain the exact scope; this synthesis adds no mathematical theorem.
 
 <a id="joint-change-with-unchanged-local-states"></a>
-## 各自状态不变，共同作用仍可改变 / Joint change with unchanged local states
+<a id="各自状态不变共同作用仍可改变--joint-change-with-unchanged-local-states"></a>
+## Joint change with unchanged local states
 
-从同一制备及后续交互出发，[新的实查连接](../results/records/joint-correlation-reduced-dynamics.md)进一步说明：**关系变化可以先发生在共同作用方式上，随后才表现为局部状态的差异。** 在明确的两量子位模型中，一次相位操作改变共同状态，而两个部分各自的完整约化状态都保持不变。此后施加同一个共同操作，同一测量给出不同响应。变化来自指定操作的实际代数结果，不是给相同输入另贴一个结果标签。
+Starting from the same preparation and later interaction, a [new checked connection](../results/records/joint-correlation-reduced-dynamics.md) further shows: **a change in relations can occur first in the way the parts act together and only afterwards show up as a difference in local states.** In an explicit two-qubit model, one phase operation changes the joint state while the complete reduced state of each part stays unchanged. Applying the same joint operation afterwards, the same measurement gives different responses. The change comes from the actual algebraic result of the specified operations; it is not a different result-label attached to the same input.
 
-因此，仅列出双方各自的状态，不能在这一范围内准确推出下一步怎样变化。更充分的描述也不必保存所有细节：在当前局部状态之外保留一个相应交叉项，就能准确跟随所指定的交互与相位操作的任意有限序列。交互把这个共同交叉项转成局部响应中的差异，相位操作则改变其符号；其更新规律也已检查。
+Merely listing the two sides' separate states therefore cannot, within this scope, determine exactly how the next step changes. A fuller description also need not preserve every detail: keeping a corresponding cross term beside the current local states suffices to follow exactly any finite sequence of the specified interaction and phase operations. Interaction turns this joint cross term into a difference in the local response, and the phase operation changes its sign; its update law has also been checked.
 
-这给关系解释增加了一项具体要求：**保留会进入后续共同作用的差异，并验证所保留内容怎样继续更新。** 只有当前读数相同、单独测量相同或选项相同，都不能代替这项验证。另一方面，已有一般约化定理和这里的正面构造说明，某些细节可以省略；必须保留什么取决于实际操作及所要解释的响应，而非随意要求全知。
+This adds a concrete requirement to relational explanation: **keep the differences that will enter later joint action, and verify how what is kept continues to update.** Equal present readings, equal separate measurements or equal options cannot replace this verification. On the other hand, the existing general reduction theorem and the positive construction here show that some details may be omitted; what must be kept depends on the actual operations and the response to be explained, not on an arbitrary demand for omniscience.
 
 **English scope.** The same joint preparation and phase transformation preserve both complete local reduced densities while changing the output of a subsequent common controlled-X interaction. No update function of that local density pair alone reproduces both next control states. A summary retaining the relevant joint cross contribution gives exact control responses for all finite words of the two declared operations, through a checked application of the existing all-word composition theorem. Eleven module theorem declarations / 25 new audits pass; this is one scoped result, not eleven discoveries. Arbitrary complex states, additional operations, laboratory realization and universal grounding are outside the proof.
 
-这是标准量子关系的一项形式化对应，不是新发现的量子效应；既有完整量子描述同样解释它。[IBM 的约化状态说明](https://quantum.cloud.ibm.com/learning/en/courses/general-formulation-of-quantum-information/density-matrices/multiple-systems)给出所用物理含义。[具体证明、前提、解释竞争与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md#joint-change-and-local-dynamics)保留其边界。它支持指定推断中关系信息的必要性与一种充分描述，不独自证明整个 core 的普遍或唯一根基地位；G0/J/E 不由这些动力学自动导出。
+This is a formal correspondence with a standard quantum relation, not a newly discovered quantum effect; the existing full quantum description explains it equally. [IBM's account of reduced states](https://quantum.cloud.ibm.com/learning/en/courses/general-formulation-of-quantum-information/density-matrices/multiple-systems) gives the physical meaning used. The [specific proof, premises, competing explanations and counter-review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md#joint-change-and-local-dynamics) keep its boundary. It supports the necessity of relational information in the specified inference and one sufficient description; it does not by itself prove a universal or unique foundational status for the whole core. G0/J/E are not derived automatically from these dynamics.
 
 <a id="effective-capacity-and-eventual-reachability"></a>
-## 第一项接通：当前可实现与最终可达 / Effective capacity and eventual reachability
+<a id="第一项接通当前可实现与最终可达--effective-capacity-and-eventual-reachability"></a>
+## Effective capacity and eventual reachability
 
-[已查的有界细化](../results/records/effective-capacity-and-eventual-reachability.md)区分两种问题：某种共同实现还需多少实际准备，以及它是否沿某条任意有限路径最终可达。[此前的可能性接口](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md)已经证明最终可达的向前追溯，并给出有实际资源代价的接触形成例子。本轮新增的是准备步骤界与共同激活应用，不重复认领原有区分。
+The [checked bounded refinement](../results/records/effective-capacity-and-eventual-reachability.md) distinguishes two questions: how much actual preparation a joint realization still needs, and whether it is eventually reachable along some arbitrary finite path. The [earlier possibility interface](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md) already proved the backward tracing of eventual reachability and gave an example of contact formation with an actual resource cost. What this round adds is the preparation-step bound and the application to joint activation; it does not claim again the distinction that already existed.
 
-在固定规律、固定实现含义下，一段实际历史从s走到t。若从t再走至多n步能共同实现某项内容，那么从s经过这段历史再继续也能实现它，但必须计入准备所用步骤。由此，不能用“此前沿任何有限路径都不可能、后来突然可能”作为该表示下所有生成的定义。这个结果不否定生成，也不说未来已经发生。
+Under a fixed law and a fixed meaning of realization, an actual history goes from s to t. If from t at most n further steps can jointly realize some content, then continuing from s through this history can also realize it, but the steps used in preparation must be counted. Hence “impossible along every finite path up to this frontier, then suddenly possible” cannot serve as the definition of all generation under this representation. This result does not deny generation, nor does it say that the future has already occurred.
 
-同一已存在的关系模型给出实际区别：准备前，一步内不能共同实现；准备后，一步内可以。原来两步可达并不等于现在已经有条件实行。另一条实际路径解除共同条件，导致其后任何有限步都不能共同实现。还有一条路径保留了共同能力，却实际只实现了一侧。这三种变化不能折成一个静态的“选项数”。
+The same existing relational model gives an actual distinction: before preparation, joint realization within one step is impossible; after preparation, it is possible within one step. Being reachable in two steps originally does not mean the conditions to act are now in place. Another actual path removes the joint condition, so that joint realization is impossible in any finite number of steps afterwards. Yet another path keeps the joint capacity but in fact realizes only one side. These three changes cannot be folded into one static “number of options”.
 
 **English scope.** Under a fixed law and claim interpretation, eventual finite reachability is preserved backwards through an actual prefix. A finite inherited law nevertheless exhibits changed current joint capacity, loss of eventual joint realization, and unfulfilled prepared capacity. This separates effective formation from an inadequate unbounded-novelty criterion; it supplies neither the coupling's causal origin nor universal physical laws.
 
-## 当前解释职责 / Current explanatory obligations
+<a id="当前解释职责--current-explanatory-obligations"></a>
+## Current explanatory obligations
 
-一个有内容的变化解释应说明：哪些关系实际形成；它们让哪些活动能够共同发生；还需要哪些准备和支持；使用怎样维持、转化或消耗这些关系；丧失后是否有实际恢复路径。对应的尺度、时间和实现含义须明示，不能把新增知识冒充新增关系。
+A change explanation with content should say: which relations actually form; which activities they allow to occur together; which preparation and support are still needed; how use maintains, transforms or consumes these relations; and whether, once lost, there is an actual path of recovery. The corresponding scale, time and meaning of realization must be stated; new knowledge must not pass for a new relation.
 
-已有的[实际形成与材料再形成机制](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DIRECT-PORT-RENEWAL.md)已经接通：活动付出支持并形成接触关系；生产通过这个已达到的关系发生；实际回收恢复被形成过程消耗的一项材料条件。源头供给同时减少，所以恢复某个条件不等于整个过程无损，也不等于无限维持。有限重复的支持与失效边界已有证明，本轮直接复用，不再把它们列作尚缺。
+The existing [mechanism of actual formation and material re-formation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DIRECT-PORT-RENEWAL.md) is already connected: activity pays out support and forms a contact relation; production occurs through this relation, once attained; actual recovery restores one material condition consumed by the forming process. The source supply decreases at the same time, so restoring one condition does not mean the whole process is lossless, nor that it is maintained without limit. The support and failure boundary of finite repetition has been proved; this round reuses it directly and no longer lists it as missing.
 
 This credits an existing composed causal mechanism, not a new formal adapter to the different joint-activation law. Becoming here includes a relation forming, being used, and changing the conditions for subsequent formation. The universal necessity of that constitution remains to be argued from these actual relationships, with their real losses retained.
 
-现有有条件形成、重构、调节和学习机制继续提供证据。下一问题是这些已完成连接支持哪一项共同的构成性论断，以及该论断为何在所要求范围内不可缺少。完整目标及零附加实质公理假说仍开放；不以本地定理或无规范公理替代它们。[证明、反审和完成审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md)给出精确依赖和范围。
-
+The existing conditional mechanisms of formation, reconstruction, regulation and learning continue to provide evidence. The next question is which common constitutive claim these completed connections support, and why that claim is indispensable within the required scope. The full target and the hypothesis of zero additional substantive axioms remain open; local theorems or axioms without a norm do not replace them. The [proofs, counter-review and completion audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) give the exact dependencies and scope.
 
 <a id="return-and-loss-of-possibility"></a>
-## 返回与可能性丧失 / Return and loss of possibility
+<a id="返回与可能性丧失--return-and-loss-of-possibility"></a>
+## Return and loss of possibility
 
 9 October 2026. [The checked continuation](../results/records/endpoint-loss-and-return.md) supplies an exact structural criterion: after an actual finite change under a fixed law, all existential endpoint possibilities are preserved if and only if a path returns to the original configuration. Failure to return has a constructive lost endpoint witness. A finite observation that omits the relevant distinction can preserve every answer it asks while hiding this loss.
 
-在同一固定关系规律下，恢复路径若存在，它原本就属于最终可达范围；暂时缺少能力与任何有限接续都不可达须区别。返回某一配置也不抹去真实历史、损失或承担。需要恢复的是具体形成的关系、功能还是完整配置，必须说明；不能用读数相同代替实际恢复。不可逆不自动意味着坏，可逆也不自动意味着无损。
+Under the same fixed relational law, if a recovery path exists it already belonged to the eventually reachable range; a temporary lack of capacity must be distinguished from being unreachable by any finite continuation. Returning to a configuration does not erase the real history, loss or commitment. Whether what must be recovered is a specific formed relation, a function or the complete configuration has to be stated; equal readings cannot replace actual recovery. Irreversibility does not automatically mean bad, nor does reversibility automatically mean lossless.
 
 The [argument, proof correspondence and author counterreview](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md) retain the fixed-law, identity and endpoint-test assumptions. **10 new Lean theorems / 14 declaration audits pass**, all with empty named-axiom dependencies; 23 inherited theorems / 28 audits are separately credited. This advances the structure of the explanation, not the origin of the law or the stronger zero-substantive-axiom hypothesis. The next formation/reconstruction connection must preserve the actual target of recovery and the history that cannot be erased.
 
 <a id="renewing-and-consuming-formation"></a>
-## 更新与消耗：形成与它所参与关系的条件 / Renewing and consuming formation
+<a id="更新与消耗形成与它所参与关系的条件--renewing-and-consuming-formation"></a>
+## Renewing and consuming formation
 
-9 October 2026. [Ren 的指示](../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)：用关系结构把两种形成分开，一种更新它所参与关系的继续形成条件，另一种消耗这些条件，且不需要任何公理。[已查的关系性分类](../results/records/relational-renewal-classification.md)完成了这一区分。
+9 October 2026. [Ren's instruction](../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md): separate two kinds of formation by relational structure, one renewing the conditions for continued formation of the relations it takes part in, the other consuming them, and without any axiom. The [checked relational classification](../results/records/relational-renewal-classification.md) completes this distinction.
 
-一项形成参与的关系，是它依存的条件和它取用的条件，以及依存于这些条件的其他形成。若这些条件在每一步都维持在每个依存者所需的水平，它是**更新型**；若它取用的某个条件使某个依存者永久失去支持，它是**消耗型**。两类互斥，但不穷尽：支持反复出现而不持续的波动情形属于二者皆非。定义中没有评价词，Lean 层也没有任何公理依赖。
+The relations a formation takes part in are the conditions it depends on and the conditions it draws on, and the other formations that depend on those conditions. If these conditions are kept at every step at the level each dependent needs, it is **renewing**; if some condition it draws on makes some dependent permanently lose support, it is **consuming**. The two classes are mutually exclusive but not exhaustive: fluctuating cases in which support recurs without persisting are neither. The definition contains no evaluative word, and the Lean layer has no axiom dependency.
 
-关键的关系事实是：条件常由依存于它的形成自己更新。取用若把条件压到该形成所需以下，更新本身随之停止；若此后焦点贡献始终不超过取用，损失在该规律内不再返回。超额取用定理满足这一条件；仍受支持的正净修复则须另行分析。由此：依存于所耗条件的形成会终止自身，形成量有界，形成而后止息；不依存的形成可以持续、无界地形成新组织，同时终止它所参与的依存关系。后者自身的发生和形成轨迹，可以与一个可持续共享条件的形成完全相同。所以“持续形成新组织”与“自身持续”都不能区分两类，能区分的是它所参与关系的继续形成条件。共同取用也可以在每一方单独都在更新之内时消耗，起初在更新之内的升级同样可以消耗。
+The key relational fact is that a condition is often renewed by the very formations that depend on it. If drawing presses the condition below what that formation needs, the renewal itself stops; if the focal contribution then never exceeds the draw, the loss does not return within that law. The excess-draw theorem satisfies this condition; a positive net repair that is still supported must be analysed separately. Hence: a formation that depends on the condition it consumes terminates itself, its formation is bounded, and it forms and then ceases; a formation that does not depend on it can keep forming new organization without bound while terminating the dependence it takes part in. The occurrence and formation trajectory of the latter can be exactly the same as that of a formation sustainably sharing the condition. So neither “keeps forming new organization” nor “itself persists” separates the two classes; what separates them is the continued-formation conditions of the relations it takes part in. A joint draw can also consume while each party alone stays within renewal, and an upgrade that begins within renewal can likewise consume.
 
-这把退化放进同一套关系描述之中，而不预设好坏：消耗不等于结束，有限完成、休息与适当结束都不使依存者永久失去条件。生成与退化作为关系不重叠，但一次发生可以同时参与二者。
+This places degeneration within the same relational description without presupposing good or bad: consumption is not ending, and finite completion, rest and a fitting ending do not make any dependent permanently lose its conditions. Generation and degeneration do not overlap as relations, but one occurrence can take part in both.
 
-[Ren 追问](../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up)后，此处原先的“限定”说法已修正。G0 的对象本来就是生生，即“整体中的生及其继续生成”；把它读成“任何已实现的新组织”，是形式化的误读，不是 G0 的内容。所以本分类不是对 G0 的限定，而是给 G0 已有的对象一个可检查的关系内容；说生成一侧有正面意义，就是 G0 本身，G0 作为公开前提的地位不变。“消耗更坏”是比较，由公开的比较原则 C 承担。[已查的比较](../results/records/relational-reading-comparison.md)表明：在关系读法下，规律族中每一种超出更新的取用，都被 C 严格排在同一展开中它不发生的接续之下；逐事件的广义读法做不到这一点，它甚至容许一个满足 C 的严格比较偏好恶性增长。各接续互有对方缺少的生成时，即混合情形，C 不裁决。
+After [Ren's follow-up](../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up), the earlier “restriction” wording here was corrected. The object of G0 was always 生生, “生 in the whole and its continued generation” (“整体中的生及其继续生成”); reading it as “any new organization that has been realized” (“任何已实现的新组织”) is a misreading by the formalization, not the content of G0. This classification is therefore not a restriction of G0 but gives the object G0 already has a checkable relational content; saying that the generative side has positive significance is G0 itself, and G0 keeps its status as an openly stated premise. “Consumption is worse” is a comparison, carried by the openly stated comparison principle C. The [checked comparison](../results/records/relational-reading-comparison.md) shows that under the relational reading, every kind of drawing beyond renewal in the family of laws is ranked by C strictly below the continuation in the same unfolding in which it does not occur; the broader event-by-event reading cannot do this, and even admits a strict comparative preference satisfying C that grows vicious. When continuations each have a generation the other lacks, the mixed case, C does not decide.
 
 **English scope.** A formation is renewing when every condition it depends on or draws on keeps supporting each formation that depends on it, and consuming when it draws on a condition some dependent formation permanently loses. When the renewer depends on what it renews, falling below its support is irreversible within the law if subsequent focal contribution never exceeds drawing; the overdraw theorem meets this premise. A dependent consumer ends itself with bounded formation. An independent one can persist and form without bound while ending the dependent relation, with an own trajectory identical to a sustainable formation's. Joint and escalating drawing can consume. 35 Lean theorems / 60 declaration audits pass with empty axiom sets. Corrected after Ren's follow-up: G0's object was always 生生, so this supplies the relational content of what G0 affirms rather than restricting G0. With the comparison principle C and the relational reading, every overdraw in the law family is ranked strictly below the same unfolding without it; the broad event reading leaves them incomparable (15 further theorems, empty axiom sets). Mixed cases are not decided by C. [Definitions, theorems, relation to the narrower wear-law result, counterreview and boundaries](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md): one shared condition in the law family, no substitution, strict per-step renewal, and no real-world correspondence or ethical ranking established.
 
-
 <a id="supported-repair-and-reformation"></a>
-## 中断之后，什么使关系重新形成 / Supported repair after interruption
+<a id="中断之后什么使关系重新形成--supported-repair-after-interruption"></a>
+## Supported repair after interruption
 
-[有限修复窗口的实查结果](../results/records/supported-renewal-recovery.md)接通同一规律中的另一方向：**维持活动停止后，仍受支持的活动能够通过实际贡献重新建立维持条件。** 若这一活动起初仍有支持，并在达到缺口所需的有限步内每步净贡献至少一单位，则条件逐步上升，修复活动自身的支持保持，原维持活动也在缺口步数内重新获得支持。这里的贡献来源、阈值与更新规律明示；恢复之后能否继续，还要看其后的实际活动。
+The [checked result for a finite repair window](../results/records/supported-renewal-recovery.md) connects another direction in the same law: **after a maintaining activity has stopped, an activity that is still supported can re-establish the conditions for maintenance through its actual contribution.** If this activity initially still has support, and within the finite number of steps the gap requires contributes a net of at least one unit at each step, then the condition rises step by step, the repairing activity's own support is kept, and the original maintaining activity regains support within the number of steps of the gap. The sources of contribution, the thresholds and the update law are stated explicitly; whether it can continue after recovery depends on the actual activity that follows.
 
-相反，若条件已经低于两项活动各自的支持阈值，在没有第三条供给路径的同一规律内，水平将保持不变。此后贡献表中即使写入正数，也无法使已经不能活动的路径实际贡献。两段已检查历史从相同条件开始，只有第一次取用量不同，后续输入表完全相同：一段保留修复所需的支持，先中断、再恢复；另一段连这一支持也失去，此后不恢复。
+Conversely, if the conditions are already below the support thresholds of the two activities, the level stays unchanged within the same law that has no third supply path. Even if positive numbers are then written into the contribution table, a path that can no longer act cannot actually contribute. Two checked histories start from the same conditions and differ only in the first draw, with identical input tables afterwards: one keeps the support needed for repair, is interrupted first and then recovers; the other loses even this support and does not recover afterwards.
 
-这使变化判断更具体：**一次取用可以同时改变眼前的条件和恢复这些条件的能力。** “维持已经中断”因此不是完整的后续说明，必须继续查看哪些实际修复关系尚在。重新达到支持水平也不抹去中断及其损失；已恢复的这段历史既不满足此前的每步更新定义，也不满足永久消耗定义。原分类本已明示不穷尽，此处补上的是恢复机制。
+This makes the judgment of change more concrete: **one draw can change both the immediate conditions and the capacity to restore those conditions.** “Maintenance has been interrupted” is therefore not a complete account of what follows; one must go on to see which actual repair relations remain. Reaching the support level again does not erase the interruption and its loss either; the recovered history satisfies neither the earlier per-step definition of renewing nor the definition of permanent consumption. The original classification already stated that it is not exhaustive, and what is added here is the recovery mechanism.
 
 **English scope.** In the unchanged support-gated law, an initially supported contribution route with positive net contribution throughout a finite deficit-length window restores the sustaining activity. If both routes lack support, the reached level is absorbing regardless of nominal later inputs. Two actual pulse histories share their initial level and future schedules but lie on opposite sides of this recovery boundary. Nine new theorem declarations / ten audits pass; the 35 inherited theorems / 60 audits retain separate credit. Finite repair, its bootstrap obstruction and the retained interruption explain this conditional connection, not the source of repair resources, a universal recovery law or ethical necessity. [Exact premises, correspondence and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md#supported-repair-and-reformation) retain G0/J/E and the full foundational question.
