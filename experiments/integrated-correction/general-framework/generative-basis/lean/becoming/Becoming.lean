@@ -125,6 +125,7 @@ import Becoming.CourseWorlds
 import Becoming.LearnableRuns
 import Becoming.ParityReadings
 import Becoming.FinerTraces
+import Becoming.FormedLoops
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1237,6 +1238,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   with no premise. The finer courses of `n` steps are exactly the finer law's traces of `n` steps
   taking listed moves to listed configurations; the law of steps of positive weight is the finer
   law with the situation forgotten, and situations exist exactly where it has a course.
+* `Becoming.FormedLoops` (L4): worlds whose loops form within them, with no premise. Up to a step,
+  a world whose strengths are read off its own standing stands as the balanced world its couplings
+  formed before that step carry. The witnesses of `Becoming.Closing` and `Becoming.Frequency` are
+  balanced worlds: a self-loop acting from a step on, a threshold world whose loop of the couplings
+  it reads off its own standing forms at the threshold and not before, and self-loops coupling on
+  a schedule, the sparse one recurring without running away.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
