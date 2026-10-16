@@ -3198,6 +3198,24 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY.md"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
+      "sha256": "0c86a8d756b82a62f8d14733e21714fb3ac38a175ea2cabaa645974f61d3b63f",
+      "blob": "113c7184a7c235f5f193628a9b4065d6c12c0929",
+      "batch": "RD",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.zh.md",
+      "sha256": "7fb4e9cdec4cfbfd46e1fea0bebb7afa4c19e318110e54adb70daf0ec1c63c3e",
+      "blob": "3325b4517240590cd188e68cff0915ab18f2ef21",
+      "batch": "RD",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.zh.md"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-RENEWAL-MATH.md",
       "sha256": "9c8b0ded5fde0e118d95690eb4966259720f20c803d0ef334f70e2b857bed3e6",
@@ -11541,6 +11559,33 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PART-II-INVENTORY.md",
+      "sha256": "6d4770dbc4bb69bfec54c75d0db7d4b27e77b8a0a0db6181da2c04acd1982a50",
+      "blob": "cb82bc0dfddb184612118d3613fe77cd49d561fc",
+      "batch": "RD",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.py",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PART-II-INVENTORY.py",
+      "sha256": "d576b777deea7b7b2f50ed7bd34f4fbceb5bb6a1b2b5784729eecb09e4a3fa68",
+      "blob": "0648564b7d50a0c3919f4a95f53c767954b29ef8",
+      "batch": "RD",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.py"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PART-II-INVENTORY.zh.md",
+      "sha256": "c396e4d93f27b54a9b1b5f121c7e91ae62fdcf57a9d529717c9ce14e31675b2e",
+      "blob": "5aec5b0dcec061404c832d51895cebd3c7819a53",
+      "batch": "RD",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.zh.md"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-CANONICAL-EDITS.json",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PARTICIPATION-CONSEQUENCE-CANONICAL-EDITS.json",
       "sha256": "deec4448b6856239739fd3a38f1ccb850964fbc8450be1eb4b15965be393452b",
@@ -13375,6 +13420,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-08; record-bound: 1 file (tool rewrites record paths, sha256 unchanged)",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REGISTRATION-AND-TESTING-PLAN.md",
+      "sha256": "425b68476ac8e939315dad002f5222ff51cbd692db09ae614ee4a9d0f9b8627f",
+      "blob": "5fa4f5cc26c21a7dc8428ee5a0791ca3840bbf1f",
+      "batch": "RD",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATION-AND-REASON-ARGUMENT.md",
@@ -17884,6 +17938,15 @@
       "batch": "H5",
       "reason": "packet of the 5-9 Oct pre-spine programme; last changed 2026-10-08",
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-SCOPE-INDEX-EDITS.json"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WUMING-BOUNDARY-PLAN.md",
+      "sha256": "3a21d55a2e5b013a0ad8c28901be7488259f4180dd266b061b086ed6c18c7902",
+      "blob": "fcfab4a5dabef7d76d3b0f4a1417a35930d9ba1c",
+      "batch": "RD",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md"
     },
     {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-CHECKS.json",

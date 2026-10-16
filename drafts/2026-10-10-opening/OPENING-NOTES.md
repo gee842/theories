@@ -31,7 +31,7 @@ Ren then asked to put it at the top of the README, merge all and push. Version 5
 **Ren's explanation stays out of the opening.** Version 3 wrote Ren's explanation of "mammalian" into the text. Ren gave it to correct the AI's line and to start the note on 无明, not as text for the opening. Two sentences and a footnote are gone:
 - "It is a part of our nature, the seeking system every mammal has, hijacked by what we have been nurtured into and locked onto an illusion." Ren quoted only the next two sentences, but this one renders the same explanation, so it went too.
 - "Not seeing this is what South Asian traditions call avidyā (无明), ignorance, the root of suffering."
-- The footnote on 无明. The note itself is [the plan](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md), which now also records Ren's words on dominance.
+- The footnote on 无明. The note itself is [the plan](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WUMING-BOUNDARY-PLAN.md), which now also records Ren's words on dominance.
 
 The AI's line that Ren rejected in version 2, "The logic is older than the West, and it is no one's nature", stays out. "Mammalian" stands as Ren wrote it, without a gloss.
 
@@ -67,7 +67,7 @@ A new footnote cites Panksepp's SEEKING system, the corpus's theory of drives an
 - "A part that grows against the body it lives from is cancer", merged into "cancer, turned around";
 - a shorter attribution line.
 
-**The note on 无明** is [the plan for its boundary condition](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md).
+**The note on 无明** is [the plan for its boundary condition](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WUMING-BOUNDARY-PLAN.md).
 
 **Still Ren's to decide.** Of version 2's list, the first two are answered: "mammalian" stays, now explained, and the AI's line is gone. The other four remain: the length, a Chinese edition, the attribution line, and P39's reading of the axiom.
 

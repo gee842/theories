@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "batch": "RD",
+  "date": "2026-10-16T21:02:16+00:00",
+  "base_commit": "bf9172837c2164c81c61af02bfea3a88c6d0a4c5",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REGISTRATION-AND-TESTING-PLAN.md",
+      "sha256": "425b68476ac8e939315dad002f5222ff51cbd692db09ae614ee4a9d0f9b8627f",
+      "blob": "5fa4f5cc26c21a7dc8428ee5a0791ca3840bbf1f",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WUMING-BOUNDARY-PLAN.md",
+      "sha256": "3a21d55a2e5b013a0ad8c28901be7488259f4180dd266b061b086ed6c18c7902",
+      "blob": "fcfab4a5dabef7d76d3b0f4a1417a35930d9ba1c",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
+      "sha256": "0c86a8d756b82a62f8d14733e21714fb3ac38a175ea2cabaa645974f61d3b63f",
+      "blob": "113c7184a7c235f5f193628a9b4065d6c12c0929",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.zh.md",
+      "sha256": "7fb4e9cdec4cfbfd46e1fea0bebb7afa4c19e318110e54adb70daf0ec1c63c3e",
+      "blob": "3325b4517240590cd188e68cff0915ab18f2ef21",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PART-II-INVENTORY.md",
+      "sha256": "6d4770dbc4bb69bfec54c75d0db7d4b27e77b8a0a0db6181da2c04acd1982a50",
+      "blob": "cb82bc0dfddb184612118d3613fe77cd49d561fc",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PART-II-INVENTORY.zh.md",
+      "sha256": "c396e4d93f27b54a9b1b5f121c7e91ae62fdcf57a9d529717c9ce14e31675b2e",
+      "blob": "5aec5b0dcec061404c832d51895cebd3c7819a53",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.py",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PART-II-INVENTORY.py",
+      "sha256": "d576b777deea7b7b2f50ed7bd34f4fbceb5bb6a1b2b5784729eecb09e4a3fa68",
+      "blob": "0648564b7d50a0c3919f4a95f53c767954b29ef8",
+      "reason": "executed plan",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.py"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "_process/RESEARCH-DIRECTIVES.md",
+      "old_sha256": "28dec49c858396bbafb7d0eb61533c63c40f52bdf6a625bda769d3ea65db921a",
+      "new_sha256": "945f0b78b337416be8fa95e8538432a2df4659bac0d8288ed7f8ff43e63a9527",
+      "references": 2
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "old_sha256": "18116a4404fa57cf65fbbec59916ee335216040d9811dda3c148760219530812",
+      "new_sha256": "f9f60dfbeeec3ec52958d271e2f2e957c6481ab42754299e9824479ed62c069a",
+      "references": 2
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
+      "old_sha256": "055e98dfd6e6e3d1286e0175b6229c0fc7cfdf37df8068facfb2a085f19f6b86",
+      "new_sha256": "5df713091bc2a9dff7282dbefca448b219b759c9b3a24c1bf245c080c0cd795f",
+      "references": 6
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "old_sha256": "e5b1fa3fd6633c7d81d1d18f2d52ad293e53e13fdfe0ae483e61e21db292ac2d",
+      "new_sha256": "adbbfdeacc0ad1c22f99e2a56e85c45030f0f561f868e32f1608992916b0a3e6",
+      "references": 4
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.zh.md",
+      "old_sha256": "56a22b57455293bf5f2bcb40a2ea330bf218e3d17eb09fcaad0362baf1f097bb",
+      "new_sha256": "737519a769e8b0b68e4460b0ae172b0b48dee35e23c19cbc35c1365ba62750d4",
+      "references": 5
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+      "old_sha256": "a4388333a447942e778f308eb93749350a270bf3d7f64530acfc314792b5f68a",
+      "new_sha256": "afd49169c5d28946a60ef12e2fdd3cbb0c1b5fa9f7737cf24e1f2f7543e06a1c",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.zh.md",
+      "old_sha256": "62918774056e3d23954a9b7df07f0b5b64eefeb65146ee59a9a3f2215a74da91",
+      "new_sha256": "cb0ecdf92f8ad5da01243166287716e73567dcaedd9ad3163565502181920c37",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-10-10-opening/OPENING-NOTES.md",
+      "old_sha256": "3fcebc3c31b7b7d130c3fcaf3bd25e5ae9b91de638403fe4562e8abf72312511",
+      "new_sha256": "bcc7ded114ecc0262614b3a671dcf7170a571af9b9dea69c5b0bba5fcadd77ba",
+      "references": 2
+    },
+    {
+      "path": "drafts/2026-10-10-opening/OPENING-V3.md",
+      "old_sha256": "baba8af87b645c91aca464b603fafec92e733293efcc324484f7d46111cfa244",
+      "new_sha256": "2f8952b14500d446d979000ab7f81a7ad6373f2b43f5ecf854c7455fdccfb0fa",
+      "references": 2
+    },
+    {
+      "path": "drafts/2026-10-10-opening/OPENING-V4.md",
+      "old_sha256": "4ea5fa593af7b34047f1b842684bd35ef3cc3ae7409b9e5b44ca1424f6b0a159",
+      "new_sha256": "afa9b23c952a41d52e2788cbe9434c72ce0d3c5dd199950b39e3630bcc475ee5",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "old_sha256": "2bc5049131e0622e49079f3ea4d7c6f1492347de6ef37dcc39c3d7d0d94a8954",
+      "new_sha256": "b027e4d9ead51a7dd4bd934ba187dc1ce0316feb8d684676b325b43aaa0e7acf",
+      "references": 3
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+      "old_sha256": "e76561866107ff0b5797fac8d185b48f1286f275dfdd110f88704832425c3b8a",
+      "new_sha256": "9149e42dcd46af96b35f0563468f7a0dbb22d0f8597ac220b315cc6e6a227b0d",
+      "references": 4
+    },
+    {
+      "path": "theories/becoming/results/data/generativity-chain.json",
+      "old_sha256": "0a329ff8d52f35548080839d310a95888d2eeb77f06d14bf8655e566344457f4",
+      "new_sha256": "62827a16d538ae2313d00939bcd363d6a6dd12913cad6d81451feda2ff764e30",
+      "references": 4
+    },
+    {
+      "path": "theories/becoming/results/records/continuing-self-fed-from-beyond.json",
+      "old_sha256": "be3dcee486a24ac6ec1b6c473a1edb64bdd2a15c686eedd6648a9dc17a4b1c2f",
+      "new_sha256": "faf0ea8adc5698f95fb2d504154ff3bb27f1a68b640eec8ec2d69622846df071",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/conveyance-crosses-the-boundary.json",
+      "old_sha256": "345b41b4c11480da2c842e954cabff7528e0204ef30dd56b75762a78ef6527c9",
+      "new_sha256": "abdaadef70d7421e53a9a02c6ddb3fb5b2b0f912ba28f36779e0fd0a345e01d9",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/derived-extent-limits.json",
+      "old_sha256": "d8bb6581080cd692957557aab6005f0c64a835532c3e233b44605a4cc9799364",
+      "new_sha256": "f89752fa5ca45116c9fbb7b7acd226287b76b8051d74920cf67f8816e61a60cd",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/held-lives-g0-is-centering.json",
+      "old_sha256": "c9e97d83b69b0f73fbd2032d9bbcb2e937fbd6c802da5dc9c75b1326023052af",
+      "new_sha256": "895c1a4ee6d39cc2de05b9104421b37b83a0b263bdcd8de81a4cd03db6b124c2",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/own-count-misses-joint-excess.json",
+      "old_sha256": "01c7327a6b9a0b2baecbaf2ba239dcaaacf54d1bbcb5eac44b987e4dbace2e2e",
+      "new_sha256": "3a747530ce3c9ddd8e1226f2fd87999033adda590531c50458e62fbd6ebad3b2",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/seeking-boundary.json",
+      "old_sha256": "4f1fcac8e5f3124b96a88ee54de1cb7ae0ab1a45c8299b26c90679f4485c1dc0",
+      "new_sha256": "81ca82c6c38f612c3c35414986226c688f3234aac308b3ec5aef58fc86f6c150",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/subthreshold-registration.json",
+      "old_sha256": "1323e5045d46dbc5c7ab0e6e78e8f85083fadffb07e90915148243026713ef7f",
+      "new_sha256": "4b85713d1d71b46a6cd65244d40ac637e71885738c548aae58cdff051c163717",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/target-capture.json",
+      "old_sha256": "87b37451141a4aee3624f0ffd47ad520a9db2db529cff07e472f146f4427b105",
+      "new_sha256": "936dd8f34aebaa594d4383bb427f37123db0cc7795d2bd68a36a1cb901fdf896",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/testing-within-registration.json",
+      "old_sha256": "7d7e4d60fa2a0f3055dabffdb75abe406ff408ca677351bbc1b507dbdbacafdc",
+      "new_sha256": "11ee4eefbd10a3940cc1fe062b7d9d8567359b22d65ad2e2fbd1f9d40353e150",
+      "references": 1
+    }
+  ],
+  "history_roots": [
+    "_process/research/2026-10-05-generative-foundation-review/history"
+  ],
+  "generated_pages_to_rerender": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INDEX.md",
+    "theories/becoming/results/data/source-index.json",
+    "theories/becoming/results/records/continuing-self-fed-from-beyond.md",
+    "theories/becoming/results/records/conveyance-crosses-the-boundary.md",
+    "theories/becoming/results/records/derived-extent-limits.md",
+    "theories/becoming/results/records/held-lives-g0-is-centering.md",
+    "theories/becoming/results/records/own-count-misses-joint-excess.md",
+    "theories/becoming/results/records/seeking-boundary.md",
+    "theories/becoming/results/records/subthreshold-registration.md",
+    "theories/becoming/results/records/target-capture.md",
+    "theories/becoming/results/records/testing-within-registration.md"
+  ],
+  "verification_errors": []
+}

@@ -2791,7 +2791,7 @@ Integration: 计划 P34；回答开放纲领“对整个空间成立的规律的
 
 ## 47. 延续的奠基：从想要延续者重述（W1–W5）
 
-2026-10-10。Ren 提议从“想要自身延续者”重述普遍元伦理核心（[原话](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）：想要延续者使其延续有意义；它须计入的整体范围依视角而定，不需要任何公理；加一条公理即闭合整体。AI 把它分为两半：动力学定出想要延续者必须计入的范围，定不出中心；那条公理的唯一作用是让每一点都是中心。Ren 答“exactly”，并说“commit them, then start implementation all the way to full completion”。本节实现[延续奠基计划](CONTINUATION-GROUNDING-PLAN.md)的 W1–W5；阶段以 W 编号，与并行会话的 P 编号分开。成果记录：新增 [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md)、[own-count-misses-joint-excess](../../../../theories/becoming/results/records/own-count-misses-joint-excess.md)、[held-lives-g0-is-centering](../../../../theories/becoming/results/records/held-lives-g0-is-centering.md)、[conveyance-crosses-the-boundary](../../../../theories/becoming/results/records/conveyance-crosses-the-boundary.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)。
+2026-10-10。Ren 提议从“想要自身延续者”重述普遍元伦理核心（[原话](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）：想要延续者使其延续有意义；它须计入的整体范围依视角而定，不需要任何公理；加一条公理即闭合整体。AI 把它分为两半：动力学定出想要延续者必须计入的范围，定不出中心；那条公理的唯一作用是让每一点都是中心。Ren 答“exactly”，并说“commit them, then start implementation all the way to full completion”。本节实现[延续奠基计划](../history/root-foundation/CONTINUATION-GROUNDING-PLAN.md)的 W1–W5；阶段以 W 编号，与并行会话的 P 编号分开。成果记录：新增 [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md)、[own-count-misses-joint-excess](../../../../theories/becoming/results/records/own-count-misses-joint-excess.md)、[held-lives-g0-is-centering](../../../../theories/becoming/results/records/held-lives-g0-is-centering.md)、[conveyance-crosses-the-boundary](../../../../theories/becoming/results/records/conveyance-crosses-the-boundary.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)。
 
 ```text
 Result(s): 复用 no-finite-part-bears-taking（taking_draws_in、Inward、Around、Lone）、generation-is-replenishment
@@ -4516,7 +4516,7 @@ Integration: 记录 recurrence-without-premise；计划 §10 R6；章节 §9 的
 
 2026-10-11。Ren（[原话一](../../../../sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md)，[原话二](../../../../sources/15-codex-theory-conversations/2026-10-11-fold-g0.md)）：
 
-G0 折叠之后（§67），第二部分所加的只有一条公理。本节问：第二部分的定理中，哪些用到它，用在哪里。零前提的清点排除了第二部分的模块，并早于 P42–P44 的落地；本节补上这一部分，并加上公理与评价条件这一维。按[工作板](../../../BECOMING-WORKBOARD.md)认领为 P52。逐条的表、方法与提议在[清点](PART-II-INVENTORY.md)，可由[脚本](PART-II-INVENTORY.py)从两张回执所绑定的源重现。
+G0 折叠之后（§67），第二部分所加的只有一条公理。本节问：第二部分的定理中，哪些用到它，用在哪里。零前提的清点排除了第二部分的模块，并早于 P42–P44 的落地；本节补上这一部分，并加上公理与评价条件这一维。按[工作板](../../../BECOMING-WORKBOARD.md)认领为 P52。逐条的表、方法与提议在[清点](../history/root-foundation/PART-II-INVENTORY.md)，可由[脚本](../history/root-foundation/PART-II-INVENTORY.py)从两张回执所绑定的源重现。
 
 ```text
 Result(s): 不新增成果；复用章节第二部分以名称引用的全部声明（182 个：157 条定理、25 个定义），
@@ -4556,7 +4556,7 @@ Integration: 章节 §8 的 Ren 的选择加一项（第二部分的结构）；
 >
 >
 
-AI 的分析与拟议阶段在[计划](REGISTRATION-AND-TESTING-PLAN.md)中。它说经由支持的反馈有三种不见（阈下、视界之外、所及之外）；失控是在其一之中运行的回路；量度、延续的模型与他者之识是跨过它们的方式；可否证性是被展开纠正的条件；理 读作识 心 的反馈所不能识者的模型。它还留给 Ren 四个问题。Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。AI 把这读作接受开始这一阶段、接受名称与 理 的读法（来源中的 AI 读法）。第 4 问，即形成自身的立着是否算作被识，由 AI 探索后决定（§70.1）。独立审查收窄了这些读法（§70.2），所以下面的读法是收窄之后的，不是 Ren 所接受的原文。
+AI 的分析与拟议阶段在[计划](../history/root-foundation/REGISTRATION-AND-TESTING-PLAN.md)中。它说经由支持的反馈有三种不见（阈下、视界之外、所及之外）；失控是在其一之中运行的回路；量度、延续的模型与他者之识是跨过它们的方式；可否证性是被展开纠正的条件；理 读作识 心 的反馈所不能识者的模型。它还留给 Ren 四个问题。Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。AI 把这读作接受开始这一阶段、接受名称与 理 的读法（来源中的 AI 读法）。第 4 问，即形成自身的立着是否算作被识，由 AI 探索后决定（§70.1）。独立审查收窄了这些读法（§70.2），所以下面的读法是收窄之后的，不是 Ren 所接受的原文。
 
 本节是统一计划 P49（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)）。起草时编为 P47，因 P47 已是 `Becoming.Standing`，在工作板上改为 P49；审查文件保留起草时的编号。它不加公理，属于第一部分。核心新增模块 `Becoming.Testing`，92 项定理，导入 `Becoming.Feedback` 与 `Becoming.Locality`。按[零前提转向](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)与整合者定下的接口，平衡只在被识的条件上逐步假设（`Flow.BalancesOn`）；整体的平衡经 `Flow.Balances.on` 给出它。
 
@@ -5301,7 +5301,7 @@ Integration: 记录 continuous-time-as-tower；零前提计划 §5；根模块�
 
 ## 83. 无明的边界条件：寻求何处能静止于够（P62）
 
-2026-10-10，Ren 把争当“支配一切的最大者”称为哺乳动物的：“the seeking system got locked in, what they are pursuing is illusion(in south asia and Buddhism)”，并要求“find the boundary condition for 无明”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md#nature-nurture-and-无明)；[计划](WUMING-BOUNDARY-PLAN.md)）。2026-10-11，P49、P53、P55 落地之后，Ren 答：“yes let's do 无明”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。Ren 随后答“b5”。本节是统一计划 P62。它不加公理，属于第一部分。核心新增两个模块：`Becoming.Seeking`（L3），13 项定理，导入 `Becoming.Locality` 与 `Becoming.Recurrence`；`Becoming.Capture`（L3），11 项定理，导入 `Becoming.Evolution`、`Becoming.Locality` 与 `Becoming.Recurrence`；都不改任何已有模块。计划的 B1、B2 与 B5 在这里陈述；B3 与 B4 已是脊柱上的定理（P49、P53、P55），在这里读出，不重述。
+2026-10-10，Ren 把争当“支配一切的最大者”称为哺乳动物的：“the seeking system got locked in, what they are pursuing is illusion(in south asia and Buddhism)”，并要求“find the boundary condition for 无明”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md#nature-nurture-and-无明)；[计划](../history/root-foundation/WUMING-BOUNDARY-PLAN.md)）。2026-10-11，P49、P53、P55 落地之后，Ren 答：“yes let's do 无明”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。Ren 随后答“b5”。本节是统一计划 P62。它不加公理，属于第一部分。核心新增两个模块：`Becoming.Seeking`（L3），13 项定理，导入 `Becoming.Locality` 与 `Becoming.Recurrence`；`Becoming.Capture`（L3），11 项定理，导入 `Becoming.Evolution`、`Becoming.Locality` 与 `Becoming.Recurrence`；都不改任何已有模块。计划的 B1、B2 与 B5 在这里陈述；B3 与 B4 已是脊柱上的定理（P49、P53、P55），在这里读出，不重述。
 
 成果记录新增两项：[seeking-boundary](../../../../theories/becoming/results/records/seeking-boundary.md) 与 [target-capture](../../../../theories/becoming/results/records/target-capture.md)；[evolution-on-descent](../../../../theories/becoming/results/records/evolution-on-descent.md) 由 target-capture 推进（它未陈述的选择项），断言不变。
 
@@ -9229,7 +9229,7 @@ Integration: §9 Lasting 一行（陈述与计数）与一个外围行；Becomin
 
 ## 147. 依 Ren 的交托决定的读法（P110）
 
-2026-10-15／16。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定；每项写明理由与会改变它的东西，记为依 Ren 2026-10-15 的交托所作的决定，不记为 Ren 自己的决定，Ren 可改其中任何一项。交托的另一半，“推进完整的前沿”，见 §148（P111）与 §149（P112）。工作板上认领为 P110。
+2026-10-15／16。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](../history/root-foundation/CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定；每项写明理由与会改变它的东西，记为依 Ren 2026-10-15 的交托所作的决定，不记为 Ren 自己的决定，Ren 可改其中任何一项。交托的另一半，“推进完整的前沿”，见 §148（P111）与 §149（P112）。工作板上认领为 P110。
 
 ```text
 Result(s): 不新增结果；决定记录 DELEGATED-CHOICES（D1–D39）。101 项记录各加一条成对的、注明日期的说明：此前留给 Ren 的读法与名称

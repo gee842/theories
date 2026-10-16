@@ -3,7 +3,7 @@
 
 > **中文版（2026-10-17）。** 正典文本是[英文版](DELEGATED-CHOICES.md)；本版由重构时从双语原文拆出，不与英文同步维护，两者有出入时以英文为准。
 
-2026-10-15。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定。本记录是这些决定。全文由 AI 撰写（会话 “Overall progress and claims” [d8df1a]，现为 [6a12d4]），引号中的 Ren 原话除外。每项决定是 **AI 依 Ren 2026-10-15 的交托决定**，不是 Ren 自己的决定；Ren 可以改其中任何一项。工作板上认领为 P110；同一交托之下推进的证明是 P111（`Becoming.Gain`）与 P112（`Becoming.Gluing`），结果在其记录与研究中。
+2026-10-15。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](../history/root-foundation/CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定。本记录是这些决定。全文由 AI 撰写（会话 “Overall progress and claims” [d8df1a]，现为 [6a12d4]），引号中的 Ren 原话除外。每项决定是 **AI 依 Ren 2026-10-15 的交托决定**，不是 Ren 自己的决定；Ren 可以改其中任何一项。工作板上认领为 P110；同一交托之下推进的证明是 P111（`Becoming.Gain`）与 P112（`Becoming.Gluing`），结果在其记录与研究中。
 
 <a id="0-怎样读这份记录--how-to-read-this-record"></a>
 ## 0. 怎样读这份记录
