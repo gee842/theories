@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "batch": "H1-replace",
+  "date": "2026-10-16T19:42:29+00:00",
+  "base_commit": "11308bad4cc85ad2ecadc039c49519ecd3fa7776",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "MAP.md",
+      "new_path": "_process/history/2026-09-consolidation/MAP.md",
+      "sha256": "5abe342bdc4facd7cb78311f5ce7b171b6fed19cda80602e210218af4029559e",
+      "blob": "03378d1611215028d197c8977129c7bde3070117",
+      "reason": "September corpus map (10-04); Becoming row and next steps stale. A new short MAP.md is created at the old path afterwards, so inbound links must NOT be rewritten to the history copy",
+      "plan_entry": "MAP.md"
+    },
+    {
+      "old_path": "GLOSSARY.md",
+      "new_path": "_process/history/2026-09-consolidation/GLOSSARY.md",
+      "sha256": "c85e22f9d11554d57b00f2a3ecde79d939dce18078eb5b9ada18d53e7b3e88e4",
+      "blob": "c58c1ba2569026de71ca0183ce921936c1a6d833",
+      "reason": "pre-Becoming vocabulary (189 KB, 192 headwords) calling itself canonical; a short crosswalk to chapter section 10 is created at the old path afterwards; inbound links must NOT be rewritten",
+      "plan_entry": "GLOSSARY.md"
+    }
+  ],
+  "keep_references": true,
+  "rewritten": [],
+  "history_roots": [
+    "_process/history"
+  ],
+  "generated_pages_to_rerender": [
+    "DEPENDENCIES.md",
+    "GOALS.md",
+    "OPEN-QUESTIONS.md",
+    "README.md",
+    "RESEARCH.md",
+    "RESULTS.md",
+    "_process/BRIEF.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "theories/becoming/README.md",
+    "theories/becoming/chapters/CLAIMS.md",
+    "theories/becoming/results/ROADMAP.md"
+  ],
+  "verification_errors": []
+}
