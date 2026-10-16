@@ -79,3 +79,11 @@ Commits: `575289df` (untrack bytecode), `d65bbeaf` (scanner), `2db481ce` (checke
 - In inherited modules, private declarations and unnamed instances are not covered by name. None occur in the current closure.
 - The external Mathlib project's git commit is not recorded, because worktree isolation prevented it. The file hashes are recorded instead.
 - CI is unchanged. CI runs are blocked by GitHub billing, which Ren has to fix.
+
+## Fresh run, on main `d21b311a` (lead, 16 October)
+
+`BECOMING_FRESH=1` with `BECOMING_OUT` outside the tree, which was left untouched. Lean was found with `elan which lean`.
+- **Result:** `passed`. All 703 Lean steps were run and none were reused, so nothing came from the shared cache.
+- **Axioms:** `core_axioms: []`. Of the 851 bridge constants, one generated constant uses an axiom: `RepairComparison.State.mk.injEq`, on `propext`.
+- **Audit:** 9,912 declaration audits, 7,214 theorems in spine and bridge, 6,918 of them in the core.
+- **Receipt:** `20261016T130738.412710Z`, sha256 `faced25f…72834`, 2.4 MB, not kept. The checker's printed summary is kept as [fresh-run-20261016T130738.412710Z-summary.json](fresh-run-20261016T130738.412710Z-summary.json).
