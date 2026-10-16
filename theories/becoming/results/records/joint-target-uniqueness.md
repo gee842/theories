@@ -30,7 +30,7 @@ Credits the linked existing Lean receipt. This migration reads source and checks
 
 This uniqueness lemma alone proves neither joint-plan recovery nor arbitrary substitution of designated parts; the study retains the latter boundary.
 
-- Even complete part profiles may fail to identify whether designated parts reuse the same support. [EXPLANATORY-JOINTNESS-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md)
+- Even complete part profiles may fail to identify whether designated parts reuse the same support. [EXPLANATORY-JOINTNESS-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md)
 
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
@@ -46,7 +46,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 |---|---|---|
 | proof | [ExplanatoryJointness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean) | `Generative.ExplanatoryJointness.same_target_unique` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json) | — |
-| integration | [EXPLANATORY-JOINTNESS-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md) | — |
+| integration | [EXPLANATORY-JOINTNESS-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Composition.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean) | `Becoming.JointFrame`, `Becoming.SameJointTests.functional` |
 | proof | [CompositionBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CompositionBridge.lean) | `Becoming.same_target_unique_by_core` |

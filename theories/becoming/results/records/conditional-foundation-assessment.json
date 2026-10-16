@@ -80,19 +80,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
       "role": "statement",
-      "sha256": "6021b489b89d498c08b2ab5625d1289a3efa82cd0456699f83f55b30e5073b8b",
+      "sha256": "07c1b294a9338bd9cf41df983b803cfe78bd026005d1a80cc592d5247c9043ff",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md",
       "role": "review",
-      "sha256": "5d5f2f5e4e55db186fd5cc5e6a787f757cfeae7226e9d2647ddc84677717701a",
+      "sha256": "3d786c52c71af55d63d66ea58a69bf139baa1a83d9784f3556e690856e0f9046",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FOUNDATION-COMPOSITION.md",
       "role": "integration",
-      "sha256": "5b0a3526fbb959f903e94138ff120d043a8574f44adb9d447caeb6f98732bbfa",
+      "sha256": "91a25e082ba951f11ef80f7ee5c2aed0e01a2fcf2c1050ac2469271795aac9e0",
       "declarations": []
     },
     {
@@ -122,8 +122,11 @@
       "zh": "2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。"
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句（与原第一条“反例”逐字相同，实为范围边界）拆为 3 项分类“未表明”，重复的反例条目并入其中；2 行“已接通”链接既有五项评估与根验收。主张、前提、状态、关联、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/conditional-foundation-assessment.md)；迁移前的完整记录为 text_versions[0]。",
-      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former first “counterexample”, which was a scope boundary) was split into 3 typed does-not-show items, absorbing that duplicate entry; 2 progress lines link the existing five-condition assessment and root acceptance. No claim, premise, status, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/conditional-foundation-assessment.md); the exact earlier record is text_versions[0]."
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句（与原第一条“反例”逐字相同，实为范围边界）拆为 3 项分类“未表明”，重复的反例条目并入其中；2 行“已接通”链接既有五项评估与根验收。主张、前提、状态、关联、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/conditional-foundation-assessment.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former first “counterexample”, which was a scope boundary) was split into 3 typed does-not-show items, absorbing that duplicate entry; 2 progress lines link the existing five-condition assessment and root acceptance. No claim, premise, status, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/conditional-foundation-assessment.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in FIXED-FINISH-LINE-AUDIT.md, FOUNDATION-COMPOSITION.md, FOUNDATION-ROOT-ACCEPTANCE.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

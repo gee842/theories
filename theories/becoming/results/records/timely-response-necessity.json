@@ -185,19 +185,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
       "role": "integration",
-      "sha256": "1c17b46e9db0305b8214b16bef949c313132a623b216908f5a31010c0ffbcb76",
+      "sha256": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
       "role": "review",
-      "sha256": "d7b38517ff0e5d2825ea8f97a959c5f1c5f5f2a4c4b99a70a77af264e61967a2",
+      "sha256": "b24072f6b633e544a9d9bbfa9ee2064588b37fc86f418d6a50d7f5c5d97a3f61",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
       "role": "statement",
-      "sha256": "710e7a7f275e50da60910ce1012b3776245a428f408103110026ff368f357127",
+      "sha256": "cbc0a4fce96f9c15876f2d54cf4ed17707f6fa769f8ddc3dc142235076e3b4a9",
       "declarations": []
     },
     {
@@ -251,6 +251,9 @@
     {
       "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`、`FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`；陈述、证明与定理数不变；Lean 源：TimedResponse、FallibleInquiry 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）。本记录的主张、前提与状态不变，不记作重新证明。",
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`, `FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`; statements, proofs and theorem counts unchanged; Lean sources: TimedResponse, FallibleInquiry only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope). This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in SCIENTIFIC-INQUIRY-CONDITIONS.md, SCIENTIFIC-INQUIRY-EVIDENCE.md, SCIENTIFIC-PHILOSOPHY.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

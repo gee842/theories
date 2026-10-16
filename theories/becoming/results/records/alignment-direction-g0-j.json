@@ -107,7 +107,7 @@
     {
       "path": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
       "role": "statement",
-      "sha256": "9940ead2d7f06a18ff7f2ec37f27aebd496dde10854d8a11993469a31a7900cd",
+      "sha256": "a3253fa348ea1d4458d522829d6507c69c083165bdf1ecb9604f61e5d77f7283",
       "declarations": []
     },
     {
@@ -212,8 +212,8 @@
       "en": "2026-10-09: evidence line and related details corrected after independent review (GENERATIVE-DISCRIMINATION-REVIEW X5, P4): Lean models no optimization, only a one-step count; \"J2 does not follow from G0\" becomes \"J2 does not follow from C (G0 does not constrain ordering)\". This argument and its scope are unchanged."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句（与原唯一“反例”逐字相同，实为范围边界）拆为 3 项分类“未表明”，重复的反例条目并入其中；“完成的是方向论证”由种类与状态表达；证据中的“本次仅登记”移入沿革（见第一条）；2 行“已接通”链接整合研究第1、3节。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/alignment-direction-g0-j.md)；迁移前的完整记录为 text_versions[0]。",
-      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former only “counterexample”, which was a scope boundary) became 3 typed does-not-show items, absorbing that duplicate entry; “the completed result is a direction argument” is carried by kind and status; “this turn only registers that evidence” moved from the evidence to history (see the first entry); 2 progress lines link sections 1 and 3 of the integration study. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/alignment-direction-g0-j.md); the exact earlier record is text_versions[0]."
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句（与原唯一“反例”逐字相同，实为范围边界）拆为 3 项分类“未表明”，重复的反例条目并入其中；“完成的是方向论证”由种类与状态表达；证据中的“本次仅登记”移入沿革（见第一条）；2 行“已接通”链接整合研究第1、3节。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/alignment-direction-g0-j.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former only “counterexample”, which was a scope boundary) became 3 typed does-not-show items, absorbing that duplicate entry; “the completed result is a direction argument” is carried by kind and status; “this turn only registers that evidence” moved from the evidence to history (see the first entry); 2 progress lines link sections 1 and 3 of the integration study. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/alignment-direction-g0-j.md); the exact earlier record is text_versions[0]."
     },
     {
       "zh": "2026-10-15，整合 I3d（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（桥接中的确切实例）。每个保护优先的比较 PracticalJudgment.Better 都是其选项框架上的 BetterAt：选项是无步之框架的配置，左边实现所保护的论断、右边实现所得，以前者为 basic、后者为 living（Judgment.frame、Judgment.better_iff_betterAt），前沿亦同（Judgment.frontier_iff）。故 AlignmentDirection 对计划的比较与合格计划的前沿就是脊柱上 BetterAt 的比较与前沿（alignment_better_iff_betterAt、alignment_frontier_iff），转移优于扩张与扩张被排除出前沿是脊柱上比较的陈述。论断、Ren 的话与 G0 的折叠不变：BetterAt 陈述 J1/J2，即核心之外的公开承诺，这里不用也不断言 G0。需求覆盖（Covered）在脊柱上没有确切的对应（Becoming.Wholes 的 Web.Covered 不以需求为指标），故 covered_transfer_with_old_model_stopped 与 promised_successor_without_delivery_fails 留在外围。桥接由核心运行编译与审计（回执 20261015T161154.555289Z），新增声明的公理报告为空；AlignmentDirection 与 PracticalJudgment 作为继承模块随运行编译，其既有回执不变。",
@@ -222,6 +222,9 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ALIGNMENT-DIRECTION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

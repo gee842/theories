@@ -6,12 +6,13 @@ current records, without installing them.
 """
 import copy
 import json
+import os
 from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
 
-from tools.research import registry, research, style
+from tools.research import moves, registry, research, style
 
 DRAFTS = registry.ROOT / ('_process/research/2026-10-05-generative-foundation-review/root-foundation/development/'
                           'becoming-general-laws-plan/readability/drafts')
@@ -259,13 +260,18 @@ class MigrationDraftTests(unittest.TestCase):
             drafts.append(r)
         self.assertEqual(len(drafts), 3)
         real = registry.path_in_repo
-        with patch.object(registry, 'path_in_repo', side_effect=lambda value: snapshots.get(value) or real(value)):
+        with patch.object(registry, 'path_in_repo', side_effect=lambda value: snapshots.get(value) or real(moves.current_path(value))):
             errors, _ = registry.validate(sorted(by_id.values(), key=lambda r: r['id']))
             pages = {str(registry.record_path(r).with_suffix('.md').relative_to(registry.ROOT)): registry.render_record(r) for r in drafts}
         ids = {r['id'] for r in drafts}
         self.assertEqual([e for e in errors if e.split(':')[0] in ids and 'declaration not found' not in e], [])
         self.assertEqual([e for e in errors if e.split(':')[0] not in ids], [])
-        self.assertEqual([e for e in research.check_links(pages) if 'architecture/history' not in e], [])
+        # The drafts are frozen: links to files the restructure moved (move receipts) keep their old paths.
+        def moved(error):
+            page, _, target = error.partition(': missing link ')
+            full = (registry.ROOT / page).parent / target.partition('#')[0]
+            return bool(target) and moves.later_path(os.path.relpath(full, registry.ROOT)) is not None
+        self.assertEqual([e for e in research.check_links(pages) if 'architecture/history' not in e and not moved(e)], [])
         for r in drafts:
             self.assertEqual([f for f in style.lint(r) if f['severity'] == 'error'], [])
 

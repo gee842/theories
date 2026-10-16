@@ -213,7 +213,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
       "role": "integration",
-      "sha256": "c197cb00ae12652eeec926ecb2a980305e8a8d7549b5ddc04622db95d8f00f6d",
+      "sha256": "fc78145baee699bd8816d8c2ab1c4eb667223204e97db5fd85e64563726aaad9",
       "declarations": []
     },
     {
@@ -261,7 +261,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md",
       "role": "review",
-      "sha256": "0ea844882d98001214386efcedb95646fbc24582232e1e47bef2992632a51e6f",
+      "sha256": "e1bd9d8b7e744efaf0138ab3bf3a2a91849f56616366f2e27544c4cc84f1b246",
       "declarations": []
     },
     {
@@ -344,6 +344,9 @@
     {
       "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：Stock.lean（整合 I3d：新增所汲取而不补充的水平（FallsBy、trace_falls、falls_iff、trace_exhausts、zero_of_add_le、exhausted_within、draws_nothing_from_empty）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: Stock.lean (integration I3d: a level drawn on and not replenished added (FallsBy, trace_falls, falls_iff, trace_exhausts, zero_of_add_le, exhausted_within, draws_nothing_from_empty); earlier statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EVOLUTION-CALIBRATION-RENEWAL.md, META-ATTRACTOR-RECONCILIATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

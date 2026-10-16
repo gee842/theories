@@ -19,14 +19,14 @@
 - The account does not justify every metainferential resource used to explain it without presuppositions; it is not completed presuppositionless metalogic.
 - It does not supply comprehensive presuppositionless warrant for language, identification, hypothetical inference and assessment of adequate grounds.
 - Nor is it an impossibility proof for presuppositionless metalogic.
-- **Counterexample:** Retained binding with a stricter conclusion standard, same-type capture, coincident values and unrestricted constitutive self-certification restrict distinct generalizations. [source](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
+- **Counterexample:** Retained binding with a stricter conclusion standard, same-type capture, coincident values and unrestricted constitutive self-certification restrict distinct generalizations. [source](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
 
 <a id="progress--已接通"></a>
 ## Progress
 
-1. Affirmative argument: a fresh designation institutes a role, an unchanged use retains it, and insertion retains the consumer's designated dependence, with each step's scope stated. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#102-the-affirmative-argument-with-each-steps-scope)
-2. Rivals and routes: target-preserving rivals and three routes to the stronger conclusion are assessed; none supplies the passage to comprehensive warrant for the metainferences used. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#104-three-routes-to-the-stronger-conclusion-actually-assessed)
-3. Disposition: institution, execution, recognition and warrant are distinguished, retiring the vague demand for a final certificate of every binding; the argument's own resources are audited item by item. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#107-disposition-and-completion-scope)
+1. Affirmative argument: a fresh designation institutes a role, an unchanged use retains it, and insertion retains the consumer's designated dependence, with each step's scope stated. [study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#102-the-affirmative-argument-with-each-steps-scope)
+2. Rivals and routes: target-preserving rivals and three routes to the stronger conclusion are assessed; none supplies the passage to comprehensive warrant for the metainferences used. [study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#104-three-routes-to-the-stronger-conclusion-actually-assessed)
+3. Disposition: institution, execution, recognition and warrant are distinguished, retiring the vague demand for a final certificate of every binding; the argument's own resources are audited item by item. [study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#107-disposition-and-completion-scope)
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -53,7 +53,7 @@ Introduction, continuation, recognition and inferential warrant distinguish rela
 - **interpretive**: [binding-preserving-substitution](binding-preserving-substitution.md). Reuses the substitution mechanism and capture bounds; this interpretive connection does not upgrade the theorem into a constitutive grounding proof.
   - Output: Under the supplied interpretation, position-preserving substitution retains every consumer evaluation, with capture and coincident-value controls.
   - Input: How a produced ground continues the consumer’s designated dependence in the local constitutive account.
-  - Preserved conditions: Syntax, binding interpretation and assessment remain unchanged; the philosophical account of actual roles and warrant remains a separate obligation. [RECOGNITIONAL-BINDING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
+  - Preserved conditions: Syntax, binding interpretation and assessment remain unchanged; the philosophical account of actual roles and warrant remains a separate obligation. [RECOGNITIONAL-BINDING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -61,7 +61,7 @@ Introduction, continuation, recognition and inferential warrant distinguish rela
 | Role | Source | Declarations |
 |---|---|---|
 | statement | [GENERATED-LOGIC.md](../../chapters/GENERATED-LOGIC.md) | — |
-| review | [RECOGNITIONAL-BINDING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md) | — |
+| review | [RECOGNITIONAL-BINDING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md) | — |
 | provenance | [2026-10-08-generative-logic-investigation.md](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md) | — |
 
 Aliases: —
@@ -70,8 +70,9 @@ Aliases: —
 ### History
 
 - 2026-10-09: migrates and completes in section 10 the candidate from sections 2, 5, 7 and 9, distinguishing institution, execution, recognition and warrant and retiring the vague final-certificate demand. Not a new independent mathematical result.
-- 2026-10-14 readability migration to schema 2: the claim's first sentence became the statement; its second sentence and the limitations became 3 typed does-not-show items (two of scope; one denying an impossibility proof); “a completed assessment of the local argument” is carried by the status; 3 progress lines link the study's section-10 affirmative argument, route assessment and disposition; the next step is restated positively with the same content. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md); the exact earlier record is text_versions[0].
+- 2026-10-14 readability migration to schema 2: the claim's first sentence became the statement; its second sentence and the limitations became 3 typed does-not-show items (two of scope; one denying an impossibility proof); “a completed assessment of the local argument” is carried by the status; 3 progress lines link the study's section-10 affirmative argument, route assessment and disposition; the next step is restated positively with the same content. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md); the exact earlier record is text_versions[0].
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-a-l-17: the validation scope said it "checks three existing Lean receipts", while the record references and binds none; it now names the three receipts, where the recheck is recorded, and that this record binds none of them. Earlier text in text_versions.
+- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](constitutive-binding-assessment.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

@@ -126,7 +126,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
       "role": "review",
-      "sha256": "e5ef4dbdb77f657b4daa0121f08596a3d62e02af8777cd5d7e0404b44ededd42",
+      "sha256": "7d101ae98c63306d3bf5715144acc474e58bde6346f50c0b70be0706dd617c1e",
       "declarations": []
     },
     {
@@ -298,8 +298,8 @@
       "en": "2026-10-13: reviewed appended P95 §85 on timely-continuation application; all earlier sections remain byte-for-byte, and this result’s claim and frozen proof scope are unchanged. Updates only the reviewed shared-source version."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 3 项分类“未表明”，“无经验验证”移入证据，“已有公理与条件成果保持有效范围”由通用边界 zero-axiom-target-open 承担；4 行“已接通”链接研究第74、75、78、79节；下一步第一句（分类稳健比较已接通）移入第四行“已接通”。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md)；迁移前的完整记录为 text_versions[0]。",
-      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations became 3 typed does-not-show items, “no empirical validation” moved to the evidence, and “existing axioms and conditional results retain their scope” is carried by the standard boundary zero-axiom-target-open; 4 progress lines link study sections 74, 75, 78 and 79; the next step's first sentence (robust classification connected) became the fourth progress line. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md); the exact earlier record is text_versions[0]."
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 3 项分类“未表明”，“无经验验证”移入证据，“已有公理与条件成果保持有效范围”由通用边界 zero-axiom-target-open 承担；4 行“已接通”链接研究第74、75、78、79节；下一步第一句（分类稳健比较已接通）移入第四行“已接通”。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations became 3 typed does-not-show items, “no empirical validation” moved to the evidence, and “existing axioms and conditional results retain their scope” is carried by the standard boundary zero-axiom-target-open; 4 progress lines link study sections 74, 75, 78 and 79; the next step's first sentence (robust classification connected) became the fourth progress line. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md); the exact earlier record is text_versions[0]."
     },
     {
       "zh": "2026-10-15，整合 I3e（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Decidedness 的列出之选项中不被胜过者，新增，不加前提；桥接 Judgment.required_of_bettered）。一个列出的非空选项表上，比较非自反、传递且在表上弱判定（¬p ∨ ¬¬p，WeaklyDecided；判定者都弱判定，Decided.weakly）时，有不被胜过的选项（exists_undominated）；不被胜过者不能缺少每个缺之者都被胜过的性质（Undominated.not_not_has），该性质判定时不被胜过者都有它（undominated_has）；比较与性质都判定时，不被胜过者都有它，恰当缺之的每个选项都被表上某选项胜过（undominated_has_iff）。在全部关系上，存在之律所需恰是弱排中律（exists_undominated_iff_weakly），去掉性质的判定恰是排中律（undominated_has_iff_em）。桥接：在确切列出的选项表上，PracticalJudgment 的前沿即不被胜过者（Judgment.frontier_iff_undominated），故比较弱判定、任务判定时，前沿非空且每个成员都完成任务（Judgment.required_of_bettered），即 formation_required_of_improvable_absence，不用经典推理。外围实例 OrganizationCorrespondence：以 Lean 的经典判定供给核心所要求者，formation_required_of_improvable_absence 由 exists_undominated 与 undominated_has 给出（formation_required_by_core），所构造的协调情形亦然（coordination_is_required_by_core）。比较、合格性与所构造的历史保持原范围；规范解释继承公开的 J 承诺。外围实例模块由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T163336.437151Z），只用标准公理：frontier_iff_undominated 的公理报告为空，formation_required_by_core 与 coordination_is_required_by_core 以 Lean 的经典判定供给核心所要求者、并用外围的 simp 引理（propext、Classical.choice、Quot.sound）；所实例化的核心律与桥接定理由核心运行审计（回执 20261015T163210.426211Z，公理报告为空）。",
@@ -316,6 +316,9 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ETHICAL-LEARNING-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

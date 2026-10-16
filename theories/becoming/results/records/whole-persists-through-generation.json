@@ -276,7 +276,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "3ee42b4c6196cb4c41d94158898c977c215f3804114b701418ae77115a85b8b1",
+      "sha256": "ff70e6f931178518168d579f499b863f71d01b1a1a90a2abc15d57bfcf0e1c4f",
       "declarations": []
     },
     {
@@ -659,6 +659,9 @@
     {
       "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A4 项：Covered.arises_within、Covered.needs_arising、Covered.needs_new（与 Whole.needs_arising、needs_new）的结论是 ¬∀ 的否定形式；主张原说部分“在任意晚的步生起”“每 d 步内都有部分生起”，改为“没有一步之后再无部分生起”“没有连续 d 步全无部分生起”，新部分写作“不能被否证”。schema 1，无 text_versions；原文见 git。",
       "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: Covered.arises_within, Covered.needs_arising and Covered.needs_new (and Whole.needs_arising, needs_new) conclude negated universals; the claim said parts \"arise at arbitrarily late steps\" and \"a part arises within every d consecutive steps\", and now says no step is followed only by steps with no part arising, no d consecutive steps pass with none, and that ever new parts arise cannot be refuted. Schema 1, no text_versions; earlier text in git."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

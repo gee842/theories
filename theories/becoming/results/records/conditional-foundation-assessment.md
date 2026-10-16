@@ -32,7 +32,7 @@ The broader generative account meets its original five completion conditions as 
 <a id="progress--已接通"></a>
 ## Progress
 
-1. Five conditions: explicit grounding, connected derivations, compatible composition, generative and degenerative dynamics, and discriminating support are each judged satisfied at their stated scope. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate)
+1. Five conditions: explicit grounding, connected derivations, compatible composition, generative and degenerative dynamics, and discriminating support are each judged satisfied at their stated scope. [study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate)
 2. Root acceptance: requirement-by-requirement checking of positive evidence, with three separate internal AI challenges accepting the conditional candidate; not external peer review. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md#positive-requirement-by-requirement-verification)
 
 <a id="evidence--证据"></a>
@@ -40,7 +40,7 @@ The broader generative account meets its original five completion conditions as 
 
 Registers the existing scoped assessment and acceptance; repeated acceptances are not separate foundation results. No new scientific validation.
 
-Canonical source: [FIXED-FINISH-LINE-AUDIT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md)
+Canonical source: [FIXED-FINISH-LINE-AUDIT.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md)
 
 <a id="next--下一步"></a>
 ## Next
@@ -66,9 +66,9 @@ The assessment distinguishes joined histories, conditional transport and separat
 
 | Role | Source | Declarations |
 |---|---|---|
-| statement | [FIXED-FINISH-LINE-AUDIT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) | — |
+| statement | [FIXED-FINISH-LINE-AUDIT.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md) | — |
 | review | [FOUNDATION-ROOT-ACCEPTANCE.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) | — |
-| integration | [FOUNDATION-COMPOSITION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md) | — |
+| integration | [FOUNDATION-COMPOSITION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FOUNDATION-COMPOSITION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | provenance | [2026-10-08-universal-metaethics-name-and-readme.md](../../../../sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) | — |
 
@@ -79,7 +79,8 @@ Aliases: —
 
 - 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.
-- 2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former first “counterexample”, which was a scope boundary) was split into 3 typed does-not-show items, absorbing that duplicate entry; 2 progress lines link the existing five-condition assessment and root acceptance. No claim, premise, status, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/conditional-foundation-assessment.md); the exact earlier record is text_versions[0].
+- 2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former first “counterexample”, which was a scope boundary) was split into 3 typed does-not-show items, absorbing that duplicate entry; 2 progress lines link the existing five-condition assessment and root acceptance. No claim, premise, status, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/conditional-foundation-assessment.md); the exact earlier record is text_versions[0].
+- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](conditional-foundation-assessment.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

@@ -111,7 +111,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
       "role": "review",
-      "sha256": "eac2b46e7e1788c911f649998d3798e0a662df60caaffd62b9687152a425d555",
+      "sha256": "31dc7e93ed80a14f6a96e18bf18356b3bd6d07e9214a8f76eebf63fc5de02543",
       "declarations": []
     },
     {
@@ -160,8 +160,11 @@
       "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句第一句拆为 3 项分类“未表明”，“非精确复现”移入证据，“不更改既有条件定理”由依赖说明承担；上方五条沿革所述已接通连接各成 1 行带锚点的“已接通”；下一步第三句移入第五行“已接通”。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/naming-attention-coverage.md)；迁移前的完整记录为 text_versions[0]。",
-      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence was split into 3 typed does-not-show items, “not an exact replication” moved to the evidence, and “does not change existing conditional theorems” is carried by the dependency note; the connections described in the five history entries above each became one anchored progress line; the next step's third sentence moved to the fifth progress line. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/naming-attention-coverage.md); the exact earlier record is text_versions[0]."
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句第一句拆为 3 项分类“未表明”，“非精确复现”移入证据，“不更改既有条件定理”由依赖说明承担；上方五条沿革所述已接通连接各成 1 行带锚点的“已接通”；下一步第三句移入第五行“已接通”。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/naming-attention-coverage.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence was split into 3 typed does-not-show items, “not an exact replication” moved to the evidence, and “does not change existing conditional theorems” is carried by the dependency note; the connections described in the five history entries above each became one anchored progress line; the next step's third sentence moved to the fifth progress line. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/naming-attention-coverage.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ACQUIRED-SEGMENTATION-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

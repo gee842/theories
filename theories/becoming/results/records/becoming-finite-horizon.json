@@ -305,7 +305,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "3ee42b4c6196cb4c41d94158898c977c215f3804114b701418ae77115a85b8b1",
+      "sha256": "ff70e6f931178518168d579f499b863f71d01b1a1a90a2abc15d57bfcf0e1c4f",
       "declarations": []
     },
     {
@@ -713,8 +713,8 @@
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged)."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题与陈述不变；主张拆为 7 条规律；限制与逐轮回执说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。推论一句中的“（P49，Becoming.Testing）”去掉（模块见规律 7 的声明与证据段，轮次留在沿革与快照中）；其中文“不认可”改为与英文 includes 及本记录其余各处一致的“记入”。第二次审查的概括与 joint-difference-making 中的同一条一致。每句旧文本的去向见迁移对照表 [becoming-finite-horizon.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-finite-horizon.md)；迁移前的完整记录为 text_versions 末项。",
-      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title and statement are kept; the claim was split into 7 laws; limitations and per-round receipt notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The corollaries sentence lost “(P49, Becoming.Testing)” (the module is in law 7's declarations and the evidence paragraph; the round stays in history and the snapshot), and its Chinese “不认可” became “记入”, matching the English “includes” and the rest of the record. The second review's summary matches the same item in joint-difference-making. Every earlier sentence is mapped in the migration table [becoming-finite-horizon.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-finite-horizon.md); the exact earlier record is the last text_versions entry."
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题与陈述不变；主张拆为 7 条规律；限制与逐轮回执说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。推论一句中的“（P49，Becoming.Testing）”去掉（模块见规律 7 的声明与证据段，轮次留在沿革与快照中）；其中文“不认可”改为与英文 includes 及本记录其余各处一致的“记入”。第二次审查的概括与 joint-difference-making 中的同一条一致。每句旧文本的去向见迁移对照表 [becoming-finite-horizon.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-finite-horizon.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title and statement are kept; the claim was split into 7 laws; limitations and per-round receipt notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The corollaries sentence lost “(P49, Becoming.Testing)” (the module is in law 7's declarations and the evidence paragraph; the round stays in history and the snapshot), and its Chinese “不认可” became “记入”, matching the English “includes” and the rest of the record. The second review's summary matches the same item in joint-difference-making. Every earlier sentence is mapped in the migration table [becoming-finite-horizon.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-finite-horizon.md); the exact earlier record is the last text_versions entry."
     },
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；BECOMING-UNIFICATION-PLAN.md（10月14日改名表增四行（第十七次审查的改名）；其余文字不变）。",
@@ -759,6 +759,9 @@
     {
       "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A9 项：陈述原说“任何有限的历史都不决定一段汲取是更新还是消耗”，对每个过程的每段有限历史作普遍断言；Renewable.prefix_does_not_decide、finite_reading_includes_consumption 与 Feedback.prefix_does_not_decide 只在可更新条件的过程与支持门控定律中给出在 h 之前一致而分类不同的两次运行，陈述改为这一范围（未表明 1 原已如此说）。原文见 text_versions。",
       "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A9: the statement said \"whether drawing renews or consumes is left open by every finite history\", universal over every finite history of every process; Renewable.prefix_does_not_decide, finite_reading_includes_consumption and Feedback.prefix_does_not_decide give two runs agreeing before h with different classes only in the renewable process and the support-gated law, so the statement now has that scope, as does_not_show 1 already said. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

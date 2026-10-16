@@ -51,7 +51,7 @@ Boundary source: [JointInterpretation.lean](../../../../experiments/integrated-c
 |---|---|---|
 | proof | [JointInterpretation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean) | `InquiryRoot.JointInterpretation.pointwise_closure_iff_common`, `InquiryRoot.JointInterpretation.separate_rows_have_no_common_interpretation` |
 | receipt | [joint-interpretation-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-verification.json) | — |
-| integration | [DEDUCTIVE-FOUNDATION-TEST.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) | — |
+| integration | [DEDUCTIVE-FOUNDATION-TEST.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.common_on_scope_iff` |
 
@@ -74,4 +74,4 @@ Aliases: `InquiryRoot.JointInterpretation.pointwise_closure_iff_common`
 - 2026-10-09: appended the activity-first diagnostic correction; preserved earlier study and proofs, with no new result or foundational closure.
 - 9 October 2026: reconciled Ren’s whole/manifold correction. The necessity target is Becoming as a whole, with generativity within it. Earlier chapter/study content and proof sources are preserved; no new theorem or axiom.
 - 14 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): compiled by the spine run and connected to the core. The bridge now imports JointInterpretation, whose theorems have empty axiom reports. With the core’s Scope as the admissible interpretations: with a finite basis, each derived claim realized somewhere in the scope is one configuration of the scope realizing them all (common_on_scope_iff). The common-interpretation reduction itself stays the periphery’s theorem. (scratch build; the receipt comes with the landing)
-- 2 rebinding entries (2026-10-15): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](finite-basis-common-interpretation.json).
+- 3 rebinding entries (2026-10-15 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](finite-basis-common-interpretation.json).

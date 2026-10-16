@@ -31,7 +31,7 @@ Lean 4.29.1 actually checked five new application theorems, each using only prop
 
 A local application, not new probability theory. Ethical risk acceptance, probability learning and the complete wisdom root remain unproved; the event laws and process are supplied.
 
-- The risk statement is true while the target realization fails; warranted false belief is not established. Endpoint insufficiency does not make outcomes irrelevant to updating. [WISDOM-FALLIBLE-JUDGMENT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)
+- The risk statement is true while the target realization fails; warranted false belief is not established. Endpoint insufficiency does not make outcomes irrelevant to updating. [WISDOM-FALLIBLE-JUDGMENT.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)
 
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
@@ -52,7 +52,7 @@ A local application, not new probability theory. Ethical risk acceptance, probab
 |---|---|---|
 | proof | [WisdomFallibleJudgment.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean) | `Generative.WisdomFallibleJudgment.uniform_failure_weight`, `Generative.WisdomFallibleJudgment.bounded_risk_without_uniform_completion`, `Generative.WisdomFallibleJudgment.biased_bound_fails`, `Generative.WisdomFallibleJudgment.matching_realizations_with_different_certificates`, `Generative.WisdomFallibleJudgment.no_endpoint_only_prior_certificate` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/receipt.json) | — |
-| integration | [WISDOM-FALLIBLE-JUDGMENT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md) | — |
+| integration | [WISDOM-FALLIBLE-JUDGMENT.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md) | — |
 | proof | [Readout.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean) | `Becoming.Readout.LumpedOn`, `Becoming.Readout.Judges`, `Becoming.Readout.lumpedOn_of_judges`, `Becoming.Readout.firstJudge`, `Becoming.Readout.firstJudge_judges`, `Becoming.Readout.judges_iff_lumpedOn`, `Becoming.Readout.no_judge_of_merged` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json) | — |
 | proof | [JudgingCorrespondence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean) | `Becoming.JudgingCorrespondence.realizations`, `Becoming.JudgingCorrespondence.endpoint`, `Becoming.JudgingCorrespondence.certificate`, `Becoming.JudgingCorrespondence.mem_realizations`, `Becoming.JudgingCorrespondence.judges_iff`, `Becoming.JudgingCorrespondence.endpoint_judge_iff`, `Becoming.JudgingCorrespondence.no_endpoint_only_prior_certificate_by_core` |

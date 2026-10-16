@@ -46,7 +46,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 |---|---|---|
 | proof | [ChanceAdequacy.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean) | `ChanceAdequacy.fulfillment_gives_chance_floor`, `ChanceAdequacy.all_weights_preserve_mass_iff`, `ChanceAdequacy.positive_chance_can_miss_due_protection` |
 | receipt | [chance-adequacy-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-adequacy-verification.json) | — |
-| integration | [CHANCE-ADEQUACY-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md) | — |
+| integration | [CHANCE-ADEQUACY-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Weighted.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean) | `Becoming.mass`, `Becoming.IncludedOn`, `Becoming.mass_mono`, `Becoming.mass_lt_of_added`, `Becoming.dirac`, `Becoming.every_weighting_iff` |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.chance_mass_eq`, `Becoming.all_weights_preserve_mass_iff_by_core`, `Becoming.fulfillment_floor_by_core` |

@@ -219,13 +219,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md",
       "role": "integration",
-      "sha256": "218983d57fa7256950026ee1f3f448b8d8b0f2916ecfa7f4006a74019022879f",
+      "sha256": "95efdb9a532d7c261f0be4f6cd84ad5e35d626581c376d3df21eff871c0ee02a",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md",
       "role": "statement",
-      "sha256": "3b015559ee48c3edefadce40290c94cd377174982f9bf093532c632cadeaa05e",
+      "sha256": "233f930802420a33e9fb1baca50155dad365baad254e9697c2fa5c7d4a26c6ac",
       "declarations": []
     },
     {
@@ -332,6 +332,9 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in CHOICE-AND-GENERATIVE-CONTEXT.md, RISK-CONDITIONING-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

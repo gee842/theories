@@ -154,7 +154,7 @@
     {
       "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "be0b825678314c5ebd14ea08cb56c351917458be37057d736ccf9d104df50282",
+      "sha256": "b06ad3e1cdc296bcc25e7bd818da8de8a197e16e892fd46dfa49b082dd8025ba",
       "declarations": []
     },
     {
@@ -199,7 +199,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
       "role": "integration",
-      "sha256": "e5ef4dbdb77f657b4daa0121f08596a3d62e02af8777cd5d7e0404b44ededd42",
+      "sha256": "7d101ae98c63306d3bf5715144acc474e58bde6346f50c0b70be0706dd617c1e",
       "declarations": []
     },
     {
@@ -316,8 +316,8 @@
       "en": "2026-10-13, P95: added application and author counterreview of timely continuation and support warrant in the existing study §85 and chapter §2.1; reuses return, substitution and actual handoff proofs, retaining the folded G0 interface and J strengths. No new independent result or mathematical proof."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句第一句与唯一反例逐字相同，由反例承担（反例保留，因交叉基本损失不排序有 competing_claims_incomparable 见证）；第二句拆为 2 项分类“未表明”；下一步中的“已补入”成为第二行“已接通”，“不重开一般责任或交接原则”改写为“复用”，“不视为已完成完整混合排序”成为第三项“未表明”，“整体零实质公理奠基”由通用边界 zero-axiom-target-open 承担；对应与证据中的轮次编号 P95 改为“支承对应”“及时接续部分”，内容不变。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md)；迁移前的完整记录为 text_versions[0]。",
-      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence is verbatim the only counterexample, which carries it (kept, since crossed basic losses staying unranked is witnessed by competing_claims_incomparable); the second became 2 typed does-not-show items; in the next step, “is supplied” became the second progress line, “do not reopen general responsibility or handoff principles” became “reusing” them, “do not claim complete mixed ranking” the third does-not-show item, and “a whole zero-substantive-axiom foundation” is carried by the standard boundary zero-axiom-target-open; the round label P95 in the correspondence and evidence became “support correspondence” and “the timely-continuation part”, with the content unchanged. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md); the exact earlier record is text_versions[0]."
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句第一句与唯一反例逐字相同，由反例承担（反例保留，因交叉基本损失不排序有 competing_claims_incomparable 见证）；第二句拆为 2 项分类“未表明”；下一步中的“已补入”成为第二行“已接通”，“不重开一般责任或交接原则”改写为“复用”，“不视为已完成完整混合排序”成为第三项“未表明”，“整体零实质公理奠基”由通用边界 zero-axiom-target-open 承担；对应与证据中的轮次编号 P95 改为“支承对应”“及时接续部分”，内容不变。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence is verbatim the only counterexample, which carries it (kept, since crossed basic losses staying unranked is witnessed by competing_claims_incomparable); the second became 2 typed does-not-show items; in the next step, “is supplied” became the second progress line, “do not reopen general responsibility or handoff principles” became “reusing” them, “do not claim complete mixed ranking” the third does-not-show item, and “a whole zero-substantive-axiom foundation” is carried by the standard boundary zero-axiom-target-open; the round label P95 in the correspondence and evidence became “support correspondence” and “the timely-continuation part”, with the content unchanged. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md); the exact earlier record is text_versions[0]."
     },
     {
       "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Substitution.lean（新增依存改变下消耗保持的规律，既有陈述不变）。",
@@ -354,6 +354,9 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Return.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Return.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ETHICAL-LEARNING-INTEGRATION.md, PRACTICAL-JUDGMENT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

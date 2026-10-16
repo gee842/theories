@@ -114,7 +114,7 @@ The shared index of steps is a commitment of the representation and is not deriv
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-12-relational-starting-point.md](../../../../sources/15-codex-theory-conversations/2026-10-12-relational-starting-point.md) | — |
 | provenance | [2026-10-12-no-two-realities.md](../../../../sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md) | — |
-| provenance | [Shape.lean](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p69-shape-evidence/Shape.lean) | — |
+| provenance | [Shape.lean](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-p69-shape-evidence/Shape.lean) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |

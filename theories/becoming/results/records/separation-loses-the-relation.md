@@ -62,7 +62,7 @@ Relation is stated for wholes of two parts, with parity as the witness for three
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-12-framing-and-pairs.md](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md) | — |
-| provenance | [README.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-framing-evidence/README.md) | — |
+| provenance | [README.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-framing-evidence/README.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json) | — |
 | proof | [Courses.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean) | `Becoming.Courses.relation_persists_courses`, `Becoming.Courses.courses_keep_unrelated`, `Becoming.Courses.copy_relates_course`, `Becoming.Courses.forgetting_unrelates_courses`, `Becoming.Courses.coupling_course`, `Becoming.Courses.reachedFrom` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json) | — |

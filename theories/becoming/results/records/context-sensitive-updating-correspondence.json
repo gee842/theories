@@ -96,13 +96,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
       "role": "review",
-      "sha256": "01f247fa37fa7c5fb14ae5def7ac2ae6c10c15bb919d1eaa6b6096c3839969d0",
+      "sha256": "a9bbe3bb32a1397fd8228326c78b14f0140f6e5af652aa428d5b6426b506156b",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
       "role": "integration",
-      "sha256": "2a3300bddad51eb8407891bfb095cebf9de1830c838f3c7144d893cce6f06736",
+      "sha256": "0a8a102a83ef1f633a187c46219982a2c9315588600f5cc122c988920a4e7ec6",
       "declarations": []
     },
     {
@@ -135,8 +135,11 @@
       "en": "2026-10-09: followed Ren’s direction to continue with public data, extending the 16-person recovery study with complete 24-person updating correspondence while preserving results against monotonic strengthening."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 4 项分类“未表明”；1 行“已接通”链接整合研究中的更新对应。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/context-sensitive-updating-correspondence.md)；迁移前的完整记录为 text_versions[0]。",
-      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the integration study's updating correspondence. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/context-sensitive-updating-correspondence.md); the exact earlier record is text_versions[0]."
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 4 项分类“未表明”；1 行“已接通”链接整合研究中的更新对应。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/context-sensitive-updating-correspondence.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the integration study's updating correspondence. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/context-sensitive-updating-correspondence.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in JOINT-RISK-REVISION-INTEGRATION.md, SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

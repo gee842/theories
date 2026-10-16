@@ -35,7 +35,7 @@ Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 85 theo
 Of the 30 uses needing no premise, 6 are proved as corollaries and the rest classified from their statements; counting relata cannot be made free of a premise; the readings are the AI's, adopted on Ren's delegation; no ethical predicate occurs.
 
 - A sum law fails over a family listing a member twice (Doubled.needs_once; Lone.repeated_family; Repeated). [Listing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean)
-- The inventory: the kind and status of every use of Distinct. [INVENTORY.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p77-landing/inventory/INVENTORY.md)
+- The inventory: the kind and status of every use of Distinct. [INVENTORY.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-p77-landing/inventory/INVENTORY.md)
 
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
@@ -75,7 +75,7 @@ Of the 30 uses needing no premise, 6 are proved as corollaries and the rest clas
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-12-move-towards-100.md](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md) | — |
-| provenance | [INVENTORY.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p77-landing/inventory/INVENTORY.md) | — |
+| provenance | [INVENTORY.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-p77-landing/inventory/INVENTORY.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 

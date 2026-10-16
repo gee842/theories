@@ -46,7 +46,7 @@ Boundary source: [JointContinuation.lean](../../../../experiments/integrated-cor
 |---|---|---|
 | proof | [JointContinuation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean) | `JointContinuation.joint_plan_composition`, `JointContinuation.joint_second_step_fails`, `JointContinuation.serialization_without_renewal_fails` |
 | receipt | [joint-continuation-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/joint-continuation-verification.json) | — |
-| integration | [JOINT-CONTINUATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md) | — |
+| integration | [JOINT-CONTINUATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-CONTINUATION-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Keeping.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Keeping.lean) | `Becoming.Viability.Plan`, `Becoming.Viability.Plan.Keeps`, `Becoming.Viability.Plan.zip`, `Becoming.Viability.jointSense`, `Becoming.Viability.Plan.Compatible`, `Becoming.Viability.Plan.zip_keeps`, `Becoming.Viability.Plan.compatible_of_zip_keeps` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json) | — |

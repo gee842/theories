@@ -376,12 +376,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "3ee42b4c6196cb4c41d94158898c977c215f3804114b701418ae77115a85b8b1"
+      "sha256": "ff70e6f931178518168d579f499b863f71d01b1a1a90a2abc15d57bfcf0e1c4f"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "2bc5049131e0622e49079f3ea4d7c6f1492347de6ef37dcc39c3d7d0d94a8954"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -738,8 +738,8 @@
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); BECOMING-UNIFICATION-PLAN.md (four rows added to the 14 October rename table (the seventeenth review's renames); no other text changed); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1)."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划 F 流：lint 发现最多的 schema 1 记录）：主张拆为 8 条规律并写出其声明；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。下一步中的局部重述（P50）改为规律 7 与 8；“由平衡推出复现定律（两条路线合一）与平衡读于依存已在 P30 给出”及对应中 P30 之前另有列表长短一路的说明留在这里与快照中。主张与对应中 §26 的有限家族定律、P26 与 P27 的复现定律以其记录指称（coming-and-ceasing-keep-pace、ceasing-needs-arising、bounded-census-keeps-pace）。证据段中逐轮新增的定理名单与计数留在回执与快照中，作者反审所在两节是整合文档 §37 与 §40，独立审查的更正在 §42。每句旧文本的去向见迁移对照表 [census-balance.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/census-balance.md)；迁移前的完整记录为 text_versions 末项。",
-      "en": "14 October 2026 readability migration to schema 2 (open-issues plan, stream F: the schema-1 records with the most lint findings): the claim became eight laws with their declarations; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The local restatement in the next step (P50) became laws 7 and 8; that deriving the recurrence laws from the balance (one route) and the dependence reading came in P30, and the correspondence's note that before P30 they were proved from the lengths of the lists, stay here and in the snapshot. In the claim and correspondence, section 26's law of a finite family and the recurrence laws of P26 and P27 are named by their records (coming-and-ceasing-keep-pace, ceasing-needs-arising, bounded-census-keeps-pace). The per-round lists of new theorems and counts in the evidence stay in the receipt and the snapshot; the two sections of the author's counterreview are §37 and §40 of the integration note, the independent review's corrections §42. Every earlier sentence is mapped in the migration table [census-balance.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/census-balance.md); the exact earlier record is the last text_versions entry."
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划 F 流：lint 发现最多的 schema 1 记录）：主张拆为 8 条规律并写出其声明；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。下一步中的局部重述（P50）改为规律 7 与 8；“由平衡推出复现定律（两条路线合一）与平衡读于依存已在 P30 给出”及对应中 P30 之前另有列表长短一路的说明留在这里与快照中。主张与对应中 §26 的有限家族定律、P26 与 P27 的复现定律以其记录指称（coming-and-ceasing-keep-pace、ceasing-needs-arising、bounded-census-keeps-pace）。证据段中逐轮新增的定理名单与计数留在回执与快照中，作者反审所在两节是整合文档 §37 与 §40，独立审查的更正在 §42。每句旧文本的去向见迁移对照表 [census-balance.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/census-balance.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan, stream F: the schema-1 records with the most lint findings): the claim became eight laws with their declarations; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The local restatement in the next step (P50) became laws 7 and 8; that deriving the recurrence laws from the balance (one route) and the dependence reading came in P30, and the correspondence's note that before P30 they were proved from the lengths of the lists, stay here and in the snapshot. In the claim and correspondence, section 26's law of a finite family and the recurrence laws of P26 and P27 are named by their records (coming-and-ceasing-keep-pace, ceasing-needs-arising, bounded-census-keeps-pace). The per-round lists of new theorems and counts in the evidence stay in the receipt and the snapshot; the two sections of the author's counterreview are §37 and §40 of the integration note, the independent review's corrections §42. Every earlier sentence is mapped in the migration table [census-balance.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/census-balance.md); the exact earlier record is the last text_versions entry."
     },
     {
       "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
@@ -783,6 +783,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md, THE-THEORY-OF-BECOMING.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

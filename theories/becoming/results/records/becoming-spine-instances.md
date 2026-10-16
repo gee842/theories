@@ -34,7 +34,7 @@ Adds no normative content: bridges transport theorems without proving their prem
 
 - L is substantive: from configuration 0, mixed reaches 0 or 4 and high reaches 3; some outcome of mixed beats high, yet the conservative rule compares them in neither direction (LiftModel.some_outcome_does_not_lift). [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)
 - Through a middle response with no outcome both lifted comparisons hold vacuously while the composite fails (LiftModel.lift_needs_live_middle). [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)
-- Deliberately not bridged: CorrectionParent and ObservationRepair are concrete models and CorrectionRelations is an algebra of relational boundaries, with no core interface; 9 further concrete models have no interface to instantiate. [BECOMING-INSTANCE-CLASSIFICATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md)
+- Deliberately not bridged: CorrectionParent and ObservationRepair are concrete models and CorrectionRelations is an algebra of relational boundaries, with no core interface; 9 further concrete models have no interface to instantiate. [BECOMING-INSTANCE-CLASSIFICATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md)
 
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
@@ -82,7 +82,7 @@ Adds no normative content: bridges transport theorems without proving their prem
 | proof | [ObservationChange.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationChange.lean) | `ObservationChange.SafeOn`, `ObservationChange.refinement_preserves_safe_choice` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T095049.338744Z/verification.json) | — |
-| integration | [BECOMING-INSTANCE-CLASSIFICATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md) | — |
+| integration | [BECOMING-INSTANCE-CLASSIFICATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md) | — |
 | integration | [BECOMING-INSTANCE-CHECKS.json](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CHECKS.json) | — |
 | statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
 | provenance | [2026-10-09-one-theory-unification.md](../../../../sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md) | — |
@@ -112,4 +112,4 @@ Aliases: `Becoming.reached_iff_closure`, `Becoming.cutReach_iff_closure`, `Becom
 - 2026-10-13 takeover reconciliation: current consolidated receipt 20261013T094743.528770Z contains 22 inherited modules; the carried-over count of 15 in the current validation summary is corrected to 22. Historical receipts and their original counts remain unchanged, as do the claim, premises and proofs.
 - 14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Bridge only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the unification plan only adds the 14 October 2026 rename table after the P36 table in section 10. This record's claim, premises and status are unchanged; no reproof is credited.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
-- 83 rebinding entries (2026-10-09 to 2026-10-15): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](becoming-spine-instances.json).
+- 84 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](becoming-spine-instances.json).

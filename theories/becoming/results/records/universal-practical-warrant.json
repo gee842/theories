@@ -177,13 +177,13 @@
     {
       "path": "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "55f98d1cc4c55ec83f4b39b810caee478ef9357a76094a479150a68e58750154",
+      "sha256": "25ac393dd20101696c3ac32a46f77ff4bc4807512df047d1b710677122491b70",
       "declarations": []
     },
     {
       "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md",
       "role": "integration",
-      "sha256": "18b975d10ade6e9a35e909fa1d0533fba30bf67fd8c122a448c0bec5aadbf698",
+      "sha256": "a06388eafc08e416e0adecd65c9a2127660637141e10e274638b78ba90e3eb90",
       "declarations": []
     },
     {
@@ -256,12 +256,15 @@
       "en": "13 October 2026, P98: five conceptual continuations test the fulfillment question and expose genuine change perpetuating capture and scope omissions. Retains the original as a local diagnostic and revises the chapter and current claim; no new result identity or proof."
     },
     {
-      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2. The target in the claim becomes the statement, and its narrowed fulfillment question a progress line. The limitations become eight does-not-show items and three shared boundaries; the section-by-section evidence (P98, sections 20–23.5) becomes seven progress lines with anchored study links and one evidence paragraph, with its labels kept here and in the snapshot. The former counterexample entry restated the status and the G0/J scope (now the status and a shared boundary), so it is no longer listed as a counterexample; P89’s scope stays in the related entry. No premise, status, dependency, related entry, reference or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/universal-practical-warrant.md); the exact earlier record is text_versions[0].",
-      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2。主张中的目标成为陈述，收窄的完成问句成为一行“已接通”。限制改为八项“未表明”与三项通用边界；逐节证据（P98，第20–23.5节）改为七行带锚点研究链接的“已接通”与一段证据，其标记保留于本沿革与快照。原反例条目实为状态及G0/J范围的重述（现分别由状态与通用边界承担），故不再列为反例；P89的范围仍见相关条目。前提、状态、依赖、相关条目、引用及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/universal-practical-warrant.md)；迁移前的完整记录为 text_versions[0]。"
+      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2. The target in the claim becomes the statement, and its narrowed fulfillment question a progress line. The limitations become eight does-not-show items and three shared boundaries; the section-by-section evidence (P98, sections 20–23.5) becomes seven progress lines with anchored study links and one evidence paragraph, with its labels kept here and in the snapshot. The former counterexample entry restated the status and the G0/J scope (now the status and a shared boundary), so it is no longer listed as a counterexample; P89’s scope stays in the related entry. No premise, status, dependency, related entry, reference or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/universal-practical-warrant.md); the exact earlier record is text_versions[0].",
+      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2。主张中的目标成为陈述，收窄的完成问句成为一行“已接通”。限制改为八项“未表明”与三项通用边界；逐节证据（P98，第20–23.5节）改为七行带锚点研究链接的“已接通”与一段证据，其标记保留于本沿革与快照。原反例条目实为状态及G0/J范围的重述（现分别由状态与通用边界承担），故不再列为反例；P89的范围仍见相关条目。前提、状态、依赖、相关条目、引用及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/universal-practical-warrant.md)；迁移前的完整记录为 text_versions[0]。"
     },
     {
       "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 bilingual-16 项：中文标题“普遍实践权威”改为“普遍实践根据”，与英文 warrant 及中文陈述的“根据”一致（AGENTS.md 区分根据与权威）。原文见 text_versions。",
       "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item bilingual-16: the Chinese title's 普遍实践权威 (authority) becomes 普遍实践根据 (warrant), matching the English warrant and the Chinese statement's 根据 (AGENTS.md keeps warrant and authority distinct). Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in UNIFIED-ETHICAL-GROUNDING.md, ZERO-AXIOM-PRACTICAL-JUDGMENT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

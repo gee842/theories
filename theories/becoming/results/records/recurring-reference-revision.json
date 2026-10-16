@@ -201,7 +201,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
       "role": "review",
-      "sha256": "c197cb00ae12652eeec926ecb2a980305e8a8d7549b5ddc04622db95d8f00f6d",
+      "sha256": "fc78145baee699bd8816d8c2ab1c4eb667223204e97db5fd85e64563726aaad9",
       "declarations": []
     },
     {
@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
+      "sha256": "2bc5049131e0622e49079f3ea4d7c6f1492347de6ef37dcc39c3d7d0d94a8954",
       "declarations": []
     },
     {
@@ -440,6 +440,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in META-ATTRACTOR-RECONCILIATION.md, THE-THEORY-OF-BECOMING.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

@@ -114,7 +114,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
       "role": "review",
-      "sha256": "eac2b46e7e1788c911f649998d3798e0a662df60caaffd62b9687152a425d555",
+      "sha256": "31dc7e93ed80a14f6a96e18bf18356b3bd6d07e9214a8f76eebf63fc5de02543",
       "declarations": []
     },
     {
@@ -159,8 +159,11 @@
       "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2：原主张的数值结果与“约束”句成为陈述，“未建立保留优势或等效”成为第一项“未表明”；限制句第一句拆为另 2 项分类“未表明”，第二句（75人主要分析与77人敏感性分开、区间无顺序设计保证）与前提第1、2条重复，由前提承担；上方四条沿革所述已接通连接各成 1 行带锚点的“已接通”，下一步第三句移入第四行。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/encounter-control-and-retention.md)；迁移前的完整记录为 text_versions[0]。",
-      "en": "2026-10-14 readability migration to schema 2: the claim's numerical result and its “constrains” clause became the statement, and “establishes neither a retention advantage nor equivalence” the first does-not-show item; the first limitations sentence became 2 more typed items, and the second (75-person primary analysis kept apart from the 77-person sensitivity; intervals without a sequential-design guarantee) repeats hypotheses 1 and 2, which carry it; the connections described in the four history entries above each became one anchored progress line, and the next step's third sentence moved to the fourth. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/encounter-control-and-retention.md); the exact earlier record is text_versions[0]."
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张的数值结果与“约束”句成为陈述，“未建立保留优势或等效”成为第一项“未表明”；限制句第一句拆为另 2 项分类“未表明”，第二句（75人主要分析与77人敏感性分开、区间无顺序设计保证）与前提第1、2条重复，由前提承担；上方四条沿革所述已接通连接各成 1 行带锚点的“已接通”，下一步第三句移入第四行。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/encounter-control-and-retention.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim's numerical result and its “constrains” clause became the statement, and “establishes neither a retention advantage nor equivalence” the first does-not-show item; the first limitations sentence became 2 more typed items, and the second (75-person primary analysis kept apart from the 77-person sensitivity; intervals without a sequential-design guarantee) repeats hypotheses 1 and 2, which carry it; the connections described in the four history entries above each became one anchored progress line, and the next step's third sentence moved to the fourth. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/encounter-control-and-retention.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ACQUIRED-SEGMENTATION-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

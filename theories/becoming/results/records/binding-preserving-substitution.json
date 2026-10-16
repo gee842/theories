@@ -110,7 +110,7 @@
     {
       "path": "theories/becoming/chapters/GENERATED-LOGIC.md",
       "role": "statement",
-      "sha256": "05d146dc5ab2e2f3d7b5a74a92238aa9e2529a022c0f3e0452c9674027a83099",
+      "sha256": "4449011f50325d44d1c4eef2392487cc6981f99dea72463a6b8f5db5f0412480",
       "declarations": []
     },
     {
@@ -246,6 +246,9 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in GENERATED-LOGIC.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

@@ -34,7 +34,7 @@ Credits this round's successful Lean 4.29.1 receipt: 6 new theorems/12 declarati
 Excludes only strict comparison through the declared summary, not all scalar evaluation or relationally adequate local analysis. It proves neither preservation of every coupling, premise-free C/G0 nor completed universal ethics, and imposes no gate of complete decidable identification or universal recognition.
 
 - retainedLeft is an admissible left-only history under the same law; joint possibility does not force actual joint realization. [RelationalGrounding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalGrounding.lean)
-- Preserving the existence of all bundles does not guarantee unchanged probability, reliability, burdens or past losses; arbitrary joint-realizability structure does not directly determine complete generative ethical quality. [RELATIONAL-GROUNDING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-INTEGRATION.md)
+- Preserving the existence of all bundles does not guarantee unchanged probability, reliability, burdens or past losses; arbitrary joint-realizability structure does not directly determine complete generative ethical quality. [RELATIONAL-GROUNDING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-INTEGRATION.md)
 
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
@@ -53,9 +53,9 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [JointContinuationClassification.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean) | `JointContinuationClassification.whole_profile_preservation_iff_joint_bundle_preservation`, `JointContinuationClassification.same_marginal_realizations_can_lose_a_joint_bundle` |
 | proof | [GenerativeComparison.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean) | `GenerativeComparison.GenerativeExtension`, `GenerativeComparison.ComparisonPrinciple` |
 | receipt | [relational-grounding-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-verification.json) | — |
-| integration | [RELATIONAL-GROUNDING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-INTEGRATION.md) | — |
-| statement | [RELATIONAL-GROUNDING-PROOF.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-PROOF.md) | — |
-| review | [RELATIONAL-GROUNDING-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-REVIEW.md) | — |
+| integration | [RELATIONAL-GROUNDING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-INTEGRATION.md) | — |
+| statement | [RELATIONAL-GROUNDING-PROOF.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-PROOF.md) | — |
+| review | [RELATIONAL-GROUNDING-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-REVIEW.md) | — |
 | provenance | [2026-10-08-monist-relational-ontology-first.md](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md) | — |
 | proof | [Metaethics.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | `Becoming.Comparison.separates` |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.Frame.ofInventory`, `Becoming.strict_comparison_through_marginals_by_core` |

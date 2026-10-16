@@ -135,7 +135,7 @@ The broader generative account meets its original five completion conditions as 
 
 **Evidence:** Existing integrated assessment and independent reviews of the underlying results. This is a scoped explanatory acceptance, not an additional omnibus theorem or a claim of universal empirical confirmation.
 
-[Canonical source](_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [Scope, premises and evidence](theories/becoming/results/records/conditional-foundation-assessment.md)
+[Canonical source](_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [Scope, premises and evidence](theories/becoming/results/records/conditional-foundation-assessment.md)
 
 ## Ongoing research and current progress
 

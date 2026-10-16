@@ -272,13 +272,13 @@
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
       "role": "statement",
-      "sha256": "710e7a7f275e50da60910ce1012b3776245a428f408103110026ff368f357127",
+      "sha256": "cbc0a4fce96f9c15876f2d54cf4ed17707f6fa769f8ddc3dc142235076e3b4a9",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
       "role": "integration",
-      "sha256": "1c17b46e9db0305b8214b16bef949c313132a623b216908f5a31010c0ffbcb76",
+      "sha256": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
       "declarations": []
     },
     {
@@ -315,7 +315,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
       "role": "review",
-      "sha256": "d7b38517ff0e5d2825ea8f97a959c5f1c5f5f2a4c4b99a70a77af264e61967a2",
+      "sha256": "b24072f6b633e544a9d9bbfa9ee2064588b37fc86f418d6a50d7f5c5d97a3f61",
       "declarations": []
     },
     {
@@ -390,12 +390,15 @@
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `FallibleInquiry.error_budgets_require_reach` → `FallibleInquiry.error_bounds_require_reach`; statements, proofs and theorem counts unchanged; Lean sources: FallibleInquiry only renamed (with the matching docstrings); rehashed after rereading. This record's claim, premises and status are unchanged; no reproof is credited."
     },
     {
-      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2, starting from the readability draft. The target becomes the statement and its admissible outcomes a not-required item. The limitations become five does-not-show items, three not-required items and three shared boundaries; the per-round correspondence (P94, P97, P101, P104, P105) becomes seven progress lines with anchored study links, and the per-round evidence one paragraph, with the labels kept here and in the snapshot. The second counterexample drops its section label. No premise, status, dependency, reference or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/scientific-inquiry-foundation.md); the exact earlier record is text_versions[0].",
-      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2，以可读性草案为起点。目标成为陈述，其可接受结果成为一项“不要求”。限制改为五项“未表明”、三项“不要求”与三项通用边界；逐轮对应（P94、P97、P101、P104、P105）改为七行带锚点研究链接的“已接通”，逐轮证据改为一段，标记保留于本沿革与快照。第二个反例去掉章节标记。前提、状态、依赖、引用及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/scientific-inquiry-foundation.md)；迁移前的完整记录为 text_versions[0]。"
+      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2, starting from the readability draft. The target becomes the statement and its admissible outcomes a not-required item. The limitations become five does-not-show items, three not-required items and three shared boundaries; the per-round correspondence (P94, P97, P101, P104, P105) becomes seven progress lines with anchored study links, and the per-round evidence one paragraph, with the labels kept here and in the snapshot. The second counterexample drops its section label. No premise, status, dependency, reference or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/scientific-inquiry-foundation.md); the exact earlier record is text_versions[0].",
+      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2，以可读性草案为起点。目标成为陈述，其可接受结果成为一项“不要求”。限制改为五项“未表明”、三项“不要求”与三项通用边界；逐轮对应（P94、P97、P101、P104、P105）改为七行带锚点研究链接的“已接通”，逐轮证据改为一段，标记保留于本沿革与快照。第二个反例去掉章节标记。前提、状态、依赖、引用及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/scientific-inquiry-foundation.md)；迁移前的完整记录为 text_versions[0]。"
     },
     {
       "zh": "2026-10-14，开放问题计划第4项：原第一条假说是 Ren 2026-10-13 的指示与工作安排，不是本结果的前提。改为受检验的可修正假说本身（完整理论是科学探究的必要基础，结果可以是完整核心、其一部分或须修正的承诺）；Ren 的指示连同原话移入对应；“完整理论必要性不是证明前提”移入“不要求”；“局部成果与伦理路线原范围保持”移入“未表明”（范围）；“当前对话持续工作，不设自动安排”是工作方式，记于此（Ren：“只在当前对话中连续推进，不设自动安排”）。原文：“Ren 2026-10-13明确支持按可修正假说持续检验。完整理论必要性不是证明前提；当前对话持续工作，不设自动安排。局部成果与伦理路线原范围保持。”",
       "en": "14 October 2026, open-issues plan item 4: the first hypothesis was Ren's direction of 13 October 2026 and working arrangements, not a premise of this result. It now states the revisable hypothesis under test itself (the complete theory is a necessary foundation of scientific inquiry; the outcome may be the complete core, a part of it, or a commitment that needs revision); Ren's direction moves with Ren's words to the correspondence; \"full-theory necessity is not a proof premise\" moves to not-required; \"preserve the scopes of local results and the ethical route\" moves to does-not-show (scope); \"continue in the current conversation without automation\" is a working arrangement, kept here (Ren: “只在当前对话中连续推进，不设自动安排”). Former text: \"Ren explicitly supports continuing as a revisable-hypothesis test on 13 October 2026. Full-theory necessity is not a proof premise; continue in the current conversation without automation. Preserve the scopes of local results and the ethical route.\""
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in SCIENTIFIC-INQUIRY-CONDITIONS.md, SCIENTIFIC-INQUIRY-EVIDENCE.md, SCIENTIFIC-PHILOSOPHY.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

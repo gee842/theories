@@ -186,13 +186,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
       "role": "integration",
-      "sha256": "1c17b46e9db0305b8214b16bef949c313132a623b216908f5a31010c0ffbcb76",
+      "sha256": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md",
       "role": "review",
-      "sha256": "a3ee064185d1eee8be9ba4f4363fcdce769b505bd8c9dcf296e5b43837d979de",
+      "sha256": "85adae0cbe0da4364d73eedb00ea07c78d86924fdc07cc53863b42ff4e62ebf1",
       "declarations": []
     },
     {
@@ -347,6 +347,9 @@
     {
       "zh": "2026-10-16 I5（检查器加固，基础设施，不是成果）：check_fallible_inquiry.py 改用共享的继承回执结构匹配（已通过的回执须把模块名或路径映射到当前 sha256）、共享的 Lean 解析（`LEAN`、`elan which lean` 或默认路径）与 `BECOMING_OUT`；已读其差异。FallibleInquiry.lean 字节未变；重跑得回执 20261016T120403.241963Z（通过，31 项定理、37 项声明审计，公理同前；43 个继承模块的当前字节各有已通过的回执），绑定移到该回执，旧回执保留。主张、前提与状态不变，不记作重新证明。",
       "en": "16 October 2026, I5 (checker hardening; infrastructure, not a result): check_fallible_inquiry.py now uses the shared structural match of inherited receipts (a passed receipt mapping the module's name or path to its current sha256), the shared Lean resolution (`LEAN`, `elan which lean` or the default path) and `BECOMING_OUT`; its diff was read. FallibleInquiry.lean's bytes are unchanged; the rerun gives receipt 20261016T120403.241963Z (passed, 31 theorems, 37 declaration audits, the same axioms; each of the 43 inherited modules' current bytes has a passed receipt), the binding moves to it and the older receipts are kept. The claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in SCIENTIFIC-INQUIRY-CONDITIONS.md, SCIENTIFIC-PHILOSOPHY-SOURCES.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

@@ -48,7 +48,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [BecomingReversibility.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean) | — |
 | proof | [GenerativeCore.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) | — |
 | receipt | [becoming-reversibility-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-reversibility-verification.json) | — |
-| integration | [BECOMING-REVERSIBILITY-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md) | — |
+| integration | [BECOMING-REVERSIBILITY-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md) | — |
 | provenance | [2026-10-08-theory-of-becoming-priority.md](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) | — |
 | proof | [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean) | `Becoming.keeps_reach_iff_returns`, `Becoming.same_reach_iff_returns`, `Becoming.not_returns_iff_loses` |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.keeps_possible_iff_keeps_reach`, `Becoming.same_endpoint_possibilities_iff_return_by_core`, `Becoming.irreversible_iff_endpoint_loss_by_core` |

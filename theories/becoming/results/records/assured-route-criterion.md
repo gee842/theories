@@ -67,4 +67,4 @@ Aliases: `Generative.WisdomResponseStructure.assured_route_iff`, `Becoming.Assur
 
 - 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-14: under Ren's approved general-law audit of older records, the claim now states the law first: for every determined process, completion is exactly a safe run ending in the goal (new core module Becoming.Assurance); the three-route process and the regulation law become instances through the bridge Becoming.Instances, and the nondeterministic counterexample Branch is added. Built with scratch_build, empty axiom reports; the landing run binds the receipt. The original theorem, receipt and scope are unchanged.
-- 12 rebinding entries (2026-10-14 to 2026-10-15): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](assured-route-criterion.json).
+- 13 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](assured-route-criterion.json).

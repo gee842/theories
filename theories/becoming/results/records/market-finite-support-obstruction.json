@@ -163,13 +163,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
       "role": "review",
-      "sha256": "6000245fbadd7a5b1dacc0740efcebedceb6707f2da5db863159e5894590755d",
+      "sha256": "e043436008b4d438013017370fd092cb84ac8181e94c73fef25e4b46f4e93e3f",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
       "role": "integration",
-      "sha256": "ce8d50a91534c482cf5a163a9a100870666490d81b74f4f48917f5b9c9a46d36",
+      "sha256": "41611cb2097316dc49ab0441625a35c703a6917e094ebd8a64c4ccf8e1afdcb0",
       "declarations": []
     },
     {
@@ -203,7 +203,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "814147e961f0919378e811091f3a28bb9e2f868fed61327c0ef5e2f1dc349647",
+      "sha256": "05d895110b9ed415e988afaaa0ff8c1113708e66b62f454a6db5cb792aca4c4e",
       "declarations": []
     },
     {
@@ -363,6 +363,9 @@
     {
       "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 bilingual-16 项：英文标题补上“in time”，与中文“无法及时恢复”及主张的“n 步内离开守卫”一致。schema 1，无 text_versions；原文见 git。",
       "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item bilingual-16: the English title gains \"in time\", matching the Chinese 无法及时恢复 and the claim's leaving the guard within n steps. Schema 1, no text_versions; earlier text in git."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, MARKET-INTERNET-DEGENERATION.md, MARKETS-AND-GENERATIVE-REGIMES.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

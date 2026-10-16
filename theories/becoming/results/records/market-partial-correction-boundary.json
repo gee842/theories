@@ -171,13 +171,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
       "role": "review",
-      "sha256": "6000245fbadd7a5b1dacc0740efcebedceb6707f2da5db863159e5894590755d",
+      "sha256": "e043436008b4d438013017370fd092cb84ac8181e94c73fef25e4b46f4e93e3f",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
       "role": "integration",
-      "sha256": "ce8d50a91534c482cf5a163a9a100870666490d81b74f4f48917f5b9c9a46d36",
+      "sha256": "41611cb2097316dc49ab0441625a35c703a6917e094ebd8a64c4ccf8e1afdcb0",
       "declarations": []
     },
     {
@@ -237,7 +237,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "814147e961f0919378e811091f3a28bb9e2f868fed61327c0ef5e2f1dc349647",
+      "sha256": "05d895110b9ed415e988afaaa0ff8c1113708e66b62f454a6db5cb792aca4c4e",
       "declarations": []
     },
     {
@@ -404,6 +404,9 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Lasting.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Lasting.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, MARKET-INTERNET-DEGENERATION.md, MARKETS-AND-GENERATIVE-REGIMES.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

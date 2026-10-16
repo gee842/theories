@@ -124,13 +124,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
       "role": "integration",
-      "sha256": "1f79e8b5dceba40938728e48284da852fe575471a0ac2e3c7b663f14e111df66",
+      "sha256": "ef73b555d35257c387de925b7712f9c96655a6ce8c5a1e6a92a9a8a275a2c9ab",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "71c0d3c735dccf3a3489f2f45337ee5865e028d61d799cbf5304600f355e7cef",
+      "sha256": "46b4c52e856ecb3c902c0ef483c5fbe4450406c77f6d509a3aaa6abb5436e1cb",
       "declarations": []
     },
     {
@@ -246,6 +246,9 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in RELATIONAL-BECOMING-INTEGRATION.md, THEORY-OF-BECOMING.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

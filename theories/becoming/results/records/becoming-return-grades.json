@@ -370,7 +370,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "3ee42b4c6196cb4c41d94158898c977c215f3804114b701418ae77115a85b8b1",
+      "sha256": "ff70e6f931178518168d579f499b863f71d01b1a1a90a2abc15d57bfcf0e1c4f",
       "declarations": []
     },
     {
@@ -763,8 +763,8 @@
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged)."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题与陈述不变；主张拆为 9 条规律；限制与逐轮回执说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。反例中“（P11b 起）”去掉（现行定义无条件成立，轮次留在快照中）；第二次审查的概括与 joint-difference-making 中的同一条一致。每句旧文本的去向见迁移对照表 [becoming-return-grades.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-return-grades.md)；迁移前的完整记录为 text_versions 末项。",
-      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title and statement are kept; the claim was split into 9 laws; limitations and per-round receipt notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. A counterexample lost “(from P11b)” (the current definition states it unconditionally; the round stays in the snapshot), and the second review's summary matches the same item in joint-difference-making. Every earlier sentence is mapped in the migration table [becoming-return-grades.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-return-grades.md); the exact earlier record is the last text_versions entry."
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题与陈述不变；主张拆为 9 条规律；限制与逐轮回执说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。反例中“（P11b 起）”去掉（现行定义无条件成立，轮次留在快照中）；第二次审查的概括与 joint-difference-making 中的同一条一致。每句旧文本的去向见迁移对照表 [becoming-return-grades.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-return-grades.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title and statement are kept; the claim was split into 9 laws; limitations and per-round receipt notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. A counterexample lost “(from P11b)” (the current definition states it unconditionally; the round stays in the snapshot), and the second review's summary matches the same item in joint-difference-making. Every earlier sentence is mapped in the migration table [becoming-return-grades.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-return-grades.md); the exact earlier record is the last text_versions entry."
     },
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；BECOMING-UNIFICATION-PLAN.md（10月14日改名表增四行（第十七次审查的改名）；其余文字不变）。",
@@ -805,6 +805,9 @@
     {
       "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A12 项：新增一项未表明：Web.consumed_iff 是 Consumed 定义的改写（records-a-l-22）。原文见 text_versions。",
       "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A12: a does_not_show item added: Web.consumed_iff restates the definition of Consumed (records-a-l-22). Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

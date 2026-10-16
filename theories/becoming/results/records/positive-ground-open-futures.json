@@ -188,13 +188,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md",
       "role": "integration",
-      "sha256": "e600e6b7bfc13d53af49311d657a7ff9b590871229dd6a638cb510fd21025581",
+      "sha256": "37d2ec4c43ecb92e90cd0ba61796abce4c48372209e45ecc6eb97e1756ce9f12",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/POSITIVE-GROUND-UNCERTAINTY-REVIEW.md",
       "role": "review",
-      "sha256": "8fcd734ba575c7ee0e570a0c0315a23ae2d0f07d3bf291077fd99f992624ad72",
+      "sha256": "78a6cf249e539c060a5f4f9bb00e1c3ffecbf10d3cb56873e589ba65011cace4",
       "declarations": []
     },
     {
@@ -341,6 +341,9 @@
     {
       "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)）：此前说“第二部分”断言公理或 G0 为第二部分定理之处，改为“以那一条公理为条件”，指向章节 §6.15；理论不断言这一条件。断言、证明与证据不变。",
       "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md, POSITIVE-GROUND-UNCERTAINTY-REVIEW.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "overview": {

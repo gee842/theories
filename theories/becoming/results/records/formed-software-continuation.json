@@ -130,7 +130,7 @@
     {
       "path": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
       "role": "statement",
-      "sha256": "ce8d50a91534c482cf5a163a9a100870666490d81b74f4f48917f5b9c9a46d36",
+      "sha256": "41611cb2097316dc49ab0441625a35c703a6917e094ebd8a64c4ccf8e1afdcb0",
       "declarations": []
     },
     {
@@ -281,8 +281,11 @@
       "en": "2026-10-09: extends the same assessment previously titled “Independent continuation formed within shared software activity” with API-change history. Five developer posts and two reread statements distinguish continuation from reorganization control, with current-retrieval/editing limits. LibreOffice evidence, earlier proofs and failures remain; no additional result counted."
     },
     {
-      "zh": "2026-10-14 可读性迁移到 schema 2：原主张第一句成为陈述，第二句（Apollo 的终止和不同旧承担同时保留）由反例与第三条前提承担；限制句拆为 5 项分类“未表明”；下一步第一句（两种接续对应已完成）成为 2 行带锚点的“已接通”，其余改为正面表述，内容不变。主张、前提、状态、依赖、关联、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md)；迁移前的完整记录为 text_versions[0]。",
-      "en": "2026-10-14 readability migration to schema 2: the claim's first sentence became the statement, and its second (Apollo's ending and different inherited commitments remain) is carried by the counterexample and the third hypothesis; the limitations became 5 typed does-not-show items; the next step's first sentence (both continuation correspondences complete) became 2 anchored progress lines, and the rest is restated positively with the same content. No claim, premise, status, dependency, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md); the exact earlier record is text_versions[0]."
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张第一句成为陈述，第二句（Apollo 的终止和不同旧承担同时保留）由反例与第三条前提承担；限制句拆为 5 项分类“未表明”；下一步第一句（两种接续对应已完成）成为 2 行带锚点的“已接通”，其余改为正面表述，内容不变。主张、前提、状态、依赖、关联、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim's first sentence became the statement, and its second (Apollo's ending and different inherited commitments remain) is carried by the counterexample and the third hypothesis; the limitations became 5 typed does-not-show items; the next step's first sentence (both continuation correspondences complete) became 2 anchored progress lines, and the rest is restated positively with the same content. No claim, premise, status, dependency, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in MARKETS-AND-GENERATIVE-REGIMES.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

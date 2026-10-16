@@ -26,7 +26,7 @@
 <a id="progress--已接通"></a>
 ## Progress
 
-1. Public data: all 16 original recovery records are analysed at participant level, extending the six-study synthesis with actual measurement correspondence and held-out forecast evaluation. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence)
+1. Public data: all 16 original recovery records are analysed at participant level, extending the six-study synthesis with actual measurement correspondence and held-out forecast evaluation. [study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence)
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -59,7 +59,7 @@ Reuse the completed measurement correspondence. Stronger mechanism claims requir
 |---|---|---|
 | statement | [README.md](../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md) | — |
 | review | [SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md) | — |
-| integration | [JOINT-RISK-REVISION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) | — |
+| integration | [JOINT-RISK-REVISION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) | — |
 | provenance | [README.md](../../../../sources/situated-recovery/heald-2021/README.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/verification.json) | — |
 
@@ -70,7 +70,8 @@ Aliases: —
 
 - 2026-10-08: followed Ren’s direction to use public data, extending the six-study synthesis with actual measurement correspondence and forecast evaluation while retaining small-sample uncertainty and adverse results.
 - 2026-10-09: read and reconciled the 24-person updating additions in three shared sources. The 16-person recovery claim, analysis and scientific receipt remain unchanged; the distinct updating claim is recorded separately.
-- 2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the study's integration of the public-data analysis. No claim, premise, status, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/situated-recovery-empirical-correspondence.md); the exact earlier record is text_versions[0].
+- 2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the study's integration of the public-data analysis. No claim, premise, status, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/situated-recovery-empirical-correspondence.md); the exact earlier record is text_versions[0].
+- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](situated-recovery-empirical-correspondence.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

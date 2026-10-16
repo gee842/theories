@@ -26,7 +26,7 @@
 <a id="progress--已接通"></a>
 ## Progress
 
-1. Updating correspondence: the 24-person reanalysis tests cue × perturbation contrasts, their pre/post changes and finite persistence, linking experimental history to the distinction of formation, current use and continuing adequacy. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#43-acquired-context-enters-subsequent-expressed-updating)
+1. Updating correspondence: the 24-person reanalysis tests cue × perturbation contrasts, their pre/post changes and finite persistence, linking experimental history to the distinction of formation, current use and continuing adequacy. [study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#43-acquired-context-enters-subsequent-expressed-updating)
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -59,7 +59,7 @@ Use observations/manipulations in existing studies that distinguish memory revis
 |---|---|---|
 | statement | [MEMORY-UPDATING.md](../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING.md) | — |
 | review | [SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md) | — |
-| integration | [JOINT-RISK-REVISION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) | — |
+| integration | [JOINT-RISK-REVISION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) | — |
 | provenance | [README.md](../../../../sources/situated-recovery/heald-2021/README.md) | — |
 | provenance | [MEMORY-UPDATING-PLAN.md](../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING-PLAN.md) | — |
 | receipt | [memory-updating-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/memory-updating-verification.json) | — |
@@ -70,7 +70,8 @@ Aliases: —
 ### History
 
 - 2026-10-09: followed Ren’s direction to continue with public data, extending the 16-person recovery study with complete 24-person updating correspondence while preserving results against monotonic strengthening.
-- 2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the integration study's updating correspondence. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/context-sensitive-updating-correspondence.md); the exact earlier record is text_versions[0].
+- 2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the integration study's updating correspondence. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/context-sensitive-updating-correspondence.md); the exact earlier record is text_versions[0].
+- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](context-sensitive-updating-correspondence.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

@@ -1157,7 +1157,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions:** Syntax, binding interpretation and assessment remain unchanged; the philosophical account of actual roles and warrant remains a separate obligation.
 
-[Connection evidence](_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
+[Connection evidence](_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
 
 ## consumption-ends-with-feeders ← own-count-misses-joint-excess
 
@@ -6590,7 +6590,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 <a id="wider-composition-evidence--更广组合证据"></a>
 ## Wider composition evidence
 
-[Documented joined histories, conditional transport, separate realizations and unresolved interfaces](_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md)
+[Documented joined histories, conditional transport, separate realizations and unresolved interfaces](_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FOUNDATION-COMPOSITION.md)
 
 These historical connections retain their own source cutoff and validation scope; they are not automatically upgraded by this index.
 

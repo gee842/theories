@@ -680,13 +680,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
       "role": "statement",
-      "sha256": "a6f695eb6786b913912182b0d21d28af1f03703f1335700409bc61d8d7e7d870",
+      "sha256": "3bd675ec507d493c7beaa4cb65c8104be1fa2dd93f779449e30f268d78c0f013",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
       "role": "integration",
-      "sha256": "909296674126cc6fe3d95253949079fadb62893c733759d9d5278e9b889da98e",
+      "sha256": "bf9db8d7581967f4cb6ce641ef1cf6e8a1a3e44dac9597d8a7fa673b35598e63",
       "declarations": []
     },
     {
@@ -710,7 +710,7 @@
     {
       "path": "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
       "role": "integration",
-      "sha256": "8de72d7281b3d1490e6c5c0311b817bb65a202b24a1d6bf1acc9f8386953de48",
+      "sha256": "6ef706abf2778b42ee5745d241461c292d89434bdb7b2b50afcdd47571b2ec9b",
       "declarations": []
     },
     {
@@ -981,7 +981,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
       "role": "review",
-      "sha256": "c197cb00ae12652eeec926ecb2a980305e8a8d7549b5ddc04622db95d8f00f6d",
+      "sha256": "fc78145baee699bd8816d8c2ab1c4eb667223204e97db5fd85e64563726aaad9",
       "declarations": []
     },
     {
@@ -1044,7 +1044,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
       "role": "review",
-      "sha256": "1c17b46e9db0305b8214b16bef949c313132a623b216908f5a31010c0ffbcb76",
+      "sha256": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
       "declarations": []
     },
     {
@@ -1077,7 +1077,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATHEMATICS-GROUNDING-RESOLUTION.md",
       "role": "review",
-      "sha256": "977c0d8983d8384bba355113889362d06cf5a264a7e0f8ddd1178020474af4ae",
+      "sha256": "dd17a096576d981e06771c28757f7addd189f3c99b97ac0708a23d64b2a1de24",
       "declarations": []
     },
     {
@@ -1127,7 +1127,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
       "role": "review",
-      "sha256": "8fef4fa01911d0e706e128caafe5717c08e218d5a0dee029147f80e1443444cf",
+      "sha256": "a78b40420146e1035b468b39f60faf9ac2a768db1df8f63adcdf4b13a3dee56f",
       "declarations": []
     },
     {
@@ -1205,19 +1205,19 @@
     {
       "path": "theories/becoming/chapters/KNOWLEDGE.md",
       "role": "review",
-      "sha256": "117c4d91023fe4f8f4e2affbc41a7f5541082a6dce501265a94939e4cdc6fe28",
+      "sha256": "2771a5ae8bc8189beac0d3866dc1841a2f937af69e40350d4f64e4f6780c50a2",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md",
       "role": "review",
-      "sha256": "c7bfb18246d92d984145ddfc9a50672d0c81a5929cc23e53bcf48b905d2e86e9",
+      "sha256": "13ee5b1f4958f12abecc913a74c4fdcfce95bb143a8b9746cfbce3d063e159e9",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md",
       "role": "review",
-      "sha256": "cd558f01f7314143f20251e4a293a02a2f7dc2950ec77f5230399cbcb7b7f393",
+      "sha256": "87f7a0ca590d30919b11493061bc43ac46bfd0f2e89915082639d28bc2dcc421",
       "declarations": []
     },
     {
@@ -1563,8 +1563,8 @@
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `ContinuingRevision.all_cycles_account` → `ContinuingRevision.all_cycles_amounts`, `FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`, `FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`; statements, proofs and theorem counts unchanged; Lean sources: Unfolding, Bridge, FallibleInquiry, TimedResponse, Mechanism, Response, Counterfactual only renamed (with the matching docstrings); Revision with theorems added that read `Revising` as an instance of Stock; ReferencePlan with theorems added as instances of Stock and Contacts; ContinuingRevision with theorems added as instances of Stock, and fuel and yield of the cycle made parameters; bindings move to the new receipts (see validation scope); WISDOM-AND-CONTEXT only renames `Law.const_makesSense_iff` to `Law.const_identifiesAlike_iff`; in the validation scope, section 25’s “current ContinuingRevision bytes match” becomes the check made at section 25, since this batch changed those bytes. This record's claim, premises and status are unchanged; no reproof is credited."
     },
     {
-      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2, starting from the readability draft. The target becomes the statement. The limitations (4,834 characters), the section-by-section correspondence (sections 15–31) and the section-by-section evidence (5,529 characters of receipt matching) become sixteen progress lines with anchored study links, six not-required items, nine does-not-show items, two shared boundaries, a shorter correspondence and one evidence paragraph. Kept here and in the snapshot rather than in public text: section and round labels (P75, P76, P83, P89, P91, P93, P99, P103, P53/P68/P80, P69), receipt timestamps and per-section audit counts, the earlier next step’s instruction not to rebuild the common operational factor and joint content/step preservation, and the remark that the three non-statistical branches are no longer left unaddressed. The third counterexample drops its section labels. No premise, status, dependency, related entry, reference, proof binding or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md); the exact earlier record is text_versions[0].",
-      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2，以可读性草案为起点。目标成为陈述。限制（4,834 字符）、逐节对应（第15–31节）与逐节证据（5,529 字符的回执核对）改为十六行带锚点研究链接的“已接通”、六项“不要求”、九项“未表明”、两项通用边界、较短的对应与一段证据。以下保留于本沿革与快照而不入公开字段：章节与轮次标记（P75、P76、P83、P89、P91、P93、P99、P103、P53/P68/P80、P69）、回执时间戳与逐节审计计数、原下一步中“共同操作因子及内容／步骤同一关系保留已接通、不再重建”的指示，以及“三个非统计分支不再列为未处理”的说明。第三个反例去掉章节标记。前提、状态、依赖、相关条目、引用、证明绑定及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md)；迁移前的完整记录为 text_versions[0]。"
+      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2, starting from the readability draft. The target becomes the statement. The limitations (4,834 characters), the section-by-section correspondence (sections 15–31) and the section-by-section evidence (5,529 characters of receipt matching) become sixteen progress lines with anchored study links, six not-required items, nine does-not-show items, two shared boundaries, a shorter correspondence and one evidence paragraph. Kept here and in the snapshot rather than in public text: section and round labels (P75, P76, P83, P89, P91, P93, P99, P103, P53/P68/P80, P69), receipt timestamps and per-section audit counts, the earlier next step’s instruction not to rebuild the common operational factor and joint content/step preservation, and the remark that the three non-statistical branches are no longer left unaddressed. The third counterexample drops its section labels. No premise, status, dependency, related entry, reference, proof binding or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md); the exact earlier record is text_versions[0].",
+      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2，以可读性草案为起点。目标成为陈述。限制（4,834 字符）、逐节对应（第15–31节）与逐节证据（5,529 字符的回执核对）改为十六行带锚点研究链接的“已接通”、六项“不要求”、九项“未表明”、两项通用边界、较短的对应与一段证据。以下保留于本沿革与快照而不入公开字段：章节与轮次标记（P75、P76、P83、P89、P91、P93、P99、P103、P53/P68/P80、P69）、回执时间戳与逐节审计计数、原下一步中“共同操作因子及内容／步骤同一关系保留已接通、不再重建”的指示，以及“三个非统计分支不再列为未处理”的说明。第三个反例去掉章节标记。前提、状态、依赖、相关条目、引用、证明绑定及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md)；迁移前的完整记录为 text_versions[0]。"
     },
     {
       "en": "Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.",
@@ -1609,6 +1609,9 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；ReferencePlan.lean（P129：新增 alike_iff_agreeOn（Iff.rfl）与同名异义说明；已有陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); ReferencePlan.lean (P129: alike_iff_agreeOn (Iff.rfl) and a homonym note added; existing statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in CORE-CONSTRAINT-AND-WISDOM.md, EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md, KNOWLEDGE-CONTENT-AND-ERROR.md, KNOWLEDGE-REASONS-AND-STANDARDS.md, KNOWLEDGE.md, MATHEMATICS-GROUNDING-RESOLUTION.md, META-ATTRACTOR-RECONCILIATION.md, SCIENTIFIC-INQUIRY-CONDITIONS.md, WISDOM-AND-CONTEXT.md, WISDOM-RESPONSE-NECESSITY.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [
