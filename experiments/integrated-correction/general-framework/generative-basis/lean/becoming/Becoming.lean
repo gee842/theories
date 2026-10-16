@@ -120,6 +120,11 @@ import Becoming.Observation
 import Becoming.Frequency
 import Becoming.Gain
 import Becoming.Gluing
+import Becoming.Runs
+import Becoming.CourseWorlds
+import Becoming.LearnableRuns
+import Becoming.ParityReadings
+import Becoming.FinerTraces
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1202,6 +1207,36 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   Mermin–Peres square are instances. A cycle of claims related as equal or different is met by a
   context-free assignment exactly where the number of differ relations is even, and contradicts
   where it is odd.
+* `Becoming.Runs` (L3): the one root, with no premise. A world is exactly a run of the law its
+  webs and exchanges show, and every run on webs and exchanges is a world; a world balances
+  exactly where it is a run of the law of exchange on webs, and with the rest counted every world
+  is such a run. A law of exchange's course is a world, balanced exactly where the law is
+  feasible, and its generation is the one run of a determined law; the amount coupling strengths
+  carry is the standing of a balanced world, a run of the law of exchange; an orbit is a run. So
+  the run is the unfolding read step by step and the world the same unfolding read as relata
+  exchanging, identified exactly.
+* `Becoming.CourseWorlds` (L4): the coupling-array frontier on the worlds of two acts under one
+  law, with no premise beyond what each law names. The gap between the two act worlds is at most
+  the carried amount, attained by the carrying law, so the act worlds bound the difference exactly
+  as every two balanced flows do; the laws of `Becoming.Loops`, `Becoming.Remainder`,
+  `Becoming.Routes`, `Becoming.Closing`, `Becoming.Frequency`, `Becoming.Thresholds` and
+  `Becoming.Observation` hold of those worlds.
+* `Becoming.LearnableRuns` (L4): what a learner reading a run's registration can learn, with no
+  premise. A run of a determined law is its orbit and runs beginning alike in the frame of the
+  registration give every learner the same record, so in a world a list holds a target is
+  learnable along every run exactly where runs beginning alike have targets that agree from some
+  step on.
+* `Becoming.ParityReadings` (L4): where the readings of one unfolding glue, with no premise beyond
+  the listed claims and contexts. The registrations glue at a step of a run exactly where the
+  world of readings is context-free there; for a parity system some world of readings respecting
+  the possibilities is context-free at a step, and some frame of context-free claims of a process
+  fits, exactly where no selection of contexts contradicts. Quantum registrations of the square
+  exist at every configuration, leave the world of readings context-free at no step and fit no
+  frame of context-free claims of any process.
+* `Becoming.FinerTraces` (L4): the situations counted are the courses of one determined process,
+  with no premise. The finer courses of `n` steps are exactly the finer law's traces of `n` steps
+  taking listed moves to listed configurations; the law of steps of positive weight is the finer
+  law with the situation forgotten, and situations exist exactly where it has a course.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
