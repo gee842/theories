@@ -406,6 +406,16 @@ PROOF_KIND = {
     # 2026-10-16, P126 what a law of the whole and no part takes (Becoming.Tail): a rule gives the
     # principle by both its cases
     **{n: 'split' for n in ['WLPO.of_rule', 'LPO.of_rule']},
+    # 2026-10-16, P130 the frontier and the apart modules on the base: each instance reads its law's
+    # decidedness through the law it restates (Learnable's search; Gluing's elimination; Propagation's,
+    # Loops', Remainder's and Frequency's equality of conditions)
+    **{n: 'find' for n in ['LearnableRuns.learnable_iff', 'LearnableRuns.still_learnable_iff_lumped']},
+    **{n: 'same' for n in [
+        'ParitySystem.freeFrame_iff', 'ParitySystem.world_free_iff', 'TwoActs.gap_le_carried',
+        'TwoActs.gap_le_carried_read', 'TwoActs.gap_le_count', 'TwoActs.gap_le_polynomial',
+        'TwoActs.gap_le_polynomial_before', 'TwoActs.gap_le_polynomial_from', 'carrying_twoActs',
+        'gap_polynomial_iff_no_loop_worlds', 'gap_within_order_iff_worlds', 'most_difference_courses_worlds',
+        'most_difference_within_worlds', 'most_difference_worlds', 'runaway_worlds', 'worlds_iff_flows']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
