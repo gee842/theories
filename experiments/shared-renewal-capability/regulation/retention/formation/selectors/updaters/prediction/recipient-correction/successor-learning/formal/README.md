@@ -1,6 +1,6 @@
 # Checked learning and retransmission by a copied child
 
-6 October 2026. [SuccessorLearning.lean](SuccessorLearning.lean) contains **35 new checked declarations** under Lean 4.29.1. It imports the actual `FormedRecipientRoute` source, which imports `RecipientCorrection`; the fresh build also audits their 37 and 36 declarations. The [mathematical note](../../../../../../../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-MATH.md) explains the result and its remaining premises.
+6 October 2026. [SuccessorLearning.lean](SuccessorLearning.lean) contains **35 new checked declarations** under Lean 4.29.1. It imports the actual `FormedRecipientRoute` source, which imports `RecipientCorrection`; the fresh build also audits their 37 and 36 declarations. The [mathematical note](../../../../../../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-MATH.md) explains the result and its remaining premises.
 
 The package joins three explicit interfaces:
 

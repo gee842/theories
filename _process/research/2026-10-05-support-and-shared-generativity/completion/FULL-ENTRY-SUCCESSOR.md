@@ -16,7 +16,7 @@ with other counts zero. This is a specific physically described organization, no
 
 The primary observables at H10 are the unconditional probabilities Pr(tau≤H, gate at entry=j). Diagnostic times1 and3 were declared before computation. Also calculate actual occupation Pr(X_H∈P_ij(any m)) and integrated occupation E∫_0^H1{X_t∈P_ij(any m)}dt. An entered organization can leave, fail or return; first-entry success does not freeze the physical law for the latter two observables.
 
-The [producer](../../../../experiments/shared-renewal-capability/full-entry/compute.py) explicitly lists all42 channels, with catalysts and both type-specific competitors. Its table was independently inspected against the [machine-checked typed vocabulary](TYPED-RENEWAL-FORMALIZATION.md); all inputs and outputs match. That source comparison is not yet a formal proof of Python enumeration or mass-action semantics.
+The [producer](../../../../experiments/shared-renewal-capability/full-entry/compute.py) explicitly lists all42 channels, with catalysts and both type-specific competitors. Its table was independently inspected against the [machine-checked typed vocabulary](../../../history/2026-10-05-support-and-shared-generativity/completion/TYPED-RENEWAL-FORMALIZATION.md); all inputs and outputs match. That source comparison is not yet a formal proof of Python enumeration or mass-action semantics.
 
 ## 2. Exact state reduction and truncation error
 
@@ -101,6 +101,6 @@ K_{\rm capture}=m'-m+K_{\rm leak}+2D_A+2D_G+D_C+D_Y
 \tag{4}
 \]
 
-Full original-carrier wear supplies at least one wear in each role. Thus six captures remain necessary when the inherited reserve is restored or increased; spending inherited reserve can reduce the fresh-capture requirement. A favorable return count that ignores this spending could misidentify reserve exhaustion as sustained renewal. The separate [reserve-aware formalization](RESERVE-SENSITIVE-TURNOVER.md) machine-checks this generalized ledger consequence for typed traces; original-label tracking remains outside that proof.
+Full original-carrier wear supplies at least one wear in each role. Thus six captures remain necessary when the inherited reserve is restored or increased; spending inherited reserve can reduce the fresh-capture requirement. A favorable return count that ignores this spending could misidentify reserve exhaustion as sustained renewal. The separate [reserve-aware formalization](../../../history/2026-10-05-support-and-shared-generativity/completion/RESERVE-SENSITIVE-TURNOVER.md) machine-checks this generalized ledger consequence for typed traces; original-label tracking remains outside that proof.
 
 The advance is a complete entrance law and a precise interface to complete successors. The remaining positive target is reliable, physically identified generation and regeneration of joint capabilities across that actual ensemble. It is not satisfied by the certified entrance advantage alone.

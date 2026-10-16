@@ -1,6 +1,6 @@
 # Why the constructed regulator loses the original joint test
 
-This secondary analysis applies the proved [reaction-response identity](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RESPONSE.md) to the failed g=8, H=3 joint assay. It identifies where the loss occurs in one declared response decomposition. It does not choose a new favorable model, collect observations, or attribute a unique intrinsic value to each reaction.
+This secondary analysis applies the proved [reaction-response identity](../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RESPONSE.md) to the failed g=8, H=3 joint assay. It identifies where the loss occurs in one declared response decomposition. It does not choose a new favorable model, collect observations, or attribute a unique intrinsic value to each reaction.
 
 The [diagnostic protocol](PROTOCOL.md) was written before this calculation, after the original negative result. [decompose.py](decompose.py) and [results.json](results.json) retain every resolution and packet cap. The original experiment is unchanged.
 
@@ -38,7 +38,7 @@ This is a useful distinction: a small overflow probability from the initial prep
 
 The initial 192-interval result missed the endpoint difference by 1.34e-7, triggering the protocol's declared refinement. Residuals fell to 8.25e-9 at384 intervals and 5.14e-10 at768. All runs are retained. Moving the cap from48 to64 shifts the endpoint difference by about1.48e-9. These sensitivity checks are empirical numerical diagnostics, not proved roundoff or quadrature bounds.
 
-The implementation checks the full construction increment including its generator diagonal, a common closed state space, the impossibility of a positive terminal construction contrast, zero future success after consuming the last productive unit, and the preparation-specific implication that construction-eligible states already include a recycling event. The [independent response review](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/RESPONSE-DIAGNOSIS-REVIEW.md) records a separate block-matrix calculation and its scope.
+The implementation checks the full construction increment including its generator diagonal, a common closed state space, the impossibility of a positive terminal construction contrast, zero future success after consuming the last productive unit, and the preparation-specific implication that construction-eligible states already include a recycling event. The [independent response review](../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/RESPONSE-DIAGNOSIS-REVIEW.md) records a separate block-matrix calculation and its scope.
 
 The remaining theoretical issue is more basic than tuning inhibitor strength. In the original law, recycling converts a leaking fuel packet into usable R without losing the assigned work value. It does not compete with a second modeled productive fuel use. A loss of free reserve is therefore not yet a demonstration of impaired later production. A proposed regulator needs an independently specified harmful reaction or resource conflict to resolve, and new functional claims need a common expanded assay vocabulary.
 

@@ -12,7 +12,7 @@ The revised core is:
 
 > What a situated system can distinguish and bring about constrains its possible functioning. Continued functioning requires the continuation of the relevant possibilities. When their implementations have finite lifetimes or sustained losses, continuation beyond inherited support requires renewed provision. Under finite-network and vulnerability assumptions, that provision must trace to continuing outside sources or internal renewal cycles. When the function requires informed correction, the observation and execution capacities are among the conditions that must continue.
 
-This develops a theory of conditions of possibility, not a new numerical constant of nature. Its force comes from exact implications and identifiable assumptions. The [previous integrated theory](../final-synthesis/INTEGRATED-THEORY.md) remains the detailed account of selection, maintenance, bounded learning, participation, succession, and normative amendments.
+This develops a theory of conditions of possibility, not a new numerical constant of nature. Its force comes from exact implications and identifiable assumptions. The [previous integrated theory](../../../history/2026-10-05-specialist-dossier/final-synthesis/INTEGRATED-THEORY.md) remains the detailed account of selection, maintenance, bounded learning, participation, succession, and normative amendments.
 
 ## 1 The invariant is what the system can actually accomplish
 

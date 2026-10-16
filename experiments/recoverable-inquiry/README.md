@@ -4,7 +4,7 @@ An exploratory, exact finite belief-state decision model coupling stock regenera
 
 The principal distinction is between current inquiry activity and the ability to afford a timely return to inquiry. The model can choose to drop an apparatus, later rebuild it, and then test. It also retains cases in which paying for diagnosis is unnecessary. This is a conditional mechanism study using established control mathematics, not empirical institutional evidence or a universal optimal policy.
 
-Read the [research synthesis](../../sources/15-codex-theory-conversations/2026-10-05-recoverable-inquiry.md), [protocol](PROTOCOL.md), [math audit](../../_process/research/2026-10-04-integrated-evolution/recoverable-inquiry-math.md), [design audit](../../_process/research/2026-10-04-integrated-evolution/recoverable-inquiry-design-review.md), and [prior-art audit](../../_process/research/2026-10-04-integrated-evolution/recoverable-inquiry-prior-art.md).
+Read the [research synthesis](../../sources/15-codex-theory-conversations/2026-10-05-recoverable-inquiry.md), [protocol](PROTOCOL.md), [math audit](../../_process/history/2026-10-04-integrated-evolution/recoverable-inquiry-math.md), [design audit](../../_process/history/2026-10-04-integrated-evolution/recoverable-inquiry-design-review.md), and [prior-art audit](../../_process/history/2026-10-04-integrated-evolution/recoverable-inquiry-prior-art.md).
 
 ## Findings
 

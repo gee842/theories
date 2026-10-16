@@ -6,9 +6,9 @@
 
 ## 1. 继承了什么，本轮新增什么
 
-[既有构造](../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)已经从两种响应都不存在开始，连接形成、占据位置、恢复捕获、实际捕获和同型复制。它也保留其他类型继承已修复位置的反例。因此本轮不能把「后果进入复制」再说成首次实现。
+[既有构造](../../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)已经从两种响应都不存在开始，连接形成、占据位置、恢复捕获、实际捕获和同型复制。它也保留其他类型继承已修复位置的反例。因此本轮不能把「后果进入复制」再说成首次实现。
 
-[旧选择分析](../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md)给过连续时间生成元的出生／损失公式及有限时域论证，但它明确不是 Lean 证明。本轮迁移的是其中**一次复制或计数不变事件的相对份额准则**。没有迁移死亡分母、连续时间过程、Dynkin 公式、严格有限时域概率下界或无限期演化结论。
+[旧选择分析](../../../history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md)给过连续时间生成元的出生／损失公式及有限时域论证，但它明确不是 Lean 证明。本轮迁移的是其中**一次复制或计数不变事件的相对份额准则**。没有迁移死亡分母、连续时间过程、Dynkin 公式、严格有限时域概率下界或无限期演化结论。
 
 新增的传递接口进一步分清：更多机会由某类模板获得，不等于后继中必有更多同类回应结构。原 native 规律的同型复制给出其中一个实际支路；允许传递改变结构的四格推广保持独立范围。native 中的两种类型、修复贡献、复制与同型传递在同一个既有事件过程内取得具体含义；四格统计接口则是明确的推广，尚未接成该过程的非忠实传递事件。两处都不预先设定独立主体、私人利益或外部适应度评判者。
 

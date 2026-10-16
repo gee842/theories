@@ -1,6 +1,6 @@
 # Checked event structure of formed regulation and material retention
 
-6 October 2026. This formalization checks the seven-event law in the [mathematical development](../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md). Its 32 new theorem declarations pass Lean 4.29.1 using `Std`. The [verification record](verification.json) separately records the existing root module compiled as a dependency.
+6 October 2026. This formalization checks the seven-event law in the [mathematical development](../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md). Its 32 new theorem declarations pass Lean 4.29.1 using `Std`. The [verification record](verification.json) separately records the existing root module compiled as a dependency.
 
 | Source | Checked claim |
 |---|---|
@@ -39,4 +39,4 @@ Run `python3 check.py` in this directory. The script explicitly selects `lean +l
 
 The script rejects proof placeholders, custom axioms, unsafe declarations and native decision shortcuts. Every new named theorem must have a corresponding axiom audit. The compiler logs and source/compiler hashes are retained in [verification.json](verification.json) and [verification/](verification/). Standard Lean foundational dependencies are disclosed; they are not new physical premises. Compilation must finish without warnings, sources must remain unchanged during verification, and all audits must pass.
 
-The checker writes only this directory's verification record and logs. Its successful result certifies the formal deductions, not the Python implementation, probability bounds, empirical chemistry, useful-variant selection, learning or the whole unified foundation. These limits and the new connection to the root are recorded in the [formal scope note](../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md).
+The checker writes only this directory's verification record and logs. Its successful result certifies the formal deductions, not the Python implementation, probability bounds, empirical chemistry, useful-variant selection, learning or the whole unified foundation. These limits and the new connection to the root are recorded in the [formal scope note](../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md).

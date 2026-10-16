@@ -88,7 +88,7 @@ Conversely, **once typed elementary transitions are supplied, histories and thei
 
 It also clarifies unity. Diverse mechanisms can share one compositional interface while retaining distinct laws, histories and centers. A common notation alone would provide little explanatory gain. The substantive test is whether information, resource use, admissible responses and actual successors pass consistently through the same interface and impose useful constraints on connected mechanisms.
 
-The [first regulation gate](../../2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md) is a present example: a specified event law connects damage, paid formation, repair, renewed fuel access and additional copying. Its trace bridge explains how those mechanism-level claims enter the root interface. The event law and chemistry remain supplied, and competing-variant formation remains the next interface. A substrate result must preserve this progression rather than replace it with static encoding.
+The [first regulation gate](../../../history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md) is a present example: a specified event law connects damage, paid formation, repair, renewed fuel access and additional copying. Its trace bridge explains how those mechanism-level claims enter the root interface. The event law and chemistry remain supplied, and competing-variant formation remains the next interface. A substrate result must preserve this progression rather than replace it with static encoding.
 
 ## 5. Premise ledger and possible revisions
 

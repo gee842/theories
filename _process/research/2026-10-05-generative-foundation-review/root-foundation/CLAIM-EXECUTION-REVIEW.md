@@ -6,7 +6,7 @@
 
 ## What the interface can add
 
-The existing [finite decision results N1–N5](../../2026-10-05-revisable-concern/settlement/normative/decision-math.md), [permission results T13–T14](HUIGEN-REASON-TRANSPORT.md#t13-exact-sufficiency-for-permission-and-for-choosing), [formal core F8](../../../../theories/becoming/chapters/FORMAL-CORE.md#f8-exact-finite-feasibility-under-actual-information), and [semantic-action contract](SEMANTIC-ACTION-REVIEW.md) already establish the relevant finite order, information, feasibility and interpretation results. An intersection-defined feasible set would not be a new derivation of an effective response.
+The existing [finite decision results N1–N5](../../../history/2026-10-05-revisable-concern/settlement/normative/decision-math.md), [permission results T13–T14](HUIGEN-REASON-TRANSPORT.md#t13-exact-sufficiency-for-permission-and-for-choosing), [formal core F8](../../../../theories/becoming/chapters/FORMAL-CORE.md#f8-exact-finite-feasibility-under-actual-information), and [semantic-action contract](SEMANTIC-ACTION-REVIEW.md) already establish the relevant finite order, information, feasibility and interpretation results. An intersection-defined feasible set would not be a new derivation of an effective response.
 
 This study instead joins verification predicates to the unchanged, actually paid protection law. Its useful distinction is between a certificate about a fixed episode and protection throughout a longer history. The mathematical ledger is verification state. Its existence does not construct a physical archive, monitor, selector or evaluative motive. Normative admission and legitimate authority remain supplied.
 

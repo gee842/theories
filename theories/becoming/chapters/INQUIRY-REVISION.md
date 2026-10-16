@@ -25,7 +25,7 @@ The original admission and response laws now use that changed parameter. Another
 | Existing assessment completed | 4 | 9 | 36 |
 | Existing response completed | 4 | 1 | 46 |
 
-Material remains sixty-eight. The suffix consumes thirteen units of available energy, reducing its retained total from eighty-eight to seventy-five. It introduces no further teaching depletion. The earlier depletion is not erased or redescribed; an actual later response changes a modeled condition of further activity. The [continuation corollary](../../../_process/research/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md) identifies the independent correspondence needed to connect that change to a particular activity's continuation.
+Material remains sixty-eight. The suffix consumes thirteen units of available energy, reducing its retained total from eighty-eight to seventy-five. It introduces no further teaching depletion. The earlier depletion is not erased or redescribed; an actual later response changes a modeled condition of further activity. The [continuation corollary](../../../_process/history/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md) identifies the independent correspondence needed to connect that change to a particular activity's continuation.
 
 ## What makes this evidence-dependent revision
 

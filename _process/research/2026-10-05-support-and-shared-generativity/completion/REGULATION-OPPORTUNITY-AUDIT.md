@@ -73,7 +73,7 @@ Consequently, as \(h\downarrow0\),
 
 Meanwhile the first-order differences of expected free fuel and activity are respectively \(-k\Delta\theta FDYh\) and \(+k\Delta\theta FDYh\). These are compatible observations. They do not define a single ordering of the state. Formula (5) is not an assertion that W captures every useful function or that its finite-time expectation is globally monotone in \(\theta\).
 
-The expansions are valid locally for this countable-state process: material is bounded, the total hazard is affine-bounded in F, and W can grow by at most the number of captured packets. The fixed-depth jump expansion used in the [lag proof](REGULATION-LAG.md), together with the corresponding moment bound from linear pure-birth domination, controls the remainder for this linear observable.
+The expansions are valid locally for this countable-state process: material is bounded, the total hazard is affine-bounded in F, and W can grow by at most the number of captured packets. The fixed-depth jump expansion used in the [lag proof](../../../history/2026-10-05-support-and-shared-generativity/completion/REGULATION-LAG.md), together with the corresponding moment bound from linear pure-birth domination, controls the remainder for this linear observable.
 
 ## 2. A restricted monotonicity theorem that makes the distinction exact
 
@@ -111,7 +111,7 @@ The theorem does not cover the original full network: R is automatically committ
 
 ## 3. What the supplied inhibitor changes—and what it does not
 
-For the [G/GF/YG network](PHYSICAL-REGULATION.md), write
+For the [G/GF/YG network](../../../history/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-REGULATION.md), write
 
 \[
 L=Y+YG,\quad T=G+GF+YG,\quad U=F+GF,
@@ -161,7 +161,7 @@ This matters even for the work calculation. In the full G network,
 
 The new term is the change in the automatic construction hazard, since recycling sends \(RF\) to \((R+1)(F-1)\). Recycling can thereby expose newly available R to a costly G-building channel. A benefit obtained by suppressing that self-created burden would be a real comparison within the extension, but it would not establish that the original plant needed the inhibitor to solve an independent fuel-allocation problem.
 
-Neither (8) nor (10) proves that every regulator effect is harmful. The completed [negative comparison](REGULATION-REVIEW.md) remains the evidence for its declared cases. The present audit diagnoses a missing demonstrated opportunity, rather than deriving all those numerical inequalities from a single drift sign.
+Neither (8) nor (10) proves that every regulator effect is harmful. The completed [negative comparison](../../../history/2026-10-05-support-and-shared-generativity/completion/REGULATION-REVIEW.md) remains the evidence for its declared cases. The present audit diagnoses a missing demonstrated opportunity, rather than deriving all those numerical inequalities from a single drift sign.
 
 ## 4. Readiness is consequential, but needs a functional interpretation
 
@@ -184,7 +184,7 @@ If the intended benefit is preserving fuel for a *different* productive function
 
 ## 5. Where an actual opportunity appears in the response identity
 
-For a declared terminal joint assay f and the finite common-state construction of [Regulation response](REGULATION-RESPONSE.md), let \(u_0(s,z)=P_0(s)f(z)\). The exact change from modifying recycling intensity contains terms of the form
+For a declared terminal joint assay f and the finite common-state construction of [Regulation response](../../../history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RESPONSE.md), let \(u_0(s,z)=P_0(s)f(z)\). The exact change from modifying recycling intensity contains terms of the form
 
 \[
 \Delta J(z)\,[u_0(s,T_{\rm rec}z)-u_0(s,z)].

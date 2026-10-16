@@ -14,7 +14,7 @@ Recursive propagation is plausible where contribution affects an identified cont
 
 ## 2. What “the degenerative is selected out” can mean
 
-An activity unable to renew indispensable conditions may eventually cease. That existence constraint differs from a renewing variant increasing its share among alternatives. The [existing shared-return analysis](../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md) shows, under its specified law, that useful repair can increase total reproduction without increasing the repairer's expected frequency. Its historical analytical verification scope remains unchanged here.
+An activity unable to renew indispensable conditions may eventually cease. That existence constraint differs from a renewing variant increasing its share among alternatives. The [existing shared-return analysis](../../../history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md) shows, under its specified law, that useful repair can increase total reproduction without increasing the repairer's expected frequency. Its historical analytical verification scope remains unchanged here.
 
 Likewise, disappearance of a particular group does not establish disappearance of a trait it carried. Descendants, migrants, horizontal transmission or repeated formation may carry it elsewhere before the group fails. A relative winner can also disappear with every competitor: total collapse supplies no successful generative replacement. Long-run conditioning on histories that survive cannot establish that evolution generally reaches them or does so without severe losses.
 
@@ -34,7 +34,7 @@ Consider a set of connected sites in which renewing activity rebuilds support wh
 
 Closing migration can change the result, but closure is an actual relation with costs, not an entitlement automatically conferred by the whole. Partial coupling can also select a tolerable rate of damaging activity rather than eliminate it. Conversely, rapid mixing may carry renewing practices into failing sites. Migration therefore cannot receive a fixed favorable or unfavorable sign independent of what it transmits and reconstructs.
 
-Even strong shared exposure can arrive too late: all variants may lose their common support before a sustaining alternative establishes. The [earlier renewal-selection model](../../2026-10-04-integrated-evolution/selection-of-renewal.md) already preserves selection slowing as support disappears. Its current-return copying mechanism is supplied, not universal rationality. Together these cases oppose inevitability while preserving the proposed constructive route through actual coupling.
+Even strong shared exposure can arrive too late: all variants may lose their common support before a sustaining alternative establishes. The [earlier renewal-selection model](../../../history/2026-10-04-integrated-evolution/selection-of-renewal.md) already preserves selection slowing as support disappears. Its current-return copying mechanism is supplied, not universal rationality. Together these cases oppose inevitability while preserving the proposed constructive route through actual coupling.
 
 ## 5. New test: does restored recurrence determine who forms successors?
 

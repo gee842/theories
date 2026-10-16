@@ -16,7 +16,7 @@ This is an account of operational significance at the stated material scale: bei
 
 ## Source configuration and differentiated activity
 
-The [original seven-event account](../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md) represents intact and damaged conditions of the same site through `C + D = N`. Damaged-site encounters participate in fabrication and repair. Repair removes a damaged-site reactant and restores capture access. Its already preserved source-exhaustion reversal shows that this local restoration does not guarantee net benefit to every other activity.
+The [original seven-event account](../../../history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md) represents intact and damaged conditions of the same site through `C + D = N`. Damaged-site encounters participate in fabrication and repair. Repair removes a damaged-site reactant and restores capture access. Its already preserved source-exhaustion reversal shows that this local restoration does not guarantee net benefit to every other activity.
 
 The new proofs use the existing sixteen-event [FormedSelection law](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean), connected to the original `Generative.Process` and `Trace` through [FormationRoot](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean). It represents the site's two conditions by `intact`, an actual resident, precursor inventory, common fuel, a one-unit local fuel store, and finite incident source. It is a conditional successor development of the earlier regulation work, not an exact kinetic identification of the two laws.
 

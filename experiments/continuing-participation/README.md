@@ -7,7 +7,7 @@ An exploratory finite model with two half-owners, publicly revealed repair burde
 - [Research synthesis and exact calculations](../../sources/15-codex-theory-conversations/2026-10-05-continuing-participation-and-funded-correction.md)
 - [Declared protocol](PROTOCOL.md), [configuration](config.json), [implementation](model.py), [independent tests](test_model.py)
 - [All 92 comparisons and selected policy/refusal witnesses](results-v1/results.json), [numerical checks](results-v1/checks.json), [input manifest](results-v1/manifest.json), [completed test report](results-v1/test-report.txt)
-- [Mathematical review](../../_process/research/2026-10-04-integrated-evolution/continuing-participation-math.md), [implementation audit](../../_process/research/2026-10-04-integrated-evolution/continuing-participation-design-review.md), [primary literature](../../_process/research/2026-10-04-integrated-evolution/continuing-participation-prior-art.md)
+- [Mathematical review](../../_process/history/2026-10-04-integrated-evolution/continuing-participation-math.md), [implementation audit](../../_process/history/2026-10-04-integrated-evolution/continuing-participation-design-review.md), [primary literature](../../_process/history/2026-10-04-integrated-evolution/continuing-participation-prior-art.md)
 
 ## Implemented choices
 

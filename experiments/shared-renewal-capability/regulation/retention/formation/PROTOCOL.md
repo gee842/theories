@@ -1,6 +1,6 @@
 # Formation and differential return under one law
 
-6 October 2026. AI-authored protocol saved before the full numerical implementation. The fixture and positive path were selected analytically, not fit to experimental data. This extends the [paid response law](../README.md) and the [local-access selection analysis](../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md).
+6 October 2026. AI-authored protocol saved before the full numerical implementation. The fixture and positive path were selected analytically, not fit to experimental data. This extends the [paid response law](../README.md) and the [local-access selection analysis](../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md).
 
 **Missing interface:** the earlier formation model supplied one response type, while the selection model supplied two existing seeds. This construction must form alternative types, associate them with a capture site, repair it and distribute the resulting support without installing a new contest preparation or resetting resources.
 

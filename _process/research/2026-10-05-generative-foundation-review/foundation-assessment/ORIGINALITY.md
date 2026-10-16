@@ -1,6 +1,6 @@
 # Scientific originality and the strongest prior competitors
 
-Assessment date: 5 October 2026. Prepared for the specialist review of *Alignment as the Reproduction of Its Conditions*. This is an adversarial, claim-level literature assessment, not a systematic review or a certification of priority. It examines the [root foundation](../root-foundation/ROOT-FOUNDATION.md), its three development companions, and the [integrated theory](../final-synthesis/INTEGRATED-THEORY.md). Earlier documents are preserved.
+Assessment date: 5 October 2026. Prepared for the specialist review of *Alignment as the Reproduction of Its Conditions*. This is an adversarial, claim-level literature assessment, not a systematic review or a certification of priority. It examines the [root foundation](../root-foundation/ROOT-FOUNDATION.md), its three development companions, and the [integrated theory](../../../history/2026-10-05-specialist-dossier/final-synthesis/INTEGRATED-THEORY.md). Earlier documents are preserved.
 
 ## 1. Answer to the originality question
 

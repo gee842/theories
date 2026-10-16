@@ -1,6 +1,6 @@
 # Paid control of the allocation that renews access to support
 
-5 October 2026. AI-assisted mathematical development for Ren. This proposes an explicitly different binding action in the existing shared-renewal reaction network. The original [G/GF/YG model](PHYSICAL-REGULATION.md), its protocol, and its [negative results](REGULATION-REVIEW.md) remain unchanged.
+5 October 2026. AI-assisted mathematical development for Ren. This proposes an explicitly different binding action in the existing shared-renewal reaction network. The original [G/GF/YG model](../../../history/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-REGULATION.md), its protocol, and its [negative results](../../../history/2026-10-05-support-and-shared-generativity/completion/REGULATION-REVIEW.md) remain unchanged.
 
 **Result.** A regulator that blocks Y from consuming the last precursor for C can preserve a real productive opportunity: restoring C and capturing a fresh packet while Y remains. This is first proved locally, and then as a paid net comparison from a common state with no regulator. Construction consumes one R and one F; finite binding, dissociation, wear and competing reactions are included. A finite parameter class and deadline give a strictly higher joint delivery probability than the absent-regulator process.
 

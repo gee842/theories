@@ -40,7 +40,7 @@ The failure is informative: causal differences become relevant to a representati
 |---|---|
 | [Formation of parts and selector assembly](MATERIAL-SELECTOR-COMPOSITION.md) | Actual typed parts, paid construction and inherited fuel; the joining recipes remain supplied. |
 | [Formation and replacement of updater mechanisms](UPDATER-FORMATION.md) | The mechanism's effect on revision and its material history; its recyclable slots must not silently become the other model's consumed parts. |
-| [Acquired teaching and prediction](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) | The complete acquired evidence, written memory, timing and actual sampling conditions. |
+| [Acquired teaching and prediction](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) | The complete acquired evidence, written memory, timing and actual sampling conditions. |
 | This representation result | A proved world mapping together with observation and memory compatibility; budget and probability claims retain separate premises. |
 
 This result does not claim those implementations are already one process. It gives the next construction a precise test for whether its descriptions agree about the learner. A one-way simulation or a restriction to particular histories can also be useful, provided it is stated at that weaker scope.

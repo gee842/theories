@@ -1,8 +1,8 @@
 # Exact checks of action-dependent continuations
 
-6 October 2026. This supports the existing [settlement study](../../../_process/research/2026-10-05-revisable-concern/settlement/README.md), specifically **continued protection when present action changes future opportunities or power**. These are authored mathematical examples, not new observations, a learned-agent benchmark or a full extension of the settlement's strategic economy.
+6 October 2026. This supports the existing [settlement study](../../../_process/history/2026-10-05-revisable-concern/settlement/README.md), specifically **continued protection when present action changes future opportunities or power**. These are authored mathematical examples, not new observations, a learned-agent benchmark or a full extension of the settlement's strategic economy.
 
-The [mathematical note](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md) states the general conditional verification results. The [independent review](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md) and [source/identification audit](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md) distinguish standard mathematics, finite checks and application premises.
+The [mathematical note](../../../_process/history/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md) states the general conditional verification results. The [independent review](../../../_process/history/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md) and [source/identification audit](../../../_process/history/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md) distinguish standard mathematics, finite checks and application premises.
 
 ## What is checked
 

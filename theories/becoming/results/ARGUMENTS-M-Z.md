@@ -205,7 +205,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/verification.json) · [model-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/model-verification.json) · [FORMED-VARIANT-SELECTION-INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) · [CONSTRUCTED-LEARNING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/verification.json) · [model-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/model-verification.json) · [FORMED-VARIANT-SELECTION-INTEGRATION.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) · [CONSTRUCTED-LEARNING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-REVIEW.md)
 
 <a id="material-updater-composition"></a>
 ## 选择器与更新器共用同一材料历史 / Selectors and updaters sharing one material history
@@ -782,7 +782,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/README.md) · [RECEIPT-IDENTIFICATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md) · [PREDICTION-ACTION-REVIEW.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-REVIEW.md) · [CONSEQUENCE-TO-LEARNING-INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) · [TRANSFER-EVIDENCE-INTEGRATION.md](../../../_process/research/2026-10-05-concern-theory/TRANSFER-EVIDENCE-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/README.md) · [RECEIPT-IDENTIFICATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md) · [PREDICTION-ACTION-REVIEW.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-REVIEW.md) · [CONSEQUENCE-TO-LEARNING-INTEGRATION.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) · [TRANSFER-EVIDENCE-INTEGRATION.md](../../../_process/research/2026-10-05-concern-theory/TRANSFER-EVIDENCE-INTEGRATION.md)
 
 <a id="prediction-protocol"></a>
 ## 预测器的多事件学习协议 / The predictor’s multi-event learning protocol
@@ -937,7 +937,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/verification.json) · [REASON-PROTECTION-REVIEW.md](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md) · [FOUNDATION-COMPLETION-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md) · [REASON-PROTECTION-EVIDENCE.md](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/verification.json) · [REASON-PROTECTION-REVIEW.md](../../../_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md) · [FOUNDATION-COMPLETION-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md) · [REASON-PROTECTION-EVIDENCE.md](../../../_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md)
 
 <a id="recipient-correction"></a>
 ## 不覆盖其他位置的条件而修正帮助 / Correcting recipient action without overwriting other conditions
@@ -968,7 +968,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/verification.json) · [RECIPIENT-CORRECTION-REVIEW.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-REVIEW.md) · [RECIPIENT-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/verification.json) · [RECIPIENT-CORRECTION-REVIEW.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-REVIEW.md) · [RECIPIENT-CORRECTION-INTEGRATION.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-INTEGRATION.md)
 
 <a id="recipient-cue-grounding"></a>
 ## 外部社会线索与受益者行动 / External social cues and recipient-directed action
@@ -1181,7 +1181,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/verification.json) · [model-verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/model-verification.json) · [RECORDED-REASONS-REVIEW.md](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md) · [RECORDING-FIDELITY-INTEGRATION.md](../../../_process/research/2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/verification.json) · [model-verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/model-verification.json) · [RECORDED-REASONS-REVIEW.md](../../../_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md) · [RECORDING-FIDELITY-INTEGRATION.md](../../../_process/research/2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md)
 
 <a id="relations-across-scales"></a>
 ## 尺度之间的关系 / Relations across scales
@@ -1241,7 +1241,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ENDOGENOUS-CONTINUATION-REVIEW.md](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md) · [ENDOGENOUS-CONTINUATION-EVIDENCE.md](../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ENDOGENOUS-CONTINUATION-REVIEW.md](../../../_process/history/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md) · [ENDOGENOUS-CONTINUATION-EVIDENCE.md](../../../_process/history/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md)
 
 <a id="reward-learning-and-recipient-choice"></a>
 ## 奖励关联学习与受益者选择 / Reward association and recipient-directed choice
@@ -1361,7 +1361,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md) · [SELECTOR-REVISION-REVIEW.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md) · [SELECTOR-REVISION-REVIEW.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md)
 
 <a id="semantic-action-composition"></a>
 ## 保持行动所涉对象与命题 / Preserving recipient and proposition through action composition
@@ -1603,7 +1603,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/README.md) · [SUCCESSOR-LEARNING-REVIEW.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-REVIEW.md) · [SUCCESSOR-LEARNING-INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/README.md) · [SUCCESSOR-LEARNING-REVIEW.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-REVIEW.md) · [SUCCESSOR-LEARNING-INTEGRATION.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-INTEGRATION.md)
 
 <a id="sustained-living-judgment"></a>
 ## 持续的生活组织与共同实践判断 / Sustained living organization and collective practical judgment
@@ -1663,7 +1663,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [V73-INTEGRATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md) · [CONCERN-SETTLEMENT-INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md) · [CONCERN-AND-SYNTHESIS-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/CONCERN-AND-SYNTHESIS-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [V73-INTEGRATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md) · [CONCERN-SETTLEMENT-INTEGRATION.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md) · [CONCERN-AND-SYNTHESIS-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/CONCERN-AND-SYNTHESIS-REVIEW.md)
 
 <a id="system-individuation"></a>
 ## 系统怎样形成其边界与可能性 / Systems, constitutive relationships and possible change
@@ -2000,7 +2000,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md) · [UPDATER-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-REVIEW.md) · [CONSEQUENCE-TO-LEARNING-INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md) · [UPDATER-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-REVIEW.md) · [CONSEQUENCE-TO-LEARNING-INTEGRATION.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md)
 
 <a id="valuation-development"></a>
 ## 评价倾向怎样发展 / How valuation develops

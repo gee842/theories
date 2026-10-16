@@ -15,7 +15,7 @@ Recognizing only one context's otherwise unchanged evidence shortens mean lifeti
 - [Exact input snapshots](results/inputs), [SHA256 manifest](results/manifest.json).
 - [Initial development results](results-v1/results.json) with preserved inputs. Final revision adds explicit no-inquiry/no-proposal controls, guards retainer consistency, and moves one figure legend. Existing numerical cases are unchanged.
 - [Post-control results](results-v2/results.json) preserve the inputs before the final protocol wording clarification from capture to imposed agenda diversion. Calculation values are unchanged.
-- [Mathematical audit](../../_process/research/2026-10-04-integrated-evolution/inquiry-renewal-math.md), [design and implementation review](../../_process/research/2026-10-04-integrated-evolution/inquiry-renewal-design-review.md), [primary literature](../../_process/research/2026-10-04-integrated-evolution/inquiry-renewal-prior-art.md).
+- [Mathematical audit](../../_process/history/2026-10-04-integrated-evolution/inquiry-renewal-math.md), [design and implementation review](../../_process/history/2026-10-04-integrated-evolution/inquiry-renewal-design-review.md), [primary literature](../../_process/history/2026-10-04-integrated-evolution/inquiry-renewal-prior-art.md).
 
 ```sh
 cd experiments/inquiry-renewal

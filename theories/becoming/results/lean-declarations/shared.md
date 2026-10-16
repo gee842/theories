@@ -723,7 +723,7 @@ Imports: `GenerativeCore`, `FormedSelection`
 <details>
 <summary>ReasonReplay.lean — 128 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean) · [理论 / Theory](../../chapters/HUIGEN.md) · [研究 / Study](../../../../_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean) · [理论 / Theory](../../chapters/HUIGEN.md) · [研究 / Study](../../../../_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean`
 
@@ -1381,7 +1381,7 @@ Imports: `Std`, `GenerativeCore`, `FormedSelection`, `SelectorRevision`, `Update
 <details>
 <summary>RecipientCorrection.lean — 59 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean) · [研究 / Study](../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean`
 

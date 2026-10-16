@@ -1,6 +1,6 @@
 # Review of the conditional learning interface
 
-6 October 2026. Independent collaborating-AI assumption and counterexample review for the named connection **accessible consequence differences → retained selector change**, joined to support accounting from the existing formed-selection law. This is an internal research review, not external peer review or empirical validation. The companion concrete [selector-revision review](../../2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md) and [comparator contract](../../2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-COMPARATORS.md) belong to a separate ongoing mechanism study; this review neither replaces nor edits them.
+6 October 2026. Independent collaborating-AI assumption and counterexample review for the named connection **accessible consequence differences → retained selector change**, joined to support accounting from the existing formed-selection law. This is an internal research review, not external peer review or empirical validation. The companion concrete [selector-revision review](../../../history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md) and [comparator contract](../../../history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-COMPARATORS.md) belong to a separate ongoing mechanism study; this review neither replaces nor edits them.
 
 **Status: accepted within the stated conditional scope.** The three new source modules, support companion, package README and canonical interpretation were reviewed. The recorded fresh Lean build passes, and an independent hash check confirms that every recorded source, compiler log, checker, toolchain file and compiler binary matches the verification record. The result is a necessary information-flow condition and explicit constructive examples under a supplied law. It does not derive learning, improvement or useful revision from difference alone.
 
@@ -55,7 +55,7 @@ The concurrent [formation account module](../../../../experiments/shared-renewal
 
 ## 4. Identification and comparator contract
 
-The [existing primary-source evidence audit](../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md) already separates induction, passive material persistence, altered future responsiveness and selective survival. This review reuses that audited distinction; it makes no new empirical claim, imports no source data and does not assert that any surveyed biological system realizes the new Lean controller.
+The [existing primary-source evidence audit](../../../history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md) already separates induction, passive material persistence, altered future responsiveness and selective survival. This review reuses that audited distinction; it makes no new empirical claim, imports no source data and does not assert that any surveyed biological system realizes the new Lean controller.
 
 A future test needs the following independently specified measurements and comparisons. These are proposed identification obligations, not reported experiments or a preregistration.
 

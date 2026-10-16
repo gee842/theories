@@ -20,7 +20,7 @@ The following capsules contain the paper-specific findings. Subsequent tests and
 
 These different protocols are not a failed replication of each other. Together they sharpen the question: **what has changed that accounts for the later response?** A larger retained stock, altered response production and a replaced input–action relation are different possible answers. Neither better performance nor the word “memory” settles which one occurred. Retained protective material can be a genuine acquired change in effective organization without establishing the stronger acquisition of a revised rule.
 
-The [earlier evidence note](../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md) supplies the complementary physical-feedback and survival-selection comparisons. Its mechanisms must not be concatenated with these findings into one observed complete lineage. No further literature branch is needed for this distinction.
+The [earlier evidence note](../../../history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md) supplies the complementary physical-feedback and survival-selection comparisons. Its mechanisms must not be concatenated with these findings into one observed complete lineage. No further literature branch is needed for this distinction.
 
 ## A bounded causal comparison
 

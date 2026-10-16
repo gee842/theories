@@ -99,7 +99,7 @@
     "evidence": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/verification.json",
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/model-verification.json",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-REVIEW.md"
     ],
     "source_sha256": "8098efca213f4e5ccdd5565a39390521d796809eae3d0baf9e07a9fa6d617804",
@@ -646,8 +646,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification.json",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/README.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-REVIEW.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md",
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-REVIEW.md",
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md",
       "_process/research/2026-10-05-concern-theory/TRANSFER-EVIDENCE-INTEGRATION.md"
     ],
     "source_sha256": "fc657d385f274d98e709045a5621f866cc33f65ff3acdbbd6a1a8d04f57a4df4",
@@ -780,9 +780,9 @@
     ],
     "evidence": [
       "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/verification.json",
-      "_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md",
+      "_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md",
-      "_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md"
+      "_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md"
     ],
     "source_sha256": "cc4e93cc518ee25309efaba1e41c9e43ac9a2009569359149f5317904268bd9f",
     "status_code": "conditional-verified"
@@ -807,8 +807,8 @@
     ],
     "evidence": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/verification.json",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-REVIEW.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-INTEGRATION.md"
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-REVIEW.md",
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-INTEGRATION.md"
     ],
     "source_sha256": "bd940255446ae7335ae589298afc3acbedbec034a5415a277eb81fbc9622b8bc",
     "status_code": "conditional-verified"
@@ -995,7 +995,7 @@
     "evidence": [
       "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/verification.json",
       "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/model-verification.json",
-      "_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md",
+      "_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md",
       "_process/research/2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md"
     ],
     "source_sha256": "ca09048d33d693f254773c2b17d5a3f0fb893ea7f6ad5d95985c093001499f32",
@@ -1058,8 +1058,8 @@
     "next_en": "Ongoing: endogenous continuation and warranted evaluation. Proposed: compare full-path strategies under changed power, support and ends.",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
-      "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md"
+      "_process/history/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "_process/history/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md"
     ],
     "source_sha256": "69eaca6af6e1c9a6c6ded10b48e008eeb0585adfa61a84f630dfcd9823cb7326",
     "status_code": "conditional-result"
@@ -1158,7 +1158,7 @@
     "evidence": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/verification.json",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md"
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md"
     ],
     "source_sha256": "d7fe22d758c16c058ad663bd49abb110d001f90aefa0a6dc34f74b86880c69e0",
     "status_code": "conditional-verified"
@@ -1370,8 +1370,8 @@
     "evidence": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/verification.json",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/README.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-REVIEW.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-INTEGRATION.md"
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-REVIEW.md",
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-INTEGRATION.md"
     ],
     "source_sha256": "0ede6d0ff079d9571c405d189d5c709a8c08f37e89c1f7e357aea5944cce86a0",
     "status_code": "conditional-verified"
@@ -1423,8 +1423,8 @@
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md",
-      "_process/research/2026-10-05-repository-reconciliation/three-session-integration/CONCERN-AND-SYNTHESIS-REVIEW.md"
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md",
+      "_process/history/2026-10-05-repository-reconciliation/three-session-integration/CONCERN-AND-SYNTHESIS-REVIEW.md"
     ],
     "source_sha256": "201c86d4677e67f304bfd814e6bffcf0aa9f196ee89151ef9c1458ee030a3df7",
     "status_code": "reference"
@@ -1860,8 +1860,8 @@
     "evidence": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/verification.json",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-REVIEW.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md"
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-REVIEW.md",
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md"
     ],
     "source_sha256": "f72807e6377db4c56aae459c56a5e307f5fced7da3b9cc0065ca463af6b1e78f",
     "status_code": "conditional-verified"

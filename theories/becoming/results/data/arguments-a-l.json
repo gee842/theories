@@ -504,8 +504,8 @@
     "source_sha256": "586ecb51c727347f0f6734d5bc49ff5a7a8d1ce9958a81550fd3a1a0646e2a22",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md",
-      "_process/research/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md"
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md",
+      "_process/history/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md"
     ]
   },
   {
@@ -651,8 +651,8 @@
     "source_sha256": "036596893052fcc3fdaae82cb29156b6dfe193e5cc3b85ed117f13119b698479",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/MOTOR-LEARNING-COST-REVIEW.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md"
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/MOTOR-LEARNING-COST-REVIEW.md",
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md"
     ]
   },
   {
@@ -1028,7 +1028,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+      "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md"
     ]
   },
@@ -1121,8 +1121,8 @@
       "experiments/shared-renewal-capability/formal/ReserveTurnover.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md"
+      "_process/history/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md",
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md"
     ]
   },
   {
@@ -1143,7 +1143,7 @@
     "source_sha256": "e1e1e4f397d4ecb48d25960af6e0eb0884e6492d374a64fd604820f411d82d0c",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md",
+      "_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md",
       "experiments/constructed-correction/independent-game-check-results.json",
       "experiments/constructed-correction/independent-game-review.md"
     ]
@@ -1639,7 +1639,7 @@
     "source_sha256": "eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md",
+      "_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md",
       "experiments/joint-formation/independent-game-check-results.json",
       "experiments/joint-formation/README.md"
     ]
@@ -1662,7 +1662,7 @@
     "source_sha256": "78588893049559c99f82c7886c3e9edc87e45209b48a6b90d0eba616fcfdb949",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md",
+      "_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md",
       "experiments/joint-formation/joint-math-checks.json"
     ]
   },
@@ -1684,7 +1684,7 @@
     "source_sha256": "27079b93caf032b567b1b05f07ae4be9627da55ededfde539ffe688336aced48",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md"
+      "_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md"
     ]
   },
   {
@@ -1705,7 +1705,7 @@
     "source_sha256": "cd9b707af3d283414dac808ebd8e7a57f4f42b8522a728783734302c09d82972",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md"
+      "_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md"
     ]
   },
   {
@@ -1764,7 +1764,7 @@
     ],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-INTERFACE-REVIEW.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md"
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md"
     ]
   },
   {
@@ -1787,8 +1787,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/ROUTE-REVISION-REVIEW.md",
-      "_process/research/2026-10-05-support-and-shared-generativity/completion/ROUTE-REVISION-INTEGRATION.md"
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/ROUTE-REVISION-REVIEW.md",
+      "_process/history/2026-10-05-support-and-shared-generativity/completion/ROUTE-REVISION-INTEGRATION.md"
     ]
   },
   {

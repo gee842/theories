@@ -6,7 +6,7 @@
 
 Decompose the negative construction effect in the existing network at g=8, H=3, original profile (1,1,1): recycling and C assembly have occurred, at least one free fuel packet remains, and productive material A remains. Retain all supplied rates, material N=3 and the original zero-regulator preparation. No parameters or reactions are tuned.
 
-Use the exact finite-generator identity in the mathematical [response note](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RESPONSE.md). The changed law has kappa=1, alpha=mu=4. The conditional baseline has kappa=0 but retains alpha=mu=4 on states containing G. It agrees with the absent-regulator arm from the initial zero-G preparation, while supplying the correct hypothetical conditional futures after construction. Both generators use the same closed responsive state graph, including capped assay flags and total-packet overflow.
+Use the exact finite-generator identity in the mathematical [response note](../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RESPONSE.md). The changed law has kappa=1, alpha=mu=4. The conditional baseline has kappa=0 but retains alpha=mu=4 on states containing G. It agrees with the absent-regulator arm from the initial zero-G preparation, while supplying the correct hypothetical conditional futures after construction. Both generators use the same closed responsive state graph, including capped assay flags and total-packet overflow.
 
 The local contribution at time t and augmented state z is
 

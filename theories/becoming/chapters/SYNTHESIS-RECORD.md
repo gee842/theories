@@ -29,7 +29,7 @@ The new core includes a complete proof chain for its declared mathematical class
 
 ## Review and corrections
 
-Three parallel readers reviewed mathematics, inquiry and evidence, and relational direction and correction. They then examined the main synthesis and proof appendix. Their notes are preserved under the repository's [_process research record](../../../_process/research/2026-10-05-unified-theory/). This is independent reconstruction by collaborating AI agents, not independent human peer review.
+Three parallel readers reviewed mathematics, inquiry and evidence, and relational direction and correction. They then examined the main synthesis and proof appendix. Their notes are preserved under the repository's [_process research record](../../../_process/history/2026-10-05-unified-theory/). This is independent reconstruction by collaborating AI agents, not independent human peer review.
 
 The reviews produced substantive corrections:
 
@@ -127,9 +127,9 @@ The joint-existence and renewable-implementation question is therefore condition
 
 ## Completed revisable-concern settlement
 
-The later [settlement](REVISABLE-CONCERN-SETTLEMENT.md) places resource-dependent audit, rooted reason admission, selective retraction, strategic protection, and successor reconstruction in one game. The [accepted contribution review](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md) records both the achieved conditional result and the remaining interfaces. The positive root, sound finite audit, known contexts, commercial return, attack bounds, and reserve conditions are explicit premises. A review exposed a cheaper-superset gate counterexample; the final theorem adds monotone prices and a specified tie rule. Its six-episode witness records two actual harms before or outside current admission rather than treating unrecognized patients as unharmed.
+The later [settlement](REVISABLE-CONCERN-SETTLEMENT.md) places resource-dependent audit, rooted reason admission, selective retraction, strategic protection, and successor reconstruction in one game. The [accepted contribution review](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md) records both the achieved conditional result and the remaining interfaces. The positive root, sound finite audit, known contexts, commercial return, attack bounds, and reserve conditions are explicit premises. A review exposed a cheaper-superset gate counterexample; the final theorem adds monotone prices and a specified tie rule. Its six-episode witness records two actual harms before or outside current admission rather than treating unrecognized patients as unharmed.
 
-Separate results cover construction of a feature within a finite supplied grammar and decisions under incomplete ethical agreement. Neither unrestricted new-reason discovery nor automatic composition of the ethical filter with the strategic equilibrium is proved. The evidence audit reanalyzes earlier AI outputs, adds zero observations, and includes a conventional complete-report learner that solves the fixtures. The proposed human study remains draft, unrun, and unregistered. The [study record](../../../_process/research/2026-10-05-revisable-concern/settlement/README.md) retains the proofs, repairs, and checks; the navigation reconciliation did not rerun them.
+Separate results cover construction of a feature within a finite supplied grammar and decisions under incomplete ethical agreement. Neither unrestricted new-reason discovery nor automatic composition of the ethical filter with the strategic equilibrium is proved. The evidence audit reanalyzes earlier AI outputs, adds zero observations, and includes a conventional complete-report learner that solves the fixtures. The proposed human study remains draft, unrun, and unregistered. The [study record](../../../_process/history/2026-10-05-revisable-concern/settlement/README.md) retains the proofs, repairs, and checks; the navigation reconciliation did not rerun them.
 
 ## Remaining explanatory obligations at the settlement checkpoint
 
@@ -139,7 +139,7 @@ The broad causal program asks how effective responsiveness forms, renews its sup
 
 ## Navigation reconciliation, 6 October 2026
 
-The [concern and synthesis review](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/CONCERN-AND-SYNTHESIS-REVIEW.md) found the former `fo` workspace's substantive contribution already preserved. This pass labels the earlier formation frontiers as historical, links their conditional resolutions, and adds the settlement's scope and evidence status to the unified reading routes. It does not replace source snapshots, promote a new theorem, complete the prospective broader study, or count preservation checks as scientific replication.
+The [concern and synthesis review](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/CONCERN-AND-SYNTHESIS-REVIEW.md) found the former `fo` workspace's substantive contribution already preserved. This pass labels the earlier formation frontiers as historical, links their conditional resolutions, and adds the settlement's scope and evidence status to the unified reading routes. It does not replace source snapshots, promote a new theorem, complete the prospective broader study, or count preservation checks as scientific replication.
 
 ## Current derivation and evidence synthesis, 6 October 2026
 

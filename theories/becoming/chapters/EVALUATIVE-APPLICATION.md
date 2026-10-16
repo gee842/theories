@@ -90,7 +90,7 @@ Both applications preserve the distinction between an action warranted independe
 
 ## Uncertainty must retain the right claim
 
-The existing [finite decision account](../../../_process/research/2026-10-05-revisable-concern/settlement/normative/decision-math.md) retains factual and normative interpretations with documented grounds. Its robust remainder contains actions not excluded by the declared comparisons. Membership does not mean that every retained interpretation licenses that action, or that it is uniquely right.
+The existing [finite decision account](../../../_process/history/2026-10-05-revisable-concern/settlement/normative/decision-math.md) retains factual and normative interpretations with documented grounds. Its robust remainder contains actions not excluded by the declared comparisons. Membership does not mean that every retained interpretation licenses that action, or that it is uniquely right.
 
 For this application, report a stronger guarantee separately when it is requested: let \(L_m\) be the actions licensed by interpretation \(m\), including its authority and comparison premises. For a nonempty, justified retained set \(M\), an action licensed in every retained interpretation belongs to
 
@@ -187,7 +187,7 @@ The proof's currentness is relative to the initialized reader context; it adds n
 
 ## From acquired understanding to warranted, revisable choice
 
-The positive connection can now be stated without deriving moral worth from a learned coefficient. **Independently justified reasons establish what deserves a response; acquired understanding establishes which available response serves those reasons; a sound comparison and an effective choice mechanism make that judgment consequential.** The [ethical foundation](ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions) and [normative argument](../../../_process/research/2026-10-05-revisable-concern/settlement/normative/FOUNDATION.md) defend subject-relative harm, relevant consistency, agency and answerability. These are substantive philosophical premises supplied to the physical models, with defended consequences; they are not arbitrary rewards or deductions from persistence alone.
+The positive connection can now be stated without deriving moral worth from a learned coefficient. **Independently justified reasons establish what deserves a response; acquired understanding establishes which available response serves those reasons; a sound comparison and an effective choice mechanism make that judgment consequential.** The [ethical foundation](ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions) and [normative argument](../../../_process/history/2026-10-05-revisable-concern/settlement/normative/FOUNDATION.md) defend subject-relative harm, relevant consistency, agency and answerability. These are substantive philosophical premises supplied to the physical models, with defended consequences; they are not arbitrary rewards or deductions from persistence alone.
 
 The conditional argument has four steps:
 

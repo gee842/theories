@@ -171,7 +171,7 @@ Therefore three levels must remain distinct:
 2. Equivalent sets of all attainable response profiles under a specified consequence interface.
 3. Equivalent laws under each correspondingly labeled intervention or policy, including required action and cost traces.
 
-The canonical response quotient in [the primary foundation](../OPTIMAL-FOUNDATION.md) is based on declared labeled response questions. The capability set is valuable for action and alignment, but cannot replace that stronger predictive contract while retaining all its conclusions.
+The canonical response quotient in [the primary foundation](../../../history/2026-10-05-specialist-dossier/OPTIMAL-FOUNDATION.md) is based on declared labeled response questions. The capability set is valuable for action and alignment, but cannot replace that stronger predictive contract while retaining all its conclusions.
 
 ## 6. What follows for truth, reasonableness, and universality
 

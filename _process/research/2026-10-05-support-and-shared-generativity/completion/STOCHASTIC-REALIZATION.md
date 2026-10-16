@@ -1,6 +1,6 @@
 # A declared mesoscopic realization of shared renewal
 
-AI-authored formal development, 5 October 2026, continuing Ren's supporting-condition research. This document supplies a stochastic model for the [shared renewal equations](../outputs/shared-generative-direction-mathematics.md), with an explicit event repertoire, accounting identities, and a scoped absorption theorem. It is a **declared mesoscopic realization, not an identified physical theory**. The event laws, packet size, reaction capabilities, and source are assumptions; they have not been derived uniquely from the deterministic drift or from fundamental physical laws.
+AI-authored formal development, 5 October 2026, continuing Ren's supporting-condition research. This document supplies a stochastic model for the [shared renewal equations](../../../history/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction-mathematics.md), with an explicit event repertoire, accounting identities, and a scoped absorption theorem. It is a **declared mesoscopic realization, not an identified physical theory**. The event laws, packet size, reaction capabilities, and source are assumptions; they have not been derived uniquely from the deterministic drift or from fundamental physical laws.
 
 The explanatory state includes material forms, their common usable-energy reserve, and their relation to incident support. No individual's fitness or welfare is taken as a substitute for this joint state.
 
@@ -229,9 +229,9 @@ No universal directional conclusion follows. The positive catalytic contribution
 
 ## Sources and relation to the existing study
 
-- [Shared generative direction: mathematical companion](../outputs/shared-generative-direction-mathematics.md): the deterministic \(R,C,Y,D,E\) equations, their work-equivalent identity, invasion and coexistence results, capacity inclusion tests, and the separate conditional birth–death theorem.
-- [Shared generative direction: research report](../outputs/shared-generative-direction.md): the proposed direction, mechanism, and remaining reduction obligations.
-- [Renewing access to support: mathematical companion](../outputs/renewing-access-to-support-mathematics.md): the preceding endogenous-capture construction and inaccessible material boundary.
-- [Study index](../README.md): retained reports, verification artifacts, and source genealogy.
+- [Shared generative direction: mathematical companion](../../../history/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction-mathematics.md): the deterministic \(R,C,Y,D,E\) equations, their work-equivalent identity, invasion and coexistence results, capacity inclusion tests, and the separate conditional birth–death theorem.
+- [Shared generative direction: research report](../../../history/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction.md): the proposed direction, mechanism, and remaining reduction obligations.
+- [Renewing access to support: mathematical companion](../../../history/2026-10-05-support-and-shared-generativity/outputs/renewing-access-to-support-mathematics.md): the preceding endogenous-capture construction and inaccessible material boundary.
+- [Study index](../../../history/2026-10-05-support-and-shared-generativity/README.md): retained reports, verification artifacts, and source genealogy.
 
 This document adds a declared event realization and the scoped proof above. It records no empirical experiment, calibrated physical parameters, or completed derivation of capability-level transition rates.

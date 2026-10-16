@@ -10,7 +10,7 @@ The earlier confidence calculation presupposes that the retained evidence has th
 
 This construction supplies finite material capacity and a complete recording protocol under a declared assembly and sensing law. Its output is an actual retained word and the remaining physical stocks. A downstream count or certificate decoder may read that word. The construction does not also manufacture that decoder, establish the calibration of an arbitrary sensor, or create another center's role in evaluation.
 
-The study reuses the actual predecessor from [formed-variant selection](../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) and the unchanged [paid teacher](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/README.md). It complements the parallel formed prediction/action and generic protocol-composition studies. It does not identify their distinct material laws or inherit their probabilities.
+The study reuses the actual predecessor from [formed-variant selection](../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) and the unchanged [paid teacher](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/README.md). It complements the parallel formed prediction/action and generic protocol-composition studies. It does not identify their distinct material laws or inherit their probabilities.
 
 The confidence formula and its statistical guarantee are reused unchanged. The contribution is the constructed recording interface and its failure comparison, not a new estimation algorithm or evidence of superiority over conventional learning.
 

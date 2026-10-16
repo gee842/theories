@@ -17,6 +17,6 @@ PYTHONDONTWRITEBYTECODE=1 python3 compute.py
 PYTHONDONTWRITEBYTECODE=1 python3 certify.py
 ```
 
-Each command replaces its corresponding result record. The certifier also reads the frozen independent [reserve-bound record](../full-successor-critique/exact-check.json). It can take several minutes and reports progress. The original calculation and independent read-only reviews are described in the [review](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/FULL-SUCCESSOR-REVIEW.md).
+Each command replaces its corresponding result record. The certifier also reads the frozen independent [reserve-bound record](../full-successor-critique/exact-check.json). It can take several minutes and reports progress. The original calculation and independent read-only reviews are described in the [review](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/FULL-SUCCESSOR-REVIEW.md).
 
 Restoring free reserve does not restore an external source, renew all supplied apparatus, or guarantee future operation after the first successor. The existing finite-source seven-capture certificate cannot automatically be applied to this unrestricted event. Physical identification, reliable repeated operation and broad capability direction remain open.

@@ -4,8 +4,8 @@
 
 - [Canonical account](../../../../../../../../theories/becoming/chapters/RECORDED-REASONS.md)
 - [Protocol](PROTOCOL.md) and [freeze receipt](protocol-freeze.json)
-- [Mathematical/model companion](../../../../../../../../_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md)
-- [Independent review](../../../../../../../../_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md)
+- [Mathematical/model companion](../../../../../../../../_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md)
+- [Independent review](../../../../../../../../_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md)
 - [Lean source](formal/ReasonReplay.lean), [fresh-build checker](formal/check.py), [formal audit](formal/verification.json)
 - [Independent finite checker](check_model.py), [model verification](model-verification.json)
 - [Publication-freshness review provenance](development/publication-freshness-review/README.md)

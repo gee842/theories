@@ -4,7 +4,7 @@
 
 ## The positive connection already exists
 
-The [accepted acquired-applicability integration](../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) already closes this connection at its declared finite scope. The relevant implementation is [the existing applicability controller](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/model.py), not a hypothetical selector still to be added.
+The [accepted acquired-applicability integration](../../../history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) already closes this connection at its declared finite scope. The relevant implementation is [the existing applicability controller](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/model.py), not a hypothetical selector still to be added.
 
 The original sensory learner and first planner supply an acquired H and a pending first word. The continuation forms its contact and bounded applicability record before extracting the first packet. A faithfully acquired nonarrival at predicted reading one leaves complement and absent-transfer relations compatible. Both predict failure at another reading one; their predictions differ at reading zero. `select_next` reads this acquired family, computes H's answer for candidate words and selects the first word with predictions `{0,1}`. The implemented second encounter follows that word and acquires its actual consequence. In the primary case it also transfers the remaining packet; there is no separate third use.
 

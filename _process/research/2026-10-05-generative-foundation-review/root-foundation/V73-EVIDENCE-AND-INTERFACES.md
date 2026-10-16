@@ -122,7 +122,7 @@ Its philosophical interface remains explicit: warranted patient significance →
 [markets]: ../../../../theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md
 [market-math]: ../../../../theories/becoming/chapters/MARKET-DYNAMICS-MATH.md
 [market-identification]: ../foundation-assessment/MARKET-IDENTIFICATION.md
-[shared-return]: ../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md
+[shared-return]: ../../../history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md
 [joint]: ../../../../theories/becoming/chapters/JOINT-FORMATION.md
 [joint-prior-art]: ../../../../theories/becoming/chapters/JOINT-PRIOR-ART.md
 [settlement]: ../../../../theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md

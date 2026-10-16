@@ -93,7 +93,7 @@ For example, let an actual completed generation begin with route counts \(N_F,N_
 
 This is an elementary count identity for actual daughter numbers. With no changes and positive initial counts it reduces to more completed daughters per F donor than per U donor. Replacing counts by expected counts gives a ratio of expected masses, **not** the expected realized frequency or fixation probability. Parent survival, variable population sizes and repeated generations need their own laws.
 
-The local-copying link is substantive: if recipient production instead finances templates drawn from an unrelated common pool, the donor whose action produced support need not become more common. Existing [practice-transmission work](../../2026-10-04-integrated-evolution/practice-transmission-model.md) already distinguishes productive inheritance from copying driven by a different signal. The proposed contribution is an actual connection to acquired recipient correspondence and paid inventories, not a new discovery that selection depends on inheritance.
+The local-copying link is substantive: if recipient production instead finances templates drawn from an unrelated common pool, the donor whose action produced support need not become more common. Existing [practice-transmission work](../../../history/2026-10-04-integrated-evolution/practice-transmission-model.md) already distinguishes productive inheritance from copying driven by a different signal. The proposed contribution is an actual connection to acquired recipient correspondence and paid inventories, not a new discovery that selection depends on inheritance.
 
 ## 6. Countercases required before acceptance
 

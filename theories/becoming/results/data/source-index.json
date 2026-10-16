@@ -564,7 +564,7 @@
       "title": "市场与互联网：生成、退化及纠正的实际历史",
       "local_links": [
         "_process/reading-notes/out-hb-02.md",
-        "_process/research/2026-10-05-generative-foundation-review/FOUNDATION.md",
+        "_process/history/2026-10-05-specialist-dossier/FOUNDATION.md",
         "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-EXTERNALITY-CORRECTION-CHECKS.json",
         "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-EXTERNALITY-CORRECTION-EDITS.json",
         "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION-CHECKS.json",
@@ -652,7 +652,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-IDENTIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md",
-        "_process/research/2026-10-05-generative-health/succession/DEPENDENCY-AND-RELEVANCE.md",
+        "_process/history/2026-10-05-generative-health/succession/DEPENDENCY-AND-RELEVANCE.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/independent-check.json",
@@ -921,7 +921,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-MATH.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean",
@@ -1157,7 +1157,7 @@
       "local_links": [
         "_process/BECOMING-WORKBOARD.md",
         "_process/RESULT-WORKFLOW.md",
-        "_process/research/2026-10-05-direction-frontier/math-note.md",
+        "_process/history/2026-10-05-direction-frontier/math-note.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
@@ -1742,7 +1742,7 @@
       "title": "Conditional universality: assumptions, counterexamples and identification",
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-SUPPORT-MATH.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
@@ -1793,7 +1793,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/ConsequenceInquiry.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/InquiryRelevance.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/verification.json",
@@ -1810,8 +1810,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/DISCRIMINATION-REVISION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean",
@@ -1839,7 +1839,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXT-SENSITIVE-CORRECTION-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-MATH.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/runs/20261006T090706Z-1791277626988980000/receipt.json",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/model.py",
@@ -1925,7 +1925,7 @@
       "title": "Independent review of the constructed learning interface",
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-MATH.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-REVIEW.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-REVIEW.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/ConstructedSelector.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/check_model.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/model-verification.json",
@@ -2184,7 +2184,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/VERIFICATION.json",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/build.py",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/continuing-dependency/verify.py",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeReconstructionRequirement.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/README.md",
@@ -2536,7 +2536,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEEPER-ROOT-GENEALOGY.md": {
       "title": "Deeper root: provenance, premise ledger and identification boundary",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
         "sources/07-shengsheng-buxi/ssbx-repo/docs-next/10_formal_形式/wen-substrate/03-operation-monism.md",
         "sources/07-shengsheng-buxi/ssbx-repo/docs-next/10_formal_形式/wen-substrate/07-claim.md",
@@ -2576,7 +2576,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-EDITS.json",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/DerivedInquiryCertificates.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketAdmissibility.lean",
@@ -2829,7 +2829,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/normative/decision-math.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/normative/decision-math.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean",
@@ -3858,7 +3858,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GOODNESS-SOURCES.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-WORLD-GROUNDING.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/SHARED-WORLD-IRRIGATION-NOTE.md",
-        "_process/research/2026-10-05-generative-health/ANSWER.md",
+        "_process/history/2026-10-05-generative-health/ANSWER.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/history-interface/verification.json",
@@ -4249,9 +4249,9 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-INTERFACE-REVIEW.md": {
       "title": "Review of the conditional learning interface",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-COMPARATORS.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-COMPARATORS.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/FeedbackExamples.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/verification.json",
@@ -4337,8 +4337,8 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-MATH.md": {
       "title": "良知演化方向的形式接口：后果、复制机会与回应结构的传递",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/evolution/README.md",
@@ -4358,8 +4358,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-ARGUMENT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/evolution/ConsequenceTransmission.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/evolution/verification.json",
         "sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md",
@@ -4453,7 +4453,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ORGANIZATION-PROOF.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ORGANIZATION-REVIEW.md",
         "_process/research/2026-10-05-support-and-shared-generativity/completion/ALLOCATION-CONTROL.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/JOINT-CAPABILITY-BRIDGE.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/JOINT-CAPABILITY-BRIDGE.md",
         "_process/research/2026-10-05-support-and-shared-generativity/completion/RESOURCE-ALLOCATION-BASELINE.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
@@ -4597,7 +4597,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ORGANIZATION-PROOF.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/TURNOVER-AND-CLOSURE.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecursiveSelectionInheritance.lean",
@@ -4823,7 +4823,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION-EDITS.json",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/DerivedInquiryCertificates.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketInquirySynthesis.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
@@ -5674,7 +5674,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/DEVELOPMENT-ATTEMPTS.json",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean",
@@ -5690,7 +5690,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-MECHANISM.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/nondual-applicability/DEVELOPMENT-ATTEMPTS.json",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean",
@@ -6268,7 +6268,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-REVISION-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-GENEALOGY.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-SOURCES.md",
-        "_process/research/2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md",
+        "_process/history/2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PretrainingEvidence.lean",
         "theories/becoming/chapters/NONDUAL-METHOD.md"
       ]
@@ -6641,7 +6641,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-MATH.md": {
       "title": "Shared generative support and its transmission across two levels",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecursiveGenerativeSelection.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecursiveGenerativeSelectionAudit.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recursive-generative-selection-verification/axioms.txt",
@@ -6734,7 +6734,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md": {
       "title": "生成关系的变化：当前可实现与最终可达 / Effective formation and eventual reachability",
       "local_links": [
-        "_process/research/2026-10-04-integrated-evolution/endogenous-renewal-math.md",
+        "_process/history/2026-10-04-integrated-evolution/endogenous-renewal-math.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
@@ -7743,7 +7743,7 @@
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-MATH.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/CHECK-CLARIFICATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md",
@@ -8086,8 +8086,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md",
         "experiments/motor-learning-cost/README.md",
         "experiments/valuation-development/README.md",
@@ -8372,10 +8372,10 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-DIRECTION-ARGUMENT.md",
-        "_process/research/2026-10-05-generative-health/ANSWER.md",
-        "_process/research/2026-10-05-generative-health/COUNTEREXAMPLES.md",
-        "_process/research/2026-10-05-generative-health/succession/CONTINUITY-AND-CORRECTION.md",
-        "_process/research/2026-10-05-generative-health/succession/SCORING-SCOPE-REVIEW.md",
+        "_process/history/2026-10-05-generative-health/ANSWER.md",
+        "_process/history/2026-10-05-generative-health/COUNTEREXAMPLES.md",
+        "_process/history/2026-10-05-generative-health/succession/CONTINUITY-AND-CORRECTION.md",
+        "_process/history/2026-10-05-generative-health/succession/SCORING-SCOPE-REVIEW.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
         "sources/06-zhishan/shengsheng/生生不息论v2/PLAN-v2.md",
@@ -8470,7 +8470,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-DIRECTION-ARGUMENT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-PURPOSE-MATH.md",
-        "_process/research/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md",
+        "_process/history/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/NondualCore.lean",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean",
@@ -8540,7 +8540,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-MATH.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-PURPOSE-MATH.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrectionHistory.lean",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-verification.json",
@@ -8823,13 +8823,13 @@
         "sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md"
       ]
     },
-    "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md": {
+    "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md": {
       "title": "Formal closure of acquired applicability",
       "local_links": [
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CHECKS.json",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CHECKS.json",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityProofs.lean",
@@ -8837,7 +8837,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/runs/20261006T090706Z-1791277626988980000/receipt.json"
       ]
     },
-    "_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-MATH.md": {
+    "_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-MATH.md": {
       "title": "Actual reasons, paid action and finite strategic selection",
       "local_links": [
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/PROTOCOL.md",
@@ -8850,15 +8850,15 @@
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/model.py"
       ]
     },
-    "_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md": {
+    "_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md": {
       "title": "Review of current reasons, funded protection and finite selection",
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/evidence/protocol.json",
-        "_process/research/2026-10-05-revisable-concern/settlement/evidence/report.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-MATH.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/evidence/protocol.json",
+        "_process/history/2026-10-05-revisable-concern/settlement/evidence/report.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-MATH.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md",
         "_process/research/2026-10-05-revisable-concern/settlement/formal/REPORT.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/README.md",
@@ -8871,7 +8871,7 @@
         "theories/becoming/chapters/REASON-PROTECTION.md"
       ]
     },
-    "_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md": {
+    "_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md": {
       "title": "Paid certificates, rooted revision and successor replay",
       "local_links": [
         "_process/research/2026-10-05-revisable-concern/settlement/formal/REPORT.md",
@@ -8885,10 +8885,10 @@
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/model-verification.json"
       ]
     },
-    "_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md": {
+    "_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md": {
       "title": "Independent review of paid records, reason certificates and replay",
       "local_links": [
-        "_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md",
         "_process/research/2026-10-05-revisable-concern/settlement/formal/REPORT.md",
         "_process/research/2026-10-05-revisable-concern/settlement/formal/check_process.py",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean",
@@ -8905,10 +8905,10 @@
         "theories/becoming/chapters/START-HERE.md"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md": {
       "title": "From original-carrier loss to the turnover ledger",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-SEMANTICS.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CARRIER-SEMANTICS.md",
         "experiments/shared-renewal-capability/formal/CarrierTurnover.lean",
         "experiments/shared-renewal-capability/formal/ReserveTurnover.lean",
         "experiments/shared-renewal-capability/formal/TypedRenewal.lean",
@@ -8917,24 +8917,24 @@
         "experiments/shared-renewal-capability/formal/carrier-lean-verification.json"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md": {
       "title": "The paid teaching interface and its downstream contract",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-REVIEW.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-REVIEW.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/README.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/README.md",
         "theories/becoming/chapters/LEARNING-INTERFACE.md"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-REVIEW.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-REVIEW.md": {
       "title": "Independent review: consequence-coupled reconstruction of regulation",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
         "experiments/shared-renewal-capability/regulation/retention/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean",
         "experiments/shared-renewal-capability/regulation/retention/independent-check.json",
@@ -8942,13 +8942,13 @@
         "theories/becoming/chapters/GENERATIVE-GROUNDING.md"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/ENTRANCE-DISCOVERY-REVIEW.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/ENTRANCE-DISCOVERY-REVIEW.md": {
       "title": "Review: typed renewal, complete entrances, and discovering missing distinctions",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENTIAL-DISCOVERY.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENTIAL-DISCOVERY.md",
         "_process/research/2026-10-05-support-and-shared-generativity/completion/FULL-ENTRY-SUCCESSOR.md",
         "_process/research/2026-10-05-support-and-shared-generativity/completion/RNA-IDENTIFICATION-CONTRACT.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/entrance-discovery-verification.json",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/entrance-discovery-verification.json",
         "experiments/shared-renewal-capability/formal/ReserveTurnover.lean",
         "experiments/shared-renewal-capability/formal/TypedRenewal.lean",
         "experiments/shared-renewal-capability/full-entry/certificate.json",
@@ -8956,7 +8956,7 @@
         "experiments/shared-renewal-capability/full-entry/compute.py"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-LEAN.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-LEAN.md": {
       "title": "Formed variants, paid mixed histories and the root: Lean scope",
       "local_links": [
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean",
@@ -8965,10 +8965,10 @@
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/verification.json"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-REVIEW.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-REVIEW.md": {
       "title": "Independent review: formed variants and differential reconstruction",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-MATH.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/verification.json",
@@ -8976,7 +8976,7 @@
         "experiments/shared-renewal-capability/regulation/retention/formation/independent_check.py"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-MATH.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-MATH.md": {
       "title": "Recipient evidence, distinguishable targets and paid correction",
       "local_links": [
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md",
@@ -8985,31 +8985,31 @@
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/verification.json"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/RESERVE-SENSITIVE-TURNOVER.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/RESERVE-SENSITIVE-TURNOVER.md": {
       "title": "Turnover must account for inherited reserve",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/TYPED-RENEWAL-FORMALIZATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/TYPED-RENEWAL-FORMALIZATION.md",
         "experiments/shared-renewal-capability/formal/ReserveTurnover.lean",
         "experiments/shared-renewal-capability/formal/reserve-check.py",
         "experiments/shared-renewal-capability/formal/reserve-lean-output.txt",
         "experiments/shared-renewal-capability/formal/reserve-lean-verification.json"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md": {
       "title": "Costed revision of a selector in a continuing organization",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
         "theories/becoming/chapters/GENERATIVE-GROUNDING.md"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md": {
       "title": "Independent review: costed revision of an embodied selector",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/independent-check.json",
@@ -9017,7 +9017,7 @@
         "theories/becoming/chapters/GENERATIVE-GROUNDING.md"
       ]
     },
-    "_process/research/2026-10-05-support-and-shared-generativity/completion/TYPED-RENEWAL-FORMALIZATION.md": {
+    "_process/history/2026-10-05-support-and-shared-generativity/completion/TYPED-RENEWAL-FORMALIZATION.md": {
       "title": "Checked typed reactions and their resource ledger",
       "local_links": [
         "experiments/shared-renewal-capability/formal/README.md",
@@ -10147,9 +10147,9 @@
     "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/README.md": {
       "title": "Acquired applicability: formal law and execution correspondence",
       "local_links": [
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-CONTRACT.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-REVIEW.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/ApplicabilityGrounding.lean",
@@ -10591,7 +10591,7 @@
     "experiments/shared-renewal-capability/formal/README.md": {
       "title": "Machine-checked typed renewal and support accounting",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md",
         "experiments/shared-renewal-capability/formal/CarrierTurnover.lean",
         "experiments/shared-renewal-capability/formal/RenewalLedger.lean",
         "experiments/shared-renewal-capability/formal/ReserveTurnover.lean",
@@ -10611,8 +10611,8 @@
     "experiments/shared-renewal-capability/regulation/retention/formal/README.md": {
       "title": "Checked event structure of formed regulation and material retention",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
         "experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean",
         "experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean",
@@ -10653,7 +10653,7 @@
     "experiments/shared-renewal-capability/regulation/retention/formation/formal/README.md": {
       "title": "Checked formation and localized copying of competing variants",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-LEAN.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-LEAN.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean",
@@ -10681,8 +10681,8 @@
     "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/README.md": {
       "title": "Paid contextual reason replay",
       "local_links": [
-        "_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/check_model.py",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/development/publication-freshness-review/README.md",
@@ -10698,9 +10698,9 @@
       "title": "Recorded reasons, effective protection and finite choice",
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-MATH.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-MATH.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/README.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/development/first-full-run-receipt.json",
@@ -10726,7 +10726,7 @@
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md": {
       "title": "Checked selector revision and recovery costs",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
@@ -10737,7 +10737,7 @@
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/README.md": {
       "title": "Checked formation of updaters and paid historical composition",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-MATH.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/verification",
@@ -10747,7 +10747,7 @@
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/README.md": {
       "title": "Checked paid prediction, correction and action",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-MATH.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification",
@@ -10757,7 +10757,7 @@
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/README.md": {
       "title": "Checked recipient correction interface",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-MATH.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/verification.json",
@@ -11043,7 +11043,7 @@
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/README.md": {
       "title": "Checked learning and retransmission by a copied child",
       "local_links": [
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-MATH.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/SuccessorLearning.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/verification",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/formal/verification.json"
@@ -11725,7 +11725,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-SUPPORT-MATH.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/TURNOVER-AND-CLOSURE.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md",
         "sources/15-codex-theory-conversations/2026-10-06-conditional-universality-request.md",
@@ -11814,7 +11814,7 @@
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-MATH.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-REVIEW.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControlledRefinement.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/controlled-refinement-audit.txt",
         "theories/becoming/chapters/GENERATIVE-GROUNDING.md",
@@ -11838,8 +11838,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-RECONSTRUCTION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-SOURCES.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCoreTreeModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DYNAMIC-SYMMETRY.md",
@@ -11884,8 +11884,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PARTICIPATION-CONSEQUENCE-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/normative/FOUNDATION.md",
-        "_process/research/2026-10-05-revisable-concern/settlement/normative/decision-math.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/normative/FOUNDATION.md",
+        "_process/history/2026-10-05-revisable-concern/settlement/normative/decision-math.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean",
         "sources/15-codex-theory-conversations/2026-10-06-evaluative-application-continuation.md",
         "theories/becoming/chapters/ARCHITECTURE-LEARNING.md",
@@ -11963,8 +11963,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-MATH.md",
-        "_process/research/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md",
+        "_process/history/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/CoupledOccurrence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
@@ -12093,8 +12093,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-LEAN.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-LEAN.md",
         "experiments/integrated-correction/general-framework/generative-basis/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/formal/FORMAL.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
@@ -12332,25 +12332,25 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-health/succession/ACTIVITY-AND-CONSEQUENCES.md",
-        "_process/research/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md",
-        "_process/research/2026-10-05-generative-health/succession/CONTINUITY-AND-CORRECTION.md",
-        "_process/research/2026-10-05-generative-health/succession/DEPENDENCY-AND-RELEVANCE.md",
-        "_process/research/2026-10-05-generative-health/succession/NONDUAL-EVALUATION.md",
-        "_process/research/2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md",
-        "_process/research/2026-10-05-repository-reconciliation/three-session-integration/README.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-INTEGRATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACTIVITY-AND-CONSEQUENCES.md",
+        "_process/history/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md",
+        "_process/history/2026-10-05-generative-health/succession/CONTINUITY-AND-CORRECTION.md",
+        "_process/history/2026-10-05-generative-health/succession/DEPENDENCY-AND-RELEVANCE.md",
+        "_process/history/2026-10-05-generative-health/succession/NONDUAL-EVALUATION.md",
+        "_process/history/2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md",
+        "_process/history/2026-10-05-repository-reconciliation/three-session-integration/README.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-LEAN.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-INTEGRATION.md",
         "experiments/agentdojo-evidence-boundary/correction-action/continuation/RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json",
@@ -12568,7 +12568,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-UPTAKE-ARGUMENT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESPONSIVE-FORMATION-ARGUMENT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-GROUNDING-SOURCES.md",
-        "_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
+        "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-repair-verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/revalidation/README.md",
@@ -12640,8 +12640,8 @@
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-INTERFACE-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SUPPORT-MATH.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md",
-        "_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md",
+        "_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md",
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean",
         "theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md",
@@ -12762,7 +12762,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md",
-        "_process/research/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md",
+        "_process/history/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean",

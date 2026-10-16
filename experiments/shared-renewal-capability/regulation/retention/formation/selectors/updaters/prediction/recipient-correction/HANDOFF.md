@@ -1,6 +1,6 @@
 # Output contract for the next concern–wisdom connection
 
-6 October 2026. AI-authored interface record. Read the [protocol](PROTOCOL.md) and [integration](../../../../../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-INTEGRATION.md) before reusing a result.
+6 October 2026. AI-authored interface record. Read the [protocol](PROTOCOL.md) and [integration](../../../../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-INTEGRATION.md) before reusing a result.
 
 ## What is actually carried
 

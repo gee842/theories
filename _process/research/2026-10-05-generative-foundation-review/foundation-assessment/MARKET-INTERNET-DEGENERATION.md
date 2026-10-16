@@ -554,7 +554,7 @@ English: In the original rational family, for 0≤beta≤3/4 and zero additional
 
 2026-10-09，AI-authored continuation。复用 `market-supported-finite-transition`、`market-protected-continuation`，并保留 `market-partial-correction-boundary` 的精确无误差边界。按 [Theory of Becoming 的新优先方向](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)，本轮解释同一活动怎样同时改变其实践组成及必要支持，直至一种组织方式不能继续；没有先给这种变化伦理判决。
 
-Exact delta: 前轮已有“每个正余量最终可恢复”“不存在统一恢复时长”“有足够支持则实际交接”及一个来不及恢复的具体反例。本轮从单一反例推进到：**每个有限初始支持存量，都对应一个有正宽度的正维护余量区间，区间内所有状态在所有容许的责任通道调整下仍会有限失效。** 同一个正初态的运行投影最终到达保护区，而完整守卫历史先终止。基础的资源平衡限制已有 [foundation §6](../FOUNDATION.md#6-support-limits-and-timely-correction)，不把它重新命名为原创发现。新增内容是从原市场的有限增长速度导出低维护期，再正式接回原支持消耗及终止守卫，并量化所有时变纠正。
+Exact delta: 前轮已有“每个正余量最终可恢复”“不存在统一恢复时长”“有足够支持则实际交接”及一个来不及恢复的具体反例。本轮从单一反例推进到：**每个有限初始支持存量，都对应一个有正宽度的正维护余量区间，区间内所有状态在所有容许的责任通道调整下仍会有限失效。** 同一个正初态的运行投影最终到达保护区，而完整守卫历史先终止。基础的资源平衡限制已有 [foundation §6](../../../history/2026-10-05-specialist-dossier/FOUNDATION.md#6-support-limits-and-timely-correction)，不把它重新命名为原创发现。新增内容是从原市场的有限增长速度导出低维护期，再正式接回原支持消耗及终止守卫，并量化所有时变纠正。
 
 Supplied premises: 保留原 `State`、维护比例更新、支持更新、支持底线5及原 `guardedStep`。β与责任误差可以逐期变化；q由原clip保持在[0,1]。支持冲击逐期非负，没有直接注入支持、免费生成维护活动、改变学习／扩展速度或切换生产组织。这个控制范围可以容纳已实现的反馈策略，因为每条反馈历史会产生一条这样的参数序列；本轮并不解释策略的形成和授权。
 

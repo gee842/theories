@@ -1,6 +1,6 @@
 # Formation and full carrier turnover under one common reaction law
 
-5 October 2026. AI-assisted continuation from commit `f81afc0`. This note uses exactly the N=4 material-fabricator generator in [Architecture formation](ARCHITECTURE-FORMATION-CRITIQUE.md), with a declared parameter class. It adds no reaction, selected intervention or external reset. The [N=3 return study](RENEWAL-RETURN.md) supplies the earlier repair idea, but its probabilities are not transferred to this different generator.
+5 October 2026. AI-assisted continuation from commit `f81afc0`. This note uses exactly the N=4 material-fabricator generator in [Architecture formation](ARCHITECTURE-FORMATION-CRITIQUE.md), with a declared parameter class. It adds no reaction, selected intervention or external reset. The [N=3 return study](../../../history/2026-10-05-support-and-shared-generativity/completion/RENEWAL-RETURN.md) supplies the earlier repair idea, but its probabilities are not transferred to this different generator.
 
 **Result and limit.** One autonomous finite-rate model can form fabrication and gating capability from their absence, deliver captured support, and replace every original A, C, G and Y carrier while returning to the same supported state. Six fresh packets are necessary and attainable for full turnover in the assigned work ledger; formation adds two. There is a strict comparison between the two endogenous formation branches for this same complete joint event, rather than only for an earlier delivery event.
 

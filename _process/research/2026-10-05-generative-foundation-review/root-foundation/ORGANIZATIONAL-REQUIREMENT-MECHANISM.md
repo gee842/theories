@@ -46,7 +46,7 @@ unexplained reward signal that supplies the mechanism this round is explaining.
 
 ## What the original regulation actually derives
 
-The [response-formation law](../../2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md)
+The [response-formation law](../../../history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md)
 already has the sequence
 
 `damaged site → formation of G → repair → capture → copying of G`.
@@ -103,7 +103,7 @@ those operations and can reopen capture. This is actual state-dependent
 susceptibility and response, not an assertion that every enabled operation
 will happen next. Competing rates, unavailable inputs and finite support matter.
 
-The [existing abundance-generator derivation](../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-MATH.md#2-an-unconditional-statistic-and-its-generator)
+The [existing abundance-generator derivation](../../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-MATH.md#2-an-unconditional-statistic-and-its-generator)
 already identifies which mechanisms affect relative abundance. For total
 counts `A,H` and `Z=A−H`, equal formation cancels and
 

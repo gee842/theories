@@ -137,8 +137,8 @@ The table identifies the listed revision bytes inspected for this synthesis: com
 [goal]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md
 [premises]: ../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md
 [support]: ../../../../theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md
-[regulation]: ../../2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md
-[variants]: ../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md
+[regulation]: ../../../history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md
+[variants]: ../../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md
 [material]: ../../../../theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md
 [development]: ../../../../theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md
 [architecture-learning]: ../../../../theories/becoming/chapters/ARCHITECTURE-LEARNING.md

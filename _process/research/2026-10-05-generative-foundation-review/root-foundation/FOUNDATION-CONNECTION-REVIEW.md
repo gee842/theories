@@ -85,7 +85,7 @@ Seventeen links in these five integration additions pass local target and reques
 [learning]: ../../../../theories/becoming/chapters/LEARNING-INTERFACE.md
 [refinement]: ../../../../theories/becoming/chapters/CONTROLLED-REFINEMENT.md
 [completion]: ../../../../theories/becoming/chapters/PROTOCOL-COMPLETION.md
-[selection]: ../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md
+[selection]: ../../../history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md
 [material]: ../../../../theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md
 [architecture]: ../../../../theories/becoming/chapters/ARCHITECTURE-LEARNING.md
 [identification]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py

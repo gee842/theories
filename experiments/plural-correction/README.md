@@ -2,7 +2,7 @@
 
 An exploratory finite decision study asking whether **one observation-based policy** can meet several declared bounds without a common weighted utility. It reuses the preceding experiment's physical dynamics unchanged and varies explicitly specified action permissions. AI-generated research under Ren's direction, 5 October 2026.
 
-Read the [research synthesis](../../sources/15-codex-theory-conversations/2026-10-05-plural-requirements-and-attainable-correction.md), [protocol](PROTOCOL.md), [mathematical proofs](../../_process/research/2026-10-04-integrated-evolution/plural-correction-math.md), [design and implementation audit](../../_process/research/2026-10-04-integrated-evolution/plural-correction-design-review.md), and [prior-art audit](../../_process/research/2026-10-04-integrated-evolution/plural-correction-prior-art.md).
+Read the [research synthesis](../../sources/15-codex-theory-conversations/2026-10-05-plural-requirements-and-attainable-correction.md), [protocol](PROTOCOL.md), [mathematical proofs](../../_process/history/2026-10-04-integrated-evolution/plural-correction-math.md), [design and implementation audit](../../_process/history/2026-10-04-integrated-evolution/plural-correction-design-review.md), and [prior-art audit](../../_process/history/2026-10-04-integrated-evolution/plural-correction-prior-art.md).
 
 ## What is evaluated
 

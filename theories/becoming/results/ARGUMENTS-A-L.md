@@ -653,7 +653,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md) · [PHYSICAL-BRANCH-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [INTEGRATION.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md) · [PHYSICAL-BRANCH-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md)
 
 <a id="concern-and-correction"></a>
 ## 关切与有效纠正的连接 / Concern and effective correction
@@ -835,7 +835,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [MOTOR-LEARNING-COST-REVIEW.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/MOTOR-LEARNING-COST-REVIEW.md) · [UPDATER-IDENTIFICATION-MATH.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [MOTOR-LEARNING-COST-REVIEW.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/MOTOR-LEARNING-COST-REVIEW.md) · [UPDATER-IDENTIFICATION-MATH.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md)
 
 <a id="cybernetics"></a>
 ## 生成根基中的控制论 / Cybernetics within generative grounding
@@ -1290,7 +1290,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) · [EXPERIMENTAL-ACCESS-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md](../../../_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) · [EXPERIMENTAL-ACCESS-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md)
 
 <a id="explanatory-necessity"></a>
 ## 生成关系是否是充分解释的必要基础？ / Are relations of becoming indispensable to explanation?
@@ -1383,7 +1383,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [PHYSICAL-BRANCH-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md) · [INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [PHYSICAL-BRANCH-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md) · [INTEGRATION.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md)
 
 <a id="formation"></a>
 ## 有效纠正怎样形成与被阻止 / How effective correction forms and is prevented
@@ -1412,7 +1412,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [independent-game-check-results.json](../../../experiments/constructed-correction/independent-game-check-results.json) · [independent-game-review.md](../../../experiments/constructed-correction/independent-game-review.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [independent-game-check-results.json](../../../experiments/constructed-correction/independent-game-check-results.json) · [independent-game-review.md](../../../experiments/constructed-correction/independent-game-review.md)
 
 <a id="formation-math"></a>
 ## 通过替代能力形成有效纠正的数学 / Mathematics of correction through a constructed alternative
@@ -1987,7 +1987,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [independent-game-check-results.json](../../../experiments/joint-formation/independent-game-check-results.json) · [README.md](../../../experiments/joint-formation/README.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [independent-game-check-results.json](../../../experiments/joint-formation/independent-game-check-results.json) · [README.md](../../../experiments/joint-formation/README.md)
 
 <a id="joint-formation-math"></a>
 ## 学习、证据、权力和关切的联合形成数学 / Mathematics of jointly formed learning, evidence, power and care
@@ -2016,7 +2016,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [joint-math-checks.json](../../../experiments/joint-formation/joint-math-checks.json)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [joint-math-checks.json](../../../experiments/joint-formation/joint-math-checks.json)
 
 <a id="joint-obstructions"></a>
 ## 没有隐藏善意的联合形成阻碍 / Obstructions to joint formation without hidden benevolence
@@ -2045,7 +2045,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md)
 
 <a id="joint-prior-art"></a>
 ## 关切、证据与权力联合形成的先行研究 / Prior art on joint formation of concern, evidence and power
@@ -2074,7 +2074,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md)
 
 <a id="knowledge"></a>
 ## 生成中的知识 / Knowledge within becoming
@@ -2136,7 +2136,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [LEARNING-INTERFACE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-INTERFACE-REVIEW.md) · [CONSEQUENCE-TO-LEARNING-MATH.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [LEARNING-INTERFACE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-INTERFACE-REVIEW.md) · [CONSEQUENCE-TO-LEARNING-MATH.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md)
 
 <a id="learning-route-revision"></a>
 ## 学习者改变学习路线并传递改变 / A learner changes and transmits its learning route
@@ -2167,7 +2167,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ROUTE-REVISION-REVIEW.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ROUTE-REVISION-REVIEW.md) · [ROUTE-REVISION-INTEGRATION.md](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ROUTE-REVISION-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ROUTE-REVISION-REVIEW.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/ROUTE-REVISION-REVIEW.md) · [ROUTE-REVISION-INTEGRATION.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/ROUTE-REVISION-INTEGRATION.md)
 
 <a id="liangzhi-evolution"></a>
 ## 本然良知的生成演化 / Generative evolution of prereflective moral responsiveness

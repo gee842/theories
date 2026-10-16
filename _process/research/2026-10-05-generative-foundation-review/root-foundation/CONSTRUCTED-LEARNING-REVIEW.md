@@ -21,7 +21,7 @@ The exact earlier mixed-copy witness exhausts its initial fuel and finite source
 5. **No hidden selection oracle.** An existence witness may choose a useful construction as a permitted event sequence. That proves possibility, not that the process selects the useful construction or learns its recipe. Both useful and unhelpful branches must remain admitted. Scores computed by the analyst must not control transitions.
 6. **A bounded explanatory advance.** New joining, transduction and upkeep laws remain inputs. A conservative extension can compose them with actual formed material; it does not prove that the earlier reaction catalogue entailed them. Alternative updater architecture and its own consequence-dependent formation remain a later obligation unless directly constructed here.
 
-These criteria refine the compatible-composition requirement in [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The separate [updater-formation review](../../2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-REVIEW.md) records the adjacent task of constructing alternative mechanisms that alter selector proposals or maintenance.
+These criteria refine the compatible-composition requirement in [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The separate [updater-formation review](../../../history/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-REVIEW.md) records the adjacent task of constructing alternative mechanisms that alter selector proposals or maintenance.
 
 ## Contract accepted for implementation
 

@@ -14,9 +14,9 @@
 
 ## 2. 先信用已完成的连接
 
-[既有变体形成整合](../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)已经给出同一法则内的实例：两种响应最初均不存在，形成、结合、修复、取得支持与复制相接，竞争变体仍在场，原有条件没有在中途重置。有效后果进入后续复制，不依赖分析者给「成功」另加奖励。该局部结果不能被新章重新描述为完全缺失。
+[既有变体形成整合](../../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)已经给出同一法则内的实例：两种响应最初均不存在，形成、结合、修复、取得支持与复制相接，竞争变体仍在场，原有条件没有在中途重置。有效后果进入后续复制，不依赖分析者给「成功」另加奖励。该局部结果不能被新章重新描述为完全缺失。
 
-[后果与差异留存研究](../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md)又保存共同池中有用修复增加总再形成、却不增加其生产者预期比例的情形，以及占据、磨损与接续者改变支持归属的反向情形。其中随机频率推论原为手证、数值及内部审查，不能追溯称为本轮 Lean 已检查；早先 Lean 事件结果保留其各自范围。
+[后果与差异留存研究](../../../history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md)又保存共同池中有用修复增加总再形成、却不增加其生产者预期比例的情形，以及占据、磨损与接续者改变支持归属的反向情形。其中随机频率推论原为手证、数值及内部审查，不能追溯称为本轮 Lean 已检查；早先 Lean 事件结果保留其各自范围。
 
 [评价发展](../../../../theories/becoming/chapters/VALUATION-DEVELOPMENT.md)已包含经验形成回应联结、更新方式修订、谱系的继承／分枝，以及共同过程的不同切分。[评价继承](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md)更已在同一有条件的材料历程中建立：已取得的评价影响经实际接口为不同后继所访问，后继取得新证据、纠正手段判断，并据此选择实际回应；原先组织及其历史没有被重命名为后继。先前基础的叙述性缺口清单不能盖过这些后来的结果。这里并非所有响应能力的代际接合仍未完成；尚不能由这些有限接合直接获得的是多种可传递响应组织在共同发展与社会性交往中的差异选择，以及社会动物关切的实际来源。
 

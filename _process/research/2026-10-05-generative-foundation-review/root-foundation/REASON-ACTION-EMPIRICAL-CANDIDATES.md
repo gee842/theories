@@ -1,6 +1,6 @@
 # Empirical candidate for learned recipient information → costly actual delivery
 
-AI-authored source audit, 6 October 2026. Read-only external research; no new experiment, fitted model, replication or human-subject recruitment. This supports the next action interface in [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). It follows the existing [protection evidence audit](../../2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md) and [cross-domain identification audit](CROSS-DOMAIN-IDENTIFICATION.md).
+AI-authored source audit, 6 October 2026. Read-only external research; no new experiment, fitted model, replication or human-subject recruitment. This supports the next action interface in [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). It follows the existing [protection evidence audit](../../../history/2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md) and [cross-domain identification audit](CROSS-DOMAIN-IDENTIFICATION.md).
 
 ## Strongest candidate found: actual reciprocal food delivery
 

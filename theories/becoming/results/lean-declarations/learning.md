@@ -137,7 +137,7 @@ Imports: `ControllerRevision`
 <details>
 <summary>FormationSupport.lean — 31 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean) · [研究 / Study](../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean`
 

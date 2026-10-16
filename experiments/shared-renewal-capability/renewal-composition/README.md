@@ -1,6 +1,6 @@
 # Exact marked-renewal diagnostics
 
-[The derivation](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md) supplies the general conditioning and approximation arguments. This directory preserves a small exact diagnostic of their event semantics.
+[The derivation](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md) supplies the general conditioning and approximation arguments. This directory preserves a small exact diagnostic of their event semantics.
 
 `exact_check.py` uses Python's standard-library rational arithmetic. The saved `exact-check.json` checks four explicitly enumerated time/budget outcomes, equal one-cycle answers with different two-cycle continuations, and five finite uniform-error examples. It records its producer hash and the frozen predecessor inputs. It does not propagate the CF model, execute an RNA model, fit data or prove the analytic general theorems.
 

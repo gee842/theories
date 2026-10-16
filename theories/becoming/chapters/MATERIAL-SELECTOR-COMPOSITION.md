@@ -6,7 +6,7 @@ This joins two existing constructions through an explicit material interface. It
 
 ## 1. What was missing between the existing results
 
-The [formed-variant construction](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) starts without response variants and produces them through resource-dependent formation and copying. The [selector-revision construction](SELECTOR-REVISION.md) permits assembly and replacement of a response mapping. Each retains its own costs. Their separate validity does not establish that the output of the first can construct and operate the second.
+The [formed-variant construction](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) starts without response variants and produces them through resource-dependent formation and copying. The [selector-revision construction](SELECTOR-REVISION.md) permits assembly and replacement of a response mapping. Each retains its own costs. Their separate validity does not establish that the output of the first can construct and operate the second.
 
 The previous [support bridge](LEARNING-INTERFACE.md#5-joining-the-general-account-to-actual-formation) exposed an immediate obstruction: the original formation-to-copy witness ends with no energy left. A newly named learning stage cannot inherit its formed parts together with the original, already-spent fuel. The models also use different source units: one source unit in the formation account carries one support unit, whereas a packet in the selector example carries four.
 

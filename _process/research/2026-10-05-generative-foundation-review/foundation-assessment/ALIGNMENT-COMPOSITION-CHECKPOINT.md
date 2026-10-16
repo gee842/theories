@@ -46,7 +46,7 @@ SHA-256 snapshot, 2026-10-06 02:17 UTC. Subsequent edits need their own binding;
 [uptake]: ../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md
 [application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
 [succession]: ../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md
-[continuation]: ../../2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md
+[continuation]: ../../../history/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md
 [institution]: ../../../../theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md
 [memory]: ../../../../theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md
 [empirical]: ../../../../theories/becoming/chapters/EMPIRICAL-SCOPE.md

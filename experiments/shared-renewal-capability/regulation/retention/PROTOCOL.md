@@ -1,6 +1,6 @@
 # Dependency-coupled response formation and retention
 
-6 October 2026. AI-authored implementation protocol, recorded before executing this implementation. The mathematical witness was selected analytically in the [existing note](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md); this is not a blind empirical prediction or parameter search. This directory implements that separate seven-event law, not the older failed regulation network.
+6 October 2026. AI-authored implementation protocol, recorded before executing this implementation. The mathematical witness was selected analytically in the [existing note](../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md); this is not a blind empirical prediction or parameter search. This directory implements that separate seven-event law, not the older failed regulation network.
 
 ## Question and supplied inputs
 

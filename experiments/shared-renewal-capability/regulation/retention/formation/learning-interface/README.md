@@ -1,7 +1,7 @@
 # Paid measurement and predictive learning
 
 6 October 2026. Exact finite constructions for the [consequence-to-learning
-interface](../../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md).
+interface](../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md).
 They work backward from the teaching assumptions of the concern model, alongside
 the separate selector-revision study. The learner, sensor and actuator designs
 remain explicit premises. These are mathematical specimens, not empirical
@@ -84,7 +84,7 @@ The [independent checker](independent_check.py) passed all of those cases and
 45 further decay cases using full innovation words and closed-form weights,
 rather than the producer's probability recursion. Its
 [saved record](independent-check.json) and
-[review](../../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-REVIEW.md)
+[review](../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-REVIEW.md)
 record the exact scope and hashes. These Python calculations are
 not Lean proofs or a verified implementation of the earlier chemical process.
 The gate and prediction circuit are new interface specimens. Their repertoire,

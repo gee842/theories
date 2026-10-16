@@ -101,7 +101,7 @@ The aim remains a common explanation of organization, significance, learning, se
 [empirical-notes]: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-CLAIM-SCOPE-NOTES.md
 [conditional-notes]: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md
 [ceroni]: ../../../_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-EVIDENCE-CERONI.md
-[ai-audit]: ../../../_process/research/2026-10-05-revisable-concern/settlement/evidence/report.md
+[ai-audit]: ../../../_process/history/2026-10-05-revisable-concern/settlement/evidence/report.md
 [cross-domain]: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md
 
 [review]: ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-SCOPE-REVIEW.md

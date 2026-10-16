@@ -53,5 +53,5 @@ The constructive governance connection is therefore effective **reason transfer 
 
 [application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
 [settlement]: ../../2026-10-05-revisable-concern/settlement/formal/REPORT.md
-[replay]: ../../2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md
+[replay]: ../../../history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md
 [reporting]: ../root-foundation/FUTURE-REPORTING-CONTRACT.md

@@ -25,7 +25,7 @@ The exposure retains fuel, gate and circuit lifetimes, construction stage, memor
 
 Finite weighted tapes reproduce the existing gate choice, initial action and availability probabilities. Unused draws are summed out. Every outcome remains in the total measure, including absent equipment, no work and unpaid writes. A later exposure receives each actual successor with its associated weight; it does not receive a newly funded or correctly initialized substitute.
 
-The general probability rule already exists in the repository's [renewal-composition account](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md). The contribution is a checked application to the existing callable mechanism, including its previously unformalized branches.
+The general probability rule already exists in the repository's [renewal-composition account](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md). The contribution is a checked application to the existing callable mechanism, including its previously unformalized branches.
 
 ## A missed write need not end useful action
 

@@ -6,7 +6,7 @@
 
 上一轮 [PurposeCorrection](YITI-REN-PURPOSE-MATH.md) 对给定的过程条件和完成条件给出了严格结果；[实际历史证明](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrectionHistory.lean)又证明了询问准入修订带来的新继续方式。它们没有生成这些活动条件的内部表示。
 
-但不能据此说整棵树尚无判据修订。[已完成的适用关系学习](../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md)在同一历史内改变知识如何用于行动；[区别的形成](APPLICATION-DISTINCTION-INTEGRATION.md)使原先相同的读数因不同后果而被区分；[完成证据的使用](INQUIRY-COMPLETION-INTEGRATION.md)使实际完成改变后续询问。这些都是已经存在的树内连接，不能再次作为新成果报告，也不能把不同资源历史直接拼成一次运行。
+但不能据此说整棵树尚无判据修订。[已完成的适用关系学习](../../../history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md)在同一历史内改变知识如何用于行动；[区别的形成](APPLICATION-DISTINCTION-INTEGRATION.md)使原先相同的读数因不同后果而被区分；[完成证据的使用](INQUIRY-COMPLETION-INTEGRATION.md)使实际完成改变后续询问。这些都是已经存在的树内连接，不能再次作为新成果报告，也不能把不同资源历史直接拼成一次运行。
 
 本轮接续的是更新的[持续依赖结果](CONTINUING-DEPENDENCY-INTEGRATION.md)。在原材料过程里，两种方式都补足同一次损失，剩余总支持也相同，但支持所在的通道不同，只有一种方式保留后来修复的可能。这个差异已经得到证明；尚未证明的是它怎样被内部取得并用于判断。
 

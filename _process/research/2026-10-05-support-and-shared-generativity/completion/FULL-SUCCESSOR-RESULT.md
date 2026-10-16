@@ -1,6 +1,6 @@
 # Complete formation and replacement: the reserve condition changes the comparison
 
-5 October 2026. AI-assisted continuation under the same 42-channel forward CF law and initial R3,Y1,F2. The [protocol](../../../../experiments/shared-renewal-capability/full-successor/PROTOCOL.md), [carrier semantics](CARRIER-SEMANTICS.md), [reserve audit](FULL-SUCCESSOR-CRITIQUE.md) and [independent review](FULL-SUCCESSOR-REVIEW.md) define the result's scope. Earlier selected seven-capture results remain unchanged.
+5 October 2026. AI-assisted continuation under the same 42-channel forward CF law and initial R3,Y1,F2. The [protocol](../../../../experiments/shared-renewal-capability/full-successor/PROTOCOL.md), [carrier semantics](../../../history/2026-10-05-support-and-shared-generativity/completion/CARRIER-SEMANTICS.md), [reserve audit](FULL-SUCCESSOR-CRITIQUE.md) and [independent review](../../../history/2026-10-05-support-and-shared-generativity/completion/FULL-SUCCESSOR-REVIEW.md) define the result's scope. Earlier selected seven-capture results remain unchanged.
 
 ## The whole event
 

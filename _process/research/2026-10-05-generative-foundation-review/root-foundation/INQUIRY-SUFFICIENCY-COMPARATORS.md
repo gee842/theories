@@ -4,7 +4,7 @@
 
 ## 1. The close antecedent already includes inquiry changing continuation
 
-Tomáš Brázdil, Krishnendu Chatterjee, Martin Chmelík, Anchit Gupta and Petr Novotný, *Stochastic Shortest Path with Energy Constraints in POMDPs* (2016), [author manuscript v2, HTML](https://arxiv.org/html/1602.07565v2), [PDF](https://arxiv.org/pdf/1602.07565v2). The earlier [recoverable-inquiry comparison §3](../../2026-10-04-integrated-evolution/recoverable-inquiry-prior-art.md#3-expected-performance-is-different-from-resource-feasibility) already identified this source. It is reused here, rather than counted as independent new evidence.
+Tomáš Brázdil, Krishnendu Chatterjee, Martin Chmelík, Anchit Gupta and Petr Novotný, *Stochastic Shortest Path with Energy Constraints in POMDPs* (2016), [author manuscript v2, HTML](https://arxiv.org/html/1602.07565v2), [PDF](https://arxiv.org/pdf/1602.07565v2). The earlier [recoverable-inquiry comparison §3](../../../history/2026-10-04-integrated-evolution/recoverable-inquiry-prior-art.md#3-expected-performance-is-different-from-resource-feasibility) already identified this source. It is reused here, rather than counted as independent new evidence.
 
 **Primary-source summary.** The paper combines partially observed dynamics with action-dependent consumption or replenishment of a capped, perfectly observed resource. Energy safety applies to every conforming run until target reachability; the reachability construction seeks probability-one success, with expected total cost as the quantitative objective. A product construction incorporates resource levels; allowed actions preserve the possibility of almost-sure target reachability. Its Tiger example includes noisy listening that consumes resource and a recharging option. The state/action repertoire, transition and observation laws, target, resource law and costs are specified inputs. The quantitative approximation is not guaranteed to converge to the optimum. [Sections 3–4 and 5.2](https://arxiv.org/html/1602.07565v2).
 
@@ -14,7 +14,7 @@ Tomáš Brázdil, Krishnendu Chatterjee, Martin Chmelík, Anchit Gupta and Petr 
 
 The present \(W_n\) asks for a policy tree that succeeds on **every admitted outcome path within at most \(n\) queries**. This differs from the antecedent's probability-one eventual success. Neither a positive probability of eventual progress nor arbitrarily long successful runs supplies the bounded universal guarantee. This is a difference in the question being answered, not evidence that either treatment has discovered a generally superior criterion.
 
-The important common structure is action-dependent continuation under incomplete information. Thus “inquiry affects the conditions for later action” and “adequate action need not identify the entire hidden configuration” are not new general control principles. This focused reading supplies a close POMDP antecedent; it is not an exhaustive priority survey of dual control, metareasoning or viability theory. The repository's [earlier value-of-information comparison](../../2026-10-04-integrated-evolution/recurrent-inquiry-prior-art.md) already distinguishes an optional information refinement from an intervention that changes physical possibilities.
+The important common structure is action-dependent continuation under incomplete information. Thus “inquiry affects the conditions for later action” and “adequate action need not identify the entire hidden configuration” are not new general control principles. This focused reading supplies a close POMDP antecedent; it is not an exhaustive priority survey of dual control, metareasoning or viability theory. The repository's [earlier value-of-information comparison](../../../history/2026-10-04-integrated-evolution/recurrent-inquiry-prior-art.md) already distinguishes an optional information refinement from an intervention that changes physical possibilities.
 
 Our comparative assessment of S1–S3 is:
 
@@ -50,6 +50,6 @@ These identify the inspected versions, not a freeze of files owned by other work
 |---|---|
 | [Conditional mathematics](INQUIRY-SUFFICIENCY-MATH.md) | `b6f3ad7eff48a521d272cf1a3f9aa16db6b557e69160afdecda1fb34a7651afe` |
 | [Existing-history reconstruction](INQUIRY-SUFFICIENCY-MECHANISM.md) | `aeaa52d2a4f7feb5210d3d68d18ae3b0946f6c2b69a4a9255575c0a4da4c117d` |
-| [Recoverable-inquiry antecedents](../../2026-10-04-integrated-evolution/recoverable-inquiry-prior-art.md) | `0a223a166e05be767cb0826f8d362403ff2939aee42b5d107b416901f81d78a4` |
-| [Recurrent-inquiry antecedents](../../2026-10-04-integrated-evolution/recurrent-inquiry-prior-art.md) | `816e231383e4d010496f1c3e4453a1c317ff2dd5899a8a2e3804635cae6a93a2` |
+| [Recoverable-inquiry antecedents](../../../history/2026-10-04-integrated-evolution/recoverable-inquiry-prior-art.md) | `0a223a166e05be767cb0826f8d362403ff2939aee42b5d107b416901f81d78a4` |
+| [Recurrent-inquiry antecedents](../../../history/2026-10-04-integrated-evolution/recurrent-inquiry-prior-art.md) | `816e231383e4d010496f1c3e4453a1c317ff2dd5899a8a2e3804635cae6a93a2` |
 | [Shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) | `809515aea3c9b2f67cf95c0a5c0251d5da3b7ae72c669981d7d8f26d528ba573` |

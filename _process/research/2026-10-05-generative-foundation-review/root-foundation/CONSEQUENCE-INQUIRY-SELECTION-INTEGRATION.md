@@ -16,7 +16,7 @@ supplies the positive outcome-contact mechanism under its additional laws.
 
 ## 1. The generic inquiry bridge already exists
 
-The [acquired-applicability result](../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md)
+The [acquired-applicability result](../../../history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md)
 already uses actual failure to change its next inquiry. Failure leaves
 complemented applicability and absent transfer as live alternatives. The
 retained sensory model then helps select an encounter where those alternatives

@@ -4,7 +4,7 @@
 
 ## 1. 替代了哪一个直接输入
 
-[上一轮](YITI-REN-CRITERION-INTEGRATION.md)取得了修复所依赖的支持通道，并使其改变完成判断，但仍直接给定 `later_repair`。这一缺口不能扩大成整棵生成树都没有活动形成或范围修订：[组织要求](ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md)、[取得的适用关系](../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md)以及其他先前结果各有已完成内容。
+[上一轮](YITI-REN-CRITERION-INTEGRATION.md)取得了修复所依赖的支持通道，并使其改变完成判断，但仍直接给定 `later_repair`。这一缺口不能扩大成整棵生成树都没有活动形成或范围修订：[组织要求](ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md)、[取得的适用关系](../../../history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md)以及其他先前结果各有已完成内容。
 
 本轮具体替代的是本条材料历史中这个继续范围位。新运行保存已形成的学习记录，从同一真实训练终点继续；新的配置不含 `later_repair`。材料形成两项不同的活动复合体，它们的实际反应改变后续反应的条件。接触取得各自阶段，选择再读取记录。旧配置在祖先中明确取假，旧判据未激活，后续选择也不通过它偷偷取得范围。
 

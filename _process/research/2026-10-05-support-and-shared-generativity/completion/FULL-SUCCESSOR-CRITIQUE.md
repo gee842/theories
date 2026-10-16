@@ -46,7 +46,7 @@ The exact composition remains
 
 where E is the unnormalized first-entrance measure and K is the first completed-turnover kernel with the actual types, reserve and any environmental memory. The same absolute deadline leaves only H−t after entrance. A fresh full H for each entrant is a different question. The strong Markov property applies to the complete physical/record state, not automatically to a coarse count description missing relevant history.
 
-The existing [typed reserve ledger](RESERVE-SENSITIVE-TURNOVER.md) gives, for each realized completion,
+The existing [typed reserve ledger](../../../history/2026-10-05-support-and-shared-generativity/completion/RESERVE-SENSITIVE-TURNOVER.md) gives, for each realized completion,
 
 \[
 K_{\rm capture}\ge6+m'-m.

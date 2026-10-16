@@ -2,7 +2,7 @@
 
 The [protocol](PROTOCOL.md) was declared before calculation. It fixes one common N=4 generator, the three proposed CF-access families, all positive constants at one, a type-neutral full formation-and-turnover event and deadline 10. Optional bound copying and CF-catalyzed free-F recycling are absent. No rate search was performed.
 
-The [research note](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/PAID-ACCESS-SUCCESSION.md) gives the proof and its limits.
+The [research note](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/PAID-ACCESS-SUCCESSION.md) gives the proof and its limits.
 
 - [compute.py](compute.py) enumerates 1,393 transient states per branch and the complete success-compatible generator, while charging all other exits to failure. It computes exact shortest-path coefficients and exploratory floating probabilities saved in [results.json](results.json).
 - [certify.py](certify.py) bounds the declared deadline probability through directed integer uniformization and rational exponential tails. [certificate.json](certificate.json) contains the rigorous probability intervals and positive difference bound. It reuses the first file's generator; it is not an independent reconstruction of the chemistry.

@@ -1,6 +1,6 @@
 # Checked recipient correction interface
 
-6 October 2026. [RecipientCorrection.lean](RecipientCorrection.lean) contains **36 checked declarations** under pinned Lean 4.29.1. It imports only `Std`, so it does not depend on the concurrently changing prediction, coupling or concern implementations. The [mathematical note](../../../../../../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-MATH.md) states the derivation, assumptions and protocol-specific calculations.
+6 October 2026. [RecipientCorrection.lean](RecipientCorrection.lean) contains **36 checked declarations** under pinned Lean 4.29.1. It imports only `Std`, so it does not depend on the concurrently changing prediction, coupling or concern implementations. The [mathematical note](../../../../../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/RECIPIENT-CORRECTION-MATH.md) states the derivation, assumptions and protocol-specific calculations.
 
 The package proves:
 

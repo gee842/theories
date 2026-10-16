@@ -2,7 +2,7 @@
 
 6 October 2026. [SelectorRevision.lean](SelectorRevision.lean) supplies **21 checked theorem declarations** for a costed response-routing selector within one continuing compartment. Its proof interface directly uses the repository's existing `Generative.Trace`; the existing root module's 18 audits are recorded separately. The [verification record](verification.json) and [compiler logs](verification/) preserve the exact check.
 
-The mathematical argument and its scope are in [SELECTOR-REVISION-MATH.md](../../../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md). The executable study's [protocol](../PROTOCOL.md) additionally specifies stochastic assembly, exposure scheduling and comparator interventions. The Lean module does not prove that the Python program refines the relation or verify its stochastic calculations.
+The mathematical argument and its scope are in [SELECTOR-REVISION-MATH.md](../../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md). The executable study's [protocol](../PROTOCOL.md) additionally specifies stochastic assembly, exposure scheduling and comparator interventions. The Lean module does not prove that the Python program refines the relation or verify its stochastic calculations.
 
 ## Supplied event law
 

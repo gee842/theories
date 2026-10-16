@@ -23,9 +23,9 @@ does not thereby identify felt significance, a represented purpose or ethical
 warrant. These distinctions concern explanatory questions within the unfolding;
 they do not make three fundamentally independent kinds of reality.
 
-The [earlier regulation result](../../2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md)
+The [earlier regulation result](../../../history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md)
 already connected damage-coupled response formation, repair, capture and further
-response copying. The [formed-variant result](../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)
+response copying. The [formed-variant result](../../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)
 then joined actual formation to differentiated reconstruction. We credit those
 positive connections rather than create another controller to fill an invented
 absence. This round clarifies which kind of continuation the actual coupling

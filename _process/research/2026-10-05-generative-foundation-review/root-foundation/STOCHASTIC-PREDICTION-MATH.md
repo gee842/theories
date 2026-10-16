@@ -10,7 +10,7 @@ These two laws are not globally equivalent. An executable exposure receives one 
 
 The correct obligation is therefore to formalize the existing executable exposure, preserve its full probability mass and identify the exact overlap with the old completed-trial law. Reclassifying every noncompleted trial as an absorbing failure would change the executable mechanism.
 
-The general mathematics is already present in [repeated-renewal composition](../../2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md), §§2–3, and [formal specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md), P1–P2. This study supplies a concrete formal/executable boundary, rather than claiming a new probability principle.
+The general mathematics is already present in [repeated-renewal composition](../../../history/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md), §§2–3, and [formal specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md), P1–P2. This study supplies a concrete formal/executable boundary, rather than claiming a new probability principle.
 
 ## 2. The operational state and the declared experiment
 

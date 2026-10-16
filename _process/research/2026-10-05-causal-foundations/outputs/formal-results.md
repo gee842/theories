@@ -1,8 +1,8 @@
 # Formal results for causally embedded revision
 
-This appendix proves conditional results used in the [research synthesis](causal-foundations.md). The central result states when a smaller representation preserves specified intervention predictions; the other results delimit identification, finite memory, universal announced prediction, and the content of a bare dynamical description. These are elementary derivations or applications of established ideas, with no novelty claim.
+This appendix proves conditional results used in the [research synthesis](../../../history/2026-10-05-causal-foundations/outputs/causal-foundations.md). The central result states when a smaller representation preserves specified intervention predictions; the other results delimit identification, finite memory, universal announced prediction, and the content of a bare dynamical description. These are elementary derivations or applications of established ideas, with no novelty claim.
 
-The examples assume finite classical systems where stated. Their validity does not establish that all physics, cognition, institutions, or ethical judgment have this form. Source scope and open assumptions are recorded in [Sources and claims](sources-and-claims.md).
+The examples assume finite classical systems where stated. Their validity does not establish that all physics, cognition, institutions, or ethical judgment have this form. Source scope and open assumptions are recorded in [Sources and claims](../../../history/2026-10-05-causal-foundations/outputs/sources-and-claims.md).
 
 ## The smallest useful formal commitment
 

@@ -36,7 +36,7 @@ The [Cheng comparison](BOUNDARY-SIGNIFICANCE-SOURCES.md) already distinguishes f
 
 ## 4. What this changes in the current branch
 
-The [participation–consequence integration](PARTICIPATION-CONSEQUENCE-INTEGRATION.md) already credits an actual local history in which acquired consequences change enacted response. The [recipient-continuation account](../../2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md) specifies when delivered support enables an independently identified activity. Neither conditional success establishes that every supported continuation is good.
+The [participation–consequence integration](PARTICIPATION-CONSEQUENCE-INTEGRATION.md) already credits an actual local history in which acquired consequences change enacted response. The [recipient-continuation account](../../../history/2026-10-05-generative-health/succession/RECIPIENT-CONTINUATION.md) specifies when delivered support enables an independently identified activity. Neither conditional success establishes that every supported continuation is good.
 
 The [access reconstruction](APPLICATION-REVISION-RECONSTRUCTION.md) shows why a larger favorable coefficient is insufficient: the continuing four-pair state cannot access service without further acquisition cycles. The constructive target is therefore to explain transformation of that practice's organization through its consequences, retaining the affected history and any outstanding warranted response. No event achieving that transformation has been established in the unchanged law.
 

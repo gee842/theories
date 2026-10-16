@@ -14,7 +14,7 @@ In this selected benchmark, protected inquiry validated and deployed the useful 
 - [Evaluation summary](results-evaluation/summary.json), [per-seed records](results-evaluation/runs.jsonl), and [audited analysis](results-evaluation/analysis.json).
 - [Scientific figure](results-evaluation/discovery-results.png), also available as [SVG](results-evaluation/discovery-results.svg).
 - [Initial development results](results-development-v1/summary.json) and [expanded development results](results-development/summary.json). Each development directory retains its exact simulation and protocol inputs.
-- [Mathematical audit](../../_process/research/2026-10-04-integrated-evolution/candidate-discovery-math.md), [design review](../../_process/research/2026-10-04-integrated-evolution/candidate-discovery-design-review.md), and [prior art](../../_process/research/2026-10-04-integrated-evolution/candidate-discovery-prior-art.md).
+- [Mathematical audit](../../_process/research/2026-10-04-integrated-evolution/candidate-discovery-math.md), [design review](../../_process/history/2026-10-04-integrated-evolution/candidate-discovery-design-review.md), and [prior art](../../_process/history/2026-10-04-integrated-evolution/candidate-discovery-prior-art.md).
 
 ## Reproduction
 

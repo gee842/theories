@@ -1,6 +1,6 @@
 # From absent variants to differential reconstruction
 
-6 October 2026. AI-authored development under Ren's unified-foundation roadmap. The [mathematical account](../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-MATH.md) joins paid variant formation and local consequence return in one law. The [protocol](PROTOCOL.md) records the analytically chosen fixture, its pre-run correction and the comparisons.
+6 October 2026. AI-authored development under Ren's unified-foundation roadmap. The [mathematical account](../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-MATH.md) joins paid variant formation and local consequence return in one law. The [protocol](PROTOCOL.md) records the analytically chosen fixture, its pre-run correction and the comparisons.
 
 Initially there are no response molecules and no associations. A damaged capture site can produce either of two response types at equal rates and equal cost. Either type can associate and copy; only A repairs. A repaired site captures real fuel, which its resident can spend on copying. Formation remains active whenever its physical conditions hold. No stage installs a preferred founder, a seeded contest, fresh precursor or replenished fuel.
 
@@ -51,7 +51,7 @@ python3 independent_check.py
 python3 formal/check.py
 ```
 
-[results.json](results.json) records nine primary arms, four fuel diagnostics, the clonal fixture and two source/work-cost comparisons. It preserves event counts, population observables, exact terminal rewards, path probabilities, source hashes and numerical enclosures. The independent checker reconstructs the process separately; its numerical agreement is not itself a proof of directed rounding. The [internal review](../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-REVIEW.md) states the accepted scope and limitations.
+[results.json](results.json) records nine primary arms, four fuel diagnostics, the clonal fixture and two source/work-cost comparisons. It preserves event counts, population observables, exact terminal rewards, path probabilities, source hashes and numerical enclosures. The independent checker reconstructs the process separately; its numerical agreement is not itself a proof of directed rounding. The [internal review](../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-REVIEW.md) states the accepted scope and limitations.
 
 The [Lean package](formal/README.md) adds 53 audited theorem declarations for discrete transitions: fuel and precursor accounting, formation ancestry, truthful copying, bootstrap and mixed-history resource bounds, the concrete mixed path, an appropriation counterpath and exact connection to the existing causal root. Kinetic propensities, stochastic expectations, negative-control variants and Python refinement are not mechanized by that package.
 

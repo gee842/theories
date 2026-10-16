@@ -2,7 +2,7 @@
 
 6 October 2026. [UpdaterFormation.lean](UpdaterFormation.lean) has **25 new checked declarations** under Lean 4.29.1. It imports the existing causal root, formed-variant process and selector-revision process from their actual repository files. Their audits are recorded as dependencies, not new theorems. The [verification record](verification.json) and [logs](verification/) identify the exact source and compiler bytes.
 
-The governing mathematical argument is [UPDATER-FORMATION-MATH.md](../../../../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-MATH.md). The [experiment protocol](../PROTOCOL.md) additionally supplies rates, probabilities, clocks and comparisons.
+The governing mathematical argument is [UPDATER-FORMATION-MATH.md](../../../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-MATH.md). The [experiment protocol](../PROTOCOL.md) additionally supplies rates, probabilities, clocks and comparisons.
 
 ## New event law
 

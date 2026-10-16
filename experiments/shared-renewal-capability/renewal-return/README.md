@@ -1,6 +1,6 @@
 # Exact checks for physical repair and return
 
-This experiment supports [Physical repair, succession and return after renewed capture](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/RENEWAL-RETURN.md).
+This experiment supports [Physical repair, succession and return after renewed capture](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/RENEWAL-RETURN.md).
 
 The [checker](exact_check.py) reuses the frozen, previously reviewed [allocation reaction implementation](../allocation/exact_check.py). It checks three specified physical return paths, the tagged original-Y replacement branch, their exact competing hazards, material and work accounting, and the full-turnover packet count. It also checks the stated entry fraction, damaged-state all-path upper bound and narrow C-path architecture ratio.
 

@@ -66,7 +66,7 @@ The [controlled-refinement result](CONTROLLED-REFINEMENT.md) supplies a reconstr
 
 ## What the material explanation contributes
 
-In the existing [regulation construction](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md), damage promotes resource-dependent formation of a repair mechanism. Repair restores access to a support source. Actual captured support can fund further copies of the mechanism. An analyst measures outcomes, but that measurement does not cause copying: the material return does.
+In the existing [regulation construction](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md), damage promotes resource-dependent formation of a repair mechanism. Repair restores access to a support source. Actual captured support can fund further copies of the mechanism. An analyst measures outcomes, but that measurement does not cause copying: the material return does.
 
 Removing the source can reverse the copying benefit while leaving the repair chemistry in place. A useful-looking response is not inherently rewarded. Its consequences must reach the actual machinery of retention. The scaffold, reaction repertoire, chemistry and starting resources remain local-model premises.
 

@@ -4,7 +4,7 @@
 
 ## Why this comparison advances the current question
 
-The [participation comparison](PARTICIPATION-CONSEQUENCE-COMPARATORS.md) examines material history affecting later coupling, while preserving a published challenge to the stronger memory interpretation. The existing [learning identification analysis](../../2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md) already distinguishes changed behavior, a fitted learning parameter, and a causally effective retained organization. Its [empirical application](../../../../theories/becoming/chapters/COST-SENSITIVE-LEARNING.md) leaves the third claim underidentified. The new comparator supplies a more direct physiological intervention at that interface. It does not replace the earlier study or retrospectively validate its mechanism.
+The [participation comparison](PARTICIPATION-CONSEQUENCE-COMPARATORS.md) examines material history affecting later coupling, while preserving a published challenge to the stronger memory interpretation. The existing [learning identification analysis](../../../history/2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md) already distinguishes changed behavior, a fitted learning parameter, and a causally effective retained organization. Its [empirical application](../../../../theories/becoming/chapters/COST-SENSITIVE-LEARNING.md) leaves the third claim underidentified. The new comparator supplies a more direct physiological intervention at that interface. It does not replace the earlier study or retrospectively validate its mechanism.
 
 The primary object is a continuing process in which previous activity alters what later activity can do. Calling one interval “priming” and another “conditioning” distinguishes their tested roles without making memory and learning fundamentally separate entities. Likewise, an experimentally isolated tissue remains dependent on its history and supporting conditions. There is no need to introduce payment, a separately owned register or an independently given evaluator as a foundation.
 
@@ -41,6 +41,6 @@ The [source package](../../../../sources/39-consequence-organization-2026-10-06/
 | Inspected local file | SHA-256 |
 |---|---|
 | [NONDUAL-METHOD](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) | `8d5bf4fe5063f2f4709e955bb90a1704416595dcc1b9afa560d6cc5e53fcb5e0` |
-| [UPDATER-IDENTIFICATION-MATH](../../2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md) | `aa8686d78214fa7e870d1b7b6762b1888cb3275191884adcf89ae73e345d958b` |
+| [UPDATER-IDENTIFICATION-MATH](../../../history/2026-10-05-support-and-shared-generativity/completion/UPDATER-IDENTIFICATION-MATH.md) | `aa8686d78214fa7e870d1b7b6762b1888cb3275191884adcf89ae73e345d958b` |
 | [COST-SENSITIVE-LEARNING](../../../../theories/becoming/chapters/COST-SENSITIVE-LEARNING.md) | `036596893052fcc3fdaae82cb29156b6dfe193e5cc3b85ed117f13119b698479` |
 | [PARTICIPATION-CONSEQUENCE-COMPARATORS](PARTICIPATION-CONSEQUENCE-COMPARATORS.md) | `bff793306cf5ea1cff15f18be14e168b35cf9c8a3d86c862699efc93bd29faf9` |

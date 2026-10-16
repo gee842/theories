@@ -24,8 +24,8 @@
 
 | 已有连接 | 已经建立的范围 | 不能由此替代的下一项 |
 |---|---|---|
-| [从缺席变体到差异再形成](../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) | 在同一材料历程中形成两种类型，修复改变实际支持，支持用于复制；保存失败及占用他方修复后果的历程。 | 响应类型为何对应社会性关切；所给复制规律怎样保存更丰富的回应组织。 |
-| [后果与相对保留](../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md) | 旧解析结果区分总体再形成和相对比例，给出局部访问及损耗的条件；其随机分析保留原验证级别。 | 旧手证没有自动成为新 Lean 证明，也没有证明全部长期方向。 |
+| [从缺席变体到差异再形成](../../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) | 在同一材料历程中形成两种类型，修复改变实际支持，支持用于复制；保存失败及占用他方修复后果的历程。 | 响应类型为何对应社会性关切；所给复制规律怎样保存更丰富的回应组织。 |
+| [后果与相对保留](../../../history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md) | 旧解析结果区分总体再形成和相对比例，给出局部访问及损耗的条件；其随机分析保留原验证级别。 | 旧手证没有自动成为新 Lean 证明，也没有证明全部长期方向。 |
 | [评价的形成、谱系与更新](../../../../experiments/valuation-development/README.md) | 其他关系进入评价、学习路线修订、继承支持、评价对再形成的实际作用，及从同一过程读取不同位置。 | 获得某种评价和保留某类组织，不自动形成从种系到个体发育的完整社会性能力解释。 |
 | [取得的评价在实际后继中继续作用](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md) | 已有实际后继取得先前形成的评价影响，并用新证据纠正手段、选择实际行动的有限共同历史。 | 这项继承／纠正已完成；仍需检验多种可传递回应组织在共同发展条件中为何受到差异选择，不能把所有后继功能的接合都列作缺失。 |
 | [整体实现与实践根据](WHOLE-PRACTICAL-GROUND-INTEGRATION.md) | 给定整体判断及真实实现的对应、范围与竞争解释得到精确分析。 | 留存统计不会独自供应首次伦理根据。 |

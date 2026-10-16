@@ -2724,7 +2724,7 @@ The [existing perspective-identification dossier](HUIGEN-HARM-IDENTIFICATION.md)
 
 ### The mechanism interface already achieved
 
-The accepted [acquired-applicability construction](../../2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md) gives a relevant conditional realization. Its sensor model remains correct while a use fails. The acquired consequence retains two possibilities—complemented application or absent transfer—and guides a discriminating next encounter. A matched reader clamp retains the same record but repeats the ineffective route. Misleading feedback can instead preserve a false interpretation and stop inquiry.
+The accepted [acquired-applicability construction](../../../history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-INTEGRATION.md) gives a relevant conditional realization. Its sensor model remains correct while a use fails. The acquired consequence retains two possibilities—complemented application or absent transfer—and guides a discriminating next encounter. A matched reader clamp retains the same record but repeats the ineffective route. Misleading feedback can instead preserve a false interpretation and stop inquiry.
 
 This is an inherited result, not a new ethical simulation. It shows one way consequences can change the application of retained knowledge without first falsifying that knowledge. Failure also does not establish the opposite application. The model supplies the candidate family, contact calibration, inquiry rule and productive undertaking; it does not derive a person's good or legitimate authority. Its native join is already completed at the declared finite scope and should not be reopened by this philosophical comparison.
 

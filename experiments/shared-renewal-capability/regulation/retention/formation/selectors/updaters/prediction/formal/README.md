@@ -2,7 +2,7 @@
 
 6 October 2026. [PredictionAction.lean](PredictionAction.lean) contains **34 new checked declarations** under Lean 4.29.1. It compiles the actual causal-root, formed-variant, selector and updater source modules as dependencies. The [verification record](verification.json) and [compiler logs](verification/) identify the checked source, checker, compiler and toolchain bytes.
 
-The [mathematical note](../../../../../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-MATH.md) connects these results to the research goal. The [protocol](../PROTOCOL.md) additionally specifies the complete probabilistic program, comparisons, skipped payments, circuit destruction and rebuilding.
+The [mathematical note](../../../../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/PREDICTION-ACTION-MATH.md) connects these results to the research goal. The [protocol](../PROTOCOL.md) additionally specifies the complete probabilistic program, comparisons, skipped payments, circuit destruction and rebuilding.
 
 ## Precise formal scope
 
