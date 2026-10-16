@@ -1,6 +1,6 @@
 # Mathematical identity under expanding interfaces
 
-6 October 2026. Finite mathematical checks supporting [the canonical study](../../../../../../theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md) and [general hand proofs](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-MATH.md). These checks add no empirical measurement or learning controller and do not rerun the earlier acquisition experiments.
+6 October 2026. Finite mathematical checks supporting [the canonical study](../../../../../../theories/becoming/history/IMMANENT-MATHEMATICAL-IDENTITY.md) and [general hand proofs](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-MATH.md). These checks add no empirical measurement or learning controller and do not rerun the earlier acquisition experiments.
 
 The [protocol](PROTOCOL.md) specifies the enumeration before execution. [check.py](check.py) enumerates every partial deterministic process with two actions and a Boolean output on one to three labeled states. It compares descending relation refinement with a separate breadth-first search for distinguishing continuations. It also enumerates every equivalence relation on each carrier to check the coarsest-congruence claim.
 

@@ -4,7 +4,7 @@
 
 **Result:** a retained state supports exact retrospective revision precisely when it preserves every distinction needed by the expanded compatibility calculation. An old-family belief need not do so. Fresh controlled observations can nevertheless identify a current model within a declared expanded family, while leaving the past explanation unresolved. For the retained three-cycle and a generated four-cycle extension, six consecutive readings, with five intervening actions and no reset, identify the current cycle, phase and observed-output parity within the stated class.
 
-The proofs are elementary deterministic compatibility and information arguments. They are not a new general learning algorithm, new Lean verification or evidence that a finite hypothesis family covers all physical possibilities. The preceding [access result](../../../../theories/becoming/chapters/EXPERIMENTAL-ACCESS.md) supplies the actual ancestry and resource boundary; its sensor/target ambiguity, source consumption, calibration assumptions and out-of-family failures remain in force.
+The proofs are elementary deterministic compatibility and information arguments. They are not a new general learning algorithm, new Lean verification or evidence that a finite hypothesis family covers all physical possibilities. The preceding [access result](../../../../theories/becoming/history/EXPERIMENTAL-ACCESS.md) supplies the actual ancestry and resource boundary; its sensor/target ambiguity, source consumption, calibration assumptions and out-of-family failures remain in force.
 
 ## 1. The retrospective question requires a specified evidence domain
 

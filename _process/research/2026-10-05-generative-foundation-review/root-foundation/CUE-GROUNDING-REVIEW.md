@@ -1,6 +1,6 @@
 # Review contract for external cues and recipient-directed action
 
-AI-authored independent assumption and interpretation review, 6 October 2026. This supports the empirical-identification requirement in [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). It does not edit or replace the separate [candidate audit](REASON-ACTION-EMPIRICAL-CANDIDATES.md). The physical recipient-command continuation is owned by the parallel action study.
+AI-authored independent assumption and interpretation review, 6 October 2026. This supports the empirical-identification requirement in [generative grounding](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md). It does not edit or replace the separate [candidate audit](REASON-ACTION-EMPIRICAL-CANDIDATES.md). The physical recipient-command continuation is owned by the parallel action study.
 
 **Status at creation:** prospective audit of the proposed public-data reanalysis, before this reviewer inspected dataset rows, computed estimates or the root analyst's results. The published article and its reported outcomes were already read. Accordingly this is an analysis-before-local-results contract, **not a preregistered or outcome-blind experiment**. Later review of actual outputs must be appended, preserving this contract.
 
@@ -99,6 +99,6 @@ Reviewed computational identities:
 
 Reviewed canonical SHA256, reconfirmed against current bytes: `b74dd8b8e92864a5bab5ddcb399c35c885dad72f1ba36a8899efbcd6ab378e35`.
 
-Read the complete [canonical statement](../../../../theories/becoming/chapters/RECIPIENT-CUE-GROUNDING.md) after numerical review. **Accepted at its stated scope, with no further correction required.** It now calls the 23/24 mismatch an unexplained sample-size discrepancy and does not establish an actual exclusion. It preserves retrospective exposure, preview/original distinctions, supplied inferential assumptions, simultaneous cue timing and the separation of food access from recipient welfare and future continuation.
+Read the complete [canonical statement](../../../../theories/becoming/history/RECIPIENT-CUE-GROUNDING.md) after numerical review. **Accepted at its stated scope, with no further correction required.** It now calls the 23/24 mismatch an unexplained sample-size discrepancy and does not establish an actual exclusion. It preserves retrospective exposure, preview/original distinctions, supplied inferential assumptions, simultaneous cue timing and the separation of food access from recipient welfare and future continuation.
 
 The kernel argument explicitly separates current conditional predictions from the full joint law: full-history conditioning, preserved observed assignment and relevant cross-unit dependence are required for sequence equivalence. It calls the alternative saturated and descriptive, with neither a fitted-simple-mechanism claim nor an absence-of-understanding conclusion. The empirical contrast survives as a bounded result while the stronger recipient-binding and concern transitions remain open. No additional calculations or original-data verification are claimed by this final prose review.

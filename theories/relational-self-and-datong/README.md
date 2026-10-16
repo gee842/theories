@@ -166,7 +166,7 @@ Citations: paths beginning `12-…`, `07-…`, `06-…`, `05-…`, `04-…`, `01
 
 36. AI must not be used for struggle; intelligence belongs to all humanity, for building 大同世界 and for everyone's welfare — this is stated as the root position of the 智善 organisation, whose theme set is 智能向善，共同富裕，人类命运共同体，大同世界，和谐，繁荣，稳定，生生. [value stance] (Ren's own) — `_process/reading-notes/out-cb-07.md` §§144, 146 (from `14-claude-code-prompts/Users-ren-repos-zhishan.md`, 2026-07-14); `06-zhishan/sheng/智善.md`
 
-37. Alignment and 大同 are isomorphic, stated at three levels: floor — AI and humans each not oriented toward the bad; middle — the field within [平, 和]; upper — flourishing across AI, humans and the ecosphere. 此即 alignment 与大同之同形. [design direction] — `theories/becoming/synthesis-a-downloads-2026.md` §113; `07-shengsheng-buxi/downloads-drafts-2026-05/生生不息论_间开本_v3.md` §三十九
+37. Alignment and 大同 are isomorphic, stated at three levels: floor — AI and humans each not oriented toward the bad; middle — the field within [平, 和]; upper — flourishing across AI, humans and the ecosphere. 此即 alignment 与大同之同形. [design direction] — `theories/becoming/history/lineage/shengsheng-buxi/synthesis-a-downloads-2026.md` §113; `07-shengsheng-buxi/downloads-drafts-2026-05/生生不息论_间开本_v3.md` §三十九
 
 38. Relational ontology is claimed to be the ontological form of cooperative infrastructure rather than an application of it: 「大同」不是间的远期愿景，「大同」是间的本体论 implication, and 人类命运共同体 is its spacetime structure (命运 = temporal worldline, 共同 = shared 間), so actors with interwoven worldlines in a shared 間 are *already* in a community of destiny. [design direction] — `08-jian-wen-language/downloads-2026-05/间.md` §九
 
@@ -450,9 +450,9 @@ This theory lives in conversation more than in drafts, so this section carries m
 
 - **What makes a recovery of older frames resistant to metabolisation** by the current dynamic? Provisional guess in the stance: practice has thickness where text does not. Uncertain, and load-bearing, because the theory's method is recovery. (same file)
 
-- **Conjecture 2 is the corpus's least careful inference.** That the precision of the character system implies a long selection history in a cooperative environment infers a history from a property that is largely a feature of the *reconstruction* (Cell256, the CoreAtoms) rather than of the transmitted texts. The README tiers it as conjecture; the surrounding prose does not always read as conjectural. (`theories/becoming/synthesis-b-ssbx-canon-and-history.md` §§144, 24)
+- **Conjecture 2 is the corpus's least careful inference.** That the precision of the character system implies a long selection history in a cooperative environment infers a history from a property that is largely a feature of the *reconstruction* (Cell256, the CoreAtoms) rather than of the transmitted texts. The README tiers it as conjecture; the surrounding prose does not always read as conjectural. (`theories/becoming/history/lineage/shengsheng-buxi/synthesis-b-ssbx-canon-and-history.md` §§144, 24)
 
-- **大道之行 argues from a specific state's institutional capacity** — China's ability to do top-level design, with 精准扶贫 as proof — in a corpus whose central doctrine is that concentrated, weakly-checked power is the paradigm case of a totalising attractor, and whose own rule is 力愈大者，受调当愈严. The tension is never addressed. It also sits oddly with claim 29's insistence that 命运共同体 requires no sovereignty transfer. (`theories/becoming/synthesis-a-downloads-2026.md` §16; `07-shengsheng-buxi/downloads-2026-07-08/2026-03-31-大道之行.md` 四)
+- **大道之行 argues from a specific state's institutional capacity** — China's ability to do top-level design, with 精准扶贫 as proof — in a corpus whose central doctrine is that concentrated, weakly-checked power is the paradigm case of a totalising attractor, and whose own rule is 力愈大者，受调当愈严. The tension is never addressed. It also sits oddly with claim 29's insistence that 命运共同体 requires no sovereignty transfer. (`theories/becoming/history/lineage/shengsheng-buxi/synthesis-a-downloads-2026.md` §16; `07-shengsheng-buxi/downloads-2026-07-08/2026-03-31-大道之行.md` 四)
 
 - **The bonfire self may be liberalism in Ubuntu clothing.** If the minimum viable self is whoever shows up at the fire, constitution is by participation — but participation is *chosen*, and Ubuntu's constitution is not. The Confucian objection: without 礼, the gathering disperses at dawn. Unanswered. (`12-claude-ai-chats/2026-04-11_Cultural_perspectives_on_individualism_and_collectivism_95242c5d.md`)
 
@@ -551,9 +551,9 @@ This theory lives in conversation more than in drafts, so this section carries m
 **Synthesis sections that carry this material** (relative to `/Users/ren/theories/`)
 
 - `theories/memories-and-working-style/synthesis-all.md` §§11–15, §139, §§210–212, §309 — the frameworks that survive only in memory summaries, the terms table, the live `datong.to` domain, and the note that the relational self and the drives work are stranded.
-- `theories/becoming/synthesis-a-downloads-2026.md` §§209, 274–282, §16, §582 — the 大道之行 material, 大同 as recoverable dynamic condition, and the institutional-capacity tension.
-- `theories/becoming/synthesis-b-ssbx-canon-and-history.md` §§36–37, 42, 59, 71–73, 144, and the §144 caution — 共开, 夺, 和 = 共开 ∧ 流 ∧ ¬状态夺 ∧ 存异, 大同 ≠ 通吃, the 人类命运共同体 iff, Conjecture 2 and its critique.
-- `theories/becoming/synthesis-c-ssbx-yili-and-formal-doctrine.md` §269 and the value-extraction passage — how ethics is extracted as invariants of a kernel rather than added as axioms.
+- `theories/becoming/history/lineage/shengsheng-buxi/synthesis-a-downloads-2026.md` §§209, 274–282, §16, §582 — the 大道之行 material, 大同 as recoverable dynamic condition, and the institutional-capacity tension.
+- `theories/becoming/history/lineage/shengsheng-buxi/synthesis-b-ssbx-canon-and-history.md` §§36–37, 42, 59, 71–73, 144, and the §144 caution — 共开, 夺, 和 = 共开 ∧ 流 ∧ ¬状态夺 ∧ 存异, 大同 ≠ 通吃, the 人类命运共同体 iff, Conjecture 2 and its critique.
+- `theories/becoming/history/lineage/shengsheng-buxi/synthesis-c-ssbx-yili-and-formal-doctrine.md` §269 and the value-extraction passage — how ethics is extracted as invariants of a kernel rather than added as axioms.
 - `theories/alignment-selection-on-cognition/synthesis-all.md` §§35–36, 51, 137, 145, 160, 187, 194 — dualism, codification, asymmetric scrutiny, and the counterexample ledger.
 - `theories/keep-the-possibility-space-open/synthesis-all.md` §§12–14, 316 — the FOUNDATION lineage and the demotion of relationality to a lens.
 - `theories/jian-and-wenyan-as-formal-language/synthesis-a-jian-repo.md` §391 and `synthesis-b-jian-ontology-and-wen-language-downloads.md` §§20, 28, 296 — 位由际定, the 五常 given a relational ontology, and 大同 as ontological implication.

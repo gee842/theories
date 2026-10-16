@@ -362,7 +362,7 @@ Imports: `CompositionalFormation`
 <details>
 <summary>CoreTreeRearticulation.lean — 7 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean) · [理论 / Theory](../../chapters/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean) · [理论 / Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean`
 

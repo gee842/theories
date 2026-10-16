@@ -349,7 +349,7 @@
 
 **形成出的伦理地位 / Formed standing，2026-10-08。** M20 成对追加[当前理论](../../../../theories/becoming/chapters/ETHICAL-LEARNING.md#formed-ethical-standing)与[论证、原典及反审](ETHICAL-LEARNING-INTEGRATION.md#formed-standing-argument)：新生活、承受与参与改变旧服务安排的根据，地位与权力分列。/ No new theorem, empirical status verdict or independent acceptance. Prior document prefixes and all earlier M20 material are retained; only authored/read versions and owned insertions are updated. [Edits](FORMED-STANDING-INDEX-EDITS.json); [scoped checks](FORMED-STANDING-CHECKS.json). No full-table freshness or schedule is claimed.
 
-**后天基本条件 / Acquired basic conditions，2026-10-08。** M20 成对追加[理论接续](../../../../theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)与[论证及反审](FORMED-BASIC-CONDITIONS-INTEGRATION.md)：基本保护依实际生活作用判定，历史形成、载体必要性与有界承担分列。/ No new theorem or empirical replication. Only owned content, one new study discovery path and authored/read source hashes change; all previous M20 content and other rows are preserved. [Edits](FORMED-BASIC-CONDITIONS-INDEX-EDITS.json) and [scoped checks](FORMED-BASIC-CONDITIONS-CHECKS.json) retain pending concurrent reviews.
+**后天基本条件 / Acquired basic conditions，2026-10-08。** M20 成对追加[理论接续](../../../../theories/becoming/history/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)与[论证及反审](FORMED-BASIC-CONDITIONS-INTEGRATION.md)：基本保护依实际生活作用判定，历史形成、载体必要性与有界承担分列。/ No new theorem or empirical replication. Only owned content, one new study discovery path and authored/read source hashes change; all previous M20 content and other rows are preserved. [Edits](FORMED-BASIC-CONDITIONS-INDEX-EDITS.json) and [scoped checks](FORMED-BASIC-CONDITIONS-CHECKS.json) retain pending concurrent reviews.
 
 **局部对齐与共同破坏 / Local alignment and collective destruction，2026-10-08。** M24 成对追加[第一构造与作者反审](COLLECTIVE-DESTRUCTION-INTEGRATION.md)：32项新 Lean 定理／41项审计，局部目标忠实、有限吸引、平局失败及严格保护分别明示。/ Only the owned M24 suffixes, new evidence links and actually read new source hashes change. Existing results and unrelated rows are preserved. [Owned edits](COLLECTIVE-DESTRUCTION-INDEX-EDITS.json) and [scoped checks](COLLECTIVE-DESTRUCTION-CHECKS.json) do not certify concurrently changed sources; full-table review remains separate.
 
@@ -371,7 +371,7 @@
 
 **整体推导的前提消去 / Discharging premises through the whole，2026-10-08。** C01 成对接入[消前提的正面程序及限度](DEDUCTIVE-FOUNDATION-TEST.md#7-can-the-developed-whole-discharge-its-own-basis)：五项实查定理（含旧健全性重证）／七项新空审计；继承17项报告分列。/ Only the owned row, four actually read owned source versions and owned shared insertions change. No new discovery page is added, and no full-table or independent-agent certification is claimed. [Edits](WHOLE-DISCHARGE-INDEX-EDITS.json); [checks](WHOLE-DISCHARGE-CHECKS.json).
 
-**关切内容的理论扩展 / Theoretical extension of concern，2026-10-08。** M20 成对接入[正面论证、原典与反审](CONCERN-EXTENSION-INTEGRATION.md)及[当前理论](../../../../theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md)：复用并完整保留并行伦理学习主章，以8项泛型新定理／9项空依赖新审计补充比较接口；继承30项实践定理／46项审计分列。/ Only M20, owned discovery pages and read source changes are maintained; other rows and pending reviews remain intact. [Owned edits](CONCERN-EXTENSION-INDEX-EDITS.json) and [scoped checks](CONCERN-EXTENSION-CHECKS.json) record preservation and full-table limits. No new empirical study, independent acceptance or automation is claimed.
+**关切内容的理论扩展 / Theoretical extension of concern，2026-10-08。** M20 成对接入[正面论证、原典与反审](CONCERN-EXTENSION-INTEGRATION.md)及[当前理论](../../../../theories/becoming/history/CONCERN-AND-NEW-REASONS.md)：复用并完整保留并行伦理学习主章，以8项泛型新定理／9项空依赖新审计补充比较接口；继承30项实践定理／46项审计分列。/ Only M20, owned discovery pages and read source changes are maintained; other rows and pending reviews remain intact. [Owned edits](CONCERN-EXTENSION-INDEX-EDITS.json) and [scoped checks](CONCERN-EXTENSION-CHECKS.json) record preservation and full-table limits. No new empirical study, independent acceptance or automation is claimed.
 
 **伦理学习的理论连接 / Ethical learning，2026-10-08。** M20 成对追加[当前论述](../../../../theories/becoming/chapters/ETHICAL-LEARNING.md)及[整合与作者反审](ETHICAL-LEARNING-INTEGRATION.md)：发现已有根据、形成新生活与理由、修订评价承诺分列，保留真实损失及正当安顿。/ No new theorem or empirical claim. Only the owned M20 suffixes, two new links, authored/read source versions and two discovered study pages change. Existing results, parallel M20 additions and unrelated rows are preserved. [Owned edits](ETHICAL-LEARNING-INDEX-EDITS.json) and [scoped checks](ETHICAL-LEARNING-CHECKS.json) do not certify unrelated source freshness.
 
@@ -604,7 +604,7 @@ Added C26/F18 for the renewed, unfinished target and its restricted formal resul
 
 ## 持续生活—共同判断连接 / Sustained living–judgment connection
 
-2026-10-08。新增 C27、F19，记录[持续生活组织与共同判断](../../../../theories/becoming/chapters/SUSTAINED-LIVING-JUDGMENT.md)的明确公理连接、29项新定理／39项新声明审计与完成后独立评审。一般组织变化分配、有限供给、部分能力、明确时段及替代贡献者保留；时段可实现性与伦理／生活对应仍需实际校准。并行零公理、形成可能性及生命分配研究条目全部保留；不重写其他会话的完成范围或完整成果目录。
+2026-10-08。新增 C27、F19，记录[持续生活组织与共同判断](../../../../theories/becoming/history/SUSTAINED-LIVING-JUDGMENT.md)的明确公理连接、29项新定理／39项新声明审计与完成后独立评审。一般组织变化分配、有限供给、部分能力、明确时段及替代贡献者保留；时段可实现性与伦理／生活对应仍需实际校准。并行零公理、形成可能性及生命分配研究条目全部保留；不重写其他会话的完成范围或完整成果目录。
 
 Added C27/F19 for the independently accepted sustained-living/collective-judgment connection. Retained changing-organization allocation, finite provision, partial competence, explicit epoch assumptions, alternative contributors and actual optional losses. Source binding and local links are checked by this study's receipt; no field validation is claimed. Concurrent entries remain intact.
 
@@ -670,7 +670,7 @@ Updated only the paired claims, scope and links in C28/F20; [the change snapshot
 
 ## 生成关系的解释必要性 / Generative explanatory necessity
 
-2026-10-08。新增 C30/F22，接入[当前必要性研究](../../../../theories/becoming/chapters/EXPLANATORY-NECESSITY.md)、[论证、实质自我反审与来源](EXPLANATORY-NECESSITY-INTEGRATION.md)和17项新 Lean 定理／42项含继承审计。区分答案可恢复性、形成、解释优先性与普遍构成；保留仅可行性不足、粗配置的整体约束不可组合、保留历史后的恢复，以及同内容的约束对手。普遍必要性与唯一性未证，未改变任何伦理路线的完成范围。
+2026-10-08。新增 C30/F22，接入[当前必要性研究](../../../../theories/becoming/history/EXPLANATORY-NECESSITY.md)、[论证、实质自我反审与来源](EXPLANATORY-NECESSITY-INTEGRATION.md)和17项新 Lean 定理／42项含继承审计。区分答案可恢复性、形成、解释优先性与普遍构成；保留仅可行性不足、粗配置的整体约束不可组合、保留历史后的恢复，以及同内容的约束对手。普遍必要性与唯一性未证，未改变任何伦理路线的完成范围。
 
 Added paired C30/F22 after reading the new source, proof output and argument. [Mutation record](EXPLANATORY-NECESSITY-INDEX-EDITS.json) preserves all 76 prior entries and records only this study’s insertions into shared navigation and the derivation map. Newly written sources were read before recording their fingerprints; pre-insertion shared-file hashes matched the prior reviewed versions. Only this study’s two new research/theory pages entered the inspected discovery list; the concurrent knowledge page remains with its maintainer. Rendering and checking passed for 78 entries / 174 reviewed source versions. This is research-linked maintenance, with no schedule or full-results-catalogue regeneration. No independent-agent review is claimed.
 

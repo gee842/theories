@@ -4,7 +4,7 @@
 
 ## Relation to completed work
 
-The [joint-formation obstructions](../../../../theories/becoming/chapters/JOINT-OBSTRUCTIONS.md#obstruction-2-self-only-evidence-cannot-identify-other-directed-routing) already show that identical self-related evidence cannot uniquely select shared evaluation over identity-gated evaluation. Their positive construction compares the expense of suppression with anticipated protective expenditure. The [access mathematics](../../../history/2026-10-05-revisable-concern/access-math.md) already supplies exact interruption-cost and cash-feasibility results. Repeating either argument would not add a new connection.
+The [joint-formation obstructions](../../../../theories/becoming/history/JOINT-OBSTRUCTIONS.md#obstruction-2-self-only-evidence-cannot-identify-other-directed-routing) already show that identical self-related evidence cannot uniquely select shared evaluation over identity-gated evaluation. Their positive construction compares the expense of suppression with anticipated protective expenditure. The [access mathematics](../../../history/2026-10-05-revisable-concern/access-math.md) already supplies exact interruption-cost and cash-feasibility results. Repeating either argument would not add a new connection.
 
 This note identifies a different interpretation problem: a private evaluator can protect a powerless patient because it does not yet know whose harm it is observing. Such conduct can resemble shared concern while depending entirely on uncertainty about private exposure. The proposed intervention distinguishes that explanation from some alternatives; it does not identify every cause of helping.
 

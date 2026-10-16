@@ -6,7 +6,7 @@ The contribution to the universal normative investigation is precise: it tests w
 
 ## Existing work reused and preserved
 
-[GENERATIVE-SELECTION §1](../../../../theories/becoming/chapters/GENERATIVE-SELECTION.md#1-shared-dependence-and-the-selection-of-its-maintenance) already distinguishes support's physical importance from the relative retention of its producers. Its additive-common-return cancellation and its conditional constructive mechanisms remain credited. This new multiplier law is different: neither the old neutrality formula nor its stronger convergence hypotheses silently transfers here.
+[GENERATIVE-SELECTION §1](../../../../theories/becoming/history/GENERATIVE-SELECTION.md#1-shared-dependence-and-the-selection-of-its-maintenance) already distinguishes support's physical importance from the relative retention of its producers. Its additive-common-return cancellation and its conditional constructive mechanisms remain credited. This new multiplier law is different: neither the old neutrality formula nor its stronger convergence hypotheses silently transfers here.
 
 [Consequence-retention selection](../../../history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md) already gives a more detailed material route through formed access, repair and competing copying, including wear and transfer to an alternative structure. Its analytical stochastic results retain their original validation scope; this new small Lean interface is not a retrospective migration of that study.
 

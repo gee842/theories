@@ -4,7 +4,7 @@
 
 ## Comparison at the right level
 
-The [current grounding argument](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md) establishes a conditional connection between a materially formed disposition and an independently warranted response on the same history. [Plasticity](../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md) explains formation and use of an operative connection; it also contains a matched revision that suppresses effective, affordable help. The [completion assessment, §15](../root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate) explicitly limits adequacy to the conditional candidate. It does not certify general reliable moral learning or an effective general governance arrangement. This comparison neither retracts that acceptance nor adds another prerequisite to it.
+The [current grounding argument](../../../../theories/becoming/history/EVALUATIVE-GROUNDING.md) establishes a conditional connection between a materially formed disposition and an independently warranted response on the same history. [Plasticity](../../../../theories/becoming/history/EVALUATIVE-PLASTICITY.md) explains formation and use of an operative connection; it also contains a matched revision that suppresses effective, affordable help. The [completion assessment, §15](../root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate) explicitly limits adequacy to the conditional candidate. It does not certify general reliable moral learning or an effective general governance arrangement. This comparison neither retracts that acceptance nor adds another prerequisite to it.
 
 **Wagner.** The paper proposes human authorization, an isolated private AI and external evidence services, with challenge, recourse and exit. It is a conceptual design pattern, not an observed safety advantage. Bounded reciprocity requires observability and credible responses; conforming arrangements can still perform poorly. Its stated exclusions include solving inner alignment, deception or value aggregation. The strongest local contribution is an inspectable allocation of roles, boundaries and rejection conditions, with comparative value left to testing. [Primary article, especially §§3–10](https://link.springer.com/article/10.1007/s43681-026-01362-2).
 
@@ -69,8 +69,8 @@ The [source record](FRONTIER-RELATIONAL-SOURCES.json) records URLs, access modes
 
 | Inspected local artifact | SHA-256 |
 |---|---|
-| [Evaluative grounding](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md) | `b8d89086044825cfca9ea64edc296fb12d4bce25344af5aede6a24bc41df9d3b` |
-| [Plasticity](../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md) | `f6e4033286f0e23238f0ac38c3893575e6ed728bf5c12d0230c19ad35e07a523` |
-| [Current grounding status](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) | `c2c6e08ff2ecca7bafae51df49b892864d0a913a90d4e16c5548b96053bcf793` |
+| [Evaluative grounding](../../../../theories/becoming/history/EVALUATIVE-GROUNDING.md) | `b8d89086044825cfca9ea64edc296fb12d4bce25344af5aede6a24bc41df9d3b` |
+| [Plasticity](../../../../theories/becoming/history/EVALUATIVE-PLASTICITY.md) | `f6e4033286f0e23238f0ac38c3893575e6ed728bf5c12d0230c19ad35e07a523` |
+| [Current grounding status](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md) | `c2c6e08ff2ecca7bafae51df49b892864d0a913a90d4e16c5548b96053bcf793` |
 | [Fixed completion assessment, §15](../root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate) | `da266f302153c33dc9932e53465153e76efd928f3d4118b5534d09333061ec79` |
 | [Preserved Springer HTML](../../../../sources/36-relational-alignment-comparators-2026-10-06/original/wagner-springer.html) | `df24ed45300a1ee7ced96704ce3c66a18148921ae3a24be2f0debf8bc257579c` |

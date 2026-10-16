@@ -6,7 +6,7 @@
 
 **Current integration, 13 October 2026:** registration, testing, generalization, bounded identification and structural reconstruction now have checked statements on the shared Becoming spine. [Section 9](#9-necessity-on-the-unified-spine) maps their outputs to this foundational claim and tests the inference against the core's own branching counterexample. Their local completion is retained; the science-wide indispensability of the full core remains open. Earlier dated assessments below must be read with this update.
 
-The named connection in the [governing derivation](GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work) is **formed evidence-responsive learning → warranted and revisable inquiry → correction of selectors and reasons**. The study advances the conceptual and mathematical interface. Calibration, the relevant law class, claim meanings, some material recipes and ethical relevance remain supplied. It neither completes their formation nor replaces the wider goal of deriving organization, significance, learning, concern and wisdom.
+The named connection in the [governing derivation](../history/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work) is **formed evidence-responsive learning → warranted and revisable inquiry → correction of selectors and reasons**. The study advances the conceptual and mathematical interface. Calibration, the relevant law class, claim meanings, some material recipes and ethical relevance remain supplied. It neither completes their formation nor replaces the wider goal of deriving organization, significance, learning, concern and wisdom.
 
 ## 1. The conjecture and its exact direction
 
@@ -32,7 +32,7 @@ This retains the original direction. The reciprocal obligation to revise our fou
 
 ## 2. Why the connection is substantive
 
-The [common foundation](FOUNDATION-PREMISES.md) places instruments, observations, learned models and evaluations within the reality they affect. The earlier formulation 像亦象也 gives this a concise genealogy: a model is itself part of consequential activity. Inquiry can alter its instruments, the world it investigates, the records it inherits and the rules used to admit subsequent claims.
+The [common foundation](../history/FOUNDATION-PREMISES.md) places instruments, observations, learned models and evaluations within the reality they affect. The earlier formulation 像亦象也 gives this a concise genealogy: a model is itself part of consequential activity. Inquiry can alter its instruments, the world it investigates, the records it inherits and the rules used to admit subsequent claims.
 
 That supports a connected explanatory sequence:
 
@@ -97,7 +97,7 @@ If each completed inquiry consumes at least (c>0) units of an identified support
 cN(t)\le B_0+P(t).
 \]
 
-Unbounded inquiry under these premises requires unbounded cumulative provision. The implication depends on the cost and accounting law: a durable record need not be rewritten constantly, and costs approaching zero can have finite total. The [conditional-universality study](CONDITIONAL-UNIVERSALITY.md) gives broader support laws and their explicit exceptions.
+Unbounded inquiry under these premises requires unbounded cumulative provision. The implication depends on the cost and accounting law: a durable record need not be rewritten constantly, and costs approaching zero can have finite total. The [conditional-universality study](../history/CONDITIONAL-UNIVERSALITY.md) gives broader support laws and their explicit exceptions.
 
 These are conditions of performing inquiry. They do not make the surviving belief true. The preserved [counterexample](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INVARIANCE-AND-PRIOR-ART.md#6-what-follows-for-truth-reasonableness-and-universality) gives two identically maintained machines with different unread propositions, one true and one false. Their persistence cannot adjudicate the propositions.
 
@@ -149,7 +149,7 @@ Scientific inquiry supplies a concrete setting for selection over selectors: inv
 
 The [recipient-identification study](../../../_process/research/2026-10-05-concern-theory/RECIPIENT-IDENTIFICATION-INTEGRATION.md) exposes the immediate semantic issue. Under its no-false-positive law, a positive receipt qualifies a target correspondence. A zero can mean an unavailable opportunity and does not establish a wrong target. It cannot be supplied as a sound negative assay to a reason-revision procedure.
 
-The concurrent [record-to-reason construction](RECORDED-REASONS.md) makes the next distinction explicit: a retained observation supports a factual claim under an assay law; a separately justified relevance relation connects that fact to a reason; a paid procedure reconstructs which reasons remain supported. Its own live status and verification obligations belong to that document. This philosophical study neither certifies nor duplicates the parallel implementation.
+The concurrent [record-to-reason construction](../history/RECORDED-REASONS.md) makes the next distinction explicit: a retained observation supports a factual claim under an assay law; a separately justified relevance relation connects that fact to a reason; a paid procedure reconstructs which reasons remain supported. Its own live status and verification obligations belong to that document. This philosophical study neither certifies nor duplicates the parallel implementation.
 
 The new [mechanism note](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md) provides the compatibility requirements for that join: target and context identity, complete information, unknown versus negative evidence, sampling and error guarantees, actual costs, and successor access. It does not install a true label, ethical anchor or incentive to preserve faithful evidence.
 
@@ -179,7 +179,7 @@ The following table records the 6 October study's scope; the completed mechanism
 
 Revision is required if an identified realization violates a purported necessary condition with unchanged meanings and premises; if the proof uses an unavailable oracle or hidden support; if a translation erases a rival's real disagreement; or if the alleged common root contributes no constraint beyond unrestricted redescription. A failed calibration changes the application claim; a counterexample to the necessity argument changes the foundation. Both must remain in the record.
 
-The completed work here is a bounded conceptual, mathematical and primary-source research round. It includes hand proofs, countermodels, a literature comparison and an empirical identification proposal. It adds no new Lean verification or empirical experiment. The supporting notes record access limitations, internal review and links; the [unified completion conditions](GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation) remain in force.
+The completed work here is a bounded conceptual, mathematical and primary-source research round. It includes hand proofs, countermodels, a literature comparison and an empirical identification proposal. It adds no new Lean verification or empirical experiment. The supporting notes record access limitations, internal review and links; the [unified completion conditions](../history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation) remain in force.
 
 
 ## Fallible inquiry and necessary relational constraints

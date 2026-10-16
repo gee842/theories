@@ -1,6 +1,6 @@
 # A typed construction interface for the existing predictor
 
-6 October 2026. AI-authored mathematical companion to the [typed predictive construction](../../../../theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md). Named connection: **actual formation of shared components → updater and selector construction → reserved finite register → paid prediction, correction and action with component-limited updater replacement**.
+6 October 2026. AI-authored mathematical companion to the [typed predictive construction](../../../../theories/becoming/history/MATERIAL-PREDICTION-COMPOSITION.md). Named connection: **actual formation of shared components → updater and selector construction → reserved finite register → paid prediction, correction and action with component-limited updater replacement**.
 
 The operational target is the existing `PredictionAction.lean` relation, with its explicit payable-write phases. This is a conditional construction interface to that law. It does not change the predictor algorithm or inherit the broader Python experiment's outages, skipped writes, memory erasure, circuit reconstruction or probabilities.
 

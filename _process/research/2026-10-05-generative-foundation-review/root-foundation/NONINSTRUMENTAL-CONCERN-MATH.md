@@ -1,6 +1,6 @@
 # 非工具性关切：独立规范根据与有成本行动的形式接口
 
-2026年10月6日。AI 撰写。此研究推进“患者的实际处境 → 不以行动者先行私人目的或角色为条件的理由 → 可纠正的实际回应”。它连接[统一伦理根基](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md)的 C1/C2 候选与现有生成核心，不重复[理由传递](HUIGEN-REASON-TRANSPORT.md)的可达性定理，也不将心学的历史解释写成数学公理。
+2026年10月6日。AI 撰写。此研究推进“患者的实际处境 → 不以行动者先行私人目的或角色为条件的理由 → 可纠正的实际回应”。它连接[统一伦理根基](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md)的 C1/C2 候选与现有生成核心，不重复[理由传递](HUIGEN-REASON-TRANSPORT.md)的可达性定理，也不将心学的历史解释写成数学公理。
 
 实现与单一重跑入口见[实验说明](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)。最终编译、源哈希与独立重建状态由该目录的验证记录确定；本文给出命题内容及适用范围，不以命题数量替代理论证据。
 

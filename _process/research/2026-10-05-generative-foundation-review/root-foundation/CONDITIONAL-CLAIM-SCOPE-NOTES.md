@@ -60,8 +60,8 @@ SHA-256 values below hash the authoritative **Git blob bytes at the commit above
 
 | ID and source | SHA-256 |
 |---|---|
-| [G: governing completion conditions](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) | `004a3e5ecf016eaf8f11e5aca748cacc2210d56f57bf50bcf6abdc57c9c661cb` |
-| [P: premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) | `7075ca4d06f40a85bd530e39b3dddfad0a6278a1d32039026960705fdabbbfce` |
+| [G: governing completion conditions](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md) | `004a3e5ecf016eaf8f11e5aca748cacc2210d56f57bf50bcf6abdc57c9c661cb` |
+| [P: premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md) | `7075ca4d06f40a85bd530e39b3dddfad0a6278a1d32039026960705fdabbbfce` |
 | [N: ResourceContinuation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean) | `4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e` |
 | [NR: continuation verification receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/verification.json) | `1b49527f4c3c3dd2d29595b4542ae0c4831974d8f0a17dbe5cc1ad61ca55cfd9` |
 | [C: FormedSelection.lean](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean) | `a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37` |
@@ -80,8 +80,8 @@ SHA-256 values below hash the authoritative **Git blob bytes at the commit above
 | [M: bounded-identification mathematics](../../2026-10-05-concern-theory/reward-association/BOUNDED-IDENTIFICATION-MATH.md) | `cc625868805bb5f0956d3c86826e94b7d8d15c50d98806a66d269ae2a519ac0f` |
 | [MR: bounded-identification review receipt](../../2026-10-05-concern-theory/reward-association/bounded-identification-review.json) | `d7f2c7d3daf72e00becb10ecf8d97d8284556e2a127705b6de29442061f0c9b8` |
 
-[G]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md
-[P]: ../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md
+[G]: ../../../../theories/becoming/history/GENERATIVE-GROUNDING.md
+[P]: ../../../../theories/becoming/history/FOUNDATION-PREMISES.md
 [N]: ../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean
 [NR]: ../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/verification.json
 [C]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean

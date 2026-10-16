@@ -1,6 +1,6 @@
 # Joint participant allocation, reconstruction and later reuse
 
-8 October 2026, Asia/Bangkok. AI-authored continuation of [living dependencies](../../../../theories/becoming/chapters/LIVING-DEPENDENCIES.md). The target connection is **partial competence and joint support → specified activity across successive reached conditions**. Source: [LivingAllocation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean).
+8 October 2026, Asia/Bangkok. AI-authored continuation of [living dependencies](../../../../theories/becoming/history/LIVING-DEPENDENCIES.md). The target connection is **partial competence and joint support → specified activity across successive reached conditions**. Source: [LivingAllocation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean).
 
 **Result:** arbitrary declared reaction families admit a general allocation and serialization theorem. A jointly allocated batch has an admissible serialization in the original reaction process; participant uses are bounded by the inventory from which they are jointly allocated. Across successive batches, actual positive increases of the selected count can enlarge later allocations. Concrete checked histories distinguish present activity, reconstruction, shared support and subsequent reuse. **16 new named theorems / 32 explicit declarations pass Lean 4.29.1, with 107 declaration audits across the three-module closure.**
 

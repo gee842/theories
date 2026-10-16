@@ -1,6 +1,6 @@
 # Latitude under continuing need: integration and goal audit
 
-6 October 2026. AI-authored continuation of the [universal ethical minimum](../../../../theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md). The exact active objective remains **move toward the establishment of a universal ethical minimum compatible with plural worthwhile lives**. The selected connection is **bounded rescue duty → justified limits where real severe needs, substantial self-direction and actual noncompliance coexist**.
+6 October 2026. AI-authored continuation of the [universal ethical minimum](../../../../theories/becoming/history/UNIVERSAL-ETHICAL-MINIMUM.md). The exact active objective remains **move toward the establishment of a universal ethical minimum compatible with plural worthwhile lives**. The selected connection is **bounded rescue duty → justified limits where real severe needs, substantial self-direction and actual noncompliance coexist**.
 
 ## Previous-turn classification and current evidence
 

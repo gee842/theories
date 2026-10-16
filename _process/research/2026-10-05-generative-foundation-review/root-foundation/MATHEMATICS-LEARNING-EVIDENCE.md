@@ -1,6 +1,6 @@
 # Mathematical learning: evidence, comparators and the claim boundary
 
-6 October 2026. AI-authored evidence review for Ren's request to investigate how far the relationship between the theory and mathematics can be claimed. This is a supporting empirical/comparator strand for [Mathematics and generative grounding](../../../../theories/becoming/chapters/MATHEMATICS-AND-GENERATIVITY.md), within the [governing derivation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). It addresses **acquired prediction → reusable mathematical abstraction → warranted inference**. It is a literature and assumption review, not a new experiment, replication, systematic review or claim of priority.
+6 October 2026. AI-authored evidence review for Ren's request to investigate how far the relationship between the theory and mathematics can be claimed. This is a supporting empirical/comparator strand for [Mathematics and generative grounding](../../../../theories/becoming/history/MATHEMATICS-AND-GENERATIVITY.md), within the [governing derivation](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md). It addresses **acquired prediction → reusable mathematical abstraction → warranted inference**. It is a literature and assumption review, not a new experiment, replication, systematic review or claim of priority.
 
 ## What the evidence permits
 

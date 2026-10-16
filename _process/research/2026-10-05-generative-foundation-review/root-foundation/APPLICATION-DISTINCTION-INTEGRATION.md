@@ -99,7 +99,7 @@ explanation rather than a separate resource preface.
 The study also narrows the next unresolved transition. The controller still
 receives its contact opportunity, consistency-inquiry policy, handoff rule,
 available phase repertoire, implementation recipe and correspondence conditions.
-The completed [method-formation result](../../../../theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md) supplies a distinct conditional route from tried evidence to a formed method connection; it cannot be spliced into this depleted endpoint by copying its successful state. The next connection is **acquired dependency evidence → formation or selection of an informative inquiry that preserves conditions for the subsequent response**. It can be investigated within an existing organization; an endless hierarchy of new controllers is not required.
+The completed [method-formation result](../../../../theories/becoming/history/AUTONOMOUS-METHOD-FORMATION.md) supplies a distinct conditional route from tried evidence to a formed method connection; it cannot be spliced into this depleted endpoint by copying its successful state. The next connection is **acquired dependency evidence → formation or selection of an informative inquiry that preserves conditions for the subsequent response**. It can be investigated within an existing organization; an endless hierarchy of new controllers is not required.
 
 No ethical reason is inferred from capture of an abstract support quantity.
 Concern, legitimate governance, the origin of the new local laws and the stronger

@@ -19,7 +19,7 @@ One event can participate in several relations. None follows merely from renamin
 
 ## The matched history reaches actual sampling
 
-The strongest saved comparison comes from [method revision](../../../../theories/becoming/chapters/METHOD-REVISION.md). Two controls share the same three-state process, actual resource arrival, misleading zero receipt and earlier native sequence. In one, the acquired receipt changes the retained method bit; in the other, a matched write operation leaves the bit unchanged. Later dispatch reads that retained bit.
+The strongest saved comparison comes from [method revision](../../../../theories/becoming/history/METHOD-REVISION.md). Two controls share the same three-state process, actual resource arrival, misleading zero receipt and earlier native sequence. In one, the acquired receipt changes the retained method bit; in the other, a matched write operation leaves the bit unchanged. Later dispatch reads that retained bit.
 
 The changed method generates a larger family. Under the same supplied rule for continuing until a unique candidate remains, it requires four acquisition readings rather than three. Both branches subsequently confirm their prediction. This is an existing matched execution: the acquired signal reaches actual further activity, not only an analyst's description of the learner.
 
@@ -29,11 +29,11 @@ This is also an adverse case for a stronger claim. The signal is misleading, the
 
 ## Correcting a hypothesis is not always enlarging an interface
 
-In [abstraction acquisition](../../../../theories/becoming/chapters/ABSTRACTION-ACQUISITION.md), a prediction failure leads to a distinguishing suffix. The new coordinate repairs a formerly merged pair of histories. Yet the primitive action was already available and the declared semantic question already covered all finite action words. The old one-state hypothesis was inadequate within its original scope. It was not an exact old quotient that became inadequate only when genuinely new access appeared.
+In [abstraction acquisition](../../../../theories/becoming/history/ABSTRACTION-ACQUISITION.md), a prediction failure leads to a distinguishing suffix. The new coordinate repairs a formerly merged pair of histories. Yet the primitive action was already available and the declared semantic question already covered all finite action words. The old one-state hypothesis was inadequate within its original scope. It was not an exact old quotient that became inadequate only when genuinely new access appeared.
 
 Moreover, the primary unary run's fresh endpoint queries have lengths zero through four, which a fixed bounded enumeration could also request. That observed query sequence alone does not identify adaptive sampling. The internal source and mismatch/refinement trace establish a changed diagnostic organization; the separate matched method comparison above supplies the stronger effect on actual inquiry duration. This avoids using one form of evidence as proof of another.
 
-The [mathematical identity result](../../../../theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md) supplies a different relation. When an interface genuinely expands while preserving old laws and questions, its exact identity can refine the previous exact identity. If refinement is strict, the old class alone cannot identify the actual finer class. Further interaction, additional retained information or warranted restrictions are required. All accessible information matters; an available archive cannot be silently excluded from the comparison.
+The [mathematical identity result](../../../../theories/becoming/history/IMMANENT-MATHEMATICAL-IDENTITY.md) supplies a different relation. When an interface genuinely expands while preserving old laws and questions, its exact identity can refine the previous exact identity. If refinement is strict, the old class alone cannot identify the actual finer class. Further interaction, additional retained information or warranted restrictions are required. All accessible information matters; an available archive cannot be silently excluded from the comparison.
 
 These distinctions allow the core's articulation to improve through the branches. “New distinction” is too broad to determine whether a process learned an old relation, acquired a new capability, or changed the situation it was investigating.
 

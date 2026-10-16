@@ -108,4 +108,4 @@ The port supplies finite signed accumulation over−14..14. The component recipe
 [scope]: EVALUATIVE-PLASTICITY-SCOPE.md
 [uptake]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean
 [learning]: ../../2026-10-05-concern-theory/learning-formal.md
-[joint]: ../../../../theories/becoming/chapters/JOINT-FORMATION-MATH.md
+[joint]: ../../../../theories/becoming/history/JOINT-FORMATION-MATH.md

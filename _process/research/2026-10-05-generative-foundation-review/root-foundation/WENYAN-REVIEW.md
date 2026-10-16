@@ -30,7 +30,7 @@
 
 ## 对生成主线的实质增量
 
-本轮不只是增加相似语录。它把三个要求写回[派生图](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work)：形成关切应比较不同入口；规则可修正与修订权应分开；建设性与控制性制度都要被同一根基解释而不能用词义预先排除。
+本轮不只是增加相似语录。它把三个要求写回[派生图](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work)：形成关切应比较不同入口；规则可修正与修订权应分开；建设性与控制性制度都要被同一根基解释而不能用词义预先排除。
 
 下一连接是他者实际后果 → 有根据的相关性和理由 → 有效行动及评价者的可纠正性。初始结构、校准、资源、伦理地位、修订权与继承条件仍有供应前提。历史文本提出这些问题并提供竞争方案，没有因此填平机制或规范推导的缺口。
 

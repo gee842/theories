@@ -30,7 +30,7 @@ This individuation is relative to the question being explained. There need not b
 
 This yields an important asymmetry. Replacing B with willing C can preserve the proposed ground when the relevant consequences, commitments and permissions are preserved. Replacing the sufferer's continuity with an unaffected successor does not thereby relieve the original episode. Response identity can vary while its experiential target remains fixed. The distinction follows the different relations involved, not a metaphysical privilege granted to one owner.
 
-The [joint-formation construction](../../../../theories/becoming/chapters/JOINT-FORMATION.md) already explains acquired concern and constructed control under supplied preferences and laws. The [generated-self interface](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md) distinguishes an acquired action-effect record from full selfhood. These are inherited; the addition concerns response individuation and significance before a fixed team is supplied.
+The [joint-formation construction](../../../../theories/becoming/history/JOINT-FORMATION.md) already explains acquired concern and constructed control under supplied preferences and laws. The [generated-self interface](../../../../theories/becoming/history/GENERATED-SELF-AND-ETHICS.md) distinguishes an acquired action-effect record from full selfhood. These are inherited; the addition concerns response individuation and significance before a fixed team is supplied.
 
 ## 3. Why the invitation can already have practical merit
 

@@ -8,7 +8,7 @@ This note supplies three constraints and a minimal constructive interface. Futur
 
 ## 1. Exact scope and actual resource boundary
 
-The [completed revision](../../../../theories/becoming/chapters/MODEL-FAMILY-REVISION.md) retains a model, observed-output parity and current cursor. Its new raw transcript remains external audit data. Its two successful primary continuations end as follows:
+The [completed revision](../../../../theories/becoming/history/MODEL-FAMILY-REVISION.md) retains a model, observed-output parity and current cursor. Its new raw transcript remains external audit data. Its two successful primary continuations end as follows:
 
 | Actual continuation | Fuel | Live cells | Remaining source |
 |---|---:|---:|---:|

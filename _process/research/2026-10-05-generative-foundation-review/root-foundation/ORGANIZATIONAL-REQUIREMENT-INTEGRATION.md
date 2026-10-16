@@ -73,7 +73,7 @@ Vacancy-sensitive copying responds to available precursor and the present
 template. It need not reconstruct the kind that disappeared. This defeats the
 specific inference from restored occupation to restored type composition;
 it does not make the previous composition a universal goal. The existing
-[material-selector composition](../../../../theories/becoming/chapters/MATERIAL-SELECTOR-COMPOSITION.md)
+[material-selector composition](../../../../theories/becoming/history/MATERIAL-SELECTOR-COMPOSITION.md)
 already gives H constituents a new role in a mapping productive after regime
 reversal. Which relation needs maintaining can change as organization changes.
 
@@ -115,8 +115,8 @@ transitions, and no safety theorem about arbitrary API misuse is asserted.
 The result concerns this one-use lifecycle. It does not establish that learning
 requires an outside evaluator or that every stable law must itself be revised.
 A stable law can generate revisable organizations. Existing
-[selector revision](../../../../theories/becoming/chapters/SELECTOR-REVISION.md)
-and [updater formation](../../../../theories/becoming/chapters/UPDATER-FORMATION.md)
+[selector revision](../../../../theories/becoming/history/SELECTOR-REVISION.md)
+and [updater formation](../../../../theories/becoming/history/UPDATER-FORMATION.md)
 already demonstrate conditional consequence-dependent renewal and replacement.
 Their staged support laws cannot be inserted into this native history unchanged.
 

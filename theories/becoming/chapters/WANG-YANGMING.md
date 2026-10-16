@@ -2,7 +2,7 @@
 
 **后续方向，2026年10月7日：** Ren 提议从生成核心的内生演化作用建立“本然良知”，并要求记入项目上下文、继续推进。[当前演化研究](LIANGZHI-EVOLUTION.md)已有19项传递、17项发展重建的实际 Lean 检查，以及分项原始经验评估。[最新实践整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)以生生正面判准解释手段误认、目的改变、知情拒绝和既有承担；原典权变、差等与拟归家书保留原说内容和现代重构界限。新增20项 Lean 声明检查实际支持交接、失败恢复、不同次序和有限结束，不以交接可行性证明仁或普遍规范权威。本章的整体重构保留，良知完整生成与无假设普遍证明仍继续。
 
-2026年10月7日。回应 Ren [「先完成王阳明」](../../../sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md)。本章是原典约束下的比较与理论整合，不把阳明改写为一组现代反馈机制，也不把他的本体主张直接列为生成理论的公理。遵循[非二元方法](NONDUAL-METHOD.md)，服务于[整个生成实现的伦理质量怎样构成普遍实践根据](UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)。
+2026年10月7日。回应 Ren [「先完成王阳明」](../../../sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md)。本章是原典约束下的比较与理论整合，不把阳明改写为一组现代反馈机制，也不把他的本体主张直接列为生成理论的公理。遵循[非二元方法](NONDUAL-METHOD.md)，服务于[整个生成实现的伦理质量怎样构成普遍实践根据](../history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)。
 
 **本轮完成的主张是：一体之仁、明德亲民、知行合一与致良知，在阳明那里构成有伦理内容的一体结构；生成理论应把这种结构解释为承受、理解、目的与回应在共同历史中的相互形成和实现，并检验它怎样发生偏蔽、纠正及正当分殊。** 这一整合已经落实到原典、肯定论证、实质反审和经过实际检查的形式接口。阳明所认定的本然良知为何具有普遍可靠性，以及这一整体根据为何适用于一切相关智能，仍未得到无假设证明。
 
@@ -69,7 +69,7 @@
 - **差等：**具体形成的依赖、允诺、照料史和能力可以解释不同责任；既成关系本身不使既成权力永远正当。
 - **结束：**实际解除负担、正当承担、权限或程序结束、原判断被纠正，是不同情况。合理结束不等于历史消失，也不意味着每个旧目标都必须先实现。
 
-原典本身存在不能删去的张力：舜象段对修养者的归责、舍生取义段对保全生命的限制，不等于已经阐明现代自护边界。只选温和的劝善段落无法消除这项差异；也不能凭这些段落断定阳明否认一切自护。扩展必须正面论证，见[来源核对](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md#4-差等拒绝与更有效的控制)与[整体继续及正当修订](UNIFIED-ETHICAL-GROUNDING.md#justified-revision-and-the-current-sufficiency-limit)。
+原典本身存在不能删去的张力：舜象段对修养者的归责、舍生取义段对保全生命的限制，不等于已经阐明现代自护边界。只选温和的劝善段落无法消除这项差异；也不能凭这些段落断定阳明否认一切自护。扩展必须正面论证，见[来源核对](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md#4-差等拒绝与更有效的控制)与[整体继续及正当修订](../history/UNIFIED-ETHICAL-GROUNDING.md#justified-revision-and-the-current-sufficiency-limit)。
 
 ## 7. 已检查的形式整合：整体历史与实际接续
 

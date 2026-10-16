@@ -1,6 +1,6 @@
 # Acquired outcome revaluation and the applicability of established action
 
-6 October 2026. AI-authored primary-source comparison under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), directed toward the [continuing grounding question](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). Named connection: **new experience of an outcome → retained change in its significance → changed use of an already learned action**. This is a link-only reading, with no source import, animal-level reanalysis or new experiment.
+6 October 2026. AI-authored primary-source comparison under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), directed toward the [continuing grounding question](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md). Named connection: **new experience of an outcome → retained change in its significance → changed use of an already learned action**. This is a link-only reading, with no source import, animal-level reanalysis or new experiment.
 
 ## Primary reading and group–phase matrix
 

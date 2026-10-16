@@ -1,6 +1,6 @@
 # Constitutive-significance integration review
 
-6 October 2026. AI-authored internal review of the revised [canonical ethical-grounding account](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md), read in full against the final [argument](CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md), [counterreview](CONSTITUTIVE-SIGNIFICANCE-COUNTERREVIEW.md) and [identification study](CONSTITUTIVE-SIGNIFICANCE-SOURCES.md). The counterexample contributor reviewed the root-authored synthesis; the companion contributors also performed reciprocal checks. This is collaborating-AI review, not external peer review or independent empirical replication.
+6 October 2026. AI-authored internal review of the revised [canonical ethical-grounding account](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md), read in full against the final [argument](CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md), [counterreview](CONSTITUTIVE-SIGNIFICANCE-COUNTERREVIEW.md) and [identification study](CONSTITUTIVE-SIGNIFICANCE-SOURCES.md). The counterexample contributor reviewed the root-authored synthesis; the companion contributors also performed reciprocal checks. This is collaborating-AI review, not external peer review or independent empirical replication.
 
 **Decision: accepted as an explicit, positively supported research candidate. No blocking issue remains at that scope.** The work establishes a specified proposal, its defended interpretation and its tests. It does not establish the metaphysical truth of C1 or C2, a universal realization law, or their necessity from the minimal generative root.
 
@@ -32,13 +32,13 @@ Two canonical precisions were requested and rechecked. The clean-domain paragrap
 
 The [preceding canonical snapshot](development/UNIFIED-ETHICAL-GROUNDING-BEFORE-CONSTITUTIVE-SIGNIFICANCE.md) independently hashes to `d76a4a19240c2ee36c84743a4babe301fd6b6fe5598c17d6be16bb946055543e`, matching its [provenance record](development/CONSTITUTIVE-SIGNIFICANCE-BEFORE.json). Its original relative-link base is recorded without changing the preserved bytes. The prior [integration review](PRACTICAL-UPTAKE-INTEGRATION.md), hash `463b531d5b9568780b91fce8968cc3b75977f34b3d155e4f8374bfdab73415df`, and [integrity receipt](PRACTICAL-UPTAKE-CHECKS.json) remain historical assessments of that earlier version.
 
-The six additive entries in [RESEARCH](../../../../RESEARCH.md), the [theory README](../../../../theories/becoming/README.md), the [root-study README](README.md), the [source manifest](../../../../sources/SOURCES.md), the [governing derivation map](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) and [HUIGEN](../../../../theories/becoming/chapters/HUIGEN.md) were inspected at their inserted paragraphs. They match the candidate's scope, source limits and next connection. Unrelated concurrent edits in those shared files were not reviewed or altered. The accepted conditional foundation retains its original completion claim; this stronger investigation does not add an undeclared acceptance requirement to it.
+The six additive entries in [RESEARCH](../../../../RESEARCH.md), the [theory README](../../../../theories/becoming/README.md), the [root-study README](README.md), the [source manifest](../../../../sources/SOURCES.md), the [governing derivation map](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md) and [HUIGEN](../../../../theories/becoming/history/HUIGEN.md) were inspected at their inserted paragraphs. They match the candidate's scope, source limits and next connection. Unrelated concurrent edits in those shared files were not reviewed or altered. The accepted conditional foundation retains its original completion claim; this stronger investigation does not add an undeclared acceptance requirement to it.
 
 ## Reviewed snapshots
 
 | File | SHA-256 |
 |---|---|
-| [Revised canonical](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md) | `19389a0dd1a54290dec45e6f59f010fc285d67f11bde026f151f9eb545218660` |
+| [Revised canonical](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md) | `19389a0dd1a54290dec45e6f59f010fc285d67f11bde026f151f9eb545218660` |
 | [Constitutive argument](CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md) | `eed2ccc88c07f96cfee0adcdb1ce68d11cd779e22d1f7847d03743421dd34682` |
 | [Constitutive counterreview](CONSTITUTIVE-SIGNIFICANCE-COUNTERREVIEW.md) | `03f2a7b3fa64501d9597d6147b92804787f653fd880652f89f8212148e0147cc` |
 | [Identification and source comparison](CONSTITUTIVE-SIGNIFICANCE-SOURCES.md) | `443a9e4f88c10ba4150f56a5dfbfd1f39fef605f07f2a3fb17a7d7623c5573a9` |

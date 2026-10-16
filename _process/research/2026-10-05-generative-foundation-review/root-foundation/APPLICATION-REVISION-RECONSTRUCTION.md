@@ -6,7 +6,7 @@
 
 ## 1. The inherited frontier and the exact starting state
 
-The [practical-boundary integration](PRACTICAL-BOUNDARY-INTEGRATION.md) already identifies the question at four pairs: distinguish the existing loss from permission to impose another teaching cost. The [nondual-applicability integration](NONDUAL-APPLICABILITY-INTEGRATION.md) separately establishes material restoration changing its own applicability. Neither result is repeated here. The [application account](../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md) preserves the conditional repair interpretation, genuine recipient evidence and the successor's separate fulfillment limitation.
+The [practical-boundary integration](PRACTICAL-BOUNDARY-INTEGRATION.md) already identifies the question at four pairs: distinguish the existing loss from permission to impose another teaching cost. The [nondual-applicability integration](NONDUAL-APPLICABILITY-INTEGRATION.md) separately establishes material restoration changing its own applicability. Neither result is repeated here. The [application account](../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md) preserves the conditional repair interpretation, genuine recipient evidence and the successor's separate fulfillment limitation.
 
 Fix precisely
 

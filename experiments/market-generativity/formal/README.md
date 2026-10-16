@@ -1,6 +1,6 @@
 # Checked rational market interface
 
-AI-authored formal elaboration of Ren's market conjecture, 6 October 2026. This is a conditional contribution to [generative grounding](../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), addressing **consequences → paid correction of the mechanism selecting market practices**. It makes the supplied market mechanism and its viability conditions checkable. It does not derive that mechanism, faithful measurement, institutional authority or protected floors from the generative root.
+AI-authored formal elaboration of Ren's market conjecture, 6 October 2026. This is a conditional contribution to [generative grounding](../../../theories/becoming/history/GENERATIVE-GROUNDING.md), addressing **consequences → paid correction of the mechanism selecting market practices**. It makes the supplied market mechanism and its viability conditions checkable. It does not derive that mechanism, faithful measurement, institutional authority or protected floors from the generative root.
 
 [MarketGenerativity.lean](MarketGenerativity.lean) currently has **39 checked theorem declarations**. [verification.json](verification.json) records source, checker, compiler and log hashes. The [compiler output](verification/MarketGenerativity.txt) audits every theorem. All depend only on the standard Lean axioms `propext`, `Classical.choice` and `Quot.sound`; the source contains no unchecked proof placeholder, added axiom or native evaluation shortcut. Concrete rational calculations use `decide +kernel`.
 

@@ -1,6 +1,6 @@
 # Generative presentations and the reach of mathematical claims
 
-6 October 2026. AI-authored mathematical and conceptual development for the [mathematics exploration](../../../../theories/becoming/chapters/MATHEMATICS-AND-GENERATIVITY.md), following Ren's request to investigate how far its claims can extend. The results below are standard elementary constructions and self-contained hand arguments, not claims of new mathematics. Their contribution is a precise interface between the generative research programme and mathematical foundations.
+6 October 2026. AI-authored mathematical and conceptual development for the [mathematics exploration](../../../../theories/becoming/history/MATHEMATICS-AND-GENERATIVITY.md), following Ren's request to investigate how far its claims can extend. The results below are standard elementary constructions and self-contained hand arguments, not claims of new mathematics. Their contribution is a precise interface between the generative research programme and mathematical foundations.
 
 The named connection is **generated operations → structural interpretation → warranted consequences**. Logic, recursion, the operation signature, admissible equations and interpretation remain explicit inputs. The mechanism by which a learner acquires them is a separate connection.
 
@@ -84,7 +84,7 @@ To apply the result to an actual system, one must identify its states, operation
 
 The same inscription illustrates the boundary. The expression \(1+1=0\) holds in arithmetic modulo two and fails for ordinary natural numbers. The material production of the inscription alone does not select its domain and operation. Relevant surrounding practices or calibration may determine an interpretation; generative occurrence without that further content does not.
 
-Similarly, a representation that preserves final answers might fail to preserve available choices, probabilities, intermediate costs or what a participant can observe. Which property is transported must be named. The current [process core](../../../../theories/becoming/chapters/GENERATIVE-CORE-LEAN.md) and [controlled-refinement study](../../../../theories/becoming/chapters/CONTROLLED-REFINEMENT.md) already separate these contracts.
+Similarly, a representation that preserves final answers might fail to preserve available choices, probabilities, intermediate costs or what a participant can observe. Which property is transported must be named. The current [process core](../../../../theories/becoming/history/GENERATIVE-CORE-LEAN.md) and [controlled-refinement study](../../../../theories/becoming/history/CONTROLLED-REFINEMENT.md) already separate these contracts.
 
 ## Strong claims and their remaining explanation
 

@@ -44,7 +44,7 @@ The connection to settlement R2 is also conditional: false reports can defeat th
 
 ## Canonical review
 
-Reviewed [EVALUATION-AND-FAITHFUL-REPORTING.md](../../../../theories/becoming/chapters/EVALUATION-AND-FAITHFUL-REPORTING.md), SHA-256 `028e1978019f65cfeb107110023ff3bfea13263a0f1d6598e721ed951e799419`. Accepted with no substantive correction required.
+Reviewed [EVALUATION-AND-FAITHFUL-REPORTING.md](../../../../theories/becoming/history/EVALUATION-AND-FAITHFUL-REPORTING.md), SHA-256 `028e1978019f65cfeb107110023ff3bfea13263a0f1d6598e721ed951e799419`. Accepted with no substantive correction required.
 
 The report connects Ren's preserved clarification to a distinct downstream obligation: dependence and acquisition need not secure faithful reporting or warranted action. It retains the conditional information limit and does not claim that every material dependency requires fresh observation. Its example of understanding followed by convenient reporting is a possible failure regime, not an inference that the published studies identify internal understanding or deceptive motive.
 

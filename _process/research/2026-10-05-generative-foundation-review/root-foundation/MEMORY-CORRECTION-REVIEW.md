@@ -34,7 +34,7 @@ There is also a quantifier distinction. If, for every realized trace \(\ell\), o
 
 ## 4. The valid weaker result
 
-Fix an observation map g and two hypotheses with the **same entire observed-record law** \(g_*P=g_*Q\). Then every possibly randomized diagnostic using only that record has the same output distribution under both hypotheses. Proof: the diagnostic applies the same conditional output kernel to the same input measure. With equal prior probabilities, its binary classification accuracy is one half. This is a standard conditional identification result, already used at a different empirical scope in the [recipient-cue account](../../../../theories/becoming/chapters/RECIPIENT-CUE-GROUNDING.md); it is not a new theorem claimed for this programme.
+Fix an observation map g and two hypotheses with the **same entire observed-record law** \(g_*P=g_*Q\). Then every possibly randomized diagnostic using only that record has the same output distribution under both hypotheses. Proof: the diagnostic applies the same conditional output kernel to the same input measure. With equal prior probabilities, its binary classification accuracy is one half. This is a standard conditional identification result, already used at a different empirical scope in the [recipient-cue account](../../../../theories/becoming/history/RECIPIENT-CUE-GROUNDING.md); it is not a new theorem claimed for this programme.
 
 A sufficient sequential premise is equality of every next-observation kernel conditional on the **full observed past**, with the same initial law. Multiplying those kernels yields equal finite joint laws. A sufficiently unrestricted simulator can be defined using those kernels. Its existence does not show that a particular post-training procedure, fixed LLM architecture or memory replacement realizes it.
 
@@ -52,7 +52,7 @@ For a claimed corrective successor, measure whether the changed action persists 
 
 ## Final canonical and metric review — 6 October 2026
 
-Accepted the [canonical account](../../../../theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md), SHA-256 `0346e1df420a09e6055338b5b16e74836acdc8af93fb5fb4cabfd81ff1e47142`, and [metric audit](MEMORY-CORRECTION-METRICS.md), SHA-256 `a4675370b749aceda3d7c8dd2e8f862ae4d92f8d8bca0ec888310466f74693a6`, at their stated source and inference scopes. This acceptance follows independent primary-text inspection and manual algebraic review, not model execution or numerical replication.
+Accepted the [canonical account](../../../../theories/becoming/history/MEMORY-CORRECTION-AND-SUCCESSION.md), SHA-256 `0346e1df420a09e6055338b5b16e74836acdc8af93fb5fb4cabfd81ff1e47142`, and [metric audit](MEMORY-CORRECTION-METRICS.md), SHA-256 `a4675370b749aceda3d7c8dd2e8f862ae4d92f8d8bca0ec888310466f74693a6`, at their stated source and inference scopes. This acceptance follows independent primary-text inspection and manual algebraic review, not model execution or numerical replication.
 
 The canonical rational competitor `(4/5, 3/5)` has unit norm and score `4/5` against `(1, 0)`, so its rank counterexample is exact. Its two-session laws share the specified marginals and differ on the equality event. In the constructed `H = M × U` system at `M = U = 1`, setting either input to zero prevents the event. Both are causal contributors under those stipulated interventions; neither intervention establishes exclusive responsibility. This does not estimate contributions in a learned system.
 

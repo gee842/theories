@@ -1,6 +1,6 @@
 # Formation of new possibilities: evidence and counterreview
 
-8 October 2026, Asia/Bangkok. AI-authored primary-source assessment and adversarial self-review of [the current account](../../../../theories/becoming/chapters/NEW-POSSIBILITIES.md). This is **not an independent agent review**. No new experiment or empirical reanalysis was performed. External sources are linked reading references; no original publication bytes have been imported or replaced.
+8 October 2026, Asia/Bangkok. AI-authored primary-source assessment and adversarial self-review of [the current account](../../../../theories/becoming/history/NEW-POSSIBILITIES.md). This is **not an independent agent review**. No new experiment or empirical reanalysis was performed. External sources are linked reading references; no original publication bytes have been imported or replaced.
 
 ## Primary evidence actually consulted
 

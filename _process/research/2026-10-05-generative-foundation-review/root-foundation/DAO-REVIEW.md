@@ -40,7 +40,7 @@
 
 ## 4. 与总研究的连接
 
-[生成根基的推导地图](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work)、[跨支线索引](../../../../RESEARCH.md)、[理论 README](../../../../theories/becoming/README.md)和[本研究目录](README.md)均新增了本轮位置。现有未完成桥梁继续保留，没有用一个哲学比较节点取代总目标。
+[生成根基的推导地图](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work)、[跨支线索引](../../../../RESEARCH.md)、[理论 README](../../../../theories/becoming/README.md)和[本研究目录](README.md)均新增了本轮位置。现有未完成桥梁继续保留，没有用一个哲学比较节点取代总目标。
 
 最直接的下一连接是 **可信的受助者后果证据 → 有根据的相关性 → 可修正理由 → 有效保护与传承**。当前仍供应事件律、功能配方、校准条件、根理由和理由传递关系。三条规范奠基路线继续考察这些理由如何得到更深入说明；模型比较则研究它们怎样形成、被发现并实际执行。若研究只能通过预装奖励或定义善来得出善，所宣称的生成解释应收缩。
 

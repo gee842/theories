@@ -51,5 +51,5 @@ Independently compared the current bytes with Git revision `113a956`: removing o
 
 The [source package](../../../../sources/32-shared-affect-action-2026-10-06/README.md) preserves the two original HTML bodies inspected here and explicitly records unavailable retrieval metadata. Its corrected-methods and dataset-access distinctions are consistent with this review. Source preservation and literature review remain separate from analysis of unavailable recordings.
 
-[uptake]: ../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md
-[canonical]: ../../../../theories/becoming/chapters/RECIPIENT-HARM-AND-ACTION.md
+[uptake]: ../../../../theories/becoming/history/EVALUATIVE-UPTAKE.md
+[canonical]: ../../../../theories/becoming/history/RECIPIENT-HARM-AND-ACTION.md

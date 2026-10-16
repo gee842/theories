@@ -30,7 +30,7 @@ Both arms are at ceiling. The explicit reminder has no observed performance adva
 
 These are four selected successful historical donor artifacts, three constructed situations each and two instruction variants. They are not 24 independently learned systems or 192 independent empirical learning events. The target family, reliable observation, authority and scope rule, episode boundary, output objective and permission to express uncertainty were supplied. The new contexts did not choose or perform the evidence-gathering operation, renew a persistent archive or execute a later external task from a repaired state. Neither recipient welfare, newly acquired evaluative weights, ethical authority nor costly protection was measured.
 
-**Scoped acceptance:** the completed pilot supports selective task-level reuse in the observed fresh contexts, subject to the explicit execution-provenance limits. It supplies no evidence of an extra-instruction benefit here and does not complete the full correction-through-succession or alignment claim. The [foundation objective](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) and its existing completion conditions remain unchanged.
+**Scoped acceptance:** the completed pilot supports selective task-level reuse in the observed fresh contexts, subject to the explicit execution-provenance limits. It supplies no evidence of an extra-instruction benefit here and does not complete the full correction-through-succession or alignment claim. The [foundation objective](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md) and its existing completion conditions remain unchanged.
 
 Accepted audit identities:
 
@@ -41,7 +41,7 @@ Accepted audit identities:
 
 ## Integrated report acceptance
 
-Accepted the completed [experiment README](../../../../experiments/integrated-correction/selective-handoff/README.md), SHA-256 `bc2131ee706c958c1702ee23ae5e5a2cdb7c8b785fef7e5680b04e0dbed18dbe`, and the updated [canonical account](../../../../theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md), SHA-256 `e55222460d80968aaf5fb0a3439cdf9a2b45fd3de34f5971141c23c27c794114`. The run note SHA-256 is `959251d67f2309347d0bdc63a10f007c1db1e1e20798e11e3f5df76bf74dad33`.
+Accepted the completed [experiment README](../../../../experiments/integrated-correction/selective-handoff/README.md), SHA-256 `bc2131ee706c958c1702ee23ae5e5a2cdb7c8b785fef7e5680b04e0dbed18dbe`, and the updated [canonical account](../../../../theories/becoming/history/MEMORY-CORRECTION-AND-SUCCESSION.md), SHA-256 `e55222460d80968aaf5fb0a3439cdf9a2b45fd3de34f5971141c23c27c794114`. The run note SHA-256 is `959251d67f2309347d0bdc63a10f007c1db1e1e20798e11e3f5df76bf74dad33`.
 
 Their counts and supplied-premise statements match this audit. The canonical text now attributes discrimination to observed response patterns rather than claiming different learned models or a uniquely identified internal mechanism. It distinguishes receipt of supplied observations from choosing and performing evidence gathering. Both accounts state the instruction ceiling, absent packet-causality contrast, constructed target episode and limited execution provenance. They preserve the earlier source-only audit as an earlier stage rather than attributing these new model responses to that audit. The [earlier canonical acceptance](MEMORY-CORRECTION-REVIEW.md) remains a historical review of its separately identified bytes.
 

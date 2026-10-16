@@ -43,7 +43,7 @@ The remaining evaluative premise is explicit: a justified responsibility to corr
 |---|---|
 | [Notice contract](GOVERNANCE-NOTICE-CONTRACT.md) | `b66e4ebf3d5c6ac28a40867b399294a70687d756346dfdfe0935fcf02a0f6c6a` |
 | [Evidence note](GOVERNANCE-NOTICE-EVIDENCE.md) | `bd474f7e1c8010266405fe4253535ef534ca90f5e9e6890b329ad2c2647944ce` |
-| [Extended canonical account](../../../../theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md) | `3f78cd13568bc488a2d02db7ae50eaf1189bf22889c95aedf5b637be63e33d37` |
+| [Extended canonical account](../../../../theories/becoming/history/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md) | `3f78cd13568bc488a2d02db7ae50eaf1189bf22889c95aedf5b637be63e33d37` |
 
 The contract keeps the separately justified responsibility, scope, authority and practical conditions explicit. Its proposed recipient-level falsifier concerns actual correction, not the stronger claim that every reasonable-effort duty guarantees understanding. Identifying a superseded requirement is understood as communicating the content needed for correction under that responsibility, not prescribing unnecessary historical narration or one mandatory format.
 

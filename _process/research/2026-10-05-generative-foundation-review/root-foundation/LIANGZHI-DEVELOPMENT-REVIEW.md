@@ -16,9 +16,9 @@
 
 ## 2. 不能重新列为缺失的已有成果
 
-[实际评价接续](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md)已经把形成的评价影响接到不同后继的实际访问、新证据、手段判断修订和选择行动。新工作不能只再复制一个评价量，就声称首次解释能力继承。原结果的同一历史、有限支持与实际失败均应被信用。
+[实际评价接续](../../../../theories/becoming/history/EVALUATIVE-SUCCESSION.md)已经把形成的评价影响接到不同后继的实际访问、新证据、手段判断修订和选择行动。新工作不能只再复制一个评价量，就声称首次解释能力继承。原结果的同一历史、有限支持与实际失败均应被信用。
 
-[评价发展](../../../../theories/becoming/chapters/VALUATION-DEVELOPMENT.md)也已证明具体配对经历形成联结并影响响应，已有变化中的后果、更新路线修订和谱系支持。[已形成变体的选择](../../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)则已有实际修复后果进入复制以及支持转移的反向历程。单独再给一个“感知变化→行动变化”或“修复→复制”的构造，不等于关闭了它们之间全部新的接合。
+[评价发展](../../../../theories/becoming/history/VALUATION-DEVELOPMENT.md)也已证明具体配对经历形成联结并影响响应，已有变化中的后果、更新路线修订和谱系支持。[已形成变体的选择](../../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)则已有实际修复后果进入复制以及支持转移的反向历程。单独再给一个“感知变化→行动变化”或“修复→复制”的构造，不等于关闭了它们之间全部新的接合。
 
 最新[规范接口](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md#the-actual-successor-already-available)还信用了已完成的履行敏感撤回及多项要求研究：原先所需的回应可以因实际履行而失去该项根据，相关访问和实施已经有有限结果。因此“尚无实践应用修订”也不是本轮可重新提出的空缺。本轮小型读取—联结—动作组织，尚未把既有评价接续中的评价器、档案、指令和访问架构全部接入后果支持的再形成史。
 

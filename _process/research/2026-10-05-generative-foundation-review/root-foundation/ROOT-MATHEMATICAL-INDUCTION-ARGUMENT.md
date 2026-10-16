@@ -32,7 +32,7 @@ The favorable proposal treats a rule as more than a record of past performances.
 
 But generic use and collective admission still require a connection. One can understand permission to continue forming without accepting a completed domain as an available argument of further mathematical operations. The proposed constitutive identification says that the domain is precisely the stable role of all these admitted finite forms, so no additional substance must be created. This is an affirmative philosophical reason for collective admission. It is not yet a deduction of its entitlement from the bare occurrence of some formative activity.
 
-The [current premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) already treats ordinary inductive construction as a resource of the mathematical presentation. Its successful finite-history derivations therefore cannot be recycled as an independent derivation of that resource. Nothing here demands a physically finished infinity or a separate finite recipe for every object of every mathematical domain. The issue is this particular collective formation rule's warrant.
+The [current premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md) already treats ordinary inductive construction as a resource of the mathematical presentation. Its successful finite-history derivations therefore cannot be recycled as an independent derivation of that resource. Nothing here demands a physically finished infinity or a separate finite recipe for every object of every mathematical domain. The issue is this particular collective formation rule's warrant.
 
 ## 3. Formation identity is a separate obligation
 

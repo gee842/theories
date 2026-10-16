@@ -1,6 +1,6 @@
 # Independent review of the coupled market construction
 
-6 October 2026. AI-authored independent mathematical review within the market study. This review examines the installed model and the exact parameter specification, rather than treating the conceptual proposal as an empirical result. The named connection is **shared consequences → implemented payments → selection → revision of selection conditions**. The governing scope remains the [generative foundation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
+6 October 2026. AI-authored independent mathematical review within the market study. This review examines the installed model and the exact parameter specification, rather than treating the conceptual proposal as an empirical result. The named connection is **shared consequences → implemented payments → selection → revision of selection conditions**. The governing scope remains the [generative foundation](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md).
 
 **Current decision:** accepted within the stated scope. The equations, primary invariant/recovery constructions and implementation checks below are consistent under their explicit guards. An independent equation implementation reproduced the exact local certificates and all saved finite numerical trajectories within the stated precision. This is acceptance of a conditional model and its reported computation, not a proof that actual markets obey its laws. This review does not certify the separate Lean file.
 

@@ -9,7 +9,7 @@
 
 ## 1. Correct the scope of the outstanding claim
 
-The [canonical three commitments](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) contain different strengths of assertion. Treating them as three wholly ungrounded universal laws obscures work already done.
+The [canonical three commitments](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) contain different strengths of assertion. Treating them as three wholly ungrounded universal laws obscures work already done.
 
 | Content | Current ground | Remaining distinction |
 |---|---|---|

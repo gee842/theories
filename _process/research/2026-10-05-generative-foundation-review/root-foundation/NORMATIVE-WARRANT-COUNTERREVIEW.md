@@ -6,7 +6,7 @@
 
 ## 1. Reconstruct the target within one unfolding
 
-The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [current ethical account](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#describing-dynamics-and-answering-the-value-question) govern this review. Organizations, affected lives, evaluators and their standards form within one continuing activity. Changing access to criticism changes that activity, often with material consequences. Distinguishing a judgment's grounds from its channel of assessment preserves their different explanatory roles; it does not posit an independent moral world or a spectator outside reality.
+The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [current ethical account](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#describing-dynamics-and-answering-the-value-question) govern this review. Organizations, affected lives, evaluators and their standards form within one continuing activity. Changing access to criticism changes that activity, often with material consequences. Distinguishing a judgment's grounds from its channel of assessment preserves their different explanatory roles; it does not posit an independent moral world or a spectator outside reality.
 
 The strongest attractive proposal is: finite, fallible agency cannot responsibly settle the whole future by insulating its current evaluation from relevant correction. Three claims must be separated:
 
@@ -22,7 +22,7 @@ Closing a vote or completing a promise can also constitute a new institutional s
 
 ## 2. What was already established
 
-[ETHICAL-FOUNDATION](../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions) already supplies N1 standing, N2 relevant consistency, N3 answerability and N4 feasible implementation. D3 derives effective challenge access under N3–N4; D6 explicitly makes correction sensitive to seriousness, uncertainty, time and cost. It already rejects universal reversibility and endless review. Its regenerative predator learns accurately while sustaining oppression. Repeating those results as a new metaethical invariant would add no grounding.
+[ETHICAL-FOUNDATION](../../../../theories/becoming/history/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions) already supplies N1 standing, N2 relevant consistency, N3 answerability and N4 feasible implementation. D3 derives effective challenge access under N3–N4; D6 explicitly makes correction sensitive to seriousness, uncertainty, time and cost. It already rejects universal reversibility and endless review. Its regenerative predator learns accurately while sustaining oppression. Repeating those results as a new metaethical invariant would add no grounding.
 
 [F9](../../../../theories/becoming/chapters/FORMAL-CORE.md#f9-the-joint-installed-process-including-its-own-revision) already covers actual revisions of code, evaluators, representations and rules under an independently specified acceptable set and recurring duties. It certifies preservation where the installed transitions meet the conditions; it does not justify the protected requirements.
 
@@ -30,7 +30,7 @@ The present no-manufacture argument can isolate a justificatory defect without f
 
 ## 3. The informed authority rival
 
-Consider a continuing shared undertaking with established contributors, a genuine possible completion, burdens on ordinary living, an effective appeal route, and a feasible revision that would forgo part of the achievement. Preserve the actual formation, information, contributions, losses and alternatives described in the repository's [performance](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#a-successful-pursuit-can-warrant-being-changed) and [common-form](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#a-common-realization-can-fulfill-differentiated-formation) comparisons.
+Consider a continuing shared undertaking with established contributors, a genuine possible completion, burdens on ordinary living, an effective appeal route, and a feasible revision that would forgo part of the achievement. Preserve the actual formation, information, contributions, losses and alternatives described in the repository's [performance](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#a-successful-pursuit-can-warrant-being-changed) and [common-form](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#a-common-realization-can-fulfill-differentiated-formation) comparisons.
 
 An **informed steward** acknowledges all these facts, its fallibility, and the fact that closing appeal provides no evidence that objections were mistaken. It nevertheless argues that the undertaking's justified obligations, settled decision and impending completion supply sufficient reason to finish without further reopening. This rival can accept the no-manufacture principle completely. The remaining dispute concerns whether its substantive warrant is adequate, whether a duty of continued answerability survives, and whether this restriction is proportionate. It is not exposed as contradictory merely because it acts irreversibly.
 

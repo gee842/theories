@@ -1,6 +1,6 @@
 # Can generativity ground mathematics? A foundation audit
 
-6 October 2026. AI-authored continuation of the [mathematics exploration](../../../../theories/becoming/chapters/MATHEMATICS-AND-GENERATIVITY.md), examining the strongest coherent claims rather than restricting the question to a useful mathematical analogy. The named connection is **generative structure → mathematical consequence → warranted mathematical activity**. This note separates a positive mathematical result, an ontological placement, and the remaining justification of necessity. It supplies no new Lean verification or empirical result.
+6 October 2026. AI-authored continuation of the [mathematics exploration](../../../../theories/becoming/history/MATHEMATICS-AND-GENERATIVITY.md), examining the strongest coherent claims rather than restricting the question to a useful mathematical analogy. The named connection is **generative structure → mathematical consequence → warranted mathematical activity**. This note separates a positive mathematical result, an ontological placement, and the remaining justification of necessity. It supplies no new Lean verification or empirical result.
 
 **The strongest presently defensible position has two connected parts. Mathematical presentations and finitary deductions have exact generative constructions whose consequences are not arbitrary once their premises and interpretation are fixed. Mathematical activity can also be investigated as a differentiated development within the same reality it describes. Neither result alone proves that physical generation constitutes every mathematical truth, or that the full present theory is uniquely necessary for mathematics.** The stronger thesis remains a serious research candidate if it explains admissible generation, structural necessity, interpretation and the formation of knowers together.
 
@@ -114,7 +114,7 @@ Two elementary diagnostics prevent hidden escalation. Finite descriptions over a
 
 Likewise, unrestricted generation of a set for every property is inconsistent in the familiar setting: if \(R=\{x:x\notin x\}\), then \(R\in R\) holds exactly when \(R\notin R\). Restrictions on formation are therefore substantive. “Generativity” must include its admissible constructors and constraints, rather than mean that any requested object is available. [Official *Logic and Proof*, axiomatic foundations](https://leanprover-community.github.io/logic_and_proof/axiomatic_foundations.html).
 
-None of this refutes open-ended generation. It identifies the additional premises needed to move from a finite generative practice to a proposed foundation of infinite mathematics. The [deeper-root analysis](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md) already makes the analogous distinction between constructing a type, constructing an inhabitant and identifying physical occurrence.
+None of this refutes open-ended generation. It identifies the additional premises needed to move from a finite generative practice to a proposed foundation of infinite mathematics. The [deeper-root analysis](../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md) already makes the analogous distinction between constructing a type, constructing an inhabitant and identifying physical occurrence.
 
 ## 7. Self-inclusion and circularity
 

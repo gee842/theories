@@ -1,6 +1,6 @@
 # Successor learning from actual copied machinery
 
-6 October 2026. Completed finite conditional study. An actual retained receiver from [recipient transmission](../transmission/README.md) pays for new evidence, corrects its inherited record after change, uses that correction and passes it through paid copying into a productive retained grandchild. The inherited update route remains fixed. Read the [canonical account](../../../../../../../../../../theories/becoming/chapters/SUCCESSOR-LEARNING.md) and [integration](../../../../../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-INTEGRATION.md) for scope.
+6 October 2026. Completed finite conditional study. An actual retained receiver from [recipient transmission](../transmission/README.md) pays for new evidence, corrects its inherited record after change, uses that correction and passes it through paid copying into a productive retained grandchild. The inherited update route remains fixed. Read the [canonical account](../../../../../../../../../../theories/becoming/history/SUCCESSOR-LEARNING.md) and [integration](../../../../../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-LEARNING-INTEGRATION.md) for scope.
 
 ## Files and reproduction
 

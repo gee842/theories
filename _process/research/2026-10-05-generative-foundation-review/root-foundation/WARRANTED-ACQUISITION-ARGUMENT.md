@@ -86,7 +86,7 @@ The communication target is a particular contribution to the formation of a mess
 
 ## 8. 与既有真实对应的接合，以及完成范围
 
-[TCLab 实测对应](../../../../theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md)已经把历史读数、保留状态、命令与源代码次序相连，不能笼统贬为全是预送标签。[误差范围校准](BOUND-CALIBRATION-INTEGRATION.md)同时保留了过去包络在后续记录中的失败及真温度校准的缺口。[实际规律对应](LAW-CORRESPONDENCE-INTEGRATION.md)也已经区分有效规律的数学推导与具体物理关系的证据。这些是本轮的起点，不重复数为新的科学结果。
+[TCLab 实测对应](../../../../theories/becoming/history/MEASURED-FEEDBACK-CORRESPONDENCE.md)已经把历史读数、保留状态、命令与源代码次序相连，不能笼统贬为全是预送标签。[误差范围校准](BOUND-CALIBRATION-INTEGRATION.md)同时保留了过去包络在后续记录中的失败及真温度校准的缺口。[实际规律对应](LAW-CORRESPONDENCE-INTEGRATION.md)也已经区分有效规律的数学推导与具体物理关系的证据。这些是本轮的起点，不重复数为新的科学结果。
 
 本轮的理论连接能够据此具体表述：**规律和读取可以一同成为研究对象；有根据的取得是对这些关系的有区别约束，而不是把某个环节永远宣布为可靠参照。** 正面的修订可改变一项通信归属或测量解释，同时保留其他未被击败的认识、未测能力与正当关切。进一步实用判断继承既有 G0/J，而非由观察正确性独自推出。
 

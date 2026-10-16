@@ -2,7 +2,7 @@
 
 AI-assisted development, 6 October 2026. This package advances Ren's request to
 state laws shared by any reality satisfying explicit conditions. It contributes
-to the [conditional-universality statement](../../../../../../theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md).
+to the [conditional-universality statement](../../../../../../theories/becoming/history/CONDITIONAL-UNIVERSALITY.md).
 It uses the existing [relational core](../README.md), without changing its laws.
 
 ## Quantified law

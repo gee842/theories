@@ -2,7 +2,7 @@
 
 **Applicability extension:** [the additive continuation](applicability/README.md) imports this frozen closure unchanged, the existing claim ledger, and two new modules. It checks the internal help invariant, service-query binding limit, selective logical certification from actual acquisition and root outcome connection. Its separate manifest and receipt preserve this prior build and the unresolved runtime mechanism.
 
-This directory holds the frozen combined verification of [ConnectedGenerativeModel.lean](../ConnectedGenerativeModel.lean). The [canonical account](../../../../../../theories/becoming/chapters/CONNECTED-GENERATIVE-MODEL.md) explains the new operational connection, constructive replacement and remaining foundation gaps.
+This directory holds the frozen combined verification of [ConnectedGenerativeModel.lean](../ConnectedGenerativeModel.lean). The [canonical account](../../../../../../theories/becoming/history/CONNECTED-GENERATIVE-MODEL.md) explains the new operational connection, constructive replacement and remaining foundation gaps.
 
 The closure combines verified root/outcome sources with the unchanged acquired-successor chain. New declarations establish current-permission invariants over actual finite histories, a paid post-work settlement witness, constructive equivalents of nine decision functions, a recipient-learning process view, and its exact step/history/outcome correspondence. This does not derive the supplied laws, architecture or ethical grounds.
 

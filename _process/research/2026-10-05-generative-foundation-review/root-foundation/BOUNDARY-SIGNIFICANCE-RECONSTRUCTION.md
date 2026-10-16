@@ -37,7 +37,7 @@ These aspects constrain one another. A positive coefficient alone does not insta
 
 This reach is structured, not a single inside/outside bit: a patient's outcome can enter evaluation without effective protection being selected.
 
-The [earlier joint-formation account](../../../../theories/becoming/chapters/JOINT-FORMATION.md) already established the conditional mechanism and its failures. The present contribution is its reconstruction under the corrected method and the sharper identification of what consequential revision its actual state transmission can support.
+The [earlier joint-formation account](../../../../theories/becoming/history/JOINT-FORMATION.md) already established the conditional mechanism and its failures. The present contribution is its reconstruction under the corrected method and the sharper identification of what consequential revision its actual state transmission can support.
 
 ## 4. Two existing countertrajectories expose the relation
 
@@ -61,7 +61,7 @@ The core description should therefore retain **which consequences return, throug
 
 The game also lacks an evolving recipient organization: `H` is fixed and harm is recorded per outcome. Copying that scalar into memory would not by itself establish the affected continuity.
 
-This local omission is not the frontier everywhere. [Recipient correction](../../../../theories/becoming/chapters/RECIPIENT-CORRECTION.md) already uses actual recipient receipts to revise target commands without private gain. The recipient remains a separate resource stock; its internal organization is not derived. [Evaluative succession](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md) already combines transferred acquired influence, fresh evidence, corrected means and paid delivery. Its fixed inquiry can fulfill the interpreted claim, yet the subsequent policy does not withdraw delivery on that basis. These results retain their own histories; neither is silently appended here.
+This local omission is not the frontier everywhere. [Recipient correction](../../../../theories/becoming/history/RECIPIENT-CORRECTION.md) already uses actual recipient receipts to revise target commands without private gain. The recipient remains a separate resource stock; its internal organization is not derived. [Evaluative succession](../../../../theories/becoming/history/EVALUATIVE-SUCCESSION.md) already combines transferred acquired influence, fresh evidence, corrected means and paid delivery. Its fixed inquiry can fulfill the interpreted claim, yet the subsequent policy does not withdraw delivery on that basis. These results retain their own histories; neither is silently appended here.
 
 The next connection is therefore **affected history or condition → revised practical inclusion or applicability**, beyond correction of delivery means. Follow existing accessible records and actual continuation to determine how a consequence can revise what remains relevant to do. Preserving the affected continuity is part of that task; installing a harm-memory variable alone would not complete it.
 

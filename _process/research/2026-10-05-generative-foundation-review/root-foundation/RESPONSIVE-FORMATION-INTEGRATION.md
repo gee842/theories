@@ -8,7 +8,7 @@
 
 | File | SHA-256 |
 |---|---|
-| [Canonical unified grounding](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md) | `c34dc1e8b474d095bfc6e576a3b99b7187eddcf8775b40d9aeb5cdab6de1b25d` |
+| [Canonical unified grounding](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md) | `c34dc1e8b474d095bfc6e576a3b99b7187eddcf8775b40d9aeb5cdab6de1b25d` |
 | [Argument](RESPONSIVE-FORMATION-ARGUMENT.md) | `4d39663e6d103fdf36e6a7a1b659b25358c357c6b5d63ecaa68e3028d20451a6` |
 | [Counterreview](RESPONSIVE-FORMATION-COUNTERREVIEW.md) | `eaa7bf5a5e1e48f6a4e9a36cca19e54b85c5e9f4d42a1803e1ebd38a71ccff01` |
 | [Source comparison](RESPONSIVE-FORMATION-SOURCES.md) | `ec1eb47eb09fda92621683e0758f98c953e1530d93eff1c30f6a69b62766e408` |
@@ -33,6 +33,6 @@ The Wang comparison extends the received-text reading to 〈責善〉 while cred
 
 The [prior canonical](development/UNIFIED-ETHICAL-GROUNDING-BEFORE-RESPONSIVE-FORMATION.md) was verified at SHA-256 `9a752aa0f340fcef7e60402a9e79b050bf5f1ea2b236a1fe66c958177db8cd6c`. Its [provenance](development/RESPONSIVE-FORMATION-BEFORE.json) preserves the original link base and identifies the [historical integrity receipt](NONDUAL-GENERATIVE-CHECKS.json). Those earlier records do not certify the revised canonical.
 
-Only the six new responsive-formation paragraphs were reviewed in [RESEARCH](../../../../RESEARCH.md), the [theory README](../../../../theories/becoming/README.md), the [study README](README.md), [GENERATIVE-GROUNDING](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), [HUIGEN](../../../../theories/becoming/chapters/HUIGEN.md) and [SOURCES](../../../../sources/SOURCES.md). No broader shared-file recertification is implied.
+Only the six new responsive-formation paragraphs were reviewed in [RESEARCH](../../../../RESEARCH.md), the [theory README](../../../../theories/becoming/README.md), the [study README](README.md), [GENERATIVE-GROUNDING](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md), [HUIGEN](../../../../theories/becoming/history/HUIGEN.md) and [SOURCES](../../../../sources/SOURCES.md). No broader shared-file recertification is implied.
 
 The next task remains grounding initiation and revisable purpose through actual adversity and transformability. The no-assumptions objective is unmet; the accepted conditional foundation retains its original scope. The parent's [focused integrity receipt](RESPONSIVE-FORMATION-CHECKS.json) is intentionally pending until this review freezes. Its checks concern preservation and navigation, not scientific or ethical validation.

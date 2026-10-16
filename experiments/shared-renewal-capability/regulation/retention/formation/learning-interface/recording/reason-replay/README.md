@@ -2,7 +2,7 @@
 
 **Integration status: finite formal and independent model checks passed.** This package extends actual finite recording with a constructed reader/workspace, paid contextual decoding, rooted revision and reconstruction of a cold successor's working state on the same retained hardware. Calibration, factual relevance and a valid positive anchor remain explicit premises.
 
-- [Canonical account](../../../../../../../../theories/becoming/chapters/RECORDED-REASONS.md)
+- [Canonical account](../../../../../../../../theories/becoming/history/RECORDED-REASONS.md)
 - [Protocol](PROTOCOL.md) and [freeze receipt](protocol-freeze.json)
 - [Mathematical/model companion](../../../../../../../../_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md)
 - [Independent review](../../../../../../../../_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-REVIEW.md)

@@ -19,7 +19,7 @@ physical and evidential couplings must each be identified.
 
 ## Established mechanisms already change response-carrying organization
 
-The [selector construction](../../../../theories/becoming/chapters/SELECTOR-REVISION.md)
+The [selector construction](../../../../theories/becoming/history/SELECTOR-REVISION.md)
 has actual capture restore a mapping's finite lifetime. Failed trials exhaust
 that lifetime; reconstruction can produce another mapping in the same
 compartment. The original reserve, source and residues continue through the
@@ -30,7 +30,7 @@ directed feedback is stronger in the primary comparison. Two reversals and
 the three-unit initial reserve preserve cases where the material mechanism
 performs worse than a fixed or outcome-blind alternative.
 
-The [updater construction](../../../../theories/becoming/chapters/UPDATER-FORMATION.md)
+The [updater construction](../../../../theories/becoming/history/UPDATER-FORMATION.md)
 also changes the component governing reconstruction itself. Its accepted
 history forms R, actually uses R to reconstruct the old mapping after failure,
 then replaces expired R with D. D uses the retained old orientation to form
@@ -59,7 +59,7 @@ conflating a permitted replacement with guaranteed recovery.
 
 Two later constructions reach beyond changing a finished response mapping:
 
-- [Architecture formation](../../../../theories/becoming/chapters/ARCHITECTURE-FORMATION.md)
+- [Architecture formation](../../../../theories/becoming/history/ARCHITECTURE-FORMATION.md)
   produces docking guides after actual private capture. Current guide abundance
   enters `local_bonds` in
   [the source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/model.py).
@@ -68,7 +68,7 @@ Two later constructions reach beyond changing a finished response mapping:
   guides bias formation in the other direction. The resulting graph, not an
   external graph label, determines which target signal reaches the predictor.
   Wrong transfer can propagate harm while retaining the same private returns.
-- [Autonomous method formation](../../../../theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md)
+- [Autonomous method formation](../../../../theories/becoming/history/AUTONOMOUS-METHOD-FORMATION.md)
   acquires six native readings, forms and traverses a G0 edge, rejects all G0
   candidates in the H4 history, removes the edge and forms G1. In
   [the source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py),

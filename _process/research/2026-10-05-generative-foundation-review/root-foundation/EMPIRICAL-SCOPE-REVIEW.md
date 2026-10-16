@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored internal collaborating-agent review, not external peer review. **Accepted for bounded claim/evidence/scope reconciliation.** Both precision requests are resolved, and the final source notes pass the review below. The reviewer owns this review and its eventual receipt, not the canonical account or source notes. No accepted experiment, statistical analysis or formal compilation is rerun.
 
-The reviewed [canonical draft](../../../../theories/becoming/chapters/EMPIRICAL-SCOPE.md) declares source baseline `9a6a7795e9d8a8dd777c0973eadf2f4523615e48`. The governing standard remains the same [five completion conditions](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation). The [fixed finish-line audit](FIXED-FINISH-LINE-AUDIT.md#11-bounded-completion-accounting-after-generic-correction-reuse) permits a justified restriction of unsupported empirical claims and explicitly rejects an unlimited ladder of new mechanisms.
+The reviewed [canonical draft](../../../../theories/becoming/history/EMPIRICAL-SCOPE.md) declares source baseline `9a6a7795e9d8a8dd777c0973eadf2f4523615e48`. The governing standard remains the same [five completion conditions](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation). The [fixed finish-line audit](FIXED-FINISH-LINE-AUDIT.md#11-bounded-completion-accounting-after-generic-correction-reuse) permits a justified restriction of unsupported empirical claims and explicitly rejects an unlimited ladder of new mechanisms.
 
 ## Finite acceptance criteria
 
@@ -25,7 +25,7 @@ Two precision requests were sent before acceptance. First, the 27-declaration id
 
 ## Constructive and destructive regimes
 
-The existing [premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md#5-how-constructive-and-destructive-regimes-share-the-root) already explains favorable and adverse consequences through the same declared mechanism families: repair and depletion, correction and mislearning, inclusion and suppression, productive transmission and subsidized retention of error. This is substantive support for criterion 4 at those scopes. A further adverse specimen is not required merely because degeneration is part of the goal.
+The existing [premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md#5-how-constructive-and-destructive-regimes-share-the-root) already explains favorable and adverse consequences through the same declared mechanism families: repair and depletion, correction and mislearning, inclusion and suppression, productive transmission and subsidized retention of error. This is substantive support for criterion 4 at those scopes. A further adverse specimen is not required merely because degeneration is part of the goal.
 
 The remaining global regime obligation is consolidation by affected center, information, resources, control, future reconstruction and horizon, with explicit limits on which histories compose. The current synthesis work owns that integration. Neither two historical attractors nor inevitable favorable direction becomes an additional obligation unless such a claim is retained. The new empirical ledger must credit existing mechanism explanations without treating them as measured historical prevalence.
 

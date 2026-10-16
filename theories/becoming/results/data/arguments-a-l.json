@@ -13,7 +13,7 @@
     "scope_en": "Historical hand proofs and finite synthetic checks; no direct Lean proof for this acquisition result. False bounds, faulty access and funding failures remain.",
     "next_zh": "已接续：实验接入与模型族修订；应继续：上界与校准的根据、跨域形成及经验识别。",
     "next_en": "Continued: access and model-family revision. Proposed: warranted bounds, calibration, broader formation and empirical identification.",
-    "source": "theories/becoming/chapters/ABSTRACTION-ACQUISITION.md",
+    "source": "theories/becoming/history/ABSTRACTION-ACQUISITION.md",
     "source_sha256": "252b9181ef40c1880ac0c5a47fdc7985af49b61633dbeaccafb1a2d3025f2dcd",
     "lean": [],
     "evidence": [
@@ -35,7 +35,7 @@
     "scope_en": "A research synthesis whose linked conditional packages carry their own Lean checks at finite interfaces: alignment through change 59 theorems/102 audits, corrigibility 34/56, a partial-observability counterexample and repair 31/54, test/use boundary 34/58, plural systems 37/58 and connected goal histories 27/84, among others. The counterexample targets one published theorem’s exact formulation; no superior algorithm, learned-AI result or scalable governance advantage is established.",
     "next_zh": "正在：生成性对齐四问——共同规范根据的跨智能适用、人类与机构目的的评价、关切与智慧的形成校准、后继智能选择规则的改变；以及因应转化（可纠正性）的边界条件与方向。应继续：学习系统的长期实证、权力变化及跨后继验证。",
     "next_en": "Ongoing: the four generative-alignment questions—cross-intelligence normative applicability, appraisal of human and institutional ends, formation and calibration of concern and wisdom, and change in rules selecting successive intelligences—plus the boundary conditions and direction of responsive transformation (corrigibility). Proposed: long-term learned-system tests under changing power and succession.",
-    "source": "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md",
+    "source": "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md",
     "source_sha256": "404f29b21b8cef6140a0d29014cbc4fe8fa0a06d38280fe3e9e18c4ff94461eb",
     "lean": [],
     "evidence": [
@@ -58,7 +58,7 @@
     "scope_en": "A philosophical argument with substantive premises, not a direct Lean proof; universal address to actors without prior roles remains unsettled.",
     "next_zh": "正在：整体规范奠基；应继续：最强动机主义对手、累积援助负担及合理差等。",
     "next_en": "Ongoing: whole-process normative grounding. Proposed: strongest motivational rivals, cumulative aid burdens and warranted differences.",
-    "source": "theories/becoming/chapters/ALIGNMENT-AXIS.md",
+    "source": "theories/becoming/history/ALIGNMENT-AXIS.md",
     "source_sha256": "13b8dc19be1d76c45b103632df143d40d903049819d2592f4a0761f9c3d7a370",
     "lean": [],
     "evidence": [
@@ -173,7 +173,7 @@
     "scope_en": "Independent finite reconstruction and historical hand proofs, with no direct Lean formalization of this construction. Parts, bonding laws and target meanings remain supplied; wider response is not ethical warrant.",
     "next_zh": "已接续：形成路线后的对象学习；应继续：零件和校准的形成、真实材料识别及比较。",
     "next_en": "Continued: recipient learning through formed routes. Proposed: component and calibration formation, material identification and comparison.",
-    "source": "theories/becoming/chapters/ARCHITECTURE-FORMATION.md",
+    "source": "theories/becoming/history/ARCHITECTURE-FORMATION.md",
     "source_sha256": "5728b31b095b70a6c5c141cd1ffc66b49e0109d96194202c8fdce878d91cb647",
     "lean": [],
     "evidence": [
@@ -195,7 +195,7 @@
     "scope_en": "The finite synthetic join and independent reconstruction are accepted; no direct Lean proof covers this graph construction. Sibling proofs do not substitute for it; ethical interpretation needs its application argument.",
     "next_zh": "已接续：评价获得与有根据应用；应继续：其他证据渠道、目标保持和跨场景校准。",
     "next_en": "Continued: acquired evaluation and warranted application. Proposed: alternative evidence channels, target continuity and cross-context calibration.",
-    "source": "theories/becoming/chapters/ARCHITECTURE-LEARNING.md",
+    "source": "theories/becoming/history/ARCHITECTURE-LEARNING.md",
     "source_sha256": "69e7570e1f5a4ccd987ccb92629babaaa23de4bfbf0f2a7cbc82ddb140db3ede",
     "lean": [],
     "evidence": [
@@ -217,7 +217,7 @@
     "scope_en": "Several Lean groups (enactment, inferential grounds, mutual grounding, continuation conditions, relational formation, history-derived law and others) are checked at their scopes, with empty dependency reports recorded where they hold. Empty reports, direct evidence and necessary implications keep their scopes; none is relabeled as the completed foundation. The chapter stops at a stated wall, asserts no impossibility and leaves the separate G0/J route intact.",
     "next_zh": "需要从有根据的构成内容实际推导共同运作关系及其范围，或提出要求修改主张的实质反论证；等价编码不能代替缺少的推论。现由 Theory of Becoming 接续。",
     "next_en": "Needed: an actual derivation of the common operative relationship and its scope from warranted constitutive content, or a substantive counterargument requiring revision. Equivalent encodings cannot replace the missing inference. The Theory of Becoming now carries this question.",
-    "source": "theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md",
+    "source": "theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md",
     "source_sha256": "3e26f9fa9f184d5de0ffbcf80eb615120398036acb4c05321bed450c52db8d8b",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/EnactedFoundation.lean",
@@ -253,7 +253,7 @@
     "scope_en": "The recorded 23-module, 307-empty-audit closure checks the stated subset; these are not separate theories. Physical decoding, full native correspondence and unmigrated hand results remain limited.",
     "next_zh": "正在：实际后果怎样改变充分询问标准；应继续：保留与恢复条件、迟到需求及跨接口对应。",
     "next_en": "Ongoing: consequences changing sufficient-inquiry criteria. Proposed: retention, restoration, late demands and fuller interface correspondence.",
-    "source": "theories/becoming/chapters/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
+    "source": "theories/becoming/history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
     "source_sha256": "ce9e1c0e6d36dbff75d032206b3cee1cc457d631bb3f5368e1a7123d6e4cbbd0",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean",
@@ -279,7 +279,7 @@
     "scope_en": "448 admitted histories were independently reconstructed; the study explicitly supplies no new Lean certificate. Generator recipes, testing head, schedule and tariffs remain given.",
     "next_zh": "已接续：更广方法与结构形成研究；应继续：特定供应组件的形成、超出模型族的错误及长期再使用。",
     "next_en": "Continued: broader method and architecture studies. Proposed: formation of named supplied components, out-of-family error and sustained reuse.",
-    "source": "theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md",
+    "source": "theories/becoming/history/AUTONOMOUS-METHOD-FORMATION.md",
     "source_sha256": "7c60fda913269c1cced163467d74f1d00c6db3ac773a3e10f11406f27e49ccf1",
     "lean": [],
     "evidence": [
@@ -420,7 +420,7 @@
     "scope_en": "45 new audits and a seven-module build are recorded. The ledger is a verification interface, not a formed motive, storage mechanism or allocation principle.",
     "next_zh": "正在：理由及权限的规范根据；应继续：持续履行、修复和真实冲突中的接口。",
     "next_en": "Ongoing: warrant of reasons and authority. Proposed: sustained fulfillment, repair and interfaces under genuine conflict.",
-    "source": "theories/becoming/chapters/CLAIMS-AND-PAID-ACTION.md",
+    "source": "theories/becoming/history/CLAIMS-AND-PAID-ACTION.md",
     "source_sha256": "2be8b00d06e670f2f3caf4e7701e6393dc39ae4c9bdc9e47d260ea903273023e",
     "lean": [
       "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean"
@@ -479,7 +479,7 @@
     "scope_en": "Targeted textual comparison, historical hand-derived error bounds and counterexamples; no new Lean proof, psychological mechanism or human experiment.",
     "next_zh": "后续：知识专章（KNOWLEDGE）以形成的内容与实际整合区分命题知识、解释性理解与知如何；G0 与知识的首轮候选另行记录。应继续：比较直接复制、校准迁移与独立他者证据，验证理由的实际约束。",
     "next_en": "Continued in KNOWLEDGE, which separates propositional knowledge, explanatory understanding and know-how through formed content and actual integration; the first G0-and-knowledge candidate is recorded separately. Proposed: compare copying, calibrated transfer and independent evidence, then test actual action constraints.",
-    "source": "theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md",
+    "source": "theories/becoming/history/COGNITION-LI-AND-RECIPROCITY.md",
     "source_sha256": "037e4423ef348b2291c8f69450e9f0143dcf6386dcefca9c921d05842de8cd64",
     "lean": [],
     "evidence": [
@@ -500,7 +500,7 @@
     "scope_en": "A plan, not a proof package. Physical interfaces retain their separate checks; universal favorable direction and assumption-free grounding remain open.",
     "next_zh": "原先机制缺口须按后续成果更新；当前优先规范根据，物理工作继续提供具名依存及经验检验。",
     "next_en": "Historical mechanism gaps must be read with later results. Normative grounding now leads; physical work supplies named dependencies and empirical tests.",
-    "source": "theories/becoming/chapters/COMPLETION-PLAN.md",
+    "source": "theories/becoming/history/COMPLETION-PLAN.md",
     "source_sha256": "586ecb51c727347f0f6734d5bc49ff5a7a8d1ce9958a81550fd3a1a0646e2a22",
     "lean": [],
     "evidence": [
@@ -522,11 +522,11 @@
     "scope_en": "Historical hand proofs and independent finite checks, not direct Lean formalization; this is not equivalence of both full dynamics. Later joint formation closes one specified developmental connection.",
     "next_zh": "已接续：联合学习、证据、控制及再形成；应继续：无制衡患者的正当性与实际长期识别。",
     "next_en": "Continued: jointly selected learning, evidence, control and reconstruction. Proposed: warrant for patients without leverage and long-term identification.",
-    "source": "theories/becoming/chapters/CONCERN-AND-CORRECTION.md",
+    "source": "theories/becoming/history/CONCERN-AND-CORRECTION.md",
     "source_sha256": "d954b7c6d0b8a866c505a8810606a0714543be13ca9c70b5716e58cd5dd22d71",
     "lean": [],
     "evidence": [
-      "theories/becoming/chapters/verification/concern-interface-independent-checks.json",
+      "theories/becoming/history/verification/concern-interface-independent-checks.json",
       "_process/research/2026-10-05-concern-theory/RESEARCH-RECORD.md"
     ]
   },
@@ -544,7 +544,7 @@
     "scope_en": "Eight generic theorems / nine audits reuse the practical-judgment comparator over arbitrary history and content types; they do not prove classifications, ethical significance or completeness. The acquired-basic-conditions part is philosophical argument without new theorem or empirical replication.",
     "next_zh": "开放条件下完整的取得—规范辨认—动机形成历史：不预送正确分类、读取路线与支持方案而形成可靠可修正的关切。",
     "next_en": "A complete open-ended acquisition–recognition–motivation history: forming reliable, correctable concern without pre-supplying the correct classification, access route or support plan.",
-    "source": "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md",
+    "source": "theories/becoming/history/CONCERN-AND-NEW-REASONS.md",
     "source_sha256": "afe58ed9ef40cd923ca6081528b9e65197d0e15cb976a0180b30525596b95794",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean"
@@ -570,7 +570,7 @@
     "scope_en": "Lean checks implications of the laws; reality correspondence and ethical direction need separate warrant. This does not replace universal metaethics or the stronger no-assumptions goal.",
     "next_zh": "已接续：原生过程律、形成与更新；应继续：具名更强连接的对应，以及规范根据的普遍性。",
     "next_en": "Continued: native process laws, formation and renewal. Proposed: correspondence for named stronger connections and universal normative warrant.",
-    "source": "theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md",
+    "source": "theories/becoming/history/CONDITIONAL-UNIVERSALITY.md",
     "source_sha256": "4383e35dd25aa81d3cd0d11a5579e72fdfeceb0d9db3356371c43ec15ebf5091",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
@@ -596,7 +596,7 @@
     "scope_en": "Linked Lean entries check specified joins and dependencies; local laws, meanings and ethical grounds are not all derived by compilation.",
     "next_zh": "正在：整体生成的规范根据；应继续：仅为明确更强主张补足真实缺失接口，保留正确诊断却无法维持等失败。",
     "next_en": "Ongoing: normative grounding of whole generation. Proposed: only genuinely missing interfaces required by stronger claims, preserving unaffordable retention and other failures.",
-    "source": "theories/becoming/chapters/CONNECTED-GENERATIVE-MODEL.md",
+    "source": "theories/becoming/history/CONNECTED-GENERATIVE-MODEL.md",
     "source_sha256": "b7ffe6b531caff47cb58660be1db3920b78a549adf87f3e3d0ec0ebd89a43983",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean",
@@ -623,7 +623,7 @@
     "scope_en": "A sufficient contract for supplied deterministic controllers and relational dynamics with shared action vocabulary and granularity; Lean verifies compatibility, not controller origins.",
     "next_zh": "已接续：具体形成与学习组合；应继续：多步实现、控制相关的较弱观察等价与经验对应。",
     "next_en": "Continued: concrete formation–learning composition. Proposed: multistep realization, weaker controller-relative observation equivalence and empirical mapping.",
-    "source": "theories/becoming/chapters/CONTROLLED-REFINEMENT.md",
+    "source": "theories/becoming/history/CONTROLLED-REFINEMENT.md",
     "source_sha256": "e186ccb0e6aaa08f8d70deb126f83a2935a773b9941da878b55e0940608df177",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControlledRefinement.lean"
@@ -647,7 +647,7 @@
     "scope_en": "Retrospective secondary analysis of two 20-participant cohorts, without raw trials or reproduction of all published model fits; no direct Lean proof.",
     "next_zh": "应继续：独立表征教学输入、保留载体与记忆、直接干预更新结构并检验后续使用；本数据不能补出这些量。",
     "next_en": "Proposed: characterize teaching inputs, preserve carrier and memory, intervene on update structure and test later use; these quantities cannot be recovered from this dataset.",
-    "source": "theories/becoming/chapters/COST-SENSITIVE-LEARNING.md",
+    "source": "theories/becoming/history/COST-SENSITIVE-LEARNING.md",
     "source_sha256": "036596893052fcc3fdaae82cb29156b6dfe193e5cc3b85ed117f13119b698479",
     "lean": [],
     "evidence": [
@@ -669,7 +669,7 @@
     "scope_en": "No containment of the entire cybernetic tradition is established. The systems companion records 104 added audits for specified dynamics, not certification of this whole review.",
     "next_zh": "正在：整体规范根据；应继续：资源与反馈匹配的对照、实物机制识别和关切到智慧的检验。",
     "next_en": "Ongoing: whole-process normative grounding. Proposed: matched resource/feedback comparisons, material identification and tests from concern to wisdom.",
-    "source": "theories/becoming/chapters/CYBERNETICS.md",
+    "source": "theories/becoming/history/CYBERNETICS.md",
     "source_sha256": "bed05e92feec2f936478ed36a18c2cb6f392c7e4be27aa2c33efa115ee833d10",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FeedbackDynamics.lean",
@@ -715,7 +715,7 @@
     "scope_en": "Lean checks underdetermination, history realization, roles and core/tree interfaces; it does not thereby derive all natural laws, experience or ethical warrant.",
     "next_zh": "已接续：原生律、接触形成与更新；正在：整体规范奠基；应继续：明确仍供应的形成关系。",
     "next_en": "Continued: native laws, contact formation and renewal. Ongoing: whole normative grounding. Proposed: account for precisely remaining formation relations.",
-    "source": "theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md",
+    "source": "theories/becoming/history/DEEPER-GENERATIVE-ROOT.md",
     "source_sha256": "bf72051b231baabb7566cf069086e5ac5453ad73decb2072e2759c7f38f0e678",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
@@ -742,7 +742,7 @@
     "scope_en": "A versioned, internally reviewed synthesis with no new experiment or compilation; referenced Lean results are not new proofs of this synthesis.",
     "next_zh": "应继续：跨材料的干预识别、较简解释对照及连接级证据；新研究按实际范围更新，而不重算旧运行。",
     "next_en": "Proposed: intervention-based identification across materials, simpler comparators and connection-level evidence, updating only when substantive studies advance.",
-    "source": "theories/becoming/chapters/EMPIRICAL-SCOPE.md",
+    "source": "theories/becoming/history/EMPIRICAL-SCOPE.md",
     "source_sha256": "f3208aff28c56fe697bb677b867c3f861b3bea894f17b655e95f919201cc28db",
     "lean": [],
     "evidence": [
@@ -764,7 +764,7 @@
     "scope_en": "The ethical argument is not directly Lean formalized; embedded-evaluation results do not certify the chosen relation's goodness. Current whole-generation inquiry develops beyond this historical entry.",
     "next_zh": "正在：整体生成与善的规范奠基；应继续：实际冲突、差等责任及不以私人回报为根据的实践理由。",
     "next_en": "Ongoing: whole generation and normative goodness. Proposed: genuine conflicts, differentiated responsibility and reasons independent of private return.",
-    "source": "theories/becoming/chapters/ETHICAL-FOUNDATION.md",
+    "source": "theories/becoming/history/ETHICAL-FOUNDATION.md",
     "source_sha256": "7e4c5fed4bf6215296492fb0911676d6111d706d83a7f4b705666f0899d652d4",
     "lean": [],
     "evidence": [
@@ -813,7 +813,7 @@
     "scope_en": "Access and interpretation limits of external studies are audited; there are no new model calls, outcome rates or Lean proofs.",
     "next_zh": "应继续：匹配信息与激励的报告试验，保留正当不披露、真实新证据和修正能力的差别。",
     "next_en": "Proposed: reporting tests with matched information and incentives, distinguishing justified nondisclosure, genuinely new evidence and corrective capacity.",
-    "source": "theories/becoming/chapters/EVALUATION-AND-FAITHFUL-REPORTING.md",
+    "source": "theories/becoming/history/EVALUATION-AND-FAITHFUL-REPORTING.md",
     "source_sha256": "028e1978019f65cfeb107110023ff3bfea13263a0f1d6598e721ed951e799419",
     "lean": [],
     "evidence": [
@@ -835,7 +835,7 @@
     "scope_en": "The conditional application is accepted; Lean checks interfaces and realizations, not all ethical premises. Later inquiry revision closes the specified technical obstruction.",
     "next_zh": "正在：规范根据与具体适用范围；应继续：实际依存冲突、履行证据对选择的影响及真实案例识别。",
     "next_en": "Ongoing: normative grounds and application scope. Proposed: dependency conflicts, fulfillment-sensitive choice and real-case identification.",
-    "source": "theories/becoming/chapters/EVALUATIVE-APPLICATION.md",
+    "source": "theories/becoming/history/EVALUATIVE-APPLICATION.md",
     "source_sha256": "2c690e7c177d82f636e486d224e4e5020afc636521e9c04223b59d97eba861e6",
     "lean": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean",
@@ -861,7 +861,7 @@
     "scope_en": "The philosophical connection adds no independent Lean theorem; linked Lean supplies inherited mechanism interfaces. Conditional acceptance is not universal normative necessity.",
     "next_zh": "正在：第一规范根据；应继续：习得倾向如何随理由变化得到可靠校准及经验识别。",
     "next_en": "Ongoing: first normative warrant. Proposed: reliable calibration of acquired dispositions as reasons change, with empirical identification.",
-    "source": "theories/becoming/chapters/EVALUATIVE-GROUNDING.md",
+    "source": "theories/becoming/history/EVALUATIVE-GROUNDING.md",
     "source_sha256": "de7e436b169a05d24ffb210fd951c1ab47d8658ce78c024a1eacc1d6740b2eb3",
     "lean": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean",
@@ -886,7 +886,7 @@
     "scope_en": "60 new Lean audits and independent reconstruction of 836 histories. Assembly laws, pairing structure and resources remain supplied; conditioning does not prove ethical validity.",
     "next_zh": "已接续：有根据修复应用与询问修订；应继续：自然形成的配对、错误倾向校准和真实机制识别。",
     "next_en": "Continued: warranted repair and inquiry revision. Proposed: formation of pairing conditions, calibration of mistaken dispositions and real-mechanism identification.",
-    "source": "theories/becoming/chapters/EVALUATIVE-PLASTICITY.md",
+    "source": "theories/becoming/history/EVALUATIVE-PLASTICITY.md",
     "source_sha256": "8fc9d10b189a2daeda5459195c67225548b293a0d512efd6f5e81d1afd70e60b",
     "lean": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean",
@@ -911,7 +911,7 @@
     "scope_en": "92 new Lean audits, 3,306 reconstructed histories and selected correspondence checks. Staged isolation, kit and calibration are supplied; this evaluator does not automatically withdraw recommendations after fulfillment.",
     "next_zh": "已接续：履行及应用接口研究；应继续：理由适用实际影响后继选择、支持与权限的长期变化。",
     "next_en": "Continued: fulfillment and application interfaces. Proposed: applicability-sensitive successor choice and sustained changes in support and authority.",
-    "source": "theories/becoming/chapters/EVALUATIVE-SUCCESSION.md",
+    "source": "theories/becoming/history/EVALUATIVE-SUCCESSION.md",
     "source_sha256": "a25f5ed39ae4529c5f934c7e363785f4d135e868ead2a5dffebfad05305cc44b",
     "lean": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean",
@@ -936,7 +936,7 @@
     "scope_en": "Finite construction, independent reconstruction and selected Lean correspondence are accepted. Shared routing and update rules are supplied; ethical worth and scope require separate warrant.",
     "next_zh": "已接续：连接形成、评价接续及正当应用；应继续：评价修订是否追踪真正理由的检验。",
     "next_en": "Continued: link formation, succession and warranted application. Proposed: tests of whether evaluative revision tracks warranted reasons.",
-    "source": "theories/becoming/chapters/EVALUATIVE-UPTAKE.md",
+    "source": "theories/becoming/history/EVALUATIVE-UPTAKE.md",
     "source_sha256": "3a478b88269dce0b8a0f7fa10c6380f2d21cc75eb0e048c827e7ef07de0343fa",
     "lean": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean",
@@ -961,7 +961,7 @@
     "scope_en": "A primary-source historical analysis of Robodebt, internally reviewed; not a generative-AI experiment, Lean theorem or effectiveness estimate for the proposed design.",
     "next_zh": "应继续：按准则追踪实际更正范围、公开通知及救济送达，并与既有行政解释比较。",
     "next_en": "Proposed: trace real correction scope, public notice and delivered remedy, comparing existing administrative explanations.",
-    "source": "theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+    "source": "theories/becoming/history/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
     "source_sha256": "3f78cd13568bc488a2d02db7ae50eaf1189bf22889c95aedf5b637be63e33d37",
     "lean": [],
     "evidence": [
@@ -983,7 +983,7 @@
     "scope_en": "Complete at Ren’s selected scope (complete explanation, checked results, primary evidence and substantive comparison). Recovering existing models is a connection, not evidence of surpassing their predictions. Structural copying: 34 theorems / 57 audits; other modules have their own receipts. Task families, test relations and fixed higher governance remain premises. Reproductive advantage confers no ethical authority.",
     "next_zh": "共同活动怎样改变任务、检验关系或参与方式本身；完整演化理论与广泛优越性另行研究。",
     "next_en": "How joint activity changes the task, testing relations or means of participation themselves; the full evolutionary theory and broad superiority are separate objectives.",
-    "source": "theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md",
+    "source": "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md",
     "source_sha256": "f0094759f44d34d09aa7d61abd79755df55aacb3b58f93648dd2199942bca0c3",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean",
@@ -1020,7 +1020,7 @@
     "scope_en": "65 continuations and 2,033 event states are independently reconstructed; formal checks cover stated local laws and policy. Family, contact and selector remain supplied; no indefinite renewal follows.",
     "next_zh": "已接续：模型族与方法修订、询问信息限制；应继续：充分档案保留、广泛故障与新通道的校准。",
     "next_en": "Continued: family/method revision and inquiry limits. Proposed: sufficient archive retention, wider faults and calibration of new channels.",
-    "source": "theories/becoming/chapters/EXPERIMENTAL-ACCESS.md",
+    "source": "theories/becoming/history/EXPERIMENTAL-ACCESS.md",
     "source_sha256": "d5625e0da68fb2d9fd68c52c8c32970184103186814ce2a3ad2ecabd495b7bfc",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/applicability/formal/AcquiredApplicability.lean",
@@ -1046,7 +1046,7 @@
     "scope_en": "Each round compiles under Lean 4.29.1 with dependency reports separated into empty, standard and classical-choice; they must not be summarized as zero-axiom. Finite formal success does not replace the universal inference. This is not a proof of universal uniqueness without substantive premises.",
     "next_zh": "说明为何任意不同语法的充分解释都能有据地恢复这些必须保留的联系；这是下一项普遍推论。",
     "next_en": "Explain why adequate explanations in arbitrary different syntaxes can warrantedly recover the links that must be kept; this is the next universal inference.",
-    "source": "theories/becoming/chapters/EXPLANATORY-NECESSITY.md",
+    "source": "theories/becoming/history/EXPLANATORY-NECESSITY.md",
     "source_sha256": "3fe5a1c8bb98fce8a99922a44663342166fdb7019ed5dec187f64d05fdf4369f",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
@@ -1139,7 +1139,7 @@
     "scope_en": "Finite strategic construction, historical hand proofs and enumeration, without direct Lean; standing, technologies and control primitives remain supplied, not universal ethical evolution.",
     "next_zh": "已接续：无患者制衡力的联合形成；应继续：经验识别和更广合法治理条件。",
     "next_en": "Continued: joint formation without patient bargaining power. Proposed: empirical identification and broader legitimate-governance conditions.",
-    "source": "theories/becoming/chapters/FORMATION.md",
+    "source": "theories/becoming/history/FORMATION.md",
     "source_sha256": "e1e1e4f397d4ecb48d25960af6e0eb0884e6492d374a64fd604820f411d82d0c",
     "lean": [],
     "evidence": [
@@ -1162,7 +1162,7 @@
     "scope_en": "Historical proofs and enumeration for a specified strategic model, without direct Lean formalization; technology, input control and observation are supplied, not ethical standing.",
     "next_zh": "已接续：联合形成；应继续：无私人制衡者的保护及真实制度对应。",
     "next_en": "Continued: joint formation. Proposed: protection without private leverage and identification in actual institutions.",
-    "source": "theories/becoming/chapters/FORMATION-MATH.md",
+    "source": "theories/becoming/history/FORMATION-MATH.md",
     "source_sha256": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf",
     "lean": [],
     "evidence": [
@@ -1184,7 +1184,7 @@
     "scope_en": "A literature/local-model review, not a separate theorem, exhaustive novelty search or Lean proof; later formation work executes part of its design.",
     "next_zh": "已接续：形成与联合形成；应继续：不以经济不可替代性作为伦理地位的制度机制。",
     "next_en": "Continued: formation and joint formation. Proposed: institutional mechanisms whose protection does not depend on economic indispensability.",
-    "source": "theories/becoming/chapters/FORMATION-PRIOR-ART.md",
+    "source": "theories/becoming/history/FORMATION-PRIOR-ART.md",
     "source_sha256": "911e3ed7c9ecc07579a26db6882b5e0cf70f74173881d40a6f9b8aea19588060",
     "lean": [],
     "evidence": [
@@ -1205,7 +1205,7 @@
     "scope_en": "The stated FormedRouteMonitor law is checked; its head, contact, eight cells and added support remain supplied. Monitoring costs can worsen whole-history outcomes.",
     "next_zh": "已接续：取得诊断后的路线替换与后继使用；应继续：持续监测结构形成、适时停止和校准。",
     "next_en": "Continued: diagnosed route replacement and successor use. Proposed: sustained monitor formation, adaptive stopping and calibration.",
-    "source": "theories/becoming/chapters/FORMED-ROUTE-MONITOR.md",
+    "source": "theories/becoming/history/FORMED-ROUTE-MONITOR.md",
     "source_sha256": "651adb6f70ac85e674e074ef79c11319dc336305677ddaa4db67a04fbd134454",
     "lean": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean"
@@ -1229,7 +1229,7 @@
     "scope_en": "This page adds no proof; premise-discharge and mechanism audits have their own certificates. Renaming normative premises or moving them into definitions does not eliminate them.",
     "next_zh": "正在：第一伦理根据；应继续：逐项实质消除所需依赖，保留已完成接口及真反例。",
     "next_en": "Ongoing: first ethical warrant. Proposed: discharge genuinely required dependencies while preserving completed interfaces and real counterexamples.",
-    "source": "theories/becoming/chapters/FOUNDATION-PREMISES.md",
+    "source": "theories/becoming/history/FOUNDATION-PREMISES.md",
     "source_sha256": "6e28d8ee23609c8e2aec4360d18673eb636ae23623892d4274775aa584106c76",
     "lean": [],
     "evidence": [
@@ -1322,7 +1322,7 @@
     "scope_en": "43 structural additions and later acquisition/use bridges have empty-dependency Lean records; body boundaries, phenomenal experience and universal ethics are not thereby derived.",
     "next_zh": "正在：整体善的规范奠基；应继续：自身表征的形成、真实体验对应及连续性改变下的理由。",
     "next_en": "Ongoing: whole-goodness grounding. Proposed: self-representation formation, experiential correspondence and reasons under changes in continuity.",
-    "source": "theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md",
+    "source": "theories/becoming/history/GENERATED-SELF-AND-ETHICS.md",
     "source_sha256": "6f342b5c12b6d8619a5938a390791af13b7a29616fdd82ddee6cb3eee4d83ad6",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean",
@@ -1348,7 +1348,7 @@
     "scope_en": "Multiple overlapping closures are checked; counts such as 599 are version-specific and must not be summed. Formal realization does not itself ground ethics or empirical identification.",
     "next_zh": "正在：具名新结果的持续实际检查；应继续：明确每次新增范围、前提与代码／研究对应。",
     "next_en": "Ongoing: actual checking of named new results. Proposed: retain explicit added scope, premises and code–research correspondence.",
-    "source": "theories/becoming/chapters/GENERATIVE-CORE-LEAN.md",
+    "source": "theories/becoming/history/GENERATIVE-CORE-LEAN.md",
     "source_sha256": "05cbc801ad550dbf165ed4b1ad56c7d4eca5c13edc13a47074f17ded800b634e",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
@@ -1376,7 +1376,7 @@
     "scope_en": "The candidate foundation is accepted under its five original criteria; this synthesis adds no theorem and does not complete universal normative or assumption-free grounding.",
     "next_zh": "已接续：特定询问修订；正在：生成到善及实践理由的核心连接，不重开已有机械接口。",
     "next_en": "Continued: specific inquiry revision. Ongoing: generation to goodness and practical reasons, without reopening established mechanisms.",
-    "source": "theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md",
+    "source": "theories/becoming/history/GENERATIVE-DEVELOPMENT.md",
     "source_sha256": "9cbc8436e52ca71865521723ebf9d09471abcd8abd0a6bc09a142232387865e5",
     "lean": [],
     "evidence": [
@@ -1398,7 +1398,7 @@
     "scope_en": "The original five-condition candidate is complete, and practical judgment is complete on the explicit G0 route (see its chapter). The deductive continuation builds empty-basis proofs from well-founded local root derivations (5 theorems/7 empty audits), but no certificate exists for the actual foundational process law: empirical warrant stands while deductive necessity of the root remains open. Universal metaethics, compliance, exclusive necessity and assumption-free grounding are not jointly proved.",
     "next_zh": "正在：为实际基础过程法则建立必然的模态／构成根据，以及零公理实践根据。生命依存说明已在明示范围完成；各项后续在相应专章接续。",
     "next_en": "Ongoing: necessary modal/constitutive warrant for the actual foundational process law, and zero-axiom practical warrant. The living-dependency account is complete at declared scope; further work continues in the dedicated chapters.",
-    "source": "theories/becoming/chapters/GENERATIVE-GROUNDING.md",
+    "source": "theories/becoming/history/GENERATIVE-GROUNDING.md",
     "source_sha256": "8648cd4c8de484c578d23b25aec2ca223716df70d23e36ea3b807479c4f014ed",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean"
@@ -1429,7 +1429,7 @@
     "scope_en": "Formalization checks the mathematical conditionals; a structural-role rival can accept them, so neither exclusive metaphysical priority nor ethical warrant follows.",
     "next_zh": "正在：实际整体关系的规范根据；应继续：独立的无限域可容许根据及学习／自改后内容保持。",
     "next_en": "Ongoing: warrant of actual whole relations. Proposed: independent infinite-domain admission and preservation of content through learning and self-modification.",
-    "source": "theories/becoming/chapters/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md",
+    "source": "theories/becoming/history/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md",
     "source_sha256": "4d71c43d9d2a6057c5f46ab4e27489aad62b21b1fef5b49501678e323fb3fde8",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/CompletionRole.lean",
@@ -1456,7 +1456,7 @@
     "scope_en": "The six mechanisms are synthesized through explicit interfaces; named recursive-selection results have Lean checks, not a completed assumption-free dynamics composing all six. 8 October continuations check generated reconstruction (16 theorems/26 audits), developmental association (19), physical sorting (7/13), lineage continuation (6) and contextual establishment (7/11), with reanalyses of primary experimental data; the evolutionary-organization chapter is complete at its selected scope. Conventional models receive the same evidence; no broad superiority is claimed.",
     "next_zh": "正在：在相同条件下把实际发展、分选与后代重建接成共同记录，再检验遗传或转移改变下的预测。应继续：真实选择关系识别、捕获与合法保护的比较。",
     "next_en": "Ongoing: join actual development, sorting and descendant reconstruction in one matched record, then test prediction under genetic or transfer changes. Proposed: identify actual selection relations and compare capture with legitimate protection.",
-    "source": "theories/becoming/chapters/GENERATIVE-SELECTION.md",
+    "source": "theories/becoming/history/GENERATIVE-SELECTION.md",
     "source_sha256": "8023c1d6b352eeef651d46137211e7065f175ac6cb7ae78bea186f43f058f3da",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecursiveGenerativeSelection.lean",
@@ -1482,7 +1482,7 @@
     "scope_en": "The full controller still has a supplied higher-level response rule; the finite realization does not show that every intelligence develops this capacity or universal semantic sufficiency. Reform evidence: 23 theorems / 43 audits. The data work is secondary analysis of real observations, not a new experiment: the perturbation contrast increases by 0.10666 [0.05795, 0.15781], while the cue-contrast increase is uncertain. No universal convergence claim.",
     "next_zh": "下一项经验比较区分记忆改变、提取改变、表达与有意纠正；明确认识自身形成条件与最终目的的正当修订仍须各自的证据与规范根据。",
     "next_en": "The next empirical comparison separates memory change, retrieval, expression and deliberate correction; explicit recognition of one’s formative conditions and justified revision of final goals keep their own evidence and normative grounds.",
-    "source": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md",
+    "source": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md",
     "source_sha256": "5847f94a6e5da60e368abf178c386e90e727cdce5ad95161d23255a6eeea1914",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean",
@@ -1538,7 +1538,7 @@
     "scope_en": "Finite derivation and core/tree equivalence have Lean checks. After the 8 October constructive repair, all fifteen original inquiry theorems have empty dependency reports, with 63 empty audits across six modules. Substantive ethical arguments remain philosophical; full necessity and universal ethics are unfinished, and no huigen necessity claim is upgraded.",
     "next_zh": "正在：共享活动的首要伦理根据及普遍适用；应继续：保留目标内容的强对手、真实损失与实际责任。",
     "next_en": "Ongoing: first warrant of shared activity and universal address. Proposed: strong content-preserving rivals, real losses and differentiated responsibilities.",
-    "source": "theories/becoming/chapters/HUIGEN.md",
+    "source": "theories/becoming/history/HUIGEN.md",
     "source_sha256": "3cf98bac87a65c87a790c9d67063360af54624e8bfcac2f79cb8db07cd21df6c",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/GenerativeEpisode.lean",
@@ -1565,7 +1565,7 @@
     "scope_en": "The central identity argument is a historical hand proof; later core/tree Lean results cover another specified interface, not this entire chapter.",
     "next_zh": "已接续：真实询问的可辨识性及完备化；应继续：身份准则如何由实际后果修订，以及独立实现根据。",
     "next_en": "Continued: actual inquiry and completion. Proposed: consequence-dependent revision of identity criteria and independent realization warrant.",
-    "source": "theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md",
+    "source": "theories/becoming/history/IMMANENT-MATHEMATICAL-IDENTITY.md",
     "source_sha256": "6141372621031280dc7be7a2f069358c1cd1d9776ce895e9c0db3c562ddfed8a",
     "lean": [],
     "evidence": [
@@ -1587,7 +1587,7 @@
     "scope_en": "Historical proofs and finite-policy checks for the native mechanism; later attainable-question Lean results cover a related permissive interface, not full native physical correspondence.",
     "next_zh": "已接续：无最大可达问题的结果；应继续：标准形成、补给、保留及新证据对实际策略的影响。",
     "next_en": "Continued: no-greatest-attainable-question result. Proposed: criterion formation, replenishment, retention and evidence-driven strategy changes.",
-    "source": "theories/becoming/chapters/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+    "source": "theories/becoming/history/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
     "source_sha256": "b100823f400deaf8c4597fe2ae522ec3d22436eea1f84c3c59c82f3568394472",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean"
@@ -1611,7 +1611,7 @@
     "scope_en": "29 new and 629 inherited audits, 283 replayed traces and 13 milestone comparisons; the sufficiency trigger, calibration and legitimate installation/use mandate remain given.",
     "next_zh": "已完成指定阻碍；正在：标准及实践理由的根据；应继续：误读、受限资源与标准改变的更广对应。",
     "next_en": "The specified obstruction is closed. Ongoing: warrant of criteria and practical reasons. Proposed: wider correspondence under misreading, limited support and changed criteria.",
-    "source": "theories/becoming/chapters/INQUIRY-REVISION.md",
+    "source": "theories/becoming/history/INQUIRY-REVISION.md",
     "source_sha256": "cc39a580c91c99d3aa7fe7108a8b238f8fee70195e480660e06ce6190cde3e05",
     "lean": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean"
@@ -1635,7 +1635,7 @@
     "scope_en": "A conditional strategic construction with historical hand proofs and independent checks, not direct Lean; neither universal acquisition nor correct ethical scope follows.",
     "next_zh": "正在：规范根据；应继续：供应的教学和传递结构、机制出现频率及实际制度的强对照。",
     "next_en": "Ongoing: normative grounding. Proposed: origins of supplied teaching/transmission structures, prevalence and strong real-institution comparisons.",
-    "source": "theories/becoming/chapters/JOINT-FORMATION.md",
+    "source": "theories/becoming/history/JOINT-FORMATION.md",
     "source_sha256": "eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145",
     "lean": [],
     "evidence": [
@@ -1658,7 +1658,7 @@
     "scope_en": "Repaired finite-horizon and discounted-limit hand arguments plus finite checks, without direct Lean; technologies, primitive valence and commercial ecology remain supplied.",
     "next_zh": "已接续：统一基础综合；应继续：新增数学推广必须 Lean 实查，经验对应和首要伦理根据另推进。",
     "next_en": "Continued: unified synthesis. Proposed: checked Lean for new mathematical extensions, empirical correspondence and first ethical warrant.",
-    "source": "theories/becoming/chapters/JOINT-FORMATION-MATH.md",
+    "source": "theories/becoming/history/JOINT-FORMATION-MATH.md",
     "source_sha256": "78588893049559c99f82c7886c3e9edc87e45209b48a6b90d0eba616fcfdb949",
     "lean": [],
     "evidence": [
@@ -1680,7 +1680,7 @@
     "scope_en": "Exploratory manual analysis without direct Lean; draft parameters are not the later frozen game. Subsequent results close the specified positive problem.",
     "next_zh": "已接续：联合形成的成功与失败区域；应继续：将这些阻碍用于具体新实现，不重开已完成见证。",
     "next_en": "Continued: success and failure regions of joint formation. Proposed: apply the obstructions to named new realizations without reopening completed witnesses.",
-    "source": "theories/becoming/chapters/JOINT-OBSTRUCTIONS.md",
+    "source": "theories/becoming/history/JOINT-OBSTRUCTIONS.md",
     "source_sha256": "27079b93caf032b567b1b05f07ae4be9627da55ededfde539ffe688336aced48",
     "lean": [],
     "evidence": [
@@ -1701,7 +1701,7 @@
     "scope_en": "Not an exhaustive novelty search, empirical study or Lean proof; later joint formation implements part of the historical proposal.",
     "next_zh": "已接续：联合过程构造；应继续：实证区分竞争路径及无法形成关切的真正负例。",
     "next_en": "Continued: joint-process construction. Proposed: empirical discrimination of rival pathways and genuine failures of concern formation.",
-    "source": "theories/becoming/chapters/JOINT-PRIOR-ART.md",
+    "source": "theories/becoming/history/JOINT-PRIOR-ART.md",
     "source_sha256": "cd9b707af3d283414dac808ebd8e7a57f4f42b8522a728783734302c09d82972",
     "lean": [],
     "evidence": [
@@ -1756,7 +1756,7 @@
     "scope_en": "A conditional theorem for supplied control, observation and memory structures; Lean does not establish natural channel formation or inevitable concern from knowledge.",
     "next_zh": "已接续：形成监测、路线修订及对象学习；应继续：只为更强识别主张补足实际通道与经验检验。",
     "next_en": "Continued: formed monitoring, route revision and recipient learning. Proposed: actual channel evidence needed for named stronger identification claims.",
-    "source": "theories/becoming/chapters/LEARNING-INTERFACE.md",
+    "source": "theories/becoming/history/LEARNING-INTERFACE.md",
     "source_sha256": "e460faca439f81171a2d4e1c3dd0a91d88d7f775a35e1ad63c5d426bff1ea3bf",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControllerRevision.lean",
@@ -1781,7 +1781,7 @@
     "scope_en": "47 added Lean audits and 75 independently reconstructed cases; the formal proof does not cover every numerical distribution. Variants, diagnostic trigger, recipes and funding relations remain supplied.",
     "next_zh": "已完成该接口；应继续：诊断／修订安排的持续形成、不能自行供给者的支持及评价理由的规范根据。",
     "next_en": "This interface is complete. Proposed: sustained formation of diagnostic/revision arrangements, support without self-funding and normative grounds of evaluation.",
-    "source": "theories/becoming/chapters/LEARNING-ROUTE-REVISION.md",
+    "source": "theories/becoming/history/LEARNING-ROUTE-REVISION.md",
     "source_sha256": "e6260ca58c651289d238ea3219b4674fc94b9d45f3bbcfd7b6fc9e5cdc35d468",
     "lean": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/RouteRevision.lean"
@@ -1820,7 +1820,7 @@
   },
   {
     "id": "living-dependencies",
-    "source": "theories/becoming/chapters/LIVING-DEPENDENCIES.md",
+    "source": "theories/becoming/history/LIVING-DEPENDENCIES.md",
     "source_sha256": "1e2093982cc2478de5d2ba3220f6aca3c5af573a8cb6058aea7222ad32fe9f2f",
     "title_zh": "生命延续中的实际依存",
     "title_en": "Living dependencies within generative continuation",

@@ -1,6 +1,6 @@
 # Offered-choice identification bounds
 
-This additive package proves the probability and response-overlap part of the [bounded-alternative account](../../../theories/becoming/chapters/VALUATION-IDENTIFICATION-BOUNDS.md). It does not read or change the earlier participant data, analysis or frozen empirical protocol.
+This additive package proves the probability and response-overlap part of the [bounded-alternative account](../../../theories/becoming/history/VALUATION-IDENTIFICATION-BOUNDS.md). It does not read or change the earlier participant data, analysis or frozen empirical protocol.
 
 **Status:** the complete fresh Lean 4.29.1 build passes 27 audited declarations across two modules, including algebra helpers. Separate internal review checks the propositions, source identity and their interpretation. Only the standard `propext`, `Quot.sound` and `Classical.choice` dependencies occur; no custom axiom, proof hole or unchecked native decision is used.
 

@@ -18,7 +18,7 @@
 
 ## 2. 从实际承受到非工具性关切的正向论证
 
-先固定一个有限领域：有根据地识别某种实际体验、其持续性、它在相关体验方面仍不愿承受的性质，以及可真正改变它的方式。感觉、负效价、厌恶反应、对整个活动的评价须分别辨认；既不以一个负号代替体验，也不先以“已有道德理由”来识别对象。[现有构成候选](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#the-constitutive-candidate-and-its-test)已经给出这一限制。
+先固定一个有限领域：有根据地识别某种实际体验、其持续性、它在相关体验方面仍不愿承受的性质，以及可真正改变它的方式。感觉、负效价、厌恶反应、对整个活动的评价须分别辨认；既不以一个负号代替体验，也不先以“已有道德理由”来识别对象。[现有构成候选](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#the-constitutive-candidate-and-its-test)已经给出这一限制。
 
 在这个范围内，正向论证有四个环节。
 

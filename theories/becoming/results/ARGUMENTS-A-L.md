@@ -91,7 +91,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `abstraction-acquisition` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [ABSTRACTION-ACQUISITION.md](../chapters/ABSTRACTION-ACQUISITION.md)
+**来源 / Source:** [ABSTRACTION-ACQUISITION.md](../history/ABSTRACTION-ACQUISITION.md)
 
 **状态 / Status:** 条件构造完成；历史手证 / Conditional construction; historical hand proof
 
@@ -120,7 +120,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `alignment-and-governance` · **类别 / Category:** 对齐 / alignment
 
-**来源 / Source:** [ALIGNMENT-AND-GOVERNANCE.md](../chapters/ALIGNMENT-AND-GOVERNANCE.md)
+**来源 / Source:** [ALIGNMENT-AND-GOVERNANCE.md](../history/ALIGNMENT-AND-GOVERNANCE.md)
 
 **状态 / Status:** 综合完成；生成性对齐方向推进中 / Synthesis complete; generative-alignment direction ongoing
 
@@ -149,7 +149,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `alignment-axis` · **类别 / Category:** 伦理 / ethics
 
-**来源 / Source:** [ALIGNMENT-AXIS.md](../chapters/ALIGNMENT-AXIS.md)
+**来源 / Source:** [ALIGNMENT-AXIS.md](../history/ALIGNMENT-AXIS.md)
 
 **状态 / Status:** 有条件伦理论证 / Conditional ethical argument
 
@@ -269,7 +269,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `architecture-formation` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [ARCHITECTURE-FORMATION.md](../chapters/ARCHITECTURE-FORMATION.md)
+**来源 / Source:** [ARCHITECTURE-FORMATION.md](../history/ARCHITECTURE-FORMATION.md)
 
 **状态 / Status:** 有限条件构造完成 / Finite conditional construction complete
 
@@ -298,7 +298,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `architecture-learning` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [ARCHITECTURE-LEARNING.md](../chapters/ARCHITECTURE-LEARNING.md)
+**来源 / Source:** [ARCHITECTURE-LEARNING.md](../history/ARCHITECTURE-LEARNING.md)
 
 **状态 / Status:** 有限条件连接完成 / Finite conditional connection complete
 
@@ -327,7 +327,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `assumption-free-foundation` · **类别 / Category:** 基础 / foundation
 
-**来源 / Source:** [ASSUMPTION-FREE-FOUNDATION.md](../chapters/ASSUMPTION-FREE-FOUNDATION.md)
+**来源 / Source:** [ASSUMPTION-FREE-FOUNDATION.md](../history/ASSUMPTION-FREE-FOUNDATION.md)
 
 **状态 / Status:** 局部形式结果完成；无假设根基未完成 / Local formal results complete; assumption-free foundation unfinished
 
@@ -358,7 +358,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `attainable-mathematical-questions` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [ATTAINABLE-MATHEMATICAL-QUESTIONS.md](../chapters/ATTAINABLE-MATHEMATICAL-QUESTIONS.md)
+**来源 / Source:** [ATTAINABLE-MATHEMATICAL-QUESTIONS.md](../history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md)
 
 **状态 / Status:** 限定子集已 Lean 实查 / Scoped subset checked in Lean
 
@@ -389,7 +389,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `autonomous-method-formation` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [AUTONOMOUS-METHOD-FORMATION.md](../chapters/AUTONOMOUS-METHOD-FORMATION.md)
+**来源 / Source:** [AUTONOMOUS-METHOD-FORMATION.md](../history/AUTONOMOUS-METHOD-FORMATION.md)
 
 **状态 / Status:** 有限条件构造完成 / Finite conditional construction complete
 
@@ -540,7 +540,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `claims-and-paid-action` · **类别 / Category:** 伦理接口 / ethics interface
 
-**来源 / Source:** [CLAIMS-AND-PAID-ACTION.md](../chapters/CLAIMS-AND-PAID-ACTION.md)
+**来源 / Source:** [CLAIMS-AND-PAID-ACTION.md](../history/CLAIMS-AND-PAID-ACTION.md)
 
 **状态 / Status:** 45项新声明已 Lean 实查 / 45 new declarations checked in Lean
 
@@ -602,7 +602,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `cognition-li-and-reciprocity` · **类别 / Category:** 经典思想 / classical
 
-**来源 / Source:** [COGNITION-LI-AND-RECIPROCITY.md](../chapters/COGNITION-LI-AND-RECIPROCITY.md)
+**来源 / Source:** [COGNITION-LI-AND-RECIPROCITY.md](../history/COGNITION-LI-AND-RECIPROCITY.md)
 
 **状态 / Status:** 概念与原典研究；历史手证 / Conceptual and textual study; historical hand proof
 
@@ -631,7 +631,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `completion-plan` · **类别 / Category:** 路线 / roadmap
 
-**来源 / Source:** [COMPLETION-PLAN.md](../chapters/COMPLETION-PLAN.md)
+**来源 / Source:** [COMPLETION-PLAN.md](../history/COMPLETION-PLAN.md)
 
 **状态 / Status:** 分支契约；完整基础仍开放 / Branch contract; full foundation open
 
@@ -660,7 +660,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `concern-and-correction` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [CONCERN-AND-CORRECTION.md](../chapters/CONCERN-AND-CORRECTION.md)
+**来源 / Source:** [CONCERN-AND-CORRECTION.md](../history/CONCERN-AND-CORRECTION.md)
 
 **状态 / Status:** 历史条件模型；后续联合形成已推进 / Historical conditional model; later joint formation advances it
 
@@ -682,14 +682,14 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [concern-interface-independent-checks.json](../chapters/verification/concern-interface-independent-checks.json) · [RESEARCH-RECORD.md](../../../_process/research/2026-10-05-concern-theory/RESEARCH-RECORD.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [concern-interface-independent-checks.json](../history/verification/concern-interface-independent-checks.json) · [RESEARCH-RECORD.md](../../../_process/research/2026-10-05-concern-theory/RESEARCH-RECORD.md)
 
 <a id="concern-and-new-reasons"></a>
 ## 理由内容的扩展：既有判断何时继续成立 / Extending reasons: when earlier judgments survive
 
 **编号 / ID:** `concern-and-new-reasons` · **类别 / Category:** 伦理发展 / ethics development
 
-**来源 / Source:** [CONCERN-AND-NEW-REASONS.md](../chapters/CONCERN-AND-NEW-REASONS.md)
+**来源 / Source:** [CONCERN-AND-NEW-REASONS.md](../history/CONCERN-AND-NEW-REASONS.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -720,7 +720,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `conditional-universality` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [CONDITIONAL-UNIVERSALITY.md](../chapters/CONDITIONAL-UNIVERSALITY.md)
+**来源 / Source:** [CONDITIONAL-UNIVERSALITY.md](../history/CONDITIONAL-UNIVERSALITY.md)
 
 **状态 / Status:** 已 Lean 实查的条件普遍定理 / Lean-checked conditional universal results
 
@@ -751,7 +751,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `connected-generative-model` · **类别 / Category:** 综合 / synthesis
 
-**来源 / Source:** [CONNECTED-GENERATIVE-MODEL.md](../chapters/CONNECTED-GENERATIVE-MODEL.md)
+**来源 / Source:** [CONNECTED-GENERATIVE-MODEL.md](../history/CONNECTED-GENERATIVE-MODEL.md)
 
 **状态 / Status:** 多条连接完成；更强整体要求开放 / Several joins complete; stronger whole requirement open
 
@@ -782,7 +782,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `controlled-refinement` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [CONTROLLED-REFINEMENT.md](../chapters/CONTROLLED-REFINEMENT.md)
+**来源 / Source:** [CONTROLLED-REFINEMENT.md](../history/CONTROLLED-REFINEMENT.md)
 
 **状态 / Status:** 已 Lean 实查 / Lean checked
 
@@ -813,7 +813,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `cost-sensitive-learning` · **类别 / Category:** 经验研究 / empirical
 
-**来源 / Source:** [COST-SENSITIVE-LEARNING.md](../chapters/COST-SENSITIVE-LEARNING.md)
+**来源 / Source:** [COST-SENSITIVE-LEARNING.md](../history/COST-SENSITIVE-LEARNING.md)
 
 **状态 / Status:** 有范围的经验与识别结果 / Scoped empirical and identification result
 
@@ -842,7 +842,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `cybernetics` · **类别 / Category:** 比较 / comparison
 
-**来源 / Source:** [CYBERNETICS.md](../chapters/CYBERNETICS.md)
+**来源 / Source:** [CYBERNETICS.md](../history/CYBERNETICS.md)
 
 **状态 / Status:** 比较综合；明确子连接已形式化 / Comparative synthesis; specified sublinks formalized
 
@@ -902,7 +902,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `deeper-generative-root` · **类别 / Category:** 基础 / foundation
 
-**来源 / Source:** [DEEPER-GENERATIVE-ROOT.md](../chapters/DEEPER-GENERATIVE-ROOT.md)
+**来源 / Source:** [DEEPER-GENERATIVE-ROOT.md](../history/DEEPER-GENERATIVE-ROOT.md)
 
 **状态 / Status:** 局部形式结果完成；根基问题开放 / Local formal results complete; grounding open
 
@@ -933,7 +933,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `empirical-scope` · **类别 / Category:** 证据 / evidence
 
-**来源 / Source:** [EMPIRICAL-SCOPE.md](../chapters/EMPIRICAL-SCOPE.md)
+**来源 / Source:** [EMPIRICAL-SCOPE.md](../history/EMPIRICAL-SCOPE.md)
 
 **状态 / Status:** 证据综合完成 / Evidence synthesis complete
 
@@ -962,7 +962,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `ethical-foundation` · **类别 / Category:** 伦理 / ethics
 
-**来源 / Source:** [ETHICAL-FOUNDATION.md](../chapters/ETHICAL-FOUNDATION.md)
+**来源 / Source:** [ETHICAL-FOUNDATION.md](../history/ETHICAL-FOUNDATION.md)
 
 **状态 / Status:** 明确前提的伦理论证 / Ethical argument with explicit premises
 
@@ -1022,7 +1022,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `evaluation-and-faithful-reporting` · **类别 / Category:** 对齐 / alignment
 
-**来源 / Source:** [EVALUATION-AND-FAITHFUL-REPORTING.md](../chapters/EVALUATION-AND-FAITHFUL-REPORTING.md)
+**来源 / Source:** [EVALUATION-AND-FAITHFUL-REPORTING.md](../history/EVALUATION-AND-FAITHFUL-REPORTING.md)
 
 **状态 / Status:** 来源与概念审读 / Source and conceptual review
 
@@ -1051,7 +1051,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `evaluative-application` · **类别 / Category:** 伦理接口 / ethics interface
 
-**来源 / Source:** [EVALUATIVE-APPLICATION.md](../chapters/EVALUATIVE-APPLICATION.md)
+**来源 / Source:** [EVALUATIVE-APPLICATION.md](../history/EVALUATIVE-APPLICATION.md)
 
 **状态 / Status:** 条件应用及角色修复论证已接受 / Conditional application and role-bound repair accepted
 
@@ -1082,7 +1082,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `evaluative-grounding` · **类别 / Category:** 伦理接口 / ethics interface
 
-**来源 / Source:** [EVALUATIVE-GROUNDING.md](../chapters/EVALUATIVE-GROUNDING.md)
+**来源 / Source:** [EVALUATIVE-GROUNDING.md](../history/EVALUATIVE-GROUNDING.md)
 
 **状态 / Status:** 有条件解释与规范应用已接受 / Conditional explanation and normative application accepted
 
@@ -1113,7 +1113,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `evaluative-plasticity` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [EVALUATIVE-PLASTICITY.md](../chapters/EVALUATIVE-PLASTICITY.md)
+**来源 / Source:** [EVALUATIVE-PLASTICITY.md](../history/EVALUATIVE-PLASTICITY.md)
 
 **状态 / Status:** 有限形成／改变／使用已接受并 Lean 实查 / Finite formation, change and use checked in Lean
 
@@ -1144,7 +1144,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `evaluative-succession` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [EVALUATIVE-SUCCESSION.md](../chapters/EVALUATIVE-SUCCESSION.md)
+**来源 / Source:** [EVALUATIVE-SUCCESSION.md](../history/EVALUATIVE-SUCCESSION.md)
 
 **状态 / Status:** 有限后继／纠正桥梁完成 / Finite succession–correction bridge complete
 
@@ -1175,7 +1175,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `evaluative-uptake` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [EVALUATIVE-UPTAKE.md](../chapters/EVALUATIVE-UPTAKE.md)
+**来源 / Source:** [EVALUATIVE-UPTAKE.md](../history/EVALUATIVE-UPTAKE.md)
 
 **状态 / Status:** 有限因果构造及形式检查已接受 / Finite causal construction and formal checks accepted
 
@@ -1206,7 +1206,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `evidence-and-institutional-correction` · **类别 / Category:** 治理 / governance
 
-**来源 / Source:** [EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md](../chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md)
+**来源 / Source:** [EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md](../history/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md)
 
 **状态 / Status:** 历史应用与条件准则 / Historical application and conditional criterion
 
@@ -1235,7 +1235,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `evolutionary-organization` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [EVOLUTIONARY-ORGANIZATION.md](../chapters/EVOLUTIONARY-ORGANIZATION.md)
+**来源 / Source:** [EVOLUTIONARY-ORGANIZATION.md](../history/EVOLUTIONARY-ORGANIZATION.md)
 
 **状态 / Status:** 选定范围内完成；完整演化理论开放 / Complete at selected scope; full evolutionary theory open
 
@@ -1266,7 +1266,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `experimental-access` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [EXPERIMENTAL-ACCESS.md](../chapters/EXPERIMENTAL-ACCESS.md)
+**来源 / Source:** [EXPERIMENTAL-ACCESS.md](../history/EXPERIMENTAL-ACCESS.md)
 
 **状态 / Status:** 限定原生连接已形式验证 / Scoped native connection formally checked
 
@@ -1297,7 +1297,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `explanatory-necessity` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [EXPLANATORY-NECESSITY.md](../chapters/EXPLANATORY-NECESSITY.md)
+**来源 / Source:** [EXPLANATORY-NECESSITY.md](../history/EXPLANATORY-NECESSITY.md)
 
 **状态 / Status:** 大量有条件结果已检查；普遍对应开放 / Extensive checked conditional results; universal correspondence open
 
@@ -1390,7 +1390,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `formation` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [FORMATION.md](../chapters/FORMATION.md)
+**来源 / Source:** [FORMATION.md](../history/FORMATION.md)
 
 **状态 / Status:** 指定条件形成问题已解 / Specified conditional formation problem solved
 
@@ -1419,7 +1419,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `formation-math` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [FORMATION-MATH.md](../chapters/FORMATION-MATH.md)
+**来源 / Source:** [FORMATION-MATH.md](../history/FORMATION-MATH.md)
 
 **状态 / Status:** 历史条件手证与有限检查 / Historical conditional hand proofs and finite checks
 
@@ -1448,7 +1448,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `formation-prior-art` · **类别 / Category:** 审查 / review
 
-**来源 / Source:** [FORMATION-PRIOR-ART.md](../chapters/FORMATION-PRIOR-ART.md)
+**来源 / Source:** [FORMATION-PRIOR-ART.md](../history/FORMATION-PRIOR-ART.md)
 
 **状态 / Status:** 定向比较与历史设计审查 / Targeted comparison and historical design review
 
@@ -1477,7 +1477,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `formed-route-monitor` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [FORMED-ROUTE-MONITOR.md](../chapters/FORMED-ROUTE-MONITOR.md)
+**来源 / Source:** [FORMED-ROUTE-MONITOR.md](../history/FORMED-ROUTE-MONITOR.md)
 
 **状态 / Status:** 有限监测构造与 Lean 检查完成 / Finite monitor construction and Lean checks complete
 
@@ -1508,7 +1508,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `foundation-premises` · **类别 / Category:** 方法 / methodology
 
-**来源 / Source:** [FOUNDATION-PREMISES.md](../chapters/FOUNDATION-PREMISES.md)
+**来源 / Source:** [FOUNDATION-PREMISES.md](../history/FOUNDATION-PREMISES.md)
 
 **状态 / Status:** 动态依赖账与条件整合 / Evolving dependency ledger and conditional integration
 
@@ -1599,7 +1599,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `generated-self-and-ethics` · **类别 / Category:** 基础 / foundation
 
-**来源 / Source:** [GENERATED-SELF-AND-ETHICS.md](../chapters/GENERATED-SELF-AND-ETHICS.md)
+**来源 / Source:** [GENERATED-SELF-AND-ETHICS.md](../history/GENERATED-SELF-AND-ETHICS.md)
 
 **状态 / Status:** 局部形成／表征已形式化；体验伦理开放 / Local formation and representation formalized; experience and ethics open
 
@@ -1630,7 +1630,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `generative-core-lean` · **类别 / Category:** 形式索引 / formal index
 
-**来源 / Source:** [GENERATIVE-CORE-LEAN.md](../chapters/GENERATIVE-CORE-LEAN.md)
+**来源 / Source:** [GENERATIVE-CORE-LEAN.md](../history/GENERATIVE-CORE-LEAN.md)
 
 **状态 / Status:** 多个具名入口已实查 / Named public entries checked
 
@@ -1661,7 +1661,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `generative-development` · **类别 / Category:** 综合 / synthesis
 
-**来源 / Source:** [GENERATIVE-DEVELOPMENT.md](../chapters/GENERATIVE-DEVELOPMENT.md)
+**来源 / Source:** [GENERATIVE-DEVELOPMENT.md](../history/GENERATIVE-DEVELOPMENT.md)
 
 **状态 / Status:** 条件基础的连接综合已接受 / Connected conditional foundation accepted
 
@@ -1690,7 +1690,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `generative-grounding` · **类别 / Category:** 研究纲领 / programme
 
-**来源 / Source:** [GENERATIVE-GROUNDING.md](../chapters/GENERATIVE-GROUNDING.md)
+**来源 / Source:** [GENERATIVE-GROUNDING.md](../history/GENERATIVE-GROUNDING.md)
 
 **状态 / Status:** 条件候选与明确公理实践判断完成；根基演绎必然性开放 / Conditional candidate and explicit-axiom practical judgment complete; deductive necessity of the root open
 
@@ -1721,7 +1721,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `generative-mathematical-admissibility` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md](../chapters/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md)
+**来源 / Source:** [GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md](../history/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md)
 
 **状态 / Status:** 完备化与可容许性已限定 Lean 检查 / Scoped completion and admissibility checked in Lean
 
@@ -1752,7 +1752,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `generative-selection` · **类别 / Category:** 选择 / selection
 
-**来源 / Source:** [GENERATIVE-SELECTION.md](../chapters/GENERATIVE-SELECTION.md)
+**来源 / Source:** [GENERATIVE-SELECTION.md](../history/GENERATIVE-SELECTION.md)
 
 **状态 / Status:** 机制综合与部分 Lean 接口 / Mechanism synthesis with partial Lean interfaces
 
@@ -1783,7 +1783,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `goal-formation-and-revision` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [GOAL-FORMATION-AND-REVISION.md](../chapters/GOAL-FORMATION-AND-REVISION.md)
+**来源 / Source:** [GOAL-FORMATION-AND-REVISION.md](../history/GOAL-FORMATION-AND-REVISION.md)
 
 **状态 / Status:** 有条件的形式结果与有范围的经验对应 / Checked conditional results and scoped empirical correspondence
 
@@ -1843,7 +1843,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `huigen` · **类别 / Category:** 基础 / foundation
 
-**来源 / Source:** [HUIGEN.md](../chapters/HUIGEN.md)
+**来源 / Source:** [HUIGEN.md](../history/HUIGEN.md)
 
 **状态 / Status:** 条件必要性传递已证；完整必要根基开放 / Conditional necessity transfer proved; full necessary grounding open
 
@@ -1874,7 +1874,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `immanent-mathematical-identity` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [IMMANENT-MATHEMATICAL-IDENTITY.md](../chapters/IMMANENT-MATHEMATICAL-IDENTITY.md)
+**来源 / Source:** [IMMANENT-MATHEMATICAL-IDENTITY.md](../history/IMMANENT-MATHEMATICAL-IDENTITY.md)
 
 **状态 / Status:** 历史条件结构论证 / Historical conditional structural argument
 
@@ -1903,7 +1903,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `inquiry-and-mathematical-identity` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [INQUIRY-AND-MATHEMATICAL-IDENTITY.md](../chapters/INQUIRY-AND-MATHEMATICAL-IDENTITY.md)
+**来源 / Source:** [INQUIRY-AND-MATHEMATICAL-IDENTITY.md](../history/INQUIRY-AND-MATHEMATICAL-IDENTITY.md)
 
 **状态 / Status:** 历史条件结果；相关子集后续 Lean 化 / Historical conditional result; related subset later formalized
 
@@ -1934,7 +1934,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `inquiry-revision` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [INQUIRY-REVISION.md](../chapters/INQUIRY-REVISION.md)
+**来源 / Source:** [INQUIRY-REVISION.md](../history/INQUIRY-REVISION.md)
 
 **状态 / Status:** 指定技术连接已实现并检查 / Specified technical connection implemented and checked
 
@@ -1965,7 +1965,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `joint-formation` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [JOINT-FORMATION.md](../chapters/JOINT-FORMATION.md)
+**来源 / Source:** [JOINT-FORMATION.md](../history/JOINT-FORMATION.md)
 
 **状态 / Status:** 一个联合条件过程已构造 / One joint conditional process constructed
 
@@ -1994,7 +1994,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `joint-formation-math` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [JOINT-FORMATION-MATH.md](../chapters/JOINT-FORMATION-MATH.md)
+**来源 / Source:** [JOINT-FORMATION-MATH.md](../history/JOINT-FORMATION-MATH.md)
 
 **状态 / Status:** 历史条件手证及反审修订 / Historical conditional proofs with review repairs
 
@@ -2023,7 +2023,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `joint-obstructions` · **类别 / Category:** 审查 / review
 
-**来源 / Source:** [JOINT-OBSTRUCTIONS.md](../chapters/JOINT-OBSTRUCTIONS.md)
+**来源 / Source:** [JOINT-OBSTRUCTIONS.md](../history/JOINT-OBSTRUCTIONS.md)
 
 **状态 / Status:** 历史分析与验收条件 / Historical analysis and acceptance conditions
 
@@ -2052,7 +2052,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `joint-prior-art` · **类别 / Category:** 审查 / review
 
-**来源 / Source:** [JOINT-PRIOR-ART.md](../chapters/JOINT-PRIOR-ART.md)
+**来源 / Source:** [JOINT-PRIOR-ART.md](../history/JOINT-PRIOR-ART.md)
 
 **状态 / Status:** 定向文献与设计审查 / Targeted literature and design review
 
@@ -2112,7 +2112,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `learning-interface` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [LEARNING-INTERFACE.md](../chapters/LEARNING-INTERFACE.md)
+**来源 / Source:** [LEARNING-INTERFACE.md](../history/LEARNING-INTERFACE.md)
 
 **状态 / Status:** 一般接口已 Lean 实查 / General interface checked in Lean
 
@@ -2143,7 +2143,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `learning-route-revision` · **类别 / Category:** 学习 / learning
 
-**来源 / Source:** [LEARNING-ROUTE-REVISION.md](../chapters/LEARNING-ROUTE-REVISION.md)
+**来源 / Source:** [LEARNING-ROUTE-REVISION.md](../history/LEARNING-ROUTE-REVISION.md)
 
 **状态 / Status:** 有限继承路线修订已接受 / Finite inherited-route revision accepted
 
@@ -2205,7 +2205,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `living-dependencies` · **类别 / Category:** 机制数学 / mechanism mathematics
 
-**来源 / Source:** [LIVING-DEPENDENCIES.md](../chapters/LIVING-DEPENDENCIES.md)
+**来源 / Source:** [LIVING-DEPENDENCIES.md](../history/LIVING-DEPENDENCIES.md)
 
 **状态 / Status:** 一般说明在明示范围内完成；普遍终将不足未证 / General account complete at declared scope; universal eventual insufficiency unproved
 

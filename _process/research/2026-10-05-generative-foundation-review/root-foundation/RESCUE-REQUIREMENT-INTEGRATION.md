@@ -1,6 +1,6 @@
 # Bounded rescue: integration and continuing-goal audit
 
-6 October 2026. AI-authored continuation of the [universal ethical minimum](../../../../theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md) and its [first goal integration](ETHICAL-MINIMUM-INTEGRATION.md). Exact governing objective: **move toward the establishment of a universal ethical minimum compatible with plural worthwhile lives**. This round is substantive philosophical progress; the full objective remains active and incomplete.
+6 October 2026. AI-authored continuation of the [universal ethical minimum](../../../../theories/becoming/history/UNIVERSAL-ETHICAL-MINIMUM.md) and its [first goal integration](ETHICAL-MINIMUM-INTEGRATION.md). Exact governing objective: **move toward the establishment of a universal ethical minimum compatible with plural worthwhile lives**. This round is substantive philosophical progress; the full objective remains active and incomplete.
 
 ## Named connection and result
 

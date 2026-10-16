@@ -44,7 +44,7 @@
 
 **Preserved structural entry:** [GenerativeModel.lean](GenerativeModel.lean) retains the original model, deeper-root classification, history-conditioned representation and orientation limits. The earlier self-foundation build checked 14 modules and 162 declarations, including 43 empty-dependency additions. [Its integration record](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md) preserves that stage. The current outcome extension and acquisition composition above import this shared entry unchanged. The complete foundation remains open.
 
-6 October 2026. AI-assisted formalization under Ren's direction. Read the [theory and exact scope](../../../../../theories/becoming/chapters/GENERATIVE-CORE-LEAN.md) and [internal review](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-CORE-REVIEW.md).
+6 October 2026. AI-assisted formalization under Ren's direction. Read the [theory and exact scope](../../../../../theories/becoming/history/GENERATIVE-CORE-LEAN.md) and [internal review](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-CORE-REVIEW.md).
 
 | Source | Checked content |
 |---|---|

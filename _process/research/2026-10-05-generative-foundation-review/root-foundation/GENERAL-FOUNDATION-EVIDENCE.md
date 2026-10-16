@@ -1,6 +1,6 @@
 # Actual operative warrant and the general foundation
 
-8 October 2026, Asia/Bangkok. AI-authored evidence assessment for Ren's request to resolve the remaining limit in [System warrant](../../../../theories/becoming/chapters/SYSTEM-WARRANT.md). This assessment follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), directly rereads the preserved primary material below, and reuses completed scientific checks. It adds no experiment, numerical result, mathematical theorem or claim of independently reproducing the apparatus or biology.
+8 October 2026, Asia/Bangkok. AI-authored evidence assessment for Ren's request to resolve the remaining limit in [System warrant](../../../../theories/becoming/history/SYSTEM-WARRANT.md). This assessment follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), directly rereads the preserved primary material below, and reuses completed scientific checks. It adds no experiment, numerical result, mathematical theorem or claim of independently reproducing the apparatus or biology.
 
 **Actual applicability is already grounded for identified operative relationships. It is not a single missing bridge between all models and reality.** The remaining universal claim must be stated separately from those completed applications. In particular, the Boolean construction used to derive a preparation domain is not proposed as the physical law of every system. Failure to establish that invented extension is not a failure of the existing actual evidence.
 
@@ -38,7 +38,7 @@ The resulting conclusion can be general across an identified class of realizatio
 
 ## 3. The proposed root contains different quantifier strengths
 
-The [canonical minimal root](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) currently mixes claims of permitted possibility with claims of general dependence. Their evidence obligations differ.
+The [canonical minimal root](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) currently mixes claims of permitted possibility with claims of general dependence. Their evidence obligations differ.
 
 | Root content | What existing evidence warrants | What that does not establish |
 |---|---|---|

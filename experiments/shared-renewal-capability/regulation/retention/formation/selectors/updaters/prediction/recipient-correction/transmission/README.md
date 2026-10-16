@@ -1,6 +1,6 @@
 # Formed routes and recipient-supported transmission
 
-6 October 2026. **Current status: bounded implementation accepted**, following the prospective contract and saved-evidence audit. The [canonical result](../../../../../../../../../../theories/becoming/chapters/RECIPIENT-TRANSMISSION.md) gives the mechanism, counts, countercases and remaining premises; the [implementation review](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-IMPLEMENTATION-REVIEW.md) records its scope.
+6 October 2026. **Current status: bounded implementation accepted**, following the prospective contract and saved-evidence audit. The [canonical result](../../../../../../../../../../theories/becoming/history/RECIPIENT-TRANSMISSION.md) gives the mechanism, counts, countercases and remaining premises; the [implementation review](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-IMPLEMENTATION-REVIEW.md) records its scope.
 
 `model.py` forms retained routing alternatives before the inherited four-exposure sequence and implements a paid same-recipient copy/action/retention continuation. `check_model.py` compares the independently implemented suffix against frozen actual parent fixtures, preserving failures, then checks the primary successor mixture and named interventions. Run `python3 check_model.py`; the saved result is [model-verification.json](model-verification.json).
 

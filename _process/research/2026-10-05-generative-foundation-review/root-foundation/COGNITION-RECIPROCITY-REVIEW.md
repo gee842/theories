@@ -1,6 +1,6 @@
 # 认知、理与恕：本轮整合及继续入口
 
-2026-10-06，Asia/Bangkok。AI 工作与内部审读记录，回应 [Ren 的研究问题](../../../../sources/15-codex-theory-conversations/2026-10-06-cognition-theory-li-and-reciprocity.md)。[主稿](../../../../theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md)保留“方向可行、尚未完成、可以继续探索”的状态。
+2026-10-06，Asia/Bangkok。AI 工作与内部审读记录，回应 [Ren 的研究问题](../../../../sources/15-codex-theory-conversations/2026-10-06-cognition-theory-li-and-reciprocity.md)。[主稿](../../../../theories/becoming/history/COGNITION-LI-AND-RECIPROCITY.md)保留“方向可行、尚未完成、可以继续探索”的状态。
 
 ## 1. 本轮建立的连接
 

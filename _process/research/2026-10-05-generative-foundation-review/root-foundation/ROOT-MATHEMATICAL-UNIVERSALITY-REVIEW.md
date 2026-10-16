@@ -14,7 +14,7 @@ The candidate can admit several logics, structures and universes with their mean
 
 ## 2. The positive achievements are real and inherited
 
-The [grounding resolution](MATHEMATICS-GROUNDING-RESOLUTION.md) already defends a local constitutive reading: the intended subject is its structural role, rather than an additional hidden object behind that role. The [identity development](../../../../theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md) explains which contextual distinctions a stated representation must preserve. The [completion development](../../../../theories/becoming/chapters/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md) identifies explicit conditions under which a finite basis determines a completion and preserves global counterexamples. Those are substantive positive contributions, with separate validation records.
+The [grounding resolution](MATHEMATICS-GROUNDING-RESOLUTION.md) already defends a local constitutive reading: the intended subject is its structural role, rather than an additional hidden object behind that role. The [identity development](../../../../theories/becoming/history/IMMANENT-MATHEMATICAL-IDENTITY.md) explains which contextual distinctions a stated representation must preserve. The [completion development](../../../../theories/becoming/history/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md) identifies explicit conditions under which a finite basis determines a completion and preserves global counterexamples. Those are substantive positive contributions, with separate validation records.
 
 The following proposed avenues must also retain their genealogy:
 

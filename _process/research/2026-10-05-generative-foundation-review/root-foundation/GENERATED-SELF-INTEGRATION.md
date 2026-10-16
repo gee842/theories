@@ -1,6 +1,6 @@
 # Generated I and ethical significance: integration record
 
-6 October 2026. AI-authored record of the research requested in [Ren's exact message](../../../../sources/15-codex-theory-conversations/2026-10-06-generated-i-and-owner-independent-ethics.md). The current formulation is [The generated I and ethics without a fundamental owner](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md).
+6 October 2026. AI-authored record of the research requested in [Ren's exact message](../../../../sources/15-codex-theory-conversations/2026-10-06-generated-i-and-owner-independent-ethics.md). The current formulation is [The generated I and ethics without a fundamental owner](../../../../theories/becoming/history/GENERATED-SELF-AND-ETHICS.md).
 
 ## Result and scope
 
@@ -23,7 +23,7 @@ The strongest objection retained is that actual improvement does not by itself l
 
 ## Relation to the existing foundation
 
-The [derivation map](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) now identifies formation of the I within the explanatory task. The [ethical minimum](../../../../theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md) retains bounded rescue, personal latitude and open aggregation questions. No-self neither proves a permission nor grants unlimited interference.
+The [derivation map](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md) now identifies formation of the I within the explanatory task. The [ethical minimum](../../../../theories/becoming/history/UNIVERSAL-ETHICAL-MINIMUM.md) retains bounded rescue, personal latitude and open aggregation questions. No-self neither proves a permission nor grants unlimited interference.
 
 The concurrently integrated [noninstrumental-concern account](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md) retains C1/C2 as explicit contracts. Patient/actor indices can name generated histories rather than independent substances. Their local mathematical use does not derive their formation or experience. No existing proof, executable experiment or scientific result was changed or revalidated by this prose round.
 

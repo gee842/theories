@@ -1,6 +1,6 @@
 # Continuing the three remaining obligations
 
-7 October 2026, Asia/Bangkok. AI-authored continuation of Ren's request to finish the work left open after the [merged research round](MERGED-OBLIGATIONS-INTEGRATION.md). This report distinguishes a formal correspondence, the substantive identification of a process, and ethical warrant. Their completion conditions are different. The [whole-relational method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and the [universal ethical objective](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) remain in force.
+7 October 2026, Asia/Bangkok. AI-authored continuation of Ren's request to finish the work left open after the [merged research round](MERGED-OBLIGATIONS-INTEGRATION.md). This report distinguishes a formal correspondence, the substantive identification of a process, and ethical warrant. Their completion conditions are different. The [whole-relational method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and the [universal ethical objective](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) remain in force.
 
 ## Status by original obligation
 

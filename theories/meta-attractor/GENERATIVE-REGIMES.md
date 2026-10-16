@@ -34,7 +34,7 @@ Consequences may change available resources, connections, evaluative procedures,
 
 This explanation introduces no selector outside the whole process. States, selection conditions, carrier identities and observations are analytical descriptions of differentiated relations within it. A single encompassing transition law can represent changes in an effective rule. “Meta” marks the causal reach of consequences into the organization of later selection, rather than a requirement for infinitely many independent controllers.
 
-The [existing systems account](../becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md#consequences-can-change-the-organization-of-consequence), [formed selector mechanisms](../becoming/chapters/GENERATIVE-SELECTION.md) and [paid market feedback](../becoming/chapters/MARKET-DYNAMICS-MATH.md) already establish scoped parts of this connection. This integration credits those results and asks what makes their recurrence a regime across succession.
+The [existing systems account](../becoming/history/SYSTEMS-COMPLEXITY-CHAOS.md#consequences-can-change-the-organization-of-consequence), [formed selector mechanisms](../becoming/history/GENERATIVE-SELECTION.md) and [paid market feedback](../becoming/chapters/MARKET-DYNAMICS-MATH.md) already establish scoped parts of this connection. This integration credits those results and asks what makes their recurrence a regime across succession.
 
 “高阶”指活动后果回到后续选择的组织条件。它既包括有效规则的改变，也包括既有规则赖以运作的关系被持续重建。无需每一轮都改写明文指标，更无需在生成整体之外设置最终选择者。
 

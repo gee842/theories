@@ -6,7 +6,7 @@ for a complete alignment solution. It addresses one open item of the
 [alignment completion contract](../../../../../../../../../../../../../../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md):
 "Fulfillment-sensitive withdrawal in the acquired evaluator remains
 unimplemented." The obligations come from the
-[evaluative application account](../../../../../../../../../../../../../../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md),
+[evaluative application account](../../../../../../../../../../../../../../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md),
 which requires the following:
 
 - an actual, accessible, episode-bound record;

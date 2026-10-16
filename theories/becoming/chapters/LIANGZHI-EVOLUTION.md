@@ -24,9 +24,9 @@
 
 核心与树在这里相互说明：活动改变继续条件；实际形成的差异经再形成与传递参与下一段活动；后续活动又改变交往、发育和选择的条件。演化压力是这些关系的差异化作用，不须另设一个外部裁判，也不须先给每个个体分配固定利益或全局适合度分数。
 
-当前核心的 `Process`、`Trace` 与接合定理提供共同形式接口。生成树已有[变体形成及差异再形成](../../../experiments/shared-renewal-capability/regulation/retention/formation/README.md)、[选择器修订](SELECTOR-REVISION.md)、[学习路线与后继](LEARNING-ROUTE-REVISION.md)、[评价及谱系更新](VALUATION-DEVELOPMENT.md)等实际模型。由此，当前生成理论确实包含形式演化模型的实质内容；抽象接口本身没有独自决定全部生物演化规律或其方向。
+当前核心的 `Process`、`Trace` 与接合定理提供共同形式接口。生成树已有[变体形成及差异再形成](../../../experiments/shared-renewal-capability/regulation/retention/formation/README.md)、[选择器修订](../history/SELECTOR-REVISION.md)、[学习路线与后继](../history/LEARNING-ROUTE-REVISION.md)、[评价及谱系更新](../history/VALUATION-DEVELOPMENT.md)等实际模型。由此，当前生成理论确实包含形式演化模型的实质内容；抽象接口本身没有独自决定全部生物演化规律或其方向。
 
-尤其应信用[已有评价接续](EVALUATIVE-SUCCESSION.md)：后继实际取得先前形成的评价影响，以新证据纠正手段并选择行动的有限连接已经完成。现在的问题是，**多种可传递回应组织在共同发展与社会性交往中如何受到差异选择，以及后继重建了哪些能力**；不能把所有能力继承重新列作缺失。
+尤其应信用[已有评价接续](../history/EVALUATIVE-SUCCESSION.md)：后继实际取得先前形成的评价影响，以新证据纠正手段并选择行动的有限连接已经完成。现在的问题是，**多种可传递回应组织在共同发展与社会性交往中如何受到差异选择，以及后继重建了哪些能力**；不能把所有能力继承重新列作缺失。
 
 也不能把每种变化都称为自然选择。一个具体演化解释必须辨认其变异、传递、再形成与时间范围。个体学习、发育中的能力形成、跨代照料和种群比例变化相互关联，但不是同一个统计量。
 
@@ -101,7 +101,7 @@ Martin 与 Olson（2013）比较明确请求与物品对当前目标的适用性
 
 ## 7. 同一关切可以改变回应，接续也可以通过交接实现
 
-Ren 对[生生不息正面伦理方向](UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction)的新澄清，使本轮能进一步说明实践内容。关切所指可以是生活、理解与关系的继续形成；手段、目的、参与方式及承担本身也会在其中改变。因此，同一关切不要求总是帮助更多、服从请求或保存原安排。[本轮论证与反审整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)区分四种变化：
+Ren 对[生生不息正面伦理方向](../history/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction)的新澄清，使本轮能进一步说明实践内容。关切所指可以是生活、理解与关系的继续形成；手段、目的、参与方式及承担本身也会在其中改变。因此，同一关切不要求总是帮助更多、服从请求或保存原安排。[本轮论证与反审整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)区分四种变化：
 
 | 实际变化 | 回应须辨明的内容 |
 |---|---|
@@ -135,4 +135,4 @@ Ren 对[生生不息正面伦理方向](UNIFIED-ETHICAL-GROUNDING.md#shengsheng-
 
 下一项需要辨明的是：当目的改变或知情拒绝与已有依存真正冲突时，生生方向怎样支持接续、改向或终结的具体范围，为什么这项理由应由某种参与关系承担，以及什么情况会使原判断失效。形成与传递研究须检验实际习得的辨别能否迁移到这种变化；不能以帮助次数、模板留存或产物数量代替校准。
 
-此方向服务于[普遍元伦理目标](UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)：实际处境、伦理意义与能力形成可以在共同解释中相互支持和受检验。普遍适用允许有根据的差等与不同责任，不要求所有智能通过同一演化史取得同一能力。[规范接口](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md)原有能力审计保留；新正面方向已改变其前轮研究入口。良知的完整生成、可靠性、生生方向的普遍规范有效性及跨范围冲突仍待完成；本轮没有宣告无假设证明。
+此方向服务于[普遍元伦理目标](../history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)：实际处境、伦理意义与能力形成可以在共同解释中相互支持和受检验。普遍适用允许有根据的差等与不同责任，不要求所有智能通过同一演化史取得同一能力。[规范接口](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md)原有能力审计保留；新正面方向已改变其前轮研究入口。良知的完整生成、可靠性、生生方向的普遍规范有效性及跨范围冲突仍待完成；本轮没有宣告无假设证明。

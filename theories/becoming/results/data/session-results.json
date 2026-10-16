@@ -44,7 +44,7 @@
       "canonical_sources": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
         "theories/becoming/chapters/MATHEMATICAL-CORE.md",
-        "theories/becoming/chapters/EXPLANATORY-NECESSITY.md"
+        "theories/becoming/history/EXPLANATORY-NECESSITY.md"
       ],
       "reuse_en": "Reuse the core trace/projection lemmas. Changed support, observational adequacy and ontological necessity remain separately stated claims.",
       "remaining_en": "A shared representation does not prove every law, unique foundation or wisdom."
@@ -149,7 +149,7 @@
       "hypotheses_en": "Constitutive, philosophical and empirical warrant must be distinguished from conditional formal inference.",
       "canonical_sources": [
         "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
-        "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
+        "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md",
         "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
       ],
@@ -164,7 +164,7 @@
       "hypotheses_en": "Specified learning/interpretation mechanisms; development and selection conditions; G0/J for normative applications.",
       "canonical_sources": [
         "theories/becoming/chapters/ETHICAL-LEARNING.md",
-        "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md",
+        "theories/becoming/history/CONCERN-AND-NEW-REASONS.md",
         "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean"
       ],
@@ -179,7 +179,7 @@
       "hypotheses_en": "Supplied local growth, fragmentation, maturation and observation laws; specified reference access and support.",
       "canonical_sources": [
         "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
-        "theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md",
+        "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibrationRenewal.lean"
       ],
@@ -208,7 +208,7 @@
       "claim_en": "Dao, reciprocity, Liangzhi and religious comparisons provide conceptual tests and bounded applications.",
       "hypotheses_en": "Original textual contexts and explicit correspondence; actual support succession does not itself establish ethical validity.",
       "canonical_sources": [
-        "theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md",
+        "theories/becoming/history/COGNITION-LI-AND-RECIPROCITY.md",
         "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
         "theories/becoming/chapters/WANG-YANGMING.md",
         "theories/becoming/chapters/LIANGZHI-EVOLUTION.md",
@@ -258,7 +258,7 @@
       ],
       "outcome_en": "Reciprocity and cognition within the shared nondual method.",
       "outcome_zh": "认知与恕的条件应用；复用非二元方法。",
-      "primary_source": "theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md",
+      "primary_source": "theories/becoming/history/COGNITION-LI-AND-RECIPROCITY.md",
       "integration": "canonical",
       "evidence_message_ids": [
         "msg_08c5bd8bbe9da710016ac493725fdc87d0a9fdf45c0219a79b",
@@ -323,7 +323,7 @@
       ],
       "outcome_en": "Disturbance bounds connect tracking to finite-stage decision evidence.",
       "outcome_zh": "扰动界将追踪接到有限阶段的决定根据。",
-      "primary_source": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md",
+      "primary_source": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md",
       "integration": "canonical",
       "evidence_message_ids": [
         "msg_0fb734d219492f23016ac7827f612887d08f4663e07517ade6"
@@ -549,7 +549,7 @@
       ],
       "outcome_en": "Changing support preserves or restores readiness without guaranteeing actual completion.",
       "outcome_zh": "变化支持保持或恢复准备，却不保证实际完成。",
-      "primary_source": "theories/becoming/chapters/EXPLANATORY-NECESSITY.md",
+      "primary_source": "theories/becoming/history/EXPLANATORY-NECESSITY.md",
       "integration": "canonical",
       "evidence_message_ids": [
         "msg_0af3eedf9fb9ce55016ac768db55bc8191b424733c7ae909d8",
@@ -600,7 +600,7 @@
       ],
       "outcome_en": "Living dependencies connect maintenance, retention, recovery and changing common provision.",
       "outcome_zh": "生命依存接通维护、保留、恢复与变化的共同供给。",
-      "primary_source": "theories/becoming/chapters/LIVING-DEPENDENCIES.md",
+      "primary_source": "theories/becoming/history/LIVING-DEPENDENCIES.md",
       "integration": "canonical",
       "evidence_message_ids": [
         "msg_0241a97ae1db1140016ac6ac182ec087d0be8b8fce491a3646",
@@ -700,7 +700,7 @@
       ],
       "outcome_en": "Corrects the claim that a short frontier list exhausts possible research.",
       "outcome_zh": "纠正有限前沿清单穷尽全部研究的误述。",
-      "primary_source": "theories/becoming/chapters/GENERATIVE-GROUNDING.md",
+      "primary_source": "theories/becoming/history/GENERATIVE-GROUNDING.md",
       "integration": "discussion-context-only",
       "evidence_message_ids": [
         "msg_0b63de2d096fc595016ac67370a6fc87d0a8fcd62b6c822b34",
@@ -786,7 +786,7 @@
       ],
       "outcome_en": "Corrects an inference from dynamical description to ethical valuation.",
       "outcome_zh": "纠正从动力学描述直接推出伦理评价的推断。",
-      "primary_source": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
+      "primary_source": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md",
       "integration": "discussion-context-only",
       "evidence_message_ids": [
         "msg_01046d2984e43266016ac54041a2c887d0a9abbe83c85c99f7",
@@ -857,7 +857,7 @@
       ],
       "outcome_en": "Refines jointly realized concern while preserving harmful-concern counterexamples.",
       "outcome_zh": "细化关切与实际实现的共同意义，保留有害关切反例。",
-      "primary_source": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
+      "primary_source": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md",
       "integration": "canonical",
       "evidence_message_ids": [
         "msg_097bd7548d4e2516016ac4c8e5fad887d08644acd979590bd5",
@@ -911,7 +911,7 @@
       ],
       "outcome_en": "Stronger necessity target retained alongside conditional concern results.",
       "outcome_zh": "在条件关切成果之外保留更强必要性目标。",
-      "primary_source": "theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md",
+      "primary_source": "theories/becoming/history/STRONGEST-FOUNDATION-CLAIM.md",
       "integration": "canonical",
       "evidence_message_ids": [
         "msg_053d130da5e5d99a016ac493c4b96487d0beb921fb93a9b931",

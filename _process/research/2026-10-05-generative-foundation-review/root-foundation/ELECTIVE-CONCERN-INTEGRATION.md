@@ -10,7 +10,7 @@ The full canonical and all three companion notes were read. The canonical was al
 
 | Reviewed file | SHA-256 |
 |---|---|
-| [Canonical unified grounding](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md) | `35da4abc22302fd038efb09ed43a0d248b94904fbe8c48839f005d07f09f35e7` |
+| [Canonical unified grounding](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md) | `35da4abc22302fd038efb09ed43a0d248b94904fbe8c48839f005d07f09f35e7` |
 | [Elective-concern argument](ELECTIVE-CONCERN-ARGUMENT.md) | `cdcb808c6f65a766cfaf070ad7ec8f0a18e0e5e2aa35ac1e969d5d4026fa17b9` |
 | [Elective-concern counterreview](ELECTIVE-CONCERN-COUNTERREVIEW.md) | `c49d109a13be58ee3046c2e8e5dbf94ed64d64538fdfcf993284e376a4fe98f2` |
 | [Elective-concern sources](ELECTIVE-CONCERN-SOURCES.md) | `668228bf330534f889b46cf0a4cbc57250938cf4a5659aab60e4fe825a19e4f8` |
@@ -47,7 +47,7 @@ No new scientific run, formal theorem, empirical demonstration or universal nece
 
 ## Index and integrity scope
 
-Only the six new integration paragraphs were read in the shared indexes: “Elective concern and the scope of created reasons” in [RESEARCH](../../../../RESEARCH.md); “Created reasons and prior patient significance” in the [theory README](../../../../theories/becoming/README.md); “Elective normative powers and assistance” in the [study README](README.md); “Created commitments → assistance-specific scope” in [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md); “Elective-power continuation” in [慧根](../../../../theories/becoming/chapters/HUIGEN.md); and “Elective-concern primary comparison” in [SOURCES](../../../../sources/SOURCES.md). This is a review of those additive entries, not recertification of all concurrently edited shared files. They retain the limited result, next exclusion question, source attribution and unchanged foundation scope.
+Only the six new integration paragraphs were read in the shared indexes: “Elective concern and the scope of created reasons” in [RESEARCH](../../../../RESEARCH.md); “Created reasons and prior patient significance” in the [theory README](../../../../theories/becoming/README.md); “Elective normative powers and assistance” in the [study README](README.md); “Created commitments → assistance-specific scope” in [generative grounding](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md); “Elective-power continuation” in [慧根](../../../../theories/becoming/history/HUIGEN.md); and “Elective-concern primary comparison” in [SOURCES](../../../../sources/SOURCES.md). This is a review of those additive entries, not recertification of all concurrently edited shared files. They retain the limited result, next exclusion question, source attribution and unchanged foundation scope.
 
 One scope precision was requested and rechecked in the four entries discussing behavioral identification: those observations **alone** cannot identify the pre-adoption ground. The canonical already states the relevant conditional limitation. No further correction remains open.
 

@@ -1,6 +1,6 @@
 # Recovering phase, identifying contact and forming it in one history
 
-7 October 2026. AI-authored continuation of [phase-period selection](PHASE-PERIOD-SELECTION.md) and [acquired contact](CONTACT-FORMATION-LAW.md). The governing [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [normative priority](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#first-priority-universal-normative-grounding) remain in force.
+7 October 2026. AI-authored continuation of [phase-period selection](PHASE-PERIOD-SELECTION.md) and [acquired contact](CONTACT-FORMATION-LAW.md). The governing [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [normative priority](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#first-priority-universal-normative-grounding) remain in force.
 
 **Result:** the previously unjoined recognition sequence now has a constructive Lean implementation. Actual sensor readings recover phase; their decoded result chooses advances; actual transfer records identify blockage and receipt inversion; that recorded pair selects recovery and formation; a subsequent inquiry identifies transfer inversion after opening. An intact reset and supplied knowledge of current phase are no longer conditions of this sequence. The native three-phase law and the inquiry architecture remain supplied. This is a recognition and implementation result, with no claim to ethical justification or completion of the unified foundation.
 

@@ -41,14 +41,14 @@ SHA-256 snapshot, 2026-10-06 02:17 UTC. Subsequent edits need their own binding;
 | [Continuation proof][continuation] | `1f74461cada69c3821a9dbe76a8baea0b3120fa74e47e7a5446729e4ccfa1385` |
 
 [completion]: ../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md
-[grounding]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
-[premises]: ../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md
-[uptake]: ../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md
-[application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
-[succession]: ../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md
+[grounding]: ../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
+[premises]: ../../../../theories/becoming/history/FOUNDATION-PREMISES.md
+[uptake]: ../../../../theories/becoming/history/EVALUATIVE-UPTAKE.md
+[application]: ../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md
+[succession]: ../../../../theories/becoming/history/EVALUATIVE-SUCCESSION.md
 [continuation]: ../../../history/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md
-[institution]: ../../../../theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md
-[memory]: ../../../../theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md
-[empirical]: ../../../../theories/becoming/chapters/EMPIRICAL-SCOPE.md
-[plasticity]: ../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md
+[institution]: ../../../../theories/becoming/history/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md
+[memory]: ../../../../theories/becoming/history/MEMORY-CORRECTION-AND-SUCCESSION.md
+[empirical]: ../../../../theories/becoming/history/EMPIRICAL-SCOPE.md
+[plasticity]: ../../../../theories/becoming/history/EVALUATIVE-PLASTICITY.md
 [finish]: ../root-foundation/FIXED-FINISH-LINE-AUDIT.md

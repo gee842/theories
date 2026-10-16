@@ -68,7 +68,7 @@ preservation duty.
 
 This gives core and tree reciprocal work. The branch identifies a consequential
 difference that an adequate model of this continuation must preserve. The
-existing general core and [continuation-based identity](../../../../theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md)
+existing general core and [continuation-based identity](../../../../theories/becoming/history/IMMANENT-MATHEMATICAL-IDENTITY.md)
 already permit that difference; the result does not invent it or repair a
 purported primitive scalar ontology. It challenges a specific coarser summary
 for this task. Other scalar descriptions can remain sufficient for other claims.

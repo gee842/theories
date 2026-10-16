@@ -25,7 +25,7 @@ This corrects the candidate test proposed while continuing the previous report; 
 | “This completed life or undertaking need not be extended indefinitely.” | Not a contradiction with a positive direction that preserves present realization, actual losses and finite fulfillment. |
 | “More complexity always makes the whole better, whatever the harms.” | Not a faithful statement of the current theory. Correcting it does not defeat G0. |
 
-Contributory significance, overall comparison and obligation remain distinct. This is not permission to attach a positive numerical increment to every event. The grounding question concerns the whole configuration, its differentiated lives and its continuation. The [authorized ethical route](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md) separately states comparison commitments and correspondence requirements.
+Contributory significance, overall comparison and obligation remain distinct. This is not permission to attach a positive numerical increment to every event. The grounding question concerns the whole configuration, its differentiated lives and its continuation. The [authorized ethical route](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md) separately states comparison commitments and correspondence requirements.
 
 ## 2. A stronger logical answer for restricted scientific claims
 
@@ -99,7 +99,7 @@ Three things can be true together: the assistance is good for the recipient; par
 
 This gives a concrete affirmative interpretation of generative good: the relationship is part of what comes to live and matter, rather than merely a channel delivering two independently fixed payoffs. A pluralist who recognizes that relationship's basic significance may be compatible with the G0 orientation even if also recognizing distinct reasons concerning consent or promise. A strict experiential rival may instead count the relationship only through its experiential consequences. That is the real point of disagreement.
 
-This analysis does not derive every duty from non-self. The [situated ethical programme](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md) already supplies scoped practical comparisons and preserves loss, self-good, purpose change and finite closure. The present contribution is to identify what those comparisons mean for the necessity dispute, without restarting completed mechanisms.
+This analysis does not derive every duty from non-self. The [situated ethical programme](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md) already supplies scoped practical comparisons and preserves loss, self-good, purpose change and finite closure. The present contribution is to identify what those comparisons mean for the necessity dispute, without restarting completed mechanisms.
 
 ## 7. What genuinely changes the account?
 

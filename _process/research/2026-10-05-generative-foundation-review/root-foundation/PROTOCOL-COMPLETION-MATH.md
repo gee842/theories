@@ -1,8 +1,8 @@
 # When an issued physical protocol actually completes
 
-6 October 2026. AI-authored mathematical specification for an additive extension of the accepted [protocol composition](../../../../theories/becoming/chapters/PROTOCOL-COMPOSITION.md) interface. **Accepted scoped mathematical and internal source review; the combined fresh Lean build passes.** The contract was specified before final formal acceptance; the final version also names the proved maximal-attempt, finite-continuation and predictor instances. See the [independent review](PROTOCOL-COMPLETION-REVIEW.md). No new physical experiment, stochastic law, learning device or mathematical priority is claimed.
+6 October 2026. AI-authored mathematical specification for an additive extension of the accepted [protocol composition](../../../../theories/becoming/history/PROTOCOL-COMPOSITION.md) interface. **Accepted scoped mathematical and internal source review; the combined fresh Lean build passes.** The contract was specified before final formal acceptance; the final version also names the proved maximal-attempt, finite-continuation and predictor instances. See the [independent review](PROTOCOL-COMPLETION-REVIEW.md). No new physical experiment, stochastic law, learning device or mathematical priority is claimed.
 
-The named connection is **an issued, physically implemented operation → an actual completed report and continuing boundary state**. This addresses explicit grounding and compatible composition under the existing [five completion conditions](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation). It does not establish the still-separate formation, ethical-application or successor-correction connections.
+The named connection is **an issued, physically implemented operation → an actual completed report and continuing boundary state**. This addresses explicit grounding and compatible composition under the existing [five completion conditions](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation). It does not establish the still-separate formation, ethical-application or successor-correction connections.
 
 ## 1. The exact existing gap
 
@@ -80,7 +80,7 @@ Every complete block, every internal prefix and every concatenated physical real
 
 Conversely, nonnegative balances alone do not establish the completion contract. The existing paid deadlock satisfies the accounts while failing to reach a return boundary. Future credit cannot fund a missing prior event.
 
-If each completed operation consumes at least one unit of an identified closed total account with no new credit, a realization of `N` operations requires `N ≤ R(s₀)`. This is a direct reuse of the existing [conditional prefix bound](../../../../theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md), not a new replenishment theorem. A claim of admissible boundary closure for arbitrarily many such operations would contradict that account. Completion of each admissible operation and continued admissibility are different properties.
+If each completed operation consumes at least one unit of an identified closed total account with no new credit, a realization of `N` operations requires `N ≤ R(s₀)`. This is a direct reuse of the existing [conditional prefix bound](../../../../theories/becoming/history/CONDITIONAL-UNIVERSALITY.md), not a new replenishment theorem. A claim of admissible boundary closure for arbitrarily many such operations would contradict that account. Completion of each admissible operation and continued admissibility are different properties.
 
 ## 6. Existing positive and adverse cases
 

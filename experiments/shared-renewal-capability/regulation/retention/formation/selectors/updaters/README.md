@@ -1,6 +1,6 @@
 # Costed formation and revision of selector updaters
 
-6 October 2026. A conditional joined process under the [canonical account](../../../../../../../theories/becoming/chapters/UPDATER-FORMATION.md). The [protocol](PROTOCOL.md) was saved before the twelve-case primary comparison. These are exact synthetic calculations, not empirical observations.
+6 October 2026. A conditional joined process under the [canonical account](../../../../../../../theories/becoming/history/UPDATER-FORMATION.md). The [protocol](PROTOCOL.md) was saved before the twelve-case primary comparison. These are exact synthetic calculations, not empirical observations.
 
 The actual preceding formation process supplies A/H constituents, repair and captured local fuel. A paid adapter converts that actual state into recyclable updater/selector backing slots and remaining fuel/source packets. Both functional modules begin absent. Captured return maintains the current modules; failures wear them; paid replacement can change the updater governing selector reconstruction. The algorithms, conversion chemistry, sensing, scaffold and fixed meta-proposal law remain inputs.
 

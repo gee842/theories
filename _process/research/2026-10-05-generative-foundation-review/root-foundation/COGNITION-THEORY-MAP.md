@@ -123,16 +123,16 @@
 
 未逐章重审全部旧稿、没有核听原始音频、没有为预测处理或心智理论作独立神经科学文献审查，也没有将当前二值机制认作真实人类认知的完整实现。古典原文的本轮主证由并行研究负责；本文使用前轮 [儒家阅读 §2.2][Conf] 的恕之限度作为连续性背景，不以现代模型替代经文解读。没有新增实验、形式证明或经验验证。
 
-[D]: ../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md
-[G]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md
-[F]: ../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md
-[I]: ../../../../theories/becoming/chapters/LEARNING-INTERFACE.md
-[P]: ../../../../theories/becoming/chapters/PREDICTION-ACTION.md
-[C]: ../../../../theories/becoming/chapters/RECIPIENT-CORRECTION.md
+[D]: ../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md
+[G]: ../../../../theories/becoming/history/GENERATIVE-GROUNDING.md
+[F]: ../../../../theories/becoming/history/FOUNDATION-PREMISES.md
+[I]: ../../../../theories/becoming/history/LEARNING-INTERFACE.md
+[P]: ../../../../theories/becoming/history/PREDICTION-ACTION.md
+[C]: ../../../../theories/becoming/history/RECIPIENT-CORRECTION.md
 [S]: ../../../../theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md
-[H]: ../../../../theories/becoming/chapters/HUIGEN.md
-[E]: ../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md
-[R]: ../../../../theories/becoming/chapters/RECORDED-REASONS.md
+[H]: ../../../../theories/becoming/history/HUIGEN.md
+[E]: ../../../../theories/becoming/history/ETHICAL-FOUNDATION.md
+[R]: ../../../../theories/becoming/history/RECORDED-REASONS.md
 [Book]: ../../../../sources/07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md
 [Emotion]: ../../../../sources/12-claude-ai-chats/2026-04-28_Prediction_error_and_identification_in_emotion_regulation_56d9d498.md
 [JianChat]: ../../../../sources/12-claude-ai-chats/2026-05-04_求导求积与其他势的处理方法_35c49130.md

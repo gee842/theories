@@ -1,8 +1,8 @@
 # Review of attainable questions in the continuing inquiry interface
 
-6 October 2026. AI-authored independent source and representation review. The reviewer did not author the two Lean modules or their new checker. No original experiment, finite scientific calculation or broad proof suite was rerun for this review. The governing [method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [current grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) were read first.
+6 October 2026. AI-authored independent source and representation review. The reviewer did not author the two Lean modules or their new checker. No original experiment, finite scientific calculation or broad proof suite was rerun for this review. The governing [method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [current grounding](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md) were read first.
 
-The named connection is **inquiry changes subsequent possibilities → some distinctions cannot be jointly acquired → constraints on sufficient-inquiry criteria**. The source is the [attainable-question account](../../../../theories/becoming/chapters/ATTAINABLE-MATHEMATICAL-QUESTIONS.md) and [K1–K5 hand proofs](INQUIRY-CRITERION-MATH.md), including the existing [one-packet continuation analysis](INQUIRY-CONTINUATION-MATH.md). This round formalizes selected mathematical relationships. It does not install a criterion selector or derive the source apparatus's law, target or ethical priority.
+The named connection is **inquiry changes subsequent possibilities → some distinctions cannot be jointly acquired → constraints on sufficient-inquiry criteria**. The source is the [attainable-question account](../../../../theories/becoming/history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md) and [K1–K5 hand proofs](INQUIRY-CRITERION-MATH.md), including the existing [one-packet continuation analysis](INQUIRY-CONTINUATION-MATH.md). This round formalizes selected mathematical relationships. It does not install a criterion selector or derive the source apparatus's law, target or ethical priority.
 
 ## Generic interface
 

@@ -79,19 +79,19 @@ Seventeen links in these five integration additions pass local target and reques
 | `START-HERE.md` | `5ee133e1c13ab8d739b431bd60e5684335088f23b084056e720ece5fdf36e83f` |
 | `SYNTHESIS-RECORD.md` | `a494a3524c125317f95d859106071dc2ad1b5b2a509485088619332e5387ec08` |
 
-[premises]: ../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md#7-the-connected-explanatory-argument
+[premises]: ../../../../theories/becoming/history/FOUNDATION-PREMISES.md#7-the-connected-explanatory-argument
 [composition]: FOUNDATION-COMPOSITION.md
-[goal]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
-[learning]: ../../../../theories/becoming/chapters/LEARNING-INTERFACE.md
-[refinement]: ../../../../theories/becoming/chapters/CONTROLLED-REFINEMENT.md
-[completion]: ../../../../theories/becoming/chapters/PROTOCOL-COMPLETION.md
+[goal]: ../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
+[learning]: ../../../../theories/becoming/history/LEARNING-INTERFACE.md
+[refinement]: ../../../../theories/becoming/history/CONTROLLED-REFINEMENT.md
+[completion]: ../../../../theories/becoming/history/PROTOCOL-COMPLETION.md
 [selection]: ../../../history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md
-[material]: ../../../../theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md
-[architecture]: ../../../../theories/becoming/chapters/ARCHITECTURE-LEARNING.md
+[material]: ../../../../theories/becoming/history/MATERIAL-PREDICTION-COMPOSITION.md
+[architecture]: ../../../../theories/becoming/history/ARCHITECTURE-LEARNING.md
 [identification]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py
-[protection]: ../../../../theories/becoming/chapters/REASON-PROTECTION.md
-[start]: ../../../../theories/becoming/chapters/START-HERE.md
-[record]: ../../../../theories/becoming/chapters/SYNTHESIS-RECORD.md#connected-explanation-and-actual-composition-6-october-2026
+[protection]: ../../../../theories/becoming/history/REASON-PROTECTION.md
+[start]: ../../../../theories/becoming/history/START-HERE.md
+[record]: ../../../../theories/becoming/history/SYNTHESIS-RECORD.md#connected-explanation-and-actual-composition-6-october-2026
 [research]: ../../../../RESEARCH.md
 [theory-readme]: ../../../../theories/becoming/README.md
 
@@ -113,7 +113,7 @@ The main theory now credits both the accepted positive application and historica
 
 The obsolete regulation frontier in the main theory is replaced by credit for the accepted regulation, learning-route and later evaluative constructions. The first core-verification frontier is marked historical; its representation theorem is not enlarged by later mechanism results. The deeper-root continuation likewise credits actual alternatives and revised updating rather than asking for those accepted results again. The synthesis record appends current acceptance while retaining its earlier prospective and verification checkpoints.
 
-An interim integration draft still called formed influence's warranted application the next open connection. During this review the separate [grounding argument](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md) and [its review](EVALUATIVE-GROUNDING-REVIEW.md) reached acceptance. The final frontier sentences now credit that **conditional same-history, role-bound repair** connection. Patient-good, responsibility or justified delegation, adequate means, authority and complete comparison remain independently defended inputs; their presence is not treated as an absence of the accepted argument. The physical associative rule does not thereby learn ethical validity or reliably revise reasons generally. The remaining judgment is the combined account's adequacy under the unchanged five conditions, including only further compositions or empirical claims it actually retains. No whole-foundation completion is declared.
+An interim integration draft still called formed influence's warranted application the next open connection. During this review the separate [grounding argument](../../../../theories/becoming/history/EVALUATIVE-GROUNDING.md) and [its review](EVALUATIVE-GROUNDING-REVIEW.md) reached acceptance. The final frontier sentences now credit that **conditional same-history, role-bound repair** connection. Patient-good, responsibility or justified delegation, adequate means, authority and complete comparison remain independently defended inputs; their presence is not treated as an absence of the accepted argument. The physical associative rule does not thereby learn ethical validity or reliably revise reasons generally. The remaining judgment is the combined account's adequacy under the unchanged five conditions, including only further compositions or empirical claims it actually retains. No whole-foundation completion is declared.
 
 The grounding document's argument, its separately owned opening in `START-HERE.md` and `FOUNDATION-PREMISES.md` §8 retain their own acceptance record. This review read them to check the accuracy of the common exposition's references; it does not independently re-prove their normative premises. In particular, commit `e9070d0` contains the earlier application-review assessment, not the new grounding package. Acceptance here does not depend on assigning that package a false commit identity.
 
@@ -127,14 +127,14 @@ While this appendix was being saved, a separately owned completion-assessment op
 
 | Inspected document | SHA-256 |
 |---|---|
-| [FOUNDATION-PREMISES.md](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) | `a45209a9c1ea753d31b6378e0b221b6a5689bcf64fb25cc774d24a97f95f1e5c` |
-| [START-HERE.md](../../../../theories/becoming/chapters/START-HERE.md) | `eb3a9fcc93321e09055dd259a6671ee4b8dc19d4ac57944eca3f00c45d3efff3` |
+| [FOUNDATION-PREMISES.md](../../../../theories/becoming/history/FOUNDATION-PREMISES.md) | `a45209a9c1ea753d31b6378e0b221b6a5689bcf64fb25cc774d24a97f95f1e5c` |
+| [START-HERE.md](../../../../theories/becoming/history/START-HERE.md) | `eb3a9fcc93321e09055dd259a6671ee4b8dc19d4ac57944eca3f00c45d3efff3` |
 | [CLAIMS.md](../../../../theories/becoming/chapters/CLAIMS.md) | `42ca6a173a931bab2d258080b66fdb6cafb7b6c67178787ab2ba0abef26c5443` |
-| [THEORY.md](../../../../theories/becoming/chapters/THEORY.md) | `90cc721e2d72f77eae313e1d851e2a8a89b31bd238fa00f49ea03c27847c9dde` |
+| [THEORY.md](../../../../theories/becoming/history/THEORY.md) | `90cc721e2d72f77eae313e1d851e2a8a89b31bd238fa00f49ea03c27847c9dde` |
 | [FOUNDATION-COMPOSITION.md](FOUNDATION-COMPOSITION.md) | `e62953c7fb80af752f742349e51905f8c05a7638593bad7dc212367d3b1e069a` |
-| [SYNTHESIS-RECORD.md](../../../../theories/becoming/chapters/SYNTHESIS-RECORD.md) | `858e2673726cb4f5059c66102708c3cda0927c6f2047445be353825e1604c947` |
-| [GENERATIVE-CORE-LEAN.md](../../../../theories/becoming/chapters/GENERATIVE-CORE-LEAN.md) | `9957456401978ef9d521b2e571d598d5f747b817afe51c5b941522eedb170b81` |
-| [DEEPER-GENERATIVE-ROOT.md](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md) | `2ae8cf68acaf8be9b3a94fb60e2eece474a9ab08661f44e662137ef4e17dbfab` |
+| [SYNTHESIS-RECORD.md](../../../../theories/becoming/history/SYNTHESIS-RECORD.md) | `858e2673726cb4f5059c66102708c3cda0927c6f2047445be353825e1604c947` |
+| [GENERATIVE-CORE-LEAN.md](../../../../theories/becoming/history/GENERATIVE-CORE-LEAN.md) | `9957456401978ef9d521b2e571d598d5f747b817afe51c5b941522eedb170b81` |
+| [DEEPER-GENERATIVE-ROOT.md](../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md) | `2ae8cf68acaf8be9b3a94fb60e2eece474a9ab08661f44e662137ef4e17dbfab` |
 
 The preceding review bytes, before this append, have SHA-256 `33f39c8385555ca8b270b2b68ada2dd6f3b503d67df1d07e1ed97aa81412bedf`. The referenced grounding canonical text has SHA-256 `b8d89086044825cfca9ea64edc296fb12d4bce25344af5aede6a24bc41df9d3b`; its separate review at inspection has SHA-256 `5b893b881c97c87638db7cdb81169c27b45999327af96d8ad7b07cafc6ed1a80`. Those context identities distinguish the accepted argument from any later additions. Only this review file was edited by this reviewer for the current task.
 

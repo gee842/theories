@@ -6,13 +6,13 @@ It follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-M
 
 ## 1. The transition addressed
 
-In the derivation map of [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), this is the link **organization → its own continuation** (续生): when does activity renew the conditions of further activity, and when must those conditions come from outside?
+In the derivation map of [generative grounding](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md), this is the link **organization → its own continuation** (续生): when does activity renew the conditions of further activity, and when must those conditions come from outside?
 
 The existing results bound continuation but do not characterize renewal.
 
 | Existing result | What it gives | What it leaves open |
 |---|---|---|
-| [U1/U2](../../../../theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md) (`conditional/ResourceContinuation.lean`) | Unbounded demand needs unbounded provision; with unit demand, provision must arrive in every long enough window | Whether provision is imported or internally renewed (the README says so explicitly) |
+| [U1/U2](../../../../theories/becoming/history/CONDITIONAL-UNIVERSALITY.md) (`conditional/ResourceContinuation.lean`) | Unbounded demand needs unbounded provision; with unit demand, provision must arrive in every long enough window | Whether provision is imported or internally renewed (the README says so explicitly) |
 | `conditional/SupportNecessity.lean` | Bounded lifetimes plus a supplied strict type rank give a finite deadline; there are also checked examples of a renewing cycle, an infinite acyclic chain and external arrivals | The file states "No finite-graph cycle-extraction theorem is claimed here." The rank is supplied, not derived from acyclicity |
 | `NativePortContinuation.lean` (branch `claude/project-thread-x1q9hl`) | The native port obeys U1 with equality; on its own source a potential strictly falls, so it cannot continue indefinitely | The non-renewing baseline. Its contact and gate are fixed, so nothing in it is renewed |
 | `FormationClosure.lean` (branch `claude/project-thread-mlqbun`) | A coordinate retained by every step changes only through formation events (`law_constant`, `change_requires_formation`). A contact can form from the port's own recorded failures | Formation of one constraint from waste. The forming mechanism is not itself renewed, so there is no closure |
@@ -30,7 +30,7 @@ Ren has set the research center ([NONINSTRUMENTAL-CONCERN §15](../../../../theo
 The renewal theorem serves this center in a specific, limited way:
 
 - **It supplies a property of whole configurations, not of goals.** Phase 2b defines when a whole configuration (every formed constraint, reserve and stalled structure together) can still renew the conditions of its activity from within. The §15 counterexample shows that no goal-projection captures this. Two endpoints with the same protected completion differ exactly in what they leave able to continue.
-- **It covers the conditions of correction too.** Records, readers and other means of correction are constraints in this model: retained coordinates that enable a process and wear over a longer span. So whether correction can continue is decided by the same theorem. This connects the result to the formulation of 智慧 in [THEORY.md §1](../../../../theories/becoming/chapters/THEORY.md#1-the-foundation): sustaining the conditions under which discernment and correction can continue.
+- **It covers the conditions of correction too.** Records, readers and other means of correction are constraints in this model: retained coordinates that enable a process and wear over a longer span. So whether correction can continue is decided by the same theorem. This connects the result to the formulation of 智慧 in [THEORY.md §1](../../../../theories/becoming/history/THEORY.md#1-the-foundation): sustaining the conditions under which discernment and correction can continue.
 - **It separates generation from damage.** A history step can move a configuration into the renewable region (a closure forms) or out of it (a closure breaks, or a reserve falls below threshold). That gives constructive and destructive regimes a precise, checkable form at this scope.
 - **It does not supply the whole quality.** §15.4 rejects maximizing continuation, activity counts or future branches as substitutes for the whole comparison. Renewability is a necessary structural ingredient of that comparison, not the appraisal itself. Proper ending, completion and rest are not failures of renewal. The theorem says which conditions remain possible, not which of them should be kept.
 

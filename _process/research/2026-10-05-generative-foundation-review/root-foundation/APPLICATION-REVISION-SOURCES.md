@@ -4,7 +4,7 @@
 
 ## 1. What is inherited and what this adds
 
-The [practical-boundary integration](PRACTICAL-BOUNDARY-INTEGRATION.md) already separates an outstanding loss from permission to impose further teaching costs. The [nondual-applicability integration](NONDUAL-APPLICABILITY-INTEGRATION.md) already establishes material repair removing its own applicability condition. [Evaluative application](../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md) already distinguishes historical service fulfillment, continuing need and standing. None is rediscovered here.
+The [practical-boundary integration](PRACTICAL-BOUNDARY-INTEGRATION.md) already separates an outstanding loss from permission to impose further teaching costs. The [nondual-applicability integration](NONDUAL-APPLICABILITY-INTEGRATION.md) already establishes material repair removing its own applicability condition. [Evaluative application](../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md) already distinguishes historical service fulfillment, continuing need and standing. None is rediscovered here.
 
 The inherited [thermal comparator](NONDUAL-APPLICABILITY-COMPARATORS.md) concerns self-regulation. The present extension concerns another participant's changed condition within an established relation. It narrows the empirical target from generic helping or recognition to discrimination among responses. This remains a comparator, not a joined material history with the formal learner.
 

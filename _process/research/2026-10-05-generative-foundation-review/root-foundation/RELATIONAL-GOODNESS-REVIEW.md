@@ -4,9 +4,9 @@
 
 ## 1. What the repository presently calls good
 
-[Theory §10](../../../../theories/becoming/chapters/THEORY.md#10-shared-generativity-and-善) proposes supporting, repairing and enabling affected beings' worthwhile possibilities, including their capacity to understand, contest and change their conditions. The [alignment account](../../../../theories/becoming/chapters/ALIGNMENT-AXIS.md#what-good-and-evil-mean-at-this-scope) adds explicit protection against unjustified suffering and domination. These are substantive ethical orientations. “Worthwhile” retains evaluative work; neither formulation defines all production as good.
+[Theory §10](../../../../theories/becoming/history/THEORY.md#10-shared-generativity-and-善) proposes supporting, repairing and enabling affected beings' worthwhile possibilities, including their capacity to understand, contest and change their conditions. The [alignment account](../../../../theories/becoming/history/ALIGNMENT-AXIS.md#what-good-and-evil-mean-at-this-scope) adds explicit protection against unjustified suffering and domination. These are substantive ethical orientations. “Worthwhile” retains evaluative work; neither formulation defines all production as good.
 
-The [ethical foundation](../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md#what-generativity-contributes-to-the-ethical-argument) already preserves rest, enjoyment, completion and chosen withdrawal. Goodness therefore cannot require every beneficiary to become productive or every valuable moment to generate another.
+The [ethical foundation](../../../../theories/becoming/history/ETHICAL-FOUNDATION.md#what-generativity-contributes-to-the-ethical-argument) already preserves rest, enjoyment, completion and chosen withdrawal. Goodness therefore cannot require every beneficiary to become productive or every valuable moment to generate another.
 
 Three senses should not substitute for one another. An occurrence can be good **for** a being; an available action can possess a morally favorable aspect; an action can be justified overall. The current proposal connects them but does not identify them without qualification. If “good” already means reason-giving, calling it a reason restates that meaning. If it means actual benefit, its practical scope remains a substantive claim.
 

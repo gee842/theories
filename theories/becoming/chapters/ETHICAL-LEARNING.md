@@ -14,7 +14,7 @@
 
 本章推进的是它们之间一个更明确的伦理连接：**当学习同时改变“我怎样评价”与“实际有什么值得评价”时，怎样说明这次改变获得了根据，而不是以旧偏好或新偏好中的任何一方自封裁判。** 这也是区分成长、误学、操纵及正当安顿的问题。解释范围是 G0 与公开 J1–J4 下的伦理学习；不把所有生成都称为学习，或把所有学习都称为善。
 
-同时完成的[关切与新的理由](CONCERN-AND-NEW-REASONS.md)进一步说明正面形成怎样扩展判断内容，并给出其比较条件。本章信用这项进展，集中于跨越这种改变的正当性：新认识、新生活与形成过程怎样分别取得根据，后来的认可可以改变什么、不能独自证明什么。两章互补，不将内容扩展或其形式结果重复算作本轮新成果。
+同时完成的[关切与新的理由](../history/CONCERN-AND-NEW-REASONS.md)进一步说明正面形成怎样扩展判断内容，并给出其比较条件。本章信用这项进展，集中于跨越这种改变的正当性：新认识、新生活与形成过程怎样分别取得根据，后来的认可可以改变什么、不能独自证明什么。两章互补，不将内容扩展或其形式结果重复算作本轮新成果。
 
 The new connection concerns assessment across a transformation that changes both evaluative capacities and the actual grounds of particular reasons. It reuses the completed accounts of knowledge and responsibility rather than reopening them. The task is a philosophical account under G0/J1–J4, not a new implementation of a supplied comparator.
 
@@ -97,7 +97,7 @@ This completes the present conceptual connection, not the whole generative found
 <a id="living-realization-and-normative-significance"></a>
 ## 8. 新的生成怎样取得具体规范意义
 
-2026-10-08，按 Ren 再次要求专注理论推进的[指示](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continued-theoretical-development)继续。前七节的伦理学习候选与[理由内容扩展的比较结果](CONCERN-AND-NEW-REASONS.md)保持完成范围；本节至第十一节具体化其中 E 的一项负担：**面对新能力、新关系或新组织，怎样辨明它给生生带来了什么，而不由名称、存续或复杂度代领规范根据。** [论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#living-realization-continuation)记录本次新增内容。
+2026-10-08，按 Ren 再次要求专注理论推进的[指示](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continued-theoretical-development)继续。前七节的伦理学习候选与[理由内容扩展的比较结果](../history/CONCERN-AND-NEW-REASONS.md)保持完成范围；本节至第十一节具体化其中 E 的一项负担：**面对新能力、新关系或新组织，怎样辨明它给生生带来了什么，而不由名称、存续或复杂度代领规范根据。** [论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#living-realization-continuation)记录本次新增内容。
 
 先辨明实际组织，再说明其规范意义。例如，“理解”须涉及对内容及根据的实际把握，“互相表达”须涉及表达被取得并能进入回应，“自护”须说明生活的哪些条件获得维持。这些描述可以正确或错误，也可以出现在整体有害的活动中。它们不以“已经判善”为定义；其正面分量来自 G0 对相应生活实现的肯定，整体优先与行动要求另用 J1–J4 判断。
 
@@ -404,10 +404,10 @@ The proposed account traces an existing concern, acquired relational distinction
 | 次序 | 研究路线 | 首项具体交付及改变理论的结果 |
 |---|---|---|
 | **一：理论主线** | 局部关切—新辨别—具体目的重组 | 写出上一节的一条形成史，标明起点、取得关系、实际作用和三类对手。若没有一个未被预装的取得连接，便修订候选，不再增添“正确采用”字段。 |
-| **二：判别配套** | 区分认识、收益预期、评价作用和实际新生活 | 复用已完成的[辨别界限](VALUATION-IDENTIFICATION-BOUNDS.md)，给第一条路线制定前向观察与干预对照；明确哪些结论可支持、哪些仍不定。它帮助检验形成解释，不要求理论先等一项新大型实验。 |
+| **二：判别配套** | 区分认识、收益预期、评价作用和实际新生活 | 复用已完成的[辨别界限](../history/VALUATION-IDENTIFICATION-BOUNDS.md)，给第一条路线制定前向观察与干预对照；明确哪些结论可支持、哪些仍不定。它帮助检验形成解释，不要求理论先等一项新大型实验。 |
 | **三：条件性机制研究** | 训练中的解释如何改变后续推广 | 理由与情境对照先明确，再选择小范围 AI 训练或机制干预。只有跨表面变化保留根据、随根据变化修订回应的结果，才支持相应推广主张；行为风格或单次得分提升另计。 |
 
-第二条路线已有可复用的分析与未决结果。[奖励与接受者选择研究](REWARD-LEARNING-AND-RECIPIENT-CHOICE.md)已经完成一次有范围的数据重分析，训练对比并未清楚识别关切变化；既有研究也已提出配对非关联奖励、新接受者和独立预期校准。已完成的分析不重做，既有对照建议仍明确标为尚未执行，不算作本轮新提出的方案。本轮新增要求是把根据改变时的调整、实际新关系的形成及过程中间记录接入对照，并容许“认识改善、动机变化未识别”这一有效结论。
+第二条路线已有可复用的分析与未决结果。[奖励与接受者选择研究](../history/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md)已经完成一次有范围的数据重分析，训练对比并未清楚识别关切变化；既有研究也已提出配对非关联奖励、新接受者和独立预期校准。已完成的分析不重做，既有对照建议仍明确标为尚未执行，不算作本轮新提出的方案。本轮新增要求是把根据改变时的调整、实际新关系的形成及过程中间记录接入对照，并容许“认识改善、动机变化未识别”这一有效结论。
 
 第三条路线有具体原典接口：训练时的提示条件可以影响后续推广，模型内部方向的干预也可改变所测行为倾向。[提示研究](https://arxiv.org/html/2510.05024v1)与[机制研究](https://arxiv.org/html/2507.21509v1)提供可调查的形成变量；它们没有证明本理论所要求的关切内容或规范根据。先据形成候选确定需要区分的关系，再决定这些工具是否有用，避免把一个“关切向量”当作关切的定义。
 
@@ -609,7 +609,7 @@ The target is warranted recognition and response, not a new axiom-free foundatio
 
 这条路径要取得三类内容。第一，哪些活动与保留组织使所述生活实际发生，哪些只是它的痕迹、报告或我们习惯看到的样子。第二，哪些变化真的中断、恢复或改变这一实现，哪些只改变其可见性。第三，相关支持怎样分布，某处的继续会使其他生活发生什么变化。认识因此可以从单一可见对象转向一段共同维持的生活史，保留其中不同的受影响位置，而不先假定每个边界内都有一个独立的福利主体。
 
-这些是解释和检验的问题，**不是要求每个生命都必须当场展示全部能力的清单**。休眠、休息、功能受损和依赖照料可以使活动难以观察，却不独自证明生活已经终止。支持来自别处，也不因此变成“只有别处的生活”；自主修复更不是伦理入场券。[既有生命依存说明](LIVING-DEPENDENCIES.md)已经建立保留、恢复、共同供给及实际不足的区别，本轮只是将这些区别接入陌生处境中的识别。
+这些是解释和检验的问题，**不是要求每个生命都必须当场展示全部能力的清单**。休眠、休息、功能受损和依赖照料可以使活动难以观察，却不独自证明生活已经终止。支持来自别处，也不因此变成“只有别处的生活”；自主修复更不是伦理入场券。[既有生命依存说明](../history/LIVING-DEPENDENCIES.md)已经建立保留、恢复、共同供给及实际不足的区别，本轮只是将这些区别接入陌生处境中的识别。
 
 相反，修复、复制、反馈或保持边界本身也不保证所声称的生活根据。一项标记可以由多个不同过程产生；一个过程也可能在标记消失后继续。需要说明为什么这里的迹象支持这项具体判断，以及何种发现会使它缩小或撤回。改变指示器的阈值不能代替这项说明。与人相似或材料不同，都不能单独完成归入或排除。
 
@@ -914,7 +914,7 @@ New reasons need not expand institutional power. They can change an interpretati
 
 听取具有不同强度。初步可信的对应可以支持澄清或有限调查；较充分的理由可以使旧判断重新打开；决定采用什么行动，则仍要完整比较并说明权限。恶意重复、明显无关、已被充分回应或代价失衡的请求，可以有根据地限制。任何一句“这可能很重要”都不产生无限程序负担或否决权。
 
-**被纳入考虑不是获得某个预定结果。** 新生活的根据得到承认之后，仍可能因真实冲突、有效承担、能力和权限边界而不能得到所要求的全部回应。反过来，没有立即可实行的完整方案，也不能让已取得的根据重新变成不存在。[判断先于完整共识的旧结果](GOAL-FORMATION-AND-REVISION.md#8-evaluative-openness-and-judgment-before-agreement)已支持这项区别，直接复用。
+**被纳入考虑不是获得某个预定结果。** 新生活的根据得到承认之后，仍可能因真实冲突、有效承担、能力和权限边界而不能得到所要求的全部回应。反过来，没有立即可实行的完整方案，也不能让已取得的根据重新变成不存在。[判断先于完整共识的旧结果](../history/GOAL-FORMATION-AND-REVISION.md#8-evaluative-openness-and-judgment-before-agreement)已支持这项区别，直接复用。
 
 An inherited list cannot, solely by excluding a claim, answer a warranted challenge to its own adequacy. J3/J4 already supply scoped standing for affected participation and relevant knowledge. Credible inquiry, reopening a judgment and authorizing a particular response remain different achievements. Neither difficult expression nor absence of a complete replacement defeats every reason; neither novelty nor possible importance grants unlimited review or a predetermined verdict.
 

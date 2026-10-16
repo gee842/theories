@@ -37,13 +37,13 @@ This completes the stated formal interface; it does not construct a newly acquir
 
 ## Credit the concurrent implementation
 
-While this round was examining the next connection, the repository acquired an [inquiry-revision extension](../../../../theories/becoming/chapters/INQUIRY-REVISION.md). Its formed contact reads retained occupancy and changes the operative requirement from six encounters to four in the actual continuing history. It now reports accepted finite and formal checks at its declared scope, including selected runtime/Lean correspondence; that branch's own receipts govern those claims. Its result is credited here, not counted as a new accomplishment of this formal-interface round.
+While this round was examining the next connection, the repository acquired an [inquiry-revision extension](../../../../theories/becoming/history/INQUIRY-REVISION.md). Its formed contact reads retained occupancy and changes the operative requirement from six encounters to four in the actual continuing history. It now reports accepted finite and formal checks at its declared scope, including selected runtime/Lean correspondence; that branch's own receipts govern those claims. Its result is credited here, not counted as a new accomplishment of this formal-interface round.
 
 This closes a particular implementation omission at its declared new-law scope. It must not be described as if the older frozen law had suddenly acquired an unavailable transition. Nor should the older conditional judgment of warranted suspension be reopened: that application was already complete.
 
 The extension supplies its formation recipe, calibration, two-occupied trigger and rewrite rule. Actual criterion change under that rule is established at the implementation's reported scope; formation or selection of that rule through its wider consequences remains a stronger explanatory target. The present formal criterion can assess a proposed inquiry's continuation guarantee but does not infer the trigger's correctness or ethical warrant.
 
-The [new identification result](../../../../theories/becoming/chapters/INQUIRY-AND-MATHEMATICAL-IDENTITY.md) is also credited: pairwise distinguishability need not permit a single identifying policy when a test consumes the source needed for later separation. Those existing numerical histories were not rerun or silently combined with the concern learner.
+The [new identification result](../../../../theories/becoming/history/INQUIRY-AND-MATHEMATICAL-IDENTITY.md) is also credited: pairwise distinguishability need not permit a single identifying policy when a test consumes the source needed for later separation. Those existing numerical histories were not rerun or silently combined with the concern learner.
 
 ## Synthesis reconciliation
 
@@ -53,7 +53,7 @@ The [owned edit record](INQUIRY-SUFFICIENCY-LEAN-EDITS.json) preserves the exact
 - The connected account distinguishes the completed conditional suspension judgment from implementation claims, and points to the newer read/rewrite extension at its own scope.
 - The proof map and claim register include the later pretraining, coformation and inquiry results. Historical proof counts remain preserved and overlapping closures are not added together.
 - The governing account scopes the old distinction-to-occurrence audit to its actual reconstruction and marks successor-learning next steps that subsequent studies already advanced.
-- The [empirical ledger](../../../../theories/becoming/chapters/EMPIRICAL-SCOPE.md) now includes the recent structural-memory, physiological metaplasticity and information-seeking comparators, preserving criticism and failed cases. Its [separate edit record](INQUIRY-SUFFICIENCY-EMPIRICAL-EDITS.json) confirms that the earlier ledger was retained. These studies do not form one observed developmental sequence.
+- The [empirical ledger](../../../../theories/becoming/history/EMPIRICAL-SCOPE.md) now includes the recent structural-memory, physiological metaplasticity and information-seeking comparators, preserving criticism and failed cases. Its [separate edit record](INQUIRY-SUFFICIENCY-EMPIRICAL-EDITS.json) confirms that the earlier ledger was retained. These studies do not form one observed developmental sequence.
 
 ## The remaining connection
 

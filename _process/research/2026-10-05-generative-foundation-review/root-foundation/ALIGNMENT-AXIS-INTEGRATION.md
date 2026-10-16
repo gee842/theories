@@ -4,7 +4,7 @@
 
 ## Named connection and result
 
-The connection is **patient-grounded baseline concern → justified comparative ethical direction → ground-sensitive effective response**. The [canonical account](../../../../theories/becoming/chapters/ALIGNMENT-AXIS.md) distinguishes moral assessment, actor-addressed reasons, motivation, authority, preference, obligation and culpability. A nonexclusive relief principle is positively defended, not derived from bare survival or declared an established universal necessity. The inherited no-cost-worsening comparison is specialized under explicit patient, authority, complete-profile and dominance premises. No new theorem is claimed.
+The connection is **patient-grounded baseline concern → justified comparative ethical direction → ground-sensitive effective response**. The [canonical account](../../../../theories/becoming/history/ALIGNMENT-AXIS.md) distinguishes moral assessment, actor-addressed reasons, motivation, authority, preference, obligation and culpability. A nonexclusive relief principle is positively defended, not derived from bare survival or declared an established universal necessity. The inherited no-cost-worsening comparison is specialized under explicit patient, authority, complete-profile and dominance premises. No new theorem is claimed.
 
 The central clarification is that an ethical alignment direction can contain warranted local comparisons without first supplying a unique total ranking or universal rational compulsion. This does not prove the ground of those comparisons; it makes their actual justificatory burden visible. The stronger stranger bridge remains substantive: explain why eligible present control can be addressed by the patient's claim without a prior role.
 

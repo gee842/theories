@@ -1,6 +1,6 @@
 # Paid prediction and its causal use
 
-6 October 2026. Exact finite extension under the [canonical account](../../../../../../../../theories/becoming/chapters/PREDICTION-ACTION.md). The [protocol](PROTOCOL.md) was fixed before primary comparisons. This is a synthetic construction using supplied assembly, observation, writing and routing laws.
+6 October 2026. Exact finite extension under the [canonical account](../../../../../../../../theories/becoming/history/PREDICTION-ACTION.md). The [protocol](PROTOCOL.md) was fixed before primary comparisons. This is a synthetic construction using supplied assembly, observation, writing and routing laws.
 
 ## The inherited process
 

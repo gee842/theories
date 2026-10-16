@@ -214,7 +214,7 @@ Ren 写道：“let's aim for the strongest claim without axiom, as the first pa
 
 **一个关系项的两种角色，经由给予的生起。** 以一类关系项读（[Becoming.Roles](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)，[life-as-condition-of-life](../results/records/life-as-condition-of-life.md)），一个形成可以是其他形成与自身的条件；哪个条件就是哪个形成，由表示的共同索引给出（`relabel`）。在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃形成的给予而生起（`Embodied.arises_given`）；给予它的形成不必体现，可以是一个不依存于任何东西的源（`SourceSeed`）。在只有体现的关系项给予这一表示前提下，给予它的关系项也体现（`arises_from_embodied`），它仍可以是一个不依存于任何东西的源（`EmbodiedSource`）。在把体现的关系项读作“生”这一读法下（AI 依 Ren 2026-10-15 的交托采用，[D4](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md)），作者把这读作原话中两个“生”之间关系的一种形式内容（AI 论证），不替代 Ren 的原话；一代代形成可以不止地生起，每一代由前一代给予（`Brood`）。体现的关系项在生起时开始作为条件而在，至少被给予它的新水平，所以生成本身就是补充：体现的成员在任意晚的步生起时，家族的补充复现，不论取用什么（[generation-is-replenishment](../results/records/generation-is-replenishment.md)）。这一要求跟着水平的上升走，不跟着活动走：平衡的流中任何上升都被给予（`Balances.rise_given`），开始作为条件而在是从零的上升（`Web.ComesToStand`），一个条件也可以只是不断上升（`Growing`）；种子可以在休眠时被给予它的水平，此后生起时没有任何给予（`Provisioned`），从休眠中醒来不开始作为条件而在，不受这一要求约束（`Sleeper`）；没有支持时，在储备之下醒来不在任意晚的步发生，储备推迟终结而不逃脱（[reserve-defers-ending](../results/records/reserve-defers-ending.md)）。给予被耗散家族的形成从家族取用，所以在耗散之下，封闭的不重复家族中体现成员的每次生起都降低家族的存量；体现的生成在一个有限家族中复现，家族就在任意晚的步不封闭，这一交换可以与家族无关（`SprayShuttle`），家族被围住时它汲入（`generation_draws_in`）；关系项总共有限时它不复现（`generation_opens`、`generation_not_recurring`）。上文“继续生成”中 `dissipation_generation_not_recurring` 所设的物理前提，对封闭家族中体现成员的生起，由平衡、耗散与体现推出。没有耗散（`Shuttle`）或不体现（`Flicker`）时，这些结论不成立；燃烧新燃料的传递满足全部前提（`Throughput`）。汲取承担自身的关系项，与它的每个活跃事件相互作用：蜜蜂与花各自依存于自身与对方时，没有第三个条件就连通，G0 在那里恰为种子加两项中立；各自只依存于对方时，两种估值都不关联它们，尽管两者都体现：体现本身不进入估值（`Mutualism`、`Mutualism.apart_embodied`）。在承担自身的体现关系项终结之步汲取它，不论是什么终结了它，是断裂，所以不是 living（`Embodied.ending_breaks`、`Predation`）；这包括旁观的汲取者、自然的终结与该关系项自身的最后事件（`Wilting`）。这是逐步读法的判定；它不作为对汲取者的估值，比较以可能性进行（AI 依 Ren 2026-10-15 的交托决定，[D6](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md)）。
 
-**演化是具体的机制，不是一切变化的同义词。** 传递、重建、变异与选择各有其关系，须各自说明（[演化之论](THE-THEORY-OF-EVOLUTION.md)、[演化组织](EVOLUTIONARY-ORGANIZATION.md)）。已检查的连接如下：
+**演化是具体的机制，不是一切变化的同义词。** 传递、重建、变异与选择各有其关系，须各自说明（[演化之论](THE-THEORY-OF-EVOLUTION.md)、[演化组织](../history/EVOLUTIONARY-ORGANIZATION.md)）。已检查的连接如下：
 
 - 继承的结构排列改变后续复制（[inherited-structural-copying](../results/records/inherited-structural-copying.md)）；
 - 形成的登记改变复制的保真度（[formed-copying-registration](../results/records/formed-copying-registration.md)）；
@@ -396,7 +396,7 @@ Ren 写道：“let's aim for the strongest claim without axiom, as the first pa
 
 **已建立的形成路线。**
 
-- **评价接续**：取得的理解形成评价影响，并进入有根据的应用（[评价接续](EVALUATIVE-UPTAKE.md)、[评价根据](EVALUATIVE-GROUNDING.md)）。
+- **评价接续**：取得的理解形成评价影响，并进入有根据的应用（[评价接续](../history/EVALUATIVE-UPTAKE.md)、[评价根据](../history/EVALUATIVE-GROUNDING.md)）。
 - **在条件下获得正当回应**：起初缺失的评价联系，可以成为对另一存在有根据回应的中介；同一联想学习之后也可以压制这一回应，而不推翻理由。
 - **评价者路线**：自我之善，加不受限单调性与容差，给出立场索引、单一历史上的 G0 实例。经独立审查，它已收窄（[self-good-reachable-g0](../results/records/self-good-reachable-g0.md)），并在 §6 中统一。
 
@@ -1317,6 +1317,6 @@ Ren 2026-10-15 把先前列在这里的读法与名称交 AI 以其最好的判�
 |---|---|---|
 | 现行方法 | [非二元方法](NONDUAL-METHOD.md) | 一切根基工作前必读 |
 | 现行研究 | [根基范围](BECOMING-FOUNDATION.md)、[关系怎样变化](THEORY-OF-BECOMING.md)、[G0 的根据](G0-WARRANT.md)、[演化之论](THE-THEORY-OF-EVOLUTION.md)、[对齐方向](ALIGNMENT-DIRECTION.md)、[知识](KNOWLEDGE.md) | 各自目标下的当前论证；本章引用其结论 |
-| 历史综合 | [Start here](START-HERE.md)、[统一理论](THEORY.md)、[生成根据](GENERATIVE-GROUNDING.md)、[共同前提](FOUNDATION-PREMISES.md)、[综合记录](SYNTHESIS-RECORD.md)、[完成计划](COMPLETION-PLAN.md) | 历史证据；作为入口的作用已由本章取代 |
-| 各部分的证据 | 形成与发展（[生成发展](GENERATIVE-DEVELOPMENT.md)、[形成](FORMATION.md)、[共同形成](JOINT-FORMATION.md)）；评价（[评价接续](EVALUATIVE-UPTAKE.md)、[统一伦理根据](UNIFIED-ETHICAL-GROUNDING.md)、[实践判断](PRACTICAL-JUDGMENT.md)）；集体（[市场](MARKETS-AND-GENERATIVE-REGIMES.md)、[多元系统](PLURAL-SYSTEMS-AND-CORRECTION.md)）；形式（[形式核心](FORMAL-CORE.md)、[Lean 核心](GENERATIVE-CORE-LEAN.md)）；其余见目录 | 历史证据，按原范围保留 |
+| 历史综合 | [Start here](../history/START-HERE.md)、[统一理论](../history/THEORY.md)、[生成根据](../history/GENERATIVE-GROUNDING.md)、[共同前提](../history/FOUNDATION-PREMISES.md)、[综合记录](../history/SYNTHESIS-RECORD.md)、[完成计划](../history/COMPLETION-PLAN.md) | 历史证据；作为入口的作用已由本章取代 |
+| 各部分的证据 | 形成与发展（[生成发展](../history/GENERATIVE-DEVELOPMENT.md)、[形成](../history/FORMATION.md)、[共同形成](../history/JOINT-FORMATION.md)）；评价（[评价接续](../history/EVALUATIVE-UPTAKE.md)、[统一伦理根据](../history/UNIFIED-ETHICAL-GROUNDING.md)、[实践判断](PRACTICAL-JUDGMENT.md)）；集体（[市场](MARKETS-AND-GENERATIVE-REGIMES.md)、[多元系统](PLURAL-SYSTEMS-AND-CORRECTION.md)）；形式（[形式核心](FORMAL-CORE.md)、[Lean 核心](../history/GENERATIVE-CORE-LEAN.md)）；其余见目录 | 历史证据，按原范围保留 |
 | 登记 | [成果登记表](../results/RESULT-REGISTER.md)、[细项主张](CLAIMS.md) | 自动生成；以记录为准 |

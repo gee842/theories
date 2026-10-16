@@ -111,7 +111,7 @@ phase'&=observed.
 
 1. **已留记录可以变得不再正确。** `.reverse` 在 q 与命令保持时改变响应条件 z；`dependency_changes_while_memory_is_retained` 因此推出 `ExactEffects` 不再成立。它展示正确性是记录与实际条件的关系；不是证明记录原来从未获得任何意义。
 2. **源中断使失败回执不再唯一识别原因。** [ReceiptIdentification](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/ReceiptIdentification.lean) 证明原完整解码器正确当且仅当源可用，或动作本来不匹配条件。未知可用性下全失败历史可兼容两种条件。这不反驳既定无噪声可用域中的对应，却限制其扩展；不能为了保住普遍成功临时把中断排除。
-3. **认识形成后仍可能缺少行动所需的资源。** [既有预测行动研究](../../../../theories/becoming/chapters/PREDICTION-ACTION.md) 的指定 Slow 纠正路线需要 21 单位初始可用燃料；20 单位可以得到已改变的命令，却不足以执行接下来的响应。此前消耗与当前用途属于同一账目，非额外精神—物质鸿沟。
+3. **认识形成后仍可能缺少行动所需的资源。** [既有预测行动研究](../../../../theories/becoming/history/PREDICTION-ACTION.md) 的指定 Slow 纠正路线需要 21 单位初始可用燃料；20 单位可以得到已改变的命令，却不足以执行接下来的响应。此前消耗与当前用途属于同一账目，非额外精神—物质鸿沟。
 4. **材料总数不能替代具体部件能力。** `actual_prior_revision_cannot_supply_register` 在确已到达的旧构造终态中，粗 retrofit 条件成立，但所需自由 A/H 已耗尽。`coarse_capacity_does_not_supply_register` 另保留配置反例。前者是真实已到达的边界，后者是类型内配置，不能混算为同一历史证据。
 5. **动作耦合的方向仍可改变。** 既有 inverted-action 计算分支由真实回执学习，却执行相反路线，准确预报许多自己造成的失败。它反对“预测误差小本身足够保证续存”这一弱主张；它不是只切换一个脱离过程的评价标签，也不是对任何更丰富非二元解释的全面反驳。
 

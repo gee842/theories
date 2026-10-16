@@ -13,7 +13,7 @@
 <details>
 <summary>AcquiredPerspective.lean — 31 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/AcquiredPerspective.lean) · [理论 / Theory](../../chapters/GENERATED-SELF-AND-ETHICS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/AcquiredPerspective.lean) · [理论 / Theory](../../history/GENERATED-SELF-AND-ETHICS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/AcquiredPerspective.lean`
 
@@ -65,7 +65,7 @@ Imports: `ConstructedPrediction`, `RecipientCorrection`
 <details>
 <summary>BoundaryModels.lean — 22 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean) · [理论 / Theory](../../chapters/CONDITIONAL-UNIVERSALITY.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-CORE-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean) · [理论 / Theory](../../history/CONDITIONAL-UNIVERSALITY.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-CORE-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean`
 
@@ -108,7 +108,7 @@ Imports: `Std`
 <details>
 <summary>CompletionApplicability.lean — 20 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean) · [理论 / Theory](../../chapters/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean) · [理论 / Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean`
 
@@ -149,7 +149,7 @@ Imports: `ConnectedModel`
 <details>
 <summary>ConnectedGenerativeModel.lean — 8 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean) · [理论 / Theory](../../chapters/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean) · [理论 / Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean`
 
@@ -178,7 +178,7 @@ Imports: `GenerativeOutcomeModel`, `ConnectedModel`, `ConstructiveDecisions`
 <details>
 <summary>ConnectedModel.lean — 23 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean) · [理论 / Theory](../../chapters/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean) · [理论 / Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean`
 
@@ -222,7 +222,7 @@ Imports: `ApplicationEvidence`
 <details>
 <summary>ConstructiveDecisions.lean — 18 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean) · [理论 / Theory](../../chapters/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-MECHANISM.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean) · [理论 / Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONNECTED-MODEL-MECHANISM.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean`
 
@@ -291,7 +291,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>Depletion.lean — 5 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean) · [理论 / Theory](../../chapters/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean) · [理论 / Theory](../../history/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean`
 
@@ -429,7 +429,7 @@ Imports: `GenerativeOutcomeModel`, `AcquiredPerspective`
 <details>
 <summary>GenerativeApplicabilityModel.lean — 4 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean) · [理论 / Theory](../../chapters/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean) · [理论 / Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean`
 
@@ -454,7 +454,7 @@ Imports: `ConnectedGenerativeModel`, `CompletionApplicability`, `ClaimLedger`
 <details>
 <summary>GenerativeAttainableQuestionsModel.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean) · [理论 / Theory](../../chapters/ATTAINABLE-MATHEMATICAL-QUESTIONS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean) · [理论 / Theory](../../history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean`
 
@@ -469,7 +469,7 @@ Imports: `GenerativeFiniteInquiryModel`, `AttainableQuestions`, `OnePacketQuesti
 <details>
 <summary>GenerativeCore.lean — 28 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) · [理论 / Theory](../../chapters/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) · [理论 / Theory](../../history/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean`
 
@@ -518,7 +518,7 @@ Imports: `Std`
 <details>
 <summary>GenerativeCoreTreeModel.lean — 2 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCoreTreeModel.lean) · [理论 / Theory](../../chapters/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCoreTreeModel.lean) · [理论 / Theory](../../history/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCoreTreeModel.lean`
 
@@ -538,7 +538,7 @@ Imports: `GenerativeNondualModel`, `GenerativeReceiptModel`, `CoreTreeRearticula
 <details>
 <summary>GenerativeDerivedInquiryModel.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean) · [理论 / Theory](../../chapters/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean) · [理论 / Theory](../../history/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DERIVED-INQUIRY-PREMISES.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean`
 
@@ -624,7 +624,7 @@ Imports: `BoundaryModels`, `Depletion`, `RootRealization`, `ProductTower`, `Gene
 <details>
 <summary>GenerativeNondualApplicabilityModel.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean) · [理论 / Theory](../../chapters/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean) · [理论 / Theory](../../history/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean`
 
@@ -659,7 +659,7 @@ Imports: `GenerativeOutcomeModel`, `NondualCore`
 <details>
 <summary>GenerativeOutcomeModel.lean — 3 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean) · [理论 / Theory](../../chapters/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-RECORD-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean) · [理论 / Theory](../../history/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-RECORD-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeOutcomeModel.lean`
 
@@ -680,7 +680,7 @@ Imports: `GenerativeModel`, `OutcomeContinuation`
 <details>
 <summary>GenerativePretrainingEvidenceModel.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean) · [理论 / Theory](../../chapters/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean) · [理论 / Theory](../../history/CONNECTED-GENERATIVE-MODEL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean`
 
@@ -806,7 +806,7 @@ Imports: `FormationRoot`, `SuccessionPreparation`
 <details>
 <summary>NewPossibilities.lean — 64 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean) · [理论 / Theory](../../chapters/NEW-POSSIBILITIES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NEW-POSSIBILITIES-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean) · [理论 / Theory](../../history/NEW-POSSIBILITIES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NEW-POSSIBILITIES-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean`
 
@@ -1003,7 +1003,7 @@ Imports: `RecipientIdentification`
 <details>
 <summary>RootRealization.lean — 35 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean) · [理论 / Theory](../../chapters/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean) · [理论 / Theory](../../history/GENERATIVE-CORE-LEAN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean`
 
@@ -13868,7 +13868,7 @@ Imports: `CorePredication`
 <details>
 <summary>ContinuationConditions.lean — 25 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContinuationConditions.lean) · [理论 / Theory](../../chapters/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContinuationConditions.lean) · [理论 / Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContinuationConditions.lean`
 
@@ -14072,7 +14072,7 @@ Imports: `Std`
 <details>
 <summary>DerivedHistoryLaw.lean — 11 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean) · [理论 / Theory](../../chapters/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean) · [理论 / Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean`
 
@@ -14207,7 +14207,7 @@ Imports: `DynamicUnderdetermination`
 <details>
 <summary>DynamicUnderdetermination.lean — 13 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean) · [理论 / Theory](../../chapters/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean) · [理论 / Theory](../../history/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean`
 
@@ -14241,7 +14241,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>EnactedFoundation.lean — 12 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/EnactedFoundation.lean) · [理论 / Theory](../../chapters/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/EnactedFoundation.lean) · [理论 / Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/EnactedFoundation.lean`
 
@@ -16441,7 +16441,7 @@ Imports: `GeneratedPaths`
 <details>
 <summary>GeneratedPaths.lean — 14 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean) · [理论 / Theory](../../chapters/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-FOUNDATION-DERIVATION-AUDIT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean) · [理论 / Theory](../../history/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETE-FOUNDATION-DERIVATION-AUDIT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean`
 
@@ -16504,7 +16504,7 @@ Imports: `InferentialGrounds`
 <details>
 <summary>HistoryRealization.lean — 9 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean) · [理论 / Theory](../../chapters/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean) · [理论 / Theory](../../history/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean`
 
@@ -16534,7 +16534,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>InferentialGrounds.lean — 17 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean) · [理论 / Theory](../../chapters/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean) · [理论 / Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean`
 
@@ -16639,7 +16639,7 @@ Imports: `Becoming.Readout`, `WisdomFallibleJudgment`
 <details>
 <summary>MutualGrounding.lean — 11 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/MutualGrounding.lean) · [理论 / Theory](../../chapters/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/MutualGrounding.lean) · [理论 / Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/MutualGrounding.lean`
 
@@ -16802,7 +16802,7 @@ Imports: `Std`
 <details>
 <summary>ProductTower.lean — 10 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean) · [理论 / Theory](../../chapters/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean) · [理论 / Theory](../../history/DEEPER-GENERATIVE-ROOT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean`
 
@@ -17117,7 +17117,7 @@ Imports: `DynamicUnderdetermination`
 <details>
 <summary>RelationalFormation.lean — 31 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalFormation.lean) · [理论 / Theory](../../chapters/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalFormation.lean) · [理论 / Theory](../../history/ASSUMPTION-FREE-FOUNDATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalFormation.lean`
 

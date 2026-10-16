@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored empirical and comparator contract for the [architecture-formation proposal](ARCHITECTURE-FORMATION-PROPOSAL.md). **Status: prospective identification contract, grounded in inspected primary sources.** This document does not report a new biological experiment or validate an implementation that has not yet been independently checked. External references are link-only; no original source bytes were imported or altered.
 
-The named connection is **prior organized activity → altered local construction possibilities → formed response architecture → viable use and retention**. It works backward from the supplied architecture proposal in [recipient transmission](../../../../theories/becoming/chapters/RECIPIENT-TRANSMISSION.md), while preserving the separate [acquisition-of-concern identification problem](GENERATIVE-DEVELOPMENT-EVIDENCE.md). Formation of a shared response route, the route's retention, benefit to a recipient and justified concern are different claims.
+The named connection is **prior organized activity → altered local construction possibilities → formed response architecture → viable use and retention**. It works backward from the supplied architecture proposal in [recipient transmission](../../../../theories/becoming/history/RECIPIENT-TRANSMISSION.md), while preserving the separate [acquisition-of-concern identification problem](GENERATIVE-DEVELOPMENT-EVIDENCE.md). Formation of a shared response route, the route's retention, benefit to a recipient and justified concern are different claims.
 
 ## What an implemented result could identify
 

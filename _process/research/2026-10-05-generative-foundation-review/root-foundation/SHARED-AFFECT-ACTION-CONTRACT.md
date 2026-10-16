@@ -54,5 +54,5 @@ The stronger primary causal contrast is `I×H` above, with actual delivery and i
 
 The source studies therefore inform a supplied biological implementation premise in the foundation. They do not close the genesis of shared routing. The next useful connection is identifying a readout that carries independently understood recipient consequences into choice while preserving epistemic competence; another invented controller or another overlap statistic would not discharge that obligation.
 
-[uptake]: ../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md
-[application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
+[uptake]: ../../../../theories/becoming/history/EVALUATIVE-UPTAKE.md
+[application]: ../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md

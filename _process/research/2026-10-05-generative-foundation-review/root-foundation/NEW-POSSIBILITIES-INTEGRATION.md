@@ -1,12 +1,12 @@
 # New possibilities: integration, proof and completion record
 
-8 October 2026, Asia/Bangkok. AI-authored research continuation in the existing root-foundation study. [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-08-formation-of-new-possibilities.md) · [Bilingual theory](../../../../theories/becoming/chapters/NEW-POSSIBILITIES.md) · [Evidence and substantive self-counterreview](NEW-POSSIBILITIES-REVIEW.md).
+8 October 2026, Asia/Bangkok. AI-authored research continuation in the existing root-foundation study. [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-08-formation-of-new-possibilities.md) · [Bilingual theory](../../../../theories/becoming/history/NEW-POSSIBILITIES.md) · [Evidence and substantive self-counterreview](NEW-POSSIBILITIES-REVIEW.md).
 
 ## Named connection and inherited work
 
 **Existing organization → formation of new operative construction relations → newly attainable effects → accountable revision of descriptions.** This supplies a more precise descriptive premise for whole generation → ethical quality → practical reasons. It establishes no new ethical axiom or universal favorable direction.
 
-[Autonomous method formation](../../../../theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md) already forms and replaces a previously absent connection between supplied generators. [Acquired abstraction](../../../../theories/becoming/chapters/ABSTRACTION-ACQUISITION.md) already realizes bounded acquisition of a distinction from a learner's own tests. They are credited, not repeated or retroactively upgraded to the new proof scope. The present assembly is a separate witness with an explicit core Trace interface, not a funded continuation of either saved experimental history.
+[Autonomous method formation](../../../../theories/becoming/history/AUTONOMOUS-METHOD-FORMATION.md) already forms and replaces a previously absent connection between supplied generators. [Acquired abstraction](../../../../theories/becoming/history/ABSTRACTION-ACQUISITION.md) already realizes bounded acquisition of a distinction from a learner's own tests. They are credited, not repeated or retroactively upgraded to the new proof scope. The present assembly is a separate witness with an explicit core Trace interface, not a funded continuation of either saved experimental history.
 
 ## Proof package
 

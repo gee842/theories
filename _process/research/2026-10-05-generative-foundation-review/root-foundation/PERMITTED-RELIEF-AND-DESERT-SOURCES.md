@@ -1,6 +1,6 @@
 # Permitted relief and desert: primary comparisons
 
-6 October 2026. AI-authored research within the existing root-foundation study. The transition is **an adverse experiential occurrence and an available response → a patient-ground consideration for that response, even when desert is invoked**. Local actor/patient vocabulary does not reinstall a fundamental subject–object division. The [universal minimum](../../../../theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md) remains the target; innocence is not added to its eligibility conditions.
+6 October 2026. AI-authored research within the existing root-foundation study. The transition is **an adverse experiential occurrence and an available response → a patient-ground consideration for that response, even when desert is invoked**. Local actor/patient vocabulary does not reinstall a fundamental subject–object division. The [universal minimum](../../../../theories/becoming/history/UNIVERSAL-ETHICAL-MINIMUM.md) remains the target; innocence is not added to its eligibility conditions.
 
 **Finding:** a primary desert argument now concerns the provision of relief itself, rather than only permission to inflict suffering. Its explicit scope nevertheless prevents treating an adverse desert ranking as the disappearance of every patient-ground consideration. The next argument can therefore address a concrete case without assuming that all retributivists either erase or preserve that consideration.
 

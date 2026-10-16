@@ -1,6 +1,6 @@
 # Reconstructing mathematical structure from a root: naturality, definability and truth
 
-6 October 2026. AI-authored mathematical development of the stronger requested thesis: **our root uniquely constitutes every mathematical truth**. This is a frontier beyond the accepted conditional foundation, not an additional completion requirement. It starts from the [existing truth-constitution theorem](MATHEMATICS-TRUTH-CONSTITUTION-MATH.md), [closure resolution](MATHEMATICS-CLOSURE-RESOLUTION.md), [structural results](MATHEMATICS-STRUCTURAL-RESULTS.md) and [deeper causal root](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md).
+6 October 2026. AI-authored mathematical development of the stronger requested thesis: **our root uniquely constitutes every mathematical truth**. This is a frontier beyond the accepted conditional foundation, not an additional completion requirement. It starts from the [existing truth-constitution theorem](MATHEMATICS-TRUTH-CONSTITUTION-MATH.md), [closure resolution](MATHEMATICS-CLOSURE-RESOLUTION.md), [structural results](MATHEMATICS-STRUCTURAL-RESULTS.md) and [deeper causal root](../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md).
 
 The earlier work already established unique satisfaction for fixed interpreted structures, least-generation and identity results, an explicit arithmetic construction, and an exact truth-factorization criterion. Repeating those results would not establish ultimate constitution. This note adds two stronger bridges and their limits:
 
@@ -205,7 +205,7 @@ This is a precise architectural restriction on one strengthened formal route. It
 
 The distinction between unique semantic construction and first-order definition is not merely a remote possibility. It appears in the existing process account.
 
-Let \(E\subseteq S\times S\) be a directed event relation, and let \(E^*\) be its finite-path reachability, including zero-length paths. The [deeper-root result](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md#4-a-small-causal-presentation-with-derived-continuation) already establishes that \(E^*\) is the unique least reflexive-transitive relation containing \(E\).
+Let \(E\subseteq S\times S\) be a directed event relation, and let \(E^*\) be its finite-path reachability, including zero-length paths. The [deeper-root result](../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md#4-a-small-causal-presentation-with-derived-continuation) already establishes that \(E^*\) is the unique least reflexive-transitive relation containing \(E\).
 
 ### Proposition B3 — Reachability is not uniformly first-order definable from the edge relation
 

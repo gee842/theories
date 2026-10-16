@@ -10,7 +10,7 @@ The common-choice result is already established. [Reason transport T13 and T15â€
 
 The useful further composition is dynamic: propagate each compatible configuration through the inquiry, including its physical and historical effects, then collect the configurations giving the same accessible observation. Evaluate continuation at those resulting configurations. Merely deleting inconsistent model names from the old set omits part of what the inquiry does.
 
-The existing [scientific-inquiry conditions](SCIENTIFIC-INQUIRY-CONDITIONS.md) already require complete accessible histories, actual class coverage and current available actions. The [identity account](../../../../theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md) preserves definedness and relevant outcomes. [OutcomeContinuation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean), especially `outcome_iff_actual_boundary`, composes a continuation from a reached boundary rather than a reset state. These are the prior interfaces to combine.
+The existing [scientific-inquiry conditions](SCIENTIFIC-INQUIRY-CONDITIONS.md) already require complete accessible histories, actual class coverage and current available actions. The [identity account](../../../../theories/becoming/history/IMMANENT-MATHEMATICAL-IDENTITY.md) preserves definedness and relevant outcomes. [OutcomeContinuation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean), especially `outcome_iff_actual_boundary`, composes a continuation from a reached boundary rather than a reset state. These are the prior interfaces to combine.
 
 ## The quantifiers must describe the same possible response
 

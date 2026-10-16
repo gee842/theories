@@ -53,6 +53,6 @@ If the logs show only an injected stale artifact alongside a supplied correct an
 A favorable paired result would support task-scoped resistance to obsolete content while retaining useful evidence. A failure on verified-current use despite an intact handoff, or a stale artifact causing loss of supported task correctness, would constrain that interface. A different but equally warranted action is not such a failure. Neither result establishes new ethical grounds, delivery of recipient welfare, indefinite succession or the optimality of this foundation. The useful advance is a discriminating empirical link with honest stage and denominator boundaries.
 
 [handoff]: ../../../history/2026-10-05-revisable-concern/settlement/evidence/report.md
-[agentdojo]: ../../../../theories/becoming/chapters/TOOL-EVIDENCE-AND-AUTHORITY.md
-[uptake]: ../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md
-[application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
+[agentdojo]: ../../../../theories/becoming/history/TOOL-EVIDENCE-AND-AUTHORITY.md
+[uptake]: ../../../../theories/becoming/history/EVALUATIVE-UPTAKE.md
+[application]: ../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md

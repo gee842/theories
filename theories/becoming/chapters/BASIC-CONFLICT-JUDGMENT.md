@@ -6,7 +6,7 @@
 
 **联合比较接续 / Joint-comparison continuation，2026-10-08。** [新增部分](#joint-number-and-gravity)接通数量与程度的有限比较理由及两层数学诊断；同向联合比较现已完成，交叉情形仍开放；14项新定理／23项审计，与 §§1–14 原有哲学候选的完成范围分列。/ The aligned joint comparison is completed; crossed cases remain open. The new LC result retains actual units, joint dependencies and fair-chance limits; it does not convert strict diagnostic improvement into decisive allocation.
 
-2026-10-08。AI 撰写，继续 Ren 要求以理论为重心的[研究](../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md)。沿[非二元方法](NONDUAL-METHOD.md)及已授权的 G0/J 公理路线，接续[后天基本条件](CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)。[研究整合、原典比较及作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-CONFLICT-INTEGRATION.md)说明新承诺和边界。无新数学定理、经验研究或独立验收。
+2026-10-08。AI 撰写，继续 Ren 要求以理论为重心的[研究](../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md)。沿[非二元方法](NONDUAL-METHOD.md)及已授权的 G0/J 公理路线，接续[后天基本条件](../history/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)。[研究整合、原典比较及作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-CONFLICT-INTEGRATION.md)说明新承诺和边界。无新数学定理、经验研究或独立验收。
 
 **本章主张：当真实基本损失在相关方面同等，救助效果可靠，权限、负担及已有承担没有造成优先差异时，保全更多实际生活，可以构成决定性的比较理由。这个有范围的同等救助原则，是对 G0/J 的新增规范展开；它不由“整体”或人数算术自动推出，也不允许用较多轻微收益抵偿一处基本剥夺。**
 

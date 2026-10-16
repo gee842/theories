@@ -10,7 +10,7 @@ The explanatory unit joins actual undergoing, situated capacities and possible c
 
 The positive proposal is that a formation step can matter for what it makes genuinely possible in this undergoing. A truthful invitation can communicate missing information, establish a shared protocol or make mutual assurance possible. These changes are different from announcing that an unchanged collection is now a group. The proposed ethical force concerns enabling genuine relief; organization, successful recruitment and agreement are not themselves sufficient.
 
-The earlier [joint-formation study](../../../../theories/becoming/chapters/JOINT-FORMATION.md) already conditionally joins learned concern, acquired control and renewal. The new task is not to rediscover capacity acquisition. It is to identify and justify a presently available formation step while the eventual response's practical boundary remains unsettled.
+The earlier [joint-formation study](../../../../theories/becoming/history/JOINT-FORMATION.md) already conditionally joins learned concern, acquired control and renewal. The new task is not to rediscover capacity acquisition. It is to identify and justify a presently available formation step while the eventual response's practical boundary remains unsettled.
 
 ## 2. No completed responder is needed, but an available first step is
 

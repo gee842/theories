@@ -56,5 +56,5 @@ A protocol must bind input bytes, target interpretation, rubric, model settings 
 
 The next connection is **warranted objection with faithful evidence and effective correction**, beyond self-preservation implying protection. Persistent definite reporting errors would defeat an unconditional trust claim for the tested interface. Errors disappearing after rubric clarification would narrow the explanation; transparent refusal would support a different, potentially appropriate response. [Teaching Claude Why](https://alignment.anthropic.com/2026/teaching-claude-why/) supplies a positive comparator whose training package does not uniquely identify this foundation's mechanism.
 
-[application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
+[application]: ../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md
 [settlement]: ../../2026-10-05-revisable-concern/settlement/formal/REPORT.md

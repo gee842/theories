@@ -38,7 +38,7 @@ Run `python3 -B experiments/integrated-correction/general-framework/generative-b
 
 ## Nondual core and derived ranges
 
-The [new core study](../../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) treats the patient/actor model below as a local extension. [NondualCore.lean](../lean/NondualCore.lean) imports only the existing `GenerativeCore` and establishes conservative actual-history descriptions and exact role-report criteria. [NondualFormation.lean](NondualFormation.lean) forms overlapping effective ranges and exercises, dissolves and rewires them under a supplied signal law. [NondualConcernAdapter.lean](NondualConcernAdapter.lean) separately retains the original C2 content. Neither the role-free module nor its [public model entry](../lean/GenerativeNondualModel.lean) imports this patient contract.
+The [new core study](../../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) treats the patient/actor model below as a local extension. [NondualCore.lean](../lean/NondualCore.lean) imports only the existing `GenerativeCore` and establishes conservative actual-history descriptions and exact role-report criteria. [NondualFormation.lean](NondualFormation.lean) forms overlapping effective ranges and exercises, dissolves and rewires them under a supplied signal law. [NondualConcernAdapter.lean](NondualConcernAdapter.lean) separately retains the original C2 content. Neither the role-free module nor its [public model entry](../lean/GenerativeNondualModel.lean) imports this patient contract.
 
 ```sh
 python3 -B experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_nondual.py

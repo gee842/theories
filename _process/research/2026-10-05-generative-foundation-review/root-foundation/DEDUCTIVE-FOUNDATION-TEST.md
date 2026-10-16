@@ -227,7 +227,7 @@ The exact next inference is now **relational constitution → warranted constrai
 
 ### Correct the quantifier before attempting another deduction
 
-The preceding section's references to “every modal restriction” and “the full positive law” can invite an excessive requirement: deriving the exact possibilities of every particular system from the foundation alone. The [canonical scope](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) explicitly retains actual laws, couplings and boundary conditions in applications. Ren's demand makes **each foundational claim** deductively necessary; it does not say that all contingent particulars must become foundational claims.
+The preceding section's references to “every modal restriction” and “the full positive law” can invite an excessive requirement: deriving the exact possibilities of every particular system from the foundation alone. The [canonical scope](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) explicitly retains actual laws, couplings and boundary conditions in applications. Ren's demand makes **each foundational claim** deductively necessary; it does not say that all contingent particulars must become foundational claims.
 
 The correction concerns our test, not a relaxation requested from Ren. A necessary common law can constrain systems with different local continuations. We must justify the content and scope of the common law. We need not derive one exhaustive continuation catalogue shared by all systems, nor determine every particular catalogue from that law. Conversely, calling an unresolved foundational commitment a local parameter does not discharge it.
 

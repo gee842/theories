@@ -4,7 +4,7 @@
 
 ## 1. 当前连接，及其对普遍目标的贡献
 
-[上一轮](LIANGZHI-DEVELOPMENT-INTEGRATION.md)已把发展中的联结形成、实际回应与再下一代运行接成有限历史。更丰富的[评价接续](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md)、[履行后的撤回](FULFILLMENT-WITHDRAWAL-INTEGRATION.md)与[自模型认证](PLURAL-CLAIMS-INTEGRATION.md)也已存在。本轮不再增加一个小控制器来重述这些能力。
+[上一轮](LIANGZHI-DEVELOPMENT-INTEGRATION.md)已把发展中的联结形成、实际回应与再下一代运行接成有限历史。更丰富的[评价接续](../../../../theories/becoming/history/EVALUATIVE-SUCCESSION.md)、[履行后的撤回](FULFILLMENT-WITHDRAWAL-INTEGRATION.md)与[自模型认证](PLURAL-CLAIMS-INTEGRATION.md)也已存在。本轮不再增加一个小控制器来重述这些能力。
 
 [普遍根据研究的最新审计](UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md#13-latest-constitutive-tests-and-the-current-research-impasse)指出，首个伦理根据仍未成立。当前生成演化分支应当提供能够判别解释的证据：所形成的回应是否取得了其声称辨明的关系，而不是只被命名为关切。它可以支持关于伦理意义与认识能力的共同解释；不能以认识前提的进展充当普遍规范结论。
 

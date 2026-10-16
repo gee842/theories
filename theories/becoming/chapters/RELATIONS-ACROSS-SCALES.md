@@ -1,6 +1,6 @@
 # 尺度之间的关系 / Relations across scales
 
-8 October 2026, Asia/Bangkok. AI-authored research following [Ren’s direction](../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). Extends the [exact systems projections](SYSTEMS-COMPLEXITY-CHAOS.md) and [controlled refinement](CONTROLLED-REFINEMENT.md). [Proof correspondence](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md) · [Integration, counterreview and sources](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md).
+8 October 2026, Asia/Bangkok. AI-authored research following [Ren’s direction](../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). Extends the [exact systems projections](../history/SYSTEMS-COMPLEXITY-CHAOS.md) and [controlled refinement](../history/CONTROLLED-REFINEMENT.md). [Proof correspondence](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md) · [Integration, counterreview and sources](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md).
 
 **一个尺度的描述是否充分，取决于它在实际变化中保留了哪些关系，以及我们据此要作出什么判断。较粗描述可以足够准确；总量预测完全准确，也仍可能遗漏具体位置的基本损失。组织关系改变时，原先充分的描述可能需要增加信息、缩短有效时域，或重新校准。**
 
@@ -35,7 +35,7 @@ What is often called influence “from above” must be unpacked through these r
 
 “向上”与“向下”描述的是同一展开中不同关系路径。整体组织能使部分具有单独时没有的作用，部分的变化也能重组整体活动；具体方向、延迟与强度由机制及证据决定。不是先把“约束”和“流”分成两种本体，再让其中一种统治另一种。哪些关系在某段时间内相对稳定、哪些变化较快，同样需要说明。
 
-The existing [living-dependency account](LIVING-DEPENDENCIES.md) supplies conditional results on inherited organization, support, competing uses and recovery. [New possibilities](NEW-POSSIBILITIES.md) explains how changed organization can enable effects unavailable to its earlier operative repertoire. These results support the present connection without constituting a derivation of every biological organ or a proof that all ecological relations are beneficial.
+The existing [living-dependency account](../history/LIVING-DEPENDENCIES.md) supplies conditional results on inherited organization, support, competing uses and recovery. [New possibilities](../history/NEW-POSSIBILITIES.md) explains how changed organization can enable effects unavailable to its earlier operative repertoire. These results support the present connection without constituting a derivation of every biological organ or a proof that all ecological relations are beneficial.
 
 ### 认知怎样参与尺度关系 / How cognition participates
 
@@ -68,7 +68,7 @@ In fruit flies, nutrient conditions and particular commensal bacteria alter food
 
 For an inventory question, an amount may suffice. For an organ-function question, arrangement and available capacity may matter. For a choice question, acquired signals, retained history and response organization may matter even at the same current amount. For consequences across lives, other participants, access and renewal can become indispensable. A description earns adequacy for its stated task; a successful total does not license erasing these distinctions elsewhere.
 
-The analyst’s map and a living participant’s operative discrimination must also be distinguished within the same unfolding. Writing a better variable in a paper does not make an organism acquire it. Actual revision requires a realized route for sensing, retention, learning or reorganization, with its support and delay. [Controlled refinement](CONTROLLED-REFINEMENT.md) already checks exact preservation of observations, memory and selected histories; [protocol composition](PROTOCOL-COMPOSITION.md) accounts conditionally for multi-event implementations. The new approximate result in §7 adds the effect of potentially different choices. None of these interface theorems alone explains the formation of the capacities it relates.
+The analyst’s map and a living participant’s operative discrimination must also be distinguished within the same unfolding. Writing a better variable in a paper does not make an organism acquire it. Actual revision requires a realized route for sensing, retention, learning or reorganization, with its support and delay. [Controlled refinement](../history/CONTROLLED-REFINEMENT.md) already checks exact preservation of observations, memory and selected histories; [protocol composition](../history/PROTOCOL-COMPOSITION.md) accounts conditionally for multi-event implementations. The new approximate result in §7 adds the effect of potentially different choices. None of these interface theorems alone explains the formation of the capacities it relates.
 
 ## 2. 有限时域内的近似保持 / Approximate preservation over a finite horizon
 

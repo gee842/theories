@@ -1,6 +1,6 @@
 # 从正面生成到新的关切：论证、反审与形式范围
 
-2026年10月8日，Asia/Bangkok。AI 撰写，依 Ren“[请继续，重心是理论](../../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md)”。当前表述为[关切的形成与新的理由](../../../../theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md)。这次推进理论连接，不增加共同厨房数据或另一个有限应用案例。
+2026年10月8日，Asia/Bangkok。AI 撰写，依 Ren“[请继续，重心是理论](../../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md)”。当前表述为[关切的形成与新的理由](../../../../theories/becoming/history/CONCERN-AND-NEW-REASONS.md)。这次推进理论连接，不增加共同厨房数据或另一个有限应用案例。
 
 **本轮推进：复用最新完成的伦理学习候选，在 G0/J 明确公理路线中给出理由内容扩展后的比较传递条件。正面共同形成与稳定方向的概念连接归于已完成成果；本轮独立新增量是其比较接口，以及认识变化、生活变化与规范承诺变化的适用区别。** 新增8项泛型 Lean 定理／9项显式声明审计，全部新依赖表为空；继承30项实践定理／46项审计另列。开放内容形成的完整机制、经验验证、必然向善及独立验收不在此次完成范围内。
 

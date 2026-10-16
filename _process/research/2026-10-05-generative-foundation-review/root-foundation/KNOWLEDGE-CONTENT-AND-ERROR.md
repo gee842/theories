@@ -28,7 +28,7 @@ These are explanatory commitments. Some are already partially realized by the re
 
 ## 3. A stronger reading of the existing acquisition history
 
-The [acquired-abstraction study](../../../../theories/becoming/chapters/ABSTRACTION-ACQUISITION.md) already contains a useful adverse case: an inverted sensor supports a correct model of its own readings while the resulting interpretation of productive access fails. A later [experimental-access investigation](../../../../theories/becoming/chapters/EXPERIMENTAL-ACCESS.md) can preserve accurate sensory prediction while investigating the conditions of its use. A matched reader clamp prevents acquired evidence from revising that use.
+The [acquired-abstraction study](../../../../theories/becoming/history/ABSTRACTION-ACQUISITION.md) already contains a useful adverse case: an inverted sensor supports a correct model of its own readings while the resulting interpretation of productive access fails. A later [experimental-access investigation](../../../../theories/becoming/history/EXPERIMENTAL-ACCESS.md) can preserve accurate sensory prediction while investigating the conditions of its use. A matched reader clamp prevents acquired evidence from revising that use.
 
 This supplies a substantive refinement: **the location of an error may be the application of an accurate representation, rather than the representation's acquired sensory content.** Calling the entire retained model “wrong” erases this difference. Calling every successful prediction knowledge of productive readiness erases it in the other direction.
 

@@ -1,6 +1,6 @@
 # Generated self: primary comparators and the remaining derivation
 
-6 October 2026. AI-authored research for the connection **generative organization → a usable self/world distinction**, serving the [ethical-minimum investigation](../../../../theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md) and the [nondual grounding question](NONDUAL-GROUNDING-QUESTION.md). Ren's claim that “I” arises within the generative account is the hypothesis investigated; the interpretation and arguments below are AI elaboration. This is selected primary-source reading and conceptual synthesis, not a new experiment, a systematic literature review or a completed consciousness theory.
+6 October 2026. AI-authored research for the connection **generative organization → a usable self/world distinction**, serving the [ethical-minimum investigation](../../../../theories/becoming/history/UNIVERSAL-ETHICAL-MINIMUM.md) and the [nondual grounding question](NONDUAL-GROUNDING-QUESTION.md). Ren's claim that “I” arises within the generative account is the hypothesis investigated; the interpretation and arguments below are AI elaboration. This is selected primary-source reading and conceptual synthesis, not a new experiment, a systematic literature review or a completed consciousness theory.
 
 ## 1. What the research can presently support
 
@@ -8,7 +8,7 @@ The productive direction is to explain the organization of a distinction before 
 
 “Generative model” also has two meanings here. Ren's governing project seeks an account of how organization, experience and evaluation arise within reality. A neural generative model is a much narrower candidate mechanism: organized neural activity predicts causes of sensory input. The latter can be an object explained within the former. Equating them would substitute one supplied neural architecture for the universal foundation being sought.
 
-The named connection is therefore divided into organization, practical partition, experienced ownership and reflective identity. This prevents a finding about one transition from prematurely closing the others. The governing [derivation map](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work) remains the framework into which a tested mechanism must fit.
+The named connection is therefore divided into organization, practical partition, experienced ownership and reflective identity. This prevents a finding about one transition from prematurely closing the others. The governing [derivation map](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work) remains the framework into which a tested mechanism must fit.
 
 ## 2. Four distinct explanatory targets
 

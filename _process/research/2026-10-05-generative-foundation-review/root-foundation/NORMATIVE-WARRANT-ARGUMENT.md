@@ -1,6 +1,6 @@
 # Normative warrant and the attempt to insulate a verdict
 
-7 October 2026. AI-authored philosophical study for Ren's requested parallel deep dive. Status: **a defended conditional argument and a proposed discriminator**, not a formal theorem, empirical result, independent human review or completed universal foundation. This study follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and the [value/dynamics correction](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#describing-dynamics-and-answering-the-value-question).
+7 October 2026. AI-authored philosophical study for Ren's requested parallel deep dive. Status: **a defended conditional argument and a proposed discriminator**, not a formal theorem, empirical result, independent human review or completed universal foundation. This study follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and the [value/dynamics correction](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#describing-dynamics-and-answering-the-value-question).
 
 **Named connection:** a formed practice of claiming normative warrant → the relation between its verdict and what could correct it → the practical requirements, if any, that survive changes to that practice. The central result concerns the first transition. Standing, positive duties and universal authority remain further obligations.
 
@@ -48,7 +48,7 @@ P1–P4 express a broadly applicable constraint on warrant claims. P5 identifies
 
 ## 4. What this adds to the repository
 
-[ETHICAL-FOUNDATION](../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions) already establishes D3 and D6 under explicit standing, answerability and implementation commitments. Usable challenge, material supports and warranted irreversible decisions are inherited results. The present addition isolates a **prior defect in attempted justification** that does not require first assuming a universal right of challenge, then identifies exactly where positive practical protection re-enters through further premises. It is conceptual clarification, not another correction theorem.
+[ETHICAL-FOUNDATION](../../../../theories/becoming/history/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions) already establishes D3 and D6 under explicit standing, answerability and implementation commitments. Usable challenge, material supports and warranted irreversible decisions are inherited results. The present addition isolates a **prior defect in attempted justification** that does not require first assuming a universal right of challenge, then identifies exactly where positive practical protection re-enters through further premises. It is conceptual clarification, not another correction theorem.
 
 The [constitutive-answer argument](CONSTITUTIVE-ANSWER-ARGUMENT.md) already distinguishes grounding a contributory reason from demanding a second authorization after that force has been established. This study preserves that result: it asks for the first warrant of answerability, not an infinite chain authorizing an already warranted reason.
 

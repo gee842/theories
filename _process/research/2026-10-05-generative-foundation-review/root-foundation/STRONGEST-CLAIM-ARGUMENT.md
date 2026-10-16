@@ -109,7 +109,7 @@ The two-stage argument is useful because a rival can accept a costless baseline 
 
 ## 7. Self-insulation tests access rather than repairing the patient
 
-The accepted [evaluative-grounding construction](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md) already separates an acquired operative connection from the independently justified repair ground. A matched later update can suppress help while preserving relevant facts and sufficient resources. Those are causal and role-bound results; they do not prove the stranger baseline.
+The accepted [evaluative-grounding construction](../../../../theories/becoming/history/EVALUATIVE-GROUNDING.md) already separates an acquired operative connection from the independently justified repair ground. A matched later update can suppress help while preserving relevant facts and sufficient resources. Those are causal and role-bound results; they do not prove the stranger baseline.
 
 They motivate a new philosophical comparison. Hold p, e, the effective means and other independently agreed grounds fixed. Let a lose or deliberately disable the association through which p's condition influences its selector. This may change the feasibility or cost of uptake and may itself require another action. It does not, merely by changing a's response, relieve p or defeat the patient-good identification.
 

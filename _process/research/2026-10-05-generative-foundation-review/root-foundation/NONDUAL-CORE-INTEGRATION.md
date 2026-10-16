@@ -6,7 +6,7 @@
 
 核心本来只有状态、事件和允许转移，本轮明确其解释顺序：不预装一个我面对一个患者或客体，再要求两个存在域接通。位置、关系、组织、记录及承受的不同形式，应在同一生成解释中形成。实际差异仍然保留；没有增加宇宙单一主体或整体代言人。
 
-[主文 §10](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions)、[THEORY](../../../../theories/becoming/chapters/THEORY.md#1-the-foundation)及 [F17](../../../../theories/becoming/chapters/FORMAL-CORE.md#f17-nondual-descriptions-and-formed-overlapping-ranges)已接入这个架构。THEORY 式(1)原称 common mathematical interface，现明确为已识别组织中心时的观察／行动延伸；其公式和以前的条件结果保持不变。患者／行动者的实用区分也仍可使用，但不再有理由把它们默认为根接口必须先行供应的切分。
+[主文 §10](../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions)、[THEORY](../../../../theories/becoming/history/THEORY.md#1-the-foundation)及 [F17](../../../../theories/becoming/chapters/FORMAL-CORE.md#f17-nondual-descriptions-and-formed-overlapping-ranges)已接入这个架构。THEORY 式(1)原称 common mathematical interface，现明确为已识别组织中心时的观察／行动延伸；其公式和以前的条件结果保持不变。患者／行动者的实用区分也仍可使用，但不再有理由把它们默认为根接口必须先行供应的切分。
 
 形式贡献包括一致描述的遗忘／恢复、保持实际终点的有限延续等价、对既有 `OutcomeResidual` 的直接保真，以及角色／后果剖面的相对精确性。通用模块只导入 `GenerativeCore`；伦理兼容模块的依赖方向朝向核心，核心不反向导入患者或 C2。
 

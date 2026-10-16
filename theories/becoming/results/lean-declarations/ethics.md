@@ -453,7 +453,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>DevelopmentalReconstruction.lean — 44 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean) · [理论 / Theory](../../chapters/EVOLUTIONARY-ORGANIZATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean) · [理论 / Theory](../../history/EVOLUTIONARY-ORGANIZATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean`
 
@@ -1815,7 +1815,7 @@ Imports: `Std`
 <details>
 <summary>SustainedJudgment.lean — 39 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean) · [理论 / Theory](../../chapters/SUSTAINED-LIVING-JUDGMENT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean) · [理论 / Theory](../../history/SUSTAINED-LIVING-JUDGMENT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean`
 
@@ -3056,7 +3056,7 @@ Imports: `ConcernExtension`, `RelationalOrganization`, `RelationalGrounding`
 <details>
 <summary>ConcernExtension.lean — 9 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean) · [理论 / Theory](../../chapters/CONCERN-AND-NEW-REASONS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-EXTENSION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean) · [理论 / Theory](../../history/CONCERN-AND-NEW-REASONS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-EXTENSION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean`
 
@@ -4754,7 +4754,7 @@ Imports: `Std`
 <details>
 <summary>GoalFormationRevision.lean — 85 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean) · [理论 / Theory](../../chapters/GOAL-FORMATION-AND-REVISION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean) · [理论 / Theory](../../history/GOAL-FORMATION-AND-REVISION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean`
 

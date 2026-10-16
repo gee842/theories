@@ -150,7 +150,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `material-prediction-composition` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [MATERIAL-PREDICTION-COMPOSITION.md](../chapters/MATERIAL-PREDICTION-COMPOSITION.md)
+**来源 / Source:** [MATERIAL-PREDICTION-COMPOSITION.md](../history/MATERIAL-PREDICTION-COMPOSITION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -181,7 +181,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `material-selector-composition` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [MATERIAL-SELECTOR-COMPOSITION.md](../chapters/MATERIAL-SELECTOR-COMPOSITION.md)
+**来源 / Source:** [MATERIAL-SELECTOR-COMPOSITION.md](../history/MATERIAL-SELECTOR-COMPOSITION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -212,7 +212,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `material-updater-composition` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [MATERIAL-UPDATER-COMPOSITION.md](../chapters/MATERIAL-UPDATER-COMPOSITION.md)
+**来源 / Source:** [MATERIAL-UPDATER-COMPOSITION.md](../history/MATERIAL-UPDATER-COMPOSITION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -305,7 +305,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `mathematical-truth-and-the-root` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [MATHEMATICAL-TRUTH-AND-THE-ROOT.md](../chapters/MATHEMATICAL-TRUTH-AND-THE-ROOT.md)
+**来源 / Source:** [MATHEMATICAL-TRUTH-AND-THE-ROOT.md](../history/MATHEMATICAL-TRUTH-AND-THE-ROOT.md)
 
 **状态 / Status:** 相对性结果已有；普遍目标开放 / Relative result; universal target open
 
@@ -336,7 +336,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `mathematics-and-generativity` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [MATHEMATICS-AND-GENERATIVITY.md](../chapters/MATHEMATICS-AND-GENERATIVITY.md)
+**来源 / Source:** [MATHEMATICS-AND-GENERATIVITY.md](../history/MATHEMATICS-AND-GENERATIVITY.md)
 
 **状态 / Status:** 已检查结果与开放问题并列 / Checked results and open questions
 
@@ -367,7 +367,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `measured-feedback-correspondence` · **类别 / Category:** 经验识别 / empirical identification
 
-**来源 / Source:** [MEASURED-FEEDBACK-CORRESPONDENCE.md](../chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md)
+**来源 / Source:** [MEASURED-FEEDBACK-CORRESPONDENCE.md](../history/MEASURED-FEEDBACK-CORRESPONDENCE.md)
 
 **状态 / Status:** 有范围的经验与形式结果；独立复核通过 / Scoped empirical and formal result; independently reviewed
 
@@ -398,7 +398,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `memory-correction-and-succession` · **类别 / Category:** 经验识别 / empirical identification
 
-**来源 / Source:** [MEMORY-CORRECTION-AND-SUCCESSION.md](../chapters/MEMORY-CORRECTION-AND-SUCCESSION.md)
+**来源 / Source:** [MEMORY-CORRECTION-AND-SUCCESSION.md](../history/MEMORY-CORRECTION-AND-SUCCESSION.md)
 
 **状态 / Status:** 有限范围的证据 / Bounded evidence
 
@@ -427,7 +427,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `meta-revision` · **类别 / Category:** 数学边界 / mathematical boundary
 
-**来源 / Source:** [META-REVISION.md](../chapters/META-REVISION.md)
+**来源 / Source:** [META-REVISION.md](../history/META-REVISION.md)
 
 **状态 / Status:** 历史验证结果；保留原范围 / Historically checked; original scope retained
 
@@ -456,7 +456,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `method-revision` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [METHOD-REVISION.md](../chapters/METHOD-REVISION.md)
+**来源 / Source:** [METHOD-REVISION.md](../history/METHOD-REVISION.md)
 
 **状态 / Status:** 历史验证结果；保留原范围 / Historically checked; original scope retained
 
@@ -485,7 +485,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `model-family-revision` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [MODEL-FAMILY-REVISION.md](../chapters/MODEL-FAMILY-REVISION.md)
+**来源 / Source:** [MODEL-FAMILY-REVISION.md](../history/MODEL-FAMILY-REVISION.md)
 
 **状态 / Status:** 历史验证结果；保留原范围 / Historically checked; original scope retained
 
@@ -514,7 +514,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `new-possibilities` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [NEW-POSSIBILITIES.md](../chapters/NEW-POSSIBILITIES.md)
+**来源 / Source:** [NEW-POSSIBILITIES.md](../history/NEW-POSSIBILITIES.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -605,7 +605,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `paid-preimport-evidence` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [PAID-PREIMPORT-EVIDENCE.md](../chapters/PAID-PREIMPORT-EVIDENCE.md)
+**来源 / Source:** [PAID-PREIMPORT-EVIDENCE.md](../history/PAID-PREIMPORT-EVIDENCE.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -758,7 +758,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `prediction-action` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [PREDICTION-ACTION.md](../chapters/PREDICTION-ACTION.md)
+**来源 / Source:** [PREDICTION-ACTION.md](../history/PREDICTION-ACTION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -789,7 +789,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `prediction-protocol` · **类别 / Category:** 形式接口 / formal interface
 
-**来源 / Source:** [PREDICTION-PROTOCOL.md](../chapters/PREDICTION-PROTOCOL.md)
+**来源 / Source:** [PREDICTION-PROTOCOL.md](../history/PREDICTION-PROTOCOL.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -820,7 +820,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `protocol-completion` · **类别 / Category:** 形式接口 / formal interface
 
-**来源 / Source:** [PROTOCOL-COMPLETION.md](../chapters/PROTOCOL-COMPLETION.md)
+**来源 / Source:** [PROTOCOL-COMPLETION.md](../history/PROTOCOL-COMPLETION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -851,7 +851,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `protocol-composition` · **类别 / Category:** 形式接口 / formal interface
 
-**来源 / Source:** [PROTOCOL-COMPOSITION.md](../chapters/PROTOCOL-COMPOSITION.md)
+**来源 / Source:** [PROTOCOL-COMPOSITION.md](../history/PROTOCOL-COMPOSITION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -882,7 +882,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `proved-connections` · **类别 / Category:** 形式索引 / formal index
 
-**来源 / Source:** [PROVED-CONNECTIONS.md](../chapters/PROVED-CONNECTIONS.md)
+**来源 / Source:** [PROVED-CONNECTIONS.md](../history/PROVED-CONNECTIONS.md)
 
 **状态 / Status:** 有针对性的依赖审计与一项新形式连接 / Targeted dependency audit and one new formal connection
 
@@ -913,7 +913,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `reason-protection` · **类别 / Category:** 机制与策略 / mechanism strategy
 
-**来源 / Source:** [REASON-PROTECTION.md](../chapters/REASON-PROTECTION.md)
+**来源 / Source:** [REASON-PROTECTION.md](../history/REASON-PROTECTION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -944,7 +944,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `recipient-correction` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [RECIPIENT-CORRECTION.md](../chapters/RECIPIENT-CORRECTION.md)
+**来源 / Source:** [RECIPIENT-CORRECTION.md](../history/RECIPIENT-CORRECTION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -975,7 +975,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `recipient-cue-grounding` · **类别 / Category:** 经验识别 / empirical identification
 
-**来源 / Source:** [RECIPIENT-CUE-GROUNDING.md](../chapters/RECIPIENT-CUE-GROUNDING.md)
+**来源 / Source:** [RECIPIENT-CUE-GROUNDING.md](../history/RECIPIENT-CUE-GROUNDING.md)
 
 **状态 / Status:** 有限范围的证据 / Bounded evidence
 
@@ -1004,7 +1004,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `recipient-harm-and-action` · **类别 / Category:** 经验识别 / empirical identification
 
-**来源 / Source:** [RECIPIENT-HARM-AND-ACTION.md](../chapters/RECIPIENT-HARM-AND-ACTION.md)
+**来源 / Source:** [RECIPIENT-HARM-AND-ACTION.md](../history/RECIPIENT-HARM-AND-ACTION.md)
 
 **状态 / Status:** 有限范围的证据 / Bounded evidence
 
@@ -1033,7 +1033,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `recipient-reason-action` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [RECIPIENT-REASON-ACTION.md](../chapters/RECIPIENT-REASON-ACTION.md)
+**来源 / Source:** [RECIPIENT-REASON-ACTION.md](../history/RECIPIENT-REASON-ACTION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1064,7 +1064,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `recipient-reason-revision` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [RECIPIENT-REASON-REVISION.md](../chapters/RECIPIENT-REASON-REVISION.md)
+**来源 / Source:** [RECIPIENT-REASON-REVISION.md](../history/RECIPIENT-REASON-REVISION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1095,7 +1095,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `recipient-renewal` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [RECIPIENT-RENEWAL.md](../chapters/RECIPIENT-RENEWAL.md)
+**来源 / Source:** [RECIPIENT-RENEWAL.md](../history/RECIPIENT-RENEWAL.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1126,7 +1126,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `recipient-transmission` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [RECIPIENT-TRANSMISSION.md](../chapters/RECIPIENT-TRANSMISSION.md)
+**来源 / Source:** [RECIPIENT-TRANSMISSION.md](../history/RECIPIENT-TRANSMISSION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1157,7 +1157,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `recorded-reasons` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [RECORDED-REASONS.md](../chapters/RECORDED-REASONS.md)
+**来源 / Source:** [RECORDED-REASONS.md](../history/RECORDED-REASONS.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1219,7 +1219,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `revisable-concern-settlement` · **类别 / Category:** 机制与策略 / mechanism strategy
 
-**来源 / Source:** [REVISABLE-CONCERN-SETTLEMENT.md](../chapters/REVISABLE-CONCERN-SETTLEMENT.md)
+**来源 / Source:** [REVISABLE-CONCERN-SETTLEMENT.md](../history/REVISABLE-CONCERN-SETTLEMENT.md)
 
 **状态 / Status:** 条件性结果 / Conditional result
 
@@ -1248,7 +1248,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `reward-learning-and-recipient-choice` · **类别 / Category:** 经验识别 / empirical identification
 
-**来源 / Source:** [REWARD-LEARNING-AND-RECIPIENT-CHOICE.md](../chapters/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md)
+**来源 / Source:** [REWARD-LEARNING-AND-RECIPIENT-CHOICE.md](../history/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md)
 
 **状态 / Status:** 有限范围的证据 / Bounded evidence
 
@@ -1277,7 +1277,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `route-diagnostics` · **类别 / Category:** 形式接口 / formal interface
 
-**来源 / Source:** [ROUTE-DIAGNOSTICS.md](../chapters/ROUTE-DIAGNOSTICS.md)
+**来源 / Source:** [ROUTE-DIAGNOSTICS.md](../history/ROUTE-DIAGNOSTICS.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1337,7 +1337,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `selector-revision` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [SELECTOR-REVISION.md](../chapters/SELECTOR-REVISION.md)
+**来源 / Source:** [SELECTOR-REVISION.md](../history/SELECTOR-REVISION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1368,7 +1368,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `semantic-action-composition` · **类别 / Category:** 形式接口 / formal interface
 
-**来源 / Source:** [SEMANTIC-ACTION-COMPOSITION.md](../chapters/SEMANTIC-ACTION-COMPOSITION.md)
+**来源 / Source:** [SEMANTIC-ACTION-COMPOSITION.md](../history/SEMANTIC-ACTION-COMPOSITION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1399,7 +1399,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `semantic-calibration` · **类别 / Category:** 形式接口 / formal interface
 
-**来源 / Source:** [SEMANTIC-CALIBRATION.md](../chapters/SEMANTIC-CALIBRATION.md)
+**来源 / Source:** [SEMANTIC-CALIBRATION.md](../history/SEMANTIC-CALIBRATION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1430,7 +1430,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `shengsheng` · **类别 / Category:** 综合 / synthesis
 
-**来源 / Source:** [SHENGSHENG.md](../chapters/SHENGSHENG.md)
+**来源 / Source:** [SHENGSHENG.md](../history/SHENGSHENG.md)
 
 **状态 / Status:** 相连的机制与对应说明完成 / Connected mechanistic articulation complete
 
@@ -1461,7 +1461,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `source-map` · **类别 / Category:** 导航 / navigation
 
-**来源 / Source:** [SOURCE-MAP.md](../chapters/SOURCE-MAP.md)
+**来源 / Source:** [SOURCE-MAP.md](../history/SOURCE-MAP.md)
 
 **状态 / Status:** 参考与导航 / Reference and navigation
 
@@ -1490,7 +1490,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `start-here` · **类别 / Category:** 导航 / navigation
 
-**来源 / Source:** [START-HERE.md](../chapters/START-HERE.md)
+**来源 / Source:** [START-HERE.md](../history/START-HERE.md)
 
 **状态 / Status:** 参考与导航 / Reference and navigation
 
@@ -1519,7 +1519,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `stochastic-prediction-composition` · **类别 / Category:** 形式接口 / formal interface
 
-**来源 / Source:** [STOCHASTIC-PREDICTION-COMPOSITION.md](../chapters/STOCHASTIC-PREDICTION-COMPOSITION.md)
+**来源 / Source:** [STOCHASTIC-PREDICTION-COMPOSITION.md](../history/STOCHASTIC-PREDICTION-COMPOSITION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1550,7 +1550,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `strongest-foundation-claim` · **类别 / Category:** 研究纲领 / research programme
 
-**来源 / Source:** [STRONGEST-FOUNDATION-CLAIM.md](../chapters/STRONGEST-FOUNDATION-CLAIM.md)
+**来源 / Source:** [STRONGEST-FOUNDATION-CLAIM.md](../history/STRONGEST-FOUNDATION-CLAIM.md)
 
 **状态 / Status:** 开放研究目标 / Open research target
 
@@ -1579,7 +1579,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `successor-learning` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [SUCCESSOR-LEARNING.md](../chapters/SUCCESSOR-LEARNING.md)
+**来源 / Source:** [SUCCESSOR-LEARNING.md](../history/SUCCESSOR-LEARNING.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1610,7 +1610,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `sustained-living-judgment` · **类别 / Category:** 伦理机制 / ethical mechanism
 
-**来源 / Source:** [SUSTAINED-LIVING-JUDGMENT.md](../chapters/SUSTAINED-LIVING-JUDGMENT.md)
+**来源 / Source:** [SUSTAINED-LIVING-JUDGMENT.md](../history/SUSTAINED-LIVING-JUDGMENT.md)
 
 **状态 / Status:** 有条件的形式结果已检查；独立复核通过 / Checked conditional result; independently reviewed
 
@@ -1641,7 +1641,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `synthesis-record` · **类别 / Category:** 导航 / navigation
 
-**来源 / Source:** [SYNTHESIS-RECORD.md](../chapters/SYNTHESIS-RECORD.md)
+**来源 / Source:** [SYNTHESIS-RECORD.md](../history/SYNTHESIS-RECORD.md)
 
 **状态 / Status:** 参考与导航 / Reference and navigation
 
@@ -1670,7 +1670,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `system-individuation` · **类别 / Category:** 基础 / foundation
 
-**来源 / Source:** [SYSTEM-INDIVIDUATION.md](../chapters/SYSTEM-INDIVIDUATION.md)
+**来源 / Source:** [SYSTEM-INDIVIDUATION.md](../history/SYSTEM-INDIVIDUATION.md)
 
 **状态 / Status:** 相连解释候选完成；更强根基义务开放 / Connected explanatory candidate complete; stronger foundational obligation open
 
@@ -1701,7 +1701,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `system-warrant` · **类别 / Category:** 基础 / foundation
 
-**来源 / Source:** [SYSTEM-WARRANT.md](../chapters/SYSTEM-WARRANT.md)
+**来源 / Source:** [SYSTEM-WARRANT.md](../history/SYSTEM-WARRANT.md)
 
 **状态 / Status:** 局部依赖已消除；更强根基范围开放 / Local dependency discharged; stronger foundational scope open
 
@@ -1732,7 +1732,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `systems-complexity-chaos` · **类别 / Category:** 数学 / mathematics
 
-**来源 / Source:** [SYSTEMS-COMPLEXITY-CHAOS.md](../chapters/SYSTEMS-COMPLEXITY-CHAOS.md)
+**来源 / Source:** [SYSTEMS-COMPLEXITY-CHAOS.md](../history/SYSTEMS-COMPLEXITY-CHAOS.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -1825,7 +1825,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `theory` · **类别 / Category:** 综合 / synthesis
 
-**来源 / Source:** [THEORY.md](../chapters/THEORY.md)
+**来源 / Source:** [THEORY.md](../history/THEORY.md)
 
 **状态 / Status:** 条件性基础 / Conditional foundation
 
@@ -1887,7 +1887,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `tool-evidence-and-authority` · **类别 / Category:** 经验识别 / empirical identification
 
-**来源 / Source:** [TOOL-EVIDENCE-AND-AUTHORITY.md](../chapters/TOOL-EVIDENCE-AND-AUTHORITY.md)
+**来源 / Source:** [TOOL-EVIDENCE-AND-AUTHORITY.md](../history/TOOL-EVIDENCE-AND-AUTHORITY.md)
 
 **状态 / Status:** 有限范围的证据 / Bounded evidence
 
@@ -1916,7 +1916,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `unified-ethical-grounding` · **类别 / Category:** 规范基础 / normative foundation
 
-**来源 / Source:** [UNIFIED-ETHICAL-GROUNDING.md](../chapters/UNIFIED-ETHICAL-GROUNDING.md)
+**来源 / Source:** [UNIFIED-ETHICAL-GROUNDING.md](../history/UNIFIED-ETHICAL-GROUNDING.md)
 
 **状态 / Status:** G0 明确公理路线：实践判断完成；零公理接续开放 / Explicit G0 route: practical judgment complete; renewed zero-axiom inquiry open
 
@@ -1947,7 +1947,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `universal-ethical-minimum` · **类别 / Category:** 伦理论证 / ethical argument
 
-**来源 / Source:** [UNIVERSAL-ETHICAL-MINIMUM.md](../chapters/UNIVERSAL-ETHICAL-MINIMUM.md)
+**来源 / Source:** [UNIVERSAL-ETHICAL-MINIMUM.md](../history/UNIVERSAL-ETHICAL-MINIMUM.md)
 
 **状态 / Status:** 正面论证已有；结论仍受检验 / Defended argument; inquiry open
 
@@ -1976,7 +1976,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `updater-formation` · **类别 / Category:** 机制 / mechanism
 
-**来源 / Source:** [UPDATER-FORMATION.md](../chapters/UPDATER-FORMATION.md)
+**来源 / Source:** [UPDATER-FORMATION.md](../history/UPDATER-FORMATION.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -2007,7 +2007,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `valuation-development` · **类别 / Category:** 机制数学 / mechanism mathematics
 
-**来源 / Source:** [VALUATION-DEVELOPMENT.md](../chapters/VALUATION-DEVELOPMENT.md)
+**来源 / Source:** [VALUATION-DEVELOPMENT.md](../history/VALUATION-DEVELOPMENT.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 
@@ -2038,7 +2038,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **编号 / ID:** `valuation-identification-bounds` · **类别 / Category:** 识别数学 / identification mathematics
 
-**来源 / Source:** [VALUATION-IDENTIFICATION-BOUNDS.md](../chapters/VALUATION-IDENTIFICATION-BOUNDS.md)
+**来源 / Source:** [VALUATION-IDENTIFICATION-BOUNDS.md](../history/VALUATION-IDENTIFICATION-BOUNDS.md)
 
 **状态 / Status:** 有条件的形式结果已检查 / Checked conditional formal result
 

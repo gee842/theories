@@ -142,7 +142,7 @@ The following are **not** established, and no Lean result here bears on them:
 - **Why concern should extend to others at all.** The invariance theorem says
   how others' consequences can enter a selection rule. It does not say that
   they ought to. That they matter is a substantive ethical claim of the
-  [unified ethical account](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md).
+  [unified ethical account](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md).
   It is not proved here.
 - **Whether the activity itself is worth continuing.** A role for inquiry is
   relative to continuations that are taken as given. A continuation whose

@@ -4,7 +4,7 @@
 
 6 October 2026. This is a prospective alternative from the actual acquired-H3
 checkpoint, before access diagnosis and model-family revision deplete it. It
-does not resume their spent resources. The [canonical account](../../../../../../../../../../theories/becoming/chapters/METHOD-REVISION.md)
+does not resume their spent resources. The [canonical account](../../../../../../../../../../theories/becoming/history/METHOD-REVISION.md)
 explains the conditional theory connection and retained limitations.
 
 Run from this directory:

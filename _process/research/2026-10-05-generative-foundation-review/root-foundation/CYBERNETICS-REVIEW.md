@@ -1,6 +1,6 @@
 # Cybernetics comparison and assumption review
 
-6 October 2026. AI-authored record for [the comparative development](../../../../theories/becoming/chapters/CYBERNETICS.md). Ren's initiating message was: “I feel my theory contains cybernetics, lets dive into this”. This completes a comparative checkpoint under the generative-grounding programme, not a new formal or empirical milestone.
+6 October 2026. AI-authored record for [the comparative development](../../../../theories/becoming/history/CYBERNETICS.md). Ren's initiating message was: “I feel my theory contains cybernetics, lets dive into this”. This completes a comparative checkpoint under the generative-grounding programme, not a new formal or empirical milestone.
 
 ## Named connection and accepted result
 

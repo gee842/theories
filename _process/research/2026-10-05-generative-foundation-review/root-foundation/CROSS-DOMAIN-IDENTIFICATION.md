@@ -1,6 +1,6 @@
 # Identifying the common conditions across different domains
 
-6 October 2026. AI-authored identification audit for requirement 5 of the [unified-foundation completion conditions](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation). **Status: bounded evidence reconciliation and prospective discriminators; no new observations, participant study, replication or raw-data reanalysis.** This audit connects the [common premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) to three materially different settings. They instantiate different portions of the proposed chain, not three replications of its complete development.
+6 October 2026. AI-authored identification audit for requirement 5 of the [unified-foundation completion conditions](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation). **Status: bounded evidence reconciliation and prospective discriminators; no new observations, participant study, replication or raw-data reanalysis.** This audit connects the [common premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md) to three materially different settings. They instantiate different portions of the proposed chain, not three replications of its complete development.
 
 ## 1. The identification contract
 
@@ -26,7 +26,7 @@ An observation map need not reproduce every microscopic detail. It must preserve
 
 ## 3. What would discriminate the missing interfaces
 
-**Subsequent memory-correction study, 6 October 2026:** [the source and mathematical audit](../../../../theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md) retains the distinction between repaired storage and later execution. A subsequent [fixed pilot](../../../../experiments/integrated-correction/selective-handoff/README.md) adds 24 actual fresh-context responses to authentic archived corrections, varying confirming, defeating and unrelated-setting evidence. Both instruction arms pass all outputs; no added reminder advantage is observed. This establishes selective assessment under supplied scope/reliability premises, not autonomous evidence acquisition, persistent repair or downstream external action. Packet presence is held constant, so its separate causal contribution is unmeasured.
+**Subsequent memory-correction study, 6 October 2026:** [the source and mathematical audit](../../../../theories/becoming/history/MEMORY-CORRECTION-AND-SUCCESSION.md) retains the distinction between repaired storage and later execution. A subsequent [fixed pilot](../../../../experiments/integrated-correction/selective-handoff/README.md) adds 24 actual fresh-context responses to authentic archived corrections, varying confirming, defeating and unrelated-setting evidence. Both instruction arms pass all outputs; no added reminder advantage is observed. This establishes selective assessment under supplied scope/reliability premises, not autonomous evidence acquisition, persistent repair or downstream external action. Packet presence is held constant, so its separate causal contribution is unmeasured.
 
 The following are proposed contrasts, not completed experiments or retrospectively registered predictions.
 

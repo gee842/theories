@@ -50,4 +50,4 @@ Run `python compare.py` with NumPy and SciPy available. Running it overwrites it
 
 Actual biomolecular regulation has empirical precedents. Ceroni and colleagues report an engineered burden-responsive system in E. coli that preserved native expression capacity and improved batch protein yield; this supports the existence of useful regulation in their setup, not this reaction network or a universal trend. The [primary abstract and metadata](https://pubmed.ncbi.nlm.nih.gov/29578536/) and [author repository](https://hdl.handle.net/10044/1/57105) were inspected; the full methods and data have not been reanalyzed here. A separate [stochastic feedback study](https://arxiv.org/abs/1410.6064) motivates treating regulation at the reaction level, but its abstract is not a validation of our assumptions. These are prior-art and evidence-path anchors, not additional replications of this experiment.
 
-Return to the [earlier joint assay](../README.md) or the [completion plan](../../../theories/becoming/chapters/COMPLETION-PLAN.md).
+Return to the [earlier joint assay](../README.md) or the [completion plan](../../../theories/becoming/history/COMPLETION-PLAN.md).

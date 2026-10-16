@@ -1,6 +1,6 @@
 # Retained organization and the resumption of protein synthesis
 
-8 October 2026, Asia/Bangkok. AI-authored primary-source assessment for the current [living-dependencies inquiry](../../../../theories/becoming/chapters/LIVING-DEPENDENCIES.md), following the [recovery assessment](LIVING-RECOVERY-EVIDENCE.md). This note investigates one discriminating mechanism; it neither defines all life by this mechanism nor announces a new mathematical proof.
+8 October 2026, Asia/Bangkok. AI-authored primary-source assessment for the current [living-dependencies inquiry](../../../../theories/becoming/history/LIVING-DEPENDENCIES.md), following the [recovery assessment](LIVING-RECOVERY-EVIDENCE.md). This note investigates one discriminating mechanism; it neither defines all life by this mechanism nor announces a new mathematical proof.
 
 **Advance:** material provision and retained functional organization need separate, connected representation. The selected experiments distinguish a reactivatable configuration from an impaired preparation under comparable supplied reaction conditions. They therefore constrain the proposed transition from retained organization to resumed activity more directly than restoration of a physiological amount alone.
 

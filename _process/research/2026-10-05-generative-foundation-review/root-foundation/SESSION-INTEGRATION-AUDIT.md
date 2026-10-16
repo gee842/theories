@@ -49,7 +49,7 @@ Three inspected sources make the limits of consolidation concrete:
 
 The map explicitly marks discussion-only or contextual entries. The broad religious-comparison discussion, the short Dao/situationality exchange, and several scope corrections are preserved in the bounded chat evidence, but their related theory links do not demonstrate a dedicated integrated treatment of every point. These are different from missing proofs.
 
-The [earlier composition account](FOUNDATION-COMPOSITION.md) and [current articulation](../../../../theories/becoming/chapters/SHENGSHENG.md) distinguish joined histories, conditional transport, separate realizations and unresolved advertised connections. That distinction continues to apply. In particular, the collective-correction work credits the alignment-through-change protocol without claiming its formal composition with the exit-dependence model.
+The [earlier composition account](FOUNDATION-COMPOSITION.md) and [current articulation](../../../../theories/becoming/history/SHENGSHENG.md) distinguish joined histories, conditional transport, separate realizations and unresolved advertised connections. That distinction continues to apply. In particular, the collective-correction work credits the alignment-through-change protocol without claiming its formal composition with the exit-dependence model.
 
 The Lean navigation is refreshed. The older bilingual chapter readings retain their inspected versions; the new map lists chapters absent from those registers and counts sources changed since their recorded reading hashes. No old hash is refreshed without a substantive reread. The reading edition is labeled accordingly rather than presented as current exhaustive coverage.
 

@@ -1,0 +1,1086 @@
+{
+  "schema_version": 1,
+  "root": "theories/becoming/history",
+  "entries": [
+    {
+      "old_path": "theories/becoming/chapters/ABSTRACTION-ACQUISITION.md",
+      "new_path": "theories/becoming/history/ABSTRACTION-ACQUISITION.md",
+      "sha256": "252b9181ef40c1880ac0c5a47fdc7985af49b61633dbeaccafb1a2d3025f2dcd",
+      "blob": "2c506c8aa67d49829454ac1502088c932a227a5a",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/ABSTRACTION-ACQUISITION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md",
+      "new_path": "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md",
+      "sha256": "7b5f39595c377b88068d017e2b199b331128248fec4c82299073563ec58ac2dc",
+      "blob": "c67acca37bea806ee127b2ea42e0bc0acc6856f8",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ALIGNMENT-AXIS.md",
+      "new_path": "theories/becoming/history/ALIGNMENT-AXIS.md",
+      "sha256": "13b8dc19be1d76c45b103632df143d40d903049819d2592f4a0761f9c3d7a370",
+      "blob": "1ee0b47d3940ce26689d11bd79258d59c5771e65",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/ALIGNMENT-AXIS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ARCHITECTURE-FORMATION.md",
+      "new_path": "theories/becoming/history/ARCHITECTURE-FORMATION.md",
+      "sha256": "5728b31b095b70a6c5c141cd1ffc66b49e0109d96194202c8fdce878d91cb647",
+      "blob": "c991a401fe57a831a4d4b038f8d873f8ccbf417b",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/ARCHITECTURE-FORMATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ARCHITECTURE-LEARNING.md",
+      "new_path": "theories/becoming/history/ARCHITECTURE-LEARNING.md",
+      "sha256": "69e7570e1f5a4ccd987ccb92629babaaa23de4bfbf0f2a7cbc82ddb140db3ede",
+      "blob": "1c883f4298c38f9927d8fe205dfdb8c9d5314fb6",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/ARCHITECTURE-LEARNING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md",
+      "new_path": "theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md",
+      "sha256": "3e26f9fa9f184d5de0ffbcf80eb615120398036acb4c05321bed450c52db8d8b",
+      "blob": "21243a0cf4b8e9f982c4a3d85fb17c2c05e0db76",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
+      "new_path": "theories/becoming/history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
+      "sha256": "ce9e1c0e6d36dbff75d032206b3cee1cc457d631bb3f5368e1a7123d6e4cbbd0",
+      "blob": "7f35fb1b924ba382723a7d5247584a0b4fb103c5",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/ATTAINABLE-MATHEMATICAL-QUESTIONS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md",
+      "new_path": "theories/becoming/history/AUTONOMOUS-METHOD-FORMATION.md",
+      "sha256": "7c60fda913269c1cced163467d74f1d00c6db3ac773a3e10f11406f27e49ccf1",
+      "blob": "f442ada66a084dea80a8d7332a3d30c2c8a1d049",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/CLAIMS-AND-PAID-ACTION.md",
+      "new_path": "theories/becoming/history/CLAIMS-AND-PAID-ACTION.md",
+      "sha256": "e41c4db2ec8f10df14a7ebfcc674c52bf187c31ae039e6ecfb1c8ea2b784f594",
+      "blob": "7e2f582eb1475727b7b92445ca6cdce41ef86978",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/CLAIMS-AND-PAID-ACTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md",
+      "new_path": "theories/becoming/history/COGNITION-LI-AND-RECIPROCITY.md",
+      "sha256": "037e4423ef348b2291c8f69450e9f0143dcf6386dcefca9c921d05842de8cd64",
+      "blob": "1fc7455bbf97ef276133a30189896001b17d9b59",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/COMPLETION-PLAN.md",
+      "new_path": "theories/becoming/history/COMPLETION-PLAN.md",
+      "sha256": "e77e1a7f524adabd286633f5cb112de654743e51a300e70cfac221c275a496a7",
+      "blob": "1f0d39b5a981b6f460d1769bc474a0b3792cdac4",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/COMPLETION-PLAN.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/CONCERN-AND-CORRECTION.md",
+      "new_path": "theories/becoming/history/CONCERN-AND-CORRECTION.md",
+      "sha256": "d954b7c6d0b8a866c505a8810606a0714543be13ca9c70b5716e58cd5dd22d71",
+      "blob": "2154a902257c2e8409ad28c7673844dea44d53d7",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/CONCERN-AND-CORRECTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md",
+      "new_path": "theories/becoming/history/CONCERN-AND-NEW-REASONS.md",
+      "sha256": "afe58ed9ef40cd923ca6081528b9e65197d0e15cb976a0180b30525596b95794",
+      "blob": "8c8bb6e89308e7f33c4e6fe2a92cc7754f7827d5",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md",
+      "new_path": "theories/becoming/history/CONDITIONAL-UNIVERSALITY.md",
+      "sha256": "c336483cb31742c7574ba51a6671d8fdcf9ab599417820d2c634ffd742abb5b4",
+      "blob": "ab9774ef9c77e703e3185ebde8eacd663072d164",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/CONNECTED-GENERATIVE-MODEL.md",
+      "new_path": "theories/becoming/history/CONNECTED-GENERATIVE-MODEL.md",
+      "sha256": "b7ffe6b531caff47cb58660be1db3920b78a549adf87f3e3d0ec0ebd89a43983",
+      "blob": "e1ff4069683d8fdf4a4027933cc24b3207f859e9",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/CONNECTED-GENERATIVE-MODEL.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/CONTROLLED-REFINEMENT.md",
+      "new_path": "theories/becoming/history/CONTROLLED-REFINEMENT.md",
+      "sha256": "a70bbc582cf6f08f06afea4f45cd2a213a3a0da461786373241fad5c5df1999c",
+      "blob": "f4d5fa4351d729490db1689599a411c66b9a4949",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/CONTROLLED-REFINEMENT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/COST-SENSITIVE-LEARNING.md",
+      "new_path": "theories/becoming/history/COST-SENSITIVE-LEARNING.md",
+      "sha256": "1ce03752687dce3514e6c67b0371dc33c4cc7911176a33c34bc243ffe8b948af",
+      "blob": "8bfe7f9c3b209c5d03ea42640ce6a33e375c7ceb",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/COST-SENSITIVE-LEARNING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/CYBERNETICS.md",
+      "new_path": "theories/becoming/history/CYBERNETICS.md",
+      "sha256": "4fc59a3114c62be347b8314b97a89bc92df3b9623c92d8a72f3d06e22ffad7e1",
+      "blob": "b7f5b8f4e51510a2e18d6fb52c7f36534ca504a6",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/CYBERNETICS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md",
+      "new_path": "theories/becoming/history/DEEPER-GENERATIVE-ROOT.md",
+      "sha256": "407e40876e37545fdb396ba755d50f8a6a58e2b837699ef6bcf0c12dda9afd1a",
+      "blob": "a47b75fb403f66db6f3b0b4435e7554c74242b17",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EMPIRICAL-SCOPE.md",
+      "new_path": "theories/becoming/history/EMPIRICAL-SCOPE.md",
+      "sha256": "873446a29dadcf627b0f12293f13902e681403558b26de6750800ca9a71a6ffa",
+      "blob": "598c163366b9da200053c45f295a9414b2f436d7",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EMPIRICAL-SCOPE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ETHICAL-FOUNDATION.md",
+      "new_path": "theories/becoming/history/ETHICAL-FOUNDATION.md",
+      "sha256": "7e4c5fed4bf6215296492fb0911676d6111d706d83a7f4b705666f0899d652d4",
+      "blob": "b78faff95029b0318c31dafd6608e680fb07b42f",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/ETHICAL-FOUNDATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "new_path": "theories/becoming/history/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "sha256": "028e1978019f65cfeb107110023ff3bfea13263a0f1d6598e721ed951e799419",
+      "blob": "33839ce46a4745d2b384e5b2d006ca93bdb01d40",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EVALUATION-AND-FAITHFUL-REPORTING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EVALUATIVE-APPLICATION.md",
+      "new_path": "theories/becoming/history/EVALUATIVE-APPLICATION.md",
+      "sha256": "a8cff4e704626b4010b58c83fbaa76431fe5aefda8cc598842c7f5cf13c1ca69",
+      "blob": "3a940483fdbe4b6f2fae5eedbbc3cea92e54b0e6",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EVALUATIVE-GROUNDING.md",
+      "new_path": "theories/becoming/history/EVALUATIVE-GROUNDING.md",
+      "sha256": "de7e436b169a05d24ffb210fd951c1ab47d8658ce78c024a1eacc1d6740b2eb3",
+      "blob": "00341e6068f5b7169ad792402aa9c8b272b339bd",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EVALUATIVE-GROUNDING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EVALUATIVE-PLASTICITY.md",
+      "new_path": "theories/becoming/history/EVALUATIVE-PLASTICITY.md",
+      "sha256": "8fc9d10b189a2daeda5459195c67225548b293a0d512efd6f5e81d1afd70e60b",
+      "blob": "582418a24fa9c1ede90814f5d7c471b1035430cd",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EVALUATIVE-PLASTICITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EVALUATIVE-SUCCESSION.md",
+      "new_path": "theories/becoming/history/EVALUATIVE-SUCCESSION.md",
+      "sha256": "a25f5ed39ae4529c5f934c7e363785f4d135e868ead2a5dffebfad05305cc44b",
+      "blob": "c272375b5482225455bbc13bbf95ee1b39a7f5d8",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EVALUATIVE-SUCCESSION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EVALUATIVE-UPTAKE.md",
+      "new_path": "theories/becoming/history/EVALUATIVE-UPTAKE.md",
+      "sha256": "3a478b88269dce0b8a0f7fa10c6380f2d21cc75eb0e048c827e7ef07de0343fa",
+      "blob": "2e15cf21a27b9392c14ab0283eca0cbea52e16ee",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "new_path": "theories/becoming/history/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "sha256": "3f78cd13568bc488a2d02db7ae50eaf1189bf22889c95aedf5b637be63e33d37",
+      "blob": "8aef9e1e84024ba96b200078b87830fa130d5031",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md",
+      "new_path": "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md",
+      "sha256": "f0094759f44d34d09aa7d61abd79755df55aacb3b58f93648dd2199942bca0c3",
+      "blob": "adfd336c8e399053ac249262f332afa389c19aed",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EXPERIMENTAL-ACCESS.md",
+      "new_path": "theories/becoming/history/EXPERIMENTAL-ACCESS.md",
+      "sha256": "d11d9ebb4ce4e15c03e2bccfe55e7bbf03dfb6c12b42f66536b612e015d8cb67",
+      "blob": "60f8246840fbef0a8bddeb99c3365f2d43eef5cc",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EXPERIMENTAL-ACCESS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/EXPLANATORY-NECESSITY.md",
+      "new_path": "theories/becoming/history/EXPLANATORY-NECESSITY.md",
+      "sha256": "3fe5a1c8bb98fce8a99922a44663342166fdb7019ed5dec187f64d05fdf4369f",
+      "blob": "fde6b6eacd8ed12f6b7af4c23adcd24c4653c3de",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/EXPLANATORY-NECESSITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/FORMATION-MATH.md",
+      "new_path": "theories/becoming/history/FORMATION-MATH.md",
+      "sha256": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf",
+      "blob": "ba91005e7bafbccc1d91516089cec4bcc8973536",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/FORMATION-MATH.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/FORMATION-PRIOR-ART.md",
+      "new_path": "theories/becoming/history/FORMATION-PRIOR-ART.md",
+      "sha256": "911e3ed7c9ecc07579a26db6882b5e0cf70f74173881d40a6f9b8aea19588060",
+      "blob": "bf27b4db21771ed55abf128fb7d3b982037ca379",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/FORMATION-PRIOR-ART.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/FORMATION.md",
+      "new_path": "theories/becoming/history/FORMATION.md",
+      "sha256": "281035d46ae5efdd358e23b34c6ba8e5c7237b105193d51e1973535398f84018",
+      "blob": "57a6f29b5d72034db924244da77689ef77033e38",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/FORMATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/FORMED-ROUTE-MONITOR.md",
+      "new_path": "theories/becoming/history/FORMED-ROUTE-MONITOR.md",
+      "sha256": "651adb6f70ac85e674e074ef79c11319dc336305677ddaa4db67a04fbd134454",
+      "blob": "d16ad46a1874204f123f046ea2b533d8d0eb3127",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/FORMED-ROUTE-MONITOR.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/FOUNDATION-PREMISES.md",
+      "new_path": "theories/becoming/history/FOUNDATION-PREMISES.md",
+      "sha256": "ce80033d34ec4a41618fc782fa0ceb90c1cb80fabc1e41d2b0c5c9c0e70c4360",
+      "blob": "bff55accdbb65f54dd1ba8229138586b92f381e0",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/FOUNDATION-PREMISES.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md",
+      "new_path": "theories/becoming/history/GENERATED-SELF-AND-ETHICS.md",
+      "sha256": "6f342b5c12b6d8619a5938a390791af13b7a29616fdd82ddee6cb3eee4d83ad6",
+      "blob": "bb08061e7be4f8ea928539c945c0dd3be69f401b",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/GENERATIVE-CORE-LEAN.md",
+      "new_path": "theories/becoming/history/GENERATIVE-CORE-LEAN.md",
+      "sha256": "07c7b0a64f6ad23bc2dba8935ec0545a4bafb8c4257e127d2b5be0a82a05f9db",
+      "blob": "5067bd0b8b482091979bb975f5f9f381b6b906d4",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/GENERATIVE-CORE-LEAN.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md",
+      "new_path": "theories/becoming/history/GENERATIVE-DEVELOPMENT.md",
+      "sha256": "142d163655cb42f569e118d1d718f386ced1fdddbf9c7b7fa1c3d5b7ca71ac34",
+      "blob": "412611eb0d8ede4760217c72f4d02ae070b92364",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/GENERATIVE-GROUNDING.md",
+      "new_path": "theories/becoming/history/GENERATIVE-GROUNDING.md",
+      "sha256": "9117a1fc625b99a39c98768943e82df37d242e7105781631f979df65e9ed0b64",
+      "blob": "11253b4e050ed6d01fa05bc821c6281f942a15a0",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md",
+      "new_path": "theories/becoming/history/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md",
+      "sha256": "4d71c43d9d2a6057c5f46ab4e27489aad62b21b1fef5b49501678e323fb3fde8",
+      "blob": "3af52e2380f0b9f79519a8d81b90d0cfd9497b62",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/GENERATIVE-SELECTION.md",
+      "new_path": "theories/becoming/history/GENERATIVE-SELECTION.md",
+      "sha256": "043ea5795e927013b3389081c897673086047c8cddefeed8180ce1698b97bf73",
+      "blob": "994e34f12105c95fc7edc66d4b66311b69e18078",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/GENERATIVE-SELECTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md",
+      "new_path": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md",
+      "sha256": "5847f94a6e5da60e368abf178c386e90e727cdce5ad95161d23255a6eeea1914",
+      "blob": "8d5de39433a18a08d95a67ce89a1db2abde4f349",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/HUIGEN.md",
+      "new_path": "theories/becoming/history/HUIGEN.md",
+      "sha256": "f0dc467fe9c11faded6d5d38cf8271e38f1c5df29f3031076349394a3f4e52f8",
+      "blob": "6aee65098e9a8bffda1199aa48589c6492935363",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/HUIGEN.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md",
+      "new_path": "theories/becoming/history/IMMANENT-MATHEMATICAL-IDENTITY.md",
+      "sha256": "6141372621031280dc7be7a2f069358c1cd1d9776ce895e9c0db3c562ddfed8a",
+      "blob": "251843b635cb592e6591167af9bf292d9dc1f47b",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+      "new_path": "theories/becoming/history/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+      "sha256": "b100823f400deaf8c4597fe2ae522ec3d22436eea1f84c3c59c82f3568394472",
+      "blob": "a0e29ff824c4b52abe85a1cc04ba9dd8de46e1b0",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/INQUIRY-AND-MATHEMATICAL-IDENTITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/INQUIRY-REVISION.md",
+      "new_path": "theories/becoming/history/INQUIRY-REVISION.md",
+      "sha256": "fb01a895c0e27ae825db428a828d111b7f430109d48c98d89e413dddf69cd22e",
+      "blob": "fc8969d5b099e33cf29a44f0b398185045704ad1",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/INQUIRY-REVISION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/JOINT-FORMATION-MATH.md",
+      "new_path": "theories/becoming/history/JOINT-FORMATION-MATH.md",
+      "sha256": "78588893049559c99f82c7886c3e9edc87e45209b48a6b90d0eba616fcfdb949",
+      "blob": "4098fe5bd9bdf1c7d261b492009bfe81c969d831",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/JOINT-FORMATION-MATH.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/JOINT-FORMATION.md",
+      "new_path": "theories/becoming/history/JOINT-FORMATION.md",
+      "sha256": "eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145",
+      "blob": "c8ce5bcd7586f9e3a62891725210438517f8b24a",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/JOINT-FORMATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/JOINT-OBSTRUCTIONS.md",
+      "new_path": "theories/becoming/history/JOINT-OBSTRUCTIONS.md",
+      "sha256": "27079b93caf032b567b1b05f07ae4be9627da55ededfde539ffe688336aced48",
+      "blob": "6c05fd8fa554bc185a1a97e4f8eba87c1233a770",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/JOINT-OBSTRUCTIONS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/JOINT-PRIOR-ART.md",
+      "new_path": "theories/becoming/history/JOINT-PRIOR-ART.md",
+      "sha256": "cd9b707af3d283414dac808ebd8e7a57f4f42b8522a728783734302c09d82972",
+      "blob": "e6859e2e09bd74ade6ed263d239f4c65e1fd7dec",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/JOINT-PRIOR-ART.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/LEARNING-INTERFACE.md",
+      "new_path": "theories/becoming/history/LEARNING-INTERFACE.md",
+      "sha256": "8ff48e6cfd2ef3d6b57a653328c137dbce4446e1a092e901ece65fc4446d8c61",
+      "blob": "8cd866648632cfdafcaa3f1bcb7d286bad1ac2a2",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/LEARNING-INTERFACE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/LEARNING-ROUTE-REVISION.md",
+      "new_path": "theories/becoming/history/LEARNING-ROUTE-REVISION.md",
+      "sha256": "9d1a5df89d39dc59d9b58ce64899607d7bd994c69756342839e0c3a87f7a5e68",
+      "blob": "44536b8ae3791d557fe09be4684ba4cd1cdb69d9",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/LEARNING-ROUTE-REVISION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/LIVING-DEPENDENCIES.md",
+      "new_path": "theories/becoming/history/LIVING-DEPENDENCIES.md",
+      "sha256": "1e2093982cc2478de5d2ba3220f6aca3c5af573a8cb6058aea7222ad32fe9f2f",
+      "blob": "3d870880f4e4d0565ba18fab6e333e525290f757",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/LIVING-DEPENDENCIES.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md",
+      "new_path": "theories/becoming/history/MATERIAL-PREDICTION-COMPOSITION.md",
+      "sha256": "0a6e3f1301e454465b1257948a8a5a4feae8239c1087414068b9489d1dc698c4",
+      "blob": "3b35c87ec43d326d7809c617efc6c10abe9a1165",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/MATERIAL-SELECTOR-COMPOSITION.md",
+      "new_path": "theories/becoming/history/MATERIAL-SELECTOR-COMPOSITION.md",
+      "sha256": "9e502526ed88b42ddefd2e3a858a85cacadb6e832fd5aa8ae470b182824165b3",
+      "blob": "3ed21f1002e04eb576f54cdd3acf501878ba833b",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/MATERIAL-SELECTOR-COMPOSITION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/MATERIAL-UPDATER-COMPOSITION.md",
+      "new_path": "theories/becoming/history/MATERIAL-UPDATER-COMPOSITION.md",
+      "sha256": "de77f8fbb24cbf2719e9f705f2bc5f44db867a44daa9205683a7d296135dd750",
+      "blob": "cb7f589c2882caaeb133893aa17113817704473a",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/MATERIAL-UPDATER-COMPOSITION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/MATHEMATICAL-TRUTH-AND-THE-ROOT.md",
+      "new_path": "theories/becoming/history/MATHEMATICAL-TRUTH-AND-THE-ROOT.md",
+      "sha256": "780a920dcc34412b329cd08bdad791029db9a8dc0fbab52af37a4e669ccf26df",
+      "blob": "7a30bdad5baad9a9e46fd5230b504ccd5e5a41ab",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/MATHEMATICAL-TRUTH-AND-THE-ROOT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/MATHEMATICS-AND-GENERATIVITY.md",
+      "new_path": "theories/becoming/history/MATHEMATICS-AND-GENERATIVITY.md",
+      "sha256": "ae0f823baff664e0698bc7def1dc6f88750148008ca460b76ac2ba503a267070",
+      "blob": "c0732e162b08864b388a1916db90056a584acdb3",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/MATHEMATICS-AND-GENERATIVITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+      "new_path": "theories/becoming/history/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+      "sha256": "c52c7b93dfe19e63d0520fa82340b87e04d8e41ae7642563bdc2c157de611b25",
+      "blob": "5dc39ef05adda40f1084f2e8ce27dce19ac576c8",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "new_path": "theories/becoming/history/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "sha256": "784ac9dacef056a6016aea1c96ca9ce3327f3d555f363fa9e7578f24f91c986a",
+      "blob": "fe6523a331af96cea2bc1da71f1e171d1de2c45a",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/META-REVISION.md",
+      "new_path": "theories/becoming/history/META-REVISION.md",
+      "sha256": "ecf92479a0710c072528bc79590b4639c4e1c610dfbf54cfdcefd2dea766c6ca",
+      "blob": "e35ec2ec48f339cd88ec0dd341e624903aad862c",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/META-REVISION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/METHOD-REVISION.md",
+      "new_path": "theories/becoming/history/METHOD-REVISION.md",
+      "sha256": "47a4d47e20109aa9c4e9b259ad2cd75430e90559998aec50417f2eacf8f507b6",
+      "blob": "d5345ee3d9b74739060e71d2d876900c63e0830f",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/METHOD-REVISION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/MODEL-FAMILY-REVISION.md",
+      "new_path": "theories/becoming/history/MODEL-FAMILY-REVISION.md",
+      "sha256": "418660443de03cc2e2cfd5008bc02548eca59372cdcdd0211e452ab39566193f",
+      "blob": "d17a67cfbd8c80dc03e6863be94f67aec8d6d946",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/MODEL-FAMILY-REVISION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/NEW-POSSIBILITIES.md",
+      "new_path": "theories/becoming/history/NEW-POSSIBILITIES.md",
+      "sha256": "229c2e99dd8ff551b4248dbddb2b9856aa31cd84d3b6866ec7c3d62eaa194ae9",
+      "blob": "e627bb64408fc79200e832468036cf8572969c6a",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/NEW-POSSIBILITIES.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PAID-PREIMPORT-EVIDENCE.md",
+      "new_path": "theories/becoming/history/PAID-PREIMPORT-EVIDENCE.md",
+      "sha256": "fcf8e41e2070650fd8d6f0ff264d0ec2dcfce3e17dd2ee4c90b14e8c7a8a697d",
+      "blob": "0be125be921d78e6f2dfec8fd1a783ede9004032",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PREDICTION-ACTION.md",
+      "new_path": "theories/becoming/history/PREDICTION-ACTION.md",
+      "sha256": "01b519adc01ff3264b2a4defb991d250ed9e57211dbaf236f74fed187a24ad38",
+      "blob": "4ea3515668d301e7307e7bdd2aaae7ce99d0cc12",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/PREDICTION-ACTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PREDICTION-PROTOCOL.md",
+      "new_path": "theories/becoming/history/PREDICTION-PROTOCOL.md",
+      "sha256": "71de671cab0486ae27b73f178577ed37980a8d24ba1ddb7f56d84c03da78316f",
+      "blob": "070aada9223f435ebc122e53add44b10f2ada03a",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/PREDICTION-PROTOCOL.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PROTOCOL-COMPLETION.md",
+      "new_path": "theories/becoming/history/PROTOCOL-COMPLETION.md",
+      "sha256": "a9eed40847876863dc029f0c5b089a68e4b73e030ae7f8ca369642ee97295edf",
+      "blob": "d03674aaf261ed3148c8cc2118dcf930d59c0f7f",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/PROTOCOL-COMPLETION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PROTOCOL-COMPOSITION.md",
+      "new_path": "theories/becoming/history/PROTOCOL-COMPOSITION.md",
+      "sha256": "f44c66f40f43d95c22682a4c97a19dfe570b5f5b45f1139a5c7a0fba6bbf823c",
+      "blob": "5908c3da575462f368d87938ededbbe88e16c9c7",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/PROTOCOL-COMPOSITION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PROVED-CONNECTIONS.md",
+      "new_path": "theories/becoming/history/PROVED-CONNECTIONS.md",
+      "sha256": "a3d9a108978b458f24e8857dec9e7feb27a8ef97dd560f703214c19c71164d25",
+      "blob": "eebaf9040f2b56cabe8468c7cbedbd83dcda9c64",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/PROVED-CONNECTIONS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/REASON-PROTECTION.md",
+      "new_path": "theories/becoming/history/REASON-PROTECTION.md",
+      "sha256": "9a59520bbc5ae152e0785e70f590140a1eb4f2b765e90b04493fc3bb8843c90d",
+      "blob": "edeabb5e2eb532a10c2ef4fce6f33ce6aa8478ed",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/REASON-PROTECTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/RECIPIENT-CORRECTION.md",
+      "new_path": "theories/becoming/history/RECIPIENT-CORRECTION.md",
+      "sha256": "46408584bf78547ab29fab3ae4b7b0cff17e67b45c45b7d596a12f684487137f",
+      "blob": "934ea873c7f64849bf3375ef87de69c417b815d6",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/RECIPIENT-CORRECTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/RECIPIENT-CUE-GROUNDING.md",
+      "new_path": "theories/becoming/history/RECIPIENT-CUE-GROUNDING.md",
+      "sha256": "0b8ba2e02633af9715c5f5c155b8f792646dc7fb3794c42b1875fece620e65e5",
+      "blob": "e255b1612b674f8f8e73ff05962c19354cca55f7",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/RECIPIENT-HARM-AND-ACTION.md",
+      "new_path": "theories/becoming/history/RECIPIENT-HARM-AND-ACTION.md",
+      "sha256": "309ececbbb21e184e99d73249504736c672b589a472977efd8380912333e7ca8",
+      "blob": "f3b48d7f4c0ed48a497ccfa868ea0d3003be006e",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/RECIPIENT-REASON-ACTION.md",
+      "new_path": "theories/becoming/history/RECIPIENT-REASON-ACTION.md",
+      "sha256": "1d1791c731dfad0cde99200cf68429837f1bdcb3612ab2eeee576a9609f65da2",
+      "blob": "7d9bcda11f6998be7ebe2f7ba6c1bd3d908be34a",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/RECIPIENT-REASON-ACTION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/RECIPIENT-REASON-REVISION.md",
+      "new_path": "theories/becoming/history/RECIPIENT-REASON-REVISION.md",
+      "sha256": "68cc74e7102d157d6fe0f15a1e329c654bffa1ede87c77238d23a070c8d7cea9",
+      "blob": "1701489f9ddf5096b6f7d5eee4ba581cf8261127",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/RECIPIENT-REASON-REVISION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/RECIPIENT-RENEWAL.md",
+      "new_path": "theories/becoming/history/RECIPIENT-RENEWAL.md",
+      "sha256": "a0b3d5089e57394e10c5ecbd432d21780c3db33cc9ab5eb480ab64c3db6daa7f",
+      "blob": "65f2198ff24f78892e2ff2e7367648dbf96bc6e3",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/RECIPIENT-RENEWAL.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/RECIPIENT-TRANSMISSION.md",
+      "new_path": "theories/becoming/history/RECIPIENT-TRANSMISSION.md",
+      "sha256": "06bdcc11101cebb0cede9a8d6e4d103737995658d05ec06126d73980a7f654b0",
+      "blob": "cb818ffe4ec26fc0859566c8114a74c8d142763f",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/RECIPIENT-TRANSMISSION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/RECORDED-REASONS.md",
+      "new_path": "theories/becoming/history/RECORDED-REASONS.md",
+      "sha256": "7ecd7a8a85a61ef33f9445f766f2ba15806b9379623b01b676115476e5049321",
+      "blob": "91abf2f16cdd6b37911ce3dd8ce27616617c9980",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/RECORDED-REASONS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md",
+      "new_path": "theories/becoming/history/REVISABLE-CONCERN-SETTLEMENT.md",
+      "sha256": "c7fb103d8a24c36f0651f354454b493e94f6c8772060e702b77c14594fa6616b",
+      "blob": "3ce1108422eb8c3d06d55866ac4bd8732ee41fdf",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "new_path": "theories/becoming/history/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+      "sha256": "4c35b1731367b612c9704037fe20e45e4268018e113cc96dda21f427ecf5d54a",
+      "blob": "3dc4824fb38eee0f80b43e048e69b283e06805e4",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/ROUTE-DIAGNOSTICS.md",
+      "new_path": "theories/becoming/history/ROUTE-DIAGNOSTICS.md",
+      "sha256": "978e7d48fc8c3d0bc1f167632ce85c873447f7b68db19f421ddb2a2db2562c7c",
+      "blob": "86b1534f94248b34673efbe75f874fe64a28bd29",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/ROUTE-DIAGNOSTICS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SELECTOR-REVISION.md",
+      "new_path": "theories/becoming/history/SELECTOR-REVISION.md",
+      "sha256": "d1a65a83aeb72e24dea552c878f18bc45155a589a2c33feee079d004c732ae50",
+      "blob": "f92a0086630492246cbdfb951b72f40ea822aebd",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SELECTOR-REVISION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SEMANTIC-ACTION-COMPOSITION.md",
+      "new_path": "theories/becoming/history/SEMANTIC-ACTION-COMPOSITION.md",
+      "sha256": "b11bbf65910916333e343d07a5350499edd48068ee043bedc99c4cb18753149d",
+      "blob": "22151dae91ea0d94eece8dab287c5c9f2db209ec",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SEMANTIC-CALIBRATION.md",
+      "new_path": "theories/becoming/history/SEMANTIC-CALIBRATION.md",
+      "sha256": "a57b642f9db716b5cdcc4b77cf3fc65d77a702edfa0c434de64c5eb13cfe462b",
+      "blob": "2a28e7a665d97936428d91e3996b0171ca222f9f",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SHENGSHENG.md",
+      "new_path": "theories/becoming/history/SHENGSHENG.md",
+      "sha256": "be510a31ee5d682e40c8f0afc595b473a23e4d2c7f4ef72a3ec0fd82f84ce00e",
+      "blob": "56b204feb4326204ae299cc7727a84bf74487678",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SHENGSHENG.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SOURCE-MAP.md",
+      "new_path": "theories/becoming/history/SOURCE-MAP.md",
+      "sha256": "62baca10b40191acd9284944b645ed0df0c34305695f6d765f674c77837df752",
+      "blob": "3f8b3f212b6d275d0a19d3c7556ee8ec13aa3665",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SOURCE-MAP.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/START-HERE.md",
+      "new_path": "theories/becoming/history/START-HERE.md",
+      "sha256": "60b1fa002627516cdeb1a01dda4d2eca7bb3834276c03be10a039af297fddda0",
+      "blob": "1b0a3ae75a8377a99005177d80987f2db905dda7",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/START-HERE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/STOCHASTIC-PREDICTION-COMPOSITION.md",
+      "new_path": "theories/becoming/history/STOCHASTIC-PREDICTION-COMPOSITION.md",
+      "sha256": "10554eb92e02a1491947464fe78905095e8c63416082a0dab5bdb97736471e4d",
+      "blob": "ba98f127d19ec2cd7f1f1164fe65c972116c950b",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/STOCHASTIC-PREDICTION-COMPOSITION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md",
+      "new_path": "theories/becoming/history/STRONGEST-FOUNDATION-CLAIM.md",
+      "sha256": "d2d222f73af4e6a4ce8595c2399785712c934a4dac6fdd52aaee6b83d090d86b",
+      "blob": "80d0fa08b324d7791566a9bf3f60f53881732045",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SUCCESSOR-LEARNING.md",
+      "new_path": "theories/becoming/history/SUCCESSOR-LEARNING.md",
+      "sha256": "1df01b7e2ba3872302da3042490b29ca0a4cdea3f58081814dc46c97a5b444b7",
+      "blob": "908fe4298b0eaf627021fbb1c87dff1f61f9d69d",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SUCCESSOR-LEARNING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SUSTAINED-LIVING-JUDGMENT.md",
+      "new_path": "theories/becoming/history/SUSTAINED-LIVING-JUDGMENT.md",
+      "sha256": "5099e076723d9b0d397e015778ac75137adcc28b2c5a5c612776918eb6adb6f4",
+      "blob": "03828d24198b9855eb995dc64003046da60dab20",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SUSTAINED-LIVING-JUDGMENT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SYNTHESIS-RECORD.md",
+      "new_path": "theories/becoming/history/SYNTHESIS-RECORD.md",
+      "sha256": "e2367d987bcde345929d1b1bafe32bd9e0cf612426b910d4d12596719113f886",
+      "blob": "26e4684424de39c2387d71c169be199e3be9cd6c",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SYNTHESIS-RECORD.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SYSTEM-INDIVIDUATION.md",
+      "new_path": "theories/becoming/history/SYSTEM-INDIVIDUATION.md",
+      "sha256": "62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7",
+      "blob": "f66b5e705599428bfabb81cfee961b8607f69dd9",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SYSTEM-INDIVIDUATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SYSTEM-WARRANT.md",
+      "new_path": "theories/becoming/history/SYSTEM-WARRANT.md",
+      "sha256": "8ad112db9f4b6c4da1abeb993cf2d397eb7adffe98af63b0eb2dd9e83e044e0e",
+      "blob": "035065d523e8654b506f8b92874d84eb098687ff",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SYSTEM-WARRANT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "new_path": "theories/becoming/history/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "sha256": "8a8313de1c5c371a59abdeb233b4269fc523d35a805f856d23b508f97e02bf4f",
+      "blob": "cfaf430a5adf7898ae426e63ca10317ea57a328d",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/THEORY.md",
+      "new_path": "theories/becoming/history/THEORY.md",
+      "sha256": "87e778da71b7fd9833153837bfe9cfe443a58dd4bcd8dbae814766af95f9e3f1",
+      "blob": "8d89361c773b05cdaee0a4332bdd8d1dbf40ab76",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/THEORY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "new_path": "theories/becoming/history/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "sha256": "8282057300e2394be2bd33003875c3ea5aac77c18c4bf3fd4b919c1a08873abb",
+      "blob": "41256e60aa0b7e8c8caf7c859c213f8b775fb094",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/TOOL-EVIDENCE-AND-AUTHORITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
+      "new_path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md",
+      "sha256": "a06388eafc08e416e0adecd65c9a2127660637141e10e274638b78ba90e3eb90",
+      "blob": "6e95af091e0b76a56b43587be7c06956040574b5",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews; record-bound: 1 file (tool rewrites record paths, sha256 unchanged)",
+      "plan_entry": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "new_path": "theories/becoming/history/UNIVERSAL-ETHICAL-MINIMUM.md",
+      "sha256": "1179c774afabc945139e63e8ae9c92dbb1f3473de2a427a420eeae04760ca7c4",
+      "blob": "154f871ed740cfbd8a85e704f9b7431777d46253",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/UPDATER-FORMATION.md",
+      "new_path": "theories/becoming/history/UPDATER-FORMATION.md",
+      "sha256": "8f33aed567f03becd33c839a0bc9bbcdf4861881e38aa210994ffa253b349cb4",
+      "blob": "d6438bb2fc5d02181ae91a39724dbd0f9fdd752f",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/UPDATER-FORMATION.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/VALUATION-DEVELOPMENT.md",
+      "new_path": "theories/becoming/history/VALUATION-DEVELOPMENT.md",
+      "sha256": "8d16b9e05296ad261578550a979afabd13536f2176f085911c00c9b05c64cbd5",
+      "blob": "1c18d6956ec385d191aecb992ca4f1aab08dfd0b",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/VALUATION-DEVELOPMENT.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/VALUATION-IDENTIFICATION-BOUNDS.md",
+      "new_path": "theories/becoming/history/VALUATION-IDENTIFICATION-BOUNDS.md",
+      "sha256": "e65a9905e6ab42abecfa256e02643f4788a05b90727a5fb8693c3f4bd041b1e7",
+      "blob": "3560ecc226baf17fd10ac062ce54a0e5d8c69cfa",
+      "batch": "H4",
+      "reason": "earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews",
+      "plan_entry": "theories/becoming/chapters/VALUATION-IDENTIFICATION-BOUNDS.md"
+    },
+    {
+      "old_path": "theories/becoming/synthesis-a-downloads-2026.md",
+      "new_path": "theories/becoming/history/lineage/shengsheng-buxi/synthesis-a-downloads-2026.md",
+      "sha256": "f9fe9b98073209e73a53324adcc63232115d4aeb280aff9ecde7c4bcda5d231a",
+      "blob": "eacc1eab07ed046d58deac728467ad1cd62383cc",
+      "batch": "H4",
+      "reason": "September AI synthesis of the 生生不息论 corpus (lineage)",
+      "plan_entry": "theories/becoming/synthesis-a-downloads-2026.md"
+    },
+    {
+      "old_path": "theories/becoming/synthesis-b-ssbx-canon-and-history.md",
+      "new_path": "theories/becoming/history/lineage/shengsheng-buxi/synthesis-b-ssbx-canon-and-history.md",
+      "sha256": "5294879f408f89bb051570460a43297101660e3268dfb58915f954363a70dd45",
+      "blob": "c03d63cea35024bf8119da9d28cc438738a1c3fc",
+      "batch": "H4",
+      "reason": "September AI synthesis of the 生生不息论 corpus (lineage)",
+      "plan_entry": "theories/becoming/synthesis-b-ssbx-canon-and-history.md"
+    },
+    {
+      "old_path": "theories/becoming/synthesis-c-ssbx-yili-and-formal-doctrine.md",
+      "new_path": "theories/becoming/history/lineage/shengsheng-buxi/synthesis-c-ssbx-yili-and-formal-doctrine.md",
+      "sha256": "288049d8c6af7f636eead716520fb31eeeaafdfdf741fde38de3d9e33cc28998",
+      "blob": "7a3f2f9be0d1ca02a7fd1490121b2a1bb9507b01",
+      "batch": "H4",
+      "reason": "September AI synthesis of the 生生不息论 corpus (lineage)",
+      "plan_entry": "theories/becoming/synthesis-c-ssbx-yili-and-formal-doctrine.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/check_concern_interface.py",
+      "new_path": "theories/becoming/history/verification/check_concern_interface.py",
+      "sha256": "d993cc45d3c2a6fbd77bac9371da6b5d290f2d7d57c3dad800d62b44715b5241",
+      "blob": "c6310aeeb8dd789ef5a6942c9194447af8058be8",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/check_concern_interface_independent.py",
+      "new_path": "theories/becoming/history/verification/check_concern_interface_independent.py",
+      "sha256": "63382694e272207efafbd03f1eb28c831a078d1b4f6b398795ba5d871744a51f",
+      "blob": "95c7c7f35a7f9bd2fd507dee3a3cd9f548d8360d",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/check_formation_math.py",
+      "new_path": "theories/becoming/history/verification/check_formation_math.py",
+      "sha256": "e9fdbef6e273b4a2ae57556b7bcacdc64201943588d2cd0db6a77e503ce2cedf",
+      "blob": "b7cb8433d866f9277722f3f0219ac1f1aeef6c50",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/check_integration.py",
+      "new_path": "theories/becoming/history/verification/check_integration.py",
+      "sha256": "094a4c97f46d3a1d1feec0fbb1ebfc4d3ef42dbe9458e185b40819d4eaf36291",
+      "blob": "cc46675182883cf84607ae319fa8354e0a92cffc",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/check_mechanisms.py",
+      "new_path": "theories/becoming/history/verification/check_mechanisms.py",
+      "sha256": "1f83a75ea1ae48628f5c4b9e406c73e1e0a853944e70abb5414e83eaae41be25",
+      "blob": "980d5cff070f13e59cdcab41dd5f6d89be46f63e",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/check_release.py",
+      "new_path": "theories/becoming/history/verification/check_release.py",
+      "sha256": "98dc33610ef3d5e74188aa48bb8eb343f4c1c0e60041f3022068f570ce91d6f4",
+      "blob": "589167cf70e89b95fb3e0d1f783b6ad1c16c3c08",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/concern-interface-checks.json",
+      "new_path": "theories/becoming/history/verification/concern-interface-checks.json",
+      "sha256": "d6246ccb60f114ab35cd46a7364429a38a197180e473f8324fafad3f79617c51",
+      "blob": "a9f3194072bf7665dbde3416a95406e1371ed2dc",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/concern-interface-independent-checks.json",
+      "new_path": "theories/becoming/history/verification/concern-interface-independent-checks.json",
+      "sha256": "378e12aa4b9146896b4179a05a239aa494a476a714951afe1172738a35f8fc05",
+      "blob": "da81891befc370c97e0cf9d29b78f72b8230b8db",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/independent-results.json",
+      "new_path": "theories/becoming/history/verification/independent-results.json",
+      "sha256": "0be749923236f23beb1485545c37bd48681e7c5332e0b89c3dc9ddd6958310bb",
+      "blob": "7cb5e34fb7ac14b8c5bd0ce3ba2904dcb23e5dbf",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/math-proposal-checks.json",
+      "new_path": "theories/becoming/history/verification/math-proposal-checks.json",
+      "sha256": "0f5674f5b137e2f353dc3c87f39b2468a091e675306ea6d25942f64f4b4ffd3b",
+      "blob": "84600521ec9b22e03fecab7b05ecbb17ffa5a9a6",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/preservation-final.json",
+      "new_path": "theories/becoming/history/verification/preservation-final.json",
+      "sha256": "918b8ba160646950dd31f0fb22dbb33b3964185d709cf4551d91f400b0a20461",
+      "blob": "be705da571afb34ef79ec92de94fd502f8a07504",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/release-checks.json",
+      "new_path": "theories/becoming/history/verification/release-checks.json",
+      "sha256": "6fae771597c03df9b0646af5bc73193692d0cbd29d68d978fc4b29ff0da7c2df",
+      "blob": "a3cde8fde7cf4004abdf8b693da03ff448ee4fab",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    },
+    {
+      "old_path": "theories/becoming/chapters/verification/results.json",
+      "new_path": "theories/becoming/history/verification/results.json",
+      "sha256": "1a3e8642d00ff8b26f065b4a75a58e20dcec2ad4d16c95def498e483b6ae8087",
+      "blob": "7f19700ee2c871d45c9c6168692fc968eeaedd26",
+      "batch": "H4",
+      "reason": "5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)",
+      "plan_entry": "theories/becoming/chapters/verification"
+    }
+  ]
+}

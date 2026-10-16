@@ -1,6 +1,6 @@
 # Situated risk, changing dependence and continued formation
 
-8 October 2026. AI-authored continuation of [Ren's instruction and correction](../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#continue-until-a-new-wall). Current exposition: [goal formation §12](../../../../theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#12-risk-changes-with-the-relations-we-form). The result is a scoped theoretical integration with 18 newly checked Lean theorems and 30 explicit declaration audits. It is not a field experiment, a new general probability theory or a proof of a universal risk ethic.
+8 October 2026. AI-authored continuation of [Ren's instruction and correction](../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#continue-until-a-new-wall). Current exposition: [goal formation §12](../../../../theories/becoming/history/GOAL-FORMATION-AND-REVISION.md#12-risk-changes-with-the-relations-we-form). The result is a scoped theoretical integration with 18 newly checked Lean theorems and 30 explicit declaration audits. It is not a field experiment, a new general probability theory or a proof of a universal risk ethic.
 
 ## 1. The connection being advanced
 

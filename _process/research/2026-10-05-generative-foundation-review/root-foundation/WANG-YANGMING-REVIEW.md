@@ -8,7 +8,7 @@
 
 比较主文可以作为一轮有边界的概念整合。它明确区分古典解释、现代重构、条件机制和最强必然性，没有将相似术语直接视作证明。知行工夫、去蔽、事上磨炼以及超出互惠的一体之仁，确实向现有研究提出相连且有内容的问题。当前主文没有发现必须阻止交付的过度声称。
 
-这里的接受只针对本轮比较的表述与推论范围。它不认证全部心学，不验证某种良知训练方案，也不完成患者根据向陌生行动者的理由过渡。正式推论仍须保留[最强目标](../../../../theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md)和[伦理根基](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md)中的未决前提。
+这里的接受只针对本轮比较的表述与推论范围。它不认证全部心学，不验证某种良知训练方案，也不完成患者根据向陌生行动者的理由过渡。正式推论仍须保留[最强目标](../../../../theories/becoming/history/STRONGEST-FOUNDATION-CLAIM.md)和[伦理根基](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md)中的未决前提。
 
 ## 2. 五组对应及其风险
 
@@ -28,7 +28,7 @@
 
 ### 3.1 对称性仍可保留自他割裂
 
-[慧根的双轨道结果](../../../../theories/becoming/chapters/HUIGEN.md#5-the-ethical-bridge-now-has-an-exact-test)指出，规则
+[慧根的双轨道结果](../../../../theories/becoming/history/HUIGEN.md#5-the-ethical-bridge-now-has-an-exact-test)指出，规则
 
 \[
 r(a,p)=1\quad\Longleftrightarrow\quad a=p
@@ -40,13 +40,13 @@ r(a,p)=1\quad\Longleftrightarrow\quad a=p
 
 ### 3.2 学得更多也能撤回有据帮助
 
-[评价塑性](../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md)和[评价奠基的修正比较](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md#what-correct-revision-must-preserve)保留一组有力反例：两边获得同样后续资料，保持相同手段知识，也都负担得起服务，但连接更新后的一边撤回服务，保留原正连接的一边仍行动。若独立成立的修复根据未变，更新即偏离该根据。
+[评价塑性](../../../../theories/becoming/history/EVALUATIVE-PLASTICITY.md)和[评价奠基的修正比较](../../../../theories/becoming/history/EVALUATIVE-GROUNDING.md#what-correct-revision-must-preserve)保留一组有力反例：两边获得同样后续资料，保持相同手段知识，也都负担得起服务，但连接更新后的一边撤回服务，保留原正连接的一边仍行动。若独立成立的修复根据未变，更新即偏离该根据。
 
 这反驳一般的“知识增长或适应成功必然成善”，不直接反驳阳明限定意义的真知。要提出后者的因果必然性，必须给真知独立识别标准，不能因反例不行善便自动宣布它不算知。动机受蔽、事实错误、无力实施、许可缺失和正当冲突也不能合并成私欲。
 
 ### 3.3 患者未变不等于一切理由条件未变
 
-[统一伦理根基](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#what-changing-the-operator-can-establish)积极辩护陌生行动者也有初步理由，但仍要求解释为什么患者的真实好坏对这个行动者有实践效力。替换行动者会改变 actor–patient 关系；不能在未论证其相关性前称它只是换名。相反，单凭行动者漠然，也不能证明患者根据已失效。
+[统一伦理根基](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#what-changing-the-operator-can-establish)积极辩护陌生行动者也有初步理由，但仍要求解释为什么患者的真实好坏对这个行动者有实践效力。替换行动者会改变 actor–patient 关系；不能在未论证其相关性前称它只是换名。相反，单凭行动者漠然，也不能证明患者根据已失效。
 
 ## 4. 旧“伴随”方案：已提出结构，未提供语义证明
 
@@ -118,7 +118,7 @@ theorem nature_completes_wisdom (x : Xin) (n : Nat) (_h_middle : center (x.proce
 
 1. **“理解”是否被削成预测。** 同样事实预测下的冷漠反例，只排除弱认知必然产生关切；它尚未排除具身、切身而实践的理解确有更强作用。需要独立测量后者，且保留其失败可能。
 2. **价值为何在对象中显现。** 若患者的真实负担已经具有理由意义，学习可能是在发现而非创造这种效力。我们不能永远先给一个外部目标再称其形成已经解释，也不能用内在奖励直接回答正当性。
-3. **去蔽如何检验。** 内省须能暴露选择性注意、自利解释与反馈压制；接受他人纠正、实际权限及真实后果不可由自称诚意替代。当前[可错的良知提案](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#良知-as-a-developing-capacity-within-generation)已提供此接口。
+3. **去蔽如何检验。** 内省须能暴露选择性注意、自利解释与反馈压制；接受他人纠正、实际权限及真实后果不可由自称诚意替代。当前[可错的良知提案](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#良知-as-a-developing-capacity-within-generation)已提供此接口。
 
 旧综述已保存对“良知不可 Goodhart”和误读“四句教”的批评，见[智善文本综述](../../../../theories/zhishan-intelligence-must-be-good/synthesis-a-texts.md)的相关未决问题。本次不能通过换名为切身理解，使一个不可独立检验的内在裁判重新免于审查。规范判断有真伪与有限主体可能误判，可以同时成立。
 

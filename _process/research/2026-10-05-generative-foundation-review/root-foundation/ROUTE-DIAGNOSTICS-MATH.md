@@ -1,6 +1,6 @@
 # Identifying exercised update behavior
 
-6 October 2026. AI-authored conditional analysis for the [route-diagnostics protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/PROTOCOL.md). The actual route functions come from [formed transmission](../../../../theories/becoming/chapters/RECIPIENT-TRANSMISSION.md); [successor learning](../../../../theories/becoming/chapters/SUCCESSOR-LEARNING.md) supplies their exercise by actual inherited carriers. This analysis identifies evidence requirements for revising those functions, not a new physical diagnostic apparatus.
+6 October 2026. AI-authored conditional analysis for the [route-diagnostics protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/PROTOCOL.md). The actual route functions come from [formed transmission](../../../../theories/becoming/history/RECIPIENT-TRANSMISSION.md); [successor learning](../../../../theories/becoming/history/SUCCESSOR-LEARNING.md) supplies their exercise by actual inherited carriers. This analysis identifies evidence requirements for revising those functions, not a new physical diagnostic apparatus.
 
 ## 1. Interface and signatures
 

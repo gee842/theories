@@ -32,7 +32,7 @@
 
 ## 3. 与统一生成目标的连接
 
-本轮对[派生图](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work)的贡献，是改善“后果与记录—意义与根据—实际行动”接口的表达和审查。生与续、知道与有据、关切与保护、修改与正当，必须保持可辨；否则命名就会隐藏尚待解释的过渡。
+本轮对[派生图](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work)的贡献，是改善“后果与记录—意义与根据—实际行动”接口的表达和审查。生与续、知道与有据、关切与保护、修改与正当，必须保持可辨；否则命名就会隐藏尚待解释的过渡。
 
 尚供应的内容包括当前理论定义、历史义项的选择、文本解释和现代术语约定。它们不是从最低根基新推出的机制。该轮没有新增形式定理、经验观察或完成伦理理由的证明。
 

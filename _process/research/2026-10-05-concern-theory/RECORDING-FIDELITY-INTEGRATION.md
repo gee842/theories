@@ -1,6 +1,6 @@
 # From formed material to a faithful evidence record
 
-6 October 2026. AI-authored development under the [generative-grounding goal](../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The named connection is **actual constituent formation → paid record capacity → retained observations satisfying a downstream learning premise**.
+6 October 2026. AI-authored development under the [generative-grounding goal](../../../theories/becoming/history/GENERATIVE-GROUNDING.md). The named connection is **actual constituent formation → paid record capacity → retained observations satisfying a downstream learning premise**.
 
 **Status: accepted at the finite recording-interface scope.** The [independent internal review](RECORDING-FIDELITY-REVIEW.md) accepts the construction, formal event law, mathematical arguments and exact comparisons, with matching frozen-source records. The earlier [transfer-evidence result](TRANSFER-EVIDENCE-INTEGRATION.md) keeps its established scope. This connection supplies finite faithful records under declared laws; it does not complete durable learning or the unified foundation.
 

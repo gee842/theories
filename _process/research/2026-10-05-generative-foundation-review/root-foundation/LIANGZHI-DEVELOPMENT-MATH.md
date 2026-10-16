@@ -4,7 +4,7 @@
 
 ## 1. 新连接与既有工作的区别
 
-[原形成模型](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean)已连接实际修复、捕获和复制；[上一轮传递接口](LIANGZHI-EVOLUTION-MATH.md)已区分模板数量与后继结构。[评价继承](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md)已把习得影响传给实际不同的后继，再接新证据和改变的选择；[评价发展](../../../../experiments/valuation-development/README.md)已有配对形成与谱系机制。不能把这些连接再次报告为首次实现。
+[原形成模型](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean)已连接实际修复、捕获和复制；[上一轮传递接口](LIANGZHI-EVOLUTION-MATH.md)已区分模板数量与后继结构。[评价继承](../../../../theories/becoming/history/EVALUATIVE-SUCCESSION.md)已把习得影响传给实际不同的后继，再接新证据和改变的选择；[评价发展](../../../../experiments/valuation-development/README.md)已有配对形成与谱系机制。不能把这些连接再次报告为首次实现。
 
 本轮的增量是：**相同材料载体，经共同发展史中的不同时序形成不同可运行联结；在实际新测试中显出差异；运行后果再支持另一个载体与联结的形成，直到其自身的新测试。** 这是一项新构造对既有接口的连接，不是把所有旧模块逐步组合成一个已经统一运行的模型。它直接导入原形成过程与上一轮传递数学；对评价继承及配对机制的联系是明确的机制对应，不是导入其全部定理后的等同证明。
 

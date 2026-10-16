@@ -24,7 +24,7 @@
             {
               "label_zh": "完整相连说明",
               "label_en": "Connected articulation",
-              "path": "theories/becoming/chapters/SHENGSHENG.md"
+              "path": "theories/becoming/history/SHENGSHENG.md"
             },
             {
               "label_zh": "生成／变化之论：当前章节与形式脊柱",
@@ -49,7 +49,7 @@
             {
               "label_zh": "无假设奠基继续",
               "label_en": "Assumption-free foundation",
-              "path": "theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md"
+              "path": "theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md"
             },
             {
               "label_zh": "实际发生、证明与反审",
@@ -99,7 +99,7 @@
             {
               "label_zh": "系统及其构成可能性",
               "label_en": "Systems and constitutive possibilities",
-              "path": "theories/becoming/chapters/SYSTEM-INDIVIDUATION.md"
+              "path": "theories/becoming/history/SYSTEM-INDIVIDUATION.md"
             },
             {
               "label_zh": "系统说明整合与实查",
@@ -114,7 +114,7 @@
             {
               "label_zh": "关系与变化的根据",
               "label_en": "Warrant for relationships and variation",
-              "path": "theories/becoming/chapters/SYSTEM-WARRANT.md"
+              "path": "theories/becoming/history/SYSTEM-WARRANT.md"
             },
             {
               "label_zh": "变化根据整合与实查",
@@ -435,7 +435,7 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#the-whole-is-the-unit-of-grounding"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#the-whole-is-the-unit-of-grounding"
             }
           ]
         },
@@ -467,7 +467,7 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction"
             },
             {
               "label_zh": "条件小节",
@@ -514,7 +514,7 @@
             {
               "label_zh": "相关论证",
               "label_en": "Related argument",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#whole-appraisal-needs-no-additional-beneficiary"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#whole-appraisal-needs-no-additional-beneficiary"
             }
           ]
         },
@@ -530,12 +530,12 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#self-care-is-a-realization-within-the-whole"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#self-care-is-a-realization-within-the-whole"
             },
             {
               "label_zh": "相关论证",
               "label_en": "Related argument",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#renewal-and-practical-importance-do-not-exhaust-goodness"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#renewal-and-practical-importance-do-not-exhaust-goodness"
             }
           ]
         },
@@ -551,7 +551,7 @@
             {
               "label_zh": "正面方向及限定",
               "label_en": "Direction and qualifications",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction"
             },
             {
               "label_zh": "前提与选择的检查",
@@ -572,7 +572,7 @@
             {
               "label_zh": "当前论述",
               "label_en": "Current account",
-              "path": "theories/becoming/chapters/EXPLANATORY-NECESSITY.md"
+              "path": "theories/becoming/history/EXPLANATORY-NECESSITY.md"
             },
             {
               "label_zh": "论证、反审与来源",
@@ -735,7 +735,7 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#continuation-depends-on-generativity"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#continuation-depends-on-generativity"
             }
           ]
         },
@@ -751,10 +751,10 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#general-requirements-and-situated-realization"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#general-requirements-and-situated-realization"
             },
             {
-              "path": "theories/becoming/chapters/LIVING-DEPENDENCIES.md#a-derived-maintenance-mechanism",
+              "path": "theories/becoming/history/LIVING-DEPENDENCIES.md#a-derived-maintenance-mechanism",
               "label_zh": "生命依存的机制推导",
               "label_en": "Mechanistic derivation of living dependencies"
             },
@@ -819,7 +819,7 @@
               "label_en": "Independent allocation review"
             },
             {
-              "path": "theories/becoming/chapters/LIVING-DEPENDENCIES.md#retained-organization-through-a-changing-transition",
+              "path": "theories/becoming/history/LIVING-DEPENDENCIES.md#retained-organization-through-a-changing-transition",
               "label_zh": "保留组织与变化中的活动",
               "label_en": "Retained organization through changing activity"
             },
@@ -839,7 +839,7 @@
               "label_en": "Transition review and existing-proof correspondence"
             },
             {
-              "path": "theories/becoming/chapters/LIVING-DEPENDENCIES.md#expanding-provision-and-retained-copies",
+              "path": "theories/becoming/history/LIVING-DEPENDENCIES.md#expanding-provision-and-retained-copies",
               "label_zh": "共同供给与存留副本",
               "label_en": "Joint provision and retained copies"
             },
@@ -887,7 +887,7 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#formed-capacity-and-actual-continuation"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#formed-capacity-and-actual-continuation"
             },
             {
               "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
@@ -958,7 +958,7 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#supported-joint-formation"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#supported-joint-formation"
             }
           ]
         },
@@ -1006,7 +1006,7 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#reconfiguration-and-constructive-endings"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#reconfiguration-and-constructive-endings"
             }
           ]
         },
@@ -1022,7 +1022,7 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
             },
             {
               "label_zh": "生成的重构及实查",
@@ -1097,7 +1097,7 @@
             {
               "label_zh": "演化组织的完整聚焦说明",
               "label_en": "Completed focused account of evolutionary organization",
-              "path": "theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md"
+              "path": "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md"
             },
             {
               "label_zh": "整合、强比较及完成评估",
@@ -1443,7 +1443,7 @@
             {
               "label_zh": "完整中英论述",
               "label_en": "Bilingual account",
-              "path": "theories/becoming/chapters/NEW-POSSIBILITIES.md"
+              "path": "theories/becoming/history/NEW-POSSIBILITIES.md"
             },
             {
               "label_zh": "证据与反审",
@@ -1581,7 +1581,7 @@
             {
               "label_zh": "当前理论",
               "label_en": "Current account",
-              "path": "theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md"
+              "path": "theories/becoming/history/MEASURED-FEEDBACK-CORRESPONDENCE.md"
             },
             {
               "label_zh": "证据与前提解释",
@@ -1705,7 +1705,7 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#justified-revision-and-the-current-sufficiency-limit"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#justified-revision-and-the-current-sufficiency-limit"
             }
           ]
         },
@@ -1721,12 +1721,12 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#an-explicit-ethical-starting-point-and-the-generative-conditions-of-a-future"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#an-explicit-ethical-starting-point-and-the-generative-conditions-of-a-future"
             },
             {
               "label_zh": "当前任务纠正",
               "label_en": "Current task correction",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#current-alignment-task-an-explicit-normative-axiom"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#current-alignment-task-an-explicit-normative-axiom"
             },
             {
               "label_zh": "Ren 原话与执行范围",
@@ -1741,7 +1741,7 @@
             {
               "label_zh": "新实践候选的当前状态",
               "label_en": "Current practical candidate status",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#practical-judgment-comparison-responsibility-and-legitimate-endings"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#practical-judgment-comparison-responsibility-and-legitimate-endings"
             }
           ]
         },
@@ -1757,12 +1757,12 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#from-the-generative-premise-to-situated-reasons"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#from-the-generative-premise-to-situated-reasons"
             },
             {
               "label_zh": "相关论证",
               "label_en": "Related argument",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
             },
             {
               "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md#4-谁承担什么--allocating-responsibilities",
@@ -1796,7 +1796,7 @@
               "label_en": "Loss and comparison limits"
             },
             {
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#loss-sensitive-comparison-and-the-first-mixed-anchor",
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#loss-sensitive-comparison-and-the-first-mixed-anchor",
               "label_zh": "最新理论接续",
               "label_en": "Current theoretical continuation"
             },
@@ -1808,7 +1808,7 @@
             {
               "label_zh": "新实践候选的当前状态",
               "label_en": "Current practical candidate status",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#practical-judgment-comparison-responsibility-and-legitimate-endings"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#practical-judgment-comparison-responsibility-and-legitimate-endings"
             }
           ]
         },
@@ -1824,7 +1824,7 @@
             {
               "label_zh": "情境与不确定性",
               "label_en": "Situation and uncertainty",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty"
             },
             {
               "label_zh": "整合与范围修正",
@@ -1890,17 +1890,17 @@
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#zero-axiom-continuation-joint-realization-and-actual-change"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#zero-axiom-continuation-joint-realization-and-actual-change"
             },
             {
               "label_zh": "相关论证",
               "label_en": "Related argument",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence"
             },
             {
               "label_zh": "当前公理路线的范围",
               "label_en": "Scope of the current axiom route",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#current-alignment-task-an-explicit-normative-axiom"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#current-alignment-task-an-explicit-normative-axiom"
             },
             {
               "path": "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
@@ -2098,7 +2098,7 @@
             {
               "label_zh": "中英论述",
               "label_en": "Bilingual account",
-              "path": "theories/becoming/chapters/SUSTAINED-LIVING-JUDGMENT.md"
+              "path": "theories/becoming/history/SUSTAINED-LIVING-JUDGMENT.md"
             },
             {
               "label_zh": "整合及前提",
@@ -2129,7 +2129,7 @@
             {
               "label_zh": "连接核查与当前理论",
               "label_en": "Connection audit and current account",
-              "path": "theories/becoming/chapters/PROVED-CONNECTIONS.md"
+              "path": "theories/becoming/history/PROVED-CONNECTIONS.md"
             },
             {
               "label_zh": "前提与整合",
@@ -2157,7 +2157,7 @@
             {
               "label_zh": "依存、运作意义与调节",
               "label_en": "Dependency, operational significance and regulation",
-              "path": "theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md"
+              "path": "theories/becoming/history/GENERATIVE-DEVELOPMENT.md"
             }
           ],
           "connection_zh": "说明共同形成为什么需要真实支持与反馈，不能只把成功活动并列。",
@@ -2179,12 +2179,12 @@
             {
               "label_zh": "选择器及修订机制的形成",
               "label_en": "Formation of selectors and their revision mechanisms",
-              "path": "theories/becoming/chapters/UPDATER-FORMATION.md"
+              "path": "theories/becoming/history/UPDATER-FORMATION.md"
             },
             {
               "label_zh": "相关接续",
               "label_en": "Related continuation",
-              "path": "theories/becoming/chapters/SELECTOR-REVISION.md"
+              "path": "theories/becoming/history/SELECTOR-REVISION.md"
             }
           ],
           "connection_zh": "把组织方式怎样继续生成组织方式接入共同历史。",
@@ -2206,7 +2206,7 @@
             {
               "label_zh": "后果学习、预测与行动",
               "label_en": "Consequence learning, prediction and action",
-              "path": "theories/becoming/chapters/PREDICTION-ACTION.md"
+              "path": "theories/becoming/history/PREDICTION-ACTION.md"
             }
           ],
           "connection_zh": "把知道与实行放回同一资源和材料历史。",
@@ -2228,7 +2228,7 @@
             {
               "label_zh": "学习方式的后果性修订",
               "label_en": "Consequence-based revision of how learning occurs",
-              "path": "theories/becoming/chapters/LEARNING-ROUTE-REVISION.md"
+              "path": "theories/becoming/history/LEARNING-ROUTE-REVISION.md"
             }
           ],
           "connection_zh": "使共同形成包含形成方式的变化，而不只重复相同产物。",
@@ -2250,7 +2250,7 @@
             {
               "label_zh": "后继学习与纠正的传递",
               "label_en": "Successor learning and transmission of correction",
-              "path": "theories/becoming/chapters/SUCCESSOR-LEARNING.md"
+              "path": "theories/becoming/history/SUCCESSOR-LEARNING.md"
             }
           ],
           "connection_zh": "把共同生成扩展到有材料连续性的接续，而不将复制标签当成存续。",
@@ -2272,7 +2272,7 @@
             {
               "label_zh": "对受影响关系的理解与纠正",
               "label_en": "Understanding and correcting recipient-directed action",
-              "path": "theories/becoming/chapters/RECIPIENT-CORRECTION.md"
+              "path": "theories/becoming/history/RECIPIENT-CORRECTION.md"
             }
           ],
           "connection_zh": "说明共同发生保留分化，不能把不同位置压成同一输入或利益。",
@@ -2294,12 +2294,12 @@
             {
               "label_zh": "证据、理由及修订的实际接续",
               "label_en": "Actual continuity of evidence, reasons and revision",
-              "path": "theories/becoming/chapters/RECORDED-REASONS.md"
+              "path": "theories/becoming/history/RECORDED-REASONS.md"
             },
             {
               "label_zh": "相关接续",
               "label_en": "Related continuation",
-              "path": "theories/becoming/chapters/RECIPIENT-REASON-REVISION.md"
+              "path": "theories/becoming/history/RECIPIENT-REASON-REVISION.md"
             }
           ],
           "connection_zh": "使共同实现涵盖证据怎样进入判断和行动，不以记录存在代替有效纠正。",
@@ -2321,7 +2321,7 @@
             {
               "label_zh": "取得的后果进入评价与选择",
               "label_en": "Acquired consequences entering evaluation and choice",
-              "path": "theories/becoming/chapters/EVALUATIVE-UPTAKE.md"
+              "path": "theories/becoming/history/EVALUATIVE-UPTAKE.md"
             }
           ],
           "connection_zh": "连接形成理解与共同实践，区分因果影响、正确应用和规范根据。",
@@ -2343,7 +2343,7 @@
             {
               "label_zh": "评价影响、后继与新证据",
               "label_en": "Evaluative influence, succession and fresh evidence",
-              "path": "theories/becoming/chapters/EVALUATIVE-SUCCESSION.md"
+              "path": "theories/becoming/history/EVALUATIVE-SUCCESSION.md"
             }
           ],
           "connection_zh": "把学习、评价及后续实行放在同一接续契约中。",
@@ -2480,12 +2480,12 @@
             {
               "label_zh": "智慧的协同修正与慧根",
               "label_en": "Coordinated correction in wisdom and huigen",
-              "path": "theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md"
+              "path": "theories/becoming/history/GENERATIVE-DEVELOPMENT.md"
             },
             {
               "label_zh": "相关接续",
               "label_en": "Related continuation",
-              "path": "theories/becoming/chapters/HUIGEN.md"
+              "path": "theories/becoming/history/HUIGEN.md"
             },
             {
               "label_zh": "查询证明修复与范围",
@@ -2847,7 +2847,7 @@
             {
               "label_zh": "有效纠正的形成与战略脆弱性",
               "label_en": "Formation and strategic vulnerability of effective correction",
-              "path": "theories/becoming/chapters/FORMATION.md"
+              "path": "theories/becoming/history/FORMATION.md"
             }
           ],
           "connection_zh": "检验共同条件怎样受到竞争和权力改变，而不预设所有连接都有利。",
@@ -2869,7 +2869,7 @@
             {
               "label_zh": "关切、有效能力与更新的共同形成",
               "label_en": "Joint formation of concern, effective power and renewal",
-              "path": "theories/becoming/chapters/JOINT-FORMATION.md"
+              "path": "theories/becoming/history/JOINT-FORMATION.md"
             }
           ],
           "connection_zh": "直接展示分别可行的机制如何在同一历史中共同成立。",
@@ -2891,7 +2891,7 @@
             {
               "label_zh": "可修订关切的联合实现",
               "label_en": "Joint realization of revisable concern",
-              "path": "theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md"
+              "path": "theories/becoming/history/REVISABLE-CONCERN-SETTLEMENT.md"
             }
           ],
           "connection_zh": "把共同生成要求用于伦理、信息、资源及治理条件的实际兼容。",
@@ -2913,7 +2913,7 @@
             {
               "label_zh": "证据进入制度规则与实际补救",
               "label_en": "Evidence entering institutional rules and delivered remedy",
-              "path": "theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md"
+              "path": "theories/becoming/history/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md"
             }
           ],
           "connection_zh": "在制度中检验共同条件的形成与改变是否真正到达受影响生活。",
@@ -2935,7 +2935,7 @@
             {
               "label_zh": "对齐与治理中的未来条件",
               "label_en": "Conditions of a future in alignment and governance",
-              "path": "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md"
+              "path": "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md"
             },
             {
               "path": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
@@ -2958,7 +2958,7 @@
               "label_en": "Independent completion review and recompilation"
             },
             {
-              "path": "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+              "path": "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
               "label_zh": "当前首要方向与未解连接",
               "label_en": "Current priority and unresolved connection"
             },
@@ -2978,7 +2978,7 @@
               "label_en": "First normative connection, rivals and discriminators"
             },
             {
-              "path": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md",
+              "path": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md",
               "label_zh": "理解自身形成及目的修订",
               "label_en": "Understanding formation and revising goals"
             },
@@ -3018,7 +3018,7 @@
               "label_en": "Argument, sources and author counterreview"
             },
             {
-              "path": "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md",
+              "path": "theories/becoming/history/CONCERN-AND-NEW-REASONS.md",
               "label_zh": "理由扩展与比较传递",
               "label_en": "Extended reasons and comparison transfer"
             },
@@ -3048,7 +3048,7 @@
               "label_en": "Realization warrant, counterreview and scope"
             },
             {
-              "path": "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions",
+              "path": "theories/becoming/history/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions",
               "label_zh": "后天基本条件的当前论证",
               "label_en": "Current argument for acquired basic conditions"
             },
@@ -3078,7 +3078,7 @@
               "label_en": "Receipt for 16 new theorems"
             },
             {
-              "path": "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md#changing-the-conditions-of-review",
+              "path": "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md#changing-the-conditions-of-review",
               "label_zh": "改变自身评估条件",
               "label_en": "Changing the conditions of review"
             },
@@ -3133,7 +3133,7 @@
               "label_en": "Receipt for 18 new theorems"
             },
             {
-              "path": "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation",
+              "path": "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation",
               "label_zh": "取得根据与保留参与",
               "label_en": "Warranted acquisition and retained participation"
             },
@@ -3248,7 +3248,7 @@
               "label_en": "Joint risk, revision and boundary"
             },
             {
-              "path": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#12-risk-changes-with-the-relations-we-form",
+              "path": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md#12-risk-changes-with-the-relations-we-form",
               "label_zh": "风险关系也会改变",
               "label_en": "Risk relations also change"
             },
@@ -3328,7 +3328,7 @@
               "label_en": "Equal-risk argument and checks"
             },
             {
-              "path": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#13-sharing-basic-risk-and-revising-the-selection-rule",
+              "path": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md#13-sharing-basic-risk-and-revising-the-selection-rule",
               "label_zh": "分担与选择规则修订",
               "label_en": "Sharing and selector revision"
             },
@@ -3448,7 +3448,7 @@
               "label_en": "Fairness costs, scope and counterreview"
             },
             {
-              "path": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#14-bounded-fairness-costs-and-the-scope-of-revision",
+              "path": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md#14-bounded-fairness-costs-and-the-scope-of-revision",
               "label_zh": "修订理由的有限范围",
               "label_en": "Bounded scope of revision grounds"
             },
@@ -3598,7 +3598,7 @@
               "label_en": "Situated awareness, convergence and counterreview"
             },
             {
-              "path": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#15-situational-awareness-and-continuing-convergence",
+              "path": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md#15-situational-awareness-and-continuing-convergence",
               "label_zh": "情境理解持续改善",
               "label_en": "Continuing situated understanding"
             },
@@ -3673,7 +3673,7 @@
               "label_en": "Action effects, coverage and counterreview"
             },
             {
-              "path": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#16-predicting-our-effects-and-expanding-the-question",
+              "path": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md#16-predicting-our-effects-and-expanding-the-question",
               "label_zh": "行动预测与问题扩展",
               "label_en": "Action prediction and expanding questions"
             },
@@ -3733,7 +3733,7 @@
               "label_en": "Diagnosis joined to prediction and counterreview"
             },
             {
-              "path": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#17-diagnose-revise-and-recover-reliable-prediction",
+              "path": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md#17-diagnose-revise-and-recover-reliable-prediction",
               "label_zh": "修订与恢复认识",
               "label_en": "Revision and recovered prediction"
             },
@@ -3793,7 +3793,7 @@
               "label_en": "Empirical support and completed scope"
             },
             {
-              "path": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#18-experimental-grounding-already-exists",
+              "path": "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md#18-experimental-grounding-already-exists",
               "label_zh": "情境修订已有实证基础",
               "label_en": "Experimental grounding already exists"
             },
@@ -4506,7 +4506,7 @@
             {
               "label_zh": "当前对齐表述",
               "label_en": "Current alignment account",
-              "path": "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md#corrigibility-and-its-changing-practical-conditions"
+              "path": "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md#corrigibility-and-its-changing-practical-conditions"
             },
             {
               "label_zh": "完整研究与反审",
@@ -5825,7 +5825,7 @@
             {
               "label_zh": "新实践候选的当前状态",
               "label_en": "Current practical candidate status",
-              "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#practical-judgment-comparison-responsibility-and-legitimate-endings"
+              "path": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#practical-judgment-comparison-responsibility-and-legitimate-endings"
             }
           ]
         },
@@ -7254,12 +7254,12 @@
             {
               "label_zh": "经验范围",
               "label_en": "Empirical scope",
-              "path": "theories/becoming/chapters/EMPIRICAL-SCOPE.md"
+              "path": "theories/becoming/history/EMPIRICAL-SCOPE.md"
             },
             {
               "label_zh": "来源图",
               "label_en": "Source map",
-              "path": "theories/becoming/chapters/SOURCE-MAP.md"
+              "path": "theories/becoming/history/SOURCE-MAP.md"
             },
             {
               "label_zh": "细项主张",
@@ -7370,32 +7370,32 @@
     "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md": "740126fcca587edb4446b690f8d69bc0258d6ca5338a7ed880585fc419a58940",
     "sources/15-codex-theory-conversations/2026-10-07-zero-axiom-complete-classification.md": "2c8ea3484a7b299150492eb154ae094e7bced5f001eedd3cbfe4fe5e329d948f",
     "sources/15-codex-theory-conversations/2026-10-08-bilingual-generativity-chain-index.md": "0b0a84fe8d2b7abaf3dbc8c09a192d022b464ad81a12b30c840d08b1c8e5dac9",
-    "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md": "404f29b21b8cef6140a0d29014cbc4fe8fa0a06d38280fe3e9e18c4ff94461eb",
+    "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md": "404f29b21b8cef6140a0d29014cbc4fe8fa0a06d38280fe3e9e18c4ff94461eb",
     "theories/becoming/chapters/CLAIMS.md": "72fced52ce6b3ec3ef19fc82f6b25ee442cb1b5c9205abc60afe1dc92aa3744c",
-    "theories/becoming/chapters/EMPIRICAL-SCOPE.md": "f3208aff28c56fe697bb677b867c3f861b3bea894f17b655e95f919201cc28db",
-    "theories/becoming/chapters/EVALUATIVE-SUCCESSION.md": "a25f5ed39ae4529c5f934c7e363785f4d135e868ead2a5dffebfad05305cc44b",
-    "theories/becoming/chapters/EVALUATIVE-UPTAKE.md": "3a478b88269dce0b8a0f7fa10c6380f2d21cc75eb0e048c827e7ef07de0343fa",
-    "theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md": "3f78cd13568bc488a2d02db7ae50eaf1189bf22889c95aedf5b637be63e33d37",
-    "theories/becoming/chapters/FORMATION.md": "e1e1e4f397d4ecb48d25960af6e0eb0884e6492d374a64fd604820f411d82d0c",
-    "theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md": "9cbc8436e52ca71865521723ebf9d09471abcd8abd0a6bc09a142232387865e5",
-    "theories/becoming/chapters/GENERATIVE-GROUNDING.md": "8648cd4c8de484c578d23b25aec2ca223716df70d23e36ea3b807479c4f014ed",
-    "theories/becoming/chapters/HUIGEN.md": "3cf98bac87a65c87a790c9d67063360af54624e8bfcac2f79cb8db07cd21df6c",
-    "theories/becoming/chapters/JOINT-FORMATION.md": "eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145",
-    "theories/becoming/chapters/LEARNING-ROUTE-REVISION.md": "e6260ca58c651289d238ea3219b4674fc94b9d45f3bbcfd7b6fc9e5cdc35d468",
+    "theories/becoming/history/EMPIRICAL-SCOPE.md": "f3208aff28c56fe697bb677b867c3f861b3bea894f17b655e95f919201cc28db",
+    "theories/becoming/history/EVALUATIVE-SUCCESSION.md": "a25f5ed39ae4529c5f934c7e363785f4d135e868ead2a5dffebfad05305cc44b",
+    "theories/becoming/history/EVALUATIVE-UPTAKE.md": "3a478b88269dce0b8a0f7fa10c6380f2d21cc75eb0e048c827e7ef07de0343fa",
+    "theories/becoming/history/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md": "3f78cd13568bc488a2d02db7ae50eaf1189bf22889c95aedf5b637be63e33d37",
+    "theories/becoming/history/FORMATION.md": "e1e1e4f397d4ecb48d25960af6e0eb0884e6492d374a64fd604820f411d82d0c",
+    "theories/becoming/history/GENERATIVE-DEVELOPMENT.md": "9cbc8436e52ca71865521723ebf9d09471abcd8abd0a6bc09a142232387865e5",
+    "theories/becoming/history/GENERATIVE-GROUNDING.md": "8648cd4c8de484c578d23b25aec2ca223716df70d23e36ea3b807479c4f014ed",
+    "theories/becoming/history/HUIGEN.md": "3cf98bac87a65c87a790c9d67063360af54624e8bfcac2f79cb8db07cd21df6c",
+    "theories/becoming/history/JOINT-FORMATION.md": "eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145",
+    "theories/becoming/history/LEARNING-ROUTE-REVISION.md": "e6260ca58c651289d238ea3219b4674fc94b9d45f3bbcfd7b6fc9e5cdc35d468",
     "theories/becoming/chapters/LIANGZHI-EVOLUTION.md": "f339f277a17948ce2b9147bc5d31e948814ff37a3ab04dac920ddc87d3746e5e",
     "theories/becoming/chapters/NONDUAL-METHOD.md": "a2c8fd7257364fed17bb68e1d350389ff79b48185bc0dfb8d0feae65e7e204b0",
     "theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md": "656874a38d364428971ce521d52668cc15720032c1b591457c20d4bbf13f0c21",
-    "theories/becoming/chapters/PREDICTION-ACTION.md": "fc657d385f274d98e709045a5621f866cc33f65ff3acdbbd6a1a8d04f57a4df4",
-    "theories/becoming/chapters/RECIPIENT-CORRECTION.md": "bd940255446ae7335ae589298afc3acbedbec034a5415a277eb81fbc9622b8bc",
-    "theories/becoming/chapters/RECIPIENT-REASON-REVISION.md": "68cc74e7102d157d6fe0f15a1e329c654bffa1ede87c77238d23a070c8d7cea9",
-    "theories/becoming/chapters/RECORDED-REASONS.md": "ca09048d33d693f254773c2b17d5a3f0fb893ea7f6ad5d95985c093001499f32",
-    "theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md": "69eaca6af6e1c9a6c6ded10b48e008eeb0585adfa61a84f630dfcd9823cb7326",
-    "theories/becoming/chapters/SELECTOR-REVISION.md": "d7fe22d758c16c058ad663bd49abb110d001f90aefa0a6dc34f74b86880c69e0",
-    "theories/becoming/chapters/SOURCE-MAP.md": "2efdb9ddac1de4f4dceba4468908cf9a36bcd8cc75dd24239c0e98f23962527b",
-    "theories/becoming/chapters/SUCCESSOR-LEARNING.md": "0ede6d0ff079d9571c405d189d5c709a8c08f37e89c1f7e357aea5944cce86a0",
-    "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md": "18b975d10ade6e9a35e909fa1d0533fba30bf67fd8c122a448c0bec5aadbf698",
-    "theories/becoming/chapters/UPDATER-FORMATION.md": "f72807e6377db4c56aae459c56a5e307f5fced7da3b9cc0065ca463af6b1e78f",
-    "theories/becoming/chapters/LIVING-DEPENDENCIES.md": "1e2093982cc2478de5d2ba3220f6aca3c5af573a8cb6058aea7222ad32fe9f2f",
+    "theories/becoming/history/PREDICTION-ACTION.md": "fc657d385f274d98e709045a5621f866cc33f65ff3acdbbd6a1a8d04f57a4df4",
+    "theories/becoming/history/RECIPIENT-CORRECTION.md": "bd940255446ae7335ae589298afc3acbedbec034a5415a277eb81fbc9622b8bc",
+    "theories/becoming/history/RECIPIENT-REASON-REVISION.md": "68cc74e7102d157d6fe0f15a1e329c654bffa1ede87c77238d23a070c8d7cea9",
+    "theories/becoming/history/RECORDED-REASONS.md": "ca09048d33d693f254773c2b17d5a3f0fb893ea7f6ad5d95985c093001499f32",
+    "theories/becoming/history/REVISABLE-CONCERN-SETTLEMENT.md": "69eaca6af6e1c9a6c6ded10b48e008eeb0585adfa61a84f630dfcd9823cb7326",
+    "theories/becoming/history/SELECTOR-REVISION.md": "d7fe22d758c16c058ad663bd49abb110d001f90aefa0a6dc34f74b86880c69e0",
+    "theories/becoming/history/SOURCE-MAP.md": "2efdb9ddac1de4f4dceba4468908cf9a36bcd8cc75dd24239c0e98f23962527b",
+    "theories/becoming/history/SUCCESSOR-LEARNING.md": "0ede6d0ff079d9571c405d189d5c709a8c08f37e89c1f7e357aea5944cce86a0",
+    "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md": "18b975d10ade6e9a35e909fa1d0533fba30bf67fd8c122a448c0bec5aadbf698",
+    "theories/becoming/history/UPDATER-FORMATION.md": "f72807e6377db4c56aae459c56a5e307f5fced7da3b9cc0065ca463af6b1e78f",
+    "theories/becoming/history/LIVING-DEPENDENCIES.md": "1e2093982cc2478de5d2ba3220f6aca3c5af573a8cb6058aea7222ad32fe9f2f",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md": "54556a1c78b15dcad32490f79488354ee3595a627535e61d7e8669c0b9b63c99",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md": "3cbaf25418511a5e3f79e1cc548f751353ecf6b4793450d0ea7c7d4308f7e142",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean": "0d038dd797886d58fe490ed2795f8c8cdba9d159ca56509f934eb60969242995",
@@ -7430,10 +7430,10 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md": "44696b86b755051420ac99b8a8d35a846a43b4d5c17f8c937236a52770ba5141",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md": "09fb8b4b2a5c42e5b6ef7659c7142bca8e9322f10fe71c567461d9889845ab4c",
     "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md": "ef6b557f1fa92a36677b5465c3859970ad453d22f86636b1e1ad9730b2d60b19",
-    "theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md": "037e4423ef348b2291c8f69450e9f0143dcf6386dcefca9c921d05842de8cd64",
+    "theories/becoming/history/COGNITION-LI-AND-RECIPROCITY.md": "037e4423ef348b2291c8f69450e9f0143dcf6386dcefca9c921d05842de8cd64",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md": "b631dcc0f5d27c9eddb16a5ee01b7c8ec25ee63a26129dbac95cec2218184c68",
     "sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md": "58acdb47418b1aaa79268d8d87e8d59e2884c97c3231f28a8828b2419658ad58",
-    "theories/becoming/chapters/NEW-POSSIBILITIES.md": "229c2e99dd8ff551b4248dbddb2b9856aa31cd84d3b6866ec7c3d62eaa194ae9",
+    "theories/becoming/history/NEW-POSSIBILITIES.md": "229c2e99dd8ff551b4248dbddb2b9856aa31cd84d3b6866ec7c3d62eaa194ae9",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/NEW-POSSIBILITIES-INTEGRATION.md": "f2675a572456e1867f90541168deca21880bbddf3caeeeca08a55f230ceb5d69",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/NEW-POSSIBILITIES-REVIEW.md": "e8011c0d1c348d75df1adbee232fb22d55fce1f76012be9e770e9e82ae596def",
     "experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean": "02cd61df3711b01238c86c71c85ca6ad251443403ad3709ecfd7296e9a89c363",
@@ -7448,7 +7448,7 @@
     "sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md": "4874cdfca69ff77c359228b734d7406c99fbc8236b5813a8a1ed2d38aa389a6b",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalPriorityIdentification.lean": "d7416c92ea8ff688b72d4f660e5ef592fa45287f1f964a0f52419b2ebf1a99cb",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/priority-identification-verification.json": "94ffadaeb98221d528cc73ccdd3c4ad9b3f111fd4500fdef4df128973848be6d",
-    "theories/becoming/chapters/SUSTAINED-LIVING-JUDGMENT.md": "5099e076723d9b0d397e015778ac75137adcc28b2c5a5c612776918eb6adb6f4",
+    "theories/becoming/history/SUSTAINED-LIVING-JUDGMENT.md": "5099e076723d9b0d397e015778ac75137adcc28b2c5a5c612776918eb6adb6f4",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md": "bf8f6f012851659f128ccd5017de6b8707397ea2add29fb98e1834b44c52531c",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-EVIDENCE.md": "39cf8f48c30bda211c95330e3ebbe23c1fce76f23951453cb24720a7bc9a775d",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md": "8bc35d1d6a6ff9626bf52bd8142a991f494e694c7d491c618b3c476ecf6e627d",
@@ -7469,7 +7469,7 @@
     "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean": "24f8eb4269927017b6e65841011c3a4a52002bfe405bf5d09d8a99be7c0cf273",
     "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json": "4066bb9dd83ea1863d3600fc7327fd696c7c95d6de56de1e9cab6354314c1b20",
     "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md": "daeff2973381b6ead0c8db8e895555acf5011b591a638e701d4d704ed7fd24b7",
-    "theories/becoming/chapters/SHENGSHENG.md": "be510a31ee5d682e40c8f0afc595b473a23e4d2c7f4ef72a3ec0fd82f84ce00e",
+    "theories/becoming/history/SHENGSHENG.md": "be510a31ee5d682e40c8f0afc595b473a23e4d2c7f4ef72a3ec0fd82f84ce00e",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md": "509ab7cb483f729f198bbc9b748448c26a852c7dacf906003dc85964d3965ebb",
     "sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md": "4c0d5f3badb826471a8d77120719df0762610d6ec81d52d7ad2ab6f5ad3cc64d",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md": "6a9ede7c4eca40aed309ecfa2b828a5185086d68bf887ec7e994aeacc04e01de",
@@ -7487,7 +7487,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-EXPANSION-REVIEW.md": "5e14c2d7e290d1a9572e5eeeeb99fc61e19879dde1706b80b08c5a77e36118a2",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingExpansion.lean": "56cf7f14e430a0697d06265700a078a6d1ca551d072286c350d11bb9cb7e04aa",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-expansion-verification.json": "8f5c2310231464ce785cfcc0255cc8c50db4796090f8010320a4f0b610ead1b8",
-    "theories/becoming/chapters/EXPLANATORY-NECESSITY.md": "3fe5a1c8bb98fce8a99922a44663342166fdb7019ed5dec187f64d05fdf4369f",
+    "theories/becoming/history/EXPLANATORY-NECESSITY.md": "3fe5a1c8bb98fce8a99922a44663342166fdb7019ed5dec187f64d05fdf4369f",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md": "fd95dc96946675a76559c665207111172f5200950c610cb954e2e804e2b1655d",
     "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md": "2bf24057bfd01e9c0a4850e1146e5a3a38c1b68600c72ae0775b705adf86056f",
     "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
@@ -7498,7 +7498,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md": "cd558f01f7314143f20251e4a293a02a2f7dc2950ec77f5230399cbcb7b7f393",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md": "c7bfb18246d92d984145ddfc9a50672d0c81a5929cc23e53bcf48b905d2e86e9",
     "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md": "b45a269fc679cfe24c4dcb142f4e39e73d403502be62a7c11c3ca5fa3317f2d9",
-    "theories/becoming/chapters/PROVED-CONNECTIONS.md": "a3d9a108978b458f24e8857dec9e7feb27a8ef97dd560f703214c19c71164d25",
+    "theories/becoming/history/PROVED-CONNECTIONS.md": "a3d9a108978b458f24e8857dec9e7feb27a8ef97dd560f703214c19c71164d25",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-INTEGRATION.md": "e0cac9ba2cc8ef486d3597b651a048dd7af3a687cc7efdc77dfb46ead342e28c",
     "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean": "d91f3c391fd7c98ea9f9f8dd8ee050618604b32217b9e6610753129d580268a6",
     "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-judgment-verification.json": "c4b8a1ed9cbd2907c668405b112db417285578c0ebf4cdd11b262fcc3b41f415",
@@ -7506,7 +7506,7 @@
     "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean": "1146c7238dfd20e8d9dfede3f79704c8fc68c4e3879c4edb65c466249c612b86",
     "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean": "9e3e4e21ff47851b16ae85de09d2c3666a48a6c20b3108b78435422e9c48389a",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md": "c12057851f15e7851cdda579de598d06f3b9b9d27c7a0753f14662acd98963ea",
-    "theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md": "c52c7b93dfe19e63d0520fa82340b87e04d8e41ae7642563bdc2c157de611b25",
+    "theories/becoming/history/MEASURED-FEEDBACK-CORRESPONDENCE.md": "c52c7b93dfe19e63d0520fa82340b87e04d8e41ae7642563bdc2c157de611b25",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-EMPIRICAL.md": "2f948ff17e1efdaa8f4be0fe4074598721a91c8c3390bf84ceb1dce26649e7e5",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md": "d67ee12dff4e02867904384ce430749dd48fc69d229351d7b0d014fea8906101",
     "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean": "cdc9881f5929d1713f051305f3817329ee90ed12a05a323df330bb5df817972e",
@@ -7547,7 +7547,7 @@
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/formed-grounds-verification.json": "109f3cb54fbeba8e1b5e3ddd1eaf97fe5ae8045c3c2c17c12cb97dfd1c123a59",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_formed_grounds.py": "36730f5003e4f391ac0c11b44c555e7aafd96fbf6f6960b719650fdc2884fedf",
-    "theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md": "3e26f9fa9f184d5de0ffbcf80eb615120398036acb4c05321bed450c52db8d8b",
+    "theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md": "3e26f9fa9f184d5de0ffbcf80eb615120398036acb4c05321bed450c52db8d8b",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md": "d898f854cd92d4b8ec3ff1f30efb897d295d8fd259909c15b60531c0d43c2266",
     "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md": "20f25f5a6fdd932f6c650765515d0e6e8e050665b96939e7b79150886a347770",
     "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/enacted-foundation-verification.json": "f8f6d2819b3423ec263f683990b0cf36b57a7b484820fbd17a60b27eb8cccb3a",
@@ -7623,11 +7623,11 @@
     "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryMinimalModels.lean": "ddfa05db387f79cb2cad31fbde3f33ce21cdfe7f5a23e61a9ca68596c4c7e642",
     "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryDeterminism.lean": "6ec81dacc176ce8265514d410acbb85511c89037d93bb6668ee62e9a7051e4f8",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-WARRANT-ARGUMENT.md": "51bb5fd9c25fbc2b17e7ca51616db4f350626884e50190c178f97379e9e874a3",
-    "theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md": "f0094759f44d34d09aa7d61abd79755df55aacb3b58f93648dd2199942bca0c3",
+    "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md": "f0094759f44d34d09aa7d61abd79755df55aacb3b58f93648dd2199942bca0c3",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md": "91cf44a5e4382b2f82d6ce36431a1b2e48a7849939f72ed8bcf579a71708f879",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/verification.json": "c067debaaccebfcc20d2197b938333e273557163346676d2dbc1a9c5bdc0bc3b",
     "sources/evolutionary-selection/evolutionary-organization/README.md": "ce0ef7c7cdd22667e3731b7cdd196e6513ad98b8b990528de2ffccd3d6f266e2",
-    "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md": "5847f94a6e5da60e368abf178c386e90e727cdce5ad95161d23255a6eeea1914",
+    "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md": "5847f94a6e5da60e368abf178c386e90e727cdce5ad95161d23255a6eeea1914",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md": "4099079c035848864ec4501d9d7c912123d2448669401e08c388865e5238f305",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean": "90c5903cf3d1382304fa91dc3336e7a8ae20c89695ea4c9baabd9b95bd068038",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_goal_formation_revision.py": "8a143555c5f0451fb621c66e9a19e4a2d1562848ff81b0fb21982c005a9fe590",
@@ -7644,7 +7644,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-REVIEW.md": "2b1b37dbef8a7699db0934cbf243379726402eb0b17ddde4c1e3120dd271c3ca",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/verification.json": "e2c4024a71a6da246c557b74bf80d82fd3865713173eef1b1c7305f2e978f530",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md": "45c61fc045595f190005d320cea02eb2438182ffa630c95315df1dd00667aaaf",
-    "theories/becoming/chapters/SYSTEM-INDIVIDUATION.md": "62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7",
+    "theories/becoming/history/SYSTEM-INDIVIDUATION.md": "62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7",
     "sources/15-codex-theory-conversations/2026-10-08-systems-foundation-question.md": "244f727cc64ba5b15b7ce1b1b482620967e866d2eb6a171ebdb68a2138a203d1",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md": "55f26ce5eeb7497cfcff8355b6da27ccf69ac8aeb655bf94c07b67275ef91ac4",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md": "249db407ffd418ef968461608728307641b0078d4307235dcfce3a43eb5594c6",
@@ -7654,7 +7654,7 @@
     "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e",
     "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranchingWitnesses.lean": "5752e5e2edbe49949aa2eff33484362d0e32a0572461e26079fe49497ca87ac8",
     "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranchingRecovery.lean": "4fd1091925535ec8d685c93021669a74ff09d09d4c1fa3ac401710a818c26699",
-    "theories/becoming/chapters/SYSTEM-WARRANT.md": "8ad112db9f4b6c4da1abeb993cf2d397eb7adffe98af63b0eb2dd9e83e044e0e",
+    "theories/becoming/history/SYSTEM-WARRANT.md": "8ad112db9f4b6c4da1abeb993cf2d397eb7adffe98af63b0eb2dd9e83e044e0e",
     "sources/15-codex-theory-conversations/2026-10-08-variation-warrant-question.md": "0fa6fd508721e68a05343204339882f3ae066b42088fe5add7d619aeadf30c3f",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md": "95b200be958525fc6a678d1fd87bec5e57d5088e29ab18c7565388baf95f0e4c",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md": "bf7dd25401c167f62f58ef0aa39c1877c3dc3ec9e70e4ef48c77dfb8f1a3a54e",
@@ -7715,7 +7715,7 @@
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-repair-model-checks.json": "f88e24c036ac1546ddf4ea8e42eebbc154731721a457998fb01e0e28ee42459e",
     "theories/becoming/chapters/ETHICAL-LEARNING.md": "c5825f8cd2b3796da906e6e6d49e8c9f2147e1b2e9763f673d7c50d4fc33a8a2",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md": "e5ef4dbdb77f657b4daa0121f08596a3d62e02af8777cd5d7e0404b44ededd42",
-    "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md": "afe58ed9ef40cd923ca6081528b9e65197d0e15cb976a0180b30525596b95794",
+    "theories/becoming/history/CONCERN-AND-NEW-REASONS.md": "afe58ed9ef40cd923ca6081528b9e65197d0e15cb976a0180b30525596b95794",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-EXTENSION-INTEGRATION.md": "4258df59b18d32e8d757c5bc62bbbaef2fc64f815a64823db4f83f5d514095ba",
     "sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md": "26fae7747ea36f2390b11cffb461c333615d5a43ba3f61a5f4784142d869ed1c",
     "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean": "f835741c8d9efc49eabb6f4d82db0488e5f46f308fd0f1500bd8692a62590893",
@@ -9443,142 +9443,142 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-SOURCES.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
-    "theories/becoming/chapters/ABSTRACTION-ACQUISITION.md",
-    "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md",
-    "theories/becoming/chapters/ALIGNMENT-AXIS.md",
+    "theories/becoming/history/ABSTRACTION-ACQUISITION.md",
+    "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/becoming/history/ALIGNMENT-AXIS.md",
     "theories/becoming/chapters/ALIGNMENT-COMPLETION.md",
     "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
     "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md",
-    "theories/becoming/chapters/ARCHITECTURE-FORMATION.md",
-    "theories/becoming/chapters/ARCHITECTURE-LEARNING.md",
-    "theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md",
-    "theories/becoming/chapters/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
-    "theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md",
+    "theories/becoming/history/ARCHITECTURE-FORMATION.md",
+    "theories/becoming/history/ARCHITECTURE-LEARNING.md",
+    "theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md",
+    "theories/becoming/history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md",
+    "theories/becoming/history/AUTONOMOUS-METHOD-FORMATION.md",
     "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
     "theories/becoming/chapters/BECOMING-FOUNDATION.md",
     "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md",
-    "theories/becoming/chapters/CLAIMS-AND-PAID-ACTION.md",
+    "theories/becoming/history/CLAIMS-AND-PAID-ACTION.md",
     "theories/becoming/chapters/CLAIMS.md",
     "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
-    "theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md",
-    "theories/becoming/chapters/COMPLETION-PLAN.md",
-    "theories/becoming/chapters/CONCERN-AND-CORRECTION.md",
-    "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md",
-    "theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md",
-    "theories/becoming/chapters/CONNECTED-GENERATIVE-MODEL.md",
-    "theories/becoming/chapters/CONTROLLED-REFINEMENT.md",
-    "theories/becoming/chapters/COST-SENSITIVE-LEARNING.md",
-    "theories/becoming/chapters/CYBERNETICS.md",
+    "theories/becoming/history/COGNITION-LI-AND-RECIPROCITY.md",
+    "theories/becoming/history/COMPLETION-PLAN.md",
+    "theories/becoming/history/CONCERN-AND-CORRECTION.md",
+    "theories/becoming/history/CONCERN-AND-NEW-REASONS.md",
+    "theories/becoming/history/CONDITIONAL-UNIVERSALITY.md",
+    "theories/becoming/history/CONNECTED-GENERATIVE-MODEL.md",
+    "theories/becoming/history/CONTROLLED-REFINEMENT.md",
+    "theories/becoming/history/COST-SENSITIVE-LEARNING.md",
+    "theories/becoming/history/CYBERNETICS.md",
     "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
-    "theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md",
-    "theories/becoming/chapters/EMPIRICAL-SCOPE.md",
-    "theories/becoming/chapters/ETHICAL-FOUNDATION.md",
+    "theories/becoming/history/DEEPER-GENERATIVE-ROOT.md",
+    "theories/becoming/history/EMPIRICAL-SCOPE.md",
+    "theories/becoming/history/ETHICAL-FOUNDATION.md",
     "theories/becoming/chapters/ETHICAL-LEARNING.md",
-    "theories/becoming/chapters/EVALUATION-AND-FAITHFUL-REPORTING.md",
-    "theories/becoming/chapters/EVALUATIVE-APPLICATION.md",
-    "theories/becoming/chapters/EVALUATIVE-GROUNDING.md",
-    "theories/becoming/chapters/EVALUATIVE-PLASTICITY.md",
-    "theories/becoming/chapters/EVALUATIVE-SUCCESSION.md",
-    "theories/becoming/chapters/EVALUATIVE-UPTAKE.md",
-    "theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
-    "theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md",
-    "theories/becoming/chapters/EXPERIMENTAL-ACCESS.md",
-    "theories/becoming/chapters/EXPLANATORY-NECESSITY.md",
+    "theories/becoming/history/EVALUATION-AND-FAITHFUL-REPORTING.md",
+    "theories/becoming/history/EVALUATIVE-APPLICATION.md",
+    "theories/becoming/history/EVALUATIVE-GROUNDING.md",
+    "theories/becoming/history/EVALUATIVE-PLASTICITY.md",
+    "theories/becoming/history/EVALUATIVE-SUCCESSION.md",
+    "theories/becoming/history/EVALUATIVE-UPTAKE.md",
+    "theories/becoming/history/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+    "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md",
+    "theories/becoming/history/EXPERIMENTAL-ACCESS.md",
+    "theories/becoming/history/EXPLANATORY-NECESSITY.md",
     "theories/becoming/chapters/FORMAL-CORE.md",
     "theories/becoming/chapters/FORMAL-SPECIFICATION.md",
-    "theories/becoming/chapters/FORMATION-MATH.md",
-    "theories/becoming/chapters/FORMATION-PRIOR-ART.md",
-    "theories/becoming/chapters/FORMATION.md",
-    "theories/becoming/chapters/FORMED-ROUTE-MONITOR.md",
-    "theories/becoming/chapters/FOUNDATION-PREMISES.md",
+    "theories/becoming/history/FORMATION-MATH.md",
+    "theories/becoming/history/FORMATION-PRIOR-ART.md",
+    "theories/becoming/history/FORMATION.md",
+    "theories/becoming/history/FORMED-ROUTE-MONITOR.md",
+    "theories/becoming/history/FOUNDATION-PREMISES.md",
     "theories/becoming/chapters/G0-WARRANT.md",
     "theories/becoming/chapters/GENERATED-LOGIC.md",
-    "theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md",
-    "theories/becoming/chapters/GENERATIVE-CORE-LEAN.md",
-    "theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md",
-    "theories/becoming/chapters/GENERATIVE-GROUNDING.md",
-    "theories/becoming/chapters/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md",
-    "theories/becoming/chapters/GENERATIVE-SELECTION.md",
-    "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md",
+    "theories/becoming/history/GENERATED-SELF-AND-ETHICS.md",
+    "theories/becoming/history/GENERATIVE-CORE-LEAN.md",
+    "theories/becoming/history/GENERATIVE-DEVELOPMENT.md",
+    "theories/becoming/history/GENERATIVE-GROUNDING.md",
+    "theories/becoming/history/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md",
+    "theories/becoming/history/GENERATIVE-SELECTION.md",
+    "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md",
     "theories/becoming/chapters/HANZI-AND-THEORY-TREE.md",
-    "theories/becoming/chapters/HUIGEN.md",
-    "theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md",
-    "theories/becoming/chapters/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
-    "theories/becoming/chapters/INQUIRY-REVISION.md",
-    "theories/becoming/chapters/JOINT-FORMATION-MATH.md",
-    "theories/becoming/chapters/JOINT-FORMATION.md",
-    "theories/becoming/chapters/JOINT-OBSTRUCTIONS.md",
-    "theories/becoming/chapters/JOINT-PRIOR-ART.md",
+    "theories/becoming/history/HUIGEN.md",
+    "theories/becoming/history/IMMANENT-MATHEMATICAL-IDENTITY.md",
+    "theories/becoming/history/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
+    "theories/becoming/history/INQUIRY-REVISION.md",
+    "theories/becoming/history/JOINT-FORMATION-MATH.md",
+    "theories/becoming/history/JOINT-FORMATION.md",
+    "theories/becoming/history/JOINT-OBSTRUCTIONS.md",
+    "theories/becoming/history/JOINT-PRIOR-ART.md",
     "theories/becoming/chapters/KNOWLEDGE.md",
-    "theories/becoming/chapters/LEARNING-INTERFACE.md",
-    "theories/becoming/chapters/LEARNING-ROUTE-REVISION.md",
+    "theories/becoming/history/LEARNING-INTERFACE.md",
+    "theories/becoming/history/LEARNING-ROUTE-REVISION.md",
     "theories/becoming/chapters/LIANGZHI-EVOLUTION.md",
-    "theories/becoming/chapters/LIVING-DEPENDENCIES.md",
+    "theories/becoming/history/LIVING-DEPENDENCIES.md",
     "theories/becoming/chapters/MARKET-DYNAMICS-MATH.md",
     "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
-    "theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md",
-    "theories/becoming/chapters/MATERIAL-SELECTOR-COMPOSITION.md",
-    "theories/becoming/chapters/MATERIAL-UPDATER-COMPOSITION.md",
+    "theories/becoming/history/MATERIAL-PREDICTION-COMPOSITION.md",
+    "theories/becoming/history/MATERIAL-SELECTOR-COMPOSITION.md",
+    "theories/becoming/history/MATERIAL-UPDATER-COMPOSITION.md",
     "theories/becoming/chapters/MATHEMATICAL-CORE.md",
     "theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md",
-    "theories/becoming/chapters/MATHEMATICAL-TRUTH-AND-THE-ROOT.md",
-    "theories/becoming/chapters/MATHEMATICS-AND-GENERATIVITY.md",
-    "theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md",
-    "theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md",
-    "theories/becoming/chapters/META-REVISION.md",
-    "theories/becoming/chapters/METHOD-REVISION.md",
-    "theories/becoming/chapters/MODEL-FAMILY-REVISION.md",
-    "theories/becoming/chapters/NEW-POSSIBILITIES.md",
+    "theories/becoming/history/MATHEMATICAL-TRUTH-AND-THE-ROOT.md",
+    "theories/becoming/history/MATHEMATICS-AND-GENERATIVITY.md",
+    "theories/becoming/history/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+    "theories/becoming/history/MEMORY-CORRECTION-AND-SUCCESSION.md",
+    "theories/becoming/history/META-REVISION.md",
+    "theories/becoming/history/METHOD-REVISION.md",
+    "theories/becoming/history/MODEL-FAMILY-REVISION.md",
+    "theories/becoming/history/NEW-POSSIBILITIES.md",
     "theories/becoming/chapters/NONDUAL-METHOD.md",
     "theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md",
-    "theories/becoming/chapters/PAID-PREIMPORT-EVIDENCE.md",
+    "theories/becoming/history/PAID-PREIMPORT-EVIDENCE.md",
     "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
     "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md",
     "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
     "theories/becoming/chapters/PRE-QIN-AND-WENYAN.md",
-    "theories/becoming/chapters/PREDICTION-ACTION.md",
-    "theories/becoming/chapters/PREDICTION-PROTOCOL.md",
-    "theories/becoming/chapters/PROTOCOL-COMPLETION.md",
-    "theories/becoming/chapters/PROTOCOL-COMPOSITION.md",
-    "theories/becoming/chapters/PROVED-CONNECTIONS.md",
-    "theories/becoming/chapters/REASON-PROTECTION.md",
-    "theories/becoming/chapters/RECIPIENT-CORRECTION.md",
-    "theories/becoming/chapters/RECIPIENT-CUE-GROUNDING.md",
-    "theories/becoming/chapters/RECIPIENT-HARM-AND-ACTION.md",
-    "theories/becoming/chapters/RECIPIENT-REASON-ACTION.md",
-    "theories/becoming/chapters/RECIPIENT-REASON-REVISION.md",
-    "theories/becoming/chapters/RECIPIENT-RENEWAL.md",
-    "theories/becoming/chapters/RECIPIENT-TRANSMISSION.md",
-    "theories/becoming/chapters/RECORDED-REASONS.md",
+    "theories/becoming/history/PREDICTION-ACTION.md",
+    "theories/becoming/history/PREDICTION-PROTOCOL.md",
+    "theories/becoming/history/PROTOCOL-COMPLETION.md",
+    "theories/becoming/history/PROTOCOL-COMPOSITION.md",
+    "theories/becoming/history/PROVED-CONNECTIONS.md",
+    "theories/becoming/history/REASON-PROTECTION.md",
+    "theories/becoming/history/RECIPIENT-CORRECTION.md",
+    "theories/becoming/history/RECIPIENT-CUE-GROUNDING.md",
+    "theories/becoming/history/RECIPIENT-HARM-AND-ACTION.md",
+    "theories/becoming/history/RECIPIENT-REASON-ACTION.md",
+    "theories/becoming/history/RECIPIENT-REASON-REVISION.md",
+    "theories/becoming/history/RECIPIENT-RENEWAL.md",
+    "theories/becoming/history/RECIPIENT-TRANSMISSION.md",
+    "theories/becoming/history/RECORDED-REASONS.md",
     "theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md",
-    "theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md",
-    "theories/becoming/chapters/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
-    "theories/becoming/chapters/ROUTE-DIAGNOSTICS.md",
+    "theories/becoming/history/REVISABLE-CONCERN-SETTLEMENT.md",
+    "theories/becoming/history/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+    "theories/becoming/history/ROUTE-DIAGNOSTICS.md",
     "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
-    "theories/becoming/chapters/SELECTOR-REVISION.md",
-    "theories/becoming/chapters/SEMANTIC-ACTION-COMPOSITION.md",
-    "theories/becoming/chapters/SEMANTIC-CALIBRATION.md",
-    "theories/becoming/chapters/SHENGSHENG.md",
-    "theories/becoming/chapters/SOURCE-MAP.md",
-    "theories/becoming/chapters/START-HERE.md",
-    "theories/becoming/chapters/STOCHASTIC-PREDICTION-COMPOSITION.md",
-    "theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md",
-    "theories/becoming/chapters/SUCCESSOR-LEARNING.md",
-    "theories/becoming/chapters/SUSTAINED-LIVING-JUDGMENT.md",
-    "theories/becoming/chapters/SYNTHESIS-RECORD.md",
-    "theories/becoming/chapters/SYSTEM-INDIVIDUATION.md",
-    "theories/becoming/chapters/SYSTEM-WARRANT.md",
-    "theories/becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md",
+    "theories/becoming/history/SELECTOR-REVISION.md",
+    "theories/becoming/history/SEMANTIC-ACTION-COMPOSITION.md",
+    "theories/becoming/history/SEMANTIC-CALIBRATION.md",
+    "theories/becoming/history/SHENGSHENG.md",
+    "theories/becoming/history/SOURCE-MAP.md",
+    "theories/becoming/history/START-HERE.md",
+    "theories/becoming/history/STOCHASTIC-PREDICTION-COMPOSITION.md",
+    "theories/becoming/history/STRONGEST-FOUNDATION-CLAIM.md",
+    "theories/becoming/history/SUCCESSOR-LEARNING.md",
+    "theories/becoming/history/SUSTAINED-LIVING-JUDGMENT.md",
+    "theories/becoming/history/SYNTHESIS-RECORD.md",
+    "theories/becoming/history/SYSTEM-INDIVIDUATION.md",
+    "theories/becoming/history/SYSTEM-WARRANT.md",
+    "theories/becoming/history/SYSTEMS-COMPLEXITY-CHAOS.md",
     "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
     "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
     "theories/becoming/chapters/THEORY-OF-BECOMING.md",
-    "theories/becoming/chapters/THEORY.md",
-    "theories/becoming/chapters/TOOL-EVIDENCE-AND-AUTHORITY.md",
-    "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
-    "theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md",
-    "theories/becoming/chapters/UPDATER-FORMATION.md",
-    "theories/becoming/chapters/VALUATION-DEVELOPMENT.md",
-    "theories/becoming/chapters/VALUATION-IDENTIFICATION-BOUNDS.md",
+    "theories/becoming/history/THEORY.md",
+    "theories/becoming/history/TOOL-EVIDENCE-AND-AUTHORITY.md",
+    "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md",
+    "theories/becoming/history/UNIVERSAL-ETHICAL-MINIMUM.md",
+    "theories/becoming/history/UPDATER-FORMATION.md",
+    "theories/becoming/history/VALUATION-DEVELOPMENT.md",
+    "theories/becoming/history/VALUATION-IDENTIFICATION-BOUNDS.md",
     "theories/becoming/chapters/WANG-YANGMING.md",
     "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
     "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md"

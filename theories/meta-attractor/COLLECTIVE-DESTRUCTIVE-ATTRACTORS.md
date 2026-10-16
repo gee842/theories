@@ -235,7 +235,7 @@ The proposed subsystem is a differentiated organization of sensing, memory, infe
 
 Including action is essential. More accurate prediction does not by itself supply authority, cooperation, time or material means to act. Conversely, a robust protective arrangement can sometimes preserve a condition without predicting every detail. The question is whether adequate, warranted responses actually occur in time, including where no participant represents the entire history.
 
-The existing [systems and complexity account](../becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md) already distinguishes corrective direction, timing, stability and supplied laws. The parallel [reproduction study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md) now checks conditional reproduction of materially supported admission and its failure; its criteria and faithful implementation remain supplied. These are completed inputs. They are not silently composed into a proof of the present complexity hypothesis.
+The existing [systems and complexity account](../becoming/history/SYSTEMS-COMPLEXITY-CHAOS.md) already distinguishes corrective direction, timing, stability and supplied laws. The parallel [reproduction study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md) now checks conditional reproduction of materially supported admission and its failure; its criteria and faithful implementation remain supplied. These are completed inputs. They are not silently composed into a proof of the present complexity hypothesis.
 
 Our population result directly establishes one narrower imbalance: profitable replacement can outrun the accumulation of corrective funding. It does not measure exponentially growing complexity or declining understanding. Its payoff ordering can be perfectly understood while its funding and action relation still fails. The new proposal generalizes the question from a funding opportunity to the whole sequence from discernment through collective response; that generalization is still to be established.
 
@@ -459,7 +459,7 @@ The positive escrow theorem actually assumes a reliable classification/settlemen
 
 ### Start with organization and differentiated functions
 
-The existing [system-individuation account](../becoming/chapters/SYSTEM-INDIVIDUATION.md) identifies organized capacities through their operative relations. The [relational correction account](../becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#8-start-with-relations-and-derive-the-correction-boundary) already starts from coupled recognition, requests, translation, support and effects. The present correction reuses those results instead of restarting a theory of systems or claiming that relation-first analysis is newly discovered.
+The existing [system-individuation account](../becoming/history/SYSTEM-INDIVIDUATION.md) identifies organized capacities through their operative relations. The [relational correction account](../becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#8-start-with-relations-and-derive-the-correction-boundary) already starts from coupled recognition, requests, translation, support and effects. The present correction reuses those results instead of restarting a theory of systems or claiming that relation-first analysis is newly discovered.
 
 Within continuing activity, some differentiated relations can integrate consequences across locations or times, others can realize particular responses, and retained consequences can change how later responses are selected. Relatively central coordination is one possible organization of these functions. It need not be a separate sovereign pursuing a private goal against all the other parts. Its contribution to joint operation, conditions of formation, actual reach and scope of reliability should be explained. Distributed regulation and mixed arrangements require the same kind of account; neither decentralization nor centralization receives an a priori verdict.
 
@@ -501,7 +501,7 @@ G0/J remain the explicit normative account for assessing continuation, transform
 
 ### 对 corrigibility 的推进：共同修订任务本身
 
-现有[目的形成与修订](../becoming/chapters/GOAL-FORMATION-AND-REVISION.md)已经解释在明确条件下认识目的的形成、改变成就判准并让后来行动依赖新目的；[关系纠正与变化中的接续](../becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#12-correction-depends-on-the-requests-history)已经检查请求怎样通过变化中的关系有效到达。两者均为成果，不能重开为一般待做任务。
+现有[目的形成与修订](../becoming/history/GOAL-FORMATION-AND-REVISION.md)已经解释在明确条件下认识目的的形成、改变成就判准并让后来行动依赖新目的；[关系纠正与变化中的接续](../becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#12-correction-depends-on-the-requests-history)已经检查请求怎样通过变化中的关系有效到达。两者均为成果，不能重开为一般待做任务。
 
 本会话现在要连接的是：**共同活动中取得的新认识，怎样改变正在指导共同活动的问题表述与任务，同时进入已经在执行的调节关系。** 这比“各部分同意旧目标”更具体。供水情境中，原来规定的灌溉请求可能被可靠送达，但后来发现继续照做会破坏当下的生活条件。此时既要保留已知需求和实际依存，也要有根据地撤回、改写或接续原请求。正确传达旧指令不独自回答现在该做什么。
 

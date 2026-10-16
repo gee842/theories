@@ -1,6 +1,6 @@
 # Completion within the common process account
 
-6 October 2026. AI-authored integration record. **Status: accepted at the stated conditional scope.** The [canonical account](../../../../theories/becoming/chapters/PROTOCOL-COMPLETION.md) connects the checked general result and unchanged predictor application to requirement 3.
+6 October 2026. AI-authored integration record. **Status: accepted at the stated conditional scope.** The [canonical account](../../../../theories/becoming/history/PROTOCOL-COMPLETION.md) connects the checked general result and unchanged predictor application to requirement 3.
 
 ## The obligation being discharged
 

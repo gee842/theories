@@ -12,7 +12,7 @@ This is reciprocal core/tree articulation. The branch constrains what the genera
 
 ## What the existing history establishes
 
-The central evidence is [autonomous method formation](../../../../theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md). In its admitted four-state environment, six acquired sensor readings contradict every candidate produced through the initially formed G0 connection. The connection is removed and a G1 connection formed. The accepted trial model is discarded. A later invocation rereads the retained connection, generates candidates again and then performs a fresh native prediction test. Breaking the retained connection blocks this later use even while the earlier acceptance label survives.
+The central evidence is [autonomous method formation](../../../../theories/becoming/history/AUTONOMOUS-METHOD-FORMATION.md). In its admitted four-state environment, six acquired sensor readings contradict every candidate produced through the initially formed G0 connection. The connection is removed and a G1 connection formed. The accepted trial model is discarded. A later invocation rereads the retained connection, generates candidates again and then performs a fresh native prediction test. Breaking the retained connection blocks this later use even while the earlier acceptance label survives.
 
 The initial receipt selects a connection row; the sensor archive constrains compatibility. Neither resource return nor an analyst's correctness label chooses the replacement. The two method trials replay the same acquired archive; they are not separate fresh experiments on the environment. The changed arrangement governs later candidate generation, while the record-acquisition schedule remains supplied.
 

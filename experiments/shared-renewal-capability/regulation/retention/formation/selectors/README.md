@@ -1,6 +1,6 @@
 # Costed revision of a response-selection mapping
 
-6 October 2026. Executable study following [Ren's request](../../../../../../sources/15-codex-theory-conversations/2026-10-06-costed-selector-revision-request.md). Read the [canonical account](../../../../../../theories/becoming/chapters/SELECTOR-REVISION.md), [mathematics](../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md), [comparators](../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-COMPARATORS.md) and [internal review](../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md).
+6 October 2026. Executable study following [Ren's request](../../../../../../sources/15-codex-theory-conversations/2026-10-06-costed-selector-revision-request.md). Read the [canonical account](../../../../../../theories/becoming/history/SELECTOR-REVISION.md), [mathematics](../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-MATH.md), [comparators](../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-COMPARATORS.md) and [internal review](../../../../../../_process/history/2026-10-05-support-and-shared-generativity/completion/SELECTOR-REVISION-REVIEW.md).
 
 ## What was executed
 

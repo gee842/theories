@@ -8,18 +8,18 @@
 
 这一判定不声称 C1/C2 已从纯因果公理证明，也不证明一体之仁的全部对象范围、普遍理性强制、任意患者冲突的优先次序或自主道德成长。给定程序能实现一个有根据的回应，与程序因认识其道德根据而行动，是不同命题；此次运行守卫不读取 `Merit` 或 C2。
 
-新增贡献比重复既有理由可达性定理更具体：此前[理由传递](HUIGEN-REASON-TRANSPORT.md)刻画哪些给定锚和有效传递能覆盖目标；[评价奠基](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md)已将形成的动机用于有根据的角色修复。这一轮把 C1/C2、患者/事件索引、当前方案费用及真实交付的相容条件直接落实于既有 `Generative.Process` 和 `Trace`。它是新局部实现，未声称继承旧可塑性模型的完整材料与学习历史。
+新增贡献比重复既有理由可达性定理更具体：此前[理由传递](HUIGEN-REASON-TRANSPORT.md)刻画哪些给定锚和有效传递能覆盖目标；[评价奠基](../../../../theories/becoming/history/EVALUATIVE-GROUNDING.md)已将形成的动机用于有根据的角色修复。这一轮把 C1/C2、患者/事件索引、当前方案费用及真实交付的相容条件直接落实于既有 `Generative.Process` 和 `Trace`。它是新局部实现，未声称继承旧可塑性模型的完整材料与学习历史。
 
 ## 2. 正向原则与仍需回答的对手
 
-审查者认可的最强当前起点，是[最新构成性候选](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#the-constitutive-candidate-and-its-test)的 C2：在独立识别的干净领域内，同一患者确有严重、仍不愿继续的体验性负担；某行动者有保持该患者、合宜且有效缓解的现实方案，那么这种缓解构成该选项的一项患者指向道德优点，先于行动者私人采纳帮助目标。
+审查者认可的最强当前起点，是[最新构成性候选](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#the-constitutive-candidate-and-its-test)的 C2：在独立识别的干净领域内，同一患者确有严重、仍不愿继续的体验性负担；某行动者有保持该患者、合宜且有效缓解的现实方案，那么这种缓解构成该选项的一项患者指向道德优点，先于行动者私人采纳帮助目标。
 
 正面理由是它能解释：为什么为这个患者选择真正有效的救助有根据；为什么同样费力的空转缺少这一优点；为什么只降低旁观者不适不是完成回应；为什么新发现的正确手段可以替代旧方法而不抹除患者根据。其充分性仍属实质伦理判断，不能通过把 `Merit` 定义为因果改善来取得。
 
 必须保持三种不同挑战：
 
 1. **私人采纳之前是否存在道德优点。** 真正的 elective-concern 对手承认患者之坏，却主张合法自愿关切或某种关系是这个行动者理由的必要部分。它必须说明选择之前的患者利益为何没有任何正向效力。承认客观道德要求而仅限制更强理性权威的对手，不是这个主张的直接反例。
-2. **有理由是否已有义务。** 一个对手可承认 C2 的优点，却坚持陌生人的需要不能在没有责任关系时限制自主活动。本轮 C2 没有证明它错误；[有限救助研究](../../../../theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md#from-moral-favor-to-a-bounded-rescue-requirement)另行辩护从比较到要求的原则。
+2. **有理由是否已有义务。** 一个对手可承认 C2 的优点，却坚持陌生人的需要不能在没有责任关系时限制自主活动。本轮 C2 没有证明它错误；[有限救助研究](../../../../theories/becoming/history/UNIVERSAL-ETHICAL-MINIMUM.md#from-moral-favor-to-a-bounded-rescue-requirement)另行辩护从比较到要求的原则。
 3. **持续需要下如何保留多元生活。** 将助手全部终身成本计入，仍可能与很强的持续救助要求相容。资源累计账本不能独自给出正当停止的阈值，也不能证明任何个体项目应让位或不应让位。
 
 因此，本轮形式化接受 C1/C2 的明确地位，检验它们能否与同一操作世界相容；不以成功执行宣告上述争论完结。
@@ -87,7 +87,7 @@
 
 ## 6. 主文和共同理论整合的范围审核
 
-已审核[主文](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md)、[数学说明](NONINSTRUMENTAL-CONCERN-MATH.md)、[模型 README](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)、[形式核心 F14](../../../../theories/becoming/chapters/FORMAL-CORE.md#f14-noninstrumental-patient-reasons-and-paid-response)以及[统一理论 §10](../../../../theories/becoming/chapters/THEORY.md#10-shared-generativity-and-善)。它们应继续使用本轮的三个边界：指定方案的准确费用；固定行动者、分别索引的患者；存在合法实际历史而非所有调度必然实施。
+已审核[主文](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md)、[数学说明](NONINSTRUMENTAL-CONCERN-MATH.md)、[模型 README](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)、[形式核心 F14](../../../../theories/becoming/chapters/FORMAL-CORE.md#f14-noninstrumental-patient-reasons-and-paid-response)以及[统一理论 §10](../../../../theories/becoming/history/THEORY.md#10-shared-generativity-and-善)。它们应继续使用本轮的三个边界：指定方案的准确费用；固定行动者、分别索引的患者；存在合法实际历史而非所有调度必然实施。
 
 F14 将 C1/C2 与先前 F1–F13 区分，没有追溯性地把伦理前提加入旧定理。`candidateMerit` 与 `zeroMerit` 的作用已明确：前者是合同的定义性实例，后者是去掉合同后的相对不蕴涵见证。正向哲学辩护的作用不由这两个形式解释取代。
 

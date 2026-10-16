@@ -4,7 +4,7 @@
 
 **Finding:** the present causal root does not entail unique mathematical constitution. There is a precise underdetermination even when the entire causal process and the entire interpreted mathematical content are fixed. This rules out the inference from the current premises alone; it does not establish that no further metaphysical argument could succeed. A structural-modal account of **all admissible organizations**, with truth indexed to its structure and logic, is a serious positive repair. Plural mathematical structures do not refute that account. Its missing work is to explain admissibility, closure, modality and grounding rather than inherit them from mathematics and rename them.
 
-Read with [the foundational premises](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md), [the deeper root](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md), [the main mathematics formulation](../../../../theories/becoming/chapters/MATHEMATICS-AND-GENERATIVITY.md), [generative presentations](MATHEMATICS-GENERATIVE-PRESENTATIONS.md), [structural results](MATHEMATICS-STRUCTURAL-RESULTS.md) and [learning evidence](MATHEMATICS-LEARNING-EVIDENCE.md).
+Read with [the foundational premises](../../../../theories/becoming/history/FOUNDATION-PREMISES.md), [the deeper root](../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md), [the main mathematics formulation](../../../../theories/becoming/history/MATHEMATICS-AND-GENERATIVITY.md), [generative presentations](MATHEMATICS-GENERATIVE-PRESENTATIONS.md), [structural results](MATHEMATICS-STRUCTURAL-RESULTS.md) and [learning evidence](MATHEMATICS-LEARNING-EVIDENCE.md).
 
 ## 1. Four different claims
 

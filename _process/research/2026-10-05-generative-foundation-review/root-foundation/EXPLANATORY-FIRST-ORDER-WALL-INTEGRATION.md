@@ -6,7 +6,7 @@
 
 **Result:** 33 new Lean theorems establish that agreement on every finite first-order formula in the identity/step/joint signature, even through one coherent elementary embedding, does not force native isomorphism. The two explicit worlds are wholly root-reachable and have genuine joint triples. A positive repair is also checked: an elementary map is an isomorphism exactly when it covers the target carrier. That coverage does not follow from elementary truth preservation. This attempted route has reached a proved wall; universal generative necessity itself remains open.
 
-[Current chapter §§77–82](../../../../theories/becoming/chapters/EXPLANATORY-NECESSITY.md#77-回到普遍唯一性把解释语言加强到底) · [Ren’s instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#延续普遍唯一性直到遇到实质边界--continue-universal-uniqueness-until-a-wall) · [Scoped integration checks](EXPLANATORY-FIRST-ORDER-WALL-CHECKS.json).
+[Current chapter §§77–82](../../../../theories/becoming/history/EXPLANATORY-NECESSITY.md#77-回到普遍唯一性把解释语言加强到底) · [Ren’s instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#延续普遍唯一性直到遇到实质边界--continue-universal-uniqueness-until-a-wall) · [Scoped integration checks](EXPLANATORY-FIRST-ORDER-WALL-CHECKS.json).
 
 ## 1. Which universal inference is being tested?
 

@@ -462,7 +462,7 @@ Imports: `PurposeCorrection`
 <details>
 <summary>FormationAccounts.lean — 23 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean) · [理论 / Theory](../../chapters/LEARNING-INTERFACE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SUPPORT-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean) · [理论 / Theory](../../history/LEARNING-INTERFACE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SUPPORT-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean`
 
@@ -723,7 +723,7 @@ Imports: `GenerativeCore`, `FormedSelection`
 <details>
 <summary>ReasonReplay.lean — 128 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean) · [理论 / Theory](../../chapters/HUIGEN.md) · [研究 / Study](../../../../_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean) · [理论 / Theory](../../history/HUIGEN.md) · [研究 / Study](../../../../_process/history/2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean`
 
@@ -3354,7 +3354,7 @@ Imports: `PaidRecipientReasons`
 <details>
 <summary>RecipientReasons.lean — 37 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean) · [理论 / Theory](../../chapters/EVALUATIVE-APPLICATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean) · [理论 / Theory](../../history/EVALUATIVE-APPLICATION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean`
 
@@ -3741,7 +3741,7 @@ Imports: `Std`
 <details>
 <summary>RouteDiagnostics.lean — 31 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean) · [理论 / Theory](../../chapters/ROUTE-DIAGNOSTICS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean) · [理论 / Theory](../../history/ROUTE-DIAGNOSTICS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/formal/RouteDiagnostics.lean`
 
@@ -4112,7 +4112,7 @@ Imports: `FormedRecipientRoute`
 <details>
 <summary>FormedRecipientRoute.lean — 69 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean) · [理论 / Theory](../../chapters/RECIPIENT-TRANSMISSION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean) · [理论 / Theory](../../history/RECIPIENT-TRANSMISSION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-MATH.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/README.md)
 
 `experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/formal/FormedRecipientRoute.lean`
 

@@ -59,7 +59,7 @@
 
 ## 5. 对统一根基的回写
 
-这一研究服务于[已经批准的生成路径](GENERATIVE-GROUNDING.md#accepted-work-sequence)，不以整理古籍取代推导。它为主线加入以下必须分开的过渡：
+这一研究服务于[已经批准的生成路径](../history/GENERATIVE-GROUNDING.md#accepted-work-sequence)，不以整理古籍取代推导。它为主线加入以下必须分开的过渡：
 
 | 待解释过渡 | 本轮增加的要求 | 仍须供应或推导的部分 |
 |---|---|---|

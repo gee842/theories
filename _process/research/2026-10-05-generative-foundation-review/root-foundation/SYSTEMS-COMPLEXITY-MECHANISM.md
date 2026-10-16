@@ -1,6 +1,6 @@
 # Systems, complexity and dynamical regimes within generative activity
 
-6 October 2026. AI-authored conceptual integration and elementary hand derivations. No new physical experiment, simulation or Lean build is reported. The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [cybernetic comparison](../../../../theories/becoming/chapters/CYBERNETICS.md) govern the scope. The companion [primary-source comparison](SYSTEMS-COMPLEXITY-SOURCES.md) treats open systems, conditional decomposition, assembly and adaptation.
+6 October 2026. AI-authored conceptual integration and elementary hand derivations. No new physical experiment, simulation or Lean build is reported. The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [cybernetic comparison](../../../../theories/becoming/history/CYBERNETICS.md) govern the scope. The companion [primary-source comparison](SYSTEMS-COMPLEXITY-SOURCES.md) treats open systems, conditional decomposition, assembly and adaptation.
 
 ## The positive connection
 
@@ -30,11 +30,11 @@ These stability and bifurcation distinctions are standard dynamical questions, i
 
 ## What the existing constructions already contribute
 
-[Architecture formation](../../../../theories/becoming/chapters/ARCHITECTURE-FORMATION.md) constructs actual paths from typed parts and local bindings. Its operative response depends on the assembled topology. Productive activity also funds new guides that change the next construction distribution. Under the stated ample-part and affordability conditions, increasing the predictor guide count from one to two changes broad-route probability from \(1/2\) to \(2/3\); the matched inert-copy control remains at \(1/2\). This gives a local, checked coupling between use and subsequent organization.
+[Architecture formation](../../../../theories/becoming/history/ARCHITECTURE-FORMATION.md) constructs actual paths from typed parts and local bindings. Its operative response depends on the assembled topology. Productive activity also funds new guides that change the next construction distribution. Under the stated ample-part and affordability conditions, increasing the predictor guide count from one to two changes broad-route probability from \(1/2\) to \(2/3\); the matched inert-copy control remains at \(1/2\). This gives a local, checked coupling between use and subsequent organization.
 
 Formation and retention can nevertheless oppose one another. The same architecture study's higher maintenance case permits broad responses to consume reserves needed for retention. A changed population of retained graphs therefore combines production and loss; labeling the common endpoint “emergence” must not hide either mechanism. Nor does formation of a collective capability prove that all parts benefit from it.
 
-[Joint formation](../../../../theories/becoming/chapters/JOINT-FORMATION.md) and the revisable-concern work already establish conditional selection and renewal under continuing inputs and explicit comparisons. This supplies genuine dynamical persistence at its stated game and funding scope. It should not be replaced by a vague claim that complexity somehow makes cooperation emerge.
+[Joint formation](../../../../theories/becoming/history/JOINT-FORMATION.md) and the revisable-concern work already establish conditional selection and renewal under continuing inputs and explicit comparisons. This supplies genuine dynamical persistence at its stated game and funding scope. It should not be replaced by a vague claim that complexity somehow makes cooperation emerge.
 
 In inquiry revision, the thirteen-unit resource boundary is a sharp **feasibility threshold** for a declared finite response word. Likewise, the installed two-socket trigger partitions acquired histories and can miss a consequential one-socket case. These are actual access and selection limits. No equilibrium family, invariant attractor or chaos criterion was proved by those checks. Their significance is that persistent effects participate in changing future possibilities; the relevant descriptions must preserve information, resources and affected consequences together.
 

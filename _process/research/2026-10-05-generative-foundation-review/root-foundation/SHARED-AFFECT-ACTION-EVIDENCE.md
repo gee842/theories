@@ -1,6 +1,6 @@
 # Shared affective responses and recipient-directed action
 
-6 October 2026. AI-authored identification audit of **own/other consequence representation → evaluative influence → recipient-directed action**. This examines the supplied transfer route in [evaluative uptake](../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md). It complements the already reanalyzed [recipient-harm choices](../../../../theories/becoming/chapters/RECIPIENT-HARM-AND-ACTION.md), without treating two studies as one observed learning history.
+6 October 2026. AI-authored identification audit of **own/other consequence representation → evaluative influence → recipient-directed action**. This examines the supplied transfer route in [evaluative uptake](../../../../theories/becoming/history/EVALUATIVE-UPTAKE.md). It complements the already reanalyzed [recipient-harm choices](../../../../theories/becoming/history/RECIPIENT-HARM-AND-ACTION.md), without treating two studies as one observed learning history.
 
 ## Primary-source summary — under 100 words
 

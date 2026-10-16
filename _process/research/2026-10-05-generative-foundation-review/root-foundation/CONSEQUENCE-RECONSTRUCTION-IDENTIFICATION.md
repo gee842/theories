@@ -4,7 +4,7 @@
 
 ## The addition worth making
 
-Consequence-dependent renewal and replacement are already established in the conditional [selector](../../../../theories/becoming/chapters/SELECTOR-REVISION.md) and [updater](../../../../theories/becoming/chapters/UPDATER-FORMATION.md) constructions. Actual capture finances renewal; failure permits expiry and reconstruction within the continuing compartment. Ordinary controllers remain valid comparators. A fresh lifetime variable, successful-outcome renewal and random replacement would repeat that result.
+Consequence-dependent renewal and replacement are already established in the conditional [selector](../../../../theories/becoming/history/SELECTOR-REVISION.md) and [updater](../../../../theories/becoming/history/UPDATER-FORMATION.md) constructions. Actual capture finances renewal; failure permits expiry and reconstruction within the continuing compartment. Ordinary controllers remain valid comparators. A fresh lifetime variable, successful-outcome renewal and random replacement would repeat that result.
 
 The [current native history](ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md) instead has an acquired port relation in an apparatus whose completed lifecycle cannot reopen through admitted events. A substantive addition would connect actual native consequences to the availability, retention or replacement of **that formed coupling**, preserving its history, occupied parts and differentiated support. It would identify a previously unjoined realization, not discover consequence-sensitive organization in general. A new law can supply such a realization conditionally; its origin is not explained merely by giving it a physical vocabulary.
 

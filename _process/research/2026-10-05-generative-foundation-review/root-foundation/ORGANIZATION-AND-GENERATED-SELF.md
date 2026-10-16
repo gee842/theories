@@ -1,6 +1,6 @@
 # Organization before a represented I
 
-6 October 2026. AI-authored comparator note for **organized dependency → regulation → a formed self/world distinction**. This supports [the generated-self investigation](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md), without treating biological success as moral goodness.
+6 October 2026. AI-authored comparator note for **organized dependency → regulation → a formed self/world distinction**. This supports [the generated-self investigation](../../../../theories/becoming/history/GENERATED-SELF-AND-ETHICS.md), without treating biological success as moral goodness.
 
 ## Primary comparator
 
@@ -12,7 +12,7 @@ The downloaded 13-page manuscript had SHA-256 `5ad6c4be2b7aa1797b3de7c6f342b0843
 
 ## Repository reconstruction and tests
 
-The following proposals are our own. They continue the existing [dependency and regulation study](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) and [formed prediction/action model](../../../../theories/becoming/chapters/PREDICTION-ACTION.md).
+The following proposals are our own. They continue the existing [dependency and regulation study](../../../../theories/becoming/history/FOUNDATION-PREMISES.md) and [formed prediction/action model](../../../../theories/becoming/history/PREDICTION-ACTION.md).
 
 An account can begin with processes whose continuation depends on other processes, rather than with a named owner of them. But declaring a dependency graph does not yet produce a maintained body, a regulatory response or a learned distinction. An actual realization needs flows, constraints, formation costs and transition laws. An organization that merely happens to persist has not thereby learned anything.
 

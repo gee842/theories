@@ -18,7 +18,7 @@ Goals and selectors change living conditions and further formation. They therefo
 
 This closes the regress of **needing a new unrelated ethical starting point for each level of selection**, within the adopted normative account. It does not eliminate the need to justify who may decide, whether evidence is faithful, or how a decision is implemented. Capability does not grant governing authority. Cross-intelligence applicability means relevantly similar relations support similar reasons; it predicts neither uniform psychology nor universal compliance. The moral-patient status of any particular AI remains a separate inquiry.
 
-**共同根据的作用。** 目的、评价与选择本身也改变生及其继续条件，因而进入同一 G0/J 评价。已完成的[对齐方向](ALIGNMENT-DIRECTION.md)和[目的形成与修订](GOAL-FORMATION-AND-REVISION.md)直接复用；本轮不重新证明公理，也不把“理解了理由”写成“必定服从理由”。规范适用、实际动机、正当权限与履行各有根据。
+**共同根据的作用。** 目的、评价与选择本身也改变生及其继续条件，因而进入同一 G0/J 评价。已完成的[对齐方向](ALIGNMENT-DIRECTION.md)和[目的形成与修订](../history/GOAL-FORMATION-AND-REVISION.md)直接复用；本轮不重新证明公理，也不把“理解了理由”写成“必定服从理由”。规范适用、实际动机、正当权限与履行各有根据。
 
 ## 2. Correction is an executable sequence
 

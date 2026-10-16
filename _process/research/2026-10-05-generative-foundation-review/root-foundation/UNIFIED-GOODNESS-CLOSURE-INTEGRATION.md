@@ -1,6 +1,6 @@
 # Unified goodness: integrated account and completion boundary
 
-6 October 2026. AI-authored integration responding to [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-06-finish-unified-grounding.md), under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The [canonical account](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#the-unified-account) now presents the connected theory before the preserved investigative history.
+6 October 2026. AI-authored integration responding to [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-06-finish-unified-grounding.md), under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The [canonical account](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#the-unified-account) now presents the connected theory before the preserved investigative history.
 
 ## The result
 
@@ -20,7 +20,7 @@ Legitimate relationships can also create obligations, goods and choice-specific 
 
 ## Completion and continuity
 
-The [scope map](UNIFIED-GOODNESS-CLOSURE-SCOPE.md) credits the [accepted five-condition completion](FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate), including formed concern, independently warranted role-bound repair and bounded wisdom. The synthesis adds no requirement that every model share one apparatus. It also credits actual [inquiry revision](../../../../theories/becoming/chapters/INQUIRY-REVISION.md); the original-law obstruction does not establish that the later extension lacks an operative rewrite.
+The [scope map](UNIFIED-GOODNESS-CLOSURE-SCOPE.md) credits the [accepted five-condition completion](FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate), including formed concern, independently warranted role-bound repair and bounded wisdom. The synthesis adds no requirement that every model share one apparatus. It also credits actual [inquiry revision](../../../../theories/becoming/history/INQUIRY-REVISION.md); the original-law obstruction does not establish that the later extension lacks an operative rewrite.
 
 The stronger research objective remains active. Its next ethical connection is the practical constitution and legitimate scope of actual good in a present response relation. Its resolution must bear on the candidate and its substantive rival, rather than add another favorable controller or insert moral sufficiency into a physical law class. Universal ethical necessity, a universal account of experiential realization, and the broader premise-discharge ambitions retain their own statuses. An ultimate requirement for an irreducible ethical principle has not been established either.
 

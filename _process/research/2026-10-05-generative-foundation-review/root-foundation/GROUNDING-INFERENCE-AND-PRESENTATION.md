@@ -2,7 +2,7 @@
 
 **Later scope clarification, 8 October 2026:** [Ren explicitly selects deductive necessity](../../../../sources/15-codex-theory-conversations/2026-10-08-foundation-deductive-necessity.md) for every foundational claim. Passages below rejecting an unrequested deductivist gate are historical; that gate is now requested for this independent task. Direct grounds and construction retain their actual scopes. The [deductive continuation](DEDUCTIVE-FOUNDATION-TEST.md) does not count empirical support alone as foundational completion.
 
-8 October 2026. AI-authored continuation of [Ren's sustained foundation request](../../../../sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md), with substantive author counterreview. The target remains the **fully assumption-free foundation of 生生**, not merely an economical axiom set. The [current chapter](../../../../theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md) integrates this round.
+8 October 2026. AI-authored continuation of [Ren's sustained foundation request](../../../../sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md), with substantive author counterreview. The target remains the **fully assumption-free foundation of 生生**, not merely an economical axiom set. The [current chapter](../../../../theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md) integrates this round.
 
 ## 1. The stronger affirmative attempt
 
@@ -87,7 +87,7 @@ The next central connection is **directly exhibited ground → warranted content
 
 ## 8. Correct the scope before making a stronger claim a completion gate
 
-A rereading of [the canonical minimal-grounding statement](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) corrects the previous round's emphasis on endlessness. Its provisional commitments are consequential differentiation, structured interaction/change, and composition with possible recurrence. It explicitly includes static, transient and destructive cases. The user renewed assumption freedom for the foundation; that does not silently replace this content with inevitable endless expansion.
+A rereading of [the canonical minimal-grounding statement](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) corrects the previous round's emphasis on endlessness. Its provisional commitments are consequential differentiation, structured interaction/change, and composition with possible recurrence. It explicitly includes static, transient and destructive cases. The user renewed assumption freedom for the foundation; that does not silently replace this content with inevitable endless expansion.
 
 Accordingly, the finite-replay theorem limits an inference to **necessary indefinite continuation**, which remains a separate stronger claim wherever asserted. It is not by itself a failed completion test for a core that admits legitimate endings and collapse. The absence of an endlessness proof must not become an invented reason that this root can never be completed.
 
@@ -347,7 +347,7 @@ An additional checked correspondence prevents another overclaim: for a general n
 
 The continuation operation is standard language-derivative mathematics, not a newly discovered mathematical foundation. [Winter, Bonsangue and Rutten, *Context-Free Languages, Coalgebraically*, §2, pp. 3–4](https://ir.cwi.nl/pub/18032/18032A.pdf), define a language's derivative by removing an initial symbol and describe the final language coalgebra. We read the relevant definitions and semantic discussion; the paper's more extensive context-free equivalences are not being certified here. The derivative tradition is also recorded in [Brzozowski's 1964 publication](https://doi.org/10.1145/321239.321249); that bibliographic identification is not a claim to have read its complete proof.
 
-The repository already constructs an exact history realization in [the deeper root §5](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md#5-keeping-history-prevents-an-unexplained-memorylessness-assumption), and studies deterministic continuation presentations in `ExplanatoryDeterminism`. We do not recount those results as new. This continuation's contribution is the explicit test of the foundational sentence: separate the necessary update identity from actual change, check the exact unchanged-profile boundary and constructive obstruction, and apply both positive and destructive realizations to the missing inference. No mathematical priority claim is made.
+The repository already constructs an exact history realization in [the deeper root §5](../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md#5-keeping-history-prevents-an-unexplained-memorylessness-assumption), and studies deterministic continuation presentations in `ExplanatoryDeterminism`. We do not recount those results as new. This continuation's contribution is the explicit test of the foundational sentence: separate the necessary update identity from actual change, check the exact unchanged-profile boundary and constructive obstruction, and apply both positive and destructive realizations to the missing inference. No mathematical priority claim is made.
 
 ### Actual checking and dependency ledger
 

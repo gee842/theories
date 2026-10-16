@@ -4,7 +4,7 @@
 
 ## Result and location
 
-The requested explanatory integration is complete in [Selection, shared conditions and the renewal of correction](../../../../theories/becoming/chapters/GENERATIVE-SELECTION.md). It gives the source result, assumptions, current overlap and foundational connection for:
+The requested explanatory integration is complete in [Selection, shared conditions and the renewal of correction](../../../../theories/becoming/history/GENERATIVE-SELECTION.md). It gives the source result, assumptions, current overlap and foundational connection for:
 
 1. Common-payoff blindness and the distinction between useful support and differential retention.
 2. Held evaluation versus effective priorities under relative/common continuation returns.
@@ -13,7 +13,7 @@ The requested explanatory integration is complete in [Selection, shared conditio
 5. Strategic communication and the conditions of shared understanding.
 6. Delayed reform, recruitable alternatives and a funded path into maintained protection.
 
-These now enter [the main theory](../../../../theories/becoming/chapters/THEORY.md#six-mechanisms-connecting-formed-capacities-to-their-social-continuation), [the derivation map](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#formed-capacities-within-changing-selection), [the premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md#9-selection-communication-and-maintained-correction), [the claim register](../../../../theories/becoming/chapters/CLAIMS.md#v73-mechanisms-explicitly-integrated-6-october-2026), [the source map](../../../../theories/becoming/chapters/SOURCE-MAP.md#s14--meta-selection-and-the-v73-predecessor) and [the brief entry](../../../../theories/becoming/chapters/START-HERE.md). The theory README, research-package README, [RESEARCH.md](../../../../RESEARCH.md) and synthesis record provide navigation and current scope.
+These now enter [the main theory](../../../../theories/becoming/history/THEORY.md#six-mechanisms-connecting-formed-capacities-to-their-social-continuation), [the derivation map](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#formed-capacities-within-changing-selection), [the premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md#9-selection-communication-and-maintained-correction), [the claim register](../../../../theories/becoming/chapters/CLAIMS.md#v73-mechanisms-explicitly-integrated-6-october-2026), [the source map](../../../../theories/becoming/history/SOURCE-MAP.md#s14--meta-selection-and-the-v73-predecessor) and [the brief entry](../../../../theories/becoming/history/START-HERE.md). The theory README, research-package README, [RESEARCH.md](../../../../RESEARCH.md) and synthesis record provide navigation and current scope.
 
 The named connection is **formed understanding and concern → practical influence under selection that changes objectives, evidence and corrective authority**. Existing shared-return, paid market, concern, reporting and recovery results remain credited. Their explicit relationship to the inherited mechanisms is an explanatory contribution; neither common vocabulary nor this record proves that all laws operate in one process.
 

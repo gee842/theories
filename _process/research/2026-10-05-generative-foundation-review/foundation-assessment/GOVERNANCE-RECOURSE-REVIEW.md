@@ -1,6 +1,6 @@
 # Governance recourse: independent scope and counterexample review
 
-6 October 2026. Named connection: **evidence from affected people → individual correction → warranted revision of the decision rule that generates cases**. This is a historical source review and methodological analysis, not a new causal experiment or advice about current law. It extends the existing [governance assessment](GOVERNANCE-LITERATURE.md), particularly its distinction between nominal participation and consequential correction. The [generative foundation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) still has to explain why the relevant capacities form, remain supported and protect differentiated centers.
+6 October 2026. Named connection: **evidence from affected people → individual correction → warranted revision of the decision rule that generates cases**. This is a historical source review and methodological analysis, not a new causal experiment or advice about current law. It extends the existing [governance assessment](GOVERNANCE-LITERATURE.md), particularly its distinction between nominal participation and consequential correction. The [generative foundation](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md) still has to explain why the relevant capacities form, remain supported and protect differentiated centers.
 
 ## Contemporaneous source and reading scope
 
@@ -53,7 +53,7 @@ Reviewed [the institutional contract](GOVERNANCE-RECOURSE-CONTRACT.md), SHA-256 
 
 ## Final canonical review
 
-6 October 2026. Accepted [External evidence and institutional correction](../../../../theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md), exact SHA-256 `fc0d4ea6f732f4104aba7b38f189772551864bbf5662e17adeb975829937a428`.
+6 October 2026. Accepted [External evidence and institutional correction](../../../../theories/becoming/history/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md), exact SHA-256 `fc0d4ea6f732f4104aba7b38f189772551864bbf5662e17adeb975829937a428`.
 
 Independent scope checks cover the 2017 source passages above; the official [2021 judgment](https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2021/2021fca0634), especially paragraphs 1–10 and Annexure C; and the [preserved partial Commission reading edition](../../../../sources/33-governance-recourse-2026-10-06/reading/report-ch20-web-excerpts.txt), chapter 20, printed pp. 561–563. The last is a university-hosted reproduction read through web extraction, not verified official PDF bytes. The review does not independently reconstruct the underlying case records or determine historical law anew.
 

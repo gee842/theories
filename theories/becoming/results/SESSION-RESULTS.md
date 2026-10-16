@@ -49,11 +49,11 @@ Titles below preserve the app titles exactly. They identify provenance, not the 
 
 | Chat / 会话 | Family and class / 成果族与类别 | Outcome / 成果 | Entry and integration / 入口与整合 |
 |---|---|---|---|
-| 阐释道与道德的关系 | [F12](#f12) · application, reuse | 认知与恕的条件应用；复用非二元方法。 Reciprocity and cognition within the shared nondual method. | [Source / 来源](../chapters/COGNITION-LI-AND-RECIPROCITY.md) · canonical |
+| 阐释道与道德的关系 | [F12](#f12) · application, reuse | 认知与恕的条件应用；复用非二元方法。 Reciprocity and cognition within the shared nondual method. | [Source / 来源](../history/COGNITION-LI-AND-RECIPROCITY.md) · canonical |
 | Analyze destructive multi-agent bas | [F06](#f06) · extension, counterexample | 可兑现担保下的有代价纠正与联盟失败界限。 Posted commitments make costly correction optimal under explicit incentive and custody premises. | [Source / 来源](../../meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md) · canonical |
 | Assess higher-order generative model | [F09](#f09) · new-result, counterexample | 取得知识支持给定语法中的新组合。 Acquired knowledge supports unseen combinations in a supplied grammar. | [Source / 来源](../chapters/COGNITION-LEARNING-AND-EVOLUTION.md) · canonical |
 | Check coverage of system theories (3) | [F02](#f02) · extension, counterexample | 观察分支方案在忠实投影和共同可实施条件下组合。 Observation-dependent local plans compose under projection fidelity and joint executability. | [Source / 来源](../chapters/RELATIONS-ACROSS-SCALES.md) · canonical |
-| Check coverage of system theories (2) | [F04](#f04) · extension, application | 扰动界将追踪接到有限阶段的决定根据。 Disturbance bounds connect tracking to finite-stage decision evidence. | [Source / 来源](../chapters/GOAL-FORMATION-AND-REVISION.md) · canonical |
+| Check coverage of system theories (2) | [F04](#f04) · extension, application | 扰动界将追踪接到有限阶段的决定根据。 Disturbance bounds connect tracking to finite-stage decision evidence. | [Source / 来源](../history/GOAL-FORMATION-AND-REVISION.md) · canonical |
 | Compare theory with v7.3 | [F11](#f11) · formalization, reuse | 有限根基共同解释的 Lean 迁移；旧手证和更强根据问题保留范围。 Lean migration of finite-basis joint interpretation; the earlier hand argument and stronger open grounding retain their scopes. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · canonical |
 | 论证理论对 AI alignment 的必要性 | [F06](#f06) · extension, counterexample | 给定市场律下的纠正余量与生成／退化区域。 Correction margin bounds destructive and protected regimes under the declared market law. | [Source / 来源](../chapters/MARKETS-AND-GENERATIVE-REGIMES.md) · canonical |
 | 梳理智能体的普遍元伦理 | [F07](#f07) · extension, counterexample | 实际履行支持接到有限权重模型的保护下界。 Concrete support fulfillment implies a finite weighted protection floor. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md) · study-and-canonical |
@@ -67,28 +67,28 @@ Titles below preserve the app titles exactly. They identify provenance, not the 
 | The Theory of Evolution | [F10](#f10) · extension, counterexample | 新参考接触修订辨别并恢复更新。 Fresh reference contact revises acquired discrimination and restores updating. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md) · study-and-canonical |
 | The Theory of Evolution (2) | [F10](#f10) · extension, counterexample | 实际生长限制分割、传递组成与准备产出。 Actual growth constrains fragmentation, transmitted composition and preparation returns. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) · study-and-canonical |
 | Complete practical judgment (2) | [F03](#f03) · extension, counterexample | 保留请求路线支持变化中的纠正；队列占用可阻断推进。 Captured routes preserve in-flight requests across updates; queue occupancy can block progress. | [Source / 来源](../chapters/PLURAL-SYSTEMS-AND-CORRECTION.md) · canonical |
-| 探索 math core 中的结构 | [F03](#f03) · extension, counterexample | 变化支持保持或恢复准备，却不保证实际完成。 Changing support preserves or restores readiness without guaranteeing actual completion. | [Source / 来源](../chapters/EXPLANATORY-NECESSITY.md) · canonical |
+| 探索 math core 中的结构 | [F03](#f03) · extension, counterexample | 变化支持保持或恢复准备，却不保证实际完成。 Changing support preserves or restores readiness without guaranteeing actual completion. | [Source / 来源](../history/EXPLANATORY-NECESSITY.md) · canonical |
 | Complete practical judgment | [F08](#f08) · argument, open-question | 直接审计定位仍未证的普遍实践权威。 Direct audit isolates still-unproved universal practical authority. | [Source / 来源](../chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) · canonical |
 | Check coverage of system theories | [F04](#f04) · application, extension | 实测执行时序把已有误差界接到控制记录。 Measured execution timing connects existing bounds to published controller runs. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md) · study-and-canonical |
-| Merge remaining research branches | [F01](#f01) · synthesis, extension | 生命依存接通维护、保留、恢复与变化的共同供给。 Living dependencies connect maintenance, retention, recovery and changing common provision. | [Source / 来源](../chapters/LIVING-DEPENDENCIES.md) · canonical |
+| Merge remaining research branches | [F01](#f01) · synthesis, extension | 生命依存接通维护、保留、恢复与变化的共同供给。 Living dependencies connect maintenance, retention, recovery and changing common provision. | [Source / 来源](../history/LIVING-DEPENDENCIES.md) · canonical |
 | 梳理生成模型与宗教智慧 | [F12](#f12) · comparison, open-question | 宗教与哲学传统比较议程；尚无独立整合综述。 Religious and philosophical traditions are organized as proposed comparative studies. | [Source / 来源](../chapters/WANG-YANGMING.md) · discussion-context-only |
 | 判断生生与退化的完整理论 | [F14](#f14) · preservation | 推送及取消日程的保存结果，不是新证明。 Push and schedule-removal outcome preserves earlier work; not a new proof. | [Source / 来源](../../../sources/15-codex-theory-conversations/2026-10-08-cancel-daily-theory-chain-update.md) · preservation |
 | 整理理论论证与进度文档 | [F14](#f14) · synthesis, preservation | 双语成果目录和首页发布。 Bilingual results catalogue and README release. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md) · preservation |
 | Explore theory and mathematics | [F11](#f11) · extension, counterexample | 稳定意义和持续可达下的潜在主义一阶真理保持。 Potentialist first-order interpretation preserves truth with stable meaning and continued access. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md) · study-and-canonical |
 | 比较理论与道及情境性 | [F12](#f12) · argument | 共同生成根据中的情境回应讨论。 Situated responses are discussed as differentiations of a shared generative ground. | [Source / 来源](../chapters/DAO-AND-GENERATIVITY.md) · discussion-context-only |
-| Explore generativity and continuity | [F08](#f08) · review, open-question | 纠正有限前沿清单穷尽全部研究的误述。 Corrects the claim that a short frontier list exhausts possible research. | [Source / 来源](../chapters/GENERATIVE-GROUNDING.md) · discussion-context-only |
+| Explore generativity and continuity | [F08](#f08) · review, open-question | 纠正有限前沿清单穷尽全部研究的误述。 Corrects the claim that a short frontier list exhausts possible research. | [Source / 来源](../history/GENERATIVE-GROUNDING.md) · discussion-context-only |
 | 比较并整合王阳明理论 | [F12](#f12) · argument, application | 以人类延续具体化生成关系，未由此证明普遍伦理。 Human continuation makes the generative relations concrete without proving universal ethical warrant. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY.md) · study-context |
 | 比较并整合王阳明理论 (2) | [F12](#f12) · extension, counterexample | 良知实践变化包括支持交接、恢复与有限结束。 Liangzhi practical changes include support handoff, recovery and finite ending. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md) · study-and-canonical |
 | Model subjective good and karma | [F08](#f08) · argument, counterexample | 受托参与和有效承担不自动使整体历程更好。 Entrusted participation and binding commitments do not automatically make a trajectory better. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-INTEGRATION.md) · study-and-canonical |
 | Assess the good–evil axis | [F13](#f13) · review, preservation | 区分有条件完成与更强伦理目标；后续为仓库交接。 Reconciles conditional completion and stronger ethical goals; later turns concern repository transfer. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md) · review |
-| Assess universal ethics evidence | [F08](#f08) · review, open-question | 纠正从动力学描述直接推出伦理评价的推断。 Corrects an inference from dynamical description to ethical valuation. | [Source / 来源](../chapters/UNIFIED-ETHICAL-GROUNDING.md) · discussion-context-only |
+| Assess universal ethics evidence | [F08](#f08) · review, open-question | 纠正从动力学描述直接推出伦理评价的推断。 Corrects an inference from dynamical description to ethical valuation. | [Source / 来源](../history/UNIFIED-ETHICAL-GROUNDING.md) · discussion-context-only |
 | Explore cybernetics in the theory | [F01](#f01) · synthesis, reuse | 将过程律推导接到前提依赖说明要求。 Connects process-law derivation to the dependency-accounting requirement. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md) · study-context |
 | Prepare unified theory talk proposal | [F14](#f14) · exposition, preservation | 面向对齐审稿人的技术说明与输出。 Technical supporting statement communicates results for alignment reviewers. | [Source / 来源](../../../drafts/2026-10-02-iaseai-selecting-the-selectors/output/pdf/generativity-to-wisdom-supporting-statement.pdf) · export |
 | Research alignment and governance | [F04](#f04) · extension, counterexample | 取得后果选择与所争应用相关的查询。 Acquired consequences select the inquiry relevant to the disputed application. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md) · study-and-canonical |
-| Articulate Foundation Lenses | [F08](#f08) · argument, review | 细化关切与实际实现的共同意义，保留有害关切反例。 Refines jointly realized concern while preserving harmful-concern counterexamples. | [Source / 来源](../chapters/UNIFIED-ETHICAL-GROUNDING.md) · canonical |
+| Articulate Foundation Lenses | [F08](#f08) · argument, review | 细化关切与实际实现的共同意义，保留有害关切反例。 Refines jointly realized concern while preserving harmful-concern counterexamples. | [Source / 来源](../history/UNIFIED-ETHICAL-GROUNDING.md) · canonical |
 | Clarify generative market guidance | [F06](#f06) · reuse, review | 市场非二元重构保留已有证明与解释限度。 Market nondual reconstruction retains established proofs and their interpretation limits. | [Source / 来源](../chapters/MARKETS-AND-GENERATIVE-REGIMES.md) · canonical |
 | Review parallel work connections (2) | [F13](#f13) · review, reuse | 并行连接审查及共同方法接续，不是另一个基础证明。 Parallel connection review and shared-method adoption; not a new foundation. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md) · review |
-| Assess theory significance and finds | [F08](#f08) · argument, open-question | 在条件关切成果之外保留更强必要性目标。 Stronger necessity target retained alongside conditional concern results. | [Source / 来源](../chapters/STRONGEST-FOUNDATION-CLAIM.md) · canonical |
+| Assess theory significance and finds | [F08](#f08) · argument, open-question | 在条件关切成果之外保留更强必要性目标。 Stronger necessity target retained alongside conditional concern results. | [Source / 来源](../history/STRONGEST-FOUNDATION-CLAIM.md) · canonical |
 | Review parallel work connections (5) | [F13](#f13) · review, reuse | 同一五条件候选的独立验收。 Independent acceptance of the same five-condition conditional candidate. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · review |
 | Review parallel work connections (3) | [F13](#f13) · synthesis, review | 同一有条件候选的整合论述与完成评估。 Integrated exposition and completion assessment of the same conditional candidate. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · review |
 | Review parallel work connections (4) | [F13](#f13) · review, reuse | 根部验收确认同一完成范围与来源绑定。 Root acceptance confirms the same completion scope and source bindings. | [Source / 来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) · review |
@@ -108,7 +108,7 @@ Finite traces, faithful projections and necessary retained distinctions supply t
 
 **Hypotheses / 前提:** A declared process law and interpretation; exact projection assumptions where used.
 
-**Canonical reuse entries / 复用入口:** [GenerativeCore](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) · [MATHEMATICAL-CORE](../chapters/MATHEMATICAL-CORE.md) · [EXPLANATORY-NECESSITY](../chapters/EXPLANATORY-NECESSITY.md)
+**Canonical reuse entries / 复用入口:** [GenerativeCore](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) · [MATHEMATICAL-CORE](../chapters/MATHEMATICAL-CORE.md) · [EXPLANATORY-NECESSITY](../history/EXPLANATORY-NECESSITY.md)
 
 **Consolidation / 整合:** Reuse the core trace/projection lemmas. Changed support, observational adequacy and ontological necessity remain separately stated claims.
 
@@ -220,7 +220,7 @@ The completed explicit-axiom route and stronger zero-axiom or universal-warrant 
 
 **Hypotheses / 前提:** Constitutive, philosophical and empirical warrant must be distinguished from conditional formal inference.
 
-**Canonical reuse entries / 复用入口:** [ZERO-AXIOM-PRACTICAL-JUDGMENT](../chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) · [UNIFIED-ETHICAL-GROUNDING](../chapters/UNIFIED-ETHICAL-GROUNDING.md) · [PHILOSOPHICAL-ACCOUNT](../chapters/PHILOSOPHICAL-ACCOUNT.md) · [CORE-CONSTRAINT-AND-WISDOM](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+**Canonical reuse entries / 复用入口:** [ZERO-AXIOM-PRACTICAL-JUDGMENT](../chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) · [UNIFIED-ETHICAL-GROUNDING](../history/UNIFIED-ETHICAL-GROUNDING.md) · [PHILOSOPHICAL-ACCOUNT](../chapters/PHILOSOPHICAL-ACCOUNT.md) · [CORE-CONSTRAINT-AND-WISDOM](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
 
 **Consolidation / 整合:** Route foundations, critiques and applications to their stated targets. Repeated acknowledgements of an open premise are not new impossibility proofs.
 
@@ -236,7 +236,7 @@ Acquired distinctions and concern can influence later activity; epistemic and et
 
 **Hypotheses / 前提:** Specified learning/interpretation mechanisms; development and selection conditions; G0/J for normative applications.
 
-**Canonical reuse entries / 复用入口:** [ETHICAL-LEARNING](../chapters/ETHICAL-LEARNING.md) · [CONCERN-AND-NEW-REASONS](../chapters/CONCERN-AND-NEW-REASONS.md) · [COGNITION-LEARNING-AND-EVOLUTION](../chapters/COGNITION-LEARNING-AND-EVOLUTION.md) · [CompositionalAcquisition](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean)
+**Canonical reuse entries / 复用入口:** [ETHICAL-LEARNING](../chapters/ETHICAL-LEARNING.md) · [CONCERN-AND-NEW-REASONS](../history/CONCERN-AND-NEW-REASONS.md) · [COGNITION-LEARNING-AND-EVOLUTION](../chapters/COGNITION-LEARNING-AND-EVOLUTION.md) · [CompositionalAcquisition](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean)
 
 **Consolidation / 整合:** Reuse earlier evaluative succession and practical principles. Acquiring compositions, expanding concern and surrendering authority are not identical proofs.
 
@@ -252,7 +252,7 @@ Growth, transmission, reconstruction and calibration have connected conditional 
 
 **Hypotheses / 前提:** Supplied local growth, fragmentation, maturation and observation laws; specified reference access and support.
 
-**Canonical reuse entries / 复用入口:** [THE-THEORY-OF-EVOLUTION](../chapters/THE-THEORY-OF-EVOLUTION.md) · [EVOLUTIONARY-ORGANIZATION](../chapters/EVOLUTIONARY-ORGANIZATION.md) · [GrownFragmentation](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean) · [CalibrationRenewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibrationRenewal.lean)
+**Canonical reuse entries / 复用入口:** [THE-THEORY-OF-EVOLUTION](../chapters/THE-THEORY-OF-EVOLUTION.md) · [EVOLUTIONARY-ORGANIZATION](../history/EVOLUTIONARY-ORGANIZATION.md) · [GrownFragmentation](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean) · [CalibrationRenewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibrationRenewal.lean)
 
 **Consolidation / 整合:** Treat biological organization and developmental reference renewal as complementary branches. Reuse imported maturation/reconstruction results rather than adding their audit counts again.
 
@@ -284,7 +284,7 @@ Dao, reciprocity, Liangzhi and religious comparisons provide conceptual tests an
 
 **Hypotheses / 前提:** Original textual contexts and explicit correspondence; actual support succession does not itself establish ethical validity.
 
-**Canonical reuse entries / 复用入口:** [COGNITION-LI-AND-RECIPROCITY](../chapters/COGNITION-LI-AND-RECIPROCITY.md) · [DAO-AND-GENERATIVITY](../chapters/DAO-AND-GENERATIVITY.md) · [WANG-YANGMING](../chapters/WANG-YANGMING.md) · [LIANGZHI-EVOLUTION](../chapters/LIANGZHI-EVOLUTION.md) · [LIANGZHI-PRACTICAL-INTEGRATION](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)
+**Canonical reuse entries / 复用入口:** [COGNITION-LI-AND-RECIPROCITY](../history/COGNITION-LI-AND-RECIPROCITY.md) · [DAO-AND-GENERATIVITY](../chapters/DAO-AND-GENERATIVITY.md) · [WANG-YANGMING](../chapters/WANG-YANGMING.md) · [LIANGZHI-EVOLUTION](../chapters/LIANGZHI-EVOLUTION.md) · [LIANGZHI-PRACTICAL-INTEGRATION](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)
 
 **Consolidation / 整合:** Reuse the established nondual method and handoff results; count a source comparison as an argument, not an additional formal theorem.
 

@@ -65,13 +65,13 @@ This isolates the **post-perception route by which acquired n affects this decla
 
 ## 2a. The acquired connection is a sibling continuation
 
-The accepted [plasticity construction](../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md), commit `4fd9cee`, updates the earlier source snapshot above. It consumes the same actual factual boundary, `RevisionWitness.consumed`, before the parent's old final import/action. Its M68/common297/source208 preparation preserves the M42 parent projection while protecting the additional construction material and accounts. The selected entrance retains actor10, recipient40, one old ten-unit packet and initially absent conducting links. Extra resources are supplied from the original preparation, not added retrospectively at an exhausted endpoint.
+The accepted [plasticity construction](../../../../theories/becoming/history/EVALUATIVE-PLASTICITY.md), commit `4fd9cee`, updates the earlier source snapshot above. It consumes the same actual factual boundary, `RevisionWitness.consumed`, before the parent's old final import/action. Its M68/common297/source208 preparation preserves the M42 parent projection while protecting the additional construction material and accounts. The selected entrance retains actor10, recipient40, one old ten-unit packet and initially absent conducting links. Extra resources are supplied from the original preparation, not added retrospectively at an exhausted endpoint.
 
 Actual paired operations, paid acquisition and component binding produce n4 with two positive links in the aligned case. Subsequent reading, assessment and the unchanged recipient service end at actor4/recipient46. Nonconducting and post-perception exclusion controls preserve training and factual knowledge while changing the causal route into choice. Optional paid replacement holds the new acquisitions, n5, factual command, expenditure and pre-assessment balances fixed between active and frozen-sign arms. The active sign change suppresses service; preserving the positive sign selects a still-affordable delivery. All recipient teaching losses and retired components remain accounted for.
 
 **Classification: joined staged history from the actual factual predecessor, with a conditional preparation projection.** It closes operative connection formation/change/use under the stated architecture. It is a sibling of uptake and its accepted successor, not a splice inserted between their unchanged endpoints. Uptake's operative transfer is a supplied recipe; plasticity retains newly occupied sockets, signed components and retired material that the existing successor contract does not carry. Equality of n or of a command cannot transport that extra mechanism. A claim that this particular acquired graph is inherited would need its actual retained supports and access history. The common account does not currently make that stronger composition claim, so another copying mechanism is not an automatic completion requirement.
 
-Sixty new Lean audits and independent reconstruction of all 836 retained numerical histories support the declared laws and constructions. Fourteen selected compiled/runtime correspondences do not establish full-program refinement. The [accepted integration](EVALUATIVE-PLASTICITY-INTEGRATION.md) records the authorization repair and all evidence scopes. The independently reviewed [grounding argument](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md) now supplies a conditional interpretation of this same operation history as warranted role-bound repair. Its patient-good, responsibility, legitimate authority and complete comparison premises are independently defended inputs. The formed connection mediates the separately recommended response; neither conductance nor its acquisition establishes the repair reason, and matched replacement can fail it. This is conditional explanatory/normative transport within the existing history, not a new physical handoff or general moral-learning theorem.
+Sixty new Lean audits and independent reconstruction of all 836 retained numerical histories support the declared laws and constructions. Fourteen selected compiled/runtime correspondences do not establish full-program refinement. The [accepted integration](EVALUATIVE-PLASTICITY-INTEGRATION.md) records the authorization repair and all evidence scopes. The independently reviewed [grounding argument](../../../../theories/becoming/history/EVALUATIVE-GROUNDING.md) now supplies a conditional interpretation of this same operation history as warranted role-bound repair. Its patient-good, responsibility, legitimate authority and complete comparison premises are independently defended inputs. The formed connection mediates the separately recommended response; neither conductance nor its acquisition establishes the repair reason, and matched replacement can fail it. This is conditional explanatory/normative transport within the existing history, not a new physical handoff or general moral-learning theorem.
 
 ## 2b. Current authority and settlement on the actual successor history
 
@@ -134,23 +134,23 @@ The table identifies the listed revision bytes inspected for this synthesis: com
 | [Empirical scope][empirical] | `6e175eb` | `7e20e0a0d875d4bf` |
 | [Concern/wisdom input audit][inputs] | `dc4a16c` | `3a1b6f7c1a7b7013` |
 
-[goal]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md
-[premises]: ../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md
-[support]: ../../../../theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md
+[goal]: ../../../../theories/becoming/history/GENERATIVE-GROUNDING.md
+[premises]: ../../../../theories/becoming/history/FOUNDATION-PREMISES.md
+[support]: ../../../../theories/becoming/history/CONDITIONAL-UNIVERSALITY.md
 [regulation]: ../../../history/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md
 [variants]: ../../../history/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md
-[material]: ../../../../theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md
-[development]: ../../../../theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md
-[architecture-learning]: ../../../../theories/becoming/chapters/ARCHITECTURE-LEARNING.md
+[material]: ../../../../theories/becoming/history/MATERIAL-PREDICTION-COMPOSITION.md
+[development]: ../../../../theories/becoming/history/GENERATIVE-DEVELOPMENT.md
+[architecture-learning]: ../../../../theories/becoming/history/ARCHITECTURE-LEARNING.md
 [identification-source]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py
-[fresh]: ../../../../theories/becoming/chapters/RECIPIENT-REASON-REVISION.md
-[semantic]: ../../../../theories/becoming/chapters/SEMANTIC-ACTION-COMPOSITION.md
-[uptake]: ../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md
-[succession]: ../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md
+[fresh]: ../../../../theories/becoming/history/RECIPIENT-REASON-REVISION.md
+[semantic]: ../../../../theories/becoming/history/SEMANTIC-ACTION-COMPOSITION.md
+[uptake]: ../../../../theories/becoming/history/EVALUATIVE-UPTAKE.md
+[succession]: ../../../../theories/becoming/history/EVALUATIVE-SUCCESSION.md
 [succession-package]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/README.md
-[renewal]: ../../../../theories/becoming/chapters/RECIPIENT-RENEWAL.md
-[application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
-[protection]: ../../../../theories/becoming/chapters/REASON-PROTECTION.md
-[completion]: ../../../../theories/becoming/chapters/PROTOCOL-COMPLETION.md
-[empirical]: ../../../../theories/becoming/chapters/EMPIRICAL-SCOPE.md
+[renewal]: ../../../../theories/becoming/history/RECIPIENT-RENEWAL.md
+[application]: ../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md
+[protection]: ../../../../theories/becoming/history/REASON-PROTECTION.md
+[completion]: ../../../../theories/becoming/history/PROTOCOL-COMPLETION.md
+[empirical]: ../../../../theories/becoming/history/EMPIRICAL-SCOPE.md
 [inputs]: CONCERN-WISDOM-INPUTS.md

@@ -35,4 +35,4 @@ The current accepted common explanation, composition/regime map, positive condit
 
 This closes the named finite causal formation/change/use interface within the existing connected-derivation and composition requirements. It does not complete all five foundation conditions, prove favorable universal direction, or add another obligatory apparatus above the constructed mechanism. The full research goal remains active.
 
-[study]: ../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md
+[study]: ../../../../theories/becoming/history/EVALUATIVE-PLASTICITY.md

@@ -1,6 +1,6 @@
 # Joint formation and renewal of concern evidence and power
 
-Exact model study, 5 October 2026. This is an AI-assisted constructed game, not empirical data. The main [theory report](../../theories/becoming/chapters/JOINT-FORMATION.md) and [proof](../../theories/becoming/chapters/JOINT-FORMATION-MATH.md) explain the contribution and limits.
+Exact model study, 5 October 2026. This is an AI-assisted constructed game, not empirical data. The main [theory report](../../theories/becoming/history/JOINT-FORMATION.md) and [proof](../../theories/becoming/history/JOINT-FORMATION-MATH.md) explain the contribution and limits.
 
 ## What this study adds
 

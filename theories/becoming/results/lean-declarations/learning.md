@@ -13,7 +13,7 @@
 <details>
 <summary>ControlledRefinement.lean — 25 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControlledRefinement.lean) · [理论 / Theory](../../chapters/CONTROLLED-REFINEMENT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControlledRefinement.lean) · [理论 / Theory](../../history/CONTROLLED-REFINEMENT.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControlledRefinement.lean`
 
@@ -189,7 +189,7 @@ Imports: `ResourceContinuation`, `FormationRoot`
 <details>
 <summary>PredictionProtocolBridge.lean — 25 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean) · [理论 / Theory](../../chapters/PREDICTION-PROTOCOL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTION-PROTOCOL-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean) · [理论 / Theory](../../history/PREDICTION-PROTOCOL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTION-PROTOCOL-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolBridge.lean`
 
@@ -272,7 +272,7 @@ Imports: `PredictionProtocolBridge`, `ProtocolCompletion`
 <details>
 <summary>PredictionProtocolObservation.lean — 35 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolObservation.lean) · [理论 / Theory](../../chapters/PREDICTION-PROTOCOL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTION-PROTOCOL-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolObservation.lean) · [理论 / Theory](../../history/PREDICTION-PROTOCOL.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTION-PROTOCOL-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/PredictionProtocolObservation.lean`
 
@@ -395,7 +395,7 @@ Imports: `ProtocolCompletion`, `ProtocolExamples`
 <details>
 <summary>ProtocolComposition.lean — 26 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean) · [理论 / Theory](../../chapters/PROTOCOL-COMPOSITION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean) · [理论 / Theory](../../history/PROTOCOL-COMPOSITION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean`
 
@@ -442,7 +442,7 @@ Imports: `ControlledRefinement`, `Depletion`
 <details>
 <summary>ProtocolExamples.lean — 35 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolExamples.lean) · [理论 / Theory](../../chapters/PROTOCOL-COMPOSITION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolExamples.lean) · [理论 / Theory](../../history/PROTOCOL-COMPOSITION.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPLETION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolExamples.lean`
 
@@ -1782,7 +1782,7 @@ Imports: `ScaleRevision`
 <details>
 <summary>InquiryJudgment.lean — 48 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean) · [理论 / Theory](../../chapters/PROVED-CONNECTIONS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean) · [理论 / Theory](../../history/PROVED-CONNECTIONS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean`
 
@@ -2016,7 +2016,7 @@ Imports: `EmbodiedChoiceScales`
 <details>
 <summary>RealFeedback.lean — 32 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean) · [理论 / Theory](../../chapters/SYSTEMS-COMPLEXITY-CHAOS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean) · [理论 / Theory](../../history/SYSTEMS-COMPLEXITY-CHAOS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean`
 

@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored focused source audit of Ren's clarification: an actor's own future can require integration of what lies outside its boundary even without explicitly thinking beyond that boundary. This supports conceptual integration of the completed pre-import study; it adds no experiment or formal result. Primary papers were read online and are linked below; no source originals were imported.
 
-The existing [alignment and governance assessment](../../../../theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md) already distinguishes material support, informative coupling and cognitive participation, and gives the relevant indistinguishability argument. [Cybernetics](../../../../theories/becoming/chapters/CYBERNETICS.md), [information and renewal](INFORMATION-AND-RENEWAL.md), and the [prior-art audit](INVARIANCE-AND-PRIOR-ART.md) already credit the closely related literature. This note narrows what those sources establish and connects it to the paid inspection interface rather than presenting a new general cognition theory.
+The existing [alignment and governance assessment](../../../../theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md) already distinguishes material support, informative coupling and cognitive participation, and gives the relevant indistinguishability argument. [Cybernetics](../../../../theories/becoming/history/CYBERNETICS.md), [information and renewal](INFORMATION-AND-RENEWAL.md), and the [prior-art audit](INVARIANCE-AND-PRIOR-ART.md) already credit the closely related literature. This note narrows what those sources establish and connects it to the paid inspection interface rather than presenting a new general cognition theory.
 
 ## Four primary comparisons
 

@@ -1,6 +1,6 @@
 # Restoration changes the conditions of further activity
 
-6 October 2026. AI-authored mechanism reconstruction under [Ren's project-wide nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), continuing the [connected generative model](../../../../theories/becoming/chapters/CONNECTED-GENERATIVE-MODEL.md). Ren's words remain in the linked source directives. This note explains a positive relationship already present in the material models and localizes a relation omitted by the recipient-credit representation. It does not add a desired stopping rule or declare the stronger foundation complete.
+6 October 2026. AI-authored mechanism reconstruction under [Ren's project-wide nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), continuing the [connected generative model](../../../../theories/becoming/history/CONNECTED-GENERATIVE-MODEL.md). Ren's words remain in the linked source directives. This note explains a positive relationship already present in the material models and localizes a relation omitted by the recipient-credit representation. It does not add a desired stopping rule or declare the stronger foundation complete.
 
 ## The connection reconstructed
 

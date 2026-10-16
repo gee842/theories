@@ -1,8 +1,8 @@
 # Alignment evidence checkpoint
 
-6 October 2026. AI-authored integration, with no new experiment, model call, literature search or scientific rerun. This assesses the seven existing [alignment requirements](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md) alongside the unchanged foundation conditions. It credits the accepted finite successor bridge, superseding the older pending-status sentence in [EMPIRICAL-SCOPE](../../../../theories/becoming/chapters/EMPIRICAL-SCOPE.md). Collaborating-AI checks are internal review, not external replication.
+6 October 2026. AI-authored integration, with no new experiment, model call, literature search or scientific rerun. This assesses the seven existing [alignment requirements](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md) alongside the unchanged foundation conditions. It credits the accepted finite successor bridge, superseding the older pending-status sentence in [EMPIRICAL-SCOPE](../../../../theories/becoming/history/EMPIRICAL-SCOPE.md). Collaborating-AI checks are internal review, not external replication.
 
-**The strongest supported cross-domain statement is conditional and differentiated:** external conditions and accessible evidence can affect regulation, learning and action; acquiring information, giving it evaluative influence, authorizing action and delivering correction are separately fallible connections. The records support those distinctions in particular systems. They do not establish one observed developmental chain, inevitable ethical convergence from self-preservation, or a uniquely superior algorithm. The [premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) and [accepted root/test audit](../root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md) distinguish supplied laws from reached capacities and normative grounds.
+**The strongest supported cross-domain statement is conditional and differentiated:** external conditions and accessible evidence can affect regulation, learning and action; acquiring information, giving it evaluative influence, authorizing action and delivering correction are separately fallible connections. The records support those distinctions in particular systems. They do not establish one observed developmental chain, inevitable ethical convergence from self-preservation, or a uniquely superior algorithm. The [premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md) and [accepted root/test audit](../root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md) distinguish supplied laws from reached capacities and normative grounds.
 
 ## Seven requirements, four evidence statuses
 
@@ -32,8 +32,8 @@ SHA-256 values below identify current bytes read on 6 October. Manifests and acc
 
 | Artifact | SHA-256 |
 |---|---|
-| [Empirical scope](../../../../theories/becoming/chapters/EMPIRICAL-SCOPE.md) | `7e20e0a0d875d4bfc820736c0775be3da93af54e9e45a065e449dbf0ba8909ba` |
-| [Premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) | `ddecb8d63388cda33e0ad2ccdfcf7c7ffbd3779e8eac81abae3ea93754531874` |
+| [Empirical scope](../../../../theories/becoming/history/EMPIRICAL-SCOPE.md) | `7e20e0a0d875d4bfc820736c0775be3da93af54e9e45a065e449dbf0ba8909ba` |
+| [Premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md) | `ddecb8d63388cda33e0ad2ccdfcf7c7ffbd3779e8eac81abae3ea93754531874` |
 | [Root/test source audit](../root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md) | `20f78f431920d13b587fcd2ddaca2ad17f54be8c93a57c0f113911ac95041ddc` |
 | [Successor acceptance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/review-acceptance.json) | `8e45eee2b0bd4ee63fef02cc5f11a8c738814c6aa52a681499621d604c591d0d` |
 | [Handoff freeze](../../../../experiments/integrated-correction/selective-handoff/FREEZE.json) | `0fb756ec527f53fc3b348639d9b1d56471711e8cc9d4ba7153c0024ce464c3e1` |

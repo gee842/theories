@@ -1,6 +1,6 @@
 # Sustained living organization → collective practical judgment
 
-8 October 2026, Asia/Bangkok. AI-authored research integration for Ren's active objective: **connect sustained living organization to collective practical judgment**. [Canonical bilingual account](../../../../theories/becoming/chapters/SUSTAINED-LIVING-JUDGMENT.md). This is new work in the existing root-foundation study; preceding sources and results remain unchanged. The original objective is a substantive connection, not completion of every biological model or universal empirical validation.
+8 October 2026, Asia/Bangkok. AI-authored research integration for Ren's active objective: **connect sustained living organization to collective practical judgment**. [Canonical bilingual account](../../../../theories/becoming/history/SUSTAINED-LIVING-JUDGMENT.md). This is new work in the existing root-foundation study; preceding sources and results remain unchanged. The original objective is a substantive connection, not completion of every biological model or universal empirical validation.
 
 ## 1. Positive argument
 

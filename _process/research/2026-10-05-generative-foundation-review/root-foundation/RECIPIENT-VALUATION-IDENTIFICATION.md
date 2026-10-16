@@ -92,9 +92,9 @@ This maintains Ren's central connection between a future and external integratio
 
 [learning]: ../../2026-10-05-concern-theory/learning-formal.md
 [dynamics]: ../../2026-10-05-concern-theory/dynamics-formal.md
-[interface]: ../../../../theories/becoming/chapters/CONCERN-AND-CORRECTION.md
+[interface]: ../../../../theories/becoming/history/CONCERN-AND-CORRECTION.md
 [formed]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/concern/README.md
-[ethics]: ../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md
+[ethics]: ../../../../theories/becoming/history/ETHICAL-FOUNDATION.md
 [rat-paper]: ../../../../sources/30-recipient-harm-valuation-2026-10-06/original/hernandez2020.pdf
 [rat-trials]: ../../../../sources/30-recipient-harm-valuation-2026-10-06/original/TrialByTrialChoicesMainPaper.csv
 [rat-summary]: ../../../../sources/30-recipient-harm-valuation-2026-10-06/original/dataMainPaper.csv

@@ -1,6 +1,6 @@
 # 良知生成演化：实际发展与回应组织的再形成
 
-2026年10月7日。AI 撰写，接续 Ren [保存方向并推进的指示](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)与本会话“请继续”。本轮考察**实际发展怎样改变后继的可运行回应关系，回应又怎样改变进一步形成的条件**。这是良知生成解释的一项机制连接，不将局部修复等同于仁，也不替代[普遍元伦理目标](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)。
+2026年10月7日。AI 撰写，接续 Ren [保存方向并推进的指示](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)与本会话“请继续”。本轮考察**实际发展怎样改变后继的可运行回应关系，回应又怎样改变进一步形成的条件**。这是良知生成解释的一项机制连接，不将局部修复等同于仁，也不替代[普遍元伦理目标](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)。
 
 ## 1. 从同一形成史中辨认能力
 
@@ -12,7 +12,7 @@
 
 ## 2. 信用既有结果，定位新增连接
 
-[评价接续](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md)已经实现：实际形成的后继取得评价影响，以自己的新证据纠正手段并行动。[评价发展](../../../../experiments/valuation-development/README.md)也已有配对经历改变评价和选择、谱系与支持进入同一过程的条件结果。它们都不在本轮重新开缺口。
+[评价接续](../../../../theories/becoming/history/EVALUATIVE-SUCCESSION.md)已经实现：实际形成的后继取得评价影响，以自己的新证据纠正手段并行动。[评价发展](../../../../experiments/valuation-development/README.md)也已有配对经历改变评价和选择、谱系与支持进入同一过程的条件结果。它们都不在本轮重新开缺口。
 
 并行规范接口的后续核查还信用[履行后的撤回](FULFILLMENT-WITHDRAWAL-INTEGRATION.md)与[多项诉求中的自模型认证](PLURAL-CLAIMS-INTEGRATION.md)：依已获记录修订一项实践应用的有限机制也已完成。本轮不另称首次实现“完成以后知道停止”。这些结果的具体支持、解释及权限前提保留原范围。
 

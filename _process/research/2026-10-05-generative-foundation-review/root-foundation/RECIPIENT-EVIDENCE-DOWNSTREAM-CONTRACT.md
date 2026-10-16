@@ -58,7 +58,7 @@ No repeated inspector is required by these downstream soundness contracts. Our o
 [protection]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean
 [action]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean
 [settlement]: ../../2026-10-05-revisable-concern/settlement/formal/REPORT.md
-[ethics]: ../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md
-[concern]: ../../../../theories/becoming/chapters/CONCERN-AND-CORRECTION.md
+[ethics]: ../../../../theories/becoming/history/ETHICAL-FOUNDATION.md
+[concern]: ../../../../theories/becoming/history/CONCERN-AND-CORRECTION.md
 [agentdojo]: ../../../../experiments/agentdojo-evidence-boundary/PROTOCOL.md
 [cue]: ../../../../experiments/recipient-cue-grounding/README.md

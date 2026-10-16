@@ -1,6 +1,6 @@
 # Generated self and ethical direction in the Lean generative model
 
-6 October 2026. AI-authored integration under [Ren's request to finish the foundation without adding assumptions or axioms](../../../../sources/15-codex-theory-conversations/2026-10-06-self-foundation-lean-no-additions.md). The current philosophical account remains [The generated I and ethics without a fundamental owner](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md).
+6 October 2026. AI-authored integration under [Ren's request to finish the foundation without adding assumptions or axioms](../../../../sources/15-codex-theory-conversations/2026-10-06-self-foundation-lean-no-additions.md). The current philosophical account remains [The generated I and ethics without a fundamental owner](../../../../theories/becoming/history/GENERATED-SELF-AND-ETHICS.md).
 
 ## Outcome
 

@@ -1,6 +1,6 @@
 # Expanding joint provision from retained organization: review
 
-8 October 2026, Asia/Bangkok. AI-authored independent review for [living dependencies](../../../../theories/becoming/chapters/LIVING-DEPENDENCIES.md), following the [transition review](LIVING-TRANSITION-REVIEW.md). It applies the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md): compartments and their shared provision are differentiated within the same history. This review does not independently reread the primary papers or rerun Lean. Final source and receipt inspection is recorded below.
+8 October 2026, Asia/Bangkok. AI-authored independent review for [living dependencies](../../../../theories/becoming/history/LIVING-DEPENDENCIES.md), following the [transition review](LIVING-TRANSITION-REVIEW.md). It applies the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md): compartments and their shared provision are differentiated within the same history. This review does not independently reread the primary papers or rerun Lean. Final source and receipt inspection is recorded below.
 
 **Candidate advance:** distinguish the repeatedly reusable support of past activity from the provision required by currently coexisting living activity. If independently justified disjoint requirements exceed inherited availability, explain the actual intervening increase without defining living organization as whatever must constantly replace itself.
 

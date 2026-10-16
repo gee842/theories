@@ -53,7 +53,7 @@
   },
   {
     "id": "material-prediction-composition",
-    "source": "theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md",
+    "source": "theories/becoming/history/MATERIAL-PREDICTION-COMPOSITION.md",
     "title_zh": "材料构造接入预测与修正",
     "title_en": "Material construction of prediction and correction",
     "category": "mechanism",
@@ -80,7 +80,7 @@
   },
   {
     "id": "material-selector-composition",
-    "source": "theories/becoming/chapters/MATERIAL-SELECTOR-COMPOSITION.md",
+    "source": "theories/becoming/history/MATERIAL-SELECTOR-COMPOSITION.md",
     "title_zh": "由真实部件构造可改换的选择器",
     "title_en": "Constructing revisable selectors from actual parts",
     "category": "mechanism",
@@ -107,7 +107,7 @@
   },
   {
     "id": "material-updater-composition",
-    "source": "theories/becoming/chapters/MATERIAL-UPDATER-COMPOSITION.md",
+    "source": "theories/becoming/history/MATERIAL-UPDATER-COMPOSITION.md",
     "title_zh": "选择器与更新器共用同一材料历史",
     "title_en": "Selectors and updaters sharing one material history",
     "category": "mechanism",
@@ -198,7 +198,7 @@
   },
   {
     "id": "mathematical-truth-and-the-root",
-    "source": "theories/becoming/chapters/MATHEMATICAL-TRUTH-AND-THE-ROOT.md",
+    "source": "theories/becoming/history/MATHEMATICAL-TRUTH-AND-THE-ROOT.md",
     "title_zh": "数学真理与生成根基",
     "title_en": "Mathematical truth and the generative root",
     "category": "mathematics",
@@ -228,7 +228,7 @@
   },
   {
     "id": "mathematics-and-generativity",
-    "source": "theories/becoming/chapters/MATHEMATICS-AND-GENERATIVITY.md",
+    "source": "theories/becoming/history/MATHEMATICS-AND-GENERATIVITY.md",
     "title_zh": "数学与生成奠基",
     "title_en": "Mathematics and generative grounding",
     "category": "mathematics",
@@ -276,7 +276,7 @@
     "scope_en": "Secondary analysis of archived physical observations, not a new experiment. Lean rounds: 13 theorems/26 audits (closure 147); 13/21 (168); 10/14 (228); 8/9 (237). Independent reviews rebuilt every audit and number. Percent-seconds is an exposure proxy, not electrical energy; engineering weights and setpoints supply neither G0, basic living claims nor legitimate authority.",
     "next_zh": "有根据的测量／模型域与实际定时可行性 → 有根据的共同回应；未来延迟、真实温度校准与漂移、提前发出替代命令的后果仍需证据。",
     "next_en": "Justified measurement/model domains and actual timed feasibility → warranted common response; future latency, true-temperature calibration and drift, and the consequences of issuing an alternative earlier still need evidence.",
-    "source": "theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+    "source": "theories/becoming/history/MEASURED-FEEDBACK-CORRESPONDENCE.md",
     "source_sha256": "c52c7b93dfe19e63d0520fa82340b87e04d8e41ae7642563bdc2c157de611b25",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean",
@@ -298,7 +298,7 @@
   },
   {
     "id": "memory-correction-and-succession",
-    "source": "theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md",
+    "source": "theories/becoming/history/MEMORY-CORRECTION-AND-SUCCESSION.md",
     "title_zh": "记忆修正、选择性继承与后续执行",
     "title_en": "Memory correction, selective inheritance and execution",
     "category": "empirical-identification",
@@ -322,7 +322,7 @@
   },
   {
     "id": "meta-revision",
-    "source": "theories/becoming/chapters/META-REVISION.md",
+    "source": "theories/becoming/history/META-REVISION.md",
     "title_zh": "修订策略的资源与信息边界",
     "title_en": "Resource and information limits of metarevision",
     "category": "mathematical-boundary",
@@ -346,7 +346,7 @@
   },
   {
     "id": "method-revision",
-    "source": "theories/becoming/chapters/METHOD-REVISION.md",
+    "source": "theories/becoming/history/METHOD-REVISION.md",
     "title_zh": "由实际后果修订数学方法",
     "title_en": "Revising mathematical methods through consequences",
     "category": "mechanism",
@@ -370,7 +370,7 @@
   },
   {
     "id": "model-family-revision",
-    "source": "theories/becoming/chapters/MODEL-FAMILY-REVISION.md",
+    "source": "theories/becoming/history/MODEL-FAMILY-REVISION.md",
     "title_zh": "用新证据修订模型族",
     "title_en": "Revising model families with new evidence",
     "category": "mechanism",
@@ -405,7 +405,7 @@
     "scope_en": "45 new theorems / 64 new audits (closure 92). The escape is from the frozen installed repertoire, not from the complete law that already includes coupling; an equivalent conventional graph-rewriting account reproduces the construction, and no predictive superiority is claimed. Unbounded qualitative innovation, the origin of every physical law and universal empirical coverage are not shown; novelty is not a universal ethical duty.",
     "next_zh": "新构造关系在真实支持、损失与竞争下的形成速率、留存与持续作用，并与匹配的常规机制比较。",
     "next_en": "The actual rate, retention and continuing effects of changed construction relations under real support, loss and competition, tested against matched conventional mechanisms.",
-    "source": "theories/becoming/chapters/NEW-POSSIBILITIES.md",
+    "source": "theories/becoming/history/NEW-POSSIBILITIES.md",
     "source_sha256": "229c2e99dd8ff551b4248dbddb2b9856aa31cd84d3b6866ec7c3d62eaa194ae9",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean"
@@ -477,7 +477,7 @@
   },
   {
     "id": "paid-preimport-evidence",
-    "source": "theories/becoming/chapters/PAID-PREIMPORT-EVIDENCE.md",
+    "source": "theories/becoming/history/PAID-PREIMPORT-EVIDENCE.md",
     "title_zh": "命令导入前取得独立证据",
     "title_en": "Acquiring independent evidence before command import",
     "category": "mechanism",
@@ -626,7 +626,7 @@
   },
   {
     "id": "prediction-action",
-    "source": "theories/becoming/chapters/PREDICTION-ACTION.md",
+    "source": "theories/becoming/history/PREDICTION-ACTION.md",
     "title_zh": "形成的机器取得预测并用于行动",
     "title_en": "Formed machinery acquires prediction and acts",
     "category": "mechanism",
@@ -655,7 +655,7 @@
   },
   {
     "id": "prediction-protocol",
-    "source": "theories/becoming/chapters/PREDICTION-PROTOCOL.md",
+    "source": "theories/becoming/history/PREDICTION-PROTOCOL.md",
     "title_zh": "预测器的多事件学习协议",
     "title_en": "The predictor’s multi-event learning protocol",
     "category": "formal-interface",
@@ -681,7 +681,7 @@
   },
   {
     "id": "protocol-completion",
-    "source": "theories/becoming/chapters/PROTOCOL-COMPLETION.md",
+    "source": "theories/becoming/history/PROTOCOL-COMPLETION.md",
     "title_zh": "发出的操作何时保证完成",
     "title_en": "When an issued operation is guaranteed to complete",
     "category": "formal-interface",
@@ -708,7 +708,7 @@
   },
   {
     "id": "protocol-composition",
-    "source": "theories/becoming/chapters/PROTOCOL-COMPOSITION.md",
+    "source": "theories/becoming/history/PROTOCOL-COMPOSITION.md",
     "title_zh": "多个物理事件如何实现一个学习步骤",
     "title_en": "Composing physical protocols into learning steps",
     "category": "formal-interface",
@@ -746,7 +746,7 @@
     "scope_en": "A targeted audit, not an exhaustive census of systems theories or a retrospective certification of all proofs. Fresh build: 31 theorems / 48 audits; 317 audits across seven imported modules. The plan menu, readout relations and selector are supplied; immediate response is not compared with inquiry.",
     "next_zh": "有根据地形成误差范围与方案，再在共同实际时限内选择查询或较早回应；由“测得的反馈与实际对应”接续实际对应。",
     "next_en": "Form evidence-justified uncertainty sets and alternatives, then select inquiry or earlier response under a common physical deadline; measured-feedback correspondence continues the real-world link.",
-    "source": "theories/becoming/chapters/PROVED-CONNECTIONS.md",
+    "source": "theories/becoming/history/PROVED-CONNECTIONS.md",
     "source_sha256": "a3d9a108978b458f24e8857dec9e7feb27a8ef97dd560f703214c19c71164d25",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean",
@@ -762,7 +762,7 @@
   },
   {
     "id": "reason-protection",
-    "source": "theories/becoming/chapters/REASON-PROTECTION.md",
+    "source": "theories/becoming/history/REASON-PROTECTION.md",
     "title_zh": "从当前理由到有效保护",
     "title_en": "From current reasons to effective protection",
     "category": "mechanism-strategy",
@@ -789,7 +789,7 @@
   },
   {
     "id": "recipient-correction",
-    "source": "theories/becoming/chapters/RECIPIENT-CORRECTION.md",
+    "source": "theories/becoming/history/RECIPIENT-CORRECTION.md",
     "title_zh": "不覆盖其他位置的条件而修正帮助",
     "title_en": "Correcting recipient action without overwriting other conditions",
     "category": "mechanism",
@@ -815,7 +815,7 @@
   },
   {
     "id": "recipient-cue-grounding",
-    "source": "theories/becoming/chapters/RECIPIENT-CUE-GROUNDING.md",
+    "source": "theories/becoming/history/RECIPIENT-CUE-GROUNDING.md",
     "title_zh": "外部社会线索与受益者行动",
     "title_en": "External social cues and recipient-directed action",
     "category": "empirical-identification",
@@ -838,7 +838,7 @@
   },
   {
     "id": "recipient-harm-and-action",
-    "source": "theories/becoming/chapters/RECIPIENT-HARM-AND-ACTION.md",
+    "source": "theories/becoming/history/RECIPIENT-HARM-AND-ACTION.md",
     "title_zh": "受影响者损害与学习行动",
     "title_en": "Recipient harm and learned action",
     "category": "empirical-identification",
@@ -863,7 +863,7 @@
   },
   {
     "id": "recipient-reason-action",
-    "source": "theories/becoming/chapters/RECIPIENT-REASON-ACTION.md",
+    "source": "theories/becoming/history/RECIPIENT-REASON-ACTION.md",
     "title_zh": "实际受益者理由进入行动",
     "title_en": "Actual recipient reasons enter action",
     "category": "mechanism",
@@ -892,7 +892,7 @@
   },
   {
     "id": "recipient-reason-revision",
-    "source": "theories/becoming/chapters/RECIPIENT-REASON-REVISION.md",
+    "source": "theories/becoming/history/RECIPIENT-REASON-REVISION.md",
     "title_zh": "新后果修订受益者理由与行动",
     "title_en": "Fresh consequences revise recipient reasons and action",
     "category": "mechanism",
@@ -922,7 +922,7 @@
   },
   {
     "id": "recipient-renewal",
-    "source": "theories/becoming/chapters/RECIPIENT-RENEWAL.md",
+    "source": "theories/becoming/history/RECIPIENT-RENEWAL.md",
     "title_zh": "受益者支持下的学习更新与延续",
     "title_en": "Recipient-supported learning renewal",
     "category": "mechanism",
@@ -950,7 +950,7 @@
   },
   {
     "id": "recipient-transmission",
-    "source": "theories/becoming/chapters/RECIPIENT-TRANSMISSION.md",
+    "source": "theories/becoming/history/RECIPIENT-TRANSMISSION.md",
     "title_zh": "受益者路线形成与后果资助传递",
     "title_en": "Formed recipient routes and consequence-funded transmission",
     "category": "mechanism",
@@ -976,7 +976,7 @@
   },
   {
     "id": "recorded-reasons",
-    "source": "theories/becoming/chapters/RECORDED-REASONS.md",
+    "source": "theories/becoming/history/RECORDED-REASONS.md",
     "title_zh": "记录、可修订理由与重建",
     "title_en": "Recorded evidence, revisable reasons and reconstruction",
     "category": "mechanism",
@@ -1043,7 +1043,7 @@
   },
   {
     "id": "revisable-concern-settlement",
-    "source": "theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md",
+    "source": "theories/becoming/history/REVISABLE-CONCERN-SETTLEMENT.md",
     "title_zh": "可修订关切的选择与接续",
     "title_en": "Selection and succession of revisable concern",
     "category": "mechanism-strategy",
@@ -1066,7 +1066,7 @@
   },
   {
     "id": "reward-learning-and-recipient-choice",
-    "source": "theories/becoming/chapters/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
+    "source": "theories/becoming/history/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md",
     "title_zh": "奖励关联学习与受益者选择",
     "title_en": "Reward association and recipient-directed choice",
     "category": "empirical-identification",
@@ -1089,7 +1089,7 @@
   },
   {
     "id": "route-diagnostics",
-    "source": "theories/becoming/chapters/ROUTE-DIAGNOSTICS.md",
+    "source": "theories/becoming/history/ROUTE-DIAGNOSTICS.md",
     "title_zh": "学习路线的诊断证据",
     "title_en": "Evidence for diagnosing learning routes",
     "category": "formal-interface",
@@ -1139,7 +1139,7 @@
   },
   {
     "id": "selector-revision",
-    "source": "theories/becoming/chapters/SELECTOR-REVISION.md",
+    "source": "theories/becoming/history/SELECTOR-REVISION.md",
     "title_zh": "选择器通过自身后果被改换",
     "title_en": "Selector revision through its consequences",
     "category": "mechanism",
@@ -1165,7 +1165,7 @@
   },
   {
     "id": "semantic-action-composition",
-    "source": "theories/becoming/chapters/SEMANTIC-ACTION-COMPOSITION.md",
+    "source": "theories/becoming/history/SEMANTIC-ACTION-COMPOSITION.md",
     "title_zh": "保持行动所涉对象与命题",
     "title_en": "Preserving recipient and proposition through action composition",
     "category": "formal-interface",
@@ -1193,7 +1193,7 @@
   },
   {
     "id": "semantic-calibration",
-    "source": "theories/becoming/chapters/SEMANTIC-CALIBRATION.md",
+    "source": "theories/becoming/history/SEMANTIC-CALIBRATION.md",
     "title_zh": "以先前实际取得的记录校准理由",
     "title_en": "Calibrating reasons against acquired records",
     "category": "formal-interface",
@@ -1232,7 +1232,7 @@
     "scope_en": "An explanatory synthesis, not a new omnibus theorem, experiment or claim of historical priority; inherited mathematics keeps its checked scope. Universal empirical coverage, the origin of all physical laws, phenomenal experience, guaranteed favorable evolution, autonomous ethical discovery and generally wise AI are not established. The three foundational premises are provisional, not a proved uniquely minimal axiom set.",
     "next_zh": "可修订的方式已明列：形成关系可能被证明无效、学到的影响可能是预装的、交接可能失败、规范应用可能缺乏权限或误述损失、更简单的说明可能保留全部解释内容。现由 Theory of Becoming 统一。",
     "next_en": "Revision routes are listed: a formative relation may prove inert, a learned influence may be preinstalled, a handoff may fail, a normative application may lack authority or misdescribe the loss, or a simpler account may keep all explanatory content. The Theory of Becoming now unifies this articulation.",
-    "source": "theories/becoming/chapters/SHENGSHENG.md",
+    "source": "theories/becoming/history/SHENGSHENG.md",
     "source_sha256": "be510a31ee5d682e40c8f0afc595b473a23e4d2c7f4ef72a3ec0fd82f84ce00e",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/GenerativeEpisode.lean",
@@ -1251,7 +1251,7 @@
   },
   {
     "id": "source-map",
-    "source": "theories/becoming/chapters/SOURCE-MAP.md",
+    "source": "theories/becoming/history/SOURCE-MAP.md",
     "title_zh": "来源、谱系与证据边界",
     "title_en": "Sources, genealogy and evidence boundaries",
     "category": "navigation",
@@ -1276,7 +1276,7 @@
   },
   {
     "id": "start-here",
-    "source": "theories/becoming/chapters/START-HERE.md",
+    "source": "theories/becoming/history/START-HERE.md",
     "title_zh": "统一理论简明入口",
     "title_en": "The unified foundation in brief",
     "category": "navigation",
@@ -1299,7 +1299,7 @@
   },
   {
     "id": "stochastic-prediction-composition",
-    "source": "theories/becoming/chapters/STOCHASTIC-PREDICTION-COMPOSITION.md",
+    "source": "theories/becoming/history/STOCHASTIC-PREDICTION-COMPOSITION.md",
     "title_zh": "保留失败学习的完整接续分布",
     "title_en": "Complete continuation distributions including learning failures",
     "category": "formal-interface",
@@ -1328,7 +1328,7 @@
   },
   {
     "id": "strongest-foundation-claim",
-    "source": "theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md",
+    "source": "theories/becoming/history/STRONGEST-FOUNDATION-CLAIM.md",
     "title_zh": "最强生成根基主张",
     "title_en": "The strongest foundation claim",
     "category": "research-programme",
@@ -1351,7 +1351,7 @@
   },
   {
     "id": "successor-learning",
-    "source": "theories/becoming/chapters/SUCCESSOR-LEARNING.md",
+    "source": "theories/becoming/history/SUCCESSOR-LEARNING.md",
     "title_zh": "后继学习并传递其修正",
     "title_en": "A successor learns and transmits its correction",
     "category": "mechanism",
@@ -1390,7 +1390,7 @@
     "scope_en": "29 new theorems / 39 new audits (192 including imports); the independent completion review accepted the repaired account. The rate is a local law awaiting calibration, not a biological law derived from stoichiometry; toy units cannot be identified with crops, carers or institutions. Full living-domain coverage, autonomous organization, infinite continuation, universal compliance and real allocation are not completed.",
     "next_zh": "在指定共同实践中前瞻检验：实测能力／交付与阶段需求 → 获授权的实施 → 实际保护与承担者负担；对应在此之前不能升格为经验验证。",
     "next_en": "Prospective testing in a specified shared practice: measured competence/delivery and stage demand → authorized enactment → actual protection and contributor burden; correspondence cannot be promoted to empirical validation before that test.",
-    "source": "theories/becoming/chapters/SUSTAINED-LIVING-JUDGMENT.md",
+    "source": "theories/becoming/history/SUSTAINED-LIVING-JUDGMENT.md",
     "source_sha256": "5099e076723d9b0d397e015778ac75137adcc28b2c5a5c612776918eb6adb6f4",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean",
@@ -1406,7 +1406,7 @@
   },
   {
     "id": "synthesis-record",
-    "source": "theories/becoming/chapters/SYNTHESIS-RECORD.md",
+    "source": "theories/becoming/history/SYNTHESIS-RECORD.md",
     "title_zh": "综合与核查记录",
     "title_en": "Synthesis and verification record",
     "category": "navigation",
@@ -1443,7 +1443,7 @@
     "scope_en": "27 new theorems / 41 declaration audits, all empty, with 18 inherited declarations rechecked: when sufficient regions intersect, and correlated states with two sufficient regions but no least one. These concern sufficient descriptions and do not derive causal constitution from correlation. No new axiom; no impossibility claim about the stronger target.",
     "next_zh": "在所意图的根基范围内，为实际关系、可接纳变化的范围以及用于归属它们的认识与推理提供根据；由“系统关系与可行变化怎样获得根据”接续。",
     "next_en": "Warrant the actual relations, the range of admissible variation and the recognition and inference used to attribute them throughout the intended foundational scope; continued in the system-warrant chapter.",
-    "source": "theories/becoming/chapters/SYSTEM-INDIVIDUATION.md",
+    "source": "theories/becoming/history/SYSTEM-INDIVIDUATION.md",
     "source_sha256": "62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean"
@@ -1470,7 +1470,7 @@
     "scope_en": "Variation warrant: 19 theorems / 21 audits, all empty (59 inherited listed separately); aspect distinctions 19/25; operation roles 28 theorems with 111 new and inherited reports empty. The TCLab and bacterial oxygen studies support actual participation and joint variation at their interfaces. The Boolean laws are explicit mathematical controls, not a claim that every actual system has these coordinates or operations.",
     "next_zh": "选定一项具体扩展，检验其实际准备、持续机制与联合约束是否支持它；已建立的就复用，缺少的就保持开放，不让完成的机制等待无关的全局保证。",
     "next_en": "Select a specific claimed extension and test whether its actual preparation, continuing mechanism and joint constraints support it; reuse what is established and leave the rest open, without making completed mechanisms wait for an unrelated global guarantee.",
-    "source": "theories/becoming/chapters/SYSTEM-WARRANT.md",
+    "source": "theories/becoming/history/SYSTEM-WARRANT.md",
     "source_sha256": "8ad112db9f4b6c4da1abeb993cf2d397eb7adffe98af63b0eb2dd9e83e044e0e",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean",
@@ -1489,7 +1489,7 @@
   },
   {
     "id": "systems-complexity-chaos",
-    "source": "theories/becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md",
+    "source": "theories/becoming/history/SYSTEMS-COMPLEXITY-CHAOS.md",
     "title_zh": "系统、复杂性与混沌的生成整合",
     "title_en": "Systems, complexity and chaos within generative grounding",
     "category": "mathematics",
@@ -1678,7 +1678,7 @@
   },
   {
     "id": "theory",
-    "source": "theories/becoming/chapters/THEORY.md",
+    "source": "theories/becoming/history/THEORY.md",
     "title_zh": "关系生成与智慧的条件",
     "title_en": "Relational generativity and the conditions of wisdom",
     "category": "synthesis",
@@ -1740,7 +1740,7 @@
   },
   {
     "id": "tool-evidence-and-authority",
-    "source": "theories/becoming/chapters/TOOL-EVIDENCE-AND-AUTHORITY.md",
+    "source": "theories/becoming/history/TOOL-EVIDENCE-AND-AUTHORITY.md",
     "title_zh": "外部证据、权限与有效行动",
     "title_en": "External evidence, authority and effective action",
     "category": "empirical-identification",
@@ -1765,7 +1765,7 @@
   },
   {
     "id": "unified-ethical-grounding",
-    "source": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
+    "source": "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md",
     "title_zh": "整体生成中的统一伦理根据",
     "title_en": "Unified ethical grounding within becoming",
     "category": "normative-foundation",
@@ -1816,7 +1816,7 @@
   },
   {
     "id": "universal-ethical-minimum",
-    "source": "theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md",
+    "source": "theories/becoming/history/UNIVERSAL-ETHICAL-MINIMUM.md",
     "title_zh": "容纳多元生活的普遍伦理最低主张",
     "title_en": "A universal ethical minimum compatible with plural lives",
     "category": "ethical-argument",
@@ -1841,7 +1841,7 @@
   },
   {
     "id": "updater-formation",
-    "source": "theories/becoming/chapters/UPDATER-FORMATION.md",
+    "source": "theories/becoming/history/UPDATER-FORMATION.md",
     "title_zh": "形成并改变修订选择器的机制",
     "title_en": "Forming and changing selector updaters",
     "category": "mechanism",
@@ -1868,7 +1868,7 @@
   },
   {
     "id": "valuation-development",
-    "source": "theories/becoming/chapters/VALUATION-DEVELOPMENT.md",
+    "source": "theories/becoming/history/VALUATION-DEVELOPMENT.md",
     "title_zh": "评价倾向怎样发展",
     "title_en": "How valuation develops",
     "category": "mechanism-mathematics",
@@ -1900,7 +1900,7 @@
   },
   {
     "id": "valuation-identification-bounds",
-    "source": "theories/becoming/chapters/VALUATION-IDENTIFICATION-BOUNDS.md",
+    "source": "theories/becoming/history/VALUATION-IDENTIFICATION-BOUNDS.md",
     "title_zh": "评价改变的可识别性界限",
     "title_en": "Bounds for identifying changed evaluation",
     "category": "identification-mathematics",

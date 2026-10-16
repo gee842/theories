@@ -8,7 +8,7 @@
 
 | File | SHA-256 |
 |---|---|
-| [Canonical unified grounding](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md) | `9a752aa0f340fcef7e60402a9e79b050bf5f1ea2b236a1fe66c958177db8cd6c` |
+| [Canonical unified grounding](../../../../theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md) | `9a752aa0f340fcef7e60402a9e79b050bf5f1ea2b236a1fe66c958177db8cd6c` |
 | [Constructive reconstruction](NONDUAL-GENERATIVE-RECONSTRUCTION.md) | `71d1909e5026a88a3784957751db39f09afebaec7e8ccb0855314b14b788e9be` |
 | [Primary comparison](NONDUAL-GENERATIVE-SOURCES.md) | `46229e826e81532bcb02ca3771b8d4e2c470f25fbaf3d45b16668c8233bc417e` |
 | [Ren's exact-message record](../../../../sources/15-codex-theory-conversations/2026-10-06-nondual-generative-starting-point.md) | `4f2148f89acf2601aa982d3bfe423195dffd0d426a00613f65c7316c197f6efb` |
@@ -33,6 +33,6 @@ This reviewer read the source dossier only. Its investigator's successful primar
 
 The [preceding canonical snapshot](development/UNIFIED-ETHICAL-GROUNDING-BEFORE-NONDUAL-RECONSTRUCTION.md) was checked at SHA-256 `86b669278b7f06cb951058e9575eeed2efe868dbc9af54e4f7b2fa24f6f40456`. Its [provenance](development/NONDUAL-GENERATIVE-BEFORE.json) preserves the original link base. The [previous integrity receipt](ASSISTANCE-JURISDICTION-CHECKS.json) and [integration review](ASSISTANCE-JURISDICTION-INTEGRATION.md) are historical records, not current certifications or new corroboration.
 
-The six new nondual-generative paragraphs were read in [RESEARCH](../../../../RESEARCH.md), the [theory README](../../../../theories/becoming/README.md), the [study README](README.md), [GENERATIVE-GROUNDING](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), [HUIGEN](../../../../theories/becoming/chapters/HUIGEN.md) and [SOURCES](../../../../sources/SOURCES.md). They preserve the changed target, inherited genealogy and supplied coordination potential. No correction was needed. This scoped review does not recertify unrelated edits in those shared files.
+The six new nondual-generative paragraphs were read in [RESEARCH](../../../../RESEARCH.md), the [theory README](../../../../theories/becoming/README.md), the [study README](README.md), [GENERATIVE-GROUNDING](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md), [HUIGEN](../../../../theories/becoming/history/HUIGEN.md) and [SOURCES](../../../../sources/SOURCES.md). They preserve the changed target, inherited genealogy and supplied coordination potential. No correction was needed. This scoped review does not recertify unrelated edits in those shared files.
 
 The next substantive task is to explain why actual adversity warrants formation of an effective responsive relation while deriving its relevant boundaries. Destructive and indifferent formations remain within the same explanatory reality. The accepted conditional foundation retains its original completion scope; the stronger objective remains open. The parent's [focused integrity receipt](NONDUAL-GENERATIVE-CHECKS.json) is intentionally pending until this review freezes. It concerns hashes and local references, not ethical proof or empirical validation.

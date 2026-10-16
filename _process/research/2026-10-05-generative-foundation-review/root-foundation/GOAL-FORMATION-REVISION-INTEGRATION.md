@@ -1,6 +1,6 @@
 # 形成、反思与目的修订的相连实现 / Joined formation, reflection and goal revision
 
-2026-10-08, Asia/Bangkok. AI-authored research answering [Ren's instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md). The [canonical chapter](../../../../theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md) supplies the explanatory account. This study reuses the existing directory and closes the finite implementation connection identified in [the earlier normative argument, §7](GENERATIVE-ALIGNMENT-REVISION.md#7-当前结论与下一项判别--result-and-next-discriminator).
+2026-10-08, Asia/Bangkok. AI-authored research answering [Ren's instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md). The [canonical chapter](../../../../theories/becoming/history/GOAL-FORMATION-AND-REVISION.md) supplies the explanatory account. This study reuses the existing directory and closes the finite implementation connection identified in [the earlier normative argument, §7](GENERATIVE-ALIGNMENT-REVISION.md#7-当前结论与下一项判别--result-and-next-discriminator).
 
 **结果：同一模型历史中的实际反馈形成目的，校准后的后果证据及形成记录支持判断，响应改变操作目的，有权限的改革改变原选择规则，后续行动消费新目的并保留真实损失。改变后的规则也改变后续目的取得。** 新增 **43项 Lean 定理、85项显式声明审计**通过；另重查50项继承定理、80项继承声明，分列不重复计数。完成的是相连理论候选及有限条件实现，不是生物全尺度验证、充分理解的普遍判准或伦理必然收敛。
 

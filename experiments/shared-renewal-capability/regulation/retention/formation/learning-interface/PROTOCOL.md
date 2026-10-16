@@ -1,7 +1,7 @@
 # Paid consequence-to-learning interface
 
 6 October 2026. AI-authored specification written before the executable results.
-This supports the [unified derivation](../../../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md)
+This supports the [unified derivation](../../../../../../theories/becoming/history/GENERATIVE-GROUNDING.md)
 while the parallel selector-revision study develops its own mechanism. It does
 not replace that study or claim to derive the learner's architecture.
 

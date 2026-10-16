@@ -53,7 +53,7 @@ This also fixes the role of counterfactual tests. Signal changes can test cue de
 
 ### The actual successor already available
 
-A subsequent three-agent audit and root's source reading correct the earlier broad wording about missing reconstruction. The [accepted evaluative succession](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md) supplies a concrete, same-history sensing/updating/responding construction. Its [formal account](EVALUATIVE-SUCCESSION-MATH.md#5-general-interfaces-and-the-actual-composed-conclusion) separates the established judgment from its ethical interpretation.
+A subsequent three-agent audit and root's source reading correct the earlier broad wording about missing reconstruction. The [accepted evaluative succession](../../../../theories/becoming/history/EVALUATIVE-SUCCESSION.md) supplies a concrete, same-history sensing/updating/responding construction. Its [formal account](EVALUATIVE-SUCCESSION-MATH.md#5-general-interfaces-and-the-actual-composed-conclusion) separates the established judgment from its ethical interpretation.
 
 | Content in this history | What supports it | What it does not establish |
 |---|---|---|
@@ -64,7 +64,7 @@ A subsequent three-agent audit and root's source reading correct the earlier bro
 
 The corresponding witness declarations are `first_probe_actual`, `fresh_acquisition`, `actual_new_publication`, `selected_current_reason` and `actual_effect_from_fresh_evidence` in [SuccessionWitness.lean](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionWitness.lean). These are inherited checked results, not new proofs in this review.
 
-The fulfilled-claim case identifies a concrete application judgment: **does this particular responsibility still support another delivery?** Knowing occurs through an intervention that changes the very relationship being judged. Correct means knowledge can survive while one application ground ceases. This is a useful whole-relational correspondence, already explained in the [application account](../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md#reconstruct-the-activity-before-separating-its-roles).
+The fulfilled-claim case identifies a concrete application judgment: **does this particular responsibility still support another delivery?** Knowing occurs through an intervention that changes the very relationship being judged. Correct means knowledge can survive while one application ground ceases. This is a useful whole-relational correspondence, already explained in the [application account](../../../../theories/becoming/history/EVALUATIVE-APPLICATION.md#reconstruct-the-activity-before-separating-its-roles).
 
 The original one-service comparison has a real limit: all faithful, supported selection entrances in this class already contain the qualifying receipt. There is no pending comparison for that same fixed claim at that boundary. A constant abstention policy would therefore show no discrimination between pending and fulfilled claims.
 

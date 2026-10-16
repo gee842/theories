@@ -100,7 +100,7 @@ Execution is blocked after three consecutive turns encountering the same missing
 
 **Ren's subsequent input supplies a new direction after the impasse.** The proposed normative structure belongs within cognitive dynamics and informational relations. Meme/memeplex is a partial analogy, not an exhaustive identity. Ideas, narratives and words form and alter conditions of subsequent activity; their degeneration also belongs to the broader account. The preceding blocked audit records the earlier investigation, not a rejection of this input.
 
-以下是 AI 重构：一个要求可能通过注意、预期、情感、记忆、相互纠正及行动组织而发挥作用；话语和文本可以参与它的保留与转变。神经、认知和交往层面的具体对应仍需查明，不能用“一个规范就是一组神经元”替代研究，也不把信息另设为脱离实现关系的实体。此处与既有[“像亦象”的认知研究](COGNITION-LI-AND-RECIPROCITY.md#1-认知理论与理不是同一层的三个名称)相接：表征本身也发生在现实中。
+以下是 AI 重构：一个要求可能通过注意、预期、情感、记忆、相互纠正及行动组织而发挥作用；话语和文本可以参与它的保留与转变。神经、认知和交往层面的具体对应仍需查明，不能用“一个规范就是一组神经元”替代研究，也不把信息另设为脱离实现关系的实体。此处与既有[“像亦象”的认知研究](../history/COGNITION-LI-AND-RECIPROCITY.md#1-认知理论与理不是同一层的三个名称)相接：表征本身也发生在现实中。
 
 The AI reconstruction investigates how a demand operates through attention, anticipation, affect, memory, mutual correction and organized action, with speech and records participating in retention and transformation. The neural, cognitive and communicative correspondences require investigation; no specific neural mechanism is claimed here. Information is not introduced as a separate substance. This continues the existing account in which representations themselves occur within reality.
 

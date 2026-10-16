@@ -97,7 +97,7 @@ q(s)=q(t)\Longrightarrow\forall\ell\;[\Phi_s(\ell)\leftrightarrow\Phi_t(\ell)].
 
 ### 6.3 已有实际机制：后果可以改变准入安排
 
-[当前询问修订结果](../../../../theories/becoming/chapters/INQUIRY-REVISION.md)已经沿同一个四次接触后的实际状态形成修订接触、取得保留的后果并重写继续参数。旧固定律下的阻断定理仍然成立，但不能将其扩成新过程也无法修订。
+[当前询问修订结果](../../../../theories/becoming/history/INQUIRY-REVISION.md)已经沿同一个四次接触后的实际状态形成修订接触、取得保留的后果并重写继续参数。旧固定律下的阻断定理仍然成立，但不能将其扩成新过程也无法修订。
 
 已有 [InquiryRevision](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean)证明：合法 commit 保持次数、记录 n、联结符号、受影响存量及来源，改变继续参数并消耗指定的活动条件；在次数为四时将限制从六改为四。原守卫要求次数小于限制才能继续接触、次数等于限制才能关闭，故修订后进一步接触被禁用，关闭变为可用；在已验证且具备后续条件的具体历史中，再进入既有回应通道并完成回应。`commit_changes_only_access_and_spent_fuel` 与 `commit_replaces_enabled_inquiry_with_closure` 已有源码直接承担此关系；本轮只读核对，未新构建。
 

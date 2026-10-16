@@ -1,6 +1,6 @@
 # Generative conditions of scientific inquiry
 
-6 October 2026. AI-authored mechanism and proof study of Ren's conjecture that a philosophy claiming scientific adequacy must be coherent with the generative foundation. The named connection is **formed, evidence-responsive learning → warranted, revisable scientific inquiry**. This study follows the [governing objective](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) and its [premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md). It supplies conditional arguments and an interface for the current recipient/reason studies; it does not establish a uniquely necessary philosophy, a sufficient definition of knowledge, or completion of the foundation.
+6 October 2026. AI-authored mechanism and proof study of Ren's conjecture that a philosophy claiming scientific adequacy must be coherent with the generative foundation. The named connection is **formed, evidence-responsive learning → warranted, revisable scientific inquiry**. This study follows the [governing objective](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md) and its [premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md). It supplies conditional arguments and an interface for the current recipient/reason studies; it does not establish a uniquely necessary philosophy, a sufficient definition of knowledge, or completion of the foundation.
 
 ## 1. The strongest claim presently supportable
 
@@ -156,7 +156,7 @@ This is a valuable scientific-philosophy discriminator: a method can deliver the
 
 The [recording-fidelity construction](../../2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md) establishes another distinct interface. Complete paid recording preserves its stipulated sample law; repeated outcome-selective omission can defeat the reused confidence formula. Selecting a positive witness is nevertheless sound for an implication guaranteed by a no-false-positive law. The difference concerns the inference target and assumptions, not a universal demand to store every event forever.
 
-The current [record-to-reason construction](../../../../theories/becoming/chapters/RECORDED-REASONS.md) is a separate producer under active validation when this note was written. It proposes paid reading, context checks, rooted reconstruction and successor replay. Its crucial semantic interface is of the form
+The current [record-to-reason construction](../../../../theories/becoming/history/RECORDED-REASONS.md) is a separate producer under active validation when this note was written. It proposes paid reading, context checks, rooted reconstruction and successor replay. Its crucial semantic interface is of the form
 
 \[
 \text{observed positive}\Rightarrow F(c,e),\qquad
@@ -306,7 +306,7 @@ Formal evidence: [source](../../../../experiments/integrated-correction/general-
 
 ### 10.7 Map the result to the actual core before claiming completion
 
-The [current root](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md#1-the-positive-candidate) and [premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md#1-the-common-claim) begin with activity forming and changing the conditions of further activity, including observation, modeling and evaluation. Their explanatory commitment is richer than the assertion that an output bit differs. The correspondence can now be stated commitment by commitment:
+The [current root](../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md#1-the-positive-candidate) and [premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md#1-the-common-claim) begin with activity forming and changing the conditions of further activity, including observation, modeling and evaluation. Their explanatory commitment is richer than the assertion that an output bit differs. The correspondence can now be stated commitment by commitment:
 
 | Core relationship | Independently specified achievement | Present warrant |
 |---|---|---|

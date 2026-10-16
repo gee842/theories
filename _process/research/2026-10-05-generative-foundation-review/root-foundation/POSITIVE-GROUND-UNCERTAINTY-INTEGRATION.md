@@ -52,7 +52,7 @@ The worked construction distinguishes a fixed response's actual formation from a
 
 | 复用结果 / Reused result | 已有根据及范围 / Established basis and scope |
 |---|---|
-| [形成后的预测与行动](../../../../theories/becoming/chapters/PREDICTION-ACTION.md) | 同一有资源的历史形成记录，行动产生回执，写入改变预测，预测改变后续指令；依存改变可使旧认识失效。/ Formed records acquire and use actual action consequences; later changes can make them stale. |
+| [形成后的预测与行动](../../../../theories/becoming/history/PREDICTION-ACTION.md) | 同一有资源的历史形成记录，行动产生回执，写入改变预测，预测改变后续指令；依存改变可使旧认识失效。/ Formed records acquire and use actual action consequences; later changes can make them stale. |
 | [认识投射与风险](KNOWLEDGE-PROJECTION-AND-RISK.md) | 知道、现有根据及情境依赖分列；校准与支持关系决定可将当前认识推到哪里。/ Projection is answerable to calibration and actual supporting relations. |
 | [足以纠正的证据](EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md) | 不必唯一识别实际模型，也可取得足够支持共同回应的证据；误导性读取、未观察变化和不足支持保留为失败。/ A supported response can precede unique diagnosis; failures remain. |
 | [G0 下的求知优先](INQUIRY-PRIORITIES-AND-G0.md)及[有界探究对应](INQUIRY-ADEQUACY-CORRESPONDENCE.md) | 同一证据下的共同选择、有范围的调查和及时回应已有说明与检查。/ Existing results support bounded inquiry and action without complete knowledge. |

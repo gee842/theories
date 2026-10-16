@@ -1,6 +1,6 @@
 # Formal core of relational generativity
 
-Companion to [the unified theory](THEORY.md), 5 October 2026. These are self-contained proofs and scoped reconstructions of results developed across the preserved sessions. Most proof methods are standard. No claim of mathematical priority, empirical validation, or proof-assistant verification is made. Source families and the additional verification record are identified in [SOURCE-MAP](SOURCE-MAP.md) and [SYNTHESIS-RECORD](SYNTHESIS-RECORD.md).
+Companion to [the unified theory](../history/THEORY.md), 5 October 2026. These are self-contained proofs and scoped reconstructions of results developed across the preserved sessions. Most proof methods are standard. No claim of mathematical priority, empirical validation, or proof-assistant verification is made. Source families and the additional verification record are identified in [SOURCE-MAP](../history/SOURCE-MAP.md) and [SYNTHESIS-RECORD](../history/SYNTHESIS-RECORD.md).
 
 These propositions concern activity and the conditions of its continuation. Particular models additionally specify observation, intervention, organization or evaluation. Each proposition states which distinctions it assumes. A theorem about a finite information game is not thereby a theorem about every chemical or social process.
 
@@ -38,7 +38,7 @@ For symmetric exchange \(j_{ij}=w_{ij}(x_j-x_i)\), \(w_{ij}=w_{ji}\ge0\), and no
 
 **Proof.** With no crossing weight, internal equations close. If \(w_{ij}>0\) crosses the boundary, hold every internal coordinate fixed and vary \(x_j\). The derivative of internal coordinate \(i\) changes. No single function of the fixed internal vector can supply both derivatives. ∎
 
-**Scope.** This is an exact dependence result for this exchange class, not a proof of universal direct interconnection. Approximate autonomy, fixed exterior conditions, and other laws require separate analysis. A zero current at equilibrium does not prove independence under intervention. Conservation accounting does not prove predictive closure of the aggregate. Source: [S2](SOURCE-MAP.md).
+**Scope.** This is an exact dependence result for this exchange class, not a proof of universal direct interconnection. Approximate autonomy, fixed exterior conditions, and other laws require separate analysis. A zero current at equilibrium does not prove independence under intervention. Conservation accounting does not prove predictive closure of the aggregate. Source: [S2](../history/SOURCE-MAP.md).
 
 ## F2 Renewal is a prefix condition
 
@@ -56,7 +56,7 @@ If \(L-R\ge\delta>0\) while operation continues and initial slack is \(C(0)-c\),
 
 For a discrete quantity obeying the same balance law, every prefix must leave at least the required amount available. A later addition cannot make an earlier operation feasible. Storage limits, conversion losses and unavailable reserves can impose further restrictions.
 
-**Counterexample to averages alone.** Begin with one unit; an operation requires two before three more become available. The eventual total is sufficient, but the earlier operation is infeasible without an additional timely supply or the possibility of delaying the operation. Adding either changes the model. Source: [S5, S8](SOURCE-MAP.md).
+**Counterexample to averages alone.** Begin with one unit; an operation requires two before three more become available. The eventual total is sufficient, but the earlier operation is infeasible without an additional timely supply or the possibility of delaying the operation. Adding either changes the model. Source: [S5, S8](../history/SOURCE-MAP.md).
 
 ### F2a Recurrent provision in a finite support network
 
@@ -78,7 +78,7 @@ For another useful version, suppose each instance of support type \(i\) lasts at
 d_i=\tau_i+\max(\{0\}\cup\{d_j:j\to i\}).
 \]
 
-All supports disappear by \(\max_i d_i\le\sum_i\tau_i\). A cycle avoids this particular obstruction but can still fail through insufficient rates or resources. Infinite acyclic succession, perfectly durable providers, summable losses, or continuing external provision violate different assumptions. Source: [S5](SOURCE-MAP.md).
+All supports disappear by \(\max_i d_i\le\sum_i\tau_i\). A cycle avoids this particular obstruction but can still fail through insufficient rates or resources. Infinite acyclic succession, perfectly durable providers, summable losses, or continuing external provision violate different assumptions. Source: [S5](../history/SOURCE-MAP.md).
 
 ### F2b Joint sustainable capacity and a failure deadline
 
@@ -123,7 +123,7 @@ T\le\frac{\lambda^\top v(0)+\mu^\top b(0)}{\beta}.
 
 The multipliers identify a joint shortage; they are not ethical weights assigning the relative worth of participants. For example, with two losses \(2/5\), \(u_1+u_2\le1\), inflow \(3/5\), and resource use \(u_1+u_2\), total margin declines at rate \(1/5\). Initial margins \((1/10,1/10)\) and reserve \(1/5\) give duration at most two. Constant \(u_1=u_2=7/20\) attains two. Each function is sustainable alone; both together are not.
 
-The theorem requires real convex implementability. If only \((1,0)\) or \((0,1)\) is executable, it cannot grant the midpoint as a simultaneous action at zero margins. State-dependent access and nonuniform minimum loss also require different analysis. Source: [S5](SOURCE-MAP.md).
+The theorem requires real convex implementability. If only \((1,0)\) or \((0,1)\) is executable, it cannot grant the midpoint as a simultaneous action at zero margins. State-dependent access and nonuniform minimum loss also require different analysis. Source: [S5](../history/SOURCE-MAP.md).
 
 ## F3 Formation of a maintained regenerative organization
 
@@ -184,7 +184,7 @@ b\int_0^T C\,dt\le R(0)+C(0)+E(0)/\varepsilon.
 \tag{F3.5}
 \]
 
-This rules out unbounded cumulative machinery activity and therefore any positive long-run average maintained indefinitely by finite work supply. Activity can remain positive at every finite time while declining fast enough to have a finite integral. The result is resource accounting, not a complete thermodynamic derivation. Source: [S3](SOURCE-MAP.md).
+This rules out unbounded cumulative machinery activity and therefore any positive long-run average maintained indefinitely by finite work supply. Activity can remain positive at every finite time while declining fast enough to have a finite integral. The result is resource accounting, not a complete thermodynamic derivation. Source: [S3](../history/SOURCE-MAP.md).
 
 ## F4 A uniform obstruction to endogenous renewal
 
@@ -225,7 +225,7 @@ Thus all capacities decay exponentially, and
 
 If the production graph is acyclic, its weighted adjacency is permutation-triangular with zero diagonal, so \(L^{-1}B\) is nilpotent and has spectral radius zero. A productive cycle is necessary for endogenous persistence **in this class**. Multiple cycles can combine; no separate cycle-gain test has been proved here. For the reaction model, the global upper-bound matrix gives \(\rho(L^{-1}B)=\sqrt{kM/b}\).
 
-An additive source \(s(t)\) adds \(\int w^\top s\) to the integrated budget. A subcritical local linearization cannot replace the global inequality. Supercritical gain alone does not ensure boundedness, a positive equilibrium, or attraction. Source: [S3](SOURCE-MAP.md).
+An additive source \(s(t)\) adds \(\int w^\top s\) to the integrated budget. A subcritical local linearization cannot replace the global inequality. Supercritical gain alone does not ensure boundedness, a positive equilibrium, or attraction. Source: [S3](../history/SOURCE-MAP.md).
 
 ## F5 Faithful questions and the limits of compression
 
@@ -248,7 +248,7 @@ This is informational minimality for fixed questions. It is not necessarily mini
 
 The condition is simply that an action can be chosen from the common set of minimizers. Exact identification of every loss is stronger than needed. Randomization can change regret or risk objectives, but cannot attain simultaneous exact minima with an empty common minimizing support.
 
-Historical questions have their own profiles: identical present state and future behavior need not identify past continuity or ancestry. Records or tracers must carry that information. Sources: [S1, S5–S7](SOURCE-MAP.md). Closely related minimal predictive representations are established in [Shalizi and Crutchfield](https://arxiv.org/abs/cond-mat/9907176).
+Historical questions have their own profiles: identical present state and future behavior need not identify past continuity or ancestry. Records or tracers must carry that information. Sources: [S1, S5–S7](../history/SOURCE-MAP.md). Closely related minimal predictive representations are established in [Shalizi and Crutchfield](https://arxiv.org/abs/cond-mat/9907176).
 
 **Later relational witness.** The [mixing diagnostic](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md#7-a-source-anchored-transfer-consequence-mixing-has-no-fixed-sign) gives identical separate species distributions with different joint arrangements and opposite responses to complete mixing in a stated low-occupancy regime. The missing relation matters to the declared co-occupancy task. This conditional transfer-model example supports F5's representation requirement; it neither demonstrates learning of that distinction nor establishes biological renewal.
 
@@ -298,11 +298,11 @@ The quadratic stability criterion gives asymptotic, equivalently exponential, st
 \tag{F6.2}
 \]
 
-Observation, routing, actuation gain, and timing all matter. The specific law does not explain how the channel forms or obtains the means its operation requires. An unobservable stable mode need not be reconstructed to stabilize the relevant system. Sources: [S3, S6–S7](SOURCE-MAP.md).
+Observation, routing, actuation gain, and timing all matter. The specific law does not explain how the channel forms or obtains the means its operation requires. An unobservable stable mode need not be reconstructed to stabilize the relevant system. Sources: [S3, S6–S7](../history/SOURCE-MAP.md).
 
 ## F7 Funding a recurring correction process
 
-Use the finite protocol in [S4](SOURCE-MAP.md). Production is ten per round while shared support remains at least two. Both rules replenish its two units of wear, reserve \(f\) for a corrective carrier, and leave the participant three under F or one under X. The participant consumes two per round, has cap six, and must end each round with at least one.
+Use the finite protocol in [S4](../history/SOURCE-MAP.md). Production is ten per round while shared support remains at least two. Both rules replenish its two units of wear, reserve \(f\) for a corrective carrier, and leave the participant three under F or one under X. The participant consumes two per round, has cap six, and must end each round with at least one.
 
 X is selected without a binding mandate. File at reserve at most four when X is active; filing costs the participant one, and two X rounds including the filing round precede restoration. F then operates until reserve six, when the mandate ends. The carrier pays one upkeep before each production and two more when filing occurs. If upkeep fails, its gate ceases to work. Current ordinary needs can use current allocation; filing and carrier bills are prefunded. There is no borrowing or automatic reconstruction of a failed carrier.
 
@@ -351,7 +351,7 @@ W_{n+1}=\{I\in W_n:\exists a\in A(I),\
 
 For horizon \(H\) and terminal obligations \(T_H\), use \(W_H=S_H\cap T_H\) and the analogous backward recursion. Optimization of a specified cost over retained actions is a separate conditional dynamic program. The policy must be implemented; computing it does not establish adoption.
 
-This theorem is for one implemented information architecture. It does not turn a decentralized problem into a centralized one by granting actors each other's private observations. Safety also does not entail recurring service, discovery, fairness, or ethical legitimacy. Sources: [S5–S8](SOURCE-MAP.md); related safety-learning work includes [Moldovan and Abbeel](https://arxiv.org/abs/1205.4810) and [Heim and colleagues](https://proceedings.mlr.press/v100/heim20a.html).
+This theorem is for one implemented information architecture. It does not turn a decentralized problem into a centralized one by granting actors each other's private observations. Safety also does not entail recurring service, discovery, fairness, or ethical legitimacy. Sources: [S5–S8](../history/SOURCE-MAP.md); related safety-learning work includes [Moldovan and Abbeel](https://arxiv.org/abs/1205.4810) and [Heim and colleagues](https://proceedings.mlr.press/v100/heim20a.html).
 
 For the claim about physical execution, the exact information-state update and witnessing action table must be implementable within the declared memory, computation, and resource interface. If these operations and their enabling conditions have not been represented, the theorem characterizes abstract observation-history feasibility only. A proof of finite memory does not show how its carrier forms or is maintained.
 
@@ -392,7 +392,7 @@ The equivalent finite algorithm checks all reachable states for safety and each 
 
 **Joint composition.** If local transition rules cover every actual transition—including disturbances, denial, replacement, and revision—and each preserves one common invariant and decreases the relevant ranks on its event-free transitions, their union satisfies the theorem. The invariant must include shared resource and permission compatibility. A pair of individually safe policies requiring the same last resource unit is not a joint policy.
 
-This provides the formal bridge among regeneration, inquiry, selection, and succession. It certifies the process that actually carries the obligations through its changes. It does not infer success from the existence of a different good controller, and it does not prove that the installed rule or ethical specification is legitimate. Sources: [S5, S8](SOURCE-MAP.md). Compositional invariant reasoning has established precedent in [Chen and colleagues](https://arxiv.org/abs/1810.10636).
+This provides the formal bridge among regeneration, inquiry, selection, and succession. It certifies the process that actually carries the obligations through its changes. It does not infer success from the existence of a different good controller, and it does not prove that the installed rule or ethical specification is legitimate. Sources: [S5, S8](../history/SOURCE-MAP.md). Compositional invariant reasoning has established precedent in [Chen and colleagues](https://arxiv.org/abs/1810.10636).
 
 ## F10 Stable regeneration and indefinite survival are different
 
@@ -404,7 +404,7 @@ a n_R,\qquad b n_C,\qquad (k/V)n_Cn_D.
 
 The all-degraded state \((0,0,N)\) is absorbing. Every other state reaches it with positive probability through a finite sequence that first assembles remaining usable material, then wears all machinery, with no intervening recycling. The chain is finite and has no other closed class. Therefore it reaches that absorbing state almost surely with finite expected absorption time.
 
-The deterministic concentration approximation and the infinite-time limit of a finite particle system are different limits. The deterministic attractor does not establish permanent finite-population survival. Immigration or a powered spontaneous reactivation route would change the premise. No lifetime-scaling theorem is claimed here. Source: [S3](SOURCE-MAP.md).
+The deterministic concentration approximation and the infinite-time limit of a finite particle system are different limits. The deterministic attractor does not establish permanent finite-population survival. Immigration or a powered spontaneous reactivation route would change the premise. No lifetime-scaling theorem is claimed here. Source: [S3](../history/SOURCE-MAP.md).
 
 More generally, if every safe history has conditional probability at least \(p>0\) of failure within the next \(m\) steps, then
 
@@ -439,7 +439,7 @@ The sequence is nondecreasing. In the finite-action setting, the limit \(H_\inft
 
 **Example.** Both processes start with nine units of reserve, consume five in producing the first answer and transferring the resulting state, and receive three afterward. A process requiring five units each time has post-episode reserves of seven, five, three; it cannot begin a fourth episode. A process delivering an interface whose later episodes require three units continues at reserve seven with replenishment of three each time. First answer, first consumption, and supply match. The delivered successor configuration differs.
 
-The example's costs are stipulated; it is not a fit to the separate circuit experiment. Stochastic tasks, observation before or after task disclosure, storage limits, or infinite action repertoires require different analysis. Source: [S9](SOURCE-MAP.md).
+The example's costs are stipulated; it is not a fit to the separate circuit experiment. Stochastic tasks, observation before or after task disclosure, storage limits, or infinite action repertoires require different analysis. Source: [S9](../history/SOURCE-MAP.md).
 
 **Later stochastic composition.** The [repeated-renewal result](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md) supplies a separate extension for an installed stochastic process: a successful-cycle measure retains the actual successor, elapsed time and charged expenditure, and its conditional recursion gives finite repeated-task probabilities. Equal one-cycle success totals can conceal different continuations. Its source, information, closure and every-prefix feasibility assumptions remain explicit; it does not change F11's deterministic task-choice quantifiers or supply reliable physical renewal by itself.
 
@@ -447,13 +447,13 @@ The example's costs are stipulated; it is not a fit to the separate circuit expe
 
 ## F12 Scope of task rankings and limits of complete evaluation
 
-**Opposing task rankings.** Suppose at the same budget method A succeeds on some task that D fails, while D succeeds on another that A fails. A next-task distribution concentrated on the first ranks A above D; one concentrated on the second reverses the ranking. No fixed strict ordering or tie preserves both task-dependent success comparisons. The result concerns an ordering required to reproduce every such comparison while omitting its task conditions. It does not exclude a universal criterion applied to whole generative situations or justify any particular criterion. The matched inheritance experiment supplies exactly the task-ranking premise. [S9](SOURCE-MAP.md)
+**Opposing task rankings.** Suppose at the same budget method A succeeds on some task that D fails, while D succeeds on another that A fails. A next-task distribution concentrated on the first ranks A above D; one concentrated on the second reverses the ranking. No fixed strict ordering or tie preserves both task-dependent success comparisons. The result concerns an ordering required to reproduce every such comparison while omitting its task conditions. It does not exclude a universal criterion applied to whole generative situations or justify any particular criterion. The matched inheritance experiment supplies exactly the task-ranking premise. [S9](../history/SOURCE-MAP.md)
 
-**Joint requirements.** Policies with consequence vectors \((1,0,0),(0,1,0),(0,0,1)\) can meet any pair of zero-loss demands, but cannot make all three losses at most \(0.3\), even with randomization: their sum is always one. Pairwise compatibility is weaker than joint feasibility. A convex separation certificate can establish infeasibility in its appropriate finite model; it does not settle whose requirement should change. [S13](SOURCE-MAP.md); established multiobjective verification is treated by [Etessami and colleagues](https://arxiv.org/abs/0810.5728).
+**Joint requirements.** Policies with consequence vectors \((1,0,0),(0,1,0),(0,0,1)\) can meet any pair of zero-loss demands, but cannot make all three losses at most \(0.3\), even with randomization: their sum is always one. Pairwise compatibility is weaker than joint feasibility. A convex separation certificate can establish infeasibility in its appropriate finite model; it does not settle whose requirement should change. [S13](../history/SOURCE-MAP.md); established multiobjective verification is treated by [Etessami and colleagues](https://arxiv.org/abs/0810.5728).
 
-**Unrestricted representation.** For any transition relation \(T\), set \(J(x)=\{y:xTy\}\) and let enactment select a member. This generic schema represents both continuing and terminating processes. A property that fails for an admitted relation cannot be derived from the schema's expressiveness alone. A substantive theory must constrain its mechanisms or independently justify its application. [S8](SOURCE-MAP.md)
+**Unrestricted representation.** For any transition relation \(T\), set \(J(x)=\{y:xTy\}\) and let enactment select a member. This generic schema represents both continuing and terminating processes. A property that fails for an admitted relation cannot be derived from the schema's expressiveness alone. A substantive theory must constrain its mechanisms or independently justify its application. [S8](../history/SOURCE-MAP.md)
 
-**Unrestricted effective completeness.** Given a program, build a deterministic process that simulates one computation step per transition and enters failure when the program halts. A terminating exact algorithm deciding perpetual safety for every such process would decide nonhalting and hence halting. The diagonal contradiction rules out such an algorithm. Finite-state exact methods, incomplete sound certificates, and a general semantic theory remain possible. This theorem is a limit on a combination of scope, exactness, and guaranteed computation; it is not a proof that no universal explanatory theory can exist. [S8](SOURCE-MAP.md)
+**Unrestricted effective completeness.** Given a program, build a deterministic process that simulates one computation step per transition and enters failure when the program halts. A terminating exact algorithm deciding perpetual safety for every such process would decide nonhalting and hence halting. The diagonal contradiction rules out such an algorithm. Finite-state exact methods, incomplete sound certificates, and a general semantic theory remain possible. This theorem is a limit on a combination of scope, exactness, and guaranteed computation; it is not a proof that no universal explanatory theory can exist. [S8](../history/SOURCE-MAP.md)
 
 **Finite evidence and indefinite futures.** Over unrestricted transition laws, a fixed finite eventful record is compatible with a continuation law that later stops and another that continues. Infinite continuation needs additional structural assumptions or a certificate for a known law; it cannot be inferred solely from the record's length. A verified recurring cycle in a known finite deterministic system is a different case.
 
@@ -467,7 +467,7 @@ Then every admissible abstract policy lifts to a concrete policy with the same r
 
 A reverse causal implementation correspondence gives equality of attainable response sets and permits transferring impossibility statements. A one-way sound abstraction can supply useful sufficient policies while losing concrete alternatives; its failure need not imply concrete impossibility.
 
-Matching separate marginals is insufficient when consequences depend on correlations. Matching successful endpoints is insufficient when an intermediate operation lacks the resources it requires. Matching ordinary trajectories is insufficient if the abstraction grants an outside planner a choice that is actually made by a refusing participant. These conditions are how separate models can be joined without silently changing the problem. Sources: [S5, S8](SOURCE-MAP.md).
+Matching separate marginals is insufficient when consequences depend on correlations. Matching successful endpoints is insufficient when an intermediate operation lacks the resources it requires. Matching ordinary trajectories is insufficient if the abstraction grants an outside planner a choice that is actually made by a refusing participant. These conditions are how separate models can be joined without silently changing the problem. Sources: [S5, S8](../history/SOURCE-MAP.md).
 
 **Quantified finite stochastic approximation.** [Repeated-renewal composition R4](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md#3-reliability-and-error-budgets) bounds finite-horizon success error by the formation error plus the accumulated uniform total-variation errors of the full marked continuation kernels, capped at one. Matching isolated success totals cannot supply those row bounds. This sharpens a particular stochastic interface without proving that the existing physical and strategic models satisfy it. The [integration review](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md) records the accepted scope.
 
@@ -533,7 +533,7 @@ The remaining formation bridge is acquired attribution of own/world effects with
 
 ## F17 Nondual descriptions and formed overlapping ranges
 
-The existing `Process State Action` contains no primitive subject/object or actor/patient partition. The [nondual extension](DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) develops that architecture without introducing an ethical premise into the core. Its generic module imports only `GenerativeCore`; the old patient-grounded contract connects to it through a separate downstream adapter.
+The existing `Process State Action` contains no primitive subject/object or actor/patient partition. The [nondual extension](../history/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) develops that architecture without introducing an ethical premise into the core. Its generic module imports only `GenerativeCore`; the old patient-grounded contract connects to it through a separate downstream adapter.
 
 Given a process \(P\) and a supplied description \(\rho:S\to D\), let \(\widehat S=\{(s,d)\mid d=\rho(s)\}\), and let a presented event hold precisely when it holds between the forgotten states. Then
 

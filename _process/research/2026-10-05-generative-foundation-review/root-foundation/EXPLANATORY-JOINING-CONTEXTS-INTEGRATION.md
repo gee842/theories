@@ -6,7 +6,7 @@
 
 38 new Lean theorems / 166 declaration audits pass. This is a general conditional bridge toward necessary common explanatory content, not a claim that the full metaphysical target is complete or has hit a wall. The joining law, its real correspondence and the claimed scope of explanation remain accountable.
 
-[Current chapter §§84–89](../../../../theories/becoming/chapters/EXPLANATORY-NECESSITY.md#84-把检验放回同一接合活动) · [scoped checks](EXPLANATORY-JOINING-CONTEXTS-CHECKS.json).
+[Current chapter §§84–89](../../../../theories/becoming/history/EXPLANATORY-NECESSITY.md#84-把检验放回同一接合活动) · [scoped checks](EXPLANATORY-JOINING-CONTEXTS-CHECKS.json).
 
 ## 1. Corrected target and precise new bridge
 

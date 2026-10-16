@@ -1,6 +1,6 @@
 # Evaluative openness and judgment before agreement
 
-8 October 2026. AI-authored continuation of [Ren's request to push the theoretical frontier](../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#continue-the-theoretical-frontier), under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The current account is [the extended goal-revision chapter](../../../../theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#8-evaluative-openness-and-judgment-before-agreement).
+8 October 2026. AI-authored continuation of [Ren's request to push the theoretical frontier](../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#continue-the-theoretical-frontier), under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The current account is [the extended goal-revision chapter](../../../../theories/becoming/history/GOAL-FORMATION-AND-REVISION.md#8-evaluative-openness-and-judgment-before-agreement).
 
 **Result:** a formed intelligence can preserve its ethical grounds while revising the content and scope of its judgments. When new relations are not yet fully understood, it must distinguish agreement on a better replacement, agreement that a plan fails, and warrant for an actual choice under uncertainty. The first can be absent while the second is present. The third requires further grounds; neither comparison alone supplies it.
 

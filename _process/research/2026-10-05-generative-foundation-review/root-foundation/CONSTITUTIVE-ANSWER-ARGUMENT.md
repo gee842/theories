@@ -20,7 +20,7 @@ This support is philosophical and defeasible. It does not derive universal reaso
 
 ## 2. Nonduality removes an unnecessary export architecture
 
-The [nondual core](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) treats positions of undergoing, access and transformation as differentiated relations within activity. It does not require a private owner first to manufacture significance and then transfer it across a metaphysical boundary.
+The [nondual core](../../../../theories/becoming/history/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) treats positions of undergoing, access and transformation as differentiated relations within activity. It does not require a private owner first to manufacture significance and then transfer it across a metaphysical boundary.
 
 The adversity occurs along one continuity; the capacity to alter it may be distributed across others. “For this patient” can express evaluative indexing as well as locate undergoing. It does not by itself say that only this patient's choices can be addressed. Conversely, showing that such indexing need not express exclusive ownership does not prove unrestricted practical address. An account of exclusive scope still requires assessment.
 

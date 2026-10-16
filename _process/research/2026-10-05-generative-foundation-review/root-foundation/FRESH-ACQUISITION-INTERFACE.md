@@ -97,6 +97,6 @@ Paths are linked above. SHA-256 values identify the read versions; active files 
 [revision-protocol]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/PROTOCOL.md
 [revision-model]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/model.py
 [pre-import]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md
-[concern]: ../../../../theories/becoming/chapters/CONCERN-AND-CORRECTION.md
-[joint]: ../../../../theories/becoming/chapters/JOINT-FORMATION.md
-[ethics]: ../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md
+[concern]: ../../../../theories/becoming/history/CONCERN-AND-CORRECTION.md
+[joint]: ../../../../theories/becoming/history/JOINT-FORMATION.md
+[ethics]: ../../../../theories/becoming/history/ETHICAL-FOUNDATION.md

@@ -1,6 +1,6 @@
 # Finite audit of the self/other symmetry bridge
 
-6 October 2026. An abstract exhaustive check for the [whole-theory necessity study](../../../../../theories/becoming/chapters/HUIGEN.md), not an empirical measurement of moral judgment.
+6 October 2026. An abstract exhaustive check for the [whole-theory necessity study](../../../../../theories/becoming/history/HUIGEN.md), not an empirical measurement of moral judgment.
 
 For each size from one to four, [check.py](check.py) enumerates every binary relation `r(actor, patient)` and tests every simultaneous permutation of actor and patient indices directly. It compares the invariant relations with the independently stated diagonal/off-diagonal characterization. Positive self-standing and actor independence are tested separately.
 
