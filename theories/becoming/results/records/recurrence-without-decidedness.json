@@ -218,7 +218,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ded85732df2edc5d05c121ee8364dec538d6e349e4bd01a9154cdcf70e28f16e"
+      "sha256": "ebce5b7564e0ad0a51a4f5537910ba722550465a8a9e1a4081aaa92199a5d847"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -495,6 +495,10 @@
     {
       "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（P128：第二部分折叠为 §6.15 的条件小节（理论不断言那一条公理；三条等价；不变的一步；条件之下每次缩小都失去有意义者，混合部分需要度量）；原第二部分一节移入 §6.15；一句话、两个目标、完整陈述、前提卡、第一部分引言、§5、§6、§7、§8、§9 与术语表中的“第二部分”改为“以那一条公理为条件”）。",
       "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (P128: Part II folded into the conditional section 6.15 (the theory does not assert the one axiom; the three equivalences; the step of invariance; under the condition every narrowing loses something with significance, so mixed parts need a measure); the Part II section moved into 6.15; “Part II” in the summary, the two targets, the full statement, the premise card, the Part I introduction, sections 5, 6, 7, 8, 9 and the glossary now reads “with the one axiom as a condition”)."
+    },
+    {
+      "zh": "2026年10月16日，发布准备度复核（P129）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（发布复核（P129）：最小的识标明双重否定的强度（所经的识不能不含其敏感者）；“条件无穷多时这一条件不能去掉”改为“能否去掉取决于全知原则”（给定消失之判定，尾之律是反例；每个反例给出弱有限全知原则））。",
+      "en": "16 October 2026, release-readiness review (P129): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (Release review (P129): the least registration marked at its double-negation strength (a registration read through cannot fail to hold a condition the law is sensitive to); “with infinitely many conditions this cannot be dropped” now reads “whether this can be dropped turns on omniscience” (given a decision of vanishing the tail law is a counterexample; every counterexample gives WLPO))."
     }
   ]
 }
