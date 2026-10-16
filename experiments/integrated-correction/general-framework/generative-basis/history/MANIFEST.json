@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "root": "experiments/integrated-correction/general-framework/generative-basis/history",
+  "entries": [
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/history/mathematical-abstraction/README.md",
+      "sha256": "bac783f9ff3db84214d2c6bed5d5aa0dc3d2bda7ab4b6a82b4a4f20a5ec3b94a",
+      "blob": "8e484a81e5cadc8494d3f61aaa92b212564b226e",
+      "batch": "RG",
+      "reason": "dated status log; a short index is written at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/history/mathematical-abstraction/constitution/README.md",
+      "sha256": "ce2023a1a845eb6286d4fd2dcf76165e2859547183cbc0c1e917d077b60eda19",
+      "blob": "b54f45b2be2dfe86eb33152165b480cdebb2f0a2",
+      "batch": "RG",
+      "reason": "dated status log; a short index is written at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md"
+    }
+  ]
+}

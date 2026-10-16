@@ -3,6 +3,15 @@
   "root": "_process/research/2026-10-05-generative-foundation-review/history",
   "entries": [
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/foundation-assessment/README.md",
+      "sha256": "56e8348e4582761c860ab92e7694a15e75742bed3a975ec46a59f4a87d18aeb5",
+      "blob": "46b28df221757f77746c52563359661d84c9e91c",
+      "batch": "RG",
+      "reason": "stack of 8 dated 6-Oct status paragraphs; a short file index is written at the old path",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ABSTRACTION-ACQUISITION-CHECK.py",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ABSTRACTION-ACQUISITION-CHECK.py",
       "sha256": "b116b40918c555d4bf96164ae8e89a8c7d4ccc8e4cd4f0841ce9592602a63574",

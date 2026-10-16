@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "batch": "RG",
+  "date": "2026-10-16T21:02:56+00:00",
+  "base_commit": "aee1e9a8d25b3c1a136af05dd770dcd863b34bcd",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/foundation-assessment/README.md",
+      "sha256": "56e8348e4582761c860ab92e7694a15e75742bed3a975ec46a59f4a87d18aeb5",
+      "blob": "46b28df221757f77746c52563359661d84c9e91c",
+      "reason": "stack of 8 dated 6-Oct status paragraphs; a short file index is written at the old path",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/deeper/README.md",
+      "sha256": "5ab26f5f7e9717494e7994e3654ed19b639e5652991cfa07f20fde908348b89e",
+      "blob": "e2ff8ca389e2fbb37a9088337ce03b1f362be969",
+      "reason": "dated status log (stacked 8-Oct paragraphs); a module/checker/receipt index is written at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/inquiry-root/README.md",
+      "sha256": "ed394c240b17d1c7ed35ce23bb5b28590d696e1fc4ff795ac4b9ecc75f21ff3a",
+      "blob": "7041ff7d0e9332a1186e3b401a45570499824a6a",
+      "reason": "dated status log (stacked 8-Oct paragraphs); a module/checker/receipt index is written at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/universal-ethics/README.md",
+      "sha256": "cd094b69637ecce4943d9a5ac32ff6950b58aadcd385ee6bdaa9386bb33a1439",
+      "blob": "184c82e6a0de4d1bfacdf254a41d2abed1ec843c",
+      "reason": "dated status log (stacked 8-Oct paragraphs); a module/checker/receipt index is written at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/universal-ethics/generative-capacity/README.md",
+      "sha256": "dc132e78c9fa412a61faee06cf99078200a4023516c157afa9e0f74f79847c8e",
+      "blob": "1e7ce4c243f0c4123f4a599f5c669b228512f277",
+      "reason": "dated status log (stacked 8-Oct paragraphs); a module/checker/receipt index is written at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/history/mathematical-abstraction/README.md",
+      "sha256": "bac783f9ff3db84214d2c6bed5d5aa0dc3d2bda7ab4b6a82b4a4f20a5ec3b94a",
+      "blob": "8e484a81e5cadc8494d3f61aaa92b212564b226e",
+      "reason": "dated status log; a short index is written at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/README.md"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/history/mathematical-abstraction/constitution/README.md",
+      "sha256": "ce2023a1a845eb6286d4fd2dcf76165e2859547183cbc0c1e917d077b60eda19",
+      "blob": "b54f45b2be2dfe86eb33152165b480cdebb2f0a2",
+      "reason": "dated status log; a short index is written at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/constitution/README.md"
+    }
+  ],
+  "keep_references": true,
+  "rewritten": [],
+  "history_roots": [
+    "_process/research/2026-10-05-generative-foundation-review/history",
+    "experiments/integrated-correction/general-framework/generative-basis/history",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/history"
+  ],
+  "generated_pages_to_rerender": [
+    "DEPENDENCIES.md",
+    "GOALS.md",
+    "OPEN-QUESTIONS.md",
+    "README.md",
+    "RESEARCH.md",
+    "RESULTS.md",
+    "_process/BRIEF.md",
+    "_process/DIRECTIVE-INDEX.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INDEX.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "_process/research/README.md",
+    "theories/becoming/README.md",
+    "theories/becoming/chapters/CLAIMS.md",
+    "theories/becoming/chapters/README.md",
+    "theories/becoming/results/ARGUMENTS-A-L.md",
+    "theories/becoming/results/ARGUMENTS-M-Z.md",
+    "theories/becoming/results/LEAN-INDEX.md",
+    "theories/becoming/results/README.md",
+    "theories/becoming/results/RESULT-REGISTER.md",
+    "theories/becoming/results/ROADMAP.md",
+    "theories/becoming/results/SESSION-RESULTS.md",
+    "theories/becoming/results/THEORY-MAP.md",
+    "theories/becoming/results/data/lean-index.json",
+    "theories/becoming/results/data/source-index.json",
+    "theories/becoming/results/lean-declarations/abstraction.md",
+    "theories/becoming/results/lean-declarations/becoming-bridge.md",
+    "theories/becoming/results/lean-declarations/becoming-core.md",
+    "theories/becoming/results/lean-declarations/concern.md",
+    "theories/becoming/results/lean-declarations/core.md",
+    "theories/becoming/results/lean-declarations/ethics.md",
+    "theories/becoming/results/lean-declarations/inquiry.md",
+    "theories/becoming/results/lean-declarations/learning.md",
+    "theories/becoming/results/lean-declarations/other.md",
+    "theories/becoming/results/lean-declarations/renewal.md",
+    "theories/becoming/results/lean-declarations/shared.md",
+    "theories/becoming/results/lean-declarations/valuation.md",
+    "theories/becoming/results/records/context-sensitive-updating-correspondence.md",
+    "theories/becoming/results/records/contextual-registration.md",
+    "theories/becoming/results/records/encounter-control-and-retention.md",
+    "theories/becoming/results/records/formed-copying-correction.md",
+    "theories/becoming/results/records/formed-software-continuation.md",
+    "theories/becoming/results/records/joint-practice-forms-continuation.md",
+    "theories/becoming/results/records/naming-attention-coverage.md",
+    "theories/becoming/results/records/organizational-rule-inheritance.md",
+    "theories/becoming/results/records/registration-within-what-it-registers.md",
+    "theories/becoming/results/records/separation-loses-the-relation.md",
+    "theories/becoming/results/records/situated-recovery-empirical-correspondence.md",
+    "theories/becoming/results/records/the-split-that-makes-sense.md"
+  ],
+  "verification_errors": []
+}
