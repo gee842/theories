@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "2bc5049131e0622e49079f3ea4d7c6f1492347de6ef37dcc39c3d7d0d94a8954",
+      "sha256": "885b6a9b7ebcdaf6dd347ba87888d3b84e4fa0250075c2da37905836e725cdd0",
       "declarations": []
     },
     {
@@ -446,6 +446,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): COMMON-ORGANIZATION.md, META-ATTRACTOR-RECONCILIATION.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: in THE-THEORY-OF-BECOMING.md only section 11 changed (the chapter statuses now say batch H4 moved the earlier chapters to theories/becoming/history/, and link the chapter index), plus link rewrites. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

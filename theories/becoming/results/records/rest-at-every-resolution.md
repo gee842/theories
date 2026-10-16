@@ -125,7 +125,7 @@ The rest theorem with a fixed unit (continued-change-needs-openness) is the case
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-10-pareto-frontier.md](../../../../sources/15-codex-theory-conversations/2026-10-10-pareto-frontier.md) | — |
 | provenance | [2026-10-11-difference-in-becoming.md](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md) | — |
-| review | [BECOMING-R1-R2-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-R1-R2-REVIEW.md) | — |
+| review | [BECOMING-R1-R2-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-R1-R2-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 
@@ -144,7 +144,7 @@ Aliases: `Becoming.Flow.BalancesAt`, `Becoming.Flow.balancesAt_one`, `Becoming.L
 - 14 October 2026 readability migration to schema 2 (M3): the long title became a short name with the statement first; the claim was split into 22 laws; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The date of Ren's choice left the public fields (it remains in the hypotheses and the correspondence); Ren's note on the research notes moved, verbatim with its date, from the next step to the correspondence, the next step being capped. The second hypothesis was split into three at its sentences, wording unchanged. Every earlier sentence is mapped in the migration table [rest-at-every-resolution.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/rest-at-every-resolution.md); the exact earlier record is the last text_versions entry.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D38): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
-- 47 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](rest-at-every-resolution.json).
+- 48 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](rest-at-every-resolution.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

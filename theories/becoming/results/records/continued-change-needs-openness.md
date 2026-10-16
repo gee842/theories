@@ -144,10 +144,10 @@ The rests of space-and-its-parts makes a world's rest unrefutable through finite
 | provenance | [2026-10-08-theory-of-becoming-priority.md](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) | — |
 | provenance | [2026-10-09-complete-theory-of-becoming.md](../../../../sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |
-| review | [BECOMING-P23C-P24-P25-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md) | — |
-| review | [BECOMING-P25B-P29-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P25B-P29-REVIEW.md) | — |
-| review | [BECOMING-P30-P31-P29B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md) | — |
-| review | [BECOMING-P34B-P38C-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P34B-P38C-REVIEW.md) | — |
+| review | [BECOMING-P23C-P24-P25-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md) | — |
+| review | [BECOMING-P25B-P29-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P25B-P29-REVIEW.md) | — |
+| review | [BECOMING-P30-P31-P29B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md) | — |
+| review | [BECOMING-P34B-P38C-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P34B-P38C-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 
@@ -172,7 +172,7 @@ Aliases: `Becoming.Web.StandingCensus`, `Becoming.Flow.AroundStanding`, `Becomin
 - 16 October 2026, P111 (where novelty's gain comes from, study section 148): related adds where-novelty-gain-comes-from. Statement and proofs unchanged.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A1, A4: the statement said the world "comes to rest", while the Lean (World.comes_to_rest_unrefuted, rests_unrefuted_enclosed) proves only ¬¬∃N, RestsFrom N; it now says the world "cannot be refuted to come to rest", the exchange "does not recur" (a negated recurrence). World.arising_opens concludes ¬∀t≥T, Enclosed t, so law 16's positive gloss "it exchanges beyond every finite family" becomes "it is enclosed from no step on". The same wording is fixed in does_not_show 1 (World.rest_few assumes the rest theorem's conditions, not rest) and in the correspondence. Earlier text in text_versions.
-- 63 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](continued-change-needs-openness.json).
+- 64 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](continued-change-needs-openness.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

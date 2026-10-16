@@ -289,6 +289,8 @@ Covers every branch README, including the method and memory archive. These are a
 
 **Status:** Constructive programme and component evidence
 
+**Reading status:** the source changed after this reading (read version sha256 `c36b175b180c…`). The entry describes that earlier version; it awaits a reread before its hash is refreshed.
+
 **Argument:** Production facilities, robots and complementary conditions can expand useful capacity together. If shared provision turns that capacity into capabilities for living, dependence on employment or obedience can lessen and voluntary association can become more feasible. Each connection has material and institutional conditions.
 
 **Significance:** Gives the generative direction positive content in housing, care, creation and plural shared lives.

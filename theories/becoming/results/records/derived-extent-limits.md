@@ -96,7 +96,7 @@ Ren's proposal says “all above does not require any axiom” and that the one 
 | proof | [Dependence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean) | `Becoming.Web.UnderminingAt`, `Becoming.Web.Supported` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
-| statement | [CONTINUATION-GROUNDING-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md) | — |
+| statement | [CONTINUATION-GROUNDING-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.md) | — |
 | provenance | [2026-10-10-wanting-continuation-one-axiom.md](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md) | — |
 | review | [CONTINUATION-GROUNDING-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json) | — |

@@ -4,6 +4,8 @@ These files exist because the most valuable material in the corpus is not in the
 
 ## The input files
 
+The input files moved to [`_process/history/2026-09-consolidation/reading-notes-inputs/`](../history/2026-09-consolidation/reading-notes-inputs/) in batch H1 (17 October 2026; receipt `_process/architecture/moves/H1.json`); the table describes them as they were.
+
 | file | what it holds |
 |---|---|
 | `hb-01.md` … `hb-03.md` | Ren's turns only, from 381 selected claude.ai conversations, in date order. Claude's replies are stripped; where Ren says "yes, exactly" he is endorsing something removed, and the full conversation is named in the heading so it can be opened. 838 KB of his own words. |

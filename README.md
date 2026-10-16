@@ -246,13 +246,7 @@ We investigate how relations form, persist and change within one unfolding of be
 
 Read [the shared method](theories/becoming/chapters/NONDUAL-METHOD.md) before foundational work. [Working rules](AGENTS.md) apply throughout; [the scope directory](GOALS.md) preserves independently authorized goals.
 
-| Location | Responsibility |
-|---|---|
-| `theories/` | Current argument and interpretation |
-| `_process/research/` | Existing studies, critique and integration evidence |
-| `experiments/` | Working formal sources, experiments and retained build evidence |
-| `sources/` | Original material and provenance |
-| `tools/research/` | Shared navigation, validation and discovery |
+The [map](MAP.md) says where to start and what each top-level directory holds; [REPOSITORY-LAYOUT](_process/REPOSITORY-LAYOUT.md) gives the rules for where new material goes.
 
 <a id="discovery-and-evidence--检索与证据"></a>
 ## Discovery and evidence

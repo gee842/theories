@@ -45,3 +45,5 @@ Rewritten 17 October 2026 in the repository restructure. The September corpus ma
 | [the-fork-and-cooperative-infrastructure](theories/the-fork-and-cooperative-infrastructure/README.md) | Cooperative infrastructure (the two-outcome "fork" framing was later rejected by Ren) |
 | [wamotopia-and-the-wamo-protocol](theories/wamotopia-and-the-wamo-protocol/README.md) | Technology amplifies the operating logic it runs under; the Wamo Protocol |
 | [zhishan-intelligence-must-be-good](theories/zhishan-intelligence-must-be-good/README.md) | 智善: competition that selects survivors hands winners the rule |
+
+The [theory map](theories/becoming/results/THEORY-MAP.md) gives the longer branch-by-branch reading of these folders (a dated reading catalogue).

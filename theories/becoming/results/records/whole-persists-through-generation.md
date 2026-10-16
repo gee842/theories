@@ -75,11 +75,11 @@ Contains no ethical predicate; Whole is coincidence of activity, not constitutio
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
-| review | [BECOMING-P11B-P12-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md) | — |
+| review | [BECOMING-P11B-P12-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P11B-P12-REVIEW.md) | — |
 | provenance | [2026-10-07-shengsheng-ethical-direction.md](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) | — |
 | provenance | [2026-10-08-monist-relational-ontology-first.md](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |
-| review | [BECOMING-P15-P16-P16B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md) | — |
+| review | [BECOMING-P15-P16-P16B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -101,4 +101,4 @@ Aliases: `Becoming.Web.Whole`, `Becoming.Web.Listed`, `Becoming.Web.Ends`, `Beco
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D5): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Wholes.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: Covered.arises_within, Covered.needs_arising and Covered.needs_new (and Whole.needs_arising, needs_new) conclude negated universals; the claim said parts "arise at arbitrarily late steps" and "a part arises within every d consecutive steps", and now says no step is followed only by steps with no part arising, no d consecutive steps pass with none, and that ever new parts arise cannot be refuted. Schema 1, no text_versions; earlier text in git.
-- 78 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-persists-through-generation.json).
+- 79 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-persists-through-generation.json).

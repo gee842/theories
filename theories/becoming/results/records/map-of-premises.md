@@ -118,9 +118,9 @@ The plan's third part of completeness asks that each dynamical premise carve a p
 | provenance | [2026-10-08-theory-of-becoming-priority.md](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) | — |
 | provenance | [2026-10-09-complete-theory-of-becoming.md](../../../../sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |
-| review | [BECOMING-P23C-P24-P25-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md) | — |
-| review | [BECOMING-P25B-P29-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P25B-P29-REVIEW.md) | — |
-| review | [BECOMING-P34B-P38C-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P34B-P38C-REVIEW.md) | — |
+| review | [BECOMING-P23C-P24-P25-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md) | — |
+| review | [BECOMING-P25B-P29-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P25B-P29-REVIEW.md) | — |
+| review | [BECOMING-P34B-P38C-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P34B-P38C-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 
@@ -143,7 +143,7 @@ Aliases: `Becoming.World.Counted`, `Becoming.World.Transmitting`, `Becoming.Worl
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: the statement said a finite world meeting the premises "comes to rest"; World.premised_rests_unrefuted proves only ¬¬∃N, RestsFrom N, so it now says such a world "cannot be refuted to come to rest". Law 16 said "every world that comes to rest under the rest theorem", while World.rest_few assumes the rest theorem's conditions; it now says so. Earlier text in text_versions.
-- 64 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](map-of-premises.json).
+- 65 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](map-of-premises.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

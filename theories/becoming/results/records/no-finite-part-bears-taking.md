@@ -105,11 +105,11 @@ The fourth independent review found that “no finite part is unceasing on its o
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
-| review | [BECOMING-P9B-P10-P11-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md) | — |
+| review | [BECOMING-P9B-P10-P11-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md) | — |
 | provenance | [2026-10-07-shengsheng-ethical-direction.md](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |
-| review | [BECOMING-P13-P14-P12B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md) | — |
-| review | [BECOMING-P15-P16-P16B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md) | — |
+| review | [BECOMING-P13-P14-P12B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md) | — |
+| review | [BECOMING-P15-P16-P16B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 
@@ -135,7 +135,7 @@ Aliases: `Becoming.Flow.Dissipative`, `Becoming.Flow.Balances.runs_down`, `Becom
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: Dissipative.opens, More.opens, opens_of_arising, Frontier.frontier and Lone.frontier conclude ¬∀t≥T, ClosedAt, and taking_draws_in, Frontier.draws_in and Lone.draws_in conclude ¬∀t≥N, Inward. The title, statement, laws 3, 5, 8 and 9, counterexamples 3, 5 and 8 and the correspondence glossed them as "at arbitrarily late steps some formation exchanges / draws in" (∀N∃t, which they do not give); they now say "closed / inward from no step on", with "that a later exchange occurs cannot be refuted", and law 5 says what inward means. Earlier text in text_versions.
-- 82 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](no-finite-part-bears-taking.json).
+- 83 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](no-finite-part-bears-taking.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

@@ -116,13 +116,13 @@ Web and Flow split formations and conditions into two kinds, omitting life as a 
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
-| review | [BECOMING-P9B-P10-P11-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md) | — |
+| review | [BECOMING-P9B-P10-P11-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md) | — |
 | provenance | [2026-10-07-shengsheng-ethical-direction.md](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) | — |
 | provenance | [2026-10-08-monist-relational-ontology-first.md](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |
-| review | [BECOMING-P13-P14-P12B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md) | — |
-| review | [BECOMING-P15-P16-P16B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md) | — |
-| review | [BECOMING-P16C-P17-P18-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md) | — |
+| review | [BECOMING-P13-P14-P12B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md) | — |
+| review | [BECOMING-P15-P16-P16B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md) | — |
+| review | [BECOMING-P16C-P17-P18-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 
@@ -146,7 +146,7 @@ Aliases: `Becoming.Web.roles`, `Becoming.Flow.roles`, `Becoming.Web.roles_depend
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D4, D6, D9, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A8: standard boundary no-evaluation ("Contains no ethical predicate and evaluates neither arising nor ceasing") removed: this record's laws state Mutualism.significant_iff (G0 there is exactly a seed with both neutralities), a significance predicate; replaced by significance-related-not-asserted (relating significance to structure without asserting significance or the condition). Earlier text in text_versions.
-- 80 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](life-as-condition-of-life.json).
+- 81 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](life-as-condition-of-life.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

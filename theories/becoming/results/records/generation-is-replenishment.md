@@ -118,12 +118,12 @@ The fifth independent review (I3) found that in the flow form arising contribute
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [BECOMING-UNIFICATION-PLAN.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
-| review | [BECOMING-P11B-P12-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md) | — |
+| review | [BECOMING-P11B-P12-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P11B-P12-REVIEW.md) | — |
 | provenance | [2026-10-07-shengsheng-ethical-direction.md](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) | — |
 | provenance | [2026-10-08-monist-relational-ontology-first.md](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |
-| review | [BECOMING-P15-P16-P16B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md) | — |
-| review | [BECOMING-P16C-P17-P18-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md) | — |
+| review | [BECOMING-P15-P16-P16B-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md) | — |
+| review | [BECOMING-P16C-P17-P18-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 
@@ -146,7 +146,7 @@ Aliases: `Becoming.Web.Embodied.given_of_arises`, `Becoming.Web.Embodied.repleni
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D4): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: generation_opens, rising_opens and standing_opens conclude ¬∀t≥T, ClosedAt, and generation_draws_in, rising_draws_in and standing_draws_in conclude ¬∀t≥N, Inward. The statement and laws 4, 6 and 13 glossed them as exchange or drawing in "at arbitrarily late steps"; they now say "closed / inward from no step on", with "that a later exchange occurs cannot be refuted". Earlier text in text_versions.
-- 79 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](generation-is-replenishment.json).
+- 80 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](generation-is-replenishment.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

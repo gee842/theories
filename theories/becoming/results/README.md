@@ -36,7 +36,7 @@ Readings of 8 October 2026 and later · [Repository home](../../../README.md) ·
 <a id="覆盖与证据含义--coverage-and-evidence"></a>
 ## Coverage and evidence
 
-This reading edition covers **140 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 80 entries name a source that changed after the reading; they are marked on their pages and await a reread. Additional chapters, changed source versions and session outcomes also appear in the [checkpoint map](SESSION-RESULTS.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
+This reading edition covers **140 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 81 entries name a source that changed after the reading; they are marked on their pages and await a reread. Additional chapters, changed source versions and session outcomes also appear in the [checkpoint map](SESSION-RESULTS.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
 
 | Category | Meaning |
 |---|---|

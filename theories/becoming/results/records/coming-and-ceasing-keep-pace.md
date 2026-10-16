@@ -107,10 +107,10 @@ Ren's proposal: counting the whole space, generative and degenerative, the theor
 | provenance | [2026-10-09-complete-theory-of-becoming.md](../../../../sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md) | — |
 | provenance | [2026-10-08-monist-relational-ontology-first.md](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md) | — |
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |
-| review | [BECOMING-P18B-P23-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P18B-P23-REVIEW.md) | — |
-| review | [BECOMING-P23C-P24-P25-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md) | — |
+| review | [BECOMING-P18B-P23-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P18B-P23-REVIEW.md) | — |
+| review | [BECOMING-P23C-P24-P25-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md) | — |
 | provenance | [2026-10-09-arising-ceasing-names.md](../../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md) | — |
-| review | [BECOMING-P25B-P29-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P25B-P29-REVIEW.md) | — |
+| review | [BECOMING-P25B-P29-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P25B-P29-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 
 Aliases: `Becoming.ComesToBe`, `Becoming.CeasesToBe`, `Becoming.Web.Ceases`, `Becoming.Web.CeasesToStand`, `Becoming.Web.change_readings`, `Becoming.over_stretch`, `Becoming.family_over_stretch`, `Becoming.rising_recurs`, `Becoming.falling_recurs`, `Becoming.held_over_stretch`, `Becoming.keep_pace`, `Becoming.coming_recurs_iff`, `Becoming.Web.activity_over_stretch`, `Becoming.Web.arising_recurs_iff`, `Becoming.Web.standing_recurs_iff`, `Becoming.Web.unceasing_iff`, `Becoming.Web.falls_need_rises`, `Becoming.Web.supported_of`, `Becoming.falls_not_recurring_from_floor`
@@ -134,7 +134,7 @@ Aliases: `Becoming.ComesToBe`, `Becoming.CeasesToBe`, `Becoming.Web.Ceases`, `Be
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D2, D5, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A10, A12: the statement said "this needs no premise", while keep_pace and its companions take decidability of the counted determination ([∀ a t, Decidable (p a t)]), as hypothesis 1 and the standard boundary say; the statement now names it and says "no premise about the unfolding". A new does_not_show item says Web.change_readings is six Iff.rfl, so the three readings are one by definition. Earlier text in text_versions.
-- 69 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](coming-and-ceasing-keep-pace.json).
+- 70 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](coming-and-ceasing-keep-pace.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

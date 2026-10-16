@@ -2659,7 +2659,7 @@ Contains 41 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryJoining.lean — 36 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md) · No direct module-documentation link found
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean`
 
@@ -3097,7 +3097,7 @@ Contains 11 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryLocalUnits.lean — 45 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLocalUnits.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md) · No direct module-documentation link found
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLocalUnits.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLocalUnits.lean`
 
@@ -3226,7 +3226,7 @@ Contains 31 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryNecessity.lean — 24 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md) · No direct module-documentation link found
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean`
 
@@ -3483,7 +3483,7 @@ Contains 15 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryStructure.lean — 29 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md) · No direct module-documentation link found
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean`
 
@@ -3577,7 +3577,7 @@ Contains 14 textual `#print axioms` commands; their results belong to the origin
 <details>
 <summary>ExplanatoryUniqueness.lean — 25 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md) · No direct module-documentation link found
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean`
 

@@ -104,7 +104,7 @@ Aliases: `Becoming.Typicality.left_comm`, `Becoming.Typicality.ones`, `Becoming.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Capture.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 16 October 2026, P119: following Ren's “take 2, and do the open proofs” of 16 October, one law added (exponential concentration, the counting form of Chernoff's bound); hypotheses, the scope item of does_not_show (exponential concentration and more than two values now proved) and next_delta rewritten; study section 150. The former scope item: “Exponential concentration (Chernoff), more than two values, and weights that are not natural numbers.”
 - 16 October 2026, eighteenth review (R18): the laws' “p·q / ((p + q)²·ε²·n)” and “0.88ⁿ” are arithmetic from the theorems' bounds, not Lean statements (review item 36, P7); both are now marked so, with the d taken and the inequality used. Claim narrowed; no theorem changed.
-- 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](typicality-by-counting.json).
+- 7 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](typicality-by-counting.json).
 
 </details>
 

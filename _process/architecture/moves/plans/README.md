@@ -1,6 +1,6 @@
 # History batches H1-H7: exact move plans
 
-Status: **plan only. Nothing has been moved, added or committed.** Produced for task A4 of the restructure (Ren, 17 Oct 2026; RESTRUCTURE-PLAN.md section 4.2). The move tool consumes the `H*.tsv` files; this page explains them.
+Status: **applied 17 October 2026.** H1–H7 (commits 11308bad4 … 19c1acfa4) and H1-replace, H6-replace; receipts `_process/architecture/moves/<batch>.json`. The reconciliation batches RA–RE and RG followed (plans in `reconciliation/`). Originally: Produced for task A4 of the restructure (Ren, 17 Oct 2026; RESTRUCTURE-PLAN.md section 4.2). The move tool consumes the `H*.tsv` files; this page explains them.
 
 ## Files
 

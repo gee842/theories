@@ -49,11 +49,10 @@ output/                       exports + README (source → builder → export)
 tmp/, work/                   scratch; nothing tracked
 ```
 
-Some of these pages and directories arrive batch by batch during the restructure; until a batch lands, the current path stays authoritative.
 
 ## The areas
 
-**Root pages.** README, RESULTS, GOALS, OPEN-QUESTIONS and DEPENDENCIES are generated from records, goals and the config by `make research-render` and are never edited by hand. `RESULTS.md` is the one register; `RESEARCH.md`, `chapters/CLAIMS.md` and `results/RESULT-REGISTER.md` become stubs pointing to it. `AGENTS.md` and the short MAP and GLOSSARY pages are maintained by hand. Superseded root corpus pages (TIMELINE, BOOKS, the originals of MAP and GLOSSARY) go to `_process/history/2026-09-consolidation/`.
+**Root pages.** README, RESULTS, GOALS, OPEN-QUESTIONS and DEPENDENCIES are generated from records, goals and the config by `make research-render` and are never edited by hand. `RESULTS.md` is the one register; `RESEARCH.md`, `theories/becoming/README.md`, `chapters/CLAIMS.md` and `results/RESULT-REGISTER.md` are stubs pointing to it, and `results/ROADMAP.md` points to GOALS. `AGENTS.md` and the short MAP and GLOSSARY pages are maintained by hand. Superseded root corpus pages (TIMELINE, BOOKS, the originals of MAP and GLOSSARY) go to `_process/history/2026-09-consolidation/`.
 
 **`theories/`.** Current arguments. `theories/becoming/` is the canonical theory: Ren's opening, the canonical chapter, the current studies, and the result records with their generated views. A retired chapter goes to `theories/becoming/history/`, at the same depth as `chapters/`, so its relative links still resolve. The fifteen September branch folders stay in place as historical syntheses.
 
@@ -79,7 +78,7 @@ Some of these pages and directories arrive batch by batch during the restructure
 
 - **Where.** Retired material goes to a directory named exactly `history`, placed as a sibling at the same depth as the material it replaces (`chapters/` → `theories/becoming/history/`; `root-foundation/` → the study's `history/`). Same-depth moves keep relative links valid, the Lean checker already skips `history` components, and Lean history stays under the Lean root.
 - **How.** Move with `python3 -B tools/research/research.py move --plan …` first, read the plan, then run the move. The tool checks blob identity, rewrites links in live files only, re-keys records whose path changed with the hash carried over, and writes the manifest and receipt. Never copy a file into `history/` while keeping it live, and never keep `-old`, `-v2` or dated copies beside a live file.
-- **Manifest.** Every history root carries `MANIFEST.json` (old path, new path, sha256, git blob id, move commit, reason: superseded, failed attempt, applied kit, …) and a generated `INDEX.md`. Each batch also writes a receipt `_process/architecture/moves/moves-<date>-<batch>.{json,tsv}`, verified by `check_moves.py`; the 9 October rename receipt and `check_rename.py` stay as they are and must keep passing.
+- **Manifest.** Every history root carries `MANIFEST.json` (old path, new path, sha256, git blob id, move commit, reason: superseded, failed attempt, applied kit, …) and a generated `INDEX.md`. Each batch writes a receipt `_process/architecture/moves/<batch>.json` from a plan in `_process/architecture/moves/plans/` (`research.py move --plan PLAN --apply --batch NAME`), verified by `research.py move --check RECEIPT`; the 9 October rename receipt and `check_rename.py` stay as they are and must keep passing.
 - **Frozen evidence keeps its paths.** Receipts, freezes, edit ledgers and other evidence are never edited to follow a move; their old paths resolve through the manifests.
 - **Hashes.** A record's source hash is carried over only for an exact path substitution. Any other byte change is read and rebound through the result workflow, never refreshed blind.
 - **Never moves.** `sources/` originals; every FREEZE or preregistration manifest and the files it pins; `*-verification.json` and run receipts cited by records or inherited by the core receipt; `build_*.py` scripts with fixed depths; chapters tied by records' `path#anchor` citations, which stay in place with a status banner.

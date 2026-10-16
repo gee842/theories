@@ -10,31 +10,14 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-06 | [CORE-TREE-CONTINUATION-REVIEW.md](CORE-TREE-CONTINUATION-REVIEW.md) | Core/tree continuation: independent review and scope |
 | 2026-10-06 | [EVALUATIVE-PLASTICITY-REVIEW.md](EVALUATIVE-PLASTICITY-REVIEW.md) | Prospective review of paid evaluative plasticity |
 | 2026-10-06 | [SELECTIVE-HANDOFF-REVIEW.md](SELECTIVE-HANDOFF-REVIEW.md) | Selective reuse of a historical correction: prospective review |
-| 2026-10-09 | [BECOMING-P11B-P12-REVIEW.md](BECOMING-P11B-P12-REVIEW.md) | Independent review of P11b and P12 |
-| 2026-10-09 | [BECOMING-P13-P14-P12B-REVIEW.md](BECOMING-P13-P14-P12B-REVIEW.md) | Independent review of P13, P14 and P12b |
-| 2026-10-09 | [BECOMING-P15-P16-P16B-REVIEW.md](BECOMING-P15-P16-P16B-REVIEW.md) | Independent review of P15, P16 and P16b |
-| 2026-10-09 | [BECOMING-P16C-P17-P18-REVIEW.md](BECOMING-P16C-P17-P18-REVIEW.md) | Independent review of P16c, P17 and P18 |
-| 2026-10-09 | [BECOMING-P18B-P23-REVIEW.md](BECOMING-P18B-P23-REVIEW.md) | Independent review of P18b through P23 |
-| 2026-10-09 | [BECOMING-P23C-P24-P25-REVIEW.md](BECOMING-P23C-P24-P25-REVIEW.md) | Independent review of P23c, P24 and P25 |
-| 2026-10-09 | [BECOMING-P7-REVIEW.md](BECOMING-P7-REVIEW.md) | Independent review of P7 and of the undermining correction |
-| 2026-10-09 | [BECOMING-P8-P9-P7B-REVIEW.md](BECOMING-P8-P9-P7B-REVIEW.md) | Independent review of P8, P9 and the P7b corrections |
-| 2026-10-09 | [BECOMING-P9B-P10-P11-REVIEW.md](BECOMING-P9B-P10-P11-REVIEW.md) | Independent review of P9b, P10 and P11 |
-| 2026-10-10 | [BECOMING-P25B-P29-REVIEW.md](BECOMING-P25B-P29-REVIEW.md) | Independent review of P25b to P29 |
-| 2026-10-10 | [BECOMING-P30-P31-P29B-REVIEW.md](BECOMING-P30-P31-P29B-REVIEW.md) | Independent review of P30, P31 and P29b |
-| 2026-10-10 | [BECOMING-P32-P34-REVIEW.md](BECOMING-P32-P34-REVIEW.md) | Independent review of P32 to P34 and the P35/P36 drafts |
-| 2026-10-10 | [BECOMING-P34B-P38C-REVIEW.md](BECOMING-P34B-P38C-REVIEW.md) | Independent review of P34b to P38c |
 | 2026-10-10 | [CONTINUATION-GROUNDING-REVIEW.md](CONTINUATION-GROUNDING-REVIEW.md) | Independent review: continuation grounding W1–W5 (plan W8) |
-| 2026-10-11 | [BECOMING-R1-R2-REVIEW.md](BECOMING-R1-R2-REVIEW.md) | Independent review of R1, R1b and R2 (`Becoming.Resolution`) |
 | 2026-10-16 | [BECOMING-RELEASE-READINESS-REVIEW.md](BECOMING-RELEASE-READINESS-REVIEW.md) | Release-readiness review of the Theory of Becoming |
 |  | [BECOMING-EIGHTEENTH-REVIEW.md](BECOMING-EIGHTEENTH-REVIEW.md) · [Chinese edition](BECOMING-EIGHTEENTH-REVIEW.zh.md) | Eighteenth independent review: P107–P127 and I4b |
 |  | [BECOMING-GENERAL-LAWS-REVIEW.md](BECOMING-GENERAL-LAWS-REVIEW.md) · [Chinese edition](BECOMING-GENERAL-LAWS-REVIEW.zh.md) | Independent review of the general laws (seventeenth) |
-|  | [BECOMING-P42-P43-REVIEW.md](BECOMING-P42-P43-REVIEW.md) · [Chinese edition](BECOMING-P42-P43-REVIEW.zh.md) | Independent review of P42–P43: feedback, reach and boundaries |
-|  | [BECOMING-P49-REVIEW.md](BECOMING-P49-REVIEW.md) · [Chinese edition](BECOMING-P49-REVIEW.zh.md) | Independent review of P47: registration and testing |
-|  | [BECOMING-RENEWAL-READING-REVIEW.md](BECOMING-RENEWAL-READING-REVIEW.md) · [Chinese edition](BECOMING-RENEWAL-READING-REVIEW.zh.md) | Independent review of the relational reading and dependence dynamics |
 
 ## Reviews kept in history
 
-217 earlier reviews were moved, bytes unchanged, to the study's history folder:
+234 earlier reviews were moved, bytes unchanged, to the study's history folder:
 
 | Date | Review | Title |
 |---|---|---|
@@ -241,10 +224,27 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-08 | [UNFOLDING-PRESERVATION-REVIEW.md](../history/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md) | What an explanation of unfolding must preserve: independent review |
 | 2026-10-08 | [VARIATION-WARRANT-REVIEW.md](../history/root-foundation/VARIATION-WARRANT-REVIEW.md) | Review: warranted relationships and admitted variations |
 | 2026-10-08 | [WARRANTED-ACQUISITION-REVIEW.md](../history/root-foundation/WARRANTED-ACQUISITION-REVIEW.md) | Independent review: acquiring the description and its evidential route together |
+| 2026-10-09 | [BECOMING-P11B-P12-REVIEW.md](../history/root-foundation/BECOMING-P11B-P12-REVIEW.md) | Independent review of P11b and P12 |
+| 2026-10-09 | [BECOMING-P13-P14-P12B-REVIEW.md](../history/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md) | Independent review of P13, P14 and P12b |
+| 2026-10-09 | [BECOMING-P15-P16-P16B-REVIEW.md](../history/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md) | Independent review of P15, P16 and P16b |
+| 2026-10-09 | [BECOMING-P16C-P17-P18-REVIEW.md](../history/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md) | Independent review of P16c, P17 and P18 |
+| 2026-10-09 | [BECOMING-P18B-P23-REVIEW.md](../history/root-foundation/BECOMING-P18B-P23-REVIEW.md) | Independent review of P18b through P23 |
+| 2026-10-09 | [BECOMING-P23C-P24-P25-REVIEW.md](../history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md) | Independent review of P23c, P24 and P25 |
+| 2026-10-09 | [BECOMING-P7-REVIEW.md](../history/root-foundation/BECOMING-P7-REVIEW.md) | Independent review of P7 and of the undermining correction |
+| 2026-10-09 | [BECOMING-P8-P9-P7B-REVIEW.md](../history/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md) | Independent review of P8, P9 and the P7b corrections |
+| 2026-10-09 | [BECOMING-P9B-P10-P11-REVIEW.md](../history/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md) | Independent review of P9b, P10 and P11 |
 | 2026-10-09 | [EVALUATOR-GROUNDING-REVIEW.md](../history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md) | Independent review of the evaluator route: tolerance and differentiation |
 | 2026-10-09 | [GENERATIVE-DISCRIMINATION-REVIEW.md](../history/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md) | Independent review of the generative-discrimination results |
 | 2026-10-09 | [LEARNING-SELECTION-COUNTERREVIEW.md](../history/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md) | Learning, selection and the continuation of what does the selecting |
 | 2026-10-09 | [UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md](../history/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) | External-perspective review |
+| 2026-10-10 | [BECOMING-P25B-P29-REVIEW.md](../history/root-foundation/BECOMING-P25B-P29-REVIEW.md) | Independent review of P25b to P29 |
+| 2026-10-10 | [BECOMING-P30-P31-P29B-REVIEW.md](../history/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md) | Independent review of P30, P31 and P29b |
+| 2026-10-10 | [BECOMING-P32-P34-REVIEW.md](../history/root-foundation/BECOMING-P32-P34-REVIEW.md) | Independent review of P32 to P34 and the P35/P36 drafts |
+| 2026-10-10 | [BECOMING-P34B-P38C-REVIEW.md](../history/root-foundation/BECOMING-P34B-P38C-REVIEW.md) | Independent review of P34b to P38c |
+| 2026-10-11 | [BECOMING-R1-R2-REVIEW.md](../history/root-foundation/BECOMING-R1-R2-REVIEW.md) | Independent review of R1, R1b and R2 (`Becoming.Resolution`) |
+|  | [BECOMING-P42-P43-REVIEW.md](../history/root-foundation/BECOMING-P42-P43-REVIEW.md) | Independent review of P42–P43: feedback, reach and boundaries |
+|  | [BECOMING-P49-REVIEW.md](../history/root-foundation/BECOMING-P49-REVIEW.md) | Independent review of P47: registration and testing |
+|  | [BECOMING-RENEWAL-READING-REVIEW.md](../history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md) | Independent review of the relational reading and dependence dynamics |
 |  | [DAO-NORMATIVE-REVIEW.md](../history/root-foundation/DAO-NORMATIVE-REVIEW.md) | 从生成之理到行动之道：规范桥梁审查 |
 |  | [NONDUAL-CORE-REVIEW.md](../history/root-foundation/NONDUAL-CORE-REVIEW.md) | 非二元核心与派生作用范围：独立审查 |
 |  | [NONDUAL-TREE-REVIEW.md](../history/root-foundation/NONDUAL-TREE-REVIEW.md) | 整树非二元继续的独立审查 |

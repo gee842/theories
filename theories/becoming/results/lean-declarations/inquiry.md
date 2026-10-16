@@ -218,7 +218,7 @@ Definitions and types:
 <details>
 <summary>CompositionalFormation.lean — 65 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md) · No direct module-documentation link found
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean`
 
@@ -302,7 +302,7 @@ Definitions and types:
 <details>
 <summary>CompositionalTransmission.lean — 45 explicit declarations</summary>
 
-[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md) · No direct module-documentation link found
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean`
 
