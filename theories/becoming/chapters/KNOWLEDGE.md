@@ -1,18 +1,19 @@
-# Knowledge within becoming / 生成中的知识
+<a id="knowledge-within-becoming--生成中的知识"></a>
+# Knowledge within becoming
+
+> English edition. The [Chinese edition](KNOWLEDGE.zh.md) carries the chapter's Chinese summary sentences; points they made that the English did not are included here. The development rounds that led to this account are in [the history file](../history/KNOWLEDGE-rounds-2026-10-17.md).
 
 8 October 2026. AI-authored account developed from [Ren's knowledge direction](../../../sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md), under the [nondual method](NONDUAL-METHOD.md). This develops the initial [cognition proposal](../history/COGNITION-LI-AND-RECIPROCITY.md#g0-and-knowledge). Philosophical conclusions, inherited mechanisms and newly checked mathematical implications have different scopes. [Integration and review](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/G0-AND-KNOWLEDGE.md#development-of-the-knowledge-track) / [Primary comparisons](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-SOURCES.md).
 
 ## The account
 
-**Current synthesis:** [A philosophy of becoming for knowing and living](PHILOSOPHICAL-ACCOUNT.md) now assembles this chapter's arguments with shared inquiry, G0 and practical wisdom. The [completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) marks the defended proposal complete at that scope; universal validation and whole-theory necessity remain unestablished. / **相连候选已完成：**后续研究解释可能性的纳入、参与地位与可纠正的结束；不宣告全部哲学或更强基础目标完成。
+**Current synthesis:** [A philosophy of becoming for knowing and living](PHILOSOPHICAL-ACCOUNT.md) now assembles this chapter's arguments with shared inquiry, G0 and practical wisdom. The [completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) marks the defended proposal complete at that scope; universal validation and whole-theory necessity remain unestablished. **The connected candidate is complete:** later research explains the admission of possibilities, standing in participation and correctable closure; it does not announce completion of the whole philosophy or of the stronger foundational goals.
 
 **Propositional knowledge is a true commitment whose formation or present maintenance is competently connected to what makes it correct, and whose correctness is not accidental relative to the relevant possibilities of error.** The commitment must be available within the knower's cognitive activity; an inaccessible true inscription is not thereby that person's knowledge. This is a defended candidate account, not a universally settled analysis or a consequence of G0 alone.
 
-**命题知识是这样的真实判断：它的形成或当下维持，通过认知能力与使其正确的实际关系相连；面对相关的出错可能，其正确不是偶然碰中。** 它须能进入知者实际的认知活动；某处存有一句真话，不就等于某人已经知道。这个表述是本研究辩护的候选，不冒称已经解决一切知识分析争论。
-
 The initial phrase “warranted grasp” compressed three different achievements. **Knowing that** a relation holds need not include understanding why it holds. **Understanding** additionally organizes explanatory or inferential dependencies. **Knowing how** concerns a competent capacity for an activity, which need not be articulated as a proposition and need not be successfully exercised on every occasion. The common generative account must explain their connections without identifying them. We therefore retain “grasp” for understanding, rather than require explanatory understanding of every known fact.
 
-知识可以使实际关系进入后续的理解与回应，但不要求每项知识都已经产生实际用途、道德收益或永久记忆。认识的形成也不创造它所声称的全部事实：知道一件过去的事，不会使那件事现在才发生。
+Knowledge can let actual relations enter later understanding and response, but it does not require that every piece of knowledge has already produced a practical use, a moral benefit or a permanent memory. Nor does the formation of knowing create every fact it claims: knowing a past event does not make that event happen only now.
 
 ## How knowing differentiates within one unfolding
 
@@ -30,9 +31,7 @@ The [uptake and error study](../../../_process/research/2026-10-05-generative-fo
 
 The explanation is relational and historical. Tracking, acquired discrimination, measurement, language and testimony can establish different connections to a referent. Content must remain identifiable when a judgment is false. Calling an output “whatever makes this output correct” would eliminate the distinction between representation and error. Equally, a copied sentence need not be understood merely because it is reliably reproduced. The proposal concerns formed content and actual integration, not a further inner interpreter reading a signal.
 
-The inherited experimental-access construction supplies a bounded causal comparison: acquired content guides later inquiry, while a matched reader clamp retains records but repeats a failed route. This illustrates operational uptake under supplied laws. It does not settle consciousness or every instance of semantic possession. A reliable thermostat establishes a control capacity; attributing propositional knowledge additionally requires evidence for the proposed content and integration. A sufficiently organized artificial capacity is not excluded by its substrate.
-
-**知识的持有不等于信息存放。关键是某种有内容的区别，能够进入实际的判断、推论或熟练回应，并在其所论关系中得到根据。** 这不要求每个知者先证明自己的可靠性，也不把一切调节或反馈都命名为知识。短暂知觉、尚未使用的知识、社会支持及暂时受阻的能力各保留其范围。
+The inherited experimental-access construction supplies a bounded causal comparison: acquired content guides later inquiry, while a matched reader clamp retains records but repeats a failed route. This illustrates operational uptake under supplied laws. It does not settle consciousness or every instance of semantic possession. A reliable thermostat establishes a control capacity; attributing propositional knowledge additionally requires evidence for the proposed content and integration. A sufficiently organized artificial capacity is not excluded by its substrate. Brief perception, knowledge not yet used, social support and temporarily blocked capacities each keep their scope.
 
 ## How content can form and remain mistaken
 
@@ -43,8 +42,6 @@ An established reference can persist through a defective instance. A stale repor
 The inherited inverted-sensor case sharpens this account. A learned model can correctly predict sensor readings while its application to productive readiness fails. Error in applying accurate content differs from error in that content. The counterexample preserves the actual acquisition rather than replacing its meaning whenever an outcome changes. [Acquisition history](../history/ABSTRACTION-ACQUISITION.md) / [investigation of use](../history/EXPERIMENTAL-ACCESS.md).
 
 Content also differs from the way it is taken up. A question, imagined scenario, wish and factual report can concern the same situation. Taking a claim as actual makes its accuracy answerable to whether the content obtains. This is a proposed constitutive standard of assertion; it does not derive every evidential requirement or an obligation to seek all truths.
-
-**生成的内容可以保留所指而出错，正确的内容也可能被错误运用。** 内容的形成、内容的真假、判断的根据及运用的伦理意义，是同一过程中的不同关系；不能由一次成功或一个整体名称抹平。
 
 ## What makes the connection epistemic
 
@@ -86,8 +83,6 @@ Shared inquiry gains support when its participants contribute access that can di
 
 This supplies a fallible account of improvement: identify a vulnerability, establish how a check can disclose it, and assess the revised basis in the claim's actual scope. A local correction need not await a proof of all cognition. It also cannot certify its own adequacy merely by declaring success. A pertinent challenge can require further inquiry, a narrower claim or suspension. The difference between knowing and reasonable but mistaken belief remains intact.
 
-**理由的形成不等于理由的正当；对根据的辨认也不等于已经依此修订。** 共同认识能够生成新的接近与检验，也能够复制并强化同一错误。整体观点要求追踪这些实际关系，而非把共同接受当成真。
-
 ## A checked correspondence component
 
 The [Lean module from the correspondence stage](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean) concerns an exact binary question across a declared family of histories. Evidence and target are projections of those histories. It does **not** define knowledge as zero-error classification.
@@ -123,9 +118,7 @@ The [second-round revision study](../../../_process/research/2026-10-05-generati
 
 An earlier limited claim can remain knowledge when a finer question becomes available. An earlier false universal assertion does not become historical knowledge merely because a later reconstruction extracts a useful approximation. Equally, new evidence supporting an originally accidental belief does not retroactively supply its original grounds. Historical possession, present warrant and actual truth retain their distinct conditions.
 
-Comparisons across frameworks can be partial and revisable. Reconstructing earlier use, preserving records and investigating specific relationships can establish a bridge without an absolute, theory-free language. Where the bridge is unsupported, comparison remains unsettled. The inherited [model-family](../history/MODEL-FAMILY-REVISION.md) and [method-revision](../history/METHOD-REVISION.md) studies already supply bounded mechanisms; their supplied grammars and comparison domains do not establish universal epistemic progress.
-
-**认识的接续要求说明前后所问、所指及根据怎样相连；新问题、新根据与旧答案的纠正不能混作一件事。** 新认识也可能确认某些旧区别已经失去，不能以当前方法自动补写过去。
+Comparisons across frameworks can be partial and revisable. Reconstructing earlier use, preserving records and investigating specific relationships can establish a bridge without an absolute, theory-free language. Where the bridge is unsupported, comparison remains unsettled. The inherited [model-family](../history/MODEL-FAMILY-REVISION.md) and [method-revision](../history/METHOD-REVISION.md) studies already supply bounded mechanisms; their supplied grammars and comparison domains do not establish universal epistemic progress. New knowledge can also confirm that some old distinctions have been lost; current methods cannot automatically write them back into the past.
 
 ## Objectivity and explanation within the unfolding
 
@@ -133,9 +126,7 @@ The same study develops objectivity as an achievement of inquiry: judgment becom
 
 Knowing an answer and explaining it differ. The [scientific-philosophy continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md) requires an explanatory proposal to identify a supported dependency, the question it answers and its applicable conditions. Causal, constitutive and mathematical explanations have different tasks. Interventions and observation are local relationships within one unfolding, not operations from outside reality. Merely labeling a process generative does not establish its explanation.
 
-This supplies a scoped adequacy requirement: an account of warranted scientific judgment must preserve or better explain its target relationships, including genuine error and correction. A rival can satisfy that requirement in another vocabulary. Empirical correspondence, checked mathematical implication, constitutive explanation and normative warrant require their appropriate support. None acquires the others' authority simply by being placed in one theory.
-
-**客观性的形成，不等于共同接受制造真；生成的说明，也不等于给一切现象加上“生成”之名。** 本理论须接受它对其他解释所提出的根据、范围和纠正要求。
+This supplies a scoped adequacy requirement: an account of warranted scientific judgment must preserve or better explain its target relationships, including genuine error and correction. A rival can satisfy that requirement in another vocabulary. Empirical correspondence, checked mathematical implication, constitutive explanation and normative warrant require their appropriate support. None acquires the others' authority simply by being placed in one theory. This theory must accept the demands for grounds, scope and correction that it makes of other explanations.
 
 ## Warranted extension beyond investigated conditions
 
@@ -145,8 +136,6 @@ The proposal is fallibilist. Repeated success and the word “generative” do n
 
 Truth, evidential support and justified reliance remain connected but distinct. Consequences of error can alter what needs investigating, the evidence demanded for a particular use, and the practical response to uncertainty. They do not make a desired conclusion true. This also permits proportionate action under uncertainty without pretending that the uncertainty has vanished. The account does not settle whether practical stakes change the truth of knowledge attributions.
 
-**有根据的推展须说明支撑关系怎样延续；同属一个生成整体，不保证局部规律永不改变。** 错误的后果可改变调查与依赖的要求，不能被当作偏爱结论的证据。
-
 ## Inquiry, sufficient understanding and timely response
 
 The [inquiry-priorities argument](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-PRIORITIES-AND-G0.md) treats inquiry as actual activity within the whole comparison. Understanding itself, warranted responsiveness and developed capacities can give it positive significance under G0. Decision relevance is a narrower criterion: a distinction matters to a specified response when resolving it can change the justified alternatives, their burdens or their interpretation. Pure curiosity is not excluded by that narrower criterion.
@@ -154,8 +143,6 @@ The [inquiry-priorities argument](../../../_process/research/2026-10-05-generati
 An unresolved factual distinction need not prevent a response that fits the relevant possibilities. Conversely, a truthful result can arrive after the conditions for acting have disappeared. [Eight new Lean theorems / thirteen explicit declaration audits](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md) check a common-choice criterion, faithful evidence refinement and finite deadline cases. The domain, requirements, truthful probe and timing law are supplied; the existence converse uses classical choice. These results neither derive ethical warrant nor implement an acquired physical inquiry mechanism.
 
 G0 with the explicit J1–J4/E framework can support a bounded duty to investigate when a justified responsibility, material uncertainty and feasible proportionate check jointly make it necessary for the response. The same framework can support timely closure where further inquiry would defeat a stronger requirement. Costs, deadlines, authority and basic conditions require actual correspondence; no scalar research score or universal command to gather information is assumed.
-
-**智慧不要求先知道一切；它要求有根据地辨认哪些区别会改变回应、哪些仍可保留未定，以及何时继续调查会错失真实的回应条件。** 这一方向保留求知本身的意义，也保留不同参与者的能力、责任和实际负担。
 
 ## Relevant possibilities and standing in shared inquiry
 
@@ -167,17 +154,15 @@ Effective criticism must be able to enter reassessment when it has grounds. It c
 
 These are philosophical conclusions constrained by three scoped primary comparisons, not new mathematical theorems or guarantees that institutions comply. The account uses the already stated fallibilist commitments and practical standing rather than claiming that a formal domain proves its own completeness. An inadequate local representation can be repaired; protecting a relevant omission after it is established is a substantive failure in application.
 
-**有理由查，不等于已有理由信；有相关认识、直接受影响与有权决定，也不是同一种地位。** 共同认识的范围须可说明、可挑战、可修正；有界结束保留未知和重开条件，并不要求事先穷尽一切可能。
-
 ## G0, truth and wisdom
 
-G0 is retained as an explicit ethical starting point: **整体中的生及其继续生成具有基本正面规范意义。** Knowledge can contribute to this direction by making dependencies, possibilities, losses and effective responses available within living activity. Understanding may also be part of present living realization, without earning its place through a later productive return.
+G0 is retained as an explicit ethical starting point: **living within the whole and its continuing generation have basic positive normative significance.** Knowledge can contribute to this direction by making dependencies, possibilities, losses and effective responses available within living activity. Understanding may also be part of present living realization, without earning its place through a later productive return.
 
 The connection is conditional and substantive. Establishing a reason to investigate or disclose requires an actual account of what this inquiry would enable, its costs and affected lives, and the appropriate comparison and practical commitments. More data, more true propositions or more predictive power do not automatically mean a better whole continuation. G0 is not a license for unlimited inquiry or disclosure.
 
 This explains one ethical direction of inquiry; it does not supply the truth of a particular answer. Epistemic correctness concerns answering the stated question well. The ethical standing of acquiring, retaining or using that answer concerns its place in life and further generation. These are relations within the same unfolding, not two independent realities.
 
-**智慧比知识多一层：它要判断哪些真实关系在此刻重要、怎样回应、由谁承担、何时停止或改变方向。** Wisdom integrates accurate understanding with warranted concern and feasible, situated response. Someone can know a mechanism and misuse it; someone can mean well and act on an error. G0 helps orient the integration, while [practical judgment](PRACTICAL-JUDGMENT.md) supplies the separately declared comparison and responsibility framework.
+**Wisdom adds a layer to knowledge: it judges which real relations matter now, how to respond, who bears it, and when to stop or change direction.** Wisdom integrates accurate understanding with warranted concern and feasible, situated response. Someone can know a mechanism and misuse it; someone can mean well and act on an error. G0 helps orient the integration, while [practical judgment](PRACTICAL-JUDGMENT.md) supplies the separately declared comparison and responsibility framework.
 
 ## What the theory explains, and what remains to establish
 
@@ -187,7 +172,7 @@ The initial two gaps—cognitive uptake and the justification of error scope—a
 
 The investigation's answer to Ren is therefore qualified and positive: **the wider generative theory can explain the formation, possession, correction and significance of knowledge; G0 gives that activity an ethical direction. G0 alone does not identify which judgments are knowledge.** Beneficial error and accurate destructive use preserve this distinction within the same unfolding. A rival competence-based account can accept the epistemic relationships without adopting G0, so the stronger necessity claim is unsupported.
 
-**生成可以解释认识怎样发生及进入生活；知识还要求所论内容真实，且其正确有实际的认识根据。G0 说明其中的正面方向，不单独判定真假。** Further research should test the proposed content/integration relationships in actual cognitive cases and challenge the error-scope constraints with rivals preserving the same target. Those are validation and refinement questions for this candidate, not results silently certified by its exposition or local proof package.
+Further research should test the proposed content/integration relationships in actual cognitive cases and challenge the error-scope constraints with rivals preserving the same target. Those are validation and refinement questions for this candidate, not results silently certified by its exposition or local proof package.
 
 ## Toward the broader philosophical account
 
@@ -197,13 +182,7 @@ The account also applies to itself. Coherence with our theory is not independent
 
 G0 positively orients inquiry into dependencies, opportunities and real losses, including the cultivation of understanding as part of living. Whether to obtain, retain or disclose particular knowledge still requires the actual comparison and responsibility account. The whole perspective preserves who has access, who bears consequences and who can respond; it does not confer omniscience or interchangeable individual lives.
 
-The [second round](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/G0-AND-KNOWLEDGE.md#second-round-revision-objectivity-and-scientific-philosophy) addresses the previous frontier of grounds through changes of concepts and methods. It advances partial epistemic continuity, objectivity, explanation and scientific accountability, with counterreview and four additional primary comparisons at recorded reading scopes. It also applies G0 to the ethical place of inquiry and Ren's helping case, preserving particular lives and real losses. These are defended philosophical arguments, not new mathematical proofs or an exhaustive validation of the theory.
-
-The [third round](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/G0-AND-KNOWLEDGE.md#third-round-projection-risk-and-inquiry-priorities) advances that next connection through an explicit projection argument, the consequences of error, G0-based inquiry priorities and a checked practical interface. Five primary comparisons and substantive author counterreview retain their reading and evidential limits. No empirical replication, complete solution to induction or independent-agent acceptance is claimed; the earlier twenty-theorem correspondence package retains its separate scope.
-
-The [completion-stage continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SHARED-INQUIRY-AND-STANDING.md) now gives a defended answer to that frontier: accountable possibility selection, different thresholds for investigation and acceptance, differentiated grounds for standing, effective criticism and bounded reopening. Existing learning, question-formation and developing-purpose mechanisms remain credited. Their production does not itself justify the resulting inquiry or authority.
-
-The [connected philosophical account](PHILOSOPHICAL-ACCOUNT.md) and [completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) conclude this development as a defended candidate, with author counterreview and explicit premises. This round introduces no new theorem or experiment; the existing twenty- and eight-theorem packages retain their scopes. Conscious experience, exhaustive semantics, general induction and unique universal necessity remain unsettled. Those are genuine limits, not results renamed as completed or newly imposed gates that prevent delivery of the proposal.
+The second round, third round and completion stage of this development, with their links into the integration study, are kept verbatim in [the history file](../history/KNOWLEDGE-rounds-2026-10-17.md). The [connected philosophical account](PHILOSOPHICAL-ACCOUNT.md) and [completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) conclude this development as a defended candidate, with author counterreview and explicit premises; the existing twenty- and eight-theorem packages retain their scopes. Conscious experience, exhaustive semantics, general induction and unique universal necessity remain unsettled.
 
 ## Frontier: when acquired relations support understanding
 
@@ -213,15 +192,13 @@ For reflective empirical judgment, the affirmative candidate concerns **differen
 
 Two primary empirical studies and a read-only reproduction of four selected published statistics strengthen the acquired-relationship route at a bounded scope. Strong content-free and representational alternatives remain in comparison. The next test concerns selective changes to support, content and practical response under matched learning and access conditions. It is a proposed comparison, not an executed experiment or a universal criterion for mindedness. [Sources and exact evidence limits](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md).
 
-**前沿方向：检验已形成的关系怎样成为可辨明根据、可保留所指、可选择性修订的理解。** 已有机制不重开；四项统计量复核不冒称新实验。G0、进一步比较承诺与真实对应仍分别明示；意识、普遍语义充分性及整套理论必要性继续开放。
-
 ## Selective revision and the warrant for reliance
 
 The [executed comparison](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SELECTIVE-REVISION-TEST.md) tests different effects of source withdrawal, conflicting reports, changed purpose and coordinated recoding after the existing acquired interpretation. Sixteen new Lean theorems and 1,296 model cases pass at the stated interface. Withdrawal need not suspend a judgment when another admitted ground remains; conflicting reports need a warranted basis for priority before one simply replaces the other.
 
 A conventional support-maintenance procedure matches every modeled outcome. Selective revision therefore supplies a useful constraint on explanation, without uniquely selecting our formulation or certifying understanding. Copying one physically false signal into two admitted report slots also retains a supported but false answer. The next epistemic connection concerns how distinctions of source access and shared vulnerability become acquired, warranted and revisable grounds for reliance. These are differentiated relations within the same activity; their formation and adequacy are omitted from this local projection, not established as failures of the fuller theory.
 
-**会按根据改变判断，还不等于已经有根据地判断了哪些来源可依赖；两份相同记录，也不自动构成两条独立认识路径。** This refinement concerns recognition and calibration available to practical judgment. G0 and the declared ethical comparison commitments remain distinct from a local purpose bit or support classification.
+This refinement concerns recognition and calibration available to practical judgment. G0 and the declared ethical comparison commitments remain distinct from a local purpose bit or support classification.
 
 ## Acquiring grounds for reliance
 
@@ -231,7 +208,7 @@ A separate reporting path can share a common failure, while a faithful copy can 
 
 Twenty-six new Lean theorems and 576 model cases support the bounded connection. An omitted joint failure passes the calibration at both target values and yields a false definite answer; an additional probe exposes the mismatch without rewriting the retained history. Thus the next question concerns evidence-guided revision of the model family and its scope of transfer. Actual warrant for those premises, empirical realization and universal semantic sufficiency remain distinct from the conditional proof.
 
-**有根据的信赖须追踪报告怎样形成、哪些错误会一同传递，以及检查在什么范围内有效。可修正性不是把真实取消，而是保持对同一实际关系继续负责。** The requirement is proportionate to the question and actual relevant risks, not an obligation to refute every imaginable possibility. Its ethical place still depends on the explicit generative foundation and situated judgment.
+**Warranted reliance must track how reports are formed, which errors are passed on together, and within what range a check is effective. Corrigibility does not cancel truth; it keeps one answerable to the same actual relation.** The requirement is proportionate to the question and actual relevant risks, not an obligation to refute every imaginable possibility. Its ethical place still depends on the explicit generative foundation and situated judgment.
 
 ## Evidence-guided model revision: completed connection
 
@@ -239,7 +216,7 @@ The [completed model-revision study](../../../_process/research/2026-10-05-gener
 
 Thirty new Lean theorems and 76 revision runs check this construction. A general theorem establishes functional correspondence when faithful checking exhausts the fixed finite domain, without requiring prior syntactic inclusion of the actual law. A further comparison distinguishes production failure from recording corruption when an adequate intermediate observation is available. Without that access, the causal location stays unresolved despite matching predictions. A changed setting can also defeat transfer, preserving the need to warrant the scope of application.
 
-**修订的根据来自新的可检验差异及其实际检查。它可以增加确信，也可以揭示原来没有承认的不确定；完成一次调查，是完成其有范围的回应，不是取得不可修正的全知。** The named model-revision frontier is complete as a defended account and checked finite reconstruction. The account now connects interpretation, selective revision, acquired source dependence, repair of the model family and renewed bounded reliance. Concrete empirical applications and unrestricted semantics remain separate research obligations; no further generic mechanism gate is needed to state this connection.
+**The grounds for revision come from new testable differences and their actual checking. Revision can increase confidence, and it can also disclose uncertainty not previously acknowledged; completing an investigation completes its bounded response, not an incorrigible omniscience.** The named model-revision frontier is complete as a defended account and checked finite reconstruction. The account now connects interpretation, selective revision, acquired source dependence, repair of the model family and renewed bounded reliance. Concrete empirical applications and unrestricted semantics remain separate research obligations; no further generic mechanism gate is needed to state this connection.
 
 ## Scientific-philosophy necessity: the current conclusion
 

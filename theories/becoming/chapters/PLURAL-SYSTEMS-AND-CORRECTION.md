@@ -1,17 +1,15 @@
-# 因应转化：多系统、共同试验与父子关系
+<a id="因应转化多系统共同试验与父子关系"></a>
 # Responsive transformation: plural systems, shared trials and parent/subsystem relationships
+
+> English edition. The [Chinese edition](PLURAL-SYSTEMS-AND-CORRECTION.zh.md) carries the chapter's Chinese summary sentences; points they made that the English did not are included here. The dated status paragraphs of the earlier rounds are in [the history file](../history/PLURAL-SYSTEMS-AND-CORRECTION-rounds-2026-10-17.md).
 
 **Current framing, 9 October 2026.** Following [Ren's clarification](../../../sources/15-codex-theory-conversations/2026-10-09-responsive-transformation.md), the primary question is how understanding, purposes and action can be revised through changing relations and consequences, and what supports, obstructs or ethically directs that transformation. The working term is **responsive transformation / 因应转化**. [Section 15](#15-responsive-transformation) states its conditions and direction; the earlier proofs below retain their narrower scopes and historical terminology.
 
 **For AI-alignment readers:** this is our relational approach to the problem commonly discussed here as **corrigibility**. Requests, oversight, disagreement, interruption and revision take place within the same changing activity. Their effectiveness and warrant depend on cognition, circumstances and actual relations; no permanently guaranteed property of an isolated AI is asserted.
 
-8 October 2026. AI-authored development of [Ren's proposal](../../../sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md), continuing the [corrigibility boundary](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md) and reusing the completed [systems account](../history/SYSTEM-INDIVIDUATION.md). **37 new Lean theorems / 58 new declaration audits pass; 19 inherited theorems / 31 audits are separate.** The [integration and checks](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PLURAL-CORRECTION-INTEGRATION.md) give exact dependencies, controls and the wall reached. The subsequent [relational continuation](#8-start-with-relations-and-derive-the-correction-boundary) adds **39 checked theorems / 55 declaration audits**, kept separate from those earlier counts.
-
-The latest [request-history continuation](#12-correction-depends-on-the-requests-history) adds **33 new theorems / 62 audits**, with **62 inherited theorems / 100 audits** separate. It constructs incremental route replacement with protected in-flight requests, and identifies the remaining resource, execution and real-correspondence requirements.
+AI-authored development of [Ren's proposal](../../../sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md), continuing the [corrigibility boundary](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md) and reusing the completed [systems account](../history/SYSTEM-INDIVIDUATION.md). Checked results, each count separate: §§1–7, **37 new Lean theorems / 58 declaration audits**, with 19 inherited theorems / 31 audits ([integration and checks](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PLURAL-CORRECTION-INTEGRATION.md)); §§8–11, **39 theorems / 55 audits** ([record](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-CORRECTION-INTEGRATION.md)); §§12–14, **33 theorems / 62 audits**, with 62 inherited theorems / 100 audits ([record](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md)). The dated status paragraphs of these rounds are in [the history file](../history/PLURAL-SYSTEMS-AND-CORRECTION-rounds-2026-10-17.md).
 
 **Ren's plural-system proposal opens a constructive route.** Several sites can supply complementary observations, support limited trials and preserve alternatives while one implementation changes. What matters is how those sites are related: whether evidence transfers, whether disturbances spread, and whether the desired corrections can be jointly realized.
-
-**多系统的意义，在于形成不同的观察、可局部承担的试验及可接续的替代，而不只在数量。** 同一整体可以对某些问题提供多个有效样本，同时对另一种共同故障构成一个受影响整体。父系统是实际关系的共同组织，不自动是唯一主体、统一目的或具有优先权的统治者。
 
 ## 1. Plurality changes the earlier question
 
@@ -106,8 +104,6 @@ The contribution of this round is a connected, checked answer to Ren's new direc
 
 Ren's follow-up asks us to think from the relational side. Begin with ongoing activity and the conditions through which its consequences become possible. A command, a decoder, a request and a support route are differentiated participations in that activity. Their roles depend on the relationships actually maintained. We then ask which portion can be described together without losing what matters to a proposed correction.
 
-**可纠正性不能只归给一个孤立的部件。** 它通过辨认、请求、接续、作用及共同支持的关系实现。某个部分保持原样，关系变化也能使纠正变得可能或不可能。父系统不是另加在这些关系之上的统治者；它的描述应保留共同活动怎样实现、怎样影响各参与处，以及怎样能够被修订。
-
 For a specified feasibility question, write `R(i,b)` for the admitted joint realization of retained internal detail `i` and boundary conditions `b`. These are two descriptions within one process. The boundary must include every crossing dependence consequential to this question; it is not assumed to be a physical membrane. Eliminating internal detail gives the interface
 
 `B_R(b) ↔ there exists i such that R(i,b)`.
@@ -133,8 +129,6 @@ This advances the previous evidence wall. Knowing every internal detail is not a
 There is no need to freeze every internal connection. A further exact theorem says that the retained converter remains correct **if and only if the current composed relation agrees with the measured one**. In the concrete revision law, two adjacent translations change polarity together. The internal relations change, while their combined effect stays the same. Lean proves preservation of the complete endpoint relation and the retained correction through every finite history of such revisions, allowing different pairs at successive steps.
 
 The scope of “together” matters. If those two changes occur separately, the first intermediate change reverses the composed relation and defeats the old converter. Lean checks that failure for arbitrary surrounding connections. Thus preservation at completed revisions does not establish safety at every physical intermediate state. A real implementation needs coordinated updates, protected delivery during the change, or a separately effective route. The result preserves room for continued internal transformation while identifying exactly what must remain effective.
-
-**关系的改变本身可以是纠正的对象。** 这里的成功不是替换所有参与者，也不是增加样本数，而是辨明并修订它们的接续方式。整体关系可以被有根据地概括；需要保留多少细节，取决于要保证什么以及概括在哪些变化下仍成立。
 
 The underlying local/global consistency issue has established precedents. Beeri, Fagin, Maier and Yannakakis distinguish agreement on overlapping projections from global consistency and give structural conditions connecting them. Our cyclic translation and repair proofs are scoped applications, not a new discovery of that distinction. [Primary paper, printed pp.485–487](https://s3.us.cloud-object-storage.appdomain.cloud/res-files/500-jacm83a.pdf).
 
@@ -174,9 +168,7 @@ The advance beyond the prior round is precise: we now have exact relational grou
 
 The next continuation advances the coordinated-update boundary above. There is a stronger difficulty than an invalid intermediate configuration: **even an instantaneous replacement preserving the entire endpoint relation can break a request already in flight**. Suppose an old path flips a command twice, and its replacement leaves it unchanged twice. Both complete paths preserve the command. But a request that crosses the old first connection and the new second connection is flipped once. Its actual history belongs to neither complete path.
 
-Lean proves this mixed-history failure for either repeated polarity and either requested value. This does not invalidate the previous feasibility interface. It identifies the extra relation a correction contract must preserve: how an ongoing request continues through change. A parent description adequate for completed configurations can omit precisely what is needed for an intervention already underway.
-
-**纠正依赖的关系包含历史。** 两种整体配置各自都能正确传达，不等于在它们之间转换时，已经进行的请求仍能正确到达。需要说明请求进入了哪一组接续关系、还依赖哪些关系，以及这种依赖何时结束。这里的历史不是额外添加的观察者叙事，而是请求实际经历的作用次序。
+Lean proves this mixed-history failure for either repeated polarity and either requested value. This does not invalidate the previous feasibility interface. It identifies the extra relation a correction contract must preserve: how an ongoing request continues through change. A parent description adequate for completed configurations can omit precisely what is needed for an intervention already underway. History here is not an observer's narrative added on top; it is the order of operations the request actually went through.
 
 ## 13. Preserve a request's route while building its replacement
 
@@ -201,8 +193,6 @@ The remaining wall is establishing this correspondence for an identified evolvin
 ## 15. Responsive transformation
 
 9 October 2026. **因应转化** is the working term for understanding, purposes and action being reorganized through changing relations and consequences. The starting point is activity whose effects alter the conditions of further activity. Within that unfolding, some effects become available to discernment and memory; acquired understanding participates in evaluation and changed practice. Inquiry itself can change the situation in which its conclusions will be acted upon. Cognition and situation name distinguishable aspects of these relations, not independent substances that must later be joined.
-
-**我们研究因应转化的条件与方向。** 认知会改变，处境也会改变；先前有根据的判断可能需要维持、调整、撤回或结束。要说明实际后果怎样进入辨认、目的与做法怎样因此修订，以及新的理解怎样继续接受现实关系的检验。“已经正确”不成为免于再判断的身份，“能够变化”也不独自等于善。
 
 This follows Ren's distinction between a warranted direction and an assured future outcome. A current judgment may be well grounded while remaining revisable. A local mechanism may guarantee a specified effect within an established range without guaranteeing that this range, its interpretation or the reasons for that effect persist through every later change. The research task is to explain those ranges, enabling conditions, breakdowns and directions. Their identification is substantive progress; lack of an unconditional guarantee does not make them empty.
 
