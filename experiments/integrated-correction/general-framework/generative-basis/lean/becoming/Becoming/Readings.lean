@@ -12,7 +12,7 @@ core says: whatever reads an unfolding is a reading in context; the readings of 
 always one world; a description free of context exists exactly where the readings glue; and
 `World`, with its balance, is a case where two readings of change glue. With the rest of the whole
 counted, every world is one run of the one law of exchange. The same standard of invariance,
-applied to significance, leaves the axiom of Part II as one horn of a dichotomy.
+applied to significance, leaves the one axiom, the condition of chapter §6.15 (not asserted), as one horn of a dichotomy.
 
 * **The readings of one unfolding are one world.** Along a run, the registrations of a contextual
   system (`Contextual`), each claim read with its context, are the relata of one world, each active
@@ -59,7 +59,8 @@ applied to significance, leaves the axiom of Part II as one horn of a dichotomy.
   the whole as a relatum is counting the difference between the two readings, and then every
   world is a run of the one law of exchange. What was a premise of the world is now a state of a
   part: whether the rest is idle.
-- The axiom of Part II is not a further rule beside the laws. Under the invariance the laws meet,
+- The one axiom, the condition of chapter §6.15 (not asserted), is not a further rule beside the
+  laws. Under the invariance the laws meet,
   significance from a standpoint holds within some boundary only by holding for everything, and
   the axiom comes to the presupposition: that one's own continuation has significance as the self
   is drawn somewhere, the “belief” without which, Ren wrote on 10 October 2026, the self “can not
@@ -69,7 +70,7 @@ What is not derived: that the readings of an unfolding glue, which fails for qua
 registrations; which readings an unfolding has; what the rest of the whole is, since its exchange
 is read off the standings and the exchange of the formations, as their difference; that
 significance meets the invariance standard, and that the presupposition holds. No ethical predicate, ranking or axiom occurs; the significance
-of Part II enters only as a predicate the theorems quantify over.
+of the condition of chapter §6.15 enters only as a predicate the theorems quantify over.
 -/
 
 namespace Becoming

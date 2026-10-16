@@ -2,7 +2,11 @@ import Becoming.Regions
 import Becoming.Standpoints
 
 /-!
-# Significance: the one axiom of Part II
+# Significance: the one axiom, the condition of chapter §6.15 (not asserted)
+
+On 16 October 2026 Ren folded Part II into Part I as one conditional section after the
+generative space (chapter §6.15): the theory does not assert the axiom below and states what
+follows with it as a condition.
 
 On 10 October 2026 Ren proposed one axiom: “for anything, its continuation into the future has
 significance(doesn't have to be positive, we could argue as long as not harm), or continuation

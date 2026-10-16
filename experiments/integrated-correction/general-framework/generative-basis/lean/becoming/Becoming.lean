@@ -676,7 +676,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   neutrality as the one axiom is the AI's reading of Ren's proposal of 10 October 2026,
   adopted on Ren's delegation of 15 October 2026. G0 is no longer an axiom: Ren folded it on 11
   October 2026.
-* `Becoming.Significance` (L4): the one axiom, as a condition that Part II asserts.
+* `Becoming.Significance` (L4): the one axiom, the condition of chapter §6.15 (not asserted; Ren folded Part II
+  into Part I as that conditional section on 16 October 2026).
   Ren's “for anything, its
   continuation into the future has significance” is read as boundary neutrality for the
   significance of continuation: from every standpoint, the continuation of anything has
@@ -864,7 +865,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   a formation that adds no possibility unranked against its absence, where both
   readings of `living` rank its presence higher. The readings are the AI's, adopted on Ren's
   delegation of 15 October 2026. After this audit Ren folded G0 (11 October 2026): it is a condition
-  with no axiom in Part I and a theorem of the axiom in Part II. Ren then folded positive relevance
+  with no axiom in Part I and a theorem of the axiom in Part II (since 16 October 2026,
+  a theorem with the axiom as the condition of chapter §6.15). Ren then folded positive relevance
   into significance, with which G0 is the axiom's condition on realized living content
   (`g0_relevance_iff`), and left the comparison of courses to the AI, which compares courses on
   possibilities.

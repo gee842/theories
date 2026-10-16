@@ -152,7 +152,7 @@ is relative to it; the least footprint, each step touching exactly what takes pa
 across it, would need being moved to be decided, which with activity and dependence as
 propositions is not assumed. The sides of `Reorders` remain given. The moving steps of a
 stuttering are given as a function: each exists and is unique, but choosing all of them at once is
-an unbounded search, not done. Invariance of the predicates of Part II; continuous time.
+an unbounded search, not done. Invariance of the predicates of the condition of chapter §6.15; continuous time.
 Commutation is of consecutive steps. No ethical predicate, ranking or axiom occurs.
 -/
 
