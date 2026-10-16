@@ -1,0 +1,23 @@
+import ExplanatoryJoiningContexts
+#print axioms Generative.ExplanatoryJoiningContexts.Context
+#print axioms Generative.ExplanatoryJoiningContexts.Realizes
+#print axioms Generative.ExplanatoryJoiningContexts.Possible
+#print axioms Generative.ExplanatoryJoiningContexts.Same
+#print axioms Generative.ExplanatoryJoiningContexts.splice
+#print axioms Generative.ExplanatoryJoiningContexts.realizes_splice
+#print axioms Generative.ExplanatoryJoiningContexts.possible_splice
+#print axioms Generative.ExplanatoryJoiningContexts.realizes_functional
+#print axioms Generative.ExplanatoryJoiningContexts.continuation_after_realization
+#print axioms Generative.ExplanatoryJoiningContexts.same_refl
+#print axioms Generative.ExplanatoryJoiningContexts.same_symm
+#print axioms Generative.ExplanatoryJoiningContexts.same_trans
+#print axioms Generative.ExplanatoryJoiningContexts.possible_right
+#print axioms Generative.ExplanatoryJoiningContexts.possible_left
+#print axioms Generative.ExplanatoryJoiningContexts.same_preserves_joinability
+#print axioms Generative.ExplanatoryJoiningContexts.same_continuation_results
+#print axioms Generative.ExplanatoryJoiningContexts.same_join_results
+#print axioms Generative.ExplanatoryJoiningContexts.Compatible
+#print axioms Generative.ExplanatoryJoiningContexts.compatible_transports_realization
+#print axioms Generative.ExplanatoryJoiningContexts.compatible_refines_same
+#print axioms Generative.ExplanatoryJoiningContexts.same_compatible
+#print axioms Generative.ExplanatoryJoiningContexts.same_iff_compatible_relation

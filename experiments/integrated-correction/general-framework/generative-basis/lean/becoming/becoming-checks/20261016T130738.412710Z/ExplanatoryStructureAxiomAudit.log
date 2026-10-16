@@ -1,0 +1,29 @@
+'Generative.ExplanatoryStructure.cells' does not depend on any axioms
+'Generative.ExplanatoryStructure.Legal' does not depend on any axioms
+'Generative.ExplanatoryStructure.placement' does not depend on any axioms
+'Generative.ExplanatoryStructure.Realizes' does not depend on any axioms
+'Generative.ExplanatoryStructure.Global' does not depend on any axioms
+'Generative.ExplanatoryStructure.trace_global' does not depend on any axioms
+'Generative.ExplanatoryStructure.global_realized' does not depend on any axioms
+'Generative.ExplanatoryStructure.realizes_iff_global' does not depend on any axioms
+'Generative.ExplanatoryStructure.complete_trace_iff' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.charge' does not depend on any axioms
+'Generative.ExplanatoryStructure.balance' does not depend on any axioms
+'Generative.ExplanatoryStructure.balance_perm' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.opposite_pair_balance' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.legal_balance' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.global_balance' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.unbalanced_no_cover' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.unbalanced_no_placement_history' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.Square' does not depend on any axioms
+'Generative.ExplanatoryStructure.chessColor' does not depend on any axioms
+'Generative.ExplanatoryStructure.adjacent' does not depend on any axioms
+'Generative.ExplanatoryStructure.mutilated' does not depend on any axioms
+'Generative.ExplanatoryStructure.adjacent_opposite' does not depend on any axioms
+'Generative.ExplanatoryStructure.mutilated_balance' does not depend on any axioms
+'Generative.ExplanatoryStructure.mutilated_no_cover' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.mutilated_no_history' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.separated' does not depend on any axioms
+'Generative.ExplanatoryStructure.separated_balanced' does not depend on any axioms
+'Generative.ExplanatoryStructure.separated_not_coverable' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.two_tile_orders' depends on axioms: [propext]

@@ -1,0 +1,20 @@
+import ExplanatoryGuardedPrograms
+#print axioms Generative.ExplanatoryGuardedPrograms.Program
+#print axioms Generative.ExplanatoryGuardedPrograms.Executes
+#print axioms Generative.ExplanatoryGuardedPrograms.either
+#print axioms Generative.ExplanatoryGuardedPrograms.diamond
+#print axioms Generative.ExplanatoryGuardedPrograms.holds_either
+#print axioms Generative.ExplanatoryGuardedPrograms.diamond_correct
+#print axioms Generative.ExplanatoryGuardedPrograms.programModel
+#print axioms Generative.ExplanatoryGuardedPrograms.compile
+#print axioms Generative.ExplanatoryGuardedPrograms.compile_correct
+#print axioms Generative.ExplanatoryGuardedPrograms.wordProgram
+#print axioms Generative.ExplanatoryGuardedPrograms.word_program_exact
+#print axioms Generative.ExplanatoryGuardedPrograms.execution_has_native_trace
+#print axioms Generative.ExplanatoryGuardedPrograms.finite_program_endpoints
+#print axioms Generative.ExplanatoryGuardedPrograms.program_image_finite
+#print axioms Generative.ExplanatoryGuardedPrograms.guarded_history_matches
+#print axioms Generative.ExplanatoryGuardedPrograms.program_history_has_native_trace
+#print axioms Generative.ExplanatoryGuardedPrograms.branch
+#print axioms Generative.ExplanatoryGuardedPrograms.branch_executes
+#print axioms Generative.ExplanatoryGuardedPrograms.guard_hoisting_sound

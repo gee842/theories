@@ -1,0 +1,10 @@
+'RenewalRecovery.inactive_pair_absorbs' does not depend on any axioms
+'RenewalRecovery.supported_repair_step' depends on axioms: [propext, Quot.sound]
+'RenewalRecovery.repair_window_progress' depends on axioms: [propext, Quot.sound]
+'RenewalRecovery.repair_restores_sustaining_support' depends on axioms: [propext, Quot.sound]
+'RenewalRecovery.pulse' does not depend on any axioms
+'RenewalRecovery.same_future_inputs' depends on axioms: [propext]
+'RenewalRecovery.two_actual_pulses' does not depend on any axioms
+'RenewalRecovery.supported_pulse_recovers' depends on axioms: [propext, Quot.sound]
+'RenewalRecovery.unsupported_pulse_never_recovers' does not depend on any axioms
+'RenewalRecovery.recovered_history_neither_global_class' depends on axioms: [propext, Quot.sound]

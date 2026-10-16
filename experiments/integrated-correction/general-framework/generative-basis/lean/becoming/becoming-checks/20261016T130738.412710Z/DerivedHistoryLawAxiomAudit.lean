@@ -1,0 +1,12 @@
+import DerivedHistoryLaw
+#print axioms Generative.DerivedHistoryLaw.derivedProcess
+#print axioms Generative.DerivedHistoryLaw.FiberFuture
+#print axioms Generative.DerivedHistoryLaw.ExactFuture
+#print axioms Generative.DerivedHistoryLaw.admitted_extension_projects
+#print axioms Generative.DerivedHistoryLaw.derived_trace_sound
+#print axioms Generative.DerivedHistoryLaw.exact_iff_fiber_future
+#print axioms Generative.DerivedHistoryLaw.distinguishing_merge_creates_false_continuation
+#print axioms Generative.DerivedHistoryLaw.unrestricted
+#print axioms Generative.DerivedHistoryLaw.singletonFalseCode
+#print axioms Generative.DerivedHistoryLaw.unrestricted_summary_exact
+#print axioms Generative.DerivedHistoryLaw.exact_futures_can_change_encoded_endpoint

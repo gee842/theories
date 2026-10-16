@@ -1,0 +1,17 @@
+import CorePredication
+#print axioms Generative.CorePredication.May
+#print axioms Generative.CorePredication.Must
+#print axioms Generative.CorePredication.may_append_iff
+#print axioms Generative.CorePredication.must_append_iff
+#print axioms Generative.CorePredication.trace_invariant
+#print axioms Generative.CorePredication.reach_invariant
+#print axioms Generative.CorePredication.invariant_excludes_endpoint
+#print axioms Generative.CorePredication.feasible_and_must_implies_may
+#print axioms Generative.CorePredication.deterministic_trace_endpoint
+#print axioms Generative.CorePredication.deterministic_may_implies_must
+#print axioms Generative.CorePredication.branching
+#print axioms Generative.CorePredication.blocked
+#print axioms Generative.CorePredication.possible_not_guaranteed
+#print axioms Generative.CorePredication.blocked_word_not_feasible
+#print axioms Generative.CorePredication.blocked_must_is_vacuous
+#print axioms Generative.CorePredication.blocked_may_is_false

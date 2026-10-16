@@ -87,3 +87,7 @@ Commits: `575289df` (untrack bytecode), `d65bbeaf` (scanner), `2db481ce` (checke
 - **Axioms:** `core_axioms: []`. Of the 851 bridge constants, one generated constant uses an axiom: `RepairComparison.State.mk.injEq`, on `propext`.
 - **Audit:** 9,912 declaration audits, 7,214 theorems in spine and bridge, 6,918 of them in the core.
 - **Receipt:** `20261016T130738.412710Z`, sha256 `faced25f…72834`, 2.4 MB, not kept. The checker's printed summary is kept as [fresh-run-20261016T130738.412710Z-summary.json](fresh-run-20261016T130738.412710Z-summary.json).
+
+## Receipt preserved (17 October 2026)
+
+The full fresh-run receipt was found in the session scratchpad that produced it and copied unchanged into tracked evidence: [`becoming-checks/20261016T130738.412710Z/verification.json`](../../../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T130738.412710Z/verification.json), sha256 `faced25fba227bbc0e9cab3cc7f23ecac1e864b8734f947f52a094426fe72834` (1,059 files in the run folder). Two other runs that existed only outside main were copied the same way: `20261011T170859.998618Z` (cited by the entropy landing; from worktree `jolly-pike-140c94`; verification sha256 `44a27d49c490421c56b160d0f17aed5267a1bfa5764531d670733be471c1d5ce`) and `20261016T112106.917817Z` (from `review-wt`; sha256 `ca2a3e19a1bdc80655fd0ba102dcdaa6763f681e5d416b838ea4f1dccfb77432`). No rerun.

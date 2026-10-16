@@ -1,0 +1,13 @@
+import RelationalGrounding
+#print axioms RelationalGrounding.Regime
+#print axioms RelationalGrounding.continuations
+#print axioms RelationalGrounding.marginal
+#print axioms RelationalGrounding.allBundle
+#print axioms RelationalGrounding.jointInventory
+#print axioms RelationalGrounding.released_profiles_are_carried
+#print axioms RelationalGrounding.joint_bundle_extension
+#print axioms RelationalGrounding.marginals_agree_but_joint_descriptions_differ
+#print axioms RelationalGrounding.strict_comparison_cannot_factor_through_marginals
+#print axioms RelationalGrounding.joint_description_separates
+#print axioms RelationalGrounding.retainedLeft
+#print axioms RelationalGrounding.retained_possibility_does_not_force_joint_actualization

@@ -1,0 +1,31 @@
+'RelationalOrganization.formation_required_of_improvable_absence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RelationalOrganization.Form' does not depend on any axioms
+'RelationalOrganization.spent' does not depend on any axioms
+'RelationalOrganization.remaining' does not depend on any axioms
+'RelationalOrganization.linked' depends on axioms: [propext]
+'RelationalOrganization.basis' does not depend on any axioms
+'RelationalOrganization.renewed' depends on axioms: [propext]
+'RelationalOrganization.protect' depends on axioms: [propext]
+'RelationalOrganization.freeOccasion' does not depend on any axioms
+'RelationalOrganization.better' depends on axioms: [propext]
+'RelationalOrganization.eligible' does not depend on any axioms
+'RelationalOrganization.formed' depends on axioms: [propext]
+'RelationalOrganization.menu' does not depend on any axioms
+'RelationalOrganization.usesLeft' does not depend on any axioms
+'RelationalOrganization.usesRight' does not depend on any axioms
+'RelationalOrganization.left_formation_retains_basis' depends on axioms: [propext]
+'RelationalOrganization.formation_has_a_real_loss' does not depend on any axioms
+'RelationalOrganization.left_better_than_idle' depends on axioms: [propext]
+'RelationalOrganization.left_better_than_overbuild' depends on axioms: [propext]
+'RelationalOrganization.every_unformed_continuation_has_a_better_one' depends on axioms: [propext]
+'RelationalOrganization.coordination_is_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationalOrganization.frontier_exactly_the_two_working_routes' depends on axioms: [propext, Quot.sound]
+'RelationalOrganization.neither_named_route_is_required' depends on axioms: [propext, Quot.sound]
+'RelationalOrganization.more_construction_can_defeat_its_own_basis' depends on axioms: [propext]
+'RelationalOrganization.constructionReport' depends on axioms: [propext]
+'RelationalOrganization.same_construction_report_different_living_basis' depends on axioms: [propext]
+'RelationalOrganization.no_construction_report_only_basis_judge' depends on axioms: [propext]
+'RelationalOrganization.repairedBasisJudgment' does not depend on any axioms
+'RelationalOrganization.amount_sensitive_repair_recovers_the_local_basis' does not depend on any axioms

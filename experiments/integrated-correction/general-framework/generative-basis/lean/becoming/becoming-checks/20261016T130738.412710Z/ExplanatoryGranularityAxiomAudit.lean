@@ -1,0 +1,15 @@
+import ExplanatoryGranularity
+#print axioms Generative.ExplanatoryGranularity.blocks
+#print axioms Generative.ExplanatoryGranularity.along
+#print axioms Generative.ExplanatoryGranularity.compile
+#print axioms Generative.ExplanatoryGranularity.holds_along
+#print axioms Generative.ExplanatoryGranularity.compile_correct
+#print axioms Generative.ExplanatoryGranularity.blocks_trace_iff
+#print axioms Generative.ExplanatoryGranularity.finite_trace_endpoints
+#print axioms Generative.ExplanatoryGranularity.blocks_image_finite
+#print axioms Generative.ExplanatoryGranularity.cross_granularity_history_matches
+#print axioms Generative.ExplanatoryGranularity.retained_block_provenance
+#print axioms Generative.ExplanatoryGranularity.liftTest
+#print axioms Generative.ExplanatoryGranularity.lift_compile
+#print axioms Generative.ExplanatoryGranularity.singleton_coverage_recovers_questions
+#print axioms Generative.ExplanatoryGranularity.full_and_block_reduced_kernels

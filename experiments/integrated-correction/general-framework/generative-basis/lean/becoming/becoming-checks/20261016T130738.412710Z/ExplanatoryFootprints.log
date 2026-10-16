@@ -1,0 +1,13 @@
+'Generative.ExplanatoryFootprints.realized_requests_within' depends on axioms: [propext]
+'Generative.ExplanatoryFootprints.realized_requests_nodup' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryFootprints.realized_requests_supported' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryFootprints.joint_within' does not depend on any axioms
+'Generative.ExplanatoryFootprints.joint_separate' does not depend on any axioms
+'Generative.ExplanatoryFootprints.realize_from_supported' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryFootprints.realize_iff_supported' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryFootprints.same_requests_same_realization' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryFootprints.reassociation_preserves_realization' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryFootprints.permutation_preserves_realization' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryFootprints.code_plan_has_global_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

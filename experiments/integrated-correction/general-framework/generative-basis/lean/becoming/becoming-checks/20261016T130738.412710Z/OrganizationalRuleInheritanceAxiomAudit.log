@@ -1,0 +1,57 @@
+'OrganizationalRuleInheritance.Rule' does not depend on any axioms
+'OrganizationalRuleInheritance.Ballot' does not depend on any axioms
+'OrganizationalRuleInheritance.State' does not depend on any axioms
+'OrganizationalRuleInheritance.voters' does not depend on any axioms
+'OrganizationalRuleInheritance.consistent' does not depend on any axioms
+'OrganizationalRuleInheritance.governance' does not depend on any axioms
+'OrganizationalRuleInheritance.technical' does not depend on any axioms
+'OrganizationalRuleInheritance.Event' does not depend on any axioms
+'OrganizationalRuleInheritance.handoff' does not depend on any axioms
+'OrganizationalRuleInheritance.fork' does not depend on any axioms
+'OrganizationalRuleInheritance.step' does not depend on any axioms
+'OrganizationalRuleInheritance.run' does not depend on any axioms
+'OrganizationalRuleInheritance.process' does not depend on any axioms
+'OrganizationalRuleInheritance.run_is_trace' depends on axioms: [propext]
+'OrganizationalRuleInheritance.admitted_requires_review' depends on axioms: [propext, Quot.sound]
+'OrganizationalRuleInheritance.adoption_uses_recorded_proposal' depends on axioms: [propext]
+'OrganizationalRuleInheritance.changed_rule_requires_adoption' depends on axioms: [propext, Quot.sound]
+'OrganizationalRuleInheritance.handoff_preserves_record' does not depend on any axioms
+'OrganizationalRuleInheritance.handoff_does_not_invent_participation' depends on axioms: [propext, Quot.sound]
+'OrganizationalRuleInheritance.fork_retains_source' does not depend on any axioms
+'OrganizationalRuleInheritance.handoffs' does not depend on any axioms
+'OrganizationalRuleInheritance.repeated_handoff_inherits' does not depend on any axioms
+'OrganizationalRuleInheritance.same_enacted_relations_same_decision' depends on axioms: [propext, Quot.sound]
+'OrganizationalRuleInheritance.no_participation_no_integration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OrganizationalRuleInheritance.nonAdopting' depends on axioms: [propext]
+'OrganizationalRuleInheritance.nonadopting_step_preserves' depends on axioms: [propext, Quot.sound]
+'OrganizationalRuleInheritance.nonadopting_history_inherits' depends on axioms: [propext, Quot.sound]
+'OrganizationalRuleInheritance.initial' does not depend on any axioms
+'OrganizationalRuleInheritance.allVote' does not depend on any axioms
+'OrganizationalRuleInheritance.twoVote' does not depend on any axioms
+'OrganizationalRuleInheritance.fourVote' does not depend on any axioms
+'OrganizationalRuleInheritance.formation' does not depend on any axioms
+'OrganizationalRuleInheritance.formed' does not depend on any axioms
+'OrganizationalRuleInheritance.revised' does not depend on any axioms
+'OrganizationalRuleInheritance.revision' does not depend on any axioms
+'OrganizationalRuleInheritance.relations_form_through_work' does not depend on any axioms
+'OrganizationalRuleInheritance.review_alone_does_not_confer_office' does not depend on any axioms
+'OrganizationalRuleInheritance.office_without_review_fails' does not depend on any axioms
+'OrganizationalRuleInheritance.proposal_alone_does_not_change_rule' does not depend on any axioms
+'OrganizationalRuleInheritance.authorized_revision_is_actual' does not depend on any axioms
+'OrganizationalRuleInheritance.low_support_cannot_revise' does not depend on any axioms
+'OrganizationalRuleInheritance.duplicate_votes_do_not_create_mandates' does not depend on any axioms
+'OrganizationalRuleInheritance.inherited_rules_change_access' does not depend on any axioms
+'OrganizationalRuleInheritance.wait_and_objection_matter' does not depend on any axioms
+'OrganizationalRuleInheritance.inherited_revision_continues' does not depend on any axioms
+'OrganizationalRuleInheritance.copied_rule_without_participation_fails' does not depend on any axioms
+'OrganizationalRuleInheritance.enabling_one_operation_need_not_enable_revision' does not depend on any axioms
+'OrganizationalRuleInheritance.successor_can_revise_inherited_rule' does not depend on any axioms
+'OrganizationalRuleInheritance.boundary_is_not_exclusive_membership' depends on axioms: [propext, Quot.sound]
+'OrganizationalRuleInheritance.summary' does not depend on any axioms
+'OrganizationalRuleInheritance.no_count_only_decision' depends on axioms: [propext]
+'OrganizationalRuleInheritance.common_history_can_branch_with_different_rules' does not depend on any axioms
+'OrganizationalRuleInheritance.majority_acceptance_survives_extension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

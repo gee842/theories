@@ -1,0 +1,26 @@
+import ContinuationConditions
+#print axioms Generative.ContinuationConditions.Future
+#print axioms Generative.ContinuationConditions.SameFuture
+#print axioms Generative.ContinuationConditions.Stable
+#print axioms Generative.ContinuationConditions.Letterwise
+#print axioms Generative.ContinuationConditions.future_update
+#print axioms Generative.ContinuationConditions.same_future_extends
+#print axioms Generative.ContinuationConditions.future_is_reachable_union
+#print axioms Generative.ContinuationConditions.letterwise_append
+#print axioms Generative.ContinuationConditions.stable_implies_letterwise
+#print axioms Generative.ContinuationConditions.letterwise_implies_stable
+#print axioms Generative.ContinuationConditions.stable_iff_letterwise
+#print axioms Generative.ContinuationConditions.joint_obstruction_refutes_stability
+#print axioms Generative.ContinuationConditions.blocked_extension_separates
+#print axioms Generative.ContinuationConditions.enabled_extension_separates
+#print axioms Generative.ContinuationConditions.locate_first_obstruction
+#print axioms Generative.ContinuationConditions.obstruction_locates_changed_profile
+#print axioms Generative.ContinuationConditions.unrestricted
+#print axioms Generative.ContinuationConditions.unrestricted_stable
+#print axioms Generative.ContinuationConditions.unrestricted_realized
+#print axioms Generative.ContinuationConditions.latch
+#print axioms Generative.ContinuationConditions.latch_obstruction
+#print axioms Generative.ContinuationConditions.latch_changes_profile_and_continues
+#print axioms Generative.ContinuationConditions.gate
+#print axioms Generative.ContinuationConditions.gate_formation
+#print axioms Generative.ContinuationConditions.gate_gains_profile

@@ -1,0 +1,18 @@
+'RelationalBecoming.Within' does not depend on any axioms
+'RelationalBecoming.Eventually' does not depend on any axioms
+'RelationalBecoming.within_after_prefix' depends on axioms: [propext]
+'RelationalBecoming.eventual_after_prefix' depends on axioms: [propext]
+'RelationalBecoming.no_new_eventual_bundle' depends on axioms: [propext]
+'RelationalBecoming.process' does not depend on any axioms
+'RelationalBecoming.realized' does not depend on any axioms
+'RelationalBecoming.both' does not depend on any axioms
+'RelationalBecoming.history_meaning' does not depend on any axioms
+'RelationalBecoming.joint_content_iff' does not depend on any axioms
+'RelationalBecoming.prepared_joint_within_one' does not depend on any axioms
+'RelationalBecoming.initial_not_joint_within_one' depends on axioms: [propext, Quot.sound]
+'RelationalBecoming.actual_preparation_changes_effective_capacity' depends on axioms: [propext, Quot.sound]
+'RelationalBecoming.belowRelease' depends on axioms: [propext]
+'RelationalBecoming.release_region_preserved' depends on axioms: [propext]
+'RelationalBecoming.released_cannot_reach_joint' depends on axioms: [propext]
+'RelationalBecoming.actual_release_loses_eventual_joint' depends on axioms: [propext, Quot.sound]
+'RelationalBecoming.prepared_capacity_can_end_without_joint_realization' does not depend on any axioms

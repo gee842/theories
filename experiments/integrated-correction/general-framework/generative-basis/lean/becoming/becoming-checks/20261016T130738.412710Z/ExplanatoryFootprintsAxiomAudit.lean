@@ -1,0 +1,19 @@
+import ExplanatoryFootprints
+#print axioms Generative.ExplanatoryFootprints.Within
+#print axioms Generative.ExplanatoryFootprints.Separate
+#print axioms Generative.ExplanatoryFootprints.Requests
+#print axioms Generative.ExplanatoryFootprints.Supported
+#print axioms Generative.ExplanatoryFootprints.realized_requests_within
+#print axioms Generative.ExplanatoryFootprints.realized_requests_nodup
+#print axioms Generative.ExplanatoryFootprints.realized_requests_supported
+#print axioms Generative.ExplanatoryFootprints.support
+#print axioms Generative.ExplanatoryFootprints.Apart
+#print axioms Generative.ExplanatoryFootprints.joint
+#print axioms Generative.ExplanatoryFootprints.joint_within
+#print axioms Generative.ExplanatoryFootprints.joint_separate
+#print axioms Generative.ExplanatoryFootprints.realize_from_supported
+#print axioms Generative.ExplanatoryFootprints.realize_iff_supported
+#print axioms Generative.ExplanatoryFootprints.same_requests_same_realization
+#print axioms Generative.ExplanatoryFootprints.reassociation_preserves_realization
+#print axioms Generative.ExplanatoryFootprints.permutation_preserves_realization
+#print axioms Generative.ExplanatoryFootprints.code_plan_has_global_support

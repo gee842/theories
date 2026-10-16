@@ -1,0 +1,16 @@
+import ExplanatoryJoiningRefinement
+#print axioms Generative.ExplanatoryJoiningRefinement.occurrence_ext
+#print axioms Generative.ExplanatoryJoiningRefinement.ofTuple
+#print axioms Generative.ExplanatoryJoiningRefinement.ofTuple_at
+#print axioms Generative.ExplanatoryJoiningRefinement.mapOccurrence
+#print axioms Generative.ExplanatoryJoiningRefinement.mapOccurrence_at
+#print axioms Generative.ExplanatoryJoiningRefinement.mapPosition
+#print axioms Generative.ExplanatoryJoiningRefinement.map_step
+#print axioms Generative.ExplanatoryJoiningRefinement.open_map_lifts_step
+#print axioms Generative.ExplanatoryJoiningRefinement.open_map_bisimulation
+#print axioms Generative.ExplanatoryJoiningRefinement.open_map_preserves_questions
+#print axioms Generative.ExplanatoryJoiningRefinement.identity_open
+#print axioms Generative.ExplanatoryJoiningRefinement.commonFactor
+#print axioms Generative.ExplanatoryJoiningRefinement.common_factor_preserves_joins
+#print axioms Generative.ExplanatoryJoiningRefinement.common_factor_unique
+#print axioms Generative.ExplanatoryJoiningRefinement.universal_common_factor

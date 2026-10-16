@@ -1,0 +1,21 @@
+import WisdomResponseStructure
+#print axioms Generative.WisdomResponseStructure.Mode
+#print axioms Generative.WisdomResponseStructure.Route
+#print axioms Generative.WisdomResponseStructure.State
+#print axioms Generative.WisdomResponseStructure.advance
+#print axioms Generative.WisdomResponseStructure.routes
+#print axioms Generative.WisdomResponseStructure.Reached
+#print axioms Generative.WisdomResponseStructure.Adequate
+#print axioms Generative.WisdomResponseStructure.leftObservation
+#print axioms Generative.WisdomResponseStructure.rightObservation
+#print axioms Generative.WisdomResponseStructure.leftResponse
+#print axioms Generative.WisdomResponseStructure.rightResponse
+#print axioms Generative.WisdomResponseStructure.assured_route_iff
+#print axioms Generative.WisdomResponseStructure.left_response_adequate
+#print axioms Generative.WisdomResponseStructure.right_response_adequate
+#print axioms Generative.WisdomResponseStructure.adequate_description_loses_outcome_distinction
+#print axioms Generative.WisdomResponseStructure.pairwise_common_response
+#print axioms Generative.WisdomResponseStructure.no_response_common_to_all
+#print axioms Generative.WisdomResponseStructure.common_coarsening_constant
+#print axioms Generative.WisdomResponseStructure.common_coarsening_inadequate
+#print axioms Generative.WisdomResponseStructure.no_coarsest_adequate_description

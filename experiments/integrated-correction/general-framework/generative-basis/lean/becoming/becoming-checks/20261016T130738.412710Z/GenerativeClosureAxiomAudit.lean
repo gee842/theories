@@ -1,0 +1,21 @@
+import GenerativeClosure
+#print axioms InquiryRoot.Formula
+#print axioms InquiryRoot.Holds
+#print axioms InquiryRoot.Necessary
+#print axioms InquiryRoot.Derives
+#print axioms InquiryRoot.derivation_sound
+#print axioms InquiryRoot.all_closed_descendants_necessary
+#print axioms InquiryRoot.all_relative_descendants_necessary
+#print axioms InquiryRoot.entire_closure_necessary_iff_basis
+#print axioms InquiryRoot.local_justification_discharges_context
+#print axioms InquiryRoot.no_counterexample_to_closed_descendant
+#print axioms InquiryRoot.countermodel_excludes_derivation
+#print axioms InquiryRoot.addDerived
+#print axioms InquiryRoot.derived_lemma_extension_preserves_necessity
+#print axioms InquiryRoot.weakBasis
+#print axioms InquiryRoot.unrestrictedInquiry
+#print axioms InquiryRoot.extraClaim
+#print axioms InquiryRoot.extra_claim_derives_with_one_local_premise
+#print axioms InquiryRoot.extra_claim_not_necessary
+#print axioms InquiryRoot.extra_claim_not_closed_derivable
+#print axioms InquiryRoot.one_local_premise_becomes_an_implication

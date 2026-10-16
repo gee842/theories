@@ -1,0 +1,10 @@
+'Generative.Deeper.SameSteps' does not depend on any axioms
+'Generative.Deeper.same_steps_iff_endpoint_traces' does not depend on any axioms
+'Generative.Deeper.same_steps_feasible_iff' does not depend on any axioms
+'Generative.Deeper.feasible_of_step_total' does not depend on any axioms
+'Generative.Deeper.total_processes_same_feasible' does not depend on any axioms
+'Generative.Deeper.static_toggle_same_feasible' does not depend on any axioms
+'Generative.Deeper.static_toggle_singleton_endpoints_differ' does not depend on any axioms
+'Generative.Deeper.static_toggle_not_endpoint_trace_equivalent' does not depend on any axioms
+'Generative.Deeper.static_toggle_not_same_steps' does not depend on any axioms
+'Generative.Deeper.word_feasibility_does_not_determine_endpoints' does not depend on any axioms

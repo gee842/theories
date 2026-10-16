@@ -1,0 +1,26 @@
+import ExplanatoryUniqueness
+#print axioms Generative.ExplanatoryUniqueness.SameAnswers
+#print axioms Generative.ExplanatoryUniqueness.Presentation
+#print axioms Generative.ExplanatoryUniqueness.Exact
+#print axioms Generative.ExplanatoryUniqueness.Reduced
+#print axioms Generative.ExplanatoryUniqueness.Used
+#print axioms Generative.ExplanatoryUniqueness.Matches
+#print axioms Generative.ExplanatoryUniqueness.equal_codes_same_answers
+#print axioms Generative.ExplanatoryUniqueness.reduced_exact_kernel
+#print axioms Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel
+#print axioms Generative.ExplanatoryUniqueness.matches_total_on_used
+#print axioms Generative.ExplanatoryUniqueness.matches_functional
+#print axioms Generative.ExplanatoryUniqueness.matches_inverse_functional
+#print axioms Generative.ExplanatoryUniqueness.matches_iff_equal_answers
+#print axioms Generative.ExplanatoryUniqueness.unique_matching
+#print axioms Generative.ExplanatoryUniqueness.firstTarget
+#print axioms Generative.ExplanatoryUniqueness.shortPresentation
+#print axioms Generative.ExplanatoryUniqueness.fullPresentation
+#print axioms Generative.ExplanatoryUniqueness.short_exact
+#print axioms Generative.ExplanatoryUniqueness.full_exact
+#print axioms Generative.ExplanatoryUniqueness.short_reduced
+#print axioms Generative.ExplanatoryUniqueness.full_not_reduced
+#print axioms Generative.ExplanatoryUniqueness.bothTarget
+#print axioms Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both
+#print axioms Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability
+#print axioms Generative.ExplanatoryUniqueness.relative_unique_correspondence

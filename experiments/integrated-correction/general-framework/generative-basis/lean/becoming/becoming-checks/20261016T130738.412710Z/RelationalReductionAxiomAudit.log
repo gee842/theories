@@ -1,0 +1,25 @@
+'Generative.RelationalReduction.exchangeCoordinates' does not depend on any axioms
+'Generative.RelationalReduction.registerDensity' does not depend on any axioms
+'Generative.RelationalReduction.localStates' does not depend on any axioms
+'Generative.RelationalReduction.phase' does not depend on any axioms
+'Generative.RelationalReduction.joined' does not depend on any axioms
+'Generative.RelationalReduction.changed' does not depend on any axioms
+'Generative.RelationalReduction.formation_from_blank' does not depend on any axioms
+'Generative.RelationalReduction.actual_phase_preserves_both_local_states' does not depend on any axioms
+'Generative.RelationalReduction.basisMasses' does not depend on any axioms
+'Generative.RelationalReduction.actual_phase_preserves_basis_masses' does not depend on any axioms
+'Generative.RelationalReduction.same_interaction_distinguishes_relation' does not depend on any axioms
+'Generative.RelationalReduction.no_local_pair_update' does not depend on any axioms
+'Generative.RelationalReduction.coupledCross' does not depend on any axioms
+'Generative.RelationalReduction.Summary' does not depend on any axioms
+'Generative.RelationalReduction.summarize' does not depend on any axioms
+'Generative.RelationalReduction.decodeControl' does not depend on any axioms
+'Generative.RelationalReduction.summary_recovers_control' depends on axioms: [propext]
+'Generative.RelationalReduction.Event' does not depend on any axioms
+'Generative.RelationalReduction.next' does not depend on any axioms
+'Generative.RelationalReduction.reducedNext' does not depend on any axioms
+'Generative.RelationalReduction.summary_update_exact' depends on axioms: [propext]
+'Generative.RelationalReduction.every_finite_word_exact' depends on axioms: [propext]
+'Generative.RelationalReduction.every_finite_control_response_exact' depends on axioms: [propext]
+'Generative.RelationalReduction.retained_cross_distinguishes_change' does not depend on any axioms
+'Generative.RelationalReduction.summary_omits_other_relations' does not depend on any axioms

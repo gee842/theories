@@ -1,0 +1,22 @@
+'Generative.ExplanatoryJoiningContexts.Context' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.Realizes' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.Possible' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.Same' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.splice' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.realizes_splice' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.possible_splice' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.realizes_functional' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.continuation_after_realization' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningContexts.same_refl' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.same_symm' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.same_trans' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.possible_right' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.possible_left' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.same_preserves_joinability' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.same_continuation_results' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningContexts.same_join_results' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningContexts.Compatible' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.compatible_transports_realization' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.compatible_refines_same' does not depend on any axioms
+'Generative.ExplanatoryJoiningContexts.same_compatible' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningContexts.same_iff_compatible_relation' depends on axioms: [propext]

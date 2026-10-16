@@ -1,0 +1,11 @@
+import DynamicConsequences
+#print axioms Generative.Deeper.SameSteps
+#print axioms Generative.Deeper.same_steps_iff_endpoint_traces
+#print axioms Generative.Deeper.same_steps_feasible_iff
+#print axioms Generative.Deeper.feasible_of_step_total
+#print axioms Generative.Deeper.total_processes_same_feasible
+#print axioms Generative.Deeper.static_toggle_same_feasible
+#print axioms Generative.Deeper.static_toggle_singleton_endpoints_differ
+#print axioms Generative.Deeper.static_toggle_not_endpoint_trace_equivalent
+#print axioms Generative.Deeper.static_toggle_not_same_steps
+#print axioms Generative.Deeper.word_feasibility_does_not_determine_endpoints

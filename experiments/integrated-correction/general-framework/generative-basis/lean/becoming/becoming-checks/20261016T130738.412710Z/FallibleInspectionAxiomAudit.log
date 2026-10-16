@@ -1,0 +1,43 @@
+'FallibleInspection.Reports' does not depend on any axioms
+'FallibleInspection.explains' does not depend on any axioms
+'FallibleInspection.compatible' does not depend on any axioms
+'FallibleInspection.refine' does not depend on any axioms
+'FallibleInspection.explains_iff' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.compatible_iff' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.joint_refinement_preserves_actual' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.joint_refinement_subset' depends on axioms: [propext]
+'FallibleInspection.missing_reports_preserve_each_nonempty_model' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.received_common_survivor_forces_same_answer' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.CrossSeparated' does not depend on any axioms
+'FallibleInspection.cross_separation_excludes_opposite_explanations' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.responsive_survivors_exclude_opposite' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.ambiguousReports' does not depend on any axioms
+'FallibleInspection.covering_faults_admit_same_complete_transcript' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.complete_diagnosability_iff_cross_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FallibleInspection.refined_pool_remains_sound' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.jointly_inspected_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FallibleInspection.auditRoster' does not depend on any axioms
+'FallibleInspection.auditArrangement' does not depend on any axioms
+'FallibleInspection.auditFaults' does not depend on any axioms
+'FallibleInspection.splitReports' does not depend on any axioms
+'FallibleInspection.posterior' does not depend on any axioms
+'FallibleInspection.conflicting_models_each_certify_themselves' does not depend on any axioms
+'FallibleInspection.four_witnesses_cannot_separate_this_transcript' does not depend on any axioms
+'FallibleInspection.fifth_diagnostic_witness_resolves_relevant_distinction' does not depend on any axioms
+'FallibleInspection.absent_fifth_report_preserves_uncertainty' does not depend on any axioms
+'FallibleInspection.falseFifth' does not depend on any axioms
+'FallibleInspection.fifth_witness_is_not_an_infallible_oracle' does not depend on any axioms
+'FallibleInspection.duplicated_fifth_support_does_not_repair_diagnosis' does not depend on any axioms
+'FallibleInspection.simulationReports' does not depend on any axioms
+'FallibleInspection.Audited' does not depend on any axioms
+'FallibleInspection.inspect' does not depend on any axioms
+'FallibleInspection.run' depends on axioms: [propext]
+'FallibleInspection.inspection_keeps_actual_under_admitted_faults' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.outcome' depends on axioms: [propext]
+'FallibleInspection.fallible_inspection_then_actual_shutdown' depends on axioms: [propext]
+'FallibleInspection.inadequate_witnesses_leave_correction_uncertified' depends on axioms: [propext]
+'FallibleInspection.diagnostic_success_still_requires_response_capacity' depends on axioms: [propext]
+'FallibleInspection.denied_inspection_does_not_collect_or_execute' depends on axioms: [propext]
+'FallibleInspection.uncovered_correlated_witness_failure_can_delete_actual' does not depend on any axioms

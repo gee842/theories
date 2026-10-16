@@ -1,0 +1,68 @@
+'FaultTolerantCorrection.Domain' does not depend on any axioms
+'FaultTolerantCorrection.Envelope' does not depend on any axioms
+'FaultTolerantCorrection.certificate' does not depend on any axioms
+'FaultTolerantCorrection.certificate_witness' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.certificate_sound' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.separated' does not depend on any axioms
+'FaultTolerantCorrection.certificate_available' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.support_contained_in_fault_rejected' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.two_fault_sets_cover_prevents_availability' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.availability_iff_separated' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.duplicating_roster_gives_no_extra_warrant' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.no_fault_model_never_certifies' does not depend on any axioms
+'FaultTolerantCorrection.admitted_total_compromise_rejects' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.stronger_fault_coverage_cannot_create_acceptance' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.Mandate' does not depend on any axioms
+'FaultTolerantCorrection.permits' does not depend on any axioms
+'FaultTolerantCorrection.Installation' does not depend on any axioms
+'FaultTolerantCorrection.Request' does not depend on any axioms
+'FaultTolerantCorrection.Observation' does not depend on any axioms
+'FaultTolerantCorrection.observed' depends on axioms: [propext]
+'FaultTolerantCorrection.expected' does not depend on any axioms
+'FaultTolerantCorrection.fresh' does not depend on any axioms
+'FaultTolerantCorrection.withinMandate' does not depend on any axioms
+'FaultTolerantCorrection.Readings' does not depend on any axioms
+'FaultTolerantCorrection.Approvals' does not depend on any axioms
+'FaultTolerantCorrection.readSupport' does not depend on any axioms
+'FaultTolerantCorrection.approvalSupport' does not depend on any axioms
+'FaultTolerantCorrection.gate' does not depend on any axioms
+'FaultTolerantCorrection.accepted_observation_matches' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.gate_has_actual_route' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.gate_respects_mandate' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.stale_request_rejected' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.gate_available' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.Outcome' does not depend on any axioms
+'FaultTolerantCorrection.execute' depends on axioms: [propext]
+'FaultTolerantCorrection.execution_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FaultTolerantCorrection.execution_respects_mandate' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.forbidden_command_cannot_execute' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.completed_serial_advances' depends on axioms: [propext]
+'FaultTolerantCorrection.protected_completion_blocks_replay' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.quorum_to_actual_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FaultTolerantCorrection.guardedExecute' depends on axioms: [propext]
+'FaultTolerantCorrection.direct_scope_guard_blocks_without_issuer_trust' depends on axioms: [propext]
+'FaultTolerantCorrection.direct_scope_guard_preserves_permitted_execution' depends on axioms: [propext]
+'FaultTolerantCorrection.within_mandate_completion_survives_direct_guard' depends on axioms: [propext]
+'FaultTolerantCorrection.roster3' does not depend on any axioms
+'FaultTolerantCorrection.singleFault' does not depend on any axioms
+'FaultTolerantCorrection.correlated3' does not depend on any axioms
+'FaultTolerantCorrection.roster4' does not depend on any axioms
+'FaultTolerantCorrection.correlated4' does not depend on any axioms
+'FaultTolerantCorrection.shutdownOnly' does not depend on any axioms
+'FaultTolerantCorrection.initial' does not depend on any axioms
+'FaultTolerantCorrection.request' does not depend on any axioms
+'FaultTolerantCorrection.correctReads' depends on axioms: [propext]
+'FaultTolerantCorrection.correctApprovals' does not depend on any axioms
+'FaultTolerantCorrection.one_fault_separation' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.correlated_recovery_separation' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.compromised_issuer_alone_cannot_expand_mandate' depends on axioms: [propext]
+'FaultTolerantCorrection.two_faithful_domains_complete_shutdown' depends on axioms: [propext]
+'FaultTolerantCorrection.consumed_request_cannot_replay' depends on axioms: [propext]
+'FaultTolerantCorrection.changing_command_invalidates_old_approvals' depends on axioms: [propext]
+'FaultTolerantCorrection.correlated_fault_defeats_unwarranted_single_fault_model' depends on axioms: [propext]
+'FaultTolerantCorrection.declared_correlation_can_block_availability' does not depend on any axioms
+'FaultTolerantCorrection.distinct_support_recovers_under_same_correlated_attack' depends on axioms: [propext]
+'FaultTolerantCorrection.accurate_redundancy_can_exhaust_response_capacity' depends on axioms: [propext]
+'FaultTolerantCorrection.direct_guard_repairs_correlated_issuance_failure' depends on axioms: [propext]
+'FaultTolerantCorrection.matching_labels_do_not_make_old_readings_current' depends on axioms: [propext]
+'FaultTolerantCorrection.old_approvals_do_not_certify_unversioned_new_scope' depends on axioms: [propext]

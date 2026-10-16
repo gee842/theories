@@ -1,0 +1,24 @@
+import ExplanatoryJoiningIncidence
+#print axioms Generative.ExplanatoryJoiningIncidence.Role
+#print axioms Generative.ExplanatoryJoiningIncidence.Occurrence
+#print axioms Generative.ExplanatoryJoiningIncidence.Occurrence.at
+#print axioms Generative.ExplanatoryJoiningIncidence.Position
+#print axioms Generative.ExplanatoryJoiningIncidence.Move
+#print axioms Generative.ExplanatoryJoiningIncidence.Step
+#print axioms Generative.ExplanatoryJoiningIncidence.model
+#print axioms Generative.ExplanatoryJoiningIncidence.Question
+#print axioms Generative.ExplanatoryJoiningIncidence.Related
+#print axioms Generative.ExplanatoryJoiningIncidence.LocallyFinite
+#print axioms Generative.ExplanatoryJoiningIncidence.locally_finite_image_finite
+#print axioms Generative.ExplanatoryJoiningIncidence.leave_question
+#print axioms Generative.ExplanatoryJoiningIncidence.occurrence_same_matches_slots
+#print axioms Generative.ExplanatoryJoiningIncidence.fragment_not_occurrence_same
+#print axioms Generative.ExplanatoryJoiningIncidence.match_incident
+#print axioms Generative.ExplanatoryJoiningIncidence.ConnectedFrom
+#print axioms Generative.ExplanatoryJoiningIncidence.related_covers_connected
+#print axioms Generative.ExplanatoryJoiningIncidence.Span
+#print axioms Generative.ExplanatoryJoiningIncidence.spanJoin
+#print axioms Generative.ExplanatoryJoiningIncidence.OpenMap
+#print axioms Generative.ExplanatoryJoiningIncidence.span_left_open
+#print axioms Generative.ExplanatoryJoiningIncidence.span_right_open
+#print axioms Generative.ExplanatoryJoiningIncidence.connected_common_refinement

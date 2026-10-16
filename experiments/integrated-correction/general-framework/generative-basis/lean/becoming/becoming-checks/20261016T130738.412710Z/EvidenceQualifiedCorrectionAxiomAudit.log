@@ -1,0 +1,47 @@
+'EvidenceQualifiedCorrection.pooled' does not depend on any axioms
+'EvidenceQualifiedCorrection.retain' does not depend on any axioms
+'EvidenceQualifiedCorrection.retained_truth' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.retained_subset' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.model_faults_in_pool' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.pooled_subset' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.pooled_certificate_sound' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.refinement_preserves_certificate' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.refinement_preserves_separation' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.empty_family_rejects' does not depend on any axioms
+'EvidenceQualifiedCorrection.evidence_qualified_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvidenceQualifiedCorrection.Model' does not depend on any axioms
+'EvidenceQualifiedCorrection.describe' does not depend on any axioms
+'EvidenceQualifiedCorrection.hypotheses' does not depend on any axioms
+'EvidenceQualifiedCorrection.diagnostic' does not depend on any axioms
+'EvidenceQualifiedCorrection.poolReady' does not depend on any axioms
+'EvidenceQualifiedCorrection.every_candidate_ready_but_pool_not_ready' does not depend on any axioms
+'EvidenceQualifiedCorrection.actual_survivors_can_be_insufficient_before_diagnosis' does not depend on any axioms
+'EvidenceQualifiedCorrection.diagnosis_need_not_identify_the_model' does not depend on any axioms
+'EvidenceQualifiedCorrection.misleading_diagnosis_can_accept_only_compromised_support' does not depend on any axioms
+'EvidenceQualifiedCorrection.unobserved_structural_change_invalidates_learned_coverage' does not depend on any axioms
+'EvidenceQualifiedCorrection.Query' does not depend on any axioms
+'EvidenceQualifiedCorrection.queryCost' does not depend on any axioms
+'EvidenceQualifiedCorrection.queryLaw' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.Situation' does not depend on any axioms
+'EvidenceQualifiedCorrection.probe' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.currentRequest' does not depend on any axioms
+'EvidenceQualifiedCorrection.physicalReads' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.physicalApprovals' does not depend on any axioms
+'EvidenceQualifiedCorrection.respond' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.achieved' does not depend on any axioms
+'EvidenceQualifiedCorrection.interface' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.plan' does not depend on any axioms
+'EvidenceQualifiedCorrection.plans' does not depend on any axioms
+'EvidenceQualifiedCorrection.initialSituation' does not depend on any axioms
+'EvidenceQualifiedCorrection.possibleSituations' does not depend on any axioms
+'EvidenceQualifiedCorrection.final' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.inspected_actual_model_is_retained' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.selected_inquiry_actually_completes' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.pooled_unknowns_select_affordable_inspection' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.learned_common_envelope_needs_no_further_identification' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.unaffordable_or_unauthorized_inspection_leaves_no_listed_uniform_plan' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.sufficient_evidence_can_leave_too_little_to_act' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.acquired_evidence_then_real_shutdown' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.slower_equally_accurate_inspection_misses_deadline' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.lack_of_uniform_availability_does_not_forbid_actual_certificate' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.empty_survivors_do_not_authorize_correction' depends on axioms: [propext]

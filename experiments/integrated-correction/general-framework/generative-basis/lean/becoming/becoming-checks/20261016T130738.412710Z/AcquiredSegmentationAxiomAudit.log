@@ -1,0 +1,52 @@
+'Generative.AcquiredSegmentation.Sound' does not depend on any axioms
+'Generative.AcquiredSegmentation.State' does not depend on any axioms
+'Generative.AcquiredSegmentation.edges' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.edgeCount' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.departures' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.bond' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.chunks' does not depend on any axioms
+'Generative.AcquiredSegmentation.grouping_preserves_encountered_sequence' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.decodeChunk' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.decodeChunks' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.assembleMessage' does not depend on any axioms
+'Generative.AcquiredSegmentation.parse' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.receive' does not depend on any axioms
+'Generative.AcquiredSegmentation.expose' does not depend on any axioms
+'Generative.AcquiredSegmentation.act' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.broadenAfterFailure' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.receiving_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSegmentation.exposure_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSegmentation.insufficient_reception_keeps_actual_record' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.broadening_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSegmentation.word' does not depend on any axioms
+'Generative.AcquiredSegmentation.encode' does not depend on any axioms
+'Generative.AcquiredSegmentation.idealBond' does not depend on any axioms
+'Generative.AcquiredSegmentation.ideal_grouping_recovers_words' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.decoded_word_sequence' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSegmentation.context' does not depend on any axioms
+'Generative.AcquiredSegmentation.additional' does not depend on any axioms
+'Generative.AcquiredSegmentation.utterance' does not depend on any axioms
+'Generative.AcquiredSegmentation.intended' does not depend on any axioms
+'Generative.AcquiredSegmentation.ready' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.experienced' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.narrow' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.broadened' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.actual_exposure_forms_the_grouping_relation' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.learned_grouping_transfers_to_every_word_sequence' depends on axioms: [propext,
+ Quot.sound]
+'Generative.AcquiredSegmentation.acquired_segmentation_enters_message_assembly' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSegmentation.no_experience_leaves_the_message_unparsed' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.new_grouping_reaches_the_existing_formed_operation' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.response_retains_training_history_and_original_acquisition' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.exact_whole_history_account' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.grouped_message_can_lack_execution_support' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.missing_observation_slots_preserve_the_absence_of_an_edge' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.reordered' does not depend on any axioms
+'Generative.AcquiredSegmentation.equal_event_frequencies_do_not_identify_grouping' does not depend on any axioms
+'Generative.AcquiredSegmentation.encounter_relations_change_grouping_and_use' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.diagnostic_failure_changes_further_acquisition' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.recognized_message_does_not_trigger_broadening' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.insufficient_further_acquisition_keeps_a_prefix' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.partial_experience_can_parse_one_form_without_general_grouping' depends on axioms: [propext]
+'Generative.AcquiredSegmentation.learnerFavored' does not depend on any axioms
+'Generative.AcquiredSegmentation.recurrence_can_join_across_the_intended_units' depends on axioms: [propext]

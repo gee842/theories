@@ -1,0 +1,26 @@
+import RelationalReduction
+#print axioms Generative.RelationalReduction.exchangeCoordinates
+#print axioms Generative.RelationalReduction.registerDensity
+#print axioms Generative.RelationalReduction.localStates
+#print axioms Generative.RelationalReduction.phase
+#print axioms Generative.RelationalReduction.joined
+#print axioms Generative.RelationalReduction.changed
+#print axioms Generative.RelationalReduction.formation_from_blank
+#print axioms Generative.RelationalReduction.actual_phase_preserves_both_local_states
+#print axioms Generative.RelationalReduction.basisMasses
+#print axioms Generative.RelationalReduction.actual_phase_preserves_basis_masses
+#print axioms Generative.RelationalReduction.same_interaction_distinguishes_relation
+#print axioms Generative.RelationalReduction.no_local_pair_update
+#print axioms Generative.RelationalReduction.coupledCross
+#print axioms Generative.RelationalReduction.Summary
+#print axioms Generative.RelationalReduction.summarize
+#print axioms Generative.RelationalReduction.decodeControl
+#print axioms Generative.RelationalReduction.summary_recovers_control
+#print axioms Generative.RelationalReduction.Event
+#print axioms Generative.RelationalReduction.next
+#print axioms Generative.RelationalReduction.reducedNext
+#print axioms Generative.RelationalReduction.summary_update_exact
+#print axioms Generative.RelationalReduction.every_finite_word_exact
+#print axioms Generative.RelationalReduction.every_finite_control_response_exact
+#print axioms Generative.RelationalReduction.retained_cross_distinguishes_change
+#print axioms Generative.RelationalReduction.summary_omits_other_relations
