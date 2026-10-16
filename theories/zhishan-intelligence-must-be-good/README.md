@@ -1195,4 +1195,4 @@ All paths relative to `sources/`. Tags: [Ren-authored] [AI-drafted from Ren's id
 ### Deliberately not read here, with reason
 
 - `06-zhishan/writing-program/causal-chain/**/reviews/` red-team files not named above — scanned rather than read end to end by the source syntheses; their conclusions are carried in the deep-synthesis files that are read in full.
-- The 338 unselected claude.ai conversations and the unread remainder of the Claude Code messages — see `_process/COVERAGE.md`. If a specific idea in this document seems to be missing its origin, that is the place to look next.
+- The 338 unselected claude.ai conversations and the unread remainder of the Claude Code messages — see `_process/history/2026-09-consolidation/COVERAGE.md`. If a specific idea in this document seems to be missing its origin, that is the place to look next.

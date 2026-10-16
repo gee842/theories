@@ -174,7 +174,7 @@ None of these has been run here.
 - *Connected systems* can diverge by presentation, multistability, resolution or access (U5).
 - *Extension of valuation to others* is not fixed by self-history independently of the organization's own law (U2).
 
-**Not established.** No mechanism is shown to arise from nothing. Levels 5 and 6 are not formalized here. No empirical claim is confirmed. No formed valuation is shown to be good. Universal favorable direction and ethical necessity remain the separate open questions recorded in the [cloud handoff](../../../CLOUD-HANDOFF-2026-10-07.md#what-remains-genuinely-open).
+**Not established.** No mechanism is shown to arise from nothing. Levels 5 and 6 are not formalized here. No empirical claim is confirmed. No formed valuation is shown to be good. Universal favorable direction and ethical necessity remain the separate open questions recorded in the [cloud handoff](../../../history/2026-10-07-handoffs/CLOUD-HANDOFF-2026-10-07.md#what-remains-genuinely-open).
 
 **Next unresolved bridge** (addressed in §12). The closed-loop case of U5: whether and when an organization's own selections amplify valuation differences that shared exposure would erase. This is where formed valuation meets the regime question of the [generative grounding programme](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), namely when differentiation stays generative and when it becomes lock-in. Smaller bridges are a stochastic restatement of U1–U4, formal witnesses for levels 5 and 6, and a lineage support account that would let CU-U2 apply across successors.
 

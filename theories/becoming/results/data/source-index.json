@@ -2141,7 +2141,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md": {
       "title": "Continuation requires recurrent renewal under an independently supported exhaustion condition",
       "local_links": [
-        "_process/handoffs/2026-10-07-renewal-closure.md",
+        "_process/history/2026-10-07-handoffs/2026-10-07-renewal-closure.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean",
@@ -2772,7 +2772,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM-ACTUAL-RECOVERY.md": {
       "title": "实际恢复不能抹掉中断 / Actual recovery retains the interruption",
       "local_links": [
-        "_process/handoffs/2026-10-07-enacted-orientation.md",
+        "_process/history/2026-10-07-handoffs/2026-10-07-enacted-orientation.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM-PROTECTED-SCOPE.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/ActualRecovery.lean",
@@ -6139,7 +6139,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/PORT-RENEWAL-LAW-CLOSURE.md": {
       "title": "The port's exact finite replenishment and the renewal-law boundary",
       "local_links": [
-        "_process/handoffs/2026-10-07-formal-unification.md",
+        "_process/history/2026-10-07-handoffs/2026-10-07-formal-unification.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-RECOVERED-CONTACT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-ENTRY.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PORT-CONTINUATION.md",
@@ -6355,7 +6355,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-ENTRY-DEPENDENCY-MAP.md": {
       "title": "Dependency map for the derived process-law entry",
       "local_links": [
-        "_process/CLOUD-HANDOFF-2026-10-07.md",
+        "_process/history/2026-10-07-handoffs/CLOUD-HANDOFF-2026-10-07.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-FORMATION-LAW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM.md",
@@ -8079,7 +8079,7 @@
       "title": "How valuation develops: conditional universals, supplied premises and counterexamples",
       "local_links": [
         "RESEARCH.md",
-        "_process/CLOUD-HANDOFF-2026-10-07.md",
+        "_process/history/2026-10-07-handoffs/CLOUD-HANDOFF-2026-10-07.md",
         "_process/research/2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
@@ -8279,7 +8279,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PORT-CONTINUATION.md": {
       "title": "Whole-port support, finite continuation and the renewal boundary",
       "local_links": [
-        "_process/handoffs/2026-10-07-formal-unification.md",
+        "_process/history/2026-10-07-handoffs/2026-10-07-formal-unification.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-FORMATION-LAW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIFIED-ENTRY.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortRenewalBoundary.lean",

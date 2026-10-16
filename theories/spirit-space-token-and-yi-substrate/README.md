@@ -925,6 +925,6 @@ Ren's own long messages on the Bonfire project: the 2026-08-06 sealing handoff (
 
 **Adjacent, consulted for one definitional check** — `09-sts-bonfire-yi/bonfire-concepts/glossary.md`: "**Hold**: To possess a holding row. `caller-holds(kindRef)` = the caller has at least one active holding of this kind."
 
-**Process files** — `_process/BRIEF.md`, `_process/COVERAGE.md`, `_process/THEORY-TEMPLATE.md`, `sources/SOURCES.md`, and the voice notes `_process/reading-notes/out-hb-01.md`, `out-hb-02.md`, `out-hb-03.md`, `out-cb-01.md`, `out-cb-02.md`, `out-cb-04.md`.
+**Process files** — `_process/BRIEF.md`, `_process/history/2026-09-consolidation/COVERAGE.md`, `_process/history/2026-09-consolidation/THEORY-TEMPLATE.md`, `sources/SOURCES.md`, and the voice notes `_process/reading-notes/out-hb-01.md`, `out-hb-02.md`, `out-hb-03.md`, `out-cb-01.md`, `out-cb-02.md`, `out-cb-04.md`.
 
 *This document supersedes `synthesis-a-sts-papers-and-proposals.md` and `synthesis-b-yi-direction-frame-concepts.md` in the same folder; both remain for their per-file reading notes and their publication-readiness assessments.*

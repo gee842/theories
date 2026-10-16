@@ -1291,7 +1291,7 @@ Ren's own turns. Where the Claims section cites a bare date (`chats/2026-04-30`,
 | file | content |
 |---|---|
 | `_process/BRIEF.md` | Corpus brief: who Ren is, the recurring vocabulary, how to read authorship |
-| `_process/COVERAGE.md` | What was and was not read, and the known gaps |
+| `_process/history/2026-09-consolidation/COVERAGE.md` | What was and was not read, and the known gaps |
 | `_process/reading-notes/out-hb-02.md` | 2024-11 → 2026-05-01: the pre-history, and items 249 and 283–310 — the whole 2026-04 run from "a word for space and group" to the 間 naming decision |
 | `_process/reading-notes/out-hb-03.md` | 2026-05-01 → 05-05: **the five days in which this theory was born**, Ren's turns only, with the source-type marking (`[endorsement]`, quoted Claude text, imported other-model text, Ren's own attachments) that the Claims section relies on |
 | `_process/reading-notes/out-cb-04.md`, `out-cb-06.md` | 2026-08-27 → 2026-09-02: the discipline running live in Ren's engineering repositories — the bilingual kernel and pairing gate, terminology arbitration by family coherence, "a protocol needs a name for every real outcome, or it lies", "refusal is a value", the repository-level vocabulary law |

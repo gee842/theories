@@ -427,7 +427,7 @@ From the recording "Soi Si Lom 5 2" (`sources/18-friend-conversations/2026-10-04
 
 ## Genealogy
 
-Dates are the file dates recorded in `_process/timeline-raw.tsv` and the conversation timestamps in `sources/12-claude-ai-chats/`.
+Dates are the file dates recorded in `_process/history/2026-09-consolidation/timeline-raw.tsv` and the conversation timestamps in `sources/12-claude-ai-chats/`.
 
 **2021-05-21 — the frame at individual scale, in recorded speech.** `sources/00-early-2021-2022/麦.pages`, decoded 2026-09-04 and readable at `sources/00-early-2021-2022/recovered-text/2021-05-21_麦_dali-field-notes.txt`. **Not Ren's writing.** These are Dali field notes by a companion working on his machine — 「在任的电脑上记录田野笔记，不习惯的苹果系统」 (recording field notes on Ren's computer; not used to the Apple system) — and the two items below sit under the heading 「和任在古城聊天」 (chatting with Ren in the old town). They therefore record a conversation with Ren, taken down by someone else; which turns are his and which the note-taker's cannot be separated from the file, so they are evidence that the material was in circulation around him in 2021, not evidence of authorship. With that caveat they are the earliest statement in the corpus of what an NVF does, and they state it at the scale the 2025 files drop.
 

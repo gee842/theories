@@ -287,7 +287,7 @@ The reading draft this document was built from is `theories/memories-and-working
 
 **Cross-corpus:**
 - `_process/LOST-ARTIFACTS.md` — the 2026-03-27 artifact inventory and the recovery instructions.
-- `_process/COVERAGE.md` — what was read and what was not; note especially that the chat exports were read as Ren's turns only, and that the voice memos and Zoom recordings were never touched.
+- `_process/history/2026-09-consolidation/COVERAGE.md` — what was read and what was not; note especially that the chat exports were read as Ren's turns only, and that the voice memos and Zoom recordings were never touched.
 - `theories/alignment-selection-on-cognition/` — holds the internet lesson and the full treatment of the three 2026-05-28 reflexes.
 - `theories/keep-the-possibility-space-open/` — holds the thirteen formulations as theory rather than as method.
 - `theories/the-fork-and-cooperative-infrastructure/` — the destination for most of the recoverable items above.

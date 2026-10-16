@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "root": "_process/history",
+  "entries": [
+    {
+      "old_path": "BOOKS.md",
+      "new_path": "_process/history/2026-09-consolidation/BOOKS.md",
+      "sha256": "d8aa702f583e1b6287fb144665149da7cadc6760c6285d4fd30b8273ce09a756",
+      "blob": "a2950f972d91147759f3a855950fd033c4b7a0eb",
+      "batch": "H1",
+      "reason": "September book plan (09-04/09-25); publication line dropped by Ren 10-10",
+      "plan_entry": "BOOKS.md"
+    },
+    {
+      "old_path": "_process/COVERAGE.md",
+      "new_path": "_process/history/2026-09-consolidation/COVERAGE.md",
+      "sha256": "39cea01c38ebdf412c724ae5ed8dbd1460a9fa44b4093a398f292fff65070441",
+      "blob": "9c713756b8253cf6f505605eec08669d6c3d002d",
+      "batch": "H1",
+      "reason": "what the 09-03 reading passes did and did not read; evidence",
+      "plan_entry": "_process/COVERAGE.md"
+    },
+    {
+      "old_path": "_process/CRITIQUE-FINDINGS.md",
+      "new_path": "_process/history/2026-09-consolidation/CRITIQUE-FINDINGS.md",
+      "sha256": "2af8bde6f38d1d158c14d344ac9a0d85f7dedaa0f858f95513d4b017e9de9a82",
+      "blob": "787ff8bbc8c8ae09855cdd38355465b053a61202",
+      "batch": "H1",
+      "reason": "five-critic audit of the September organisation (09-04); evidence",
+      "plan_entry": "_process/CRITIQUE-FINDINGS.md"
+    },
+    {
+      "old_path": "_process/THEORY-DIGEST.md",
+      "new_path": "_process/history/2026-09-consolidation/THEORY-DIGEST.md",
+      "sha256": "4433c6b110812a7d6f312467a00bc38af82c0e0afac974027f27c4d07505ab9f",
+      "blob": "d1bc58950630301f697adbe97036862b5981e64b",
+      "batch": "H1",
+      "reason": "September digest of 15 theory READMEs (regenerated 09-04); slugs no longer exist",
+      "plan_entry": "_process/THEORY-DIGEST.md"
+    },
+    {
+      "old_path": "_process/THEORY-TEMPLATE.md",
+      "new_path": "_process/history/2026-09-consolidation/THEORY-TEMPLATE.md",
+      "sha256": "976e2202ce3c568fab670945e937fb095fc58a4afc5a92bacf6793823970df11",
+      "blob": "eb4bdd724f6b8597c0624af289fe27e842c71bcb",
+      "batch": "H1",
+      "reason": "template given to the 09-03 readers; evidence of the reading-pass method",
+      "plan_entry": "_process/THEORY-TEMPLATE.md"
+    },
+    {
+      "old_path": "TIMELINE.md",
+      "new_path": "_process/history/2026-09-consolidation/TIMELINE.md",
+      "sha256": "1ad7b77ee9794e1e2d1276b57763301664c699224dc971bfce1bdd5c61eec7db",
+      "blob": "b4162fe140de18747b7bfbe47986b1c065b11f4b",
+      "batch": "H1",
+      "reason": "September narrative timeline, stops 2026-10-04; superseded by the Becoming-era record",
+      "plan_entry": "TIMELINE.md"
+    },
+    {
+      "old_path": "_process/read-pass-1-plan.json",
+      "new_path": "_process/history/2026-09-consolidation/read-pass-1-plan.json",
+      "sha256": "b6e39630aae3648a46f9169f677e0e05ab6487a2afb5a75678a2ee0dce06f9be",
+      "blob": "8b7177c1c12a2a107c0cfc21e516532cccec4ed6",
+      "batch": "H1",
+      "reason": "batch plan of the 09-03 first reading pass; evidence",
+      "plan_entry": "_process/read-pass-1-plan.json"
+    },
+    {
+      "old_path": "_process/reading-notes/cb-01.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/cb-01.md",
+      "sha256": "6a7629679ac2285e2f29b2a30aa671e754ea836117ff1609b22aaad359da7471",
+      "blob": "064e67aec7459e63b3e9b24626ebc168d72a5577",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/cb-01.md"
+    },
+    {
+      "old_path": "_process/reading-notes/cb-02.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/cb-02.md",
+      "sha256": "a64b6187ff0aec287ebc9d19ed01d6c63866388c7a5ef13f921f410d2b2b754b",
+      "blob": "8bda3bdaa74f58c63925c1c3d73dc4e3bd50d459",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/cb-02.md"
+    },
+    {
+      "old_path": "_process/reading-notes/cb-03.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/cb-03.md",
+      "sha256": "12c910c7dba4c65e64e2533bdfb7970374274912105dde92c6dd88be6b972d31",
+      "blob": "f6114a3b427816e014ba29215cafece31806a132",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/cb-03.md"
+    },
+    {
+      "old_path": "_process/reading-notes/cb-04.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/cb-04.md",
+      "sha256": "e23140f81b1971a3e775ec9edd32012ea3890f2395f2ba5fd02ebdb319c7e78b",
+      "blob": "48be69be21436a1deb4488d06b31da7e5294a14a",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/cb-04.md"
+    },
+    {
+      "old_path": "_process/reading-notes/cb-05.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/cb-05.md",
+      "sha256": "50502671c9e5b4bbea9cb520bcf3c0838237831d2bb51b93fdcdfafaa34463f9",
+      "blob": "88e8926cce03b92086cb8d689fc517a48134a5ea",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/cb-05.md"
+    },
+    {
+      "old_path": "_process/reading-notes/cb-06.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/cb-06.md",
+      "sha256": "75834cef629a1edb717f4c465cfdd7476a0204ab83ea63abfbf903dccec85e4d",
+      "blob": "2e98754735b2b49ab68b2f193ac3799640c2fac0",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/cb-06.md"
+    },
+    {
+      "old_path": "_process/reading-notes/cb-07.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/cb-07.md",
+      "sha256": "27fdfacc0f5b16d363ba1b53f4e7a934150f25e358295dce2e70c6615322b20c",
+      "blob": "5805705a0c5433fdb0fc74004b092600784d4e12",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/cb-07.md"
+    },
+    {
+      "old_path": "_process/reading-notes/hb-01.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/hb-01.md",
+      "sha256": "2a0e5420409725a117f384a335011a93c2a1729d2ebcff59c8466e889f32f6e4",
+      "blob": "61e02c5add9efabf73ac35aa4bcf5255c83865b2",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/hb-01.md"
+    },
+    {
+      "old_path": "_process/reading-notes/hb-02.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/hb-02.md",
+      "sha256": "449673e89c70bee558f0dab05ed4fd948879b6bc969f99924750136f93e5a93c",
+      "blob": "9aa47069f8e28bbcfce8296693f3e0d1fb27e35c",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/hb-02.md"
+    },
+    {
+      "old_path": "_process/reading-notes/hb-03.md",
+      "new_path": "_process/history/2026-09-consolidation/reading-notes-inputs/hb-03.md",
+      "sha256": "e61df536e6a8c006c54c679418d6af529607d5dc0cbbafc7d75252554a24e9a6",
+      "blob": "b0e6e3f4ed3289ea2a08e90d4212706984e19d8e",
+      "batch": "H1",
+      "reason": "derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay",
+      "plan_entry": "_process/reading-notes/hb-03.md"
+    },
+    {
+      "old_path": "_process/timeline-raw.tsv",
+      "new_path": "_process/history/2026-09-consolidation/timeline-raw.tsv",
+      "sha256": "b5ed3faacca0342acfd89cf3f6bfad23940e2afaec4d9080f91b362a88fead19",
+      "blob": "a6713809be1bd58dc77e51d128826356ba09ed83",
+      "batch": "H1",
+      "reason": "dates of 1,640 source files as of 09-03; snapshot",
+      "plan_entry": "_process/timeline-raw.tsv"
+    },
+    {
+      "old_path": "_process/handoffs/2026-10-07-alignment-claims-and-inquiry.md",
+      "new_path": "_process/history/2026-10-07-handoffs/2026-10-07-alignment-claims-and-inquiry.md",
+      "sha256": "eadc1451b5c862f19a8c7355bf4ee87e6bc201689e8136949b6b053b57d03b25",
+      "blob": "c0caf1e87092ec7f491605686f3b28ab57baf460",
+      "batch": "H1",
+      "reason": "dated 10-07 session handoff; merges executed; 8 named branches gone",
+      "plan_entry": "_process/handoffs/2026-10-07-alignment-claims-and-inquiry.md"
+    },
+    {
+      "old_path": "_process/handoffs/2026-10-07-enacted-orientation.md",
+      "new_path": "_process/history/2026-10-07-handoffs/2026-10-07-enacted-orientation.md",
+      "sha256": "ebb50c0788d6c436747e157a7efba4030fefd4f96e08efb4f8e33a2367b18cc7",
+      "blob": "8ef78a1a96bf15c1e15530c1ab00cdb861b0b296",
+      "batch": "H1",
+      "reason": "dated 10-07 session handoff; merges executed; 8 named branches gone",
+      "plan_entry": "_process/handoffs/2026-10-07-enacted-orientation.md"
+    },
+    {
+      "old_path": "_process/handoffs/2026-10-07-ethical-naturalism.md",
+      "new_path": "_process/history/2026-10-07-handoffs/2026-10-07-ethical-naturalism.md",
+      "sha256": "257ca0d887cd0f2f93641b1e5bbb2ba7656b646cc2877ae0a2a14f91fe67c0a4",
+      "blob": "08b31b0d894b08faecbcc5f24c76a6e3a9f5815b",
+      "batch": "H1",
+      "reason": "dated 10-07 session handoff; merges executed; 8 named branches gone",
+      "plan_entry": "_process/handoffs/2026-10-07-ethical-naturalism.md"
+    },
+    {
+      "old_path": "_process/handoffs/2026-10-07-formal-unification.md",
+      "new_path": "_process/history/2026-10-07-handoffs/2026-10-07-formal-unification.md",
+      "sha256": "4789f220e99e73adaddff2e1d30556706c46a98d793266ad3456f612e7992dd2",
+      "blob": "c576389c6d50020e817d32c96cb65845592d53a5",
+      "batch": "H1",
+      "reason": "dated 10-07 session handoff; merges executed; 8 named branches gone",
+      "plan_entry": "_process/handoffs/2026-10-07-formal-unification.md"
+    },
+    {
+      "old_path": "_process/handoffs/2026-10-07-process-law-build-closure.py",
+      "new_path": "_process/history/2026-10-07-handoffs/2026-10-07-process-law-build-closure.py",
+      "sha256": "2effa455ba31da034688189309d567b68ba8d150c7ce22953fc6b7fe1b892e5e",
+      "blob": "48d74053fd8d08c66d390c347d8961f25573d5a9",
+      "batch": "H1",
+      "reason": "dated 10-07 session handoff; merges executed; 8 named branches gone",
+      "plan_entry": "_process/handoffs/2026-10-07-process-law-build-closure.py"
+    },
+    {
+      "old_path": "_process/handoffs/2026-10-07-process-law-supplied-inputs.md",
+      "new_path": "_process/history/2026-10-07-handoffs/2026-10-07-process-law-supplied-inputs.md",
+      "sha256": "cef46e2d1e1e79fe756a918a5a3ac9c39945d7bff4df568ab7e2e4a4013061ee",
+      "blob": "eb71672023916d2b5ada74e29418c1fb4f0ea8ed",
+      "batch": "H1",
+      "reason": "dated 10-07 session handoff; merges executed; 8 named branches gone",
+      "plan_entry": "_process/handoffs/2026-10-07-process-law-supplied-inputs.md"
+    },
+    {
+      "old_path": "_process/handoffs/2026-10-07-relational-dynamics-and-no-axioms.md",
+      "new_path": "_process/history/2026-10-07-handoffs/2026-10-07-relational-dynamics-and-no-axioms.md",
+      "sha256": "3daa24cb9e44956d30674baeccd29b5b0d3c2ef648bb653364ab7a9209d5bd09",
+      "blob": "c1521c67c64a5af78b062963e69c9d0226ce88e4",
+      "batch": "H1",
+      "reason": "dated 10-07 session handoff; merges executed; 8 named branches gone",
+      "plan_entry": "_process/handoffs/2026-10-07-relational-dynamics-and-no-axioms.md"
+    },
+    {
+      "old_path": "_process/handoffs/2026-10-07-renewal-closure.md",
+      "new_path": "_process/history/2026-10-07-handoffs/2026-10-07-renewal-closure.md",
+      "sha256": "257efa79fc79f69153373809490fd62bea5b05468f60f05797cf7a580f25b78e",
+      "blob": "f67110f788150a4f4809cde85f7910c16e6a3861",
+      "batch": "H1",
+      "reason": "dated 10-07 session handoff; merges executed; 8 named branches gone",
+      "plan_entry": "_process/handoffs/2026-10-07-renewal-closure.md"
+    },
+    {
+      "old_path": "_process/handoffs/2026-10-07-valuation-development.md",
+      "new_path": "_process/history/2026-10-07-handoffs/2026-10-07-valuation-development.md",
+      "sha256": "81d5eb936547c8304856f6d7bdc35fae339f4afa50be8d8fe637c0921e89c497",
+      "blob": "19dc2e8e2f9434a844fe1238cd4e11bab8f726c9",
+      "batch": "H1",
+      "reason": "dated 10-07 session handoff; merges executed; 8 named branches gone",
+      "plan_entry": "_process/handoffs/2026-10-07-valuation-development.md"
+    },
+    {
+      "old_path": "_process/CLOUD-HANDOFF-2026-10-07.md",
+      "new_path": "_process/history/2026-10-07-handoffs/CLOUD-HANDOFF-2026-10-07.md",
+      "sha256": "c949c64de8e7f150641ac3d0eb2837c60f0f490e2c60a1479b34ef714ef5a277",
+      "blob": "732173b7521ddfacdcd2b08c31d007f1efbbfc94",
+      "batch": "H1",
+      "reason": "dated 10-07 cloud handoff; merges executed (1fe1c2d1a, f0fc8818f); frontier superseded by the 10-08 Becoming priority",
+      "plan_entry": "_process/CLOUD-HANDOFF-2026-10-07.md"
+    }
+  ]
+}
