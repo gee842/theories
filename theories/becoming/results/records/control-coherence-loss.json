@@ -165,7 +165,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "role": "proof",
-      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "sha256": "005587168ffe88986b75e6c19aebbea46218e3be14b9dbc3b2ca4ae3eee5ce2f",
       "declarations": [
         "Becoming.Courses.runs_no_restore",
         "Becoming.Courses.runs_decoder_pair_iff",
@@ -176,6 +176,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
       "role": "receipt",
       "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
     }
   ],
@@ -203,7 +209,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -281,6 +287,10 @@
     {
       "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：约化所保留的运行是经约化而读之律的运行（reducedRun）。约化运行在两个运行不同的日期相同时，约化运行的任何映射都不能在每个日期还原两者（runs_no_restore）；在约化运行相同的日期，对一个观察量在两者上都对的解码存在，恰当观察量在那里相同（runs_decoder_pair_iff）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
       "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: what a reduction keeps of a run is a run of the law read through it (reducedRun). Where the reduced runs agree at a date at which the runs differ, no map of the reduced runs restores both runs at every date (runs_no_restore); at a date where the reduced runs agree, a decoder right for an observable at both runs exists exactly when the observable agrees on them there (runs_decoder_pair_iff). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
     }
   ]
 }

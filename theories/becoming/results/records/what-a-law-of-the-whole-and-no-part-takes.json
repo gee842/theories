@@ -272,7 +272,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean",
       "role": "proof",
-      "sha256": "a7e2e54cece394c4cf7f9ea85f89aff7da065fb2b6a442b6a0255d98db9527a8",
+      "sha256": "2eddbe6eeae6fe21774d29e8acabb73c4d5eac8664d0b79eebb3303e24c7eedc",
       "declarations": [
         "Becoming.Tail.nonzero",
         "Becoming.Tail.eq_zero_of_nonzero_false",
@@ -332,7 +332,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
       "role": "proof",
-      "sha256": "393d928e1759881570252f902f76e45aca273cb84233afeeac03dc03c5dfbee6",
+      "sha256": "d2b8251466f983eee576c5f3e4e64136335e91d9cfdda56b71948bf07382c7e8",
       "declarations": [
         "Becoming.VanishFrom",
         "Becoming.VanishFrom.of_agree",
@@ -356,7 +356,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
+      "sha256": "df765a9bc5e9d68f59f50d2c3dec144e449b0357927ce59a2a9224ac6ca31316",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.ExchangeLaw.GivesAlike",
@@ -369,7 +369,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "c68bb811abba13aed0bc8739b5fc2a3f670a9726d64908eaa055bf2a1444480f",
+      "sha256": "accd86eb3c7ce0e8a24617843fbdf31a021941a82e29ed67bb03cd292a60d5a2",
       "declarations": [
         "Becoming.LPO"
       ]
@@ -377,7 +377,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "39b89d106a813b1c700d979f56aea2a0465fca3200b1c32e8e37bed437ff9064",
+      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
       "declarations": [
         "Becoming.Web.RegistersAlikeUpTo"
       ]
@@ -415,40 +415,46 @@
       "role": "receipt",
       "sha256": "94a2d42ff6c894a6dd0537d9c16cf1ef2d9fc926d1b06159c9124423ae8cd90f",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T224751.654308Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Tail",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T224751.654308Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Sensitivity",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T224751.654308Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T224751.654308Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Change",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T224751.654308Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -469,6 +475,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：读法“同一个整体……只需要弱的规则”把 neverIndicator 与 vanishIndicator 当作同一个整体；两者只在经典意义下互补，在核心中是两个律（审查第 28 项，O10）；改为“这一类整体”与“一个相关的整体”。does_not_show 1 原把“弱有限全知原则是否推出有限全知原则”留作开放：作为命题这已知不成立（Akama–Berardi–Hayashi–Kohlenbach 2004，引文依审查），开放的只是规则形式（第 29 项，U2、K3）；correspondence 记 Bishop 1967 与 Bridges–Richman 1987。读法待 Ren。断言收窄，定理不变。",
       "en": "16 October 2026, eighteenth review (R18): the reading “the same whole … takes only the weak rule” treated neverIndicator and vanishIndicator as one whole; they are complements only classically and are two laws in the core (review item 28, O10); it now reads “a whole of this kind” and “a related whole”. does_not_show 1 left open whether WLPO gives LPO: as propositions it is known not to (Akama–Berardi–Hayashi–Kohlenbach 2004, the citation as the review gives it), and only the rule form is open (item 29, U2 and K3); the correspondence names Bishop 1967 and Bridges–Richman 1987. The readings stay pending Ren. Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Tail.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Sensitivity.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Tail.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Sensitivity.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": []

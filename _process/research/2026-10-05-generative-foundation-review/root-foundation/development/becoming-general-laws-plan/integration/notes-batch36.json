@@ -1,0 +1,183 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {
+   "zh": "P129：LLPO 的四项只在证明中使用的已定性归类（436 行陈述层）",
+   "en": "P129: LLPO's four proof-only uses of decidedness classified (436 statement-level rows)"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean": {
+   "zh": "P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变",
+   "en": "P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CrossSituational.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean": {
+   "zh": "P129：新增连接定理 Sequences.recurs_iff；已有陈述不变",
+   "en": "P129: linking theorem Sequences.recurs_iff added; existing statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean": {
+   "zh": "P129：新增 Adheres.closed、refutable_adheres_iff、refutable_adheres_of_em；说明改正（不可否证，从不发生不可证实），署名 Alpern–Schneider、Kelly；已有陈述不变",
+   "en": "P129: Adheres.closed, refutable_adheres_iff, refutable_adheres_of_em added; docstrings corrected (not refutable; never occurring not verifiable), Alpern–Schneider and Kelly credited; existing statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean": {
+   "zh": "P129：新增 LLPO（标准形式）、LLPOForDecided 与 EitherThroughout ⇔ LLPOForDecided；同名异义与弱 König ⇔ LLPO 的说明；已有陈述不变",
+   "en": "P129: LLPO (standard form), LLPOForDecided and EitherThroughout ⇔ LLPOForDecided added; homonym and weak König ⇔ LLPO notes; existing statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean": {
+   "zh": "P129：after 改为 Run.onward 的缩写（after_eq_onward，rfl），名称与类型不变；署名 Gold、Moore",
+   "en": "P129: after now abbreviates Run.onward (after_eq_onward, rfl), name and type unchanged; Gold and Moore credited"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean": {
+   "zh": "P129：新增 alike_iff_agreeOn（Iff.rfl）与同名异义说明；已有陈述不变",
+   "en": "P129: alike_iff_agreeOn (Iff.rfl) and a homonym note added; existing statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Routes.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean": {
+   "zh": "P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变",
+   "en": "P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged"
+  }
+ },
+ "history": {
+  "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：",
+  "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:"
+ }
+}

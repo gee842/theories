@@ -548,7 +548,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
       "role": "proof",
-      "sha256": "f10098e0bc3ffd3a999bb94064c5271098d77348a56b11ce14cd50739564e606",
+      "sha256": "40f74076d175e15f4cb887a168e5c71392b6db6b887966dfa770adb4048c2d9f",
       "declarations": [
         "Becoming.Ranking.frame",
         "Becoming.Ranking.ExtendsUnder",
@@ -667,7 +667,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "93b0df83b46dc4759219409b5ddfcd7ca3c98e29f2c8b3d64d17ecc61f0794a0",
+      "sha256": "b3620899c90d1fe7ebb088b8e20b8491fa7fbf63e5d9a198761bf165476f7a46",
       "declarations": [
         "Becoming.Unrestricted",
         "Becoming.Web.Retains",
@@ -738,12 +738,18 @@
       "role": "receipt",
       "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Ranking",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -764,7 +770,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1173,6 +1179,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Ranking.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Metaethics.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Relevance.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Significance.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Admission.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Ranking.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Relevance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Significance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Admission.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Ranking.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Significance.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Ranking.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Significance.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": [

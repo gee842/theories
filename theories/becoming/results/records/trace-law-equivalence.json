@@ -112,7 +112,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "f0488ab0cba15a0caf609d0052718e9b1f5e88828c3ad9fcd52a6910e77f03e3",
+      "sha256": "8e21aef16d807547998fb722e48baa4c50978998c093cabdcffb090a5722b8b1",
       "declarations": [
         "Becoming.same_steps_iff_traces"
       ]
@@ -136,6 +136,12 @@
       "role": "receipt",
       "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -148,7 +154,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -201,6 +207,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Unfolding.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ]
 }

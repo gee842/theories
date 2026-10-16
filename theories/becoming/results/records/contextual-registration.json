@@ -108,7 +108,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
       "role": "proof",
-      "sha256": "fa48d5a6cc480b7c044b15776756fc30354ab6a776cffaad9d6320eea348f6b8",
+      "sha256": "28d65c468558ff5e790dde6320a6d10919ec37032aae44f7647837759d764342",
       "declarations": [
         "Becoming.Contextual",
         "Becoming.Local",
@@ -175,7 +175,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
       "role": "proof",
-      "sha256": "5bfd752991b30a9ae125eef842d94c5dac683eaff6a3891d6b47504f3adb3e74",
+      "sha256": "a758d973628daaed646be595b4de92ba1ea32993b959f75ebd9a055fbf5bbc78",
       "declarations": [
         "Becoming.Square.q₀",
         "Becoming.Square.q₁",
@@ -297,19 +297,25 @@
       "role": "receipt",
       "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Context",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Quantum",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -462,6 +468,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Context.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Quantum.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Context.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Quantum.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ]
 }

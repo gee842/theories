@@ -805,7 +805,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "f0488ab0cba15a0caf609d0052718e9b1f5e88828c3ad9fcd52a6910e77f03e3",
+      "sha256": "8e21aef16d807547998fb722e48baa4c50978998c093cabdcffb090a5722b8b1",
       "declarations": [
         "Becoming.withMove",
         "Becoming.Run.toWithMove",
@@ -899,7 +899,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
       "role": "proof",
-      "sha256": "6024fd33a5e0d4a428d8c746d76ee9b22b90363547dbcf4e9e905524bf41a9c1",
+      "sha256": "1508a83f701c67c38da5a12e34f5a03d63f94cc2c54ccac459a7ee35adcb2dd2",
       "declarations": [
         "Becoming.ReferencePlan.complete_history",
         "Becoming.ReferencePlan.first_installed_choice",
@@ -1193,7 +1193,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
+      "sha256": "df765a9bc5e9d68f59f50d2c3dec144e449b0357927ce59a2a9224ac6ca31316",
       "declarations": [
         "Becoming.counterfactual_is_course",
         "Becoming.comparison_with_act",
@@ -1236,6 +1236,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
       "role": "receipt",
       "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
     }
   ],
@@ -1284,7 +1290,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1333,7 +1339,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ReferencePlan",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1445,7 +1451,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1599,6 +1605,10 @@
     {
       "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)）：此前说“第二部分”断言公理或 G0 为第二部分定理之处，改为“以那一条公理为条件”，指向章节 §6.15；理论不断言这一条件。断言、证明与证据不变。",
       "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；ReferencePlan.lean（P129：新增 alike_iff_agreeOn（Iff.rfl）与同名异义说明；已有陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); ReferencePlan.lean (P129: alike_iff_agreeOn (Iff.rfl) and a homonym note added; existing statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": [

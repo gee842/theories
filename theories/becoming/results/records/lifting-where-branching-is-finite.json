@@ -94,6 +94,20 @@
         "Becoming.FiniteBranchingCorrespondence.finite_initial_lifting_by_core",
         "Becoming.FiniteBranchingCorrespondence.labelled_lifting_by_core"
       ]
+    },
+    {
+      "zh": "EitherThroughout 对已定族恰是较弱的有限全知原则（LLPO，标准形式在 Becoming.Likeness）：对每个已定且至多一处成立的族，偶数位处处不成立或奇数位处处不成立；它给出布尔形式的 LLPO，有限全知原则亦给出 LLPO。由布尔形式回到族的形式需要以数据给出的判定。",
+      "en": "EitherThroughout is exactly the lesser limited principle of omniscience for decided families (LLPO, in its standard form in Becoming.Likeness): for every decided family holding at most once, it fails at every even place or at every odd place; it gives LLPO in its Boolean form, and LPO gives LLPO. Returning from the Boolean form to the family form needs the decisions as data.",
+      "declarations": [
+        "Becoming.LLPO",
+        "Becoming.LLPOForDecided",
+        "Becoming.eitherThroughout_iff_llpoForDecided",
+        "Becoming.eitherNever_iff_llpoForDecided",
+        "Becoming.LLPO.of_eitherThroughout",
+        "Becoming.LLPO.of_forDecided",
+        "Becoming.LLPO.of_lpo",
+        "Becoming.LLPO.decidable"
+      ]
     }
   ],
   "hypotheses": [
@@ -206,7 +220,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
       "role": "proof",
-      "sha256": "60947288306d2791eb7ebf0cb593bd77eab14209ee0ae652b641f49fff9ee919",
+      "sha256": "1026575f171102ac8245e914afa6d312d8a911654c2d1be631577d85bd0245e0",
       "declarations": [
         "Becoming.Lasting.Continues",
         "Becoming.Lasting.Unbounded",
@@ -258,8 +272,18 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "role": "integration",
-      "sha256": "ee06233145943c60c5f9122c073d35f5ceefb8d5bd450e3ff7af0ddd9e2f96d8"
+      "role": "proof",
+      "sha256": "8071d6d635db25b99219a1ba37e1ceb04d74cca192ebe7cb77010ca4aab6bc3e",
+      "declarations": [
+        "Becoming.LLPO",
+        "Becoming.LLPOForDecided",
+        "Becoming.eitherThroughout_iff_llpoForDecided",
+        "Becoming.eitherNever_iff_llpoForDecided",
+        "Becoming.LLPO.of_eitherThroughout",
+        "Becoming.LLPO.of_forDecided",
+        "Becoming.LLPO.of_lpo",
+        "Becoming.LLPO.decidable"
+      ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean",
@@ -314,12 +338,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
       "role": "provenance",
       "sha256": "cf83ac3219b39f47641327d95eb072286d6bd0b21452ab9351642abd895879bc"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T190408.610189Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Lasting",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -335,6 +365,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/FiniteBranching.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/finite-branching-correspondence-checks/20261015T190529.548268Z/verification.json",
       "sha256_pointer": "/source_sha256/FiniteBranching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -415,6 +452,14 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：读法加 AI 的注：EitherThroughout 只给一个有每个长度进程的后继，提升为运行还需要选取（does_not_show 2 已有；审查第 40 项的读法部分）。correspondence 记 König 1927 与弱 König 引理 ⇔ LLPO（Ishihara 1990；Bridges–Richman 1987）（第 39 项，K8）；EitherThroughout 与 LLPO 的等价待 P129 证明后再记（第 40、41 项）。断言收窄，定理不变。",
       "en": "16 October 2026, eighteenth review (R18): the reading gains the AI's note that EitherThroughout gives only one successor with courses of every length and lifting to a run takes a selection as well (already in does_not_show 2; the reading part of review item 40). The correspondence names König 1927 and weak König's lemma ⇔ LLPO (Ishihara 1990; Bridges–Richman 1987) (item 39, K8); naming EitherThroughout as LLPO waits for P129's proof (items 40, 41). Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，发布准备度复核（P129，第十八次审查第 40、41 项）：EitherThroughout 已证恰是已定族形式的 LLPO（eitherThroughout_iff_llpoForDecided），并给出布尔形式的 LLPO；新增一条定律记之。弱 König 引理 ⇔ LLPO 的出处仍作为文献引用，不在核心中证明。断言不变。",
+      "en": "16 October 2026, release-readiness review (P129, eighteenth review items 40 and 41): EitherThroughout is proved exactly LLPO in the decided-family form (eitherThroughout_iff_llpoForDecided) and gives LLPO in its Boolean form; a new law records it. Weak König's lemma ⇔ LLPO stays a literature citation, not proved in the core. Claim unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Lasting.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Likeness.lean（P129：新增 LLPO（标准形式）、LLPOForDecided 与 EitherThroughout ⇔ LLPOForDecided；同名异义与弱 König ⇔ LLPO 的说明；已有陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Lasting.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Likeness.lean (P129: LLPO (standard form), LLPOForDecided and EitherThroughout ⇔ LLPOForDecided added; homonym and weak König ⇔ LLPO notes; existing statements unchanged)."
     }
   ],
   "text_versions": []

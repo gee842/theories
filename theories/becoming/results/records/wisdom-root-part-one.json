@@ -438,7 +438,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "39b89d106a813b1c700d979f56aea2a0465fca3200b1c32e8e37bed437ff9064",
+      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
       "declarations": [
         "Becoming.Web.Refutes.not_of_alike",
         "Becoming.Web.tail_unrefuted",
@@ -469,7 +469,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "d27126659f1dd2f94dac3e05e5e513ade0c0ebc8dbf857141045981c7d7ab8fb",
+      "sha256": "c3ff9798d8630518d765f147433373695bd5ff3ea9625be728e1baa764af20d5",
       "declarations": [
         "Becoming.Web.selects_alike_iff",
         "Becoming.Flow.unselected_beyond_registration",
@@ -508,7 +508,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "72a74b7a05347fde0d1d74c9781fefb1429e583fc3ab0d6f17f6b1ddeef78683",
+      "sha256": "53f660c677c3b85f9f202df4adf277d1d95ebe01099f7c25be1689f402c54dfd",
       "declarations": [
         "Becoming.Learning.no_record_fixes_next",
         "Becoming.Learning.every_determines_nothing",
@@ -564,7 +564,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "507f117d9e2a6f767d9130c8a74ba94e4ae4e930f224bb22d395941055536f9e",
+      "sha256": "1b750e84a20e7185a30a1bae29a3d9f3584880df6e92b80d555bcebacb21ef9d",
       "declarations": [
         "Becoming.Identification.bounded_induction",
         "Becoming.Identification.withBound_exact",
@@ -593,12 +593,18 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
       "role": "receipt",
       "sha256": "9627d189294357c1bc703df77f46e2e729b8cf4bc5e89c661d341ffbfb5b4fd7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -619,7 +625,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -647,7 +653,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -661,7 +667,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -903,6 +909,10 @@
     {
       "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)）：此前说“第二部分”断言公理或 G0 为第二部分定理之处，改为“以那一条公理为条件”，指向章节 §6.15；理论不断言这一条件。断言、证明与证据不变。",
       "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Selection.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Learning.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Identification.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Selection.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Learning.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Identification.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": [

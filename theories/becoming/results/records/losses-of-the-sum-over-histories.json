@@ -175,7 +175,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "role": "proof",
-      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "sha256": "005587168ffe88986b75e6c19aebbea46218e3be14b9dbc3b2ca4ae3eee5ce2f",
       "declarations": [
         "Becoming.Courses.loop_courses_double",
         "Becoming.Courses.loop",
@@ -186,6 +186,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
       "role": "receipt",
       "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
     }
   ],
@@ -199,7 +205,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -333,6 +339,10 @@
     {
       "zh": "2026-10-16 P121 与 P122（携带差别的阶作为历史之和、回路怎样在展开中形成，研究 §155、§156）：related 加 orders-as-a-sum-over-histories：两个积分接合。陈述与证明不变。",
       "en": "16 October 2026, P121 and P122 (the orders of a carried difference as a sum over histories, how loops form within the unfolding, study sections 155 and 156): related adds orders-as-a-sum-over-histories: the two integrations joined. Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
     }
   ]
 }

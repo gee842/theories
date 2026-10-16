@@ -134,6 +134,10 @@
     {
       "zh": "2026-10-16，P114 散立的模块在共同基底上陈述（研究 §138；Ren 2026-10-15：“so for our theories, they are proved in a dag order and can be all connected right?”）：主律在共同基底上陈述，不加前提：部分之律的运行是其过程（Assurance.ofPartial）的轨迹。从有效构型出发，带保留出口之律的每个被容许计划，作为该过程的计划完成于有效构型（runs_valid_completes）；长于余量的计划完成于出口处的有效构型（exits_completes）。Becoming.Courses 由核心运行编译与审计（回执 20261015T172257.067968Z），公理报告为空。论断、假设、Ren 的话、依赖与既有证明不变；只加引用、绑定、别名与本条。",
       "en": "16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: a partial law's run is a trace of its process (Assurance.ofPartial). From a valid configuration, every admitted plan of a law with a reserved exit completes, as a plan of that process, into a valid configuration (runs_valid_completes), and every plan longer than the margin into a valid configuration at the exit (exits_completes). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
     }
   ],
   "related": [
@@ -285,7 +289,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "role": "proof",
-      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "sha256": "005587168ffe88986b75e6c19aebbea46218e3be14b9dbc3b2ca4ae3eee5ce2f",
       "declarations": [
         "Becoming.Courses.runs_valid_completes",
         "Becoming.Courses.exits_completes"
@@ -295,6 +299,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
       "role": "receipt",
       "sha256": "afe03d9e9c1b75fb054ac5d53cf575e2217e4af2ebc27ae4f901b612d758b71e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
     }
   ],
@@ -336,7 +346,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"

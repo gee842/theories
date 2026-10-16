@@ -205,7 +205,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
       "role": "counterexample",
-      "sha256": "745e6da61d8b6656015a46a2f6610bea48502a5baae1055305a1e725f0bb3adf",
+      "sha256": "fec78adc7074d6776394dc35734d5fc2ac186ee96f70d0e0ac2100642f67b1b7",
       "declarations": []
     },
     {
@@ -350,6 +350,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Decidedness.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Decidedness.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Return.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Return.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": [

@@ -267,7 +267,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
       "role": "proof",
-      "sha256": "7f13731b5cbf58f0d4e49a48dee6273fb6311f895d08ddd105ee573abc563ec7",
+      "sha256": "f2eabd60b234237608e1d6d48db9d8a2911c98929753fe270e7dd1130c7b4e73",
       "declarations": [
         "Becoming.Situations.upto",
         "Becoming.Situations.sum_upto",
@@ -328,7 +328,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "64c945b572fe4a7c3a0dec98a3ea9869c193bc09d963707b07a2b84f4c11f6a1",
+      "sha256": "c75994193dc0d8da4e28957633fd9a5a7e39b4796064df1a2525f8df05609703",
       "declarations": [
         "Becoming.Typicality.courses",
         "Becoming.Typicality.extend",
@@ -428,19 +428,25 @@
       "role": "receipt",
       "sha256": "b11c84ca126f223c34d56695753c6426ec4bb669f32ce435eed00c446d93a75b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Situations",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Typicality",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -495,6 +501,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：finerLaw 的动作中的情境写明目标配置，所以 finerLaw_determined 由构造成立；读法“分支的律是忘掉情境的确定的律”的形式部分是这一小事实，实质在 sum_finer 的计数（审查第 35 项，P4）。correspondence 加 AI 的注说明这一点；引用“the situation makes it true”时是否说明，由 Ren 决定（第 46 项）。断言收窄，定理不变。",
       "en": "16 October 2026, eighteenth review (R18): in finerLaw the situation in the move names the target configuration, so finerLaw_determined holds by construction; the formal part of the reading “a branching law is a determined law with the situation forgotten” is that small fact, and the substance is the count, sum_finer (review item 35, P4). The correspondence gains the AI's note saying so; whether citations of “the situation makes it true” should say it is Ren's (item 46). Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Situations.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Typicality.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Situations.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Typicality.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": []

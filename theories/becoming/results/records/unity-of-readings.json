@@ -250,7 +250,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
       "role": "proof",
-      "sha256": "03addad8f34b6f2e034f38ef41fe5d829e779b254cdb2528ec016ce45c57edec",
+      "sha256": "a6b94224417ffa836b807fdd15d325e58ea4768370b27f6cd6498fd10f4907d4",
       "declarations": [
         "Becoming.Contextual.world",
         "Becoming.Contextual.world_active",
@@ -273,7 +273,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
       "role": "proof",
-      "sha256": "fa48d5a6cc480b7c044b15776756fc30354ab6a776cffaad9d6320eea348f6b8",
+      "sha256": "28d65c468558ff5e790dde6320a6d10919ec37032aae44f7647837759d764342",
       "declarations": [
         "Becoming.Contextual",
         "Becoming.Contextual.indexed",
@@ -288,7 +288,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
       "role": "proof",
-      "sha256": "5bfd752991b30a9ae125eef842d94c5dac683eaff6a3891d6b47504f3adb3e74",
+      "sha256": "a758d973628daaed646be595b4de92ba1ea32993b959f75ebd9a055fbf5bbc78",
       "declarations": [
         "Becoming.Square.no_context_free_values"
       ]
@@ -296,7 +296,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "f0488ab0cba15a0caf609d0052718e9b1f5e88828c3ad9fcd52a6910e77f03e3",
+      "sha256": "8e21aef16d807547998fb722e48baa4c50978998c093cabdcffb090a5722b8b1",
       "declarations": [
         "Becoming.Frame.world",
         "Becoming.Frame.world_active",
@@ -330,7 +330,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "93b0df83b46dc4759219409b5ddfcd7ca3c98e29f2c8b3d64d17ecc61f0794a0",
+      "sha256": "b3620899c90d1fe7ebb088b8e20b8491fa7fbf63e5d9a198761bf165476f7a46",
       "declarations": [
         "Becoming.bounded"
       ]
@@ -367,33 +367,39 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readings",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Context",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T143041.527461Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Quantum",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -414,7 +420,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -464,6 +470,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：World.unity 的第一合取项对每个世界都成立：算入其余时每个水平序列都是 exchange 的运行，所以它不排除任何东西；陈述“算入其余，每个世界都是一次交换的运行”没有说这一点（审查第 33 项，P2）。陈述补上“任何水平序列都是”；为守住长度，几处改用更短的说法，“总是”去掉，意义不变。断言收窄，定理不变。",
       "en": "16 October 2026, eighteenth review (R18): the first conjunct of World.unity holds of every world: with the rest counted every sequence of levels is a run of exchange, so it excludes nothing, and the statement “counting the rest, every world is one run of exchange” did not say so (review item 33, P2). The statement now says any level sequence is; to stay within the length a few phrases are shortened and “always” is dropped, the meaning otherwise unchanged. Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Readings.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Context.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Quantum.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Significance.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Readings.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Context.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Quantum.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Significance.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": []

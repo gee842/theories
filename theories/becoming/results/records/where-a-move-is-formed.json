@@ -569,7 +569,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
       "declarations": [
         "Becoming.Law.orbit"
       ]
@@ -597,7 +597,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "f0488ab0cba15a0caf609d0052718e9b1f5e88828c3ad9fcd52a6910e77f03e3",
+      "sha256": "8e21aef16d807547998fb722e48baa4c50978998c093cabdcffb090a5722b8b1",
       "declarations": [
         "Becoming.closedBy",
         "Becoming.Fork.label_couples"
@@ -606,7 +606,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
+      "sha256": "df765a9bc5e9d68f59f50d2c3dec144e449b0357927ce59a2a9224ac6ca31316",
       "declarations": [
         "Becoming.ExchangeLaw.ofMoves",
         "Becoming.ExchangeLaw.policy",
@@ -616,7 +616,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "72a74b7a05347fde0d1d74c9781fefb1429e583fc3ab0d6f17f6b1ddeef78683",
+      "sha256": "53f660c677c3b85f9f202df4adf277d1d95ebe01099f7c25be1689f402c54dfd",
       "declarations": [
         "Becoming.Learning.Lumped",
         "Becoming.Learning.Lasso",
@@ -651,7 +651,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
       "role": "proof",
-      "sha256": "03addad8f34b6f2e034f38ef41fe5d829e779b254cdb2528ec016ce45c57edec",
+      "sha256": "a6b94224417ffa836b807fdd15d325e58ea4768370b27f6cd6498fd10f4907d4",
       "declarations": [
         "Becoming.World.unity"
       ]
@@ -698,6 +698,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
       "role": "receipt",
       "sha256": "9627d189294357c1bc703df77f46e2e729b8cf4bc5e89c661d341ffbfb5b4fd7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -724,7 +730,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T153317.850533Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -745,21 +751,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -780,7 +786,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -914,6 +920,10 @@
     {
       "zh": "2026年10月16日，发布准备度复核（P129）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（发布复核（P129）：最小的识标明双重否定的强度（所经的识不能不含其敏感者）；“条件无穷多时这一条件不能去掉”改为“能否去掉取决于全知原则”（给定消失之判定，尾之律是反例；每个反例给出弱有限全知原则））。",
       "en": "16 October 2026, release-readiness review (P129): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (Release review (P129): the least registration marked at its double-negation strength (a registration read through cannot fail to hold a condition the law is sensitive to); “with infinitely many conditions this cannot be dropped” now reads “whether this can be dropped turns on omniscience” (given a decision of vanishing the tail law is a counterexample; every counterexample gives WLPO))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Learning.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Readings.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Learning.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Readings.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": []

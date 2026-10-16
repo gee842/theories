@@ -383,7 +383,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
       "role": "proof",
-      "sha256": "d1b1aa59dc90ce1c2bc8dc02fd62eed2caff3e090a26392f5bf1041a27dd9ce7",
+      "sha256": "4849bcde2f3f6144c246f6511e6845961a9f59369188f90f19dab0a83101ab9d",
       "declarations": [
         "Becoming.Loops.zero_or_pos",
         "Becoming.Loops.ble_succ_self",
@@ -527,7 +527,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "7cbd5dd1a8dca8305d3577091db9e2462c7109c75bfde6c68e0c6564aa012cd1",
+      "sha256": "1f3181991b427b257a1beed82429abcf5a21c8806191b3db1af292116fe44f73",
       "declarations": [
         "Becoming.carried",
         "Becoming.carriedGive",
@@ -548,7 +548,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
       "declarations": [
         "Becoming.revisits_within",
         "Becoming.gap_of_le",
@@ -558,7 +558,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
+      "sha256": "df765a9bc5e9d68f59f50d2c3dec144e449b0357927ce59a2a9224ac6ca31316",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.ExchangeLaw.Nonanticipating",
@@ -586,7 +586,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "sha256": "78d075634e3bd1a64a8f6769a22b5563f8748a1843c3cabfa07efe0790b52ba2",
       "declarations": [
         "Becoming.total_congr_on",
         "Becoming.steps_length",
@@ -596,7 +596,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "91accf4b40601b6f5439c1a3e8f3ede72b68018b0701099e78d71e7959f6fd9d",
+      "sha256": "ad5455526b0dcfa8242950c677ab641dc4c9c5f2e2115d8d3a51fd2d630e2b4e",
       "declarations": [
         "Becoming.total_eq_zero"
       ]
@@ -658,33 +658,39 @@
       "path": "sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md",
       "role": "provenance",
       "sha256": "274cf514417e8596a4e58747a1db057abb645f8b7557fe0062934cbbcee9bade"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T212327.206058Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Loops",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T195010.513125Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T195010.513125Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T195010.513125Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -698,14 +704,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T195010.513125Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Population",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T195010.513125Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dissipation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -781,6 +787,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：“每次返回至少加倍”“回路使之失控”成立，只因强度是自然数、正的强度至少为一，且携带之律不耗散（审查第 25 项，O4）。陈述补上“强度为自然数”；英文补上中文已有的“至少”（carried_runaway 给出至少乘以一加强度之积）；中文去掉英文没有的“j 阶到第 j 步为止精确”，由定律承担，两种语言现在相同。Ren 已决定的读法中“经由每个每步耦合的回路”加 AI 的注，标明充分的一半是自然数的情形；这一读法是否仍成立待 Ren（审查第 44 项）。断言收窄，定理不变。",
       "en": "16 October 2026, eighteenth review (R18): “each return at least doubles” and “a loop makes it run away” hold only because strengths are natural numbers, a positive one at least one, and the carrying law does not dissipate (review item 25, O4). The statement now says “with strengths in ℕ”; the English gains the “at least” the Chinese had (carried_runaway gives at least one plus the product of the strengths); the Chinese drops “order j is exact up to step j”, which the English never had and the laws carry, so the two now say the same. In the reading Ren decided, “through every loop that couples at every step” gains the AI's note that this sufficiency half is the natural-number case; whether the reading stands is Ren's (review item 44). Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Loops.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Propagation.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Loops.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Propagation.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged)."
     }
   ],
   "text_versions": []

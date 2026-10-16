@@ -384,7 +384,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "91accf4b40601b6f5439c1a3e8f3ede72b68018b0701099e78d71e7959f6fd9d",
+      "sha256": "ad5455526b0dcfa8242950c677ab641dc4c9c5f2e2115d8d3a51fd2d630e2b4e",
       "declarations": [
         "Becoming.pos_of_sign",
         "Becoming.sign_pos",
@@ -518,7 +518,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "sha256": "78d075634e3bd1a64a8f6769a22b5563f8748a1843c3cabfa07efe0790b52ba2",
       "declarations": [
         "Becoming.Distinct"
       ]
@@ -545,7 +545,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "55bc0918d7108217177a406a495bed309e705d1025e22a064a7a524178680d82",
+      "sha256": "672d7cd5d368d699186ab6a3048e9750959df92c6e49fc964b9aad1e0f2a1ec8",
       "declarations": []
     },
     {
@@ -615,12 +615,18 @@
       "role": "receipt",
       "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dissipation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1013,6 +1019,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Generation.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Roles.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Horizon.lean（P129：新增 Adheres.closed、refutable_adheres_iff、refutable_adheres_of_em；说明改正（不可否证，从不发生不可证实），署名 Alpern–Schneider、Kelly；已有陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Horizon.lean (P129: Adheres.closed, refutable_adheres_iff, refutable_adheres_of_em added; docstrings corrected (not refutable; never occurring not verifiable), Alpern–Schneider and Kelly credited; existing statements unchanged)."
     }
   ],
   "text_versions": [

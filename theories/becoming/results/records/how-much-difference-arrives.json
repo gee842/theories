@@ -351,7 +351,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "7cbd5dd1a8dca8305d3577091db9e2462c7109c75bfde6c68e0c6564aa012cd1",
+      "sha256": "1f3181991b427b257a1beed82429abcf5a21c8806191b3db1af292116fe44f73",
       "declarations": [
         "Becoming.gap",
         "Becoming.Propagation.sub_zero_of_le",
@@ -455,7 +455,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
+      "sha256": "df765a9bc5e9d68f59f50d2c3dec144e449b0357927ce59a2a9224ac6ca31316",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.AgreeUpTo",
@@ -513,7 +513,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "sha256": "78d075634e3bd1a64a8f6769a22b5563f8748a1843c3cabfa07efe0790b52ba2",
       "declarations": [
         "Becoming.Distinct"
       ]
@@ -544,19 +544,25 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -591,7 +597,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T175539.984165Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Population",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -641,6 +647,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：most_difference_arrives 对一切律成立，上确界由携带之律达到；这个律什么也不取（Propagation.lean 中 carrying 的 take 为零），给出强度乘至今水平之和，所以一旦给出任何量就违反 Flow.Gainless。does_not_show 2、3、反例 1 与读法“所持的差别不断到达”现在说明这一点：界是在一切律上达到的，对无增益的律未表明是否紧（审查第 24 项，O3；同一范围另记于 DELEGATED-CHOICES D39 (3) 的更正注）。断言收窄，定理不变。",
       "en": "16 October 2026, eighteenth review (R18): most_difference_arrives holds over all laws and its supremum is attained by the carrying law; that law takes nothing (the take of carrying in Propagation.lean is zero) and gives the strengths times the levels so far, so it breaks Flow.Gainless as soon as it gives anything. does_not_show 2 and 3, counterexample 1 and the reading “a held difference keeps arriving” now say so: the bound is attained over all laws, and its tightness over gainless laws is not shown (review item 24, O3; the same scope is noted in a correction to DELEGATED-CHOICES D39 (3)). Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Propagation.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Propagation.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": []

@@ -296,7 +296,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "c68bb811abba13aed0bc8739b5fc2a3f670a9726d64908eaa055bf2a1444480f",
+      "sha256": "accd86eb3c7ce0e8a24617843fbdf31a021941a82e29ed67bb03cd292a60d5a2",
       "declarations": [
         "Becoming.balance_over_stretch_on"
       ]
@@ -304,7 +304,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
       "role": "proof",
-      "sha256": "a2063a53a94a997d048a66d6849bcf898056c154944511a9bcb2afbe48840db6",
+      "sha256": "236b6eb72050fd5c70c720cd5ccd82d732b7c90f423fe12b9f10849cdc4b2ea8",
       "declarations": [
         "Becoming.Flow.RunsDownOn",
         "Becoming.Flow.RunsDownOn.changes_iff"
@@ -344,6 +344,12 @@
       "path": "sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md",
       "role": "provenance",
       "sha256": "b5672472cda81561e7099252fca54138edfe2df107a673f16bd82c1e2d2baa7f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -356,14 +362,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Locality",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Change",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -632,6 +638,10 @@
     {
       "zh": "2026年10月16日，发布准备度复核（P129）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（发布复核（P129）：最小的识标明双重否定的强度（所经的识不能不含其敏感者）；“条件无穷多时这一条件不能去掉”改为“能否去掉取决于全知原则”（给定消失之判定，尾之律是反例；每个反例给出弱有限全知原则））。",
       "en": "16 October 2026, release-readiness review (P129): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (Release review (P129): the least registration marked at its double-negation strength (a registration read through cannot fail to hold a condition the law is sensitive to); “with infinitely many conditions this cannot be dropped” now reads “whether this can be dropped turns on omniscience” (given a decision of vanishing the tail law is a counterexample; every counterexample gives WLPO))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Locality.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Locality.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ]
 }

@@ -286,7 +286,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
       "role": "proof",
-      "sha256": "0b2d7f054e7568c88ba86cbb859403473fc041e0ed1f2839ee6ed8f680d4fabd",
+      "sha256": "492de2b7c42bb4fdad6df6fc224dde37db6e7e42cf110e97267f7b9d65c733af",
       "declarations": [
         "Becoming.Onward.continues_of_run",
         "Becoming.Onward.unbounded_of_run",
@@ -333,7 +333,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "role": "proof",
-      "sha256": "6f0a4bdf127696568d91842a2fee705d45eb5de595ca53f2cc8a1a1af580cd72",
+      "sha256": "875dff1ff8f7a09d28a3c2baf6e3a82804fbcf8818b84d4c901272dfaec84d58",
       "declarations": [
         "Becoming.Branching.Returns",
         "Becoming.Branching.Lossless",
@@ -345,7 +345,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
       "role": "proof",
-      "sha256": "60947288306d2791eb7ebf0cb593bd77eab14209ee0ae652b641f49fff9ee919",
+      "sha256": "1026575f171102ac8245e914afa6d312d8a911654c2d1be631577d85bd0245e0",
       "declarations": [
         "Becoming.Lasting.Continues",
         "Becoming.Lasting.Continues.decided",
@@ -360,7 +360,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "role": "proof",
-      "sha256": "02c81e67e88bbc8d53940684a5e00be442660f3c6a4ffee427eb5d860674f5b6",
+      "sha256": "7462d8f2dafc81835bd8dacaefd017b2ae35788776fd28548835b865314200fd",
       "declarations": [
         "Becoming.Parting.path_of_continues",
         "Becoming.Parting.and_both",
@@ -370,7 +370,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
       "declarations": [
         "Becoming.revisits_within",
         "Becoming.gap_of_lt"
@@ -392,7 +392,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "55bc0918d7108217177a406a495bed309e705d1025e22a064a7a524178680d82",
+      "sha256": "672d7cd5d368d699186ab6a3048e9750959df92c6e49fc964b9aad1e0f2a1ec8",
       "declarations": [
         "Becoming.Run.cons"
       ]
@@ -430,40 +430,46 @@
       "role": "receipt",
       "sha256": "4b3efdcf1d56bdde149704676f173ce1f9abcef66debdd25a4b3e8b708ec1387",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Onward",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Branching",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Lasting",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Parting",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -477,7 +483,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -498,6 +504,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：定律 0 的中文缺动词（“有”），审查提议改为“每条都从其起点得到”（第 38 项，P9）。核对 Lean：reach_of_run 给出 Reach P (r.state 0) (r.state n)，即运行的每个配置可从运行的起点到达，所以原中文的第二半是对的，审查对这一半的读法不采用；英文“each is had from its start”有歧义，改为“each configuration of the run is reached from its start”，中文补上动词。correspondence 记 König 1927（第 39 项，K5）。断言不变。",
       "en": "16 October 2026, eighteenth review (R18): law 0's Chinese lacked its verb (有), and the review proposed “each course is had from its start” (item 38, P9). Checked against the Lean: reach_of_run gives Reach P (r.state 0) (r.state n), each configuration of the run reached from the run's start, so the original Chinese second half was right and the review's reading of it is not taken; the ambiguous English “each is had from its start” now reads “each configuration of the run is reached from its start”, and the Chinese gains its verb. The correspondence names König 1927 (item 39, K5). Claim unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Onward.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Branching.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Lasting.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Parting.lean（P129：after 改为 Run.onward 的缩写（after_eq_onward，rfl），名称与类型不变；署名 Gold、Moore）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Horizon.lean（P129：新增 Adheres.closed、refutable_adheres_iff、refutable_adheres_of_em；说明改正（不可否证，从不发生不可证实），署名 Alpern–Schneider、Kelly；已有陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Onward.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Branching.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Lasting.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Parting.lean (P129: after now abbreviates Run.onward (after_eq_onward, rfl), name and type unchanged; Gold and Moore credited); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Horizon.lean (P129: Adheres.closed, refutable_adheres_iff, refutable_adheres_of_em added; docstrings corrected (not refutable; never occurring not verifiable), Alpern–Schneider and Kelly credited; existing statements unchanged)."
     }
   ],
   "text_versions": []

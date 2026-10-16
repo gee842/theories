@@ -193,7 +193,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "d27126659f1dd2f94dac3e05e5e513ade0c0ebc8dbf857141045981c7d7ab8fb",
+      "sha256": "c3ff9798d8630518d765f147433373695bd5ff3ea9625be728e1baa764af20d5",
       "declarations": [
         "Becoming.Relabel.swap",
         "Becoming.Relabel.swap_left",
@@ -229,7 +229,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "72a74b7a05347fde0d1d74c9781fefb1429e583fc3ab0d6f17f6b1ddeef78683",
+      "sha256": "53f660c677c3b85f9f202df4adf277d1d95ebe01099f7c25be1689f402c54dfd",
       "declarations": [
         "Becoming.Learning.selects_through_lumping",
         "Becoming.Learning.values_lumped",
@@ -336,19 +336,25 @@
       "path": "sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md",
       "role": "provenance",
       "sha256": "72f5157a577bed3616101e9c1e1ee96e6701d3fc9e2839acf27cb09bb06fede9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -439,6 +445,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：correspondence 记 May 1952 的中立条件与 Buridan 的对称（审查第 39 项，K11）。断言不变。",
       "en": "16 October 2026, eighteenth review (R18): the correspondence names May's 1952 neutrality condition and the Buridan symmetry (review item 39, K11). Claim unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Selection.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Learning.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Selection.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Learning.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": []

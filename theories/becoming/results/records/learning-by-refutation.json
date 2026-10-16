@@ -140,7 +140,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "72a74b7a05347fde0d1d74c9781fefb1429e583fc3ab0d6f17f6b1ddeef78683",
+      "sha256": "53f660c677c3b85f9f202df4adf277d1d95ebe01099f7c25be1689f402c54dfd",
       "declarations": [
         "Becoming.Learning.record",
         "Becoming.Learning.record_length",
@@ -227,7 +227,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
       "declarations": [
         "Becoming.Law.orbit",
         "Becoming.Law.orbit_add",
@@ -237,7 +237,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "39b89d106a813b1c700d979f56aea2a0465fca3200b1c32e8e37bed437ff9064",
+      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
       "declarations": [
         "Becoming.Web.tail_unrefuted"
       ]
@@ -276,26 +276,32 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
       "role": "receipt",
       "sha256": "9627d189294357c1bc703df77f46e2e729b8cf4bc5e89c661d341ffbfb5b4fd7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -453,6 +459,10 @@
     {
       "zh": "2026-10-16，整合 I4b 第二项的后续（研究第153节）：Selection.lean 只改注释（“只读记录的选择”一节改称“经选项模型的选择”），Learning.lean 加一节，8 项定理连接选项的模型与其归并；本记录所引的声明不变。Learning.lean 改用新哈希，证明绑定移到核心回执 20261015T202927.668755Z。",
       "en": "16 October 2026, I4b item 2 follow-up (study section 153): Selection.lean changes only in comments (the section “Selection by the record alone” renamed “Selection through a model of the options”), and Learning.lean gains a section of eight theorems linking a model of the options to its lumping; the declarations this record cites are unchanged. Learning.lean take the new hashes, and the proof bindings move to core receipt 20261015T202927.668755Z."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Learning.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Learning.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ]
 }

@@ -249,7 +249,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "39b89d106a813b1c700d979f56aea2a0465fca3200b1c32e8e37bed437ff9064",
+      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
       "declarations": [
         "Becoming.Renewable.no_exact_finite_reading",
         "Becoming.Renewable.finite_reading_withholds_renewal"
@@ -258,7 +258,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "55bc0918d7108217177a406a495bed309e705d1025e22a064a7a524178680d82",
+      "sha256": "672d7cd5d368d699186ab6a3048e9750959df92c6e49fc964b9aad1e0f2a1ec8",
       "declarations": [
         "Becoming.Run.cons",
         "Becoming.Run.AgreeUpTo",
@@ -323,7 +323,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
       "role": "proof",
-      "sha256": "745e6da61d8b6656015a46a2f6610bea48502a5baae1055305a1e725f0bb3adf",
+      "sha256": "fec78adc7074d6776394dc35734d5fc2ac186ee96f70d0e0ac2100642f67b1b7",
       "declarations": [
         "Becoming.Web.RenewingInWithin",
         "Becoming.Web.UnderminingFor"
@@ -343,19 +343,25 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T184418.886926Z/verification.json",
       "role": "receipt",
       "sha256": "eedff998ee3826ee2ca3992b48cc4a738fdaacac663cf6f52633914a7ef0fb1b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T184418.886926Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -745,6 +751,10 @@
     {
       "zh": "2026-10-16，整合 I4b 第三项（Ren 选择“Closest gaps first”）：Horizon.lean 的文件说明加“有限历史所否证者”一段，其后加同名一节；本记录所引的声明不变。改用新哈希，Horizon 的证明绑定移到核心回执 20261015T184418.886926Z（Testing 的绑定不变）；关联新记录 what-a-finite-history-refutes。",
       "en": "16 October 2026, integration I4b item 3 (Ren chose “Closest gaps first”): the docstring of Horizon.lean gains a paragraph on what a finite history refutes, and a section of that name follows; the declarations this record cites are unchanged. The reference takes the new hash, the Horizon proof binding moves to core receipt 20261015T184418.886926Z (the Testing binding is unchanged), and the new record what-a-finite-history-refutes is linked."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Horizon.lean（P129：新增 Adheres.closed、refutable_adheres_iff、refutable_adheres_of_em；说明改正（不可否证，从不发生不可证实），署名 Alpern–Schneider、Kelly；已有陈述不变）；Return.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Horizon.lean (P129: Adheres.closed, refutable_adheres_iff, refutable_adheres_of_em added; docstrings corrected (not refutable; never occurring not verifiable), Alpern–Schneider and Kelly credited; existing statements unchanged); Return.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": [

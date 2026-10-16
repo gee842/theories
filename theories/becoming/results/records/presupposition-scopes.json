@@ -478,7 +478,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "93b0df83b46dc4759219409b5ddfcd7ca3c98e29f2c8b3d64d17ecc61f0794a0",
+      "sha256": "b3620899c90d1fe7ebb088b8e20b8491fa7fbf63e5d9a198761bf165476f7a46",
       "declarations": [
         "Becoming.Unrestricted",
         "Becoming.bounded",
@@ -541,6 +541,12 @@
       "role": "receipt",
       "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -567,7 +573,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -780,6 +786,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Boundaries.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Feedback.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Interdependence.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Significance.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Regions.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Boundaries.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Feedback.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Interdependence.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Significance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Regions.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Significance.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Significance.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": [

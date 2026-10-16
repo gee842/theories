@@ -90,7 +90,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
       "declarations": [
         "Becoming.keeps_reach_iff_returns",
         "Becoming.same_reach_iff_returns",
@@ -118,6 +118,12 @@
       "role": "receipt",
       "sha256": "20a27676496da965792e40912a2754e4954496525e5641cb7d0708095235734b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -130,7 +136,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -167,6 +173,10 @@
     {
       "zh": "2026年10月15日，整合 I3e 与 P83g 落地（研究第135–136节）：改绑新回执并更新哈希：Bridge.lean（整合 I3e：判断一节新增 frontier_iff_undominated、frontier_exists（不用经典推理的 finite_frontier）、required_of_bettered（不用经典推理的 formation_required_of_improvable_absence）；原有陈述不变）。",
       "en": "15 October 2026, landing integration I3e and P83g (study sections 135–136): rebound to the new receipts and rehashed: Bridge.lean (integration I3e: the Judgment section gains frontier_iff_undominated, frontier_exists (finite_frontier with no classical reasoning) and required_of_bettered (formation_required_of_improvable_absence with no classical reasoning); earlier statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ]
 }

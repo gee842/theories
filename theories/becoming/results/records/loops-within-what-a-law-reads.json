@@ -363,7 +363,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "cb71ea034cf72593395115dbecbd9c4ebd4631feb5d6cd952071cfc431107ed2",
+      "sha256": "df765a9bc5e9d68f59f50d2c3dec144e449b0357927ce59a2a9224ac6ca31316",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.ExchangeLaw.GivesAlike",
@@ -377,7 +377,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "7cbd5dd1a8dca8305d3577091db9e2462c7109c75bfde6c68e0c6564aa012cd1",
+      "sha256": "1f3181991b427b257a1beed82429abcf5a21c8806191b3db1af292116fe44f73",
       "declarations": [
         "Becoming.ExchangeLaw.RespondsWithin",
         "Becoming.ExchangeLaw.exchangeGap",
@@ -389,7 +389,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
       "role": "proof",
-      "sha256": "d1b1aa59dc90ce1c2bc8dc02fd62eed2caff3e090a26392f5bf1041a27dd9ce7",
+      "sha256": "4849bcde2f3f6144c246f6511e6845961a9f59369188f90f19dab0a83101ab9d",
       "declarations": [
         "Becoming.Couples",
         "Becoming.Coupled",
@@ -402,7 +402,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
       "role": "proof",
-      "sha256": "346bf7aa5c64896066189d4388cfe735f2be7264526e77e9590a2ea4991d0a71",
+      "sha256": "c58488b3535bf76d1be18f54ac397d6e291af65e5e8397fac33d499a15fd4003",
       "declarations": [
         "Becoming.CouplesAt",
         "Becoming.couples_iff_couplesAt"
@@ -429,7 +429,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "39b89d106a813b1c700d979f56aea2a0465fca3200b1c32e8e37bed437ff9064",
+      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
       "declarations": [
         "Becoming.Web.Registers",
         "Becoming.Web.RegistersAlikeUpTo"
@@ -474,7 +474,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
       "declarations": [
         "Becoming.le_succ_cases"
       ]
@@ -518,6 +518,12 @@
       "role": "receipt",
       "sha256": "9ffb33a5d8493c84922dc52489acb21cafbeb2e0ae30a7c954f3182ea55c65be",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -530,28 +536,28 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Loops",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Remainder",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -572,7 +578,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -607,7 +613,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -640,6 +646,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：陈述原说“断裂之前没有经过储量的回路：经过储量的回路在断裂处形成”；但律自己的强度从一开始就把储量耦合到自身（反例 0），没有回路的是立律（ReadsBelow.standing_no_loop），断裂之前律的动作如其立律（Flow.follows_standing_before）（审查第 27 项，O6）。陈述、标题与定律 4 改为“断裂之前律的动作如其立律，立律没有经过储量的回路；起作用的回路在断裂处形成”。为守住陈述的长度，陈述去掉“在读增长之处形成”，由定律 1 承担。断言收窄，定理不变。",
       "en": "16 October 2026, eighteenth review (R18): the statement said there is “no loop through the stock before it: that loop forms at the break”; but the law's own strengths couple the stock to itself from the start (counterexample 0), the loop-free law is the standing law (ReadsBelow.standing_no_loop), and before the break the law acts as it (Flow.follows_standing_before) (review item 27, O6). The statement, the title and law 4 now say that before the break the law acts as its standing law, which has no loop through the stock, and that the loop that acts forms at the break. To stay within the statement's length, “and form where reading grows” leaves the statement and is carried by law 1. Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Propagation.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Loops.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Remainder.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Propagation.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Loops.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Remainder.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": []

@@ -273,7 +273,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "role": "proof",
-      "sha256": "6f0a4bdf127696568d91842a2fee705d45eb5de595ca53f2cc8a1a1af580cd72",
+      "sha256": "875dff1ff8f7a09d28a3c2baf6e3a82804fbcf8818b84d4c901272dfaec84d58",
       "declarations": [
         "Becoming.Branching.PossiblyDrawnInto",
         "Becoming.Branching.NecessarilyDrawnInto",
@@ -346,7 +346,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
       "declarations": [
         "Becoming.Law.Returns"
       ]
@@ -403,12 +403,18 @@
       "role": "receipt",
       "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Branching",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -422,7 +428,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -582,6 +588,10 @@
     {
       "zh": "2026年10月16日，P127（Becoming.Onward，研究第161节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§1 加入运行在何处继续一段，§8 随之，§9 加一行与术语；回执与合计改据新运行（7089 项定理、9753 项声明审计，核心闭包 126 个模块，包 131 个））。",
       "en": "16 October 2026, landing P127 (Becoming.Onward, study section 161): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§1 gains the paragraph on where a run goes on, with §8, and §9 gains a row and glossary entries; receipt and totals moved to the new run (7089 theorems, 9753 declaration audits, core closure 126 modules, package 131))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Branching.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Branching.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": [

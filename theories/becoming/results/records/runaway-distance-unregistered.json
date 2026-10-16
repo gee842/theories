@@ -296,7 +296,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "39b89d106a813b1c700d979f56aea2a0465fca3200b1c32e8e37bed437ff9064",
+      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
       "declarations": [
         "Becoming.Flow.ExchangeFollows",
         "Becoming.Flow.subthreshold_alike_always",
@@ -358,6 +358,12 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -370,7 +376,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -586,6 +592,10 @@
     {
       "zh": "2026-10-16 P125（观察是从所观察者出发的路线，研究 §159）：下一步的第一项“一个形成怎样开始观察它所依赖的储量”由 observation-is-a-route 回答（这里给出的 obs 是从所观察者出发的路线，直接观察是长度为零的路线），去掉；related 加 observation-is-a-route。陈述与证明不变。",
       "en": "16 October 2026, P125 (observation as a route from what is observed, study section 159): the first item of the next step, how a formation comes to observe a stock it depends on, is answered by observation-is-a-route (the obs given here is a route from what is observed, direct observation being the route of length zero) and dropped; related adds observation-is-a-route. Statement and proofs unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": [

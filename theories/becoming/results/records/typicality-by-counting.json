@@ -269,7 +269,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "64c945b572fe4a7c3a0dec98a3ea9869c193bc09d963707b07a2b84f4c11f6a1",
+      "sha256": "c75994193dc0d8da4e28957633fd9a5a7e39b4796064df1a2525f8df05609703",
       "declarations": [
         "Becoming.Typicality.left_comm",
         "Becoming.Typicality.ones",
@@ -361,7 +361,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "507f117d9e2a6f767d9130c8a74ba94e4ae4e930f224bb22d395941055536f9e",
+      "sha256": "1b750e84a20e7185a30a1bae29a3d9f3584880df6e92b80d555bcebacb21ef9d",
       "declarations": [
         "Becoming.Identification.le_of_add_right"
       ]
@@ -369,7 +369,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "91c26df9760b1030caa4f3401744ce9d513024822957560fab7f9bc3125edae8",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
       "declarations": [
         "Becoming.gap_of_le",
         "Becoming.mem_cons_split"
@@ -378,7 +378,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "role": "proof",
-      "sha256": "02c81e67e88bbc8d53940684a5e00be442660f3c6a4ffee427eb5d860674f5b6",
+      "sha256": "7462d8f2dafc81835bd8dacaefd017b2ae35788776fd28548835b865314200fd",
       "declarations": [
         "Becoming.Parting.freeRun",
         "Becoming.Parting.free_parts_after"
@@ -430,12 +430,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md",
       "role": "provenance",
       "sha256": "b2c60f7ef5e8308c08783018c8abb617276c4e6c806bde11cc4d99ca15044f5b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Typicality",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -463,21 +469,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T173702.509759Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T193101.075446Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Parting",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -519,6 +525,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：定律中“p·q / ((p + q)²·ε²·n)”与“0.88ⁿ”是由定理之界推出的算术，不是 Lean 陈述（审查第 36 项，P7）；两处标明，并写出所取的 d 与所用的不等式。断言收窄，定理不变。",
       "en": "16 October 2026, eighteenth review (R18): the laws' “p·q / ((p + q)²·ε²·n)” and “0.88ⁿ” are arithmetic from the theorems' bounds, not Lean statements (review item 36, P7); both are now marked so, with the d taken and the inequality used. Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Typicality.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Identification.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Parting.lean（P129：after 改为 Run.onward 的缩写（after_eq_onward，rfl），名称与类型不变；署名 Gold、Moore）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Typicality.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Identification.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Parting.lean (P129: after now abbreviates Run.onward (after_eq_onward, rfl), name and type unchanged; Gold and Moore credited)."
     }
   ],
   "text_versions": []

@@ -175,7 +175,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
       "role": "proof",
-      "sha256": "60947288306d2791eb7ebf0cb593bd77eab14209ee0ae652b641f49fff9ee919",
+      "sha256": "1026575f171102ac8245e914afa6d312d8a911654c2d1be631577d85bd0245e0",
       "declarations": [
         "Becoming.Lasting.Drains",
         "Becoming.Lasting.Drains.along",
@@ -215,7 +215,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "role": "proof",
-      "sha256": "f6e96e91c8aab138007daa81b10e7680d16d67ce15a30f6b27e5eb3395aee12e",
+      "sha256": "005587168ffe88986b75e6c19aebbea46218e3be14b9dbc3b2ca4ae3eee5ce2f",
       "declarations": [
         "Becoming.Courses.Drains.leaves_run",
         "Becoming.Courses.exhausts_run",
@@ -234,6 +234,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T190408.610189Z/verification.json",
       "role": "receipt",
       "sha256": "47259fe19127209f0f481b03f8ab92ae59c7864e4d7f0ea578afc8520eb625f6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -253,7 +259,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T190408.610189Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Lasting",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -267,7 +273,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -349,6 +355,10 @@
     {
       "zh": "2026-10-16，整合 I4b 第四项（Ren 选择“Closest gaps first”）：Lasting.lean 导入 Becoming.Likeness，文件说明加“持续某段进程”一条，其后加同名一节；本记录所引的声明不变。改用新哈希，证明绑定移到核心回执 20261015T190408.610189Z。",
       "en": "16 October 2026, integration I4b item 4 (Ren chose “Closest gaps first”): Lasting.lean imports Becoming.Likeness, its docstring gains a bullet on lasting some course, and a section of that name follows; the declarations this record cites are unchanged. The reference takes the new hash and its proof binding moves to core receipt 20261015T190408.610189Z."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Lasting.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Lasting.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
     }
   ]
 }

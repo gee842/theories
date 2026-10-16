@@ -132,7 +132,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
       "role": "proof",
-      "sha256": "f5adca045d62a3f060b39a9b6dc6d9c4837b598ecf343e9af38bb225abbd7cb1",
+      "sha256": "75dee026e41bd527a11595f274424e96c54a29328707e67613dd6cfe94d88b02",
       "declarations": [
         "Becoming.succ_sub_self",
         "Becoming.excess_self",
@@ -278,12 +278,18 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Order",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -420,6 +426,10 @@
     {
       "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)）：此前说“第二部分”断言公理或 G0 为第二部分定理之处，改为“以那一条公理为条件”，指向章节 §6.15；理论不断言这一条件。断言、证明与证据不变。",
       "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Order.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Order.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ]
 }

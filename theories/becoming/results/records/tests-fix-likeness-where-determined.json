@@ -391,7 +391,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "ee06233145943c60c5f9122c073d35f5ceefb8d5bd450e3ff7af0ddd9e2f96d8",
+      "sha256": "8071d6d635db25b99219a1ba37e1ceb04d74cca192ebe7cb77010ca4aab6bc3e",
       "declarations": [
         "Becoming.Decided.exists_listed",
         "Becoming.Decided.exists_of_listed",
@@ -585,7 +585,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "f0488ab0cba15a0caf609d0052718e9b1f5e88828c3ad9fcd52a6910e77f03e3",
+      "sha256": "8e21aef16d807547998fb722e48baa4c50978998c093cabdcffb090a5722b8b1",
       "declarations": [
         "Becoming.Bisimulation",
         "Becoming.Alike",
@@ -708,6 +708,12 @@
       "role": "receipt",
       "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -720,7 +726,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -741,7 +747,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -927,6 +933,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Histories.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Likeness.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Unfolding.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）；Refinement.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Distinguishing.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Histories.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Likeness.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt); Refinement.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Distinguishing.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Likeness.lean（P129：新增 LLPO（标准形式）、LLPOForDecided 与 EitherThroughout ⇔ LLPOForDecided；同名异义与弱 König ⇔ LLPO 的说明；已有陈述不变）；Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Likeness.lean (P129: LLPO (standard form), LLPOForDecided and EitherThroughout ⇔ LLPOForDecided added; homonym and weak König ⇔ LLPO notes; existing statements unchanged); Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": [

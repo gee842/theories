@@ -190,7 +190,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "c68bb811abba13aed0bc8739b5fc2a3f670a9726d64908eaa055bf2a1444480f",
+      "sha256": "accd86eb3c7ce0e8a24617843fbdf31a021941a82e29ed67bb03cd292a60d5a2",
       "declarations": [
         "Becoming.ComesToBe",
         "Becoming.CeasesToBe",
@@ -233,12 +233,18 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "4673de2a4cdcfd311af97ccb23f3bc7517e6e732248258fca374208c942a54f4"
+      "sha256": "43b1af05c297b71f8b1e4943177e4694c33b4801a4f601644c388f8b853f76c1"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
     }
   ],
@@ -252,7 +258,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Change",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -517,6 +523,10 @@
     {
       "zh": "2026年10月16日，发布准备度复核（P129）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（发布复核（P129）：最小的识标明双重否定的强度（所经的识不能不含其敏感者）；“条件无穷多时这一条件不能去掉”改为“能否去掉取决于全知原则”（给定消失之判定，尾之律是反例；每个反例给出弱有限全知原则））。",
       "en": "16 October 2026, release-readiness review (P129): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (Release review (P129): the least registration marked at its double-negation strength (a registration read through cannot fail to hold a condition the law is sensitive to); “with infinitely many conditions this cannot be dropped” now reads “whether this can be dropped turns on omniscience” (given a decision of vanishing the tail law is a counterexample; every counterexample gives WLPO))."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；DECIDABILITY-INVENTORY.md（P129：LLPO 的四项只在证明中使用的已定性归类（436 行陈述层））。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); DECIDABILITY-INVENTORY.md (P129: LLPO's four proof-only uses of decidedness classified (436 statement-level rows))."
     }
   ]
 }

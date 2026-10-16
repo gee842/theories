@@ -186,7 +186,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "55bc0918d7108217177a406a495bed309e705d1025e22a064a7a524178680d82",
+      "sha256": "672d7cd5d368d699186ab6a3048e9750959df92c6e49fc964b9aad1e0f2a1ec8",
       "declarations": [
         "Becoming.Run.AgreeUpTo.refl",
         "Becoming.Run.AgreeUpTo.symm",
@@ -292,12 +292,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
       "role": "provenance",
       "sha256": "cf83ac3219b39f47641327d95eb072286d6bd0b21452ab9351642abd895879bc"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T184418.886926Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -393,6 +399,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：陈述原说“其外有附着运行的读法既不可否证也不可证实”；Lean 只给出不可否证（not_refutable_of_adheres），不可证实需要读法之内有附着于补集的运行（not_verifiable_of_adheres）；终于发生从外面被附着而可证实。中英陈述按定律 2 已有的形式更正（审查第 19 项）；correspondence 记 Alpern–Schneider 1985 与 Kelly 1996 的来源（第 39 项，K6）。断言收窄，定理不变。",
       "en": "16 October 2026, eighteenth review (R18): the statement said a reading with an adhering run outside it is “neither refutable nor verifiable”; the Lean gives only “not refutable” (not_refutable_of_adheres), non-verifiability needing a run inside adhering to the complement (not_verifiable_of_adheres), and eventual occurrence is adhered to from outside yet verifiable. The statement is corrected in both languages to the form law 2 already had (review item 19); the correspondence names Alpern–Schneider 1985 and Kelly 1996 (item 39, K6). Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Horizon.lean（P129：新增 Adheres.closed、refutable_adheres_iff、refutable_adheres_of_em；说明改正（不可否证，从不发生不可证实），署名 Alpern–Schneider、Kelly；已有陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Horizon.lean (P129: Adheres.closed, refutable_adheres_iff, refutable_adheres_of_em added; docstrings corrected (not refutable; never occurring not verifiable), Alpern–Schneider and Kelly credited; existing statements unchanged)."
     }
   ],
   "text_versions": []

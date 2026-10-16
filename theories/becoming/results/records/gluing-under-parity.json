@@ -326,7 +326,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
       "role": "proof",
-      "sha256": "eb2f58408fb1faa4bed791fe4875ad0986d98146f0c47088caf778345cafa264",
+      "sha256": "11ec37571bdd756f6992c223fc046ab94c12f63c1b4db55c7a9992055b68312f",
       "declarations": [
         "Becoming.addParity",
         "Becoming.oddOver",
@@ -446,7 +446,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
       "role": "proof",
-      "sha256": "fa48d5a6cc480b7c044b15776756fc30354ab6a776cffaad9d6320eea348f6b8",
+      "sha256": "28d65c468558ff5e790dde6320a6d10919ec37032aae44f7647837759d764342",
       "declarations": [
         "Becoming.Contextual",
         "Becoming.Contextual.Glues",
@@ -493,7 +493,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "sha256": "78d075634e3bd1a64a8f6769a22b5563f8748a1843c3cabfa07efe0790b52ba2",
       "declarations": [
         "Becoming.Distinct",
         "Becoming.search",
@@ -539,19 +539,25 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Gluing",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Context",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -565,7 +571,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Population",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -594,6 +600,10 @@
     {
       "zh": "2026年10月16日，第十八次审查（R18）：correspondence 记奇偶律的来源：GF(2) 上的 Gauss 消元（Fredholm 择一）、Mermin 1990 与 Mermin–Peres、Abramsky–Barbosa–Kishida–Lal–Mansfield 2015、Arkhipov 2012（审查第 39 项，K1）。断言不变。",
       "en": "16 October 2026, eighteenth review (R18): the correspondence names the parity law's sources: Gaussian elimination over GF(2) (the Fredholm alternative), Mermin 1990 and Mermin–Peres, Abramsky–Barbosa–Kishida–Lal–Mansfield 2015 and Arkhipov 2012 (review item 39, K1). Claim unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Gluing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Context.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Gluing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Context.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
     }
   ],
   "text_versions": []
