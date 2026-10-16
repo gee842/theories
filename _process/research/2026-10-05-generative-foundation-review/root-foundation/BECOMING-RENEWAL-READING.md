@@ -11957,3 +11957,61 @@ Readings (the AI's, pending Ren): within finitely many configurations, what goes
 - **The assertion becomes a condition.** The dynamics do not decide it (`Web.significance_undetermined`: significance is a free parameter), so the chapter now states it as the condition of section 6.15 and does not assert it. Section 6.15 gathers what the condition settles and names the step of invariance: along any relation, the condition is exactly the self's presupposition at each standpoint together with that step (`unrestricted_iff_presupposed_along`, `boundaryInvariant_iff_conditional`, `boundaryInvariant_iff_all`). G0 is a theorem under the condition, section 7 is stated under it, and the authorized G0 route keeps its scope.
 - **A correction from the release review, folded in.** Under the condition significance is the same everywhere, so every narrowing loses something with significance, and telling harm from what is not harm needs a measure; the margin boundaries hold for any significance, as arithmetic; C is a law because “better” is read as widening.
 - **Scope.** Docs only: no Lean statement or proof changes; the four Lean docstrings that say “Part II” are left to the review session's next core run. Not settled: the warrant of the condition, a measure for mixed parts.
+
+## 163. 发布准备度复核与第十八次审查（R18、I5）
+
+2026-10-16。Ren：“spawn teams of sub agents, do a full review over the codebase … are we ready to release our significant proves?”，随后：“please work with it, spawn sub agents with proper effort level, and fix all”。六个复核者（可靠性、主张与证明、整合、代码库、理论状态、新颖性）给出[发布准备度复核](BECOMING-RELEASE-READINESS-REVIEW.md)；[第十八次独立审查](BECOMING-EIGHTEENTH-REVIEW.md)复核 P107–P127 与 I4b。均为 AI 的复核，不是成果。
+
+```text
+Result(s): 不新增成果；复核
+Delta: 复核：核心与桥接无 sorry、公理、native_decide 或元编程；构造逻辑的标定陈述正确；没有假定理。
+       问题在文字：定义性或双重否定的陈述被说成“每个宇宙的规律”、一个不存在的定理名、Unrestricted 强于 G0、
+       未署名的经典来源、两个根与第三套词汇、陈旧的连通度
+Evidence: 核心检查在 1a78f978 通过；第十八次审查逐项引 Lean；记录修正（r18-record-fixes）逐项先核 Lean 再改，
+          断言只收窄；I5（检查器加固，基础设施）见 development/i5-checker-reproducible/REPORT.md
+Boundary: 复核与审查是证据文件，不是独立成果；Ren 的决定（审查第 44–51 项、§8 所留）不由此定
+Integration: P128 收入其第 1、3 项；README 与生成链 C03、M15 读 §6.15 的条件；章中最小的识与“能否去掉”按所证强度；
+             二十余条记录收窄（r18-record-fixes）；开篇 v6 的准确性修改由 P128 会话在 Ren 同意后施加
+```
+
+**English.** Ren asked for a full review by teams of agents, and then for everything found to be fixed, working with the P128 session. Six reviewers produced the release-readiness review, and the eighteenth independent review covered P107–P127 and I4b. Both are AI reviews and evidence artifacts, not results.
+- **What they found sound.** No false theorem; a sound, axiom-free core and bridge; constructive calibrations stated correctly.
+- **What they found wrong**, all in prose:
+  - definitional or double-negation statements presented as laws of every universe;
+  - one nonexistent theorem name;
+  - `Unrestricted` presented as a simplification although it is stronger than G0;
+  - uncredited classical sources;
+  - two roots and a third vocabulary;
+  - a stale connectivity measure.
+- **What was fixed.**
+  - P128 took items 1 and 3 of the review.
+  - The README, and chain entries C03 and M15, now read the condition of §6.15.
+  - The chapter states the least registration, and whether its condition can be dropped, at the strength proved.
+  - Over twenty records were narrowed, with each finding checked against the Lean first.
+  - I5 hardened the checker (infrastructure).
+- **Still Ren's.** The opening wording and review items 44–51 remain Ren's decisions.
+
+## 164. 复核所见的脊柱整理（P129）
+
+2026-10-16。工作板 P129。不加新律，不改已有名称与陈述（[报告](development/p129-review-fixes/REPORT.md)）。
+
+```text
+Result(s): 不新增成果；新增连接定理与 LLPO
+Delta: Parting.after、Courses.anyChange 改为 Run.onward、Parting.free 的缩写（rfl）；CrossSituational.distinct_iff；
+       Sequences.recurs_iff；ReferencePlan.alike_iff_agreeOn；LLPO（标准形式）与 eitherThroughout_iff_llpoForDecided；
+       refutable_adheres_iff；同名异义、经典来源与所证强度的说明（约 40 个模块）；四个“第二部分”文档注释读 §6.15 的条件
+Supplied premises / correspondence: 不加前提，不加公理
+Evidence: 核心检查 20261016T121942.514802Z 通过（桥接环境审计 851 个常量）；可判定性清点 436 行，LLPO 的四项证明内使用已归类；
+          145 条记录改绑（notes-batch36），每个变化的源先读：说明、两个改指的缩写、新增定理
+Boundary: 不改名（建议交 Ren）；由布尔形式的 LLPO 回到族的形式需要以数据给出的判定；无前提的“依守可被否证”不可证
+Integration: lifting-where-branching-is-finite 新增一条定律记 EitherThroughout 即 LLPO；sensitivity-is-the-least-registration
+             的 does_not_show 3 收窄为条件不以自然数编号者（已由 Tail 回答）
+```
+
+**English.** Spine fixes from the two reviews, with no new law and no renamed or restated declaration.
+- **Re-definitions and homonyms.** Two re-definitions are now abbreviations, each equal by `rfl`, and the third is bridged. Homonyms that are one notion are linked; the others are annotated, and renames are proposed to Ren.
+- **Docstrings.** Classical sources are credited, and every docstring now matches the strength its theorem proves.
+- **LLPO.** It is defined in its standard form, and `EitherThroughout` is proved to be LLPO for decided families.
+- **Adhering.** Adhering is refutable exactly where its closure is witnessed.
+- **"Part II" docstrings.** The four that said "Part II" now read the condition of §6.15.
+- **Verification.** Core receipt `20261016T121942.514802Z` passed; 145 records were rebound after each changed source was read.
