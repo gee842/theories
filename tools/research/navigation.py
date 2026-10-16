@@ -217,7 +217,7 @@ def render_views(records):
         if path == 'README.md':
             if opening:
                 lines += [opening, '', '---', '']
-            lines += ['The Theory of Becoming explains formation, persistence, transformation, degeneration and dissolution within one relational unfolding, without first assuming that becoming is good. Its Universal Metaethical Core adopts one explicit axiom, G0: living and further generation within the whole have basic positive normative significance. With explicit practical premises, it supplies reasons addressed to every situated intelligence and a normative framework for AI alignment.', '',
+            lines += ['The Theory of Becoming explains formation, persistence, transformation, degeneration and dissolution within one relational unfolding, without first assuming that becoming is good. It uses no Lean axiom: each law is proved under the conditions it names. The Universal Metaethical Core\'s G0, that living and further generation within the whole have basic positive normative significance, is a theorem with one condition the theory does not assert, Ren\'s proposed “for anything, its continuation into the future has significance” (chapter section 6.15). With explicit practical premises, G0 supplies reasons addressed to every situated intelligence and a normative framework for AI alignment.', '',
                       'Start with the canonical entry, ' + link(CANONICAL, path, 'The Theory of Becoming / 生成／变化之论') + ': its premise card, eight parts, formal spine and the place of earlier chapters.', '']
             if featured:
                 lines += ['## Leading results', '']

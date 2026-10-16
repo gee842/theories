@@ -461,13 +461,18 @@
           "title_en": "Shengsheng as a positive direction",
           "claim_zh": "整体创造更多生、更丰富的可能与多样性，并使复杂组织继续发展的能力，是正在论证的善的方向。",
           "claim_en": "The whole’s formation of more life, richer possibilities and diversity, and capacities for further organizational development is the proposed favorable direction.",
-          "scope_zh": "Ren 明确正面方向；当前 alignment 任务以 G0 为公理，不宣称起点已无前提得证",
-          "scope_en": "Direction stated by Ren; the current alignment task adopts G0 as an axiom, without claiming a premise-free proof of that starting point",
+          "scope_zh": "Ren 明确正面方向；G0 不再是公理：以 Ren 提议的一条公理为条件，它是定理（理论不断言这一条件，§6.15），不宣称起点已无前提得证",
+          "scope_en": "Direction stated by Ren; G0 is no longer an axiom: it is a theorem with Ren's proposed axiom as its condition, a condition the theory does not assert (section 6.15), without claiming a premise-free proof of that starting point",
           "links": [
             {
               "label_zh": "当前表述与范围",
               "label_en": "Current statement and scope",
               "path": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction"
+            },
+            {
+              "label_zh": "条件小节",
+              "label_en": "The conditional section",
+              "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance"
             }
           ]
         },
