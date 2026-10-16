@@ -1,3 +1,11 @@
 .DS_Store
 __pycache__/
 *.py[cod]
+.claude/worktrees/
+.lake/
+*.olean
+*.ilean
+node_modules/
+.venv/
+*.blend1
+.pytest_cache/

@@ -131,5 +131,50 @@ class RegistryTests(unittest.TestCase):
         self.assertIn('missing or unsafe reference', self.errors())
 
 
+class OneLanguageTests(unittest.TestCase):
+    """Pages render English, falling back to Chinese; the record keeps both."""
+    def test_text_field_needs_one_nonempty_language(self):
+        for value in ({'en': 'x'}, {'zh': '中'}, {'en': 'x', 'zh': ''}, {'en': ' ', 'zh': '中'}):
+            self.assertTrue(registry.pair(value), value)
+        for value in (None, 'x', {}, {'en': ' '}, {'en': 'x', 'zh': 3}, {'zh': None}):
+            self.assertFalse(registry.pair(value), value)
+        self.assertEqual(registry.en({'en': 'English', 'zh': '中文'}), 'English')
+        self.assertEqual(registry.en({'en': ' ', 'zh': '中文'}), '中文')
+        self.assertEqual(registry.en({'zh': '中文'}), '中文')
+
+    def test_former_heading_anchor_is_kept_once(self):
+        page = registry.finish([registry.heading('#', 'Register', '登记 / Register'), '', '## Plain', '',
+                                registry.heading('##', 'Plain', 'Plain'), registry.heading('##', 'Next', 'Next / 下一步'),
+                                '<a id="next--下一步"></a>'])
+        self.assertTrue(page.startswith('<a id="登记--register"></a>\n# Register\n'))
+        self.assertEqual(page.count('<a id="next--下一步"></a>'), 1)  # already present, not repeated
+        self.assertNotIn('<a id="plain-1"></a>', page)  # a heading that kept its text keeps its anchor
+
+    def test_repository_pages_keep_former_anchors_and_render_english(self):
+        from tools.research.reading_catalogue import anchors_from_text
+        records, errors = registry.load_records()
+        self.assertEqual(errors, [])
+        for r in records[:40]:
+            page = registry.render_record(r)
+            with self.subTest(id=r['id']):
+                self.assertNotIn(' / 证据', page)
+                self.assertIn('evidence--证据' if r.get('schema_version') == 2 else '沿革-history', anchors_from_text(page))
+
+    def test_rebinding_history_folds_into_one_counted_line(self):
+        r = {'id': 'example', 'history': [
+            {'en': '2026-10-09: added as a result.', 'zh': '新增。'},
+            {'en': '2026-10-12 P58b: validation scope re-pointed to consolidated receipt 20261011T232354.807725Z. The claim is unchanged.', 'zh': '重新指向。'},
+            {'en': '15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: X.md.', 'zh': '重绑。'},
+            {'en': '2026-10-09: P12b corrected this record following the fifth review; the consolidated checker was rerun.', 'zh': '更正。'},
+        ]}
+        lines = registry.history_lines(r)
+        self.assertEqual(lines[0], '- 2026-10-09: added as a result.')
+        self.assertIn('P12b corrected this record', lines[1])  # changes the record's text: stays visible
+        self.assertEqual(len(lines), 3)
+        self.assertTrue(lines[2].startswith('- 2 rebinding entries (2026-10-12 to 2026-10-15): '))
+        self.assertIn('[record](example.json)', lines[2])
+        self.assertEqual(registry.history_lines({'id': 'x', 'history': r['history'][:1]}), ['- 2026-10-09: added as a result.'])
+
+
 if __name__ == '__main__':
     unittest.main()

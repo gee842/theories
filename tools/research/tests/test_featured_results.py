@@ -1,5 +1,6 @@
 """Keep leading results ordered, scoped and derived from reviewable metadata."""
 import copy
+import re
 from pathlib import Path
 import tempfile
 import unittest
@@ -68,14 +69,18 @@ class FeaturedResultsTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'completed scoped result'):
             navigation.featured_results([record], {'readme_featured_results': ['first']})
 
-    def test_requires_all_bilingual_overview_fields(self):
+    def test_requires_every_overview_field_in_one_language(self):
         for field in ('title', 'summary', 'evidence'):
             for language in ('en', 'zh'):
                 record = result('first')
                 record['overview'][field][language] = ' '
                 with self.subTest(field=field, language=language):
-                    with self.assertRaisesRegex(ValueError, 'bilingual overview'):
-                        navigation.featured_results([record], {'readme_featured_results': ['first']})
+                    self.assertEqual(len(navigation.featured_results([record], {'readme_featured_results': ['first']})), 1)
+            record = result('first')
+            record['overview'][field] = {'en': ' ', 'zh': ''}
+            with self.subTest(field=field, language=None):
+                with self.assertRaisesRegex(ValueError, 'overview title, summary and evidence'):
+                    navigation.featured_results([record], {'readme_featured_results': ['first']})
 
     def test_navigation_validation_reports_invalid_featured_selection(self):
         with patch.object(navigation, 'goals', return_value=[]), patch.object(navigation, 'read', return_value={'readme_featured_results': ['missing']}):
@@ -97,9 +102,13 @@ class FeaturedResultsTests(unittest.TestCase):
         self.assertIn('[Canonical source](theories/second.md)', root)
         self.assertIn('[Scope, premises and evidence](theories/results/records/second.md)', root)
         self.assertNotIn('second 摘要', root)
-        self.assertNotIn('我们研究同一生成展开', root)
-        self.assertIn('我们研究同一生成展开', views['_process/BRIEF.md'])
+        self.assertIn('We investigate how relations form', views['_process/BRIEF.md'])
+        self.assertIn('Canonical entry:', views['_process/BRIEF.md'])
         self.assertNotIn('## Leading results', views['_process/BRIEF.md'])
+        for path, body in views.items():
+            with self.subTest(path=path):
+                prose = re.sub(r'<a id="[^"]*"></a>', '', body)  # kept anchors may spell the earlier Chinese heading
+                self.assertNotRegex(prose, '[\u4e00-\u9fff]', 'generated views render English only')
 
     def test_optional_overview_is_validated_and_visible_on_record_page(self):
         records, _ = registry.load_records()
@@ -107,12 +116,12 @@ class FeaturedResultsTests(unittest.TestCase):
         record['overview'] = result('editorial')['overview']
         rendered = registry.render_record(record)
         for field in ('title', 'summary', 'evidence'):
-            for language in ('en', 'zh'):
-                self.assertIn(record['overview'][field][language], rendered)
+            self.assertIn(record['overview'][field]['en'], rendered)
+            self.assertNotIn(record['overview'][field]['zh'], rendered)
         for bad in (None, {}, {'title': {'zh': '标题', 'en': 'Title'}}):
             record['overview'] = bad
             errors, _ = registry.validate([record])
-            self.assertTrue(any('overview requires bilingual' in error for error in errors))
+            self.assertTrue(any('overview requires title, summary and evidence' in error for error in errors))
 
 
 class ResearchGoalsTests(unittest.TestCase):
@@ -133,17 +142,21 @@ class ResearchGoalsTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, message):
                     navigation.research_goals([goal('ethics')], {'readme_research_goals': configured})
 
-    def test_rejects_missing_translation_and_validates_unselected_overview(self):
+    def test_accepts_one_language_and_rejects_empty_overview_fields(self):
         for field in ('title', 'summary', 'next_step'):
             for language in ('en', 'zh'):
                 metadata = goal('ethics')
                 metadata['overview'][field][language] = ' '
                 with self.subTest(field=field, language=language):
-                    with self.assertRaisesRegex(ValueError, 'bilingual overview'):
-                        navigation.research_goals([metadata], {'readme_research_goals': ['ethics']})
-                    with patch.object(navigation, 'goals', return_value=[metadata]), patch.object(navigation, 'read', return_value={}):
-                        errors = navigation.validate_goals([])
-                    self.assertTrue(any('overview requires bilingual' in error for error in errors))
+                    self.assertEqual(len(navigation.research_goals([metadata], {'readme_research_goals': ['ethics']})), 1)
+            metadata = goal('ethics')
+            metadata['overview'][field] = {'zh': ' '}
+            with self.subTest(field=field, language=None):
+                with self.assertRaisesRegex(ValueError, 'overview title, summary and next_step'):
+                    navigation.research_goals([metadata], {'readme_research_goals': ['ethics']})
+                with patch.object(navigation, 'goals', return_value=[metadata]), patch.object(navigation, 'read', return_value={}):
+                    errors = navigation.validate_goals([])
+                self.assertTrue(any('overview requires title, summary and next_step' in error for error in errors))
 
     def test_navigation_validation_reports_missing_goal_id(self):
         with patch.object(navigation, 'goals', return_value=[]), patch.object(navigation, 'read', return_value={'readme_research_goals': ['unknown']}):
@@ -173,8 +186,11 @@ class ResearchGoalsTests(unittest.TestCase):
         self.assertNotIn('retired', established)
         self.assertNotIn('withdrawn-result', established)
         self.assertNotIn('ethics 研究', root)
-        self.assertIn('ethics 研究', views['GOALS.md'])
-        self.assertIn('ethics 下一步', views['GOALS.md'])
+        self.assertIn('ethics research summary', views['GOALS.md'])
+        self.assertIn('ethics next investigation', views['GOALS.md'])
+        self.assertNotIn('ethics 研究', views['GOALS.md'])
+        # The earlier bilingual heading's anchor stays, so inbound links resolve.
+        self.assertIn('<a id="ethics-title--ethics-title"></a>\n## ethics title', views['GOALS.md'])
 
 
 class OpeningTests(unittest.TestCase):
@@ -228,7 +244,7 @@ class OpeningTests(unittest.TestCase):
             views = navigation.render_views([result('first')])
         root = views['README.md']
         self.assertTrue(root.startswith('# The Theory of Becoming\n'))
-        self.assertLess(root.index('[Home / 首页]'), root.index('## Truth exists'))
+        self.assertLess(root.index('[Home]'), root.index('## Truth exists'))
         self.assertLess(root.index('Opening body.'), root.index('The Theory of Becoming explains'))
         self.assertLess(root.index('The Theory of Becoming explains'), root.index('## Leading results'))
         self.assertNotIn('Opening body.', views['_process/BRIEF.md'])

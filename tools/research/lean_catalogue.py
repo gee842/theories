@@ -49,6 +49,21 @@ GROUPS = {
 }
 
 
+CHAPTERS = "theories/becoming/chapters/"
+
+
+def current(path: str) -> str:
+    """`path`, or where the move receipts moved it (tools/research/moves.py) once it is gone."""
+    try:
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from tools.research import moves
+        return moves.current_path(path, ROOT)
+    except ImportError:
+        return path
+
+
 def discover(glob: str) -> list[str]:
     command = ["rg", "--files", "--hidden", "--no-ignore", "-0", "-g", glob]
     for directory in EXCLUDED:
@@ -162,6 +177,10 @@ def path_role(path: str) -> str | None:
         return "saved-copy"
     if any(p == "development" or (p.endswith("-development") and p != "valuation-development") or p.startswith("attempt-") or p in ("review-history", "review-probe-authority") for p in parts[:-1]) or parts[0] == "_process":
         return "development-attempt"
+    # Retired material (a component named `history`, as in tools/research/paths.py) is a saved
+    # copy wherever it sits, including Lean run folders moved to `<lean root>/history/`.
+    if any(p == "history" for p in parts[:-1]):
+        return "saved-copy"
     if any(
         p in ("sources", "runs", "snapshots", "source-snapshots", "verification", "verification-history", "isolated", "build", "nondual-independent-logs", "legacy-replays")
         or p.endswith(("-runs", "-verification", "-checks"))
@@ -366,7 +385,7 @@ def render_index(manifest: dict, sources: dict) -> str:
         members = [f for f in active if f["group"] == key]
         if not members:
             continue
-        rows += ["", f'<a id="group-{key}"></a>', "", f"## {title}", "", significance, "", f"概念入口 / Conceptual entry: {mdlink(theory.removesuffix('.md'), 'theories/becoming/chapters/' + theory)}.", "", "| 模块 / Module | theorem/lemma | 其他声明 / Other declarations | 解释与既有证据 / Interpretation & existing evidence |", "|---|---:|---:|---|"]
+        rows += ["", f'<a id="group-{key}"></a>', "", f"## {title}", "", significance, "", f"概念入口 / Conceptual entry: {mdlink(theory.removesuffix('.md'), current(CHAPTERS + theory))}.", "", "| 模块 / Module | theorem/lemma | 其他声明 / Other declarations | 解释与既有证据 / Interpretation & existing evidence |", "|---|---:|---:|---|"]
         for file in members:
             content = manifest["contents_by_sha256"][file["sha256"]]
             theorem_count = sum(d["kind"] in ("theorem", "lemma") for d in content["declarations"])

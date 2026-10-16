@@ -1,7 +1,8 @@
-.PHONY: research-check research-render research-find research-test research-imports
+.PHONY: research-check research-render research-find research-test research-imports research-links research-secrets
 export QUERY
 
 research-check:
+	python3 -B tools/research/research.py secrets
 	python3 -B tools/research/research.py check
 
 research-render:
@@ -15,3 +16,9 @@ research-test:
 
 research-imports:
 	python3 -B tools/research/research.py imports
+
+research-links:
+	python3 -B tools/research/research.py links
+
+research-secrets:
+	python3 -B tools/research/research.py secrets

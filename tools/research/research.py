@@ -16,7 +16,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-from tools.research import registry, navigation, lean_catalogue, reading_catalogue, style
+from tools.research import registry, navigation, lean_catalogue, reading_catalogue, style, paths, moves
 
 
 @contextmanager
@@ -112,6 +112,10 @@ def inventory():
 
 def working(path):
     parts = Path(path).parts
+    # One shared classifier decides source, scratch, history and frozen evidence; a
+    # component named `history` is history for every file type, Lean included.
+    if paths.role(path) not in ('live', 'generated'):
+        return False
     if path.endswith('.lean'):
         return lean_catalogue.role(path, {'declarations': [True], 'print_axioms_commands': 0}) == 'working-source'
     if parts[0] not in {'theories', '_process', 'tools', 'experiments'}:
@@ -130,7 +134,7 @@ def search(query, archives=False, limit=30):
     for r in records:
         text = json.dumps({k: r.get(k) for k in ('id', 'title', 'statement', 'claim', 'laws', 'does_not_show', 'aliases')}, ensure_ascii=False)
         if needle in text.casefold():
-            results.append({'kind': 'result', 'path': str(registry.record_path(r).relative_to(ROOT)), 'id': r['id'], 'summary': registry.bilingual(r['title'])})
+            results.append({'kind': 'result', 'path': str(registry.record_path(r).relative_to(ROOT)), 'id': r['id'], 'summary': registry.en(r['title'])})
     for path in inventory():
         if not archives and not working(path):
             continue
@@ -187,6 +191,49 @@ def check_links(outputs, planned=()):
                 if unquote(part.fragment) not in found:
                     errors.append(f'{name}: missing anchor {target}')
     return errors
+
+
+SECRET_PATTERNS = {
+    'openrouter': r'sk-or-v1-[0-9a-f]{64}',
+    'anthropic': r'sk-ant-[A-Za-z0-9_-]{20,}',
+    'openai': r'sk-proj-[A-Za-z0-9_-]{20,}',
+    'github': r'(?<![A-Za-z0-9_])(?:ghp_[A-Za-z0-9]{36}|github_pat_[A-Za-z0-9_]{22,})',
+    'aws': r'(?<![A-Z0-9])AKIA[0-9A-Z]{16}(?![A-Z0-9])',
+    'google': r'AIza[0-9A-Za-z_-]{35}',
+    'slack': r'xox[abprs]-[A-Za-z0-9-]{10,}',
+    'huggingface': r'(?<![A-Za-z0-9_])hf_[A-Za-z0-9]{34}(?![A-Za-z0-9])',
+    'private-key': r'-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY-----',
+}
+SECRET_PREFIXES = ['sk-or-v1-', 'sk-ant-', 'sk-proj-', 'ghp_', 'github_pat_', 'AKIA', 'AIza',
+                   'xoxa-', 'xoxb-', 'xoxp-', 'xoxr-', 'xoxs-', 'hf_', 'PRIVATE KEY-----']
+
+
+def secrets(root=ROOT, allowlist=None):
+    """Credential patterns in tracked text files. A match is reported by kind, place and the
+    sha256 of the matched string, never by its text; `secrets_allowlist` lists accepted hashes."""
+    import hashlib
+    entries = registry.config().get('secrets_allowlist', []) if allowlist is None else allowlist
+    allow = {a.get('sha256'): a.get('note', '') for a in entries if isinstance(a, dict)}
+    args = ['git', 'grep', '-I', '-n', '-z', '-F'] + [x for p in SECRET_PREFIXES for x in ('-e', p)]
+    out = subprocess.run(args, cwd=root, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    if out.returncode not in (0, 1):
+        raise ValueError('git grep failed: ' + out.stderr.decode(errors='replace')[:300])
+    compiled = {k: re.compile(v) for k, v in SECRET_PATTERNS.items()}
+    findings, allowed = [], []
+    for row in out.stdout.split(b'\n'):
+        fields = row.split(b'\0', 2)
+        if len(fields) < 3:
+            continue
+        path, line, text = fields[0].decode(errors='replace'), int(fields[1]), fields[2].decode(errors='replace')
+        for kind, pattern in compiled.items():
+            for m in pattern.finditer(text):
+                digest = hashlib.sha256(m.group(0).encode()).hexdigest()
+                item = {'kind': kind, 'path': path, 'line': line, 'sha256': digest}
+                (allowed if digest in allow else findings).append(item)
+    return {'findings': findings, 'allowlisted': len(allowed),
+            'allowlisted_by_note': {allow[d]: sum(1 for a in allowed if a['sha256'] == d) for d in sorted({a['sha256'] for a in allowed})},
+            'scope': 'Tracked text files (git grep -I). Matches are shown by sha256 only. Add an accepted (for example revoked) '
+                     'credential to secrets_allowlist in _process/research-config.json by its sha256 and a note.'}
 
 
 def check_or_render(render=False, base=None, ids=None):
@@ -256,14 +303,53 @@ def main():
     p.add_argument('--ids', nargs='+')
     p = sub.add_parser('snapshot', help='Before migrating a record, store its exact bytes and print the text_versions entry')
     p.add_argument('id')
+    p = sub.add_parser('move', help='Move files to new paths (dry run unless --apply); rewrite live references; write receipts')
+    what = p.add_mutually_exclusive_group(required=True)
+    what.add_argument('--plan', help='TSV: old_path<TAB>new_path<TAB>reason')
+    what.add_argument('--check', metavar='RECEIPT', help='verify an applied move receipt: new paths hold the recorded sha256, no live reference names an old path')
+    p.add_argument('--apply', action='store_true')
+    p.add_argument('--batch', help='receipt name (default moves-<date>-<plan name>)')
+    p.add_argument('--summary', action='store_true', help='print the summary and conflicts only')
+    p.add_argument('--keep-references', action='store_true',
+                   help='move without rewriting references: the vacated paths receive new files afterwards (H1-replace, H6-replace)')
+    p = sub.add_parser('evidence', add_help=False, help='Content-addressed store for checker run folders: plan, pack, restore, verify (tools/research/evidence_store.py)')
+    p.add_argument('evidence_args', nargs=argparse.REMAINDER)
+    p = sub.add_parser('links', help='Check relative links and #anchors in live Markdown files')
+    p.add_argument('--paths', nargs='+', help='limit to these files or directories')
+    p.add_argument('--live-only', action='store_true', help='leave generated pages out')
+    p.add_argument('--limit', type=int, default=200, help='broken links listed (counts are always complete)')
+    sub.add_parser('secrets', help='Scan tracked files for credential patterns (hashes only)')
     p = sub.add_parser('preserve-view', help='After reading and reconciling added prose, preserve it before rendering')
     p.add_argument('path')
     p.add_argument('--note', required=True, help='Where the reviewed additions were integrated, with their scope')
+    if sys.argv[1:2] == ['evidence']:
+        # The evidence store has its own subcommands and help; pass its arguments through.
+        from tools.research import evidence_store
+        return evidence_store.main(sys.argv[2:])
     args = parser.parse_args()
     if args.command == 'find':
         if not args.query.strip():
             parser.error('supply a query or use make research-find QUERY=topic')
         result, code = search(args.query, args.archives, args.limit), 0
+    elif args.command == 'move' and args.check:
+        result = moves.check_receipt(args.check)
+        code = 1 if result['errors'] else 0
+        if args.summary:
+            result = {k: (v if not isinstance(v, list) or len(v) <= 20 else v[:20] + [f'... and {len(v) - 20} more'])
+                      for k, v in result.items()}
+    elif args.command == 'move':
+        result = moves.run(args.plan, apply=args.apply, batch=args.batch, full=not args.summary,
+                           keep_references=args.keep_references)
+        code = 1 if result.get('conflicts') or result.get('verification_errors') else 0
+    elif args.command == 'links':
+        result = moves.check_links(ROOT, args.paths, include_generated=not args.live_only)
+        code = 1 if result['broken'] else 0
+        if args.limit >= 0 and len(result['list']) > args.limit:
+            result['list_truncated_to'] = args.limit
+            result['list'] = result['list'][:args.limit]
+    elif args.command == 'secrets':
+        result = secrets()
+        code = 1 if result['findings'] else 0
     elif args.command == 'imports':
         result, code = import_graph(), 0
     elif args.command == 'lint':

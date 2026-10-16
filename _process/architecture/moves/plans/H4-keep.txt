@@ -1,0 +1,35 @@
+theories/becoming/chapters/THE-THEORY-OF-BECOMING.md	canonical chapter
+theories/becoming/chapters/NONDUAL-METHOD.md	method; read before all foundation work (AGENTS.md)
+theories/becoming/chapters/CLAIMS.md	generated register stub (becomes a short redirect via navigation.py)
+theories/becoming/chapters/BECOMING-FOUNDATION.md	canonical section 11 active study; the open whole deduction (section 5)
+theories/becoming/chapters/THEORY-OF-BECOMING.md	canonical section 11 active study; source of 5 records
+theories/becoming/chapters/G0-WARRANT.md	canonical section 11 active study
+theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md	canonical section 11 active study; cited at canonical lines 341 and 1371
+theories/becoming/chapters/ALIGNMENT-DIRECTION.md	canonical section 11 active study; statement source of canonical section 7
+theories/becoming/chapters/KNOWLEDGE.md	canonical section 11 active study; cited by canonical section 3
+theories/becoming/chapters/PRACTICAL-JUDGMENT.md	statement source of record practical-judgment-g0-j; cited by README and the chain
+theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md	cited by canonical line 1339; statement source of 3 records
+theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md	statement source of finite-aggregation-within-restorable-basic-losses; updated 10-14
+theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md	statement source of open-form-realization-under-revision; P89 bridge 10-13
+theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md	active cognition goal (GOALS.md); states the P73/P74 learning laws
+theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md	current synthesis of knowing and wisdom; cited by canonical section 3
+theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md	section 15 is Ren's 9 Oct responsive-transformation framing, called the current formulation
+theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md	Ren's current 一体之仁 / C2 line
+theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md	current argument; 7 Lean modules, two joined to the spine
+theories/becoming/chapters/WISDOM-AND-CONTEXT.md	statement source of open target wisdom-root; updated 10-14
+theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md	statement source of open target universal-practical-warrant
+theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md	statement source of the open scientific-inquiry target; updated 10-14
+theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md	canonical section 4; statement source of the market records
+theories/becoming/chapters/MARKET-DYNAMICS-MATH.md	defines the market update law the four market records take as hypothesis; kept paired
+theories/becoming/chapters/GENERATED-LOGIC.md	statement source of constitutive-binding-assessment
+theories/becoming/chapters/ETHICAL-LEARNING.md	statement source of organizational-formation-from-generative-comparison; Ren redirected sections 55-74
+theories/becoming/chapters/MATHEMATICAL-CORE.md	accurate exposition of the pure-core foundation GenerativeCore (unchanged since 10-06)
+theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md	status page of the mathematics line Ren kept outside the spine (10-16)
+theories/becoming/chapters/DAO-AND-GENERATIVITY.md	Ren-confirmed open direction (classical texts)
+theories/becoming/chapters/PRE-QIN-AND-WENYAN.md	Ren-confirmed open direction (competing explanations)
+theories/becoming/chapters/HANZI-AND-THEORY-TREE.md	Ren-marked 'feasible and open' method direction
+theories/becoming/chapters/LIANGZHI-EVOLUTION.md	the liangzhi-evolution goal statement (GOALS.md); lean_catalogue anchor
+theories/becoming/chapters/WANG-YANGMING.md	unique classical comparison; belongs with the Chinese-classics cluster (DAO, PRE-QIN, HANZI)
+theories/becoming/chapters/ALIGNMENT-COMPLETION.md	PINNED (stays for now): hard-coded in _process/research/2026-10-05-generative-foundation-review/foundation-assessment/FRONTIER-CHECK.py
+theories/becoming/chapters/FORMAL-CORE.md	PINNED (stays for now): hard-coded in experiments/shared-renewal-capability/discovery/exact_check.py
+theories/becoming/chapters/FORMAL-SPECIFICATION.md	PINNED (stays for now): hard-coded in experiments/shared-renewal-capability/discovery/exact_check.py

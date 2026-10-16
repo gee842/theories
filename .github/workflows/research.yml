@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Test infrastructure
         run: make research-test
       - name: Check records, evidence bindings, preservation and generated navigation

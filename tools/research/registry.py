@@ -44,11 +44,18 @@ _versions, _comparisons = {}, {}
 
 
 def reviewed_version(path, sha256):
-    """The text of `path` as committed with this sha256 in HEAD's history, or None."""
+    """The text of `path` as committed with this sha256 in HEAD's history, or None. A file the
+    move receipts moved is also searched at its former paths (moved bytes keep their blobs),
+    so a moved Markdown source that later changes still finds the version a record reviewed."""
     import subprocess
     if path not in _versions:
         try:
-            log = subprocess.check_output(['git', 'log', '-m', '--format=', '--raw', '--no-abbrev', '--no-renames', 'HEAD', '--', path],
+            from tools.research import moves
+            names = [path] + moves.former_paths(path, ROOT)
+        except (ImportError, OSError, ValueError):
+            names = [path]
+        try:
+            log = subprocess.check_output(['git', 'log', '-m', '--format=', '--raw', '--no-abbrev', '--no-renames', 'HEAD', '--', *names],
                                           cwd=ROOT, text=True, stderr=subprocess.DEVNULL)
         except (OSError, subprocess.CalledProcessError):
             log = ''
@@ -147,12 +154,58 @@ def scoped_drift(record, path, expected, current_path):
     return sorted(set(bearing)) or None
 
 
+LANGUAGES = ('en', 'zh')
+
+
 def pair(value):
-    return isinstance(value, dict) and all(isinstance(value.get(k), str) and value[k].strip() for k in ('zh', 'en'))
+    """A text field: an object whose `en` and `zh`, where present, are strings, at least one of
+    them nonempty. Full translation is no longer required (Ren, 17 October 2026); a record may
+    carry English, Chinese or both."""
+    return (isinstance(value, dict) and all(isinstance(value[k], str) for k in LANGUAGES if k in value)
+            and any(isinstance(value.get(k), str) and value[k].strip() for k in LANGUAGES))
 
 
-def bilingual(value):
-    return value['zh'] + ' / ' + value['en']
+def en(value):
+    """The text a generated page shows: the English, or the Chinese where English is missing.
+    The Chinese stays in the record."""
+    english = value.get('en')
+    return english if isinstance(english, str) and english.strip() else value.get('zh', '')
+
+
+bilingual = en  # older name, kept for callers; pages render one language
+
+
+def heading(marks, text, former=None):
+    """A heading line for `finish`. `former` is the heading's earlier text (the bilingual one),
+    whose GitHub anchor `finish` keeps on the line before the heading."""
+    return (marks, text, text if former is None else former)
+
+
+def finish(lines):
+    """Join page lines. Each heading from `heading` whose earlier text had an anchor the page no
+    longer has gets `<a id="earlier"></a>` before it, so inbound `page#anchor` links keep working.
+    Plain heading lines count in GitHub's numbering of repeated anchors."""
+    from tools.research.reading_catalogue import HEADING, numbered, slug
+    rows = []  # (new text, former text) for every heading, in order
+    for item in lines:
+        if isinstance(item, tuple):
+            rows.append((item[1], item[2]))
+        else:
+            rows += [(h, h) for h in HEADING.findall(item)]
+    new, former = numbered([slug(a) for a, _ in rows]), numbered([slug(b) for _, b in rows])
+    present = set(new) | set(re.findall(r'<a\s+(?:id|name)=["\']([^"\']+)["\']', '\n'.join(x for x in lines if isinstance(x, str))))
+    out, at = [], 0
+    for item in lines:
+        if isinstance(item, tuple):
+            if former[at] not in present:
+                out.append(f'<a id="{former[at]}"></a>')
+                present.add(former[at])
+            out.append(item[0] + ' ' + item[1])
+            at += 1
+        else:
+            at += len(HEADING.findall(item))
+            out.append(item)
+    return '\n'.join(out) + '\n'
 
 
 def valid_overview(value):
@@ -249,7 +302,7 @@ def standard_boundaries_path(settings=None):
 
 
 def standard_boundaries(settings=None):
-    """Shared bilingual boundary sentences, defined once and cited by key."""
+    """Shared boundary sentences, defined once and cited by key."""
     path = standard_boundaries_path(settings)
     if path is None or path_in_repo(path) is None:
         return {}
@@ -278,7 +331,7 @@ def validate_standard_boundaries(settings=None):
         if not re.fullmatch(r'[a-z][a-z0-9-]+', key):
             errors.append(f'standard boundary key is not a stable name: {key}')
         if not pair(value):
-            errors.append(f'standard boundary {key} requires nonempty Chinese and English')
+            errors.append(f'standard boundary {key} requires nonempty English or Chinese')
         elif path_in_repo(value.get('source')) is None:
             errors.append(f'standard boundary {key} needs an existing source')
     return errors
@@ -296,7 +349,7 @@ def validate_v2_fields(r, settings=None):
     if 'limitations' in r:
         errors.append('schema 2 replaces limitations with does_not_show, hypotheses, standard_boundaries and not_required')
     if 'claim' in r and not pair(r['claim']):
-        errors.append('claim, when present, requires nonempty Chinese and English')
+        errors.append('claim, when present, requires nonempty English or Chinese')
     malformed = [key for key in V2_LISTS if not isinstance(r.get(key, []), list)]
     if malformed:
         return errors + ['expected lists: ' + ', '.join(malformed)]
@@ -304,7 +357,7 @@ def validate_v2_fields(r, settings=None):
         return errors + ['laws, does_not_show, not_required, progress and text_versions entries must be objects']
     for key in ('laws', 'does_not_show', 'not_required', 'progress'):
         if not all(pair(item) for item in r.get(key, [])):
-            errors.append(f'{key} items require nonempty Chinese and English')
+            errors.append(f'{key} items require nonempty English or Chinese')
     references = [x for x in r.get('references', []) if isinstance(x, dict)]
     paths = {x.get('path') for x in references}
     declared = {d for x in references for d in x.get('declarations', []) if isinstance(d, str)}
@@ -341,7 +394,7 @@ def validate_v2_fields(r, settings=None):
         path, expected = version.get('path'), version.get('sha256')
         p = path_in_repo(path)
         if not pair(version.get('note')):
-            errors.append('text version needs a bilingual note')
+            errors.append('text version needs a note in English or Chinese')
         if p is None or not isinstance(expected, str) or not SHA256.fullmatch(expected) or digest(p) != expected:
             errors.append(f'text version missing or changed: {path}')
             continue
@@ -441,13 +494,13 @@ def validate(records):
             fail('a target cannot be marked completed')
         for key in REQUIRED[2 if v2 else 1]:
             if not pair(r.get(key)):
-                fail(f'{key} requires nonempty Chinese and English')
+                fail(f'{key} requires nonempty English or Chinese')
         if v2:
             for message in validate_v2_fields(r, settings):
                 fail(message)
         else:
             if 'statement' in r and not pair(r['statement']):
-                fail('statement, when present, requires nonempty Chinese and English')
+                fail('statement, when present, requires nonempty English or Chinese')
             later = [key for key in V2_LISTS if key in r]
             if later:
                 fail('schema-2 fields need schema_version 2: ' + ', '.join(later))
@@ -455,15 +508,15 @@ def validate(records):
             if finding['severity'] == 'error':
                 fail(f'{finding["field"]}: {finding["rule"]}: {finding["detail"]}')
         if 'overview' in r and not valid_overview(r['overview']):
-            fail('overview requires bilingual title, summary and evidence')
+            fail('overview requires title, summary and evidence, each in English or Chinese')
         if not r.get('hypotheses') or not all(pair(x) for x in r['hypotheses']):
-            fail('explicit bilingual hypotheses required')
+            fail('explicit hypotheses required, each in English or Chinese')
         if not re.fullmatch(r'F\d\d', r.get('family', '')):
             fail('session-map family required')
         if not isinstance(r.get('reviewed_at_utc'), str) or not r['reviewed_at_utc'].endswith('+00:00'):
             fail('UTC documentary review timestamp required')
         if not r.get('history') or not all(pair(x) for x in r['history']):
-            fail('bilingual provenance/history required')
+            fail('provenance/history required, each entry in English or Chinese')
         for alias in [ident] + r.get('aliases', []):
             if not isinstance(alias, str) or not alias.strip():
                 fail('invalid alias')
@@ -543,20 +596,20 @@ def validate(records):
             fail('counterexamples or explicit scoped boundary required')
         for c in r.get('counterexamples', []):
             if not pair(c.get('detail')) or c.get('path') not in paths:
-                fail('counterexample/boundary needs bilingual scope and a hashed source')
+                fail('counterexample/boundary needs its scope in English or Chinese and a hashed source')
     for ident, r in ids.items():
         for edge in r.get('dependencies', []) + r.get('related', []):
             if edge.get('id') not in ids or edge.get('id') == ident:
                 errors.append(f'{ident}: missing or self result link {edge.get("id")}')
             if not pair(edge.get('detail')):
-                errors.append(f'{ident}: result link needs bilingual scope')
+                errors.append(f'{ident}: result link needs its scope in English or Chinese')
         for edge in r.get('dependencies', []):
             if edge.get('relation') not in RELATIONS:
                 errors.append(f'{ident}: dependency requires an explicit relation type')
             if 'interface' in edge:
                 contract = edge['interface']
                 if not isinstance(contract, dict) or not all(pair(contract.get(k)) for k in ('output', 'input', 'conditions')):
-                    errors.append(f'{ident}: dependency interface needs bilingual output, input and conditions')
+                    errors.append(f'{ident}: dependency interface needs output, input and conditions, each in English or Chinese')
                 elif contract.get('evidence') not in {x['path'] for x in r['references']}:
                     errors.append(f'{ident}: dependency interface evidence must be a reviewed reference')
         if r.get('status') == 'superseded' and r.get('superseded_by') not in ids:
@@ -584,7 +637,58 @@ def link(path, base, label=None):
 
 
 def statement_lines(statement):
-    return ['> ' + statement['en'], '>', '> ' + statement['zh'], '']
+    return ['> ' + en(statement), '']
+
+
+# History entries that only rebind a record to new receipts or to source versions reread after a
+# change, leaving the claim as it was. On a record page they fold into one counted line; the
+# record keeps every entry. An entry that also says the record's own text changed stays visible.
+REBINDING = re.compile(
+    r're-pointed to (?:the )?(?:new |consolidated |current )?receipt|now points to the new receipt|'
+    r'rebound to the new receipts?|\brehashed\b|reconciled after reading the changes to|'
+    r'merge reconciliation|source maintenance: reviewed only|source reconciliation|documentary reconciliation|'
+    r'documentary correspondence|shared-chapter review|Review of this main commit|restores the preceding review entry|'
+    r'reran the consolidated checker|consolidated checker was rerun|only the receipt, counts and hashes are updated|'
+    r'reviewed the added [^.;]{0,80}(?:paragraph|row)', re.I)
+CHANGES_RECORD = re.compile(
+    r'\b(?:claim|statement|premises?|hypothes[ie]s|status|title|does[- ]not[- ]show|limitations?|next[_ ]delta) '
+    r'(?:now\b|became\b|was (?:changed|revised|corrected|narrowed|widened|replaced))|corrected this record|'
+    r'this record is corrected|\bwithdrawn\b|\bsuperseded\b|\bnew theorem|\breadings? (?:adopted|decided)', re.I)
+MONTHS = {m: i for i, m in enumerate(('January February March April May June July August September October '
+                                      'November December').split(), 1)}
+
+
+def rebinding(entry):
+    """True for a history entry that only rebinds the record (see REBINDING)."""
+    text = entry.get('en') or entry.get('zh') or ''
+    return bool(REBINDING.search(text)) and not CHANGES_RECORD.search(text)
+
+
+def entry_date(entry):
+    text = entry.get('en') or ''
+    m = re.match(r'\s*(20\d\d-\d\d-\d\d)', text)
+    if m:
+        return m[1]
+    m = re.match(r'\s*(\d{1,2}) (' + '|'.join(MONTHS) + r') (20\d\d)', text)
+    return f'{m[3]}-{MONTHS[m[2]]:02d}-{int(m[1]):02d}' if m else None
+
+
+def history_lines(r):
+    """Substantive history entries in order, then one line counting the folded rebindings."""
+    kept = [h for h in r['history'] if not rebinding(h)]
+    folded = [h for h in r['history'] if rebinding(h)]
+    lines = ['- ' + en(h) for h in kept]
+    if folded:
+        dates = sorted(d for d in map(entry_date, folded) if d)
+        span = f' ({dates[0]} to {dates[-1]})' if dates and dates[0] != dates[-1] else f' ({dates[0]})' if dates else ''
+        lines += [f'- {len(folded)} rebinding {"entry" if len(folded) == 1 else "entries"}{span}: receipts re-pointed '
+                  f'or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the '
+                  f'[record]({r["id"]}.json).']
+    return lines
+
+
+FOOTER = ('Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports '
+          'or establish premise warrant, and this page is not a proof receipt.')
 
 
 def render_record_v2(r):
@@ -593,67 +697,66 @@ def render_record_v2(r):
     def result_link(ident):
         target = r.get('_record_links', {}).get(ident)
         return link(str(Path(target).with_suffix('.md')), base, ident) if target else f'[{ident}]({ident}.md)'
-    def both(value):
-        return value['en'] + '<br>' + value['zh']
     def anchored(source):
         file, sep, anchor = source.partition('#')
         return f'[study]({os.path.relpath(ROOT / file, base)}{sep}{anchor})'
-    lines = [f'# {r["title"]["en"]} / {r["title"]["zh"]}', '',
+    title = r['title']
+    lines = [heading('#', en(title), f'{title.get("en", "")} / {title.get("zh", "")}'), '',
              '<!-- Generated by tools/research/registry.py; edit the matching JSON record. -->', '',
              f'`{r["id"]}` · **{r["status"]}** · {r["kind"]} · {r["family"]} · [record]({r["id"]}.json) · ' + link('RESULTS.md', base, 'register'), '']
     lines += statement_lines(r['statement'])
     if 'overview' in r:
         o = r['overview']
-        lines += ['<details><summary>README overview / 首页摘要</summary>', '', '**' + bilingual(o['title']) + '**', '',
-                  bilingual(o['summary']), '', '**Evidence / 证据:** ' + bilingual(o['evidence']), '', '</details>', '']
-    progress = ['## Progress / 已接通', ''] + [f'{i}. ' + both(x) + ' ' + anchored(x['source']) for i, x in enumerate(r.get('progress', []), 1)] + ['']
+        lines += ['<details><summary>README overview</summary>', '', '**' + en(o['title']) + '**', '',
+                  en(o['summary']), '', '**Evidence:** ' + en(o['evidence']), '', '</details>', '']
+    progress = [heading('##', 'Progress', 'Progress / 已接通'), ''] + [f'{i}. ' + en(x) + ' ' + anchored(x['source']) for i, x in enumerate(r.get('progress', []), 1)] + ['']
     if r.get('progress') and r['kind'] == 'target':
         lines += progress  # for an open target, what is already connected comes first
     if 'claim' in r:
-        lines += ['## Exact statement / 确切陈述', '', r['claim']['en'], '', r['claim']['zh'], '']
+        lines += [heading('##', 'Exact statement', 'Exact statement / 确切陈述'), '', en(r['claim']), '']
     if r.get('laws'):
-        lines += ['## Laws / 规律', '']
+        lines += [heading('##', 'Laws', 'Laws / 规律'), '']
         for i, law in enumerate(r['laws'], 1):
             names = ', '.join('`' + d + '`' for d in law.get('declarations', []))
-            lines += [f'{i}. ' + both(law) + (f' ({names})' if names else '')]
+            lines += [f'{i}. ' + en(law) + (f' ({names})' if names else '')]
         lines += ['']
-    lines += ['## Conditions / 条件', '']
-    lines += ['- ' + both(x) for x in r['hypotheses']]
+    lines += [heading('##', 'Conditions', 'Conditions / 条件'), '']
+    lines += ['- ' + en(x) for x in r['hypotheses']]
     if r.get('not_required'):
-        lines += ['', '**Not required by this target / 本目标不要求:**', '']
-        lines += ['- ' + both(x) for x in r['not_required']]
+        lines += ['', '**Not required by this target:**', '']
+        lines += ['- ' + en(x) for x in r['not_required']]
     if r.get('does_not_show') or r.get('counterexamples'):
-        lines += ['', '## Does not show / 未表明', '']
-        lines += ['- ' + both(x) + (f' Witness: `{x["witness"]}`.' if x.get('witness') else '') for x in r.get('does_not_show', [])]
-        lines += ['- **Counterexample / 反例:** ' + both(c['detail']) + ' ' + link(c['path'], base, 'source') for c in r['counterexamples']]
+        lines += ['', heading('##', 'Does not show', 'Does not show / 未表明'), '']
+        lines += ['- ' + en(x) + (f' Witness: `{x["witness"]}`.' if x.get('witness') else '') for x in r.get('does_not_show', [])]
+        lines += ['- **Counterexample:** ' + en(c['detail']) + ' ' + link(c['path'], base, 'source') for c in r['counterexamples']]
     if r.get('standard_boundaries'):
         known = standard_boundaries()
-        lines += ['', '**Standard boundaries / 通用边界:** ' + ' · '.join(known[k]['en'] + ' ' + known[k]['zh'] for k in r['standard_boundaries'])]
+        lines += ['', '**Standard boundaries:** ' + ' · '.join(en(known[k]) for k in r['standard_boundaries'])]
     if r.get('progress') and r['kind'] != 'target':
         lines += [''] + progress[:-1]
-    lines += ['', '## Evidence / 证据', '', both(r['validation_scope']), '', 'Canonical source: ' + link(r['canonical_source'], base), '',
-              '## Next / 下一步', '', both(r['next_delta']), '',
-              '<details><summary>Correspondence, dependencies, sources and history / 对应、依赖、来源与沿革</summary>', '',
-              '### Correspondence / 对应', '', both(r['correspondence']), '', '### Dependencies / 依赖', '']
+    lines += ['', heading('##', 'Evidence', 'Evidence / 证据'), '', en(r['validation_scope']), '', 'Canonical source: ' + link(r['canonical_source'], base), '',
+              heading('##', 'Next', 'Next / 下一步'), '', en(r['next_delta']), '',
+              '<details><summary>Correspondence, dependencies, sources and history</summary>', '',
+              heading('###', 'Correspondence', 'Correspondence / 对应'), '', en(r['correspondence']), '',
+              heading('###', 'Dependencies', 'Dependencies / 依赖'), '']
     for e in r['dependencies']:
-        lines += [f'- **{e["relation"]}**: {result_link(e["id"])}. {bilingual(e["detail"])}']
+        lines += [f'- **{e["relation"]}**: {result_link(e["id"])}. {en(e["detail"])}']
         if 'interface' in e:
             c = e['interface']
-            lines += ['  - Output / 输出: ' + bilingual(c['output']), '  - Input / 输入: ' + bilingual(c['input']),
-                      '  - Preserved conditions / 保留条件: ' + bilingual(c['conditions']) + ' ' + link(c['evidence'], base)]
+            lines += ['  - Output: ' + en(c['output']), '  - Input: ' + en(c['input']),
+                      '  - Preserved conditions: ' + en(c['conditions']) + ' ' + link(c['evidence'], base)]
     if not r['dependencies']:
-        lines += ['- none / 无']
-    lines += [f'- related, not a proved adapter / 关联而非已证转换: {result_link(e["id"])}. {bilingual(e["detail"])}' for e in r['related']]
-    lines += ['', '### Sources / 来源', '', '| Role | Source | Declarations |', '|---|---|---|']
+        lines += ['- none']
+    lines += [f'- related, not a proved adapter: {result_link(e["id"])}. {en(e["detail"])}' for e in r['related']]
+    lines += ['', heading('###', 'Sources', 'Sources / 来源'), '', '| Role | Source | Declarations |', '|---|---|---|']
     lines += [f'| {x["role"]} | {link(x["path"], base)} | {", ".join("`" + d + "`" for d in x.get("declarations", [])) or "—"} |' for x in r['references']]
-    lines += ['', 'Aliases / 别名: ' + (', '.join('`' + a + '`' for a in r['aliases']) or '—'), '', '### History / 沿革', '']
-    lines += ['- ' + bilingual(h) for h in r['history']]
+    lines += ['', 'Aliases: ' + (', '.join('`' + a + '`' for a in r['aliases']) or '—'), '', heading('###', 'History', 'History / 沿革'), '']
+    lines += history_lines(r)
     if r.get('text_versions'):
-        lines += ['', '### Earlier text / 早期文本', '']
-        lines += ['- ' + link(v['path'], base, Path(v['path']).name) + f' (sha256 `{v["sha256"][:16]}…`): ' + bilingual(v['note']) for v in r['text_versions']]
-    lines += ['', '</details>', '',
-              f'Documentary review UTC: `{r["reviewed_at_utc"]}`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据；本页不是证明回执。']
-    return '\n'.join(lines) + '\n'
+        lines += ['', heading('###', 'Earlier text', 'Earlier text / 早期文本'), '']
+        lines += ['- ' + link(v['path'], base, Path(v['path']).name) + f' (sha256 `{v["sha256"][:16]}…`): ' + en(v['note']) for v in r['text_versions']]
+    lines += ['', '</details>', '', f'Documentary review UTC: `{r["reviewed_at_utc"]}`. ' + FOOTER]
+    return finish(lines)
 
 
 def render_record(r):
@@ -663,59 +766,62 @@ def render_record(r):
     def result_link(ident):
         target = r.get('_record_links', {}).get(ident)
         return link(str(Path(target).with_suffix('.md')), base, ident) if target else f'[{ident}]({ident}.md)'
-    lines = [f'# {bilingual(r["title"])}', '',
+    title = r['title']
+    lines = [heading('#', en(title), f'{title.get("zh", "")} / {title.get("en", "")}'), '',
              '<!-- Generated by build_result_registry.py; edit the matching JSON record. -->', '']
     if 'statement' in r:
         lines += statement_lines(r['statement'])  # optional on schema 1: what the result does, first
     lines += [f'`{r["id"]}` · **{r["status"]}** · {r["kind"]} · {r["family"]}', '',
-             f'记录源 / Editable record: [{r["id"]}.json]({r["id"]}.json) · ' + link('RESULTS.md', base, '登记表 / Register'), '',
+             f'Editable record: [{r["id"]}.json]({r["id"]}.json) · ' + link('RESULTS.md', base, 'Register'), '',
              f'Documentary review UTC: `{r["reviewed_at_utc"]}`. Run the registry checker for source drift; this page is not a fresh proof receipt.', '']
     if 'overview' in r:
         overview = r['overview']
-        lines += ['## Overview / 首页摘要', '', '**' + bilingual(overview['title']) + '**', '',
-                  bilingual(overview['summary']), '', '**Evidence / 证据:** ' + bilingual(overview['evidence']), '']
-    lines += ['## 主张 Claim', '', bilingual(r['claim']), '',
+        lines += [heading('##', 'Overview', 'Overview / 首页摘要'), '', '**' + en(overview['title']) + '**', '',
+                  en(overview['summary']), '', '**Evidence:** ' + en(overview['evidence']), '']
+    lines += [heading('##', 'Claim', '主张 Claim'), '', en(r['claim']), '',
              'Canonical source: ' + link(r['canonical_source'], base), '',
-             '## 前提与对应 Hypotheses and correspondence', '']
-    lines += ['- ' + bilingual(x) for x in r['hypotheses']]
-    lines += ['', bilingual(r['correspondence']), '', '## 检验与边界 Validation and boundaries', '', bilingual(r['validation_scope']), '', bilingual(r['limitations']), '']
-    lines += [('Boundary source / 边界来源: ' if c['detail'] == r['limitations'] else '- ' + bilingual(c['detail']) + ' ') + link(c['path'], base) for c in r['counterexamples']]
-    lines += ['', '## 依赖与关联 Dependencies and related results', '']
-    lines += [f'- **{e["relation"]}**: {result_link(e["id"])}. {bilingual(e["detail"])}' for e in r['dependencies']]
+             heading('##', 'Hypotheses and correspondence', '前提与对应 Hypotheses and correspondence'), '']
+    lines += ['- ' + en(x) for x in r['hypotheses']]
+    lines += ['', en(r['correspondence']), '', heading('##', 'Validation and boundaries', '检验与边界 Validation and boundaries'), '',
+              en(r['validation_scope']), '', en(r['limitations']), '']
+    lines += [('Boundary source: ' if c['detail'] == r['limitations'] else '- ' + en(c['detail']) + ' ') + link(c['path'], base) for c in r['counterexamples']]
+    lines += ['', heading('##', 'Dependencies and related results', '依赖与关联 Dependencies and related results'), '']
+    lines += [f'- **{e["relation"]}**: {result_link(e["id"])}. {en(e["detail"])}' for e in r['dependencies']]
     for e in r['dependencies']:
         if 'interface' in e:
             c = e['interface']
-            lines += ['', '**Output / 输出:** ' + bilingual(c['output']), '', '**Input / 输入:** ' + bilingual(c['input']), '', '**Preserved conditions / 保留条件:** ' + bilingual(c['conditions']) + ' ' + link(c['evidence'], base), '']
+            lines += ['', '**Output:** ' + en(c['output']), '', '**Input:** ' + en(c['input']), '', '**Preserved conditions:** ' + en(c['conditions']) + ' ' + link(c['evidence'], base), '']
     if not r['dependencies']:
-        lines += ['No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。', '']
-    lines += [f'- Related, not a proved adapter / 关联而非已证转换: {result_link(e["id"])}. {bilingual(e["detail"])}' for e in r['related']]
-    lines += ['', '## 来源与既有回执 Sources and existing receipts', '', '| Role | Source | Declarations |', '|---|---|---|']
+        lines += ['No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.', '']
+    lines += [f'- Related, not a proved adapter: {result_link(e["id"])}. {en(e["detail"])}' for e in r['related']]
+    lines += ['', heading('##', 'Sources and existing receipts', '来源与既有回执 Sources and existing receipts'), '', '| Role | Source | Declarations |', '|---|---|---|']
     lines += [f'| {x["role"]} | {link(x["path"], base)} | {", ".join("`" + d + "`" for d in x.get("declarations", [])) or "—"} |' for x in r['references']]
-    lines += ['', 'Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。', '', '## 复用与下一增量 Reuse and next delta', '', bilingual(r['next_delta']), '', 'Aliases / 别名: ' + (', '.join('`' + a + '`' for a in r['aliases']) or '—'), '', '## 沿革 History', '']
-    lines += ['- ' + bilingual(h) for h in r['history']]
-    return '\n'.join(lines) + '\n'
+    lines += ['', 'Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.', '',
+              heading('##', 'Reuse and next delta', '复用与下一增量 Reuse and next delta'), '', en(r['next_delta']), '',
+              'Aliases: ' + (', '.join('`' + a + '`' for a in r['aliases']) or '—'), '', heading('##', 'History', '沿革 History'), '']
+    lines += history_lines(r)
+    return finish(lines)
 
 
 def render_index(records):
-    lines = ['# 成果登记表 Canonical result register', '', '<!-- Generated by build_result_registry.py; edit records/*.json. -->', '',
-             '**每项已迁移主张只有一个可编辑记录；本表及阅读页由记录生成。** 尚未迁移的成果仍以原理论／研究来源为准。会话地图是有日期的导航，文件数和验收次数不等于独立成果数。', '',
+    lines = [heading('#', 'Canonical result register', '成果登记表 Canonical result register'), '', '<!-- Generated by build_result_registry.py; edit records/*.json. -->', '',
              '**One editable record per migrated claim.** This index and its reading pages are generated. Unmigrated results retain their existing sources. The session map is dated navigation; files, checks and repeated acceptances are not independent results.', '',
-             link('_process/RESULT-WORKFLOW.md', OUT, 'Contribution workflow / 贡献流程') + ' · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)', '',
+             link('_process/RESULT-WORKFLOW.md', OUT, 'Contribution workflow') + ' · [Session map](SESSION-RESULTS.md) · [Full catalogue](README.md)', '',
              f'{len(records)} migrated records: {sum(r["kind"] != "target" for r in records)} scoped results/arguments/assessments and {sum(r["kind"] == "target" for r in records)} open targets. This is a bounded migration, not a repository-wide semantic deduplication.', '',
              '`recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.', '',
-             '| ID | Claim / 主张 | Kind | Recorded status |', '|---|---|---|---|']
-    lines += [f'| `{r["id"]}` | {link(str(record_path(r).with_suffix(".md").relative_to(ROOT)), OUT, bilingual(r["title"]))} | {r["kind"]} | {r["status"]} |' for r in records]
-    lines += ['', '## 先查哪一项 Where to look first', '',
+             '| ID | Claim | Kind | Recorded status |', '|---|---|---|---|']
+    lines += [f'| `{r["id"]}` | {link(str(record_path(r).with_suffix(".md").relative_to(ROOT)), OUT, en(r["title"]))} | {r["kind"]} | {r["status"]} |' for r in records]
+    lines += ['', heading('##', 'Where to look first', '先查哪一项 Where to look first'), '',
              '- Same theorem under two names: `trace-law-equivalence`, `derivation-soundness`. Preserve historical names and receipts; count the underlying result once.',
              '- Similar statements with different semantics: `branching-target-uniqueness`, `joint-target-uniqueness`. Their local test languages differ.',
              '- Three shared-support results: `draws-on-a-shared-stock`, `exclusive-footprint-support`, `joint-plan-composition`. Their common obstruction does not establish a verified translation between them.',
              '- Completed G0/J argument and its AI application: `practical-judgment-g0-j`, `alignment-direction-g0-j`. The independent targets `universal-practical-warrant` and `wisdom-root` remain open.', '',
-             '## 检查与检索 Check and search', '', 'From the repository root:', '', '```sh',
+             heading('##', 'Check and search', '检查与检索 Check and search'), '', 'From the repository root:', '', '```sh',
              'make research-check',
              'make research-find QUERY=support',
              '```', '',
-             'The checker verifies record structure, aliases, links, named-declaration presence, dependency cycles, reviewed source hashes and generated views. It does not compile Lean, prove semantic equivalence, establish empirical correspondence or replace substantive review. / 检查器核对结构、别名、链接、声明存在、依赖环、已读源码哈希及生成一致性；不编译 Lean，不证明语义等价、经验对应或伦理前提。']
-    return '\n'.join(lines) + '\n'
+             'The checker verifies record structure, aliases, links, named-declaration presence, dependency cycles, reviewed source hashes and generated views. It does not compile Lean, prove semantic equivalence, establish empirical correspondence or replace substantive review.']
+    return finish(lines)
 
 
 def record_path(record):
@@ -793,7 +899,7 @@ def main():
         needle = args.search.casefold()
         for r in records:
             if needle in json.dumps(r, ensure_ascii=False).casefold():
-                print(f'{r["id"]}\t{r["status"]}\t{bilingual(r["title"])}')
+                print(f'{r["id"]}\t{r["status"]}\t{en(r["title"])}')
         return 1 if errors else 0
     findings, drift = validate(records)
     errors += findings

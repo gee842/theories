@@ -1,0 +1,28 @@
+BOOKS.md	_process/history/2026-09-consolidation/BOOKS.md	September book plan (09-04/09-25); publication line dropped by Ren 10-10
+TIMELINE.md	_process/history/2026-09-consolidation/TIMELINE.md	September narrative timeline, stops 2026-10-04; superseded by the Becoming-era record
+_process/CLOUD-HANDOFF-2026-10-07.md	_process/history/2026-10-07-handoffs/CLOUD-HANDOFF-2026-10-07.md	dated 10-07 cloud handoff; merges executed (1fe1c2d1a, f0fc8818f); frontier superseded by the 10-08 Becoming priority
+_process/COVERAGE.md	_process/history/2026-09-consolidation/COVERAGE.md	what the 09-03 reading passes did and did not read; evidence
+_process/CRITIQUE-FINDINGS.md	_process/history/2026-09-consolidation/CRITIQUE-FINDINGS.md	five-critic audit of the September organisation (09-04); evidence
+_process/THEORY-DIGEST.md	_process/history/2026-09-consolidation/THEORY-DIGEST.md	September digest of 15 theory READMEs (regenerated 09-04); slugs no longer exist
+_process/THEORY-TEMPLATE.md	_process/history/2026-09-consolidation/THEORY-TEMPLATE.md	template given to the 09-03 readers; evidence of the reading-pass method
+_process/handoffs/2026-10-07-alignment-claims-and-inquiry.md	_process/history/2026-10-07-handoffs/2026-10-07-alignment-claims-and-inquiry.md	dated 10-07 session handoff; merges executed; 8 named branches gone
+_process/handoffs/2026-10-07-enacted-orientation.md	_process/history/2026-10-07-handoffs/2026-10-07-enacted-orientation.md	dated 10-07 session handoff; merges executed; 8 named branches gone
+_process/handoffs/2026-10-07-ethical-naturalism.md	_process/history/2026-10-07-handoffs/2026-10-07-ethical-naturalism.md	dated 10-07 session handoff; merges executed; 8 named branches gone
+_process/handoffs/2026-10-07-formal-unification.md	_process/history/2026-10-07-handoffs/2026-10-07-formal-unification.md	dated 10-07 session handoff; merges executed; 8 named branches gone
+_process/handoffs/2026-10-07-process-law-build-closure.py	_process/history/2026-10-07-handoffs/2026-10-07-process-law-build-closure.py	dated 10-07 session handoff; merges executed; 8 named branches gone
+_process/handoffs/2026-10-07-process-law-supplied-inputs.md	_process/history/2026-10-07-handoffs/2026-10-07-process-law-supplied-inputs.md	dated 10-07 session handoff; merges executed; 8 named branches gone
+_process/handoffs/2026-10-07-relational-dynamics-and-no-axioms.md	_process/history/2026-10-07-handoffs/2026-10-07-relational-dynamics-and-no-axioms.md	dated 10-07 session handoff; merges executed; 8 named branches gone
+_process/handoffs/2026-10-07-renewal-closure.md	_process/history/2026-10-07-handoffs/2026-10-07-renewal-closure.md	dated 10-07 session handoff; merges executed; 8 named branches gone
+_process/handoffs/2026-10-07-valuation-development.md	_process/history/2026-10-07-handoffs/2026-10-07-valuation-development.md	dated 10-07 session handoff; merges executed; 8 named branches gone
+_process/read-pass-1-plan.json	_process/history/2026-09-consolidation/read-pass-1-plan.json	batch plan of the 09-03 first reading pass; evidence
+_process/reading-notes/cb-01.md	_process/history/2026-09-consolidation/reading-notes-inputs/cb-01.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/reading-notes/cb-02.md	_process/history/2026-09-consolidation/reading-notes-inputs/cb-02.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/reading-notes/cb-03.md	_process/history/2026-09-consolidation/reading-notes-inputs/cb-03.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/reading-notes/cb-04.md	_process/history/2026-09-consolidation/reading-notes-inputs/cb-04.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/reading-notes/cb-05.md	_process/history/2026-09-consolidation/reading-notes-inputs/cb-05.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/reading-notes/cb-06.md	_process/history/2026-09-consolidation/reading-notes-inputs/cb-06.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/reading-notes/cb-07.md	_process/history/2026-09-consolidation/reading-notes-inputs/cb-07.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/reading-notes/hb-01.md	_process/history/2026-09-consolidation/reading-notes-inputs/hb-01.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/reading-notes/hb-02.md	_process/history/2026-09-consolidation/reading-notes-inputs/hb-02.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/reading-notes/hb-03.md	_process/history/2026-09-consolidation/reading-notes-inputs/hb-03.md	derived extract of Ren's turns (3.6 MB total); duplicates sources/12 and sources/14; the cited out-* notes stay
+_process/timeline-raw.tsv	_process/history/2026-09-consolidation/timeline-raw.tsv	dates of 1,640 source files as of 09-03; snapshot

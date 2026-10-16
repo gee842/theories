@@ -36,6 +36,26 @@ CATEGORIES = dict(zip(
     ('对齐 应用 经典思想 经典比较 经典伦理 比较 经验研究 经验识别 伦理论证 伦理机制 伦理 伦理发展 伦理接口 证据 形式汇编 形式索引 形式接口 形式规格 基础 治理 识别数学 学习 数学边界 数学模型 数学 机制 机制数学 机制与策略 方法 导航 规范基础 认识论 研究纲领 研究纲领 审查 路线 选择 综合').split()))
 
 
+def historical_chapters() -> set[str]:
+    """Former `chapters/*.md` files the move receipts moved (to `theories/becoming/history/`)."""
+    try:
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from tools.research import moves
+    except ImportError:
+        return set()
+    return moves.historical_paths([str(CANON.relative_to(ROOT)) + '/*.md'], ROOT)
+
+
+def is_history(source: str) -> bool:
+    try:
+        from tools.research import paths
+        return paths.role(source) == 'history'
+    except ImportError:
+        return '/history/' in '/' + source
+
+
 def category(d: dict) -> str:
     code = d['category']
     return f'{CATEGORIES[code]} / {code.replace("-", " ")}' if code in CATEGORIES else code
@@ -60,16 +80,30 @@ def anchors(path: Path) -> set[str]:
     return anchors_from_text(path.read_text())
 
 
+HEADING = re.compile(r'^#{1,6}\s+(.+?)\s*#*\s*$', re.M)
+
+
+def slug(heading: str) -> str:
+    """GitHub's anchor for a heading's text, before numbering repeats."""
+    heading = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', heading)
+    heading = re.sub(r'<[^>]*>', '', heading).replace('`','').lower()
+    return ''.join(c for c in heading if c in '-_' or not unicodedata.category(c).startswith(('P','S'))).replace(' ', '-')
+
+
+def numbered(slugs: list[str]) -> list[str]:
+    """Number repeated anchors as GitHub does: x, x-1, x-2."""
+    counts: dict[str, int] = {}
+    out = []
+    for s in slugs:
+        n = counts.get(s, 0)
+        counts[s] = n + 1
+        out.append(s if not n else f'{s}-{n}')
+    return out
+
+
 def anchors_from_text(body: str) -> set[str]:
     found = set(re.findall(r'<a\s+(?:id|name)=[\"\']([^\"\']+)[\"\']', body))
-    counts: dict[str, int] = {}
-    for heading in re.findall(r'^#{1,6}\s+(.+?)\s*#*\s*$', body, re.M):
-        heading = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', heading)
-        heading = re.sub(r'<[^>]*>', '', heading).replace('`','').lower()
-        slug = ''.join(c for c in heading if c in '-_' or not unicodedata.category(c).startswith(('P','S'))).replace(' ', '-')
-        n = counts.get(slug, 0)
-        counts[slug] = n + 1
-        found.add(slug if not n else f'{slug}-{n}')
+    found.update(numbered([slug(h) for h in HEADING.findall(body)]))
     return found
 
 
@@ -113,7 +147,8 @@ def chapter_volume(rows: list[dict], volume: str) -> str:
     for d in rows:
         lines.extend(['', f'<a id="{d["id"]}"></a>', f"## {d['title_zh']} / {d['title_en']}", '',
                       f"**编号 / ID:** `{d['id']}` · **类别 / Category:** {category(d)}", '',
-                      f"**来源 / Source:** {link(Path(d['source']).name, rel(d['source']))}", '',
+                      f"**来源 / Source:** {link(Path(d['source']).name, rel(d['source']))}"
+                      + (' · 历史章节，按原范围保留 / historical chapter, kept at its original scope' if is_history(d['source']) else ''), '',
                       f"**状态 / Status:** {d['status']}", '',
                       f"**中文论证：** {d['argument_zh']}", '', f"**English argument:** {d['argument_en']}", '',
                       f"**意义：** {d['significance_zh']}", '', f"**Significance:** {d['significance_en']}", '',
@@ -190,8 +225,10 @@ def main() -> int:
     branches = json.loads((OUT/'data/theory-map.json').read_text())
     errors=[]
     generated=set(json.loads(MANIFEST.read_text())['files'])
+    # A chapter moved to history stays catalogued at its new path (a historical entry); the
+    # move receipts say which history files were chapters (tools/research/moves.py).
     for label, rows, expected in (
-        ('chapters', chapters, {str(p.relative_to(ROOT)) for p in CANON.glob('*.md')}),
+        ('chapters', chapters, {str(p.relative_to(ROOT)) for p in CANON.glob('*.md')} | historical_chapters()),
         ('branches', branches, {str(p.relative_to(ROOT)) for p in (ROOT/'theories').glob('*/README.md')})):
         actual={x['source'] for x in rows}
         if actual != expected:

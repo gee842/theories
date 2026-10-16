@@ -55,10 +55,25 @@ def heading_ids(path):
     return result
 
 
+def moved_from(globs):
+    """Pages that matched a discovery glob and were moved since (to history or elsewhere), at
+    their present paths, read from the move receipts (tools/research/moves.py)."""
+    try:
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from tools.research import moves
+    except ImportError:
+        return set()
+    return moves.historical_paths(globs, ROOT)
+
+
 def discovery(data):
     found = set()
     for pattern in data["discovery_globs"]:
         found.update(str(p.relative_to(ROOT)) for p in ROOT.glob(pattern) if p.is_file())
+    # A moved page stays in the inspected inventory at its new path: moving it is not a removal.
+    found.update(moved_from(data["discovery_globs"]))
     return sorted(found)
 
 

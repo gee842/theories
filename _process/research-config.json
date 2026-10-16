@@ -25,5 +25,78 @@
     "universal-intelligence-session",
     "theory-of-evolution",
     "generative-alignment"
+  ],
+  "path_roles": {
+    "source_prefixes": [
+      "sources/"
+    ],
+    "scratch_prefixes": [
+      "tmp/",
+      "work/",
+      ".claude/",
+      ".git/"
+    ],
+    "scratch_components": [
+      ".lake",
+      "__pycache__",
+      "node_modules",
+      ".venv",
+      ".pytest_cache"
+    ],
+    "history_components": [
+      "history"
+    ],
+    "history_prefixes": [
+      "_process/architecture/history/"
+    ],
+    "evidence_components": [
+      "verification-history",
+      "legacy-replays",
+      "snapshots",
+      "source-snapshots",
+      "before"
+    ],
+    "evidence_component_patterns": [
+      "^\\d{8}T\\d{6}(\\.\\d+)?Z",
+      "^\\d{10,}$",
+      "(^|-)before(-|$)"
+    ],
+    "evidence_name_patterns": [
+      "-BEFORE[-.]",
+      "^before-",
+      "(^|-)before-\\d"
+    ]
+  },
+  "move_receipts": "_process/architecture/moves",
+  "move_pinned": [
+    "theories/becoming/OPENING.md",
+    "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+    "**/becoming-verification.json",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/**",
+    "sources/**",
+    "_process/architecture/history/**"
+  ],
+  "move_pin_manifests": [
+    "**/*freeze*.json",
+    "**/*prereg*.json"
+  ],
+  "move_rewrite_json": [
+    "theories/becoming/results/records/*.json",
+    "_process/research-config.json",
+    "_process/goals/*.json",
+    "theories/becoming/results/data/*.json"
+  ],
+  "move_rewrite_extra": [],
+  "move_rewrite_markdown_mentions": true,
+  "move_mentions_exclude": [
+    "_process/research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/**"
+  ],
+  "secrets_allowlist": [
+    {
+      "sha256": "5bfd785d37c9e2f8223cde6140a4fc01eab808f734243fad005aa68a3ce02404",
+      "kind": "openrouter",
+      "note": "revoked by Ren 2026-10-17; present in sources/14-claude-code-prompts/* and the reading-note input cb-03.md (in _process/reading-notes/ until batch H1 moves it to _process/history/2026-09-consolidation/reading-notes-inputs/)"
+    }
   ]
 }
