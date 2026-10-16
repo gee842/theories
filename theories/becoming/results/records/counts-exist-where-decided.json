@@ -233,7 +233,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "43b1af05c297b71f8b1e4943177e4694c33b4801a4f601644c388f8b853f76c1"
+      "sha256": "5197efa4633923b8f456bee6cdacd1c4aab8f37248cafb3e305402b508c2f142"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
@@ -527,6 +527,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；DECIDABILITY-INVENTORY.md（P129：LLPO 的四项只在证明中使用的已定性归类（436 行陈述层））。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); DECIDABILITY-INVENTORY.md (P129: LLPO's four proof-only uses of decidedness classified (436 statement-level rows))."
+    },
+    {
+      "zh": "2026年10月16日，P130（每个基都读作运行；前沿陈述在两种作为的世界上）：改绑并更新哈希，断言不变：DECIDABILITY-INVENTORY.md（P130：新模块的十八项证明内已定性使用归类（437 行陈述层））。",
+      "en": "16 October 2026, P130 (every base read as a run; the frontier stated on the worlds of two acts): rebound and rehashed, the claim unchanged:DECIDABILITY-INVENTORY.md (P130: the new modules' eighteen proof-only uses of decidedness classified (437 statement-level rows))."
     }
   ]
 }

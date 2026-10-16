@@ -1,0 +1,9 @@
+{
+ "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+ "extra_receipts": {},
+ "scope_old": [],
+ "files": {
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md": {"zh": "P130：新模块的十八项证明内已定性使用归类（437 行陈述层）", "en": "P130: the new modules' eighteen proof-only uses of decidedness classified (437 statement-level rows)"}
+ },
+ "history": {"zh": "2026年10月16日，P130（每个基都读作运行；前沿陈述在两种作为的世界上）：改绑并更新哈希，断言不变：", "en": "16 October 2026, P130 (every base read as a run; the frontier stated on the worlds of two acts): rebound and rehashed, the claim unchanged:"}
+}
