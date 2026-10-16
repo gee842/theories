@@ -75,7 +75,9 @@ axiom occurs.
 
 **Classical sources and scope.** `LPO` and `WLPO` are Bishop's limited and weak limited
 principles of omniscience (Bishop 1967; Bridges and Richman 1987), and the exact statements here
-are constructive reverse mathematics in Ishihara's sense. "Exactly" is relative to rules: the
+are constructive reverse mathematics in Ishihara's sense. That `WLPO`, as a proposition, does not
+give `LPO` is shown by the arithmetical hierarchy of classical principles of Akama, Berardi,
+Hayashi and Kohlenbach (2004); the core neither states nor refutes the step. "Exactly" is relative to rules: the
 existence of a counterexample is equivalent to a rule `Nonempty (∀ s, Decidable …)`, which is at
 least as strong as the proposition `WLPO`, and the decision of vanishing is equivalent to the
 rule form of `LPO`. Without such a rule the core gives no counterexample and does not refute one.

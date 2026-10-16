@@ -26,8 +26,9 @@ every schedule settles is a principle of reasoning, exactly.
 * **Runaway needs frequent couplings, not strong ones.** A chain in time order (`ChainInTime`)
   carries what has reached its start to its end (`carried_along_in_time`); a return (`Returns`) is
   such a chain from a condition back to it. Every return at least doubles what had reached the
-  condition, which arrives once held and once around the loop (`carried_doubles_return`), since a
-  positive strength is at least one. After `R` returns in succession it has doubled `R` times
+  condition, which arrives once held and once around the loop (`carried_doubles_return`).
+  Strengths are natural numbers, so a positive strength is at least one; with strengths below one
+  the doubling does not follow. After `R` returns in succession it has doubled `R` times
   (`carried_returns`). So where something has reached a condition and returns at steps `T i` with
   `2 ^ i` outgrowing every polynomial in `T i`, the carried amount there, the most difference that
   can arrive, outgrows every polynomial (`runaway_of_returns`). Conversely, where two to the number
@@ -98,8 +99,10 @@ amounts. No ethical predicate, ranking or axiom occurs.
 expansion, as in `Becoming.Loops` and `Becoming.Remainder`; the bound `D * (1 + M) ^ a` is the
 geometric bound of that series counted over the marked steps. The limited principle of omniscience
 is Bishop's (Bishop 1967; Bridges and Richman 1987), and `settled_iff_recursOrStops` with
-`lpo_of_settled` calibrates settling against it in the manner of constructive reverse mathematics
-(Ishihara); `RecursOrStops` gives `LPO`, and the converse is not stated.
+`lpo_of_settled` calibrates settling in the manner of constructive reverse mathematics (Ishihara).
+`RecursOrStops` is excluded middle at level Σ⁰₂ of the arithmetical hierarchy (Akama, Berardi,
+Hayashi and Kohlenbach 2004), strictly stronger than `LPO`: it gives `LPO` here
+(`RecursOrStops.lpo`), and the converse is neither stated nor, by that hierarchy, available.
 -/
 
 namespace Becoming
@@ -705,7 +708,9 @@ theorem Frequency.couplesAt_of_readsLate (every : ∀ c, c ∈ cs) {d c : C} {n 
 
 /-- **Every row holds somewhere, or some row holds nowhere.** The dichotomy for decided two-place
 families of Booleans: every row `n` is `true` at some `m`, or some row is `false` throughout.
-Excluded middle gives it, and it gives `LPO` (`RecursOrStops.lpo`); it has no constructive proof. -/
+Excluded middle gives it, and it gives `LPO` (`RecursOrStops.lpo`); it has no constructive proof.
+This is excluded middle at level Σ⁰₂ of the arithmetical hierarchy (Akama–Berardi–Hayashi–Kohlenbach
+2004), strictly stronger than LPO. -/
 def RecursOrStops : Prop :=
   ∀ R : Nat → Nat → Bool, (∀ n, ∃ m, R n m = true) ∨ ∃ n, ∀ m, R n m = false
 

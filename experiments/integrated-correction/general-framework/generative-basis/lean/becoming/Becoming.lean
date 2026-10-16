@@ -168,7 +168,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   renews or consumes in the whole-run sense, with or without feedback; a reading of
   amounts is decided step by step. What a finite history refutes, with no premise: a
   refutable reading holds, up to double negation, at every run adhering to it; a reading
-  with an adhering run outside it is neither refutable nor verifiable; a reading made of
+  with an adhering run outside it is not refutable, and one with a run inside adhering to its
+  complement is not verifiable; adhering is refutable exactly where every failure to adhere
+  has a horizon, which excluded middle gives; a reading made of
   tests holds where it adheres, and asked of every process its refutability is exactly
   Markov's principle.
 * `Becoming.Joint` (L3): difference-making, relative to a move that can still be taken
@@ -930,7 +932,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   lasting need a decision, a theorem shows it. Some course lasting: where the process branches
   finitely, the depth reached is decided, and a configuration with courses of every length
   cannot fail to have a successor with them; it has one given `EitherThroughout`, exactly that
-  principle asked of every finitely branching process, and a selection gives a run. Where the
+  principle asked of every finitely branching process, and a selection gives a run.
+  `EitherThroughout` is the lesser limited principle of omniscience (`LLPO`) for decided
+  families, and gives `LLPO` for Boolean sequences (`Becoming.Likeness`). Where the
   branching is infinite it need not.
 * `Becoming.Copying` (L2): reproducing a sequence token by token from a shared pool, for every
   alphabet and law of draws, with no premise. A copy completes exactly when the pool holds

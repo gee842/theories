@@ -46,8 +46,9 @@ given constructively.
   every condition, it gives alike under two histories wherever it reads within a list under one
   of them (`alike_of_insensitiveAt_within`); a law reading finitely many conditions and sensitive
   to none gives alike under every two histories (`ExchangeLaw.ReadsFinitely.alike_of_insensitive`).
-* **The tail.** With infinitely many conditions the condition cannot be dropped, relative to a
-  decision of vanishing taken as a hypothesis (`decides`). Given a decision,
+* **The tail.** With infinitely many conditions the condition cannot be dropped given a decision
+  of vanishing, which gives LPO (`lpo_of_vanish_decided`); any law that drops it gives WLPO
+  (`wlpo_of_not_through_sensitive`). Given a decision,
   for every sequence of levels, of whether it vanishes from some condition on (`VanishFrom`), the
   law exchanging the indicator of that at step `0` (`vanishIndicator`, `tailLaw`) reads what has
   stood (`tailLaw_nonanticipating`) and through registering the conditions from any one on
@@ -96,12 +97,14 @@ is decided where conditions are mixed (`DecidableEq`), as in `Becoming.Counterfa
 tail law takes its decision of vanishing as a hypothesis. No ethical predicate, ranking or axiom
 occurs.
 
-**Classical sources.** `LPO` and `WLPO` are the limited and weak limited principles of omniscience
-of Bishop's constructive mathematics (Bishop 1967, *Foundations of Constructive Analysis*; Bridges
-and Richman 1987, *Varieties of Constructive Mathematics*), and calibrating a statement by the
-principle it gives is constructive reverse mathematics in Ishihara's sense. The mixing of two
-histories along a Boolean sequence is the standard way such a statement yields `WLPO`. The
-calibration here is of the core's own statements; the principles are defined, never assumed.
+**Classical sources.** `LPO` is the limited principle of omniscience of Bishop (1967,
+*Foundations of Constructive Analysis*) and `WLPO` its weak form (Bridges and Richman 1987,
+*Varieties of Constructive Mathematics*); calibrating a statement by the principle it gives is
+constructive reverse mathematics in Ishihara's sense, and that a discontinuous function gives
+`WLPO` is Ishihara's: a counterexample to the least registration is such a discontinuity, a law
+changed by no condition that still differs. The mixing of two histories along a Boolean sequence
+is the standard way such a statement yields `WLPO`. The calibration here is of the core's own
+statements; the principles are defined, never assumed.
 -/
 
 namespace Becoming

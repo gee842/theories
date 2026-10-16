@@ -106,6 +106,11 @@ registration at all (supplied as `Web.SelectsThrough`), that offspring follow th
 that reaching beyond is chosen, that a selection is through a given model, and how an option it
 singles out is found (a search over listed options). The law for scores in the converse direction takes the
 decidability of registering alike as a hypothesis. No ethical predicate, ranking or axiom occurs.
+
+**Classical sources.** A selection through a model of the options that commutes with relabelling
+(`Relabel.Equivariant`) is neutral in the sense of May (1952): it treats the options alike under
+every permutation that the model does not tell apart, so that at a full tie it selects none, as
+May's neutrality forces a tie between alternatives that are interchanged.
 -/
 
 namespace Becoming

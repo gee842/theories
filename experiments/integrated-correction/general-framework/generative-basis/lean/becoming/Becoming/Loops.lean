@@ -38,7 +38,9 @@ a loop upstream, and only a loop, makes a difference run away.
   it (`carried_around`), so after `R` times around by that factor to the power `R`
   (`carried_runaway`). With stationary strengths and the same formations at every step, every loop
   at least doubles what reaches it, every time around (`carried_doubles_around`), and what reaches a
-  loop upstream of `c` arrives at `c` so doubled (`carried_doubles_into`).
+  loop upstream of `c` arrives at `c` so doubled (`carried_doubles_into`). Strengths are natural
+  numbers, so a positive strength is at least one; with strengths below one the doubling does not
+  follow.
 * **How much the orders carry, and the accuracy of a cut.** With the part giving no gap after the
   start, starting gaps at most `D` and the strengths into each condition (`inflow`) summing to at
   most `M` at each step: the order `j` carries at most `D` times the sum, over orders `i ≤ j`, of

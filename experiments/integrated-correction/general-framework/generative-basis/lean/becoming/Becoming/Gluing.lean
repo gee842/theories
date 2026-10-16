@@ -65,8 +65,9 @@ beyond parity constraints; and which registrations of an actual unfolding are of
 ethical predicate, ranking or axiom occurs.
 
 **Classical sources.** That a system of parity constraints has a solution exactly where no
-selection of its constraints adds up to `0 = 1` is linear algebra over two values, here proved by
-elimination with no decision beyond equality of claims. In the study of contextuality the
+selection of its constraints adds up to `0 = 1` is linear algebra over two values: Gaussian
+elimination over GF(2), the Fredholm alternative for a linear system, here proved with no decision
+beyond equality of claims. In the study of contextuality the
 obstruction is the all-versus-nothing argument and its cohomological form (Abramsky, Barbosa,
 Kishida, Lal and Mansfield 2015, "Contextuality, cohomology and paradox"), after the sheaf
 reading of gluing (Abramsky and Brandenburger 2011); parity games of the magic-square kind and

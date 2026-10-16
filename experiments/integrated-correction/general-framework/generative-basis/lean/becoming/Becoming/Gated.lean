@@ -21,7 +21,7 @@ states, for every process, what that local condition gives along courses.
 * **Every origin passes the gate.** Where the ungated moves reflect `p`, a course ending where
   `p` holds started where it held, or splits at a gated step after which `p` holds (`origin`). No
   decision of `p` is used: the gate is already decided. With the gate given as a proposition
-  instead, the law holds exactly where each gate is decided (`origin_of_decides`), and asked of
+  instead, the law holds where each gate is decided (`origin_of_decides`), and asked of
   every process it is exactly double-negation elimination (`origin_of_propositions_iff`).
 
 The gate does not say that a gated move changes anything; it locates where change can enter.

@@ -113,7 +113,12 @@ No premise is added; every declaration has an empty axiom report.
   of two decided families not both holding somewhere, one holds nowhere
   (`eitherThroughout_iff_eitherNever`); `NowhereDecided`, that whether a decided family holds
   nowhere is decided, gives it (`EitherThroughout.of_nowhereDecided`), and excluded middle gives
-  `NowhereDecided` (`NowhereDecided.of_em`). Where neither the moves nor the claims are listed,
+  `NowhereDecided` (`NowhereDecided.of_em`). The principle is, exactly, the lesser limited
+  principle of omniscience for decided families (`eitherThroughout_iff_llpoForDecided`,
+  `LLPOForDecided`); it gives `LLPO` in its standard form, for Boolean sequences with at most one
+  `true` (`LLPO.of_eitherThroughout`), and `LLPO` gives the family form wherever the decisions are
+  given as data (`LLPO.decidable`); `LPO` gives `LLPO` (`LLPO.of_lpo`). Weak König's lemma is
+  equivalent to `LLPO` (Ishihara 1990; Bridges and Richman 1987). Where neither the moves nor the claims are listed,
   excluded middle suffices (`alike_iff_sameBranchingTests_of_em`): this is the periphery's
   `ExplanatoryBranching.same_iff_bisimilar`, with the principle its proof uses as a hypothesis.
   Where a move has infinitely many outcomes, branching
@@ -127,7 +132,9 @@ No premise is added; every declaration has an empty axiom report.
   move can lead to a configuration where both `b` and `c` can be taken holds at the one and fails
   at the other (`Choosing.branching_apart`).
 
-What is not derived: whether `EitherThroughout` gives `NowhereDecided` or excluded middle, since
+What is not derived: whether `LLPO` for Boolean sequences gives the family form where the
+decisions are propositions only (that would turn a decided proposition into a Boolean value, a
+unique choice the core does not make); whether `EitherThroughout` gives `NowhereDecided` or excluded middle, since
 showing that it does not would take a model outside the core; and whether a principle weaker than
 excluded middle suffices where the moves or the claims are not listed. `Becoming.Bridge` reads `BranchingTest` as the
 periphery's `Test` (`sameBranchingTests_iff_same`).
@@ -1249,7 +1256,10 @@ theorem alike_decided_iff_em :
 /-- **Of two decided families, each holding at a step where it holds at the next, one of which
 holds at every step, one holds at every step.** A principle of reasoning, not a law of the
 unfolding: excluded middle gives it, and the frames whose configurations are infinitely many and
-whose moves have finitely many outcomes need it (`alike_of_sameBranchingTests_outcomes_iff`). -/
+whose moves have finitely many outcomes need it (`alike_of_sameBranchingTests_outcomes_iff`). It is
+the lesser limited principle of omniscience for decided families
+(`eitherThroughout_iff_llpoForDecided`), and gives `LLPO` (`LLPO.of_eitherThroughout`); weak
+König's lemma is equivalent to `LLPO` (Ishihara 1990; Bridges and Richman 1987). -/
 def EitherThroughout : Prop :=
   ∀ α β : Nat → Prop, (∀ k, Decided (α k)) → (∀ k, Decided (β k)) →
     (∀ k, α (k + 1) → α k) → (∀ k, β (k + 1) → β k) → (∀ k, α k ∨ β k) →
@@ -1323,6 +1333,189 @@ theorem NowhereDecided.of_em (em : ∀ p : Prop, Decided p) : NowhereDecided :=
 /-- **`NowhereDecided` gives `EitherThroughout`.** -/
 theorem EitherThroughout.of_nowhereDecided (nowhere : NowhereDecided) : EitherThroughout :=
   eitherThroughout_iff_eitherNever.mpr (EitherNever.of_nowhereDecided nowhere)
+
+/-! ## `EitherThroughout` is the lesser limited principle of omniscience
+
+Beside `LPO` (`Becoming.Change`) and `WLPO` (`Becoming.Sensitivity`), the lesser limited principle
+in its standard form, for Boolean sequences with at most one `true`. `EitherThroughout` is that
+principle for decided families, exactly; for Boolean sequences it gives the standard form, and the
+standard form gives the family form wherever the decisions are given as data. -/
+
+/-- **The lesser limited principle of omniscience** (`LLPO`), in its standard form: of a Boolean
+sequence with at most one `true`, the even places are all `false` or the odd places are. The
+limited principle gives it (`LLPO.of_lpo`); it has no constructive proof. -/
+def LLPO : Prop :=
+  ∀ s : Nat → Bool, (∀ m n, s m = true → s n = true → m = n) →
+    (∀ n, s (2 * n) = false) ∨ ∀ n, s (2 * n + 1) = false
+
+/-- **`LLPO` for decided families**: a family decided at each place and holding at most once
+fails at every even place or at every odd place. -/
+def LLPOForDecided : Prop :=
+  ∀ γ : Nat → Prop, (∀ n, Decided (γ n)) → (∀ m n, γ m → γ n → m = n) →
+    (∀ n, ¬ γ (2 * n)) ∨ ∀ n, ¬ γ (2 * n + 1)
+
+namespace LLPO
+
+/-- The successor is one to one, read through the predecessor. -/
+theorem succ_inj {m n : Nat} (same : m + 1 = n + 1) : m = n :=
+  congrArg Nat.pred same
+
+/-- No successor is zero (the prelude's `Nat.succ_ne_zero` depends on `propext`). -/
+theorem succ_ne_zero (n : Nat) : n + 1 ≠ 0 :=
+  fun same => Nat.noConfusion same
+
+/-- No even number is odd. -/
+theorem two_mul_ne_succ : ∀ m n : Nat, 2 * m ≠ 2 * n + 1
+  | 0, n, same => succ_ne_zero (2 * n) same.symm
+  | m + 1, 0, same => succ_ne_zero (2 * m) (succ_inj same)
+  | m + 1, n + 1, same => two_mul_ne_succ m n (succ_inj (succ_inj same))
+
+/-- Twice is one to one. -/
+theorem two_mul_inj : ∀ m n : Nat, 2 * m = 2 * n → m = n
+  | 0, 0, _ => rfl
+  | 0, n + 1, same => absurd same.symm (succ_ne_zero (2 * n + 1))
+  | m + 1, 0, same => absurd same (succ_ne_zero (2 * m + 1))
+  | m + 1, n + 1, same =>
+    congrArg (· + 1) (two_mul_inj m n (succ_inj (succ_inj same)))
+
+/-- Every number is even or odd. -/
+theorem even_or_odd : ∀ n : Nat, (∃ k, n = 2 * k) ∨ ∃ k, n = 2 * k + 1
+  | 0 => .inl ⟨0, rfl⟩
+  | n + 1 => match even_or_odd n with
+    | .inl ⟨k, e⟩ => .inr ⟨k, congrArg (· + 1) e⟩
+    | .inr ⟨k, e⟩ => .inl ⟨k + 1, congrArg (· + 1) e⟩
+
+/-- Whether a Boolean value is `true` is decided. -/
+theorem decided_true (b : Bool) : Decided (b = true) :=
+  match b with
+  | true => .inl rfl
+  | false => .inr fun no => Bool.noConfusion no
+
+/-- A Boolean value not `true` is `false`. -/
+theorem eq_false_of_not : ∀ (b : Bool), ¬ b = true → b = false
+  | true, no => absurd rfl no
+  | false, _ => rfl
+
+/-- **The limited principle gives the lesser one.** Where some even place is `true`, every odd
+place is `false`, since a sequence with at most one `true` has no other. -/
+theorem of_lpo (lpo : LPO) : LLPO :=
+  fun s once => match lpo (fun n => s (2 * n)) with
+  | .inl ⟨n, yes⟩ => .inr fun m =>
+      eq_false_of_not _ fun yes' => two_mul_ne_succ n m (once _ _ yes yes')
+  | .inr evens => .inl evens
+
+/-- **The family form gives the standard form**: a Boolean sequence is a decided family. -/
+theorem of_forDecided (family : LLPOForDecided) : LLPO :=
+  fun s once => match family (fun n => s n = true) (fun n => decided_true (s n)) once with
+  | .inl evens => .inl fun n => eq_false_of_not _ (evens n)
+  | .inr odds => .inr fun n => eq_false_of_not _ (odds n)
+
+/-- **The standard form gives the family form where the decisions are data**: a family decided
+by `Decidable` at each place is read as the Boolean sequence of its decisions. -/
+theorem decidable (llpo : LLPO) (γ : Nat → Prop) (dec : ∀ n, Decidable (γ n))
+    (once : ∀ m n, γ m → γ n → m = n) : (∀ n, ¬ γ (2 * n)) ∨ ∀ n, ¬ γ (2 * n + 1) :=
+  match llpo (fun n => @Decidable.decide (γ n) (dec n))
+      (fun m n yes yes' => once m n (@of_decide_eq_true _ (dec m) yes)
+        (@of_decide_eq_true _ (dec n) yes')) with
+  | .inl evens => .inl fun n holds =>
+      Bool.noConfusion ((@decide_eq_true _ (dec (2 * n)) holds).symm.trans (evens n))
+  | .inr odds => .inr fun n holds =>
+      Bool.noConfusion ((@decide_eq_true _ (dec (2 * n + 1)) holds).symm.trans (odds n))
+
+/-- `k` is the first place at which `α` holds. -/
+def FirstAt (α : Nat → Prop) (k : Nat) : Prop :=
+  α k ∧ ¬ ∃ t, 0 ≤ t ∧ t < k ∧ α t
+
+theorem FirstAt.decided {α : Nat → Prop} (decided : ∀ k, Decided (α k)) (k : Nat) :
+    Decided (FirstAt α k) :=
+  (decided k).and (Decided.exists_below (P := α) (M := 0) (U := k) fun t _ _ => decided t).not
+
+/-- A family holds first at one place at most. -/
+theorem FirstAt.unique {α : Nat → Prop} {i j : Nat} (first : FirstAt α i) (first' : FirstAt α j) :
+    i = j :=
+  match Nat.lt_or_ge i j with
+  | .inl lt => absurd ⟨i, Nat.zero_le i, lt, first.1⟩ first'.2
+  | .inr ge => match Nat.lt_or_ge j i with
+    | .inl lt => absurd ⟨j, Nat.zero_le j, lt, first'.1⟩ first.2
+    | .inr ge' => Nat.le_antisymm ge' ge
+
+/-- A decided family holding somewhere below `N` holds first somewhere. -/
+theorem FirstAt.of_holds {α : Nat → Prop} (decided : ∀ k, Decided (α k)) :
+    ∀ N k, k < N → α k → ∃ i, FirstAt α i
+  | 0, k, lt, _ => absurd lt (Nat.not_lt_zero k)
+  | N + 1, k, lt, holds =>
+    match Decided.exists_below (P := α) (M := 0) (U := k) (fun t _ _ => decided t) with
+    | .inr absent => ⟨k, holds, absent⟩
+    | .inl ⟨t, _, below, holds'⟩ =>
+      FirstAt.of_holds decided N t (Nat.lt_of_lt_of_le below (Nat.le_of_lt_succ lt)) holds'
+
+/-- Two families read at the even and the odd places. -/
+def Interleave (α β : Nat → Prop) (n : Nat) : Prop :=
+  (∃ k, n = 2 * k ∧ α k) ∨ ∃ k, n = 2 * k + 1 ∧ β k
+
+theorem Interleave.even {α β : Nat → Prop} {k : Nat} : Interleave α β (2 * k) ↔ α k :=
+  ⟨fun
+    | .inl ⟨j, same, holds⟩ => Eq.subst (motive := α) (two_mul_inj k j same).symm holds
+    | .inr ⟨j, same, _⟩ => absurd same (two_mul_ne_succ k j),
+   fun holds => .inl ⟨k, rfl, holds⟩⟩
+
+theorem Interleave.odd {α β : Nat → Prop} {k : Nat} : Interleave α β (2 * k + 1) ↔ β k :=
+  ⟨fun
+    | .inl ⟨j, same, _⟩ => absurd same.symm (two_mul_ne_succ j k)
+    | .inr ⟨j, same, holds⟩ =>
+      Eq.subst (motive := β) (two_mul_inj k j (succ_inj same)).symm holds,
+   fun holds => .inr ⟨k, rfl, holds⟩⟩
+
+theorem Interleave.decided {α β : Nat → Prop} (decided : ∀ k, Decided (α k))
+    (decided' : ∀ k, Decided (β k)) (n : Nat) : Decided (Interleave α β n) :=
+  match even_or_odd n with
+  | .inl ⟨k, e⟩ => Eq.subst (motive := fun x => Decided (Interleave α β x)) e.symm
+      (match decided k with
+       | .inl holds => .inl (Interleave.even.mpr holds)
+       | .inr fails => .inr fun holds => fails (Interleave.even.mp holds))
+  | .inr ⟨k, e⟩ => Eq.subst (motive := fun x => Decided (Interleave α β x)) e.symm
+      (match decided' k with
+       | .inl holds => .inl (Interleave.odd.mpr holds)
+       | .inr fails => .inr fun holds => fails (Interleave.odd.mp holds))
+
+end LLPO
+
+/-- **`EitherNever` is the lesser limited principle for decided families.** Given `EitherNever`,
+the even and the odd places of a family holding at most once do not both hold somewhere. Given
+the principle, the first places at which two families hold, read at the even and the odd places,
+hold at most once where the families do not both hold somewhere; where no first place of one
+holds, the family holds nowhere. -/
+theorem eitherNever_iff_llpoForDecided : EitherNever ↔ LLPOForDecided :=
+  ⟨fun never γ decided once =>
+    never (fun n => γ (2 * n)) (fun n => γ (2 * n + 1)) (fun _ => decided _) (fun _ => decided _)
+      (fun ⟨⟨m, even⟩, ⟨n, odd⟩⟩ => LLPO.two_mul_ne_succ m n (once _ _ even odd)),
+   fun llpo α β decided decided' apart =>
+    match llpo (LLPO.Interleave (LLPO.FirstAt α) (LLPO.FirstAt β))
+        (LLPO.Interleave.decided (LLPO.FirstAt.decided decided) (LLPO.FirstAt.decided decided'))
+        (fun _ _ holds holds' => match holds, holds' with
+          | .inl ⟨_, e, first⟩, .inl ⟨_, e', first'⟩ =>
+            e.trans ((congrArg (2 * ·) (LLPO.FirstAt.unique first first')).trans e'.symm)
+          | .inl ⟨i, _, first⟩, .inr ⟨j, _, first'⟩ => absurd ⟨⟨i, first.1⟩, ⟨j, first'.1⟩⟩ apart
+          | .inr ⟨i, _, first⟩, .inl ⟨j, _, first'⟩ => absurd ⟨⟨j, first'.1⟩, ⟨i, first.1⟩⟩ apart
+          | .inr ⟨_, e, first⟩, .inr ⟨_, e', first'⟩ =>
+            e.trans ((congrArg (2 * · + 1) (LLPO.FirstAt.unique first first')).trans e'.symm)) with
+    | .inl evens => .inl fun k holds =>
+        match LLPO.FirstAt.of_holds decided (k + 1) k (Nat.lt_succ_self k) holds with
+        | ⟨i, first⟩ => evens i (LLPO.Interleave.even.mpr first)
+    | .inr odds => .inr fun k holds =>
+        match LLPO.FirstAt.of_holds decided' (k + 1) k (Nat.lt_succ_self k) holds with
+        | ⟨i, first⟩ => odds i (LLPO.Interleave.odd.mpr first)⟩
+
+/-- **`EitherThroughout` is the lesser limited principle of omniscience**, for decided families:
+of two decided, decreasing families one of which holds at each step, one holds at every step,
+exactly where every decided family holding at most once fails at every even place or at every odd
+place. -/
+theorem eitherThroughout_iff_llpoForDecided : EitherThroughout ↔ LLPOForDecided :=
+  eitherThroughout_iff_eitherNever.trans eitherNever_iff_llpoForDecided
+
+/-- **`EitherThroughout` gives `LLPO`** in its standard form, for Boolean sequences. -/
+theorem LLPO.of_eitherThroughout (either : EitherThroughout) : LLPO :=
+  LLPO.of_forDecided (eitherThroughout_iff_llpoForDecided.mp either)
 
 section Outcomes
 
