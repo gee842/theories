@@ -1,0 +1,6 @@
+{"format": "becoming-evidence-run-index/1", "note": "store: object = bytes in _objects/<sha[0:2]>/<sha256>; empty = zero bytes, nowhere stored; run = kept in this folder. Rebuild with evidence_store.py restore.", "run": "20261015T164055.579728Z",
+"files": {
+ "check_becoming.py": {"mode": "0644", "sha256": "c86d4bf8527f127c6ad08bdfd87be1705be4a269b97a97125aff912f30f2118e", "size": 163600, "store": "object"},
+ "verification.json": {"mode": "0644", "sha256": "67f77858c0c0430ebde25004eb69f092142ba4d9c4289c651b8e05c87d5e7f44", "size": 2319399, "store": "run"},
+ "version.log": {"mode": "0644", "sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b", "size": 106, "store": "object"}
+}}

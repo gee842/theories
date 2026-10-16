@@ -1,0 +1,14 @@
+{"format": "becoming-evidence-run-index/1", "note": "store: object = bytes in _objects/<sha[0:2]>/<sha256>; empty = zero bytes, nowhere stored; run = kept in this folder. Rebuild with evidence_store.py restore.", "run": "20261013T102207.009826Z",
+"files": {
+ "Becoming.Bridge.lean": {"mode": "0644", "sha256": "5ab71acea5161506548c983a5078b72fc2fe0f317e3450a5a8cc1d4fb50e408c", "size": 34424, "store": "object"},
+ "BecomingBridgeSignatures.lean": {"mode": "0644", "sha256": "a68a84d229b6a7c4b749cc59e068d2952e791c37e40d2f7ea4fd6c47084f7f2a", "size": 2019, "store": "object"},
+ "BecomingBridgeSignatures.log": {"mode": "0644", "sha256": "ee7055ced283bc31572dbb01cfb5d3ebe23229a7ec2e9af5a513d036dda1ac54", "size": 17109, "store": "object"},
+ "ContinuationRenewalAxiomAudit.lean": {"mode": "0644", "sha256": "288da78d0c52bd45c77c851688c17e6183c76eab6b52021d1be20db55266941a", "size": 1408, "store": "object"},
+ "ContinuationRenewalAxiomAudit.log": {"mode": "0644", "sha256": "fa78c64dbda3088e0caf0a31eca77aaeb77f666bbb91c05fc0579458d513f79a", "size": 1777, "store": "object"},
+ "Controls.lean": {"mode": "0644", "sha256": "af5e05adef1a9f94437b8c4bc54ea41a4b4eabed94b6b1404ee64b53731c0d15", "size": 3355, "store": "object"},
+ "Controls.log": {"mode": "0644", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "size": 0, "store": "empty"},
+ "OpenFutureRevisionAxiomAudit.lean": {"mode": "0644", "sha256": "5f15a94d60ba5f85b32ae6b2e2dbc5904d5cf1fc39ee3424fc1d505f00233f07", "size": 1010, "store": "object"},
+ "OpenFutureRevisionAxiomAudit.log": {"mode": "0644", "sha256": "91df24c7ed9a2bb921bf3ddb377f5c1185b45b6fd358f03cd70a5b167f146e8e", "size": 1321, "store": "object"},
+ "verification.json": {"mode": "0644", "sha256": "b4b0d6b2ce654b05ee8b4731faee4f8332834ed22dac0de2adb9e6b1a1d14bb0", "size": 1459801, "store": "run"},
+ "version.log": {"mode": "0644", "sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b", "size": 106, "store": "object"}
+}}

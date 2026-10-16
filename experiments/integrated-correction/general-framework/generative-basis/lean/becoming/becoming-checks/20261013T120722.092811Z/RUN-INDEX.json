@@ -1,0 +1,17 @@
+{"format": "becoming-evidence-run-index/1", "note": "store: object = bytes in _objects/<sha[0:2]>/<sha256>; empty = zero bytes, nowhere stored; run = kept in this folder. Rebuild with evidence_store.py restore.", "run": "20261013T120722.092811Z",
+"files": {
+ "Becoming.ReferencePlan.lean": {"mode": "0644", "sha256": "59294987efe97c99c6496f4604a9d50dad25bb0b2fe13bebbacc1cfe696c8680", "size": 16169, "store": "object"},
+ "Becoming.Regrouping.lean": {"mode": "0644", "sha256": "210ecae682f45520052e618c3ffad47d01f93b4779f9160f87dd66b734b4b876", "size": 15146, "store": "object"},
+ "Becoming.RepairComparison.lean": {"mode": "0644", "sha256": "4d7586db6df2f41d51af88e03bf4872ba7de5700065423a59c8cf9450464ea41", "size": 10717, "store": "object"},
+ "Becoming.Revision.lean": {"mode": "0644", "sha256": "4f8ded7ccd2b609ba19634e819b01796b70d06d285a752ddbdd8c6dd60d4146e", "size": 13193, "store": "object"},
+ "Becoming.lean": {"mode": "0644", "sha256": "73627b0f808c3a865643dc3f45cdcfa62413a85530be061f68cfd2714895340e", "size": 62538, "store": "object"},
+ "BecomingRepairComparisonSignatures.lean": {"mode": "0644", "sha256": "9d0f6995bef4debf54eddb1aace36a67b3b634fc696ab85a1be8df6cf45619c4", "size": 949, "store": "object"},
+ "BecomingRepairComparisonSignatures.log": {"mode": "0644", "sha256": "036f2a8d2dbefa5b159b5cf249c1b871836851485ecee44e8b5f66dc64521f12", "size": 6107, "store": "object"},
+ "EnvironmentAudit.lean": {"mode": "0644", "sha256": "25e038c74e90a63cc32228656a214f3b9670932495974d49fbb32444363865aa", "size": 4170, "store": "object"},
+ "EnvironmentAudit.log": {"mode": "0644", "sha256": "137db1429f887f578ffc8ac95af31f8ddb0a3272896e2d3f1295b05892e4e2a1", "size": 5625, "store": "object"},
+ "GenerativeLossComparisonAxiomAudit.lean": {"mode": "0644", "sha256": "2af74835f5bdfa7f3419a73382a10aca60ee2a2989c0652c090fa4ee2999cb5a", "size": 1540, "store": "object"},
+ "GenerativeLossComparisonAxiomAudit.log": {"mode": "0644", "sha256": "53ebaa875f2a6283d76180894f69ce13e08275387c6a1951b5163c6c403627e1", "size": 1955, "store": "object"},
+ "check_becoming.py": {"mode": "0644", "sha256": "d3892095f334ee5b8c84da3df8aaeb4d0f98229cc2507c2edf0d3478f37812db", "size": 149403, "store": "object"},
+ "verification.json": {"mode": "0644", "sha256": "cd9846eb8a2de8f5d9e88738de039b411d0b3cd30bc8b3c4da2fe99e2a843fdf", "size": 1505884, "store": "run"},
+ "version.log": {"mode": "0644", "sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b", "size": 106, "store": "object"}
+}}
