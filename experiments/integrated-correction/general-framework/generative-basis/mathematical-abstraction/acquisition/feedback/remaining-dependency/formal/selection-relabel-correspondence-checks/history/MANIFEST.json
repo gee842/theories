@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "root": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/history",
+  "entries": [
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z/Becoming.Selection.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/history/20261015T193732.676982Z/Becoming.Selection.lean",
+      "sha256": "ef1fab746fb47159fa2d0a81bfdc8683e5457333f87e589b68a4dbd8181f1503",
+      "blob": "6d7d2d0f1d3533df7fd5014d9143ff4819deed29",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 5 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z/SelectionRelabelCorrespondence.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/history/20261015T193732.676982Z/SelectionRelabelCorrespondence.lean",
+      "sha256": "b40bbd8bbca13bed5cf9193a15e60bf887e6c97d844d5a5681248ccf134a1c01",
+      "blob": "2a2b6ee53c4302f9a538c50ae55d0a7d048c8dfe",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 5 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z/check_selection_relabel_correspondence.py",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/history/20261015T193732.676982Z/check_selection_relabel_correspondence.py",
+      "sha256": "9d4450cae0055501cef676fec65cfcee50fc4efd7e034405c820d1168c36b126",
+      "blob": "83b2bb6d2fde89cd91272eecbff4e1827568093e",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 5 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z/verification.json",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/history/20261015T193732.676982Z/verification.json",
+      "sha256": "e9861bfb29766c9095ad09845bed6d3acc6e3feda7bcd783aa938734c57c1d90",
+      "blob": "d3f740cdebfdedc81b0b32d17a0d3c8918734483",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 5 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z/version.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/history/20261015T193732.676982Z/version.log",
+      "sha256": "6b38d6160c0223bc189f88caad3d56588b06ca7af2b81d19cb4dbcef5024f387",
+      "blob": "556d8045c555b7c9935be1c850036ec734f8e4ad",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 5 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T193732.676982Z"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "root": "experiments/market-generativity/formal/market-instances-checks/history",
+  "entries": [
+    {
+      "old_path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/Becoming.Lasting.lean",
+      "new_path": "experiments/market-generativity/formal/market-instances-checks/history/20261014T041714.366300Z/Becoming.Lasting.lean",
+      "sha256": "13565153d9c8bc28b5c9f7f51fda30520694f2911c02181975d77c8ee0190284",
+      "blob": "c87192406ca188f5501213211116d4269023c1ee",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 9 files",
+      "plan_entry": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/Becoming.Viability.lean",
+      "new_path": "experiments/market-generativity/formal/market-instances-checks/history/20261014T041714.366300Z/Becoming.Viability.lean",
+      "sha256": "365e15e172df651a7a12752a10219378171a100c19518446b84bf87ed1259268",
+      "blob": "4da28d52256d901783fbc172178350c97a7e3bf4",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 9 files",
+      "plan_entry": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/MarketInstances.lean",
+      "new_path": "experiments/market-generativity/formal/market-instances-checks/history/20261014T041714.366300Z/MarketInstances.lean",
+      "sha256": "da45239425e3b7ccb94cf690cb97eebf4da4eab9e3549fb822364f3b3d6ba4d3",
+      "blob": "74f6c38f0f44a9d02ee0ca8dce18b1b444109b09",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 9 files",
+      "plan_entry": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/MarketInstancesSignatures.lean",
+      "new_path": "experiments/market-generativity/formal/market-instances-checks/history/20261014T041714.366300Z/MarketInstancesSignatures.lean",
+      "sha256": "69d17f704be2134f45e5b52d25827aacb47de35a78df1a079cb7713947a3a2cd",
+      "blob": "ab6f0290195930f2263983cf67998dde42cf1486",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 9 files",
+      "plan_entry": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/MarketInstancesSignatures.log",
+      "new_path": "experiments/market-generativity/formal/market-instances-checks/history/20261014T041714.366300Z/MarketInstancesSignatures.log",
+      "sha256": "0d1c4eee16f29fe9a560c1ad1fd81d36ef78e31247831d347c19c6dc9d581882",
+      "blob": "5ce165436b55244fe2ab15854a331ba4c0fec12d",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 9 files",
+      "plan_entry": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/check_becoming.py",
+      "new_path": "experiments/market-generativity/formal/market-instances-checks/history/20261014T041714.366300Z/check_becoming.py",
+      "sha256": "5cb4221aaa61e8b7bb0e187a572bdc3ccdf82903611f3c03be20ba3872bdf2ba",
+      "blob": "158d84334b873bac6a6269d183e6b6f237707376",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 9 files",
+      "plan_entry": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/check_market_instances.py",
+      "new_path": "experiments/market-generativity/formal/market-instances-checks/history/20261014T041714.366300Z/check_market_instances.py",
+      "sha256": "5dd4d79d9cd72bb4c3bc4137965871ce5cec440f7e098e0101043d61b0c0262b",
+      "blob": "83fef79bdc811e450ab014e6c20b6ce03e69053a",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 9 files",
+      "plan_entry": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/verification.json",
+      "new_path": "experiments/market-generativity/formal/market-instances-checks/history/20261014T041714.366300Z/verification.json",
+      "sha256": "3807bab1cb65fc9498108a8204fe318bb4a647f525cf701ad64ca6d026752e24",
+      "blob": "e2c0f3662ca204c886a1acbd4d653a9ea3daf1b9",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 9 files",
+      "plan_entry": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/version.log",
+      "new_path": "experiments/market-generativity/formal/market-instances-checks/history/20261014T041714.366300Z/version.log",
+      "sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+      "blob": "b33f297d02e05ca4f62876dc082a58f5da7bf1f2",
+      "batch": "H7",
+      "reason": "run folder named only in docs / record history prose (links rewritten by the tool); 9 files",
+      "plan_entry": "experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z"
+    }
+  ]
+}

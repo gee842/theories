@@ -1,0 +1,726 @@
+{
+  "schema_version": 1,
+  "root": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history",
+  "entries": [
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/CommonTaskRevision.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/CommonTaskRevision.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/CorrectionHandoff.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/CorrectionHandoff.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/CorrectionRelations.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/CorrectionRelations.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/CorrectionVersioned.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/CorrectionVersioned.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/GoalFormationRevision.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/GoalFormationRevision.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/KnowledgeCorrespondence.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/KnowledgeCorrespondence.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/PendingTaskApplicability.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/PendingTaskApplicability.txt",
+      "sha256": "1b1be929baf06b926144d50c1e0fbfe16ba21266faefee3407ff70ed2dc87fb0",
+      "blob": "15969314d9445cbd3baef82beb602ee37a57c047",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/PendingTaskApplicabilityAudit.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/PendingTaskApplicabilityAudit.lean",
+      "sha256": "35667b1f3d7a28fd564617eb6d5492c103ee3f84a9a3b40ab348dfce11050672",
+      "blob": "81cb784ad94112bdfcd4a1dc60b67e99f1c3a12c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/PracticalJudgment.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/PracticalJudgment.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/check_pending_task_applicability.py",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/check_pending_task_applicability.py",
+      "sha256": "2551f075adc4d608b36f7d961b95918b66927d9c863a817eacb365f3ca9eaf56",
+      "blob": "90ebe33e1f5e56f7810501a2744b53490837109c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/lake-manifest.json",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/lake-manifest.json",
+      "sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+      "blob": "d05a058d140805c2f195e5be697cbfe20460eafa",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/lean-toolchain",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/lean-toolchain",
+      "sha256": "ce4c4e3d87434b9663f46de25ce34b48a0cf0d392e0a320a0787b4674a2d7b61",
+      "blob": "6c7e31fffe3e03be3e0d7021acd9cd848e44db26",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/sources/CommonTaskRevision.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/sources/CommonTaskRevision.lean",
+      "sha256": "7457eb257c09c31e2eba774c8d3a8be8654242f55d3e511bb6157fe4995bc398",
+      "blob": "e1fece01b9cf1762a94bf2f0f3716627549716c8",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/sources/CorrectionHandoff.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/sources/CorrectionHandoff.lean",
+      "sha256": "018533d88c34db5489635b61e4b0ab136b082cd28b1118971ae9c5c847af85c9",
+      "blob": "29da40b3a5e7ba7a02cd18c1fe2873f3f84a2692",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/sources/CorrectionRelations.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/sources/CorrectionRelations.lean",
+      "sha256": "9fbaa3585997862f9561b31d90b8552deda3e49beaedbd381ed4276f0518f858",
+      "blob": "699a72d7422602683e901f2bf7b359b77846e397",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/sources/CorrectionVersioned.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/sources/CorrectionVersioned.lean",
+      "sha256": "ed3c9a422b82cd8b76dc229ddd9f3981631b9dd906c9e0f8d6e0dda228144df0",
+      "blob": "4f90f77c5739b4b6d27d3e854be1795cbb06ee69",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/sources/GoalFormationRevision.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/sources/GoalFormationRevision.lean",
+      "sha256": "90c5903cf3d1382304fa91dc3336e7a8ae20c89695ea4c9baabd9b95bd068038",
+      "blob": "5cff8db57beab7a5589a29f67433b139e47b991a",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/sources/KnowledgeCorrespondence.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/sources/KnowledgeCorrespondence.lean",
+      "sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+      "blob": "167bcef493a92767c2ef591753e16faf3c437c75",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/sources/PendingTaskApplicability.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/sources/PendingTaskApplicability.lean",
+      "sha256": "684c62c1d60f50e1904c6e9c607860d43a0c3cce4b3a9acc3fa960d0421fc899",
+      "blob": "a6b271b2caf0910d1c1c38f8a687d297e97f3acd",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z/sources/PracticalJudgment.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183558.179264Z/sources/PracticalJudgment.lean",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "blob": "cd7bbb0ec6941dfe2464f33ec3b144baabf8a119",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183558.179264Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/CommonTaskRevision.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/CommonTaskRevision.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/CorrectionHandoff.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/CorrectionHandoff.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/CorrectionRelations.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/CorrectionRelations.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/CorrectionVersioned.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/CorrectionVersioned.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/GoalFormationRevision.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/GoalFormationRevision.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/KnowledgeCorrespondence.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/KnowledgeCorrespondence.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/PendingTaskApplicability.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/PendingTaskApplicability.txt",
+      "sha256": "71ce8af603d9847b80c77ca559ca4c6903be51344724658a9cb97087e32e2b14",
+      "blob": "534cc20ac7c477054320ce1ebb7995497cc85973",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/PendingTaskApplicabilityAudit.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/PendingTaskApplicabilityAudit.lean",
+      "sha256": "35667b1f3d7a28fd564617eb6d5492c103ee3f84a9a3b40ab348dfce11050672",
+      "blob": "81cb784ad94112bdfcd4a1dc60b67e99f1c3a12c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/PracticalJudgment.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/PracticalJudgment.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/check_pending_task_applicability.py",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/check_pending_task_applicability.py",
+      "sha256": "2551f075adc4d608b36f7d961b95918b66927d9c863a817eacb365f3ca9eaf56",
+      "blob": "90ebe33e1f5e56f7810501a2744b53490837109c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/lake-manifest.json",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/lake-manifest.json",
+      "sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+      "blob": "d05a058d140805c2f195e5be697cbfe20460eafa",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/lean-toolchain",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/lean-toolchain",
+      "sha256": "ce4c4e3d87434b9663f46de25ce34b48a0cf0d392e0a320a0787b4674a2d7b61",
+      "blob": "6c7e31fffe3e03be3e0d7021acd9cd848e44db26",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/sources/CommonTaskRevision.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/sources/CommonTaskRevision.lean",
+      "sha256": "7457eb257c09c31e2eba774c8d3a8be8654242f55d3e511bb6157fe4995bc398",
+      "blob": "e1fece01b9cf1762a94bf2f0f3716627549716c8",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/sources/CorrectionHandoff.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/sources/CorrectionHandoff.lean",
+      "sha256": "018533d88c34db5489635b61e4b0ab136b082cd28b1118971ae9c5c847af85c9",
+      "blob": "29da40b3a5e7ba7a02cd18c1fe2873f3f84a2692",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/sources/CorrectionRelations.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/sources/CorrectionRelations.lean",
+      "sha256": "9fbaa3585997862f9561b31d90b8552deda3e49beaedbd381ed4276f0518f858",
+      "blob": "699a72d7422602683e901f2bf7b359b77846e397",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/sources/CorrectionVersioned.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/sources/CorrectionVersioned.lean",
+      "sha256": "ed3c9a422b82cd8b76dc229ddd9f3981631b9dd906c9e0f8d6e0dda228144df0",
+      "blob": "4f90f77c5739b4b6d27d3e854be1795cbb06ee69",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/sources/GoalFormationRevision.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/sources/GoalFormationRevision.lean",
+      "sha256": "90c5903cf3d1382304fa91dc3336e7a8ae20c89695ea4c9baabd9b95bd068038",
+      "blob": "5cff8db57beab7a5589a29f67433b139e47b991a",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/sources/KnowledgeCorrespondence.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/sources/KnowledgeCorrespondence.lean",
+      "sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+      "blob": "167bcef493a92767c2ef591753e16faf3c437c75",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/sources/PendingTaskApplicability.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/sources/PendingTaskApplicability.lean",
+      "sha256": "ace702d08dd1065bc09583e08e5679ac579c3055c303f544cd6345cbed8f52ea",
+      "blob": "9de745c40c963ca65ef052da428690c4a296531c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z/sources/PracticalJudgment.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183736.257040Z/sources/PracticalJudgment.lean",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "blob": "cd7bbb0ec6941dfe2464f33ec3b144baabf8a119",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183736.257040Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/CommonTaskRevision.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/CommonTaskRevision.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/CorrectionHandoff.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/CorrectionHandoff.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/CorrectionRelations.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/CorrectionRelations.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/CorrectionVersioned.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/CorrectionVersioned.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/GoalFormationRevision.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/GoalFormationRevision.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/KnowledgeCorrespondence.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/KnowledgeCorrespondence.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/PendingTaskApplicability.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/PendingTaskApplicability.txt",
+      "sha256": "bff863b0a5e3e9c894f99a8543f393da10aa50faf131faad186806d21a099616",
+      "blob": "f140b3a859c48a3f2721bcb52b3f4a953fd27ae2",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/PendingTaskApplicabilityAudit.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/PendingTaskApplicabilityAudit.lean",
+      "sha256": "35667b1f3d7a28fd564617eb6d5492c103ee3f84a9a3b40ab348dfce11050672",
+      "blob": "81cb784ad94112bdfcd4a1dc60b67e99f1c3a12c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/PracticalJudgment.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/PracticalJudgment.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/check_pending_task_applicability.py",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/check_pending_task_applicability.py",
+      "sha256": "2551f075adc4d608b36f7d961b95918b66927d9c863a817eacb365f3ca9eaf56",
+      "blob": "90ebe33e1f5e56f7810501a2744b53490837109c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/lake-manifest.json",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/lake-manifest.json",
+      "sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+      "blob": "d05a058d140805c2f195e5be697cbfe20460eafa",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/lean-toolchain",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/lean-toolchain",
+      "sha256": "ce4c4e3d87434b9663f46de25ce34b48a0cf0d392e0a320a0787b4674a2d7b61",
+      "blob": "6c7e31fffe3e03be3e0d7021acd9cd848e44db26",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/sources/CommonTaskRevision.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/sources/CommonTaskRevision.lean",
+      "sha256": "7457eb257c09c31e2eba774c8d3a8be8654242f55d3e511bb6157fe4995bc398",
+      "blob": "e1fece01b9cf1762a94bf2f0f3716627549716c8",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/sources/CorrectionHandoff.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/sources/CorrectionHandoff.lean",
+      "sha256": "018533d88c34db5489635b61e4b0ab136b082cd28b1118971ae9c5c847af85c9",
+      "blob": "29da40b3a5e7ba7a02cd18c1fe2873f3f84a2692",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/sources/CorrectionRelations.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/sources/CorrectionRelations.lean",
+      "sha256": "9fbaa3585997862f9561b31d90b8552deda3e49beaedbd381ed4276f0518f858",
+      "blob": "699a72d7422602683e901f2bf7b359b77846e397",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/sources/CorrectionVersioned.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/sources/CorrectionVersioned.lean",
+      "sha256": "ed3c9a422b82cd8b76dc229ddd9f3981631b9dd906c9e0f8d6e0dda228144df0",
+      "blob": "4f90f77c5739b4b6d27d3e854be1795cbb06ee69",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/sources/GoalFormationRevision.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/sources/GoalFormationRevision.lean",
+      "sha256": "90c5903cf3d1382304fa91dc3336e7a8ae20c89695ea4c9baabd9b95bd068038",
+      "blob": "5cff8db57beab7a5589a29f67433b139e47b991a",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/sources/KnowledgeCorrespondence.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/sources/KnowledgeCorrespondence.lean",
+      "sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+      "blob": "167bcef493a92767c2ef591753e16faf3c437c75",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/sources/PendingTaskApplicability.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/sources/PendingTaskApplicability.lean",
+      "sha256": "000d3f258b8be48b9e1b51ab525eca7233a7aa88fbfde18fc4f394a04c54b454",
+      "blob": "d8c16bb54dd7f05215311013ea6f06d50a67f0c7",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z/sources/PracticalJudgment.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T183938.177987Z/sources/PracticalJudgment.lean",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "blob": "cd7bbb0ec6941dfe2464f33ec3b144baabf8a119",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T183938.177987Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/CommonTaskRevision.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/CommonTaskRevision.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/CorrectionHandoff.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/CorrectionHandoff.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/CorrectionRelations.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/CorrectionRelations.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/CorrectionVersioned.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/CorrectionVersioned.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/GoalFormationRevision.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/GoalFormationRevision.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/KnowledgeCorrespondence.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/KnowledgeCorrespondence.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/PendingTaskApplicability.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/PendingTaskApplicability.txt",
+      "sha256": "9bbcd49d24b3f843aba554e95ee222a75e720071d590bf2a520ef41075111088",
+      "blob": "4913e12893eadaee287804dadf096f5e05226d84",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/PendingTaskApplicabilityAudit.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/PendingTaskApplicabilityAudit.lean",
+      "sha256": "35667b1f3d7a28fd564617eb6d5492c103ee3f84a9a3b40ab348dfce11050672",
+      "blob": "81cb784ad94112bdfcd4a1dc60b67e99f1c3a12c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/PracticalJudgment.txt",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/PracticalJudgment.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/check_pending_task_applicability.py",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/check_pending_task_applicability.py",
+      "sha256": "2551f075adc4d608b36f7d961b95918b66927d9c863a817eacb365f3ca9eaf56",
+      "blob": "90ebe33e1f5e56f7810501a2744b53490837109c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/lake-manifest.json",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/lake-manifest.json",
+      "sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+      "blob": "d05a058d140805c2f195e5be697cbfe20460eafa",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/lean-toolchain",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/lean-toolchain",
+      "sha256": "ce4c4e3d87434b9663f46de25ce34b48a0cf0d392e0a320a0787b4674a2d7b61",
+      "blob": "6c7e31fffe3e03be3e0d7021acd9cd848e44db26",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/sources/CommonTaskRevision.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/sources/CommonTaskRevision.lean",
+      "sha256": "7457eb257c09c31e2eba774c8d3a8be8654242f55d3e511bb6157fe4995bc398",
+      "blob": "e1fece01b9cf1762a94bf2f0f3716627549716c8",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/sources/CorrectionHandoff.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/sources/CorrectionHandoff.lean",
+      "sha256": "018533d88c34db5489635b61e4b0ab136b082cd28b1118971ae9c5c847af85c9",
+      "blob": "29da40b3a5e7ba7a02cd18c1fe2873f3f84a2692",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/sources/CorrectionRelations.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/sources/CorrectionRelations.lean",
+      "sha256": "9fbaa3585997862f9561b31d90b8552deda3e49beaedbd381ed4276f0518f858",
+      "blob": "699a72d7422602683e901f2bf7b359b77846e397",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/sources/CorrectionVersioned.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/sources/CorrectionVersioned.lean",
+      "sha256": "ed3c9a422b82cd8b76dc229ddd9f3981631b9dd906c9e0f8d6e0dda228144df0",
+      "blob": "4f90f77c5739b4b6d27d3e854be1795cbb06ee69",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/sources/GoalFormationRevision.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/sources/GoalFormationRevision.lean",
+      "sha256": "90c5903cf3d1382304fa91dc3336e7a8ae20c89695ea4c9baabd9b95bd068038",
+      "blob": "5cff8db57beab7a5589a29f67433b139e47b991a",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/sources/KnowledgeCorrespondence.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/sources/KnowledgeCorrespondence.lean",
+      "sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+      "blob": "167bcef493a92767c2ef591753e16faf3c437c75",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/sources/PendingTaskApplicability.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/sources/PendingTaskApplicability.lean",
+      "sha256": "f9dc934e45ca04906543699f00a4a4f998bbd9777f92fa1cfb4e8d277a1b303b",
+      "blob": "1de8c6ae090b47ca905697550c41ce21b6519f51",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    },
+    {
+      "old_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z/sources/PracticalJudgment.lean",
+      "new_path": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/history/20261008T184156.002151Z/sources/PracticalJudgment.lean",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "blob": "cd7bbb0ec6941dfe2464f33ec3b144baabf8a119",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 20 files",
+      "plan_entry": "experiments/market-generativity/meta-attractor/pending-task-applicability-checks/20261008T184156.002151Z"
+    }
+  ]
+}

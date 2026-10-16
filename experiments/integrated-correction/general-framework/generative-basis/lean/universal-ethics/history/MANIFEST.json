@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "root": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history",
+  "entries": [
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/Audit.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/Audit.lean",
+      "sha256": "43ea876ed8874a0ee460d63ba7df73ab7e14705d80cf33a57de3649f693f97e3",
+      "blob": "2f13ff8717211652e4341f5386f460b3ee6f9a7b",
+      "batch": "H7",
+      "reason": "review probes (Audit/ReviewProbes*.lean) indexed as live modules; no receipt binds them",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean",
+      "sha256": "7bd1547fed752642f28ad12d10c4f49b3fe698d54cd08c64892b0ec93344a4f9",
+      "blob": "512f7e44ca8a34f7d47f55bf67f910e22ad0f229",
+      "batch": "H7",
+      "reason": "review probes (Audit/ReviewProbes*.lean) indexed as live modules; no receipt binds them",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes2.lean",
+      "sha256": "dd3b7662bd6f94a65c227c1eaab499920cc76ee77eafbfd080703c4f1a018f7a",
+      "blob": "dae1f01694c8781e0427b5ae3d0e33d478524859",
+      "batch": "H7",
+      "reason": "review probes (Audit/ReviewProbes*.lean) indexed as live modules; no receipt binds them",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes3.lean",
+      "sha256": "a9b0d078ad73df0a448da5ba4a1ed850efc73925587fde3b2821205a6fda3fd6",
+      "blob": "96a7d3d7919fc97921cf863d129ac9b42f15a4c5",
+      "batch": "H7",
+      "reason": "review probes (Audit/ReviewProbes*.lean) indexed as live modules; no receipt binds them",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/GoalRevision.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/GoalRevision.log",
+      "sha256": "b53b6bc3964094f29b709dc5f931731864313a44788418df47a609c62687847a",
+      "blob": "d441bc65ff0027f74c11d7e816b8eece9633f526",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/GoalRevisionAxiomAudit.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/GoalRevisionAxiomAudit.log",
+      "sha256": "6e7bc8c9a1563b80b10eddb3c49eacc01b62c1885cf89147c1e510181ade8414",
+      "blob": "5f72d27e96e669d14f5d0e36a7b2d729a2f2d985",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/GoalRevisionSignatures.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/GoalRevisionSignatures.log",
+      "sha256": "110f0d09bebff75bf9525294e45a9601d2e09da4c4e6053e09159fc2bf6698f4",
+      "blob": "4d6699a534de21153e5325661ecb711227e04ff6",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/PracticalJudgment.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/PracticalJudgment.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/PracticalJudgmentAxiomAudit.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/PracticalJudgmentAxiomAudit.log",
+      "sha256": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+      "blob": "009bd679079659497ba8bbbbf5fb5b0db175b93a",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/PracticalJudgmentSignatures.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/PracticalJudgmentSignatures.log",
+      "sha256": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+      "blob": "c31266e5f7e3a66e1d7d9116d2adf8174f75386f",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/final-document-binding.json",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/final-document-binding.json",
+      "sha256": "d7f762bf4a3c0e9281f31914aa5fd9f93df14480db241b6060fcb9cc8602d565",
+      "blob": "c88e4a471edddadcd92b56129ea6add1e73c3f14",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/verification.json",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/verification.json",
+      "sha256": "e2c4024a71a6da246c557b74bf80d82fd3865713173eef1b1c7305f2e978f530",
+      "blob": "802a336cd1d3fc34939cc2c18c999183c7e8cf2e",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/verify.py",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/verify.py",
+      "sha256": "b75cdd91b1ffa9f013182561a03ef77d2834a6b666dace76b58a7dbc5619f150",
+      "blob": "83377abcb40855a723d7667c49d045da0cd33a7a",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/version.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/version.log",
+      "sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+      "blob": "b33f297d02e05ca4f62876dc082a58f5da7bf1f2",
+      "batch": "H7",
+      "reason": "GoalRevision review logs",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-checks/draft-projection-error/RiskPriority.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/risk-priority-checks/draft-projection-error/RiskPriority.lean",
+      "sha256": "5f2176566cfb1d1bf0cec9d993d43e6073256f7a1f197fd0a9daf68bd2ca9697",
+      "blob": "13321e12f3de1b995f1ab5de6f384214645842fd",
+      "batch": "H7",
+      "reason": "failed draft of RiskPriority with its compile log",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-checks/draft-projection-error"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-checks/draft-projection-error/compile.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/risk-priority-checks/draft-projection-error/compile.log",
+      "sha256": "a8490d5313c2f516a945238c03cfeb48e0c5362206bbe2499bba083278a12af2",
+      "blob": "067c7d170f1fc92904bb5f16da0d751c1618df10",
+      "batch": "H7",
+      "reason": "failed draft of RiskPriority with its compile log",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-checks/draft-projection-error"
+    }
+  ]
+}

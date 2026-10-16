@@ -1574,10 +1574,10 @@
         "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/FRONTIER-GOAL-AUTHORITY-COMPARISON.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/APPLICATION-EVIDENCE-MATH.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/README.md",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/sources/ApplicationEvidence.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/sources/EvaluativeSuccession.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/sources/RecipientArchive.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/sources/ApplicationEvidence.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/sources/EvaluativeSuccession.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/sources/RecipientArchive.lean",
         "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md"
       ]
     },
@@ -1596,9 +1596,9 @@
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/completion-applicability/DEVELOPMENT-ATTEMPTS.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/CompletionApplicability.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/check.py",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/applicability/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/applicability/check.py",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/applicability/verification.json",
         "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/EvaluativeSuccession.lean",
@@ -1762,7 +1762,7 @@
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/connected-model/DEVELOPMENT-ATTEMPTS.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/verification.json",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/verification.json"
       ]
     },
@@ -1778,7 +1778,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControllerRevision.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolCompletion.lean",
         "theories/becoming/history/CONNECTED-GENERATIVE-MODEL.md"
@@ -3500,7 +3500,7 @@
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/verification.json",
         "theories/becoming/history/EVALUATIVE-GROUNDING.md",
         "theories/becoming/history/EVALUATIVE-PLASTICITY.md"
       ]
@@ -3711,7 +3711,7 @@
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review",
         "sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md",
         "theories/becoming/chapters/G0-WARRANT.md"
       ]
@@ -5435,9 +5435,9 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/WisdomGoalGrounds.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/checks/20261007T130838.854157Z/FormativeCapacityAxiomAudit.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/checks/20261007T130838.854157Z/GenerativeCoreAxiomAudit.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes2.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes3.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/sources/JointPracticeContinuationAudit.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/sources/OrganizationalRuleInheritanceAudit.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/lifecycle-verification/sources/LifecycleCorrespondenceAudit.lean",
@@ -5662,8 +5662,8 @@
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/nondual-applicability/DEVELOPMENT-ATTEMPTS.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/nondual/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/nondual/verification.json",
         "sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md",
         "theories/becoming/chapters/NONDUAL-METHOD.md"
       ]
@@ -5694,8 +5694,8 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeNondualApplicabilityModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeRepairApplicability.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/RecipientContinuationProjection.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/check.py",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/nondual/check.py",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/nondual/verification.json",
         "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionPreparation.lean",
@@ -6313,7 +6313,7 @@
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRETRAINING-EVIDENCE-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRETRAINING-EVIDENCE-SOURCES.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/pretraining/verification.json",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/pretraining-evidence/verification.json",
         "sources/37-ethical-minimum-primary-2026-10-06/pretraining-evidence/README.md",
         "theories/becoming/chapters/NONDUAL-METHOD.md"
@@ -8504,8 +8504,8 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/check_coformation.py",
-        "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-checks/1791270016396226000/TIMEOUT.md",
-        "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-checks/1791270570053836000/receipt.json",
+        "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-checks/history/1791270016396226000/TIMEOUT.md",
+        "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-checks/history/1791270570053836000/receipt.json",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/coformation-verification.json",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean",
         "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean",
@@ -9173,10 +9173,10 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/OutcomeContinuation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/acquired-perspective/README.md",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/README.md",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/README.md",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/README.md",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/nondual/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/pretraining/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/pretraining/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicClassification.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
@@ -9375,31 +9375,31 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/verification.json"
       ]
     },
-    "experiments/integrated-correction/general-framework/generative-basis/lean/connected/README.md": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/README.md": {
       "title": "Connected generative-model continuation",
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/connected-model",
         "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/INPUTS.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/INPUTS.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/applicability/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/verification.json",
         "theories/becoming/history/CONNECTED-GENERATIVE-MODEL.md"
       ]
     },
-    "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/README.md": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/applicability/README.md": {
       "title": "Completion and applicability in the connected model",
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETION-APPLICABILITY-IDENTIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETION-APPLICABILITY-MECHANISM.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/README.md",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/INPUTS.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/README.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/applicability/INPUTS.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/applicability/verification.json",
         "theories/becoming/history/CONNECTED-GENERATIVE-MODEL.md"
       ]
     },
-    "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/README.md": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/pretraining/README.md": {
       "title": "Retained evidence within the common generative development",
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md",
@@ -11784,12 +11784,12 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/ConstructiveDecisions.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/INPUTS.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/check.py",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/nondual/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/INPUTS.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/applicability/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/check.py",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/nondual/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/pretraining/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REFINEMENT.md",
@@ -12353,7 +12353,7 @@
         "_process/history/2026-10-05-support-and-shared-generativity/completion/UPDATER-FORMATION-INTEGRATION.md",
         "experiments/agentdojo-evidence-boundary/correction-action/continuation/RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/connected/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/README.md",

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "root": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history",
+  "entries": [
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z/ConsequenceInquiry.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113135.595570Z/ConsequenceInquiry.lean",
+      "sha256": "dc63aa1642038501e5ac22ed20f25ab575b9761309b6bbdd9319cfbfa193878c",
+      "blob": "ddbc4d5904f0f801781c38225b7d537b904ebe58",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 6 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z/ConsequenceInquiry.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113135.595570Z/ConsequenceInquiry.log",
+      "sha256": "c21709f9efe1376d722561e2900af01a614a213388db2e7b1a4f3e4e9d699601",
+      "blob": "31b0ffdf8fcf88d4fb95f29c546dfd55e4686747",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 6 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z/GenerativeCore.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113135.595570Z/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "blob": "c4da1304f9f67abbccee9680ab1117bb5945480c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 6 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z/GenerativeCore.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113135.595570Z/GenerativeCore.log",
+      "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+      "blob": "4075b8a8066e18e974a57153825201e8b6ae8f30",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 6 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z/RemainingDependency.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113135.595570Z/RemainingDependency.lean",
+      "sha256": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+      "blob": "256b537a61a404b448106ea10e1bdadc3ac84f42",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 6 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z/RemainingDependency.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113135.595570Z/RemainingDependency.log",
+      "sha256": "1ebe1f21adfed36245fa0f136eeceb8a6cdbcf3c1c82d3eb732051314469e07d",
+      "blob": "fad28f260e1f11334535170c08c849e07f6d37eb",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 6 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113135.595570Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113241.075069Z/ConsequenceInquiry.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113241.075069Z/ConsequenceInquiry.lean",
+      "sha256": "754ecacca0864345ca6512e5a7ccd6ada497939c84571bf706e67dc9e127c6c0",
+      "blob": "17ab48965e045c9f3cac82cfee27a0006a6a83dc",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 4 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113241.075069Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113241.075069Z/ConsequenceInquiry.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113241.075069Z/ConsequenceInquiry.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 4 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113241.075069Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113241.075069Z/GenerativeCore.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113241.075069Z/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "blob": "c4da1304f9f67abbccee9680ab1117bb5945480c",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 4 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113241.075069Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113241.075069Z/RemainingDependency.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113241.075069Z/RemainingDependency.lean",
+      "sha256": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+      "blob": "256b537a61a404b448106ea10e1bdadc3ac84f42",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 4 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113241.075069Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113637.439264Z/ConsequenceInquiry.lean",
+      "sha256": "38395875ddd4358570490ecf8b547d1054c1139ce002365ae29005d66a3143db",
+      "blob": "f6217c50f4d3eba50af45325f971ab68f28b34bc",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 2 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z/ConsequenceInquiry.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113637.439264Z/ConsequenceInquiry.log",
+      "sha256": "1ec241fd1d414361bcb5561543292fe22adf38eba591364fec8e07a679b7526f",
+      "blob": "1f44afae44a1d4d705310c19c37502fcdbffe752",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 2 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113637.439264Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113656.717398Z/ConsequenceInquiry.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113656.717398Z/ConsequenceInquiry.lean",
+      "sha256": "57d44026dbf222776ba43a3f4175806185d635be1c0db9fe5f3bb63b2f0f74c9",
+      "blob": "2675e861b1bc251f8668fabc4517cc96a9d733f4",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 2 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113656.717398Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113656.717398Z/ConsequenceInquiry.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T113656.717398Z/ConsequenceInquiry.log",
+      "sha256": "b63052c05ec57b7972299587fa800b4ab8e930ea683146aa5b635d633e363785",
+      "blob": "11656aa4637615579954edfae33562fe389c1cc1",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 2 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T113656.717398Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T114457.197105Z/InquiryRelevance.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T114457.197105Z/InquiryRelevance.lean",
+      "sha256": "dd091982de8bb489100e83fac17fd5045e62bd3832dd69dfb95d90eb318a1764",
+      "blob": "5f9f00152a144382b2a8ce8e7e9a781bd8b96c3e",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 2 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T114457.197105Z"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T114457.197105Z/InquiryRelevance.log",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/history/20261006T114457.197105Z/InquiryRelevance.log",
+      "sha256": "69db78b03d90f060ba718c5473b0fcdc1c2c2d20a0bfd481ef70873b6f5b49c2",
+      "blob": "86281a69b35d419d7b758de0ba5816b90094b963",
+      "batch": "H7",
+      "reason": "run folder referenced by nothing (no record, receipt or doc names its id); 2 files",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/consequence-inquiry/runs/20261006T114457.197105Z"
+    }
+  ]
+}

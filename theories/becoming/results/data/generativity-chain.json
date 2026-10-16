@@ -4486,7 +4486,7 @@
               "label_en": "Independent completion review"
             },
             {
-              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/verification.json",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/verification.json",
               "label_zh": "独立实查与重建",
               "label_en": "Independent checks and reconstruction"
             }
@@ -7642,7 +7642,7 @@
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision-verification.json": "9c97862c290f75b2da79ad4fd604e6cd762af3a5fd4f42cc08a0c91b558cd8cd",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/results.json": "e8873bcfecd74f6a9a3cdd4b1d22aaaa15e1d34582b4ac8e177f5f159a16d42a",
     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-REVISION-CONTINUATION-REVIEW.md": "2b1b37dbef8a7699db0934cbf243379726402eb0b17ddde4c1e3120dd271c3ca",
-    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-revision/review/verification.json": "e2c4024a71a6da246c557b74bf80d82fd3865713173eef1b1c7305f2e978f530",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/goal-revision/review/verification.json": "e2c4024a71a6da246c557b74bf80d82fd3865713173eef1b1c7305f2e978f530",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md": "45c61fc045595f190005d320cea02eb2438182ffa630c95315df1dd00667aaaf",
     "theories/becoming/history/SYSTEM-INDIVIDUATION.md": "62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7",
     "sources/15-codex-theory-conversations/2026-10-08-systems-foundation-question.md": "244f727cc64ba5b15b7ce1b1b482620967e866d2eb6a171ebdb68a2138a203d1",

@@ -7085,9 +7085,9 @@ Imports: `GoalFormationRevision`
 <details>
 <summary>Audit.lean — 0 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/Audit.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/Audit.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
 
-`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/Audit.lean`
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/Audit.lean`
 
 Imports: `RenewingFormation`, `ProtectionPriorityRival`
 
@@ -7102,28 +7102,28 @@ Imports: `RenewingFormation`, `ProtectionPriorityRival`
 <details>
 <summary>ReviewProbes.lean — 11 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
-`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean`
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean`
 
 Imports: `RenewingFormation`, `ProtectionPriorityRival`
 
 | 定理／引理 / Theorem or lemma | 源行 / Line |
 |---|---:|
-| [beyond_initial_implies_current](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L9) | 9 |
-| [current_invariant](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L13) | 13 |
-| [within_keeps_capacity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L93) | 93 |
-| [beyond_loses_capacity_at_once](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L102) | 102 |
-| [every_within_eventually_exceeds_every_beyond](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L108) | 108 |
+| [beyond_initial_implies_current](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L9) | 9 |
+| [current_invariant](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L13) | 13 |
+| [within_keeps_capacity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L93) | 93 |
+| [beyond_loses_capacity_at_once](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L102) | 102 |
+| [every_within_eventually_exceeds_every_beyond](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L108) | 108 |
 
 定义与类型 / Definitions and types:
 
-- `def` [BeyondCurrent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L6) (L6)
-- `def` [sustained](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L52) (L52)
-- `def` [surge](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L53) (L53)
-- `def` [restOnce](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L71) (L71)
-- `def` [KeepsCapacity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L90) (L90)
-- `def` [collapse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L117) (L117)
+- `def` [BeyondCurrent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L6) (L6)
+- `def` [sustained](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L52) (L52)
+- `def` [surge](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L53) (L53)
+- `def` [restOnce](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L71) (L71)
+- `def` [KeepsCapacity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L90) (L90)
+- `def` [collapse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes.lean#L117) (L117)
 
 </details>
 
@@ -7132,20 +7132,20 @@ Imports: `RenewingFormation`, `ProtectionPriorityRival`
 <details>
 <summary>ReviewProbes2.lean — 3 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes2.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
-`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean`
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes2.lean`
 
 Imports: `RenewingFormation`
 
 | 定理／引理 / Theorem or lemma | 源行 / Line |
 |---|---:|
-| [settle_path](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean#L9) | 9 |
-| [wears_yet_ceaseless](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean#L20) | 20 |
+| [settle_path](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes2.lean#L9) | 9 |
+| [wears_yet_ceaseless](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes2.lean#L20) | 20 |
 
 定义与类型 / Definitions and types:
 
-- `def` [surgeThenSettle](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes2.lean#L7) (L7)
+- `def` [surgeThenSettle](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes2.lean#L7) (L7)
 
 </details>
 
@@ -7154,19 +7154,19 @@ Imports: `RenewingFormation`
 <details>
 <summary>ReviewProbes3.lean — 3 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes3.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
 
-`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean`
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes3.lean`
 
 Imports: `ProtectionPriorityRival`
 
 | 定理／引理 / Theorem or lemma | 源行 / Line |
 |---|---:|
-| [extension_shapeB](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean#L10) | 10 |
-| [every_nat_score_tradesB](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean#L28) | 28 |
+| [extension_shapeB](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes3.lean#L10) | 10 |
+| [every_nat_score_tradesB](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes3.lean#L28) | 28 |
 
 定义与类型 / Definitions and types:
 
-- `def` [inventoryB](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-review/ReviewProbes3.lean#L6) (L6)
+- `def` [inventoryB](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/history/generative-capacity/generative-discrimination-review/ReviewProbes3.lean#L6) (L6)
 
 </details>
