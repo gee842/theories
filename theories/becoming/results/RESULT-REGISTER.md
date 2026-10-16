@@ -134,7 +134,7 @@
 | `lifting-where-branching-is-finite` | [有限分支处的提升 / Lifting where branching is finite](records/lifting-where-branching-is-finite.md) | theorem | recorded-checked |
 | `listing-once-is-decided-identity` | [列出一次就是已定的同一 / Listing once is decided identity](records/listing-once-is-decided-identity.md) | theorem | recorded-checked |
 | `living-on-and-descent` | [以之为生与世系 / Living on and descent](records/living-on-and-descent.md) | theorem | recorded-checked |
-| `loops-within-what-a-law-reads` | [回路在律所读之内，经过储量的回路在断裂处形成 / Loops lie within what a law reads, and the loop through a stock forms at its break](records/loops-within-what-a-law-reads.md) | theorem | recorded-checked |
+| `loops-within-what-a-law-reads` | [回路在律所读之内，经储量起作用的回路在断裂处形成 / Loops lie within what a law reads, and the loop that acts through a stock forms at its break](records/loops-within-what-a-law-reads.md) | theorem | recorded-checked |
 | `loss-beyond-a-region` | [区域之外的损失 / Loss beyond a region](records/loss-beyond-a-region.md) | theorem | recorded-checked |
 | `losses-of-the-sum-over-histories` | [历史之和的损失 / Losses of the sum over histories](records/losses-of-the-sum-over-histories.md) | theorem | recorded-checked |
 | `map-of-premises` | [前提的地图 / The map of premises](records/map-of-premises.md) | theorem | recorded-checked |
@@ -151,7 +151,7 @@
 | `necessarily-drawn-is-not-returning` | [可能与必然被吸入 / Possibly and necessarily drawn](records/necessarily-drawn-is-not-returning.md) | theorem | recorded-checked |
 | `no-finite-part-bears-taking` | [复现的取用打开有限家族 / Recurring taking opens finite families](records/no-finite-part-bears-taking.md) | theorem | recorded-checked |
 | `normal-forms-need-decided-apartness` | [有名交换的正规形恰需要段内不相连可判定 / Normal forms of named exchanges need exactly decided apartness on the stretch](records/normal-forms-need-decided-apartness.md) | theorem | recorded-checked |
-| `observation-is-a-route` | [观察是从所观察者出发的路线：差别只往下游去 / Observation is a route from what is observed: a difference goes only downstream](records/observation-is-a-route.md) | theorem | recorded-checked |
+| `observation-is-a-route` | [观察不出下游：差别只往下游去 / Observation lies within the downstream: a difference goes only downstream](records/observation-is-a-route.md) | theorem | recorded-checked |
 | `one-axiom-yields-g0` | [一条公理推出 G0 / One axiom yields G0](records/one-axiom-yields-g0.md) | theorem | recorded-checked |
 | `one-step-missing-laws` | [所陈述的一步之律所遗漏的 / What the stated laws of one step miss](records/one-step-missing-laws.md) | theorem | recorded-checked |
 | `only-the-order-of-change-registers` | [只有变化的次序被登记 / Only the order of change registers](records/only-the-order-of-change-registers.md) | theorem | recorded-checked |

@@ -15,8 +15,8 @@
   },
   "laws": [
     {
-      "zh": "从运行的每个配置开始每个长度的路径，运行的每个配置可从其起点得到；从路径通向之处的运行前接路径即得运行，从路径通向返回者之处运行绕返回而行。",
-      "en": "From each configuration of a run courses of every length start, and each is had from its start; a run from where a course leads, preceded by the course, is a run, and from where a course leads to a return a run goes round the return.",
+      "zh": "从运行的每个配置开始，有每个长度的路径；运行的每个配置都可从运行的起点到达；从路径通向之处的运行前接路径即得运行，从路径通向返回者之处运行绕返回而行。",
+      "en": "From each configuration of a run courses of every length start, and each configuration of the run is reached from its start; a run from where a course leads, preceded by the course, is a run, and from where a course leads to a return a run goes round the return.",
       "declarations": [
         "Becoming.Onward.continues_of_run",
         "Becoming.Onward.unbounded_of_run",
@@ -147,8 +147,8 @@
     "en": "The laws along runs where nothing lists the configurations (for instance through a test and an enumeration); being drawn in within a bound; an independent review; Ren's judgment on the readings."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 returning-where-the-course-branches 的 next_delta 与 lifting-where-branching-is-finite 的 next_delta 第二项。读法（AI 的，待 Ren）：有限多配置之内，无尽地进行者靠回转而进行，路径本身显出它在何处返回，不需选取，延续从展开读出；配置不受界时，无尽的进行在能搜索移动处给出，对每个过程要求每个能继续运动的配置都开始一个运行，恰是依赖选择。依赖选择是标准名，核心名 DependentSelection 沿 Lasting 的“选取”；选取是每步取一个延续的函数，不是一个选取者。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of returning-where-the-course-branches and the second item of the next_delta of lifting-where-branching-is-finite. Readings (the AI's, pending Ren): within finitely many configurations, whatever goes on without end does so by coming round; the course itself shows where it returns, nothing is selected, and going on is read off the unfolding; where the configurations are not bounded, going on without end is given where the moves can be searched, and asked of every process, that every configuration that can keep moving starts a run is exactly dependent choice. Dependent choice is the standard name; the core name DependentSelection follows Lasting's selection, a function taking a continuation at each step, not a selector."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 returning-where-the-course-branches 的 next_delta 与 lifting-where-branching-is-finite 的 next_delta 第二项。读法（AI 的，待 Ren）：有限多配置之内，无尽地进行者靠回转而进行，路径本身显出它在何处返回，不需选取，延续从展开读出；配置不受界时，无尽的进行在能搜索移动处给出，对每个过程要求每个能继续运动的配置都开始一个运行，恰是依赖选择。分支无穷时每个长度的路径不给出运行（扇），是 König 引理（1927）对无穷分支的树不成立；有限的情形即 König 引理。依赖选择是标准名，核心名 DependentSelection 沿 Lasting 的“选取”；选取是每步取一个延续的函数，不是一个选取者。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of returning-where-the-course-branches and the second item of the next_delta of lifting-where-branching-is-finite. Readings (the AI's, pending Ren): within finitely many configurations, whatever goes on without end does so by coming round; the course itself shows where it returns, nothing is selected, and going on is read off the unfolding; where the configurations are not bounded, going on without end is given where the moves can be searched, and asked of every process, that every configuration that can keep moving starts a run is exactly dependent choice. Courses of every length giving no run where branching is infinite (the fan) is the failure of König's lemma (1927) for infinitely branching trees, and the finite case is König's lemma. Dependent choice is the standard name; the core name DependentSelection follows Lasting's selection, a function taking a continuation at each step, not a selector."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
   "aliases": [
@@ -494,6 +494,10 @@
     {
       "zh": "2026-10-16：新增，回答 returning-where-the-course-branches 的 next_delta 与 lifting-where-branching-is-finite 的 next_delta 第二项（P127）；研究 §161。",
       "en": "16 October 2026: added, answering the next_delta of returning-where-the-course-branches and the second item of the next_delta of lifting-where-branching-is-finite (P127); study section 161."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：定律 0 的中文缺动词（“有”），审查提议改为“每条都从其起点得到”（第 38 项，P9）。核对 Lean：reach_of_run 给出 Reach P (r.state 0) (r.state n)，即运行的每个配置可从运行的起点到达，所以原中文的第二半是对的，审查对这一半的读法不采用；英文“each is had from its start”有歧义，改为“each configuration of the run is reached from its start”，中文补上动词。correspondence 记 König 1927（第 39 项，K5）。断言不变。",
+      "en": "16 October 2026, eighteenth review (R18): law 0's Chinese lacked its verb (有), and the review proposed “each course is had from its start” (item 38, P9). Checked against the Lean: reach_of_run gives Reach P (r.state 0) (r.state n), each configuration of the run reached from the run's start, so the original Chinese second half was right and the review's reading of it is not taken; the ambiguous English “each is had from its start” now reads “each configuration of the run is reached from its start”, and the Chinese gains its verb. The correspondence names König 1927 (item 39, K5). Claim unchanged."
     }
   ],
   "text_versions": []

@@ -4,9 +4,9 @@
 
 `every-origin-passes-the-gate` · **recorded-checked** · theorem · F10 · [record](every-origin-passes-the-gate.json) · [register](../../../../RESULTS.md)
 
-> For every process and decided gate: where ungated steps reflect a property, a course ending where it holds started there or passes a gated step after which it holds, the property undecided; leaving a preserved property passes the gate. With a propositional gate this is double-negation elimination.
+> For any process and decided gate: if ungated steps reflect a property, a course ending where it holds starts there or passes a gated step after which it does, the property undecided; leaving a preserved one passes it. Asked of every process, propositional gates make this double-negation elimination.
 >
-> 对每个过程与动作上的已定之门：非门控步反映的性质，终于其成立处的进程或始于其成立处，或经一个之后它成立的门控步，不判定该性质；离开非门控步保持的性质经过门。门是命题时这一律恰是双重否定消去。
+> 对任何过程与动作上的已定之门：非门控步反映的性质，终于其成立处的进程或始于其成立处，或经一个之后它成立的门控步，不判定该性质；离开非门控步保持的性质经过门。对每个过程都要求时，以命题为门使这一律恰是双重否定消去。
 
 ## Laws / 规律
 
@@ -23,7 +23,7 @@
 ## Does not show / 未表明
 
 - That a gated move changes anything: the gate only locates where change or origin can enter.<br>门控动作改变任何东西：门只定位改变或起源能从哪里进入。
-- Without deciding p, the first gated step at which p comes to hold (failing before it): the law gives a gated step after which p holds.<br>不判定 p 时，起源之律给出第一个使 p 成立的门控步（之前 p 不成立）：它给出一个之后 p 成立的门控步。
+- Without deciding p, the first gated step at which p comes to hold (failing before it): the law gives a gated step after which p holds.<br>不判定 p 时，第一个使 p 成立的门控步（之前 p 不成立）：律只给出一个之后 p 成立的门控步。
 - The origin law with a propositional gate and no decision: asked of every process it is exactly double-negation elimination.<br>以命题为门而不判定时的起源之律：对每个过程要求它恰是双重否定消去。 Witness: `Becoming.Gated.origin_of_propositions_iff`.
 - That LivingOrganization's recipes, admitted reactions and selected pool correspond to any actual chemistry: closure is a checked property of the admitted recipes, not a law of all chemistry.<br>LivingOrganization 的配方、准入反应与所选的池对应任何实际化学：闭合是所准入配方的已查性质，不是一切化学的定律。
 
@@ -92,6 +92,7 @@ Aliases / 别名: `Becoming.Gated.origin`, `Becoming.Gated.leaving_passes_gate`,
 - 2026年10月16日，P127（Becoming.Onward，研究第161节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§1 加入运行在何处继续一段，§8 随之，§9 加一行与术语；回执与合计改据新运行（7089 项定理、9753 项声明审计，核心闭包 126 个模块，包 131 个））。 / 16 October 2026, landing P127 (Becoming.Onward, study section 161): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§1 gains the paragraph on where a run goes on, with §8, and §9 gains a row and glossary entries; receipt and totals moved to the new run (7089 theorems, 9753 declaration audits, core closure 126 modules, package 131)).
 - 2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（P128：第二部分折叠为 §6.15 的条件小节（理论不断言那一条公理；三条等价；不变的一步；条件之下每次缩小都失去有意义者，混合部分需要度量）；原第二部分一节移入 §6.15；一句话、两个目标、完整陈述、前提卡、第一部分引言、§5、§6、§7、§8、§9 与术语表中的“第二部分”改为“以那一条公理为条件”）。 / 16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (P128: Part II folded into the conditional section 6.15 (the theory does not assert the one axiom; the three equivalences; the step of invariance; under the condition every narrowing loses something with significance, so mixed parts need a measure); the Part II section moved into 6.15; “Part II” in the summary, the two targets, the full statement, the premise card, the Part I introduction, sections 5, 6, 7, 8, 9 and the glossary now reads “with the one axiom as a condition”).
 - 2026年10月16日，发布准备度复核（P129）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（发布复核（P129）：最小的识标明双重否定的强度（所经的识不能不含其敏感者）；“条件无穷多时这一条件不能去掉”改为“能否去掉取决于全知原则”（给定消失之判定，尾之律是反例；每个反例给出弱有限全知原则））。 / 16 October 2026, release-readiness review (P129): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (Release review (P129): the least registration marked at its double-negation strength (a registration read through cannot fail to hold a condition the law is sensitive to); “with infinitely many conditions this cannot be dropped” now reads “whether this can be dropped turns on omniscience” (given a decision of vanishing the tail law is a counterexample; every counterexample gives WLPO)).
+- 2026年10月16日，第十八次审查（R18）：does_not_show 1 的中文把英文所列的不显示者（不判定 p 时第一个使 p 成立的门控步）写成了肯定的断言；中文改与英文一致（审查第 20 项）。陈述中“门是命题时这一律恰是双重否定消去”补上“对每个过程都要求时”：origin_of_propositions_iff 对一切过程量化，对一个过程这一律不是双重否定消去（第 21 项）。断言收窄，定理不变。 / 16 October 2026, eighteenth review (R18): does_not_show 1's Chinese stated as shown what the English lists as not shown (without deciding p, the first gated step at which p comes to hold); the Chinese now matches the English (review item 20). The statement's “with a propositional gate this is double-negation elimination” now says “asked of every process”: origin_of_propositions_iff quantifies over every process, and for one process the law is not double-negation elimination (item 21). Claim narrowed; no theorem changed.
 
 </details>
 

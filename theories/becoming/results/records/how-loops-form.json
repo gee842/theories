@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
-    "zh": "回路由闭合而形成：到 T + 1 形成的回路，是到 T 形成的回路与经过在第 T 步作用、闭合一条链的耦合的回路；形成之前增长至多是多项式，且不显示它是否将形成；强度从进程读出时，进程是其所读强度的所携带的量，回路的形成从展开读出。",
-    "en": "A loop forms by closing: the loops formed by T + 1 are those formed by T and those through a coupling acting at T that closes a chain; before it forms growth is polynomial and does not show it will; with strengths read off the course, formation is read off the unfolding."
+    "zh": "回路由闭合而形成：到 T + 1 形成的回路，是到 T 形成的回路与经过在第 T 步作用、闭合一条链的耦合的回路；条件全部列出时，形成之前增长至多是多项式，且不显示它是否将形成；强度从进程读出时，回路的形成从展开读出。",
+    "en": "A loop forms by closing: the loops formed by T + 1 are those formed by T and those through a coupling acting at T that closes a chain; with every condition listed, growth before it forms is polynomial and does not show it will; with strengths read off the course, formation is read off the unfolding."
   },
   "laws": [
     {
@@ -571,6 +571,10 @@
     {
       "zh": "2026年10月16日，发布准备度复核（P129）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（发布复核（P129）：最小的识标明双重否定的强度（所经的识不能不含其敏感者）；“条件无穷多时这一条件不能去掉”改为“能否去掉取决于全知原则”（给定消失之判定，尾之律是反例；每个反例给出弱有限全知原则））。",
       "en": "16 October 2026, release-readiness review (P129): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (Release review (P129): the least registration marked at its double-negation strength (a registration read through cannot fail to hold a condition the law is sensitive to); “with infinitely many conditions this cannot be dropped” now reads “whether this can be dropped turns on omniscience” (given a decision of vanishing the tail law is a counterexample; every counterexample gives WLPO))."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：陈述“形成之前增长至多是多项式”漏了定律 2 与假设中已有的条件“条件全部列出”（审查第 31 项，O11）；中英陈述补上。中文去掉英文没有的“进程是其所读强度的所携带的量”，由定律 4 承担，两种语言现在相同。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): the statement “before it forms growth is polynomial” dropped the condition law 2 and the hypotheses carry, every condition listed (review item 31, O11); both statements now state it. The Chinese drops “the course is the carried amount of the strengths it reads”, which the English never had and law 4 carries, so the two now say the same. Claim narrowed; no theorem changed."
     }
   ],
   "text_versions": []

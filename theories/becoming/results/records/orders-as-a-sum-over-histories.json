@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
-    "zh": "所携带的量是沿时间往回的路线之和：历史之和在视界 j + 1 上就是所携带的量的 j 阶，每一阶是历程之和，截断就是视界；每个历史之和按阶展开，j 阶到视界 j 精确；有限视界精确恰在上游没有回路处。",
-    "en": "The carried amount is a sum over routes back in time: at horizon j + 1 the sum over histories is order j of the carried amount, so a cut is a truncation; every sum over histories expands by order, exact up to its horizon; a finite horizon is exact exactly where no loop lies upstream."
+    "zh": "所携带的量是沿时间往回的路线之和：历史之和在视界 j + 1 上就是 j 阶，截断就是视界上的截断；每个这样的和按阶展开，到其视界精确；条件全部列出、律每步相同时，有限视界精确恰在上游没有回路处。",
+    "en": "The carried amount is a sum over routes back in time: at horizon j + 1 the sum over histories is order j, a cut being a truncation; every such sum expands by order, exact to its horizon; with every condition listed and the law stationary, a finite horizon is exact exactly where no loop is upstream."
   },
   "laws": [
     {
@@ -515,6 +515,10 @@
     {
       "zh": "2026年10月16日，发布准备度复核（P129）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（发布复核（P129）：最小的识标明双重否定的强度（所经的识不能不含其敏感者）；“条件无穷多时这一条件不能去掉”改为“能否去掉取决于全知原则”（给定消失之判定，尾之律是反例；每个反例给出弱有限全知原则））。",
       "en": "16 October 2026, release-readiness review (P129): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (Release review (P129): the least registration marked at its double-negation strength (a registration read through cannot fail to hold a condition the law is sensitive to); “with infinitely many conditions this cannot be dropped” now reads “whether this can be dropped turns on omniscience” (given a decision of vanishing the tail law is a counterexample; every counterexample gives WLPO))."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：陈述“有限视界精确恰在上游没有回路处”漏了定律 4 与假设中已有的条件：条件全部列出、形成与强度每步相同（审查第 31 项，O11）；中英陈述补上。中文去掉英文没有的“每一阶是历程之和”，由定律 4 承担，两种语言现在相同。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): the statement “a finite horizon is exact exactly where no loop lies upstream” dropped the conditions law 4 and the hypotheses carry: every condition listed, and the same formations and strengths at every step (review item 31, O11); both statements now state them. The Chinese drops “each order is a sum over courses”, which the English never had and law 4 carries, so the two now say the same. Claim narrowed; no theorem changed."
     }
   ],
   "text_versions": []

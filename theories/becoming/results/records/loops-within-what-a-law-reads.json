@@ -2,16 +2,16 @@
   "schema_version": 2,
   "id": "loops-within-what-a-law-reads",
   "title": {
-    "zh": "回路在律所读之内，经过储量的回路在断裂处形成",
-    "en": "Loops lie within what a law reads, and the loop through a stock forms at its break"
+    "zh": "回路在律所读之内，经储量起作用的回路在断裂处形成",
+    "en": "Loops lie within what a law reads, and the loop that acts through a stock forms at its break"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
-    "zh": "未读的水平耦合强度为零，所以回路在律所读之内，在读增长之处形成；对每个只在储量低于阈值时才读它的律，储量的抬高到断裂为止不被带到任何处，断裂之前没有经过储量的回路：经过储量的回路在断裂处形成。",
-    "en": "An unread level is coupled with strength zero, so loops lie within what a law reads and form where reading grows; for every law reading a stock only below a threshold, a raise is carried nowhere up to the break, with no loop through the stock before it: that loop forms at the break."
+    "zh": "未读的水平耦合强度为零，所以回路在律所读之内；对每个只在储量低于阈值时才读它的律，储量的抬高到断裂为止不被带到任何处，断裂之前律的动作如其立律，没有经过储量的回路：起作用的回路在断裂处形成。",
+    "en": "Unread levels couple with strength zero, so loops lie within what a law reads; for every law reading a stock only below a threshold, a raise is carried nowhere up to the break, before which the law acts as its standing law, with no loop through the stock: the loop that acts forms at the break."
   },
   "laws": [
     {
@@ -63,8 +63,8 @@
       ]
     },
     {
-      "zh": "断裂之前律就是其立律（储量低于阈值之处读作立于阈值）；立律不读储量，对储量的耦合强度为零，没有经过储量的回路，储量下游只有它自己：经过储量的回路在断裂处形成。储量在条件中由给出的标记标出，不判定条件。",
-      "en": "Before the break the law is its standing law, reading the stock as standing at its threshold wherever it stands below it; the standing law does not read the stock, is coupled to it with strength zero and has no loop through it, only the stock lying downstream of it: the loop through the stock forms at the break. The stock is marked among the conditions by a marking given with it, so no decision on conditions is used.",
+      "zh": "断裂之前律的动作如其立律（储量低于阈值之处读作立于阈值）；立律不读储量，对储量的耦合强度为零，没有经过储量的回路，储量下游只有它自己：经储量起作用的回路在断裂处形成。储量在条件中由给出的标记标出，不判定条件。",
+      "en": "Before the break the law acts as its standing law, reading the stock as standing at its threshold wherever it stands below it; the standing law does not read the stock, is coupled to it with strength zero and has no loop through it, only the stock lying downstream of it: the loop that acts through the stock forms at the break. The stock is marked among the conditions by a marking given with it, so no decision on conditions is used.",
       "declarations": [
         "Becoming.standAt",
         "Becoming.offStock",
@@ -636,6 +636,10 @@
     {
       "zh": "2026年10月16日，P125（Becoming.Observation，研究第159节）落地，并带 Ren 对 P124 读法的同意：改绑新回执并更新哈希：Thresholds.lean（读法说明写明 Ren 2026-10-16 同意（“agree in general”）；辅助引理 Thresholds.le_of_not_lt 改名为 Thresholds.le_of_not_not（陈述与证明不变））。",
       "en": "16 October 2026, landing P125 (Becoming.Observation, study section 159) with Ren's agreement with P124's readings: rebound to the new receipt and rehashed: Thresholds.lean (the readings header records Ren's agreement of 16 October 2026 (“agree in general”); the helper lemma Thresholds.le_of_not_lt renamed Thresholds.le_of_not_not (statement and proof unchanged))."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：陈述原说“断裂之前没有经过储量的回路：经过储量的回路在断裂处形成”；但律自己的强度从一开始就把储量耦合到自身（反例 0），没有回路的是立律（ReadsBelow.standing_no_loop），断裂之前律的动作如其立律（Flow.follows_standing_before）（审查第 27 项，O6）。陈述、标题与定律 4 改为“断裂之前律的动作如其立律，立律没有经过储量的回路；起作用的回路在断裂处形成”。为守住陈述的长度，陈述去掉“在读增长之处形成”，由定律 1 承担。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): the statement said there is “no loop through the stock before it: that loop forms at the break”; but the law's own strengths couple the stock to itself from the start (counterexample 0), the loop-free law is the standing law (ReadsBelow.standing_no_loop), and before the break the law acts as it (Flow.follows_standing_before) (review item 27, O6). The statement, the title and law 4 now say that before the break the law acts as its standing law, which has no loop through the stock, and that the loop that acts forms at the break. To stay within the statement's length, “and form where reading grows” leaves the statement and is carried by law 1. Claim narrowed; no theorem changed."
     }
   ],
   "text_versions": []

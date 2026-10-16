@@ -15,8 +15,8 @@
   },
   "laws": [
     {
-      "zh": "算入整体的其余（Flow.withImbalance），跨一步家族的存量上升时，某个参与的关系项给家族的多于从它取的，是参与的形成或其余；它由逐个核对参与者找到，不判定任何无穷的事；一段上的上升在其中某步被给予。",
-      "en": "With the rest of the whole counted (Flow.withImbalance), across a step at which a family's stock rises some relatum taking part gives the family more than it takes from it, a formation taking part or the rest; it is found by checking each one taking part, deciding nothing infinite; a rise over a stretch is given at some step of it.",
+      "zh": "算入整体的其余（Flow.withImbalance），按其余被定义为剩余，跨一步家族的存量上升时，某个参与的关系项给家族的多于从它取的，是参与的形成或其余；它由逐个核对参与者找到，不判定任何无穷的事；一段上的上升在其中某步被给予。",
+      "en": "With the rest of the whole counted (Flow.withImbalance), by the definition of the rest as the residual, across a step at which a family's stock rises some relatum taking part gives the family more than it takes from it, a formation taking part or the rest; it is found by checking each one taking part, deciding nothing infinite; a rise over a stretch is given at some step of it.",
       "declarations": [
         "Becoming.Flow.NetGiver",
         "Becoming.Flow.rise_netGiver",
@@ -617,6 +617,10 @@
     {
       "zh": "2026-10-16：验证范围写明 P110–P112 落地时绑定的回执 20261015T192014.437564Z（此前写作“回执于落地时绑定”）；陈述、证明与绑定不变。",
       "en": "16 October 2026: the validation scope names the receipt bound when P110–P112 landed, 20261015T192014.437564Z (it read “receipt bound at landing”); statement, proofs and bindings unchanged."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：“每次上升都是被给予的”（rise_netGiver）是记账的恒等式：其余在 withImbalance 中被定义为剩余；定律 0 没有标明它由构造成立（审查第 34 项，P3）。定律 0 补上“按其余被定义为剩余”。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): “every rise is given” (rise_netGiver) is an accounting identity: withImbalance defines the rest as the residual, and law 0 did not mark it as holding by construction (review item 34, P3). Law 0 now says “by the definition of the rest as the residual”. Claim narrowed; no theorem changed."
     }
   ],
   "text_versions": []

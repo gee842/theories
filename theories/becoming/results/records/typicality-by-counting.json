@@ -41,8 +41,8 @@
       ]
     },
     {
-      "zh": "多数历程显示权重：x·x + y·y ≥ 2·x·y + d 的历程之重乘 d 至多 n·p·q·(p + q)ⁿ；所以一的频率与 p / (p + q) 相差 ε 以上者，所占之重至多 p·q / ((p + q)²·ε²·n)。",
-      "en": "Most courses show the weights: those with x·x + y·y ≥ 2·x·y + d weigh, times d, at most n·p·q·(p + q)ⁿ; so those whose frequency of ones is off p / (p + q) by ε or more weigh a share of at most p·q / ((p + q)²·ε²·n).",
+      "zh": "多数历程显示权重：x·x + y·y ≥ 2·x·y + d 的历程之重乘 d 至多 n·p·q·(p + q)ⁿ；所以一的频率与 p / (p + q) 相差 ε 以上者，所占之重至多 p·q / ((p + q)²·ε²·n)；这是由那一界取 d = (p + q)²·ε²·n² 的算术，不是另一条定理。",
+      "en": "Most courses show the weights: those with x·x + y·y ≥ 2·x·y + d weigh, times d, at most n·p·q·(p + q)ⁿ; so those whose frequency of ones is off p / (p + q) by ε or more weigh a share of at most p·q / ((p + q)²·ε²·n), arithmetic from that bound with d = (p + q)²·ε²·n², not a separate theorem.",
       "declarations": [
         "Becoming.Typicality.two_mul_le",
         "Becoming.Typicality.offBy",
@@ -61,8 +61,8 @@
       ]
     },
     {
-      "zh": "集中是指数的：一乘 u、零乘 v 时权重逐步相乘；对每个 u ≥ v，至少 k 个一的历程之重乘 uᵏ·vⁿ 至多 (p·u + q·v)ⁿ·vᵏ；p = q = 1 时其数乘 3ᵏ 至多 4ⁿ，k ≥ 3n/4 时所占不到 0.88ⁿ。",
-      "en": "Concentration is exponential: weighting each one by u and each zero by v multiplies the weights step by step; for every u ≥ v, the courses with at least k ones weigh, times uᵏ·vⁿ, at most (p·u + q·v)ⁿ·vᵏ; with p = q = 1 they number, times 3ᵏ, at most 4ⁿ, a share below 0.88ⁿ for k ≥ 3n/4.",
+      "zh": "集中是指数的：一乘 u、零乘 v 时权重逐步相乘；对每个 u ≥ v，至少 k 个一的历程之重乘 uᵏ·vⁿ 至多 (p·u + q·v)ⁿ·vᵏ；p = q = 1 时其数乘 3ᵏ 至多 4ⁿ，k ≥ 3n/4 时所占不到 0.88ⁿ（由那一界的算术：2ⁿ/3^(3n/4) < 0.88ⁿ，不是另一条定理）。",
+      "en": "Concentration is exponential: weighting each one by u and each zero by v multiplies the weights step by step; for every u ≥ v, the courses with at least k ones weigh, times uᵏ·vⁿ, at most (p·u + q·v)ⁿ·vᵏ; with p = q = 1 they number, times 3ᵏ, at most 4ⁿ, a share below 0.88ⁿ for k ≥ 3n/4 (arithmetic from that bound: 2ⁿ/3^(3n/4) < 0.88ⁿ, not a separate theorem).",
       "declarations": [
         "Becoming.Typicality.pow_add_nat",
         "Becoming.Typicality.ones_add_zeros",
@@ -515,6 +515,10 @@
     {
       "zh": "2026年10月16日，P119 落地（研究第150节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第150节（P119：分开与计数的开放证明）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P119：在“权重计数情境”之后加“分开与计数的开放证明”一对段落；整体陈述的两条与界一项、§8 的两行状态与“路径分支时”一项、§9 的三行（43、43、38）与术语表一行（被给予世界的学习者）；总数改据新回执）；Typicality.lean（P119：加入定理（32 → 43）：指数的集中（计数的 Chernoff 界）；既有声明不变）；Parting.lean（P119：加入定理（18 → 43）：只在 T 之前分开时的静止之步、被给予世界的学习者的逆命题、有限构型上 N 步的历程使起点无界；Parting 导入 Lasting；既有声明不变）。",
       "en": "16 October 2026, landing P119 (study section 150): rebound to the new receipt and rehashed: BECOMING-RENEWAL-READING.md (section 150 (P119: the open proofs of parting and counting) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P119: a paragraph pair on the open proofs of parting and counting after “weights count situations”; two bullets and the bound item of the theory stated whole, §8's two status rows and the open item “When the course branches”, §9's three rows (43, 43, 38) and a glossary row (the learner given the world); totals moved to the new receipt); Typicality.lean (P119: theorems added (32 → 43): exponential concentration (the counting Chernoff bound); existing declarations unchanged); Parting.lean (P119: theorems added (18 → 43): the rest step where runs part only before T, the converse with the learner given the world, a course of N steps over finitely many configurations making its start unbounded; Parting imports Lasting; existing declarations unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：定律中“p·q / ((p + q)²·ε²·n)”与“0.88ⁿ”是由定理之界推出的算术，不是 Lean 陈述（审查第 36 项，P7）；两处标明，并写出所取的 d 与所用的不等式。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): the laws' “p·q / ((p + q)²·ε²·n)” and “0.88ⁿ” are arithmetic from the theorems' bounds, not Lean statements (review item 36, P7); both are now marked so, with the d taken and the inequality used. Claim narrowed; no theorem changed."
     }
   ],
   "text_versions": []
