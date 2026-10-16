@@ -367,7 +367,9 @@ def Balance (P : List Passage) (k : Nat) (e : Prop) : Prop :=
   Every P k e ∧ ∀ p, p ∈ P → p.Balanced
 
 /-- The law of running down: the law of balance, the family's total falling by at least the
-number of relata taking from it. -/
+number of relata taking from it. This is read on a pattern of passages; `Flow.RunsDown` of
+`Becoming.Locality` says it of a world's flow across a step, and a pattern is shown on a family
+running down exactly where it obeys this law (`Flow.Realizes.runsDown`, `runsDown_iff`). -/
 def RunsDown (P : List Passage) (k : Nat) (e : Prop) : Prop :=
   Balance P k e ∧ total P Passage.after + k ≤ total P Passage.before
 

@@ -9,7 +9,7 @@ showed that a law reading a stock only below a threshold carries a raise of it n
 break, and that what can register the distance is a reading of the stock's level before the break;
 it left open how a formation comes to observe a stock it depends on. Ren approved that approach
 and said to continue (16 October). This module answers within Part I, with no premise beyond what
-each theorem names: observing is being downstream. A difference reaches a formation only along a
+each theorem names: observing lies within the downstream. A difference reaches a formation only along a
 route of readings from where it starts, and observing the stock itself is the route of length zero.
 
 * **A difference goes only downstream.** Where a starting gap stands at one stock alone and the
@@ -27,7 +27,7 @@ route of readings from where it starts, and observing the stock itself is the ro
   restricted to what is read (`restrictInto`) are strengths of the law
   (`ExchangeLaw.ReadsInto.restrict`), and their routes are routes of reading (`readCouplings`,
   `couplesAt_readCouplings`, `upstream_readCouplings`).
-* **Registering is being downstream.** For every law reading into each condition: two balanced
+* **Registering lies within the downstream.** For every law reading into each condition: two balanced
   courses with the same formations present, the part acting alike and the rest following the law,
   apart at the start only in a stock, are alike at every condition and step not downstream of the
   stock by the readings formed by that step (`apart_only_downstream`). So a formation's exchange
@@ -56,6 +56,12 @@ route of readings from where it starts, and observing the stock itself is the ro
   what it did not by a reading that closes a route, at a step, as a loop closes.
 - What `Becoming.Thresholds` called reading the stock's level before the break is such a route:
   the loop that registers the distance forms when the route closes, which can be before the break.
+
+The theorems give one direction: what registers lies within the downstream, so what is not
+downstream does not register (`apart_only_downstream`); that every downstream condition does
+register is not stated. **Classical sources.** Two courses apart only in what is not read and alike
+in everything read is the noninterference condition of Goguen and Meseguer (1982): a difference
+at a stock does not interfere with what lies off its downstream.
 
 What is not derived: which schedule a law reads, when an instrument starts, and whether the record
 is read in time; laws whose exchange depends on infinitely many levels at once are covered only as
@@ -271,7 +277,7 @@ theorem upstream_readCouplings {T : Nat} {c e : C}
 
 end Into
 
-/-! ## Registering is being downstream -/
+/-! ## Registering lies within the downstream -/
 
 section Registering
 
@@ -350,7 +356,7 @@ theorem exchange_alike_off_downstream (r : law.ReadsInto part reads)
   ⟨(follows g out t e).1.trans (same.1.trans (follows' g out t e).1.symm),
    (follows g out t e).2.trans (same.2.trans (follows' g out t e).2.symm)⟩
 
-/-- **Observation is a route.** For a law reading through registration with a schedule covering
+/-- **Observation goes only by a route.** For a law reading through registration with a schedule covering
 it: a formation outside the part every condition of which it registers at `t` lies off the
 downstream of `c` exchanges alike across that step. The stock it observes lies downstream of
 itself; anything else it registers lies downstream only by a route of readings. -/

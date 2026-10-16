@@ -198,7 +198,10 @@ theorem wholeRun_extends_iff_of_eases {U : W → Unfolding F C} {w w' : W}
 
 /-! ## The course without the focal formation -/
 
-/-- One law read as two courses: the focal formation occurs, or it does not. -/
+/-- One law read as two courses: the focal formation occurs, or it does not. Here a course is
+one of two alternative unfoldings of the law (`course`), indexed by this type; elsewhere in the
+spine a course is a trace of moves (`Generative.Trace`) or a run's sequence of configurations
+(`Parting.course`). -/
 inductive Course where
   | occurs
   | absent

@@ -47,8 +47,13 @@ run adheres to a reading where every finite stretch of it is a stretch of a run 
   (`Refutable.adheres_least`); for a stable reading, adhering is holding (`Refutable.adheres_iff`);
 * a run adhering to a reading it lies outside shows the reading is not refutable
   (`not_refutable_of_adheres`), and dually not verifiable (`not_verifiable_of_adheres`); in the
-  process whose runs are all sequences, recurrence and eventual occurrence are neither
-  (`Sequences.recurs_not_refutable`, `Sequences.eventually_not_refutable`);
+  process whose runs are all sequences, recurrence and eventual occurrence are not refutable
+  (`Sequences.recurs_not_refutable`, `Sequences.eventually_not_refutable`), and never occurring
+  is not verifiable (`Sequences.never_not_verifiable`);
+* what adheres to a reading is closed: where no run inside agrees with a run up to some step, no
+  run agreeing with it there adheres (`Adheres.closed`). So adhering is refutable exactly where
+  every run not adhering has such a step (`refutable_adheres_iff`), which excluded middle gives
+  (`refutable_adheres_of_em`); with no premise it is not stated;
 * a reading made of tests, each fixed by the history through its step, holds at every run
   adhering to it (`adheres_passes`). It is refutable given Markov's principle
   (`refutable_passes`), and asked of every process exactly then
@@ -57,6 +62,13 @@ run adheres to a reading where every finite stretch of it is a stretch of a run 
 
 No ethical predicate, ranking or axiom occurs. Whether an actual history continues
 one way or the other is a question for inquiry into it.
+
+**Classical sources.** Refutable readings are the safety properties and verifiable readings their
+duals; a reading every finite stretch can still meet, as recurrence, is a liveness property
+(Alpern and Schneider 1985: safety is closedness, liveness is density, in the topology of runs).
+Refutation and verification by finite histories are the formal learning-theoretic notions of
+Kelly (1996). `Adheres K` is the closure of `K`; that the closure is refutable is classical, and
+constructively it is the step from a failure to adhere to a horizon that witnesses it.
 -/
 
 namespace Becoming
@@ -313,8 +325,8 @@ theorem Refutable.not_not {P : Process S A} {K : Run P → Prop} {r : Run P} (re
     | ⟨h, blocked⟩ => match adheres h with
       | ⟨r', inside, agree⟩ => blocked r' agree inside
 
-/-- **The least refutable reading.** A refutable reading containing `K` holds, up to double
-negation, at every run adhering to `K`. -/
+/-- **Refutable supersets hold where the subset is adhered to.** A refutable reading containing
+`K` holds, up to double negation, at every run adhering to `K`. -/
 theorem Refutable.adheres_least {P : Process S A} {K L : Run P → Prop} {r : Run P}
     (refutable : Refutable L) (sub : ∀ r, K r → L r) (adheres : Adheres K r) : ¬ ¬ L r :=
   refutable.not_not (adheres.mono sub)
@@ -335,6 +347,33 @@ theorem not_verifiable_of_adheres {P : Process S A} {K : Run P → Prop} {r : Ru
   fun verifiable => match verifiable r inside with
     | ⟨h, all⟩ => match adheres h with
       | ⟨r', outside, agree⟩ => outside (all r' agree)
+
+/-- **What adheres to a reading is closed.** Where no run inside `K` agrees with `r` up to `h`, no
+run agreeing with `r` up to `h` adheres to `K`. -/
+theorem Adheres.closed {P : Process S A} {K : Run P → Prop} {r : Run P} {h : Nat}
+    (none_ : ¬ ∃ r', K r' ∧ r.AgreeUpTo h r') : ∀ r', r.AgreeUpTo h r' → ¬ Adheres K r' :=
+  fun _ agree adheres => match adheres h with
+    | ⟨r'', inside, agree'⟩ => none_ ⟨r'', inside, agree.trans agree'⟩
+
+/-- **Adhering is refutable exactly where every failure to adhere has a horizon** at which no run
+inside the reading agrees. -/
+theorem refutable_adheres_iff {P : Process S A} {K : Run P → Prop} :
+    Refutable (Adheres K) ↔ ∀ r, ¬ Adheres K r → ∃ h, ¬ ∃ r', K r' ∧ r.AgreeUpTo h r' :=
+  ⟨fun refutable r outside => match refutable r outside with
+    | ⟨h, blocked⟩ => ⟨h, fun ⟨r', inside, agree⟩ => blocked r' agree (Adheres.of inside)⟩,
+   fun witnessed r outside => match witnessed r outside with
+    | ⟨_, none_⟩ => ⟨_, Adheres.closed none_⟩⟩
+
+/-- **Excluded middle makes adhering refutable**, for every reading of every process. -/
+theorem refutable_adheres_of_em {P : Process S A} (em : ∀ p : Prop, p ∨ ¬ p) (K : Run P → Prop) :
+    Refutable (Adheres K) :=
+  refutable_adheres_iff.mpr fun r outside =>
+    match em (∃ h, ¬ ∃ r', K r' ∧ r.AgreeUpTo h r') with
+    | .inl found => found
+    | .inr absent => False.elim (outside fun h =>
+        match em (∃ r', K r' ∧ r.AgreeUpTo h r') with
+        | .inl found => found
+        | .inr none_ => False.elim (absent ⟨h, none_⟩))
 
 /-- The reading of passing every test: no test fails. -/
 def Passes {P : Process S A} (fails : Nat → Run P → Bool) (r : Run P) : Prop :=
@@ -400,7 +439,9 @@ theorem splice_after {A : Type v} (s : Nat → A) {h t : Nat} (c : A) (after : h
     (splice s h c).act t = c :=
   if_neg (Nat.not_lt_of_le after)
 
-/-- The moves recur: from every step on, some later move is `true`. -/
+/-- The moves recur: from every step on, some later move is `true`. This is `Becoming.Recurs` of
+`Becoming.Change` for a family of one member (`Sequences.recurs_iff`, in `Becoming.Dissipation`,
+the first module that sees both). -/
 def Recurs (r : Run (process Bool)) : Prop := ∀ n, ∃ m, n ≤ m ∧ r.act m = true
 
 /-- Some move is `true`. -/

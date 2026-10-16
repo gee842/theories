@@ -57,6 +57,16 @@ needing a model outside it); runs along unbounded configurations where the branc
 and nothing is searched, given in `Becoming.Lasting` through `EitherThroughout` and a selection
 (`Lasting.lifting`); the laws along runs where nothing lists the configurations. No ethical
 predicate, ranking or axiom occurs.
+
+**Classical sources.** Within finitely many configurations a run is a lasso: a course into a
+cycle, found by the pigeonhole principle (`revisits_within` of `Becoming.Recurrence`). The fan
+(`fan_no_run`) is the failure of König's lemma (König 1927) without finite branching: courses of
+every length give no infinite path. König's lemma itself, for finite branching over unbounded
+configurations, is not stated here; it is not constructive in general, and weak König's lemma is
+equivalent to `LLPO` (Ishihara 1990; Bridges and Richman 1987), the principle `EitherThroughout`
+that `Becoming.Lasting` uses for lifting (`eitherThroughout_iff_llpoForDecided`). `DependentSelection` is the axiom of dependent choice (Bernays 1942), and
+`runs_iff_selection` states it as exactly what runs from every family that keeps moving take, at
+`Type 0`.
 -/
 
 namespace Becoming
@@ -180,7 +190,8 @@ theorem run_decided {all : List S} (every : ∀ x, x ∈ all) (branching : Lasti
   | .inr never => .inr fun found => never ((run_iff_continues every).mp found)
 
 /-- **Where branching is infinite, courses of every length do not give a run**: the root of
-`Lasting.Fan` has courses of every length and no run. -/
+`Lasting.Fan` has courses of every length and no run. This is the failure of König's lemma
+(König 1927) without finite branching. -/
 theorem fan_no_run : ¬ ∃ r : Run Lasting.Fan.process, r.state 0 = .root :=
   fun ⟨r, start⟩ => Lasting.Fan.no_unbounded_step
     ⟨r.state 1,

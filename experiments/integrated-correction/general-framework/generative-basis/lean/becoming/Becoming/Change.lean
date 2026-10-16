@@ -15,15 +15,18 @@ to be decidable at each step.
   across a step where it fails before the step and holds after it, and ceases to be where
   it holds before and fails after (`ComesToBe`, `CeasesToBe`). A formation arising and
   ceasing, a dependence forming and dissolving, and a condition coming to stand and
-  ceasing to stand are this one change (`Web.change_readings`). What holds and ceases at
+  ceasing to stand are this one change, read three ways, by definition: each part of
+  `Web.change_readings` holds by `Iff.rfl`, so it states how the definitions are read, not a law
+  that excludes anything. What holds and ceases at
   no later step holds on (`persists`), and with excluded middle as a hypothesis in place
   of decidability too (`persists_of_em`); what fails and comes to be at no later step
   keeps failing, with no decidability (`stays_failing`). With excluded middle as a
   hypothesis, what does not recur has a step after which it does not occur
   (`exists_not_of_em`). Two stronger forms of what the core states, a step after which a
   formation is never active and a list holding every member that ever holds, would each
-  give the limited principle of omniscience (`LPO`): every Boolean sequence has a `true`
-  or is `false` throughout, which excluded middle gives and no constructive proof does
+  give the limited principle of omniscience (`LPO`, Bishop 1967; Bridges and Richman 1987):
+  every Boolean sequence has a `true` or is `false` throughout, which excluded middle gives and
+  no constructive proof does
   (`Web.lpo_of_ending`, `Listed.lpo_of_few`). A formation's support changes only through
   its relations: it stays supported where no dependence forms or tightens and no
   condition it depends on falls (`Web.supported_of`).
@@ -255,7 +258,9 @@ theorem balance_over_stretch_on {q x y : Nat → Nat} :
 
 /-! ## Recurrence -/
 
-/-- Something holds of some member of a finite family at arbitrarily late steps. -/
+/-- Something holds of some member of a finite family at arbitrarily late steps.
+`Sequences.Recurs` of `Becoming.Horizon` is the same notion for the moves of a run of sequences,
+the family of one member (`Sequences.recurs_iff`, in `Becoming.Dissipation`). -/
 def Recurs (as : List α) (e : α → Nat → Prop) : Prop :=
   ∀ N, ∃ t a, N ≤ t ∧ a ∈ as ∧ e a t
 
@@ -532,7 +537,8 @@ def CeasesToStand (t : Nat) (c : C) : Prop :=
   0 < W.level t c ∧ ¬ 0 < W.level (t + 1) c
 
 /-- Arising and ceasing, forming and dissolving, coming to stand and ceasing to stand are
-one change, coming to be and ceasing to be, read of activity, dependence and standing. -/
+one change, coming to be and ceasing to be, read of activity, dependence and standing. This is
+read three ways, by definition: each part holds by `Iff.rfl`. -/
 theorem change_readings (t : Nat) (f g : F) (c : C) :
     (W.Arises t f ↔ ComesToBe (W.active · f) t) ∧ (W.Ceases t f ↔ CeasesToBe (W.active · f) t) ∧
     (W.Forms t g c ↔ ComesToBe (W.requires · g c) t) ∧

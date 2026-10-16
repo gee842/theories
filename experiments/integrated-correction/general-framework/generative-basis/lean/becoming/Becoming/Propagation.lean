@@ -640,7 +640,8 @@ end Combine
 
 /-- **The carrying law.** With coupling strengths `k` and the part's gaps `σ`: the part gives `σ`,
 each formation outside it gives each condition what its strengths make of the levels so far, and
-nothing is taken. -/
+nothing is taken. It takes nothing, so it is not gainless; the bound is attained over all laws,
+not shown over gainless ones. -/
 def ExchangeLaw.carrying (cs : List C) (part : F → Bool) (σ : Nat → F → C → Nat)
     (k : Nat → F → C → Nat → C → Nat) : ExchangeLaw F C :=
   ⟨fun _ _ _ _ => 0,

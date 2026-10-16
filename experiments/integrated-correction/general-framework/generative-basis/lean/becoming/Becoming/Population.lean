@@ -98,7 +98,8 @@ variable {α β : Type}
 
 /-! ## Lists without repetition -/
 
-/-- A list in which no member occurs twice. -/
+/-- A list in which no member occurs twice. `Becoming.CrossSituational.Distinct` is the same
+notion for lists in every universe (`Becoming.CrossSituational.distinct_iff`). -/
 def Distinct : List α → Prop
   | [] => True
   | a :: as => ¬ a ∈ as ∧ Distinct as

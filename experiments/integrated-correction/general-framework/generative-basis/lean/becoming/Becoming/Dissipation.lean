@@ -1377,4 +1377,19 @@ theorem witnesses_not_dissipative :
        match Oscillation.unceasing.2.2.2.1 N with
        | ⟨t, f, later, arises⟩ => ⟨t, f, later, Oscillation.takes.2 t f arises⟩)⟩
 
+/-! ## Recurrence, stated twice
+
+`Becoming.Horizon` and `Becoming.Change` each name recurrence, for the moves of a run of sequences
+and for a finite family. This is the first module that imports both, and they are one notion. -/
+
+/-- **Recurrence is one notion.** The moves of a run of sequences recur (`Sequences.Recurs` of
+`Becoming.Horizon`) exactly where `true` is moved at arbitrarily late steps by the family of one
+member (`Becoming.Recurs` of `Becoming.Change`). -/
+theorem Sequences.recurs_iff (r : Run (Becoming.Sequences.process Bool)) :
+    Becoming.Sequences.Recurs r ↔ Becoming.Recurs [()] (fun _ m => r.act m = true) :=
+  ⟨fun recurs N => match recurs N with
+    | ⟨m, later, yes⟩ => ⟨m, (), later, .head _, yes⟩,
+   fun recurs n => match recurs n with
+    | ⟨m, _, later, _, yes⟩ => ⟨m, later, yes⟩⟩
+
 end Becoming

@@ -71,6 +71,12 @@ open world, while its present, held within finitely many configurations, forgets
 of these laws as entropy, as the passing Ren names, or as thermodynamic recurrence belong to
 the study, not to this module.
 
+**Classical sources.** `revisits_within` is the pigeonhole principle, and `lossless_iff_returns`
+is the classical fact that an injective self-map of a finite set is a permutation, every point
+lying on a cycle; `returns_iff_keeps` adds that it is then surjective at every step. What is the
+spine's own is the form: no decidable equality and no choice is used, a list holding the
+configurations being the only finiteness.
+
 No ethical predicate, ranking or axiom occurs.
 -/
 
@@ -295,7 +301,10 @@ def Lossless (next : S → S) : Prop := ∀ x y, next x = next y → x = y
 /-- `next` takes two distinct configurations to one. -/
 def Merges (next : S → S) : Prop := ∃ x y, x ≠ y ∧ next x = next y
 
-/-- `s` comes back after some steps. -/
+/-- `s` comes back after some steps. Other senses of the name: `Branching.Returns` is the same
+notion for every process, read on reach (`Branching.law_returns_iff`); `Web.Returns` of
+`Becoming.Return` is a dependence met again at a later step, and `Becoming.Returns` of
+`Becoming.Frequency` is a loop of couplings in time order, neither a configuration coming back. -/
 def Returns (next : S → S) (s : S) : Prop := ∃ p, 0 < p ∧ orbit next s p = s
 
 /-- `s` can still be had `n` steps on: some configuration leads to it in `n` steps. -/

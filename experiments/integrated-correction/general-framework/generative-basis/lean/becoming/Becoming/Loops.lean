@@ -38,7 +38,9 @@ a loop upstream, and only a loop, makes a difference run away.
   it (`carried_around`), so after `R` times around by that factor to the power `R`
   (`carried_runaway`). With stationary strengths and the same formations at every step, every loop
   at least doubles what reaches it, every time around (`carried_doubles_around`), and what reaches a
-  loop upstream of `c` arrives at `c` so doubled (`carried_doubles_into`).
+  loop upstream of `c` arrives at `c` so doubled (`carried_doubles_into`). Strengths are natural
+  numbers, so a positive strength is at least one; with strengths below one the doubling does not
+  follow.
 * **How much the orders carry, and the accuracy of a cut.** With the part giving no gap after the
   start, starting gaps at most `D` and the strengths into each condition (`inflow`) summing to at
   most `M` at each step: the order `j` carries at most `D` times the sum, over orders `i ≤ j`, of
@@ -101,6 +103,14 @@ beyond the product of the strengths around a loop; laws reading infinitely many 
 amounts and continuous time, where the sum over orders becomes a series and its convergence a
 further question. The representation commits
 to discrete steps and natural amounts. No ethical predicate, ranking or axiom occurs.
+
+**Classical sources.** The orders are the truncated path-sum expansion of the carried amount, the
+discrete-time form of a Neumann series `Σ K^j` of the coupling strengths; that a finite order is
+exact exactly where no loop lies upstream is the fact that the adjacency of a directed graph is
+nilpotent exactly where the graph has no cycle; the polynomial bound by binomial counts and the
+geometric bound `(1 + M) ^ t` are the standard bounds of such a series. What is the spine's own is
+that these are stated for every law of what has stood, through `most_difference_arrives`, with
+natural amounts and no decision beyond what each theorem names.
 -/
 
 namespace Becoming

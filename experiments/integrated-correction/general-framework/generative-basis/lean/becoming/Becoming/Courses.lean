@@ -9,6 +9,7 @@ import Becoming.Description
 import Becoming.Feedback
 import Becoming.Decidedness
 import Becoming.Metaethics
+import Becoming.Parting
 
 /-!
 # Courses: the apart laws read on the shared base
@@ -104,6 +105,10 @@ unfolding's courses and not of a separate model.
   (`extension_frontier_exists`); with extension and a task decided, every configuration no member
   extends performs the task exactly when every member lacking it is extended by some member
   (`extension_frontier_has_iff`).
+* **One notion, one definition.** The process in which every change is admitted is free branching
+  of `Becoming.Parting` (`anyChange_eq_free`, by definition), and the lists without repetition of
+  `Becoming.CrossSituational` are those of `Becoming.Population` on every list in `Type`
+  (`CrossSituational.distinct_iff`).
 
 No premise is added; the module changes no definition and every declaration has an empty axiom
 report. `Becoming.CoursesBridge`, outside the core, reads the comparison under every
@@ -387,8 +392,13 @@ theorem runs_look_right_iff {V : Type q} [DecidableEq O] [DecidableEq V] (emit :
         Retrodiction.Separated (fun g : Run P => g.state) emit g r ps) :=
   look_right_iff (fun g : Run P => g.state) emit look F d r ps
 
-/-- The process in which every change is admitted. -/
-def anyChange (S : Type u) : Process S Unit := ⟨fun _ _ _ => True⟩
+/-- The process in which every change is admitted: free branching of `Becoming.Parting`, kept
+under this name (`anyChange_eq_free`). -/
+def anyChange (S : Type u) : Process S Unit := Parting.free S
+
+/-- `anyChange` is `Parting.free`, by definition. -/
+theorem anyChange_eq_free (S : Type u) : anyChange S = Parting.free S :=
+  rfl
 
 /-- Every course of configurations is a run of the process in which every change is admitted. -/
 def anyRun (c : Nat → S) : Run (anyChange S) := ⟨c, fun _ => (), fun _ => trivial⟩
@@ -1140,5 +1150,22 @@ theorem extension_frontier_has_iff {task : S → Prop} {menu : List S}
 end Undominated
 
 end Courses
+
+/-! ## One notion stated twice
+
+`Becoming.CrossSituational` imports only `Becoming.Segmentation` and states lists without
+repetition for every universe; `Becoming.Population` states them for `Type`. This module sees
+both, and they agree. -/
+
+namespace CrossSituational
+
+/-- **Lists without repetition are one notion.** `CrossSituational.Distinct` is
+`Becoming.Distinct` on every list in `Type`. -/
+theorem distinct_iff {M : Type} : ∀ l : List M, Distinct l ↔ Becoming.Distinct l
+  | [] => Iff.rfl
+  | _ :: ms => ⟨fun ⟨out, rest⟩ => ⟨out, (distinct_iff ms).mp rest⟩,
+      fun ⟨out, rest⟩ => ⟨out, (distinct_iff ms).mpr rest⟩⟩
+
+end CrossSituational
 
 end Becoming

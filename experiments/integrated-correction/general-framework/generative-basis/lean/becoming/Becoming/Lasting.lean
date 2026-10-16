@@ -74,7 +74,12 @@ law never reaches a target, and, dually, when a law reaches a target within `n` 
   selection of a successor staying in a family gives a run from each member (`runOf`), so
   `EitherThroughout` and a choice of an unbounded successor lift courses of every length to a run
   (`lifting`). Where the branching is infinite, courses of every length need not continue one
-  another (`Fan.no_unbounded_step`).
+  another (`Fan.no_unbounded_step`). `EitherThroughout` is the lesser limited principle of
+  omniscience for decided families (`eitherThroughout_iff_llpoForDecided` of
+  `Becoming.Likeness`), and gives `LLPO` (`LLPO.of_eitherThroughout`). So between courses of every
+  length and an unbounded successor lies exactly `LLPO` for decided families, as weak König's
+  lemma is equivalent to `LLPO` (Ishihara 1990; Bridges and Richman 1987); `lifting` needs, besides,
+  a choice of the successor.
 
 Every condition named here is local: one step from each configuration. Which guard, levels,
 quantity, threshold and target an application uses are supplied with it; nothing here says that

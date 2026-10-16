@@ -25,8 +25,8 @@ ratio `p : q` exactly where `x = y`, and `(x - y)²`, stated without subtraction
 * **Most courses show the weights.** The courses whose squared deviation is at least `d` weigh,
   times `d`, at most `n·p·q·(p + q)^n` (`typical`). Out of the whole weight `(p + q)^n`, those
   whose frequency of ones is off `p / (p + q)` by `ε` or more weigh at most
-  `p·q / ((p + q)²·ε²·n)` of it, which falls as `n` grows: the counting form of the law of large
-  numbers. With `p = q = 1` every course weighs one, and the count of courses of `n` steps
+  `p·q / ((p + q)²·ε²·n)` of it, which falls as `n` grows: Chebyshev's variance bound and the
+  counting form of the law of large numbers. With `p = q = 1` every course weighs one, and the count of courses of `n` steps
   whose ones and zeros differ by at least `δ`, times `δ²`, is at most `n·2^n`.
 * **Concentration is exponential.** Weighting each one by `u` and each zero by `v` multiplies
   the weights step by step (`weight_mul`). So for every `u ≥ v`, the courses of `n` steps with at
@@ -49,6 +49,13 @@ ratio `p : q` exactly where `x = y`, and `(x - y)²`, stated without subtraction
   counting (`stepWeight`) composes along each history the weight of its values
   (`along_weight`), and the sum over its histories of `n` steps is the total weight here
   (`sum_courses_weight`, through `Weights.sum_courses`).
+
+**Classical sources.** The exact spread is the variance of the binomial distribution; the bound by
+the spread (`typical`) is Chebyshev's inequality (Bienaymé 1853, Chebyshev 1867) in counting form,
+and with it the weak law of large numbers of Bernoulli (1713) for the frequency of ones. The bound
+by weighting each one (`concentrated`) is the exponential-moment method of Chernoff (1952). Here
+they are stated over natural weights, with no real numbers and no probability measure: the counts
+are of courses, or, in `Becoming.Situations`, of situations.
 
 The AM–GM step `2·x·y ≤ x·x + y·y` is proved on the way (`two_mul_le`). The arithmetic uses
 the core's inductive forms of distributivity, associativity and powers (`add_mul_split`,
@@ -343,7 +350,8 @@ theorem offBy_le (p q d : Nat) (w : List Bool) :
     exact Nat.mul_le_mul_left _ (two_mul_le _ _)
 
 /-- **Most courses show the weights.** The courses of `n` steps whose squared deviation is at
-least `d` weigh, times `d`, at most `n·p·q·(p + q)^n`, out of `(p + q)^n` for all of them. -/
+least `d` weigh, times `d`, at most `n·p·q·(p + q)^n`, out of `(p + q)^n` for all of them: the
+variance bound of Chebyshev's inequality, in counting form. -/
 theorem typical (p q n d : Nat) :
     total (courses n) (offBy p q d) * d ≤ n * (p * q * (p + q) ^ n) :=
   have bound := total_le (offBy_le p q d) (courses n)

@@ -42,6 +42,11 @@ with no premise, what a registration lets a learner come to rest on.
   the lasso hypotheses rests on the second at every configuration from step 2
   (`Pair.whole_rests`).
 
+Resting on the target from some step on is identification in the limit (Gold 1967), and
+`learnable_iff` is an observability condition in that setting: its first direction holds of every
+learner, while the learner of its second direction is given the world and the target, so that
+direction shows existence, not a learner that is given nothing.
+
 Readings of this as registration bounding what is learned, as the limit of learning without
 feedback that registers the target, or as a condition on cognition, belong to the study, not to
 this module. No ethical predicate, ranking or axiom occurs.

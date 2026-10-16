@@ -566,7 +566,8 @@ def Bisimulation (F : Frame S A C) (G : Frame S' A C) (B : S → S' → Prop) : 
     (∀ a t', G.P.step s' a t' → ∃ t, F.P.step s a t ∧ B t t')
 
 /-- Two configurations are alike where some bisimulation relates them: they relate alike to
-every continuation. -/
+every continuation. `ReferencePlan.Alike` is another sense, two signals agreeing at the addresses
+of a plan. -/
 def Alike (F : Frame S A C) (G : Frame S' A C) (s : S) (s' : S') : Prop :=
   ∃ B, Bisimulation F G B ∧ B s s'
 

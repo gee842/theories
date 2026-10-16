@@ -34,7 +34,7 @@ decided and no choice is made.
   two opened holds the gem. Each opening's possibilities are local, every box can show either
   way in every opening it belongs to (`Specker.unforced`), no placement fits them all
   (`Specker.noGlobal`), and a world showing a gem in each opening exists (`Specker.respects`).
-* **The Mermin–Peres square.** Nine claims in three rows and three columns, each line
+* **The Mermin–Peres square** (Mermin 1990, Peres 1990). Nine claims in three rows and three columns, each line
   registering three; a row's three values have even parity, as do the first two columns', and
   the third column's odd. Each line's possibilities are local, every cell can show either value
   in both its lines (`Square.unforced`), and no assignment fits all six lines
@@ -64,6 +64,12 @@ configuration. Claims indexed by the context in which they are registered always
 that a claim registered in two contexts is two claims. Readings of this as wave and particle, as
 the Kochen–Specker theorem, or as values being relations registered in context belong to the
 study, not to this module.
+
+**Classical sources.** Reading a family of registrations in context as gluing to one context-free
+reading is the sheaf-theoretic account of contextuality (Abramsky and Brandenburger 2011), and
+possibilities that are the parts of no whole are its logical contextuality; the parity form of the
+obstruction, its cohomological reading and the magic-square games are credited in
+`Becoming.Gluing` (Abramsky, Barbosa, Kishida, Lal and Mansfield 2015; Arkhipov 2012).
 
 No ethical predicate, ranking or axiom occurs.
 -/

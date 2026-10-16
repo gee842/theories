@@ -152,7 +152,9 @@ def Reachable (P : Process S A) (n : Nat) (s : S) : Prop :=
 def KeepsPossibilities (P : Process S A) : Prop := ∀ n s, Reachable P n s
 
 /-- `s` returns: some step from `s` leads to a configuration from which `s` can be had
-again. -/
+again. Under a determined law this is `Law.Returns` of `Becoming.Recurrence`, read on the orbit
+(`law_returns_iff`). `Web.Returns` (`Becoming.Return`, a dependence met again) and
+`Becoming.Returns` (`Becoming.Frequency`, a loop of couplings in time order) are other senses. -/
 def Returns (P : Process S A) (s : S) : Prop := ∃ a t, P.step s a t ∧ Reach P t s
 
 /-- What lies ahead of `s`, from its next step on. -/
@@ -311,7 +313,7 @@ variable {S : Type u} {A : Type v} {P : Process S A}
 
 open Branching
 
-/-- A run read from step `i` on. -/
+/-- A run read from step `i` on. `Parting.after` is this (`Parting.after_eq_onward`). -/
 def onward (r : Run P) (i : Nat) : Run P :=
   ⟨fun n => r.state (i + n), fun n => r.act (i + n), fun n => r.step (i + n)⟩
 

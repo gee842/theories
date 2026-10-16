@@ -168,7 +168,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   renews or consumes in the whole-run sense, with or without feedback; a reading of
   amounts is decided step by step. What a finite history refutes, with no premise: a
   refutable reading holds, up to double negation, at every run adhering to it; a reading
-  with an adhering run outside it is neither refutable nor verifiable; a reading made of
+  with an adhering run outside it is not refutable, and one with a run inside adhering to its
+  complement is not verifiable; adhering is refutable exactly where every failure to adhere
+  has a horizon, which excluded middle gives; a reading made of
   tests holds where it adheres, and asked of every process its refutability is exactly
   Markov's principle.
 * `Becoming.Joint` (L3): difference-making, relative to a move that can still be taken
@@ -270,7 +272,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   bounded the two recur together. The stock along a run is a balanced `Flow`.
 * `Becoming.Change` (L3): what holds of every unfolding, with no premise about it.
   Arising, forming and coming to stand, with ceasing, dissolving and ceasing to stand,
-  are one change, read of activity, dependence and standing. Over any stretch an amount
+  are one change, read of activity, dependence and standing (read three ways, by
+  definition: `Web.change_readings` holds by `Iff.rfl`). Over any stretch an amount
   at the end with its falls is the amount at the start with its rises. In a finite
   family coming to be and ceasing to be keep pace, differing over any stretch by at most
   the number of members, and each recurs exactly when the other does; so with finitely
@@ -929,7 +932,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   lasting need a decision, a theorem shows it. Some course lasting: where the process branches
   finitely, the depth reached is decided, and a configuration with courses of every length
   cannot fail to have a successor with them; it has one given `EitherThroughout`, exactly that
-  principle asked of every finitely branching process, and a selection gives a run. Where the
+  principle asked of every finitely branching process, and a selection gives a run.
+  `EitherThroughout` is the lesser limited principle of omniscience (`LLPO`) for decided
+  families, and gives `LLPO` for Boolean sequences (`Becoming.Likeness`). Where the
   branching is infinite it need not.
 * `Becoming.Copying` (L2): reproducing a sequence token by token from a shared pool, for every
   alphabet and law of draws, with no premise. A copy completes exactly when the pool holds
@@ -1037,9 +1042,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Sensitivity` (L4): the least registration with any number of conditions, with no
   premise beyond what each law names. A law reading finitely many conditions under each history,
   the list possibly depending on the history, reads through what it is sensitive to: sensitivity
-  is the least registration it reads through, and the comparison as the dynamics give holds with
+  is the least registration it reads through, least up to double negation (every registration
+  it reads through holds each condition it is sensitive to as `¬ ¬`), and the comparison as the dynamics give holds with
   any number of conditions; such a law sensitive to no condition gives alike under every two
-  histories. With infinitely many conditions this cannot be dropped: given a decision of whether
+  histories. With infinitely many conditions this cannot be dropped, relative to a decision taken
+  as a hypothesis: given a decision of whether
   levels vanish from some condition on, which gives the limited principle of omniscience, a law
   of the tail is sensitive to no condition and still differs, and the registrations it reads
   through have no least one; with the conditions numbered, every counterexample to the least

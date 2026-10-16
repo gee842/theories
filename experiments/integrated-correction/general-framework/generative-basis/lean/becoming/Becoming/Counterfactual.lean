@@ -43,8 +43,9 @@ beyond the law of exchange itself and what each theorem names.
   `ExchangeLaw.Nonanticipating.through_sensitive`), and through every registration that observes
   that (`ExchangeLaw.Nonanticipating.through_of_observed`), the proof changing one condition at a
   time (`alike_of_sensitive_agree`). Conversely every registration a law reads through holds,
-  with what the formation depends on, every condition its exchange is sensitive to
-  (`ExchangeLaw.Through.registers_of_sensitive`): sensitivity is the least registration. No
+  with what the formation depends on, every condition its exchange is sensitive to, up to double
+  negation: that it leaves one out is refuted (`¬ ¬`, `ExchangeLaw.Through.registers_of_sensitive`).
+  So sensitivity is the least registration, least in that double-negation form. No
   decision of sensitivity is used: what is decided is only whether two numbers are equal
   (`nat_eq_of_not_not`).
 * **The comparison as the dynamics give.** Two balanced courses of one law reading through a

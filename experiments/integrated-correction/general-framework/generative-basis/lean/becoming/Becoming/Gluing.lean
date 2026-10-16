@@ -63,6 +63,18 @@ What is not derived: the quantum values, which need real amplitudes (Tsirelson's
 not stated here; `Becoming.Quantum` realizes the square with integer matrices); contextuality
 beyond parity constraints; and which registrations of an actual unfolding are of this kind. No
 ethical predicate, ranking or axiom occurs.
+
+**Classical sources.** That a system of parity constraints has a solution exactly where no
+selection of its constraints adds up to `0 = 1` is linear algebra over two values: Gaussian
+elimination over GF(2), the Fredholm alternative for a linear system, here proved with no decision
+beyond equality of claims. In the study of contextuality the
+obstruction is the all-versus-nothing argument and its cohomological form (Abramsky, Barbosa,
+Kishida, Lal and Mansfield 2015, "Contextuality, cohomology and paradox"), after the sheaf
+reading of gluing (Abramsky and Brandenburger 2011); parity games of the magic-square kind and
+when they have a classical perfect strategy are characterized by Arkhipov (2012, "Extending and
+characterizing quantum magic games"). The Mermin–Peres square is Mermin's and Peres's (1990),
+Specker's three boxes are Specker's (1960), and the CHSH bound is Clauser, Horne, Shimony and
+Holt's (1969).
 -/
 
 namespace Becoming

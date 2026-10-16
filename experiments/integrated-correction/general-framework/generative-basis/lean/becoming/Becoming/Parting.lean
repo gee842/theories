@@ -62,6 +62,11 @@ which way the run goes. Ren, 16 October 2026: "we are describing what everything
 every moment, the actual change depends on the situation", and "the situation makes it true".
 Read so, a law that branches leaves open what the situation fixes: with the situation as the
 move, the law is determined (`Becoming.Situations`). Ren took this reading on 16 October 2026.
+
+**Classical sources.** That for every learner some course defeats it at every step
+(`free_never_right`) is Gold's (1967) diagonal against identifying every sequence in the limit;
+the bound `N + N - 1` and its exactness carry over Moore's (1956) bound for distinguishing
+experiments, through `Becoming.Identification`, from determined laws to runs that do not part.
 -/
 
 namespace Becoming
@@ -76,9 +81,14 @@ section Runs
 
 variable {S : Type u} {A : Type v} {P : Process S A}
 
-/-- The run from step `k` on. -/
+/-- The run from step `k` on: `Run.onward` of `Becoming.Branching`, kept under this name
+(`after_eq_onward`). -/
 def after (r : Run P) (k : Nat) : Run P :=
-  ⟨fun n => r.state (k + n), fun n => r.act (k + n), fun n => r.step (k + n)⟩
+  r.onward k
+
+/-- `after` is `Run.onward`, by definition. -/
+theorem after_eq_onward (r : Run P) (k : Nat) : after r k = r.onward k :=
+  rfl
 
 /-- A run preceded by one admissible step into its start. -/
 def before (s : S) (a : A) (r : Run P) (into : P.step s a (r.state 0)) : Run P :=
@@ -645,7 +655,9 @@ section Free
 
 variable {V : Type w}
 
-/-- **Free branching**: every configuration may follow every configuration. -/
+/-- **Free branching**: every configuration may follow every configuration. `Becoming.Courses`
+reads `Courses.anyChange`, the process in which every change is admitted, as this
+(`Courses.anyChange_eq_free`). -/
 def free (V : Type w) : Process V Unit := ⟨fun _ _ _ => True⟩
 
 /-- Every course is a run of free branching, registered as it is. -/

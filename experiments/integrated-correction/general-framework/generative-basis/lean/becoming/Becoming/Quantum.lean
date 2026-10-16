@@ -40,6 +40,11 @@ Every observable here is a real matrix: `X`, `Z` and `I` are, and `Y⊗Y = -(W�
   context-free assignment. This is the Kochen–Specker theorem for two qubits in Mermin and
   Peres's form, with the operator algebra checked rather than cited.
 
+Classical sources: Kochen and Specker (1967) for the theorem; Mermin (1990) and Peres (1990) for
+the square; as a game with a quantum perfect strategy and no classical one, the magic square of
+Arkhipov's characterization (2012); its parity obstruction is an all-versus-nothing argument in
+the sense of Abramsky, Barbosa, Kishida, Lal and Mansfield (2015), stated in `Becoming.Gluing`.
+
 Values are compared entry by entry (`Same`), since equality of functions needs `funext`, which
 depends on `Quot.sound`. The integer arithmetic on vectors uses only lemmas proved here by
 cases, since most of the prelude's ring lemmas for `Int` depend on `propext`. Every constant has
