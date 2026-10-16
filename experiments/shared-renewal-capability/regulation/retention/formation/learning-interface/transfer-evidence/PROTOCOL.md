@@ -7,7 +7,7 @@ prediction process](../README.md) to the concern model's pathwise choice
 condition. It does not build a new correspondence assay: `g=z=1` remain
 supplied, as do shared evaluation routing, perfect action efficacy, and the
 meaning of the recipient's adverse state. The earlier
-[adaptive-evidence branch](../../../../../../integrated-correction/general-framework/reproduction-test/adaptive-evidence/FORMAL.md)
+[adaptive-evidence branch](../../../../../../history/2026-10-05-general-framework/reproduction-test/adaptive-evidence/FORMAL.md)
 already develops accumulation, certificates and reversal limitations. The new
 composition is with the actual paid teacher histories and a later recipient
 action, rather than a claim to invent those statistical methods.

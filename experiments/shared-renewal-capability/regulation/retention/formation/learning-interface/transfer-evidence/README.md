@@ -9,7 +9,7 @@ Correspondence and efficacy are fixed at `g=z=1`; their formation and calibratio
 are not derived here. This is executable rational arithmetic, not a Lean proof
 or an empirical observation.
 
-The earlier [adaptive-evidence study](../../../../../../integrated-correction/general-framework/reproduction-test/adaptive-evidence/FORMAL.md)
+The earlier [adaptive-evidence study](../../../../../../history/2026-10-05-general-framework/reproduction-test/adaptive-evidence/FORMAL.md)
 already establishes the role of retained evidence, confidence budgets and
 stationarity. This study does not count those methods as a new discovery. Its
 new interface carries the actual paid teacher's resource state into a later

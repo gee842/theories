@@ -25,13 +25,13 @@ L(s)=L(t),\qquad
 
 for every permitted intervention u, boundary input d, and retained successor block b. State-dependent action permissions must also agree. In words: **states treated as equivalent must have the same retained consequences under each declared intervention, regardless of which member of the block the system actually occupies**.
 
-Under this contract the condition is necessary and sufficient. It gives a well-defined quotient transition system and preserves its path probabilities under the same admissible, observation-based policies. An omitted event, an unavailable intervention, or information hidden from a participant is not supplied by the theorem. The [formal note](formal/FORMAL.md) proves the result and its conditions using established probabilistic bisimulation and aggregation mathematics, including [Givan, Dean and Greig's primary model-reduction work](https://cs.brown.edu/people/tdean/publications/archive/GivanetalAIJ-03.pdf).
+Under this contract the condition is necessary and sufficient. It gives a well-defined quotient transition system and preserves its path probabilities under the same admissible, observation-based policies. An omitted event, an unavailable intervention, or information hidden from a participant is not supplied by the theorem. The [formal note](../../../history/2026-10-05-generative-basis-study/formal/FORMAL.md) proves the result and its conditions using established probabilistic bisimulation and aggregation mathematics, including [Givan, Dean and Greig's primary model-reduction work](https://cs.brown.edu/people/tdean/publications/archive/GivanetalAIJ-03.pdf).
 
-This is stronger than matching one observed trajectory or one training distribution. It is also more demanding than some forms of output prediction. The [adversarial review](review/REVIEW.md) gives two states with identical entire output-trace laws that nevertheless cannot be merged under this strong state-level contract. Its minimality claim must not be generalized to every possible predictive representation.
+This is stronger than matching one observed trajectory or one training distribution. It is also more demanding than some forms of output prediction. The [adversarial review](../../../history/2026-10-05-generative-basis-study/review/REVIEW.md) gives two states with identical entire output-trace laws that nevertheless cannot be merged under this strong state-level contract. Its minimality claim must not be generalized to every possible predictive representation.
 
 ## Constructive results
 
-**A sufficient boundary derived from local mechanisms.** The [structural closure theorem](formal/STRUCTURAL-CLOSURE.md) starts with explicit update mechanisms rather than a full transition table. Choose the outcomes, participant observations, and permissions to preserve. Retain every coordinate those mechanisms read, including guards and probability selectors; then repeat for the newly retained coordinates. In a finite network this reaches a least dependency-closed set. Given the stated common-noise and input conditions, its projection preserves the entire retained trajectory under the same permitted policies.
+**A sufficient boundary derived from local mechanisms.** The [structural closure theorem](../../../history/2026-10-05-generative-basis-study/formal/STRUCTURAL-CLOSURE.md) starts with explicit update mechanisms rather than a full transition table. Choose the outcomes, participant observations, and permissions to preserve. Retain every coordinate those mechanisms read, including guards and probability selectors; then repeat for the newly retained coordinates. In a finite network this reaches a least dependency-closed set. Given the stated common-noise and input conditions, its projection preserves the entire retained trajectory under the same permitted policies.
 
 The proof is pathwise: two states agreeing on the closed set receive the same inputs and joint noise, so every retained update agrees; the argument repeats at every step. Correlated effects remain correlated. The procedure is sufficient and conservative, not necessarily the smallest semantic representation: a written dependency can cancel or become redundant.
 
@@ -39,9 +39,9 @@ The constructed example has ten Boolean coordinates. Starting with burden, veto 
 
 This is a concrete generative advance: supplied local mechanisms determine both the dynamics and a sufficient boundary for the question. It does not infer the mechanisms from observations or establish that any institution follows these Boolean rules.
 
-![Dependency closure and two exact failure witnesses](figures/closure.png)
+![Dependency closure and two exact failure witnesses](../../../history/2026-10-05-generative-basis-study/figures/closure.png)
 
-[Exportable figure](figures/closure.pdf). The diagram summarizes the constructed network; it is not an empirical result or an attractor diagram.
+[Exportable figure](../../../history/2026-10-05-generative-basis-study/figures/closure.pdf). The diagram summarizes the constructed network; it is not an empirical result or an attractor diagram.
 
 **A smallest exact partition within the declared class.** Start by grouping states with identical protected labels and permissions. Repeatedly split a group when an intervention gives its members different probabilities of entering an existing group. This process terminates at the unique coarsest faithful deterministic partition. It can produce no compression at all; a complete description is not necessarily a small one.
 
@@ -57,7 +57,7 @@ These are established mathematical constructions developed explicitly for the pr
 
 The example contains a feedback path from burden through maintenance, capacity, records and response back to burden. Tracing the conditions of conditions eventually returns to coordinates already included. A finite cycle can therefore close the representation without a separate governor for every governor. It remains an open system with declared input and noise processes; representing the cycle does not explain the historical or physical origin of its rules.
 
-Two different closure questions must remain distinct. **Causal closure of the representation** asks whether the model preserves the specified consequences. **Reproduction of acceptable conditions** asks whether its actual dynamics continue to meet the specified commitments through disturbances, turnover and change. The theorem answers the first within its class. The earlier [continuation study](../closure-study/README.md) supplies finite persistence and renewal criteria for the second. A mechanism network can be represented completely and still destroy its own support or sustain coercion. No stability calculation alone settles whose conditions deserve protection.
+Two different closure questions must remain distinct. **Causal closure of the representation** asks whether the model preserves the specified consequences. **Reproduction of acceptable conditions** asks whether its actual dynamics continue to meet the specified commitments through disturbances, turnover and change. The theorem answers the first within its class. The earlier [continuation study](../../../history/2026-10-05-general-framework/closure-study/README.md) supplies finite persistence and renewal criteria for the second. A mechanism network can be represented completely and still destroy its own support or sustain coercion. No stability calculation alone settles whose conditions deserve protection.
 
 Together these suggest a disciplined central claim for the programme: **an explanation of durable alignment must preserve the causal distinctions needed to explain continuation and revision of its specified conditions; whether those conditions actually continue is a further dynamical claim**. It need not retain every raw variable or assume one fixed social objective. What counts as acceptable continuation remains a plural, situated specification and an object of contestation, not a consequence of the reduction theorem.
 
@@ -73,7 +73,7 @@ This does not prevent a finite generative foundation. An unbounded counter has o
 
 ## What the other work contributes
 
-The [integration map](integration/INTEGRATION.md) connects the new proof obligations to existing results rather than treating each study as a fresh analogy.
+The [integration map](../../../history/2026-10-05-generative-basis-study/integration/INTEGRATION.md) connects the new proof obligations to existing results rather than treating each study as a fresh analogy.
 
 - Relative success can conceal depletion of absolute support. A basis that preserves only shares loses the viability question.
 - Records sufficient for one model family can become insufficient when a different temporal pattern is admitted. A basis must preserve the distinctions the expanded question needs.
@@ -95,14 +95,14 @@ The strongest completed scope is therefore **conditional generative expressivene
 
 ## Files and verification
 
-- [Full proofs](formal/FORMAL.md).
-- [Structural closure proof and complete local-mechanism example](formal/STRUCTURAL-CLOSURE.md).
-- [Adversarial and prior-art review](review/REVIEW.md).
-- [Integration of recent work and session provenance](integration/INTEGRATION.md).
-- [Declared computation plan](CHECKPLAN.md) and [exact check results](checks/results.json).
-- [Structural verification plan](STRUCTURAL-CHECKPLAN.md) and [exact structural results](checks/structural_results.json).
-- [Readable computation results](checks/RESULTS.md).
-- [Independent computation review](checks/REVIEW.md) and [review calculations](checks/review_checks.json).
-- [File manifest](MANIFEST.json).
+- [Full proofs](../../../history/2026-10-05-generative-basis-study/formal/FORMAL.md).
+- [Structural closure proof and complete local-mechanism example](../../../history/2026-10-05-generative-basis-study/formal/STRUCTURAL-CLOSURE.md).
+- [Adversarial and prior-art review](../../../history/2026-10-05-generative-basis-study/review/REVIEW.md).
+- [Integration of recent work and session provenance](../../../history/2026-10-05-generative-basis-study/integration/INTEGRATION.md).
+- [Declared computation plan](../../../history/2026-10-05-generative-basis-study/CHECKPLAN.md) and [exact check results](../../../history/2026-10-05-generative-basis-study/checks/results.json).
+- [Structural verification plan](../../../history/2026-10-05-generative-basis-study/STRUCTURAL-CHECKPLAN.md) and [exact structural results](../../../history/2026-10-05-generative-basis-study/checks/structural_results.json).
+- [Readable computation results](../../../history/2026-10-05-generative-basis-study/checks/RESULTS.md).
+- [Independent computation review](../../../history/2026-10-05-generative-basis-study/checks/REVIEW.md) and [review calculations](../../../history/2026-10-05-generative-basis-study/checks/review_checks.json).
+- [File manifest](../../../history/2026-10-05-generative-basis-study/MANIFEST.json).
 
 The primary computation uses exact rational arithmetic. It compares iterative reduction with exhaustive partitions for 36 supplementary finite systems and structured witnesses, reconstructs compiled transition rows, and retains the counterexamples. The structural supplement compares all 8,192 relevant pairs of projected transition rows and audits the actual Boolean dependencies of both supplied modes. Check counts describe software assertions, not independent scientific replications. No new human, biological, or AI deployment experiment was conducted.

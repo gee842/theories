@@ -8,7 +8,7 @@
 
 The [earlier paid-teaching construction](../../history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-INTEGRATION.md) produces an operational teaching signal from measured resource consequences. It also shows that an expected learned coefficient above a choice threshold need not put individual histories above that threshold. The [concern dynamics](dynamics-formal.md) use exact repeated teaching targets and an exact efficacy assay to prove eventual all-date choice and immediate suspension after an adverse assay. A noisy physical producer cannot supply those conclusions merely by matching the teacher's expectation.
 
-The [new mathematical note](TRANSFER-EVIDENCE-MATH.md) gives the missing reliability conditions. It reuses the programme's [earlier sequential-evidence methods](../../../experiments/integrated-correction/general-framework/reproduction-test/adaptive-evidence/FORMAL.md); accumulating evidence and lifetime error control are not new statistical discoveries here.
+The [new mathematical note](TRANSFER-EVIDENCE-MATH.md) gives the missing reliability conditions. It reuses the programme's [earlier sequential-evidence methods](../../../experiments/history/2026-10-05-general-framework/reproduction-test/adaptive-evidence/FORMAL.md); accumulating evidence and lifetime error control are not new statistical discoveries here.
 
 ## What changes in the derivation
 

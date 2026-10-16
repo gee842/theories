@@ -1144,8 +1144,8 @@
     "lean": [],
     "evidence": [
       "_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md",
-      "experiments/constructed-correction/independent-game-check-results.json",
-      "experiments/constructed-correction/independent-game-review.md"
+      "experiments/history/constructed-correction/independent-game-check-results.json",
+      "experiments/history/constructed-correction/independent-game-review.md"
     ]
   },
   {
@@ -1166,8 +1166,8 @@
     "source_sha256": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf",
     "lean": [],
     "evidence": [
-      "experiments/constructed-correction/math-proposal-checks.json",
-      "experiments/constructed-correction/independent-game-review.md"
+      "experiments/history/constructed-correction/math-proposal-checks.json",
+      "experiments/history/constructed-correction/independent-game-review.md"
     ]
   },
   {
@@ -1188,7 +1188,7 @@
     "source_sha256": "911e3ed7c9ecc07579a26db6882b5e0cf70f74173881d40a6f9b8aea19588060",
     "lean": [],
     "evidence": [
-      "experiments/constructed-correction/independent-game-review.md"
+      "experiments/history/constructed-correction/independent-game-review.md"
     ]
   },
   {
@@ -1640,8 +1640,8 @@
     "lean": [],
     "evidence": [
       "_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md",
-      "experiments/joint-formation/independent-game-check-results.json",
-      "experiments/joint-formation/README.md"
+      "experiments/history/joint-formation/independent-game-check-results.json",
+      "experiments/history/joint-formation/README.md"
     ]
   },
   {
@@ -1663,7 +1663,7 @@
     "lean": [],
     "evidence": [
       "_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md",
-      "experiments/joint-formation/joint-math-checks.json"
+      "experiments/history/joint-formation/joint-math-checks.json"
     ]
   },
   {

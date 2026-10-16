@@ -1412,7 +1412,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [independent-game-check-results.json](../../../experiments/constructed-correction/independent-game-check-results.json) · [independent-game-review.md](../../../experiments/constructed-correction/independent-game-review.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [independent-game-check-results.json](../../../experiments/history/constructed-correction/independent-game-check-results.json) · [independent-game-review.md](../../../experiments/history/constructed-correction/independent-game-review.md)
 
 <a id="formation-math"></a>
 ## 通过替代能力形成有效纠正的数学 / Mathematics of correction through a constructed alternative
@@ -1441,7 +1441,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [math-proposal-checks.json](../../../experiments/constructed-correction/math-proposal-checks.json) · [independent-game-review.md](../../../experiments/constructed-correction/independent-game-review.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [math-proposal-checks.json](../../../experiments/history/constructed-correction/math-proposal-checks.json) · [independent-game-review.md](../../../experiments/history/constructed-correction/independent-game-review.md)
 
 <a id="formation-prior-art"></a>
 ## 形成有效纠正的先行研究审查 / Prior-art review of effective correction formation
@@ -1470,7 +1470,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [independent-game-review.md](../../../experiments/constructed-correction/independent-game-review.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [independent-game-review.md](../../../experiments/history/constructed-correction/independent-game-review.md)
 
 <a id="formed-route-monitor"></a>
 ## 学习者取得自身学习路线的证据 / A learner acquires evidence about its learning route
@@ -1987,7 +1987,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [independent-game-check-results.json](../../../experiments/joint-formation/independent-game-check-results.json) · [README.md](../../../experiments/joint-formation/README.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [independent-game-check-results.json](../../../experiments/history/joint-formation/independent-game-check-results.json) · [README.md](../../../experiments/history/joint-formation/README.md)
 
 <a id="joint-formation-math"></a>
 ## 学习、证据、权力和关切的联合形成数学 / Mathematics of jointly formed learning, evidence, power and care
@@ -2016,7 +2016,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [joint-math-checks.json](../../../experiments/joint-formation/joint-math-checks.json)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/history/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) · [joint-math-checks.json](../../../experiments/history/joint-formation/joint-math-checks.json)
 
 <a id="joint-obstructions"></a>
 ## 没有隐藏善意的联合形成阻碍 / Obstructions to joint formation without hidden benevolence

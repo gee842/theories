@@ -48,5 +48,5 @@ SHA-256 values below identify current bytes read on 6 October. Manifests and acc
 | [Human reconstruction](../../../../experiments/recipient-value-learning/independent-check.json) | `8517594f9ce98bb4fc34ce082debd3e40aa6533333005cd3631f6d75cd9c9c13` |
 | [Governance source manifest](../../../../sources/33-governance-recourse-2026-10-06/manifest.json) | `061f0c574a4c23bc9e89547c02dbf87d47af30a9c814419980f5bf0dff182daf` |
 | [Notice source manifest](../../../../sources/33-governance-recourse-2026-10-06/implementation-followthrough/manifest.json) | `d4c16db48ea4840cc1fc397c3075391c175318188e8194de5626458c96b5170c` |
-| [Strategic exact results](../../../../experiments/integrated-correction/endogenous-continuation/results.json) | `274c31b65531faa9d31fb8952afaa0eb911ac236693b85fb9a6cec6cbb9c1388` |
+| [Strategic exact results](../../../../experiments/history/endogenous-continuation/results.json) | `274c31b65531faa9d31fb8952afaa0eb911ac236693b85fb9a6cec6cbb9c1388` |
 | [Strategic primary-source manifest](../../../../sources/35-endogenous-continuation-comparators-2026-10-06/manifest.json) | `f553c197080fe1a8e81f8880667f96c6ca8a4c40f5241568152eddc01cb73f8e` |

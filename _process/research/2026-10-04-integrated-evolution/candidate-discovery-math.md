@@ -313,7 +313,7 @@ The useful structural conclusion is conditional: reliable candidate discovery re
 
 ## 10. Audit of the implemented confirmation and funding schedule
 
-Implementation audit, 5 October 2026, of `experiments/situated-discovery/experiment.py` and `PROTOCOL.md` before held-out evaluation. This applies the preceding established statistical bound and ordinary cost accounting to the actual event loop; it introduces no new statistical theorem. The six renewal rates below were added during development, before evaluation outcomes were inspected.
+Implementation audit, 5 October 2026, of `experiments/history/situated-discovery/experiment.py` and `PROTOCOL.md` before held-out evaluation. This applies the preceding established statistical bound and ordinary cost accounting to the actual event loop; it introduces no new statistical theorem. The six renewal rates below were added during development, before evaluation outcomes were inspected.
 
 **Why cash gating does not invalidate this confirmation.** Conditional on the world rule and pre-attempt history, the candidate is fixed. Its next 256 action slots contain a shuffled 128 A and 128 B assignments, independent of future cases. An unfunded slot waits; it is not replaced or advanced. A case enters that slot using only its candidate-membership bit, the slot's action, and calendar/cash state. The code does not use other current attributes or the current outcome to decide inclusion.
 
