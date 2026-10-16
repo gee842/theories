@@ -95,7 +95,9 @@ giving needs uptake there; a fall is taken from.
   relatum is embodied, the census of what is
   active lists what stands (`World.rests_unrefuted_around`), and enclosure from some step on
   suffices, with no decision of equality: an enclosed step is not not enclosed around
-  what stands, and the totals compared are numbers (`World.rests_unrefuted_enclosed`). Read the
+  what stands, and the totals compared are numbers (`World.rests_unrefuted_enclosed`). Both
+  conclude that the world rests from some step on is unrefuted, `¬ ¬ ∃ N, RestsFrom N`, under
+  the census, embodiment, balance and dissipation, not that a step of rest is given. Read the
   other way, arising without end in such a world is incompatible with every step from
   some step on being enclosed: it exchanges beyond every finite family
   (`World.arising_opens`).

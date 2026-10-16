@@ -50,6 +50,13 @@ ratio `p : q` exactly where `x = y`, and `(x - y)²`, stated without subtraction
   (`along_weight`), and the sum over its histories of `n` steps is the total weight here
   (`sum_courses_weight`, through `Weights.sum_courses`).
 
+**Classical sources.** The exact spread is the variance of the binomial distribution; the bound by
+the spread (`typical`) is Chebyshev's inequality (Bienaymé 1853, Chebyshev 1867) in counting form,
+and with it the weak law of large numbers of Bernoulli (1713) for the frequency of ones. The bound
+by weighting each one (`concentrated`) is the exponential-moment method of Chernoff (1952). Here
+they are stated over natural weights, with no real numbers and no probability measure: the counts
+are of courses, or, in `Becoming.Situations`, of situations.
+
 The AM–GM step `2·x·y ≤ x·x + y·y` is proved on the way (`two_mul_le`). The arithmetic uses
 the core's inductive forms of distributivity, associativity and powers (`add_mul_split`,
 `mul_assoc_nat`, with `left_comm`, and `pow_add_nat`), since the prelude's forms of these laws use propositional

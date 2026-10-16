@@ -101,6 +101,12 @@ excluded middle); whether the most difference that can arrive runs away through 
 recurring couplings, and how fast a runaway is beyond the product of the strengths around a loop;
 laws reading infinitely many conditions at a step; real amounts and continuous time. No ethical
 predicate, ranking or axiom occurs.
+
+**Classical sources.** The exact remainder is the remainder of a truncated Neumann (path-sum)
+series, and the Dyson series is its time-ordered form; that a finite order is exact where no
+chain of couplings in time order of the next length ends at a condition is, once the schedule is
+fixed, nilpotence of the time-ordered couplings, the time-ordered form of "nilpotent exactly where
+acyclic".
 -/
 
 namespace Becoming

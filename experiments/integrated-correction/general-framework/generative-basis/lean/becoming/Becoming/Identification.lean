@@ -107,7 +107,13 @@ is part of what is registered, as in `Becoming.Description`'s `Law.adaptive_iden
 The bound `N + N' - 1` is the one of Fine and Wilf, and for two histories it is Moore's bound
 (1956) for the two systems taken together, attained for every pair of bounds. Within one world,
 or one history, the configurations share their classes, and Moore's bound is `N - 1`, with no
-premise.
+premise. The learners here are learners in the limit in Gold's sense (Gold 1967, identification in
+the limit): the learner by refutation over the lasso hypotheses is identification by
+enumeration, and the learner given the bound (`withBound`) and the learner by the least bound
+(`leastBound`) identify every history with at most `N` states from step `N + N - 1` on, which is
+the Moore and Fine–Wilf bound read as a learning bound. The cubic step of the learner by
+refutation (`learner_rest_cubic`) is stated for the diagonal order in which `Learning.lassos`
+enumerates the hypotheses; another order is not covered.
 -/
 
 namespace Becoming

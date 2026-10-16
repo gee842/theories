@@ -198,7 +198,9 @@ def RefutesWithin (admitted : (Nat → C → Nat) → Prop) (obs : F → C → P
   ∀ l', admitted l' → claim l' → ¬ W.RegistersAlikeUpTo obs g l l' t
 
 /-- A condition enters what registers in `g` when `g` depends on it, through the threshold of
-its support, or observes it, through its level. -/
+its support, or observes it, through its level. `Becoming.Registers` of `Becoming.Likeness` is
+another sense: a relation on descriptions under which related descriptions realize the same
+claims. -/
 def Registers (obs : F → C → Prop) (g : F) (c : C) : Prop :=
   W.DependsOn g c ∨ obs g c
 

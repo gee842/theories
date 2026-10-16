@@ -76,9 +76,14 @@ section Runs
 
 variable {S : Type u} {A : Type v} {P : Process S A}
 
-/-- The run from step `k` on. -/
+/-- The run from step `k` on: `Run.onward` of `Becoming.Branching`, kept under this name
+(`after_eq_onward`). -/
 def after (r : Run P) (k : Nat) : Run P :=
-  ⟨fun n => r.state (k + n), fun n => r.act (k + n), fun n => r.step (k + n)⟩
+  r.onward k
+
+/-- `after` is `Run.onward`, by definition. -/
+theorem after_eq_onward (r : Run P) (k : Nat) : after r k = r.onward k :=
+  rfl
 
 /-- A run preceded by one admissible step into its start. -/
 def before (s : S) (a : A) (r : Run P) (into : P.step s a (r.state 0)) : Run P :=
@@ -645,7 +650,9 @@ section Free
 
 variable {V : Type w}
 
-/-- **Free branching**: every configuration may follow every configuration. -/
+/-- **Free branching**: every configuration may follow every configuration. `Becoming.Courses`
+reads `Courses.anyChange`, the process in which every change is admitted, as this
+(`Courses.anyChange_eq_free`). -/
 def free (V : Type w) : Process V Unit := ⟨fun _ _ _ => True⟩
 
 /-- Every course is a run of free branching, registered as it is. -/

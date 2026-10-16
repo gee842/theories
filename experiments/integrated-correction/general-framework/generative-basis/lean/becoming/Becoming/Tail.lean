@@ -3,9 +3,10 @@ import Becoming.Sensitivity
 /-!
 # Tail: what a law of the whole and no part takes
 
-`Becoming.Sensitivity` shows that sensitivity is the least registration wherever a law reads
-finitely many conditions under each history, and that with infinitely many conditions this cannot
-be dropped. Given a decision of whether levels vanish from some condition on, which gives the
+`Becoming.Sensitivity` shows that sensitivity is the least registration, up to double negation,
+wherever a law reads finitely many conditions under each history, and that with infinitely many
+conditions this cannot be dropped relative to a decision taken as a hypothesis. Given a decision
+of whether levels vanish from some condition on, which gives the
 limited principle of omniscience (`LPO`), the tail law is sensitive to no condition and still
 differs. Where the conditions are numbered by the natural numbers, every counterexample gives the
 weak limited principle (`WLPO`). It leaves open where between the two the existence of a
@@ -71,6 +72,13 @@ numbered by the natural numbers; sensitivity read in time, step by step; a measu
 formation's exchange depends on a condition. Equality of numbers is decided where histories are
 compared, as in `Becoming.Sensitivity`, and no premise is added. No ethical predicate, ranking or
 axiom occurs.
+
+**Classical sources and scope.** `LPO` and `WLPO` are Bishop's limited and weak limited
+principles of omniscience (Bishop 1967; Bridges and Richman 1987), and the exact statements here
+are constructive reverse mathematics in Ishihara's sense. "Exactly" is relative to rules: the
+existence of a counterexample is equivalent to a rule `Nonempty (∀ s, Decidable …)`, which is at
+least as strong as the proposition `WLPO`, and the decision of vanishing is equivalent to the
+rule form of `LPO`. Without such a rule the core gives no counterexample and does not refute one.
 -/
 
 namespace Becoming

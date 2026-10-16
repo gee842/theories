@@ -107,6 +107,17 @@ orbit; a learner is any claim made from the record before a step.
 - (The AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26.) The meta level
   is learning again, over a merged enumeration, and there is no top.
 
+**Classical sources.** Learning by refutation over an enumeration of hypotheses is Gold's
+identification in the limit by enumeration (Gold 1967, "Language identification in the limit";
+Putnam 1965 for trial-and-error predicates): the learner changes its claim finitely often and is
+right from some step on, with no step at which its record shows that it is. The diagonal course
+answering every learner is the diagonal argument of Putnam (1963) and Gold (1967) that no learner
+identifies every course; the reading of induction as convergence without certainty follows Kelly
+(1996). What is the spine's own is the form: every learner and course is stated on the same
+registrations as the rest of the core, no decision is used beyond what each theorem names, and the
+rest of the learner by refutation is stated only as unrefuted (`rest_unrefuted`,
+`held_rest_unrefuted`, a double negation), its step being given in `Becoming.Identification`.
+
 What is not derived: which hypotheses, classes or lumpings an actual formation holds or can
 reach; that its registration tells values apart; that its world is held by a list; that an
 actual network's architecture and updates impose a given lumping; the correspondence of any of

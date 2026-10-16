@@ -147,7 +147,9 @@ section Carrying
 
 variable {S : Type u} {A : Type v} {K : Type u'} {D : Type w'}
 
-/-- `E` registers the claims: descriptions it relates realize the same claims. -/
+/-- `E` registers the claims: descriptions it relates realize the same claims. This is a
+relation on descriptions respecting the claims; `Web.Registers` of `Becoming.Testing` is another
+sense, a condition entering what registers in a formation (its dependence or its observation). -/
 def Registers (claims : K → D → Prop) (E : K → K → Prop) : Prop :=
   ∀ k k', E k k' → ∀ d, claims k d ↔ claims k' d
 

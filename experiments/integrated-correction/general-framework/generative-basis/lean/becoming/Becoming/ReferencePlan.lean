@@ -242,9 +242,17 @@ theorem checked_pair_correct (c : Bool → Bool) (separate : c false ≠ c true)
     | true => exact False.elim (separate (lo.trans hi.symm))
 
 /-- The address domain of the installed registration. These are alternative
-signals at its contacts, not claims that unseen channels were actually sampled. -/
+signals at its contacts, not claims that unseen channels were actually sampled. Two signals are
+alike where they agree at every planned address: `Learning.Training.AgreeOn` on the plan
+(`alike_iff_agreeOn`). This is not `Becoming.Alike` of `Becoming.Unfolding`, which relates two
+configurations by a bisimulation. -/
 def Alike (plan : List Nat) (x y : Nat → Bool) : Prop :=
   ∀ i, i ∈ plan → x i = y i
+
+/-- Alike under a plan is agreeing on the planned addresses, by definition. -/
+theorem alike_iff_agreeOn (plan : List Nat) (x y : Nat → Bool) :
+    Alike plan x y ↔ Learning.Training.AgreeOn (fun i => i ∈ plan) x y :=
+  Iff.rfl
 
 theorem added_keeps (m : List Nat) (i : Nat) :
     Registration.Keeps Alike m (i :: m) :=

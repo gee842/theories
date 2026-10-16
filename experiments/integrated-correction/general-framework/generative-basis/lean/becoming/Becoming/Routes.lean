@@ -64,6 +64,12 @@ complex weights for carried differences; an order expansion that groups courses 
 responses for every weighting (which needs alternatives that commute); sums over infinitely many
 route points or an unbounded horizon. The representation commits to discrete steps and natural
 amounts. No ethical predicate, ranking or axiom occurs.
+
+**Classical sources.** The sum over routes is the path-sum expansion of a matrix power, the
+transfer over `n` steps summed over every course of `n` steps; ordering it by the number of
+responses is the truncated Neumann series, and the self-loop's `Σ_{i ≤ j} binom n i · M ^ i`
+against `(1 + M) ^ n` is the binomial theorem cut at order `j`. The structural match with Feynman
+diagrams is a reading, not a physical claim.
 -/
 
 namespace Becoming

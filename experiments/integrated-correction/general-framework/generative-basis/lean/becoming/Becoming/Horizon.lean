@@ -400,7 +400,9 @@ theorem splice_after {A : Type v} (s : Nat → A) {h t : Nat} (c : A) (after : h
     (splice s h c).act t = c :=
   if_neg (Nat.not_lt_of_le after)
 
-/-- The moves recur: from every step on, some later move is `true`. -/
+/-- The moves recur: from every step on, some later move is `true`. This is `Becoming.Recurs` of
+`Becoming.Change` for a family of one member (`Sequences.recurs_iff`, in `Becoming.Dissipation`,
+the first module that sees both). -/
 def Recurs (r : Run (process Bool)) : Prop := ∀ n, ∃ m, n ≤ m ∧ r.act m = true
 
 /-- Some move is `true`. -/

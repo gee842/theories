@@ -57,6 +57,15 @@ needing a model outside it); runs along unbounded configurations where the branc
 and nothing is searched, given in `Becoming.Lasting` through `EitherThroughout` and a selection
 (`Lasting.lifting`); the laws along runs where nothing lists the configurations. No ethical
 predicate, ranking or axiom occurs.
+
+**Classical sources.** Within finitely many configurations a run is a lasso: a course into a
+cycle, found by the pigeonhole principle (`revisits_within` of `Becoming.Recurrence`). The fan
+(`fan_no_run`) is the standard witness that courses of every length give no infinite path where
+branching is infinite, the hypothesis of König's lemma (König 1927); König's lemma itself, for
+finite branching over unbounded configurations, is not stated here and is not constructive in
+general. `DependentSelection` is the axiom of dependent choice (Bernays 1942), and
+`runs_iff_selection` states it as exactly what runs from every family that keeps moving take, at
+`Type 0`.
 -/
 
 namespace Becoming

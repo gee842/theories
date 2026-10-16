@@ -4,16 +4,18 @@ import Becoming.Counterfactual
 # Sensitivity: the least registration with any number of conditions
 
 `Becoming.Counterfactual` shows that every registration a law of exchange reads through holds,
-with what the formation depends on, every condition its exchange is sensitive to
-(`ExchangeLaw.Through.registers_of_sensitive`), and, with finitely many conditions, listed with
-equality decided, that a law of what has stood reads through registering what it is sensitive to
-(`ExchangeLaw.Nonanticipating.through_sensitive`): sensitivity is the least registration. It
-leaves open whether sensitivity remains the least registration with infinitely many conditions,
-or a counterexample. This module answers within Part I, with no premise beyond what each law
-names: sensitivity is the least registration wherever a law reads finitely many conditions under
-each history, with any number of conditions; with infinitely many the condition cannot be
-dropped, and a law that depends on the whole and on no condition of it gives a principle of
-omniscience.
+with what the formation depends on, every condition its exchange is sensitive to, in the form
+that its not holding it is refuted (`¬ ¬`, `ExchangeLaw.Through.registers_of_sensitive`), and,
+with finitely many conditions, listed with equality decided, that a law of what has stood reads
+through registering what it is sensitive to (`ExchangeLaw.Nonanticipating.through_sensitive`):
+sensitivity is the least registration, least up to that double negation. It leaves open whether
+sensitivity remains the least registration with infinitely many conditions, or a counterexample.
+This module answers within Part I, with no premise beyond what each law names: sensitivity is the
+least registration, in the same double-negation form, wherever a law reads finitely many
+conditions under each history, with any number of conditions; with infinitely many, the condition
+cannot be dropped where vanishing is decided (a hypothesis, `decides`, which gives `LPO`), and
+without such a decision every counterexample gives a principle of omniscience (`WLPO`), so none is
+given constructively.
 
 * **Reading finitely many conditions.** At a step, for a formation and under a history, a law
   reads within a list of conditions where every history agreeing with it on them up to the step
@@ -33,7 +35,9 @@ omniscience.
   (`ExchangeLaw.ReadsFinitely.through_of_observed`), through what it is sensitive to
   (`ExchangeLaw.ReadsFinitely.through_sensitive`), and sensitivity is the least registration it
   reads through (`ExchangeLaw.ReadsFinitely.least_registration`, with
-  `ExchangeLaw.Through.registers_of_sensitive`). The comparison as the dynamics give holds for
+  `ExchangeLaw.Through.registers_of_sensitive`): least in that every registration it reads through
+  holds each condition it is sensitive to up to double negation (`¬ ¬ W.Registers obs h c`), not
+  as a positive inclusion. The comparison as the dynamics give holds for
   such laws with any number of conditions, the registration being their sensitivity
   (`comparison_through_sensitivity_of_readsFinitely`). The case of finitely many conditions in
   `Becoming.Counterfactual` is the instance with one list holding every condition
@@ -42,7 +46,8 @@ omniscience.
   every condition, it gives alike under two histories wherever it reads within a list under one
   of them (`alike_of_insensitiveAt_within`); a law reading finitely many conditions and sensitive
   to none gives alike under every two histories (`ExchangeLaw.ReadsFinitely.alike_of_insensitive`).
-* **The tail.** With infinitely many conditions the condition cannot be dropped. Given a decision,
+* **The tail.** With infinitely many conditions the condition cannot be dropped, relative to a
+  decision of vanishing taken as a hypothesis (`decides`). Given a decision,
   for every sequence of levels, of whether it vanishes from some condition on (`VanishFrom`), the
   law exchanging the indicator of that at step `0` (`vanishIndicator`, `tailLaw`) reads what has
   stood (`tailLaw_nonanticipating`) and through registering the conditions from any one on
@@ -90,6 +95,13 @@ gives where the conditions are not numbered by the natural numbers. The equality
 is decided where conditions are mixed (`DecidableEq`), as in `Becoming.Counterfactual`, and the
 tail law takes its decision of vanishing as a hypothesis. No ethical predicate, ranking or axiom
 occurs.
+
+**Classical sources.** `LPO` and `WLPO` are the limited and weak limited principles of omniscience
+of Bishop's constructive mathematics (Bishop 1967, *Foundations of Constructive Analysis*; Bridges
+and Richman 1987, *Varieties of Constructive Mathematics*), and calibrating a statement by the
+principle it gives is constructive reverse mathematics in Ishihara's sense. The mixing of two
+histories along a Boolean sequence is the standard way such a statement yields `WLPO`. The
+calibration here is of the core's own statements; the principles are defined, never assumed.
 -/
 
 namespace Becoming
@@ -177,7 +189,8 @@ theorem ExchangeLaw.ReadsFinitely.through_sensitive (fin : law.ReadsFinitely) (W
 
 /-- **Sensitivity is the least registration, with any number of conditions.** A law reading
 finitely many conditions reads through what it is sensitive to, and every registration it reads
-through holds, with what the formation depends on, every condition it is sensitive to. -/
+through holds, with what the formation depends on, every condition it is sensitive to, up to
+double negation: that it does not hold one is refuted (`¬ ¬`). -/
 theorem ExchangeLaw.ReadsFinitely.least_registration (fin : law.ReadsFinitely) (W : Web F C)
     (part : F → Bool) :
     law.Through W law.Sensitive part ∧

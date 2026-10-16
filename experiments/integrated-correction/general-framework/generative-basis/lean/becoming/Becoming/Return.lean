@@ -63,7 +63,10 @@ the next `p` steps. -/
 def RenewedWithin (p : Nat) (c : C) : Prop :=
   ∀ t g, W.requires t g c → W.ReturnsWithin p t g c
 
-/-- Every dependence on the condition is met at some later step. -/
+/-- Every dependence on the condition is met at some later step. What returns is the condition's
+level to a dependence's need; this is not a configuration coming back (`Law.Returns` of
+`Becoming.Recurrence`, `Branching.Returns`), nor a loop of couplings (`Becoming.Returns` of
+`Becoming.Frequency`). -/
 def Returns (c : C) : Prop :=
   ∀ t g, W.requires t g c → ∃ k, 0 < k ∧ W.need t g c ≤ W.level (t + k) c
 

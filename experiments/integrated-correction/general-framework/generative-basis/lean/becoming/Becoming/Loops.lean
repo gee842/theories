@@ -101,6 +101,14 @@ beyond the product of the strengths around a loop; laws reading infinitely many 
 amounts and continuous time, where the sum over orders becomes a series and its convergence a
 further question. The representation commits
 to discrete steps and natural amounts. No ethical predicate, ranking or axiom occurs.
+
+**Classical sources.** The orders are the truncated path-sum expansion of the carried amount, the
+discrete-time form of a Neumann series `Σ K^j` of the coupling strengths; that a finite order is
+exact exactly where no loop lies upstream is the fact that the adjacency of a directed graph is
+nilpotent exactly where the graph has no cycle; the polynomial bound by binomial counts and the
+geometric bound `(1 + M) ^ t` are the standard bounds of such a series. What is the spine's own is
+that these are stated for every law of what has stood, through `most_difference_arrives`, with
+natural amounts and no decision beyond what each theorem names.
 -/
 
 namespace Becoming

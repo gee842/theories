@@ -50,6 +50,12 @@ each step is taken in situations that each fix it.
   cancellation is a balance between counts of situations of opposite sign, not an absence of
   situations.
 
+Classical sources: the law of large numbers counted here is Bernoulli's weak law (1713), through
+Chebyshev's inequality (1867), and the exponential concentration is Chernoff's bound (1952), as
+credited in `Becoming.Typicality`; reading a probability as a number of situations of a kind is the
+classical (Laplacean) ratio of favourable to possible cases, here with the cases weighted by their
+situations.
+
 The arithmetic uses the core's `mul_assoc_nat` and `add_mul_split`, since the prelude's associativity of
 multiplication uses propositional extensionality.
 

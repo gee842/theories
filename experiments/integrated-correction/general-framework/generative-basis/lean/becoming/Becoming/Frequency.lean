@@ -93,6 +93,13 @@ the product of the strengths around the loop, and strengths shrinking fast enoug
 frequent returns from running away; the spectral radius of given strengths; laws reading infinitely
 many conditions at a step; continuous time. The representation commits to discrete steps and natural
 amounts. No ethical predicate, ranking or axiom occurs.
+
+**Classical sources.** The carried amount and its orders are a truncated path-sum (Neumann series)
+expansion, as in `Becoming.Loops` and `Becoming.Remainder`; the bound `D * (1 + M) ^ a` is the
+geometric bound of that series counted over the marked steps. The limited principle of omniscience
+is Bishop's (Bishop 1967; Bridges and Richman 1987), and `settled_iff_recursOrStops` with
+`lpo_of_settled` calibrates settling against it in the manner of constructive reverse mathematics
+(Ishihara); `RecursOrStops` gives `LPO`, and the converse is not stated.
 -/
 
 namespace Becoming
@@ -402,7 +409,9 @@ theorem carried_along_in_time {v : Nat → C} {T : Nat} :
         (Nat.le_trans (carried_step_ge_at at_) (carried_mono_steps lt _)))
 
 /-- **A return.** What has reached `e` from step `T` on comes back to `e` by step `T'` around a
-loop of couplings in time order. -/
+loop of couplings in time order. What returns is a carried difference along couplings, not a
+configuration (`Law.Returns` of `Becoming.Recurrence`, `Branching.Returns`) and not a dependence
+met again (`Web.Returns` of `Becoming.Return`). -/
 def Returns (cs : List C) (part : F → Bool) (k : Nat → F → C → Nat → C → Nat)
     (present : Nat → List F) (e : C) (T T' : Nat) : Prop :=
   ∃ v p, v 0 = e ∧ v (p + 1) = e ∧ ChainInTime cs part k present v T (p + 1) T'

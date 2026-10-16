@@ -270,7 +270,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   bounded the two recur together. The stock along a run is a balanced `Flow`.
 * `Becoming.Change` (L3): what holds of every unfolding, with no premise about it.
   Arising, forming and coming to stand, with ceasing, dissolving and ceasing to stand,
-  are one change, read of activity, dependence and standing. Over any stretch an amount
+  are one change, read of activity, dependence and standing (read three ways, by
+  definition: `Web.change_readings` holds by `Iff.rfl`). Over any stretch an amount
   at the end with its falls is the amount at the start with its rises. In a finite
   family coming to be and ceasing to be keep pace, differing over any stretch by at most
   the number of members, and each recurs exactly when the other does; so with finitely
@@ -1037,9 +1038,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Sensitivity` (L4): the least registration with any number of conditions, with no
   premise beyond what each law names. A law reading finitely many conditions under each history,
   the list possibly depending on the history, reads through what it is sensitive to: sensitivity
-  is the least registration it reads through, and the comparison as the dynamics give holds with
+  is the least registration it reads through, least up to double negation (every registration
+  it reads through holds each condition it is sensitive to as `¬ ¬`), and the comparison as the dynamics give holds with
   any number of conditions; such a law sensitive to no condition gives alike under every two
-  histories. With infinitely many conditions this cannot be dropped: given a decision of whether
+  histories. With infinitely many conditions this cannot be dropped, relative to a decision taken
+  as a hypothesis: given a decision of whether
   levels vanish from some condition on, which gives the limited principle of omniscience, a law
   of the tail is sensitive to no condition and still differs, and the registrations it reads
   through have no least one; with the conditions numbered, every counterexample to the least
