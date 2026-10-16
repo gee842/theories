@@ -100,3 +100,37 @@ python3 -B _process/research/2026-10-05-generative-foundation-review/root-founda
 **中文。** 需要检查器缓存中有当前源码的编译结果；缺少时脚本停下，先运行 `check_becoming.py`。约 15 秒。不加 `--write` 只打印摘要。
 
 **English.** It needs the cache to hold the current sources' compiled modules; if any is missing the script stops, and `check_becoming.py` should be run first. It takes about 15 seconds. Without `--write` it only prints the summary.
+
+## 6. P130 重跑，两种基 / The P130 rerun, under two base sets
+
+2026-10-16。AI（Claude Opus 5.5）为工作板 P130 所作的重跑，在分支 `p130-frontier-on-base` 的 73d2f2bd 上（Lean 源与提交一致；提交时的核心回执 20261015T231055.702986Z；215 个被跟踪模块，29,151 个常量）。[JSON](THEOREM-CONNECTIVITY.json) 现为这次以原基所得的结果；§3 的数字仍是 108e278e 上那一次的。“之前”一列从同一编译环境中去掉六个新模块的常量算出：没有已有模块导入新模块，所以它恰是 ce808d6a 的状态，与在那里所测一致（7,089 条中 1,093 条独立）。扩展的基只在 `Becoming.Runs` 证明各读法之后才用：过程族加 `Becoming.Law.orbit`（轨道即运行，`Branching.law_run_state`），世界族加 `Becoming.ExchangeLaw` 与 `Becoming.carried`（`ExchangeLaw.courseWorld`、`carriedWorld`）。
+
+2026-10-16. A rerun by the AI (Claude Opus 5.5) for board item P130, on 73d2f2bd of branch `p130-frontier-on-base` (Lean sources match the commit; core receipt at the commit 20261015T231055.702986Z; 215 tracked modules, 29,151 constants). The [JSON](THEOREM-CONNECTIVITY.json) now holds this run under the original base; the numbers of §3 remain those of 108e278e. The "before" columns remove the six new modules' constants from the same compiled environment: no existing module imports a new one, so this is exactly the state at ce808d6a, and it reproduces the measurement taken there (1,093 apart of 7,089). The extended base set is used only after `Becoming.Runs` proved the readings: `Becoming.Law.orbit` joins the Process family (an orbit is a run, `Branching.law_run_state`), and `Becoming.ExchangeLaw` and `Becoming.carried` join the World family (`ExchangeLaw.courseWorld`, `carriedWorld`).
+
+| 类 / Class | 之前，原基 / Before, original | 之后，原基 / After, original | 之前，扩展 / Before, extended | 之后，扩展 / After, extended |
+|---|---:|---:|---:|---:|
+| 陈述用到两族 / Statement on both families | 124 | 145 | 132 | 154 |
+| 陈述用到过程族 / Statement on Process/Frame/Run/Trace | 1,300 | 1,318 | 1,470 | 1,487 |
+| 陈述用到世界族 / Statement on World/Flow/Web | 2,676 | 2,711 | 2,861 | 2,903 |
+| 证明经过某一族 / Proof through a family | 125 | 127 | 36 | 36 |
+| 被基础上的定理使用 / Used by a theorem on the base | 1,771 | 1,888 | 1,744 | 1,836 |
+| 独立：自身词汇 / Apart: own vocabulary | 1,001 | 914 | 772 | 705 |
+| 独立：只用前导库 / Apart: prelude-only statement | 92 | 84 | 74 | 66 |
+| **独立共计 / Apart, total** | **1,093** | **998** | **846** | **771** |
+| **定理共计 / Theorems** | **7,089** | **7,187** | **7,089** | **7,187** |
+
+**中文。**
+- 98 条新定理无一独立。原基之下 95 条已有定理离开独立类（1,093 → 998），扩展基之下 75 条（846 → 771）；单是扩展基就移动 247 条（1,093 → 846）。
+- 两族相遇的陈述由 124 增到 145：`Runs` 16 条、`ParityReadings` 5 条。
+- 按模块（原基，之前 → 之后）：Gluing 81 → 43（共 81），Quantum 37 → 9（共 37），Learnable 17 → 7（共 17），Situations 36 → 32，Context 23 → 18，Identification 48 → 44，Learning 42 → 40，Thresholds 24 → 22。Propagation、Loops、Remainder、Routes、Closing、Frequency、Observation 的独立数不变：其主要规律原已被基础上的定理使用，`CourseWorlds` 与 `FormedLoops` 给它们的是基础上的陈述（世界族陈述 2,676 → 2,711）。
+- 两族在定义上仍不相及（`families_reach_each_other` 四项皆为假）：一个根是以恰好的对应得到的，不是重新定义。
+- 连通分量 65 个，主分量之外 11 条定理，不变。只落在独立定理上的记录仍是 2 条：`selection-through-a-model-of-the-options` 与 `typicality-by-counting`。
+
+**English.**
+- None of the 98 new theorems is apart. Under the original base set 95 existing theorems leave the apart classes (1,093 → 998); under the extended base set 75 do (846 → 771). The base extension alone moves 247 (1,093 → 846).
+- Statements on both families rise from 124 to 145: 16 in `Runs` and 5 in `ParityReadings`.
+- By module (original base, before → after): Gluing 81 → 43 of 81, Quantum 37 → 9 of 37, Learnable 17 → 7 of 17, Situations 36 → 32, Context 23 → 18, Identification 48 → 44, Learning 42 → 40, Thresholds 24 → 22. Propagation, Loops, Remainder, Routes, Closing, Frequency and Observation keep their apart counts: their main laws were already used by theorems on the base, and `CourseWorlds` and `FormedLoops` give them statements on the base (World-family statements 2,676 → 2,711).
+- The families still do not reach each other by definition (all four `families_reach_each_other` entries are false): the one root is reached by exact correspondence, not by redefinition.
+- Components: 65, with 11 theorems outside the main one, unchanged. Two records still rest only on apart theorems: `selection-through-a-model-of-the-options` and `typicality-by-counting`.
+
+The extended-base and "before" columns are not written to the JSON: the script's base lists are unchanged. They are reproduced by [connectivity_bases.py](development/p130-frontier-on-base/connectivity_bases.py), which imports the measure, changes only its base lists (and, for "before", drops the six new modules' constants) and writes into a folder of its own. 扩展基与“之前”两列不写入 JSON，脚本的基不变；它们由该脚本复现，它导入测量、只改基的列表（“之前”另去掉六个新模块的常量），并写入自己的文件夹。
