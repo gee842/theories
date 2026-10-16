@@ -332,6 +332,9 @@ PROOF_KIND = {
     **{n: 'find' for n in [
         'Readout.commonWitness_or_covered', 'Readout.no_common_report_iff', 'Readout.no_common_report_envelopes_iff']},
     'every_weighting_iff': 'indicate',
+    # 2026-10-16, P129 (R18 item 41): LLPO beside WLPO and LPO
+    **{n: 'split' for n in ['LLPO.FirstAt.decided', 'LLPO.Interleave.decided']},
+    'LLPO.FirstAt.of_holds': 'find', 'LLPO.decidable': 'indicate',
     # 2026-10-14, the relation-first re-founding (Becoming.Novelty): finitely many steps checked, a failing one found
     'upto_or_fails': 'find',
     # 2026-10-15, integration I3b: decided tests pick the side of a choice, or list where a guard lets through
