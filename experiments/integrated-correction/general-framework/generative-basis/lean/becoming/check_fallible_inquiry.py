@@ -2,7 +2,8 @@
 """Check the peripheral finite fallible inquiry adapter on the native Becoming spine.
 
 The core never imports this adapter. Shared module resolution, immutable inherited
-receipts, cache keys and declaration scanning come from check_becoming. Compile
+receipts (matched by module and sha256), cache keys, declaration scanning, the Lean binary
+(`LEAN`, `elan which lean`, or the default path) and `BECOMING_OUT` come from check_becoming. Compile
 with Lean 4.29.1; retain exact signatures and every source declaration's axiom report.
 Only propext and Quot.sound are allowed in this periphery, inherited from the finite
 statistical proof. This check does not certify actual weights or universal ontology.
@@ -26,7 +27,6 @@ TARGET = "Becoming.FallibleInquiry"
 RECEIPT = HERE / "fallible-inquiry-verification.json"
 RETAINED = HERE / "fallible-inquiry-checks"
 TOOLCHAIN = "leanprover/lean4:v4.29.1"
-LEAN = Path.home() / ".elan/toolchains/leanprover--lean4---v4.29.1/bin/lean"
 EXTERNAL = {"Init", "Std", "Lean", "Mathlib"}
 # Seconds allowed for each Lean run; a heavily loaded machine may need more.
 TIMEOUT = int(os.environ.get("LEAN_TIMEOUT", "900"))
@@ -72,20 +72,10 @@ def closure(index):
     return order
 
 
-def passed_receipts():
-    receipts = []
-    for path in LEAN_ROOT.rglob("*.json"):
-        if path == RECEIPT or RETAINED in path.parents:
-            continue
-        text = path.read_text(errors="replace")
-        if '"passed"' in text:
-            receipts.append((str(path.relative_to(LEAN_ROOT)), text))
-    return receipts
-
-
 def main():
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S.%fZ")
-    retained = RETAINED / stamp
+    receipt_path, runs = core.output_paths(RECEIPT, RETAINED)
+    retained = runs / stamp
     retained.mkdir(parents=True, exist_ok=False)
     index = core.module_index()
     order = closure(index)
@@ -102,7 +92,7 @@ def main():
     digest = core.audit_support.digest
     receipt = {
         "status": "checking", "utc": stamp, "toolchain": TOOLCHAIN,
-        "retained_run": str(retained.relative_to(HERE)),
+        "retained_run": core.shown(retained),
         "bridge_module": TARGET, "compile_order": order,
         "source_paths": {name: str(paths[name].relative_to(LEAN_ROOT)) for name in order},
         "source_sha256": {name: digest(data) for name, data in sources.items()},
@@ -116,15 +106,20 @@ def main():
     steps = receipt["lean_steps"] = {"cache": str(core.CACHE), "fresh": core.FRESH, "ran": [], "reused": {}, "keys": {}}
     try:
         assert TARGET not in core.closure(index, core.CORE), "the core imports the bridge"
-        receipts = passed_receipts()
+        receipts = core.passed_receipts(exclude=(RECEIPT, RETAINED, receipt_path, runs))
         matches = {}
         for name in order[:-1]:
-            found = sorted(path for path, text in receipts if receipt["source_sha256"][name] in text)
+            found = core.receipts_for(name, paths[name], receipt["source_sha256"][name], receipts)
             assert found, ("module has no passed receipt for its current bytes", name)
             matches[name] = found
         receipt["inherited_receipts"] = matches
-        registry = core.declarations(sources[TARGET])
-        receipt["lean_binary_sha256"] = digest(LEAN.read_bytes())
+        scan = core.scanned(sources[TARGET])
+        registry = scan["declarations"]
+        # Not audited by name (no environment audit runs here); empty for this adapter.
+        receipt["not_audited_by_name"] = {"private": [d["name"] for d in scan["private"]],
+                                          "unnamed_instance_lines": scan["unnamed_instances"]}
+        command, lean, receipt["lean_resolution"] = core.resolve_lean(HERE, TOOLCHAIN)
+        receipt["lean_binary_sha256"] = digest(lean.read_bytes())
         context = [TOOLCHAIN, receipt["lean_binary_sha256"]]
         keys = core.module_keys(context, sources, order)
         origin = {"utc": stamp, "retained": str(retained)}
@@ -142,7 +137,7 @@ def main():
                     return output
                 if driver:
                     (retained / driver).write_bytes((work / driver).read_bytes())
-                p = subprocess.run([str(LEAN)] + args, cwd=work, env=env, text=True,
+                p = subprocess.run(command + args, cwd=work, env=env, text=True,
                                    stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=TIMEOUT)
                 (retained / log).write_text(p.stdout)
                 assert p.returncode == 0, p.stdout
@@ -185,7 +180,7 @@ def main():
             paths[name].read_bytes() == data for name, data in sources.items())
         assert receipt["source_unchanged_during_check"], "Source changed; only snapshot checked"
         assert all(p.read_bytes() == helpers[p.name] for p in helper_paths), "Checker changed"
-        assert digest(LEAN.read_bytes()) == receipt["lean_binary_sha256"], "Compiler changed"
+        assert digest(lean.read_bytes()) == receipt["lean_binary_sha256"], "Compiler changed"
         receipt["modules"] = [{
             "module": TARGET, "layer": "periphery bridge",
             "theorems": sum(d["kind"] == "theorem" for d in registry),
@@ -201,12 +196,12 @@ def main():
     finally:
         serialized = json.dumps(receipt, indent=2, ensure_ascii=False) + "\n"
         (retained / "verification.json").write_text(serialized)
-        RECEIPT.write_text(serialized)
+        receipt_path.write_text(serialized)
     print(json.dumps({"status": receipt["status"], "theorems": receipt["modules"][0]["theorems"],
                       "declaration_audits": len(registry), "axioms": sorted({a for deps in dependencies.values() for a in deps}),
                       "inherited_modules": len(order) - 1,
                       "lean_steps_run": len(steps["ran"]), "lean_steps_reused": len(steps["reused"]),
-                      "receipt": str(RECEIPT)}))
+                      "lean": receipt["lean_resolution"], "receipt": str(receipt_path)}))
 
 
 if __name__ == "__main__":
