@@ -23,7 +23,7 @@
 
 ## 2. 古典中的几个关键连接
 
-下表为选择性的文本比较。章次采用所查传世文本；《易传》与《庄子》不据此归入同一个教义体系。逐项原文、可访问版本与解释限制见[原典研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-CLASSICAL-SOURCES.md)。
+下表为选择性的文本比较。章次采用所查传世文本；《易传》与《庄子》不据此归入同一个教义体系。逐项原文、可访问版本与解释限制见[原典研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-CLASSICAL-SOURCES.md)。
 
 | 原典位置 | 可据原文讨论的问题 | 与当前理论相合之处 | 尚不能等同之处 |
 |---|---|---|---|
@@ -37,7 +37,7 @@
 
 最值得深入的接点是第五十一章：它把生成与养育连在一起，又同时限制占有与主宰。因而，我们的“共同生成”若要在这一意义上接近道，就应当说明如何成就不同生命的活动条件，并约束成就者据此取得无限权力的企图。这里的“应当”是本文的当代伦理重构，不能冒充古典原文已经证明的结论。[《老子》王弼本第五十一章](https://zh.wikisource.org/wiki/道德經_(王弼本)#五十一章)
 
-原典也提出反压力：第五章的天地不仁不能未经解释就改成天地普遍照护；第十八、三十八章对仁义名目和强迫规范响应的警觉，又使“伦理原则越多便越近道”成为可疑推论。这些段落并不简单赞成残酷或取消伦理，但它们要求我们保留宇宙秩序、人的关切和制度实践之间的张力。[逐章核查及限制](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-CLASSICAL-SOURCES.md)
+原典也提出反压力：第五章的天地不仁不能未经解释就改成天地普遍照护；第十八、三十八章对仁义名目和强迫规范响应的警觉，又使“伦理原则越多便越近道”成为可疑推论。这些段落并不简单赞成残酷或取消伦理，但它们要求我们保留宇宙秩序、人的关切和制度实践之间的张力。[逐章核查及限制](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-CLASSICAL-SOURCES.md)
 
 现代学术解释也并不单一。Alan Chan 的《老子》研究比较了不同注解传统，对德、自然和无为如何相连的理解保留分歧；Chad Hansen 则突出道作为可行道路及选择道路的方式。两者都提示，道与实践有关，却不能据此断定“道”等于我们的一套因果模型。本文不在这两种读法间宣布终局。[Chan](https://plato.stanford.edu/entries/laozi/)，[Hansen](https://plato.stanford.edu/entries/daoism/)
 
@@ -57,7 +57,7 @@
 
 ## 4. 旧稿已经走到了哪里，哪里需要改读
 
-旧版并非只有朦胧直觉。[谱系审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-GENEALOGY.md)发现：道与生生不息的形式桥接曾以同一个开放运行见证定义两边；它确立的是作者给定定义之间的对应。该对应有整理作用，却没有独立识别古典的道或现实的道。
+旧版并非只有朦胧直觉。[谱系审计](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-GENEALOGY.md)发现：道与生生不息的形式桥接曾以同一个开放运行见证定义两边；它确立的是作者给定定义之间的对应。该对应有整理作用，却没有独立识别古典的道或现实的道。
 
 另一些桥接把自然、无为、齐物等术语映射为自动演化、对称关系或模型不变量。这些做法可以提出解释假说。要成立为解释，还须证明所保留的结构足以区分原概念所关心的情形。例如，自动运行可以是熟练养护，也可以是无人察觉的伤害；对称的表达也可以把所有人的利益同时归零。
 
@@ -99,7 +99,7 @@ h\in\mathcal H_L\quad\not\Rightarrow\quad J(h).
 
 第1步涉及何者具有感受或利益的识别；第3步采用了“主体的损益也构成共同判断中的理由”这一待辩护桥梁。仅承认每个人各自拥有避免自己痛苦的理由，还不足以给其他行动者同样的理由。第4步又包含可问责性的规范要求。它们不是“万物相连”的同义反复。与此同时，它们也不只是任意的外加偏好：可通过经验、反省、换位、对受影响者的回应与反例来认真辩护。
 
-[规范研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-NORMATIVE-REVIEW.md)比较三条进一步奠基路径：自然事实与价值事实的同一化；行动或共同论证的构成条件；伤害经验本身提供理由。每条都有正面力量，也各有尚待证明的连接。不能从一个主体拒绝关心他人，就推出他没有关心的理由；也不能从理由有效，就推出每个主体必然理解或服从它。
+[规范研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-NORMATIVE-REVIEW.md)比较三条进一步奠基路径：自然事实与价值事实的同一化；行动或共同论证的构成条件；伤害经验本身提供理由。每条都有正面力量，也各有尚待证明的连接。不能从一个主体拒绝关心他人，就推出他没有关心的理由；也不能从理由有效，就推出每个主体必然理解或服从它。
 
 这把当前任务推进了一步：需要解释的不只是“为何会帮助”，还包括如何识别一个被现有评价忽略的损失、如何有根据地修正原来的评价，以及为什么这个修正值得认可。三项可以共同研究，各自保留判断标准。
 
@@ -142,9 +142,9 @@ h\in\mathcal H_L\quad\not\Rightarrow\quad J(h).
 
 ## 10. 阅读、来源与审查
 
-- [原典、版本与现代解释](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-CLASSICAL-SOURCES.md)：选择性文本核查；没有以检索摘要代替已读原文。
-- [旧稿谱系](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-GENEALOGY.md)：区分形式定义、历史主张、Ren 原话与 AI 论述，保留旧稿反例。
-- [规范论证与反例](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-NORMATIVE-REVIEW.md)：最强正面论证、前提与非蕴含范围。
-- [研究审查记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-REVIEW.md)：实际审查、修订、文件检查与尚未完成的研究。
+- [原典、版本与现代解释](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-CLASSICAL-SOURCES.md)：选择性文本核查；没有以检索摘要代替已读原文。
+- [旧稿谱系](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-GENEALOGY.md)：区分形式定义、历史主张、Ren 原话与 AI 论述，保留旧稿反例。
+- [规范论证与反例](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-NORMATIVE-REVIEW.md)：最强正面论证、前提与非蕴含范围。
+- [研究审查记录](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-REVIEW.md)：实际审查、修订、文件检查与尚未完成的研究。
 
 本次外部阅读为链接引用，没有导入新的原典影印件。不同代理的复核是协作 AI 的内部审查，不是外部学界认可。古典相合、现代论证、模型证明和经验识别各有证据范围；相互关联不会使它们自动合并为更强的证明。

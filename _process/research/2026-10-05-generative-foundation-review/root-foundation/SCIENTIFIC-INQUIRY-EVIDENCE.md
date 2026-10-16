@@ -33,9 +33,9 @@ Open Science Collaboration (2015), [*Estimating the reproducibility of psycholog
 | Evidence selection | Attempted studies, outcomes, publication or retention decisions | [Faithful paid recording](../../2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md) retains completed observations; omission changes the stored word | Actual submission, nonpublication and unrecorded outcomes are not fully observed by comparing published papers |
 | Selection over methods | Publication-related reproduction of methodological traits | [Selector revision](../../../../theories/becoming/history/SELECTOR-REVISION.md) and supplied method-selection models | Institutional hiring and transmission laws are empirical inputs; the finite controller is not an identified university |
 | Correction of belief | Fresh measurements, revised estimates, persistent uncertainty | [Evidence conditions](SCIENTIFIC-INQUIRY-CONDITIONS.md) constrain obtainable discrimination | Which channel is calibrated and which historical evidence applies cannot be supplied by increased publication or reserve alone |
-| Correction across successors | Records, target identity, context, executable replay | [Concern/wisdom input contract](CONCERN-WISDOM-INPUTS.md) names paid contextual audit and reason reconstruction | An inherited confidence guarantee must retain sampling and semantic conditions; duplicate transmission is not an independent observation |
+| Correction across successors | Records, target identity, context, executable replay | [Concern/wisdom input contract](../history/root-foundation/CONCERN-WISDOM-INPUTS.md) names paid contextual audit and reason reconstruction | An inherited confidence guarantee must retain sampling and semantic conditions; duplicate transmission is not an independent observation |
 
-These are interfaces, not claims that the same complete dynamical process has been measured across all domains. The broader [cross-domain audit](CROSS-DOMAIN-IDENTIFICATION.md) retains its own biological, AI and human evidence scopes.
+These are interfaces, not claims that the same complete dynamical process has been measured across all domains. The broader [cross-domain audit](../history/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md) retains its own biological, AI and human evidence scopes.
 
 ## 4. A proposed discriminating test
 
@@ -184,7 +184,7 @@ The current theorem can serve as an application constraint once these correspond
 
 ### E12. Falsifiability and truth are different questions
 
-Karl Popper, [“Science as Falsification”](https://tildesites.bowdoin.edu/~j.knockel/falsification/), teaching excerpt from *Conjectures and Refutations* (1963). Re-read the opening distinction, numbered conclusions 1–7 and closing demarcation discussion. He distinguishes scientific standing from truth and emphasizes exposure to adverse observation and the danger of insulating reinterpretation. **Access:** complete online excerpt, not the whole book or Popper's later work. This revisits source Po in the [existing dossier](SCIENTIFIC-PHILOSOPHY-SOURCES.md); it is not independent corroboration. We do not adopt his historical classifications of particular schools as current field-wide verdicts.
+Karl Popper, [“Science as Falsification”](https://tildesites.bowdoin.edu/~j.knockel/falsification/), teaching excerpt from *Conjectures and Refutations* (1963). Re-read the opening distinction, numbered conclusions 1–7 and closing demarcation discussion. He distinguishes scientific standing from truth and emphasizes exposure to adverse observation and the danger of insulating reinterpretation. **Access:** complete online excerpt, not the whole book or Popper's later work. This revisits source Po in the [existing dossier](../history/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md); it is not independent corroboration. We do not adopt his historical classifications of particular schools as current field-wide verdicts.
 
 ### E13. Historical claims need not reproduce their past event
 

@@ -7,7 +7,7 @@ state and event, using a separately bound native-law implementation and importin
 neither this producer nor the native process. [Source](model.py), [complete saved
 histories](results.json), [execution conventions](DEVELOPMENT.md) and
 [first-run receipt](development/attempt-01/receipt.json) preserve the result.
-The [completed review](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md)
+The [completed review](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ACQUIRED-DEPENDENCY-REVIEW.md)
 accepts the conditional execution and mechanism scope.
 
 The connection is actual native effect → action-bound record → acquired port
@@ -128,7 +128,7 @@ memory damage and arbitrary nonstationary channels are limitations, not
 additional executed controls. The component's finite retention and dispatch
 envelope remain supplied. This is a conditional physical composition result,
 not empirical calibration, ethical grounding or completion of the unified
-foundation. See the [mechanism account](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md).
+foundation. See the [mechanism account](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ACQUIRED-DEPENDENCY-MECHANISM.md).
 
 To rerun this producer after a substantive change, use `python3 -B model.py` in
 this directory. The completed first run and input freeze should remain intact.
@@ -138,11 +138,11 @@ this directory. The completed first run and input freeze should remain intact.
 
 The [fixed six-history protocol](OPERATIVE-PROTOCOL.md), [producer](operative_response.py), [saved results](operative-results.json) and [independent receipt](operative-independent-check.json) extend actual assembly/installation cuts without changing the twenty-case source or evidence above. They contain 449 new native events and one shared 115-event prefix, counted once. Copying can close a vacancy while changing type composition; repair can remain enabled after actual source depletion; native events preserve acquired records. The successful event guards provide no reset or rewriting after reader installation. That last all-history claim is a source/induction argument, not an inference from six finite paths.
 
-See the [research integration](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md) for the nondual interpretation, source constraints and preserved alternatives. These are possible histories and local representation limits, not new empirical evidence, a controller improvement or an ethical ranking. To rerun after a substantive change: `python3 -B operative_response.py`, then `python3 -B operative_check_review.py`. This addendum is recorded separately in the integration edit manifest; the preceding README bytes remain recoverable unchanged.
+See the [research integration](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ORGANIZATIONAL-REQUIREMENT-INTEGRATION.md) for the nondual interpretation, source constraints and preserved alternatives. These are possible histories and local representation limits, not new empirical evidence, a controller improvement or an ethical ranking. To rerun after a substantive change: `python3 -B operative_response.py`, then `python3 -B operative_check_review.py`. This addendum is recorded separately in the integration edit manifest; the preceding README bytes remain recoverable unchanged.
 
 
 ## Retained products change native carrier reconstruction
 
 The [fixed reconstruction protocol](RECONSTRUCTION-PROTOCOL.md), [producer](reconstruction.py), [results](reconstruction-results.json) and [independent receipt](reconstruction-independent-check.json) follow four native continuations from the actual installed cut. The 36 suffix records comprise34 native events and2 unavailable immediate repair requests; the shared115-event prefix is counted once. Retaining an A copy changes later association probabilities, and the new resident changes actual response. Both A and H branches remain. Exact sums over competing channels and two reached-state projection comparisons are checked without importing a new reaction law.
 
-The [research integration](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md) includes the scoped hand algebra, earlier mechanisms and empirical identification limits. This result does not reopen the learned reader, establish eventual association probabilities or rank the types ethically. To rerun after a substantive change: `python3 -B reconstruction.py`, then `python3 -B reconstruction_check_review.py`. Earlier study bytes are retained; this separate addendum is recorded in the integration edit manifest.
+The [research integration](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONSEQUENCE-RECONSTRUCTION-INTEGRATION.md) includes the scoped hand algebra, earlier mechanisms and empirical identification limits. This result does not reopen the learned reader, establish eventual association probabilities or rank the types ethically. To rerun after a substantive change: `python3 -B reconstruction.py`, then `python3 -B reconstruction_check_review.py`. Earlier study bytes are retained; this separate addendum is recorded in the integration edit manifest.

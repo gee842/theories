@@ -71,7 +71,7 @@
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-INTEGRATION.md",
       "detail": {
         "zh": "保留所有组合的存在性不保证概率、可靠性、负担或既有损失不变；不能从任意共同可实现结构直接推出完整生生质量。",
         "en": "Preserving the existence of all bundles does not guarantee unchanged probability, reliability, burdens or past losses; arbitrary joint-realizability structure does not directly determine complete generative ethical quality."
@@ -125,19 +125,19 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-INTEGRATION.md",
       "role": "integration",
       "sha256": "984896144a37c75461ab4d2c3103fa63ce41cf9801c6a010e3292cf4f00a4f7c",
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-PROOF.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-PROOF.md",
       "role": "statement",
       "sha256": "a2be10b9cd8bfd2a6f8aa4e665ad18fd47368ceac451a211788e9324de0388f3",
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-REVIEW.md",
       "role": "review",
       "sha256": "8ecbd3cf9a6fbb3fb4df1409e47bc3a65f96a053c21a0d7122989c83c9b5b4a0",
       "declarations": []

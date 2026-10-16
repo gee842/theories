@@ -3,7 +3,7 @@
 6 October 2026. Exact finite construction for **acquired prediction → paid
 formation and consequence-dependent revision of its action coupling**. The
 [protocol](PROTOCOL.md) was saved before the results. The [mathematical
-account](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-COUPLING-MATH.md)
+account](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-COUPLING-MATH.md)
 gives the conditional theorem, resource bound and premise ledger.
 
 The parent's actual formation/repair/capture/adapter process reaches the

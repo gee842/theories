@@ -20,7 +20,7 @@ S6's legend calls the comparison WS versus WS-fuzY T443G; the visible labels ins
 
 ## What changes in the explanatory connection
 
-The [previous study](MAT-CONDITIONS-INTEGRATION.md) linked respiration-generated oxygen gradients to selective consequences and distinguished developmental strength from a later endpoint. The new temporal evidence adds a necessary observation distinction: renewal of visible surface material need not be uninterrupted persistence of the material first formed. Neither automatically identifies persistence of a reproductively continuing organization. Which continuity matters depends on the actual developmental and reproductive mechanism.
+The [previous study](../history/root-foundation/MAT-CONDITIONS-INTEGRATION.md) linked respiration-generated oxygen gradients to selective consequences and distinguished developmental strength from a later endpoint. The new temporal evidence adds a necessary observation distinction: renewal of visible surface material need not be uninterrupted persistence of the material first formed. Neither automatically identifies persistence of a reproductively continuing organization. Which continuity matters depends on the actual developmental and reproductive mechanism.
 
 These are analytical distinctions within one history of division, adhesion, matrix formation, transport, separation and continued growth. The vial, medium, pH treatment and subsequent sampling participate in that history. They are not an independent environment joined afterward to a finished organism. The current source still supplies prepared medium, exposure conditions and genetic constructs; its explanation of temporal organization does not derive their wider formation or renewal.
 
@@ -28,7 +28,7 @@ The proposed empirical correspondence is now:
 
 **Inherited and current cellular organization + actual chemical and transport conditions → observed spatial development, loss and possible reformation → the protocol's endpoint criterion → sampled viable descendants and redevelopment.**
 
-The first arrows have several primary correspondences. The [recorded bacterial genealogy and linked assay](LINEAGE-CONTINUATION-INTEGRATION.md) already establish the later continuation connection in another experimental history. These are not one joined population record. The immediate task is to calibrate compatible connections, preserving this distinction rather than treating a literature composite as an observed life cycle.
+The first arrows have several primary correspondences. The [recorded bacterial genealogy and linked assay](../history/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md) already establish the later continuation connection in another experimental history. These are not one joined population record. The immediate task is to calibrate compatible connections, preserving this distinction rather than treating a literature composite as an observed life cycle.
 
 ## Observation requirements before fitting
 

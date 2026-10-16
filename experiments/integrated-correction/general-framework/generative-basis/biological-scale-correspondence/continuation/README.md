@@ -8,7 +8,7 @@ This completes the public-data prediction and feedback analyses selected on 8 Oc
 - [Haley original sources](../../../../../../sources/biological-scale-correspondence/elife-103191/README.md): 198 mixed-density animals, 100 imputations, 172,463 conditional-encounter rows.
 - [Anderson original sources](../../../../../../sources/biological-scale-correspondence/anderson-2018/README.md): 70 individual fluorescence measurements; separate strain-level avoidance percentages.
 - [Analysis](analyze_continuation.py), [results](results.json), [per-worm held-out scores](worm-scores.csv), [figure](continuation-results.png), [figure code](plot_results.py).
-- [Interpretation and completion audit](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BIOLOGICAL-CONTINUATION-INTEGRATION.md).
+- [Interpretation and completion audit](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BIOLOGICAL-CONTINUATION-INTEGRATION.md).
 
 The secondary strain summaries were added after the initial foraging results, following inspection of the pathogen study's rescue experiments. They are descriptive evidence checks, without new significance claims or outcome-based model selection. Their cell references and values are retained in the result.
 

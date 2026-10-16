@@ -1,6 +1,6 @@
 # Connected acquisition, end revision and continuation
 
-The [study](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md) states the normative premises, interpretation, failure cases and completion scope. [The prospective contract](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md) fixes the bridge rather than reopening completed local mechanisms.
+The [study](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-REVISION-CONTINUATION.md) states the normative premises, interpretation, failure cases and completion scope. [The prospective contract](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md) fixes the bridge rather than reopening completed local mechanisms.
 
 Run the fresh formal build from this directory:
 

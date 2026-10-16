@@ -108,7 +108,7 @@
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-PROOF.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/POSITIVE-GROUND-UNCERTAINTY-PROOF.md",
       "detail": {
         "zh": "queryOpen 仅是回应所保留的字段；acquire/rule 不检查它，因此本模块未新证一条实际执行的查询通道。扩大所见范围可使旧证书撤回。",
         "en": "queryOpen is only a field retained by the response; acquire/rule do not inspect it, so this module does not newly prove an executed query channel. Widening the visible scope may require certificate retraction."
@@ -180,19 +180,19 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-PROOF.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/POSITIVE-GROUND-UNCERTAINTY-PROOF.md",
       "role": "statement",
       "sha256": "fd7c90be5c609b3bc36eceaa62bef74ebf4f5db0bb314677b2842356978a4f21",
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md",
       "role": "integration",
       "sha256": "e600e6b7bfc13d53af49311d657a7ff9b590871229dd6a638cb510fd21025581",
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/POSITIVE-GROUND-UNCERTAINTY-REVIEW.md",
       "role": "review",
       "sha256": "8fcd734ba575c7ee0e570a0c0315a23ae2d0f07d3bf291077fd99f992624ad72",
       "declarations": []

@@ -1,6 +1,6 @@
 # The native port within the conditional continuation laws
 
-6 October 2026 (UTC). AI-assisted Lean development at [Ren's request](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-market-names-and-continuation.md). It closes interface 1 of the [dependency map](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-ENTRY-DEPENDENCY-MAP.md#4-dependencies-that-remain-ranked-by-what-would-remove-them). Before this module, the [native packet port](../../inquiry-root/sufficiency/NativePacketProcess.lean) and the [conditional universal laws](../README.md) were verified separately, and no theorem connected them.
+6 October 2026 (UTC). AI-assisted Lean development at [Ren's request](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-market-names-and-continuation.md). It closes interface 1 of the [dependency map](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PROCESS-LAW-ENTRY-DEPENDENCY-MAP.md#4-dependencies-that-remain-ranked-by-what-would-remove-them). Before this module, the [native packet port](../../inquiry-root/sufficiency/NativePacketProcess.lean) and the [conditional universal laws](../README.md) were verified separately, and no theorem connected them.
 
 ## Reading the coordinates without the exchange picture
 

@@ -1,6 +1,6 @@
 # Direct comparison of the current evolutionary mechanism
 
-8 October 2026. AI-authored protocol, written before the new comparison results. Ren asked “try to finish this” after the discussion of what the theory adds to evolutionary connectionism. The governing comparison is the existing [comparative direction](EVOLUTION-COMPARATIVE-DIRECTION.md); its empirical and full-theory requirements are not reduced here.
+8 October 2026. AI-authored protocol, written before the new comparison results. Ren asked “try to finish this” after the discussion of what the theory adds to evolutionary connectionism. The governing comparison is the existing [comparative direction](../history/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md); its empirical and full-theory requirements are not reduced here.
 
 ## Question and possible outcomes
 

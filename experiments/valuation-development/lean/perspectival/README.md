@@ -1,6 +1,6 @@
 # Present and future fidelity of a perspectival field
 
-7 October 2026. AI-authored supporting study for [Ren's direction](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-GOOD-AND-TRAJECTORIES.md). **Status: 25 Lean-checked conditional mathematical theorems, including action-word alternatives and a concrete shared-law witness. This supplies a recognition-correspondence test; it supplies no ethical warrant.**
+7 October 2026. AI-authored supporting study for [Ren's direction](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PERSPECTIVAL-GOOD-AND-TRAJECTORIES.md). **Status: 25 Lean-checked conditional mathematical theorems, including action-word alternatives and a concrete shared-law witness. This supplies a recognition-correspondence test; it supplies no ethical warrant.**
 
 The universal inference supported is **whole continuation → justified ethical comparison → recognition by a formed perspective → practical response**. This study examines only the third connection's representational condition: which differences must a perspective preserve if it claims to recognize a specified comparison of continuing consequences? It neither fixes the ethical comparison nor establishes motivation or compliance.
 

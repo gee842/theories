@@ -25,7 +25,7 @@
 | 退化 | 哪些具体能力或条件减弱，即使其他部分同时增长；须保留可行替代。 |
 | 消解与结束 | 什么关系不再成立，哪些后果仍在，其他活动还能怎样继续。 |
 
-这些问题可以同时适用于一次发生，不是五个必经阶段。对仍需使用的某项条件，[已有一般证明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md)说明：实际用量超过原有支持时，继续发生需要补充或改变支承路径；原路径不能补充时，需要改变它。其局部支持规律明示。改变有必要，不等于改变后的路径已经充分；无法继续也是必须解释的结果。
+这些问题可以同时适用于一次发生，不是五个必经阶段。对仍需使用的某项条件，[已有一般证明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SITUATED-RENEWAL-PROOF.md)说明：实际用量超过原有支持时，继续发生需要补充或改变支承路径；原路径不能补充时，需要改变它。其局部支持规律明示。改变有必要，不等于改变后的路径已经充分；无法继续也是必须解释的结果。
 
 因此，维持某种活动可以要求改变其支承关系。恢复一种材料条件也可能伴随另一种条件耗竭。这里的“退化”先针对明确的作用能力；它不自动等于整个变化在伦理上更坏。
 
@@ -49,7 +49,7 @@
 <a id="effective-capacity-and-eventual-reachability"></a>
 ## 第一项接通：当前可实现与最终可达 / Effective capacity and eventual reachability
 
-[已查的有界细化](../results/records/effective-capacity-and-eventual-reachability.md)区分两种问题：某种共同实现还需多少实际准备，以及它是否沿某条任意有限路径最终可达。[此前的可能性接口](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md)已经证明最终可达的向前追溯，并给出有实际资源代价的接触形成例子。本轮新增的是准备步骤界与共同激活应用，不重复认领原有区分。
+[已查的有界细化](../results/records/effective-capacity-and-eventual-reachability.md)区分两种问题：某种共同实现还需多少实际准备，以及它是否沿某条任意有限路径最终可达。[此前的可能性接口](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md)已经证明最终可达的向前追溯，并给出有实际资源代价的接触形成例子。本轮新增的是准备步骤界与共同激活应用，不重复认领原有区分。
 
 在固定规律、固定实现含义下，一段实际历史从s走到t。若从t再走至多n步能共同实现某项内容，那么从s经过这段历史再继续也能实现它，但必须计入准备所用步骤。由此，不能用“此前沿任何有限路径都不可能、后来突然可能”作为该表示下所有生成的定义。这个结果不否定生成，也不说未来已经发生。
 
@@ -61,7 +61,7 @@
 
 一个有内容的变化解释应说明：哪些关系实际形成；它们让哪些活动能够共同发生；还需要哪些准备和支持；使用怎样维持、转化或消耗这些关系；丧失后是否有实际恢复路径。对应的尺度、时间和实现含义须明示，不能把新增知识冒充新增关系。
 
-已有的[实际形成与材料再形成机制](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md)已经接通：活动付出支持并形成接触关系；生产通过这个已达到的关系发生；实际回收恢复被形成过程消耗的一项材料条件。源头供给同时减少，所以恢复某个条件不等于整个过程无损，也不等于无限维持。有限重复的支持与失效边界已有证明，本轮直接复用，不再把它们列作尚缺。
+已有的[实际形成与材料再形成机制](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DIRECT-PORT-RENEWAL.md)已经接通：活动付出支持并形成接触关系；生产通过这个已达到的关系发生；实际回收恢复被形成过程消耗的一项材料条件。源头供给同时减少，所以恢复某个条件不等于整个过程无损，也不等于无限维持。有限重复的支持与失效边界已有证明，本轮直接复用，不再把它们列作尚缺。
 
 This credits an existing composed causal mechanism, not a new formal adapter to the different joint-activation law. Becoming here includes a relation forming, being used, and changing the conditions for subsequent formation. The universal necessity of that constitution remains to be argued from these actual relationships, with their real losses retained.
 
@@ -75,7 +75,7 @@ This credits an existing composed causal mechanism, not a new formal adapter to 
 
 在同一固定关系规律下，恢复路径若存在，它原本就属于最终可达范围；暂时缺少能力与任何有限接续都不可达须区别。返回某一配置也不抹去真实历史、损失或承担。需要恢复的是具体形成的关系、功能还是完整配置，必须说明；不能用读数相同代替实际恢复。不可逆不自动意味着坏，可逆也不自动意味着无损。
 
-The [argument, proof correspondence and author counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md) retain the fixed-law, identity and endpoint-test assumptions. **10 new Lean theorems / 14 declaration audits pass**, all with empty named-axiom dependencies; 23 inherited theorems / 28 audits are separately credited. This advances the structure of the explanation, not the origin of the law or the stronger zero-substantive-axiom hypothesis. The next formation/reconstruction connection must preserve the actual target of recovery and the history that cannot be erased.
+The [argument, proof correspondence and author counterreview](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md) retain the fixed-law, identity and endpoint-test assumptions. **10 new Lean theorems / 14 declaration audits pass**, all with empty named-axiom dependencies; 23 inherited theorems / 28 audits are separately credited. This advances the structure of the explanation, not the origin of the law or the stronger zero-substantive-axiom hypothesis. The next formation/reconstruction connection must preserve the actual target of recovery and the history that cannot be erased.
 
 <a id="renewing-and-consuming-formation"></a>
 ## 更新与消耗：形成与它所参与关系的条件 / Renewing and consuming formation
@@ -90,7 +90,7 @@ The [argument, proof correspondence and author counterreview](../../../_process/
 
 [Ren 追问](../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up)后，此处原先的“限定”说法已修正。G0 的对象本来就是生生，即“整体中的生及其继续生成”；把它读成“任何已实现的新组织”，是形式化的误读，不是 G0 的内容。所以本分类不是对 G0 的限定，而是给 G0 已有的对象一个可检查的关系内容；说生成一侧有正面意义，就是 G0 本身，G0 作为公开前提的地位不变。“消耗更坏”是比较，由公开的比较原则 C 承担。[已查的比较](../results/records/relational-reading-comparison.md)表明：在关系读法下，规律族中每一种超出更新的取用，都被 C 严格排在同一展开中它不发生的接续之下；逐事件的广义读法做不到这一点，它甚至容许一个满足 C 的严格比较偏好恶性增长。各接续互有对方缺少的生成时，即混合情形，C 不裁决。
 
-**English scope.** A formation is renewing when every condition it depends on or draws on keeps supporting each formation that depends on it, and consuming when it draws on a condition some dependent formation permanently loses. When the renewer depends on what it renews, falling below its support is irreversible within the law if subsequent focal contribution never exceeds drawing; the overdraw theorem meets this premise. A dependent consumer ends itself with bounded formation. An independent one can persist and form without bound while ending the dependent relation, with an own trajectory identical to a sustainable formation's. Joint and escalating drawing can consume. 35 Lean theorems / 60 declaration audits pass with empty axiom sets. Corrected after Ren's follow-up: G0's object was always 生生, so this supplies the relational content of what G0 affirms rather than restricting G0. With the comparison principle C and the relational reading, every overdraw in the law family is ranked strictly below the same unfolding without it; the broad event reading leaves them incomparable (15 further theorems, empty axiom sets). Mixed cases are not decided by C. [Definitions, theorems, relation to the narrower wear-law result, counterreview and boundaries](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md): one shared condition in the law family, no substitution, strict per-step renewal, and no real-world correspondence or ethical ranking established.
+**English scope.** A formation is renewing when every condition it depends on or draws on keeps supporting each formation that depends on it, and consuming when it draws on a condition some dependent formation permanently loses. When the renewer depends on what it renews, falling below its support is irreversible within the law if subsequent focal contribution never exceeds drawing; the overdraw theorem meets this premise. A dependent consumer ends itself with bounded formation. An independent one can persist and form without bound while ending the dependent relation, with an own trajectory identical to a sustainable formation's. Joint and escalating drawing can consume. 35 Lean theorems / 60 declaration audits pass with empty axiom sets. Corrected after Ren's follow-up: G0's object was always 生生, so this supplies the relational content of what G0 affirms rather than restricting G0. With the comparison principle C and the relational reading, every overdraw in the law family is ranked strictly below the same unfolding without it; the broad event reading leaves them incomparable (15 further theorems, empty axiom sets). Mixed cases are not decided by C. [Definitions, theorems, relation to the narrower wear-law result, counterreview and boundaries](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md): one shared condition in the law family, no substitution, strict per-step renewal, and no real-world correspondence or ethical ranking established.
 
 
 <a id="supported-repair-and-reformation"></a>

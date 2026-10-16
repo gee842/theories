@@ -8,7 +8,7 @@
 
 **后续已完成的连接 / Completed follow-on connection，2026-10-08。** [交叉请求与新共同机会](BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities)复用本章6项／15项情境结果，另提出 LR 局部稳定候选，并增加8项／23项机会接续与未满足最强要求的具体控制。/ The follow-on study adds an independently reviewed candidate and checked construction; this chapter’s earlier findings keep their own scope and are not recounted.
 
-2026-10-08。AI 撰写，接续 Ren 要求以理论为重心的持续研究。[基本冲突](BASIC-CONFLICT-JUDGMENT.md)已经说明 BC1 与 BC2，[联合损失研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md)进一步完成 LC 的减损理由与数学诊断。本章研究这些理由怎样进入共同选择，沿[非二元方法](NONDUAL-METHOD.md)和公开的 G0/J 路线，不重开已完成的分类、责任与程序。
+2026-10-08。AI 撰写，接续 Ren 要求以理论为重心的持续研究。[基本冲突](BASIC-CONFLICT-JUDGMENT.md)已经说明 BC1 与 BC2，[联合损失研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md)进一步完成 LC 的减损理由与数学诊断。本章研究这些理由怎样进入共同选择，沿[非二元方法](NONDUAL-METHOD.md)和公开的 G0/J 路线，不重开已完成的分类、责任与程序。
 
 **推进：限制较轻损失怎样抵偿较重损失，与把较轻损失从判断中删除，是两件事。一个可行方案新增了可靠的基本保护，不能仅因算法的过滤门槛随之变化，就宣称其原有保护失去全部比较分量。** 若共同选择因情境变化而改变，须指出改变了什么实际关系或规范根据。
 
@@ -77,7 +77,7 @@ Generative alignment should retain still-warranted living grounds and identify w
 
 ## 6. 完成与下一连接 / Completion and the next connection
 
-本轮完成了一个候选规则的实质反例、两个条件一致性检验，以及“限制抵偿不等于删除根据”的理论修正。[研究整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)保留肯定论证、最强反审与原典范围；[Lean 源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AggregationContext.lean)及[实际回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/aggregation-context-verification.json)给出 6 项新定理、15 项声明空依赖审计。无新经验测量或独立验收。
+本轮完成了一个候选规则的实质反例、两个条件一致性检验，以及“限制抵偿不等于删除根据”的理论修正。[研究整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)保留肯定论证、最强反审与原典范围；[Lean 源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AggregationContext.lean)及[实际回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/aggregation-context-verification.json)给出 6 项新定理、15 项声明空依赖审计。无新经验测量或独立验收。
 
 下一中心连接是：**在保留这些理由后，机会与不同程度的损失怎样共同约束一个交叉情形的选择；应放弃哪项未经辩护的拼接要求，或补足哪项实质比较。** 重点在规范根据与可共同实现的关系，而不是寻找一个能让所有案例自动出数的门槛。完整统一基础、实际动机形成与跨范围对应仍保留各自未完成部分。
 
@@ -86,7 +86,7 @@ Completed: a concrete failure of a candidate filter, conditional consistency dia
 <a id="chance-revision"></a>
 ## 7. 概率相同仍可能改变什么 / What equal probabilities can still change
 
-机会问题首先要分清：安排形成前应怎样分配机会，和安排已经正当确定后应怎样接续。仓库已有[公平分配后的生活根据](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md)，明确区分不当重抽与新增独立救助；已有[共同约定研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-CORRESPONDENCE.md)，说明正当安顿、履行、解除与纠正。以下复用这些成果，研究它们对**选择规则自身的修订**增加什么要求。
+机会问题首先要分清：安排形成前应怎样分配机会，和安排已经正当确定后应怎样接续。仓库已有[公平分配后的生活根据](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md)，明确区分不当重抽与新增独立救助；已有[共同约定研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-CORRESPONDENCE.md)，说明正当安顿、履行、解除与纠正。以下复用这些成果，研究它们对**选择规则自身的修订**增加什么要求。
 
 考虑同一供给过程中的甲、乙两处严重需要，只能及时保护其中一处。本例明示给定：最初各半的机会及首轮有效结果的确定性已有根据，程序已正确完成，没有新错误、解除、紧急冲突或额外支持。双方未满足的需要仍在。没有从“需求相同”或随机性独自推导这项程序的公平。
 
@@ -98,7 +98,7 @@ Completed: a concrete failure of a candidate filter, conditional consistency dia
 | 一律重新抽签 / Fresh redraw | 甲乙各半 / Half each | 两轮不同时撤销首轮 / Replaced when the draws differ |
 | 乙中签就结束，甲中签则重抽 / Redraw only after A wins | 甲四分之一，乙四分之三 / A one quarter, B three quarters | 连原定机会也改变 / Original chances also changed |
 
-这些数字已实际 Lean 核验，采用两次公平独立抽签的四条等可能历史；数学没有认证现实设备、机会根据或救助效力。已有[联合风险研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md)说明边际相同仍可能有不同共同风险；本轮补足另一个区别：**连完整的最终联合分布都相同，仍未说明全部规范关系。** 包含实际历史的完整理论不受这个局部表示反例反驳。
+这些数字已实际 Lean 核验，采用两次公平独立抽签的四条等可能历史；数学没有认证现实设备、机会根据或救助效力。已有[联合风险研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md)说明边际相同仍可能有不同共同风险；本轮补足另一个区别：**连完整的最终联合分布都相同，仍未说明全部规范关系。** 包含实际历史的完整理论不受这个局部表示反例反驳。
 
 这里的分布相同是**从程序开始前看**。首轮结果已知后，正确的条件概率已经能够显示实行与重抽的差别；本例不是概率理论的失败。它排除的是以初始总体机会不变，直接认证后续修订。至于已观察结果为何应当履行，仍须回到实际程序及其根据，不能由条件概率独自回答。
 
@@ -110,7 +110,7 @@ Before a draw, a justified allocation may assign equal chances. After its valid 
 
 这里保留一个公开的实质承诺：有根据的安顿能够形成有界的履行理由。它接续 J3/J4 及既有约定论证，不是 G0 单独推出的唯一程序规则，也不是用定义藏入的义务。实际投入与依赖可以加强该理由，但它不只等于新产生的物质损失：正当共同确定的事项在尚未追加准备成本时，也可能已经具有履行根据。对此若持异议，应检验该规范承诺，而不能以概率相同替代争论。
 
-甲中签之后，实行结果让甲在这项分配上得到确定保护；这不违反原先各半的机会，因为原先承诺的范围是抽签前的分配。把“公平”改写成每得到一条信息都重新各半，会与这项有效安顿冲突。未获选者的生活理由仍然成立，却不因此自动获得对同一资源的再次抽签要求。新支持若可共同实现，应复用已有[同一签票上的共同保护构造](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md)，而非把本例的二选一永远化。
+甲中签之后，实行结果让甲在这项分配上得到确定保护；这不违反原先各半的机会，因为原先承诺的范围是抽签前的分配。把“公平”改写成每得到一条信息都重新各半，会与这项有效安顿冲突。未获选者的生活理由仍然成立，却不因此自动获得对同一资源的再次抽签要求。新支持若可共同实现，应复用已有[同一签票上的共同保护构造](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CROSSED-CLAIMS-PROOF.md)，而非把本例的二选一永远化。
 
 由此得到的新增要求是：**选择规则的学习和修订必须保留仍有效的历史关系，或保留足以表达其实际要求的摘要。** 仅保存当前需求和最终概率，即便包括全部最终相关性，仍可能不足。此处不要求保存过去的全部细节；要求辨明哪些形成的承担尚未履行、哪些机会已兑现、哪些根据已经被解除或改变。
 
@@ -122,7 +122,7 @@ A warranted settlement can create a bounded implementation reason; this substant
 
 特别要保留两项区别。第一，随结果而发现的真实失效可能要求纠正，因此不能笼统禁止“依结果修订”。第二，事先明定且有根据的两阶段安排，可以让第一轮只作演练、第二轮才确定分配；相同的两次物理抽签，在这种历史里并没有撤销首轮正式结果。事先披露仍不独自证明条款公平，事后单方面改称“刚才不算”也不能冒充原安排。
 
-同期已完成的[同等基本风险分担 RS](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing)也须直接复用：有根据的新认识可以使原随机选择改为避免双方损失的知情选择。保留已经有效确定的保护，与永远冻结此前的风险算法，不是一项要求。要接续的是仍成立的根据；当实际支持或认识改变了它的适用条件时，旧算法也应重新评价。
+同期已完成的[同等基本风险分担 RS](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing)也须直接复用：有根据的新认识可以使原随机选择改为避免双方损失的知情选择。保留已经有效确定的保护，与永远冻结此前的风险算法，不是一项要求。要接续的是仍成立的根据；当实际支持或认识改变了它的适用条件时，旧算法也应重新评价。
 
 所以，有根据的修订要说明：哪项根据改变，哪项要求仍然有效，拟议改变为什么能回应前者并交代后者。只要原目标及其根据仍成立，替换实现代码、接手者或计算过程可以保留逐次结果；两次这样的保留修订仍能接续原结果，已有新 Lean 证明。真正改变履行要求的修订则需要实质说明，不能由这条实现定理代办。
 
@@ -130,9 +130,9 @@ Defects, warranted releases and changed basic circumstances remain possible grou
 
 ## 10. 新结果的范围与未解连接 / Scope and remaining connection
 
-[研究整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-REVISION-INTEGRATION.md)保留肯定论证、六项实质反审、Broome 的机会与实际满足区分，以及 Kolodny／Wallace 对保证根据的循环性批评。本文并未从预期服从推出承诺有效，也未宣称解决承诺理论之争。[源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceRevision.lean)与[实际回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-revision-verification.json)给出7项新定理／15项声明空依赖审计，涵盖最终分布、分支条件、表示不足与保持修订的组合；独立验收及经验对应未声称完成。
+[研究整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-REVISION-INTEGRATION.md)保留肯定论证、六项实质反审、Broome 的机会与实际满足区分，以及 Kolodny／Wallace 对保证根据的循环性批评。本文并未从预期服从推出承诺有效，也未宣称解决承诺理论之争。[源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceRevision.lean)与[实际回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-revision-verification.json)给出7项新定理／15项声明空依赖审计，涵盖最终分布、分支条件、表示不足与保持修订的组合；独立验收及经验对应未声称完成。
 
-本轮推进了第6节所列机会连接的**历史接续部分**，没有完成初始分配的全部根据。已有 LR 的局部不等损失比较和 RS 的对称分担都保留为成果。超出这些范围，下一实质问题是：不等要求，或以增加基本受损机会换取较公平暴露，怎样支持初始机会分配；真正变化的基本冲突何时足以改变有效安顿。[RS 第14节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#14-push-beyond-symmetry-fairer-exposure-can-add-basic-harm)已给出同等严重性下（10%、40%）与（31%、31%）的具体未决比较，计算已完成，缺的是比较根据。再增加一个概率计算、固定任意权重或重复已经完成的承诺区分，都不能替代它。
+本轮推进了第6节所列机会连接的**历史接续部分**，没有完成初始分配的全部根据。已有 LR 的局部不等损失比较和 RS 的对称分担都保留为成果。超出这些范围，下一实质问题是：不等要求，或以增加基本受损机会换取较公平暴露，怎样支持初始机会分配；真正变化的基本冲突何时足以改变有效安顿。[RS 第14节](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#14-push-beyond-symmetry-fairer-exposure-can-add-basic-harm)已给出同等严重性下（10%、40%）与（31%、31%）的具体未决比较，计算已完成，缺的是比较根据。再增加一个概率计算、固定任意权重或重复已经完成的承诺区分，都不能替代它。
 
 Completed: a concrete history-sensitive requirement on revising selectors, supported by seven new checked mathematical diagnostics and an explicit inherited normative premise. Beyond completed LR and symmetric RS, initial chance allocation, fairer exposure with added basic harm, and changed conflicts with valid settlements remain unresolved. Existing allocation, agreement, coupling and joint-risk studies retain their own contributions and are not reopened.
 
@@ -173,7 +173,7 @@ NP is an additional commitment about relative priority near parity, not a conseq
 
 若实际历史存在不平等权力、先前损害、共同支持崩塌的门槛，或已经成立的机会要求，不能先删去它们，再凭相近百分数套用 NP。没有细分可行方案的菜单也不满足本轮条件。非二元的整体比较要求保留这些实际关系，而非把两项风险当作整个生活。
 
-[研究整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-PRIORITY-INTEGRATION.md)保存肯定论证、六项实质反审及 Atkinson、Rowe／Voorhoeve 的原典范围。[源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RiskPriority.lean)与[实际回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-verification.json)给出13项新定理／21项声明审计：9项依赖为空，其余只涉及 Lean 标准依赖。数学验证覆盖调整、代价、两个诊断及条件接口；**没有把 NP 的规范根据、实数分析或实际校准写成已经证明。** 无独立验收或新经验结果。
+[研究整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RISK-PRIORITY-INTEGRATION.md)保存肯定论证、六项实质反审及 Atkinson、Rowe／Voorhoeve 的原典范围。[源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RiskPriority.lean)与[实际回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-verification.json)给出13项新定理／21项声明审计：9项依赖为空，其余只涉及 Lean 标准依赖。数学验证覆盖调整、代价、两个诊断及条件接口；**没有把 NP 的规范根据、实数分析或实际校准写成已经证明。** 无独立验收或新经验结果。
 
 本轮将开放问题推进为一个明确候选：在相应范围内，有理由让优先力度随暴露差距缩小，而非机械地一直均衡到底。下一连接是沿剩余的不等风险区间，以实际生活后果和独立比较案例辩护优先力度及其适用范围。具体最优混合、可为公平增加多少基本受损机会，仍需继续论证；本轮的强对手和未定范围须一起保留。
 
@@ -201,7 +201,7 @@ One finite provision history yields opposite strict quadratic rankings before an
 
 在尚未作出分配的版本里，事前的两个方案只是研究提案，尚未据此授予机会或建立承担。实际进入第三分支后，仍把30%／45%当成 P 的当前未来风险，就误述了已经形成的支持条件。正确对应是10%／40%。这项纠正无需新增伦理权重，也不直接决定 P、M 的伦理排序。
 
-如果事前确已组织机会、形成正当承担、产生信赖或其他持续后果，就必须一并保留。旧概率不是永久义务的来源，概率已经更新也不是取消历史根据的理由。[有效承担与机会充分性](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md)和前面的机会修订成果直接适用。仅仅计算过一个分数，与实际组织了何种共同未来不同；历史的意义也不限于明文承诺。
+如果事前确已组织机会、形成正当承担、产生信赖或其他持续后果，就必须一并保留。旧概率不是永久义务的来源，概率已经更新也不是取消历史根据的理由。[有效承担与机会充分性](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md)和前面的机会修订成果直接适用。仅仅计算过一个分数，与实际组织了何种共同未来不同；历史的意义也不限于明文承诺。
 
 因此，**当前可保护的生活支持继续回应，仍有效的历史关系约束回应怎样进行。** 对人、机构或 AI 的选择规则，这要求同时交代当前风险与实际支持的对应，以及先前理由在新阶段的效力。保留一个不变分数不能替代这两项交代；每次重新算分也不自动完成它们。这些是同一历史中的解释与规范关系，不是两个独立领域。
 
@@ -239,7 +239,7 @@ The completed positive-ground result allows the form of future generation to rem
 
 一条已经实查的充分途径是：**新路线接过当前实际阶段的剩余实现要求，而不是重新取得一份完整期限。** 具体地，为所声称的有限实现界限提供一个自然数证书。只要尚未完成，当前路线的实际步骤须使证书下降；换用下一条路线时，对已经到达的同一阶段，新证书不得高于旧路线此时的证书。这个数是剩余步数的证明工具，不是善、复杂性、风险或人的分数。
 
-这个接口直接接入已完成的[有限更新证明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md)。初值不超过 B 时，在编号0至 B的某个事件上完成；若每个编号代表一次实际转变，就是至多 B+1次转变，不是未经对应的钟表期限。再明确完成事件实际形成新的生成内容，这个输出便满足既有正面根据定理的输入，依 G0取得某项正面根据。活动确实发生、支持足够、所见范围覆盖实际情形，以及完成与生的对应仍须成立。
+这个接口直接接入已完成的[有限更新证明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-RENEWAL-MATH.md)。初值不超过 B 时，在编号0至 B的某个事件上完成；若每个编号代表一次实际转变，就是至多 B+1次转变，不是未经对应的钟表期限。再明确完成事件实际形成新的生成内容，这个输出便满足既有正面根据定理的输入，依 G0取得某项正面根据。活动确实发生、支持足够、所见范围覆盖实际情形，以及完成与生的对应仍须成立。
 
 新构造也检查了真正改变成果的修订：走过甲路线的第一步后，改走一条当前一步即可形成乙成果的路线。剩余证书仍为1，形成内容却由甲变为乙。因此，保留实现根据不要求冻结最初方案或唯一未来。若先前正当承担的恰恰是甲成果，乙成果是否能够接替，仍由实际承担内容决定；“都属于生成”不足以取消其差别。
 

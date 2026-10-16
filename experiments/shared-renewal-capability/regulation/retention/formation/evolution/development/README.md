@@ -1,6 +1,6 @@
 # Developmental reconstruction of an operating response
 
-7 October 2026, Asia/Bangkok. AI-authored supporting construction for the [authorized Liangzhi evolution direction](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md). [Exact hypotheses, correspondence and proof scope](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-MATH.md).
+7 October 2026, Asia/Bangkok. AI-authored supporting construction for the [authorized Liangzhi evolution direction](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md). [Exact hypotheses, correspondence and proof scope](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-DEVELOPMENT-MATH.md).
 
 This round connects a copied carrier to **actual reconstruction of an operating response**, then follows the response's effect through support capture, another carrier, another assembled relation, and that next descendant's own fresh test. It extends the unchanged `FormedSelection` reactions with held scaffold and rig parts, actual-condition readings and a supplied cue-binding rule. The whole finite history is a `Generative.Trace` of the declared extended process. It is not a claim that innate moral understanding has already been modeled.
 

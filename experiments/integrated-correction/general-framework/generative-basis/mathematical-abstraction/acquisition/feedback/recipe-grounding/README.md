@@ -11,7 +11,7 @@ continued retention.
 - [Native implementation](model.py) and [first 33-case results](results.json)
 - [Independent reconstruction](check_independent.py) and [passing receipt](independent-check.json)
 - [Mechanism, exact outcomes and limits](MECHANISM.md)
-- [Theory integration](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPE-GROUNDING-INTEGRATION.md)
+- [Theory integration](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECIPE-GROUNDING-INTEGRATION.md)
 
 The native first-run assertions and independent reconstruction pass: 33 cases,
 648 states, 586 charged events, 28 denials, and 11 rejected mutations. The

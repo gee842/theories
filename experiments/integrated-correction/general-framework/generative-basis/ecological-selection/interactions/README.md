@@ -10,4 +10,4 @@ Outputs: [source-row reading](video-means.csv), [results](interaction-results.js
 
 The stronger density response in K. lactis and the galactose/dextrose contrast survive removal of technical replicates. The S. cerevisiae density contrast is much less stable. Deletion ranges are descriptive sensitivity checks, not confidence intervals, randomization tests or estimates of independent evolutionary replication. Replicate number is not assumed to pair different treatments.
 
-[Theory integration and counterreview](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md) gives the implications and limits. This evidence does not choose between the earlier density/drag approximations applied to a different geometry dataset.
+[Theory integration and counterreview](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md) gives the implications and limits. This evidence does not choose between the earlier density/drag approximations applied to a different geometry dataset.

@@ -91,12 +91,12 @@
     {
       "zh": "公开推理链：生生的正面意义（G0）→ 有根据的比较（J1–J4）→ 实践要求 → AI 对齐方向及其修订条件；实际对应 E 含证据充分性与规范根据。",
       "en": "Disclosed chain: positive significance of living and further generation (G0) → warranted comparison (J1–J4) → practical requirements → AI direction and revision conditions; E covers evidential adequacy and normative warrant.",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md#1-result-and-inference-advanced"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md#1-result-and-inference-advanced"
     },
     {
       "zh": "构造的贯通 AI 案例：交接优于扩张与保留，扩张的真实增益保留；只有承诺而无交付的接替不覆盖需要；交叉基本损失不排序。",
       "en": "Constructed AI case: transfer outranks expansion and preservation while expansion's real gain is kept; a promised successor without delivery fails coverage; crossed basic losses stay unranked.",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md#3-exact-mathematical-scope"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md#3-exact-mathematical-scope"
     }
   ],
   "validation_scope": {
@@ -126,13 +126,13 @@
       ]
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
       "role": "review",
       "sha256": "28e83847f9e43772c36334020b82770a6532d26fd50355395ff99328de05c911",
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
       "role": "integration",
       "sha256": "ecb2aa0a712f48440226bb3da101f4f48e7e94828d0aa06812b122e65de96d83",
       "declarations": []

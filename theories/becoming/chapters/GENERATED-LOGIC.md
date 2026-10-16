@@ -91,7 +91,7 @@ Two checked controls separate arbitrary finite serial reuse from overlapping acq
 
 ## 5. 第一轮前沿评估与后续目标 / First-round frontier assessment and subsequent target
 
-本轮完成了过程根基到一个资源规则的具体对应。**不声称新数学或新的逻辑基础。** 收缩与复制、Petri 网与线性逻辑、带数量的使用约束都有深厚先例；动态分享和撤回也已有研究。仅增加“生成”命名或动态标签不足以推进前沿。完整[来源、反审与依赖表](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md)说明相邻工作。
+本轮完成了过程根基到一个资源规则的具体对应。**不声称新数学或新的逻辑基础。** 收缩与复制、Petri 网与线性逻辑、带数量的使用约束都有深厚先例；动态分享和撤回也已有研究。仅增加“生成”命名或动态标签不足以推进前沿。完整[来源、反审与依赖表](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATED-LOGIC-INTEGRATION.md)说明相邻工作。
 
 This pilot is an explicit, checked reconstruction inside our existing process account. It is not a claim of novel mathematics. Dynamic sharing and loss of permissions already have substantial logical treatments, in addition to linear, graded and Petri-net approaches.
 
@@ -165,7 +165,7 @@ The general proof transports the same event word and hence the same length. It r
 
 ## 10. 本轮完成范围、先例与剩余问题 / Completion, precedent and remaining questions
 
-本轮完成上一轮提出的**固定共享上下文判据—实际形成与释放—有限步就绪—有范围摘要**连接。Iris 已有资源相容与保持上下文的更新，Leaf 已有临时分享及收回；这些不是本理论首次提出。本轮将相关问题接到我们的原生历史模型并实查，仍属整合与应用结果，未建立对已有逻辑的表达力优势或数学新颖性。[原典比较及作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md)区分它们的形式目标。
+本轮完成上一轮提出的**固定共享上下文判据—实际形成与释放—有限步就绪—有范围摘要**连接。Iris 已有资源相容与保持上下文的更新，Leaf 已有临时分享及收回；这些不是本理论首次提出。本轮将相关问题接到我们的原生历史模型并实查，仍属整合与应用结果，未建立对已有逻辑的表达力优势或数学新颖性。[原典比较及作者反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md)区分它们的形式目标。
 
 The frozen-context/readiness/abstraction interface is complete at the declared scope. Iris and Leaf already address compatibility, framing and changing sharing arrangements. This study provides a checked integration with our existing history model; it does not establish an expressive advantage or a new logical foundation. The proposed next comparison concerned changing support during interleaved activity. Section 11 credits the repository's already completed interleaving study and isolates a further access-reconfiguration target; the generic dynamic-support task is not reopened.
 
@@ -175,7 +175,7 @@ Run [check_contextual_logic.py](../../../experiments/integrated-correction/gener
 
 ## 11. 接入关系改变时，旧摘要为何需要修订 / Why changing access can require a revised summary
 
-首先信用既有[变化中的共同支持研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md)：形成、撤回、交错占用／释放、证书恢复和实际进度已有42项实查定理。本轮不重做这些结果，而检验**接入关系改变后，原先准确的表示还能否继续支持推理**。
+首先信用既有[变化中的共同支持研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md)：形成、撤回、交错占用／释放、证书恢复和实际进度已有42项实查定理。本轮不重做这些结果，而检验**接入关系改变后，原先准确的表示还能否继续支持推理**。
 
 The completed changing-support study already covers interleaved occupancy and readiness preservation. The new target is exact representation when the activity's access relation changes. We continue to describe one configuration: a current route and shared support occupancy. Neither is an independently constituted subject or environment.
 
@@ -205,7 +205,7 @@ The two states have the same old observation and every old-workload feasibility 
 
 An updater given only the old active-slot view and the destination cannot reconstruct every updated view. A current reading of the newly relevant slot supplies the missing bit; the checked `refreshed_view` identity is a correspondence, not a verified sensing or synchronization protocol. Retained history or other stored information also changes the premise of the impossibility result.
 
-本轮新增[24项定理](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReconfigurableSupportLogic.lean)，其中12项空命名公理报告、12项仅用 `propext` 和／或 `Quot.sound`；继承过程核心18项均为空，合计42项审计、30项为空。[冻结回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reconfigurable-logic-checks/20261008T105809.742208Z/receipt.json)保留实际 Lean 4.29.1 检查；[整合、来源和反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md)说明完成范围。
+本轮新增[24项定理](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReconfigurableSupportLogic.lean)，其中12项空命名公理报告、12项仅用 `propext` 和／或 `Quot.sound`；继承过程核心18项均为空，合计42项审计、30项为空。[冻结回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reconfigurable-logic-checks/20261008T105809.742208Z/receipt.json)保留实际 Lean 4.29.1 检查；[整合、来源和反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md)说明完成范围。
 
 **前沿结论：**得到了一条有范围的解释——未来可形成的接入关系，约束当前抽象允许遗忘什么。既有局部 rely-guarantee 逻辑已处理变化中的共享，抽象解释也已有完整性与修复理论。本结果仍是本仓库中的严谨整合，未证明超出这些工作的数学新颖性。本轮结束时提出的下一问题，是有成本、可能失准的信息取得怎样支持改接时的正确更新，并与现有方法比较；第12节已完成其中的有条件执行连接。此处的精确静态范围界限不再列为待证。
 
@@ -215,7 +215,7 @@ The derived bound is an integration result, not an established frontier advance.
 
 ## 12. 读得正确，何时能实际使用 / When a correct reading supports actual use
 
-本轮接续第11节，直接复用已有[交接与版本](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-HANDOFF-INTEGRATION.md)、[读取与保护区间](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md)及[付费证据](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md)研究。新问题是：取得的信息能否在同一原生占用过程里支持后续操作，并保留其取得代价。
+本轮接续第11节，直接复用已有[交接与版本](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-HANDOFF-INTEGRATION.md)、[读取与保护区间](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md)及[付费证据](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md)研究。新问题是：取得的信息能否在同一原生占用过程里支持后续操作，并保留其取得代价。
 
 The extension keeps the prior route and occupancy configuration, adding per-slot revisions, an optional reading record and an allocated budget. These are related coordinates of one process. A projection theorem specifies exactly which physical effects are retained when reading and rejection bookkeeping are omitted; their charges remain in the extended account.
 
@@ -245,7 +245,7 @@ Native `change take` remains possible under its own guard. Exhaustion of the all
 
 因此，**可靠使用、取得信息的成本与最终完成，是需要分别接通的条件**。本轮已经完成这项有条件的执行连接。进一步的现实应用须给出具体读取实现、全部写入维护及核对／使用原子性的证据；若目标包含最终完成，还须兑现干扰限制、保护或预算接续条件。再增加相似的小模型，不能代替这些对应证据。
 
-This completes the local acquisition-to-use bridge. It does not derive trustworthy sensing, universal progress or metalogic from no premises. Established optimistic validation already addresses validation/write intervals and retry limits; the [primary-source comparison and author counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SUPPORT-USE-INTEGRATION.md) records why no frontier novelty is claimed.
+This completes the local acquisition-to-use bridge. It does not derive trustworthy sensing, universal progress or metalogic from no premises. Established optimistic validation already addresses validation/write intervals and retry limits; the [primary-source comparison and author counterreview](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ACQUIRED-SUPPORT-USE-INTEGRATION.md) records why no frontier novelty is claimed.
 
 新增[记录与执行](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/AcquiredSupportUse.lean)15项定理、[干扰与代价见证](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/AcquiredSupportUseCases.lean)13项，共28项，其中8项空命名公理报告、20项仅标准 `propext` 和／或 `Quot.sound`，无经典选择。继承42项审计保持范围；四模块合计70项、38空。[实际 Lean 4.29.1 冻结回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/acquired-support-use-checks/20261008T112000.799032Z/receipt.json)保留源码及日志。空报告不取消显式过程规律、参数或元逻辑。
 
@@ -255,7 +255,7 @@ This completes the local acquisition-to-use bridge. It does not derive trustwort
 
 Ren 在[本次原话](../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md#presuppositionless-metalogic)中明确认为“从无前提导出元逻辑”可以做到，并要求继续。因此，前文“尚未导出元逻辑”只记录已有结果的范围，不设为不可能结论，也不以另一个局部执行模型替代当前目标。
 
-The earlier [inference and presentation investigation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) already permits direct presentation and reflective justification. Its eight-theorem ground interpretation is reused. The present target is the warrant of one inferential operation, not a repeated proof that a stipulated interpreter works or a claim that meaningful inquiry establishes every proposed law of the whole.
+The earlier [inference and presentation investigation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) already permits direct presentation and reflective justification. Its eight-theorem ground interpretation is reused. The present target is the warrant of one inferential operation, not a repeated proof that a stipulated interpreter works or a claim that meaningful inquiry establishes every proposed law of the whole.
 
 **第一个候选是同一规则 `P ⊢ P`。** 它没有无条件断言 P；也没有要求实际活动执行两次。候选操作是：把已经支承某判断的根据本身，直接承接为同一内容、同一要求下的根据。由实际呈现关系辨明内容、根据与判断的作用，而不先把它们设为互不相干的东西。
 
@@ -267,7 +267,7 @@ The candidate operation re-presents a supplied ground itself. A schematic hypoth
 
 形式审计把两种角色写成认可集合 I 与 O。同一值直接承接，对所有值成立的精确条件是 **I 包含于 O**；I 与 O 相同是充分条件。因此，候选同一规则说明同一要求下的根据承接，并未证明一切有意义的后承关系都必须反身。
 
-The mixed-standard comparison preserves the assessment value while changing what is required of it. It refutes the unrestricted claim about all consequence relations, not the same-standard candidate. Such distinctions already occur in established many-valued consequence research; the [primary-source assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md) credits that precedent.
+The mixed-standard comparison preserves the assessment value while changing what is required of it. It refutes the unrestricted claim about all consequence relations, not the same-standard candidate. Such distinctions already occur in established many-valued consequence research; the [primary-source assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md) credits that precedent.
 
 **同一规则也不独自给出推理接续。** 前一段结论达到的标准，须足以成为后一段的前提。实查的三状态例保留反身性，却在这个衔接处失败；另一定理明示使接续成立的条件。此处检验的是同一评估中的认可关系，不冒充完整对象逻辑的切割消去结果。
 
@@ -275,7 +275,7 @@ The mixed-standard comparison preserves the assessment value while changing what
 
 These controls separate exhibited retention, stronger entitlement, composition and unrestricted self-certification. None alone settles the entire foundation. The remaining central inference is whether content and ground recognition can manifest their own correspondence without an unexamined interpretive commitment, and how hypothetical application or substitution can be warranted in the same way. More repetitions of the retention lemma would not answer that question.
 
-本轮[11项 Lean 定理](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReflectiveIdentity.lean)均经实际 Lean 4.29.1 检查，命名公理报告全空，[冻结回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reflective-identity-checks/20261008T114343.985843Z/receipt.json)保留源码与日志。形式化仍使用 Lean 的类型、函数、等式与推理；空报告不是无前提奠基完成证书。[肯定论证、对手和作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md)共同记录这一步进展，保留完整目标。
+本轮[11项 Lean 定理](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReflectiveIdentity.lean)均经实际 Lean 4.29.1 检查，命名公理报告全空，[冻结回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reflective-identity-checks/20261008T114343.985843Z/receipt.json)保留源码与日志。形式化仍使用 Lean 的类型、函数、等式与推理；空报告不是无前提奠基完成证书。[肯定论证、对手和作者反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md)共同记录这一步进展，保留完整目标。
 
 
 <a id="recognitional-binding"></a>
@@ -302,7 +302,7 @@ The relation-preservation premise is derived for every term in this fragment. Th
 
 **中心反审。** `use` 的解释已经规定指回绑定位置；本轮没有声称从不含此规定的起点推导出它。形式结果说明给定关系如何约束所有这种项；哲学候选则尝试以实际展示的指回关系说明这个规定的根据。把每次指回都理解成先比较两个独立对象，并不是唯一解释；但仅将某个结构命名为“自明”也不足以完成论证。
 
-**状态与下一连接。** 新增7项 Lean 定理，连同14项继承声明共21项审计全空；标准逻辑关系方法已有先例，未宣称前沿新逻辑。局部传递及唯一性已完成。剩余中心是实际引入／使用如何充分展示其解释，以及由此怎样说明假设代入的内容与认可保持。[本轮论证、原典、反审与冻结回执](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)明确区分这一未完成奠基与已检查的数学后果。
+**状态与下一连接。** 新增7项 Lean 定理，连同14项继承声明共21项审计全空；标准逻辑关系方法已有先例，未宣称前沿新逻辑。局部传递及唯一性已完成。剩余中心是实际引入／使用如何充分展示其解释，以及由此怎样说明假设代入的内容与认可保持。[本轮论证、原典、反审与冻结回执](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)明确区分这一未完成奠基与已检查的数学后果。
 
 
 <a id="binding-preserving-substitution"></a>
@@ -328,7 +328,7 @@ The relation-preservation premise is derived for every term in this fragment. Th
 
 This joins producer output to the consumer's introduced position throughout the finite expression, including under binders. The existing application-after-abstraction equation only supplied an environment; this construction inserts open syntax and proves its evaluation law. The known substitution technique is credited. The exact criterion establishes denotational fidelity under the supplied language; it does not independently ground that language, identify every semantic content, preserve physical cost, or discharge the truth of its hypothetical assessment premise.
 
-**完成与未完成。** 9项新 Lean 定理通过；19项含继承审计中13项空、6项因函数外延性使用 `Quot.sound`，不报成零依赖。绑定与代入的形式连接已完成。当前基础问题更明确：实际展示的引入／使用何以充分说明它的指向角色，并能在相关变化中区分真正承接与偶然同值。后续不能仅以更多解释器定理替代这项根据论证，也不因论证使用逻辑就直接判它不可能。[同一研究中的论证、原典、反审与实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#binding-preserving-substitution)及[规范成果记录](../results/records/binding-preserving-substitution.json)保留其边界。
+**完成与未完成。** 9项新 Lean 定理通过；19项含继承审计中13项空、6项因函数外延性使用 `Quot.sound`，不报成零依赖。绑定与代入的形式连接已完成。当前基础问题更明确：实际展示的引入／使用何以充分说明它的指向角色，并能在相关变化中区分真正承接与偶然同值。后续不能仅以更多解释器定理替代这项根据论证，也不因论证使用逻辑就直接判它不可能。[同一研究中的论证、原典、反审与实查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#binding-preserving-substitution)及[规范成果记录](../results/records/binding-preserving-substitution.json)保留其边界。
 
 
 <a id="constitutive-binding-assessment"></a>
@@ -349,4 +349,4 @@ This joins producer output to the consumer's introduced position throughout the 
 
 The completed work is a scoped philosophical assessment, not a new mathematical theorem or a completed premise-free foundation. Institution of a reference differs from successful use and recognized warrant. The affirmative argument explains local retention without an extra endorsement premise on every step; target-preserving rivals restrict its reach. The own-resource audit names the unsupported promotion from that local achievement to full metatheoretical entitlement. No proof of global impossibility, imported universal ethical axiom, or requirement to solve all empirical knowledge is introduced.
 
-[完整论证、三条强路线的评估、原典与资源审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#constitutive-binding-assessment)与[规范评估记录](../results/records/constitutive-binding-assessment.json)保存这个结论。既有9项代入定理及其他历史证明未改变、未重编、未重复计为新成果。
+[完整论证、三条强路线的评估、原典与资源审计](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#constitutive-binding-assessment)与[规范评估记录](../results/records/constitutive-binding-assessment.json)保存这个结论。既有9项代入定理及其他历史证明未改变、未重编、未重复计为新成果。

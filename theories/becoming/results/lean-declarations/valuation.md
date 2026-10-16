@@ -99,7 +99,7 @@ Imports: `ClosedLoopValuation`
 <details>
 <summary>ClosedLoopValuation.lean — 25 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/ClosedLoopValuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/ClosedLoopValuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ClosedLoopValuation.lean`
 
@@ -177,7 +177,7 @@ Imports: `ExplorationCoverage`
 <details>
 <summary>ExplorationCoverage.lean — 20 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/ExplorationCoverage.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/ExplorationCoverage.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ExplorationCoverage.lean`
 
@@ -233,7 +233,7 @@ Imports: `LineageInProcess`
 <details>
 <summary>LineageInProcess.lean — 17 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/LineageInProcess.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/LineageInProcess.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/LineageInProcess.lean`
 
@@ -269,7 +269,7 @@ Imports: `ValuationBridges`, `ResourceContinuation`, `RenewalCharacterization`
 <details>
 <summary>OneProcess.lean — 13 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/OneProcess.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/OneProcess.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/OneProcess.lean`
 
@@ -318,7 +318,7 @@ Imports: `OneProcess`
 <details>
 <summary>ValuationBridges.lean — 62 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationBridges.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationBridges.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ValuationBridges.lean`
 
@@ -399,7 +399,7 @@ Imports: `ValuationCompletion`
 <details>
 <summary>ValuationCompletion.lean — 38 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationCompletion.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationCompletion.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ValuationCompletion.lean`
 
@@ -456,7 +456,7 @@ Imports: `ExplorationCoverage`
 <details>
 <summary>ValuationDevelopment.lean — 80 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationDevelopment.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationDevelopment.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ValuationDevelopment.lean`
 
@@ -555,7 +555,7 @@ Imports: `AxiomFree`
 <details>
 <summary>ValuationRenewal.lean — 15 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationRenewal.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
+[原源码 / Source](../../../../experiments/valuation-development/lean/ValuationRenewal.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VALUATION-DEVELOPMENT-ARGUMENT.md) · [包说明 / Package notes](../../../../experiments/valuation-development/README.md)
 
 `experiments/valuation-development/lean/ValuationRenewal.lean`
 

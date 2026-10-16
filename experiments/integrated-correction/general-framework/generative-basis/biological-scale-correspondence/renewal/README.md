@@ -1,6 +1,6 @@
 # Molecular memory, viable-count calibration and ecological return
 
-8 October 2026. Secondary empirical analyses supporting [the integration](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BIOLOGICAL-RENEWAL-INTEGRATION.md). Ren selected full experimental validation. These computations advance that target; no new wet-lab experiment or full-loop validation is claimed.
+8 October 2026. Secondary empirical analyses supporting [the integration](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BIOLOGICAL-RENEWAL-INTEGRATION.md). Ren selected full experimental validation. These computations advance that target; no new wet-lab experiment or full-loop validation is claimed.
 
 ## Reproduce
 
@@ -22,4 +22,4 @@ The colonization summaries retain all 3,594 archive rows across two runs, while 
 
 ![Separate empirical checks](renewal-results.png)
 
-The [owned-scope checker](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BIOLOGICAL-RENEWAL-CHECK.py) verifies source preservation, independently recomputes saved arithmetic, checks links and keeps the older Lean result separate. Its passing status concerns those checks; it does not mean every empirical hypothesis passed or the full biological account is certified.
+The [owned-scope checker](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BIOLOGICAL-RENEWAL-CHECK.py) verifies source preservation, independently recomputes saved arithmetic, checks links and keeps the older Lean result separate. Its passing status concerns those checks; it does not mean every empirical hypothesis passed or the full biological account is certified.

@@ -61,9 +61,9 @@ and rejected correspondence can also be retained. `pending` records an acquired
 outcome whose required update has not committed. Status, validity, actual source
 effects and retention must be read together.
 
-The [independent review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-DISTINCTION-REVIEW.md)
+The [independent review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/APPLICATION-DISTINCTION-REVIEW.md)
 and [reconstruction receipt](refinement-independent-check.json) verify the stated
-finite scope. [Primary comparators](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-DISTINCTION-COMPARATORS.md)
+finite scope. [Primary comparators](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/APPLICATION-DISTINCTION-COMPARATORS.md)
 credit established acquired state-abstraction methods. The contribution is the
 connected history and conditional derivation, not algorithmic priority.
 

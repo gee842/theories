@@ -1,6 +1,6 @@
 # Alignment completion: independent scope audit
 
-6 October 2026. AI-authored review of the existing seven [alignment and governance requirements](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md), the governing [five foundation conditions](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation), and the [fixed finish-line audit](../root-foundation/FIXED-FINISH-LINE-AUDIT.md). This is completion accounting, not a new mechanism, scientific rerun or acceptance of another chat's active work.
+6 October 2026. AI-authored review of the existing seven [alignment and governance requirements](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md), the governing [five foundation conditions](../../../../theories/becoming/history/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation), and the [fixed finish-line audit](../history/root-foundation/FIXED-FINISH-LINE-AUDIT.md). This is completion accounting, not a new mechanism, scientific rerun or acceptance of another chat's active work.
 
 **Finding:** substantial local obligations are closed, including the actual acquired-evaluation succession join. Neither a full practical alignment solution nor the complete generative account has yet been established. The next decisions can nevertheless be finite and specific. Accepted results should not be reopened merely because another implementation is imaginable; a smaller release claim must not silently replace the user's larger objective.
 

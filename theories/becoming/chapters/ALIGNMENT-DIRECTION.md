@@ -1,6 +1,6 @@
 # 我们主张怎样的 AI 对齐方向 / The direction of AI alignment we propose
 
-2026-10-08，Asia/Bangkok。AI 撰写的当前综合论证，完成 Ren 要求的“能够清楚论证我们主张怎样的对齐方向”。[本次原话与范围](../../../sources/15-codex-theory-conversations/2026-10-08-alignment-direction-completion.md)、[公理路线纠正](../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)、[一般实践判断](PRACTICAL-JUDGMENT.md)及[整合与独立审查入口](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md)分别记录来源、前提与完成范围。本文不替代其他会话的无公理研究，也不宣布[完整对齐实施目标](ALIGNMENT-COMPLETION.md)已经完成。
+2026-10-08，Asia/Bangkok。AI 撰写的当前综合论证，完成 Ren 要求的“能够清楚论证我们主张怎样的对齐方向”。[本次原话与范围](../../../sources/15-codex-theory-conversations/2026-10-08-alignment-direction-completion.md)、[公理路线纠正](../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)、[一般实践判断](PRACTICAL-JUDGMENT.md)及[整合与独立审查入口](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md)分别记录来源、前提与完成范围。本文不替代其他会话的无公理研究，也不宣布[完整对齐实施目标](ALIGNMENT-COMPLETION.md)已经完成。
 
 ## 1. 核心主张 / Central claim
 

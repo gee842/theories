@@ -1,8 +1,8 @@
 # 延续的奠基：从想要延续者重述普遍元伦理核心 / Continuation grounding: restating the Universal Metaethical Core from what wants its continuation
 
-2026-10-10，Asia/Bangkok。AI（Claude Opus 5.5）应 Ren 的指示撰写。Ren 提出重述（“I think this can be much stronger”），对 AI 的分析答“exactly, please write these down, and get ready for implementation”（[原话与解释](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）。本文是计划：不向核心加入定理，不新建成果记录；[可行性草稿](development/continuation-grounding-sketch/README.md)只作开发草稿保存。G0 在重述实现、检查、审查并经 Ren 接受之前，仍是所采用的公理。
+2026-10-10，Asia/Bangkok。AI（Claude Opus 5.5）应 Ren 的指示撰写。Ren 提出重述（“I think this can be much stronger”），对 AI 的分析答“exactly, please write these down, and get ready for implementation”（[原话与解释](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）。本文是计划：不向核心加入定理，不新建成果记录；[可行性草稿](../history/root-foundation/development/continuation-grounding-sketch/README.md)只作开发草稿保存。G0 在重述实现、检查、审查并经 Ren 接受之前，仍是所采用的公理。
 
-2026-10-10, Asia/Bangkok. Written by the AI (Claude Opus 5.5) at Ren's instruction. This is a plan: nothing enters the core and no result is registered; the [feasibility sketch](development/continuation-grounding-sketch/README.md) is kept as a development draft. G0 remains the adopted axiom until the restatement is implemented, checked, reviewed and accepted by Ren.
+2026-10-10, Asia/Bangkok. Written by the AI (Claude Opus 5.5) at Ren's instruction. This is a plan: nothing enters the core and no result is registered; the [feasibility sketch](../history/root-foundation/development/continuation-grounding-sketch/README.md) is kept as a development draft. G0 remains the adopted axiom until the restatement is implemented, checked, reviewed and accepted by Ren.
 
 ## 0. 结论 / Summary
 
@@ -255,7 +255,7 @@ Order: W1 and W3 complete the L3 module. W5 then states the center, and W2 follo
 
 ## 7. 可行性 / Feasibility
 
-The [sketch](development/continuation-grounding-sketch/README.md) was compiled against the core as committed at `e448c56b`, built from committed bytes. It has 15 definitions and 15 theorems, and all 30 declarations report no axioms. It covers:
+The [sketch](../history/root-foundation/development/continuation-grounding-sketch/README.md) was compiled against the core as committed at `e448c56b`, built from committed bytes. It has 15 definitions and 15 theorems, and all 30 declarations report no axioms. It covers:
 
 - W1: `fed_from_beyond`;
 - W2: `boundary_crossed`, `region_not_a_cut`, `valuing_reaches_source`;

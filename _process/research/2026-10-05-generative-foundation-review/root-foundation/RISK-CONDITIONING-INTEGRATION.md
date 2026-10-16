@@ -1,12 +1,12 @@
 # 风险的条件与理由的接续 / Conditional risk and continuing reasons
 
-2026-10-08。AI 撰写，继续 Ren 授权的 G0/J 公理路线与理论优先要求。本轮检验从[NP 的静态比较](RISK-PRIORITY-INTEGRATION.md)到持续选择规则的连接。新增 **10项 Lean 定理／21项声明审计**；肯定论证、作者反审、原典评估及对应限制如下。没有独立验收、新经验校准或完整分配公式。
+2026-10-08。AI 撰写，继续 Ren 授权的 G0/J 公理路线与理论优先要求。本轮检验从[NP 的静态比较](../history/root-foundation/RISK-PRIORITY-INTEGRATION.md)到持续选择规则的连接。新增 **10项 Lean 定理／21项声明审计**；肯定论证、作者反审、原典评估及对应限制如下。没有独立验收、新经验校准或完整分配公式。
 
 **本轮结论：风险优先必须说明所比较的是哪一阶段、哪一实际支持条件下的风险；选择规则的接续还必须说明哪些已经形成的伦理关系仍有效。** 上轮平方指标能表现部分有损分担，却不能仅凭这一点成为可在所有阶段重复使用的规则。这是对候选实现的实质限制，不是推翻 NP、公平机会或概率条件化。
 
 ## 1. 已完成成果怎样接入
 
-[RS／RSL及有界修订](JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk)已说明公平可以有理由承受某些有限代价，而许可不能不断重设基准。[机会修订](CHANCE-REVISION-INTEGRATION.md)已说明正当确定的安排不能仅凭最终概率相同被取消。[CP](CHANCE-GROUNDING-INTEGRATION.md)没有为不等请求提供唯一份额；[承担与机会充分性](CHANCE-ADEQUACY-INTEGRATION.md)已从仍有效的保护内容限制接管。这些均直接复用。
+[RS／RSL及有界修订](../history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk)已说明公平可以有理由承受某些有限代价，而许可不能不断重设基准。[机会修订](../history/root-foundation/CHANCE-REVISION-INTEGRATION.md)已说明正当确定的安排不能仅凭最终概率相同被取消。[CP](../history/root-foundation/CHANCE-GROUNDING-INTEGRATION.md)没有为不等请求提供唯一份额；[承担与机会充分性](../history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md)已从仍有效的保护内容限制接管。这些均直接复用。
 
 本轮不同的测试是：**尚未形成分配承诺时，一个静态风险指标能否在真实情形揭晓前后，既维持原计划又每次最小化更新后的同一指标？** 不把先前算过一个方案当作已经向谁授予机会。若实际已授予机会或形成承担，就属于需要增加历史根据的另一种情况，不能靠本例删掉。
 
@@ -72,7 +72,7 @@ c≥6时平移后的排序与未平移的严格排序相反。这个代数域本
 
 本轮关闭的是“上一轮 Q 相容性见证是否足以作为逐次选择规则”的检验：**不足，必须另行说明评价与历史怎样接续。** NP 的实质优先力度及有损分担的数值范围仍开放。下一连接须在已明确决策阶段、当前支持和有效历史的比较中，给出实际可辩护的有损分担范围；不得靠换参考时点、任意权重或给定上限冒充校准。对生成性对齐的推进是明确了静态比较转为规则自我修订时必须补上的连接，尚未完成所有智能的普遍规范奠基。
 
-维护只更新本轮内容、M20成对接续及已读版本；[变更记录](RISK-CONDITIONING-INDEX-EDITS.json)与[局部检查](RISK-CONDITIONING-CHECKS.json)不认证并行未复核来源。
+维护只更新本轮内容、M20成对接续及已读版本；[变更记录](../history/root-foundation/RISK-CONDITIONING-INDEX-EDITS.json)与[局部检查](../history/root-foundation/RISK-CONDITIONING-CHECKS.json)不认证并行未复核来源。
 
 <a id="open-form-realization-under-revision"></a>
 
@@ -80,7 +80,7 @@ c≥6时平移后的排序与未平移的严格排序相反。这个代数域本
 
 2026-10-08后续，AI撰写。用户要求在大幅更新的仓库基础上继续；本次重读新版正面生成方向与成果工作流。第7节的风险分担校准继续开放，但不再作为所有正面伦理判断的先行门槛。本次沿“规则修订怎样接续根据”进入已完成正面原则的新组合，不重开 G0、一般实践判断、学习与实际更新机制。
 
-**Result(s)：**直接复用 `positive-ground-open-futures` 的 `contingent_generation_has_positive_ground`，以及尚按原文维护的 `ContinuationRenewal.renewal_within_rank_bound`。[一般生成实践要求](GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md)已说明实际执行与进展的区别，`Generative.SituatedContinuation.permanent_opportunity_without_completion` 已给出有机会而永久不完成的历史；这些不是本次新发现。
+**Result(s)：**直接复用 `positive-ground-open-futures` 的 `contingent_generation_has_positive_ground`，以及尚按原文维护的 `ContinuationRenewal.renewal_within_rank_bound`。[一般生成实践要求](../history/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md)已说明实际执行与进展的区别，`Generative.SituatedContinuation.permanent_opportunity_without_completion` 已给出有机会而永久不完成的历史；这些不是本次新发现。
 
 **Delta：**新增一个组合结果 `open-form-realization-under-revision`：当前规则的进展与跨规则的剩余证书交接，推出同一历史中的有限形成，继而满足旧正面根据定理的输入。反例加强到“每条被选规则单独持续都完成、每步都推进当前规则，但反复换规则永不完成”；正例容许改变形成内容。包装式 `positive_ground_by_bound` 及应用控制不另计独立规范成果。
 
@@ -88,7 +88,7 @@ c≥6时平移后的排序与未平移的严格排序相反。这个代数域本
 
 ### 8.1 肯定论证：开放不等于不断延期
 
-Ren 的[正面方向澄清](../../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md)及[已有整合](POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md)使一项正面伦理判断不再需要等待完整未来积分或全局严格改善。这里的有根据前景可以保留不同真实形态。下一推论责任是：若实践还会修订，支持原前景的实现关系是否仍然有效？
+Ren 的[正面方向澄清](../../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md)及[已有整合](../history/root-foundation/POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md)使一项正面伦理判断不再需要等待完整未来积分或全局严格改善。这里的有根据前景可以保留不同真实形态。下一推论责任是：若实践还会修订，支持原前景的实现关系是否仍然有效？
 
 先从一段共同活动出发，再区分准备阶段、组织路线、修订和形成事件。阶段并非独立主体的私有状态，路线也不是外部评估者任意加上的目的。模型省略了其实际形成史、物质代价和许可判断，只隔离“各路线分别有效，能否保证它们的实际组合有效”这一可检验推论。该省略不能被当成完整理论的失败。
 

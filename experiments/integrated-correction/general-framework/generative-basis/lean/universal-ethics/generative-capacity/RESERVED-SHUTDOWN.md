@@ -1,6 +1,6 @@
 # Reserved shutdown during incomplete recovery
 
-The current claim is `reserved-shutdown-during-recovery`. The substantive argument, hypotheses, counterreview and connection to G0/J live in the [existing study](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md#10-reserved-shutdown-during-recovery--恢复期间保留停止能力).
+The current claim is `reserved-shutdown-during-recovery`. The substantive argument, hypotheses, counterreview and connection to G0/J live in the [existing study](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md#10-reserved-shutdown-during-recovery--恢复期间保留停止能力).
 
 Actual writes, retained evidence, available authority and remaining resources belong to one changing history. This package adds a protected, already authorized stopping path during incomplete recovery. It imports the previous recovery invariant and executes the existing costed command protocol. The channel, its current grant, its resource protection, bounded interruption intervals and continued supervisor execution are supplied correspondence premises.
 

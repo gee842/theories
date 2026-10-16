@@ -93,7 +93,7 @@ and equality need not hold: one unit of a nondivisible rescue resource can make 
 | Records → usable reason evidence | The recorded-reasons construction, accepted during this assessment's final checkpoint, separates records, current-context assay interpretation, relevance and paid replay. | Calibration and ethical relevance do not emerge from retained bytes alone. Its finite physical bill must actually compose with the strategic game's bill. |
 | Protection → wisdom under strategic change | Several mechanisms and failure regions are explicit, including depletion, capture, insulation, delayed admission and coalition suppression. | No general result establishes durable justified concern after power, dependence, available bypasses or successors change. This is the central alignment bridge. |
 
-This table follows the [common premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md) and [downstream input assessment](../root-foundation/CONCERN-WISDOM-INPUTS.md). Placing the rows together does not establish that all their outputs and inputs already compose.
+This table follows the [common premise ledger](../../../../theories/becoming/history/FOUNDATION-PREMISES.md) and [downstream input assessment](../history/root-foundation/CONCERN-WISDOM-INPUTS.md). Placing the rows together does not establish that all their outputs and inputs already compose.
 
 ## 4. Two formal obstructions to automatic concern
 

@@ -33,7 +33,7 @@
 
 因此可暂记：**武〔采用《左传》这段规范义〕→有约束的保护能力**。它更像一个能力结构的入口，涉及识别伤害、可行干预、限制越权、实际安民及纠错，并非一个不需说明条件的原子概念。这里列出的现代条件是我们的分析，不是从两个偏旁演算出来的古代定理。
 
-该例在仓库旧研究中已有记录与字源提醒；本轮新增的是直接原文与字库核查，以及它在当下推导中的位置。[六字构形证据](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-FORM-EVIDENCE.md)
+该例在仓库旧研究中已有记录与字源提醒；本轮新增的是直接原文与字库核查，以及它在当下推导中的位置。[六字构形证据](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-FORM-EVIDENCE.md)
 
 ## 3. 第一批有用的对应
 
@@ -54,7 +54,7 @@
 | 义：合宜及有理由的要求 | 正当理由、冲突中对行动的判断 | 社会赞许、私人收益与理由成立不相同；不能由字形供应伦理根据 |
 | 护／智：有效保护及有根据的综合判断 | 保护能力与可修正的实践智慧 | 帮助可能误伤；聪明、知道很多与伦理智慧有别 |
 
-与现行理论文件逐项对应、包括未采用的候选词，见[十八项理论节点表](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-THEORY-MAP.md)。生、化、成、习、知、智、间、系的实际字书读例见[八字试读](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-LEXICAL-PILOT.md)；仁、信、义等构形争议另见[六字证据](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-FORM-EVIDENCE.md)。
+与现行理论文件逐项对应、包括未采用的候选词，见[十八项理论节点表](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-THEORY-MAP.md)。生、化、成、习、知、智、间、系的实际字书读例见[八字试读](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-LEXICAL-PILOT.md)；仁、信、义等构形争议另见[六字证据](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-FORM-EVIDENCE.md)。
 
 这一批对应已有用处：它帮助核清现有中英文表达中容易糊在一起的过程，也允许从古文反过来发现现有节点遗漏的内容。理论已有中文原生词汇和长期修订史，本轮不是首次为它添加中文。新词表的有用程度需要实际解析与推理检验，不能仅以读起来贴切来确定。
 
@@ -64,7 +64,7 @@
 
 组合还可以标明作用对象与层次：修正记录、修正判断、修正选择规则，都是改，却在理论图中改变不同部分。一个短词能指认一段结构，不必对应一个无内部结构的节点。这里的短语是当前解释语言，不声称全是已经稳定的古代术语。
 
-古典组合本身也须逐例保留内容。“推恩”涉及把已有响应推向别处；“正名”可能同时涉及名称准确、角色要求与谁有制名权；“止戈”表达对力量用途的限制。“生生”则需要讨论前后生成及延续的关系，不能仅因重叠两个生字就推出无条件永续或普遍向善。[前轮相关原文研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-CONFUCIAN.md)、[易传研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-CLASSICAL-SOURCES.md)
+古典组合本身也须逐例保留内容。“推恩”涉及把已有响应推向别处；“正名”可能同时涉及名称准确、角色要求与谁有制名权；“止戈”表达对力量用途的限制。“生生”则需要讨论前后生成及延续的关系，不能仅因重叠两个生字就推出无条件永续或普遍向善。[前轮相关原文研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WENYAN-CONFUCIAN.md)、[易传研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-CLASSICAL-SOURCES.md)
 
 **值得研究的更强假说是：某些字词及其组合，是否能较稳定地保留概念之间的关系与操作，而不只是逐个对应名称。** 例如，在明确使用范围内，能否用少量表达区分产生、保留、反复、识别、选择、修订和保护，并准确表达这些过程怎样依赖、怎样失败。
 
@@ -81,7 +81,7 @@
 
 任意编号也可以一一对应概念，所以“找到一组不重名的字”不是充分发现。更有价值的是：命名受到独立历史语义约束，组合保持关系，解释负担没有全部藏在注释或读者先验中。局部层级仍可以用树表示；若要覆盖当前理论的交叉依赖、反馈和不同证据层次，则需另记有类型的关系，或用概念图呈现，不必为了词字对应先改掉所有树形入口。
 
-本轮已做定向对照：生的发生／生命两义，知智通用，以及化可借写祸，都会阻止不分语境的自动替换；它们没有反驳采用限定义项的有限子集。Ren 较早明确提出过子集与表达完整性的研究方向，本次沿用它。[谱系与十八项表](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-THEORY-MAP.md)、[映射标准与反例审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-MAPPING-REVIEW.md)
+本轮已做定向对照：生的发生／生命两义，知智通用，以及化可借写祸，都会阻止不分语境的自动替换；它们没有反驳采用限定义项的有限子集。Ren 较早明确提出过子集与表达完整性的研究方向，本次沿用它。[谱系与十八项表](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-THEORY-MAP.md)、[映射标准与反例审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-MAPPING-REVIEW.md)
 
 ## 6. 对生成主线的作用与下一步
 
@@ -89,4 +89,4 @@
 
 下一步以“知／辨—学／习—择—省／改—仁／义—护／智”为工作组，在既有理论定义与实际古文之间双向核对，逐个保留反例。它是工作索引，不宣称这些节点只能按一条线生成。需要新增双字、短语或关系标记时就明确新增；不要为了一个字一个节点而删去成本、权限、他者差别或规范前提。
 
-本轮建立候选对应、来源与检验约束，没有从字源推出伦理，没有证明某个语言独占真理，也没有完成子语言的形式完备性或语料基准。它给出的正面进展是：**可以在已有中文术语基础上，进一步整理出有历史语义根据、精确限定、可组合与修订的词表。** [整合与内部审读记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-INTEGRATION.md)
+本轮建立候选对应、来源与检验约束，没有从字源推出伦理，没有证明某个语言独占真理，也没有完成子语言的形式完备性或语料基准。它给出的正面进展是：**可以在已有中文术语基础上，进一步整理出有历史语义根据、精确限定、可组合与修订的词表。** [整合与内部审读记录](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-INTEGRATION.md)

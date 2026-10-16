@@ -16,7 +16,7 @@ Compiled milestone vectors are a selected operational comparison, separate from 
 
 Run `python3 check.py` for the pinned Lean 4.29.1 fresh build. The checker freezes every actual transitive source before compilation, records compiler/checker/toolchain/contract hashes, audits every new theorem and every inherited requested declaration, and refuses custom axioms or proof shortcuts. Allowed foundational dependencies are `propext`, `Quot.sound` and `Classical.choice`. Each attempt's source snapshots, logs and receipt remain under `development/`; no compiled project objects are imported from the working tree. Failed attempts are development evidence, not accepted proofs.
 
-Independent [semantic and integrity review](../../../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md) now accepts the corrected event law, its explicit representation limits and the selected [fourteen compiled/runtime comparisons](../formal-correspondence.json). Kernel checking, numerical reconstruction and this interpretation review establish different parts of the local acceptance.
+Independent [semantic and integrity review](../../../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md) now accepts the corrected event law, its explicit representation limits and the selected [fourteen compiled/runtime comparisons](../formal-correspondence.json). Kernel checking, numerical reconstruction and this interpretation review establish different parts of the local acceptance.
 
 ## Selected operational vectors
 

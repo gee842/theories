@@ -1,6 +1,6 @@
 # Selected source-data checks for acquired relationships
 
-8 October 2026. This directory checks selected numerical results of Hart et al., eLife 2020, DOI [10.7554/eLife.59998](https://doi.org/10.7554/eLife.59998), for the [semantic-sufficiency investigation](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md). This is a source-data reproduction, not a new experiment, a formal proof or a complete reanalysis of the paper.
+8 October 2026. This directory checks selected numerical results of Hart et al., eLife 2020, DOI [10.7554/eLife.59998](https://doi.org/10.7554/eLife.59998), for the [semantic-sufficiency investigation](../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md). This is a source-data reproduction, not a new experiment, a formal proof or a complete reanalysis of the paper.
 
 ## Inputs and transformations
 

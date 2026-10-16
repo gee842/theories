@@ -1,6 +1,6 @@
 # Limits of a fixed universal representation
 
-7 October 2026. This package checks a set/function form of Lawvere's diagonal theorem and its precise coverage consequences. It supports the [mathematical completion attempt](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-COMPLETION-ATTEMPT.md); it does not refute a generative ontology or a stratified account of mathematics.
+7 October 2026. This package checks a set/function form of Lawvere's diagonal theorem and its precise coverage consequences. It supports the [mathematical completion attempt](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROOT-MATHEMATICAL-COMPLETION-ATTEMPT.md); it does not refute a generative ontology or a stratified account of mathematics.
 
 [CoverageBoundary.lean](formal/CoverageBoundary.lean) proves:
 

@@ -316,7 +316,7 @@ Measurement meaning, exact channel, operative view, uptake law and relevant hist
 **Next connection:** explain the formation of basis-sensitive revision rather than supplying its uptake rule, and compare transfer preserving content with mere reproduction of wording. For the universal ethical investigation, this tests correspondence conditions for formed evaluation to enter practical reasoning; it does not replace the argument about actual lives, losses, comparative force and responsibility.
 
 
-并行的[理由与可修订标准研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md)已对说服原因、认识根据、社会取得及可错的接受资格作出哲学展开。上述下一连接承接而不重做该论证；它公开的认识承诺不能悄悄升为本聊天的零公理结论。 / The parallel reasons-and-standards study already develops the philosophical argument about epistemic grounds, social access and fallible entitlement. The next connection credits that work while testing formation and cognitive correspondence; its explicit epistemic commitments are not silently treated as zero-axiom results here.
+并行的[理由与可修订标准研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md)已对说服原因、认识根据、社会取得及可错的接受资格作出哲学展开。上述下一连接承接而不重做该论证；它公开的认识承诺不能悄悄升为本聊天的零公理结论。 / The parallel reasons-and-standards study already develops the philosophical argument about epistemic grounds, social access and fallible entitlement. The next connection credits that work while testing formation and cognitive correspondence; its explicit epistemic commitments are not silently treated as zero-axiom results here.
 
 
 ## 13. 理解标准及其根据 / Understanding standards and their grounds
@@ -656,7 +656,7 @@ The affirmative claim is prospective: actual living improvement can support form
 
 **肯定候选：规范可以是同一活动对其生活展开的有根据的辨明、组织与修订；理由是其中可说明的实际关系在判断和回应中的表达。** 这是需要辩护的构成解释。它不把每种实际调节或内在目标都叫作正当，也不要求理由只有被表达时才成立。表达可以遗漏、歪曲或尚未形成；尚未被理解的受损关系仍实际存在。完整关系怎样支持相应判断，仍须逐项展开。
 
-一个具体入口是修复的完成。活动使受阻的生活重新能够参与、休息、交往或学习时，照护的方式、强度乃至是否继续，都可能随之改变。某项修复结束而原来受阻的生活得到接续，不能因修复组织缩小就被判作退化。相反，为保持照护者的地位而维持可以解除的依赖，即使使组织更稳定，也没有实现同一种修复。这里复用[既有完成研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md#5-valuable-response-does-not-warrant-creating-its-occasion)，不把这一区分记作新发现。
+一个具体入口是修复的完成。活动使受阻的生活重新能够参与、休息、交往或学习时，照护的方式、强度乃至是否继续，都可能随之改变。某项修复结束而原来受阻的生活得到接续，不能因修复组织缩小就被判作退化。相反，为保持照护者的地位而维持可以解除的依赖，即使使组织更稳定，也没有实现同一种修复。这里复用[既有完成研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md#5-valuable-response-does-not-warrant-creating-its-occasion)，不把这一区分记作新发现。
 
 这一入口的意义是：**生活怎样接续，可以改变活动的目的及其恰当结束条件；不能让已经形成的目的独占对整段活动的解释。** 修复关系在何种条件下成立、有何权限、留下什么负担，都在同一历史中说明。实际需要持续照护时，贸然退出会留下真实损伤；“结束”本身也不自动正确。
 

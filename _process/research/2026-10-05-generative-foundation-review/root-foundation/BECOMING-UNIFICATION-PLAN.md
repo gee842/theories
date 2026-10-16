@@ -4,9 +4,9 @@
 
 依据：
 - 四份只读普查（Lean 形式层、理论文档、基础设施、统一抽象设计）及主会话的独立复核；
-- 承接[核心与伦理同构审查](CORE-ETHICS-ISOMORPHISM-AUDIT.md)。
+- 承接[核心与伦理同构审查](../history/root-foundation/CORE-ETHICS-ISOMORPHISM-AUDIT.md)。
 
-本文是计划，不新增定理或成果记录；[原型](development/becoming-spine-prototype/README.md)只作开发草稿保存。
+本文是计划，不新增定理或成果记录；[原型](../history/root-foundation/development/becoming-spine-prototype/README.md)只作开发草稿保存。
 
 **修订（同日）。**
 1. 第 6 节的决定已全部定下。
@@ -107,7 +107,7 @@ Lean 中 L1–L4 是包 `Becoming` 的模块 `Becoming.Frame`、`Becoming.Inquir
 4. **G0 的内容可以刻画。** 在连通整体上，G0 等价于“某处有一个生生被珍视”加两条边界中立规则。
    - G0 中超出“评价者本来就持有的东西”的全部内容，因此精确落在边界中立上。
    - D 的“不以认同为条件”来自 A 与 N_std。A 是关于有贡献理由的外在论表述。
-   - 这把[评价者路线审查](EVALUATOR-GROUNDING-REVIEW.md)要求的 BI、P+ 与“立场到规范的桥”统一为同一形状的三条规则。
+   - 这把[评价者路线审查](../history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)要求的 BI、P+ 与“立场到规范的桥”统一为同一形状的三条规则。
    - 它没有证明这些规则为真，也不及于不接受它们的立场。
 
 ## 4. 迁移不变量
@@ -129,8 +129,8 @@ Lean 中 L1–L4 是包 `Becoming` 的模块 `Becoming.Frame`、`Becoming.Inquir
 | P0 ✓ | 本线提交 78f1abda；整库检查点 4e7642e1 | 已完成 |
 | P1 脊柱 ✓ | `BecomingFrame`：Frame、Run（含窗口即轨迹）、Reach、不变量、历史、Novel。`BecomingModal`：Scope、sound 策略确保其目标、反单调性。合并检查器 `check_becoming.py` | 已完成（d79d0d9d）：空公理；继承哈希与回执相符 |
 | P2 伦理核心 ✓ | `MetaethicalCore`：S0、N_rel、N_std、A、C、L、J 的具名定义；G0 刻画定理；D 的导出；极小性反模型与“对手即有界规则”；脊柱上的普遍位置理由；提升规则 L。记录 `metaethical-core-characterization`；一页前提卡 | 已完成（d79d0d9d）：[metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md) |
-| P2b 评价者路线更正 ✓ | 执行[审查](EVALUATOR-GROUNDING-REVIEW.md) §6 的 15 项更正：论证文档、Lean 说明、记录 `self-good-reachable-g0`（收窄标题与主张）、G0-WARRANT 相关段；P+ 版第二步由 P2 承担 | 已完成（001c5cdd）：记录与审查逐项对应；该模块检查器重跑通过 |
-| P3 实例化 ✓ | 先用脚本对 45 个含多态定理的模块分类，结果存入本研究。再按接口逐一处理：给出脊柱实例；对重建核心组合子者证明等价（`Robust`、`Reached`、`revise`、`Guarantees` 等）；函数式结果用 L 推广。相应记录增加证明绑定，按具名声明升级 `related` 链接 | 已完成：[分类表](BECOMING-INSTANCE-CLASSIFICATION.md)覆盖 45 个模块并逐行机械检查；11 个接口都有具名实例或等价定理（`BecomingInstances`），记录 [becoming-spine-instances](../../../../theories/becoming/results/records/becoming-spine-instances.md)。证明绑定放在新记录上，既有记录按原范围保留不改；新记录以 `related` 连到它们，唯一的 `formal-reuse` 是对 C 与 L 的直接使用 |
+| P2b 评价者路线更正 ✓ | 执行[审查](../history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md) §6 的 15 项更正：论证文档、Lean 说明、记录 `self-good-reachable-g0`（收窄标题与主张）、G0-WARRANT 相关段；P+ 版第二步由 P2 承担 | 已完成（001c5cdd）：记录与审查逐项对应；该模块检查器重跑通过 |
+| P3 实例化 ✓ | 先用脚本对 45 个含多态定理的模块分类，结果存入本研究。再按接口逐一处理：给出脊柱实例；对重建核心组合子者证明等价（`Robust`、`Reached`、`revise`、`Guarantees` 等）；函数式结果用 L 推广。相应记录增加证明绑定，按具名声明升级 `related` 链接 | 已完成：[分类表](../history/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md)覆盖 45 个模块并逐行机械检查；11 个接口都有具名实例或等价定理（`BecomingInstances`），记录 [becoming-spine-instances](../../../../theories/becoming/results/records/becoming-spine-instances.md)。证明绑定放在新记录上，既有记录按原范围保留不改；新记录以 `related` 连到它们，唯一的 `formal-reuse` 是对 C 与 L 的直接使用 |
 | P3b 更新／消耗统一 ✓ | 由 Run 可观测量构造 `RelationalRenewal` 的展开，`RenewalComparison` 的关系读法成为脊柱上 `generative` 的规范读法；`Depletion`、`ContinuationRenewal` 的储备界作为同一分类的实例 | 已完成：[整合与作者反审](BECOMING-RENEWAL-READING.md)，记录 [becoming-renewal-reading](../../../../theories/becoming/results/records/becoming-renewal-reading.md)。`BecomingRenewal` 为 L3；读法在 `MetaethicalCore` 中由 L4 使用 L3 给出。三条界的统一是组织性的；`ContinuationRenewal` 的良基形式更一般，不由该原则导出 |
 | P4 叙述 ✓ | 新正典入口 `THE-THEORY-OF-BECOMING`：Becoming、组织与演化、认识与探究、集体动力学、评价的形成、Universal Metaethical Core、AI 对齐、开放纲领。附术语表与前提卡；旧章作为证据链接，并在新章中标为历史证据；README 首段指向它；补齐阅读目录 | 已完成：正典章节（2bcf314b）。阅读目录补齐 32 个缺项；17 个过期条目先读原文差异再更新字段与版本标记；生成视图（CLAIMS、理论首页）以生成清单为准，记为 `generated-view`，其各行随成果记录检查；Lean 文本目录重新同步。两项目录检查、渲染、`research-check` 与 36 项测试通过 |
 | P4b 工作规则 ✓ | AGENTS.md 增一条：新的形式结果陈述在脊柱上；脊柱表达不了时扩展脊柱，而不是另建模型 | 已完成：规则在 AGENTS.md「Evidence and preservation」首条，链接正典章节 §9 与脊柱目录 |
@@ -435,7 +435,7 @@ Formal completeness of a representation does not establish the deductive necessi
 
 外围定律族与命名空间 `Generative` 也保留原名。
 
-**2026-10-14 对照表 / 14 October 2026 rename table.** 按[一般规律、名称与记录可读性计划](development/becoming-general-laws-plan/PLAN.md) §2（A1–A11、B1–B5、N）与 P36 同一标准：名称说所述的动力学，不用社会、金融、心理的词，也不把 Ren 的原话直接用作形式名。只改名；声明的陈述、证明与各模块的定理数不变，合并检查器回执 `20261013T204910.042715Z` 与 FallibleInquiry 回执 `20261013T205526.452771Z` 检查了新名。旧名留在历史条目、保留的运行、旧回执与审查文件中，按此表读。 / Rename only, under the P36 criteria (names state the dynamics; no social, financial or psychological words, and no formal name taken directly from Ren's words); statements, proofs and per-module theorem counts are unchanged, and receipts `20261013T204910.042715Z` (consolidated) and `20261013T205526.452771Z` (FallibleInquiry) check the new names. Old names remain in history entries, retained runs, old receipts and reviews, read through this table.
+**2026-10-14 对照表 / 14 October 2026 rename table.** 按[一般规律、名称与记录可读性计划](../history/root-foundation/development/becoming-general-laws-plan/PLAN.md) §2（A1–A11、B1–B5、N）与 P36 同一标准：名称说所述的动力学，不用社会、金融、心理的词，也不把 Ren 的原话直接用作形式名。只改名；声明的陈述、证明与各模块的定理数不变，合并检查器回执 `20261013T204910.042715Z` 与 FallibleInquiry 回执 `20261013T205526.452771Z` 检查了新名。旧名留在历史条目、保留的运行、旧回执与审查文件中，按此表读。 / Rename only, under the P36 criteria (names state the dynamics; no social, financial or psychological words, and no formal name taken directly from Ren's words); statements, proofs and per-module theorem counts are unchanged, and receipts `20261013T204910.042715Z` (consolidated) and `20261013T205526.452771Z` (FallibleInquiry) check the new names. Old names remain in history entries, retained runs, old receipts and reviews, read through this table.
 
 | 旧名 / Old | 新名 / New | 所述的动力学 / Dynamics |
 |---|---|---|
@@ -458,7 +458,7 @@ Formal completeness of a representation does not establish the deductive necessi
 | `separation_surplus` | `separation_admits_extra` | 分别描述容许整体没有的组合 / separate description admits combinations the whole lacks |
 | `Interference.truncation_misleads` | `truncation_misses_cancellation` | 截断漏掉抵消 / a truncation misses a cancellation |
 | 未落地的草稿名 `Support`、`supported_iff`、`Run.supportFlow`、`supportWeb`、`supportFlow_balances(_iff)`、`trace_account_of_law`、`Revising.R`、`Revising.supported`、`spent_balanced` | `Stock`、`process_map_iff`、`Run.stockFlow`、`stockWeb`、`stockFlow_balances(_iff)`、`trace_conserves_of_law`、`Revising.registration`、`Revising.stock_balanced_held`、`used_balanced` | 存量的汲取与补充；避免与 `Web.Supported` 相混 / drawing on a stock and replenishing it, kept apart from `Web.Supported` |
-| `Renewable.stepwise_credits_before_escalation`（Dependence）、`Renewable.finite_reading_credits_consumption`、`Renewable.whole_run_credits_overdraw`（Horizon）、`Ranking.credited_before_loss`、`Ranking.sharing_credited`、`Ranking.stops_credited`、`Substitution.stepwise_credits_substitution` | `stepwise_includes_before_escalation`、`finite_reading_includes_consumption`、`whole_run_includes_overdraw`、`included_before_loss`、`sharing_included`、`stops_included`、`stepwise_includes_substitution` | 读法记入一个事件，英文由 credit 改为 include（[开放问题计划](development/becoming-general-laws-plan/OPEN-ISSUES-PLAN.md)第 15 项，Ren 选定）；中文“记入”不变 / a reading includes an event, where it was said to credit it (open-issues plan item 15, Ren's choice); zh 记入 unchanged |
+| `Renewable.stepwise_credits_before_escalation`（Dependence）、`Renewable.finite_reading_credits_consumption`、`Renewable.whole_run_credits_overdraw`（Horizon）、`Ranking.credited_before_loss`、`Ranking.sharing_credited`、`Ranking.stops_credited`、`Substitution.stepwise_credits_substitution` | `stepwise_includes_before_escalation`、`finite_reading_includes_consumption`、`whole_run_includes_overdraw`、`included_before_loss`、`sharing_included`、`stops_included`、`stepwise_includes_substitution` | 读法记入一个事件，英文由 credit 改为 include（[开放问题计划](../history/root-foundation/development/becoming-general-laws-plan/OPEN-ISSUES-PLAN.md)第 15 项，Ren 选定）；中文“记入”不变 / a reading includes an event, where it was said to credit it (open-issues plan item 15, Ren's choice); zh 记入 unchanged |
 | `RepairComparison.fragile_b3_below_nothing`（第十七次审查 G1） | `fragile_b3_better_than_none` | 失去骨干的路线经严格匹配不优于任何路线；旧名把方向说反 / the course losing the backbone is strictly better by matching than no course; the old name inverted the direction |
 | `Flow.surplus_raises_at`、`Flow.surplus_bounded_at`（Continuation）；`SupportGated.surplus`、`surplus_active`、`surplus_step`（RenewalBridge）；约束变量 `surplus`（第十七次审查 G9） | `Flow.net_give_raises_at`、`Flow.net_give_bounded_at`；`SupportGated.netGive`、`netGive_active`、`netGive_step`；`netGive` | 一步的共同净给予使水平升高；与 `supported_of_net_give` 一致 / joint net giving in a step raises the level; matches `supported_of_net_give` |
 | 约束变量 `costs`（`Lasting.exhausts`，第十七次审查 G8） | `lowers` | 每步使水平降低一级 / each step lowers the level by one |

@@ -33,7 +33,7 @@ For the specified stable three-probe/copy sequence, five is the sharp minimum *a
 
 ## Checks and scope
 
-[export.py](export.py) freezes the accepted monitor sources and receipts, executes only its existing one-frame prefix, and verifies exact equality to accepted traces, full probability mass and inherited energy/material accounts. The [independent reconstruction](independent_check.py) and [receipt](independent-verification.json) separately check the exported boundary and ordered resource words; the [review](../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROUTE-REVISION-RESOURCE-REVIEW.md) records their final status and scope.
+[export.py](export.py) freezes the accepted monitor sources and receipts, executes only its existing one-frame prefix, and verifies exact equality to accepted traces, full probability mass and inherited energy/material accounts. The [independent reconstruction](independent_check.py) and [receipt](independent-verification.json) separately check the exported boundary and ordered resource words; the [review](../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROUTE-REVISION-RESOURCE-REVIEW.md) records their final status and scope.
 
 ```sh
 python3 export.py

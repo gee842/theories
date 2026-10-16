@@ -6,7 +6,7 @@
 
 **第一轮扩展研究的结论：研究范围确实应覆盖整个先秦，并追踪文言传统；目前得到的是一组能够推进、也能挑战生成理论的竞争解释。** 古典材料把生成、性情、名实、习成、利害和治理连接得很紧，但不同文本对这些连接给出不同答案。共同语言和问题不足以证明古今只有一套理论；反过来，存在冲突也不排除我们找到能解释这些差异的共同基础。
 
-“整个”是继续研究的范围。本轮已完成[覆盖账本](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-CORPUS-MAP.md)中明确列出的原文选读和比较；尚未完成全部先秦、后世文言或语言学的普查。前一轮[生成论与“道”](DAO-AND-GENERATIVITY.md)仍保留，其结论由本轮扩大和约束。
+“整个”是继续研究的范围。本轮已完成[覆盖账本](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WENYAN-CORPUS-MAP.md)中明确列出的原文选读和比较；尚未完成全部先秦、后世文言或语言学的普查。前一轮[生成论与“道”](DAO-AND-GENERATIVITY.md)仍保留，其结论由本轮扩大和约束。
 
 ## 1. 先秦扩大后，最重要的变化
 
@@ -23,7 +23,7 @@
 | 《管子·内业》与兵书 | 身心条件怎样支持能力；情报怎样形成并付出代价 | 为认知提供身体与组织条件；气论、修养效验和军事目的分别保留，不能合并成一个已证自然模型 |
 | 《吕氏春秋·贵公》《察今》 | 谁的天下，旧法为何失效，谁能因时改法 | 公共考虑与情境修订可以相连；修订权仍可能集中在贤主，不能把可修正直接读成平等参与 |
 
-各项的原文、段落范围、文本层次与论证见[儒家研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-CONFUCIAN.md)、[墨家与法术名辩研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-MOHIST-POLITICAL.md)、[语言及跨文类研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-LANGUAGE-AND-CORPUS.md)。这是本轮的比较框架，不是古人共同认可的自我分类。
+各项的原文、段落范围、文本层次与论证见[儒家研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WENYAN-CONFUCIAN.md)、[墨家与法术名辩研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WENYAN-MOHIST-POLITICAL.md)、[语言及跨文类研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WENYAN-LANGUAGE-AND-CORPUS.md)。这是本轮的比较框架，不是古人共同认可的自我分类。
 
 ## 2. 三个会改变我们理论的具体发现
 
@@ -41,7 +41,7 @@
 
 王充《自然篇》把事物可供人利用与事物为人而生分开；韩愈《原道》以生养和制度论道，又明确排斥竞争教说；张载把天地、气与人的亲属关系联结，同时反对把儒佛老庄混作一途；王阳明《大学问》从本有仁心解释其显现与遮蔽；黄宗羲则把天下人的处境与一家王朝的延续分开。它们提供的是不同前提下的实质论证。[《自然篇》](https://zh.wikisource.org/wiki/論衡/54)、[《原道》](https://zh.wikisource.org/wiki/原道)、[《太和篇》](https://zh.wikisource.org/wiki/正蒙/01)、[《西铭》](https://zh.wikisource.org/wiki/西銘)、[《大学问》](https://zh.wikisource.org/wiki/大學問)、[《原君》《原法》](https://zh.wikisource.org/wiki/明夷待訪錄)
 
-由此需保留四个区分：用途与预定目的；生养与非支配；恢复既有仁心与解释其形成；制度的存续与受影响者的福祉。我们不能把只有在补入气论、性论、天志或某种公共标准之后才成立的论证，说成已经从一个无额外前提的生成根基推出。详细范围见[后世变革研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-LATER-TRANSFORMATIONS.md)。
+由此需保留四个区分：用途与预定目的；生养与非支配；恢复既有仁心与解释其形成；制度的存续与受影响者的福祉。我们不能把只有在补入气论、性论、天志或某种公共标准之后才成立的论证，说成已经从一个无额外前提的生成根基推出。详细范围见[后世变革研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WENYAN-LATER-TRANSFORMATIONS.md)。
 
 本轮也直接读了鸠摩罗什译《维摩诘所说经·文殊师利问疾品》。它把众生之病与菩萨的悲联系起来，同时要求不执我、众生乃至法想，并继续饶益众生。这提供一个有分量的对照：关切不必先把他者占为自己的部分，也不能仅从共同实体推出。但菩萨实践、解脱与大悲在此是原论证的前提，尚未由我们的最小根基导出；此品不代表全部佛教。[汉译原文，T14 no.475 第五品](https://dlbs.liberal.ntu.edu.tw/BDLM/sutra/html/T14/T14n0475.htm)
 
@@ -55,7 +55,7 @@
 
 本轮发现一个很小却直接的提醒：《论语》同句中的“之”可以分别表示前往和关系连接；《墨子·小取》又明确区分名称、对象、表达与理由，并限制类推的推广。[《阳货》相关句](https://zh.wikisource.org/zh-hant/論語/陽貨第十七)、[《小取》](https://zh.wikisource.org/zh-hans/墨子/小取)
 
-下一步要固定子语言、派发规则、背景知识和意义损失标准，再以未参与设计的历史句子检验。字数短、读起来凝练或某个别名可证明相等，都不足以证明总体压缩最优、历史语义唯一或本体论正确。[方法与可反驳条件](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-LANGUAGE-AND-CORPUS.md)
+下一步要固定子语言、派发规则、背景知识和意义损失标准，再以未参与设计的历史句子检验。字数短、读起来凝练或某个别名可证明相等，都不足以证明总体压缩最优、历史语义唯一或本体论正确。[方法与可反驳条件](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WENYAN-LANGUAGE-AND-CORPUS.md)
 
 ## 5. 对统一根基的回写
 

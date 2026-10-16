@@ -138,7 +138,7 @@
     {
       "zh": "补上的桥接：首次有损比较、有限牺牲上限、四种回应、责任分配、共同义务、实际接替、冲突与不完全证据、忠实修订，各有原则及限定。",
       "en": "Bridges closed: first mixed comparison, finite sacrifice limit, the four responses, responsibility, joint obligations, actual succession, conflict under imperfect evidence and faithful revision each receive principles with qualifications.",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md#2-what-closes-the-previously-named-gaps"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md#2-what-closes-the-previously-named-gaps"
     },
     {
       "zh": "及时接续：回程等级、替代与实际交接给出按需要的支承、替代覆盖与有范围的比较理由；有利理由与 J2 优先分开。",
@@ -174,13 +174,13 @@
       ]
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md",
       "role": "review",
       "sha256": "544287842225a457a259c573e3667c3aba357a3ab8643a3f832e34039c85e74a",
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
       "role": "integration",
       "sha256": "fe808ea852679ce01f8886961d3edf9838ee7c6982cc747c756af17a476d6d38",
       "declarations": []

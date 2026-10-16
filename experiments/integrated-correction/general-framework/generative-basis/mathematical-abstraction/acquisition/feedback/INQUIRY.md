@@ -7,7 +7,7 @@ history and eleven source bindings. No costs or cases were changed after that ru
 
 The [independent checker](inquiry_check_review.py) and
 [saved check](inquiry-independent-check.json) match all15 cases and321 extension
-events. The [review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-REVIEW.md)
+events. The [review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-COMPLETION-REVIEW.md)
 states the ancestry/acquisition checking scope and internal-review limitations.
 
 The controller continues the actual inherited acquisition/failed-use history.
@@ -82,7 +82,7 @@ finite inquiry recipe are supplied locally. Outcome acquisition changes whether
 that episode still calls for inquiry; it does not explain their historical origin.
 
 The [mechanism](INQUIRY-MECHANISM.md) states the conditional family relation and
-stopping argument. The [root integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md)
+stopping argument. The [root integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-COMPLETION-INTEGRATION.md)
 connects the result to the common derivation and remaining explanation. No new
 empirical observation, general planning algorithm, ethical warrant or complete
 alignment solution is claimed.

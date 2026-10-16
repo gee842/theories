@@ -2,7 +2,7 @@
 
 7 October 2026. Lean 4.29.1 / `Std` formalization of the current [completion argument](../../../../../../../theories/becoming/history/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md), following [Ren’s proof requirement](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-lean-proof-requirement.md).
 
-The [integration and scope ledger](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md) maps the earlier A/W results to these generalized proofs. This package includes arbitrary ideal families and infinite traces, not only finite test instances. It adds no empirical experiment or claim of ethical/metaphysical necessity.
+The [integration and scope ledger](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md) maps the earlier A/W results to these generalized proofs. This package includes arbitrary ideal families and infinite traces, not only finite test instances. It adds no empirical experiment or claim of ethical/metaphysical necessity.
 
 Run from the repository root:
 
@@ -28,4 +28,4 @@ The script uses the installed pinned Lean toolchain, compiles source snapshots i
 
 Application limits are explicit. Finite descriptions’ arbitrary output semantics do not constitute a verified universal-machine implementation. Lifting gives existence of a mathematical path under the represented law, not effective selection or actual physical infinity. Preserving a candidate norm requires a faithful interpretation of its complete content; these theorems do not justify the norm’s first ethical authority.
 
-The original handwritten notes and historical receipts are preserved. This is the current proof package, with [independent statement review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-REVIEW.md); old “no Lean verification” statements describe their original checkpoints.
+The original handwritten notes and historical receipts are preserved. This is the current proof package, with [independent statement review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETION-WARRANT-LEAN-REVIEW.md); old “no Lean verification” statements describe their original checkpoints.

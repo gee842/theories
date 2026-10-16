@@ -51,4 +51,4 @@ SHA-256 snapshot, 2026-10-06 02:17 UTC. Subsequent edits need their own binding;
 [memory]: ../../../../theories/becoming/history/MEMORY-CORRECTION-AND-SUCCESSION.md
 [empirical]: ../../../../theories/becoming/history/EMPIRICAL-SCOPE.md
 [plasticity]: ../../../../theories/becoming/history/EVALUATIVE-PLASTICITY.md
-[finish]: ../root-foundation/FIXED-FINISH-LINE-AUDIT.md
+[finish]: ../history/root-foundation/FIXED-FINISH-LINE-AUDIT.md

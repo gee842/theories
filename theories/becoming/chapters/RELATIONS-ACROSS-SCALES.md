@@ -1,12 +1,12 @@
 # 尺度之间的关系 / Relations across scales
 
-8 October 2026, Asia/Bangkok. AI-authored research following [Ren’s direction](../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). Extends the [exact systems projections](../history/SYSTEMS-COMPLEXITY-CHAOS.md) and [controlled refinement](../history/CONTROLLED-REFINEMENT.md). [Proof correspondence](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md) · [Integration, counterreview and sources](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md).
+8 October 2026, Asia/Bangkok. AI-authored research following [Ren’s direction](../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). Extends the [exact systems projections](../history/SYSTEMS-COMPLEXITY-CHAOS.md) and [controlled refinement](../history/CONTROLLED-REFINEMENT.md). [Proof correspondence](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md) · [Integration, counterreview and sources](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md).
 
 **一个尺度的描述是否充分，取决于它在实际变化中保留了哪些关系，以及我们据此要作出什么判断。较粗描述可以足够准确；总量预测完全准确，也仍可能遗漏具体位置的基本损失。组织关系改变时，原先充分的描述可能需要增加信息、缩短有效时域，或重新校准。**
 
 **A description’s adequacy depends on the relations it preserves through actual change and the judgment it is meant to support.** Coarser descriptions can be sufficiently accurate. An exact prediction of a total can nevertheless omit a basic loss at a particular position. Changing organization can require additional information, a shorter prediction horizon or renewed calibration.
 
-**Ren’s subsequent clarification makes the organizational connection explicit: cells participate in organs, organs in bodies, and bodies in ecosystems; cognition and the selection of activities occur within these relations.** The account below now distinguishes this actual organization from the maps used to describe it. The [embodied-scale integration and review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-INTEGRATION.md), [biological evidence](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-EVIDENCE.md) and [14 additional checked results](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-PROOF.md) preserve their distinct scopes.
+**Ren’s subsequent clarification makes the organizational connection explicit: cells participate in organs, organs in bodies, and bodies in ecosystems; cognition and the selection of activities occur within these relations.** The account below now distinguishes this actual organization from the maps used to describe it. The [embodied-scale integration and review](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EMBODIED-SCALES-INTEGRATION.md), [biological evidence](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EMBODIED-SCALES-EVIDENCE.md) and [14 additional checked results](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EMBODIED-SCALES-PROOF.md) preserve their distinct scopes.
 
 ## 1. 同一展开的不同描述 / Descriptions within one unfolding
 
@@ -58,7 +58,7 @@ flowchart LR
 
 The nodes select overlapping activities within a shared history; cognition is realized through some of the cells and organs already represented. Arrows identify explanatory connections requiring mechanism and evidence. The diagram is neither an anatomical map nor a claim that one experiment has measured every arrow.
 
-The [primary evidence assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-EVIDENCE.md) identifies four concrete tests. In mice, interfering with gut neuropod signaling changes sugar preference: a cellular contribution inside an organ matters to whole-animal choice. [Buchanan et al., 2022](https://pmc.ncbi.nlm.nih.gov/articles/mid/NIHMS1756304/). Neural feeding-related activity can also change before consumption and reverse after food removal; a contemporaneous bodily nutrient quantity alone misses relevant anticipation. [Chen et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4373539/).
+The [primary evidence assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EMBODIED-SCALES-EVIDENCE.md) identifies four concrete tests. In mice, interfering with gut neuropod signaling changes sugar preference: a cellular contribution inside an organ matters to whole-animal choice. [Buchanan et al., 2022](https://pmc.ncbi.nlm.nih.gov/articles/mid/NIHMS1756304/). Neural feeding-related activity can also change before consumption and reverse after food removal; a contemporaneous bodily nutrient quantity alone misses relevant anticipation. [Chen et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4373539/).
 
 In fruit flies, nutrient conditions and particular commensal bacteria alter food choice. [Leitão-Gonçalves et al., 2017](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000862). In a separate fruit-substrate experiment, fly participation changes yeast abundance and community composition, including reduced diversity; altering conditions favorable to one participant need not expand every other life’s possibilities. [Stamps et al., 2012](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0042238). These studies constrain different links. Their different preparations, species and timescales are not silently joined into one measured history.
 
@@ -193,7 +193,7 @@ For the specified threshold rule “choose true iff score ≥ \(\theta\),” sup
 
 A separate finite witness puts sensing, retention, selection, bodily acquisition and another living participant’s consumption in one shared state. Sensing followed by response transfers available support into the bodily store. Clamping the sensor changes the selected response despite equal starting support. Another participant can consume the shared unit after sensing: the retained plan persists until the attempted response, but its material opportunity is gone. Lean checks the actual core trace and conservation of the declared support count throughout every finite event list. The two participants are positions in the same process, not a separately given agent and environment.
 
-This witness tests the distinction between acquired information, chosen attempt and realized effect. Its Boolean sensor, memory, response rule and event schedule are supplied. Sensing is cost-free in this local law; metabolism, organ structure, population renewal and ecological regeneration are omitted. Thus it is a checked explanatory countermodel, not a physiological model, a derivation of consciousness or a sustainable ecosystem. The earlier **21** scale theorems and these **14** additional theorems have separate receipts; the latter freshly replay **63** inherited audits. [Correspondence and dependency audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-PROOF.md).
+This witness tests the distinction between acquired information, chosen attempt and realized effect. Its Boolean sensor, memory, response rule and event schedule are supplied. Sensing is cost-free in this local law; metabolism, organ structure, population renewal and ecological regeneration are omitted. Thus it is a checked explanatory countermodel, not a physiological model, a derivation of consciousness or a sustainable ecosystem. The earlier **21** scale theorems and these **14** additional theorems have separate receipts; the latter freshly replay **63** inherited audits. [Correspondence and dependency audit](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EMBODIED-SCALES-PROOF.md).
 
 ## 8. 本轮整合与后续检验 / Integration and further tests
 
@@ -206,7 +206,7 @@ The next stronger test should select one biological preparation and join a measu
 
 ## 9. 取得证据、修订描述并实际回应 / Acquired evidence, revised description and enacted response
 
-8 October 2026, continuation. A new checked history connects the earlier approximation criteria to an operative revision. Records, inquiry, available support, changing dependencies and response are roles within one evolving state. The result advances **acquired consequence → description revision → calibrated and feasible response**. It supplies an implementation condition for practical judgment; it does not establish the ethical authority of the target being protected. [Argument, dependencies, counterreview and sources](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md).
+8 October 2026, continuation. A new checked history connects the earlier approximation criteria to an operative revision. Records, inquiry, available support, changing dependencies and response are roles within one evolving state. The result advances **acquired consequence → description revision → calibrated and feasible response**. It supplies an implementation condition for practical judgment; it does not establish the ethical authority of the target being protected. [Argument, dependencies, counterreview and sources](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCALE-REVISION-INTEGRATION.md).
 
 **修订不只是换一种说法。** 依存改变后，取得的总量变化进入保留记录；进一步辨别取得被旧描述遗漏的坐标；修订后的预期实际改变所选回应。查询、辨别、修订和回应都要花费工作量，并在已声明的规律中经历时间。即使新描述正确，剩余支持不足也可能使回应不能实现。
 
@@ -248,7 +248,7 @@ The next study selected inquiry versus immediate response under matched evidence
 
 ## 11. 组织机制的组合与生物对应 / Composition of organized activity and biological correspondence
 
-8 October 2026. Ren requested completion after the distinction between component proofs and whole-account certification. The [new integration and completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZED-SCALES-INTEGRATION.md) adds **26 checked Lean theorems**, with **77 inherited audits**, and a reproducible reanalysis of **403 published measurements**. This completes a connected conditional construction and advances empirical correspondence. It does not certify the entire biological account.
+8 October 2026. Ren requested completion after the distinction between component proofs and whole-account certification. The [new integration and completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ORGANIZED-SCALES-INTEGRATION.md) adds **26 checked Lean theorems**, with **77 inherited audits**, and a reproducible reanalysis of **403 published measurements**. This completes a connected conditional construction and advances empirical correspondence. It does not certify the entire biological account.
 
 The same joint event law now connects regional material transfers, serial signal operations, cumulative retention, funded withdrawal, competing response conditions and renewed or interrupted exposure. An exact view compresses the signal route while retaining the distinctions needed by its actual law. General composition also covers selected activity when the successive dynamics and operative choices agree through their descriptions. These are checked interface requirements, not consequences of merely naming cells, organs or bodies.
 
@@ -256,14 +256,14 @@ Two histories from the same initial state acquire information at different times
 
 **局部操作经组织形成可传递的作用；持续后果参与选择；选择是否实现还取决于支持及竞争条件；实际活动再改变后续接触。** 形式模型中这些连接已接通，并保留断路、耗尽支持及重新接触的反例。但线性传递、保持规律、费用与时序仍为明确给定；细胞分化、组织发生和生态再生未由此推导。
 
-The [primary evidence assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZED-SCALES-EVIDENCE.md) now distinguishes enterococcal learning, a mapped motor circuit and newer epithelial-neural signaling results. The evidence requires region and context sensitivity and narrows the unspecified gut-to-activity connection. These preparations do not supply one matched trajectory calibrating the whole formal loop.
+The [primary evidence assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ORGANIZED-SCALES-EVIDENCE.md) now distinguishes enterococcal learning, a mapped motor circuit and newer epithelial-neural signaling results. The evidence requires region and context sensitivity and narrows the unspecified gut-to-activity connection. These preparations do not supply one matched trajectory calibrating the whole formal loop.
 
 **Remaining for the stronger request:** identify and validate the observation maps, mechanisms, delays and error bounds linking local physiology, acquired history, activity and subsequent microbial conditions in one preparation. Test held-out interventions and conventional rival models. Sustained ecological renewal and the generality of the account remain further empirical/explanatory obligations. The existing conditional foundation and earlier completed results retain their declared scopes.
 
 
 ## 12. 何时继续查询，何时直接回应 / When to inquire and when to respond
 
-8 October 2026, further continuation. **The useful amount of detail depends on the available responses, the conditions they must preserve and the time in which they must act.** A distinction matters for this task when histories compatible with the current evidence require incompatible responses. More information can make an adequate response selectable, but obtaining it also changes the history in which that response must occur. [Argument, exact hypotheses and self-counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md).
+8 October 2026, further continuation. **The useful amount of detail depends on the available responses, the conditions they must preserve and the time in which they must act.** A distinction matters for this task when histories compatible with the current evidence require incompatible responses. More information can make an adequate response selectable, but obtaining it also changes the history in which that response must occur. [Argument, exact hypotheses and self-counterreview](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-CHOICE-INTEGRATION.md).
 
 若当前证据所容许的各条历史仍有共同可行的回应，就不必仅因“描述可以更细”而继续查询。若这些历史需要互不相容的回应，进一步辨别才可能解除选择困难；但查询期间的真实变化、工作消耗和后续支持都须计入。这里解释的是具体任务中的认识充分性，不把任务目标本身当作已获得伦理证明。
 
@@ -314,7 +314,7 @@ The remaining application question is how actual evidence warrants the interval,
 
 ## 13. 历史、活动与后续生物条件的实测检验 / Measured history, activity and later biological conditions
 
-8 October 2026. [The empirical continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BIOLOGICAL-CONTINUATION-INTEGRATION.md) completes the selected public-data prediction comparison and burden analysis. It adds no new theorem: the earlier checked composition retains its supplied mechanisms and correspondence assumptions.
+8 October 2026. [The empirical continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BIOLOGICAL-CONTINUATION-INTEGRATION.md) completes the selected public-data prediction comparison and burden analysis. It adds no new theorem: the earlier checked composition retains its supplied mechanisms and correspondence assumptions.
 
 In 198 worms' mixed-density foraging data, prior encounter and exploitation densities improve held-out conditional prediction. A five-parameter history model has mean soft cross entropy **0.605695**, versus **0.621669** for an equally sized nonlinear current-density/time model. All encounters and 100 stochastic imputations for an animal stay together in one fold. The nonlinear rival wins for 73 animals, and a separately evaluated frozen transfer model underpredicts exploitation overall. These qualifications prevent turning a useful additional distinction into a universal rule that richer descriptions are always better.
 
@@ -329,7 +329,7 @@ The studies support a connected explanation in which tissue organization, sensor
 
 ## 14. 描述在变化中还能用多久 / How long a description remains usable
 
-8 October 2026, continuation. The preceding comparison assumed that the acquired loss remained constant. The new study allows the dependency to change between reading and response. **A record's usefulness depends on what can change before its consequence is realized, as well as on what the record originally captured.** [Argument, theorem map and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md).
+8 October 2026, continuation. The preceding comparison assumed that the acquired loss remained constant. The new study allows the dependency to change between reading and response. **A record's usefulness depends on what can change before its consequence is realized, as well as on what the record originally captured.** [Argument, theorem map and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md).
 
 时间戳能说明何时取得记录，不能独自保证记录仍适用于当前关系。读数误差、取得以后发生的变化、预测所覆盖的时段和回应容差都要相连检验。重新查询也不自动恢复确定性：查询之后仍可能继续改变。相应修订是把新读数与后续变化的可靠界一起使用。
 
@@ -378,7 +378,7 @@ The next substantive application must justify the change bounds and tolerances f
 
 ## 15. 实际变化界与目标的证据 / Evidence for actual change bounds and targets
 
-8 October 2026. [The available-data assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUND-CALIBRATION-INTEGRATION.md) completes the selected empirical test of section 14's supplied bounds, with a negative result for the tested certification route. It adds no new theorem. The formal results remain conditional; the broader empirical validation is still incomplete.
+8 October 2026. [The available-data assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BOUND-CALIBRATION-INTEGRATION.md) completes the selected empirical test of section 14's supplied bounds, with a negative result for the tested certification route. It adds no new theorem. The formal results remain conditional; the broader empirical validation is still incomplete.
 
 Three preserved temperature-control runs supply acquired readings, recorded times and controller code. Freeze each channel's maximum or 95th-percentile rate of readout change in the first half, then test retained-reading intervals in the second half at lags of 1, 2 and 5 observations. Separate-run transfer applies Physics calibration to ARX and ANN. Exact rational calculations and a separate Decimal implementation agree on 12,440 interval evaluations in 60 groups. The evaluations overlap; they are not independent trials or a new hardware experiment.
 
@@ -390,12 +390,12 @@ The controller code and original paper establish a final ±0.2°C setpoint band 
 
 **完成与未完成：** 已完成候选变化界的计算、来源含义核读、留出与迁移检验、逐项数值复核及理论整合。所试保留旧读数的办法不能提供该目标宽度内的证书；更好的动力学预测仍可能改善结果。真实温度的完整校准、变化域内的可靠界、实际回应证书，以及细胞—器官—身体—生态更新的联合验证仍未建立。
 
-The next discriminating work requires new correspondence evidence, specified in the [measurement protocol](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUND-CALIBRATION-PROTOCOL.md): traceable measurement calibration, acquisition/actuation timing, declared changed-condition and command domains, and justified application tolerances. Biological completion retains its identified-cohort and viable-renewal obligations from section 13. Neither a further supplied-bound example nor a protocol alone meets those requirements.
+The next discriminating work requires new correspondence evidence, specified in the [measurement protocol](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BOUND-CALIBRATION-PROTOCOL.md): traceable measurement calibration, acquisition/actuation timing, declared changed-condition and command domains, and justified application tolerances. Biological completion retains its identified-cohort and viable-renewal obligations from section 13. Neither a further supplied-bound example nor a protocol alone meets those requirements.
 
 
 ## 16. 分子保持、实测校准与有限生态回返 / Molecular retention, measured calibration and finite ecological return
 
-8 October 2026. Ren explicitly chose **full experimental validation**. The [new empirical integration](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BIOLOGICAL-RENEWAL-INTEGRATION.md) adds specific correspondence evidence while preserving that unfinished target.
+8 October 2026. Ren explicitly chose **full experimental validation**. The [new empirical integration](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BIOLOGICAL-RENEWAL-INTEGRATION.md) adds specific correspondence evidence while preserving that unfinished target.
 
 Sequence and pathway interventions in a bacterial-small-RNA study constrain acquired and inherited avoidance. The reanalyzed plate means retain an F1–F4 difference and near-zero F5 difference; neuronal reporter expression is measured separately. Exposure settings change across generations and neuron pairs lack worm identities, so neither absolute cross-generation signal calibration nor an individual reporter-to-action map is established. Independent PA14 reports include both F2 nonreplication and later positive replication; the latter's raw table also has unresolved count and reversed-sequence discrepancies. These findings remain part of the evidential scope.
 
@@ -405,12 +405,12 @@ A separate matched fluorescence/viable-count dataset supplies an actual observat
 
 The ecological return is no longer wholly unsupported: a published worm-dispersal experiment connects viable bacterial redistribution, subsequent bacterial growth and higher later worm population size over **144 hours**. Surface-adhesion mutants and artificial dispersal constrain this relation. It occurs with supplied nutrients; greater travel distance can reduce population growth. The finite evidence does not establish learned farming, indefinite renewal or a calibrated joining to the molecular-memory assays.
 
-**完成范围：** 新的原始数据核验、留出校准、有限生态回返的证据整合及来源问题审计已完成，无新增数学定理或生物实验。**仍未完成：** 同一可比实验准备中的细胞／组织—获得回应—活动—活菌更新联合预测，以及重复更新和其他参与者后果。The [joint measurement specification](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BIOLOGICAL-JOINT-VALIDATION.md) fixes the required observations and comparisons; saving that specification does not perform the experiment.
+**完成范围：** 新的原始数据核验、留出校准、有限生态回返的证据整合及来源问题审计已完成，无新增数学定理或生物实验。**仍未完成：** 同一可比实验准备中的细胞／组织—获得回应—活动—活菌更新联合预测，以及重复更新和其他参与者后果。The [joint measurement specification](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BIOLOGICAL-JOINT-VALIDATION.md) fixes the required observations and comparisons; saving that specification does not perform the experiment.
 
 
 ## 17. 保留动力学关系能改善什么 / What retaining dynamics improves
 
-8 October 2026. The [predictive-calibration continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTIVE-CALIBRATION-INTEGRATION.md) tests whether conventional forecasting improves on section 15's retained-reading intervals. It separates fitting, residual calibration and testing into chronological partitions, keeps all five declared models and tests three horizons. A separate numerical implementation reconstructs all **10,930 forecasts in 120 groups**, with maximum disagreement below 1.15×10⁻¹³. No new theorem or laboratory experiment is claimed.
+8 October 2026. The [predictive-calibration continuation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PREDICTIVE-CALIBRATION-INTEGRATION.md) tests whether conventional forecasting improves on section 15's retained-reading intervals. It separates fitting, residual calibration and testing into chronological partitions, keeps all five declared models and tests three horizons. A separate numerical implementation reconstructs all **10,930 forecasts in 120 groups**, with maximum disagreement below 1.15×10⁻¹³. No new theorem or laboratory experiment is claimed.
 
 A six-feature local-history model reduces test RMSE relative to retaining the latest reading in all **18** within-run channel/horizon comparisons. For example, the Physics T1 one-step RMSE falls from 0.336024°C to 0.098523°C. An equally sized model retaining both channels instead of the longer local history loses to the local-history model in all 18 comparisons. This is a capacity-allocation comparison, not an intervention removing physical coupling. Local history can retain the continuing effects of interaction without separately measuring every participant.
 
@@ -423,7 +423,7 @@ This improves the empirical account of retained information while preserving unc
 
 ## 18. 描述怎样支持接续 / How a description supports continuation
 
-2026-10-08。按 Ren“专注在理论推进”的指示，本轮把已有单次回应条件推进到**接续充分性**：[完整推导、反例与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md)。新的经验研究不再是本轮理论接口的完成门槛，已有数据及未完成验证各保留范围。
+2026-10-08。按 Ren“专注在理论推进”的指示，本轮把已有单次回应条件推进到**接续充分性**：[完整推导、反例与反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md)。新的经验研究不再是本轮理论接口的完成门槛，已有数据及未完成验证各保留范围。
 
 **一个描述当前足够，不保证它在行动改变条件以后仍足够。** 必须先选择当前相容情形都能实施的活动，再传播实际可能的后果，最后仅依据届时取得的记录选择下一步。不能把依赖不同未知真相的各条成功路线拼成一个实际上无从选择的方案。
 
@@ -437,12 +437,12 @@ A checked two-step counterexample makes the new distinction concrete. Two initia
 
 **14项新 Lean 定理／14项审计通过，9项空依赖，其余仅标准逻辑／经典依赖。** [源码](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean) · [实查回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-adequacy-verification.json)。已有各轮结果直接复用，本轮不重复计入其审计。递归可行性和反馈抽象已有成熟的常规理论先例；这里的贡献是接通当前理论的一步判断、信息限制与后续条件，不声称这些控制思想首次提出。
 
-The theoretical interface is complete at its stated scope. Its proposed observation-dependent composition connection is now addressed in section 19, reusing the [existing joint-realization account](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md) and subsequent completed global-support and changing-support results. Those completed results are premises to reuse, not tasks to reopen.
+The theoretical interface is complete at its stated scope. Its proposed observation-dependent composition connection is now addressed in section 19, reusing the [existing joint-realization account](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md) and subsequent completed global-support and changing-support results. Those completed results are premises to reuse, not tasks to reopen.
 
 
 ## 19. 局部回应怎样共同接续 / How local responses continue together
 
-2026-10-08。[本轮推导与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md)把上一节的观察分支方案接到共同活动。已有完整支持范围、变化占用及实际推进结果直接复用，不重开为未完成问题。
+2026-10-08。[本轮推导与反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-CONTINUATION-INTEGRATION.md)把上一节的观察分支方案接到共同活动。已有完整支持范围、变化占用及实际推进结果直接复用，不重开为未完成问题。
 
 **各处分别有效的方案要共同实施，还须证明共同作用仍被局部说明覆盖，以及每个实际可能的后续记录分支仍能共同实施。** 前一条件追踪彼此改变的后果；后一条件保留同一份支持、权限与时序，防止分开论证时重复许诺。
 
@@ -458,7 +458,7 @@ The checked finite repair uses four actual units for the same paired two-step pl
 
 ## 20. 相互依赖怎样有根据地接续 / Grounded mutual continuation
 
-2026-10-08。[本轮推导、前提与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEEDED-CONTINUATION-INTEGRATION.md)补上上一节的条件接口：从**已有共同支持和一步互相维持规律**，推导整棵有限观察方案上的共同可实施性，再直接调用已有合成定理。没有重新把保持、共同取得或实际推进的旧结果列为未完成。
+2026-10-08。[本轮推导、前提与反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SEEDED-CONTINUATION-INTEGRATION.md)补上上一节的条件接口：从**已有共同支持和一步互相维持规律**，推导整棵有限观察方案上的共同可实施性，再直接调用已有合成定理。没有重新把保持、共同取得或实际推进的旧结果列为未完成。
 
 **相互依赖可以有根据；仅凭相互许诺则不能证明已经启动。** 关键是时间关系：当前两项条件已经成立，本步共同活动依赖它们，其实际后果再形成下一步的条件。证明不用“对方下一步会成功”去反向保证同一步的自己成功。
 
@@ -474,7 +474,7 @@ A shared configuration example exchanges two retained activation conditions each
 
 ## 21. 证据怎样持续支持实施 / Evidence that continues to support action
 
-2026-10-08。[本轮推导与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-THROUGH-CHANGE-INTEGRATION.md)将第20节的真实启动条件接到取得证据。已有读数时效、变化支持、版本交接及可失实见证成果直接复用；新增的是从取得时相容范围，经行动前变化，进入同一共同方案的接口。
+2026-10-08。[本轮推导与反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVIDENCE-THROUGH-CHANGE-INTEGRATION.md)将第20节的真实启动条件接到取得证据。已有读数时效、变化支持、版本交接及可失实见证成果直接复用；新增的是从取得时相容范围，经行动前变化，进入同一共同方案的接口。
 
 **记录仍然正确地描述过去，不等于它仍足以支持当前行动。** 从取得时相容的每个状态出发，把读数之后、执行之前被容纳的变化都传播进去，才得到执行时应考虑的范围。实际状态和实际变化均被覆盖时，这个范围包含实际执行前情形。
 

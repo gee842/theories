@@ -1,6 +1,6 @@
 # Fallible structural inspection and actual correction
 
-The [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md) states the theory, correspondence, source comparison, counterreview and limits.
+The [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md) states the theory, correspondence, source comparison, counterreview and limits.
 
 Run from this directory:
 

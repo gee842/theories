@@ -13,7 +13,7 @@
 <details>
 <summary>RenewalExamples.lean — 36 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean`
 
@@ -70,7 +70,7 @@ Imports: `ResourceContinuation`
 <details>
 <summary>ResourceContinuation.lean — 29 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean`
 
@@ -120,7 +120,7 @@ Imports: `GenerativeCore`
 <details>
 <summary>SupportNecessity.lean — 24 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-SUPPORT-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-SUPPORT-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/SupportNecessity.lean`
 
@@ -317,7 +317,7 @@ Imports: `GenerativeCore`, `Depletion`, `RenewalBasics`
 <details>
 <summary>RenewalCharacterization.lean — 68 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalCharacterization.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CLAIMS-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalCharacterization.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PLURAL-CLAIMS-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalCharacterization.lean`
 
@@ -555,7 +555,7 @@ Imports: `RenewalClosure`, `RenewalAccounting`
 <details>
 <summary>RenewalPremises.lean — 26 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalPremises.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-DIVERSITY-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalPremises.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REGENERATIVE-DIVERSITY-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/RenewalPremises.lean`
 

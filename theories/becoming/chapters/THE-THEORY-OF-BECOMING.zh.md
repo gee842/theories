@@ -627,7 +627,7 @@ Ren 在《Truth exist》中写道（[来源](../../../sources/15-codex-theory-co
 **AI 的读法，依 Ren 2026-10-15 的交托采用。**
 - 预设读 Ren 所说自身“can not justify itself without some sort of "belief"”中的 belief。Ren 写的是自身的限度；把这一 belief 用作前提，是 AI 的一步；而沿一个关系次真，远强于某个延续有意义。
 - 覆盖：Ren 说“we”是“the universe/ecosystem that realizes its own existence”，支持把整体作为“we”的一种划法；“There is no absolute self”本身不给出覆盖。沿一个关系，覆盖成立，是因为含中心的每个封闭区域，整体在内，都算作自身的一种可容许划法。这一可容许性是实质的选择，也是可容许类不是对日常的、模糊的“自身”的超赋值的原因：它没有确定的非成员。
-- Ren 的“for all beings”最直接地读作对立场不变，即 N_std 的规则；有了预设与覆盖，对边界不变与它等价。Ren 的“universal invariations”是规律跨宇宙的不变；把它推广到意义，是 AI 的读法。否认这一步，就是认为预设只相对于一种划法或一个立场为真，或者，因为这一步两头都走，放弃预设。这一步取代此前路线的容差（[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)），并像容差连同 Chain 一样，承载公理在预设之外的全部内容，只是一步，而不是许多小步。从行动者的立场到不偏的伦理的论证，正是在这一步上受到争议：行动者相对与行动者中立的理由（Nagel 1970），Gewirth（1978）的类属一致性原则及其批评；Parfit（1984）把没有深层的自我读作削弱自利理论的特权，这里对应覆盖。它也不消解 Sidgwick 所说实践理性的二元，只把二元定位在这一步上。
+- Ren 的“for all beings”最直接地读作对立场不变，即 N_std 的规则；有了预设与覆盖，对边界不变与它等价。Ren 的“universal invariations”是规律跨宇宙的不变；把它推广到意义，是 AI 的读法。否认这一步，就是认为预设只相对于一种划法或一个立场为真，或者，因为这一步两头都走，放弃预设。这一步取代此前路线的容差（[审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)），并像容差连同 Chain 一样，承载公理在预设之外的全部内容，只是一步，而不是许多小步。从行动者的立场到不偏的伦理的论证，正是在这一步上受到争议：行动者相对与行动者中立的理由（Nagel 1970），Gewirth（1978）的类属一致性原则及其批评；Parfit（1984）把没有深层的自我读作削弱自利理论的特权，这里对应覆盖。它也不消解 Sidgwick 所说实践理性的二元，只把二元定位在这一步上。
 - 对手在哪里。沿一个关系，覆盖由构造成立，所以对手否认的是另一个前提。把意义奠基于一个已形成闭包的对手，沿该闭包不对之封闭的任何关系否认次真，如运作闭合不对供给封闭；沿它对之封闭的关系否认不变：它只在那个闭包处持有预设，如路线 (b) 在供给闭包处。只有它也把可容许的划法限于那个闭包时，它才否认覆盖。模糊的自身，在每种可容许划法都把陌生者排除在外处否认覆盖，在陌生者处于边缘处否认不变。降到零的分级权重，若在闭包之内降到零，否认次真；若在闭包之外，否认不变。现时目的的评价者否认次真。此前一次独立审查对通往 G0 的容差路线提出过前两者。这里定位这些否认，不驳倒它们。
 - Ren 的层级次序“the whole, and a weaker version is within the system that one is in, then the self”，是预设读法的次序：超真；沿影响次真，在 §6.10 为所在的系统提供的所及闭包处；沿空关系次真，在自身处。较弱版本对所及之内的每个部分给出公理的比较。所及闭包指向前方：在这一读法上，次序一路降到单纯的自身，不经过供给闭包，供给闭包在另一支上（`Flow.presupposition_order`）。这一方向依 Ren 2026-10-15 的交托采用（[D21](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md)）。
 
@@ -948,7 +948,7 @@ Ren 2026-10-15 把先前列在这里的读法与名称交 AI 以其最好的判�
 <a id="9-形式脊柱--the-formal-spine"></a>
 ## 9. 形式脊柱
 
-全部新的形式结果都陈述在同一条脊柱上。脊柱不能表达某个结果时，扩展脊柱，而不是另建模型。既有的通用伦理模块不复制、不改写：脊柱给出它们接口的实例（[实例分类表](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md)）。
+全部新的形式结果都陈述在同一条脊柱上。脊柱不能表达某个结果时，扩展脊柱，而不是另建模型。既有的通用伦理模块不复制、不改写：脊柱给出它们接口的实例（[实例分类表](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md)）。
 
 **核心纯净 / A pure core.** 按 [Ren 的要求](../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md)，核心（L0 及其两个基础模块，加 L1–L4）不导入核心以外的任何模块，其中每条源声明的公理报告为空，并且只用 Lean 的内置前导即可编译；检查器每次都检查这三点，并审计 Lean 生成的常量：其中依赖公理的只有带字段构造子的单射引理（`injEq`，依赖 `propext`），没有源声明使用它们。G0、C、D 与确保的正面根据在核心中陈述一次；桥接层证明既有模块的定义就是这些，依存方向从外围指向核心。外围可用任何合适的工具（Mathlib、Python）。核心是 Lean 包 `Becoming`：`import Becoming` 导入全部四层，桥接 `Becoming.Bridge` 在包内但不属核心（[包说明](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)）。
 

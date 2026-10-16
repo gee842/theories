@@ -1,6 +1,6 @@
 # Physical coverage of the proposed generative foundation
 
-Specialist assessment, 5 October 2026. Research direction: Yongxu Ren. AI-assisted mathematical and literature audit. Scope: the physical premises in the [root foundation](../root-foundation/ROOT-FOUNDATION.md), [turnover theorem](../root-foundation/TURNOVER-AND-CLOSURE.md), [information theorem](../root-foundation/INFORMATION-AND-RENEWAL.md), and [invariance memo](../root-foundation/INVARIANCE-AND-PRIOR-ART.md). This report preserves those documents and proposes an extension rather than silently changing their claims.
+Specialist assessment, 5 October 2026. Research direction: Yongxu Ren. AI-assisted mathematical and literature audit. Scope: the physical premises in the [root foundation](../root-foundation/ROOT-FOUNDATION.md), [turnover theorem](../root-foundation/TURNOVER-AND-CLOSURE.md), [information theorem](../root-foundation/INFORMATION-AND-RENEWAL.md), and [invariance memo](../history/root-foundation/INVARIANCE-AND-PRIOR-ART.md). This report preserves those documents and proposes an extension rather than silently changing their claims.
 
 ## 1. Decisive answer
 

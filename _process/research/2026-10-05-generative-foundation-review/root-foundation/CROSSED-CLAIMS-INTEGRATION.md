@@ -22,7 +22,7 @@
 
 **What changes the account / 修订条件。** Hidden irreversible or unique participation loss, changed scale burdens or prior opportunity claims can defeat an application. A justified permanent priority or positive-chance requirement within the fully described domain would challenge FR itself. Its next test is a substantively warranted insufficient/sufficient pair with the support relation fixed, not a new arbitrary score or another general recovery proof. / 真实反向关系可以推翻适用；在关系充分说明后仍成立的永久优先或机会论证可以推翻原则。完全排序、全体旧原则的形式一致性及整体零实质公理目标均未宣称完成。
 
-8 October 2026. AI-authored continuation under G0/J following Ren's “继续”. [Protocol](CROSSED-CLAIMS-PROTOCOL.md), [affirmative argument](CROSSED-CLAIMS-ARGUMENT.md), [proof scope](CROSSED-CLAIMS-PROOF.md), [primary-source ledger](CROSSED-CLAIMS-SOURCES.md) and [independent counterreview](CROSSED-CLAIMS-REVIEW.md) distinguish their roles. This is normative theory and a finite formal construction, not a current clinical allocation policy.
+8 October 2026. AI-authored continuation under G0/J following Ren's “继续”. [Protocol](../history/root-foundation/CROSSED-CLAIMS-PROTOCOL.md), [affirmative argument](CROSSED-CLAIMS-ARGUMENT.md), [proof scope](../history/root-foundation/CROSSED-CLAIMS-PROOF.md), [primary-source ledger](../history/root-foundation/CROSSED-CLAIMS-SOURCES.md) and [independent counterreview](../history/root-foundation/CROSSED-CLAIMS-REVIEW.md) distinguish their roles. This is normative theory and a finite formal construction, not a current clinical allocation policy.
 
 **新方向：在有根据的同等救助比较附近，一部分不等程度的冲突仍可能支持确定的多救；新形成的共同保护，也可能在不降低任何原有正当机会的情况下进一步减损。前者需要公开的局部稳定承诺，后者须由真实可共同实施的关系支持。**
 
@@ -30,7 +30,7 @@
 
 ## 1. 本轮接续什么
 
-[BC1/BC2](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md)与[LC](UNEQUAL-BASIC-LOSSES-INTEGRATION.md)已有各自完成范围。本轮进行中，[有限合并的情境研究](AGGREGATION-CONTEXT-INTEGRATION.md)也完成了六项定理／十五项审计、升级翻转和拼接障碍，以及“限制抵偿不等于删除根据”的正面修正。直接复用这些结果；本轮没有再次发现一般聚合循环、重新推导 J4，或把 LC 的比较理由升级为确定选择。
+[BC1/BC2](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md)与[LC](../history/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md)已有各自完成范围。本轮进行中，[有限合并的情境研究](../history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)也完成了六项定理／十五项审计、升级翻转和拼接障碍，以及“限制抵偿不等于删除根据”的正面修正。直接复用这些结果；本轮没有再次发现一般聚合循环、重新推导 J4，或把 LC 的比较理由升级为确定选择。
 
 现在要推进的是：数量与严重性反向时，能否正面支持至少一些判断，并说明真实新方案怎样改变机会。普遍目标要求这类选择约束能够解释其关系根据，而不能只服务于特定身份、文化或初始偏好。但具体损失跨生活形式的比较仍须证明适用；几种有限构造不等于普遍伦理已经完成。
 
@@ -50,7 +50,7 @@ LR defends a limited persistence of BC1's stronger priority. It does not deny th
 
 ## 3. 为什么不能把局部延续变成全局删除
 
-[新原典反审](CROSSED-CLAIMS-REVIEW.md)提出一个更具体的考验：甲的要求比丙强得多，可能给出让丙退让以保全甲的理由。但如果最后选的是乙、甲也没有被保全，就不能仅凭原来的甲丙比较，宣称丙对乙已经失去一切要求。要解释的是新的实际取舍，而不是把丙重新命名为“在此清单中不相关”。
+[新原典反审](../history/root-foundation/CROSSED-CLAIMS-REVIEW.md)提出一个更具体的考验：甲的要求比丙强得多，可能给出让丙退让以保全甲的理由。但如果最后选的是乙、甲也没有被保全，就不能仅凭原来的甲丙比较，宣称丙对乙已经失去一切要求。要解释的是新的实际取舍，而不是把丙重新命名为“在此清单中不相关”。
 
 有限形式诊断用三类互斥救助束，给定人数与严重性系数：一项乘十、两项乘六、四项乘四；只计不低于当前最强程度一半的要求。两选时，四项束胜过两项束；加入一项最强束后，过滤器把四项束置零，却选择两项束而不满足最强要求。这些数只检查明确算则，不代表生活的价值，也不是 LR。
 
@@ -80,6 +80,6 @@ The positive construction replaces the same lottery realization with newly feasi
 
 ## 6. 验证与完成记录
 
-本轮 **8 项新定理／23 项声明审计**已通过 Lean 4.29.1 实查；原实践模块的30项定理／46项审计作继承分列，另一个具体应用例不计新定理。确切范围、实际编译、源快照和依赖审计见[证明说明](CROSSED-CLAIMS-PROOF.md)及其回执；LR 的伦理辩护不由该数学模块证明。[独立反审](CROSSED-CLAIMS-REVIEW.md)分别审查正面论证、对手、源文本和形式回执，要求补明严格机会改善的正概率前提，本稿已据此修订。本轮没有新增经验测量。
+本轮 **8 项新定理／23 项声明审计**已通过 Lean 4.29.1 实查；原实践模块的30项定理／46项审计作继承分列，另一个具体应用例不计新定理。确切范围、实际编译、源快照和依赖审计见[证明说明](../history/root-foundation/CROSSED-CLAIMS-PROOF.md)及其回执；LR 的伦理辩护不由该数学模块证明。[独立反审](../history/root-foundation/CROSSED-CLAIMS-REVIEW.md)分别审查正面论证、对手、源文本和形式回执，要求补明严格机会改善的正概率前提，本稿已据此修订。本轮没有新增经验测量。
 
-独立评审已按声明范围接受修订后的论证与形式产物；形式部分为独立源文件／回执核验，没有声称另跑一次编译。当前论述接入[基本冲突章节](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities)。[维护检查](CROSSED-CLAIMS-CHECKS.json)核对本轮文件、链接、证明绑定和双语索引，不能据此认证未复核的并行来源或整个理论的真理。
+独立评审已按声明范围接受修订后的论证与形式产物；形式部分为独立源文件／回执核验，没有声称另跑一次编译。当前论述接入[基本冲突章节](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities)。[维护检查](../history/root-foundation/CROSSED-CLAIMS-CHECKS.json)核对本轮文件、链接、证明绑定和双语索引，不能据此认证未复核的并行来源或整个理论的真理。

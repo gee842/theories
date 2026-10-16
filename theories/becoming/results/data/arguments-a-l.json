@@ -17,8 +17,8 @@
     "source_sha256": "252b9181ef40c1880ac0c5a47fdc7985af49b61633dbeaccafb1a2d3025f2dcd",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ABSTRACTION-ACQUISITION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ABSTRACTION-ACQUISITION-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ABSTRACTION-ACQUISITION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ABSTRACTION-ACQUISITION-MATH.md"
     ]
   },
   {
@@ -62,8 +62,8 @@
     "source_sha256": "13b8dc19be1d76c45b103632df143d40d903049819d2592f4a0761f9c3d7a370",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-AXIS-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-AXIS-COUNTERREVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-AXIS-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-AXIS-COUNTERREVIEW.md"
     ]
   },
   {
@@ -108,7 +108,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md"
     ],
     "status_code": "defended-open"
   },
@@ -146,16 +146,16 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REFORM-EVIDENCE-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md"
     ],
     "status_code": "conditional-verified"
   },
@@ -177,8 +177,8 @@
     "source_sha256": "5728b31b095b70a6c5c141cd1ffc66b49e0109d96194202c8fdce878d91cb647",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-FORMATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-FORMATION-MATH.md"
     ]
   },
   {
@@ -199,8 +199,8 @@
     "source_sha256": "69e7570e1f5a4ccd987ccb92629babaaa23de4bfbf0f2a7cbc82ddb140db3ede",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-LEARNING-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-LEARNING-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-LEARNING-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-LEARNING-MATH.md"
     ]
   },
   {
@@ -230,11 +230,11 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-WARRANT-ARGUMENT.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONSTITUTIVE-WARRANT-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/derived-history-law-verification.json"
     ],
     "status_code": "relative-result-universal-open"
@@ -261,8 +261,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-CRITERION-REVIEW.md"
     ]
   },
   {
@@ -283,8 +283,8 @@
     "source_sha256": "7c60fda913269c1cced163467d74f1d00c6db3ac773a3e10f11406f27e49ccf1",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/AUTONOMOUS-METHOD-FORMATION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/AUTONOMOUS-METHOD-FORMATION-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AUTONOMOUS-METHOD-FORMATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AUTONOMOUS-METHOD-FORMATION-MATH.md"
     ]
   },
   {
@@ -313,14 +313,14 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MaintenanceBaseline.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-CONFLICT-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-LOSS-SEVERITY-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BASIC-CONFLICT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BASIC-LOSS-SEVERITY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md"
     ],
     "status_code": "explicit-premise-progress-universal-open"
   },
@@ -346,8 +346,8 @@
     ],
     "evidence": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-compatibility-verification.json",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md"
     ],
     "status_code": "relative-result-universal-open"
   },
@@ -375,7 +375,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/aggregation-context-verification.json",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-revision-verification.json",
@@ -426,8 +426,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CLAIM-EXECUTION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CLAIM-EXECUTION-INTEGRATION.json"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CLAIM-EXECUTION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CLAIM-EXECUTION-INTEGRATION.json"
     ]
   },
   {
@@ -457,11 +457,11 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md"
     ],
     "status_code": "mixed-verified-open"
   },
@@ -483,7 +483,7 @@
     "source_sha256": "037e4423ef348b2291c8f69450e9f0143dcf6386dcefca9c921d05842de8cd64",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-RECIPROCITY-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COGNITION-RECIPROCITY-REVIEW.md"
     ]
   },
   {
@@ -550,9 +550,9 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-EXTENSION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONCERN-EXTENSION-INTEGRATION.md",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/concern-extension-verification.json",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md"
     ],
     "status_code": "conditional-verified"
   },
@@ -578,8 +578,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/RenewalExamples.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-SUPPORT-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-SUPPORT-MATH.md"
     ]
   },
   {
@@ -604,9 +604,9 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativePretrainingEvidenceModel.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MECHANISM-STATUS-RECONCILIATION.md"
     ]
   },
   {
@@ -629,8 +629,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControlledRefinement.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTROLLED-REFINEMENT-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTROLLED-REFINEMENT-MATH.md"
     ]
   },
   {
@@ -676,7 +676,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RealFeedback.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CYBERNETICS-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CYBERNETICS-REVIEW.md"
     ]
   },
   {
@@ -697,8 +697,8 @@
     "source_sha256": "03c984b22eb09057415ab98361795d597ac6f1eab606496f864704e584a1ac57",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-NORMATIVE-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-NORMATIVE-REVIEW.md"
     ]
   },
   {
@@ -723,8 +723,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCoreTreeModel.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEEPER-ROOT-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEEPER-ROOT-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEAN-MODEL-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-INTEGRATION.md"
     ]
   },
@@ -746,8 +746,8 @@
     "source_sha256": "f3208aff28c56fe697bb677b867c3f861b3bea894f17b655e95f919201cc28db",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-SCOPE-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EMPIRICAL-SCOPE-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md"
     ]
   },
   {
@@ -768,7 +768,7 @@
     "source_sha256": "7e4c5fed4bf6215296492fb0911676d6111d706d83a7f4b705666f0899d652d4",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ETHICAL-NATURALISM.md"
     ]
   },
   {
@@ -793,7 +793,7 @@
     ],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-VALUE-SCOPE.md",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json"
     ],
@@ -817,8 +817,8 @@
     "source_sha256": "028e1978019f65cfeb107110023ff3bfea13263a0f1d6598e721ed951e799419",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-CONTRACT.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FUTURE-REPORTING-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FUTURE-REPORTING-CONTRACT.md"
     ]
   },
   {
@@ -843,8 +843,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-EVIDENCE-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-APPLICATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/APPLICATION-EVIDENCE-MATH.md"
     ]
   },
   {
@@ -868,8 +868,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-GROUNDING-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-GROUNDING-ASSESSMENT.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-GROUNDING-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-GROUNDING-ASSESSMENT.md"
     ]
   },
   {
@@ -893,8 +893,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-IMPLEMENTATION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-PLASTICITY-IMPLEMENTATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md"
     ]
   },
   {
@@ -918,8 +918,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/SuccessionHistoryInterface.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-SUCCESSION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-SUCCESSION-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-SUCCESSION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-SUCCESSION-MATH.md"
     ]
   },
   {
@@ -943,8 +943,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationWitness.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-INTEGRATION.json"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-UPTAKE-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-UPTAKE-INTEGRATION.json"
     ]
   },
   {
@@ -998,10 +998,10 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
       "sources/evolutionary-selection/evolutionary-organization/README.md"
     ],
     "status_code": "conditional-verified-universal-open"
@@ -1029,7 +1029,7 @@
     ],
     "evidence": [
       "_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md"
     ]
   },
   {
@@ -1061,13 +1061,13 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
     ],
     "status_code": "relative-result-universal-open"
@@ -1094,8 +1094,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedInquiryModel.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md"
     ]
   },
   {
@@ -1211,8 +1211,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/formal/FormedRouteMonitor.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FORMED-ROUTE-MONITOR-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FORMED-ROUTE-MONITOR-MATH.md"
     ]
   },
   {
@@ -1233,9 +1233,9 @@
     "source_sha256": "6e28d8ee23609c8e2aec4360d18673eb636ae23623892d4274775aa584106c76",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MECHANISM-STATUS-RECONCILIATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md"
     ]
   },
   {
@@ -1263,11 +1263,11 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md"
     ],
     "status_code": "defended-open"
   },
@@ -1299,12 +1299,12 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SUPPORT-USE-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATED-LOGIC-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ACQUIRED-SUPPORT-USE-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md"
     ],
     "status_code": "relative-result-universal-open"
   },
@@ -1330,8 +1330,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/EthicalOrientation.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELF-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATED-SELF-REVIEW.md"
     ]
   },
   {
@@ -1357,9 +1357,9 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEAN-MODEL-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md"
     ]
   },
   {
@@ -1381,7 +1381,7 @@
     "lean": [],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DEVELOPMENT-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DEVELOPMENT-REVIEW.md"
     ]
   },
   {
@@ -1405,14 +1405,14 @@
     ],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md"
     ]
   },
   {
@@ -1438,8 +1438,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/verification/CompletionAudit.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATHEMATICAL-ADMISSIBILITY-REVIEW.md"
     ]
   },
   {
@@ -1463,9 +1463,9 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecursiveSelectionInheritance.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-WARRANT-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECURSIVE-GENERATIVE-SELECTION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECURSIVE-WARRANT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/V73-MECHANISM-AUDIT.md"
     ]
   },
   {
@@ -1494,9 +1494,9 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/DiagnosticTracking.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REFORM-EVIDENCE-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
       "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING.md"
     ],
@@ -1520,8 +1520,8 @@
     "source_sha256": "65e47b392eb200b07d50d06da540ebdcf67d74bcaeac425cb728aee57e8e9c0c",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-MAPPING-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-MAPPING-REVIEW.md"
     ]
   },
   {
@@ -1546,9 +1546,9 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HUIGEN-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md"
     ]
   },
   {
@@ -1569,8 +1569,8 @@
     "source_sha256": "6141372621031280dc7be7a2f069358c1cd1d9776ce895e9c0db3c562ddfed8a",
     "lean": [],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-MATH.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-MATH.md"
     ]
   },
   {
@@ -1593,8 +1593,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeAttainableQuestionsModel.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-CONTINUATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md"
     ]
   },
   {
@@ -1617,8 +1617,8 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-CHECKS.json"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-REVISION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-REVISION-CHECKS.json"
     ]
   },
   {
@@ -1732,13 +1732,13 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-REVISION-TEST.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-REVISION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/G0-AND-KNOWLEDGE.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-SOURCES.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SELECTIVE-REVISION-TEST.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MODEL-REVISION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md"
     ],
     "status_code": "defended-open"
   },
@@ -1763,7 +1763,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-INTERFACE-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEARNING-INTERFACE-REVIEW.md",
       "_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md"
     ]
   },
@@ -1813,9 +1813,9 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
     ]
   },
   {
@@ -1839,13 +1839,13 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRecovery.lean"
     ],
     "evidence": [
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-PROOF.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-REVIEW.md"
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-REALIZATION-PROOF.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-RECOVERY-PROOF.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-RECOVERY-EVIDENCE.md",
+      "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-RECOVERY-REVIEW.md"
     ]
   }
 ]

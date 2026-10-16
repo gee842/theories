@@ -1,16 +1,16 @@
 # 本然良知的生成演化
 
-2026年10月7日。依 Ren [先记入项目上下文并开始推进](../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)的方向，接续[王阳明整体整合](WANG-YANGMING.md)。本页为当前理论表述；[肯定论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-ARGUMENT.md)、[原始研究评估](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md)、[形式对应](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-MATH.md)与[反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-REVIEW.md)共同限定其范围。
+2026年10月7日。依 Ren [先记入项目上下文并开始推进](../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)的方向，接续[王阳明整体整合](WANG-YANGMING.md)。本页为当前理论表述；[肯定论证](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-ARGUMENT.md)、[原始研究评估](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md)、[形式对应](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-MATH.md)与[反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-REVIEW.md)共同限定其范围。
 
 **工作主张：生成活动通过改变继续、发育和再形成的条件，能够形成内生演化压力；感应、照料、理解及纠正能力可以在这种历史中产生、传递和转化，成为个体先于显性道德反省而起作用的倾向。** 这是正在建立的生成解释，既不把良知作为额外公理，也不预告所有社会性演化必然走向普遍仁爱。
 
-首轮已完成一项形式连接与三项原始研究的定向评估：**复制模板占优与回应结构在后继中增多，具有不同的条件；照料经历也可以参与后继照料能力的再形成。** 前者已有19项新增 Lean 声明实际检查，后者有分别限定的经验支持；二者尚未构成同一被验证的良知演化历史。记录见[首轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md)。
+首轮已完成一项形式连接与三项原始研究的定向评估：**复制模板占优与回应结构在后继中增多，具有不同的条件；照料经历也可以参与后继照料能力的再形成。** 前者已有19项新增 Lean 声明实际检查，后者有分别限定的经验支持；二者尚未构成同一被验证的良知演化历史。记录见[首轮整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md)。
 
-**续轮已把发展中的回应重建与进一步形成接成一段实际历史：**同样的材料组织和支持，经过不同接触时序，会形成有效或失配的回应联结；回应所改变的条件随后支持再下一代的实际重建与运行。新增17项 Lean 声明已实际检查。这个有限连接保留失配、额外修复通路及支持耗尽，不等于完整良知已经产生；见[续轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md)。
+**续轮已把发展中的回应重建与进一步形成接成一段实际历史：**同样的材料组织和支持，经过不同接触时序，会形成有效或失配的回应联结；回应所改变的条件随后支持再下一代的实际重建与运行。新增17项 Lean 声明已实际检查。这个有限连接保留失配、额外修复通路及支持耗尽，不等于完整良知已经产生；见[续轮整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md)。
 
-**前轮认识接口：**两项幼儿原始研究为回应辨别实际活动中的目标—手段关系提供支持，约束纯动作完成、字面服从与固定物品偏好等解释。它们未直接观察完整发展史或伦理目的修订。本轮复用已有形式结果审查对应，没有新增模型、Lean 声明或普遍伦理证明；见[校准研究整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md)。
+**前轮认识接口：**两项幼儿原始研究为回应辨别实际活动中的目标—手段关系提供支持，约束纯动作完成、字面服从与固定物品偏好等解释。它们未直接观察完整发展史或伦理目的修订。本轮复用已有形式结果审查对应，没有新增模型、Lean 声明或普遍伦理证明；见[校准研究整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-CALIBRATION-INTEGRATION.md)。
 
-**最新实践连接：**从生生方向论证手段误认、目的改变、知情拒绝及既有承担怎样改变回应；新增20项 Lean 声明检查实际支持交接、失败、恢复及无替代的有限结束。交接可行性与其伦理根据分别审查，见[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)。
+**最新实践连接：**从生生方向论证手段误认、目的改变、知情拒绝及既有承担怎样改变回应；新增20项 Lean 声明检查实际支持交接、失败、恢复及无替代的有限结束。交接可行性与其伦理根据分别审查，见[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)。
 
 ## 1. 本然有来历，关切可以不以私人回报为目的
 
@@ -44,7 +44,7 @@
 h(AA+HA)>a(AH+HH).
 \]
 
-这与模板占优所用的行加总不同。忠实传递使两者重合，但不是结构增多的必要条件；两个方向的改变权重相等也足以使两种比较重合。完整假设及所用分数表示见[数学说明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-MATH.md)。
+这与模板占优所用的行加总不同。忠实传递使两者重合，但不是结构增多的必要条件；两个方向的改变权重相等也足以使两种比较重合。完整假设及所用分数表示见[数学说明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-MATH.md)。
 
 反例保留两类均在场、所有四种传递权重均为正：初始 `A=H=1`，四格权重为 `(1,5,2,2)`。模板机会是 `A:H=6:4`，新生回应结构却是 `A:H=3:7`；`A` 的下一步比例均值由 `1/2` 降到 `13/30`。这个传递扩展尚未实现为原材料规律中的突变事件；它精确否定的是“模板被选择，因此后继回应结构必定增加”的无条件推论。
 
@@ -60,7 +60,7 @@ h(AA+HA)>a(AH+HH).
 | Ben-Ami Bartal 等，2014：共同居住及寄养后的开门帮助 | 发育与成年经历能够改变帮助的关系范围。 | 不能写成完全零同品系经验，不能排除所有动机替代或遗传影响。 |
 | Francis 等，1999：照料组间寄养及后续母性行为 | 先前照料参与后续照料方式的形成，构成跨代再形成的一条实际路径。 | 没有测得种群中的选择优势；跨代相似也不是全部良知的遗传。 |
 
-原文入口、方法限制和阅读范围见[来源评估](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md)。它们给予正面研究根据：关切相关行为不必从显性道德计算开始，回应范围会在实际关系中发展，照料本身也能形成后续照料。它们尚未独立认证行为的非工具性动机、普遍伦理可靠性或整个演化链。
+原文入口、方法限制和阅读范围见[来源评估](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md)。它们给予正面研究根据：关切相关行为不必从显性道德计算开始，回应范围会在实际关系中发展，照料本身也能形成后续照料。它们尚未独立认证行为的非工具性动机、普遍伦理可靠性或整个演化链。
 
 ## 5. 续轮连接：发展重建与进一步形成
 
@@ -77,19 +77,19 @@ h(AA+HA)>a(AH+HH).
 
 这些是“读取—联结—动作”小组织的实际历史，不是动物照料的复现，也没有将已有评价接续的全部评价器、档案和访问结构迁入。既有特定责任履行后的撤回等实践修订成果继续有效，不能因新模型较小就将其重新列为缺失。
 
-前轮传递公式也已接到两个实际测试结果的有限表格。较早组织按本次实际修复前史分类，后继按新测试结果分类；这不是同一习得架构的忠实复制。两条历史的等权是声明的分析采样，未识别自然发生率；一般初始类别数量不是任一见证历史的材料种群。接合范围及其分数条件见[形式对应](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-MATH.md)。
+前轮传递公式也已接到两个实际测试结果的有限表格。较早组织按本次实际修复前史分类，后继按新测试结果分类；这不是同一习得架构的忠实复制。两条历史的等权是声明的分析采样，未识别自然发生率；一般初始类别数量不是任一见证历史的材料种群。接合范围及其分数条件见[形式对应](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-DEVELOPMENT-MATH.md)。
 
 新增17项声明经 Lean 4.29.1 实际编译检查，连同继承模块共107项审计；15项新声明仅依赖标准 `propext`，2项能量通式另用 `Quot.sound`。没有未证占位或自定义伦理公理；接触、绑定、组装和行动的局部规律仍明确给定。[通过回执](../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/verification.json)保留实际源与日志；全史的材料账在各前缀检查，能量账不含中途补给或重置。这不宣称已经证明扩展过程对原模型的全域精化。
 
-发展轮另直接评估 Weaver 等2004年母性照料与后续调节研究。它支持早期经历形成以后实际运行的调节关系，未验证这里的采样／绑定律、再形成优势或伦理判断。与前轮不同研究的界限仍保留，详见[来源评估](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-SOURCES.md)。
+发展轮另直接评估 Weaver 等2004年母性照料与后续调节研究。它支持早期经历形成以后实际运行的调节关系，未验证这里的采样／绑定律、再形成优势或伦理判断。与前轮不同研究的界限仍保留，详见[来源评估](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-DEVELOPMENT-SOURCES.md)。
 
 ## 6. 认识接口：所需随共同活动而具体化
 
-良知生成解释还须说明形成的能力辨明了什么。本轮[肯定论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md)由实际研究约束一个有限主张：回应可以辨别物品在当前活动中的作用，而不只复制动作或请求。物的适用性、被表达的目的与实际回应，是同一实践中的关系；“坏物件”没有脱离用途的固定负值。
+良知生成解释还须说明形成的能力辨明了什么。本轮[肯定论证](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-CALIBRATION-ARGUMENT.md)由实际研究约束一个有限主张：回应可以辨别物品在当前活动中的作用，而不只复制动作或请求。物的适用性、被表达的目的与实际回应，是同一实践中的关系；“坏物件”没有脱离用途的固定负值。
 
 Hepach 等（2016）比较任务相关物与物体复位、表面动作的关系。在视频中，收到相关或无关物以后，成人都停止伸手；社会条件中的条件性瞳孔结果及现场选择为任务相关内容提供支持。瞳孔也允许预期违背等解释，现场儿童仍会捡无关物，视频未呈现终局任务已经完成。不能据此宣称儿童已经表现出普遍合宜的停止规则。
 
-Martin 与 Olson（2013）比较明确请求与物品对当前目标的适用性。三岁儿童的选择随两者关系变化；同一破杯在切面团等用途下仍可适用，玩具电话也可作镇纸。这削弱字面服从和“永远选择完好物”的解释。关键用途比较在儿童之间平衡，并未追踪同一儿童当场改学一个新目的；作者也未检验违背知情真实愿望的强代决。[来源与具体限制](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md)保留两项研究的阅读范围和各自的对照。
+Martin 与 Olson（2013）比较明确请求与物品对当前目标的适用性。三岁儿童的选择随两者关系变化；同一破杯在切面团等用途下仍可适用，玩具电话也可作镇纸。这削弱字面服从和“永远选择完好物”的解释。关键用途比较在儿童之间平衡，并未追踪同一儿童当场改学一个新目的；作者也未检验违背知情真实愿望的强代决。[来源与具体限制](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-CALIBRATION-SOURCES.md)保留两项研究的阅读范围和各自的对照。
 
 这为本然良知所需的一项早期认识能力提供了经验接点：共同活动的实际内容能够进入回应，表面线索不是唯一解释。它未证明天生完备、没有先前学习、已经排除显性推理或具有普遍道德可靠性，也未与上一轮材料模型合成一条已验证的生物发展史。
 
@@ -97,11 +97,11 @@ Martin 与 Olson（2013）比较明确请求与物品对当前目标的适用性
 
 准确的操作控制可以参与关切。需要检验的是，某个局部目标或位置是否越过其根据，成为裁定整个继续的特权；不能用控制架构的名字直接判不仁，也不能用成功帮助直接判仁。有限、有根据的终局安排仍可能合理，无须永远维持可修订状态。这些伦理比较未由两项实验裁决。
 
-本轮[形式对应审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md)复用已检查的履行、语义校准、实际后果形成判据及整体接续接口。收到物件不能直接代入“真实履行完成”；跨用途选择也不满足作用律不变的全部前提。审计核对了三个相关旧回执的源、日志及编译器绑定，没有新增定理或重复编译。新的证据支持所声明的有限理解解释；成熟关系性控制与非工具性关切在这些比较中仍未独立区分，也不能据此取消证据对较简单解释的判别力。
+本轮[形式对应审计](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-CALIBRATION-CORRESPONDENCE.md)复用已检查的履行、语义校准、实际后果形成判据及整体接续接口。收到物件不能直接代入“真实履行完成”；跨用途选择也不满足作用律不变的全部前提。审计核对了三个相关旧回执的源、日志及编译器绑定，没有新增定理或重复编译。新的证据支持所声明的有限理解解释；成熟关系性控制与非工具性关切在这些比较中仍未独立区分，也不能据此取消证据对较简单解释的判别力。
 
 ## 7. 同一关切可以改变回应，接续也可以通过交接实现
 
-Ren 对[生生不息正面伦理方向](../history/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction)的新澄清，使本轮能进一步说明实践内容。关切所指可以是生活、理解与关系的继续形成；手段、目的、参与方式及承担本身也会在其中改变。因此，同一关切不要求总是帮助更多、服从请求或保存原安排。[本轮论证与反审整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)区分四种变化：
+Ren 对[生生不息正面伦理方向](../history/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction)的新澄清，使本轮能进一步说明实践内容。关切所指可以是生活、理解与关系的继续形成；手段、目的、参与方式及承担本身也会在其中改变。因此，同一关切不要求总是帮助更多、服从请求或保存原安排。[本轮论证与反审整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)区分四种变化：
 
 | 实际变化 | 回应须辨明的内容 |
 |---|---|
@@ -112,7 +112,7 @@ Ren 对[生生不息正面伦理方向](../history/UNIFIED-ETHICAL-GROUNDING.md#
 
 四者可同时发生，不能各配一个固定动作。例如，新的理解可以形成新的制作目的；坚持完成旧练习可能阻断它，而贸然撤去原支持又可能使另一项活动失去条件。建立真实的替代支持、让原参与结束，是一种有内容的回应。它是否改善整体，还须说明接续了什么生成能力，以及消耗、新负担和其他损失；“还能运行”和“可以退出”两个事实并不独自等于整体更善。
 
-[原典核读](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md)连接《答顾东桥书》的权变、同体中的差等与取舍，以及家书中的求归与当时承担。阳明的拟归条件提供具体实践理解，未证明实际移交已经完成；原说的君臣之义、亲亲和本然良知亦不直接认证现代权限。拒绝、关切与有界接续的现代重构保持明示。
+[原典核读](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-SOURCES.md)连接《答顾东桥书》的权变、同体中的差等与取舍，以及家书中的求归与当时承担。阳明的拟归条件提供具体实践理解，未证明实际移交已经完成；原说的君臣之义、亲亲和本然良知亦不直接认证现代权限。拒绝、关切与有界接续的现代重构保持明示。
 
 新的 [SupportHandoff.lean](../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/SupportHandoff.lean)检查一个有限机制前提：同一过程中，由原料形成支承和实际依存活动，再组装、接通并实际运行替代通路，解除原支承后完成实际产物。材料及每步运行支持都有通式核算，完成不只是清除标记。
 
@@ -123,7 +123,7 @@ Ren 对[生生不息正面伦理方向](../history/UNIFIED-ETHICAL-GROUNDING.md#
 | 先拆旧、再装连新，空档中没有运行尝试 | 同样可以无失败完成。先建后撤不是必要顺序；此模型没有墙钟等待或持续需求规律。 |
 | 仅经原支承完成，再结束 | 不形成替代也可真正完成。给定七单位支持足以走完这条历史，却不足以走完所示十步交接。 |
 
-新增20项声明经 Lean 4.29.1 实际检查；[回执](../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/verification.json)绑定源码、日志和编译器。10项无命名公理依赖，2项仅用 `propext`，8项使用 `propext` 与 `Quot.sound`。所给组装律、三件配额和每步支持消耗仍是局部输入；没有把依存、成功或没有失败定义成仁。模型也未实现四种判断的自主形成、同一生物发展史或伦理可靠性。[精确形式对应](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-MATH.md)区分新证明与既有履行、撤权和目的纠正结果。
+新增20项声明经 Lean 4.29.1 实际检查；[回执](../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/verification.json)绑定源码、日志和编译器。10项无命名公理依赖，2项仅用 `propext`，8项使用 `propext` 与 `Quot.sound`。所给组装律、三件配额和每步支持消耗仍是局部输入；没有把依存、成功或没有失败定义成仁。模型也未实现四种判断的自主形成、同一生物发展史或伦理可靠性。[精确形式对应](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-MATH.md)区分新证明与既有履行、撤权和目的纠正结果。
 
 准确控制可以参与关切；有害活动也可以可靠交接。因此，交接机制不是仁的充分条件。反审保留确有生成收益的限制安排、真实损失与没有生产后续的终末安宁，不能靠“控制”或“退出”的名字预定评价，也不把生先改成已被独立判善的内容。
 
@@ -135,4 +135,4 @@ Ren 对[生生不息正面伦理方向](../history/UNIFIED-ETHICAL-GROUNDING.md#
 
 下一项需要辨明的是：当目的改变或知情拒绝与已有依存真正冲突时，生生方向怎样支持接续、改向或终结的具体范围，为什么这项理由应由某种参与关系承担，以及什么情况会使原判断失效。形成与传递研究须检验实际习得的辨别能否迁移到这种变化；不能以帮助次数、模板留存或产物数量代替校准。
 
-此方向服务于[普遍元伦理目标](../history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)：实际处境、伦理意义与能力形成可以在共同解释中相互支持和受检验。普遍适用允许有根据的差等与不同责任，不要求所有智能通过同一演化史取得同一能力。[规范接口](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md)原有能力审计保留；新正面方向已改变其前轮研究入口。良知的完整生成、可靠性、生生方向的普遍规范有效性及跨范围冲突仍待完成；本轮没有宣告无假设证明。
+此方向服务于[普遍元伦理目标](../history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)：实际处境、伦理意义与能力形成可以在共同解释中相互支持和受检验。普遍适用允许有根据的差等与不同责任，不要求所有智能通过同一演化史取得同一能力。[规范接口](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md)原有能力审计保留；新正面方向已改变其前轮研究入口。良知的完整生成、可靠性、生生方向的普遍规范有效性及跨范围冲突仍待完成；本轮没有宣告无假设证明。

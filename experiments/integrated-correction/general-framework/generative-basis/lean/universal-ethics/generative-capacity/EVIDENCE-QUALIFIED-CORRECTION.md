@@ -1,6 +1,6 @@
 # Evidence-qualified correction
 
-8 October 2026. [Research argument, source assessment and counterreview](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md).
+8 October 2026. [Research argument, source assessment and counterreview](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md).
 
 Run `python3 check_evidence_qualified_correction.py` from this directory. It builds frozen sources with Lean 4.29.1, audits the 47 explicit declarations in [EvidenceQualifiedCorrection.lean](EvidenceQualifiedCorrection.lean), and compares [the case runner](EvidenceQualifiedCorrectionCases.lean) with a separately expressed Python reference. The [current receipt](evidence-qualified-correction-verification.json) binds retained sources, compiler, helpers and logs.
 

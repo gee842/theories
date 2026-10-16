@@ -1,6 +1,6 @@
 # Retained evidence before further teaching
 
-6 October 2026. Additive investigation of the unchanged plasticity law. The [proof module](../PretrainingEvidence.lean) imports the original witness; [the mechanism note](../../../../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-MECHANISM.md) explains its source and interpretation scopes.
+6 October 2026. Additive investigation of the unchanged plasticity law. The [proof module](../PretrainingEvidence.lean) imports the original witness; [the mechanism note](../../../../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRETRAINING-EVIDENCE-MECHANISM.md) explains its source and interpretation scopes.
 
 For complete faithful non-replacement pairs starting before count four, the proof conserves recipient stock plus twice occupied sockets. From the actual empty-socket entrance with stock 40, occupancy therefore identifies net teaching depletion exactly. Sixteen audited theorems also connect the actual count-four state, cleared latches, retained replacement parts and the distinct service/teaching guards. No existing event uses the new mathematical cumulative readout. No ethical premise is proved.
 

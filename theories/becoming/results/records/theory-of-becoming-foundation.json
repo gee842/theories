@@ -111,14 +111,14 @@
   ],
   "counterexamples": [
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
       "detail": {
         "en": "A pooled representation can invent unsupported continuations. Its repair and actual context change retain genuine terminality without refuting the full account.",
         "zh": "合并表示会虚构无支持接续；其修复及实际情境变化保留真实终止，不反驳完整论述。"
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
       "detail": {
         "en": "The primary quantum-switch comparison challenges promotion to definite causal order at every native operational interface. It does not refute temporal implementation or the existing trace theorems.",
         "zh": "量子开关主文献比较质疑每个原生操作接口都有确定因果次序的强化；不反驳时间实现或既有历史定理。"
@@ -152,17 +152,17 @@
     {
       "en": "Coherent inclusion: pooling processes that share interpretations keeps exactly the union of their histories iff it is closed under joining at the shared boundary; a checked coherence constraint, not the universal constitutive warrant.",
       "zh": "包容中的相容：共用解释的多个过程合并后恰好保留其历史的并集，当且仅当该并集对共同边界的接合封闭；这是已检查的相容限制，不是普遍构成根据。",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#16-inclusive-becoming-and-coherent-continuation"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#16-inclusive-becoming-and-coherent-continuation"
     },
     {
       "en": "Operative relations and causal order: after a primary quantum-process comparison, the candidate distinguishes operative constitution from a definite causal order at every interface; the existing trace theorems keep their scope.",
       "zh": "作用关系与因果次序：经量子过程主文献比较，候选区分作用构成与每个接口上的确定因果次序；既有历史定理保持原范围。",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#17-operative-relations-without-a-presupposed-global-order"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#17-operative-relations-without-a-presupposed-global-order"
     },
     {
       "en": "Local loss in a retained whole: a checked restricted control calculation (quantum inputs supplied) derives local loss through a reversible wider interaction, separating reduced access from retained joint relations; not universal grounding.",
       "zh": "保留的整体中的局部损失：已检查的受限控制计算（量子输入给定）推出局部损失经更广的可逆交互产生，区分约化可用与保留的共同关系；不提供普遍根基。",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#18-a-checked-operative-loss-and-a-retained-whole"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#18-a-checked-operative-loss-and-a-retained-whole"
     },
     {
       "en": "Whole and manifold: following Ren’s correction, the necessity target is Becoming as a whole, with generativity within its manifold; the completion audit no longer gates on universal generativity.",
@@ -172,7 +172,7 @@
     {
       "en": "From inclusion to relation: the direct whole-inclusion argument is assessed and still lacks the passage to relational constitution; a primary Hegel comparison separates a category of becoming from a causal mechanism.",
       "zh": "从包容到关系：直接整体包容论证经检验，仍缺通向关系构成的连接；黑格尔原典比较区分生成的范畴与因果机制。",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#19-the-whole-deduction-and-the-passage-from-inclusion-to-relation"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#19-the-whole-deduction-and-the-passage-from-inclusion-to-relation"
     },
     {
       "en": "Spine evidence: each audit row cites the spine’s laws of the whole, its parts carved by premises (seven shown met by some worlds and not others, eight shown independent) and countermodels, locating the remainder without discharging it.",
@@ -212,7 +212,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
       "role": "integration",
       "sha256": "08ef466608469942617f22cde75df4592fffb0d6e055cfe5f3b37c1670797ceb",
       "declarations": []

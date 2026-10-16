@@ -41,7 +41,7 @@ These are documentary boundaries. A proof under explicit premises and the substa
 
 开始时仓库有大量其他会话的未提交工作。本轮只改写获授权的根 README，在 `RESEARCH.md` 与主理论 README 添加入口，并新增目录、生成器及本记录。没有重置、提交或搬移别的会话的文件。
 
-改版前的根 README 保留为[最初快照](README-BEFORE-RESULTS-CATALOGUE.md)。写入前发现另一会话新增了显式伦理起点路线，遂另存[紧邻改版前的快照](README-BEFORE-RESULTS-CATALOGUE-LATEST.md)，核读并纳入首页。两份均保持原字节；[保留清单](RESULTS-CATALOGUE-PRESERVATION.json)记录 SHA-256。**快照中的相对链接仍按原始仓库根目录解释，快照本身不作为新的可导航首页。** 这避免为修复历史链接而改写保存内容。
+改版前的根 README 保留为[最初快照](../history/root-foundation/README-BEFORE-RESULTS-CATALOGUE.md)。写入前发现另一会话新增了显式伦理起点路线，遂另存[紧邻改版前的快照](../history/root-foundation/README-BEFORE-RESULTS-CATALOGUE-LATEST.md)，核读并纳入首页。两份均保持原字节；[保留清单](../history/root-foundation/RESULTS-CATALOGUE-PRESERVATION.json)记录 SHA-256。**快照中的相对链接仍按原始仓库根目录解释，快照本身不作为新的可导航首页。** 这避免为修复历史链接而改写保存内容。
 
 Both pre-reorganization homepage versions are byte-preserved, including the concurrent generative-premise update. Their relative links retain the original repository-root base. The new homepage and catalogue supply navigable links; historical snapshot bytes remain unchanged.
 
@@ -58,10 +58,10 @@ python3 _process/research/2026-10-05-generative-foundation-review/root-foundatio
 
 The first command checks catalogue coverage, fields, referenced files, source-version hashes and generated output consistency. Edit the three reading JSON registers, reread changed sources, then regenerate without `--check`. The Lean generator refreshes its source inventory and compares generated outputs. Neither command compiles Lean or certifies an ethical premise.
 
-编辑核验结果写入 [RESULTS-CATALOGUE-CHECKS.json](RESULTS-CATALOGUE-CHECKS.json)。这个回执只记录本轮文档检查；以后其他会话改变源码可能使快照过时，更新时需按受影响范围重读。
+编辑核验结果写入 [RESULTS-CATALOGUE-CHECKS.json](../history/root-foundation/RESULTS-CATALOGUE-CHECKS.json)。这个回执只记录本轮文档检查；以后其他会话改变源码可能使快照过时，更新时需按受影响范围重读。
 
 ## 发布快照续记 / Release snapshot continuation — 2026-10-08
 
-Ren 随后明确要求将本轮及其他最新成果提交并推送远端 `main`。据此冻结本地快照 `e40ae559`，在独立工作树合并远端 `2c2171c4`，保留原工作区之后的新改动。重新核读受影响条目，纳入生命恢复、减损比较及远端三个支持前提模块；理论链扩展为63项。原检查回执保持其历史字节，发布版另见 [RESULTS-CATALOGUE-RELEASE-CHECKS.json](RESULTS-CATALOGUE-RELEASE-CHECKS.json)。
+Ren 随后明确要求将本轮及其他最新成果提交并推送远端 `main`。据此冻结本地快照 `e40ae559`，在独立工作树合并远端 `2c2171c4`，保留原工作区之后的新改动。重新核读受影响条目，纳入生命恢复、减损比较及远端三个支持前提模块；理论链扩展为63项。原检查回执保持其历史字节，发布版另见 [RESULTS-CATALOGUE-RELEASE-CHECKS.json](../history/root-foundation/RESULTS-CATALOGUE-RELEASE-CHECKS.json)。
 
 Ren subsequently authorized committing this work together with the latest research and pushing remote `main`. The local snapshot and remote changes were combined in an isolated checkout, preserving later concurrent edits in the live workspace. Affected entries were reread and refreshed. This release checks catalogue consistency and selected existing receipt/source bindings; it performs no new Lean compilation or retrospective repository-wide proof audit.

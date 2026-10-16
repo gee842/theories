@@ -382,7 +382,7 @@ Where: section 8, Ren's choices, first item; the records above.
 
 ### D24. 动作在哪里形成（P109）/ Where a move is formed (P109)
 
-所在：第 8 节第十七项；[where-a-move-is-formed](../../../../theories/becoming/results/records/where-a-move-is-formed.md)；研究 §131。依据 P109 的所有者（Current math core (fork 2) [6c0ec8]）给 P110 的[说明](development/becoming-p110-landing/P109-READING-NOTES.md)，每项采用其建议，连同其限定：
+所在：第 8 节第十七项；[where-a-move-is-formed](../../../../theories/becoming/results/records/where-a-move-is-formed.md)；研究 §131。依据 P109 的所有者（Current math core (fork 2) [6c0ec8]）给 P110 的[说明](../history/root-foundation/development/becoming-p110-landing/P109-READING-NOTES.md)，每项采用其建议，连同其限定：
 
 1. **行与受是同一个动作的两面**，相对于给定的切分；哪种切分恰当不由此导出。
 2. **无需从整体之外供给**，是读法，不是说明：形成动作的钟以运行的动作为数据。
@@ -393,7 +393,7 @@ Where: section 8, Ren's choices, first item; the records above.
 
 **不采用**（同一说明所劝）：行动者作为脱离切分而拥有其动作的一种存在者；受作为被动或较低的地位；责任或应得的读法；动力学固定边界的马尔可夫毯读法；决定论；“环境控制行动者”；否认开放；钟作为说明；无复现而凭一条记录归属；以保留历史的部分“记录从不否证它”为作者身份的证据；“知识即控制”；“识得越多，责任越多”；自主作为识及一切；封闭作为作者身份或能动性；新本身为好（G0 的对象是生生）；开放作为超越的外部；社会意义上的“有界的行动者不能创造”。哪种切分恰当、实际的部分的动作是否确是其自己的，不是读法的选择，仍作为未导出者开放。
 
-Where: section 8, seventeenth item; [where-a-move-is-formed](../../../../theories/becoming/results/records/where-a-move-is-formed.md); study section 131. Following the [notes](development/becoming-p110-landing/P109-READING-NOTES.md) of P109's owner (Current math core (fork 2) [6c0ec8]) to P110, each reading is adopted as recommended, with its qualifier:
+Where: section 8, seventeenth item; [where-a-move-is-formed](../../../../theories/becoming/results/records/where-a-move-is-formed.md); study section 131. Following the [notes](../history/root-foundation/development/becoming-p110-landing/P109-READING-NOTES.md) of P109's owner (Current math core (fork 2) [6c0ec8]) to P110, each reading is adopted as recommended, with its qualifier:
 
 1. **Acting and undergoing are one move read from its two sides**, relative to a given cut of the whole into part and rest; which cut is apt is not derived.
 2. **No move needs supplying from outside the whole**, as a reading, not an explanation: the clock that forms the moves takes them as data.
@@ -641,7 +641,7 @@ Where: section 8, seventeenth item; [where-a-move-is-formed](../../../../theorie
 ## 12. 承接 / Lineage
 
 - Ren 2026-10-15 的交托（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）与[指令登记](../../../RESEARCH-DIRECTIVES.md)中的一项。/ Ren's delegation of 15 October 2026 and its entry in the [directive register](../../../RESEARCH-DIRECTIVES.md).
-- P109 所有者的[读法说明](development/becoming-p110-landing/P109-READING-NOTES.md)（D24）。/ The P109 owner's [notes on the readings](development/becoming-p110-landing/P109-READING-NOTES.md) (D24).
+- P109 所有者的[读法说明](../history/root-foundation/development/becoming-p110-landing/P109-READING-NOTES.md)（D24）。/ The P109 owner's [notes on the readings](../history/root-foundation/development/becoming-p110-landing/P109-READING-NOTES.md) (D24).
 - Ren 2026-10-15 对“按情境”这一读法的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)），决定 D34 的第一部分。/ Ren's reply of 15 October 2026 on the reading of “situationally” ([words](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)), which decides the first part of D34.
 - 早先 AI 依 Ren 交托所作的决定：继续之间以可能性比较（2026-10-11，§6.12）。/ The AI's earlier decision on Ren's delegation: comparing courses on possibilities (11 October 2026, section 6.12).
 - 同一交托之下推进的证明：P111 `Becoming.Gain`（新的增益从哪里来）与 P112 `Becoming.Gluing`（奇偶约束下语境中的读法何时粘合），见其记录与研究。/ The proofs pushed under the same delegation: P111 `Becoming.Gain` (where novelty's gain comes from) and P112 `Becoming.Gluing` (when readings in context glue, for parity constraints), in their records and the study.

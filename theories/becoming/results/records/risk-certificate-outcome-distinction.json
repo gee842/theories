@@ -63,7 +63,7 @@
   "related": [],
   "counterexamples": [
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
       "detail": {
         "zh": "正确的是风险陈述，失败的是目标实现；未证明内容为假的信念有根据。终点不足不表示结果与更新无关。",
         "en": "The risk statement is true while the target realization fails; warranted false belief is not established. Endpoint insufficiency does not make outcomes irrelevant to updating."
@@ -98,7 +98,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
       "role": "integration",
       "sha256": "f5c69c32f6bcf032dae8149ea877ab136c8fc821c3572570a430d2e26ca68bf6",
       "declarations": []

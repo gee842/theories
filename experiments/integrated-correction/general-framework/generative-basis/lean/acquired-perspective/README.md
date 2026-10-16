@@ -1,6 +1,6 @@
 # Acquired perspective verification
 
-The [Lean bridge](../AcquiredPerspective.lean) proves that the already constructed, retained score acquires action-effect knowledge, is corrected from actual feedback and changes a subsequently executed paid command that supports the same organization. The [research note](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-ACQUISITION-BRIDGE.md) states the precise scope and remaining premises.
+The [Lean bridge](../AcquiredPerspective.lean) proves that the already constructed, retained score acquires action-effect knowledge, is corrected from actual feedback and changes a subsequently executed paid command that supports the same organization. The [research note](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SELF-ACQUISITION-BRIDGE.md) states the precise scope and remaining premises.
 
 Run from the repository root:
 
@@ -14,4 +14,4 @@ The actor/recipient results compare the existing interface; they do not compose 
 
 ## Affective realization interface
 
-The [new source comparison and review](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md) asks whether a directed component belongs to an experiential episode and what it targets. `ExactEffects` and `corrected_command_is_actually_used` establish prediction and execution under the existing law; neither identifies experiential content or constitutive participation. A future realization must explain those relationships and their formation without treating a command label as felt valence. This documentation adds no Lean declaration, law or axiom and does not change the recorded verification scope.
+The [new source comparison and review](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md) asks whether a directed component belongs to an experiential episode and what it targets. `ExactEffects` and `corrected_command_is_actually_used` establish prediction and execution under the existing law; neither identifies experiential content or constitutive participation. A future realization must explain those relationships and their formation without treating a command label as felt valence. This documentation adds no Lean declaration, law or axiom and does not change the recorded verification scope.

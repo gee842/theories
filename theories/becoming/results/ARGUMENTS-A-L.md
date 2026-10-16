@@ -113,7 +113,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ABSTRACTION-ACQUISITION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ABSTRACTION-ACQUISITION-REVIEW.md) · [ABSTRACTION-ACQUISITION-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ABSTRACTION-ACQUISITION-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ABSTRACTION-ACQUISITION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ABSTRACTION-ACQUISITION-REVIEW.md) · [ABSTRACTION-ACQUISITION-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ABSTRACTION-ACQUISITION-MATH.md)
 
 <a id="alignment-and-governance"></a>
 ## 对齐与治理中的未来条件 / Conditions of a future in alignment and governance
@@ -171,7 +171,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ALIGNMENT-AXIS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-AXIS-INTEGRATION.md) · [ALIGNMENT-AXIS-COUNTERREVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-AXIS-COUNTERREVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ALIGNMENT-AXIS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-AXIS-INTEGRATION.md) · [ALIGNMENT-AXIS-COUNTERREVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-AXIS-COUNTERREVIEW.md)
 
 <a id="alignment-completion"></a>
 ## 对齐与治理的完成条件 / Completion conditions for alignment and governance
@@ -231,7 +231,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ALIGNMENT-DIRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ALIGNMENT-DIRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md)
 
 <a id="alignment-through-change"></a>
 ## 变化中的生成性对齐 / Generative alignment through change
@@ -262,7 +262,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ALIGNMENT-CONTINUITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md) · [CORRECTION-INFRASTRUCTURE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md) · [REFORM-EVIDENCE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md) · [ACQUIRED-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md) · [FAULT-TOLERANT-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md) · [CORRECTION-RECONFIGURATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md) · [EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md) · [FALLIBLE-INSPECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md) · [TEMPORAL-INSPECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md) · [MEDIATED-CONTROL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ALIGNMENT-CONTINUITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md) · [CORRECTION-INFRASTRUCTURE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md) · [REFORM-EVIDENCE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REFORM-EVIDENCE-INTEGRATION.md) · [ACQUIRED-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md) · [FAULT-TOLERANT-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md) · [CORRECTION-RECONFIGURATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md) · [EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md) · [FALLIBLE-INSPECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md) · [TEMPORAL-INSPECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md) · [MEDIATED-CONTROL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md)
 
 <a id="architecture-formation"></a>
 ## 组织怎样改变自己能形成的架构 / How organization changes the architectures it can form
@@ -291,7 +291,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ARCHITECTURE-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-REVIEW.md) · [ARCHITECTURE-FORMATION-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ARCHITECTURE-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-FORMATION-REVIEW.md) · [ARCHITECTURE-FORMATION-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-FORMATION-MATH.md)
 
 <a id="architecture-learning"></a>
 ## 形成的路线学习他者的差异 / A formed route learns a recipient's difference
@@ -320,7 +320,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ARCHITECTURE-LEARNING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-LEARNING-REVIEW.md) · [ARCHITECTURE-LEARNING-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-LEARNING-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ARCHITECTURE-LEARNING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-LEARNING-REVIEW.md) · [ARCHITECTURE-LEARNING-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-LEARNING-MATH.md)
 
 <a id="assumption-free-foundation"></a>
 ## 生生的无假设奠基：从实际发生到生成的根据 / An assumption-free foundation of 生生: enactment and its warrant
@@ -351,7 +351,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [DEDUCTIVE-FOUNDATION-TEST.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [GROUNDING-INFERENCE-AND-PRESENTATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) · [ENACTED-FOUNDATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md) · [CONSTITUTIVE-WARRANT-ARGUMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-WARRANT-ARGUMENT.md) · [GENERAL-FOUNDATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md) · [derived-history-law-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/derived-history-law-verification.json)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [DEDUCTIVE-FOUNDATION-TEST.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) · [GROUNDING-INFERENCE-AND-PRESENTATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) · [ENACTED-FOUNDATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md) · [CONSTITUTIVE-WARRANT-ARGUMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONSTITUTIVE-WARRANT-ARGUMENT.md) · [GENERAL-FOUNDATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERAL-FOUNDATION-REVIEW.md) · [derived-history-law-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/derived-history-law-verification.json)
 
 <a id="attainable-mathematical-questions"></a>
 ## 并非总有信息最多的可行探究 / There need not be a most informative feasible inquiry
@@ -382,7 +382,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) · [INQUIRY-CRITERION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md) · [INQUIRY-CRITERION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-CRITERION-REVIEW.md)
 
 <a id="autonomous-method-formation"></a>
 ## 数学方法连接的形成与替换 / Forming and replacing a mathematical method connection
@@ -411,7 +411,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [AUTONOMOUS-METHOD-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AUTONOMOUS-METHOD-FORMATION-REVIEW.md) · [AUTONOMOUS-METHOD-FORMATION-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AUTONOMOUS-METHOD-FORMATION-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [AUTONOMOUS-METHOD-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AUTONOMOUS-METHOD-FORMATION-REVIEW.md) · [AUTONOMOUS-METHOD-FORMATION-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AUTONOMOUS-METHOD-FORMATION-MATH.md)
 
 <a id="basic-conflict-judgment"></a>
 ## 基本要求冲突时怎样判断 / Judgment when basic claims conflict
@@ -442,7 +442,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [BASIC-CONFLICT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-CONFLICT-INTEGRATION.md) · [BASIC-LOSS-SEVERITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-LOSS-SEVERITY-INTEGRATION.md) · [UNEQUAL-BASIC-LOSSES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md) · [CROSSED-CLAIMS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md) · [CHANCE-GROUNDING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md) · [CHANCE-ADEQUACY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md) · [OBSERVABLE-CONTINUATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md) · [MAINTENANCE-BASELINE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [BASIC-CONFLICT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BASIC-CONFLICT-INTEGRATION.md) · [BASIC-LOSS-SEVERITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BASIC-LOSS-SEVERITY-INTEGRATION.md) · [UNEQUAL-BASIC-LOSSES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md) · [CROSSED-CLAIMS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md) · [CHANCE-GROUNDING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-GROUNDING-INTEGRATION.md) · [CHANCE-ADEQUACY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md) · [OBSERVABLE-CONTINUATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md) · [MAINTENANCE-BASELINE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md)
 
 <a id="becoming-foundation"></a>
 ## 生成与变化之论：根基范围 / Theory of Becoming: foundational scope
@@ -473,7 +473,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [becoming-compatibility-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-compatibility-verification.json) · [GROUNDING-INFERENCE-AND-PRESENTATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) · [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [becoming-compatibility-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-compatibility-verification.json) · [GROUNDING-INFERENCE-AND-PRESENTATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md) · [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md)
 
 <a id="choice-and-generative-context"></a>
 ## 共同选择、有限合并与情境 / Joint choice, limited aggregation and context
@@ -504,7 +504,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [AGGREGATION-CONTEXT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md) · [RISK-CONDITIONING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md) · [aggregation-context-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/aggregation-context-verification.json) · [chance-revision-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-revision-verification.json) · [risk-priority-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-verification.json) · [risk-conditioning-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-conditioning-verification.json)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [AGGREGATION-CONTEXT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md) · [RISK-CONDITIONING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md) · [aggregation-context-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/aggregation-context-verification.json) · [chance-revision-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-revision-verification.json) · [risk-priority-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-priority-verification.json) · [risk-conditioning-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/risk-conditioning-verification.json)
 
 <a id="claims"></a>
 ## 已登记主张与历史账本 / Registered claims and historical ledger
@@ -564,7 +564,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [CLAIM-EXECUTION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CLAIM-EXECUTION-REVIEW.md) · [CLAIM-EXECUTION-INTEGRATION.json](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CLAIM-EXECUTION-INTEGRATION.json)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [CLAIM-EXECUTION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CLAIM-EXECUTION-REVIEW.md) · [CLAIM-EXECUTION-INTEGRATION.json](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CLAIM-EXECUTION-INTEGRATION.json)
 
 <a id="cognition-learning-and-evolution"></a>
 ## 生成展开中的认知、学习与演化 / Cognition, learning and evolution within becoming
@@ -595,7 +595,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [COGNITION-LEARNING-EVOLUTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md) · [COMPOSITIONAL-FORMATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md) · [COMPOSITIONAL-TRANSMISSION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md) · [ACQUIRED-SEGMENTATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [LEARNING-SELECTION-COUNTERREVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [COGNITION-LEARNING-EVOLUTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md) · [COMPOSITIONAL-FORMATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md) · [COMPOSITIONAL-TRANSMISSION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md) · [ACQUIRED-SEGMENTATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) · [LEARNING-SELECTION-COUNTERREVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md)
 
 <a id="cognition-li-and-reciprocity"></a>
 ## 认知、理与恕的条件推论 / Cognition, li and a conditional account of reciprocity
@@ -624,7 +624,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [COGNITION-RECIPROCITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-RECIPROCITY-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [COGNITION-RECIPROCITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COGNITION-RECIPROCITY-REVIEW.md)
 
 <a id="completion-plan"></a>
 ## 物理形成与更新分支的完成计划 / Completion plan for physical formation and renewal
@@ -713,7 +713,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [CONCERN-EXTENSION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-EXTENSION-INTEGRATION.md) · [concern-extension-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/concern-extension-verification.json) · [FORMED-BASIC-CONDITIONS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [CONCERN-EXTENSION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONCERN-EXTENSION-INTEGRATION.md) · [concern-extension-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/concern-extension-verification.json) · [FORMED-BASIC-CONDITIONS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md)
 
 <a id="conditional-universality"></a>
 ## 局部律所蕴含的条件普遍性 / Conditional universality from local laws
@@ -744,7 +744,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [CONDITIONAL-UNIVERSALITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md) · [CONDITIONAL-SUPPORT-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-SUPPORT-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [CONDITIONAL-UNIVERSALITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md) · [CONDITIONAL-SUPPORT-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-SUPPORT-MATH.md)
 
 <a id="connected-generative-model"></a>
 ## 一个连贯生成模型的实际连接 / Actual connections in one model of becoming
@@ -775,7 +775,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [COMPLETION-APPLICABILITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md) · [NONDUAL-APPLICABILITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md) · [MECHANISM-STATUS-RECONCILIATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [COMPLETION-APPLICABILITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETION-APPLICABILITY-REVIEW.md) · [NONDUAL-APPLICABILITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONDUAL-APPLICABILITY-INTEGRATION.md) · [MECHANISM-STATUS-RECONCILIATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MECHANISM-STATUS-RECONCILIATION.md)
 
 <a id="controlled-refinement"></a>
 ## 在描述转换中保留学习者 / Controlled refinement without losing the learner
@@ -806,7 +806,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [CONTROLLED-REFINEMENT-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-REVIEW.md) · [CONTROLLED-REFINEMENT-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTROLLED-REFINEMENT-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [CONTROLLED-REFINEMENT-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTROLLED-REFINEMENT-REVIEW.md) · [CONTROLLED-REFINEMENT-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTROLLED-REFINEMENT-MATH.md)
 
 <a id="cost-sensitive-learning"></a>
 ## 真实学习数据能识别什么 / What real learning data can identify
@@ -866,7 +866,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [CYBERNETICS-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CYBERNETICS-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [CYBERNETICS-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CYBERNETICS-REVIEW.md)
 
 <a id="dao-and-generativity"></a>
 ## 生成论与道：生成、德与善的贯通 / Generativity and dao: generation, de and goodness
@@ -895,7 +895,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [DAO-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-REVIEW.md) · [DAO-NORMATIVE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-NORMATIVE-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [DAO-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-REVIEW.md) · [DAO-NORMATIVE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DAO-NORMATIVE-REVIEW.md)
 
 <a id="deeper-generative-root"></a>
 ## 更深的生成根基与内在解释 / A deeper generative root and immanent explanation
@@ -926,7 +926,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [DEEPER-ROOT-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEEPER-ROOT-REVIEW.md) · [LEAN-MODEL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md) · [NONDUAL-CORE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [DEEPER-ROOT-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEEPER-ROOT-REVIEW.md) · [LEAN-MODEL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEAN-MODEL-INTEGRATION.md) · [NONDUAL-CORE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-INTEGRATION.md)
 
 <a id="empirical-scope"></a>
 ## 候选基础的证据范围 / Evidence scope of the candidate foundation
@@ -955,7 +955,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [EMPIRICAL-SCOPE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-SCOPE-REVIEW.md) · [CONDITIONAL-CLAIM-SCOPE-NOTES.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [EMPIRICAL-SCOPE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EMPIRICAL-SCOPE-REVIEW.md) · [CONDITIONAL-CLAIM-SCOPE-NOTES.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md)
 
 <a id="ethical-foundation"></a>
 ## 生成世界中受影响者何以重要 / Why affected beings matter within becoming
@@ -984,7 +984,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ETHICAL-NATURALISM.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ETHICAL-NATURALISM.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ETHICAL-NATURALISM.md)
 
 <a id="ethical-learning"></a>
 ## 伦理学习：关切怎样形成、取得根据并继续改变 / Ethical learning: how concern forms, acquires warrant and keeps changing
@@ -1015,7 +1015,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ETHICAL-LEARNING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md) · [LIVING-VALUE-SCOPE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md) · [relational-organization-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json) · [classification-robust-judgment-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ETHICAL-LEARNING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md) · [LIVING-VALUE-SCOPE.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-VALUE-SCOPE.md) · [relational-organization-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json) · [classification-robust-judgment-verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json)
 
 <a id="evaluation-and-faithful-reporting"></a>
 ## 有价值的未来与忠实报告 / Valued futures and faithful reporting
@@ -1044,7 +1044,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [FUTURE-REPORTING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-REVIEW.md) · [FUTURE-REPORTING-CONTRACT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-CONTRACT.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [FUTURE-REPORTING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FUTURE-REPORTING-REVIEW.md) · [FUTURE-REPORTING-CONTRACT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FUTURE-REPORTING-CONTRACT.md)
 
 <a id="evaluative-application"></a>
 ## 获得的理解何时支持具体行动 / When acquired understanding warrants action
@@ -1075,7 +1075,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-APPLICATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-REVIEW.md) · [APPLICATION-EVIDENCE-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-EVIDENCE-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-APPLICATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-APPLICATION-REVIEW.md) · [APPLICATION-EVIDENCE-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/APPLICATION-EVIDENCE-MATH.md)
 
 <a id="evaluative-grounding"></a>
 ## 形成的倾向怎样回应正当诉求 / How a formed disposition answers a justified claim
@@ -1106,7 +1106,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-GROUNDING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-GROUNDING-REVIEW.md) · [EVALUATIVE-GROUNDING-ASSESSMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-GROUNDING-ASSESSMENT.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-GROUNDING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-GROUNDING-REVIEW.md) · [EVALUATIVE-GROUNDING-ASSESSMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-GROUNDING-ASSESSMENT.md)
 
 <a id="evaluative-plasticity"></a>
 ## 评价连接的学习与改变 / Learning and changing an evaluative connection
@@ -1137,7 +1137,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-PLASTICITY-IMPLEMENTATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-IMPLEMENTATION-REVIEW.md) · [EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-PLASTICITY-IMPLEMENTATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-PLASTICITY-IMPLEMENTATION-REVIEW.md) · [EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md)
 
 <a id="evaluative-succession"></a>
 ## 评价的继承、后继与新证据 / Acquired evaluation, succession and new evidence
@@ -1168,7 +1168,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-SUCCESSION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-SUCCESSION-REVIEW.md) · [EVALUATIVE-SUCCESSION-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-SUCCESSION-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-SUCCESSION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-SUCCESSION-REVIEW.md) · [EVALUATIVE-SUCCESSION-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-SUCCESSION-MATH.md)
 
 <a id="evaluative-uptake"></a>
 ## 后果怎样进入对象导向的选择 / How acquired consequences influence recipient-directed choice
@@ -1199,7 +1199,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-UPTAKE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-REVIEW.md) · [EVALUATIVE-UPTAKE-INTEGRATION.json](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-UPTAKE-INTEGRATION.json)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVALUATIVE-UPTAKE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-UPTAKE-REVIEW.md) · [EVALUATIVE-UPTAKE-INTEGRATION.json](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-UPTAKE-INTEGRATION.json)
 
 <a id="evidence-and-institutional-correction"></a>
 ## 证据怎样转为制度纠正 / From evidence to institutional correction
@@ -1259,7 +1259,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVOLUTIONARY-ORGANIZATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) · [RECONSTRUCTIVE-SELECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md) · [GROWN-FRAGMENTATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) · [MATERIAL-MATURATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md) · [README.md](../../../sources/evolutionary-selection/evolutionary-organization/README.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [EVOLUTIONARY-ORGANIZATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) · [RECONSTRUCTIVE-SELECTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md) · [GROWN-FRAGMENTATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) · [MATERIAL-MATURATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATERIAL-MATURATION-INTEGRATION.md) · [README.md](../../../sources/evolutionary-selection/evolutionary-organization/README.md)
 
 <a id="experimental-access"></a>
 ## 学习模型检验自身实验接入 / A learned model tests its experimental access
@@ -1290,7 +1290,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md](../../../_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) · [EXPERIMENTAL-ACCESS-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md](../../../_process/history/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) · [EXPERIMENTAL-ACCESS-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md)
 
 <a id="explanatory-necessity"></a>
 ## 生成关系是否是充分解释的必要基础？ / Are relations of becoming indispensable to explanation?
@@ -1321,7 +1321,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [EXPLANATORY-NECESSITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md) · [EXPLANATORY-BRANCHING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md) · [EXPLANATORY-COMPACTNESS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md) · [EXPLANATORY-JOINTNESS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md) · [EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md) · [EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md) · [EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md) · [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [EXPLANATORY-NECESSITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md) · [EXPLANATORY-BRANCHING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md) · [EXPLANATORY-COMPACTNESS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md) · [EXPLANATORY-JOINTNESS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md) · [EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md) · [EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md) · [EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md) · [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md)
 
 <a id="formal-core"></a>
 ## 关系生成性的形式核心 / Formal core of relational generativity
@@ -1352,7 +1352,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [SELF-FOUNDATION-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md) · [ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [SELF-FOUNDATION-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md) · [ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md)
 
 <a id="formal-specification"></a>
 ## 物理形成、更新与共享能力的规格 / Specification for formation, renewal and shared capability
@@ -1501,7 +1501,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [FORMED-ROUTE-MONITOR-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-REVIEW.md) · [FORMED-ROUTE-MONITOR-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-ROUTE-MONITOR-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [FORMED-ROUTE-MONITOR-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FORMED-ROUTE-MONITOR-REVIEW.md) · [FORMED-ROUTE-MONITOR-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FORMED-ROUTE-MONITOR-MATH.md)
 
 <a id="foundation-premises"></a>
 ## 共同基础的前提与已导出内容 / Premises and derived content of the common foundation
@@ -1530,7 +1530,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [ASSUMPTION-ELIMINATION-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) · [MECHANISM-STATUS-RECONCILIATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md) · [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [ASSUMPTION-ELIMINATION-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ASSUMPTION-ELIMINATION-AUDIT.md) · [MECHANISM-STATUS-RECONCILIATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MECHANISM-STATUS-RECONCILIATION.md) · [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md)
 
 <a id="g0-warrant"></a>
 ## G0 的根据：一项采用的公理怎样得到支持 / The warrant for G0: how an adopted axiom is supported
@@ -1561,7 +1561,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) · [GENERATIVE-DISCRIMINATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md) · [GENERATIVE-DISCRIMINATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md) · [EVALUATOR-GROUNDING-ARGUMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md) · [EVALUATOR-GROUNDING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) · [GENERATIVE-DISCRIMINATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md) · [GENERATIVE-DISCRIMINATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md) · [EVALUATOR-GROUNDING-ARGUMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md) · [EVALUATOR-GROUNDING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)
 
 <a id="generated-logic"></a>
 ## 生成条件与逻辑规则 / Conditions of becoming and logical rules
@@ -1592,7 +1592,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [GENERATED-LOGIC-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md) · [CONTEXTUAL-LOGIC-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md) · [RECONFIGURABLE-LOGIC-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md) · [ACQUIRED-SUPPORT-USE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SUPPORT-USE-INTEGRATION.md) · [REFLECTIVE-IDENTITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md) · [RECOGNITIONAL-BINDING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [GENERATED-LOGIC-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATED-LOGIC-INTEGRATION.md) · [CONTEXTUAL-LOGIC-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md) · [RECONFIGURABLE-LOGIC-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md) · [ACQUIRED-SUPPORT-USE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ACQUIRED-SUPPORT-USE-INTEGRATION.md) · [REFLECTIVE-IDENTITY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md) · [RECOGNITIONAL-BINDING-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
 
 <a id="generated-self-and-ethics"></a>
 ## 生成的我与不以根本所有者为前提的伦理 / The generated self and ethics without a fundamental owner
@@ -1623,7 +1623,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [SELF-FOUNDATION-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md) · [GENERATED-SELF-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELF-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [SELF-FOUNDATION-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SELF-FOUNDATION-LEAN-INTEGRATION.md) · [GENERATED-SELF-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATED-SELF-REVIEW.md)
 
 <a id="generative-core-lean"></a>
 ## 生成核心的 Lean 实现与入口 / Lean realization and public entries of the generative core
@@ -1654,7 +1654,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [LEAN-MODEL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-MODEL-INTEGRATION.md) · [CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md) · [ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [LEAN-MODEL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEAN-MODEL-INTEGRATION.md) · [CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONSTRUCTIVE-DEPENDENCY-REMOVAL-INTEGRATION.md) · [ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md)
 
 <a id="generative-development"></a>
 ## 调节、学习与关切怎样发展 / Development of regulation, learning and concern
@@ -1683,7 +1683,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [FOUNDATION-ROOT-ACCEPTANCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) · [GENERATIVE-DEVELOPMENT-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DEVELOPMENT-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [FOUNDATION-ROOT-ACCEPTANCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) · [GENERATIVE-DEVELOPMENT-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DEVELOPMENT-REVIEW.md)
 
 <a id="generative-grounding"></a>
 ## 意义、学习与智慧的生成奠基 / Generative grounding of significance, learning and wisdom
@@ -1714,7 +1714,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [FOUNDATION-ROOT-ACCEPTANCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) · [GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md) · [NORMATIVE-WARRANT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md) · [GENERATIVE-PREMISE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md) · [ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md) · [ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md) · [LIVING-DEPENDENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) · [GENERATIVE-TRADEOFF-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md) · [ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [FOUNDATION-ROOT-ACCEPTANCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) · [GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md) · [NORMATIVE-WARRANT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md) · [GENERATIVE-PREMISE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-PREMISE-INTEGRATION.md) · [ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md) · [ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROOT-MATHEMATICAL-FAMILIES-INTEGRATION.md) · [LIVING-DEPENDENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) · [GENERATIVE-TRADEOFF-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md) · [ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROOT-MATHEMATICAL-INDUCTION-INTEGRATION.md)
 
 <a id="generative-mathematical-admissibility"></a>
 ## 通过一致完备化解释数学可容许性 / Mathematical admissibility through coherent completion
@@ -1745,7 +1745,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [COMPLETION-WARRANT-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md) · [MATHEMATICAL-ADMISSIBILITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-ADMISSIBILITY-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [COMPLETION-WARRANT-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md) · [MATHEMATICAL-ADMISSIBILITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATHEMATICAL-ADMISSIBILITY-REVIEW.md)
 
 <a id="generative-selection"></a>
 ## 选择、共享条件与纠正的更新 / Selection, shared conditions and renewal of correction
@@ -1776,7 +1776,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [RECURSIVE-GENERATIVE-SELECTION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-REVIEW.md) · [RECURSIVE-WARRANT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-WARRANT-INTEGRATION.md) · [V73-MECHANISM-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-MECHANISM-AUDIT.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [RECURSIVE-GENERATIVE-SELECTION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECURSIVE-GENERATIVE-SELECTION-REVIEW.md) · [RECURSIVE-WARRANT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECURSIVE-WARRANT-INTEGRATION.md) · [V73-MECHANISM-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/V73-MECHANISM-AUDIT.md)
 
 <a id="goal-formation-and-revision"></a>
 ## 理解并改变自身形成条件 / Understanding and changing one's formative conditions
@@ -1807,7 +1807,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [GOAL-FORMATION-REVISION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md) · [REFORM-EVIDENCE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md) · [JOINT-RISK-REVISION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) · [SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md) · [MEMORY-UPDATING.md](../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [GOAL-FORMATION-REVISION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md) · [REFORM-EVIDENCE-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REFORM-EVIDENCE-INTEGRATION.md) · [JOINT-RISK-REVISION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) · [SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md) · [MEMORY-UPDATING.md](../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING.md)
 
 <a id="hanzi-and-theory-tree"></a>
 ## 汉字、组合与理论树的局部对应 / Hanzi, composition and local mappings to the theory tree
@@ -1836,7 +1836,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [HANZI-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-INTEGRATION.md) · [HANZI-MAPPING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-MAPPING-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [HANZI-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-INTEGRATION.md) · [HANZI-MAPPING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HANZI-MAPPING-REVIEW.md)
 
 <a id="huigen"></a>
 ## 慧根：整个生成理论的必要性问题 / Huigen: necessity of the entire theory
@@ -1867,7 +1867,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [HUIGEN-FULL-THEORY-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md) · [HUIGEN-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md) · [HUIGEN-SELF-GROUND-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [HUIGEN-FULL-THEORY-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md) · [HUIGEN-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HUIGEN-REVIEW.md) · [HUIGEN-SELF-GROUND-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md)
 
 <a id="immanent-mathematical-identity"></a>
 ## 生成活动中的数学同一性 / Mathematical identity within becoming
@@ -1896,7 +1896,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Lean 对应 / Lean correspondence:** 未登记本条的直接 Lean 证明；按上方说明保留哲学、方法、经验或历史验证范围。 / No direct Lean proof is registered for this entry; retain the philosophical, methodological, empirical or historical validation scope stated above.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [IMMANENT-MATHEMATICAL-IDENTITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-REVIEW.md) · [IMMANENT-MATHEMATICAL-IDENTITY-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [IMMANENT-MATHEMATICAL-IDENTITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-REVIEW.md) · [IMMANENT-MATHEMATICAL-IDENTITY-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-MATH.md)
 
 <a id="inquiry-and-mathematical-identity"></a>
 ## 探究改变仍可辨认的内容 / Inquiry changes what remains identifiable
@@ -1927,7 +1927,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [INQUIRY-CONTINUATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CONTINUATION-REVIEW.md) · [ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [INQUIRY-CONTINUATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-CONTINUATION-REVIEW.md) · [ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ATTAINABLE-QUESTIONS-LEAN-INTEGRATION.md)
 
 <a id="inquiry-revision"></a>
 ## 保留后果改变后续询问的安排 / Retained consequences revise further inquiry
@@ -1958,7 +1958,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [INQUIRY-REVISION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-REVIEW.md) · [INQUIRY-REVISION-CHECKS.json](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-REVISION-CHECKS.json)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [INQUIRY-REVISION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-REVISION-REVIEW.md) · [INQUIRY-REVISION-CHECKS.json](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-REVISION-CHECKS.json)
 
 <a id="joint-formation"></a>
 ## 关切、证据与有效权力共同形成和更新 / Joint formation and renewal of concern, evidence and power
@@ -2105,7 +2105,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [G0-AND-KNOWLEDGE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md) · [KNOWLEDGE-SOURCES.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md) · [KNOWLEDGE-PHILOSOPHY-COMPLETION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) · [KNOWLEDGE-UPTAKE-AND-ERROR.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md) · [SELECTIVE-REVISION-TEST.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-REVISION-TEST.md) · [MODEL-REVISION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-REVISION-INTEGRATION.md) · [SCIENTIFIC-COMPATIBILITY-NECESSITY.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [G0-AND-KNOWLEDGE.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/G0-AND-KNOWLEDGE.md) · [KNOWLEDGE-SOURCES.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-SOURCES.md) · [KNOWLEDGE-PHILOSOPHY-COMPLETION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) · [KNOWLEDGE-UPTAKE-AND-ERROR.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md) · [SELECTIVE-REVISION-TEST.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SELECTIVE-REVISION-TEST.md) · [MODEL-REVISION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MODEL-REVISION-INTEGRATION.md) · [SCIENTIFIC-COMPATIBILITY-NECESSITY.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md)
 
 <a id="learning-interface"></a>
 ## 后果差异如何进入可用修订 / From consequential difference to accessible revision
@@ -2136,7 +2136,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [LEARNING-INTERFACE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-INTERFACE-REVIEW.md) · [CONSEQUENCE-TO-LEARNING-MATH.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [LEARNING-INTERFACE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEARNING-INTERFACE-REVIEW.md) · [CONSEQUENCE-TO-LEARNING-MATH.md](../../../_process/history/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-TO-LEARNING-MATH.md)
 
 <a id="learning-route-revision"></a>
 ## 学习者改变学习路线并传递改变 / A learner changes and transmits its learning route
@@ -2198,7 +2198,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [LIANGZHI-EVOLUTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md) · [LIANGZHI-DEVELOPMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md) · [LIANGZHI-PRACTICAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [LIANGZHI-EVOLUTION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-INTEGRATION.md) · [LIANGZHI-DEVELOPMENT-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-DEVELOPMENT-INTEGRATION.md) · [LIANGZHI-PRACTICAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)
 
 <a id="living-dependencies"></a>
 ## 生命延续中的实际依存 / Living dependencies within generative continuation
@@ -2229,4 +2229,4 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 形式对应只覆盖上面说明的前提与子结论；模块存在不等于当前版本已重新编译。 / Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 
-**既有检查、审读与来源 / Existing checks, reviews and sources:** [LIVING-DEPENDENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) · [LIVING-DEPENDENCY-MECHANISMS.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md) · [LIVING-DEPENDENCY-COVERAGE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md) · [LIVING-REALIZATION-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-REALIZATION-PROOF.md) · [LIVING-RECOVERY-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-PROOF.md) · [LIVING-RECOVERY-EVIDENCE.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md) · [LIVING-RECOVERY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-REVIEW.md)
+**既有检查、审读与来源 / Existing checks, reviews and sources:** [LIVING-DEPENDENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md) · [LIVING-DEPENDENCY-MECHANISMS.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md) · [LIVING-DEPENDENCY-COVERAGE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md) · [LIVING-REALIZATION-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-REALIZATION-PROOF.md) · [LIVING-RECOVERY-PROOF.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-RECOVERY-PROOF.md) · [LIVING-RECOVERY-EVIDENCE.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-RECOVERY-EVIDENCE.md) · [LIVING-RECOVERY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-RECOVERY-REVIEW.md)

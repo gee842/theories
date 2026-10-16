@@ -4,7 +4,7 @@
 **local graph formation → use → paid retention → consequence-funded guide
 copying → a second local graph formation**. The [protocol](PROTOCOL.md) precedes
 the first run and records its pre-execution additions. The
-[mathematical account](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-MATH.md)
+[mathematical account](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-FORMATION-MATH.md)
 states the result and the remaining supplied premises.
 
 ## What forms
@@ -133,8 +133,8 @@ predecessor mass, resources and the post-reversal target condition.
 
 All imports are hash-bound and checked for stability during runs. No new Lean
 certificate or physical experiment is claimed. The
-[review](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-REVIEW.md)
-and [identification note](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ARCHITECTURE-FORMATION-IDENTIFICATION.md)
+[review](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-FORMATION-REVIEW.md)
+and [identification note](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ARCHITECTURE-FORMATION-IDENTIFICATION.md)
 state the accepted scope and proposed discriminating observations.
 
 The component contracts, copy-to-guide law, supplied target cues, inherited

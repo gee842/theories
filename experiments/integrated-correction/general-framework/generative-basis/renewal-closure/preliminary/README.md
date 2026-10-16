@@ -1,6 +1,6 @@
 # Preliminary bounded-horizon checks for the renewal–closure target
 
-6 October 2026 (UTC). AI-authored. These scripts support [the roadmap](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-ROADMAP.md). They check the conventions of the target theorem on tiny cases before any Lean work starts. **They prove nothing.** A finite horizon cannot certify endless renewal. Capping the reserve keeps the search finite; an "ends" verdict is trusted only when the cap was never reached.
+6 October 2026 (UTC). AI-authored. These scripts support [the roadmap](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RENEWAL-CLOSURE-ROADMAP.md). They check the conventions of the target theorem on tiny cases before any Lean work starts. **They prove nothing.** A finite horizon cannot certify endless renewal. Capping the reserve keeps the search finite; an "ends" verdict is trusted only when the cap was never reached.
 
 | Script | Case | Output |
 |---|---|---|

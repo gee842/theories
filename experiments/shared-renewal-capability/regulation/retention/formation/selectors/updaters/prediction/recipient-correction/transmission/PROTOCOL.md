@@ -1,6 +1,6 @@
 # Candidate recipient-supported transmission
 
-6 October 2026. AI-authored prospective contract. **Formation and transmission are not implemented or validated here yet.** The [research contract](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-CONTRACT.md) specifies the named bridge, state requirements, conditional count identities, adverse alternatives and three acceptance gates.
+6 October 2026. AI-authored prospective contract. **Formation and transmission are not implemented or validated here yet.** The [research contract](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECIPIENT-TRANSMISSION-CONTRACT.md) specifies the named bridge, state requirements, conditional count identities, adverse alternatives and three acceptance gates.
 
 The immediate blocking interface is concrete: the parent experiment's `arm` is not a retained physical route template, and `q` contains only two orientation estimates. A future construction must form alternative retained evidence/action modules before using or copying them, prove correspondence to the actual parent arms, and account for donor access, recipient continuation, receiver components, copying and successor use.
 

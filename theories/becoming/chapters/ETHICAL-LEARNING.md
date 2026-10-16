@@ -10,7 +10,7 @@
 
 ## 1. 这一连接新增什么
 
-[知识哲学](PHILOSOPHICAL-ACCOUNT.md)已经解释认识、根据、实际使用、共同纠正与有限结束；[实践判断](PRACTICAL-JUDGMENT.md)已经说明比较、责任、目的改变和交接；[相连目标修订](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md)已给出有限条件下的形成、修订与接续。[生的意义范围研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md)也已指出：新关系和理解可以改变什么值得关切。这些都直接复用。
+[知识哲学](PHILOSOPHICAL-ACCOUNT.md)已经解释认识、根据、实际使用、共同纠正与有限结束；[实践判断](PRACTICAL-JUDGMENT.md)已经说明比较、责任、目的改变和交接；[相连目标修订](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-REVISION-CONTINUATION.md)已给出有限条件下的形成、修订与接续。[生的意义范围研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-VALUE-SCOPE.md)也已指出：新关系和理解可以改变什么值得关切。这些都直接复用。
 
 本章推进的是它们之间一个更明确的伦理连接：**当学习同时改变“我怎样评价”与“实际有什么值得评价”时，怎样说明这次改变获得了根据，而不是以旧偏好或新偏好中的任何一方自封裁判。** 这也是区分成长、误学、操纵及正当安顿的问题。解释范围是 G0 与公开 J1–J4 下的伦理学习；不把所有生成都称为学习，或把所有学习都称为善。
 
@@ -160,7 +160,7 @@ Alignment is answerable to the actual lives and shared generative conditions it 
 <a id="formed-ethical-standing"></a>
 ## 12. 形成出的生活怎样改变伦理地位
 
-2026-10-08，承接 Ren 的[继续指示](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#formed-standing-continuation)。[同期完成的生之范围论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#10-completion-of-the-two-questions)已明确：在所采用的 G0 生命范围中，意识分化生的意义，而非一切意义的唯一入口；进一步形成可以有正面意义，也不推出无限创造义务。这里直接复用，推进一个新的连接：**实际形成的生活、体验与参与关系，怎样改变原有用途、权限及承担的适用范围。** [本轮论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#formed-standing-argument)列出依赖与限制。
+2026-10-08，承接 Ren 的[继续指示](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#formed-standing-continuation)。[同期完成的生之范围论证](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-VALUE-SCOPE.md#10-completion-of-the-two-questions)已明确：在所采用的 G0 生命范围中，意识分化生的意义，而非一切意义的唯一入口；进一步形成可以有正面意义，也不推出无限创造义务。这里直接复用，推进一个新的连接：**实际形成的生活、体验与参与关系，怎样改变原有用途、权限及承担的适用范围。** [本轮论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#formed-standing-argument)列出依赖与限制。
 
 “伦理地位”在这里说明：某段实际生活及其承受，凭什么在判断中不能被任意略去，又能支持怎样的具体保护或参与要求。它不是赋予一切权利、责任和权力的单一开关。仍从同一生成历史出发：维持、承受、理解、选择、共同承担在其中分化；有时这些能力同处一个位置，有时分布在不同关系中。我们不先设置一位独立所有者，再由其宣布自己有价值。
 
@@ -349,7 +349,7 @@ The proposed developmental account includes how an activity is understood during
 
 **共同利益和长期选择。** 合作收益可以帮助某种关切形成和留存，不能因此被排除出解释。不过，收益流向、所受代价和后继中实际重建的能力，须分别追踪。已完成的良知传递研究恰好说明：一种载体受到选择，不等于相关回应在后继中增多。进一步要求合作惠及所有受影响生活，需要相应关系支持；不能从本群成功直接推出。
 
-**自我纠正与再训练。** 纠正能力能够降低特定错误，也能修复已经辨明的选择条件；这些接口已有成果。若训练同时改变什么被看见、什么被承认为错误，后续通过自己的审查并不独自认证改变。已有[评价覆盖研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md)已经给出有根据的结构出路及有限成功的推广边界。本轮复用它；没有把那个数学边界另算作新的发现，也没有把“自我修正”当作伦理可靠性的充分定义。
+**自我纠正与再训练。** 纠正能力能够降低特定错误，也能修复已经辨明的选择条件；这些接口已有成果。若训练同时改变什么被看见、什么被承认为错误，后续通过自己的审查并不独自认证改变。已有[评价覆盖研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md)已经给出有根据的结构出路及有限成功的推广边界。本轮复用它；没有把那个数学边界另算作新的发现，也没有把“自我修正”当作伦理可靠性的充分定义。
 
 这五条路线可以相互支持。准确理解、原则反思、共同参与和持续支持一起改善时，可能形成真实的进步。当前欠缺的不是再多列一个好条件，而是说明**这些条件怎样共同改变具体的学习和选择，使生活根据持续取得适当的实践分量**。这须比“有根据的智能会按根据更新”更有解释内容。
 
@@ -381,7 +381,7 @@ Ren 接着要求[研究后续路线](../../../sources/15-codex-theory-conversati
 
 例如，后来选择不再代办，可能是持续关切参与的表现，而非关切减少。因此后续检验须同时追踪**所关切的关系、它在选择中的作用，以及具体动作**；单看帮助频次或一个估计参数，会遗漏三者的不同变化。这是研究对象的校准，不是新发现某种心理机制。
 
-同样，无法完整重建过去，并不阻止通过后续共同活动取得新的根据。同期已完成的[前向接续纠正](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md#10-fresh-understanding-and-situated-continuation)应当直接复用：当前有根据的把握、合宜风险和新后果可以支持继续学习。某项动机归属暂不能确定，不构成暂停所有正面形成的理由。
+同样，无法完整重建过去，并不阻止通过后续共同活动取得新的根据。同期已完成的[前向接续纠正](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md#10-fresh-understanding-and-situated-continuation)应当直接复用：当前有根据的把握、合宜风险和新后果可以支持继续学习。某项动机归属暂不能确定，不构成暂停所有正面形成的理由。
 
 The recommended entry is the acquired reorganization of already partial concern. New understanding can change its content and practical application without increasing a scalar valuation parameter; actual new relationships can also ground new particular reasons. These are distinct developments. Use the completed prospective account to continue from present grounds, without requiring complete origin reconstruction or preloading the target response map.
 
@@ -524,7 +524,7 @@ Ren [选择继续这一连接](../../../sources/15-codex-theory-conversations/20
 
 这里“没有共同历史”指没有此前的相识、合作或特殊承担，不是两个生活在根本上脱离共同现实。“不会回报”指不把对方将来的服务、感激、名誉反馈或加入我们的事业设为支持的必要条件；它不要求关切者毫无喜悦，也不靠排除一切可能的私人满足来定义真诚。新的接触会形成新的关系，但这种关系的开始不等于原有生活刚刚获得基本意义。
 
-必须区分三种可以并存的根据：生活本身及其继续生成的基本正面意义；共同史形成的关系之好与特殊承担；具体处境中有效、正当而有限的行动理由。第一项复用 G0，第二项保留关系的真实生成，第三项沿用 J1–J4 与对应条件 E。由此，**不相识不使基本分量归零，关切范围扩大也不使所有关系、感受和义务变得相同。** 私人选择可以创造新的理由，但没有因此取得授予或撤销一切生活意义的独占权。此前[选择与关切的论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ELECTIVE-CONCERN-ARGUMENT.md)及[现实之善与后续生成的论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GOODNESS-ARGUMENT.md)已给出相关区分，本轮研究其形成上的接续。
+必须区分三种可以并存的根据：生活本身及其继续生成的基本正面意义；共同史形成的关系之好与特殊承担；具体处境中有效、正当而有限的行动理由。第一项复用 G0，第二项保留关系的真实生成，第三项沿用 J1–J4 与对应条件 E。由此，**不相识不使基本分量归零，关切范围扩大也不使所有关系、感受和义务变得相同。** 私人选择可以创造新的理由，但没有因此取得授予或撤销一切生活意义的独占权。此前[选择与关切的论证](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ELECTIVE-CONCERN-ARGUMENT.md)及[现实之善与后续生成的论证](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GOODNESS-ARGUMENT.md)已给出相关区分，本轮研究其形成上的接续。
 
 Shared history can be the route by which concern develops without delimiting every living ground it can recognize. “Unfamiliar” excludes prior acquaintance or special undertaking, not participation in a common reality. Basic living significance, historically formed ties and situated practical requirements remain distinct. No expected return is required as a gate; mixed motives and genuine special responsibilities remain possible.
 
@@ -671,7 +671,7 @@ This completes a conditional recognition-and-response account, not a universal l
 
 Ren [要求继续](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-concern-under-selection-pressure)后，本轮推进上一节留下的冲突。**一种关切取得持续的实践作用，可以包括改变什么算作合格表现、由谁承担回应的代价，以及什么关系允许后来继续纠正。** 这不是要求关切者每次都更能忍受惩罚，而是研究其行动怎样改变持续塑造选择的条件。[整合与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#concern-under-selection-pressure-account)保留前提与证据范围。
 
-先信用已有成果。[目标修订与接续](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md)已经给出旧目标仍获更高奖励时的有根据修订、有限支持和失效对照；[市场中的规则控制研究](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#interface-control-and-corrective-change)已经说明收到反馈并不保证反馈能纠正规则。本轮不重做这些连接，进一步解释：局部关切怎样由个人额外承担，转成可以被多人实行、接续和纠正的活动方式。
+先信用已有成果。[目标修订与接续](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-REVISION-CONTINUATION.md)已经给出旧目标仍获更高奖励时的有根据修订、有限支持和失效对照；[市场中的规则控制研究](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#interface-control-and-corrective-change)已经说明收到反馈并不保证反馈能纠正规则。本轮不重做这些连接，进一步解释：局部关切怎样由个人额外承担，转成可以被多人实行、接续和纠正的活动方式。
 
 起点公开供给三项关系：有人已经关切相关生活；有足够根据认为当前安排的一项改变值得支持；尚有某种可行、正当的商议或改行机会。它们可以来自前几轮所述形成，但不由这一轮保证。若决策者完全拒绝承认相关理由，或所有正当回应机会都被封住，不能把一句“应当改规则”写成已经解释其发生。
 
@@ -770,7 +770,7 @@ An organization's continuation can protect members, coordination and valid commi
 
 ## 57. 接替传下去什么，又允许后来者改变什么
 
-**接替应承接仍有根据的工作与责任，同时保留重新理解其根据的能力。** 这既允许后来者修正创办者，也不容许后来者仅凭接管就宣布旧责任消失。已有[实践判断](PRACTICAL-JUDGMENT.md)和[实际接管内容](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md)已经论证交接须兑现什么；这里不重开责任原则。
+**接替应承接仍有根据的工作与责任，同时保留重新理解其根据的能力。** 这既允许后来者修正创办者，也不容许后来者仅凭接管就宣布旧责任消失。已有[实践判断](PRACTICAL-JUDGMENT.md)和[实际接管内容](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md)已经论证交接须兑现什么；这里不重开责任原则。
 
 可以传递的是：哪些实际生活获得支持，承担的内容、有效时段与结束条件，哪些损失仍未回应，以及后继判断这些关系所需的资料、能力、权限与支持。原来的名称、个人威望、工具和安排则不自动取得同等地位。某项旧安排本来不正当、已完成、获得有效释放或出现更充分理由时，可以改变；保存一份旧清单不等于永久冻结所有目的。
 
@@ -800,7 +800,7 @@ The constructed handoff distinguishes continuing the warranted work from continu
 
 ## 59. 纠错不需要无误的最高裁判，但必须实际够得到选择
 
-“谁来判断代表者”不能靠再指定一个永远正确的代表者回答。已有[可失实见证研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md)给出局部形式成果：在明确的候选与共同失陷范围内，个别见证可能错误，联合取得的材料仍可支持有范围的纠正。其共同覆盖、剩余报告对应与实行支持仍是前提；本轮不新增定理，也不把技术上能够纠正当作有权决定。
+“谁来判断代表者”不能靠再指定一个永远正确的代表者回答。已有[可失实见证研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md)给出局部形式成果：在明确的候选与共同失陷范围内，个别见证可能错误，联合取得的材料仍可支持有范围的纠正。其共同覆盖、剩余报告对应与实行支持仍是前提；本轮不新增定理，也不把技术上能够纠正当作有权决定。
 
 因此，复核关系要具体到：谁能使遗漏的生活进入材料，谁能要求答复，什么有根据的判断能改变任用、支持或具体行动，以及这些能力是否仍由被复核的同一关系完全筛掉。不同岗位或不同机构名称不自动给出实际独立性。没有回报能力的生活可以经有根据的代理进入，但代理者须接受对应、范围、利益冲突及实际后果的检验，不能仅凭“代表整体”免受反驳。
 
@@ -868,7 +868,7 @@ Mutual restraint can protect insiders while preserving their shared exclusion of
 
 ## 65. 接替应传递正在起作用的关系
 
-已有[审查组织更换](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md)和[请求历史接续](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md)已证明有明确条件的局部实现，本轮直接复用。理论上的应用是：评价接替，要看相关材料能否继续被理解、复核者是否仍有实际行动条件、已成立且仍有效的请求怎样被处理，以及结论能否到达实行位置。保存名称或章程不保证这些关系仍在。
+已有[审查组织更换](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md)和[请求历史接续](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md)已证明有明确条件的局部实现，本轮直接复用。理论上的应用是：评价接替，要看相关材料能否继续被理解、复核者是否仍有实际行动条件、已成立且仍有效的请求怎样被处理，以及结论能否到达实行位置。保存名称或章程不保证这些关系仍在。
 
 一种重组可能提高日常效率，却把原来有差异的支持、任用和资料入口收拢到同一控制之下。不能因为组织图上仍有多个岗位，便认定原纠正能力未变。相反，共同支持也不总是有害；若它更可靠地实现有根据的回应而未造成所担心的阻断，不能为追求形式分离拒绝它。需要辨明实际共同失陷和实际替代，而非从组织形状直接给结论。
 

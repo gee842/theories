@@ -53,7 +53,7 @@ all four output-factorized response maps. [Development history](DEVELOPMENT.md)
 records the first sixteen runs and the subsequent paired phase-family control.
 These are exact alternative synthetic
 histories, not independent empirical observations or a success-rate estimate.
-Independent verification is reported in [the review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/APPLICATION-FEEDBACK-REVIEW.md)
+Independent verification is reported in [the review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/APPLICATION-FEEDBACK-REVIEW.md)
 and [its machine-readable check](independent-check.json).
 
 Run `python3 -B study.py` here to regenerate the producer results and

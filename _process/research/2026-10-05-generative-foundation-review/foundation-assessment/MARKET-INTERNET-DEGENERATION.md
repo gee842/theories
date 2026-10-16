@@ -609,7 +609,7 @@ English: For every finite initial essential stock C₀≥5, choose an integer N>
 <a id="formed-independent-continuation"></a>
 ## 41. 接续：实际形成一种不必等待原控制关系的接续
 
-2026-10-09。AI-authored theoretical and evidence continuation. Result(s): `market-finite-support-obstruction`、`market-supported-finite-transition`、`effective-capacity-and-eventual-reachability`；另直接信用未迁移的 [FormedSelection / FormationRoot](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean)、[CommonOrganization](../../../../experiments/market-generativity/meta-attractor/CommonOrganization.lean)及[实际接触形成—生产—再生](../root-foundation/DIRECT-PORT-RENEWAL.md)。已有形成、共同记账和生产后恢复条件的构造不重开，亦不把各自的能量单位与市场C强行等同。
+2026-10-09。AI-authored theoretical and evidence continuation. Result(s): `market-finite-support-obstruction`、`market-supported-finite-transition`、`effective-capacity-and-eventual-reachability`；另直接信用未迁移的 [FormedSelection / FormationRoot](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean)、[CommonOrganization](../../../../experiments/market-generativity/meta-attractor/CommonOrganization.lean)及[实际接触形成—生产—再生](../history/root-foundation/DIRECT-PORT-RENEWAL.md)。已有形成、共同记账和生产后恢复条件的构造不重开，亦不把各自的能量单位与市场C强行等同。
 
 Delta: 本轮把“实际改组是否能打开另一接续”接到一个公开历史实例：LibreOffice在原共同开发活动中分化出新的协调、构建、发布及分发关系，过渡支持先于新基金会法人完成。新增的是**可追溯的组织形成与产品接入对应**，不新增数学定理或宣称另发明一般开源分支机制。登记为 `formed-software-continuation`，范围为历史机制评估。
 

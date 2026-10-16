@@ -1,6 +1,6 @@
 # Temporal inspection and correction
 
-The [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md) records assumptions, theory, counterreview, source comparison and completion scope.
+The [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md) records assumptions, theory, counterreview, source comparison and completion scope.
 
 Run from this directory:
 

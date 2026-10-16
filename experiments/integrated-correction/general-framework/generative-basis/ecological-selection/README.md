@@ -1,6 +1,6 @@
 # Empirical ecological retention
 
-This analysis uses the [preserved Ratcliff 2013 survival table](../../../../../sources/evolutionary-selection/ratcliff-2013/README.md). It treats 30 cultures in six isolate/regime groups as the observations, retaining the one-lineage and prior-conditioning limitations in the [integration](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md).
+This analysis uses the [preserved Ratcliff 2013 survival table](../../../../../sources/evolutionary-selection/ratcliff-2013/README.md). It treats 30 cultures in six isolate/regime groups as the observations, retaining the one-lineage and prior-conditioning limitations in the [integration](../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md).
 
 Run from the repository root using Python 3 and Node.js. Both scripts use only standard libraries:
 

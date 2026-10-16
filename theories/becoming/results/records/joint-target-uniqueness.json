@@ -41,7 +41,7 @@
   ],
   "counterexamples": [
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md",
       "detail": {
         "zh": "完整部分测试轮廓可能不能识别指定部分是否重复使用同一支持。",
         "en": "Even complete part profiles may fail to identify whether designated parts reuse the same support."
@@ -72,7 +72,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md",
       "role": "integration",
       "sha256": "3fd90975012d16823b2f972d5bdd5cf0f6ffc1c4b4c967a8dac10371e6351ab7",
       "declarations": []

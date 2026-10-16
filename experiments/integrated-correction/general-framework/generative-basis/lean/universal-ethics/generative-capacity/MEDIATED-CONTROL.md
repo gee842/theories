@@ -1,6 +1,6 @@
 # Mediated control and continuing evidence
 
-The [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md) records the argument, counterreview, primary comparison and remaining physical correspondence conditions.
+The [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md) records the argument, counterreview, primary comparison and remaining physical correspondence conditions.
 
 Run from this directory:
 

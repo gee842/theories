@@ -12,7 +12,7 @@ For the appendix, the exact reference query `EC22-003472` returned a tool-provid
 
 ## What the evidence can discriminate
 
-The relevant outward connection differs from the previously reviewed case-to-rule connection. An institution's own earlier outputs can remain consequential parts of another person's environment. Updating its internal representation does not automatically update those outputs, remove a practical constraint or make a remedy accessible. This is an application of the existing [assurance distinction](../root-foundation/HUIGEN-REASON-TRANSPORT.md#12-assurance-can-create-a-claim-that-outlasts-inquiry), not a new proof that every influence creates an obligation.
+The relevant outward connection differs from the previously reviewed case-to-rule connection. An institution's own earlier outputs can remain consequential parts of another person's environment. Updating its internal representation does not automatically update those outputs, remove a practical constraint or make a remedy accessible. This is an application of the existing [assurance distinction](../history/root-foundation/HUIGEN-REASON-TRANSPORT.md#12-assurance-can-create-a-claim-that-outlasts-inquiry), not a new proof that every influence creates an obligation.
 
 The smallest informative audit follows a particular corrected representation through its justified audience, effective date, available channels and actual consequences. It preserves four distinctions:
 

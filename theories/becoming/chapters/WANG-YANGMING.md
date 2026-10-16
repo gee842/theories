@@ -1,12 +1,12 @@
 # 王阳明与生成理论：一体之仁、知行与工夫的整体整合
 
-**后续方向，2026年10月7日：** Ren 提议从生成核心的内生演化作用建立“本然良知”，并要求记入项目上下文、继续推进。[当前演化研究](LIANGZHI-EVOLUTION.md)已有19项传递、17项发展重建的实际 Lean 检查，以及分项原始经验评估。[最新实践整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)以生生正面判准解释手段误认、目的改变、知情拒绝和既有承担；原典权变、差等与拟归家书保留原说内容和现代重构界限。新增20项 Lean 声明检查实际支持交接、失败恢复、不同次序和有限结束，不以交接可行性证明仁或普遍规范权威。本章的整体重构保留，良知完整生成与无假设普遍证明仍继续。
+**后续方向，2026年10月7日：** Ren 提议从生成核心的内生演化作用建立“本然良知”，并要求记入项目上下文、继续推进。[当前演化研究](LIANGZHI-EVOLUTION.md)已有19项传递、17项发展重建的实际 Lean 检查，以及分项原始经验评估。[最新实践整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)以生生正面判准解释手段误认、目的改变、知情拒绝和既有承担；原典权变、差等与拟归家书保留原说内容和现代重构界限。新增20项 Lean 声明检查实际支持交接、失败恢复、不同次序和有限结束，不以交接可行性证明仁或普遍规范权威。本章的整体重构保留，良知完整生成与无假设普遍证明仍继续。
 
 2026年10月7日。回应 Ren [「先完成王阳明」](../../../sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md)。本章是原典约束下的比较与理论整合，不把阳明改写为一组现代反馈机制，也不把他的本体主张直接列为生成理论的公理。遵循[非二元方法](NONDUAL-METHOD.md)，服务于[整个生成实现的伦理质量怎样构成普遍实践根据](../history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)。
 
 **本轮完成的主张是：一体之仁、明德亲民、知行合一与致良知，在阳明那里构成有伦理内容的一体结构；生成理论应把这种结构解释为承受、理解、目的与回应在共同历史中的相互形成和实现，并检验它怎样发生偏蔽、纠正及正当分殊。** 这一整合已经落实到原典、肯定论证、实质反审和经过实际检查的形式接口。阳明所认定的本然良知为何具有普遍可靠性，以及这一整体根据为何适用于一切相关智能，仍未得到无假设证明。
 
-本章替代6日比较稿作为当前表述；[旧稿原字节快照](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md)保留其当时范围与不足。原典核对、独立分工反审和形式依赖分别见[来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md)、[反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md)、[数学接口](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md)与[整合记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md)。
+本章替代6日比较稿作为当前表述；[旧稿原字节快照](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md)保留其当时范围与不足。原典核对、独立分工反审和形式依赖分别见[来源](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md)、[反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md)、[数学接口](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-MATH.md)与[整合记录](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md)。
 
 ## 1. 阳明本来提出的就是有内容的一体
 
@@ -26,7 +26,7 @@
 
 对「承受、理解、回应」也应如此处理。它们首先是共同发生中的关系：某种活动改变后续生活；这种变化参与注意、辨别和目的的形成；回应又改变所承受的处境及此后能够理解、拒绝或继续的条件。同一组织可以在这些关系中处于不同位置。具体教学中，师生身份由长期指导、求学、认可及权力安排形成；《责善》允许学生纠正老师，并不意味着两者在经验和权力上已经对称。[《教条示龙场诸生·责善》](https://zh.wikisource.org/zh-hant/王陽明集/卷26#○責善)。
 
-仓库已有[共同形成](NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释)、[实际后果进入完成判据](NONINSTRUMENTAL-CONCERN.md#13-后果进入完成判据局部内容的取得与实际使用)、[活动范围的形成与结束](NONINSTRUMENTAL-CONCERN.md#14-活动及其范围本身的形成改变和结束)、[整体积分与局部启动](NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界)以及[共同历史的进一步连接](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MERGED-OBLIGATIONS-INTEGRATION.md)。不能再把这些连接笼统列为尚未形成。它们贡献的是有条件、可核查的具体实现；不是阳明全部心性论的证明。
+仓库已有[共同形成](NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释)、[实际后果进入完成判据](NONINSTRUMENTAL-CONCERN.md#13-后果进入完成判据局部内容的取得与实际使用)、[活动范围的形成与结束](NONINSTRUMENTAL-CONCERN.md#14-活动及其范围本身的形成改变和结束)、[整体积分与局部启动](NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界)以及[共同历史的进一步连接](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MERGED-OBLIGATIONS-INTEGRATION.md)。不能再把这些连接笼统列为尚未形成。它们贡献的是有条件、可核查的具体实现；不是阳明全部心性论的证明。
 
 ## 3. 知行合一：理解在实践中成其为理解
 
@@ -44,7 +44,7 @@
 
 实际处境可以产生三种不同的纠正。第一，修正手段：方法并未造成所理解的效果。第二，修正具体目的：原来被追求的安静、顺从或项目延续，后来实际形成了回避、畏惧或支配，因此不再恰当地承载原先赋予它的意义。第三，修正根本伦理识别：某项原被称为好的实现本身被证明误认。第三项需要更强论证，不能由前两项自动推出。
 
-阳明改变静坐教法的材料直接记载了教法及具体适切判断的修正，也为我们检验局部目的怎样修订提供入口：原本用于修习的方法，可能使人喜静厌动；这种形成的后果改变了继续使用该方法的意义。《责善》则把劝告如何实际影响人、以及教导者能否受纠正，放进责善自身是否成就的判断中。**在本轮重构中，反馈因而可以纠正「现在应追求怎样的实践」，不只调整实现固定指标的技巧。** 将安静或顺从由手段固化为目标的情形分析为具体目的修订，是我们的解释，不是原典已经识别并报告了目的形成的机制。 但这些材料也允许「稳定的根本志向指导手段和局部目的修订」这一竞争解释，不能算作终极善从零形成的经验证明。[《传习录下》静坐改教段](https://zh.wikisource.org/zh-hant/王陽明集/卷03)；[《责善》](https://zh.wikisource.org/zh-hant/王陽明集/卷26#○責善)；[既有实践转化论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICE-TRANSFORMATION-ARGUMENT.md)。
+阳明改变静坐教法的材料直接记载了教法及具体适切判断的修正，也为我们检验局部目的怎样修订提供入口：原本用于修习的方法，可能使人喜静厌动；这种形成的后果改变了继续使用该方法的意义。《责善》则把劝告如何实际影响人、以及教导者能否受纠正，放进责善自身是否成就的判断中。**在本轮重构中，反馈因而可以纠正「现在应追求怎样的实践」，不只调整实现固定指标的技巧。** 将安静或顺从由手段固化为目标的情形分析为具体目的修订，是我们的解释，不是原典已经识别并报告了目的形成的机制。 但这些材料也允许「稳定的根本志向指导手段和局部目的修订」这一竞争解释，不能算作终极善从零形成的经验证明。[《传习录下》静坐改教段](https://zh.wikisource.org/zh-hant/王陽明集/卷03)；[《责善》](https://zh.wikisource.org/zh-hant/王陽明集/卷26#○責善)；[既有实践转化论证](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICE-TRANSFORMATION-ARGUMENT.md)。
 
 在生成理论中，这项解释还应包括辨识能力本身怎样形成及变化；阳明以本有良知解释其根本根据。两者在具体工夫的可增长性上相接，在根本伦理能力的来源上尚不能宣布同一。我们不把后者藏入更新规则，也不把原典改写成已经提出现代发展模型。
 
@@ -69,7 +69,7 @@
 - **差等：**具体形成的依赖、允诺、照料史和能力可以解释不同责任；既成关系本身不使既成权力永远正当。
 - **结束：**实际解除负担、正当承担、权限或程序结束、原判断被纠正，是不同情况。合理结束不等于历史消失，也不意味着每个旧目标都必须先实现。
 
-原典本身存在不能删去的张力：舜象段对修养者的归责、舍生取义段对保全生命的限制，不等于已经阐明现代自护边界。只选温和的劝善段落无法消除这项差异；也不能凭这些段落断定阳明否认一切自护。扩展必须正面论证，见[来源核对](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md#4-差等拒绝与更有效的控制)与[整体继续及正当修订](../history/UNIFIED-ETHICAL-GROUNDING.md#justified-revision-and-the-current-sufficiency-limit)。
+原典本身存在不能删去的张力：舜象段对修养者的归责、舍生取义段对保全生命的限制，不等于已经阐明现代自护边界。只选温和的劝善段落无法消除这项差异；也不能凭这些段落断定阳明否认一切自护。扩展必须正面论证，见[来源核对](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md#4-差等拒绝与更有效的控制)与[整体继续及正当修订](../history/UNIFIED-ETHICAL-GROUNDING.md#justified-revision-and-the-current-sufficiency-limit)。
 
 ## 7. 已检查的形式整合：整体历史与实际接续
 
@@ -87,7 +87,7 @@
 
 零事件接续的结果仅说明形式接口没有先设「必须永远继续行动」；它不代表已经实施停止，也不证明停止后的整个未来合宜。拒绝、改变任务或关闭介入，要在有相应内容的实际历史中另行判断。
 
-新增12项声明经 Lean 4.29.1 实际检查，其中8项命名公理依赖为空；其余使用标准逻辑依赖，见[数学与依赖审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-MATH.md)。选择函数存在性的反向推论使用经典选择，不是形成算法。无自定义伦理公理不等于无假设；过程规律、读出、`Fits` 及其生活对应都保留各自的解释义务。
+新增12项声明经 Lean 4.29.1 实际检查，其中8项命名公理依赖为空；其余使用标准逻辑依赖，见[数学与依赖审计](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-MATH.md)。选择函数存在性的反向推论使用经典选择，不是形成算法。无自定义伦理公理不等于无假设；过程规律、读出、`Fits` 及其生活对应都保留各自的解释义务。
 
 ## 8. 对整个生成理论的实质推进与完成边界
 
@@ -97,6 +97,6 @@
 
 原说剩余的实质承诺，现在能准确定位：**天命之性与本然良知承担伦理权威；实际工夫如何正确识别其发用需要辨明；这种认定能否跨不同智能的形成史具有普遍实践效力需要论证。** 阳明具有广泛的宇宙论主张，不能把他缩减成人类心理学；然而这项主张本身尚不是对所有可能相关智能的已检查普遍证明。
 
-一个真正的竞争解释可以承认一体形成、承认实际仁爱可贵，也承认丰富的实践理解，却把责任的权威归于特定形成的生活关系，而不接受其自动具有一切相关位置上的初步实践效力。它不是任意翻转善恶标签。本项目须回答其解释何处不足，或承认具体普遍化需要修订。现有[普遍元伦理形式工作](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md)证明有根据关系的推广和相容组合；不能反过来替本轮供应最初的伦理根据。
+一个真正的竞争解释可以承认一体形成、承认实际仁爱可贵，也承认丰富的实践理解，却把责任的权威归于特定形成的生活关系，而不接受其自动具有一切相关位置上的初步实践效力。它不是任意翻转善恶标签。本项目须回答其解释何处不足，或承认具体普遍化需要修订。现有[普遍元伦理形式工作](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md)证明有根据关系的推广和相容组合；不能反过来替本轮供应最初的伦理根据。
 
 因此，本轮收束的是**王阳明的整体重构及其进入当前生成理论的有据整合**，不是对全部阳明学的校勘终结，也不是无假设普遍伦理证明。下一根本推论应继续检验：这种仁的实现何以具有跨形成史的实践根据，而不靠将所有不认可者预先排除出智能、良知或一体。规范根据、识别、动机、实行与本理论的唯一必要性，各有不同论证任务。

@@ -70,7 +70,7 @@
     {
       "zh": "公开数据：全部16位参与者的原始恢复记录按参与者分析，在六篇文献整合之上加入实际测量对应与留后预测评估。",
       "en": "Public data: all 16 original recovery records are analysed at participant level, extending the six-study synthesis with actual measurement correspondence and held-out forecast evaluation.",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence"
     }
   ],
   "validation_scope": {
@@ -91,7 +91,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
       "role": "integration",
       "sha256": "2a3300bddad51eb8407891bfb095cebf9de1830c838f3c7144d893cce6f06736",
       "declarations": []

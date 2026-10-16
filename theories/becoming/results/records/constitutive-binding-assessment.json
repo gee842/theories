@@ -50,14 +50,14 @@
           "zh": "语法、绑定解释及认可条件不变；实际角色和推理根据的哲学说明保持独立义务。",
           "en": "Syntax, binding interpretation and assessment remain unchanged; the philosophical account of actual roles and warrant remains a separate obligation."
         },
-        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md"
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md"
       }
     }
   ],
   "related": [],
   "counterexamples": [
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
       "detail": {
         "zh": "保留绑定但采用更严格结论标准的对手；同类型误接、同值遮蔽及不受约束的用语自我担保，分别限制不同推广。",
         "en": "Retained binding with a stricter conclusion standard, same-type capture, coincident values and unrestricted constitutive self-certification restrict distinct generalizations."
@@ -85,17 +85,17 @@
     {
       "zh": "正面论证：新称谓设立角色，未变的使用保持它，代入保持消费者所指定的依存；每步范围写明。",
       "en": "Affirmative argument: a fresh designation institutes a role, an unchanged use retains it, and insertion retains the consumer's designated dependence, with each step's scope stated.",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#102-the-affirmative-argument-with-each-steps-scope"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#102-the-affirmative-argument-with-each-steps-scope"
     },
     {
       "zh": "对手与路线：保持相关活动的对手及通向更强结论的三条路线逐一评估；均未提供到全套元推理根据的过渡。",
       "en": "Rivals and routes: target-preserving rivals and three routes to the stronger conclusion are assessed; none supplies the passage to comprehensive warrant for the metainferences used.",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#104-three-routes-to-the-stronger-conclusion-actually-assessed"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#104-three-routes-to-the-stronger-conclusion-actually-assessed"
     },
     {
       "zh": "处置：区分设立、执行、辨认与根据，撤下笼统的“每个绑定须另有最终证书”要求；论证自身所用资源逐项审计。",
       "en": "Disposition: institution, execution, recognition and warrant are distinguished, retiring the vague demand for a final certificate of every binding; the argument's own resources are audited item by item.",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#107-disposition-and-completion-scope"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#107-disposition-and-completion-scope"
     }
   ],
   "validation_scope": {
@@ -110,7 +110,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
       "role": "review",
       "sha256": "7565fa3f6e3f74a2775c05afdc8bd47ce3c02ae1a1fcd53e0f3a6a2370d6f1a0",
       "declarations": []

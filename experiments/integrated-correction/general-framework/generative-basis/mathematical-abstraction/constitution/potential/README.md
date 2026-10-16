@@ -1,6 +1,6 @@
 # Potentialist truth and future coverage
 
-8 October 2026. Two checked `Std`-only Lean modules investigate a future-stage interpretation of relational first-order truth. See the [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md), [primary-source assessment](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-SOURCES.md) and [verification receipt](verification.json).
+8 October 2026. Two checked `Std`-only Lean modules investigate a future-stage interpretation of relational first-order truth. See the [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md), [primary-source assessment](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-SOURCES.md) and [verification receipt](verification.json).
 
 ## Reproduce
 

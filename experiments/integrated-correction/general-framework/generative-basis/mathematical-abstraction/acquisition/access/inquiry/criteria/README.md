@@ -21,4 +21,4 @@ PYTHONDONTWRITEBYTECODE=1 python3 check.py
 PYTHONDONTWRITEBYTECODE=1 python3 review_check.py
 ```
 
-The [canonical interpretation](../../../../../../../../../theories/becoming/history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md) and [hand proofs](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CRITERION-MATH.md) explain downward closure, failed conjunction, explicit restoration conditions and the timing of later demands. No empirical success rate, numerical utility, new metaphysical proof or mathematical novelty is inferred from the finite counts.
+The [canonical interpretation](../../../../../../../../../theories/becoming/history/ATTAINABLE-MATHEMATICAL-QUESTIONS.md) and [hand proofs](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-CRITERION-MATH.md) explain downward closure, failed conjunction, explicit restoration conditions and the timing of later demands. No empirical success rate, numerical utility, new metaphysical proof or mathematical novelty is inferred from the finite counts.

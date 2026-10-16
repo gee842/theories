@@ -1,6 +1,6 @@
 # Causal fault envelopes and correction after reconfiguration
 
-8 October 2026. See the [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md) for the argument, exact limits, primary sources and author counterreview.
+8 October 2026. See the [research integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md) for the argument, exact limits, primary sources and author counterreview.
 
 Run from this directory:
 

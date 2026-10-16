@@ -140,21 +140,21 @@
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
       "detail": {
         "zh": "闭合坐标对手（审查 P5）：剖面含已形成的闭合坐标时，S0、不受限单调性、随附性与逐步容差都成立，而 Diff 与 Chain 都不成立；它不是伪装的所有者。",
         "en": "Closure-coordinate rival (review P5): with a formed closure coordinate in the profile, S0, unrestricted monotonicity, supervenience and stepwise tolerance hold while Diff and Chain fail; it is not ownership in disguise."
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
       "detail": {
         "zh": "只限自身的单调性（审查 P4）：与 S0、随附性、只给自身意义及 Diff 一致；第一步的严格不一致只对承认 HUIGEN §7 第一角的对手成立。",
         "en": "Own-restricted monotonicity (review P4) is consistent with S0, supervenience, own-only significance and Diff; step one's exact inconsistency holds only for a rival granting HUIGEN §7's first horn."
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
       "detail": {
         "zh": "连续递减并在有限距离处归零的权重（审查 P7）：每步变化有界，却不给远处者意义；断点也不必落在自身边界上。",
         "en": "A graded weight falling continuously to zero at a finite distance (review P7): bounded change per step, yet no significance far away; the cut need not lie at the own boundary."
@@ -204,7 +204,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md",
       "role": "statement",
       "sha256": "09657558d612d0c6991bf4431436067874241fbb29492f59843211d4f92e88c5",
       "declarations": []
@@ -216,7 +216,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
       "role": "review",
       "sha256": "91fb5bbb783742c3b49047d268ee781049876fd88e997d41cd57400251ce490c",
       "declarations": []

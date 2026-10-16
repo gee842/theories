@@ -1,6 +1,6 @@
 # First implementation: retained routes and one paid successor
 
-6 October 2026. AI-authored finite implementation specification extending the [reviewed prospective contract](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-CONTRACT.md). This is a synthetic construction whose costs are chosen to test a known inherited endpoint, not a preregistered empirical study. Validation is pending until its new checks and implementation review pass. The preceding contract and its handoff audit remain distinct artifacts.
+6 October 2026. AI-authored finite implementation specification extending the [reviewed prospective contract](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECIPIENT-TRANSMISSION-CONTRACT.md). This is a synthetic construction whose costs are chosen to test a known inherited endpoint, not a preregistered empirical study. Validation is pending until its new checks and implementation review pass. The preceding contract and its handoff audit remain distinct artifacts.
 
 ## Route formation and correspondence
 

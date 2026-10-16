@@ -1,6 +1,6 @@
 # Measuring formation and apparent loss in one fixed field
 
-[Research findings](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md) · [Prospective protocol](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md) · [Original range bodies](../../../../../../../sources/evolutionary-selection/karita-2026/microscopy-history/README.md)
+[Research findings](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md) · [Prospective protocol](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md) · [Original range bodies](../../../../../../../sources/evolutionary-selection/karita-2026/microscopy-history/README.md)
 
 The analysis follows the central 512 × 512 pixels of one high-resolution scene through all 91 captures, about 15 hours. Acquisition metadata and two independent decoding routes bind the observations to the original CZI. Detection and spatial matching remain explicit measurement choices. The four longest assigned tracks include both abrupt local loss and a boundary-censored object still visible after its track ends.
 

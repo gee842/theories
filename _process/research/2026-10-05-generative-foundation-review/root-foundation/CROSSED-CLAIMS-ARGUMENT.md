@@ -1,6 +1,6 @@
 # 交叉基本请求：局部稳健的合并与实际获救机会
 
-2026-10-08。AI 撰写的肯定伦理论证，接续 Ren 的“继续”。按[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)及 G0/J 明确公理路线推进。[本轮整合](CROSSED-CLAIMS-INTEGRATION.md)、[形式范围](CROSSED-CLAIMS-PROOF.md)及[独立反审](CROSSED-CLAIMS-REVIEW.md)分别说明结果及验证。本文提出的 LR 是可争辩的新增规范承诺，不归为 Ren 原话，也不当作无前提证明。
+2026-10-08。AI 撰写的肯定伦理论证，接续 Ren 的“继续”。按[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)及 G0/J 明确公理路线推进。[本轮整合](CROSSED-CLAIMS-INTEGRATION.md)、[形式范围](../history/root-foundation/CROSSED-CLAIMS-PROOF.md)及[独立反审](../history/root-foundation/CROSSED-CLAIMS-REVIEW.md)分别说明结果及验证。本文提出的 LR 是可争辩的新增规范承诺，不归为 Ren 原话，也不当作无前提证明。
 
 **肯定候选 LR：已经获得充分根据的同等多救优先，不必因某处损失发生任意轻微的真实加重而立即失效。** 在一个固定且关系充分的救助情境中，若变化只是受限的受损加深，没有改变先行要求、强加伤害、支持关系或既有机会承诺与分配权，就应当容许某段实质非零的变化范围，仍然优先实现较多的基本保护。这给出少数稍重与多数稍轻之间的一部分肯定比较；不是给任意两个损失种类设置兑换率。
 
@@ -8,9 +8,9 @@
 
 ## 1. 查重后的独有连接
 
-[BC1](BASIC-CONFLICT-INTEGRATION.md)已在声明范围内支持同等基本救助中较多的保护，并公开承受不向较少一方再分配机会的代价。[BC2](BASIC-LOSS-SEVERITY-INTEGRATION.md)已给一对一的程度比较理由；[LC](UNEQUAL-BASIC-LOSSES-INTEGRATION.md)已给数量与程度同向变化时的联合减损理由，且没有将它独自升级为最终分配。
+[BC1](../history/root-foundation/BASIC-CONFLICT-INTEGRATION.md)已在声明范围内支持同等基本救助中较多的保护，并公开承受不向较少一方再分配机会的代价。[BC2](../history/root-foundation/BASIC-LOSS-SEVERITY-INTEGRATION.md)已给一对一的程度比较理由；[LC](../history/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md)已给数量与程度同向变化时的联合减损理由，且没有将它独自升级为最终分配。
 
-本轮又查到并行完成的[有限合并与情境](AGGREGATION-CONTEXT-INTEGRATION.md)：它检验最强层过滤的改进翻转、共同增加与联合实施的拼接要求，并说明限制抵偿不等于删除仍成立的根据。该成果直接复用。本文不重新认领“要保留较弱理由”、抽象循环警告、J4 的既有程序或同一生活的无减损改善。
+本轮又查到并行完成的[有限合并与情境](../history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)：它检验最强层过滤的改进翻转、共同增加与联合实施的拼接要求，并说明限制抵偿不等于删除仍成立的根据。该成果直接复用。本文不重新认领“要保留较弱理由”、抽象循环警告、J4 的既有程序或同一生活的无减损改善。
 
 独有问题是：**LC 尚未决定的少数较重与多数较轻基本损失，是否至少有一部分能够获得实质优先，而无须建立普遍价值总分？** LR 以 BC1 已承担的实质优先为起点，明确增加一个局部稳定承诺。机会研究则处理一个不同的改变：并非某项既有损失变轻，而是共同可行支持增多，原冲突出现了新的解除方式。
 
@@ -54,7 +54,7 @@ LR 对此提出实质异议：为什么刚出现、没有其他关系变化的�
 
 一个明显风险是逐次扩大 e：每一步都说“只加一点”，最后让一项极重且不可恢复的损失仍输给两项很轻的阻断。LR 不许可这个推论。它保留的是**最初已经辩护的基准和同一受限变化范围**，不是把每个新判断都重新宣布成可获得另一整段余地的新基准。
 
-这里没有主张所有伦理判断必须对任何表示连续，也没有承诺任意两次局部胜出可拼成全局次序。若要从一个基准转向另一个，须说明新比较本身有什么充分根据、此前增加的损失积累成了什么、是否越过实际关系门槛。过去的增量不会因更换描述起点而清零。扩大群体、复制真实救助历史、加入共同保护或改变菜单，也不自动继承原余地；[已完成的拼接研究](AGGREGATION-CONTEXT-INTEGRATION.md)已经说明这些延展须公开各自的组合承诺。本文没有另证一个 Sorites 不可能定理，也不以“只局部”免除未来检验。
+这里没有主张所有伦理判断必须对任何表示连续，也没有承诺任意两次局部胜出可拼成全局次序。若要从一个基准转向另一个，须说明新比较本身有什么充分根据、此前增加的损失积累成了什么、是否越过实际关系门槛。过去的增量不会因更换描述起点而清零。扩大群体、复制真实救助历史、加入共同保护或改变菜单，也不自动继承原余地；[已完成的拼接研究](../history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)已经说明这些延展须公开各自的组合承诺。本文没有另证一个 Sorites 不可能定理，也不以“只局部”免除未来检验。
 
 真实的近邻也可能很窄，甚至某个具体变化路径根本没有我们声称的稳定余地。例如支持恰在维持条件的临界处、唯一告别即将结束，或一次微小延误会失去全部可达恢复。在这种路径上，物理变化小不等于生活变化小；不能借 LR 拒绝实际新根据。若不存在任何符合第二节内容的非零变化，那个具体情境不是 LR 的有效应用。
 
@@ -80,13 +80,13 @@ LR 对此提出实质异议：为什么刚出现、没有其他关系变化的�
 
 LR 不靠这种做法获得有限合并。它直接比较实际选择后哪段基本生活被保护、哪段损失加重；不先扫描菜单取最强标签，再把不达阈值的生活置零。因新增实际方案而改变理由也可能正当，例如上一节 C 的形成；此时应说明变化的是共同保护，而不是只说菜单长度或最高等级变了。
 
-已完成[情境研究](AGGREGATION-CONTEXT-INTEGRATION.md)的过滤改进反例与组合限制在这里直接使用。若本轮形式工作另检验一个数值门槛，它只能是指定规则的结构诊断，不是对所有有限合并的反证，更不是已证明 LR 可无条件传递。原典提出的伦理异议也不能靠将每个选项重命名为“在此菜单中的选项”就获得回答。
+已完成[情境研究](../history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)的过滤改进反例与组合限制在这里直接使用。若本轮形式工作另检验一个数值门槛，它只能是指定规则的结构诊断，不是对所有有限合并的反证，更不是已证明 LR 可无条件传递。原典提出的伦理异议也不能靠将每个选项重命名为“在此菜单中的选项”就获得回答。
 
 ## 8. 主要来源与原创论证的边界
 
 直接核读 **Alex Voorhoeve, “How Should We Aggregate Competing Claims?”, *Ethics* 125(1):64–87 (2014)** 的[作者接受稿](https://personal.lse.ac.uk/voorhoev/How%20Should%20We%20Aggregate%20Competing%20Claims%20--%20Ethics%20accepted%20version%20Dec%202013docx.pdf)，本轮重点为 §§V–VI 与 §VIII 的前两个案例；稿本页码与期刊页码不同。先前关于相关性、强度加总和个人立场的来源评估直接复用。本轮的 LR 是我们的候选，不归给该作者。
 
-直接核读 **Johanna Privitera, “Aggregate Relevant Claims in Rescue Cases?”, *Utilitas* 30(2):228–236 (2018)** 的[原文](https://d-nb.info/1216104093/34)，重点印刷页234–236，并核对前文规则与案例。其批评的具体内容与 Broome 的机会论述集中在[本轮独立反审](CROSSED-CLAIMS-REVIEW.md)，本文不重复长篇摘要。我们据此限制第七节的排除根据，不宣称接受其全部评价或独创其反例。
+直接核读 **Johanna Privitera, “Aggregate Relevant Claims in Rescue Cases?”, *Utilitas* 30(2):228–236 (2018)** 的[原文](https://d-nb.info/1216104093/34)，重点印刷页234–236，并核对前文规则与案例。其批评的具体内容与 Broome 的机会论述集中在[本轮独立反审](../history/root-foundation/CROSSED-CLAIMS-REVIEW.md)，本文不重复长篇摘要。我们据此限制第七节的排除根据，不宣称接受其全部评价或独创其反例。
 
 本轮另定位到 **John Broome, “Fairness,” *Proceedings of the Aristotelian Society* 91 (1990–1991)** 的[作者站点原文](https://users.ox.ac.uk/~sfop0060/pdf/Fairness.pdf)，该扫描正文印刷页87–101。准确的实读范围与原典评估以本轮独立审查记录为准；本文不把检索摘要当作通读。机会及其正当性不由一项数学比例自动建立。
 

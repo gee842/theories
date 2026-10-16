@@ -13,7 +13,7 @@
 <details>
 <summary>AcquiredActivityScope.lean — 43 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean) · [理论 / Theory](../../chapters/NONINSTRUMENTAL-CONCERN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean) · [理论 / Theory](../../chapters/NONINSTRUMENTAL-CONCERN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-SCOPE-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean`
 
@@ -77,7 +77,7 @@ Imports: `AcquiredPurposeCriterion`
 <details>
 <summary>AcquiredInitiationConstraint.lean — 41 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-INITIATION-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredInitiationConstraint.lean`
 
@@ -139,7 +139,7 @@ Imports: `AcquiredActivityScope`
 <details>
 <summary>AcquiredPurposeCriterion.lean — 74 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean) · [理论 / Theory](../../chapters/NONINSTRUMENTAL-CONCERN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean) · [理论 / Theory](../../chapters/NONINSTRUMENTAL-CONCERN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-CRITERION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean`
 
@@ -279,7 +279,7 @@ Imports: `GroundingContract`
 <details>
 <summary>CoupledConcernHistory.lean — 26 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean) · [理论 / Theory](../../chapters/FORMAL-CORE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean) · [理论 / Theory](../../chapters/FORMAL-CORE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/CoupledConcernHistory.lean`
 
@@ -326,7 +326,7 @@ Imports: `CoupledOccurrence`, `PlasticityWitness`
 <details>
 <summary>GroundingContract.lean — 23 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/GroundingContract.lean`
 
@@ -370,7 +370,7 @@ Imports: `PatientConcern`
 <details>
 <summary>NondualConcernAdapter.lean — 5 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualConcernAdapter.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualConcernAdapter.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONDUAL-CORE-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualConcernAdapter.lean`
 
@@ -396,7 +396,7 @@ Imports: `NondualCore`, `GroundingContract`
 <details>
 <summary>NondualFormation.lean — 36 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualFormation.lean) · [理论 / Theory](../../chapters/FORMAL-CORE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualFormation.lean) · [理论 / Theory](../../chapters/FORMAL-CORE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONDUAL-CORE-MATH.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/NondualFormation.lean`
 
@@ -453,7 +453,7 @@ Imports: `NondualCore`
 <details>
 <summary>PatientConcern.lean — 57 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AFFECTIVE-REALIZATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PatientConcern.lean`
 
@@ -531,7 +531,7 @@ Imports: `ResourceContinuation`
 <details>
 <summary>PurposeCorrection.lean — 26 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean) · [理论 / Theory](../../chapters/NONINSTRUMENTAL-CONCERN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean) · [理论 / Theory](../../chapters/NONINSTRUMENTAL-CONCERN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean`
 
@@ -578,7 +578,7 @@ Imports: `CoupledOccurrence`
 <details>
 <summary>PurposeCorrectionHistory.lean — 29 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrectionHistory.lean) · [理论 / Theory](../../chapters/NONINSTRUMENTAL-CONCERN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrectionHistory.lean) · [理论 / Theory](../../chapters/NONINSTRUMENTAL-CONCERN.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrectionHistory.lean`
 
@@ -628,7 +628,7 @@ Imports: `InquiryRevision`, `PurposeCorrection`
 <details>
 <summary>RootGrounding.lean — 37 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/RootGrounding.lean) · [理论 / Theory](../../chapters/FORMAL-CORE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/RootGrounding.lean) · [理论 / Theory](../../chapters/FORMAL-CORE.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-ROOT-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/RootGrounding.lean`
 
@@ -686,7 +686,7 @@ Imports: `GroundingContract`
 <details>
 <summary>SituatedPractice.lean — 23 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean) · [理论 / Theory](../../chapters/WANG-YANGMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean) · [理论 / Theory](../../chapters/WANG-YANGMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean`
 
@@ -730,7 +730,7 @@ Imports: `CoupledOccurrence`
 <details>
 <summary>OddsEnvelope.lean — 13 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/recipient-value-learning/formal/OddsEnvelope.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md) · [包说明 / Package notes](../../../../experiments/recipient-value-learning/formal/README.md)
+[原源码 / Source](../../../../experiments/recipient-value-learning/formal/OddsEnvelope.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md) · [包说明 / Package notes](../../../../experiments/recipient-value-learning/formal/README.md)
 
 `experiments/recipient-value-learning/formal/OddsEnvelope.lean`
 
@@ -764,7 +764,7 @@ Imports: `Std`
 <details>
 <summary>OfferedChoiceBounds.lean — 28 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/recipient-value-learning/formal/OfferedChoiceBounds.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md) · [包说明 / Package notes](../../../../experiments/recipient-value-learning/formal/README.md)
+[原源码 / Source](../../../../experiments/recipient-value-learning/formal/OfferedChoiceBounds.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md) · [包说明 / Package notes](../../../../experiments/recipient-value-learning/formal/README.md)
 
 `experiments/recipient-value-learning/formal/OfferedChoiceBounds.lean`
 

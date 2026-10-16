@@ -490,14 +490,14 @@
   ],
   "counterexamples": [
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
       "detail": {
         "zh": "足够描述不自动有仍充分的共同最粗表示。",
         "en": "Sufficient descriptions need not admit a still-sufficient common coarsest representation."
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
       "detail": {
         "zh": "正确风险界限可伴随实际失败，不能用逐次必胜界定全部智慧。",
         "en": "A true risk bound can accompany actual failure; infallible success cannot simply define all wisdom."
@@ -684,7 +684,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
       "role": "integration",
       "sha256": "909296674126cc6fe3d95253949079fadb62893c733759d9d5278e9b889da98e",
       "declarations": []
@@ -696,7 +696,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
       "role": "integration",
       "sha256": "f5c69c32f6bcf032dae8149ea877ab136c8fc821c3572570a430d2e26ca68bf6",
       "declarations": []
@@ -985,7 +985,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
       "role": "review",
       "sha256": "7565fa3f6e3f74a2775c05afdc8bd47ce3c02ae1a1fcd53e0f3a6a2370d6f1a0",
       "declarations": []
@@ -1069,13 +1069,13 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md",
       "role": "review",
       "sha256": "eb1e8c2739c6ab77454a4b0bc783b85d68c169839436f63dd11129c7070ab2dd",
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-GROUNDING-RESOLUTION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATHEMATICS-GROUNDING-RESOLUTION.md",
       "role": "review",
       "sha256": "977c0d8983d8384bba355113889362d06cf5a264a7e0f8ddd1178020474af4ae",
       "declarations": []
@@ -1209,13 +1209,13 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md",
       "role": "review",
       "sha256": "c7bfb18246d92d984145ddfc9a50672d0c81a5929cc23e53bcf48b905d2e86e9",
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md",
       "role": "review",
       "sha256": "cd558f01f7314143f20251e4a293a02a2f7dc2950ec77f5230399cbcb7b7f393",
       "declarations": []

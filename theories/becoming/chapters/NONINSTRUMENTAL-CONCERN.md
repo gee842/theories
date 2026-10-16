@@ -1,6 +1,6 @@
 # 一体之仁与非工具性关切：承受、理解和回应的共同形成
 
-**2026年10月7日，王阳明整合已收束：** [当前王阳明章](WANG-YANGMING.md)以明德亲民、知行和工夫的同一展开接回本章，保留本然良知的原典强说，检验私欲、有效控制、差等及现代拒绝／自护扩展。新的整体有限历史接口已经 Lean 实际检查；其适切关系仍需实质辩护，不能将原典与形式的完成算作无假设普遍证明。详见[整合记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md)。
+**2026年10月7日，王阳明整合已收束：** [当前王阳明章](WANG-YANGMING.md)以明德亲民、知行和工夫的同一展开接回本章，保留本然良知的原典强说，检验私欲、有效控制、差等及现代拒绝／自护扩展。新的整体有限历史接口已经 Lean 实际检查；其适切关系仍需实质辩护，不能将原典与形式的完成算作无假设普遍证明。详见[整合记录](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md)。
 
 2026年10月6日的继续。AI 撰写，回应 [Ren 要求沿共同形成的方向完成一体之仁](../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md)。本节给出当前正面解释；后文保留此前的局部研究、原有形式契约及失败结果。解释的连贯完成、实际机制的接合与无假设的普遍证明，仍须分别判断。
 
@@ -26,7 +26,7 @@
 
 ### 2. 三者怎样共同改变
 
-阳明《大学问》把明德与亲民写成相互成就，《责善》又具体讨论劝告怎样可能激起羞愤、阻断反省，以及听者怎样反过来纠正劝告者。这使“一体”具有实际工夫的内容：如何理解、如何相待、对方能够怎样继续，都在互动中变化。此处是本研究借原典展开的生成解释；阳明关于本然仁心与去蔽的强说，仍按其原有范围保留。详见[原典与归属](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-SOURCES.md#2-三处原典三项积极解释任务)。
+阳明《大学问》把明德与亲民写成相互成就，《责善》又具体讨论劝告怎样可能激起羞愤、阻断反省，以及听者怎样反过来纠正劝告者。这使“一体”具有实际工夫的内容：如何理解、如何相待、对方能够怎样继续，都在互动中变化。此处是本研究借原典展开的生成解释；阳明关于本然仁心与去蔽的强说，仍按其原有范围保留。详见[原典与归属](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-SOURCES.md#2-三处原典三项积极解释任务)。
 
 一次经历可以改变注意与理解，理解可以改变所经历的方式，回应又会改变处境、关系与未来可辨别的内容。它们既可形成良性循环，也可共同形成遮蔽。例如，把威胁辨认为误会可能改变正在发生的恐惧；压制表达则可能只改变可见报告。哪一种情况实际发生，不能由“这只是认识变化”或“报告降低了”来替代调查。
 
@@ -38,7 +38,7 @@
 | 回应实现缓解，并改变了需要与关系 | 已完成的改善不等于永远有效的旧目标 | 更新理解，必要时减少干预、停止或转向新的需要 |
 | 回应过程中出现新的损伤或拒绝 | 原先善意不保证后续过程仍合宜 | 调整手段、修复后果或停止，不以最初目标掩盖新发生 |
 
-这些是对目标保持和变化的识别要求，不是五个已经完成的人体实验。理解与感受的经验比较、阳明文本的实际范围，见[原典与辨别依据](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-SOURCES.md)。
+这些是对目标保持和变化的识别要求，不是五个已经完成的人体实验。理解与感受的经验比较、阳明文本的实际范围，见[原典与辨别依据](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-SOURCES.md)。
 
 这里有一个推进整个解释的结论：**仁的持续性不能由“同一个帮助目标一直执行”来定义。** 若回应已改变原来处境，持续关切可能表现为改变目标或停止。反过来，目标被撤销也未必意味着需要消失。应当延续的是对实际处境的可修正体察，而不是某个固定命令。因实际承受改变而修订目标，也不同于为了使原措施永远成功而移动成功判据：必须说明什么现象改变、哪些证据支持这种判断。
 
@@ -52,7 +52,7 @@
 
 这个主张有正面解释力：它同时说明了为何应追问那里实际发生什么、为何允许纠正原先的手段，以及为何没有私人回报也仍能为这个转变作出正当化说明。它也说明：回应者获得喜悦并不自动使关切变成工具性的；关键在于对方的实际处境是否仍是辨别、纠正与回应的根据。
 
-但“构成”二字不能替代其成立依据。一个实质对手可以承认全部体验和实际改善，却主张某种真实的自主关系使这项改善不构成特定位置上的行动根据；它需要说明该关系究竟如何起作用。我们也需要说明为什么这里的有利方面具有所声称的实践意义。仅把独立理由变量设为零，没有描述这样的对手；仅以共同发生断言所有位置已有完整义务，同样没有完成证明。[独立论证审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-REVIEW.md)保留这一实质争点。
+但“构成”二字不能替代其成立依据。一个实质对手可以承认全部体验和实际改善，却主张某种真实的自主关系使这项改善不构成特定位置上的行动根据；它需要说明该关系究竟如何起作用。我们也需要说明为什么这里的有利方面具有所声称的实践意义。仅把独立理由变量设为零，没有描述这样的对手；仅以共同发生断言所有位置已有完整义务，同样没有完成证明。[独立论证审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-REVIEW.md)保留这一实质争点。
 
 一项正向根据不等于唯一根据、最大化要求、强制权限或无限牺牲。回应者也有实际承受与正当活动。非工具性要求保留相关生命自身的好坏，不能为了扩大“整体利益”而把其中任何一个中心改成纯粹耗材。
 
@@ -86,7 +86,7 @@
 
 回应会改变下一轮的处境，也会改变谁能够回应、哪些表达会被信任、哪些安排可以被质疑。因而仁不能用一次“帮助成功”或同一个目标一直执行来穷尽。成全有时减少今后对原帮助者的依赖，允许别的生活方向形成；自我保护有时中断一段已经损害双方的安排。这些后果仍须具体查明，不能从连接增加、秩序稳定或能力增强直接推出善。
 
-形成解释由此提出三项可以失败的要求：起点没有完整预装所要解释的回应定向；新形成的作用可以由真实处境而非仅由私人结果纠正；这种修正能进入后来的目的、手段或安排。已有模型分别实现其中一些连接，尚未实现三项贯通的完整仁。发展研究则提供关系经历会改变后续帮助的有限证据，但并未证明一次短暂互动创造了原先全无的关切；[原始研究及争议](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-SOURCES.md#7-关系经历与关切形成的经验区分)据此限定本节的经验主张。
+形成解释由此提出三项可以失败的要求：起点没有完整预装所要解释的回应定向；新形成的作用可以由真实处境而非仅由私人结果纠正；这种修正能进入后来的目的、手段或安排。已有模型分别实现其中一些连接，尚未实现三项贯通的完整仁。发展研究则提供关系经历会改变后续帮助的有限证据，但并未证明一次短暂互动创造了原先全无的关切；[原始研究及争议](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-SOURCES.md#7-关系经历与关切形成的经验区分)据此限定本节的经验主张。
 
 ### 5. 一体保留分化，仁也包括成全
 
@@ -94,7 +94,7 @@
 
 仁的积极内容也不止于消除痛苦。理解另一个生命正在形成的能力、关系、探索与喜悦，可以使回应转向为这些发展提供空间。这里同样要区分对方的实际展开与回应者替对方设计的理想；不能以“为你好”取消对方能够修正这项理解的地位。哪种活动值得成全、相互冲突时怎样协调，需要在实际处境中说明，不能由复杂性增加、产出增长或关系更多直接决定。
 
-阳明从孺子、鸟兽推及草木瓦石，使“一体”具有比狭义互惠更广的意义。[原典核对](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-SOURCES.md)保留这一强说及其中差等。我们的生成解释可以研究这些存在怎样构成生活、感受与实践，以及爱护如何在其中形成；它没有证明草木瓦石都有与人相同的体验，也没有以缺少这项证明宣判它们毫无意义。体验性关切、生命成全与对共同条件的爱护，有联系，也有各自需要说明的内容。
+阳明从孺子、鸟兽推及草木瓦石，使“一体”具有比狭义互惠更广的意义。[原典核对](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-SOURCES.md)保留这一强说及其中差等。我们的生成解释可以研究这些存在怎样构成生活、感受与实践，以及爱护如何在其中形成；它没有证明草木瓦石都有与人相同的体验，也没有以缺少这项证明宣判它们毫无意义。体验性关切、生命成全与对共同条件的爱护，有联系，也有各自需要说明的内容。
 
 ### 6. 如何辨认仁，而不把好结果或好动机当作充分证明
 
@@ -112,13 +112,13 @@
 P_J(s,(e,j),t)\quad\Longleftrightarrow\quad P(s,e,t)\land j=J(s,e,t).
 \]
 
-这里的 \(J\) 是数学描述，不是自动生成的内部记忆；它没有把体验或仁写成一个预设数值。原来的 `Trace` 已要求经过实际中间状态。本轮的作用是把所选的中间变化明确呈现出来，使它们可以共同检验、按实际到达的状态接续，而不从不同历史各取一个有利结果拼成一次发生。删除联合描述应恢复原过程；增加描述也不额外许可任何行动。详见[形式机制说明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-MATH.md)。
+这里的 \(J\) 是数学描述，不是自动生成的内部记忆；它没有把体验或仁写成一个预设数值。原来的 `Trace` 已要求经过实际中间状态。本轮的作用是把所选的中间变化明确呈现出来，使它们可以共同检验、按实际到达的状态接续，而不从不同历史各取一个有利结果拼成一次发生。删除联合描述应恢复原过程；增加描述也不额外许可任何行动。详见[形式机制说明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-MATH.md)。
 
 该接口接到既有塑性学习的实际历史。原过程中的资源变化、取得的内部记录、形成的关联和后续行动共同保留：从初态到形成态，再到同一个后续执行态；另一个实际对照保留相同的事实命令与资源，却因关联不同而改变后续响应。这些具体更新关系承担机制内容，联合描述本身不创造相互作用。
 
 一个明确的检验是：某个完整交互后，受影响者的资源量恢复，所选的当前记录和关联也与起点相同，但中间确实经过一次资源下降。因此，这个特定终点摘要不能恢复“过程中是否发生过下降”。这里没有声称完整终态相同，也没有把资源下降直接解释成痛苦。它说明：若研究对象包含过程中的发生，当前净量与当前知识未必足够。
 
-[同时期的形成痕迹研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md)证明某些完整形成前缀的净消耗可以由结构痕迹恢复。本轮研究的则是中间下降，目标和摘要不同；两者并不冲突。另一个缺失读取的实际历史，也保留“未取得报告”与“后果未发生”的区别。
+[同时期的形成痕迹研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md)证明某些完整形成前缀的净消耗可以由结构痕迹恢复。本轮研究的则是中间下降，目标和摘要不同；两者并不冲突。另一个缺失读取的实际历史，也保留“未取得报告”与“后果未发生”的区别。
 
 这些结果约束一体之仁的生成解释应该保留什么：不能把理解的形成只写成最终知道了多少，也不能把回应只写成最后资源多少。它们没有证明资源量就是体验，没有生成一个新的伦理控制器，也没有证明最终不能继续行动就是理解了应当停止——在所用历史中，后续不可执行有明确的资源条件。
 
@@ -131,7 +131,7 @@ P_J(s,(e,j),t)\quad\Longleftrightarrow\quad P(s,e,t)\land j=J(s,e,t).
 
 第二条还给出一个具体的继续条件比较：旧安排的回应路径必经存量34，新路径从36出发、全程不低于36而完成回应。若一项独立辨明的活动确需每一步保持不低于某个 \(34<f\leq36\) 的界限，新路径避免了旧路径必有的这一中断条件。界限不是运行选择器的奖励，不能为了得到结论事后指定它。新路径也消耗燃料及备用部件，所以没有证明所有后续可能性都增加，更没有证明一项生命活动已实际持续。[条件推论与反例](../../../_process/history/2026-10-05-generative-health/succession/CONTINUATION-REVISION.md)保留这些限制。
 
-这使“仁反过来改变生成条件”具有可接入的具体内容：改变如何取得证据、何时可以回应及回应后留下什么条件。模型中的存量、记录与通路只实现了这些关系的一部分；将它们识别为具体的承受、理解或仁，还须相应根据。源码边界与保留依赖见[本轮接合审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md#7-从树内定位推进到形成与继续生成)。
+这使“仁反过来改变生成条件”具有可接入的具体内容：改变如何取得证据、何时可以回应及回应后留下什么条件。模型中的存量、记录与通路只实现了这些关系的一部分；将它们识别为具体的承受、理解或仁，还须相应根据。源码边界与保留依赖见[本轮接合审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md#7-从树内定位推进到形成与继续生成)。
 
 
 ### 8. 完成到哪里，什么还不能宣称完成
@@ -140,11 +140,11 @@ P_J(s,(e,j),t)\quad\Longleftrightarrow\quad P(s,e,t)\land j=J(s,e,t).
 
 **这还不是 Ren 所要求的无外加假设的普遍证明。** 完整生成根基仍需解释哪些具体关系实现真实体验，以及体验和合宜转变为何具有所声称的实践意义。但对“凡这类体验与机会实际存在，便有非工具性根据”的普遍命题，不必先完成所有体验的物理实现说明；可直接检验这项构成关系。正面论证目前支持它，尚未完成其在所述领域普遍成立的证明。喜悦、生命成全与无感受物的广泛地位，也不能从这个有限负担论证直接推出。
 
-这些未完成处属于共同生成解释内部。不能因为目前表示没有说明它们，便断言需要生成现实之外的授权；也不能因为使用了“一体”或“构成”便宣告已经说明。具体实现还要解释怎样取得并修订目标、权限和适用性，而不是仅从外部描述某条历史。当前结果、验证和后续连接集中记录在[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md)。
+这些未完成处属于共同生成解释内部。不能因为目前表示没有说明它们，便断言需要生成现实之外的授权；也不能因为使用了“一体”或“构成”便宣告已经说明。具体实现还要解释怎样取得并修订目标、权限和适用性，而不是仅从外部描述某条历史。当前结果、验证和后续连接集中记录在[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md)。
 
 ### 9. 直接尝试无假设的普遍证明
 
-Ren 随后明确要求“请完成无假设普遍证明”。[本次直接推导](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md)将目标放在回应本身：真实缓解作为这项回应的具体关系性质，是否已足以正当地支持为了该承受者而选择它，不需要先采纳关切或期待回报。
+Ren 随后明确要求“请完成无假设普遍证明”。[本次直接推导](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md)将目标放在回应本身：真实缓解作为这项回应的具体关系性质，是否已足以正当地支持为了该承受者而选择它，不需要先采纳关切或期待回报。
 
 最强尝试从真实承受与转变推进到其实际有利方面，再试图以反证推出该方面必然构成贡献性根据。未闭合的是最后一步：“凡否认其根据者，必定否认改善事实或只提出竞争理由”并未证明穷尽；一种真实实践范围能否限制其正当化作用，仍需实质判定。对手也不能只声明自己有这种权力就获得根据。此处争论的是首次构成识别，不是要求已证理由再取得外部授权。
 
@@ -152,7 +152,7 @@ Ren 随后明确要求“请完成无假设普遍证明”。[本次直接推导
 
 ### 10. 剩余假设须追溯到表示方式与整体构成
 
-Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[后续原典与谱系核对](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md#8-后续修正剩余假设的来源与一体结构)确认：阳明的仁、良知、感应与工夫原是一套有内容的一体解释；先只保留局部经历的改善、暂悬其整个实践关系，再追问行动根据，尚未充分检验这套解释。承受位置的区分本身不等于独立主客实体，但也不能只因口头否认二元便认定表示已经充分。
+Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[后续原典与谱系核对](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md#8-后续修正剩余假设的来源与一体结构)确认：阳明的仁、良知、感应与工夫原是一套有内容的一体解释；先只保留局部经历的改善、暂悬其整个实践关系，再追问行动根据，尚未充分检验这套解释。承受位置的区分本身不等于独立主客实体，但也不能只因口头否认二元便认定表示已经充分。
 
 局部契约中分别给定 Bad 与 Merit，确实会把联系显示为另需供应的 C2；其非蕴涵结果不能直接证明完整理论必须有外加伦理公理。原生成核心并无原始 Actor／Patient 切分，先前证明失败仍按其实际范围保存。现在应分清表示遗漏、局部实现输入与完整构成主张的证成：直接检验仁—良知—感应—实践的整体识别、偏蔽与复通，而不是先削薄它再索取价值转移规则。一体结构的贯通与无假设普遍证明完成仍是不同结论。
 
@@ -230,7 +230,7 @@ Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[
 
 [询问安排修订](../history/INQUIRY-REVISION.md)已经落实一项真实连接：先前形成的后果被取得，参与把当前接触限制从六次改为四次，在不改变原回应评分的情况下停止进一步询问并打开回应通道。其读取、触发和重写规则仍然给定。这证明可改变的是活动安排本身；还须区别改变手段、改变准入与证成目的或标准。不能继续笼统地说反馈到程序的连接尚不存在，也不能把这项程序修订当作良知已被证明。
 
-本节完成了整体构成的正面重构、偏蔽与复通的形成解释、控制／拒绝／差等的区分及现有模型接入。它支持对具体关切实践的内容一致性与实际改变作内在检验。**仁在生成树中的形成与实现应继续直接解释；更强的普遍证成仍未完成。** “充分而无偏蔽的感应是否必然具有仁的方向”是其中需要检验的一项构成主张，不能将接受它设为展开仁的解释的条件，也不能把仁预装进“充分”或“无蔽”的定义。 这是完整结构自身的识别与范围问题；既不要求先制造两个独立世界，也不因重构已经连贯便自动得到答案。[本轮论证、形式接口与复核](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md#6-整体构成偏蔽与复通的继续)。
+本节完成了整体构成的正面重构、偏蔽与复通的形成解释、控制／拒绝／差等的区分及现有模型接入。它支持对具体关切实践的内容一致性与实际改变作内在检验。**仁在生成树中的形成与实现应继续直接解释；更强的普遍证成仍未完成。** “充分而无偏蔽的感应是否必然具有仁的方向”是其中需要检验的一项构成主张，不能将接受它设为展开仁的解释的条件，也不能把仁预装进“充分”或“无蔽”的定义。 这是完整结构自身的识别与范围问题；既不要求先制造两个独立世界，也不因重构已经连贯便自动得到答案。[本轮论证、形式接口与复核](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-COFORMATION-INTEGRATION.md#6-整体构成偏蔽与复通的继续)。
 
 ### 12. 目的、实际活动与新能力：继续方向的形式连接
 
@@ -251,7 +251,7 @@ Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[
 - 在保持同一 \(K,G\) 且保留全部旧转换的扩展中，已有合格完成仍然成立；新增加的路径不因此全部合格。
 - 对携带真实前后状态的同一历史，中间已经发生的违反不会被后来成功删除。这不否认后来真实修复或从新状态开始的合格继续。
 
-这里的“仍可完成”是存在性判断，不是已经形成的内部算法。在有不受控制的多种后果时，数学上排除坏后果也不等于能够实现这种排除；仍可完成的过程也可以循环而始终没有完成。因而本定理没有偷偷提供全知控制、自动执行或必然终止。[数学解释](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-PURPOSE-MATH.md)列明这些范围。
+这里的“仍可完成”是存在性判断，不是已经形成的内部算法。在有不受控制的多种后果时，数学上排除坏后果也不等于能够实现这种排除；仍可完成的过程也可以循环而始终没有完成。因而本定理没有偷偷提供全知控制、自动执行或必然终止。[数学解释](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-PURPOSE-MATH.md)列明这些范围。
 
 **12.3 接回原模型：终点相同，途中条件不同。**
 
@@ -265,7 +265,7 @@ Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[
 
 这项结果使“形成新能力”有了与“重新选择”不同的内容。对仍在发生的实际需要，新能力可以使原来不能实现的合宜继续成为可行；若内容、连续性和相关限制确实保持，其适配性不必通过给另一个独立主体复制私人收益来成立。改变执行位置本身也不能删除已经发生的负担或改善。
 
-[本轮构成论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-DIRECTION-ARGUMENT.md)进一步区分对介入手段、承担程度、原目标继续及具体判定范围的限制。它保留真正的实践范围对手：有根据的程序可能排除某项改善作为某次决定的根据；该排除又须说明其来源与准确范围，不能凭当前规则自行认证。这比自由切换理由谓词保留了更多真实关系。
+[本轮构成论证](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-DIRECTION-ARGUMENT.md)进一步区分对介入手段、承担程度、原目标继续及具体判定范围的限制。它保留真正的实践范围对手：有根据的程序可能排除某项改善作为某次决定的根据；该排除又须说明其来源与准确范围，不能凭当前规则自行认证。这比自由切换理由谓词保留了更多真实关系。
 
 **形式化已经完成本节的结构定理和实际模型连接；尚未证明新的伦理目的及其标准已经由过程自行生成，也未证明仁的无假设普遍正当性。** 此处局部活动内容 \(K,G\)、原事件律及修订规则仍有其解释义务。下一连接是活动后果怎样使这些内容被内部辨认、形成并纠正，而不是把数学上存在的合格路径当成系统已经理解并选择了它。
 
@@ -287,9 +287,9 @@ Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[
 
 **13.3 形式化接入及剩余范围。** [AcquiredPurposeCriterion](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean)直接使用原材料规律，并将新过程的实际历史接入 `Generative.Process` 与 `Generative.Trace`。证明包括：真实修复怎样在给定族内识别通道；取得条件怎样改变同一已补足状态的完成判断；判断及完成返回的消耗怎样进入继续条件；同一记录和重建状态怎样产生不同的实际结案可能。生成的有限证书另核验共享94事件祖先，并核验七条扩展运行的全部23个状态坐标与拒绝事件。
 
-[全新 Lean 构建](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-verification.json)通过28项新增定理审计，原有61项审计另计；具名逻辑依赖并集为 `Classical.choice`、`Quot.sound`、`propext`。这不是空公理报告，也不消除模型与解释前提。[数学范围](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-MATH.md)与[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-REVIEW.md)保留一个实质识别限度：另一规律可以在所有已观察的成功修复处相同，却在共同支持耗尽时提供新替代通道；仅凭这些观察不能排除它。
+[全新 Lean 构建](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-verification.json)通过28项新增定理审计，原有61项审计另计；具名逻辑依赖并集为 `Classical.choice`、`Quot.sound`、`propext`。这不是空公理报告，也不消除模型与解释前提。[数学范围](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-CRITERION-MATH.md)与[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-CRITERION-REVIEW.md)保留一个实质识别限度：另一规律可以在所有已观察的成功修复处相同，却在共同支持耗尽时提供新替代通道；仅凭这些观察不能排除它。
 
-本轮完成了一个有内容的局部判据修订连接。它仍可由在给定维护方向下学习的普通控制过程实现，不证明所有更广目的都发生改变，也不把持存或控制能力认作仁。**下一项缺口更精确了：持续活动及其适用范围本身怎样形成、改变和结束，以及这些取得的关系怎样准确承载实际生命的关切内容和普遍正当根据。无假设普遍证明仍未完成。** [本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-CRITERION-INTEGRATION.md)记录完整结果及输入。
+本轮完成了一个有内容的局部判据修订连接。它仍可由在给定维护方向下学习的普通控制过程实现，不证明所有更广目的都发生改变，也不把持存或控制能力认作仁。**下一项缺口更精确了：持续活动及其适用范围本身怎样形成、改变和结束，以及这些取得的关系怎样准确承载实际生命的关切内容和普遍正当根据。无假设普遍证明仍未完成。** [本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-CRITERION-INTEGRATION.md)记录完整结果及输入。
 
 ### 14. 活动及其范围本身的形成、改变和结束
 
@@ -307,11 +307,11 @@ Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[
 
 另外两条从同一实际训练终点出发、保留充足支持的 Lean 历史，在真实完成乙后再接触，均取得空的待反应范围；一条已有甲产品，另一条只有甲解离。它们严格证明空范围不充分证明所有原活动都完成。它们是单独标明的补充历史，没有从九条耗尽端点重置支持。
 
-[新构建收据](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json)通过26项新增声明审计，有限对应证书核对九条保存历史；[数学说明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-MATH.md)区分通用结构结果、有限实现对应、局部输入与标准逻辑依赖。这不构成无假设的伦理证明。
+[新构建收据](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json)通过26项新增声明审计，有限对应证书核对九条保存历史；[数学说明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-SCOPE-MATH.md)区分通用结构结果、有限实现对应、局部输入与标准逻辑依赖。这不构成无假设的伦理证明。
 
-**14.4 对仁的推进：合宜回应也包括有根据地结束。** [新的正向论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-GROUNDING.md)说明，实际关系可以使旧安排所援引的根据失效；恰当减助、停止或分离还须有正面的根据，不能只由缺少继续理由推出。完成证据、结束许可和历史后果各须真实内容，甲处结束不取消乙处关系。[经验识别](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md)给出生活情境中的辨别要求，并保留现有研究及未实施设计的范围。
+**14.4 对仁的推进：合宜回应也包括有根据地结束。** [新的正向论证](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-SCOPE-GROUNDING.md)说明，实际关系可以使旧安排所援引的根据失效；恰当减助、停止或分离还须有正面的根据，不能只由缺少继续理由推出。完成证据、结束许可和历史后果各须真实内容，甲处结束不取消乙处关系。[经验识别](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-SCOPE-IDENTIFICATION.md)给出生活情境中的辨别要求，并保留现有研究及未实施设计的范围。
 
-本轮闭合的是一个局部范围形成—取得—修订—使用连接。**下一项机制问题是启动、停止及优先本身怎样由后果取得并修订；生活内容的识别和普遍正当根据也仍待完成。** 较强的无假设目标保持，不能由范围变成内部生成便宣告完成。[完整整合与审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-SCOPE-INTEGRATION.md)保留本轮结果、反例及下一连接。
+本轮闭合的是一个局部范围形成—取得—修订—使用连接。**下一项机制问题是启动、停止及优先本身怎样由后果取得并修订；生活内容的识别和普遍正当根据也仍待完成。** 较强的无假设目标保持，不能由范围变成内部生成便宣告完成。[完整整合与审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-SCOPE-INTEGRATION.md)保留本轮结果、反例及下一连接。
 
 ### 15. 整体积分与局部启动的边界
 
@@ -321,25 +321,25 @@ Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[
 
 **15.1 整体是正在形成的关系及整个后续展开。** 目的、活动、承受、理解和评价都在其中形成。某项预期达成、某个组织保全，乃至所有已经列出的目标都满足，也不能自动代表这段展开的整体方向。评价范围和评价能力自身怎样形成、维持并改变共同条件，须一同进入解释。本章因此接回[整体未来的研究主线](../history/UNIFIED-ETHICAL-GROUNDING.md#the-future-of-the-whole-is-the-criterion)；局部理由推理保留其用途，不再作为先逐一证成独立目的、最后才拼出整体的必经次序。
 
-整体积分可以有数学表达，但应先说明所比较的完整历史及其质量。[已有整体优先的表达](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression)从有根据的历史评价导出时间增量，而不预设互不相关的局部善再求和。这一表示关系没有自行证明评价的伦理内容；无限未来也不能因写出积分就保证收敛、可预测或完整排序。
+整体积分可以有数学表达，但应先说明所比较的完整历史及其质量。[已有整体优先的表达](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression)从有根据的历史评价导出时间增量，而不预设互不相关的局部善再求和。这一表示关系没有自行证明评价的伦理内容；无限未来也不能因写出积分就保证收敛、可预测或完整排序。
 
 **15.2 新结果取得了启动依赖，也暴露其局部性。** [九条新历史](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/INITIATION.md)在同一祖先和活动形成史中，分别取得真实形成与完成操作的消费通道。后来，忠实使用这些记录可避免新启动耗尽乙完成所需的条件；同状态读者钳制以及缺失、错误取得保留真实失败。活动实例、取得装置及其作用共同占用和改变现有条件，没有重置资源或取消旧产品。
 
 但足够形成甲并完成乙的分支仍留下一个自身已无继续路径的新甲。稀缺分支完成乙而没有形成甲，两者都满足保护乙的约束，末端支持及损伤也相同，却留下不同的活动结构：一端甲未形成，另一端留下已形成却不能继续的甲。这里首先被否定的是局部投影对整体的充分代表性；不能把新甲未完直接等同伦理恶，也不能靠给甲增加一个保护位就宣称已解释整个生成。
 
-**15.3 形式与实际历史保持各自范围。** [独立重放](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-independent-check.json)核对129项共同前史、2412项扩展事件、2421个51坐标状态及五次实际拒绝，八项数据损坏均检出。[全新 Lean 构建](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json)通过30项新增审计，证明单单位边界上的启动可消除原先可达的完成，并证明两类耗尽状态对任意允许的有限后继封闭；全部九条历史的有限对应也通过。[数学账](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-MATH.md)保留逻辑依赖、首轮编译超时及未削弱覆盖的修复。单通道一单位候选族、实例间配方迁移、接触及选择规律、保护乙约束和调度仍是局部模型输入。
+**15.3 形式与实际历史保持各自范围。** [独立重放](../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/initiation-independent-check.json)核对129项共同前史、2412项扩展事件、2421个51坐标状态及五次实际拒绝，八项数据损坏均检出。[全新 Lean 构建](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json)通过30项新增审计，证明单单位边界上的启动可消除原先可达的完成，并证明两类耗尽状态对任意允许的有限后继封闭；全部九条历史的有限对应也通过。[数学账](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-INITIATION-MATH.md)保留逻辑依赖、首轮编译超时及未削弱覆盖的修复。单通道一单位候选族、实例间配方迁移、接触及选择规律、保护乙约束和调度仍是局部模型输入。
 
-**15.4 仁的下一连接是整体方向怎样进入自身的形成与纠正。** [正面重构及其竞争说明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-GROUNDING.md)将检验转向：一个持续局部成功的安排，是否关闭了真实更新、参与和纠正的路径；一种转化或有根据的结束，又是否实际恢复它们并改变整个后续展开。该比较须保留已实现的内容、真实损失及可行条件。最大化延续、活动数或未来分支数都不能替代这一比较。
+**15.4 仁的下一连接是整体方向怎样进入自身的形成与纠正。** [正面重构及其竞争说明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-INITIATION-GROUNDING.md)将检验转向：一个持续局部成功的安排，是否关闭了真实更新、参与和纠正的路径；一种转化或有根据的结束，又是否实际恢复它们并改变整个后续展开。该比较须保留已实现的内容、真实损失及可行条件。最大化延续、活动数或未来分支数都不能替代这一比较。
 
-合理拒绝、差等和自我保护也须在这些具体关系中解释；整体不自动赋予某个中心替所有关系发言的权力。生活对应见[局部识别接口](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md)。本轮有实际机制、严格反例和整体解释的校正；整个形成链与整体质量的无假设普遍证成仍未完成。[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/YITI-REN-INITIATION-INTEGRATION.md)保留这一范围。
+合理拒绝、差等和自我保护也须在这些具体关系中解释；整体不自动赋予某个中心替所有关系发言的权力。生活对应见[局部识别接口](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-INITIATION-IDENTIFICATION.md)。本轮有实际机制、严格反例和整体解释的校正；整个形成链与整体质量的无假设普遍证成仍未完成。[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/YITI-REN-INITIATION-INTEGRATION.md)保留这一范围。
 
 ## 既有局部研究与形式结果
 
-**选择根据的适用范围，2026年10月6日：** [新的处境检验](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md#a-rule-does-not-settle-its-own-justificatory-scope)区分产生某个结果被许可、以某项考虑决定该结果被许可，以及该考虑是否构成当前正当化根据。原 Lean 定理只改变 `priorRole` 标签而保留实际操作字段，并未证明真实制度角色与合法选择标准改变后理由仍不变。适用时须明确 `Merit` 指仍存在的一阶考虑，还是当前选择中的正当化贡献；不能把争议结论藏入 `Eligible`。同一实践中的判定与实施方式也可能有不同的正当限制。这是既有形式接口的解释校正，未新增伦理公理，也未完成普遍证成。
+**选择根据的适用范围，2026年10月6日：** [新的处境检验](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WARRANT-OF-CONCERN-INTEGRATION.md#a-rule-does-not-settle-its-own-justificatory-scope)区分产生某个结果被许可、以某项考虑决定该结果被许可，以及该考虑是否构成当前正当化根据。原 Lean 定理只改变 `priorRole` 标签而保留实际操作字段，并未证明真实制度角色与合法选择标准改变后理由仍不变。适用时须明确 `Merit` 指仍存在的一阶考虑，还是当前选择中的正当化贡献；不能把争议结论藏入 `Eligible`。同一实践中的判定与实施方式也可能有不同的正当限制。这是既有形式接口的解释校正，未新增伦理公理，也未完成普遍证成。
 
 下文保留此前各轮论述与验证范围。原来的独立类型、C1/C2 契约和局部实现可以用于明确特定关系；它们不是本章共同形成解释必须预先接受的本体切分。新的整体论述也不自动消除其尚待证成的内容。
 
-**整树非二元方法的继续，2026年10月6日：** [当前重构](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-CONTINUATION.md#6-关切研究怎样随全树一起改变)从实际承受、转变与响应关系共同展开，先评估本章的独立谓词表示保存了哪些构成联系，再解释其反模型针对什么。下面的零理由解释仍证明稀疏前提的非蕴涵；若要反驳完整候选，还需说明它如何保留预先指定的现象条件，或实质证明该识别错误。C1/C2 的区分不成为两个独立本体领域；构成关系本身仍需支持并接受明确反例。发生在理解侧的变化也可能真改变体验，不能仅凭“改了叙事”便认作只有标签改变。
+**整树非二元方法的继续，2026年10月6日：** [当前重构](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONDUAL-TREE-CONTINUATION.md#6-关切研究怎样随全树一起改变)从实际承受、转变与响应关系共同展开，先评估本章的独立谓词表示保存了哪些构成联系，再解释其反模型针对什么。下面的零理由解释仍证明稀疏前提的非蕴涵；若要反驳完整候选，还需说明它如何保留预先指定的现象条件，或实质证明该识别错误。C1/C2 的区分不成为两个独立本体领域；构成关系本身仍需支持并接受明确反例。发生在理解侧的变化也可能真改变体验，不能仅凭“改了叙事”便认作只有标签改变。
 
 **非二元核心下的重新定位，2026年10月6日：** 按 [Ren 的主体／核心区分](../../../sources/15-codex-theory-conversations/2026-10-06-nondual-core-and-subject-extensions.md)，本章的患者、行动者与理由接口是生成核心的局部延伸，不是核心的原始切分。[新的核心重构](../history/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions)从同一发生历史解释作用范围的形成、重叠与失效，进而把伦理问题写为真实承受、可实现继续方式及其有根据的转变。C2 仍是本章伦理解释的实质义务；不把它放入 core 的签名，不等于已证明它。以下历史结果保持原范围，也不把主体标签当作分离实体。
 
@@ -365,7 +365,7 @@ Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[
 
 ## 2. 一体之仁所要求的范围
 
-阳明的一体之仁使他者与万物成为仁心所及的对象，并在实际亲民、爱物中实现。这给本研究的重要要求是：他者不能只以维持行动者自身的手段身份进入理论。一体同时保留差异，不能用总量改善抹去具体中心的失所。原文及差等、本体强说的界限见[原典核对](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WANG-YANGMING-SOURCES.md)。
+阳明的一体之仁使他者与万物成为仁心所及的对象，并在实际亲民、爱物中实现。这给本研究的重要要求是：他者不能只以维持行动者自身的手段身份进入理论。一体同时保留差异，不能用总量改善抹去具体中心的失所。原文及差等、本体强说的界限见[原典核对](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-SOURCES.md)。
 
 我们的形式化从一个范围更窄、证成要求明确的领域开始：存在实际主体、发生严重而仍不愿承受的体验性负担，并有保持该患者的适当缓解方式。它不把所有组织、植物、石头或人工系统自动归入体验性患者；其余领域需要自己的患者识别与好坏论证。这里的数学参与者是抽象类型，类型成员本身不提供现实道德地位的证据。
 
@@ -385,7 +385,7 @@ Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[
 
 我们肯定 C2：这种对实际患者的合宜缓解，构成该选项的一项道德优点。它是关于理由的实质判断。理由的内容由患者的好坏决定，行动者的合宜控制说明该理由如何指向这个行动；不需要先将患者改写为行动者自己的利益。
 
-这里还要保留患者、回应者和观察者三个位置：观察者与回应者的偏好分歧，没有穷尽患者的实际处境；承认该处境提供理由，也不要求把各人的善合并为一个总量目标。Manne 的患者要求分析与 Korsgaard 的共享理由论分别提供这两种比较视角。前者保留强理性权威的额外条件，后者依靠人格与人际关系的实质前提，均不直接证明本研究的 C2。具体原文范围见本轮[来源说明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-SOURCES.md)。
+这里还要保留患者、回应者和观察者三个位置：观察者与回应者的偏好分歧，没有穷尽患者的实际处境；承认该处境提供理由，也不要求把各人的善合并为一个总量目标。Manne 的患者要求分析与 Korsgaard 的共享理由论分别提供这两种比较视角。前者保留强理性权威的额外条件，后者依靠人格与人际关系的实质前提，均不直接证明本研究的 C2。具体原文范围见本轮[来源说明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-CONCERN-SOURCES.md)。
 
 ### 私人采纳能增加理由，但未必创造全部理由
 
@@ -399,7 +399,7 @@ Ren 对“承受者”的追问要求重新检查上一推导的分析顺序。[
 
 行动者也是可能有真实好坏、项目与责任的中心。非排他的患者理由可以与这些理由并存。是否必须救助、应承担多大代价、他人能否强制，是进一步问题。[现有伦理最低限研究](../history/UNIVERSAL-ETHICAL-MINIMUM.md)另有明示的有限救助原则；本研究不以 C2 自动推出无限牺牲、全局福利最大化或强制权限。
 
-详细论证及有区别的一手比较见[根据分析](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-GROUND.md)与[来源](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-SOURCES.md)。规范理由存在、强理性权威、被认识和实际动机保持不同地位。
+详细论证及有区别的一手比较见[根据分析](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-CONCERN-GROUND.md)与[来源](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-CONCERN-SOURCES.md)。规范理由存在、强理性权威、被认识和实际动机保持不同地位。
 
 ## 4. 明示的形式契约
 
@@ -459,11 +459,11 @@ M/C2 不是运行时被读取或学得的内部变量。实际起作用的是有
 | 新事件发生，旧记录仍在 | 旧事件证据不自动覆盖新事件，需要实际更新 |
 | 两名患者分别有理由而资源不能同时满足 | 保留两者的根据与冲突，不能把未服务者从模型中删掉 |
 
-实现、证明与验证入口见[模型包](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)及[数学说明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-MATH.md)。它是接入共同核心的新局部实现，未声称接续旧塑性学习模型的某条物理历史；要复用旧历史，需要另证资源、部件和语义接口相容。
+实现、证明与验证入口见[模型包](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/README.md)及[数学说明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-CONCERN-MATH.md)。它是接入共同核心的新局部实现，未声称接续旧塑性学习模型的某条物理历史；要复用旧历史，需要另证资源、部件和语义接口相容。
 
 ## 6. 本轮验证与严格结果
 
-模型包已通过 Lean 4.29.1 的新鲜临时构建：复用两个共同核心模块，新模块审计 **66 个声明**，其中过程与资源接口 32 个、伦理契约接口 14 个、具体正反例 20 个。它们的依赖审计没有 `sorry`、自加公理或未证明占位；部分证明使用 Lean 的标准经典与商类型公理。这是明确前提下的证明，不是“没有假设”的证明。完整结果见[构建记录](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/verification.json)与[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-CONCERN-REVIEW.md)。
+模型包已通过 Lean 4.29.1 的新鲜临时构建：复用两个共同核心模块，新模块审计 **66 个声明**，其中过程与资源接口 32 个、伦理契约接口 14 个、具体正反例 20 个。它们的依赖审计没有 `sorry`、自加公理或未证明占位；部分证明使用 Lean 的标准经典与商类型公理。这是明确前提下的证明，不是“没有假设”的证明。完整结果见[构建记录](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/verification.json)与[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-CONCERN-REVIEW.md)。
 
 主要连接可写为：在实际患者条件、C1、C2 和指定回应的 `Eligible` 条件成立时，**同一初态既有患者指向的道德优点，又存在一条真实允许的回应轨迹；终态中同一患者、同一事件的负担为零，终态余额加实际方案费用等于初态资源。** `grounded_eligible_merit` 与 `merit_and_actual_service_compose` 分别承担伦理根据与实际过程的连接。[F14](FORMAL-CORE.md#f14-noninstrumental-patient-reasons-and-paid-response)已将这一结果纳入总形式核心。
 
@@ -498,13 +498,13 @@ M/C2 不是运行时被读取或学得的内部变量。实际起作用的是有
 
 ## 9. 实际尝试从根基消除 C2
 
-本轮[正向论证与失败路线](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-ARGUMENT.md)尝试三个入口：实际提问所确认的发生；体验负担与患者局部坏的构成性识别；同一患者根据在不同执行位置的实现。第一项未推出价值；第二项保留一个不依赖反思性所有者的根据候选；第三项直接检验无先行关心者的实践理由。它们沿用已有构成性与生成自我研究，不把旧论点记为新发现。
+本轮[正向论证与失败路线](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-ROOT-ARGUMENT.md)尝试三个入口：实际提问所确认的发生；体验负担与患者局部坏的构成性识别；同一患者根据在不同执行位置的实现。第一项未推出价值；第二项保留一个不依赖反思性所有者的根据候选；第三项直接检验无先行关心者的实践理由。它们沿用已有构成性与生成自我研究，不把旧论点记为新发现。
 
 最强正向主张是：患者为什么受益，可以由这一次负担的实际缓解解释；由谁实现，说明回应的位置。执行者的项目、代价、承诺与权限应有各自作用，但不能仅靠“这不是我的负担”就未经论证地取消该患者利益的一切基准意义。这个解释也容纳从未能自救的患者。其未完成之处是：为何患者—缓解关系已经足够，为什么一种真实但生成出来的行动者关系不能是额外必要条件。
 
 ### 将所需根据与替换条件分开
 
-固定患者事件 c，令 B(c) 是局部坏，O(c,a) 是执行者 a 的合宜回应机会，R(c,a) 是其患者基准理由。新的[形式审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-MATH.md)证明：
+固定患者事件 c，令 B(c) 是局部坏，O(c,a) 是执行者 a 的合宜回应机会，R(c,a) 是其患者基准理由。新的[形式审计](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-ROOT-MATH.md)证明：
 
 \[
 \begin{aligned}
@@ -527,8 +527,8 @@ M/C2 不是运行时被读取或学得的内部变量。实际起作用的是有
 
 ### 体验的价值识别继续作为正向路线
 
-[一手比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-SOURCES.md)保留自然主义与体验识别的建设性可能，同时区分患者局部坏、非人格的价值及行动理由。有的概念分析已含普遍规范范围；内省的可靠性也不直接证明具体行动的正当性。不能把这些论证的结论当作完全不含规范内容的输入，再宣称无前提推出 C2。反过来，形式语言允许自由解释 R，并不反驳未来得到独立支持的价值同一性主张；那时必须按其完整根据重新评估反例。
+[一手比较](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-ROOT-SOURCES.md)保留自然主义与体验识别的建设性可能，同时区分患者局部坏、非人格的价值及行动理由。有的概念分析已含普遍规范范围；内省的可靠性也不直接证明具体行动的正当性。不能把这些论证的结论当作完全不含规范内容的输入，再宣称无前提推出 C2。反过来，形式语言允许自由解释 R，并不反驳未来得到独立支持的价值同一性主张；那时必须按其完整根据重新评估反例。
 
 本轮新增 24 项 Lean 声明审计已通过新鲜构建与独立复编译；对 3 个固定为坏的事件、3 个候选执行位置，独立检查全部 262,144 组机会/理由矩阵，与等价定理一致。它们检验逻辑接口和反例，未检验真实患者或证明伦理真理。[新收据](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/root-verification.json)与[独立收据](../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/root-independent-review.json)和原 66 项记录分开保存；部分新声明仍依赖标准 Lean 公理。
 
-结果已接回 F14 的原有资源消耗过程；适配时另有同一患者事件的跨实例识别条件，不声称多个执行者共享一条物理历史或同一资源池。**已完成的是这次推导尝试、形式消除审计与反例检验；没有完成无假设根基。** 下一根本工作是独立证成事件的正理由起点及其跨执行位置的适用根据，尤其检验生成关系为什么能增加或限制理由，却未必能垄断全部基准意义。完整[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NONINSTRUMENTAL-ROOT-REVIEW.md)保留了这个未决点。
+结果已接回 F14 的原有资源消耗过程；适配时另有同一患者事件的跨实例识别条件，不声称多个执行者共享一条物理历史或同一资源池。**已完成的是这次推导尝试、形式消除审计与反例检验；没有完成无假设根基。** 下一根本工作是独立证成事件的正理由起点及其跨执行位置的适用根据，尤其检验生成关系为什么能增加或限制理由，却未必能垄断全部基准意义。完整[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NONINSTRUMENTAL-ROOT-REVIEW.md)保留了这个未决点。

@@ -36,7 +36,7 @@ Producer coverage:224 declared configurations × four dispatch laws,19 named
 fixtures,12 state-renaming cases, exact primary prefix budgets. New code is
 checked by a separately written [interpreter](independent_check.py), which also
 tests eight strict withdrawal-only payment interruptions, with
-[audit output](independent-check.json) and [review](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/METHOD-REVISION-REVIEW.md).
+[audit output](independent-check.json) and [review](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/METHOD-REVISION-REVIEW.md).
 Finite table equivalence, exact arithmetic, source hashes and internal review
 are not empirical validation or external peer review.
 

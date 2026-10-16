@@ -30,7 +30,7 @@ repair, or repair once to make source-backed copying possible. A reconstructed
 count need not imply a repaired site. Bulk copying remains available wherever
 its actual common-fuel and material prerequisites hold.
 
-The [mathematical account](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-MATH.md)
+The [mathematical account](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUING-DEPENDENCY-MATH.md)
 proves necessity across every admitted finite history and constructs sufficient
 routes. The new Lean development formalizes the general necessary bound and the
 concrete continuation contrast; general constructive sufficiency is currently
@@ -91,7 +91,7 @@ It reconstructs all event rules, graph profiles, positive witnesses, the four
 source definitions composing the 94-event ancestor, and 13 stored history records
 containing 1,179 overlapping event occurrences. Source hashes bind nine inputs.
 These overlaps are not separate trials. The
-[review](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md)
+[review](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUING-DEPENDENCY-REVIEW.md)
 states the formal and independent-computation scopes.
 
 The positive channel relation is taken from the existing active `process.py` law
@@ -105,7 +105,7 @@ This is a concrete reason an exact continuation model must retain differentiated
 support relations. It is not a claim that scalar summaries are always inadequate,
 that the original general core lost these fields, or that one route is ethically
 better because it preserves this organization. The
-[integration](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md)
+[integration](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUING-DEPENDENCY-INTEGRATION.md)
 connects this result to the unfinished acquisition and whole-process account.
 
 To reproduce the new finite checks, run `python3 -B study.py` and
@@ -127,6 +127,6 @@ without acquisition when the relevant action correspondence is already known.
 
 The exploratory [whole-future race](whole_future_race.py) compares the saved local and bulk endpoints after the same free-A wear, under the unchanged default stochastic law. Its explicit target is uninterrupted A restoration with H preserved, before further wear, damage or support leakage. Every native competing channel is retained. This is a two-transient-state first-event calculation, not unrestricted eventual repair or a whole ethical comparison.
 
-Exact fractions give success approximately 0.999880469930 for the common-reserve configuration and 0.999920645158 for the other. The common reserve enables later repair but also competing H copying and common leakage in this episode. The [hash-bound result](whole-future-race.json) matches separately written hand equations and accounts for all outcome probability. This does not establish ethical superiority of either route or invalidate the earlier existential repair result. The [ethical integration](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-ARGUMENT.md#9-renewal-must-include-the-selection-of-actual-continuations) explains why actual selection must join reachability in the whole-future account.
+Exact fractions give success approximately 0.999880469930 for the common-reserve configuration and 0.999920645158 for the other. The common reserve enables later repair but also competing H copying and common leakage in this episode. The [hash-bound result](whole-future-race.json) matches separately written hand equations and accounts for all outcome probability. This does not establish ethical superiority of either route or invalidate the earlier existential repair result. The [ethical integration](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WHOLE-PROCESS-GROUNDING-ARGUMENT.md#9-renewal-must-include-the-selection-of-actual-continuations) explains why actual selection must join reachability in the whole-future account.
 
 Run `python3 -B whole_future_race.py` to reproduce this separate calculation. The original study, law and result files are unchanged.

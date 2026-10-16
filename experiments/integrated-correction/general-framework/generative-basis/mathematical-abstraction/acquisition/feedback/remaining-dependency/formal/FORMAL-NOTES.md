@@ -1,6 +1,6 @@
 # Formal scope of acquired remaining dependence
 
-6 October 2026. AI-authored formalization and source-bound correspondence note. **Accepted fresh local build:** [verification.json](verification.json), with [source](RemainingDependency.lean), [checker](check.py), and the separately authored [native review](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REMAINING-DEPENDENCY-REVIEW.md). No original proof, result or receipt was overwritten.
+6 October 2026. AI-authored formalization and source-bound correspondence note. **Accepted fresh local build:** [verification.json](verification.json), with [source](RemainingDependency.lean), [checker](check.py), and the separately authored [native review](../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REMAINING-DEPENDENCY-REVIEW.md). No original proof, result or receipt was overwritten.
 
 The named connection is actual completed component → paid acquisition of a different operational relation → changed relation maintained or released → distinct full-load use. The new relay/load is a prospectively declared product extension of the exact retained inquiry history. Its value, two-test schedule, repertoire, weak/full-load calibration, bypass preference, finite storage and tariffs remain supplied local inputs. This formalization does not derive an ethical premise or the entire generative foundation.
 

@@ -2,7 +2,7 @@
 
 6 October 2026. A completed conditional finite construction connecting **actual formation → acquired prediction → consequence-dependent motor-coupling revision → paid support of a distinct recipient**. The recipient returns nothing to the actor. The shared target-routing recipe is supplied and compared with suppression interventions; its selection is not derived endogenously by this suffix.
 
-The [protocol](PROTOCOL.md) precedes execution. The [canonical development](../../../../../../../../../../theories/becoming/history/GENERATIVE-DEVELOPMENT.md) explains the result's place in the theory. The [independent conceptual review](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DEVELOPMENT-REVIEW.md) records assumptions, resolved objections and the completion boundary.
+The [protocol](PROTOCOL.md) precedes execution. The [canonical development](../../../../../../../../../../theories/becoming/history/GENERATIVE-DEVELOPMENT.md) explains the result's place in the theory. The [independent conceptual review](../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DEVELOPMENT-REVIEW.md) records assumptions, resolved objections and the completion boundary.
 
 ## One actual inherited history
 

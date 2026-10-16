@@ -17,7 +17,7 @@ with no producer change after outcomes.
 proves the status rule exact. An independent reconstruction, written from the protocol without reading the
 producer, matched all 136,389 compared values. It is recorded in
 [`independent-check.json`](independent-check.json), and its notes are in the
-[integration](../../../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FULFILLMENT-WITHDRAWAL-INTEGRATION.md#5-independent-reconstruction).
+[integration](../../../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FULFILLMENT-WITHDRAWAL-INTEGRATION.md#5-independent-reconstruction).
 
 ## What was added
 

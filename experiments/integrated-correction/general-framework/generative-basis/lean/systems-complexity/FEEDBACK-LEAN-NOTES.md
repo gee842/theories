@@ -1,6 +1,6 @@
 # Exact rational feedback comparison
 
-6 October 2026. AI-authored formalization of the elementary feedback comparison in the [mechanism note](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md). The [source](FeedbackDynamics.lean) imports only `Std` and was compiled with Lean 4.29.1. Fresh package compilation and source binding are reported separately by the package checker; this note is an explanation, not a verification receipt.
+6 October 2026. AI-authored formalization of the elementary feedback comparison in the [mechanism note](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md). The [source](FeedbackDynamics.lean) imports only `Std` and was compiled with Lean 4.29.1. Fresh package compilation and source binding are reported separately by the package checker; this note is an explanation, not a verification receipt.
 
 ## What the model assumes
 

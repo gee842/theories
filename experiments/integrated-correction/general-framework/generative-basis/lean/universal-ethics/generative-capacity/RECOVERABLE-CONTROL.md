@@ -1,6 +1,6 @@
 # Interrupted controlled change and recovery
 
-The [existing study continuation](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md#9-interrupted-change-and-recovery--中断改变与恢复) records the exact delta, inherited results, relational interpretation, counterreview and source assessment.
+The [existing study continuation](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md#9-interrupted-change-and-recovery--中断改变与恢复) records the exact delta, inherited results, relational interpretation, counterreview and source assessment.
 
 ```sh
 python3 check_recoverable_control.py

@@ -23,7 +23,7 @@
     "zh": "验收区分已接合历史、有条件传输与分别实现；并非所有模型同一世界的证明。",
     "en": "The assessment distinguishes joined histories, conditional transport and separate realizations; it is not a proof that every model is one realized world."
   },
-  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
   "aliases": [],
   "dependencies": [],
   "related": [
@@ -64,7 +64,7 @@
     {
       "zh": "五项条件：明确奠基、接通推导、相容组合、生成与退化动态、可辨别支持，各在所述范围内判为满足。",
       "en": "Five conditions: explicit grounding, connected derivations, compatible composition, generative and degenerative dynamics, and discriminating support are each judged satisfied at their stated scope.",
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate"
+      "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate"
     },
     {
       "zh": "根验收：逐项核对正面证据，三项分别的 AI 内部质询均接受有条件候选；不是外部同行评审。",
@@ -78,7 +78,7 @@
   },
   "references": [
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
       "role": "statement",
       "sha256": "6021b489b89d498c08b2ab5625d1289a3efa82cd0456699f83f55b30e5073b8b",
       "declarations": []
@@ -90,7 +90,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FOUNDATION-COMPOSITION.md",
       "role": "integration",
       "sha256": "5b0a3526fbb959f903e94138ff120d043a8574f44adb9d447caeb6f98732bbfa",
       "declarations": []

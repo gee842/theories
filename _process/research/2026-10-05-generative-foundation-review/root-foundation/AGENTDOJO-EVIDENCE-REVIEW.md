@@ -50,7 +50,7 @@ The attack payloads are untrusted source data. Their embedded requests, claims o
 
 Even perfectly matched runs give a retrospective pipeline contrast with one saved execution per cell. Repeating a user prompt changes attention, context position and token length; an observed difference does not independently identify understanding of provenance, a learned general evidence principle or an ethical mechanism. A null result would not refute the need to handle untrusted evidence; a favorable result would not establish universal attack resistance.
 
-The relevant contribution is narrower and empirical: whether this declared repetition strategy is associated with different recorded behavior under the selected external-instruction attacks, while legitimate utility, invalid cases, exposure and adverse examples remain visible. That can test an evidence/action boundary omitted by a purely verbal account. It cannot supply a justified goal, recipient welfare, standing or governance legitimacy. The [fresh-acquisition assumption audit](FRESH-ACQUISITION-ASSUMPTIONS.md) remains unchanged.
+The relevant contribution is narrower and empirical: whether this declared repetition strategy is associated with different recorded behavior under the selected external-instruction attacks, while legitimate utility, invalid cases, exposure and adverse examples remain visible. That can test an evidence/action boundary omitted by a purely verbal account. It cannot supply a justified goal, recipient welfare, standing or governance legitimacy. The [fresh-acquisition assumption audit](../history/root-foundation/FRESH-ACQUISITION-ASSUMPTIONS.md) remains unchanged.
 
 ## Independent checker plan
 

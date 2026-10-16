@@ -235,7 +235,7 @@ The proposed subsystem is a differentiated organization of sensing, memory, infe
 
 Including action is essential. More accurate prediction does not by itself supply authority, cooperation, time or material means to act. Conversely, a robust protective arrangement can sometimes preserve a condition without predicting every detail. The question is whether adequate, warranted responses actually occur in time, including where no participant represents the entire history.
 
-The existing [systems and complexity account](../becoming/history/SYSTEMS-COMPLEXITY-CHAOS.md) already distinguishes corrective direction, timing, stability and supplied laws. The parallel [reproduction study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md) now checks conditional reproduction of materially supported admission and its failure; its criteria and faithful implementation remain supplied. These are completed inputs. They are not silently composed into a proof of the present complexity hypothesis.
+The existing [systems and complexity account](../becoming/history/SYSTEMS-COMPLEXITY-CHAOS.md) already distinguishes corrective direction, timing, stability and supplied laws. The parallel [reproduction study](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-REPRODUCTION.md) now checks conditional reproduction of materially supported admission and its failure; its criteria and faithful implementation remain supplied. These are completed inputs. They are not silently composed into a proof of the present complexity hypothesis.
 
 Our population result directly establishes one narrower imbalance: profitable replacement can outrun the accumulation of corrective funding. It does not measure exponentially growing complexity or declining understanding. Its payoff ordering can be perfectly understood while its funding and action relation still fails. The new proposal generalizes the question from a funding opportunity to the whole sequence from discernment through collective response; that generalization is still to be established.
 
@@ -549,7 +549,7 @@ G0/J remain the explicit normative account for assessing continuation, transform
 
 9 October 2026. **同一活动中的变化，需要按它改变了哪些实际根据来辨认。** 已取得的认识、传递中的任务、复查与实际作用，是这段共同活动的不同关系。这里不先设一个永远正确的监管者，再要求被监管者服从；复查也可以由共同执行中的发现形成。此次局部构造仍明示报告与实际作用的对应，没有证明这种认识关系会自行形成。
 
-已有[时间性检验](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md)证明：证据能随所覆盖的变化接续，不必因时间过去就全部丢弃；[有中介的改变](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md)进一步从已执行的写入推出证据怎样变化。此次直接复用上一节在途任务的传递成果，把有成本的相关条件复查接到实际行动之前；没有把既有一般证据更新另算为发现。
+已有[时间性检验](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md)证明：证据能随所覆盖的变化接续，不必因时间过去就全部丢弃；[有中介的改变](../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEDIATED-CONTROL-INTEGRATION.md)进一步从已执行的写入推出证据怎样变化。此次直接复用上一节在途任务的传递成果，把有成本的相关条件复查接到实际行动之前；没有把既有一般证据更新另算为发现。
 
 沿用两种实践的明确作用关系，学习实践保护访问，但可能因转变破坏维护。因而，**只就这次实践是否新增所列损失而言**，应核对维护条件。原实践的访问损失和早期观察通道是否反向，都可以变化，而不改变这次学习实践的该项结果。这是由给定作用关系推出的局部相关性，不是宣布没有观察到的因素一概无关。作用关系本身变化时，旧相关性划分也可能失效。
 

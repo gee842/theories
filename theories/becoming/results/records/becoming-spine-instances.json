@@ -169,7 +169,7 @@
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
       "detail": {
         "zh": "有意不桥接：CorrectionParent 与 ObservationRepair 是具体模型，CorrectionRelations 是关系边界的代数，核心没有对应接口；另有 9 个具体模型没有需要实例化的接口。",
         "en": "Deliberately not bridged: CorrectionParent and ObservationRepair are concrete models and CorrectionRelations is an algebra of relational boundaries, with no core interface; 9 further concrete models have no interface to instantiate."
@@ -402,7 +402,7 @@
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
       "role": "integration",
       "sha256": "151be160b97e831c4e09cd74f1ea4e9d1fce7443d08c28d9fa8bd20ad558fb6b",
       "declarations": []

@@ -10,15 +10,15 @@
 
 **智慧的分化与整个根 / Differentiated wisdom and the whole root，2026-10-08。** [第11节](#wisdom-scope-and-root)接入[独立内容与替代解释比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-scope-and-whole-root)：具体判断、形成的能力与完整解释各有范围。/ The common-root candidate must explain differentiated standards and their connections; this philosophical continuation adds no theorem and leaves the full root open.
 
-**有限判断与真实失败 / Limited judgment and actual failure，2026-10-08。** [第10节](#fallible-judgment-and-root)接入[5项新 Lean 应用](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)：正确风险陈述可以伴随实际失败，单次成败不独自判定原界限。/ Claim strength governs the necessity test; numerical risk certification does not establish ethical permission or the full wisdom root.
+**有限判断与真实失败 / Limited judgment and actual failure，2026-10-08。** [第10节](#fallible-judgment-and-root)接入[5项新 Lean 应用](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)：正确风险陈述可以伴随实际失败，单次成败不独自判定原界限。/ Claim strength governs the necessity test; numerical risk certification does not establish ethical permission or the full wisdom root.
 
-**目标评价的接续 / Evaluating ends，2026-10-08。** [第9节](#goal-grounding-and-root)接入[7项新 Lean 定理与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md)：旧、新目标成就相同仍可有相反保护比较；固定的关系敏感规则也能满足要求。/ The new necessity concerns retained content, not exclusive algorithmic form. Full wisdom and the universal root remain unproved.
+**目标评价的接续 / Evaluating ends，2026-10-08。** [第9节](#goal-grounding-and-root)接入[7项新 Lean 定理与反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-GOAL-GROUNDING.md)：旧、新目标成就相同仍可有相反保护比较；固定的关系敏感规则也能满足要求。/ The new necessity concerns retained content, not exclusive algorithmic form. Full wisdom and the universal root remain unproved.
 
-**新的必要性检验 / New necessity test，2026-10-08。** [第8节](#response-structure-and-root)与[证明整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md)接入9项新 Lean 定理：足够行动的不同描述，未必有仍足够行动的共同最粗描述。/ A common practical ground need not be a shared least description. Earlier zero-new-proof updates retain their historical scope; universal wisdom remains unproved.
+**新的必要性检验 / New necessity test，2026-10-08。** [第8节](#response-structure-and-root)与[证明整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-RESPONSE-NECESSITY.md)接入9项新 Lean 定理：足够行动的不同描述，未必有仍足够行动的共同最粗描述。/ A common practical ground need not be a shared least description. Earlier zero-new-proof updates retain their historical scope; universal wisdom remains unproved.
 
 **本会话的完整目标 / Governing objective for this session，2026-10-08。** Ren 明确：“[我想证明的是，这就是the root of wisdom](../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#root-of-wisdom-objective)”。研究须建立 core 对智慧的实质构成必要性，以及理解、关切、回应和自我修正的生成说明；局部匹配、约束服从与有效推论传递都不能单独完成该目标。见[证明连接与首轮辨析](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#root-of-wisdom-target)。/ Establishing the root remains the target, not an achieved result. Reuse completed conditional work, disclose normative premises and test faithful rivals; do not require literal agreement with this vocabulary or silently replace the target with a publishable subset.
 
-2026-10-08，Asia/Bangkok。AI 撰写，承接 [Ren 的观察与“请继续”](../../../sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md)。[首轮协议](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md)、[原典比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md)及[证明、反审与整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md)分别记录证据与范围。
+2026-10-08，Asia/Bangkok。AI 撰写，承接 [Ren 的观察与“请继续”](../../../sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md)。[首轮协议](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-CONTEXT-PROTOCOL.md)、[原典比较](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-CONTEXT-SOURCES.md)及[证明、反审与整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-CONTEXT-INTEGRATION.md)分别记录证据与范围。
 
 **当前中心问题 / Current central question，2026-10-08。** 按 [Ren 的纠正](../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#ren-对中心问题的纠正--correction-of-the-central-question)，进一步解释 core 的自然延伸何以能发现智慧，以及理由与生成约束的联系。见[本章新增第7节](#constraint-to-wisdom)及[完整候选论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)。/ The upstream derivational explanation now governs the next study; the earlier classical test remains a useful downstream test. Prior proofs retain their scope; this update adds no theorem or experiment.
 
@@ -62,7 +62,7 @@ This is a standard finite predicate-transformer pattern, credited to the primary
 
 《论语·先进》“闻斯行诸”章对两位学生给出相反劝告，并直接说明其不同倾向；对子路的回答还涉及父兄关系。它支持有理由的差别回应。把共同培养方向解释为一个数值区间，则超出了文本与本轮证据。
 
-西塞罗《论义务》I.10 §§31–32 将义务随处境变化联系到伤害与共同利益；同书 I.13 §39 又赞许承担严重个人代价的守信。前一段支持回应可以改变，后一段迫使我们保留义务根据与真实损失。它们不能一起被简化成“始终保护行动者自身继续”。具体来源和读取限制见[原典记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md)。
+西塞罗《论义务》I.10 §§31–32 将义务随处境变化联系到伤害与共同利益；同书 I.13 §39 又赞许承担严重个人代价的守信。前一段支持回应可以改变，后一段迫使我们保留义务根据与真实损失。它们不能一起被简化成“始终保护行动者自身继续”。具体来源和读取限制见[原典记录](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-CONTEXT-SOURCES.md)。
 
 The formal example illuminates a relation-sensitive form shared by the selected passages. It neither proves their particular verdicts nor resolves their normative differences. The same constraint applies to our G0/J route: [existing practical judgment](PRACTICAL-JUDGMENT.md) supplies openly stated grounds for protection, transformation, bounded responsibility and endings. We reuse those grounds rather than deriving them from a regulation band. G0 remains the authorized normative starting point; this comparison does not impose a new axiom-free completion gate.
 
@@ -89,7 +89,7 @@ The prospective, independently selected case test remains open. The present resu
 
 这里的约束与使能属于同一活动中的关系。活动形成的结构可在某个尺度相对保持、影响后续活动，也可被重建；不能预先设立独立的约束物与被动的流。通用数学接口使这些关系可表达并支持有效推论；实质理论仍须说明实际依存和规律。任意变化关系均能写入接口，故“能够表示”本身没有证明该核心已包含具体智慧。
 
-已有[一般生成要求](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md)提供了重要连接：正当继续生活的根据，可以通过其实际实现条件支持相关回应，无须另为每个支持条件寻找脱离生活的内在价值。G0/J/E继续公开；因果依存不能独自决定伦理方向、唯一手段或个人的无限责任。真实破坏可以依照因果规律发生，同时违反正当保护要求；理由成立不等于必被遵行。
+已有[一般生成要求](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md)提供了重要连接：正当继续生活的根据，可以通过其实际实现条件支持相关回应，无须另为每个支持条件寻找脱离生活的内在价值。G0/J/E继续公开；因果依存不能独自决定伦理方向、唯一手段或个人的无限责任。真实破坏可以依照因果规律发生，同时违反正当保护要求；理由成立不等于必被遵行。
 
 一条拟议的发现路线，是从一次实现追问持续实现，从单独活动追问共同活动，从前次成功追问已被改变的后续条件，再把同样的检验用于判断、规则和共同承担自身。更新、组合、回应反转及安排保持已有局部成果可复用。它们指向维护、协调、知止、纠错与守信等主题，但没有推导这些词语全部历史内涵，也没有证明全部理由都是必要条件。
 
@@ -106,7 +106,7 @@ The prospective, independently selected case test remains open. The present resu
 
 **对根基论证的贡献：**共同关系可以支撑多种有根据的把握和回应。“根”不应预先等同于每个人必须掌握的同一份最小表述。理由的约束力在于所声称的实现与实际关系相合；它不总要求唯一手段。伦理问题中的何种实现具有根据，继续复用G0/J/E，不能由路线到达这一技术目标暗中代替。
 
-The nine checked theorems concern one-step deterministic response in a supplied process. They neither define wisdom as guaranteed success nor establish how observation and concern form. The author counterreview and primary-source comparison retain these limits. The next universal connection concerns warranted ends and their revision: reuse completed formation and practical results, then compare faithful alternatives for the substantive relations they must retain. Full correspondence, universal necessity and historical convergence remain unproved. See the [study and frozen proof receipt](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md#proof-and-correspondence).
+The nine checked theorems concern one-step deterministic response in a supplied process. They neither define wisdom as guaranteed success nor establish how observation and concern form. The author counterreview and primary-source comparison retain these limits. The next universal connection concerns warranted ends and their revision: reuse completed formation and practical results, then compare faithful alternatives for the substantive relations they must retain. Full correspondence, universal necessity and historical convergence remain unproved. See the [study and frozen proof receipt](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-RESPONSE-NECESSITY.md#proof-and-correspondence).
 
 <a id="goal-grounding-and-root"></a>
 ## 9. 目标成功与目标根据 / Attainment and the grounds of ends
@@ -117,7 +117,7 @@ The nine checked theorems concern one-step deterministic response in a supplied 
 
 这使“智慧之根”的候选解释进入目的评价：生活关系经公开规范根据成为理由，理由也约束那些在关系中形成并继续改变它们的目的。必要性落在所保留的判断内容，不能用“固定”或“会变”两个标签独自裁判一个解释。丰富的目标表示若纳入相关关系，应得到完整比较信用。
 
-The new theorem concerns a fixed, supplied comparison and a family of actual outcome configurations. It does not establish J2's necessity for every wisdom tradition, require infallible choice from limited evidence, or prove the complete core indispensable. The same-author counterreview and primary comparison retain Aristotle's distinction between successful cleverness, right desire and practical wisdom, without identifying his ethical grounds with G0. [The study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md) records seven new theorems and eleven audits, with 93 inherited theorems and 165 inherited audits separately credited. The remaining root connection concerns independently specified wisdom and the full substantive foundation; completed formation, practical and risk results remain reusable results.
+The new theorem concerns a fixed, supplied comparison and a family of actual outcome configurations. It does not establish J2's necessity for every wisdom tradition, require infallible choice from limited evidence, or prove the complete core indispensable. The same-author counterreview and primary comparison retain Aristotle's distinction between successful cleverness, right desire and practical wisdom, without identifying his ethical grounds with G0. [The study](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-GOAL-GROUNDING.md) records seven new theorems and eleven audits, with 93 inherited theorems and 165 inherited audits separately credited. The remaining root connection concerns independently specified wisdom and the full substantive foundation; completed formation, practical and risk results remain reusable results.
 
 <a id="fallible-judgment-and-root"></a>
 ## 10. 有范围的理由与失败后的接续 / Scoped reasons and continuation after failure
@@ -128,7 +128,7 @@ The new theorem concerns a fixed, supplied comparison and a family of actual out
 
 这不是为三分之一风险给出伦理许可，也未证明概率已经被学得。实际行动理由继续由公开G0/J/E、可行替代、时间与形成的承担说明。[一般实践判断](PRACTICAL-JUDGMENT.md)已保留有限、及时、可复核的决定和残余责任。事前陈述成立不抹去后来损失；后来损失也不独自证明事前陈述错误。两方面须在同一历史中接续。
 
-**对慧根目标的推进：**有限智慧不必以永不失败为标准，但每项理由仍须说明其根据及有效范围。必要关系的检验应保留目标判断实际声称的内容，而不是先把它升级为全知或必胜。[研究、原始来源对照与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)明确，此次证明的是正确风险陈述与失败实现并存，尚非内容为假的信念可以得到辩护。
+**对慧根目标的推进：**有限智慧不必以永不失败为标准，但每项理由仍须说明其根据及有效范围。必要关系的检验应保留目标判断实际声称的内容，而不是先把它升级为全知或必胜。[研究、原始来源对照与反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)明确，此次证明的是正确风险陈述与失败实现并存，尚非内容为假的信念可以得到辩护。
 
 Five new application/correspondence theorems and 59 inherited audits are distinguished. This closes a local scope correction; it does not establish universal wisdom, actual probability calibration or ethical risk acceptance. Existing formation, risk and G0/J/E results remain credited. The full target still requires a substantive coverage and necessity argument across independently characterized wisdom, allowing tacit and collective realizations and faithful alternative explanations.
 

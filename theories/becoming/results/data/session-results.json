@@ -59,7 +59,7 @@
         "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md"
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-CONTINUATION-INTEGRATION.md"
       ],
       "reuse_en": "Use the additive theorem for pooled exit budgets, the footprint theorem for nested exclusive demands, and the plan theorem for observation-dependent continuation. Count the shared obstruction once in synthesis; retain its distinct applications.",
       "remaining_en": "No adapter between all three representations has been verified by this map."
@@ -72,9 +72,9 @@
       "hypotheses_en": "Specified atomic operations, guarded changes, retained support and explicit progress assumptions.",
       "canonical_sources": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryChangingSupport.lean",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md"
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md"
       ],
       "reuse_en": "Reuse the safety/progress distinction. Versioned requests add in-flight route identity and queue occupancy, so they are not duplicate support lemmas.",
       "remaining_en": "Actual scheduling and bounded pending work are separate implementation obligations."
@@ -196,7 +196,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean",
         "theories/becoming/chapters/GENERATED-LOGIC.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReflectiveIdentity.lean",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md"
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md"
       ],
       "reuse_en": "Reuse logical composition only at matching interpretation and standards. Shared 'identity' terminology does not equate operational warrant with Lean equality.",
       "remaining_en": "These results do not derive the metalogic or actual universal admission from no premises."
@@ -212,7 +212,7 @@
         "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
         "theories/becoming/chapters/WANG-YANGMING.md",
         "theories/becoming/chapters/LIANGZHI-EVOLUTION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
       ],
       "reuse_en": "Reuse the established nondual method and handoff results; count a source comparison as an argument, not an additional formal theorem.",
       "remaining_en": "The broad religious-comparison discussion is preserved in the chat snapshot; a dedicated integrated survey is not established by its contextual links."
@@ -224,10 +224,10 @@
       "claim_en": "Several chats reviewed and accepted the same five-condition completion result.",
       "hypotheses_en": "Original conditional finish line, source bindings and accepted composition scope; stronger goals remain separate.",
       "canonical_sources": [
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
-        "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md"
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FOUNDATION-COMPOSITION.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md"
       ],
       "reuse_en": "One completion result with multiple reviews. Do not count each accepting chat or replayed import closure as a fresh proof.",
       "remaining_en": "Historical next steps must be read with later scoped completions."
@@ -339,7 +339,7 @@
       ],
       "outcome_en": "Lean migration of finite-basis joint interpretation; the earlier hand argument and stronger open grounding retain their scopes.",
       "outcome_zh": "有限根基共同解释的 Lean 迁移；旧手证和更强根据问题保留范围。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
       "integration": "canonical",
       "evidence_message_ids": [
         "msg_0ce3261352f49ddc016ac7826499e481919988d705ee44faae"
@@ -371,7 +371,7 @@
       ],
       "outcome_en": "Concrete support fulfillment implies a finite weighted protection floor.",
       "outcome_zh": "实际履行支持接到有限权重模型的保护下界。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
       "integration": "study-and-canonical",
       "evidence_message_ids": [
         "msg_0ceb3f143c675cce016ac7820251e887d09f54281fb4e1f6b7"
@@ -435,7 +435,7 @@
       ],
       "outcome_en": "Interventions reveal local common support, with an upstream indistinguishability boundary.",
       "outcome_zh": "干预取得共同支持关系，保留上游不可辨认界限。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-DISCOVERY.md",
       "integration": "study-and-canonical",
       "evidence_message_ids": [
         "msg_0cdbd9667008906f016ac780cf1ff4819184d3a51a89b0f457"
@@ -499,7 +499,7 @@
       ],
       "outcome_en": "Fresh reference contact revises acquired discrimination and restores updating.",
       "outcome_zh": "新参考接触修订辨别并恢复更新。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md",
       "integration": "study-and-canonical",
       "evidence_message_ids": [
         "msg_04f208c95b8ab49e016ac77bf8ce1487d0a80b78425b48d34b"
@@ -583,7 +583,7 @@
       ],
       "outcome_en": "Measured execution timing connects existing bounds to published controller runs.",
       "outcome_zh": "实测执行时序把已有误差界接到控制记录。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TIMED-FEEDBACK-INTEGRATION.md",
       "integration": "study-and-canonical",
       "evidence_message_ids": [
         "msg_0fb734d219492f23016ac6c8fb6ed487d0b0594a195ba9c8f0",
@@ -667,7 +667,7 @@
       ],
       "outcome_en": "Potentialist first-order interpretation preserves truth with stable meaning and continued access.",
       "outcome_zh": "稳定意义和持续可达下的潜在主义一阶真理保持。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md",
       "integration": "study-and-canonical",
       "evidence_message_ids": [
         "msg_0eae0a898da9f288016ac695b9dcf487d09eda38efd1f47ea5",
@@ -717,7 +717,7 @@
       ],
       "outcome_en": "Human continuation makes the generative relations concrete without proving universal ethical warrant.",
       "outcome_zh": "以人类延续具体化生成关系，未由此证明普遍伦理。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GENERATIVITY.md",
       "integration": "study-context",
       "evidence_message_ids": [
         "msg_0d5e543cba37ba70016ac67194af4c87d09bcdbec300c779aa",
@@ -734,7 +734,7 @@
       ],
       "outcome_en": "Liangzhi practical changes include support handoff, recovery and finite ending.",
       "outcome_zh": "良知实践变化包括支持交接、恢复与有限结束。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
       "integration": "study-and-canonical",
       "evidence_message_ids": [
         "msg_0d5e543cba37ba70016ac6478f0b9087d0bbcc33621f7ad6a0",
@@ -751,7 +751,7 @@
       ],
       "outcome_en": "Entrusted participation and binding commitments do not automatically make a trajectory better.",
       "outcome_zh": "受托参与和有效承担不自动使整体历程更好。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-INTEGRATION.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-INTEGRATION.md",
       "integration": "study-and-canonical",
       "evidence_message_ids": [
         "msg_0c296fc7c9417fe9016ac63c4a301481919537cbe9eb33612d",
@@ -768,7 +768,7 @@
       ],
       "outcome_en": "Reconciles conditional completion and stronger ethical goals; later turns concern repository transfer.",
       "outcome_zh": "区分有条件完成与更强伦理目标；后续为仓库交接。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MECHANISM-STATUS-RECONCILIATION.md",
       "integration": "review",
       "evidence_message_ids": [
         "call_ybTZqwt6V1NHnRDVBzgXyqxI",
@@ -803,7 +803,7 @@
       ],
       "outcome_en": "Connects process-law derivation to the dependency-accounting requirement.",
       "outcome_zh": "将过程律推导接到前提依赖说明要求。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PROCESS-LAW-DERIVATION.md",
       "integration": "study-context",
       "evidence_message_ids": [
         "msg_0b848a282933f2a1016ac52e69995087d09a2b2091ea453ead",
@@ -839,7 +839,7 @@
       ],
       "outcome_en": "Acquired consequences select the inquiry relevant to the disputed application.",
       "outcome_zh": "取得后果选择与所争应用相关的查询。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
       "integration": "study-and-canonical",
       "evidence_message_ids": [
         "msg_0b22e91161ae5b93016ac4e15dfd1c87d082bef76accb64ffb",
@@ -893,7 +893,7 @@
       ],
       "outcome_en": "Parallel connection review and shared-method adoption; not a new foundation.",
       "outcome_zh": "并行连接审查及共同方法接续，不是另一个基础证明。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FOUNDATION-COMPOSITION.md",
       "integration": "review",
       "evidence_message_ids": [
         "msg_0c330cb70294bbdc016ac49368a5c887d0b21246f729d5077a",
@@ -930,7 +930,7 @@
       ],
       "outcome_en": "Independent acceptance of the same five-condition conditional candidate.",
       "outcome_zh": "同一五条件候选的独立验收。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
       "integration": "review",
       "evidence_message_ids": [
         "msg_0c330cb70294bbdc016ac4935e630c87d0a536132d3e37dc0a",
@@ -948,7 +948,7 @@
       ],
       "outcome_en": "Integrated exposition and completion assessment of the same conditional candidate.",
       "outcome_zh": "同一有条件候选的整合论述与完成评估。",
-      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
       "integration": "review",
       "evidence_message_ids": [
         "msg_0c330cb70294bbdc016ac4936f02d487d087eeea43036b189a",

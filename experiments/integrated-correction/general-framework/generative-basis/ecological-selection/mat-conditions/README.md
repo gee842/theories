@@ -1,6 +1,6 @@
 # Mat conditions and source correspondence
 
-This directory checks extraction of published oxygen-condition summaries for the [mat development study](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md). It adds no simulated cultures or fitted survival model.
+This directory checks extraction of published oxygen-condition summaries for the [mat development study](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MAT-CONDITIONS-INTEGRATION.md). It adds no simulated cultures or fitted survival model.
 
 From the repository root:
 

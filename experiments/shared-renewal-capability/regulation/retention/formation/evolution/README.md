@@ -1,6 +1,6 @@
 # Consequence access and transmission of response structure
 
-7 October 2026, Asia/Bangkok. AI-authored supporting result for the [authorized Liangzhi evolution investigation](../../../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md). [Mathematical scope and correspondence](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-MATH.md).
+7 October 2026, Asia/Bangkok. AI-authored supporting result for the [authorized Liangzhi evolution investigation](../../../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md). [Mathematical scope and correspondence](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-EVOLUTION-MATH.md).
 
 This package adds the first Lean check of a restricted copy-only next-event selection criterion previously treated analytically, then distinguishes **selection of a template** from **transmission of its response structure**. It imports the unchanged [formed-variant process](../formal/FormedSelection.lean) and its [core correspondence](../formal/FormationRoot.lean). Productive consequences already reached actual copying in that process; this is not a newly discovered mechanism or a model in which chemical repair has become moral concern.
 

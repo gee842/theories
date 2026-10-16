@@ -32,7 +32,7 @@ Formation, retention, movement and reproduction describe differentiated relation
 
 The primary work's sequence is: SM transiently occupies the interface; elevated-c-di-GMP variants arise within that population; WS persists locally as SM disperses. Its inference of mechanical facilitation is supported by images and a conceptual model, but does not independently identify every causal contribution. The same SM type can facilitate early formation yet undermine later mat structure at other abundances or stages. Neither “always helpful” nor “always destructive” is an adequate fixed type assignment.
 
-The [earlier time-lapse study](MAT-HISTORY-INTEGRATION.md) made growth, structural persistence and reformation distinct. The new work adds an actual inoculum-dependent endpoint and explicit physical candidate. It does **not** join those 24-hour plate observations to the [later six-day lineage experiment](DEVELOPMENTAL-TRANSFER-INTEGRATION.md). Different geometry, genotypes, times and scoring rules remain. We cannot use the new 0/9 outcome as the later lineage's first-stage probability.
+The [earlier time-lapse study](MAT-HISTORY-INTEGRATION.md) made growth, structural persistence and reformation distinct. The new work adds an actual inoculum-dependent endpoint and explicit physical candidate. It does **not** join those 24-hour plate observations to the [later six-day lineage experiment](../history/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md). Different geometry, genotypes, times and scoring rules remain. We cannot use the new 0/9 outcome as the later lineage's first-stage probability.
 
 ## Exact recovery of the conventional retention mechanism
 

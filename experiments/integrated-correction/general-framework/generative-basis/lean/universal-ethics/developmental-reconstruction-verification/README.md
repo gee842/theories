@@ -1,6 +1,6 @@
 # Checked reconstruction through sampled descendants
 
-This package checks [DevelopmentalReconstruction.lean](../DevelopmentalReconstruction.lean), extending the existing developmental association model with actual single-cell transfer, inherited redevelopment and finite provision. The [research assessment](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) states biological correspondence and limitations.
+This package checks [DevelopmentalReconstruction.lean](../DevelopmentalReconstruction.lean), extending the existing developmental association model with actual single-cell transfer, inherited redevelopment and finite provision. The [research assessment](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) states biological correspondence and limitations.
 
 Run from any directory:
 

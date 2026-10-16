@@ -10,7 +10,7 @@
 
 形式贡献包括一致描述的遗忘／恢复、保持实际终点的有限延续等价、对既有 `OutcomeResidual` 的直接保真，以及角色／后果剖面的相对精确性。通用模块只导入 `GenerativeCore`；伦理兼容模块的依赖方向朝向核心，核心不反向导入患者或 C2。
 
-具体作用范围并非只由任意标签命名。一个同类型节点过程从没有连接开始，形成两个不同但共享来源的互补范围，实际触发后再解组；一个先前受作用的位置随后通过新连接成为另一作用的必要来源。当前活动列表相同而连接不同的两种状态具有不同能力，所以只保留活动的摘要不能保真。它回答了[先前非二元重构](NONDUAL-GENERATIVE-RECONSTRUCTION.md)要求解释临时响应范围的部分问题。
+具体作用范围并非只由任意标签命名。一个同类型节点过程从没有连接开始，形成两个不同但共享来源的互补范围，实际触发后再解组；一个先前受作用的位置随后通过新连接成为另一作用的必要来源。当前活动列表相同而连接不同的两种状态具有不同能力，所以只保留活动的摘要不能保真。它回答了[先前非二元重构](../history/root-foundation/NONDUAL-GENERATIVE-RECONSTRUCTION.md)要求解释临时响应范围的部分问题。
 
 这个实例的结构与事件律、初始节点活动、通用描述函数仍是明示输入。它没有生成完整生命、自我、体验或道德地位，也未和已有付费学习器合成同一物理历史。`ActualHistory` 保留起点、事件词、终点与允许轨迹的命题见证，并非所有隐蔽中间路线的可读日志；`Affected` 只检测声明读数的净变化，不是完整损害识别。
 
@@ -20,7 +20,7 @@
 |---|---|
 | [形成／兼容构建](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/nondual-verification.json) | 七个模块新鲜构建；31 项新增声明审计：通用核心 11、形成实例 16、下游兼容层 4。 |
 | [公共模型构建](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/nondual-model-verification.json) | 重新编译原 16 模块公共模型、新通用模块和新公共入口；2 项新增公共定理直接保存原模型的历史／终点结果。 |
-| [独立审查](NONDUAL-CORE-REVIEW.md)及[独立收据](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/nondual-independent-review.json) | 二十三模块冻结源码新鲜构建，包含公共入口和全部新增定理；编译 Lean 与独立集合解释逐项匹配 4,096 个状态的 8,192 个能力查询，另重放六个关键终态、检查三个重复边／自边对照。 |
+| [独立审查](../history/root-foundation/NONDUAL-CORE-REVIEW.md)及[独立收据](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/nondual-independent-review.json) | 二十三模块冻结源码新鲜构建，包含公共入口和全部新增定理；编译 Lean 与独立集合解释逐项匹配 4,096 个状态的 8,192 个能力查询，另重放六个关键终态、检查三个重复边／自边对照。 |
 
 共有 **33 项不同的新增声明审计**。部分形成证明仍依赖标准 Lean 公理；通用核心、兼容层和两项公共定理的新报告为空。后者并不取消它们的类型、逻辑、读出、过程参数或局部法则。形式验收不证明伦理或意识真理，也没有进行新的实证研究。
 
@@ -28,7 +28,7 @@
 
 初次公共检查遇到旧模块在命名空间内使用相对 `#print axioms` 名称的问题。编译本身通过，检查器的名称比较失败；修正为核对有命名空间前缀的同一声明，同时保留对旧收据完整声明／依赖映射的精确比较，随后十八模块全部通过。没有因此修改旧证明或放松公理依赖要求。
 
-[一手比较](NONDUAL-CORE-SOURCES.md)提供主客功能如何在不同连续关系中出现的具体前例，同时保留其已给定的体验起点。本轮没有把 James、阳明、《易传》与《中论》认作同一学说；新直接阅读不为非二元本体论增加独立经验性证据。
+[一手比较](../history/root-foundation/NONDUAL-CORE-SOURCES.md)提供主客功能如何在不同连续关系中出现的具体前例，同时保留其已给定的体验起点。本轮没有把 James、阳明、《易传》与《中论》认作同一学说；新直接阅读不为非二元本体论增加独立经验性证据。
 
 ## 关切获得的位置
 
@@ -40,7 +40,7 @@
 
 ## 保留与下一连接
 
-新代码是加法式扩展。原 `GenerativeCore`、`GenerativeModel`、`GenerativeOutcomeModel`、已冻结的 connected 模型闭包及上一轮患者模型、RootGrounding 和旧收据均不由本轮改写。各新构建记录源文件与日志哈希；[整合完整性记录](NONDUAL-CORE-CHECKS.json)另核对任务相关链接、源码／收据和旧证据保留，不替代科学检验。
+新代码是加法式扩展。原 `GenerativeCore`、`GenerativeModel`、`GenerativeOutcomeModel`、已冻结的 connected 模型闭包及上一轮患者模型、RootGrounding 和旧收据均不由本轮改写。各新构建记录源文件与日志哈希；[整合完整性记录](../history/root-foundation/NONDUAL-CORE-CHECKS.json)另核对任务相关链接、源码／收据和旧证据保留，不替代科学检验。
 
 已满足的是这次 **非二元核心的建模架构与派生角色接口**，并得到一个条件性的实际范围形成构造。完整主体生成、现象体验、普遍伦理证成与无假设根基仍未完成。架构上的进步不需要先宣告现实的一切本体论竞争者都已被排除。
 

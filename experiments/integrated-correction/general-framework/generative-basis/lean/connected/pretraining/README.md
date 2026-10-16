@@ -1,6 +1,6 @@
 # Retained evidence within the common generative development
 
-6 October 2026. This additive build imports the existing nondual-applicability entry and the unchanged plasticity chain, plus the new `PretrainingEvidence` proof. The [entry](../../GenerativePretrainingEvidenceModel.lean) contains imports and comments only. The [integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md) explains the result and its limits.
+6 October 2026. This additive build imports the existing nondual-applicability entry and the unchanged plasticity chain, plus the new `PretrainingEvidence` proof. The [entry](../../GenerativePretrainingEvidenceModel.lean) contains imports and comments only. The [integration](../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRETRAINING-EVIDENCE-INTEGRATION.md) explains the result and its limits.
 
 The completed fresh build checks **60 modules** with Lean 4.29.1. Sixteen newly audited theorems establish retained net-depletion evidence for completed faithful teaching prefixes, a replacement accounting extension, and exact count-four control diagnostics. The other three modules newly included relative to the prior 55-module closure are the already verified `PlasticityPreparation`, `PairedPlasticity` and `PlasticityWitness`. Their results are inherited, not new discoveries. The import entry adds no theorem.
 

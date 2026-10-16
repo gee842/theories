@@ -1,6 +1,6 @@
 # G0 的根据：一项采用的公理怎样得到支持 / The warrant for G0: how an adopted axiom is supported
 
-2026-10-09，Asia/Bangkok。AI（Claude）撰写，执行 [Ren 的指示](../../../sources/15-codex-theory-conversations/2026-10-09-lean-evidence-roles.md)。本章不证明 G0，也不把它从公理改成定理。它整理适合于一项采用公理的支持，说明形式检查在其中各承担什么，并写明什么结果会修订它。Ren 的原话与 AI 的重构分别标注；[外部视角审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md)与[区分内容整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md)记录了本章的起因与新证明。
+2026-10-09，Asia/Bangkok。AI（Claude）撰写，执行 [Ren 的指示](../../../sources/15-codex-theory-conversations/2026-10-09-lean-evidence-roles.md)。本章不证明 G0，也不把它从公理改成定理。它整理适合于一项采用公理的支持，说明形式检查在其中各承担什么，并写明什么结果会修订它。Ren 的原话与 AI 的重构分别标注；[外部视角审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md)与[区分内容整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md)记录了本章的起因与新证明。
 
 This chapter does not prove G0 or convert it into a theorem. It organizes the kinds of support appropriate to an adopted axiom, states what each formal check contributes, and names results that would revise it.
 
@@ -20,7 +20,7 @@ G0 supplies valence only. Direct articulation (D/P) makes it a reason for a posi
 
 ### 2.1 解释统一 / Explanatory unification
 
-照护、修复、创造、学习、更新、休息、有限完成与建设性结束，都可以从同一根据得到说明，而无须分别假定各自独立的内在价值（[前提推导](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md) §§1、3；[对齐方向](ALIGNMENT-DIRECTION.md) §1）。自我照护被纳入，不必先产生外部收益；结束被纳入，不必先证明旧安排永久无用。若一种对手需要更多相互独立的起点才能解释同样的范围，这就是支持 G0 的比较理由。
+照护、修复、创造、学习、更新、休息、有限完成与建设性结束，都可以从同一根据得到说明，而无须分别假定各自独立的内在价值（[前提推导](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-PREMISE-DERIVATION.md) §§1、3；[对齐方向](ALIGNMENT-DIRECTION.md) §1）。自我照护被纳入，不必先产生外部收益；结束被纳入，不必先证明旧安排永久无用。若一种对手需要更多相互独立的起点才能解释同样的范围，这就是支持 G0 的比较理由。
 
 Care, repair, creation, learning, renewal, rest, finite fulfillment and constructive ending are explained from one ground. A rival needing more independent starting points to cover the same range loses on this comparison.
 
@@ -64,11 +64,11 @@ Scope of this separation: in this law class the consumer depends on what it cons
 
 In one constructed situation, G0, C and J2 hold together; G0 constrains relevance, not ordering, so J2 does not follow from C. Every natural-number score satisfying C trades, whereas a bounded rational score represents J2 exactly. The situation separates J2 from unit-step aggregation only; bounded-sensitivity rivals remain.
 
-**以后来认可为最终尺度。** [生成对齐修订](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md)中的对手一主张，后来的充分认可就足以证明形成过程正当。本框架拒绝其充分性：后来无异议不会使已发生的损失没有发生，J2 也不允许以更多认可换取仍存在的基本剥夺。
+**以后来认可为最终尺度。** [生成对齐修订](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md)中的对手一主张，后来的充分认可就足以证明形成过程正当。本框架拒绝其充分性：后来无异议不会使已发生的损失没有发生，J2 也不允许以更多认可换取仍存在的基本剥夺。
 
-**Gewirth 与辩证路线。** Gewirth 试图从任何目的性行动者已有的承诺推出普遍原则，而不另设价值公理（[来源研读](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-SOURCES.md) §1）。他的论证公认在“我需要 X”到“他人也应尊重每个人的 X”这一步上有争议。审查 §3.1 提出一个研究假说：一元关系本体下，评价者自身的评价与延续形成于并依存于与他者的关系，阻断这一步的自我边界并不是给定的。若这条路走通，G0 可以降为接近“构成我之评价的那些生成关系的延续”，所支持的也正是 §2.2 中的更新型形成。这是待证目标（`universal-practical-warrant`，open），不是成果。
+**Gewirth 与辩证路线。** Gewirth 试图从任何目的性行动者已有的承诺推出普遍原则，而不另设价值公理（[来源研读](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NORMATIVE-WARRANT-SOURCES.md) §1）。他的论证公认在“我需要 X”到“他人也应尊重每个人的 X”这一步上有争议。审查 §3.1 提出一个研究假说：一元关系本体下，评价者自身的评价与延续形成于并依存于与他者的关系，阻断这一步的自我边界并不是给定的。若这条路走通，G0 可以降为接近“构成我之评价的那些生成关系的延续”，所支持的也正是 §2.2 中的更新型形成。这是待证目标（`universal-practical-warrant`，open），不是成果。
 
-**2026-10-09 部分完成，经独立审查收窄**（[记录](../results/records/self-good-reachable-g0.md)，[论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md)，[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)）。
+**2026-10-09 部分完成，经独立审查收窄**（[记录](../results/records/self-good-reachable-g0.md)，[论证](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md)，[审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)）。
 
 起点改为评价者自身的自我之善 S0：它自己的生及继续生成对它有提供理由的意义。
 - **第一步。** S0 加上不受限（跨越自他）的单调性，及于至少同样相连的他者。不受限单调性等价于随附性、剖面单调估值与 BI；BI 有争议。只承认“我的”的对手，只有在承认“连接程度就是完整根据”时才严格不一致。
@@ -112,7 +112,7 @@ Under the same commitments, human instructions, institutional aims and AI goals 
 | [ProtectionPriorityRival](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) | 在一个构造情境中：J2 相对 C 的独立性（G0 不约束排序）；自然数评分都交换；有界评分恰好表示 J2 | 把 J2 与有界敏感性对手分开；其他情境；基本分类 |
 | [AlignmentDirection](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean)、[PracticalJudgment](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean) | 案例中的判断确由所述前提推出；交叉基本损失不排序 | 前提正确；部署可靠 |
 
-Lean verifies inference, premise footprint, descriptive dynamical distinctions and independence. It cannot verify the axiom, and the dynamical theorems are sign-neutral by construction: that their formal readings capture 生生 is a reading and correspondence question. The README evidence lines state these roles rather than counts alone. An [independent review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md) of the two new modules and this chapter accepted them with corrections, which have been applied.
+Lean verifies inference, premise footprint, descriptive dynamical distinctions and independence. It cannot verify the axiom, and the dynamical theorems are sign-neutral by construction: that their formal readings capture 生生 is a reading and correspondence question. The README evidence lines state these roles rather than counts alone. An [independent review](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md) of the two new modules and this chapter accepted them with corrections, which have been applied.
 
 ## 4. 什么会修订 G0 / What would revise G0
 

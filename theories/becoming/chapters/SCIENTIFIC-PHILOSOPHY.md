@@ -99,11 +99,11 @@ cN(t)\le B_0+P(t).
 
 Unbounded inquiry under these premises requires unbounded cumulative provision. The implication depends on the cost and accounting law: a durable record need not be rewritten constantly, and costs approaching zero can have finite total. The [conditional-universality study](../history/CONDITIONAL-UNIVERSALITY.md) gives broader support laws and their explicit exceptions.
 
-These are conditions of performing inquiry. They do not make the surviving belief true. The preserved [counterexample](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INVARIANCE-AND-PRIOR-ART.md#6-what-follows-for-truth-reasonableness-and-universality) gives two identically maintained machines with different unread propositions, one true and one false. Their persistence cannot adjudicate the propositions.
+These are conditions of performing inquiry. They do not make the surviving belief true. The preserved [counterexample](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INVARIANCE-AND-PRIOR-ART.md#6-what-follows-for-truth-reasonableness-and-universality) gives two identically maintained machines with different unread propositions, one true and one false. Their persistence cannot adjudicate the propositions.
 
 ## 4. What philosophical comparison changes
 
-The [primary-source dossier](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md) examines Peirce, Popper, Kuhn, Quine, van Fraassen, Longino and Lakatos. It records inspected passages and access limits. The following are our comparative inferences, not claims that the authors endorsed the generative programme.
+The [primary-source dossier](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md) examines Peirce, Popper, Kuhn, Quine, van Fraassen, Longino and Lakatos. It records inspected passages and access limits. The following are our comparative inferences, not claims that the authors endorsed the generative programme.
 
 | Position | Connection to this foundation | Constraint on our interpretation |
 |---|---|---|
@@ -131,7 +131,7 @@ Our formation and recording models already distinguish paying for observations f
 
 ## 6. What the conjecture rules out—and what it leaves open
 
-The [counterexample review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md) preserves twelve cases. The resulting boundaries are substantive:
+The [counterexample review](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md) preserves twelve cases. The resulting boundaries are substantive:
 
 - A successful evidence-producing episode need not learn, repair itself or reproduce. Its wider formation history is a further question.
 - A long-running laboratory can rely on external support. Changing the boundary cannot justify inventing an unobserved renewal loop.

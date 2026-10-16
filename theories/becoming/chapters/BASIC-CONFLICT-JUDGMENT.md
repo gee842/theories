@@ -2,11 +2,11 @@
 
 **交叉情形的新接续 / Crossed-case continuation，2026-10-08。** [局部比较与新机会](#crossed-claims-and-new-opportunities)提出 LR 明确承诺及新共同保护的机会接续；8项新定理／23项审计，独立反审通过。/ LR remains a contestable normative addition; the checked ticket transfer does not prove it or calibrate a universal loss boundary.
 
-**有限合并与情境 / Aggregation and context，2026-10-08。** [新理论](CHOICE-AND-GENERATIVE-CONTEXT.md)将抵偿限制与理由删除分开；最强层过滤可在原方案新增基本保护后翻转，局部胜出与共同增加／联合实施也不能任意拼接。[论证、反审与实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)含6项新 Lean 定理／15项空依赖审计。/ The scoped correction preserves living grounds; it does not establish unrestricted aggregation or a complete choice rule. Crossed losses and fair chances remain the next substantive connection. 既有 LC 已完成同向数量／程度比较；本接续检验其后仍待辩护的选择规则，不重开 BC1、BC2 或 LC 的完成范围。 / LC’s completed aligned comparison is reused; older next-step notices retain their historical scope.
+**有限合并与情境 / Aggregation and context，2026-10-08。** [新理论](CHOICE-AND-GENERATIVE-CONTEXT.md)将抵偿限制与理由删除分开；最强层过滤可在原方案新增基本保护后翻转，局部胜出与共同增加／联合实施也不能任意拼接。[论证、反审与实查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md)含6项新 Lean 定理／15项空依赖审计。/ The scoped correction preserves living grounds; it does not establish unrestricted aggregation or a complete choice rule. Crossed losses and fair chances remain the next substantive connection. 既有 LC 已完成同向数量／程度比较；本接续检验其后仍待辩护的选择规则，不重开 BC1、BC2 或 LC 的完成范围。 / LC’s completed aligned comparison is reused; older next-step notices retain their historical scope.
 
 **联合比较接续 / Joint-comparison continuation，2026-10-08。** [新增部分](#joint-number-and-gravity)接通数量与程度的有限比较理由及两层数学诊断；同向联合比较现已完成，交叉情形仍开放；14项新定理／23项审计，与 §§1–14 原有哲学候选的完成范围分列。/ The aligned joint comparison is completed; crossed cases remain open. The new LC result retains actual units, joint dependencies and fair-chance limits; it does not convert strict diagnostic improvement into decisive allocation.
 
-2026-10-08。AI 撰写，继续 Ren 要求以理论为重心的[研究](../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md)。沿[非二元方法](NONDUAL-METHOD.md)及已授权的 G0/J 公理路线，接续[后天基本条件](../history/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)。[研究整合、原典比较及作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-CONFLICT-INTEGRATION.md)说明新承诺和边界。无新数学定理、经验研究或独立验收。
+2026-10-08。AI 撰写，继续 Ren 要求以理论为重心的[研究](../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md)。沿[非二元方法](NONDUAL-METHOD.md)及已授权的 G0/J 公理路线，接续[后天基本条件](../history/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)。[研究整合、原典比较及作者反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BASIC-CONFLICT-INTEGRATION.md)说明新承诺和边界。无新数学定理、经验研究或独立验收。
 
 **本章主张：当真实基本损失在相关方面同等，救助效果可靠，权限、负担及已有承担没有造成优先差异时，保全更多实际生活，可以构成决定性的比较理由。这个有范围的同等救助原则，是对 G0/J 的新增规范展开；它不由“整体”或人数算术自动推出，也不允许用较多轻微收益抵偿一处基本剥夺。**
 
@@ -99,7 +99,7 @@ The constructed rescue history yields a determinate judgment only through the ne
 
 第三，**某个现行提案连许可根据也不足**：手段越权、隐瞒基本损伤或把全部负担推给被排除的位置，不能靠“反正无法兼顾”取得豁免。若没有完全合格的方案，进入已有有范围的紧急冲突处理，并公开保留不能满足的要求；不可比不是任意许可。
 
-这些区别在现有 J4 中已有基础。本章的新增贡献，是在其中加入一项经过对手检验的实质优先，并明确它与机会、公平和原有保护原则之间的关系。决定得到许可，仍不使真实损失消失；原有[公平分配后的未满足理由](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md)继续适用。
+这些区别在现有 J4 中已有基础。本章的新增贡献，是在其中加入一项经过对手检验的实质优先，并明确它与机会、公平和原有保护原则之间的关系。决定得到许可，仍不使真实损失消失；原有[公平分配后的未满足理由](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PATIENT-GROUND-AFTER-FAIR-ALLOCATION.md)继续适用。
 
 The result distinguishes justified substantive priority, legitimate procedural selection without a complete ranking, and proposals lacking adequate permission. These categories reuse J4. The new contribution is BC1's explicit comparative content and its contested relation to fair chances. Neither a selected plan nor a fair procedure erases the actual unfulfilled living ground.
 
@@ -119,13 +119,13 @@ Whole appraisal can compare the extent of equivalent protection while rejecting 
 
 ## 9. 严重程度属于怎样的关系 / What makes a basic loss more serious
 
-**2026-10-08 接续。** 本轮的[论证、原典评估与作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-LOSS-SEVERITY-INTEGRATION.md)说明 BC2 的一对一范围：所能避免的实际毁损不同，可以产生偏向一方的比较理由，但该理由不独自决定全部分配。这里的严重程度从生活受损及其可达接续中说明；不是从一个预设的“正常人”能力清单减去若干项目。
+**2026-10-08 接续。** 本轮的[论证、原典评估与作者反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BASIC-LOSS-SEVERITY-INTEGRATION.md)说明 BC2 的一对一范围：所能避免的实际毁损不同，可以产生偏向一方的比较理由，但该理由不独自决定全部分配。这里的严重程度从生活受损及其可达接续中说明；不是从一个预设的“正常人”能力清单减去若干项目。
 
 共同生活形成表达、照护、行动及参与的具体方式。支持破坏怎样改变这些生活，支持恢复又实际带回什么，才是比较的内容。同样一种功能变化，在已有替代通路和完全隔绝时，可能具有不同的损伤意义。反过来，暂时没有人能够修复，并不使损失变轻。**缺乏治疗不等于缺乏照护理由；当前不能避免的损失也仍在整体判断内。**
 
 至少应分别说明三件事：已经处于怎样的困境；本次方案能避免或减轻怎样的损失；何时行动才仍能实现这种保护。它们共同属于一段历史，却不能互相代替。境况最差者未必是本次可帮助最多者；帮助最多也没有自动取消其余人的既有权利。更早关闭的有效行动窗口说明时间安排，不能独自证明损失更严重。若及时先后实施便能兼顾，原先的“只能选一处”就需要改写。
 
-实际损伤的深度、持续、恢复和支持依存具有分量，因为它们说明生活怎样被阻断，而不是因为这些词天然携带固定权重。已有[损失比较研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md)完成同一实际生活上的减损传递；本轮新增的问题是：何时可以据此类损伤差异，比较分别落在不同生活上的保护。
+实际损伤的深度、持续、恢复和支持依存具有分量，因为它们说明生活怎样被阻断，而不是因为这些词天然携带固定权重。已有[损失比较研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md)完成同一实际生活上的减损传递；本轮新增的问题是：何时可以据此类损伤差异，比较分别落在不同生活上的保护。
 
 **Gravity concerns the impairment of actual living and its reachable continuations.** Baseline deprivation, avoidable loss and the window for effective action must be distinguished within that history. Lack of a cure does not cancel grounds for care. Existing loss-transport results already cover matched reductions for the same living; they do not by themselves establish interpersonal priority. This continuation addresses that additional connection.
 
@@ -137,7 +137,7 @@ Whole appraisal can compare the extent of equivalent protection while rejecting 
 
 这项承诺跨越了两处不可相互代受的生活，因此**不是同一对象减损的旧定理，也不是由 G0 单独推出的结论**。G0 给出关切实际生活的方向；BC2 进一步承诺：在这类可比较的一对一保护中，可避免的毁损程度构成回应的比较理由。机会平等是否应限制这种优先仍是规范争议，不能假称已经由“其他条件相当”消除。
 
-其正面根据是：若两边地位相同，共同支持对基本生活的关切就不能只停在承认两边都有要求。在较深毁损能够可靠避免时，仍以类别相同为由完全抹平程度差异，会让同样被承认的关切对实际后果失去一部分作用。本候选因此承认偏向较深实际保护的理由。起草时曾进一步主张由此确定地优先分配；吸收[并行反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md)并核读其指出的原典后，本轮撤回这一步。说明差异有分量，尚未说明它足以取消另一方的全部机会。只给“明显”差异一个名称，也不能替代这一论证。
+其正面根据是：若两边地位相同，共同支持对基本生活的关切就不能只停在承认两边都有要求。在较深毁损能够可靠避免时，仍以类别相同为由完全抹平程度差异，会让同样被承认的关切对实际后果失去一部分作用。本候选因此承认偏向较深实际保护的理由。起草时曾进一步主张由此确定地优先分配；吸收[并行反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md)并核读其指出的原典后，本轮撤回这一步。说明差异有分量，尚未说明它足以取消另一方的全部机会。只给“明显”差异一个名称，也不能替代这一论证。
 
 **BC2 supplies a pro tanto reason to prevent a clearly graver avoidable basic loss in a narrowly comparable one-to-one allocation.** It requires reliable sufficient protection, independent permissions, comparable burdens and no further priority grounded in entitlements, prior disadvantage or undertakings. The comparison must preserve all relevant dimensions; crossed profiles remain unresolved. G0 motivates concern, while BC2 supplies additional comparative force. This round withdraws its draft inference to deterministic allocation after counterreview and primary-source checking; fair chances require a separate assessment. The principle neither ranks lives nor claims derivation from the existing same-bearer loss theorem.
 
@@ -182,7 +182,7 @@ The primary comparison motivates a separate burden: establishing gravity does no
 
 下一项中心问题是：**严重程度与人数同时变化时，怎样形成可辩护的共同选择，并在实际可行方案改变时保持理由的一致交代。** 不能先按两两直觉给出答案，再默认它们已经组成统一规则；也不能仅靠改名方案把不一致消去。须说明变化的是实际损失、可行支持、比较理由还是只有描述，并同时保留全部受影响生活。
 
-本轮完成 BC2 的严重度说明、具体理由判断与作者反审，并吸收并行研究的实质批评，无新数学定理或经验验证。更一般的匹配与形式诊断由[并行研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROTOCOL.md)推进；本节不预先认证其完成或另设一个竞争的 BC2。旧 `PracticalJudgment.Better` 和已有 Lean 回执保持其原范围；统一规则若提出新的数学性质，须另行明确前提并实际通过 Lean 检查。BC1／BC2 的实质根据也不会因编码成功而自动得到证明。
+本轮完成 BC2 的严重度说明、具体理由判断与作者反审，并吸收并行研究的实质批评，无新数学定理或经验验证。更一般的匹配与形式诊断由[并行研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-PROTOCOL.md)推进；本节不预先认证其完成或另设一个竞争的 BC2。旧 `PracticalJudgment.Better` 和已有 Lean 回执保持其原范围；统一规则若提出新的数学性质，须另行明确前提并实际通过 Lean 检查。BC1／BC2 的实质根据也不会因编码成功而自动得到证明。
 
 The completed contribution is a defended account of gravity within BC2, a determinate pro tanto reason in the constructed case, and substantive counterreview. The concurrent matching study retains ownership of its broader candidate and formal checks. Joint variation in gravity and numbers, responsiveness to changing feasible alternatives, uncertainty and executable integration remain open. No new theorem, empirical validation or independent acceptance is claimed. Existing formal results keep their original hypotheses and reach.
 
@@ -190,7 +190,7 @@ The completed contribution is a defended account of gravity within BC2, a determ
 
 ## 数量与程度共同变化的比较 / Joint number and gravity comparison
 
-2026-10-08。[联合损失比较研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md)接续 BC1 与当前 BC2：当受影响范围与严重程度同时变化，已有的两种理由怎样共同支持方向？本轮提出 **LC，联合损失比较理由**，并给出14项新 Lean 定理／23项声明审计；原30项实践定理／46项审计仅作继承，另有两项实查应用例不计新定理。[独立评审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md)与[原典范围](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-SOURCES.md)分别说明哲学根据和检验限制。
+2026-10-08。[联合损失比较研究](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md)接续 BC1 与当前 BC2：当受影响范围与严重程度同时变化，已有的两种理由怎样共同支持方向？本轮提出 **LC，联合损失比较理由**，并给出14项新 Lean 定理／23项声明审计；原30项实践定理／46项审计仅作继承，另有两项实查应用例不计新定理。[独立评审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md)与[原典范围](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNEQUAL-BASIC-LOSSES-SOURCES.md)分别说明哲学根据和检验限制。
 
 **LC 的公开承诺。** 若完整相关历史中的实际损失没有重复，甲的每项基本损失能与乙一项至少同样严重的不同损失作有根据的比较，且乙还有额外损失或某匹配确有减轻，那么这些减损可以共同构成支持甲的理由。它不是 G0 单独的演绎，也不是将别处改善赔给受损者；共同支承、损失集中、权限、先行要求及机会不能被匹配抹掉。理由是否足以决定分配，还须另行论证。
 
@@ -224,7 +224,7 @@ The finite rational-ticket construction preserves any already satisfied individu
 
 **排除理由仍须指向实际回应。** 一个要求在直接竞争中应为较强要求退让，不自动证明：当最终选择另一方案、较强要求也未满足时，它仍须被置零。新增的具体过滤诊断检验这条推论；情境确可改变理由，但须说明改变了什么。这继承已完成的理由保留，并不禁止所有未选要求影响菜单。
 
-[实际证明与回执](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md)记录 **8 项新 Lean 定理／23 项声明审计**，继承实践30项／46项分列；一项实查应用例不计新定理。[独立反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md)已接受修订后的候选与形式产物；其形式核验为源文件／回执审计，不另称重跑编译。[原典范围](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md)另列，没有新经验验证。
+[实际证明与回执](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CROSSED-CLAIMS-PROOF.md)记录 **8 项新 Lean 定理／23 项声明审计**，继承实践30项／46项分列；一项实查应用例不计新定理。[独立反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CROSSED-CLAIMS-REVIEW.md)已接受修订后的候选与形式产物；其形式核验为源文件／回执审计，不另称重跑编译。[原典范围](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CROSSED-CLAIMS-SOURCES.md)另列，没有新经验验证。
 
 Completed at this scope: a defended local comparison candidate, a conditional improvement through newly feasible joint protection, and a specific unsatisfied-anchor control. Further work must justify actual LR boundaries and opportunity or aggregation principles beyond the nearby cases, including real burdens and risks. This is neither a complete universal ordering nor an axiom-free grounding result.
 
@@ -300,7 +300,7 @@ This completes the theoretical method and author counterreview for decomposition
 
 ## 初始机会的根据 / Grounding initial chances
 
-2026-10-08。[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md)推进不等基本请求对共同分配权限的约束。沿 G0/J 公理路线，继承 BC1、BC2、LC、LR、联合风险与分配历史的完成结果；不因初始份额未定就重开这些成果。
+2026-10-08。[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-GROUNDING-INTEGRATION.md)推进不等基本请求对共同分配权限的约束。沿 G0/J 公理路线，继承 BC1、BC2、LC、LR、联合风险与分配历史的完成结果；不因初始份额未定就重开这些成果。
 
 **CP，初始进入承诺。** 在有限的共同基本救助中，若真实请求仍待回应，没有充分根据将它排除，而有效、及时、符合独立约束的共同机会安排可行，该请求应得到真实正获救机会。这是明确新增的规范候选，不是 G0 的无附加前提推论，也不等于每项基本请求在所有情境都应有票。
 
@@ -310,9 +310,9 @@ This completes the theoretical method and author counterreview for decomposition
 
 The strongest rival recognizes every loss and residual reason but permits direct choice of an independently permissible undominated response. CP disputes that scope of allocative discretion. It does not prove the rival inconsistent or every positive lottery fair. Existing decisive priorities, permissions, timely inquiry and real procedural burdens remain relevant; procedural admission is not compensation for actual loss.
 
-**正概率不能代替充分回应。** [4 项新 Lean 定理／10 项逐声明审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md)只检验一个待审实现：两条路线各留正自然数票，再最大化预期保护人数。人数不是不等损失的伦理效用。在容许任意正票对的域内，不断把 (a,b) 改成 (2a+b,b) 可提高该目标而把 B 的正机会减半，因此没有最大解；固定总票数 N≥2 时，唯一最大方案为 (N−1,1)。技术分辨率给出的 1/N 没有因此取得公平根据。
+**正概率不能代替充分回应。** [4 项新 Lean 定理／10 项逐声明审计](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-GROUNDING-PROOF.md)只检验一个待审实现：两条路线各留正自然数票，再最大化预期保护人数。人数不是不等损失的伦理效用。在容许任意正票对的域内，不断把 (a,b) 改成 (2a+b,b) 可提高该目标而把 B 的正机会减半，因此没有最大解；固定总票数 N≥2 时，唯一最大方案为 (N−1,1)。技术分辨率给出的 1/N 没有因此取得公平根据。
 
-This implementation diagnostic does not refute CP or establish a justified chance floor. It imports only Std, with no inherited project recompilation; 11 retained artifacts bind the actual Lean check. [Independent counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md) accepts the declared philosophical and formal scope; its source/receipt audit is not a second compiler execution. [Primary reading limits](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md) are explicit.
+This implementation diagnostic does not refute CP or establish a justified chance floor. It imports only Std, with no inherited project recompilation; 11 retained artifacts bind the actual Lean check. [Independent counterreview](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-GROUNDING-REVIEW.md) accepts the declared philosophical and formal scope; its source/receipt audit is not a second compiler execution. [Primary reading limits](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-GROUNDING-SOURCES.md) are explicit.
 
 完成范围是：初始不等机会的一项有辩护候选及正数优化捷径的精确诊断。剩余连接是怎样以实际需要、共同支承及有效承担辩护足够的份额或区间，并厘清 CP 与合法直接裁量的边界；未取得新的比较根据时保留未决。核心已有共同规范起点及实践连接，却尚未唯一决定所有冲突程序。规范若有跨人、机构与 AI 的适用性，也不意味着任何智能必然服从。
 
@@ -321,7 +321,7 @@ This implementation diagnostic does not refute CP or establish a justified chanc
 
 ## 接管已有支持与机会充分性 / Taking over existing support
 
-2026-10-08。[接续整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md)从 CP 的正机会要求继续，找到一类有历史内容的限制：**共同接管若要算作履行仍有效的承担，必须实际接续该承担保护的内容；留下任意正数并不足以说明任务完成。** 这是已有 J3 的具体应用，不新增一个所有旧概率永远不得下降的公理。
+2026-10-08。[接续整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md)从 CP 的正机会要求继续，找到一类有历史内容的限制：**共同接管若要算作履行仍有效的承担，必须实际接续该承担保护的内容；留下任意正数并不足以说明任务完成。** 这是已有 J3 的具体应用，不新增一个所有旧概率永远不得下降的公理。
 
 例如，已有正当分工要求在本次有限窗口内维持正在使用的表达、自护支持，条件允许时继续接续。新统一调度要撤去该通道，却只把原受支持位置放入候选名单；候选资格没有独自完成这项工作。它必须实际承接仍须维持的内容，或者说明何种有效释放、修订或更充分理由改变了要求。这并不保证救助必成，也不要求无限服务。
 
@@ -331,7 +331,7 @@ The strongest rival allows legitimate reform to reduce a previously available ch
 
 原通道若可共同继续，不接管仍是可选方案；不能先移除它来制造新彩票的必要性。各方最佳但彼此互斥的反事实不能拼成一个共同基线。自然失效、真实修订、有效释放及策略性制造依赖须分别判断，不能把责任自动冻结，也不能靠取得控制自动解除。
 
-[既有证明审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-PROOF-AUDIT.md)精确复用一般实践、同票保护、安顿历史、联合风险和有界修订；本轮 **0 项新定理、0 次重编**。确定性需求覆盖不是任意概率履行的证明。[独立反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-REVIEW.md)及[原典范围](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-SOURCES.md)记录这一应用的实质限制。
+[既有证明审计](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-PROOF-AUDIT.md)精确复用一般实践、同票保护、安顿历史、联合风险和有界修订；本轮 **0 项新定理、0 次重编**。确定性需求覆盖不是任意概率履行的证明。[独立反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-REVIEW.md)及[原典范围](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-SOURCES.md)记录这一应用的实质限制。
 
 The completed connection supplies content for some takeover constraints without a universal severity exchange rate. It does not determine adequate shares where no such protected undertaking exists, or make every arrangement meeting those constraints fully fair. For universal alignment, the relevant continuity is what justified support remains due through a change of control or implementation; intelligence and a new objective do not themselves settle its discharge. The broader history-free comparison of unequal chances remains open.
 
@@ -340,7 +340,7 @@ The completed connection supplies content for some takeover constraints without 
 
 ## 具体履行到概率限制：Lean 接续 / Checked continuation-to-chance bridge
 
-2026-10-08后续。依[Ren 的实查要求](../../../sources/15-codex-theory-conversations/2026-10-08-chance-adequacy-lean-continuation.md)，[新形式连接](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md#checked-support-to-chance-bridge)已通过 Lean 4.29.1：**8项新定理／14项声明依赖审计**。上一节的零新增证明是先前哲学轮的历史范围；这次补上其未完成的实际支持到概率约束。
+2026-10-08后续。依[Ren 的实查要求](../../../sources/15-codex-theory-conversations/2026-10-08-chance-adequacy-lean-continuation.md)，[新形式连接](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md#checked-support-to-chance-bridge)已通过 Lean 4.29.1：**8项新定理／14项声明依赖审计**。上一节的零新增证明是先前哲学轮的历史范围；这次补上其未完成的实际支持到概率约束。
 
 有限模型先指定需求与旧支持在每个有根据配对的情形是否成立，目标是两者同时成立；新支持逐个覆盖目标，才满足这里的强维护任务。履行不以概率不下降定义。由此导出：在同一非负自然数权重法则下，目标事件质量不超过新保护质量；共同总质量为正时，这给出有内容的概率下界。它针对有需求且旧支持仍能工作的部分，不是无条件冻结所有旧成功率。
 
@@ -348,9 +348,9 @@ The completed connection supplies content for some takeover constraints without 
 
 The positive construction takes the union of the protected target and a candidate event; it preserves both and strictly increases target mass when a genuinely added represented event has positive weight. This proves a protection-profile relation, not physical feasibility or the ethical value of every added event. Actual compatible support, permission, timely operation and warranted new need remain necessary application checks; a router may not assume foreknowledge of future success.
 
-[对应说明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md)保留旧新方案的真实配对、完整范围、反馈、共同负担及零权情形的限度。权重描述情形质量，不给生命标价。任务的正当性、解除与修订仍沿G0/J3说明；概率数字或成功编译不能代替它们。
+[对应说明](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md)保留旧新方案的真实配对、完整范围、反馈、共同负担及零权情形的限度。权重描述情形质量，不给生命标价。任务的正当性、解除与修订仍沿G0/J3说明；概率数字或成功编译不能代替它们。
 
-[证明与回执](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-PROOF.md)包含全部签名、14项依赖和11项保留产物：6项空依赖、2项仅propext、6项propext与Quot.sound，无自设公理。Std-only，无继承项目重编，两个附加应用例不计新定理。[独立形式反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-FORMAL-REVIEW.md)核验源码、检查器、签名和回执，未另称第二次编译。
+[证明与回执](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-PROOF.md)包含全部签名、14项依赖和11项保留产物：6项空依赖、2项仅propext、6项propext与Quot.sound，无自设公理。Std-only，无继承项目重编，两个附加应用例不计新定理。[独立形式反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-FORMAL-REVIEW.md)核验源码、检查器、签名和回执，未另称第二次编译。
 
 This closes the conditional mathematical bridge for a specified pointwise undertaking. General adequate shares without such protected support, full ethical warrant and inevitable intelligent compliance remain separate open claims. The formal result is reusable through changes of implementation when its task content and correspondence remain warranted.
 
@@ -358,7 +358,7 @@ This closes the conditional mathematical bridge for a specified pointwise undert
 
 ## 维护规格已有实际执行连接 / Executable continuation of support
 
-2026-10-08后续。[新组合、对应与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md)复用已有有限规划和事件质量定理，补上指定任务的执行连接：**实际查询与回应 → 明确的保护效果 → 逐情形履行 → 有限机会下界**。Lean 4.29.1 实际通过4项新定理／24项声明审计；另17项导入定理／31项导入审计分列。
+2026-10-08后续。[新组合、对应与反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md)复用已有有限规划和事件质量定理，补上指定任务的执行连接：**实际查询与回应 → 明确的保护效果 → 逐情形履行 → 有限机会下界**。Lean 4.29.1 实际通过4项新定理／24项声明审计；另17项导入定理／31项导入审计分列。
 
 本例有两种当前线路模式，同一需求在两种模式均成立；旧固定左路只保护其中一种。在一单位预算下，盲左路仍履行旧任务，却不能保证两种模式都有保护。二单位支持两种实现：付费读当前模式后选择单路，或实际并行两路。两者都在执行中扣费，并将等质量情形的保护量从1增加到2；并行例也说明取得精细观察不是唯一办法。
 
@@ -366,7 +366,7 @@ The strengthened extension must not be silently treated as the old undertaking. 
 
 这里检查有限窗口内的一次保护交付，**不证明查询全过程不断供**。读数须真实及时，当前模式须在读用期间保持对应；查询失败的Option结果不等于完整失败账本。泛用定理还明确要求真实情形覆盖和任务效果对应，规划器不会自行认证它们。源代码没有添加伦理公理；G0/J根据及其适用性仍各自明示。
 
-[证明与实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md)和[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md)保存通用组合、两个有资助的执行见证和预算不足的范围。新模块23项空依赖，1项仅propext与Quot.sound；23项产物及两个附加检查例保留。
+[证明与实查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md)和[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md)保存通用组合、两个有资助的执行见证和预算不足的范围。新模块23项空依赖，1项仅propext与Quot.sound；23项产物及两个附加检查例保留。
 
 This local composition is complete at its stated scope. The remaining application connection is warranted joint renewal of observation, resources, permissions and the task's required history through change, reusing existing correction and continuation results. It does not establish universal compliance, adequate initial chance shares or complete universal meta-ethics.
 
@@ -374,12 +374,12 @@ This local composition is complete at its stated scope. The remaining applicatio
 
 ## 接管不能通过缩小目标自报履行 / A changed capability is not completed maintenance
 
-2026-10-08后续。[本轮对应纠错、论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md)新增4项Lean定理／13项审计：接管实际撤掉原通道后，若按当前受损能力重算维护目标，可以得到通过的空目标，却仍未兑现原保护。需求未消失，缺少的是交付。这纠正旧对应说明的歧义，不反驳原ChanceAdequacy定理，也不增加一条新的J3。
+2026-10-08后续。[本轮对应纠错、论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md)新增4项Lean定理／13项审计：接管实际撤掉原通道后，若按当前受损能力重算维护目标，可以得到通过的空目标，却仍未兑现原保护。需求未消失，缺少的是交付。这纠正旧对应说明的歧义，不反驳原ChanceAdequacy定理，也不增加一条新的J3。
 
 正确接续允许真正完成：原目标的每个相关情形，应由同一任务的真实已完成交付或修改后仍待兑现的内容承接；再由真实记录对应和当前履行取得原任务的履行及机会质量界。两个正例实际执行原单路或并行交付，再关闭旧线路，保留完成记录。任务可以结束，旧设备不因此必须永存。
 
 Current feasibility, fulfillment of the specified undertaking and justified revision or discharge are different judgments within the same history. A legitimate emergency change may leave an original result unfulfilled without making the whole action wrong. Equally, removing capability does not itself prove completion or create permission to withdraw. The task's validity, scope and remaining grounds must be assessed rather than assumed from an old numerical baseline.
 
-本轮质量统计描述整段一次任务的交付事件，不表示退役后仍有持续能力。没有新长期继任设施、连续无断供或实际截止保证；自然失效、真实疗愈、有效拒绝和合理解除均不能由一个布尔标签代替。已有21项导入定理／55项审计另计，29项产物及三个附加例保留。[证明记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md)列明条件与依赖。
+本轮质量统计描述整段一次任务的交付事件，不表示退役后仍有持续能力。没有新长期继任设施、连续无断供或实际截止保证；自然失效、真实疗愈、有效拒绝和合理解除均不能由一个布尔标签代替。已有21项导入定理／55项审计另计，29项产物及三个附加例保留。[证明记录](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MAINTENANCE-BASELINE-PROOF.md)列明条件与依赖。
 
 This task-specific diagnostic closes locally. Existing evidence renewal, joint execution, versioned handoff and revocation mechanisms remain completed resources. Real-world correspondence still needs evidence. The next central normative question returns to adequate chances and justified discretion when no protected prior undertaking supplies a baseline; neither a new controller nor an arbitrary weight settles it.

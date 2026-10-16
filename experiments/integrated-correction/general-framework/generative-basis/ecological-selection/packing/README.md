@@ -16,4 +16,4 @@ python plot_packing.py
 - [Diameter reading edition](diameter-reading.csv) and [neighborhood reading edition](voronoi-reading.csv) are derived, source-indexed records. Original bytes remain in [sources](../../../../../../sources/evolutionary-selection/day-2022/README.md).
 - [Figure](packing-correspondence.png) shows this analysis, not a redrawing or verified replication of the published Figure 5.
 
-The [integration and author self-review](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md) credit the conventional packing mechanism and preserve the unresolved links to fragment production, descendant growth, survival and supporting activity.
+The [integration and author self-review](../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md) credit the conventional packing mechanism and preserve the unresolved links to fragment production, descendant growth, survival and supporting activity.
