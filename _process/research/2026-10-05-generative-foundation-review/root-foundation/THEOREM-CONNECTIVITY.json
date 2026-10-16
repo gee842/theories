@@ -1,11 +1,11 @@
 {
- "commit": "73d2f2bd551a152418e6b5062b6668ed72638198",
+ "commit": "29a8556daa2d86b54e33b0e17937d211bc74cc6e",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261015T231055.702986Z",
+ "core_receipt_at_commit": "20261016T124157.989030Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
  "tracked_modules": 215,
- "constants": 29151,
- "spine_theorems": 7187,
+ "constants": 29213,
+ "spine_theorems": 7214,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -27,14 +27,14 @@
  },
  "classes": {
   "statement on both families": 145,
-  "statement on Process/Frame/Run/Trace": 1318,
+  "statement on Process/Frame/Run/Trace": 1324,
   "statement on World/Flow/Web": 2711,
   "proof through a base family": 127,
   "used by a theorem on the base": 1888,
-  "apart: own vocabulary": 914,
-  "apart: prelude-only statement": 84
+  "apart: own vocabulary": 929,
+  "apart: prelude-only statement": 90
  },
- "apart_used_by_nothing": 474,
+ "apart_used_by_nothing": 479,
  "statements_on_both_by_module": {
   "Becoming.Correspondence": 18,
   "Becoming.Relevance": 16,
@@ -61,8 +61,8 @@
  },
  "apart_by_module": {
   "Becoming.ReferencePlan": [
-   46,
-   58
+   47,
+   59
   ],
   "Becoming.Identification": [
    44,
@@ -119,6 +119,10 @@
   "Becoming.Sensitivity": [
    25,
    47
+  ],
+  "Becoming.Likeness": [
+   24,
+   156
   ],
   "Becoming.Diagonal": [
    22,
@@ -218,7 +222,7 @@
   ],
   "Becoming.Horizon": [
    7,
-   34
+   37
   ],
   "Becoming.Capture": [
    7,
@@ -251,10 +255,6 @@
   "Becoming.Readout": [
    5,
    22
-  ],
-  "Becoming.Likeness": [
-   5,
-   137
   ],
   "Becoming.Revision": [
    4,
@@ -359,6 +359,10 @@
   "Becoming.Joining": [
    1,
    71
+  ],
+  "Becoming.Courses": [
+   1,
+   89
   ],
   "Becoming.CompositionBridge": [
    1,
@@ -719,6 +723,9 @@
   "Becoming.Refutable.adheres_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.not_refutable_of_adheres": "statement on Process/Frame/Run/Trace",
   "Becoming.not_verifiable_of_adheres": "statement on Process/Frame/Run/Trace",
+  "Becoming.Adheres.closed": "statement on Process/Frame/Run/Trace",
+  "Becoming.refutable_adheres_iff": "statement on Process/Frame/Run/Trace",
+  "Becoming.refutable_adheres_of_em": "statement on Process/Frame/Run/Trace",
   "Becoming.adheres_passes": "statement on Process/Frame/Run/Trace",
   "Becoming.refutable_passes": "statement on Process/Frame/Run/Trace",
   "Becoming.false_below_or_true": "used by a theorem on the base",
@@ -2665,6 +2672,7 @@
   "Becoming.Spray.spray": "statement on World/Flow/Web",
   "Becoming.Flow.Dissipative.one_taking_not_recurring": "statement on World/Flow/Web",
   "Becoming.witnesses_not_dissipative": "statement on World/Flow/Web",
+  "Becoming.Sequences.recurs_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.pos_iff_lt": "used by a theorem on the base",
   "Becoming.exists_lt_of_total_lt": "used by a theorem on the base",
   "Becoming.rises_or_le": "used by a theorem on the base",
@@ -5066,6 +5074,7 @@
   "Becoming.ReferencePlan.propose_from_mismatch": "apart: own vocabulary",
   "Becoming.ReferencePlan.propose_without_mismatch": "apart: own vocabulary",
   "Becoming.ReferencePlan.checked_pair_correct": "apart: own vocabulary",
+  "Becoming.ReferencePlan.alike_iff_agreeOn": "apart: own vocabulary",
   "Becoming.ReferencePlan.added_keeps": "apart: own vocabulary",
   "Becoming.ReferencePlan.old_selections_remain": "apart: own vocabulary",
   "Becoming.ReferencePlan.choice_at_contact": "apart: own vocabulary",
@@ -5793,6 +5802,25 @@
   "Becoming.EitherNever.of_nowhereDecided": "apart: own vocabulary",
   "Becoming.NowhereDecided.of_em": "apart: own vocabulary",
   "Becoming.EitherThroughout.of_nowhereDecided": "apart: own vocabulary",
+  "Becoming.LLPO.succ_inj": "apart: prelude-only statement",
+  "Becoming.LLPO.succ_ne_zero": "apart: prelude-only statement",
+  "Becoming.LLPO.two_mul_ne_succ": "apart: prelude-only statement",
+  "Becoming.LLPO.two_mul_inj": "apart: prelude-only statement",
+  "Becoming.LLPO.even_or_odd": "apart: prelude-only statement",
+  "Becoming.LLPO.decided_true": "apart: own vocabulary",
+  "Becoming.LLPO.eq_false_of_not": "apart: prelude-only statement",
+  "Becoming.LLPO.of_lpo": "apart: own vocabulary",
+  "Becoming.LLPO.of_forDecided": "apart: own vocabulary",
+  "Becoming.LLPO.decidable": "apart: own vocabulary",
+  "Becoming.LLPO.FirstAt.decided": "apart: own vocabulary",
+  "Becoming.LLPO.FirstAt.unique": "apart: own vocabulary",
+  "Becoming.LLPO.FirstAt.of_holds": "apart: own vocabulary",
+  "Becoming.LLPO.Interleave.even": "apart: own vocabulary",
+  "Becoming.LLPO.Interleave.odd": "apart: own vocabulary",
+  "Becoming.LLPO.Interleave.decided": "apart: own vocabulary",
+  "Becoming.eitherNever_iff_llpoForDecided": "apart: own vocabulary",
+  "Becoming.eitherThroughout_iff_llpoForDecided": "apart: own vocabulary",
+  "Becoming.LLPO.of_eitherThroughout": "apart: own vocabulary",
   "Becoming.Decided.forall_in": "used by a theorem on the base",
   "Becoming.Decided.exists_not_in": "used by a theorem on the base",
   "Becoming.EitherThroughout.list": "used by a theorem on the base",
@@ -6370,6 +6398,7 @@
   "Becoming.Courses.pending_before_course": "statement on Process/Frame/Run/Trace",
   "Becoming.Courses.runs_reading_right_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Courses.runs_look_right_iff": "statement on Process/Frame/Run/Trace",
+  "Becoming.Courses.anyChange_eq_free": "statement on Process/Frame/Run/Trace",
   "Becoming.Courses.run_settles": "statement on Process/Frame/Run/Trace",
   "Becoming.Courses.runs_settle_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Courses.foldl_units": "used by a theorem on the base",
@@ -6430,6 +6459,8 @@
   "Becoming.Courses.coupling_course": "statement on Process/Frame/Run/Trace",
   "Becoming.Courses.extension_frontier_exists": "statement on Process/Frame/Run/Trace",
   "Becoming.Courses.extension_frontier_has_iff": "statement on Process/Frame/Run/Trace",
+  "Becoming.CrossSituational.distinct_iff": "apart: own vocabulary",
+  "Becoming.Parting.after_eq_onward": "statement on Process/Frame/Run/Trace",
   "Becoming.Parting.joinAt_before": "statement on Process/Frame/Run/Trace",
   "Becoming.Parting.joinAt_after": "statement on Process/Frame/Run/Trace",
   "Becoming.Parting.not_right_on_both": "statement on Process/Frame/Run/Trace",

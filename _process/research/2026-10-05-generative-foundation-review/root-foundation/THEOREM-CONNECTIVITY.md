@@ -134,3 +134,33 @@ python3 -B _process/research/2026-10-05-generative-foundation-review/root-founda
 - Components: 65, with 11 theorems outside the main one, unchanged. Two records still rest only on apart theorems: `selection-through-a-model-of-the-options` and `typicality-by-counting`.
 
 The extended-base and "before" columns are not written to the JSON: the script's base lists are unchanged. They are reproduced by [connectivity_bases.py](development/p130-frontier-on-base/connectivity_bases.py), which imports the measure, changes only its base lists (and, for "before", drops the six new modules' constants) and writes into a folder of its own. 扩展基与“之前”两列不写入 JSON，脚本的基不变；它们由该脚本复现，它导入测量、只改基的列表（“之前”另去掉六个新模块的常量），并写入自己的文件夹。
+
+## 7. 落地头上的重跑 / The rerun on the landing head
+
+2026-10-16。整合者在 `land-p130` 的 29a8556d 上重跑（P129 与 P130 都已合入；Lean 源与提交一致；核心回执 20261016T124157.989030Z；215 个被跟踪模块，29,213 个常量，7,214 条脊柱定理）。[JSON](THEOREM-CONNECTIVITY.json) 现为这次以原基所得的结果；扩展基一列由 [connectivity_bases.py](development/p130-frontier-on-base/connectivity_bases.py) 算出，不写入 JSON。
+
+2026-10-16. The integrator's rerun on 29a8556d of `land-p130`, with both P129 and P130 merged. The Lean sources match the commit; core receipt 20261016T124157.989030Z; 215 tracked modules, 29,213 constants, 7,214 spine theorems. The [JSON](THEOREM-CONNECTIVITY.json) now holds this run under the original base set. The extended-base column comes from [connectivity_bases.py](development/p130-frontier-on-base/connectivity_bases.py) and is not written to the JSON.
+
+| 类 / Class | 原基 / Original | 扩展 / Extended |
+|---|---:|---:|
+| 陈述用到两族 / Statement on both families | 145 | 154 |
+| 陈述用到过程族 / Statement on Process/Frame/Run/Trace | 1,324 | 1,493 |
+| 陈述用到世界族 / Statement on World/Flow/Web | 2,711 | 2,903 |
+| 证明经过某一族 / Proof through a family | 127 | 36 |
+| 被基础上的定理使用 / Used by a theorem on the base | 1,888 | 1,836 |
+| 独立：自身词汇 / Apart: own vocabulary | 929 | 720 |
+| 独立：只用前导库 / Apart: prelude-only statement | 90 | 72 |
+| **独立共计 / Apart, total** | **1,019** | **792** |
+| **定理共计 / Theorems** | **7,214** | **7,214** |
+
+**中文。**
+- 与 §6 的“之后”一列相比，独立定理多出 21 条（原基 998 → 1,019；扩展基 771 → 792）。它们都是 P129 新增的定理：LLPO 的 19 条辅助与等价定理，以及两条连接定理（`ReferencePlan.alike_iff_agreeOn`、`CrossSituational.distinct_iff`）。没有已有定理变为独立。这些陈述用的是自身词汇或只用前导库，不经过基。
+- 两族在定义上仍不相及。
+- 连通分量 65 个，主分量之外 11 条定理。
+- 只落在独立定理上的记录仍是 2 条：`selection-through-a-model-of-the-options` 与 `typicality-by-counting`。
+
+**English.**
+- Against §6's "after" column, there are 21 more apart theorems: 998 → 1,019 under the original base set, and 771 → 792 under the extended one. All 21 are new P129 theorems: 19 helpers and equivalences of LLPO, and two linking theorems (`ReferencePlan.alike_iff_agreeOn`, `CrossSituational.distinct_iff`). No existing theorem became apart. Their statements use their own vocabulary or only the prelude, and do not reach the base.
+- The families still do not reach each other by definition.
+- There are 65 components, with 11 theorems outside the main one.
+- Two records still rest only on apart theorems: `selection-through-a-model-of-the-options` and `typicality-by-counting`.
