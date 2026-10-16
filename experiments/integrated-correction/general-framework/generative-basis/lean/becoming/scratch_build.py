@@ -8,7 +8,8 @@ TREE holds the modules a session changed or added, at their package paths
 `GenerativeCore`, at TREE's top level). Every other module comes from this checkout.
 MODULE names the modules to build and audit; by default every module in TREE.
 
-The import closure is compiled in dependency order with the checker's command, toolchain
+The import closure is compiled in dependency order with the checker's Lean (`LEAN`, else
+`elan which lean` in the package folder, else elan's default path), toolchain
 and step keys (`check_becoming.step_key`), steps running concurrently as in the checker
 (`BECOMING_JOBS`). A step whose inputs match a step that passed is restored from the
 shared cache instead of run; a step that passes (exit 0, no error or warning) is stored
@@ -60,8 +61,8 @@ def main():
         index[name] = [path]
     order = cb.closure(index, targets)
     sources = {name: index[name][0].read_bytes() for name in order}
-    binary = Path.home() / ".elan/toolchains/leanprover--lean4---v4.29.1/bin/lean"
-    command = [str(Path.home() / ".elan/bin/lean"), "+" + cb.audit_support.TOOLCHAIN]
+    # The checker's Lean: `LEAN`, `elan which lean` in the package folder, or the default path.
+    command, binary, _ = cb.resolve_lean()
     context = [cb.audit_support.TOOLCHAIN, cb.audit_support.digest(binary.read_bytes())]
     keys = cb.module_keys(context, sources, order)
     build = tree / ".build"

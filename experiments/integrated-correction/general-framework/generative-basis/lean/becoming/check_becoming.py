@@ -14,7 +14,19 @@ that run). The constants Lean generates in the closure are audited as well: the 
 ones depending on an axiom are the injectivity lemmas of constructors with fields
 (`injEq`), on `propext`, which no source declaration uses; the receipt lists them.
 The bridge imports existing modules to show that their interfaces are the core's;
-nothing in the core imports it, and its declarations also have empty axiom reports.
+nothing in the core imports it, and its declarations also have empty axiom reports. The
+constants of the bridge modules themselves are audited the same way (their imports may use
+axioms; only the bridge's own constants count): empty, apart from generated `injEq` on `propext`.
+The declaration scanner reads every declaration outside comments and strings, at any
+indentation and with any modifiers; private declarations and unnamed instances, which cannot
+be audited by name, are listed in the receipt (`not_audited_by_name`) and, in the core closure
+and the bridge, covered by the environment audits. An inherited module is recorded with the
+passed receipts that map its name or path to its current sha256 (`inherited_receipts`).
+
+Lean is `LEAN` if set, else what `elan which lean` finds in this folder (its `lean-toolchain`
+names v4.29.1), else elan's default path; the version is asserted and the binary's sha256
+recorded and keyed. `BECOMING_OUT=<dir>` writes the run folder and the receipt under that
+directory and leaves the repository untouched; `BECOMING_LEAN_CACHE` moves the cache.
 Spine names that contain a word of exchange (cost, charge, credit and the like) are listed
 in the receipt as `market_names`, apart from a few scientific terms; they do not fail the run.
 
@@ -38,6 +50,7 @@ import json
 import os
 from pathlib import Path
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -1614,7 +1627,9 @@ SCOPE = (
 )
 
 
-# Every constant of the core closure, generated ones included, with the axioms it uses.
+# Every constant of the given modules, generated ones, private declarations and unnamed
+# instances included, with the axioms it uses: run once on the core closure and once on the
+# bridge modules (whose imports may use axioms; only the bridge modules' own constants count).
 ENVIRONMENT_AUDIT = """import Lean
 {imports}
 open Lean Elab Command
@@ -1829,16 +1844,107 @@ def held_in_main(files):
     return commit, held
 
 
-def passed_receipts():
+def passed_receipts(exclude=(RECEIPT, RETAINED)):
+    """The passed receipts under the Lean root, by path relative to it, parsed: a JSON object
+    whose `status` is "passed" or whose `passed` is true. `exclude` names the receipt files
+    and run folders left out: by default this checker's own."""
+    exclude = [Path(p).resolve() for p in exclude]
     receipts = []
     for path in LEAN_ROOT.rglob("*.json"):
-        if path == RECEIPT or RETAINED in path.parents:
+        resolved = path.resolve()
+        if any(resolved == p or p in resolved.parents for p in exclude):
             continue
-        relative = path.relative_to(LEAN_ROOT)
         text = path.read_text(errors="replace")
-        if '"passed"' in text:
-            receipts.append((str(relative), text))
+        if '"passed"' not in text:
+            continue
+        try:
+            data = json.loads(text)
+        except ValueError:
+            continue
+        if isinstance(data, dict) and (data.get("status") == "passed" or data.get("passed") is True):
+            receipts.append((str(path.relative_to(LEAN_ROOT)), data))
     return receipts
+
+
+# Keys under which a receipt records a source's bytes, and entry fields naming the source.
+HASH_FIELDS = ("source_sha256", "sha256")
+NAME_FIELDS = ("module", "name", "source", "path")
+
+
+def binds(data, name, path, digest):
+    """Whether a receipt maps this module to these bytes: a `source_sha256` (or `sha256`)
+    entry keyed by the module's name or path, under a key of sources or modules; or an entry
+    whose `source_sha256` (or `sha256`) is the digest and whose module, name, source or path
+    field names the module. Copies of files a run kept (`artifact_sha256`) do not count."""
+    relative = str(path.relative_to(LEAN_ROOT))
+
+    def names(value):
+        return isinstance(value, str) and (
+            value in (name, path.name, path.stem, relative) or value.endswith("/" + relative))
+
+    def hashed(value):
+        return value == digest or (isinstance(value, dict) and any(value.get(f) == digest for f in HASH_FIELDS))
+
+    def walk(value, under):
+        if isinstance(value, list):
+            return any(walk(item, under) for item in value)
+        if not isinstance(value, dict):
+            return False
+        if any(value.get(f) == digest for f in HASH_FIELDS) and any(names(value.get(f)) for f in NAME_FIELDS):
+            return True
+        keyed = under is not None and "artifact" not in under and ("source" in under or "module" in under)
+        for key, item in value.items():
+            if keyed and names(key) and hashed(item):
+                return True
+            if walk(item, key):
+                return True
+        return False
+
+    return walk(data, None)
+
+
+def receipts_for(name, path, digest, receipts):
+    """The passed receipts (from `passed_receipts`) that map this module to these bytes."""
+    return sorted(where for where, data in receipts if binds(data, name, path, digest))
+
+
+# The Lean binary: `LEAN` if set; else `elan which lean` run in this folder, whose
+# `lean-toolchain` names the toolchain; else elan's default toolchain path.
+DEFAULT_LEAN = Path.home() / ".elan/toolchains/leanprover--lean4---v4.29.1/bin/lean"
+
+
+def resolve_lean(folder=HERE, toolchain=None, default=DEFAULT_LEAN):
+    """The command that runs Lean, the binary it runs and how it was found. The binary's
+    sha256, not its path, enters the step keys, so each way finds the same cached steps."""
+    toolchain = toolchain or audit_support.TOOLCHAIN
+    given = os.environ.get("LEAN")
+    if given:
+        binary = Path(given).expanduser().resolve()
+        return [str(binary)], binary, "LEAN"
+    elan = shutil.which("elan") or str(Path.home() / ".elan/bin/elan")
+    try:
+        found = subprocess.run([elan, "which", "lean"], cwd=folder, text=True, timeout=120,
+                               stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+        binary = Path(found.stdout.strip()).resolve() if found.returncode == 0 and found.stdout.strip() else None
+        if binary and binary.is_file():
+            return [str(binary)], binary, "elan which lean"
+    except (OSError, subprocess.SubprocessError):
+        pass
+    return [str(Path.home() / ".elan/bin/lean"), "+" + toolchain], default, "default path"
+
+
+# `BECOMING_OUT=<dir>`: the run folder and the receipt go to that directory, not the repository.
+OUT = Path(os.environ["BECOMING_OUT"]).expanduser().resolve() if os.environ.get("BECOMING_OUT") else None
+
+
+def output_paths(receipt, retained):
+    """Where this run writes its receipt and run folders: the repository's, or under `BECOMING_OUT`."""
+    return (OUT / receipt.name, OUT / retained.name) if OUT else (receipt, retained)
+
+
+def shown(path):
+    """A run folder as the receipt names it: relative to this folder where inside it."""
+    return str(path.relative_to(HERE)) if HERE in path.parents else str(path)
 
 
 # Words of exchange in a declaration name (the list of tools/research/style.py, MARKET_EN, as
@@ -1870,13 +1976,19 @@ def market_names(registry):
             if item["name"] not in MARKET_ALLOWED and set(name_words(item["name"])) & MARKET_WORDS}
 
 
-def declarations(data):
+def scanned(data):
+    """The shared scanner's reading of a module (`declarations`, `private`, `unnamed_instances`)."""
     # A root module only imports and documents; it declares nothing.
     if not re.sub(r"^import .+$", "", audit_support.code_only(data.decode()), flags=re.M).strip():
-        return []
+        return {"declarations": [], "private": [], "unnamed_instances": []}
     # The inherited scanner accepts only Std/GenerativeCore imports; it reads a copy
     # with imports replaced. Compilation uses the unchanged bytes.
-    return audit_support.declarations(re.sub(r"^import .+$", "import Std", data.decode(), flags=re.M))
+    return audit_support.scan(re.sub(r"^import .+$", "import Std", data.decode(), flags=re.M))
+
+
+def declarations(data):
+    """The declarations of a module that are audited by name."""
+    return scanned(data)["declarations"]
 
 
 CONTROLS = """import Becoming.Bridge
@@ -1947,7 +2059,8 @@ example : ((Renewable.conditions.dependence.along Renewable.escalating).valuatio
 
 def main():
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S.%fZ")
-    retained = RETAINED / stamp
+    receipt_path, runs = output_paths(RECEIPT, RETAINED)
+    retained = runs / stamp
     retained.mkdir(parents=True, exist_ok=False)
     index = module_index()
     order = closure(index)
@@ -1964,7 +2077,7 @@ def main():
         (retained / name).write_bytes(data)
     receipt = {
         "status": "checking", "utc": stamp, "toolchain": audit_support.TOOLCHAIN,
-        "retained_run": str(retained.relative_to(HERE)),
+        "retained_run": shown(retained),
         "spine_modules": SPINE,
         "core_modules": CORE, "foundation_modules": FOUNDATION, "bridge_modules": BRIDGE,
         "core_closure": core_closure,
@@ -1982,19 +2095,29 @@ def main():
     try:
         assert sorted(core_closure) == sorted(PURE), ("core imports outside the core", core_closure)
         inherited = [name for name in order if name not in SPINE]
-        receipts = passed_receipts()
+        # A record of history, not a check: inherited modules are compiled and audited below.
+        # A receipt counts where it maps the module to its current bytes and has passed.
+        receipts = passed_receipts(exclude=(RECEIPT, RETAINED, receipt_path, runs))
         matches = {}
         for name in inherited:
-            found = sorted(path for path, text in receipts if receipt["source_sha256"][name] in text)
+            found = receipts_for(name, paths[name], receipt["source_sha256"][name], receipts)
             assert found, ("inherited module has no passed receipt for its current bytes", name)
             matches[name] = found
         receipt["inherited_receipts"] = matches
-        registry = {name: declarations(data) for name, data in sources.items()}
+        scans = {name: scanned(data) for name, data in sources.items()}
+        registry = {name: scans[name]["declarations"] for name in order}
+        # Private declarations and unnamed instances cannot be audited by name; in the core
+        # closure and the bridge the environment audits cover every constant of the module.
+        receipt["not_audited_by_name"] = {
+            name: {"private": [item["name"] for item in scans[name]["private"]],
+                   "unnamed_instance_lines": scans[name]["unnamed_instances"],
+                   "covered_by": ("core environment audit" if name in core_closure
+                                  else "bridge environment audit" if name in BRIDGE else "none (inherited)")}
+            for name in order if scans[name]["private"] or scans[name]["unnamed_instances"]}
         receipt["market_names"] = market_names(registry)
-        lean = Path.home() / ".elan/bin/lean"
-        binary = Path.home() / ".elan/toolchains/leanprover--lean4---v4.29.1/bin/lean"
+        command, binary, found_by = resolve_lean()
         receipt["lean_binary_sha256"] = audit_support.digest(binary.read_bytes())
-        command = [str(lean), "+" + audit_support.TOOLCHAIN]
+        receipt["lean_resolution"] = found_by
         context = [audit_support.TOOLCHAIN, receipt["lean_binary_sha256"]]
         keys = module_keys(context, sources, order)
         origin = {"utc": stamp, "retained": str(retained)}
@@ -2068,8 +2191,14 @@ def main():
                 imports="\n".join("import " + name for name in core_closure),
                 modules=", ".join("`" + name for name in core_closure))
             tasks["environment"] = (compiled(environment), driver_step("EnvironmentAudit.lean", environment))
+            # The bridge's own constants, by the same driver: its imports may use axioms.
+            bridge_environment = ENVIRONMENT_AUDIT.format(
+                imports="\n".join("import " + name for name in BRIDGE),
+                modules=", ".join("`" + name for name in BRIDGE))
+            tasks["bridge environment"] = (compiled(bridge_environment),
+                                           driver_step("BridgeEnvironmentAudit.lean", bridge_environment))
             tasks["controls"] = (compiled(CONTROLS), driver_step("Controls.lean", CONTROLS))
-            sequence += ["EnvironmentAudit.log", "Controls.log"]
+            sequence += ["EnvironmentAudit.log", "BridgeEnvironmentAudit.log", "Controls.log"]
             # The core needs nothing beyond Lean's prelude.
             bare = work / "prelude-only"
             bare.mkdir()
@@ -2109,17 +2238,25 @@ def main():
                     "declarations": registry[name], "axiom_dependencies": dependencies,
                     "kernel_checked": True,
                 })
-            output = outputs["environment"]
-            constants = {m: int(n) for m, n in re.findall(r"CONSTANTS (\S+) (\d+)", output)}
-            assert sorted(constants) == sorted(core_closure), (constants, core_closure)
-            generated = {n: [a.strip() for a in axs.split(",") if a.strip()]
-                         for n, axs in re.findall(r"AXIOMS (\S+) \[([^]]*)\]", output)}
-            sources_named = {item["name"] for name in core_closure for item in registry[name]}
-            for full, axioms in generated.items():
-                assert full.endswith(".injEq") and axioms == ["propext"], (full, axioms)
-                assert full not in sources_named, full
+            def environment_audit(output, modules):
+                """Every constant of `modules` has an empty axiom report, apart from generated
+                injectivity lemmas (`injEq`) on `propext` that no source declaration is."""
+                constants = {m: int(n) for m, n in re.findall(r"CONSTANTS (\S+) (\d+)", output)}
+                assert sorted(constants) == sorted(modules), (constants, modules)
+                generated = {n: [a.strip() for a in axs.split(",") if a.strip()]
+                             for n, axs in re.findall(r"AXIOMS (\S+) \[([^]]*)\]", output)}
+                sources_named = {item["name"] for name in modules for item in registry[name]}
+                for full, axioms in generated.items():
+                    assert full.endswith(".injEq") and axioms == ["propext"], (full, axioms)
+                    assert full not in sources_named, full
+                return constants, generated
+
+            constants, generated = environment_audit(outputs["environment"], core_closure)
             receipt["core_closure_constants"] = constants
             receipt["generated_axiom_dependencies"] = generated
+            constants, generated = environment_audit(outputs["bridge environment"], BRIDGE)
+            receipt["bridge_constants"] = constants
+            receipt["bridge_generated_axiom_dependencies"] = generated
             receipt["core_compiles_from_prelude"] = True
             receipt["checked_application_examples"] = [
                 {"claim": "the full premise set has a model", "kernel_checked": True, "counted_as_new_theorem": False},
@@ -2144,7 +2281,7 @@ def main():
     finally:
         serialized = json.dumps(receipt, indent=2, ensure_ascii=False) + "\n"
         (retained / "verification.json").write_text(serialized)
-        RECEIPT.write_text(serialized)
+        receipt_path.write_text(serialized)
     spine = [r for r in records if r["spine"]]
     print(json.dumps({
         "status": receipt["status"],
@@ -2154,12 +2291,17 @@ def main():
         "spine_theorems": {r["module"]: r["theorems"] for r in spine},
         "spine_declaration_audits": sum(len(r["declarations"]) for r in spine),
         "generated_with_axioms": len(receipt.get("generated_axiom_dependencies", {})),
+        "bridge_constants": sum(receipt.get("bridge_constants", {}).values()),
+        "bridge_generated_with_axioms": len(receipt.get("bridge_generated_axiom_dependencies", {})),
+        "not_audited_by_name": {name: len(v["private"]) + len(v["unnamed_instance_lines"])
+                                for name, v in receipt.get("not_audited_by_name", {}).items()},
         "inherited_modules": len(records) - len(spine),
         "inherited_axioms": sorted({a for r in records if not r["spine"]
                                     for aa in r["axiom_dependencies"].values() for a in aa}),
         "market_names": receipt.get("market_names", {}),
         "lean_steps_run": len(steps["ran"]), "lean_steps_reused": len(steps["reused"]),
-        "receipt": str(RECEIPT),
+        "lean": receipt.get("lean_resolution"),
+        "receipt": str(receipt_path),
     }))
 
 
