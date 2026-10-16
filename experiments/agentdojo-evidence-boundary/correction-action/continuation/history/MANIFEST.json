@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "root": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history",
+  "entries": [
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/BEFORE.json",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/BEFORE.json",
+      "sha256": "c607ebf58e230fff51f1b6a3a883277e6a96c401f18271a208494bd83e7fb93e",
+      "blob": "defeb21c2d4b947fc6b4af62208f4db14d0e86c7",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/CHECKS.json",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/CHECKS.json",
+      "sha256": "3b9c7b6a7a954dc36d09fa943052044220e80c716e93f69043e1e95f1b4fd679",
+      "blob": "218b9a788c4cdfc6f6b163fddf8d855aa3d694e5",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/README-EDIT.json",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/README-EDIT.json",
+      "sha256": "0d3a3a50ff7130045dca2a38db834ca962059c6cff39df055ae898ef9d963550",
+      "blob": "931193198caf48ecdca126e587a411731526b05a",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/REBASED-EDITS.json",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/REBASED-EDITS.json",
+      "sha256": "21cb5ea4c3b453459a44ab51e0bae00840ef744f033a4113b8a2d48fe004d820",
+      "blob": "1c931c8f751277e574c6830d746ec773161b027a",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/RESULT.json",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/RESULT.json",
+      "sha256": "e4c561b3ce2e26163ed8b2c13c9beabb165787630a84c097c8cf69f9a7ca6984",
+      "blob": "e7ae0eb2f182abad4d388bda8e86250f49da0115",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/00-RESEARCH.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/00-RESEARCH.md",
+      "sha256": "f268ff3fdede17448955820dc5060bf4a4c8209febfc6f25572596b30dd7716f",
+      "blob": "ae74bbbe99c9b208d12f6836cf5354be84df029a",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/01-README.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/01-README.md",
+      "sha256": "9c9176f169e355573584464730af7f005663d1cb951b6df8064ce67c311f2a79",
+      "blob": "f927dce846f268081a6fc3e53ee8bbef77626412",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/02-GENERATIVE-GROUNDING.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/02-GENERATIVE-GROUNDING.md",
+      "sha256": "08140fa213c8dcd4d0886857bb6957c6b99a00c817662ef1aff7654ac2673532",
+      "blob": "64730b30167d41be9e41c356998d6d9049c60d7e",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/03-TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/03-TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "sha256": "450848a523e4dc4e9b699406d5e6ff1b1ebf3dacc87d891f31f00ab2914d4436",
+      "blob": "c4043470dc730ef8a4463e6e0007f2d01492d236",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/04-ALIGNMENT-COMPLETION.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/04-ALIGNMENT-COMPLETION.md",
+      "sha256": "d2d820dac293fdef7438b0678712a0d93c587339f6133e644e3348e98f87c0e4",
+      "blob": "f988c465100c0bbdfaa8ec7c27bb0e321b08d7f0",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/05-README.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/05-README.md",
+      "sha256": "d39f4626620ca890b86b5e61779ff9fae2c1e43763350e9894a2426c3c6fb5b5",
+      "blob": "da3b7e9434e5e1ee4bfd6ba43c65abd5c2a927ca",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/06-ALIGNMENT-FRONTIER-ASSESSMENT.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/06-ALIGNMENT-FRONTIER-ASSESSMENT.md",
+      "sha256": "07083a57b33e197b0622c949f2b607b4f9ef5bebdb6c28c89ed3d10be7bdcff6",
+      "blob": "6078c241b547378a67ee31148933bc495bdc917f",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/07-README.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/07-README.md",
+      "sha256": "aed1b91b64004eefad0ef933d9723014bb4df6688d32c120763fa7fcf4fb5641",
+      "blob": "79e0ccb45c7655146037f9ccb26fe7c0ffa67024",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/continuation-README.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/continuation-README.md",
+      "sha256": "e68795c39c91aefeee1b7e26096a927312954c8448ec2754584ace0a634f247f",
+      "blob": "ddeebcc7bee9ca6e7763744f0ae1c08165887917",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/rebased-00-RESEARCH.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/rebased-00-RESEARCH.md",
+      "sha256": "c77f9ef8a89006ad84ae21b1148de3570adea4fbdc0b3edd9c87a92c06e183a1",
+      "blob": "bb1fb51fce4adda2180a7c2dbc969aafdbe21381",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/rebased-01-README.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/rebased-01-README.md",
+      "sha256": "62f5177012fddbd30f4d36fc91d0aadbe8b4f1621af42eb25cc51ce8ca167efa",
+      "blob": "c1ae4f0594e24c5b5069f0e819c5ea94c4df625d",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/rebased-02-GENERATIVE-GROUNDING.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/rebased-02-GENERATIVE-GROUNDING.md",
+      "sha256": "ce04e167d80a44948e6aac850a21dd5ab8f875ab1d1d3675324673b46bdc2248",
+      "blob": "e84f5c7e1e3d25c62c4f244e4fd1087ae1b183a3",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/rebased-03-README.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/rebased-03-README.md",
+      "sha256": "d39f4626620ca890b86b5e61779ff9fae2c1e43763350e9894a2426c3c6fb5b5",
+      "blob": "da3b7e9434e5e1ee4bfd6ba43c65abd5c2a927ca",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    },
+    {
+      "old_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration/before/rebased-04-ALIGNMENT-FRONTIER-ASSESSMENT.md",
+      "new_path": "experiments/agentdojo-evidence-boundary/correction-action/continuation/history/integration/before/rebased-04-ALIGNMENT-FRONTIER-ASSESSMENT.md",
+      "sha256": "07083a57b33e197b0622c949f2b607b4f9ef5bebdb6c28c89ed3d10be7bdcff6",
+      "blob": "6078c241b547378a67ee31148933bc495bdc917f",
+      "batch": "RA",
+      "reason": "applied 6-Oct integration kit: edit ledgers (BEFORE/CHECKS/README-EDIT/REBASED-EDITS/RESULT.json) and before/ + rebased-* byte copies of the pages it edited (01/rebased-01 Jaccard 1.0; 04 = 0.99 of chapters/ALIGNMENT-COMPLETION.md); 0 records, 0 live referrers",
+      "plan_entry": "experiments/agentdojo-evidence-boundary/correction-action/continuation/integration"
+    }
+  ]
+}

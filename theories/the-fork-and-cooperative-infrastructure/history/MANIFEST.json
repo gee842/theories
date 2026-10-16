@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "root": "theories/the-fork-and-cooperative-infrastructure/history",
+  "entries": [
+    {
+      "old_path": "theories/the-fork-and-cooperative-infrastructure/revisions/2026-09-07-before-productive-foundation.md",
+      "new_path": "theories/the-fork-and-cooperative-infrastructure/history/2026-09-07-before-productive-foundation.md",
+      "sha256": "f32c078819d0045344dfb7178e3baab83524a42c49c8c53bad02cec4eacfc688",
+      "blob": "86e861160c248ceb848ac3f5fde76e92570fbf6f",
+      "batch": "RA",
+      "reason": "byte copy of the 2026-09-07 README before the productive-foundation revision (0.91 of it is in the live README); same depth, so its relative links still resolve",
+      "plan_entry": "theories/the-fork-and-cooperative-infrastructure/revisions"
+    },
+    {
+      "old_path": "theories/the-fork-and-cooperative-infrastructure/revisions/README.md",
+      "new_path": "theories/the-fork-and-cooperative-infrastructure/history/README.md",
+      "sha256": "6409a20351779899fe71cc3dd6269a3aabcc5a2c1f84263e5606cc2d130121b9",
+      "blob": "d36f00b36733f703995b6025cd0271e828716393",
+      "batch": "RA",
+      "reason": "byte copy of the 2026-09-07 README before the productive-foundation revision (0.91 of it is in the live README); same depth, so its relative links still resolve",
+      "plan_entry": "theories/the-fork-and-cooperative-infrastructure/revisions"
+    }
+  ]
+}
