@@ -1209,6 +1209,186 @@
       "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-OPERATIVE-ORDER-REVIEW.json"
     },
     {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P11B-P12-REVIEW.md",
+      "sha256": "84766b7a6f16b5822c58f75a1a947c458e6578ceb4975afd4fd8975820d22b65",
+      "blob": "4b27c1563a87a6cb1f4e6dc04b27a289d85a64eb",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md",
+      "sha256": "d0f676a0375d520738f2e017fc6c2d165b73733c9c8b50057e155bcb00ce66ba",
+      "blob": "8832cfe75ff7e2eb12dcc55ad5dba3ea70548105",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md",
+      "sha256": "10f7315ace2daa1fab3e9eb04106c0fb7c44d11d52eb6664771faf4f9bc3cf63",
+      "blob": "0648b227bac368582a31f49f87a2701dc0199a6a",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md",
+      "sha256": "a9c11c3bbcfa9e9f004e07e39f0c7abbbac1d88ad687b86787fe87703a243761",
+      "blob": "c6e61c97c068c5262290a296daffbcd1e47c9463",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P18B-P23-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P18B-P23-REVIEW.md",
+      "sha256": "791888ed3aab6185de5ccfaed45b18fe51faf5386dd5415df284ae84dc1b2144",
+      "blob": "e6155ae2178ac2c337cd2203136ff05b63138350",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P18B-P23-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md",
+      "sha256": "71f1ff8e0ec97b4ebf3723f74beeb63408596bdf29909652ff12f630fe5866c6",
+      "blob": "be7799da76e12ac001989383f89edc7d24ef5347",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P25B-P29-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P25B-P29-REVIEW.md",
+      "sha256": "7c1ff4cd6c090f71e00dd17ac98162c531f5bb47e98d8f7a1934e003e78b0cd3",
+      "blob": "d153cbd6312b6d40cfdc6e0112fdcade96ab346c",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P25B-P29-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md",
+      "sha256": "d301d1a2d87665100c8ff50529647c53e6dc31f0539e96eaa7f321488b7597a8",
+      "blob": "ad074159d3b25c83f0a2d4cae4caba07ea52280b",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P32-P34-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P32-P34-REVIEW.md",
+      "sha256": "91f1e808c848c867f0b12a9ed192529435fa4407466814f13d4756cb32cb0160",
+      "blob": "ab0d5481b77b75361d6390e1e62d0154840164f0",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P32-P34-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P34B-P38C-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P34B-P38C-REVIEW.md",
+      "sha256": "d755d92550855c5be4a21f70e250f2348b47205c4329efcebbb05017ba5b525a",
+      "blob": "52f30fc9fe8c69f1dbc96568d0cd1c84989e5eb5",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P34B-P38C-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
+      "sha256": "9b7c84c9cacf4c28128e49d8c19c578867b84ad9415a16398db9920e7a2e23fe",
+      "blob": "8c5ce23c1f9c434cecce5ebded8e689c4767f21b",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.zh.md",
+      "sha256": "16b7fd72b87cd907b87cf3f6e165fccdabaa99cea0fa2378bf0f3ea5d29814b3",
+      "blob": "e3354a625b622c6377956f28e95e478137cf275e",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P49-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P49-REVIEW.md",
+      "sha256": "a908cc02d354c2a3a3f3fe67fcf4944506d962d69328f8f1ff0824faa55c700f",
+      "blob": "c7492a9befc433fe3f55371cd96e4436cfc1b1e6",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P49-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P49-REVIEW.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P49-REVIEW.zh.md",
+      "sha256": "1d1f87ba1dd739ef82a45205ca6351eb527afee49a072682973e16acffa2ac20",
+      "blob": "434e95bdf44f7fce43f26dcf4860e84b26f2cfe2",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P49-REVIEW.zh.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P7-REVIEW.md",
+      "sha256": "7bc5fa9ec5f0d0cc001988d8e77efd6517ce4673ee1dcf7e9bcda1c4d3bfcd51",
+      "blob": "927238bf4717992467a793bbb537f7e926f0f74d",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+      "sha256": "7f0334aff71d61c2932ca9b2317ca5f47eaf1595e871b286ac95210104491a14",
+      "blob": "c7824b8dc0a0f2bb1383d6fd1eb7685740ccd00c",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
+      "sha256": "aa26b8372d8c1b899d6e4dd1caadbddbd92f3f5ba74e49976b4b75e0b19b4ac7",
+      "blob": "f3dc2a6d71b4bd3580fca782f5c386059df6bee1",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-R1-R2-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-R1-R2-REVIEW.md",
+      "sha256": "d8d00e93582c7d7afb59c504563c7a2b28cb9a6f15e18134cfdf4eba4d55ccfa",
+      "blob": "abbab29f0c75c07bb28e67f3ffa901a70d265b9a",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-R1-R2-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
+      "sha256": "68ea868722b81b3ea9f52b369b84f7498faa19a8e7f6909df1a38c4dbdcb7fea",
+      "blob": "33dd33152b207895a9649980c67d9f27f17a8c53",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md"
+    },
+    {
+      "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.zh.md",
+      "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.zh.md",
+      "sha256": "f31028f9fde994ae41ba029e0cf471ecd6a3d3fd40bf5f61026a6235a81c63e7",
+      "blob": "fa964f0e5c8aab70628f4a62d990d788e6d83fc1",
+      "batch": "RE",
+      "reason": "spine review of 9-11 Oct landings; evidence for the records that cite it (paths re-keyed, hashes carried); later reviews (GENERAL-LAWS, EIGHTEENTH, RELEASE-READINESS) stay live",
+      "plan_entry": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.zh.md"
+    },
+    {
       "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-REVERSIBILITY-CHECKS.json",
       "new_path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-REVERSIBILITY-CHECKS.json",
       "sha256": "0f41c89022d8ceeaeb8000db4ba72d4f1da3331836c6d8547f1d73accd4aaff7",

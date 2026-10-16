@@ -87,7 +87,7 @@ Universal Metaethical Core 的前提卡里有三项对应：形成 E、连通、
 2. 依存的动态化。（P6 完成，见 §6。）
 3. 逐步读法。（P6 完成，见 §6。）
 4. 共同条件的经验对应。
-5. 独立反审：已由另一 agent 进行，见 [审查](BECOMING-RENEWAL-READING-REVIEW.md) 与 §7。
+5. 独立反审：已由另一 agent 进行，见 [审查](../history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md) 与 §7。
 
 ## 5. 边界
 
@@ -200,7 +200,7 @@ L3，同一模块：
 
 ## 7. 独立审查与更正
 
-2026-10-09。另一 agent（Claude Opus 5.5，未参与撰写）对 §§1–6、`Becoming.Dependence`、`Becoming.Metaethics` 的读法部分、正典章节与六条记录作了独立审查：[BECOMING-RENEWAL-READING-REVIEW](BECOMING-RENEWAL-READING-REVIEW.md)。它重新编译了核心，核对了 22 个源文件的哈希，并写了 13 组探针（Q1–Q13，全部无公理）。
+2026-10-09。另一 agent（Claude Opus 5.5，未参与撰写）对 §§1–6、`Becoming.Dependence`、`Becoming.Metaethics` 的读法部分、正典章节与六条记录作了独立审查：[BECOMING-RENEWAL-READING-REVIEW](../history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md)。它重新编译了核心，核对了 22 个源文件的哈希，并写了 13 组探针（Q1–Q13，全部无公理）。
 
 | 问题 | 审查结论 |
 |---|---|
@@ -432,7 +432,7 @@ Integration: 支持门控定律的 overdraw_crosses_support、permanently_below�
 - 回程等级、视界与实际历史的对应，恢复变慢的经验意义，是应用与经验义务。
 - `Pool`、`Slowing`、`depleting`、视界见证与 P7b 的见证（`NewNeed`、`Pinned`、`LateMet`、`Shock`、`Feedback`）都是最小见证。替代例中替代条件的水平不变，汲取替代条件的代价没有建模。
 - 读法的选择、继续生成的成分、不依赖运行的读法与条件的对应纪律仍开放（§7.3）。
-- 本节经第二次独立审查（[审查](BECOMING-P7-REVIEW.md)）：数学接受，侵蚀与 but-for 的定义已修正，十五项更正见 §11。
+- 本节经第二次独立审查（[审查](../history/root-foundation/BECOMING-P7-REVIEW.md)）：数学接受，侵蚀与 but-for 的定义已修正，十五项更正见 §11。
 
 ## 9. C 在各读法下的排序（P8）
 
@@ -537,7 +537,7 @@ Integration: §7.3 第 1 项部分承接；审查 Q4 在纪律下排除，Q5 只
 
 ## 11. 第二次独立审查与更正（P7b）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P7（§8）与 §7.1 对“不侵蚀”的选取，并读了 P8 中与读法比较相关的部分（[审查](BECOMING-P7-REVIEW.md)）。它在仓库之外重新编译全部 P7 模块，接受每条定理，公理报告为空；判定 `UnderminingOn` 与 `UnderminingFor` 的定义需修正、but-for 检验须固定动作；指出散文在七处强于 Lean，§8.5 的表在 (a)(b) 两行与 but-for 一栏上不公允。审查附有 23 条无公理的探针。本节记录逐项处理。更正都在核心上：探针的内容作为定理移入相应模块，公理报告为空。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P7（§8）与 §7.1 对“不侵蚀”的选取，并读了 P8 中与读法比较相关的部分（[审查](../history/root-foundation/BECOMING-P7-REVIEW.md)）。它在仓库之外重新编译全部 P7 模块，接受每条定理，公理报告为空；判定 `UnderminingOn` 与 `UnderminingFor` 的定义需修正、but-for 检验须固定动作；指出散文在七处强于 Lean，§8.5 的表在 (a)(b) 两行与 but-for 一栏上不公允。审查附有 23 条无公理的探针。本节记录逐项处理。更正都在核心上：探针的内容作为定理移入相应模块，公理报告为空。
 
 ```text
 Result(s): 修正 becoming-stepwise-reading（侵蚀的定义）、becoming-return-grades、becoming-finite-horizon、
@@ -611,7 +611,7 @@ Integration: 审查的 F1–F15 全部处理；它列出的会改变判断的结
 
 ## 12. 第三次独立审查与更正（P9b）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P8（§9）、P9（§10）与 P7b 的更正（§11）（[审查](BECOMING-P8-P9-P7B-REVIEW.md)）。它在仓库之外从前导重新编译全部声明，公理报告为空，计数、哈希与别名都对，数学接受。问题在定义与散文的对应上，共十二项（G1–G12），附无公理的探针。审查没有发现替 Ren 作出的选择，也没有发现把 AI 文字当作 Ren 原话之处；它指出“没有它更好”被写成 Ren 所采纳的判决的形式（G11）。本节记录逐项处理。定义的修正都在核心上；探针的内容作为定理移入相应模块，公理报告为空。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P8（§9）、P9（§10）与 P7b 的更正（§11）（[审查](../history/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md)）。它在仓库之外从前导重新编译全部声明，公理报告为空，计数、哈希与别名都对，数学接受。问题在定义与散文的对应上，共十二项（G1–G12），附无公理的探针。审查没有发现替 Ren 作出的选择，也没有发现把 AI 文字当作 Ren 原话之处；它指出“没有它更好”被写成 Ren 所采纳的判决的形式（G11）。本节记录逐项处理。定义的修正都在核心上；探针的内容作为定理移入相应模块，公理报告为空。
 
 ```text
 Result(s): 修正 becoming-stepwise-reading（MetSince）、joint-difference-making（MakesDifference）、ranking-under-readings、
@@ -792,7 +792,7 @@ Integration: unceasing-generation-needs-renewal 的下一步（陈述“更多�
 
 ## 15. 第四次独立审查与更正（P11b）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P9b（§12）、P10（§13）与 P11（§14）（[审查](BECOMING-P9B-P10-P11-REVIEW.md)）。它在仓库之外从前导重新编译 17 个核心模块，公理报告为空；计数、回执、哈希与别名都对，数学接受。问题在定义、散文与对应之间，共十四项（H1–H14），附无公理的探针。审查没有发现替 Ren 选择 living 的读法；它指出两处来源问题（H7、H9），以及纯净核心中出现了 Ren 已纠正过的支付与账目用语（H13）。本节记录逐项处理。定义的修正都在核心上；探针的内容作为定理移入相应模块，公理报告为空。§6、§7、§12、§13 与 §14 中受影响的句子已就地更正并标明；原文见提交 `c48ec435`。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P9b（§12）、P10（§13）与 P11（§14）（[审查](../history/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md)）。它在仓库之外从前导重新编译 17 个核心模块，公理报告为空；计数、回执、哈希与别名都对，数学接受。问题在定义、散文与对应之间，共十四项（H1–H14），附无公理的探针。审查没有发现替 Ren 选择 living 的读法；它指出两处来源问题（H7、H9），以及纯净核心中出现了 Ren 已纠正过的支付与账目用语（H13）。本节记录逐项处理。定义的修正都在核心上；探针的内容作为定理移入相应模块，公理报告为空。§6、§7、§12、§13 与 §14 中受影响的句子已就地更正并标明；原文见提交 `c48ec435`。
 
 ```text
 Result(s): 修正 becoming-stepwise-reading（MetAbove）、becoming-return-grades、joint-difference-making（determined_dichotomy）、
@@ -1066,7 +1066,7 @@ Integration: 回答第四次审查 H14；§14、§15 与 §17 中“形成与条
 
 ## 19. 第五次独立审查与更正（P12b）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P11b（§15）与 P12（§16）（[审查](BECOMING-P11B-P12-REVIEW.md)）。它在仓库之外从前导重新编译 19 个核心模块，公理报告为空；回执、哈希与别名都对，数学接受，H1–H14 全部关闭。问题在前提的陈述、散文与对应之间，共十二项（I1–I12），没有数学错误；附无公理的探针。审查没有发现替 Ren 选择接续或 living 的读法；它指出对方法检查的说法过强（I7），以及把单层表示的省略呈现为交给 Ren 的二选一（I10）。本节记录逐项处理。探针的内容作为定理移入相应模块，公理报告为空；审查列出的会改变判断的结果中，没有分裂的延续之下的生起定理（第 6 项）也已证明。§14–§17 中受影响的句子已就地更正并标明；原文见提交 `a739e232`。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P11b（§15）与 P12（§16）（[审查](../history/root-foundation/BECOMING-P11B-P12-REVIEW.md)）。它在仓库之外从前导重新编译 19 个核心模块，公理报告为空；回执、哈希与别名都对，数学接受，H1–H14 全部关闭。问题在前提的陈述、散文与对应之间，共十二项（I1–I12），没有数学错误；附无公理的探针。审查没有发现替 Ren 选择接续或 living 的读法；它指出对方法检查的说法过强（I7），以及把单层表示的省略呈现为交给 Ren 的二选一（I10）。本节记录逐项处理。探针的内容作为定理移入相应模块，公理报告为空；审查列出的会改变判断的结果中，没有分裂的延续之下的生起定理（第 6 项）也已证明。§14–§17 中受影响的句子已就地更正并标明；原文见提交 `a739e232`。
 
 ```text
 Result(s): 修正 identity-across-steps（标题、主张、假设、对应、反例、界限、下一步）、more-needs-renewers、
@@ -1282,7 +1282,7 @@ Integration: 回答第五次审查 I10 与 §4 第 7 项；§16、§19 中“谱
 
 ## 22. 第六次独立审查与更正（P16b）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P13（§17）、P14（§18）与 P12b（§19）（[审查](BECOMING-P13-P14-P12B-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 21 个模块，公理报告为空；回执、哈希、别名与证明绑定都对，数学接受，I1–I12 全部关闭。问题在前提的陈述、散文与对应之间，共十一项（J1–J11），没有数学错误；附无公理的探针。审查没有发现替 Ren 选择生生、living、接续或终结的读法；它指出两个反复出现的模式：省略前提（I1 → J10），以及把所给的对应呈现为结果（I7 → J4）。本节记录逐项处理。探针的内容作为定理移入相应模块，公理报告为空；审查提议而未形式化的两个结果，有限支撑下给予的形成取得多于所给（J1；P18b 用语，原文“给予者”）与 `roles_dissipative` 的逆（J8），也已证明。§17–§20 中受影响的句子已就地更正并标明；原文见提交 `25a66424`。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P13（§17）、P14（§18）与 P12b（§19）（[审查](../history/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 21 个模块，公理报告为空；回执、哈希、别名与证明绑定都对，数学接受，I1–I12 全部关闭。问题在前提的陈述、散文与对应之间，共十一项（J1–J11），没有数学错误；附无公理的探针。审查没有发现替 Ren 选择生生、living、接续或终结的读法；它指出两个反复出现的模式：省略前提（I1 → J10），以及把所给的对应呈现为结果（I7 → J4）。本节记录逐项处理。探针的内容作为定理移入相应模块，公理报告为空；审查提议而未形式化的两个结果，有限支撑下给予的形成取得多于所给（J1；P18b 用语，原文“给予者”）与 `roles_dissipative` 的逆（J8），也已证明。§17–§20 中受影响的句子已就地更正并标明；原文见提交 `25a66424`。
 
 ```text
 Result(s): 修正 no-finite-part-bears-taking（主张、假设、对应、反例、界限）、
@@ -1378,7 +1378,7 @@ Integration: J1–J11 全部处理；审查 §4 第 1–7 项完成，各留下�
 
 ## 23. 第七次独立审查与更正（P16c）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P15（§20）、P16（§21）与 P16b（§22）（[审查](BECOMING-P15-P16-P16B-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 22 个模块，1185 条声明的公理报告全空；计数、回执、哈希、别名与证明绑定都对，数学全部接受。J1–J11 中八项关闭，J1 与 J7 关闭而有过强的表述，J11 关闭而有残余。问题共八项（K1–K8），都在前提的陈述、散文与对应之间，没有数学错误；附无公理的探针。审查没有发现替 Ren 选择生、living、接续、终结或“生生不息”的层次；它指出两个模式：耗散空成立时结论可以由无关的交换满足（省略前提，J1 的同一模式），以及把体现读作生命（替 Ren 选择了“生”的读法）。本节记录逐项处理。探针作为定理移入相应模块；审查列为未构造的一步，相等可判定时被封闭的步围住每个有限家族（`Enclosed.around`），也已证明。§17、§20–§22 中受影响的句子已就地更正并标明；原文见提交 `b24963f1`。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P15（§20）、P16（§21）与 P16b（§22）（[审查](../history/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 22 个模块，1185 条声明的公理报告全空；计数、回执、哈希、别名与证明绑定都对，数学全部接受。J1–J11 中八项关闭，J1 与 J7 关闭而有过强的表述，J11 关闭而有残余。问题共八项（K1–K8），都在前提的陈述、散文与对应之间，没有数学错误；附无公理的探针。审查没有发现替 Ren 选择生、living、接续、终结或“生生不息”的层次；它指出两个模式：耗散空成立时结论可以由无关的交换满足（省略前提，J1 的同一模式），以及把体现读作生命（替 Ren 选择了“生”的读法）。本节记录逐项处理。探针作为定理移入相应模块；审查列为未构造的一步，相等可判定时被封闭的步围住每个有限家族（`Enclosed.around`），也已证明。§17、§20–§22 中受影响的句子已就地更正并标明；原文见提交 `b24963f1`。
 
 ```text
 Result(s): 修正 generation-is-replenishment（标题、主张、假设 3、对应、反例、界限、别名）、
@@ -1659,7 +1659,7 @@ Integration: 计划第 9 节第二项的第一部分；Renewal 的下降原则�
 
 ## 27. 第八次独立审查与更正（P18b）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P16c（§23）、P17（§24）与 P18（§25）（[审查](BECOMING-P16C-P17-P18-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 24 个模块，1356 条源声明的公理报告全空；回执、源哈希、保留产物、引用哈希与证明绑定都对，数学全部接受，Lean 中没有数学错误。K2、K5、K7 关闭；K1、K3、K4、K6 关闭而有残余；K8 的八项中五项关闭。它提出十项（L1–L10）：一项定义与其陈述的意义不符（L10，最严重），两项散文中的错误（L5、L9），四项说得过强（L1、L2、L4、L8），一项缺少反例（L6），两项记账与表述（L3、L7）。审查没有发现替 Ren 选择任何读法；L1 的残余把体现读作生命，是 K6 已指出、P16c 已承认属于 Ren 的读法。本节记录逐项处理。审查的探针按需要移入相应模块，公理报告为空。§18、§20、§22–§25 与英文段落中受影响的句子已就地更正并标明；原文见提交 `4295dd24`。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P16c（§23）、P17（§24）与 P18（§25）（[审查](../history/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 24 个模块，1356 条源声明的公理报告全空；回执、源哈希、保留产物、引用哈希与证明绑定都对，数学全部接受，Lean 中没有数学错误。K2、K5、K7 关闭；K1、K3、K4、K6 关闭而有残余；K8 的八项中五项关闭。它提出十项（L1–L10）：一项定义与其陈述的意义不符（L10，最严重），两项散文中的错误（L5、L9），四项说得过强（L1、L2、L4、L8），一项缺少反例（L6），两项记账与表述（L3、L7）。审查没有发现替 Ren 选择任何读法；L1 的残余把体现读作生命，是 K6 已指出、P16c 已承认属于 Ren 的读法。本节记录逐项处理。审查的探针按需要移入相应模块，公理报告为空。§18、§20、§22–§25 与英文段落中受影响的句子已就地更正并标明；原文见提交 `4295dd24`。
 
 ```text
 Result(s): 更正 living-on-and-descent（L8–L10）、reserve-defers-ending（L3(d)、L4–L6）、generation-is-replenishment（L7）、
@@ -2030,11 +2030,11 @@ Integration: 计划 P25；回答理论第 8 节列出的开放项；为第十次
 
 *反驳 3：可判定的相等是额外前提。* 不是构造性证明的要求：被围住的步不是不围住所立者，而 `stills` 比较的是自然数，判定已在那里；P25b 去掉了这一要求（`Enclosed.around_not_not`）。`rests_around` 不要求它，直接以围住所立者为前提（P25b 更正，原文“是构造性证明的要求：把立着的两个列表合并为一个不重复的家族要判定相等。经典地它总是成立”；见 §38 O3）。
 
-**边界。** 无伦理谓词，不评价开放或静止；只对离散步与自然数的量陈述；“开放”“被围住”“所立者”的读法与名称是 AI 的表述，由 Ren 定。本节经[第十次独立审查](BECOMING-P23C-P24-P25-REVIEW.md)，更正见 §38。
+**边界。** 无伦理谓词，不评价开放或静止；只对离散步与自然数的量陈述；“开放”“被围住”“所立者”的读法与名称是 AI 的表述，由 Ren 定。本节经[第十次独立审查](../history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md)，更正见 §38。
 
 ## 34. 第九次独立审查与更正（P23c）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P18b（§27）、P19（§26）、P20（§28）、P21（§29）、P22（§30）与 P23（§31）（[审查](BECOMING-P18B-P23-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 27 个模块，1571 条源声明的公理报告全空；闭包的 4423 个常量中依赖公理的只有 30 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、引用哈希与证明绑定都对，数学全部接受，Lean 中没有数学错误。第八次审查的 L1–L10 全部关闭。它提出十项（M1–M10）：一项替 Ren 选择了读法（M1，最严重），四项省略前提（M2、M4、M5、M6），一项散文中的错误（M3），两项缺少反例（M7、M8），两项表述与记账（M9、M10）。P24（§32）与 P25（§33）在审查期间提交，审查没有读；其中受 M1 影响的用语一并更正。本节记录逐项处理。探针 N1、N4–N7 移入核心，公理报告为空。§26、§28–§33 与英文段落中受影响的句子已就地更正并标明；原文见提交 `a69455e3`。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P18b（§27）、P19（§26）、P20（§28）、P21（§29）、P22（§30）与 P23（§31）（[审查](../history/root-foundation/BECOMING-P18B-P23-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 27 个模块，1571 条源声明的公理报告全空；闭包的 4423 个常量中依赖公理的只有 30 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、引用哈希与证明绑定都对，数学全部接受，Lean 中没有数学错误。第八次审查的 L1–L10 全部关闭。它提出十项（M1–M10）：一项替 Ren 选择了读法（M1，最严重），四项省略前提（M2、M4、M5、M6），一项散文中的错误（M3），两项缺少反例（M7、M8），两项表述与记账（M9、M10）。P24（§32）与 P25（§33）在审查期间提交，审查没有读；其中受 M1 影响的用语一并更正。本节记录逐项处理。探针 N1、N4–N7 移入核心，公理报告为空。§26、§28–§33 与英文段落中受影响的句子已就地更正并标明；原文见提交 `a69455e3`。
 
 ```text
 Result(s): 更正 space-and-its-parts（M1、M2、M7、M8）、evolution-on-descent（M3、M6）、
@@ -2105,7 +2105,7 @@ Integration: §26、§28–§33 的更正；审查 §4 的第 1–6 项完成，
 
 *反驳 4：既然 `selected` 不是选择项，`price` 还有什么用。* `price` 是会计恒等式，审查与本研究都这样说；它的用处在于加权总量受条件的水平所限（`selected_le`、`selection_within`），这把支持对给予的约束写进后代的总量。真正的选择项需要整数或有理数的量与均值，列为进一步的证明。
 
-**边界。** 不含伦理谓词；不改变任何读法选择的地位，新增的一项（提议中“生成的”“退化的”的读法）列为 Ren 的选择；新名称是建议；探针与新见证都是最小见证；可判定性是公开的逻辑承诺。本节的更正经[第十次独立审查](BECOMING-P23C-P24-P25-REVIEW.md)，见 §38。
+**边界。** 不含伦理谓词；不改变任何读法选择的地位，新增的一项（提议中“生成的”“退化的”的读法）列为 Ren 的选择；新名称是建议；探针与新见证都是最小见证；可判定性是公开的逻辑承诺。本节的更正经[第十次独立审查](../history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md)，见 §38。
 
 ## 35. 止息需要生起与静止定理（P26）
 
@@ -2269,7 +2269,7 @@ Integration: 计划 P28；回答 ceasing-needs-arising 与 bounded-census-keeps-
 
 ## 38. 第十次独立审查与更正（P25b）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P24（§32）、P25（§33）与 P23c（§34）（[审查](BECOMING-P23C-P24-P25-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 29 个模块，1732 条源声明的公理报告全空；闭包的 4894 个常量中依赖公理的只有 34 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、引用哈希与证明绑定都对，数学全部接受，Lean 中没有数学错误。第九次审查的 M2–M10 关闭，M1 部分关闭。它提出十一项（O1–O11）：两项散文与记录中的错误（O4、O5），六项过强（O1、O3、O7、O8、O9、O10；其中 O7、O8 是 M1 的残留，O10 预设了 Ren 尚未作出的选择的范围），一项缺少反例（O2），两项表述与记账（O6、O11）。P26–P28（§35–§37）在审查期间提交，审查没有读；其中受影响的句子一并更正。本节记录逐项处理。探针 Q1–Q8、Q10 的内容移入核心，Q9 的内容由更正后的陈述写出；公理报告为空。§26、§30、§32–§37 与英文段落中受影响的句子已就地更正并标明。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P24（§32）、P25（§33）与 P23c（§34）（[审查](../history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 29 个模块，1732 条源声明的公理报告全空；闭包的 4894 个常量中依赖公理的只有 34 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、引用哈希与证明绑定都对，数学全部接受，Lean 中没有数学错误。第九次审查的 M2–M10 关闭，M1 部分关闭。它提出十一项（O1–O11）：两项散文与记录中的错误（O4、O5），六项过强（O1、O3、O7、O8、O9、O10；其中 O7、O8 是 M1 的残留，O10 预设了 Ren 尚未作出的选择的范围），一项缺少反例（O2），两项表述与记账（O6、O11）。P26–P28（§35–§37）在审查期间提交，审查没有读；其中受影响的句子一并更正。本节记录逐项处理。探针 Q1–Q8、Q10 的内容移入核心，Q9 的内容由更正后的陈述写出；公理报告为空。§26、§30、§32–§37 与英文段落中受影响的句子已就地更正并标明。
 
 ```text
 Result(s): 更正 continued-change-needs-openness（O1–O6）、map-of-premises（O9）、coming-and-ceasing-keep-pace（O7、O8）、
@@ -2493,7 +2493,7 @@ Integration: 计划 P31；回答 reserve-defers-ending 与 life-as-condition-of-
 
 ## 42. 第十一次独立审查与更正（P29b）
 
-2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P26（§35）、P27（§36）、P28（§37）、P25b（§38）与 P29（§39）（[审查](BECOMING-P25B-P29-REVIEW.md)，对象 `0cf14b8b`）。它在仓库之外从前导重新编译核心闭包的 29 个模块，1830 条源声明（1126 项定理）的公理报告全空；闭包的 5153 个常量中依赖公理的只有 35 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、外围回执、引用哈希与证明绑定都对；各阶段的定理数与研究、计划和章节一致。数学全部接受，没有错误的 Lean 陈述。它写了 47 条探针声明（32 项定理，生成的 159 个常量都不依赖公理），提出十一项（R1–R11）：两项散文中的错误（R1、R2），六项过强（R3–R8，其中 R6 缺少反例），三项表述与出处（R9–R11）。第十次审查的 O2–O6、O9 关闭；O1、O7、O8、O10、O11 的残留就是 R4、R5、R9、R1、R2。P30（§40）与 P31（§41）在审查期间或之后提交，审查没有读；R6 与 R11(a) 已由 P30 回答。本节记录逐项处理。探针 S1、S2、S4–S6 的内容移入核心（S3 的内容已由 P30 给出），名称按核心改写；公理报告为空。§26、§34、§36、§38、§39 与英文段落中受影响的句子已就地更正并标明。
+2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P26（§35）、P27（§36）、P28（§37）、P25b（§38）与 P29（§39）（[审查](../history/root-foundation/BECOMING-P25B-P29-REVIEW.md)，对象 `0cf14b8b`）。它在仓库之外从前导重新编译核心闭包的 29 个模块，1830 条源声明（1126 项定理）的公理报告全空；闭包的 5153 个常量中依赖公理的只有 35 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、外围回执、引用哈希与证明绑定都对；各阶段的定理数与研究、计划和章节一致。数学全部接受，没有错误的 Lean 陈述。它写了 47 条探针声明（32 项定理，生成的 159 个常量都不依赖公理），提出十一项（R1–R11）：两项散文中的错误（R1、R2），六项过强（R3–R8，其中 R6 缺少反例），三项表述与出处（R9–R11）。第十次审查的 O2–O6、O9 关闭；O1、O7、O8、O10、O11 的残留就是 R4、R5、R9、R1、R2。P30（§40）与 P31（§41）在审查期间或之后提交，审查没有读；R6 与 R11(a) 已由 P30 回答。本节记录逐项处理。探针 S1、S2、S4–S6 的内容移入核心（S3 的内容已由 P30 给出），名称按核心改写；公理报告为空。§26、§34、§36、§38、§39 与英文段落中受影响的句子已就地更正并标明。
 
 ```text
 Result(s): 更正 space-and-its-parts（R1、R2、R9）、map-of-premises（R3、R10）、continued-change-needs-openness（R3、R4、R8、R10）、
@@ -2673,7 +2673,7 @@ Integration: 计划 P33；把第十一次审查 R3 的手写论证变为定理�
 
 ## 45. 第十二次独立审查与更正（P33b）
 
-2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P30（§40）、P31（§41）与 P29b（§42）（[审查](BECOMING-P30-P31-P29B-REVIEW.md)，对象 `a9326202`）。它在仓库之外从前导重新编译核心闭包的 29 个模块，1896 条源声明（1171 项定理）的公理报告全空；闭包的 5333 个常量中依赖公理的只有 35 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、外围回执、402 个引用哈希与 112 个证明绑定都对，各阶段的计数与章节、研究和计划一致。数学全部接受，没有错误的 Lean 陈述。它写了 55 条探针声明（38 项定理，生成的 107 个常量都不依赖公理），提出八项（T1–T8）：三项错误（命名、散文与文档注释各一，T1、T3、T4），三项过强（T2、T5、T6），两项出处与记账（T7、T8）。第十一次审查的 R1、R2、R4–R7、R10 关闭；R3、R8、R9、R11 的残留就是 T5、T4、T7、T8。P32（§43）与 P33（§44）在审查期间或之后提交，审查没有读。本节逐项处理，并把审查的三个探针移入核心。成果记录：修订 [reserve-defers-ending](../../../../theories/becoming/results/records/reserve-defers-ending.md)、[continued-change-needs-openness](../../../../theories/becoming/results/records/continued-change-needs-openness.md)、[bounded-census-keeps-pace](../../../../theories/becoming/results/records/bounded-census-keeps-pace.md)；没有新的成果记录。
+2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P30（§40）、P31（§41）与 P29b（§42）（[审查](../history/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md)，对象 `a9326202`）。它在仓库之外从前导重新编译核心闭包的 29 个模块，1896 条源声明（1171 项定理）的公理报告全空；闭包的 5333 个常量中依赖公理的只有 35 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、外围回执、402 个引用哈希与 112 个证明绑定都对，各阶段的计数与章节、研究和计划一致。数学全部接受，没有错误的 Lean 陈述。它写了 55 条探针声明（38 项定理，生成的 107 个常量都不依赖公理），提出八项（T1–T8）：三项错误（命名、散文与文档注释各一，T1、T3、T4），三项过强（T2、T5、T6），两项出处与记账（T7、T8）。第十一次审查的 R1、R2、R4–R7、R10 关闭；R3、R8、R9、R11 的残留就是 T5、T4、T7、T8。P32（§43）与 P33（§44）在审查期间或之后提交，审查没有读。本节逐项处理，并把审查的三个探针移入核心。成果记录：修订 [reserve-defers-ending](../../../../theories/becoming/results/records/reserve-defers-ending.md)、[continued-change-needs-openness](../../../../theories/becoming/results/records/continued-change-needs-openness.md)、[bounded-census-keeps-pace](../../../../theories/becoming/results/records/bounded-census-keeps-pace.md)；没有新的成果记录。
 
 ```text
 Result(s): 更正 reserve-defers-ending（T2、T3）、continued-change-needs-openness（T4、T5）、bounded-census-keeps-pace（T1、T6）；
@@ -2934,7 +2934,7 @@ Integration: §47 与英文 W1–W5 的就地更正；章节 §6.7、前提卡�
 
 ## 48. 第十三次独立审查与更正（P34b）
 
-2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P32（§43）、P33（§44）、P33b（§45）与 P34（§46），以及 P35/P36 的两份草稿（[审查](BECOMING-P32-P34-REVIEW.md)，对象 `7f69f455` 与草稿 `D35.lean`、`D36.lean`）。它在仓库之外从前导重新编译核心闭包的 29 个模块，2028 条源声明（1263 项定理）的公理报告全空；闭包的 5650 个常量中依赖公理的只有 37 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；四个提交的回执、源哈希、保留产物与外围回执，1590 个引用哈希与 459 个证明绑定都对，各阶段的计数与章节一致。数学全部接受，没有错误的 Lean 陈述；两份草稿的定理也都对，其 70 条声明不依赖公理。它写了 42 条探针声明（34 项定理）与 8 个 `example`，生成的 78 个常量都不依赖公理；提出九项（U1–U9）：一项过强（U1，P34 的标题），一项出处错误（U2），一项说明与缺少的反例（U3），草稿的三项（U4–U6），P34 的说明（U7），中英对应（U8）与记账（U9）。另一会话的 W1–W5（`1f6f375f`）在审查期间提交，不在对象之内。本节逐项处理，把审查的探针移入核心；草稿按 U4–U6 重构，作为 P35 提交（§49）。草稿、探针与审计输出保存为[审查证据](../history/root-foundation/development/becoming-p32-p34-review-probes/README.md)，不是登记的成果。成果记录：修订 [whole-law-of-counting](../../../../theories/becoming/results/records/whole-law-of-counting.md)、[census-balance-under-continuation](../../../../theories/becoming/results/records/census-balance-under-continuation.md)、[identity-across-steps](../../../../theories/becoming/results/records/identity-across-steps.md)；引用移动了的引理的记录随之更新声明的位置。
+2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P32（§43）、P33（§44）、P33b（§45）与 P34（§46），以及 P35/P36 的两份草稿（[审查](../history/root-foundation/BECOMING-P32-P34-REVIEW.md)，对象 `7f69f455` 与草稿 `D35.lean`、`D36.lean`）。它在仓库之外从前导重新编译核心闭包的 29 个模块，2028 条源声明（1263 项定理）的公理报告全空；闭包的 5650 个常量中依赖公理的只有 37 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；四个提交的回执、源哈希、保留产物与外围回执，1590 个引用哈希与 459 个证明绑定都对，各阶段的计数与章节一致。数学全部接受，没有错误的 Lean 陈述；两份草稿的定理也都对，其 70 条声明不依赖公理。它写了 42 条探针声明（34 项定理）与 8 个 `example`，生成的 78 个常量都不依赖公理；提出九项（U1–U9）：一项过强（U1，P34 的标题），一项出处错误（U2），一项说明与缺少的反例（U3），草稿的三项（U4–U6），P34 的说明（U7），中英对应（U8）与记账（U9）。另一会话的 W1–W5（`1f6f375f`）在审查期间提交，不在对象之内。本节逐项处理，把审查的探针移入核心；草稿按 U4–U6 重构，作为 P35 提交（§49）。草稿、探针与审计输出保存为[审查证据](../history/root-foundation/development/becoming-p32-p34-review-probes/README.md)，不是登记的成果。成果记录：修订 [whole-law-of-counting](../../../../theories/becoming/results/records/whole-law-of-counting.md)、[census-balance-under-continuation](../../../../theories/becoming/results/records/census-balance-under-continuation.md)、[identity-across-steps](../../../../theories/becoming/results/records/identity-across-steps.md)；引用移动了的引理的记录随之更新声明的位置。
 
 ```text
 Result(s): 更正 whole-law-of-counting（U1–U3、U7、U9）、census-balance-under-continuation（U2）、identity-across-steps（U8）；
@@ -3535,7 +3535,7 @@ Integration: 计划 P41；修订三条记录的证明引用与验证范围；模
 
 ## 58. 第十四次独立审查与更正（P41b）
 
-2026-10-10。按 Ren“let's aim for the strongest claim without axiom, as the first part”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)）与“aim a complete theory of becoming, and finish related work”继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P34b（§48）、P35（§49）、P36（§50）、P36b、P38（§52）、P38b（§54）与 P38c（§55）（[审查](BECOMING-P34B-P38C-REVIEW.md)，对象 `c95f6576`，经六个提交）；P37 与 P39 不在对象之内，只核对第一部分总陈述是否如实转述 P37。它在仓库之外从前导重新编译核心闭包的 34 个模块，回执所列的 2462 条闭包源声明的公理报告全空；闭包的 6697 个常量中依赖公理的只有 38 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；六个提交的核心与外围回执、源哈希、检查器哈希与保留产物都与提交一致，回执都早于其提交；章节 §9 的计数等于回执；登记检查与四份记录的聚焦检查在快照上通过。P36 只改名：去掉注释后按词元比较，22 个改动的核心文件只有等长的标识符替换，替换是单射，保留运行的 737 条签名在改名之下逐条相同。数学全部接受，对象中没有错误的 Lean 陈述。它写了 32 条探针声明（22 项定理），其 82 个常量不依赖任何公理。问题六项（V1–V6）；最重要的是 V1 与 V2。
+2026-10-10。按 Ren“let's aim for the strongest claim without axiom, as the first part”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)）与“aim a complete theory of becoming, and finish related work”继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P34b（§48）、P35（§49）、P36（§50）、P36b、P38（§52）、P38b（§54）与 P38c（§55）（[审查](../history/root-foundation/BECOMING-P34B-P38C-REVIEW.md)，对象 `c95f6576`，经六个提交）；P37 与 P39 不在对象之内，只核对第一部分总陈述是否如实转述 P37。它在仓库之外从前导重新编译核心闭包的 34 个模块，回执所列的 2462 条闭包源声明的公理报告全空；闭包的 6697 个常量中依赖公理的只有 38 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；六个提交的核心与外围回执、源哈希、检查器哈希与保留产物都与提交一致，回执都早于其提交；章节 §9 的计数等于回执；登记检查与四份记录的聚焦检查在快照上通过。P36 只改名：去掉注释后按词元比较，22 个改动的核心文件只有等长的标识符替换，替换是单射，保留运行的 737 条签名在改名之下逐条相同。数学全部接受，对象中没有错误的 Lean 陈述。它写了 32 条探针声明（22 项定理），其 82 个常量不依赖任何公理。问题六项（V1–V6）；最重要的是 V1 与 V2。
 
 ```text
 Result(s): 更正 whole-law-of-counting（V1、V4、V5、V6）、counting-under-enclosure（V4、V5、V6）、
@@ -3795,7 +3795,7 @@ Integration: 记录 rest-with-refinement-counted 与 rest-at-every-resolution；
 - **不算入细分。** 前提只说流自身耗散、被围住时，结论在细分什么也不给之处成立（`World.rests_unrefined`、`World.arising_needs_refinement`、`Flow.taking_needs_refinement`、储备的 `Web.CarriesIn.lasts_unrefined`）。
 - **见证由细分供给。** Emission、Alternation 与 Circulation 中，以及单位在任意晚的步细分时 Asymptote 中，细分在任意晚的步有所给予；Dwindle 中细分每步给予储备（`refinement_feeds_witnesses`）。它们在固定单位下不平衡（`Asymptote.not_balanced`、`Emission.not_balanced`、`Alternation.not_balanced`；审查 W7.2）。
 
-**第十五次独立审查的处理。** [审查](BECOMING-R1-R2-REVIEW.md)检查 R1、R1b 与 R2（`658db670`、`e79e00e5`、`de17f533`）：构建、公理、回执与计数全部正确，每条定理按陈述成立；文字有错处。逐项：
+**第十五次独立审查的处理。** [审查](../history/root-foundation/BECOMING-R1-R2-REVIEW.md)检查 R1、R1b 与 R2（`658db670`、`e79e00e5`、`de17f533`）：构建、公理、回执与计数全部正确，每条定理按陈述成立；文字有错处。逐项：
 
 - **W1**（“计数关系项需要比例”过度）：模块说明、记录的对应与读法更正；§59.2 读法原文保留，附更正。审查的探针给出严格弱于比例而仍给出增长的规律的前提（ReplenishedLoses），按 Ren 作为研究笔记。
 - **W2**（“推到最弱”）：计划 R2 行改为“推向更弱”；§59.2 原文保留，附更正。
@@ -3904,7 +3904,7 @@ Integration: 章节第 3 条、第一部分的总陈述、§8、§9 的脊柱表
 
 AI 回答了 P39 与 P40 留下的问题（同一来源，AI 的话）：供给闭包对供给是精确的，却漏掉保护，如狼群压住会吃光森林的鹿；一般的对象是对影响形成所需者的一切影响的闭包；所在的系统还更大，`Clearing` 中栖居者在清除者的系统之内、依存之外；所以层次有四个：自身、依存、系统与整体。AI 还提出工作次序 (a)–(d)，前两项是：一个形成自身的反馈能识得哪些损失、不能识得哪些；四个层次与影响闭包。Ren 答：“continue, let's pursue the strongest claims and complete proof, i think you see the right direction, also update project context”。AI 把“i think you see the right direction”读作接受这一框架、各项回答与工作次序（来源中的 AI 读法，待 Ren）。对层级，Ren 此前写过：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)）。
 
-本节是计划 P42（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成。它不加公理。核心新增模块 `Becoming.Feedback`，100 项定理，导入 `Becoming.Interdependence`。不用公理的结果放进第一部分（章节 §2 的“反馈与所及”与第一部分的总陈述），与路线 (b) 和 Ren 的层级的关系放进第二部分（章节 §6.10）。整合之前，P42 与 P43 一起经[第十六次独立审查](BECOMING-P42-P43-REVIEW.md)，十六项更正已处理（§62.1）；结果是五个闭包，不是四个层次，所及闭包是审查之后加上的。成果记录新增三项：
+本节是计划 P42（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成。它不加公理。核心新增模块 `Becoming.Feedback`，100 项定理，导入 `Becoming.Interdependence`。不用公理的结果放进第一部分（章节 §2 的“反馈与所及”与第一部分的总陈述），与路线 (b) 和 Ren 的层级的关系放进第二部分（章节 §6.10）。整合之前，P42 与 P43 一起经[第十六次独立审查](../history/root-foundation/BECOMING-P42-P43-REVIEW.md)，十六项更正已处理（§62.1）；结果是五个闭包，不是四个层次，所及闭包是审查之后加上的。成果记录新增三项：
 - [levels-of-closure](../../../../theories/becoming/results/records/levels-of-closure.md)
 - [feedback-and-reach](../../../../theories/becoming/results/records/feedback-and-reach.md)
 - [comparison-within-reach](../../../../theories/becoming/results/records/comparison-within-reach.md)
@@ -4088,9 +4088,9 @@ Integration: 计划 P43（工作次序 (c)）；把公理超出预设的全部�
 
 ### 62.1 第十六次独立审查与处理
 
-落地时的更正（2026-10-11）：本审查在分支上称第十五次；R1–R2 的审查（[BECOMING-R1-R2-REVIEW.md](BECOMING-R1-R2-REVIEW.md)）先落地为第十五次，这里改称第十六次，内容不变。
+落地时的更正（2026-10-11）：本审查在分支上称第十五次；R1–R2 的审查（[BECOMING-R1-R2-REVIEW.md](../history/root-foundation/BECOMING-R1-R2-REVIEW.md)）先落地为第十五次，这里改称第十六次，内容不变。
 
-另一 agent（Claude Opus 5.5，未参与撰写）在整合之前审查了 P42 与 P43 的暂存稿，以及应协调者要求追加的扩展（[审查](BECOMING-P42-P43-REVIEW.md)）。它对被审文件逐字节重编译，审计两个模块与扩展的全部声明，公理报告全部为空；142 个探针声明全部是项证明，没有经典推理。判断：Lean 全部成立；问题在模块层的散文、AI 的读法与框架，不在证明。下表是十六项更正的处理；表中的定理名是整合后的名称。
+另一 agent（Claude Opus 5.5，未参与撰写）在整合之前审查了 P42 与 P43 的暂存稿，以及应协调者要求追加的扩展（[审查](../history/root-foundation/BECOMING-P42-P43-REVIEW.md)）。它对被审文件逐字节重编译，审计两个模块与扩展的全部声明，公理报告全部为空；142 个探针声明全部是项证明，没有经典推理。判断：Lean 全部成立；问题在模块层的散文、AI 的读法与框架，不在证明。下表是十六项更正的处理；表中的定理名是整合后的名称。
 
 | 项 | 审查所见 | 处理 |
 |---|---|---|
@@ -4669,7 +4669,7 @@ Ren 把第 4 问留给 AI：“for 4, you can explore which option is better, th
 
 ### 70.2 独立审查与处理
 
-另一 agent（Claude Opus 5.5，未参与撰写）在整合之前审查了第一稿（[审查](BECOMING-P49-REVIEW.md)，起草时称 P47，第十七次独立审查）。它逐字节重编译了被审文件，审计全部 127 个常量，公理报告全部为空；它的 192 个探针常量也都不依赖公理，没有经典推理。判断：Lean 全部成立；问题在散文、读法、名称与一个假设的范围，不在证明。审查者的探针保存在 [development/becoming-p49-review-probes](../history/root-foundation/development/becoming-p49-review-probes/README.md)，那里写明每个探针进入核心后的名称。下表是十三项发现的处理；表中的定理名是整合后的名称。
+另一 agent（Claude Opus 5.5，未参与撰写）在整合之前审查了第一稿（[审查](../history/root-foundation/BECOMING-P49-REVIEW.md)，起草时称 P47，第十七次独立审查）。它逐字节重编译了被审文件，审计全部 127 个常量，公理报告全部为空；它的 192 个探针常量也都不依赖公理，没有经典推理。判断：Lean 全部成立；问题在散文、读法、名称与一个假设的范围，不在证明。审查者的探针保存在 [development/becoming-p49-review-probes](../history/root-foundation/development/becoming-p49-review-probes/README.md)，那里写明每个探针进入核心后的名称。下表是十三项发现的处理；表中的定理名是整合后的名称。
 
 | 项 | 审查所见 | 处理 |
 |---|---|---|

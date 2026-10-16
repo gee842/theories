@@ -700,12 +700,12 @@
       "sha256": "a12a64304d9cb974cd3638eab754a43e5ed82b4939834ff7dca82e2378a7c084"
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P18B-P23-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P18B-P23-REVIEW.md",
       "role": "review",
       "sha256": "791888ed3aab6185de5ccfaed45b18fe51faf5386dd5415df284ae84dc1b2144"
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md",
       "role": "review",
       "sha256": "71f1ff8e0ec97b4ebf3723f74beeb63408596bdf29909652ff12f630fe5866c6"
     },
@@ -715,12 +715,12 @@
       "sha256": "143964d076571bd652d0af8faeff106f66c499101c4484dc95e91f131aca9f5a"
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P25B-P29-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P25B-P29-REVIEW.md",
       "role": "review",
       "sha256": "7c1ff4cd6c090f71e00dd17ac98162c531f5bb47e98d8f7a1934e003e78b0cd3"
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md",
       "role": "review",
       "sha256": "d301d1a2d87665100c8ff50529647c53e6dc31f0539e96eaa7f321488b7597a8",
       "declarations": []

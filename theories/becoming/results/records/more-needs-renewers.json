@@ -252,14 +252,14 @@
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
       "detail": {
         "zh": "第四次独立审查：所审的全部声明接受，公理报告为空；“严格的层级”作为蕴含不成立，More 数的是取用者，最小取用未点明，“给予者越来越多”与“没有一个有限的部分独自承担”强于定理，账目用语与 Ren 的纠正相冲突（已在整合文档中更正）。",
         "en": "Fourth independent review: every declaration under review is accepted with empty axiom reports; “strict hierarchy” failed as an implication, More counts takers, the minimum uptake was unstated, “ever more givers” and “no finite part bears it alone” were stronger than the theorems, and the ledger vocabulary conflicted with Ren's corrections (corrected in the integration note)."
       }
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P11B-P12-REVIEW.md",
       "detail": {
         "zh": "第五次独立审查：所审的全部声明接受，公理报告为空；章节省去了 present 不重复这一必要前提，核心中没有满足全部前提的正面见证，Taking 只用到一半，补充者的改名未完成，不息的结论依赖一对一的同一（已在整合文档中更正）。",
         "en": "Fifth independent review: every declaration under review is accepted with empty axiom reports; the chapter omitted the necessary premise that present has no repetition, the core had no positive witness meeting every premise, only half of Taking is used, the rename to renewer was incomplete, and the unceasing conclusion depends on one-to-one identity (corrected in the integration note)."
@@ -551,18 +551,18 @@
       ]
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
       "role": "review",
       "sha256": "aa26b8372d8c1b899d6e4dd1caadbddbd92f3f5ba74e49976b4b75e0b19b4ac7"
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P11B-P12-REVIEW.md",
       "role": "review",
       "sha256": "84766b7a6f16b5822c58f75a1a947c458e6578ceb4975afd4fd8975820d22b65",
       "declarations": []
     },
     {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md",
+      "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md",
       "role": "review",
       "sha256": "d0f676a0375d520738f2e017fc6c2d165b73733c9c8b50057e155bcb00ce66ba",
       "declarations": []
