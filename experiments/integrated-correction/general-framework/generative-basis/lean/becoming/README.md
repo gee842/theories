@@ -132,9 +132,9 @@ Each layer imports only those below it (within L2, `Becoming.Diagonal` imports `
 python3 -B experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py
 ```
 
-[`check_becoming.py`](check_becoming.py) 解析导入闭包，核对每个继承模块的当前字节与其已通过回执一致，按依赖顺序用 Lean 4.29.1 编译，逐条审计公理，并核对核心的三项纯净条件。结果写入 [`becoming-verification.json`](becoming-verification.json)；每次运行在 `becoming-checks/` 保留回执、实际运行步骤的驱动与日志，以及 `main` 未逐字节持有的源与检查器文件的副本（2026-10-12 起；其余由回执的 `source_commit` 与 sha256 指明）。
+[`check_becoming.py`](check_becoming.py) 解析导入闭包，核对每个继承模块的当前字节与其已通过回执一致，按依赖顺序用 Lean 4.29.1 编译，逐条审计公理（含核心闭包与桥中 Lean 的全部常量），并核对核心的三项纯净条件。结果写入 [`becoming-verification.json`](becoming-verification.json)；每次运行在 `becoming-checks/` 保留回执、实际运行步骤的驱动与日志，以及 `main` 未逐字节持有的源与检查器文件的副本（2026-10-12 起；其余由回执的 `source_commit` 与 sha256 指明）。
 
-The checker resolves the import closure, requires inherited modules to match passed receipts, compiles in dependency order with Lean 4.29.1, audits the axioms of every source declaration and of every constant Lean generates in the core closure, and checks the core's three purity conditions. The receipt records the result; each run's folder in `becoming-checks/` keeps the receipt, the drivers and logs of the steps that ran, and copies of the source and checker files `main` does not hold byte for byte (from 12 October 2026; the rest are named by the receipt's `source_commit` and sha256).
+The checker resolves the import closure, requires inherited modules to match passed receipts, compiles in dependency order with Lean 4.29.1, audits the axioms of every source declaration and of every constant Lean holds for the core closure and the bridge modules, and checks the core's three purity conditions. The receipt records the result; each run's folder in `becoming-checks/` keeps the receipt, the drivers and logs of the steps that ran, and copies of the source and checker files `main` does not hold byte for byte (from 12 October 2026; the rest are named by the receipt's `source_commit` and sha256).
 
 每个 Lean 步骤以其读入的全部内容为键：工具链与二进制、本身字节，以及（经其键）所导入模块闭包的字节。键与先前已通过的步骤相同时，从各运行与各工作树共享的缓存（`~/.cache/becoming-lean`，可用 `BECOMING_LEAN_CACHE` 改）取回其输出与日志，不再重跑；所以只有改动的模块及依赖它的模块重新编译与审计。回执的 `lean_steps` 列出本次实际运行的步骤和被复用的步骤及其来源运行。`BECOMING_FRESH=1` 重跑全部步骤；`LEAN_TIMEOUT` 设每次 Lean 运行的秒数。[`check_correction_inquiry.py`](../universal-ethics/generative-capacity/check_correction_inquiry.py) 用同一缓存，键中另含 Mathlib 修订。
 
@@ -143,6 +143,34 @@ The checker resolves the import closure, requires inherited modules to match pas
 Each Lean step is keyed by everything it reads: the toolchain and binary, its own bytes and, through their keys, the bytes of its whole import closure. A step whose key matches one that passed earlier is not run again; its outputs and log come from a cache shared by runs and worktrees (`~/.cache/becoming-lean`, or `BECOMING_LEAN_CACHE`), so only changed modules and the modules depending on them are compiled and audited again. The receipt's `lean_steps` lists the steps run and the steps reused, each with the run it came from. `BECOMING_FRESH=1` runs every step; `LEAN_TIMEOUT` sets the seconds allowed for each Lean run. [`check_correction_inquiry.py`](../universal-ethics/generative-capacity/check_correction_inquiry.py) uses the same cache, with the Mathlib revision in its keys.
 
 To build changed or new modules in scratch, use [`scratch_build.py`](scratch_build.py) `TREE [MODULE ...]`: TREE holds a session's changed or added modules at their package paths and every other module comes from this checkout. It compiles the import closure with the checker's command, toolchain and step keys, reuses passed steps from the cache and stores the steps that pass, so the landing run and other sessions reuse them; it then audits the named modules' declarations with the checker's own `#print axioms` driver, cached the same way. It is not a receipt: the environment audit, the controls and the prelude-only compile of the core run only in the checker.
+
+## 自行验证 / Verify it yourself
+
+1. 安装 elan（Lean 工具链管理器）：`curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh`，再安装本包的工具链：`elan toolchain install leanprover/lean4:v4.29.1`（本目录的 [`lean-toolchain`](lean-toolchain) 写的就是它）。另需 Python 3（只用标准库）；有 git 时，回执以 `main` 的提交指明其持有的文件，没有时全部复制进运行目录。
+2. 在仓库根目录运行（不用缓存，输出写到仓库之外）：
+
+```bash
+BECOMING_FRESH=1 BECOMING_OUT=/tmp/becoming-run \
+  python3 -B experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py
+```
+
+3. 最后一行 JSON 的 `"status": "passed"` 表示以下各项都已在本机检查：**核心纯净**：核心的导入闭包恰为基础模块与核心模块，都是本仓库的文件（不含 Mathlib 或 `Lean` 元编程）；**公理报告为空**：基础、核心与桥的每条源声明 `#print axioms` 都报告不依赖任何公理（继承的外围模块只可用 `propext`、`Quot.sound`、`Classical.choice`，照录不改）；**只用序言编译**：去掉 `import Std` 后，核心闭包仅凭 Lean 的序言编译通过，警告即失败；**环境审计**：核心闭包与桥模块中 Lean 的每个常量（含生成的常量、私有声明与无名实例）都不依赖公理，唯一例外是构造子的单射引理 `injEq` 依赖 `propext`，且它们都不是源声明。此外：Lean 版本须为 4.29.1，二进制的 sha256 写入回执；对照例子编译通过。
+4. 环境变量：`BECOMING_FRESH=1` 重跑全部步骤，不用缓存（缓存在仓库之外且无认证，所以对外声称结果时要用它）；`BECOMING_OUT=<dir>` 把运行目录与回执写到该目录，仓库不变；`BECOMING_JOBS` 同时运行的 Lean 步骤数（默认核数的一半，1 为逐个运行）；`LEAN_TIMEOUT` 每次 Lean 运行的秒数（默认 600，机器繁忙时调大）；`BECOMING_LEAN_CACHE` 缓存目录（默认 `~/.cache/becoming-lean`）；`LEAN` 指定 Lean 二进制，否则用本目录下 `elan which lean` 的结果，再否则用 elan 的默认路径。
+
+外围中用 Mathlib 的检查器（如 `check_correction_inquiry.py`）依赖仓库之外的 Mathlib 项目：`SYSTEMS_MATHLIB_PROJECT`，默认 `~/repos/生生不息`，工具链 v4.30.0-rc2，与核心的 v4.29.1 不同。其 `lakefile.lean` 与 `lake-manifest.json` 原样保存在 [`../periphery-mathlib-pin/`](../periphery-mathlib-pin/README.md)，固定 Mathlib 修订；上面的核心检查不需要它。
+
+1. Install elan, the Lean toolchain manager: `curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh`, then the package's toolchain: `elan toolchain install leanprover/lean4:v4.29.1` (the one this folder's [`lean-toolchain`](lean-toolchain) names). Python 3 (standard library only) is also needed; with git, the receipt names the files `main` holds by its commit, and without it every file is copied into the run folder.
+2. From the repository root, with no cache and the output outside the repository:
+
+```bash
+BECOMING_FRESH=1 BECOMING_OUT=/tmp/becoming-run \
+  python3 -B experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py
+```
+
+3. `"status": "passed"` in the last line of JSON means all of the following were checked on your machine. **Core purity**: the core's import closure is exactly the foundation and the core modules, all files of this repository (no Mathlib, no `Lean` metaprogramming). **Empty axiom reports**: `#print axioms` reports no axiom for every source declaration of the foundation, the core and the bridge (inherited periphery modules may use only `propext`, `Quot.sound` and `Classical.choice`, recorded as they are). **Prelude-only compile**: with `import Std` removed, the core closure compiles from Lean's prelude alone, warnings failing the run. **Environment audit**: every constant Lean holds for the core closure and for the bridge modules (generated constants, private declarations and unnamed instances included) depends on no axiom, the one exception being constructors' injectivity lemmas (`injEq`) on `propext`, none of them a source declaration. Also: the Lean version must be 4.29.1 and the binary's sha256 is recorded; the control examples compile.
+4. Environment variables: `BECOMING_FRESH=1` runs every step without the cache (the cache is outside the repository and unauthenticated, so use it for any claim made to others); `BECOMING_OUT=<dir>` writes the run folder and the receipt to that directory and leaves the repository unchanged; `BECOMING_JOBS` sets how many Lean steps run at once (default half the cores, 1 for one at a time); `LEAN_TIMEOUT` sets the seconds allowed for each Lean run (default 600; raise it on a loaded machine); `BECOMING_LEAN_CACHE` sets the cache directory (default `~/.cache/becoming-lean`); `LEAN` names the Lean binary, else what `elan which lean` finds in this folder is used, else elan's default path.
+
+The periphery checkers that use Mathlib (such as `check_correction_inquiry.py`) depend on a Mathlib project outside the repository: `SYSTEMS_MATHLIB_PROJECT`, by default `~/repos/生生不息`, with toolchain v4.30.0-rc2, not the core's v4.29.1. Its `lakefile.lean` and `lake-manifest.json` are kept byte for byte in [`../periphery-mathlib-pin/`](../periphery-mathlib-pin/README.md), pinning the Mathlib revision; the core check above does not need it.
 
 ## 扩展 / Extending
 
