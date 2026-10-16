@@ -126,3 +126,6 @@ The evolutionary-theory session now follows [Ren’s social/organizational direc
 
 
 [Ren’s one-theory clarification](../sources/15-codex-theory-conversations/2026-10-13-one-theory-normativity-meta-attractor.md): meta-attraction, purpose formation, knowing, normativity and revision are differentiated explanations within the same Theory of Becoming. Continue P98 through existing shared definitions and results, not independent theories later joined; preserve exact proof and warrant scopes. / 同一生成展开中解释这些关系；本轮是既有研究的统一落实，不另建理论或接管其他会话。
+
+
+[Ren’s 16 October request for a whole-repository review](../sources/15-codex-theory-conversations/2026-10-16-whole-repo-review-request.md): review the whole repository at once; report its architecture, what is proved and what needs to change; restructure, reindex, rewrite, move outdated files to history and clean up. The review was read-only. The restructure is a [plan for Ren to decide](research/2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/RESTRUCTURE-PLAN.md); it changes no other scope or authorization. / 全库审阅只读完成；重构为待 Ren 决定的计划，不改变其他范围与授权。
