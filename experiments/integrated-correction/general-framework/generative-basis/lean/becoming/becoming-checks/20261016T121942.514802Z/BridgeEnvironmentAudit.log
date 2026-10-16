@@ -1,0 +1,9 @@
+CONSTANTS Becoming.Bridge 303
+CONSTANTS Becoming.CompositionBridge 64
+CONSTANTS Becoming.JoiningBridge 125
+CONSTANTS Becoming.GranularityBridge 78
+AXIOMS Becoming.RepairComparison.State.mk.injEq [propext]
+CONSTANTS Becoming.RepairComparison 192
+CONSTANTS Becoming.Instances 44
+CONSTANTS Becoming.RenewalBridge 40
+CONSTANTS Becoming.CoursesBridge 5
