@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
-    "zh": "语境中的诸读法（量子的亦然）总是一个世界；不依语境的描述恰在它们粘合处存在；所立与交换恰在流平衡处同样读出变化；算入其余时每个世界都是交换的一次运行；在不变之下意义不停在边界上。",
-    "en": "Readings in context, quantum ones too, always make one world; a context-free description exists exactly where they glue; standing and exchange read change alike exactly where the flow balances; counting the rest, every world is one run of exchange; under invariance significance stops at no boundary."
+    "zh": "语境中的诸读法（量子的亦然）组成一个世界；不依语境的描述恰在它们粘合处存在；所立与交换恰在流平衡处同样读出变化；算入其余时，任何水平序列都是交换的运行，每个世界亦然；在不变之下意义不停在边界上。",
+    "en": "Readings in context, quantum ones too, make one world; context-free description exists just where they glue; standing and exchange read change alike just where flow balances; counting the rest, any level sequence, so any world, runs by exchange; under invariance significance stops at no boundary."
   },
   "laws": [
     {
@@ -460,6 +460,10 @@
     {
       "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)）：此前说“第二部分”断言公理或 G0 为第二部分定理之处，改为“以那一条公理为条件”，指向章节 §6.15；理论不断言这一条件。断言、证明与证据不变。",
       "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：World.unity 的第一合取项对每个世界都成立：算入其余时每个水平序列都是 exchange 的运行，所以它不排除任何东西；陈述“算入其余，每个世界都是一次交换的运行”没有说这一点（审查第 33 项，P2）。陈述补上“任何水平序列都是”；为守住长度，几处改用更短的说法，“总是”去掉，意义不变。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): the first conjunct of World.unity holds of every world: with the rest counted every sequence of levels is a run of exchange, so it excludes nothing, and the statement “counting the rest, every world is one run of exchange” did not say so (review item 33, P2). The statement now says any level sequence is; to stay within the length a few phrases are shortened and “always” is dropped, the meaning otherwise unchanged. Claim narrowed; no theorem changed."
     }
   ],
   "text_versions": []

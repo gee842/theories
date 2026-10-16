@@ -2,16 +2,16 @@
   "schema_version": 2,
   "id": "observation-is-a-route",
   "title": {
-    "zh": "观察是从所观察者出发的路线：差别只往下游去",
-    "en": "Observation is a route from what is observed: a difference goes only downstream"
+    "zh": "观察不出下游：差别只往下游去",
+    "en": "Observation lies within the downstream: a difference goes only downstream"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
-    "zh": "一个储量之差只往它的下游去；对每个读入每个条件的律，只在储量上不同的进程在不在其下游之处都相同，所以一个形成只经它所读的、在储量下游的水平识储量，所观察者是长度为零的路线；路线由闭合而形成。",
-    "en": "A stock's difference goes only downstream; for every law reading into each condition, courses apart only in the stock are alike wherever not downstream of it, so a formation registers it only through a level it reads downstream, observing it being the route of length zero; a route forms by closing."
+    "zh": "一个储量之差只往它的下游去；对每个读入每个条件的律，只在储量上不同的进程在其下游之外都相同，所以一个形成只能经它所读的、在储量下游的水平识储量，所观察者是长度为零的路线；路线由闭合而形成。",
+    "en": "A stock's difference goes only downstream; for every law reading into each condition, courses apart only in the stock are alike off its downstream, so a formation can register it only through a level it reads downstream, observing it being the route of length zero; a route forms by closing."
   },
   "laws": [
     {
@@ -50,8 +50,8 @@
       ]
     },
     {
-      "zh": "所识即在下游：对每个读入每个条件一个时程、所读水平列出的律，两个平衡的进程在场的形成相同、部分动作相同、其余遵从律，起始只在一个储量上不同时，在每一步凡不在储量下游（按到那一步形成的所读路线）的条件都相同；所以一个形成所读入的水平都不在下游时它的交换相同，经识而读的律所识者都不在下游时也是。所观察的储量是长度为零的路线。",
-      "en": "Registering is being downstream: for every law reading into each condition a schedule of listed levels, two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in a stock, are alike at each step at every condition not downstream of the stock by the readings formed by then; so a formation whose readings into a condition all lie off the downstream exchanges alike, and so does one reading through registration whose registrations all lie off it. The stock observed is the route of length zero.",
+      "zh": "所识不出下游：对每个读入每个条件一个时程、所读水平列出的律，两个平衡的进程在场的形成相同、部分动作相同、其余遵从律，起始只在一个储量上不同时，在每一步凡不在储量下游（按到那一步形成的所读路线）的条件都相同；所以一个形成所读入的水平都不在下游时它的交换相同，经识而读的律所识者都不在下游时也是。所观察的储量是长度为零的路线。",
+      "en": "Registering lies within the downstream: for every law reading into each condition a schedule of listed levels, two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in a stock, are alike at each step at every condition not downstream of the stock by the readings formed by then; so a formation whose readings into a condition all lie off the downstream exchanges alike, and so does one reading through registration whose registrations all lie off it. The stock observed is the route of length zero.",
       "declarations": [
         "Becoming.apart_only_downstream",
         "Becoming.exchange_alike_off_downstream",
@@ -118,8 +118,8 @@
     "en": "Measurement with error; another's registration as a route; when what lies downstream must differ (lower bounds on responses); an independent review; Ren's judgment on the readings."
   },
   "correspondence": {
-    "zh": "P124 留下“一个形成怎样开始观察它所依赖的储量”；Ren 对 P124 的做法答“approve your approach, please continue”。本结果回答：观察是站在从所观察者出发的所读路线的末端。读法（AI 的，待 Ren）：观察不是依赖之外的第二种关系，直接观察是长度为零的路线，量度、模型或他者之识是更长的路线；一个形成开始观察，是一次读闭合一条路线；P124 第二项读法中断裂之前对储量水平的读就是这样一条路线。",
-    "en": "P124 left open how a formation comes to observe a stock it depends on; Ren answered P124's approach with “approve your approach, please continue”. This result answers: to observe is to stand at the end of a route of readings from what is observed. Readings (the AI's, pending Ren): observation is not a second relation beside dependence, direct observation being the route of length zero and a measurement, a model or another's registration a longer route; a formation comes to observe by a reading that closes a route; the reading of the stock's level before the break in P124's second reading is such a route."
+    "zh": "P124 留下“一个形成怎样开始观察它所依赖的储量”；Ren 对 P124 的做法答“approve your approach, please continue”。本结果部分回答：一个形成只能在从所观察者出发的所读路线的末端观察；反方向（在下游者必识）不成立。这一必要性是一种无干扰性质（Goguen 与 Meseguer 1982）：不在储量下游者不受它影响，如信息流的依存图读法。读法（AI 的，待 Ren）：观察不是依赖之外的第二种关系（AI 的注：定理只表明观察不越出依赖，未表明观察就是依赖），直接观察是长度为零的路线，量度、模型或他者之识是更长的路线；一个形成开始观察，是一次读闭合一条路线；P124 第二项读法中断裂之前对储量水平的读就是这样一条路线。",
+    "en": "P124 left open how a formation comes to observe a stock it depends on; Ren answered P124's approach with “approve your approach, please continue”. This result answers in part: a formation can observe only at the end of a route of readings from what is observed; the converse, that what lies downstream registers, fails. That necessity is a noninterference property (Goguen and Meseguer 1982): what is not downstream of the stock is unaffected by it, as in the dependency-graph reading of information flow. Readings (the AI's, pending Ren): observation is not a second relation beside dependence (the AI's note: the theorem shows only that observation does not go beyond dependence, not that it is dependence), direct observation being the route of length zero and a measurement, a model or another's registration a longer route; a formation comes to observe by a reading that closes a route; the reading of the stock's level before the break in P124's second reading is such a route."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
   "aliases": [
@@ -562,6 +562,10 @@
     {
       "zh": "2026-10-16：新增，按 Ren 同日“approve your approach, please continue”（P125）：一个形成怎样开始观察它所依赖的储量；研究 §159。",
       "en": "16 October 2026: added, on Ren's “approve your approach, please continue” of the same day (P125): how a formation comes to observe a stock it depends on; study section 159."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：标题与定律 3 说的是同一（“观察是路线”“所识即在下游”），apart_only_downstream 只证必要：不在下游者两边相同；反方向不成立，does_not_show 0 已承认（审查第 26 项，O5）。标题改为“观察不出下游”，陈述改为“只能经……识”，定律 3 改为“所识不出下游”，correspondence 中“本结果回答”改为部分回答并说明反方向不成立；读法“观察不是依赖之外的第二种关系”加注：定理只表明不越出依赖，这一读法的去留待 Ren（第 45 项）。correspondence 记 Goguen–Meseguer 1982（第 39 项，K7）。记录 id 不变。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): the title and law 3 claimed identity (“Observation is a route”, “Registering is being downstream”), while apart_only_downstream proves necessity only: what is not downstream stands alike; the converse fails, as does_not_show 0 concedes (review item 26, O5). The title now reads “Observation lies within the downstream”, the statement “can register it only through”, law 3 “Registering lies within the downstream”, and the correspondence answers in part and says the converse fails; the reading “observation is not a second relation beside dependence” gains the note that the theorem shows only that observation does not go beyond dependence, the reading itself being Ren's to keep, weaken or drop (item 45). The correspondence names Goguen–Meseguer 1982 (item 39, K7). The record id is unchanged. Claim narrowed; no theorem changed."
     }
   ],
   "text_versions": []

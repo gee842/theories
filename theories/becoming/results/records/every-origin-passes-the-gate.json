@@ -10,8 +10,8 @@
   "family": "F10",
   "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
-    "zh": "对每个过程与动作上的已定之门：非门控步反映的性质，终于其成立处的进程或始于其成立处，或经一个之后它成立的门控步，不判定该性质；离开非门控步保持的性质经过门。门是命题时这一律恰是双重否定消去。",
-    "en": "For every process and decided gate: where ungated steps reflect a property, a course ending where it holds started there or passes a gated step after which it holds, the property undecided; leaving a preserved property passes the gate. With a propositional gate this is double-negation elimination."
+    "zh": "对任何过程与动作上的已定之门：非门控步反映的性质，终于其成立处的进程或始于其成立处，或经一个之后它成立的门控步，不判定该性质；离开非门控步保持的性质经过门。对每个过程都要求时，以命题为门使这一律恰是双重否定消去。",
+    "en": "For any process and decided gate: if ungated steps reflect a property, a course ending where it holds starts there or passes a gated step after which it does, the property undecided; leaving a preserved one passes it. Asked of every process, propositional gates make this double-negation elimination."
   },
   "laws": [
     {
@@ -75,7 +75,7 @@
       "kind": "scope"
     },
     {
-      "zh": "不判定 p 时，起源之律给出第一个使 p 成立的门控步（之前 p 不成立）：它给出一个之后 p 成立的门控步。",
+      "zh": "不判定 p 时，第一个使 p 成立的门控步（之前 p 不成立）：律只给出一个之后 p 成立的门控步。",
       "en": "Without deciding p, the first gated step at which p comes to hold (failing before it): the law gives a gated step after which p holds.",
       "kind": "scope"
     },
@@ -327,6 +327,10 @@
     {
       "zh": "2026年10月16日，发布准备度复核（P129）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（发布复核（P129）：最小的识标明双重否定的强度（所经的识不能不含其敏感者）；“条件无穷多时这一条件不能去掉”改为“能否去掉取决于全知原则”（给定消失之判定，尾之律是反例；每个反例给出弱有限全知原则））。",
       "en": "16 October 2026, release-readiness review (P129): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (Release review (P129): the least registration marked at its double-negation strength (a registration read through cannot fail to hold a condition the law is sensitive to); “with infinitely many conditions this cannot be dropped” now reads “whether this can be dropped turns on omniscience” (given a decision of vanishing the tail law is a counterexample; every counterexample gives WLPO))."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：does_not_show 1 的中文把英文所列的不显示者（不判定 p 时第一个使 p 成立的门控步）写成了肯定的断言；中文改与英文一致（审查第 20 项）。陈述中“门是命题时这一律恰是双重否定消去”补上“对每个过程都要求时”：origin_of_propositions_iff 对一切过程量化，对一个过程这一律不是双重否定消去（第 21 项）。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): does_not_show 1's Chinese stated as shown what the English lists as not shown (without deciding p, the first gated step at which p comes to hold); the Chinese now matches the English (review item 20). The statement's “with a propositional gate this is double-negation elimination” now says “asked of every process”: origin_of_propositions_iff quantifies over every process, and for one process the law is not double-negation elimination (item 21). Claim narrowed; no theorem changed."
     }
   ],
   "text_versions": []

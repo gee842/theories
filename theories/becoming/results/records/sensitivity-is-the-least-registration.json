@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-15T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
-    "zh": "律在每个历史下读有限多个条件时，无论条件多少，它经其敏感而读，敏感是它所经的最小的识。条件无穷多时这一条件不能去掉：给定消失之判定，尾之律不敏感于任何条件而仍有差别；条件编号时，每个反例都给出弱有限全知原则。",
-    "en": "A law reading finitely many conditions under each history reads through what it is sensitive to, with any number of conditions: sensitivity is the least registration. Given a decision of eventual vanishing, the tail law is a counterexample; with numbered conditions every counterexample gives WLPO."
+    "zh": "律在每个历史下读有限多个条件时，经其敏感而读：于双重否定下，敏感是它所经的最小的识。给定消失之判定（它给出有限全知原则），尾之律是反例；条件编号时，每个反例都给出弱有限全知原则。",
+    "en": "A law reading finitely many conditions under each history reads through what it is sensitive to: up to double negation, sensitivity is the least registration. Given a decision of vanishing (giving LPO) the tail law is a counterexample; with numbered conditions every counterexample gives WLPO."
   },
   "laws": [
     {
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "zh": "读已立者的律在两个于其所敏感者上相同的历史下交换相同，只要它在其中一个历史下读某个列表之内。所以读有限多个条件的律，无论条件多少，经每个观察其所敏感者的识而读，而它所经的每个识都不漏掉其敏感者：敏感是最小的识，由动力学给出的比较随之。",
-      "en": "A law of what has stood gives alike under two histories agreeing on what it is sensitive to wherever it reads within a list under one of them. So a law reading finitely many conditions, however many there are, reads through every registration observing what it is sensitive to, and every one it reads through holds that: sensitivity is the least registration, and the comparison as the dynamics give follows.",
+      "zh": "读已立者的律在两个于其所敏感者上相同的历史下交换相同，只要它在其中一个历史下读某个列表之内。所以读有限多个条件的律，无论条件多少，经每个观察其所敏感者的识而读，而它所经的每个识都于双重否定下含其敏感者：在这一意义下敏感是最小的识，由动力学给出的比较随之。",
+      "en": "A law of what has stood gives alike under two histories agreeing on what it is sensitive to wherever it reads within a list under one of them. So a law reading finitely many conditions, however many, reads through every registration observing what it is sensitive to, and every one it reads through holds that up to double negation: sensitivity is the least registration in that sense, and the comparison as the dynamics give follows.",
       "declarations": [
         "Becoming.alike_of_sensitive_agree_within",
         "Becoming.ExchangeLaw.ReadsFinitely.through_of_observed",
@@ -148,8 +148,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
       "detail": {
-        "zh": "尾之律（给定消失之判定）：读已立者，不敏感于任何条件而仍有差别，它所经的识没有最小的：没有连续性时，最小的识不成立。",
-        "en": "The tail law (given the decision of vanishing): it reads what has stood, is sensitive to no condition and still differs, and the registrations it reads through have no least one: without continuity the least registration fails."
+        "zh": "尾之律，给定消失之判定（它给出有限全知原则）：读已立者，不敏感于任何条件而仍有差别，它所经的识没有最小的。所以给定这一判定，这一条件不能去掉；而去掉它的每个律都给出弱有限全知原则：单靠核心，这一条件既未被驳倒，也未被表明可以去掉。",
+        "en": "The tail law, given a decision of vanishing (which gives LPO): it reads what has stood, is sensitive to no condition and still differs, and the registrations it reads through have no least one. So the condition cannot be dropped given that decision, and any law dropping it gives WLPO: the core alone neither refutes the condition nor shows it droppable."
       }
     }
   ],
@@ -170,8 +170,8 @@
     "en": "What a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识本身仍是 Ren 的）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least registration, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; 识 itself stays Ren's): registration is sensitivity, a formation registering exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。有限全知原则出自 Bishop（1967），弱有限全知原则出自 Bridges 与 Richman（1987）；不连续的函数给出弱原则，是构造性反推数学的标准结果（Ishihara）。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识本身仍是 Ren 的）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least registration, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. The limited principle of omniscience is Bishop's (1967) and the weak one Bridges and Richman's (1987); that a discontinuous function gives the weak principle is a standard result of constructive reverse mathematics (Ishihara). Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; 识 itself stays Ren's): registration is sensitivity, a formation registering exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
   "aliases": [
@@ -494,6 +494,10 @@
     {
       "zh": "2026年10月16日，P126（Becoming.Tail，研究第160节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§2 加入整体而无部分之律一段，§8 的反馈与所及（反例存在的确切强度已给出），§9 加一行与术语；回执与合计改据新运行（7061 项定理、9713 项声明审计，核心闭包 125 个模块，包 130 个））。",
       "en": "16 October 2026, landing P126 (Becoming.Tail, study section 160): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§2 gains the paragraph on a law of the whole and no part, §8 under feedback and reach (the exact strength of a counterexample's existence is given), §9 gains a row and glossary entries; receipt and totals moved to the new run (7061 theorems, 9713 declaration audits, core closure 125 modules, package 130))."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：least_registration 的结论是 ¬¬ Registers，陈述与定律 1 改为“于双重否定下”最小（审查第 22 项，O2）。中文陈述的“条件无穷多时这一条件不能去掉”与反例 0 的“没有连续性时，最小的识不成立”说过了：尾之律以消失之判定为参数，它给出有限全知原则（lpo_of_vanish_decided），而每个反例给出弱有限全知原则（wlpo_of_not_through_sensitive），所以核心中这一条件既未被驳倒也未被表明可去掉（O1；发布准备度复核 §2 第 8 项）。中英陈述现在内容相同；陈述去掉“无论条件多少”，它由标题与定律承担。correspondence 记 Bishop 1967、Bridges–Richman 1987 与 Ishihara（K2）。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): least_registration concludes ¬¬ Registers, so the statement and law 1 now say the registration is least up to double negation (review item 22, O2). The Chinese statement's “with infinitely many conditions this cannot be dropped” and counterexample 0's “without continuity the least registration fails” overstated: the tail law takes the decision of vanishing as a parameter, that decision gives LPO (lpo_of_vanish_decided), and every counterexample gives WLPO (wlpo_of_not_through_sensitive), so in the core the condition is neither refuted nor shown droppable (O1; release-readiness review §2 item 8). The two statements now say the same; “with any number of conditions” leaves the statement and is carried by the title and the laws. The correspondence names Bishop 1967, Bridges–Richman 1987 and Ishihara (K2). Claim narrowed; no theorem changed."
     }
   ],
   "text_versions": []

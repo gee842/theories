@@ -242,8 +242,8 @@
     "en": "Contextuality beyond parity: the exact obstruction for general finite possibilities; probabilistic contextuality and the quantum values with real amplitudes (periphery); a correspondence theorem joining the periphery's CorrectionRelations cycle law to this one; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 问框架所失去的是否像“wave/particle”，并同意了把值读作语境中的识的回答；2026-10-15：“please make best of your judgement, and push the frontier of completeness”。本结果是 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”：对奇偶约束，“不依语境的主张是表示的承诺”成为确切的规律，这一承诺恰在一个可检查的障碍处失效，障碍给出 Bell 型的界。读法（AI 的，依 Ren 2026-10-15 的交托采用，DELEGATED-CHOICES D33）：m − 1 与 m 之差，是语境所承载的；值是语境中的识，一个关系。",
-    "en": "Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle”, and agreed with the reply reading a value as a registration in context; on 15 October 2026: “please make best of your judgement, and push the frontier of completeness”. This result is the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality”: for parity constraints, “context-free claims are a commitment of the representation” becomes an exact law, the commitment failing exactly at a checkable obstruction, which gives a Bell-type bound. Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D33): the difference between m − 1 and m is what the context carries; a value is a registration in context, a relation."
+    "zh": "Ren 2026-10-12 问框架所失去的是否像“wave/particle”，并同意了把值读作语境中的识的回答；2026-10-15：“please make best of your judgement, and push the frontier of completeness”。本结果是 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”：对奇偶约束，“不依语境的主张是表示的承诺”成为确切的规律，这一承诺恰在一个可检查的障碍处失效，障碍给出 Bell 型的界。奇偶律是 GF(2) 上的 Gauss 消元，即线性方程组的 Fredholm 择一；全有或全无的奇偶证明出自 Mermin（1990）与 Mermin–Peres 方格，上同调的奇偶判据出自 Abramsky、Barbosa、Kishida、Lal 与 Mansfield（2015，“Contextuality, cohomology and paradox”），奇偶博弈出自 Arkhipov（2012）。读法（AI 的，依 Ren 2026-10-15 的交托采用，DELEGATED-CHOICES D33）：m − 1 与 m 之差，是语境所承载的；值是语境中的识，一个关系。",
+    "en": "Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle”, and agreed with the reply reading a value as a registration in context; on 15 October 2026: “please make best of your judgement, and push the frontier of completeness”. This result is the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality”: for parity constraints, “context-free claims are a commitment of the representation” becomes an exact law, the commitment failing exactly at a checkable obstruction, which gives a Bell-type bound. The parity law is Gaussian elimination over GF(2), the Fredholm alternative for linear systems; all-versus-nothing parity proofs are Mermin's (1990) and the Mermin–Peres square's, the cohomological parity criterion is Abramsky, Barbosa, Kishida, Lal and Mansfield's (2015, “Contextuality, cohomology and paradox”), and parity games are Arkhipov's (2012). Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D33): the difference between m − 1 and m is what the context carries; a value is a registration in context, a relation."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
   "aliases": [
@@ -590,6 +590,10 @@
     {
       "zh": "2026-10-16：验证范围写明 P110–P112 落地时绑定的回执 20261015T192014.437564Z（此前写作“回执于落地时绑定”）；陈述、证明与绑定不变。",
       "en": "16 October 2026: the validation scope names the receipt bound when P110–P112 landed, 20261015T192014.437564Z (it read “receipt bound at landing”); statement, proofs and bindings unchanged."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：correspondence 记奇偶律的来源：GF(2) 上的 Gauss 消元（Fredholm 择一）、Mermin 1990 与 Mermin–Peres、Abramsky–Barbosa–Kishida–Lal–Mansfield 2015、Arkhipov 2012（审查第 39 项，K1）。断言不变。",
+      "en": "16 October 2026, eighteenth review (R18): the correspondence names the parity law's sources: Gaussian elimination over GF(2) (the Fredholm alternative), Mermin 1990 and Mermin–Peres, Abramsky–Barbosa–Kishida–Lal–Mansfield 2015 and Arkhipov 2012 (review item 39, K1). Claim unchanged."
     }
   ],
   "text_versions": []

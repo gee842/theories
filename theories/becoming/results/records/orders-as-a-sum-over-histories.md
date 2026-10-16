@@ -4,9 +4,9 @@
 
 `orders-as-a-sum-over-histories` · **recorded-checked** · theorem · F07 · [record](orders-as-a-sum-over-histories.json) · [register](../../../../RESULTS.md)
 
-> The carried amount is a sum over routes back in time: at horizon j + 1 the sum over histories is order j of the carried amount, so a cut is a truncation; every sum over histories expands by order, exact up to its horizon; a finite horizon is exact exactly where no loop lies upstream.
+> The carried amount is a sum over routes back in time: at horizon j + 1 the sum over histories is order j, a cut being a truncation; every such sum expands by order, exact to its horizon; with every condition listed and the law stationary, a finite horizon is exact exactly where no loop is upstream.
 >
-> 所携带的量是沿时间往回的路线之和：历史之和在视界 j + 1 上就是所携带的量的 j 阶，每一阶是历程之和，截断就是视界；每个历史之和按阶展开，j 阶到视界 j 精确；有限视界精确恰在上游没有回路处。
+> 所携带的量是沿时间往回的路线之和：历史之和在视界 j + 1 上就是 j 阶，截断就是视界上的截断；每个这样的和按阶展开，到其视界精确；条件全部列出、律每步相同时，有限视界精确恰在上游没有回路处。
 
 ## Laws / 规律
 
@@ -93,6 +93,7 @@ Aliases / 别名: `orders as a sum over histories`, `阶作为历史之和`, `su
 - 2026年10月16日，P127（Becoming.Onward，研究第161节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§1 加入运行在何处继续一段，§8 随之，§9 加一行与术语；回执与合计改据新运行（7089 项定理、9753 项声明审计，核心闭包 126 个模块，包 131 个））。 / 16 October 2026, landing P127 (Becoming.Onward, study section 161): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§1 gains the paragraph on where a run goes on, with §8, and §9 gains a row and glossary entries; receipt and totals moved to the new run (7089 theorems, 9753 declaration audits, core closure 126 modules, package 131)).
 - 2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（P128：第二部分折叠为 §6.15 的条件小节（理论不断言那一条公理；三条等价；不变的一步；条件之下每次缩小都失去有意义者，混合部分需要度量）；原第二部分一节移入 §6.15；一句话、两个目标、完整陈述、前提卡、第一部分引言、§5、§6、§7、§8、§9 与术语表中的“第二部分”改为“以那一条公理为条件”）。 / 16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (P128: Part II folded into the conditional section 6.15 (the theory does not assert the one axiom; the three equivalences; the step of invariance; under the condition every narrowing loses something with significance, so mixed parts need a measure); the Part II section moved into 6.15; “Part II” in the summary, the two targets, the full statement, the premise card, the Part I introduction, sections 5, 6, 7, 8, 9 and the glossary now reads “with the one axiom as a condition”).
 - 2026年10月16日，发布准备度复核（P129）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（发布复核（P129）：最小的识标明双重否定的强度（所经的识不能不含其敏感者）；“条件无穷多时这一条件不能去掉”改为“能否去掉取决于全知原则”（给定消失之判定，尾之律是反例；每个反例给出弱有限全知原则））。 / 16 October 2026, release-readiness review (P129): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (Release review (P129): the least registration marked at its double-negation strength (a registration read through cannot fail to hold a condition the law is sensitive to); “with infinitely many conditions this cannot be dropped” now reads “whether this can be dropped turns on omniscience” (given a decision of vanishing the tail law is a counterexample; every counterexample gives WLPO)).
+- 2026年10月16日，第十八次审查（R18）：陈述“有限视界精确恰在上游没有回路处”漏了定律 4 与假设中已有的条件：条件全部列出、形成与强度每步相同（审查第 31 项，O11）；中英陈述补上。中文去掉英文没有的“每一阶是历程之和”，由定律 4 承担，两种语言现在相同。断言收窄，定理不变。 / 16 October 2026, eighteenth review (R18): the statement “a finite horizon is exact exactly where no loop lies upstream” dropped the conditions law 4 and the hypotheses carry: every condition listed, and the same formations and strengths at every step (review item 31, O11); both statements now state them. The Chinese drops “each order is a sum over courses”, which the English never had and law 4 carries, so the two now say the same. Claim narrowed; no theorem changed.
 
 </details>
 
