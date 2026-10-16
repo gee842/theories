@@ -202,7 +202,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35f9576e1a104cc88a0f1e7bc4daa6dea1da4e8f5d94c513064603c1ffe9f3ee"
+      "sha256": "ded85732df2edc5d05c121ee8364dec538d6e349e4bd01a9154cdcf70e28f16e"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -482,6 +482,10 @@
     {
       "zh": "2026年10月16日，P127（Becoming.Onward，研究第161节）落地：改绑新回执并更新哈希：THE-THEORY-OF-BECOMING.md（§1 加入运行在何处继续一段，§8 随之，§9 加一行与术语；回执与合计改据新运行（7089 项定理、9753 项声明审计，核心闭包 126 个模块，包 131 个））。",
       "en": "16 October 2026, landing P127 (Becoming.Onward, study section 161): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (§1 gains the paragraph on where a run goes on, with §8, and §9 gains a row and glossary entries; receipt and totals moved to the new run (7089 theorems, 9753 declaration audits, core closure 126 modules, package 131))."
+    },
+    {
+      "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节）：改绑并更新哈希，断言不变：THE-THEORY-OF-BECOMING.md（P128：第二部分折叠为 §6.15 的条件小节（理论不断言那一条公理；三条等价；不变的一步；条件之下每次缩小都失去有意义者，混合部分需要度量）；原第二部分一节移入 §6.15；一句话、两个目标、完整陈述、前提卡、第一部分引言、§5、§6、§7、§8、§9 与术语表中的“第二部分”改为“以那一条公理为条件”）。",
+      "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space): rebound and rehashed, the claim unchanged:THE-THEORY-OF-BECOMING.md (P128: Part II folded into the conditional section 6.15 (the theory does not assert the one axiom; the three equivalences; the step of invariance; under the condition every narrowing loses something with significance, so mixed parts need a measure); the Part II section moved into 6.15; “Part II” in the summary, the two targets, the full statement, the premise card, the Part I introduction, sections 5, 6, 7, 8, 9 and the glossary now reads “with the one axiom as a condition”)."
     }
   ]
 }

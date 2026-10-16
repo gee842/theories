@@ -10200,6 +10200,30 @@ theorem runs_iff_selection :
 3. **搜索与可计算。** `search` 经 `Acc.rec` 递归，在纯核心中可编译、公理报告为空；它在有通过者处终止，那个存在只用于造出可达性的证明。这与 `Lasting.lifting` 不同：那里要选取的是无界的后继，无界不可测试。
 4. **范围。** 离散的步；有限世界的定理要求一个列出全部配置的列表；搜索要求测试与枚举；依赖选择是否在核心中成立没有陈述（需要核心之外的模型）。不含伦理谓词。
 
+## 162. 第二部分折叠进第一部分：一个条件小节（P128）
+
+2026-10-16。Ren 问：“does part II really needed or are they just the generative part of part I?”，随后定：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，保留等价定理，并指名不变的一步（[原话与语境](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)；所发回复的文字由 AI 起草，Ren 选定发送）。此前第二部分在 Ren 2026-10-11 的移动之后只断言一条公理（§69 的清点，P52）。
+
+```text
+Result(s): 不新增成果；复用 one-axiom-yields-g0、comparison-by-widening、four-cases-of-a-part、
+           closure-verdict-meets-axiom、metaethical-core-characterization（§6.11 的分解，Becoming.Boundaries）
+Delta: 结构与地位：理论不再断言那一条公理；它成为章节 §6.15 的条件。§6.15 收入原第二部分的内容（条件所定下的），
+       前置三条等价（Web.widens_iff_retains_adds、Web.keeps_iff_retains、Web.mixed_iff_adds），
+       并指名不变的一步（unrestricted_iff_presupposed_along、boundaryInvariant_iff_conditional、boundaryInvariant_iff_all）
+Supplied premises / correspondence: 那一条公理只作为条件；A、C、L、J1–J4 仍公开；不加前提
+Evidence: 不改 Lean 陈述与证明；所引定理名逐一在源中核对；章节、开篇脚注、目标记录、八条记录的现行字段与指令登记改写
+Boundary: 条件之下意义处处相同，所以每次缩小都失去有意义者（捕食、凋亡、终止一个癌）；混合部分的定序需要度量；
+          余量之界对任何意义成立（算术），条件只使它覆盖每个形成；“C 是规律”相对于把“更好”读作扩大；
+          Web.significance_undetermined 说意义是自由参数，不说条件“必需”；条件的根据开放
+Integration: 章节一句话、两个目标、完整陈述、前提卡、第一部分引言、§5、§6 引言、§6.12–§6.13、新 §6.15、
+             第一部分的总陈述、§7（加“在什么之下”）、§8、§9、术语表；OPENING 两个脚注（另修 World.rests_enclosed
+             为 World.rests_unrefuted_enclosed，同步审查会话的发现）；四个 Lean 文档注释留给下一次核心检查（审查会话 R18）
+```
+
+**为什么折叠。** 生成的空间已不用公理陈述（§6.13，P56）：扩大、保持不变与混合是规律，余量之界确切，把“更好”读作扩大时 C 是规律。三条等价表明，以公理为条件，扩大就是保留且增加有意义者：还原到可能性不失去任何东西。所以原第二部分不加任何规则；它所加的只是断言：生成的空间从每个立场都有意义，包括损失返回不到任何人的延续。动力学不决定这一点（`Web.significance_undetermined`），不用公理的路线 (b) 只到达自身及其所依存的（§6.9），§6.11 把断言在预设之外所加的全部定位在不变的一步。所以这一断言不是理论的一部分，而是一个条件：理论陈述在它之下推出什么，不断言它。G0 的授权路线保持其范围；G0 在条件之下是定理，§7 在条件与实践前提之下陈述。
+
+**审查会话的一项修正一并写入。** 同日的发布审查（审查会话 “Codebase review and proof readiness”）指出：`Unrestricted` 严格强于 G0，并使意义成为常量，所以在它之下每次关闭都失去有意义者；`loses_iff_beyond_margin` 对每个意义成立；`Web.significance_undetermined` 只表明意义是自由参数。§6.15 据此写：余量之界归于算术，条件只使它覆盖每个形成；条件不分出害与不害，混合部分需要度量；C 是规律是因为“更好”读作扩大。审查的其余项（“不用公理”的三种意义、可判定性只在双重否定或判定之下成立的定理）由审查会话在 P128 之后处理。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -11927,3 +11951,9 @@ This section covers the first. Each of the 31 earlier versions now names, on its
 - **In general.** A run from every member of every family that keeps moving, asked of every process, is exactly dependent choice (`runs_iff_selection`, `DependentSelection`).
 
 Readings (the AI's, pending Ren): within finitely many configurations, what goes on without end does so by coming round, read off the unfolding with nothing selected; where configurations are not bounded, going on without end is given where the moves can be searched, and asked of every process it is exactly dependent choice. Not derived: whether the core gives dependent choice; the laws along runs where nothing lists the configurations.
+
+**Part II folded into Part I as one conditional section (P128, 16 October 2026).** Ren asked “does part II really needed or are they just the generative part of part I?”, then decided to fold Part II into Part I as one conditional section after the generative space, keeping the equivalence theorems and naming the step of invariance (the reply's text was drafted by the AI and sent by Ren). After Ren's move of 11 October, Part II asserted only the one axiom.
+- **No rule is lost.** The generative space is stated with no axiom (section 6.13), and with the axiom as a condition widening is retaining and adding what has significance, keeping the same is retaining both ways, and being mixed is adding both ways (`Web.widens_iff_retains_adds`, `Web.keeps_iff_retains`, `Web.mixed_iff_adds`). The former Part II added no rule, only the assertion that the generative space has significance from every standpoint.
+- **The assertion becomes a condition.** The dynamics do not decide it (`Web.significance_undetermined`: significance is a free parameter), so the chapter now states it as the condition of section 6.15 and does not assert it. Section 6.15 gathers what the condition settles and names the step of invariance: along any relation, the condition is exactly the self's presupposition at each standpoint together with that step (`unrestricted_iff_presupposed_along`, `boundaryInvariant_iff_conditional`, `boundaryInvariant_iff_all`). G0 is a theorem under the condition, section 7 is stated under it, and the authorized G0 route keeps its scope.
+- **A correction from the release review, folded in.** Under the condition significance is the same everywhere, so every narrowing loses something with significance, and telling harm from what is not harm needs a measure; the margin boundaries hold for any significance, as arithmetic; C is a law because “better” is read as widening.
+- **Scope.** Docs only: no Lean statement or proof changes; the four Lean docstrings that say “Part II” are left to the review session's next core run. Not settled: the warrant of the condition, a measure for mixed parts.

@@ -352,8 +352,8 @@
     {
       "id": "practical-judgment-g0-j",
       "detail": {
-        "zh": "判断的伦理正当性走第二部分（G0 为那一条公理的定理），本记录不改变它，也不含伦理谓词。",
-        "en": "The ethical warrant of judgment goes through Part II (G0 a theorem of the one axiom); this record does not change it and contains no ethical predicate."
+        "zh": "判断的伦理正当性走章节 §6.15 的条件（以那一条公理为条件 G0 是定理），本记录不改变它，也不含伦理谓词。",
+        "en": "The ethical warrant of judgment goes through the condition of chapter section 6.15 (with the one axiom as a condition, G0 is a theorem); this record does not change it and contains no ethical predicate."
       }
     },
     {
@@ -413,8 +413,8 @@
       "kind": "scope"
     },
     {
-      "en": "The ethical warrant of judgment belongs to Part II.",
-      "zh": "判断的伦理正当性走第二部分。",
+      "en": "The ethical warrant of judgment goes through the one axiom, which the theory states as a condition.",
+      "zh": "判断的伦理正当性走那一条公理，理论把它作为条件陈述。",
       "kind": "scope"
     }
   ],
@@ -899,6 +899,10 @@
     {
       "zh": "2026-10-16，整合 I4b 第二项的后续（研究第153节）：Selection.lean 只改注释（“只读记录的选择”一节改称“经选项模型的选择”），Learning.lean 加一节，8 项定理连接选项的模型与其归并；本记录所引的声明不变。Learning.lean and Selection.lean 改用新哈希，证明绑定移到核心回执 20261015T202927.668755Z。",
       "en": "16 October 2026, I4b item 2 follow-up (study section 153): Selection.lean changes only in comments (the section “Selection by the record alone” renamed “Selection through a model of the options”), and Learning.lean gains a section of eight theorems linking a model of the options to its lumping; the declarations this record cites are unchanged. Learning.lean and Selection.lean take the new hashes, and the proof bindings move to core receipt 20261015T202927.668755Z."
+    },
+    {
+      "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)）：此前说“第二部分”断言公理或 G0 为第二部分定理之处，改为“以那一条公理为条件”，指向章节 §6.15；理论不断言这一条件。断言、证明与证据不变。",
+      "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged."
     }
   ],
   "text_versions": [

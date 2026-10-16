@@ -15,8 +15,8 @@
   },
   "hypotheses": [
     {
-      "zh": "S0、N_rel、N_std、A 是公开的规范前提，本结果不证明它们；它不用公理刻画 G0 的内容；G0 原是 Ren 采用的公理，Ren 2026-10-11 把它折叠，此后它在第一部分是条件，在第二部分是那一条公理的定理（P51）。“G0 ⇒ 前提”一侧几乎是平凡的，内容在反方向与极小性。",
-      "en": "S0, N_rel, N_std and A are explicit normative premises, not proved here; the result characterizes G0's content with no axiom; G0 was Ren's adopted axiom until Ren folded it on 11 October 2026, after which it is a condition in Part I and a theorem of the one axiom in Part II (P51). The direction from G0 to the premises is nearly immediate; the content lies in the converse and in minimality."
+      "zh": "S0、N_rel、N_std、A 是公开的规范前提，本结果不证明它们；它不用公理刻画 G0 的内容；G0 原是 Ren 采用的公理，Ren 2026-10-11 把它折叠，此后它在第一部分是条件（P51），以那一条公理为条件它是定理；Ren 2026-10-16 把第二部分折叠为章节 §6.15 的条件小节，理论不断言那一条公理（P128）。“G0 ⇒ 前提”一侧几乎是平凡的，内容在反方向与极小性。",
+      "en": "S0, N_rel, N_std and A are explicit normative premises, not proved here; the result characterizes G0's content with no axiom; G0 was Ren's adopted axiom until Ren folded it on 11 October 2026, after which it is a condition in Part I (P51) and a theorem with the one axiom as a condition; on 16 October 2026 Ren folded Part II into the conditional section 6.15 of the chapter, and the theory does not assert the one axiom (P128). The direction from G0 to the premises is nearly immediate; the content lies in the converse and in minimality."
     },
     {
       "zh": "A 是关于有贡献理由的外在论表述：在所见范围上确保自身立场下的正面内容、且有通达，即有一项支持理由；不以认同为条件。",
@@ -665,6 +665,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Metaethics.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)）：此前说“第二部分”断言公理或 G0 为第二部分定理之处，改为“以那一条公理为条件”，指向章节 §6.15；理论不断言这一条件。断言、证明与证据不变。",
+      "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged."
     }
   ]
 }

@@ -121,8 +121,8 @@
     }
   ],
   "limitations": {
-    "zh": "移除时每个原步的移动之步是给定的（Stutter.Moves）；第二部分的谓词的不变性没有证明；连续时间没有陈述；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
-    "en": "The moving step for each step read is supplied for the removal (Stutter.Moves); invariance of the predicates of Part II is not shown; continuous time is not stated; the readings are the AI's, adopted on Ren's delegation; no ethical predicate occurs."
+    "zh": "移除时每个原步的移动之步是给定的（Stutter.Moves）；意义谓词（§6.15 的条件所用者）的不变性没有证明；连续时间没有陈述；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
+    "en": "The moving step for each step read is supplied for the removal (Stutter.Moves); invariance of the significance predicates (those the condition of section 6.15 uses) is not shown; continuous time is not stated; the readings are the AI's, adopted on Ren's delegation; no ethical predicate occurs."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Order 的 266 项定理全部空依赖，其中含 Stutter、World.stutter_premises_iff、stutter_total、World.stutter_arisingRecurs_iff、World.stutter_counted、Flow.sample_not_more、Expansion.more_step_relative、Lapse.reserve_step_relative、World.withoutIdle、World.IdleAt、Stutter.Moves、Stutter.moving_unique、World.withoutIdle_premises、World.withoutIdle_transmits、World.withoutIdle_counted、World.withoutIdle_totals与 World.withoutIdle_counts；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §102；尚无独立审查。",
@@ -297,8 +297,8 @@
     }
   ],
   "next_delta": {
-    "en": "Prove the invariance of Part II's predicates under stuttering; derive the moving steps where activity is decided.",
-    "zh": "证明第二部分谓词在停顿下的不变性；活动可判定时推出移动之步。"
+    "en": "Prove the invariance of the significance predicates (those the condition of section 6.15 uses) under stuttering; derive the moving steps where activity is decided.",
+    "zh": "证明意义谓词（§6.15 的条件所用者）在停顿下的不变性；活动可判定时推出移动之步。"
   },
   "history": [
     {
@@ -416,6 +416,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Order.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Order.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月16日，P128（Ren：把第二部分折叠进第一部分，作为生成的空间之后的一个条件小节，[来源](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)）：此前说“第二部分”断言公理或 G0 为第二部分定理之处，改为“以那一条公理为条件”，指向章节 §6.15；理论不断言这一条件。断言、证明与证据不变。",
+      "en": "16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged."
     }
   ]
 }
