@@ -1,6 +1,6 @@
 # 开放未来：新增的三个结构结果
 
-用于[白皮书v0.2](../WHITEPAPER-v0.2.md)第四、六、九节。源码：[OpenFuture.lean](OpenFuture.lean)。检查记录：[OpenFuture-verification.txt](OpenFuture-verification.txt)。原有二十项结果及其文件保持不变。
+用于[白皮书v0.2](../history/WHITEPAPER-v0.2.md)第四、六、九节。源码：[OpenFuture.lean](OpenFuture.lean)。检查记录：[OpenFuture-verification.txt](OpenFuture-verification.txt)。原有二十项结果及其文件保持不变。
 
 本文件使用Lean 4.29.1与Std，没有新增公理，没有跳过证明；三个结果的依赖报告不含`sorryAx`。部分简化使用Lean标准命题外延基础`propext`。本次源码SHA256在检查记录中。
 

@@ -2018,7 +2018,7 @@ Meta-Attractor 研究则追踪奖励、认知、规则与证据入口如何相�
 
 v1.1 核对源码 SHA256 与已有成功检查记录一致，未重跑未改变的证明。本次编辑保留旧代码和日志，新增的再生产示例与其他纸面结果均不计入机器证明范围。命名数量包含定义的直接后果、结构结果和小型反例，不作为理论深度或伦理证明比例。
 
-源码及记录：[GenerativeCore.lean](formal/GenerativeCore.lean)、[主模块检查](formal/verification.txt)、[OpenFuture.lean](formal/OpenFuture.lean)、[观察与反例检查](formal/OpenFuture-verification.txt)、[ExistenceConditions.lean](formal/ExistenceConditions.lean)、[条件模块检查](formal/ExistenceConditions-verification.txt)。复现工具链见[原形式化说明](formal/README.md)，新节号见[统一版形式索引](formal/README-v1.1.md)。旧 README 与源码头注沿用 v0.x 版本定位，统一版以本附录 A.4 为准。
+源码及记录：[GenerativeCore.lean](formal/GenerativeCore.lean)、[主模块检查](formal/verification.txt)、[OpenFuture.lean](formal/OpenFuture.lean)、[观察与反例检查](formal/OpenFuture-verification.txt)、[ExistenceConditions.lean](formal/ExistenceConditions.lean)、[条件模块检查](formal/ExistenceConditions-verification.txt)。复现工具链见[原形式化说明](formal/README.md)，新节号见[统一版形式索引](history/formal/README-v1.1.md)。旧 README 与源码头注沿用 v0.x 版本定位，统一版以本附录 A.4 为准。
 
 ### A.4 二十八个定理的逐项索引
 

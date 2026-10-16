@@ -1,6 +1,6 @@
 # 系统存续条件：五项新增机器检查
 
-对应[白皮书 v0.4](../WHITEPAPER-v0.4.md)第八章及[独立论证篇](../系统存续公理_论证篇.md)。源码为 [ExistenceConditions.lean](ExistenceConditions.lean)，运行与哈希见[检查记录](ExistenceConditions-verification.txt)。原有证明文件未修改。
+对应[白皮书 v0.4](../history/WHITEPAPER-v0.4.md)第八章及[独立论证篇](../系统存续公理_论证篇.md)。源码为 [ExistenceConditions.lean](ExistenceConditions.lean)，运行与哈希见[检查记录](ExistenceConditions-verification.txt)。原有证明文件未修改。
 
 ## 检查对象与范围
 

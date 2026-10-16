@@ -1,6 +1,6 @@
 # 系统存续与 Meta-Attractor 联合诊断表
 
-依据[白皮书 v0.4](WHITEPAPER-v0.4.md)第七、八、十一章。用于分析一项具体行动、项目或制度；本表是研究工具，尚不是经过验证的量表。此前[Meta-Attractor 工作表](Meta-Attractor-诊断工作表.md)保留。
+依据[白皮书 v0.4](history/WHITEPAPER-v0.4.md)第七、八、十一章。用于分析一项具体行动、项目或制度；本表是研究工具，尚不是经过验证的量表。此前[Meta-Attractor 工作表](Meta-Attractor-诊断工作表.md)保留。
 
 ## 1. 明确此次决定与保护对象
 

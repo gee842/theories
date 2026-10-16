@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "batch": "RC",
+  "date": "2026-10-16T21:02:05+00:00",
+  "base_commit": "6559896429afdf47a298533d2e51cd0cb2c55fc1",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/WHITEPAPER.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/WHITEPAPER.md",
+      "sha256": "92712649f256c2ffa51dc6701cb5e11dbcdb07e7d194f54b233637234035faa0",
+      "blob": "bae617308eda106c114a1f20a88d36ea9bc3dff9",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/WHITEPAPER.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.2.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/WHITEPAPER-v0.2.md",
+      "sha256": "b9e05592003aebd0930405e9c9f92f8dd8e8dbc8558f9093f3eb789fa247dc2d",
+      "blob": "a7b9ec2f9cf4ab946b07ee820c44ca69eaa47e70",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.2.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.3.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/WHITEPAPER-v0.3.md",
+      "sha256": "cd9e98532ed862ce71d6b1e51d701e833d154000c9053bb977d85670e241c431",
+      "blob": "c43610ccd18ebf1247c854148ceb4c47d4ffe925",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.3.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.4.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/WHITEPAPER-v0.4.md",
+      "sha256": "d763604ed98be70259eb2a70c7e778978439471b0a07d40ebb73313b231afb64",
+      "blob": "b9323a95fb7deb3c01d0953ee3c1cbbbaebdce16",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.4.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.5.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/WHITEPAPER-v0.5.md",
+      "sha256": "767c87fc4b8042ba3a03db2e1496511103531fdd884b10c038319738113fa1e2",
+      "blob": "42b5e2f4986c64ebe49fe8f83ecaa1dbf0972be6",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.5.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.6.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/WHITEPAPER-v0.6.md",
+      "sha256": "014d37ca6fc2ccdffef0becf5e6da60aa56d78bee1fcb1f20ecec8dc632545a4",
+      "blob": "efdec86fec885a41753c37343e5719a159d5b436",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v0.6.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.0.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/WHITEPAPER-v1.0.md",
+      "sha256": "ad3f6a418b18b1c917c4a66d2aca1c96a47e9de3189011e846c439f12f4375dc",
+      "blob": "5c42d02ecc387193d222fb501f09d518fafbacf6",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.0.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/README-v1.0.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/README-v1.0.md",
+      "sha256": "e2204a75d6cca0fc1429d96bbca480ffc0889f1fe01c7ca4130dbdede89f8f0c",
+      "blob": "de8e10e14b48662a07effb4d8ccaefc7fc07e566",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/README-v1.0.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/宣言-v1.0.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/宣言-v1.0.md",
+      "sha256": "9944a19506d2e920419b40da8b9bab2c63934f869e6f24d1f9fe258efefb5b4c",
+      "blob": "0ba06110cd32b9786d412f51ca67716ce3bac33e",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/宣言-v1.0.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/appendix-a.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/appendix-a.md",
+      "sha256": "bbe092cd1be32572803b22696449f7dc1c72d0d10a7ed163be5456561786918d",
+      "blob": "21c122ae7cf13ae0aa82bd3360456efac2ddefd7",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/appendix-c.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/appendix-c.md",
+      "sha256": "7e5a5b922cbaa1407c44431b0850b6e2a3f71c59459c9e577de27d5af5bb6a9a",
+      "blob": "b1418e06e0b15856afda4ea12519204859715c5e",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/assemble.py",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/assemble.py",
+      "sha256": "afdae291fa9dcd9445d9297fd0796779b34f831e07da2082b56ec44ce734ba41",
+      "blob": "223b831a9b31c22d1a1ad61a2fc84bd5df847ca6",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/coverage-v1.json",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/coverage-v1.json",
+      "sha256": "1ff9aa63248e42ab5a35365432ef7e6ddaf025e738efa05e4ec831bf8aa64c87",
+      "blob": "fe805e335661bc0168570e2417734d9b81a388e3",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/decision-integral.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/decision-integral.md",
+      "sha256": "5adbe0688806b241cc1debad4b0628760b4dfb1429e6c0bd96478b0124a4c54c",
+      "blob": "1e9e7d1b31752fe11b3f89a8cc777b93907e90a9",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/frontmatter.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/frontmatter.md",
+      "sha256": "ccd3d8115049301c2691f3ef97c327d1bdc879a6ab150336a5aad3d5aa66565a",
+      "blob": "d7260e29d3ae1693bac71c496d508cc47a22c7af",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/meta-extension.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/meta-extension.md",
+      "sha256": "764efe996ff5fb0b26049be7fe8067d4aee81b720af196b01ee151f1e41d178d",
+      "blob": "968f33ff48dfa5d95554f6ffa1c6154b5495136b",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/prepare_parts.py",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/prepare_parts.py",
+      "sha256": "d785f677c013a46d7734a000cd31b27acb93c2352bd4b6789017737cf8e4510a",
+      "blob": "43f45b3eaf15ad471116a23905a35450c0df372d",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/reused-section-map.json",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/reused-section-map.json",
+      "sha256": "913f8e73977c26dd5b5df39676632edd0e6e681738f0ee9b6e7b0908ac400731",
+      "blob": "85f7f6f7f58055b90a5a3ebd09cc3555fdbfe25c",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/v06-sections.json",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/v06-sections.json",
+      "sha256": "06a44ba1b6e701870102dc25775d5d4c0baa594fc44e1fbda3f45dbbcd38e0cb",
+      "blob": "17d0cf31f0e628494723fc41e0a90a2a231fd2c8",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-build/verify_v1.py",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-build/verify_v1.py",
+      "sha256": "a830005717435d4073c38acb8576dacbf25ca4f8498c5f864bf05cb07cc7e354",
+      "blob": "78fdf707b9a90339a5b5fafcd9a58bb705dcee76",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-build"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/01-生成基础.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/01-生成基础.md",
+      "sha256": "7f665355bc908652e0cfb25d17adbcee6cd09392154f6e645e6ee6ce11cf4154",
+      "blob": "fbed8646958cae5bddc9048a7048f5c1c6b6fb8e",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/02-系统条件.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/02-系统条件.md",
+      "sha256": "bd20697602cb4632a906eee850d4cdfae07dc6d22c966a917b2efba5d6977c42",
+      "blob": "8225bbd49aa47b802b45f6586289a4a8ee0ce9f7",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/03-认识与现实.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/03-认识与现实.md",
+      "sha256": "bda58a962f4ca8867163b59188ce1d2dd0f27f284929e040fa6d908174db7e4a",
+      "blob": "cd303d33f3a11813de828d04db4a1722c9d38015",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/04-公共善恶.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/04-公共善恶.md",
+      "sha256": "51ebd85b61fd5bfec2ab59cb6d93e4c80e3e8da2dfcf703af1f6725a909b9704",
+      "blob": "fe34acc6544f23daf357725acabf5cf4ccfc17e8",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/05-形式核心.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/05-形式核心.md",
+      "sha256": "212944944b47e6086f42c4cd5c98827833b7385410902e01f130f084ed2ad9c6",
+      "blob": "3ffef271c1a2e8276cd3818fa5cac177953ca9ae",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/06-认知选择.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/06-认知选择.md",
+      "sha256": "fdb9bad2bf0f4f83bcf710d4156e3dd74c24441fd0fb7b7a5ce4c8130965f8c7",
+      "blob": "8a82afeebb6f762d528635a3ad5a00d95af78911",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/07-演化与修复.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/07-演化与修复.md",
+      "sha256": "d5ece758b45d67c666556d6dbc946918598fe244c69c3b0051161b6687930613",
+      "blob": "f6aa6050c05850e9164fb5003973fa144c1ede04",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/08-情境决策.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/08-情境决策.md",
+      "sha256": "36db35621c491d7e1aeaf8a0860ce31a9eb0e8d1bdffe64c7fba1e15ebb58bea",
+      "blob": "5b24ae77c1dfad26c4c72c46ad3ecdbd768c5e54",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/09-智能向善.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/09-智能向善.md",
+      "sha256": "38151f40c7c3e704a0f656429559a9c54475cf2be70af8c18fa709dac9b62ac0",
+      "blob": "7f148b0d6ce3fa23781f5884ae365b45b422feb7",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/10-共同未来.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/10-共同未来.md",
+      "sha256": "eed6e2c299c097e527e97e743643f72ec477ae92725dc55c9494e3fa93d5feca",
+      "blob": "fee4146b1ede5d835534de0717d44e88a4595c19",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/11-组织与研究.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/11-组织与研究.md",
+      "sha256": "d9ad568def3c86cf1c881b62ef860621391bebc3633b491afdf65a432947e248",
+      "blob": "98584222b1f7ea6ffb8a24d83cfdcf02cb999c0f",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/_v1-parts/12-检验与结论.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/_v1-parts/12-检验与结论.md",
+      "sha256": "e8a21100f2dd2ad52a8e130199707437d0feeb284a6e04cbfdd84362fc73c85f",
+      "blob": "d91f8264b43342a7e206ea5e13e3fa4a2d958dea",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/_v1-parts"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.2-修订说明.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.2-修订说明.md",
+      "sha256": "d81524957ff9439f520bbbaf2d63c2626c3e18e07646244d920696ac2a33db57",
+      "blob": "c546bf11b338ae0f1e4d2571ebb9cd500b740885",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.2-修订说明.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.3-整合与来源.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.3-整合与来源.md",
+      "sha256": "040689b2e4009cad2713d7150138a2981a14196d4234635e92d8a797f779093c",
+      "blob": "feb8e6ffa0ed33e55b9aabf2c99a53c90d694d14",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.3-整合与来源.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.4-原版校验.json",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.4-原版校验.json",
+      "sha256": "bbe49618545aa874fbaeb1ac056a296062606c800e89e8d462f9bca76f547b61",
+      "blob": "64b7657992d78af88fe7dd7e2cefb2edec0f15ce",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.4-原版校验.json"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.4-整合与证明说明.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.4-整合与证明说明.md",
+      "sha256": "84a570c65a7e40a06b8dd858c5ae5d9aeec4683c65914a709dd246a9ec1dfc86",
+      "blob": "38ebb518f6f6b4ddd8738e19c76910404df8f574",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.4-整合与证明说明.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.4-检查记录.txt",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.4-检查记录.txt",
+      "sha256": "9e25c3a6624a50d73d6853bf1ac6c3b5ad1576910ab8a93a543c9e21acb45a66",
+      "blob": "54bd0e2e8cbae5c9475917b76aae338309ac9dfa",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.4-检查记录.txt"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.5-原版校验.json",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.5-原版校验.json",
+      "sha256": "50ca3c18fde05b281bd39725709561972ddf689b30b42879b254cf3dc8320cfb",
+      "blob": "080a7dc332e3dffc8da1a7692bbe486200b69dd7",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.5-原版校验.json"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.5-整合说明.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.5-整合说明.md",
+      "sha256": "7d0325b270ff72d3127e055da14a17d86dfd6d41b6cf38b364f4a12fbedbaf8e",
+      "blob": "dc1d64a351881d920a9e525097b192e656528e88",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.5-整合说明.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.5-检查记录.txt",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.5-检查记录.txt",
+      "sha256": "4dbd4d1784b78221f28793b74387b9cb425a48a7d6dcbe48a670331e3edc4eed",
+      "blob": "a94c5d86c6edbcbaf604eaf49c01b9448ad15cdc",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.5-检查记录.txt"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.6-原版校验.json",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.6-原版校验.json",
+      "sha256": "3c149f0e4805e84c5419e6ac0c6c1764d22866024f02d0be8174e629532ee70a",
+      "blob": "ffe59adf8815c28b466e89d5fa3f6a1cf5143758",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.6-原版校验.json"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.6-整合说明.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.6-整合说明.md",
+      "sha256": "0143a8ad5b6ce6bce7af00706ee1c592d3084dc9d7a12d4b031771928c596812",
+      "blob": "c7ac44f200def2afc548f9cb4bfca8cbe4f5ffc2",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.6-整合说明.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.6-完整性与形式化审计.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.6-完整性与形式化审计.md",
+      "sha256": "b19569f79cbc454b1e378f0f936b0e8bcf2679f8dfc69a1a6d63290ebe1e835e",
+      "blob": "c15aa4a514154bda9d21f28427d580180dda27d2",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.6-完整性与形式化审计.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v0.6-检查记录.txt",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v0.6-检查记录.txt",
+      "sha256": "8b2e753c967c5b0646444a0265ee7fb3e9116f0838cb985bb55242cc8b2761e7",
+      "blob": "a222fce714bf38495b02599fbdb311ea26807d4b",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v0.6-检查记录.txt"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v1.0-检查记录.json",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v1.0-检查记录.json",
+      "sha256": "8f3cef416fb93a76415e56805194d0dd39e9b412e05788ed3677f386249595b3",
+      "blob": "4d56cee843db1253239a61dcded4a6bc8f03e975",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v1.0-检查记录.json"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v1.0-原版校验.json",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v1.0-原版校验.json",
+      "sha256": "196f9deb94c6cf75646fcd962280f9d58815f649f387027a08abea198baca7a1",
+      "blob": "1dd89fd2e4c7f7744f9091ecfafc47576df8ece6",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v1.0-原版校验.json"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v1.0-审读意见.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v1.0-审读意见.md",
+      "sha256": "c0893a989bbdfddcd122874313e4d773f39513641db2f812fce3667c4054d36f",
+      "blob": "9c638cc83d516fe4524cdb2637e77e3d3cc81360",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v1.0-审读意见.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v1.0-整合说明.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v1.0-整合说明.md",
+      "sha256": "732745d24c09e07db200f8ca9975307297c9373929acbccb76d9dbdea8da9c52",
+      "blob": "fac17411e4a3764d1823d470d2d699fd9fd847b5",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v1.0-整合说明.md"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/v1.0-检查记录.txt",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/v1.0-检查记录.txt",
+      "sha256": "6c1c8929b472926309e17aa70b322fcfbf258400f036bce51f84bbda406bdb5b",
+      "blob": "07460bb7e33b06c30ddfd27c8dbda68d8a2ff2d1",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/v1.0-检查记录.txt"
+    },
+    {
+      "old_path": "drafts/2026-09-05-generative-foundations/formal/README-v1.1.md",
+      "new_path": "drafts/2026-09-05-generative-foundations/history/formal/README-v1.1.md",
+      "sha256": "501d2bc66631367ebd536d4ea0596044a4bd16b33717143ef5d5f05787031982",
+      "blob": "51c70abf38ca2813ec6618d6536bd0c5089d7a27",
+      "reason": "superseded whitepaper edition or its notes; README-v1.1 names WHITEPAPER-v1.1 as the current edition (WHITEPAPER.md is v0.1)",
+      "plan_entry": "drafts/2026-09-05-generative-foundations/formal/README-v1.1.md"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "drafts/2026-09-05-generative-foundations/Meta-Attractor-诊断工作表.md",
+      "old_sha256": "7505c0689d41518d516e030e95409320408f2cce69f1902672120bea5851e1c5",
+      "new_sha256": "23c194619ba913ebadbbb83cd1fc0fea4b072004e64fae7b507e667e77230bd9",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/README-v1.1.md",
+      "old_sha256": "ceaa89874dc54a35d8acb8810d0f698d482eaca93b9a6debfbacdc662028139f",
+      "new_sha256": "2d879241f78837a916356b8f39c17701d41abf5901bbf537834ec88ff4e18d02",
+      "references": 2
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.1.md",
+      "old_sha256": "e4d82f563b3d2ea144ecf1330daa5a9a98ad2f28c0abc73e5311b2c0989647b8",
+      "new_sha256": "94cc0f63e3bbb963651e608174a0d7dc965ecced1fc7ca0ce4560aa870f4fd0b",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/formal/ExistenceConditions-说明.md",
+      "old_sha256": "3b6f7799990813b79bb5d56ec9f392cf8fe1343a5891890441d42444a57ccebb",
+      "new_sha256": "7ad705f8d8bd2ea9bd8db58d59d4c77b75dbb56c83a647c77acea643cac560c6",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/formal/OpenFuture-说明.md",
+      "old_sha256": "f624e66b442f0213078c8bb2cdf0e1f74372c10f461c2532503f0ab38751f984",
+      "new_sha256": "49728f2d331dddb0eac187e29615064d2b20fec6067d4d3ecce7df0d7828355e",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/v1.1-修订说明.md",
+      "old_sha256": "24dc6617b248a2538825915f4a9d1f8cc51606190a7dfb2f5bd5d2c4ec5598ea",
+      "new_sha256": "fe0170dc60f57cf1efd6ee82423739c8fd1737db1ceede9628a8ae3b6045e108",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/三层现实与认知反馈_论证补篇.md",
+      "old_sha256": "d696c83a19dc677fb327ea6aad3d286297b4d533514323290f0b2d01889cf6c8",
+      "new_sha256": "11baa5bf449df7d6cc8a9edfa912e421f2ec30d1d34d7e2a7d17871b1034bb0a",
+      "references": 2
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/从差异到生生_认知与生成的递归推导.md",
+      "old_sha256": "52ce277dcb5f38533ce7558c111b03c87f36b697ae0762ce37939c626698701c",
+      "new_sha256": "bd90100ccfec478daa4ffac96c261166293f76c1626830f80fa1e10e60574010",
+      "references": 2
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/善恶的客观性与向善演化_论证补篇.md",
+      "old_sha256": "b5cadc272337c3af3ad5dc04cce16701b725998fd5b37a319f4b67abb404364c",
+      "new_sha256": "255dd612a77f4784a3da3c8c16ac46ef96ed1b47fed1626e3d52f1be435e2a25",
+      "references": 2
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/系统存续与Meta-Attractor_联合诊断表.md",
+      "old_sha256": "cbbe26b2dce1c39cdf6f19b77aed687cfef2e57e2d2da3be7ca4c84c3a96a046",
+      "new_sha256": "742f3d005d0e7e4f101f41ac103666ce261028a9087f71082d2ffd552cd42e85",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/系统存续公理_论证篇.md",
+      "old_sha256": "a5464433ae509402776d6489c313630332124752f9b1f8af1fb4f0e5c6541d49",
+      "new_sha256": "afeda56d713cdabe552698b96ab27ebf9f2b463e9242fc4284e07e878e989954",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-09-05-generative-foundations/论证与来源.md",
+      "old_sha256": "6f4677d027aae607cfbe39d8e39e93433d9cafe364919e26dafdcfb3bbffd344",
+      "new_sha256": "18147dbf568e29802615e4fa769b9ab984b0c9b4314f323550a6e1cdcf05dd5a",
+      "references": 1
+    }
+  ],
+  "history_roots": [
+    "drafts/2026-09-05-generative-foundations/history"
+  ],
+  "generated_pages_to_rerender": [],
+  "verification_errors": []
+}
