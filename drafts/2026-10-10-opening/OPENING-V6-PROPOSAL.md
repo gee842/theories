@@ -1,5 +1,7 @@
 # Opening, version 6: accuracy edits proposed for Ren
 
+**Applied 16 October 2026 with Ren's go** ([source](../../sources/15-codex-theory-conversations/2026-10-16-opening-v6.md)): edits 1–4 and f as proposed (f with the classical-axiom sentence moved after the “no axiom … is assumed” clause), 5 in form (b), 6 unchanged; frozen as [OPENING-V6.md](OPENING-V6.md).
+
 AI proposal, 16 October 2026, from the [release-readiness review](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md) §2. Not applied. [OPENING.md](../../theories/becoming/OPENING.md) changes only with Ren. P128 (`d444664e`) has already fixed the footnotes: `World.rests_enclosed` became `World.rests_unrefuted_enclosed`, and the axiom and ethics footnotes now point to §6.15. What follows covers the main text, plus one footnote sentence.
 
 Each edit is minimal. The aim is that no sentence of the main text says more than its footnote. A referee reads the strongest sentence, and today several footnotes take back what the sentence above them asserts.
