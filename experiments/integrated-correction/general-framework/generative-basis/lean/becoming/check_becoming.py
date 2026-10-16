@@ -78,7 +78,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking", "Becoming.LossMatching",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.Frequency", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.Frequency", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming.Runs", "Becoming.CourseWorlds", "Becoming.LearnableRuns", "Becoming.ParityReadings", "Becoming.FinerTraces", "Becoming.FormedLoops", "Becoming"]
 BRIDGE = ["Becoming.Bridge", "Becoming.CompositionBridge", "Becoming.JoiningBridge", "Becoming.GranularityBridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge", "Becoming.CoursesBridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -1418,6 +1418,31 @@ SCOPE = (
     "recognizing among enumerated moves a step that stays in the family gives a run by search; "
     "asked of every process, a run from every member of every family that keeps moving is exactly "
     "dependent choice. "
+    "Runs: a world is exactly a run of the law its webs and exchanges show and every run on webs "
+    "and exchanges is a world; a world balances exactly where it is a run of the law of exchange on "
+    "webs, and with the rest counted every world is such a run; a law of exchange's course is a "
+    "world, balanced exactly where the law is feasible, its generation is the one run of a "
+    "determined law, and the carried amount is the standing of a balanced world. "
+    "CourseWorlds: the gap between the worlds of two acts under one law is at most the carried "
+    "amount, attained, so the act worlds bound the difference exactly as every two balanced flows "
+    "do, and the laws of Loops, Remainder, Routes, Closing, Frequency, Thresholds and Observation "
+    "hold of those worlds. "
+    "LearnableRuns: a run of a determined law is its orbit, runs beginning alike in the frame of a "
+    "registration give every learner the same record, and in a world a list holds a target is "
+    "learnable along every run exactly where runs beginning alike have targets that agree from "
+    "some step on. "
+    "ParityReadings: the registrations glue at a step of a run exactly where the world of readings "
+    "is context-free there; for a parity system a respecting world of readings is context-free at "
+    "a step, and a frame of context-free claims fits, exactly where no selection of contexts "
+    "contradicts; quantum registrations of the square exist, leave the world of readings "
+    "context-free at no step and fit no frame of context-free claims. "
+    "FinerTraces: the finer courses of n steps are exactly the finer law's traces of n steps taking "
+    "listed moves to listed configurations; the law of steps of positive weight is the finer law "
+    "with the situation forgotten, and situations exist exactly where it has a course. "
+    "FormedLoops: up to a step, a world whose strengths are read off its own standing stands as "
+    "the balanced world its couplings formed before that step carry; the onset, threshold and "
+    "schedule witnesses of Closing and Frequency are balanced worlds, the threshold world's loop "
+    "of the couplings it reads off its own standing forming at the threshold and not before. "
     "Selection: two histories are selected alike by every selection through a selector's registration "
     "exactly when the selector registers them alike, and likewise for pooled registration; with the "
     "rest fixed, selection and scoring are blind beyond the registration closure; the clearer's "
