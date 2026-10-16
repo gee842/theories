@@ -2,7 +2,7 @@
 
 *5 October 2026. Conditional working paper. AI-assisted development and review are not independent human certification.*
 
-Start with [START-HERE](START-HERE.md). This edition extends preserved [V7.2](../v7.2/README.md) from a protected destination toward a feasible transition: a bounded mathematical construction, a worked institutional illustration and a proposed empirical comparison. [RELEASE-REVIEW](RELEASE-REVIEW.md) explains why completed development and review warrant the upgrade, with its limits.
+Start with [START-HERE](START-HERE.md). This edition extends preserved [V7.2](../history/v7.2/README.md) from a protected destination toward a feasible transition: a bounded mathematical construction, a worked institutional illustration and a proposed empirical comparison. [RELEASE-REVIEW](RELEASE-REVIEW.md) explains why completed development and review warrant the upgrade, with its limits.
 
 | File | Purpose |
 |---|---|

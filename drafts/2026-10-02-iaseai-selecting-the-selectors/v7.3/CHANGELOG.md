@@ -18,7 +18,7 @@ The edition uses `assemble_v73.py`, `refs_v73.py`, `xref_v73.py`, `checks_v73.py
 
 ## V7.2, 4 October 2026
 
-This edition follows Ren's request to integrate the proposal on correction through institutional change, after a team considered its mathematical, conceptual and empirical implications. [V7.1](../v7.1/README.md) and [its change record](../v7.1/CHANGELOG.md) remain unchanged. The supplied proposal is preserved in `planning/USER-PROPOSAL.txt`; the integration decision is recorded in `planning/INTEGRATION-PLAN.md`.
+This edition follows Ren's request to integrate the proposal on correction through institutional change, after a team considered its mathematical, conceptual and empirical implications. [V7.1](../history/v7.1/README.md) and [its change record](../history/v7.1/CHANGELOG.md) remain unchanged. The supplied proposal is preserved in `planning/USER-PROPOSAL.txt`; the integration decision is recorded in `planning/INTEGRATION-PLAN.md`.
 
 ### The constructive argument
 

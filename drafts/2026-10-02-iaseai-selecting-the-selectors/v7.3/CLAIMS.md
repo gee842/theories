@@ -1,6 +1,6 @@
 # V7.2 claim register
 
-Companion to [THEORY.md](THEORY.md), [SUPPLEMENT.md](SUPPLEMENT.md) and [DISCUSSION.md](DISCUSSION.md). It records the thesis (§1), definitions (§2), tags (§3), stable result inventory (§4), dependencies (§5), open interfaces (§6), disposition of the V6.2 review (§7), the author's historical renderings and decisions (§§8–9), the V7 readiness corrections (§10), and the V7.2 integration (§11). Revised by Codex on 4 October 2026 from V7.1. Sections 8–10 are preserved verbatim as a provenance record; their earlier locators and model renderings do not override the corrected current statements. Section 10 records the affected interpretations without attributing new words or endorsements to Ren. Historical review dispositions remain in [V6.2 CLAIMS §7](../v6.2/CLAIMS.md); this register does not retrospectively rewrite them.
+Companion to [THEORY.md](THEORY.md), [SUPPLEMENT.md](SUPPLEMENT.md) and [DISCUSSION.md](DISCUSSION.md). It records the thesis (§1), definitions (§2), tags (§3), stable result inventory (§4), dependencies (§5), open interfaces (§6), disposition of the V6.2 review (§7), the author's historical renderings and decisions (§§8–9), the V7 readiness corrections (§10), and the V7.2 integration (§11). Revised by Codex on 4 October 2026 from V7.1. Sections 8–10 are preserved verbatim as a provenance record; their earlier locators and model renderings do not override the corrected current statements. Section 10 records the affected interpretations without attributing new words or endorsements to Ren. Historical review dispositions remain in [V6.2 CLAIMS §7](../history/v6.2/CLAIMS.md); this register does not retrospectively rewrite them.
 
 **Provenance.** R: Ren's own words or recorded position, quoted as he wrote or said them. A: drafted by an AI, in an earlier version or in the corpus, and adopted by Ren. D: drafted or rendered by a model, not yet confirmed by Ren. L: a standard result of the literature, applied here.
 
@@ -49,7 +49,7 @@ The added design target is preservation of effective correction through the lear
 
 ## 4. Contribution inventory
 
-Every numbered result, by stable key. The current column is rendered from the stable key; the V6.1 column preserves the earlier crosswalk. Status notes give inherited history and the V7 repair where applicable; “carried” refers to the inherited statement, within its current stated conditions. The [V7 LEDGER](../v7/LEDGER.md) records the V6.2–V7 comparison; the present LEDGER records preservation relative to V7.1.
+Every numbered result, by stable key. The current column is rendered from the stable key; the V6.1 column preserves the earlier crosswalk. Status notes give inherited history and the V7 repair where applicable; “carried” refers to the inherited statement, within its current stated conditions. The [V7 LEDGER](../history/v7/LEDGER.md) records the V6.2–V7 comparison; the present LEDGER records preservation relative to V7.1.
 
 | Key | Current | V6.1 | Result | Tag | Proof; check | Status and revision history |
 |---|---|---|---|---|---|---|
@@ -220,7 +220,7 @@ SUPPLEMENT S13 gives each interface with its status. **Open**, where an arrow cr
 
 ## 7. Disposition of the V6.2 review
 
-Source: [third Codex review of the latest V6.2](../v6.2/reviews/REVIEW-v6.2-codex-third.md), including its independent counterexamples. The first two rounds' repairs are inherited from V6.2. “Repaired” records a textual or mathematical correction in V7, not a certificate of the empirical premise. The V7 checks and their limits are mapped in SUPPLEMENT S15.
+Source: [third Codex review of the latest V6.2](../history/v6.2/reviews/REVIEW-v6.2-codex-third.md), including its independent counterexamples. The first two rounds' repairs are inherited from V6.2. “Repaired” records a textual or mathematical correction in V7, not a certificate of the empirical premise. The V7 checks and their limits are mapped in SUPPLEMENT S15.
 
 | Review finding | V7 disposition | Verification or remaining limit |
 |---|---|---|
@@ -315,7 +315,7 @@ Three formulations in the theory's own voice compress his rulings without being 
 
 ## 10. Disposition of the V7 readiness review
 
-Source: [V7 reviewer-team assessment](../v7/reviews/readiness/REVIEW-v7-readiness.md), with separate mathematical, systems and evidence reports. “Corrected” records a revised statement or explicit open condition, not empirical validation or independent human certification. The retained historical author record in §§8–9 has not been rewritten. In particular D19's old parenthetical, D36's earlier inference and the earlier mapping of the branch order are read through the scope corrections below; no new authorial endorsement is inferred.
+Source: [V7 reviewer-team assessment](../history/v7/reviews/readiness/REVIEW-v7-readiness.md), with separate mathematical, systems and evidence reports. “Corrected” records a revised statement or explicit open condition, not empirical validation or independent human certification. The retained historical author record in §§8–9 has not been rewritten. In particular D19's old parenthetical, D36's earlier inference and the earlier mapping of the branch order are read through the scope corrections below; no new authorial endorsement is inferred.
 
 | Finding | V7.1 disposition | Verification or remaining limit |
 |---|---|---|

@@ -40,7 +40,7 @@ Ren's request, given in chat: "请把这个加入我的理论". Every passage se
 | D1003 | `sources/16-claude-code-directions/2026-10-03-v4-direction-cooperation.md` |
 | T1002 | `drafts/2026-10-02-friend-conversation/transcript.md` |
 | CM3 | `drafts/2026-09-26-community-mission/立场与使命-v0.3.md` (《从小康到大同》 v0.3) |
-| V61 | `drafts/2026-10-02-iaseai-selecting-the-selectors/v6.1/THEORY.md` |
+| V61 | `drafts/2026-10-02-iaseai-selecting-the-selectors/history/v6.1/THEORY.md` |
 | OCR | `drafts/2026-10-03-ocasc-ai2040-review/REVIEW.md` |
 
 **Counts.**
@@ -305,7 +305,7 @@ Each target gets what bears on its own theory and points to the others. The prov
 >
 > The first is the bounded self that the 2026-10-02 conversation named as the disease (claim 41), seen as a way of posing problems.
 >
-> This gives the theory a joint that its own critique below says is missing ("joined by assertion, not derivation"). Where winning compounds, a target-first decider is rewarded for the costs it leaves outside its boundary, so selection favours it, while a relations-first decider bears those costs. The 2026-10-03 paper proves the formal version: a self-model narrower than the real coupling raises intensity and lowers its holder's own welfare, and selection favours it anyway (`drafts/2026-10-02-iaseai-selecting-the-selectors/v6.1/THEORY.md`, Proposition 3.6).
+> This gives the theory a joint that its own critique below says is missing ("joined by assertion, not derivation"). Where winning compounds, a target-first decider is rewarded for the costs it leaves outside its boundary, so selection favours it, while a relations-first decider bears those costs. The 2026-10-03 paper proves the formal version: a self-model narrower than the real coupling raises intensity and lowers its holder's own welfare, and selection favours it anyway (`drafts/2026-10-02-iaseai-selecting-the-selectors/history/v6.1/THEORY.md`, Proposition 3.6).
 >
 > The talk carries the same procedure into time. Relational thinking about the future does not posit a utopia; it asks 「我们当下处在这样的动态过程之中，我要怎样去做，才能影响这个动态过程本身的变化和发展？」 [12:07] (*we are inside this process; what must I do to bear on how it changes and develops?*). That is claim 12's 今日所行，向之乎？背之乎？ asked as a question about leverage.
 >
@@ -400,7 +400,7 @@ Each target gets what bears on its own theory and points to the others. The prov
 >
 > This bears on open question 31. That question holds that the gain levers η and g′f′ change when the system arrives, not where, because in ẇ = λCw they enter only through the scalar λ. Inside the covariance model that is right, since nothing else there runs on a clock. Correction does run on one.
 > - Ren's 2026-10-03 messages say that human understanding, response and institution-building grow at most linearly, while what they must follow compounds (`sources/16-claude-code-directions/2026-10-03-v4-direction-cooperation.md`).
-> - The 2026-10-03 paper makes the required rate of independent correction explicit (`drafts/2026-10-02-iaseai-selecting-the-selectors/v6.1/THEORY.md` §4.3).
+> - The 2026-10-03 paper makes the required rate of independent correction explicit (`drafts/2026-10-02-iaseai-selecting-the-selectors/history/v6.1/THEORY.md` §4.3).
 >
 > Once correction is limited by its own rate, the tempo of the contest decides whether correction keeps up, so tempo moves the destination as well as the date. The two statements are reconciled, not opposed. Gain is a lever on the date in a model without correctors, and a lever on the destination in a model with them.
 >
@@ -821,7 +821,7 @@ Each target gets what bears on its own theory and points to the others. The prov
 > 18. **Legalism: engineering or failure mode? (added 2026-10-04).** The talk treats Legalism and the 孙子 as the tradition's competence for struggle (15:42). Elsewhere in the corpus:
 >     - 外儒内法 is a degeneration (`theories/relational-self-and-datong/`);
 >     - the community document reads 韩非 and 秦 as realism that was tested and judged wanting (`drafts/2026-09-26-community-mission/立场与使命-v0.3.md` §二);
->     - the 2026-10-03 paper lists the Legalist programme among doctrines of national survival (`drafts/2026-10-02-iaseai-selecting-the-selectors/v6.1/DISCUSSION.md` X1).
+>     - the 2026-10-03 paper lists the Legalist programme among doctrines of national survival (`drafts/2026-10-02-iaseai-selecting-the-selectors/history/v6.1/DISCUSSION.md` X1).
 >
 >     Open question 13's research has to decide between two readings. As a theory of how status and fear drive conduct, Legalism is evidence for this theory's mechanisms. As a programme for using those mechanisms to win, it is the logic the corpus opposes.
 
@@ -1408,7 +1408,7 @@ The theory should present it as the tradition's reading of itself. That is real 
 
 ## 6. What the recording means for live work (no edits)
 
-### The IASEAI draft v6.1 (`drafts/2026-10-02-iaseai-selecting-the-selectors/v6.1/`)
+### The IASEAI draft v6.1 (`drafts/2026-10-02-iaseai-selecting-the-selectors/history/v6.1/`)
 
 Nothing in the recording should enter the paper by name. The paper names no countries or companies, per the 10-03 ruling, and the state-narrative material (17:27–19:24, 38:55–39:22) has no place in it. X1's note on "the tradition behind V4" is already the right symmetric form. What the recording does give the paper is Ren's voice on several commitments, and three corrections.
 - **Restore the 10-03 ruling.** The fidelity review found that "如果胜利者的逻辑是cancer式的…首先反对这个逻辑" survives only in part, in X1. The recording's 21:32 shows why it matters: the paper must not let "winning" stand as a remedy, even by silence. The participant's dilemma is V61 §3.8's attribution case. The paper should also say why it is not answered by making falling behind survivable.

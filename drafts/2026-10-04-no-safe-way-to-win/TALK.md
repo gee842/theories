@@ -152,7 +152,7 @@ Thank you.
   - "the whole process of the universe" [01:06:05];
   - decay as growth [00:57:27].
 - *From the theories*:
-  - the contest result is Proposition 3.6 of the IASEAI paper (`drafts/2026-10-02-iaseai-selecting-the-selectors/v6.1/THEORY.md`), said here without citation;
+  - the contest result is Proposition 3.6 of the IASEAI paper (`drafts/2026-10-02-iaseai-selecting-the-selectors/history/v6.1/THEORY.md`), said here without citation;
   - the point of enough is the 2026-09-25 ruling;
   - the scope "any game of relative advantage" is the 2026-09-26 ruling;
   - "everyone has to oppose the logic itself" is the 2026-10-03 ruling.
