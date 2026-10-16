@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Fresh Lean 4.29.1 kernel/dependency check of the formative-capacity model.
 
-The scanner covers this source's explicit top-level declarations (including its
-named instance), not Lean-generated constructor/projection/deriving declarations.
+The scanner covers this source's explicit declarations (including its named instance)
+at any indentation and with any attributes or modifiers, not Lean-generated
+constructor/projection/deriving declarations; private declarations and unnamed
+instances are listed apart (`scan`), since they cannot be audited by name.
 Kernel success does not establish physical or ethical correspondence.
 """
 from datetime import datetime, timezone
@@ -70,33 +72,77 @@ def code_only(source):
     return "".join(output)
 
 
-def declarations(source):
+# A scope opens with `namespace`/`section` (also `noncomputable section`) or `mutual`, at
+# any indentation, and closes with `end`.
+SCOPE_OPEN = re.compile(r"^\s*(?:noncomputable\s+)?(namespace|section)\b\s*(\S*)")
+MUTUAL_OPEN = re.compile(r"^\s*mutual\s*$")
+SCOPE_END = re.compile(r"^\s*end(?:\s+\S+)?\s*$")
+# A declaration at any indentation, after `open … in`, attributes (`@[simp]`) and modifiers.
+DECLARATION = re.compile(
+    r"^\s*(?:open\b.*?\bin\s+)?"
+    r"((?:(?:@\[[^\]]*\]|private|protected|noncomputable|partial|nonrec|unsafe|scoped|local)\s*)*)"
+    r"(theorem|def|abbrev|structure|inductive|instance)\b(.*)$")
+# A declared name runs to the first space, colon or bracket (primes and `!`/`?` included).
+DECLARED_NAME = re.compile(r"[^\s:()\[\]{}⦃⦄,]+")
+
+
+def scan(source):
+    """The declarations of a source, read from its code with comments, docstrings and
+    strings blanked (`code_only`), at any indentation and with any attributes or modifiers.
+
+    `declarations`: those an importing file can audit by name (`#print axioms`), in order.
+    `private`: private declarations, whose names an importing file cannot resolve.
+    `unnamed_instances`: line numbers of `instance` declarations without a name (Lean names
+    them itself). Neither of the last two can be audited by name; an environment-wide audit
+    of the module's constants covers them. Constants Lean generates (constructors,
+    projections, `injEq`, deriving) are not source declarations and are not listed."""
     code = code_only(source)
     assert not re.search(
         r"\b(sorry|admit|axiom|unsafe|native_decide|implemented_by)\b|debug\.skipKernelTC", code
     ), "Proof escape in source"
     imports = re.findall(r"^import\s+(.+)$", code, re.M)
     assert all(item.strip() in {"Std", "GenerativeCore"} for item in imports), imports
-    scopes, result = [], []
-    for line in code.splitlines():
-        scope = re.match(r"^(namespace|section)\b\s*(\S*)", line)
+    scopes, named, private, unnamed = [], [], [], []
+    for number, line in enumerate(code.splitlines(), 1):
+        scope = SCOPE_OPEN.match(line)
         if scope:
             scopes.append((scope[1], scope[2]))
             continue
-        if re.match(r"^end(?:\s|$)", line):
-            assert scopes, line
+        if MUTUAL_OPEN.match(line):
+            scopes.append(("mutual", ""))
+            continue
+        if SCOPE_END.match(line):
+            assert scopes, (number, line)
             scopes.pop()
             continue
-        declaration = re.match(
-            r"^(theorem|def|abbrev|structure|inductive|instance)\s+([\w.]+)", line
-        )
-        if declaration:
-            prefix = ".".join(n for kind, n in scopes if kind == "namespace")
-            name = prefix + "." + declaration[2] if prefix else declaration[2]
-            result.append({"kind": declaration[1], "name": name})
-    assert not scopes and result
-    assert len({item["name"] for item in result}) == len(result)
-    return result
+        declaration = DECLARATION.match(line)
+        if not declaration:
+            continue
+        modifiers, kind, rest = declaration[1], declaration[2], declaration[3].strip()
+        if kind == "instance":
+            rest = re.sub(r"^\(priority\s*:=[^)]*\)\s*", "", rest)
+        name = DECLARED_NAME.match(rest)
+        if not name:
+            assert kind == "instance", (number, line)
+            unnamed.append(number)
+            continue
+        name = name[0].split(".{")[0].rstrip(".")
+        if name.startswith("_root_."):
+            full = name[len("_root_."):]
+        else:
+            prefix = ".".join(n for k, n in scopes if k == "namespace" and n)
+            full = prefix + "." + name if prefix else name
+        (private if re.search(r"\bprivate\b", modifiers) else named).append({"kind": kind, "name": full})
+    # A section may stay open to the end of the file; a namespace may not.
+    assert not [s for s in scopes if s[0] != "section"], scopes
+    assert named
+    assert len({item["name"] for item in named}) == len(named)
+    return {"declarations": named, "private": private, "unnamed_instances": unnamed}
+
+
+def declarations(source):
+    """The declarations of a source that can be audited by name (see `scan`)."""
+    return scan(source)["declarations"]
 
 
 def main():
