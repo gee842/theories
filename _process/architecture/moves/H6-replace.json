@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "batch": "H6-replace",
+  "date": "2026-10-16T19:52:41+00:00",
+  "base_commit": "b511b64313835791733249abe03c648907aab372",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "experiments/integrated-correction/README.md",
+      "new_path": "experiments/history/2026-10-05-integrated-correction/README.md",
+      "sha256": "78d2e472657a457970159b0bf2b1582343b8504ca05dab823fd5126107aa4873",
+      "blob": "1857e32415d3b50f5deac67e745149457861070d",
+      "reason": "entry page of the 5-Oct financial study, now the parent README of the whole tree; a new index README is written at the old path afterwards",
+      "plan_entry": "experiments/integrated-correction/README.md"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/README.md",
+      "new_path": "experiments/history/2026-10-05-general-framework/README.md",
+      "sha256": "b74e62df448f4f47c069a0cacd44fde4519ddae38dabde1570ccb9efeb0ea30d",
+      "blob": "445796ffdf1d40e08a50d582399e3f791333ff75",
+      "reason": "superseded 5-Oct proposal README, parent README of the spine; replaced by an index at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/README.md"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/README.md",
+      "new_path": "experiments/history/2026-10-05-generative-basis-study/README.md",
+      "sha256": "c18f2b5dee33a5c9e4d5b40cb4a1ee5eb59c076d1d2df3cb6510ce0fee799461",
+      "blob": "c86ca5623a1816c036ac3a40f0166c836700737c",
+      "reason": "dated status log, never mentions the Becoming package; replaced by an index at the old path",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/README.md"
+    },
+    {
+      "old_path": "experiments/README.md",
+      "new_path": "experiments/history/README-2026-10-07.md",
+      "sha256": "f9dad42369cafeaabde101d45a56e11d9411ae65931ab0f60fccd1d8684a2633",
+      "blob": "0aaddb3412425a91690d85d9284822ddfeb8c315",
+      "reason": "hand index with 23 stacked 6-7 Oct status paragraphs; never mentions the spine; replaced by a new index",
+      "plan_entry": "experiments/README.md"
+    }
+  ],
+  "keep_references": true,
+  "rewritten": [],
+  "history_roots": [
+    "experiments/history"
+  ],
+  "generated_pages_to_rerender": [
+    "DEPENDENCIES.md",
+    "GOALS.md",
+    "OPEN-QUESTIONS.md",
+    "README.md",
+    "RESEARCH.md",
+    "RESULTS.md",
+    "_process/BRIEF.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "theories/becoming/README.md",
+    "theories/becoming/chapters/CLAIMS.md",
+    "theories/becoming/results/RESULT-REGISTER.md",
+    "theories/becoming/results/ROADMAP.md",
+    "theories/becoming/results/records/context-sensitive-updating-correspondence.md",
+    "theories/becoming/results/records/contextual-registration.md",
+    "theories/becoming/results/records/encounter-control-and-retention.md",
+    "theories/becoming/results/records/formed-copying-correction.md",
+    "theories/becoming/results/records/formed-software-continuation.md",
+    "theories/becoming/results/records/joint-practice-forms-continuation.md",
+    "theories/becoming/results/records/naming-attention-coverage.md",
+    "theories/becoming/results/records/organizational-rule-inheritance.md",
+    "theories/becoming/results/records/registration-within-what-it-registers.md",
+    "theories/becoming/results/records/separation-loses-the-relation.md",
+    "theories/becoming/results/records/situated-recovery-empirical-correspondence.md",
+    "theories/becoming/results/records/the-split-that-makes-sense.md"
+  ],
+  "verification_errors": []
+}
