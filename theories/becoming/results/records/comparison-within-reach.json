@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-14T15:02:52+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "比较在部分所及之内决定：覆盖部分在每步之前已到达者的任何意义，对有与无部分的水平作公理的比较；任意两个流的比较在其差别所及之内决定。",
     "en": "The comparison is decided within what the part reaches: any significance covering what the part has reached before each step compares the levels with and without it as the axiom does, and the comparison of any two flows is decided within what their difference reaches."
@@ -176,9 +176,9 @@
     }
   ],
   "standard_boundaries": [
-    "no-evaluation",
     "discrete-steps",
-    "names-provisional"
+    "names-provisional",
+    "significance-related-not-asserted"
   ],
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z）：Becoming.Feedback 的定理公理报告为空，公理 Unrestricted 只作为假设出现，不是 Lean 公理；检查器并核对核心纯净。作者反审见整合文档；整合之前经第十六次独立审查，其处理之后的文本尚未经独立审查。",
@@ -458,7 +458,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -726,6 +726,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Significance.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Significance.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A8 项：去掉标准边界 no-evaluation（“不含伦理谓词，不评价生起或消失”）：本记录的规律陈述Web.Retains、Web.Adds 与以 Unrestricted 为假设的见证，含意义谓词；改用 significance-related-not-asserted（陈述意义与结构的关系而不断言意义或条件）。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A8: standard boundary no-evaluation (\"Contains no ethical predicate and evaluates neither arising nor ceasing\") removed: this record's laws state Web.Retains, Web.Adds and witnesses taking Unrestricted as a hypothesis, a significance predicate; replaced by significance-related-not-asserted (relating significance to structure without asserting significance or the condition). Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -735,6 +742,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/dbba05d906d8c1aa/comparison-within-reach.json",
+      "sha256": "dbba05d906d8c1aac8c8dc44f363473fb6064f6973f4542cbec74b72f614e58a",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

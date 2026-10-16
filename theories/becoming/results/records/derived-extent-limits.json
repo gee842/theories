@@ -7,8 +7,8 @@
   },
   "kind": "theorem",
   "status": "recorded-checked",
-  "family": "F07",
-  "reviewed_at_utc": "2026-10-14T15:40:03+00:00",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "推出的范围单向地到达自身延续所依存的，随想要的结束而结束；满足此处推出的每项要求的持续形成仍可以终结它不需要的生命。沿依存，中心不由动力学推出。",
     "en": "The derived extent runs one way, to what one's continuation depends on, and ends with the want; a continuing formation meeting every requirement derived here can still end a life it does not need. Along dependence the center is not derived from the dynamics."
@@ -659,6 +659,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Standpoints.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Standpoints.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 C10 项：家族由 F07（显式公理下的实践判断，前提 G0/J）改为 F01（关系核心）：本记录不用伦理前提、不用公理，是第一部分的结构结果；会话图尚无第一部分专属家族，F01 是现有家族中正确的一个。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -668,6 +672,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/7d4d98157c035d22/derived-extent-limits.json",
+      "sha256": "7d4d98157c035d228a7e6196c5064b9b3690f927d816bd2734a7eacce400f9ce",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

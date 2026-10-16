@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "每个变化之律在有限多构型中：不合并即回返即保留每个可能，上升需要合并；保留其历史的生成无损、不回返而需要开放，有限的当下遗忘；不加前提。",
     "en": "For every law of change within finitely many configurations, merging nothing is returning is keeping every possibility, and a rise needs a merge; becoming that keeps its history loses nothing, never returns and needs openness, and a finite present forgets; no premise is used."
@@ -82,6 +82,20 @@
         "zh": "对每个过程：返回的精确条件，三方等价在路径分支时分开之处。",
         "en": "For every process: the exact condition for returning, and where the three-way equivalence comes apart when the course branches."
       }
+    },
+    {
+      "id": "entropy-history-and-record",
+      "detail": {
+        "zh": "Becoming.Entropy 导入本模块，把 Web.Revisits.recurs、Web.Arrow.marks、Web.Merges.law、Web.Determined.orbit、Flow.Balances.recurs 与 returns_of_lossless 作为本结果的读法证明。",
+        "en": "Becoming.Entropy imports this module and proves Web.Revisits.recurs, Web.Arrow.marks, Web.Merges.law, Web.Determined.orbit, Flow.Balances.recurs and returns_of_lossless as readings of this result."
+      }
+    },
+    {
+      "id": "where-a-run-goes-on",
+      "detail": {
+        "zh": "沿运行的定律：有限多构型之内不用选择，一般地恰是依赖选择。",
+        "en": "Laws along runs: within finitely many configurations no selection is needed, and in general they are exactly dependent choice."
+      }
     }
   ],
   "counterexamples": [
@@ -94,12 +108,12 @@
     }
   ],
   "limitations": {
-    "zh": "离散的步；“有限多构型”指某个列表持有它们，不是基数；无损、回返与保留可能的等价只对确定的律（对每个过程三者分开：保留每个可能不给回返，合并不必失去可能，不合并沿运行给回返，见 returning-where-the-course-branches，P81）；“当下遗忘”指两段不同的历史共有一个当下，遗忘的计数（需要判定构型相等）未陈述；“变化不复现”是复现的否定，不是某步之后不再变化；数学（鸽巢；有限集上的单射是双射，每点回返）是复用的；对熵、业与物理学的对应是 AI 的读法；与熵的会话的结果的实例定理未给出；不含伦理谓词；尚无独立审查。",
-    "en": "Discrete steps; ‘finitely many configurations’ means that a list holds them, not a cardinality; the equivalence of losing nothing, returning and keeping every possibility is for determined laws (for every process the three come apart: keeping every possibility does not give returning, a merge need not lose a possibility, merging nothing gives returning along runs; see returning-where-the-course-branches, P81); ‘the present forgets’ means that two different histories share one present, and no count of what is forgotten (which needs equality of configurations decided) is stated; ‘change does not recur’ is a negated recurrence, not a step after which nothing changes; the mathematics (pigeonhole; an injection of a finite set into itself is a bijection, every point of which returns) is reused; the readings as entropy, as karmic passing and as physics are the AI's; instance theorems for the entropy session's results are not given; no ethical predicate; not yet independently reviewed."
+    "zh": "离散的步；“有限多构型”指某个列表持有它们，不是基数；无损、回返与保留可能的等价只对确定的律（对每个过程三者分开：保留每个可能不给回返，合并不必失去可能，不合并沿运行给回返，见 returning-where-the-course-branches，P81）；“当下遗忘”指两段不同的历史共有一个当下，遗忘的计数（需要判定构型相等）未陈述；“变化不复现”是复现的否定，不是某步之后不再变化；数学（鸽巢；有限集上的单射是双射，每点回返）是复用的；对熵、业与物理学的对应是 AI 的读法；熵的会话的结果已作为其实例给出（Becoming.Entropy）；不含伦理谓词；尚无独立审查。",
+    "en": "Discrete steps; ‘finitely many configurations’ means that a list holds them, not a cardinality; the equivalence of losing nothing, returning and keeping every possibility is for determined laws (for every process the three come apart: keeping every possibility does not give returning, a merge need not lose a possibility, merging nothing gives returning along runs; see returning-where-the-course-branches, P81); ‘the present forgets’ means that two different histories share one present, and no count of what is forgotten (which needs equality of configurations decided) is stated; ‘change does not recur’ is a negated recurrence, not a step after which nothing changes; the mathematics (pigeonhole; an injection of a finite set into itself is a bijection, every point of which returns) is reused; the readings as entropy, as karmic passing and as physics are the AI's; the entropy session's results are given as its instances (Becoming.Entropy); no ethical predicate; not yet independently reviewed."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Recurrence 的 68 项声明（55 项定理）全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 75 个模块，核心闭包 42 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261013T095049.338744Z 通过。尚无独立审查；作者反审见整合文档 §68。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 68 declarations of Becoming.Recurrence (55 theorems) all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the 40 modules of the package and a core closure of 42 modules, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261013T095049.338744Z passed. Not yet independently reviewed; the author's counterreview is in section 68 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Recurrence 的 68 项声明（55 项定理）全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 75 个模块，核心闭包 77 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261013T095049.338744Z 通过。尚无独立审查；作者反审见整合文档 §68。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 68 declarations of Becoming.Recurrence (55 theorems) all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the 75 modules of the package and a core closure of 77 modules, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261013T095049.338744Z passed. Not yet independently reviewed; the author's counterreview is in section 68 of the integration note."
   },
   "references": [
     {
@@ -208,7 +222,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ebce5b7564e0ad0a51a4f5537910ba722550465a8a9e1a4081aaa92199a5d847",
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
       "declarations": []
     },
     {
@@ -247,8 +261,8 @@
     }
   ],
   "next_delta": {
-    "zh": "熵的会话的 Web.Determined、Web.Merges、Flow.Balances.unending_change_revisits 与 World.forgets 作为本结果的实例（两边落地后，由后落地者给出）；非确定过程的无损与回返已由 returning-where-the-course-branches 给出（P81）；对每个能动的构型不加选择地陈述沿运行的定律；在可判定相等之下遗忘的计数作为一个不减的量；独立审查。",
-    "en": "The entropy session's Web.Determined, Web.Merges, Flow.Balances.unending_change_revisits and World.forgets as instances of this result (given by whichever lands second); losing nothing and returning for processes that are not determined are given by returning-where-the-course-branches (P81); the laws along runs stated for every configuration that can move, without a choice; with equality decided, the count of what is forgotten as a quantity that never falls; an independent review."
+    "zh": "在可判定相等之下，遗忘的计数作为一个不减的量；独立审查。",
+    "en": "With equality decided, the count of what is forgotten as a quantity that never falls; an independent review."
   },
   "history": [
     {
@@ -522,6 +536,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6、bilingual-10 项：限制与下一步原说熵的会话的实例定理未给出，Becoming.Entropy 已给出，改写并加 entropy-history-and-record 为相关；“对每个能动的构型不加选择地陈述沿运行的定律”已由 where-a-run-goes-on 回答（有限多构型之内不用选择，一般地等价于依赖选择），从下一步删去并加为相关；下一步中“（P81）”的状态说明删去。验证范围英文原说“40 个模块”、两种语言都说核心闭包 42 个，回执 20261013T094743.528770Z 列出 75 个脊柱模块与 77 个核心闭包模块，改正。schema 1，无 text_versions；原文见 git。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items B6, bilingual-10: the limitations and next step said the entropy session's instance theorems are not given; Becoming.Entropy gives them, so both are rewritten and entropy-history-and-record is added as related; \"the laws along runs for every configuration that can move, without a choice\" is answered by where-a-run-goes-on (no selection within finitely many configurations, dependent choice in general), so it leaves the next step and becomes related; the status note \"(P81)\" leaves the next step. The validation scope said \"40 modules\" in English and a core closure of 42 in both languages, while receipt 20261013T094743.528770Z lists 75 spine modules and a 77-module core closure; corrected. Schema 1, no text_versions; earlier text in git."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ]
 }

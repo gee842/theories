@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-14T15:14:06+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "整体可容许时，公理恰是每个立场上次真且对边界不变的预设。不变恰是从预设到该立场上公理的条件句，承载公理在预设之外的全部内容；有了处处的预设与覆盖，它就是对立场不变，即 N_std 的规则。",
     "en": "Where the whole is admissible, the axiom is exactly the presupposition sub-true and boundary-invariant at every standpoint. Invariance is exactly the conditional from presupposition to axiom, carrying all it adds; with presupposition and covering everywhere, it is standpoint-invariance (N_std)."
@@ -132,8 +132,8 @@
   ],
   "does_not_show": [
     {
-      "zh": "分解定位这一步，不降低公理：不变是从预设到公理的条件句，有了预设就是该立场上的公理。",
-      "en": "The decomposition locates the step and does not lower the axiom: invariance is the conditional from the presupposition to the axiom, and given the presupposition it is the axiom at that standpoint.",
+      "zh": "分解定位这一步，不降低公理：不变是从预设到公理的条件句，有了预设就是该立场上的公理；在逻辑上它是恒等式 A ⇔ P ∧ (P → A)（已知 A → P）。",
+      "en": "The decomposition locates the step and does not lower the axiom: invariance is the conditional from the presupposition to the axiom, and given the presupposition it is the axiom at that standpoint; logically, A ⇔ P ∧ (P → A) given A → P.",
       "kind": "non-implication",
       "witness": "Becoming.boundaryInvariant_iff_conditional"
     },
@@ -477,7 +477,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -771,6 +771,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Significance.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Significance.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A12 项：未表明 1 写出分解在逻辑上是恒等式 A ⇔ P ∧ (P → A)（已知 A → P），定位那一步而不推出它。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A12: does_not_show 1 now says the decomposition is logically the identity A ⇔ P ∧ (P → A), given A → P: it locates the step and derives nothing. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -780,6 +787,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/cae8c39c2121e630/axiom-decomposition.json",
+      "sha256": "cae8c39c2121e63018a6a9b26a68a3c85bce6f02a8e75256cf8586ae00c7d980",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

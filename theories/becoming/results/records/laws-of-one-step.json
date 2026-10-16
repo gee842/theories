@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "每条规律对每个世界成立，证明所用的条件写在规律之内，是该世界在所用步与关系项上的事实：一步上的平衡定下开始立着与不再立着，下降定下并约束变化，覆盖成立者的列表把不再成立连到开始成立。",
     "en": "Each law holds of every world, with the condition its proof uses stated inside it as a fact about that world at the steps and relata used: balance at a step fixes coming to stand and ceasing to stand, running down fixes and bounds change, and a list covering what holds ties ceasing to arising."
@@ -175,13 +175,13 @@
       "kind": "scope"
     },
     {
-      "zh": "各条在超出整单位的量下是否成立，在此未检验；静止由分辨率一线覆盖。",
-      "en": "Whether each law survives amounts finer than whole units is not tested here; for rest, the resolution result covers it.",
+      "zh": "各条在超出整单位的量下：laws-at-finer-units 给出，规律 1 的复现与规律 3 的界要把细分算作给予；静止由分辨率一线覆盖。",
+      "en": "Whether each law survives amounts finer than whole units: laws-at-finer-units gives it, law 1's recurrence and law 3's bound needing the refinement counted as a giving; for rest, the resolution result covers it.",
       "kind": "scope"
     },
     {
-      "zh": "不涵盖较粗的步与连续时间。",
-      "en": "Coarser steps and continuous time are not covered.",
+      "zh": "较粗的步见 laws-at-coarser-steps，离散读法之塔见 continuous-time-as-tower；实数时间未形式化。",
+      "en": "Coarser steps are in laws-at-coarser-steps and the tower of discrete readings in continuous-time-as-tower; real-valued time is not formalized.",
       "kind": "scope"
     },
     {
@@ -217,8 +217,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; periphery receipt 20261013T095049.338744Z): the theorems of Locality, Openness, Roles, Counting and Standing have empty axiom reports, and the checker verifies core purity, every source declaration in the core's import closure having an empty axiom report and the core compiling from Lean's prelude alone. Author counterreview in §66 of the integration note; no independent review."
   },
   "next_delta": {
-    "zh": "检验各条在超出整单位的量下（与分辨率一线协调）与较粗的步下（经 Sampling）是否成立；把其余可局部化的规律（依存、储备与支持）局部重述；b 类的表示决定与名称由 Ren 定。",
-    "en": "Test whether each law survives amounts finer than whole units (with the resolution line) and coarser steps (with Sampling); restate the remaining localizable laws (dependence, reserve and support) locally; the representation decisions of class (b) and the names are Ren's."
+    "zh": "把其余可局部化的规律（依存、储备与支持）局部重述；实数时间；b 类的表示决定与名称由 Ren 定。",
+    "en": "Restate the remaining localizable laws (dependence, reserve and support) locally; real-valued time; the representation decisions of class (b) and the names are Ren's."
   },
   "correspondence": {
     "zh": "选择定理问的是：在八个前提的某个选择之下，计数服从哪些规律。按 Ren 的转向，本结果改问：每条规律在世界的哪些步与关系项上需要什么。证明表明所需的条件都是局部的：一步的规律只用该步、该条件上的平衡；静止只用跨过那些步、包含所立者的家族的下降，不需要封闭；下降约束变化对所立者不需要体现；不再存在需要生起只用覆盖成立者的列表，不需要普查。前提对每一步成立时，这些条件在每一步成立，选择结果因此是推论。读法（AI，依 Ren 的交托采用）：前提约束的第一部分规律，是每一步及其关系项的规律；前提是使它们的条件处处成立的一种方式。",
@@ -368,6 +368,27 @@
       "detail": {
         "zh": "已局部的一次交换的规律（在一个家族、一步上陈述）；本结果把静止与生起的规律化为同样的形式。",
         "en": "The laws of one exchange already stated locally, on a family across a step; this result brings the laws of rest and arising to the same form."
+      }
+    },
+    {
+      "id": "laws-at-finer-units",
+      "detail": {
+        "zh": "各条在较细单位上的形式：规律 1 的复现与规律 3 的界要把细分算作给予。",
+        "en": "Each law at a finer unit: law 1's recurrence and law 3's bound need the refinement counted as a giving."
+      }
+    },
+    {
+      "id": "laws-at-coarser-steps",
+      "detail": {
+        "zh": "各条跨较粗的步：平衡、耗散与下降合成，反方向不合成。",
+        "en": "Each law across coarser steps: balance, dissipation and running down compose, not conversely."
+      }
+    },
+    {
+      "id": "continuous-time-as-tower",
+      "detail": {
+        "zh": "平衡与耗散在离散读法之塔上由细到粗传递；实数时间未形式化。",
+        "en": "Balance and dissipation passing up a tower of discrete readings; real-valued time is not formalized."
       }
     }
   ],
@@ -553,7 +574,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -840,6 +861,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Locality.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Openness.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）；Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Locality.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Openness.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged); Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6 项：未表明 4、5 原说较细的单位“在此未检验”、较粗的步与连续时间“不涵盖”，下一步原要检验二者；laws-at-finer-units、laws-at-coarser-steps 与 continuous-time-as-tower 已给出，未表明改为指向它们，下一步删去已做的两项、写出实数时间，并加三条相关。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: does_not_show 4 and 5 said finer units are \"not tested here\" and coarser steps and continuous time \"not covered\", and the next step asked to test both; laws-at-finer-units, laws-at-coarser-steps and continuous-time-as-tower give them, so the items now point there, the next step drops the two done items and names real-valued time, and three related entries are added. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -849,6 +877,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/26135d329daed4be/laws-of-one-step.json",
+      "sha256": "26135d329daed4bea3d2afe7348c33c2e54b81206e5229e48e3481c4cbfc122b",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

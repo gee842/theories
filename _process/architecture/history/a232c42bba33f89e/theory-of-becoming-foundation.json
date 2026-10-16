@@ -1,0 +1,249 @@
+{
+  "schema_version": 2,
+  "id": "theory-of-becoming-foundation",
+  "title": {
+    "en": "Theory of Becoming: full foundational target",
+    "zh": "生成与变化之论：完整根基目标"
+  },
+  "kind": "target",
+  "status": "open",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T21:40:00+00:00",
+  "statement": {
+    "en": "Target: establish, with zero added substantive axioms, the deductive necessity of the Theory of Becoming as a whole; explain generativity within its manifold, with persistence, transformation, degeneration, dissolution, life, evolution and evaluation within the same relational unfolding.",
+    "zh": "目标：无需附加实质公理，建立Theory of Becoming整体的演绎必然性；说明其manifold中的生成性，并在同一关系展开中说明维持、转化、退化、消解、生命、演化与评价。"
+  },
+  "hypotheses": [
+    {
+      "en": "Ren authorizes work toward completion; the monist relational method guides reconstruction and must disclose its own role. Existing conditional achievements and independent scopes remain intact.",
+      "zh": "Ren授权向完成推进；一元关系方法指导重构并公开自身作用。已有条件成果与独立范围保留。"
+    }
+  ],
+  "correspondence": {
+    "en": "The whole deduction must warrant relational unity and differentiation, including its own articulation. Inclusive scope, established constitutive relations and particular operative mechanisms have distinct inferential roles within the same unfolding; no universally productive successor or complete causal connectivity is presumed.",
+    "zh": "整体演绎须为关系整体与分化提供根据，包含自身的表达。包容范围、已确定的构成关系与具体作用机制在同一展开中承担不同推论角色；不预设普遍生成后继或完全因果连通。"
+  },
+  "canonical_source": "theories/becoming/chapters/BECOMING-FOUNDATION.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "becoming-context-coherence",
+      "relation": "interpretive",
+      "detail": {
+        "en": "Supplies a checked coherence constraint on inclusive histories, not the universal constitutive warrant.",
+        "zh": "提供包容历史的经检查相容限制，不提供普遍构成根据。"
+      }
+    },
+    {
+      "id": "conditional-foundation-assessment",
+      "relation": "interpretive",
+      "detail": {
+        "en": "Credits completed conditional mechanisms and the original five-condition assessment without substituting them for the stronger target.",
+        "zh": "信用已完成条件机制及原五条件验收，不用它们替代更强目标。"
+      }
+    },
+    {
+      "id": "control-coherence-loss",
+      "relation": "interpretive",
+      "detail": {
+        "en": "Provides a checked operative state interface in which local loss arises through a reversible wider interaction; supports the distinction between reduced access and retained joint relations, not universal grounding.",
+        "zh": "提供已检查的作用状态接口：局部损失经更广可逆交互产生；支持约化可用与保留共同关系的区别，不提供普遍根基。"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "endpoint-loss-and-return",
+      "detail": {
+        "en": "Concurrent structural research retains endpoint loss and configuration-identity scope; no new physical composition is claimed.",
+        "zh": "并发结构研究保留端点损失及配置身份范围；不声称新的物理组合。"
+      }
+    },
+    {
+      "id": "derived-history-law-exactness",
+      "detail": {
+        "en": "Credits the derived local law at its supplied-history scope; does not infer universal operational coverage from exact finite-word feasibility.",
+        "zh": "信用给定历史范围内派生局部规律的成果；不从有限词可行性精确推出普遍操作覆盖。"
+      }
+    },
+    {
+      "id": "space-and-its-parts",
+      "detail": {
+        "en": "On the Becoming spine, laws with no premise hold of every world as the spine represents worlds, and premises carve parts, seven of which are shown met by some worlds and not by others, and eight of which, replacing the reserve with a census and bounded transmission, are shown independent. This locates the whole claim's substantive remainder without discharging it.",
+        "zh": "在Becoming脊柱上，无前提的规律对脊柱所表示的每个世界成立；前提划出部分，其中七个前提已示为有满足与不满足它的世界，把储备换为普查与有界传递的八个已示为彼此独立。这定位了整体主张的实质剩余，但不完成它。"
+      }
+    },
+    {
+      "id": "coming-and-ceasing-keep-pace",
+      "detail": {
+        "zh": "生起与止息、依存的形成与消解、开始与不再作为条件而在，是同一种变化（开始成立与不再成立）的三种读法；在活动可判定的有限家族中，开始成立与不再成立一同复现，不加关于展开的前提。",
+        "en": "Arising and ceasing, forming and dissolving, and coming to stand and ceasing to stand are one change, coming to be and ceasing to be, read three ways; in a finite family whose determinations are decided, coming to be and ceasing to be recur together, with no premise about the unfolding."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "detail": {
+        "en": "A pooled representation can invent unsupported continuations. Its repair and actual context change retain genuine terminality without refuting the full account.",
+        "zh": "合并表示会虚构无支持接续；其修复及实际情境变化保留真实终止，不反驳完整论述。"
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "detail": {
+        "en": "The primary quantum-switch comparison challenges promotion to definite causal order at every native operational interface. It does not refute temporal implementation or the existing trace theorems.",
+        "zh": "量子开关主文献比较质疑每个原生操作接口都有确定因果次序的强化；不反驳时间实现或既有历史定理。"
+      }
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "The checked results reused here do not by themselves supply the deduction of the whole claim.",
+      "zh": "此处复用的已检查成果本身不提供整体主张的演绎。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Neither inclusive naming nor universalizing one generative mode supplies the whole deduction; particular mechanisms explain modes within Becoming.",
+      "zh": "包容命名与将某种生成形态普遍化都不提供整体演绎；具体机制解释Becoming中的形态。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Ren’s necessity claim is retained as the target without being installed as an axiom, and no impossibility claim is made.",
+      "zh": "保留Ren的必然性主张作为目标，不将其作为公理加入，也不作不可能性声明。",
+      "kind": "scope"
+    }
+  ],
+  "not_required": [
+    {
+      "en": "Not every becoming need be generative: the failure of a particular generative mode is not by itself a counterexample to Becoming.",
+      "zh": "不要求每个生成都有生成性：特定生成形态不成立，本身不构成对Becoming的反例。"
+    }
+  ],
+  "progress": [
+    {
+      "en": "Coherent inclusion: pooling processes that share interpretations keeps exactly the union of their histories iff it is closed under joining at the shared boundary; a checked coherence constraint, not the universal constitutive warrant.",
+      "zh": "包容中的相容：共用解释的多个过程合并后恰好保留其历史的并集，当且仅当该并集对共同边界的接合封闭；这是已检查的相容限制，不是普遍构成根据。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#16-inclusive-becoming-and-coherent-continuation"
+    },
+    {
+      "en": "Operative relations and causal order: after a primary quantum-process comparison, the candidate distinguishes operative constitution from a definite causal order at every interface; the existing trace theorems keep their scope.",
+      "zh": "作用关系与因果次序：经量子过程主文献比较，候选区分作用构成与每个接口上的确定因果次序；既有历史定理保持原范围。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#17-operative-relations-without-a-presupposed-global-order"
+    },
+    {
+      "en": "Local loss in a retained whole: a checked restricted control calculation (quantum inputs supplied) derives local loss through a reversible wider interaction, separating reduced access from retained joint relations; not universal grounding.",
+      "zh": "保留的整体中的局部损失：已检查的受限控制计算（量子输入给定）推出局部损失经更广的可逆交互产生，区分约化可用与保留的共同关系；不提供普遍根基。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#18-a-checked-operative-loss-and-a-retained-whole"
+    },
+    {
+      "en": "Whole and manifold: following Ren’s correction, the necessity target is Becoming as a whole, with generativity within its manifold; the completion audit no longer gates on universal generativity.",
+      "zh": "整体与manifold：依Ren的修正，必然性对象是Becoming整体，生成性在其manifold之中；完成审计撤回普遍生成性门槛。",
+      "source": "theories/becoming/chapters/BECOMING-FOUNDATION.md#whole-and-manifold"
+    },
+    {
+      "en": "From inclusion to relation: the direct whole-inclusion argument is assessed and still lacks the passage to relational constitution; a primary Hegel comparison separates a category of becoming from a causal mechanism.",
+      "zh": "从包容到关系：直接整体包容论证经检验，仍缺通向关系构成的连接；黑格尔原典比较区分生成的范畴与因果机制。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#19-the-whole-deduction-and-the-passage-from-inclusion-to-relation"
+    },
+    {
+      "en": "Spine evidence: each audit row cites the spine’s laws of the whole, its parts carved by premises (seven shown met by some worlds and not others, eight shown independent) and countermodels, locating the remainder without discharging it.",
+      "zh": "脊柱证据：完成审计各行引用Becoming脊柱的整体规律、前提划出的部分（七个已示为有满足与不满足它的世界，八个已示为彼此独立）与反模型；这定位剩余，不完成它。",
+      "source": "theories/becoming/chapters/BECOMING-FOUNDATION.md#5-completion-audit-and-next-central-inference"
+    }
+  ],
+  "validation_scope": {
+    "en": "Reused evidence: the checked finite-history coherence result and the checked 27-theorem restricted control calculation, with receipts in their records; the operational-order assessment against a primary quantum-process source; and the Becoming spine’s checked laws, parts and countermodels, cited in each row of the completion audit. The whole-deduction assessment rests on primary Hegel passages and author counterreview. This record adds no mathematical proof.",
+    "zh": "复用证据：已检查的有限历史相容性结果与27定理受限控制计算（回执见各自记录）；以量子过程主文献作的操作次序评估；Becoming脊柱经检查的规律、部分与反模型，引用于完成审计各行。整体演绎的评估依据黑格尔原典与作者反审。本记录不新增数学证明。"
+  },
+  "references": [
+    {
+      "path": "theories/becoming/chapters/BECOMING-FOUNDATION.md",
+      "role": "statement",
+      "sha256": "cc39142fcdad952f375a1342a66ca8a129e63ecdc2703550150309dc2123c7ac",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "role": "integration",
+      "sha256": "08ef466608469942617f22cde75df4592fffb0d6e055cfe5f3b37c1670797ceb",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-continuation.md",
+      "role": "provenance",
+      "sha256": "47166d4fce1d3d1b6b7bd879679e07f142293fabbab83d8be632ef65e3fca8d3",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
+      "role": "provenance",
+      "sha256": "a08597b97e1763ffd369b5d3eec8588b1d174adf793e3e44d2f88b5bd6a28729",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md",
+      "role": "provenance",
+      "sha256": "fed6e7ec428e52105e81ff7a8141392528d924bab2f7172e2e93271fe00bf2c5",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md",
+      "role": "review",
+      "sha256": "71f1ff8e0ec97b4ebf3723f74beeb63408596bdf29909652ff12f630fe5866c6"
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "en": "Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant: that every becoming is representable as the Becoming spine represents worlds, and that the whole is relationally constituted, not only consistently stated.",
+    "zh": "建立从确定表达通向整体之实际关系构成的连接及其推论根据：每个生成都能如Becoming脊柱表示世界那样被表示，且整体确由关系构成，而不只是被一致陈述。"
+  },
+  "history": [
+    {
+      "en": "9 October 2026: records the full completion objective and distinguishes verified coherence from the still-unproved universal foundation.",
+      "zh": "2026年10月9日：登记完整完成目标，区分已检查相容性与尚未证明的普遍根基。"
+    },
+    {
+      "en": "9 October 2026: section 17 adds a primary-source quantum-process comparison and revises the candidate to distinguish operative constitution from definite causal order at every interface. The zero-added-substantive-axiom objective is retained; no new result identity or proof claimed.",
+      "zh": "2026年10月9日：第17节加入量子过程主文献比较，修订候选以区分作用构成与每个接口上的确定因果次序。保留零附加实质公理目标；不新增成果身份或证明。"
+    },
+    {
+      "en": "9 October 2026: §18 closes the selected real-amplitude control/dephasing/reversal calculation with a source-bound Lean build. This advances an operative correspondence while leaving quantum inputs and universal warrant explicit.",
+      "zh": "2026年10月9日：第18节通过源码绑定Lean构建闭合选定实振幅控制／退相干／反转计算；推进作用对应，同时公开量子输入及普遍根据职责。"
+    },
+    {
+      "en": "9 October 2026: reconciled Ren’s whole/manifold correction. The necessity target is Becoming as a whole, with generativity within it. Earlier chapter/study content and proof sources are preserved; no new theorem or axiom.",
+      "zh": "2026年10月9日：接入Ren关于整体／manifold的修正。必然性对象是Becoming整体，生成性位于其中。保留此前理论、研究及证明源码；无新增定理或公理。"
+    },
+    {
+      "en": "9 October 2026: §19 applies the whole/manifold correction to the actual completion table and central inference, removing the surviving universal-generativity gate. The direct whole-inclusion argument remains incomplete at the passage to relational constitution; the Hegel comparison distinguishes category from causal mechanism. No new theorem or result identity.",
+      "zh": "2026年10月9日：第19节将整体／manifold修正落实到完成表与中心推论，撤回残留的普遍生成性门槛。直接整体包容论证仍缺通向关系构成的连接；黑格尔比较区分范畴与因果机制。无新增定理或成果身份。"
+    },
+    {
+      "en": "9 October 2026: P23 enters the Becoming spine's laws of the whole and its parts carved by premises as evidence in each row of the completion audit, and links the theory stated in full. The passage to relational constitution and the representability of every becoming remain open; this record claims no new theorem or result identity.",
+      "zh": "2026年10月9日：P23把Becoming脊柱的整体规律及前提划出的部分记入完成审计各行的证据，并链接理论的完整陈述。通向关系构成的连接以及每个生成能否被如此表示仍开放；本记录不声称新定理或新成果身份。"
+    },
+    {
+      "zh": "2026-10-09 P23c：按第九次独立审查（BECOMING-P18B-P23-REVIEW.md）更正，见整合文档 §34。related 中的用语改为章节用语，写明可判定性（M10、M2）。",
+      "en": "2026-10-09 P23c: corrected after the ninth independent review (BECOMING-P18B-P23-REVIEW.md); see section 34 of the integration note. Terms in related follow the chapter, with decidability stated (M10, M2)."
+    },
+    {
+      "zh": "2026-10-09 P25b：按第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）更正，见整合文档 §38。写明七个与八个前提的关系（O11(f)）。",
+      "en": "2026-10-09 P25b: corrected after the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md); see section 38 of the integration note. States how the seven and the eight premises relate (O11(f))."
+    },
+    {
+      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2. The claim becomes the statement, prefixed “Target:”; the English “without added substantive axioms” is written “with zero added substantive axioms” so that the statement opens positively, and the Chinese is unchanged. The limitations become two does-not-show items and one not-required item; the next step keeps its first sentence and the spine’s remainder, while its account of the spine becomes a progress line and its last sentence a does-not-show item. The evidence becomes six progress lines with anchored study links and one paragraph; its labels (Section 19, P19–P22) are kept here and in the snapshot. No claim, premise, status, dependency, reference or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/theory-of-becoming-foundation.md); the exact earlier record is text_versions[0].",
+      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2。原主张成为陈述，前加“目标：”；英文“without added substantive axioms”改写为同义的“with zero added substantive axioms”，使陈述以正面表述开头，中文原样保留。限制改为两项“未表明”和一项“不要求”；下一步保留首句及脊柱的剩余，其中关于脊柱的叙述成为一行“已接通”，末句成为一项“未表明”。证据改为六行带锚点研究链接的“已接通”与一段证据；其标记（第19节、P19–P22）保留于本沿革与快照。主张、前提、状态、依赖、引用及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/theory-of-becoming-foundation.md)；迁移前的完整记录为 text_versions[0]。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/5d90f904859febd0/theory-of-becoming-foundation.json",
+      "sha256": "5d90f904859febd0e2c9a1f4102e87b18e63c54ffa1174a2270edafea36af485",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
+    }
+  ]
+}

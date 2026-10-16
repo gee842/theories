@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "世界恰是其各步之网与交换所显之律的运行，网与交换上的每个运行都是世界；世界恰在这个运行遵从交换之律处平衡，计入其余时总是如此；交换律的可行进程与所携带的量都是这样的运行。",
     "en": "A world is exactly a run of the law its webs and exchanges show, and every run on webs and exchanges is a world; a world balances exactly where that run follows the law of exchange, as each does with the rest counted; a feasible course of a law of exchange and the carried amount are such runs."
@@ -119,6 +119,17 @@
       "en": "How the course world of one kind of relatum and the course world of two roles relate: no theorem joins them.",
       "kind": "scope",
       "witness": "Becoming.ExchangeLaw.world"
+    },
+    {
+      "zh": "对应超出展开定义：世界与运行的多数对应定理由 rfl 或 Iff.rfl 成立；所检查的内容在平衡与运行存在的等价、路线世界与生成的运行、携带世界的平衡。",
+      "en": "That the correspondence goes beyond unfolding: run_world, world_webAt, world_move and balanced_iff_run are rfl or Iff.rfl; the checked content is balanced_iff_exists_run, courseWorld_balanced_iff, generation_runs and carriedWorld_balanced.",
+      "kind": "scope",
+      "witness": "Becoming.World.run_world"
+    },
+    {
+      "zh": "过程族与世界族按定义为一：两族以对应定理相遇；落地时 7,214 条脊柱定理中仍有 1,019 条按依存与两族都不相连（连通测量，不是定理）。",
+      "en": "That the process and world families are one by definition: they meet through correspondence theorems, and at landing 1,019 of 7,214 spine theorems were still apart by dependency (a measurement, not a theorem).",
+      "kind": "scope"
     }
   ],
   "counterexamples": [],
@@ -182,11 +193,11 @@
       }
     },
     {
-      "id": "unity-of-readings",
+      "id": "premises-read-off-the-exchange",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用计入其余的世界（World.withRest）及其平衡（World.withRest_balanced）：计入其余时，每个世界的整个网都是交换之律的运行；语境中的读法沿运行是一个世界（Contextual.world），引用。",
-        "en": "Reuses the world with the rest counted (World.withRest) and its balance (World.withRest_balanced): with the rest counted, every world's whole web is a run of the law of exchange; readings in context along a run are one world (Contextual.world), cited."
+        "zh": "复用计入其余的世界（World.withRest）及其平衡（World.withRest_balanced），二者在 Becoming.Reading 中：计入其余时，每个世界的整个网都是交换之律的运行。",
+        "en": "Reuses the world with the rest counted (World.withRest) and its balance (World.withRest_balanced), both in Becoming.Reading: with the rest counted, every world's whole web is a run of the law of exchange."
       },
       "interface": {
         "output": {
@@ -288,6 +299,13 @@
       "detail": {
         "zh": "那里说运行在何处延续；这里说每个基都读作运行。",
         "en": "That result says where a run goes on; this one reads every base as a run."
+      }
+    },
+    {
+      "id": "unity-of-readings",
+      "detail": {
+        "zh": "语境中的读法沿运行是一个世界（Contextual.world），引用；计入其余时每个世界平衡的读法在那里陈述。",
+        "en": "Readings in context along a run are one world (Contextual.world), cited; the reading that every world balances with the rest counted is stated there."
       }
     }
   ],
@@ -525,7 +543,20 @@
     {
       "zh": "2026-10-16：新增（P130，发布准备度复核 §4 的整合所见）；研究 §165（_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130）；报告见 P130 的 REPORT.md。",
       "en": "16 October 2026: added (P130, the integration finding of the release-readiness review, section 4); study section 165 (_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130); report in P130's REPORT.md."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A12、A18、records-mz-15 项：新增两项未表明：世界与运行的对应定理多由 rfl／Iff.rfl 成立（Runs.lean 21 条中至少 10 条），写出所检查的内容所在；两族以对应相遇，落地时 1,019／7,214 条定理仍独立（研究第165节的连通测量）。对 World.withRest 与 withRest_balanced 的形式复用边原指向 unity-of-readings，二者在 Becoming.Reading 中，属 premises-read-off-the-exchange，边改指它，unity-of-readings 留作相关。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A12, A18, records-mz-15: two does_not_show items added: most of the world/run correspondence theorems hold by rfl or Iff.rfl (at least 10 of Runs.lean's 21), with the checked content named; the two families meet by correspondence, and 1,019 of 7,214 theorems were apart at landing (the connectivity measurement of study section 165). The formal-reuse edge for World.withRest and withRest_balanced pointed to unity-of-readings, but both are in Becoming.Reading, owned by premises-read-off-the-exchange; the edge now points there and unity-of-readings stays as related. Earlier text in text_versions."
     }
   ],
-  "text_versions": []
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/2f94743ce71eb745/worlds-are-runs.json",
+      "sha256": "2f94743ce71eb745db742b32715d17c14c22e3df3e4c287b5a33ea8f0e10c995",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
 }

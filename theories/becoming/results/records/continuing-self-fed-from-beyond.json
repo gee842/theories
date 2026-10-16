@@ -2,16 +2,16 @@
   "schema_version": 2,
   "id": "continuing-self-fed-from-beyond",
   "title": {
-    "zh": "延续者从其外得到供给",
-    "en": "A continuing family is fed from beyond"
+    "zh": "延续者不能不从其外得到供给",
+    "en": "A continuing family cannot go unfed from beyond"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T15:26:32+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "延续者从其外得到供给，这是汲入律的输送形式。在可判定相等之下，从其外得到供给恰是该步不内向；必要的是得到供给，不必有哪个来源条件复现。",
-    "en": "A continuing family is fed from beyond, the conveyance form of the draw-in laws. With equality decided, being fed from beyond is exactly a step that is not inward; being fed is needed, and no source condition need recur."
+    "zh": "延续者不能从某步起都不从其外得到供给，这是汲入律的输送形式。在可判定相等之下，从其外得到供给恰是该步不内向；必要的是得到供给，不必有哪个来源条件复现。",
+    "en": "A continuing family cannot from any step on be fed from nothing beyond it, the conveyance form of the draw-in laws. With equality decided, being fed from beyond is exactly a step that is not inward; being fed is needed, and no source condition need recur."
   },
   "laws": [
     {
@@ -633,6 +633,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A4 项：标题与陈述原说延续者“从其外得到供给”；Flow.fed_from_beyond 与 generation_fed_from_beyond 的结论是 ¬∀t≥N, ¬FedFromBeyond，规律 3 已如此陈述，标题与陈述改为同一强度。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: the title and statement said a continuing family \"is fed from beyond\"; Flow.fed_from_beyond and generation_fed_from_beyond conclude ¬∀t≥N, ¬FedFromBeyond, as law 3 already says, so the title and statement now have that strength. Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -642,6 +646,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/5fad8737542e6813/continuing-self-fed-from-beyond.json",
+      "sha256": "5fad8737542e6813ddd3be02242d26bc56056a975a71d9e7d032ceeeb30edcce",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

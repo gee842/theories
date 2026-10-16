@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "语境中的诸读法（量子的亦然）组成一个世界；不依语境的描述恰在它们粘合处存在；所立与交换恰在流平衡处同样读出变化；算入其余时，任何水平序列都是交换的运行，每个世界亦然；在不变之下意义不停在边界上。",
     "en": "Readings in context, quantum ones too, make one world; context-free description exists just where they glue; standing and exchange read change alike just where flow balances; counting the rest, any level sequence, so any world, runs by exchange; under invariance significance stops at no boundary."
@@ -82,6 +82,11 @@
       "zh": "意义满足不变的标准、预设成立：意义的两条重述 Becoming.Boundaries，不加结果。",
       "en": "That significance meets the standard of invariance, and that the presupposition holds: the two significance theorems restate Becoming.Boundaries and add no result.",
       "kind": "non-implication"
+    },
+    {
+      "zh": "计入其余时的平衡是另一事实：其余被定义为剩余的不平衡（Flow.withImbalance）；changes_agree_iff 是自然数上的恒等式。",
+      "en": "That balance with the rest counted is a further fact: the rest is defined as the residual imbalance (Flow.withImbalance), and changes_agree_iff is an identity on the naturals.",
+      "kind": "scope"
     }
   ],
   "counterexamples": [
@@ -95,11 +100,11 @@
   ],
   "standard_boundaries": [
     "no-ethical-premise",
-    "no-evaluation",
     "discrete-steps",
     "formal-not-empirical",
     "names-provisional",
-    "omission-not-refutation"
+    "omission-not-refutation",
+    "significance-related-not-asserted"
   ],
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T143041.527461Z）：Becoming.Readings 的 16 项声明（13 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §125；未经独立审查。",
@@ -343,7 +348,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
@@ -474,7 +479,23 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Readings.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Context.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Quantum.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Significance.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Readings.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Context.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Quantum.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Significance.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A8、A12 项：去掉标准边界 no-evaluation（“不含伦理谓词，不评价生起或消失”）：本记录的规律陈述在不变之下意义不停在边界上（Becoming.Boundaries 的重述），含意义谓词；改用 significance-related-not-asserted（陈述意义与结构的关系而不断言意义或条件）。另按 A12 新增一项未表明：计入其余的平衡由构造给出（其余是剩余的不平衡），changes_agree_iff 是自然数恒等式。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A8, A12: standard boundary no-evaluation (\"Contains no ethical predicate and evaluates neither arising nor ceasing\") removed: this record's laws state significance stopping at no boundary under invariance (restating Becoming.Boundaries), a significance predicate; replaced by significance-related-not-asserted (relating significance to structure without asserting significance or the condition). Per A12, a does_not_show item now says that balance with the rest counted holds by construction (the rest is the residual imbalance) and that changes_agree_iff is an identity on naturals. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
-  "text_versions": []
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/3dc335532742b115/unity-of-readings.json",
+      "sha256": "3dc335532742b115266b9a4ff95416c4e59ec2f4a89e98d6326e8379fb98e679",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
 }

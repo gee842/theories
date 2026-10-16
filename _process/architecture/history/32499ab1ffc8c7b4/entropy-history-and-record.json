@@ -1,0 +1,1007 @@
+{
+  "schema_version": 2,
+  "id": "entropy-history-and-record",
+  "title": {
+    "zh": "熵的历史与记录",
+    "en": "Entropy, history and record"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "statement": {
+    "zh": "交换的历史不加前提从不缩减；无损交换可不息而复返；平衡与第一律之下，箭头使有限家族归于静止；在守恒量中逐次记录交换，恰好分解最小损失。",
+    "en": "Premise-free, the history of exchanges is monotone; lossless exchange can continue and return; under balance and the first law an arrow brings a finite family to rest; and recording each exchange within the conserved amount decomposes the least loss exactly."
+  },
+  "laws": [
+    {
+      "zh": "家族自 T 起交换的历史从不缩减；这不用平衡。",
+      "en": "The history of a family's exchanges since T never shrinks; this uses no balance premise.",
+      "declarations": [
+        "Becoming.Flow.history",
+        "Becoming.Flow.history_mono"
+      ]
+    },
+    {
+      "zh": "平衡的流中一个成员的水平每次变化都是与家族的交换。",
+      "en": "In a balanced flow every change of a member's level is an exchange with the family.",
+      "declarations": [
+        "Becoming.Flow.Balances.exchanges_of_change"
+      ]
+    },
+    {
+      "zh": "一次交换连同其逆转（同样的形成参与，各取其所给、给其所取）恢复每个水平，历史却记下两次。",
+      "en": "An exchange with its reverse (the same formations, each taking what it gave and giving what it took) restores every level, while the history counts both.",
+      "declarations": [
+        "Becoming.Flow.Reverses",
+        "Becoming.Flow.Balances.restores_levels_not_history"
+      ]
+    },
+    {
+      "zh": "零：第一律在固定单位下是无中不生有，无损是恰好得回，耗散是第一律加最小损失。",
+      "en": "Zero: the first law at a fixed unit is nothing from nothing, losing nothing is getting back exactly, and dissipation is the first law with a least loss.",
+      "declarations": [
+        "Becoming.Flow.Gainless",
+        "Becoming.Flow.Lossless",
+        "Becoming.Flow.Dissipative.gainless"
+      ]
+    },
+    {
+      "zh": "第一律之下逆转在规律之内恰当原交换无损，耗散之下没有交换被逆转。",
+      "en": "Under the first law a reverse is within the law exactly where the exchange is lossless, and under dissipation no exchange is reversed.",
+      "declarations": [
+        "Becoming.Flow.Reverses.gainlessOn_iff",
+        "Becoming.Flow.Dissipative.irreversible"
+      ]
+    },
+    {
+      "zh": "Passing 有限、平衡、无损、每步被围住，交换在下一步被逆转，生起与止息复现，历史每步增长一。",
+      "en": "Passing is finite, balanced, lossless and enclosed at every step, each exchange reversed at the next, arising and ceasing recurring, its history growing by one at every step.",
+      "declarations": [
+        "Becoming.Passing.passes",
+        "Becoming.Passing.history_grows"
+      ]
+    },
+    {
+      "zh": "记录：把交换的记录算作只被给予、不被取用的条件，算入记录的平衡与原平衡相同，整体与每步每个家族都如此。",
+      "en": "The record: with the record of the exchanges counted as a condition given to and never taken from, balance with the record counted is balance, as a whole and at each step on each family.",
+      "declarations": [
+        "Becoming.Flow.withRecord",
+        "Becoming.Web.withRecord",
+        "Becoming.Flow.balances_withRecord",
+        "Becoming.Flow.balancesOn_withRecord"
+      ]
+    },
+    {
+      "zh": "流在一步上耗散于家族，恰当有某个记录使每次交换精确守恒家族连同其记录并给记录至少一个单位，也恰当以一个单位记录每次交换时家族连同记录不得增益。",
+      "en": "A flow dissipates on a family across a step exactly where, for some record, every exchange conserves the family with its record exactly and leaves the record at least one unit, and exactly where, recording each exchange at one unit, the family with its record gains nothing.",
+      "declarations": [
+        "Becoming.Flow.dissipatesOn_iff_conserved",
+        "Becoming.Flow.dissipatesOn_iff_unitRecord",
+        "Becoming.Flow.dissipatesOn_iff_recorded",
+        "Becoming.Flow.Dissipative.of_recorded"
+      ]
+    },
+    {
+      "zh": "两部分都需要；第一律之下记录收到的恰是家族失去的。",
+      "en": "Both parts are needed; under the first law the record receives exactly what the family loses.",
+      "declarations": [
+        "Becoming.Passing.record_needs_both",
+        "Becoming.Flow.GainlessOn.residues_lost"
+      ]
+    },
+    {
+      "zh": "耗散的量从不减少，第一律之下连同存量守恒，历史在其内，按比例 q 耗散时被取走的至多是它的 q+1 倍。",
+      "en": "The amount dissipated never falls; with the stock it is conserved under the first law, the history is within it, and under loss in proportion q everything taken is at most q + 1 times it.",
+      "declarations": [
+        "Becoming.Flow.dissipated",
+        "Becoming.Flow.dissipated_mono",
+        "Becoming.Flow.Balances.stock_dissipated",
+        "Becoming.Flow.Balances.history_within",
+        "Becoming.Flow.DissipatesBy.uptake_le_lost",
+        "Becoming.Flow.uptake_within_dissipated"
+      ]
+    },
+    {
+      "zh": "构型：第一律之下家族的构型在其存量的构型之内，configurations n K 恰好一次列出 K 个单位落入 n 个成员的每种方式。",
+      "en": "Configurations: under the first law the family's configuration stays among its stock's configurations, configurations n K listing each way K units fall into n members exactly once.",
+      "declarations": [
+        "Becoming.Web.config_within",
+        "Becoming.configurations",
+        "Becoming.configurations_exact"
+      ]
+    },
+    {
+      "zh": "从不复返则变化的步数不多于这些构型而归于静止，所以不止的变化复返；耗散之下家族从不复返。",
+      "en": "Never revisiting, it changes at most that many times and rests, so change without end revisits, and under dissipation a family never revisits.",
+      "declarations": [
+        "Becoming.Web.Revisits",
+        "Becoming.Flow.Balances.changes_within",
+        "Becoming.Flow.Balances.changes_within_lossless",
+        "Becoming.Flow.Balances.rests_of_never_revisits",
+        "Becoming.Flow.Balances.unending_change_revisits",
+        "Becoming.World.arising_revisits",
+        "Becoming.Flow.Balances.never_revisits"
+      ]
+    },
+    {
+      "zh": "箭头：构型的量从不下降、每次变化都上升就排除复返，所以第一律之下箭头带来静止，变化继续时没有箭头。",
+      "en": "The arrow: a quantity of the configuration that never falls and rises at every change rules out revisiting, so under the first law an arrow brings rest and while change goes on there is none.",
+      "declarations": [
+        "Becoming.Web.Arrow",
+        "Becoming.Web.never_revisits_of_arrow",
+        "Becoming.Flow.Balances.rests_of_arrow",
+        "Becoming.Flow.Balances.no_arrow",
+        "Becoming.World.no_arrow",
+        "Becoming.Passing.no_arrow"
+      ]
+    },
+    {
+      "zh": "合并：变化是构型的函数时，变化之后静止合并两个构型，不用流的规律。",
+      "en": "Merging: where change is a function of the configuration, rest after a change merges two configurations, with no law of the flow.",
+      "declarations": [
+        "Becoming.Web.Determined",
+        "Becoming.Web.merges_of_settles",
+        "Becoming.Web.Merges"
+      ]
+    },
+    {
+      "zh": "不合并则变化不停，第一律之下复返；从不复返、有箭头或被耗散时不是不合并。",
+      "en": "Merging none, change never stops and under the first law revisits; never revisiting, under an arrow or under dissipation, it is not the case that it merges none.",
+      "declarations": [
+        "Becoming.Web.changes_persist",
+        "Becoming.Flow.Balances.revisits_of_apart",
+        "Becoming.Flow.Balances.merges_of_never_revisits",
+        "Becoming.Flow.Balances.merges_of_arrow",
+        "Becoming.Flow.Balances.merges_of_dissipates"
+      ]
+    },
+    {
+      "zh": "守住历史：构型承载历史时其读数是箭头，第一律之下交换在构型的个数之内停止，有限世界不停交换就遗忘。",
+      "en": "Holding the history: where the configuration carries the history, its reading is an arrow, exchange stops within the configurations under the first law, and a finite world that keeps exchanging forgets.",
+      "declarations": [
+        "Becoming.Flow.CarriesHistory",
+        "Becoming.Flow.Balances.arrow_of_carries",
+        "Becoming.Flow.Balances.exchange_stops_of_carries",
+        "Becoming.World.forgets"
+      ]
+    },
+    {
+      "zh": "Gathering：精确守恒、每步被围住，记录的水平永远上升，从外部得益，世界不有限。",
+      "en": "Gathering: under exact conservation, every step enclosed, a record's level rises without end, gaining from beyond, in a world that is not finite.",
+      "declarations": [
+        "Becoming.Gathering.gathers"
+      ]
+    },
+    {
+      "zh": "六律的实例：变化之后的复返是复返，箭头标记每次变化，沿家族的合并是规律的合并，确定的变化沿规律的轨道。",
+      "en": "Instances of the laws of change: revisiting after a change is revisiting, an arrow marks every change, a merge along the family is a merge of the law, and determined change runs along the law's orbit.",
+      "declarations": [
+        "Becoming.Web.Revisits.recurs",
+        "Becoming.Web.Arrow.marks",
+        "Becoming.Web.Merges.law",
+        "Becoming.Web.Determined.orbit"
+      ]
+    },
+    {
+      "zh": "第一律把构型限于其 T 时存量之内的构型（这一界限是前提 Z），所以从每步起构型构造性地两次取同一值，箭头使变化停止。",
+      "en": "The first law keeps the configurations among those within the stock at T (this bound is the supplied Z), so from every step on the configuration takes one value twice, constructively, and an arrow stops change.",
+      "declarations": [
+        "Becoming.Flow.Balances.held",
+        "Becoming.Flow.Balances.recurs",
+        "Becoming.Flow.Balances.arrow_stops"
+      ]
+    },
+    {
+      "zh": "在这一界限之内不合并的规律带回起点（起作用的是界限而不是不合并：后继规律不合并且永不回返）；当下遗忘所保留的历史；箭头或耗散排除不合并的规律。",
+      "en": "Within that bound a law merging nothing brings the start back (the bound does the work, not losing alone: the successor law merges nothing and never returns); the present forgets the kept history; and an arrow or dissipation rules out a law merging nothing.",
+      "declarations": [
+        "Becoming.Flow.Balances.returns_of_lossless",
+        "Becoming.Law.succ_open",
+        "Becoming.Flow.Balances.present_forgets",
+        "Becoming.Flow.Balances.not_lossless_of_arrow",
+        "Becoming.Flow.Balances.not_lossless_of_dissipates"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "Flow.history_mono 本身不用平衡；由水平变化推出交换（Flow.Balances.exchanges_of_change）、逆转恢复水平（Flow.Balances.restores_levels_not_history）等结论使用平衡及所陈述的局部条件。",
+      "en": "Flow.history_mono itself uses no balance premise; connecting a level change to an exchange (Flow.Balances.exchanges_of_change), restoring levels under a reversal (Flow.Balances.restores_levels_not_history), and the other conditional results use balance and their stated local hypotheses."
+    },
+    {
+      "zh": "第一律（Flow.GainlessOn、Flow.Gainless：每个不重复的封闭家族得回的至多是所取）与无损（Flow.LosslessOn、Flow.Lossless）是定理的假设，不是公理；固定单位的自然数量。",
+      "en": "The first law (Flow.GainlessOn, Flow.Gainless: every closed family without repetition gets back at most what is taken from it) and losing nothing (Flow.LosslessOn, Flow.Lossless) are hypotheses of the theorems, not axioms; natural-number amounts at a fixed unit."
+    },
+    {
+      "zh": "确定的变化（Web.Determined：自 T 起下一步的构型是当前构型的函数）是合并定理的假设；脊柱的流以步为索引，不要求它。",
+      "en": "Determined change (Web.Determined: from T on the next configuration is a function of the current one) is a hypothesis of the merging theorems; the spine's flow is indexed by steps and does not require it."
+    },
+    {
+      "zh": "把记录算作一个条件是读法，依据 Ren 2026-10-11：“I know what \"Every exchange loses at least one smallest amount\" is now, it is entropy”与“pure thermodynamics, at atomic level, each exchange between objects holds the conservation of energy, but entropy still rise. zero premises.”。",
+      "en": "Counting the record as a condition is a reading, following Ren on 11 October 2026: ‘I know what \"Every exchange loses at least one smallest amount\" is now, it is entropy’ and ‘pure thermodynamics, at atomic level, each exchange between objects holds the conservation of energy, but entropy still rise. zero premises.’"
+    },
+    {
+      "zh": "作者的读法（AI，依 Ren 的交托采用）：记录是在精确守恒之下仍增加的量。定理对是否这样读都成立：Flow.balances_withRecord 是恒等，不算入记录的规律也一并陈述。",
+      "en": "The author's reading (AI, adopted on Ren's delegation): the record is what rises while every exchange conserves exactly. The theorems hold under either reading: Flow.balances_withRecord is an identity, and the laws without the record are stated too."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "“熵”指守恒量中的记录还是历史，定理不决定；依 Ren 的交托，它指记录，历史是记录所记的。",
+      "en": "The theorems do not decide whether ‘entropy’ names the record in the conserved amount or the history; on Ren's delegation it names the record, the history being what the record records.",
+      "kind": "scope"
+    },
+    {
+      "zh": "把最小损失分解为第一律与守恒量中的记录，并不推出它。",
+      "en": "Decomposing the least loss into the first law and a record in the conserved amount does not derive it.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "合并定理的结论是双重否定；只陈述了合并与否的二分。",
+      "en": "The merging conclusions are double negations, and only the dichotomy of merging or not is stated.",
+      "kind": "scope"
+    },
+    {
+      "zh": "可达构型在第一律的列表之内的计数没有陈述；它们逐步收缩对任何确定的规律成立，不加前提。",
+      "en": "The count of reachable configurations within the first law's list is not stated; their shrinking step by step holds for any determined law with no premise.",
+      "kind": "scope",
+      "witness": "Becoming.Law.lost_stays"
+    },
+    {
+      "zh": "粗粒化的熵从有序的开端上升需要关于开端的前提，没有陈述。",
+      "en": "A coarse-grained entropy rising from an ordered start needs a premise about the start and is not stated.",
+      "kind": "scope"
+    },
+    {
+      "zh": "算入记录的流以 Option 为条件，不是同一种关系项的世界。",
+      "en": "The flow with the record counted has Option conditions and is not a world of one kind of relatum.",
+      "kind": "scope"
+    },
+    {
+      "zh": "与热力学的对应是读法，不是物理推导。",
+      "en": "The correspondences to thermodynamics are readings, not physical derivations.",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "detail": {
+        "zh": "Passing：有限、平衡、无损、被围住，每次交换在下一步被逆转，不耗散，生起与止息复现，构型每两步回来，没有箭头，变化不合并任何构型，历史每步增长（Passing.passes、Passing.history_without_arrow）：第一律不推出静止，也不推出耗散。",
+        "en": "Passing: finite, balanced, lossless and enclosed, each exchange reversed at the next step, not dissipative, arising and ceasing recurring, its configuration coming back every two steps, with no arrow, its change merging no configurations, its history growing at every step (Passing.passes, Passing.history_without_arrow): the first law gives neither rest nor dissipation."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "detail": {
+        "zh": "Settling：一个单位传递一次，无损，从不复返而静止，不耗散，静止合并了构型，接受单位一边的水平是箭头（Settling.settles、Settling.merges）：从不复返不推出耗散。",
+        "en": "Settling: one unit passes once, losslessly; the world never revisits and rests, is not dissipative, its rest merges configurations, and the level of the side receiving the unit is an arrow (Settling.settles, Settling.merges): never revisiting does not give dissipation."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "detail": {
+        "zh": "Passing.record_needs_both：记录为零时家族连同记录不得增益而记录漏掉每次交换；每次记一个单位时记录记下每次交换而家族连同记录得益。",
+        "en": "Passing.record_needs_both: recording nothing, the family with its record gains nothing but the record misses every exchange; recording one unit each, the record holds every exchange but the family with it gains."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "detail": {
+        "zh": "Gathering：精确守恒、每步被围住、交换复现，记录的水平是永不停止的箭头；记录从其外得益，世界不有限（Gathering.gathers）：no_arrow 的“家族不得增益”与 World.no_arrow 的“世界有限”都起作用。",
+        "en": "Gathering: exact conservation, every step enclosed, the exchange recurring, the record's level an arrow without end; the record gains from beyond, and the world is not finite (Gathering.gathers): the premises that the family gains nothing (no_arrow) and that the world is finite (World.no_arrow) do work."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z，外围回执 20261013T095049.338744Z）：Entropy 模块的定理公理报告为空；检查器并核对核心纯净，核心导入闭包内每条源声明公理报告为空，且只用 Lean 前导即可编译。作者反审见整合文档 §110；无独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; periphery receipt 20261013T095049.338744Z): the theorems of the Entropy module have empty axiom reports, and the checker verifies core purity, every source declaration in the core's import closure having an empty axiom report and the core compiling from Lean's prelude alone. Author counterreview in §110 of the integration note; no independent review."
+  },
+  "next_delta": {
+    "zh": "可达构型在第一律的列表之内的计数，以及不合并时可能全部保留；把记录作为普查中的关系项，使算入记录的流本身是一个世界；粗粒化的熵与关于开端的前提（外围）；连续时间与实数量；独立审查。",
+    "en": "The count of reachable configurations within the first law's list, and every possibility kept where nothing merges; the record as a relatum in the census, so the counted flow is itself a world; a coarse-grained entropy with a premise about the start (periphery); continuous time and real amounts; an independent review."
+  },
+  "correspondence": {
+    "zh": "回答 Ren 的三个问题（AI 的读法，依 Ren 的交托采用）。零是否可能：可能，恰在无损之处；Ren 的业力读法在此是逆转之后水平没有差异，历史有差异。熵能否推出：不加前提地增加的是历史；有限围住的水平在变化继续时没有箭头，箭头或静止合并构型，在构型中守住历史使交换停止；最小损失恰是第一律加守恒量中的记录，是分解而不是推出。第二定律的形式：历史与耗散的量不减，后者连同存量守恒，按比例耗散时为取用定界，与量的规律（rest-at-every-resolution 的 Flow.uptake_bound）相合。与热力学的对应是读法，不是物理推导：Clausius（不减的量）；Boltzmann 的 W（configurations，即 Einstein 固体的多重度）；Zermelo 与 Poincaré 的复返（unending_change_revisits）；Loschmidt 的可逆性（no_arrow）；Landauer 的擦除（merges_of_settles）；Bennett 的可逆计算保存历史（World.forgets）；Gouy–Stodola 的可用功（dissipatesOn_iff_conserved、residues_lost）；开放系统（Gathering）。脊柱上的“水平恢复而历史不恢复”与 endpoint-loss-and-return 及 ReturnConditions.lean 中加入的计数器是同一区分，那里的结果先在；本结果是它在流与网上的形式，并把它连到第一律、耗散与构型的计数。",
+    "en": "Answers to Ren's three questions (the AI's reading, adopted on Ren's delegation). Is 0 possible: yes, exactly where lossless; in Ren's karmic reading, after a reverse the levels show no difference and the history does. Can entropy be derived: what rises with no premise is the history; the levels of a finite enclosure have no arrow while change goes on, an arrow or rest merges configurations, and holding the history in the configuration stops exchange; the least loss is exactly the first law with the record held in the conserved amount, a decomposition, not a derivation. The second-law form: the history and the amount dissipated never fall, the latter conserved with the stock and bounding uptake under loss in proportion, in keeping with the amount law (Flow.uptake_bound of rest-at-every-resolution). The correspondences to thermodynamics are readings, not physical derivations: Clausius (a never-decreasing quantity); Boltzmann's W (configurations, the Einstein solid's multiplicity); Zermelo's and Poincaré's recurrence (unending_change_revisits); Loschmidt's reversibility (no_arrow); Landauer's erasure (merges_of_settles); Bennett's reversible computation keeping its history (World.forgets); Gouy–Stodola's available work (dissipatesOn_iff_conserved, residues_lost); open systems (Gathering). On the spine, ‘the levels restored, the history not’ is the distinction already drawn by endpoint-loss-and-return and by the counter added in ReturnConditions.lean, which come first; this result is its form on the flow and web, connected to the first law, dissipation and the count of configurations."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+  "aliases": [
+    "Becoming.Flow.Gainless",
+    "Becoming.Flow.Lossless",
+    "Becoming.Flow.Reverses",
+    "Becoming.Flow.history",
+    "Becoming.Flow.Balances.restores_levels_not_history",
+    "Becoming.Flow.Reverses.gainlessOn_iff",
+    "Becoming.Flow.Dissipative.irreversible",
+    "Becoming.Flow.withRecord",
+    "Becoming.Flow.dissipatesOn_iff_conserved",
+    "Becoming.Flow.dissipatesOn_iff_unitRecord",
+    "Becoming.Flow.dissipatesOn_iff_recorded",
+    "Becoming.Flow.GainlessOn.residues_lost",
+    "Becoming.Flow.dissipated",
+    "Becoming.Flow.Balances.stock_dissipated",
+    "Becoming.Flow.uptake_within_dissipated",
+    "Becoming.configurations_exact",
+    "Becoming.Flow.Balances.unending_change_revisits",
+    "Becoming.Web.Arrow",
+    "Becoming.Flow.Balances.no_arrow",
+    "Becoming.World.no_arrow",
+    "Becoming.Web.merges_of_settles",
+    "Becoming.Flow.Balances.revisits_of_apart",
+    "Becoming.Flow.Balances.merges_of_arrow",
+    "Becoming.World.forgets",
+    "Becoming.Passing.history_without_arrow",
+    "Becoming.Gathering.gathers",
+    "Becoming.Flow.Balances.recurs",
+    "Becoming.Flow.Balances.returns_of_lossless",
+    "Becoming.Flow.Balances.present_forgets",
+    "Becoming.Flow.Balances.not_lossless_of_arrow",
+    "Becoming.Web.Arrow.marks",
+    "Becoming.Flow.balancesOn_withRecord"
+  ],
+  "dependencies": [
+    {
+      "id": "continued-change-needs-openness",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "从不复返的证明用 Flow.rise_lowers_on 与 Flow.fall_lowers_on（被耗散的家族中成员上升或下降都使存量下降）；有限世界的结论用 World.rises_of_arises、World.falls_of_ceases 与 Flow.ExchangeRecurs。",
+        "en": "The proof of never revisiting uses Flow.rise_lowers_on and Flow.fall_lowers_on (a member rising or falling in a family dissipated on lowers the stock); the finite-world results use World.rises_of_arises, World.falls_of_ceases and Flow.ExchangeRecurs."
+      },
+      "interface": {
+        "output": {
+          "zh": "平衡与耗散之下，被耗散的家族中任何成员的水平变化都使家族的存量严格下降；体现之下生起即上升、止息即下降。",
+          "en": "Under balance and dissipation, any change of a member's level in a family dissipated on strictly lowers the family's stock; under embodiment, arising is a rise and ceasing a fall."
+        },
+        "input": {
+          "zh": "构型变化之处有成员上升或下降（Web.changes_member），所以耗散之下存量在每次变化时严格下降，且从不上升，故不能复返。",
+          "en": "Where the configuration changes some member rises or falls (Web.changes_member), so under dissipation the stock strictly falls at every change and never rises, and cannot come back."
+        },
+        "conditions": {
+          "zh": "平衡；家族自 T 起被耗散；不重复的家族。",
+          "en": "Balance; the family dissipated on from T on; a family without repetition."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean"
+      }
+    },
+    {
+      "id": "rest-at-every-resolution",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "Flow.DissipatesBy.uptake_le_lost 与 Flow.uptake_within_dissipated 用 Flow.DissipatesBy 与 Flow.DissipatesBy.replenishment_le。",
+        "en": "Flow.DissipatesBy.uptake_le_lost and Flow.uptake_within_dissipated use Flow.DissipatesBy and Flow.DissipatesBy.replenishment_le."
+      },
+      "interface": {
+        "output": {
+          "zh": "按比例 q 耗散时，q+1 乘家族得回的不多于 q 乘从它取走的，所以得回的不多于取走的。",
+          "en": "Under loss in proportion q, q + 1 times what the family gets back is within q times what is taken from it, so what it gets back is within what is taken."
+        },
+        "input": {
+          "zh": "于是取走的等于得回的加失去的，取走的至多是失去的 q+1 倍。",
+          "en": "So what is taken is what is got back with what is lost, and what is taken is at most q + 1 times what is lost."
+        },
+        "conditions": {
+          "zh": "按比例 q 耗散于家族（固定单位）。",
+          "en": "Loss in proportion q on the family (at a fixed unit)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "实例定理用 Becoming.Recurrence 的 Revisits、revisits_of_held、revisits_from、Marks、Marks.change_not_recurring、Law.orbit、Law.orbit_add、Law.Lossless、Law.Lossless.cancel、Law.Merges、Law.Merges.not_lossless、Law.Returns、Law.withHistory 与 Law.present_forgets。",
+        "en": "The instance theorems use Becoming.Recurrence's Revisits, revisits_of_held, revisits_from, Marks, Marks.change_not_recurring, Law.orbit, Law.orbit_add, Law.Lossless, Law.Lossless.cancel, Law.Merges, Law.Merges.not_lossless, Law.Returns, Law.withHistory and Law.present_forgets."
+      },
+      "interface": {
+        "output": {
+          "zh": "不加前提：被一个列表容纳的序列复返（鸽巢，不用判定）；被标记的变化在有限多构型之内停止；不合并的规律在多个步上仍不合并；保留历史的展开中有限的当下遗忘。",
+          "en": "With no premise: a sequence held by a list revisits (pigeonhole, without decidability); a marked change stops within finitely many configurations; a law merging nothing merges nothing over many steps; in an unfolding that keeps its history a finite present forgets."
+        },
+        "input": {
+          "zh": "家族自 T 起的构型是一个序列；变化是构型的函数时 next 是一个规律；第一律之下构型被其 T 时存量之内的构型列表容纳（Flow.Balances.held）。",
+          "en": "The family's configurations from T on are a sequence; where change is a function of the configuration, next is a law; under the first law the configurations are held by the list of those within the stock at T (Flow.Balances.held)."
+        },
+        "conditions": {
+          "zh": "平衡；家族自 T 起不得益（第一律）；回返与遗忘还要求变化自 T 起由 next 决定（Web.Determined）。",
+          "en": "Balance; the family gaining nothing from T on (the first law); return and forgetting also need change determined by next from T on (Web.Determined)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "rest-with-refinement-counted",
+      "detail": {
+        "zh": "并行的读法：R4 把单位的细分算作只给不取的形成，本结果把交换的记录算作只被给予的条件；两者都不添前提而重读，R4 得到每一分辨率下的静止，本结果把最小损失分解为第一律与守恒量中的记录。R4 的下一步（最小损失能否推出、无损的交换是否存在）由本结果回答。",
+        "en": "A parallel reading: R4 counts the splitting of the unit as a formation that gives without taking; this result counts the record of the exchanges as a condition only given to. Both reread without adding a premise; R4 obtains rest at every resolution, and this result decomposes the least loss into the first law and the record in the conserved amount. It answers R4's next step (whether the least loss can be derived, whether lossless exchanges exist)."
+      }
+    },
+    {
+      "id": "endpoint-loss-and-return",
+      "detail": {
+        "zh": "先在的结果：沿实际历史，返回恰当保留全部端点可能；ReturnConditions.lean 中加入的计数器使原有的返回不再是返回。本结果的 restores_levels_not_history 是同一区分在流上的形式；未声称两者之间的形式转换。",
+        "en": "Prior results: along an actual history, return holds exactly where every endpoint possibility is kept; the counter added in ReturnConditions.lean makes a native return no longer a return. restores_levels_not_history here is the same distinction on the flow; no formal adapter between them is claimed."
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "zh": "统一计划 R5：熵，按 Ren 2026-10-11 的问题，以不加前提的最强形式在先；这不是无公理的整体演绎。",
+        "en": "Unification plan R5: entropy, following Ren's questions of 11 October 2026, the strongest form without premise first; this is not the deduction of the whole without axioms."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "role": "proof",
+      "sha256": "1cba13043e8de03404856b080b92321dadaa80016770bd67b4dc48e30fc49a3d",
+      "declarations": [
+        "Becoming.Flow.GainlessOn",
+        "Becoming.Flow.LosslessOn",
+        "Becoming.Flow.Gainless",
+        "Becoming.Flow.Lossless",
+        "Becoming.Flow.Reverses",
+        "Becoming.Flow.exchanges",
+        "Becoming.Flow.DissipatesOn.gainlessOn",
+        "Becoming.Flow.Dissipative.gainless",
+        "Becoming.Flow.LosslessOn.gainlessOn",
+        "Becoming.Flow.Lossless.gainless",
+        "Becoming.Flow.eq_zero_of_add_sign_le",
+        "Becoming.Flow.DissipatesOn.idle_of_lossless",
+        "Becoming.Flow.Reverses.mem",
+        "Becoming.Flow.Reverses.mem_back",
+        "Becoming.Flow.Reverses.take_total",
+        "Becoming.Flow.Reverses.give_total",
+        "Becoming.Flow.Reverses.taken",
+        "Becoming.Flow.Reverses.given",
+        "Becoming.Flow.Balances.reverse_restores",
+        "Becoming.Flow.Reverses.closedAt",
+        "Becoming.Flow.Reverses.gainlessOn_iff",
+        "Becoming.Flow.Reverses.idle_of_dissipates",
+        "Becoming.Flow.Dissipative.irreversible",
+        "Becoming.Flow.Reverses.exchanges_eq",
+        "Becoming.Flow.Balances.exchanges_of_change",
+        "Becoming.Flow.Balances.restores_levels_not_history",
+        "Becoming.Flow.withRecord",
+        "Becoming.Flow.recorded",
+        "Becoming.Flow.unitRecord",
+        "Becoming.Flow.RecordsOn",
+        "Becoming.Web.withRecord",
+        "Becoming.none_not_mem",
+        "Becoming.distinct_withRecord",
+        "Becoming.total_withRecord",
+        "Becoming.sign_le_of",
+        "Becoming.sign_exchange_iff",
+        "Becoming.Flow.recorded_succ",
+        "Becoming.Flow.balances_withRecord",
+        "Becoming.Flow.balancesOn_withRecord",
+        "Becoming.Flow.closedAt_withRecord",
+        "Becoming.Flow.gainlessOn_withRecord_iff",
+        "Becoming.Flow.dissipatesOn_iff_unitRecord",
+        "Becoming.Flow.unitRecord_records",
+        "Becoming.Flow.DissipatesOn.of_recorded",
+        "Becoming.Flow.dissipatesOn_iff_recorded",
+        "Becoming.Flow.Dissipative.of_recorded",
+        "Becoming.Flow.dissipative_iff_unitRecord",
+        "Becoming.Flow.Balances.lowered_by",
+        "Becoming.Flow.Balances.nonrising",
+        "Becoming.Flow.Balances.falls_by_record",
+        "Becoming.Flow.RecordsOn.exchanges_le",
+        "Becoming.Flow.lost",
+        "Becoming.Flow.dissipated",
+        "Becoming.Flow.excess_zero_of_le",
+        "Becoming.Flow.GainlessOn.replenishment_le",
+        "Becoming.Flow.GainlessOn.replenishment_lost",
+        "Becoming.Flow.Balances.stock_lost",
+        "Becoming.Flow.DissipatesOn.takers_le_lost",
+        "Becoming.Flow.DissipatesOn.exchanges_le_takers",
+        "Becoming.Flow.LosslessOn.lost_zero",
+        "Becoming.Flow.dissipated_succ",
+        "Becoming.Flow.dissipated_mono",
+        "Becoming.Flow.DissipatesOn.dissipated_rises",
+        "Becoming.Flow.Balances.stock_dissipated",
+        "Becoming.Flow.Balances.dissipated_le",
+        "Becoming.Flow.dissipated_zero",
+        "Becoming.Flow.Balances.history_within",
+        "Becoming.Flow.Balances.loss_ceases",
+        "Becoming.Flow.residue",
+        "Becoming.Flow.losslessOn_withRecord_iff",
+        "Becoming.Flow.GainlessOn.conserves_residue",
+        "Becoming.Flow.dissipatesOn_iff_conserved",
+        "Becoming.Flow.GainlessOn.residues_lost",
+        "Becoming.Flow.replenishment_lost_of_le",
+        "Becoming.Flow.DissipatesBy.uptake_le_lost",
+        "Becoming.Flow.uptake_within_dissipated",
+        "Becoming.Web.config",
+        "Becoming.Web.Changes",
+        "Becoming.Web.Revisits",
+        "Becoming.splits",
+        "Becoming.EntropyLists.joinMap",
+        "Becoming.configurations",
+        "Becoming.downFrom",
+        "Becoming.configurationsWithin",
+        "Becoming.EntropyLists.mem_joinMap",
+        "Becoming.head_splits",
+        "Becoming.mem_splits",
+        "Becoming.mem_configurations",
+        "Becoming.mem_downFrom",
+        "Becoming.mem_configurationsWithin",
+        "Becoming.preimage_of_mem_map",
+        "Becoming.EntropyLists.mem_append_cases",
+        "Becoming.mem_joinMap_cases",
+        "Becoming.EntropyLists.distinct_append",
+        "Becoming.distinct_joinMap",
+        "Becoming.sum_of_mem_splits",
+        "Becoming.splits_apart",
+        "Becoming.distinct_splits",
+        "Becoming.total_of_mem_configurations",
+        "Becoming.length_of_mem_configurations",
+        "Becoming.distinct_configurations",
+        "Becoming.configurations_exact",
+        "Becoming.configurations_examples",
+        "Becoming.le_of_mem_downFrom",
+        "Becoming.distinct_downFrom",
+        "Becoming.distinct_configurationsWithin",
+        "Becoming.length_of_map",
+        "Becoming.Web.config_total",
+        "Becoming.Web.config_within",
+        "Becoming.Web.config_exact",
+        "Becoming.Web.level_of_config",
+        "Becoming.Web.changes_of_member",
+        "Becoming.Web.changes_member",
+        "Becoming.Web.seen_changes",
+        "Becoming.Web.changes_within",
+        "Becoming.Web.rests_of_never_revisits",
+        "Becoming.nonrising_from",
+        "Becoming.nonrising_between",
+        "Becoming.Flow.Balances.never_revisits",
+        "Becoming.Flow.Balances.changes_within",
+        "Becoming.Flow.Balances.changes_within_lossless",
+        "Becoming.Flow.Balances.rests_of_never_revisits",
+        "Becoming.Flow.Balances.unending_change_revisits",
+        "Becoming.Web.Arrow",
+        "Becoming.nonfalling_from",
+        "Becoming.nonfalling_between",
+        "Becoming.Web.never_revisits_of_arrow",
+        "Becoming.Flow.Balances.rests_of_arrow",
+        "Becoming.Flow.Balances.no_arrow",
+        "Becoming.Web.Determined",
+        "Becoming.Web.Merges",
+        "Becoming.Web.merges_of_settles",
+        "Becoming.Web.changes_persist",
+        "Becoming.Flow.Balances.revisits_of_apart",
+        "Becoming.Flow.Balances.merges_of_never_revisits",
+        "Becoming.Flow.Balances.merges_of_arrow",
+        "Becoming.Flow.Balances.merges_of_dissipates",
+        "Becoming.Web.Revisits.recurs",
+        "Becoming.Web.Arrow.marks",
+        "Becoming.Web.Merges.law",
+        "Becoming.Web.Determined.orbit",
+        "Becoming.Flow.Balances.held",
+        "Becoming.Flow.Balances.orbit_held",
+        "Becoming.Flow.Balances.recurs",
+        "Becoming.Flow.Balances.arrow_stops",
+        "Becoming.Flow.Balances.returns_of_lossless",
+        "Becoming.Flow.Balances.present_forgets",
+        "Becoming.Flow.Balances.not_lossless_of_arrow",
+        "Becoming.Flow.Balances.not_lossless_of_dissipates",
+        "Becoming.mark_mono",
+        "Becoming.le_of_add_le_add_left",
+        "Becoming.Flow.history",
+        "Becoming.Flow.history_mono",
+        "Becoming.Flow.CarriesHistory",
+        "Becoming.Flow.exchanges_pos",
+        "Becoming.Flow.CarriesHistory.changes",
+        "Becoming.Flow.Balances.never_revisits_of_carries",
+        "Becoming.Flow.Balances.exchanges_within_of_carries",
+        "Becoming.Flow.Balances.exchange_stops_of_carries",
+        "Becoming.Flow.Balances.arrow_of_carries",
+        "Becoming.World.rests_of_never_revisits",
+        "Becoming.World.arising_revisits",
+        "Becoming.World.never_revisits",
+        "Becoming.World.forgets",
+        "Becoming.World.no_arrow",
+        "Becoming.map_congr",
+        "Becoming.Passing.holds",
+        "Becoming.Passing.side",
+        "Becoming.Passing.level",
+        "Becoming.Passing.at_",
+        "Becoming.Passing.flow",
+        "Becoming.Passing.web",
+        "Becoming.Passing.world",
+        "Becoming.Passing.all",
+        "Becoming.Passing.one_ne_zero",
+        "Becoming.Passing.not_not",
+        "Becoming.Passing.holds_self",
+        "Becoming.Passing.holds_not",
+        "Becoming.Passing.holds_to_not",
+        "Becoming.Passing.holds_pos",
+        "Becoming.Passing.every",
+        "Becoming.Passing.distinct",
+        "Becoming.Passing.total_at_all",
+        "Becoming.Passing.total_at",
+        "Becoming.Passing.holds_side",
+        "Becoming.Passing.balances",
+        "Becoming.Passing.lossless",
+        "Becoming.Passing.closed",
+        "Becoming.Passing.reverses",
+        "Becoming.Passing.embodied",
+        "Becoming.Passing.mem_alive",
+        "Becoming.Passing.counted",
+        "Becoming.Passing.config_back",
+        "Becoming.Passing.changes",
+        "Becoming.Passing.exchanges_one",
+        "Becoming.Passing.history_grows",
+        "Becoming.Passing.revisits",
+        "Becoming.Passing.passes",
+        "Becoming.Passing.record_needs_both",
+        "Becoming.Passing.no_arrow",
+        "Becoming.Passing.swap",
+        "Becoming.Passing.swap_side",
+        "Becoming.Passing.determined",
+        "Becoming.Passing.apart",
+        "Becoming.Passing.history_without_arrow",
+        "Becoming.Settling.settled",
+        "Becoming.Settling.level",
+        "Becoming.Settling.flow",
+        "Becoming.Settling.web",
+        "Becoming.Settling.world",
+        "Becoming.Settling.balances",
+        "Becoming.Settling.lossless",
+        "Becoming.Settling.closed",
+        "Becoming.Settling.changed",
+        "Becoming.Settling.rest",
+        "Becoming.Settling.third",
+        "Becoming.Settling.merges",
+        "Becoming.Settling.settles",
+        "Becoming.Gathering.unit",
+        "Becoming.Gathering.level",
+        "Becoming.Gathering.flow",
+        "Becoming.Gathering.web",
+        "Becoming.Gathering.world",
+        "Becoming.Gathering.unit_self",
+        "Becoming.Gathering.unit_off",
+        "Becoming.Gathering.succ_not_zero",
+        "Becoming.Gathering.total_unit",
+        "Becoming.Gathering.unit_mem",
+        "Becoming.Gathering.sums_eq",
+        "Becoming.Gathering.balances",
+        "Becoming.Gathering.lossless",
+        "Becoming.Gathering.enclosed",
+        "Becoming.Gathering.gathers"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "role": "proof",
+      "sha256": "b42d52b2248274aa1999d0c0e77ffe01a3c86e29dd8ed79a8e9e3c05675d6a90",
+      "declarations": [
+        "Becoming.Flow.DissipatesBy",
+        "Becoming.Flow.DissipatesBy.replenishment_le",
+        "Becoming.Flow.uptake_bound"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
+      "declarations": [
+        "Becoming.Revisits",
+        "Becoming.revisits_of_held",
+        "Becoming.revisits_from",
+        "Becoming.Marks",
+        "Becoming.Marks.change_not_recurring",
+        "Becoming.Law.orbit",
+        "Becoming.Law.Lossless",
+        "Becoming.Law.Lossless.cancel",
+        "Becoming.Law.Merges",
+        "Becoming.Law.Returns",
+        "Becoming.Law.withHistory",
+        "Becoming.Law.present_forgets",
+        "Becoming.Law.succ_open",
+        "Becoming.Law.Reachable",
+        "Becoming.Law.Reachable.earlier",
+        "Becoming.Law.lost_stays"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "role": "proof",
+      "sha256": "374452a781ce60858c0eac8fc567f4407255b271f4d12f823bbcf795f415a685",
+      "declarations": [
+        "Becoming.Flow.fall_lowers_on",
+        "Becoming.World.rises_of_arises",
+        "Becoming.World.falls_of_ceases",
+        "Becoming.Flow.ExchangeRecurs",
+        "Becoming.World.procession_world"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "role": "proof",
+      "sha256": "ad5455526b0dcfa8242950c677ab641dc4c9c5f2e2115d8d3a51fd2d630e2b4e",
+      "declarations": [
+        "Becoming.Flow.DissipatesOn",
+        "Becoming.Flow.Dissipative",
+        "Becoming.Flow.ClosedAt",
+        "Becoming.Flow.Enclosed",
+        "Becoming.Flow.rise_lowers_on"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.taken",
+        "Becoming.Flow.given",
+        "Becoming.Flow.uptake",
+        "Becoming.Flow.replenishment"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "role": "proof",
+      "sha256": "0acf50c8d6fe6c28fef710e15f5b4138b259c3d67520df545cdd7a1b21987e26",
+      "declarations": [
+        "Becoming.World",
+        "Becoming.World.Finite",
+        "Becoming.World.Embodied",
+        "Becoming.World.Balanced",
+        "Becoming.World.Dissipative",
+        "Becoming.World.ArisingRecurs",
+        "Becoming.World.CeasingRecurs"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "814147e961f0919378e811091f3a28bb9e2f868fed61327c0ef5e2f1dc349647",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md",
+      "role": "provenance",
+      "sha256": "efaac8a8ad4deb0ee327f28decda8cf886b66afaeb399bb323b766d1497c5c56",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "integration",
+      "sha256": "3ee42b4c6196cb4c41d94158898c977c215f3804114b701418ae77115a85b8b1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "role": "receipt",
+      "sha256": "795c0b40d7c58facc38f3f95d306c44f29617431e16828b65c1aecc9cd6f7d77",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Entropy",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Resolution",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Openness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dissipation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Space",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-11：作为统一计划 R5 新增，按 Ren“I know what \"Every exchange loses at least one smallest amount\" is now, it is entropy … so that makes me to speculate if 0 is possible, if we can also derive entropy from this”与零前提的确认（sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md）；见R5 分支历史文档的暂定 §80（当前整合为 §110）。",
+      "en": "2026-10-11: added as R5 of the unification plan, following Ren's ‘I know what \"Every exchange loses at least one smallest amount\" is now, it is entropy … so that makes me to speculate if 0 is possible, if we can also derive entropy from this’ and the confirmation of zero premises (sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md); see provisional section 80 in the R5 branch history (current integration section 110)."
+    },
+    {
+      "zh": "2026-10-11：R6（Becoming.Recurrence，recurrence-without-premise）落地后加入实例定理（按与其所有者的约定，后落地者写实例）；Entropy 改为导入 Resolution 与 Recurrence；既有陈述与证明不变。",
+      "en": "2026-10-11: instance theorems added after R6 (Becoming.Recurrence, recurrence-without-premise) landed, as agreed with its owner (whoever lands second writes them); Entropy now imports Resolution and Recurrence; existing statements and proofs unchanged."
+    },
+    {
+      "zh": "2026-10-11：Locality（P48）落地后加入 Flow.balancesOn_withRecord（每步、每个家族的算入记录的平衡；应 R6 所有者的请求，供一步之律引用）；既有陈述与证明不变。",
+      "en": "2026-10-11: Flow.balancesOn_withRecord added after Locality (P48) landed (balance with the record counted, at each step on each family; at the request of R6's owner, for the laws of one step to cite); existing statements and proofs unchanged."
+    },
+    {
+      "zh": "2026-10-13：按 Ren 的合并接手指令从 R5 分支 52ff83a4 整合；原始源码逐字节保留，四个冲突列表辅助名限定到 EntropyLists，研究 §110；补全导入、去掉未证明的唯一性读法，区分不需要平衡的历史单调性与使用平衡的变化／逆转结论；新合并回执核对当前源码，原有历史如下。",
+      "en": "2026-10-13: integrated from R5 branch 52ff83a4 under Ren’s takeover and merge request; original source bytes retained, four colliding list helpers qualified under EntropyLists, study §110. Imports are corrected, an unproved uniqueness reading removed, and premise-free history monotonicity distinguished from change/reversal results using balance. Current receipts check the integrated source; prior history is retained below."
+    },
+    {
+      "zh": "2026-10-13 P58c：静止一族按强度命名（Ren 于 2026-10-12：“agree with you”，sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md）：名称恰是陈述所证的强度。从某步起静止不能被否证的定理名为 …_unrefuted（其陈述加强为 ¬¬∃N, World.RestsFrom N）；只证不复现的名为 …_not_recurring；“只有有限次”“停止”“归于静止”在文字中改为所证的强度。见整合文档 §111。历史与旧回执的验证范围保留当时名称；随当前回执推进的验证范围使用现名。",
+      "en": "2026-10-13 P58c: the rest family named by strength (Ren, 12 October 2026: “agree with you”, sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md): each name says the strength its statement proves. Theorems proving that resting from some step on cannot be refuted are named …_unrefuted (their statements strengthened to ¬¬∃N, World.RestsFrom N); those proving only non-recurrence are named …_not_recurring; prose saying “finitely often”, “stops” or “comes to rest” now says the strength proved. See §111 of the integration note. History and scopes of older receipts retain former names; scopes advancing with the current receipt use current names."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”；统一计划只在 §10 的 P36 对照表后加入 2026-10-14 的对照表。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”; the unification plan only adds the 14 October 2026 rename table after the P36 table in section 10. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（M3）：长标题改为短名，陈述在先；主张拆为 20 条规律；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。读法假设分为两项，Ren 的原话不变；主张中的计划标记（R6）改为“六律”“复现律”。每句旧文本的去向见迁移对照表 [entropy-history-and-record.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/entropy-history-and-record.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (M3): the long title became a short name with the statement first; the claim was split into 20 laws; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The reading hypothesis was split in two, Ren's words verbatim; plan labels (R6) in the claim became “the laws of change”/“the laws of recurrence”. Every earlier sentence is mapped in the migration table [entropy-history-and-record.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/entropy-history-and-record.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为新模块增改行，总数改据回执 20261013T221720.428753Z；标题、粗体引语、模块表与正文中的工作项编号改为模块、节或成果的名称，旧标题锚点保留为显式锚点；陈述、Lean 名、定理数与链接目标均不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added or updated for the new modules and the §9 totals moved to receipt 20261013T221720.428753Z; work-item numbers removed from headings, bold leads, the module table and in-body references, which now name modules, sections or results, with the old heading anchors kept as explicit anchors; no statement, Lean name, theorem count or link target changed)."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为 Becoming.Viability、Countdown、Lasting、Copying、Retrodiction 及五个外围实例模块增行，总数改据回执 20261014T044840.291323Z；其余文字不变）。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（读法“记入”事件处英文改为 includes；§8 审查行写出第一次审查的对象（研究 §§1–6）；为 Becoming.Likeness、Becoming.Learnable、到达律、谱系律及其实例增加第一部分段落、§8 条目与 §9 行；Becoming.CrossSituational 的 §9 行与 MachineInstances、VersionedTaskInstances 两行；§9 总数改据回执 20261014T091930.724493Z）；BECOMING-UNIFICATION-PLAN.md（10月14日改名表增一行（credits → includes）；其余文字不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (“includes” where a reading “credited” an event; the §8 review row names the first review's object (study §§1–6); Part I paragraphs, §8 bullets and §9 rows for Becoming.Likeness, Becoming.Learnable, the reaching law, the lineage law and their instances; the §9 row for Becoming.CrossSituational and the rows of MachineInstances and VersionedTaskInstances; the §9 totals moved to receipt 20261014T091930.724493Z); BECOMING-UNIFICATION-PLAN.md (one row added to the 14 October rename table (credits → includes); no other text changed)."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（第十七次审查后更正 §9 各行（Continuation“共同净给予”；LossMatching 的方向；Retrodiction 的两值与两端读数相同；“受支持的完成”）；新增 Postponement 行；总数改据新回执；整合 I1 后的 Likeness 与 Bridge 行）；BECOMING-UNIFICATION-PLAN.md（10月14日改名表增四行（第十七次审查的改名）；其余文字不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1); BECOMING-UNIFICATION-PLAN.md (four rows added to the 14 October rename table (the seventeenth review's renames); no other text changed)."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：Recurrence.lean（整合 I3a：新增“所及保持恰当返回”；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3a 的 §9 各行（改六行、增四行：Composition、Joining 及其桥接），总数改据新回执）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: Recurrence.lean (integration I3a: reach kept exactly when return added; earlier statements unchanged); BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for integration I3a (six changed, four added: Composition, Joining and their bridges) and the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第125节）：更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（“完整陈述的理论”第1、3项补上 World 不是起点与前提的独立性；第一部分补上三条规律；§8 的表与 Ren 的选择补上从关系开始的重建；§9 新增 Novelty、Reading、Readings 三行，Imbalance 行与术语表记 Ren 2026-10-14 的采用；总数改据新回执；此外不变）。",
+      "en": "15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study section 125): rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (the theory stated in full, items 1 and 3 (World is not the start; the independence of the premises); Part I (three laws); the §8 table and Ren's choices (the relation-first re-founding); §9 rows for Novelty, Reading and Readings, and the Imbalance row and glossary recording Ren's adoption of 14 October 2026; totals moved to the new receipt; otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：Recurrence.lean（整合 I3b：新增共同实现的界（WithinMoves.after_course、lost_together_not_returns）；原有陈述不变）；BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83b 与 P83c（Identification、Likeness、Refinement）、整合 I3b（Granularity 及其桥接）与 Keeping 的 §9 各行，总数改据新回执）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: Recurrence.lean (integration I3b: bounds on realizing a bundle together added (WithinMoves.after_course, lost_together_not_returns); earlier statements unchanged); BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for P83b and P83c (Identification, Likeness, Refinement), integration I3b (Granularity and its bridge) and Keeping, and the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3c 与 P83d 落地（研究第129–130节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第129节（整合 I3c：四项外围记录接入；Becoming.Keeping、共享存量与传递）与第130节（P83d：不加前提的 Moore 界）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 新增 I3c 的三个外围实例模块的行（SharedStockInstances、ContinuationCorrespondence、TransmissionCorrespondence）并在实例模块一句中列出；P83d 的 Identification 一行与正文；总数改据新回执）。",
+      "en": "15 October 2026, landing integration I3c and P83d (study sections 129–130): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 129 (integration I3c: four periphery records joined; Becoming.Keeping, the shared stock, transmission) and 130 (P83d: Moore's bound with no premise) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows for the three I3c periphery instance modules (SharedStockInstances, ContinuationCorrespondence, TransmissionCorrespondence) and the instance-module sentence; P83d's Identification row and text; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P109：§8 中关系起点的进一步证明改为“动作在哪里形成已给出”，Ren 的选择增其读法；§9 一行（Becoming.Coupling）；总数改据新回执）。",
+      "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P109: in §8 the further proof for the relational starting point becomes \"where a move is formed is given\" and Ren's choices gain its readings; one §9 row (Becoming.Coupling); the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（P83e：辨识一段与“历史固定什么”“辨识”两行增检验即有界的记录及两个框架之间的恰好性，开放项相应删去，§9 一行（Becoming.Distinguishing）；P83f：辨识一行与 Identification 一行增以最小的界读记录的学习者；总数改据新回执）。",
+      "en": "15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (P83e: the identification paragraph and the rows ‘what histories fix’ and ‘identification’ gain the tests as a bounded record and the exactness across two frames, the open items trimmed accordingly, one §9 row (Becoming.Distinguishing); P83f: the identification row and the Identification row gain the learner reading the record by the least bound; the totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）；THE-THEORY-OF-BECOMING.md（整合 I3d：§9 中 Stock、Feedback、Readout、Copying 与桥接五行写入新律与定理数，四行外围实例（PreparationCorrespondence、JudgingCorrespondence、RenewingCorrespondence、SubstitutionCorrespondence），实例模块一句列出它们；总数改据新回执（继承模块 77 → 78））。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (integration I3d: in §9 the Stock, Feedback, Readout, Copying and Bridge rows name the new laws and counts, four periphery instance rows (PreparationCorrespondence, JudgingCorrespondence, RenewingCorrespondence, SubstitutionCorrespondence), and the instance-module sentence lists them; the totals moved to the new receipt (inherited modules 77 → 78))."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D29）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D29): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Space.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；THE-THEORY-OF-BECOMING.md（P110：§8 的“Ren 的选择”改为“依 Ren 的交托决定的读法”与“仍属 Ren 的”，各处此前待 Ren 的读法注上决定编号（DELEGATED-CHOICES），加 D39 各行；P111、P112：§9 加 Becoming.Gain 与 Becoming.Gluing 两行；总数改据新回执）。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt)."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Openness.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Openness.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged)."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/5c9bdd32fa588fae/entropy-history-and-record.json",
+      "sha256": "5c9bdd32fa588faee2e84e71776e789563198ea3273e8d87e60a02dea4f06c10",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
+    }
+  ]
+}

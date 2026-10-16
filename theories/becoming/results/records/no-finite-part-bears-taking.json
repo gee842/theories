@@ -2,16 +2,16 @@
   "schema_version": 2,
   "id": "no-finite-part-bears-taking",
   "title": {
-    "zh": "复现的取用打开有限家族",
-    "en": "Recurring taking opens finite families"
+    "zh": "复现的取用使有限家族不能一直封闭",
+    "en": "Recurring taking keeps finite families from staying closed"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T15:03:25+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "耗散之下，取用复现的有限家族，连同包含它的每个由不同条件组成的有限家族，在任意晚的步不封闭，被围住时从家族之外汲入。",
-    "en": "Under dissipation, a finite family on which taking recurs, with every finite family of distinct conditions containing it, is open at arbitrarily late steps and, enclosed around, draws in from beyond it."
+    "zh": "耗散之下，取用复现的有限家族，连同包含它的每个由不同条件组成的有限家族，不从任何一步起一直封闭；被围住时，也不从任何一步起一直向内（不从其外汲入）。",
+    "en": "Under dissipation, a finite family on which taking recurs, with every finite family of distinct conditions containing it, is closed from no step on and, enclosed around, inward from no step on: it cannot stop drawing in from beyond it."
   },
   "laws": [
     {
@@ -36,8 +36,8 @@
       ]
     },
     {
-      "zh": "所以在平衡、耗散的流中，一个取用在任意晚的步复现的有限家族，连同包含它的每个不重复的有限家族，都不从某步起一直封闭：在任意晚的步有参与的形成与其外的条件交换。若有限个条件就是全部，取用不再复现。",
-      "en": "So in a balanced, dissipative flow a finite family from which formations take at arbitrarily late steps, together with every finite family without repetition containing it, is closed from no step on: at arbitrarily late steps some formation taking part exchanges with a condition outside it. If finitely many conditions are all there is, taking does not recur.",
+      "zh": "所以在平衡、耗散的流中，一个取用在任意晚的步复现的有限家族，连同包含它的每个不重复的有限家族，都不从某步起一直封闭：从任一步起，此后有参与的形成与其外的条件交换，这不能被否证。若有限个条件就是全部，取用不再复现。",
+      "en": "So in a balanced, dissipative flow a finite family from which formations take at arbitrarily late steps, together with every finite family without repetition containing it, is closed from no step on: that after any step some formation taking part exchanges with a condition outside it cannot be refuted. If finitely many conditions are all there is, taking does not recur.",
       "declarations": [
         "Becoming.Flow.Dissipative.opens",
         "Becoming.Flow.takers_pos_of_sub",
@@ -59,8 +59,8 @@
       ]
     },
     {
-      "zh": "一步围住一个家族，当某个包含它的不重复有限家族跨该步封闭；相等可判定时，每个被封闭的步围住每个有限家族。在平衡、耗散的流中，不重复的家族从某步起被围住、取用在任意晚的步复现时，它汲入：在任意晚的步，有形成给予它而从它之外取用。",
-      "en": "A step encloses a family around when some finite family without repetition containing it is closed across the step; with decidable equality, every enclosed step encloses every finite family around. In a balanced, dissipative flow, where a family without repetition is enclosed around from some step on and taking from it recurs, it draws in: at arbitrarily late steps some formation gives to it and takes from beyond it.",
+      "zh": "一步围住一个家族，当某个包含它的不重复有限家族跨该步封闭；相等可判定时，每个被封闭的步围住每个有限家族。在平衡、耗散的流中，不重复的家族从某步起被围住、取用在任意晚的步复现时，它不从任何一步起一直向内（向内：给予它的形成只从它取用）。",
+      "en": "A step encloses a family around when some finite family without repetition containing it is closed across the step; with decidable equality, every enclosed step encloses every finite family around. In a balanced, dissipative flow, where a family without repetition is enclosed around from some step on and taking from it recurs, it is inward from no step on (inward: every formation giving to it takes only from it).",
       "declarations": [
         "Becoming.Flow.Around",
         "Becoming.Flow.Enclosed.around",
@@ -95,8 +95,8 @@
       ]
     },
     {
-      "zh": "一个源每步燃烧一份新的燃料、给池的少于所燃、越来越多的生长者从池取用的流满足全部前提，并且不止地更多；它所燃的燃料不在任何有限家族之内，而每步被池与当步的燃料封闭，池的家族汲入燃料。",
-      "en": "A flow in which a source burns a fresh fuel at every step, gives a pool less than it burns, and ever more growers take from the pool meets every premise and is more without end; the fuels it burns lie in no finite family, while each step is enclosed by the pool and that step's fuel, and the pool's family draws in the fuel.",
+      "zh": "一个源每步燃烧一份新的燃料、给池的少于所燃、越来越多的生长者从池取用的流满足全部前提，并且不止地更多；它所燃的燃料不在任何有限家族之内，而每步被池与当步的燃料封闭，池的家族不从任何一步起一直向内，燃料给予它。",
+      "en": "A flow in which a source burns a fresh fuel at every step, gives a pool less than it burns, and ever more growers take from the pool meets every premise and is more without end; the fuels it burns lie in no finite family, while each step is enclosed by the pool and that step's fuel, and the pool's family is inward from no step on, the fuel giving to it.",
       "declarations": [
         "Becoming.Frontier.flow",
         "Becoming.Frontier.balances",
@@ -110,8 +110,8 @@
       ]
     },
     {
-      "zh": "生长者依存于池时，同一流还满足普查与 Taking，生成不息，池的家族也由不息的生起而打开。",
-      "en": "With the growers depending on the pool, the same flow also meets a census and Taking, generation is unceasing, and the pool's families open through unceasing arising as well.",
+      "zh": "生长者依存于池时，同一流还满足普查与 Taking，生成不息，池的家族也由不息的生起而不从任何一步起一直封闭。",
+      "en": "With the growers depending on the pool, the same flow also meets a census and Taking, generation is unceasing, and through unceasing arising too the pool's families are closed from no step on.",
       "declarations": [
         "Becoming.Rooted.rooted",
         "Becoming.Rooted.census",
@@ -211,8 +211,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "detail": {
-        "zh": "前提相容并且结论可达（Frontier）：源每步燃烧一份新燃料，流平衡、耗散、不止地更多，包含池的每个有限家族在任意晚的步都不封闭；其生长者不依存于任何东西，依存的版本见 Rooted。",
-        "en": "The premises are consistent and the conclusion is attained (Frontier): a source burns a fresh fuel at every step, the flow balances, dissipates and is more without end, and every finite family containing the pool is open at arbitrarily late steps; its growers depend on nothing, and the dependent version is Rooted."
+        "zh": "前提相容并且结论可达（Frontier）：源每步燃烧一份新燃料，流平衡、耗散、不止地更多，包含池的每个有限家族都不从任何一步起一直封闭；其生长者不依存于任何东西，依存的版本见 Rooted。",
+        "en": "The premises are consistent and the conclusion is attained (Frontier): a source burns a fresh fuel at every step, the flow balances, dissipates and is more without end, and every finite family containing the pool is closed from no step on; its growers depend on nothing, and the dependent version is Rooted."
       }
     },
     {
@@ -225,8 +225,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "detail": {
-        "zh": "复现的取用不必来自更多或生起（Lone.lone、Lone.frontier）：一个恒定的取用者，没有生起也不更多，在耗散之下同样使包含池的每个有限家族在任意晚的步打开（第六次独立审查 J2）。",
-        "en": "Recurring uptake need not come from more or from arising (Lone.lone, Lone.frontier): a single steady consumer, with nothing arising and no growth, under dissipation also opens every finite family containing the pool at arbitrarily late steps (sixth independent review, J2)."
+        "zh": "复现的取用不必来自更多或生起（Lone.lone、Lone.frontier）：一个恒定的取用者，没有生起也不更多，在耗散之下同样使包含池的每个有限家族不从任何一步起一直封闭（第六次独立审查 J2）。",
+        "en": "Recurring uptake need not come from more or from arising (Lone.lone, Lone.frontier): a single steady consumer, with nothing arising and no growth, under dissipation also leaves every finite family containing the pool closed from no step on (sixth independent review, J2)."
       }
     },
     {
@@ -246,8 +246,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "detail": {
-        "zh": "围住与汲入的正面见证（Frontier.enclosed、Frontier.around、Frontier.draws_in、Lone.enclosed、Lone.draws_in）：Frontier、Rooted（共用 Frontier 的流）与 Lone 每步都被封闭，池的家族被围住并在任意晚的步汲入燃料（第七次独立审查 K1、K8(f)）。",
-        "en": "Positive witnesses of enclosure around and drawing in (Frontier.enclosed, Frontier.around, Frontier.draws_in, Lone.enclosed, Lone.draws_in): Frontier, Rooted (which shares Frontier's flow) and Lone are enclosed at every step, and the pool's family is enclosed around and draws in the fuel at arbitrarily late steps (seventh independent review, K1, K8(f))."
+        "zh": "围住与汲入的正面见证（Frontier.enclosed、Frontier.around、Frontier.draws_in、Lone.enclosed、Lone.draws_in）：Frontier、Rooted（共用 Frontier 的流）与 Lone 每步都被封闭，池的家族被围住，并且不从任何一步起一直向内（第七次独立审查 K1、K8(f)）。",
+        "en": "Positive witnesses of enclosure around and drawing in (Frontier.enclosed, Frontier.around, Frontier.draws_in, Lone.enclosed, Lone.draws_in): Frontier, Rooted (which shares Frontier's flow) and Lone are enclosed at every step, and the pool's family is enclosed around and inward from no step on (seventh independent review, K1, K8(f))."
       }
     },
     {
@@ -271,8 +271,8 @@
     "en": "Relate dissipation to possibility, diversity and complexity; give a version with rational amounts; settle whether arising that is not embodied has its own form of dissipation (embodied arising is in generation-is-replenishment); find the empirical correspondence of dissipation and openness in actual unfoldings."
   },
   "correspondence": {
-    "zh": "第四次独立审查指出，“任何有限部分都不能独自不息”与“没有一个有限的部分独自承担”需要耗散前提。本结果陈述这一前提，并在流中的取用上证明它。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把结果读作原话中“整体”的一种形式内容：在耗散之下，复现的取用，无论来自不止的更多、生成还是维持（Lone），使它复现的有限条件家族在任意晚的步不封闭，家族被围住时须从其外汲入（taking_draws_in）（作者的诠释）；它不替代 Ren 的原话，也不推出它是好的。用自由能读耗散：物质可以在有限家族中循环（Cycle），驱动循环的来源须越出每个有限家族（AI 论证）。实际的量是否耗散、实际的展开是否在这一意义上有限，是经验问题。新名称按 Ren 的命名规则采用（DELEGATED-CHOICES D36）。",
-    "en": "The fourth independent review found that “no finite part is unceasing on its own” and “no finite part bears it alone” need a dissipation premise. This result states that premise and proves the claim for taking in flows. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads the result as one formal content of “whole” in those words: under dissipation, recurring taking, whether of more, of generation or of maintenance (Lone), leaves the finite family of conditions on which it recurs open at arbitrarily late steps, and a family enclosed around draws in from beyond it (taking_draws_in) (the author's interpretation); it does not replace Ren's words and does not show that it is good. Reading dissipation on free energy, matter can cycle within a finite family (Cycle) while the source driving the cycling must reach beyond every finite family (an AI argument). Whether actual quantities dissipate, and whether actual unfoldings are finite in this sense, are empirical questions. The new names are adopted under Ren's naming rule (DELEGATED-CHOICES D36)."
+    "zh": "第四次独立审查指出，“任何有限部分都不能独自不息”与“没有一个有限的部分独自承担”需要耗散前提。本结果陈述这一前提，并在流中的取用上证明它。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把结果读作原话中“整体”的一种形式内容：在耗散之下，复现的取用，无论来自不止的更多、生成还是维持（Lone），使它复现的有限条件家族不从任何一步起一直封闭，家族被围住时也不从任何一步起一直向内（taking_draws_in）（作者的诠释）；它不替代 Ren 的原话，也不推出它是好的。用自由能读耗散：物质可以在有限家族中循环（Cycle），驱动循环的来源须越出每个有限家族（AI 论证）。实际的量是否耗散、实际的展开是否在这一意义上有限，是经验问题。新名称按 Ren 的命名规则采用（DELEGATED-CHOICES D36）。",
+    "en": "The fourth independent review found that “no finite part is unceasing on its own” and “no finite part bears it alone” need a dissipation premise. This result states that premise and proves the claim for taking in flows. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads the result as one formal content of “whole” in those words: under dissipation, recurring taking, whether of more, of generation or of maintenance (Lone), leaves the finite family of conditions on which it recurs closed from no step on, and a family enclosed around inward from no step on (taking_draws_in) (the author's interpretation); it does not replace Ren's words and does not show that it is good. Reading dissipation on free energy, matter can cycle within a finite family (Cycle) while the source driving the cycling must reach beyond every finite family (an AI argument). Whether actual quantities dissipate, and whether actual unfoldings are finite in this sense, are empirical questions. The new names are adopted under Ren's naming rule (DELEGATED-CHOICES D36)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
   "aliases": [
@@ -1023,6 +1023,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Horizon.lean（P129：新增 Adheres.closed、refutable_adheres_iff、refutable_adheres_of_em；说明改正（不可否证，从不发生不可证实），署名 Alpern–Schneider、Kelly；已有陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Horizon.lean (P129: Adheres.closed, refutable_adheres_iff, refutable_adheres_of_em added; docstrings corrected (not refutable; never occurring not verifiable), Alpern–Schneider and Kelly credited; existing statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A4 项：Dissipative.opens、More.opens、opens_of_arising、Frontier.frontier、Lone.frontier 的结论是 ¬∀t≥T, ClosedAt，taking_draws_in 与 Frontier.draws_in、Lone.draws_in 的结论是 ¬∀t≥N, Inward；标题、陈述、规律 3、5、8、9、反例 3、5、8 与对应原把它们说成“在任意晚的步有交换／汲入”（∀N∃t，不由它们推出），改为“不从任何一步起一直封闭／向内”，并写出“此后有交换不能被否证”；规律 5 写出向内的意思。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: Dissipative.opens, More.opens, opens_of_arising, Frontier.frontier and Lone.frontier conclude ¬∀t≥T, ClosedAt, and taking_draws_in, Frontier.draws_in and Lone.draws_in conclude ¬∀t≥N, Inward. The title, statement, laws 3, 5, 8 and 9, counterexamples 3, 5 and 8 and the correspondence glossed them as \"at arbitrarily late steps some formation exchanges / draws in\" (∀N∃t, which they do not give); they now say \"closed / inward from no step on\", with \"that a later exchange occurs cannot be refuted\", and law 5 says what inward means. Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -1032,6 +1036,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/119b64c7099722b0/no-finite-part-bears-taking.json",
+      "sha256": "119b64c7099722b0d06950f9582c5e765e8ade1fb04ecd85238fbd176188387a",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

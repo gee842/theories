@@ -7,8 +7,8 @@
   },
   "kind": "theorem",
   "status": "recorded-checked",
-  "family": "F07",
-  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "能到达的最大差别至多是 D·(1 + M)^a，a 是有耦合作用的步数，由自环达到；强度为自然数时，每次返回至少使之加倍：返回频繁则失控，耦合稀少则保持多项式；每个时程都安定恰是 Σ⁰₂ 排中。",
     "en": "The most difference that can arrive is at most D·(1 + M)^a, a the steps where anything couples, attained by a self-loop; with natural-number strengths each return at least doubles it: frequent returns run away, rare couplings stay polynomial; every schedule settling is exactly Σ⁰₂ excluded middle."
@@ -198,8 +198,8 @@
   ],
   "does_not_show": [
     {
-      "zh": "每个时程都安定：它恰是二分 RecursOrStops，即 Σ⁰₂ 层级的排中（Akama、Berardi、Hayashi 与 Kohlenbach 2004），给出有限全知原则；核心不假定它。",
-      "en": "That every schedule settles: it is exactly the dichotomy RecursOrStops, excluded middle at level Σ⁰₂ (Akama, Berardi, Hayashi and Kohlenbach 2004), which gives the limited principle of omniscience; the core does not assume it.",
+      "zh": "每个时程都安定：它恰是 RecursOrStops，给出有限全知原则；读作 Σ⁰₂ 排中（Akama、Berardi、Hayashi、Kohlenbach 2004）是引用，未在 Lean 中证明。",
+      "en": "That every schedule settles: it is exactly RecursOrStops, which gives the limited principle of omniscience; reading it as Σ⁰₂ excluded middle (Akama, Berardi, Hayashi and Kohlenbach 2004) is cited, not proved in Lean.",
       "kind": "scope"
     },
     {
@@ -244,8 +244,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T220109.090247Z）：Becoming.Frequency 的 98 项声明（83 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §158；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T220109.090247Z): the 98 declarations of Becoming.Frequency, 83 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 158; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T220109.090247Z）：Becoming.Frequency 的 98 项声明（83 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §158；经第十八次审查（AI，只读，未重建 Lean）审阅，其更正已处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T220109.090247Z): the 98 declarations of Becoming.Frequency, 83 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 158; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
     "zh": "自环之外，按返回的下界与按耦合之步的上界何者达到；自环之外，多项式增长是否只取决于哪些耦合作用、不取决于其正的强度；给定强度的谱半径（实数的量）；从进程读出的强度多常作用；独立审查；Ren 对读法的判断。",
@@ -687,7 +687,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "298a63579cbff61bb54d03f1a471b28078435c54e1a8ef8fe2b5a52c4f22e469"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -838,7 +838,23 @@
     {
       "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.FormedLoops 把自环与稀疏时程的见证陈述为平衡的世界（scheduleWorld），其律引自 Frequency，不再证明；新增一条律及其 3 项声明，绑定回执 20261016T124157.989030Z；研究 §165，记录 two-act-worlds-carry-the-difference（其中按耦合之步的界与失控陈述在两种作为的世界上）。安定的校准对每个时程量化，没有在世界上重述。断言与状态不变。",
       "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.FormedLoops states the self-loop and sparse-schedule witnesses as balanced worlds (scheduleWorld), their laws cited from Frequency, not proved again; one law with its 3 declarations added, bound to receipt 20261016T124157.989030Z; study section 165, record two-act-worlds-carry-the-difference (where the bound by coupling steps and the runaway are stated on two acts' worlds). The settling calibrations quantify over every schedule and are not restated on worlds. Claim and status unchanged."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6、C10、records-a-l-16 项：验证范围原说“未经独立审查”，而第十八次审查（R18）已审阅并更正本记录；R18 是 AI 的只读审查，未重建 Lean，所以写作“经第十八次审查（AI，只读）审阅”，不写“独立”。下一步中的独立审查保留：R18 是否算作所要求的审查由 Ren 定；家族由 F07（显式公理下的实践判断，前提 G0/J）改为 F01（关系核心）：本记录不用伦理前提、不用公理，是第一部分的结构结果；会话图尚无第一部分专属家族，F01 是现有家族中正确的一个；未表明 1 写明 RecursOrStops 与 Σ⁰₂ 排中的等同是引用的读法，不是 Lean 定理（Frequency.lean 只证 settled_every_iff 与 lpo_of_settled）。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items B6, C10, records-a-l-16: the validation scope said \"not independently reviewed\", while the eighteenth review (R18) read and corrected this record; R18 is an AI read-only review with no Lean rebuild, so it now says \"reviewed by the eighteenth review (AI, read-only)\", not \"independently\". The independent review in the next step stays: whether R18 counts as the review asked for is Ren's decision; family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one; does_not_show 1 now says that identifying RecursOrStops with Σ⁰₂ excluded middle is a cited reading, not a Lean theorem (Frequency.lean proves settled_every_iff and lpo_of_settled only). Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
-  "text_versions": []
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/d0fe65197f275056/how-often-couplings-act.json",
+      "sha256": "d0fe65197f2750560b882a87814cd2e3b30f1cdeeed9c012f4b4893860934935",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
 }

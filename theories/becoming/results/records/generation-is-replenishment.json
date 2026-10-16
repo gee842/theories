@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "体现的关系项的生起本身需要补充；在耗散之下，这样的生起在有限家族中复现时家族不封闭，家族被围住时从其外汲入。",
-    "en": "The arising of an embodied relatum itself needs replenishment; under dissipation a finite family in which such arising recurs is not closed and, enclosed around, draws in from beyond it."
+    "zh": "体现的关系项的生起本身需要补充；在耗散之下，这样的生起在有限家族中复现时家族不从任何一步起一直封闭，被围住时也不从任何一步起一直向内。",
+    "en": "The arising of an embodied relatum itself needs replenishment; under dissipation a finite family in which such arising recurs is closed from no step on and, enclosed around, inward from no step on."
   },
   "laws": [
     {
@@ -40,8 +40,8 @@
       ]
     },
     {
-      "zh": "所以在耗散之下，体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不封闭：在任意晚的步有参与的形成与其外的关系项交换。",
-      "en": "So under dissipation a finite family without repetition in which embodied members arise at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some formation taking part exchanges with a relatum outside it.",
+      "zh": "所以在耗散之下，体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不一直封闭：从任一步起，此后有参与的形成与其外的关系项交换，这不能被否证。",
+      "en": "So under dissipation a finite family without repetition in which embodied members arise at arbitrarily late steps is not closed from any step on: that after any step some formation taking part exchanges with a relatum outside it cannot be refuted.",
       "declarations": [
         "Becoming.Web.generation_opens"
       ]
@@ -55,8 +55,8 @@
       ]
     },
     {
-      "zh": "家族从某步起被围住（某个包含它的不重复有限家族跨每步封闭）时，它汲入：在任意晚的步，有关系项给予家族而从家族之外取用；有限个关系项就是全部时，体现的关系项不在任意晚的步生起。",
-      "en": "Where the family is enclosed around from some step on (some finite family without repetition containing it closed across each step), it draws in: at arbitrarily late steps some relatum gives to the family and takes from beyond it; if finitely many relata are all there is, embodied relata do not arise at arbitrarily late steps.",
+      "zh": "家族从某步起被围住（某个包含它的不重复有限家族跨每步封闭）时，它不从任何一步起一直向内：从任一步起，此后有关系项给予家族而从家族之外取用，这不能被否证；有限个关系项就是全部时，体现的关系项不在任意晚的步生起。",
+      "en": "Where the family is enclosed around from some step on (some finite family without repetition containing it closed across each step), it is inward from no step on: that after any step some relatum gives to the family and takes from beyond it cannot be refuted; if finitely many relata are all there is, embodied relata do not arise at arbitrarily late steps.",
       "declarations": [
         "Becoming.Web.generation_draws_in",
         "Becoming.Web.generation_not_recurring"
@@ -119,8 +119,8 @@
       ]
     },
     {
-      "zh": "在耗散之下，成员在任意晚的步上升的不重复有限家族在任意晚的步不封闭，从某步起被围住时汲入；有限个条件就是全部时，没有条件在任意晚的步上升；开始作为条件而在是其情形。",
-      "en": "Under dissipation, a finite family without repetition whose members rise at arbitrarily late steps is open at arbitrarily late steps and, enclosed around from some step on, draws in, and if finitely many conditions are all there is, none rises at arbitrarily late steps; coming to stand is a case.",
+      "zh": "在耗散之下，成员在任意晚的步上升的不重复有限家族不从任何一步起一直封闭，从某步起被围住时也不从任何一步起一直向内；有限个条件就是全部时，没有条件在任意晚的步上升；开始作为条件而在是其情形。",
+      "en": "Under dissipation, a finite family without repetition whose members rise at arbitrarily late steps is closed from no step on and, enclosed around from some step on, inward from no step on, and if finitely many conditions are all there is, none rises at arbitrarily late steps; coming to stand is a case.",
       "declarations": [
         "Becoming.Flow.rising_opens",
         "Becoming.Flow.rising_draws_in",
@@ -1120,6 +1120,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A4 项：generation_opens、rising_opens、standing_opens 的结论是 ¬∀t≥T, ClosedAt，generation_draws_in、rising_draws_in、standing_draws_in 的结论是 ¬∀t≥N, Inward；陈述与规律 4、6、13 原把它们说成“在任意晚的步交换／汲入”，改为“不从任何一步起一直封闭／向内”，并写出“此后有交换不能被否证”。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: generation_opens, rising_opens and standing_opens conclude ¬∀t≥T, ClosedAt, and generation_draws_in, rising_draws_in and standing_draws_in conclude ¬∀t≥N, Inward. The statement and laws 4, 6 and 13 glossed them as exchange or drawing in \"at arbitrarily late steps\"; they now say \"closed / inward from no step on\", with \"that a later exchange occurs cannot be refuted\". Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -1129,6 +1133,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/27a9609000d0f17f/generation-is-replenishment.json",
+      "sha256": "27a9609000d0f17f07550344f6080d91eb386022678d960ace17cb51772cb4dd",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-14T12:40:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "主张只经所识的差别被否证，相对于模型的否证是对模型与主张一起的否证。成员只经自己之识回应时，识闭包之外的在其中不被识；检验是关系的。",
     "en": "A claim is refuted only through a difference in what registers, and refutation relative to a model refutes the model and the claim together. Where members respond only through their own registration, nothing beyond the registration closure registers within it; testing is relational."
@@ -212,8 +212,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Testing and this record's local laws have empty axiom reports (receipt 20261013T094743.528770Z; current bytes bound by 20261014T091930.724493Z), and the checker verifies core purity. Author counterreview in the integration note; reviewed before integration by the seventeenth independent review (listed under sources), treated in the integration note; no independent review of the text after that treatment yet."
   },
   "next_delta": {
-    "zh": "多步 Scope 的桥：感知只经识的策略在识得相同的流上有同样的所见范围；实验：变动自己的动作并识差别；模型从哪里来（见 projection-carrying-a-law 与 generalization-through-lumping）；由动力学给出回应，而不是另给它；识关于什么（校准）；识不分辨值时（阈下）的学习。",
-    "en": "The multi-step Scope bridge: a policy sensing only through registration has the same visible scope on flows registered alike; experiment: varying one's own act and registering the difference; where a model comes from (see projection-carrying-a-law, generalization-through-lumping); responses given by the dynamics, not supplied; calibration; learning below threshold."
+    "zh": "多步 Scope 的桥：感知只经识的策略在识得相同的流上有同样的所见范围；模型从哪里来（见 projection-carrying-a-law 与 generalization-through-lumping）；由动力学给出回应，而不是另给它；识关于什么（校准）；识不分辨值时（阈下）的学习。",
+    "en": "The multi-step Scope bridge: a policy sensing only through registration has the same visible scope on flows registered alike; where a model comes from (see projection-carrying-a-law, generalization-through-lumping); responses given by the dynamics, not supplied; calibration; learning below threshold."
   },
   "correspondence": {
     "zh": "Ren 的提议：“can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”，“I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”。AI 的回答提出反馈的三种不见、失控是在其一之中运行的回路、跨过它们的方式、可否证性是被展开纠正的条件，以及 理 的读法；Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。独立审查收窄了这些读法：三种不见各有其范围（见“未表明”）；失控的读法是启发，不是陈述；理 原由 AI 读作对识负责的模型，现依 Ren 2026-10-12 的读法，为对结构与变化之规律的建模；模型仍只经识被检验（generalization-through-lumping）。所以记录中的读法是 AI 收窄之后的，依 Ren 的交托采用（DELEGATED-CHOICES D26），不是 Ren 所接受的原文。",
@@ -376,6 +376,13 @@
       "detail": {
         "zh": "这一开放目标的一个部分：在脊柱上陈述被展开否证的条件与相对于模型的否证；不确立整个目标。",
         "en": "One part of this open target: the condition of being refuted by the unfolding, and refutation relative to a model, stated on the spine; it does not establish the whole target."
+      }
+    },
+    {
+      "id": "experiment-needs-return",
+      "detail": {
+        "zh": "实验：变动自己的动作并识差别；记录只在运行取用之处固定动作的结果。",
+        "en": "Experiment: varying one's own act and registering the difference; a record fixes a move's outcome only where the run took it."
       }
     }
   ],
@@ -543,7 +550,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01",
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
       "declarations": []
     },
     {
@@ -826,6 +833,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6 项：下一步中的“实验：变动自己的动作并识差别”已由 experiment-needs-return（Becoming.Experiment）给出，删去并加为相关。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: \"experiment: varying one's own act and registering the difference\" is given by experiment-needs-return (Becoming.Experiment), so it leaves the next step and becomes related. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -835,6 +849,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/eb4574df70435985/testing-within-registration.json",
+      "sha256": "eb4574df70435985c68687aa08f5d99af7d5799e3008b0bbc2a75cee44c9d28e",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

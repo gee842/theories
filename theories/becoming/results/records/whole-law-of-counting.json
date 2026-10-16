@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "计数表是计数的全部规律：列出的计数恰是计数表。八个前提的每个选择之下，计数表之外唯一多出的规律是没有关系项活跃的一步上没有生起，恰在选择约束计数时；前提起约束时至多再加三条。",
     "en": "The tally is the whole law of counting: listings count exactly the tallies. Under each selection of the eight premises the only law added to the tally is that nothing arises across a step at which nothing is active, exactly where the selection binds counting; binding adds at most three more."
@@ -393,8 +393,8 @@
     "en": "Local forms of the other laws, by the zero-premise plan; for comparison, whether, under a reading of binding in which each premise excludes something the representation allows, something arising is still the only added law."
   },
   "correspondence": {
-    "zh": "完整的陈述（P23）说，整体的规律除了表示本身所排除的，不排除任何展开。对计数，本结果使这一点精确：计数的规律不排除任何计数表，所以从计数本身推不出关于展开的任何更多的东西。开放纲领中的“对整个空间成立的规律的完整清单”在计数的部分由此给出。前提的地图（map-of-premises）表明八个前提彼此独立；本结果说明它们中的哪些约束计数、约束什么：在 256 个选择的每一个之下计数的规律只有两种，缺平衡或缺体现的任何一组都不约束，两者连同只有活跃者给予，或连同只有活跃者取用与耗散，约束同一条，而全部八个所加的也只有这一条，即使每个都起约束，也只多出有某个生起，这一条来自体现起约束的条件本身；更多的约束来自被围住：静止定理（ceasing-needs-arising、continued-change-needs-openness）在被围住之下使计数归于静止，被围住时计数的全部规律再加一个变化界（counting-under-enclosure）。作者的读法（AI 论证）：在场者的数目只记录进入与离开相抵；展开怎样改变这些数目，来自给予与取用的关系，即平衡与体现一起所说的：生起需要一个在场的给予者；或者，在只有活跃者取用与耗散之下，一个封闭的关系不能不取用而给予，生起需要从在场者那里取得。这是活动的计数，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它不是 Ren 提议中的“生成的”“退化的”（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠，所以这一读法不是其所指；二者读作对能形成者的扩大与缩小，DELEGATED-CHOICES D2）；它也不评价生起或止息。",
-    "en": "The full statement (P23) says that the laws of the whole exclude no unfolding beyond what the representation itself excludes. For counting this result makes it precise: the laws of counting exclude no tally, so nothing more about an unfolding follows from counting alone. The open programme's ‘complete list of the laws holding of the whole space’ is thereby given for counting. The map of premises (map-of-premises) shows the eight premises independent; this result says which of them constrain counting, and how: under each of the 256 selections the laws of counting are of two kinds; no set lacking balance or embodiment constrains it, the two with only active relata giving, or with only active relata taking and dissipation, add the same law, and all eight add nothing more, and with each of them binding only that something arises, which comes from the condition of embodiment binding by itself; further constraint comes from enclosure: under it the rest theorem (ceasing-needs-arising, continued-change-needs-openness) brings counting to rest, and the whole law of counting under enclosure adds a change bound (counting-under-enclosure). The author's reading (an AI argument): the number present records only that entering and leaving balance; how an unfolding changes these numbers comes from the relations of giving and taking, which is what balance and embodiment say together: arising needs a giver present; or, with only active relata taking and dissipation, a closed relation cannot give without taking, and arising needs a taking from what is present. This is the counting of activity, whose English names arising and ceasing Ren confirmed (2026-10-09-arising-ceasing-names; the Chinese 生起／止息 being the AI's rendering); it is not the proposal's generative and degenerative (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap, so this reading is not what is meant; they read as widening and narrowing what can form, DELEGATED-CHOICES D2); it evaluates neither arising nor ceasing."
+    "zh": "完整的陈述（P23）说，整体的规律除了表示本身所排除的，不排除任何展开。对计数，本结果使这一点精确：计数的规律不排除任何计数表，所以从计数本身推不出关于展开的任何更多的东西。开放纲领中的“对整个空间成立的规律的完整清单”在计数的部分由此给出。前提的地图（map-of-premises）表明八个前提彼此独立；本结果说明它们中的哪些约束计数、约束什么：在 256 个选择的每一个之下计数的规律只有两种，缺平衡或缺体现的任何一组都不约束，两者连同只有活跃者给予，或连同只有活跃者取用与耗散，约束同一条，而全部八个所加的也只有这一条，即使每个都起约束，也只多出有某个生起，这一条来自体现起约束的条件本身；更多的约束来自被围住：静止定理（ceasing-needs-arising、continued-change-needs-openness）在被围住之下使计数归于静止不能被否证，被围住时计数的全部规律再加一个变化界（counting-under-enclosure）。作者的读法（AI 论证）：在场者的数目只记录进入与离开相抵；展开怎样改变这些数目，来自给予与取用的关系，即平衡与体现一起所说的：生起需要一个在场的给予者；或者，在只有活跃者取用与耗散之下，一个封闭的关系不能不取用而给予，生起需要从在场者那里取得。这是活动的计数，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它不是 Ren 提议中的“生成的”“退化的”（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠，所以这一读法不是其所指；二者读作对能形成者的扩大与缩小，DELEGATED-CHOICES D2）；它也不评价生起或止息。",
+    "en": "The full statement (P23) says that the laws of the whole exclude no unfolding beyond what the representation itself excludes. For counting this result makes it precise: the laws of counting exclude no tally, so nothing more about an unfolding follows from counting alone. The open programme's ‘complete list of the laws holding of the whole space’ is thereby given for counting. The map of premises (map-of-premises) shows the eight premises independent; this result says which of them constrain counting, and how: under each of the 256 selections the laws of counting are of two kinds; no set lacking balance or embodiment constrains it, the two with only active relata giving, or with only active relata taking and dissipation, add the same law, and all eight add nothing more, and with each of them binding only that something arises, which comes from the condition of embodiment binding by itself; further constraint comes from enclosure: under it the rest theorem (ceasing-needs-arising, continued-change-needs-openness) leaves counting unrefuted to come to rest, and the whole law of counting under enclosure adds a change bound (counting-under-enclosure). The author's reading (an AI argument): the number present records only that entering and leaving balance; how an unfolding changes these numbers comes from the relations of giving and taking, which is what balance and embodiment say together: arising needs a giver present; or, with only active relata taking and dissipation, a closed relation cannot give without taking, and arising needs a taking from what is present. This is the counting of activity, whose English names arising and ceasing Ren confirmed (2026-10-09-arising-ceasing-names; the Chinese 生起／止息 being the AI's rendering); it is not the proposal's generative and degenerative (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap, so this reading is not what is meant; they read as widening and narrowing what can form, DELEGATED-CHOICES D2); it evaluates neither arising nor ceasing."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
   "aliases": [
@@ -946,7 +946,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -1334,6 +1334,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Openness.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Openness.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A1 项：对应中“静止定理使计数归于静止”改为“归于静止不能被否证”，与静止定理的 ¬¬ 强度一致。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: in the correspondence, \"the rest theorem brings counting to rest\" becomes \"leaves counting unrefuted to come to rest\", the rest theorem's ¬¬ strength. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -1343,6 +1350,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/f9a018ab519b6f55/whole-law-of-counting.json",
+      "sha256": "f9a018ab519b6f55b49eceff56fef75aa12488d02fa80bed8246ae70e05ca635",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

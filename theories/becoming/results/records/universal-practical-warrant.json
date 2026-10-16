@@ -2,13 +2,13 @@
   "schema_version": 2,
   "id": "universal-practical-warrant",
   "title": {
-    "zh": "普遍实践权威的更强目标",
+    "zh": "普遍实践根据的更强目标",
     "en": "Stronger universal practical warrant target"
   },
   "kind": "target",
   "status": "open",
   "family": "F08",
-  "reviewed_at_utc": "2026-10-13T21:55:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "en": "Target: universal practical warrant with zero substantive axioms, developed as one account of ends, selection, knowing, normativity and revision within becoming.",
     "zh": "目标：取得零实质公理的普遍实践根据，并在同一生成活动中统一解释目的、选择、认识、规范及修订。"
@@ -258,6 +258,10 @@
     {
       "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2. The target in the claim becomes the statement, and its narrowed fulfillment question a progress line. The limitations become eight does-not-show items and three shared boundaries; the section-by-section evidence (P98, sections 20–23.5) becomes seven progress lines with anchored study links and one evidence paragraph, with its labels kept here and in the snapshot. The former counterexample entry restated the status and the G0/J scope (now the status and a shared boundary), so it is no longer listed as a counterexample; P89’s scope stays in the related entry. No premise, status, dependency, related entry, reference or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/universal-practical-warrant.md); the exact earlier record is text_versions[0].",
       "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2。主张中的目标成为陈述，收窄的完成问句成为一行“已接通”。限制改为八项“未表明”与三项通用边界；逐节证据（P98，第20–23.5节）改为七行带锚点研究链接的“已接通”与一段证据，其标记保留于本沿革与快照。原反例条目实为状态及G0/J范围的重述（现分别由状态与通用边界承担），故不再列为反例；P89的范围仍见相关条目。前提、状态、依赖、相关条目、引用及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/universal-practical-warrant.md)；迁移前的完整记录为 text_versions[0]。"
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 bilingual-16 项：中文标题“普遍实践权威”改为“普遍实践根据”，与英文 warrant 及中文陈述的“根据”一致（AGENTS.md 区分根据与权威）。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item bilingual-16: the Chinese title's 普遍实践权威 (authority) becomes 普遍实践根据 (warrant), matching the English warrant and the Chinese statement's 根据 (AGENTS.md keeps warrant and authority distinct). Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -267,6 +271,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/735de5280c33f42f/universal-practical-warrant.json",
+      "sha256": "735de5280c33f42ffac520d08583885b66674dceac341d2aa6762add2ecda53f",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

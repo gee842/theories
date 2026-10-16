@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "一个条件跨过一步开始立着与不再立着的确切条件、上升由给予、下降由取用、生起需要活跃的给予者，在每一分辨率下成立。一次交换的规律在变化按单位读出时成立，按原始计数读出时不成立；规律 1 的复现与规律 3 的界要把细分算作给予。",
     "en": "The exact conditions of coming and ceasing to stand, a rise given to, a fall taken from, and arising needing an active giver hold at every resolution. The law of one exchange holds with change read in the unit, not raw counts; law 1's recurrence and law 3's bound need refinement counted as giving."
@@ -211,7 +211,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ebce5b7564e0ad0a51a4f5537910ba722550465a8a9e1a4081aaa92199a5d847"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -259,8 +259,8 @@
     }
   ],
   "next_delta": {
-    "zh": "一段上数损失的依存规律在细分算作给予时的形式（与 R4 一致）；与较粗的步合并为同时改变步与单位的检验（时间之塔）；R5 落地后与 Flow.dissipatesOn_iff_conserved 的联系。",
-    "en": "The laws of dependence counting a loss over a stretch with the refinement counted as a giving (as R4); a joint test with coarser steps changing both the step and the unit (the tower of time); the link to Flow.dissipatesOn_iff_conserved once R5 lands."
+    "zh": "一段上数损失的依存规律在细分算作给予时的形式（如 rest-with-refinement-counted）；同时改变步与单位的检验，扩展 continuous-time-as-tower；这些规律与 entropy-history-and-record 的 Flow.dissipatesOn_iff_conserved 的联系。",
+    "en": "The laws of dependence counting a loss over a stretch with the refinement counted as a giving (as in rest-with-refinement-counted); a joint test changing both the step and the unit, extending continuous-time-as-tower; the link of these laws to Flow.dissipatesOn_iff_conserved of entropy-history-and-record."
   },
   "history": [
     {
@@ -514,6 +514,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Locality.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Locality.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6 项：下一步原等“R5 落地后”与 Flow.dissipatesOn_iff_conserved 的联系，R5 已落地（Becoming.Entropy，entropy-history-and-record），改为直接指向它；“时间之塔”改为指向已落地的 continuous-time-as-tower，剩下的是同时改变步与单位。schema 1，无 text_versions；原文见 git。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: the next step waited for the link to Flow.dissipatesOn_iff_conserved \"once R5 lands\"; R5 has landed (Becoming.Entropy, entropy-history-and-record), so it now points there directly, and \"the tower of time\" now points to the landed continuous-time-as-tower, what remains being a joint change of step and unit. Schema 1, no text_versions; earlier text in git."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ]
 }

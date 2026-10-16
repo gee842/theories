@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T10:16:06+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "任何有限的历史都不决定一段汲取是更新还是消耗。",
-    "en": "Whether drawing renews or consumes is left open by every finite history."
+    "zh": "在可更新条件的过程中，以及有反馈的支持门控定律中，没有有限前缀决定一段汲取是更新还是消耗。",
+    "en": "In the renewable process, and with feedback in the support-gated law, no finite prefix decides whether drawing renews or consumes."
   },
   "laws": [
     {
@@ -755,6 +755,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Horizon.lean（P129：新增 Adheres.closed、refutable_adheres_iff、refutable_adheres_of_em；说明改正（不可否证，从不发生不可证实），署名 Alpern–Schneider、Kelly；已有陈述不变）；Return.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Horizon.lean (P129: Adheres.closed, refutable_adheres_iff, refutable_adheres_of_em added; docstrings corrected (not refutable; never occurring not verifiable), Alpern–Schneider and Kelly credited; existing statements unchanged); Return.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A9 项：陈述原说“任何有限的历史都不决定一段汲取是更新还是消耗”，对每个过程的每段有限历史作普遍断言；Renewable.prefix_does_not_decide、finite_reading_includes_consumption 与 Feedback.prefix_does_not_decide 只在可更新条件的过程与支持门控定律中给出在 h 之前一致而分类不同的两次运行，陈述改为这一范围（未表明 1 原已如此说）。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A9: the statement said \"whether drawing renews or consumes is left open by every finite history\", universal over every finite history of every process; Renewable.prefix_does_not_decide, finite_reading_includes_consumption and Feedback.prefix_does_not_decide give two runs agreeing before h with different classes only in the renewable process and the support-gated law, so the statement now has that scope, as does_not_show 1 already said. Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -764,6 +768,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/e8967e4ff9b29c31/becoming-finite-horizon.json",
+      "sha256": "e8967e4ff9b29c31eec4d7d3adedd452b7e93321742e3f192e8dd6b8cc23edbb",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

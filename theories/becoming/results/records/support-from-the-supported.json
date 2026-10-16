@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T15:29:46+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "支持只从被支持者获得：在平衡、只有活跃者给予、活动需要支持之下，每次上升由被支持者给予。越过阈值需要所需条件的升降或要求的改变；没有来自外部的给予时，终结是吸收态。",
     "en": "Support is gained only from the supported: under balance, with only active formations giving and activity needing support, every rise is given by a supported formation. Crossing a threshold needs a change in a required condition or in a requirement; with nothing given from beyond, the end absorbs."
@@ -172,8 +172,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Dependence and Becoming.Generation bound to receipt 20261014T091930.724493Z): the theorems of Becoming.Admission, the local forms included, have empty axiom reports; core purity verified. Author counterreview in the integration note; not yet independently reviewed."
   },
   "next_delta": {
-    "zh": "给出多步的可达与恢复（要求消解后的转化与来自外部的给予的条件）；与 RelationalRenewal 的支持门控定律的实例定理；更新能力与关系丰富的比较。",
-    "en": "Give reachability and recovery over several steps (the conditions of transformation by a dissolved requirement and of giving from beyond); an instance theorem to the support-gated law of RelationalRenewal; comparisons of renewal capacity and richness of relations."
+    "zh": "给出多步的可达与恢复（要求消解后的转化与来自外部的给予的条件）；与 RelationalRenewal 支持门控定律的实例定理（RenewalBridge 已给出其前提：平衡与给予者受支持）；更新能力与关系丰富的比较。",
+    "en": "Give reachability and recovery over several steps (the conditions of transformation by a dissolved requirement and of giving from beyond); an instance theorem to the support-gated law of RelationalRenewal, whose premises, balance and supported givers, RenewalBridge already gives; comparisons of renewal capacity and richness of relations."
   },
   "correspondence": {
     "zh": "Ren 写道，生成的是“its existence creates more possibilities of becoming - more future, not less”，并且“it is about if the continuation of becoming continues itself”。作者的读法（AI 论证，依 Ren 的交托采用）：支持只从被支持者获得，读作生成的延续延续自身——没有来自外部的给予时，能形成什么只由已被支持者的给予打开。终结是吸收态，读作退化的不可逆一侧：一个家族一旦没有被支持者，只有消解要求（转化，不是恢复）或来自外部的给予能使它再被支持。对整体没有外部，所以整体一旦什么都不被支持，就不再有什么被支持或活跃；这里的整体是一个网中全部形成，即所表示的整体，按 Ren 确认的第二项读法，实际的整体从不是任何中心对它的模型。Ren 说“not harm”是“a phase transition with a clear boundary”；已有的两个相界结果（excess_bounded、joint_excess_ends，见 own-count-misses-joint-excess）与这里的吸收态，是这一读法下的三个形式。读法与名称都是 AI 的。",
@@ -289,6 +289,13 @@
         "zh": "对世界：封闭在所立者周围的世界归于静止；这里对整体：一旦什么都不被支持，什么都不再被支持或活跃。两者的前提不同，没有实例定理相连。",
         "en": "Of worlds: a world enclosed around what stands comes to rest; here, of the whole: once nothing is supported, nothing is supported or active again. Their premises differ, and no instance theorem joins them."
       }
+    },
+    {
+      "id": "relational-renewal-classification",
+      "detail": {
+        "zh": "RenewalBridge 给出支持门控族的平衡、givers_supported 与 Flow.restores，即本结果各律的前提；实例本身尚未陈述。",
+        "en": "RenewalBridge gives the support-gated family's balance, givers_supported and Flow.restores, the premises of this result's laws; the instance itself is not yet stated."
+      }
     }
   ],
   "references": [
@@ -391,7 +398,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -709,6 +716,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6 项：下一步中的支持门控实例写明 RenewalBridge 已给出其前提（平衡、givers_supported、Flow.restores），实例本身尚未陈述，并加为相关。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: the support-gated instance in the next step now says that RenewalBridge already gives its premises (balance, givers_supported, Flow.restores) while the instance itself is not yet stated, and the record is added as related. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -718,6 +732,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/42d67b8bcd63234a/support-from-the-supported.json",
+      "sha256": "42d67b8bcd63234a97d89b0bd2ed6373829389fbc19ba52e3c474ddfdaad40a3",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

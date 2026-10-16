@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T12:45:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "在家族被耗散的一步上，一个成员上升，同一步上家族另一个成员下降。",
-    "en": "Across a step at which a family is dissipated on, a member rising comes with another member of the family falling."
+    "zh": "在平衡的流中，在家族被耗散的一步上，一个成员上升，同一步上家族另一个成员下降。",
+    "en": "In a balanced flow, across a step at which a family is dissipated on, a member rising comes with another member of the family falling."
   },
   "laws": [
     {
@@ -799,6 +799,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）；Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged); Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A10 项：陈述漏了平衡：Flow.rise_with_fall 以 L.Balances W 为假设（前提 1 已写），陈述补上“在平衡的流中”。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A10: the statement dropped balance: Flow.rise_with_fall takes L.Balances W (as hypothesis 1 says), so the statement now begins \"In a balanced flow\". Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -808,6 +812,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/9308cbb873469330/rising-and-falling-in-one-exchange.json",
+      "sha256": "9308cbb8734693307dc5ecc9549b3e0bd4b4209a684ebdc4919865874022bb20",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

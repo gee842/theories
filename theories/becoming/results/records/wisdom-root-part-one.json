@@ -8,14 +8,14 @@
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-13T22:20:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "en": "The checked laws of registration, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level, and the routes of formation hold axiom-free of every learner and representation keeping the same content: the formal support of the wisdom-root target.",
-    "zh": "识、理、检验、学习与推广、经识的选择与训练、够、失控、判断与元层次的已检查规律及形成路线，不用公理地对每个学习者与保留相同内容的每个表示成立：这是目标 wisdom-root 的形式支撑。"
+    "zh": "识、理、检验、学习与推广、经识的选择与训练、够、失控、判断与元层次的已检查规律及形成路线，对每个学习者与保留相同内容的每个表示成立（核心中不用公理）：这是目标 wisdom-root 的形式支撑。",
+    "en": "The checked laws of registration, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level, and the routes of formation hold of every learner and representation keeping the same content, axiom-free in the core: the formal support of wisdom-root."
   },
   "claim": {
-    "en": "Each law below is stated for every formation, learner, lumping, selection or determined law, with no axiom and its conditions written into its theorem, so no representation keeping the same content escapes it. Together with the formal routes of formation, these laws are the formal support for wisdom-root (the universal laws and routes of formation within Part I's scope).",
-    "zh": "下列每条规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，不用公理，其条件写在定理中，所以保留相同内容的任何表示都避不开它。连同形成的形式路线，它们是目标 wisdom-root 的形式支撑（第一部分所及的普遍规律与形成路线）。"
+    "en": "Each law below is stated for every formation, learner, lumping, selection or determined law, with no axiom in the core (the periphery learning-bridge theorems use only Lean's standard axioms) and its conditions written into its theorem, so no representation keeping the same content escapes it. Together with the formal routes of formation, these laws are the formal support for wisdom-root (the universal laws and routes of formation within Part I's scope).",
+    "zh": "下列每条规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，核心中不用公理（外围学习桥接的定理只用 Lean 的标准公理），其条件写在定理中，所以保留相同内容的任何表示都避不开它。连同形成的形式路线，它们是目标 wisdom-root 的形式支撑（第一部分所及的普遍规律与形成路线）。"
   },
   "laws": [
     {
@@ -126,8 +126,8 @@
   ],
   "hypotheses": [
     {
-      "zh": "不加公理，不加前提；各规律的条件保持在其定理中（平衡只在所用之处、其余交换固定、值可判定、世界被列表所持等），见各自的记录。",
-      "en": "No axiom and no premise is added; each law's conditions stay in its theorems (balance only where used, the rest of the exchange fixed, decided values, a world held by a list and so on), as in the respective records."
+      "zh": "不加前提；核心不用公理，外围学习桥接的三条对应定理用 propext、Quot.sound 与 Classical.choice；各规律的条件保持在其定理中（平衡只在所用之处、其余交换固定、值可判定、世界被列表所持等），见各自的记录。",
+      "en": "No premise is added; the core uses no axiom, and the periphery learning bridge (LearningCorrespondence's hebbian_activity_law_iff, updating_network_law_iff and responsive_learns) uses propext, Quot.sound and Classical.choice; each law's conditions stay in its theorems (balance only where used, the rest of the exchange fixed, decided values, a world held by a list and so on), as in the respective records."
     },
     {
       "zh": "把规律对到智慧的各面（识、理、检验、学习、明、够、失控、代理、判断、元）是 AI 的读法，理依 Ren，其余依 Ren 的交托采用；“明”在这里只指看见自身所识之外要他者之识，不取其全部古典含义；“对每个表示成立”指每个学习者都受这些规律约束，不指有智慧者显式持有一个模型。",
@@ -432,7 +432,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635",
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
       "declarations": []
     },
     {
@@ -913,6 +913,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Selection.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Learning.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Identification.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Selection.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Learning.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Identification.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A7 项：陈述、主张与前提 1 原说所引规律“不用公理”成立；所引 LearningCorrespondence.hebbian_activity_law_iff、updating_network_law_iff、responsive_learns 的回执列出 propext、Classical.choice、Quot.sound，“不用公理”限于核心，主张与前提 1 写明外围桥接只用 Lean 的标准公理（与验证范围一致）。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A7: the statement, claim and hypothesis 1 said the cited laws hold \"axiom-free\"; the receipt of the cited LearningCorrespondence.hebbian_activity_law_iff, updating_network_law_iff and responsive_learns lists propext, Classical.choice and Quot.sound, so \"axiom-free\" is restricted to the core, and the claim and hypothesis 1 state that the periphery bridge uses only Lean's standard axioms, as the validation scope already said. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -922,6 +929,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/f4acbf8012251a73/wisdom-root-part-one.json",
+      "sha256": "f4acbf8012251a73ebd75342cc6a975adc2fcf2ca2913a5b741d016ceb7b870f",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

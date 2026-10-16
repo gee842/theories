@@ -1,0 +1,514 @@
+{
+  "schema_version": 2,
+  "id": "where-a-run-goes-on",
+  "title": {
+    "zh": "运行在何处延续",
+    "en": "Where a run goes on"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "有限多配置之内，运行恰是通向返回的路径，由路径本身给出；沿运行的定律对每个能继续运动的配置成立；测试认出移动处运行经搜索造出；对每个过程要求运行，恰是依赖选择。",
+    "en": "Within finitely many configurations a run is exactly a course into a return, given by the course itself, and the laws along runs hold wherever the process can keep moving; a search over recognized moves builds one; asked of every process, a run is dependent choice."
+  },
+  "laws": [
+    {
+      "zh": "从运行的每个配置开始，有每个长度的路径；运行的每个配置都可从运行的起点到达；从路径通向之处的运行前接路径即得运行，从路径通向返回者之处运行绕返回而行。",
+      "en": "From each configuration of a run courses of every length start, and each configuration of the run is reached from its start; a run from where a course leads, preceded by the course, is a run, and from where a course leads to a return a run goes round the return.",
+      "declarations": [
+        "Becoming.Onward.continues_of_run",
+        "Becoming.Onward.unbounded_of_run",
+        "Becoming.Onward.reach_of_run",
+        "Becoming.Onward.run_of_trace",
+        "Becoming.Onward.run_of_reach",
+        "Becoming.Onward.run_of_returning"
+      ]
+    },
+    {
+      "zh": "有限多配置之内，与列表一样长的路径重复一个配置而通向返回者；所以运行恰在这样的路径开始处、每个长度的路径都开始处、路径通向返回者处开始，不需判定也不需选取；后继列出时运行是否开始已定。",
+      "en": "Within finitely many configurations a course as long as the list repeats one and leads to a return; so a run starts exactly where such a course, courses of every length, or a course to a return start, with no decision and no selection; with successors listed, whether one starts is decided.",
+      "declarations": [
+        "Becoming.Onward.reach_along",
+        "Becoming.Onward.returning_of_continues",
+        "Becoming.Onward.run_of_continues",
+        "Becoming.Onward.run_iff_continues",
+        "Becoming.Onward.run_iff_unbounded",
+        "Becoming.Onward.run_iff_returning",
+        "Becoming.Onward.run_decided"
+      ]
+    },
+    {
+      "zh": "分支无穷时，每个长度的路径不给出运行：扇的根有每个长度的路径，没有运行。",
+      "en": "Where branching is infinite, courses of every length give no run: the root of the fan has courses of every length and no run.",
+      "declarations": [
+        "Becoming.Onward.fan_no_run"
+      ]
+    },
+    {
+      "zh": "一族保持运动，指从每个成员有一步通向成员；族内的步构成过程，其运行是留在族中的运行。有限多配置之内，运行从每个成员开始并留在族中。",
+      "en": "A family keeps moving where from each member some step leads to a member; the steps within it form a process whose runs are the runs staying in the family. Within finitely many configurations a run starts at each member and stays in the family.",
+      "declarations": [
+        "Becoming.Onward.KeepsMoving",
+        "Becoming.Onward.within",
+        "Becoming.Onward.ofWithin",
+        "Becoming.Onward.ofWithin_within",
+        "Becoming.Onward.KeepsMoving.continues",
+        "Becoming.Onward.KeepsMoving.run"
+      ]
+    },
+    {
+      "zh": "不合并、有限多配置之内，不给定运行：配置恰在与列表一样长的路径从它开始处返回，保持运动的族的每个成员都返回；族中跨步不下降的量每步不变，上升需要合并；每个长度的路径都开始而不返回者需要开放。",
+      "en": "Merging nothing within finitely many configurations, with no run given: a configuration returns exactly where a course as long as the list starts there, and each member of a family that keeps moving returns; a quantity never falling across a step within the family keeps its value, a rise needing a merge; a configuration with courses of every length that never returns needs openness.",
+      "declarations": [
+        "Becoming.Onward.lossless_returns_iff",
+        "Becoming.Onward.KeepsMoving.returns",
+        "Becoming.Onward.lossless_no_rise",
+        "Becoming.Onward.rise_needs_merge",
+        "Becoming.Onward.lossless_unlisted"
+      ]
+    },
+    {
+      "zh": "测试在枚举的移动中认出留在族中的一步时（有这样的一步时某个移动通过），搜索经可达性逐个测试直到通过，每步这样取，运行作为数据造出，从成员开始并留在族中，不经选取；步与族已定、步的移动被枚举时，逐个测试就是这样的测试。",
+      "en": "Where a test recognizes among enumerated moves a step staying in the family (some move passing wherever there is such a step), search through accessibility tests each until one passes; taking each step so builds a run as data, from the member and staying in the family, with no selection; where steps and the family are decided and the steps' moves enumerated, testing each move is such a test.",
+      "declarations": [
+        "Becoming.Onward.Later",
+        "Becoming.Onward.searchFrom",
+        "Becoming.Onward.acc_below",
+        "Becoming.Onward.search",
+        "Becoming.Onward.Finds",
+        "Becoming.Onward.searchedStep",
+        "Becoming.Onward.searchedRun",
+        "Becoming.Onward.searchedRun_start",
+        "Becoming.Onward.searchedRun_within",
+        "Becoming.Onward.decidedTest",
+        "Becoming.Onward.decidedTest_finds"
+      ]
+    },
+    {
+      "zh": "对每个过程要求从每个保持运动的族的每个成员出发都有留在族中的运行，恰是依赖选择：全的关系从每个起点有沿它的序列。",
+      "en": "A run staying in the family from every member of every family that keeps moving, asked of every process, is exactly dependent choice: a total relation has a sequence along it from every start.",
+      "declarations": [
+        "Becoming.Onward.DependentSelection",
+        "Becoming.Onward.moveOf",
+        "Becoming.Onward.moveOf_eq",
+        "Becoming.Onward.runs_iff_selection"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。列出全部配置的列表、后继的列表、测试与枚举、步与族的判定在用到处作为假设写入，不假定；依赖选择作为命题陈述，不假定。",
+      "en": "No axiom. A list holding every configuration, the listed successors, a test with an enumeration, and decisions of the steps and the family are written in as hypotheses where used, never assumed; dependent choice is stated as a proposition, never assumed."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "核心是否给出依赖选择：那是关于理论的陈述，需要核心之外的模型。",
+      "en": "Whether the core gives dependent choice: a statement about the theory, needing a model outside it.",
+      "kind": "scope"
+    },
+    {
+      "zh": "每个长度的路径给出运行，不限于有限多配置：扇的根有每个长度的路径，没有运行。",
+      "en": "That courses of every length give a run beyond finitely many configurations: the root of the fan has courses of every length and no run.",
+      "kind": "non-implication",
+      "witness": "Becoming.Onward.fan_no_run"
+    },
+    {
+      "zh": "有限分支而不搜索时沿无界配置的运行（Lasting 经 EitherThroughout 与选取给出）；不列出配置时沿运行的定律。",
+      "en": "Runs along unbounded configurations where branching is finite and nothing is searched (given in Lasting through EitherThroughout and a selection); the laws along runs where nothing lists the configurations.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "detail": {
+        "zh": "扇（Lasting.Fan）：根有每个长度的路径而没有运行（Onward.fan_no_run）：有限多配置之外，每个长度的路径不给出运行。",
+        "en": "The fan (Lasting.Fan): the root has courses of every length and no run (Onward.fan_no_run): beyond finitely many configurations, courses of every length give no run."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T231055.702986Z）：Becoming.Onward 的 40 项声明（28 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §161；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T231055.702986Z): the 40 declarations of Becoming.Onward, 28 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 161; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "不列出配置时沿运行的定律（例如以测试与枚举陈述）；在界内被吸入；独立审查；Ren 对读法的判断。",
+    "en": "The laws along runs where nothing lists the configurations (for instance through a test and an enumeration); being drawn in within a bound; an independent review; Ren's judgment on the readings."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 returning-where-the-course-branches 的 next_delta 与 lifting-where-branching-is-finite 的 next_delta 第二项。读法（AI 的，待 Ren）：有限多配置之内，无尽地进行者靠回转而进行，路径本身显出它在何处返回，不需选取，延续从展开读出；配置不受界时，无尽的进行在能搜索移动处给出，对每个过程要求每个能继续运动的配置都开始一个运行，恰是依赖选择。分支无穷时每个长度的路径不给出运行（扇），是 König 引理（1927）对无穷分支的树不成立；有限的情形即 König 引理。依赖选择是标准名，核心名 DependentSelection 沿 Lasting 的“选取”；选取是每步取一个延续的函数，不是一个选取者。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of returning-where-the-course-branches and the second item of the next_delta of lifting-where-branching-is-finite. Readings (the AI's, pending Ren): within finitely many configurations, whatever goes on without end does so by coming round; the course itself shows where it returns, nothing is selected, and going on is read off the unfolding; where the configurations are not bounded, going on without end is given where the moves can be searched, and asked of every process, that every configuration that can keep moving starts a run is exactly dependent choice. Courses of every length giving no run where branching is infinite (the fan) is the failure of König's lemma (1927) for infinitely branching trees, and the finite case is König's lemma. Dependent choice is the standard name; the core name DependentSelection follows Lasting's selection, a function taking a continuation at each step, not a selector."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
+  "aliases": [
+    "where a run goes on",
+    "运行在何处延续",
+    "a run is a course into a return",
+    "运行是通向返回的路径",
+    "keeps moving",
+    "保持运动",
+    "run without a selection",
+    "不用选取时的运行",
+    "dependent choice",
+    "依赖选择",
+    "searched run",
+    "搜索的运行"
+  ],
+  "dependencies": [
+    {
+      "id": "returning-where-the-course-branches",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用返回（Returns）、不合并（Lossless）、返回者的运行（Returns.run）与沿运行的定律（Lossless.returns、Lossless.no_rise）：本结果给出运行，使这些定律不给定运行而成立。",
+        "en": "Reuses returning (Returns), merging nothing (Lossless), the run of what returns (Returns.run) and the laws along runs (Lossless.returns, Lossless.no_rise): this result supplies the run, so the laws hold with no run given."
+      },
+      "interface": {
+        "output": {
+          "zh": "返回；不合并；返回者绕返回而行的运行；不合并时沿运行返回、不上升。",
+          "en": "Returning; merging nothing; a run going round a return; returning and no rise along runs where nothing merges."
+        },
+        "input": {
+          "zh": "运行恰是通向返回的路径；沿运行的定律不给定运行。",
+          "en": "A run as a course into a return; the laws along runs with no run given."
+        },
+        "conditions": {
+          "zh": "列出全部配置的列表。",
+          "en": "A list holding every configuration."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean"
+      }
+    },
+    {
+      "id": "lifting-where-branching-is-finite",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用路径（Continues）与其深度之判定、无界（Unbounded）、有限分支、选取给出运行（runOf）与扇（Fan）。",
+        "en": "Reuses courses (Continues) and the decision of their depth, unboundedness (Unbounded), finite branching, a selection giving a run (runOf) and the fan (Fan)."
+      },
+      "interface": {
+        "output": {
+          "zh": "n 步的路径；后继列出时其深度已定；选取给出运行；扇的根无界而无无界后继。",
+          "en": "Courses of n steps; their depth decided where successors are listed; a selection giving a run; the fan's root unbounded with no unbounded successor."
+        },
+        "input": {
+          "zh": "运行与路径的当且仅当；运行是否开始已定；搜索的运行；扇没有运行。",
+          "en": "The equivalences of runs and courses; whether a run starts, decided; the searched run; the fan has no run."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean"
+      }
+    },
+    {
+      "id": "identification-where-runs-part",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用路径按位置（path_of_continues）与布尔的合取（and_both、and_of）。",
+        "en": "Reuses courses by position (path_of_continues) and Boolean conjunction (and_both, and_of)."
+      },
+      "interface": {
+        "output": {
+          "zh": "n 步的路径按位置列出。",
+          "en": "A course of n steps listed by position."
+        },
+        "input": {
+          "zh": "与列表一样长的路径通向返回者。",
+          "en": "A course as long as the list leading to a return."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用列表中的重复（revisits_within）与间隔（gap_of_lt）：与列表一样长的路径重复一个配置。",
+        "en": "Reuses repetition within a list (revisits_within) and gaps (gap_of_lt): a course as long as the list repeats a configuration."
+      },
+      "interface": {
+        "output": {
+          "zh": "列表持有的序列在列表长度之内重复。",
+          "en": "A sequence a list holds repeats within the list's length."
+        },
+        "input": {
+          "zh": "路径重复一个配置，被重复者返回。",
+          "en": "A course repeats a configuration, which returns."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "returning-where-the-course-branches",
+      "detail": {
+        "zh": "回答其下一步：沿运行的定律对每个能继续运动的配置成立，不给定运行，有限即可，不需可判定。",
+        "en": "Answers its next step: the laws along runs hold for every configuration that can keep moving, with no run given; finiteness suffices, with no decidability."
+      }
+    },
+    {
+      "id": "lifting-where-branching-is-finite",
+      "detail": {
+        "zh": "回答其下一步“不用选取时的运行”：有限多配置之内不需选取，测试认出移动处经搜索，一般地恰是依赖选择。",
+        "en": "Answers its next step, a run without a selection: within finitely many configurations none is needed, where a test recognizes the moves a run is built by search, and in general it is exactly dependent choice."
+      }
+    },
+    {
+      "id": "what-a-law-of-the-whole-and-no-part-takes",
+      "detail": {
+        "zh": "同样确定一个推理原则的确切位置：那里反例恰是弱有限全知原则作为规则；这里运行恰是依赖选择。",
+        "en": "Likewise fixes the exact place of a principle of reasoning: there a counterexample is exactly the weak limited principle as a rule; here a run is exactly dependent choice."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
+      "role": "proof",
+      "sha256": "492de2b7c42bb4fdad6df6fc224dde37db6e7e42cf110e97267f7b9d65c733af",
+      "declarations": [
+        "Becoming.Onward.continues_of_run",
+        "Becoming.Onward.unbounded_of_run",
+        "Becoming.Onward.reach_of_run",
+        "Becoming.Onward.run_of_trace",
+        "Becoming.Onward.run_of_reach",
+        "Becoming.Onward.run_of_returning",
+        "Becoming.Onward.reach_along",
+        "Becoming.Onward.returning_of_continues",
+        "Becoming.Onward.run_of_continues",
+        "Becoming.Onward.run_iff_continues",
+        "Becoming.Onward.run_iff_unbounded",
+        "Becoming.Onward.run_iff_returning",
+        "Becoming.Onward.run_decided",
+        "Becoming.Onward.fan_no_run",
+        "Becoming.Onward.KeepsMoving",
+        "Becoming.Onward.within",
+        "Becoming.Onward.ofWithin",
+        "Becoming.Onward.ofWithin_within",
+        "Becoming.Onward.KeepsMoving.continues",
+        "Becoming.Onward.KeepsMoving.run",
+        "Becoming.Onward.lossless_returns_iff",
+        "Becoming.Onward.KeepsMoving.returns",
+        "Becoming.Onward.lossless_no_rise",
+        "Becoming.Onward.rise_needs_merge",
+        "Becoming.Onward.lossless_unlisted",
+        "Becoming.Onward.Later",
+        "Becoming.Onward.searchFrom",
+        "Becoming.Onward.acc_below",
+        "Becoming.Onward.search",
+        "Becoming.Onward.Finds",
+        "Becoming.Onward.searchedStep",
+        "Becoming.Onward.searchedRun",
+        "Becoming.Onward.searchedRun_start",
+        "Becoming.Onward.searchedRun_within",
+        "Becoming.Onward.decidedTest",
+        "Becoming.Onward.decidedTest_finds",
+        "Becoming.Onward.DependentSelection",
+        "Becoming.Onward.moveOf",
+        "Becoming.Onward.moveOf_eq",
+        "Becoming.Onward.runs_iff_selection"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "role": "proof",
+      "sha256": "875dff1ff8f7a09d28a3c2baf6e3a82804fbcf8818b84d4c901272dfaec84d58",
+      "declarations": [
+        "Becoming.Branching.Returns",
+        "Becoming.Branching.Lossless",
+        "Becoming.Branching.Returns.run",
+        "Becoming.Branching.Lossless.returns",
+        "Becoming.Branching.Lossless.no_rise"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "role": "proof",
+      "sha256": "1026575f171102ac8245e914afa6d312d8a911654c2d1be631577d85bd0245e0",
+      "declarations": [
+        "Becoming.Lasting.Continues",
+        "Becoming.Lasting.Continues.decided",
+        "Becoming.Lasting.Unbounded",
+        "Becoming.Lasting.FinitelyBranching",
+        "Becoming.Lasting.runOf",
+        "Becoming.Lasting.runOf_within",
+        "Becoming.Lasting.Fan.process",
+        "Becoming.Lasting.Fan.no_unbounded_step"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
+      "role": "proof",
+      "sha256": "7462d8f2dafc81835bd8dacaefd017b2ae35788776fd28548835b865314200fd",
+      "declarations": [
+        "Becoming.Parting.path_of_continues",
+        "Becoming.Parting.and_both",
+        "Becoming.Parting.and_of"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
+      "declarations": [
+        "Becoming.revisits_within",
+        "Becoming.gap_of_lt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "declarations": [
+        "Becoming.Run",
+        "Becoming.Reach",
+        "Becoming.Reach.refl",
+        "Becoming.Reach.of_step",
+        "Becoming.Reach.trans",
+        "Becoming.Run.reach"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+      "role": "proof",
+      "sha256": "672d7cd5d368d699186ab6a3048e9750959df92c6e49fc964b9aad1e0f2a1ec8",
+      "declarations": [
+        "Becoming.Run.cons"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "role": "proof",
+      "sha256": "9c401845bf7254fba72a74c82a5b4cc373ed68e72c2c151dfaf80933a3a73508",
+      "declarations": [
+        "Becoming.Decided"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "6ea624f2e38fc357f50095f04439b0057f0ebc0bd6e5e850c120d65c79719cbf"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "26ba95a5e56959866bbae5ac49fe74e226c1b18ec0acc3a8bc4de0f9cf34fc52"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
+      "role": "provenance",
+      "sha256": "9a9b77159f5aae64310d30cbd3d48a380777613cc3852e517f1a32524dbcc61c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "role": "receipt",
+      "sha256": "4b3efdcf1d56bdde149704676f173ce1f9abcef66debdd25a4b3e8b708ec1387",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Onward",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Branching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lasting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Parting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Horizon",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Decidedness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，回答 returning-where-the-course-branches 的 next_delta 与 lifting-where-branching-is-finite 的 next_delta 第二项（P127）；研究 §161。",
+      "en": "16 October 2026: added, answering the next_delta of returning-where-the-course-branches and the second item of the next_delta of lifting-where-branching-is-finite (P127); study section 161."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：定律 0 的中文缺动词（“有”），审查提议改为“每条都从其起点得到”（第 38 项，P9）。核对 Lean：reach_of_run 给出 Reach P (r.state 0) (r.state n)，即运行的每个配置可从运行的起点到达，所以原中文的第二半是对的，审查对这一半的读法不采用；英文“each is had from its start”有歧义，改为“each configuration of the run is reached from its start”，中文补上动词。correspondence 记 König 1927（第 39 项，K5）。断言不变。",
+      "en": "16 October 2026, eighteenth review (R18): law 0's Chinese lacked its verb (有), and the review proposed “each course is had from its start” (item 38, P9). Checked against the Lean: reach_of_run gives Reach P (r.state 0) (r.state n), each configuration of the run reached from the run's start, so the original Chinese second half was right and the review's reading of it is not taken; the ambiguous English “each is had from its start” now reads “each configuration of the run is reached from its start”, and the Chinese gains its verb. The correspondence names König 1927 (item 39, K5). Claim unchanged."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Onward.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Branching.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Lasting.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Parting.lean（P129：after 改为 Run.onward 的缩写（after_eq_onward，rfl），名称与类型不变；署名 Gold、Moore）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Horizon.lean（P129：新增 Adheres.closed、refutable_adheres_iff、refutable_adheres_of_em；说明改正（不可否证，从不发生不可证实），署名 Alpern–Schneider、Kelly；已有陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Onward.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Branching.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Lasting.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Parting.lean (P129: after now abbreviates Run.onward (after_eq_onward, rfl), name and type unchanged; Gold and Moore credited); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Horizon.lean (P129: Adheres.closed, refutable_adheres_iff, refutable_adheres_of_em added; docstrings corrected (not refutable; never occurring not verifiable), Alpern–Schneider and Kelly credited; existing statements unchanged)."
+    }
+  ],
+  "text_versions": []
+}

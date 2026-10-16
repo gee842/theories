@@ -7,8 +7,8 @@
   },
   "kind": "theorem",
   "status": "recorded-checked",
-  "family": "F07",
-  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "在一个读已立者的律之下，部分的两种可行作为生成两个平衡的世界，每个条件上二者之差至多是所携带的量，并恰好达到；回路、截断、路线、闭合、频率、阈与观察之律对它们成立，从世界读出的回路在世界之内形成。",
     "en": "Under one law of what has stood, two feasible acts of the part generate two balanced worlds whose gap at each condition is at most the carried amount, attained; the laws of loops, cuts, routes, closing, frequency, thresholds and observation hold of them, and loops read off a world form within it."
@@ -671,7 +671,20 @@
     {
       "zh": "2026-10-16：新增（P130，发布准备度复核 §4 的整合所见：前沿陈述在基上）；研究 §165（_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130）；报告见 P130 的 REPORT.md。",
       "en": "16 October 2026: added (P130, the integration finding of the release-readiness review, section 4: the frontier stated on the base); study section 165 (_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130); report in P130's REPORT.md."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 C10 项：家族由 F07（显式公理下的实践判断，前提 G0/J）改为 F01（关系核心）：本记录不用伦理前提、不用公理，是第一部分的结构结果；会话图尚无第一部分专属家族，F01 是现有家族中正确的一个。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions."
     }
   ],
-  "text_versions": []
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/d429db1920bbebfa/two-act-worlds-carry-the-difference.json",
+      "sha256": "d429db1920bbebfaebc92903f24b7dcc0dc0138a270c616491e0413f211da16b",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
 }

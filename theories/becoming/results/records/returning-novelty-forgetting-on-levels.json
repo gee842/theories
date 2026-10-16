@@ -2,16 +2,16 @@
   "schema_version": 2,
   "id": "returning-novelty-forgetting-on-levels",
   "title": {
-    "zh": "只用水平的回返、新与遗忘",
-    "en": "Returning, novelty and forgetting on the levels alone"
+    "zh": "只用水平的重访、新与遗忘",
+    "en": "Revisiting, novelty and forgetting on the levels alone"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "只用水平：存量在界内的部分回返；每步都新的部分超出每个界；在界内而交换不止的部分与有限的整体不承载其历史；每次变化都下降时，变化不无尽复现。",
-    "en": "On the levels alone, a part whose stock stays within a bound returns; a part new at every step exceeds every bound; a bounded part exchanged with without end, and a finite whole, do not carry their history; with loss at each change, change does not recur without end."
+    "zh": "只用水平：存量在界内的部分从每一步起都重访某个构型；每步都新的部分超出每个界；在界内而交换不止的部分与有限的整体不承载其历史；每次变化都下降时，变化不无尽复现。",
+    "en": "On the levels alone, a part with bounded stock revisits a configuration from every step on; a part new at every step exceeds every bound; a bounded part exchanged with without end, and a finite whole, do not carry their history; with loss at each change, change does not recur without end."
   },
   "laws": [
     {
@@ -314,7 +314,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
@@ -416,7 +416,23 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 records-mz-14 项：标题与陈述的“回返”在这里指重访（revisits_of_bounded：从每一步起某个构型在两步取同值；returns_of_bounded 是 ¬¬Revisits），不同于 Recurrence 的 Law.Returns（起点回来），改为“重访”。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-mz-14: \"returns\" in the title and statement means revisiting here (revisits_of_bounded: from every step on some configuration takes one value at two steps; returns_of_bounded is ¬¬Revisits), unlike Recurrence's Law.Returns (the start comes back); it now says \"revisits\". Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
-  "text_versions": []
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/2ce9f338b6f6d73c/returning-novelty-forgetting-on-levels.json",
+      "sha256": "2ce9f338b6f6d73c20a28e79a0a70f21ab8638f1673e936007a2509e390ed23f",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
 }

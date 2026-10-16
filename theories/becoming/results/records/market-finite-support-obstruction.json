@@ -3,12 +3,12 @@
   "id": "market-finite-support-obstruction",
   "title": {
     "zh": "有限支持下无法及时恢复的正区间",
-    "en": "Positive seed intervals that finite support cannot rescue"
+    "en": "Positive seed intervals that finite support cannot rescue in time"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F06",
-  "reviewed_at_utc": "2026-10-14T08:40:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "claim": {
     "zh": "对每条带可容许扰动的变化之律，以及被其步耗竭的每个层族（守卫给出第0级；守卫之内的构型经一个可容许步到第k级，则原在第k+1级），低于第n级的起点在每段可容许历史上n步内离开守卫；处于第n级并不足够。量在每个可容许步上的增长受单调映射约束时，它停在该映射的轨道之下；若量的轨道在第k+1步不超过阈值时，每个可容许步使层级降一，则轨道在第n步不超过阈值、且不在第n级的起点，在每段可容许历史上n步内离开守卫。市场是实例（旧定理由此律证明）：份额每步至多乘3/2，份额轨道不超过1/6时每步使存量在底线5之上少一单位。所以对每个有理C₀≥5及整数N>C₀−5，正维护区间0<x₀≤(2/3)^N/6在任意时变β／责任误差及非负支持冲击下均至迟在N失效。同一正初态在β=0、最佳初始责任和无误差／耗用下，运行投影有限恢复而完整守卫历史终止。",
     "en": "For every law of change with admissible disturbances and every family of levels its steps drain (within the guard is level 0, and a configuration within the guard that one admissible step takes to level k was at level k+1), a start below level n leaves the guard within n steps on every admissible history; being at level n does not suffice. A quantity whose growth on each admissible step is bounded by a monotone map stays below the map's orbit; where each admissible step lowers the level by one while the quantity's orbit k+1 steps on is at or below a threshold, every start whose orbit at step n is at or below the threshold and which is not at level n leaves the guard within n steps on every admissible history. The market is an instance, the old theorem being proved from the law, the share growing at most by 3/2 a step and each step taking one unit of the stock above the floor 5 while the share's orbit stays at or below 1/6: for every rational C0>=5 and integer N>C0-5, all positive seeds 0<x0<=(2/3)^N/6 fail by N under every time-varying beta/quality-error sequence and nonnegative support shock. The same positive state with beta=0, best initial quality and no error/extra consumption has projected finite recovery but full guarded termination."
@@ -359,6 +359,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Lasting.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Courses.lean（P129：导入 Parting；anyChange 改为 Parting.free 的缩写（anyChange_eq_free，rfl）；新增 CrossSituational.distinct_iff；名称与类型不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Lasting.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Courses.lean (P129: imports Parting; anyChange now abbreviates Parting.free (anyChange_eq_free, rfl); CrossSituational.distinct_iff added; names and types unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 bilingual-16 项：英文标题补上“in time”，与中文“无法及时恢复”及主张的“n 步内离开守卫”一致。schema 1，无 text_versions；原文见 git。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item bilingual-16: the English title gains \"in time\", matching the Chinese 无法及时恢复 and the claim's leaving the guard within n steps. Schema 1, no text_versions; earlier text in git."
     }
   ]
 }

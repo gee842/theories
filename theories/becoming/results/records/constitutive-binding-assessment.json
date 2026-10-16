@@ -4,7 +4,7 @@
   "kind": "assessment",
   "status": "reviewed-scoped",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-13T21:50:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "title": {
     "zh": "绑定的构成性说明及无前提推广的限度",
     "en": "Constitutive binding and the limits of presuppositionless promotion"
@@ -99,8 +99,8 @@
     }
   ],
   "validation_scope": {
-    "zh": "作者实质反审及Carroll、Boghossian原典比较；零新增数学声明。复核三份既有Lean实查回执与源码绑定，未重编，未认领独立验收。",
-    "en": "Author counterreview and primary-source comparison with Carroll and Boghossian; zero new mathematical claims. Checks three existing Lean receipts against their source bindings, without recompilation or independent acceptance."
+    "zh": "作者实质反审及 Carroll、Boghossian 原典比较；零新增数学声明。三份既有 Lean 回执（反身同一、承认约束、推论代入）的源码绑定已复核，记在研究的 BINDING-CONSTITUTION-CHECKS.json；本记录不绑定它们，未重编，未认领独立验收。",
+    "en": "Author counterreview and primary-source comparison with Carroll and Boghossian; zero new mathematical claims. The source bindings of three existing Lean receipts (reflective identity, recognitional binding, inferential substitution) were rechecked, as recorded in the study's BINDING-CONSTITUTION-CHECKS.json; this record binds none of them, and nothing was recompiled or independently accepted."
   },
   "references": [
     {
@@ -135,6 +135,10 @@
     {
       "zh": "2026-10-14 可读性迁移到 schema 2：主张第一句成为陈述，第二句与限制句分为 3 项分类“未表明”（两项范围；一项不可能性证明之否定）；“局部论证的完整评估”由状态表达；3 行“已接通”链接研究第10节的正面论证、路线评估与处置；下一步改为正面表述，内容不变。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md)；迁移前的完整记录为 text_versions[0]。",
       "en": "2026-10-14 readability migration to schema 2: the claim's first sentence became the statement; its second sentence and the limitations became 3 typed does-not-show items (two of scope; one denying an impossibility proof); “a completed assessment of the local argument” is carried by the status; 3 progress lines link the study's section-10 affirmative argument, route assessment and disposition; the next step is restated positively with the same content. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 records-a-l-17 项：验证范围原说“复核三份既有 Lean 回执”，而本记录不引用、不绑定任何回执；改为写明三份回执是哪些、复核记在何处，以及本记录不绑定它们。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-a-l-17: the validation scope said it \"checks three existing Lean receipts\", while the record references and binds none; it now names the three receipts, where the recheck is recorded, and that this record binds none of them. Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -144,6 +148,14 @@
       "note": {
         "zh": "可读性迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the readability migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/9e9a104163a2ca65/constitutive-binding-assessment.json",
+      "sha256": "9e9a104163a2ca65facb8a47b5b18495d774b32b158ecbefcf6b15ec6ac8909b",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

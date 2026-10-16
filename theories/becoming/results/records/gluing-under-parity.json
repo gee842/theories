@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "每个语境要求奇偶时，有不依语境的读法，恰当没有语境的选择矛盾（每个主张被计偶数次而所要求的奇偶相加为奇）；有矛盾时，不依语境之读法的混合平均至多满足 m 个语境中的 m − 1 个，按语境索引的读法满足全部 m 个。",
     "en": "Where each context requires a parity, a context-free reading exists exactly where no selection of contexts contradicts (each claim counted evenly, the parities adding to odd); then mixtures of context-free readings meet at most m − 1 of the m contexts on average, readings in context all m."
@@ -246,8 +246,8 @@
     "decidability"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T192014.437564Z）：Becoming.Gluing 的 113 项声明（81 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §149；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T192014.437564Z): the 113 declarations of Becoming.Gluing, 81 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 149; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T192014.437564Z）：Becoming.Gluing 的 113 项声明（81 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §149；经第十八次审查（AI，只读，未重建 Lean）审阅，其更正已处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T192014.437564Z): the 113 declarations of Becoming.Gluing, 81 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 149; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
     "zh": "超出奇偶约束的语境性：一般的有限可能性的确切障碍；概率的语境性与实数振幅下的量子值（外围）；以对应定理把外围的 CorrectionRelations 环律接到这里；独立审查。",
@@ -534,7 +534,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md",
@@ -646,7 +646,23 @@
     {
       "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.ParityReadings 把奇偶之律陈述在沿运行的读法世界（Contextual.world）与任一过程的框架上，经 global_or_contradicts、met_le 与 fitsFree_iff 证明；新增一条律及其 6 项声明，绑定回执 20261016T124157.989030Z；研究 §165。Specker、CHSH、方阵与环的见证没有在世界上重述：那只会给 world_free_iff 与 world_met_le 添一个名字；环律在基上没有等或异的关系之环，除非给出一个。断言与状态不变。",
       "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.ParityReadings states the parity law on the world of readings along a run (Contextual.world) and on the frames of any process, proved through global_or_contradicts, met_le and fitsFree_iff; one law with its 6 declarations added, bound to receipt 20261016T124157.989030Z; study section 165. The Specker, CHSH, square and cycle witnesses are not restated on worlds, which would only add a name to world_free_iff and world_met_le; the cycle law has no base relation that is a cycle of equal-or-different relations unless one is supplied. Claim and status unchanged."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6 项：验证范围原说“未经独立审查”，而第十八次审查（R18）已审阅并更正本记录；R18 是 AI 的只读审查，未重建 Lean，所以写作“经第十八次审查（AI，只读）审阅”，不写“独立”。下一步中的独立审查保留：R18 是否算作所要求的审查由 Ren 定。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: the validation scope said \"not independently reviewed\", while the eighteenth review (R18) read and corrected this record; R18 is an AI read-only review with no Lean rebuild, so it now says \"reviewed by the eighteenth review (AI, read-only)\", not \"independently\". The independent review in the next step stays: whether R18 counts as the review asked for is Ren's decision. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
-  "text_versions": []
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/0232063e72bf8069/gluing-under-parity.json",
+      "sha256": "0232063e72bf806961de3587efd2eb408222701fd2839a32dc5fb5c16b012c59",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
 }

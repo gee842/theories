@@ -1,0 +1,674 @@
+{
+  "schema_version": 2,
+  "id": "derived-extent-limits",
+  "title": {
+    "zh": "推出范围的界限",
+    "en": "Limits of the derived extent"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-14T15:40:03+00:00",
+  "statement": {
+    "zh": "推出的范围单向地到达自身延续所依存的，随想要的结束而结束；满足此处推出的每项要求的持续形成仍可以终结它不需要的生命。沿依存，中心不由动力学推出。",
+    "en": "The derived extent runs one way, to what one's continuation depends on, and ends with the want; a continuing formation meeting every requirement derived here can still end a life it does not need. Along dependence the center is not derived from the dynamics."
+  },
+  "laws": [
+    {
+      "zh": "单向：Downstream 中流平衡，活动需要支持；自身的延续只依存于它的地，每步都活跃且被支持，而以它所给为生的下游形成在它停止给予后终结。",
+      "en": "One way: in Downstream the flow balances and activity needs support; the self's continuation requires only its ground, and the self is active and supported at every step, while the downstream formation living on what the self gives ends once the self stops giving.",
+      "declarations": [
+        "Becoming.Downstream.flow",
+        "Becoming.Downstream.web",
+        "Becoming.Downstream.balances",
+        "Becoming.Downstream.dependent",
+        "Becoming.Downstream.one_way",
+        "Becoming.Web.Supported"
+      ]
+    },
+    {
+      "zh": "不必有来源条件复现：必要的是得到供给（continuing-self-fed-from-beyond），而 Lone 是平衡、耗散的流，池每步从其外得到供给，没有哪份燃料在它自己那一步之后被输送。",
+      "en": "No source condition need recur: being fed is needed (continuing-self-fed-from-beyond), while in Lone, a balanced, dissipative flow, the pool is fed from beyond at every step and no fuel is conveyed at a step after its own.",
+      "declarations": [
+        "Becoming.Lone.fed_not_recurring"
+      ]
+    },
+    {
+      "zh": "想要的视界：Mortal 中流平衡、活动需要支持，一个生命只有两步的形成活着时每项依存都被满足；它的取用终结了共享条件的更新，依存于该条件的后继者在它终结之后才终结。没有它时，更新者与后继者每步都延续。",
+      "en": "The horizon of the want: in Mortal, balanced and with activity needing support, a formation whose life is two steps has every dependence met while it lives; its taking ends the renewal of a shared condition, and a successor depending on that condition ends after it has ended. Without it, the renewer and the successor continue at every step.",
+      "declarations": [
+        "Becoming.Mortal.flow",
+        "Becoming.Mortal.web",
+        "Becoming.Mortal.balances",
+        "Becoming.Mortal.dependent",
+        "Becoming.Mortal.after_its_end",
+        "Becoming.Mortal.without",
+        "Becoming.Mortal.kept",
+        "Becoming.Mortal.without_continues"
+      ]
+    },
+    {
+      "zh": "清除者：Clearing 的流平衡、耗散、活动需要支持；清除者每步都活跃且被支持，只依存于自己的资源，资源被更新、每步从其外得到供给（源从当步的燃料输送入）、被联合地在所给之内取用。它清除栖居者的栖息地：它在第一步的事件侵蚀栖居者，后者从第二步起不活跃。",
+      "en": "The clearer: Clearing's flow balances, is dissipative and has activity needing support; the clearer is active and supported at every step and depends only on its resource, renewed, fed from beyond at every step (the source conveys the step's fuel into it) and taken from jointly within what is given. It clears the dweller's habitat: its event at step one undermines the dweller, inactive from step two on.",
+      "declarations": [
+        "Becoming.Clearing.flow",
+        "Becoming.Clearing.web",
+        "Becoming.Clearing.balances",
+        "Becoming.Clearing.dependent",
+        "Becoming.Clearing.dissipative",
+        "Becoming.Clearing.fed",
+        "Becoming.Clearing.undermines_within_renewal",
+        "Becoming.Web.UnderminingAt"
+      ]
+    },
+    {
+      "zh": "沿依存：一个事件的形成的延续被另一个事件供给，是指在同一步上后者的形成参与并向前者所需的条件给予；Clearing 中只有清除者的延续被供给，且只被源供给。",
+      "en": "Along dependence, the continuation of an event's formation is fed by another event when, at their common step, the other's formation takes part and gives to a condition the first requires; in Clearing only the clearer's continuation is fed, and only by the source.",
+      "declarations": [
+        "Becoming.Flow.FedBy",
+        "Becoming.Clearing.fedBy_source"
+      ]
+    },
+    {
+      "zh": "各形成持有并珍视自身的事件，清除者也珍视源的事件：每个生命都被持有，S0 处处成立，各立场的意义沿供给封闭；栖居者在第零步活的事件从清除者的立场没有意义，N_std 与 G0 不成立。",
+      "en": "With each formation holding and valuing its own events, and the clearer valuing also the source's, every life is held, S0 holds everywhere and each standpoint's significance is closed along feeding; the dweller's living event at step zero has no significance from the clearer, so N_std and G0 fail.",
+      "declarations": [
+        "Becoming.Clearing.own",
+        "Becoming.Clearing.sig",
+        "Becoming.Clearing.valuation",
+        "Becoming.Web.held_by_formations",
+        "Becoming.Clearing.center_not_derived"
+      ]
+    },
+    {
+      "zh": "同一评价中，清除者在第零步的事件经栖息地与栖居者的事件相关，从清除者自身区域沿已形成关系的传递不成立；所以“中心不由动力学推出”这条界线对沿依存推出的范围成立，对沿每个已形成关系推出的范围不成立。",
+      "en": "In the same valuation the clearer's event at step zero is related to the dweller's through the habitat, and transmission out of the clearer's own region along formed relations fails; so the line that the center is not derived from the dynamics holds for an extent derived along dependence and fails for one derived along every formed relation.",
+      "declarations": [
+        "Becoming.Clearing.valuation",
+        "Becoming.Clearing.center_not_derived"
+      ]
+    },
+    {
+      "zh": "S0 只涉及活的主张：清除者在第一步的事件活跃而不活，S0 对它无所说。",
+      "en": "S0 ranges over living claims: the clearer's event at step one is active and not living, and S0 says nothing of it.",
+      "declarations": [
+        "Becoming.Clearing.clearer_not_living"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "想要的形式：顺着想要给出求取其延续所需之物的理由；从想要一个目的到有理由求其所需的一步是公开的前提，不是定理。",
+      "en": "The form of the want: following a want gives reason to secure what its continuation needs; the step from wanting an end to having reason for what it requires is a disclosed premise, not a theorem."
+    },
+    {
+      "zh": "“此处推出的要求”指本组结果中的那些：从其外得到供给、联合地在所给之内、所依存者被更新、活动被支持；不是任意可能的要求。中心的见证把推出的范围读作沿依存（FedBy：在同一步向所需条件给予），不是沿每个已形成的关系。",
+      "en": "‘Requirements derived here’ means those of this group of results: being fed from beyond, taking jointly within what is given, the conditions depended on being renewed, activity supported; not every conceivable requirement. The center witness reads the derived extent as running along dependence (FedBy: giving to a required condition at a common step), not along every formed relation."
+    },
+    {
+      "zh": "Mortal 的有限生命是给定的：它不说形成为什么终结，只说它终结后它的取用的后果仍在；其余见证的终结同样由其活动规定。",
+      "en": "Mortal's finite life is supplied: it does not say why the formation ends, only that the consequences of its taking outlast it; the other witnesses' endings are likewise stipulated in their activity."
+    },
+    {
+      "zh": "源什么都不需要，这是规定的（Clearing、Lone）；主张层面的意义分不开把他者算作条件与算作想要者。",
+      "en": "The source requires nothing, by stipulation (Clearing, Lone); claim-level significance does not separate counting another as a condition from counting it as a being that wants."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "见证是最小的。",
+      "en": "The witnesses are minimal.",
+      "kind": "scope"
+    },
+    {
+      "zh": "Lone 中输送的始终是同一个源，所以这不说明不需要特定的来源形成。",
+      "en": "In Lone the one source does all the conveying, so it does not show that no particular source formation is needed.",
+      "kind": "non-implication",
+      "witness": "Becoming.Lone.fed_not_recurring"
+    },
+    {
+      "zh": "更强的要求（例如对他者依存的计入）没有被排除，只是不在此处由想要自身延续推出的要求之中。",
+      "en": "Stronger requirements (such as counting others' dependence) are not excluded, only not among those derived here from wanting one's own continuation.",
+      "kind": "scope"
+    },
+    {
+      "zh": "关于中心的界线只在推出的范围沿依存、并且某个活的主张在某个想要者的依存闭包之外时成立，在依存使每两个生命都相连的整体中不成立。",
+      "en": "The line on the center holds only where the derived extent runs along dependence and some living claim lies outside some wanting formation's dependence closure, not in a whole where dependence links every two lives.",
+      "kind": "scope",
+      "witness": "Becoming.Clearing.center_not_derived"
+    },
+    {
+      "zh": "见证表明其规定的终结与平衡、支持和依存相容；终结的推出在一般定理中。",
+      "en": "The witnesses show their stipulated endings consistent with balance, support and dependence; endings are derived in the general theorems.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不评价清除者，也不推出它应当保护他者。",
+      "en": "It evaluates no clearer and does not infer that the clearer ought to protect others.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "伤害读在哪个层次，由 Ren 的回答给出（整体，较弱的版本在所在的系统之内，然后是自身），不由本结果给出。",
+      "en": "At which level harm is read is given by Ren's answer (the whole, a weaker version within the system one is in, then the self), not by this result.",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "detail": {
+        "zh": "清除者满足此处推出的每项要求而终结另一个形成（Clearing.undermines_within_renewal）。",
+        "en": "The clearer meets every requirement derived here and ends another formation (Clearing.undermines_within_renewal)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "detail": {
+        "zh": "单向（Downstream.one_way）与想要的视界（Mortal.after_its_end；没有它时其余延续，Mortal.without_continues）。",
+        "en": "One way (Downstream.one_way) and the horizon of the want (Mortal.after_its_end; without it the others continue, Mortal.without_continues)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "detail": {
+        "zh": "沿依存，中心不由动力学推出；沿每个已形成关系的传递在同一见证中不成立（Clearing.center_not_derived）。",
+        "en": "Along dependence the center is not derived from the dynamics; transmission along every formed relation fails in the same witness (Clearing.center_not_derived)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Continuation 的当前字节绑定回执 20261014T141427.442103Z，Becoming.Dependence 的绑定回执 20261014T091930.724493Z，Becoming.Standpoints 的绑定回执 20261013T094743.528770Z；源声明公理报告全空，检查器并核对核心纯净。作者反审见整合文档；独立审查（见来源）接受其 Lean，其更正在整合文档中处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the current bytes of Becoming.Continuation are bound to receipt 20261014T141427.442103Z, those of Becoming.Dependence to receipt 20261014T091930.724493Z and those of Becoming.Standpoints to receipt 20261013T094743.528770Z; every source declaration has an empty axiom report, and core purity is verified. Author counterreview in the integration note; the independent review (listed under sources) accepts its Lean, and its corrections are handled in the integration note."
+  },
+  "next_delta": {
+    "zh": "伤害的层级（个体、谱系、整体）在见证上的形式；跨世代的想要是否越过想要的视界；终结他者服务于清除者延续的见证（元吸引子的更强情形）；强制形式的终结（对 active 量化）；同一世界去掉一个来源形成后仍每步得到供给的见证；整段读法上的同一界限。",
+    "en": "The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; a witness where ending another serves the clearer's continuation (a stronger case of the meta-attractor); forced endings (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading."
+  },
+  "correspondence": {
+    "zh": "Ren 的提议说：“all above does not require any axiom”，又说那条公理“closes the whole”。AI 的分析（Ren 答“exactly”）说：推出的范围单向地到达自身所依存的，以条件而不是以想要的存在者到达他者，而谨慎的总体化者（其见证现名 `Clearing`）满足它的全部；所以动力学定出系统的范围，定不出中心。本结果给出这四个界限的见证。作为检验（若推出的要求迫使立场中立，中心就会由动力学推出），最初的见证不可能失败：Flow 与 Web 的谓词从不约束意义，其传递合取由 S0 推出，如独立审查所指出；“见证造出来了”作为检验通过的说法撤回，现在的见证含沿依存的封闭。在依存使每两个生命都相连的整体中，S0 加沿依存的 N_rel 给出 G0（held-lives-g0-is-centering 的 significant_of_transmits）。清除者是元吸引子所选出的自我的一种形式（AI 的读法）：它不是不计入其外，而是只计入它自己的延续所需的那部分。",
+    "en": "Ren's proposal says “all above does not require any axiom” and that the one axiom “closes the whole”. The AI analysis, which Ren answered “exactly”, said the derived extent runs one way, to what the self depends on, reaches others as conditions rather than as beings that want, and is all satisfied by a careful totalizer (the witness now named `Clearing`); so the dynamics fixes a system's extent, not its center. This result gives witnesses of these four limits. Taken as a test (had the derived requirements forced standpoint neutrality, the center would follow from the dynamics), the first witness could not fail: flow and web predicates never constrain significance, and its transmission conjunct follows from S0, as the independent review found; ‘the witness exists’ as a passed test is withdrawn, and the present witness includes closure along dependence. In a whole where dependence links every two lives, S0 with N_rel along dependence gives G0 (significant_of_transmits in held-lives-g0-is-centering). The clearer is one form of the self the meta-attractor selects (an AI reading): it does not fail to count what lies beyond it, it counts only what its own continuation needs."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+  "aliases": [
+    "Becoming.Downstream.one_way",
+    "Becoming.Mortal.after_its_end",
+    "Becoming.Mortal.without_continues",
+    "Becoming.Clearing.undermines_within_renewal",
+    "Becoming.Flow.FedBy",
+    "Becoming.Clearing.fedBy_source",
+    "Becoming.Clearing.clearer_not_living",
+    "Becoming.Clearing.center_not_derived"
+  ],
+  "dependencies": [
+    {
+      "id": "continuing-self-fed-from-beyond",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 FedFromBeyond 与 Lone.fed_not_recurring；清除者的资源每步都从其外得到供给（Clearing.fed）。",
+        "en": "Reuses FedFromBeyond and Lone.fed_not_recurring; the clearer's resource is fed from beyond at every step (Clearing.fed)."
+      },
+      "interface": {
+        "output": {
+          "zh": "从其外得到供给的定义与不必有来源条件复现的见证。",
+          "en": "Being fed from beyond, and the witness that no source condition need recur."
+        },
+        "input": {
+          "zh": "清除者满足这一要求。",
+          "en": "The clearer meets this requirement."
+        },
+        "conditions": {
+          "zh": "平衡；耗散。",
+          "en": "Balance; dissipation."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
+      }
+    },
+    {
+      "id": "own-count-misses-joint-excess",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 WithinJoint；清除者对其资源联合地在所给之内。",
+        "en": "Reuses WithinJoint; the clearer takes from its resource jointly within what is given."
+      },
+      "interface": {
+        "output": {
+          "zh": "联合地在所给之内的定义。",
+          "en": "Taking jointly within what is given."
+        },
+        "input": {
+          "zh": "清除者满足这一要求。",
+          "en": "The clearer meets this requirement."
+        },
+        "conditions": {
+          "zh": "平衡。",
+          "en": "Balance."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
+      }
+    },
+    {
+      "id": "held-lives-g0-is-centering",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Web.held_by_formations 与 Valuation.Held（并经它复用估值的定义）；中心的见证在其上陈述。",
+        "en": "Reuses Web.held_by_formations and Valuation.Held (and through it the definitions of valuations); the center witness is stated on them."
+      },
+      "interface": {
+        "output": {
+          "zh": "逐步读、每个形成以自身事件为自身区域时每个活的事件都被持有；被持有的生命上 G0 恰等于处处 S0 加 N_std。",
+          "en": "Read stepwise with each formation's own events its own region, every living event is held; on held lives G0 is exactly S0 everywhere with N_std."
+        },
+        "input": {
+          "zh": "沿依存推出的范围不迫使 N_std。",
+          "en": "The extent derived along dependence does not force N_std."
+        },
+        "conditions": {
+          "zh": "每个形成以自身事件为自身区域；推出的范围沿依存。",
+          "en": "Each formation's own events its own region; the derived extent runs along dependence."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean"
+      }
+    },
+    {
+      "id": "becoming-stepwise-reading",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用侵蚀（Web.UnderminingAt、Web.MetAbove.now）与被支持（Web.Supported）。",
+        "en": "Reuses undermining (Web.UnderminingAt, Web.MetAbove.now) and support (Web.Supported)."
+      },
+      "interface": {
+        "output": {
+          "zh": "逐步读法的侵蚀。",
+          "en": "Undermining on the stepwise reading."
+        },
+        "input": {
+          "zh": "清除者在第一步的事件侵蚀栖居者。",
+          "en": "The clearer's event at step one undermines the dweller."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "no-finite-part-bears-taking",
+      "detail": {
+        "zh": "清除者的流沿用 Lone 的源与燃料（Frontier）。",
+        "en": "The clearer's flow follows Lone's source and fuels (Frontier)."
+      }
+    },
+    {
+      "id": "renewing-consuming-formation",
+      "detail": {
+        "zh": "消耗者起初形成更多，每步的计数偏好它；清除者不消耗自己的资源，而消耗他者的栖息地。",
+        "en": "A consumer forms more at first and a one-step count prefers it; the clearer does not consume its own resource, only another's habitat."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "ce23f44709f9e0e00d55f1db5468a903ae46a3d761317c76c7dc747663f96fe3",
+      "declarations": [
+        "Becoming.Downstream.flow",
+        "Becoming.Downstream.web",
+        "Becoming.Downstream.balances",
+        "Becoming.Downstream.dependent",
+        "Becoming.Downstream.one_way",
+        "Becoming.Mortal.flow",
+        "Becoming.Mortal.web",
+        "Becoming.Mortal.balances",
+        "Becoming.Mortal.dependent",
+        "Becoming.Mortal.after_its_end",
+        "Becoming.Mortal.without",
+        "Becoming.Mortal.kept",
+        "Becoming.Mortal.without_continues",
+        "Becoming.Clearing.flow",
+        "Becoming.Clearing.web",
+        "Becoming.Clearing.balances",
+        "Becoming.Clearing.dependent",
+        "Becoming.Clearing.dissipative",
+        "Becoming.Clearing.fed",
+        "Becoming.Clearing.undermines_within_renewal",
+        "Becoming.Lone.fed_not_recurring"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "role": "proof",
+      "sha256": "8e9dfee3ce3a9f5560ab42feed6d87380738550c578f38d36e7114ff432b8609",
+      "declarations": [
+        "Becoming.Flow.FedBy",
+        "Becoming.Clearing.own",
+        "Becoming.Clearing.sig",
+        "Becoming.Clearing.valuation",
+        "Becoming.Clearing.fedBy_source",
+        "Becoming.Clearing.clearer_not_living",
+        "Becoming.Clearing.center_not_derived",
+        "Becoming.Web.held_by_formations"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "declarations": [
+        "Becoming.Web.UnderminingAt",
+        "Becoming.Web.Supported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "role": "receipt",
+      "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "814147e961f0919378e811091f3a28bb9e2f868fed61327c0ef5e2f1dc349647"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
+      "role": "statement",
+      "sha256": "4040c7538f82b08d2f97ca606da8de58ad8b0f97809f2b28b6f93643fcdc1846"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
+      "role": "provenance",
+      "sha256": "bf0ff40c2dcd72f581645b6a67d5aa4a1af92958b6ef6248f39881a640c95b37"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-REVIEW.md",
+      "role": "review",
+      "sha256": "13da1ebc8b8e4e40008f73616b8c9a55c89e44783542cc148aa62907f7f38f3f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "role": "receipt",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "role": "receipt",
+      "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Standpoints",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-10：作为延续奠基计划（CONTINUATION-GROUNDING-PLAN）W4新增，按 Ren“commit them, then start implementation all the way to full completion”；实现 Ren 2026-10-10 的提议（从想要延续者重述普遍元伦理核心）；见整合文档 §47。",
+      "en": "2026-10-10: added as W4 of the continuation-grounding plan (CONTINUATION-GROUNDING-PLAN), following Ren's ‘commit them, then start implementation all the way to full completion’; implements Ren's proposal of 10 October 2026 (restating the Universal Metaethical Core from what wants its continuation); see §47 of the integration note."
+    },
+    {
+      "zh": "2026-10-10 W8：按独立审查（CONTINUATION-GROUNDING-REVIEW.md）更正，见整合文档 §47.1–47.4；验证范围指向合并检查器回执 20261009T231934.987085Z 与外围回执 20261010T073508.393062Z。C1、C3、C7、C10、C11、C13：Totalizer.valuation 改为照管者也珍视太阳的事件，Totalizer.center_not_derived 改为含沿供给的封闭、照管者的事件与另一形成的事件相关、从自身区域沿已形成关系的传递不成立（原陈述：持有、处处 S0、向各自区域的传递、另一形成活着而照管者不珍视、N_std 与 G0 不成立，在回执 20261009T222752.438253Z 中检查过；其传递合取由 S0 推出）；新增 Flow.FedBy、Totalizer.sig、Totalizer.fedBy_sun、Totalizer.keeper_not_living；“见证造出来了”作为检验通过的说法撤回，界线限定为沿依存；第二个界限改为“不必有来源条件复现”；终结与太阳的规定写明；中文的局限与英文对齐；声明只归本记录。",
+      "en": "2026-10-10 W8: corrected after the independent review (CONTINUATION-GROUNDING-REVIEW.md), see §47.1–47.4 of the integration note; validation scope points to consolidated receipt 20261009T231934.987085Z and periphery receipt 20261010T073508.393062Z. C1, C3, C7, C10, C11, C13: Totalizer.valuation now has the keeper value also the sun's events, and Totalizer.center_not_derived now includes closure along feeding, the keeper's event related to the other's, and transmission out of the own region along formed relations failing (the earlier statement, held lives, S0 everywhere, transmission into each own region, the other living and not valued by the keeper, N_std and G0 failing, was checked in receipt 20261009T222752.438253Z; its transmission conjunct follows from S0); Flow.FedBy, Totalizer.sig, Totalizer.fedBy_sun and Totalizer.keeper_not_living are added; ‘the witness exists’ as a passed test is withdrawn and the line is scoped to dependence; the second limit becomes ‘no source condition need recur’; the stipulated endings and sun are disclosed; the Chinese limitations are aligned with the English; the declaration belongs to this record alone."
+    },
+    {
+      "zh": "2026-10-10 P35：验证范围重新指向合并检查器回执 20261010T075031.720357Z 与外围回执 20261010T075308.552033Z（P34b：按第十三次独立审查更正，核心的算术集中于 Dependence，le_total_of_mem 移入 Flow；P35：被围住时与有限世界中计数的规律，Population 加入 occurrences、ChangeBound 与 Swap，Openness 加入 World.enclosure_bounds_change、被围住的队列与有限的队列）；所引模块的定理数改为该回执的数目（Dependence 58、Horizon 12、Flow 77、Change 57、Population 112、Dissipation 89、Premises 67、Openness 116）；外围闭包中其余模块按其回执计为 34 个。断言不变。",
+      "en": "2026-10-10 P35: validation scope re-pointed to consolidated receipt 20261010T075031.720357Z and periphery receipt 20261010T075308.552033Z (P34b: the thirteenth review's corrections, the core's arithmetic gathered in Dependence and le_total_of_mem moved to Flow; P35: counting under enclosure and in finite worlds, Population adding occurrences, ChangeBound and Swap, Openness adding World.enclosure_bounds_change, the enclosed queue and the finite queue); the module counts cited are now that receipt's (Dependence 58, Horizon 12, Flow 77, Change 57, Population 112, Dissipation 89, Premises 67, Openness 116). The periphery closure's other modules are counted as its receipt lists them, 34. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P36：验证范围重新指向合并检查器回执 20261010T083222.285294Z 与外围回执 20261010T084107.973758Z（见证与声明改用形式的、系统与科学的名称，新旧对照见统一计划 §10；陈述、证明与各模块的定理数不变）。断言不变。本记录中的见证与声明名称随之更新。标题中的“谨慎照管者”改为“持续形成”；Ren 答“exactly”的 AI 分析保留原词“谨慎的总体化者”，并注明其见证现名 Clearing。",
+      "en": "2026-10-10 P36: validation scope re-pointed to consolidated receipt 20261010T083222.285294Z and periphery receipt 20261010T084107.973758Z (witnesses and declarations take formal, systems and scientific names, with the old-to-new table in the unification plan §10; statements, proofs and each module's theorem count are unchanged). The claim is unchanged. This record's witness and declaration names are updated accordingly. The title's “careful keeper” becomes “a continuing formation”; the AI analysis Ren answered “exactly” keeps its original “careful totalizer”, noting that the witness is now named Clearing."
+    },
+    {
+      "zh": "2026-10-10 P37：验证范围重新指向合并检查器回执 20261010T100351.523624Z 与外围回执 20261010T100610.366844Z（核心新增 Becoming.Admission 与 Becoming.Regions，包内模块由 29 个增至 31 个，核心闭包由 31 个增至 33 个，共 1412 项定理／2251 项声明审计；已有模块的源与定理数不变）。断言不变。",
+      "en": "2026-10-10 P37: validation scope re-pointed to consolidated receipt 20261010T100351.523624Z and periphery receipt 20261010T100610.366844Z (the core adds Becoming.Admission and Becoming.Regions, the package growing from 29 to 31 modules and the core closure from 31 to 33, with 1412 theorems/2251 declaration audits; existing modules' sources and theorem counts are unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P38：验证范围重新指向合并检查器回执 20261010T101327.506085Z 与外围回执 20261010T102016.503705Z（每个前提选择之下计数的规律：Premises 加入 World.counting_under、World.counting_binds_iff、World.taking_binds_counting 与驱动的队列，Openness 加入 World.enclosed_counting_under 与在第 T 步闭合的队列；章节分为第一部分与第二部分）；所引模块的定理数改为该回执的数目（Premises 78、Openness 123）。断言不变。",
+      "en": "2026-10-10 P38: validation scope re-pointed to consolidated receipt 20261010T101327.506085Z and periphery receipt 20261010T102016.503705Z (the laws of counting under each selection of the premises: Premises adds World.counting_under, World.counting_binds_iff, World.taking_binds_counting and the driven queue, Openness adds World.enclosed_counting_under and the queue closing at step T; the chapter is divided into Part I and Part II); the module counts cited are now that receipt's (Premises 78, Openness 123). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P39：验证范围重新指向合并检查器回执 20261010T110824.890630Z 与外围回执 20261010T111624.656993Z（核心新增 Becoming.Significance，包内模块由 31 个增至 32 个，核心闭包由 33 个增至 34 个，共 1457 项定理／2316 项声明审计；已有模块的源（根模块的导入与说明除外）与定理数不变；章节加第二部分 §6.8）。断言不变。",
+      "en": "2026-10-10 P39: validation scope re-pointed to consolidated receipt 20261010T110824.890630Z and periphery receipt 20261010T111624.656993Z (the core adds Becoming.Significance, the package growing from 31 to 32 modules and the core closure from 33 to 34, with 1457 theorems/2316 declaration audits; existing modules' sources, apart from the root module's import and documentation, and theorem counts are unchanged; the chapter adds Part II's section 6.8). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P38b：验证范围重新指向合并检查器回执 20261010T112632.899583Z 与外围回执 20261010T112836.954648Z（有限世界中每个前提选择之下计数的规律：Openness 加入环 Ring、World.ring、World.embodiedRing、World.balancedRing，以及 World.finite_counting_under、World.finite_counting_binds_iff、World.finite_change_bound_iff 与 World.enclosed_iff_finite_counting_under）；所引模块的定理数改为该回执的数目（Openness 154）。断言不变。",
+      "en": "2026-10-10 P38b: validation scope re-pointed to consolidated receipt 20261010T112632.899583Z and periphery receipt 20261010T112836.954648Z (the laws of counting under each selection of the premises in finite worlds: Openness adds the rings Ring, World.ring, World.embodiedRing and World.balancedRing, with World.finite_counting_under, World.finite_counting_binds_iff, World.finite_change_bound_iff and World.enclosed_iff_finite_counting_under); the module counts cited are now that receipt's (Openness 154). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P38c：验证范围重新指向合并检查器回执 20261010T132639.927992Z 与外围回执 20261010T132949.908183Z（每个前提都起约束时计数的规律：Openness 加入起约束的队列 BindingQueue 与 World.bindingQueue，以及 World.binding_counting 与 World.binding_contingent）；所引模块的定理数改为该回执的数目（Openness 178）。断言不变。",
+      "en": "2026-10-10 P38c: validation scope re-pointed to consolidated receipt 20261010T132639.927992Z and periphery receipt 20261010T132949.908183Z (the laws of counting where every premise binds: Openness adds the binding queue BindingQueue and World.bindingQueue, with World.binding_counting and World.binding_contingent); the module counts cited are now that receipt's (Openness 178). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P40：验证范围重新指向合并检查器回执 20261010T133601.876717Z 与外围回执 20261010T133831.669969Z（核心新增 Becoming.Interdependence，包内模块由 32 个增至 33 个，核心闭包由 34 个增至 35 个，共 1540 项定理／2426 项声明审计；已有模块的源（根模块的导入与说明除外）与定理数不变；章节加第一部分 §2 的“供给与返回”与第二部分 §6.9）。断言不变。",
+      "en": "2026-10-10 P40: validation scope re-pointed to consolidated receipt 20261010T133601.876717Z and periphery receipt 20261010T133831.669969Z (the core adds Becoming.Interdependence, the package growing from 32 to 33 modules and the core closure from 34 to 35, with 1540 theorems/2426 declaration audits; existing modules' sources, apart from the root module's import and documentation, and theorem counts are unchanged; the chapter adds Part I's feeding and return in section 2 and Part II's section 6.9). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P41：验证范围重新指向合并检查器回执 20261010T145237.259199Z 与外围回执 20261010T145910.464504Z（结构：前提给计数的规律加了什么从 Premises 与 Openness 移入新模块 Becoming.Counting，包与核心闭包各多一个模块）；所引模块的定理数改为该回执的数目（Premises 50、Openness 76、Counting 130）。断言不变。",
+      "en": "2026-10-10 P41: validation scope re-pointed to consolidated receipt 20261010T145237.259199Z and periphery receipt 20261010T145910.464504Z (structure: what the premises add to the laws of counting moves from Premises and Openness into the new module Becoming.Counting, the package and the core closure each gaining a module); the module counts cited are now that receipt's (Premises 50, Openness 76, Counting 130). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P41b：验证范围重新指向合并检查器回执 20261010T150853.470895Z 与外围回执 20261010T151108.093153Z（处理第十四次独立审查：Counting、Premises 与 Dependence 新增或移入声明）；所引模块的定理数改为该回执的数目（Dependence 59、Premises 59、Counting 132）。断言不变。",
+      "en": "2026-10-10 P41b: validation scope re-pointed to consolidated receipt 20261010T150853.470895Z and periphery receipt 20261010T151108.093153Z (integrating the fourteenth independent review: declarations added to or moved into Counting, Premises and Dependence); the module counts cited are now that receipt's (Dependence 59, Premises 59, Counting 132). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 R1：验证范围重新指向合并检查器回执 20261010T155424.663562Z 与外围回执 20261010T161037.642977Z（新模块 Becoming.Resolution 加入核心）。断言不变。",
+      "en": "2026-10-10 R1: validation scope re-pointed to consolidated receipt 20261010T155424.663562Z and periphery receipt 20261010T161037.642977Z (the new module Becoming.Resolution joins the core). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 R1b：验证范围重新指向合并检查器回执 20261010T163746.432774Z 与外围回执 20261010T164738.513555Z（Becoming.Resolution 加入下降、止息与储备的规律）。断言不变。",
+      "en": "2026-10-10 R1b: validation scope re-pointed to consolidated receipt 20261010T163746.432774Z and periphery receipt 20261010T164738.513555Z (the laws of falling, ceasing and reserve added to Becoming.Resolution). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 R2：验证范围重新指向合并检查器回执 20261010T165248.121581Z 与外围回执 20261010T165548.911356Z（Becoming.Resolution 的按比例损失改为对家族陈述，加入每一尺度的最小损失与见证 Trickle）。断言不变。",
+      "en": "2026-10-10 R2: validation scope re-pointed to consolidated receipt 20261010T165248.121581Z and periphery receipt 20261010T165548.911356Z (loss in proportion in Becoming.Resolution stated per family; the least loss at each size and the witness Trickle added). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P45：验证范围重新指向合并检查器回执 20261010T171040.121853Z 与外围回执 20261010T171427.598973Z（每个选择之下所选前提都起约束时计数的规律：Counting 与 Premises 新增声明）；所引模块的定理数改为该回执的数目（Premises 59、Counting 161）。断言不变。",
+      "en": "2026-10-10 P45: validation scope re-pointed to consolidated receipt 20261010T171040.121853Z and periphery receipt 20261010T171427.598973Z (the laws of counting where the premises of each selection bind: declarations added to Counting and Premises); the module counts cited are now that receipt's (Premises 59, Counting 161). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 R4：验证范围重新指向合并检查器回执 20261010T180948.563939Z 与外围回执 20261010T182121.048951Z（Becoming.Resolution 加入量的规律、算入细分的静止与第十五次独立审查的更正）。断言不变。",
+      "en": "2026-10-11 R4: validation scope re-pointed to consolidated receipt 20261010T180948.563939Z and periphery receipt 20261010T182121.048951Z (the amount law, rest with the refinement counted and the corrections of the fifteenth independent review added to Becoming.Resolution). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P42–P44：验证范围重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心新增 Becoming.Feedback、Becoming.Boundaries 与 Becoming.Relevance，包内模块由 35 个增至 38 个，核心闭包由 37 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 withinClosure_iff_closure 与 Discharge 一节 5 项定理；Becoming.Interdependence 的模块说明更正读法，陈述与证明不变；其余已有模块的源（根模块的导入与说明、桥接除外）与定理数不变；章节加第一部分 §2 的“反馈与所及”与第二部分 §6.10–§6.12）。断言不变。",
+      "en": "2026-10-11 P42–P44: validation scope re-pointed to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core adds Becoming.Feedback, Becoming.Boundaries and Becoming.Relevance, the package growing from 35 to 38 modules and the core closure from 37 to 40, with 1971 theorems/2993 declaration audits; the bridge adds withinClosure_iff_closure and the 5 theorems of its Discharge section; Becoming.Interdependence's module documentation corrects a reading, its statements and proofs unchanged; other existing modules' sources, apart from the root module's imports and documentation and the bridge, and theorem counts are unchanged; the chapter adds Part I's feedback and reach in section 2 and Part II's sections 6.10 to 6.12). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P46：验证范围重新指向合并检查器回执 20261011T001147.906623Z 与外围回执 20261011T001754.342153Z（有限世界中与从某步起被围住时每个选择之下所选前提都起约束时计数的规律：Counting 新增声明）；所引模块的定理数改为该回执的数目（Counting 212）。断言不变。",
+      "en": "2026-10-11 P46: validation scope re-pointed to consolidated receipt 20261011T001147.906623Z and periphery receipt 20261011T001754.342153Z (the laws of counting in finite worlds and under enclosure from some step on where the premises of each selection bind: declarations added to Counting); the module counts cited are now that receipt's (Counting 212). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P47：验证范围重新指向合并检查器回执 20261011T003217.297180Z 与外围回执 20261011T003646.599930Z（前提之下所立者与依存的计数规律：新的核心模块 Standing，38 项定理；包与核心闭包各多一个模块；P51 折叠 G0 的说明文字随此运行改入七个核心模块，只改说明，陈述与定理数不变）。断言不变。",
+      "en": "2026-10-11 P47: validation scope re-pointed to consolidated receipt 20261011T003217.297180Z and periphery receipt 20261011T003646.599930Z (the laws of counting what stands and what depends under the premises: a new core module, Standing, with 38 theorems; the package and the core closure each have one module more; P51's fold of G0 enters the docstrings of seven core modules with this run, docstrings only, statements and theorem counts unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 R6：验证范围重新指向合并检查器回执 20261011T011019.444120Z 与外围回执 20261011T011213.027508Z（每个变化之律保留、失去与回返的零前提规律：新的核心模块 Recurrence，55 项定理；包与核心闭包各多一个模块）。断言不变。",
+      "en": "2026-10-11 R6: validation scope re-pointed to consolidated receipt 20261011T011019.444120Z and periphery receipt 20261011T011213.027508Z (the zero-premise laws of what every law of change keeps, loses and returns to: a new core module, Recurrence, with 55 theorems; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P48：验证范围重新指向合并检查器回执 20261011T071749.484228Z 与外围回执 20261011T071753.574921Z（一步的规律：新的核心模块 Locality，57 项定理；Openness、Roles、Counting 与 Standing 的推论改经它证明，陈述不变；定理数改变的已有模块：Standing；包与核心闭包各多一个模块）。断言不变。",
+      "en": "2026-10-11 P48: validation scope re-pointed to consolidated receipt 20261011T071749.484228Z and periphery receipt 20261011T071753.574921Z (the laws of one step: a new core module, Locality, with 57 theorems; corollaries in Openness, Roles, Counting and Standing re-proved through it, statements unchanged; existing modules whose theorem count changed: Standing; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57–P61：验证范围重新指向合并检查器回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z（清点 B 组其余与 D 组的局部规律，以及延续之下覆盖列表的普查定律，与这些规律中判定改为局部（供 P58）：每个原定理改经其局部形式证明，名称与陈述不变；共享的引理移入需要它的最低模块；定理数改变的模块：Flow、Change、Population、Identity、Dissipation、Locality、Roles、Space、Premises、Openness、Continuation；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P57–P61: validation scope re-pointed to consolidated receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z (the local laws of the rest of the inventory's group B and of group D, the census law under a continuation from covering lists, and decidedness made local in these laws (for P58): each original theorem re-proved through its local form, names and statements unchanged; shared lemmas moved to the lowest module that needs them; modules whose theorem count changed: Flow, Change, Population, Identity, Dissipation, Locality, Roles, Space, Premises, Openness, Continuation; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P54+P56：验证范围重新指向合并检查器回执 20261011T171000.054867Z 与外围回执 20261011T180706.458104Z（P54 的 g0_relevance_iff 与 P56 的生成的空间：Regions、Significance 与 Relevance 中只新增定义与定理，既有陈述不变，Significance 的三条界改经其局部形式证明；定理数改变的模块：Regions、Significance、Relevance；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P54+P56: validation scope re-pointed to consolidated receipt 20261011T171000.054867Z and periphery receipt 20261011T180706.458104Z (P54's g0_relevance_iff and P56's generative space: new definitions and theorems only in Regions, Significance and Relevance, no existing statement changed, Significance's three margin laws re-proved through their local forms; modules whose theorem count changed: Regions, Significance, Relevance; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P63：验证范围重新指向合并检查器回执 20261011T192152.790658Z 与外围回执 20261011T192511.756300Z（储备与依存的局部规律与 P61 的反方向，原定理改经其局部形式证明，名称与陈述不变；新的核心模块 Sampling、Units 与 Tower，各 90、31 与 6 项定理；定理数改变的已有模块：Dependence、Identity、Reserve；包与核心闭包各多三个模块）。断言不变。",
+      "en": "2026-10-12 P63: validation scope re-pointed to consolidated receipt 20261011T192152.790658Z and periphery receipt 20261011T192511.756300Z (the local laws of reserve and dependence and the converse of P61, the originals re-proved through their local forms, names and statements unchanged; new core modules Sampling, Units and Tower, with 90, 31 and 6 theorems; existing modules whose theorem count changed: Dependence, Identity, Reserve; the package and the core closure each have three modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P62：验证范围重新指向合并检查器回执 20261011T194804.708104Z 与外围回执 20261011T195216.607072Z（无明的边界条件：新的核心模块 Seeking 与 Capture，各 13 与 11 项定理，不改已有模块；包与核心闭包各多两个模块）。断言不变。",
+      "en": "2026-10-12 P62: validation scope re-pointed to consolidated receipt 20261011T194804.708104Z and periphery receipt 20261011T195216.607072Z (the boundary condition for 无明: new core modules Seeking and Capture, with 13 and 11 theorems, no existing module changed; the package and the core closure each have two modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P59+P58：验证范围重新指向合并检查器回执 20261011T210459.095261Z 与外围回执 20261011T211111.085532Z（新核心模块 Becoming.Decidedness 与 Becoming.Imbalance，包与核心闭包各加两个模块；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理加在 Space 与 Openness；定理数改变的既有模块：Space（56→62）、Openness（80→85））。断言不变。",
+      "en": "2026-10-12 P59+P58: validation scope re-pointed to consolidated receipt 20261011T210459.095261Z and periphery receipt 20261011T211111.085532Z (new core modules Becoming.Decidedness and Becoming.Imbalance, the package and the core closure each two modules larger; the rest theorems drop their unused decision procedure in place, names kept, with the settling lemmas added in Space and Openness; existing modules whose theorem count changed: Space (56 to 62), Openness (80 to 85)). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P58b：验证范围重新指向合并检查器回执 20261011T232354.807725Z 与外围回执 20261011T232716.311380Z（P58 的六个平息引理改名，使名称恰是陈述所说：停止不能被否证；Space 加 stop_unrefuted_iff，62→63；陈述与证明不变）。断言不变。",
+      "en": "2026-10-12 P58b: validation scope re-pointed to consolidated receipt 20261011T232354.807725Z and periphery receipt 20261011T232716.311380Z (P58's six settling lemmas renamed so each name says exactly what its statement says: stopping unrefuted; Space adds stop_unrefuted_iff, 62 to 63; statements and proofs unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P73：验证范围重新指向合并检查器回执 20261012T012916.201078Z 与外围回执 20261012T013048.258651Z（新增 Becoming.Learning，2895→2970 项定理，包 56→57 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-12 P73: validation scope re-pointed to consolidated receipt 20261012T012916.201078Z and periphery receipt 20261012T013048.258651Z (Becoming.Learning added, 2895 to 2970 theorems, package 56 to 57 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
+      "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P85：next_delta 中“两个可移除来源交替供给的见证”一项改为指向 Successive.relay（没有哪个来源形成复现），留下同一世界去掉来源形成的形式；见整合文档 §106。断言不变。",
+      "en": "2026-10-12 P85: the next_delta item ‘a witness fed alternately by two removable sources’ now points to Successive.relay (no source formation recurs), leaving the form with a source formation taken away from the same world; see §106 of the integration note. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 接手核对：当前合并回执 20261013T094743.528770Z 实含 22 个继承模块；当前验证摘要中沿用的 15 改为 22。历史回执及其当时计数不变；断言、前提与证明不变。",
+      "en": "2026-10-13 takeover reconciliation: current consolidated receipt 20261013T094743.528770Z contains 22 inherited modules; the carried-over count of 15 in the current validation summary is corrected to 22. Historical receipts and their original counts remain unchanged, as do the claim, premises and proofs."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“推出的范围达不到的：它单向地到达自身延续所依存的，随想要的结束而结束；满足此处推出的每项要求的持续形成仍可以终结它不需要的生命；沿依存，中心不由动力学推出”",
+      "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “What the derived extent does not reach: it runs one way, to what one's continuation depends on, and ends with the want; a continuing formation meeting every requirement derived here can still end a life it does not need; along dependence the center is not derived from the dynamics”"
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：研究只新增 §112（一般规律与改名）及英文摘要中的对应一段。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Continuation.lean（新增恢复律 Flow.restores 及其推论，既有陈述不变）；BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Continuation.lean (the restoring law Flow.restores and its corollaries added; existing statements unchanged); BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Dependence.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Dependence.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Continuation.lean（第十七次审查 G9：Flow.surplus_raises_at、surplus_bounded_at 改名为 net_give_raises_at、net_give_bounded_at，“共同盈余”改为“共同净给予”；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Continuation.lean (seventeenth review G9: Flow.surplus_raises_at and surplus_bounded_at renamed net_give_raises_at and net_give_bounded_at, “joint surplus” now “joint net giving”; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述、前提与反例不变；主张拆为 8 条规律，各条对照其 Lean 声明核读（其开头关于想要的一句即前提 1，终结由规定与源什么都不需要两句即前提 3 与前提 4）；限制分入“未表明”、通用边界与前提（重复者）。前提、状态、证明绑定与来源哈希均未改变。规律 1、3、4 写明 Lean 见证所陈述的平衡与活动需要支持。对应保留 Ren 的原话、AI 的分析与读法；审查的工作项标签见第二条沿革，对中心见证的复述移入规律 6、7，“中心不由推出”的范围并入关于这条界线的“未表明”。已完成的下一步（Successive.relay）见相应沿革。证据段写明证明绑定的回执，计数见回执与迁移前的记录。每句旧文本的去向见迁移对照表 [derived-extent-limits.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/derived-extent-limits.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement, hypotheses and counterexamples are kept; the claim was split into 8 laws, each read against its Lean declarations (its opening sentence on the want is hypothesis 1, and its statements that the endings are stipulated and that the source requires nothing are hypotheses 3 and 4); limitations went to does-not-show items, standard boundaries and the hypotheses (where they repeated them). No premise, status, proof binding or source hash changed. Laws 1, 3 and 4 name the balance and the support of activity that the Lean witnesses state. The correspondence keeps Ren's words, the AI analysis and the reading; the review's work-item label is in the second history entry, the restatements of the center witness went to laws 6 and 7, and the scope of ‘the center is not derived’ joined the does-not-show item on the line. The completed next-step item (Successive.relay) is in the history entry on it. The evidence paragraph names the binding receipts of the proof bindings, the counts staying in the receipts and the earlier record. Every earlier sentence is mapped in the migration table [derived-extent-limits.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/derived-extent-limits.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026年10月14日，整合 I3a 落地（开放问题计划 I 列；研究第124节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第124节（整合 I3a：二十项外围记录在脊柱上陈述）及其英文段；此前各节不变）。",
+      "en": "14 October 2026, landing integration I3a (open-issues plan, stream I; study section 124): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 124 (integration I3a: twenty periphery records stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，从关系开始的重建（Becoming.Novelty、Becoming.Reading、Becoming.Readings；研究第125节）：更新哈希：BECOMING-RENEWAL-READING.md（新增第125节（从关系开始的重建：Becoming.Novelty、Becoming.Reading、Becoming.Readings）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, the relation-first re-founding (Becoming.Novelty, Becoming.Reading, Becoming.Readings; study section 125): rehashed: BECOMING-RENEWAL-READING.md (section 125 (the relation-first re-founding: Becoming.Novelty, Becoming.Reading, Becoming.Readings) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83b、整合 I3b、P83c 与 Keeping 落地（研究第126–128节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第126节（P83b：对每一对界恰好）、第127节（整合 I3b：九项外围记录接入）与第128节（P83c：Moore 界与以类计的深度）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P83b, integration I3b, P83c and Keeping (study sections 126–128): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 126 (P83b: exactness for every pair of bounds), 127 (integration I3b: nine periphery records joined) and 128 (P83c: Moore's bound and the depth by classes) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3c 与 P83d 落地（研究第129–130节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第129节（整合 I3c：四项外围记录接入；Becoming.Keeping、共享存量与传递）与第130节（P83d：不加前提的 Moore 界）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing integration I3c and P83d (study sections 129–130): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 129 (integration I3c: four periphery records joined; Becoming.Keeping, the shared stock, transmission) and 130 (P83d: Moore's bound with no premise) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P109 落地（研究第131节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第131节（P109：动作在哪里形成，Becoming.Coupling）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P109 (study section 131): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 131 (P109: where a move is formed, Becoming.Coupling) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，P83e 与 P83f 落地（研究第132–133节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第132节（P83e：区分，Becoming.Distinguishing）与第133节（P83f：静止之步不需要界）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing P83e and P83f (study sections 132–133): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 132 (P83e: distinguishing, Becoming.Distinguishing) and 133 (P83f: the rest step needs no bound) with their English paragraphs; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026年10月15日，整合 I3d 落地（研究第134节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第134节（整合 I3d：运行之外的最后六项记录在脊柱上陈述）及其英文段；此前各节不变）。",
+      "en": "15 October 2026, landing integration I3d (study section 134): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (section 134 (integration I3d: the last six records outside the spine run stated on the spine) with its English paragraph; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-16 P110（依 Ren 2026-10-15 的交托决定的读法，研究 §147，DELEGATED-CHOICES D14）：此前留给 Ren 的读法与名称按所列决定改为采用或不采用，要求 Ren 判断这些读法的下一步已删去。陈述、证明与绑定不变；Ren 可改其中任何一项决定。",
+      "en": "16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D14): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions."
+    },
+    {
+      "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Standpoints.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
+      "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Standpoints.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/5232f6c27c4429c7/derived-extent-limits.json",
+      "sha256": "5232f6c27c4429c7d9b4f6482057944e4ddd137d3b4cad0e2a02ecfd6dcf4779",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
+    }
+  ]
+}

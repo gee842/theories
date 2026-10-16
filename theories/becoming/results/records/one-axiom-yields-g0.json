@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "“从每个立场看，任何东西的延续都有意义”这一公理，在主张的意义即某形成之延续的意义的每种读法上推出 G0、每个立场的 S0、两种中立与种子，在水平路径上推出 C，并解除 G0 的每处用法。",
     "en": "The axiom that from every standpoint the continuation of anything has significance yields G0, S0 at every standpoint, both neutralities and a seed on every reading where a claim's significance is a formation's continuation, C on level paths, and discharges every use of G0."
@@ -195,6 +195,12 @@
       "zh": "只为桥接已导入的三项外围定理写出 Lean；ProtectionPriorityRival 与 RenewingFormation 以同一实例化成立而未写成 Lean。",
       "en": "Lean is written only for the three periphery theorems the bridge imports; ProtectionPriorityRival and RenewingFormation hold by the same instantiation without Lean.",
       "kind": "scope"
+    },
+    {
+      "zh": "动力学使意义不定：significance_undetermined 比较自由的常量“一切”与“无”，只表明不含意义的表示不蕴含意义，不表明条件是必需的。",
+      "en": "That becoming leaves significance undetermined: significance_undetermined compares the free constants everything and nothing, so it shows only that a representation without significance does not entail it, not that the condition is needed.",
+      "kind": "non-implication",
+      "witness": "Becoming.Web.significance_undetermined"
     }
   ],
   "counterexamples": [
@@ -229,8 +235,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T204910.042715Z; periphery receipt 20261013T095049.338744Z): the theorems of Significance, those of Relevance belonging to this result and the bridge's Discharge section have empty axiom reports; no Lean axiom is used, the axiom Unrestricted being a hypothesis of the theorems. The bridge is bound to receipt 20261013T102207.009826Z, whose four added adapters, not separate results, also have empty reports. Author counterreviews in §53 and §64 of the integration note; no independent review."
   },
   "next_delta": {
-    "zh": "L 在公理之下的形式；不用公理的路线 (b)。",
-    "en": "The form of L under the axiom; route (b), without the axiom."
+    "zh": "L 在公理之下的形式；从路线 (b) 的窄范围到公理的宽范围的那一步不变（presupposition-scopes 表明二者是同一预设的两种范围），这一步由 Ren 陈述。",
+    "en": "The form of L under the axiom; the step of invariance from route (b)'s narrow scope to the axiom's wide scope (presupposition-scopes shows them one presupposition at two scopes), which is Ren's to state."
   },
   "correspondence": {
     "zh": "Ren 的公理是“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”。Ren 又写道，中心及其边界只存在于认知的结构与动力学中，“so there isn't really who's continuation matters, which requires axiom”，并说“not harm”是“a phase transition with a clear boundary”。作者的读法（AI 论证，依 Ren 的交托采用）：形成的索引读“anything”，形成在一步的延续读“its continuation into the future”，立场的索引读“has significance”不加限定、没有哪个中心特殊；保留读“as long as not harm”，增加读“create more significance”。名称（Unrestricted、Retains、Adds、Preemption 等）是 AI 按 Ren 的命名准则所选。P44 的读法（AI 论证，依 Ren 的交托采用）：正面相关读作已实现的活的内容的意义，读 Ren 的“doesn't have to be positive”：意义不是正面相关，正面的是活的，即生生；一切都有意义时，正面相关须读在活的内容上，否则 A 给不活的新内容以理由。",
@@ -521,6 +527,20 @@
         "zh": "那里的 event_reading_recognizes_both 在宽清单上以 G0 为假设，由同一实例化解除；公理同样给两个继续的事件以意义，区分要靠比较（见 ranking-under-readings）。",
         "en": "Its event_reading_recognizes_both takes G0 as a hypothesis on a broad inventory and is discharged by the same instantiation; the axiom too gives the events of both continuations significance, and telling them apart takes the comparison (see ranking-under-readings)."
       }
+    },
+    {
+      "id": "presupposition-scopes",
+      "detail": {
+        "zh": "不用公理的路线 (b) 与公理是同一预设的窄、宽两种范围；二者之间只差不变的一步。",
+        "en": "Route (b), without the axiom, and the axiom are one presupposition at narrow and wide scope; they differ only by the step of invariance."
+      }
+    },
+    {
+      "id": "feeding-closure",
+      "detail": {
+        "zh": "路线 (b) 不用公理到达延续所依存的供给闭包。",
+        "en": "Route (b) reaches, with no axiom, the feeding closure a continuation depends on."
+      }
     }
   ],
   "references": [
@@ -661,7 +681,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ded85732df2edc5d05c121ee8364dec538d6e349e4bd01a9154cdcf70e28f16e"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
@@ -1031,6 +1051,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Significance.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Significance.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A12、B6 项：新增一项未表明：Web.significance_undetermined 比较 sig ≡ ⊤ 与 sig ≡ ⊥，只表明不含意义的表示不蕴含意义（NONDUAL-METHOD 的“较弱模型中可自由切换的谓词”），不表明条件必需。下一步原列“不用公理的路线 (b)”，feeding-closure 与 presupposition-scopes 已陈述它及其与公理的关系，改为剩下的不变之一步（D21 留给 Ren），并加两条相关。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A12, B6: a does_not_show item added: Web.significance_undetermined compares sig ≡ ⊤ with sig ≡ ⊥ and shows only that a representation without significance does not entail it (NONDUAL-METHOD's freely toggled predicate), not that the condition is needed. The next step listed \"route (b), without the axiom\", which feeding-closure and presupposition-scopes state with its relation to the axiom; it now names what remains, the step of invariance (kept for Ren by D21), and two related entries are added. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -1040,6 +1067,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/71e11afe6a063abc/one-axiom-yields-g0.json",
+      "sha256": "71e11afe6a063abc16ec681ba57b5983150c1963df60822c6132960b033bca01",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

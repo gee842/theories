@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "不加前提的规律对每个世界成立，前提划出部分：活动可判定的有限世界中生起复现恰当止息复现，活跨越生起与止息，耗散使有限世界归于静止。",
-    "en": "Premise-free laws hold of every world and premises carve parts: in a finite world whose activity is decided arising recurs exactly when ceasing does, living crosses arising and ceasing, and dissipation brings a finite world to rest."
+    "zh": "不加前提的规律对每个世界成立，前提划出部分：活动可判定的有限世界中生起复现恰当止息复现，活跨越生起与止息，耗散之下有限世界归于静止不能被否证。",
+    "en": "Premise-free laws hold of every world and premises carve parts: in a finite world whose activity is decided arising recurs exactly when ceasing does, living crosses arising and ceasing, and under dissipation a finite world cannot be refuted to come to rest."
   },
   "laws": [
     {
@@ -1110,6 +1110,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Locality.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Locality.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A1 项：陈述原说“耗散使有限世界归于静止”；World.rests_unrefuted 只证 ¬¬∃N, RestsFrom N（指明静止之步需要 LPO），改为“归于静止不能被否证”。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: the statement said \"dissipation brings a finite world to rest\"; World.rests_unrefuted proves only ¬¬∃N, RestsFrom N (naming the step needs LPO), so it now says a finite world \"cannot be refuted to come to rest\". Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -1119,6 +1123,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/38e7c404ca949ed4/space-and-its-parts.json",
+      "sha256": "38e7c404ca949ed43c8f759a708b8202838e4a0082a733b84a12969713ee6155",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

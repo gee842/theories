@@ -1,0 +1,582 @@
+{
+  "schema_version": 2,
+  "id": "observation-is-a-route",
+  "title": {
+    "zh": "观察不出下游：差别只往下游去",
+    "en": "Observation lies within the downstream: a difference goes only downstream"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "statement": {
+    "zh": "一个储量之差只往它的下游去；对每个读入每个条件的律，只在储量上不同的进程在其下游之外都相同，所以一个形成只能经它所读的、在储量下游的水平识储量，所观察者是长度为零的路线；路线由闭合而形成。",
+    "en": "A stock's difference goes only downstream; for every law reading into each condition, courses apart only in the stock are alike off its downstream, so a formation can register it only through a level it reads downstream, observing it being the route of length zero; a route forms by closing."
+  },
+  "laws": [
+    {
+      "zh": "差别只往下游去：起始之差只在一个储量上为正、部分不给差时，在一步被传到的条件都在储量的下游，按到那一步形成的耦合；所以所携带的量，能到达的最多的差，在不在下游之处为零。链可接，形成的路线保持形成。",
+      "en": "A difference goes only downstream: where the starting gap is positive at one stock alone and the part gives no gap, a gap conveyed to a condition at a step lies downstream of the stock by the couplings formed by that step; so the carried amount, the most difference that can arrive, is zero wherever not downstream. Chains join, and a route formed stays formed.",
+      "declarations": [
+        "Becoming.Upstream.single",
+        "Becoming.Upstream.trans",
+        "Becoming.Upstream.snoc",
+        "Becoming.Upstream.before_mono",
+        "Becoming.conveyed_upstream",
+        "Becoming.carried_zero_off_downstream"
+      ]
+    },
+    {
+      "zh": "路线由闭合而形成：到 T + 1 形成的路线是到 T 形成的路线，与经过一个在第 T 步作用的耦合者。",
+      "en": "A route forms by closing: the routes formed by step T + 1 are those formed by T and those through a coupling acting at step T.",
+      "declarations": [
+        "Becoming.upstream_succ_iff",
+        "Becoming.route_forms_by_closing"
+      ]
+    },
+    {
+      "zh": "读入每个条件：形成与一个条件的交换只由时程为那个条件所标的水平决定。读一个时程的律是对所有条件读得一样的特例，经识而读的律也是；未读入的水平耦合强度为零，所以限于所读的强度是律的强度，其路线是所读的路线。",
+      "en": "Reading into each condition: what a formation exchanges with a condition is fixed by the levels the schedule marks for that condition. A law reading a schedule is the case reading alike for every condition, and so is a law reading through a registration; a level unread into a condition is coupled into it with strength zero, so the strengths restricted to what is read are strengths of the law, and their routes are routes of reading.",
+      "declarations": [
+        "Becoming.ExchangeLaw.ReadsInto",
+        "Becoming.readCouplings",
+        "Becoming.restrictInto",
+        "Becoming.ExchangeLaw.ReadsAt.readsInto",
+        "Becoming.ExchangeLaw.Through.readsInto",
+        "Becoming.ExchangeLaw.ReadsInto.respondsWithin_unread",
+        "Becoming.ExchangeLaw.ReadsInto.restrict",
+        "Becoming.couplesAt_readCouplings",
+        "Becoming.upstream_readCouplings"
+      ]
+    },
+    {
+      "zh": "所识不出下游：对每个读入每个条件一个时程、所读水平列出的律，两个平衡的进程在场的形成相同、部分动作相同、其余遵从律，起始只在一个储量上不同时，在每一步凡不在储量下游（按到那一步形成的所读路线）的条件都相同；所以一个形成所读入的水平都不在下游时它的交换相同，经识而读的律所识者都不在下游时也是。所观察的储量是长度为零的路线。",
+      "en": "Registering lies within the downstream: for every law reading into each condition a schedule of listed levels, two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in a stock, are alike at each step at every condition not downstream of the stock by the readings formed by then; so a formation whose readings into a condition all lie off the downstream exchanges alike, and so does one reading through registration whose registrations all lie off it. The stock observed is the route of length zero.",
+      "declarations": [
+        "Becoming.apart_only_downstream",
+        "Becoming.exchange_alike_off_downstream",
+        "Becoming.ExchangeLaw.Through.alike_off_downstream"
+      ]
+    },
+    {
+      "zh": "量度的见证：一个形成从第 T 步起把储量的水平加到记录上，在记录显示至少 N 时从储量汲取。T 之前储量下游只有它自己，没有经过它的回路；在第 T 步从储量到记录的路线与储量 → 记录 → 汲取的回路形成；只在储量上不同的两个进程，记录到 T 为止相同，跨过第 T 步差出抬高，汲取回应记录。",
+      "en": "The measurement witness: from step T a formation adds the stock's level to a record, and draws from the stock while the record shows at least N. Before T only the stock lies downstream of it and no loop passes through it; at T the route stock → record and the loop stock → record → draw form; in two courses apart only on the stock the record is alike up to T and differs by the raise across the step from T, and the draw responds to the record.",
+      "declarations": [
+        "Becoming.Observation.Measure.law",
+        "Becoming.Observation.Measure.reads",
+        "Becoming.Observation.Measure.readsInto",
+        "Becoming.Observation.Measure.listed",
+        "Becoming.Observation.Measure.no_coupling_from_stock",
+        "Becoming.Observation.Measure.downstream_before",
+        "Becoming.Observation.Measure.no_loop_before",
+        "Becoming.Observation.Measure.route_at",
+        "Becoming.Observation.Measure.record_into_stock",
+        "Becoming.Observation.Measure.loop_at",
+        "Becoming.Observation.Measure.registers_after",
+        "Becoming.Observation.Measure.draw_responds"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。各定理所写者写在定理中：律读入每个条件的时程（ReadsInto），所读的水平列出；起始之差只在储量上，部分不给差（对所携带的量）；两个进程平衡、在场的形成相同、部分动作相同、其余遵从律，起始只在储量上不同（对进程）。不判定条件，不需条件有限。",
+      "en": "No axiom. What each theorem needs is written into it: the schedule a law reads into each condition (ReadsInto), the levels read being listed; the starting gap at the stock alone and none from the part (for the carried amount); two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in the stock (for the courses). No decision on conditions, and no finiteness of conditions, is used."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "在下游者必不同：一个形成可以读而不回应；见证给出实际不同的一例。",
+      "en": "That what lies downstream differs: a formation may read without responding; the witness gives one case where it does.",
+      "kind": "scope"
+    },
+    {
+      "zh": "律读什么、量度何时开始、记录是否及时被读；带误差的量度。",
+      "en": "Which schedule a law reads, when a measurement starts and whether the record is read in time; measurement with error.",
+      "kind": "scope"
+    },
+    {
+      "zh": "以强度陈述进程：由强度界多处不同的历史之差要逐处换历史，需判定条件；这里进程的定理用读的时程。",
+      "en": "Statements on courses by strengths: bounding a difference of histories apart in many places by strengths changes them one place at a time and needs a decision on conditions; the theorems on courses here use the schedule read.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T221156.459698Z）：Becoming.Observation 的 32 项声明（27 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §159；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T221156.459698Z): the 32 declarations of Becoming.Observation, 27 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 159; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "带误差的量度；他者之识作为路线；在下游者何时必不同（回应的下界）；独立审查；Ren 对读法的判断。",
+    "en": "Measurement with error; another's registration as a route; when what lies downstream must differ (lower bounds on responses); an independent review; Ren's judgment on the readings."
+  },
+  "correspondence": {
+    "zh": "P124 留下“一个形成怎样开始观察它所依赖的储量”；Ren 对 P124 的做法答“approve your approach, please continue”。本结果部分回答：一个形成只能在从所观察者出发的所读路线的末端观察；反方向（在下游者必识）不成立。这一必要性是一种无干扰性质（Goguen 与 Meseguer 1982）：不在储量下游者不受它影响，如信息流的依存图读法。读法（AI 的，待 Ren）：观察不是依赖之外的第二种关系（AI 的注：定理只表明观察不越出依赖，未表明观察就是依赖），直接观察是长度为零的路线，量度、模型或他者之识是更长的路线；一个形成开始观察，是一次读闭合一条路线；P124 第二项读法中断裂之前对储量水平的读就是这样一条路线。",
+    "en": "P124 left open how a formation comes to observe a stock it depends on; Ren answered P124's approach with “approve your approach, please continue”. This result answers in part: a formation can observe only at the end of a route of readings from what is observed; the converse, that what lies downstream registers, fails. That necessity is a noninterference property (Goguen and Meseguer 1982): what is not downstream of the stock is unaffected by it, as in the dependency-graph reading of information flow. Readings (the AI's, pending Ren): observation is not a second relation beside dependence (the AI's note: the theorem shows only that observation does not go beyond dependence, not that it is dependence), direct observation being the route of length zero and a measurement, a model or another's registration a longer route; a formation comes to observe by a reading that closes a route; the reading of the stock's level before the break in P124's second reading is such a route."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
+  "aliases": [
+    "observation is a route",
+    "观察是路线",
+    "a difference goes only downstream",
+    "差别只往下游去",
+    "registering is being downstream",
+    "所识即在下游",
+    "reading into each condition",
+    "读入每个条件",
+    "apart only downstream",
+    "只在下游不同",
+    "a route forms by closing",
+    "路线由闭合而形成",
+    "measurement witness",
+    "量度的见证"
+  ],
+  "dependencies": [
+    {
+      "id": "how-much-difference-arrives",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Conveyed、carried 与 carried_pos_iff：差被传到之处；RespondsWithin 与 exchangeGap：耦合强度。",
+        "en": "Reuses Conveyed, carried and carried_pos_iff: where a gap is conveyed; RespondsWithin and exchangeGap: coupling strength."
+      },
+      "interface": {
+        "output": {
+          "zh": "差被传到之处；所携带的量；耦合强度。",
+          "en": "Where a gap is conveyed; the carried amount; coupling strengths."
+        },
+        "input": {
+          "zh": "差只往下游去；所携带的量在别处为零；未读入的水平强度为零。",
+          "en": "A gap goes only downstream; the carried amount zero elsewhere; strength zero on levels unread."
+        },
+        "conditions": {
+          "zh": "起始之差只在储量上，部分不给差。",
+          "en": "The starting gap at the stock alone, none from the part."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean"
+      }
+    },
+    {
+      "id": "how-a-carried-difference-grows",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Couples、Coupled、OnLoop 与 Upstream：下游即路线。",
+        "en": "Reuses Couples, Coupled, OnLoop and Upstream: downstream is a route."
+      },
+      "interface": {
+        "output": {
+          "zh": "耦合、链、回路、上游。",
+          "en": "Couplings, chains, loops, upstream."
+        },
+        "input": {
+          "zh": "差所到之处在下游；所识者在下游。",
+          "en": "Where a difference arrives lies downstream; what is registered lies downstream."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean"
+      }
+    },
+    {
+      "id": "how-loops-form",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 strengthsBefore、couples_before_*、Closing.split 与 onLoop_of_closing：路线由闭合而形成。",
+        "en": "Reuses strengthsBefore, couples_before_*, Closing.split and onLoop_of_closing: a route forms by closing."
+      },
+      "interface": {
+        "output": {
+          "zh": "到某步形成的耦合；链的分裂；闭合的回路。",
+          "en": "Couplings formed by a step; splitting a chain; closing a loop."
+        },
+        "input": {
+          "zh": "路线由闭合而形成；量度见证中的回路。",
+          "en": "A route forms by closing; the loop in the measurement witness."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean"
+      }
+    },
+    {
+      "id": "loops-within-what-a-law-reads",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ReadsAt、Through.readsAt、held_while 与 same_step：读一个时程是读入每个条件的特例；见证的进程。",
+        "en": "Reuses ReadsAt, Through.readsAt, held_while and same_step: reading a schedule is the case of reading into each condition alike; the witness courses."
+      },
+      "interface": {
+        "output": {
+          "zh": "读一个时程的律；保持直到读。",
+          "en": "Laws reading a schedule; holding until read."
+        },
+        "input": {
+          "zh": "读入每个条件；经识而读者的所识在下游。",
+          "en": "Reading into each condition; what a law reading through registration registers lies downstream."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ExchangeLaw、Through、Follows 与 ActsAlike：律与两个进程的比较。",
+        "en": "Reuses ExchangeLaw, Through, Follows and ActsAlike: the law and the comparison of two courses."
+      },
+      "interface": {
+        "output": {
+          "zh": "交换之律；经识而读；进程遵从律。",
+          "en": "Laws of exchange; reading through registration; courses following a law."
+        },
+        "input": {
+          "zh": "只在下游不同。",
+          "en": "Apart only downstream."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "runaway-distance-unregistered",
+      "detail": {
+        "zh": "那里观察 obs 是给出的；这里观察是从所观察者出发的所读路线，直接观察是长度为零的路线。",
+        "en": "There observation, obs, is given; here it is a route of readings from what is observed, direct observation being the route of length zero."
+      }
+    },
+    {
+      "id": "what-a-cut-loses",
+      "detail": {
+        "zh": "复用 CouplesAt：在某步作用的耦合。",
+        "en": "Reuses CouplesAt: couplings acting at a step."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
+      "role": "proof",
+      "sha256": "969fcfd6a539cfa66c0030cd51428e47e8661dc4b80fdd7a756aee34d7b08527",
+      "declarations": [
+        "Becoming.Upstream.single",
+        "Becoming.Upstream.trans",
+        "Becoming.Upstream.snoc",
+        "Becoming.Upstream.before_mono",
+        "Becoming.conveyed_upstream",
+        "Becoming.carried_zero_off_downstream",
+        "Becoming.upstream_succ_iff",
+        "Becoming.route_forms_by_closing",
+        "Becoming.ExchangeLaw.ReadsInto",
+        "Becoming.readCouplings",
+        "Becoming.restrictInto",
+        "Becoming.ExchangeLaw.ReadsAt.readsInto",
+        "Becoming.ExchangeLaw.Through.readsInto",
+        "Becoming.ExchangeLaw.ReadsInto.respondsWithin_unread",
+        "Becoming.ExchangeLaw.ReadsInto.restrict",
+        "Becoming.couplesAt_readCouplings",
+        "Becoming.upstream_readCouplings",
+        "Becoming.apart_only_downstream",
+        "Becoming.exchange_alike_off_downstream",
+        "Becoming.ExchangeLaw.Through.alike_off_downstream",
+        "Becoming.Observation.Measure.law",
+        "Becoming.Observation.Measure.reads",
+        "Becoming.Observation.Measure.readsInto",
+        "Becoming.Observation.Measure.listed",
+        "Becoming.Observation.Measure.no_coupling_from_stock",
+        "Becoming.Observation.Measure.downstream_before",
+        "Becoming.Observation.Measure.no_loop_before",
+        "Becoming.Observation.Measure.route_at",
+        "Becoming.Observation.Measure.record_into_stock",
+        "Becoming.Observation.Measure.loop_at",
+        "Becoming.Observation.Measure.registers_after",
+        "Becoming.Observation.Measure.draw_responds"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "1f3181991b427b257a1beed82429abcf5a21c8806191b3db1af292116fe44f73",
+      "declarations": [
+        "Becoming.Conveyed",
+        "Becoming.carried",
+        "Becoming.carried_pos_iff",
+        "Becoming.ExchangeLaw.RespondsWithin",
+        "Becoming.ExchangeLaw.exchangeGap",
+        "Becoming.gap",
+        "Becoming.gap_eq_zero_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "role": "proof",
+      "sha256": "4849bcde2f3f6144c246f6511e6845961a9f59369188f90f19dab0a83101ab9d",
+      "declarations": [
+        "Becoming.Couples",
+        "Becoming.Coupled",
+        "Becoming.OnLoop",
+        "Becoming.Upstream",
+        "Becoming.Loops.beq_self"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+      "role": "proof",
+      "sha256": "c58488b3535bf76d1be18f54ac397d6e291af65e5e8397fac33d499a15fd4003",
+      "declarations": [
+        "Becoming.CouplesAt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+      "role": "proof",
+      "sha256": "e9bc3132e3359e9e513a638f7999bd8bf1c1b08ae382ef708a2c7682f8afbe17",
+      "declarations": [
+        "Becoming.strengthsBefore",
+        "Becoming.couples_before_iff",
+        "Becoming.couples_before_mono",
+        "Becoming.couples_before_of_couplesAt",
+        "Becoming.Upstream.lift",
+        "Becoming.Upstream.refl",
+        "Becoming.Closing.join",
+        "Becoming.Closing.join_below",
+        "Becoming.Closing.join_from",
+        "Becoming.Coupled.append",
+        "Becoming.Coupled.one",
+        "Becoming.Closing.split",
+        "Becoming.onLoop_of_closing",
+        "Becoming.Closing.ble_false_of_lt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
+      "role": "proof",
+      "sha256": "f90c6553a0f488086796b213ce410eff12e23e758342d104d4de1ad914de0103",
+      "declarations": [
+        "Becoming.ExchangeLaw.ReadsAt",
+        "Becoming.ExchangeLaw.Through.readsAt",
+        "Becoming.held_while",
+        "Becoming.Thresholds.same_step",
+        "Becoming.Thresholds.cond_pos",
+        "Becoming.Thresholds.pos_cond"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "df765a9bc5e9d68f59f50d2c3dec144e449b0357927ce59a2a9224ac6ca31316",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.Through",
+        "Becoming.Flow.Follows",
+        "Becoming.Flow.ActsAlike"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
+      "declarations": [
+        "Becoming.Web.Registers"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow",
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.taken",
+        "Becoming.Flow.given",
+        "Becoming.eq_zero_of_not_pos"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "role": "proof",
+      "sha256": "78d075634e3bd1a64a8f6769a22b5563f8748a1843c3cabfa07efe0790b52ba2",
+      "declarations": [
+        "Becoming.total_congr_on"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "declarations": [
+        "Becoming.Web"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
+      "declarations": [
+        "Becoming.le_succ_cases",
+        "Becoming.gap_of_lt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "bf81218edd5c67f967e663472ef1d01fe66866b82f2f9025363941bb2a9f17b9",
+      "declarations": [
+        "Becoming.total"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "0685508565b40cdc4977a79c77f3bb1ea6fcc587e75abe15f30ce09aa081edf2"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "41d7d279e20fd3105f7b4d2ff4efe68be76b0417255c3ca9a55ec8dd511f2bf5"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-16-thresholds-approach-approved.md",
+      "role": "provenance",
+      "sha256": "68b726ce9569489b6c2e56ffa8e0aa035e1f298cde669feb880e31a81ee9bf2c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T221156.459698Z/verification.json",
+      "role": "receipt",
+      "sha256": "9ffb33a5d8493c84922dc52489acb21cafbeb2e0ae30a7c954f3182ea55c65be",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "role": "receipt",
+      "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Observation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Propagation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Loops",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Remainder",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T221156.459698Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Closing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T221156.459698Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Thresholds",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T221156.459698Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Population",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T221156.459698Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T221156.459698Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-16：新增，按 Ren 同日“approve your approach, please continue”（P125）：一个形成怎样开始观察它所依赖的储量；研究 §159。",
+      "en": "16 October 2026: added, on Ren's “approve your approach, please continue” of the same day (P125): how a formation comes to observe a stock it depends on; study section 159."
+    },
+    {
+      "zh": "2026年10月16日，第十八次审查（R18）：标题与定律 3 说的是同一（“观察是路线”“所识即在下游”），apart_only_downstream 只证必要：不在下游者两边相同；反方向不成立，does_not_show 0 已承认（审查第 26 项，O5）。标题改为“观察不出下游”，陈述改为“只能经……识”，定律 3 改为“所识不出下游”，correspondence 中“本结果回答”改为部分回答并说明反方向不成立；读法“观察不是依赖之外的第二种关系”加注：定理只表明不越出依赖，这一读法的去留待 Ren（第 45 项）。correspondence 记 Goguen–Meseguer 1982（第 39 项，K7）。记录 id 不变。断言收窄，定理不变。",
+      "en": "16 October 2026, eighteenth review (R18): the title and law 3 claimed identity (“Observation is a route”, “Registering is being downstream”), while apart_only_downstream proves necessity only: what is not downstream stands alike; the converse fails, as does_not_show 0 concedes (review item 26, O5). The title now reads “Observation lies within the downstream”, the statement “can register it only through”, law 3 “Registering lies within the downstream”, and the correspondence answers in part and says the converse fails; the reading “observation is not a second relation beside dependence” gains the note that the theorem shows only that observation does not go beyond dependence, the reading itself being Ren's to keep, weaken or drop (item 45). The correspondence names Goguen–Meseguer 1982 (item 39, K7). The record id is unchanged. Claim narrowed; no theorem changed."
+    },
+    {
+      "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Observation.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Propagation.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Loops.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Remainder.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
+      "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Observation.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Propagation.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Loops.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Remainder.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    }
+  ],
+  "text_versions": []
+}

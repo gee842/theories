@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-14T11:40:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "以之为生与世系使关系项直接相关：它们是只有一类读法才提供的两种 related，在依存网的逐步读法上各自加在交互之上，living（活跃且不侵蚀）保持不变。",
     "en": "Living on and descent relate relata directly: they are two readings of related that only the one-kind reading supplies, each added to interaction on the stepwise reading of a web, with living (active and not undermining) kept."
@@ -190,8 +190,8 @@
     }
   ],
   "standard_boundaries": [
-    "no-evaluation",
-    "names-provisional"
+    "names-provisional",
+    "significance-related-not-asserted"
   ],
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z）：Becoming.Descent 的定理公理报告为空，检查器并核对核心纯净。作者反审见整合文档；第八次独立审查（见来源）接受其数学，所提更正见整合文档。",
@@ -835,6 +835,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Descent.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Roles.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））；Metaethics.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Descent.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A8 项：去掉标准边界 no-evaluation（“不含伦理谓词，不评价生起或消失”）：本记录的规律陈述Valuation.significant_iff（G0 在那里恰是种子连同 N_rel、N_std），含意义谓词；改用 significance-related-not-asserted（陈述意义与结构的关系而不断言意义或条件）。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A8: standard boundary no-evaluation (\"Contains no ethical predicate and evaluates neither arising nor ceasing\") removed: this record's laws state Valuation.significant_iff (G0 there is exactly a seed with N_rel and N_std), a significance predicate; replaced by significance-related-not-asserted (relating significance to structure without asserting significance or the condition). Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -844,6 +848,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/6b8d3b8cd5bed62d/living-on-and-descent.json",
+      "sha256": "6b8d3b8cd5bed62d13339dbf0f02831f7965f147d30c3fe51e2b986bed25a002",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

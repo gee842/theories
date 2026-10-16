@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "在水平路径上，每个主张都算作活的扩展恰是扩大能形成者；把“更好”读作扩大，C 对 living 的每种读法成立，不用公理。",
-    "en": "On level paths, an extension in which every claim counts as living is exactly a widening of what can form; with “better” read as widening, C holds for every reading of living, with no axiom."
+    "zh": "在水平路径上，每个主张都算作活的扩展恰是扩大能形成者（按定义：Extension 在此展开为 Widens）；把“更好”读作扩大，C 对 living 的每种读法成立，不用公理；扩大之为更好的根据开放。",
+    "en": "On level paths, an extension in which every claim counts as living is exactly a widening of what can form, by unfolding Extension there into Widens; with “better” read as widening, C holds for every reading of living, with no axiom; that widening is better is an open warrant."
   },
   "claim": {
     "zh": "在依存网的水平路径框架（Web.paths）上，主张是（形成，步），一条水平路径实现它恰当在该步接纳该形成。以每个主张都算作活，水平路径 l 对 l′ 的扩展（Extension：实现 l′ 实现的每个主张，并多实现一个）恰是 l 扩大 l′，即包含且超出它（Web.paths_extension_iff_widens）。对 living 的任何读法，扩展都是以每个主张为活的扩展，所以以“更好”读作扩大，C（每个扩展都更好）成立（Web.paths_comparison_widens），不用公理。以公理为条件，扩大就是保留且增加有意义者（Web.widens_iff_retains_adds，见 significance-retained-within-margin），所以水平路径上以公理推出的 C（Web.paths_g0_comparison，见 one-axiom-yields-g0）是它在意义上的读法。",
@@ -121,8 +121,8 @@
     }
   ],
   "limitations": {
-    "zh": "C 在这里是水平路径框架上的规律，“更好”读作扩大；在一般的框架上，或“更好”另作他读时，C 仍是前提。扩大是偏序，混合的部分不被定序，定序需要度量。把扩大称作“更好”的规范根据开放（章节 §8）：还原之后，公理的不变之步成为称生成的空间为好的内容。把扩大读作 Ren 的“更多的未来”与生生是 AI 的读法，依 Ren 的交托采用。不含伦理谓词。",
-    "en": "C is a law here on the frame of level paths, with “better” read as widening; on a general frame, or with “better” read otherwise, C remains a premise. Widening is a partial order: mixed parts are not ordered, and ordering them needs a measure. The normative warrant for calling widening “better” is open (chapter section 8): after the reduction, the axiom's step of invariance becomes the content of calling the generative space good. Reading widening as Ren's “more futures” and as 生生 is the AI's reading, adopted on Ren's delegation. No ethical predicate occurs."
+    "zh": "C 在这里按定义在水平路径框架上成立，“更好”读作扩大；在一般的框架上，或“更好”另作他读时，C 仍是前提。扩大是偏序，混合的部分不被定序，定序需要度量。把扩大称作“更好”的规范根据开放（章节 §8）：还原之后，公理的不变之步成为称生成的空间为好的内容。把扩大读作 Ren 的“更多的未来”与生生是 AI 的读法，依 Ren 的交托采用。不含伦理谓词。",
+    "en": "C holds here by definition on the frame of level paths, with “better” read as widening; on a general frame, or with “better” read otherwise, C remains a premise. Widening is a partial order: mixed parts are not ordered, and ordering them needs a measure. The normative warrant for calling widening “better” is open (chapter section 8): after the reduction, the axiom's step of invariance becomes the content of calling the generative space good. Reading widening as Ren's “more futures” and as 生生 is the AI's reading, adopted on Ren's delegation. No ethical predicate occurs."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Significance 的 37 项定理、Becoming.Regions 的 26 项定理与 Becoming.Metaethics 的 35 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §78；尚未经独立审查。",
@@ -181,7 +181,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a44092a2051f62ace004470e43838a9ae73887a81eb0fbbf3ab0468b6a811635",
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
       "declarations": []
     },
     {
@@ -401,6 +401,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Significance.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Significance.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A12 项：“C 是规律”改为按定义成立：Web.paths_extension_iff_widens 与 paths_comparison_widens 在“更好”读作扩大时由展开 Extension 而得（两行），C 的规范内容移到把扩大称作更好，其根据开放。schema 1，无 text_versions；原文见 git。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A12: \"C is a law\" becomes \"holds by definition\": Web.paths_extension_iff_widens and paths_comparison_widens follow by unfolding Extension once \"better\" is read as widening (two lines), so C's normative content moves into calling widening better, whose warrant is open. Schema 1, no text_versions; earlier text in git."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ]
 }

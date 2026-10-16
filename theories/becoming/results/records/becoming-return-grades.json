@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T10:10:26+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "消耗恰是不再回程，恢复可以无界地变慢。",
     "en": "Consumption is exactly a dependence that never returns, and recovery can slow without bound."
@@ -129,6 +129,12 @@
       "zh": "回程等级不涉及汲取的数量。",
       "en": "The grades involve no amounts of what is drawn.",
       "kind": "scope"
+    },
+    {
+      "zh": "消耗的刻画超出定义：consumed_iff 改写 Consumed 的定义（某个依存从某步起一直低于所需，恰是此后永不再满足）；内容在等级的次序与见证 Slowing、Dip。",
+      "en": "That the characterization of consumption goes beyond its definition: consumed_iff restates Consumed (below its need from some step on is never met again); the content is in the order of the grades and the witnesses Slowing and Dip.",
+      "kind": "scope",
+      "witness": "Becoming.Web.consumed_iff"
     }
   ],
   "counterexamples": [
@@ -795,6 +801,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Return.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Return.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A12 项：新增一项未表明：Web.consumed_iff 是 Consumed 定义的改写（records-a-l-22）。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A12: a does_not_show item added: Web.consumed_iff restates the definition of Consumed (records-a-l-22). Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -804,6 +814,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/68f0847054c267c1/becoming-return-grades.json",
+      "sha256": "68f0847054c267c10734edc90f971106e701038779d0cb52716c616d20aa9e1e",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

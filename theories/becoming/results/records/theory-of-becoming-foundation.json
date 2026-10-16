@@ -8,7 +8,7 @@
   "kind": "target",
   "status": "open",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T21:40:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "en": "Target: establish, with zero added substantive axioms, the deductive necessity of the Theory of Becoming as a whole; explain generativity within its manifold, with persistence, transformation, degeneration, dissolution, life, evolution and evaluation within the same relational unfolding.",
     "zh": "目标：无需附加实质公理，建立Theory of Becoming整体的演绎必然性；说明其manifold中的生成性，并在同一关系展开中说明维持、转化、退化、消解、生命、演化与评价。"
@@ -78,6 +78,34 @@
       "detail": {
         "zh": "生起与止息、依存的形成与消解、开始与不再作为条件而在，是同一种变化（开始成立与不再成立）的三种读法；在活动可判定的有限家族中，开始成立与不再成立一同复现，不加关于展开的前提。",
         "en": "Arising and ceasing, forming and dissolving, and coming to stand and ceasing to stand are one change, coming to be and ceasing to be, read three ways; in a finite family whose determinations are decided, coming to be and ceasing to be recur together, with no premise about the unfolding."
+      }
+    },
+    {
+      "id": "premises-read-off-the-exchange",
+      "detail": {
+        "zh": "前提从交换读出：计入其余的世界平衡。",
+        "en": "The premises read off the exchange: the world with the rest counted balances."
+      }
+    },
+    {
+      "id": "unity-of-readings",
+      "detail": {
+        "zh": "语境中的读法组成一个世界，不依语境的描述恰在它们粘合处存在。",
+        "en": "Readings in context make one world; context-free description exists just where they glue."
+      }
+    },
+    {
+      "id": "worlds-are-runs",
+      "detail": {
+        "zh": "世界恰是其所显之律的运行；对应多由展开定义成立。",
+        "en": "A world is exactly a run of the law it shows; the correspondence holds largely by unfolding definitions."
+      }
+    },
+    {
+      "id": "one-axiom-yields-g0",
+      "detail": {
+        "zh": "在“一切皆有意义”的条件之下 G0 得出；理论不断言这一条件。",
+        "en": "Under the condition that everything is significant, G0 follows; the theory does not assert the condition."
       }
     }
   ],
@@ -150,6 +178,26 @@
       "en": "Spine evidence: each audit row cites the spine’s laws of the whole, its parts carved by premises (seven shown met by some worlds and not others, eight shown independent) and countermodels, locating the remainder without discharging it.",
       "zh": "脊柱证据：完成审计各行引用Becoming脊柱的整体规律、前提划出的部分（七个已示为有满足与不满足它的世界，八个已示为彼此独立）与反模型；这定位剩余，不完成它。",
       "source": "theories/becoming/chapters/BECOMING-FOUNDATION.md#5-completion-audit-and-next-central-inference"
+    },
+    {
+      "zh": "G0 不是采用的公理：在第一部分，它是用到它的规律的条件，其定义与刻画保留；正面相关的读法留给 Ren。",
+      "en": "G0 is no adopted axiom: in Part I it is a condition of the laws that use it, with its definition and characterizations kept; the reading of positive relevance stays Ren's.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#67-折叠-g0p51"
+    },
+    {
+      "zh": "从关系开始：规律只用水平陈述，前提从交换读出（premises-read-off-the-exchange），语境中的读法组成一个世界（unity-of-readings）；表示的承诺仍在。",
+      "en": "Relation first: laws stated on the levels alone, the premises read off the exchange (premises-read-off-the-exchange) and readings in context forming one world (unity-of-readings); the representation's commitments remain.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#125-从关系开始的重建只用水平的规律从交换读出的前提语境中的读法becomingnoveltybecomingreadingbecomingreadings"
+    },
+    {
+      "zh": "第二部分折叠：理论不断言任何公理；“一切皆有意义”只作为一个条件小节的条件，G0 在其下得出；不变的一步仍待 Ren 陈述。",
+      "en": "Part II folded: the theory asserts no axiom; that everything is significant is only the condition of one conditional section, under which G0 follows; the step of invariance remains for Ren to state.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#162-第二部分折叠进第一部分一个条件小节p128"
+    },
+    {
+      "zh": "一个根：每个世界是其网与交换所显之律的运行（worlds-are-runs，多由展开定义），前沿规律陈述在两种作为的世界上；两族仍以对应相遇，落地时 1,019／7,214 条定理独立。",
+      "en": "One root: every world is a run of the law its webs and exchanges show (worlds-are-runs, largely by definition), frontier laws stated on two-act worlds; the families meet by correspondence, 1,019 of 7,214 theorems apart at landing.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130"
     }
   ],
   "validation_scope": {
@@ -191,6 +239,12 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md",
       "role": "review",
       "sha256": "71f1ff8e0ec97b4ebf3723f74beeb63408596bdf29909652ff12f630fe5866c6"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "86b834e3e839075a784596792b3e12b060831aaed7f68e618d9e51f95cd3d0e4",
+      "declarations": []
     }
   ],
   "proof_bindings": [],
@@ -234,6 +288,10 @@
     {
       "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2. The claim becomes the statement, prefixed “Target:”; the English “without added substantive axioms” is written “with zero added substantive axioms” so that the statement opens positively, and the Chinese is unchanged. The limitations become two does-not-show items and one not-required item; the next step keeps its first sentence and the spine’s remainder, while its account of the spine becomes a progress line and its last sentence a does-not-show item. The evidence becomes six progress lines with anchored study links and one paragraph; its labels (Section 19, P19–P22) are kept here and in the snapshot. No claim, premise, status, dependency, reference or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/theory-of-becoming-foundation.md); the exact earlier record is text_versions[0].",
       "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2。原主张成为陈述，前加“目标：”；英文“without added substantive axioms”改写为同义的“with zero added substantive axioms”，使陈述以正面表述开头，中文原样保留。限制改为两项“未表明”和一项“不要求”；下一步保留首句及脊柱的剩余，其中关于脊柱的叙述成为一行“已接通”，末句成为一项“未表明”。证据改为六行带锚点研究链接的“已接通”与一段证据；其标记（第19节、P19–P22）保留于本沿革与快照。主张、前提、状态、依赖、引用及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/theory-of-becoming-foundation.md)；迁移前的完整记录为 text_versions[0]。"
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6、A18 项：目标记录自 P30 起没有新的已接通项（审查 records-mz-7、target-1）：新增四行已接通，链接研究第67节（P51，G0 折叠）、第125节（P107，从关系开始的重建）、第162节（P128，第二部分折叠为条件）与第165节（P130，一个根；写出连通测量 1,019／7,214 条独立），加研究日志为整合引用及四条相关。状态、目标措辞与下一步不变（由 Ren 定）。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items B6, A18: the target record had no new progress since P30 (review records-mz-7, target-1): four progress lines are added, linking study section 67 (P51, G0 folded), 125 (P107, the relation-first re-founding), 162 (P128, Part II folded into a condition) and 165 (P130, one root, with the connectivity measurement of 1,019 of 7,214 theorems apart), the study log is added as an integration reference, and four related entries are added. Status, target wording and next step are unchanged (Ren's). Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -243,6 +301,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/a232c42bba33f89e/theory-of-becoming-foundation.json",
+      "sha256": "a232c42bba33f89e8bc7230786c6edcd4058d6b5ddd86498c298dc37a2e2674f",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

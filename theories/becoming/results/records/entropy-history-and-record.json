@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "交换的历史不加前提从不缩减；无损交换可不息而复返；平衡与第一律之下，箭头使有限家族归于静止；在守恒量中逐次记录交换，恰好分解最小损失。",
-    "en": "Premise-free, the history of exchanges is monotone; lossless exchange can continue and return; under balance and the first law an arrow brings a finite family to rest; and recording each exchange within the conserved amount decomposes the least loss exactly."
+    "zh": "交换的历史不加前提从不缩减；无损交换可不息而复返；平衡与第一律之下，箭头使有限家族的变化不复现；在守恒量中逐次记录交换，恰好分解最小损失。",
+    "en": "Premise-free, the history of exchanges is monotone; lossless exchange can continue and return; under balance and the first law an arrow leaves a finite family no change at arbitrarily late steps; and recording each exchange within the conserved amount decomposes the least loss exactly."
   },
   "laws": [
     {
@@ -112,8 +112,8 @@
       ]
     },
     {
-      "zh": "从不复返则变化的步数不多于这些构型而归于静止，所以不止的变化复返；耗散之下家族从不复返。",
-      "en": "Never revisiting, it changes at most that many times and rests, so change without end revisits, and under dissipation a family never revisits.",
+      "zh": "从不复返则变化的步数不多于这些构型，变化不复现，所以不止的变化复返；耗散之下家族从不复返。",
+      "en": "Never revisiting, it changes at most that many times, so its change does not recur, and change without end revisits, and under dissipation a family never revisits.",
       "declarations": [
         "Becoming.Web.Revisits",
         "Becoming.Flow.Balances.changes_within",
@@ -125,8 +125,8 @@
       ]
     },
     {
-      "zh": "箭头：构型的量从不下降、每次变化都上升就排除复返，所以第一律之下箭头带来静止，变化继续时没有箭头。",
-      "en": "The arrow: a quantity of the configuration that never falls and rises at every change rules out revisiting, so under the first law an arrow brings rest and while change goes on there is none.",
+      "zh": "箭头：构型的量从不下降、每次变化都上升就排除复返，所以第一律之下箭头使变化不复现，变化继续时没有箭头。",
+      "en": "The arrow: a quantity of the configuration that never falls and rises at every change rules out revisiting, so under the first law an arrow leaves change not recurring and while change goes on there is none.",
       "declarations": [
         "Becoming.Web.Arrow",
         "Becoming.Web.never_revisits_of_arrow",
@@ -779,7 +779,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01",
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
       "declarations": []
     },
     {
@@ -992,6 +992,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Openness.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Openness.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A1 项：“归于静止”“带来静止”改为“变化不复现”：Flow.Balances.rests_of_never_revisits 与 rests_of_arrow 的结论是 ¬∀N, ∃t≥N, Changes（复现的否定），不是某步之后不再变化。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: \"brings to rest\" and \"rests\" become \"change does not recur\": Flow.Balances.rests_of_never_revisits and rests_of_arrow conclude ¬∀N, ∃t≥N, Changes (a negated recurrence), not a step after which nothing changes. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -1001,6 +1008,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/32499ab1ffc8c7b4/entropy-history-and-record.json",
+      "sha256": "32499ab1ffc8c7b4d709095325fd6698b681b4f040468a960f9b982983318782",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

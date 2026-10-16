@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "诸识恰在语境相交处一致时粘合，不依语境的主张的框架恰在处处粘合时合；有的世界在任何配置都不粘合（Specker、Mermin–Peres，量子比特实现）。部分失去整体有两种方式：不给回整体，或没有整体。",
-    "en": "Registrations glue exactly where contexts agree where they meet, and a frame of context-free claims fits exactly where they glue everywhere; some worlds glue nowhere (Specker, Mermin–Peres, realized by qubits). Parts fail a whole in two ways: they do not give it back, or there is none."
+    "zh": "诸识恰在语境相交处一致时粘合，不依语境的主张的框架恰在处处粘合时合；有的世界在任何配置都不粘合（Specker 的盒子；两量子比特的 Mermin–Peres 方阵）。部分失去整体有两种方式：不给回整体，或没有整体。",
+    "en": "Registrations glue exactly where contexts agree where they meet, and a frame of context-free claims fits exactly where they glue everywhere; some worlds glue nowhere (Specker's boxes; the two-qubit Mermin–Peres square). Parts fail a whole in two ways: they do not give it back, or there is none."
   },
   "claim": {
     "zh": "在语境中被识的主张（Contextual S K C V）：within k c 说语境 k 识主张 c，shows s k c 是 k 在配置 s 处对 c 所识的值。在 s 处诸识粘合（Contextual.Glues），指有 v : C → V 与每个语境在其所识的每个主张上一致；它推出识同一主张的任意两个语境一致（Contextual.Glues.agree），每个主张有识它的语境时两者等价（Contextual.glues_iff_agree）。连同语境读，每次识是框架的主张（Contextual.indexed），以语境为索引的框架合于每次识（Contextual.indexed_fits）；不依语境的主张的框架合（Contextual.FitsFree），恰当诸识在每个配置粘合（Contextual.fitsFree_iff）。语境能显示什么只取决于它所识的主张（Local），没有不依语境的读法落在每个语境的可能性之内（NoGlobal）时，没有尊重可能性的配置粘合（Contextual.not_glues），只要一个配置尊重它们，就没有不依语境的主张的框架合（Contextual.no_free_frame）。整体 W 在语境中允许的（restrict）是局部的（restrict_local），W 在其部分粘合成者（Glued）之内（glued_of_whole）；部分给回整体记作 PartsDetermine；可能性非空且没有不依语境的读法时，它们不是任何整体的部分（no_whole）。Specker 的三个盒子与三次打开、打开的两个中恰有一个有宝石：可能性局部（Specker.local_），没有打开强制任何盒子（Specker.unforced），没有放置合于全部（Specker.noGlobal），每次打开都在第一个盒子显示宝石的世界尊重它们（Specker.respects）而不粘合（Specker.not_glues），它们不是任何整体的部分（Specker.no_whole）。Mermin–Peres 方阵：九格三行三列，每行与前两列的奇偶为偶，第三列为奇：可能性局部（Square.local_），没有线强制任何格（Square.unforced），没有赋值合于全部六条线（Square.nine、Square.noGlobal），它们不是任何整体的部分（Square.no_whole）。量子实现（Becoming.Quantum，P72q）：两个量子比特上的九个可观测量作为整数矩阵，每个平方为 I（obs_sq），每条线的三个两两对易（line_commute），线的乘积在第三列为 −I、否则为 I（line_product）；非零向量在一条线上共同显示的值有该线的奇偶（line_parity），是该线的一个可能（shows_support），每个可能都由一个明确的整数向量显示（line_realized、support_shown）；所以没有对九格的赋值在每条线上被量子态共同显示（no_context_free_values）。不用 Lean 公理（生成的单射引理 injEq 除外，没有源声明使用它们）。",
@@ -271,7 +271,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01",
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
       "declarations": []
     },
     {
@@ -505,6 +505,13 @@
     {
       "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.ParityReadings 把方阵的量子登记陈述在沿运行的读法世界与任一过程的框架上：登记在一个配置为量子的（Square.QuantumAt：每条线识其三格，其所示由一个非零态矢量共同显出）时不相粘（QuantumAt.not_glues），读法世界在该步不无语境（QuantumAt.not_freeAt），任一过程的无语境主张框架都不适合（QuantumAt.no_free_frame）；量子登记在每个配置都有（Square.quantum、quantum_at），所以沿每个过程的每个运行，量子读法是没有无语境描述适合的一个世界（Square.quantum_readings），经 Square.no_context_free_values 与 Contextual.fitsFree_iff 证明。作为引用加入 9 项声明，绑定回执 20261016T124157.989030Z；研究 §165。断言、局限与状态不变。",
       "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.ParityReadings states the square's quantum registrations on the world of readings along a run and on the frames of any process: a registration quantum at a configuration (Square.QuantumAt: each line registers its three cells, and what it shows on them is shown jointly by a nonzero state vector) does not glue (QuantumAt.not_glues), the world of readings is not context-free at that step (QuantumAt.not_freeAt), and no frame of context-free claims of any process fits it (QuantumAt.no_free_frame); quantum registrations exist at every configuration (Square.quantum, quantum_at), so along every run of every process the quantum readings are one world that no context-free description fits (Square.quantum_readings), proved through Square.no_context_free_values and Contextual.fitsFree_iff. 9 declarations added as a reference, bound to receipt 20261016T124157.989030Z; study section 165. Claim, limitations and status unchanged."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 records-a-l-13 项：陈述原把“量子比特实现”同时挂在 Specker 与 Mermin–Peres 上；只有 Mermin–Peres 方阵由两量子比特可观测量实现（Square.no_context_free_values，整数矩阵），改写。schema 1，无 text_versions；原文见 git。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-a-l-13: the statement attached \"realized by qubits\" to both Specker and Mermin–Peres; only the Mermin–Peres square is realized by two-qubit observables (Square.no_context_free_values, integer matrices); reworded. Schema 1, no text_versions; earlier text in git."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ]
 }

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "对每个过程：有限历史可否证的读法，在每个附着于它的运行上于双重否定下成立；其外有附着运行的读法不可否证，其内有附着于补集的运行的读法不可证实；由前缀测试构成的读法皆可否证，恰是 Markov 原则。",
     "en": "For every process: a refutable reading holds, up to double negation, at every run adhering to it; one with an adhering run outside it is not refutable, and one with a run inside adhering to its complement is not verifiable; refutability of every reading of prefix tests is exactly Markov's principle."
@@ -124,7 +124,7 @@
   ],
   "counterexamples": [],
   "standard_boundaries": [
-    "no-ethical-premise",
+    "no-ethical-premise-core-axiom-free",
     "no-evaluation",
     "discrete-steps",
     "formal-not-empirical",
@@ -276,7 +276,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ebce5b7564e0ad0a51a4f5537910ba722550465a8a9e1a4081aaa92199a5d847"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -403,7 +403,23 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Horizon.lean（P129：新增 Adheres.closed、refutable_adheres_iff、refutable_adheres_of_em；说明改正（不可否证，从不发生不可证实），署名 Alpern–Schneider、Kelly；已有陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Horizon.lean (P129: Adheres.closed, refutable_adheres_iff, refutable_adheres_of_em added; docstrings corrected (not refutable; never occurring not verifiable), Alpern–Schneider and Kelly credited; existing statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A7 项：标准边界 no-ethical-premise（“不用伦理前提，也不用 Lean 公理”）改为 no-ethical-premise-core-axiom-free：所引外围对应声明的回执列出 propext、Quot.sound（及 Classical.choice），不满足该键的 cite_when；核心声明的公理报告仍为空。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A7: standard boundary no-ethical-premise (\"No ethical premise and no Lean axiom is used\") replaced by no-ethical-premise-core-axiom-free: the receipts of the cited periphery correspondence declarations list propext, Quot.sound (and Classical.choice), which fails that key's cite_when; the core declarations still have empty axiom reports. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
-  "text_versions": []
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/152cd73b20e6e4b4/what-a-finite-history-refutes.json",
+      "sha256": "152cd73b20e6e4b4741cb5db8cb4f5d435dc814f475ccf75471d370146c8a63e",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
 }

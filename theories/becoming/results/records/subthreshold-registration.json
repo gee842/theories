@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "交换随识时，形成依存而不观察的储量上的差别保持到两网的支持分岔；观察储量解除它，他者回应储量本身时则不然。",
     "en": "Where the exchange follows registration, a difference in an unobserved stock a formation depends on stays until the two webs' support diverges; observing the stock lifts it, and others responding to the stock itself break it."
@@ -153,6 +153,34 @@
         "zh": "那里有限的前缀不决定更新还是消耗；这里是阈值处的识。",
         "en": "There no finite prefix decides renewal or consumption; here registration at a threshold."
       }
+    },
+    {
+      "id": "runaway-distance-unregistered",
+      "detail": {
+        "zh": "在断点之前，没有已识的量约束到断点的距离；建立在本结果的 subthreshold_alike_always 上。",
+        "en": "Before the break no registered quantity bounds the distance to it; built on this result's subthreshold_alike_always."
+      }
+    },
+    {
+      "id": "how-loops-form",
+      "detail": {
+        "zh": "回路由闭合而形成。",
+        "en": "Loops form by closing."
+      }
+    },
+    {
+      "id": "loops-within-what-a-law-reads",
+      "detail": {
+        "zh": "律所读之内的回路，回路在断点处形成。",
+        "en": "Loops within what a law reads, a loop forming at the break."
+      }
+    },
+    {
+      "id": "where-novelty-gain-comes-from",
+      "detail": {
+        "zh": "增益从何而来。",
+        "en": "Where gain comes from."
+      }
     }
   ],
   "counterexamples": [
@@ -172,8 +200,8 @@
     }
   ],
   "limitations": {
-    "zh": "形成观察支持之外的任何东西、量度自身的立着或想要避免失控都不推出；交换随识是给出的假设，哪些展开满足它是经验问题；回路、增益与失控没有定义，失控的读法是启发；观察是精确的，带误差的量度（校准）没有建模；读法是 AI 的，经审查收窄，依 Ren 的交托采用；不含伦理谓词。",
-    "en": "That a formation observes anything beyond its support, gauges its own standing or wants to avoid a runaway is not derived; the exchange following registration is a supplied hypothesis, and which unfoldings meet it is empirical; loops, gain and runaway are not defined, and the runaway reading is a heuristic; observation is exact, and measurement with error (calibration) is not modelled; the readings are the AI's, narrowed by the review, adopted on Ren's delegation; contains no ethical predicate."
+    "zh": "形成观察支持之外的任何东西、量度自身的立着或想要避免失控都不推出；交换随识是给出的假设，哪些展开满足它是经验问题；回路、增益与失控在 how-loops-form、where-novelty-gain-comes-from 与 runaway-distance-unregistered 中，不在此；观察是精确的，带误差的量度（校准）没有建模；读法是 AI 的，经审查收窄，依 Ren 的交托采用；不含伦理谓词。",
+    "en": "That a formation observes anything beyond its support, gauges its own standing or wants to avoid a runaway is not derived; the exchange following registration is a supplied hypothesis, and which unfoldings meet it is empirical; loops, gain and runaway are treated in how-loops-form, where-novelty-gain-comes-from and runaway-distance-unregistered, not here; observation is exact, and measurement with error (calibration) is not modelled; the readings are the AI's, narrowed by the review, adopted on Ren's delegation; contains no ethical predicate."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Testing 的 92 项定理全部空依赖，其中含Flow.difference_kept、alike_while_supported、difference_changes_after_divergence、subthreshold_alike、SupportDrawn.difference_waits 与 Attracting.higher_breaks_first；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §70.3；整合之前经第十七次独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其处理见 §70.2；处理之后的文本尚未经独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
@@ -270,7 +298,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01",
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
       "declarations": []
     },
     {
@@ -348,8 +376,8 @@
     }
   ],
   "next_delta": {
-    "zh": "定义回路（水平影响取用、取用又影响水平的闭合）并把失控陈述为定理；由动力学给出交换随识，而不是假设它；带误差的观察（校准）。",
-    "en": "Define a loop (levels affecting taking, and taking the levels) and state a runaway as a theorem; give the exchange following registration from the dynamics rather than assume it; observation with error (calibration)."
+    "zh": "由动力学给出交换随识，而不是假设它；带误差的观察（校准）。",
+    "en": "Give the exchange following registration from the dynamics rather than assume it; observation with error (calibration)."
   },
   "history": [
     {
@@ -531,6 +559,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Testing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Testing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 B6 项：限制原说回路、增益与失控“没有定义”，下一步原要定义回路并把失控陈述为定理；Becoming.Runaway（break_not_bounded，用本结果的 subthreshold_alike_always）、Gain、Loops（OnLoop、carried_runaway）与 Thresholds 已落地，限制改为指向相应记录，下一步删去该项，并加四条相关。schema 1，无 text_versions；原文见 git。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: the limitations said loops, gain and runaway \"are not defined\" and the next step asked to define a loop and state a runaway as a theorem; Becoming.Runaway (break_not_bounded, built on this result's subthreshold_alike_always), Gain, Loops (OnLoop, carried_runaway) and Thresholds have landed, so the limitations point to their records, the next step drops the item, and four related entries are added. Schema 1, no text_versions; earlier text in git."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ]
 }

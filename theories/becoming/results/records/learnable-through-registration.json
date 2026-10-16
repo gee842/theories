@@ -411,7 +411,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "787bfafbcb52f214ba11436a4e43874c850e8c680fb9bb49fbe34a1bf53b6d01"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md",
@@ -593,6 +593,9 @@
     {
       "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.LearnableRuns 把本记录的律陈述在确定之律的运行上（运行的记录是其轨道的记录，经 Branching.law_run_state 与 Law.alike_iff_sameFuture），经本记录的定理证明；新增一条律及其 13 项声明，绑定回执 20261016T124157.989030Z；研究 §165，记录 worlds-are-runs。断言与状态不变。",
       "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.LearnableRuns states this record's laws along the runs of a determined law (a run's record is its orbit's, through Branching.law_run_state and Law.alike_iff_sameFuture), proved through this record's theorems; one law with its 13 declarations added, bound to receipt 20261016T124157.989030Z; study section 165, record worlds-are-runs. Claim and status unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": []

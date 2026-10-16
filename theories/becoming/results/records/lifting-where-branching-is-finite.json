@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "对每个有限分支的过程：所达深度已定；有每个长度进程的配置不能没有同样的后继；有之由 EitherThroughout 给出，对每个这样的过程要求时恰是此原则；选取给出运行。",
     "en": "For every finitely branching process: the depth reached is decided; a configuration with courses of every length cannot fail to have a successor with them; it has one given EitherThroughout, exactly that principle asked of every such process; and a selection gives a run."
@@ -142,7 +142,7 @@
   ],
   "counterexamples": [],
   "standard_boundaries": [
-    "no-ethical-premise",
+    "no-ethical-premise-core-axiom-free",
     "no-evaluation",
     "discrete-steps",
     "formal-not-empirical",
@@ -150,8 +150,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Lasting 共 89 项定理，新增 29 项声明（20 项定理）公理报告为空。外围实例 FiniteBranchingCorrespondence 由其检查器实查（Lean 4.30.0-rc2；四项对应公理报告为空，其余六项只用标准公理），FiniteBranching 经实例回执绑定，其字节与完成包回执相合。作者反审见研究 §146；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: Becoming.Lasting has 89 theorems, and the 29 new declarations (20 theorems) have empty axiom reports. The periphery instance FiniteBranchingCorrespondence is checked by its own checker (Lean 4.30.0-rc2; four correspondences with empty axiom reports, the other six with standard axioms only); FiniteBranching is bound through the instance receipt, its bytes matching the completion package receipt. Author counterreview in study section 146; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Lasting 共 89 项定理，新增 29 项声明（20 项定理）公理报告为空。外围实例 FiniteBranchingCorrespondence 由其检查器实查（Lean 4.30.0-rc2；四项对应公理报告为空，其余六项只用标准公理），FiniteBranching 经实例回执绑定，其字节与完成包回执相合。作者反审见研究 §146；经第十八次审查（AI，只读，未重建 Lean）审阅，其更正已处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: Becoming.Lasting has 89 theorems, and the 29 new declarations (20 theorems) have empty axiom reports. The periphery instance FiniteBranchingCorrespondence is checked by its own checker (Lean 4.30.0-rc2; four correspondences with empty axiom reports, the other six with standard axioms only); FiniteBranching is bound through the instance receipt, its bytes matching the completion package receipt. Author counterreview in study section 146; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
     "zh": "独立审查。",
@@ -322,7 +322,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ebce5b7564e0ad0a51a4f5537910ba722550465a8a9e1a4081aaa92199a5d847"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -460,7 +460,23 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Lasting.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Likeness.lean（P129：新增 LLPO（标准形式）、LLPOForDecided 与 EitherThroughout ⇔ LLPOForDecided；同名异义与弱 König ⇔ LLPO 的说明；已有陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Lasting.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Likeness.lean (P129: LLPO (standard form), LLPOForDecided and EitherThroughout ⇔ LLPOForDecided added; homonym and weak König ⇔ LLPO notes; existing statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A7、B6 项：标准边界 no-ethical-premise（“不用伦理前提，也不用 Lean 公理”）改为 no-ethical-premise-core-axiom-free：所引外围对应声明的回执列出 propext、Quot.sound（及 Classical.choice），不满足该键的 cite_when；核心声明的公理报告仍为空；验证范围原说“未经独立审查”，而第十八次审查（R18）已审阅并更正本记录；R18 是 AI 的只读审查，未重建 Lean，所以写作“经第十八次审查（AI，只读）审阅”，不写“独立”。下一步中的独立审查保留：R18 是否算作所要求的审查由 Ren 定。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A7, B6: standard boundary no-ethical-premise (\"No ethical premise and no Lean axiom is used\") replaced by no-ethical-premise-core-axiom-free: the receipts of the cited periphery correspondence declarations list propext, Quot.sound (and Classical.choice), which fails that key's cite_when; the core declarations still have empty axiom reports; the validation scope said \"not independently reviewed\", while the eighteenth review (R18) read and corrected this record; R18 is an AI read-only review with no Lean rebuild, so it now says \"reviewed by the eighteenth review (AI, read-only)\", not \"independently\". The independent review in the next step stays: whether R18 counts as the review asked for is Ren's decision. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
-  "text_versions": []
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/290d76e4f87b30ed/lifting-where-branching-is-finite.json",
+      "sha256": "290d76e4f87b30ed3882a1bd52061e487796262d07dda1a834a0d7c5c9c7f3c0",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
 }

@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "地图给出世界的哪些前提推出哪些，其余八个相对于彼此独立；一个世界满足全部，另一个世界中八个都起约束，满足它们的有限世界归于静止。",
-    "en": "The map shows which premises of worlds follow from which, and that the remaining eight are independent relative to one another; one world meets them all, in another each of the eight binds, and a finite world meeting them comes to rest."
+    "zh": "地图给出世界的哪些前提推出哪些，其余八个相对于彼此独立；一个世界满足全部，另一个世界中八个都起约束，满足它们的有限世界归于静止不能被否证。",
+    "en": "The map shows which premises of worlds follow from which, and that the remaining eight are independent relative to one another; one world meets them all, in another each of the eight binds, and a finite world meeting them cannot be refuted to come to rest."
   },
   "laws": [
     {
@@ -157,8 +157,8 @@
       ]
     },
     {
-      "zh": "所以普查起约束只在于世界不有限：在静止定理之下归于静止的每个世界中，曾经活跃或立着的都不是无界多（World.rest_few，见 continued-change-needs-openness）。",
-      "en": "So a census binds only in that the world is not finite: in every world that comes to rest under the rest theorem, not unboundedly many relata are ever active or stand (World.rest_few, in continued-change-needs-openness).",
+      "zh": "所以普查起约束只在于世界不有限：在满足静止定理条件的每个世界中，曾经活跃或立着的都不是无界多（World.rest_few，见 continued-change-needs-openness）。",
+      "en": "So a census binds only in that the world is not finite: in every world meeting the rest theorem's conditions, not unboundedly many relata are ever active or stand (World.rest_few, in continued-change-needs-openness).",
       "declarations": []
     },
     {
@@ -994,6 +994,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Dissipation.lean（P129：新增连接定理 Sequences.recurs_iff；已有陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Dissipation.lean (P129: linking theorem Sequences.recurs_iff added; existing statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A1 项：陈述原说满足前提的有限世界“归于静止”；World.premised_rests_unrefuted 只证 ¬¬∃N, RestsFrom N，改为“归于静止不能被否证”；规律 16 原说“归于静止的每个世界”，World.rest_few 的假设是静止定理的条件，改为“满足静止定理条件的每个世界”。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: the statement said a finite world meeting the premises \"comes to rest\"; World.premised_rests_unrefuted proves only ¬¬∃N, RestsFrom N, so it now says such a world \"cannot be refuted to come to rest\". Law 16 said \"every world that comes to rest under the rest theorem\", while World.rest_few assumes the rest theorem's conditions; it now says so. Earlier text in text_versions."
     }
   ],
   "text_versions": [
@@ -1003,6 +1007,14 @@
       "note": {
         "zh": "迁移前的记录原始字节（schema 1）。",
         "en": "Exact record bytes before the migration (schema 1)."
+      }
+    },
+    {
+      "path": "_process/architecture/history/46e4aa11df6a69fb/map-of-premises.json",
+      "sha256": "46e4aa11df6a69fbae1b72f39d9d261f2b9076fa6cc10c9f54cb033087772c02",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
       }
     }
   ]

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-15T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "在整体之内形成的一个动作耦合部分与其余：它是部分的恰当它是部分的策略，是其余的亦然，两者都是只在它处处相同时；每个运行都是一个整体中部分的进程，其余形成其动作；一段进程只在某个配置复现而动作不同之处固定动作是谁的。",
     "en": "One move formed in a whole couples a part and the rest: it is the part's exactly where it is the part's policy, the rest's likewise, both only if constant; every run is a part's course whose moves a rest forms; a course fixes whose move it is only where a configuration recurs with the move varied."
@@ -180,6 +180,12 @@
       "zh": "部分形成动作的多少（耦合的度量）；反事实之动作经部分自身的识读出（ExchangeLaw.Through 对部分之外的形成陈述）；连续时间。",
       "en": "How much of a move a part forms (a measure of coupling); the counterfactual's act read through the part's own registration (ExchangeLaw.Through is stated for the formations outside the part); continuous time.",
       "kind": "scope"
+    },
+    {
+      "zh": "“一个动作，两侧”超出定义：part_act_eq_rest_act 由 rfl 成立；内容在哪些律容许它（one_course_two_laws、closed_not_own）与路线何时定下是谁的动作。",
+      "en": "That \"one move, two sides\" goes beyond the definition: part_act_eq_rest_act holds by rfl; the content is in which laws admit the move (one_course_two_laws, closed_not_own) and when a course fixes whose it is.",
+      "kind": "scope",
+      "witness": "Becoming.Run.part_act_eq_rest_act"
     }
   ],
   "counterexamples": [
@@ -664,7 +670,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ebce5b7564e0ad0a51a4f5537910ba722550465a8a9e1a4081aaa92199a5d847"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md",
@@ -924,7 +930,23 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Learning.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Readings.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Learning.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Readings.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 A12 项：新增一项未表明：标题式的“一个动作，两侧”（Run.part_act_eq_rest_act）由 rfl 成立，写出内容所在。原文见 text_versions。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A12: a does_not_show item added: the headline \"one move, two sides\" (Run.part_act_eq_rest_act) holds by rfl, with the content located. Earlier text in text_versions."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
-  "text_versions": []
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/261bbfa4af71df45/where-a-move-is-formed.json",
+      "sha256": "261bbfa4af71df45d17a1bf2166812260cfd6d99cfdb5df2e11006759b1035ab",
+      "note": {
+        "zh": "全库审查（2026年10月16–17日）把措辞对齐 Lean 陈述之前的记录原始字节（schema 2）。",
+        "en": "Exact record bytes before the wording was scoped to the Lean statements (whole-repository review of 16–17 October 2026, schema 2)."
+      }
+    }
+  ]
 }

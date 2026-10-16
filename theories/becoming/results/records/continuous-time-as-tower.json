@@ -2,13 +2,13 @@
   "schema_version": 1,
   "id": "continuous-time-as-tower",
   "title": {
-    "zh": "连续时间作为离散读法之塔",
-    "en": "Continuous time as a tower of discrete readings"
+    "zh": "时间尺度作为离散读法之塔",
+    "en": "Time scales as a tower of discrete readings"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "每一层是更细一层在严格递增的时刻读出；平衡（每个关系项只列出一次）与耗散由更细一层传到更粗一层。一段最粗的步在任何一层读出时，所立者在其中各细步不被否定地下降，则总水平下降的细步数不多于最粗一层段首的总水平，与层无关。",
     "en": "Each level reads the next finer one at strictly increasing times, and balance (each relatum listed once) and dissipation pass to coarser levels. At any level, with what stands not refuted to run down at each fine step, a coarsest stretch has no more falls of total standing than its starting total."
@@ -171,7 +171,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ebce5b7564e0ad0a51a4f5537910ba722550465a8a9e1a4081aaa92199a5d847"
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md",
@@ -465,6 +465,13 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Locality.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Locality.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月17日，全库审查（2026年10月16–17日，CHANGES.md）第 records-a-l-15 项：标题原为“连续时间作为离散读法之塔”；Becoming.Tower 只证离散步长之塔上的规律，实数时间未形式化（限制已写），标题改为“时间尺度作为离散读法之塔”；id 不变。schema 1，无 text_versions；原文见 git。",
+      "en": "17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-a-l-15: the title was \"Continuous time as a tower of discrete readings\"; Becoming.Tower proves laws across a tower of discrete step sizes and real-valued time is not formalized (as the limitations say), so the title is now \"Time scales as a tower of discrete readings\"; the id is unchanged. Schema 1, no text_versions; earlier text in git."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ]
 }

@@ -417,7 +417,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "586a72c88090a1a1bf6b8353b9b6d91ae83e28c855903cc12f5c1d340638bfac",
+      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
       "declarations": []
     },
     {
@@ -566,6 +566,9 @@
     {
       "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.FinerTraces 说所计的情境在基上是什么：更细进程恰是更细之律（一个确定的过程）的迹，忘去情境即正权之律的迹，经 Situations.finer_count 与 Weighted 的 counting_transfer_iff 证明；新增一条律及其 8 项声明（参考列出模块的全部 17 项），并把“计数在列举之上、没有定理排除重复”作为未表明的一项；绑定回执 20261016T124157.989030Z；研究 §165。断言与状态不变。",
       "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.FinerTraces says what the counted situations are on the base: the finer courses are exactly the traces of the finer law, a determined process, and with the situation forgotten the traces of the law of positive weight, proved through Situations.finer_count and Weighted's counting_transfer_iff; one law with its 8 declarations added (the reference lists all 17 of the module), and that the counts are over the enumeration, with no theorem excluding repetition, added as a scope item; bound to receipt 20261016T124157.989030Z; study section 165. Claim and status unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation: the chapter was rewritten as English-only in the repository restructure (Chinese edition THE-THEORY-OF-BECOMING.zh.md; long declaration lists moved to THE-THEORY-OF-BECOMING-REFERENCE.md; every earlier heading anchor kept). The chapter is re-pointed here after reading the change; this record cites no anchor or declaration of the chapter, and the claim is unchanged."
     }
   ],
   "text_versions": []
