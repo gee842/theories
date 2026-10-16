@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
     "zh": "诸识恰在语境相交处一致时粘合，不依语境的主张的框架恰在处处粘合时合；有的世界在任何配置都不粘合（Specker、Mermin–Peres，量子比特实现）。部分失去整体有两种方式：不给回整体，或没有整体。",
     "en": "Registrations glue exactly where contexts agree where they meet, and a frame of context-free claims fits exactly where they glue everywhere; some worlds glue nowhere (Specker, Mermin–Peres, realized by qubits). Parts fail a whole in two ways: they do not give it back, or there is none."
@@ -303,6 +303,28 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ParityReadings.lean",
+      "role": "proof",
+      "sha256": "16bf4090c7f93e33410dfeda2ef0a1212e35bba0202ad87f3e50f05c5e19fc09",
+      "declarations": [
+        "Becoming.Contextual.FreeAt",
+        "Becoming.Contextual.glues_iff_freeAt",
+        "Becoming.Square.QuantumAt",
+        "Becoming.Square.QuantumAt.not_glues",
+        "Becoming.Square.QuantumAt.not_freeAt",
+        "Becoming.Square.QuantumAt.no_free_frame",
+        "Becoming.Square.quantum",
+        "Becoming.Square.quantum_at",
+        "Becoming.Square.quantum_readings"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "role": "receipt",
+      "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -324,6 +346,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ParityReadings.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ParityReadings",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -472,6 +501,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Context.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Quantum.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Context.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Quantum.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.ParityReadings 把方阵的量子登记陈述在沿运行的读法世界与任一过程的框架上：登记在一个配置为量子的（Square.QuantumAt：每条线识其三格，其所示由一个非零态矢量共同显出）时不相粘（QuantumAt.not_glues），读法世界在该步不无语境（QuantumAt.not_freeAt），任一过程的无语境主张框架都不适合（QuantumAt.no_free_frame）；量子登记在每个配置都有（Square.quantum、quantum_at），所以沿每个过程的每个运行，量子读法是没有无语境描述适合的一个世界（Square.quantum_readings），经 Square.no_context_free_values 与 Contextual.fitsFree_iff 证明。作为引用加入 9 项声明，绑定回执 20261016T124157.989030Z；研究 §165。断言、局限与状态不变。",
+      "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.ParityReadings states the square's quantum registrations on the world of readings along a run and on the frames of any process: a registration quantum at a configuration (Square.QuantumAt: each line registers its three cells, and what it shows on them is shown jointly by a nonzero state vector) does not glue (QuantumAt.not_glues), the world of readings is not context-free at that step (QuantumAt.not_freeAt), and no frame of context-free claims of any process fits it (QuantumAt.no_free_frame); quantum registrations exist at every configuration (Square.quantum, quantum_at), so along every run of every process the quantum readings are one world that no context-free description fits (Square.quantum_readings), proved through Square.no_context_free_values and Contextual.fitsFree_iff. 9 declarations added as a reference, bound to receipt 20261016T124157.989030Z; study section 165. Claim, limitations and status unchanged."
     }
   ]
 }

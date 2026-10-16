@@ -5470,6 +5470,78 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean)
 
+## two-act-worlds-carry-the-difference ← worlds-are-runs
+
+`formal-reuse` — 复用进程世界（ExchangeLaw.courseWorld）及其平衡判据（courseWorld_balanced_iff）、所携带的世界及其平衡（carriedWorld、carriedWorld_balanced）：两种作为的世界与见证都是交换之律的运行。 / Reuses the course world (ExchangeLaw.courseWorld) and when it balances (courseWorld_balanced_iff), the carried world and its balance (carriedWorld, carriedWorld_balanced): two acts' worlds and the witnesses are runs of the law of exchange.
+
+**Producer output / 上游输出:** 可行进程是平衡的世界；所携带的量是平衡世界的位。 / A feasible course is a balanced world; the carried amount is a balanced world's standing.
+
+**Consumer input / 下游输入:** 两种作为的世界平衡；见证之量是平衡世界的位。 / Two acts' worlds balance; each witness amount is a balanced world's standing.
+
+**Retained conditions / 保留条件:** 律与作为读已立者，进程可行。 / The law and the acts read what has stood; the courses are feasible.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean)
+
+## two-act-worlds-carry-the-difference ← how-much-difference-arrives
+
+`formal-reuse` — 复用差（gap）、耦合强度（RespondsWithin）、携带之律与所携带的量（carrying、carried）、其平衡与达到（carrying_balances、carried_attained）、一切两个平衡的流之界（gap_le_carried、most_difference_arrives）。 / Reuses the gap (gap), coupling strengths (RespondsWithin), the carrying law and the carried amount (carrying, carried), its balance and attainment (carrying_balances, carried_attained), and the bound over every two balanced flows (gap_le_carried, most_difference_arrives).
+
+**Producer output / 上游输出:** 两个平衡的流在其余遵从具有这些强度之律时，每个差至多所携带的量，并由携带之律达到。 / For two balanced flows whose rest follows a law with these strengths, every gap is at most the carried amount, attained by the carrying law.
+
+**Consumer input / 下游输入:** 两种作为之世界的界与达到，平衡与遵从由生成给出。 / The bound and its attainment between two acts' worlds, with balance and following given by generation.
+
+**Retained conditions / 保留条件:** 条件全部列出，达到处每个只列一次；条件的相等可判定。 / Every condition listed, each once where attained; decided equality of conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean)
+
+## two-act-worlds-carry-the-difference ← counterfactual-is-the-course
+
+`formal-reuse` — 复用部分按作为、其余按律（withAct）、读已立者的保持（withAct_nonanticipating）、进程的遵从（withAct_follows、course_follows）、进程平衡之判据（course_balances_iff）、移动（ofMoves）与反事实由作为固定（counterfactual_fixed）。 / Reuses the part acting by an act and the rest by the law (withAct), reading what has stood preserved (withAct_nonanticipating), the course following the law (withAct_follows, course_follows), when a course balances (course_balances_iff), moves (ofMoves) and the counterfactual fixed by the act (counterfactual_fixed).
+
+**Producer output / 上游输出:** 一个作为的反事实是律生成的进程，由作为固定，恰在可行处平衡。 / The counterfactual of an act is the course the law generates, fixed by the act and balanced exactly where feasible.
+
+**Consumer input / 下游输入:** 一个作为的世界；携带之律下给出其差的作为之世界位于所携带的量。 / The world of an act; under the carrying law the world of the act giving its gaps stands at the carried amount.
+
+**Retained conditions / 保留条件:** 律与作为读已立者。 / The law and the act read what has stood.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
+## two-act-worlds-carry-the-difference ← how-a-carried-difference-grows
+
+`formal-reuse` — 复用上游（Upstream）、回路（OnLoop）、流入（inflow）、有限阶（carriedWithin）及其精确与多项式之界（carriedWithin_exact_of_no_loop、carried_le_polynomial、polynomial_iff_no_loop）。 / Reuses upstream (Upstream), loops (OnLoop), inflow (inflow), finite orders (carriedWithin) and their exactness and polynomial bounds (carriedWithin_exact_of_no_loop, carried_le_polynomial, polynomial_iff_no_loop).
+
+## two-act-worlds-carry-the-difference ← what-a-cut-loses
+
+`formal-reuse` — 复用按时间次序的耦合链（CoupledIntoBy）、从第 N 步起的强度（strengthsFrom）、截断从每个起点精确之判据（exact_every_start_iff）与任意时程的多项式之界（carried_le_polynomial_from）。 / Reuses chains of couplings in time order (CoupledIntoBy), the strengths from step N on (strengthsFrom), when a cut is exact from every start (exact_every_start_iff), and the polynomial bound for every schedule (carried_le_polynomial_from).
+
+## two-act-worlds-carry-the-difference ← orders-as-a-sum-over-histories
+
+`formal-reuse` — 复用路线点（routePoints）、路线权重（routeWeight）与所携带的量是历史之和（carried_eq_courses）。 / Reuses the route points (routePoints), route weights (routeWeight) and the carried amount as a sum over histories (carried_eq_courses).
+
+## two-act-worlds-carry-the-difference ← how-loops-form
+
+`formal-reuse` — 复用之前的强度（strengthsBefore）、读出的强度（ReadsBefore、carryingRead）、形成的进程是所携带的量（formedCourse_eq_carried、carried_before）、形成前的多项式之界与起始、阈值见证（Closing.Onset、Closing.Threshold）。 / Reuses the strengths before a step (strengthsBefore), read strengths (ReadsBefore, carryingRead), the formed course as a carried amount (formedCourse_eq_carried, carried_before), the polynomial bound before formation, and the onset and threshold witnesses (Closing.Onset, Closing.Threshold).
+
+**Producer output / 上游输出:** 闭合之律与见证，陈述在强度阵列与所携带的量上。 / Closing's laws and witnesses, stated on strength arrays and carried amounts.
+
+**Consumer input / 下游输入:** 同样的律陈述在两种作为的世界与形成的世界上；见证是平衡的世界。 / The same laws stated on two acts' worlds and formed worlds; the witnesses as balanced worlds.
+
+**Retained conditions / 保留条件:** 强度只从至今的水平读出（ReadsBefore）。 / Strengths read off the levels so far only (ReadsBefore).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean)
+
+## two-act-worlds-carry-the-difference ← how-often-couplings-act
+
+`formal-reuse` — 复用时程的计数（Frequency.count）、返回（Returns）、按耦合之步的界（carried_le_count）、频繁返回的失控（runaway_of_returns）与自环和稀疏时程的见证（SelfLoop、Sparse）。 / Reuses the count of a schedule (Frequency.count), returns (Returns), the bound by coupling steps (carried_le_count), runaway through frequent returns (runaway_of_returns), and the self-loop and sparse-schedule witnesses (SelfLoop, Sparse).
+
+## two-act-worlds-carry-the-difference ← loops-within-what-a-law-reads
+
+`formal-reuse` — 复用读一个时程的律（ReadsAt、restrictReads、ReadsAt.restrict）、只在阈值之下读储量的律（ReadsBelow）与未读者、断裂之距不被携带（unread_carried_nowhere、break_carried_nowhere）。 / Reuses laws reading a schedule (ReadsAt, restrictReads, ReadsAt.restrict), laws reading a stock only below a threshold (ReadsBelow), and that neither what is unread nor the distance to a break is carried (unread_carried_nowhere, break_carried_nowhere).
+
+## two-act-worlds-carry-the-difference ← observation-is-a-route
+
+`formal-reuse` — 复用读入每个条件的律（ReadsInto、readCouplings）与差别只在下游（apart_only_downstream）。 / Reuses laws reading into each condition (ReadsInto, readCouplings) and that a difference lies only downstream (apart_only_downstream).
+
 ## typicality-by-counting ← sum-over-histories-exact
 
 `formal-reuse` — 复用 counting、Weights.along、Weights.transfer、Weights.sum_courses、courses、add_mul_split 与 mul_assoc_nat：计数权重与历史之和。 / Reuses counting, Weights.along, Weights.transfer, Weights.sum_courses, courses, add_mul_split and mul_assoc_nat: counting weights and the sum over histories.
@@ -6453,6 +6525,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 ## wisdom-root-part-one ← identification-where-bounded
 
 `interpretive` — 有界识别说明为何无普遍完成的学习者不等于实际学习永不收束；用于必要性范围核对。 / Bounded identification distinguishes the absence of a universally completed learner from perpetual non-convergence in actual learning; used to check necessity scope.
+
+## worlds-are-runs ← process-and-frame-as-readings
+
+`formal-reuse` — 复用所显之律（Shown）、其运行（Shown.run）、律与所显之律的比较（shown_le_iff、Run.shown_le）、世界的移动（World.move）与交换运行（World.exchangeRun）：世界是它所显之律的运行，网与交换上的运行是世界。 / Reuses the law a history shows (Shown), its run (Shown.run), the comparison of a law with it (shown_le_iff, Run.shown_le), a world's moves (World.move) and its run of exchange (World.exchangeRun): a world is a run of the law it shows, and a run on webs and exchanges is a world.
+
+**Producer output / 上游输出:** 历史是它所显之律的运行；律恰在历史的每一步都是它的步处包含所显之律。 / A history is a run of the law it shows; a law contains the shown law exactly where each step of the history is one of its steps.
+
+**Consumer input / 下游输入:** 世界所显之律的运行；平衡作为所显之律在交换之律之内。 / A world's run of the law it shows; balance as the shown law lying within the law of exchange.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
+## worlds-are-runs ← unity-of-readings
+
+`formal-reuse` — 复用计入其余的世界（World.withRest）及其平衡（World.withRest_balanced）：计入其余时，每个世界的整个网都是交换之律的运行；语境中的读法沿运行是一个世界（Contextual.world），引用。 / Reuses the world with the rest counted (World.withRest) and its balance (World.withRest_balanced): with the rest counted, every world's whole web is a run of the law of exchange; readings in context along a run are one world (Contextual.world), cited.
+
+**Producer output / 上游输出:** 计入其余时每个世界平衡。 / With the rest counted every world balances.
+
+**Consumer input / 下游输入:** 每个世界整个网的、计入其余的交换运行。 / The rest-counted run of exchange of every world's whole web.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean)
+
+## worlds-are-runs ← counterfactual-is-the-course
+
+`formal-reuse` — 复用交换律的进程（ExchangeLaw.course、levels）、读已立者（Nonanticipating）、可行（Feasible）、进程平衡之判据（course_balances_iff）与历史作为轨道（next、history、history_orbit）。 / Reuses the course of a law of exchange (ExchangeLaw.course, levels), reading what has stood (Nonanticipating), feasibility (Feasible), when a course balances (course_balances_iff), and the history as an orbit (next, history, history_orbit).
+
+**Producer output / 上游输出:** 交换律生成的进程，在读已立者的律之下恰在可行处平衡；其历史是一个轨道。 / The course a law of exchange generates, balanced exactly where feasible under a law of what has stood; its history is an orbit.
+
+**Consumer input / 下游输入:** 进程作为世界与运行；其生成作为一个确定之律的唯一运行。 / The course as a world and a run; its generation as the one run of a determined law.
+
+**Retained conditions / 保留条件:** 律读已立者（只用于平衡）。 / The law reads what has stood (for balance only).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
+
+## worlds-are-runs ← how-much-difference-arrives
+
+`formal-reuse` — 复用携带之律（ExchangeLaw.carrying）、所携带的量（carried）及其进程的平衡（carrying_balances）：所携带的量是平衡世界的位，因而是交换之律之运行的位。 / Reuses the carrying law (ExchangeLaw.carrying), the carried amount (carried) and the balance of its course (carrying_balances): the carried amount is a balanced world's standing, and so the standing of a run of the law of exchange.
+
+**Producer output / 上游输出:** 携带之律、所携带的量与其进程的平衡。 / The carrying law, the carried amount and the balance of its course.
+
+**Consumer input / 下游输入:** 所携带的量作为平衡世界的位与运行。 / The carried amount as a balanced world's standing and as a run.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean)
+
+## worlds-are-runs ← space-and-its-parts
+
+`formal-reuse` — 复用世界、其平衡（World.Balanced）与以角色读出的世界（World.ofRoles，及 Roles 的 Flow.roles_balances）：形成与条件作为同一关系项的角色。 / Reuses worlds, their balance (World.Balanced) and the world read by roles (World.ofRoles, with Roles' Flow.roles_balances): formations and conditions as roles of one relatum.
+
+## worlds-are-runs ← recurrence-without-premise
+
+`formal-reuse` — 复用确定之律的过程（Law.process）与其运行（Law.run）：进程的生成与轨道都是运行。 / Reuses a determined law's process (Law.process) and its run (Law.run): a course's generation and an orbit are runs.
+
+## worlds-are-runs ← necessarily-drawn-is-not-returning
+
+`formal-reuse` — 复用确定之律的每个运行是从其起点出发的轨道（Branching.law_run_state）：进程的生成从起点只有一个运行。 / Reuses that every run of a determined law is the orbit from its start (Branching.law_run_state): a course's generation has one run from the start.
 
 ## Wider composition evidence / 更广组合证据
 

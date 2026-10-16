@@ -186,6 +186,18 @@
         "Becoming.Cycle.walk_meets",
         "Becoming.Cycle.met_iff_even"
       ]
+    },
+    {
+      "zh": "沿运行：登记恰在读法世界在一步无语境处于该步相粘。主张不重复地列出、语境列出时，尊重可能性的读法世界在一步无语境，以及（每个主张在某个语境中）任一过程的无语境主张框架适合，都恰在没有选取矛盾处；m 个语境矛盾时，在一步无语境的读法世界至多满足其中 m − 1 个。",
+      "en": "Along a run, the registrations glue at a step exactly where the world of readings is context-free there. With claims listed once and contexts listed, a respecting world of readings is context-free at a step, and (each claim in some context) a frame of context-free claims of any process fits, exactly where no selection contradicts; where m contexts contradict, a world context-free at a step meets at most m − 1.",
+      "declarations": [
+        "Becoming.Contextual.FreeAt",
+        "Becoming.Contextual.glues_iff_freeAt",
+        "Becoming.ParitySystem.met_congr",
+        "Becoming.ParitySystem.world_free_iff",
+        "Becoming.ParitySystem.world_met_le",
+        "Becoming.ParitySystem.freeFrame_iff"
+      ]
     }
   ],
   "hypotheses": [
@@ -545,6 +557,25 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ParityReadings.lean",
+      "role": "proof",
+      "sha256": "16bf4090c7f93e33410dfeda2ef0a1212e35bba0202ad87f3e50f05c5e19fc09",
+      "declarations": [
+        "Becoming.Contextual.FreeAt",
+        "Becoming.Contextual.glues_iff_freeAt",
+        "Becoming.ParitySystem.met_congr",
+        "Becoming.ParitySystem.world_free_iff",
+        "Becoming.ParitySystem.world_met_le",
+        "Becoming.ParitySystem.freeFrame_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "role": "receipt",
+      "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -582,6 +613,13 @@
       "sha256_pointer": "/source_sha256/Becoming.Generation",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ParityReadings.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ParityReadings",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "history": [
@@ -604,6 +642,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Gluing.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Context.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Population.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Gluing.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Context.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Population.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.ParityReadings 把奇偶之律陈述在沿运行的读法世界（Contextual.world）与任一过程的框架上，经 global_or_contradicts、met_le 与 fitsFree_iff 证明；新增一条律及其 6 项声明，绑定回执 20261016T124157.989030Z；研究 §165。Specker、CHSH、方阵与环的见证没有在世界上重述：那只会给 world_free_iff 与 world_met_le 添一个名字；环律在基上没有等或异的关系之环，除非给出一个。断言与状态不变。",
+      "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.ParityReadings states the parity law on the world of readings along a run (Contextual.world) and on the frames of any process, proved through global_or_contradicts, met_le and fitsFree_iff; one law with its 6 declarations added, bound to receipt 20261016T124157.989030Z; study section 165. The Specker, CHSH, square and cycle witnesses are not restated on worlds, which would only add a name to world_free_iff and world_met_le; the cycle law has no base relation that is a cycle of equal-or-different relations unless one is supplied. Claim and status unchanged."
     }
   ],
   "text_versions": []

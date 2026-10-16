@@ -109,6 +109,20 @@
         "Becoming.Situations.signed_counts",
         "Becoming.Situations.cancels_situations"
       ]
+    },
+    {
+      "zh": "更细的进程是更细之律的迹：一列情境恰在有 n 步、是更细之律从 s 出发的迹、只以列出的移动到列出的配置处，是从 s 出发 n 步的更细进程；两值上每个这样的迹都列出。正权之步的律是忘去情境的更细之律，任一方的迹给出另一方的迹；每个移动与配置都列出时，更细进程恰在该律有 n 步之迹处存在。",
+      "en": "The finer courses are the finer law's traces: a list of situations is a finer course of n steps from s exactly where it has n steps, is a finer-law trace from s and takes listed moves to listed configurations; on two values every such trace is listed. The positive-weight law is the finer law with the situation forgotten, traces passing both ways; all listed, finer courses exist where it has a trace of n moves.",
+      "declarations": [
+        "Becoming.FinerTraces.mem_finer_iff",
+        "Becoming.FinerTraces.two_values_mem_iff",
+        "Becoming.FinerTraces.two_listed",
+        "Becoming.FinerTraces.supportLaw",
+        "Becoming.FinerTraces.trace_forget",
+        "Becoming.FinerTraces.trace_lift",
+        "Becoming.FinerTraces.nonzero_iff",
+        "Becoming.FinerTraces.finer_exists_iff"
+      ]
     }
   ],
   "hypotheses": [
@@ -132,6 +146,12 @@
       "zh": "实数或复数振幅：它们不是有限个单位之和；无限步。",
       "en": "Real or complex amplitudes, which are not sums of finitely many units; infinitely many steps.",
       "kind": "scope"
+    },
+    {
+      "zh": "列举把每个迹只列一次：计数是在列举之上的，列举恰含这些迹，没有定理排除重复。",
+      "en": "That the enumeration lists each trace once: the counts are over the enumeration, which holds exactly the traces, and no theorem excludes repetition.",
+      "kind": "scope",
+      "witness": "Becoming.FinerTraces.mem_finer_iff"
     }
   ],
   "counterexamples": [],
@@ -434,6 +454,36 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FinerTraces.lean",
+      "role": "proof",
+      "sha256": "5690e74d8d393b8bc5b6b97ba3175e70efa196c6cdc0aad727d636f33716835e",
+      "declarations": [
+        "Becoming.FinerTraces.mem_finer_iff",
+        "Becoming.FinerTraces.two_values_mem_iff",
+        "Becoming.FinerTraces.two_listed",
+        "Becoming.FinerTraces.supportLaw",
+        "Becoming.FinerTraces.trace_forget",
+        "Becoming.FinerTraces.trace_lift",
+        "Becoming.FinerTraces.nonzero_iff",
+        "Becoming.FinerTraces.finer_exists_iff",
+        "Becoming.FinerTraces.mem_cons_split",
+        "Becoming.FinerTraces.mem_append_split",
+        "Becoming.FinerTraces.of_mem_map",
+        "Becoming.FinerTraces.of_mem_joinMap",
+        "Becoming.FinerTraces.lt_of_mem_upto",
+        "Becoming.FinerTraces.mem_upto",
+        "Becoming.FinerTraces.of_mem_openSteps",
+        "Becoming.FinerTraces.of_mem_finerSteps",
+        "Becoming.FinerTraces.mem_finerSteps"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "role": "receipt",
+      "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -471,6 +521,13 @@
       "sha256_pointer": "/source_sha256/Becoming.Joint",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FinerTraces.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FinerTraces",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "history": [
@@ -505,6 +562,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Situations.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Typicality.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Situations.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Typicality.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.FinerTraces 说所计的情境在基上是什么：更细进程恰是更细之律（一个确定的过程）的迹，忘去情境即正权之律的迹，经 Situations.finer_count 与 Weighted 的 counting_transfer_iff 证明；新增一条律及其 8 项声明（参考列出模块的全部 17 项），并把“计数在列举之上、没有定理排除重复”作为未表明的一项；绑定回执 20261016T124157.989030Z；研究 §165。断言与状态不变。",
+      "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.FinerTraces says what the counted situations are on the base: the finer courses are exactly the traces of the finer law, a determined process, and with the situation forgotten the traces of the law of positive weight, proved through Situations.finer_count and Weighted's counting_transfer_iff; one law with its 8 declarations added (the reference lists all 17 of the module), and that the counts are over the enumeration, with no theorem excluding repetition, added as a scope item; bound to receipt 20261016T124157.989030Z; study section 165. Claim and status unchanged."
     }
   ],
   "text_versions": []

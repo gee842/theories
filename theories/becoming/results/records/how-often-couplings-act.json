@@ -171,6 +171,15 @@
         "Becoming.Frequency.SelfLoop.onset_amount",
         "Becoming.gap_le_count"
       ]
+    },
+    {
+      "zh": "在世界中：在时程标记之步以强度 M 耦合、起始之差为 D 的自环世界平衡，其位是 D·(1 + M)^a，a 是至今标记的步数；M、D 至少为一时，其位有多项式界恰在 2^a 有处；稀疏时程上 M、D 为正时，耦合复现，位至多 D·2^M·(t + 1)^M，所携带的量没有一个有限阶精确。",
+      "en": "In a world: the world of a self-loop of strength M coupling at the steps a schedule marks, from a gap D, balances and stands at D·(1 + M)^a, a the marked steps so far; with M and D at least one its standing is polynomially bounded exactly where 2^a is; on the sparse schedule, M and D positive, its coupling recurs, its standing is at most D·2^M·(t + 1)^M, and no finite order of the carried amount is exact.",
+      "declarations": [
+        "Becoming.FormedLoops.scheduleWorld",
+        "Becoming.FormedLoops.scheduleWorld_course",
+        "Becoming.FormedLoops.sparseWorld_course"
+      ]
     }
   ],
   "hypotheses": [
@@ -701,6 +710,22 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FormedLoops.lean",
+      "role": "proof",
+      "sha256": "cf5fed05f66257a86c1c1a6590847238cf0eaa8536e7bfa59fc11bdf9a55ce84",
+      "declarations": [
+        "Becoming.FormedLoops.scheduleWorld",
+        "Becoming.FormedLoops.scheduleWorld_course",
+        "Becoming.FormedLoops.sparseWorld_course"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "role": "receipt",
+      "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -780,6 +805,13 @@
       "sha256_pointer": "/source_sha256/Becoming.Generation",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FormedLoops.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FormedLoops",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "history": [
@@ -802,6 +834,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Frequency.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Remainder.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Loops.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Propagation.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Change.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Counterfactual.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Frequency.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Remainder.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Loops.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Propagation.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Change.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Counterfactual.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.FormedLoops 把自环与稀疏时程的见证陈述为平衡的世界（scheduleWorld），其律引自 Frequency，不再证明；新增一条律及其 3 项声明，绑定回执 20261016T124157.989030Z；研究 §165，记录 two-act-worlds-carry-the-difference（其中按耦合之步的界与失控陈述在两种作为的世界上）。安定的校准对每个时程量化，没有在世界上重述。断言与状态不变。",
+      "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.FormedLoops states the self-loop and sparse-schedule witnesses as balanced worlds (scheduleWorld), their laws cited from Frequency, not proved again; one law with its 3 declarations added, bound to receipt 20261016T124157.989030Z; study section 165, record two-act-worlds-carry-the-difference (where the bound by coupling steps and the runaway are stated on two acts' worlds). The settling calibrations quantify over every schedule and are not restated on worlds. Claim and status unchanged."
     }
   ],
   "text_versions": []

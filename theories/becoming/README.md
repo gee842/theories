@@ -22,7 +22,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 
 ## 已登记成果 / Registered results
 
-227 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+229 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -235,6 +235,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](results/records/transition-grouping-word-partition.md) | recorded-checked | [AcquiredSegmentation.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean) |
 | [传递在其起约束之处的独立性 / Independence of transmission where it binds](results/records/transmission-independent-where-it-binds.md) | recorded-checked | [Transmission.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean) |
 | [传递作为承继加所需之界 / Transmission as inheritance with a bounded need](results/records/transmission-is-inheritance-and-need.md) | recorded-checked | [Transmission.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean) |
+| [两种作为之世界的差别 / The difference between two acts' worlds](results/records/two-act-worlds-carry-the-difference.md) | recorded-checked | [CourseWorlds.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseWorlds.lean) |
 | [计数中的典型 / Typicality by counting](results/records/typicality-by-counting.md) | recorded-checked | [Typicality.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean) |
 | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](results/records/unanchored-incidence-collapse.md) | recorded-checked | [ExplanatoryJoiningAnchors.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean) |
 | [不息的生成需要更新 / Unceasing generation needs renewal](results/records/unceasing-generation-needs-renewal.md) | recorded-checked | [Generation.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) |
@@ -253,6 +254,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [整体经由部分的生成而持续 / A whole persists through the generation of its parts](results/records/whole-persists-through-generation.md) | recorded-checked | [Wholes.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean) |
 | [核心作为智慧之根的目标 / Core as the root of wisdom target](results/records/wisdom-root.md) | open | [CORE-CONSTRAINT-AND-WISDOM.md](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) |
 | [智慧之根在第一部分 / The root of wisdom in Part I](results/records/wisdom-root-part-one.md) | reviewed-scoped | [BECOMING-RENEWAL-READING.md](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) |
+| [每个基读作运行 / Every base read as a run](results/records/worlds-are-runs.md) | recorded-checked | [Runs.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean) |
 
 ## Discovery and evidence / 检索与证据
 

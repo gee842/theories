@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
     "zh": "所识的未来相同的配置给每个学习者同样的记录。被列表所持的世界中，某个学习者在每个配置上于目标静止，恰当这样的配置其目标从某步起一致；律使每个配置不变时，恰当目标经识同去。",
     "en": "Configurations with the same registered future give every learner the same record. In a world a list holds, some learner rests on a target everywhere exactly where such configurations have targets agreeing from some step on; under a still law, exactly where it goes alike across the registration."
@@ -77,6 +77,25 @@
         "Becoming.Learnable.Pair.first_not_rests",
         "Becoming.Learnable.Pair.not_lumped",
         "Becoming.Learnable.Pair.whole_rests"
+      ]
+    },
+    {
+      "zh": "沿运行：确定之律的运行给学习者从其起点出发之轨道的记录，所以学习者恰在静止于那条轨道处静止于这个运行；在识这个登记的框架中起点相似的运行给每个学习者相同的记录；在列表持有的世界中，目标恰在起点相似之运行的目标从某步起一致处沿每个运行可学，在不变之律下恰在目标经识同去处可学。",
+      "en": "Along runs: a determined law's run gives a learner its orbit's record, so the learner rests on the run exactly where it rests on that orbit; runs beginning alike in the registration's frame give every learner one record; where a list holds the world, a target is learnable along every run exactly where such runs have targets agreeing from some step on, under a still law where it goes alike across the registration.",
+      "declarations": [
+        "Becoming.LearnableRuns.course",
+        "Becoming.LearnableRuns.RestsFrom",
+        "Becoming.LearnableRuns.Rests",
+        "Becoming.LearnableRuns.record_eq",
+        "Becoming.LearnableRuns.restsFrom_iff",
+        "Becoming.LearnableRuns.rests_iff",
+        "Becoming.LearnableRuns.course_same",
+        "Becoming.LearnableRuns.records_same",
+        "Becoming.LearnableRuns.agree_of_rests_both",
+        "Becoming.LearnableRuns.not_rests_on_both",
+        "Becoming.LearnableRuns.rests_through",
+        "Becoming.LearnableRuns.learnable_iff",
+        "Becoming.LearnableRuns.still_learnable_iff_lumped"
       ]
     }
   ],
@@ -427,6 +446,32 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
+      "role": "proof",
+      "sha256": "e78c980bccb075a220c8b44c37e35005d210f518a7e11b4b1025b410192f529a",
+      "declarations": [
+        "Becoming.LearnableRuns.course",
+        "Becoming.LearnableRuns.RestsFrom",
+        "Becoming.LearnableRuns.Rests",
+        "Becoming.LearnableRuns.record_eq",
+        "Becoming.LearnableRuns.restsFrom_iff",
+        "Becoming.LearnableRuns.rests_iff",
+        "Becoming.LearnableRuns.course_same",
+        "Becoming.LearnableRuns.records_same",
+        "Becoming.LearnableRuns.agree_of_rests_both",
+        "Becoming.LearnableRuns.not_rests_on_both",
+        "Becoming.LearnableRuns.rests_through",
+        "Becoming.LearnableRuns.learnable_iff",
+        "Becoming.LearnableRuns.still_learnable_iff_lumped"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "role": "receipt",
+      "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -469,6 +514,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LearnableRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -537,6 +589,10 @@
     {
       "zh": "2026年10月16日，P129（发布准备度复核与第十八次审查的脊柱整理）：改绑并更新哈希，断言不变：Learnable.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Learning.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Identification.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Unfolding.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）；Recurrence.lean（P129：只改说明（经典来源署名、与所证强度一致、同名异义、§6.15 的条件）；声明与陈述不变）。",
       "en": "16 October 2026, P129 (spine fixes from the release-readiness review and the eighteenth review): rebound and rehashed, the claim unchanged:Learnable.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Learning.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Identification.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Unfolding.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged); Recurrence.lean (P129: docstrings only (classical credits, strengths matched to what is proved, homonyms, the condition of section 6.15); declarations and statements unchanged)."
+    },
+    {
+      "zh": "2026年10月16日，P130（每个基读作运行）：应用，不是新结果。Becoming.LearnableRuns 把本记录的律陈述在确定之律的运行上（运行的记录是其轨道的记录，经 Branching.law_run_state 与 Law.alike_iff_sameFuture），经本记录的定理证明；新增一条律及其 13 项声明，绑定回执 20261016T124157.989030Z；研究 §165，记录 worlds-are-runs。断言与状态不变。",
+      "en": "16 October 2026, P130 (every base read as a run): an application, not a new result. Becoming.LearnableRuns states this record's laws along the runs of a determined law (a run's record is its orbit's, through Branching.law_run_state and Law.alike_iff_sameFuture), proved through this record's theorems; one law with its 13 declarations added, bound to receipt 20261016T124157.989030Z; study section 165, record worlds-are-runs. Claim and status unchanged."
     }
   ],
   "text_versions": []

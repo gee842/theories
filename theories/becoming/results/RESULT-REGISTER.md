@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-227 migrated records: 223 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+229 migrated records: 225 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -223,6 +223,7 @@
 | `transition-grouping-word-partition` | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](records/transition-grouping-word-partition.md) | theorem | recorded-checked |
 | `transmission-independent-where-it-binds` | [传递在其起约束之处的独立性 / Independence of transmission where it binds](records/transmission-independent-where-it-binds.md) | theorem | recorded-checked |
 | `transmission-is-inheritance-and-need` | [传递作为承继加所需之界 / Transmission as inheritance with a bounded need](records/transmission-is-inheritance-and-need.md) | theorem | recorded-checked |
+| `two-act-worlds-carry-the-difference` | [两种作为之世界的差别 / The difference between two acts' worlds](records/two-act-worlds-carry-the-difference.md) | theorem | recorded-checked |
 | `typicality-by-counting` | [计数中的典型 / Typicality by counting](records/typicality-by-counting.md) | theorem | recorded-checked |
 | `unanchored-incidence-collapse` | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](records/unanchored-incidence-collapse.md) | theorem | recorded-checked |
 | `unceasing-generation-needs-renewal` | [不息的生成需要更新 / Unceasing generation needs renewal](records/unceasing-generation-needs-renewal.md) | theorem | recorded-checked |
@@ -241,6 +242,7 @@
 | `whole-persists-through-generation` | [整体经由部分的生成而持续 / A whole persists through the generation of its parts](records/whole-persists-through-generation.md) | theorem | recorded-checked |
 | `wisdom-root` | [核心作为智慧之根的目标 / Core as the root of wisdom target](records/wisdom-root.md) | target | open |
 | `wisdom-root-part-one` | [智慧之根在第一部分 / The root of wisdom in Part I](records/wisdom-root-part-one.md) | argument | reviewed-scoped |
+| `worlds-are-runs` | [每个基读作运行 / Every base read as a run](records/worlds-are-runs.md) | theorem | recorded-checked |
 
 ## 先查哪一项 Where to look first
 
