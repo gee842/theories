@@ -44,6 +44,8 @@ Boundary source: [ExplanatoryJointness.lean](../../../../experiments/integrated-
 **Preserved conditions:** Same model, compactness, exact reduced presentation and leaf interpretation. [ExplanatoryJointness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean)
 
 
+**Used by:** [code-plan-global-support](code-plan-global-support.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

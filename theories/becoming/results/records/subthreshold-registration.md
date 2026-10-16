@@ -74,6 +74,8 @@ That a formation observes anything beyond its support, gauges its own standing o
 - Related, not a proved adapter: [loops-within-what-a-law-reads](loops-within-what-a-law-reads.md). Loops within what a law reads, a loop forming at the break.
 - Related, not a proved adapter: [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md). Where gain comes from.
 
+**Used by:** [runaway-distance-unregistered](runaway-distance-unregistered.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -114,4 +116,4 @@ Aliases: `Becoming.Flow.ExchangeFollows`, `Becoming.Flow.difference_kept`, `Beco
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D26): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Admission.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Feedback.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: the limitations said loops, gain and runaway "are not defined" and the next step asked to define a loop and state a runaway as a theorem; Becoming.Runaway (break_not_bounded, built on this result's subthreshold_alike_always), Gain, Loops (OnLoop, carried_runaway) and Thresholds have landed, so the limitations point to their records, the next step drops the item, and four related entries are added. Schema 1, no text_versions; earlier text in git.
-- 39 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](subthreshold-registration.json).
+- 40 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](subthreshold-registration.json).

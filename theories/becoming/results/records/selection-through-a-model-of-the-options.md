@@ -89,7 +89,7 @@ Aliases: `Becoming.Relabel.selected_alike_iff`, `Becoming.Relabel.singled_iff_un
 - 16 October 2026: added, integration I4b item 2 (Ren chose “Closest gaps first”); study section 151.
 - 16 October 2026: reframed at Ren's correction (“it is about the cognitive model, not just record”) and approval (“go ahead with the reframing, first title, keep names, (a)”). The id selection-by-the-record-alone became selection-through-a-model-of-the-options, the old id kept as an alias; the title “Selection by the record alone” became “Selection through a model of the options”; statement, laws, hypotheses and correspondence name the model; the reading that a further recorded relation such as an order of arrival parts a tie is withdrawn, and Ren's judgment of the reading leaves next_delta. A law adds Becoming.Learning's eight theorems linking the model to its lumping; Selection.lean and SelectionRelabelCorrespondence.lean change only in comments. Study section 153; the former title, statement and reading are in study section 151.
 - 16 October 2026, eighteenth review (R18): the correspondence names May's 1952 neutrality condition and the Buridan symmetry (review item 39, K11). Claim unchanged.
-- 16 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-through-a-model-of-the-options.json).
+- 17 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-through-a-model-of-the-options.json).
 
 </details>
 

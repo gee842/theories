@@ -357,25 +357,25 @@
     {
       "path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
       "role": "statement",
-      "sha256": "094506d62d96bf9e0eba34db2d80e02f96897ba641039c8f712d5976e8265dda",
+      "sha256": "c8e42f6fdb574599f94d06d5b83e1b57d4e07c097db1d5e947bfdd06d5f7fdde",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
       "role": "review",
-      "sha256": "93095f8fd397e33392c8032b67985769a9895db8b32dd13c1429ab5fe8369275",
+      "sha256": "dc8511c092a0fec03eaf549938f3c8c851b7fe1bd8acdac11bf9e82c48942776",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
       "role": "integration",
-      "sha256": "b353275f4690ccfd890c78575deea8fa8e2365d74b97016e264bb6749bb6e0ea",
+      "sha256": "cba619a392b4d78e3ea2035a513a24f31d5f81a704a46431b80b0ab37311c867",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "b06ad3e1cdc296bcc25e7bd818da8de8a197e16e892fd46dfa49b082dd8025ba",
+      "sha256": "e869eae139fd35b51161d7449a8fdd2aa75fd6836ada33942a8de747c6b97cc7",
       "declarations": []
     },
     {
@@ -570,6 +570,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BASIC-CONFLICT-JUDGMENT.md, CROSSED-CLAIMS-ARGUMENT.md, CROSSED-CLAIMS-INTEGRATION.md, PRACTICAL-JUDGMENT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BASIC-CONFLICT-JUDGMENT.md, CROSSED-CLAIMS-ARGUMENT.md, CROSSED-CLAIMS-INTEGRATION.md, PRACTICAL-JUDGMENT.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

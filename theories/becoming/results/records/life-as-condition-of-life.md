@@ -98,6 +98,8 @@ Web and Flow split formations and conditions into two kinds, omitting life as a 
 - related, not a proved adapter: [living-on-and-descent](living-on-and-descent.md). Gives two direct readings of related in the one-kind reading: living on relates the bee and the flower that depend only on each other (Mutualism.apart), and descent connects generations each given by the one before (Brood).
 - related, not a proved adapter: [laws-of-one-step](laws-of-one-step.md). Web.Embodied.arises_given is re-proved as a corollary of Flow.BalancesOn.arises_given: a relatum embodied at both ends of the step and given to only by active formations arises exactly when it comes to stand, as an active giver other than itself gives to it. This is reuse in the proof; no dependency edge joins the records, since the base records laws-of-one-step reuses depend on this one through generation-is-replenishment.
 
+**Used by:** [conveyance-crosses-the-boundary](conveyance-crosses-the-boundary.md) · [generation-is-replenishment](generation-is-replenishment.md) · [living-on-and-descent](living-on-and-descent.md) · [map-of-premises](map-of-premises.md) · [reserve-defers-ending](reserve-defers-ending.md) · [space-and-its-parts](space-and-its-parts.md) · [whole-law-of-counting](whole-law-of-counting.md) · [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -144,7 +146,7 @@ Aliases: `Becoming.Web.roles`, `Becoming.Flow.roles`, `Becoming.Web.roles_depend
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D4, D6, D9, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A8: standard boundary no-evaluation ("Contains no ethical predicate and evaluates neither arising nor ceasing") removed: this record's laws state Mutualism.significant_iff (G0 there is exactly a seed with both neutralities), a significance predicate; replaced by significance-related-not-asserted (relating significance to structure without asserting significance or the condition). Earlier text in text_versions.
-- 79 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](life-as-condition-of-life.json).
+- 80 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](life-as-condition-of-life.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

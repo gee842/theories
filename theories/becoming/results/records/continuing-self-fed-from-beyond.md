@@ -74,6 +74,8 @@ Ren's proposal says: “the pure "self" is an illusion, where only when outside 
 - related, not a proved adapter: [continued-change-needs-openness](continued-change-needs-openness.md). Enclosed around what stands, exchange comes to rest; this result says that, enclosed around a family, continuation needs conveyance from beyond it.
 - related, not a proved adapter: [conveyance-crosses-the-boundary](conveyance-crosses-the-boundary.md). With conveyance read as related, a continuing family's region is no cut in the relations.
 
+**Used by:** [conveyance-crosses-the-boundary](conveyance-crosses-the-boundary.md) · [derived-extent-limits](derived-extent-limits.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -108,7 +110,7 @@ Aliases: `Becoming.Flow.Conveys`, `Becoming.Flow.FedFromBeyond`, `Becoming.Flow.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D12): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Succession.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: the title and statement said a continuing family "is fed from beyond"; Flow.fed_from_beyond and generation_fed_from_beyond conclude ¬∀t≥N, ¬FedFromBeyond, as law 3 already says, so the title and statement now have that strength. Earlier text in text_versions.
-- 51 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](continuing-self-fed-from-beyond.json).
+- 52 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](continuing-self-fed-from-beyond.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

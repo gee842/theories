@@ -55,6 +55,8 @@ Introduction, continuation, recognition and inferential warrant distinguish rela
   - Input: How a produced ground continues the consumer’s designated dependence in the local constitutive account.
   - Preserved conditions: Syntax, binding interpretation and assessment remain unchanged; the philosophical account of actual roles and warrant remains a separate obligation. [RECOGNITIONAL-BINDING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
 
+**Used by:** [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -72,7 +74,7 @@ Aliases: —
 - 2026-10-09: migrates and completes in section 10 the candidate from sections 2, 5, 7 and 9, distinguishing institution, execution, recognition and warrant and retiring the vague final-certificate demand. Not a new independent mathematical result.
 - 2026-10-14 readability migration to schema 2: the claim's first sentence became the statement; its second sentence and the limitations became 3 typed does-not-show items (two of scope; one denying an impossibility proof); “a completed assessment of the local argument” is carried by the status; 3 progress lines link the study's section-10 affirmative argument, route assessment and disposition; the next step is restated positively with the same content. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md); the exact earlier record is text_versions[0].
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-a-l-17: the validation scope said it "checks three existing Lean receipts", while the record references and binds none; it now names the three receipts, where the recheck is recorded, and that this record binds none of them. Earlier text in text_versions.
-- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](constitutive-binding-assessment.json).
+- 2 rebinding entries (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](constitutive-binding-assessment.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

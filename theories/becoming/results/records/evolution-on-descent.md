@@ -85,6 +85,8 @@ The unification plan asks for transmission, variation and selection through desc
 - related, not a proved adapter: [target-capture](target-capture.md). Advances this record: the selection term left unstated here is given for a two-valued target in target-capture (share_not_lower, share_rises).
 - related, not a proved adapter: [transmission-is-inheritance-and-need](transmission-is-inheritance-and-need.md). The exact form of transmission: inheritance with the need within a bound; the evolution bounds at one descent, needing only some supported giver.
 
+**Used by:** [learned-procedure-transmission](learned-procedure-transmission.md) · [map-of-premises](map-of-premises.md) · [space-and-its-parts](space-and-its-parts.md) · [target-capture](target-capture.md) · [transmission-is-inheritance-and-need](transmission-is-inheritance-and-need.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -119,7 +121,7 @@ Aliases: `Becoming.price`, `Becoming.offspring`, `Becoming.selected`, `Becoming.
 - 14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; the unification plan only adds the 14 October 2026 rename table after the P36 table in section 10. This record's claim, premises and status are unchanged; no reproof is credited.
 - 14 October 2026, migrated to schema 2 (item F of the open-issues plan: the migration of the 45 schema-1 records with the most lint findings; Ren: “please, do all”, relayed by the integrating session): the claim became 10 laws; the limitations went to does-not-show items, the transmission hypothesis and standard boundaries; the restatement for every world (P50), formerly in next_delta, became law 10, and its item answered by P84 went to the transmission hypothesis; the evidence became one paragraph. Three laws state conditions their theorems carry that the old claim left to context: the transmission and balance laws say “under the same conditions” (Acting and Dependent), and the selection law writes in that each parent–offspring pair is related by descent across one step and every parent depends on the condition there (formerly only in the hypotheses). The citation “Price 1970” moved from the claim to the correspondence; there “crediting Frank 2012” became “citing Frank 2012” (zh 引 unchanged). No law, premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [evolution-on-descent.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/evolution-on-descent.md); the exact earlier record is the last text_versions entry.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
-- 62 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](evolution-on-descent.json).
+- 63 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](evolution-on-descent.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

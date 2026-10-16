@@ -93,6 +93,8 @@ On 12 October 2026 Ren asked “hows cause–effect system comparing to our theo
 - related, not a proved adapter: [selection-under-registration-revision](selection-under-registration-revision.md). P93 completes choice preservation/loss under registration change and local executed reconstruction; acquired recipes and general capture remain open.
 - related, not a proved adapter: [selection-through-a-model-of-the-options](selection-through-a-model-of-the-options.md). A law of the same form: selection through registration reaches exactly what registers, and selection through a model separates exactly what the model separates; where the model ties two options, every selection through it selects them alike.
 
+**Used by:** [generalization-through-lumping](generalization-through-lumping.md) · [selection-under-registration-revision](selection-under-registration-revision.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -131,7 +133,7 @@ Aliases: `Becoming.Web.SelectsThrough`, `Becoming.Web.ScoresThrough`, `Becoming.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Selection.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Feedback.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Capture.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 16 October 2026, integration I4b item 2 (Ren chose “Closest gaps first”): Selection.lean's docstring gains a bullet on selection by the record alone, and a section of that name precedes the witnesses; the declarations this record cites are unchanged. The reference takes the new hash and its proof binding moves to core receipt 20261015T193630.814921Z; the new record selection-by-the-record-alone is linked.
 - 16 October 2026, I4b item 2 follow-up (study section 153): Selection.lean changes only in comments (the section “Selection by the record alone” renamed “Selection through a model of the options”), and Learning.lean gains a section of eight theorems linking a model of the options to its lumping; the declarations this record cites are unchanged. Selection.lean take the new hashes, and the proof bindings move to core receipt 20261015T202927.668755Z; the link follows the new id selection-through-a-model-of-the-options.
-- 33 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-through-registration.json).
+- 34 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-through-registration.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

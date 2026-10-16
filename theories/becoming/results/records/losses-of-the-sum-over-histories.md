@@ -49,6 +49,8 @@ The witnesses are on small worlds; that keeping the whole course makes every wei
 - Related, not a proved adapter: [projection-carrying-a-law](projection-carrying-a-law.md). The loss of memory is a loss of the description: configurations keeping what is needed carry the law.
 - Related, not a proved adapter: [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md). The carried difference is a sum over histories of counting weights: order j of Becoming.Loops is horizon j + 1; every sum over histories expands by order, exact up to horizon j.
 
+**Used by:** [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md) · [weights-count-situations](weights-count-situations.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -83,4 +85,4 @@ Aliases: `Becoming.Weights.truncation`, `Becoming.counting_truncation_le`, `Beco
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 16 October 2026, P121 and P122 (the orders of a carried difference as a sum over histories, how loops form within the unfolding, study sections 155 and 156): related adds orders-as-a-sum-over-histories: the two integrations joined. Statement and proofs unchanged.
-- 26 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](losses-of-the-sum-over-histories.json).
+- 27 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](losses-of-the-sum-over-histories.json).

@@ -87,6 +87,8 @@ Ren's proposal asks to explain formation, persistence, transformation, degenerat
 - related, not a proved adapter: [theory-of-becoming-foundation](theory-of-becoming-foundation.md). Completes P20 under the plan's section 9: in a family dissipated on, rising and falling are joined within one step.
 - related, not a proved adapter: [life-as-condition-of-life](life-as-condition-of-life.md). Brood is given there: generation after generation, each given by the one before; this adds that nothing falls there and nothing is dissipated.
 
+**Used by:** [continued-change-needs-openness](continued-change-needs-openness.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -121,7 +123,7 @@ Aliases: `Becoming.Flow.Balances.fall_taken`, `Becoming.Flow.Balances.takenBy`, 
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A10: the statement dropped balance: Flow.rise_with_fall takes L.Balances W (as hypothesis 1 says), so the statement now begins "In a balanced flow". Earlier text in text_versions.
-- 70 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](rising-and-falling-in-one-exchange.json).
+- 71 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](rising-and-falling-in-one-exchange.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

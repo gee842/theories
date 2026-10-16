@@ -38,6 +38,8 @@ Boundary source: [GenerativeClosure.lean](../../../../experiments/integrated-cor
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.
 
 
+**Used by:** [finite-basis-common-interpretation](finite-basis-common-interpretation.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

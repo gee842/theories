@@ -52,6 +52,8 @@ Reuse the completed measurement correspondence. Stronger mechanism claims requir
 
 - none
 
+**Used by:** [context-sensitive-updating-correspondence](context-sensitive-updating-correspondence.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 

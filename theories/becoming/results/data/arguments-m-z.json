@@ -1641,6 +1641,30 @@
     "status_code": "integrated-universal-open"
   },
   {
+    "id": "the-theory-of-becoming-reference",
+    "source": "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
+    "title_zh": "",
+    "title_en": "The Theory of Becoming: reference catalogue",
+    "category": "formal-index",
+    "status": "参考与导航 / Reference and navigation",
+    "status_code": "reference",
+    "argument_zh": "",
+    "argument_en": "Keeps the material moved out of the canonical chapter in the restructure of 17 October 2026: the full declaration lists of “In one sentence” and “The theory stated in full” (items 1–11), each with correction notes where the earlier wording was stronger than the Lean statement; the declaration catalogue of the whole, moved from “Part I stated whole”, with the review's corrections of hypotheses applied; and the module table of §9, read from the core receipt. It states nothing new.",
+    "significance_zh": "",
+    "significance_en": "Lets the canonical chapter state the theory in prose while every declaration name, correction note and module row stays findable in one place.",
+    "scope_zh": "",
+    "scope_en": "A reference companion to the canonical chapter; the chapter governs. Correction notes record where earlier wording overclaimed; the Lean declarations decide what is proved. No new theorem or compiler run.",
+    "next_zh": "",
+    "next_en": "Keep the module table in step with the core receipt; reread this entry when the chapter's formal spine changes.",
+    "lean": [
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean"
+    ],
+    "evidence": [
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json"
+    ],
+    "source_sha256": "3a067dec2fa6286b4c66d50f338d5875ad592ba74ee65e46b670b938243f8dca"
+  },
+  {
     "id": "the-theory-of-evolution",
     "title_zh": "演化之论",
     "title_en": "The Theory of Evolution",

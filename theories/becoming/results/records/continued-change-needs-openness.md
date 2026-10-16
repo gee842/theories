@@ -120,6 +120,8 @@ The rests of space-and-its-parts makes a world's rest unrefutable through finite
 - related, not a proved adapter: [space-and-its-parts](space-and-its-parts.md). rests there assumes finiteness; the rest theorem replaces finiteness with censuses and enclosure, and rests_unrefuted is its finite case (World.Finite.comes_to_rest_unrefuted, P26).
 - related, not a proved adapter: [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md). Openness is exchange and inflow is gain: there, where the gain novelty needs comes from.
 
+**Used by:** [counting-standing-and-dependence](counting-standing-and-dependence.md) · [counting-under-enclosure](counting-under-enclosure.md) · [entropy-history-and-record](entropy-history-and-record.md) · [rest-at-every-resolution](rest-at-every-resolution.md) · [rest-with-refinement-counted](rest-with-refinement-counted.md) · [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -170,7 +172,7 @@ Aliases: `Becoming.Web.StandingCensus`, `Becoming.Flow.AroundStanding`, `Becomin
 - 16 October 2026, P111 (where novelty's gain comes from, study section 148): related adds where-novelty-gain-comes-from. Statement and proofs unchanged.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A1, A4: the statement said the world "comes to rest", while the Lean (World.comes_to_rest_unrefuted, rests_unrefuted_enclosed) proves only ¬¬∃N, RestsFrom N; it now says the world "cannot be refuted to come to rest", the exchange "does not recur" (a negated recurrence). World.arising_opens concludes ¬∀t≥T, Enclosed t, so law 16's positive gloss "it exchanges beyond every finite family" becomes "it is enclosed from no step on". The same wording is fixed in does_not_show 1 (World.rest_few assumes the rest theorem's conditions, not rest) and in the correspondence. Earlier text in text_versions.
-- 62 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](continued-change-needs-openness.json).
+- 63 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](continued-change-needs-openness.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

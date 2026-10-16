@@ -6,6 +6,7 @@
     "en": "Completed explicit-axiom route"
   },
   "scope_type": "completed-route",
+  "state": "completed",
   "scope": {
     "zh": "适用于8日对齐伦理奠基与方向任务，不对其他会话加完成门槛。",
     "en": "Applies to the 8 October alignment grounding and direction task, without imposing completion gates on other sessions."

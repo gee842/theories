@@ -107,7 +107,7 @@
     {
       "path": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
       "role": "statement",
-      "sha256": "a3253fa348ea1d4458d522829d6507c69c083165bdf1ecb9604f61e5d77f7283",
+      "sha256": "4802de55a9722c45a4cd0a9d85b024f16d6aee6a422bb1d7d5186b34f3068b16",
       "declarations": []
     },
     {
@@ -225,6 +225,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ALIGNMENT-DIRECTION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): ALIGNMENT-DIRECTION.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

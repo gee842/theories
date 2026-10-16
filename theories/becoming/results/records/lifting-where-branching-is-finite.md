@@ -63,6 +63,8 @@ Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification ta
 - related, not a proved adapter: [market-supported-finite-transition](market-supported-finite-transition.md). Its kernel_iff_lasts is the dual: what no course leaves is what lasts every horizon, with no finite branching or principle needed.
 - related, not a proved adapter: [where-a-run-goes-on](where-a-run-goes-on.md). Answers its next step, a run without a selection: within finitely many configurations a run starts wherever courses of every length do, with no selection and no EitherThroughout; where a test recognizes the moves a run is built by search; asked of every process, a run from every member of every family that keeps moving is exactly dependent choice.
 
+**Used by:** [identification-where-runs-part](identification-where-runs-part.md) · [where-a-run-goes-on](where-a-run-goes-on.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -94,7 +96,7 @@ Aliases: `Becoming.Lasting.lifting`, `Becoming.Lasting.step_iff_either`, `Becomi
 - 16 October 2026, eighteenth review (R18): the reading gains the AI's note that EitherThroughout gives only one successor with courses of every length and lifting to a run takes a selection as well (already in does_not_show 2; the reading part of review item 40). The correspondence names König 1927 and weak König's lemma ⇔ LLPO (Ishihara 1990; Bridges–Richman 1987) (item 39, K8); naming EitherThroughout as LLPO waits for P129's proof (items 40, 41). Claim narrowed; no theorem changed.
 - 16 October 2026, release-readiness review (P129, eighteenth review items 40 and 41): EitherThroughout is proved exactly LLPO in the decided-family form (eitherThroughout_iff_llpoForDecided) and gives LLPO in its Boolean form; a new law records it. Weak König's lemma ⇔ LLPO stays a literature citation, not proved in the core. Claim unchanged.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A7, B6: standard boundary no-ethical-premise ("No ethical premise and no Lean axiom is used") replaced by no-ethical-premise-core-axiom-free: the receipts of the cited periphery correspondence declarations list propext, Quot.sound (and Classical.choice), which fails that key's cite_when; the core declarations still have empty axiom reports; the validation scope said "not independently reviewed", while the eighteenth review (R18) read and corrected this record; R18 is an AI read-only review with no Lean rebuild, so it now says "reviewed by the eighteenth review (AI, read-only)", not "independently". The independent review in the next step stays: whether R18 counts as the review asked for is Ren's decision. Earlier text in text_versions.
-- 16 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](lifting-where-branching-is-finite.json).
+- 17 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](lifting-where-branching-is-finite.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

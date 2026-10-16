@@ -710,7 +710,7 @@
     {
       "path": "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
       "role": "integration",
-      "sha256": "6ef706abf2778b42ee5745d241461c292d89434bdb7b2b50afcdd47571b2ec9b",
+      "sha256": "e5fe2c4999e99d8391926a7f99f9e805e47aa67605bac46b0393f6bfc20bb50f",
       "declarations": []
     },
     {
@@ -981,7 +981,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
       "role": "review",
-      "sha256": "fc78145baee699bd8816d8c2ab1c4eb667223204e97db5fd85e64563726aaad9",
+      "sha256": "4d67672ab7df1ee71c3cf111d46fb4999bc0fd8ba7e331ad09b75418aa670f03",
       "declarations": []
     },
     {
@@ -1205,7 +1205,7 @@
     {
       "path": "theories/becoming/chapters/KNOWLEDGE.md",
       "role": "review",
-      "sha256": "2771a5ae8bc8189beac0d3866dc1841a2f937af69e40350d4f64e4f6780c50a2",
+      "sha256": "1fcc40ecedb21533e8ed65fcdf5a6814e6861b74a4f28c317873a7f9eb4a5b80",
       "declarations": []
     },
     {
@@ -1612,6 +1612,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in CORE-CONSTRAINT-AND-WISDOM.md, EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md, KNOWLEDGE-CONTENT-AND-ERROR.md, KNOWLEDGE-REASONS-AND-STANDARDS.md, KNOWLEDGE.md, MATHEMATICS-GROUNDING-RESOLUTION.md, META-ATTRACTOR-RECONCILIATION.md, SCIENTIFIC-INQUIRY-CONDITIONS.md, WISDOM-AND-CONTEXT.md, WISDOM-RESPONSE-NECESSITY.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): KNOWLEDGE.md, META-ATTRACTOR-RECONCILIATION.md, WISDOM-AND-CONTEXT.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

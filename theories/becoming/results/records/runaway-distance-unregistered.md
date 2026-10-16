@@ -76,6 +76,8 @@ Ren's “wisdoms to avoid run away feedbacks”; testing-within-registration rea
 - related, not a proved adapter: [loops-within-what-a-law-reads](loops-within-what-a-law-reads.md). Within one law: loops lie within what is read and form where reading grows; for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break.
 - related, not a proved adapter: [observation-is-a-route](observation-is-a-route.md). Observation is a route of readings from what is observed: a difference goes only downstream, and a formation registers a stock only through a level it reads downstream of it; a route forms by closing.
 
+**Used by:** [loops-within-what-a-law-reads](loops-within-what-a-law-reads.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -111,7 +113,7 @@ Aliases: `Becoming.Flow.PolicyThrough`, `Becoming.Flow.exchangeFollows_of_policy
 - 16 October 2026, P121 and P122 (the orders of a carried difference as a sum over histories, how loops form within the unfolding, study sections 155 and 156): the loop item of the next step notes that how a loop forms is given by how-loops-form, connecting it to the policies staying a next step; related adds how-loops-form. Statement and proofs unchanged.
 - 16 October 2026, P124 (loops within what a law reads, and the break, study section 157): the first item of the next step, connecting the policies here to loops, is answered by loops-within-what-a-law-reads and becomes how a formation comes to observe a stock it depends on; related adds loops-within-what-a-law-reads. Statement and proofs unchanged.
 - 16 October 2026, P125 (observation as a route from what is observed, study section 159): the first item of the next step, how a formation comes to observe a stock it depends on, is answered by observation-is-a-route (the obs given here is a route from what is observed, direct observation being the route of length zero) and dropped; related adds observation-is-a-route. Statement and proofs unchanged.
-- 38 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](runaway-distance-unregistered.json).
+- 39 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](runaway-distance-unregistered.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

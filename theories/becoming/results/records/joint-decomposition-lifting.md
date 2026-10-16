@@ -38,6 +38,8 @@ Boundary source: [ExplanatoryJointness.lean](../../../../experiments/integrated-
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.
 
 
+**Used by:** [joint-code-plan-lifting](joint-code-plan-lifting.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

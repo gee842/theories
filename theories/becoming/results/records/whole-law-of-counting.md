@@ -124,6 +124,8 @@ The full statement (P23) says that the laws of the whole exclude no unfolding be
 - related, not a proved adapter: [counting-standing-and-dependence](counting-standing-and-dependence.md). The laws of counting what stands and what depends in the same unfolding: where nothing is enclosed those of what stands are those of activity, and the counts of dependence are not bound by the premises.
 - related, not a proved adapter: [counts-exist-where-decided](counts-exist-where-decided.md). Counting by marks is counting where decided: a count exists exactly where what it counts is decided, and a decision procedure's marks sum to the count.
 
+**Used by:** [counting-standing-and-dependence](counting-standing-and-dependence.md) · [counting-under-enclosure](counting-under-enclosure.md) · [laws-of-one-step-complete](laws-of-one-step-complete.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -169,7 +171,7 @@ Aliases: `Becoming.Tally`, `Becoming.Listed.keeps`, `Becoming.Listed.tally`, `Be
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D2, D31, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: in the correspondence, "the rest theorem brings counting to rest" becomes "leaves counting unrefuted to come to rest", the rest theorem's ¬¬ strength. Earlier text in text_versions.
-- 61 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-law-of-counting.json).
+- 62 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-law-of-counting.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

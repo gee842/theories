@@ -100,6 +100,8 @@ The fifth independent review (I3) found that in the flow form arising contribute
 - related, not a proved adapter: [reserve-defers-ending](reserve-defers-ending.md). Where activity outlasts support, a reserve defers the end without escaping it; standing outlasting activity is stated here by came_to_stand, Provisioned and Sleeper, together answering this record's earlier next step (activity and standing out of step).
 - related, not a proved adapter: [laws-of-one-step](laws-of-one-step.md). The local laws use Flow.BalancesOn of laws-of-one-step; this is reuse in the proof. No dependency edge joins the records, since laws-of-one-step depends on this one through its chain of dependencies.
 
+**Used by:** [coming-and-ceasing-keep-pace](coming-and-ceasing-keep-pace.md) · [continued-change-needs-openness](continued-change-needs-openness.md) · [continuing-self-fed-from-beyond](continuing-self-fed-from-beyond.md) · [evolution-on-descent](evolution-on-descent.md) · [living-on-and-descent](living-on-and-descent.md) · [rising-and-falling-in-one-exchange](rising-and-falling-in-one-exchange.md) · [space-and-its-parts](space-and-its-parts.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -144,7 +146,7 @@ Aliases: `Becoming.Web.Embodied.given_of_arises`, `Becoming.Web.Embodied.repleni
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D4): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: generation_opens, rising_opens and standing_opens conclude ¬∀t≥T, ClosedAt, and generation_draws_in, rising_draws_in and standing_draws_in conclude ¬∀t≥N, Inward. The statement and laws 4, 6 and 13 glossed them as exchange or drawing in "at arbitrarily late steps"; they now say "closed / inward from no step on", with "that a later exchange occurs cannot be refuted". Earlier text in text_versions.
-- 78 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](generation-is-replenishment.json).
+- 79 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](generation-is-replenishment.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

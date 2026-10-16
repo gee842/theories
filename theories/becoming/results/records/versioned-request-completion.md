@@ -39,6 +39,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 
 - Related, not a proved adapter: [acquired-revision-of-pending-task](acquired-revision-of-pending-task.md). The existing consumer passes a re-encoded head to this completion interface and retains a later-condition failure. This records interpretive context; formal reuse remains directed in the consumer record, with no reverse inference.
 
+**Used by:** [acquired-revision-of-pending-task](acquired-revision-of-pending-task.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -73,4 +75,4 @@ Aliases: `CorrectionVersioned.valid_head_completes`, `Becoming.Countdown.Advance
 - 2026-10-09: reconciles the local result with Ren’s clarification about cognition, circumstances, boundaries and direction under responsive transformation, reusing the completed pending-task revision from another study. The theorem, proof binding and checked status are unchanged; terminology and rereading are not new results.
 - 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: counted work finishes in exactly work + 1 ticks, exactly when the fuel covers them, and no shorter run finishes; the head becomes an instance of Countdown.Advances through the periphery VersionedTaskInstances (Lean 4.30.0-rc2 with Mathlib), and valid_head_completes is an instance. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
 - 16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: unfuelled work completes in work + 1 moves as a plan of the tick's process (Advances.completes_plan); every course of at most work moves of that process leaves the task pending, with the work lowered by the moves taken (pending_before_course). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added.
-- 13 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](versioned-request-completion.json).
+- 14 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](versioned-request-completion.json).

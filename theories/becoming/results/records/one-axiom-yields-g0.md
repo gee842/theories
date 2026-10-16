@@ -118,6 +118,8 @@ Ren's axiom is “for anything, its continuation into the future has significanc
 - related, not a proved adapter: [presupposition-scopes](presupposition-scopes.md). Route (b), without the axiom, and the axiom are one presupposition at narrow and wide scope; they differ only by the step of invariance.
 - related, not a proved adapter: [feeding-closure](feeding-closure.md). Route (b) reaches, with no axiom, the feeding closure a continuation depends on.
 
+**Used by:** [axiom-decomposition](axiom-decomposition.md) · [closure-verdict-meets-axiom](closure-verdict-meets-axiom.md) · [comparison-within-reach](comparison-within-reach.md) · [levels-of-closure](levels-of-closure.md) · [open-form-realization-under-revision](open-form-realization-under-revision.md) · [presupposition-scopes](presupposition-scopes.md) · [ranking-under-readings](ranking-under-readings.md) · [significance-retained-within-margin](significance-retained-within-margin.md) · [whole-first-and-bounded-centers](whole-first-and-bounded-centers.md) · [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -159,7 +161,7 @@ Aliases: `Becoming.Unrestricted`, `Becoming.bounded`, `Becoming.bounded_rival`, 
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D16): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Significance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Admission.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Relevance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A12, B6: a does_not_show item added: Web.significance_undetermined compares sig ≡ ⊤ with sig ≡ ⊥ and shows only that a representation without significance does not entail it (NONDUAL-METHOD's freely toggled predicate), not that the condition is needed. The next step listed "route (b), without the axiom", which feeding-closure and presupposition-scopes state with its relation to the axiom; it now names what remains, the step of invariance (kept for Ren by D21), and two related entries are added. Earlier text in text_versions.
-- 56 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](one-axiom-yields-g0.json).
+- 57 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](one-axiom-yields-g0.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

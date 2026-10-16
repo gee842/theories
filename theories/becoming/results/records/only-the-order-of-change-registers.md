@@ -51,6 +51,8 @@ The moving step for each step read is supplied for the removal (Stutter.Moves); 
 - Related, not a proved adapter: [continuous-time-as-tower](continuous-time-as-tower.md). Continuous time as a tower of ever-finer discrete readings; here the other direction: inserting idle steps.
 - Related, not a proved adapter: [exchanges-commute-unless-joined](exchanges-commute-unless-joined.md). The same module: the order of consecutive independent exchanges.
 
+**Used by:** [exchanges-commute-unless-joined](exchanges-commute-unless-joined.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -83,4 +85,4 @@ Aliases: `Becoming.Stutter`, `Becoming.World.stutter_premises_iff`, `Becoming.st
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Order.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged.
-- 26 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](only-the-order-of-change-registers.json).
+- 27 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](only-the-order-of-change-registers.json).

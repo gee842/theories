@@ -72,6 +72,8 @@ Ren, 14 October 2026: “why do we need "World"? wasn't this about the whole and
 - related, not a proved adapter: [premises-read-off-the-exchange](premises-read-off-the-exchange.md). Step 2 of the same re-founding: the premises read off the exchange, with states of parts remaining.
 - related, not a proved adapter: [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md). Advances its reading “novelty without end is gain without bound from beyond the part”: with the rest counted every rise is given, and novelty needs gain, under the first law through the boundary or from the rest.
 
+**Used by:** [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -98,7 +100,7 @@ Aliases: `laws of returning on the levels alone`, `只用水平的回返`, `nove
 - 16 October 2026, P111 (where novelty's gain comes from, study section 148): related adds where-novelty-gain-comes-from. Statement and proofs unchanged.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Novelty.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Imbalance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-mz-14: "returns" in the title and statement means revisiting here (revisits_of_bounded: from every step on some configuration takes one value at two steps; returns_of_bounded is ¬¬Revisits), unlike Recurrence's Law.Returns (the start comes back); it now says "revisits". Earlier text in text_versions.
-- 9 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](returning-novelty-forgetting-on-levels.json).
+- 10 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](returning-novelty-forgetting-on-levels.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

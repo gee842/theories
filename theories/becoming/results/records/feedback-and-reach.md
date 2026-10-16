@@ -79,6 +79,8 @@ Ren's long-term objectives: “I want to push the frontier as strong as possible
 - related, not a proved adapter: [counterfactual-is-the-course](counterfactual-is-the-course.md). Answers this record's next_delta item of a comparison whose responses the dynamics give, where the rest follows a law of exchange reading what has stood.
 - related, not a proved adapter: [how-much-difference-arrives](how-much-difference-arrives.md). Answers the measure in its next step: where the rest follows a law with given coupling strengths, the difference that arrives is at most the carried amount, which is attained (most_difference_arrives).
 
+**Used by:** [comparison-where-the-rest-responds](comparison-where-the-rest-responds.md) · [comparison-within-reach](comparison-within-reach.md) · [selection-through-registration](selection-through-registration.md) · [testing-within-registration](testing-within-registration.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -115,7 +117,7 @@ Aliases: `Becoming.Flow.Balances.levels_agree`, `Becoming.Flow.Balances.support_
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D20): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Feedback.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Admission.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Regions.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 42 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](feedback-and-reach.json).
+- 43 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](feedback-and-reach.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

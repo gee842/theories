@@ -92,6 +92,8 @@ In “Truth exist” Ren wrote: “There is a set of universal invariations, tha
   - Preserved conditions: None. [Standpoints.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean)
 - related, not a proved adapter: [self-good-reachable-g0](self-good-reachable-g0.md). The evaluator route's tolerance with Chain carries all of G0's content beyond S0; here the step of boundary-invariance likewise carries all of the axiom's content beyond the presupposition, in one step, so it does not inherit the sorites objection (the evaluator-route review, P3).
 
+**Used by:** [unity-of-readings](unity-of-readings.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -130,7 +132,7 @@ Aliases: `Becoming.boundaryInvariant_iff_extends`, `Becoming.boundaryInvariant_i
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D21): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Boundaries.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Feedback.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Interdependence.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Significance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Standpoints.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A12: does_not_show 1 now says the decomposition is logically the identity A ⇔ P ∧ (P → A), given A → P: it locates the step and derives nothing. Earlier text in text_versions.
-- 43 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](axiom-decomposition.json).
+- 44 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](axiom-decomposition.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

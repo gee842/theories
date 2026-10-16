@@ -75,6 +75,8 @@ This is an existence result: one process suffices to show that a finite prefix d
 - related, not a proved adapter: [becoming-return-grades](becoming-return-grades.md). Return grades and the formation-level cycle reading are fixed by the whole run (Renewable.cycle_reading_not_finite), the event-level cycle reading by a finite history; this result constrains the latter.
 - related, not a proved adapter: [what-a-finite-history-refutes](what-a-finite-history-refutes.md). The other half of the module: no finite prefix decides the whole-run classification, while a reading finite histories refute holds, up to double negation, where a run adheres to it, and refutability of readings made of tests is exactly Markov's principle.
 
+**Used by:** [what-a-finite-history-refutes](what-a-finite-history-refutes.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -110,7 +112,7 @@ Aliases: `Becoming.Renewable.prefix_does_not_decide`, `Becoming.Renewable.finite
 - 14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title and statement are kept; the claim was split into 7 laws; limitations and per-round receipt notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The corollaries sentence lost “(P49, Becoming.Testing)” (the module is in law 7's declarations and the evidence paragraph; the round stays in history and the snapshot), and its Chinese “不认可” became “记入”, matching the English “includes” and the rest of the record. The second review's summary matches the same item in joint-difference-making. Every earlier sentence is mapped in the migration table [becoming-finite-horizon.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-finite-horizon.md); the exact earlier record is the last text_versions entry.
 - 16 October 2026, integration I4b item 3 (Ren chose “Closest gaps first”): the docstring of Horizon.lean gains a paragraph on what a finite history refutes, and a section of that name follows; the declarations this record cites are unchanged. The reference takes the new hash, the Horizon proof binding moves to core receipt 20261015T184418.886926Z (the Testing binding is unchanged), and the new record what-a-finite-history-refutes is linked.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A9: the statement said "whether drawing renews or consumes is left open by every finite history", universal over every finite history of every process; Renewable.prefix_does_not_decide, finite_reading_includes_consumption and Feedback.prefix_does_not_decide give two runs agreeing before h with different classes only in the renewable process and the support-gated law, so the statement now has that scope, as does_not_show 1 already said. Earlier text in text_versions.
-- 88 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](becoming-finite-horizon.json).
+- 89 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](becoming-finite-horizon.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

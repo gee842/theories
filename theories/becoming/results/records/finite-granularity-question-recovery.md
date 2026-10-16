@@ -56,6 +56,8 @@ Boundary source: [ExplanatoryGranularityBoundary.lean](../../../../experiments/i
 - Related, not a proved adapter: [guarded-program-question-recovery](guarded-program-question-recovery.md). New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation.
 - Related, not a proved adapter: [residual-continuation-correspondence](residual-continuation-correspondence.md). New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation.
 
+**Used by:** [prefix-observation-loss](prefix-observation-loss.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

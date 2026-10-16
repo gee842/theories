@@ -45,6 +45,8 @@ Does not derive the full meanings of prior operations, category/attention origin
 **Preserved conditions:** The new history preserves idealBond and acquires each word binding from encounters; it does not invoke fixed decodeChunk. [AcquiredBinding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean)
 
 
+**Used by:** [enacted-scene-binding](enacted-scene-binding.md) · [historical-source-binding](historical-source-binding.md) · [retrospective-source-binding](retrospective-source-binding.md) · [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -84,4 +86,4 @@ Aliases: `Generative.AcquiredBinding.acquired_binding_and_grouping_compose`, `Be
 - 2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes.
 - 2026-10-14: under the general-law audit of older records, the claim now states the law first: the word-by-word reading law (Becoming.Segmentation) and the interpretation law for acquired lexicons (periphery, MachineInstances); learned 32 is an instance. The existing theorem that unique binding is correct under coverage was already general. Built with scratch_build; the landing run binds the receipts. The original theorems, receipt and counterexamples are unchanged.
 - 16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: where every word is a course of a process from s back to s and grouping recovers the words, every course of words is read as the meanings of its words exactly when each word is read as its meaning (course_reads_iff; words compose courses, encode_course). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added.
-- 14 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](acquired-binding-compositional-use.json).
+- 15 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](acquired-binding-compositional-use.json).

@@ -71,6 +71,8 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
 - related, not a proved adapter: [how-much-difference-arrives](how-much-difference-arrives.md). Answers the measure in its next step: the coupling strengths measure sensitivity, strength zero being exactly insensitivity for a law of what has stood (ExchangeLaw.insensitiveAt_iff_strength_zero); how much difference arrives is at most the carried amount, which is attained.
 - related, not a proved adapter: [what-a-law-of-the-whole-and-no-part-takes](what-a-law-of-the-whole-and-no-part-takes.md). Answers the first item of its next step: with the conditions numbered, a counterexample exists exactly where a rule decides, of every Boolean sequence, whether it is false throughout (the weak limited principle as a rule), attained by the law of levels that never vanish, built from the rule alone; the decision of vanishing the tail law takes is exactly the limited principle as a rule.
 
+**Used by:** [what-a-law-of-the-whole-and-no-part-takes](what-a-law-of-the-whole-and-no-part-takes.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -101,7 +103,7 @@ Aliases: `least registration`, `最小的识`, `reads finitely many conditions`,
 - 16 October 2026, eighteenth review (R18): least_registration concludes ¬¬ Registers, so the statement and law 1 now say the registration is least up to double negation (review item 22, O2). The Chinese statement's “with infinitely many conditions this cannot be dropped” and counterexample 0's “without continuity the least registration fails” overstated: the tail law takes the decision of vanishing as a parameter, that decision gives LPO (lpo_of_vanish_decided), and every counterexample gives WLPO (wlpo_of_not_through_sensitive), so in the core the condition is neither refuted nor shown droppable (O1; release-readiness review §2 item 8). The two statements now say the same; “with any number of conditions” leaves the statement and is carried by the title and the laws. The correspondence names Bishop 1967, Bridges–Richman 1987 and Ishihara (K2). Claim narrowed; no theorem changed.
 - 16 October 2026, release-readiness review (P129): does_not_show 3 called open where the strength of a counterexample lies between the weak limited principle and the decision of vanishing; P126 answered it: with the conditions numbered, a counterexample exists exactly where the weak limited principle holds as a rule (not_through_sensitive_iff_rule). The item narrows to conditions not numbered by the natural numbers. Claim unchanged.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 7 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](sensitivity-is-the-least-registration.json).
+- 8 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](sensitivity-is-the-least-registration.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

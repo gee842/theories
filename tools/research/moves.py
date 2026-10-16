@@ -563,7 +563,7 @@ class Plan:
                 inventory_set = set(self.files if getattr(self, 'files', None) else tracked(self.root)) | set(untracked(self.root))
                 command = [rg, '-l', '-0', '-F', '--hidden', '--no-messages', '-f', name, '-g', '!.git']
                 command += [x for prefix in self.EXCLUDED for x in ('-g', '!/' + prefix + '**')]
-                out = subprocess.run(command, cwd=self.root, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                out = subprocess.run(command, cwd=self.root, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                 if out.returncode in (0, 1):
                     found = {p[2:] if p.startswith('./') else p for p in out.stdout.decode().split('\0') if p}
                     # Tracked files that a .gitignore rule covers are searched by name.
@@ -571,7 +571,7 @@ class Plan:
                               if p and not p.startswith(self.EXCLUDED)]
                     if forced:
                         more = subprocess.run([rg, '-l', '-0', '-F', '--no-messages', '-f', name, '--', *forced],
-                                              cwd=self.root, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                                              cwd=self.root, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                         found |= {p for p in more.stdout.decode().split('\0') if p}
                     return {p for p in found if p in inventory_set and not self.binary(p)}
             out = subprocess.run(['git', 'grep', '-I', '-l', '-z', '--untracked', '-F', '-f', name, '--',

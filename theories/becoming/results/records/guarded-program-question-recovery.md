@@ -46,6 +46,8 @@ Does not cover unbounded loops, actual guard acquisition, probabilities, deploym
 
 - Related, not a proved adapter: [finite-granularity-question-recovery](finite-granularity-question-recovery.md). word_program_exact embeds fixed finite words into the new grammar; generic compilation is extended, without recounting historical wrappers as discoveries.
 
+**Used by:** [residual-continuation-correspondence](residual-continuation-correspondence.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

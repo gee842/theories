@@ -66,6 +66,8 @@ Equal minimum requirements fix admission only; distinct lives, histories and exp
 - Related, not a proved adapter: [identity-across-steps](identity-across-steps.md). Bijective reidentification and continuity retain their scope; many-to-one description here does not make lives interchangeable.
 - Related, not a proved adapter: [classification-robust-generative-comparison](classification-robust-generative-comparison.md). The earlier result varies priority classification of fixed contents; this addresses descriptive granularity without reopening completed G0/J inferences.
 
+**Used by:** [finite-aggregation-within-restorable-basic-losses](finite-aggregation-within-restorable-basic-losses.md) (interpretive) · [wisdom-root](wisdom-root.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

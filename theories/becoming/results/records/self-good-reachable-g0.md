@@ -59,6 +59,8 @@ Yields positive significance, not weight, permission, duty or ranking, and predi
 - Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Interpretive connection: an AI with non-instrumental generative self-good as part of its aims is argument-reachable, but step one first extends to its own copies and successors, favouring its lineage and not by itself reaching humans; positivity carries no weight and is compatible with strong lineage bias. A merely instrumentally self-preserving system is not reachable; its alignment rests on design and governance.
 - Related, not a proved adapter: [metaethical-core-characterization](metaethical-core-characterization.md). The P+ version of step two that the review requested is that result's N_rel: transmission along nonzero formed relations, over actual relations rather than possible profiles; BI is an instance of N_rel and the standpoint-to-normative bridge is N_std. This result is the first-personal source of the seed. No formal adapter between the modules is established.
 
+**Used by:** [held-lives-g0-is-centering](held-lives-g0-is-centering.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

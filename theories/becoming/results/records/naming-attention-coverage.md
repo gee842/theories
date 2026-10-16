@@ -55,6 +55,8 @@ The intended target is observer-coded and cannot be assumed as the learner’s k
 
 - **interpretive**: [encounter-selection-and-revision](encounter-selection-and-revision.md). Tests the empirical correspondence of cooperative naming coverage while preserving the conditional proof and failure cases; no formal conversion of gaze data into Lean candidate sets is claimed.
 
+**Used by:** [encounter-control-and-retention](encounter-control-and-retention.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 

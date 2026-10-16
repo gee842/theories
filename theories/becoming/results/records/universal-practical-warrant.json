@@ -177,7 +177,7 @@
     {
       "path": "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "25ac393dd20101696c3ac32a46f77ff4bc4807512df047d1b710677122491b70",
+      "sha256": "b5a0348ffb899d1d805fc128fb54c00e5f12fa2c9ad91c51bedde874a3ff3214",
       "declarations": []
     },
     {
@@ -265,6 +265,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in UNIFIED-ETHICAL-GROUNDING.md, ZERO-AXIOM-PRACTICAL-JUDGMENT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): ZERO-AXIOM-PRACTICAL-JUDGMENT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

@@ -28,25 +28,49 @@ KINDS = "theorem|lemma|def|abbrev|structure|inductive|opaque|axiom|constant"
 DECL = re.compile(r"^\s*(?:@\[[^\n]*?\]\s*)*(?:(?:private|protected|noncomputable|unsafe|partial|nonrec)\s+)*(?P<kind>" + KINDS + r")\s+(?P<name>«[^»]+»|[^\s\[\]{}():=]+)")
 LINK = re.compile(r"\[[^\]\n]*\]\((<[^>\n]+>|[^\s)]+)(?:\s+\"[^\"]*\")?\)")
 ROLE_LABELS = {
-    "working-source": "当前工作源 / Working source",
-    "audit-driver": "审计入口 / Audit driver",
-    "saved-copy": "构建、验证与冻结副本 / Build, verification and frozen copy",
-    "development-attempt": "开发尝试 / Development attempt",
-    "imported-archive": "导入原件 / Imported archive",
-    "historical-draft": "历史草稿 / Historical draft",
+    "working-source": "Working source",
+    "audit-driver": "Audit driver",
+    "saved-copy": "Build, verification and frozen copy",
+    "development-attempt": "Development attempt",
+    "imported-archive": "Imported archive",
+    "historical-draft": "Historical draft",
 }
+# Each group: (title, conceptual entry, what the group's modules do). The conceptual entry is a
+# repository path: the current chapter (section) that covers the group where that is
+# unambiguous, else the earlier chapter that introduced it, which `current` follows into history.
+# Former titles were bilingual; FORMER keeps their anchors on the index page.
+CANONICAL = "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
 GROUPS = {
-    "ethics": ("规范根据与生成方向 / Normative grounding and generative direction", "UNIFIED-ETHICAL-GROUNDING.md", "检验已明示的规范推理、覆盖与生成条件；伦理前提的根据仍需论证。 / Tests explicit inference, coverage and generative conditions; ethical warrant remains a substantive question."),
-    "valuation": ("评价的形成与良知 / Valuation development and liangzhi", "LIANGZHI-EVOLUTION.md", "连接形成、保留、修正与行动，保留错误、失效与传递条件。 / Connects formation, retention, revision and action, preserving error, failure and transmission conditions."),
-    "inquiry": ("可达询问、接触与过程律 / Attainable inquiry, contact and process laws", "GENERATIVE-CORE-LEAN.md", "把可达路径、证据取得和后续活动连接起来，明确装置与规律前提。 / Connects reachable paths, evidence acquisition and continuation while exposing apparatus and law premises."),
-    "renewal": ("支持与更新 / Support and renewal", "GENERATIVE-GROUNDING.md", "证明特定资源与更新关系的必要条件、充分条件及边界。 / Establishes necessary and sufficient conditions and limits of specified support and renewal relations."),
-    "learning": ("学习、预测与动力学 / Learning, prediction and dynamics", "LEARNING-ROUTE-REVISION.md", "检验形成的读出、预测和调节怎样改变后续活动及其稳定性。 / Tests how formed readouts, prediction and regulation change further activity and stability."),
-    "abstraction": ("抽象、适用性与构成 / Abstraction, applicability and constitution", "ABSTRACTION-ACQUISITION.md", "检查抽象表示、实际使用和修正的对应条件，不把表示存在等同于取得。 / Checks correspondence among representation, actual use and revision without equating representation with acquisition."),
-    "concern": ("关切与共同活动 / Concern and shared activity", "NONINSTRUMENTAL-CONCERN.md", "形式化实际相互影响及关切实现的条件，区分实现机制与规范根据。 / Formalizes actual interdependence and conditions of realized concern, distinguishing mechanism from warrant."),
-    "shared": ("组织形成到可修正评价 / Organizational formation through revisable evaluation", "EVALUATIVE-SUCCESSION.md", "沿同一活动史接续形成、选择、学习、记录、回应与传承，并保留失败情况。 / Connects formation, selection, learning, records, response and succession through actual histories, including failures."),
-    "core": ("生成核心与关系结构 / Generative core and relational structure", "GENERATIVE-CORE-LEAN.md", "给出关系步骤、实际历史、投影与组合的明确数学接口。 / Supplies explicit mathematical interfaces for relational steps, actual histories, projections and composition."),
-    "other": ("其他形式研究 / Other formal studies", "GENERATIVE-GROUNDING.md", "各研究保留自身假设、解释和验证范围。 / Each study retains its own hypotheses, interpretation and validation scope."),
+    "becoming-core": ("Becoming pure core", CANONICAL + "#9-形式脊柱--the-formal-spine", "The spine modules the core receipt lists in its core and foundation layers: they import nothing outside the core, every source declaration has an empty axiom report, and they compile from Lean's prelude."),
+    "becoming-bridge": ("Becoming bridge", CANONICAL + "#9-形式脊柱--the-formal-spine", "The spine modules the core receipt lists in its bridge layer: they join the core to earlier modules by instance or equivalence theorems."),
+    "ethics": ("Normative grounding and generative direction", CANONICAL + "#6-universal-metaethical-core--普遍元伦理核心", "Tests explicit inference, coverage and generative conditions; ethical warrant remains a substantive question."),
+    "valuation": ("Valuation development and liangzhi", "theories/becoming/chapters/LIANGZHI-EVOLUTION.md", "Connects formation, retention, revision and action, preserving error, failure and transmission conditions."),
+    "inquiry": ("Attainable inquiry, contact and process laws", "theories/becoming/chapters/GENERATIVE-CORE-LEAN.md", "Connects reachable paths, evidence acquisition and continuation while exposing apparatus and law premises."),
+    "renewal": ("Support and renewal", "theories/becoming/chapters/GENERATIVE-GROUNDING.md", "Establishes necessary and sufficient conditions and limits of specified support and renewal relations."),
+    "learning": ("Learning, prediction and dynamics", "theories/becoming/chapters/LEARNING-ROUTE-REVISION.md", "Tests how formed readouts, prediction and regulation change further activity and stability."),
+    "abstraction": ("Abstraction, applicability and constitution", "theories/becoming/chapters/ABSTRACTION-ACQUISITION.md", "Checks correspondence among representation, actual use and revision without equating representation with acquisition."),
+    "concern": ("Concern and shared activity", "theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md", "Formalizes actual interdependence and conditions of realized concern, distinguishing mechanism from warrant."),
+    "shared": ("Organizational formation through revisable evaluation", "theories/becoming/chapters/EVALUATIVE-SUCCESSION.md", "Connects formation, selection, learning, records, response and succession through actual histories, including failures."),
+    "core": ("Generative core and relational structure", "theories/becoming/chapters/GENERATIVE-CORE-LEAN.md", "Supplies explicit mathematical interfaces for relational steps, actual histories, projections and composition."),
+    "other": ("Other formal studies", "theories/becoming/chapters/GENERATIVE-GROUNDING.md", "Each study retains its own hypotheses, interpretation and validation scope."),
 }
+FORMER = {
+    "ethics": "规范根据与生成方向 / Normative grounding and generative direction",
+    "valuation": "评价的形成与良知 / Valuation development and liangzhi",
+    "inquiry": "可达询问、接触与过程律 / Attainable inquiry, contact and process laws",
+    "renewal": "支持与更新 / Support and renewal",
+    "learning": "学习、预测与动力学 / Learning, prediction and dynamics",
+    "abstraction": "抽象、适用性与构成 / Abstraction, applicability and constitution",
+    "concern": "关切与共同活动 / Concern and shared activity",
+    "shared": "组织形成到可修正评价 / Organizational formation through revisable evaluation",
+    "core": "生成核心与关系结构 / Generative core and relational structure",
+    "other": "其他形式研究 / Other formal studies",
+}
+# The Becoming core receipt (check_becoming.py writes it); its `modules[].layer` and
+# `source_paths` (relative to the Lean root, the receipt's grandparent) decide the two
+# Becoming groups. The config key `lean_receipt` overrides the path.
+LEAN_RECEIPT = "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json"
+RECEIPT_GROUPS = {"core": "becoming-core", "foundation": "becoming-core", "bridge": "becoming-bridge"}
 
 
 CHAPTERS = "theories/becoming/chapters/"
@@ -191,7 +215,32 @@ def path_role(path: str) -> str | None:
     return None
 
 
+@lru_cache(maxsize=1)
+def receipt_layers() -> dict:
+    """Repository path -> (receipt layer, receipt sha256) for the core receipt's modules."""
+    path = LEAN_RECEIPT
+    try:
+        config = json.loads((ROOT / "_process/research-config.json").read_text())
+        path = config.get("lean_receipt", path) if isinstance(config.get("lean_receipt", path), str) else path
+    except (OSError, ValueError):
+        pass
+    try:
+        data = json.loads((ROOT / path).read_text())
+    except (OSError, ValueError):
+        return {}
+    lean_root = Path(path).parent.parent
+    out = {}
+    for module in data.get("modules", []):
+        name, layer = module.get("module"), module.get("layer")
+        source = data.get("source_paths", {}).get(name)
+        if isinstance(source, str) and layer in RECEIPT_GROUPS:
+            out[(lean_root / source).as_posix()] = (layer, data.get("source_sha256", {}).get(name))
+    return out
+
+
 def group(path: str) -> str:
+    if path in receipt_layers():
+        return RECEIPT_GROUPS[receipt_layers()[path][0]]
     if "/universal-ethics/" in path:
         return "ethics"
     if path.startswith("experiments/valuation-development/"):
@@ -291,6 +340,7 @@ def catalogue() -> tuple[dict, dict]:
             "sha256": digest,
             "role": role(path, content),
             "group": group(path),
+            **({"receipt_layer": receipt_layers()[path][0], "receipt_bytes_match": receipt_layers()[path][1] == digest} if path in receipt_layers() else {}),
             "package_readme": readme,
             "direct_documentation_links_from": refs,
             "proof_status": "not_assessed_by_catalogue",
@@ -347,35 +397,62 @@ def doc_links(file: dict, sources: dict) -> str:
         chosen.append(readme)
     links = []
     for path in chosen:
-        label = "理论 / Theory" if path.startswith("theories/") else "研究 / Study" if path.startswith("_process/") else "包说明 / Package notes"
+        label = "Theory" if path.startswith("theories/") else "Study" if path.startswith("_process/") else "Package notes"
         links.append(mdlink(label, path))
     if not refs and readme:
-        links.append("尚无直接模块文档链接 / No direct module-documentation link found")
-    return " · ".join(links) or "未发现直接文档链接 / No direct documentation link found"
+        links.append("No direct module-documentation link found")
+    if "receipt_layer" in file:
+        links.append(f"Core receipt: {file['receipt_layer']} layer, " + ("bytes as checked" if file["receipt_bytes_match"] else "changed since the receipt"))
+    return " · ".join(links) or "No direct documentation link found"
+
+
+def concept_entry(entry: str) -> str:
+    """The conceptual entry of a group, labelled as history when it is an earlier chapter."""
+    target = current(entry)
+    path, _, fragment = target.partition("#")
+    label = Path(path).stem + (f" §{fragment.split('-')[0]}" if fragment else "")
+    note = " (earlier chapter, kept in history at its original scope)" if "/history/" in "/" + path else ""
+    return f"[{label}]({href(path)}{'#' + fragment if fragment else ''}){note}"
+
+
+def heading(marks: str, text: str, former: str | None = None):
+    return (marks, text, text if former is None else former)
+
+
+def finish(lines: list) -> str:
+    import sys
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
+    from tools.research.registry import finish as join
+    return join(lines)
+
+
+GENERATED = "<!-- Generated by tools/research/lean_catalogue.py (make research-render). Edit Lean sources and their documentation, not this view. -->"
 
 
 def render_index(manifest: dict, sources: dict) -> str:
     s = manifest["statistics"]
     active = [f for f in manifest["files"] if f["role"] in ("working-source", "audit-driver")]
+    H = heading
     rows = [
-        "# Lean 结果导航 / Lean result navigation", "",
-        "这是现有形式化的可再生成目录，与[论证总览](README.md)一起阅读。每个模块可打开原始 Lean、具名定理清单和已有范围／验证文档。 / This reproducible inventory accompanies the [argument overview](README.md), linking source modules, named declarations and existing scope/validation records.", "",
-        "**验证含义 / Validation meaning.** 本轮仅建立文档目录，没有重新编译 Lean，也未把现行源码逐一绑定到旧验证回执。模块存在、声明名和空的文本扫描均不证明编译成功。请以链接中的具体回执、源码哈希、编译器、假设、依赖审计和对应论证为准。 / This catalogue does not rerun Lean or bind current sources to prior receipts. Source presence, declaration names and clean textual scans do not establish successful verification. Consult the linked records for the exact source hashes, compiler, hypotheses, dependency audit and correspondence argument.", "",
-        "伦理论证的前提根据、形式推理、实际识别／动机／实施和普遍适用性保持不同的证明责任；这并不把它们划为彼此外在的现实领域。 / Warrant of ethical premises, valid inference, recognition/motivation/implementation and universal scope retain distinct evidential obligations within the same unfolding.", "",
-        "## 怎么查 / How to browse", "",
-        "- 按研究方向：使用下方模块表；理论／研究链接来自真实的源码链接，包说明取最近的 README，其中记录的验证未必覆盖该目录的每个模块。 / By research direction: theory/study links are actual source backlinks; package notes are the nearest README, whose recorded verification may not cover every module in its directory.",
-        "- 按定理名：打开[具名声明清单](LEAN-DECLARATIONS.md)，选择方向后搜索，或在编辑器搜索整个 `lean-declarations/` 目录。每条定理链接到原文件行；`#L` 行锚由 GitHub 支持，本地阅读器可能只打开文件。 / By theorem name: choose a topic in the [declaration list](LEAN-DECLARATIONS.md), or search the whole `lean-declarations/` folder in an editor. GitHub supports source-line fragments; local readers may open only the file.",
-        "- 程序化读取：[Lean 完整清单](data/lean-index.json)含冻结副本以外的所有文件、哈希、导入、声明、行号、角色及相同字节分组；[文档关联清单](data/source-index.json)保存实际文档链接。 / Machine-readable: the full inventory contains every path except saved copies, with its hash, imports, declarations, lines, role and byte-identity group; the documentary index preserves actual links.", "",
-        "## 覆盖范围 / Coverage", "",
-        f"本次目录包含 **{s['lean_paths']:,} 个 `.lean` 路径、{s['distinct_byte_contents']:,} 份不同字节内容**；其中 {s['byte_identical_duplicate_groups']:,} 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **{s['lean_paths']:,} `.lean` paths and {s['distinct_byte_contents']:,} distinct byte contents**, including {s['byte_identical_duplicate_groups']:,} groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.", "",
-        "| 文件角色 / File role | 路径数 / Paths |", "|---|---:|",
+        H("#", "Lean result navigation", "Lean 结果导航 / Lean result navigation"), "", GENERATED, "",
+        "This reproducible inventory accompanies the [argument overview](README.md), linking source modules, named declarations and existing scope and validation records.", "",
+        "**Validation meaning.** This catalogue does not rerun Lean or bind current sources to prior receipts, except that the two Becoming groups are read from the core receipt and say whether each module's bytes are still the checked ones. Source presence, declaration names and clean textual scans do not establish successful verification. Consult the linked records for the exact source hashes, compiler, hypotheses, dependency audit and correspondence argument.", "",
+        "Warrant of ethical premises, valid inference, recognition, motivation and implementation, and universal scope retain distinct evidential obligations within the same unfolding.", "",
+        H("##", "How to browse", "怎么查 / How to browse"), "",
+        "- By research direction: use the module tables below. Theory and study links are actual source backlinks; package notes are the nearest README, whose recorded verification may not cover every module in its directory.",
+        "- By theorem name: choose a topic in the [declaration list](LEAN-DECLARATIONS.md), or search the whole `lean-declarations/` folder in an editor. Each theorem links to its source line; GitHub supports `#L` line fragments, local readers may open only the file.",
+        "- Machine-readable: the [full inventory](data/lean-index.json) contains every path except saved copies, with its hash, imports, declarations, lines, role and byte-identity group; the [documentary index](data/source-index.json) preserves actual documentation links.", "",
+        H("##", "Coverage", "覆盖范围 / Coverage"), "",
+        f"The inventory contains **{s['lean_paths']:,} `.lean` paths and {s['distinct_byte_contents']:,} distinct byte contents**, including {s['byte_identical_duplicate_groups']:,} groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.", "",
+        "| File role | Paths |", "|---|---:|",
     ]
     for role_name, count in s["roles"].items():
         rows.append(f"| {ROLE_LABELS[role_name]} | {count:,} |")
-    rows += ["", f"下方当前源与审计入口中，共扫描到 **{s['working_named_theorem_lemma_occurrences']:,} 个显式 theorem/lemma 声明位置**、{s['working_explicit_named_declaration_occurrences']:,} 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **{s['working_named_theorem_lemma_occurrences']:,} explicit theorem/lemma occurrences** and {s['working_explicit_named_declaration_occurrences']:,} explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.", "",
-        "扫描包括隐藏、被忽略及未跟踪文件；排除 `.git`、`.lake`、`node_modules`、`.venv`、`venv`、`__pycache__` 目录与其他会话的工作树 `.claude/worktrees`，不追随目录符号链接。历史导入与开发尝试保存在 JSON 中，不在主表重复；运行、检查与快照目录中的冻结副本不读取也不列入，各由其运行的回执绑定，所以一次检查运行不改变本目录。当前源是按文件位置判断的文档角色，不等于已接受或已验证。 / Hidden, ignored and untracked files are included; dependency/cache directories listed above and other sessions' worktrees (`.claude/worktrees`) are excluded and directory symlinks are not followed. Archives and attempts remain in JSON without repeating them in the main table; saved copies in run, check and snapshot folders are neither read nor listed, each being bound by its own run's receipt, so a checker run leaves this catalogue unchanged. Working-source is a documentary role, not acceptance or verification status.", "",
-        "声明扫描识别显式 theorem、lemma、def、abbrev、structure、inductive、opaque、axiom、constant；不枚举 Lean 自动生成的构造子／投影、instance 或匿名 example。完整语义及假设以原源码为准。 / The scan lists the explicit named declaration kinds above, excluding generated constructors/projections, instances and anonymous examples. Source code remains authoritative for semantics and hypotheses.", "",
-        "## 方向索引 / Direction index", "", "| 方向 / Direction | 当前源与审计入口 / Entries |", "|---|---:|",
+    rows += ["", f"The working-source and audit entries contain **{s['working_named_theorem_lemma_occurrences']:,} explicit theorem/lemma occurrences** and {s['working_explicit_named_declaration_occurrences']:,} explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.", "",
+        "Hidden, ignored and untracked files are included; `.git`, `.lake`, `node_modules`, `.venv`, `venv`, `__pycache__` and other sessions' worktrees (`.claude/worktrees`) are excluded, and directory symlinks are not followed. Archives and attempts remain in the JSON inventory without repeating them in the main table; saved copies in run, check, snapshot and history folders are neither read nor listed, each being bound by its own run's receipt, so a checker run leaves this catalogue unchanged. Working-source is a documentary role, not acceptance or verification status.", "",
+        "The scan lists explicit theorem, lemma, def, abbrev, structure, inductive, opaque, axiom and constant declarations; it does not enumerate generated constructors and projections, instances or anonymous examples. Source code remains authoritative for semantics and hypotheses.", "",
+        H("##", "Direction index", "方向索引 / Direction index"), "", "| Direction | Working sources and audit entries |", "|---|---:|",
     ]
     for key, (title, _, _) in GROUPS.items():
         count = sum(f["group"] == key for f in active)
@@ -385,66 +462,86 @@ def render_index(manifest: dict, sources: dict) -> str:
         members = [f for f in active if f["group"] == key]
         if not members:
             continue
-        rows += ["", f'<a id="group-{key}"></a>', "", f"## {title}", "", significance, "", f"概念入口 / Conceptual entry: {mdlink(theory.removesuffix('.md'), current(CHAPTERS + theory))}.", "", "| 模块 / Module | theorem/lemma | 其他声明 / Other declarations | 解释与既有证据 / Interpretation & existing evidence |", "|---|---:|---:|---|"]
+        rows += ["", f'<a id="group-{key}"></a>', "", H("##", title, FORMER.get(key)), "", significance, "", f"Conceptual entry: {concept_entry(theory)}.", "", "| Module | theorem/lemma | Other declarations | Interpretation and existing evidence |", "|---|---:|---:|---|"]
         for file in members:
             content = manifest["contents_by_sha256"][file["sha256"]]
             theorem_count = sum(d["kind"] in ("theorem", "lemma") for d in content["declarations"])
             label = Path(file["path"]).stem
             source = mdlink(label, file["path"])
-            names = f"[声明 / Names](lean-declarations/{key}.md#{anchor(file['path'])})"
+            names = f"[Names](lean-declarations/{key}.md#{anchor(file['path'])})"
             rows.append(f"| {source} · {names} | {theorem_count} | {len(content['declarations']) - theorem_count} | {doc_links(file, sources)} |")
-    rows += ["", "## 更新目录 / Refresh the catalogue", "", f"生成器 / Generator: {mdlink('build_lean_catalogue.py', SCRIPT)}. 只更新两份导航 Markdown、两份 JSON 和 `lean-declarations/` 分组清单；不改原论证、Lean 或验证回执。 / Updates only the two navigation Markdown files, two JSON indexes and grouped `lean-declarations/` pages; leaves arguments, Lean sources and receipts unchanged.", "", "```sh", f"python3 {SCRIPT}", f"python3 {SCRIPT} --check", "```", "", "`--check` 比较索引与当前文件的再生成结果；它是目录新鲜度检查，不是 Lean 检查。并行研究增添或修改文件后需重新生成。 / `--check` compares regenerated output against the current catalogue; it checks documentary freshness, not Lean proofs. Refresh after concurrent research changes.", ""]
-    return "\n".join(rows)
+    rows += ["", H("##", "Refresh the catalogue", "更新目录 / Refresh the catalogue"), "", f"Generator: {mdlink(Path(SCRIPT).name, SCRIPT)}, run by `make research-render`. It updates only the two navigation pages, two JSON indexes and the grouped `lean-declarations/` pages; it leaves arguments, Lean sources and receipts unchanged.", "", "```sh", "make research-render", f"python3 -B {SCRIPT} --check", "```", "", "`--check` compares regenerated output against the current catalogue; it checks documentary freshness, not Lean proofs. Refresh after concurrent research changes.", ""]
+    return finish(rows)
 
 
 def render_declarations(manifest: dict, sources: dict, selected_group: str | None = None) -> str:
-    rows = ["# Lean 具名声明 / Named Lean declarations", "", "[返回 Lean 导航](LEAN-INDEX.md)。本表显示当前工作源与审计入口；历史导入与开发尝试见 [JSON 清单](data/lean-index.json)，冻结副本由其运行的回执绑定。这是显式声明的位置索引，不能代替命题、假设及对应论证的阅读。 / [Return to navigation](LEAN-INDEX.md). Working sources and audit entries appear here; imported archives and development attempts are in the JSON inventory, and saved copies are bound by their runs' receipts. These are explicit declaration locations, not substitutes for statements, hypotheses and correspondence arguments.", "", "定理／引理逐项列出；定义与类型声明列在同一模块的折叠项中。限定名由文本 namespace 推断，仅供导航；私有内部名称和自动生成名称以 Lean 为准。 / Theorems and lemmas are individually listed; definitions and type declarations share each module's foldout. Namespace-qualified names are textual hints; Lean determines private/internal and generated names.", ""]
+    H = heading
+    rows = [H("#", "Named Lean declarations", "Lean 具名声明 / Named Lean declarations"), "", GENERATED, "", "[Return to navigation](LEAN-INDEX.md). Working sources and audit entries appear here; imported archives and development attempts are in the [JSON inventory](data/lean-index.json), and saved copies are bound by their runs' receipts. These are explicit declaration locations, not substitutes for statements, hypotheses and correspondence arguments.", "", "Theorems and lemmas are individually listed; definitions and type declarations share each module's foldout. Namespace-qualified names are textual hints; Lean determines private, internal and generated names.", ""]
     active = [f for f in manifest["files"] if f["role"] in ("working-source", "audit-driver")]
     if selected_group is None:
-        rows += ["## 按方向浏览 / Browse by topic", "", "| 方向 / Topic | 模块／审计入口 / Entries | theorem/lemma 位置 / Occurrences |", "|---|---:|---:|"]
+        rows += [H("##", "Browse by topic", "按方向浏览 / Browse by topic"), "", "| Topic | Entries | theorem/lemma occurrences |", "|---|---:|---:|"]
         for key, (title, _, _) in GROUPS.items():
             members = [f for f in active if f["group"] == key]
             count = sum(sum(d["kind"] in ("theorem", "lemma") for d in manifest["contents_by_sha256"][f["sha256"]]["declarations"]) for f in members)
             rows.append(f"| [{title}](lean-declarations/{key}.md) | {len(members)} | {count:,} |")
-        rows += ["", "## 按名称查找 / Find by name", "", "各分组页可使用浏览器查找；编辑器的跨文件搜索可查全部名称。命令行可从仓库根运行： / Use browser find within a topic page or an editor's cross-file search for every name. From the repository root:", "", "```sh", "rg -n 'theorem_name' theories/becoming/results/lean-declarations/", "```", "", "## 模块清单 / Module list", "", "| 模块 / Module | 方向 / Topic |", "|---|---|"]
+        rows += ["", H("##", "Find by name", "按名称查找 / Find by name"), "", "Use browser find within a topic page, or an editor's cross-file search for every name. From the repository root:", "", "```sh", "rg -n 'theorem_name' theories/becoming/results/lean-declarations/", "```", "", H("##", "Module list", "模块清单 / Module list"), "", "| Module | Topic |", "|---|---|"]
         for file in sorted(active, key=lambda f: (Path(f["path"]).name, f["path"])):
             rows.append(f"| [{Path(file['path']).name}](lean-declarations/{file['group']}.md#{anchor(file['path'])}) | {GROUPS[file['group']][0]} |")
-        return "\n".join(rows) + "\n"
-    rows += ["[全部方向与模块 / All topics and modules](LEAN-DECLARATIONS.md)", ""]
+        return finish(rows)
+    rows += ["[All topics and modules](LEAN-DECLARATIONS.md)", ""]
     for key, (title, _, _) in GROUPS.items():
         if key != selected_group:
             continue
         members = [f for f in active if f["group"] == key]
         if not members:
             continue
-        rows += [f"## {title}", ""]
+        rows += [H("##", title, FORMER.get(key)), ""]
         for file in members:
             content = manifest["contents_by_sha256"][file["sha256"]]
             declarations = content["declarations"]
-            rows += [f'<a id="{anchor(file["path"])}"></a>', "", "<details>", f"<summary>{Path(file['path']).name} — {len(declarations)} explicit declarations</summary>", "", mdlink("原源码 / Source", file["path"]) + " · " + doc_links(file, sources), "", f"`{file['path']}`", ""]
+            rows += [f'<a id="{anchor(file["path"])}"></a>', "", "<details>", f"<summary>{Path(file['path']).name} — {len(declarations)} explicit declarations</summary>", "", mdlink("Source", file["path"]) + " · " + doc_links(file, sources), "", f"`{file['path']}`", ""]
             if content["imports"]:
                 rows += ["Imports: " + ", ".join(f"`{name}`" for name in content["imports"]), ""]
             theorems = [d for d in declarations if d["kind"] in ("theorem", "lemma")]
             others = [d for d in declarations if d["kind"] not in ("theorem", "lemma")]
             if theorems:
-                rows += ["| 定理／引理 / Theorem or lemma | 源行 / Line |", "|---|---:|"]
+                rows += ["| Theorem or lemma | Line |", "|---|---:|"]
                 for d in theorems:
                     rows.append(f"| {mdlink(d['qualified_name_hint'], file['path'], d['line'])} | {d['line']} |")
                 rows.append("")
             else:
-                rows += ["没有扫描到显式 theorem/lemma；可能是导入、审计或定义模块。 / No explicit theorem/lemma scanned; this may be an import, audit or definition module.", ""]
+                rows += ["No explicit theorem/lemma scanned; this may be an import, audit or definition module.", ""]
             if others:
-                rows += ["定义与类型 / Definitions and types:", ""]
+                rows += ["Definitions and types:", ""]
                 for d in others:
                     rows.append(f"- `{d['kind']}` {mdlink(d['qualified_name_hint'], file['path'], d['line'])} (L{d['line']})")
                 rows.append("")
             if content["print_axioms_commands"]:
-                rows += [f"文本中有 {content['print_axioms_commands']} 条 `#print axioms` 指令；输出请见原验证记录。 / Contains {content['print_axioms_commands']} textual `#print axioms` commands; results belong to the original verification records.", ""]
+                rows += [f"Contains {content['print_axioms_commands']} textual `#print axioms` commands; their results belong to the original verification records.", ""]
             rows += ["</details>", ""]
-    body = "\n".join(rows)
+    body = finish(rows)
     # Group pages sit one directory below OUT; all generated links above are
     # repository-relative from OUT, so preserve their targets from the child.
     return re.sub(r"\]\(([^)]+)\)", lambda match: "](" + ("" if match.group(1).startswith(("#", "http:", "https:")) else "../") + match.group(1) + ")", body)
+
+
+def outputs(manifest: dict, sources: dict) -> dict[str, str]:
+    """Repository path -> body for every catalogue file."""
+    base = OUT.relative_to(ROOT).as_posix()
+    files = {
+        base + "/data/lean-index.json": json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        base + "/data/source-index.json": json.dumps(sources, ensure_ascii=False, indent=2) + "\n",
+        base + "/LEAN-INDEX.md": render_index(manifest, sources),
+        base + "/LEAN-DECLARATIONS.md": render_declarations(manifest, sources),
+    }
+    for key in GROUPS:
+        files[base + f"/lean-declarations/{key}.md"] = render_declarations(manifest, sources, key)
+    return files
+
+
+def render() -> dict[str, str]:
+    """The catalogue for `research.py render`: one inventory, every output."""
+    return outputs(*catalogue())
 
 
 def main() -> int:
@@ -452,19 +549,13 @@ def main() -> int:
     parser.add_argument("--check", action="store_true", help="Compare generated bytes without writing.")
     args = parser.parse_args()
     manifest, sources = catalogue()
-    outputs = {
-        OUT / "data/lean-index.json": json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
-        OUT / "data/source-index.json": json.dumps(sources, ensure_ascii=False, indent=2) + "\n",
-        OUT / "LEAN-INDEX.md": render_index(manifest, sources),
-        OUT / "LEAN-DECLARATIONS.md": render_declarations(manifest, sources),
-    }
-    for key in GROUPS:
-        outputs[OUT / "lean-declarations" / f"{key}.md"] = render_declarations(manifest, sources, key)
+    files = outputs(manifest, sources)
     stale = []
-    for path, body in outputs.items():
+    for name, body in files.items():
+        path = ROOT / name
         if args.check:
             if not path.exists() or path.read_text(encoding="utf-8") != body:
-                stale.append(path.relative_to(ROOT).as_posix())
+                stale.append(name)
         else:
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(body, encoding="utf-8")
@@ -472,7 +563,7 @@ def main() -> int:
     if stale:
         print("Stale catalogue outputs:\n" + "\n".join(stale))
         return 1
-    print("Catalogue matches current source inventory." if args.check else f"Wrote {len(outputs)} documentary catalogue files; no Lean build performed.")
+    print("Catalogue matches current source inventory." if args.check else f"Wrote {len(files)} documentary catalogue files; no Lean build performed.")
     return 0
 
 

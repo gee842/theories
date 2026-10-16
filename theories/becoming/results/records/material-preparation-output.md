@@ -39,6 +39,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 
 - Related, not a proved adapter: [inherited-structural-copying](inherited-structural-copying.md). Uses the same token-by-token copying of Becoming.Copying (steps, use, countOf): preparation is copying with a unit draw per attachment (PreparationCorrespondence.route_some_iff), and emptying the pool is Copying.empties_iff.
 
+**Used by:** [recurrent-chain-assembly](recurrent-chain-assembly.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

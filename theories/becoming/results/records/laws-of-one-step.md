@@ -92,6 +92,8 @@ The selection theorems ask which laws the counts obey under a selection of the e
 - related, not a proved adapter: [laws-at-coarser-steps](laws-at-coarser-steps.md). Each law across coarser steps: balance, dissipation and running down compose, not conversely.
 - related, not a proved adapter: [continuous-time-as-tower](continuous-time-as-tower.md). Balance and dissipation passing up a tower of discrete readings; real-valued time is not formalized.
 
+**Used by:** [ceasing-needs-arising](ceasing-needs-arising.md) · [closing-needs-net-draw](closing-needs-net-draw.md) · [comparison-where-the-rest-responds](comparison-where-the-rest-responds.md) · [consumption-ends-with-feeders](consumption-ends-with-feeders.md) · [continued-change-needs-openness](continued-change-needs-openness.md) · [continuing-self-fed-from-beyond](continuing-self-fed-from-beyond.md) · [continuous-time-as-tower](continuous-time-as-tower.md) · [counterfactual-is-the-course](counterfactual-is-the-course.md) · [counting-standing-and-dependence](counting-standing-and-dependence.md) · [counting-under-enclosure](counting-under-enclosure.md) · [imbalance-as-relatum](imbalance-as-relatum.md) · [laws-at-coarser-steps](laws-at-coarser-steps.md) · [laws-at-finer-units](laws-at-finer-units.md) · [laws-of-one-step-complete](laws-of-one-step-complete.md) · [own-count-misses-joint-excess](own-count-misses-joint-excess.md) · [rising-and-falling-in-one-exchange](rising-and-falling-in-one-exchange.md) · [runaway-distance-unregistered](runaway-distance-unregistered.md) · [seeking-boundary](seeking-boundary.md) · [space-and-its-parts](space-and-its-parts.md) · [support-from-the-supported](support-from-the-supported.md) · [target-capture](target-capture.md) · [whole-law-of-counting](whole-law-of-counting.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -132,7 +134,7 @@ Aliases: `Becoming.Flow.BalancesOn`, `Becoming.Flow.balances_iff_on`, `Becoming.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: does_not_show 4 and 5 said finer units are "not tested here" and coarser steps and continuous time "not covered", and the next step asked to test both; laws-at-finer-units, laws-at-coarser-steps and continuous-time-as-tower give them, so the items now point there, the next step drops the two done items and names real-valued time, and three related entries are added. Earlier text in text_versions.
-- 41 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](laws-of-one-step.json).
+- 42 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](laws-of-one-step.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

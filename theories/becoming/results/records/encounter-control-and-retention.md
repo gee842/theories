@@ -55,6 +55,8 @@ Control, effective access, retention and evidence admission are distinct roles w
 - **interpretive**: [encounter-selection-and-revision](encounter-selection-and-revision.md). Reuse the completed selection/interpretation interface; later measurement constrains psychological correspondence without a formal conversion of data to Lean histories.
 - **interpretive**: [naming-attention-coverage](naming-attention-coverage.md). Moves from the existing automatic gaze-coverage boundary to a later-learning measure; different populations/tasks are not joined into one observed history.
 
+**Used by:** [retrospective-source-binding](retrospective-source-binding.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 

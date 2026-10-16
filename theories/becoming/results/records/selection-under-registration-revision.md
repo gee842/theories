@@ -65,6 +65,8 @@ The exact criterion preserves all old choices, stronger than preserving one usef
 - Related, not a proved adapter: [learned-procedure-transmission](learned-procedure-transmission.md). Completed reconstruction after learning and actual successor use; the fixed-recipe boundary is reread here. The connection to P93 is interpretive, not a claimed new formal composition.
 - Related, not a proved adapter: [consequence-revised-reference-plan](consequence-revised-reference-plan.md). P99 joins acquired mismatch, the next reference plan, fresh apparatus and later response on the shared spine; P93 retains its original theorems and fixed-instance boundary.
 
+**Used by:** [consequence-revised-reference-plan](consequence-revised-reference-plan.md) · [wisdom-root](wisdom-root.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -101,4 +103,4 @@ Aliases: `Becoming.Learning.Training.keeps_through_iff`, `Becoming.Learning.Trai
 - Updates continuation after P99 closure; old receipts and proofs unchanged, with the new same-history connection recorded under its own result identity.
 - P103 integration review preserves existing claims and frozen proofs while the theory/study connect supported recurring revision; older frontiers remain dated history.
 - 14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Revision with theorems added that read `Revising` as an instance of Stock; bindings move to the new receipts (see validation scope); the claim now states the general laws of stock first (Becoming.Stock’s balanced_iff, feasible_iff_covered, product_feasible_iff), with the Revising example as their instance and covered_not_enacted and linked_not_enacted making the distinction of discrimination, support and enactment a law; a proof binding for Stock.lean is added (receipt 20261013T204910.042715Z). Status unchanged; the claim is rewritten law-first, and the examples keep their statements and proofs, with no reproof credited to them.
-- 6 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-under-registration-revision.json).
+- 7 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-under-registration-revision.json).

@@ -71,6 +71,8 @@ On 16 October 2026 Ren took P118's third reading in its refined form, “which l
 - related, not a proved adapter: [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md). The other item of the same day: P118's orders as P82's sum over histories; loops are where both multiply, and here is the moment they form.
 - related, not a proved adapter: [loops-within-what-a-law-reads](loops-within-what-a-law-reads.md). Within one law: loops lie within what is read and form where reading grows; for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break.
 
+**Used by:** [how-often-couplings-act](how-often-couplings-act.md) · [loops-within-what-a-law-reads](loops-within-what-a-law-reads.md) · [observation-is-a-route](observation-is-a-route.md) · [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -106,7 +108,7 @@ Aliases: `how loops form`, `回路怎样形成`, `loop formation`, `回路的形
 - 16 October 2026, eighteenth review (R18): the statement “before it forms growth is polynomial” dropped the condition law 2 and the hypotheses carry, every condition listed (review item 31, O11); both statements now state it. The Chinese drops “the course is the carried amount of the strengths it reads”, which the English never had and law 4 carries, so the two now say the same. Claim narrowed; no theorem changed.
 - 16 October 2026, P130 (every base read as a run): an application, not a new result. The formed world of Becoming.CourseWorlds (formedWorld) and Becoming.FormedLoops state this record's laws and its onset and threshold witnesses on balanced worlds, each witness's law cited from Closing, not proved again; one law with its 13 declarations added, bound to receipt 20261016T124157.989030Z; study section 165, record two-act-worlds-carry-the-difference. The general formation laws (onLoop_succ_iff, forms_by_closing) hold of every array and are not restated under a world's name. Claim and status unchanged.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items B6, C10: the validation scope said "not independently reviewed", while the eighteenth review (R18) read and corrected this record; R18 is an AI read-only review with no Lean rebuild, so it now says "reviewed by the eighteenth review (AI, read-only)", not "independently". The independent review in the next step stays: whether R18 counts as the review asked for is Ren's decision; family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 12 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](how-loops-form.json).
+- 13 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](how-loops-form.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

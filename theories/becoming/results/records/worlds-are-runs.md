@@ -79,6 +79,8 @@ Ren, 12 October 2026: “let's go back to main track, yes, i do agree with your 
 - related, not a proved adapter: [where-a-run-goes-on](where-a-run-goes-on.md). That result says where a run goes on; this one reads every base as a run.
 - related, not a proved adapter: [unity-of-readings](unity-of-readings.md). Readings in context along a run are one world (Contextual.world), cited; the reading that every world balances with the rest counted is stated there.
 
+**Used by:** [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -106,6 +108,7 @@ Aliases: `every base read as a run`, `每个基读作运行`, `worlds are runs`,
 
 - 16 October 2026: added (P130, the integration finding of the release-readiness review, section 4); study section 165 (_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130); report in P130's REPORT.md.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A12, A18, records-mz-15: two does_not_show items added: most of the world/run correspondence theorems hold by rfl or Iff.rfl (at least 10 of Runs.lean's 21), with the checked content named; the two families meet by correspondence, and 1,019 of 7,214 theorems were apart at landing (the connectivity measurement of study section 165). The formal-reuse edge for World.withRest and withRest_balanced pointed to unity-of-readings, but both are in Becoming.Reading, owned by premises-read-off-the-exchange; the edge now points there and unity-of-readings stays as related. Earlier text in text_versions.
+- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](worlds-are-runs.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

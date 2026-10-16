@@ -37,6 +37,8 @@ Boundary source: [GrownFragmentation.lean](../../../../experiments/integrated-co
 
 - **formal-reuse**: [risk-certificate-outcome-distinction](risk-certificate-outcome-distinction.md). Reuses Becoming.Readout.no_judge_of_merged: the two grown graphs have the same parent summary and different mean cut returns, so no function of the summary gives both (PreparationCorrespondence.no_parent_summary_predictor_by_core).
 
+**Used by:** [recurrent-chain-assembly](recurrent-chain-assembly.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

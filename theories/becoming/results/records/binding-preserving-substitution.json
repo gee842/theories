@@ -110,7 +110,7 @@
     {
       "path": "theories/becoming/chapters/GENERATED-LOGIC.md",
       "role": "statement",
-      "sha256": "4449011f50325d44d1c4eef2392487cc6981f99dea72463a6b8f5db5f0412480",
+      "sha256": "066f766742fd6978b7e4ddb93a1d439957cfd3cf9f133232af9789fb1c6283f8",
       "declarations": []
     },
     {
@@ -249,6 +249,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in GENERATED-LOGIC.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): GENERATED-LOGIC.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

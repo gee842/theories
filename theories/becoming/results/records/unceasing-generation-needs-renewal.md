@@ -101,6 +101,8 @@ Ren's words are “生生不息 - 一种整体的，不断创造更多生的方�
 - related, not a proved adapter: [rising-and-falling-in-one-exchange](rising-and-falling-in-one-exchange.md). Read through flows, depletion (Depletes) follows from balance, dissipation and taking at the event's steps (Flow.Balances.depletes), as RenewedBy follows from balance with only active formations giving; the correspondence premises here thereby reduce to the flow's.
 - related, not a proved adapter: [laws-of-one-step](laws-of-one-step.md). The local laws use Flow.BalancesOn of laws-of-one-step; this is reuse in the proof. No dependency edge joins the records, since laws-of-one-step depends on this one through its chain of dependencies.
 
+**Used by:** [coming-and-ceasing-keep-pace](coming-and-ceasing-keep-pace.md) · [identity-across-steps](identity-across-steps.md) · [more-needs-renewers](more-needs-renewers.md) · [rising-and-falling-in-one-exchange](rising-and-falling-in-one-exchange.md) · [whole-persists-through-generation](whole-persists-through-generation.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -143,7 +145,7 @@ Aliases: `Becoming.Web.depletes_iff`, `Becoming.Web.depletion_not_recurring`, `B
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D3, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: Web.Unceasing.rises concludes ¬∀t≥T, Still and Unceasing.regeneration_recurs concludes ¬∀t≥T, ∀f, ¬Regenerating; law 3 said a condition "rises at arbitrarily late steps" and renewal "recurs", and now says the family is "still from no step on" and renewal "stops from no step on". Earlier text in text_versions.
-- 85 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](unceasing-generation-needs-renewal.json).
+- 86 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](unceasing-generation-needs-renewal.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

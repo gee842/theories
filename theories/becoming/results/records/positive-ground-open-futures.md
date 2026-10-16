@@ -58,6 +58,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 - Related, not a proved adapter: [renewing-consuming-formation](renewing-consuming-formation.md). Interpretive connection: read with the broad inventory that counts every new organization as generative, this result's positive ground cannot separate renewing from consuming formation; that result supplies, within one law class, a descriptive distinction with no normative predicate. The broad reading is not G0, whose object is 生生. This proof is unchanged.
 - Related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). From the axiom of Becoming.Significance, contingent generation has positive ground read from significance (contingent_generation_of_unrestricted).
 
+**Used by:** [one-axiom-yields-g0](one-axiom-yields-g0.md) · [open-form-realization-under-revision](open-form-realization-under-revision.md) · [positioned-positive-reason](positioned-positive-reason.md) · [self-good-reachable-g0](self-good-reachable-g0.md) · [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

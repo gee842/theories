@@ -135,7 +135,7 @@
     {
       "path": "theories/becoming/chapters/BECOMING-FOUNDATION.md",
       "role": "statement",
-      "sha256": "cc39142fcdad952f375a1342a66ca8a129e63ecdc2703550150309dc2123c7ac",
+      "sha256": "914b5022297b116dd6332ba1864a6b7bf6599dff38ce2f7eaa3c2340205047bc",
       "declarations": []
     },
     {
@@ -244,6 +244,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in GROUNDING-INFERENCE-AND-PRESENTATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-FOUNDATION.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

@@ -14,11 +14,39 @@
   "readme_opening": "theories/becoming/OPENING.md",
   "standard_boundaries": "theories/becoming/results/data/standard-boundaries.json",
   "record_snapshots": "_process/architecture/history",
+  "readme_lead": "_process/navigation/README-LEAD.md",
+  "readme_repository": "_process/navigation/REPOSITORY.md",
+  "readme_featured_note": "The laws featured here are the AI's proposal of 17 October 2026 (restructure decision 9), chosen from the records as strong, axiom-free and central; Ren makes the final choice.",
   "readme_featured_results": [
+    "laws-of-one-step",
+    "recurrence-without-premise",
+    "space-and-its-parts",
+    "separation-loses-the-relation",
+    "feeding-closure",
+    "unceasing-generation-needs-renewal",
+    "consumption-ends-with-feeders",
+    "entropy-history-and-record",
+    "observation-is-a-route",
+    "learnable-through-registration",
+    "comparison-within-reach",
+    "what-a-law-of-the-whole-and-no-part-takes"
+  ],
+  "readme_featured_selection": {
+    "by": "AI",
+    "date": "2026-10-17",
+    "state": "proposal pending Ren",
+    "previous": [
+      "positive-ground-open-futures",
+      "alignment-direction-g0-j",
+      "practical-judgment-g0-j",
+      "conditional-foundation-assessment"
+    ]
+  },
+  "readme_conditional_results": [
+    "one-axiom-yields-g0",
     "positive-ground-open-futures",
-    "alignment-direction-g0-j",
     "practical-judgment-g0-j",
-    "conditional-foundation-assessment"
+    "alignment-direction-g0-j"
   ],
   "readme_research_goals": [
     "theory-of-becoming",
@@ -26,6 +54,48 @@
     "theory-of-evolution",
     "generative-alignment"
   ],
+  "open_questions": {
+    "programme": [
+      {
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#81-the-targets",
+        "label": "Section 8.1, the targets"
+      },
+      {
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#82-further-proofs-by-area",
+        "label": "Section 8.2, further proofs, by area"
+      },
+      {
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#85-philosophical-warrant",
+        "label": "Section 8.5, philosophical warrant"
+      },
+      {
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#86-the-logical-commitment",
+        "label": "Section 8.6, the logical commitment"
+      },
+      {
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#87-empirical-correspondence",
+        "label": "Section 8.7, empirical correspondence"
+      },
+      {
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#88-review-status",
+        "label": "Section 8.8, review status"
+      }
+    ],
+    "pending_ren": [
+      {
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#84-what-stays-rens",
+        "label": "Section 8.4, what stays Ren's"
+      },
+      {
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#83-readings-decided-on-rens-delegation",
+        "label": "Section 8.3, readings decided on Ren's delegation (Ren can reverse any)"
+      },
+      {
+        "path": "_process/BECOMING-WORKBOARD.md#decisions-pending-ren",
+        "label": "The work board's decisions pending Ren"
+      }
+    ]
+  },
   "path_roles": {
     "source_prefixes": [
       "sources/"
@@ -98,5 +168,31 @@
       "kind": "openrouter",
       "note": "revoked by Ren 2026-10-17; present in sources/14-claude-code-prompts/* and the reading-note input cb-03.md (in _process/reading-notes/ until batch H1 moves it to _process/history/2026-09-consolidation/reading-notes-inputs/)"
     }
-  ]
+  ],
+  "lean_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+  "indexes": {
+    "note": "tools/research/indexes.py and the catalogue generators (reading_catalogue, lean_catalogue, session_map) render these pages through research.py render. adopted_pages: pages that existed before they joined the guarded writer, with the sha256 of the bytes read on 2026-10-17 (agent G): the catalogue pages were earlier output of their generators, link-rewritten by the move tool; _process/research/README.md was hand prose carried into indexes.STUDIES_LEAD. A page whose bytes differ stops the render as an unincorporated edit.",
+    "adopted_pages": {
+      "_process/research/README.md": "edaec4dd8435b4e25926ba5fedda27d70a2ce5b42a8554147be98be4805b3416",
+      "theories/becoming/results/ARGUMENTS-A-L.md": "eee259c73a05c35dac72b0017fea18d20db082cacafd6ad828e6abdc906a7b11",
+      "theories/becoming/results/ARGUMENTS-M-Z.md": "33aa020696aa3f0966ce5d469173ddc1b6c2887d5fc6bfa2610944409304e378",
+      "theories/becoming/results/LEAN-DECLARATIONS.md": "47a0f8f449d985a0e629f75251baddeee134214e0f96961973ad5a7c0ec46c6f",
+      "theories/becoming/results/LEAN-INDEX.md": "3014f26ef76f445a2a8ff394aa7428cb632c54bb16f8c4dff3be153f1ebc716e",
+      "theories/becoming/results/README.md": "07c01fe1960dbc14b579552229df3cc44951fb8117f60076122bc6f3cca00133",
+      "theories/becoming/results/SESSION-RESULTS.md": "59004ca33087d2e40010b2e8ca51808fdf3cb43891ea9950af2dbd26a8ee64aa",
+      "theories/becoming/results/THEORY-MAP.md": "9b3ad726ad0d94e3ab65179b9bcfa1e19c300a432a5bd304068b892ca3c7185e",
+      "theories/becoming/results/data/lean-index.json": "5fda5db1e5302ba00761bcde1896157a94ff8026ada77f099d0fb11f55d132be",
+      "theories/becoming/results/data/source-index.json": "85ab690e5e9a8963b35bd2a1c386fa90b8dc90077fa8ce982fb4402c93b9d0b6",
+      "theories/becoming/results/lean-declarations/abstraction.md": "22975aeff76c249df7bbea219ef1345691ed2216967f9781ae077d4de904a1c3",
+      "theories/becoming/results/lean-declarations/concern.md": "50a7888ed167dfa92ff058dfa41eac7a5781a8c97666542381eb23e564316bd4",
+      "theories/becoming/results/lean-declarations/core.md": "4604a5a4b87ccd2e9f64f3a96e0efeaa8ffe38ae1e45d2e1cc4713a7b8725124",
+      "theories/becoming/results/lean-declarations/ethics.md": "c6b335e47c13a44c5b985e13bd52f3a53a1b90ef09784c5a605209171f296f44",
+      "theories/becoming/results/lean-declarations/inquiry.md": "cd6ab6b6ac26aec79aa1f5ab959ff5e1d01878d055dcd59d9c1dd3b318dad549",
+      "theories/becoming/results/lean-declarations/learning.md": "876c426d52ea183a1e3d79ab4eb6b36dd0b24386e98c6f0f25791299568247f0",
+      "theories/becoming/results/lean-declarations/other.md": "a18e4d5f3c06d9b1139f3340452628dcdda165b9fed54559cf67e5b76e9d8358",
+      "theories/becoming/results/lean-declarations/renewal.md": "c79d14ce2397b6380039b8d274c79e706d5291872aa0c34bc15c976bc0d2b05d",
+      "theories/becoming/results/lean-declarations/shared.md": "7823308985a43c460b8f55462ec8ebf42a41e3f5c492273daf47f79895f3e3c7",
+      "theories/becoming/results/lean-declarations/valuation.md": "80b3d0f5db931a57bcddfa937657eab5693e8bc8692124340e508bbf7c26936c"
+    }
+  }
 }

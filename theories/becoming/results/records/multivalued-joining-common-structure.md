@@ -53,6 +53,8 @@ Boundary source: [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](../../../../_proc
 - Related, not a proved adapter: [guarded-program-question-recovery](guarded-program-question-recovery.md). New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation.
 - Related, not a proved adapter: [residual-continuation-correspondence](residual-continuation-correspondence.md). New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation.
 
+**Used by:** [finite-joining-tree-lifting](finite-joining-tree-lifting.md) · [joining-questions-survive-encoding](joining-questions-survive-encoding.md) · [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

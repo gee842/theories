@@ -8,6 +8,9 @@ from unittest.mock import patch
 
 from tools.research import navigation, registry
 
+LEAD = '_process/navigation/README-LEAD.md'
+REPOSITORY = '_process/navigation/REPOSITORY.md'
+
 
 def result(ident, status='reviewed-scoped'):
     return {
@@ -26,7 +29,7 @@ def result(ident, status='reviewed-scoped'):
 
 def goal(ident, result_ids=()):
     return {
-        'id': ident, 'scope_type': 'project-direction',
+        'id': ident, 'scope_type': 'project-direction', 'state': 'unmarked',
         **{field: {'zh': ident + ' ' + field, 'en': ident + ' ' + field}
            for field in ('title', 'scope', 'objective', 'completion', 'premises')},
         'sources': ['README.md'], 'result_ids': list(result_ids),
@@ -89,22 +92,23 @@ class FeaturedResultsTests(unittest.TestCase):
 
     def test_root_leads_with_ordered_english_summaries_and_source_links(self):
         records = [result('first'), result('second')]
-        config = {'readme_featured_results': ['second', 'first']}
+        config = {'readme_featured_results': ['second', 'first'], 'readme_repository': REPOSITORY}
         def read(path):
             return config if path == navigation.CONFIG else {'documents': {}}
         with patch.object(navigation, 'read', side_effect=read), patch.object(navigation, 'goals', return_value=[]):
             views = navigation.render_views(records)
         root = views['README.md']
         self.assertTrue(root.startswith('# The Theory of Becoming\n'))
-        self.assertLess(root.index('### second result'), root.index('### first result'))
-        self.assertLess(root.index('first recorded evidence'), root.index('## Research and repository'))
+        self.assertLess(root.index('#### second claim'), root.index('#### first claim'))
+        self.assertLess(root.index('first scoped summary'), root.index('## Research and repository'))
         self.assertIn('second scoped summary', root)
-        self.assertIn('[Canonical source](theories/second.md)', root)
-        self.assertIn('[Scope, premises and evidence](theories/results/records/second.md)', root)
+        self.assertIn('**Status:** `reviewed-scoped`', root)
+        self.assertIn('[canonical source](theories/second.md)', root)
+        self.assertIn('[conditions and evidence](theories/results/records/second.md)', root)
         self.assertNotIn('second 摘要', root)
         self.assertIn('We investigate how relations form', views['_process/BRIEF.md'])
         self.assertIn('Canonical entry:', views['_process/BRIEF.md'])
-        self.assertNotIn('## Leading results', views['_process/BRIEF.md'])
+        self.assertNotIn('## What is established', views['_process/BRIEF.md'])
         for path, body in views.items():
             with self.subTest(path=path):
                 prose = re.sub(r'<a id="[^"]*"></a>', '', body)  # kept anchors may spell the earlier Chinese heading
@@ -173,7 +177,7 @@ class ResearchGoalsTests(unittest.TestCase):
         with patch.object(navigation, 'read', side_effect=read), patch.object(navigation, 'goals', return_value=goals):
             views = navigation.render_views(records)
         root = views['README.md']
-        self.assertLess(root.index('## Leading results'), root.index('## Ongoing research and current progress'))
+        self.assertLess(root.index('## What is established'), root.index('## Ongoing research and current progress'))
         self.assertLess(root.index('### evolution direction'), root.index('### ethics direction'))
         self.assertLess(root.index('### ethics direction'), root.index('## Research and repository'))
         self.assertIn('**Next:** ethics next investigation', root)
@@ -190,7 +194,7 @@ class ResearchGoalsTests(unittest.TestCase):
         self.assertIn('ethics next investigation', views['GOALS.md'])
         self.assertNotIn('ethics 研究', views['GOALS.md'])
         # The earlier bilingual heading's anchor stays, so inbound links resolve.
-        self.assertIn('<a id="ethics-title--ethics-title"></a>\n## ethics title', views['GOALS.md'])
+        self.assertIn('<a id="ethics-title--ethics-title"></a>\n### ethics title', views['GOALS.md'])
 
 
 class OpeningTests(unittest.TestCase):
@@ -236,7 +240,7 @@ class OpeningTests(unittest.TestCase):
         self.assertTrue(any('missing file: missing-opening.md' in error for error in errors))
 
     def test_root_places_the_opening_before_the_summary(self):
-        config = {'readme_featured_results': ['first']}
+        config = {'readme_featured_results': ['first'], 'readme_lead': LEAD}
         def read(path):
             return config if path == navigation.CONFIG else {'documents': {}}
         with patch.object(navigation, 'read', side_effect=read), patch.object(navigation, 'goals', return_value=[]), \
@@ -246,7 +250,7 @@ class OpeningTests(unittest.TestCase):
         self.assertTrue(root.startswith('# The Theory of Becoming\n'))
         self.assertLess(root.index('[Home]'), root.index('## Truth exists'))
         self.assertLess(root.index('Opening body.'), root.index('The Theory of Becoming explains'))
-        self.assertLess(root.index('The Theory of Becoming explains'), root.index('## Leading results'))
+        self.assertLess(root.index('The Theory of Becoming explains'), root.index('## What is established'))
         self.assertNotIn('Opening body.', views['_process/BRIEF.md'])
 
 

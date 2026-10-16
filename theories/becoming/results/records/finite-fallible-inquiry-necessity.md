@@ -67,6 +67,8 @@ Retains finite natural weights, complete inputs, a common rule and actual probab
 **Preserved conditions:** Common present formations, relevant initial registrations, original closed region and response; the added relatum exchanges alike at every time and condition. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
 
 
+**Used by:** [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [timely-response-necessity](timely-response-necessity.md) · [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

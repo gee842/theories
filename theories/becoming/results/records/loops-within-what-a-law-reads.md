@@ -78,6 +78,8 @@ P118's third reading as Ren took it on 16 October 2026, and P122, left open “w
 - related, not a proved adapter: [every-origin-passes-the-gate](every-origin-passes-the-gate.md). There the gate of registration and testing; here registration bounds coupling, and loops lie within what is read.
 - related, not a proved adapter: [observation-is-a-route](observation-is-a-route.md). Observation is a route of readings from what is observed: a difference goes only downstream, and a formation registers a stock only through a level it reads downstream of it; a route forms by closing.
 
+**Used by:** [observation-is-a-route](observation-is-a-route.md) · [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -114,7 +116,7 @@ Aliases: `loops within what a law reads`, `回路在律所读之内`, `what a la
 - 16 October 2026, P125 (observation as a route from what is observed, study section 159): in the next step, how a formation comes to observe a stock it depends on is answered by observation-is-a-route and dropped; related adds observation-is-a-route. Statement and proofs unchanged.
 - 16 October 2026, eighteenth review (R18): the statement said there is “no loop through the stock before it: that loop forms at the break”; but the law's own strengths couple the stock to itself from the start (counterexample 0), the loop-free law is the standing law (ReadsBelow.standing_no_loop), and before the break the law acts as it (Flow.follows_standing_before) (review item 27, O6). The statement, the title and law 4 now say that before the break the law acts as its standing law, which has no loop through the stock, and that the loop that acts forms at the break. To stay within the statement's length, “and form where reading grows” leaves the statement and is carried by law 1. Claim narrowed; no theorem changed.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items B6, C10: the validation scope said "not independently reviewed", while the eighteenth review (R18) read and corrected this record; R18 is an AI read-only review with no Lean rebuild, so it now says "reviewed by the eighteenth review (AI, read-only)", not "independently". The independent review in the next step stays: whether R18 counts as the review asked for is Ren's decision; family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](loops-within-what-a-law-reads.json).
+- 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](loops-within-what-a-law-reads.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

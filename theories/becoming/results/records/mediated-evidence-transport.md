@@ -39,6 +39,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 
 - Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Interpretive connection: reuses the completed G0/J direction; implementation conditions do not independently justify permissions or ends.
 
+**Used by:** [recoverable-mediated-change](recoverable-mediated-change.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -70,4 +72,4 @@ Aliases: `MediatedControl.executed_writes_fit_derived_effect`, `MediatedControl.
 - 2026-10-09: migrated the same claim from the existing study; original proofs, receipt and counterexample remain, without a new scientific result.
 - 2026-10-09: read the authored continuation in study §10, theory §14 and the “finish remains” provenance; reconciled three documentary fingerprints, leaving original proofs and scientific receipts unchanged; the stronger stopping result is separate.
 - 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: admitted courses keep a property exactly when every admitted step does; the periphery ProtocolInstances shows that mediated histories are reachability under admitted steps, and mediated_history_preserves_coverage is an instance. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
-- 12 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](mediated-evidence-transport.json).
+- 13 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](mediated-evidence-transport.json).

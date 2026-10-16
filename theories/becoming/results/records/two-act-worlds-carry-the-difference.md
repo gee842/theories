@@ -114,6 +114,7 @@ Aliases: `the difference between two acts' worlds`, `两种作为之世界的差
 
 - 16 October 2026: added (P130, the integration finding of the release-readiness review, section 4: the frontier stated on the base); study section 165 (_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130); report in P130's REPORT.md.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
+- 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](two-act-worlds-carry-the-difference.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

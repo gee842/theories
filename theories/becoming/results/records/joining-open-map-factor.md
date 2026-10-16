@@ -43,6 +43,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 - Related, not a proved adapter: [guarded-program-question-recovery](guarded-program-question-recovery.md). New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation.
 - Related, not a proved adapter: [residual-continuation-correspondence](residual-continuation-correspondence.md). New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation.
 
+**Used by:** [unanchored-incidence-collapse](unanchored-incidence-collapse.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

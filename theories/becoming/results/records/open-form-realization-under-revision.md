@@ -61,6 +61,8 @@ A conditional composition with substantive counterexamples, not a universal prod
 - Related, not a proved adapter: [acquired-revision-of-pending-task](acquired-revision-of-pending-task.md). Existing pending-task rewriting retains historical loss and support costs.
 - Related, not a proved adapter: [pending-task-context-applicability](pending-task-context-applicability.md). Existing pre-action checking retains its scope; keeping a task is not satisfying the need, and concrete applications require review.
 
+**Used by:** [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -94,4 +96,4 @@ Aliases: `OpenFutureRevision.handed_off_progress`, `OpenFutureRevision.generatio
 - 2026-10-08: adds a checked composition between completed positive-openness and finite-renewal results, preserving a counterexample where fixed rules terminate but their perpetual revision does not. Wrappers and inherited proofs are not counted as independent results.
 - 13 October 2026, P89: four shared adapters close the previously audit-only connection; completed generic goal-revision work is removed from next steps. The result identity, original theorems, counterexamples, historical receipts and correspondence limits remain.
 - 14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Bridge only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope). This record's claim, premises and status are unchanged; no reproof is credited.
-- 8 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](open-form-realization-under-revision.json).
+- 9 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](open-form-realization-under-revision.json).

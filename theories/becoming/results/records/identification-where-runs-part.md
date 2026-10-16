@@ -89,6 +89,8 @@ Ren, 15 October 2026: “"What this line doesn’t reach" is also worth doing”
 - related, not a proved adapter: [typicality-by-counting](typicality-by-counting.md). Worlds with weights: a record registers no weight, and counting gives that most courses show the weights.
 - related, not a proved adapter: [weights-count-situations](weights-count-situations.md). What the record and the law leave open at a parting the situation fixes: with the situation as the move, the law is determined.
 
+**Used by:** [where-a-run-goes-on](where-a-run-goes-on.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -128,7 +130,7 @@ Aliases: `Becoming.Parting.after`, `Becoming.Parting.before`, `Becoming.Parting.
 - 16 October 2026, I4b item 2 follow-up (study section 153): Selection.lean changes only in comments (the section “Selection by the record alone” renamed “Selection through a model of the options”), and Learning.lean gains a section of eight theorems linking a model of the options to its lumping; the declarations this record cites are unchanged. Learning.lean take the new hashes, and the proof bindings move to core receipt 20261015T202927.668755Z.
 - 16 October 2026, eighteenth review (R18): the correspondence names Gold 1967 and Moore 1956 (review item 39, K9). Claim unchanged.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: the validation scope said "not independently reviewed", while the eighteenth review (R18) read and corrected this record; R18 is an AI read-only review with no Lean rebuild, so it now says "reviewed by the eighteenth review (AI, read-only)", not "independently". The independent review in the next step stays: whether R18 counts as the review asked for is Ren's decision. Earlier text in text_versions.
-- 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](identification-where-runs-part.json).
+- 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](identification-where-runs-part.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

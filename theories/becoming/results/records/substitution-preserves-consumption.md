@@ -74,6 +74,8 @@ On the whole-run reading substitution preserves the classification, nearly by th
 - related, not a proved adapter: [supported-renewal-recovery](supported-renewal-recovery.md). That result gives recovery in another law, with the renewer supported again. Here recovery does not occur; with the existing results the law family realizes ending and transformation after a loss without return.
 - related, not a proved adapter: [unceasing-generation-needs-renewal](unceasing-generation-needs-renewal.md). When drawing lowers the alternatives and none is renewed, the chain of substitutions ends (substitution_defers, Relay.defers); here drawing does not lower the alternative.
 
+**Used by:** [practical-judgment-g0-j](practical-judgment-g0-j.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -107,7 +109,7 @@ Aliases: `Becoming.ceasing_step`, `Becoming.Substitution.web_dependent`, `Becomi
 - 14 October 2026, open-issues plan item 8: the next step "the same preservation for general laws with changing dependence" is partly answered: `Web.consumingIn_kept_iff` gives the preservation, for every web, under any change of the focal formation's dependence from a step on; the next step narrows to the case where other formations' dependence changes too. Former text: "Whether consumption moves elsewhere when alternatives are renewed; the same preservation for general laws with changing dependence."
 - Open-issues plan item 15 (Ren chose “includes”): a reading now includes an event, where it was said to credit it, a market word; the Lean names follow (old and new in the unification plan §10); zh 记入 unchanged. Item 17: other market words in this record (cost, price, free) replaced by structural ones; the meaning is unchanged.
 - 14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), finding G3: the statement's "exactly" holds for consumption kept under every such transformation (`Web.consumingIn_kept_iff`); for a single transformation both directions can fail. The statement now says "under every such transformation"; law 1 already did.
-- 87 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](substitution-preserves-consumption.json).
+- 88 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](substitution-preserves-consumption.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

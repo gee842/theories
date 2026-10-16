@@ -59,6 +59,8 @@ C holds here by definition on the frame of level paths, with “better” read a
 - Related, not a proved adapter: [ranking-under-readings](ranking-under-readings.md). Courses are compared on possibilities (chapter section 6.12); here, on level paths, the comparison on possibilities itself satisfies C.
 - Related, not a proved adapter: [comparison-content-under-regrouping](comparison-content-under-regrouping.md). P91 supplies local conditions preserving extension under many-to-one regrouping, the exact all-level characterization by minimum requirements, and a generated mixed-loss boundary.
 
+**Used by:** [comparison-content-under-regrouping](comparison-content-under-regrouping.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -94,4 +96,4 @@ Aliases: `Becoming.Web.paths_extension_iff_widens`, `Becoming.Web.paths_comparis
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D1, D22): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Significance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Regions.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Admission.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A12: "C is a law" becomes "holds by definition": Web.paths_extension_iff_widens and paths_comparison_widens follow by unfolding Extension once "better" is read as widening (two lines), so C's normative content moves into calling widening better, whose warrant is open. Schema 1, no text_versions; earlier text in git.
-- 37 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](comparison-by-widening.json).
+- 38 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](comparison-by-widening.json).

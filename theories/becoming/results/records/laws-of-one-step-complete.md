@@ -57,6 +57,8 @@ Counting active relata, or relata taking part without exchanging, is not in the 
 - Related, not a proved adapter: [one-step-missing-laws](one-step-missing-laws.md). The two missing laws found in the same module.
 - Related, not a proved adapter: [runs-on-families-chosen-step-by-step](runs-on-families-chosen-step-by-step.md). Runs on families chosen step by step are in the other record.
 
+**Used by:** [one-step-missing-laws](one-step-missing-laws.md) · [runs-on-families-chosen-step-by-step](runs-on-families-chosen-step-by-step.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -91,4 +93,4 @@ Aliases: `Becoming.Passage`, `Becoming.Flow.passage`, `Becoming.Flow.Realizes`, 
 - 14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
-- 26 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](laws-of-one-step-complete.json).
+- 27 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](laws-of-one-step-complete.json).

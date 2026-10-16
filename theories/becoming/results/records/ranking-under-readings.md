@@ -105,6 +105,8 @@ The two rankings part ways under the stepwise reading. If G0 and C share the ste
 - related, not a proved adapter: [becoming-finite-horizon](becoming-finite-horizon.md). Withholding an overdrawing formation's events before the loss needs to know how the run continues; that result shows that readings fixed by a finite prefix cannot in general.
 - related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). Beyond C, J1's priority of basic conditions is one stronger comparison that might yield “better without malignant growth”; this connection is not formalized here.
 
+**Used by:** [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -145,7 +147,7 @@ Aliases: `Becoming.Ranking.withheld_of_extends`, `Becoming.Ranking.whole_run_ext
 - Open-issues plan item 15 (Ren chose “includes”): a reading now includes an event, where it was said to credit it, a market word; the Lean names follow (old and new in the unification plan §10); zh 记入 unchanged. Item 17: other market words in this record (cost, price, free) replaced by structural ones; the meaning is unchanged.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D1, D22): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Ranking.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Relevance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Significance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Admission.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
-- 89 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](ranking-under-readings.json).
+- 90 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](ranking-under-readings.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

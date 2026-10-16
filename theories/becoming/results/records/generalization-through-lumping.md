@@ -77,6 +77,8 @@ Ren, 12 October 2026: “我觉得理更像是对结构和变化的规律的建�
 - related, not a proved adapter: [learned-procedure-transmission](learned-procedure-transmission.md). There an updating procedure is reconstructed through actual performance; here the route of updating is the rule above the network, and the network alone has no law exactly where the route makes a difference.
 - related, not a proved adapter: [selection-through-a-model-of-the-options](selection-through-a-model-of-the-options.md). Selection through a model of the options: the model is a lumping, and a selection through it is right only where what matters goes alike across the lumping.
 
+**Used by:** [consequence-revised-reference-plan](consequence-revised-reference-plan.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [selection-under-registration-revision](selection-under-registration-revision.md) · [where-a-move-is-formed](where-a-move-is-formed.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -111,7 +113,7 @@ Aliases: `理`, `generalization`, `推广`, `uniformity of nature`
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Learning.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Selection.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 16 October 2026, integration I4b item 2 (Ren chose “Closest gaps first”): Selection.lean's docstring gains a bullet on selection by the record alone, and a section of that name precedes the witnesses; the declarations this record cites are unchanged. The reference takes the new hash and its proof binding moves to core receipt 20261015T193630.814921Z.
 - 16 October 2026, I4b item 2 follow-up (study section 153): Selection.lean changes only in comments (the section “Selection by the record alone” renamed “Selection through a model of the options”), and Learning.lean gains a section of eight theorems linking a model of the options to its lumping; the declarations this record cites are unchanged. Learning.lean and Selection.lean take the new hashes, and the proof bindings move to core receipt 20261015T202927.668755Z; the record selection-through-a-model-of-the-options is linked.
-- 31 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](generalization-through-lumping.json).
+- 32 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](generalization-through-lumping.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

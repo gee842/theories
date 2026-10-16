@@ -84,6 +84,8 @@ Ren's proposal says “all above does not require any axiom” and that the one 
 - related, not a proved adapter: [no-finite-part-bears-taking](no-finite-part-bears-taking.md). The clearer's flow follows Lone's source and fuels (Frontier).
 - related, not a proved adapter: [renewing-consuming-formation](renewing-consuming-formation.md). A consumer forms more at first and a one-step count prefers it; the clearer does not consume its own resource, only another's habitat.
 
+**Used by:** [consumption-ends-with-feeders](consumption-ends-with-feeders.md) (interpretive) · [feeding-closure](feeding-closure.md) · [four-cases-of-a-part](four-cases-of-a-part.md) · [loss-beyond-a-region](loss-beyond-a-region.md) · [represented-boundary-against-dependence](represented-boundary-against-dependence.md) · [whole-first-and-bounded-centers](whole-first-and-bounded-centers.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -115,7 +117,7 @@ Aliases: `Becoming.Downstream.one_way`, `Becoming.Mortal.after_its_end`, `Becomi
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D14): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Standpoints.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 50 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derived-extent-limits.json).
+- 51 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derived-extent-limits.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

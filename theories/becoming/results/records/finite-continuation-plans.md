@@ -39,6 +39,8 @@ Boundary source: [ContinuationAdequacy.lean](../../../../experiments/integrated-
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.
 
 
+**Used by:** [joint-plan-composition](joint-plan-composition.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

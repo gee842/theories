@@ -95,6 +95,8 @@ Answers to Ren's three questions (the AI's reading, adopted on Ren's delegation)
 - related, not a proved adapter: [endpoint-loss-and-return](endpoint-loss-and-return.md). Prior results: along an actual history, return holds exactly where every endpoint possibility is kept; the counter added in ReturnConditions.lean makes a native return no longer a return. restores_levels_not_history here is the same distinction on the flow; no formal adapter between them is claimed.
 - related, not a proved adapter: [theory-of-becoming-foundation](theory-of-becoming-foundation.md). Unification plan R5: entropy, following Ren's questions of 11 October 2026, the strongest form without premise first; this is not the deduction of the whole without axioms.
 
+**Used by:** [returning-novelty-forgetting-on-levels](returning-novelty-forgetting-on-levels.md) · [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -131,7 +133,7 @@ Aliases: `Becoming.Flow.Gainless`, `Becoming.Flow.Lossless`, `Becoming.Flow.Reve
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D29): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: "brings to rest" and "rests" become "change does not recur": Flow.Balances.rests_of_never_revisits and rests_of_arrow conclude ¬∀N, ∃t≥N, Changes (a negated recurrence), not a step after which nothing changes. Earlier text in text_versions.
-- 25 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](entropy-history-and-record.json).
+- 26 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](entropy-history-and-record.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

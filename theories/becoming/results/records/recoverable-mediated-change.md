@@ -48,6 +48,8 @@ Local recovery and evidential inference, not verification of hardware, compiler,
 
 - Related, not a proved adapter: [alignment-direction-g0-j](alignment-direction-g0-j.md). Interpretive connection: reuses the completed G0/J direction; implementation conditions do not independently justify permissions or ends.
 
+**Used by:** [reserved-shutdown-during-recovery](reserved-shutdown-during-recovery.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -83,4 +85,4 @@ Aliases: `RecoverableControl.interrupted_history_preserves_safety`, `Recoverable
 - 2026-10-09: adds staged writes and recovery after repeated interruption, retaining exhausted-but-running, deadline and marker-loss failures. The original 27 instruction-continuation proofs are not recounted.
 - 2026-10-09: read the authored continuation in study §10, theory §14 and the “finish remains” provenance; reconciled three documentary fingerprints, leaving original proofs and scientific receipts unchanged; the stronger stopping result is separate.
 - 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: admitted courses keep a property exactly when every admitted step does, and counted work finishes exactly when the fuel covers it; the periphery ProtocolInstances makes safety along interrupted histories and funded publication instances, funded_suffix_publishes being the sufficient half. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
-- 12 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](recoverable-mediated-change.json).
+- 13 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](recoverable-mediated-change.json).

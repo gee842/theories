@@ -201,13 +201,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
       "role": "review",
-      "sha256": "fc78145baee699bd8816d8c2ab1c4eb667223204e97db5fd85e64563726aaad9",
+      "sha256": "4d67672ab7df1ee71c3cf111d46fb4999bc0fd8ba7e331ad09b75418aa670f03",
       "declarations": []
     },
     {
       "path": "theories/meta-attractor/COMMON-ORGANIZATION.md",
       "role": "statement",
-      "sha256": "266177f33e5a7545c5098f9a3b70cac17229964a59b9c52c1bf2d0a410ff40bc",
+      "sha256": "a2c1f958d84bf7464623dfbdd0065be177556f7801e5055d7cdfc08e04c60f3b",
       "declarations": []
     },
     {
@@ -443,6 +443,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in META-ATTRACTOR-RECONCILIATION.md, THE-THEORY-OF-BECOMING.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): COMMON-ORGANIZATION.md, META-ATTRACTOR-RECONCILIATION.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

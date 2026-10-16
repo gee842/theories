@@ -51,6 +51,8 @@ A contributory reason is not permission, duty, an overall ranking or a uniquely 
 - Related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). With G0 from the axiom of Becoming.Significance, this result's main theorem holds with positive relevance read from significance (every_situated_position_has_reason_of_unrestricted).
 - Related, not a proved adapter: [metaethical-core-characterization](metaethical-core-characterization.md). The spine's own route: A gives D, and a sound inquiry gives the universal reason (universal_reason).
 
+**Used by:** [one-axiom-yields-g0](one-axiom-yields-g0.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

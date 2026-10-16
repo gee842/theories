@@ -99,6 +99,8 @@ Since P6 the open programme has listed ‘relax Dependent (buffers, reserves, la
 - related, not a proved adapter: [generation-is-replenishment](generation-is-replenishment.md). The same module states standing beyond activity: a seed is given its standing while dormant (Provisioned), and waking needs nothing given (Sleeper).
 - related, not a proved adapter: [unceasing-generation-needs-renewal](unceasing-generation-needs-renewal.md). Substitution defers the end without escaping it (substitution_defers): the same pattern.
 
+**Used by:** [map-of-premises](map-of-premises.md) · [rest-at-every-resolution](rest-at-every-resolution.md) · [space-and-its-parts](space-and-its-parts.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -135,7 +137,7 @@ Aliases: `Becoming.Web.Carries`, `Becoming.Web.carries_zero`, `Becoming.Web.Carr
 - 14 October 2026, open-issues plan item 2: the validation scope said the chain coextinction and the cascade were "not yet independently reviewed", which the sources contradict. The twelfth independent review (BECOMING-P30-P31-P29B-REVIEW.md) checked chainEnd, chain_ends, Cascade and the attained bound; its corrections (T2, T3: chains of any finite length, short_cascade, lpo_of_ending) were confirmed closed by the thirteenth (BECOMING-P32-P34-REVIEW.md, table "P33b: T1–T8"). The sentence is rewritten and the thirteenth review added as a reference; mathematics, statement and bindings unchanged.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D8): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
-- 73 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](reserve-defers-ending.json).
+- 74 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](reserve-defers-ending.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

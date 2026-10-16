@@ -154,7 +154,7 @@
     {
       "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "b06ad3e1cdc296bcc25e7bd818da8de8a197e16e892fd46dfa49b082dd8025ba",
+      "sha256": "e869eae139fd35b51161d7449a8fdd2aa75fd6836ada33942a8de747c6b97cc7",
       "declarations": []
     },
     {
@@ -357,6 +357,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in ETHICAL-LEARNING-INTEGRATION.md, PRACTICAL-JUDGMENT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): PRACTICAL-JUDGMENT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

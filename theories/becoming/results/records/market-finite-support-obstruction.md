@@ -57,6 +57,8 @@ The delta_N interval is a conservative obstruction, not an exact viability bound
 - Related, not a proved adapter: [conditional-foundation-assessment](conditional-foundation-assessment.md). Reuses established conditional support limits to advance a concrete formation-maintenance-ending connection without claiming zero substantive axioms.
 - Related, not a proved adapter: [formed-software-continuation](formed-software-continuation.md). Historical formed continuation identifies relationships omitted by the fixed-law model; it neither refutes nor numerically validates this theorem.
 
+**Used by:** [formed-software-continuation](formed-software-continuation.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -96,4 +98,4 @@ Aliases: `FiniteSupportObstruction.every_finite_stock_has_obstructed_positive_se
 - 16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: a run of the disturbed process is the admissible history of its moves (run_history, run_admissible; conversely historyRun). So a start below level n of a drained family leaves the guard within n steps on every run of the disturbed process (Drains.leaves_run), and exhaustion by bounded growth holds on every run (exhausts_run). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added.
 - 16 October 2026, integration I4b item 4 (Ren chose “Closest gaps first”): Lasting.lean imports Becoming.Likeness, its docstring gains a bullet on lasting some course, and a section of that name follows; the declarations this record cites are unchanged. The reference takes the new hash and its proof binding moves to core receipt 20261015T190408.610189Z.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item bilingual-16: the English title gains "in time", matching the Chinese 无法及时恢复 and the claim's leaving the guard within n steps. Schema 1, no text_versions; earlier text in git.
-- 13 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](market-finite-support-obstruction.json).
+- 14 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](market-finite-support-obstruction.json).

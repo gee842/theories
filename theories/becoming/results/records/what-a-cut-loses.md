@@ -77,6 +77,8 @@ Ren, 12 October 2026, on the loops: “how how accurate can we do that uh what i
 - related, not a proved adapter: [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md). A cut is a horizon: a cut at order j is the truncation at horizon j + 1 of the sum over routes back in time, so what a cut loses is what that truncation of the sum over histories drops.
 - related, not a proved adapter: [how-often-couplings-act](how-often-couplings-act.md). Answers the first two items of its next step: every schedule settling is exactly the dichotomy RecursOrStops, which gives the limited principle of omniscience; a loop of recurring couplings need not run away, runs away where its returns are frequent, and the rate counts the steps at which couplings act.
 
+**Used by:** [how-loops-form](how-loops-form.md) · [how-often-couplings-act](how-often-couplings-act.md) · [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -107,7 +109,7 @@ Aliases: `what a cut loses`, `截断所失`, `exact remainder`, `精确余项`, 
 - 16 October 2026: added, answering the first item of how-a-carried-difference-grows' next_delta, loops whose couplings come and go (P120); study section 154.
 - 16 October 2026, P123 (how often couplings act, study section 158): answers the first two items of the next step: every schedule settling is exactly the dichotomy RecursOrStops (which gives the limited principle of omniscience and which the core does not assume), and a loop of recurring couplings need not run away (the sparse self-loop), runs away where its returns are frequent, the rate counting the steps at which couplings act and attained by a self-loop; so both items are removed and the spectral radius of given strengths stays; related adds how-often-couplings-act. Also: “joining what a cut loses to the losses of the sum over histories” is answered by orders-as-a-sum-over-histories (P121: a cut at order j is a truncation at horizon j + 1), which the landing of P121 left in place, so it is removed; in related, “the two are not yet joined” becomes joined by orders-as-a-sum-over-histories, and orders-as-a-sum-over-histories is added. Statement and proofs unchanged; does_not_show still holds of this record's theorems; the readings in correspondence stay the AI's, pending Ren.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-cut-loses.json).
+- 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-cut-loses.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

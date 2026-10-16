@@ -107,6 +107,8 @@ Ren's words (2026-10-08-theory-of-becoming-priority): ‘when we add axiom, we c
 - related, not a proved adapter: [rising-and-falling-in-one-exchange](rising-and-falling-in-one-exchange.md). There, a rise accompanied by a fall within one step; here, arising and ceasing recurring together across the space.
 - related, not a proved adapter: [recurrence-without-decidedness](recurrence-without-decidedness.md). The forms of the law for finite worlds without decidedness: ceasing never stopping for good, arising never stopping for good, and the law where decided from some step on.
 
+**Used by:** [bounded-census-keeps-pace](bounded-census-keeps-pace.md) · [ceasing-needs-arising](ceasing-needs-arising.md) · [continued-change-needs-openness](continued-change-needs-openness.md) · [map-of-premises](map-of-premises.md) · [process-and-frame-as-readings](process-and-frame-as-readings.md) · [recurrence-without-decidedness](recurrence-without-decidedness.md) · [whole-law-of-counting](whole-law-of-counting.md) · [wisdom-root](wisdom-root.md) (interpretive) · [worlds-are-runs](worlds-are-runs.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -155,7 +157,7 @@ Aliases: `Becoming.World`, `Becoming.World.ofRoles`, `Becoming.World.ArisingRecu
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D2, D6, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: the statement said "dissipation brings a finite world to rest"; World.rests_unrefuted proves only ¬¬∃N, RestsFrom N (naming the step needs LPO), so it now says a finite world "cannot be refuted to come to rest". Earlier text in text_versions.
-- 65 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](space-and-its-parts.json).
+- 66 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](space-and-its-parts.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

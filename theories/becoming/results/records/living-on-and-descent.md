@@ -87,6 +87,8 @@ Becoming.Metaethics reads related as formed relation: conditioning, dependence, 
 - related, not a proved adapter: [reserve-defers-ending](reserve-defers-ending.md). The same witnesses (Provisioned, Sleeper) separate standing and activity; descent follows standing.
 - related, not a proved adapter: [ranking-under-readings](ranking-under-readings.md). C's ranking varies with the reading; here only related changes, not living, so C's comparisons are unchanged and what changes is where N_rel transmits.
 
+**Used by:** [conveyance-crosses-the-boundary](conveyance-crosses-the-boundary.md) · [evolution-on-descent](evolution-on-descent.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -121,7 +123,7 @@ Aliases: `Becoming.Web.LivesOn`, `Becoming.Web.sustenance`, `Becoming.Web.LivesO
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D4, D9): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Descent.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A8: standard boundary no-evaluation ("Contains no ethical predicate and evaluates neither arising nor ceasing") removed: this record's laws state Valuation.significant_iff (G0 there is exactly a seed with N_rel and N_std), a significance predicate; replaced by significance-related-not-asserted (relating significance to structure without asserting significance or the condition). Earlier text in text_versions.
-- 72 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](living-on-and-descent.json).
+- 73 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](living-on-and-descent.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

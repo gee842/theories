@@ -71,6 +71,8 @@ Proves none of S0, N, A, C, L or J and binds no position rejecting them. The uni
 - Related, not a proved adapter: [becoming-spine-instances](becoming-spine-instances.md). The two modules the classification left to P3b are placed by this result as renewal bounds on runs.
 - Related, not a proved adapter: [condition-correspondence-discipline](condition-correspondence-discipline.md). That result states a correspondence discipline for conditions: only interaction relates through a condition; idle conditions no longer connect for free, and connection holds for a declared class.
 
+**Used by:** [becoming-dependence-dynamics](becoming-dependence-dynamics.md) · [becoming-finite-horizon](becoming-finite-horizon.md) · [becoming-stepwise-reading](becoming-stepwise-reading.md) · [coming-and-ceasing-keep-pace](coming-and-ceasing-keep-pace.md) · [generation-is-replenishment](generation-is-replenishment.md) · [no-finite-part-bears-taking](no-finite-part-bears-taking.md) · [one-axiom-yields-g0](one-axiom-yields-g0.md) (application) · [reserve-defers-ending](reserve-defers-ending.md) · [unceasing-generation-needs-renewal](unceasing-generation-needs-renewal.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -121,4 +123,4 @@ Aliases: `Becoming.falls_not_recurring`, `Becoming.Run.not_of_depletion`, `Becom
 - 14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Bridge only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; the unification plan only adds the 14 October 2026 rename table after the P36 table in section 10. This record's claim, premises and status are unchanged; no reproof is credited.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D1): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
-- 90 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](becoming-renewal-reading.json).
+- 91 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](becoming-renewal-reading.json).

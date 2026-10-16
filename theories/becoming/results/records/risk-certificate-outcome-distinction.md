@@ -45,6 +45,8 @@ A local application, not new probability theory. Ethical risk acceptance, probab
 **Preserved conditions:** The original process is unchanged; the two event laws and weights remain supplied. [WisdomFallibleJudgment.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean)
 
 
+**Used by:** [growth-constrained-fragmentation](growth-constrained-fragmentation.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

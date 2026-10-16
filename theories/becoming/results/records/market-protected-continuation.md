@@ -41,6 +41,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 - Related, not a proved adapter: [market-partial-correction-boundary](market-partial-correction-boundary.md). The new result relaxes the correction parameter; the original scope remains preserved and reusable.
 - Related, not a proved adapter: [market-finite-support-obstruction](market-finite-support-obstruction.md). Completed finite-support obstruction preserving this record’s narrower result.
 
+**Used by:** [market-finite-support-obstruction](market-finite-support-obstruction.md) · [market-partial-correction-boundary](market-partial-correction-boundary.md) · [market-supported-finite-transition](market-supported-finite-transition.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -73,4 +75,4 @@ Aliases: `MarketGenerativity.safe_history_never_fails`, `Becoming.Viability.kern
 - 2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping.
 - 2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters.
 - 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Viability: no course leaves the guard exactly when a certificate contains the start, and under disturbances exactly when a set within the guard is closed under every admissible disturbance; the market law becomes an instance for every parameter set, bound set and start through the periphery MarketInstances, and safe_history_never_fails follows from the safe rectangle. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
-- 12 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](market-protected-continuation.json).
+- 13 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](market-protected-continuation.json).

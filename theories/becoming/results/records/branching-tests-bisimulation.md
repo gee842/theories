@@ -39,6 +39,8 @@ No dependency on another migrated record is asserted; source imports and supplie
 
 - Related, not a proved adapter: [tests-fix-likeness-where-determined](tests-fix-likeness-where-determined.md). The spine's form: linear tests fix likeness where frames are determined up to likeness, branching tests where they are finite and decided; this theorem is the instance on models of the core theorem with excluded middle as a hypothesis, which needs only each move's outcomes listed.
 
+**Used by:** [configurations-alike-by-relation](configurations-alike-by-relation.md) · [finite-granularity-question-recovery](finite-granularity-question-recovery.md) · [guarded-program-question-recovery](guarded-program-question-recovery.md) · [incidence-common-refinement](incidence-common-refinement.md) · [multivalued-joining-common-structure](multivalued-joining-common-structure.md) · [residual-continuation-correspondence](residual-continuation-correspondence.md) · [retained-reference-joining-recovery](retained-reference-joining-recovery.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

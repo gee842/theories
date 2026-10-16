@@ -38,6 +38,8 @@ Boundary source: [GoalFormationRevision.lean](../../../../experiments/integrated
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.
 
 
+**Used by:** [acquired-revision-of-pending-task](acquired-revision-of-pending-task.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -65,4 +67,4 @@ Aliases: `GoalFormationRevision.joined_revision_has_warrant_and_actual_continuat
 - 2026-10-09: migrated the existing bounded formation/revision theorem; original sources and receipt remain, rebuilt here as a composition dependency.
 - 2026-10-14: under the general-law audit of older records, proved the general law the headline needs (periphery, MachineInstances): the number of cycles is fixed exactly by work covering the unsupported cycles; operating the learning goal keeps goal and selector and adds the transition loss, for every condition and state; revision completes exactly under access loss with kept maintenance, after which n operations run exactly when n ≤ 5, for every n. The harmful headline and its two bounds are instances. It cannot go on the spine: GoalFormationRevision's definitions and proved facts depend on standard axioms, which the pure core and bridge cannot import, and the law is this construction's account arithmetic rather than a notion the spine has. Built with scratch_build, standard axioms only; the landing run and the peripheral checker check_machine_instances.py bind the receipt. The original theorem and receipt are unchanged.
 - 14 October 2026, open-issues plan (study section 117): the claim now adds the law of the warrant for revision: better_iff and completed_iff_better in the periphery MachineInstances, for every condition of the construction the comparison warrants learning over attendance exactly under access loss with kept transition maintenance, and revision completes exactly there; the comparison's definitions belong to the construction. In the claim, “account” now reads “work, reserve and used units”, meaning unchanged. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the proof binding to MachineInstances still names the earlier run and is repointed at landing. The original theorems and counterexamples are unchanged.
-- 13 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](formed-goal-revision-continuation.json).
+- 14 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](formed-goal-revision-continuation.json).

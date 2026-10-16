@@ -58,6 +58,8 @@ Whether an actual unfolding's histories stop is not stated; which family an actu
 - Related, not a proved adapter: [trace-law-equivalence](trace-law-equivalence.md). The periphery's equivalence of traces and laws; here the complete correspondence of laws and families of histories in the core.
 - Related, not a proved adapter: [recurrence-without-premise](recurrence-without-premise.md). A kept history never returns; the law it shows admits only it (P69's Run.keepHistory_shown).
 
+**Used by:** [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -95,4 +97,4 @@ Aliases: `Becoming.Admits`, `Becoming.ShownBy`, `Becoming.SpliceClosed`, `Becomi
 - 14 October 2026: the proof bindings of Becoming.Unfolding now point to consolidated receipt 20261013T221720.428753Z, as the validation scope states; it binds the same bytes as the earlier receipt 20261013T204910.042715Z.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D32): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Histories.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
-- 28 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](histories-fix-law-up-to-dead-ends.json).
+- 29 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](histories-fix-law-up-to-dead-ends.json).

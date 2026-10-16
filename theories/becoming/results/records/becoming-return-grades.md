@@ -78,6 +78,8 @@ The grades distinguish when dependence is met again in one run. Which grade an a
 - related, not a proved adapter: [endpoint-loss-and-return](endpoint-loss-and-return.md). That result characterizes return along a trajectory by preserved endpoint possibilities; this one grades return at the level of dependence by time. No correspondence between them is established.
 - related, not a proved adapter: [becoming-finite-horizon](becoming-finite-horizon.md). Return grades and the formation-level cycle reading are fixed by the whole run and by no finite prefix (Renewable.cycle_reading_not_finite); the event-level cycle reading is fixed by a finite history. That result shows no finite prefix decides whether drawing renews or consumes.
 
+**Used by:** [joint-difference-making](joint-difference-making.md) · [practical-judgment-g0-j](practical-judgment-g0-j.md) (interpretive) · [unceasing-generation-needs-renewal](unceasing-generation-needs-renewal.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -109,7 +111,7 @@ Aliases: `Becoming.Web.renewed_within_one`, `Becoming.Web.RenewedWithin.mono`, `
 - Open-issues plan item 15 (Ren chose “includes”): a reading now includes an event, where it was said to credit it, a market word; the Lean names follow (old and new in the unification plan §10); zh 记入 unchanged. Item 17: other market words in this record (cost, price, free) replaced by structural ones; the meaning is unchanged.
 - 14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title and statement are kept; the claim was split into 9 laws; limitations and per-round receipt notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. A counterexample lost “(from P11b)” (the current definition states it unconditionally; the round stays in the snapshot), and the second review's summary matches the same item in joint-difference-making. Every earlier sentence is mapped in the migration table [becoming-return-grades.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/becoming-return-grades.md); the exact earlier record is the last text_versions entry.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A12: a does_not_show item added: Web.consumed_iff restates the definition of Consumed (records-a-l-22). Earlier text in text_versions.
-- 89 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](becoming-return-grades.json).
+- 90 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](becoming-return-grades.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

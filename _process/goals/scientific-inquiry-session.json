@@ -6,6 +6,7 @@
     "en": "Scientific inquiry foundation session"
   },
   "scope_type": "authorized-session",
+  "state": "unmarked",
   "scope": {
     "zh": "Ren 指令本会话持续检验科学基础，把完整核心必要性保留为可修正的强假说；不自动接管其他会话。",
     "en": "Ren directs this session to continue testing scientific foundations, retaining full-core necessity as a revisable strong hypothesis; other sessions are not automatically assigned here."

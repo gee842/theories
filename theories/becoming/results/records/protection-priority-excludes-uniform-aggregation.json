@@ -145,7 +145,7 @@
     {
       "path": "theories/becoming/chapters/G0-WARRANT.md",
       "role": "integration",
-      "sha256": "81c7f5ee7c0a018d4cbaad093b4e5b50e569ceb164e0e714d5481ce7007e1b0d",
+      "sha256": "25347758f65e115ab52ac972581660fbe377d68cac8eec80a91cc2d8bd624df3",
       "declarations": []
     },
     {
@@ -283,6 +283,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in G0-WARRANT.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): G0-WARRANT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
     }
   ]
 }

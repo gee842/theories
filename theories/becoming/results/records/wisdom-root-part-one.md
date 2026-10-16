@@ -110,6 +110,8 @@ Ren’s reading of 理 and the formal integration of the laws are retained. Corr
 - related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). The ethical warrant of judgment goes through the condition of chapter section 6.15 (with the one axiom as a condition, G0 is a theorem); this record does not change it and contains no ethical predicate.
 - related, not a proved adapter: [target-capture](target-capture.md). The laws of target capture (the share rising, re-absorption) are the other side of the enough aspect.
 
+**Used by:** [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -169,7 +171,7 @@ Aliases: `root of wisdom, Part I`, `智慧之根（第一部分）`
 - 16 October 2026, I4b item 2 follow-up (study section 153): Selection.lean changes only in comments (the section “Selection by the record alone” renamed “Selection through a model of the options”), and Learning.lean gains a section of eight theorems linking a model of the options to its lumping; the declarations this record cites are unchanged. Learning.lean and Selection.lean take the new hashes, and the proof bindings move to core receipt 20261015T202927.668755Z.
 - 16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A7: the statement, claim and hypothesis 1 said the cited laws hold "axiom-free"; the receipt of the cited LearningCorrespondence.hebbian_activity_law_iff, updating_network_law_iff and responsive_learns lists propext, Classical.choice and Quot.sound, so "axiom-free" is restricted to the core, and the claim and hypothesis 1 state that the periphery bridge uses only Lean's standard axioms, as the validation scope already said. Earlier text in text_versions.
-- 35 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](wisdom-root-part-one.json).
+- 36 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](wisdom-root-part-one.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

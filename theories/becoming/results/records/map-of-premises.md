@@ -98,6 +98,8 @@ The plan's third part of completeness asks that each dynamical premise carve a p
 - related, not a proved adapter: [generation-is-replenishment](generation-is-replenishment.md). That all premises together leave a finite world resting unrefuted is generation_not_recurring read of worlds meeting every premise.
 - related, not a proved adapter: [premises-read-off-the-exchange](premises-read-off-the-exchange.md). Read off, four premises (balance, only active relata giving, only active relata taking what they draw on, and activity needing support under a law of exchange) hold by reading; their independence witnesses here (World.unbalanced_but, strained_but, scatter_but, morsel_but) each choose a reading apart from the exchange it reads.
 
+**Used by:** [bounded-census-keeps-pace](bounded-census-keeps-pace.md) · [ceasing-needs-arising](ceasing-needs-arising.md) · [continued-change-needs-openness](continued-change-needs-openness.md) · [counting-standing-and-dependence](counting-standing-and-dependence.md) · [counting-under-enclosure](counting-under-enclosure.md) · [laws-at-coarser-steps](laws-at-coarser-steps.md) · [transmission-independent-where-it-binds](transmission-independent-where-it-binds.md) · [whole-law-of-counting](whole-law-of-counting.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -141,7 +143,7 @@ Aliases: `Becoming.World.Counted`, `Becoming.World.Transmitting`, `Becoming.Worl
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: the statement said a finite world meeting the premises "comes to rest"; World.premised_rests_unrefuted proves only ¬¬∃N, RestsFrom N, so it now says such a world "cannot be refuted to come to rest". Law 16 said "every world that comes to rest under the rest theorem", while World.rest_few assumes the rest theorem's conditions; it now says so. Earlier text in text_versions.
-- 63 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](map-of-premises.json).
+- 64 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](map-of-premises.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

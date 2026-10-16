@@ -61,6 +61,8 @@ The delta is mainly placement: inputs_intervention_unfixed is a direct instance 
 - Related, not a proved adapter: [scientific-inquiry-foundation](scientific-inquiry-foundation.md). One part of this open target: where the standard causal model's inputs, interventions and noise sit on the spine; it does not establish the whole target, and identification of causes from observation is not stated.
 - Related, not a proved adapter: [counterfactual-is-the-course](counterfactual-is-the-course.md). An instance: with the part's move as the input and the rest following a law of exchange, the course is a trajectory of inputs, and an act not taken is an intervention.
 
+**Used by:** [counterfactual-is-the-course](counterfactual-is-the-course.md) · [where-a-move-is-formed](where-a-move-is-formed.md) · [wisdom-root](wisdom-root.md) (interpretive)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -96,4 +98,4 @@ Aliases: `Becoming.inputs`, `Becoming.inputs_determined`, `Becoming.trajectory`,
 - 14 October 2026: the proof bindings of Becoming.Mechanism now point to consolidated receipt 20261013T221720.428753Z, as the validation scope states; it binds the same bytes as the earlier receipt 20261013T204910.042715Z.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D25): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Mechanism.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Experiment.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
-- 32 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](causal-models-as-processes.json).
+- 33 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](causal-models-as-processes.json).

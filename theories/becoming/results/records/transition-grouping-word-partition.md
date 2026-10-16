@@ -40,6 +40,8 @@ The grouping rule is fixed; arbitrary-length correspondence does not guarantee a
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope.
 
 
+**Used by:** [acquired-binding-compositional-use](acquired-binding-compositional-use.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -72,4 +74,4 @@ Aliases: `Generative.AcquiredSegmentation.ideal_grouping_recovers_words`, `Becom
 - 2026-10-08: migrated the already checked grouping claim, preserving original source, receipt and counterexamples.
 - 2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Segmentation): for every alphabet and relation, grouping gives a unique partition and recovers words exactly under local conditions, and strict-majority relations are functional; the existing algorithm, two-word encoding and idealBond become instances through the bridge Becoming.Instances and the periphery MachineInstances. Built with scratch_build; core and bridge have empty axiom reports, the periphery standard axioms only; the landing run binds the receipts. The original theorems, receipt and counterexamples are unchanged.
 - 16 October 2026, P114, the apart modules read on the shared base (study section 138; Ren, 15 October: “so for our theories, they are proved in a dag order and can be all connected right?”): the main law stated on the shared base, no premise added: where every word is a course of a process from s back to s, grouping by r recovers the words of every course of words exactly when each word is linked inside and no word's last move is linked to any word's first (course_words_iff); the grouping of a course's moves is unique (course_chunks_iff); where two words continue one move differently inside, grouping by the majority bonds of the record of the first n moves of any run of any process misses some course of words (no_run_record_groups). Becoming.Courses is compiled and audited by the core run (receipt 20261015T172257.067968Z), with empty axiom reports. Claims, hypotheses, Ren's words, dependencies and the earlier proofs are unchanged; only references, bindings, aliases and this entry are added.
-- 14 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](transition-grouping-word-partition.json).
+- 15 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](transition-grouping-word-partition.json).

@@ -68,6 +68,8 @@ Reading G0's 'generation' relationally follows Ren's G0, whose object is 生生 
 - related, not a proved adapter: [becoming-stepwise-reading](becoming-stepwise-reading.md). That result gives the stepwise and relation-level readings; ranking-under-readings proves what becomes of this record's rankings under the stepwise reading.
 - related, not a proved adapter: [ranking-under-readings](ranking-under-readings.md). That result restates this record's whole-run ranking on the core and proves that under the stepwise reading the ranking of absence is lost and that of sharing is kept.
 
+**Used by:** [becoming-renewal-reading](becoming-renewal-reading.md) · [ranking-under-readings](ranking-under-readings.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -101,7 +103,7 @@ Aliases: `RenewalComparison.g0_relational`, `RenewalComparison.overdraw_relation
 - 14 October 2026 readability migration to schema 2 (general-laws plan: migration of the records the growth ratchet stopped): The title is kept, with the statement first; the claim was split into 6 laws; limitations and receipt notes went to does-not-show items, hypotheses, the evidence paragraph and history. No law, premise, counterexample, status, proof binding or source hash changed. “The comparisons use C, not G0” joined the first hypothesis; “no Lean axiom is used” is carried by the empty axiom reports in the evidence paragraph. The old next step's first two sentences (the stepwise, cycle and relation-level readings defined on the spine; ranking-under-readings proving what becomes of the rankings under the stepwise reading) concern other records; the related results becoming-stepwise-reading and ranking-under-readings carry their content, and the sentences stay in the snapshot. Every earlier sentence is mapped in the migration table [relational-reading-comparison.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/relational-reading-comparison.md); the exact earlier record is the last text_versions entry.
 - Open-issues plan item 15 (Ren chose “includes”): a reading now includes an event, where it was said to credit it, a market word; the Lean names follow (old and new in the unification plan §10); zh 记入 unchanged.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Ranking.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
-- 5 rebinding entries (2026-10-14 to 2026-10-16): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](relational-reading-comparison.json).
+- 6 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](relational-reading-comparison.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

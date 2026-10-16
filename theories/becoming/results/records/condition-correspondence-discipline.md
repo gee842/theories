@@ -66,6 +66,8 @@ Stated for the stepwise reading only; with fixed dependences it applies through 
 - Related, not a proved adapter: [life-as-condition-of-life](life-as-condition-of-life.md). Under this discipline, formations bearing on themselves relate directly: drawing on one interacts with each of its active events; mutualists not bearing on themselves are not related. Stated in a new section of the same module.
 - Related, not a proved adapter: [living-on-and-descent](living-on-and-descent.md). Two readings of related beyond interaction: living on keeps the discipline that the dependence can fail, and descent needs a positive gift and coming to stand; both depend on the one-kind identification.
 
+**Used by:** [conveyance-crosses-the-boundary](conveyance-crosses-the-boundary.md) · [life-as-condition-of-life](life-as-condition-of-life.md) · [living-on-and-descent](living-on-and-descent.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 
@@ -103,4 +105,4 @@ Aliases: `Becoming.Web.Interacts`, `Becoming.Web.Idle.not_interacts`, `Becoming.
 - 14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; the unification plan only adds the 14 October 2026 rename table after the P36 table in section 10. This record's claim, premises and status are unchanged; no reproof is credited.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D10): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
-- 86 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](condition-correspondence-discipline.json).
+- 87 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](condition-correspondence-discipline.json).
