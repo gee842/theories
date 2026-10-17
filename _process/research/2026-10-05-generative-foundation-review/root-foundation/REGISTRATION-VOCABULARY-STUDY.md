@@ -2,7 +2,7 @@
 
 17 October 2026. AI-authored study, no renames. It answers Ren's observation that "registration is a dualist word, and this nudged the whole vocabulary into a very western way", and his go to "decompose registration and the learning vocabulary into structural relations, propose en/zh candidates, test them against the theorems, no renames yet" ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md)). The quoted words are provenance; the analysis and every proposal below are the AI's.
 
-Scope: no Lean, no result ID, no record, chapter or module text changed. Lean is cited at main `f36a93aaa` (canonical files under `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/`). Counts are over those canonical files and over `theories/becoming/results/records/*.json`, excluding check receipts.
+Scope: no Lean, no result ID, no record, chapter or module text changed. **Decided 18 October 2026** (section 7): Ren agreed with the candidates as proposed and with option (b) for 识; still no renames. Lean is cited at main `f36a93aaa` (canonical files under `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/`). Counts are over those canonical files and over `theories/becoming/results/records/*.json`, excluding check receipts.
 
 ## 1. Diagnosis
 
@@ -110,7 +110,7 @@ All fifteen restatements mean exactly their Lean statements. In three cases (`di
 
 ### 6.3 On 识
 
-Ren chose 识 for "registers" on [11 October](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md). It is closer to dependent differentiation than the English word. It is also the 分别 the 无明 line (`Becoming.Seeking`, `Becoming.Capture`) diagnoses, so as the name of a map or a coupling it says too much at the primitive level. Proposal: the primitives take the structural words above (归并, 耦合入, 无别, 排除, 前段, 外推, 不合, 相合). 识 is kept, as a reading, for the derived structure where a formation's own further course factors through the lumping its couplings induce (selection, response or seeking through its own couplings). That is the place where differentiation by a part shapes that part's course. The reading is the AI's and is for Ren to take or revise.
+Ren chose 识 for "registers" on [11 October](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md). It is closer to dependent differentiation than the English word. It is also the 分别 the 无明 line (`Becoming.Seeking`, `Becoming.Capture`) diagnoses, so as the name of a map or a coupling it says too much at the primitive level. Proposal: the primitives take the structural words above (归并, 耦合入, 无别, 排除, 前段, 外推, 不合, 相合). 识 is kept, as a reading, for the derived structure where a formation's own further course factors through the lumping its couplings induce (selection, response or seeking through its own couplings). That is the place where differentiation by a part shapes that part's course. The reading is the AI's; Ren took this option, (b), on 18 October 2026 (section 7).
 
 ### 6.4 Adjacent words with the same problem (not decomposed here)
 
@@ -118,6 +118,32 @@ Ren chose 识 for "registers" on [11 October](../../../../sources/15-codex-theor
 
 ### 6.5 What a migration would take (not started)
 
-1. Ren's or the integrator's decision on the candidates, including 6.3.
+1. Ren's decision on the candidates, including 6.3: taken on 18 October 2026 (section 7).
 2. Prose first: docstrings, record statements in both languages, the chapter and glossary, with an alias table of old to new names. The retired words are explained once in the glossary, as for G0 and Part I/II.
 3. Lean renames, statements and proofs unchanged, with the old names kept as aliases for one cycle. They land through the queue after the instance check of 6.2, with every record citing a renamed declaration rebound and given a history note. About 64 modules, 180 records and the chapter are affected. This is a claim for the board, and it must not run alongside another session's renames of the same files.
+
+## 7. Decisions (18 October 2026)
+
+Ren went through the candidates in conversation, numbered 1–15 with the AI's confidence and alternatives for each, and the three options for 识. Ren then sent the reply the AI had drafted: "Agree with the candidates as proposed and with 识 option (b); record the decisions in the study, still no renames" ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md#rens-decision-18-october-2026)). "As proposed" is read as the first candidate of each row, not the alternatives offered beside it. The adopted vocabulary:
+
+| # | Current | Adopted (en) | Adopted (zh) | Condition carried |
+|---|---|---|---|---|
+| 1 | registers (S2) | couples into; by threshold / by level | 耦合入；经阈 / 经水平 | Coupling by level becomes a name only after the instance check of 6.2. Until then it is a labelled reading of `obs`. Always "into" (directed). |
+| 2 | registration as a map (S1) | the map; its lumping; the course through the map; `Law.frameBy` | 映射；归并；经映射的历程；律经映射之框 | — |
+| 3 | registers alike (S3) | alike through `g`'s couplings (`AlikeThrough`) | 经 g 之耦合无别 | — |
+| 4 | registration closure (S4) | coupling closure (`WithinCoupling`, `CoupledFrom`) | 耦合闭包 | — |
+| 5 | belief (S5) | the class alike through `g` (`ClassThrough`) | 经 g 无别之类 | — |
+| 6 | refutes (web) | excludes (`Excludes`, `ExcludesWithin`) | 排除 | Popper's "refutation" stays in correspondence and standard-boundary fields. |
+| 7 | `Likeness.Registers` (S6) | respects the claims (`RespectsClaims`) | 保持断言 | — |
+| 7′ | local senses (S7) | `keeps`, `keepsBit`, `keepsNothing`; `negationCourse`; `linkProcess`; `alikeOnInstalled`; `RespondsThroughCoupling` | 存；否定之历程；联结过程；装入处无别；经耦合而应 | — |
+| 8 | record (`Learning.record`) | prefix | 前段 | 迹 is not adopted; the Zhuangzi echo stays an unused analogy. "Record" keeps its entropy sense. |
+| 9 | learner / claim (`pred`) | extrapolation; proposes / stays silent | 外推；提出 / 默 | Used in its general sense, proposing how a sequence goes on. An actual formation remains "a formation that learns". |
+| 10 | refuted / holds | misses / accords | 不合 / 相合 | — |
+| 11 | target (`val`) | feature | 特征 | — |
+| 12 | learner by refutation | extrapolation by elimination | 逐除外推 | — |
+| 13 | learner given the world | extrapolation built from the process (moves, configurations, start); built from the law (map, feature, configurations) | 依过程所建之外推；依律所建之外推 | — |
+| 14 | learnable | kept | 可学 | Defined as in section 4. |
+| 15 | options; selection through a model of the options | alternatives; selection factors through a map of the alternatives | 备择；经备择之映射的选择 | Revises the 16 October title; the old title stays as an alias in the record's history. |
+| 识 | registers (zh, 11 October) | — | 识 is kept for the derived structure only: a formation's own further course (selection, response, seeking) factoring through the lumping its own couplings make | Primitives take the words of rows 1–13. The 无明 line (`Seeking`, `Capture`) is where 识 now has its exact place. The reading is the AI's; Ren chose this option. |
+
+Not decided here: the adjacent words of 6.4 (`Admits`, "model", `Reads`/`Reading`, "options" outside `Selection`); the instance check of 6.2; the migration of 6.5, steps 2–3, which needs its own claim on the board. Nothing is renamed by this decision.

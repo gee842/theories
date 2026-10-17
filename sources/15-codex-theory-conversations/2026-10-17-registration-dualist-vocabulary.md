@@ -20,6 +20,12 @@ The assistant agreed, gave its analysis (below) and offered a naming study. Ren 
 
 > Yes, start the naming study: decompose registration and the learning vocabulary into structural relations, propose en/zh candidates, test them against the theorems, no renames yet.
 
+## Ren's decision (18 October 2026)
+
+After the study was committed (`cc1beb086`), Ren chose to go through the candidates together first. The assistant set out the fifteen candidates, each with its confidence and alternatives, and the three options for 识: (a) 识 for every sense of "registers"; (b) structural words for the primitives, with 识 kept for the derived structure where a formation's own further course goes through the lumping its own couplings make; (c) drop 识. Ren then sent the reply the assistant had drafted for the button:
+
+> Agree with the candidates as proposed and with 识 option (b); record the decisions in the study, still no renames.
+
 ## Context (AI-authored)
 
 Everything below is the assistant's, not Ren's.
