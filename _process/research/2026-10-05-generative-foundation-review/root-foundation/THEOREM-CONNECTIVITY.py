@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""How the spine's theorems connect to its base definitions: python3 -B THEOREM-CONNECTIVITY.py [--write]
+"""How the spine's theorems connect to its base definitions: python3 -B THEOREM-CONNECTIVITY.py [--write] [--check]
 
 Three steps, none of which writes to the repository unless `--write` is given:
 
@@ -15,8 +15,13 @@ Three steps, none of which writes to the repository unless `--write` is given:
    * it is used, directly or through other constants, by some constant that reaches the base;
    * otherwise it stands apart: its statement uses its own definitions, or no tracked constant at all.
    Also reported: whether the two families reach each other, where statements use both, the connected components
-   of the undirected dependency graph, and, for each result record with spine theorem aliases, the best class among
-   them.
+   of the undirected dependency graph, and, for each result record naming spine theorems (in its aliases, or in the
+   declarations and witnesses of its laws, limits and counterexamples), the best class among them.
+
+Also reported: the roots among the apart theorems (used by no other apart theorem) and, from
+THEOREM-CONNECTIVITY-APART.json, each root's category and reason (support, logical strength, model witness, restates,
+general structure, bridge interface); `--check` exits with an error where an apart root has no entry or an entry is no
+longer an apart root, so a new theorem cannot stand apart unremarked.
 
 Prints a summary as JSON; `--write` also saves it, with every spine theorem's class, to THEOREM-CONNECTIVITY.json.
 A measurement, not a check: it reads dependencies in the compiled environment and judges no statement's meaning.
@@ -37,6 +42,7 @@ ROOT = HERE.parents[3]
 SPINE_DIR = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming'
 DUMP = HERE / 'THEOREM-CONNECTIVITY-DUMP.lean'
 RECORDS = ROOT / 'theories/becoming/results/records'
+APART_REGISTER = HERE / 'THEOREM-CONNECTIVITY-APART.json'
 sys.path.insert(0, str(SPINE_DIR))
 import check_becoming as cb  # noqa: E402
 
@@ -150,6 +156,19 @@ def main():
     apart = [n for n, _ in theorems if cls[n] in APART]
     total = collections.Counter(module_of.values())
     apart_by_module = collections.Counter(module_of[n] for n in apart)
+    # Roots: apart theorems used by no other apart theorem (nor by a definition off the base). A theorem on the base
+    # using a root makes it, and every apart theorem it uses, feed the base. The register gives each root's reason.
+    apart_set = set(apart)
+    users = collections.defaultdict(set)
+    for n in constants:
+        for d in deps[n]:
+            if d in apart_set and d != n:
+                users[d].add(n)
+    roots = sorted(n for n in apart if not any(
+        u in apart_set or (constants[u]['k'] == 'def' and u not in feeds and not on_base[u]) for u in users[n]))
+    register = json.loads(APART_REGISTER.read_text())['roots'] if APART_REGISTER.exists() else {}
+    unclassified = [n for n in roots if n not in register]
+    stale = sorted(n for n in register if n not in set(roots))
 
     # Undirected components over every tracked constant.
     neighbours = collections.defaultdict(set)
@@ -174,7 +193,14 @@ def main():
     records, apart_records = collections.Counter(), []
     for path in sorted(glob.glob(str(RECORDS / '*.json'))):
         record = json.loads(Path(path).read_text())
-        aliases = [a for a in record.get('aliases', []) if a in cls]
+        named = set(record.get('aliases', []))
+        for field in ('laws', 'does_not_show', 'counterexamples'):
+            for item in record.get(field) or []:
+                if isinstance(item, dict):
+                    named.update(item.get('declarations') or [])
+                    if isinstance(item.get('witness'), str):
+                        named.add(item['witness'])
+        aliases = sorted(a for a in named if a in cls)
         if aliases:
             best = min((cls[a] for a in aliases), key=CLASSES.index)
             records[best] += 1
@@ -198,6 +224,10 @@ def main():
         },
         'classes': {c: sum(1 for v in cls.values() if v == c) for c in CLASSES},
         'apart_used_by_nothing': sum(1 for n in apart if used[n] == 0),
+        'apart_roots': len(roots),
+        'apart_roots_by_category': dict(collections.Counter(register[n]['category'] for n in roots if n in register)),
+        'apart_roots_unclassified': unclassified,
+        'register_entries_not_apart_roots': stale,
         'statements_on_both_by_module': dict(collections.Counter(
             module_of[n] for n in cls if cls[n] == CLASSES[0]).most_common()),
         'apart_by_module': {m: [k, total[m]] for m, k in apart_by_module.most_common()},
@@ -206,6 +236,9 @@ def main():
         'records_resting_only_on_apart_theorems': apart_records,
     }
     print(json.dumps(summary, ensure_ascii=False, indent=1))
+    if '--check' in sys.argv[1:] and (unclassified or stale):
+        sys.exit(f'apart roots without a reason in {APART_REGISTER.name}: {unclassified}; register entries no longer apart '
+                 f'roots: {stale}')
     if '--write' in sys.argv[1:]:
         (HERE / 'THEOREM-CONNECTIVITY.json').write_text(json.dumps(
             {**summary, 'theorems': {n: cls[n] for n, _ in theorems}}, ensure_ascii=False, indent=1) + '\n')

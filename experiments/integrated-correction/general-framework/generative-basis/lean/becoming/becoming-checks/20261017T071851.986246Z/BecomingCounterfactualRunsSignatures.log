@@ -1,0 +1,11 @@
+@Becoming.CounterfactualRuns.inputs_run_state : ∀ {X : Type u_1} {U : Type u_2} {E : Type u_3} {F : X → U → E → X}
+  (r : Becoming.Run (Becoming.inputs F)) (n : Nat),
+  r.state n = Becoming.trajectory F (r.state 0) (fun k => (r.act k).fst) (fun k => (r.act k).snd) n
+@Becoming.CounterfactualRuns.course_runs : ∀ {F C : Type} (law : Becoming.ExchangeLaw F C) (present : Nat → List F)
+  (part : F → Bool) {start : C → Nat} (r : Becoming.Run (Becoming.inputs (law.stepBy present part))),
+  r.state 0 = (0, fun x => start) →
+    ∀ (n : Nat),
+      r.state n = (n, (law.withAct part (Becoming.ExchangeLaw.ofMoves fun k => (r.act k).fst)).history present start n)
+@Becoming.CounterfactualRuns.courseWorld_level_zero : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C}
+  {present : Nat → List F} {start : C → Nat} {W : Becoming.Web F C} (c : C),
+  (law.courseWorld present start W).web.level 0 (Sum.inr c) = start c

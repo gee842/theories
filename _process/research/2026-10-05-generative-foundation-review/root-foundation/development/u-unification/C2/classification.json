@@ -1,0 +1,82 @@
+{
+ "Becoming.CrossSituational.distinct_iff": {
+  "module": "Becoming.Courses",
+  "category": "support",
+  "reason": "a list lemma: the universe-polymorphic and the Type-level definitions of lists without repetition agree"
+ },
+ "Becoming.Interference.truncation_misses_cancellation": {
+  "module": "Becoming.Weighted",
+  "category": "model-witness",
+  "reason": "the truncated signed sum of one two-move weighting on one configuration, computed by evaluation; the signed counts of the traces of that weighting are on the base as SituationTraces.cancels_counts"
+ },
+ "Becoming.Interference.unseen_balanced": {
+  "module": "Becoming.Weighted",
+  "category": "support",
+  "reason": "algebra of signed counts: a reading of pairs of naturals into Booleans that keeps the join marks the balanced pair; no process, run or world enters"
+ },
+ "Becoming.Lumping.loses": {
+  "module": "Becoming.Weighted",
+  "category": "model-witness",
+  "reason": "the one-step counts of one two-configuration weighting under the trivial description; lumpability on processes is joined as WeightedTraces.lumped_iff, but this witness is about counts, which the possibility reading of a process does not carry"
+ },
+ "Becoming.ParitySystem.glues_iff": {
+  "module": "Becoming.Gluing",
+  "category": "restates",
+  "reason": "restated on the base by ParitySystem.world_free_iff (Becoming.ParityReadings): the same law for the world of readings at a step of a run of any process"
+ },
+ "Becoming.Square.at_pos": {
+  "module": "Becoming.Context",
+  "category": "support",
+  "reason": "a position lemma of the square: the cell at a registered cell's position is that cell"
+ },
+ "Becoming.Square.line_commute": {
+  "module": "Becoming.Quantum",
+  "category": "model-witness",
+  "reason": "an identity of the constructed integer 4x4 observables realizing the square, checked by evaluation; the registrations they realize are on the base through Square.QuantumAt (Becoming.ParityReadings)"
+ },
+ "Becoming.Square.line_product": {
+  "module": "Becoming.Quantum",
+  "category": "model-witness",
+  "reason": "an identity of the constructed integer 4x4 observables realizing the square, checked by evaluation; the registrations they realize are on the base through Square.QuantumAt (Becoming.ParityReadings)"
+ },
+ "Becoming.Square.obs_sq": {
+  "module": "Becoming.Quantum",
+  "category": "model-witness",
+  "reason": "an identity of the constructed integer 4x4 observables realizing the square, checked by evaluation; the registrations they realize are on the base through Square.QuantumAt (Becoming.ParityReadings)"
+ },
+ "Becoming.Square.off_line_anticommute": {
+  "module": "Becoming.Quantum",
+  "category": "model-witness",
+  "reason": "an identity of the constructed integer 4x4 observables realizing the square, checked by evaluation; the registrations they realize are on the base through Square.QuantumAt (Becoming.ParityReadings)"
+ },
+ "Becoming.Square.yy_entries": {
+  "module": "Becoming.Quantum",
+  "category": "model-witness",
+  "reason": "the entries of one constructed integer matrix (Y tensor Y as minus W tensor W), checked by evaluation"
+ },
+ "Becoming.Typicality.total_congr_mem": {
+  "module": "Becoming.Typicality",
+  "category": "support",
+  "reason": "a list lemma: sums over a list agree where the summands agree on its members"
+ },
+ "Becoming.Weights.truncation": {
+  "module": "Becoming.Weighted",
+  "category": "support",
+  "reason": "a sum over an appended list splits, for any weights (Weights.sum_append restated)"
+ },
+ "Becoming.counting_truncation_le": {
+  "module": "Becoming.Weighted",
+  "category": "support",
+  "reason": "arithmetic: a sum of naturals over a list is at most the sum over that list appended to another"
+ },
+ "Becoming.mass_lt_of_added": {
+  "module": "Becoming.Weighted",
+  "category": "support",
+  "reason": "a sum over a listed domain rises strictly where an entry of positive weight is added to the event; a list-arithmetic law with no process, run or world"
+ },
+ "Becoming.CHSH.support_iff": {
+  "module": "Becoming.Gluing",
+  "category": "model-witness",
+  "reason": "the support condition of the CHSH parity system; a fact about one constructed system, and read at a run configuration the run would play no role (join removed by the integrator)"
+ }
+}

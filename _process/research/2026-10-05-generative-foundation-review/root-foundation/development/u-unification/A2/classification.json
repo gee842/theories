@@ -1,0 +1,67 @@
+{
+ "Becoming.Contacts.Alike.refl": {
+  "module": "Becoming.Contacts",
+  "category": "support",
+  "reason": "Reflexivity of agreement on the contacts (every signal agrees with itself), a one-line lemma with no reading on the base."
+ },
+ "Becoming.Copying.scan_le": {
+  "module": "Becoming.Copying",
+  "category": "restates",
+  "reason": "The same law for the fold scanSites as Becoming.Courses.inspection_course_le states for every course of the inspection process; Courses proves it without scan_le."
+ },
+ "Becoming.CrossSituational.Repeated.not_resolved": {
+  "module": "Becoming.CrossSituational",
+  "category": "model-witness",
+  "reason": "Candidates [0, 0] of the repeated repertoire on the empty record; an empty list of records does not read naturally as a run."
+ },
+ "Becoming.CrossSituational.Repeated.separated": {
+  "module": "Becoming.CrossSituational",
+  "category": "model-witness",
+  "reason": "The separation conditions for 0 on the empty record of the repeated repertoire, the companion of Repeated.not_resolved; no natural run reading."
+ },
+ "Becoming.CrossSituational.narrows": {
+  "module": "Becoming.CrossSituational",
+  "category": "restates",
+  "reason": "Becoming.Courses.run_narrows states it of the records of every run (proved through candidates_append rather than narrows)."
+ },
+ "Becoming.CrossSituational.reads_every_iff": {
+  "module": "Becoming.CrossSituational",
+  "category": "restates",
+  "reason": "Becoming.Courses.course_resolves_every_iff states it of every course of words (proved through Segmentation.reads_every_iff rather than this theorem)."
+ },
+ "Becoming.EitherThroughout.of_em": {
+  "module": "Becoming.Likeness",
+  "category": "logical-strength",
+  "reason": "Excluded middle gives EitherThroughout; its frame form under excluded middle is already on the base, stronger, as Becoming.alike_iff_sameBranchingTests_of_em (no listed moves or claims needed)."
+ },
+ "Becoming.NowhereDecided.of_em": {
+  "module": "Becoming.Likeness",
+  "category": "logical-strength",
+  "reason": "Excluded middle gives NowhereDecided; a statement about principles of reasoning only (the frame form of NowhereDecided is ListedOutcomeFrames.alike_iff_sameBranchingTests_of_nowhereDecided)."
+ },
+ "Becoming.LLPO.decidable": {
+  "module": "Becoming.Likeness",
+  "category": "logical-strength",
+  "reason": "LLPO gives the family form where decisions are Decidable data; the listed-outcome frames are built from Decided families, so it has no frame reading."
+ },
+ "Becoming.LLPO.of_lpo": {
+  "module": "Becoming.Likeness",
+  "category": "logical-strength",
+  "reason": "LPO gives LLPO in its standard Boolean form; LLPO alone does not give the family form the frames need, so no frame statement follows."
+ },
+ "Becoming.Readout.no_judge_of_merged": {
+  "module": "Becoming.Readout",
+  "category": "restates",
+  "reason": "Becoming.Courses.no_run_judge_of_merged states it of the dates of every run (proved directly, not through this theorem)."
+ },
+ "Becoming.Registration.retained_keeps": {
+  "module": "Becoming.Revision",
+  "category": "support",
+  "reason": "Equal pairs have equal first components (congrArg Prod.fst); a statement using only the prelude."
+ },
+ "Becoming.Revising.old_cannot_select_rebuild": {
+  "module": "Becoming.Revision",
+  "category": "model-witness",
+  "reason": "a fact about one configuration of the constructed revision process; stated at a run configuration the run plays no role (join removed by the integrator)"
+ }
+}

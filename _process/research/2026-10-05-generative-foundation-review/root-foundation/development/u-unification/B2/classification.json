@@ -1,0 +1,127 @@
+{
+ "Becoming.LPO.of_rule": {
+  "module": "Becoming.Tail",
+  "category": "logical-strength",
+  "reason": "A rule deciding every Boolean sequence gives the proposition LPO: pure logic; its run form is TailRuns.lpo_iff_runs with TailRuns.trueRule_iff."
+ },
+ "Becoming.WLPO.of_rule": {
+  "module": "Becoming.Tail",
+  "category": "logical-strength",
+  "reason": "A rule deciding every Boolean sequence gives the proposition WLPO: pure logic; its run form is TailRuns.wlpo_iff_runs with TailRuns.falseRule_iff."
+ },
+ "Becoming.tailLaw_eq_wholeLaw": {
+  "module": "Becoming.Tail",
+  "category": "model-witness",
+  "reason": "A definitional identity of two constructed laws (the tail law is the law of the indicator of vanishing); the tail law's laws on webs are on the base (tailLaw_not_through, tailLaw_through_from, tailLaw_no_least_registration)."
+ },
+ "Becoming.vanishIndicator_changedByNoCondition": {
+  "module": "Becoming.Tail",
+  "category": "model-witness",
+  "reason": "A fact about one constructed number, the indicator of vanishing given a decision; it serves only to read the tail law as a law of the whole."
+ },
+ "Becoming.wholeLaw_not_readsFinitely": {
+  "module": "Becoming.Tail",
+  "category": "model-witness",
+  "reason": "A fact about the constructed law of a whole (one formation exchanging a number of the step-0 levels); its web form, not reading through what it is sensitive to on a free web, is joined as SensitivityWebs.wholeLaw_not_through."
+ },
+ "Becoming.Pointer.no_list": {
+  "module": "Becoming.Sensitivity",
+  "category": "model-witness",
+  "reason": "A fact about the constructed Pointer law (reads within no one list under all histories); it does not read naturally as a run or world."
+ },
+ "Becoming.Pointer.readsFinitely": {
+  "module": "Becoming.Sensitivity",
+  "category": "model-witness",
+  "reason": "A fact about the constructed Pointer law (reads finitely many conditions under each history)."
+ },
+ "Becoming.WLPO.of_lpo": {
+  "module": "Becoming.Sensitivity",
+  "category": "logical-strength",
+  "reason": "LPO gives WLPO: pure logic; both are stated of every run in TailRuns (lpo_iff_runs, wlpo_iff_runs)."
+ },
+ "Becoming.tailLaw_not_readsFinitely": {
+  "module": "Becoming.Sensitivity",
+  "category": "model-witness",
+  "reason": "A fact about the tail law, one constructed law given a decision of vanishing."
+ },
+ "Becoming.tailLaw_not_through_sensitive": {
+  "module": "Becoming.Sensitivity",
+  "category": "restates",
+  "reason": "The history form of Becoming.tailLaw_not_through, which is on the base (the tail law does not read through what it is sensitive to on a web where it depends on nothing)."
+ },
+ "Becoming.Counts.eq_zero": {
+  "module": "Becoming.Decidedness",
+  "category": "support",
+  "reason": "A list lemma: a count is zero where the determination holds of no member."
+ },
+ "Becoming.Counts.pos_of_mem": {
+  "module": "Becoming.Decidedness",
+  "category": "support",
+  "reason": "A list lemma: a member of which the determination holds makes a count positive."
+ },
+ "Becoming.Decided.weakly": {
+  "module": "Becoming.Decidedness",
+  "category": "logical-strength",
+  "reason": "A decided proposition is weakly decided: pure logic about excluded middle forms."
+ },
+ "Becoming.exists_undominated_iff_weakly": {
+  "module": "Becoming.Decidedness",
+  "category": "logical-strength",
+  "reason": "Asked of every relation, undominated members exist exactly under weak excluded middle: a statement about excluded middle only."
+ },
+ "Becoming.undominated_has_iff_em": {
+  "module": "Becoming.Decidedness",
+  "category": "logical-strength",
+  "reason": "Asked of every determination, the undominated law is exactly excluded middle: a statement about excluded middle only."
+ },
+ "Becoming.Numbers.le_length": {
+  "module": "Becoming.Listing",
+  "category": "support",
+  "reason": "A list lemma: the number of members a list holds is at most its length."
+ },
+ "Becoming.Numbers.unique": {
+  "module": "Becoming.Listing",
+  "category": "support",
+  "reason": "A list lemma: the number of members a list holds is one number; its world form through relations is joined as CensusWebs.indiscernible_numbers_unique."
+ },
+ "Becoming.numbers_iff_decided": {
+  "module": "Becoming.Listing",
+  "category": "support",
+  "reason": "A list lemma: a list's number of members exists exactly where identity among them is decided (local decidedness of list members, no structure of the unfolding)."
+ },
+ "Becoming.numbers_iff_numbersBy_eq": {
+  "module": "Becoming.Listing",
+  "category": "support",
+  "reason": "A list lemma: counting by name is counting up to identity of names."
+ },
+ "Becoming.of_listsOnce": {
+  "module": "Becoming.Listing",
+  "category": "support",
+  "reason": "A list lemma: a law holding wherever a list is listed once holds where identity among its members is decided."
+ },
+ "Becoming.repeated_same": {
+  "module": "Becoming.Listing",
+  "category": "support",
+  "reason": "A list fact about [a, a] and [a]: length counts places, not members."
+ },
+ "Becoming.listsOnce_all_iff": {
+  "module": "Becoming.Listing",
+  "category": "logical-strength",
+  "reason": "Every list over a type can be listed once exactly where identity on the type is decided: a statement about decided equality only; the world form (World.indiscernible_decided_iff_em) is on the base."
+ },
+ "Becoming.Triple.not_rearranged": {
+  "module": "Becoming.OrderNormal",
+  "category": "model-witness",
+  "reason": "A fact about one constructed relation on three steps (first and last joined), not a world's footprint."
+ },
+ "Becoming.pick_least": {
+  "module": "Becoming.OrderNormal",
+  "category": "support",
+  "reason": "A lemma about the sort's first-where search over Boolean freeness, used inside the normal form construction; no relation or world enters its statement."
+ },
+ "Becoming.sorts_by_iff": {
+  "module": "Becoming.OrderNormal",
+  "category": "restates",
+  "reason": "With the relation a world's footprint joins, it is Becoming.Footprinted.sorts_iff (on the base), through Footprinted.independent_iff_commutes."
+ }
+}

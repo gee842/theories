@@ -1,0 +1,22 @@
+@Becoming.CandidateRuns.window_succ : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  (run : Becoming.Run P) (n : Nat), run.window 0 (n + 1) = run.window 0 n ++ [run.act n]
+@Becoming.CandidateRuns.run_step_bearing : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {M : Type u_3}
+  (bears : A → Bool) (offers : A → M → Bool) (run : Becoming.Run P) (rep : List M) (n : Nat),
+  bears (run.act n) = true →
+    Becoming.CrossSituational.candidates bears offers rep (run.window 0 (n + 1)) =
+      List.filter (offers (run.act n)) (Becoming.CrossSituational.candidates bears offers rep (run.window 0 n))
+@Becoming.CandidateRuns.run_step_other : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {M : Type u_3}
+  (bears : A → Bool) (offers : A → M → Bool) (run : Becoming.Run P) (rep : List M) (n : Nat),
+  bears (run.act n) = false →
+    Becoming.CrossSituational.candidates bears offers rep (run.window 0 (n + 1)) =
+      Becoming.CrossSituational.candidates bears offers rep (run.window 0 n)
+@Becoming.CandidateRuns.run_resolved_is_target : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {M : Type u_3} {bears : A → Bool} {offers : A → M → Bool} (run : Becoming.Run P) (n : Nat) {rep : List M} {t e : M},
+  t ∈ rep →
+    (∀ (a : A), a ∈ run.window 0 n → bears a = true → offers a t = true) →
+      Becoming.CrossSituational.candidates bears offers rep (run.window 0 n) = [e] → e = t
+@Becoming.CandidateRuns.run_omitted : ∀ {S : Type u_1} {P : Generative.Process S Unit} (run : Becoming.Run P),
+  Becoming.CrossSituational.Omitted.offers (run.act 0) 0 = false ∧
+    Becoming.CrossSituational.candidates (fun x => true) Becoming.CrossSituational.Omitted.offers [0, 1]
+        (run.window 0 1) =
+      [1]

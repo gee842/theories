@@ -1,0 +1,21 @@
+@Becoming.JointPlanFrames.plans_lift_iff_of_kernel : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  (F : Becoming.JointFrame S A C) {π : S → K} {R : S → S → Prop},
+  (∀ (s s' : S), π s = π s' ↔ R s s') →
+    ((∀ (s : S) (plan : Becoming.JointPlan K),
+        Becoming.JointPlan.Realizes (Becoming.jointImage F.joint π) (fun k k' => k = k') (π s) plan ↔
+          Becoming.JointPlan.Realizes F.joint (fun x k => π x = k) s plan) ↔
+      Becoming.MatchesParts F.joint F.joint R)
+@Becoming.JointPlanFrames.plans_lift_of_jointAlike : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.JointFrame S A C} {π : S → K},
+  Becoming.IdentifiesJointAlike F π →
+    ∀ (s : S) (plan : Becoming.JointPlan K),
+      Becoming.JointPlan.Realizes (Becoming.jointImage F.joint π) (fun k k' => k = k') (π s) plan ↔
+        Becoming.JointPlan.Realizes F.joint (fun x k => π x = k) s plan
+@Becoming.JointPlanFrames.plans_lift_of_sameJointTests : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.JointFrame S A C} {π : S → K},
+  (∀ (s s' : S), π s = π s' ↔ Becoming.SameJointTests F F s s') →
+    F.JointCompact →
+      F.TestsStable →
+        ∀ (s : S) (plan : Becoming.JointPlan K),
+          Becoming.JointPlan.Realizes (Becoming.jointImage F.joint π) (fun k k' => k = k') (π s) plan ↔
+            Becoming.JointPlan.Realizes F.joint (fun x k => π x = k) s plan

@@ -1,0 +1,683 @@
+{
+ "about": "Spine theorems that stand apart from the base by design (U, 17 October 2026). Each root (an apart theorem no other apart theorem uses) has a category and a reason; THEOREM-CONNECTIVITY.py --check fails where an apart root has none. The categories:",
+ "categories": {
+  "support": "an arithmetic or list lemma, or a statement using only the prelude",
+  "logical-strength": "a statement about LPO, WLPO, LLPO, excluded middle or choice only",
+  "model-witness": "a fact about one constructed model (a counterexample or example structure)",
+  "restates": "it restates a law already stated on the base",
+  "general-structure": "a law of every valuation or rule on any type; the base supplies no reading of its vocabulary",
+  "bridge-interface": "an equivalence between an inherited periphery interface and a core concept (the bridge ring)"
+ },
+ "roots": {
+  "Becoming.Apart.not_enough": {
+   "module": "Becoming.Standpoints",
+   "category": "model-witness",
+   "reason": "a counter-model showing that a premise of the ethical laws is needed; a fact about one constructed valuation, not a law of the unfolding"
+  },
+  "Becoming.CHSH.support_iff": {
+   "module": "Becoming.Gluing",
+   "category": "model-witness",
+   "reason": "the support condition of the CHSH parity system; a fact about one constructed system, and read at a run configuration the run would play no role (join removed by the integrator)"
+  },
+  "Becoming.Contacts.Alike.refl": {
+   "module": "Becoming.Contacts",
+   "category": "support",
+   "reason": "Reflexivity of agreement on the contacts (every signal agrees with itself), a one-line lemma with no reading on the base."
+  },
+  "Becoming.Copying.scan_le": {
+   "module": "Becoming.Copying",
+   "category": "restates",
+   "reason": "The same law for the fold scanSites as Becoming.Courses.inspection_course_le states for every course of the inspection process; Courses proves it without scan_le."
+  },
+  "Becoming.Countdown.Advances.completes": {
+   "module": "Becoming.Countdown",
+   "category": "restates",
+   "reason": "Courses.Advances.completes_plan states it as completion of a plan of the tick's process (through completes_ofPartial_iff and ticks_eq_runPartial)."
+  },
+  "Becoming.Counts.eq_zero": {
+   "module": "Becoming.Decidedness",
+   "category": "support",
+   "reason": "A list lemma: a count is zero where the determination holds of no member."
+  },
+  "Becoming.Counts.pos_of_mem": {
+   "module": "Becoming.Decidedness",
+   "category": "support",
+   "reason": "A list lemma: a member of which the determination holds makes a count positive."
+  },
+  "Becoming.CrossSituational.Repeated.not_resolved": {
+   "module": "Becoming.CrossSituational",
+   "category": "model-witness",
+   "reason": "Candidates [0, 0] of the repeated repertoire on the empty record; an empty list of records does not read naturally as a run."
+  },
+  "Becoming.CrossSituational.Repeated.separated": {
+   "module": "Becoming.CrossSituational",
+   "category": "model-witness",
+   "reason": "The separation conditions for 0 on the empty record of the repeated repertoire, the companion of Repeated.not_resolved; no natural run reading."
+  },
+  "Becoming.CrossSituational.distinct_iff": {
+   "module": "Becoming.Courses",
+   "category": "support",
+   "reason": "a list lemma: the universe-polymorphic and the Type-level definitions of lists without repetition agree"
+  },
+  "Becoming.CrossSituational.narrows": {
+   "module": "Becoming.CrossSituational",
+   "category": "restates",
+   "reason": "Becoming.Courses.run_narrows states it of the records of every run (proved through candidates_append rather than narrows)."
+  },
+  "Becoming.CrossSituational.reads_every_iff": {
+   "module": "Becoming.CrossSituational",
+   "category": "restates",
+   "reason": "Becoming.Courses.course_resolves_every_iff states it of every course of words (proved through Segmentation.reads_every_iff rather than this theorem)."
+  },
+  "Becoming.Decided.weakly": {
+   "module": "Becoming.Decidedness",
+   "category": "logical-strength",
+   "reason": "A decided proposition is weakly decided: pure logic about excluded middle forms."
+  },
+  "Becoming.EitherThroughout.of_em": {
+   "module": "Becoming.Likeness",
+   "category": "logical-strength",
+   "reason": "Excluded middle gives EitherThroughout; its frame form under excluded middle is already on the base, stronger, as Becoming.alike_iff_sameBranchingTests_of_em (no listed moves or claims needed)."
+  },
+  "Becoming.Instances.dephase_no_restore": {
+   "module": "Becoming.Instances",
+   "category": "model-witness",
+   "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+  },
+  "Becoming.Instances.diagonal_no_decoder": {
+   "module": "Becoming.Instances",
+   "category": "model-witness",
+   "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+  },
+  "Becoming.Instances.evolve_eq_foldl": {
+   "module": "Becoming.Instances",
+   "category": "model-witness",
+   "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+  },
+  "Becoming.Instances.ideal_two_word": {
+   "module": "Becoming.Instances",
+   "category": "model-witness",
+   "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+  },
+  "Becoming.Instances.local_pair_no_update": {
+   "module": "Becoming.Instances",
+   "category": "model-witness",
+   "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+  },
+  "Becoming.Interference.truncation_misses_cancellation": {
+   "module": "Becoming.Weighted",
+   "category": "model-witness",
+   "reason": "the truncated signed sum of one two-move weighting on one configuration, computed by evaluation; the signed counts of the traces of that weighting are on the base as SituationTraces.cancels_counts"
+  },
+  "Becoming.Interference.unseen_balanced": {
+   "module": "Becoming.Weighted",
+   "category": "support",
+   "reason": "algebra of signed counts: a reading of pairs of naturals into Booleans that keeps the join marks the balanced pair; no process, run or world enters"
+  },
+  "Becoming.Joining.compatible_iff": {
+   "module": "Becoming.JoiningBridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.Joining.locallyFinite_iff": {
+   "module": "Becoming.JoiningBridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.Joining.openMap_id": {
+   "module": "Becoming.Joining",
+   "category": "restates",
+   "reason": "The identity is an open map of joinings; through Joining.openMap_iff this is Becoming.openMap_id (the identity is open on any frame, Joining.lean) for the role frame, and the likeness it gives is Becoming.Alike.refl."
+  },
+  "Becoming.Joining.roleTotal_iff": {
+   "module": "Becoming.JoiningBridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.Judgment.required_of_bettered": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.LLPO.decidable": {
+   "module": "Becoming.Likeness",
+   "category": "logical-strength",
+   "reason": "LLPO gives the family form where decisions are Decidable data; the listed-outcome frames are built from Decided families, so it has no frame reading."
+  },
+  "Becoming.LLPO.of_lpo": {
+   "module": "Becoming.Likeness",
+   "category": "logical-strength",
+   "reason": "LPO gives LLPO in its standard Boolean form; LLPO alone does not give the family form the frames need, so no frame statement follows."
+  },
+  "Becoming.LPO.of_rule": {
+   "module": "Becoming.Tail",
+   "category": "logical-strength",
+   "reason": "A rule deciding every Boolean sequence gives the proposition LPO: pure logic; its run form is TailRuns.lpo_iff_runs with TailRuns.trueRule_iff."
+  },
+  "Becoming.Lasting.Reaches.mono": {
+   "module": "Becoming.Lasting",
+   "category": "support",
+   "reason": "Monotonicity of the step bound of the source's recursive predicate Reaches; on runs it adds nothing to Courses.Reaches.runs beyond Nat.le_trans."
+  },
+  "Becoming.Lasting.fixed_avoids": {
+   "module": "Becoming.Lasting",
+   "category": "restates",
+   "reason": "Courses.fixed_avoids_reach states it on the courses of Law.process next (through Courses.reach_iff_orbit)."
+  },
+  "Becoming.Law.Lossless.unlisted": {
+   "module": "Becoming.Recurrence",
+   "category": "restates",
+   "reason": "Branching.Lossless.unlisted at Law.process next with the run Law.run next s states it on the base (through law_lossless_iff and law_returns_iff)."
+  },
+  "Becoming.Law.drawn_of_lost": {
+   "module": "Becoming.Attraction",
+   "category": "restates",
+   "reason": "Under law_reachable_iff and law_drawn_iff it is Branching.necessarilyDrawn_of_lost at Law.process next, already on the base for every process."
+  },
+  "Becoming.Law.lost_stays": {
+   "module": "Becoming.Recurrence",
+   "category": "restates",
+   "reason": "Branching.lost_stays states it for every process; at Law.process next it is this law through law_reachable_iff."
+  },
+  "Becoming.Law.rise_not_lossless": {
+   "module": "Becoming.Recurrence",
+   "category": "restates",
+   "reason": "Branching.rise_not_lossless states it on a run of every process, needing only the run's configurations listed; at Law.process next it is this law through law_lossless_iff."
+  },
+  "Becoming.Learning.Shift.determines": {
+   "module": "Becoming.Learning",
+   "category": "model-witness",
+   "reason": "A fact about the constructed Shift example (inputs a position and a content, lumped by content): a generalization witness over functions on Bool x Bool with no evident reading as a run or world; the general laws it instances are joined in LearningRuns (determines_iff_registered_alike)."
+  },
+  "Becoming.Learning.Shift.every_nothing": {
+   "module": "Becoming.Learning",
+   "category": "model-witness",
+   "reason": "The Shift example's instance of every_determines_nothing; the law itself is joined on runs of free branching (LearningRuns.free_record_fixes_nothing)."
+  },
+  "Becoming.Learning.Shift.right_same": {
+   "module": "Becoming.Learning",
+   "category": "model-witness",
+   "reason": "The Shift example's instance of lumped_world_right; the law itself is joined on runs (LearningRuns.world_carried_right)."
+  },
+  "Becoming.Learning.Shift.wrong_both": {
+   "module": "Becoming.Learning",
+   "category": "model-witness",
+   "reason": "The Shift example's instance of lumped_right_iff; the law itself is joined on runs (LearningRuns.carried_right_iff)."
+  },
+  "Becoming.Listed.lpo_of_few": {
+   "module": "Becoming.Openness",
+   "category": "logical-strength",
+   "reason": "States that strengthening few_of_quiet to a list of every member ever holding gives LPO, for determinations on Nat; a world form would need a world built from Few, which no module gives."
+  },
+  "Becoming.Lumping.loses": {
+   "module": "Becoming.Weighted",
+   "category": "model-witness",
+   "reason": "the one-step counts of one two-configuration weighting under the trivial description; lumpability on processes is joined as WeightedTraces.lumped_iff, but this witness is about counts, which the possibility reading of a process does not carry"
+  },
+  "Becoming.Model.articulation_neutrality_is_needed": {
+   "module": "Becoming.Metaethics",
+   "category": "model-witness",
+   "reason": "a counter-model showing that a premise of the ethical laws is needed; a fact about one constructed valuation, not a law of the unfolding"
+  },
+  "Becoming.Neutral.within": {
+   "module": "Becoming.Metaethics",
+   "category": "general-structure",
+   "reason": "a law of boundary neutrality for any rule on any index; no base reading of the rule"
+  },
+  "Becoming.NowhereDecided.of_em": {
+   "module": "Becoming.Likeness",
+   "category": "logical-strength",
+   "reason": "Excluded middle gives NowhereDecided; a statement about principles of reasoning only (the frame form of NowhereDecided is ListedOutcomeFrames.alike_iff_sameBranchingTests_of_nowhereDecided)."
+  },
+  "Becoming.Numbers.le_length": {
+   "module": "Becoming.Listing",
+   "category": "support",
+   "reason": "A list lemma: the number of members a list holds is at most its length."
+  },
+  "Becoming.Numbers.unique": {
+   "module": "Becoming.Listing",
+   "category": "support",
+   "reason": "A list lemma: the number of members a list holds is one number; its world form through relations is joined as CensusWebs.indiscernible_numbers_unique."
+  },
+  "Becoming.Observation.Measure.listed": {
+   "module": "Becoming.Observation",
+   "category": "model-witness",
+   "reason": "A list-membership fact about the measurement witness's reading schedule (every level read is among [true, false]); it is a side condition of the witness, not a law of its flows or worlds."
+  },
+  "Becoming.OneCounts.forms_apart": {
+   "module": "Becoming.Boundaries",
+   "category": "model-witness",
+   "reason": "A Bool-valued significance along the empty relation showing boundary- and standpoint-invariance come apart; it has no natural reading as a run, world or flow (the empty relation is not a flow's relation by definition)."
+  },
+  "Becoming.OneStep.Chain.fill_entry_le": {
+   "module": "Becoming.OneStep",
+   "category": "support",
+   "reason": "Arithmetic on the witness's share-out list (`fill`): each share is at most the cap; a projection of `fill_spec`."
+  },
+  "Becoming.ParitySystem.glues_iff": {
+   "module": "Becoming.Gluing",
+   "category": "restates",
+   "reason": "restated on the base by ParitySystem.world_free_iff (Becoming.ParityReadings): the same law for the world of readings at a step of a run of any process"
+  },
+  "Becoming.Pointer.no_list": {
+   "module": "Becoming.Sensitivity",
+   "category": "model-witness",
+   "reason": "A fact about the constructed Pointer law (reads within no one list under all histories); it does not read naturally as a run or world."
+  },
+  "Becoming.Pointer.readsFinitely": {
+   "module": "Becoming.Sensitivity",
+   "category": "model-witness",
+   "reason": "A fact about the constructed Pointer law (reads finitely many conditions under each history)."
+  },
+  "Becoming.Propagation.distinct_two": {
+   "module": "Becoming.Propagation",
+   "category": "support",
+   "reason": "List lemma: the two-condition witness list `two` has no repeat."
+  },
+  "Becoming.Propagation.every_two": {
+   "module": "Becoming.Propagation",
+   "category": "support",
+   "reason": "List lemma: both Booleans are members of the witness list `two`."
+  },
+  "Becoming.Ranking.active_of_renewed": {
+   "module": "Becoming.Ranking",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.Ranking.undisturbed_eq": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.Ranking.wholeRun_iff": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.Readout.no_judge_of_merged": {
+   "module": "Becoming.Readout",
+   "category": "restates",
+   "reason": "Becoming.Courses.no_run_judge_of_merged states it of the dates of every run (proved directly, not through this theorem)."
+  },
+  "Becoming.Recipe.ofProgram_toProgram": {
+   "module": "Becoming.GranularityBridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.RecursOrStops.lpo": {
+   "module": "Becoming.Frequency",
+   "category": "logical-strength",
+   "reason": "States only that the Sigma-0-2 dichotomy RecursOrStops implies LPO; its statement of every coupling process is settled_every_iff_steps (CouplingTraces), which is joined and through which lpo_of_settled feeds the base."
+  },
+  "Becoming.ReferencePlan.alike_iff_agreeOn": {
+   "module": "Becoming.ReferencePlan",
+   "category": "support",
+   "reason": "Iff.rfl between two names of agreement of signals on a list of addresses; the laws of agreement under a step's method are stated on the process in ReferencePlanTraces (revise_registers, revise_keeps, revise_keeps_selections, revise_gains_contact)."
+  },
+  "Becoming.ReferencePlan.flip_twice": {
+   "module": "Becoming.ReferencePlan",
+   "category": "support",
+   "reason": "A Boolean identity of the key-flip function (applying a key twice returns the value), proved by cases on two Booleans; no step, trace or channel of the process occurs in it."
+  },
+  "Becoming.ReferencePlan.propose_without_mismatch": {
+   "module": "Becoming.ReferencePlan",
+   "category": "support",
+   "reason": "The defining equation (rfl) of the revision rule at no mismatch; the process has no revise step from a configuration without a mismatch (ReferencePlanTraces.revise_step), so the equation has no reading on its steps or traces."
+  },
+  "Becoming.Registration.retained_keeps": {
+   "module": "Becoming.Revision",
+   "category": "support",
+   "reason": "Equal pairs have equal first components (congrArg Prod.fst); a statement using only the prelude."
+  },
+  "Becoming.Relabel.EquivariantValue.const": {
+   "module": "Becoming.Selection",
+   "category": "support",
+   "reason": "That a constant valuation is through every model is a closure fact of the definition EquivariantValue, naming no model, run or world; nothing on the base is stated by reading it off one."
+  },
+  "Becoming.RepairComparison.b2_correspondence_involutive": {
+   "module": "Becoming.RepairComparison",
+   "category": "model-witness",
+   "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+  },
+  "Becoming.RepairComparison.current_support_restored": {
+   "module": "Becoming.RepairComparison",
+   "category": "model-witness",
+   "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+  },
+  "Becoming.RepairComparison.separated_same_life": {
+   "module": "Becoming.RepairComparison",
+   "category": "model-witness",
+   "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+  },
+  "Becoming.RepairComparison.support_between_episodes": {
+   "module": "Becoming.RepairComparison",
+   "category": "model-witness",
+   "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+  },
+  "Becoming.Revising.old_cannot_select_rebuild": {
+   "module": "Becoming.Revision",
+   "category": "model-witness",
+   "reason": "a fact about one configuration of the constructed revision process; stated at a run configuration the run plays no role (join removed by the integrator)"
+  },
+  "Becoming.Routes.cond_zero_mul": {
+   "module": "Becoming.Routes",
+   "category": "support",
+   "reason": "Arithmetic on a Boolean choice: (bif b then 0 else r) * l = bif b then 0 else r * l."
+  },
+  "Becoming.Square.at_pos": {
+   "module": "Becoming.Context",
+   "category": "support",
+   "reason": "a position lemma of the square: the cell at a registered cell's position is that cell"
+  },
+  "Becoming.Square.line_commute": {
+   "module": "Becoming.Quantum",
+   "category": "model-witness",
+   "reason": "an identity of the constructed integer 4x4 observables realizing the square, checked by evaluation; the registrations they realize are on the base through Square.QuantumAt (Becoming.ParityReadings)"
+  },
+  "Becoming.Square.line_product": {
+   "module": "Becoming.Quantum",
+   "category": "model-witness",
+   "reason": "an identity of the constructed integer 4x4 observables realizing the square, checked by evaluation; the registrations they realize are on the base through Square.QuantumAt (Becoming.ParityReadings)"
+  },
+  "Becoming.Square.obs_sq": {
+   "module": "Becoming.Quantum",
+   "category": "model-witness",
+   "reason": "an identity of the constructed integer 4x4 observables realizing the square, checked by evaluation; the registrations they realize are on the base through Square.QuantumAt (Becoming.ParityReadings)"
+  },
+  "Becoming.Square.off_line_anticommute": {
+   "module": "Becoming.Quantum",
+   "category": "model-witness",
+   "reason": "an identity of the constructed integer 4x4 observables realizing the square, checked by evaluation; the registrations they realize are on the base through Square.QuantumAt (Becoming.ParityReadings)"
+  },
+  "Becoming.Square.yy_entries": {
+   "module": "Becoming.Quantum",
+   "category": "model-witness",
+   "reason": "the entries of one constructed integer matrix (Y tensor Y as minus W tensor W), checked by evaluation"
+  },
+  "Becoming.Triple.not_rearranged": {
+   "module": "Becoming.OrderNormal",
+   "category": "model-witness",
+   "reason": "A fact about one constructed relation on three steps (first and last joined), not a world's footprint."
+  },
+  "Becoming.Typicality.total_congr_mem": {
+   "module": "Becoming.Typicality",
+   "category": "support",
+   "reason": "a list lemma: sums over a list agree where the summands agree on its members"
+  },
+  "Becoming.Unclaimed.held_is_needed": {
+   "module": "Becoming.Standpoints",
+   "category": "model-witness",
+   "reason": "a counter-model showing that a premise of the ethical laws is needed; a fact about one constructed valuation, not a law of the unfolding"
+  },
+  "Becoming.Unjoined.supports_not_realizes": {
+   "module": "Becoming.Composition",
+   "category": "model-witness",
+   "reason": "A counterexample on Unit with an empty part relation (no joint frame, no frame of moves), showing that support at the root does not give realization; read on a joint frame it would be the immediate general fact for any frame with no parts, not a law proved through this witness."
+  },
+  "Becoming.Valuation.own_transmission": {
+   "module": "Becoming.Standpoints",
+   "category": "general-structure",
+   "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
+  },
+  "Becoming.Valuation.seed_of_selfGood": {
+   "module": "Becoming.Metaethics",
+   "category": "general-structure",
+   "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
+  },
+  "Becoming.Viability.guardedStep_none": {
+   "module": "Becoming.Viability",
+   "category": "support",
+   "reason": "The defining equation (rfl) of the guarded step at a stopped history, on Option S only."
+  },
+  "Becoming.WLPO.of_lpo": {
+   "module": "Becoming.Sensitivity",
+   "category": "logical-strength",
+   "reason": "LPO gives WLPO: pure logic; both are stated of every run in TailRuns (lpo_iff_runs, wlpo_iff_runs)."
+  },
+  "Becoming.WLPO.of_rule": {
+   "module": "Becoming.Tail",
+   "category": "logical-strength",
+   "reason": "A rule deciding every Boolean sequence gives the proposition WLPO: pure logic; its run form is TailRuns.wlpo_iff_runs with TailRuns.falseRule_iff."
+  },
+  "Becoming.Weights.truncation": {
+   "module": "Becoming.Weighted",
+   "category": "support",
+   "reason": "a sum over an appended list splits, for any weights (Weights.sum_append restated)"
+  },
+  "Becoming.Widening.bare_forces_reason": {
+   "module": "Becoming.Relevance",
+   "category": "model-witness",
+   "reason": "a counter-model showing that a premise of the ethical laws is needed; a fact about one constructed valuation, not a law of the unfolding"
+  },
+  "Becoming.all_weights_preserve_mass_iff_by_core": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.articulates_total": {
+   "module": "Becoming.Relevance",
+   "category": "general-structure",
+   "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
+  },
+  "Becoming.bounded_rival": {
+   "module": "Becoming.Significance",
+   "category": "general-structure",
+   "reason": "a law of every bounded significance on any formations: it is not the continuation condition where a formation lies outside a region; the regions are supplied, not read off a world"
+  },
+  "Becoming.chance_includedOn_iff": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.changed_history_really_ends_by_core": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.classification_robust_iff_iff_em": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.complete_diagnosability_iff_by_core": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.configurations_examples": {
+   "module": "Becoming.Entropy",
+   "category": "support",
+   "reason": "Two numeric counts of configurations computed by rfl (4 and 6); no law of any web."
+  },
+  "Becoming.contingent_generation_of_unrestricted": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.counting_laws": {
+   "module": "Becoming.Population",
+   "category": "restates",
+   "reason": "Its world reading is already on the base: the first part of `Becoming.World.counting_free` (a pointwise property holds of every world's census exactly when it holds of every tally), proved there through `Queue.counts` rather than through this theorem."
+  },
+  "Becoming.counting_truncation_le": {
+   "module": "Becoming.Weighted",
+   "category": "support",
+   "reason": "arithmetic: a sum of naturals over a list is at most the sum over that list appended to another"
+  },
+  "Becoming.counting_within_le_succ": {
+   "module": "Becoming.Routes",
+   "category": "support",
+   "reason": "Monotonicity in the order of a counting sum over lists of weights; no process enters. Its process reading is RouteTraces.within_trace (joined through counting_within_le_transfer): each order counts only courses the process has."
+  },
+  "Becoming.distinct_configurationsWithin": {
+   "module": "Becoming.Entropy",
+   "category": "support",
+   "reason": "A list lemma: the constructed list of configurations within a bound has no repetition. Its helpers `distinct_downFrom` and `le_of_mem_downFrom` (apart, not roots) stay apart with it."
+  },
+  "Becoming.evenBoxes_not_determined": {
+   "module": "Becoming.Description",
+   "category": "model-witness",
+   "reason": "A fact about Specker's three-box context model of Becoming.Context (with its non-root evenBoxes_glued, even_third, flipIf_self): parity on the boxes is glued from its pairs and not determined by them; the run-side form of the same relation, a whole no two parts hold, is joined as IdentificationRuns.parity_whole_not_in_pairs."
+  },
+  "Becoming.every_situated_position_has_reason_of_unrestricted": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.exists_undominated_iff_weakly": {
+   "module": "Becoming.Decidedness",
+   "category": "logical-strength",
+   "reason": "Asked of every relation, undominated members exist exactly under weak excluded middle: a statement about excluded middle only."
+  },
+  "Becoming.fulfillment_floor_by_core": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.gap_le_iff": {
+   "module": "Becoming.Propagation",
+   "category": "support",
+   "reason": "Arithmetic on natural numbers: the gap of two amounts is at most m exactly where each is at most the other plus m."
+  },
+  "Becoming.listsOnce_all_iff": {
+   "module": "Becoming.Listing",
+   "category": "logical-strength",
+   "reason": "Every list over a type can be listed once exactly where identity on the type is decided: a statement about decided equality only; the world form (World.indiscernible_decided_iff_em) is on the base."
+  },
+  "Becoming.mass_lt_of_added": {
+   "module": "Becoming.Weighted",
+   "category": "support",
+   "reason": "a sum over a listed domain rises strictly where an entry of positive weight is added to the event; a list-arithmetic law with no process, run or world"
+  },
+  "Becoming.new_realization_of_unrestricted": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.nodup_iff_distinct": {
+   "module": "Becoming.Composition",
+   "category": "support",
+   "reason": "A list lemma: List.Nodup agrees with the core's Distinct."
+  },
+  "Becoming.not_marks": {
+   "module": "Becoming.Recurrence",
+   "category": "restates",
+   "reason": "On runs it is Run.change_not_recurring (already on the base) with hypothesis and conclusion exchanged."
+  },
+  "Becoming.numbers_iff_decided": {
+   "module": "Becoming.Listing",
+   "category": "support",
+   "reason": "A list lemma: a list's number of members exists exactly where identity among them is decided (local decidedness of list members, no structure of the unfolding)."
+  },
+  "Becoming.numbers_iff_numbersBy_eq": {
+   "module": "Becoming.Listing",
+   "category": "support",
+   "reason": "A list lemma: counting by name is counting up to identity of names."
+  },
+  "Becoming.of_listsOnce": {
+   "module": "Becoming.Listing",
+   "category": "support",
+   "reason": "A list lemma: a law holding wherever a list is listed once holds where identity among its members is decided."
+  },
+  "Becoming.ownStanding_other": {
+   "module": "Becoming.Testing",
+   "category": "support",
+   "reason": "Unfolds the definition of the own-standing gauge (ownStanding g c is c = g): a stock other than g is not g; the web laws using the gauge are stated in Testing itself."
+  },
+  "Becoming.pick_least": {
+   "module": "Becoming.OrderNormal",
+   "category": "support",
+   "reason": "A lemma about the sort's first-where search over Boolean freeness, used inside the normal form construction; no relation or world enters its statement."
+  },
+  "Becoming.positionedArticulation_iff": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.positioned_articulation_of_articulatesLiving": {
+   "module": "Becoming.Relevance",
+   "category": "general-structure",
+   "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
+  },
+  "Becoming.realized_requests_supported_by_core": {
+   "module": "Becoming.CompositionBridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.repeated_same": {
+   "module": "Becoming.Listing",
+   "category": "support",
+   "reason": "A list fact about [a, a] and [a]: length counts places, not members."
+  },
+  "Becoming.responded_zero": {
+   "module": "Becoming.Remainder",
+   "category": "support",
+   "reason": "Definitional value of a numeric sum at step zero (`responded ... 0 c = 0`, proved by rfl); `responded` reads a level array, not a world or run."
+  },
+  "Becoming.revised_generation_by_bound_of_unrestricted": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.routeSum_mono": {
+   "module": "Becoming.Routes",
+   "category": "support",
+   "reason": "Monotonicity in the horizon of the numeric route sum; it is proved through carriedWithin_mono, and the route sum is a sum over route points, not the standing of a world or a run."
+  },
+  "Becoming.securesPositiveGround_iff": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.share_rises_through": {
+   "module": "Becoming.Selection",
+   "category": "restates",
+   "reason": "Capture.share_rises with a selection premise its proof does not use; share_rises is on the base through CaptureWorlds.share_rises_of_unsupported (join removed by the integrator)"
+  },
+  "Becoming.sorts_by_iff": {
+   "module": "Becoming.OrderNormal",
+   "category": "restates",
+   "reason": "With the relation a world's footprint joins, it is Becoming.Footprinted.sorts_iff (on the base), through Footprinted.independent_iff_commutes."
+  },
+  "Becoming.tailLaw_eq_wholeLaw": {
+   "module": "Becoming.Tail",
+   "category": "model-witness",
+   "reason": "A definitional identity of two constructed laws (the tail law is the law of the indicator of vanishing); the tail law's laws on webs are on the base (tailLaw_not_through, tailLaw_through_from, tailLaw_no_least_registration)."
+  },
+  "Becoming.tailLaw_not_readsFinitely": {
+   "module": "Becoming.Sensitivity",
+   "category": "model-witness",
+   "reason": "A fact about the tail law, one constructed law given a decision of vanishing."
+  },
+  "Becoming.tailLaw_not_through_sensitive": {
+   "module": "Becoming.Sensitivity",
+   "category": "restates",
+   "reason": "The history form of Becoming.tailLaw_not_through, which is on the base (the tail law does not read through what it is sensitive to on a web where it depends on nothing)."
+  },
+  "Becoming.two_extremes_suffice_of_em": {
+   "module": "Becoming.Bridge",
+   "category": "bridge-interface",
+   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+  },
+  "Becoming.undominated_has_iff_em": {
+   "module": "Becoming.Decidedness",
+   "category": "logical-strength",
+   "reason": "Asked of every determination, the undominated law is exactly excluded middle: a statement about excluded middle only."
+  },
+  "Becoming.unselected": {
+   "module": "Becoming.Evolution",
+   "category": "model-witness",
+   "reason": "One parent with one offspring, both at five, evaluated by rfl: an arithmetic example of the Price terms with no flow or web."
+  },
+  "Becoming.vanishIndicator_changedByNoCondition": {
+   "module": "Becoming.Tail",
+   "category": "model-witness",
+   "reason": "A fact about one constructed number, the indicator of vanishing given a decision; it serves only to read the tail law as a law of the whole."
+  },
+  "Becoming.wholeLaw_not_readsFinitely": {
+   "module": "Becoming.Tail",
+   "category": "model-witness",
+   "reason": "A fact about the constructed law of a whole (one formation exchanging a number of the step-0 levels); its web form, not reading through what it is sensitive to on a free web, is joined as SensitivityWebs.wholeLaw_not_through."
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "Becoming.Learning.Shift.determines": {
+  "module": "Becoming.Learning",
+  "category": "model-witness",
+  "reason": "A fact about the constructed Shift example (inputs a position and a content, lumped by content): a generalization witness over functions on Bool x Bool with no evident reading as a run or world; the general laws it instances are joined in LearningRuns (determines_iff_registered_alike)."
+ },
+ "Becoming.Learning.Shift.every_nothing": {
+  "module": "Becoming.Learning",
+  "category": "model-witness",
+  "reason": "The Shift example's instance of every_determines_nothing; the law itself is joined on runs of free branching (LearningRuns.free_record_fixes_nothing)."
+ },
+ "Becoming.Learning.Shift.right_same": {
+  "module": "Becoming.Learning",
+  "category": "model-witness",
+  "reason": "The Shift example's instance of lumped_world_right; the law itself is joined on runs (LearningRuns.world_carried_right)."
+ },
+ "Becoming.Learning.Shift.wrong_both": {
+  "module": "Becoming.Learning",
+  "category": "model-witness",
+  "reason": "The Shift example's instance of lumped_right_iff; the law itself is joined on runs (LearningRuns.carried_right_iff)."
+ },
+ "Becoming.Relabel.EquivariantValue.const": {
+  "module": "Becoming.Selection",
+  "category": "support",
+  "reason": "That a constant valuation is through every model is a closure fact of the definition EquivariantValue, naming no model, run or world; nothing on the base is stated by reading it off one."
+ },
+ "Becoming.evenBoxes_not_determined": {
+  "module": "Becoming.Description",
+  "category": "model-witness",
+  "reason": "A fact about Specker's three-box context model of Becoming.Context (with its non-root evenBoxes_glued, even_third, flipIf_self): parity on the boxes is glued from its pairs and not determined by them; the run-side form of the same relation, a whole no two parts hold, is joined as IdentificationRuns.parity_whole_not_in_pairs."
+ },
+ "Becoming.share_rises_through": {
+  "module": "Becoming.Selection",
+  "category": "restates",
+  "reason": "Capture.share_rises with a selection premise its proof does not use; share_rises is on the base through CaptureWorlds.share_rises_of_unsupported (join removed by the integrator)"
+ }
+}

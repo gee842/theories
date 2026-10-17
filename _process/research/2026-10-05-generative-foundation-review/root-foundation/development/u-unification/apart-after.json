@@ -1,0 +1,2003 @@
+{
+ "Becoming.Apart.not_enough": {
+  "module": "Becoming.Standpoints",
+  "root": true,
+  "uses": [
+   "Becoming.Apart.valuation",
+   "Becoming.Neutral",
+   "Becoming.Valuation.Held",
+   "Becoming.Valuation.SelfGood",
+   "Becoming.Valuation.Significant",
+   "Becoming.Valuation.shares",
+   "Becoming.Valuation.transmits"
+  ],
+  "used_by": []
+ },
+ "Becoming.BranchingTest.ofTest_toTest": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [
+   "Becoming.BranchingTest",
+   "Becoming.BranchingTest.ofTest",
+   "Becoming.BranchingTest.toTest"
+  ],
+  "used_by": [
+   "Becoming.Recipe.ofProgram_toProgram"
+  ]
+ },
+ "Becoming.CHSH.support_iff": {
+  "module": "Becoming.Gluing",
+  "root": true,
+  "uses": [
+   "Becoming.CHSH.Outcome",
+   "Becoming.CHSH.Outcome.left",
+   "Becoming.CHSH.Outcome.right",
+   "Becoming.CHSH.paritySystem",
+   "Becoming.ParitySystem.support",
+   "Becoming.addParity"
+  ],
+  "used_by": []
+ },
+ "Becoming.CHSH.two_iff": {
+  "module": "Becoming.Gluing",
+  "root": false,
+  "uses": [
+   "Becoming.addParity"
+  ],
+  "used_by": [
+   "Becoming.CHSH.support_iff"
+  ]
+ },
+ "Becoming.ChangingContext.ends": {
+  "module": "Becoming.Context",
+  "root": false,
+  "uses": [
+   "Becoming.ChangingContext.relation"
+  ],
+  "used_by": [
+   "Becoming.changed_history_really_ends_by_core"
+  ]
+ },
+ "Becoming.Contacts.Alike.refl": {
+  "module": "Becoming.Contacts",
+  "root": true,
+  "uses": [
+   "Becoming.Contacts.Alike"
+  ],
+  "used_by": []
+ },
+ "Becoming.Copying.scan_le": {
+  "module": "Becoming.Copying",
+  "root": true,
+  "uses": [
+   "Becoming.Copying.FaithfulAt",
+   "Becoming.Copying.Scan",
+   "Becoming.Copying.Scan.built",
+   "Becoming.Copying.defects",
+   "Becoming.Copying.scanSites"
+  ],
+  "used_by": []
+ },
+ "Becoming.Countdown.Advances.completes": {
+  "module": "Becoming.Countdown",
+  "root": true,
+  "uses": [
+   "Becoming.Countdown.Advances",
+   "Becoming.Countdown.ticks"
+  ],
+  "used_by": []
+ },
+ "Becoming.Counts.eq_zero": {
+  "module": "Becoming.Decidedness",
+  "root": true,
+  "uses": [
+   "Becoming.Counts"
+  ],
+  "used_by": []
+ },
+ "Becoming.Counts.exists_of_pos": {
+  "module": "Becoming.Decidedness",
+  "root": false,
+  "uses": [
+   "Becoming.Counts"
+  ],
+  "used_by": [
+   "Becoming.Counts.eq_zero"
+  ]
+ },
+ "Becoming.Counts.pos_of_mem": {
+  "module": "Becoming.Decidedness",
+  "root": true,
+  "uses": [
+   "Becoming.Counts"
+  ],
+  "used_by": []
+ },
+ "Becoming.CrossSituational.Repeated.not_resolved": {
+  "module": "Becoming.CrossSituational",
+  "root": true,
+  "uses": [
+   "Becoming.CrossSituational.Repeated.rep",
+   "Becoming.CrossSituational.candidates"
+  ],
+  "used_by": []
+ },
+ "Becoming.CrossSituational.Repeated.only_zero": {
+  "module": "Becoming.CrossSituational",
+  "root": false,
+  "uses": [
+   "Becoming.CrossSituational.Repeated.rep"
+  ],
+  "used_by": [
+   "Becoming.CrossSituational.Repeated.separated"
+  ]
+ },
+ "Becoming.CrossSituational.Repeated.separated": {
+  "module": "Becoming.CrossSituational",
+  "root": true,
+  "uses": [
+   "Becoming.CrossSituational.Repeated.rep"
+  ],
+  "used_by": []
+ },
+ "Becoming.CrossSituational.distinct_iff": {
+  "module": "Becoming.Courses",
+  "root": true,
+  "uses": [
+   "Becoming.CrossSituational.Distinct",
+   "Becoming.Distinct"
+  ],
+  "used_by": []
+ },
+ "Becoming.CrossSituational.narrows": {
+  "module": "Becoming.CrossSituational",
+  "root": true,
+  "uses": [
+   "Becoming.CrossSituational.candidates"
+  ],
+  "used_by": []
+ },
+ "Becoming.CrossSituational.reads_every_iff": {
+  "module": "Becoming.CrossSituational",
+  "root": true,
+  "uses": [
+   "Becoming.CrossSituational.Distinct",
+   "Becoming.CrossSituational.candidates",
+   "Becoming.CrossSituational.unique",
+   "Becoming.Segmentation.chunks",
+   "Becoming.Segmentation.encode",
+   "Becoming.Segmentation.readAll"
+  ],
+  "used_by": []
+ },
+ "Becoming.Decided.weakly": {
+  "module": "Becoming.Decidedness",
+  "root": true,
+  "uses": [
+   "Becoming.Decided",
+   "Becoming.WeaklyDecided"
+  ],
+  "used_by": []
+ },
+ "Becoming.EitherThroughout.of_em": {
+  "module": "Becoming.Likeness",
+  "root": true,
+  "uses": [
+   "Becoming.Decided",
+   "Becoming.EitherThroughout"
+  ],
+  "used_by": []
+ },
+ "Becoming.Few.comes_at": {
+  "module": "Becoming.Openness",
+  "root": false,
+  "uses": [
+   "Becoming.ComesToBe",
+   "Becoming.Few.passed"
+  ],
+  "used_by": [
+   "Becoming.Few.coming_not_recurring"
+  ]
+ },
+ "Becoming.Few.coming_not_recurring": {
+  "module": "Becoming.Openness",
+  "root": false,
+  "uses": [
+   "Becoming.ComesToBe",
+   "Becoming.Few.passed"
+  ],
+  "used_by": [
+   "Becoming.Listed.lpo_of_few"
+  ]
+ },
+ "Becoming.Few.distinct_found": {
+  "module": "Becoming.Openness",
+  "root": false,
+  "uses": [
+   "Becoming.Distinct",
+   "Becoming.Few.found"
+  ],
+  "used_by": [
+   "Becoming.Few.listed"
+  ]
+ },
+ "Becoming.Few.distinct_pick": {
+  "module": "Becoming.Openness",
+  "root": false,
+  "uses": [
+   "Becoming.Distinct",
+   "Becoming.Few.pick"
+  ],
+  "used_by": [
+   "Becoming.Few.distinct_found"
+  ]
+ },
+ "Becoming.Few.listed": {
+  "module": "Becoming.Openness",
+  "root": false,
+  "uses": [
+   "Becoming.Few.found",
+   "Becoming.Few.passed",
+   "Becoming.Listed"
+  ],
+  "used_by": [
+   "Becoming.Listed.lpo_of_few"
+  ]
+ },
+ "Becoming.Few.mem_found": {
+  "module": "Becoming.Openness",
+  "root": false,
+  "uses": [
+   "Becoming.Few.found",
+   "Becoming.Few.passed"
+  ],
+  "used_by": [
+   "Becoming.Few.listed"
+  ]
+ },
+ "Becoming.Few.mem_pick": {
+  "module": "Becoming.Openness",
+  "root": false,
+  "uses": [
+   "Becoming.Few.found",
+   "Becoming.Few.passed",
+   "Becoming.Few.pick",
+   "Becoming.clear"
+  ],
+  "used_by": [
+   "Becoming.Few.mem_found"
+  ]
+ },
+ "Becoming.Indicates.holds_of_pos": {
+  "module": "Becoming.Decidedness",
+  "root": false,
+  "uses": [
+   "Becoming.Indicates"
+  ],
+  "used_by": [
+   "Becoming.Counts.exists_of_pos"
+  ]
+ },
+ "Becoming.Instances.chunks_eq": {
+  "module": "Becoming.Instances",
+  "root": false,
+  "uses": [
+   "Becoming.Segmentation.chunks",
+   "Generative.AcquiredSegmentation.Sound",
+   "Generative.AcquiredSegmentation.chunks"
+  ],
+  "used_by": [
+   "Becoming.Instances.two_word_iff"
+  ]
+ },
+ "Becoming.Instances.dephase_no_restore": {
+  "module": "Becoming.Instances",
+  "root": true,
+  "uses": [
+   "Generative.OperativeCoherence.Matrix",
+   "Generative.OperativeCoherence.coherent",
+   "Generative.OperativeCoherence.dephase",
+   "Generative.OperativeCoherence.prepared"
+  ],
+  "used_by": []
+ },
+ "Becoming.Instances.diagonal_no_decoder": {
+  "module": "Becoming.Instances",
+  "root": true,
+  "uses": [
+   "Generative.OperativeCoherence.coherent",
+   "Generative.OperativeCoherence.degraded",
+   "Generative.OperativeCoherence.diagonal",
+   "Generative.OperativeCoherence.plusMass"
+  ],
+  "used_by": []
+ },
+ "Becoming.Instances.encode_eq": {
+  "module": "Becoming.Instances",
+  "root": false,
+  "uses": [
+   "Becoming.Segmentation.encode",
+   "Generative.AcquiredSegmentation.Sound",
+   "Generative.AcquiredSegmentation.encode",
+   "Generative.AcquiredSegmentation.word"
+  ],
+  "used_by": [
+   "Becoming.Instances.two_word_iff"
+  ]
+ },
+ "Becoming.Instances.evolve_eq_foldl": {
+  "module": "Becoming.Instances",
+  "root": true,
+  "uses": [
+   "SystemsOrganization.evolve"
+  ],
+  "used_by": []
+ },
+ "Becoming.Instances.flatten_eq_join": {
+  "module": "Becoming.Instances",
+  "root": false,
+  "uses": [
+   "Becoming.Segmentation.join"
+  ],
+  "used_by": [
+   "Becoming.Instances.encode_eq"
+  ]
+ },
+ "Becoming.Instances.ideal_two_word": {
+  "module": "Becoming.Instances",
+  "root": true,
+  "uses": [
+   "Generative.AcquiredSegmentation.Sound",
+   "Generative.AcquiredSegmentation.chunks",
+   "Generative.AcquiredSegmentation.encode",
+   "Generative.AcquiredSegmentation.idealBond",
+   "Generative.AcquiredSegmentation.word"
+  ],
+  "used_by": []
+ },
+ "Becoming.Instances.local_pair_no_update": {
+  "module": "Becoming.Instances",
+  "root": true,
+  "uses": [
+   "Generative.OperativeCoherence.Matrix",
+   "Generative.OperativeCoherence.controlDensity",
+   "Generative.OperativeCoherence.recordBranch",
+   "Generative.RelationalReduction.changed",
+   "Generative.RelationalReduction.joined",
+   "Generative.RelationalReduction.localStates"
+  ],
+  "used_by": []
+ },
+ "Becoming.Instances.spelled": {
+  "module": "Becoming.Instances",
+  "root": false,
+  "uses": [
+   "Becoming.Instances.wordFirst",
+   "Becoming.Instances.wordRest",
+   "Becoming.Segmentation.Spelled",
+   "Generative.AcquiredSegmentation.Sound",
+   "Generative.AcquiredSegmentation.word"
+  ],
+  "used_by": [
+   "Becoming.Instances.two_word_iff"
+  ]
+ },
+ "Becoming.Instances.two_word_iff": {
+  "module": "Becoming.Instances",
+  "root": false,
+  "uses": [
+   "Generative.AcquiredSegmentation.Sound",
+   "Generative.AcquiredSegmentation.Sound.a",
+   "Generative.AcquiredSegmentation.Sound.b",
+   "Generative.AcquiredSegmentation.Sound.c",
+   "Generative.AcquiredSegmentation.Sound.d",
+   "Generative.AcquiredSegmentation.chunks",
+   "Generative.AcquiredSegmentation.encode",
+   "Generative.AcquiredSegmentation.word"
+  ],
+  "used_by": [
+   "Becoming.Instances.ideal_two_word"
+  ]
+ },
+ "Becoming.Interference.truncation_misses_cancellation": {
+  "module": "Becoming.Weighted",
+  "root": true,
+  "uses": [
+   "Becoming.Interference.weight",
+   "Becoming.Weights.mul",
+   "Becoming.Weights.one",
+   "Becoming.Weights.sum",
+   "Becoming.signed"
+  ],
+  "used_by": []
+ },
+ "Becoming.Interference.unseen": {
+  "module": "Becoming.Weighted",
+  "root": false,
+  "uses": [
+   "Becoming.Weights.add",
+   "Becoming.signed"
+  ],
+  "used_by": [
+   "Becoming.Interference.unseen_balanced"
+  ]
+ },
+ "Becoming.Interference.unseen_balanced": {
+  "module": "Becoming.Weighted",
+  "root": true,
+  "uses": [
+   "Becoming.Weights.add",
+   "Becoming.signed"
+  ],
+  "used_by": []
+ },
+ "Becoming.Joining.compatible_iff": {
+  "module": "Becoming.JoiningBridge",
+  "root": true,
+  "uses": [
+   "Becoming.Joining",
+   "Becoming.Joining.Compatible",
+   "Generative.ExplanatoryJoiningContexts.Compatible"
+  ],
+  "used_by": []
+ },
+ "Becoming.Joining.locallyFinite_iff": {
+  "module": "Becoming.JoiningBridge",
+  "root": true,
+  "uses": [
+   "Becoming.Joining",
+   "Becoming.Joining.LocallyFinite",
+   "Generative.ExplanatoryJoiningIncidence.LocallyFinite"
+  ],
+  "used_by": []
+ },
+ "Becoming.Joining.openMap_id": {
+  "module": "Becoming.Joining",
+  "root": true,
+  "uses": [
+   "Becoming.Joining",
+   "Becoming.Joining.OpenMap"
+  ],
+  "used_by": []
+ },
+ "Becoming.Joining.roleTotal_iff": {
+  "module": "Becoming.JoiningBridge",
+  "root": true,
+  "uses": [
+   "Becoming.Joining",
+   "Becoming.Joining.RoleTotal",
+   "Generative.ExplanatoryJoiningAnchors.RoleTotal"
+  ],
+  "used_by": []
+ },
+ "Becoming.Judgment.frontier_exists": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [
+   "Becoming.WeaklyDecided",
+   "PracticalJudgment.Frontier"
+  ],
+  "used_by": [
+   "Becoming.Judgment.required_of_bettered"
+  ]
+ },
+ "Becoming.Judgment.frontier_iff_undominated": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [
+   "Becoming.Undominated",
+   "PracticalJudgment.Frontier"
+  ],
+  "used_by": [
+   "Becoming.Judgment.frontier_exists",
+   "Becoming.Judgment.required_of_bettered"
+  ]
+ },
+ "Becoming.Judgment.required_of_bettered": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.Decided",
+   "Becoming.WeaklyDecided",
+   "PracticalJudgment.Frontier",
+   "PracticalJudgment.Required"
+  ],
+  "used_by": []
+ },
+ "Becoming.LLPO.decidable": {
+  "module": "Becoming.Likeness",
+  "root": true,
+  "uses": [
+   "Becoming.LLPO"
+  ],
+  "used_by": []
+ },
+ "Becoming.LLPO.of_lpo": {
+  "module": "Becoming.Likeness",
+  "root": true,
+  "uses": [
+   "Becoming.LLPO",
+   "Becoming.LPO"
+  ],
+  "used_by": []
+ },
+ "Becoming.LPO.of_rule": {
+  "module": "Becoming.Tail",
+  "root": true,
+  "uses": [
+   "Becoming.LPO"
+  ],
+  "used_by": []
+ },
+ "Becoming.Lasting.Reaches.mono": {
+  "module": "Becoming.Lasting",
+  "root": true,
+  "uses": [
+   "Becoming.Lasting.Reaches"
+  ],
+  "used_by": []
+ },
+ "Becoming.Lasting.fixed_avoids": {
+  "module": "Becoming.Lasting",
+  "root": true,
+  "uses": [
+   "Becoming.Law.orbit"
+  ],
+  "used_by": []
+ },
+ "Becoming.Law.Lossless.no_rise": {
+  "module": "Becoming.Recurrence",
+  "root": false,
+  "uses": [
+   "Becoming.Law.Lossless",
+   "Becoming.Law.orbit"
+  ],
+  "used_by": [
+   "Becoming.Law.rise_not_lossless"
+  ]
+ },
+ "Becoming.Law.Lossless.unlisted": {
+  "module": "Becoming.Recurrence",
+  "root": true,
+  "uses": [
+   "Becoming.Law.Lossless",
+   "Becoming.Law.Returns"
+  ],
+  "used_by": []
+ },
+ "Becoming.Law.Reachable.earlier": {
+  "module": "Becoming.Recurrence",
+  "root": false,
+  "uses": [
+   "Becoming.Law.Reachable"
+  ],
+  "used_by": [
+   "Becoming.Law.lost_stays"
+  ]
+ },
+ "Becoming.Law.drawn_of_lost": {
+  "module": "Becoming.Attraction",
+  "root": true,
+  "uses": [
+   "Becoming.Law.Drawn",
+   "Becoming.Law.Reachable"
+  ],
+  "used_by": []
+ },
+ "Becoming.Law.lost_drawn": {
+  "module": "Becoming.Attraction",
+  "root": false,
+  "uses": [
+   "Becoming.Law.DrawnInto",
+   "Becoming.Law.Reachable"
+  ],
+  "used_by": [
+   "Becoming.Law.drawn_of_lost"
+  ]
+ },
+ "Becoming.Law.lost_stays": {
+  "module": "Becoming.Recurrence",
+  "root": true,
+  "uses": [
+   "Becoming.Law.Reachable"
+  ],
+  "used_by": []
+ },
+ "Becoming.Law.reachable_absorbing": {
+  "module": "Becoming.Attraction",
+  "root": false,
+  "uses": [
+   "Becoming.Law.Absorbing",
+   "Becoming.Law.Reachable"
+  ],
+  "used_by": [
+   "Becoming.Law.drawn_of_lost"
+  ]
+ },
+ "Becoming.Law.reachable_orbit": {
+  "module": "Becoming.Attraction",
+  "root": false,
+  "uses": [
+   "Becoming.Law.Reachable",
+   "Becoming.Law.orbit"
+  ],
+  "used_by": [
+   "Becoming.Law.lost_drawn"
+  ]
+ },
+ "Becoming.Law.rise_not_lossless": {
+  "module": "Becoming.Recurrence",
+  "root": true,
+  "uses": [
+   "Becoming.Law.Lossless",
+   "Becoming.Law.orbit"
+  ],
+  "used_by": []
+ },
+ "Becoming.Learning.Shift.determines": {
+  "module": "Becoming.Learning",
+  "root": true,
+  "uses": [
+   "Becoming.Learning.Determines",
+   "Becoming.Learning.Lumped",
+   "Becoming.Learning.Shift.content",
+   "Becoming.Learning.Shift.data"
+  ],
+  "used_by": []
+ },
+ "Becoming.Learning.Shift.every_nothing": {
+  "module": "Becoming.Learning",
+  "root": true,
+  "uses": [
+   "Becoming.Learning.Determines",
+   "Becoming.Learning.Shift.data"
+  ],
+  "used_by": []
+ },
+ "Becoming.Learning.Shift.right_same": {
+  "module": "Becoming.Learning",
+  "root": true,
+  "uses": [
+   "Becoming.Learning.Shift.content",
+   "Becoming.Learning.Shift.same"
+  ],
+  "used_by": []
+ },
+ "Becoming.Learning.Shift.wrong_both": {
+  "module": "Becoming.Learning",
+  "root": true,
+  "uses": [
+   "Becoming.Learning.Lumped",
+   "Becoming.Learning.Shift.both",
+   "Becoming.Learning.Shift.content",
+   "Becoming.Learning.Shift.data"
+  ],
+  "used_by": []
+ },
+ "Becoming.Listed.lpo_of_few": {
+  "module": "Becoming.Openness",
+  "root": true,
+  "uses": [
+   "Becoming.ComesToBe",
+   "Becoming.LPO",
+   "Becoming.Listed"
+  ],
+  "used_by": []
+ },
+ "Becoming.ListsOnce.identityDecided": {
+  "module": "Becoming.Listing",
+  "root": false,
+  "uses": [
+   "Becoming.IdentityDecided",
+   "Becoming.ListsOnce"
+  ],
+  "used_by": [
+   "Becoming.listsOnce_iff_decided",
+   "Becoming.numbers_iff_decided"
+  ]
+ },
+ "Becoming.ListsOnce.length_eq": {
+  "module": "Becoming.Listing",
+  "root": false,
+  "uses": [
+   "Becoming.ListsOnce"
+  ],
+  "used_by": [
+   "Becoming.Numbers.unique"
+  ]
+ },
+ "Becoming.Lumping.loses": {
+  "module": "Becoming.Weighted",
+  "root": true,
+  "uses": [
+   "Becoming.Lumping.weight",
+   "Becoming.Weights.transfer",
+   "Becoming.counting"
+  ],
+  "used_by": []
+ },
+ "Becoming.Model.articulation_neutrality_is_needed": {
+  "module": "Becoming.Metaethics",
+  "root": true,
+  "uses": [
+   "Becoming.Model.Life",
+   "Becoming.Model.Who",
+   "Becoming.Model.endorses",
+   "Becoming.Model.linked",
+   "Becoming.Model.valuation",
+   "Becoming.Neutral",
+   "Becoming.Valuation",
+   "Becoming.Valuation.Significant",
+   "Becoming.Within",
+   "Becoming.articulates"
+  ],
+  "used_by": []
+ },
+ "Becoming.Neutral.within": {
+  "module": "Becoming.Metaethics",
+  "root": true,
+  "uses": [
+   "Becoming.Neutral",
+   "Becoming.Within"
+  ],
+  "used_by": []
+ },
+ "Becoming.NowhereDecided.of_em": {
+  "module": "Becoming.Likeness",
+  "root": true,
+  "uses": [
+   "Becoming.Decided",
+   "Becoming.NowhereDecided"
+  ],
+  "used_by": []
+ },
+ "Becoming.Numbers.le_length": {
+  "module": "Becoming.Listing",
+  "root": true,
+  "uses": [
+   "Becoming.Numbers"
+  ],
+  "used_by": []
+ },
+ "Becoming.Numbers.unique": {
+  "module": "Becoming.Listing",
+  "root": true,
+  "uses": [
+   "Becoming.Numbers"
+  ],
+  "used_by": []
+ },
+ "Becoming.Observation.Measure.listed": {
+  "module": "Becoming.Observation",
+  "root": true,
+  "uses": [
+   "Becoming.Observation.Measure.reads"
+  ],
+  "used_by": []
+ },
+ "Becoming.OneCounts.forms_apart": {
+  "module": "Becoming.Boundaries",
+  "root": true,
+  "uses": [
+   "Becoming.Boundary",
+   "Becoming.BoundaryInvariant",
+   "Becoming.OneCounts.sig",
+   "Becoming.SignificantWithin",
+   "Becoming.StandpointInvariant",
+   "Becoming.SubTrue"
+  ],
+  "used_by": []
+ },
+ "Becoming.OneStep.Chain.fill_entry_le": {
+  "module": "Becoming.OneStep",
+  "root": true,
+  "uses": [
+   "Becoming.OneStep.Chain.entry",
+   "Becoming.OneStep.Chain.fill"
+  ],
+  "used_by": []
+ },
+ "Becoming.Opposed.irreflexive": {
+  "module": "Becoming.Decidedness",
+  "root": false,
+  "uses": [
+   "Becoming.Opposed"
+  ],
+  "used_by": [
+   "Becoming.exists_undominated_iff_weakly"
+  ]
+ },
+ "Becoming.Opposed.transitive": {
+  "module": "Becoming.Decidedness",
+  "root": false,
+  "uses": [
+   "Becoming.Opposed"
+  ],
+  "used_by": [
+   "Becoming.exists_undominated_iff_weakly"
+  ]
+ },
+ "Becoming.ParitySystem.glues_iff": {
+  "module": "Becoming.Gluing",
+  "root": true,
+  "uses": [
+   "Becoming.Contextual",
+   "Becoming.Contextual.Glues",
+   "Becoming.Contextual.Respects",
+   "Becoming.Contextual.within",
+   "Becoming.Distinct",
+   "Becoming.ParitySystem",
+   "Becoming.ParitySystem.Contradicts",
+   "Becoming.ParitySystem.claims",
+   "Becoming.ParitySystem.support",
+   "Becoming.ParitySystem.within"
+  ],
+  "used_by": []
+ },
+ "Becoming.Pointer.beyond_ne_zero": {
+  "module": "Becoming.Sensitivity",
+  "root": false,
+  "uses": [
+   "Becoming.Pointer.beyond"
+  ],
+  "used_by": [
+   "Becoming.Pointer.no_list"
+  ]
+ },
+ "Becoming.Pointer.lt_beyond": {
+  "module": "Becoming.Sensitivity",
+  "root": false,
+  "uses": [
+   "Becoming.Pointer.beyond"
+  ],
+  "used_by": [
+   "Becoming.Pointer.no_list"
+  ]
+ },
+ "Becoming.Pointer.no_list": {
+  "module": "Becoming.Sensitivity",
+  "root": true,
+  "uses": [
+   "Becoming.ExchangeLaw.ReadsWithin",
+   "Becoming.Pointer.law"
+  ],
+  "used_by": []
+ },
+ "Becoming.Pointer.readsFinitely": {
+  "module": "Becoming.Sensitivity",
+  "root": true,
+  "uses": [
+   "Becoming.ExchangeLaw.ReadsFinitely",
+   "Becoming.Pointer.law"
+  ],
+  "used_by": []
+ },
+ "Becoming.Pointer.readsWithin": {
+  "module": "Becoming.Sensitivity",
+  "root": false,
+  "uses": [
+   "Becoming.ExchangeLaw.ReadsWithin",
+   "Becoming.Pointer.law"
+  ],
+  "used_by": [
+   "Becoming.Pointer.readsFinitely"
+  ]
+ },
+ "Becoming.Propagation.distinct_two": {
+  "module": "Becoming.Propagation",
+  "root": true,
+  "uses": [
+   "Becoming.Distinct",
+   "Becoming.Propagation.two"
+  ],
+  "used_by": []
+ },
+ "Becoming.Propagation.every_two": {
+  "module": "Becoming.Propagation",
+  "root": true,
+  "uses": [
+   "Becoming.Propagation.two"
+  ],
+  "used_by": []
+ },
+ "Becoming.Ranking.active_of_renewed": {
+  "module": "Becoming.Ranking",
+  "root": true,
+  "uses": [
+   "Becoming.Ranking.ActiveWhereSupported",
+   "RelationalRenewal.Renewed",
+   "RelationalRenewal.Unfolding",
+   "RelationalRenewal.Unfolding.active"
+  ],
+  "used_by": []
+ },
+ "Becoming.Ranking.undisturbed_eq": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.Ranking.undisturbed",
+   "RelationalRenewal.Law",
+   "RenewalComparison.undisturbed"
+  ],
+  "used_by": []
+ },
+ "Becoming.Ranking.wholeRun_iff": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.Ranking.wholeRun",
+   "GenerativeComparison.Inventory.realized",
+   "RelationalRenewal.Unfolding",
+   "RenewalComparison.relationalInventory"
+  ],
+  "used_by": []
+ },
+ "Becoming.Readout.no_judge_of_merged": {
+  "module": "Becoming.Readout",
+  "root": true,
+  "uses": [
+   "Becoming.Readout.Judges"
+  ],
+  "used_by": []
+ },
+ "Becoming.Recipe.ofProgram_toProgram": {
+  "module": "Becoming.GranularityBridge",
+  "root": true,
+  "uses": [
+   "Becoming.Recipe",
+   "Becoming.Recipe.ofProgram",
+   "Becoming.Recipe.toProgram"
+  ],
+  "used_by": []
+ },
+ "Becoming.RecursOrStops.lpo": {
+  "module": "Becoming.Frequency",
+  "root": true,
+  "uses": [
+   "Becoming.LPO",
+   "Becoming.RecursOrStops"
+  ],
+  "used_by": []
+ },
+ "Becoming.ReferencePlan.alike_iff_agreeOn": {
+  "module": "Becoming.ReferencePlan",
+  "root": true,
+  "uses": [
+   "Becoming.Learning.Training.AgreeOn",
+   "Becoming.ReferencePlan.Alike"
+  ],
+  "used_by": []
+ },
+ "Becoming.ReferencePlan.flip_twice": {
+  "module": "Becoming.ReferencePlan",
+  "root": true,
+  "uses": [
+   "Becoming.ReferencePlan.flip"
+  ],
+  "used_by": []
+ },
+ "Becoming.ReferencePlan.propose_without_mismatch": {
+  "module": "Becoming.ReferencePlan",
+  "root": true,
+  "uses": [
+   "Becoming.ReferencePlan.propose"
+  ],
+  "used_by": []
+ },
+ "Becoming.Registration.retained_keeps": {
+  "module": "Becoming.Revision",
+  "root": true,
+  "uses": [],
+  "used_by": []
+ },
+ "Becoming.Relabel.EquivariantValue.const": {
+  "module": "Becoming.Selection",
+  "root": true,
+  "uses": [
+   "Becoming.Relabel.EquivariantValue"
+  ],
+  "used_by": []
+ },
+ "Becoming.RepairComparison.b2_correspondence_involutive": {
+  "module": "Becoming.RepairComparison",
+  "root": true,
+  "uses": [
+   "Becoming.RepairComparison.Claim",
+   "Becoming.RepairComparison.swapB2"
+  ],
+  "used_by": []
+ },
+ "Becoming.RepairComparison.current_support_restored": {
+  "module": "Becoming.RepairComparison",
+  "root": true,
+  "uses": [
+   "Becoming.RepairComparison.Life",
+   "Becoming.RepairComparison.Repair",
+   "Becoming.RepairComparison.finalState",
+   "Becoming.RepairComparison.supportedNow"
+  ],
+  "used_by": []
+ },
+ "Becoming.RepairComparison.separated_same_life": {
+  "module": "Becoming.RepairComparison",
+  "root": true,
+  "uses": [
+   "Becoming.RepairComparison.Claim.first",
+   "Becoming.RepairComparison.Claim.second",
+   "Becoming.RepairComparison.Life",
+   "Becoming.RepairComparison.episodeTime",
+   "Becoming.RepairComparison.lifeOf"
+  ],
+  "used_by": []
+ },
+ "Becoming.RepairComparison.support_between_episodes": {
+  "module": "Becoming.RepairComparison",
+  "root": true,
+  "uses": [
+   "Becoming.RepairComparison.Life",
+   "Becoming.RepairComparison.Repair",
+   "Becoming.RepairComparison.states",
+   "Becoming.RepairComparison.supportedNow"
+  ],
+  "used_by": []
+ },
+ "Becoming.Revising.old_cannot_select_rebuild": {
+  "module": "Becoming.Revision",
+  "root": true,
+  "uses": [
+   "Becoming.Learning.Training.Through",
+   "Becoming.Revising.alike"
+  ],
+  "used_by": []
+ },
+ "Becoming.Routes.cond_zero_mul": {
+  "module": "Becoming.Routes",
+  "root": true,
+  "uses": [],
+  "used_by": []
+ },
+ "Becoming.Square.at_pos": {
+  "module": "Becoming.Context",
+  "root": true,
+  "uses": [
+   "Becoming.Square.Cell",
+   "Becoming.Square.Line",
+   "Becoming.Square.at_",
+   "Becoming.Square.pos",
+   "Becoming.Square.within"
+  ],
+  "used_by": []
+ },
+ "Becoming.Square.column_commute": {
+  "module": "Becoming.Quantum",
+  "root": false,
+  "uses": [
+   "Becoming.Square.Mat4.Same",
+   "Becoming.Square.Mat4.mul",
+   "Becoming.Square.obs"
+  ],
+  "used_by": [
+   "Becoming.Square.line_commute"
+  ]
+ },
+ "Becoming.Square.column_product": {
+  "module": "Becoming.Quantum",
+  "root": false,
+  "uses": [
+   "Becoming.Square.Mat4",
+   "Becoming.Square.Mat4.Same",
+   "Becoming.Square.Mat4.neg",
+   "Becoming.Square.Mat4.one",
+   "Becoming.Square.columnProduct"
+  ],
+  "used_by": [
+   "Becoming.Square.line_product"
+  ]
+ },
+ "Becoming.Square.line_commute": {
+  "module": "Becoming.Quantum",
+  "root": true,
+  "uses": [
+   "Becoming.Square.Line",
+   "Becoming.Square.Mat4.Same",
+   "Becoming.Square.Mat4.mul",
+   "Becoming.Square.at_",
+   "Becoming.Square.obs"
+  ],
+  "used_by": []
+ },
+ "Becoming.Square.line_product": {
+  "module": "Becoming.Quantum",
+  "root": true,
+  "uses": [
+   "Becoming.Square.Line",
+   "Becoming.Square.Mat4",
+   "Becoming.Square.Mat4.Same",
+   "Becoming.Square.Mat4.neg",
+   "Becoming.Square.Mat4.one",
+   "Becoming.Square.lineProduct",
+   "Becoming.Square.odd"
+  ],
+  "used_by": []
+ },
+ "Becoming.Square.obs_sq": {
+  "module": "Becoming.Quantum",
+  "root": true,
+  "uses": [
+   "Becoming.Square.Mat4.Same",
+   "Becoming.Square.Mat4.mul",
+   "Becoming.Square.Mat4.one",
+   "Becoming.Square.obs"
+  ],
+  "used_by": []
+ },
+ "Becoming.Square.off_line_anticommute": {
+  "module": "Becoming.Quantum",
+  "root": true,
+  "uses": [
+   "Becoming.Square.Mat4.Same",
+   "Becoming.Square.Mat4.mul",
+   "Becoming.Square.Mat4.neg",
+   "Becoming.Square.obs"
+  ],
+  "used_by": []
+ },
+ "Becoming.Square.row_commute": {
+  "module": "Becoming.Quantum",
+  "root": false,
+  "uses": [
+   "Becoming.Square.Mat4.Same",
+   "Becoming.Square.Mat4.mul",
+   "Becoming.Square.obs"
+  ],
+  "used_by": [
+   "Becoming.Square.line_commute"
+  ]
+ },
+ "Becoming.Square.row_product": {
+  "module": "Becoming.Quantum",
+  "root": false,
+  "uses": [
+   "Becoming.Square.Mat4.Same",
+   "Becoming.Square.Mat4.one",
+   "Becoming.Square.rowProduct"
+  ],
+  "used_by": [
+   "Becoming.Square.line_product"
+  ]
+ },
+ "Becoming.Square.yy_entries": {
+  "module": "Becoming.Quantum",
+  "root": true,
+  "uses": [
+   "Becoming.Square.Mat4.Same",
+   "Becoming.Square.yy"
+  ],
+  "used_by": []
+ },
+ "Becoming.Triple.decides": {
+  "module": "Becoming.OrderNormal",
+  "root": false,
+  "uses": [
+   "Becoming.DecidesApart",
+   "Becoming.Triple.apart",
+   "Becoming.Triple.joined"
+  ],
+  "used_by": [
+   "Becoming.Triple.not_rearranged"
+  ]
+ },
+ "Becoming.Triple.identity_normal": {
+  "module": "Becoming.OrderNormal",
+  "root": false,
+  "uses": [
+   "Becoming.Triple.apart",
+   "Becoming.normalForm"
+  ],
+  "used_by": [
+   "Becoming.Triple.not_rearranged"
+  ]
+ },
+ "Becoming.Triple.not_rearranged": {
+  "module": "Becoming.OrderNormal",
+  "root": true,
+  "uses": [
+   "Becoming.Rearranges",
+   "Becoming.Triple.joined",
+   "Becoming.Triple.reversed"
+  ],
+  "used_by": []
+ },
+ "Becoming.Triple.reversed_normal": {
+  "module": "Becoming.OrderNormal",
+  "root": false,
+  "uses": [
+   "Becoming.Triple.apart",
+   "Becoming.Triple.reversed",
+   "Becoming.normalForm"
+  ],
+  "used_by": [
+   "Becoming.Triple.not_rearranged"
+  ]
+ },
+ "Becoming.Triple.reversed_reindexes": {
+  "module": "Becoming.OrderNormal",
+  "root": false,
+  "uses": [
+   "Becoming.Reindexes",
+   "Becoming.Triple.reversed"
+  ],
+  "used_by": [
+   "Becoming.Triple.not_rearranged"
+  ]
+ },
+ "Becoming.Triple.symm": {
+  "module": "Becoming.OrderNormal",
+  "root": false,
+  "uses": [
+   "Becoming.Triple.joined"
+  ],
+  "used_by": [
+   "Becoming.Triple.not_rearranged"
+  ]
+ },
+ "Becoming.Typicality.total_congr_mem": {
+  "module": "Becoming.Typicality",
+  "root": true,
+  "uses": [
+   "Becoming.Typicality.total"
+  ],
+  "used_by": []
+ },
+ "Becoming.Unclaimed.held_is_needed": {
+  "module": "Becoming.Standpoints",
+  "root": true,
+  "uses": [
+   "Becoming.Neutral",
+   "Becoming.Unclaimed.valuation",
+   "Becoming.Valuation.Held",
+   "Becoming.Valuation.SelfGood",
+   "Becoming.Valuation.Significant",
+   "Becoming.Valuation.shares"
+  ],
+  "used_by": []
+ },
+ "Becoming.Unjoined.supports_not_realizes": {
+  "module": "Becoming.Composition",
+  "root": true,
+  "uses": [
+   "Becoming.JointPlan.Realizes",
+   "Becoming.JointPlan.draws",
+   "Becoming.JointPlan.leaf",
+   "Becoming.JointPlan.pair",
+   "Becoming.Supports"
+  ],
+  "used_by": []
+ },
+ "Becoming.Valuation.own_transmission": {
+  "module": "Becoming.Standpoints",
+  "root": true,
+  "uses": [
+   "Becoming.Valuation",
+   "Becoming.Valuation.SelfGood",
+   "Becoming.Valuation.own",
+   "Becoming.Valuation.transmits",
+   "Becoming.Within"
+  ],
+  "used_by": []
+ },
+ "Becoming.Valuation.seed_of_selfGood": {
+  "module": "Becoming.Metaethics",
+  "root": true,
+  "uses": [
+   "Becoming.Valuation",
+   "Becoming.Valuation.Seed",
+   "Becoming.Valuation.SelfGood",
+   "Becoming.Valuation.living",
+   "Becoming.Valuation.own"
+  ],
+  "used_by": []
+ },
+ "Becoming.Viability.guardedStep_none": {
+  "module": "Becoming.Viability",
+  "root": true,
+  "uses": [
+   "Becoming.Viability.guardedStep"
+  ],
+  "used_by": []
+ },
+ "Becoming.WLPO.of_lpo": {
+  "module": "Becoming.Sensitivity",
+  "root": true,
+  "uses": [
+   "Becoming.LPO",
+   "Becoming.WLPO"
+  ],
+  "used_by": []
+ },
+ "Becoming.WLPO.of_rule": {
+  "module": "Becoming.Tail",
+  "root": true,
+  "uses": [
+   "Becoming.WLPO"
+  ],
+  "used_by": []
+ },
+ "Becoming.Weights.truncation": {
+  "module": "Becoming.Weighted",
+  "root": true,
+  "uses": [
+   "Becoming.Weights",
+   "Becoming.Weights.add",
+   "Becoming.Weights.sum"
+  ],
+  "used_by": []
+ },
+ "Becoming.Widening.bare_forces_reason": {
+  "module": "Becoming.Relevance",
+  "root": true,
+  "uses": [
+   "Becoming.Neutral",
+   "Becoming.Valuation.sig",
+   "Becoming.Widening.admitted",
+   "Becoming.Widening.before",
+   "Becoming.Widening.valuation",
+   "Becoming.articulates",
+   "Becoming.articulatesLiving"
+  ],
+  "used_by": []
+ },
+ "Becoming.all_weights_preserve_mass_iff_by_core": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "ChanceAdequacy.IncludedOn",
+   "ChanceAdequacy.mass"
+  ],
+  "used_by": []
+ },
+ "Becoming.articulates_total": {
+  "module": "Becoming.Relevance",
+  "root": true,
+  "uses": [
+   "Becoming.Neutral",
+   "Becoming.SecuresPositiveGround",
+   "Becoming.Valuation",
+   "Becoming.Valuation.living",
+   "Becoming.Valuation.sig",
+   "Becoming.articulates",
+   "Becoming.articulatesLiving"
+  ],
+  "used_by": []
+ },
+ "Becoming.bounded_rival": {
+  "module": "Becoming.Significance",
+  "root": true,
+  "uses": [
+   "Becoming.Unrestricted",
+   "Becoming.Within",
+   "Becoming.bounded"
+  ],
+  "used_by": []
+ },
+ "Becoming.chance_includedOn_iff": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.IncludedOn",
+   "ChanceAdequacy.IncludedOn"
+  ],
+  "used_by": []
+ },
+ "Becoming.chance_mass_eq": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [
+   "Becoming.mass",
+   "ChanceAdequacy.mass"
+  ],
+  "used_by": [
+   "Becoming.all_weights_preserve_mass_iff_by_core"
+  ]
+ },
+ "Becoming.changed_history_really_ends_by_core": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Generative.BecomingCompatibility.changingRelation"
+  ],
+  "used_by": []
+ },
+ "Becoming.classification_robust_iff_iff_em": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.Decided",
+   "ClassificationRobustJudgment.compared",
+   "ConcernExtension.extend",
+   "PracticalJudgment.Better",
+   "PracticalJudgment.Included"
+  ],
+  "used_by": []
+ },
+ "Becoming.compatible_complete_iff": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [
+   "Becoming.Readout.Explains",
+   "FallibleInspection.Reports",
+   "FallibleInspection.compatible"
+  ],
+  "used_by": [
+   "Becoming.complete_diagnosability_iff_by_core"
+  ]
+ },
+ "Becoming.complete_diagnosability_iff_by_core": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "FallibleInspection.CrossSeparated",
+   "FallibleInspection.Reports",
+   "FallibleInspection.compatible"
+  ],
+  "used_by": []
+ },
+ "Becoming.configurations_examples": {
+  "module": "Becoming.Entropy",
+  "root": true,
+  "uses": [
+   "Becoming.configurations"
+  ],
+  "used_by": []
+ },
+ "Becoming.contingent_generation_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.Unrestricted",
+   "GenerativeComparison.Inventory",
+   "GenerativeComparison.Inventory.generative",
+   "GenerativeComparison.Inventory.realized"
+  ],
+  "used_by": []
+ },
+ "Becoming.counting_laws": {
+  "module": "Becoming.Population",
+  "root": true,
+  "uses": [
+   "Becoming.Listed",
+   "Becoming.Pointwise",
+   "Becoming.Tally",
+   "Becoming.ceasings",
+   "Becoming.comings"
+  ],
+  "used_by": []
+ },
+ "Becoming.counting_truncation_le": {
+  "module": "Becoming.Weighted",
+  "root": true,
+  "uses": [
+   "Becoming.Weights.sum",
+   "Becoming.counting"
+  ],
+  "used_by": []
+ },
+ "Becoming.counting_within_le_succ": {
+  "module": "Becoming.Routes",
+  "root": true,
+  "uses": [
+   "Becoming.Weights.within",
+   "Becoming.counting"
+  ],
+  "used_by": []
+ },
+ "Becoming.distinctBy_eq_iff": {
+  "module": "Becoming.Listing",
+  "root": false,
+  "uses": [
+   "Becoming.Distinct",
+   "Becoming.DistinctBy"
+  ],
+  "used_by": [
+   "Becoming.numbers_iff_numbersBy_eq"
+  ]
+ },
+ "Becoming.distinct_configurationsWithin": {
+  "module": "Becoming.Entropy",
+  "root": true,
+  "uses": [
+   "Becoming.Distinct",
+   "Becoming.configurationsWithin"
+  ],
+  "used_by": []
+ },
+ "Becoming.distinct_downFrom": {
+  "module": "Becoming.Entropy",
+  "root": false,
+  "uses": [
+   "Becoming.Distinct",
+   "Becoming.downFrom"
+  ],
+  "used_by": [
+   "Becoming.distinct_configurationsWithin"
+  ]
+ },
+ "Becoming.evenBoxes_glued": {
+  "module": "Becoming.Description",
+  "root": false,
+  "uses": [
+   "Becoming.Glued",
+   "Becoming.Specker.Box",
+   "Becoming.Specker.Opening",
+   "Becoming.Specker.within",
+   "Becoming.evenBoxes",
+   "Becoming.restrict"
+  ],
+  "used_by": [
+   "Becoming.evenBoxes_not_determined"
+  ]
+ },
+ "Becoming.evenBoxes_not_determined": {
+  "module": "Becoming.Description",
+  "root": true,
+  "uses": [
+   "Becoming.PartsDetermine",
+   "Becoming.Specker.Box",
+   "Becoming.Specker.Opening",
+   "Becoming.Specker.within",
+   "Becoming.evenBoxes"
+  ],
+  "used_by": []
+ },
+ "Becoming.even_third": {
+  "module": "Becoming.Description",
+  "root": false,
+  "uses": [
+   "Becoming.flipIf"
+  ],
+  "used_by": [
+   "Becoming.evenBoxes_glued"
+  ]
+ },
+ "Becoming.every_situated_position_has_reason_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.Unrestricted",
+   "GenerativeComparison.Inventory",
+   "GenerativeComparison.Inventory.generative",
+   "GenerativeComparison.Inventory.realized",
+   "PositionedPositiveReason.PositionedArticulation"
+  ],
+  "used_by": []
+ },
+ "Becoming.exists_undominated_iff_weakly": {
+  "module": "Becoming.Decidedness",
+  "root": true,
+  "uses": [
+   "Becoming.Undominated",
+   "Becoming.WeaklyDecided"
+  ],
+  "used_by": []
+ },
+ "Becoming.explains_complete_iff": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [
+   "Becoming.Readout.Explains",
+   "FallibleInspection.Reports",
+   "FallibleInspection.explains"
+  ],
+  "used_by": [
+   "Becoming.compatible_complete_iff"
+  ]
+ },
+ "Becoming.firstWhere_before": {
+  "module": "Becoming.OrderNormal",
+  "root": false,
+  "uses": [
+   "Becoming.firstWhere"
+  ],
+  "used_by": [
+   "Becoming.pick_least"
+  ]
+ },
+ "Becoming.flipIf_self": {
+  "module": "Becoming.Description",
+  "root": false,
+  "uses": [
+   "Becoming.flipIf"
+  ],
+  "used_by": [
+   "Becoming.evenBoxes_glued"
+  ]
+ },
+ "Becoming.fulfillment_floor_by_core": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.mass",
+   "ChanceAdequacy.Fulfilled",
+   "ChanceAdequacy.target"
+  ],
+  "used_by": []
+ },
+ "Becoming.gap_le_iff": {
+  "module": "Becoming.Propagation",
+  "root": true,
+  "uses": [
+   "Becoming.gap"
+  ],
+  "used_by": []
+ },
+ "Becoming.inventory_g0_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [
+   "Becoming.Unrestricted",
+   "GenerativeComparison.G0",
+   "GenerativeComparison.Inventory",
+   "GenerativeComparison.Inventory.generative",
+   "GenerativeComparison.Inventory.realized"
+  ],
+  "used_by": [
+   "Becoming.contingent_generation_of_unrestricted",
+   "Becoming.every_situated_position_has_reason_of_unrestricted",
+   "Becoming.new_realization_of_unrestricted",
+   "Becoming.positive_ground_by_bound_of_unrestricted"
+  ]
+ },
+ "Becoming.le_of_mem_downFrom": {
+  "module": "Becoming.Entropy",
+  "root": false,
+  "uses": [
+   "Becoming.downFrom"
+  ],
+  "used_by": [
+   "Becoming.distinct_downFrom"
+  ]
+ },
+ "Becoming.list_all_true_iff": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [],
+  "used_by": [
+   "Becoming.explains_complete_iff"
+  ]
+ },
+ "Becoming.list_any_true_iff": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [],
+  "used_by": [
+   "Becoming.compatible_complete_iff"
+  ]
+ },
+ "Becoming.list_contains_true_iff": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [],
+  "used_by": [
+   "Becoming.witness_true_iff"
+  ]
+ },
+ "Becoming.listsOnce_all_iff": {
+  "module": "Becoming.Listing",
+  "root": true,
+  "uses": [
+   "Becoming.Decided",
+   "Becoming.ListsOnce"
+  ],
+  "used_by": []
+ },
+ "Becoming.listsOnce_iff_decided": {
+  "module": "Becoming.Listing",
+  "root": false,
+  "uses": [
+   "Becoming.IdentityDecided",
+   "Becoming.ListsOnce"
+  ],
+  "used_by": [
+   "Becoming.listsOnce_all_iff"
+  ]
+ },
+ "Becoming.mass_lt_of_added": {
+  "module": "Becoming.Weighted",
+  "root": true,
+  "uses": [
+   "Becoming.IncludedOn",
+   "Becoming.mass"
+  ],
+  "used_by": []
+ },
+ "Becoming.new_realization_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.Unrestricted",
+   "GenerativeComparison.GenerativeExtension",
+   "GenerativeComparison.Inventory",
+   "GenerativeComparison.Inventory.generative",
+   "GenerativeComparison.Inventory.realized"
+  ],
+  "used_by": []
+ },
+ "Becoming.nodup_iff_distinct": {
+  "module": "Becoming.Composition",
+  "root": true,
+  "uses": [
+   "Becoming.Distinct"
+  ],
+  "used_by": []
+ },
+ "Becoming.not_marks": {
+  "module": "Becoming.Recurrence",
+  "root": true,
+  "uses": [
+   "Becoming.Marks"
+  ],
+  "used_by": []
+ },
+ "Becoming.numbers_iff_decided": {
+  "module": "Becoming.Listing",
+  "root": true,
+  "uses": [
+   "Becoming.IdentityDecided",
+   "Becoming.Numbers"
+  ],
+  "used_by": []
+ },
+ "Becoming.numbers_iff_numbersBy_eq": {
+  "module": "Becoming.Listing",
+  "root": true,
+  "uses": [
+   "Becoming.Numbers",
+   "Becoming.NumbersBy"
+  ],
+  "used_by": []
+ },
+ "Becoming.of_listsOnce": {
+  "module": "Becoming.Listing",
+  "root": true,
+  "uses": [
+   "Becoming.IdentityDecided",
+   "Becoming.ListsOnce"
+  ],
+  "used_by": []
+ },
+ "Becoming.ownStanding_other": {
+  "module": "Becoming.Testing",
+  "root": true,
+  "uses": [
+   "Becoming.ownStanding"
+  ],
+  "used_by": []
+ },
+ "Becoming.pick_least": {
+  "module": "Becoming.OrderNormal",
+  "root": true,
+  "uses": [
+   "Becoming.freeAt",
+   "Becoming.normalPick",
+   "Becoming.origin",
+   "Becoming.place"
+  ],
+  "used_by": []
+ },
+ "Becoming.positionedArticulation_iff": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.PositionedArticulation",
+   "PositionedPositiveReason.PositionedArticulation"
+  ],
+  "used_by": []
+ },
+ "Becoming.positioned_articulation_of_articulatesLiving": {
+  "module": "Becoming.Relevance",
+  "root": true,
+  "uses": [
+   "Becoming.Neutral",
+   "Becoming.PositionedArticulation",
+   "Becoming.Valuation",
+   "Becoming.Valuation.living",
+   "Becoming.Valuation.sig",
+   "Becoming.articulatesLiving"
+  ],
+  "used_by": []
+ },
+ "Becoming.positive_ground_by_bound_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [
+   "Becoming.Unrestricted",
+   "GenerativeComparison.Inventory.generative",
+   "GenerativeComparison.Inventory.realized",
+   "OpenFutureRevision.boundedInventory"
+  ],
+  "used_by": [
+   "Becoming.revised_generation_by_bound_of_unrestricted"
+  ]
+ },
+ "Becoming.realized_requests_supported_by_core": {
+  "module": "Becoming.CompositionBridge",
+  "root": true,
+  "uses": [
+   "Generative.ExplanatoryFootprints.Requests",
+   "Generative.ExplanatoryFootprints.Separate",
+   "Generative.ExplanatoryFootprints.Supported",
+   "Generative.ExplanatoryFootprints.Within",
+   "Generative.ExplanatoryJointness.Plan",
+   "Generative.ExplanatoryJointness.Realizes"
+  ],
+  "used_by": []
+ },
+ "Becoming.repeated_same": {
+  "module": "Becoming.Listing",
+  "root": true,
+  "uses": [],
+  "used_by": []
+ },
+ "Becoming.responded_zero": {
+  "module": "Becoming.Remainder",
+  "root": true,
+  "uses": [
+   "Becoming.responded"
+  ],
+  "used_by": []
+ },
+ "Becoming.revised_generation_by_bound_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.Unrestricted"
+  ],
+  "used_by": []
+ },
+ "Becoming.routeSum_mono": {
+  "module": "Becoming.Routes",
+  "root": true,
+  "uses": [
+   "Becoming.RoutePoint.level",
+   "Becoming.routeSum"
+  ],
+  "used_by": []
+ },
+ "Becoming.securesPositiveGround_iff": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.SecuresPositiveGround",
+   "PositionedPositiveReason.SecuresPositiveGround"
+  ],
+  "used_by": []
+ },
+ "Becoming.securesPositiveGround_total": {
+  "module": "Becoming.Relevance",
+  "root": false,
+  "uses": [
+   "Becoming.SecuresPositiveGround"
+  ],
+  "used_by": [
+   "Becoming.articulates_total"
+  ]
+ },
+ "Becoming.share_rises_through": {
+  "module": "Becoming.Selection",
+  "root": true,
+  "uses": [
+   "Becoming.offspringCount"
+  ],
+  "used_by": []
+ },
+ "Becoming.some_getD": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [],
+  "used_by": [
+   "Becoming.explains_complete_iff"
+  ]
+ },
+ "Becoming.sorts_by_iff": {
+  "module": "Becoming.OrderNormal",
+  "root": true,
+  "uses": [
+   "Becoming.Commutes",
+   "Becoming.EachStep",
+   "Becoming.KeepsOrder",
+   "Becoming.Reindexes",
+   "Becoming.place"
+  ],
+  "used_by": []
+ },
+ "Becoming.tailLaw_eq_wholeLaw": {
+  "module": "Becoming.Tail",
+  "root": true,
+  "uses": [
+   "Becoming.ExchangeLaw",
+   "Becoming.VanishFrom",
+   "Becoming.tailLaw",
+   "Becoming.vanishIndicator",
+   "Becoming.wholeLaw"
+  ],
+  "used_by": []
+ },
+ "Becoming.tailLaw_not_readsFinitely": {
+  "module": "Becoming.Sensitivity",
+  "root": true,
+  "uses": [
+   "Becoming.ExchangeLaw.ReadsFinitely",
+   "Becoming.VanishFrom",
+   "Becoming.tailLaw"
+  ],
+  "used_by": []
+ },
+ "Becoming.tailLaw_not_through_sensitive": {
+  "module": "Becoming.Sensitivity",
+  "root": true,
+  "uses": [
+   "Becoming.ExchangeLaw.GivesAlike",
+   "Becoming.ExchangeLaw.Sensitive",
+   "Becoming.VanishFrom",
+   "Becoming.tailLaw"
+  ],
+  "used_by": []
+ },
+ "Becoming.two_extremes_suffice_of_em": {
+  "module": "Becoming.Bridge",
+  "root": true,
+  "uses": [
+   "Becoming.Decided",
+   "ClassificationRobustJudgment.compared"
+  ],
+  "used_by": []
+ },
+ "Becoming.undominated_has_iff_em": {
+  "module": "Becoming.Decidedness",
+  "root": true,
+  "uses": [
+   "Becoming.Decided",
+   "Becoming.Undominated"
+  ],
+  "used_by": []
+ },
+ "Becoming.unselected": {
+  "module": "Becoming.Evolution",
+  "root": true,
+  "uses": [
+   "Becoming.lowered",
+   "Becoming.offspring",
+   "Becoming.raised",
+   "Becoming.selected"
+  ],
+  "used_by": []
+ },
+ "Becoming.vanishIndicator_changedByNoCondition": {
+  "module": "Becoming.Tail",
+  "root": true,
+  "uses": [
+   "Becoming.ChangedByNoCondition",
+   "Becoming.VanishFrom",
+   "Becoming.vanishIndicator"
+  ],
+  "used_by": []
+ },
+ "Becoming.wholeLaw_not_readsFinitely": {
+  "module": "Becoming.Tail",
+  "root": true,
+  "uses": [
+   "Becoming.ChangedByNoCondition",
+   "Becoming.ExchangeLaw.ReadsFinitely",
+   "Becoming.wholeLaw"
+  ],
+  "used_by": []
+ },
+ "Becoming.witness_true_iff": {
+  "module": "Becoming.Bridge",
+  "root": false,
+  "uses": [],
+  "used_by": [
+   "Becoming.explains_complete_iff"
+  ]
+ }
+}

@@ -126,6 +126,50 @@ import Becoming.LearnableRuns
 import Becoming.ParityReadings
 import Becoming.FinerTraces
 import Becoming.FormedLoops
+import Becoming.AttractionRuns
+import Becoming.BoundaryFlows
+import Becoming.BoundaryWorlds
+import Becoming.CandidateRuns
+import Becoming.CaptureWorlds
+import Becoming.CensusWebs
+import Becoming.ContactCourses
+import Becoming.ContextualRuns
+import Becoming.ContinuingRuns
+import Becoming.CopyCourses
+import Becoming.CountdownCourses
+import Becoming.CounterfactualRuns
+import Becoming.CouplingTraces
+import Becoming.CourseRoles
+import Becoming.DependenceWebs
+import Becoming.DiagonalRuns
+import Becoming.ExchangeFlows
+import Becoming.HorizonWebs
+import Becoming.IdentificationRuns
+import Becoming.JointPlanFrames
+import Becoming.LastingRuns
+import Becoming.LearningRuns
+import Becoming.LevelWebs
+import Becoming.ListedOutcomeFrames
+import Becoming.ListedWebs
+import Becoming.MoveRuns
+import Becoming.OrderWorlds
+import Becoming.PassageWorlds
+import Becoming.RecurrenceRuns
+import Becoming.ReducedRuns
+import Becoming.ReferencePlanTraces
+import Becoming.RetrodictionRuns
+import Becoming.RevisionRuns
+import Becoming.RouteTraces
+import Becoming.SeekingRuns
+import Becoming.SelectionRuns
+import Becoming.SensitivityWebs
+import Becoming.SituationTraces
+import Becoming.StockTraces
+import Becoming.StrengthFlows
+import Becoming.TailRuns
+import Becoming.TallyWorlds
+import Becoming.TypicalRuns
+import Becoming.WeightedTraces
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1253,6 +1297,64 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   balanced worlds: a self-loop acting from a step on, a threshold world whose loop of the couplings
   it reads off its own standing forms at the threshold and not before, and self-loops coupling on
   a schedule, the sparse one recurring without running away.
+* `Becoming.AttractionRuns` (L4): attraction on the process of a determined law: what every run is
+  drawn into.
+* `Becoming.BoundaryFlows` (L4): the self's boundaries drawn along what a flow relates.
+* `Becoming.BoundaryWorlds` (L4): the presupposition along what affects what in a world.
+* `Becoming.CandidateRuns` (L4): cross-situational resolution step by step along a run.
+* `Becoming.CaptureWorlds` (L4): a target's share among descendants.
+* `Becoming.CensusWebs` (L4): counts of arising and ceasing where they exist, and listing once.
+* `Becoming.ContactCourses` (L4): revision rules as processes, and encodings along a run of
+  channels.
+* `Becoming.ContextualRuns` (L4): the parity bounds and the parts of no whole along the runs of any
+  process.
+* `Becoming.ContinuingRuns` (L4): the witness of continuing revision at yield nine, read along its
+  run.
+* `Becoming.CopyCourses` (L4): the laws of copying on the courses and runs of its processes.
+* `Becoming.CountdownCourses` (L4): countdown on the courses of a partial law's process.
+* `Becoming.CounterfactualRuns` (L4): the course of an act on runs of the standard model and on the
+  course world.
+* `Becoming.CouplingTraces` (L4): couplings read as the steps of a process.
+* `Becoming.CourseRoles` (L4): one course, one kind or two roles.
+* `Becoming.DependenceWebs` (L4): support in a fixed unit, and coextinction with no reserve.
+* `Becoming.DiagonalRuns` (L4): completing a registration within what it registers, as a process.
+* `Becoming.ExchangeFlows` (L4): uniform descent, and what a sampled flow keeps of an absent
+  relatum.
+* `Becoming.HorizonWebs` (L4): the horizon in the support-gated law, on its webs.
+* `Becoming.IdentificationRuns` (L4): the states of a run and what a bounded record fixes.
+* `Becoming.JointPlanFrames` (L4): joint plans of joint frames: nested decompositions read through
+  a description.
+* `Becoming.LastingRuns` (L4): lasting and reaching on runs and courses.
+* `Becoming.LearningRuns` (L4): what a run's registered record fixes and what a learner reaching it
+  does.
+* `Becoming.LevelWebs` (L4): laws of a condition's level and a family's configuration on a web.
+* `Becoming.ListedOutcomeFrames` (L4): what fixes likeness where each move has listed outcomes.
+* `Becoming.ListedWebs` (L4): the laws of listing what is active, read of a web's activity.
+* `Becoming.MoveRuns` (L4): where the moves of a run are formed.
+* `Becoming.OrderWorlds` (L4): the arrangements of a world's exchanges, and its readings in time.
+* `Becoming.PassageWorlds` (L4): what the stated laws of one step and the following of passages
+  give of worlds.
+* `Becoming.RecurrenceRuns` (L4): recurrence on the process of a determined law: merging, returning
+  and the kept history.
+* `Becoming.ReducedRuns` (L4): what a reduction keeps of the courses and runs of a law.
+* `Becoming.ReferencePlanTraces` (L4): revision of a reference plan as a process of the spine.
+* `Becoming.RetrodictionRuns` (L4): reading an earlier configuration of a run from later dated
+  records.
+* `Becoming.RevisionRuns` (L4): what the history of a run's registrations selects, and the
+  reconstruction steps.
+* `Becoming.RouteTraces` (L4): the orders of a sum over a process's histories.
+* `Becoming.SeekingRuns` (L4): the boundary of enough on the unfolding.
+* `Becoming.SelectionRuns` (L4): a selection through a run's registered course.
+* `Becoming.SensitivityWebs` (L4): sensitivity on webs and flows: what depends on the whole, read
+  off the courses.
+* `Becoming.SituationTraces` (L4): the counts of situations are counts of the traces of one
+  determined process.
+* `Becoming.StockTraces` (L4): when a course is executable on a stock, in closed form.
+* `Becoming.StrengthFlows` (L4): coupling strengths read off the flows a law gives.
+* `Becoming.TailRuns` (L4): the omniscience a law of the whole takes, stated of every run.
+* `Becoming.TallyWorlds` (L4): the counts a world's census can have.
+* `Becoming.TypicalRuns` (L4): what counting says of the records of runs of free branching.
+* `Becoming.WeightedTraces` (L4): integrating out and memory, on the traces of processes.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

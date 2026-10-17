@@ -1,0 +1,8 @@
+{
+ "Becoming.OneCounts.forms_apart": {"module": "Becoming.Boundaries", "category": "model-witness", "reason": "A Bool-valued significance along the empty relation showing boundary- and standpoint-invariance come apart; it has no natural reading as a run, world or flow (the empty relation is not a flow's relation by definition)."},
+ "Becoming.OneStep.Chain.fill_entry_le": {"module": "Becoming.OneStep", "category": "support", "reason": "Arithmetic on the witness's share-out list (`fill`): each share is at most the cap; a projection of `fill_spec`."},
+ "Becoming.configurations_examples": {"module": "Becoming.Entropy", "category": "support", "reason": "Two numeric counts of configurations computed by rfl (4 and 6); no law of any web."},
+ "Becoming.counting_laws": {"module": "Becoming.Population", "category": "restates", "reason": "Its world reading is already on the base: the first part of `Becoming.World.counting_free` (a pointwise property holds of every world's census exactly when it holds of every tally), proved there through `Queue.counts` rather than through this theorem."},
+ "Becoming.distinct_configurationsWithin": {"module": "Becoming.Entropy", "category": "support", "reason": "A list lemma: the constructed list of configurations within a bound has no repetition. Its helpers `distinct_downFrom` and `le_of_mem_downFrom` (apart, not roots) stay apart with it."},
+ "Becoming.unselected": {"module": "Becoming.Evolution", "category": "model-witness", "reason": "One parent with one offspring, both at five, evaluated by rfl: an arithmetic example of the Price terms with no flow or web."}
+}

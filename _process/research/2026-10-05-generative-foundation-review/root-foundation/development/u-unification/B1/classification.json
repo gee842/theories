@@ -1,0 +1,52 @@
+{
+ "Becoming.Law.drawn_of_lost": {
+  "module": "Becoming.Attraction",
+  "category": "restates",
+  "reason": "Under law_reachable_iff and law_drawn_iff it is Branching.necessarilyDrawn_of_lost at Law.process next, already on the base for every process."
+ },
+ "Becoming.Law.Lossless.unlisted": {
+  "module": "Becoming.Recurrence",
+  "category": "restates",
+  "reason": "Branching.Lossless.unlisted at Law.process next with the run Law.run next s states it on the base (through law_lossless_iff and law_returns_iff)."
+ },
+ "Becoming.Law.lost_stays": {
+  "module": "Becoming.Recurrence",
+  "category": "restates",
+  "reason": "Branching.lost_stays states it for every process; at Law.process next it is this law through law_reachable_iff."
+ },
+ "Becoming.Law.rise_not_lossless": {
+  "module": "Becoming.Recurrence",
+  "category": "restates",
+  "reason": "Branching.rise_not_lossless states it on a run of every process, needing only the run's configurations listed; at Law.process next it is this law through law_lossless_iff."
+ },
+ "Becoming.not_marks": {
+  "module": "Becoming.Recurrence",
+  "category": "restates",
+  "reason": "On runs it is Run.change_not_recurring (already on the base) with hypothesis and conclusion exchanged."
+ },
+ "Becoming.Lasting.fixed_avoids": {
+  "module": "Becoming.Lasting",
+  "category": "restates",
+  "reason": "Courses.fixed_avoids_reach states it on the courses of Law.process next (through Courses.reach_iff_orbit)."
+ },
+ "Becoming.Countdown.Advances.completes": {
+  "module": "Becoming.Countdown",
+  "category": "restates",
+  "reason": "Courses.Advances.completes_plan states it as completion of a plan of the tick's process (through completes_ofPartial_iff and ticks_eq_runPartial)."
+ },
+ "Becoming.Lasting.Reaches.mono": {
+  "module": "Becoming.Lasting",
+  "category": "support",
+  "reason": "Monotonicity of the step bound of the source's recursive predicate Reaches; on runs it adds nothing to Courses.Reaches.runs beyond Nat.le_trans."
+ },
+ "Becoming.Viability.guardedStep_none": {
+  "module": "Becoming.Viability",
+  "category": "support",
+  "reason": "The defining equation (rfl) of the guarded step at a stopped history, on Option S only."
+ },
+ "Becoming.Listed.lpo_of_few": {
+  "module": "Becoming.Openness",
+  "category": "logical-strength",
+  "reason": "States that strengthening few_of_quiet to a list of every member ever holding gives LPO, for determinations on Nat; a world form would need a world built from Few, which no module gives."
+ }
+}

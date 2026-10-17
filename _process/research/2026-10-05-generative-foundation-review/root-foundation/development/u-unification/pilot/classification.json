@@ -1,0 +1,207 @@
+{
+ "Becoming.Apart.not_enough": {
+  "module": "Becoming.Standpoints",
+  "category": "model-witness",
+  "reason": "a counter-model showing that a premise of the ethical laws is needed; a fact about one constructed valuation, not a law of the unfolding"
+ },
+ "Becoming.Instances.dephase_no_restore": {
+  "module": "Becoming.Instances",
+  "category": "model-witness",
+  "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+ },
+ "Becoming.Instances.diagonal_no_decoder": {
+  "module": "Becoming.Instances",
+  "category": "model-witness",
+  "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+ },
+ "Becoming.Instances.evolve_eq_foldl": {
+  "module": "Becoming.Instances",
+  "category": "model-witness",
+  "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+ },
+ "Becoming.Instances.ideal_two_word": {
+  "module": "Becoming.Instances",
+  "category": "model-witness",
+  "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+ },
+ "Becoming.Instances.local_pair_no_update": {
+  "module": "Becoming.Instances",
+  "category": "model-witness",
+  "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+ },
+ "Becoming.Joining.compatible_iff": {
+  "module": "Becoming.JoiningBridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.Joining.locallyFinite_iff": {
+  "module": "Becoming.JoiningBridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.Joining.roleTotal_iff": {
+  "module": "Becoming.JoiningBridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.Judgment.required_of_bettered": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.Model.articulation_neutrality_is_needed": {
+  "module": "Becoming.Metaethics",
+  "category": "model-witness",
+  "reason": "a counter-model showing that a premise of the ethical laws is needed; a fact about one constructed valuation, not a law of the unfolding"
+ },
+ "Becoming.Neutral.within": {
+  "module": "Becoming.Metaethics",
+  "category": "general-structure",
+  "reason": "a law of boundary neutrality for any rule on any index; no base reading of the rule"
+ },
+ "Becoming.Ranking.active_of_renewed": {
+  "module": "Becoming.Ranking",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.Ranking.undisturbed_eq": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.Ranking.wholeRun_iff": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.Recipe.ofProgram_toProgram": {
+  "module": "Becoming.GranularityBridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.RepairComparison.b2_correspondence_involutive": {
+  "module": "Becoming.RepairComparison",
+  "category": "model-witness",
+  "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+ },
+ "Becoming.RepairComparison.current_support_restored": {
+  "module": "Becoming.RepairComparison",
+  "category": "model-witness",
+  "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+ },
+ "Becoming.RepairComparison.separated_same_life": {
+  "module": "Becoming.RepairComparison",
+  "category": "model-witness",
+  "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+ },
+ "Becoming.RepairComparison.support_between_episodes": {
+  "module": "Becoming.RepairComparison",
+  "category": "model-witness",
+  "reason": "a fact about one constructed peripheral instance kept in the bridge ring"
+ },
+ "Becoming.Unclaimed.held_is_needed": {
+  "module": "Becoming.Standpoints",
+  "category": "model-witness",
+  "reason": "a counter-model showing that a premise of the ethical laws is needed; a fact about one constructed valuation, not a law of the unfolding"
+ },
+ "Becoming.Valuation.own_transmission": {
+  "module": "Becoming.Standpoints",
+  "category": "general-structure",
+  "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
+ },
+ "Becoming.Valuation.seed_of_selfGood": {
+  "module": "Becoming.Metaethics",
+  "category": "general-structure",
+  "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
+ },
+ "Becoming.Widening.bare_forces_reason": {
+  "module": "Becoming.Relevance",
+  "category": "model-witness",
+  "reason": "a counter-model showing that a premise of the ethical laws is needed; a fact about one constructed valuation, not a law of the unfolding"
+ },
+ "Becoming.all_weights_preserve_mass_iff_by_core": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.articulates_total": {
+  "module": "Becoming.Relevance",
+  "category": "general-structure",
+  "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
+ },
+ "Becoming.bounded_rival": {
+  "module": "Becoming.Significance",
+  "category": "general-structure",
+  "reason": "a law of every bounded significance on any formations: it is not the continuation condition where a formation lies outside a region; the regions are supplied, not read off a world"
+ },
+ "Becoming.chance_includedOn_iff": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.changed_history_really_ends_by_core": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.classification_robust_iff_iff_em": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.complete_diagnosability_iff_by_core": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.contingent_generation_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.every_situated_position_has_reason_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.fulfillment_floor_by_core": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.new_realization_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.positionedArticulation_iff": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.positioned_articulation_of_articulatesLiving": {
+  "module": "Becoming.Relevance",
+  "category": "general-structure",
+  "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
+ },
+ "Becoming.realized_requests_supported_by_core": {
+  "module": "Becoming.CompositionBridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.revised_generation_by_bound_of_unrestricted": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.securesPositiveGround_iff": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ },
+ "Becoming.two_extremes_suffice_of_em": {
+  "module": "Becoming.Bridge",
+  "category": "bridge-interface",
+  "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+ }
+}

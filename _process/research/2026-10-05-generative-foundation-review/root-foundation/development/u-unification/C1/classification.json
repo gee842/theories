@@ -1,0 +1,11 @@
+{
+ "Becoming.Propagation.distinct_two": {"module": "Becoming.Propagation", "category": "support", "reason": "List lemma: the two-condition witness list `two` has no repeat."},
+ "Becoming.Propagation.every_two": {"module": "Becoming.Propagation", "category": "support", "reason": "List lemma: both Booleans are members of the witness list `two`."},
+ "Becoming.gap_le_iff": {"module": "Becoming.Propagation", "category": "support", "reason": "Arithmetic on natural numbers: the gap of two amounts is at most m exactly where each is at most the other plus m."},
+ "Becoming.RecursOrStops.lpo": {"module": "Becoming.Frequency", "category": "logical-strength", "reason": "States only that the Sigma-0-2 dichotomy RecursOrStops implies LPO; its statement of every coupling process is settled_every_iff_steps (CouplingTraces), which is joined and through which lpo_of_settled feeds the base."},
+ "Becoming.responded_zero": {"module": "Becoming.Remainder", "category": "support", "reason": "Definitional value of a numeric sum at step zero (`responded ... 0 c = 0`, proved by rfl); `responded` reads a level array, not a world or run."},
+ "Becoming.Routes.cond_zero_mul": {"module": "Becoming.Routes", "category": "support", "reason": "Arithmetic on a Boolean choice: (bif b then 0 else r) * l = bif b then 0 else r * l."},
+ "Becoming.counting_within_le_succ": {"module": "Becoming.Routes", "category": "support", "reason": "Monotonicity in the order of a counting sum over lists of weights; no process enters. Its process reading is RouteTraces.within_trace (joined through counting_within_le_transfer): each order counts only courses the process has."},
+ "Becoming.routeSum_mono": {"module": "Becoming.Routes", "category": "support", "reason": "Monotonicity in the horizon of the numeric route sum; it is proved through carriedWithin_mono, and the route sum is a sum over route points, not the standing of a world or a run."},
+ "Becoming.Observation.Measure.listed": {"module": "Becoming.Observation", "category": "model-witness", "reason": "A list-membership fact about the measurement witness's reading schedule (every level read is among [true, false]); it is a side condition of the witness, not a law of its flows or worlds."}
+}
