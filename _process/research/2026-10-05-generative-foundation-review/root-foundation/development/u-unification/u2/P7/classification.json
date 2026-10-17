@@ -1,0 +1,262 @@
+{
+ "AlignmentDirection.covered_transfer_with_old_model_stopped": {
+  "module": "AlignmentDirection",
+  "category": "model-witness",
+  "reason": "a fact about the stipulated plans 0 to 3 of AlignmentDirection or its stipulated demand and service times; the bridge reads the plans' comparison and frontier as BetterAt on a frame with no moves (alignment_better_iff_betterAt, alignment_frontier_iff); its own report is not empty"
+ },
+ "AlignmentDirection.crossed_basic_losses_remain_unranked": {
+  "module": "AlignmentDirection",
+  "category": "model-witness",
+  "reason": "a fact about the stipulated plans 0 to 3 of AlignmentDirection or its stipulated demand and service times; the bridge reads the plans' comparison and frontier as BetterAt on a frame with no moves (alignment_better_iff_betterAt, alignment_frontier_iff); its own report is not empty"
+ },
+ "AlignmentDirection.expansion_excluded": {
+  "module": "AlignmentDirection",
+  "category": "model-witness",
+  "reason": "a fact about the stipulated plans 0 to 3 of AlignmentDirection or its stipulated demand and service times; the bridge reads the plans' comparison and frontier as BetterAt on a frame with no moves (alignment_better_iff_betterAt, alignment_frontier_iff); its own report is not empty"
+ },
+ "AlignmentDirection.expansion_has_real_gain_and_preservation_loses_it": {
+  "module": "AlignmentDirection",
+  "category": "model-witness",
+  "reason": "a fact about the stipulated plans 0 to 3 of AlignmentDirection or its stipulated demand and service times; the bridge reads the plans' comparison and frontier as BetterAt on a frame with no moves (alignment_better_iff_betterAt, alignment_frontier_iff); its own report is not empty"
+ },
+ "AlignmentDirection.promised_successor_without_delivery_fails": {
+  "module": "AlignmentDirection",
+  "category": "model-witness",
+  "reason": "a fact about the stipulated plans 0 to 3 of AlignmentDirection or its stipulated demand and service times; the bridge reads the plans' comparison and frontier as BetterAt on a frame with no moves (alignment_better_iff_betterAt, alignment_frontier_iff)"
+ },
+ "AlignmentInquiry.empty_uncertainty_never_certifies": {
+  "module": "AlignmentInquiry",
+  "category": "support",
+  "reason": "validity checks that the listed belief is not empty, so the empty list selects nothing: a list fact; selection on the interface's process is InterfaceTracesInherited.selected_iff_completes; its own report carries propext and Quot.sound"
+ },
+ "AlignmentInquiry.observational_obstruction": {
+  "module": "AlignmentInquiry",
+  "category": "support",
+  "reason": "no value meets two incompatible predicates, said of the branch a plan selects: a prelude-level fact"
+ },
+ "AlignmentInquiry.repertoire_complete": {
+  "module": "AlignmentInquiry",
+  "category": "support",
+  "reason": "membership in a flatMap of listed queries and actions: a list lemma; its own report carries propext and Quot.sound"
+ },
+ "AlignmentInquiry.same_answer_same_selected_response": {
+  "module": "AlignmentInquiry",
+  "category": "support",
+  "reason": "equal answers select equal branches: congruence of a function, a prelude-level fact"
+ },
+ "ChanceAdequacy.all_weights_preserve_mass_iff": {
+  "module": "ChanceAdequacy",
+  "category": "restates",
+  "reason": "restates Becoming.every_weighting_iff, the mass being the core's weighted mass (Bridge.chance_mass_eq, all_weights_preserve_mass_iff_by_core); its own report carries propext and Quot.sound"
+ },
+ "ChanceAdequacy.fulfillment_gives_chance_floor": {
+  "module": "ChanceAdequacy",
+  "category": "restates",
+  "reason": "restates Becoming.mass_mono twice (Bridge.fulfillment_floor_by_core); its own report carries propext and Quot.sound"
+ },
+ "ChanceAdequacy.positive_chance_can_miss_due_protection": {
+  "module": "ChanceAdequacy",
+  "category": "model-witness",
+  "reason": "a fact about the two-entry domain [false, true] with unit weights; its own report carries propext"
+ },
+ "ChanceAdequacy.repair_adds_positive_new_protection": {
+  "module": "ChanceAdequacy",
+  "category": "support",
+  "reason": "a sum over a listed domain rises strictly where an entry of positive weight is added to the event (the core's Becoming.mass_lt_of_added with the repair event, itself classified support); its own report carries propext and Quot.sound"
+ },
+ "ClassificationRobustJudgment.classification_can_matter_with_real_loss": {
+  "module": "ClassificationRobustJudgment",
+  "category": "model-witness",
+  "reason": "a fact about one constructed comparison model (Bool reorganization with one old and one new content); its own report carries propext and Quot.sound"
+ },
+ "ClassificationRobustJudgment.joint_enrichment_without_fixed_classification": {
+  "module": "ClassificationRobustJudgment",
+  "category": "model-witness",
+  "reason": "a fact about one constructed comparison model (RelationalGrounding's retained and released regimes); its own report is not empty"
+ },
+ "ClassificationRobustJudgment.no_route_undefeated_under_every_classification": {
+  "module": "ClassificationRobustJudgment",
+  "category": "model-witness",
+  "reason": "a fact about one constructed comparison model (three routes: absent, left, right); its own report is not empty"
+ },
+ "GenerativeComparison.both_appraisals_respect_all_extensions": {
+  "module": "GenerativeComparison",
+  "category": "model-witness",
+  "reason": "a fact about the two scores on the two-dimensional profile inventory; its own report carries propext and Quot.sound"
+ },
+ "GenerativeComparison.both_tradeoff_options_survive": {
+  "module": "GenerativeComparison",
+  "category": "model-witness",
+  "reason": "a fact about the two-dimensional profile inventory and its trade-off situation (four Boolean profiles), an example structure"
+ },
+ "GenerativeComparison.coherent_selection_survives_filter": {
+  "module": "GenerativeComparison",
+  "category": "restates",
+  "reason": "its law on the base is the deterministic case of Becoming.lift_coherent_selection_survives on every frame; survival is lifted survival on the situation's one-step frame (ExtensionFrames.survives_iff_lifted)"
+ },
+ "GenerativeComparison.comparison_supplies_situated_reason": {
+  "module": "GenerativeComparison",
+  "category": "restates",
+  "reason": "its law on the base is the deterministic case of Becoming.lifted_comparison_supplies_reason on every frame; the functional articulation is exactly the lifted one on the situation's one-step frame (Bridge.articulation_iff_lifted)"
+ },
+ "GenerativeComparison.continual_improvement_has_no_survivor": {
+  "module": "GenerativeComparison",
+  "category": "restates",
+  "reason": "its law on the base is the deterministic case of Becoming.lift_continual_improvement_has_no_survivor on every frame; survival is lifted survival on the situation's one-step frame (ExtensionFrames.survives_iff_lifted)"
+ },
+ "GenerativeComparison.each_appraisal_has_a_different_coherent_selection": {
+  "module": "GenerativeComparison",
+  "category": "model-witness",
+  "reason": "a fact about the trade-off situation of the profile example; its own report carries propext"
+ },
+ "GenerativeComparison.generative_extension_transitive": {
+  "module": "GenerativeComparison",
+  "category": "restates",
+  "reason": "restates Becoming.Extension.trans (Metaethics), the inventory of a frame's generative extension being the source's (Bridge.extension_iff)"
+ },
+ "GenerativeComparison.tradeoff_has_opposite_strict_appraisals": {
+  "module": "GenerativeComparison",
+  "category": "model-witness",
+  "reason": "a fact about the two scores on the profile example; its own report carries propext"
+ },
+ "GenerativeLossComparison.a_good_anchor_does_not_license_more_loss": {
+  "module": "GenerativeLossComparison",
+  "category": "model-witness",
+  "reason": "a fact about the constructed Route family (finish or repair after n steps of interruption with an illustrative cutoff or lexicographic order); the routes are labels, not runs of a process, and the source marks them as controls of weaker rules"
+ },
+ "GenerativeLossComparison.compatible_cutoffs_disagree": {
+  "module": "GenerativeLossComparison",
+  "category": "model-witness",
+  "reason": "a fact about the constructed Route family (finish or repair after n steps of interruption with an illustrative cutoff or lexicographic order); the routes are labels, not runs of a process, and the source marks them as controls of weaker rules"
+ },
+ "GenerativeLossComparison.continuation_first_accepts_every_finite_loss": {
+  "module": "GenerativeLossComparison",
+  "category": "model-witness",
+  "reason": "a fact about the constructed Route family (finish or repair after n steps of interruption with an illustrative cutoff or lexicographic order); the routes are labels, not runs of a process, and the source marks them as controls of weaker rules"
+ },
+ "GenerativeLossComparison.continuation_first_still_prefers_shorter": {
+  "module": "GenerativeLossComparison",
+  "category": "model-witness",
+  "reason": "a fact about the constructed Route family (finish or repair after n steps of interruption with an illustrative cutoff or lexicographic order); the routes are labels, not runs of a process, and the source marks them as controls of weaker rules"
+ },
+ "GenerativeLossComparison.continuation_first_transitive": {
+  "module": "GenerativeLossComparison",
+  "category": "model-witness",
+  "reason": "a fact about the constructed Route family (finish or repair after n steps of interruption with an illustrative cutoff or lexicographic order); the routes are labels, not runs of a process, and the source marks them as controls of weaker rules; its own report carries propext and Quot.sound"
+ },
+ "GenerativeLossComparison.cutoff_transitive": {
+  "module": "GenerativeLossComparison",
+  "category": "model-witness",
+  "reason": "a fact about the constructed Route family (finish or repair after n steps of interruption with an illustrative cutoff or lexicographic order); the routes are labels, not runs of a process, and the source marks them as controls of weaker rules; its own report carries propext and Quot.sound"
+ },
+ "GenerativeLossComparison.faithful_redescription_preserves_strict": {
+  "module": "GenerativeLossComparison",
+  "category": "general-structure",
+  "reason": "the strict part of any relation is carried by any map faithful to it; a comparison read through a map of configurations is faithful by definition, so a base reading adds only the type"
+ },
+ "GenerativeLossComparison.loss_sensitivity_alone_supplies_no_cutoff": {
+  "module": "GenerativeLossComparison",
+  "category": "model-witness",
+  "reason": "a fact about the constructed Route family (finish or repair after n steps of interruption with an illustrative cutoff or lexicographic order); the routes are labels, not runs of a process, and the source marks them as controls of weaker rules; its own report carries propext and Quot.sound"
+ },
+ "GenerativeLossComparison.shorter_interruption_no_worse": {
+  "module": "GenerativeLossComparison",
+  "category": "model-witness",
+  "reason": "a fact about the constructed Route family (finish or repair after n steps of interruption with an illustrative cutoff or lexicographic order); the routes are labels, not runs of a process, and the source marks them as controls of weaker rules"
+ },
+ "InquiryRoot.JointInterpretation.separate_basis_rows_fit": {
+  "module": "JointInterpretation",
+  "category": "model-witness",
+  "reason": "a fact about the control basis incompatibleRows on Bool; the source marks it an inference control, not two worlds"
+ },
+ "InquiryRoot.JointInterpretation.separate_rows_do_not_cover_full_closure": {
+  "module": "JointInterpretation",
+  "category": "model-witness",
+  "reason": "a fact about the control basis incompatibleRows on Bool; the source marks it an inference control, not two worlds"
+ },
+ "PositionedPositiveReason.endorsement_independence_is_supplied_by_articulation": {
+  "module": "PositionedPositiveReason",
+  "category": "model-witness",
+  "reason": "a fact about the constructed positions (substrate, endorsement, access) and the formation model of PositiveGroundUncertainty; an example structure"
+ },
+ "PositionedPositiveReason.endorsement_without_access_gets_no_route_reason": {
+  "module": "PositionedPositiveReason",
+  "category": "model-witness",
+  "reason": "a fact about the constructed positions (substrate, endorsement, access) and the formation model of PositiveGroundUncertainty; an example structure"
+ },
+ "PositionedPositiveReason.nonendorsing_position_with_access_has_reason": {
+  "module": "PositionedPositiveReason",
+  "category": "model-witness",
+  "reason": "a fact about the constructed positions (substrate, endorsement, access) and the formation model of PositiveGroundUncertainty; an example structure"
+ },
+ "PositionedPositiveReason.route_reason_depends_only_on_access": {
+  "module": "PositionedPositiveReason",
+  "category": "periphery-scope",
+  "reason": "positions alike in access are alike in the route reason, for any access relation, admitted continuations and positive relevance; positions and access are the periphery's interface and the law holds whatever the admitted continuations are, so a scope read off a process plays no role; the core concept is D, Becoming.PositionedArticulation (Bridge.positionedArticulation_iff)"
+ },
+ "PositiveGroundUncertainty.acquired_evidence_secures_good_and_leaves_both_opennesses": {
+  "module": "PositiveGroundUncertainty",
+  "category": "model-witness",
+  "reason": "a fact about the constructed arrangement (one response, three formation models, two branches, a signed occurrence integral); an example structure, not a run of a process; its own report carries propext"
+ },
+ "PositiveGroundUncertainty.positive_integral_and_adverse_full_change": {
+  "module": "PositiveGroundUncertainty",
+  "category": "model-witness",
+  "reason": "a fact about the constructed arrangement (one response, three formation models, two branches, a signed occurrence integral); an example structure, not a run of a process; its own report carries propext"
+ },
+ "PositiveGroundUncertainty.positive_occurrence_has_actual_generative_correspondence": {
+  "module": "PositiveGroundUncertainty",
+  "category": "model-witness",
+  "reason": "a fact about the constructed arrangement (one response, three formation models, two branches, a signed occurrence integral); an example structure, not a run of a process; its own report carries propext"
+ },
+ "PositiveGroundUncertainty.response_preserves_joint_openness_and_query_access": {
+  "module": "PositiveGroundUncertainty",
+  "category": "model-witness",
+  "reason": "a fact about the constructed arrangement (one response, three formation models, two branches, a signed occurrence integral); an example structure, not a run of a process; its own report carries propext"
+ },
+ "PositiveGroundUncertainty.same_response_secures_generation_without_fixed_form": {
+  "module": "PositiveGroundUncertainty",
+  "category": "model-witness",
+  "reason": "a fact about the constructed arrangement (one response, three formation models, two branches, a signed occurrence integral); an example structure, not a run of a process; its own report carries propext"
+ },
+ "PositiveGroundUncertainty.wider_scope_can_require_certificate_retraction": {
+  "module": "PositiveGroundUncertainty",
+  "category": "model-witness",
+  "reason": "a fact about the constructed arrangement (one response, three formation models, two branches, a signed occurrence integral); an example structure, not a run of a process; its own report carries propext"
+ },
+ "ProtectionPriorityRival.bounded_score_represents_priority": {
+  "module": "ProtectionPriorityRival",
+  "category": "model-witness",
+  "reason": "a fact about the one constructed situation of protection and counted gains (options indexed by Nat, no moves); the bridge reads its options as a frame with no moves (Frame.ofInventory) and derives every_nat_score_trades from Comparison.outgrows; its own report is not empty"
+ },
+ "ProtectionPriorityRival.comparison_does_not_yield_priority": {
+  "module": "ProtectionPriorityRival",
+  "category": "model-witness",
+  "reason": "a fact about the one constructed situation of protection and counted gains (options indexed by Nat, no moves); the bridge reads its options as a frame with no moves (Frame.ofInventory) and derives every_nat_score_trades from Comparison.outgrows; its own report is not empty"
+ },
+ "ProtectionPriorityRival.g0_leaves_ordering_open": {
+  "module": "ProtectionPriorityRival",
+  "category": "model-witness",
+  "reason": "a fact about the one constructed situation of protection and counted gains (options indexed by Nat, no moves); the bridge reads its options as a frame with no moves (Frame.ofInventory) and derives every_nat_score_trades from Comparison.outgrows; its own report is not empty"
+ },
+ "ProtectionPriorityRival.g0_recognizes_traded_gains": {
+  "module": "ProtectionPriorityRival",
+  "category": "model-witness",
+  "reason": "a fact about the one constructed situation of protection and counted gains (options indexed by Nat, no moves); the bridge reads its options as a frame with no moves (Frame.ofInventory) and derives every_nat_score_trades from Comparison.outgrows"
+ },
+ "ProtectionPriorityRival.no_nat_score_represents_priority": {
+  "module": "ProtectionPriorityRival",
+  "category": "model-witness",
+  "reason": "a fact about the one constructed situation of protection and counted gains (options indexed by Nat, no moves); the bridge reads its options as a frame with no moves (Frame.ofInventory) and derives every_nat_score_trades from Comparison.outgrows; its own report is not empty"
+ },
+ "ProtectionPriorityRival.ratio_bounded": {
+  "module": "ProtectionPriorityRival",
+  "category": "support",
+  "reason": "num k ≤ den k for the bounded score's numerator and denominator: natural-number arithmetic; its own report carries propext and Quot.sound"
+ },
+ "ProtectionPriorityRival.weighted_trades": {
+  "module": "ProtectionPriorityRival",
+  "category": "model-witness",
+  "reason": "a fact about the one constructed situation of protection and counted gains (options indexed by Nat, no moves); the bridge reads its options as a frame with no moves (Frame.ofInventory) and derives every_nat_score_trades from Comparison.outgrows; its own report is not empty"
+ }
+}

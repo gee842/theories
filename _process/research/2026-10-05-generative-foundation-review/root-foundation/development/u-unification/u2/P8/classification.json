@@ -1,0 +1,37 @@
+{
+  "RelationalRenewal.renewing_keeps_support": {
+    "module": "RelationalRenewal",
+    "category": "restates",
+    "reason": "It restates the core's Becoming.Web.renewing_keeps_support on the static web of the unfolding (Web.static_renewingIn, Web.static_supported are Iff.rfl readings), so a join would repeat a theorem already on the base."
+  },
+  "InquiryRoot.extra_claim_not_necessary": {
+    "module": "GenerativeClosure",
+    "category": "model-witness",
+    "reason": "A fact about one constructed two-point countermodel on Bool with an inquiry admitting every point; it has no run, process or world in it, and the general law it instances is joined on the core's Scope (DerivationScopeProcesses.countermodel_on_scope)."
+  },
+  "InquiryRoot.extra_claim_not_closed_derivable": {
+    "module": "GenerativeClosure",
+    "category": "model-witness",
+    "reason": "The same Bool countermodel shows one specific claim is not in the closure of a trivial basis; the law it instances, that a countermodel in the scope excludes derivation, is joined as DerivationScopeProcesses.countermodel_on_scope."
+  },
+  "InquiryRoot.one_local_premise_becomes_an_implication": {
+    "module": "GenerativeClosure",
+    "category": "model-witness",
+    "reason": "A single derivation tree over the Bool countermodel (implication introduction discharging one premise); no run or world reads it, and relative derivation over a scope is joined as DerivationScopeProcesses.relative_on_scope."
+  },
+  "RelationalGrounding.strict_comparison_cannot_factor_through_marginals": {
+    "module": "RelationalGrounding",
+    "category": "restates",
+    "reason": "Its statement is exactly Becoming.strict_comparison_through_marginals_by_core in Becoming.Bridge, proved there through the core's Comparison.separates on Frame.ofInventory."
+  },
+  "Generative.Deeper.identity_bool_bijection": {
+    "module": "DynamicSymmetry",
+    "category": "support",
+    "reason": "That the identity on Bool is injective and surjective: a prelude-level fact about Bool maps; the symmetry results that use the renaming class on processes are already on the base."
+  },
+  "Generative.Deeper.negation_bool_bijection": {
+    "module": "DynamicSymmetry",
+    "category": "support",
+    "reason": "That negation on Bool is injective and surjective: a prelude-level fact about Bool maps; the renaming invariance of the static and toggle processes is already on the base."
+  }
+}

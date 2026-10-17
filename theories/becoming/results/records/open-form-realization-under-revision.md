@@ -80,6 +80,7 @@ A conditional composition with substantive counterexamples, not a universal prod
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.Run.novel_by_handoff`, `Becoming.Run.relevance_by_handoff_of_unrestricted`, `Becoming.positive_ground_by_bound_of_unrestricted`, `Becoming.revised_generation_by_bound_of_unrestricted` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -97,4 +98,5 @@ Aliases: `OpenFutureRevision.handed_off_progress`, `OpenFutureRevision.generatio
 - 13 October 2026, P89: four shared adapters close the previously audit-only connection; completed generic goal-revision work is removed from next steps. The result identity, original theorems, counterexamples, historical receipts and correspondence limits remain.
 - 14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Bridge only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope). This record's claim, premises and status are unchanged; no reproof is credited.
 - 17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance); P-numbers removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 10 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](open-form-realization-under-revision.json).

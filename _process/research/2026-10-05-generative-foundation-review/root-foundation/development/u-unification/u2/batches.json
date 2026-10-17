@@ -1,0 +1,72 @@
+{
+ "P1": [
+  "CorrectionInfrastructure",
+  "FaultTolerantCorrection",
+  "EffectiveCommand"
+ ],
+ "P2": [
+  "CorrectionReconfiguration",
+  "EvidenceQualifiedCorrection",
+  "FallibleInspection",
+  "AcquiredCorrection"
+ ],
+ "P3": [
+  "CompositionalFormation",
+  "CompositionalAcquisition",
+  "CompositionalTransmission"
+ ],
+ "P4": [
+  "OrganizationalRuleInheritance",
+  "OperativeCoherence",
+  "RelationalOrganization",
+  "SystemsOrganization"
+ ],
+ "P5": [
+  "AcquiredSegmentation",
+  "KnowledgeCorrespondence",
+  "RelationalReduction",
+  "ExplanatoryLocalUnits",
+  "ExplanatoryUniqueness",
+  "ExplanatoryUniversality",
+  "ExplanatoryContextualStructure",
+  "ExplanatoryFootprints",
+  "ExplanatoryJoiningContexts",
+  "ExplanatoryJoiningRefinement"
+ ],
+ "P6": [
+  "StandardsBridge",
+  "PracticalJudgment",
+  "PracticalReach",
+  "WholeGroundCoverage",
+  "EvaluatorGrounding",
+  "CutCoverageAudit"
+ ],
+ "P7": [
+  "GenerativeLossComparison",
+  "GenerativeComparison",
+  "PositiveGroundUncertainty",
+  "ProtectionPriorityRival",
+  "AlignmentDirection",
+  "AlignmentInquiry",
+  "ClassificationRobustJudgment",
+  "PositionedPositiveReason",
+  "ChanceAdequacy",
+  "ConcernExtension",
+  "JointInterpretation",
+  "JointContinuationClassification"
+ ],
+ "P8": [
+  "ContinuationRenewal",
+  "RelationalRenewal",
+  "GenerativeClosure",
+  "OpenFutureRevision",
+  "RenewalRecovery",
+  "ContinuationConditions",
+  "RenewalComparison",
+  "BecomingCompatibility",
+  "RelationalGrounding",
+  "DynamicSymmetry",
+  "InquirySufficiency",
+  "RelationalBecoming"
+ ]
+}

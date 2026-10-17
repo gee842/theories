@@ -345,7 +345,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
       "role": "proof",
-      "sha256": "8e9dfee3ce3a9f5560ab42feed6d87380738550c578f38d36e7114ff432b8609",
+      "sha256": "f4ec2cf88bc4f269a9cea236789b5b4eb17b11afe36079acaf15734a1157ab22",
       "declarations": [
         "Becoming.Flow.FedBy",
         "Becoming.Clearing.own",
@@ -402,6 +402,12 @@
       "role": "receipt",
       "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -414,7 +420,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Standpoints",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -672,6 +678,9 @@
     },
     {
       "en": "17 October 2026, wording of the public fields: outdated labels (G0, S0, N_std) replaced by the current vocabulary (living significance, self-significance, standpoint neutrality); “given by Ren's answer” replaced by marking the level of harm as a reading, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Standpoints.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

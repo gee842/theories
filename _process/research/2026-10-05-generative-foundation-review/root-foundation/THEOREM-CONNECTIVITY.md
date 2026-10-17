@@ -155,3 +155,34 @@ The extended-base and "before" columns are not written to the JSON: the script's
 - **Components.** 60, with 2 theorems outside the main one (65 and 11 before).
 - **The families** still do not reach each other by definition; they meet by exact correspondence.
 - Study: [section 166](BECOMING-RENEWAL-READING.md#166-every-spine-theorem-on-the-base-u); how the joins were made: [development/u-unification](development/u-unification/README.md).
+
+## 9. U2: the periphery measured and joined
+
+17 October 2026. This is the integrator's run on the landing tree of board item U2 (core receipt 20261017T113233.209872Z). The [JSON](THEOREM-CONNECTIVITY.json) holds this run.
+
+The script changed in three ways:
+- It now measures the periphery of the run as well as the spine: the foundation, the 75 inherited modules and, since U2, the periphery-join modules. The results are reported under `periphery`, with the same classes.
+- Periphery roots are held to the same register and `--check`.
+- Records are matched against periphery theorems as well.
+
+The dump imports the bridge's new join modules, and the periphery-join modules are added to the dump at run time.
+
+| Class | Spine before U2 (3ed09e437) | Spine after U2 | Periphery after U2 |
+|---|---:|---:|---:|
+| Statement on both families | 152 | 156 | 0 |
+| Statement on Process/Frame/Run/Trace | 1,658 | 1,919 | 586 |
+| Statement on World/Flow/Web | 2,807 | 2,823 | 3 |
+| Proof through a family | 127 | 127 | 0 |
+| Used by a theorem on the base | 2,759 | 2,802 | 701 |
+| Apart: own vocabulary | 187 | 173 | 227 |
+| Apart: prelude-only statement | 8 | 7 | 2 |
+| **Apart, total** | **195** | **180** | **229** |
+| **Theorems** | **7,698** | **8,007** | **1,519** |
+
+- **Periphery before U2.** The 78 inherited modules had 1,282 theorems, 814 of them apart and 524 of those roots ([periphery-before.json](development/u-unification/u2/periphery-before.json); the docstring and proof folds of U2 had already been applied).
+- **Periphery after U2.** 104 modules (78 inherited, 26 periphery joins) with 1,519 theorems. None of the 237 periphery-join theorems is apart. 171 roots remain, each classified: model witness 112, periphery scope 26, support 15, restates 10, general structure 7, bridge interface 1.
+- **Spine roots.** 122, each classified: model witness 40, support 36, bridge interface 19, logical strength 13, restates 8, general structure 6.
+- **Records.** `positioned-positive-reason` rests only on periphery theorems that are apart and classified. No spine record does.
+- **Components.** 56, with 2 spine theorems outside the main one.
+- **Not measured.** The Mathlib leaves (`CorrectionInquiry`, `LearningCorrespondence`) are outside the run.
+- **Study.** [Section 167](BECOMING-RENEWAL-READING.md#167-the-unification-follow-through-u2).

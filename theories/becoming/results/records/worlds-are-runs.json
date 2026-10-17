@@ -89,8 +89,16 @@
       ]
     },
     {
-      "en": "One course, one kind or two roles: a law of exchange over one kind of relatum generates one course read as a world over its relata and as a world of formations and conditions as roles of one relatum; the two stand at the same levels and exchange alike, balance together under a law of what has stood, and, where the course is feasible, give one run of exchange.",
+      "en": "One course, two readings: a law of exchange generates one course, its flow and its web at the generated levels (ExchangeLaw.courseWeb), and over one kind of relatum the one-kind world (World.ofKind) and the two-role world, formations and conditions as roles of one relatum (World.ofRoles), are by definition readings of that one flow and web (world_eq, courseWorld_eq). For every flow and web of one kind, the two-role world's conditions stand where the relata stand, its formations take and give what the relata take and give, and the two balance together with no premise; so for every course, and where the course is feasible they give one run of exchange.",
       "declarations": [
+        "Becoming.World.ofKind",
+        "Becoming.ExchangeLaw.courseWeb",
+        "Becoming.CourseRoles.world_eq",
+        "Becoming.CourseRoles.courseWorld_eq",
+        "Becoming.World.roles_level",
+        "Becoming.World.roles_take",
+        "Becoming.World.roles_give",
+        "Becoming.World.kind_balanced_iff_roles",
         "Becoming.CourseRoles.level_eq",
         "Becoming.CourseRoles.take_eq",
         "Becoming.CourseRoles.give_eq",
@@ -125,10 +133,10 @@
       "witness": "Becoming.World.balanced_iff_run"
     },
     {
-      "zh": "一类关系项的进程世界与两种角色的进程世界有何不同：没有不同；二者位于同一水平、交换相同、一同平衡、给出同一个交换的运行（Becoming.CourseRoles），两种角色的世界中形成与条件是同一关系项的角色。",
-      "en": "How the course world of one kind of relatum and the course world of two roles differ: they do not; they stand at the same levels, exchange alike, balance together and give one run of exchange (Becoming.CourseRoles), with the two-role world's formations and conditions as roles of one relatum.",
+      "zh": "两个进程世界是同一个项：其关系项不同（R 与 R ⊕ R），所以它们是同一流与同一网（只定义一次，ExchangeLaw.courseWeb）的两种读法；二者位于同一水平、交换相同、不用前提而一同平衡、给出同一个交换的运行（Becoming.CourseRoles）。",
+      "en": "That the two course worlds are one term: their relata differ (R and R ⊕ R), so they are two readings of one flow and one web, defined once (ExchangeLaw.courseWeb); they stand at the same levels, exchange alike, balance together with no premise and give one run of exchange (Becoming.CourseRoles).",
       "kind": "scope",
-      "witness": "Becoming.CourseRoles.balanced_iff"
+      "witness": "Becoming.CourseRoles.courseWorld_eq"
     },
     {
       "zh": "对应超出展开定义：世界与运行的多数对应定理由 rfl 或 Iff.rfl 成立；所检查的内容在平衡与运行存在的等价、路线世界与生成的运行、携带世界的平衡。",
@@ -323,7 +331,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean",
       "role": "proof",
-      "sha256": "4181603bbf1465744321e4d7ff19d76d12eaa6210117995c03e6c3ce82eb34d9",
+      "sha256": "f4272f9a8c26ac02592554fcf4acc9bd7bba73a0b52d8f4dd1ba4ff6f505757e",
       "declarations": [
         "Becoming.WebAt",
         "Becoming.WebAt.dependence",
@@ -365,7 +373,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "8e21aef16d807547998fb722e48baa4c50978998c093cabdcffb090a5722b8b1",
+      "sha256": "2fcfb43cadcf6c106cdcf0d2afd57ac0d4143d6c3d8cab9b5dbed1685f996a31",
       "declarations": [
         "Becoming.Shown",
         "Becoming.Shown.run",
@@ -388,7 +396,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
       "role": "proof",
-      "sha256": "a6b94224417ffa836b807fdd15d325e58ea4768370b27f6cd6498fd10f4907d4",
+      "sha256": "01ced43ce5bb9f1753bda0c7a203c4682dcb3b10314d3b5a284cc911fea10fda",
       "declarations": [
         "Becoming.Contextual.world",
         "Becoming.World.unity"
@@ -397,7 +405,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "df765a9bc5e9d68f59f50d2c3dec144e449b0357927ce59a2a9224ac6ca31316",
+      "sha256": "5a6e9db3e053f174c6abc0bc6453da09af983debc5aaa46d8f405e887587add6",
       "declarations": [
         "Becoming.ExchangeLaw.course",
         "Becoming.ExchangeLaw.levels",
@@ -407,16 +415,18 @@
         "Becoming.ExchangeLaw.next",
         "Becoming.ExchangeLaw.history",
         "Becoming.ExchangeLaw.history_orbit",
-        "Becoming.ExchangeLaw.world"
+        "Becoming.ExchangeLaw.world",
+        "Becoming.ExchangeLaw.courseWeb"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "0acf50c8d6fe6c28fef710e15f5b4138b259c3d67520df545cdd7a1b21987e26",
+      "sha256": "37f2cd1a36334292f9e74b79a0fb5269fc032f700f1a62feb92c135a0fba905c",
       "declarations": [
         "Becoming.World.ofRoles",
-        "Becoming.World.Balanced"
+        "Becoming.World.Balanced",
+        "Becoming.World.ofKind"
       ]
     },
     {
@@ -430,7 +440,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "1f3181991b427b257a1beed82429abcf5a21c8806191b3db1af292116fe44f73",
+      "sha256": "de6c38b8fd6ea40886ba7bfd15a563cac716dab8783bc1d9a8a8b39baa92dcb1",
       "declarations": [
         "Becoming.ExchangeLaw.carrying",
         "Becoming.carried",
@@ -441,7 +451,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "f413abfc9ad9c3164c4c9764b2f6336bab6c5146d2976920ba4301d20a27ebfb",
+      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9",
       "declarations": [
         "Becoming.Law.run",
         "Becoming.Law.process"
@@ -450,7 +460,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "role": "proof",
-      "sha256": "875dff1ff8f7a09d28a3c2baf6e3a82804fbcf8818b84d4c901272dfaec84d58",
+      "sha256": "a1fb134192dc2900e63bad805132ec75757b0fe2b722e18091da49eed0cd7c12",
       "declarations": [
         "Becoming.Branching.law_run_state"
       ]
@@ -479,8 +489,14 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseRoles.lean",
       "role": "proof",
-      "sha256": "31074828164f928f3b73125bc48b5fa4515abbf05858210495eae780fc53ad6f",
+      "sha256": "c6af4efe283bd3dd89c7eff411099af413152de62fe2c6c8267ca89348ef1fa0",
       "declarations": [
+        "Becoming.World.roles_level",
+        "Becoming.World.roles_take",
+        "Becoming.World.roles_give",
+        "Becoming.World.kind_balanced_iff_roles",
+        "Becoming.CourseRoles.world_eq",
+        "Becoming.CourseRoles.courseWorld_eq",
         "Becoming.CourseRoles.level_eq",
         "Becoming.CourseRoles.take_eq",
         "Becoming.CourseRoles.give_eq",
@@ -493,19 +509,25 @@
       "role": "receipt",
       "sha256": "b03dcb1751889412dc2f7bd1ec6310e9e226475f42af629c6001bb15f8859879",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Runs",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -519,21 +541,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readings",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -547,28 +569,28 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Branching",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseRoles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.CourseRoles",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -591,6 +613,12 @@
     },
     {
       "en": "17 October 2026, U (every spine theorem on the base): an application, not a new result. Becoming.CourseRoles joins the course world of one kind of relatum to that of two roles, which this record named as open; the scope item is answered and the next step drops it. One law with its 5 declarations added. Bound to core receipt 20261017T071851.986246Z; study section 166. Claim and status unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): the two course worlds are now defined from one flow and one web, the course's web at the generated levels defined once (ExchangeLaw.courseWeb), with the one-kind world as World.ofKind and the two-role world as World.ofRoles of them (world_eq, courseWorld_eq, by rfl). The agreement is stated for every flow and web of one kind (World.roles_level, roles_take, roles_give, kind_balanced_iff_roles), and balanced_iff no longer assumes a law of what has stood (a strengthening). The scope item now says why the two stay two readings: their relata differ. Law 7 and its declarations rewritten (earlier text in git history). Claim and status unchanged."
+    },
+    {
+      "en": "17 October 2026, U2, rebinding: Branching.lean, Propagation.lean, Readings.lean, Unfolding.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Counterfactual.lean, ExchangeLaw.courseWeb is added and ExchangeLaw.world is now World.ofKind of the course's flow and that web, definitionally the same; in CourseRoles.lean, the agreement is stated for every flow and web of one kind, with world_eq and courseWorld_eq, and balanced_iff no longer assumes a law of what has stood; in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof; in Runs.lean, courseWorld is now World.ofRoles of the course's flow and ExchangeLaw.courseWeb, definitionally the same; in Space.lean, World.ofKind is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
     }
   ],
   "text_versions": [

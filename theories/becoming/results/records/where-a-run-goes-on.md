@@ -94,6 +94,7 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
 | provenance | [2026-10-11-zero-premise-laws.md](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 
 Aliases: `where a run goes on`, `运行在何处延续`, `a run is a course into a return`, `运行是通向返回的路径`, `keeps moving`, `保持运动`, `run without a selection`, `不用选取时的运行`, `dependent choice`, `依赖选择`, `searched run`, `搜索的运行`
 
@@ -104,6 +105,7 @@ Aliases: `where a run goes on`, `运行在何处延续`, `a run is a course into
 - 16 October 2026, eighteenth review (R18): law 0's Chinese lacked its verb (有), and the review proposed “each course is had from its start” (item 38, P9). Checked against the Lean: reach_of_run gives Reach P (r.state 0) (r.state n), each configuration of the run reached from the run's start, so the original Chinese second half was right and the review's reading of it is not taken; the ambiguous English “each is had from its start” now reads “each configuration of the run is reached from its start”, and the Chinese gains its verb. The correspondence names König 1927 (item 39, K5). Claim unchanged.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
 - 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Branching.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-a-run-goes-on.json).
 
 <a id="earlier-text--早期文本"></a>

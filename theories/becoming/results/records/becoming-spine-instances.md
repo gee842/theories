@@ -91,6 +91,7 @@ Adds no normative content: bridges transport theorems without proving their prem
 | provenance | [2026-10-09-pure-core.md](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -115,4 +116,5 @@ Aliases: `Becoming.reached_iff_closure`, `Becoming.cutReach_iff_closure`, `Becom
 - 14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Bridge only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the unification plan only adds the 14 October 2026 rename table after the P36 table in section 10. This record's claim, premises and status are unchanged; no reproof is credited.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, wording of the public fields: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments, named by content); the P-number P89 removed, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean, Metaethics.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 86 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](becoming-spine-instances.json).

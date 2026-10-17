@@ -101,6 +101,7 @@ Ren's proposal says “all above does not require any axiom” and that the one 
 | review | [CONTINUATION-GROUNDING-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 
 Aliases: `Becoming.Downstream.one_way`, `Becoming.Mortal.after_its_end`, `Becoming.Mortal.without_continues`, `Becoming.Clearing.undermines_within_renewal`, `Becoming.Flow.FedBy`, `Becoming.Clearing.fedBy_source`, `Becoming.Clearing.clearer_not_living`, `Becoming.Clearing.center_not_derived`
 
@@ -118,6 +119,7 @@ Aliases: `Becoming.Downstream.one_way`, `Becoming.Mortal.after_its_end`, `Becomi
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Standpoints.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
 - 17 October 2026, wording of the public fields: outdated labels (G0, S0, N_std) replaced by the current vocabulary (living significance, self-significance, standpoint neutrality); “given by Ren's answer” replaced by marking the level of harm as a reading, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Standpoints.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 51 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derived-extent-limits.json).
 
 <a id="earlier-text--早期文本"></a>

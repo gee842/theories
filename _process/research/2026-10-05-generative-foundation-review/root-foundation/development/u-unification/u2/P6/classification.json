@@ -1,0 +1,137 @@
+{
+ "Generative.StandardsBridge.answer_maximal": {
+  "module": "StandardsBridge",
+  "category": "periphery-scope",
+  "reason": "a property of the answer procedure on any candidate list (no safe answer asserts more); the bridge reads the list's narrowing as After on the pure observation process (Becoming.RuleNarrowingProcesses), but maximality concerns the answer interface over the list, not the narrowing; its axiom report is also not empty"
+ },
+ "Generative.StandardsBridge.unique_maximal_safe": {
+  "module": "StandardsBridge",
+  "category": "periphery-scope",
+  "reason": "uniqueness of the maximal safe answer function over any candidate list (funext); an answer-interface fact with no process in it, the narrowing reading of Becoming.RuleNarrowingProcesses playing no role"
+ },
+ "Generative.StandardsBridge.answer_transport": {
+  "module": "StandardsBridge",
+  "category": "periphery-scope",
+  "reason": "answers commute with decoding of a candidate list; no observation or narrowing occurs, so the pure observation process has no role; its learning counterpart learning_transport is joined (RuleNarrowingProcessesInherited.narrowing_transport)"
+ },
+ "Generative.StandardsBridge.before_acquisition_abstains": {
+  "module": "StandardsBridge",
+  "category": "model-witness",
+  "reason": "the four-rule repertoire answers nothing at true before any observation; with no observation the narrowed belief is the repertoire itself, so the observation process plays no role"
+ },
+ "Generative.StandardsBridge.wrong_reencoding_breaks_transfer": {
+  "module": "StandardsBridge",
+  "category": "model-witness",
+  "reason": "a decide fact comparing answers of two one-rule lists under a wrong decoding; no observation or narrowing occurs"
+ },
+ "Generative.StandardsBridge.insufficient_support_retains_ambiguity": {
+  "module": "StandardsBridge",
+  "category": "restates",
+  "reason": "restates the second conjunct of one_sample_leaves_other_case_unsettled (oneSample is acquire id 1 [true, false] by definition), joined as RuleNarrowingProcesses.one_sample_settles_one"
+ },
+ "PracticalJudgment.robust_under_refinement": {
+  "module": "PracticalJudgment",
+  "category": "restates",
+  "reason": "Robust is CommonResponse (Bridge.commonResponse_is_robust, robust_iff_commonResponse), and the law is Becoming.Inquiry's commonResponse_antitone"
+ },
+ "PracticalJudgment.required_performed": {
+  "module": "PracticalJudgment",
+  "category": "periphery-scope",
+  "reason": "a law of the requirement interface (a nonempty admissible set all meeting a task) on any options; the bridge reads admissible sets as frontiers of a menu (Judgment.frontier_iff_undominated, Judgment.required_of_bettered), which have no process or run"
+ },
+ "PracticalJudgment.impossible_menu_no_duty": {
+  "module": "PracticalJudgment",
+  "category": "periphery-scope",
+  "reason": "a law of the requirement interface on any options: an empty admissible set requires nothing; no process reading; core concept as for required_performed (Judgment.required_of_bettered)"
+ },
+ "PracticalJudgment.necessary_means_required": {
+  "module": "PracticalJudgment",
+  "category": "periphery-scope",
+  "reason": "a law of the requirement interface on any options (a task implied on the admissible set is required); no process reading; core concept as for required_performed"
+ },
+ "PracticalJudgment.unique_responder_required": {
+  "module": "PracticalJudgment",
+  "category": "periphery-scope",
+  "reason": "a law of an allocation interface from participants and tasks to actions; no core concept, and no reading as a process, run or world"
+ },
+ "PracticalJudgment.assignment_respects_capacity": {
+  "module": "PracticalJudgment",
+  "category": "periphery-scope",
+  "reason": "an allocation-interface implication (feasible allocations respect a supplied capability predicate); no core concept"
+ },
+ "PracticalJudgment.settlement_removes_residual": {
+  "module": "PracticalJudgment",
+  "category": "periphery-scope",
+  "reason": "a law of the due/done/released interface on any index type; no core concept, and no process reading"
+ },
+ "PracticalJudgment.unfulfilled_unreleased_remains": {
+  "module": "PracticalJudgment",
+  "category": "periphery-scope",
+  "reason": "the definition of a residual of the due/done/released interface, on any index type; no core concept"
+ },
+ "PracticalJudgment.mixed_repair_anchor": {
+  "module": "PracticalJudgment",
+  "category": "model-witness",
+  "reason": "a protection-first comparison of two Boolean options; the bridge's judged frame (Judgment.frame, better_iff_betterAt) has no moves, so stating it there only fixes the type"
+ },
+ "PracticalJudgment.repair_retains_real_loss": {
+  "module": "PracticalJudgment",
+  "category": "model-witness",
+  "reason": "a fact about the event predicate of the two-option repair model; no process or run"
+ },
+ "PracticalJudgment.supplied_ceiling_bounds_optional_gain": {
+  "module": "PracticalJudgment",
+  "category": "model-witness",
+  "reason": "a protection-first comparison of two options in Nat x Nat under a supplied ceiling; the judged frame has no moves, so no base object carries it (also propext from simp)"
+ },
+ "PracticalJudgment.collective_duty_without_individual_duty": {
+  "module": "PracticalJudgment",
+  "category": "model-witness",
+  "reason": "the requirement interface on two Boolean participants (a disjunctive task required, neither disjunct); no process reading (also propext from simp)"
+ },
+ "PracticalJudgment.independent_choices_not_joint_capacity": {
+  "module": "PracticalJudgment",
+  "category": "support",
+  "reason": "an arithmetic fact about 1 and 1 + 1 proved by omega (propext, Classical.choice, Quot.sound)"
+ },
+ "PracticalJudgment.uncertain_worlds_need_common_plan": {
+  "module": "PracticalJudgment",
+  "category": "support",
+  "reason": "a prelude fact about Bool: each value has a match but no value matches both"
+ },
+ "WholeGroundCoverage.alternating_domains_cover": {
+  "module": "WholeGroundCoverage",
+  "category": "model-witness",
+  "reason": "every place of the alternating atlas lies in some scope's domain; the atlas's process (SeedReachProcesses.atlasProcess) does not record domains, and the atlas's reach laws are joined as alternating_beyond_scopes"
+ },
+ "EvaluatorGrounding.strict_indexed_rival_inconsistent": {
+  "module": "EvaluatorGrounding",
+  "category": "periphery-scope",
+  "reason": "a law of the standpoint interface (S0, monotonicity, significance only for own occurrences) with no step relation; the bridge identifies the standpoint's second step with N_rel on profileValuation, but this root uses no steps; the core concept is Valuation (Becoming.Standpoints)"
+ },
+ "EvaluatorGrounding.formed_other_has_significance": {
+  "module": "EvaluatorGrounding",
+  "category": "model-witness",
+  "reason": "the five-occurrence standpoint model: monotone S0 gives the formed other significance; no step relation or process, and the base supplies no reading of own or significance (propext from the model's definitions)"
+ },
+ "EvaluatorGrounding.closed_self_blocks_reach": {
+  "module": "EvaluatorGrounding",
+  "category": "model-witness",
+  "reason": "the five-occurrence threshold model with a closed step relation; its claim is about significance values, not reach, so no process carries it (propext, Quot.sound)"
+ },
+ "EvaluatorGrounding.present_aim_evaluator_escapes": {
+  "module": "EvaluatorGrounding",
+  "category": "model-witness",
+  "reason": "the five-occurrence model with nothing significant; a consistency witness of the standpoint interface (propext from the model's definitions)"
+ },
+ "EvaluatorGrounding.tolerant_standpoint_reaches_stranger": {
+  "module": "EvaluatorGrounding",
+  "category": "model-witness",
+  "reason": "the five-occurrence model with tolerance along adjacent degrees, proved by four explicit steps; the conclusion concerns significance values of named occurrences, not reach in a process (propext from the model's definitions)"
+ },
+ "EvaluatorGrounding.persistence_rival_escapes_self_transcendence": {
+  "module": "EvaluatorGrounding",
+  "category": "model-witness",
+  "reason": "the persistence-grounded rival model on Nat x Nat profiles; a consistency witness with no step relation (propext from simp)"
+ }
+}

@@ -51,6 +51,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | review | [SESSION-PROOF-REUSE-SOURCE-CHECKS.json](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.derivation_sound_on_scope`, `Becoming.closure_over_scope_iff_basis`, `Becoming.sound_goal_closure` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -67,4 +68,5 @@ Aliases: `InquiryRoot.derivation_sound`, `InquiryRoot.WholeDischarge.derivation_
 - 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - P02: the current statements and induction bodies coincide; the second name preserves historical dependency reduction and its receipts.
 - 14 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): compiled by the spine run and connected to the core. The bridge now imports GenerativeClosure, whose theorems have empty axiom reports in the spine run. Read as the core’s Scope, the configurations a policy’s actual executions reach from a belief, the inquiry predicate is fixed by the dynamics: a claim derived from a basis holding over the scope holds over it, and the whole closure does exactly where the basis does (derivation_sound_on_scope, closure_over_scope_iff_basis); every claim derived from a sound policy’s goal holds over its scope (sound_goal_closure). Soundness itself stays the periphery’s theorem and is not restated in the core. (scratch build; the receipt comes with the landing)
+- 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 2 rebinding entries (2026-10-15): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derivation-soundness.json).

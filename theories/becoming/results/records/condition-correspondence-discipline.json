@@ -197,7 +197,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
       "role": "proof",
-      "sha256": "ab451f13a200e28198e9d9d4c13d08fa692c59a0997260feb74dab68d881b519",
+      "sha256": "acf933720bb02fce54f64d9ea06dd6013c7561359da72731b22669f0c526b922",
       "declarations": [
         "Becoming.Valuation.Connected.transfer",
         "Becoming.Web.Bearing",
@@ -245,7 +245,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "8d6ce422bb154e3b424642270469316cfbdceaaebdac9460b91615d77640a3e2",
+      "sha256": "111d4264083e40f97d4039ab4f7acd52daf0cda90b096e07f3c0dc7cf1a2cd65",
       "declarations": [
         "Becoming.Web.valuation",
         "Becoming.Web.connected_of_common",
@@ -296,12 +296,18 @@
       "role": "review",
       "sha256": "7f0334aff71d61c2932ca9b2317ca5f47eaf1595e871b286ac95210104491a14",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Correspondence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -703,6 +709,9 @@
     },
     {
       "en": "17 October 2026, wording of the public fields: outdated labels (G0, N_rel/N_std) replaced by the current vocabulary (living significance, relational and standpoint neutrality); P-numbers, the section number and review-round ordinals removed (the findings and their codes stay), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Correspondence.lean, Metaethics.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
     }
   ]
 }

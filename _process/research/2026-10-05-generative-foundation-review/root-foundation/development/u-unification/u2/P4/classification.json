@@ -1,0 +1,7 @@
+{
+  "Generative.OperativeCoherence.retained_response_exact": {
+    "module": "OperativeCoherence",
+    "category": "support",
+    "reason": "An algebraic identity of the declared readout (the retained diagonal and cross-term sum decode the plus numerator of every integer matrix), proved by omega; it involves no step of change, and reading it along a run would only restate it pointwise. Its axiom report is also not empty (propext, Quot.sound)."
+  }
+}

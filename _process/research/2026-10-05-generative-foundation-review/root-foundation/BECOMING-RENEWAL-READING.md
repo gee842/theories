@@ -6473,6 +6473,53 @@ Ren, 17 October 2026: "ok, let's first complete the unification, what's the exac
 - That the periphery is joined: the 78 inherited periphery modules are not spine theorems and are not measured; their records connect through periphery instance modules (`MachineInstances`, `VersionedTaskInstances`, `FallibleInquiry`) and the bridge ring.
 - That any join is a new result: they are applications; the measure is a measurement, not a theorem.
 
+<a id="167-the-unification-follow-through-u2"></a>
+## 167. The unification follow-through (U2)
+
+```text
+Result(s): no new result; worlds-are-runs updated (the course worlds defined from one flow and one web)
+Delta: retired labels replaced in Lean comments and the checker's scope sentences; duplicated proofs of one law
+       routed through one proof; the one-kind and two-role course worlds defined as two readings of the course's
+       one flow and one web; the periphery of the checker's run measured and joined (57 join modules, 542 theorems)
+Supplied premises / correspondence: no axiom of the core or the bridge; each periphery join reads a periphery
+       structure as a process, run, trace, frame or web, with the theorem making the reading exact, and proves the
+       periphery law through the periphery theorem
+Evidence: core receipt 20261017T113233.209872Z passed; THEOREM-CONNECTIVITY.py --check (section 9 there)
+Boundary: periphery-join modules inherit propext, Quot.sound and Classical.choice from periphery proofs; the Mathlib
+          leaves are outside the run and not measured; 122 spine and 171 periphery apart roots stay, each classified
+```
+
+Ren, 17 October 2026, on U's four open items: "let's fix all these" ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-unification-follow-through.md)). Ren chose eight Opus batches for the periphery and to leave the Mathlib leaves as they are.
+
+**Labels.** A script ([relabel_docstrings.py](development/u-unification/u2/relabel_docstrings.py)) replaced the retired labels (G0, the one axiom, Part I, Part II) by the current terms in the comments of 23 spine modules, the root module and the checker's scope sentences. It changes comment text only, keeps quotations, backticked names and "axiom report", and narrates history as history. The code outside comments was checked unchanged.
+
+**One proof for one law.** Where a theorem restated a general one with its own proof, it now cites it: `Courses` (six theorems through `Lasting.fixed_avoids`, `Countdown.Advances.completes`, `Copying.scan_le`, `CrossSituational.narrows`, `CrossSituational.reads_every_iff`, `Readout.no_judge_of_merged`), `Recurrence.Run.change_not_recurring`, `Sensitivity.tailLaw_not_through`, `counting_free`, `LearnableRuns` (through `Parting.course`), and `TypicalRuns`, whose three list lemmas were the ones `Weighted` and `FinerTraces` already prove. Not folded: the Law-form cluster of `Recurrence` (`Law.drawn_of_lost`, `Law.Lossless.unlisted`, `Law.lost_stays`, `Law.rise_not_lossless`). The process forms in `Branching` and `Courses` are the general ones and import `Recurrence`, so the Law forms cannot cite them; each is registered with that reason.
+
+**One course, two readings.** The course's web at the generated levels is now defined once (`ExchangeLaw.courseWeb`). The one-kind world is `World.ofKind` of the course's flow and that web, and the two-role world `World.ofRoles` of the same two (`CourseRoles.world_eq`, `courseWorld_eq`, by `rfl`). The agreement is stated for every flow and web of one kind (`World.roles_level`, `roles_take`, `roles_give`, `kind_balanced_iff_roles`), so `CourseRoles.balanced_iff` no longer assumes a law of what has stood. The two worlds stay two terms because their relata differ (`R` and `R ⊕ R`).
+
+**The periphery.** The measure now covers the 78 inherited modules of the run as well as the spine, with the same register and ratchet. Before U2, 814 of their 1,282 theorems stood apart, 524 of them roots. Eight batches, each a Claude Opus 5.5 subagent working from the [brief](development/u-unification/u2/U2-PERIPHERY-BRIEF.md), wrote join modules in scratch. Batches P2 and P3 found that most periphery general laws carry `propext`, `Quot.sound` or `Classical.choice` from `simp`, `omega`, `decide`, `by_cases` and overlapping matches in the periphery's own proofs and definitions. Board rule 8 keeps those files, and the bridge must stay pure, so the integrator added a ring ([addendum](development/u-unification/u2/U2-ADDENDUM-AXIOM-RING.md)):
+- periphery-join modules, named `…Inherited`, are compiled and audited in the core run;
+- nothing in the core or the bridge imports them;
+- they may carry only the axioms they inherit, which the receipt reports exactly.
+
+The checker enforces the ring (`PERIPHERY_JOINS`). 31 pure join modules went on the bridge and 26 into the new ring. The first checker run flagged ten join names with market words (`budget`, `cost`). They were renamed before landing: `UnitTraces.oneStep_*` and `oneStepImage` for the one-step process the periphery calls a budget, and `ReconfigurationProcesses.own_draw_alone_no_step`, `combined_draw_steps` and the field `draw` for the amount a rearrangement draws.
+
+**Results.**
+- Periphery: 814 → 229 apart theorems, 524 → 171 roots. Every root is classified: 112 model witnesses, 26 periphery-scope, 15 support lemmas, 10 restatements, 7 general structures and 1 bridge interface. No periphery-join theorem is apart.
+- Spine: 186 → 180 apart theorems of 8,007, 125 → 122 roots. Three bridge interfaces now feed the base through the joins, and the nine roots the folds removed have left the register.
+- Records: one record, `positioned-positive-reason`, rests only on periphery theorems that are apart and classified. It became visible once records were matched against periphery classes; no spine record rests only on apart theorems.
+
+**Found in the periphery, left as it is (rule 8).**
+- Definitions that carry `propext`: `AcquiredSegmentation` from `bond` through `ready`, `RelationalOrganization`, `EvaluatorGrounding`, `readEvidence`, and the `execute` of `FaultTolerantCorrection`.
+- Proofs whose axioms come only from tactics, for which pure versions exist: `ExplanatoryLocalUnits.trace_join_associative` and `ExplanatoryJoining.merge_associative`.
+
+**Readings pending Ren** (the AI's): the readings each batch's report names, for example installation and interface as two processes (P1, P7), dispatch charging its cost on failure (P2), and `draw`/`operations` (P4). Also pending are the periphery-join ring itself and the two trace laws P2 flags as possibly vacuous (`empty_candidates_trace_fails`, the slow-query half of `slow_trace_misses_deadline`). The batch reports are in [development/u-unification/u2/](development/u-unification/u2/).
+
+**What this does not show.**
+- That the periphery is pure: the joins state its laws of the base, and the axioms its proofs use stay where they are.
+- That any join is a new result.
+- That the Mathlib leaves are joined: they are outside the run.
+
 ## Ren’s words quoted in passages that exist only in the Chinese edition
 
 The paragraphs below sit in Chinese-only passages of this study log ([Chinese edition](BECOMING-RENEWAL-READING.zh.md)). Only the quotation is repeated here, verbatim and in Ren’s original language, with the source link given in the passage (line numbers refer to the bilingual file before the split); the surrounding AI prose is in the Chinese edition. Nothing here is translated.

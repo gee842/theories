@@ -1,0 +1,112 @@
+{
+ "Generative.AcquiredSegmentation.grouping_preserves_encountered_sequence": {
+  "module": "AcquiredSegmentation",
+  "category": "support",
+  "reason": "a list lemma (grouping into chunks and flattening returns the list); Becoming.Instances already reads AcquiredSegmentation.chunks as the core grouping Segmentation.chunks"
+ },
+ "Generative.AcquiredSegmentation.missing_observation_slots_preserve_the_absence_of_an_edge": {
+  "module": "AcquiredSegmentation",
+  "category": "model-witness",
+  "reason": "a computed fact about the edges and bond of three supplied logs (lists of slots), not about a configuration or a trace of reception"
+ },
+ "Generative.AcquiredSegmentation.recurrence_can_join_across_the_intended_units": {
+  "module": "AcquiredSegmentation",
+  "category": "model-witness",
+  "reason": "a computed fact about grouping one supplied list by the bond of that list read as a log; no configuration or trace of reception enters"
+ },
+ "Generative.ExplanatoryFootprints.permutation_preserves_realization": {
+  "module": "ExplanatoryFootprints",
+  "category": "model-witness",
+  "reason": "a fact about the list-footprint model (wholes are lists of resources, parts lie within and apart), not a run or world; its report also carries propext and Quot.sound; CompositionBridge reads the general footprint laws in the core"
+ },
+ "Generative.ExplanatoryFootprints.reassociation_preserves_realization": {
+  "module": "ExplanatoryFootprints",
+  "category": "model-witness",
+  "reason": "a fact about the list-footprint model, not a run or world; its report also carries propext and Quot.sound"
+ },
+ "Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability": {
+  "module": "ExplanatoryUniqueness",
+  "category": "model-witness",
+  "reason": "a fact about the supplied chessboard tiling model of ExplanatoryStructure (colour balance versus coverability), not a run or world; its report also carries propext"
+ },
+ "Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both": {
+  "module": "ExplanatoryUniqueness",
+  "category": "model-witness",
+  "reason": "a fact about presentations of the Bool x Bool model, which has no evident reading as a frame"
+ },
+ "Generative.ExplanatoryUniqueness.full_exact": {
+  "module": "ExplanatoryUniqueness",
+  "category": "model-witness",
+  "reason": "a fact about one presentation of the Bool x Bool model"
+ },
+ "Generative.ExplanatoryUniqueness.full_not_reduced": {
+  "module": "ExplanatoryUniqueness",
+  "category": "model-witness",
+  "reason": "a fact about one presentation of the Bool x Bool model"
+ },
+ "Generative.ExplanatoryUniqueness.short_exact": {
+  "module": "ExplanatoryUniqueness",
+  "category": "model-witness",
+  "reason": "a fact about one presentation of the Bool x Bool model"
+ },
+ "Generative.ExplanatoryUniqueness.short_reduced": {
+  "module": "ExplanatoryUniqueness",
+  "category": "model-witness",
+  "reason": "a fact about one presentation of the Bool x Bool model"
+ },
+ "Generative.ExplanatoryUniversality.all_predicates_force_injective": {
+  "module": "ExplanatoryUniversality",
+  "category": "general-structure",
+  "reason": "a law of the family of all predicates on any type; no frame has every predicate as its tests except one whose claims are all predicates, so an instance would only fix the type"
+ },
+ "Generative.ExplanatoryUniversality.all_predicates_relation_recoverable": {
+  "module": "ExplanatoryUniversality",
+  "category": "general-structure",
+  "reason": "a law of the family of all predicates on any type; a base instance would only fix the type"
+ },
+ "Generative.ExplanatoryUniversality.all_predicates_unique_correspondence": {
+  "module": "ExplanatoryUniversality",
+  "category": "general-structure",
+  "reason": "a law of the family of all predicates on any type; a base instance would only fix the type"
+ },
+ "Generative.KnowledgeCorrespondence.direct_exact_on_normal": {
+  "module": "KnowledgeCorrespondence",
+  "category": "model-witness",
+  "reason": "a fact about the stipulated two-bit History model (value and channel orientation), which has no evident reading as a run or world"
+ },
+ "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain": {
+  "module": "KnowledgeCorrespondence",
+  "category": "model-witness",
+  "reason": "a fact about the stipulated two-bit History model, which has no evident reading as a run or world"
+ },
+ "Generative.KnowledgeCorrespondence.double_reversal_exact": {
+  "module": "KnowledgeCorrespondence",
+  "category": "model-witness",
+  "reason": "a fact about the stipulated two-bit History model, which has no evident reading as a run or world"
+ },
+ "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains": {
+  "module": "KnowledgeCorrespondence",
+  "category": "model-witness",
+  "reason": "the stipulated History model instance of conflicting_fibre_forces_abstention; the general law is joined on runs as ExactRecordRuns.sound_abstains"
+ },
+ "Generative.KnowledgeCorrespondence.lucky_actual_correct": {
+  "module": "KnowledgeCorrespondence",
+  "category": "model-witness",
+  "reason": "one evaluation at one History of the stipulated model"
+ },
+ "Generative.KnowledgeCorrespondence.no_exact_raw_decoder": {
+  "module": "KnowledgeCorrespondence",
+  "category": "model-witness",
+  "reason": "the stipulated History model instance of exact_requires_resolution; the general law is joined on runs as ExactRecordRuns.exact_resolves"
+ },
+ "Generative.KnowledgeCorrespondence.parity_record_exact": {
+  "module": "KnowledgeCorrespondence",
+  "category": "model-witness",
+  "reason": "a fact about the stipulated History model (exactness surviving compression); the general law is joined on runs as ExactRecordRuns.kept_exact"
+ },
+ "Generative.KnowledgeCorrespondence.true_content_trivially_safe": {
+  "module": "KnowledgeCorrespondence",
+  "category": "support",
+  "reason": "a statement using only the prelude: a true proposition follows from any hypotheses"
+ }
+}

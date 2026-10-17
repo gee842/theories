@@ -1,0 +1,52 @@
+{
+ "Generative.CompositionalAcquisition.changed_motivation_preserves_acquired_content": {
+  "module": "CompositionalAcquisition",
+  "category": "model-witness",
+  "reason": "a fact about the one acquired code of `usual` and two picks of a primitive; no run or world reads it"
+ },
+ "Generative.CompositionalAcquisition.changed_order_invalidates_transfer": {
+  "module": "CompositionalAcquisition",
+  "category": "model-witness",
+  "reason": "a fact about two constructed codes (`usual`, `switched`) on one expression"
+ },
+ "Generative.CompositionalAcquisition.no_exact_order_without_composite_probe": {
+  "module": "CompositionalAcquisition",
+  "category": "periphery-scope",
+  "reason": "a statement about the resolution interface of KnowledgeCorrespondence (no answer is exact on the primitive readings alone); it is about what the evidence projection resolves, not about a process, run or world, and no core concept is identified with that interface in the bridge (its proof also inherits propext)"
+ },
+ "Generative.CompositionalAcquisition.nonuniform_fails_transfer": {
+  "module": "CompositionalAcquisition",
+  "category": "model-witness",
+  "reason": "a fact about one constructed response function `nonuniform`, which is not a program the query process's sender can run"
+ },
+ "Generative.CompositionalAcquisition.nonuniform_matches_training": {
+  "module": "CompositionalAcquisition",
+  "category": "model-witness",
+  "reason": "a fact about one constructed response function `nonuniform` on the three training forms"
+ },
+ "Generative.CompositionalAcquisition.novel_expression_not_a_training_item": {
+  "module": "CompositionalAcquisition",
+  "category": "model-witness",
+  "reason": "a decidable inequality of four constructed expressions"
+ },
+ "Generative.CompositionalAcquisition.probe_readings": {
+  "module": "CompositionalAcquisition",
+  "category": "periphery-scope",
+  "reason": "a definitional (rfl) statement about the grammar's evaluation of the two atoms and the evidence `observe` reads; expression evaluation is a structural recursion with no evident process, and no core concept corresponds"
+ },
+ "Generative.CompositionalAcquisition.reencoding_preserves_content": {
+  "module": "CompositionalAcquisition",
+  "category": "periphery-scope",
+  "reason": "invariance of the grammar's evaluation under renaming the atoms; it is about the periphery's expression semantics, which has no evident process, run or world (the nearest core notion, transport of a process under a faithful change of representation, needs a process this module does not define)"
+ },
+ "Generative.CompositionalAcquisition.unresolved_order_can_preserve_a_novel_answer": {
+  "module": "CompositionalAcquisition",
+  "category": "model-witness",
+  "reason": "a fact about two constructed codes with equal primitives"
+ },
+ "Generative.CompositionalFormation.indistinguishable_reversal_preserves_every_expression": {
+  "module": "CompositionalFormation",
+  "category": "periphery-scope",
+  "reason": "invariance of the grammar's evaluation under reversing the join order when the two primitives agree; it is about the periphery's expression semantics, which has no evident process, run or world, and no core concept corresponds (its proof also inherits propext)"
+ }
+}

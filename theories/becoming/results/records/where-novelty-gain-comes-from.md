@@ -113,6 +113,7 @@ Ren, 15 October 2026: “What's the best choices to make? please make best of yo
 | provenance | [2026-10-14-relation-first-refounding.md](../../../../sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 
 Aliases: `where novelty's gain comes from`, `新的增益从哪里来`, `every rise is given`, `每次上升都是被给予的`, `endless novelty is exchange beyond every finite family`, `无尽的新是越出每个有限家族的交换`, `unceasing generation within a bounded whole is return`, `有界整体中的不息生成是回返`
 
@@ -123,6 +124,7 @@ Aliases: `where novelty's gain comes from`, `新的增益从哪里来`, `every r
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 16 October 2026: the validation scope names the receipt bound when P110–P112 landed, 20261015T192014.437564Z (it read “receipt bound at landing”); statement, proofs and bindings unchanged.
 - 16 October 2026, eighteenth review (R18): “every rise is given” (rise_netGiver) is an accounting identity: withImbalance defines the rest as the residual, and law 0 did not mark it as holding by construction (review item 34, P3). Law 0 now says “by the definition of the rest as the residual”. Claim narrowed; no theorem changed.
+- 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 7 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-novelty-gain-comes-from.json).
 
 </details>

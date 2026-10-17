@@ -1,0 +1,142 @@
+{
+ "CorrectionInfrastructure.accepting_optimum_can_destroy_access": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "the two-bit maintenance model (MaintenanceValue): a score table, not a process or world"
+ },
+ "CorrectionInfrastructure.approved_scope_change_transports_coverage": {
+  "module": "CorrectionInfrastructure",
+  "category": "general-structure",
+  "reason": "composition of two implications between predicates on any items (covering transported along a translation); an instance on a frame's realized claims would only fix the type"
+ },
+ "CorrectionInfrastructure.approximate_constrained_score_bound": {
+  "module": "CorrectionInfrastructure",
+  "category": "support",
+  "reason": "the standard uniform-error bound, integer arithmetic over an argmax of an estimate"
+ },
+ "CorrectionInfrastructure.constrained_score_bound_is_tight": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "tightness of the error bound on one constructed two-action score"
+ },
+ "CorrectionInfrastructure.correction_preservation_allows_route_retirement": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "a fact about the single route pair (false, true)"
+ },
+ "CorrectionInfrastructure.discriminating_evidence_restores_policy": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "one constructed relation on Bool read through the identity observation"
+ },
+ "CorrectionInfrastructure.endpoint_repair_can_hide_interruption_gap": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "three named route pairs and one listed handoff with a gap; no process supplies the handoff's steps, so a trace reading would invent one"
+ },
+ "CorrectionInfrastructure.every_fixed_access_bonus_has_counterexample": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "for each bonus a cost in the two-bit maintenance model exceeding it; a score table, not a process or world"
+ },
+ "CorrectionInfrastructure.every_optimum_has_access_iff": {
+  "module": "CorrectionInfrastructure",
+  "category": "general-structure",
+  "reason": "a law of the argmax with an acceptance bonus over any allowed set and integer score; the move-level reading on a process is joined through shielded_acceptance_composition (GuardHorizonProcessesInherited.shielded_choice), and an instance here with an arbitrary access predicate would only fix the type"
+ },
+ "CorrectionInfrastructure.maintenance_bonus_exact": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "exact bonus threshold in the two-bit maintenance model; a score table, not a process or world"
+ },
+ "CorrectionInfrastructure.no_base_optimal_access": {
+  "module": "CorrectionInfrastructure",
+  "category": "general-structure",
+  "reason": "a one-line law of the argmax over any allowed set and score (no best with a property every best lacks); the base supplies no reading of the score"
+ },
+ "CorrectionInfrastructure.overlapping_handoff_retains_prefix_access": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "one listed overlapping handoff of route pairs; no process supplies the handoff's steps"
+ },
+ "CorrectionInfrastructure.recomputed_value_restores_optimal_branch": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "the two-step temptation reward table; a table of values, not a process"
+ },
+ "CorrectionInfrastructure.restricted_value_bounds_all_continuations": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "the two-step temptation reward table; a table of values, not a process"
+ },
+ "CorrectionInfrastructure.restricted_value_is_achievable": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "the two-step temptation reward table (TwoStepReward); a table of values, not a process"
+ },
+ "CorrectionInfrastructure.self_reclassified_obligations_can_hide_loss": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "two coverage facts about constant predicates on Unit"
+ },
+ "CorrectionInfrastructure.stale_value_shield_is_strictly_suboptimal": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "the two-step temptation reward table; a table of values, not a process"
+ },
+ "CorrectionInfrastructure.statewise_repair_need_not_be_usable": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "one constructed relation on Bool read through a constant observation; the general law is joined (GuardHorizonProcessesInherited.uniform_iff)"
+ },
+ "CorrectionInfrastructure.unavoidable_score_loss": {
+  "module": "CorrectionInfrastructure",
+  "category": "support",
+  "reason": "integer arithmetic on the scores of an unconstrained and a constrained argmax"
+ },
+ "CorrectionInfrastructure.unrestricted_value_is_optimal": {
+  "module": "CorrectionInfrastructure",
+  "category": "model-witness",
+  "reason": "the two-step temptation reward table; a table of values, not a process"
+ },
+ "FaultTolerantCorrection.admitted_total_compromise_rejects": {
+  "module": "FaultTolerantCorrection",
+  "category": "periphery-scope",
+  "reason": "a law of the quorum certificate over a roster and a fault envelope; no reading as a process, run or world; no core concept"
+ },
+ "FaultTolerantCorrection.availability_iff_separated": {
+  "module": "FaultTolerantCorrection",
+  "category": "periphery-scope",
+  "reason": "a law of the quorum certificate over a roster and a fault envelope (lists of domains); no reading as a process, run or world, and the bridge identifies the certificate with no core concept (none exists)"
+ },
+ "FaultTolerantCorrection.correlated_recovery_separation": {
+  "module": "FaultTolerantCorrection",
+  "category": "model-witness",
+  "reason": "separation of the named roster roster4 under the correlated envelope"
+ },
+ "FaultTolerantCorrection.declared_correlation_can_block_availability": {
+  "module": "FaultTolerantCorrection",
+  "category": "model-witness",
+  "reason": "the certificate of the named roster under the named correlated envelope with one supporter"
+ },
+ "FaultTolerantCorrection.duplicating_roster_gives_no_extra_warrant": {
+  "module": "FaultTolerantCorrection",
+  "category": "periphery-scope",
+  "reason": "a law of the quorum certificate over a roster and a fault envelope; no reading as a process, run or world; no core concept"
+ },
+ "FaultTolerantCorrection.no_fault_model_never_certifies": {
+  "module": "FaultTolerantCorrection",
+  "category": "periphery-scope",
+  "reason": "the quorum certificate under an empty fault envelope; no reading as a process, run or world; no core concept"
+ },
+ "FaultTolerantCorrection.one_fault_separation": {
+  "module": "FaultTolerantCorrection",
+  "category": "model-witness",
+  "reason": "separation of the named roster roster3 under the single-fault envelope"
+ },
+ "FaultTolerantCorrection.two_fault_sets_cover_prevents_availability": {
+  "module": "FaultTolerantCorrection",
+  "category": "periphery-scope",
+  "reason": "a law of the quorum certificate over a roster and a fault envelope; no reading as a process, run or world; no core concept"
+ }
+}

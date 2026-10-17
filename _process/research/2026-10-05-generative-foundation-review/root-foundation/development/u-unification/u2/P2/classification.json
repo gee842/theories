@@ -1,0 +1,122 @@
+{
+ "CorrectionReconfiguration.causal_envelopes_compute": {
+  "module": "CorrectionReconfiguration",
+  "category": "model-witness",
+  "reason": "Computes the induced envelopes of three fixed arrangements; a static fact about constructed arrangements with no run or world reading."
+ },
+ "CorrectionReconfiguration.causal_readiness_changes": {
+  "module": "CorrectionReconfiguration",
+  "category": "model-witness",
+  "reason": "Computes ready for four fixed arrangements; a static fact about constructed arrangements with no run or world reading."
+ },
+ "CorrectionReconfiguration.derived_certificate_sound": {
+  "module": "CorrectionReconfiguration",
+  "category": "periphery-scope",
+  "reason": "Soundness of an accepted certificate over any arrangement that covers the actual root faults; it holds of every arrangement, so a reconfiguration step would play no role (the step law, certificate availability after every step, is ReconfigurationProcessesInherited.step_certificate_available); the bridge identifies the certificate interface with no core concept. Its own axiom report: propext, Quot.sound."
+ },
+ "CorrectionReconfiguration.induced_monotone": {
+  "module": "CorrectionReconfiguration",
+  "category": "periphery-scope",
+  "reason": "Induced fault sets grow with the root faults; a monotonicity of the fault-formula interface of one arrangement, with no process, run or world in it and no core counterpart. Its own axiom report: propext, Quot.sound."
+ },
+ "CorrectionReconfiguration.omitted_shared_cause_still_breaks_model": {
+  "module": "CorrectionReconfiguration",
+  "category": "model-witness",
+  "reason": "One constructed arrangement is ready yet one omitted cause fails every member; a static fact with no run or world reading."
+ },
+ "CorrectionReconfiguration.renamed_support_is_not_redundancy": {
+  "module": "CorrectionReconfiguration",
+  "category": "model-witness",
+  "reason": "Evaluates three fixed fault formulas on one root-fault set; a computation about formulas, not about a run or world."
+ },
+ "CorrectionReconfiguration.stale_envelope_accepts_captured_support": {
+  "module": "CorrectionReconfiguration",
+  "category": "model-witness",
+  "reason": "Evaluates the certificate of one fixed roster under two fixed envelopes; a static fact with no run or world reading."
+ },
+ "EvidenceQualifiedCorrection.actual_survivors_can_be_insufficient_before_diagnosis": {
+  "module": "EvidenceQualifiedCorrection",
+  "category": "model-witness",
+  "reason": "Evaluates the certificate of fixed supports under the pooled and the single-model envelope; a static fact with no run or world reading."
+ },
+ "EvidenceQualifiedCorrection.diagnosis_need_not_identify_the_model": {
+  "module": "EvidenceQualifiedCorrection",
+  "category": "model-witness",
+  "reason": "Computes the candidates one fixed test keeps and the readiness of their pooled envelopes; a static fact with no run or world reading."
+ },
+ "EvidenceQualifiedCorrection.empty_family_rejects": {
+  "module": "EvidenceQualifiedCorrection",
+  "category": "periphery-scope",
+  "reason": "The certificate of FaultTolerantCorrection over an empty pooled family is false by definition; a fact of the periphery certificate interface, which the bridge does not identify with a core concept (the closest is Readout fallible-witness explanation)."
+ },
+ "EvidenceQualifiedCorrection.every_candidate_ready_but_pool_not_ready": {
+  "module": "EvidenceQualifiedCorrection",
+  "category": "model-witness",
+  "reason": "Every fixed arrangement is ready while their pooled envelope is not; a static fact about constructed arrangements."
+ },
+ "EvidenceQualifiedCorrection.misleading_diagnosis_can_accept_only_compromised_support": {
+  "module": "EvidenceQualifiedCorrection",
+  "category": "model-witness",
+  "reason": "Computes a misleading test answer and the certificate it then accepts; a static fact about constructed arrangements."
+ },
+ "EvidenceQualifiedCorrection.unaffordable_or_unauthorized_inspection_leaves_no_listed_uniform_plan": {
+  "module": "EvidenceQualifiedCorrection",
+  "category": "model-witness",
+  "reason": "Computes that plan selection finds no plan over two constructed lists of situations; the selected-plan cases are joined as traces of the inquiry process (ProbeRunsInherited.listed_inspect_traces_complete, listed_reuse_traces_complete), while no selection has no trace reading. Its own axiom report: propext."
+ },
+ "EvidenceQualifiedCorrection.unobserved_structural_change_invalidates_learned_coverage": {
+  "module": "EvidenceQualifiedCorrection",
+  "category": "model-witness",
+  "reason": "Computes an induced fault set and a certificate over fixed arrangements; a static fact with no run or world reading."
+ },
+ "FallibleInspection.absent_fifth_report_preserves_uncertainty": {
+  "module": "FallibleInspection",
+  "category": "model-witness",
+  "reason": "Computes the posterior of the fixed hypotheses under one fixed transcript; a refinement of a list with no run or world reading."
+ },
+ "FallibleInspection.complete_diagnosability_iff_cross_separation": {
+  "module": "FallibleInspection",
+  "category": "bridge-interface",
+  "reason": "Becoming.Bridge.complete_diagnosability_iff_by_core proves the same statement with an empty report through Readout.no_common_report_envelopes_iff; this is the bridge ring identifying the periphery explanation with the core one. Its own axiom report: propext, Classical.choice, Quot.sound."
+ },
+ "FallibleInspection.conflicting_models_each_certify_themselves": {
+  "module": "FallibleInspection",
+  "category": "model-witness",
+  "reason": "Evaluates certificates and one posterior for fixed models and one transcript; a static fact with no run or world reading."
+ },
+ "FallibleInspection.duplicated_fifth_support_does_not_repair_diagnosis": {
+  "module": "FallibleInspection",
+  "category": "model-witness",
+  "reason": "Computes one refinement under a fixed dependent fault family; a static fact with no run or world reading."
+ },
+ "FallibleInspection.fifth_diagnostic_witness_resolves_relevant_distinction": {
+  "module": "FallibleInspection",
+  "category": "model-witness",
+  "reason": "Computes one posterior and the readiness of its pooled envelope; a static fact with no run or world reading."
+ },
+ "FallibleInspection.fifth_witness_is_not_an_infallible_oracle": {
+  "module": "FallibleInspection",
+  "category": "model-witness",
+  "reason": "Computes one posterior under a fixed false transcript; a static fact with no run or world reading."
+ },
+ "FallibleInspection.four_witnesses_cannot_separate_this_transcript": {
+  "module": "FallibleInspection",
+  "category": "model-witness",
+  "reason": "Evaluates explains for two fixed fault sets on one transcript (on complete reports explains is Readout.Explains, Bridge.explains_complete_iff); a static fact with no run or world reading."
+ },
+ "FallibleInspection.missing_reports_preserve_each_nonempty_model": {
+  "module": "FallibleInspection",
+  "category": "periphery-scope",
+  "reason": "With no report received, compatibility is a nonempty envelope; a fact of the explanation interface (identified with Readout.Explains by the bridge only on complete reports). Its step reading, that an inspection receiving no report keeps the candidates with a nonempty envelope, would need filter congruence (funext) beyond what the periphery theorem brings. Its own axiom report: propext, Quot.sound."
+ },
+ "FallibleInspection.responsive_survivors_exclude_opposite": {
+  "module": "FallibleInspection",
+  "category": "periphery-scope",
+  "reason": "Compatibility of responsive reports with an alternative envelope, a static fact of the explanation interface; on complete reports the bridge identifies compatibility with Readout.Explains (Bridge.compatible_complete_iff). Its own axiom report: propext, Quot.sound."
+ },
+ "FallibleInspection.uncovered_correlated_witness_failure_can_delete_actual": {
+  "module": "FallibleInspection",
+  "category": "model-witness",
+  "reason": "Computes one induced fault set and one posterior; a static fact with no run or world reading."
+ }
+}

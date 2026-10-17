@@ -479,7 +479,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "role": "proof",
-      "sha256": "e11b4316e549c83be2fb9b1b97c4c486d6ebbcdf2e277bb1dfd453a187b7a1d8",
+      "sha256": "3be2f29a14dbe9a5174f7b8ecb232514f666c8154e9185d4ca07dfa714943166",
       "declarations": [
         "Becoming.World.enclosure_bounds_change",
         "Becoming.World.taking_binds_counting",
@@ -574,7 +574,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "41afc878298b38e0044a53a40bc8ca9fb3b887e414f6e2b072fd0cd26e9f98d4"
+      "sha256": "fc8ec7c7ddc6fe8c9d53a603ac59514969387964e781458b73e860bc6fa9dd5c"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -602,6 +602,12 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "role": "receipt",
+      "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -628,7 +634,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counting",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -889,6 +895,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after U: THE-THEORY-OF-BECOMING.md section 8 (the completeness paragraph, the row on worlds as runs, the row on integration of the spine) and section 9 (the current receipt, now 20261017T071851.986246Z) were rewritten for the join modules of U. The integrator read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): in Counting.lean, counting_free now cites counting_laws. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after U2: THE-THEORY-OF-BECOMING.md section 8 (the row on integration of the spine) and section 9 (the current receipt, now 20261017T113233.209872Z) were rewritten for the periphery joins and the follow-through of U2. The integrator read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [
