@@ -1,0 +1,5 @@
+import Becoming.CaptureWorlds
+#print axioms Becoming.CaptureWorlds.length_le_zero
+#print axioms Becoming.CaptureWorlds.unsupported_leave_none
+#print axioms Becoming.CaptureWorlds.share_rises_of_unsupported
+#print axioms Becoming.CaptureWorlds.share_not_lower_of_unsupported

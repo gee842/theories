@@ -1,0 +1,10 @@
+import Becoming.JointPhaseTraces
+#check @Becoming.JointPhaseTraces.step_iff
+#check @Becoming.JointPhaseTraces.trace_end
+#check @Becoming.JointPhaseTraces.evolve_trace
+#check @Becoming.JointPhaseTraces.interaction_forms_joined
+#check @Becoming.JointPhaseTraces.phase_keeps_local_states
+#check @Becoming.JointPhaseTraces.phase_keeps_masses
+#check @Becoming.JointPhaseTraces.phase_changes_cross
+#check @Becoming.JointPhaseTraces.interaction_tells_apart
+#check @Becoming.JointPhaseTraces.no_local_update

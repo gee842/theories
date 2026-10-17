@@ -1,0 +1,14 @@
+import Becoming.DiagonalRuns
+#check @Becoming.DiagonalRuns.run_unfolds
+#check @Becoming.DiagonalRuns.unfolds_iff
+#check @Becoming.DiagonalRuns.incomplete
+#check @Becoming.DiagonalRuns.gap_new
+#check @Becoming.DiagonalRuns.gaps_differ
+#check @Becoming.DiagonalRuns.never_returns
+#check @Becoming.DiagonalRuns.unheld
+#check @Becoming.DiagonalRuns.complete_iff_alike
+#check @Becoming.DiagonalRuns.unfoldingRun_open
+#check @Becoming.DiagonalRuns.revision_never_rests
+#check @Becoming.DiagonalRuns.negation_never_rests
+#check @Becoming.DiagonalRuns.negation_returns
+#check @Becoming.DiagonalRuns.frame_gap

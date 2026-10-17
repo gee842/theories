@@ -1,0 +1,6 @@
+import Becoming.GuardHorizonProcessesInherited
+#check @Becoming.GuardHorizonProcessesInherited.shielded_choice
+#check @Becoming.GuardHorizonProcessesInherited.kept_return_le
+#check @Becoming.GuardHorizonProcessesInherited.recomputed_kept
+#check @Becoming.GuardHorizonProcessesInherited.recomputed_accepts
+#check @Becoming.GuardHorizonProcessesInherited.uniform_iff

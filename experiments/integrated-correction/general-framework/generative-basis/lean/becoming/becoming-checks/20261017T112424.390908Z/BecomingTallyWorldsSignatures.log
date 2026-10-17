@@ -1,0 +1,22 @@
+Becoming.TallyWorlds.shown_iff_tally : ∀ (n c a : Nat → Nat), Becoming.TallyWorlds.Shown n c a ↔ Becoming.Tally n c a
+Becoming.TallyWorlds.shown_iff_balance : ∀ (n c a : Nat → Nat),
+  Becoming.TallyWorlds.Shown n c a ↔ Becoming.Balance n c a ∧ ∀ (t : Nat), c t ≤ n t
+Becoming.TallyWorlds.balance_not_shown : (Becoming.Balance (fun x => 0) (fun x => 1) fun x => 1) ∧
+  ¬Becoming.TallyWorlds.Shown (fun x => 0) (fun x => 1) fun x => 1
+@Becoming.TallyWorlds.occurrences_congr : ∀ {T : Nat} {q q' : Nat → Nat},
+  (∀ (s : Nat), q s = q' s) → ∀ (t : Nat), Becoming.occurrences T q t = Becoming.occurrences T q' t
+Becoming.TallyWorlds.lpo_of_census_ends : (∀ (w : Becoming.World)
+    [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)] (alive : Nat → List w.Relatum),
+    w.web.Census alive →
+      (∀ (t : Nat), 0 < Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t → 0 < (alive t).length) →
+        (∃ B,
+            Becoming.ChangeBound 0 B (fun t => (alive t).length)
+              (fun t => Becoming.ceasings (alive t) (fun x s => w.web.active s x) t) fun t =>
+              Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t) →
+          ∃ E,
+            ∀ (t : Nat),
+              E ≤ t →
+                Becoming.ceasings (alive t) (fun x s => w.web.active s x) t +
+                    Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t =
+                  0) →
+  Becoming.LPO

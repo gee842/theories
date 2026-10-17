@@ -1,0 +1,67 @@
+@Becoming.DispatchProcessesInherited.step_iff : ∀ {current : AcquiredCorrection.Tree}
+  {d e : AcquiredCorrection.Delivery} {t : AcquiredCorrection.Ticket},
+  (Becoming.DispatchProcessesInherited.process current).step d t e ↔ e = AcquiredCorrection.dispatch current t d.state
+@Becoming.DispatchProcessesInherited.absent_route_fails : ∀ {current : AcquiredCorrection.Tree}
+  {d e : AcquiredCorrection.Delivery} {t : AcquiredCorrection.Ticket},
+  (Becoming.DispatchProcessesInherited.process current).step d t e →
+    AcquiredCorrection.locate current t.fst = none → e.succeeded = false
+@Becoming.DispatchProcessesInherited.revoked_fails : ∀ {current : AcquiredCorrection.Tree}
+  {d e : AcquiredCorrection.Delivery} {t : AcquiredCorrection.Ticket},
+  (Becoming.DispatchProcessesInherited.process current).step d t e →
+    d.state.credential ≠ d.state.authority → e.succeeded = false
+@Becoming.DispatchProcessesInherited.succeeded_current : ∀ {current : AcquiredCorrection.Tree}
+  {d e : AcquiredCorrection.Delivery} {t : AcquiredCorrection.Ticket},
+  (Becoming.DispatchProcessesInherited.process current).step d t e →
+    e.succeeded = true →
+      AcquiredCorrection.locate current t.fst = some t.snd ∧
+        d.state.signed = true ∧ d.state.credential = d.state.authority
+@Becoming.DispatchProcessesInherited.map_some : ∀ {α β : Type} {f : α → β} {o : Option α} {b : β},
+  Option.map f o = some b → ∃ a, o = some a ∧ f a = b
+@Becoming.DispatchProcessesInherited.stale_ticket_fails : ∀ {d e : AcquiredCorrection.Delivery},
+  d.state = EffectiveCommand.start false EffectiveCommand.Command.shutdown 6 6 →
+    (Becoming.DispatchProcessesInherited.process Becoming.DispatchProcessesInherited.changedTree).step d
+        AcquiredCorrection.exampleTicket e →
+      e.succeeded = false
+@Becoming.DispatchProcessesInherited.captured_passes : ∀ {d e : AcquiredCorrection.Delivery},
+  d.state = Becoming.DispatchProcessesInherited.capturedState →
+    (Becoming.DispatchProcessesInherited.process (AcquiredCorrection.Tree.endpoint true)).step d ([], true) e →
+      e.succeeded = true
+Becoming.DispatchProcessesInherited.acquired_step_stops : ∃ pair,
+  AcquiredCorrection.acquire 4 AcquiredCorrection.exampleTree AcquiredCorrection.initial = some pair ∧
+    ∀ (d e : AcquiredCorrection.Delivery),
+      d.state = pair.snd →
+        (Becoming.DispatchProcessesInherited.process AcquiredCorrection.exampleTree).step d
+            AcquiredCorrection.exampleTicket e →
+          (e.succeeded, e.state.running, e.state.spent, e.state.reserve, e.state.time) = (true, false, 10, 0, 10)
+Becoming.DispatchProcessesInherited.unfunded_step_fails : ∃ pair,
+  AcquiredCorrection.acquire 4 AcquiredCorrection.exampleTree
+        (EffectiveCommand.start false EffectiveCommand.Command.shutdown 9 10) =
+      some pair ∧
+    ∀ (d e : AcquiredCorrection.Delivery),
+      d.state = pair.snd →
+        (Becoming.DispatchProcessesInherited.process AcquiredCorrection.exampleTree).step d
+            AcquiredCorrection.exampleTicket e →
+          (pair.fst.verdict, e.succeeded, e.state.spent, e.state.reserve) =
+            (AcquiredCorrection.Verdict.found AcquiredCorrection.exampleTicket, false, 7, 2)
+Becoming.DispatchProcessesInherited.changed_epoch_step_fails : ∃ pair,
+  AcquiredCorrection.acquire 4 AcquiredCorrection.exampleTree AcquiredCorrection.initial = some pair ∧
+    ∀ (d e : AcquiredCorrection.Delivery),
+      (d.state =
+          have __src := pair.snd;
+          { openRoute := __src.openRoute, authority := 8, credential := __src.credential, signed := __src.signed,
+            requested := __src.requested, reserve := __src.reserve, time := __src.time, deadline := __src.deadline,
+            issued := __src.issued, delivered := __src.delivered, completed := __src.completed,
+            running := __src.running, generation := __src.generation, version := __src.version,
+            spent := __src.spent }) →
+        (Becoming.DispatchProcessesInherited.process AcquiredCorrection.exampleTree).step d
+            AcquiredCorrection.exampleTicket e →
+          (e.succeeded, e.state.spent, e.state.reserve) = (false, 7, 3)
+Becoming.DispatchProcessesInherited.renewed_search_step_succeeds : ∃ pair t,
+  AcquiredCorrection.acquire 4 Becoming.DispatchProcessesInherited.changedTree
+        Becoming.DispatchProcessesInherited.renewedState =
+      some pair ∧
+    pair.fst.verdict = AcquiredCorrection.Verdict.found t ∧
+      ∀ (d e : AcquiredCorrection.Delivery),
+        d.state = pair.snd →
+          (Becoming.DispatchProcessesInherited.process Becoming.DispatchProcessesInherited.changedTree).step d t e →
+            e.succeeded = true

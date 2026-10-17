@@ -1,0 +1,49 @@
+@Becoming.TrainingProcessesInherited.step_iff : ∀ {s t : Generative.CompositionalAcquisition.Learner}
+  {c : Generative.CompositionalAcquisition.Code},
+  Becoming.TrainingProcessesInherited.trainProcess.step s c t ↔ t = Generative.CompositionalAcquisition.train c s
+@Becoming.TrainingProcessesInherited.step_records : ∀ {s t : Generative.CompositionalAcquisition.Learner}
+  {c : Generative.CompositionalAcquisition.Code},
+  Becoming.TrainingProcessesInherited.trainProcess.step s c t →
+    7 ≤ s.support → t.records = s.records ++ Generative.CompositionalAcquisition.trialRecords c
+@Becoming.TrainingProcessesInherited.step_installs : ∀ {s t : Generative.CompositionalAcquisition.Learner}
+  {c : Generative.CompositionalAcquisition.Code},
+  Becoming.TrainingProcessesInherited.trainProcess.step s c t → 7 ≤ s.support → c.first ≠ c.second → t.code = some c
+@Becoming.TrainingProcessesInherited.step_support : ∀ {s t : Generative.CompositionalAcquisition.Learner}
+  {c : Generative.CompositionalAcquisition.Code},
+  Becoming.TrainingProcessesInherited.trainProcess.step s c t → 7 ≤ s.support → t.support + 7 = s.support
+@Becoming.TrainingProcessesInherited.step_rests_when_short : ∀ {s t : Generative.CompositionalAcquisition.Learner}
+  {c : Generative.CompositionalAcquisition.Code},
+  Becoming.TrainingProcessesInherited.trainProcess.step s c t → s.support < 7 → t = s
+@Becoming.TrainingProcessesInherited.step_code_transfers : ∀ {s t : Generative.CompositionalAcquisition.Learner}
+  {c : Generative.CompositionalAcquisition.Code},
+  Becoming.TrainingProcessesInherited.trainProcess.step s c t →
+    7 ≤ s.support →
+      c.first ≠ c.second →
+        t.code = some (Generative.CompositionalAcquisition.acquire (Generative.CompositionalAcquisition.observe c)) ∧
+          ∀ (e : Generative.CompositionalAcquisition.Expr),
+            Generative.CompositionalAcquisition.eval
+                (Generative.CompositionalAcquisition.acquire (Generative.CompositionalAcquisition.observe c)) e =
+              Generative.CompositionalAcquisition.eval c e
+@Becoming.TrainingProcessesInherited.step_evidence : ∀ {n : Nat} {t : Generative.CompositionalAcquisition.Learner}
+  {c : Generative.CompositionalAcquisition.Code},
+  Becoming.TrainingProcessesInherited.trainProcess.step (Generative.CompositionalAcquisition.initial n) c t →
+    7 ≤ n →
+      Generative.CompositionalAcquisition.readEvidence t.records = some (Generative.CompositionalAcquisition.observe c)
+@Becoming.TrainingProcessesInherited.step_then_execute : ∀ {s t : Generative.CompositionalAcquisition.Learner}
+  {c : Generative.CompositionalAcquisition.Code} (e : Generative.CompositionalAcquisition.Expr),
+  Becoming.TrainingProcessesInherited.trainProcess.step s c t →
+    c.first ≠ c.second →
+      7 + Generative.CompositionalAcquisition.operationCost c e ≤ s.support →
+        ∃ left,
+          Generative.CompositionalAcquisition.execute t e = some (Generative.CompositionalAcquisition.eval c e, left) ∧
+            left + Generative.CompositionalAcquisition.operationCost c e + 7 = s.support
+@Becoming.TrainingProcessesInherited.novel_after_step : ∀ {t : Generative.CompositionalAcquisition.Learner},
+  Becoming.TrainingProcessesInherited.trainProcess.step (Generative.CompositionalAcquisition.initial 11)
+      Generative.CompositionalAcquisition.usual t →
+    Generative.CompositionalAcquisition.execute t Generative.CompositionalAcquisition.novel =
+      some ([false, false, true], 0)
+@Becoming.TrainingProcessesInherited.installed_without_execution : ∀ {t : Generative.CompositionalAcquisition.Learner},
+  Becoming.TrainingProcessesInherited.trainProcess.step (Generative.CompositionalAcquisition.initial 7)
+      Generative.CompositionalAcquisition.usual t →
+    t.code = some Generative.CompositionalAcquisition.usual ∧
+      Generative.CompositionalAcquisition.execute t Generative.CompositionalAcquisition.novel = none

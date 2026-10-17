@@ -1,0 +1,10 @@
+import Becoming.ExtendedClaimFrames
+#check @Becoming.ExtendedClaimFrames.extend_iff
+#check @Becoming.ExtendedClaimFrames.included_iff
+#check @Becoming.ExtendedClaimFrames.strictIncluded_iff
+#check @Becoming.ExtendedClaimFrames.better_gain_iff
+#check @Becoming.ExtendedClaimFrames.better_basic_iff
+#check @Becoming.ExtendedClaimFrames.crossed_incomparable
+#check @Becoming.ExtendedClaimFrames.gain_transfer_iff
+#check @Becoming.ExtendedClaimFrames.fresh_gains_decide
+#check @Becoming.ExtendedClaimFrames.fresh_basic_reverses

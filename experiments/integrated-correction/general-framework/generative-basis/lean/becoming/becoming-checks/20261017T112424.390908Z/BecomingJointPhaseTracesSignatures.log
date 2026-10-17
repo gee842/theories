@@ -1,0 +1,44 @@
+@Becoming.JointPhaseTraces.step_iff : ∀ {s t : Generative.OperativeCoherence.Joint}
+  {a : Generative.RelationalReduction.Event},
+  Becoming.JointPhaseTraces.process.step s a t ↔ t = Generative.RelationalReduction.next s a
+@Becoming.JointPhaseTraces.trace_end : ∀ {v t : Generative.OperativeCoherence.Joint}
+  {word : List Generative.RelationalReduction.Event},
+  Generative.Trace Becoming.JointPhaseTraces.process v word t →
+    t = SystemsOrganization.evolve Generative.RelationalReduction.next v word
+Becoming.JointPhaseTraces.evolve_trace : ∀ (v : Generative.OperativeCoherence.Joint)
+  (word : List Generative.RelationalReduction.Event),
+  Generative.Trace Becoming.JointPhaseTraces.process v word
+    (SystemsOrganization.evolve Generative.RelationalReduction.next v word)
+Becoming.JointPhaseTraces.interaction_forms_joined : Becoming.JointPhaseTraces.process.step
+  (Generative.OperativeCoherence.hControl
+    (Generative.OperativeCoherence.blankControl Generative.OperativeCoherence.basisZero))
+  Generative.RelationalReduction.Event.interact Generative.RelationalReduction.joined
+Becoming.JointPhaseTraces.phase_keeps_local_states : ∀ (t : Generative.OperativeCoherence.Joint),
+  Becoming.JointPhaseTraces.process.step Generative.RelationalReduction.joined
+      Generative.RelationalReduction.Event.shiftPhase t →
+    Generative.RelationalReduction.localStates t =
+      Generative.RelationalReduction.localStates Generative.RelationalReduction.joined
+Becoming.JointPhaseTraces.phase_keeps_masses : ∀ (t : Generative.OperativeCoherence.Joint),
+  Becoming.JointPhaseTraces.process.step Generative.RelationalReduction.joined
+      Generative.RelationalReduction.Event.shiftPhase t →
+    Generative.RelationalReduction.basisMasses t =
+        Generative.RelationalReduction.basisMasses Generative.RelationalReduction.joined ∧
+      Generative.RelationalReduction.basisMasses Generative.RelationalReduction.joined = (1, 0, 0, 1)
+Becoming.JointPhaseTraces.phase_changes_cross : ∀ (t : Generative.OperativeCoherence.Joint),
+  Becoming.JointPhaseTraces.process.step Generative.RelationalReduction.joined
+      Generative.RelationalReduction.Event.shiftPhase t →
+    Generative.RelationalReduction.summarize Generative.RelationalReduction.joined =
+        { zeroMass := 1, oneMass := 1, localCross := 0, jointCross := 1 } ∧
+      Generative.RelationalReduction.summarize t = { zeroMass := 1, oneMass := 1, localCross := 0, jointCross := -1 }
+Becoming.JointPhaseTraces.interaction_tells_apart : (∀ (t : Generative.OperativeCoherence.Joint),
+    Generative.Trace Becoming.JointPhaseTraces.process Generative.RelationalReduction.joined
+        [Generative.RelationalReduction.Event.interact] t →
+      Generative.OperativeCoherence.response (Generative.OperativeCoherence.controlDensity t) = (4, 0, 4)) ∧
+  ∀ (t : Generative.OperativeCoherence.Joint),
+    Generative.Trace Becoming.JointPhaseTraces.process Generative.RelationalReduction.joined
+        [Generative.RelationalReduction.Event.shiftPhase, Generative.RelationalReduction.Event.interact] t →
+      Generative.OperativeCoherence.response (Generative.OperativeCoherence.controlDensity t) = (0, 4, 4)
+Becoming.JointPhaseTraces.no_local_update : ¬∃ update,
+    ∀ (v t : Generative.OperativeCoherence.Joint),
+      Becoming.JointPhaseTraces.process.step v Generative.RelationalReduction.Event.interact t →
+        update (Generative.RelationalReduction.localStates v) = Generative.OperativeCoherence.controlDensity t

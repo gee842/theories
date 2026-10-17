@@ -1,0 +1,5 @@
+import Becoming.DerivationScopeProcesses
+#check @Becoming.DerivationScopeProcesses.relative_on_scope
+#check @Becoming.DerivationScopeProcesses.discharged_on_scope
+#check @Becoming.DerivationScopeProcesses.lemma_extension_on_scope
+#check @Becoming.DerivationScopeProcesses.countermodel_on_scope

@@ -1,0 +1,17 @@
+import Becoming.BoundaryFlows
+#check @Becoming.BoundaryFlows.subTrue_member
+#check @Becoming.BoundaryFlows.superTrue_all_iff
+#check @Becoming.BoundaryFlows.bounded_reach_iff
+#check @Becoming.BoundaryFlows.reach_scopes
+#check @Becoming.BoundaryFlows.unrestricted_iff_superTrue
+#check @Becoming.BoundaryFlows.superTrue_level_free
+#check @Becoming.BoundaryFlows.boundaryInvariant_iff_determinate
+#check @Becoming.BoundaryFlows.boundaryInvariant_iff_extends
+#check @Becoming.BoundaryFlows.own_continuation
+#check @Becoming.BoundaryFlows.only_whole_of_common
+#check @Becoming.BoundaryFlows.shares_iff_total_of_common
+#check @Becoming.BoundaryFlows.not_subTrue_of_invariant
+#check @Becoming.BoundaryFlows.unrestricted_of_presupposed
+#check @Becoming.BoundaryFlows.boundaryInvariant_iff_standpointInvariant
+#check @Becoming.BoundaryFlows.significant_of_presupposed
+#check @Becoming.BoundaryFlows.retains_whole_iff_includes

@@ -1,0 +1,59 @@
+@Becoming.ExtendedClaimFrames.extend_iff : ∀ {S : Type} {A : Type u_1} {I J : Type} (F : Becoming.Frame S A (I ⊕ J))
+  (s : S) (x : I ⊕ J),
+  ConcernExtension.extend (Becoming.ExtendedClaimFrames.old F) (Becoming.ExtendedClaimFrames.fresh F) s x ↔
+    F.realized s x
+@Becoming.ExtendedClaimFrames.included_iff : ∀ {S : Type} {A : Type u_1} {I J : Type} (F : Becoming.Frame S A (I ⊕ J))
+  (a b : S),
+  PracticalJudgment.Included
+      (ConcernExtension.extend (Becoming.ExtendedClaimFrames.old F) (Becoming.ExtendedClaimFrames.fresh F) a)
+      (ConcernExtension.extend (Becoming.ExtendedClaimFrames.old F) (Becoming.ExtendedClaimFrames.fresh F) b) ↔
+    PracticalJudgment.Included (F.realized a) (F.realized b)
+@Becoming.ExtendedClaimFrames.strictIncluded_iff : ∀ {S : Type} {A : Type u_1} {I J : Type}
+  (F : Becoming.Frame S A (I ⊕ J)) (a b : S),
+  PracticalJudgment.StrictIncluded
+      (ConcernExtension.extend (Becoming.ExtendedClaimFrames.old F) (Becoming.ExtendedClaimFrames.fresh F) a)
+      (ConcernExtension.extend (Becoming.ExtendedClaimFrames.old F) (Becoming.ExtendedClaimFrames.fresh F) b) ↔
+    PracticalJudgment.StrictIncluded (F.realized a) (F.realized b)
+@Becoming.ExtendedClaimFrames.better_gain_iff : ∀ {S : Type} {A : Type u_1} {I J C : Type} (p : S → C → Prop)
+  (F : Becoming.Frame S A (I ⊕ J)) (a b : S),
+  PracticalJudgment.Better p
+      (ConcernExtension.extend (Becoming.ExtendedClaimFrames.old F) (Becoming.ExtendedClaimFrames.fresh F)) a b ↔
+    PracticalJudgment.Better p F.realized a b
+@Becoming.ExtendedClaimFrames.better_basic_iff : ∀ {S : Type} {A : Type u_1} {I J G : Type}
+  (F : Becoming.Frame S A (I ⊕ J)) (g : S → G → Prop) (a b : S),
+  PracticalJudgment.Better
+      (ConcernExtension.extend (Becoming.ExtendedClaimFrames.old F) (Becoming.ExtendedClaimFrames.fresh F)) g a b ↔
+    PracticalJudgment.Better F.realized g a b
+@Becoming.ExtendedClaimFrames.crossed_incomparable : ∀ {S : Type} {A : Type u_1} {I J : Type}
+  (F : Becoming.Frame S A (I ⊕ J)) {a b : S},
+  PracticalJudgment.StrictIncluded (Becoming.ExtendedClaimFrames.old F a) (Becoming.ExtendedClaimFrames.old F b) →
+    PracticalJudgment.StrictIncluded (Becoming.ExtendedClaimFrames.fresh F b) (Becoming.ExtendedClaimFrames.fresh F a) →
+      ¬PracticalJudgment.Included (F.realized a) (F.realized b) ∧
+        ¬PracticalJudgment.Included (F.realized b) (F.realized a)
+@Becoming.ExtendedClaimFrames.gain_transfer_iff : ∀ {S : Type} {A : Type u_1} {I J C : Type} (p : S → C → Prop)
+  (F : Becoming.Frame S A (I ⊕ J)) {a b : S},
+  PracticalJudgment.Included (p a) (p b) →
+    PracticalJudgment.Included (p b) (p a) →
+      PracticalJudgment.StrictIncluded (Becoming.ExtendedClaimFrames.old F b) (Becoming.ExtendedClaimFrames.old F a) →
+        (PracticalJudgment.Better p F.realized a b ↔
+          PracticalJudgment.Included (Becoming.ExtendedClaimFrames.fresh F b) (Becoming.ExtendedClaimFrames.fresh F a))
+@Becoming.ExtendedClaimFrames.fresh_gains_decide : ∀ {S : Type} {A : Type u_1} {I J C : Type} (p : S → C → Prop)
+  (F : Becoming.Frame S A (I ⊕ J)) {a b : S},
+  PracticalJudgment.Included (p a) (p b) →
+    PracticalJudgment.Included (p b) (p a) →
+      PracticalJudgment.Included (Becoming.ExtendedClaimFrames.old F a) (Becoming.ExtendedClaimFrames.old F b) →
+        PracticalJudgment.Included (Becoming.ExtendedClaimFrames.old F b) (Becoming.ExtendedClaimFrames.old F a) →
+          PracticalJudgment.StrictIncluded (Becoming.ExtendedClaimFrames.fresh F b)
+              (Becoming.ExtendedClaimFrames.fresh F a) →
+            ¬PracticalJudgment.Better p (Becoming.ExtendedClaimFrames.old F) a b ∧
+              ¬PracticalJudgment.Better p (Becoming.ExtendedClaimFrames.old F) b a ∧
+                PracticalJudgment.Better p F.realized a b
+@Becoming.ExtendedClaimFrames.fresh_basic_reverses : ∀ {S : Type} {A : Type u_1} {I J G R : Type}
+  (F : Becoming.Frame S A (I ⊕ J)) (g : S → G → Prop) (freshGain : S → R → Prop) {a b : S},
+  PracticalJudgment.Included (Becoming.ExtendedClaimFrames.old F a) (Becoming.ExtendedClaimFrames.old F b) →
+    PracticalJudgment.Included (Becoming.ExtendedClaimFrames.old F b) (Becoming.ExtendedClaimFrames.old F a) →
+      PracticalJudgment.StrictIncluded (g b) (g a) →
+        PracticalJudgment.StrictIncluded (Becoming.ExtendedClaimFrames.fresh F a)
+            (Becoming.ExtendedClaimFrames.fresh F b) →
+          PracticalJudgment.Better (Becoming.ExtendedClaimFrames.old F) g a b ∧
+            PracticalJudgment.Better F.realized (ConcernExtension.extend g freshGain) b a

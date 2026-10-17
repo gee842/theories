@@ -1,0 +1,139 @@
+@Becoming.InstallationTraces.bind_eq_some : ∀ {α β : Type} (o : Option α) (f : α → Option β) (b : β),
+  o >>= f = some b ↔ ∃ a, o = some a ∧ f a = some b
+@Becoming.InstallationTraces.map_eq_some : ∀ {α β : Type} {f : α → β} {b : β} {o : Option α},
+  Option.map f o = some b → ∃ a, o = some a ∧ f a = b
+@Becoming.InstallationTraces.some_of_isSome : ∀ {α : Type} {o : Option α}, o.isSome = true → ∃ a, o = some a
+@Becoming.InstallationTraces.any_eq_true : ∀ {α : Type} (f : α → Bool) (o : Option α),
+  Option.any f o = true ↔ ∃ a, o = some a ∧ f a = true
+@Becoming.InstallationTraces.and_left : ∀ {a b : Bool}, (a && b) = true → a = true
+@Becoming.InstallationTraces.and_right : ∀ {a b : Bool}, (a && b) = true → b = true
+@Becoming.InstallationTraces.all_mem : ∀ {α : Type} {f : α → Bool} {l : List α},
+  l.all f = true → ∀ (x : α), x ∈ l → f x = true
+@Becoming.InstallationTraces.find_some : ∀ {α : Type} {p : α → Bool} {l : List α} {a : α},
+  List.find? p l = some a → p a = true
+@Becoming.InstallationTraces.find_none : ∀ {α : Type} {p : α → Bool} {l : List α},
+  List.find? p l = none → ∀ (x : α), x ∈ l → p x = false
+@Becoming.InstallationTraces.none_ne_some : ∀ {α : Type} {a : α}, none ≠ some a
+Becoming.InstallationTraces.protocol_iff : ∀ (r : Bool) (s t : EffectiveCommand.State),
+  EffectiveCommand.protocol r s = some t ↔
+    Generative.Trace Becoming.InstallationTraces.installation s (Becoming.InstallationTraces.protocolMoves r) t
+Becoming.InstallationTraces.run_iff : ∀ (p : AlignmentInquiry.Plan EffectiveCommand.Query Bool)
+  (s u : EffectiveCommand.State),
+  AlignmentInquiry.run EffectiveCommand.interface p s = some u ↔
+    ∃ o, Generative.Trace Becoming.InstallationTraces.installation s (Becoming.InstallationTraces.planMoves p o) u
+Becoming.InstallationTraces.passes_iff : ∀ (p : AlignmentInquiry.Plan EffectiveCommand.Query Bool)
+  (s : EffectiveCommand.State),
+  AlignmentInquiry.passes EffectiveCommand.interface p s = true ↔
+    ∃ o u,
+      Generative.Trace Becoming.InstallationTraces.installation s (Becoming.InstallationTraces.planMoves p o) u ∧
+        u.completed = true
+@Becoming.InstallationTraces.chosen_completes : ∀ {states : List EffectiveCommand.State}
+  {plans : List (AlignmentInquiry.Plan EffectiveCommand.Query Bool)}
+  {p : AlignmentInquiry.Plan EffectiveCommand.Query Bool},
+  AlignmentInquiry.choose EffectiveCommand.interface states plans = some p →
+    ∀ (s : EffectiveCommand.State),
+      s ∈ states →
+        ∃ o u,
+          Generative.Trace Becoming.InstallationTraces.installation s (Becoming.InstallationTraces.planMoves p o) u ∧
+            u.completed = true
+@Becoming.InstallationTraces.none_chosen : ∀ {s₁ s₂ : EffectiveCommand.State}
+  {plans : List (AlignmentInquiry.Plan EffectiveCommand.Query Bool)},
+  AlignmentInquiry.choose EffectiveCommand.interface [s₁, s₂] plans = none →
+    ∀ (p : AlignmentInquiry.Plan EffectiveCommand.Query Bool),
+      p ∈ plans →
+        ¬((∃ o u,
+              Generative.Trace Becoming.InstallationTraces.installation s₁ (Becoming.InstallationTraces.planMoves p o)
+                  u ∧
+                u.completed = true) ∧
+            ∃ o u,
+              Generative.Trace Becoming.InstallationTraces.installation s₂ (Becoming.InstallationTraces.planMoves p o)
+                  u ∧
+                u.completed = true)
+Becoming.InstallationTraces.route_inquiry_completes_both : AlignmentInquiry.choose EffectiveCommand.interface
+      [EffectiveCommand.start false EffectiveCommand.Command.update 4 4,
+        EffectiveCommand.start true EffectiveCommand.Command.update 4 4]
+      EffectiveCommand.plans =
+    some { query := EffectiveCommand.Query.route, negative := false, positive := true } ∧
+  ∀ (s : EffectiveCommand.State),
+    s ∈
+        [EffectiveCommand.start false EffectiveCommand.Command.update 4 4,
+          EffectiveCommand.start true EffectiveCommand.Command.update 4 4] →
+      ∃ o u,
+        Generative.Trace Becoming.InstallationTraces.installation s
+            (Becoming.InstallationTraces.planMoves
+              { query := EffectiveCommand.Query.route, negative := false, positive := true } o)
+            u ∧
+          u.completed = true
+Becoming.InstallationTraces.known_route_completes : ∃ o u,
+  Generative.Trace Becoming.InstallationTraces.installation
+      (EffectiveCommand.start true EffectiveCommand.Command.update 3 3)
+      (Becoming.InstallationTraces.planMoves
+        { query := EffectiveCommand.Query.none, negative := true, positive := false } o)
+      u ∧
+    u.completed = true
+Becoming.InstallationTraces.statewise_not_uniform : (∃ t,
+    Generative.Trace Becoming.InstallationTraces.installation
+      (EffectiveCommand.start false EffectiveCommand.Command.update 3 3)
+      (Becoming.InstallationTraces.protocolMoves false) t) ∧
+  (∃ t,
+      Generative.Trace Becoming.InstallationTraces.installation
+        (EffectiveCommand.start true EffectiveCommand.Command.update 3 3)
+        (Becoming.InstallationTraces.protocolMoves true) t) ∧
+    ∀ (p : AlignmentInquiry.Plan EffectiveCommand.Query Bool),
+      p ∈ EffectiveCommand.plans →
+        ¬((∃ o u,
+              Generative.Trace Becoming.InstallationTraces.installation
+                  (EffectiveCommand.start false EffectiveCommand.Command.update 3 3)
+                  (Becoming.InstallationTraces.planMoves p o) u ∧
+                u.completed = true) ∧
+            ∃ o u,
+              Generative.Trace Becoming.InstallationTraces.installation
+                  (EffectiveCommand.start true EffectiveCommand.Command.update 3 3)
+                  (Becoming.InstallationTraces.planMoves p o) u ∧
+                u.completed = true)
+Becoming.InstallationTraces.omitted_route_fails : (∃ o u,
+    Generative.Trace Becoming.InstallationTraces.installation
+        (EffectiveCommand.start false EffectiveCommand.Command.update 3 3)
+        (Becoming.InstallationTraces.planMoves
+          { query := EffectiveCommand.Query.none, negative := false, positive := false } o)
+        u ∧
+      u.completed = true) ∧
+  ¬∃ o u,
+      Generative.Trace Becoming.InstallationTraces.installation
+        (EffectiveCommand.start true EffectiveCommand.Command.update 3 3)
+        (Becoming.InstallationTraces.planMoves
+          { query := EffectiveCommand.Query.none, negative := false, positive := false } o)
+        u
+Becoming.InstallationTraces.timely_trace : ∃ o u,
+  Generative.Trace Becoming.InstallationTraces.installation
+    (EffectiveCommand.start true EffectiveCommand.Command.update 4 4)
+    (Becoming.InstallationTraces.planMoves
+      { query := EffectiveCommand.Query.route, negative := false, positive := true } o)
+    u
+Becoming.InstallationTraces.late_no_trace : ¬∃ o u,
+    Generative.Trace Becoming.InstallationTraces.installation
+      (EffectiveCommand.start true EffectiveCommand.Command.update 4 4)
+      (Becoming.InstallationTraces.planMoves
+        { query := EffectiveCommand.Query.slow, negative := false, positive := true } o)
+      u
+Becoming.InstallationTraces.shutdown_trace : ∃ o u,
+  Generative.Trace Becoming.InstallationTraces.installation
+      (EffectiveCommand.start true EffectiveCommand.Command.shutdown 4 4)
+      (Becoming.InstallationTraces.planMoves
+        { query := EffectiveCommand.Query.route, negative := false, positive := true } o)
+      u ∧
+    u.completed = true ∧ u.running = false ∧ u.reserve = 0 ∧ u.spent = 4
+Becoming.InstallationTraces.replacement_trace : ∃ o u,
+  Generative.Trace Becoming.InstallationTraces.installation
+      (EffectiveCommand.start false EffectiveCommand.Command.replace 4 4)
+      (Becoming.InstallationTraces.planMoves
+        { query := EffectiveCommand.Query.route, negative := false, positive := true } o)
+      u ∧
+    u.completed = true ∧ u.generation = 1 ∧ u.version = 0
+Becoming.InstallationTraces.update_trace : ∃ o u,
+  Generative.Trace Becoming.InstallationTraces.installation
+      (EffectiveCommand.start true EffectiveCommand.Command.update 4 4)
+      (Becoming.InstallationTraces.planMoves
+        { query := EffectiveCommand.Query.route, negative := false, positive := true } o)
+      u ∧
+    u.completed = true ∧ u.generation = 0 ∧ u.version = 1

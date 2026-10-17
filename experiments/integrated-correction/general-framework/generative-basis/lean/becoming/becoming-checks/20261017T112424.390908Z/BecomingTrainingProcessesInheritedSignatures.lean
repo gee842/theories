@@ -1,0 +1,11 @@
+import Becoming.TrainingProcessesInherited
+#check @Becoming.TrainingProcessesInherited.step_iff
+#check @Becoming.TrainingProcessesInherited.step_records
+#check @Becoming.TrainingProcessesInherited.step_installs
+#check @Becoming.TrainingProcessesInherited.step_support
+#check @Becoming.TrainingProcessesInherited.step_rests_when_short
+#check @Becoming.TrainingProcessesInherited.step_code_transfers
+#check @Becoming.TrainingProcessesInherited.step_evidence
+#check @Becoming.TrainingProcessesInherited.step_then_execute
+#check @Becoming.TrainingProcessesInherited.novel_after_step
+#check @Becoming.TrainingProcessesInherited.installed_without_execution

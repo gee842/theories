@@ -1,0 +1,9 @@
+import Becoming.TreeSearchRunsInherited
+#check @Becoming.TreeSearchRunsInherited.spent_le_step
+#check @Becoming.TreeSearchRunsInherited.found_located
+#check @Becoming.TreeSearchRunsInherited.found_real
+#check @Becoming.TreeSearchRunsInherited.exhausted_dead
+#check @Becoming.TreeSearchRunsInherited.steps_settle
+#check @Becoming.TreeSearchRunsInherited.inhabited_found
+#check @Becoming.TreeSearchRunsInherited.acquire_charges_run
+#check @Becoming.TreeSearchRunsInherited.search_then_dispatch

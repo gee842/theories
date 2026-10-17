@@ -1,0 +1,24 @@
+@Becoming.StrictTransportRuns.strict_above_along : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3}
+  {F : Becoming.Frame S A C} {Le : S → S → Prop},
+  GenerativeLossComparison.Transitive Le →
+    GenerativeLossComparison.Compatible (fun s t => ∀ (c : C), F.realized s c → F.realized t c) Le →
+      ∀ (r : Becoming.Run F.P) {baseline : S},
+        GenerativeLossComparison.Strict Le baseline (r.state 0) →
+          (∀ (n : Nat) (c : C), F.realized (r.state n) c → F.realized (r.state (n + 1)) c) →
+            ∀ (n : Nat), GenerativeLossComparison.Strict Le baseline (r.state n)
+@Becoming.StrictTransportRuns.strict_below_along : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3}
+  {F : Becoming.Frame S A C} {Le : S → S → Prop},
+  GenerativeLossComparison.Transitive Le →
+    GenerativeLossComparison.Compatible (fun s t => ∀ (c : C), F.realized s c → F.realized t c) Le →
+      ∀ (r : Becoming.Run F.P) {baseline : S},
+        GenerativeLossComparison.Strict Le (r.state 0) baseline →
+          (∀ (n : Nat) (c : C), F.realized (r.state (n + 1)) c → F.realized (r.state n) c) →
+            ∀ (n : Nat), GenerativeLossComparison.Strict Le (r.state n) baseline
+@Becoming.StrictTransportRuns.reachable_reason : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {s : S}
+  {Le Reason : S → S → Prop},
+  GenerativeLossComparison.Transitive Le →
+    GenerativeLossComparison.PracticalBridge Le (Becoming.Reach P s) (fun t => t) Reason →
+      ∀ {baseline original improved : S},
+        Becoming.Reach P s baseline →
+          Becoming.Reach P s improved →
+            GenerativeLossComparison.Strict Le baseline original → Le original improved → Reason baseline improved

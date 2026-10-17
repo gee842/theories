@@ -1,0 +1,160 @@
+@Becoming.InspectionProcessesInherited.inspect_some : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s : EvidenceQualifiedCorrection.Situation} {c : FallibleInspection.Audited},
+  FallibleInspection.inspect extended reports s = some c →
+    c.situation.actual = s.actual ∧ c.situation.candidates = FallibleInspection.posterior extended s.candidates reports
+@Becoming.InspectionProcessesInherited.step_candidates : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s t : EvidenceQualifiedCorrection.Situation},
+  (Becoming.InspectionProcessesInherited.audit extended).step s (some reports) t →
+    t.candidates = FallibleInspection.posterior extended s.candidates reports
+@Becoming.InspectionProcessesInherited.step_narrows : ∀ {extended : Bool} {s t : EvidenceQualifiedCorrection.Situation}
+  {m : Option FallibleInspection.Reports},
+  (Becoming.InspectionProcessesInherited.audit extended).step s m t →
+    ∀ (h : EvidenceQualifiedCorrection.Model), h ∈ t.candidates → h ∈ s.candidates
+@Becoming.InspectionProcessesInherited.candidates_narrow : ∀ {extended : Bool}
+  (r : Becoming.Run (Becoming.InspectionProcessesInherited.audit extended)) (n : Nat)
+  (h : EvidenceQualifiedCorrection.Model), h ∈ (r.state (n + 1)).candidates → h ∈ (r.state n).candidates
+@Becoming.InspectionProcessesInherited.step_keeps_actual : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s t : EvidenceQualifiedCorrection.Situation},
+  (Becoming.InspectionProcessesInherited.audit extended).step s (some reports) t →
+    s.actual ∈ s.candidates →
+      ∀ (bad : List FaultTolerantCorrection.Domain),
+        bad ∈ FallibleInspection.auditFaults extended s.actual →
+          (∀ (d : FaultTolerantCorrection.Domain),
+              d ∈ FallibleInspection.auditRoster extended →
+                ¬d ∈ bad → reports d = none ∨ reports d = some (EvidenceQualifiedCorrection.diagnostic s.actual)) →
+            t.actual = s.actual ∧ t.actual ∈ t.candidates
+@Becoming.InspectionProcessesInherited.step_pool_sound : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s t : EvidenceQualifiedCorrection.Situation},
+  (Becoming.InspectionProcessesInherited.audit extended).step s (some reports) t →
+    ∀ (desc : EvidenceQualifiedCorrection.Model → CorrectionReconfiguration.Arrangement),
+      s.actual ∈ s.candidates →
+        ∀ (bad : List FaultTolerantCorrection.Domain),
+          bad ∈ FallibleInspection.auditFaults extended s.actual →
+            (∀ (d : FaultTolerantCorrection.Domain),
+                d ∈ FallibleInspection.auditRoster extended →
+                  ¬d ∈ bad → reports d = none ∨ reports d = some (EvidenceQualifiedCorrection.diagnostic s.actual)) →
+              ∀ (roots : List Nat),
+                CorrectionReconfiguration.Covered (desc s.actual) roots →
+                  ∀ (supports : FaultTolerantCorrection.Domain → Bool) (P : Prop),
+                    (∀ (d : FaultTolerantCorrection.Domain),
+                        d ∈ (desc s.actual).roster →
+                          CorrectionReconfiguration.fails ((desc s.actual).vulnerability d) roots = false →
+                            supports d = true → P) →
+                      FaultTolerantCorrection.certificate (desc s.actual).roster
+                            (EvidenceQualifiedCorrection.pooled desc t.candidates) supports =
+                          true →
+                        P
+@Becoming.InspectionProcessesInherited.step_then_completes : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s t : EvidenceQualifiedCorrection.Situation},
+  (Becoming.InspectionProcessesInherited.audit extended).step s (some reports) t →
+    ∀ (desc : EvidenceQualifiedCorrection.Model → CorrectionReconfiguration.Arrangement),
+      s.actual ∈ s.candidates →
+        ∀ (bad : List FaultTolerantCorrection.Domain),
+          bad ∈ FallibleInspection.auditFaults extended s.actual →
+            (∀ (d : FaultTolerantCorrection.Domain),
+                d ∈ FallibleInspection.auditRoster extended →
+                  ¬d ∈ bad → reports d = none ∨ reports d = some (EvidenceQualifiedCorrection.diagnostic s.actual)) →
+              ∀ (roots : List Nat),
+                CorrectionReconfiguration.Covered (desc s.actual) roots →
+                  FaultTolerantCorrection.separated (desc s.actual).roster
+                      (EvidenceQualifiedCorrection.pooled desc t.candidates) →
+                    ∀ (w : FaultTolerantCorrection.Installation) (p : FaultTolerantCorrection.Request)
+                      (reads : FaultTolerantCorrection.Readings) (approvals : FaultTolerantCorrection.Approvals),
+                      FaultTolerantCorrection.fresh w p = true →
+                        (∀ (d : FaultTolerantCorrection.Domain),
+                            d ∈ (desc s.actual).roster →
+                              CorrectionReconfiguration.fails ((desc s.actual).vulnerability d) roots = false →
+                                reads d = some (FaultTolerantCorrection.expected p)) →
+                          (∀ (d : FaultTolerantCorrection.Domain),
+                              d ∈ (desc s.actual).roster →
+                                CorrectionReconfiguration.fails ((desc s.actual).vulnerability d) roots = false →
+                                  approvals d = some p) →
+                            (∀ (d : FaultTolerantCorrection.Domain),
+                                d ∈ (desc s.actual).roster →
+                                  CorrectionReconfiguration.fails ((desc s.actual).vulnerability d) roots = false →
+                                    ∀ (o : FaultTolerantCorrection.Observation),
+                                      reads d = some o → o = FaultTolerantCorrection.observed w p.address) →
+                              (∀ (d : FaultTolerantCorrection.Domain),
+                                  d ∈ (desc s.actual).roster →
+                                    CorrectionReconfiguration.fails ((desc s.actual).vulnerability d) roots = false →
+                                      approvals d = some p → FaultTolerantCorrection.withinMandate w p = true) →
+                                (desc s.actual).roster.length * (List.length p.address + 2) + 3 ≤ w.state.reserve →
+                                  w.state.time + (desc s.actual).roster.length * (List.length p.address + 2) + 3 ≤
+                                      w.state.deadline →
+                                    (FaultTolerantCorrection.guardedExecute (desc s.actual).roster
+                                            (EvidenceQualifiedCorrection.pooled desc t.candidates)
+                                            (EvidenceQualifiedCorrection.pooled desc t.candidates) w p reads
+                                            approvals).succeeded =
+                                        true ∧
+                                      (FaultTolerantCorrection.guardedExecute (desc s.actual).roster
+                                                  (EvidenceQualifiedCorrection.pooled desc t.candidates)
+                                                  (EvidenceQualifiedCorrection.pooled desc t.candidates) w p reads
+                                                  approvals).installation.state.completed =
+                                          true ∧
+                                        FaultTolerantCorrection.withinMandate w p = true
+@Becoming.InspectionProcessesInherited.denied_no_trace : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s : EvidenceQualifiedCorrection.Situation},
+  s.queryAllowed = false →
+    ¬∃ t u,
+        (Becoming.InspectionProcessesInherited.audit extended).step s (some reports) t ∧
+          (Becoming.InspectionProcessesInherited.audit extended).step t none u
+@Becoming.InspectionProcessesInherited.run_inspected : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s : EvidenceQualifiedCorrection.Situation} {c : FallibleInspection.Audited},
+  FallibleInspection.inspect extended reports s = some c →
+    FallibleInspection.run extended reports s = do
+      let result ← EvidenceQualifiedCorrection.respond c.situation ()
+      pure { situation := result, transcript := c.transcript }
+@Becoming.InspectionProcessesInherited.run_uninspected : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s : EvidenceQualifiedCorrection.Situation},
+  FallibleInspection.inspect extended reports s = none → FallibleInspection.run extended reports s = none
+@Becoming.InspectionProcessesInherited.trace_iff_run : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s u : EvidenceQualifiedCorrection.Situation},
+  Generative.Trace (Becoming.InspectionProcessesInherited.audit extended) s [some reports, none] u ↔
+    Option.map FallibleInspection.Audited.situation (FallibleInspection.run extended reports s) = some u
+@Becoming.InspectionProcessesInherited.outcome_of_trace : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s u : EvidenceQualifiedCorrection.Situation},
+  Generative.Trace (Becoming.InspectionProcessesInherited.audit extended) s [some reports, none] u →
+    FallibleInspection.outcome extended reports s = u
+@Becoming.InspectionProcessesInherited.trace_of_outcome_ne : ∀ {extended : Bool} {reports : FallibleInspection.Reports}
+  {s : EvidenceQualifiedCorrection.Situation},
+  FallibleInspection.outcome extended reports s ≠ s →
+    Generative.Trace (Becoming.InspectionProcessesInherited.audit extended) s [some reports, none]
+      (FallibleInspection.outcome extended reports s)
+Becoming.InspectionProcessesInherited.extended_trace_completes : Generative.Trace
+    (Becoming.InspectionProcessesInherited.audit true)
+    (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 16 16)
+    [some FallibleInspection.splitReports, none]
+    (FallibleInspection.outcome true FallibleInspection.splitReports
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 16 16)) ∧
+  ∀ (u : EvidenceQualifiedCorrection.Situation),
+    Generative.Trace (Becoming.InspectionProcessesInherited.audit true)
+        (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 16 16)
+        [some FallibleInspection.splitReports, none] u →
+      u.candidates = [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+        EvidenceQualifiedCorrection.achieved u = true ∧
+          u.installation.state.spent = 16 ∧ u.installation.state.reserve = 0 ∧ u.installation.serial = 1
+Becoming.InspectionProcessesInherited.four_witness_trace_uncertified : Generative.Trace
+    (Becoming.InspectionProcessesInherited.audit false)
+    (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 16 16)
+    [some FallibleInspection.splitReports, none]
+    (FallibleInspection.outcome false FallibleInspection.splitReports
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 16 16)) ∧
+  ∀ (u : EvidenceQualifiedCorrection.Situation),
+    Generative.Trace (Becoming.InspectionProcessesInherited.audit false)
+        (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 16 16)
+        [some FallibleInspection.splitReports, none] u →
+      u.candidates = EvidenceQualifiedCorrection.hypotheses ∧
+        EvidenceQualifiedCorrection.achieved u = false ∧ u.installation.state.spent = 12
+Becoming.InspectionProcessesInherited.extended_trace_short_of_reserve : Generative.Trace
+    (Becoming.InspectionProcessesInherited.audit true)
+    (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 15 15)
+    [some FallibleInspection.splitReports, none]
+    (FallibleInspection.outcome true FallibleInspection.splitReports
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 15 15)) ∧
+  ∀ (u : EvidenceQualifiedCorrection.Situation),
+    Generative.Trace (Becoming.InspectionProcessesInherited.audit true)
+        (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 15 15)
+        [some FallibleInspection.splitReports, none] u →
+      u.candidates = [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+        EvidenceQualifiedCorrection.achieved u = false ∧
+          u.installation.state.spent = 13 ∧ u.installation.state.reserve = 2

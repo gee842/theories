@@ -1,0 +1,375 @@
+Becoming.TransactionTracesInherited.outcome_step : ∀ (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (x : Becoming.TransactionTracesInherited.Transaction),
+  (Becoming.TransactionTracesInherited.monitor roster rf af).step w
+    (x, (FaultTolerantCorrection.execute roster rf af w x.request x.reads x.approvals).succeeded)
+    (FaultTolerantCorrection.execute roster rf af w x.request x.reads x.approvals).installation
+@Becoming.TransactionTracesInherited.step_iff : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w w' : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction} {b : Bool},
+  (Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, b) w' ↔
+    (FaultTolerantCorrection.execute roster rf af w x.request x.reads x.approvals).installation = w' ∧
+      (FaultTolerantCorrection.execute roster rf af w x.request x.reads x.approvals).succeeded = b
+@Becoming.TransactionTracesInherited.completed_of : ∀ {o : FaultTolerantCorrection.Outcome},
+  o.succeeded = true → o = { installation := o.installation, succeeded := true }
+@Becoming.TransactionTracesInherited.failed_of : ∀ {o : FaultTolerantCorrection.Outcome},
+  o.succeeded = false → o = { installation := o.installation, succeeded := false }
+@Becoming.TransactionTracesInherited.completed_succeeded : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w w' : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction},
+  (Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w' →
+    (FaultTolerantCorrection.execute roster rf af w x.request x.reads x.approvals).succeeded = true
+@Becoming.TransactionTracesInherited.no_completion_of : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction},
+  (FaultTolerantCorrection.execute roster rf af w x.request x.reads x.approvals).succeeded = false →
+    ∀ (w' : FaultTolerantCorrection.Installation),
+      ¬(Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w'
+@Becoming.TransactionTracesInherited.succeeded_gate : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w : FaultTolerantCorrection.Installation}
+  {p : FaultTolerantCorrection.Request} {reads : FaultTolerantCorrection.Readings}
+  {approvals : FaultTolerantCorrection.Approvals},
+  (FaultTolerantCorrection.execute roster rf af w p reads approvals).succeeded = true →
+    FaultTolerantCorrection.gate roster rf af w p reads approvals = true
+@Becoming.TransactionTracesInherited.gate_closed_no_completion : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction},
+  FaultTolerantCorrection.gate roster rf af w x.request x.reads x.approvals = false →
+    ∀ (w' : FaultTolerantCorrection.Installation),
+      ¬(Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w'
+@Becoming.TransactionTracesInherited.stale_no_completion : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction},
+  x.request.serial ≠ w.serial ∨ x.request.epoch ≠ w.state.authority →
+    ∀ (w' : FaultTolerantCorrection.Installation),
+      ¬(Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w'
+@Becoming.TransactionTracesInherited.completion_within_mandate : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w w' : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction} {bad : List FaultTolerantCorrection.Domain},
+  bad ∈ af →
+    (∀ (d : FaultTolerantCorrection.Domain),
+        d ∈ roster →
+          ¬d ∈ bad → x.approvals d = some x.request → FaultTolerantCorrection.withinMandate w x.request = true) →
+      (Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w' →
+        FaultTolerantCorrection.withinMandate w x.request = true
+@Becoming.TransactionTracesInherited.forbidden_no_completion : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction} {bad : List FaultTolerantCorrection.Domain},
+  bad ∈ af →
+    (∀ (d : FaultTolerantCorrection.Domain),
+        d ∈ roster →
+          ¬d ∈ bad → x.approvals d = some x.request → FaultTolerantCorrection.withinMandate w x.request = true) →
+      FaultTolerantCorrection.permits w.mandate x.request.command = false →
+        ∀ (w' : FaultTolerantCorrection.Installation),
+          ¬(Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w'
+@Becoming.TransactionTracesInherited.completion_advances_serial : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w w' : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction},
+  (Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w' → w'.serial = w.serial + 1
+@Becoming.TransactionTracesInherited.replay_no_trace : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w w'' : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction},
+  x.request.serial = w.serial →
+    ∀ (laterReads : FaultTolerantCorrection.Readings) (laterApprovals : FaultTolerantCorrection.Approvals),
+      ¬Generative.Trace (Becoming.TransactionTracesInherited.monitor roster rf af) w
+          [(x, true), ({ request := x.request, reads := laterReads, approvals := laterApprovals }, true)] w''
+@Becoming.TransactionTracesInherited.completion_exact : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction},
+  FaultTolerantCorrection.gate roster rf af w x.request x.reads x.approvals = true →
+    AcquiredCorrection.locate w.root x.request.address = some x.request.key →
+      roster.length * (List.length x.request.address + 2) + 3 ≤ w.state.reserve →
+        w.state.time + roster.length * (List.length x.request.address + 2) + 3 ≤ w.state.deadline →
+          ∃ w',
+            (Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w' ∧
+              w'.state.completed = true ∧
+                w'.serial = w.serial + 1 ∧
+                  w'.state.spent = w.state.spent + (roster.length * (List.length x.request.address + 2) + 3)
+@Becoming.TransactionTracesInherited.quorum_completes : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction} (readBad issueBad : List FaultTolerantCorrection.Domain),
+  readBad ∈ rf →
+    issueBad ∈ af →
+      FaultTolerantCorrection.separated roster rf →
+        FaultTolerantCorrection.separated roster af →
+          FaultTolerantCorrection.fresh w x.request = true →
+            (∀ (d : FaultTolerantCorrection.Domain),
+                d ∈ roster → ¬d ∈ readBad → x.reads d = some (FaultTolerantCorrection.expected x.request)) →
+              (∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ issueBad → x.approvals d = some x.request) →
+                (∀ (d : FaultTolerantCorrection.Domain),
+                    d ∈ roster →
+                      ¬d ∈ readBad →
+                        ∀ (o : FaultTolerantCorrection.Observation),
+                          x.reads d = some o → o = FaultTolerantCorrection.observed w x.request.address) →
+                  (∀ (d : FaultTolerantCorrection.Domain),
+                      d ∈ roster →
+                        ¬d ∈ issueBad →
+                          x.approvals d = some x.request → FaultTolerantCorrection.withinMandate w x.request = true) →
+                    roster.length * (List.length x.request.address + 2) + 3 ≤ w.state.reserve →
+                      w.state.time + roster.length * (List.length x.request.address + 2) + 3 ≤ w.state.deadline →
+                        ∃ w',
+                          (Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w' ∧
+                            w'.state.completed = true ∧ FaultTolerantCorrection.withinMandate w x.request = true
+@Becoming.TransactionTracesInherited.guarded_forbidden_no_completion : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction},
+  FaultTolerantCorrection.permits w.mandate x.request.command = false →
+    ∀ (w' : FaultTolerantCorrection.Installation),
+      ¬(Becoming.TransactionTracesInherited.guardedMonitor roster rf af).step w (x, true) w'
+@Becoming.TransactionTracesInherited.guarded_step_iff : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w w' : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction} {b : Bool},
+  FaultTolerantCorrection.permits w.mandate x.request.command = true →
+    ((Becoming.TransactionTracesInherited.guardedMonitor roster rf af).step w (x, b) w' ↔
+      (Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, b) w')
+@Becoming.TransactionTracesInherited.guarded_keeps_completion : ∀ {roster : List FaultTolerantCorrection.Domain}
+  {rf af : FaultTolerantCorrection.Envelope} {w w' : FaultTolerantCorrection.Installation}
+  {x : Becoming.TransactionTracesInherited.Transaction},
+  FaultTolerantCorrection.withinMandate w x.request = true →
+    (Becoming.TransactionTracesInherited.monitor roster rf af).step w (x, true) w' →
+      w'.state.completed = true →
+        ∃ w'',
+          (Becoming.TransactionTracesInherited.guardedMonitor roster rf af).step w (x, true) w'' ∧
+            w''.state.completed = true
+Becoming.TransactionTracesInherited.compromised_issuer_no_completion : ∀ (w' : FaultTolerantCorrection.Installation),
+  ¬(Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+          FaultTolerantCorrection.singleFault).step
+      FaultTolerantCorrection.initial
+      ({
+          request :=
+            have __src := FaultTolerantCorrection.request;
+            { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+              command := EffectiveCommand.Command.update },
+          reads :=
+            FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial
+              (have __src := FaultTolerantCorrection.request;
+              { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+                command := EffectiveCommand.Command.update }),
+          approvals := fun d =>
+            if (d == 0) = true then
+              some
+                (have __src := FaultTolerantCorrection.request;
+                { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+                  command := EffectiveCommand.Command.update })
+            else none },
+        true)
+      w'
+Becoming.TransactionTracesInherited.two_faithful_completion : ∃ w',
+  (Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+          FaultTolerantCorrection.singleFault).step
+      FaultTolerantCorrection.initial
+      ({ request := FaultTolerantCorrection.request,
+          reads := fun d =>
+            if (d == 0) = true then none
+            else some (FaultTolerantCorrection.observed FaultTolerantCorrection.initial []),
+          approvals := fun d => if (d == 0) = true then none else some FaultTolerantCorrection.request },
+        true)
+      w' ∧
+    w'.state.running = false ∧ w'.state.spent = 9 ∧ w'.serial = 1
+@Becoming.TransactionTracesInherited.consumed_no_trace : ∀ {w'' : FaultTolerantCorrection.Installation},
+  ¬Generative.Trace
+      (Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+        FaultTolerantCorrection.singleFault)
+      FaultTolerantCorrection.initial
+      [({ request := FaultTolerantCorrection.request,
+            reads :=
+              FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request,
+            approvals :=
+              FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial
+                FaultTolerantCorrection.request },
+          true),
+        ({ request := FaultTolerantCorrection.request,
+            reads :=
+              FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request,
+            approvals :=
+              FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial
+                FaultTolerantCorrection.request },
+          true)]
+      w''
+Becoming.TransactionTracesInherited.changed_command_no_completion : ∀ (w' : FaultTolerantCorrection.Installation),
+  ¬(Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+          FaultTolerantCorrection.singleFault).step
+      FaultTolerantCorrection.initial
+      ({
+          request :=
+            have __src := FaultTolerantCorrection.request;
+            { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+              command := EffectiveCommand.Command.update },
+          reads := FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request,
+          approvals :=
+            FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial FaultTolerantCorrection.request },
+        true)
+      w'
+Becoming.TransactionTracesInherited.correlated_model_blocks : (∃ w',
+    (Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+          FaultTolerantCorrection.singleFault).step
+      FaultTolerantCorrection.initial
+      ({
+          request :=
+            have __src := FaultTolerantCorrection.request;
+            { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+              command := EffectiveCommand.Command.update },
+          reads :=
+            FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial
+              (have __src := FaultTolerantCorrection.request;
+              { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+                command := EffectiveCommand.Command.update }),
+          approvals := fun d =>
+            if (d == 2) = true then none
+            else
+              some
+                (have __src := FaultTolerantCorrection.request;
+                { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+                  command := EffectiveCommand.Command.update }) },
+        true)
+      w') ∧
+  FaultTolerantCorrection.permits FaultTolerantCorrection.initial.mandate EffectiveCommand.Command.update = false ∧
+    ∀ (w' : FaultTolerantCorrection.Installation),
+      ¬(Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster3 FaultTolerantCorrection.correlated3
+              FaultTolerantCorrection.correlated3).step
+          FaultTolerantCorrection.initial
+          ({
+              request :=
+                have __src := FaultTolerantCorrection.request;
+                { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+                  command := EffectiveCommand.Command.update },
+              reads :=
+                FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial
+                  (have __src := FaultTolerantCorrection.request;
+                  { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+                    command := EffectiveCommand.Command.update }),
+              approvals := fun d =>
+                if (d == 2) = true then none
+                else
+                  some
+                    (have __src := FaultTolerantCorrection.request;
+                    { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+                      command := EffectiveCommand.Command.update }) },
+            true)
+          w'
+Becoming.TransactionTracesInherited.distinct_support_completion : ∃ w',
+  (Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster4 FaultTolerantCorrection.correlated4
+          FaultTolerantCorrection.correlated4).step
+      FaultTolerantCorrection.initial
+      ({ request := FaultTolerantCorrection.request,
+          reads := fun d =>
+            if d < 2 then none else some (FaultTolerantCorrection.observed FaultTolerantCorrection.initial []),
+          approvals := fun d => if d < 2 then none else some FaultTolerantCorrection.request },
+        true)
+      w' ∧
+    w'.state.running = false ∧ w'.state.spent = 11
+Becoming.TransactionTracesInherited.redundancy_exhausts : (∃ w',
+    (Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+            FaultTolerantCorrection.singleFault).step
+        (have __src := FaultTolerantCorrection.initial;
+        { root := __src.root, state := EffectiveCommand.start true EffectiveCommand.Command.shutdown 8 20,
+          serial := __src.serial, mandate := __src.mandate })
+        ({ request := FaultTolerantCorrection.request,
+            reads :=
+              FaultTolerantCorrection.correctReads
+                (have __src := FaultTolerantCorrection.initial;
+                { root := __src.root, state := EffectiveCommand.start true EffectiveCommand.Command.shutdown 8 20,
+                  serial := __src.serial, mandate := __src.mandate })
+                FaultTolerantCorrection.request,
+            approvals :=
+              FaultTolerantCorrection.correctApprovals
+                (have __src := FaultTolerantCorrection.initial;
+                { root := __src.root, state := EffectiveCommand.start true EffectiveCommand.Command.shutdown 8 20,
+                  serial := __src.serial, mandate := __src.mandate })
+                FaultTolerantCorrection.request },
+          false)
+        w' ∧
+      w'.state.spent = 6 ∧ w'.state.reserve = 2) ∧
+  ∀ (w' : FaultTolerantCorrection.Installation),
+    ¬(Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+            FaultTolerantCorrection.singleFault).step
+        (have __src := FaultTolerantCorrection.initial;
+        { root := __src.root, state := EffectiveCommand.start true EffectiveCommand.Command.shutdown 8 20,
+          serial := __src.serial, mandate := __src.mandate })
+        ({ request := FaultTolerantCorrection.request,
+            reads :=
+              FaultTolerantCorrection.correctReads
+                (have __src := FaultTolerantCorrection.initial;
+                { root := __src.root, state := EffectiveCommand.start true EffectiveCommand.Command.shutdown 8 20,
+                  serial := __src.serial, mandate := __src.mandate })
+                FaultTolerantCorrection.request,
+            approvals :=
+              FaultTolerantCorrection.correctApprovals
+                (have __src := FaultTolerantCorrection.initial;
+                { root := __src.root, state := EffectiveCommand.start true EffectiveCommand.Command.shutdown 8 20,
+                  serial := __src.serial, mandate := __src.mandate })
+                FaultTolerantCorrection.request },
+          true)
+        w'
+Becoming.TransactionTracesInherited.direct_guard_no_completion : ∀ (w' : FaultTolerantCorrection.Installation),
+  ¬(Becoming.TransactionTracesInherited.guardedMonitor FaultTolerantCorrection.roster3
+          FaultTolerantCorrection.singleFault FaultTolerantCorrection.singleFault).step
+      FaultTolerantCorrection.initial
+      ({
+          request :=
+            have __src := FaultTolerantCorrection.request;
+            { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+              command := EffectiveCommand.Command.update },
+          reads :=
+            FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial
+              (have __src := FaultTolerantCorrection.request;
+              { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+                command := EffectiveCommand.Command.update }),
+          approvals := fun d =>
+            if (d == 2) = true then none
+            else
+              some
+                (have __src := FaultTolerantCorrection.request;
+                { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+                  command := EffectiveCommand.Command.update }) },
+        true)
+      w'
+Becoming.TransactionTracesInherited.old_readings_no_completion : FaultTolerantCorrection.gate
+      FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault FaultTolerantCorrection.singleFault
+      (have __src := FaultTolerantCorrection.initial;
+      { root := AcquiredCorrection.Tree.endpoint false, state := __src.state, serial := __src.serial,
+        mandate := __src.mandate })
+      FaultTolerantCorrection.request
+      (FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request)
+      (FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial FaultTolerantCorrection.request) =
+    true ∧
+  ∀ (w' : FaultTolerantCorrection.Installation),
+    ¬(Becoming.TransactionTracesInherited.guardedMonitor FaultTolerantCorrection.roster3
+            FaultTolerantCorrection.singleFault FaultTolerantCorrection.singleFault).step
+        (have __src := FaultTolerantCorrection.initial;
+        { root := AcquiredCorrection.Tree.endpoint false, state := __src.state, serial := __src.serial,
+          mandate := __src.mandate })
+        ({ request := FaultTolerantCorrection.request,
+            reads :=
+              FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request,
+            approvals :=
+              FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial
+                FaultTolerantCorrection.request },
+          true)
+        w'
+Becoming.TransactionTracesInherited.narrowed_mandate_guarded : (∃ w',
+    (Becoming.TransactionTracesInherited.monitor FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+          FaultTolerantCorrection.singleFault).step
+      (have __src := FaultTolerantCorrection.initial;
+      { root := __src.root, state := __src.state, serial := __src.serial,
+        mandate := { update := false, replace := false, shutdown := false } })
+      ({ request := FaultTolerantCorrection.request,
+          reads := FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request,
+          approvals :=
+            FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial FaultTolerantCorrection.request },
+        true)
+      w') ∧
+  ∀ (w' : FaultTolerantCorrection.Installation),
+    ¬(Becoming.TransactionTracesInherited.guardedMonitor FaultTolerantCorrection.roster3
+            FaultTolerantCorrection.singleFault FaultTolerantCorrection.singleFault).step
+        (have __src := FaultTolerantCorrection.initial;
+        { root := __src.root, state := __src.state, serial := __src.serial,
+          mandate := { update := false, replace := false, shutdown := false } })
+        ({ request := FaultTolerantCorrection.request,
+            reads :=
+              FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request,
+            approvals :=
+              FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial
+                FaultTolerantCorrection.request },
+          true)
+        w'

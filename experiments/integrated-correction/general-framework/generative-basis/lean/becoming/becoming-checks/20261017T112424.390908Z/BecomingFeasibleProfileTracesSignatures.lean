@@ -1,0 +1,8 @@
+import Becoming.FeasibleProfileTraces
+#check @Becoming.FeasibleProfileTraces.feasible_nil
+#check @Becoming.FeasibleProfileTraces.stable_of_same
+#check @Becoming.FeasibleProfileTraces.stable_iff_letterwise
+#check @Becoming.FeasibleProfileTraces.joint_obstruction_refutes_stability
+#check @Becoming.FeasibleProfileTraces.obstruction_locates_changed_profile
+#check @Becoming.FeasibleProfileTraces.same_future_extends
+#check @Becoming.FeasibleProfileTraces.unrestricted_stable

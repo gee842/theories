@@ -1,0 +1,11 @@
+@Becoming.ContextArrivalTraces.step_arrives : ∀ {I : Type u_1} {S : Type u_2} {A : Type u_3}
+  (R : I → S → A → I → S → Prop) {possible : I → Prop} {i j : I} {s t : S} {a : A},
+  possible i →
+    (Generative.BecomingCompatibility.evolving R).step (i, s) a (j, t) →
+      Generative.BecomingCompatibility.Arrives R possible s [a] t j
+@Becoming.ContextArrivalTraces.empty_support_no_arrival : ∀ {I : Type u_1} {S : Type u_2} {A : Type u_3}
+  (R : I → S → A → I → S → Prop) (s : S) (a : A) (t : S) (j : I),
+  ¬Generative.BecomingCompatibility.Arrives R (fun x => False) s [a] t j
+Becoming.ContextArrivalTraces.changed_context_arrives : Generative.BecomingCompatibility.Arrives
+    Generative.BecomingCompatibility.changingRelation (fun i => i = false) 0 [()] 1 true ∧
+  true ≠ false

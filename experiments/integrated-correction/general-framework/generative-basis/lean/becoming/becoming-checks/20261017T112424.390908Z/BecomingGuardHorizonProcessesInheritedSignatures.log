@@ -1,0 +1,47 @@
+@Becoming.GuardHorizonProcessesInherited.shielded_choice : ∀ {S A : Type} (P : Generative.Process S A)
+  (guard : S → Prop) {n : Nat} {s : S} {q : A → Int} {bonus : Int},
+  0 < bonus →
+    ∀ {x : A × Bool},
+      CorrectionInfrastructure.Best (fun y => CorrectionInfrastructure.Admissible P.step guard n s y.fst)
+          (CorrectionInfrastructure.AcceptScore q bonus) x →
+        x.snd = true ∧
+          Generative.Enabled P s x.fst ∧
+            (∀ (t : S), P.step s x.fst t → CorrectionInfrastructure.Viable P.step guard n t) ∧
+              ∀ (a : A), CorrectionInfrastructure.Admissible P.step guard n s a → q a ≤ q x.fst
+@Becoming.GuardHorizonProcessesInherited.kept_return_le : ∀ {S A : Type} (guard : S → Prop) (next : S → A → S)
+  {reward : S → A → Int} {V : Nat → S → Int},
+  CorrectionInfrastructure.Bellman next guard reward V →
+    ∀ (policy : Nat → S → A) {n : Nat} {s : S},
+      Becoming.GuardHorizonProcesses.Kept (Becoming.Viability.disturbed next fun x => True) guard s
+          (Becoming.GuardHorizonProcesses.moves next policy n s) (Becoming.GuardHorizonProcesses.last next policy n s) →
+        CorrectionInfrastructure.Return next reward policy n s ≤ V n s
+@Becoming.GuardHorizonProcessesInherited.recomputed_kept : ∀ {S A : Type} (guard : S → Prop) (next : S → A → S)
+  {reward : S → A → Int} {V : Nat → S → Int},
+  CorrectionInfrastructure.Bellman next guard reward V →
+    ∀ {bonus : Int},
+      0 < bonus →
+        ∀ (choose : Nat → S → A × Bool),
+          (∀ (n : Nat) (s : S),
+              CorrectionInfrastructure.DViable next guard (n + 1) s →
+                CorrectionInfrastructure.Best (fun x => CorrectionInfrastructure.DAllowed next guard n s x.fst)
+                  (CorrectionInfrastructure.AcceptScore (fun a => reward s a + V n (next s a)) bonus) (choose n s)) →
+            ∀ {n : Nat} {s : S},
+              CorrectionInfrastructure.Viable (Becoming.Viability.disturbed next fun x => True).step guard n s →
+                Becoming.GuardHorizonProcesses.Kept (Becoming.Viability.disturbed next fun x => True) guard s
+                    (Becoming.GuardHorizonProcesses.moves next (fun k t => (choose k t).fst) n s)
+                    (Becoming.GuardHorizonProcesses.last next (fun k t => (choose k t).fst) n s) ∧
+                  CorrectionInfrastructure.Return next reward (fun k t => (choose k t).fst) n s = V n s
+@Becoming.GuardHorizonProcessesInherited.recomputed_accepts : ∀ {S A : Type} (guard : S → Prop) (next : S → A → S)
+  {reward : S → A → Int} {V : Nat → S → Int} {bonus : Int},
+  0 < bonus →
+    ∀ (choose : Nat → S → A × Bool) {n : Nat} {s : S},
+      CorrectionInfrastructure.Best
+          (fun x =>
+            CorrectionInfrastructure.Viable (Becoming.Viability.disturbed next fun x => True).step guard n
+              (next s x.fst))
+          (CorrectionInfrastructure.AcceptScore (fun a => reward s a + V n (next s a)) bonus) (choose n s) →
+        (choose n s).snd = true
+@Becoming.GuardHorizonProcessesInherited.uniform_iff : ∀ {S A : Type} (P : Generative.Process S A) (guard : S → Prop)
+  {O : Type} (read : S → O) (n : Nat),
+  CorrectionInfrastructure.UniformPolicy read (CorrectionInfrastructure.Admissible P.step guard n) ↔
+    ∀ (o : O), ∃ a, ∀ (s : S), read s = o → CorrectionInfrastructure.Admissible P.step guard n s a

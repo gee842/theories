@@ -1,0 +1,140 @@
+@Becoming.ReceptionTracesInherited.step_iff : ∀ {s t : Generative.AcquiredSegmentation.State}
+  {e : Option Generative.AcquiredSegmentation.Sound},
+  Becoming.ReceptionTracesInherited.reception.step s e t ↔ t = Generative.AcquiredSegmentation.receive e s
+@Becoming.ReceptionTracesInherited.trace_end : ∀ {s t : Generative.AcquiredSegmentation.State}
+  {es : List (Option Generative.AcquiredSegmentation.Sound)},
+  Generative.Trace Becoming.ReceptionTracesInherited.reception s es t → t = Generative.AcquiredSegmentation.expose es s
+Becoming.ReceptionTracesInherited.expose_trace : ∀ (es : List (Option Generative.AcquiredSegmentation.Sound))
+  (s : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception s es (Generative.AcquiredSegmentation.expose es s)
+@Becoming.ReceptionTracesInherited.along : ∀ {s : Generative.AcquiredSegmentation.State}
+  {es : List (Option Generative.AcquiredSegmentation.Sound)} {Q : Generative.AcquiredSegmentation.State → Prop},
+  Q (Generative.AcquiredSegmentation.expose es s) →
+    ∀ (t : Generative.AcquiredSegmentation.State),
+      Generative.Trace Becoming.ReceptionTracesInherited.reception s es t → Q t
+@Becoming.ReceptionTracesInherited.total_kept : ∀ {s t : Generative.AcquiredSegmentation.State}
+  {es : List (Option Generative.AcquiredSegmentation.Sound)},
+  Generative.Trace Becoming.ReceptionTracesInherited.reception s es t →
+    t.machine.support + t.machine.spent = s.machine.support + s.machine.spent
+@Becoming.ReceptionTracesInherited.still_without_support : ∀ {s t : Generative.AcquiredSegmentation.State}
+  {es : List (Option Generative.AcquiredSegmentation.Sound)},
+  Generative.Trace Becoming.ReceptionTracesInherited.reception s es t → s.machine.support = 0 → t = s
+Becoming.ReceptionTracesInherited.broadening_trace : ∀ (raw : List Generative.AcquiredSegmentation.Sound)
+  (more : List (Option Generative.AcquiredSegmentation.Sound)) (s : Generative.AcquiredSegmentation.State),
+  ∃ es,
+    Generative.Trace Becoming.ReceptionTracesInherited.reception s es
+        (Generative.AcquiredSegmentation.broadenAfterFailure raw more s) ∧
+      (Generative.AcquiredSegmentation.broadenAfterFailure raw more s).machine.support +
+          (Generative.AcquiredSegmentation.broadenAfterFailure raw more s).machine.spent =
+        s.machine.support + s.machine.spent
+Becoming.ReceptionTracesInherited.grouping_assembles : ∀ (t : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 28)
+      (List.map some Generative.AcquiredSegmentation.context) t →
+    ∀ (ws : List Bool),
+      Generative.AcquiredSegmentation.parse t (Generative.AcquiredSegmentation.encode ws) =
+        Generative.AcquiredSegmentation.assembleMessage (List.map Generative.CompositionalAcquisition.Expr.atom ws)
+Becoming.ReceptionTracesInherited.reception_changes_parse : ∀ (t : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 28)
+      (List.map some Generative.AcquiredSegmentation.context) t →
+    (Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.ready 28)
+            Generative.AcquiredSegmentation.utterance =
+          none ∧
+        Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance
+            (Generative.AcquiredSegmentation.ready 28) =
+          none) ∧
+      Generative.AcquiredSegmentation.parse t Generative.AcquiredSegmentation.utterance =
+          some Generative.AcquiredSegmentation.intended ∧
+        Option.map (fun r => (r.fst, r.snd.machine.support, r.snd.machine.spent))
+            (Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance t) =
+          some ([true, false, true], 0, 21)
+Becoming.ReceptionTracesInherited.response_keeps_history : ∀ (t : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 28)
+      (List.map some Generative.AcquiredSegmentation.context) t →
+    Option.map (fun r => (r.snd.log, r.snd.machine.samples))
+        (Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance t) =
+      some
+        (List.map some Generative.AcquiredSegmentation.context,
+          Generative.CompositionalAcquisition.trialRecords Generative.CompositionalAcquisition.usual)
+Becoming.ReceptionTracesInherited.support_used : ∀ (t : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 28)
+      (List.map some Generative.AcquiredSegmentation.context) t →
+    (Generative.AcquiredSegmentation.ready 28).machine.support = 14 ∧ t.machine.support = 4 ∧ 7 + 7 + 10 + 4 = 28
+Becoming.ReceptionTracesInherited.parse_without_support : ∀ (t : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 27)
+      (List.map some Generative.AcquiredSegmentation.context) t →
+    Generative.AcquiredSegmentation.parse t Generative.AcquiredSegmentation.utterance =
+        some Generative.AcquiredSegmentation.intended ∧
+      Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance t = none
+Becoming.ReceptionTracesInherited.order_not_frequency : (∀ (x : Generative.AcquiredSegmentation.Sound),
+    List.count x Generative.AcquiredSegmentation.context = List.count x Generative.AcquiredSegmentation.reordered) ∧
+  ∀ (t t' : Generative.AcquiredSegmentation.State),
+    Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 28)
+        (List.map some Generative.AcquiredSegmentation.context) t →
+      Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 28)
+          (List.map some Generative.AcquiredSegmentation.reordered) t' →
+        Generative.AcquiredSegmentation.parse t Generative.AcquiredSegmentation.utterance =
+            some Generative.AcquiredSegmentation.intended ∧
+          Generative.AcquiredSegmentation.parse t' Generative.AcquiredSegmentation.utterance = none
+Becoming.ReceptionTracesInherited.broadening_after_failure : ∀ (t : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 28)
+      Becoming.ReceptionTracesInherited.narrowCourse t →
+    Generative.AcquiredSegmentation.parse t Generative.AcquiredSegmentation.utterance = none ∧
+      (Generative.AcquiredSegmentation.broadenAfterFailure Generative.AcquiredSegmentation.utterance
+              (List.map some Generative.AcquiredSegmentation.additional) t).log =
+          List.map some Generative.AcquiredSegmentation.context ∧
+        Generative.AcquiredSegmentation.parse
+              (Generative.AcquiredSegmentation.broadenAfterFailure Generative.AcquiredSegmentation.utterance
+                (List.map some Generative.AcquiredSegmentation.additional) t)
+              Generative.AcquiredSegmentation.utterance =
+            some Generative.AcquiredSegmentation.intended ∧
+          Option.map Prod.fst
+              (Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance
+                (Generative.AcquiredSegmentation.broadenAfterFailure Generative.AcquiredSegmentation.utterance
+                  (List.map some Generative.AcquiredSegmentation.additional) t)) =
+            some [true, false, true]
+Becoming.ReceptionTracesInherited.parsed_not_broadened : ∀ (t : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 28)
+      Becoming.ReceptionTracesInherited.narrowCourse t →
+    Generative.AcquiredSegmentation.broadenAfterFailure
+        [Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b]
+        (List.map some Generative.AcquiredSegmentation.additional) t =
+      t
+Becoming.ReceptionTracesInherited.broadening_keeps_prefix : ∀ (t : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 19)
+      Becoming.ReceptionTracesInherited.narrowCourse t →
+    (Generative.AcquiredSegmentation.broadenAfterFailure Generative.AcquiredSegmentation.utterance
+            (List.map some Generative.AcquiredSegmentation.additional) t).log =
+        List.map some
+          [Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b,
+            Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b,
+            Generative.AcquiredSegmentation.Sound.c] ∧
+      Generative.AcquiredSegmentation.parse
+          (Generative.AcquiredSegmentation.broadenAfterFailure Generative.AcquiredSegmentation.utterance
+            (List.map some Generative.AcquiredSegmentation.additional) t)
+          Generative.AcquiredSegmentation.utterance =
+        none
+Becoming.ReceptionTracesInherited.broadening_parses_one_form : ∀ (t : Generative.AcquiredSegmentation.State),
+  Generative.Trace Becoming.ReceptionTracesInherited.reception (Generative.AcquiredSegmentation.ready 21)
+      Becoming.ReceptionTracesInherited.narrowCourse t →
+    (Generative.AcquiredSegmentation.broadenAfterFailure Generative.AcquiredSegmentation.utterance
+            (List.map some Generative.AcquiredSegmentation.additional) t).log =
+        List.map some
+          [Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b,
+            Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b,
+            Generative.AcquiredSegmentation.Sound.c, Generative.AcquiredSegmentation.Sound.d,
+            Generative.AcquiredSegmentation.Sound.c] ∧
+      Generative.AcquiredSegmentation.parse
+            (Generative.AcquiredSegmentation.broadenAfterFailure Generative.AcquiredSegmentation.utterance
+              (List.map some Generative.AcquiredSegmentation.additional) t)
+            Generative.AcquiredSegmentation.utterance =
+          some Generative.AcquiredSegmentation.intended ∧
+        Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance
+              (Generative.AcquiredSegmentation.broadenAfterFailure Generative.AcquiredSegmentation.utterance
+                (List.map some Generative.AcquiredSegmentation.additional) t) =
+            none ∧
+          Generative.AcquiredSegmentation.parse
+              (Generative.AcquiredSegmentation.broadenAfterFailure Generative.AcquiredSegmentation.utterance
+                (List.map some Generative.AcquiredSegmentation.additional) t)
+              [Generative.AcquiredSegmentation.Sound.c, Generative.AcquiredSegmentation.Sound.d,
+                Generative.AcquiredSegmentation.Sound.c, Generative.AcquiredSegmentation.Sound.d] =
+            none

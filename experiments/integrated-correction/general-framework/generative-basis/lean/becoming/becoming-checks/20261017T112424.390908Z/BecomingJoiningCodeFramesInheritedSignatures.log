@@ -1,0 +1,46 @@
+@Becoming.JoiningCodeFramesInherited.canonical_factor : ∀ {F : Type u_1} {K : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryContextualStructure.Account F K},
+  Becoming.JoiningCodeFrames.CourseExact J p →
+    (∀ (k : K),
+        Generative.ExplanatoryUniqueness.Used p k →
+          ∃ d,
+            Generative.ExplanatoryUniqueness.Used (Generative.ExplanatoryContextualStructure.canonical J) d ∧
+              Generative.ExplanatoryUniqueness.Matches p (Generative.ExplanatoryContextualStructure.canonical J) k d ∧
+                ∀ (e : Generative.ExplanatoryJoiningContexts.Context F → Prop),
+                  Generative.ExplanatoryUniqueness.Matches p (Generative.ExplanatoryContextualStructure.canonical J) k
+                      e →
+                    e = d) ∧
+      ∀ (d : Generative.ExplanatoryJoiningContexts.Context F → Prop),
+        Generative.ExplanatoryUniqueness.Used (Generative.ExplanatoryContextualStructure.canonical J) d →
+          ∃ k,
+            Generative.ExplanatoryUniqueness.Used p k ∧
+              Generative.ExplanatoryUniqueness.Matches p (Generative.ExplanatoryContextualStructure.canonical J) k d
+@Becoming.JoiningCodeFramesInherited.common_operation : ∀ {F : Type u_1} {K : Type u_2} {J : Becoming.Joining F}
+  {K' : Type u_2},
+  J.Functional →
+    ∀ {p : Generative.ExplanatoryContextualStructure.Account F K}
+      {r : Generative.ExplanatoryContextualStructure.Account F K'},
+      Becoming.JoiningCodeFrames.CourseExact J p →
+        Becoming.JoiningCodeFrames.CourseReduced J p →
+          Becoming.JoiningCodeFrames.CourseExact J r →
+            Becoming.JoiningCodeFrames.CourseReduced J r →
+              Generative.ExplanatoryLocalUnits.Functional (Generative.ExplanatoryContextualStructure.Operation J p) ∧
+                Generative.ExplanatoryLocalUnits.Functional (Generative.ExplanatoryContextualStructure.Operation J r) ∧
+                  (∀ (a : K),
+                      Generative.ExplanatoryUniqueness.Used p a →
+                        ∃ b,
+                          Generative.ExplanatoryUniqueness.Matches p r a b ∧
+                            ∀ (c : K'), Generative.ExplanatoryUniqueness.Matches p r a c → c = b) ∧
+                    (∀ (b : K'),
+                        Generative.ExplanatoryUniqueness.Used r b →
+                          ∃ a,
+                            Generative.ExplanatoryUniqueness.Matches p r a b ∧
+                              ∀ (c : K), Generative.ExplanatoryUniqueness.Matches p r c b → c = a) ∧
+                      ∀ (a b c : K) (a' b' c' : K'),
+                        Generative.ExplanatoryUniqueness.Matches p r a a' →
+                          Generative.ExplanatoryUniqueness.Matches p r b b' →
+                            Generative.ExplanatoryUniqueness.Matches p r c c' →
+                              (Generative.ExplanatoryContextualStructure.Operation J p a b c ↔
+                                Generative.ExplanatoryContextualStructure.Operation J r a' b' c')
+@Becoming.JoiningCodeFramesInherited.sameTests_iff_alike : ∀ {F : Type u_1} {J : Becoming.Joining F},
+  J.Functional → ∀ (x y : F), Becoming.SameTests J.frame J.frame x y ↔ Becoming.Alike J.frame J.frame x y

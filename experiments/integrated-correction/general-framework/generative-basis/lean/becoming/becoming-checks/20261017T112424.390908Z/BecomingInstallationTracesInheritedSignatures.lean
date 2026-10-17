@@ -1,0 +1,11 @@
+import Becoming.InstallationTracesInherited
+#check @Becoming.InstallationTracesInherited.unsigned_no_issue
+#check @Becoming.InstallationTracesInherited.stale_no_issue
+#check @Becoming.InstallationTracesInherited.undelivered_no_enact
+#check @Becoming.InstallationTracesInherited.revoked_no_enact
+#check @Becoming.InstallationTracesInherited.ite_some
+#check @Becoming.InstallationTracesInherited.recorded
+#check @Becoming.InstallationTracesInherited.move_spends
+#check @Becoming.InstallationTracesInherited.conserved_invariant
+#check @Becoming.InstallationTracesInherited.conserved_trace
+#check @Becoming.InstallationTracesInherited.protocol_completes

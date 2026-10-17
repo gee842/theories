@@ -1,0 +1,17 @@
+@Becoming.JointPhaseTracesInherited.summary_response : ∀ {v t : Generative.OperativeCoherence.Joint}
+  {word : List Generative.RelationalReduction.Event},
+  Generative.Trace Becoming.JointPhaseTraces.process v word t →
+    Generative.OperativeCoherence.response
+        (Generative.RelationalReduction.decodeControl
+          (SystemsOrganization.evolve Generative.RelationalReduction.reducedNext
+            (Generative.RelationalReduction.summarize v) word)) =
+      Generative.OperativeCoherence.response (Generative.OperativeCoherence.controlDensity t)
+Becoming.JointPhaseTracesInherited.summary_omits_register : Generative.RelationalReduction.registerDensity
+      { zero := { zero := 1, one := 0 }, one := { zero := 0, one := 0 } } ≠
+    Generative.RelationalReduction.registerDensity { zero := { zero := 0, one := 1 }, one := { zero := 0, one := 0 } } ∧
+  ∀ (word : List Generative.RelationalReduction.Event) (t t' : Generative.OperativeCoherence.Joint),
+    Generative.Trace Becoming.JointPhaseTraces.process
+        { zero := { zero := 1, one := 0 }, one := { zero := 0, one := 0 } } word t →
+      Generative.Trace Becoming.JointPhaseTraces.process
+          { zero := { zero := 0, one := 1 }, one := { zero := 0, one := 0 } } word t' →
+        Generative.RelationalReduction.summarize t = Generative.RelationalReduction.summarize t'

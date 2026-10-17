@@ -1,0 +1,142 @@
+@Becoming.ProbeRunsInherited.probe_some : ∀ {s t : EvidenceQualifiedCorrection.Situation}
+  {q : EvidenceQualifiedCorrection.Query} {a : Bool},
+  EvidenceQualifiedCorrection.probe s q = some (a, t) →
+    a = EvidenceQualifiedCorrection.queryLaw q s.actual ∧
+      t.actual = s.actual ∧
+        t.candidates = EvidenceQualifiedCorrection.retain s.candidates (EvidenceQualifiedCorrection.queryLaw q) a
+@Becoming.ProbeRunsInherited.respond_some : ∀ {s t : EvidenceQualifiedCorrection.Situation},
+  EvidenceQualifiedCorrection.respond s () = some t → t.actual = s.actual ∧ t.candidates = s.candidates
+@Becoming.ProbeRunsInherited.step_keeps_actual : ∀ {s t : EvidenceQualifiedCorrection.Situation}
+  {m : Option EvidenceQualifiedCorrection.Query},
+  Becoming.ProbeRunsInherited.inquiry.step s m t →
+    s.actual ∈ s.candidates → t.actual = s.actual ∧ t.actual ∈ t.candidates
+@Becoming.ProbeRunsInherited.step_narrows : ∀ {s t : EvidenceQualifiedCorrection.Situation}
+  {m : Option EvidenceQualifiedCorrection.Query},
+  Becoming.ProbeRunsInherited.inquiry.step s m t →
+    ∀ (h : EvidenceQualifiedCorrection.Model), h ∈ t.candidates → h ∈ s.candidates
+Becoming.ProbeRunsInherited.actual_kept : ∀ (r : Becoming.Run Becoming.ProbeRunsInherited.inquiry),
+  (r.state 0).actual ∈ (r.state 0).candidates →
+    ∀ (n : Nat), (r.state n).actual = (r.state 0).actual ∧ (r.state n).actual ∈ (r.state n).candidates
+Becoming.ProbeRunsInherited.candidates_narrow : ∀ (r : Becoming.Run Becoming.ProbeRunsInherited.inquiry) (n : Nat)
+  (h : EvidenceQualifiedCorrection.Model), h ∈ (r.state (n + 1)).candidates → h ∈ (r.state n).candidates
+Becoming.ProbeRunsInherited.separation_kept : ∀
+  (desc : EvidenceQualifiedCorrection.Model → CorrectionReconfiguration.Arrangement)
+  (roster : List FaultTolerantCorrection.Domain) (r : Becoming.Run Becoming.ProbeRunsInherited.inquiry),
+  FaultTolerantCorrection.separated roster (EvidenceQualifiedCorrection.pooled desc (r.state 0).candidates) →
+    ∀ (n : Nat),
+      FaultTolerantCorrection.separated roster (EvidenceQualifiedCorrection.pooled desc (r.state n).candidates)
+Becoming.ProbeRunsInherited.certificate_kept : ∀
+  (desc : EvidenceQualifiedCorrection.Model → CorrectionReconfiguration.Arrangement)
+  (roster : List FaultTolerantCorrection.Domain) (r : Becoming.Run Becoming.ProbeRunsInherited.inquiry)
+  (supports : FaultTolerantCorrection.Domain → Bool) (n : Nat),
+  FaultTolerantCorrection.certificate roster (EvidenceQualifiedCorrection.pooled desc (r.state n).candidates) supports =
+      true →
+    EvidenceQualifiedCorrection.pooled desc (r.state (n + 1)).candidates ≠ [] →
+      FaultTolerantCorrection.certificate roster (EvidenceQualifiedCorrection.pooled desc (r.state (n + 1)).candidates)
+          supports =
+        true
+Becoming.ProbeRunsInherited.chosen_plan_completes : ∀ (states : List EvidenceQualifiedCorrection.Situation)
+  (chosen : AlignmentInquiry.Plan EvidenceQualifiedCorrection.Query Unit) (s : EvidenceQualifiedCorrection.Situation),
+  AlignmentInquiry.choose EvidenceQualifiedCorrection.interface states EvidenceQualifiedCorrection.plans = some chosen →
+    s ∈ states →
+      ∃ out,
+        Generative.Trace Becoming.ProbeRunsInherited.inquiry s [some chosen.query, none] out ∧
+          EvidenceQualifiedCorrection.achieved out = true
+@Becoming.ProbeRunsInherited.run_answered : ∀ {s after : EvidenceQualifiedCorrection.Situation}
+  {q : EvidenceQualifiedCorrection.Query} {a : Bool},
+  EvidenceQualifiedCorrection.interface.probe s (EvidenceQualifiedCorrection.plan q).query = some (a, after) →
+    AlignmentInquiry.run EvidenceQualifiedCorrection.interface (EvidenceQualifiedCorrection.plan q) s =
+      EvidenceQualifiedCorrection.interface.respond after
+        (AlignmentInquiry.branch (EvidenceQualifiedCorrection.plan q) a)
+@Becoming.ProbeRunsInherited.run_unanswered : ∀ {s : EvidenceQualifiedCorrection.Situation}
+  {q : EvidenceQualifiedCorrection.Query},
+  EvidenceQualifiedCorrection.interface.probe s (EvidenceQualifiedCorrection.plan q).query = none →
+    AlignmentInquiry.run EvidenceQualifiedCorrection.interface (EvidenceQualifiedCorrection.plan q) s = none
+@Becoming.ProbeRunsInherited.trace_iff_run : ∀ {s out : EvidenceQualifiedCorrection.Situation}
+  {q : EvidenceQualifiedCorrection.Query},
+  Generative.Trace Becoming.ProbeRunsInherited.inquiry s [some q, none] out ↔
+    AlignmentInquiry.run EvidenceQualifiedCorrection.interface (EvidenceQualifiedCorrection.plan q) s = some out
+@Becoming.ProbeRunsInherited.final_of_trace : ∀ {s out : EvidenceQualifiedCorrection.Situation}
+  {q : EvidenceQualifiedCorrection.Query},
+  Generative.Trace Becoming.ProbeRunsInherited.inquiry s [some q, none] out →
+    EvidenceQualifiedCorrection.final s q = out
+@Becoming.ProbeRunsInherited.trace_of_final_ne : ∀ {s : EvidenceQualifiedCorrection.Situation}
+  {q : EvidenceQualifiedCorrection.Query},
+  EvidenceQualifiedCorrection.final s q ≠ s →
+    Generative.Trace Becoming.ProbeRunsInherited.inquiry s [some q, none] (EvidenceQualifiedCorrection.final s q)
+Becoming.ProbeRunsInherited.inspected_trace_completes : Generative.Trace Becoming.ProbeRunsInherited.inquiry
+    (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 12 12)
+    [some EvidenceQualifiedCorrection.Query.inspect, none]
+    (EvidenceQualifiedCorrection.final
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 12 12)
+      EvidenceQualifiedCorrection.Query.inspect) ∧
+  ∀ (out : EvidenceQualifiedCorrection.Situation),
+    Generative.Trace Becoming.ProbeRunsInherited.inquiry
+        (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 12 12)
+        [some EvidenceQualifiedCorrection.Query.inspect, none] out →
+      out.candidates = [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+        out.receipt = some (EvidenceQualifiedCorrection.Query.inspect, true) ∧
+          EvidenceQualifiedCorrection.achieved out = true ∧
+            out.installation.state.spent = 12 ∧ out.installation.state.reserve = 0 ∧ out.installation.serial = 1
+Becoming.ProbeRunsInherited.inspected_trace_short_of_reserve : Generative.Trace Becoming.ProbeRunsInherited.inquiry
+    (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 11 11)
+    [some EvidenceQualifiedCorrection.Query.inspect, none]
+    (EvidenceQualifiedCorrection.final
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 11 11)
+      EvidenceQualifiedCorrection.Query.inspect) ∧
+  ∀ (out : EvidenceQualifiedCorrection.Situation),
+    Generative.Trace Becoming.ProbeRunsInherited.inquiry
+        (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 11 11)
+        [some EvidenceQualifiedCorrection.Query.inspect, none] out →
+      out.candidates = [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+        out.receipt = some (EvidenceQualifiedCorrection.Query.inspect, true) ∧
+          out.installation.state.completed = false ∧
+            out.installation.state.spent = 9 ∧ out.installation.state.reserve = 2
+Becoming.ProbeRunsInherited.slow_trace_misses_deadline : (∀ (out : EvidenceQualifiedCorrection.Situation),
+    Generative.Trace Becoming.ProbeRunsInherited.inquiry
+        (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 20 12)
+        [some EvidenceQualifiedCorrection.Query.slow, none] out →
+      EvidenceQualifiedCorrection.achieved out = false) ∧
+  Generative.Trace Becoming.ProbeRunsInherited.inquiry
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 20 12)
+      [some EvidenceQualifiedCorrection.Query.inspect, none]
+      (EvidenceQualifiedCorrection.final
+        (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 20 12)
+        EvidenceQualifiedCorrection.Query.inspect) ∧
+    ∀ (out : EvidenceQualifiedCorrection.Situation),
+      Generative.Trace Becoming.ProbeRunsInherited.inquiry
+          (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 20 12)
+          [some EvidenceQualifiedCorrection.Query.inspect, none] out →
+        EvidenceQualifiedCorrection.achieved out = true
+Becoming.ProbeRunsInherited.reuse_trace_completes_without_uniform_pool : EvidenceQualifiedCorrection.poolReady
+      (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe EvidenceQualifiedCorrection.hypotheses) =
+    false ∧
+  Generative.Trace Becoming.ProbeRunsInherited.inquiry
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [] 11 11)
+      [some EvidenceQualifiedCorrection.Query.reuse, none]
+      (EvidenceQualifiedCorrection.final
+        (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [] 11 11)
+        EvidenceQualifiedCorrection.Query.reuse) ∧
+    ∀ (out : EvidenceQualifiedCorrection.Situation),
+      Generative.Trace Becoming.ProbeRunsInherited.inquiry
+          (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [] 11 11)
+          [some EvidenceQualifiedCorrection.Query.reuse, none] out →
+        EvidenceQualifiedCorrection.achieved out = true
+Becoming.ProbeRunsInherited.empty_candidates_trace_fails : ∀ (out : EvidenceQualifiedCorrection.Situation),
+  Generative.Trace Becoming.ProbeRunsInherited.inquiry
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [] 20 20 [])
+      [some EvidenceQualifiedCorrection.Query.reuse, none] out →
+    EvidenceQualifiedCorrection.achieved out = false
+Becoming.ProbeRunsInherited.listed_inspect_traces_complete : ∀ (s : EvidenceQualifiedCorrection.Situation),
+  s ∈ EvidenceQualifiedCorrection.possibleSituations 12 12 →
+    ∃ out,
+      Generative.Trace Becoming.ProbeRunsInherited.inquiry s [some EvidenceQualifiedCorrection.Query.inspect, none]
+          out ∧
+        EvidenceQualifiedCorrection.achieved out = true
+Becoming.ProbeRunsInherited.listed_reuse_traces_complete : ∀ (s : EvidenceQualifiedCorrection.Situation),
+  s ∈
+      EvidenceQualifiedCorrection.possibleSituations 11 11
+        [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] →
+    ∃ out,
+      Generative.Trace Becoming.ProbeRunsInherited.inquiry s [some EvidenceQualifiedCorrection.Query.reuse, none] out ∧
+        EvidenceQualifiedCorrection.achieved out = true

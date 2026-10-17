@@ -1,0 +1,31 @@
+@Becoming.FeasibleProfileTraces.feasible_nil : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A) (s : S),
+  Generative.Feasible P s []
+@Becoming.FeasibleProfileTraces.stable_of_same : ∀ {A : Type u_1} {L L' : List A → Prop},
+  (∀ (w : List A), L w ↔ L' w) →
+    Generative.ContinuationConditions.Stable L → Generative.ContinuationConditions.Stable L'
+@Becoming.FeasibleProfileTraces.stable_iff_letterwise : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A)
+  (s : S),
+  Generative.ContinuationConditions.Stable (Generative.Feasible P s) ↔
+    ∀ (word : List A),
+      Generative.Feasible P s word ↔ Generative.ContinuationConditions.Letterwise (Generative.Feasible P s) word
+@Becoming.FeasibleProfileTraces.joint_obstruction_refutes_stability : ∀ {S : Type u_1} {A : Type u_2}
+  (P : Generative.Process S A) (s : S) {word : List A},
+  Generative.ContinuationConditions.Letterwise (Generative.Feasible P s) word →
+    ¬Generative.Feasible P s word → ¬Generative.ContinuationConditions.Stable (Generative.Feasible P s)
+@Becoming.FeasibleProfileTraces.obstruction_locates_changed_profile : ∀ {S : Type u_1} {A : Type u_2}
+  (P : Generative.Process S A) (s : S) [DecidablePred (Generative.Feasible P s)] {word : List A},
+  Generative.ContinuationConditions.Letterwise (Generative.Feasible P s) word →
+    ¬Generative.Feasible P s word →
+      ∃ pre a suffix,
+        word = pre ++ a :: suffix ∧
+          Generative.Feasible P s pre ∧
+            Generative.Feasible P s [a] ∧
+              ¬Generative.Feasible P s (pre ++ [a]) ∧
+                ¬Generative.ContinuationConditions.SameFuture (Generative.Feasible P s) pre []
+@Becoming.FeasibleProfileTraces.same_future_extends : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A)
+  (s : S) {h k : List A},
+  Generative.ContinuationConditions.SameFuture (Generative.Feasible P s) h k →
+    ∀ (extension : List A),
+      Generative.ContinuationConditions.SameFuture (Generative.Feasible P s) (h ++ extension) (k ++ extension)
+Becoming.FeasibleProfileTraces.unrestricted_stable : Generative.ContinuationConditions.Stable
+  (Generative.Feasible (Generative.Deeper.historyProcess Generative.ContinuationConditions.unrestricted) [])

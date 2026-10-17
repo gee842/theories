@@ -1,0 +1,45 @@
+@Becoming.InstallationTracesInherited.unsigned_no_issue : ∀ {s : EffectiveCommand.State},
+  s.signed = false →
+    ¬Generative.Enabled Becoming.InstallationTraces.installation s Becoming.InstallationTraces.Move.issue
+@Becoming.InstallationTracesInherited.stale_no_issue : ∀ {s : EffectiveCommand.State},
+  s.credential ≠ s.authority →
+    ¬Generative.Enabled Becoming.InstallationTraces.installation s Becoming.InstallationTraces.Move.issue
+@Becoming.InstallationTracesInherited.undelivered_no_enact : ∀ {s : EffectiveCommand.State},
+  s.delivered = false →
+    ¬Generative.Enabled Becoming.InstallationTraces.installation s Becoming.InstallationTraces.Move.enact
+@Becoming.InstallationTracesInherited.revoked_no_enact : ∀ {s : EffectiveCommand.State},
+  s.credential ≠ s.authority →
+    ¬Generative.Enabled Becoming.InstallationTraces.installation s Becoming.InstallationTraces.Move.enact
+@Becoming.InstallationTracesInherited.ite_some : ∀ {α : Type} {x : Option α} {t : α} {c : Bool},
+  (if c = true then x else none) = some t → x = some t
+@Becoming.InstallationTracesInherited.recorded : ∀ {s t : EffectiveCommand.State} {c d : Nat}
+  {f : EffectiveCommand.State → EffectiveCommand.State},
+  (∀ (u : EffectiveCommand.State), (f u).reserve = u.reserve ∧ (f u).spent = u.spent) →
+    (do
+          let u ← EffectiveCommand.spend c d s
+          pure (f u)) =
+        some t →
+      ∃ c d u, EffectiveCommand.spend c d s = some u ∧ t.reserve = u.reserve ∧ t.spent = u.spent
+Becoming.InstallationTracesInherited.move_spends : ∀ (m : Becoming.InstallationTraces.Move)
+  {s t : EffectiveCommand.State},
+  Becoming.InstallationTraces.installation.step s m t →
+    t = s ∨ ∃ c d u, EffectiveCommand.spend c d s = some u ∧ t.reserve = u.reserve ∧ t.spent = u.spent
+Becoming.InstallationTracesInherited.conserved_invariant : ∀ (c : Nat),
+  Becoming.Invariant Becoming.InstallationTraces.installation fun s => s.reserve + s.spent = c
+@Becoming.InstallationTracesInherited.conserved_trace : ∀ {s t : EffectiveCommand.State}
+  {ms : List Becoming.InstallationTraces.Move},
+  Generative.Trace Becoming.InstallationTraces.installation s ms t → t.reserve + t.spent = s.reserve + s.spent
+Becoming.InstallationTracesInherited.protocol_completes : ∀ (s : EffectiveCommand.State) (r : Bool),
+  s.signed = true →
+    s.credential = s.authority →
+      r = s.openRoute →
+        3 ≤ s.reserve →
+          s.time + 3 ≤ s.deadline →
+            ∃ t,
+              Generative.Trace Becoming.InstallationTraces.installation s (Becoming.InstallationTraces.protocolMoves r)
+                  t ∧
+                t.completed = true ∧
+                  t.delivered = true ∧
+                    t.issued = true ∧
+                      t.reserve + 3 = s.reserve ∧
+                        t.time = s.time + 3 ∧ t.spent = s.spent + 3 ∧ t.authority = s.authority

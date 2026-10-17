@@ -1,0 +1,11 @@
+@Becoming.DrawnAmountProcesses.draw_step_iff : ∀ {f : RelationalOrganization.Form} {b : Nat},
+  Becoming.DrawnAmountProcesses.draw.step 6 f b ↔ b = RelationalOrganization.remaining f
+@Becoming.DrawnAmountProcesses.basis_after : ∀ {f : RelationalOrganization.Form} {b : Nat},
+  Becoming.DrawnAmountProcesses.draw.step 6 f b → (2 ≤ b ↔ RelationalOrganization.basis f)
+@Becoming.DrawnAmountProcesses.eq_zero_of_sub_eq : ∀ {a x : Nat}, x ≤ a → a - x = a → x = 0
+@Becoming.DrawnAmountProcesses.rests_iff_free : ∀ {a b : Nat} {f : RelationalOrganization.Form},
+  RelationalOrganization.spent f ≤ a →
+    Becoming.DrawnAmountProcesses.draw.step a f b → (b = a ↔ RelationalOrganization.freeOccasion f ())
+Becoming.DrawnAmountProcesses.idle_rests_left_changes : (∀ (b : Nat),
+    Becoming.DrawnAmountProcesses.draw.step 6 RelationalOrganization.Form.idle b → b = 6) ∧
+  ∀ (b : Nat), Becoming.DrawnAmountProcesses.draw.step 6 RelationalOrganization.Form.left b → b ≠ 6

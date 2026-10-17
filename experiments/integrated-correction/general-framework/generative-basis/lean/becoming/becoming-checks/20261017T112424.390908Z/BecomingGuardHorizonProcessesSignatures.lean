@@ -1,0 +1,15 @@
+import Becoming.GuardHorizonProcesses
+#check @Becoming.GuardHorizonProcesses.viable_succ_iff
+#check @Becoming.GuardHorizonProcesses.viable_guard
+#check @Becoming.GuardHorizonProcesses.not_enabled_not_admissible
+#check @Becoming.GuardHorizonProcesses.closed_viable
+#check @Becoming.GuardHorizonProcesses.certificate_closed
+#check @Becoming.GuardHorizonProcesses.certificate_viable
+#check @Becoming.GuardHorizonProcesses.kernel_viable
+#check @Becoming.GuardHorizonProcesses.dViable_iff
+#check @Becoming.GuardHorizonProcesses.safe_path_viable
+#check @Becoming.GuardHorizonProcesses.Kept.trace
+#check @Becoming.GuardHorizonProcesses.Kept.start
+#check @Becoming.GuardHorizonProcesses.pathSafe_iff
+#check @Becoming.GuardHorizonProcesses.uniform_viable
+#check @Becoming.GuardHorizonProcesses.uniform_finer

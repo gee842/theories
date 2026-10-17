@@ -1,0 +1,52 @@
+@Becoming.GuardHorizonProcesses.viable_succ_iff : ∀ {S A : Type} (P : Generative.Process S A) (guard : S → Prop)
+  (n : Nat) (s : S),
+  CorrectionInfrastructure.Viable P.step guard (n + 1) s ↔
+    guard s ∧ ∃ a, Generative.Enabled P s a ∧ ∀ (t : S), P.step s a t → CorrectionInfrastructure.Viable P.step guard n t
+@Becoming.GuardHorizonProcesses.viable_guard : ∀ {S A : Type} (P : Generative.Process S A) (guard : S → Prop) {n : Nat}
+  {s : S}, CorrectionInfrastructure.Viable P.step guard n s → guard s
+@Becoming.GuardHorizonProcesses.not_enabled_not_admissible : ∀ {S A : Type} (P : Generative.Process S A)
+  (guard : S → Prop) {n : Nat} {s : S} {a : A},
+  ¬Generative.Enabled P s a → ¬CorrectionInfrastructure.Admissible P.step guard n s a
+@Becoming.GuardHorizonProcesses.closed_viable : ∀ {S A : Type} (P : Generative.Process S A) (guard : S → Prop)
+  {K : S → Prop},
+  CorrectionInfrastructure.Closed P.step guard K →
+    ∀ (n : Nat) (s : S), K s → CorrectionInfrastructure.Viable P.step guard n s
+@Becoming.GuardHorizonProcesses.certificate_closed : ∀ {S A : Type} (P : Generative.Process S A) (guard : S → Prop)
+  {K : S → Prop},
+  Becoming.Viability.Certificate P guard K →
+    (∀ (s : S), K s → ∃ a, Generative.Enabled P s a) → CorrectionInfrastructure.Closed P.step guard K
+@Becoming.GuardHorizonProcesses.certificate_viable : ∀ {S A : Type} (P : Generative.Process S A) (guard : S → Prop)
+  {K : S → Prop},
+  Becoming.Viability.Certificate P guard K →
+    (∀ (s : S), K s → ∃ a, Generative.Enabled P s a) →
+      ∀ (n : Nat) (s : S), K s → CorrectionInfrastructure.Viable P.step guard n s
+@Becoming.GuardHorizonProcesses.kernel_viable : ∀ {S A : Type} (P : Generative.Process S A) (guard : S → Prop) {s : S},
+  Becoming.Viability.Kernel P guard s →
+    (∀ (t : S), Becoming.Reach P s t → ∃ a, Generative.Enabled P t a) →
+      ∀ (n : Nat), CorrectionInfrastructure.Viable P.step guard n s
+@Becoming.GuardHorizonProcesses.dViable_iff : ∀ {S A : Type} (guard : S → Prop) (next : S → A → S) (n : Nat) (s : S),
+  CorrectionInfrastructure.DViable next guard n s ↔
+    CorrectionInfrastructure.Viable (Becoming.Viability.disturbed next fun x => True).step guard n s
+@Becoming.GuardHorizonProcesses.safe_path_viable : ∀ {S A : Type} (guard : S → Prop) (next : S → A → S)
+  (policy : Nat → S → A) (n : Nat) (s : S),
+  CorrectionInfrastructure.PathSafe next guard policy n s →
+    CorrectionInfrastructure.Viable (Becoming.Viability.disturbed next fun x => True).step guard n s
+@Becoming.GuardHorizonProcesses.Kept.trace : ∀ {S A : Type} {P : Generative.Process S A} {guard : S → Prop} {s t : S}
+  {as : List A}, Becoming.GuardHorizonProcesses.Kept P guard s as t → Generative.Trace P s as t
+@Becoming.GuardHorizonProcesses.Kept.start : ∀ {S A : Type} {P : Generative.Process S A} {guard : S → Prop} {s t : S}
+  {as : List A}, Becoming.GuardHorizonProcesses.Kept P guard s as t → guard s
+@Becoming.GuardHorizonProcesses.pathSafe_iff : ∀ {S A : Type} (guard : S → Prop) (next : S → A → S)
+  (policy : Nat → S → A) (n : Nat) (s : S),
+  CorrectionInfrastructure.PathSafe next guard policy n s ↔
+    Becoming.GuardHorizonProcesses.Kept (Becoming.Viability.disturbed next fun x => True) guard s
+      (Becoming.GuardHorizonProcesses.moves next policy n s) (Becoming.GuardHorizonProcesses.last next policy n s)
+@Becoming.GuardHorizonProcesses.uniform_viable : ∀ {S A : Type} (P : Generative.Process S A) (guard : S → Prop)
+  {O : Type} {read : S → O} {n : Nat},
+  CorrectionInfrastructure.UniformPolicy read (CorrectionInfrastructure.Admissible P.step guard n) →
+    ∀ {s : S}, guard s → CorrectionInfrastructure.Viable P.step guard (n + 1) s
+@Becoming.GuardHorizonProcesses.uniform_finer : ∀ {S A : Type} (P : Generative.Process S A) (guard : S → Prop)
+  {O R : Type} {coarse : S → O} {fine : S → R} (forget : R → O),
+  (∀ (s : S), forget (fine s) = coarse s) →
+    ∀ {n : Nat},
+      CorrectionInfrastructure.UniformPolicy coarse (CorrectionInfrastructure.Admissible P.step guard n) →
+        CorrectionInfrastructure.UniformPolicy fine (CorrectionInfrastructure.Admissible P.step guard n)

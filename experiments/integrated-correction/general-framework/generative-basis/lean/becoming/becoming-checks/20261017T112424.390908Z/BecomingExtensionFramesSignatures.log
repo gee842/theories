@@ -1,0 +1,22 @@
+@Becoming.ExtensionFrames.extension_new_relevance : ∀ {S A Q F Pos : Type} (M : Becoming.Frame S A Q)
+  (living : Q → Prop) {sig : Pos → Nat → F → Prop},
+  Becoming.Unrestricted sig →
+    ∀ (formation : Q → F) (step : Q → Nat) {s t : S},
+      Becoming.Extension M living s t → ∃ c, M.relevance living sig formation step t c ∧ ¬M.realized s c
+@Becoming.ExtensionFrames.survives_iff_lifted : ∀ {S A C : Type} (situation : GenerativeComparison.Situation S A)
+  (s : S) (realized : S → C → Prop) (living : C → Prop) (a : A),
+  GenerativeComparison.Survives ({ P := Becoming.situationProcess situation s, realized := realized }.inventory living)
+      situation a ↔
+    Becoming.LiftSurvives { P := Becoming.situationProcess situation s, realized := realized } living s a
+@Becoming.ExtensionFrames.restricted_survives : ∀ {S A C : Type} (situation : GenerativeComparison.Situation S A)
+  (s : S) (realized : S → C → Prop) (living : C → Prop) (restricted : A → Prop) {a : A},
+  Becoming.LiftSurvives { P := Becoming.situationProcess situation s, realized := realized } living s a →
+    restricted a →
+      Becoming.LiftSurvives
+        {
+          P :=
+            Becoming.situationProcess
+              { feasible := fun option => situation.feasible option ∧ restricted option, realize := situation.realize }
+              s,
+          realized := realized }
+        living s a

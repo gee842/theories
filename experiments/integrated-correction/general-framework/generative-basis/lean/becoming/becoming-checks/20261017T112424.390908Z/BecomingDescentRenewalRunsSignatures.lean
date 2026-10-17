@@ -1,0 +1,13 @@
+import Becoming.DescentRenewalRuns
+#check @Becoming.DescentRenewalRuns.no_renewal_free_tail
+#check @Becoming.DescentRenewalRuns.renewal_arbitrarily_late
+#check @Becoming.DescentRenewalRuns.renewal_within_rank
+#check @Becoming.DescentRenewalRuns.alternation_state
+#check @Becoming.DescentRenewalRuns.alternatingRank_eq
+#check @Becoming.DescentRenewalRuns.actual_steps
+#check @Becoming.DescentRenewalRuns.period_two
+#check @Becoming.DescentRenewalRuns.restores_arbitrarily_late
+#check @Becoming.DescentRenewalRuns.restoration_raises_rank
+#check @Becoming.DescentRenewalRuns.unrenewed_first_step
+#check @Becoming.DescentRenewalRuns.no_new_configurations
+#check @Becoming.DescentRenewalRuns.every_score_bounded

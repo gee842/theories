@@ -1,0 +1,12 @@
+import Becoming.DispatchProcessesInherited
+#check @Becoming.DispatchProcessesInherited.step_iff
+#check @Becoming.DispatchProcessesInherited.absent_route_fails
+#check @Becoming.DispatchProcessesInherited.revoked_fails
+#check @Becoming.DispatchProcessesInherited.succeeded_current
+#check @Becoming.DispatchProcessesInherited.map_some
+#check @Becoming.DispatchProcessesInherited.stale_ticket_fails
+#check @Becoming.DispatchProcessesInherited.captured_passes
+#check @Becoming.DispatchProcessesInherited.acquired_step_stops
+#check @Becoming.DispatchProcessesInherited.unfunded_step_fails
+#check @Becoming.DispatchProcessesInherited.changed_epoch_step_fails
+#check @Becoming.DispatchProcessesInherited.renewed_search_step_succeeds

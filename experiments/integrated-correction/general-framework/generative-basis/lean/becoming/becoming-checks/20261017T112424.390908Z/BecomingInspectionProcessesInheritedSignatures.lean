@@ -1,0 +1,17 @@
+import Becoming.InspectionProcessesInherited
+#check @Becoming.InspectionProcessesInherited.inspect_some
+#check @Becoming.InspectionProcessesInherited.step_candidates
+#check @Becoming.InspectionProcessesInherited.step_narrows
+#check @Becoming.InspectionProcessesInherited.candidates_narrow
+#check @Becoming.InspectionProcessesInherited.step_keeps_actual
+#check @Becoming.InspectionProcessesInherited.step_pool_sound
+#check @Becoming.InspectionProcessesInherited.step_then_completes
+#check @Becoming.InspectionProcessesInherited.denied_no_trace
+#check @Becoming.InspectionProcessesInherited.run_inspected
+#check @Becoming.InspectionProcessesInherited.run_uninspected
+#check @Becoming.InspectionProcessesInherited.trace_iff_run
+#check @Becoming.InspectionProcessesInherited.outcome_of_trace
+#check @Becoming.InspectionProcessesInherited.trace_of_outcome_ne
+#check @Becoming.InspectionProcessesInherited.extended_trace_completes
+#check @Becoming.InspectionProcessesInherited.four_witness_trace_uncertified
+#check @Becoming.InspectionProcessesInherited.extended_trace_short_of_reserve

@@ -1,0 +1,102 @@
+@Becoming.RuleHandoffTraces.none_ne_some : ∀ {x : OrganizationalRuleInheritance.State}, none ≠ some x
+Becoming.RuleHandoffTraces.formation_trace : Generative.Trace OrganizationalRuleInheritance.process
+  OrganizationalRuleInheritance.initial OrganizationalRuleInheritance.formation OrganizationalRuleInheritance.formed
+Becoming.RuleHandoffTraces.revision_trace : Generative.Trace OrganizationalRuleInheritance.process
+  OrganizationalRuleInheritance.formed OrganizationalRuleInheritance.revision OrganizationalRuleInheritance.revised
+Becoming.RuleHandoffTraces.inherited_course_trace : Generative.Trace OrganizationalRuleInheritance.process
+  OrganizationalRuleInheritance.initial
+  (OrganizationalRuleInheritance.formation ++ OrganizationalRuleInheritance.revision ++
+    [OrganizationalRuleInheritance.Event.handoff [0, 1],
+      OrganizationalRuleInheritance.Event.integrate OrganizationalRuleInheritance.twoVote,
+      OrganizationalRuleInheritance.Event.handoff [0, 1],
+      OrganizationalRuleInheritance.Event.integrate OrganizationalRuleInheritance.twoVote])
+  (have __src := OrganizationalRuleInheritance.revised;
+  { roster := __src.roster, present := [0, 1], reviews := __src.reviews, rule := __src.rule, proposal := __src.proposal,
+    adoptions := __src.adoptions, accepted := 2 })
+Becoming.RuleHandoffTraces.successor_revision_trace : Generative.Trace OrganizationalRuleInheritance.process
+  OrganizationalRuleInheritance.revised
+  [OrganizationalRuleInheritance.Event.handoff [0, 1, 2, 3],
+    OrganizationalRuleInheritance.Event.propose 3 OrganizationalRuleInheritance.Rule.majority,
+    OrganizationalRuleInheritance.Event.adopt OrganizationalRuleInheritance.fourVote]
+  (have __src := OrganizationalRuleInheritance.formed;
+  { roster := __src.roster, present := [0, 1, 2, 3], reviews := __src.reviews, rule := __src.rule,
+    proposal := __src.proposal,
+    adoptions := [OrganizationalRuleInheritance.Rule.majority, OrganizationalRuleInheritance.Rule.timedTwo],
+    accepted := __src.accepted })
+Becoming.RuleHandoffTraces.low_support_infeasible : ¬Generative.Feasible OrganizationalRuleInheritance.process
+    OrganizationalRuleInheritance.formed
+    [OrganizationalRuleInheritance.Event.propose 5 OrganizationalRuleInheritance.Rule.timedTwo,
+      OrganizationalRuleInheritance.Event.adopt OrganizationalRuleInheritance.twoVote]
+@Becoming.RuleHandoffTraces.review_step_keeps_roster : ∀ {t : OrganizationalRuleInheritance.State},
+  OrganizationalRuleInheritance.process.step OrganizationalRuleInheritance.initial
+      (OrganizationalRuleInheritance.Event.review 0 1) t →
+    t.roster = [0]
+Becoming.RuleHandoffTraces.entry_without_review_disabled : ¬Generative.Enabled OrganizationalRuleInheritance.process
+    OrganizationalRuleInheritance.initial
+    (OrganizationalRuleInheritance.Event.enroll 1 OrganizationalRuleInheritance.allVote)
+@Becoming.RuleHandoffTraces.proposal_step_keeps_rule : ∀ {t : OrganizationalRuleInheritance.State},
+  OrganizationalRuleInheritance.process.step OrganizationalRuleInheritance.formed
+      (OrganizationalRuleInheritance.Event.propose 5 OrganizationalRuleInheritance.Rule.timedTwo) t →
+    t.rule = OrganizationalRuleInheritance.Rule.majority
+@Becoming.RuleHandoffTraces.handoff_step_eq : ∀ {s t : OrganizationalRuleInheritance.State} {cs : List Nat},
+  OrganizationalRuleInheritance.process.step s (OrganizationalRuleInheritance.Event.handoff cs) t →
+    t = OrganizationalRuleInheritance.handoff s cs
+@Becoming.RuleHandoffTraces.handoff_step_keeps : ∀ {s t : OrganizationalRuleInheritance.State} {cs : List Nat},
+  OrganizationalRuleInheritance.process.step s (OrganizationalRuleInheritance.Event.handoff cs) t →
+    t.rule = s.rule ∧ t.roster = s.roster ∧ t.adoptions = s.adoptions
+@Becoming.RuleHandoffTraces.handoffs_trace_eq : ∀ {s t : OrganizationalRuleInheritance.State} {css : List (List Nat)},
+  Generative.Trace OrganizationalRuleInheritance.process s (List.map OrganizationalRuleInheritance.Event.handoff css)
+      t →
+    t = OrganizationalRuleInheritance.handoffs s css
+@Becoming.RuleHandoffTraces.handoffs_trace_keeps : ∀ {s t : OrganizationalRuleInheritance.State}
+  {css : List (List Nat)},
+  Generative.Trace OrganizationalRuleInheritance.process s (List.map OrganizationalRuleInheritance.Event.handoff css)
+      t →
+    t.rule = s.rule ∧ t.roster = s.roster ∧ t.adoptions = s.adoptions
+Becoming.RuleHandoffTraces.fork_step : ∀ (s : OrganizationalRuleInheritance.State) (cs : List Nat),
+  (OrganizationalRuleInheritance.fork s cs).fst = s ∧
+    OrganizationalRuleInheritance.process.step s (OrganizationalRuleInheritance.Event.handoff cs)
+      (OrganizationalRuleInheritance.fork s cs).snd
+@Becoming.RuleHandoffTraces.branch_revises : ∀ {t : OrganizationalRuleInheritance.State},
+  OrganizationalRuleInheritance.process.step OrganizationalRuleInheritance.formed
+      (OrganizationalRuleInheritance.Event.handoff [0, 1, 2, 3, 4, 5]) t →
+    OrganizationalRuleInheritance.formed.rule = OrganizationalRuleInheritance.Rule.majority ∧
+      Generative.Trace OrganizationalRuleInheritance.process t OrganizationalRuleInheritance.revision
+        OrganizationalRuleInheritance.revised
+@Becoming.RuleHandoffTraces.integrate_enabled_iff : ∀ {s : OrganizationalRuleInheritance.State}
+  {b : OrganizationalRuleInheritance.Ballot},
+  Generative.Enabled OrganizationalRuleInheritance.process s (OrganizationalRuleInheritance.Event.integrate b) ↔
+    OrganizationalRuleInheritance.technical s b = true
+Becoming.RuleHandoffTraces.repeated_votes_disabled : ¬Generative.Enabled OrganizationalRuleInheritance.process
+    OrganizationalRuleInheritance.revised
+    (OrganizationalRuleInheritance.Event.integrate { yes := [0, 0, 0, 0], no := [], days := 14 })
+Becoming.RuleHandoffTraces.wait_and_objection : ¬Generative.Enabled OrganizationalRuleInheritance.process
+      OrganizationalRuleInheritance.revised
+      (OrganizationalRuleInheritance.Event.integrate { yes := [0, 1], no := [], days := 13 }) ∧
+  ¬Generative.Enabled OrganizationalRuleInheritance.process OrganizationalRuleInheritance.revised
+        (OrganizationalRuleInheritance.Event.integrate { yes := [0, 1], no := [2], days := 14 }) ∧
+    Generative.Enabled OrganizationalRuleInheritance.process OrganizationalRuleInheritance.revised
+      (OrganizationalRuleInheritance.Event.integrate OrganizationalRuleInheritance.twoVote)
+@Becoming.RuleHandoffTraces.handoff_access : ∀ {t t' : OrganizationalRuleInheritance.State},
+  OrganizationalRuleInheritance.process.step OrganizationalRuleInheritance.formed
+      (OrganizationalRuleInheritance.Event.handoff [0, 1]) t →
+    OrganizationalRuleInheritance.process.step OrganizationalRuleInheritance.revised
+        (OrganizationalRuleInheritance.Event.handoff [0, 1]) t' →
+      ¬Generative.Enabled OrganizationalRuleInheritance.process t
+            (OrganizationalRuleInheritance.Event.integrate OrganizationalRuleInheritance.twoVote) ∧
+        Generative.Enabled OrganizationalRuleInheritance.process t'
+          (OrganizationalRuleInheritance.Event.integrate OrganizationalRuleInheritance.twoVote)
+@Becoming.RuleHandoffTraces.handoff_without_participation : ∀ {t : OrganizationalRuleInheritance.State},
+  OrganizationalRuleInheritance.process.step OrganizationalRuleInheritance.revised
+      (OrganizationalRuleInheritance.Event.handoff []) t →
+    t.rule = OrganizationalRuleInheritance.Rule.timedTwo ∧
+      ¬Generative.Enabled OrganizationalRuleInheritance.process t
+          (OrganizationalRuleInheritance.Event.integrate OrganizationalRuleInheritance.twoVote)
+@Becoming.RuleHandoffTraces.integration_without_revision : ∀ {t : OrganizationalRuleInheritance.State},
+  OrganizationalRuleInheritance.process.step OrganizationalRuleInheritance.revised
+      (OrganizationalRuleInheritance.Event.handoff [0, 1]) t →
+    Generative.Enabled OrganizationalRuleInheritance.process t
+        (OrganizationalRuleInheritance.Event.integrate OrganizationalRuleInheritance.twoVote) ∧
+      ¬Generative.Feasible OrganizationalRuleInheritance.process t
+          [OrganizationalRuleInheritance.Event.propose 0 OrganizationalRuleInheritance.Rule.majority,
+            OrganizationalRuleInheritance.Event.adopt OrganizationalRuleInheritance.twoVote]

@@ -1,0 +1,7 @@
+@Becoming.ExactRecordRunsInherited.exact_possible_iff : ∀ {S : Type u_1} {A : Type u_2} {R : Type u_3}
+  {P : Generative.Process S A} (D : Becoming.Run P → Prop) (reg : S → R) (val : S → Bool) (t : Nat),
+  (∃ answer,
+      Generative.KnowledgeCorrespondence.ExactOn D (Becoming.ExactRecordRuns.recordBefore reg t)
+        (Becoming.ExactRecordRuns.valueAt val t) answer) ↔
+    Generative.KnowledgeCorrespondence.Resolves D (Becoming.ExactRecordRuns.recordBefore reg t)
+      (Becoming.ExactRecordRuns.valueAt val t)
