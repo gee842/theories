@@ -1,0 +1,18 @@
+diff --git a/.claude/launch.json b/.claude/launch.json
+deleted file mode 100644
+index 7b23a92d8..000000000
+--- a/.claude/launch.json
++++ /dev/null
+@@ -1,12 +0,0 @@
+-{
+-  "version": "0.0.1",
+-  "configurations": [
+-    {
+-      "name": "film-dev",
+-      "runtimeExecutable": "node",
+-      "runtimeArgs": ["drafts/2026-10-03-the-game-of-winning/v3/dev-server.mjs"],
+-      "port": 5291,
+-      "autoPort": true
+-    }
+-  ]
+-}
