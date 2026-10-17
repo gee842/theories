@@ -10,7 +10,7 @@ of whether levels vanish from some condition on, which gives the
 limited principle of omniscience (`LPO`), the tail law is sensitive to no condition and still
 differs. Where the conditions are numbered by the natural numbers, every counterexample gives the
 weak limited principle (`WLPO`). It leaves open where between the two the existence of a
-counterexample lies. This module answers within Part I, with no premise beyond what each statement
+counterexample lies. This module answers within the theory without axiom, with no premise beyond what each statement
 names: a counterexample exists exactly where a rule decides, of every Boolean sequence, whether it
 is `false` throughout, which is `WLPO` given as a rule; the decision of vanishing is exactly `LPO`
 given as a rule.

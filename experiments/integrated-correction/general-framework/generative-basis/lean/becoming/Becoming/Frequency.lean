@@ -8,7 +8,7 @@ arrive run away, at least geometrically, and `Becoming.Remainder` (P120) that fo
 couplings the loops that matter for a cut are those of the couplings that go on. P120 leaves three
 questions open: whether every schedule settles, whether every loop of recurring couplings makes the
 most difference that can arrive run away, and how fast a runaway is. This module answers them,
-within Part I and with no premise beyond the strengths each statement names. How fast is fixed by
+within the theory without axiom and with no premise beyond the strengths each statement names. How fast is fixed by
 how often couplings act, not by how strong they are; a loop that recurs need not run away; and that
 every schedule settles is a principle of reasoning, exactly.
 

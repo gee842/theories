@@ -12,7 +12,7 @@ its steps, alternatives add, and its losses are truncation, cancellation, memory
 `Becoming.Loops` (P118) expands the carried difference of `Becoming.Propagation` by order: order
 `j` is what routes of at most `j` responses carry. Ren took the reading that the two are of the
 same structural kind and not yet joined, and asked on 16 October for the join. This module gives
-it, within Part I and with no premise beyond what each statement names.
+it, within the theory without axiom and with no premise beyond what each statement names.
 
 * **The carried amount is a sum over histories.** Trace a difference back in time. From the level
   of `c` at step `τ` (`RoutePoint.level`), a step is one response: the level of `d` at an earlier

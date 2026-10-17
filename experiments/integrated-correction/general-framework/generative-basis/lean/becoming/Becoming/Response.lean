@@ -286,7 +286,7 @@ balanced flows with the same formations present start alike, and let the rest re
 registration. For any significance that, from `p`, covers every formation not beyond the part's
 responsive reach, the levels of the first flow retain what has significance along the second's
 exactly when they include them, and the reverse, and neither adds a continuation with significance
-exactly where neither exceeds the other: the axiom's comparisons. The cover is stated for what is
+exactly where neither exceeds the other: the continuation condition's comparisons. The cover is stated for what is
 not beyond the reach, a double negation, because the difference between the flows shows only that
 a formation it reaches is not beyond (`not_differs_beyond_response`); turning that into membership
 would need membership decided, which is not used. -/

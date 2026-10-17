@@ -33,7 +33,7 @@ each interface from the spine, or proves that a module's own combinator is the
 spine's, so their theorems apply to one unfolding without copying them. The core
 imports none of these modules; the dependency runs from them to the core.
 
-* The core's G0, C, secured positive ground and positioned articulation D are, by
+* The core's living significance, C, secured positive ground and positioned articulation D are, by
   definition, those of `GenerativeComparison` and `PositionedPositiveReason` on the
   frame's inventory; the relational reading of `living` is `RenewalComparison`'s, and
   so is the whole-run reading of courses in `Becoming.Ranking`, with the same
@@ -54,10 +54,10 @@ imports none of these modules; the dependency runs from them to the core.
   lifted one, and the lifted comparison, reason and selection results hold for
   every frame. Two countermodels show that the choice of lifting rule is
   substantive and that transitivity needs a live middle response.
-* Under the axiom of `Becoming.Significance`, `GenerativeComparison.G0` holds for
+* Under the continuation condition of `Becoming.Significance`, `GenerativeComparison.G0` holds for
   every inventory with positive relevance read from significance, which on a frame's
-  inventory is the core's `Frame.relevance`. The periphery's theorems taking G0 as a
-  hypothesis for an arbitrary positive relevance follow from the axiom with it: a new
+  inventory is the core's `Frame.relevance`. The periphery's theorems taking living significance as a
+  hypothesis for an arbitrary positive relevance follow from the continuation condition with it: a new
   realization of a generative extension, contingent generation, and the universal
   address of positioned articulation with D read on it.
 * `Deeper.Bisimulation` of `RelationalDynamics` and `ExplanatoryBranching.Bisimulation` are
@@ -99,7 +99,7 @@ imports none of these modules; the dependency runs from them to the core.
   `Judgment.better_iff_betterAt`), with the same frontier (`Judgment.frontier_iff`). So the
   alignment direction's comparison of plans and its frontier are the spine's
   (`alignment_better_iff_betterAt`, `alignment_frontier_iff`). `BetterAt` states J1/J2,
-  commitments outside the core; G0 is neither used nor asserted here.
+  commitments outside the core; living significance is neither used nor asserted here.
   On a listed menu the frontier is the undominated members (`Judgment.frontier_iff_undominated`),
   so `PracticalJudgment.finite_frontier` and `RelationalOrganization`'s requirement of formation
   hold with the comparison weakly decided and the task decided, with no classical reasoning
@@ -416,13 +416,13 @@ theorem Ranking.undisturbed_eq (L : RelationalRenewal.Law) :
 
 end Definitions
 
-/-! ## The axiom discharges G0 in the existing modules -/
+/-! ## The continuation condition discharges living significance in the existing modules -/
 
 section Discharge
 
-/-- Under the axiom `GenerativeComparison.G0` holds for every inventory, with positive relevance
+/-- Under the continuation condition `GenerativeComparison.G0` holds for every inventory, with positive relevance
 read from significance: realized generative content whose continuation has significance from
-every standpoint. Every theorem taking G0 as a hypothesis for an arbitrary positive relevance
+every standpoint. Every theorem taking living significance as a hypothesis for an arbitrary positive relevance
 holds with this one. -/
 theorem inventory_g0_of_unrestricted {H Q F Pos : Type}
     (inventory : GenerativeComparison.Inventory H Q) {sig : Pos → Nat → F → Prop}
@@ -440,7 +440,7 @@ theorem relevance_inventory_iff {S A Q F Pos : Type} (M : Frame S A Q) (living :
         ∀ p, sig p (step c) (formation c) :=
   Iff.rfl
 
-/-- From the axiom, a new realization of a generative extension has positive relevance read from
+/-- From the continuation condition, a new realization of a generative extension has positive relevance read from
 significance (`GenerativeComparison.new_realization_has_positive_relevance`). -/
 theorem new_realization_of_unrestricted {H Q F Pos : Type}
     {inventory : GenerativeComparison.Inventory H Q} {sig : Pos → Nat → F → Prop}
@@ -451,7 +451,7 @@ theorem new_realization_of_unrestricted {H Q F Pos : Type}
   GenerativeComparison.new_realization_has_positive_relevance
     (inventory_g0_of_unrestricted inventory unrestricted formation step) extension
 
-/-- From the axiom, contingent generation secures positive ground read from significance
+/-- From the continuation condition, contingent generation secures positive ground read from significance
 (`PositiveGroundUncertainty.contingent_generation_has_positive_ground`). -/
 theorem contingent_generation_of_unrestricted {H Q F Pos : Type} (admitted : H → Prop)
     (before : H → Q → Prop) (inventory : GenerativeComparison.Inventory H Q)
@@ -464,7 +464,7 @@ theorem contingent_generation_of_unrestricted {H Q F Pos : Type} (admitted : H �
   PositiveGroundUncertainty.contingent_generation_has_positive_ground admitted before inventory _
     (inventory_g0_of_unrestricted inventory unrestricted formation step) formed
 
-/-- Universal address from the axiom: with D read on positive relevance from significance,
+/-- Universal address from the continuation condition: with D read on positive relevance from significance,
 formation correspondence gives every position with access the reason
 (`PositionedPositiveReason.every_situated_position_has_reason`). -/
 theorem every_situated_position_has_reason_of_unrestricted {Pos H Q R F : Type}
@@ -549,7 +549,7 @@ theorem positive_ground_by_bound_of_unrestricted {H Q F Pos : Type}
       unrestricted formation step) formed
 
 /-- Complete producer-to-consumer instance, with every operational hypothesis of
-the inherited generation theorem retained and G0 obtained from significance. -/
+the inherited generation theorem retained and living significance obtained from significance. -/
 theorem revised_generation_by_bound_of_unrestricted {H S Q F Pos : Type}
     (admitted : H → Prop) (states : H → Nat → S) (rank : H → Nat → S → Nat)
     (completed : H → Nat → Prop) (decideEvent : ∀ h, DecidablePred (completed h))

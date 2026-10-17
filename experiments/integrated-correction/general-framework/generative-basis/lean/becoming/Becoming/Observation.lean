@@ -8,7 +8,7 @@ import Becoming.Thresholds
 showed that a law reading a stock only below a threshold carries a raise of it nowhere up to the
 break, and that what can register the distance is a reading of the stock's level before the break;
 it left open how a formation comes to observe a stock it depends on. Ren approved that approach
-and said to continue (16 October). This module answers within Part I, with no premise beyond what
+and said to continue (16 October). This module answers within the theory without axiom, with no premise beyond what
 each theorem names: observing lies within the downstream. A difference reaches a formation only along a
 route of readings from where it starts, and observing the stock itself is the route of length zero.
 

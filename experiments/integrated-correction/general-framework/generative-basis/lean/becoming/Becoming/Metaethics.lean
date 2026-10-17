@@ -47,13 +47,13 @@ The premise card, every item named and visible:
   configurations; joining them needs a construction not given here.
 
 Results:
-* `significant_iff`: on a connected whole with some living content, G0 for every
+* `significant_iff`: on a connected whole with some living content, living significance for every
   standpoint is equivalent to a seed with N_rel and N_std. This characterizes the
-  content of G0 with no axiom; since Ren folded G0 (11 October 2026) it is a condition,
-  and a theorem of the axiom of `Becoming.Significance`. The forward direction is
+  content of living significance with no axiom; since Ren folded living significance (`G0`) (11 October 2026) it is a condition,
+  and a theorem of the continuation condition of `Becoming.Significance`. The forward direction is
   nearly immediate; the content lies in the backward direction and in minimality.
 * `positioned_articulation_of_articulates`: the positioned articulation D follows
-  from A with G0's unindexed significance.
+  from A with living significance read with unindexed significance.
 * `universal_reason`: a sound inquiry whose goal is new living content gives every
   position with access a contributory reason for it.
 * What C asks of the comparison it constrains, with no premise. Extensions are irreflexive
@@ -99,7 +99,7 @@ treats bringing new lives into existence. A contributory reason is not a duty, a
 ranking or a prediction of recognition or compliance. Every declaration has an
 empty axiom report.
 
-The core imports only its own layers and the foundation. G0, C, D and the secured positive
+The core imports only its own layers and the foundation. Living significance, C, D and the secured positive
 ground are stated here once; `Becoming.Bridge` shows that the definitions of
 `GenerativeComparison` and `PositionedPositiveReason` are these, so their theorems
 apply without the core depending on them.
@@ -160,11 +160,11 @@ def transmits : Pos × C × C → Prop
 def shares : Pos × Pos × C → Prop
   | (p, q, c) => V.living c → V.sig p c → V.sig q c
 
-/-- What G0 needs beyond the frame: a seed and both neutralities. -/
+/-- What living significance needs beyond the frame: a seed and both neutralities. -/
 def Grounds : Prop :=
   V.Seed ∧ Neutral V.transmits ∧ Neutral V.shares
 
-/-- G0 at the level of claims: every living claim is significant from every standpoint. -/
+/-- Living significance at the level of claims: every living claim is significant from every standpoint. -/
 def Significant : Prop :=
   ∀ p c, V.living c → V.sig p c
 
@@ -188,7 +188,7 @@ theorem significant_of_grounds (connected : V.Connected) : V.Grounds → V.Signi
   | ⟨⟨p₁, c₁, alive₁, held⟩, transmit, share⟩, p, c, alive =>
     reaches transmit (connected c₁ c alive₁ alive) (share (p₁, p, c₁) alive₁ held)
 
-/-- Characterization of G0's content on a connected whole with some living claim. -/
+/-- Characterization of living significance's content on a connected whole with some living claim. -/
 theorem significant_iff (connected : V.Connected) (p₀ : Pos) {c₀ : C}
     (alive₀ : V.living c₀) : V.Significant ↔ V.Grounds :=
   ⟨fun all => ⟨⟨p₀, c₀, alive₀, all p₀ c₀ alive₀⟩,
@@ -198,16 +198,16 @@ theorem significant_iff (connected : V.Connected) (p₀ : Pos) {c₀ : C}
 
 end Valuation
 
-/-! ## G0, D and the universal reason on the frame -/
+/-! ## Living significance, D and the universal reason on the frame -/
 
 variable {S A C Pos : Type}
 
-/-- G0 on the frame: living content realized at a configuration is positively
+/-- Living significance on the frame: living content realized at a configuration is positively
 relevant there. -/
 def G0 (F : Frame S A C) (living : C → Prop) (positive : S → C → Prop) : Prop :=
   ∀ s c, living c → F.realized s c → positive s c
 
-/-- Claim-level significance is G0 for the frame, with unindexed positive relevance. -/
+/-- Claim-level significance is living significance for the frame, with unindexed positive relevance. -/
 theorem Valuation.g0 (F : Frame S A C) {V : Valuation Pos C} (all : V.Significant) :
     G0 F V.living (fun _ c => ∀ p, V.sig p c) :=
   fun _ c alive _ p => all p c alive
@@ -231,7 +231,7 @@ def articulates {H R : Type} (V : Valuation Pos C) (access : Pos → R → Prop)
   | (p, r) => access p r →
       SecuresPositiveGround admitted before (fun _ c => V.sig p c) r → Reason p r
 
-/-- D follows from A with G0's unindexed significance. -/
+/-- D follows from A with living significance read with unindexed significance. -/
 theorem positioned_articulation_of_articulates {H R : Type} {V : Valuation Pos C}
     {access : Pos → R → Prop} {admitted : R → H → Prop} {before : H → C → Prop}
     {Reason : Pos → R → Prop} (articulate : Neutral (articulates V access admitted before Reason)) :
@@ -371,7 +371,7 @@ theorem connected_of_common (c₀ : Cond)
   fun c d alive alive' =>
     Reach.of_step (a := ()) ⟨⟨c₀, common c alive, common d alive'⟩, alive'⟩
 
-/-- With a condition in which every living formation participates, G0 for every
+/-- With a condition in which every living formation participates, living significance for every
 standpoint is exactly a seed with N_rel and N_std. Connection follows from
 co-participation, given which conditions are counted. -/
 theorem significant_iff_of_common (c₀ : Cond)
@@ -471,7 +471,7 @@ theorem connected_of_common (c₀ : Cond)
   fun c d alive alive' =>
     Reach.of_step (a := ()) ⟨⟨c₀, common c alive, common d alive'⟩, alive'⟩
 
-/-- With a condition in which every living event participates, G0 for every standpoint
+/-- With a condition in which every living event participates, living significance for every standpoint
 is exactly a seed with N_rel and N_std, on the stepwise reading as on the whole-run
 one. -/
 theorem significant_iff_of_common (c₀ : Cond)

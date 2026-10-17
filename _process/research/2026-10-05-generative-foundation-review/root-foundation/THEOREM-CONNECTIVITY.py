@@ -18,6 +18,9 @@ Three steps, none of which writes to the repository unless `--write` is given:
    of the undirected dependency graph, and, for each result record naming spine theorems (in its aliases, or in the
    declarations and witnesses of its laws, limits and counterexamples), the best class among them.
 
+The periphery within the run (the foundation and the inherited modules the bridge imports) is measured the same
+way and reported under `periphery`; its apart roots are held to the same register (U2, 17 October 2026).
+
 Also reported: the roots among the apart theorems (used by no other apart theorem) and, from
 THEOREM-CONNECTIVITY-APART.json, each root's category and reason (support, logical strength, model witness, restates,
 general structure, bridge interface); `--check` exits with an error where an apart root has no entry or an entry is no
@@ -86,7 +89,10 @@ def dump_constants():
                 missing.append(name)
         if missing:
             sys.exit(f'not in the cache for the current sources (run check_becoming.py first): {missing}')
-        (work / DUMP.name).write_bytes(DUMP.read_bytes())
+        # The periphery joins (U2) are imported by nothing in the spine; the dump imports them too.
+        dump = DUMP.read_text()
+        joins = ''.join(f'import {n}\n' for n in getattr(cb, 'PERIPHERY_JOINS', []) if f'import {n}\n' not in dump)
+        (work / DUMP.name).write_text(dump.replace('import Lean\n', 'import Lean\n' + joins, 1))
         out = work / 'dump.jsonl'
         env = {**os.environ, 'LEAN_PATH': str(work), 'THEOREM_CONNECTIVITY_OUT': str(out)}
         lean = [str(Path.home() / '.elan/bin/lean'), '+' + cb.audit_support.TOOLCHAIN]
@@ -98,7 +104,8 @@ def dump_constants():
         for line in out.read_text().splitlines():
             x = json.loads(line)
             constants[x['n']] = x
-    registry = {name: cb.declarations(sources[name]) for name in cb.SPINE if name in sources}
+    # The spine's modules and the inherited (periphery) modules of the same run, which the bridge imports.
+    registry = {name: cb.declarations(sources[name]) for name in order if name in sources}
     paths = [str(index[name][0].resolve().relative_to(ROOT)) for name in order]
     clean = subprocess.run(['git', 'diff', '--quiet', 'HEAD', '--', *paths]).returncode == 0
     return constants, registry, len(order), version, clean
@@ -149,26 +156,37 @@ def main():
 
     theorems = [(item['name'], module) for module in cb.SPINE for item in registry.get(module, [])
                 if item['kind'] == 'theorem']
+    # The inherited modules of the run (the foundation and the earlier modules the bridge imports): the periphery
+    # within the checker's environment, measured the same way and held to the same register.
+    periphery = [m for m in registry if m not in cb.SPINE]
+    periphery_theorems = [(item['name'], module) for module in periphery for item in registry[module]
+                          if item['kind'] == 'theorem']
     absent = [n for n, _ in theorems if n not in constants]
     assert not absent, ('source theorems missing from the dump', absent[:10])
     cls = {n: classify(n) for n, _ in theorems}
     module_of = dict(theorems)
     apart = [n for n, _ in theorems if cls[n] in APART]
+    periphery_cls = {n: classify(n) for n, _ in periphery_theorems if n in constants}
+    periphery_module_of = dict(periphery_theorems)
+    periphery_apart = [n for n, _ in periphery_theorems if periphery_cls.get(n) in APART]
     total = collections.Counter(module_of.values())
     apart_by_module = collections.Counter(module_of[n] for n in apart)
     # Roots: apart theorems used by no other apart theorem (nor by a definition off the base). A theorem on the base
     # using a root makes it, and every apart theorem it uses, feed the base. The register gives each root's reason.
-    apart_set = set(apart)
+    apart_set = set(apart) | set(periphery_apart)
     users = collections.defaultdict(set)
     for n in constants:
         for d in deps[n]:
             if d in apart_set and d != n:
                 users[d].add(n)
-    roots = sorted(n for n in apart if not any(
-        u in apart_set or (constants[u]['k'] == 'def' and u not in feeds and not on_base[u]) for u in users[n]))
+    def is_root(n):
+        return not any(u in apart_set or (constants[u]['k'] == 'def' and u not in feeds and not on_base[u])
+                       for u in users[n])
+    roots = sorted(n for n in apart if is_root(n))
+    periphery_roots = sorted(n for n in periphery_apart if is_root(n))
     register = json.loads(APART_REGISTER.read_text())['roots'] if APART_REGISTER.exists() else {}
-    unclassified = [n for n in roots if n not in register]
-    stale = sorted(n for n in register if n not in set(roots))
+    unclassified = [n for n in roots + periphery_roots if n not in register]
+    stale = sorted(n for n in register if n not in set(roots) | set(periphery_roots))
 
     # Undirected components over every tracked constant.
     neighbours = collections.defaultdict(set)
@@ -200,12 +218,14 @@ def main():
                     named.update(item.get('declarations') or [])
                     if isinstance(item.get('witness'), str):
                         named.add(item['witness'])
-        aliases = sorted(a for a in named if a in cls)
+        every = {**cls, **periphery_cls}
+        where = {**module_of, **periphery_module_of}
+        aliases = sorted(a for a in named if a in every)
         if aliases:
-            best = min((cls[a] for a in aliases), key=CLASSES.index)
+            best = min((every[a] for a in aliases), key=CLASSES.index)
             records[best] += 1
             if best in APART:
-                apart_records.append({'id': record['id'], 'modules': sorted({module_of[a] for a in aliases})})
+                apart_records.append({'id': record['id'], 'modules': sorted({where[a] for a in aliases})})
 
     head = subprocess.run(['git', 'rev-parse', 'HEAD'], text=True, stdout=subprocess.PIPE).stdout.strip()
     # The receipt the commit holds; a later run in the working tree is not this commit's.
@@ -232,6 +252,17 @@ def main():
             module_of[n] for n in cls if cls[n] == CLASSES[0]).most_common()),
         'apart_by_module': {m: [k, total[m]] for m, k in apart_by_module.most_common()},
         'components': {'count': count, 'theorems_outside_the_main_component': outside},
+        'periphery': {
+            'modules': len(periphery), 'theorems': len(periphery_cls),
+            'classes': {c: sum(1 for v in periphery_cls.values() if v == c) for c in CLASSES},
+            'apart': len(periphery_apart), 'apart_roots': len(periphery_roots),
+            'apart_roots_by_category': dict(collections.Counter(
+                register[n]['category'] for n in periphery_roots if n in register)),
+            'apart_by_module': {m: [k, sum(1 for _, mm in periphery_theorems if mm == m)] for m, k in
+                                collections.Counter(periphery_module_of[n] for n in periphery_apart).most_common()},
+            'theorems_outside_the_main_component': sorted(
+                n for n in periphery_cls if component.get(n) != main_component),
+        },
         'records_by_best_alias_class': {c: records[c] for c in CLASSES if records[c]},
         'records_resting_only_on_apart_theorems': apart_records,
     }
@@ -241,7 +272,8 @@ def main():
                  f'roots: {stale}')
     if '--write' in sys.argv[1:]:
         (HERE / 'THEOREM-CONNECTIVITY.json').write_text(json.dumps(
-            {**summary, 'theorems': {n: cls[n] for n, _ in theorems}}, ensure_ascii=False, indent=1) + '\n')
+            {**summary, 'theorems': {n: cls[n] for n, _ in theorems},
+             'periphery_theorems': dict(sorted(periphery_cls.items()))}, ensure_ascii=False, indent=1) + '\n')
 
 
 if __name__ == '__main__':

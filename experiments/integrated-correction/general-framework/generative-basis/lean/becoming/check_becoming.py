@@ -17,6 +17,10 @@ The bridge imports existing modules to show that their interfaces are the core's
 nothing in the core imports it, and its declarations also have empty axiom reports. The
 constants of the bridge modules themselves are audited the same way (their imports may use
 axioms; only the bridge's own constants count): empty, apart from generated `injEq` on `propext`.
+Periphery joins (`PERIPHERY_JOINS`, since U2) state periphery theorems' laws of the base through
+periphery roots whose own reports are not empty; nothing in the core or the bridge imports them, and
+each of their declarations may carry only the axioms it inherits (propext, Quot.sound,
+Classical.choice), recorded exactly.
 The declaration scanner reads every declaration outside comments and strings, at any
 indentation and with any modifiers; private declarations and unnamed instances, which cannot
 be audited by name, are listed in the receipt (`not_audited_by_name`) and, in the core closure
@@ -79,8 +83,40 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
         "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.Frequency", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming.Runs", "Becoming.CourseWorlds", "Becoming.LearnableRuns", "Becoming.ParityReadings", "Becoming.FinerTraces", "Becoming.FormedLoops", "Becoming.AttractionRuns", "Becoming.BoundaryFlows", "Becoming.BoundaryWorlds", "Becoming.CandidateRuns", "Becoming.CaptureWorlds", "Becoming.CensusWebs", "Becoming.ContactCourses", "Becoming.ContextualRuns", "Becoming.ContinuingRuns", "Becoming.CopyCourses", "Becoming.CountdownCourses", "Becoming.CounterfactualRuns", "Becoming.CouplingTraces", "Becoming.CourseRoles", "Becoming.DependenceWebs", "Becoming.DiagonalRuns", "Becoming.ExchangeFlows", "Becoming.HorizonWebs", "Becoming.IdentificationRuns", "Becoming.JointPlanFrames", "Becoming.LastingRuns", "Becoming.LearningRuns", "Becoming.LevelWebs", "Becoming.ListedOutcomeFrames", "Becoming.ListedWebs", "Becoming.MoveRuns", "Becoming.OrderWorlds", "Becoming.PassageWorlds", "Becoming.RecurrenceRuns", "Becoming.ReducedRuns", "Becoming.ReferencePlanTraces", "Becoming.RetrodictionRuns", "Becoming.RevisionRuns", "Becoming.RouteTraces", "Becoming.SeekingRuns", "Becoming.SelectionRuns", "Becoming.SensitivityWebs", "Becoming.SituationTraces", "Becoming.StockTraces", "Becoming.StrengthFlows", "Becoming.TailRuns", "Becoming.TallyWorlds", "Becoming.TypicalRuns", "Becoming.WeightedTraces", "Becoming"]
-BRIDGE = ["Becoming.Bridge", "Becoming.CompositionBridge", "Becoming.JoiningBridge", "Becoming.GranularityBridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge", "Becoming.CoursesBridge"]
+BRIDGE = ["Becoming.Bridge", "Becoming.CompositionBridge", "Becoming.JoiningBridge", "Becoming.GranularityBridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge", "Becoming.CoursesBridge",
+    # U2 (17 October 2026): pure joins of the periphery to the base
+    "Becoming.GuardHorizonProcesses", "Becoming.InstallationTraces",
+    "Becoming.ReconfigurationProcesses", "Becoming.TreeSearchRuns", "Becoming.QueryTraces",
+    "Becoming.DephasingRuns", "Becoming.DrawnAmountProcesses", "Becoming.ProjectedLawTraces",
+    "Becoming.RuleHandoffTraces", "Becoming.ExactRecordRuns", "Becoming.JoiningCodeFrames",
+    "Becoming.JointPhaseTraces", "Becoming.TestCodeFrames", "Becoming.UnitTraces",
+    "Becoming.MoveOutcomeProcesses", "Becoming.RuleNarrowingProcesses",
+    "Becoming.SeedReachProcesses", "Becoming.ExtendedClaimFrames", "Becoming.ExtensionFrames",
+    "Becoming.InterfaceTraces", "Becoming.ReachableFrames", "Becoming.StrictTransportRuns",
+    "Becoming.ClassifiedBeliefProcesses", "Becoming.ContextArrivalTraces",
+    "Becoming.CouplingHistoryFrames", "Becoming.CourseExtensionFrames",
+    "Becoming.DerivationScopeProcesses", "Becoming.DescentRenewalRuns",
+    "Becoming.FeasibleProfileTraces", "Becoming.RuleRevisionTraces", "Becoming.SupportGatedWebs"]
 SPINE = CORE + BRIDGE
+# Periphery joins (U2, 17 October 2026): modules stating periphery theorems' laws of the base through
+# periphery roots whose own axiom reports are not empty. They are compiled and audited in this run and
+# imported by nothing in the core or the bridge; each declaration may carry only axioms it inherits
+# (propext, Quot.sound, Classical.choice), reported exactly in the receipt.
+PERIPHERY_JOINS = [
+    "Becoming.GuardHorizonProcessesInherited", "Becoming.InstallationTracesInherited",
+    "Becoming.TransactionTracesInherited", "Becoming.DispatchProcessesInherited",
+    "Becoming.InspectionProcessesInherited", "Becoming.ProbeRunsInherited",
+    "Becoming.ReconfigurationProcessesInherited", "Becoming.TreeSearchRunsInherited",
+    "Becoming.FormationTracesInherited", "Becoming.QueryTracesInherited",
+    "Becoming.TrainingProcessesInherited", "Becoming.DephasingRunsInherited",
+    "Becoming.DrawnAmountProcessesInherited", "Becoming.RuleHandoffTracesInherited",
+    "Becoming.ExactRecordRunsInherited", "Becoming.JoiningCodeFramesInherited",
+    "Becoming.JointPhaseTracesInherited", "Becoming.ReceptionTracesInherited",
+    "Becoming.MoveOutcomeProcessesInherited", "Becoming.RuleNarrowingProcessesInherited",
+    "Becoming.ClassifiedFramesInherited", "Becoming.InterfaceTracesInherited",
+    "Becoming.ReachableFramesInherited", "Becoming.ContextArrivalTracesInherited",
+    "Becoming.RuleRevisionTracesInherited", "Becoming.SupportGatedWebsInherited"]
+CHECKED = SPINE + PERIPHERY_JOINS
 PURE = FOUNDATION + CORE
 RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
@@ -663,10 +699,10 @@ SCOPE = (
     "standing while dormant arises later with nothing given to it, and a relatum standing "
     "throughout wakes without end with nothing given to it, nothing taking part in its flow. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
-    "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
+    "from every standpoint (living significance at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "
     "sound inquiry for new living content gives every position with access a contributory reason; "
-    "G0, C, D and the secured positive ground are stated in the core, which imports no ethics module. "
+    "living significance, C, D and the secured positive ground are stated in the core, which imports no ethics module. "
     "Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent "
     "countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L "
     "is transitive only through a live middle response. No premise is proved, no rejecting position is "
@@ -710,7 +746,7 @@ SCOPE = (
     "with one kind of relatum a web keeps the connection of co-participation and of interaction, "
     "drawing on a relatum that depends on itself interacts with each of its active events, so a bee "
     "and a flower each depending on itself and on the other are connected with no third condition "
-    "and G0 there is exactly a seed with both neutralities, while where each depends only on the "
+    "and living significance there is exactly a seed with both neutralities, while where each depends only on the "
     "other neither co-participation nor interaction relates the bee to the flower, though both "
     "are embodied; relabelling the conditions of a one-kind web onto themselves keeps the "
     "connection of both valuations. "
@@ -974,7 +1010,7 @@ SCOPE = (
     "it and conversely; in a balanced flow in which only active formations give, an embodied "
     "relatum that arises descends from another formation active at that step; generations "
     "each given by the one before are connected by descent and by neither co-participation "
-    "nor interaction, and G0 there is exactly a seed with N_rel and N_std; a bee and a flower "
+    "nor interaction, and living significance there is exactly a seed with N_rel and N_std; a bee and a flower "
     "depending only on each other are connected by living on, and relabelling their "
     "conditions each onto the other keeps co-participation and interaction and removes that "
     "connection; a seed descends from the parent that provisioned it while dormant, and "
@@ -1129,7 +1165,7 @@ SCOPE = (
     "one, and a formation renewing over a region omitting a condition it requires undermines its "
     "own dependence by its own draw and loses its support. No ethical predicate occurs. "
     "Standpoints: a living claim is held when it lies in the own region of some position; where "
-    "every living claim is held, significance of every living claim from every standpoint (G0 at "
+    "every living claim is held, significance of every living claim from every standpoint (living significance at "
     "claim level) is equivalent to S0 at every position with standpoint neutrality, using neither "
     "connection nor relational neutrality; with holding decided and every living claim reached "
     "through formed relations from a held living claim, it is equivalent to S0 at every position, "
@@ -1138,9 +1174,9 @@ SCOPE = (
     "neither neutrality holding, a life no standpoint holds, and a reached life no position "
     "holds; S0 at every position carries significance along any relation into each position's "
     "own region, and on a connected whole where every position holds a living claim, S0 at every "
-    "position with relational neutrality gives G0 at claim level without standpoint neutrality; "
+    "position with relational neutrality gives living significance at claim level without standpoint neutrality; "
     "read stepwise with each "
-    "formation a position whose own region is its own events, every living event is held and G0 "
+    "formation a position whose own region is its own events, every living event is held and living significance "
     "is S0 at every formation with standpoint neutrality; read with one kind of relatum, "
     "conveyance relates two events at a common step when something is conveyed between their "
     "relata, a relatum nothing is taken from or given to at a step is related to nothing there, "
@@ -1155,39 +1191,39 @@ SCOPE = (
     "also the events that feed the condition its continuation requires, every life in the "
     "clearer's web is held, S0 holds at every position and each standpoint's significance is "
     "closed along feeding, while the dweller's living event has no significance from the "
-    "clearer, so standpoint neutrality and G0 fail, and transmission out of the clearer's own "
+    "clearer, so standpoint neutrality and living significance fail, and transmission out of the clearer's own "
     "region along the formed relations fails. No premise is proved and no ethical axiom is "
     "assumed. "
     "Significance: a significance says, for a standpoint, a step and a formation, whether the "
-    "formation's continuation at the step has significance from the standpoint; the axiom is that "
+    "formation's continuation at the step has significance from the standpoint; the continuation condition is that "
     "no standpoint, step or formation restricts it, boundary neutrality for the significance of "
     "continuation, and a significance bounded by regions is the same rule inside a formed "
-    "boundary and is not the axiom where some formation lies outside some region; under the "
+    "boundary and is not the continuation condition where some formation lies outside some region; under the "
     "axiom, on every reading in which a claim's significance is that of a formation's "
     "continuation at a step, every living claim is significant from every standpoint, S0 holds at "
     "every standpoint, both neutralities hold and a seed exists wherever something lives, with no "
     "connection used, the stepwise reading, the reading of relations and the whole-run reading "
-    "being such readings, and on the level paths of a web G0 holds with unindexed significance "
+    "being such readings, and on the level paths of a web living significance holds with unindexed significance "
     "and C holds with better read as retaining and adding what has significance; a level path "
     "retains what has significance along another when it admits every continuation with "
     "significance the other admits, a preorder never added to by what it retains, and adds when "
-    "it admits one the other does not; under the axiom retaining is inclusion and adding is "
+    "it admits one the other does not; under the continuation condition retaining is inclusion and adding is "
     "exceeding, alike from every standpoint; the levels with a part retain what has significance "
     "without it exactly when the part's net draw stays within the margin for every continuation "
     "with significance the levels without it admit, the part loses one exactly where its net draw "
     "exceeds the margin, and adds one exactly where its net exchange brings within the margin a "
-    "formation the levels without it do not admit; under the axiom the conveyor's part is "
+    "formation the levels without it do not admit; under the continuation condition the conveyor's part is "
     "unordered and the giver's part retains and adds; a drawer taking a condition's unit before "
     "any dependence on it forms is active and not undermining, yet its part closes a formation "
-    "admitted at every step without it, and under the axiom loses a continuation with "
+    "admitted at every step without it, and under the continuation condition loses a continuation with "
     "significance; where fewer continuations have significance more is retained, significance "
-    "bounded by a region retains what is admitted within the region, and under the axiom what "
+    "bounded by a region retains what is admitted within the region, and under the continuation condition what "
     "retains retains within every region; with each formation's significance stopping at what its "
     "continuation depends on, the clearer's part retains what has significance from the clearer's "
-    "standpoint and loses the dweller from the dweller's, while under the axiom it loses the "
+    "standpoint and loses the dweller from the dweller's, while under the continuation condition it loses the "
     "dweller from every standpoint, the levels without it admitting every formation at every "
     "step; where nothing has significance every level path retains every other, none adds, and "
-    "G0 fails at any living event. The axiom is a hypothesis; no ethical premise is proved. "
+    "living significance fails at any living event. The continuation condition is a hypothesis; no ethical premise is proved. "
     "Interdependence: a formation's continuation is fed by another at a step when the other "
     "gives to a condition it then requires; a region closed under feeding holds every feeder of "
     "its members, and a formation's feeding closure, what lies in every closed region holding "
@@ -1203,12 +1239,12 @@ SCOPE = (
     "step more, while taking only their own both continue; in the clearer's web the region "
     "along dependence is each formation's feeding closure, the dweller lies beyond the "
     "clearer's, and everything within it is supported at every step while the dweller ends; "
-    "significance bounded by the whole is the axiom, and significance bounded by a region "
-    "retains as inclusion does, and so under the axiom as the axiom does, wherever every "
+    "significance bounded by the whole is the continuation condition, and significance bounded by a region "
+    "retains as inclusion does, and so under the continuation condition as the continuation condition does, wherever every "
     "formation the other path admits lies in the region or is admitted by the first, so on "
     "every comparison where a formation's feeding closure is the whole, while in the clearer's "
-    "web the clearer's part retains within its closure and under the axiom loses the dweller. "
-    "No ethical premise is used; the axiom is a hypothesis of the comparisons only. "
+    "web the clearer's part retains within its closure and under the continuation condition loses the dweller. "
+    "No ethical premise is used; the continuation condition is a hypothesis of the comparisons only. "
     "Feeding: possible carrying of a positive amount given is characterized by positive standing "
     "throughout the stretch; same-step feeding is zero-delay feeding across steps; the least "
     "closure under feeding across steps contains the old feeding closure, strictly in Provision, "
@@ -1232,7 +1268,7 @@ SCOPE = (
     "clearer and the whole; where every formation takes part in one condition every system is the "
     "whole, where every formation depends on it and exchanges with it every reach closure is, and "
     "where at one step every formation requires it and gives to it every feeding closure is, "
-    "significance bounded by it then being the axiom; two balanced flows that start a condition "
+    "significance bounded by it then being the continuation condition; two balanced flows that start a condition "
     "alike and take and give alike keep it alike, so a formation's support registers only its "
     "exchanges with what it depends on, and with a part withheld the levels agree on a condition "
     "at a step exactly where the part has given it, before that step, what it took from it; "
@@ -1245,13 +1281,13 @@ SCOPE = (
     "within a region closed under affecting reaches only within it, the reach closure and the "
     "system being such regions; two significances agreeing at each step on what a part has reached "
     "compare the levels with and without it alike, and any significance covering what it has "
-    "reached gives the axiom's comparisons, retaining exactly as including, both ways, and neither "
+    "reached gives the continuation condition's comparisons, retaining exactly as including, both ways, and neither "
     "adding exactly where neither exceeds, adding being exceeding where significance is decidable "
     "and up to double negation otherwise; significance bounded by a region closed under affecting "
     "compares every part within it as inclusion does; the comparison of any two balanced flows "
     "that start alike is decided within what their difference reaches; with the deer's browsing "
     "held fixed the wolves' part narrows, against the flow in which the deer respond it is mixed, "
-    "and where a part gives what others take the levels without it may balance no flow. The axiom "
+    "and where a part gives what others take the levels without it may balance no flow. The continuation condition "
     "enters only as a hypothesis of three witnesses. "
     "Testing: a formation registers its support, whether the levels admit it, and the levels of "
     "the conditions it observes; a condition it depends on and does not observe registers only "
@@ -1628,26 +1664,26 @@ SCOPE = (
     "determinacy; what lies within every boundary is the closure, and everything lies within "
     "some; that the continuation of everything within the region has significance from a "
     "standpoint is, super-true, significance over the union of the admissible boundaries and so "
-    "the axiom wherever the whole is admissible, along any relation alike, and, sub-true along a "
+    "the continuation condition wherever the whole is admissible, along any relation alike, and, sub-true along a "
     "relation, significance over the closure, the center's own along the empty relation and the "
     "axiom at that standpoint along the total one; significance bounded by each center's closure "
     "is the significance of what lies within the self however drawn and the least making every "
-    "presupposition sub-true, so route (b) and the axiom are one presupposition at narrow and at "
+    "presupposition sub-true, so route (b) and the continuation condition are one presupposition at narrow and at "
     "wide scope; with every formation within some admissible boundary of every center, the "
-    "presupposition sub-true and invariant at every standpoint gives the axiom, and where the whole "
-    "is admissible the axiom is exactly that; there invariance is the conditional from the "
-    "presupposition to the axiom at that standpoint and, given the presupposition, the axiom "
+    "presupposition sub-true and invariant at every standpoint gives the continuation condition, and where the whole "
+    "is admissible the continuation condition is exactly that; there invariance is the conditional from the "
+    "presupposition to the continuation condition at that standpoint and, given the presupposition, the continuation condition "
     "there, and where some continuation lacks significance an invariant presupposition is nowhere "
     "sub-true; with the presupposition at every standpoint and every formation within some "
     "center's closure, invariance across boundaries is equivalent to significance agreeing across "
-    "standpoints, the two coming apart without it; standpoints then retain alike and G0 holds at "
+    "standpoints, the two coming apart without it; standpoints then retain alike and living significance holds at "
     "the level of claims; sub-truth along the total relation gives it along sharing a condition, "
     "which gives it along affecting and being affected, being affected giving it along feeding; "
-    "sub-true along a relation holding affecting, the presupposition gives the axiom's "
+    "sub-true along a relation holding affecting, the presupposition gives the continuation condition's "
     "comparisons on every part whose members lie within the center's closure, with no invariance; "
-    "where each center's system is the whole the axiom is exactly the presupposition sub-true "
+    "where each center's system is the whole the continuation condition is exactly the presupposition sub-true "
     "along sharing at every standpoint, one common condition sufficing; in the clearer's web, with "
-    "nothing significant the presupposition is invariant and the axiom fails, with significance "
+    "nothing significant the presupposition is invariant and the continuation condition fails, with significance "
     "bounded by feeding closures it is sub-true but neither invariant nor standpoint-invariant, "
     "and with only the feeding closure admissible it is sub-true and invariant while the dweller "
     "lies within no admissible boundary of the clearer; the clearer's own presupposition drawn "
@@ -1655,29 +1691,29 @@ SCOPE = (
     "at its feeding closure it is met by a significance under which the part retains. Covering, "
     "sub-truth and invariance are hypotheses; no ethical premise is used. "
     "Relevance: read from significance, positive relevance is realized living content whose "
-    "continuation has significance from every standpoint; under the axiom G0 holds on every frame "
-    "for every reading of living, and this relevance is the least satisfying G0, exactly the "
+    "continuation has significance from every standpoint; under the continuation condition living significance holds on every frame "
+    "for every reading of living, and this relevance is the least satisfying living significance, exactly the "
     "realized living content; on a frame whose claims are formations at steps, each realized "
-    "somewhere, as on the level paths of every web, the axiom holds exactly when G0 holds with "
+    "somewhere, as on the level paths of every web, the continuation condition holds exactly when living significance holds with "
     "every claim living and positive relevance read as significance; where everything has "
     "significance, securing ground with bare significance is securing any new content, so A read "
     "with bare significance supplies a reason for every response with access yielding new "
     "content, living or not, and read on living content one for every response securing new "
     "living content, a witness separating the two; with A read on living content the universal "
-    "reason follows from G0 at the level of claims, and so from the axiom, with no seed, "
+    "reason follows from living significance at the level of claims, and so from the continuation condition, with no seed, "
     "neutrality or connection premise; a level path nowhere lower includes the other and is "
     "never ranked below by retaining and adding; the possibility reading of courses includes a "
     "formation where the course's levels admit it, every active formation of a dependent course "
-    "included, and under the axiom extension under it is retaining and adding what has "
+    "included, and under the continuation condition extension under it is retaining and adding what has "
     "significance on the law's web; under it the course without a formation drawing beyond "
     "renewal extends the course with it in every law of the family, restraint extends overdraw "
     "in the two-part family and with a third formation, and sharing extends winning by "
     "consumption, while the malignant formation's first event is included, as the stepwise "
     "reading includes it and the whole-run reading withholds it; a formation drawing within "
     "renewal adds no possibility, neither course then extending the other under it, while both "
-    "readings of living rank its presence higher, sharing being an instance. The axiom enters "
+    "readings of living rank its presence higher, sharing being an instance. The continuation condition enters "
     "only as a hypothesis. "
-    "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
+    "Instances: the core's living significance, C, D, secured ground and relational living are by definition those of "
     "the existing modules, the core's whole-run reading of courses is the relational inventory of "
     "RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is "
     "PracticalJudgment.Better; "
@@ -1689,10 +1725,10 @@ SCOPE = (
     "pure observation; the functional articulation of a situation is exactly the deterministic case "
     "of the articulation under L, and the lifted comparison, reason, survival and continual-improvement "
     "results hold on every frame. A countermodel shows that L is substantive: a response with one "
-    "better and one worse outcome is comparable in neither direction. Under the axiom G0 holds "
+    "better and one worse outcome is comparable in neither direction. Under the continuation condition living significance holds "
     "for every inventory with positive relevance read from significance, the core's relevance on "
     "a frame's inventory, so a new realization of a generative extension, contingent generation "
-    "and the universal address of positioned articulation follow from the axiom."
+    "and the universal address of positioned articulation follow from the continuation condition."
 )
 
 
@@ -1742,7 +1778,7 @@ def imports_of(data):
     return [m.strip() for m in re.findall(r"^import\s+(.+)$", code, re.M) if m.strip() != "Std"]
 
 
-def closure(index, roots=SPINE):
+def closure(index, roots=CHECKED):
     order, seen = [], set()
 
     def visit(name, stack):
@@ -2149,6 +2185,7 @@ def main():
         "retained_run": shown(retained),
         "spine_modules": SPINE,
         "core_modules": CORE, "foundation_modules": FOUNDATION, "bridge_modules": BRIDGE,
+        "periphery_join_modules": PERIPHERY_JOINS,
         "core_closure": core_closure,
         "compile_order": order,
         "source_paths": {name: str(paths[name].relative_to(LEAN_ROOT)) for name in order},
@@ -2163,7 +2200,7 @@ def main():
     steps = receipt["lean_steps"] = {"cache": str(CACHE), "fresh": FRESH, "ran": [], "reused": {}, "keys": {}}
     try:
         assert sorted(core_closure) == sorted(PURE), ("core imports outside the core", core_closure)
-        inherited = [name for name in order if name not in SPINE]
+        inherited = [name for name in order if name not in CHECKED]
         # A record of history, not a check: inherited modules are compiled and audited below.
         # A receipt counts where it maps the module to its current bytes and has passed.
         receipts = passed_receipts(exclude=(RECEIPT, RETAINED, receipt_path, runs))
@@ -2181,7 +2218,8 @@ def main():
             name: {"private": [item["name"] for item in scans[name]["private"]],
                    "unnamed_instance_lines": scans[name]["unnamed_instances"],
                    "covered_by": ("core environment audit" if name in core_closure
-                                  else "bridge environment audit" if name in BRIDGE else "none (inherited)")}
+                                  else "bridge environment audit" if name in BRIDGE
+                                  else "none (periphery join)" if name in PERIPHERY_JOINS else "none (inherited)")}
             for name in order if scans[name]["private"] or scans[name]["unnamed_instances"]}
         receipt["market_names"] = market_names(registry)
         command, binary, found_by = resolve_lean()
@@ -2249,7 +2287,7 @@ def main():
                     "#print axioms " + item["name"] for item in registry[name]) + "\n"
                 tasks["audit " + name] = (["compile " + name], driver_step(flat + "AxiomAudit.lean", audit))
                 sequence += [name + ".log", flat + "AxiomAudit.log"]
-                if name in SPINE:
+                if name in CHECKED:
                     signatures = "import " + name + "\n" + "\n".join(
                         "#check @" + item["name"] for item in registry[name] if item["kind"] == "theorem") + "\n"
                     tasks["signatures " + name] = (["compile " + name],
@@ -2302,7 +2340,8 @@ def main():
                 records.append({
                     "module": name, "spine": name in SPINE,
                     "layer": ("foundation" if name in FOUNDATION else "core" if name in CORE
-                              else "bridge" if name in BRIDGE else "inherited"),
+                              else "bridge" if name in BRIDGE
+                              else "periphery join" if name in PERIPHERY_JOINS else "inherited"),
                     "theorems": sum(x["kind"] == "theorem" for x in registry[name]),
                     "declarations": registry[name], "axiom_dependencies": dependencies,
                     "kernel_checked": True,
@@ -2364,8 +2403,11 @@ def main():
         "bridge_generated_with_axioms": len(receipt.get("bridge_generated_axiom_dependencies", {})),
         "not_audited_by_name": {name: len(v["private"]) + len(v["unnamed_instance_lines"])
                                 for name, v in receipt.get("not_audited_by_name", {}).items()},
-        "inherited_modules": len(records) - len(spine),
-        "inherited_axioms": sorted({a for r in records if not r["spine"]
+        "inherited_modules": sum(r["layer"] == "inherited" for r in records),
+        "periphery_join_theorems": {r["module"]: r["theorems"] for r in records if r["layer"] == "periphery join"},
+        "periphery_join_axioms": sorted({a for r in records if r["layer"] == "periphery join"
+                                         for aa in r["axiom_dependencies"].values() for a in aa}),
+        "inherited_axioms": sorted({a for r in records if r["layer"] == "inherited"
                                     for aa in r["axiom_dependencies"].values() for a in aa}),
         "market_names": receipt.get("market_names", {}),
         "lean_steps_run": len(steps["ran"]), "lean_steps_reused": len(steps["reused"]),

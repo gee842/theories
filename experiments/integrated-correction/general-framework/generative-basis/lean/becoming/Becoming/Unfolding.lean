@@ -119,7 +119,7 @@ What is not derived: the shared index of steps (a commitment of the representati
 what; which law a formation takes its history to show; that configurations passing the same
 tests are alike, which needs a condition on branching; that a description making sense exists
 (describing each configuration by what it is alike to makes sense given function and
-propositional extensionality, and the quotient by likeness needs `Quot.sound`); that Part I's
+propositional extensionality, and the quotient by likeness needs `Quot.sound`); that the theory without axiom's
 theorems stated with `Determined` hold up to likeness. No ethical predicate, ranking or axiom
 occurs.
 -/

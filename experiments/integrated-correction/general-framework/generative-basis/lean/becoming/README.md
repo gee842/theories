@@ -9,8 +9,8 @@ One relational unfolding, stated once. This directory is the Lean package `Becom
 | Ring | Contents | Constraint |
 |---|---|---|
 | Core | The foundation `GenerativeCore`, `InquirySufficiency`, `RelationalRenewal`, plus the four layers inside the package | Imports only itself; every source declaration has an empty axiom report (for constructors with fields Lean generates injectivity lemmas `injEq` that depend on `propext`; no source declaration uses them, and the checker lists them one by one); compiles from Lean's built-in prelude alone |
-| Bridge | [`Becoming.Bridge`](Becoming/Bridge.lean) | Imports the existing modules and proves that their interfaces are the core's concepts; empty axiom report; the core does not import it |
-| Periphery | The existing ethics and dynamics modules, Mathlib leaves and their bridges [`CorrectionInquiry`](../universal-ethics/generative-capacity/CorrectionInquiry.lean), [`LearningCorrespondence`](../universal-ethics/evolution-connectionism/LearningCorrespondence.lean), Python experiments | May use any suitable tool; the direction of dependence points to the core |
+| Bridge | [`Becoming.Bridge`](Becoming/Bridge.lean) and the other bridge modules, with the pure [periphery joins](#periphery-joins) | Imports the existing modules and proves that their interfaces are the core's concepts, or states their laws of the base; empty axiom report; the core does not import it |
+| Periphery | The existing ethics and dynamics modules, Mathlib leaves and their bridges [`CorrectionInquiry`](../universal-ethics/generative-capacity/CorrectionInquiry.lean), [`LearningCorrespondence`](../universal-ethics/evolution-connectionism/LearningCorrespondence.lean), Python experiments | May use any suitable tool; the direction of dependence points to the core  The [periphery joins](#periphery-joins) named `…Inherited` sit here: compiled and audited in the core checker's run and imported by nothing in the core or the bridge, they carry only the axioms they inherit from periphery theorems (`propext`, `Quot.sound`, `Classical.choice`), and the receipt reports them exactly |
 
 Core purity is [Ren's requirement](../../../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md). The checker enforces all three conditions on every run.
 
@@ -174,6 +174,71 @@ Core purity is [Ren's requirement](../../../../../../sources/15-codex-theory-con
 | L4 | [`Becoming.WeightedTraces`](Becoming/WeightedTraces.lean) | integrating out and memory, on the traces of processes |
 
 Each layer imports only those below it (within L2, `Becoming.Diagonal` imports `Becoming.Recurrence`, `Context` imports `Becoming.Frame` and `Quantum` imports `Context`; within L3, `Becoming.Dependence` imports `Becoming.Renewal`; `Return` and `Substitution` import `Dependence`; `Horizon`, `Joint` and `Generation` import `Return`; `Experiment` imports `Joint` and `Recurrence`; `Mechanism` imports `Experiment`; `Unfolding` imports `Mechanism` and `Space`; `Histories` imports `Unfolding`; `Branching` imports `Unfolding`, `Attraction` and `Capture`; `Listing` imports `Decidedness`, `Sampling` and `Resolution`; `Refinement` imports `Decidedness` and `Recurrence`; `Order` imports `Sampling`; `OrderNormal` imports `Order`; `OneStep` imports `Counting` and `Sampling`; `Weighted` imports `Capture` and `Resolution`; `Transmission` imports `Premises`; `Succession` imports `Continuation`; `Attraction` imports `Recurrence`; `Flow` imports `Generation`; `Change` imports `Flow`; `Population` imports `Change`; `Identity` imports `Population`; `Persistence` imports `Identity` and `Unfolding`; `Wholes` imports `Identity`; `Dissipation` imports `Population` and `Horizon`; `Locality` imports `Dissipation`; `Seeking` imports `Locality` and `Recurrence`; `Roles` imports `Locality`; `Reserve` imports `Roles`; `Evolution` imports `Change`; `Capture` imports `Evolution`, `Locality`, `Recurrence` and `Mechanism`; `Space` imports `Evolution` and `Reserve`; `Premises` imports `Space`; `Sampling` imports `Locality` and `Premises`; `Tower` imports `Sampling`; `Openness` imports `Premises`; `Counting` and `Resolution` import `Openness`; `Entropy` imports `Resolution` and `Recurrence`; `Units` imports `Resolution`; `Standing` imports `Counting`; `Continuation` imports `Roles`; `Admission` imports `Space`; `Regions` imports `Admission` and `Continuation`; `Novelty` imports `Entropy` and `Imbalance`; `Gain` imports `Novelty`; `Gluing` imports `Context` and `Population`; within L4, `Becoming.Ranking` and `Becoming.Correspondence` import `Becoming.Metaethics`, and `Correspondence` also imports `Roles`; `Descent` imports `Correspondence`, `Evolution` and `Reserve`; `Standpoints` imports `Descent` and `Continuation`; `Significance` imports `Regions` and `Standpoints`; `Interdependence` imports `Significance`; `Feeding` imports `Interdependence`; `Feedback` imports `Interdependence`; `Testing` imports `Feedback`; `Runaway` imports `Testing`; `Response` imports `Testing`; `Counterfactual` imports `Response`, `Mechanism` and `Unfolding`; `Selection` imports `Testing` and `Capture`; `Learning` imports `Mechanism` and `Selection`; `Identification` imports `Description` and `Refinement`; `Learnable` imports `Identification` and `Seeking`; `Distinguishing` imports `Identification` and `Likeness`; `Description` imports `Unfolding`, `Diagonal`, `Context` and `Learning`; `Boundaries` imports `Feedback`; `Relevance` imports `Boundaries` and `Ranking`; `Reading` imports `Counterfactual`; `Readings` imports `Reading` and `Boundaries`; `Coupling` imports `Counterfactual` and `Readout`; `Sensitivity` imports `Counterfactual`; `Tail` imports `Sensitivity`; `Courses` imports `Description`, `Feedback`, `Metaethics` and `Parting`; `Parting` imports `Distinguishing` and `Lasting`; `Onward` imports `Parting`; `Typicality` imports `Identification` and `Weighted`; `Situations` imports `Typicality`; `Propagation` imports `Counterfactual` and `TimedResponse`; `Loops` imports `Propagation`; `Remainder` imports `Loops`; `Routes` imports `Weighted` and `Loops`; `Closing` imports `Remainder`; `Thresholds` imports `Closing` and `Runaway`; `Observation` imports `Thresholds`; `Frequency` imports `Closing`; `Runs` imports `Reading`, `Propagation` and `Branching`; `CourseWorlds` imports `Runs`, `Routes`, `Frequency` and `Observation`; `LearnableRuns` imports `Branching` and `Learnable`; `ParityReadings` imports `Readings`, `Gluing` and `Quantum`; `FinerTraces` imports `Situations`; `FormedLoops` imports `CourseWorlds`). L1–L3 contain no ethical predicate; every normative premise in L4 is a named definition or hypothesis.
+
+<a id="periphery-joins"></a>
+## Periphery joins
+
+U2 (17 October 2026) states the laws of the periphery modules in the checker's run on the base: each module below reads a periphery structure as a process, run, trace, frame or web and states the periphery theorem's law of it, proved through that theorem. Modules whose proofs go through periphery theorems with non-empty axiom reports are named `…Inherited` and form the periphery-join ring; the others have empty axiom reports and sit on the bridge. The periphery files keep their paths and bytes. The Mathlib leaves (`CorrectionInquiry`, `LearningCorrespondence`) are not in the checker's run and are not measured. The study's [connectivity measure](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.md) gives the counts; every apart root left is classified in its register.
+
+| Module | Ring | What it reads on the base |
+|---|---|---|
+| [`Becoming.GuardHorizonProcesses`](Becoming/GuardHorizonProcesses.lean) | bridge | a guard kept over a horizon: the step relation of `CorrectionInfrastructure` as a process |
+| [`Becoming.InstallationTraces`](Becoming/InstallationTraces.lean) | bridge | the installation of `EffectiveCommand` as a process: its courses are traces |
+| [`Becoming.ReconfigurationProcesses`](Becoming/ReconfigurationProcesses.lean) | bridge | reconfiguration as a process: the rearrangement step of `CorrectionReconfiguration` |
+| [`Becoming.TreeSearchRuns`](Becoming/TreeSearchRuns.lean) | bridge | tree search as runs: the scan of `AcquiredCorrection` is the run of a determined law |
+| [`Becoming.QueryTraces`](Becoming/QueryTraces.lean) | bridge | query traces: the records a course of queries delivers |
+| [`Becoming.DephasingRuns`](Becoming/DephasingRuns.lean) | bridge | dephasing and recording as determined laws |
+| [`Becoming.DrawnAmountProcesses`](Becoming/DrawnAmountProcesses.lean) | bridge | continuations drawing on one amount as steps of a process |
+| [`Becoming.ProjectedLawTraces`](Becoming/ProjectedLawTraces.lean) | bridge | projected laws on the traces of deterministic processes |
+| [`Becoming.RuleHandoffTraces`](Becoming/RuleHandoffTraces.lean) | bridge | rule handoff on the traces of the gated process |
+| [`Becoming.ExactRecordRuns`](Becoming/ExactRecordRuns.lean) | bridge | exact readings of a run's registered record |
+| [`Becoming.JoiningCodeFrames`](Becoming/JoiningCodeFrames.lean) | bridge | exact codes of a joining's frames |
+| [`Becoming.JointPhaseTraces`](Becoming/JointPhaseTraces.lean) | bridge | the phase and interaction steps of one joint configuration, as traces |
+| [`Becoming.TestCodeFrames`](Becoming/TestCodeFrames.lean) | bridge | exact codes of a frame's branching tests |
+| [`Becoming.UnitTraces`](Becoming/UnitTraces.lean) | bridge | units of the traces of a process |
+| [`Becoming.MoveOutcomeProcesses`](Becoming/MoveOutcomeProcesses.lean) | bridge | the outcomes of one move from a configuration |
+| [`Becoming.RuleNarrowingProcesses`](Becoming/RuleNarrowingProcesses.lean) | bridge | learning a rule as belief narrowed by observation |
+| [`Becoming.SeedReachProcesses`](Becoming/SeedReachProcesses.lean) | bridge | seed closures as reach in a process |
+| [`Becoming.ExtendedClaimFrames`](Becoming/ExtendedClaimFrames.lean) | bridge | frames whose claims gain a newly distinguished kind |
+| [`Becoming.ExtensionFrames`](Becoming/ExtensionFrames.lean) | bridge | generative extensions on frames: new relevant content and surviving responses |
+| [`Becoming.InterfaceTraces`](Becoming/InterfaceTraces.lean) | bridge | a probing interface is a process, and a plan's execution is a trace of it |
+| [`Becoming.ReachableFrames`](Becoming/ReachableFrames.lean) | bridge | what holds over the configurations a process reaches |
+| [`Becoming.StrictTransportRuns`](Becoming/StrictTransportRuns.lean) | bridge | strict comparisons carried along runs and reachable configurations |
+| [`Becoming.ClassifiedBeliefProcesses`](Becoming/ClassifiedBeliefProcesses.lean) | bridge | classified beliefs after observation on a process |
+| [`Becoming.ContextArrivalTraces`](Becoming/ContextArrivalTraces.lean) | bridge | arrival in a context along traces of the evolving process |
+| [`Becoming.CouplingHistoryFrames`](Becoming/CouplingHistoryFrames.lean) | bridge | the coupling law's histories as traces of its frame |
+| [`Becoming.CourseExtensionFrames`](Becoming/CourseExtensionFrames.lean) | bridge | comparison of courses on the frame of courses |
+| [`Becoming.DerivationScopeProcesses`](Becoming/DerivationScopeProcesses.lean) | bridge | derivation over the scope of an inquiry, with local premises |
+| [`Becoming.DescentRenewalRuns`](Becoming/DescentRenewalRuns.lean) | bridge | renewal by descent along runs |
+| [`Becoming.FeasibleProfileTraces`](Becoming/FeasibleProfileTraces.lean) | bridge | continuation profiles of a process's feasible words |
+| [`Becoming.RuleRevisionTraces`](Becoming/RuleRevisionTraces.lean) | bridge | revised rules as actions of one process |
+| [`Becoming.SupportGatedWebs`](Becoming/SupportGatedWebs.lean) | bridge | the support-gated family on its webs |
+| [`Becoming.GuardHorizonProcessesInherited`](Becoming/GuardHorizonProcessesInherited.lean) | periphery join | a guard kept over a horizon: the laws of `CorrectionInfrastructure` that inherit axioms |
+| [`Becoming.InstallationTracesInherited`](Becoming/InstallationTracesInherited.lean) | periphery join | the installation of `EffectiveCommand` as a process: the laws of its steps that inherit axioms |
+| [`Becoming.TransactionTracesInherited`](Becoming/TransactionTracesInherited.lean) | periphery join | the transaction monitor of `FaultTolerantCorrection` as a process |
+| [`Becoming.DispatchProcessesInherited`](Becoming/DispatchProcessesInherited.lean) | periphery join | dispatch as a process: the delivery step of `AcquiredCorrection`, inherited |
+| [`Becoming.InspectionProcessesInherited`](Becoming/InspectionProcessesInherited.lean) | periphery join | inspection as a process: the fallible witnesses of `FallibleInspection`, inherited |
+| [`Becoming.ProbeRunsInherited`](Becoming/ProbeRunsInherited.lean) | periphery join | probing as runs: the inquiry of `EvidenceQualifiedCorrection`, inherited |
+| [`Becoming.ReconfigurationProcessesInherited`](Becoming/ReconfigurationProcessesInherited.lean) | periphery join | reconfiguration as a process: the general laws of the step, inherited |
+| [`Becoming.TreeSearchRunsInherited`](Becoming/TreeSearchRunsInherited.lean) | periphery join | tree search as runs: the general laws of the scan, inherited |
+| [`Becoming.FormationTracesInherited`](Becoming/FormationTracesInherited.lean) | periphery join | formation traces: the formation apparatus's moves as a process |
+| [`Becoming.QueryTracesInherited`](Becoming/QueryTracesInherited.lean) | periphery join | query traces and succession runs |
+| [`Becoming.TrainingProcessesInherited`](Becoming/TrainingProcessesInherited.lean) | periphery join | training processes: the acquisition learner's step as a process |
+| [`Becoming.DephasingRunsInherited`](Becoming/DephasingRunsInherited.lean) | periphery join | dephasing, recording and gates as laws: the results with inherited axioms |
+| [`Becoming.DrawnAmountProcessesInherited`](Becoming/DrawnAmountProcessesInherited.lean) | periphery join | continuations drawing on one amount: the results with inherited axioms |
+| [`Becoming.RuleHandoffTracesInherited`](Becoming/RuleHandoffTracesInherited.lean) | periphery join | rule handoff on the traces of the gated process: the results with inherited axioms |
+| [`Becoming.ExactRecordRunsInherited`](Becoming/ExactRecordRunsInherited.lean) | periphery join | exact readings of a run's registered record: the condition of resolution |
+| [`Becoming.JoiningCodeFramesInherited`](Becoming/JoiningCodeFramesInherited.lean) | periphery join | exact codes of a joining's frames: the canonical factor |
+| [`Becoming.JointPhaseTracesInherited`](Becoming/JointPhaseTracesInherited.lean) | periphery join | the phase and interaction steps of one joint configuration: the reduced summary |
+| [`Becoming.ReceptionTracesInherited`](Becoming/ReceptionTracesInherited.lean) | periphery join | acquired grouping along the traces of reception |
+| [`Becoming.MoveOutcomeProcessesInherited`](Becoming/MoveOutcomeProcessesInherited.lean) | periphery join | the outcomes of one move: the lost goal of a failed cover |
+| [`Becoming.RuleNarrowingProcessesInherited`](Becoming/RuleNarrowingProcessesInherited.lean) | periphery join | learning a rule as narrowed belief: laws through `StandardsBridge`'s list facts |
+| [`Becoming.ClassifiedFramesInherited`](Becoming/ClassifiedFramesInherited.lean) | periphery join | comparison under every classification on a frame |
+| [`Becoming.InterfaceTracesInherited`](Becoming/InterfaceTracesInherited.lean) | periphery join | selecting a listed plan on a probing interface's process |
+| [`Becoming.ReachableFramesInherited`](Becoming/ReachableFramesInherited.lean) | periphery join | a certified positive integral over a policy's scope |
+| [`Becoming.ContextArrivalTracesInherited`](Becoming/ContextArrivalTracesInherited.lean) | periphery join | where the changed history ends, through the periphery's proof |
+| [`Becoming.RuleRevisionTracesInherited`](Becoming/RuleRevisionTracesInherited.lean) | periphery join | the revising run never finishes, through the periphery's proofs |
+| [`Becoming.SupportGatedWebsInherited`](Becoming/SupportGatedWebsInherited.lean) | periphery join | recovery on the support-gated webs, through the periphery's proofs |
 
 <a id="检查--verification"></a>
 ## Verification

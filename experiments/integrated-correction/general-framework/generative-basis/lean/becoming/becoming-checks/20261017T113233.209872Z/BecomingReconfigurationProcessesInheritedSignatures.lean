@@ -1,0 +1,11 @@
+import Becoming.ReconfigurationProcessesInherited
+#check @Becoming.ReconfigurationProcessesInherited.closed_no_step
+#check @Becoming.ReconfigurationProcessesInherited.unready_no_step
+#check @Becoming.ReconfigurationProcessesInherited.step_renews
+#check @Becoming.ReconfigurationProcessesInherited.step_separated
+#check @Becoming.ReconfigurationProcessesInherited.step_keeps_mandate
+#check @Becoming.ReconfigurationProcessesInherited.step_stales_old_epoch
+#check @Becoming.ReconfigurationProcessesInherited.step_certificate_available
+#check @Becoming.ReconfigurationProcessesInherited.step_then_completes
+#check @Becoming.ReconfigurationProcessesInherited.repaired_step_rejects_old
+#check @Becoming.ReconfigurationProcessesInherited.repaired_step_completes

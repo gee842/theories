@@ -273,12 +273,12 @@ theorem some_avoids_iff_reach {seed : S → Prop} :
    fun ⟨K, ⟨s, seeded, held⟩, avoid, closed⟩ =>
     ⟨s, seeded, avoids_iff_closed_reach.mpr ⟨K, held, avoid, closed⟩⟩⟩
 
-/-- A fixed configuration outside the target reaches no configuration in it. -/
+/-- A fixed configuration outside the target reaches no configuration in it: `Lasting.fixed_avoids`
+on the courses of the law's process. -/
 theorem fixed_avoids_reach {x : S} (fixed : next x = x) (outside : ¬ target x) :
     ∀ t, Reach (Law.process next) x t → ¬ target t :=
-  avoids_iff_closed_reach.mpr ⟨fun y => y = x, rfl,
-    fun _ same => Eq.mpr (congrArg (fun z => ¬ target z) same) outside,
-    fun _ same => Eq.mpr (congrArg (fun z => next z = x) same) fixed⟩
+  fun _ reach => match reach_iff_orbit.mp reach with
+    | ⟨n, at_n⟩ => Eq.mp (congrArg (fun z => ¬ target z) at_n) (Lasting.fixed_avoids fixed outside n)
 
 /-- `k` unit moves. -/
 theorem length_units : ∀ k : Nat, (List.replicate k ()).length = k
@@ -339,11 +339,13 @@ theorem exits_completes {f : S → A → Option S} {adm : A → Prop} {valid exi
   completes_ofPartial_iff f |>.mpr (match exits reserved plan s held admissible long with
     | ⟨t, ran, held', out⟩ => ⟨t, ran, held', out⟩)
 
-/-- **Unfuelled work completes in `work + 1` moves**, as a plan of the tick's process. -/
+/-- **Unfuelled work completes in `work + 1` moves**, as a plan of the tick's process:
+`Countdown.Advances.completes` read through the plan's run. -/
 theorem Advances.completes_plan {tick : S → Option S} {busy done : S → Prop} {work : S → Nat}
     (advances : Countdown.Advances tick busy done work) {s : S} (pending : busy s) :
     Completes (ofPartial fun s (_ : Unit) => tick s) free done s (List.replicate (work s + 1) ()) :=
-  (completes_plan_iff advances.counts pending).mpr (Nat.le_refl _)
+  (completes_ofPartial_iff _).mpr (match advances.completes pending with
+    | ⟨t, ran, finished⟩ => ⟨t, (ticks_eq_runPartial tick _ s).symm.trans ran, finished⟩)
 
 /-- **Every shorter course leaves the task pending**: every course of at most `work` moves of the
 tick's process leaves the task pending, with the work lowered by the moves taken. -/
@@ -544,14 +546,22 @@ theorem inspection_le_iff (ci ce : Nat) (t : List α) (ref : Nat → Option α) 
   ⟨fun never => (inspect_le_iff ci ce t ref i).mp fun s => never s _ rfl,
    fun faithful s _ moved => moved ▸ inspect_le faithful ci ce s⟩
 
-/-- **A course of inspections at faithful sites never raises the defects.** -/
+/-- **A course of inspections is the scan of its sites.** -/
+theorem inspection_trace_scan {ref : Nat → Option α} (ci ce : Nat) :
+    ∀ {s u : Scan α} {sites : List Nat}, Trace (inspection ci ce ref) s sites u →
+      u = scanSites ci ce ref sites s
+  | _, _, [], .nil _ => rfl
+  | _, _, _ :: _, .cons moved tail =>
+    (inspection_trace_scan ci ce tail).trans (congrArg (scanSites ci ce ref _) moved)
+
+/-- **A course of inspections at faithful sites never raises the defects**: `Copying.scan_le` on
+the course, which is the scan of its sites. -/
 theorem inspection_course_le {t : List α} {ref : Nat → Option α} (ci ce : Nat) :
     ∀ {s u : Scan α} {sites : List Nat}, (∀ i, i ∈ sites → FaithfulAt ref t i) →
-      Trace (inspection ci ce ref) s sites u → defects t u.built ≤ defects t s.built
-  | _, _, [], _, .nil _ => Nat.le_refl _
-  | s, _, i :: _, faithful, .cons moved tail =>
-    Nat.le_trans (inspection_course_le ci ce (fun j mem => faithful j (.tail i mem)) tail)
-      (moved ▸ inspect_le (faithful i (.head _)) ci ce s)
+      Trace (inspection ci ce ref) s sites u → defects t u.built ≤ defects t s.built :=
+  fun {s} {_} {sites} faithful path =>
+    Eq.mpr (congrArg (fun x => defects t x.built ≤ defects t s.built) (inspection_trace_scan ci ce path))
+      (scan_le ci ce sites s faithful)
 
 /-- The release law of copies from one shared pool: the copy of a word from the pool and support
 held, released where it completes with `r` free, drawing `r`; no move where it is not. -/
@@ -721,11 +731,14 @@ theorem run_candidates_append (bears : A → Bool) (offers : A → M → Bool) (
     (congrArg (fun i => run.window 0 n ++ run.window i k) (Nat.zero_add n)))).trans
     (candidates_append rep (run.window 0 n) (run.window n k))
 
-/-- **A meaning ruled out at a step of a run stays ruled out at every later step.** -/
+/-- **A meaning ruled out at a step of a run stays ruled out at every later step**:
+`CrossSituational.narrows` on the run's records. -/
 theorem run_narrows {bears : A → Bool} {offers : A → M → Bool} {run : Run P} {rep : List M}
     {n k : Nat} {m : M} (later : m ∈ candidates bears offers rep (run.window 0 (n + k))) :
     m ∈ candidates bears offers rep (run.window 0 n) :=
-  (mem_filter.mp ((run_candidates_append bears offers run rep n k) ▸ later)).1
+  narrows (more := run.window n k) (Eq.mp (congrArg (fun l => m ∈ candidates bears offers rep l)
+    ((window_append run n 0 k).trans
+      (congrArg (fun i => run.window 0 n ++ run.window i k) (Nat.zero_add n)))) later)
 
 /-- **A candidate stays one along a run exactly while every later bearing move offers it.** -/
 theorem run_stays_iff {bears : A → Bool} {offers : A → M → Bool} {run : Run P} {rep : List M}
@@ -777,8 +790,8 @@ theorem course_resolves_every_iff [DecidableEq M] {W : Type x} {R : Type y} (r :
       ∀ w, meaning w ∈ rep ∧ (∀ x, x ∈ rs → bears (word w) x = true → offers x (meaning w) = true) ∧
         ∀ m, m ∈ rep → m ≠ meaning w → ∃ x, x ∈ rs ∧ bears (word w) x = true ∧ offers x m = false :=
   (course_reads_iff r word _ meaning loops segments).trans
-    ⟨fun each w => (resolves_iff distinct).mp (each w),
-     fun each w => (resolves_iff distinct).mpr (each w)⟩
+    ((Segmentation.reads_every_iff r word _ meaning segments).symm.trans
+      (CrossSituational.reads_every_iff r word meaning bears offers distinct rs segments))
 
 end CrossSituational
 
@@ -857,7 +870,10 @@ theorem no_run_judge_of_merged {V : Type x} (π : S → K) (f : S → V) (r : Ru
     (lj : j < n) (lk : k < n) (merged : π (r.state j) = π (r.state k))
     (apart : f (r.state j) ≠ f (r.state k)) :
     ¬ ∃ judge : K → V, ∀ i, i < n → judge ((reducedRun π r).state i) = f (r.state i) :=
-  fun ⟨judge, judges⟩ => apart ((judges j lj).symm.trans ((congrArg judge merged).trans (judges k lk)))
+  fun ⟨judge, judges⟩ => no_judge_of_merged ((mem_visited r).mpr ⟨j, lj, rfl⟩)
+    ((mem_visited r).mpr ⟨k, lk, rfl⟩) merged apart
+    ⟨judge, fun _ mem => match (mem_visited r).mp mem with
+      | ⟨i, li, at_i⟩ => Eq.mp (congrArg (fun x => judge (π x) = f x) at_i) (judges i li)⟩
 
 /-- **Two steps of a web agree under every reading through its conditions exactly where every
 condition stands at the same level**, where every reading reads a step only through the levels

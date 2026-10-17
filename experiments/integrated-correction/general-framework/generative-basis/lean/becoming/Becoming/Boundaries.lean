@@ -9,11 +9,11 @@ all universes”, and “There is no absolute self, and the continuation goes be
 life, goes beyond one’s death.” Earlier that day Ren had written that the self is “a cognitive
 model which can not justify itself without some sort of "belief"”, that “we” are “the
 universe/ecosystem that realizes its own existence”, and that a center's “boundary” is “also with
-in the same cognitive system”. The assistant proposed that the axiom of `Becoming.Significance`
+in the same cognitive system”. The assistant proposed that the continuation condition of `Becoming.Significance`
 might follow from three claims it read from Ren's words, through one inference to be stated
 exactly, and Ren asked to pursue the strongest claims. This module states the result: an exact
-decomposition of the axiom that locates the one step it adds to the self's presupposition. It
-does not lower the axiom's content.
+decomposition of the continuation condition that locates the one step it adds to the self's presupposition. It
+does not lower the continuation condition's content.
 
 * **Boundaries of a self.** Along a relation, a boundary of a formation's self is a region that
   holds the formation and is closed under the relation (`Boundary`). The closure is the least
@@ -37,26 +37,26 @@ does not lower the axiom's content.
   presupposition is that the continuation of everything within the region has significance
   (`SignificantWithin`). Super-true, it is significance over the union of the admissible
   boundaries (`superTrue_significantWithin_iff_union`); wherever the whole is admissible, as along
-  any relation, it is the axiom (`unrestricted_iff_superTrue`, `superTrue_level_free`). Sub-true
+  any relation, it is the continuation condition (`unrestricted_iff_superTrue`, `superTrue_level_free`). Sub-true
   along a relation, it is significance over the closure (`subTrue_significantWithin_iff`): along
   the empty relation, the significance of the center's own continuation, a standpoint's own good;
-  along the total relation, the axiom at that standpoint (`subTrue_empty_iff`,
+  along the total relation, the continuation condition at that standpoint (`subTrue_empty_iff`,
   `subTrue_total_iff`). Drawn along a larger relation it says more (`subTrue_of_larger`,
   `Flow.presupposition_order`). Route (b)'s significance, bounded by each center's closure, is the
   significance of what lies definitely within the self (`bounded_closure_iff`), and the least
-  that makes every presupposition sub-true (`bounded_closure_least`). Route (b) and the axiom are
+  that makes every presupposition sub-true (`bounded_closure_least`). Route (b) and the continuation condition are
   one presupposition with the operator “however the boundary is drawn” at narrow scope and at
   wide scope (`presupposition_scopes`); the operator does not distribute over the conditional.
   This extends route (b) from feeding to any relation.
-* **The axiom decomposed: where its content lies.** Let every formation lie within some
+* **The continuation condition decomposed: where its content lies.** Let every formation lie within some
   admissible boundary of every self, let each standpoint's presupposition be sub-true, and let it
   be boundary-invariant. Then nothing restricts significance (`unrestricted_of_presupposed`), and
-  where the whole is admissible the axiom is exactly these premises
+  where the whole is admissible the continuation condition is exactly these premises
   (`unrestricted_iff_presupposed`, `unrestricted_iff_presupposed_along`). Wherever the whole is
-  admissible, invariance is the conditional from the presupposition to the axiom at that
-  standpoint (`boundaryInvariant_iff_conditional`); given the presupposition, it is the axiom
+  admissible, invariance is the conditional from the presupposition to the continuation condition at that
+  standpoint (`boundaryInvariant_iff_conditional`); given the presupposition, it is the continuation condition
   there (`boundaryInvariant_iff_all`), which `Becoming.Significance` reads as boundary neutrality.
-  The decomposition locates the step and does not lower the axiom's content. The step runs both
+  The decomposition locates the step and does not lower the continuation condition's content. The step runs both
   ways: where some continuation lacks significance, an invariant presupposition is nowhere true
   (`not_subTrue_of_invariant`). Along a relation covering holds by construction, because every
   closed region holding the center, the whole included, counts as an admissible drawing of the
@@ -67,19 +67,19 @@ does not lower the axiom's content.
   decompositions already in the core to the significance of continuation:
   `Valuation.significant_iff` (a seed, N_rel and N_std on a connected whole) and
   `Valuation.significant_iff_held` (S0 at every standpoint with N_std). Agreement between
-  standpoints and G0 at the level of claims follow (`retains_agree_of_presupposed`,
+  standpoints and living significance at the level of claims follow (`retains_agree_of_presupposed`,
   `Valuation.significant_of_presupposed`).
 * **Each premise is needed.** In `Clearing`, where nothing has significance, the presupposition is
-  invariant and the whole is admissible, and the axiom fails (`Clearing.without_presupposition`).
+  invariant and the whole is admissible, and the continuation condition fails (`Clearing.without_presupposition`).
   Significance bounded by each formation's feeding closure makes every presupposition sub-true
-  with the whole admissible, and the axiom fails; at the clearer the presupposition is not
+  with the whole admissible, and the continuation condition fails; at the clearer the presupposition is not
   invariant, and significance is not standpoint-invariant (`Clearing.without_invariance`,
   `Clearing.without_standpoint_invariance`). Were each self's only admissible boundary its
   feeding closure, the same significance would make every presupposition sub-true and invariant,
-  the dweller would lie within no admissible boundary of the clearer, and the axiom would still
+  the dweller would lie within no admissible boundary of the clearer, and the continuation condition would still
   fail (`Clearing.with_fixed_boundary`).
 * **A part's exchange within reach.** Sub-true along a relation that holds affecting, the
-  presupposition compares every part within the center's closure as the axiom does
+  presupposition compares every part within the center's closure as the continuation condition does
   (`Flow.Balances.presupposed_comparison`): along affecting, every part within the center's reach
   closure (`Flow.Balances.presupposed_reach_comparison`); along sharing a condition, every part
   within its system. Neither invariance nor super-truth is used. Sub-truth along sharing a
@@ -90,7 +90,7 @@ does not lower the axiom's content.
   dweller; drawn at the feeding closure, it is met by a significance under which the part retains
   (`Clearing.own_presupposition`).
 * **Where the closure is the whole.** Where every formation lies within each center's closure
-  along a relation, the whole is the only boundary, so invariance holds trivially and the axiom is
+  along a relation, the whole is the only boundary, so invariance holds trivially and the continuation condition is
   the presupposition sub-true at every standpoint (`unrestricted_iff_presupposed_of_whole`). Along
   sharing a condition this holds wherever one condition is taken part in by everything
   (`Flow.unrestricted_iff_system_presupposed`, `Flow.unrestricted_iff_presupposed_of_common`), as
@@ -113,7 +113,7 @@ does not lower the axiom's content.
   the AI's reading. To deny the step is to hold the presupposition true only relative to a drawing
   or only from a standpoint, or, since the step runs both ways, to give up the presupposition. The
   step takes the place of the earlier route's tolerance and, like tolerance with Chain, carries all
-  of the axiom's content beyond the presupposition, in one step instead of many small ones.
+  of the continuation condition's content beyond the presupposition, in one step instead of many small ones.
 - Where the rivals sit. Along a relation covering holds by construction, so the rivals deny
   another premise. A rival that grounds significance in a formed closure denies sub-truth along
   any relation under which that closure is not closed, as operational closure is not closed under
@@ -123,12 +123,12 @@ does not lower the axiom's content.
   covering where every admissible drawing leaves the stranger out, and invariance where the
   stranger is borderline. A graded weight that falls to zero denies sub-truth if it falls inside
   the closure, and invariance if beyond it. A present-aim evaluator denies sub-truth. An earlier
-  independent review raised the first two against the tolerance route to G0. This module locates
+  independent review raised the first two against the tolerance route to living significance. This module locates
   these denials; it does not refute them.
 - Ren's order of levels, “the whole, and a weaker version is within the system that one is in,
   then the self”, is an order of readings of the presupposition: super-true; sub-true along
   affecting, at the reach closure offered in `Becoming.Feedback` for the system one is in; and
-  sub-true at the self, along the empty relation. The weaker version gives the axiom's comparison
+  sub-true at the self, along the empty relation. The weaker version gives the continuation condition's comparison
   on every part within one's reach. The reach closure points forward: on this reading the order
   runs down to the bare self, not through the feeding closure, which lies on another branch
   (`Flow.presupposition_order`). This direction is adopted as the reading of Ren's order of levels
@@ -137,13 +137,13 @@ does not lower the axiom's content.
 What is not derived:
 - covering, sub-truth and invariance themselves. The presupposition is supplied as every
   significance is (`Web.significance_undetermined`); along a relation it already carries
-  transmission along that relation, from the bare own good of the empty relation to the axiom of
+  transmission along that relation, from the bare own good of the empty relation to the continuation condition of
   the total one;
 - that a center knows its reach closure: its own feedback registers at most its influence closure
   (`Flow.Balances.unregistered_beyond_influence`);
 - the step from significance to a reason, to motivation or to practice.
 
-The audit of G0's uses (`Becoming.Relevance`) is clean, and Ren folded G0 on 11 October 2026: it
+The audit of the uses of living significance (`Becoming.Relevance`) is clean, and Ren folded living significance (`G0`) on 11 October 2026: it
 is no longer an axiom.
 -/
 
@@ -293,7 +293,7 @@ theorem subTrue_of_larger {rel rel' : F → F → Prop} (larger : ∀ g h, rel g
   | ⟨region, boundary, holds⟩ => ⟨region, boundary.of_larger larger, holds⟩
 
 /-- Along the total relation the whole is the only boundary, so the presupposition is sub-true
-exactly when, from `p`, the continuation of everything has significance at every step: the axiom
+exactly when, from `p`, the continuation of everything has significance at every step: the continuation condition
 at that standpoint. -/
 theorem subTrue_total_iff {f : F} {sig : Pos → Nat → F → Prop} {p : Pos} :
     SubTrue (Boundary (fun _ _ => True) f) (SignificantWithin sig p) ↔ ∀ t g, sig p t g :=
@@ -310,7 +310,7 @@ theorem subTrue_empty_iff {f : F} {sig : Pos → Nat → F → Prop} {p : Pos} :
    fun own => ⟨fun g => g = f, ⟨fun _ _ _ no => no.elim, rfl⟩,
      fun _ same t => Eq.subst (motive := fun x => sig p t x) same.symm (own t)⟩⟩
 
-/-- The axiom is the presupposition held however each self's boundary is drawn, along any
+/-- The continuation condition is the presupposition held however each self's boundary is drawn, along any
 relation. -/
 theorem unrestricted_iff_superTrue (rel : F → F → Prop) (center : Pos → F)
     {sig : Pos → Nat → F → Prop} :
@@ -349,7 +349,7 @@ theorem bounded_closure_least (rel : F → F → Prop) (center : Pos → F) :
 /-- The two scopes. From standpoint `p`, “whatever lies definitely within the self has
 significance”, the operator “however the boundary is drawn” at narrow scope, is the
 presupposition sub-true; “however the boundary is drawn, everything within the self has
-significance”, the operator at wide scope, is the axiom at that standpoint. -/
+significance”, the operator at wide scope, is the continuation condition at that standpoint. -/
 theorem presupposition_scopes (rel : F → F → Prop) (f : F) (sig : Pos → Nat → F → Prop)
     (p : Pos) :
     ((∀ t g, SuperTrue (Boundary rel f) (fun region => region g) → sig p t g) ↔
@@ -361,7 +361,7 @@ theorem presupposition_scopes (rel : F → F → Prop) (f : F) (sig : Pos → Na
        (superTrue_member_iff.mp definite)⟩,
    superTrue_significantWithin_iff (Boundary.whole f)⟩
 
-/-! ## The axiom from the presupposition -/
+/-! ## The continuation condition from the presupposition -/
 
 /-- Invariance is one step. Wherever the whole is admissible, the presupposition is invariant
 exactly when, holding as the boundary is drawn anywhere, it holds as it is drawn at the whole:
@@ -375,9 +375,9 @@ theorem boundaryInvariant_iff_extends {admissible : (F → Prop) → Prop}
   ⟨fun invariant region admitted holds => invariant region _ admitted whole holds,
    fun extension region _ admitted _ holds g _ => extension region admitted holds g trivial⟩
 
-/-- Given the presupposition, invariance is the axiom at that standpoint. Wherever the whole is
+/-- Given the presupposition, invariance is the continuation condition at that standpoint. Wherever the whole is
 admissible and the presupposition is sub-true, it is invariant exactly when, from `p`, the
-continuation of everything has significance at every step: the step carries all that the axiom
+continuation of everything has significance at every step: the step carries all that the continuation condition
 adds to the presupposition. -/
 theorem boundaryInvariant_iff_all {admissible : (F → Prop) → Prop}
     (whole : admissible fun _ => True) {sig : Pos → Nat → F → Prop} {p : Pos}
@@ -387,7 +387,7 @@ theorem boundaryInvariant_iff_all {admissible : (F → Prop) → Prop}
       ((superTrue_iff ⟨_, whole⟩).mpr ⟨presupposed, invariant⟩),
    fun all _ _ _ _ _ g _ t => all t g⟩
 
-/-- Invariance is the conditional from the presupposition to the axiom at that standpoint.
+/-- Invariance is the conditional from the presupposition to the continuation condition at that standpoint.
 Wherever the whole is admissible, the presupposition is invariant exactly when, sub-true, it gives
 every continuation significance from `p`. No presupposition is assumed. -/
 theorem boundaryInvariant_iff_conditional {admissible : (F → Prop) → Prop}
@@ -406,7 +406,7 @@ theorem not_subTrue_of_invariant {admissible : (F → Prop) → Prop}
     (lacks : ¬ sig p t g) : ¬ SubTrue admissible (SignificantWithin sig p) :=
   fun sub => lacks ((boundaryInvariant_iff_conditional whole).mp invariant sub t g)
 
-/-- **The axiom from three premises.** Let every formation lie within some admissible boundary of
+/-- **The continuation condition from three premises.** Let every formation lie within some admissible boundary of
 every self; let each standpoint's presupposition, that the continuation of its self has
 significance, hold as its boundary is drawn somewhere; and let the presupposition be invariant.
 Then nothing restricts significance. -/
@@ -419,7 +419,7 @@ theorem unrestricted_of_presupposed {admissible : Pos → (F → Prop) → Prop}
     | ⟨region, admitted, holds⟩, ⟨region', admitted', inside⟩ =>
       invariant i.1 region region' admitted admitted' holds i.2.2 inside i.2.1
 
-/-- Where the whole is an admissible boundary of every self, the axiom is exactly the
+/-- Where the whole is an admissible boundary of every self, the continuation condition is exactly the
 presupposition, sub-true and invariant at every standpoint. -/
 theorem unrestricted_iff_presupposed {admissible : Pos → (F → Prop) → Prop}
     (whole : ∀ p, admissible p fun _ => True) {sig : Pos → Nat → F → Prop} :
@@ -431,7 +431,7 @@ theorem unrestricted_iff_presupposed {admissible : Pos → (F → Prop) → Prop
       ((superTrue_iff ⟨_, whole i.1⟩).mpr (premises i.1)) i.2.1 i.2.2⟩
 
 /-- Along any relation, with each self's boundaries the regions that hold its center and are
-closed under the relation, the whole is admissible, so the axiom is the presupposition, sub-true
+closed under the relation, the whole is admissible, so the continuation condition is the presupposition, sub-true
 and invariant at every standpoint. -/
 theorem unrestricted_iff_presupposed_along (rel : F → F → Prop) (center : Pos → F)
     {sig : Pos → Nat → F → Prop} :
@@ -439,7 +439,7 @@ theorem unrestricted_iff_presupposed_along (rel : F → F → Prop) (center : Po
       BoundaryInvariant (Boundary rel (center p)) (SignificantWithin sig p) :=
   unrestricted_iff_presupposed fun p => Boundary.whole (center p)
 
-/-- Where each center's closure is the whole, the axiom is the presupposition sub-true at every
+/-- Where each center's closure is the whole, the continuation condition is the presupposition sub-true at every
 standpoint, because the whole is then the only boundary (`Boundary.only_whole`) and invariance
 holds trivially. -/
 theorem unrestricted_iff_presupposed_of_whole {rel : F → F → Prop} {center : Pos → F}
@@ -458,7 +458,7 @@ theorem retains_agree_of_presupposed {admissible : Pos → (F → Prop) → Prop
     W.Retains sig p l l' ↔ W.Retains sig q l l' :=
   Web.retains_agree ((unrestricted_iff_presupposed whole).mpr premises) p q
 
-/-- Under the three premises G0 holds at the level of claims, on every reading in which a
+/-- Under the three premises living significance holds at the level of claims, on every reading in which a
 claim's significance from a standpoint is that of some formation's continuation at some step. -/
 theorem Valuation.significant_of_presupposed {Q : Type} {V : Valuation Pos Q}
     {admissible : Pos → (F → Prop) → Prop} (whole : ∀ p, admissible p fun _ => True)
@@ -477,7 +477,7 @@ from every other. -/
 def StandpointInvariant (sig : Pos → Nat → F → Prop) : Prop :=
   ∀ p q t g, sig p t g → sig q t g
 
-/-- **The axiom across standpoints.** Along a relation, let every formation lie within some
+/-- **The continuation condition across standpoints.** Along a relation, let every formation lie within some
 center's closure, let each standpoint's presupposition be sub-true, and let significance be
 standpoint-invariant. Then nothing restricts significance. -/
 theorem unrestricted_of_standpointInvariant {rel : F → F → Prop} {center : Pos → F}
@@ -490,7 +490,7 @@ theorem unrestricted_of_standpointInvariant {rel : F → F → Prop} {center : P
         (subTrue_significantWithin_iff.mp (presupposed q) i.2.1 i.2.2 within)
 
 /-- Given the presupposition and centers covering, the two forms of the step are equivalent:
-each is then the axiom. Along a relation, with every formation within some center's closure and
+each is then the continuation condition. Along a relation, with every formation within some center's closure and
 every standpoint's presupposition sub-true, the presupposition is invariant across each self's
 boundaries exactly when significance is invariant across standpoints, the rule of N_std. -/
 theorem boundaryInvariant_iff_standpointInvariant {rel : F → F → Prop} {center : Pos → F}
@@ -511,7 +511,7 @@ namespace Flow
 variable {L : Flow F C} {W : Web F C} {part : F → Bool}
 
 /-- The order of the presupposition's readings. Drawn along a larger relation it says more: along
-the total relation it is the axiom at the standpoint (`subTrue_total_iff`); along sharing a
+the total relation it is the continuation condition at the standpoint (`subTrue_total_iff`); along sharing a
 condition it gives the presupposition along affecting and along being affected; along being
 affected, the one along feeding; along any relation, the one along the empty relation, a
 standpoint's own good (`subTrue_empty_iff`). -/
@@ -533,7 +533,7 @@ theorem presupposition_order {f : F} {sig : Pos → Nat → F → Prop} {p : Pos
    fun _ => subTrue_of_larger fun _ _ no => no.elim⟩
 
 /-- The presupposition drawn along a relation that holds affecting compares every part within
-the closure as the axiom does. Let the presupposition at standpoint `p` be sub-true along such a
+the closure as the continuation condition does. Let the presupposition at standpoint `p` be sub-true along such a
 relation at `p`'s center. Then for every part whose members lie within the center's closure, the
 levels with and without the part retain what has significance from `p` exactly as they include
 each other, both ways, and neither adds a continuation with significance exactly when neither
@@ -554,7 +554,7 @@ theorem Balances.presupposed_comparison (balances : L.Balances W) {l : Nat → C
         members reached.reaches)
 
 /-- Drawn along affecting, the presupposition compares every part within the center's reach
-closure as the axiom does. Its premise is weaker than the one along sharing a condition
+closure as the continuation condition does. Its premise is weaker than the one along sharing a condition
 (`presupposition_order`). -/
 theorem Balances.presupposed_reach_comparison (balances : L.Balances W) {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {sig : Pos → Nat → F → Prop} {center : Pos → F}
@@ -566,7 +566,7 @@ theorem Balances.presupposed_reach_comparison (balances : L.Balances W) {l : Nat
       (¬ W.Adds sig p l W.level ↔ ¬ W.Exceeds l W.level) :=
   balances.presupposed_comparison without (fun _ _ affects => affects) presupposed members
 
-/-- Where everything lies within each center's system, the axiom is the presupposition drawn
+/-- Where everything lies within each center's system, the continuation condition is the presupposition drawn
 along sharing a condition at every standpoint, since the whole is then the only boundary. -/
 theorem unrestricted_iff_system_presupposed {center : Pos → F}
     (connected : ∀ p g, L.WithinSystem W (center p) g) {sig : Pos → Nat → F → Prop} :
@@ -574,7 +574,7 @@ theorem unrestricted_iff_system_presupposed {center : Pos → F}
       ∀ p, SubTrue (Boundary (L.Shares W) (center p)) (SignificantWithin sig p) :=
   unrestricted_iff_presupposed_of_whole connected
 
-/-- Under one common condition, which every formation takes part in, the axiom is the
+/-- Under one common condition, which every formation takes part in, the continuation condition is the
 presupposition drawn along sharing a condition at every standpoint. -/
 theorem unrestricted_iff_presupposed_of_common {c : C} (common : ∀ g, L.TakesPart W g c)
     {center : Pos → F} {sig : Pos → Nat → F → Prop} :
@@ -589,7 +589,7 @@ end Flow
 namespace Clearing
 
 /-- Without the presupposition. Where nothing has significance the presupposition is invariant
-at every standpoint, vacuously, the whole is a boundary of every self, and the axiom fails. -/
+at every standpoint, vacuously, the whole is a boundary of every self, and the continuation condition fails. -/
 theorem without_presupposition :
     (∀ p, BoundaryInvariant (Boundary (flow.FedFrom web) p)
         (SignificantWithin (fun (_ : Formation) (_ : Nat) (_ : Formation) => False) p)) ∧
@@ -599,7 +599,7 @@ theorem without_presupposition :
    fun all => all (.clearer, 0, .clearer)⟩
 
 /-- Without invariance. Significance bounded by each formation's feeding closure makes every
-presupposition sub-true, the whole is a boundary of every self, and the axiom fails: from the
+presupposition sub-true, the whole is a boundary of every self, and the continuation condition fails: from the
 clearer's standpoint the presupposition is not invariant, since the dweller lies beyond its
 feeding closure. -/
 theorem without_invariance :
@@ -630,7 +630,7 @@ theorem without_standpoint_invariance :
 
 /-- With a fixed boundary. Were each self's only admissible boundary its feeding closure,
 significance bounded by the closure would make every presupposition sub-true and invariant, and
-the axiom would still fail: the dweller then lies within no admissible boundary of the
+the continuation condition would still fail: the dweller then lies within no admissible boundary of the
 clearer. -/
 theorem with_fixed_boundary :
     (∀ p, SubTrue (fun region => ∀ g, region g ↔ WithinClosure (flow.FedFrom web) p g)
@@ -685,7 +685,7 @@ theorem own_presupposition {l : Nat → Place → Nat}
    (system_counts_dweller without).2.2.of_fewer fun _ _ _ within =>
      Flow.withinInfluence_of_withinFeeding (Flow.withinFeeding_iff.mpr within)⟩
 
-/-- The clearer's web is one system, so the axiom is exactly the presupposition drawn along sharing
+/-- The clearer's web is one system, so the continuation condition is exactly the presupposition drawn along sharing
 a condition at every standpoint. -/
 theorem system_presupposition (sig : Formation → Nat → Formation → Prop) :
     Unrestricted sig ↔

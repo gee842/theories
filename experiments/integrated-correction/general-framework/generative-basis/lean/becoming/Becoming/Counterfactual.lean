@@ -710,11 +710,20 @@ end Inputs
 
 section Unfolding
 
+/-- **The course's web**: `W` with the levels the law generates. The course a law of exchange
+generates is its flow (`ExchangeLaw.course`) with this web; its worlds read the two, with one kind
+of relatum (`ExchangeLaw.world`) or with formations and conditions as roles of one relatum
+(`ExchangeLaw.courseWorld`, `Becoming.Runs`). -/
+def ExchangeLaw.courseWeb {F C : Type} (law : ExchangeLaw F C) (present : Nat → List F)
+    (start : C → Nat) (W : Web F C) : Web F C :=
+  W.withLevel (law.levels present start)
+
 /-- The course a law generates over one kind of relatum, read as a world (`Becoming.Space`): its
-relata exchange as the law gives, at the levels the law generates. -/
+relata exchange as the law gives, at the levels the law generates (`World.ofKind` of the course's
+flow and web). -/
 def ExchangeLaw.world {R : Type} (law : ExchangeLaw R R) (present : Nat → List R)
     (start : R → Nat) (W : Web R R) : World :=
-  ⟨R, law.course present start, W.withLevel (law.levels present start)⟩
+  World.ofKind (law.course present start) (law.courseWeb present start W)
 
 /-- **The counterfactual is a world.** Under a law of what has stood, the world of the course
 balances exactly where the course is feasible. -/

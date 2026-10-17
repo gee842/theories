@@ -6,7 +6,7 @@ import Becoming.Propagation
 `Becoming.Propagation` (P115) measures how strongly an exchange is coupled to a level and shows that
 the carried amount, the course the coupling strengths generate from the starting gaps, is the most
 difference that can arrive. It leaves open "a general theory of loops, with the strength around
-every loop and its runaway, beyond the witnesses". This module gives that theory, within Part I and
+every loop and its runaway, beyond the witnesses". This module gives that theory, within the theory without axiom and
 with no premise beyond the strengths each statement names: how the carried amount is calculated
 order by order, as a sum over routes; how accurate a calculation cut at a finite order is; and that
 a loop upstream, and only a loop, makes a difference run away.

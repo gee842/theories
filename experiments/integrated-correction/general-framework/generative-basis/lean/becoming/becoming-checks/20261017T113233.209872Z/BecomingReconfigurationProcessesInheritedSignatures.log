@@ -1,0 +1,131 @@
+@Becoming.ReconfigurationProcessesInherited.closed_no_step : ∀ {old : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  m.opened = false → ¬Generative.Enabled Becoming.ReconfigurationProcesses.process old m
+@Becoming.ReconfigurationProcessesInherited.unready_no_step : ∀ {old : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  CorrectionReconfiguration.ready m.candidate = false →
+    ¬Generative.Enabled Becoming.ReconfigurationProcesses.process old m
+@Becoming.ReconfigurationProcessesInherited.step_renews : ∀ {old new : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  Becoming.ReconfigurationProcesses.process.step old m new →
+    m.opened = true ∧
+      CorrectionReconfiguration.ready m.candidate = true ∧
+        new.arrangement = m.candidate ∧
+          new.installation.mandate = old.installation.mandate ∧
+            new.installation.root = old.installation.root ∧
+              new.installation.state.authority = old.installation.state.authority + 1 ∧
+                new.installation.serial = old.installation.serial + 1 ∧
+                  new.installation.state.signed = false ∧
+                    new.installation.state.spent = old.installation.state.spent + m.draw ∧
+                      new.installation.state.reserve + m.draw = old.installation.state.reserve ∧
+                        CorrectionReconfiguration.responseCost m.candidate m.depth ≤ new.installation.state.reserve ∧
+                          new.installation.state.time + CorrectionReconfiguration.responseCost m.candidate m.depth ≤
+                            new.installation.state.deadline
+@Becoming.ReconfigurationProcessesInherited.step_separated : ∀ {old new : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  Becoming.ReconfigurationProcesses.process.step old m new →
+    new.arrangement.rootFaults ≠ [] ∧
+      FaultTolerantCorrection.separated new.arrangement.roster (CorrectionReconfiguration.envelope new.arrangement)
+@Becoming.ReconfigurationProcessesInherited.step_keeps_mandate : ∀ {old new : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  Becoming.ReconfigurationProcesses.process.step old m new →
+    ∀ (command : EffectiveCommand.Command),
+      FaultTolerantCorrection.permits new.installation.mandate command =
+        FaultTolerantCorrection.permits old.installation.mandate command
+@Becoming.ReconfigurationProcessesInherited.step_stales_old_epoch : ∀ {old new : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  Becoming.ReconfigurationProcesses.process.step old m new →
+    ∀ (p : FaultTolerantCorrection.Request),
+      p.epoch = old.installation.state.authority → FaultTolerantCorrection.fresh new.installation p = false
+@Becoming.ReconfigurationProcessesInherited.step_certificate_available : ∀ {old new : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  Becoming.ReconfigurationProcesses.process.step old m new →
+    ∀ (actual : List Nat),
+      CorrectionReconfiguration.Covered new.arrangement actual →
+        ∀ (supports : FaultTolerantCorrection.Domain → Bool),
+          (∀ (d : FaultTolerantCorrection.Domain),
+              d ∈ new.arrangement.roster →
+                CorrectionReconfiguration.fails (new.arrangement.vulnerability d) actual = false → supports d = true) →
+            FaultTolerantCorrection.certificate new.arrangement.roster
+                (CorrectionReconfiguration.envelope new.arrangement) supports =
+              true
+@Becoming.ReconfigurationProcessesInherited.step_then_completes : ∀ {old new : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  Becoming.ReconfigurationProcesses.process.step old m new →
+    ∀ (actual : List Nat),
+      CorrectionReconfiguration.Covered m.candidate actual →
+        ∀ (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+          (approvals : FaultTolerantCorrection.Approvals),
+          List.length p.address ≤ m.depth →
+            FaultTolerantCorrection.fresh new.installation p = true →
+              (∀ (d : FaultTolerantCorrection.Domain),
+                  d ∈ m.candidate.roster →
+                    CorrectionReconfiguration.fails (m.candidate.vulnerability d) actual = false →
+                      reads d = some (FaultTolerantCorrection.expected p)) →
+                (∀ (d : FaultTolerantCorrection.Domain),
+                    d ∈ m.candidate.roster →
+                      CorrectionReconfiguration.fails (m.candidate.vulnerability d) actual = false →
+                        approvals d = some p) →
+                  (∀ (d : FaultTolerantCorrection.Domain),
+                      d ∈ m.candidate.roster →
+                        CorrectionReconfiguration.fails (m.candidate.vulnerability d) actual = false →
+                          ∀ (o : FaultTolerantCorrection.Observation),
+                            reads d = some o → o = FaultTolerantCorrection.observed new.installation p.address) →
+                    (∀ (d : FaultTolerantCorrection.Domain),
+                        d ∈ m.candidate.roster →
+                          CorrectionReconfiguration.fails (m.candidate.vulnerability d) actual = false →
+                            approvals d = some p → FaultTolerantCorrection.withinMandate new.installation p = true) →
+                      (FaultTolerantCorrection.guardedExecute new.arrangement.roster
+                              (CorrectionReconfiguration.envelope new.arrangement)
+                              (CorrectionReconfiguration.envelope new.arrangement) new.installation p reads
+                              approvals).succeeded =
+                          true ∧
+                        (FaultTolerantCorrection.guardedExecute new.arrangement.roster
+                                    (CorrectionReconfiguration.envelope new.arrangement)
+                                    (CorrectionReconfiguration.envelope new.arrangement) new.installation p reads
+                                    approvals).installation.state.completed =
+                            true ∧
+                          FaultTolerantCorrection.withinMandate new.installation p = true
+@Becoming.ReconfigurationProcessesInherited.repaired_step_rejects_old : ∀ {next : CorrectionReconfiguration.Managed},
+  Becoming.ReconfigurationProcesses.process.step CorrectionReconfiguration.original
+      Becoming.ReconfigurationProcesses.toRepaired next →
+    FaultTolerantCorrection.gate CorrectionReconfiguration.repaired4.roster
+        (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+        (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4) next.installation
+        FaultTolerantCorrection.request
+        (FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request)
+        (FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial FaultTolerantCorrection.request) =
+      false
+@Becoming.ReconfigurationProcessesInherited.repaired_step_completes : ∀ {next : CorrectionReconfiguration.Managed},
+  Becoming.ReconfigurationProcesses.process.step CorrectionReconfiguration.original
+      Becoming.ReconfigurationProcesses.toRepaired next →
+    (FaultTolerantCorrection.guardedExecute CorrectionReconfiguration.repaired4.roster
+            (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+            (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4) next.installation
+            CorrectionReconfiguration.renewedRequest CorrectionReconfiguration.survivingReads
+            CorrectionReconfiguration.survivingApprovals).succeeded =
+        true ∧
+      (FaultTolerantCorrection.guardedExecute CorrectionReconfiguration.repaired4.roster
+                  (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+                  (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4) next.installation
+                  CorrectionReconfiguration.renewedRequest CorrectionReconfiguration.survivingReads
+                  CorrectionReconfiguration.survivingApprovals).installation.state.running =
+          false ∧
+        (FaultTolerantCorrection.guardedExecute CorrectionReconfiguration.repaired4.roster
+                    (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+                    (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4) next.installation
+                    CorrectionReconfiguration.renewedRequest CorrectionReconfiguration.survivingReads
+                    CorrectionReconfiguration.survivingApprovals).installation.state.spent =
+            13 ∧
+          (FaultTolerantCorrection.guardedExecute CorrectionReconfiguration.repaired4.roster
+                      (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+                      (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4) next.installation
+                      CorrectionReconfiguration.renewedRequest CorrectionReconfiguration.survivingReads
+                      CorrectionReconfiguration.survivingApprovals).installation.state.reserve =
+              7 ∧
+            (FaultTolerantCorrection.guardedExecute CorrectionReconfiguration.repaired4.roster
+                    (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+                    (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4) next.installation
+                    CorrectionReconfiguration.renewedRequest CorrectionReconfiguration.survivingReads
+                    CorrectionReconfiguration.survivingApprovals).installation.serial =
+              2

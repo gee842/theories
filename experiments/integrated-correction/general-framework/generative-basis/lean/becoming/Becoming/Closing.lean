@@ -8,7 +8,7 @@ import Becoming.Remainder
 on. Both take the couplings as they stand. On 16 October 2026 Ren took the reading that "which
 loops a world has is part of its situation; loops form and dissolve within the unfolding, and the
 theorems take them as they stand at each step", pending "a loop-formation theorem". This module
-states how loops form, within Part I and with no premise beyond the strengths each statement names.
+states how loops form, within the theory without axiom and with no premise beyond the strengths each statement names.
 
 * **Loops formed by a step.** The strengths before step `T` (`strengthsBefore`) keep the couplings
   acting at steps before `T` and drop the rest. A coupling of them is a coupling acting before `T`

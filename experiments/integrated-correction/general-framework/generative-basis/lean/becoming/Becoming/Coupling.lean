@@ -9,7 +9,7 @@ A labelled process `Process S A` takes its move from an alphabet of its own. `Be
 configuration (`closedBy`), and leaves as not derived that a move is formed within the unfolding,
 or by what. The records of P69 and P80 (process-and-frame-as-readings,
 counterfactual-is-the-course) ask when a move is formed within the unfolding, a formation's and
-not supplied from outside, and when it is the part's own. This module answers within Part I, with
+not supplied from outside, and when it is the part's own. This module answers within the theory without axiom, with
 no premise beyond what each law names, for a part and the rest of a whole coupled by one move:
 where the move is formed (by the part, by the rest, or only by their relation), that no move
 needs supplying from outside the whole, and what the record of one course fixes of it.

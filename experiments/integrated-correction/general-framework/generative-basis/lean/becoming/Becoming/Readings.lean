@@ -12,7 +12,7 @@ core says: whatever reads an unfolding is a reading in context; the readings of 
 always one world; a description free of context exists exactly where the readings glue; and
 `World`, with its balance, is a case where two readings of change glue. With the rest of the whole
 counted, every world is one run of the one law of exchange. The same standard of invariance,
-applied to significance, leaves the one axiom, the condition of chapter §6.15 (not asserted), as one horn of a dichotomy.
+applied to significance, leaves the continuation condition, the condition of chapter §6.15 (not asserted), as one horn of a dichotomy.
 
 * **The readings of one unfolding are one world.** Along a run, the registrations of a contextual
   system (`Contextual`), each claim read with its context, are the relata of one world, each active
@@ -59,10 +59,10 @@ applied to significance, leaves the one axiom, the condition of chapter §6.15 (
   the whole as a relatum is counting the difference between the two readings, and then every
   world is a run of the one law of exchange. What was a premise of the world is now a state of a
   part: whether the rest is idle.
-- The one axiom, the condition of chapter §6.15 (not asserted), is not a further rule beside the
+- The continuation condition, the condition of chapter §6.15 (not asserted), is not a further rule beside the
   laws. Under the invariance the laws meet,
   significance from a standpoint holds within some boundary only by holding for everything, and
-  the axiom comes to the presupposition: that one's own continuation has significance as the self
+  the continuation condition comes to the presupposition: that one's own continuation has significance as the self
   is drawn somewhere, the “belief” without which, Ren wrote on 10 October 2026, the self “can not
   justify itself”.
 
@@ -208,7 +208,7 @@ theorem World.unity (w : World) :
 
 /-! ## Significance by the same standard -/
 
-/-- Under invariance the presupposition is the axiom at that standpoint: wherever the whole is
+/-- Under invariance the presupposition is the continuation condition at that standpoint: wherever the whole is
 admissible and the presupposition is boundary-invariant, it holds as the boundary is drawn
 somewhere exactly when the continuation of everything has significance from `p`. A restatement of
 `boundaryInvariant_iff_conditional`. -/

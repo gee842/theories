@@ -1,0 +1,7 @@
+import Becoming.ReconfigurationProcesses
+#check @Becoming.ReconfigurationProcesses.step_iff
+#check @Becoming.ReconfigurationProcesses.enabled_iff
+#check @Becoming.ReconfigurationProcesses.shared_cause_no_step
+#check @Becoming.ReconfigurationProcesses.separated_repair_steps
+#check @Becoming.ReconfigurationProcesses.own_draw_alone_no_step
+#check @Becoming.ReconfigurationProcesses.combined_draw_steps

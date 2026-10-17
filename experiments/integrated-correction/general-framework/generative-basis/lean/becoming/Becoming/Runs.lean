@@ -218,11 +218,12 @@ section Course
 variable {F C : Type}
 
 /-- **The course a law of exchange generates, as a world.** Formations and conditions are roles of
-one relatum (`World.ofRoles`): the formations present exchange as the law gives under the levels it
-generates, and the conditions stand at those levels. -/
+one relatum (`World.ofRoles` of the course's flow and web, `ExchangeLaw.courseWeb`): the formations
+present exchange as the law gives under the levels it generates, and the conditions stand at those
+levels. -/
 def ExchangeLaw.courseWorld (law : ExchangeLaw F C) (present : Nat → List F) (start : C → Nat)
     (W : Web F C) : World :=
-  World.ofRoles (law.course present start) (W.withLevel (law.levels present start))
+  World.ofRoles (law.course present start) (law.courseWeb present start W)
 
 variable {law : ExchangeLaw F C} {present : Nat → List F} {start : C → Nat} {W : Web F C}
 

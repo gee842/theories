@@ -4,7 +4,7 @@ import Becoming.Continuation
 /-!
 # Standpoints: whose continuation counts
 
-Ren's proposal of 10 October 2026 ends with one axiom: “for anything, its continuation into
+Ren's proposal of 10 October 2026 ends with what is now the continuation condition: “for anything, its continuation into
 the future has significance”. `Becoming.Continuation` states what the dynamics derives with
 no ethical premise, the extent a continuing formation must count; it does not settle the
 center, whose continuation counts. This module states the center on the valuations of
@@ -12,10 +12,10 @@ center, whose continuation counts. This module states the center on the valuatio
 
 * **Held lives.** A living claim is *held* when some position counts it in its own region
   (`Valuation.Held` for all living claims, `Valuation.Unheld` for a claim no position
-  holds). Where every life is held, G0 at the level of claims is exactly S0 at every
+  holds). Where every life is held, living significance at the level of claims is exactly S0 at every
   position with standpoint neutrality (`Valuation.significant_iff_held`); neither
   connection nor relational neutrality is used. Where holding is decided and every living
-  claim is reached through formed relations from a held one, G0 is S0 at every position,
+  claim is reached through formed relations from a held one, living significance is S0 at every position,
   standpoint neutrality, and relational neutrality only into claims no position holds
   (`Valuation.significant_iff_reached`). None of these can be dropped: every life held
   and valued by its own standpoint only, where neither neutrality holds
@@ -25,14 +25,14 @@ center, whose continuation counts. This module states the center on the valuatio
   (`Valuation.own_transmission`).
 * **Two completions.** Standpoint neutrality completes S0 with no connection. On a
   connected whole where every position holds a living claim, S0 at every position with
-  relational neutrality gives G0 without it (`Valuation.significant_of_transmits`).
+  relational neutrality gives living significance without it (`Valuation.significant_of_transmits`).
   Where the relations are read as dependence, relational neutrality is the valuation form
   of counting what one's continuation depends on; in a whole where dependence links every
   two lives, the derived extent with S0 then reaches every life (a reading of the general
   theorem).
 * **Each formation its own center.** Read stepwise, with each formation a position whose
   own region is its own events, every living event is held (`Web.held_by_formations`), so
-  G0 there is S0 at every formation with standpoint neutrality
+  living significance there is S0 at every formation with standpoint neutrality
   (`Web.significant_iff_self`). The stepwise `living` reading, active and not undermining,
   is one reading of the proposal's weak form, continuation that does not damage another's
   (an AI reading). S0 ranges over living claims, so read this way the seed already carries
@@ -63,19 +63,19 @@ center, whose continuation counts. This module states the center on the valuatio
   formation holds and values its own events, and the clearer values also the source's, which
   feed its resource. Every life is held, S0 holds at every position, and each standpoint's
   significance is closed along feeding, while the dweller's living event has no
-  significance from the clearer's standpoint: standpoint neutrality fails and G0 fails
+  significance from the clearer's standpoint: standpoint neutrality fails and living significance fails
   (`Clearing.center_not_derived`). The line holds for a derived extent that runs along
   dependence. In the same valuation the formed relations of the stepwise reading relate
   the clearer's event to the dweller's through the habitat both take part in, and
   transmission out of the clearer's own region fails: an extent run along every formed
-  relation would reach the dweller. With standpoint neutrality added, G0 holds by
+  relation would reach the dweller. With standpoint neutrality added, living significance holds by
   `Web.significant_iff_self`. Significance at the level of claims does not separate
   counting another as a condition from counting it as a being that wants.
 
 Reading S0 as what wanting is, the seed at each wanting point, and standpoint neutrality as
-the one axiom, so that what has significance from any center has it from every standpoint
+the continuation condition, so that what has significance from any center has it from every standpoint
 and no center is privileged, is the AI's reading of Ren's proposal, adopted on Ren's delegation of
-15 October 2026 (DELEGATED-CHOICES D11). G0 is no longer an axiom: Ren folded it on 11 October 2026.
+15 October 2026 (DELEGATED-CHOICES D11). Living significance is no longer an axiom: Ren folded it on 11 October 2026.
 The source of `Clearing` requires nothing by stipulation. Decided holding is a disclosed logical
 commitment of `significant_iff_reached`, as decided equality is of the conveyance results. Names are
 working names.
@@ -99,7 +99,7 @@ def Unheld (c : C) : Prop :=
 
 variable {V}
 
-/-- Where every living claim is some position's own, G0 is S0 at every position with
+/-- Where every living claim is some position's own, living significance is S0 at every position with
 standpoint neutrality. Neither connection nor relational neutrality is used. -/
 theorem significant_iff_held (held : V.Held) :
     V.Significant ↔ (∀ p, V.SelfGood p) ∧ Neutral V.shares :=
@@ -108,7 +108,7 @@ theorem significant_iff_held (held : V.Held) :
       | ⟨p, own⟩ => share (p, q, c) alive (self p c own alive)⟩
 
 /-- With holding decided, where every living claim is reached through formed relations
-from a living claim some position holds, G0 is S0 at every position, standpoint
+from a living claim some position holds, living significance is S0 at every position, standpoint
 neutrality, and relational neutrality into claims no position holds. -/
 theorem significant_iff_reached [∀ c, Decidable (∃ p, V.own p c)]
     (reached : ∀ c, V.living c → ∃ c₀ p, V.living c₀ ∧ V.own p c₀ ∧ Reach V.relations c₀ c) :
@@ -131,7 +131,7 @@ theorem own_transmission (self : ∀ p, V.SelfGood p) :
   fun ⟨p, _, d⟩ own _ _ alive => self p d own alive
 
 /-- A second completion of S0: on a connected whole where every position holds a living
-claim, S0 at every position with relational neutrality gives G0, with no standpoint
+claim, S0 at every position with relational neutrality gives living significance, with no standpoint
 neutrality. -/
 theorem significant_of_transmits (connected : V.Connected)
     (holds : ∀ p, ∃ c, V.own p c ∧ V.living c) (self : ∀ p, V.SelfGood p)
@@ -154,7 +154,7 @@ theorem held_by_formations (sig : F → F × Nat → Prop) :
     (W.valuation (fun f e => e.1 = f) sig).Held :=
   fun e _ => ⟨e.1, rfl⟩
 
-/-- So G0 there is S0 at every formation with standpoint neutrality. -/
+/-- So living significance there is S0 at every formation with standpoint neutrality. -/
 theorem significant_iff_self (sig : F → F × Nat → Prop) :
     (W.valuation (fun f e => e.1 = f) sig).Significant ↔
       (∀ f, (W.valuation (fun f e => e.1 = f) sig).SelfGood f) ∧
@@ -429,7 +429,7 @@ theorem clearer_not_living :
 events, and the clearer values also the source's, which feed its resource: every life is held,
 S0 holds at every position, and each standpoint's significance is closed along feeding. The
 dweller's event at step zero is living and has no significance from the clearer's
-standpoint, so standpoint neutrality and G0 fail. The clearer's event at step zero is
+standpoint, so standpoint neutrality and living significance fail. The clearer's event at step zero is
 related to it through the habitat, so transmission out of the clearer's own region along the
 formed relations fails. -/
 theorem center_not_derived :

@@ -679,7 +679,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   every condition the formation takes part in, keeps its own support when it covers what
   it requires, and over a region omitting a requirement can lose its own support.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
-  G0's characterization, minimality, the universal reason, C and L, and the
+  living significance's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.
 * `Becoming.Ranking` (L4): what C ranks under each reading. Both the whole-run and the
   stepwise reading rank sharing above winning by consumption and, in the two-part
@@ -709,7 +709,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   are connected by descent alone. On Ren's delegation of 15 October 2026 these readings count as
   formed relations of continuation, not as direct valuations (DELEGATED-CHOICES D9).
 * `Becoming.Standpoints` (L4): whose continuation counts. Where every living claim is
-  held, lying in the own region of some position, G0 is S0 at every position with
+  held, lying in the own region of some position, living significance is S0 at every position with
   standpoint neutrality, with neither connection nor relational neutrality; lives no
   position holds need relational neutrality from a held life, and each premise is needed.
   On a connected whole where every position holds a living claim, S0 with relational
@@ -723,15 +723,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   another formation's life has no significance from the clearer: along dependence the
   dynamics fixes the extent, not the center, and along every formed relation transmission
   would reach that life. Reading S0 as wanting one's continuation and standpoint
-  neutrality as the one axiom is the AI's reading of Ren's proposal of 10 October 2026,
-  adopted on Ren's delegation of 15 October 2026. G0 is no longer an axiom: Ren folded it on 11
+  neutrality as the continuation condition is the AI's reading of Ren's proposal of 10 October 2026,
+  adopted on Ren's delegation of 15 October 2026. Living significance is no longer an axiom: Ren folded it on 11
   October 2026.
-* `Becoming.Significance` (L4): the one axiom, the condition of chapter §6.15 (not asserted; Ren folded Part II
-  into Part I as that conditional section on 16 October 2026).
+* `Becoming.Significance` (L4): the continuation condition, the condition of chapter §6.15 (not asserted; Ren folded what was Part II
+  into the theory without axiom as that conditional section on 16 October 2026).
   Ren's “for anything, its
   continuation into the future has significance” is read as boundary neutrality for the
   significance of continuation: from every standpoint, the continuation of anything has
-  significance at every step. Under it G0 holds on the stepwise, relation and whole-run
+  significance at every step. Under it living significance holds on the stepwise, relation and whole-run
   readings, with S0 at every standpoint, both neutralities and a seed wherever something
   lives, and C holds on level paths with “better” read as retaining and adding what has
   significance. Retaining is
@@ -740,8 +740,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   dependence on it forms is living on the stepwise reading and still loses a possibility.
   What retains in the whole retains within every region, while centers bounded by their
   dependence license the free rider and disagree. Where nothing has significance nothing
-  is ordered, so the axiom is needed. The reading is the AI's, adopted on Ren's delegation of 15
-  October 2026. G0 is a theorem of this axiom and, since Ren folded it on 11 October 2026, no longer
+  is ordered, so the continuation condition is needed. The reading is the AI's, adopted on Ren's delegation of 15
+  October 2026. Living significance is a theorem of this condition and, since Ren folded it on 11 October 2026, no longer
   an axiom.
 * `Becoming.Interdependence` (L4): how far the route without axiom reaches. What a
   formation's continuation depends on is its feeding closure, the least region holding it
@@ -750,8 +750,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   consumption whose feeders are all unsupported lasts at most as many steps as the level of
   what it consumes. So a loss within the closure can return through a feeder, even to a
   formation that kept its own support across the step, while a loss beyond it need not
-  return. Significance bounded by the whole is the axiom. The verdict of significance
-  bounded by a region is the axiom's wherever the losses lie within the region, and so on
+  return. Significance bounded by the whole is the continuation condition. The verdict of significance
+  bounded by a region is the continuation condition's wherever the losses lie within the region, and so on
   every comparison where a formation's feeding closure is the whole, while in the clearer's
   web the two part. The reading is the AI's, adopted on Ren's delegation of 15 October 2026.
 * `Becoming.Feeding` (L4): feeding across steps (P86). Possible carrying through a condition
@@ -768,8 +768,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   support registers only its exchanges with what it depends on, and nothing beyond its
   influence closure registers within it. What a part has not reached before a step is admitted
   alike with and without it there, and any significance covering what the part reaches compares
-  the levels with and without it as the axiom does; the comparison of any two flows is decided
-  within what their difference reaches. The axiom enters only as a hypothesis of three
+  the levels with and without it as the continuation condition does; the comparison of any two flows is decided
+  within what their difference reaches. The continuation condition enters only as a hypothesis of three
   witnesses. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
 * `Becoming.Testing` (L4): what registers in a formation and what it can test, with no premise
   beyond balance on the conditions registered and the representation. A condition a formation
@@ -886,38 +886,38 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   identification. Where the law leaves every configuration unchanged, the learnable targets are
   exactly those that go alike across the registration, `Becoming.Learning`'s lumping. The
   readings are the AI's.
-* `Becoming.Boundaries` (L4): the axiom decomposed. Along a relation a boundary of a
+* `Becoming.Boundaries` (L4): the continuation condition decomposed. Along a relation a boundary of a
   formation's self is a region holding it that is closed under the relation; a claim is
   super-true when it holds however the boundary is drawn, sub-true when it holds as drawn
   somewhere, and boundary-invariant when, holding as drawn anywhere, it holds as drawn
   everywhere. The presupposition, that the continuation of everything within the boundary has
-  significance, is the axiom when super-true and significance over the closure when sub-true,
-  so route (b) and the axiom are one presupposition at narrow and at wide scope. Where the
-  whole is admissible the axiom is exactly the presupposition sub-true and invariant at every
-  standpoint, and invariance is the conditional from the presupposition to the axiom at that
-  standpoint: the decomposition locates the step and does not lower the axiom. Given the
+  significance, is the continuation condition when super-true and significance over the closure when sub-true,
+  so route (b) and the continuation condition are one presupposition at narrow and at wide scope. Where the
+  whole is admissible the continuation condition is exactly the presupposition sub-true and invariant at every
+  standpoint, and invariance is the conditional from the presupposition to the continuation condition at that
+  standpoint: the decomposition locates the step and does not lower the continuation condition. Given the
   presupposition everywhere and covering, invariance is standpoint-invariance, the rule of
   N_std. Sub-true along affecting, the presupposition compares every part within the reach
-  closure as the axiom does, with no invariance. Covering, sub-truth and invariance are
+  closure as the continuation condition does, with no invariance. Covering, sub-truth and invariance are
   hypotheses. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Relevance` (L4): G0's uses under the axiom. Read from significance,
+* `Becoming.Relevance` (L4): the uses of living significance under the continuation condition. Read from significance,
   positive relevance is realized living content whose continuation has significance;
-  under the axiom G0 holds on every frame for every reading of `living`, this relevance
-  being the least satisfying it, so every use of G0, each a hypothesis for an arbitrary
-  positive relevance, is discharged. The axiom is G0 for anything: on the level paths of
-  every web it holds exactly when G0 holds with every claim living and positive
+  under the continuation condition living significance holds on every frame for every reading of `living`, this relevance
+  being the least satisfying it, so every use of living significance, each a hypothesis for an arbitrary
+  positive relevance, is discharged. The continuation condition is living significance for anything: on the level paths of
+  every web it holds exactly when living significance holds with every claim living and positive
   relevance read as significance. Where everything has significance, A read with bare
   significance gives a reason for any new content, living or not, so A keeps its scope
-  only read on living content; so read, the universal reason follows from the axiom
+  only read on living content; so read, the universal reason follows from the continuation condition
   with no seed, neutrality or connection premise. Read on possibilities, what the levels
-  of a course admit, C under the axiom ranks the absence of an overdrawing formation,
+  of a course admit, C under the continuation condition ranks the absence of an overdrawing formation,
   restraint and sharing as the whole-run reading does and withholds no event; it leaves
   a formation that adds no possibility unranked against its absence, where both
   readings of `living` rank its presence higher. The readings are the AI's, adopted on Ren's
-  delegation of 15 October 2026. After this audit Ren folded G0 (11 October 2026): it is a condition
-  with no axiom in Part I and a theorem of the axiom in Part II (since 16 October 2026,
-  a theorem with the axiom as the condition of chapter §6.15). Ren then folded positive relevance
-  into significance, with which G0 is the axiom's condition on realized living content
+  delegation of 15 October 2026. After this audit Ren folded living significance (`G0`) (11 October 2026): it is a condition
+  with no axiom in the theory without axiom and a theorem of the continuation condition in the conditional section (since 16 October 2026,
+  a theorem with the continuation condition as the condition of chapter §6.15). Ren then folded positive relevance
+  into significance, with which living significance is the continuation condition on realized living content
   (`g0_relevance_iff`), and left the comparison of courses to the AI, which compares courses on
   possibilities.
 

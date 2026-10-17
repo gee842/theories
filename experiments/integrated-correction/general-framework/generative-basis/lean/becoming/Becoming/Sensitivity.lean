@@ -10,7 +10,7 @@ with finitely many conditions, listed with equality decided, that a law of what 
 through registering what it is sensitive to (`ExchangeLaw.Nonanticipating.through_sensitive`):
 sensitivity is the least registration, least up to that double negation. It leaves open whether
 sensitivity remains the least registration with infinitely many conditions, or a counterexample.
-This module answers within Part I, with no premise beyond what each law names: sensitivity is the
+This module answers within the theory without axiom, with no premise beyond what each law names: sensitivity is the
 least registration, in the same double-negation form, wherever a law reads finitely many
 conditions under each history, with any number of conditions; with infinitely many, the condition
 cannot be dropped where vanishing is decided (a hypothesis, `decides`, which gives `LPO`), and
@@ -352,14 +352,15 @@ theorem tailLaw_not_through_sensitive :
       (fun c sensitive => absurd sensitive (tailLaw_not_sensitive decides c)) 0).1
 
 /-- For a web in which the formation depends on nothing, the tail law does not read through what
-it is sensitive to. -/
+it is sensitive to: on such a web, reading through it is reading the histories alike where they
+agree on what it is sensitive to (`tailLaw_not_through_sensitive`). -/
 theorem tailLaw_not_through {W : Web Unit Nat} (free : ∀ t c, ¬ W.requires t () c) :
     ¬ (tailLaw decides).Through W (tailLaw decides).Sensitive (fun _ => false) :=
-  fun through => tailLaw_differs decides 0 0
-    (through () rfl 0 (fun _ _ => 0) (fun _ _ => 1) (fun s _ =>
+  fun through => tailLaw_not_through_sensitive decides fun t l l' agree =>
+    through () rfl t l l' fun s le =>
       ⟨⟨fun _ c requires => absurd requires (free s c),
         fun _ c requires => absurd requires (free s c)⟩,
-       fun c sensitive => absurd sensitive (tailLaw_not_sensitive decides c)⟩) 0).1
+       fun c sensitive => agree c sensitive s le⟩
 
 /-- **The tail law reads through registering the conditions from any one on.** -/
 theorem tailLaw_through_from {W : Web Unit Nat} (n : Nat) :

@@ -56,7 +56,7 @@ states Capture's rule region as an instance of P67's absorbing regions.
   both are P67's (`law_possibly_iff`, `law_necessarily_iff`, `law_drawn_iff`). A configuration
   that returns has a run that never loses it, going round its course back to it forever
   (`Branching.Returns.run`). So **every process necessarily draws exactly what does not return**
-  (`necessarilyDrawn_iff_not_returns`, the instance of `Law.drawn_iff_not_returns`): what is
+  (`necessarilyDrawn_iff_not_returns`, the process form of `Law.drawn_iff_not_returns`): what is
   necessarily drawn never returns (`NecessarilyDrawnInto.not_returns`), and what does not return
   is necessarily drawn into what lies ahead of it at the first step
   (`necessarilyDrawnInto_ahead`). Possibly drawn is losing oneself on some course
@@ -353,7 +353,7 @@ theorem Lossless.recurs (lossless : Lossless P) (r : Run P) {l : List S}
   lossless.comes_back (r.onward i) (fun n => held (i + n))
 
 /-- **Merging nothing within finitely many configurations, a configuration with a run returns**:
-the instance of `Law.Lossless.returns` for every process, where some run begins at the
+the form for every process of `Law.Lossless.returns`, where some run begins at the
 configuration. -/
 theorem Lossless.returns (lossless : Lossless P) {all : List S} (every : ∀ s, s ∈ all)
     (r : Run P) : Returns P (r.state 0) :=
@@ -581,7 +581,7 @@ theorem NecessarilyDrawnInto.not_returns {R : S → Prop} (invariant : Invariant
     | ⟨n, inside⟩ => drawn.1 (invariant.reach (back n) inside)
 
 /-- **Every process necessarily draws exactly what does not return**, with no premise: the
-instance for every process of `Law.drawn_iff_not_returns`. -/
+form for every process of `Law.drawn_iff_not_returns`. -/
 theorem necessarilyDrawn_iff_not_returns {s : S} : NecessarilyDrawn P s ↔ ¬ Returns P s :=
   ⟨fun ⟨_, invariant, drawn⟩ => drawn.not_returns invariant,
    fun never => ⟨Ahead P s, invariant_ahead P s, necessarilyDrawnInto_ahead never⟩⟩

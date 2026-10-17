@@ -59,7 +59,7 @@ theorem distinct_append : ∀ {l m : List α}, CrossSituational.Distinct l →
     CrossSituational.Distinct m → (∀ x, x ∈ l → ¬ x ∈ m) → CrossSituational.Distinct (l ++ m)
   | [], _, _, dm, _ => dm
   | a :: l, _, ⟨out, rest⟩, dm, apart =>
-    ⟨fun mem => match TypicalRuns.mem_append_split mem with
+    ⟨fun mem => match FinerTraces.mem_append_split mem with
        | .inl inside => out inside
        | .inr outside => apart a (.head l) outside,
      distinct_append rest dm (fun x mem => apart x (.tail a mem))⟩

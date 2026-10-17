@@ -10,7 +10,7 @@ proof”. Earlier that day Ren had ordered the levels at which harm is judged: �
 be the whole, and a weaker version is within the system that one is in, then the self”. This
 module states, with no premise beyond the representation, how far a formation's own feedback
 reaches, how far a part's exchange reaches, and that the comparison of the levels with and
-without a part is decided within what the part reaches. The axiom of `Becoming.Significance`
+without a part is decided within what the part reaches. The continuation condition of `Becoming.Significance`
 enters only as a hypothesis of three witnesses.
 
 * **Closures.** A region is closed under a relation when whatever a member bears the relation
@@ -48,7 +48,7 @@ enters only as a hypothesis of three witnesses.
   (`Static.shares_unaffected`). Where every formation depends on one condition and exchanges with
   it, every reach closure is the whole (`Flow.reach_whole_of_common`). Where at one step every
   formation requires one condition and gives to it, every feeding closure is the whole, and
-  significance bounded by it, the route without axiom of `Becoming.Interdependence`, is the axiom
+  significance bounded by it, the route without axiom of `Becoming.Interdependence`, is the continuation condition
   (`Flow.feeding_whole_of_common`, `Flow.feeding_unrestricted_of_common`).
 * **Levels follow their exchanges.** Two balanced flows that start a condition alike, and take
   from it and give to it alike, keep it alike (`Flow.Balances.levels_agree`). So a formation's
@@ -83,15 +83,15 @@ enters only as a hypothesis of three witnesses.
   without the part alike (`Flow.Balances.comparison_local`). For any significance that covers
   what the part has reached before each step, the levels with and without the part retain what
   has significance along each other exactly as they include each other, both ways, and neither
-  adds a continuation with significance exactly where neither exceeds the other: the axiom's
+  adds a continuation with significance exactly where neither exceeds the other: the continuation condition's
   comparisons (`Flow.Balances.comparison_within_reach`). Where significance is decidable, adding
   is exceeding (`Flow.Balances.adds_iff_exceeds_of_decidable`); for every significance, exceeding
   gives adding up to double negation (`Flow.Balances.not_not_adds_of_exceeds`). So significance
   bounded by a region closed under affecting compares every part within it as inclusion does
   (`Flow.Balances.closed_comparison`), and the reach closure is the least such region holding a
   center. In `Clearing` the clearer's part reaches the dweller (`Clearing.reaches_dweller`).
-  Significance bounded by each reach closure is not the axiom, yet from the clearer's standpoint
-  the part loses the dweller, as under the axiom (`Clearing.reach_counts_dweller`); bounded by
+  Significance bounded by each reach closure is not the continuation condition, yet from the clearer's standpoint
+  the part loses the dweller, as under the continuation condition (`Clearing.reach_counts_dweller`); bounded by
   each influence closure, the part retains (`Clearing.system_counts_dweller`).
 * **Any two flows.** The comparison of any two balanced flows that start alike is decided within
   what their difference reaches before each step (`Flow.DiffersBefore`,
@@ -116,7 +116,7 @@ enters only as a hypothesis of three witnesses.
 - Feedback and a part's exchange point in opposite directions. A formation's feedback registers at
   most its influence closure, what can affect it, while its own part reaches into its reach
   closure, what it can affect. A center that values only what its feedback registers compares its
-  own part as the axiom does wherever the part reaches only within that closure
+  own part as the continuation condition does wherever the part reaches only within that closure
   (`Flow.Balances.comparison_local`). Where the part reaches beyond it, the center can misjudge it,
   as the clearer does; reaching beyond does not by itself make it misjudge (`Margin`). This reads
   Ren's “still need situational awareness”, which Ren attached to “the full truth set”: to
@@ -133,7 +133,7 @@ enters only as a hypothesis of three witnesses.
   of the exchange fixed. Ren also wrote that “at this moment in time, the whole earth has become a
   highly entangled system”. Where a center's reach is the whole, as where every formation depends
   on one condition and exchanges with it (`Flow.reach_whole_of_common`), the weaker version
-  coincides with the axiom. That condition is one shared condition; it does not measure
+  coincides with the continuation condition. That condition is one shared condition; it does not measure
   coupling.
 
 What is not derived:
@@ -355,7 +355,7 @@ theorem feeding_whole_of_common {t : Nat} {c : C}
     (WithinClosure.of_rel ⟨t, rfl, c, (common f).2.1, (common g).1, (common g).2.2⟩)
 
 /-- Under a common condition that feeds, significance bounded by each center's feeding closure,
-the route without axiom of `Becoming.Interdependence`, is the axiom. -/
+the route without axiom of `Becoming.Interdependence`, is the continuation condition. -/
 theorem feeding_unrestricted_of_common {Pos : Type} {t : Nat} {c : C}
     (common : ∀ g, g ∈ L.present t ∧ W.requires t g c ∧ 0 < L.give t g c) (center : Pos → F) :
     Unrestricted (bounded fun q => L.WithinFeeding W (center q)) :=
@@ -615,8 +615,8 @@ theorem Balances.comparison_local (balances : L.Balances W) {l : Nat → C → N
 `p`, covers at each step the continuation of everything the part has reached before it, the
 levels with the part retain what has significance along the levels without it exactly when they
 include them, and the reverse, and neither adds a continuation with significance exactly when
-neither exceeds the other. These are the axiom's comparisons (`Web.retains_iff_includes`,
-`Web.adds_iff_exceeds`): this is `comparison_local` with the axiom's significance. -/
+neither exceeds the other. These are the continuation condition's comparisons (`Web.retains_iff_includes`,
+`Web.adds_iff_exceeds`): this is `comparison_local` with the continuation condition's significance. -/
 theorem Balances.comparison_within_reach (balances : L.Balances W) {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {sig : Pos → Nat → F → Prop} {p : Pos}
     (covers : ∀ t g, L.ReachesBefore W part t g → sig p t g) :
@@ -784,7 +784,7 @@ theorem Balances.closed_comparison (balances : L.Balances W) {l : Nat → C → 
   balances.comparison_within_reach without fun _ _ reached =>
     reaches_within_closed closed members reached.reaches
 
-/-- Where each center's system is the whole, significance bounded by the system is the axiom. -/
+/-- Where each center's system is the whole, significance bounded by the system is the continuation condition. -/
 theorem bounded_system_whole {center : Pos → F}
     (connected : ∀ p g, L.WithinSystem W (center p) g) :
     Unrestricted (bounded fun p => L.WithinSystem W (center p)) :=
@@ -1194,7 +1194,7 @@ theorem wolves_unreached : ¬ flow.Reaches web wolvesPart .forest :=
 fixed. The wolves lie within the forest's influence closure, yet their part does not reach the
 forest: with the deer's browsing held as it is, the forest is supported with the part exactly
 where the levels without it admit it, at every step. So compared, the part narrows: the levels
-without it include those with it and admit the deer where those with it do not. Under the axiom
+without it include those with it and admit the deer where those with it do not. Under the continuation condition
 it does not retain what has significance, from any standpoint. -/
 theorem mediated_unregistered {l : Nat → Place → Nat}
     (without : flow.WithheldLevels wolvesPart web l) {Pos : Type}
@@ -1210,7 +1210,7 @@ theorem mediated_unregistered {l : Nat → Place → Nat}
 
 /-- Compared with the flow in which the deer respond, the wolves' taking is mixed: with it the
 forest is admitted at the third step and without it not, and without it the deer are admitted at
-the second step and with it not. Under the axiom neither level path retains what has
+the second step and with it not. Under the continuation condition neither level path retains what has
 significance along the other. -/
 theorem responsive_mixed {Pos : Type} {sig : Pos → Nat → Formation → Prop}
     (unrestricted : Unrestricted sig) (p : Pos) :
@@ -1268,7 +1268,7 @@ theorem far_system {g : Formation} (within : flow.WithinSystem web .far g) : g =
 
 /-- A part with members beyond a system. From the far formation's standpoint, significance bounded
 by each formation's system judges the joint part of the far formation and the wolves as
-retaining, while under the axiom the part loses the deer: the comparison within the system holds
+retaining, while under the continuation condition the part loses the deer: the comparison within the system holds
 for parts within it. -/
 theorem mixed_part {l : Nat → Place → Nat} (without : flow.WithheldLevels farWolvesPart web l)
     {sig : Formation → Nat → Formation → Prop} (unrestricted : Unrestricted sig) :
@@ -1450,7 +1450,7 @@ theorem system_counts_dweller {l : Nat → Place → Nat}
      fun _ within => within alongDependence alongDependence_closed trivial⟩
 
 /-- The clearer's web is one system: every formation lies within every other's system, so
-significance bounded by each formation's system is the axiom. Here the system does not separate
+significance bounded by each formation's system is the continuation condition. Here the system does not separate
 from the whole; the reach closure does (`reach_counts_dweller`). -/
 theorem system_whole :
     (∀ p g, flow.WithinSystem web p g) ∧ Unrestricted (bounded (flow.WithinSystem web)) :=
@@ -1499,8 +1499,8 @@ theorem clearer_own : ∀ h, clearerPart h = true → h = .clearer
   | .clearer, _ => rfl
   | .dweller, no => nomatch no
 
-/-- Significance bounded by each formation's reach closure is not the axiom, yet from the
-clearer's standpoint it judges the clearer's own part as the axiom does: the part loses the
+/-- Significance bounded by each formation's reach closure is not the continuation condition, yet from the
+clearer's standpoint it judges the clearer's own part as the continuation condition does: the part loses the
 dweller. Bounded by the influence closure, the part retains (`system_counts_dweller`). -/
 theorem reach_counts_dweller {l : Nat → Place → Nat}
     (without : flow.WithheldLevels clearerPart web l) :
@@ -1576,10 +1576,10 @@ theorem withheld : flow.WithheldLevels takerPart web fun _ _ => 3 :=
     | _ + 1 => rfl,
    fun () => rfl⟩
 
-/-- Covering what a part reaches is enough for the axiom's comparison, and not needed. The taker's
+/-- Covering what a part reaches is enough for the continuation condition's comparison, and not needed. The taker's
 part reaches `false`, which lies beyond the taker's influence closure, yet the levels with and
 without the part include each other, so every significance retains both ways: significance
-stopping at the taker's influence closure judges the part as the axiom does. -/
+stopping at the taker's influence closure judges the part as the continuation condition does. -/
 theorem reach_without_misjudgment {l : Nat → Unit → Nat}
     (without : flow.WithheldLevels takerPart web l) :
     flow.Reaches web takerPart false ∧ ¬ flow.WithinInfluence web true false ∧

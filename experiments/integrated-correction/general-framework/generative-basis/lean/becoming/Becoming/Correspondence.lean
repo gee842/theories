@@ -33,7 +33,7 @@ Results:
   drawing, not the undermining: valuing any drawing event reaches every living event
   depending on the condition at a positive level (`drawing_reaches`).
 * A condition on which every living event bears, with a living drawer and a living
-  dependent, connects the whole in at most two interactions (`connected_of_renewable`). G0
+  dependent, connects the whole in at most two interactions (`connected_of_renewable`). Living significance
   there is exactly a seed with N_rel and N_std (`significant_iff_of_renewable`).
 * Connection through a condition is made by its living use (`Shared`): two formations
   depending on one condition are connected through its use while the use keeps their
@@ -44,7 +44,7 @@ Results:
   (`roles_valuation_connected`, `roles_interaction_connected`). Drawing on a relatum that
   bears on itself interacts with each of its active events (`SelfBearing.interacts`): a
   bee and a flower, each depending on itself and on the other, are connected with no
-  third condition, and G0 there is exactly a seed with N_rel and N_std
+  third condition, and living significance there is exactly a seed with N_rel and N_std
   (`Mutualism.significant_iff`). Where each depends only on the other, neither
   co-participation nor interaction relates the bee to the flower
   (`Mutualism.apart_not_connected`, `Mutualism.apart_not_interacting`), though both are
@@ -206,7 +206,7 @@ theorem connected_of_renewable (c₀ : C)
       (interacts_reach W own sig (.inr ⟨bearsE, drawn⟩) aliveD).trans
         (interacts_reach W own sig (.inl ⟨drawn, bearsE'⟩) alive')
 
-/-- With such a condition, G0 for every standpoint is exactly a seed with N_rel and
+/-- With such a condition, living significance for every standpoint is exactly a seed with N_rel and
 N_std under the discipline. -/
 theorem significant_iff_of_renewable (c₀ : C)
     (bears : ∀ e, (W.interaction own sig).living e →
@@ -589,7 +589,7 @@ theorem connected : (web.interaction own sig).Connected :=
   fun e _ _ alive' =>
     Reach.of_step (a := ()) ⟨⟨other e.1, .inl ⟨rfl, trivial, Nat.zero_lt_one⟩⟩, alive'⟩
 
-/-- G0 on the bee and the flower is exactly a seed with N_rel and N_std. -/
+/-- Living significance on the bee and the flower is exactly a seed with N_rel and N_std. -/
 theorem significant_iff (p₀ : Pos) :
     (web.interaction own sig).Significant ↔ (web.interaction own sig).Grounds :=
   Valuation.significant_iff (connected own sig) p₀ (alive (.bee, 0))

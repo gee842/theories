@@ -1,0 +1,23 @@
+@Becoming.ReconfigurationProcesses.step_iff : ∀ {old new : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  Becoming.ReconfigurationProcesses.process.step old m new ↔
+    CorrectionReconfiguration.reconfigure m.opened m.draw m.depth m.candidate old = some new
+@Becoming.ReconfigurationProcesses.enabled_iff : ∀ {old : CorrectionReconfiguration.Managed}
+  {m : Becoming.ReconfigurationProcesses.Rearrangement},
+  Generative.Enabled Becoming.ReconfigurationProcesses.process old m ↔
+    (CorrectionReconfiguration.reconfigure m.opened m.draw m.depth m.candidate old).isSome = true
+Becoming.ReconfigurationProcesses.shared_cause_no_step : ¬Generative.Enabled Becoming.ReconfigurationProcesses.process
+    CorrectionReconfiguration.original Becoming.ReconfigurationProcesses.toMerged
+Becoming.ReconfigurationProcesses.separated_repair_steps : Generative.Enabled Becoming.ReconfigurationProcesses.process
+    CorrectionReconfiguration.original Becoming.ReconfigurationProcesses.toRepaired ∧
+  ∀ (next : CorrectionReconfiguration.Managed),
+    Becoming.ReconfigurationProcesses.process.step CorrectionReconfiguration.original
+        Becoming.ReconfigurationProcesses.toRepaired next →
+      next.installation.state.reserve = 18 ∧
+        next.installation.state.spent = 2 ∧ next.installation.state.authority = 8 ∧ next.installation.serial = 1
+Becoming.ReconfigurationProcesses.own_draw_alone_no_step : Becoming.ReconfigurationProcesses.toRepaired.draw ≤
+    Becoming.ReconfigurationProcesses.lowReserve.installation.state.reserve ∧
+  ¬Generative.Enabled Becoming.ReconfigurationProcesses.process Becoming.ReconfigurationProcesses.lowReserve
+      Becoming.ReconfigurationProcesses.toRepaired
+Becoming.ReconfigurationProcesses.combined_draw_steps : Generative.Enabled Becoming.ReconfigurationProcesses.process
+  Becoming.ReconfigurationProcesses.combinedReserve Becoming.ReconfigurationProcesses.toRepaired

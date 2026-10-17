@@ -2,40 +2,40 @@ import Becoming.Regions
 import Becoming.Standpoints
 
 /-!
-# Significance: the one axiom, the condition of chapter §6.15 (not asserted)
+# Significance: the continuation condition, the condition of chapter §6.15 (not asserted)
 
-On 16 October 2026 Ren folded Part II into Part I as one conditional section after the
-generative space (chapter §6.15): the theory does not assert the axiom below and states what
+On 16 October 2026 Ren folded what was Part II into the theory without axiom as one conditional section after the
+generative space (chapter §6.15): the theory does not assert the continuation condition below and states what
 follows with it as a condition.
 
-On 10 October 2026 Ren proposed one axiom: “for anything, its continuation into the future has
+On 10 October 2026 Ren proposed what is now the continuation condition: “for anything, its continuation into the future has
 significance(doesn't have to be positive, we could argue as long as not harm), or continuation
 into the future needs to create more significance(being generative)”. Ren chose to state the
-strongest claim without axiom first and to add this axiom after it, with G0 as the target
+strongest claim without axiom first and to add this condition after it, with living significance as the target
 theorem. Ren also wrote that a center and its boundary exist only within cognitive structure and
 dynamics, formed within the same system, so there is no question of whose continuation matters
 that would need an axiom, and that “not harm” is “a phase transition with a clear boundary”.
-This module states the axiom on the spine and what follows from it with the results of Part I.
+This module states the continuation condition on the spine and what follows from it with the results of the theory without axiom.
 
-* **The axiom.** A significance says, for a standpoint, a step and a formation, whether from
-  the standpoint the formation's continuation at the step has significance. The axiom is that
+* **The continuation condition.** A significance says, for a standpoint, a step and a formation, whether from
+  the standpoint the formation's continuation at the step has significance. The continuation condition is that
   nothing restricts it (`Unrestricted`): boundary neutrality (`Neutral`) for the significance
   of continuation, over anything, at every step, from every standpoint. A rival keeps the same
   rule inside each standpoint's region (`bounded_rival`).
-* **G0 follows.** Consider any reading in which a claim's significance from a standpoint is
-  the significance of some formation's continuation at some step. Under the axiom G0 holds at
+* **Living significance follows.** Consider any reading in which a claim's significance from a standpoint is
+  the significance of some formation's continuation at some step. Under the continuation condition living significance holds at
   the level of claims, and so do S0 at every standpoint, both neutralities, and a seed wherever
   something lives (`Valuation.premises_of_unrestricted`). No connection is used. The stepwise
   reading, the reading of relations and the whole-run reading are such readings
   (`Web.significant_of_unrestricted`, `Conditions.significant_of_unrestricted`). The step is
-  immediate: G0 is the axiom restricted to living claims, and the axiom is stronger, for it
+  immediate: living significance is the continuation condition restricted to living claims, and the continuation condition is stronger, for it
   covers events that are not living and formations not yet formed. On the level paths of a web
-  (`Web.paths`), G0 holds with unindexed significance, and so does C, with “better” read as
+  (`Web.paths`), living significance holds with unindexed significance, and so does C, with “better” read as
   retaining and adding what has significance (`Web.paths_g0_comparison`).
 * **What has significance is what can form.** From a standpoint, one level path *retains* what
   has significance along another when it admits every continuation with significance that the
   other admits (`Web.Retains`). It *adds* when it admits one that the other does not
-  (`Web.Adds`). Under the axiom retaining is inclusion and adding is exceeding
+  (`Web.Adds`). Under the continuation condition retaining is inclusion and adding is exceeding
   (`Web.retains_iff_includes`, `Web.adds_iff_exceeds`), from every standpoint alike
   (`Web.retains_agree`). So the four cases of a part in `Becoming.Admission` are the four cases
   of significance.
@@ -50,26 +50,26 @@ This module states the axiom on the spine and what follows from it with the resu
   (`Flow.retains_iff_within_margin_at`, `Flow.loses_iff_beyond_margin_at`,
   `Flow.adds_iff_within_margin_at`).
 * **No ending is licensed.** A level path that retains what has significance along another
-  ends none of it (`Web.Retains.not_added`). Under the axiom the conveyor's part is unordered,
+  ends none of it (`Web.Retains.not_added`). Under the continuation condition the conveyor's part is unordered,
   each path adding what the other lacks (`Transfer.unordered`), so ordering it needs a measure,
   a further premise. The giver's part retains and adds (`Restoring.Inflow.retains_adds`).
 * **What has not yet formed counts.** In `Preemption` a drawer takes a condition's unit before
   any dependence on it forms. Its event is active and not undermining, so it is living on the
   stepwise reading. Yet its part narrows what can form: a formation requiring the condition from
   the next step on is admitted at every step without the part and at no later step with it.
-  Under the axiom the part loses a continuation with significance
+  Under the continuation condition the part loses a continuation with significance
   (`Preemption.not_undermining_yet_loses`). The stepwise reading counts only dependences that
   have been met; retaining also counts what can still form.
 * **The whole first.** Where fewer continuations have significance, more is retained
   (`Web.Retains.of_fewer`). Significance bounded by a region retains what is admitted within
-  the region (`Web.retains_bounded_iff`). Under the axiom, what retains in the whole retains
+  the region (`Web.retains_bounded_iff`). Under the continuation condition, what retains in the whole retains
   within every region, a system's or a self's (`Web.Retains.within`). What holds within a
   system holds within every region inside it (`Web.AdmitsWithin.narrow`).
 
   The converse fails. In `Clearing`, let each formation's significance stop at what its
   continuation depends on. From the clearer's standpoint, its part retains what has
   significance at every step; from the dweller's standpoint, it loses the dweller
-  (`Clearing.centers_disagree`). Under the axiom the part loses the dweller from every
+  (`Clearing.centers_disagree`). Under the continuation condition the part loses the dweller from every
   standpoint. Meanwhile, the levels without the part admit every formation at every step, and
   the clearer is supported throughout, so withholding the part ends nothing
   (`Clearing.free_rider_loses`).
@@ -81,14 +81,14 @@ This module states the axiom on the spine and what follows from it with the resu
   `Flow.Balances.widens_iff_within_margin`). On level paths, an extension in which every
   claim counts as living is exactly a widening, so C holds for every reading of `living`
   with “better” read as widening, with no axiom (`Web.paths_extension_iff_widens`,
-  `Web.paths_comparison_widens`). With the axiom as a condition, widening is retaining and
+  `Web.paths_comparison_widens`). With the continuation condition supplied, widening is retaining and
   adding, keeping the same is retaining both ways, and being mixed is adding both ways
   (`Web.widens_iff_retains_adds`, `Web.keeps_iff_retains`, `Web.mixed_iff_adds`): the
   reduction to possibilities loses nothing, and the rules above need no axiom (Ren, 11
   October 2026: “as long as the derivation of the rules doesn't rely on axiom, don't use
   one”).
-* **The axiom is needed.** Where nothing has significance, every level path retains every
-  other and none adds, and G0 fails at any event that lives (`Web.significance_undetermined`).
+* **The continuation condition is needed.** Where nothing has significance, every level path retains every
+  other and none adds, and living significance fails at any event that lives (`Web.significance_undetermined`).
   No law of the dynamics mentions significance, so the dynamics does not decide it.
 
 Significance here is not graded, and, as Ren wrote, it need not be positive. A part does no
@@ -103,18 +103,18 @@ it also adds.
   “more possibilities of becoming”.
 - Ren wrote that the self “can not justify itself without some sort of "belief"”. This reads
   onto `bounded_rival` and `Web.significance_undetermined`: a significance bounded by a region
-  is supplied, as the axiom is, and the dynamics decides neither.
-- G0 is a theorem of this axiom and, since Ren folded it on 11 October 2026, no longer an axiom.
+  is supplied, as the continuation condition is, and the dynamics decides neither.
+- Living significance is a theorem of this condition and, since Ren folded it on 11 October 2026, no longer an axiom.
 
 What is not derived:
 - the step from significance to a reason (A), the lifting (L), and practical judgment (J1–J4);
 - the measure that would order a mixed part;
 - the level at which formations are individuated, members or lineages, which fixes what counts
   as a loss;
-- which reading of `living` G0 names. The stepwise reading counts participation in a fall
+- which reading of `living` living significance names. The stepwise reading counts participation in a fall
   below a need met. Retaining counts the part's difference against the levels without it,
   possibilities included, and the two differ (`Preemption`).
-- the normative warrant of the axiom itself.
+- the normative warrant of the continuation condition itself.
 
 Recognition and motivation belong to the later attempt without axiom. The representation
 commits to discrete steps, natural quantities and a decided part.
@@ -126,7 +126,7 @@ open Generative
 
 variable {F C Pos : Type}
 
-/-! ## The axiom and its rivals -/
+/-! ## The continuation condition and its rivals -/
 
 /-- No standpoint, step or formation restricts significance: from every standpoint, the
 continuation of anything has significance at every step. This is boundary neutrality
@@ -139,8 +139,8 @@ significance exactly when `f` lies in `p`'s region. -/
 def bounded (region : Pos → F → Prop) : Pos → Nat → F → Prop :=
   fun p _ f => region p f
 
-/-- A bounded significance is the axiom's rule accepted inside a formed boundary. Where some
-formation lies outside some standpoint's region, it is not the axiom. -/
+/-- A bounded significance is the continuation condition's rule accepted inside a formed boundary. Where some
+formation lies outside some standpoint's region, it is not the continuation condition. -/
 theorem bounded_rival {region : Pos → F → Prop} :
     Within (fun i : Pos × Nat × F => region i.1 i.2.2) (fun i => bounded region i.1 i.2.1 i.2.2) ∧
       ((∃ p f, ¬ region p f) → ¬ Unrestricted (bounded region)) :=
@@ -190,22 +190,22 @@ theorem Adds.exceeds {sig : Pos → Nat → F → Prop} {p : Pos} {l l' : Nat �
     W.Adds sig p l l' → W.Exceeds l l'
   | ⟨t, f, _, admits, not⟩ => ⟨t, f, admits, not⟩
 
-/-- Under the axiom, retaining is inclusion: what has significance is what can form. -/
+/-- Under the continuation condition, retaining is inclusion: what has significance is what can form. -/
 theorem retains_iff_includes {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
     (p : Pos) {l l' : Nat → C → Nat} : W.Retains sig p l l' ↔ W.Includes l l' :=
   ⟨fun retains t f => retains t f (unrestricted (p, t, f)), fun includes => includes.retains sig p⟩
 
-/-- Under the axiom, adding is exceeding. -/
+/-- Under the continuation condition, adding is exceeding. -/
 theorem adds_iff_exceeds {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
     (p : Pos) {l l' : Nat → C → Nat} : W.Adds sig p l l' ↔ W.Exceeds l l' :=
   ⟨Adds.exceeds, fun ⟨t, f, admits, not⟩ => ⟨t, f, unrestricted (p, t, f), admits, not⟩⟩
 
-/-- Under the axiom no standpoint is privileged: every standpoint retains alike. -/
+/-- Under the continuation condition no standpoint is privileged: every standpoint retains alike. -/
 theorem retains_agree {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
     (p q : Pos) {l l' : Nat → C → Nat} : W.Retains sig p l l' ↔ W.Retains sig q l l' :=
   (retains_iff_includes unrestricted p).trans (retains_iff_includes unrestricted q).symm
 
-/-- The one-axiom case. With the axiom as a condition, retaining and adding what has significance
+/-- The case of the continuation condition. With the continuation condition supplied, retaining and adding what has significance
 is widening what can form: the reduction to possibilities loses nothing. -/
 theorem widens_iff_retains_adds {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
     (p : Pos) {l l' : Nat → C → Nat} : W.Widens l l' ↔ W.Retains sig p l l' ∧ W.Adds sig p l l' :=
@@ -213,7 +213,7 @@ theorem widens_iff_retains_adds {sig : Pos → Nat → F → Prop} (unrestricted
      (adds_iff_exceeds unrestricted p).mpr exceeds⟩,
    fun ⟨retains, adds⟩ => ⟨(retains_iff_includes unrestricted p).mp retains, adds.exceeds⟩⟩
 
-/-- The one-axiom case. With the axiom as a condition, keeping what can form the same is retaining
+/-- The case of the continuation condition. With the continuation condition supplied, keeping what can form the same is retaining
 what has significance both ways. -/
 theorem keeps_iff_retains {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
     (p : Pos) {l l' : Nat → C → Nat} : W.Keeps l l' ↔ W.Retains sig p l l' ∧ W.Retains sig p l' l :=
@@ -222,7 +222,7 @@ theorem keeps_iff_retains {sig : Pos → Nat → F → Prop} (unrestricted : Unr
    fun ⟨first, second⟩ => ⟨(retains_iff_includes unrestricted p).mp first,
      (retains_iff_includes unrestricted p).mp second⟩⟩
 
-/-- The one-axiom case. With the axiom as a condition, being mixed is each adding what has
+/-- The case of the continuation condition. With the continuation condition supplied, being mixed is each adding what has
 significance that the other lacks. -/
 theorem mixed_iff_adds {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
     (p : Pos) {l l' : Nat → C → Nat} : W.Mixed l l' ↔ W.Adds sig p l l' ∧ W.Adds sig p l' l :=
@@ -242,7 +242,7 @@ theorem retains_bounded_iff {region : Pos → F → Prop} {p : Pos} {l l' : Nat 
     W.Retains (bounded region) p l l' ↔ ∀ t, W.AdmitsWithin (region p) (l t) (l' t) t :=
   ⟨fun retains t f inside => retains t f inside, fun within t f inside => within t f inside⟩
 
-/-- The whole first. Under the axiom, what retains from a standpoint retains from it within every
+/-- The whole first. Under the continuation condition, what retains from a standpoint retains from it within every
 region, a system's or a self's: the whole's judgment decides every narrower one. -/
 theorem Retains.within {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig) {p : Pos}
     {l l' : Nat → C → Nat} (retains : W.Retains sig p l l') (region : Pos → F → Prop) :
@@ -379,9 +379,9 @@ theorem Balances.widens_iff_within_margin (balances : L.Balances W) {l : Nat →
 
 end Flow
 
-/-! ## G0 and the premise card follow -/
+/-! ## Living significance and the premise card follow -/
 
-/-- Under the axiom, G0 holds at the level of claims on every reading in which a claim's
+/-- Under the continuation condition, living significance holds at the level of claims on every reading in which a claim's
 significance from a standpoint is the significance of some formation's continuation at some
 step. With it hold S0 at every standpoint, both neutralities, and a seed wherever something
 lives. No connection is used. -/
@@ -394,7 +394,7 @@ theorem Valuation.premises_of_unrestricted {Q : Type} {V : Valuation Pos Q}
   ⟨all, fun p c _ alive => all p c alive, fun ⟨p, _, d⟩ _ _ alive => all p d alive,
    fun ⟨_, q, c⟩ alive _ => all q c alive, fun c alive p => ⟨p, c, alive, all p c alive⟩⟩
 
-/-- Read stepwise, and read through relations, G0 follows from the axiom: an event's or a
+/-- Read stepwise, and read through relations, living significance follows from the continuation condition: an event's or a
 relation's significance from a standpoint is that of its formation's continuation at its step. -/
 theorem Web.significant_of_unrestricted (W : Web F C) {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) (own : Pos → F × Nat → Prop)
@@ -403,7 +403,7 @@ theorem Web.significant_of_unrestricted (W : Web F C) {sig : Pos → Nat → F �
       (W.relations own' fun p e => sig p e.2.2 e.1).Significant :=
   ⟨fun p e _ => unrestricted (p, e.2, e.1), fun p e _ => unrestricted (p, e.2.2, e.1)⟩
 
-/-- Read through a run, G0 follows from the axiom the same way. -/
+/-- Read through a run, living significance follows from the continuation condition the same way. -/
 theorem Conditions.significant_of_unrestricted {S A Cond : Type} {P : Process S A}
     (K : Conditions S F Cond) (r : Run P) {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) (own : Pos → F × Nat → Prop) :
@@ -415,7 +415,7 @@ path when the levels admit it there. Nothing steps. -/
 def Web.paths (W : Web F C) : Frame (Nat → C → Nat) Unit (F × Nat) :=
   ⟨⟨fun _ _ _ => False⟩, fun l e => W.Admits (l e.2) e.2 e.1⟩
 
-/-- On level paths, under the axiom, G0 holds with unindexed significance for every reading of
+/-- On level paths, under the continuation condition, living significance holds with unindexed significance for every reading of
 `living`, and so does C, with “better” read as retaining and adding what has significance. -/
 theorem Web.paths_g0_comparison (W : Web F C) {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) (living : F × Nat → Prop) (p : Pos) :
@@ -441,8 +441,8 @@ theorem Web.paths_comparison_widens (W : Web F C) (living : F × Nat → Prop) :
   fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
     ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩
 
-/-- The axiom is needed. Where nothing has significance, every level path retains every other
-and none adds, and G0 fails at any event that lives; where everything has significance G0 holds.
+/-- The continuation condition is needed. Where nothing has significance, every level path retains every other
+and none adds, and living significance fails at any event that lives; where everything has significance living significance holds.
 The dynamics decides neither. -/
 theorem Web.significance_undetermined (W : Web F C) (own : Pos → F × Nat → Prop) (p : Pos)
     {e : F × Nat} (alive : W.active e.2 e.1 ∧ ¬ W.UnderminingAt e.2 e.1) :
@@ -469,7 +469,7 @@ theorem admitted_all_without {l : Nat → Place → Nat}
     | .fuel _, no => nomatch no
   | t, .dweller => admitted_without without t
 
-/-- The axiom counts what a free rider ends. Under it, from every standpoint, the clearer's part
+/-- The continuation condition counts what a free rider ends. Under it, from every standpoint, the clearer's part
 loses the dweller, so the levels with it do not retain what has significance without it. The
 levels without it retain what has significance with it, and the clearer is supported at every
 step and admitted without its part: withholding the part ends nothing. -/
@@ -506,7 +506,7 @@ end Clearing
 
 namespace Transfer
 
-/-- Under the axiom the conveyor's part is unordered: each level path adds a continuation with
+/-- Under the continuation condition the conveyor's part is unordered: each level path adds a continuation with
 significance that the other lacks, so neither retains the other. Ordering it needs a measure. -/
 theorem unordered {l : Nat → Bool → Nat} (without : flow.WithheldLevels conveyorPart web l)
     {sig : Pos → Nat → Formation → Prop} (unrestricted : Unrestricted sig) (p : Pos) :
@@ -522,7 +522,7 @@ end Transfer
 
 namespace Restoring.Inflow
 
-/-- Under the axiom the giver's part retains and adds: the levels with it retain what has
+/-- Under the continuation condition the giver's part retains and adds: the levels with it retain what has
 significance without it and add a continuation with significance. -/
 theorem retains_adds {l : Nat → Unit → Nat} (without : flow.WithheldLevels giverPart web l)
     {sig : Pos → Nat → Bool → Prop} (unrestricted : Unrestricted sig) (p : Pos) :
@@ -581,7 +581,7 @@ theorem withheld : flow.WithheldLevels drawerPart web fun _ _ => 1 :=
 active formations take, and only from what they draw on; activity needs support. The drawer's
 event at the first step is active and not undermining, since no dependence on the condition has
 formed. Yet `false` is admitted at every step without the drawer's part and supported at no step
-after the first with it: the part narrows what can form. Under the axiom it loses a continuation
+after the first with it: the part narrows what can form. Under the continuation condition it loses a continuation
 with significance from every standpoint, so the levels with it do not retain what has
 significance without it. -/
 theorem not_undermining_yet_loses {l : Nat → Unit → Nat}

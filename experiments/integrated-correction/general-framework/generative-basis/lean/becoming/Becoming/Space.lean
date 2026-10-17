@@ -246,6 +246,11 @@ theorem Embodied.arising (embodied : w.Embodied) : w.ArisingEmbodied :=
 def ofRoles {F C : Type} (L : Flow F C) (W : Web F C) : World :=
   ⟨F ⊕ C, L.roles, W.roles⟩
 
+/-- The one-kind reading of a flow and a web over one kind of relatum, as a world: its relata are
+those of the flow and the web themselves. -/
+def ofKind {R : Type} (L : Flow R R) (W : Web R R) : World :=
+  ⟨R, L, W⟩
+
 theorem arisingRecurs_ofRoles {F C : Type} (L : Flow F C) (W : Web F C) :
     (ofRoles L W).ArisingRecurs ↔ W.Unceasing :=
   W.roles_unceasing

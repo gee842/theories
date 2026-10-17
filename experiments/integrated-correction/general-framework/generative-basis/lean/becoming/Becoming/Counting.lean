@@ -322,7 +322,7 @@ theorem counting_free {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) →
         w.Taking → w.Dissipative → w.Embodied → w.Transmitting → w.CountsObey Q) :=
   have every : (∀ n c a, Tally n c a → Q n c a) →
       ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.CountsObey Q :=
-    fun law _ _ _ census => law _ _ _ census.tally
+    fun law w _ alive census => (counting_laws pointwise).mpr law w.Relatum _ alive census
   ⟨⟨every, fun law n c _ tally => pointwise (fun t => Queue.counts tally t)
       (law (queue n c) _ Queue.listed)⟩,
    ⟨fun law w _ _ _ _ _ _ _ => every law w, fun law n c _ tally =>

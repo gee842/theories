@@ -1,5 +1,6 @@
 import Becoming.Branching
 import Becoming.Learnable
+import Becoming.Parting
 
 /-!
 # Learnable runs: what a learner reading a run's registration can learn
@@ -43,8 +44,9 @@ section Along
 
 variable {S : Type u} {R : Type v} {V : Type w} {next : S → S}
 
-/-- The registered course of a run: what the registration registers at each of its steps. -/
-def course (reg : S → R) (r : Run (Law.process next)) : Nat → R := fun n => reg (r.state n)
+/-- The registered course of a run: what the registration registers at each of its steps
+(`Parting.course` on a run of the law's process). -/
+def course (reg : S → R) (r : Run (Law.process next)) : Nat → R := Parting.course reg r
 
 /-- The learner `pred`, reading the registered record of the run, claims the target at every step
 from `T` on. -/

@@ -8,7 +8,8 @@ their package paths, `Becoming/Foo.lean`) overlays the checkout, and the modules
 join module built with scratch_build.py can be measured before it lands. Writes OUT.json: for every apart theorem its
 module, the tracked constants its statement uses, and whether it is a root (used by no other apart theorem). A
 theorem on the base that uses a root makes the root, and every apart theorem it uses, feed the base, so the roots are
-what join theorems must reach. Prints the count by module. Writes only OUT.json and a temporary dump file.
+what join theorems must reach. Since U2 the inherited (periphery) modules of the run are measured too. Prints the
+count by module. Writes only OUT.json and a temporary dump file.
 """
 import collections, importlib.util, json, os, sys, tempfile
 from pathlib import Path
@@ -50,7 +51,8 @@ while stack:
     for d in deps[stack.pop()]:
         if d not in feeds:
             feeds.add(d); stack.append(d)
-theorems = [(i['name'], m) for m in cb.SPINE for i in registry.get(m, []) if i['kind'] == 'theorem']
+# Spine and periphery (the inherited modules of the run, U2): the registry holds every module of the run.
+theorems = [(i['name'], m) for m in registry for i in registry[m] if i['kind'] == 'theorem' and i['name'] in constants]
 def apart(n):
     return not (any(onp[d] or onw[d] for d in constants[n]['t']) or onb[n] or n in feeds)
 A = {n: m for n, m in theorems if apart(n)}
@@ -64,6 +66,6 @@ out = {n: {'module': A[n], 'root': n in roots, 'uses': sorted(constants[n]['t'])
        for n in sorted(A)}
 out_path.write_text(json.dumps(out, indent=1) + '\n')
 c = collections.Counter(A.values()); r = collections.Counter(A[n] for n in roots)
-print('spine theorems', len(theorems), 'apart', len(A), 'roots', len(roots))
+print('spine and periphery theorems', len(theorems), 'apart', len(A), 'roots', len(roots))
 for m, k in c.most_common():
     print(f'{m:40s} {k:4d} roots {r[m]}')

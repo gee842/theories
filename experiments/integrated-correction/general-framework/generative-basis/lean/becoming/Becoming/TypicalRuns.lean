@@ -1,6 +1,7 @@
 import Becoming.Typicality
 import Becoming.Parting
 import Becoming.CrossSituational
+import Becoming.FinerTraces
 
 /-!
 # Typical runs: what counting says of the records of runs of free branching
@@ -52,21 +53,6 @@ variable {α : Type u}
 def Listing (M : α → Prop) (l : List α) : Prop :=
   CrossSituational.Distinct l ∧ ∀ x, x ∈ l ↔ M x
 
-theorem mem_append_left {a : α} : ∀ {l : List α} (l' : List α), a ∈ l → a ∈ l ++ l'
-  | _ :: _, _, .head _ => .head _
-  | _ :: _, l', .tail _ mem => .tail _ (mem_append_left l' mem)
-
-theorem mem_append_right {a : α} {l' : List α} (mem : a ∈ l') : ∀ l : List α, a ∈ l ++ l'
-  | [] => mem
-  | _ :: l => .tail _ (mem_append_right mem l)
-
-theorem mem_append_split {b : α} : ∀ {l m : List α}, b ∈ l ++ m → b ∈ l ∨ b ∈ m
-  | [], _, mem => .inr mem
-  | _ :: _, _, .head _ => .inl (.head _)
-  | a :: _, _, .tail _ mem => match mem_append_split mem with
-    | .inl inside => .inl (.tail a inside)
-    | .inr outside => .inr outside
-
 /-- A member splits its list. -/
 theorem split_of_mem {a : α} : ∀ {l : List α}, a ∈ l → ∃ l₁ l₂, l = l₁ ++ a :: l₂
   | _ :: l, .head _ => ⟨[], l, rfl⟩
@@ -74,16 +60,16 @@ theorem split_of_mem {a : α} : ∀ {l : List α}, a ∈ l → ∃ l₁ l₂, l 
     | ⟨l₁, l₂, same⟩ => ⟨b :: l₁, l₂, congrArg (b :: ·) same⟩
 
 theorem mem_of_mem_drop {a x : α} {l₁ l₂ : List α} (mem : x ∈ l₁ ++ l₂) : x ∈ l₁ ++ a :: l₂ :=
-  match mem_append_split mem with
-  | .inl inside => mem_append_left _ inside
-  | .inr outside => mem_append_right (.tail a outside) l₁
+  match FinerTraces.mem_append_split mem with
+  | .inl inside => mem_appended_left _ inside
+  | .inr outside => mem_appended_right (.tail a outside) l₁
 
 theorem mem_drop_or {a x : α} {l₁ l₂ : List α} (mem : x ∈ l₁ ++ a :: l₂) :
     x = a ∨ x ∈ l₁ ++ l₂ :=
-  match mem_append_split mem with
-  | .inl inside => .inr (mem_append_left _ inside)
+  match FinerTraces.mem_append_split mem with
+  | .inl inside => .inr (mem_appended_left _ inside)
   | .inr (.head _) => .inl rfl
-  | .inr (.tail _ outside) => .inr (mem_append_right outside l₁)
+  | .inr (.tail _ outside) => .inr (mem_appended_right outside l₁)
 
 /-- Taking a member out of a list without repetition leaves a list without repetition that does
 not hold it. -/
@@ -95,7 +81,7 @@ theorem distinct_drop {a : α} :
     match distinct_drop (l₁ := l₁) (l₂ := l₂) rest with
     | ⟨out', rest'⟩ =>
       ⟨fun mem => match mem with
-        | .head _ => out (mem_append_right (.head l₂) l₁)
+        | .head _ => out (mem_appended_right (.head l₂) l₁)
         | .tail _ inside => out' inside,
        ⟨fun mem => out (mem_of_mem_drop mem), rest'⟩⟩
 

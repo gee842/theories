@@ -2,27 +2,27 @@ import Becoming.Boundaries
 import Becoming.Ranking
 
 /-!
-# Relevance: G0's uses under the axiom
+# Relevance: the uses of living significance under the continuation condition
 
-`Becoming.Significance` shows that Ren's one axiom gives G0. Before Ren decided whether the axiom
-replaces G0, every use of G0 in the core and in the periphery's
+`Becoming.Significance` shows that Ren's proposal, the continuation condition, gives living significance. Before Ren decided whether the continuation condition
+replaces living significance, every use of living significance in the core and in the periphery's
 generative-capacity modules was audited for what it needs of positive relevance and of
 `living`. This module states what the audit found.
 
-* **G0 from the axiom on every frame.** Read positive relevance from significance: realized
+* **Living significance from the continuation condition on every frame.** Read positive relevance from significance: realized
   living content whose continuation has significance from every standpoint
-  (`Frame.relevance`). Under the axiom G0 holds on every frame for every reading of `living`
-  (`g0_of_unrestricted`), and this relevance is the least satisfying G0, exactly the realized
-  living content (`relevance_least`). Every use of G0 takes it as a hypothesis for an arbitrary
+  (`Frame.relevance`). Under the continuation condition living significance holds on every frame for every reading of `living`
+  (`g0_of_unrestricted`), and this relevance is the least satisfying living significance, exactly the realized
+  living content (`relevance_least`). Every use of living significance takes it as a hypothesis for an arbitrary
   positive relevance, so each is discharged by this one; `Becoming.Bridge` does so for the
-  periphery's interface. With no axiom, G0 with this relevance holds exactly where every
+  periphery's interface. With no axiom, living significance with this relevance holds exactly where every
   realized living claim's continuation has significance from every standpoint
-  (`g0_relevance_iff`): it is the axiom's condition on realized living content.
-* **The axiom is G0 for anything.** On a frame whose claims are formations at steps, each
-  realized at some configuration, the axiom holds exactly when G0 holds with every claim living
+  (`g0_relevance_iff`): it is the continuation condition on realized living content.
+* **The continuation condition is living significance for anything.** On a frame whose claims are formations at steps, each
+  realized at some configuration, the continuation condition holds exactly when living significance holds with every claim living
   and positive relevance read as significance from every standpoint (`unrestricted_iff_g0`).
-  The level paths of every web are such a frame (`Web.unrestricted_iff_paths_g0`). Replacing G0
-  by the axiom widens its scope from living content to anything and weakens “positive” to “has
+  The level paths of every web are such a frame (`Web.unrestricted_iff_paths_g0`). Replacing living significance
+  by the continuation condition widens its scope from living content to anything and weakens “positive” to “has
   significance”.
 * **The reason premises keep their scope only on living content.** Where everything has
   significance, A read with bare significance supplies a reason for every response with access
@@ -30,10 +30,10 @@ generative-capacity modules was audited for what it needs of positive relevance 
   response securing new living content (`articulates_total`). In a witness the first forces a
   reason the second does not (`Widening.bare_forces_reason`). Read on living content, A gives D
   on living content (`positioned_articulation_of_articulatesLiving`), and the universal reason
-  follows from the axiom with no seed, neutrality or connection premise
+  follows from the continuation condition with no seed, neutrality or connection premise
   (`universal_reason_of_unrestricted`).
 * **C read on possibilities.** The possibility reading includes a formation at a step when the
-  course's levels admit it there. Under the axiom, extension under this reading is the axiom's
+  course's levels admit it there. Under the continuation condition, extension under this reading is the continuation condition's
   comparison, retaining and adding what has significance (`Ranking.possible_extends_iff`). In
   every law of the support-gated family it ranks the course without an overdrawing formation
   above the course with it (`Ranking.possible_ranks`), restraint above overdraw
@@ -55,7 +55,7 @@ generative-capacity modules was audited for what it needs of positive relevance 
   `living` second, it ranks the presence of a formation drawing within renewal above its absence
   (`Ranking.possibleFirst_presence`). It also ranks a rest that adds no possibility below
   uninterrupted activity (`Ranking.Rest.rest_ranked_below`): counting continuations beyond
-  possibilities counts a pause as a loss. The order is a further premise; the axiom gives the
+  possibilities counts a pause as a loss. The order is a further premise; the continuation condition gives the
   possibility reading alone.
 
 **Ren's decisions, 11 October 2026.** Positive relevance is folded into significance (“Positive
@@ -71,8 +71,8 @@ possibilities; the theorems of the other comparisons stay.
   not what does: a course in which a formation lives without adding a possibility is neither
   better nor worse than one in which it could live and does not.
 
-What is not derived: the warrant of the axiom; the step from significance to a reason (A), which
-stays a premise. After the audit Ren folded G0 (11 October 2026): it is no longer an axiom.
+What is not derived: the warrant of the continuation condition; the step from significance to a reason (A), which
+stays a premise. After the audit Ren folded living significance (`G0`) (11 October 2026): it is no longer an axiom.
 -/
 
 namespace Becoming
@@ -91,15 +91,15 @@ def Frame.relevance (M : Frame S A Q) (living : Q → Prop) (sig : Pos → Nat �
     (formation : Q → F) (step : Q → Nat) (s : S) (c : Q) : Prop :=
   living c ∧ M.realized s c ∧ ∀ p, sig p (step c) (formation c)
 
-/-- Under the axiom G0 holds on every frame for every reading of `living`, with positive
+/-- Under the continuation condition living significance holds on every frame for every reading of `living`, with positive
 relevance read from significance. -/
 theorem g0_of_unrestricted (M : Frame S A Q) (living : Q → Prop) {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) (formation : Q → F) (step : Q → Nat) :
     G0 M living (M.relevance living sig formation step) :=
   fun _ c alive realized => ⟨alive, realized, fun p => unrestricted (p, step c, formation c)⟩
 
-/-- It is the least positive relevance satisfying G0: under the axiom it holds of exactly the
-realized living content, and every positive relevance satisfying G0 holds wherever it does. -/
+/-- It is the least positive relevance satisfying living significance: under the continuation condition it holds of exactly the
+realized living content, and every positive relevance satisfying living significance holds wherever it does. -/
 theorem relevance_least (M : Frame S A Q) (living : Q → Prop) {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) (formation : Q → F) (step : Q → Nat) :
     (∀ s c, M.relevance living sig formation step s c ↔ living c ∧ M.realized s c) ∧
@@ -109,9 +109,9 @@ theorem relevance_least (M : Frame S A Q) (living : Q → Prop) {sig : Pos → N
      fun ⟨alive, realized⟩ => ⟨alive, realized, fun p => unrestricted (p, step c, formation c)⟩⟩,
    fun _ g0 s c ⟨alive, realized, _⟩ => g0 s c alive realized⟩
 
-/-- Positive relevance folded into significance (Ren, 11 October 2026). Read from significance, G0
+/-- Positive relevance folded into significance (Ren, 11 October 2026). Read from significance, living significance
 holds exactly where the continuation of every realized living claim has significance from every
-standpoint: it is the axiom's condition on realized living content, with no axiom. -/
+standpoint: it is the continuation condition on realized living content, with no axiom. -/
 theorem g0_relevance_iff (M : Frame S A Q) (living : Q → Prop) (sig : Pos → Nat → F → Prop)
     (formation : Q → F) (step : Q → Nat) :
     G0 M living (M.relevance living sig formation step) ↔
@@ -119,8 +119,8 @@ theorem g0_relevance_iff (M : Frame S A Q) (living : Q → Prop) (sig : Pos → 
   ⟨fun g0 s c alive realized => (g0 s c alive realized).2.2,
    fun all s c alive realized => ⟨alive, realized, all s c alive realized⟩⟩
 
-/-- The axiom is G0 for anything. On a frame whose claims are formations at steps, each realized
-at some configuration, the axiom holds exactly when G0 holds with every claim living and
+/-- The continuation condition is living significance for anything. On a frame whose claims are formations at steps, each realized
+at some configuration, the continuation condition holds exactly when living significance holds with every claim living and
 positive relevance read as significance from every standpoint. -/
 theorem unrestricted_iff_g0 (M : Frame S A (F × Nat)) (somewhere : ∀ e, ∃ s, M.realized s e)
     {sig : Pos → Nat → F → Prop} :
@@ -140,7 +140,7 @@ there. -/
 theorem Web.paths_somewhere (W : Web F C) (e : F × Nat) : ∃ l, W.paths.realized l e :=
   ⟨fun _ c => W.need e.2 e.1 c, fun _ _ => Nat.le_refl _⟩
 
-/-- So on the level paths of every web the axiom is G0 for anything. -/
+/-- So on the level paths of every web the continuation condition is living significance for anything. -/
 theorem Web.unrestricted_iff_paths_g0 (W : Web F C) {sig : Pos → Nat → F → Prop} :
     Unrestricted sig ↔ G0 W.paths (fun _ => True) (fun _ e => ∀ p, sig p e.2 e.1) :=
   unrestricted_iff_g0 W.paths W.paths_somewhere
@@ -193,7 +193,7 @@ theorem articulates_total {H R : Type} {V : Valuation Pos Q} {access : Pos → R
       all p r available fun h inScope => match secured h inScope with
         | ⟨c, ⟨alive, _⟩, fresh⟩ => ⟨c, alive, fresh⟩⟩⟩
 
-/-- D on living content follows from A read on living content, with G0's unindexed
+/-- D on living content follows from A read on living content, with living significance's unindexed
 significance. -/
 theorem positioned_articulation_of_articulatesLiving {H R : Type} {V : Valuation Pos Q}
     {access : Pos → R → Prop} {admitted : R → H → Prop} {before : H → Q → Prop}
@@ -206,7 +206,7 @@ theorem positioned_articulation_of_articulatesLiving {H R : Type} {V : Valuation
     | ⟨c, ⟨alive, all⟩, fresh⟩ => ⟨c, ⟨alive, all p⟩, fresh⟩
 
 /-- A sound inquiry whose goal is new living content gives every position with access to it a
-contributory reason, from G0 at the level of claims and A read on living content. -/
+contributory reason, from living significance at the level of claims and A read on living content. -/
 theorem universal_reason_living {R : Type} {k : Nat} (M : Frame S A Q) (V : Valuation Pos Q)
     (before : S → Q → Prop) {safe : S → A → S → Prop} {sense : S → A → S → Fin k}
     {response : R → List A} {B : S → Prop}
@@ -220,7 +220,7 @@ theorem universal_reason_living {R : Type} {k : Nat} (M : Frame S A Q) (V : Valu
     match Scope.secures sound t reached with
     | ⟨c, alive, _, fresh⟩ => ⟨c, ⟨alive, all p c alive⟩, fresh⟩
 
-/-- Under the axiom the universal reason needs no seed, neutrality or connection premise: on
+/-- Under the continuation condition the universal reason needs no seed, neutrality or connection premise: on
 every reading in which a claim's significance from a standpoint is that of some formation's
 continuation at some step, a sound inquiry whose goal is new living content gives every
 position with access to it a contributory reason, from A read on living content. -/
@@ -341,7 +341,7 @@ theorem possible_course_iff (L : Law) : ∀ w e, possible (course L) w e ↔
   | .occurs, _ => Iff.rfl
   | .absent, _ => Iff.rfl
 
-/-- Under the axiom, extension under the possibility reading is the axiom's comparison: one
+/-- Under the continuation condition, extension under the possibility reading is the continuation condition's comparison: one
 course extends another exactly when, on the law's web, its levels retain what has significance
 along the other's and add to it. -/
 theorem possible_extends_iff (L : Law) {Pos : Type} {sig : Pos → Nat → Part → Prop}

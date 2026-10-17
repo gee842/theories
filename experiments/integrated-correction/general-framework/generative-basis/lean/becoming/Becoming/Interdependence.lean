@@ -3,7 +3,7 @@ import Becoming.Significance
 /-!
 # Interdependence: what returns along dependence
 
-On 10 October 2026 Ren asked to aim first for the route with one axiom, which
+On 10 October 2026 Ren asked to aim first for the route under the continuation condition, which
 `Becoming.Significance` states, and then to try the route without axiom. The AI had put that
 route as follows, and Ren quoted it:
 
@@ -17,7 +17,7 @@ own supply”. Ren answered that a whole realizing, understanding and updating i
 under the selection rules and constraints in theory”, and that how this happens in practice
 “needs more thoughts”. This module states, with no premise beyond the representation, what a
 formation's continuation depends on, how far the constraint reaches, and where this route meets
-the axiom. The axiom enters only as a hypothesis of the comparisons.
+the continuation condition. The continuation condition enters only as a hypothesis of the comparisons.
 
 * **What a continuation depends on.** The continuation of a formation is fed by another at a
   step when the other gives to a condition it requires (`Flow.FedBy`). A region of formations
@@ -53,17 +53,17 @@ the axiom. The axiom enters only as a hypothesis of the comparisons.
   the source and the dweller each alone. The dweller lies beyond the clearer's closure
   (`Clearing.dweller_beyond`). Everything within that closure is supported at every step and
   the clearer is active throughout, while the dweller ends (`Clearing.closure_supported`).
-* **Where the route meets the axiom.** Significance bounded by the whole is the axiom
+* **Where the route meets the continuation condition.** Significance bounded by the whole is the continuation condition
   (`bounded_whole`). One level path retains what has significance along another, for
   significance bounded by a region, exactly as inclusion does wherever every formation the other
   path admits lies in the region or is admitted by the first
-  (`Web.retains_bounded_iff_includes`). Under the axiom the two verdicts then agree
+  (`Web.retains_bounded_iff_includes`). Under the continuation condition the two verdicts then agree
   (`Web.retains_bounded_iff_retains`). Where a formation's feeding closure is the whole, the
-  verdict within its closure is the axiom's on every comparison
+  verdict within its closure is the continuation condition's on every comparison
   (`Flow.within_closure_iff_retains`), as in `Overshoot` (`Overshoot.within_closure_iff_retains`).
-  The axiom's verdict always decides the verdict within every region (`Web.Retains.within`). In
+  The continuation condition's verdict always decides the verdict within every region (`Web.Retains.within`). In
   `Clearing` the two part. From the clearer's standpoint its part retains what has significance
-  within its feeding closure. Under the axiom the part loses the dweller, and from the dweller's
+  within its feeding closure. Under the continuation condition the part loses the dweller, and from the dweller's
   standpoint, within the dweller's own closure, it loses the dweller too
   (`Clearing.within_closure_yet_loses`).
 
@@ -80,11 +80,11 @@ the axiom. The axiom enters only as a hypothesis of the comparisons.
   where the clearer continues while the dweller ends. Neither mechanism reaches a loss that
   returns to no one.
 - So this route reaches Ren's self with what it depends on. It reaches the whole only where the
-  whole is one feeding closure. What the axiom adds is significance for continuations whose loss
+  whole is one feeding closure. What the continuation condition adds is significance for continuations whose loss
   returns to no one, such as the dweller's.
 - Ren wrote that the whole can realize itself, “like us, we recognize that "we" are the
   universe/ecosystem that realizes its own existence”. A center whose represented boundary is
-  the whole holds the axiom's significance (`bounded_whole`). This route asks for a boundary
+  the whole holds the continuation condition's significance (`bounded_whole`). This route asks for a boundary
   that matches actual dependence, so it reaches that significance only where the dependence
   reaches the whole.
 
@@ -92,7 +92,7 @@ What is not derived:
 - that a center wants its continuation, or that it represents its feeding closure;
 - that a loss within the closure does return: feeders may be redundant, and stock and timing
   decide when an ending arrives;
-- any warrant, which the route does not claim. G0 follows from the axiom of
+- any warrant, which the route does not claim. Living significance follows from the continuation condition of
   `Becoming.Significance` and, folded by Ren on 11 October 2026, is no longer an axiom.
 
 The comparisons by withheld levels keep the rest of the exchange fixed, so an ending that
@@ -239,9 +239,9 @@ theorem Balances.consumption_ends_with_feeders (balances : L.Balances W) (acting
 
 end Flow
 
-/-! ## Where bounded significance meets the axiom -/
+/-! ## Where bounded significance meets the continuation condition -/
 
-/-- Significance bounded by the whole is the axiom: where each standpoint's region is the whole,
+/-- Significance bounded by the whole is the continuation condition: where each standpoint's region is the whole,
 nothing restricts significance. -/
 theorem bounded_whole : Unrestricted (bounded fun (_ : Pos) (_ : F) => True) :=
   fun _ => trivial
@@ -262,8 +262,8 @@ theorem retains_bounded_iff_includes {region : Pos → F → Prop} {p : Pos}
     | .inr kept => kept,
    fun includes => includes.retains (bounded region) p⟩
 
-/-- Under the axiom, wherever every formation `l'` admits lies in `p`'s region or is admitted by
-`l`, the verdict of significance bounded by the region is the axiom's. -/
+/-- Under the continuation condition, wherever every formation `l'` admits lies in `p`'s region or is admitted by
+`l`, the verdict of significance bounded by the region is the continuation condition's. -/
 theorem retains_bounded_iff_retains {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) {region : Pos → F → Prop} {p : Pos}
     {l l' : Nat → C → Nat}
@@ -277,8 +277,8 @@ namespace Flow
 
 variable {L : Flow F C} {W : Web F C}
 
-/-- Where a formation's feeding closure is the whole, under the axiom the verdict within its
-closure is the axiom's on every comparison. -/
+/-- Where a formation's feeding closure is the whole, under the continuation condition the verdict within its
+closure is the continuation condition's on every comparison. -/
 theorem within_closure_iff_retains {sig : F → Nat → F → Prop}
     (unrestricted : Unrestricted sig) {p : F} (whole : ∀ f, L.WithinFeeding W p f)
     {l l' : Nat → C → Nat} :
@@ -485,8 +485,8 @@ theorem steady_continues :
    fun t f _ => supported t f,
    fun t f => ⟨trivial, supported t f⟩⟩
 
-/-- In this interdependent whole, under the axiom, the verdict within a formation's feeding
-closure is the axiom's, from either standpoint and on every comparison. -/
+/-- In this interdependent whole, under the continuation condition, the verdict within a formation's feeding
+closure is the continuation condition's, from either standpoint and on every comparison. -/
 theorem within_closure_iff_retains {sig : Bool → Nat → Bool → Prop}
     (unrestricted : Unrestricted sig) (p : Bool) {l l' : Nat → Bool → Nat} :
     web.Retains (bounded (flow.WithinFeeding web)) p l l' ↔ web.Retains sig p l l' :=
@@ -554,8 +554,8 @@ theorem closure_supported :
     | .dweller, no => (nomatch no),
    fun _ => trivial, unsupported_with, dweller_beyond⟩
 
-/-- The route and the axiom part here. From the clearer's standpoint its part retains what has
-significance within its feeding closure. Under the axiom the part loses the dweller from every
+/-- The route and the continuation condition part here. From the clearer's standpoint its part retains what has
+significance within its feeding closure. Under the continuation condition the part loses the dweller from every
 standpoint, and from the dweller's standpoint, within the dweller's own closure, it loses the
 dweller too. -/
 theorem within_closure_yet_loses {l : Nat → Place → Nat}

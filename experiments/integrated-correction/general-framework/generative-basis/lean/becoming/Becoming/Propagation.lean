@@ -9,7 +9,7 @@ what has stood, and decides the comparison within the part's responsive reach; a
 not derive is "any measure of how much difference arrives". `Becoming.Sensitivity` (P113) gives the
 least registration such a law reads through, its sensitivity, which says whether a level can change
 an exchange, not by how much; `Becoming.TimedResponse` orders the reach in time. This module
-measures, within Part I and with no premise beyond what each law names, how strongly an exchange is
+measures, within the theory without axiom and with no premise beyond what each law names, how strongly an exchange is
 coupled to a level, how much difference an act carries through such couplings, and that this is the
 most that can arrive.
 

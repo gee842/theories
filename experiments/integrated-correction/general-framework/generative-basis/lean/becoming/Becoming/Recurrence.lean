@@ -591,10 +591,10 @@ theorem Run.revisits_from (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ 
   Becoming.revisits_from held T
 
 /-- A run whose configurations a list holds and whose changes a quantity marks: change does not
-recur. -/
+recur (`not_marks` on the run's configurations). -/
 theorem Run.change_not_recurring (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l) {q : S → Nat}
     (marks : Marks q r.state) : ¬ ∀ T, ∃ k, T ≤ k ∧ r.state (k + 1) ≠ r.state k :=
-  marks.change_not_recurring held
+  fun recurs => not_marks held recurs q marks
 
 /-- A possibility lost along an admissible path stays lost along every continuation. -/
 theorem Reach.lost_stays {t u t' : S} (lost : ¬ Reach P t u) (onward : Reach P t t') :
