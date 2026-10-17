@@ -514,7 +514,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
+      "sha256": "41afc878298b38e0044a53a40bc8ca9fb3b887e414f6e2b072fd0cd26e9f98d4"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md",
@@ -646,6 +646,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after U: THE-THEORY-OF-BECOMING.md section 8 (the completeness paragraph, the row on worlds as runs, the row on integration of the spine) and section 9 (the current receipt, now 20261017T071851.986246Z) were rewritten for the join modules of U. The integrator read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": []

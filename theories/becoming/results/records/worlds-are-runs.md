@@ -16,6 +16,7 @@
 4. The course a law of exchange generates, formations and conditions read as roles of one relatum, is a world standing at the generated levels; under a law of what has stood it balances exactly where the course is feasible, so a feasible course is a run of the law of exchange. Its generation, a determined process of stage and history, has one run from the start, the generated history, off which its standings are read. (`Becoming.ExchangeLaw.courseWorld`, `Becoming.ExchangeLaw.courseWorld_level`, `Becoming.ExchangeLaw.courseWorld_balanced_iff`, `Becoming.ExchangeLaw.courseRun`, `Becoming.ExchangeLaw.courseRun_state`, `Becoming.ExchangeLaw.generation`, `Becoming.ExchangeLaw.generation_runs`, `Becoming.ExchangeLaw.courseWorld_generation`)
 5. The carried amount is the standing of the world the carrying law generates, every formation active and nothing required; that world balances with no premise, so the carried amount is the standing of a run of the law of exchange. (`Becoming.carriedWorld`, `Becoming.carriedWorld_level`, `Becoming.carriedWorld_balanced`, `Becoming.carriedRun`, `Becoming.carriedRun_level`)
 6. Cited from their own results: the orbit of a determined law is the run of its process, and every run of that process is the orbit from its start; readings in context are a world along every run. (`Becoming.Law.run`, `Becoming.Branching.law_run_state`, `Becoming.Contextual.world`)
+7. One course, one kind or two roles: a law of exchange over one kind of relatum generates one course read as a world over its relata and as a world of formations and conditions as roles of one relatum; the two stand at the same levels and exchange alike, balance together under a law of what has stood, and, where the course is feasible, give one run of exchange. (`Becoming.CourseRoles.level_eq`, `Becoming.CourseRoles.take_eq`, `Becoming.CourseRoles.give_eq`, `Becoming.CourseRoles.balanced_iff`, `Becoming.CourseRoles.runs_agree`)
 
 <a id="conditions--条件"></a>
 ## Conditions
@@ -28,7 +29,7 @@
 - That a world is a run by definition: worlds are still defined without processes, and the two readings are one by exact correspondence in both directions. Witness: `Becoming.World.run_world`.
 - That every process is the law of some world: a process's configurations need not be webs, and reading a run's claims as a world keeps neither moves nor standings. Witness: `Becoming.Frame.world`.
 - That every world balances: balance is a condition on a world, given with every world only once the rest is counted; likewise that the readings glue. Witness: `Becoming.World.balanced_iff_run`.
-- How the course world of one kind of relatum and the course world of two roles relate: no theorem joins them. Witness: `Becoming.ExchangeLaw.world`.
+- How the course world of one kind of relatum and the course world of two roles differ: they do not; they stand at the same levels, exchange alike, balance together and give one run of exchange (Becoming.CourseRoles), with the two-role world's formations and conditions as roles of one relatum. Witness: `Becoming.CourseRoles.balanced_iff`.
 - That the correspondence goes beyond unfolding: run_world, world_webAt, world_move and balanced_iff_run are rfl or Iff.rfl; the checked content is balanced_iff_exists_run, courseWorld_balanced_iff, generation_runs and carriedWorld_balanced. Witness: `Becoming.World.run_world`.
 - That the process and world families are one by definition: they meet through correspondence theorems, and at landing 1,019 of 7,214 spine theorems were still apart by dependency (a measurement, not a theorem).
 
@@ -44,7 +45,7 @@ Canonical source: [Runs.lean](../../../../experiments/integrated-correction/gene
 <a id="next--下一步"></a>
 ## Next
 
-A theorem joining the course world of one kind of relatum to that of two roles; making the identification definitional, which would change existing statements; an independent review; an argued judgment on the readings and on a definitional root.
+Making the identification definitional, which would change existing statements; an independent review; an argued judgment on the readings and on a definitional root.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -100,6 +101,8 @@ Ren, 12 October 2026: “let's go back to main track, yes, i do agree with your 
 | integration | [REPORT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/p130-frontier-on-base/REPORT.md) | — |
 | provenance | [2026-10-12-no-two-realities.md](../../../../sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json) | — |
+| proof | [CourseRoles.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseRoles.lean) | `Becoming.CourseRoles.level_eq`, `Becoming.CourseRoles.take_eq`, `Becoming.CourseRoles.give_eq`, `Becoming.CourseRoles.balanced_iff`, `Becoming.CourseRoles.runs_agree` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json) | — |
 
 Aliases: `every base read as a run`, `每个基读作运行`, `worlds are runs`, `世界是运行`, `one root`, `一个根`, `a balanced world is a run of the law of exchange`, `平衡的世界是交换之律的运行`, `course world`, `进程世界`, `law of exchange on webs`, `网上的交换之律`
 
@@ -109,6 +112,7 @@ Aliases: `every base read as a run`, `每个基读作运行`, `worlds are runs`,
 - 16 October 2026: added (P130, the integration finding of the release-readiness review, section 4); study section 165 (_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130); report in P130's REPORT.md.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A12, A18, records-mz-15: two does_not_show items added: most of the world/run correspondence theorems hold by rfl or Iff.rfl (at least 10 of Runs.lean's 21), with the checked content named; the two families meet by correspondence, and 1,019 of 7,214 theorems were apart at landing (the connectivity measurement of study section 165). The formal-reuse edge for World.withRest and withRest_balanced pointed to unity-of-readings, but both are in Becoming.Reading, owned by premises-read-off-the-exchange; the edge now points there and unity-of-readings stays as related. Earlier text in text_versions.
 - 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 17 October 2026, U (every spine theorem on the base): an application, not a new result. Becoming.CourseRoles joins the course world of one kind of relatum to that of two roles, which this record named as open; the scope item is answered and the next step drops it. One law with its 5 declarations added. Bound to core receipt 20261017T071851.986246Z; study section 166. Claim and status unchanged.
 - 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](worlds-are-runs.json).
 
 <a id="earlier-text--早期文本"></a>

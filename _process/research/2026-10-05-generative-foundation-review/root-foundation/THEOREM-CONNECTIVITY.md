@@ -132,3 +132,26 @@ The extended-base and "before" columns are not written to the JSON: the script's
 - The families still do not reach each other by definition.
 - There are 65 components, with 11 theorems outside the main one.
 - Two records still rest only on apart theorems: `selection-through-a-model-of-the-options` and `typicality-by-counting`.
+
+<a id="8-u-every-spine-theorem-on-the-base"></a>
+## 8. U: every spine theorem on the base
+
+17 October 2026. The integrator's run on the landing tree of board item U (44 join modules; core receipt 20261017T071851.986246Z, 181 spine modules). The [JSON](THEOREM-CONNECTIVITY.json) holds this run. Two changes to the script: record matching now reads the declarations and witnesses of a record's laws, limits and counterexamples as well as its aliases (209 records name spine theorems, against 186 by aliases alone); and the script now reports the roots among the apart theorems with their categories from [THEOREM-CONNECTIVITY-APART.json](THEOREM-CONNECTIVITY-APART.json), and `--check` fails where an apart root has no entry or an entry is no longer an apart root.
+
+| Class | Before U (7b1e7450b) | After U |
+|---|---:|---:|
+| Statement on both families | 145 | 152 |
+| Statement on Process/Frame/Run/Trace | 1,324 | 1,658 |
+| Statement on World/Flow/Web | 2,711 | 2,807 |
+| Proof through a family | 127 | 127 |
+| Used by a theorem on the base | 1,888 | 2,759 |
+| Apart: own vocabulary | 929 | 187 |
+| Apart: prelude-only statement | 90 | 8 |
+| Apart, total** | **1,019** | **195** |
+| Theorems** | **7,214** | **7,698** |
+
+- **Roots.** 486 apart roots before, 134 after, every one classified: model witness 40, support 36, bridge interface 22, restates 17, logical strength 13, general structure 6.
+- **Records.** None rests only on apart theorems (two before).
+- **Components.** 60, with 2 theorems outside the main one (65 and 11 before).
+- **The families** still do not reach each other by definition; they meet by exact correspondence.
+- Study: [section 166](BECOMING-RENEWAL-READING.md#166-every-spine-theorem-on-the-base-u); how the joins were made: [development/u-unification](development/u-unification/README.md).

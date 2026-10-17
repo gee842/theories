@@ -87,6 +87,16 @@
         "Becoming.Branching.law_run_state",
         "Becoming.Contextual.world"
       ]
+    },
+    {
+      "en": "One course, one kind or two roles: a law of exchange over one kind of relatum generates one course read as a world over its relata and as a world of formations and conditions as roles of one relatum; the two stand at the same levels and exchange alike, balance together under a law of what has stood, and, where the course is feasible, give one run of exchange.",
+      "declarations": [
+        "Becoming.CourseRoles.level_eq",
+        "Becoming.CourseRoles.take_eq",
+        "Becoming.CourseRoles.give_eq",
+        "Becoming.CourseRoles.balanced_iff",
+        "Becoming.CourseRoles.runs_agree"
+      ]
     }
   ],
   "hypotheses": [
@@ -115,10 +125,10 @@
       "witness": "Becoming.World.balanced_iff_run"
     },
     {
-      "zh": "一类关系项的进程世界与两种角色的进程世界怎样相关：没有定理连接二者。",
-      "en": "How the course world of one kind of relatum and the course world of two roles relate: no theorem joins them.",
+      "zh": "一类关系项的进程世界与两种角色的进程世界有何不同：没有不同；二者位于同一水平、交换相同、一同平衡、给出同一个交换的运行（Becoming.CourseRoles），两种角色的世界中形成与条件是同一关系项的角色。",
+      "en": "How the course world of one kind of relatum and the course world of two roles differ: they do not; they stand at the same levels, exchange alike, balance together and give one run of exchange (Becoming.CourseRoles), with the two-role world's formations and conditions as roles of one relatum.",
       "kind": "scope",
-      "witness": "Becoming.ExchangeLaw.world"
+      "witness": "Becoming.CourseRoles.balanced_iff"
     },
     {
       "zh": "对应超出展开定义：世界与运行的多数对应定理由 rfl 或 Iff.rfl 成立；所检查的内容在平衡与运行存在的等价、路线世界与生成的运行、携带世界的平衡。",
@@ -146,8 +156,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261016T124157.989030Z): the 35 declarations of Becoming.Runs, 21 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 165; not independently reviewed."
   },
   "next_delta": {
-    "zh": "连接一类关系项之进程世界与两种角色之进程世界的定理；使同一化成为定义（会改已有陈述）；独立审查；对读法与定义上的根的论证判断。",
-    "en": "A theorem joining the course world of one kind of relatum to that of two roles; making the identification definitional, which would change existing statements; an independent review; an argued judgment on the readings and on a definitional root."
+    "zh": "使同一化成为定义（会改已有陈述）；独立审查；对读法与定义上的根的论证判断。",
+    "en": "Making the identification definitional, which would change existing statements; an independent review; an argued judgment on the readings and on a definitional root."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12：“let's go back to main track, yes, i do agree with your reading, there are no two realities”。本结果回答发布准备度复核的整合所见：脊柱有两个根（Process 与 World），以对应定理相连，前沿陈述在耦合阵列上。读法（AI 的，待 Ren）：根是运行，因为其他每个读法都是运行；运行是逐步读的展开，每步是什么、怎样继续，世界是同一展开读作同类关系项的交换；同一化恰好，所以二者是一个展开的一个读法，不是两物相连，运行也不是世界之下的根基。世界对其运行无所增加；交换之律所加的，是平衡所说的位与交换的关系，作为运行之步的律。",
@@ -465,6 +475,24 @@
       "role": "receipt",
       "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseRoles.lean",
+      "role": "proof",
+      "sha256": "31074828164f928f3b73125bc48b5fa4515abbf05858210495eae780fc53ad6f",
+      "declarations": [
+        "Becoming.CourseRoles.level_eq",
+        "Becoming.CourseRoles.take_eq",
+        "Becoming.CourseRoles.give_eq",
+        "Becoming.CourseRoles.balanced_iff",
+        "Becoming.CourseRoles.runs_agree"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "role": "receipt",
+      "sha256": "b03dcb1751889412dc2f7bd1ec6310e9e226475f42af629c6001bb15f8859879",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -537,6 +565,13 @@
       "sha256_pointer": "/source_sha256/Becoming.Branching",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseRoles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.CourseRoles",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "history": [
@@ -553,6 +588,9 @@
     },
     {
       "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U (every spine theorem on the base): an application, not a new result. Becoming.CourseRoles joins the course world of one kind of relatum to that of two roles, which this record named as open; the scope item is answered and the next step drops it. One law with its 5 declarations added. Bound to core receipt 20261017T071851.986246Z; study section 166. Claim and status unchanged."
     }
   ],
   "text_versions": [

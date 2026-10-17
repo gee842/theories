@@ -47,7 +47,12 @@
     "capture",
     "捕获",
     "selection of minds",
-    "winner rewrites the test"
+    "winner rewrites the test",
+    "Becoming.CaptureWorlds.unsupported_leave_none",
+    "Becoming.CaptureWorlds.share_rises_of_unsupported",
+    "Becoming.CaptureWorlds.share_not_lower_of_unsupported",
+    "Becoming.SeekingRuns.captured_state_returns",
+    "Becoming.SeekingRuns.captured_rule_changes"
   ],
   "dependencies": [
     {
@@ -272,6 +277,31 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CaptureWorlds.lean",
+      "role": "proof",
+      "sha256": "15702ed25331913bcd844d1cbacff9a43aa9c836bc45f48eba4cf9f2d4844bec",
+      "declarations": [
+        "Becoming.CaptureWorlds.unsupported_leave_none",
+        "Becoming.CaptureWorlds.share_rises_of_unsupported",
+        "Becoming.CaptureWorlds.share_not_lower_of_unsupported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeekingRuns.lean",
+      "role": "proof",
+      "sha256": "07a49202148a9a4468f99c6354609009980ef684493de3307125f58ee8cca067",
+      "declarations": [
+        "Becoming.SeekingRuns.captured_state_returns",
+        "Becoming.SeekingRuns.captured_rule_changes"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "role": "receipt",
+      "sha256": "b03dcb1751889412dc2f7bd1ec6310e9e226475f42af629c6001bb15f8859879",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -314,6 +344,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CaptureWorlds.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.CaptureWorlds",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeekingRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SeekingRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -498,6 +542,9 @@
     },
     {
       "en": "17 October 2026, short title for the README: the title becomes a name, “The capture of a target, and why perturbing the state alone is re-absorbed”, and a statement is added under it, written from the claim (both kinds present, the census condition and the dependence on the rule alone stated). The former title, kept here, was “The capture of a target: a target's share rises where its carriers leave more offspring; running down stops the selection; where the next configuration depends on the rule, perturbing the state alone is re-absorbed” (zh: “目标的捕获：带着目标的亲代留下更多后代时目标的份额上升；所立者衰减不断则选择停止；下一配置取决于规则时只扰动状态被重新吸收”). The claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U (every spine theorem on the base): an application, not a new result. Becoming.CaptureWorlds joins the share law to selection through support in a world: where only active formations give and activity needs support, others unsupported at a step leave no descendant, and the carriers' share among descendants does not fall, and rises where each carrier leaves one; Becoming.SeekingRuns states the captured rule on its runs (a perturbed state returns, a perturbed rule changes the run). Bound to core receipt 20261017T071851.986246Z; study section 166. Claim and status unchanged."
     }
   ]
 }

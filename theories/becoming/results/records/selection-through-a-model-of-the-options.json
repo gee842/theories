@@ -105,6 +105,24 @@
         "Becoming.SelectionRelabelCorrespondence.pointMass_one",
         "Becoming.SelectionRelabelCorrespondence.point_mass_not_alike_at_tie_by_core"
       ]
+    },
+    {
+      "en": "Along a run: with the moments of a run as the options and the run's registered course as the selector's model, every selection, valuation and choice through the course treats alike the moments it registers alike and separates exactly what it registers apart; where the course registers one value throughout nothing is singled out; a selection or valuation through the course is right about a target exactly where the target goes alike across the registration, and not where the course parts moments the target tells apart.",
+      "declarations": [
+        "Becoming.SelectionRuns.selected_alike_iff",
+        "Becoming.SelectionRuns.valued_alike_iff",
+        "Becoming.SelectionRuns.singled_iff_untied",
+        "Becoming.SelectionRuns.choice_untied",
+        "Becoming.SelectionRuns.choice_withholds_of_constant",
+        "Becoming.SelectionRuns.values_alike_of_constant",
+        "Becoming.SelectionRuns.value_level_alike",
+        "Becoming.SelectionRuns.selects_through_registration",
+        "Becoming.SelectionRuns.values_lumped",
+        "Becoming.SelectionRuns.selects_not_right_of_parted",
+        "Becoming.SelectionRuns.selects_right_of_reads",
+        "Becoming.SelectionRuns.values_not_right_of_parted",
+        "Becoming.SelectionRuns.values_right_of_reads"
+      ]
     }
   ],
   "hypotheses": [
@@ -315,7 +333,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
+      "sha256": "41afc878298b38e0044a53a40bc8ca9fb3b887e414f6e2b072fd0cd26e9f98d4"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -341,6 +359,32 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionRuns.lean",
+      "role": "proof",
+      "sha256": "cb0196e93527247503b227ef1fc156e18a59b27791baa105a1fcb78f559c6a82",
+      "declarations": [
+        "Becoming.SelectionRuns.selected_alike_iff",
+        "Becoming.SelectionRuns.valued_alike_iff",
+        "Becoming.SelectionRuns.singled_iff_untied",
+        "Becoming.SelectionRuns.choice_untied",
+        "Becoming.SelectionRuns.choice_withholds_of_constant",
+        "Becoming.SelectionRuns.values_alike_of_constant",
+        "Becoming.SelectionRuns.value_level_alike",
+        "Becoming.SelectionRuns.selects_through_registration",
+        "Becoming.SelectionRuns.values_lumped",
+        "Becoming.SelectionRuns.selects_not_right_of_parted",
+        "Becoming.SelectionRuns.selects_right_of_reads",
+        "Becoming.SelectionRuns.values_not_right_of_parted",
+        "Becoming.SelectionRuns.values_right_of_reads"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "role": "receipt",
+      "sha256": "b03dcb1751889412dc2f7bd1ec6310e9e226475f42af629c6001bb15f8859879",
       "declarations": []
     }
   ],
@@ -377,6 +421,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/TieBreaking.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/selection-relabel-correspondence-checks/20261015T203012.189070Z/verification.json",
       "sha256_pointer": "/source_sha256/TieBreaking",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SelectionRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -464,6 +515,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U (every spine theorem on the base): an application, not a new result. Becoming.SelectionRuns states this record's laws along runs, the options read as the moments of a run and the model as its registered course (Parting.course); the record no longer rests only on theorems apart from the base. One law with its 13 declarations added. Bound to core receipt 20261017T071851.986246Z; study section 166. Claim and status unchanged. The chapter's section 8 rows on worlds as runs and on integration of the spine and its section 9 receipt were rewritten for U in the same change; re-pointed."
     }
   ],
   "text_versions": []

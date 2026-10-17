@@ -44,7 +44,15 @@
     "够",
     "enough",
     "seeking",
-    "寻求"
+    "寻求",
+    "Becoming.SeekingRuns.more_not_at_rest",
+    "Becoming.SeekingRuns.more_needs_open",
+    "Becoming.SeekingRuns.more_new",
+    "Becoming.SeekingRuns.rests_iff",
+    "Becoming.SeekingRuns.more_never_rests",
+    "Becoming.SeekingRuns.aboveAll_never_rests",
+    "Becoming.SeekingRuns.aboveAll_not_two",
+    "Becoming.SeekingRuns.succ_more"
   ],
   "dependencies": [
     {
@@ -246,6 +254,27 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeekingRuns.lean",
+      "role": "proof",
+      "sha256": "07a49202148a9a4468f99c6354609009980ef684493de3307125f58ee8cca067",
+      "declarations": [
+        "Becoming.SeekingRuns.more_not_at_rest",
+        "Becoming.SeekingRuns.more_needs_open",
+        "Becoming.SeekingRuns.more_new",
+        "Becoming.SeekingRuns.rests_iff",
+        "Becoming.SeekingRuns.more_never_rests",
+        "Becoming.SeekingRuns.aboveAll_never_rests",
+        "Becoming.SeekingRuns.aboveAll_not_two",
+        "Becoming.SeekingRuns.succ_more"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "role": "receipt",
+      "sha256": "b03dcb1751889412dc2f7bd1ec6310e9e226475f42af629c6001bb15f8859879",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -267,6 +296,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeekingRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SeekingRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -443,6 +479,9 @@
     },
     {
       "en": "17 October 2026, short title for the README: the title becomes a name, “Where seeking rests: more than now never does, above all others never for two”, and a statement is added under it, written from the claim (the census condition on the last part stated). The former title, kept here, was “Seeking rests exactly at a state the law leaves unchanged that meets its target: more than now needs an open world and above all others never holds of two; rising without end needs steps that do not run down, and running down stops it” (zh: “寻求恰在律所不变、满足其目标的状态静止：“比现在更多”需要开放的世界，“高于一切他者”不同时满足两个；不断上升需要不衰减的步，衰减不断则上升停止”). The claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U (every spine theorem on the base): an application, not a new result. Becoming.SeekingRuns states this record's laws of runs: along a run of any process more than now is met only by change and, met at every step, passes through configurations no list holds; a run of a determined law rests with its target met exactly where it reaches a configuration the law leaves unchanged that meets it; no resting step meets more than now, and no unchanged configuration has two seekers each above all others. Bound to core receipt 20261017T071851.986246Z; study section 166. Claim and status unchanged."
     }
   ]
 }

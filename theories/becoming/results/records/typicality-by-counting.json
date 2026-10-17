@@ -77,6 +77,21 @@
         "Becoming.Typicality.concentrated",
         "Becoming.Typicality.few_far_ahead"
       ]
+    },
+    {
+      "en": "On runs: the courses of n steps are exactly the records the runs of free branching on two values show over their first n steps, each once, so every count over courses is a count over records of runs, whatever repetition-free list holds them; the counts, weights, spread, typicality and concentration of this record hold of those records.",
+      "declarations": [
+        "Becoming.TypicalRuns.mem_courses_iff",
+        "Becoming.TypicalRuns.courses_records",
+        "Becoming.TypicalRuns.total_listing",
+        "Becoming.TypicalRuns.records_count",
+        "Becoming.TypicalRuns.records_weight",
+        "Becoming.TypicalRuns.histories_records",
+        "Becoming.TypicalRuns.records_spread",
+        "Becoming.TypicalRuns.records_typical",
+        "Becoming.TypicalRuns.records_concentrated",
+        "Becoming.TypicalRuns.records_few_far_ahead"
+      ]
     }
   ],
   "hypotheses": [
@@ -393,7 +408,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311",
+      "sha256": "41afc878298b38e0044a53a40bc8ca9fb3b887e414f6e2b072fd0cd26e9f98d4",
       "declarations": []
     },
     {
@@ -435,6 +450,29 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TypicalRuns.lean",
+      "role": "proof",
+      "sha256": "8b101d023238a14184df9642610558d912c5f1fe739e75b59d60da5dc754b551",
+      "declarations": [
+        "Becoming.TypicalRuns.mem_courses_iff",
+        "Becoming.TypicalRuns.courses_records",
+        "Becoming.TypicalRuns.total_listing",
+        "Becoming.TypicalRuns.records_count",
+        "Becoming.TypicalRuns.records_weight",
+        "Becoming.TypicalRuns.histories_records",
+        "Becoming.TypicalRuns.records_spread",
+        "Becoming.TypicalRuns.records_typical",
+        "Becoming.TypicalRuns.records_concentrated",
+        "Becoming.TypicalRuns.records_few_far_ahead"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "role": "receipt",
+      "sha256": "b03dcb1751889412dc2f7bd1ec6310e9e226475f42af629c6001bb15f8859879",
       "declarations": []
     }
   ],
@@ -485,6 +523,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Parting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TypicalRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.TypicalRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -544,6 +589,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, U (every spine theorem on the base): an application, not a new result. Becoming.TypicalRuns reads the courses as the records of runs of free branching and states the counts of this record of them; the record no longer rests only on theorems apart from the base. One law with its 10 declarations added. Bound to core receipt 20261017T071851.986246Z; study section 166. Claim and status unchanged. The chapter's section 8 rows on worlds as runs and on integration of the spine and its section 9 receipt were rewritten for U in the same change; re-pointed."
     }
   ],
   "text_versions": []
