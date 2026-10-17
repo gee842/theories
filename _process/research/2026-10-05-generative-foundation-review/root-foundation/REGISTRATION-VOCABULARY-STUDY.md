@@ -1,0 +1,123 @@
+# Naming study: "registration" and the learning vocabulary
+
+17 October 2026. AI-authored study, no renames. It answers Ren's observation that "registration is a dualist word, and this nudged the whole vocabulary into a very western way", and his go to "decompose registration and the learning vocabulary into structural relations, propose en/zh candidates, test them against the theorems, no renames yet" ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md)). The quoted words are provenance; the analysis and every proposal below are the AI's.
+
+Scope: no Lean, no result ID, no record, chapter or module text changed. Lean is cited at main `f36a93aaa` (canonical files under `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/`). Counts are over those canonical files and over `theories/becoming/results/records/*.json`, excluding check receipts.
+
+## 1. Diagnosis
+
+"Register" names a relation by one side's act of writing down the other: an instrument, a ledger or an office records an object already standing outside it. Taken as the primitive of knowing, it presupposes the two separate relata the [one relational unfolding](../../../../AGENTS.md#begin-with-one-relational-unfolding) is meant to differentiate rather than assume, and its everyday senses (a registry, enrolment with an authority) are the social words the [10 October naming rules](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md) put last. The terms that grew around it complete the frame: *learner*, *target*, *hypothesis*, *claim*, *refutation*, *identification in the limit*, *belief*, *a learner given the world*, *options*. This is the Gold–Popper line and decision theory: a knower facing an external world that answers it.
+
+The Lean is less dualist than its words. Every use resolves into a few relations that are already in the core's vocabulary: a map out of the configuration and the lumping it induces, a directed coupling of a level into a formation (by threshold or by level), the classes of histories that go alike through those couplings, and the prefix of a course. The study's claim is narrow: **the theorems state relations within one unfolding; the words add an observer the statements do not contain.** Where a word says more than its Lean (for example `Belief`, a set of histories, or "a learner given the world", which omits the start configuration it is built from), that is an exactness failure as well as a framing one.
+
+Scale: `regist…` occurs about 2,090 times in 64 core and periphery modules; 识 occurs in 180 of 229 records, 学习者 in 95, 否证 in 115, 目标 in 150.
+
+## 2. What "registration" names in the Lean: seven senses
+
+| Sense | Lean | What the definition is |
+|---|---|---|
+| S1. A map out of the configuration | `Law.registered next o` (Unfolding: the frame whose claims are `o s = r`); `reg` in `Learnable`, `Parting`, `Identification`; "registered course" `Learnable.course next reg s n = reg (orbit next s n)` | a function `S → R`; the theorems use only the partition it induces, i.e. the lumping `Learning.Lumped` already names |
+| S2. What couples into a formation | `Web.Registers obs g c := W.DependsOn g c ∨ obs g c` (Testing); `RegistersAt` (TimedResponse: `requires s g c ∨ obs g c`) | a directed coupling of condition `c` into formation `g`, of two grains: by threshold (`DependsOn`: only whether the need is met passes) and by level (`obs`: the level passes) |
+| S3. Histories alike through those couplings | `Web.RegistersAlike`, `RegistersAlikeUpTo`, `RegistersAlikeAll` | two level histories leave `g`'s support met alike (`Admits`) and its level-coupled conditions equal, at a step or up to it |
+| S4. The closure of S2 under exchange | `Flow.RegisteredFrom`, `Flow.WithinRegistration` | `h` exchanges with a condition coupled into `g`; the closure of that relation |
+| S5. The class of histories alike with the actual one | `Web.Belief`, and `Web.Refutes` / `RefutesWithin` (no history meeting a claim is alike up to `t`) | an equivalence class and its disjointness from a claim |
+| S6. A relation respecting claims | `Likeness.Registers claims E` | `E`-related descriptions realize the same claims: a congruence, unrelated to S2 (the docstrings note the clash) |
+| S7. Local senses | `Keeping.registers` / `registered` / `blind` (the value a step keeps); `Description.Negation.register` (the negation's course); `Revision.registration` (the link-and-response process); `ReferencePlan.registered` (alike on installed addresses); `Response.RespondsThroughRegistration` (the rest responds alike where alike through its couplings) | each a specific map, process or premise |
+
+One English word thus covers a map, a coupling, an equivalence of histories, a closure, a congruence and several local constructions; S2 and S6 share a Lean name with unrelated meanings. That is a reason for renaming independent of the framing.
+
+## 3. Decomposition into structural relations
+
+1. **Map and lumping (S1).** A map `π : S → K` lumps the configurations it sends alike. "What is registered" is the value of the map; "the registered future" is the course through the map. Nothing in S1 is a recorder: the map is one relation of the configuration to a coarser one.
+2. **Directed coupling (S2).** A condition couples into a formation when the formation's course depends on it. The grain matters and must be kept: by threshold only one difference passes (need met or not, `Web.alike_of_threshold`), by level every difference of the level passes (`Web.observed_level_registers`). Coupling is directed: `c` into `g`, not `g` into `c`.
+3. **Alike through the couplings (S3, S5).** Histories go alike through `g`'s couplings when nothing that couples into `g` differs between them. The "belief" is the class of histories alike with the actual one; "refuted" is "excluded by that class".
+4. **Coupling closure (S4).** The closure under "exchanges with a condition coupled into". It contains the influence closure of `Becoming.Feedback` and equals it where coupling is by threshold only (`Flow.withinRegistration_supportOnly`).
+5. **Factoring through (selection).** A selection, score or response through `g`'s registration is one that factors through the classes of item 3 (`Learning.Through`: alike items are selected alike).
+6. **Learning (the `Learning`, `Learnable`, `Identification`, `Parting` family).** A *prefix* of a course (`Learning.record o t`, the values before `t`, latest first); an *extrapolation* (`pred : List O → Option O`, a map from prefixes to a proposed value or silence); a *miss* (`Refuted`: a proposed value differs from the value that comes); *accord* (`Holds`: misses at no step); a *feature* of the configuration (`val : S → V`, the "target"); *rest in accord* (`Rests`: proposing the feature's value at every step from some step on); a list of *candidate* extrapolations (`H`, the "hypotheses") and the extrapolation that moves to the next candidate at each miss (`learner H`, "the learner by refutation"); and extrapolations *built from* the process, its listed moves and configurations and the start (`Parting.worldLearner`) or from the law, map, feature and list of configurations (`Learnable.withWorld`), "the learner given the world".
+
+Read this way, the learning theorems say how far a part of the unfolding can come into accord with a feature of it through what couples into it. No separate knower or external world enters any statement.
+
+## 4. Candidates
+
+Tests applied to each candidate:
+
+- **T1 exact:** the theorems restated with it mean exactly their Lean statements (section 5).
+- **T2 relational:** it names a relation in the unfolding and presupposes no separate subject, external world, authority or chooser.
+- **T3 no clash:** it does not already mean something else in the core (checked by search of the canonical files).
+- **T4 grain kept:** it keeps direction, threshold versus level, and loss.
+- **T5 parity:** English and Chinese say the same.
+
+| Current | Candidate (en) | Candidate (zh) | T1–T5 notes |
+|---|---|---|---|
+| registration (S1, a map) | the map; its **lumping** | 映射；**归并** | T3: `Lumped`, `Lumping` already mean this. T5: 归并 is in use (16 records). |
+| registered course / future | the course **through the map**; same future through the map | 经映射的历程；经映射未来相同 | T1 passes for `learnable_iff` and `world_right_iff`. |
+| `Law.registered` | the law **framed by a map** (`Law.frameBy`) | 律经映射之框 | T1: the definition is a frame whose claims are the map's values. |
+| registers (S2) | **couples into** (condition into formation), **by threshold** / **by level** | **耦合入**；经阈 / 经水平 | T3: `Loops.Couples` (a level of `d` coupled into `c` with positive strength) is the same concept at the grain of conditions. "Coupling" also matches `Observation.readCouplings`. Adoption needs the check in section 6.2. T4: say "into" every time, since coupling is directed. |
+| `obs` / observes; `supportOnly` | coupled **by level**; coupling **by threshold only** | 经水平耦合；仅经阈耦合 | T2: removes the observer. T4: keeps the two grains. |
+| registers alike (S3) | **alike through `g`'s couplings** (`AlikeThrough`) | 经 g 之耦合无别 | T3: `AlikeTo` is taken; `AlikeThrough` is free. |
+| registration closure (S4) | **coupling closure** (`WithinCoupling`, `CoupledFrom`) | 耦合闭包 | T3: "reach" is taken by `Frame.Reach` (reachability), so it is avoided. |
+| belief (S5) | **the class alike through `g`** (`ClassThrough`) | 经 g 无别之类 | T1: `Belief` names a mental state the Lean (a set of histories) does not contain. |
+| refutes (web) | **excludes** (`Excludes`, `ExcludesWithin`) | **排除** | T1 passes for `Refutes.not_of_alike`, `belief_refutes_iff` and `tail_unrefuted`. |
+| `Likeness.Registers` (S6) | **respects the claims** (`RespectsClaims`) | 保持断言 | T1: it is a congruence. T3: removes the S2 clash. |
+| local senses (S7) | `keeps`, `keepsBit`, `keepsNothing`; `negationCourse`; `linkProcess`; `alikeOnInstalled`; `RespondsThroughCoupling` | 存；否定之历程；联结过程；装入处无别；经耦合而应 | Each named after its definition. |
+| record (`Learning.record`) | **prefix** | **前段** | T3: `Feedback.prefix_does_not_decide` already uses "prefix" in this sense. "Record" remains for the entropy sense (history kept in the conserved amount), which ends an overload. "Trace" is taken (`Frame.Trace`, admissible paths). |
+| learner / claim (`pred`) | **extrapolation**; it **proposes** a value or **stays silent** | **外推**；提出 / 默 | T2: a map, not an agent. "Continuation rule" is avoided because it clashes with the continuation condition. "Silent" already appears ("the bound buys silence"). |
+| refuted (`Refuted`, `RefutedAt`) | **misses** | **不合** | T1 passes. |
+| holds (`Learning.Holds`) | **accords** (misses at no step) | **相合** | T3: 相合 appears in 6 records in a compatible sense. |
+| target (`val`) | **feature** (of the configuration) | **特征** | T2: no aim implied. |
+| rests (on the target) | rests **in accord** with the feature from a step on | 从某步起与特征相合（静） | Keeps the rest-step vocabulary (2N − 1). |
+| hypotheses `H`; learner by refutation | **candidates**; extrapolation **by elimination** | 候选；**逐除外推** | T1 passes for `index_le_of_holds` and `refutations_not_recurring`. |
+| learner given the world | extrapolation **built from the process** (moves, configurations, start); **built from the law** (map, feature, configurations) | 依过程所建之外推；依律所建之外推 | T1: the current wording omits the start configuration and the listing that the construction uses. |
+| identification (Gold sense) | **fixing**: a bounded prefix fixes the course | **定** | T3: "fixes" is already used (`Experiment.Fixes`, the records' statements). `IdentifiesAlike` (equating) is structural and stays. |
+| learnable | kept, defined as: some extrapolation from prefixes through the map rests in accord with the feature from every configuration | 可学（学得） | 学 is a process word, not an agent. Only the noun "learner" is dropped. |
+| options; model of the options | alternatives; a map of the alternatives; selection **factors through** it | 备择；备择之映射；经之分解 | T3: `Experiment.FactorsThrough` and `Learning.Through` have this sense. The title Ren approved on 16 October is provenance; the change is offered, not required. |
+| 识 | not the structural primitive (see section 6.3) | — | — |
+
+## 5. The theorems restated
+
+Each row restates a theorem in the candidate words and checks it against its Lean statement (T1).
+
+| Theorem | Current wording | Restated | Verdict |
+|---|---|---|---|
+| `Learning.no_record_fixes_next` | no record fixes what comes next; a claim from the record is not right on both | **no prefix fixes the next value**: for two values, two courses share the prefix before `t` and take one and the other at `t`; a value proposed from the prefix misses on one of them | exact |
+| `Learning.diagonal_refutes` | "Every claim is answered": on the diagonal course every claim is refuted | on the diagonal course every proposed value misses at its step | exact; "answered" adds a dialogue the Lean lacks |
+| `Learning.index_le_of_holds`, `refutations_not_recurring` | the learner by refutation never passes a hypothesis that holds; refutations do not recur | the extrapolation by elimination never passes a candidate that accords; its misses do not recur at arbitrarily late steps | exact |
+| `Identification.leastBound_exact` | the learner by the least bound is right from 2N − 1 on | the extrapolation by the least bound proposes the next value at every step from N + N − 1 on, wherever every moment is one of the states of the first N moments (at most N states) | exact |
+| `Learnable.learnable_iff` | some learner rests on the target exactly where configurations with the same registered future have targets agreeing from some step on (the learner of the second direction is given the world and the target) | some extrapolation from prefixes through the map rests in accord with the feature from every configuration of a listed world exactly where configurations with the same future through the map have features agreeing from some step on; the second direction's extrapolation is built from the law, the map, the feature and the list | exact |
+| `Learnable.still_learnable_iff_lumped` | under a still law, what can be learned through a registration is exactly what goes alike across it | under a law that changes nothing, a feature can be come into accord with through a map exactly where it goes alike across the map's lumping | exact |
+| `Learning.goAlike_iff_lumped` | structure and change are one lumping | unchanged; already structural | — |
+| `Parting.world_right_iff` | a learner given the world is right at a step on every run exactly where no two runs part there | the extrapolation built from the process, its listed moves and configurations and the start proposes, at step `t`, the value through the map on every run from the start exactly where no two such runs part at `t` | exact; the current wording omits the start and the listing |
+| `Learning.web_selectsThrough_iff` | selection through a formation's registration is selection through registering alike | a selection through `g`'s couplings is one that factors through the classes of histories alike through them | exact (`Iff.rfl`) |
+| `Web.alike_of_threshold` | a condition depended on and not observed registers only whether it meets the need | a condition coupled into `g` by threshold only passes whether its need is met: meeting it under both histories or neither, they go alike through `g`'s couplings, whatever the levels | exact |
+| `Web.observed_level_registers` | any difference in an observed condition is registered | any difference in the level of a condition coupled into `g` by level makes the histories not alike through `g`'s couplings | exact |
+| `Web.Refutes.not_of_alike` | a claim is refuted only through a difference in what registers | a claim is excluded at `g` only through a difference that couples into `g`: where a history meeting it is alike through `g`'s couplings up to `t`, it is not excluded there | exact |
+| `Web.tail_unrefuted` | without a model, a finite record leaves what follows open | no history up to `t` excludes, at any formation under any coupling, either the claim that a condition comes to nothing or the claim that it stays above nothing after `t` | exact |
+| `Web.belief_refutes_iff` | refutation is a claim disjoint from the belief | a claim is excluded at `g` exactly where it is disjoint from the class alike through `g` | exact; "belief" fails T1 |
+| `Flow.withinRegistration_supportOnly` | registering support only, the registration closure is the influence closure | where coupling is by threshold only, the coupling closure is the influence closure | exact |
+
+All fifteen restatements mean exactly their Lean statements. In three cases (`diagonal_refutes`, `world_right_iff`, `belief_refutes_iff`) the current wording says more or less than the Lean, so the candidates are more exact than the words they replace.
+
+## 6. Findings, counter-review and what stays open
+
+### 6.1 What the candidates gain and lose
+
+- **Gain.** The learning laws read as relations of one unfolding: how far a part comes into accord with a feature through what couples into it. This fits the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and the `Becoming.Unfolding` start. One word per relation ends the S2/S6 overload and the two senses of "record", and the learning line joins vocabulary the core already has (lumping, coupling, factors through, fixes, prefix).
+- **Loss to watch.** The standard literature (Gold's identification in the limit, Popper's falsifiability, PAC learning) is found under the old words. Those names belong in the records' correspondence and standard-boundary fields as the literature's terms, not in core names. "Extrapolation" can suggest numerical or linear extension; it is used here in its general sense, proposing how a sequence goes on. "Coupling" invites a symmetric reading; "into" must stay.
+
+### 6.2 A check before "coupling" is adopted for S2
+
+`Web.Registers` takes `obs` as a supplied relation. `Loops.Couples` derives coupling from an exchange law's strengths, and `Observation` (P125) reads observation as a route of readings. Using one word for both is exact only if the level branch of S2 is shown to be, or to be read as, a coupling in the `Observation`/`Loops` sense. That is an instance theorem, i.e. new Lean, and needs a board claim. Until it exists, "coupled by level" is a reading of `obs`, labelled as such.
+
+### 6.3 On 识
+
+Ren chose 识 for "registers" on [11 October](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md). It is closer to dependent differentiation than the English word. It is also the 分别 the 无明 line (`Becoming.Seeking`, `Becoming.Capture`) diagnoses, so as the name of a map or a coupling it says too much at the primitive level. Proposal: the primitives take the structural words above (归并, 耦合入, 无别, 排除, 前段, 外推, 不合, 相合). 识 is kept, as a reading, for the derived structure where a formation's own further course factors through the lumping its couplings induce (selection, response or seeking through its own couplings). That is the place where differentiation by a part shapes that part's course. The reading is the AI's and is for Ren to take or revise.
+
+### 6.4 Adjacent words with the same problem (not decomposed here)
+
+`Admits` (levels "admit" a formation; board rule 8 already lists it as dualist; candidate "the levels meet `f`'s needs", 所需得足). "Model" for a class of admissible histories (`RefutesWithin`; a scientific word, lower priority). `Reads` / `Reading` / `Readout` and "observation is a route of readings" (`ReadsInto` is a dependence; "reads" keeps a reader, but more mildly). "Options" outside `Selection`.
+
+### 6.5 What a migration would take (not started)
+
+1. Ren's or the integrator's decision on the candidates, including 6.3.
+2. Prose first: docstrings, record statements in both languages, the chapter and glossary, with an alias table of old to new names. The retired words are explained once in the glossary, as for G0 and Part I/II.
+3. Lean renames, statements and proofs unchanged, with the old names kept as aliases for one cycle. They land through the queue after the instance check of 6.2, with every record citing a renamed declaration rebound and given a history note. About 64 modules, 180 records and the chapter are affected. This is a claim for the board, and it must not run alongside another session's renames of the same files.
