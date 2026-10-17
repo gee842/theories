@@ -2,8 +2,8 @@
   "schema_version": 2,
   "id": "wisdom-root-part-one",
   "title": {
-    "zh": "智慧之根在第一部分",
-    "en": "The root of wisdom in Part I"
+    "zh": "智慧之根在无公理的理论中",
+    "en": "The root of wisdom in the theory without axiom"
   },
   "kind": "argument",
   "status": "reviewed-scoped",
@@ -14,8 +14,8 @@
     "en": "The checked laws of registration, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level, and the routes of formation hold of every learner and representation keeping the same content, axiom-free in the core: the formal support of wisdom-root."
   },
   "claim": {
-    "en": "Each law below is stated for every formation, learner, lumping, selection or determined law, with no axiom in the core (the periphery learning-bridge theorems use only Lean's standard axioms) and its conditions written into its theorem, so no representation keeping the same content escapes it. Together with the formal routes of formation, these laws are the formal support for wisdom-root (the universal laws and routes of formation within Part I's scope).",
-    "zh": "下列每条规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，核心中不用公理（外围学习桥接的定理只用 Lean 的标准公理），其条件写在定理中，所以保留相同内容的任何表示都避不开它。连同形成的形式路线，它们是目标 wisdom-root 的形式支撑（第一部分所及的普遍规律与形成路线）。"
+    "en": "Each law below is stated for every formation, learner, lumping, selection or determined law, with no axiom in the core (the periphery learning-bridge theorems use only Lean's standard axioms) and its conditions written into its theorem, so no representation keeping the same content escapes it. Together with the formal routes of formation, these laws are the formal support for wisdom-root (the universal laws and routes of formation within the scope of the theory without axiom).",
+    "zh": "下列每条规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，核心中不用公理（外围学习桥接的定理只用 Lean 的标准公理），其条件写在定理中，所以保留相同内容的任何表示都避不开它。连同形成的形式路线，它们是目标 wisdom-root 的形式支撑（无公理的理论所及的普遍规律与形成路线）。"
   },
   "laws": [
     {
@@ -28,8 +28,8 @@
       ]
     },
     {
-      "en": "理 (Ren's reading: the modeling of the laws of structure and change): data alone fix no untried value; generalization reaches exactly what a lumping lumps and is right exactly where the world goes alike across it; structure and change are one lumping; a projection carries a law exactly where configurations alike go alike.",
-      "zh": "理（Ren 的读法：对结构与变化之规律的建模）：数据单独不固定任何未试之值，推广恰在归并之处、正确恰在世界经归并同去之处，结构与变化是同一个归并，投影恰在相同者同去时承载规律。",
+      "en": "理 (a reading: the modeling of the laws of structure and change): data alone fix no untried value; generalization reaches exactly what a lumping lumps and is right exactly where the world goes alike across it; structure and change are one lumping; a projection carries a law exactly where configurations alike go alike.",
+      "zh": "理（一种读法：对结构与变化之规律的建模）：数据单独不固定任何未试之值，推广恰在归并之处、正确恰在世界经归并同去之处，结构与变化是同一个归并，投影恰在相同者同去时承载规律。",
       "declarations": [
         "Becoming.Learning.every_determines_nothing",
         "Becoming.Learning.determines_lumped_iff",
@@ -375,8 +375,8 @@
   ],
   "progress": [
     {
-      "en": "Formal support matched: Part I’s checked laws are matched to the four connections of the wisdom-root target, adding no Lean; which law constitutes which aspect of wisdom is an argument.",
-      "zh": "形式支撑的对照：第一部分已检查的规律逐条对到目标 wisdom-root 的四条连接，不新增 Lean；哪条规律构成智慧的哪一面是论证。",
+      "en": "Formal support matched: the checked laws of the theory without axiom are matched to the four connections of the wisdom-root target, adding no Lean; which law constitutes which aspect of wisdom is an argument.",
+      "zh": "形式支撑的对照：无公理的理论中已检查的规律逐条对到目标 wisdom-root 的四条连接，不新增 Lean；哪条规律构成智慧的哪一面是论证。",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#93-智慧之根在第一部分所及p75"
     },
     {
@@ -413,8 +413,8 @@
       "kind": "scope"
     },
     {
-      "en": "The ethical warrant of judgment goes through the one axiom, which the theory states as a condition.",
-      "zh": "判断的伦理正当性走那一条公理，理论把它作为条件陈述。",
+      "en": "The ethical warrant of judgment goes through the continuation condition, which the theory states as a condition.",
+      "zh": "判断的伦理正当性走延续条件，理论把它作为条件陈述。",
       "kind": "scope"
     }
   ],
@@ -432,7 +432,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311",
       "declarations": []
     },
     {
@@ -926,6 +926,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (the axiom, Part I) replaced by the current vocabulary (the continuation condition, the theory without axiom); authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

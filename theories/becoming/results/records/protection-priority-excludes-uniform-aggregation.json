@@ -14,8 +14,8 @@
     "en": "Basic-condition priority is independent of C, excludes every natural-number score, and is representable by a bounded score."
   },
   "claim": {
-    "zh": "在一个构造的保护对增益情境中，G0、无损生成比较 C 与 J2 的排序可同时成立，J2 从不以任何数量的次级增益交换受保护的基本条件。G0 只约束正面相关性，不约束排序，它同样与一个满足 C、会交换的排序并存，因此 J2 不由 C 推出。每一个满足 C 的自然数评分都会在 score 0 + 2 项增益处交换，因而没有这样的评分能表示 J2。一个有界有理评分（保护为 1，k 项增益为 k/(k+1)）在每一对选项上与 J2 一致。所以此情境只把 J2 与单位步长的聚合分开。",
-    "en": "In one constructed protection-versus-gains situation, G0, the no-loss generative comparison C and J2's ordering hold together, and J2 never trades the protected basic condition for any number of secondary gains. G0 constrains positive relevance, not ordering: it holds equally alongside a trading ordering satisfying C, so J2 does not follow from C. Every natural-number score satisfying C trades at score 0 + 2 gains, so no such score represents J2. A bounded rational score (1 for protection, k/(k+1) for k gains) agrees with J2 on every pair of options. The situation therefore separates J2 from unit-step aggregation only."
+    "zh": "在一个构造的保护对增益情境中，生生之意义、无损生成比较 C 与基本保护优先的排序可同时成立，基本保护优先从不以任何数量的次级增益交换受保护的基本条件。生生之意义只约束正面相关性，不约束排序，它同样与一个满足 C、会交换的排序并存，因此基本保护优先不由 C 推出。每一个满足 C 的自然数评分都会在 score 0 + 2 项增益处交换，因而没有这样的评分能表示基本保护优先。一个有界有理评分（保护为 1，k 项增益为 k/(k+1)）在每一对选项上与基本保护优先一致。所以此情境只把基本保护优先与单位步长的聚合分开。",
+    "en": "In one constructed protection-versus-gains situation, living significance, the no-loss generative comparison C and the ordering by basic-condition priority hold together, and basic-condition priority never trades the protected basic condition for any number of secondary gains. Living significance constrains positive relevance, not ordering: it holds equally alongside a trading ordering satisfying C, so basic-condition priority does not follow from C. Every natural-number score satisfying C trades at score 0 + 2 gains, so no such score represents basic-condition priority. A bounded rational score (1 for protection, k/(k+1) for k gains) agrees with basic-condition priority on every pair of options. The situation therefore separates basic-condition priority from unit-step aggregation only."
   },
   "hypotheses": [
     {
@@ -73,15 +73,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
       "detail": {
-        "zh": "weighted 0 满足 C，却以一项增益交换基本条件：C 不推出 J2。",
-        "en": "weighted 0 satisfies C yet trades the basic condition for one gain: C does not yield J2."
+        "zh": "weighted 0 满足 C，却以一项增益交换基本条件：C 不推出基本保护优先。",
+        "en": "weighted 0 satisfies C yet trades the basic condition for one gain: C does not yield basic-condition priority."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
       "detail": {
-        "zh": "有界有理评分 k/(k+1) 在此情境中与 J2 在每一对选项上一致（ratio_agrees_with_priority）：有界敏感性对手未被排除，仍是实质对手。",
-        "en": "The bounded rational score k/(k+1) agrees with J2 on every pair in this situation (ratio_agrees_with_priority): bounded-sensitivity rivals are not excluded and remain substantive."
+        "zh": "有界有理评分 k/(k+1) 在此情境中与基本保护优先在每一对选项上一致（ratio_agrees_with_priority）：有界敏感性对手未被排除，仍是实质对手。",
+        "en": "The bounded rational score k/(k+1) agrees with basic-condition priority on every pair in this situation (ratio_agrees_with_priority): bounded-sensitivity rivals are not excluded and remain substantive."
       }
     }
   ],
@@ -145,7 +145,7 @@
     {
       "path": "theories/becoming/chapters/G0-WARRANT.md",
       "role": "integration",
-      "sha256": "25347758f65e115ab52ac972581660fbe377d68cac8eec80a91cc2d8bd624df3",
+      "sha256": "cc8778362c2eeb638e0614890b62a856364562ea2cc3110dc58e76183c537a1f",
       "declarations": []
     },
     {
@@ -229,8 +229,8 @@
     }
   ],
   "next_delta": {
-    "zh": "构造能把 J2 与有界敏感性评分分开的情境（多项基本条件、不同利害），或说明为何不能；把对手判别推广到多情境。",
-    "en": "Construct situations (several basic conditions, varying stakes) that separate J2 from bounded-sensitivity scores, or show why none can; extend rival discrimination across situations."
+    "zh": "构造能把基本保护优先与有界敏感性评分分开的情境（多项基本条件、不同利害），或说明为何不能；把对手判别推广到多情境。",
+    "en": "Construct situations (several basic conditions, varying stakes) that separate basic-condition priority from bounded-sensitivity scores, or show why none can; extend rival discrimination across situations."
   },
   "history": [
     {
@@ -286,6 +286,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): G0-WARRANT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): G0-WARRANT.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ]
 }

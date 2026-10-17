@@ -249,7 +249,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md",
@@ -318,8 +318,8 @@
     }
   ],
   "next_delta": {
-    "zh": "中心怎样形成并表示其边界的模型；按步、按时间先后的依存范围（P40 的供给闭包是形成层面的）。",
-    "en": "A model of how a center forms and represents its boundary; dependence step by step and in temporal order (P40's feeding closure is at the level of formations)."
+    "zh": "中心怎样形成并表示其边界的模型；按步、按时间先后的依存范围（路线 (b) 的供给闭包是形成层面的）。",
+    "en": "A model of how a center forms and represents its boundary; dependence step by step and in temporal order (the feeding closure of route (b) is at the level of formations)."
   },
   "history": [
     {
@@ -567,6 +567,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: P-numbers removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ]
 }

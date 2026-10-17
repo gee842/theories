@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-14T15:45:00+00:00",
   "statement": {
-    "zh": "有意义者越少保留越多；公理之下在整体中保留的在每个区域内保留，反过来不成立。让每个形成的意义止于其依存时，清除者的部分从清除者的立场保留一切，从栖居者的立场失去栖居者；公理之下它从每个立场失去栖居者。",
-    "en": "With fewer significant continuations more is retained; under the axiom what retains in the whole retains in every region, not conversely. With dependence-bounded significance, the clearer's part retains all for the clearer, loses the dweller for the dweller, and under the axiom for every standpoint."
+    "zh": "有意义者越少保留越多；延续条件之下在整体中保留的在每个区域内保留，反过来不成立。让每个形成的意义止于其依存时，清除者的部分从清除者的立场保留一切，从栖居者的立场失去栖居者；延续条件之下它从每个立场失去栖居者。",
+    "en": "Fewer significant continuations retain more; under the continuation condition what retains in the whole retains in every region, not conversely. Bounded by dependence, the clearer's part retains all for the clearer, loses the dweller for the dweller, and under the condition for every standpoint."
   },
   "laws": [
     {
@@ -32,8 +32,8 @@
       ]
     },
     {
-      "zh": "公理之下，从 p 保留者，对每个区域族都从 p 保留：整体的判断决定每个较窄的判断，无论区域是系统的还是自身的；区域之内成立的在其内每个区域都成立。",
-      "en": "Under the axiom, what retains from p retains from p for every family of regions: the whole's judgment decides every narrower one, whether the region is a system's or a self's; and what holds within a region holds within every region inside it.",
+      "zh": "延续条件之下，从 p 保留者，对每个区域族都从 p 保留：整体的判断决定每个较窄的判断，无论区域是系统的还是自身的；区域之内成立的在其内每个区域都成立。",
+      "en": "Under the continuation condition, what retains from p retains from p for every family of regions: the whole's judgment decides every narrower one, whether the region is a system's or a self's; and what holds within a region holds within every region inside it.",
       "declarations": [
         "Becoming.Web.Retains.within",
         "Becoming.Web.AdmitsWithin.narrow"
@@ -65,8 +65,8 @@
       ]
     },
     {
-      "zh": "公理之下，从每个立场，它都失去栖居者，有它的水平不保留无它时的有意义者，无它的水平保留有它的有意义者，清除者每一步被支持、无它时也被接纳，所以扣留这个部分不终结任何东西。",
-      "en": "Under the axiom it loses the dweller from every standpoint, so the levels with it do not retain what has significance without it, while the levels without it retain what has significance with it, and the clearer is supported at every step and admitted without the part, so withholding the part ends nothing.",
+      "zh": "延续条件之下，从每个立场，它都失去栖居者，有它的水平不保留无它时的有意义者，无它的水平保留有它的有意义者，清除者每一步被支持、无它时也被接纳，所以扣留这个部分不终结任何东西。",
+      "en": "Under the continuation condition it loses the dweller from every standpoint, so the levels with it do not retain what has significance without it, while the levels without it retain what has significance with it, and the clearer is supported at every step and admitted without the part, so withholding the part ends nothing.",
       "declarations": [
         "Becoming.Clearing.free_rider_loses"
       ]
@@ -113,8 +113,8 @@
       "kind": "correspondence"
     },
     {
-      "zh": "路线 (b) 须面对以依存为界的中心容许搭便车者：不用公理时，这一损失只在依存到达所关闭者时被识（见 closure-verdict-meets-axiom）。",
-      "en": "Route (b) must face that centers bounded by their dependence license the free rider: without the axiom, this loss counts only where the dependence reaches what is closed (see closure-verdict-meets-axiom).",
+      "zh": "路线 (b) 须面对以依存为界的中心容许搭便车者：不用延续条件时，这一损失只在依存到达所关闭者时被识（见 closure-verdict-meets-axiom）。",
+      "en": "Route (b) must face that centers bounded by their dependence license the free rider: without the continuation condition, this loss counts only where the dependence reaches what is closed (see closure-verdict-meets-axiom).",
       "kind": "non-implication"
     }
   ],
@@ -129,8 +129,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "detail": {
-        "zh": "公理之下搭便车者的部分从每个立场失去栖居者，而扣留它不终结任何东西（Clearing.free_rider_loses）。",
-        "en": "Under the axiom the free rider's part loses the dweller from every standpoint, while withholding it ends nothing (Clearing.free_rider_loses)."
+        "zh": "延续条件之下搭便车者的部分从每个立场失去栖居者，而扣留它不终结任何东西（Clearing.free_rider_loses）。",
+        "en": "Under the continuation condition the free rider's part loses the dweller from every standpoint, while withholding it ends nothing (Clearing.free_rider_loses)."
       }
     }
   ],
@@ -350,7 +350,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -652,6 +652,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (the axiom) replaced by the current vocabulary (the continuation condition), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

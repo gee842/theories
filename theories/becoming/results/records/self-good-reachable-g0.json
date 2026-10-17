@@ -2,20 +2,20 @@
   "schema_version": 1,
   "id": "self-good-reachable-g0",
   "title": {
-    "zh": "从立场自身之善到可及的 G0",
-    "en": "From a standpoint's own good to reachable G0"
+    "zh": "从立场自身之善到可及的生生之意义",
+    "en": "From a standpoint's own good to reachable living significance"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-08T18:58:39.641466+00:00",
   "statement": {
-    "zh": "立场自身之善（S0）加不受限单调性与容差，推出立场索引的可及 G0 实例。",
-    "en": "A standpoint's own good (S0), with unrestricted monotonicity and tolerance, gives a standpoint-indexed instance of G0 on reachable generation."
+    "zh": "立场自身之善（自身意义）加不受限单调性与容差，推出立场索引的可及生生之意义实例。",
+    "en": "A standpoint's own good (self-significance), with unrestricted monotonicity and tolerance, gives a standpoint-indexed instance of living significance on reachable generation."
   },
   "claim": {
-    "zh": "对持 S0（自身的生及继续生成对自己有提供理由的正面意义）的评价位置：其一，S0 加上不受限（跨越自他）的单调性（等价于随附性、剖面单调估值与 BI），使任何至少同样相连于某一被珍视的自身继续生成的他者生命具有正面意义；承认“连接程度就是完整根据”的只承认“我的”的对手，一旦自身继续生成分化出这样的他者，就严格不一致。其二，再加容差与分级连通，正面意义及于此位置活动所能及的全部生命与继续生成；所得是 G0 谓词在此立场、单一历史、可及库存上的实例。超出 S0 的全部内容由容差承担；所采用的不带索引、跨接续的 G0，仍需从立场相对意义到规范意义的桥接。",
-    "en": "For an evaluating position holding S0 (its own living and further generation have reason-giving positive significance): first, S0 with unrestricted monotonicity across self and other (equivalently supervenience, a profile-monotone valuation and BI) gives positive significance to any living occurrence at least as connected as a valued occurrence of its own further generation, and an own-only rival that grants connection degree as the whole ground is inconsistent once its further generation differentiates into such an occurrence; second, adding tolerance and graded connection, significance reaches all living generation the position's activity can condition, a standpoint-indexed, single-history instance of the G0 predicate on the reachable inventory. Tolerance carries everything beyond S0; the adopted unindexed G0 over continuations still needs a bridge from standpoint-relative to normative significance."
+    "zh": "对持自身意义（自身的生及继续生成对自己有提供理由的正面意义）的评价位置：其一，自身意义加上不受限（跨越自他）的单调性（等价于随附性、剖面单调估值与 BI），使任何至少同样相连于某一被珍视的自身继续生成的他者生命具有正面意义；承认“连接程度就是完整根据”的只承认“我的”的对手，一旦自身继续生成分化出这样的他者，就严格不一致。其二，再加容差与分级连通，正面意义及于此位置活动所能及的全部生命与继续生成；所得是生生之意义谓词在此立场、单一历史、可及库存上的实例。超出自身意义的全部内容由容差承担；所采用的不带索引、跨接续的生生之意义，仍需从立场相对意义到规范意义的桥接。",
+    "en": "For an evaluating position holding self-significance (its own living and further generation have reason-giving positive significance): first, self-significance with unrestricted monotonicity across self and other (equivalently supervenience, a profile-monotone valuation and BI) gives positive significance to any living occurrence at least as connected as a valued occurrence of its own further generation, and an own-only rival that grants connection degree as the whole ground is inconsistent once its further generation differentiates into such an occurrence; second, adding tolerance and graded connection, significance reaches all living generation the position's activity can condition, a standpoint-indexed, single-history instance of the living significance predicate on the reachable inventory. Tolerance carries everything beyond self-significance; the adopted unindexed living significance over continuations still needs a bridge from standpoint-relative to normative significance."
   },
   "hypotheses": [
     {
@@ -114,15 +114,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
       "detail": {
-        "zh": "无 S0 的现时目的评价者满足单调性、随附性与容差，却不给任何东西以意义；结论对一切可能评价者不成立。",
-        "en": "A present-aim evaluator without S0 satisfies monotonicity, supervenience and tolerance yet assigns no significance; the conclusion does not hold for every possible evaluator."
+        "zh": "无自身意义的现时目的评价者满足单调性、随附性与容差，却不给任何东西以意义；结论对一切可能评价者不成立。",
+        "en": "A present-aim evaluator without self-significance satisfies monotonicity, supervenience and tolerance yet assigns no significance; the conclusion does not hold for every possible evaluator."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
       "detail": {
-        "zh": "门槛对手满足 S0、单调性与随附性，到达由此活动形成的他者而不到达陌生人，并恰在其断点违反容差。",
-        "en": "A threshold rival satisfies S0, monotonicity and supervenience, reaches the formed other but not the stranger, and violates tolerance exactly at its cut."
+        "zh": "门槛对手满足自身意义、单调性与随附性，到达由此活动形成的他者而不到达陌生人，并恰在其断点违反容差。",
+        "en": "A threshold rival satisfies self-significance, monotonicity and supervenience, reaches the formed other but not the stranger, and violates tolerance exactly at its cut."
       }
     },
     {
@@ -142,22 +142,22 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
       "detail": {
-        "zh": "闭合坐标对手（审查 P5）：剖面含已形成的闭合坐标时，S0、不受限单调性、随附性与逐步容差都成立，而 Diff 与 Chain 都不成立；它不是伪装的所有者。",
-        "en": "Closure-coordinate rival (review P5): with a formed closure coordinate in the profile, S0, unrestricted monotonicity, supervenience and stepwise tolerance hold while Diff and Chain fail; it is not ownership in disguise."
+        "zh": "闭合坐标对手：剖面含已形成的闭合坐标时，自身意义、不受限单调性、随附性与逐步容差都成立，而 Diff 与 Chain 都不成立；它不是伪装的所有者。",
+        "en": "Closure-coordinate rival: with a formed closure coordinate in the profile, self-significance, unrestricted monotonicity, supervenience and stepwise tolerance hold while Diff and Chain fail; it is not ownership in disguise."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
       "detail": {
-        "zh": "只限自身的单调性（审查 P4）：与 S0、随附性、只给自身意义及 Diff 一致；第一步的严格不一致只对承认 HUIGEN §7 第一角的对手成立。",
-        "en": "Own-restricted monotonicity (review P4) is consistent with S0, supervenience, own-only significance and Diff; step one's exact inconsistency holds only for a rival granting HUIGEN §7's first horn."
+        "zh": "只限自身的单调性：与自身意义、随附性、只给自身意义及 Diff 一致；第一步的严格不一致只对承认 HUIGEN §7 第一角的对手成立。",
+        "en": "Own-restricted monotonicity is consistent with self-significance, supervenience, own-only significance and Diff; step one's exact inconsistency holds only for a rival granting HUIGEN §7's first horn."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
       "detail": {
-        "zh": "连续递减并在有限距离处归零的权重（审查 P7）：每步变化有界，却不给远处者意义；断点也不必落在自身边界上。",
-        "en": "A graded weight falling continuously to zero at a finite distance (review P7): bounded change per step, yet no significance far away; the cut need not lie at the own boundary."
+        "zh": "连续递减并在有限距离处归零的权重：每步变化有界，却不给远处者意义；断点也不必落在自身边界上。",
+        "en": "A graded weight falling continuously to zero at a finite distance: bounded change per step, yet no significance far away; the cut need not lie at the own boundary."
       }
     }
   ],
@@ -314,8 +314,8 @@
     }
   ],
   "next_delta": {
-    "zh": "对 BI 与 N_rel 的哲学根据作独立论证；以真实案例取得分化与分级连通的证据；剖面之间的小步是否展开中已形成的关系，核心在剖面上的 N_rel（tolerant_iff_neutral）把这留给对应。",
-    "en": "An independent argument for BI and N_rel; evidence for differentiation and graded connection in actual cases; whether small steps between profiles are formed relations of the unfolding, which the core's N_rel on profiles (tolerant_iff_neutral) leaves to correspondence."
+    "zh": "对 BI 与关系中立的哲学根据作独立论证；以真实案例取得分化与分级连通的证据；剖面之间的小步是否展开中已形成的关系，核心在剖面上的关系中立（tolerant_iff_neutral）把这留给对应。",
+    "en": "An independent argument for BI and relational neutrality; evidence for differentiation and graded connection in actual cases; whether small steps between profiles are formed relations of the unfolding, which the core's relational neutrality on profiles (tolerant_iff_neutral) leaves to correspondence."
   },
   "history": [
     {
@@ -365,6 +365,9 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Metaethics.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0, S0, N_rel/N_std) replaced by the current vocabulary (living significance, self-significance, relational and standpoint neutrality); review-round labels removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

@@ -83,7 +83,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 <a id="复用与下一增量-reuse-and-next-delta"></a>
 ## Reuse and next delta
 
-Learning where the registered values themselves are not told apart (learnability where registration does not tell configurations apart is in learnable-through-registration); a probabilistic reading; the connection with P71 (a registration within what it registers incomplete at every step).
+Learning where the registered values themselves are not told apart (learnability where registration does not tell configurations apart is in learnable-through-registration); a probabilistic reading; the connection with registration-within-what-it-registers (a registration within what it registers incomplete at every step).
 
 Aliases: `problem of induction`, `归纳问题`, `identification in the limit`
 
@@ -98,4 +98,5 @@ Aliases: `problem of induction`, `归纳问题`, `identification in the limit`
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D26): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Learning.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 16 October 2026, I4b item 2 follow-up (study section 153): Selection.lean changes only in comments (the section “Selection by the record alone” renamed “Selection through a model of the options”), and Learning.lean gains a section of eight theorems linking a model of the options to its lumping; the declarations this record cites are unchanged. Learning.lean take the new hashes, and the proof bindings move to core receipt 20261015T202927.668755Z.
+- 17 October 2026, wording of the public fields: the P-number P71 replaced by the record it names (registration-within-what-it-registers), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 33 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](learning-by-refutation.json).

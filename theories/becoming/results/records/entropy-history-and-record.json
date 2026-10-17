@@ -228,8 +228,8 @@
   ],
   "does_not_show": [
     {
-      "zh": "“熵”指守恒量中的记录还是历史，定理不决定；依 Ren 的交托，它指记录，历史是记录所记的。",
-      "en": "The theorems do not decide whether ‘entropy’ names the record in the conserved amount or the history; on Ren's delegation it names the record, the history being what the record records.",
+      "zh": "“熵”指守恒量中的记录还是历史，定理不决定；一种读法：它指记录，历史是记录所记的。",
+      "en": "The theorems do not decide whether ‘entropy’ names the record in the conserved amount or the history; a reading: it names the record, the history being what the record records.",
       "kind": "scope"
     },
     {
@@ -1008,6 +1008,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: delegation phrasing (“on Ren's delegation”) replaced by marking the readings as readings, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

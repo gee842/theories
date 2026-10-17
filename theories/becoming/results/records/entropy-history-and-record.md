@@ -43,7 +43,7 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- The theorems do not decide whether ‘entropy’ names the record in the conserved amount or the history; on Ren's delegation it names the record, the history being what the record records.
+- The theorems do not decide whether ‘entropy’ names the record in the conserved amount or the history; a reading: it names the record, the history being what the record records.
 - Decomposing the least loss into the first law and a record in the conserved amount does not derive it.
 - The merging conclusions are double negations, and only the dichotomy of merging or not is stated.
 - The count of reachable configurations within the first law's list is not stated; their shrinking step by step holds for any determined law with no premise. Witness: `Becoming.Law.lost_stays`.
@@ -133,6 +133,7 @@ Aliases: `Becoming.Flow.Gainless`, `Becoming.Flow.Lossless`, `Becoming.Flow.Reve
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D29): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: "brings to rest" and "rests" become "change does not recur": Flow.Balances.rests_of_never_revisits and rests_of_arrow conclude ¬∀N, ∃t≥N, Changes (a negated recurrence), not a step after which nothing changes. Earlier text in text_versions.
+- 17 October 2026, wording of the public fields: delegation phrasing (“on Ren's delegation”) replaced by marking the readings as readings, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 27 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](entropy-history-and-record.json).
 
 <a id="earlier-text--早期文本"></a>

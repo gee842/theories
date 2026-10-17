@@ -35,7 +35,7 @@
 - No measure on branching courses is given; weighted histories are in Becoming.Weighted.
 - **Counterexample:** OneWay: possibly but not necessarily drawn, and returns; Transit: what returns is not an invariant region. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

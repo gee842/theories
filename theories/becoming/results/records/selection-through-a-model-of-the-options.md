@@ -31,7 +31,7 @@
 - A form without the options' equality decided: exchanging two options needs it.
 - Which model is right, or what matters: p and f are given; where a finer model comes from belongs to learning.
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · A relation omitted by a weaker description does not refute the fuller account.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -89,7 +89,7 @@ Aliases: `Becoming.Relabel.selected_alike_iff`, `Becoming.Relabel.singled_iff_un
 - 16 October 2026: added, integration I4b item 2 (Ren chose “Closest gaps first”); study section 151.
 - 16 October 2026: reframed at Ren's correction (“it is about the cognitive model, not just record”) and approval (“go ahead with the reframing, first title, keep names, (a)”). The id selection-by-the-record-alone became selection-through-a-model-of-the-options, the old id kept as an alias; the title “Selection by the record alone” became “Selection through a model of the options”; statement, laws, hypotheses and correspondence name the model; the reading that a further recorded relation such as an order of arrival parts a tie is withdrawn, and Ren's judgment of the reading leaves next_delta. A law adds Becoming.Learning's eight theorems linking the model to its lumping; Selection.lean and SelectionRelabelCorrespondence.lean change only in comments. Study section 153; the former title, statement and reading are in study section 151.
 - 16 October 2026, eighteenth review (R18): the correspondence names May's 1952 neutrality condition and the Buridan symmetry (review item 39, K11). Claim unchanged.
-- 18 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-through-a-model-of-the-options.json).
+- 19 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-through-a-model-of-the-options.json).
 
 </details>
 

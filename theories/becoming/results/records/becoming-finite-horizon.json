@@ -105,22 +105,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "detail": {
-        "zh": "事件层面的逐步与周期读法由有限的历史决定，所以在条件还满足依存时，它们记入渐进的耗竭（Renewable.prefix_does_not_decide）；形成层面的周期读法不由有限前缀决定（Renewable.cycle_reading_not_finite；第二次独立审查 F9）。",
-        "en": "The event-level stepwise and cycle readings are fixed by a finite history, so they include gradual depletion while the condition still meets dependence (Renewable.prefix_does_not_decide); the formation-level cycle reading is fixed by no finite prefix (Renewable.cycle_reading_not_finite; second independent review F9)."
+        "zh": "事件层面的逐步与周期读法由有限的历史决定，所以在条件还满足依存时，它们记入渐进的耗竭（Renewable.prefix_does_not_decide）；形成层面的周期读法不由有限前缀决定（Renewable.cycle_reading_not_finite；独立审查 F9）。",
+        "en": "The event-level stepwise and cycle readings are fixed by a finite history, so they include gradual depletion while the condition still meets dependence (Renewable.prefix_does_not_decide); the formation-level cycle reading is fixed by no finite prefix (Renewable.cycle_reading_not_finite; independent review F9)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "detail": {
-        "zh": "按数量的读法逃出本结果（Renewable.amount_reading）：它由有限前缀决定，扣下每一次超出更新的汲取，只是不记入每次整段更新的运行；依存网上 draws 不带数量，它在 Web 上不能表达（第二次独立审查 F2）。",
-        "en": "An amount reading escapes this result (Renewable.amount_reading): it is fixed by finite prefixes and withholds every draw beyond renewal, failing only to include every whole-run-renewing run; draws on webs carry no amount, so it cannot be expressed on Web (second independent review F2)."
+        "zh": "按数量的读法逃出本结果（Renewable.amount_reading）：它由有限前缀决定，扣下每一次超出更新的汲取，只是不记入每次整段更新的运行；依存网上 draws 不带数量，它在 Web 上不能表达（独立审查 F2）。",
+        "en": "An amount reading escapes this result (Renewable.amount_reading): it is fixed by finite prefixes and withholds every draw beyond renewal, failing only to include every whole-run-renewing run; draws on webs carry no amount, so it cannot be expressed on Web (independent review F2)."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P7-REVIEW.md",
       "detail": {
-        "zh": "第二次独立审查：所审的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，整合文档中比较表在 (a)(b) 与 but-for 一栏上不公允（已更正）。",
-        "en": "Second independent review: the mathematics under review is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the integration note's comparison table was unfair in rows (a), (b) and the but-for column (corrected)."
+        "zh": "独立审查：所审的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，整合文档中比较表在 (a)(b) 与 but-for 一栏上不公允（已更正）。",
+        "en": "Independent review: the mathematics under review is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the integration note's comparison table was unfair in rows (a), (b) and the but-for column (corrected)."
       }
     }
   ],
@@ -768,6 +768,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: review-round ordinals removed (the findings and their codes stay), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

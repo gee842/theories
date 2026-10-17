@@ -12,7 +12,7 @@ Documentary review UTC: `2026-10-08T18:51:23.185277+00:00`. Run the registry che
 <a id="主张-claim"></a>
 ## Claim
 
-Under explicit G0, formation correspondence E and a positioned direct articulation D, every position with actual access to a response has a contributory reason for it, whatever its endorsement, substrate or identity labels. The least reason satisfying D is fixed by access and positive ground alone, so positions alike in access are alike in this reason; a position without access receives no reason from this route. Endorsement independence is the content of D, not a consequence of G0 and E: an endorsement-conditional articulation is compatible with the same G0 and formation facts yet withholds the reason from a non-endorsing position with access.
+Under explicit living significance, formation correspondence E and a positioned direct articulation D, every position with actual access to a response has a contributory reason for it, whatever its endorsement, substrate or identity labels. The least reason satisfying D is fixed by access and positive ground alone, so positions alike in access are alike in this reason; a position without access receives no reason from this route. Endorsement independence is the content of D, not a consequence of living significance and E: an endorsement-conditional articulation is compatible with the same living significance and formation facts yet withholds the reason from a non-endorsing position with access.
 
 Canonical source: [PositionedPositiveReason.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean)
 
@@ -32,7 +32,7 @@ Successful Lean 4.29.1 check: 10 new theorems/25 declaration audits, all with em
 
 A contributory reason is not permission, duty, an overall ranking or a uniquely optimal action, and predicts no recognition or compliance. Universality rests on D; neither G0 nor D is derived from an agent's own standpoint, and universal-practical-warrant is not completed.
 
-- An endorsement-conditional articulation is compatible with the same G0 and formation facts yet withholds the reason from a non-endorsing position with access; endorsement independence therefore does not follow from G0. [PositionedPositiveReason.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean)
+- An endorsement-conditional articulation is compatible with the same living significance and formation facts yet withholds the reason from a non-endorsing position with access; endorsement independence therefore does not follow from living significance. [PositionedPositiveReason.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean)
 - An endorsing position without access receives no reason from this route; this does not show it has no reason at all. [PositionedPositiveReason.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean)
 
 <a id="依赖与关联-dependencies-and-related-results"></a>
@@ -73,7 +73,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 <a id="复用与下一增量-reuse-and-next-delta"></a>
 ## Reuse and next delta
 
-Connect access to formed capacity and authority (J3/J4), showing how reasons differentiate into bounded responsibilities; or pursue the route that reduces D toward commitments every evaluator already has (review §3.1).
+Connect access to formed capacity and authority (the commitments of bounded responsibility and legitimate feasible choice), showing how reasons differentiate into bounded responsibilities; or pursue the route that reduces D toward commitments every evaluator already has (review §3.1).
 
 Aliases: `PositionedPositiveReason.every_situated_position_has_reason`, `PositionedPositiveReason.route_reason_is_least`, `PositionedPositiveReason.route_reason_depends_only_on_access`, `PositionedPositiveReason.g0_holds`, `PositionedPositiveReason.barren_not_live`, `PositionedPositiveReason.live_productive`, `PositionedPositiveReason.respond_formation`, `PositionedPositiveReason.nonendorsing_position_with_access_has_reason`, `PositionedPositiveReason.endorsement_without_access_gets_no_route_reason`, `PositionedPositiveReason.endorsement_independence_is_supplied_by_articulation`
 
@@ -86,4 +86,5 @@ Aliases: `PositionedPositiveReason.every_situated_position_has_reason`, `Positio
 - 9 October 2026: the review file gained only a correction paragraph at the end of §6 (generative-discrimination session, after its independent review); the §3.3 and §5 text this record relies on is unchanged. Reference hash updated after reading; claim, proof and other sources unchanged.
 - 14 October 2026, integration I1: the spine's D and secured positive ground are this module's by definition (positionedArticulation_iff, securesPositiveGround_iff), and the spine's G0 on a frame is G0 on the frame's inventory (g0_iff), so these theorems hold of the spine's definitions as stated. The spine run 20261014T100026.593496Z compiles this module as inherited, every declaration with an empty axiom report. The spine derives the main theorem from the axiom of Becoming.Significance (every_situated_position_has_reason_of_unrestricted) and, by its own route, gives every position with access a reason from a sound inquiry under S0, N and A (universal_reason, with D from A by positioned_articulation_of_articulates). The least route reason and its dependence on access alone are not restated on the spine.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
+- 17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 5 rebinding entries (2026-10-09 to 2026-10-15): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](positioned-positive-reason.json).

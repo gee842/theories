@@ -2,16 +2,16 @@
   "schema_version": 2,
   "id": "axiom-decomposition",
   "title": {
-    "zh": "公理的分解",
-    "en": "Decomposition of the axiom"
+    "en": "Decomposition of the continuation condition",
+    "zh": "延续条件的分解"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "整体可容许时，公理恰是每个立场上次真且对边界不变的预设。不变恰是从预设到该立场上公理的条件句，承载公理在预设之外的全部内容；有了处处的预设与覆盖，它就是对立场不变，即 N_std 的规则。",
-    "en": "Where the whole is admissible, the axiom is exactly the presupposition sub-true and boundary-invariant at every standpoint. Invariance is exactly the conditional from presupposition to axiom, carrying all it adds; with presupposition and covering everywhere, it is standpoint-invariance (N_std)."
+    "zh": "整体可容许时，延续条件恰是每个立场上次真且对边界不变的预设。不变恰是从预设到该立场上延续条件的条件句，承载延续条件在预设之外的全部内容；有了处处的预设与覆盖，它就是对立场不变，即立场中立的规则。",
+    "en": "Where the whole is admissible, the continuation condition is exactly the presupposition sub-true and boundary-invariant at every standpoint. Invariance is the conditional from presupposition to condition, carrying all it adds; with presupposition and covering everywhere, it is standpoint neutrality."
   },
   "laws": [
     {
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "zh": "整体可容许时，p 处的预设对边界不变，恰当它按某处划出成立就按整体划出成立；这恰是从预设到 p 处公理的条件句，不假设预设。此时若某个延续从 p 没有意义，不变的预设按哪种划法都不成立：这一步两头都走。",
-      "en": "Wherever the whole is admissible, the presupposition at p is boundary-invariant exactly when, holding as the boundary is drawn anywhere, it holds as drawn at the whole; that is exactly the conditional from the presupposition to the axiom at p, with no presupposition assumed. There, where some continuation lacks significance from p, an invariant presupposition holds at no drawing: the step runs both ways.",
+      "zh": "整体可容许时，p 处的预设对边界不变，恰当它按某处划出成立就按整体划出成立；这恰是从预设到 p 处延续条件的条件句，不假设预设。此时若某个延续从 p 没有意义，不变的预设按哪种划法都不成立：这一步两头都走。",
+      "en": "Wherever the whole is admissible, the presupposition at p is boundary-invariant exactly when, holding as the boundary is drawn anywhere, it holds as drawn at the whole; that is exactly the conditional from the presupposition to the continuation condition at p, with no presupposition assumed. There, where some continuation lacks significance from p, an invariant presupposition holds at no drawing: the step runs both ways.",
       "declarations": [
         "Becoming.boundaryInvariant_iff_extends",
         "Becoming.boundaryInvariant_iff_conditional",
@@ -35,23 +35,23 @@
       ]
     },
     {
-      "zh": "整体可容许且 p 处预设次真时，不变恰是 p 处的公理：从 p 看，一切的延续在每一步都有意义。公理是延续之意义的边界中立，所以在一个立场上这一步就是边界中立。",
-      "en": "Wherever the whole is admissible and the presupposition at p is sub-true, invariance is exactly the axiom at p: from p, the continuation of everything has significance at every step. The axiom being boundary neutrality for the significance of continuation, at one standpoint the step is boundary neutrality.",
+      "zh": "整体可容许且 p 处预设次真时，不变恰是 p 处的延续条件：从 p 看，一切的延续在每一步都有意义。延续条件是延续之意义的边界中立，所以在一个立场上这一步就是边界中立。",
+      "en": "Wherever the whole is admissible and the presupposition at p is sub-true, invariance is exactly the continuation condition at p: from p, the continuation of everything has significance at every step. The continuation condition being boundary neutrality for the significance of continuation, at one standpoint the step is boundary neutrality.",
       "declarations": [
         "Becoming.boundaryInvariant_iff_all",
         "Becoming.Unrestricted"
       ]
     },
     {
-      "zh": "设每个形成都在每个自身的某个可容许边界之内（覆盖），每个立场的预设次真，并对边界不变，则公理成立。",
-      "en": "Let every formation lie within some admissible boundary of every self (covering), let each standpoint's presupposition be sub-true, and let it be boundary-invariant: then the axiom holds.",
+      "zh": "设每个形成都在每个自身的某个可容许边界之内（覆盖），每个立场的预设次真，并对边界不变，则延续条件成立。",
+      "en": "Let every formation lie within some admissible boundary of every self (covering), let each standpoint's presupposition be sub-true, and let it be boundary-invariant: then the continuation condition holds.",
       "declarations": [
         "Becoming.unrestricted_of_presupposed"
       ]
     },
     {
-      "zh": "整体对每个自身可容许时，公理恰是每个立场上次真且不变的预设；沿任何关系都是如此，自身的边界即含其中心、对该关系封闭的区域。每个中心的闭包都是整体时，整体是唯一的边界，不变平凡地成立，公理恰是每个立场上次真的预设。",
-      "en": "Where the whole is admissible for every self, the axiom is exactly the presupposition sub-true and invariant at every standpoint; so along any relation, a self's boundaries being the regions that hold its center and are closed under it. Where each center's closure is the whole, the whole is the only boundary, invariance holds trivially, and the axiom is exactly the presupposition sub-true at every standpoint.",
+      "zh": "整体对每个自身可容许时，延续条件恰是每个立场上次真且不变的预设；沿任何关系都是如此，自身的边界即含其中心、对该关系封闭的区域。每个中心的闭包都是整体时，整体是唯一的边界，不变平凡地成立，延续条件恰是每个立场上次真的预设。",
+      "en": "Where the whole is admissible for every self, the continuation condition is exactly the presupposition sub-true and invariant at every standpoint; so along any relation, a self's boundaries being the regions that hold its center and are closed under it. Where each center's closure is the whole, the whole is the only boundary, invariance holds trivially, and the continuation condition is exactly the presupposition sub-true at every standpoint.",
       "declarations": [
         "Becoming.unrestricted_iff_presupposed",
         "Becoming.unrestricted_iff_presupposed_along",
@@ -60,8 +60,8 @@
       ]
     },
     {
-      "zh": "推论（整体对每个自身可容许，预设在每个立场次真且不变）：各立场的保留一致；在每种以某形成在某步之延续的意义读主张之意义的读法上，G0 在主张层面成立。",
-      "en": "Corollaries, with the whole admissible for every self and the presupposition sub-true and invariant at every standpoint: standpoints retain alike, and G0 holds at the level of claims on every reading in which a claim's significance is that of some formation's continuation at some step.",
+      "zh": "推论（整体对每个自身可容许，预设在每个立场次真且不变）：各立场的保留一致；在每种以某形成在某步之延续的意义读主张之意义的读法上，生生之意义在主张层面成立。",
+      "en": "Corollaries, with the whole admissible for every self and the presupposition sub-true and invariant at every standpoint: standpoints retain alike, and living significance holds at the level of claims on every reading in which a claim's significance is that of some formation's continuation at some step.",
       "declarations": [
         "Becoming.retains_agree_of_presupposed",
         "Becoming.Web.retains_agree",
@@ -70,8 +70,8 @@
       ]
     },
     {
-      "zh": "意义对立场不变，是指从一个立场有意义的从每个立场都有意义，即 N_std 的规则。沿一个关系，每个形成都在某个中心的闭包之内、每个立场的预设次真时，它给出公理，并与每个立场上对边界不变等价。没有处处的预设时两者分开。",
-      "en": "Significance is standpoint-invariant when what has significance from one standpoint has it from every other, the rule of N_std. Along a relation, with every formation within some center's closure and every standpoint's presupposition sub-true, it gives the axiom and is equivalent to boundary-invariance at every standpoint. Without the presupposition at every standpoint the two come apart.",
+      "zh": "意义对立场不变，是指从一个立场有意义的从每个立场都有意义，即立场中立的规则。沿一个关系，每个形成都在某个中心的闭包之内、每个立场的预设次真时，它给出延续条件，并与每个立场上对边界不变等价。没有处处的预设时两者分开。",
+      "en": "Significance is standpoint-invariant when what has significance from one standpoint has it from every other, the rule of standpoint neutrality. Along a relation, with every formation within some center's closure and every standpoint's presupposition sub-true, it gives the continuation condition and is equivalent to boundary-invariance at every standpoint. Without the presupposition at every standpoint the two come apart.",
       "declarations": [
         "Becoming.StandpointInvariant",
         "Becoming.unrestricted_of_standpointInvariant",
@@ -81,16 +81,16 @@
       ]
     },
     {
-      "zh": "所以这些前提把核心已有的两个分解带到延续的意义上：在有活的主张的连通整体上，G0 即种子、N_rel 与 N_std；每个活的主张都是某个立场自己的时，G0 即处处 S0 加 N_std。",
-      "en": "So the premises carry to the significance of continuation two decompositions already in the core: G0 as a seed, N_rel and N_std on a connected whole with some living claim, and, where every living claim is some standpoint's own, G0 as S0 at every standpoint with N_std.",
+      "zh": "所以这些前提把核心已有的两个分解带到延续的意义上：在有活的主张的连通整体上，生生之意义即种子、关系中立与立场中立；每个活的主张都是某个立场自己的时，生生之意义即处处自身意义加立场中立。",
+      "en": "So the premises carry to the significance of continuation two decompositions already in the core: living significance as a seed, relational and standpoint neutrality on a connected whole with some living claim, and, where every living claim is some standpoint's own, living significance as self-significance at every standpoint with standpoint neutrality.",
       "declarations": [
         "Becoming.Valuation.significant_iff",
         "Becoming.Valuation.significant_iff_held"
       ]
     },
     {
-      "zh": "每个中心的系统都是整体时，公理恰是每个立场上沿共享条件次真的预设；一个每个形成都参与的共同条件就使它成立。Clearing 只有一个系统，所以在那里公理恰是每个立场上的这一预设。",
-      "en": "Where each center's system is the whole, the axiom is exactly the presupposition sub-true along sharing a condition at every standpoint; one common condition, in which every formation takes part, suffices. Clearing is one system, so there the axiom is exactly that presupposition at every standpoint.",
+      "zh": "每个中心的系统都是整体时，延续条件恰是每个立场上沿共享条件次真的预设；一个每个形成都参与的共同条件就使它成立。Clearing 只有一个系统，所以在那里延续条件恰是每个立场上的这一预设。",
+      "en": "Where each center's system is the whole, the continuation condition is exactly the presupposition sub-true along sharing a condition at every standpoint; one common condition, in which every formation takes part, suffices. Clearing is one system, so there the continuation condition is exactly that presupposition at every standpoint.",
       "declarations": [
         "Becoming.Flow.unrestricted_iff_system_presupposed",
         "Becoming.Flow.unrestricted_iff_presupposed_of_common",
@@ -100,8 +100,8 @@
       ]
     },
     {
-      "zh": "Clearing 中没有意义时，预设在每个立场对边界不变、整体是每个自身的边界，而公理不成立。以各供给闭包为界的意义使每个预设次真、整体是边界，而公理不成立：清除者处的预设对边界不变不成立，意义对立场不变也不成立。",
-      "en": "In Clearing, with nothing significant, the presupposition is invariant at every standpoint and the whole a boundary of every self, while the axiom fails. With significance bounded by each feeding closure, every presupposition is sub-true and the whole a boundary, while the axiom fails: the clearer's presupposition is not invariant, and significance is not standpoint-invariant.",
+      "zh": "Clearing 中没有意义时，预设在每个立场对边界不变、整体是每个自身的边界，而延续条件不成立。以各供给闭包为界的意义使每个预设次真、整体是边界，而延续条件不成立：清除者处的预设对边界不变不成立，意义对立场不变也不成立。",
+      "en": "In Clearing, with nothing significant, the presupposition is invariant at every standpoint and the whole a boundary of every self, while the continuation condition fails. With significance bounded by each feeding closure, every presupposition is sub-true and the whole a boundary, while the continuation condition fails: the clearer's presupposition is not invariant, and significance is not standpoint-invariant.",
       "declarations": [
         "Becoming.Clearing.without_presupposition",
         "Becoming.Clearing.without_invariance",
@@ -111,8 +111,8 @@
       ]
     },
     {
-      "zh": "只容许供给闭包时，同一意义使每个预设次真且不变，栖居者不在清除者的任何可容许边界之内，公理仍不成立。",
-      "en": "Were each self's only admissible boundary its feeding closure, the same significance would make every presupposition sub-true and invariant, the dweller would lie within no admissible boundary of the clearer, and the axiom would still fail.",
+      "zh": "只容许供给闭包时，同一意义使每个预设次真且不变，栖居者不在清除者的任何可容许边界之内，延续条件仍不成立。",
+      "en": "Were each self's only admissible boundary its feeding closure, the same significance would make every presupposition sub-true and invariant, the dweller would lie within no admissible boundary of the clearer, and the continuation condition would still fail.",
       "declarations": [
         "Becoming.Clearing.with_fixed_boundary",
         "Becoming.Clearing.dweller_beyond",
@@ -132,8 +132,8 @@
   ],
   "does_not_show": [
     {
-      "zh": "分解定位这一步，不降低公理：不变是从预设到公理的条件句，有了预设就是该立场上的公理；在逻辑上它是恒等式 A ⇔ P ∧ (P → A)（已知 A → P）。",
-      "en": "The decomposition locates the step and does not lower the axiom: invariance is the conditional from the presupposition to the axiom, and given the presupposition it is the axiom at that standpoint; logically, A ⇔ P ∧ (P → A) given A → P.",
+      "zh": "分解定位这一步，不降低延续条件：不变是从预设到延续条件的条件句，有了预设就是该立场上的延续条件；在逻辑上它是恒等式 A ⇔ P ∧ (P → A)（已知 A → P）。",
+      "en": "The decomposition locates the step and does not lower the continuation condition: invariance is the conditional from the presupposition to the continuation condition, and given the presupposition it is the continuation condition at that standpoint; logically, A ⇔ P ∧ (P → A) given A → P.",
       "kind": "non-implication",
       "witness": "Becoming.boundaryInvariant_iff_conditional"
     },
@@ -163,8 +163,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
       "detail": {
-        "zh": "每个前提都需要：Clearing.without_presupposition、without_invariance、without_standpoint_invariance 与 with_fixed_boundary 各去掉一个前提或改变可容许类，公理都不成立；没有处处的预设时，两种不变分开（OneCounts.forms_apart）。",
-        "en": "Each premise is needed: Clearing.without_presupposition, without_invariance, without_standpoint_invariance and with_fixed_boundary each drop a premise or change the admissible class, and the axiom fails; without the presupposition everywhere the two forms of invariance come apart (OneCounts.forms_apart)."
+        "zh": "每个前提都需要：Clearing.without_presupposition、without_invariance、without_standpoint_invariance 与 with_fixed_boundary 各去掉一个前提或改变可容许类，延续条件都不成立；没有处处的预设时，两种不变分开（OneCounts.forms_apart）。",
+        "en": "Each premise is needed: Clearing.without_presupposition, without_invariance, without_standpoint_invariance and with_fixed_boundary each drop a premise or change the admissible class, and the continuation condition fails; without the presupposition everywhere the two forms of invariance come apart (OneCounts.forms_apart)."
       }
     }
   ],
@@ -177,8 +177,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Metaethics bound to receipt 20261014T091930.724493Z): the theorems of Becoming.Boundaries have empty axiom reports; core purity verified. Author counterreview in the integration note; reviewed before integration by the sixteenth independent review (listed under sources), whose treatment is in the integration note; the text after that treatment has not been independently reviewed."
   },
   "next_delta": {
-    "zh": "Ren 的选择：是否持有不变的一步；预设、覆盖与不变的哲学根据。",
-    "en": "Ren's choice whether to hold the step of invariance; the philosophical warrant of the presupposition, covering and invariance."
+    "zh": "是否持有不变的一步；预设、覆盖与不变的哲学根据。",
+    "en": "Whether to hold the step of invariance; the philosophical warrant of the presupposition, covering and invariance."
   },
   "correspondence": {
     "zh": "Ren 在《Truth exist》中写道：“There is a set of universal invariations, that for every universe, becoming happens, the law follows”; “There is no absolute self, and the continuation goes beyond one’s cycle of life, goes beyond one’s death.” 此前写道，自身是 “a cognitive model which can not justify itself without some sort of \"belief\"”，“we”是 “the universe/ecosystem that realizes its own existence”。AI 提出公理可能由它从 Ren 的话中读出的三个主张推出，只差一步（见来源）；经审查，结果是公理的分解，不是化约。作者的读法（AI 论证，依 Ren 的交托采用，DELEGATED-CHOICES D21；Ren 是否持有不变之步仍由 Ren 陈述）：预设读 Ren 所说自身不能没有的 belief，把它用作前提是 AI 的一步；沿一个关系覆盖由构造成立，“we”支持把整体作为一种划法，“There is no absolute self”本身不给出覆盖；“for all beings”最直接地读作对立场不变，即 N_std 的规则，把“universal invariations”推广到意义是 AI 的读法；Ren 的层级读作预设的三种读法：超真、沿影响次真、沿空关系次真。超真、次真之名取自超赋值（Fine 1975）与次赋值（Hyde 1997），依据先前知识；其余名称是 AI 的。G0 本身已不是公理：对其各处用法的审计干净之后，Ren 把它折叠。",
@@ -477,7 +477,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -781,6 +781,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-P42-P43-REVIEW.md, BECOMING-RENEWAL-READING.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: outdated labels (G0, S0, N_rel/N_std, the axiom) replaced by the current vocabulary (living significance, self-significance, relational and standpoint neutrality, the continuation condition); “Ren's choice whether to hold the step” replaced by “whether to hold the step”, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

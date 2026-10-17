@@ -26,12 +26,12 @@
 ## Does not show
 
 - The family's balance as a flow holds by construction (the focal take is what the step removes); the instance's content is its supported givers and arithmetic. Witness: `Becoming.SupportGated.balances`.
-- Does not derive contribution sources, activity selection, physical laws, general recoverability, whole-Becoming relational constitution or ethical necessity; G0/J/E stay explicit.
+- Does not derive contribution sources, activity selection, physical laws, general recoverability, whole-Becoming relational constitution or ethical necessity; living significance, the practical commitments and E stay explicit.
 - Finite recovery does not guarantee later maintenance.
 - **Counterexample:** unsupported_pulse_never_recovers refutes guaranteed recovery from a later contribution schedule alone; recovered_history_neither_global_class retains the interruption rather than replacing dynamics with a global label. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean)
 - **Counterexample:** Earlier material repair, initiation obstructions and continuous recovery basins remain earlier results; the delta is the finite window, absorbing state and actual-history comparison in this inherited gated law. [source](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md)
 
-**Standard boundaries:** Premise-free (zero-substantive-axiom) grounding is a separate open target; completed G0/J results keep their scope.
+**Standard boundaries:** Premise-free (zero-substantive-axiom) grounding is a separate open target; completed results on the conditional alignment route keep their scope.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -88,6 +88,7 @@ Aliases: `RenewalRecovery.inactive_pair_absorbs`, `RenewalRecovery.supported_rep
 - 14 October 2026 readability migration to schema 2 (general-laws plan: migration of the records the growth ratchet stopped): The title is kept, with the statement first; the claim was split into 4 laws; limitations and receipt notes went to does-not-show items, a standard boundary, the evidence paragraph and history. No premise, counterexample, status, proof binding or source hash changed. The law of restoration now says “to at least m”, as Flow.restores concludes (m ≤ level), where the old text said “back to m”. “The strong zero-substantive-axiom target remains explicit” now cites the standard boundary zero-axiom-target-open, and “G0/J/E remain explicit” joined the first does-not-show item. The old next step's “The finite repair interface is complete” is a status note carried by the status field; the sentence stays in the snapshot. Every earlier sentence is mapped in the migration table [supported-renewal-recovery.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/supported-renewal-recovery.md); the exact earlier record is the last text_versions entry.
 - Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.
 - 14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), findings G7 and G9: "surplus" is a market word, and the package already says net give; `Flow.surplus_raises_at`, `Flow.surplus_bounded_at`, `SupportGated.surplus`, `surplus_active` and `surplus_step` are renamed `net_give_raises_at`, `net_give_bounded_at`, `netGive`, `netGive_active` and `netGive_step`, and "joint surplus" becomes "joint net giving". A does-not-show item now says that the family's balance holds by construction (the focal take is defined as what the step removes) and names the instance's content.
+- 17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 6 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](supported-renewal-recovery.json).
 
 <a id="earlier-text--早期文本"></a>

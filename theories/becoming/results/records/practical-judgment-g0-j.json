@@ -2,16 +2,16 @@
   "schema_version": 2,
   "id": "practical-judgment-g0-j",
   "title": {
-    "zh": "G0/J 下的一般实践判断",
-    "en": "Practical judgment under G0/J"
+    "zh": "生生之意义与实践承诺下的一般实践判断",
+    "en": "Practical judgment under living significance and the practical commitments"
   },
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F07",
   "reviewed_at_utc": "2026-10-13T23:15:00+00:00",
   "statement": {
-    "zh": "G0 加公开 J1–J4 与实际对应，形成保留、转化、实际交接、有限结束及有界责任的一般候选。",
-    "en": "G0 with explicit J1–J4 and actual correspondence supplies a general candidate for preservation, transformation, actual transfer, finite ending and bounded responsibility."
+    "zh": "生生之意义加公开的实践承诺与实际对应，形成保留、转化、实际交接、有限结束及有界责任的一般候选。",
+    "en": "Living significance with the explicit practical commitments and actual correspondence supplies a general candidate for preservation, transformation, actual transfer, finite ending and bounded responsibility."
   },
   "hypotheses": [
     {
@@ -109,8 +109,8 @@
     {
       "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
       "detail": {
-        "zh": "J2 的优先强度是附加可修订承诺；交叉基本损失可不排序，不输出通用总效用。",
-        "en": "J2’s priority strength is an additional revisable commitment; crossed basic losses may remain incomparable, with no universal utility score."
+        "zh": "基本保护优先的强度是附加可修订承诺；交叉基本损失可不排序，不输出通用总效用。",
+        "en": "The strength of the priority of basic conditions is an additional revisable commitment; crossed basic losses may remain incomparable, with no universal utility score."
       }
     }
   ],
@@ -141,8 +141,8 @@
       "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md#2-what-closes-the-previously-named-gaps"
     },
     {
-      "zh": "及时接续：回程等级、替代与实际交接给出按需要的支承、替代覆盖与有范围的比较理由；有利理由与 J2 优先分开。",
-      "en": "Timely continuation: return grades, substitution and actual handoff give need-relative support, replacement coverage and scoped comparison reasons; a favorable reason is kept distinct from J2 priority.",
+      "zh": "及时接续：回程等级、替代与实际交接给出按需要的支承、替代覆盖与有范围的比较理由；有利理由与基本保护优先分开。",
+      "en": "Timely continuation: return grades, substitution and actual handoff give need-relative support, replacement coverage and scoped comparison reasons; a favorable reason is kept distinct from the priority of basic conditions.",
       "source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md#timely-continuation-and-support"
     }
   ],
@@ -154,7 +154,7 @@
     {
       "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "e869eae139fd35b51161d7449a8fdd2aa75fd6836ada33942a8de747c6b97cc7",
+      "sha256": "b8050f1365bbd55561f5ef30009d6779ab25af933d08a468de1865cee1965faa",
       "declarations": []
     },
     {
@@ -360,6 +360,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): PRACTICAL-JUDGMENT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): PRACTICAL-JUDGMENT.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -378,12 +384,12 @@
       "zh": "保留真实损失与有界责任的一般实践判断"
     },
     "summary": {
-      "en": "G0 with explicit J1–J4 commitments supports preservation, transformation, effective transfer and appropriate ending. The principles recognize generative gains, protect basic living conditions, retain actual losses, and differentiate responsibility through justified undertakings, dependence, authority and feasible response. They provide a partial ordering and bounded practical requirements; crossed basic losses may remain incomparable. J1–J4 are disclosed additional commitments, not consequences of G0 alone.",
-      "zh": "G0 加公开的 J1–J4 承诺支持保留、转化、实际交接与适当结束。原则承认生成增益、保护基本生活条件、保留真实损失，并按正当承担、依存、权限与可行回应区分责任。它们提供偏序和有界实践要求；交叉基本损失可以不排序。J1–J4 是明示的附加承诺，并非单由 G0 推出。"
+      "en": "Living significance with the explicit practical commitments supports preservation, transformation, effective transfer and appropriate ending. The principles recognize generative gains, protect basic living conditions, retain actual losses, and differentiate responsibility through justified undertakings, dependence, authority and feasible response. They provide a partial ordering and bounded practical requirements; crossed basic losses may remain incomparable. The practical commitments are disclosed additional commitments, not consequences of living significance alone.",
+      "zh": "生生之意义加公开的实践承诺支持保留、转化、实际交接与适当结束。原则承认生成增益、保护基本生活条件、保留真实损失，并按正当承担、依存、权限与可行回应区分责任。它们提供偏序和有界实践要求；交叉基本损失可以不排序。这些实践承诺是明示的附加承诺，并非单由生生之意义推出。"
     },
     "evidence": {
-      "zh": "一般原则范围获独立验收。Lean 检查所述判断确由 G0、J1–J4 与对应条件推出，包括交叉基本损失不排序之处。在一个构造的保护对增益情境中，另一项检查说明 J2 增加了什么：它满足无损比较，却从不以增益交换基本条件；每一个满足该比较的自然数评分都会交换，而一个有界评分与 J2 一致，所以有界敏感性对手仍然存在。J1–J4 是经论证的承诺，不是 Lean 的结果。",
-      "en": "Independent acceptance of the general-principles scope. Lean checks that the stated verdicts follow from G0, J1–J4 and correspondence, including where crossed basic losses stay unranked. In one constructed protection-versus-gains situation, a separate check shows what J2 adds: its ordering satisfies the no-loss comparison yet never trades a basic condition for gains, whereas every natural-number score satisfying that comparison does trade; a bounded score agrees with J2, so bounded-sensitivity rivals remain. J1–J4 are argued commitments, not Lean results."
+      "zh": "一般原则范围获独立验收。Lean 检查所述判断确由生生之意义、实践承诺与对应条件推出，包括交叉基本损失不排序之处。在一个构造的保护对增益情境中，另一项检查说明基本保护优先增加了什么：它满足无损比较，却从不以增益交换基本条件；每一个满足该比较的自然数评分都会交换，而一个有界评分与这一优先一致，所以有界敏感性对手仍然存在。这些实践承诺是经论证的承诺，不是 Lean 的结果。",
+      "en": "Independent acceptance of the general-principles scope. Lean checks that the stated verdicts follow from living significance, the practical commitments and correspondence, including where crossed basic losses stay unranked. In one constructed protection-versus-gains situation, a separate check shows what the priority of basic conditions adds: its ordering satisfies the no-loss comparison yet never trades a basic condition for gains, whereas every natural-number score satisfying that comparison does trade; a bounded score agrees with that priority, so bounded-sensitivity rivals remain. The practical commitments are argued commitments, not Lean results."
     }
   }
 }

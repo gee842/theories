@@ -159,8 +159,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T224751.654308Z): the 53 declarations of Becoming.Tail, 39 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 160; not independently reviewed."
   },
   "next_delta": {
-    "zh": "弱的规则是否给出有限全知原则的规则（尾之律是否严格多取）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查；Ren 对读法的判断。",
-    "en": "Whether the weak rule gives the rule of the limited principle (whether the tail law takes strictly more); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review; Ren's judgment on the readings."
+    "zh": "弱的规则是否给出有限全知原则的规则（尾之律是否严格多取）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查；对读法的论证判断。",
+    "en": "Whether the weak rule gives the rule of the limited principle (whether the tail law takes strictly more); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review; an argued judgment on the readings."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 sensitivity-is-the-least-registration 的 next_delta 首项：反例之存在的确切强度。读法（AI 的，待 Ren）：依存于整体而不依存于其任何部分者，恰在能对每个无尽的是非记录判定它是否全是否之处给出；条件编号时，最小的识恰在这一全知处不成立，不需要更多，核心不假定它。读作水平永不消失，这一类整体只需要弱的规则；读作终将消失，一个相关的整体（经典地是其补，在核心中是另一个律）需要有限全知原则的规则。数学是标准的：构造性反推数学中的弱有限全知原则（Bridges 与 Richman 1987；有限全知原则出自 Bishop 1967），这里以规则陈述。",
@@ -398,7 +398,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -495,6 +495,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

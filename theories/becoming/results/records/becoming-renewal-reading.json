@@ -14,8 +14,8 @@
     "en": "Renewal and consumption are classes of runs; under a correspondence discipline a common condition gives connection, and significance passes along co-participation."
   },
   "claim": {
-    "zh": "任一过程的任一运行，经条件的可观测量读出，都是一个关系展开，更新／消耗分类适用于它。从某步起不再上升的自然数可观测量不在任意晚的步下降，耗竭、自然数秩的复现更新与无更新汲取都是这一原则的情形。分类属于运行：同一过程、同一初始配置下，焦点形成每步都活跃，一次运行更新，另一次消耗。按关系读法取活的形成事件，并以共同参与某一条件为关系：每个活的形成都参与的条件使整体连通，于是 G0 恰等于种子加 N_rel 加 N_std；条件互不相交时可不连通。消耗者与被它消耗的形成共同参与被汲取的条件，故在 N_rel 下，珍视消耗者活动的立场必珍视被它消耗的形成的每个活的事件；传递沿共同参与进行，不用到消耗本身。",
-    "en": "Every run of every process, read through observables of conditions, is one relational unfolding to which the renewing/consuming classification applies. A natural-number observable that never rises from some step on does not fall at arbitrarily late steps; depletion, recurrent renewal under a natural rank and unrenewed drawdown are its cases. The class belongs to the run: in one process from one configuration, with the focal formation active at every step, one run renews and another consumes. Reading living formation events relationally and relating events whose formations participate in a common condition, a condition in which every living formation participates makes the whole connected, so G0 is exactly a seed with N_rel and N_std; disjoint conditions can leave it unconnected. A consumer and the formation it consumes participate in the drawn condition, so under N_rel a standpoint valuing the consumer's activity holds significant every living event of the formation it consumes; the transmission runs along co-participation and does not use consumption itself."
+    "zh": "任一过程的任一运行，经条件的可观测量读出，都是一个关系展开，更新／消耗分类适用于它。从某步起不再上升的自然数可观测量不在任意晚的步下降，耗竭、自然数秩的复现更新与无更新汲取都是这一原则的情形。分类属于运行：同一过程、同一初始配置下，焦点形成每步都活跃，一次运行更新，另一次消耗。按关系读法取活的形成事件，并以共同参与某一条件为关系：每个活的形成都参与的条件使整体连通，于是生生之意义恰等于种子加关系中立加立场中立；条件互不相交时可不连通。消耗者与被它消耗的形成共同参与被汲取的条件，故在关系中立下，珍视消耗者活动的立场必珍视被它消耗的形成的每个活的事件；传递沿共同参与进行，不用到消耗本身。",
+    "en": "Every run of every process, read through observables of conditions, is one relational unfolding to which the renewing/consuming classification applies. A natural-number observable that never rises from some step on does not fall at arbitrarily late steps; depletion, recurrent renewal under a natural rank and unrenewed drawdown are its cases. The class belongs to the run: in one process from one configuration, with the focal formation active at every step, one run renews and another consumes. Reading living formation events relationally and relating events whose formations participate in a common condition, a condition in which every living formation participates makes the whole connected, so living significance is exactly a seed with relational and standpoint neutrality; disjoint conditions can leave it unconnected. A consumer and the formation it consumes participate in the drawn condition, so under relational neutrality a standpoint valuing the consumer's activity holds significant every living event of the formation it consumes; the transmission runs along co-participation and does not use consumption itself."
   },
   "hypotheses": [
     {
@@ -796,6 +796,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: outdated labels (G0, N_rel/N_std) replaced by the current vocabulary (living significance, relational and standpoint neutrality), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

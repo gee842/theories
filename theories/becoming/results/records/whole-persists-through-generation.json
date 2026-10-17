@@ -153,15 +153,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
       "detail": {
-        "zh": "Whole 是活动的重合：每个形成都是它自身的整体（whole_self），两个每步都活跃的形成互为整体（Immortal.each_other）（第七次独立审查 K3）。",
-        "en": "Whole is coincidence of activity: every formation is the whole of itself (whole_self), and two formations active at every step are each the whole of the other (Immortal.each_other) (seventh independent review, K3)."
+        "zh": "Whole 是活动的重合：每个形成都是它自身的整体（whole_self），两个每步都活跃的形成互为整体（Immortal.each_other）。",
+        "en": "Whole is coincidence of activity: every formation is the whole of itself (whole_self), and two formations active at every step are each the whole of the other (Immortal.each_other)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
       "detail": {
-        "zh": "在 Brief 之下，生成可以是同样的部分反复生起（Layered.brief、Layered.within、Layered.arise_again）：Layered 的两个成员都 Brief 1，arises_within 适用，每步都有成员生起，每次生起都是两者之一，它们的活动不终结（第七次独立审查 K3、K5）。",
-        "en": "Under Brief, generation may be the same parts arising again (Layered.brief, Layered.within, Layered.arise_again): both members of Layered are Brief 1, arises_within applies, a member arises at every step, every arising is of one of the two, and neither's activity ends (seventh independent review, K3, K5)."
+        "zh": "在 Brief 之下，生成可以是同样的部分反复生起（Layered.brief、Layered.within、Layered.arise_again）：Layered 的两个成员都 Brief 1，arises_within 适用，每步都有成员生起，每次生起都是两者之一，它们的活动不终结。",
+        "en": "Under Brief, generation may be the same parts arising again (Layered.brief, Layered.within, Layered.arise_again): both members of Layered are Brief 1, arises_within applies, a member arises at every step, every arising is of one of the two, and neither's activity ends."
       }
     }
   ],
@@ -668,6 +668,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: review-round labels removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

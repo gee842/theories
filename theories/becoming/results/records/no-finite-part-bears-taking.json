@@ -218,43 +218,43 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "detail": {
-        "zh": "耗散只约束有封闭有限家族的步（Spray.spray）：汇与无穷多个辅助条件交换，没有一步有封闭的有限家族，耗散空成立；补充者每步给池而不取用，越出的交换是汇的与池无关的交换（第六次独立审查 J1）。",
-        "en": "Dissipation constrains only steps at which some finite family is closed (Spray.spray): a sink exchanges with infinitely many auxiliary conditions, no step has a closed finite family, and dissipation holds vacuously; a renewer gives the pool at every step while taking nothing, and the exchange beyond is the sink's, unrelated to the pool (sixth independent review, J1)."
+        "zh": "耗散只约束有封闭有限家族的步（Spray.spray）：汇与无穷多个辅助条件交换，没有一步有封闭的有限家族，耗散空成立；补充者每步给池而不取用，越出的交换是汇的与池无关的交换。",
+        "en": "Dissipation constrains only steps at which some finite family is closed (Spray.spray): a sink exchanges with infinitely many auxiliary conditions, no step has a closed finite family, and dissipation holds vacuously; a renewer gives the pool at every step while taking nothing, and the exchange beyond is the sink's, unrelated to the pool."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "detail": {
-        "zh": "复现的取用不必来自更多或生起（Lone.lone、Lone.frontier）：一个恒定的取用者，没有生起也不更多，在耗散之下同样使包含池的每个有限家族不从任何一步起一直封闭（第六次独立审查 J2）。",
-        "en": "Recurring uptake need not come from more or from arising (Lone.lone, Lone.frontier): a single steady consumer, with nothing arising and no growth, under dissipation also leaves every finite family containing the pool closed from no step on (sixth independent review, J2)."
+        "zh": "复现的取用不必来自更多或生起（Lone.lone、Lone.frontier）：一个恒定的取用者，没有生起也不更多，在耗散之下同样使包含池的每个有限家族不从任何一步起一直封闭。",
+        "en": "Recurring uptake need not come from more or from arising (Lone.lone, Lone.frontier): a single steady consumer, with nothing arising and no growth, under dissipation also leaves every finite family containing the pool closed from no step on."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "detail": {
-        "zh": "全部前提的正面见证（Rooted.rooted）：生长者依存于池时，平衡、Acting、Taking、Dependent、普查、耗散、更多与不息同时成立，池的家族由 opens_of_arising 打开；扩张、循环、脉动、恒定取用者、重复形成与振荡都不耗散（witnesses_not_dissipative）（第六次独立审查 J3）。",
-        "en": "A positive witness of every premise (Rooted.rooted): with the growers depending on the pool, balance, Acting, Taking, Dependent, a census, dissipation, more and unceasing generation hold together, and the pool's families open by opens_of_arising; the expansion, cycle, pulse, steady consumer, repeated formation and oscillation are not dissipative (witnesses_not_dissipative) (sixth independent review, J3)."
+        "zh": "全部前提的正面见证（Rooted.rooted）：生长者依存于池时，平衡、Acting、Taking、Dependent、普查、耗散、更多与不息同时成立，池的家族由 opens_of_arising 打开；扩张、循环、脉动、恒定取用者、重复形成与振荡都不耗散（witnesses_not_dissipative）。",
+        "en": "A positive witness of every premise (Rooted.rooted): with the growers depending on the pool, balance, Acting, Taking, Dependent, a census, dissipation, more and unceasing generation hold together, and the pool's families open by opens_of_arising; the expansion, cycle, pulse, steady consumer, repeated formation and oscillation are not dissipative (witnesses_not_dissipative)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "复现的取用不使家族汲入，除非家族被围住（SprayShuttle.taking_opens_anyway、opens_anyway）：两方每步从两方的家族取用，Dissipative.opens 的结论由汇与辅助关系项的交换满足，给予家族的关系项只从家族取用，没有一步围住家族（第七次独立审查 K1）。",
-        "en": "Recurring taking need not make a family draw in unless the family is enclosed around (SprayShuttle.taking_opens_anyway, opens_anyway): the sides take from their family at every step, the conclusion of Dissipative.opens is met by the sink's exchange with auxiliary relata, every relatum giving to the family takes only from it, and no step encloses the family around (seventh independent review, K1)."
+        "zh": "复现的取用不使家族汲入，除非家族被围住（SprayShuttle.taking_opens_anyway、opens_anyway）：两方每步从两方的家族取用，Dissipative.opens 的结论由汇与辅助关系项的交换满足，给予家族的关系项只从家族取用，没有一步围住家族。",
+        "en": "Recurring taking need not make a family draw in unless the family is enclosed around (SprayShuttle.taking_opens_anyway, opens_anyway): the sides take from their family at every step, the conclusion of Dissipative.opens is met by the sink's exchange with auxiliary relata, every relatum giving to the family takes only from it, and no step encloses the family around."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "detail": {
-        "zh": "围住与汲入的正面见证（Frontier.enclosed、Frontier.around、Frontier.draws_in、Lone.enclosed、Lone.draws_in）：Frontier、Rooted（共用 Frontier 的流）与 Lone 每步都被封闭，池的家族被围住，并且不从任何一步起一直向内（第七次独立审查 K1、K8(f)）。",
-        "en": "Positive witnesses of enclosure around and drawing in (Frontier.enclosed, Frontier.around, Frontier.draws_in, Lone.enclosed, Lone.draws_in): Frontier, Rooted (which shares Frontier's flow) and Lone are enclosed at every step, and the pool's family is enclosed around and inward from no step on (seventh independent review, K1, K8(f))."
+        "zh": "围住与汲入的正面见证（Frontier.enclosed、Frontier.around、Frontier.draws_in、Lone.enclosed、Lone.draws_in）：Frontier、Rooted（共用 Frontier 的流）与 Lone 每步都被封闭，池的家族被围住，并且不从任何一步起一直向内。",
+        "en": "Positive witnesses of enclosure around and drawing in (Frontier.enclosed, Frontier.around, Frontier.draws_in, Lone.enclosed, Lone.draws_in): Frontier, Rooted (which shares Frontier's flow) and Lone are enclosed at every step, and the pool's family is enclosed around and inward from no step on."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "detail": {
-        "zh": "“给予被耗散家族的形成从家族取用”需要家族被耗散：Frontier 中补充者给池而不从池取用，池的家族不封闭（Frontier.gives_without_taking）；gives_less 需要家族不重复：Lone 中列出池两次与当步燃料的家族跨该步封闭，源给它两份也取两份（Lone.repeated_family）（第七次独立审查 K2、K8(e)）。",
-        "en": "“A formation giving to a family dissipated on takes from it” needs the family dissipated on: in Frontier the renewer gives to the pool without taking from it, the pool's family not being closed (Frontier.gives_without_taking); gives_less needs the family without repetition: in Lone the family listing the pool twice and that step's fuel is closed across the step, and the source gives it two units while taking two (Lone.repeated_family) (seventh independent review, K2, K8(e))."
+        "zh": "“给予被耗散家族的形成从家族取用”需要家族被耗散：Frontier 中补充者给池而不从池取用，池的家族不封闭（Frontier.gives_without_taking）；gives_less 需要家族不重复：Lone 中列出池两次与当步燃料的家族跨该步封闭，源给它两份也取两份（Lone.repeated_family）。",
+        "en": "“A formation giving to a family dissipated on takes from it” needs the family dissipated on: in Frontier the renewer gives to the pool without taking from it, the pool's family not being closed (Frontier.gives_without_taking); gives_less needs the family without repetition: in Lone the family listing the pool twice and that step's fuel is closed across the step, and the source gives it two units while taking two (Lone.repeated_family)."
       }
     }
   ],
@@ -1036,6 +1036,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: review-round labels removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

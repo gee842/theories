@@ -2,8 +2,8 @@
   "schema_version": 2,
   "id": "alignment-direction-g0-j",
   "title": {
-    "zh": "G0/J 的 AI 对齐方向应用",
-    "en": "AI alignment direction from G0/J"
+    "zh": "生生之意义与实践承诺下的 AI 对齐方向应用",
+    "en": "AI alignment direction from living significance and the practical commitments"
   },
   "kind": "argument",
   "status": "reviewed-scoped",
@@ -82,15 +82,15 @@
       "kind": "correspondence"
     },
     {
-      "zh": "不证明 G0 的无公理必然性。",
-      "en": "It does not prove axiom-free necessity of G0.",
+      "zh": "不证明生生之意义的无公理必然性。",
+      "en": "It does not prove axiom-free necessity of living significance.",
       "kind": "scope"
     }
   ],
   "progress": [
     {
-      "zh": "公开推理链：生生的正面意义（G0）→ 有根据的比较（J1–J4）→ 实践要求 → AI 对齐方向及其修订条件；实际对应 E 含证据充分性与规范根据。",
-      "en": "Disclosed chain: positive significance of living and further generation (G0) → warranted comparison (J1–J4) → practical requirements → AI direction and revision conditions; E covers evidential adequacy and normative warrant.",
+      "zh": "公开推理链：生生的正面意义（生生之意义）→ 有根据的比较（实践承诺）→ 实践要求 → AI 对齐方向及其修订条件；实际对应 E 含证据充分性与规范根据。",
+      "en": "Disclosed chain: positive significance of living and further generation (living significance) → warranted comparison (the practical commitments) → practical requirements → AI direction and revision conditions; E covers evidential adequacy and normative warrant.",
       "source": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md#1-result-and-inference-advanced"
     },
     {
@@ -107,7 +107,7 @@
     {
       "path": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
       "role": "statement",
-      "sha256": "4802de55a9722c45a4cd0a9d85b024f16d6aee6a422bb1d7d5186b34f3068b16",
+      "sha256": "11467e87a5a3543f0a7d6d704a3f50a974df5c018353c3a7e6441c4f59ece99f",
       "declarations": []
     },
     {
@@ -228,6 +228,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): ALIGNMENT-DIRECTION.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments, named by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): ALIGNMENT-DIRECTION.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [
@@ -246,12 +252,12 @@
       "zh": "能够评价并修订目的的 AI 对齐"
     },
     "summary": {
-      "en": "The core, explicit practical commitments J1–J4, and warranted AI correspondence provide a normative framework for aligning learning, action, correction, transfer and appropriate ending with actual living and further shared generation. Human instructions, institutional objectives and an AI’s current goals all admit ethical evaluation. Alignment that evaluates its ends needs normative criteria; within this framework, generative reasons must enter that judgment. This requirement has the stated axiomatic scope: the argument does not establish this formulation as the uniquely possible foundation of every alignment theory.",
-      "zh": "核心、公开的 J1–J4 实践承诺及有根据的 AI 对应，共同提供规范框架，使学习、行动、纠正、交接和适当结束指向真实的生与进一步共同生成。人类指令、机构目标及 AI 当前目的都可以接受伦理评价。评价目的的对齐需要规范判准；在本框架中，生成理由必须进入判断。这项必要要求具有明示的公理范围；论证不声称该表述是每一种对齐理论唯一可能的基础。"
+      "en": "The core, the explicit practical commitments, and warranted AI correspondence provide a normative framework for aligning learning, action, correction, transfer and appropriate ending with actual living and further shared generation. Human instructions, institutional objectives and an AI’s current goals all admit ethical evaluation. Alignment that evaluates its ends needs normative criteria; within this framework, generative reasons must enter that judgment. This requirement has the stated axiomatic scope: the argument does not establish this formulation as the uniquely possible foundation of every alignment theory.",
+      "zh": "核心、公开的实践承诺及有根据的 AI 对应，共同提供规范框架，使学习、行动、纠正、交接和适当结束指向真实的生与进一步共同生成。人类指令、机构目标及 AI 当前目的都可以接受伦理评价。评价目的的对齐需要规范判准；在本框架中，生成理由必须进入判断。这项必要要求具有明示的公理范围；论证不声称该表述是每一种对齐理论唯一可能的基础。"
     },
     "evidence": {
-      "zh": "已完成并经独立审查的哲学论证，含一个说明哪些变化会改变判断的 AI 案例。Lean 检查案例中的判断确由所述 G0 与 J1–J4 推出，交叉基本损失不排序（经独立重编译）。另行检查表明：J2 不由 C 推出（G0 不约束排序）；在一个所给磨损规律下，一步的形成计数把消耗型接续排在持续形成之前，而这种消耗随后终止共享形成。前提是否正确、部署系统是否认可或遵循，是另外的问题。",
-      "en": "A completed philosophical argument with independent review, including a worked AI case that names which changes alter the verdict. Lean checks that the case's verdicts follow from G0 and J1–J4 as stated, with crossed basic losses left unranked (independently recompiled). Separate checks show that J2 does not follow from C (G0 does not constrain ordering), and that under a supplied wear law a one-step count of formation ranks a consuming continuation above sustained formation, although such consumption later ends co-dependent formation. Whether the premises are right, and whether deployed systems recognize or comply with them, are separate questions."
+      "zh": "已完成并经独立审查的哲学论证，含一个说明哪些变化会改变判断的 AI 案例。Lean 检查案例中的判断确由所述生生之意义与实践承诺推出，交叉基本损失不排序（经独立重编译）。另行检查表明：基本保护优先不由 C 推出（生生之意义不约束排序）；在一个所给磨损规律下，一步的形成计数把消耗型接续排在持续形成之前，而这种消耗随后终止共享形成。前提是否正确、部署系统是否认可或遵循，是另外的问题。",
+      "en": "A completed philosophical argument with independent review, including a worked AI case that names which changes alter the verdict. Lean checks that the case's verdicts follow from living significance and the practical commitments as stated, with crossed basic losses left unranked (independently recompiled). Separate checks show that the priority of basic conditions does not follow from C (living significance does not constrain ordering), and that under a supplied wear law a one-step count of formation ranks a consuming continuation above sustained formation, although such consumption later ends co-dependent formation. Whether the premises are right, and whether deployed systems recognize or comply with them, are separate questions."
     }
   }
 }

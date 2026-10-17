@@ -32,7 +32,7 @@
 - Real or complex amplitudes, which are not sums of finitely many units; infinitely many steps.
 - That the enumeration lists each trace once: the counts are over the enumeration, which holds exactly the traces, and no theorem excludes repetition. Witness: `Becoming.FinerTraces.mem_finer_iff`.
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

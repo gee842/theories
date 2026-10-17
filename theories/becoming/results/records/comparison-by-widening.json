@@ -14,8 +14,8 @@
     "en": "On level paths, an extension in which every claim counts as living is exactly a widening of what can form, by unfolding Extension there into Widens; with “better” read as widening, C holds for every reading of living, with no axiom; that widening is better is an open warrant."
   },
   "claim": {
-    "zh": "在依存网的水平路径框架（Web.paths）上，主张是（形成，步），一条水平路径实现它恰当在该步接纳该形成。以每个主张都算作活，水平路径 l 对 l′ 的扩展（Extension：实现 l′ 实现的每个主张，并多实现一个）恰是 l 扩大 l′，即包含且超出它（Web.paths_extension_iff_widens）。对 living 的任何读法，扩展都是以每个主张为活的扩展，所以以“更好”读作扩大，C（每个扩展都更好）成立（Web.paths_comparison_widens），不用公理。以公理为条件，扩大就是保留且增加有意义者（Web.widens_iff_retains_adds，见 significance-retained-within-margin），所以水平路径上以公理推出的 C（Web.paths_g0_comparison，见 one-axiom-yields-g0）是它在意义上的读法。",
-    "en": "On the frame of a web's level paths (Web.paths), claims are pairs of a formation and a step, and a level path realizes one exactly when it admits the formation at that step. With every claim counting as living, an extension of l′ by l (Extension: realizing every claim l′ realizes, and one more) is exactly l widening l′, including and exceeding it (Web.paths_extension_iff_widens). For any reading of living, an extension is an extension with every claim living, so with “better” read as widening, C, that every extension is better, holds (Web.paths_comparison_widens), with no axiom. With the axiom as a condition, widening is retaining and adding what has significance (Web.widens_iff_retains_adds, see significance-retained-within-margin), so the C the axiom gives on level paths (Web.paths_g0_comparison, see one-axiom-yields-g0) is its reading in significance."
+    "zh": "在依存网的水平路径框架（Web.paths）上，主张是（形成，步），一条水平路径实现它恰当在该步接纳该形成。以每个主张都算作活，水平路径 l 对 l′ 的扩展（Extension：实现 l′ 实现的每个主张，并多实现一个）恰是 l 扩大 l′，即包含且超出它（Web.paths_extension_iff_widens）。对 living 的任何读法，扩展都是以每个主张为活的扩展，所以以“更好”读作扩大，C（每个扩展都更好）成立（Web.paths_comparison_widens），不用公理。在延续条件之下，扩大就是保留且增加有意义者（Web.widens_iff_retains_adds，见 significance-retained-within-margin），所以水平路径上由延续条件推出的 C（Web.paths_g0_comparison，见 one-axiom-yields-g0）是它在意义上的读法。",
+    "en": "On the frame of a web's level paths (Web.paths), claims are pairs of a formation and a step, and a level path realizes one exactly when it admits the formation at that step. With every claim counting as living, an extension of l′ by l (Extension: realizing every claim l′ realizes, and one more) is exactly l widening l′, including and exceeding it (Web.paths_extension_iff_widens). For any reading of living, an extension is an extension with every claim living, so with “better” read as widening, C, that every extension is better, holds (Web.paths_comparison_widens), with no axiom. Under the continuation condition, widening is retaining and adding what has significance (Web.widens_iff_retains_adds, see significance-retained-within-margin), so the C the continuation condition gives on level paths (Web.paths_g0_comparison, see one-axiom-yields-g0) is its reading in significance."
   },
   "hypotheses": [
     {
@@ -181,7 +181,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311",
       "declarations": []
     },
     {
@@ -417,6 +417,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: outdated labels (the axiom) replaced by the current vocabulary (the continuation condition), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ]
 }

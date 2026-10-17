@@ -197,7 +197,7 @@
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
       "role": "statement",
-      "sha256": "b23e83486f729bff9b4919d8788b41de306374b9fac5af71933adeec38291b34",
+      "sha256": "f58f46abc5800cf4b6b7cb43aa89acea0c89f92b5c65161c3ecc2383da167994",
       "declarations": []
     },
     {
@@ -257,6 +257,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): SCIENTIFIC-PHILOSOPHY.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): SCIENTIFIC-PHILOSOPHY.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ]
 }

@@ -91,7 +91,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 <a id="复用与下一增量-reuse-and-next-delta"></a>
 ## Reuse and next delta
 
-P99 completes the local interface from mismatch to the next reference plan, checked installation and repeated use. Remaining questions concern formation/correspondence of supplied contact, faithful return and revision primitives, formal handoffs across older material models, and general attraction; do not reopen the completed local interface.
+The local interface from mismatch to the next reference plan, checked installation and repeated use is complete. Remaining questions concern formation/correspondence of supplied contact, faithful return and revision primitives, formal handoffs across older material models, and general attraction; do not reopen the completed local interface.
 
 Aliases: `Becoming.Learning.Training.keeps_through_iff`, `Becoming.Learning.Training.lost_choice`, `Becoming.Registration.web_keeps_iff`, `Becoming.Revising.controlled_revision`, `registration revision`, `登记关系修订`, `Becoming.Revising.feasible_iff`
 
@@ -103,4 +103,5 @@ Aliases: `Becoming.Learning.Training.keeps_through_iff`, `Becoming.Learning.Trai
 - Updates continuation after P99 closure; old receipts and proofs unchanged, with the new same-history connection recorded under its own result identity.
 - P103 integration review preserves existing claims and frozen proofs while the theory/study connect supported recurring revision; older frontiers remain dated history.
 - 14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Revision with theorems added that read `Revising` as an instance of Stock; bindings move to the new receipts (see validation scope); the claim now states the general laws of stock first (Becoming.Stock’s balanced_iff, feasible_iff_covered, product_feasible_iff), with the Revising example as their instance and covered_not_enacted and linked_not_enacted making the distinction of discrimination, support and enactment a law; a proof binding for Stock.lean is added (receipt 20261013T204910.042715Z). Status unchanged; the claim is rewritten law-first, and the examples keep their statements and proofs, with no reproof credited to them.
+- 17 October 2026, wording: P-numbers removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 7 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-under-registration-revision.json).

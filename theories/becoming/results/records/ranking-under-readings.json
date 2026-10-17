@@ -164,8 +164,8 @@
       ]
     },
     {
-      "zh": "同一定律的两个继续有同样的所需，所以在公理（Unrestricted）之下按可能性读法的扩展就是在定律的网上保留且增加有意义者。",
-      "en": "Both courses of a law have the same requirements, so under the axiom (Unrestricted) extension under the possibility reading is retaining and adding what has significance on the law's web.",
+      "zh": "同一定律的两个继续有同样的所需，所以在延续条件（Unrestricted）之下按可能性读法的扩展就是在定律的网上保留且增加有意义者。",
+      "en": "Both courses of a law have the same requirements, so under the continuation condition (Unrestricted) extension under the possibility reading is retaining and adding what has significance on the law's web.",
       "declarations": [
         "Becoming.Ranking.possible_course_iff",
         "Becoming.Ranking.possible_extends_iff",
@@ -292,22 +292,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
       "detail": {
-        "zh": "没有被记入的焦点事件时，逐步读法同样把不在场排得更高（Ranking.Immediate.stepwise_ranks_absence）：第一步就越过支持的形成，在两种读法下都排在其不在场之下；逐步读法所放弃的因此只涉及在损失之前有被记入事件的形成（第三次独立审查 G3）。",
-        "en": "When no focal event is included, the stepwise reading too ranks the absence higher (Ranking.Immediate.stepwise_ranks_absence): a formation whose first step already crosses support ranks below its absence under both readings, so what the stepwise reading gives up concerns only formations with an included event before the loss (third independent review G3)."
+        "zh": "没有被记入的焦点事件时，逐步读法同样把不在场排得更高（Ranking.Immediate.stepwise_ranks_absence）：第一步就越过支持的形成，在两种读法下都排在其不在场之下；逐步读法所放弃的因此只涉及在损失之前有被记入事件的形成。",
+        "en": "When no focal event is included, the stepwise reading too ranks the absence higher (Ranking.Immediate.stepwise_ranks_absence): a formation whose first step already crosses support ranks below its absence under both readings, so what the stepwise reading gives up concerns only formations with an included event before the loss."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
       "detail": {
-        "zh": "节制的结论不推广到第三个共用者（Ranking.ThirdParty.restraint_unranked_stepwise）：第三个形成只在水平 7 被支持；节制的继续中水平一度到 7，节制者此后的汲取侵蚀第三者曾被满足的依存，而过度汲取的继续中第三者从未被满足，同一事件被记入（ThirdParty.focal_three）；逐步读法下两次继续互不扩展，扩展本身是一个满足 C 而不把节制排得更高的比较；整段读法下节制仍扩展过度汲取（第三次独立审查 G4）。",
-        "en": "The restraint conclusion does not extend to a third co-drawer (Ranking.ThirdParty.restraint_unranked_stepwise): a third formation is supported only at level 7; in the restrained course the level reaches 7 once and the restrained formation's later draw undermines the third formation's once-met dependence, while in the overdrawing course the third formation is never met and the same event is included (ThirdParty.focal_three); under the stepwise reading neither course extends the other, and extension itself is a comparison satisfying C that does not rank restraint higher; under the whole-run reading restraint still extends overdraw (third independent review G4)."
+        "zh": "节制的结论不推广到第三个共用者（Ranking.ThirdParty.restraint_unranked_stepwise）：第三个形成只在水平 7 被支持；节制的继续中水平一度到 7，节制者此后的汲取侵蚀第三者曾被满足的依存，而过度汲取的继续中第三者从未被满足，同一事件被记入（ThirdParty.focal_three）；逐步读法下两次继续互不扩展，扩展本身是一个满足 C 而不把节制排得更高的比较；整段读法下节制仍扩展过度汲取。",
+        "en": "The restraint conclusion does not extend to a third co-drawer (Ranking.ThirdParty.restraint_unranked_stepwise): a third formation is supported only at level 7; in the restrained course the level reaches 7 once and the restrained formation's later draw undermines the third formation's once-met dependence, while in the overdrawing course the third formation is never met and the same event is included (ThirdParty.focal_three); under the stepwise reading neither course extends the other, and extension itself is a comparison satisfying C that does not rank restraint higher; under the whole-run reading restraint still extends overdraw."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
       "detail": {
-        "zh": "第三次独立审查：所审的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法所放弃的、节制、替代、交互与剩余的无需实际汲取的连通上强于 Lean（已在整合文档中更正）。",
-        "en": "Third independent review: every declaration under review is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on what the stepwise reading gives up, restraint, substitution, interaction and the remaining connection that needs no actual drawing (corrected in the integration note)."
+        "zh": "一次独立审查：所审的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法所放弃的、节制、替代、交互与剩余的无需实际汲取的连通上强于 Lean（已在整合文档中更正）。",
+        "en": "An independent review: every declaration under review is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on what the stepwise reading gives up, restraint, substitution, interaction and the remaining connection that needs no actual drawing (corrected in the integration note)."
       }
     },
     {
@@ -331,8 +331,8 @@
     "en": "Lean 4.29.1 checks, empty axiom reports: current Becoming.Ranking and Becoming.Bridge, receipt 20261013T221720.428753Z, core purity verified; this result's 19 theorems of Becoming.Relevance, receipt 20261013T094743.528770Z. Bridge adapters are not independent results. Author counterreview (integration note); the second independent review read it only for its question 4, anticipating the restraint result; the third reviewed it whole, accepted the mathematics, scoped restraint to the two-part family and supplied the included-event hypothesis. The possibility reading awaits independent review."
   },
   "next_delta": {
-    "zh": "二元定律族之外（有多个共用者，或带数量使不取者不侵蚀）的节制定理；形式化关系层读法下的同一比较；检验 J1 的基本条件优先能否在逐步读法下给出“没有恶性增殖更好”。",
-    "en": "A restraint theorem beyond the two-part family (co-drawers, or amounts so taking nothing does not undermine); the same comparison under the relation-level reading; whether J1's priority of basic conditions yields “better without malignant growth” stepwise."
+    "zh": "二元定律族之外（有多个共用者，或带数量使不取者不侵蚀）的节制定理；形式化关系层读法下的同一比较；检验基本条件优先能否在逐步读法下给出“没有恶性增殖更好”。",
+    "en": "A restraint theorem beyond the two-part family (co-drawers, or amounts so taking nothing does not undermine); the same comparison under the relation-level reading; whether the priority of basic conditions yields “better without malignant growth” stepwise."
   },
   "correspondence": {
     "zh": "两个排序在逐步读法下分道。若 G0 与 C 共用逐步读法，C 仍把共享排在以消耗取胜之上，却不再把没有恶性增殖的继续排得更高；整段读法两者都保持，但不满足独立审查的判据 (b) 与 (c)。若 G0 的记入取逐步读法而 C 取整段读法，两者都保持，但 G0 与 C 不再共用一种 living 读法：形式上两者各以读法为参数，前提卡上 C 所说的“活的内容”却是 G0 的 living，分开取须公开。依 Ren 的交托，生生读作生成的空间（DELEGATED-CHOICES D1）。可能性读法的解读（AI 论证，依 Ren 的交托采用）：它读“有意义的，就是能形成的”与 Ren 的“more possibilities of becoming”；它计能形成的，不计形成了的。在公理之下 C 以可能性读，排序来自部分失去的，而不是不计形成本身；Ren 2026-10-11 把比较的方式交 AI 决定（“Comparing courses - you decide”）：继续之间以可能性比较，理由见章节 §6.12。",
@@ -1192,6 +1192,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (the axiom, J1–J4) replaced by the current vocabulary (the continuation condition, the practical commitments by content); review-round labels removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

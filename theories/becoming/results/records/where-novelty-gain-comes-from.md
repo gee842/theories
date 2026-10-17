@@ -34,7 +34,7 @@
 - Continuous time and real amounts are not stated.
 - **Counterexample:** Web.counting with Flow.empty: nothing takes part and the family is closed, yet counting on is new at every step, the rest giving one unit at every step; so the condition that the rest gives nothing net cannot be dropped from the return of a finite whole. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · A conditional law does not make its antecedent universal; a theorem's premise is not thereby necessary for every achievement.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A conditional law does not make its antecedent universal; a theorem's premise is not thereby necessary for every achievement.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -123,7 +123,7 @@ Aliases: `where novelty's gain comes from`, `新的增益从哪里来`, `every r
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 16 October 2026: the validation scope names the receipt bound when P110–P112 landed, 20261015T192014.437564Z (it read “receipt bound at landing”); statement, proofs and bindings unchanged.
 - 16 October 2026, eighteenth review (R18): “every rise is given” (rise_netGiver) is an accounting identity: withImbalance defines the rest as the residual, and law 0 did not mark it as holding by construction (review item 34, P3). Law 0 now says “by the definition of the rest as the residual”. Claim narrowed; no theorem changed.
-- 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-novelty-gain-comes-from.json).
+- 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-novelty-gain-comes-from.json).
 
 </details>
 

@@ -146,8 +146,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261016T124157.989030Z): the 35 declarations of Becoming.Runs, 21 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 165; not independently reviewed."
   },
   "next_delta": {
-    "zh": "连接一类关系项之进程世界与两种角色之进程世界的定理；使同一化成为定义（会改已有陈述）；独立审查；Ren 对读法与对定义上的根的判断。",
-    "en": "A theorem joining the course world of one kind of relatum to that of two roles; making the identification definitional, which would change existing statements; an independent review; Ren's judgment on the readings and on a definitional root."
+    "zh": "连接一类关系项之进程世界与两种角色之进程世界的定理；使同一化成为定义（会改已有陈述）；独立审查；对读法与定义上的根的论证判断。",
+    "en": "A theorem joining the course world of one kind of relatum to that of two roles; making the identification definitional, which would change existing statements; an independent review; an argued judgment on the readings and on a definitional root."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12：“let's go back to main track, yes, i do agree with your reading, there are no two realities”。本结果回答发布准备度复核的整合所见：脊柱有两个根（Process 与 World），以对应定理相连，前沿陈述在耦合阵列上。读法（AI 的，待 Ren）：根是运行，因为其他每个读法都是运行；运行是逐步读的展开，每步是什么、怎样继续，世界是同一展开读作同类关系项的交换；同一化恰好，所以二者是一个展开的一个读法，不是两物相连，运行也不是世界之下的根基。世界对其运行无所增加；交换之律所加的，是平衡所说的位与交换的关系，作为运行之步的律。",
@@ -550,6 +550,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

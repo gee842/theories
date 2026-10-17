@@ -39,7 +39,7 @@
 - **Counterexample:** Inclusion does not order every part: Transfer's conveyor is mixed (Transfer.mixed). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
 - **Counterexample:** A part can narrow while it continues: the clearer is active and supported at every step and its part narrows what can form (Clearing.narrows; see loss-beyond-a-region). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
 
-**Standard boundaries:** Stated for discrete steps. · Contains no ethical predicate and evaluates neither arising nor ceasing. · No ethical premise and no Lean axiom is used. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** Stated for discrete steps. · Contains no ethical predicate and evaluates neither arising nor ceasing. · No ethical premise and no Lean axiom is used. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -51,7 +51,7 @@ Canonical source: [Admission.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-The premises a measure for mixed parts would need (a premise beyond the one axiom, under which every narrowing loses something with significance, so mixed parts still need a measure), without hiding it in inclusion; a witness for keeping the same; comparisons of renewal capacity and richness of relations.
+The premises a measure for mixed parts would need (a premise beyond the continuation condition, under which every narrowing loses something with significance, so mixed parts still need a measure), without hiding it in inclusion; a witness for keeping the same; comparisons of renewal capacity and richness of relations.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -110,7 +110,8 @@ Aliases: `Becoming.Web.Includes`, `Becoming.Web.Exceeds`, `Becoming.Web.Includes
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D2): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Admission.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Regions.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Significance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 16 October 2026, P128 (Ren: fold Part II into Part I as one conditional section after the generative space, [source](../../../../sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md)): where this record said Part II asserts the axiom or G0 is a theorem of Part II, it now says “with the one axiom as a condition” and points to chapter section 6.15; the theory does not assert the condition. The claim, proofs and evidence are unchanged.
-- 57 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](four-cases-of-a-part.json).
+- 17 October 2026, wording of the public fields: outdated labels (the one axiom) replaced by the current vocabulary (the continuation condition), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 58 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](four-cases-of-a-part.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

@@ -38,7 +38,7 @@
 - Responding flows are supplied in the witnesses.
 - **Counterexample:** The comparison by withheld levels keeps the rest of the exchange fixed, while the influence closure is motivated by effects passing through others: with the rest fixed only the parts that reach a formation directly register (Flow.Balances.admits_unreached), and the wolves' effect on the forest through the deer does not appear (Trophic.mediated_unregistered; see comparison-within-reach); the influence closure is an upper bound, not a characterization of what registers. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

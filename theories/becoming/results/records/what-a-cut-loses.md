@@ -37,7 +37,7 @@
 - Which strengths and schedule a given law has; real amounts, continuous time, and laws reading infinitely many conditions at a step.
 - **Counterexample:** The loop coupled once: one condition, whose one formation returns its level to it at the first step only; the loop lies upstream, yet chains in time order have at most one coupling, so order one is exact from every start: the loops that matter are those of the couplings that go on. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · A relation omitted by a weaker description does not refute the fuller account.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -49,7 +49,7 @@ Canonical source: [Remainder.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-How fast a runaway of given strengths is (a spectral radius); real amounts, continuous time and infinitely many conditions; an independent review; Ren's judgment on the readings.
+How fast a runaway of given strengths is (a spectral radius); real amounts, continuous time and infinitely many conditions; an independent review; an argued judgment on the readings.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -109,7 +109,8 @@ Aliases: `what a cut loses`, `截断所失`, `exact remainder`, `精确余项`, 
 - 16 October 2026: added, answering the first item of how-a-carried-difference-grows' next_delta, loops whose couplings come and go (P120); study section 154.
 - 16 October 2026, P123 (how often couplings act, study section 158): answers the first two items of the next step: every schedule settling is exactly the dichotomy RecursOrStops (which gives the limited principle of omniscience and which the core does not assume), and a loop of recurring couplings need not run away (the sparse self-loop), runs away where its returns are frequent, the rate counting the steps at which couplings act and attained by a self-loop; so both items are removed and the spectral radius of given strengths stays; related adds how-often-couplings-act. Also: “joining what a cut loses to the losses of the sum over histories” is answered by orders-as-a-sum-over-histories (P121: a cut at order j is a truncation at horizon j + 1), which the landing of P121 left in place, so it is removed; in related, “the two are not yet joined” becomes joined by orders-as-a-sum-over-histories, and orders-as-a-sum-over-histories is added. Statement and proofs unchanged; does_not_show still holds of this record's theorems; the readings in correspondence stay the AI's, pending Ren.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 7 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-cut-loses.json).
+- 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 8 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-cut-loses.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

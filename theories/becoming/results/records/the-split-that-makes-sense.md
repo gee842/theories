@@ -40,7 +40,7 @@
 - It does not show that any actual unfolding has finitely many states.
 - **Counterexample:** Carrying a law is not enough for sense: the split lumping everything always carries one (goAlike_const) and makes sense only where all registered futures are the same (Law.const_identifiesAlike_iff); in Motion the standing alone carries no law and the passing alone loses the standing (Motion.neither_alone). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

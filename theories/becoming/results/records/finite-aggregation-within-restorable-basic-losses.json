@@ -357,7 +357,7 @@
     {
       "path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
       "role": "statement",
-      "sha256": "c8e42f6fdb574599f94d06d5b83e1b57d4e07c097db1d5e947bfdd06d5f7fdde",
+      "sha256": "884daa2a141ab5baaa288ea2aec1fe0ec2c65f796709aa0f916263fcaaa2adcd",
       "declarations": []
     },
     {
@@ -375,7 +375,7 @@
     {
       "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "e869eae139fd35b51161d7449a8fdd2aa75fd6836ada33942a8de747c6b97cc7",
+      "sha256": "b8050f1365bbd55561f5ef30009d6779ab25af933d08a468de1865cee1965faa",
       "declarations": []
     },
     {
@@ -573,6 +573,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BASIC-CONFLICT-JUDGMENT.md, CROSSED-CLAIMS-ARGUMENT.md, CROSSED-CLAIMS-INTEGRATION.md, PRACTICAL-JUDGMENT.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): BASIC-CONFLICT-JUDGMENT.md, PRACTICAL-JUDGMENT.md now use the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

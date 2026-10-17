@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-08T18:51:23.185277+00:00",
   "claim": {
-    "zh": "在明示 G0、形成对应 E 与位置化直接实践解释 D 下，凡对某回应有实际通达的位置，都具有支持该回应的一项理由，不论其是否认同、属于何种载体或带有何种身份标签。D 所给出的最小理由只由通达关系与正面根据决定，因此通达相同的位置具有相同的这一理由；无通达的位置不从这条路线获得理由。认同无关性是 D 的内容，而非 G0 与 E 的推论：以认同为条件的实践解释与同一 G0 及形成事实相容，却不给有通达、不认同的位置这项理由。",
-    "en": "Under explicit G0, formation correspondence E and a positioned direct articulation D, every position with actual access to a response has a contributory reason for it, whatever its endorsement, substrate or identity labels. The least reason satisfying D is fixed by access and positive ground alone, so positions alike in access are alike in this reason; a position without access receives no reason from this route. Endorsement independence is the content of D, not a consequence of G0 and E: an endorsement-conditional articulation is compatible with the same G0 and formation facts yet withholds the reason from a non-endorsing position with access."
+    "zh": "在明示生生之意义、形成对应 E 与位置化直接实践解释 D 下，凡对某回应有实际通达的位置，都具有支持该回应的一项理由，不论其是否认同、属于何种载体或带有何种身份标签。D 所给出的最小理由只由通达关系与正面根据决定，因此通达相同的位置具有相同的这一理由；无通达的位置不从这条路线获得理由。认同无关性是 D 的内容，而非生生之意义与 E 的推论：以认同为条件的实践解释与同一生生之意义及形成事实相容，却不给有通达、不认同的位置这项理由。",
+    "en": "Under explicit living significance, formation correspondence E and a positioned direct articulation D, every position with actual access to a response has a contributory reason for it, whatever its endorsement, substrate or identity labels. The least reason satisfying D is fixed by access and positive ground alone, so positions alike in access are alike in this reason; a position without access receives no reason from this route. Endorsement independence is the content of D, not a consequence of living significance and E: an endorsement-conditional articulation is compatible with the same living significance and formation facts yet withholds the reason from a non-endorsing position with access."
   },
   "hypotheses": [
     {
@@ -103,8 +103,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
       "detail": {
-        "zh": "以认同为条件的实践解释与同一 G0 及形成事实相容，却不给有通达、不认同的位置理由；因此认同无关性不能从 G0 推出。",
-        "en": "An endorsement-conditional articulation is compatible with the same G0 and formation facts yet withholds the reason from a non-endorsing position with access; endorsement independence therefore does not follow from G0."
+        "zh": "以认同为条件的实践解释与同一生生之意义及形成事实相容，却不给有通达、不认同的位置理由；因此认同无关性不能从生生之意义推出。",
+        "en": "An endorsement-conditional articulation is compatible with the same living significance and formation facts yet withholds the reason from a non-endorsing position with access; endorsement independence therefore does not follow from living significance."
       }
     },
     {
@@ -248,8 +248,8 @@
     }
   ],
   "next_delta": {
-    "zh": "把通达关系接到实际形成的能力与权限（J3/J4），说明不同位置的理由如何分化为有界责任；或推进从评价者自身已有承诺出发降低 D 的路线（见审查 §3.1）。",
-    "en": "Connect access to formed capacity and authority (J3/J4), showing how reasons differentiate into bounded responsibilities; or pursue the route that reduces D toward commitments every evaluator already has (review §3.1)."
+    "zh": "把通达关系接到实际形成的能力与权限（有界责任与正当可行选择的承诺），说明不同位置的理由如何分化为有界责任；或推进从评价者自身已有承诺出发降低 D 的路线（见审查 §3.1）。",
+    "en": "Connect access to formed capacity and authority (the commitments of bounded responsibility and legitimate feasible choice), showing how reasons differentiate into bounded responsibilities; or pursue the route that reduces D toward commitments every evaluator already has (review §3.1)."
   },
   "history": [
     {
@@ -295,6 +295,9 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Metaethics.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Metaethics.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

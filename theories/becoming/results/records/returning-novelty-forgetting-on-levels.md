@@ -31,7 +31,7 @@
 - Continuous time and real amounts are not stated.
 - **Counterexample:** Web.counting: the level is the step, new at every step and above every bound (Web.counting_new, Web.counting_gains); the bound in the laws cannot be dropped. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · Uses decidability of the named determinations, a logical commitment written as a hypothesis.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · Uses decidability of the named determinations, a logical commitment written as a hypothesis.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -100,7 +100,7 @@ Aliases: `laws of returning on the levels alone`, `只用水平的回返`, `nove
 - 16 October 2026, P111 (where novelty's gain comes from, study section 148): related adds where-novelty-gain-comes-from. Statement and proofs unchanged.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Novelty.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Imbalance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item records-mz-14: "returns" in the title and statement means revisiting here (revisits_of_bounded: from every step on some configuration takes one value at two steps; returns_of_bounded is ¬¬Revisits), unlike Recurrence's Law.Returns (the start comes back); it now says "revisits". Earlier text in text_versions.
-- 11 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](returning-novelty-forgetting-on-levels.json).
+- 12 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](returning-novelty-forgetting-on-levels.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

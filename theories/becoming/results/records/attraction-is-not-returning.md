@@ -49,7 +49,7 @@
 - **Counterexample:** A merge draws one of the two, not necessarily both: in Ratchet false and true merge, false is drawn and never returns, and true returns and is not drawn (Ratchet.false_never_returns, Ratchet.true_not_drawn). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean)
 - **Counterexample:** A region every move taken keeps need not be invariant: in Exit, {true} is absorbing under the move false and the run that only moves false stays in it, while the move true leaves it (Exit.locked_in, Exit.not_invariant, Exit.leaving_takes). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

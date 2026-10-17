@@ -272,7 +272,7 @@
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
       "role": "statement",
-      "sha256": "cbc0a4fce96f9c15876f2d54cf4ed17707f6fa769f8ddc3dc142235076e3b4a9",
+      "sha256": "f58f46abc5800cf4b6b7cb43aa89acea0c89f92b5c65161c3ecc2383da167994",
       "declarations": []
     },
     {
@@ -399,6 +399,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in SCIENTIFIC-INQUIRY-CONDITIONS.md, SCIENTIFIC-INQUIRY-EVIDENCE.md, SCIENTIFIC-PHILOSOPHY.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): SCIENTIFIC-PHILOSOPHY.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

@@ -39,7 +39,7 @@
 - The periphery instances re-read earlier results and give numerical witnesses, the delta being the connection.
 - **Counterexample:** A wrong lumping generalizes wrongly: in Shift, where the world differs across positions, a function lumped by content and fitting the world on the data is wrong at the untried position (Shift.wrong_both); the class of every function determines nothing at an untried input (every_determines_nothing). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
 
-**Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

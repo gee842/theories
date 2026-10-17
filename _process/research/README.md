@@ -83,7 +83,7 @@ Studies retired as a whole are under [`_process/history/`](../history/):
 | `2026-10-05-support-and-shared-generativity/` | 112 |
 | `2026-10-05-unified-theory/` | 34 |
 | `2026-10-07-handoffs/` | 10 |
-| `2026-10-17-instructions/` | 2 |
+| `2026-10-17-instructions/` | 3 |
 | `workboard/` | 1 |
 
 Rerun `make research-render` after a study is added or a batch moved to history.

@@ -121,8 +121,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T204525.767887Z): the 39 declarations of Becoming.Routes, 30 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 155; not independently reviewed."
   },
   "next_delta": {
-    "zh": "按恰好 i 次回应分组（对可交换的相加）；带号的携带差别与相消；无穷多路线点与无界的视界；独立审查；Ren 对读法的判断。",
-    "en": "Grouping by exactly i responses (for alternatives that commute); signed carried differences and cancellation; infinitely many route points and unbounded horizons; an independent review; Ren's judgment on the readings."
+    "zh": "按恰好 i 次回应分组（对可交换的相加）；带号的携带差别与相消；无穷多路线点与无界的视界；独立审查；对读法的论证判断。",
+    "en": "Grouping by exactly i responses (for alternatives that commute); signed carried differences and cancellation; infinitely many route points and unbounded horizons; an independent review; an argued judgment on the readings."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 问不确定的律的积分（“how how accurate can we do that uh what is the limitation do we have losses”）。Ren 2026-10-16 取了读法：所问的积分是 P82 的历史之和及其四种损失，P118 的阶是同一结构类的，按回应次数组织，如同费曼图按顶点数，两者尚未连起来；并说“joining P82's sum over histories with P118's orders … let's finish both”。本结果完成接合，回答 how-a-carried-difference-grows 与 losses-of-the-sum-over-histories 中把两者接上的一项。读法（AI 的，Ren 2026-10-16 同意）：沿时间往回的路线是历史，它的步是回应（顶点），顶点之间水平保持，如同传播子对中间时刻求和；两个积分是一个，P82 的回路损失就是 P118 的失控；对应是结构的，不是物理的，计数的权重不相消。数学是标准的：线性递推的路径之和与按相互作用次数的展开。",
@@ -545,6 +545,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

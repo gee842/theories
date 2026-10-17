@@ -358,8 +358,8 @@
       "kind": "scope"
     },
     {
-      "zh": "接续、任期经由接续的延续与“生生不息”的层次是读法，依 Ren 的交托决定，不由本结果给出。",
-      "en": "Succession, a tenure's continuing through it and the level of 生生不息 are readings, decided on Ren's delegation, not given by this result.",
+      "zh": "接续、任期经由接续的延续与“生生不息”的层次是读法，不由本结果给出。",
+      "en": "Succession, a tenure's continuing through it and the level of 生生不息 are readings, not given by this result.",
       "kind": "correspondence"
     },
     {
@@ -379,64 +379,64 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "detail": {
-        "zh": "TideFlip：没有生起的潮水与月亮，每个奇数步交换名字，单由命名造成的生起满足 Unceasing.regeneration_recurs 的全部前提；Depletes 不筛掉命名的产物（第五次独立审查 I8）。",
-        "en": "TideFlip: the tide and the moon with nothing arising, their names exchanged at every odd step; arisings made by naming alone meet every premise of Unceasing.regeneration_recurs, so Depletes does not screen out what naming makes (fifth independent review I8)."
+        "zh": "TideFlip：没有生起的潮水与月亮，每个奇数步交换名字，单由命名造成的生起满足 Unceasing.regeneration_recurs 的全部前提；Depletes 不筛掉命名的产物（独立审查 I8）。",
+        "en": "TideFlip: the tide and the moon with nothing arising, their names exchanged at every odd step; arisings made by naming alone meet every premise of Unceasing.regeneration_recurs, so Depletes does not screen out what naming makes (independent review I8)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "detail": {
-        "zh": "Lineage 与 Succession：保持单向连续的改认仍可隐藏生起、增加侵蚀，后继者活跃并在其第一个活跃步被满足；两者都是接续，合并的命名只单向保持连续（Lineage.one_way、Succession.one_way，第五次独立审查 I5、I11）。",
-        "en": "Lineage and Succession: re-identifications keeping one-way continuity can still hide arising and add undermining, with a successor active and supported at its first active step; both are succession, and the joined naming keeps continuity only one way (Lineage.one_way, Succession.one_way, fifth independent review I5, I11)."
+        "zh": "Lineage 与 Succession：保持单向连续的改认仍可隐藏生起、增加侵蚀，后继者活跃并在其第一个活跃步被满足；两者都是接续，合并的命名只单向保持连续（Lineage.one_way、Succession.one_way，独立审查 I5、I11）。",
+        "en": "Lineage and Succession: re-identifications keeping one-way continuity can still hide arising and add undermining, with a successor active and supported at its first active step; both are succession, and the joined naming keeps continuity only one way (Lineage.one_way, Succession.one_way, independent review I5, I11)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "detail": {
-        "zh": "Dormancy：跨过休眠之步接起来，双向保持连续，仍改变形成的类：分开命名时早的形成更新、晚的形成消耗，接起来后名为“早”的形成消耗而不更新（第五次独立审查 I6）。",
-        "en": "Dormancy: joining across a dormant step keeps continuity both ways and still changes a formation's class: named apart, the early formation renews and the late one consumes; joined, the formation named early consumes and does not renew (fifth independent review I6)."
+        "zh": "Dormancy：跨过休眠之步接起来，双向保持连续，仍改变形成的类：分开命名时早的形成更新、晚的形成消耗，接起来后名为“早”的形成消耗而不更新（独立审查 I6）。",
+        "en": "Dormancy: joining across a dormant step keeps continuity both ways and still changes a formation's class: named apart, the early formation renews and the late one consumes; joined, the formation named early consumes and does not renew (independent review I6)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "detail": {
-        "zh": "Budding：在循环中普查、present 不重复、Taking 与不止地更多都成立；把新形成读作从形成 0 萌出（一个形成延续为多个），第一步之后没有任何生起：有的分裂使“更多迫使生起”失效（第五次独立审查 I9）；没有分裂是充分条件，一次分裂不必使它失效（Fork，第六次独立审查 J9）。",
-        "en": "Budding: in the cycle the census, present without repetition, Taking and more without end all hold; reading new formations as budding from formation 0 (one formation continuing as many), nothing arises after the first step: some splits defeat “more forces arising” (fifth independent review I9); no split is sufficient, and a single split need not defeat it (Fork, sixth independent review J9)."
+        "zh": "Budding：在循环中普查、present 不重复、Taking 与不止地更多都成立；把新形成读作从形成 0 萌出（一个形成延续为多个），第一步之后没有任何生起：有的分裂使“更多迫使生起”失效（独立审查 I9）；没有分裂是充分条件，一次分裂不必使它失效（Fork，独立审查 J9）。",
+        "en": "Budding: in the cycle the census, present without repetition, Taking and more without end all hold; reading new formations as budding from formation 0 (one formation continuing as many), nothing arises after the first step: some splits defeat “more forces arising” (independent review I9); no split is sufficient, and a single split need not defeat it (Fork, independent review J9)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "detail": {
-        "zh": "Layered：把谱系本身与成员并列命名，谱系每步活跃，成员不息地生起；谱系与成员之间部分与整体的关系不在 Identity 的依存网中（第五次独立审查 I10）；Becoming.Wholes 中谱系是其成员的整体（Layered.composed）。",
-        "en": "Layered: naming the lineage itself beside its members, the lineage is active at every step while its members arise without end; the part–whole relation between them is not in Identity's web (fifth independent review I10); in Becoming.Wholes the lineage is the whole of its members (Layered.composed)."
+        "zh": "Layered：把谱系本身与成员并列命名，谱系每步活跃，成员不息地生起；谱系与成员之间部分与整体的关系不在 Identity 的依存网中（独立审查 I10）；Becoming.Wholes 中谱系是其成员的整体（Layered.composed）。",
+        "en": "Layered: naming the lineage itself beside its members, the lineage is active at every step while its members arise without end; the part–whole relation between them is not in Identity's web (independent review I10); in Becoming.Wholes the lineage is the whole of its members (Layered.composed)."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P11B-P12-REVIEW.md",
       "detail": {
-        "zh": "第五次独立审查：本记录当时的全部声明接受，公理报告为空；连续只单向、休眠中的接续、“名字不承载任何东西”、命名造成的生起满足 Unceasing.regeneration_recurs 的前提、“每种同一的读法”与对分裂的描述、谱系的二选一、后继者从不活跃，以及依赖同一的读法未在其记录中注明（已在整合文档中更正）。",
-        "en": "Fifth independent review: every declaration of this record then is accepted with empty axiom reports; one-way continuity, succession across dormancy, “names carry nothing”, naming-made arisings meeting the premises of Unceasing.regeneration_recurs, “every reading of identity” and the description of splits, the lineage either/or, the successor that never lives, and identity-dependent readings unmarked in their records (corrected in the integration note)."
+        "zh": "独立审查：本记录当时的全部声明接受，公理报告为空；连续只单向、休眠中的接续、“名字不承载任何东西”、命名造成的生起满足 Unceasing.regeneration_recurs 的前提、“每种同一的读法”与对分裂的描述、谱系的二选一、后继者从不活跃，以及依赖同一的读法未在其记录中注明（已在整合文档中更正）。",
+        "en": "Independent review: every declaration of this record then is accepted with empty axiom reports; one-way continuity, succession across dormancy, “names carry nothing”, naming-made arisings meeting the premises of Unceasing.regeneration_recurs, “every reading of identity” and the description of splits, the lineage either/or, the successor that never lives, and identity-dependent readings unmarked in their records (corrected in the integration note)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "detail": {
-        "zh": "没有分裂不是必要条件（Fork.split_unceasing）：循环中形成 0 在第一步延续为两个，NoSplit 不成立，形成仍在任意晚的步生起（第六次独立审查 J9）。",
-        "en": "No split is not necessary (Fork.split_unceasing): in the cycle formation 0 continues as two at step one, NoSplit fails, and formations still arise at arbitrarily late steps (sixth independent review J9)."
+        "zh": "没有分裂不是必要条件（Fork.split_unceasing）：循环中形成 0 在第一步延续为两个，NoSplit 不成立，形成仍在任意晚的步生起（独立审查 J9）。",
+        "en": "No split is not necessary (Fork.split_unceasing): in the cycle formation 0 continues as two at step one, NoSplit fails, and formations still arise at arbitrarily late steps (independent review J9)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "detail": {
-        "zh": "含合并的延续下定理的前提成立（Merge.merging）：扩张的第 i 个补充者与生长者都延续为第 i 个补充者，没有分裂，可判定性由普查给出（Census.decideContinues）；但没有形成延续为生长者，持续活跃的生长者每步都被读作生起，结论不靠更多就成立（Merge.idle；第七次独立审查 K7 更正了此前“非空地适用”的说法）。被合并的形成终结时，合并下生起的恰是每步的新形成（Confluence.confluence）。由更多做功的含合并普查见证没有给出。",
-        "en": "Under a continuation with merges the theorem's premises hold (Merge.merging): the expansion's ith renewer and grower both continue as the ith renewer, there is no split, and decidability comes from the census (Census.decideContinues); but no formation continues as a grower, so a grower that stays active is re-read as arising at every step and the conclusion holds without more (Merge.idle; K7 of the seventh independent review corrected the earlier “applies non-vacuously”). Where the merged formation ends, what arises under the merge is exactly the new formation of each step (Confluence.confluence). A census witness under a merge in which more does the work is not given."
+        "zh": "含合并的延续下定理的前提成立（Merge.merging）：扩张的第 i 个补充者与生长者都延续为第 i 个补充者，没有分裂，可判定性由普查给出（Census.decideContinues）；但没有形成延续为生长者，持续活跃的生长者每步都被读作生起，结论不靠更多就成立（Merge.idle；独立审查 K7 更正了此前“非空地适用”的说法）。被合并的形成终结时，合并下生起的恰是每步的新形成（Confluence.confluence）。由更多做功的含合并普查见证没有给出。",
+        "en": "Under a continuation with merges the theorem's premises hold (Merge.merging): the expansion's ith renewer and grower both continue as the ith renewer, there is no split, and decidability comes from the census (Census.decideContinues); but no formation continues as a grower, so a grower that stays active is re-read as arising at every step and the conclusion holds without more (Merge.idle; K7 of the independent review corrected the earlier “applies non-vacuously”). Where the merged formation ends, what arises under the merge is exactly the new formation of each step (Confluence.confluence). A census witness under a merge in which more does the work is not given."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "detail": {
-        "zh": "没有普查时，没有分裂并不足够（Dormant.no_split_without_arising）：Dormant 中每个形成只延续自身，没有分裂，Taking、present 不重复与不止地更多都成立，没有任何生起（第六次独立审查 J10）。",
-        "en": "Without a census, no split is not enough (Dormant.no_split_without_arising): in Dormant, with each formation continuing only itself, there is no split, Taking, present without repetition and more without end hold, and nothing arises (sixth independent review J10)."
+        "zh": "没有普查时，没有分裂并不足够（Dormant.no_split_without_arising）：Dormant 中每个形成只延续自身，没有分裂，Taking、present 不重复与不止地更多都成立，没有任何生起（独立审查 J10）。",
+        "en": "Without a census, no split is not enough (Dormant.no_split_without_arising): in Dormant, with each formation continuing only itself, there is no split, Taking, present without repetition and more without end hold, and nothing arises (independent review J10)."
       }
     },
     {
@@ -1452,6 +1452,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: delegation phrasing (“on Ren's delegation”) replaced by marking the readings as readings; review-round ordinals removed (the findings and their codes stay), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

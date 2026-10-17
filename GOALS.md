@@ -17,7 +17,7 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 Complete the connected explanation of cognition, learning and evolutionary psychology, including how formation, retention and use change organization and its learning, evaluation and continuation through actual consequences.
 
-**Premises:** Begin with one relational unfolding; disclose operation, updating, transmission, support and correspondence conditions. Multilevel selection presupposes neither one reward, a fixed hierarchy nor inevitable favorable direction. Preserve the separate normative scope of G0/J.
+**Premises:** Begin with one relational unfolding; disclose operation, updating, transmission, support and correspondence conditions. Multilevel selection presupposes neither one reward, a fixed hierarchy nor inevitable favorable direction. Keep the separate normative scope of the conditional alignment route.
 
 **Completion criterion:** Retain the ten full-explanation obligations in the existing cognition chapter. Completing a conditional connection or rejecting an unsupported universal inference does not complete the whole objective; completed mechanisms are not reopened. The current connection requires affirmative mechanism, actual formal checks, primary-source correspondence and substantive counterreview.
 
@@ -61,7 +61,7 @@ Investigate how shared activity identifies and addresses problems while revising
 
 Connect normative grounds across intelligence, evaluation of ends, formation of concern and wisdom, and alignment of selection rules themselves.
 
-**Premises:** Follow the authorized G0 route; disclose additional comparison commitments, actual correspondence and inferences separately.
+**Premises:** Follow the conditional alignment route; disclose additional comparison commitments, actual correspondence and inferences separately.
 
 **Completion criterion:** Reuse completed direction and practical judgment results; subsequent studies must identify the specific missing connection.
 
@@ -99,7 +99,7 @@ Explain organization, significance, regulation, learning, selector revision, con
 <a id="生成关系怎样变化本会话目标--how-generative-relations-change-session-objective"></a>
 ### How generative relations change: session objective
 
-**State:** `unmarked` · **Scope:** Ren explicitly requests completing how generative relations change in this session, within the current Theory of Becoming priority and while retaining the distinct wisdom and G0/J scopes.
+**State:** `unmarked` · **Scope:** Complete how generative relations change, within the Theory of Becoming and keeping the distinct scopes of the wisdom work and the conditional alignment route.
 
 Explain how relationships within one unfolding form, persist, transform, degenerate and dissolve, and how these occurrences change the actual conditions of further activity.
 
@@ -157,7 +157,7 @@ Investigate how whole generativity and actual realization carry ethical signific
 
 **Premises:** Distinguish warrant, recognition, motivation and actual compliance; do not redefine living as only what has already been independently valued.
 
-**Completion criterion:** Preserving a supplied objective does not replace ethical warrant; credit completed G0/J inferences and specify the new connection.
+**Completion criterion:** Preserving a supplied objective does not replace ethical warrant; credit completed inferences of the conditional alignment route and specify the new connection.
 
 [2026-10-07-normative-grounding-first-priority](sources/15-codex-theory-conversations/2026-10-07-normative-grounding-first-priority.md) · [2026-10-07-shengsheng-ethical-direction](sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) · [UNIFIED-ETHICAL-GROUNDING](theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md)
 
@@ -187,7 +187,7 @@ From independently stated scientific achievements and actual relationships withi
 
 Establish the deductive necessity of the Theory of Becoming as a whole without added substantive axioms; explain generative forms within its manifold. Articulate how relations form, persist, transform and dissolve, including life and evolution, without requiring every becoming to be generative or favorably directed.
 
-**Premises:** Begin with the monist relational method and disclose its role. Retain mixed effects, real losses and terminal continuations. Distinguish logical machinery, definitions, local laws, correspondence and normative commitments; a supplied local law is not thereby external to reality. G0 is folded (Ren, 11 October 2026): it is not an axiom. Part I states it as a condition, characterized with no axiom and left undecided by the dynamics, together with everything else that holds for any significance (chapter section 6, moved into Part I on Ren's decision of the same day); the former Part II asserted only the one axiom, and on 16 October 2026 Ren folded it into the conditional section 6.15 of the chapter: the theory does not assert it, and with it as a condition G0 is a theorem. Positive relevance is folded into significance, and courses are compared on possibilities (the AI's decision on Ren's delegation). The generative space is stated with no axiom: a part is generative where the levels with it widen those without it, and on level paths C is a law with “better” read as widening; the one axiom enters only as a condition, under which widening is retaining and adding what has significance (section 6.15). J and the other practical commitments remain explicit within the whole, without becoming premises of every dynamical explanation.
+**Premises:** Begin with the monist relational method and disclose its role. Retain mixed effects, real losses and terminal continuations. Distinguish logical machinery, definitions, local laws, correspondence and normative commitments; a supplied local law is not thereby external to reality. The theory asserts no axiom: everything that holds for any significance is stated without one, living significance is characterized and shown undecided by the dynamics, and the continuation condition (for anything, its continuation into the future has significance) enters only as the condition of chapter section 6.15, under which living significance is a theorem. Courses are compared on possibilities. The generative space is stated with no axiom: a part is generative where the levels with it widen those without it, and on level paths comparison is a law with “better” read as widening; under the continuation condition, widening is retaining and adding what has significance. The practical commitments of the alignment route stay explicit within the whole, without becoming premises of every dynamical explanation.
 
 **Completion criterion:** Reuse completed conditional mechanisms and identify the exact remaining foundational inference. Assess zero normative axioms and zero added substantive axioms separately; neither outcome inclusion, an empty Lean axiom report nor hidden hypotheses establishes the stronger target. Explain actual possibilities and constraints, expose remaining dependencies, and preserve substantive counterexamples. This priority authorization does not certify a new result or universal completion. Establish the whole claim at its stated scope; do not substitute universal generativity for the whole or treat a mode’s absence as its refutation.
 
@@ -195,9 +195,9 @@ Establish the deductive necessity of the Theory of Becoming as a whole without a
 
 **README overview:** First priority: Theory of Becoming
 
-Ren locates deductive necessity in the Theory of Becoming as a whole; generativity is within its manifold. Develop that deduction without added substantive axioms, retaining persistence, degeneration, dissolution and mixed changes. Life, evolution and G0/J evaluation remain differentiated within the same reality.
+Ren locates deductive necessity in the Theory of Becoming as a whole; generativity is within its manifold. Develop that deduction without added substantive axioms, retaining persistence, degeneration, dissolution and mixed changes. Life, evolution and evaluation under the conditional alignment route remain differentiated within the same reality.
 
-**Next:** Ren's zero-premise redirect of 11 October: remove premises and derive the most general version of each Part I law, zero premises first. Inventory where each main theorem uses a premise, finiteness, enclosure or decidability; restate each localizable law for every world as “Y iff Z”, Z holding of that world at the steps and relata the proof uses, with the selection theorems as corollaries; put commitments of the representation to Ren; test each law against weakening the representation. The selection tables are not extended further, and no premise is claimed derived where the representation proves it contingent.
+**Next:** Ren's zero-premise redirect of 11 October: remove premises and derive the most general version of each law of the theory without axiom, zero premises first. Inventory where each main theorem uses a premise, finiteness, enclosure or decidability; restate each localizable law for every world as “Y iff Z”, Z holding of that world at the steps and relata the proof uses, with the selection theorems as corollaries; put commitments of the representation to Ren; test each law against weakening the representation. The selection tables are not extended further, and no premise is claimed derived where the representation proves it contingent.
 
 [becoming-context-coherence](theories/becoming/results/records/becoming-context-coherence.md): `recorded-checked`
 
@@ -251,7 +251,7 @@ Explain organizing variation and continuation through differentiation and feedba
 
 **State:** `unmarked` · **Scope:** The original universal-intelligence session and explicitly authorized continuations; not automatically every repository task’s objective.
 
-Prove universal metaethics of all intelligence, explaining interconnection and differentiated agency formed within the whole. The latest 8 October continuation uses G0 to establish positive generative warrant and revisable practical direction from formed relational positions and supported visible futures. On 8 October Ren named the theory Universal Meta-Ethics of Agency and its normative core Universal Metaethical Core; on 9 October Ren renamed the theory The Theory of Becoming, keeping the core's name; the public README leads with established conclusions and their scoped evidence.
+Prove a universal metaethics of all intelligence, explaining interconnection and differentiated agency formed within the whole. The 8 October continuation uses living significance to establish positive generative warrant and revisable practical direction from formed relational positions and supported visible futures. The work is now part of the Theory of Becoming (section 6, significance, comparison and practical judgment); the public README leads with established conclusions and their scoped evidence.
 
 **Premises:** Normative universality, actual compliance and exclusive necessity of this formulation need separate arguments. Preserve both real generative possibilities and evidence-responsive revision; complete integration, omniscience and strict whole improvement are not premises of positive warrant.
 
@@ -261,7 +261,7 @@ Prove universal metaethics of all intelligence, explaining interconnection and d
 
 **README overview:** Developing the Universal Metaethical Core
 
-We are developing the Universal Metaethical Core into increasingly specific ethics. G0 and explicit practical commitments already support comparison, basic protection, bounded responsibility, transfer and appropriate ending. Current extensions address conflicting claims, uncertain classification and revisable judgment.
+We are developing the significance-and-comparison core (section 6) into increasingly specific ethics. Living significance and explicit practical commitments already support comparison, basic protection, bounded responsibility, transfer and appropriate ending. Current extensions address conflicting claims, uncertain classification and revisable judgment.
 
 **Next:** Extend justified comparisons where serious losses and fair chances conflict; establish the particular living relationships that change a concrete choice, including when a changed situation warrants revising an undertaking.
 
@@ -287,7 +287,7 @@ We are developing the Universal Metaethical Core into increasingly specific ethi
 
 Complete the necessary relations between the core and all wisdom under discussion, establish their indispensability and the foundational status of the whole core, then commit the completed work to main.
 
-**Premises:** Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission. On 8 October 2026 Ren further directs morality through this theory’s universal principles because morality appraises becoming and the model can appraise becoming. Develop the affirmative route under explicit G0/J/E, without requiring Dancy’s assent. On 13 October 2026 Ren clarifies that this is one connected theory: first inspect other branches for the needed premises and proofs, then compose shared definitions; a local file’s gap is not automatically a gap in the whole theory.
+**Premises:** Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission. Morality is appraised through this theory's universal principles, because morality appraises becoming and the model can appraise becoming. Develop the affirmative route under the explicit conditional commitments (living significance, the practical commitments, and evidence), without requiring Dancy's assent. This is one connected theory: first inspect other branches for the needed premises and proofs, then compose shared definitions; a local file's gap is not automatically a gap in the whole theory.
 
 **Completion criterion:** Require a substantive evidence audit of necessity across the full intended scope and the foundational status of the whole core, not local applications, representability or metadata checks. Reuse completed results and disclose premises; after completion commit this task’s verified changes to main while protecting concurrent work. Earlier formation work retains its scope; full sufficiency and premise-free metalogic are not added as current gates.
 
@@ -299,7 +299,7 @@ Complete the necessary relations between the core and all wisdom under discussio
 <a id="无公理实践判断的独立接续--independent-axiom-free-practical-judgment"></a>
 ### Independent axiom-free practical judgment
 
-**State:** `unmarked` · **Scope:** The session explicitly reauthorized later by Ren; it does not revoke completed G0/J work.
+**State:** `unmarked` · **Scope:** A later, separately authorized line of work; it does not revoke completed work on the conditional alignment route.
 
 Focus on universal normative grounding: explain grounds and scope of repair, opening, restriction and ending through living, understanding, purposes, evaluation and response differentiating within one activity, without presupposing separate facts, values and agents plus an external connection.
 
@@ -314,12 +314,12 @@ Focus on universal normative grounding: explain grounds and scope of repair, ope
 ## Completed scopes
 
 <a id="explicit-axiom-route"></a>
-<a id="已完成的明确公理路线--completed-explicit-axiom-route"></a>
-### Completed explicit-axiom route
+<a id="已完成的条件对齐路线--completed-conditional-alignment-route"></a>
+### Completed conditional alignment route
 
 **State:** `completed` · **Scope:** Applies to the 8 October alignment grounding and direction task, without imposing completion gates on other sessions.
 
-Reuse practical judgment and alignment direction under G0 and explicit comparison, responsibility and choice commitments.
+Reuse practical judgment and the alignment direction under living significance and explicit comparison, responsibility and choice commitments.
 
 **Premises:** Do not require an axiom-free proof of the normative starting point; additional commitments must not be hidden in definitions.
 

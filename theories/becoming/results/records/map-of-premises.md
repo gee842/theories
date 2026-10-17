@@ -46,7 +46,7 @@
 - **Counterexample:** Eight independence witnesses, strained, unbalanced, scatter, morsel, lossless, latent, multitude and novel, each failing one premise and meeting the other seven. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
 - **Counterexample:** draining: every premise but balance is met, and the family of both sides is closed and taken from at every step, so taking and dissipation do not hold vacuously. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

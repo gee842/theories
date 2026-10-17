@@ -48,7 +48,7 @@
 - **Counterexample:** Only pooled registration selects it: that both the dweller and the clearer are admitted at the third step goes through their pooled registration and separates the cleared from the spared world, yet goes through neither registration alone (Clearing.selected_pooled). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
 - **Counterexample:** Selection cannot tell reaching beyond from not: in Diversion every selection through the taker's registration selects the flow diverting from the dweller's source alike with a supplying flow that only gives to the store and reaches nothing beyond, while the dweller is unsupported only in the first (Diversion.blind_to_source); the same selection selects the diverting flow over the undiverted one (Diversion.favours). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
 
-**Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · No ethical premise and no Lean axiom is used.
+**Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · No ethical premise and no Lean axiom is used.
 
 <a id="evidence--证据"></a>
 ## Evidence

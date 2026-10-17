@@ -43,12 +43,12 @@
 ## Does not show
 
 - The result does not prove that the theory of becoming needs no axiom: it shows which statements need no premise and which premises carve which parts.
-- Living is only the structural condition of the stepwise reading, not G0's valuation itself.
+- Living is only the structural condition of the stepwise reading, not the valuation of living significance itself.
 - The parts listed are not exhaustive: combinations of premises and further parts, such as more or the rise of possibility, are not each given.
-- This result states only the reading of activity; Ren's ‘generative’ and ‘degenerative’ are decided on Ren's delegation to read as widening and narrowing what can form, not this reading.
+- This result states only the reading of activity; Ren's ‘generative’ and ‘degenerative’ are read as widening and narrowing what can form, a reading other than this one.
 - Undermining that co-occurs with the depending relatum not being active after the step counts against living on the stepwise reading, for every drawer, a verdict that is no valuation of the drawer.
 - **Counterexample:** With infinitely many relata arising and ceasing separate (Accretion, Attrition); without any one premise of rests arising can recur (throughput, shuttle, leaking, flicker), leaking with non-vacuous dissipation; grazing has an event that is not living without the verdict on self-drawing; undecided shows that the finite-world law needs decidability. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
-- **Counterexample:** seedbank: finite, balanced, every relatum embodied, activity needing support; the drawer's event undermines a dormant seed's unchanged dependence and is not living, and the premises of inactive_below hold, yet the seed is never active and nothing in the world ever ceases: undermining need not co-occur with an ending (the eleventh independent review's R1). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
+- **Counterexample:** seedbank: finite, balanced, every relatum embodied, activity needing support; the drawer's event undermines a dormant seed's unchanged dependence and is not living, and the premises of inactive_below hold, yet the seed is never active and nothing in the world ever ceases: undermining need not co-occur with an ending. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · Stated for discrete steps.
 
@@ -157,6 +157,7 @@ Aliases: `Becoming.World`, `Becoming.World.ofRoles`, `Becoming.World.ArisingRecu
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D2, D6, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: the statement said "dissipation brings a finite world to rest"; World.rests_unrefuted proves only ¬¬∃N, RestsFrom N (naming the step needs LPO), so it now says a finite world "cannot be refuted to come to rest". Earlier text in text_versions.
+- 17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance); review-round labels and authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 67 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](space-and-its-parts.json).
 
 <a id="earlier-text--早期文本"></a>

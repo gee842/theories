@@ -38,7 +38,7 @@
 - No correspondence to the theory of evolution's existing mechanisms (structural copying, reconstruction, development, the inheritance of organizational rules) is proved.
 - **Counterexample:** Without Dependent: a parent active beyond its support depends at need two on a pool at level one and gives to a descendant inheriting its dependence and need; the need transmitted exceeds the level at the giving step (Unchecked.unchecked). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean)
 
-**Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · No ethical premise and no Lean axiom is used.
+**Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · No ethical premise and no Lean axiom is used.
 
 <a id="evidence--证据"></a>
 ## Evidence

@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-13T10:34:51.255963+00:00",
   "claim": {
-    "zh": "同一实际历史中，当前规则的未完成步骤若降低其剩余证书，修订后的规则又接过该实际阶段而不增加证书，则已有有限更新定理保证界限内的一次完成。完成与实际新生成的显式对应精确接入已有 G0 正面根据定理；最终形态可以改变。各规则单独持续都完成及各步局部推进，并不足以保证反复修订后的实际完成。 P89 已在共同 Frame／Run 上陈述，并以实际 Lean 调用把原 G0 条件实例化为统一理论从意义取得的正面相关；原有限实现与失败范围不变。",
-    "en": "Along one actual history, unfinished current-rule steps that lower a remaining certificate, together with a non-increasing handoff at the actual reached stage, feed the existing finite-renewal theorem and ensure completion within its bound. Explicit correspondence to actual new generation supplies the premise of the existing G0 positive-ground theorem; the realized form may change. Individually finishing rules and local progress at every step do not alone guarantee realization under repeated revision. P89 states the result on the shared Frame/Run and checks the exact instance of the inherited G0 condition using relevance read from significance; the finite-realization and failure scopes are unchanged."
+    "zh": "同一实际历史中，当前规则的未完成步骤若降低其剩余证书，修订后的规则又接过该实际阶段而不增加证书，则已有有限更新定理保证界限内的一次完成。完成与实际新生成的显式对应精确接入已有生生之意义正面根据定理；最终形态可以改变。各规则单独持续都完成及各步局部推进，并不足以保证反复修订后的实际完成。本结果在共同 Frame／Run 上陈述，并以实际 Lean 调用把原有的生生之意义条件实例化为统一理论从意义取得的正面相关；原有限实现与失败范围不变。",
+    "en": "Along one actual history, unfinished current-rule steps that lower a remaining certificate, together with a non-increasing handoff at the actual reached stage, feed the existing finite-renewal theorem and ensure completion within its bound. Explicit correspondence to actual new generation supplies the premise of the existing positive-ground theorem of living significance; the realized form may change. Individually finishing rules and local progress at every step do not alone guarantee realization under repeated revision. The result is stated on the shared Frame/Run, and the exact instance of the inherited living-significance condition is checked using relevance read from significance; the finite-realization and failure scopes are unchanged."
   },
   "hypotheses": [
     {
@@ -225,7 +225,7 @@
     {
       "path": "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md",
       "role": "statement",
-      "sha256": "345a9085aa436cbffdf3b15c1184cd91bcbf4677f9eaac6765319a32eebf7b84",
+      "sha256": "f5a3790f07f1685825c92326a6b70aa04e65ea597fa02b3646410c8c09565f39",
       "declarations": []
     },
     {
@@ -338,6 +338,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): CHOICE-AND-GENERATIVE-CONTEXT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance); P-numbers removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): CHOICE-AND-GENERATIVE-CONTEXT.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ]
 }

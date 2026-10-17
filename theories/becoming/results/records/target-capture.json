@@ -2,8 +2,12 @@
   "schema_version": 1,
   "id": "target-capture",
   "title": {
-    "zh": "目标的捕获：带着目标的亲代留下更多后代时目标的份额上升；所立者衰减不断则选择停止；下一配置取决于规则时只扰动状态被重新吸收",
-    "en": "The capture of a target: a target's share rises where its carriers leave more offspring; running down stops the selection; where the next configuration depends on the rule, perturbing the state alone is re-absorbed"
+    "zh": "目标的捕获，以及为何只扰动状态会被重新吸收",
+    "en": "The capture of a target, and why perturbing the state alone is re-absorbed"
+  },
+  "statement": {
+    "zh": "每个带着目标的亲代留下的后代多于每个其他亲代、两类都在时，带着者在后代中的份额大于在亲代中的份额；所立者被列出且从某步起每步衰减时，世系不再复现；下一配置只取决于规则时，扰动过的状态在下一步被重新吸收。",
+    "en": "Where each target carrier leaves more offspring than each other parent, both present, their share is larger among offspring than parents; where what stands is listed and runs down from some step on, descent stops; where the next step depends on the rule alone, a perturbed state is re-absorbed."
   },
   "kind": "theorem",
   "status": "recorded-checked",
@@ -491,6 +495,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, short title for the README: the title becomes a name, “The capture of a target, and why perturbing the state alone is re-absorbed”, and a statement is added under it, written from the claim (both kinds present, the census condition and the dependence on the rule alone stated). The former title, kept here, was “The capture of a target: a target's share rises where its carriers leave more offspring; running down stops the selection; where the next configuration depends on the rule, perturbing the state alone is re-absorbed” (zh: “目标的捕获：带着目标的亲代留下更多后代时目标的份额上升；所立者衰减不断则选择停止；下一配置取决于规则时只扰动状态被重新吸收”). The claim is unchanged."
     }
   ]
 }

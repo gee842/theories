@@ -214,8 +214,8 @@
       "kind": "non-implication"
     },
     {
-      "zh": "Living 只是逐步读法的结构条件，不是 G0 的估值本身。",
-      "en": "Living is only the structural condition of the stepwise reading, not G0's valuation itself.",
+      "zh": "Living 只是逐步读法的结构条件，不是生生之意义的估值本身。",
+      "en": "Living is only the structural condition of the stepwise reading, not the valuation of living significance itself.",
       "kind": "correspondence"
     },
     {
@@ -224,8 +224,8 @@
       "kind": "scope"
     },
     {
-      "zh": "本结果只陈述活动的读法；Ren 的“生成的”“退化的”依 Ren 的交托决定，读作对能形成者的扩大与缩小，不是这一读法。",
-      "en": "This result states only the reading of activity; Ren's ‘generative’ and ‘degenerative’ are decided on Ren's delegation to read as widening and narrowing what can form, not this reading.",
+      "zh": "本结果只陈述活动的读法；Ren 的“生成的”“退化的”读作对能形成者的扩大与缩小，那是另一种读法，不是这一读法。",
+      "en": "This result states only the reading of activity; Ren's ‘generative’ and ‘degenerative’ are read as widening and narrowing what can form, a reading other than this one.",
       "kind": "correspondence"
     },
     {
@@ -245,8 +245,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "detail": {
-        "zh": "seedbank：有限、平衡、每个关系项体现、活动需要支持；汲取者的事件侵蚀休眠种子持续不变的依存，事件不活，inactive_below 的前提成立，而种子从不活跃，世界中从无止息：侵蚀不必与终结同时（第十一次独立审查 R1）。",
-        "en": "seedbank: finite, balanced, every relatum embodied, activity needing support; the drawer's event undermines a dormant seed's unchanged dependence and is not living, and the premises of inactive_below hold, yet the seed is never active and nothing in the world ever ceases: undermining need not co-occur with an ending (the eleventh independent review's R1)."
+        "zh": "seedbank：有限、平衡、每个关系项体现、活动需要支持；汲取者的事件侵蚀休眠种子持续不变的依存，事件不活，inactive_below 的前提成立，而种子从不活跃，世界中从无止息：侵蚀不必与终结同时。",
+        "en": "seedbank: finite, balanced, every relatum embodied, activity needing support; the drawer's event undermines a dormant seed's unchanged dependence and is not living, and the premises of inactive_below hold, yet the seed is never active and nothing in the world ever ceases: undermining need not co-occur with an ending."
       }
     }
   ],
@@ -1123,6 +1123,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance); review-round labels and authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

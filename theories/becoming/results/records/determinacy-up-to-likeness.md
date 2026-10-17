@@ -35,7 +35,7 @@
 - **Counterexample:** Twins.retarget_breaks: retargeting one of two alike twins breaks determinacy up to likeness. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean)
 - **Counterexample:** Parting: from the start one move leads to a configuration that can go on and to one that cannot; through the identity the image is not determined up to likeness at the start, while with nothing claimed the identity carries a law up to likeness (Parting.image_not_determinedAt, Parting.carries). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean)
 
-**Standard boundaries:** Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · Contains no ethical predicate and evaluates neither arising nor ceasing. · No ethical premise and no Lean axiom is used.
+**Standard boundaries:** Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · Contains no ethical predicate and evaluates neither arising nor ceasing. · No ethical premise and no Lean axiom is used.
 
 <a id="evidence--证据"></a>
 ## Evidence

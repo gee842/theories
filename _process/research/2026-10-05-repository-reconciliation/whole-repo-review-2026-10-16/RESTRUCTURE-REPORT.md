@@ -68,7 +68,7 @@ Checks at the end: `make research-check` reports no errors and no source drift, 
 
 ## Left for Ren
 
-- **Featured results.** Confirm or change the twelve README laws (`readme_featured_selection` in `_process/research-config.json`).
+- **Featured results.** Reordered on 17 October by significance (below); still open to revision (`readme_featured_selection` in `_process/research-config.json`).
 - **Goal states.** Mark the state of the fourteen goal scopes left `unmarked`. theory-of-becoming and theory-of-evolution describe themselves as current.
 - **A14.** The chapter glossary no longer equates 生生 with the Lean predicate `living`, because the predicate is weaker than Ren's term.
 - **ETHICAL-LEARNING.**
@@ -76,7 +76,7 @@ Checks at the end: `make research-check` reports no errors and no source drift, 
   - Its translation has not been reviewed by Ren.
   - It and KNOWLEDGE still speak of the "G0 axiom route", which predates the 11 October fold.
   - The banners on PHILOSOPHICAL-ACCOUNT and ZERO-AXIOM-PRACTICAL-JUDGMENT say to read "axiom" there as the condition of §6.15. Confirm them.
-- **"Part I".** The term remains in record text (136 records) and in the theory-of-becoming goal overview, which are Ren-scoped text.
+- **"Part I".** The term remained in record text (136 records) and in the theory-of-becoming goal overview; retired from public text on 17 October (below).
 - **Tier-3 reconciliation items** (see the survey below):
   - Retire the 9 October chapters THEORY-OF-BECOMING, BECOMING-FOUNDATION and THE-THEORY-OF-EVOLUTION; goal records name them.
   - Retire the opening drafts, one of which is byte-identical to OPENING.md.
@@ -84,6 +84,17 @@ Checks at the end: `make research-check` reports no errors and no source drift, 
   - LOST-ARTIFACTS.md stays as an open list only Ren can close.
 - **Earlier deferrals.** The privacy and visibility decision (F2) and the recordings backup (F3).
 - **Push.** Nothing is pushed.
+
+## After the restructure: retired labels and featured laws (17 October)
+
+Ren then said his words are provenance, not authority, that outdated labels such as "G0" and "Part I" should go, and that the featured laws should be ordered by significance for AI–human alignment and coordination ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-ren-words-not-authority.md)). The tree was committed clean first (87061cede). Then:
+
+- **Vocabulary.** G0 → living significance, S0 → self-significance, the one axiom → the continuation condition, Part I → the theory without axiom, Part II → the conditional section (§6.15), the G0/J route → the conditional alignment route, J1–J4 → the practical commitments named by content. P-numbers, review rounds and "on Ren's delegation" are out of public text. The canonical chapter's §10 has a table of retired labels, and every earlier anchor is kept. Lean names are unchanged.
+- **Where.** The canonical chapter, the reference file (verbatim excerpts kept and marked), the OPENING footnotes (body unchanged), the Lean README, GLOSSARY, 18 kept chapters, 80 records' public fields (each with a history note), the nine goal records, the README lead, the work board and AGENTS (old text in `_process/history/2026-10-17-instructions/`). The `*.zh.md` editions are dated snapshots and keep the old labels.
+- **"What stays Ren's" → "Open readings".** §8.4 now lists open readings to be settled by argument, not by authority.
+- **Featured laws.** Reordered as one argument, each law proved with no axiom: seeking-boundary, own-count-misses-joint-excess, consumption-ends-with-feeders, feeding-closure, derived-extent-limits, selection-through-registration, runaway-distance-unregistered, target-capture, experiment-needs-return, closing-needs-net-draw, separation-loses-the-relation, whole-persists-through-generation. The selection is marked as the AI's, open to revision.
+- **Checks.** 72 records re-pointed after reading the relabel diff; `research-check` has no errors and no drift; 170 tests pass; broken live links 692.
+- **Still carrying old labels.** Record IDs (`one-axiom-yields-g0`, `alignment-direction-g0-j`, `practical-judgment-g0-j`, `held-lives-g0-is-centering`, `self-good-reachable-g0`, `wisdom-root-part-one`), non-public record fields (hypotheses, limitations, validation scope, correspondence), Lean identifiers, filenames such as `G0-WARRANT.md`, studies and process logs (dated evidence). Renaming IDs and files is a move with link rewrites, not done here.
 
 ## Not done
 

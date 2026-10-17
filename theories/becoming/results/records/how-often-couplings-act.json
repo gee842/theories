@@ -248,8 +248,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T220109.090247Z): the 98 declarations of Becoming.Frequency, 83 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 158; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
-    "zh": "自环之外，按返回的下界与按耦合之步的上界何者达到；自环之外，多项式增长是否只取决于哪些耦合作用、不取决于其正的强度；给定强度的谱半径（实数的量）；从进程读出的强度多常作用；独立审查；Ren 对读法的判断。",
-    "en": "Which of the bound by returns and the bound by coupling steps is met beyond the self-loop; whether, beyond it, polynomial growth depends only on which couplings act, not on their positive strengths; the spectral radius of given strengths (real amounts); how often strengths read off the course act; an independent review; Ren's judgment on the readings."
+    "zh": "自环之外，按返回的下界与按耦合之步的上界何者达到；自环之外，多项式增长是否只取决于哪些耦合作用、不取决于其正的强度；给定强度的谱半径（实数的量）；从进程读出的强度多常作用；独立审查；对读法的判断。",
+    "en": "Which of the bound by returns and the bound by coupling steps is met beyond the self-loop; whether, beyond it, polynomial growth depends only on which couplings act, not on their positive strengths; the spectral radius of given strengths (real amounts); how often strengths read off the course act; an independent review; a judgment on the readings."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 问回路：“how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”；2026-10-16 Ren 称 AI 对“只有回路使差别失控”的读法是对的（“your read on this is right”），那一读法把只在某些步成立的耦合留为开放。本结果回答 what-a-cut-loses 的 next_delta 前两项。读法（AI 的，待 Ren）：失控多快由耦合多常作用定：返回频繁则失控（强度为自然数、正的强度至少为一时；强度小于一时不必如此），耦合之步稀少则不论强度都是多项式，强度只改变大小；对自环，耦合多常作用恰好决定。只在某些步耦合的情形两个方向都已关闭：只有继续着的耦合的回路能使之失控，这样的回路不一定失控。每个时程都安定是一个推理原则，不是理论对展开断言或否认的事实。数学是标准的：只计作用之步的离散 Grönwall 型界，每次返回的加倍，以及 Σ⁰₂ 形式的排中。",
@@ -687,7 +687,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -854,6 +854,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: “Ren's judgment on the readings” replaced by “a judgment on the readings”, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

@@ -82,8 +82,8 @@
       "witness": "Becoming.SupportGated.balances"
     },
     {
-      "zh": "未导出贡献来源、活动选择、物理规律、一般可恢复性、整个 Becoming 的关系构成或伦理必要性；G0/J/E 保持明示。",
-      "en": "Does not derive contribution sources, activity selection, physical laws, general recoverability, whole-Becoming relational constitution or ethical necessity; G0/J/E stay explicit.",
+      "zh": "未导出贡献来源、活动选择、物理规律、一般可恢复性、整个 Becoming 的关系构成或伦理必要性；生生之意义、实践承诺与 E 保持明示。",
+      "en": "Does not derive contribution sources, activity selection, physical laws, general recoverability, whole-Becoming relational constitution or ethical necessity; living significance, the practical commitments and E stay explicit.",
       "kind": "non-implication"
     },
     {
@@ -337,6 +337,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): THEORY-OF-BECOMING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

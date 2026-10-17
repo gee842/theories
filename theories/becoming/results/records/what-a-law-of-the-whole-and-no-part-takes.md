@@ -32,7 +32,7 @@
 - What a counterexample gives where the conditions are not numbered by the natural numbers; sensitivity read in temporal order; a measure of dependence.
 - **Counterexample:** The law of levels that never vanish (given the rule): it reads what has stood, is insensitive to every condition and still differs: a counterexample to the least registration built from the weak limited principle of omniscience as a rule alone. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · A relation omitted by a weaker description does not refute the fuller account.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -44,7 +44,7 @@ Canonical source: [Tail.lean](../../../../experiments/integrated-correction/gene
 <a id="next--下一步"></a>
 ## Next
 
-Whether the weak rule gives the rule of the limited principle (whether the tail law takes strictly more); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review; Ren's judgment on the readings.
+Whether the weak rule gives the rule of the limited principle (whether the tail law takes strictly more); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review; an argued judgment on the readings.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -97,7 +97,8 @@ Aliases: `what a law of the whole and no part takes`, `整体而无部分之律�
 - 16 October 2026: added, answering the first item of the next_delta of sensitivity-is-the-least-registration (the exact strength of a counterexample's existence) (P126); study section 160.
 - 16 October 2026, eighteenth review (R18): the reading “the same whole … takes only the weak rule” treated neverIndicator and vanishIndicator as one whole; they are complements only classically and are two laws in the core (review item 28, O10); it now reads “a whole of this kind” and “a related whole”. does_not_show 1 left open whether WLPO gives LPO: as propositions it is known not to (Akama–Berardi–Hayashi–Kohlenbach 2004, the citation as the review gives it), and only the rule form is open (item 29, U2 and K3); the correspondence names Bishop 1967 and Bridges–Richman 1987. The readings stay pending Ren. Claim narrowed; no theorem changed.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-law-of-the-whole-and-no-part-takes.json).
+- 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-law-of-the-whole-and-no-part-takes.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

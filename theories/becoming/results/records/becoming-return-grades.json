@@ -148,22 +148,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
       "detail": {
-        "zh": "RenewingIn.within_one 只有一个方向，逆命题不成立（LateMet.within_one_not_renewing）：依存在其第 0 步不被满足、此后每步都被满足时，形成在一步周期内更新而不整段更新；RenewedWithin 不问依存在其自身之步是否被满足（第二次独立审查 F8）。",
-        "en": "RenewingIn.within_one runs one way only, and the converse fails (LateMet.within_one_not_renewing): with a dependence unmet at its step 0 and met at every later step, the formation renews over cycles of one without renewing in the run; RenewedWithin does not ask whether a dependence is met at its own step (second independent review F8)."
+        "zh": "RenewingIn.within_one 只有一个方向，逆命题不成立（LateMet.within_one_not_renewing）：依存在其第 0 步不被满足、此后每步都被满足时，形成在一步周期内更新而不整段更新；RenewedWithin 不问依存在其自身之步是否被满足（独立审查 F8）。",
+        "en": "RenewingIn.within_one runs one way only, and the converse fails (LateMet.within_one_not_renewing): with a dependence unmet at its step 0 and met at every later step, the formation renews over cycles of one without renewing in the run; RenewedWithin does not ask whether a dependence is met at its own step (independent review F8)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
       "detail": {
-        "zh": "周期长度 0 是退化的（Web.renewedWithin_zero、Web.undermining_for_zero）：零步内更新恰是无人依存；任何对有依存者的条件的汲取都侵蚀零步，在更新的运行中也是（第二次独立审查 F10）。",
-        "en": "Cycle length 0 is degenerate (Web.renewedWithin_zero, Web.undermining_for_zero): renewal within zero steps holds exactly when nothing depends on the condition, and any draw on a condition something depends on undermines for zero steps, even in a renewing run (second independent review F10)."
+        "zh": "周期长度 0 是退化的（Web.renewedWithin_zero、Web.undermining_for_zero）：零步内更新恰是无人依存；任何对有依存者的条件的汲取都侵蚀零步，在更新的运行中也是（独立审查 F10）。",
+        "en": "Cycle length 0 is degenerate (Web.renewedWithin_zero, Web.undermining_for_zero): renewal within zero steps holds exactly when nothing depends on the condition, and any draw on a condition something depends on undermines for zero steps, even in a renewing run (independent review F10)."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P7-REVIEW.md",
       "detail": {
-        "zh": "第二次独立审查：所审的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，整合文档中比较表在 (a)(b) 与 but-for 一栏上不公允（已更正）。",
-        "en": "Second independent review: the mathematics under review is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the integration note's comparison table was unfair in rows (a), (b) and the but-for column (corrected)."
+        "zh": "独立审查：所审的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，整合文档中比较表在 (a)(b) 与 but-for 一栏上不公允（已更正）。",
+        "en": "Independent review: the mathematics under review is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the integration note's comparison table was unfair in rows (a), (b) and the but-for column (corrected)."
       }
     }
   ],
@@ -814,6 +814,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: review-round ordinals removed (the findings and their codes stay), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

@@ -5,17 +5,17 @@
 
 `whole-first-and-bounded-centers` · **recorded-checked** · theorem · F07 · [record](whole-first-and-bounded-centers.json) · [register](../../../../RESULTS.md)
 
-> With fewer significant continuations more is retained; under the axiom what retains in the whole retains in every region, not conversely. With dependence-bounded significance, the clearer's part retains all for the clearer, loses the dweller for the dweller, and under the axiom for every standpoint.
+> Fewer significant continuations retain more; under the continuation condition what retains in the whole retains in every region, not conversely. Bounded by dependence, the clearer's part retains all for the clearer, loses the dweller for the dweller, and under the condition for every standpoint.
 
 <a id="laws--规律"></a>
 ## Laws
 
 1. Where fewer continuations have significance, more is retained: where sig' implies sig, what retains from p for sig retains for sig'. (`Becoming.Web.Retains`, `Becoming.Web.Retains.of_fewer`)
 2. A significance bounded by regions retains from p exactly when at every step, within p's region, l admits what l' admits. (`Becoming.bounded`, `Becoming.Web.AdmitsWithin`, `Becoming.Web.retains_bounded_iff`)
-3. Under the axiom, what retains from p retains from p for every family of regions: the whole's judgment decides every narrower one, whether the region is a system's or a self's; and what holds within a region holds within every region inside it. (`Becoming.Web.Retains.within`, `Becoming.Web.AdmitsWithin.narrow`)
+3. Under the continuation condition, what retains from p retains from p for every family of regions: the whole's judgment decides every narrower one, whether the region is a system's or a self's; and what holds within a region holds within every region inside it. (`Becoming.Web.Retains.within`, `Becoming.Web.AdmitsWithin.narrow`)
 4. The converse fails: in Clearing the clearer draws on a resource fed by the source, while the dweller depends on a habitat that the clearer's draw leaves unsupported from step two on. Without the clearer's part every formation is admitted at every step. (`Becoming.Clearing.Formation`, `Becoming.Clearing.Place`, `Becoming.Clearing.flow`, `Becoming.Clearing.web`, `Becoming.Clearing.dependent`, `Becoming.Clearing.clearerPart`, `Becoming.Clearing.withheld`, `Becoming.Clearing.unsupported_with`, `Becoming.Clearing.admitted_all_without`)
 5. Let each formation's significance stop at what its dependence reaches (the clearer with the source reached along its dependence; the source and the dweller alone): from the clearer's standpoint its part retains what has significance at every step; from the dweller's standpoint it loses the dweller. (`Becoming.Clearing.alongDependence`, `Becoming.Clearing.dependenceRegion`, `Becoming.Web.Adds`, `Becoming.Clearing.centers_disagree`)
-6. Under the axiom it loses the dweller from every standpoint, so the levels with it do not retain what has significance without it, while the levels without it retain what has significance with it, and the clearer is supported at every step and admitted without the part, so withholding the part ends nothing. (`Becoming.Clearing.free_rider_loses`)
+6. Under the continuation condition it loses the dweller from every standpoint, so the levels with it do not retain what has significance without it, while the levels without it retain what has significance with it, and the clearer is supported at every step and admitted without the part, so withholding the part ends nothing. (`Becoming.Clearing.free_rider_loses`)
 
 <a id="conditions--条件"></a>
 ## Conditions
@@ -32,11 +32,11 @@
 - Only formations admitted are compared, step by step.
 - No duty or compliance is inferred, and nothing says what a center should do.
 - The order of levels reads as an order of how complete a judgment is, not as what life does.
-- Route (b) must face that centers bounded by their dependence license the free rider: without the axiom, this loss counts only where the dependence reaches what is closed (see closure-verdict-meets-axiom).
+- Route (b) must face that centers bounded by their dependence license the free rider: without the continuation condition, this loss counts only where the dependence reaches what is closed (see closure-verdict-meets-axiom).
 - **Counterexample:** The converse fails: bounded by dependence, the clearer's part retains everything from the clearer's standpoint and loses the dweller from the dweller's (Clearing.centers_disagree). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
-- **Counterexample:** Under the axiom the free rider's part loses the dweller from every standpoint, while withholding it ends nothing (Clearing.free_rider_loses). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
+- **Counterexample:** Under the continuation condition the free rider's part loses the dweller from every standpoint, while withholding it ends nothing (Clearing.free_rider_loses). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
 
-**Standard boundaries:** Stated for discrete steps. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** Stated for discrete steps. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -113,7 +113,8 @@ Aliases: `Becoming.Web.Retains.of_fewer`, `Becoming.Web.retains_bounded_iff`, `B
 - 14 October 2026, migrated to schema 2 (item F of the open-issues plan: the migration of the 45 schema-1 records with the most lint findings; Ren: “please, do all”, relayed by the integrating session): the claim became 6 laws; the limitations went to does-not-show items and standard boundaries; the evidence became one paragraph. P40 leaves the public fields: its finding that the region along dependence is exactly each formation's feeding closure (Clearing.dependenceRegion_iff) is a does-not-show item, and its finding that without the axiom centers bounded by their dependence still license the free rider beyond their feeding closure joins the route (b) item, to which next_delta points with “see closure-verdict-meets-axiom”. “No Lean axiom is used” joined the evidence; the standard boundary no-ethical-premise is not cited, since the axiom Unrestricted is a normative premise. The theorem, module and audit counts, the core-purity detail and the periphery receipt 20261013T095049.338744Z of the evidence stay in the receipts and the last text_versions entry. No law, premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [whole-first-and-bounded-centers.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/becoming-general-laws-plan/readability/migrations/whole-first-and-bounded-centers.md); the exact earlier record is the last text_versions entry.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D16, D18, D20, D21): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Significance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Regions.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
-- 56 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-first-and-bounded-centers.json).
+- 17 October 2026, wording: outdated labels (the axiom) replaced by the current vocabulary (the continuation condition), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 57 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-first-and-bounded-centers.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

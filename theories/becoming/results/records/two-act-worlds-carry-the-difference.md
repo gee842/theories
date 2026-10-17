@@ -37,7 +37,7 @@
 - Tightness over gainless laws: the carrying law that attains the bound takes nothing and is not gainless. Witness: `Becoming.most_difference_worlds`.
 - That every schedule settles, a principle about every schedule, not assumed; infinitely many conditions; strengths below one and real amounts.
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · A relation omitted by a weaker description does not refute the fuller account.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -49,7 +49,7 @@ Canonical source: [CourseWorlds.lean](../../../../experiments/integrated-correct
 <a id="next--下一步"></a>
 ## Next
 
-The strengths an actual world reads off its course and when their loops form; tightness over gainless laws; strengths below one and real amounts; an independent review; Ren's judgment on the readings.
+The strengths an actual world reads off its course and when their loops form; tightness over gainless laws; strengths below one and real amounts; an independent review; an argued judgment on the readings.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -114,6 +114,7 @@ Aliases: `the difference between two acts' worlds`, `两种作为之世界的差
 
 - 16 October 2026: added (P130, the integration finding of the release-readiness review, section 4: the frontier stated on the base); study section 165 (_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130); report in P130's REPORT.md.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
+- 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](two-act-worlds-carry-the-difference.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -184,8 +184,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261016T124157.989030Z): the 38 declarations of Becoming.CourseWorlds, 34 of them theorems, and the 12 of Becoming.FormedLoops, 7 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 165; not independently reviewed."
   },
   "next_delta": {
-    "zh": "实际世界从其进程读出的强度与其回路何时形成；对无增益之律的紧；小于一的强度与实数的量；独立审查；Ren 对读法的判断。",
-    "en": "The strengths an actual world reads off its course and when their loops form; tightness over gainless laws; strengths below one and real amounts; an independent review; Ren's judgment on the readings."
+    "zh": "实际世界从其进程读出的强度与其回路何时形成；对无增益之律的紧；小于一的强度与实数的量；独立审查；对读法的论证判断。",
+    "en": "The strengths an actual world reads off its course and when their loops form; tightness over gainless laws; strengths below one and real amounts; an independent review; an argued judgment on the readings."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”；Ren 同日：“there are no two realities”。本结果回答发布准备度复核的整合所见：前沿（Propagation 及其后各模块）陈述在耦合阵列与一切两个平衡的流上，不在基上。读法（AI 的，待 Ren）：差别到达多少，是一个律的两个世界之间的差别，实际的与一个未取作为所生成的，不是并排给出的两个流；二者都是交换之律的运行，所以前沿之律是同一展开之运行的律；所携带的量由世界达到，是在同一律下发生的与本会发生的之间所能到达的最大差别；强度读自世界自身之位时，哪些回路形成、何时形成，从世界本身读出。",
@@ -678,6 +678,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-14T16:15:00+00:00",
   "statement": {
-    "zh": "沿一个关系，预设次真是闭包上的意义，超真就是公理；路线 (b) 与公理是同一预设，“不论边界怎样划”分别取窄辖域与宽辖域。",
-    "en": "Along a relation the presupposition sub-true is significance over the closure, and super-true is the axiom; route (b) and the axiom are one presupposition with “however the boundary is drawn” at narrow and at wide scope."
+    "zh": "沿一个关系，预设次真是闭包上的意义，超真就是延续条件；路线 (b) 与延续条件是同一预设，“不论边界怎样划”分别取窄辖域与宽辖域。",
+    "en": "Along a relation the presupposition sub-true is significance over the closure, and super-true is the continuation condition; route (b) and the continuation condition are one presupposition with “however the boundary is drawn” at narrow and at wide scope."
   },
   "laws": [
     {
@@ -50,8 +50,8 @@
       ]
     },
     {
-      "zh": "预设：从立场 p，所划区域之内一切的延续在每步都有意义。超真时它是可容许边界之并上的意义，整体可容许时是 p 处的公理，与沿哪个关系无关，每个立场都超真恰是公理。",
-      "en": "The presupposition: from standpoint p, the continuation of everything within the drawn region has significance at every step. Super-true, it is significance over the union of the admissible boundaries, the axiom at p wherever the whole is admissible, whatever the relation, and super-true at every standpoint it is exactly the axiom.",
+      "zh": "预设：从立场 p，所划区域之内一切的延续在每步都有意义。超真时它是可容许边界之并上的意义，整体可容许时是 p 处的延续条件，与沿哪个关系无关，每个立场都超真恰是延续条件。",
+      "en": "The presupposition: from standpoint p, the continuation of everything within the drawn region has significance at every step. Super-true, it is significance over the union of the admissible boundaries, the continuation condition at p wherever the whole is admissible, whatever the relation, and super-true at every standpoint it is exactly the continuation condition.",
       "declarations": [
         "Becoming.SignificantWithin",
         "Becoming.superTrue_significantWithin_iff_union",
@@ -62,8 +62,8 @@
       ]
     },
     {
-      "zh": "沿关系次真时它是闭包上的意义；沿较大的关系次真推出沿较小的，沿全关系是 p 处的公理，沿空关系是中心自身延续的意义。",
-      "en": "Sub-true along a relation, it is significance over the closure; sub-truth along a larger relation gives it along a smaller one, along the total relation it is the axiom at p, and along the empty relation the significance of the center's own continuation.",
+      "zh": "沿关系次真时它是闭包上的意义；沿较大的关系次真推出沿较小的，沿全关系是 p 处的延续条件，沿空关系是中心自身延续的意义。",
+      "en": "Sub-true along a relation, it is significance over the closure; sub-truth along a larger relation gives it along a smaller one, along the total relation it is the continuation condition at p, and along the empty relation the significance of the center's own continuation.",
       "declarations": [
         "Becoming.subTrue_significantWithin_iff",
         "Becoming.subTrue_of_larger",
@@ -72,8 +72,8 @@
       ]
     },
     {
-      "zh": "路线 (b) 以各中心闭包为界的意义，恰是不论怎样划都在自身之内者的意义，也是使每个预设次真的最小意义；所以同一预设，“不论怎样划”在窄辖域给出路线 (b)，在宽辖域给出公理。",
-      "en": "Route (b)'s significance, bounded by each center's closure, is exactly the significance of what lies within the self however its boundary is drawn, and the least significance that makes every presupposition sub-true; so of one presupposition, “however the boundary is drawn” at narrow scope gives route (b) and at wide scope the axiom.",
+      "zh": "路线 (b) 以各中心闭包为界的意义，恰是不论怎样划都在自身之内者的意义，也是使每个预设次真的最小意义；所以同一预设，“不论怎样划”在窄辖域给出路线 (b)，在宽辖域给出延续条件。",
+      "en": "Route (b)'s significance, bounded by each center's closure, is exactly the significance of what lies within the self however its boundary is drawn, and the least significance that makes every presupposition sub-true; so of one presupposition, “however the boundary is drawn” at narrow scope gives route (b) and at wide scope the continuation condition.",
       "declarations": [
         "Becoming.bounded",
         "Becoming.bounded_closure_iff",
@@ -93,8 +93,8 @@
       ]
     },
     {
-      "zh": "在平衡的流中，预设沿一个含影响的关系在中心次真时，对成员在中心闭包之内的每个部分作公理的比较，不用不变，也不用超真（comparison-within-reach 的推论）；沿影响，是所及闭包之内的每个部分。",
-      "en": "In a balanced flow, sub-true at the center along a relation holding affecting, the presupposition compares every part whose members lie within the center's closure as the axiom does, with neither invariance nor super-truth (a corollary of comparison-within-reach); along affecting, every part within the reach closure.",
+      "zh": "在平衡的流中，预设沿一个含影响的关系在中心次真时，对成员在中心闭包之内的每个部分作延续条件的比较，不用不变，也不用超真（comparison-within-reach 的推论）；沿影响，是所及闭包之内的每个部分。",
+      "en": "In a balanced flow, sub-true at the center along a relation holding affecting, the presupposition compares every part whose members lie within the center's closure as the continuation condition does, with neither invariance nor super-truth (a corollary of comparison-within-reach); along affecting, every part within the reach closure.",
       "declarations": [
         "Becoming.Flow.Balances.comparison_within_reach",
         "Becoming.Flow.reaches_within_closed",
@@ -509,7 +509,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -796,6 +796,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-P42-P43-REVIEW.md, BECOMING-RENEWAL-READING.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (the axiom) replaced by the current vocabulary (the continuation condition), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

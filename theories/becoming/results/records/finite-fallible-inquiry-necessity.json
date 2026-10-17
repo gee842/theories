@@ -10,8 +10,8 @@
   "family": "F11",
   "reviewed_at_utc": "2026-10-13T13:04:43.138900+00:00",
   "claim": {
-    "zh": "有限加权辨别的作答覆盖不超过两类错误与证据差异之和；保持相同读数的适应关系不能同时达到更强指标。接到原生同律平衡历程后，在所列起点和完整所识条件下，覆盖不超过两类错误与回应关系可达权重之和；全部不可达时覆盖恰等于两类错误。 P94检验平衡前提：相同未计入交换足以保持原生不可达处的相同所识和作答，绝对平衡是特例；遗漏交换可保留正确读数，却使机制界失去前提，补记差额不自动恢复响应条件。",
-    "en": "Finite weighted discrimination has commitment coverage at most two error weights plus evidence separation; readout-preserving adaptive relations cannot meet stronger service claims. Composed with native balanced courses of one law, under the stated initial-record and complete-registration conditions, coverage is at most two errors plus responsive-reach weight; entirely beyond reach, coverage equals the two errors. P94 tests balance: common residual exchange suffices for native beyond-reach registration and answer equality, with absolute balance as a special case; omitted exchange can preserve correct readouts while invalidating the mechanism bound, and counting the residual does not automatically restore response."
+    "zh": "有限加权辨别的作答覆盖不超过两类错误与证据差异之和；保持相同读数的适应关系不能同时达到更强指标。接到原生同律平衡历程后，在所列起点和完整所识条件下，覆盖不超过两类错误与回应关系可达权重之和；全部不可达时覆盖恰等于两类错误。对平衡前提的检验：相同未计入交换足以保持原生不可达处的相同所识和作答，绝对平衡是特例；遗漏交换可保留正确读数，却使机制界失去前提，补记差额不自动恢复响应条件。",
+    "en": "Finite weighted discrimination has commitment coverage at most two error weights plus evidence separation; readout-preserving adaptive relations cannot meet stronger service claims. Composed with native balanced courses of one law, under the stated initial-record and complete-registration conditions, coverage is at most two errors plus responsive-reach weight; entirely beyond reach, coverage equals the two errors. A test of balance: common residual exchange suffices for native beyond-reach registration and answer equality, with absolute balance as a special case; omitted exchange can preserve correct readouts while invalidating the mechanism bound, and counting the residual does not automatically restore response."
   },
   "hypotheses": [
     {
@@ -350,6 +350,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in SCIENTIFIC-INQUIRY-CONDITIONS.md, SCIENTIFIC-PHILOSOPHY-SOURCES.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: the P-number P94 removed, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

@@ -42,7 +42,7 @@
 - **Counterexample:** accretion: a census without a bound, arising recurring and ceasing not, so the bound is needed; procession: bounded but not finite, so finiteness is not needed. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean)
 - **Counterexample:** slow: for any non-decreasing, unbounded bound B, a census counted by B, arising recurring and nothing ever ceasing, so no bound growing without end, however slowly, keeps the two together. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

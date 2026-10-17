@@ -308,8 +308,8 @@
     }
   ],
   "next_delta": {
-    "zh": "所识的值本身不被分辨时的学习（识不分辨配置时的可学性见 learnable-through-registration）；概率的读法；与 P71（在其所识之内的识在每一步不完全）的连接。",
-    "en": "Learning where the registered values themselves are not told apart (learnability where registration does not tell configurations apart is in learnable-through-registration); a probabilistic reading; the connection with P71 (a registration within what it registers incomplete at every step)."
+    "zh": "所识的值本身不被分辨时的学习（识不分辨配置时的可学性见 learnable-through-registration）；概率的读法；与 registration-within-what-it-registers（在其所识之内的识在每一步不完全）的连接。",
+    "en": "Learning where the registered values themselves are not told apart (learnability where registration does not tell configurations apart is in learnable-through-registration); a probabilistic reading; the connection with registration-within-what-it-registers (a registration within what it registers incomplete at every step)."
   },
   "history": [
     {
@@ -472,6 +472,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: the P-number P71 replaced by the record it names (registration-within-what-it-registers), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

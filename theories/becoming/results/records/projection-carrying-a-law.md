@@ -47,7 +47,7 @@
 - **Counterexample:** A law at the whole and not at a coarser description: in Switching the joint process is determined while the state has no law, and no determined process admits the first two steps of the run from (false, false) read through the state (Switching.determined, Switching.no_state_law). Together the two witnesses show that carrying a law is monotone neither toward coarser nor toward finer descriptions. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
 - **Counterexample:** That some description carries a law is no information: the description that distinguishes nothing carries one for every process (goAlike_const). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

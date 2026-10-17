@@ -290,8 +290,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "detail": {
-        "zh": "holding：满足全部八个前提，没有一步被围住，而什么都不生起、不止息；所以开放是生起不息的必要条件，不是充分条件（World.holding_world，第十一次独立审查 R8）。",
-        "en": "holding: meets all eight premises with no step enclosed, and nothing arises or ceases; so openness is necessary for arising without end, not sufficient (World.holding_world, the eleventh independent review's R8)."
+        "zh": "holding：满足全部八个前提，没有一步被围住，而什么都不生起、不止息；所以开放是生起不息的必要条件，不是充分条件（World.holding_world，独立审查 R8）。",
+        "en": "holding: meets all eight premises with no step enclosed, and nothing arises or ceases; so openness is necessary for arising without end, not sufficient (World.holding_world, the independent review's R8)."
       }
     },
     {
@@ -1278,6 +1278,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: review-round ordinals removed (the findings and their codes stay), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

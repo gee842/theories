@@ -170,8 +170,8 @@
       "kind": "converse"
     },
     {
-      "zh": "复现定律与该界在尾段各步用所立者的普查；要在无穷多立着时去掉它，须改变量的表示，属于 Ren 的决定。",
-      "en": "The recurrence laws and the bound need a census of what stands at the steps of a tail; dropping it where infinitely many stand would change the representation of amounts, which is Ren's decision.",
+      "zh": "复现定律与该界在尾段各步用所立者的普查；要在无穷多立着时去掉它，须改变量的表示，这一决定不在本结果之内。",
+      "en": "The recurrence laws and the bound need a census of what stands at the steps of a tail; dropping it where infinitely many stand would change the representation of amounts, a decision outside this result.",
       "kind": "scope"
     },
     {
@@ -217,8 +217,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; periphery receipt 20261013T095049.338744Z): the theorems of Locality, Openness, Roles, Counting and Standing have empty axiom reports, and the checker verifies core purity, every source declaration in the core's import closure having an empty axiom report and the core compiling from Lean's prelude alone. Author counterreview in §66 of the integration note; no independent review."
   },
   "next_delta": {
-    "zh": "把其余可局部化的规律（依存、储备与支持）局部重述；实数时间；b 类的表示决定与名称由 Ren 定。",
-    "en": "Restate the remaining localizable laws (dependence, reserve and support) locally; real-valued time; the representation decisions of class (b) and the names are Ren's."
+    "zh": "把其余可局部化的规律（依存、储备与支持）局部重述；实数时间；b 类的表示决定与名称。",
+    "en": "Restate the remaining localizable laws (dependence, reserve and support) locally; real-valued time; the representation decisions of class (b) and the names."
   },
   "correspondence": {
     "zh": "选择定理问的是：在八个前提的某个选择之下，计数服从哪些规律。按 Ren 的转向，本结果改问：每条规律在世界的哪些步与关系项上需要什么。证明表明所需的条件都是局部的：一步的规律只用该步、该条件上的平衡；静止只用跨过那些步、包含所立者的家族的下降，不需要封闭；下降约束变化对所立者不需要体现；不再存在需要生起只用覆盖成立者的列表，不需要普查。前提对每一步成立时，这些条件在每一步成立，选择结果因此是推论。读法（AI，依 Ren 的交托采用）：前提约束的第一部分规律，是每一步及其关系项的规律；前提是使它们的条件处处成立的一种方式。",
@@ -574,7 +574,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "885b6a9b7ebcdaf6dd347ba87888d3b84e4fa0250075c2da37905836e725cdd0"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -880,6 +880,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation: in THE-THEORY-OF-BECOMING.md only section 11 changed (the chapter statuses now say batch H4 moved the earlier chapters to theories/becoming/history/, and link the chapter index), plus link rewrites. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: attributions of decisions to Ren replaced by stating that the decisions lie outside this result, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

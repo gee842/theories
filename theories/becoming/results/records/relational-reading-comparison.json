@@ -23,8 +23,8 @@
       ]
     },
     {
-      "zh": "以关系读生成，即以不消耗其所参与关系之条件的形成的发生为生成根据：G0 恰好肯定这些发生，对消耗者的发生沉默。",
-      "en": "Read relationally, so that the active events of formations not consuming conditions of the relations they participate in are the generative grounds, G0 includes exactly those events and is silent on a consumer's events.",
+      "zh": "以关系读生成，即以不消耗其所参与关系之条件的形成的发生为生成根据：生生之意义恰好肯定这些发生，对消耗者的发生沉默。",
+      "en": "Read relationally, so that the active events of formations not consuming conditions of the relations they participate in are the generative grounds, living significance includes exactly those events and is silent on a consumer's events.",
       "declarations": [
         "RenewalComparison.g0_relational",
         "GenerativeComparison.G0"
@@ -277,7 +277,7 @@
     {
       "path": "theories/becoming/chapters/THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "5c6cbf1f50e1ca0cc64c05d135694fd45791910b622e654493d87d5ea7d19d58",
+      "sha256": "10b5d1faa826473427818718e609cd5a7ccb253748ffa5154dd43b04d0577160",
       "declarations": []
     },
     {
@@ -408,6 +408,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): THEORY-OF-BECOMING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

@@ -54,7 +54,7 @@ Strict loss matching obeys the laws below on every frame (Becoming.LossMatching)
 - **Counterexample:** Two disconnections within one sustained task do not automatically become two whole losses; equal endpoints and brief restoration do not erase aftereffects. Filling the repair instance’s recovery gap can supply worsening for its insufficient anchor, but cannot automatically preserve three-protection sufficiency. [source](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md)
 - **Counterexample:** EndlessLosses: with infinitely many losses a configuration strictly matches itself (EndlessLosses.self_match), and the sufficiency commitment is inconsistent there (EndlessLosses.no_sufficient_matching), so finitely many complete episodes are needed. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean)
 
-**Standard boundaries:** Premise-free (zero-substantive-axiom) grounding is a separate open target; completed G0/J results keep their scope.
+**Standard boundaries:** Premise-free (zero-substantive-axiom) grounding is a separate open target; completed results on the conditional alignment route keep their scope.
 
 <a id="progress--已接通"></a>
 ## Progress
@@ -128,7 +128,7 @@ Aliases: `FR finite responsiveness to aggregation`, `有限合并回应 FR`, `Be
 - Open-issues plan item 17: market words replaced by structural ones (cost, price, budget, fund, credit in the sense of standing); the meaning is unchanged.
 - 14 October 2026, seventeenth independent review, finding G1 (BECOMING-GENERAL-LAWS-REVIEW.md): item 10 corrected law 5 but left the same inverted wording in law 9 and in the fifth counterexample. "Strictly matched below no course" reads as "the worse side of no strict match", the converse of `not_strictLossMatch_of_base_lost` and of `RepairComparison.fragile_b3_below_nothing` (the course is the better side of no strict match); a configuration that loses the common support can be the worse side of one. Both now use law 5's wording, "strictly better by matching than no course". The Lean statements are unchanged; the Lean docstrings and the declaration name with the same inversion are left to the integrator. No premise, status, dependency, reference, proof binding or source hash changed.
 - 14 October 2026, seventeenth independent review ([BECOMING-GENERAL-LAWS-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.md)), findings G1 and G6, landed with the next checker run: the theorem `RepairComparison.fragile_b3_below_nothing` is renamed `fragile_b3_better_than_none`, its docstring and those of `LossMatching` now say "strictly better by matching than no configuration"; the law on reading at episode time (law 6) now says that the retained loss holds by the definition of `ReadsAt` and that whether an actual frame reads at episode time is the premise, citing `not_readsAt_of_recovery`.
-- 3 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](finite-aggregation-within-restorable-basic-losses.json).
+- 4 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](finite-aggregation-within-restorable-basic-losses.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

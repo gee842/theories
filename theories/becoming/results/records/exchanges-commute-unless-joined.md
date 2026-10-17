@@ -38,7 +38,7 @@
 - What is preserved is census existence, not the population at every intermediate step, and it does not show the other premises preserved under joined commutations.
 - **Counterexample:** Crossing and Arising: two exchanges that commute and still balance, where in the other order activity needing support, or only active relata giving, fails. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean)
 
-**Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

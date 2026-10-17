@@ -32,7 +32,7 @@
 - That the correspondence goes beyond unfolding: run_world, world_webAt, world_move and balanced_iff_run are rfl or Iff.rfl; the checked content is balanced_iff_exists_run, courseWorld_balanced_iff, generation_runs and carriedWorld_balanced. Witness: `Becoming.World.run_world`.
 - That the process and world families are one by definition: they meet through correspondence theorems, and at landing 1,019 of 7,214 spine theorems were still apart by dependency (a measurement, not a theorem).
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · A relation omitted by a weaker description does not refute the fuller account.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -44,7 +44,7 @@ Canonical source: [Runs.lean](../../../../experiments/integrated-correction/gene
 <a id="next--下一步"></a>
 ## Next
 
-A theorem joining the course world of one kind of relatum to that of two roles; making the identification definitional, which would change existing statements; an independent review; Ren's judgment on the readings and on a definitional root.
+A theorem joining the course world of one kind of relatum to that of two roles; making the identification definitional, which would change existing statements; an independent review; an argued judgment on the readings and on a definitional root.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -108,6 +108,7 @@ Aliases: `every base read as a run`, `每个基读作运行`, `worlds are runs`,
 
 - 16 October 2026: added (P130, the integration finding of the release-readiness review, section 4); study section 165 (_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130); report in P130's REPORT.md.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items A12, A18, records-mz-15: two does_not_show items added: most of the world/run correspondence theorems hold by rfl or Iff.rfl (at least 10 of Runs.lean's 21), with the checked content named; the two families meet by correspondence, and 1,019 of 7,214 theorems were apart at landing (the connectivity measurement of study section 165). The formal-reuse edge for World.withRest and withRest_balanced pointed to unity-of-readings, but both are in Becoming.Reading, owned by premises-read-off-the-exchange; the edge now points there and unity-of-readings stays as related. Earlier text in text_versions.
+- 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](worlds-are-runs.json).
 
 <a id="earlier-text--早期文本"></a>

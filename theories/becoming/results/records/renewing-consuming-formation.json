@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-08T18:56:05.941008+00:00",
   "claim": {
-    "zh": "在一个明确的不可恢复磨损规律下，同一展开中的形成若在更新速率之内，便每步都有进一步形成，更新能力保持不变；若压力持续超出当前更新速率，整个展开的累计形成以所持条件加三角更新量为界，并自该时刻起停止，更新能力自第一步超出起永久下降。共享这些条件的形成，无论怎样分配，都随之停止；两个部分各自都在更新之内、只是合起来超出时也是如此。消耗型形成起初可以形成得更多，一步计数把它排在前面；此界之后，每一种更新内的接续都超过每一种超出型接续。以每个形成事件为生成内容的宽读法下，形式 G0 同时承认两者，无损比较 C 在两者之间不适用。两种形式读法 Ceaseless 与 KeepsCapacity 都把它们分开，且彼此不同。这些区分不含规范谓词，对符号中立；把它们认作生生，是读法与对应。",
-    "en": "Under an explicit no-recovery wear law, formation within the renewal rate continues at every step and keeps its renewal capacity. Formation whose pressure persistently exceeds the current renewal rate has a whole-unfolding total bounded by held conditions plus a triangular renewal bound, ceases from that time, and permanently loses capacity from its first excess. Formation sharing those conditions, under any allocation, ceases with it, including when two parts are each within renewal and only jointly exceed it. Consuming formation can form more at first, so a one-step count ranks it first; beyond that bound, every within-renewal continuation exceeds every beyond-current one. Under the broad reading that counts every formation event as generative, formal G0 recognizes both and the no-loss comparison C does not apply between them. The formal readings Ceaseless and KeepsCapacity each separate them and differ from each other. These distinctions contain no normative predicate and are sign-neutral; identifying them with 生生 is a reading and correspondence question."
+    "zh": "在一个明确的不可恢复磨损规律下，同一展开中的形成若在更新速率之内，便每步都有进一步形成，更新能力保持不变；若压力持续超出当前更新速率，整个展开的累计形成以所持条件加三角更新量为界，并自该时刻起停止，更新能力自第一步超出起永久下降。共享这些条件的形成，无论怎样分配，都随之停止；两个部分各自都在更新之内、只是合起来超出时也是如此。消耗型形成起初可以形成得更多，一步计数把它排在前面；此界之后，每一种更新内的接续都超过每一种超出型接续。以每个形成事件为生成内容的宽读法下，形式生生之意义同时承认两者，无损比较 C 在两者之间不适用。两种形式读法 Ceaseless 与 KeepsCapacity 都把它们分开，且彼此不同。这些区分不含规范谓词，对符号中立；把它们认作生生，是读法与对应。",
+    "en": "Under an explicit no-recovery wear law, formation within the renewal rate continues at every step and keeps its renewal capacity. Formation whose pressure persistently exceeds the current renewal rate has a whole-unfolding total bounded by held conditions plus a triangular renewal bound, ceases from that time, and permanently loses capacity from its first excess. Formation sharing those conditions, under any allocation, ceases with it, including when two parts are each within renewal and only jointly exceed it. Consuming formation can form more at first, so a one-step count ranks it first; beyond that bound, every within-renewal continuation exceeds every beyond-current one. Under the broad reading that counts every formation event as generative, formal living significance recognizes both and the no-loss comparison C does not apply between them. The formal readings Ceaseless and KeepsCapacity each separate them and differ from each other. These distinctions contain no normative predicate and are sign-neutral; identifying them with 生生 is a reading and correspondence question."
   },
   "hypotheses": [
     {
@@ -127,8 +127,8 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
       "detail": {
-        "zh": "本规律中更新组织不恢复、也不增长；“更多”与复杂度上升未被表示。停止本身未被判为坏，有限完成、休息与适当结束仍属 G0 所承认的生。",
-        "en": "The renewing organization neither recovers nor grows under this law; 更多 and rising complexity are not represented. Ceasing is not judged bad; finite fulfillment, rest and appropriate ending remain within G0."
+        "zh": "本规律中更新组织不恢复、也不增长；“更多”与复杂度上升未被表示。停止本身未被判为坏，有限完成、休息与适当结束仍属生生之意义所承认的生。",
+        "en": "The renewing organization neither recovers nor grows under this law; 更多 and rising complexity are not represented. Ceasing is not judged bad; finite fulfillment, rest and appropriate ending remain within living significance."
       }
     }
   ],
@@ -192,7 +192,7 @@
     {
       "path": "theories/becoming/chapters/G0-WARRANT.md",
       "role": "integration",
-      "sha256": "25347758f65e115ab52ac972581660fbe377d68cac8eec80a91cc2d8bd624df3",
+      "sha256": "cc8778362c2eeb638e0614890b62a856364562ea2cc3110dc58e76183c537a1f",
       "declarations": []
     },
     {
@@ -288,8 +288,8 @@
     }
   ],
   "next_delta": {
-    "zh": "把规律类扩展到更新组织可以恢复或增长的情形，表示休息的恢复作用与“更多”，并检查界限怎样改变；为具体过程建立对规律的经验对应；以 J1/J3 判断终止共享形成的损失。",
-    "en": "Extend the law class to recovering or growing renewal, representing rest's restorative role and 更多, and check how the bound changes; establish empirical correspondence for particular processes; assess the loss of ending shared formation under J1/J3."
+    "zh": "把规律类扩展到更新组织可以恢复或增长的情形，表示休息的恢复作用与“更多”，并检查界限怎样改变；为具体过程建立对规律的经验对应；以保留损失的比较与有界责任的承诺判断终止共享形成的损失。",
+    "en": "Extend the law class to recovering or growing renewal, representing rest's restorative role and 更多, and check how the bound changes; establish empirical correspondence for particular processes; assess the loss of ending shared formation under the commitments of comparison with retained losses and of bounded responsibility."
   },
   "history": [
     {
@@ -333,6 +333,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): G0-WARRANT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): G0-WARRANT.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ]
 }

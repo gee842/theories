@@ -16,30 +16,44 @@
   "record_snapshots": "_process/architecture/history",
   "readme_lead": "_process/navigation/README-LEAD.md",
   "readme_repository": "_process/navigation/REPOSITORY.md",
-  "readme_featured_note": "The laws featured here are the AI's proposal of 17 October 2026 (restructure decision 9), chosen from the records as strong, axiom-free and central; Ren makes the final choice.",
+  "readme_featured_note": "Ordered as one argument about AI and human coordination, every law proved with no axiom: why a race to be more, or above all others, cannot come to rest; why each counting only its own draw can together end what all depend on, the winner included; what anything that wants to go on must count, and where that stops; why selection and policy through registration are blind to what does not register, how far the break is included; why reforming the state without changing the rule is re-absorbed; why what cannot be undone cannot be tested by trial; what closing and opening the future exactly take; and why relations and wholes go on only through joint action and continuing generation. Chosen by the AI on 17 October 2026 for significance; the selection is open to revision.",
   "readme_featured_results": [
-    "laws-of-one-step",
-    "recurrence-without-premise",
-    "space-and-its-parts",
-    "separation-loses-the-relation",
-    "feeding-closure",
-    "unceasing-generation-needs-renewal",
+    "seeking-boundary",
+    "own-count-misses-joint-excess",
     "consumption-ends-with-feeders",
-    "entropy-history-and-record",
-    "observation-is-a-route",
-    "learnable-through-registration",
-    "comparison-within-reach",
-    "what-a-law-of-the-whole-and-no-part-takes"
+    "feeding-closure",
+    "derived-extent-limits",
+    "selection-through-registration",
+    "runaway-distance-unregistered",
+    "target-capture",
+    "experiment-needs-return",
+    "closing-needs-net-draw",
+    "separation-loses-the-relation",
+    "whole-persists-through-generation"
   ],
   "readme_featured_selection": {
     "by": "AI",
     "date": "2026-10-17",
-    "state": "proposal pending Ren",
+    "basis": "significance for AI–human alignment and coordination (Ren, 17 October 2026: sources/15-codex-theory-conversations/2026-10-17-ren-words-not-authority.md)",
     "previous": [
       "positive-ground-open-futures",
       "alignment-direction-g0-j",
       "practical-judgment-g0-j",
       "conditional-foundation-assessment"
+    ],
+    "previous_proposal": [
+      "laws-of-one-step",
+      "recurrence-without-premise",
+      "space-and-its-parts",
+      "separation-loses-the-relation",
+      "feeding-closure",
+      "unceasing-generation-needs-renewal",
+      "consumption-ends-with-feeders",
+      "entropy-history-and-record",
+      "observation-is-a-route",
+      "learnable-through-registration",
+      "comparison-within-reach",
+      "what-a-law-of-the-whole-and-no-part-takes"
     ]
   },
   "readme_conditional_results": [

@@ -319,8 +319,8 @@
       "witness": "Becoming.World.openQueue_not_binds"
     },
     {
-      "zh": "起约束是条件有实例；排除表示所允许者的更强的起约束读法之下的规律没有陈述；这一读法依 Ren 的交托决定不采用，留作比较。",
-      "en": "Binding is an instance of each condition; the laws under a stronger reading of binding, in which each premise excludes something the representation allows, are not stated; that reading is declined on Ren's delegation, kept for comparison.",
+      "zh": "起约束是条件有实例；排除表示所允许者的更强的起约束读法之下的规律没有陈述；这一读法不采用，留作比较。",
+      "en": "Binding is an instance of each condition; the laws under a stronger reading of binding, in which each premise excludes something the representation allows, are not stated; that reading is not adopted and is kept for comparison.",
       "kind": "scope",
       "witness": "Becoming.OnceClosedQueue.dependent_any_activity"
     }
@@ -946,7 +946,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -1350,6 +1350,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

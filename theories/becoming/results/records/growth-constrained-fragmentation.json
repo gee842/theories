@@ -180,7 +180,7 @@
     }
   ],
   "next_delta": {
-    "zh": "复用已完成分割；本轮链状接续只覆盖一个结构类，变化的生成规律及真实断裂仍待说明。",
+    "zh": "复用已完成分割；新的链状接续只覆盖一个结构类，变化的生成规律及真实断裂仍待说明。",
     "en": "Reuse completed fragmentation; the new chain continuation covers one structural class, leaving changing generative laws and actual fracture to explain."
   },
   "history": [
@@ -218,6 +218,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in GROWN-FRAGMENTATION-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: round narration (本轮) replaced by “new”, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

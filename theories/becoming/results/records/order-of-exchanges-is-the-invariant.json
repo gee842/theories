@@ -282,8 +282,8 @@
     }
   ],
   "next_delta": {
-    "zh": "字典序正规形与可判定闲置下的最小足迹已由 P88 给出；Foata 同时层正规形、无名或无界正规形及连续时间对应仍开放。",
-    "en": "P88 supplies the lexicographic normal form and the least footprint under decided idleness. Foata simultaneous layers, unnamed or unbounded forms, and continuous-time correspondence remain open."
+    "zh": "字典序正规形与可判定闲置下的最小足迹已给出（least-footprint-where-idleness-decided）；Foata 同时层正规形、无名或无界正规形及连续时间对应仍开放。",
+    "en": "The lexicographic normal form and the least footprint under decided idleness are given (least-footprint-where-idleness-decided). Foata simultaneous layers, unnamed or unbounded forms, and continuous-time correspondence remain open."
   },
   "history": [
     {
@@ -415,6 +415,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: P-numbers removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

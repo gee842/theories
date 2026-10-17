@@ -264,8 +264,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "generation_opens 的结论可以由与家族无关的交换满足（SprayShuttle.spray_shuttle、opens_anyway）：两方如 Shuttle 来回传递，一个汇每步从一个辅助关系项取一份又还给它；汇与不断新的关系项交换，没有一步被封闭，耗散空成立；两方在任意晚的步生起，给予家族的关系项只从家族取用，汇从不与两方交换，家族的存量恒为一，而家族从任何一步起都不封闭；没有一步围住它（第七次独立审查 K1）。",
-        "en": "The conclusion of generation_opens can be met by exchange unrelated to the family (SprayShuttle.spray_shuttle, opens_anyway): two sides hand one standing back and forth as in Shuttle, while a sink takes one unit from an auxiliary relatum at every step and gives it back; the sink exchanges with ever new relata, so no step is enclosed and dissipation holds vacuously; the sides arise at arbitrarily late steps, every relatum giving to the family takes only from it, the sink never exchanges with the sides, and the family's stock is one at every step, yet the family is not closed from any step on; no step encloses it around (seventh independent review, K1)."
+        "zh": "generation_opens 的结论可以由与家族无关的交换满足（SprayShuttle.spray_shuttle、opens_anyway）：两方如 Shuttle 来回传递，一个汇每步从一个辅助关系项取一份又还给它；汇与不断新的关系项交换，没有一步被封闭，耗散空成立；两方在任意晚的步生起，给予家族的关系项只从家族取用，汇从不与两方交换，家族的存量恒为一，而家族从任何一步起都不封闭；没有一步围住它（独立审查 K1）。",
+        "en": "The conclusion of generation_opens can be met by exchange unrelated to the family (SprayShuttle.spray_shuttle, opens_anyway): two sides hand one standing back and forth as in Shuttle, while a sink takes one unit from an auxiliary relatum at every step and gives it back; the sink exchanges with ever new relata, so no step is enclosed and dissipation holds vacuously; the sides arise at arbitrarily late steps, every relatum giving to the family takes only from it, the sink never exchanges with the sides, and the family's stock is one at every step, yet the family is not closed from any step on; no step encloses it around (independent review, K1)."
       }
     },
     {
@@ -1133,6 +1133,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: review-round ordinals removed (the findings and their codes stay), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

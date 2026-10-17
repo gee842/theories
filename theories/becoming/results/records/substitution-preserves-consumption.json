@@ -146,29 +146,29 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
       "detail": {
-        "zh": "逐步读法下分类不保持（Substitution.stepwise_includes_substitution）：在 extracting 中焦点形成除第 2 步外每个事件都被记入（第二次独立审查 F3）。",
-        "en": "On the stepwise reading the classification is not preserved (Substitution.stepwise_includes_substitution): in extracting every event of the focal formation except at step 2 is included (second independent review F3)."
+        "zh": "逐步读法下分类不保持（Substitution.stepwise_includes_substitution）：在 extracting 中焦点形成除第 2 步外每个事件都被记入。",
+        "en": "On the stepwise reading the classification is not preserved (Substitution.stepwise_includes_substitution): in extracting every event of the focal formation except at step 2 is included."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P7-REVIEW.md",
       "detail": {
-        "zh": "第二次独立审查：所审的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，整合文档中比较表在 (a)(b) 与 but-for 一栏上不公允（已更正）。",
-        "en": "Second independent review: the mathematics under review is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the integration note's comparison table was unfair in rows (a), (b) and the but-for column (corrected)."
+        "zh": "一次独立审查：所审的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，整合文档中比较表在 (a)(b) 与 but-for 一栏上不公允（已更正）。",
+        "en": "An independent review: the mathematics under review is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the integration note's comparison table was unfair in rows (a), (b) and the but-for column (corrected)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
       "detail": {
-        "zh": "“只在一步上不被记入”只对 extracting 成立（Substitution.slow_withheld_two_steps）：在 slow 中共同条件跌破维持者的支持后仍支持焦点形成，它在第 2、3 步都侵蚀（第三次独立审查 G5）。",
-        "en": "“Withheld at one step only” holds only for extracting (Substitution.slow_withheld_two_steps): in slow the shared condition still supports the focal formation after it fails the sustaining formation, and the focal formation undermines at steps 2 and 3 (third independent review G5)."
+        "zh": "“只在一步上不被记入”只对 extracting 成立（Substitution.slow_withheld_two_steps）：在 slow 中共同条件跌破维持者的支持后仍支持焦点形成，它在第 2、3 步都侵蚀。",
+        "en": "“Withheld at one step only” holds only for extracting (Substitution.slow_withheld_two_steps): in slow the shared condition still supports the focal formation after it fails the sustaining formation, and the focal formation undermines at steps 2 and 3."
       }
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
       "detail": {
-        "zh": "第三次独立审查：所审的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法所放弃的、节制、替代、交互与剩余的无需实际汲取的连通上强于 Lean（已在整合文档中更正）。",
-        "en": "Third independent review: every declaration under review is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on what the stepwise reading gives up, restraint, substitution, interaction and the remaining connection that needs no actual drawing (corrected in the integration note)."
+        "zh": "一次独立审查：所审的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法所放弃的、节制、替代、交互与剩余的无需实际汲取的连通上强于 Lean（已在整合文档中更正）。",
+        "en": "An independent review: every declaration under review is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on what the stepwise reading gives up, restraint, substitution, interaction and the remaining connection that needs no actual drawing (corrected in the integration note)."
       }
     }
   ],
@@ -773,6 +773,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: review-round labels removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

@@ -96,7 +96,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
       "detail": {
-        "zh": "否定的是无引用语言足以解释完整接合的候选推论；不是生成基础不可能。局部单位不由本轮证明为普遍条件；退化定理不需有限性。",
+        "zh": "否定的是无引用语言足以解释完整接合的候选推论；不是生成基础不可能。局部单位未被证明为普遍条件；退化定理不需有限性。",
         "en": "Refutes the candidate inference that unanchored questions suffice for full joining, not the possibility of generative grounding. Local units are not proved universal; the collapse theorem needs no finiteness."
       }
     }
@@ -260,6 +260,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: round narration removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

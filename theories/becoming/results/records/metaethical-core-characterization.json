@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "metaethical-core-characterization",
   "title": {
-    "zh": "生成之论脊柱上的普遍元伦理核心：G0 由种子与边界中立刻画",
-    "en": "The Universal Metaethical Core on the Becoming spine: G0 characterized by a seed and boundary neutrality"
+    "zh": "生成之论脊柱上的生生之意义：由种子与边界中立刻画",
+    "en": "Living significance on the Becoming spine, characterized by a seed and boundary neutrality"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-10T23:22:35+00:00",
   "claim": {
-    "zh": "在同一框架（核心过程加主张赋值）上陈述评价，不另立世界模型。在已形成关系把生生连在一起、且有某一生生的整体上，“每一生生从每一立场都有正面意义”（G0 在主张层的形式）等价于三项合取：某处有一个生生被某立场珍视（种子；任何持 S0 且有自身生生的位置都提供一个）；正面意义沿非零的已形成关系传递（N_rel）；对生生的正面意义不随立场而取消（N_std）。位置化表述 D 由外在论表述 A 推出。一个以新生生为目标的 sound 探究，使每个对它有通达的位置都具有支持它的一项理由。种子、N_rel、N_std、连通与 A 各有一个一致的反模型；每个规范对手都恰是同一规则加上一条已形成的边界（自身区域、自身立场、认同者）。提升规则 L 只有经由一个可行的中间回应才传递。",
-    "en": "Evaluation is stated over one frame (the core process with realized claims), with no world model of its own. On a whole where formed relations connect living and further generation and some such claim exists, “every living claim is significant from every standpoint” (G0 at claim level) is equivalent to three conjuncts: some living claim is valued from some standpoint (a seed; any S0-holding position with own living supplies one); significance passes along nonzero formed relations (N_rel); and significance of living content holds from every standpoint (N_std). The positioned articulation D follows from the externalist articulation A. A sound inquiry whose goal is new living content gives every position with access a contributory reason for it. Seed, N_rel, N_std, connection and A each have a consistent countermodel, and each normative rival is the same rule restricted by a formed boundary (own region, own standpoint, endorsers). The lifting rule L is transitive only through a live middle response."
+    "zh": "在同一框架（核心过程加主张赋值）上陈述评价，不另立世界模型。在已形成关系把生生连在一起、且有某一生生的整体上，“每一生生从每一立场都有正面意义”（生生之意义在主张层的形式）等价于三项合取：某处有一个生生被某立场珍视（种子；任何持自身意义且有自身生生的位置都提供一个）；正面意义沿非零的已形成关系传递（关系中立）；对生生的正面意义不随立场而取消（立场中立）。位置化表述 D 由外在论表述 A 推出。一个以新生生为目标的 sound 探究，使每个对它有通达的位置都具有支持它的一项理由。种子、关系中立、立场中立、连通与 A 各有一个一致的反模型；每个规范对手都恰是同一规则加上一条已形成的边界（自身区域、自身立场、认同者）。提升规则 L 只有经由一个可行的中间回应才传递。",
+    "en": "Evaluation is stated over one frame (the core process with realized claims), with no world model of its own. On a whole where formed relations connect living and further generation and some such claim exists, “every living claim is significant from every standpoint” (living significance at claim level) is equivalent to three conjuncts: some living claim is valued from some standpoint (a seed; any position holding self-significance with own living supplies one); significance passes along nonzero formed relations (relational neutrality); and significance of living content holds from every standpoint (standpoint neutrality). The positioned articulation D follows from the externalist articulation A. A sound inquiry whose goal is new living content gives every position with access a contributory reason for it. Seed, relational neutrality, standpoint neutrality, connection and A each have a consistent countermodel, and each normative rival is the same rule restricted by a formed boundary (own region, own standpoint, endorsers). The lifting rule L is transitive only through a live middle response."
   },
   "hypotheses": [
     {
@@ -107,8 +107,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "detail": {
-        "zh": "只在自身区域内传递：持 S0、种子与 N_std，在自身区域内满足传递规则，却不给相连的他者意义。",
-        "en": "Transmission inside the own region only: holds S0, a seed and N_std and satisfies the transmission rule inside its own region, yet gives the connected other no significance."
+        "zh": "只在自身区域内传递：持自身意义、种子与立场中立，在自身区域内满足传递规则，却不给相连的他者意义。",
+        "en": "Transmission inside the own region only: holds self-significance, a seed and standpoint neutrality and satisfies the transmission rule inside its own region, yet gives the connected other no significance."
       }
     },
     {
@@ -128,8 +128,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "detail": {
-        "zh": "内在论：G0 完全成立，只给认同者理由的表述与之相容，却不给有通达、不认同的位置理由。",
-        "en": "Internalism: with G0 fully holding, an articulation restricted to endorsers is consistent and withholds the reason from a non-endorsing position with access."
+        "zh": "内在论：生生之意义完全成立，只给认同者理由的表述与之相容，却不给有通达、不认同的位置理由。",
+        "en": "Internalism: with living significance fully holding, an articulation restricted to endorsers is consistent and withholds the reason from a non-endorsing position with access."
       }
     }
   ],
@@ -294,8 +294,8 @@
     }
   ],
   "next_delta": {
-    "zh": "独立反审 A 的外在论辩护与 N 的哲学根据；不依赖运行的 living 与 related 读法，并与 universal_reason 接通；读法的选择对比较依 Ren 的交托决定，其哲学论证仍待作出。",
-    "en": "Independent review of A's externalist defence and N's philosophical warrant; run-independent readings of `living` and `related`, connected to universal_reason; the reading choice is decided on Ren's delegation for comparison, and its philosophical argument is still to be made."
+    "zh": "独立反审 A 的外在论辩护与 N 的哲学根据；不依赖运行的 living 与 related 读法，并与 universal_reason 接通；为比较所选的读法仍须作出哲学论证。",
+    "en": "Independent review of A's externalist defence and N's philosophical warrant; run-independent readings of `living` and `related`, connected to universal_reason; the reading chosen for comparison still needs its philosophical argument."
   },
   "history": [
     {
@@ -678,6 +678,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0, S0, N_rel/N_std, Universal Metaethical Core) replaced by the current vocabulary (living significance, self-significance, relational and standpoint neutrality, a title naming its content); authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

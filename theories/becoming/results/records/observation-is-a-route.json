@@ -114,8 +114,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T221156.459698Z): the 32 declarations of Becoming.Observation, 27 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 159; not independently reviewed."
   },
   "next_delta": {
-    "zh": "带误差的量度；他者之识作为路线；在下游者何时必不同（回应的下界）；独立审查；Ren 对读法的判断。",
-    "en": "Measurement with error; another's registration as a route; when what lies downstream must differ (lower bounds on responses); an independent review; Ren's judgment on the readings."
+    "zh": "带误差的量度；他者之识作为路线；在下游者何时必不同（回应的下界）；独立审查；对读法的论证判断。",
+    "en": "Measurement with error; another's registration as a route; when what lies downstream must differ (lower bounds on responses); an independent review; an argued judgment on the readings."
   },
   "correspondence": {
     "zh": "P124 留下“一个形成怎样开始观察它所依赖的储量”；Ren 对 P124 的做法答“approve your approach, please continue”。本结果部分回答：一个形成只能在从所观察者出发的所读路线的末端观察；反方向（在下游者必识）不成立。这一必要性是一种无干扰性质（Goguen 与 Meseguer 1982）：不在储量下游者不受它影响，如信息流的依存图读法。读法（AI 的，待 Ren）：观察不是依赖之外的第二种关系（AI 的注：定理只表明观察不越出依赖，未表明观察就是依赖），直接观察是长度为零的路线，量度、模型或他者之识是更长的路线；一个形成开始观察，是一次读闭合一条路线；P124 第二项读法中断裂之前对储量水平的读就是这样一条路线。",
@@ -451,7 +451,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-thresholds-approach-approved.md",
@@ -592,6 +592,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

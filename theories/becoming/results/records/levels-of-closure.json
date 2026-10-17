@@ -121,8 +121,8 @@
       ]
     },
     {
-      "zh": "在这样的共同供给条件下，以各中心供给闭包为界的意义，即 Becoming.Interdependence 不用公理的路线，就是公理；每个中心的系统都是整体时，以系统为界的意义就是公理，Clearing 是一个系统。Unrestricted 在这里只作为结论出现：某个有界的意义恰是它。",
-      "en": "Under such a common feeding condition, significance bounded by each center's feeding closure, the route without axiom of Becoming.Interdependence, is the axiom; where each center's system is the whole, significance bounded by the system is the axiom, and Clearing is one system. Unrestricted appears here only as a conclusion, that some bounded significance is exactly it.",
+      "zh": "在这样的共同供给条件下，以各中心供给闭包为界的意义，即 Becoming.Interdependence 不用公理的路线，就是延续条件；每个中心的系统都是整体时，以系统为界的意义就是延续条件，Clearing 是一个系统。这一条件在这里只作为结论出现：某个有界的意义恰是它。",
+      "en": "Under such a common feeding condition, significance bounded by each center's feeding closure, the route without axiom of Becoming.Interdependence, is the continuation condition; where each center's system is the whole, significance bounded by the system is the continuation condition, and Clearing is one system. The condition appears here only as a conclusion, that some bounded significance is exactly it.",
       "declarations": [
         "Becoming.Flow.feeding_unrestricted_of_common",
         "Becoming.Flow.bounded_system_whole",
@@ -789,6 +789,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-P42-P43-REVIEW.md, BECOMING-RENEWAL-READING.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (the axiom) replaced by the current vocabulary (the continuation condition), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

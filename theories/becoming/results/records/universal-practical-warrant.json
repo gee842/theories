@@ -154,8 +154,8 @@
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#226-实际比较限制怎样保护或阻碍展开"
     },
     {
-      "en": "One theory: following Ren, existing capture and revision results, at their scopes, explain purposes, knowing, normativity and response in the same organization; informed harm tests guarantees of goodwill and is no normative counterexample.",
-      "zh": "一个理论：依Ren，以既有捕获与修订结果（各按原范围）在同一组织中说明目的、认识、规范与回应；知情伤害检验对善意的保证，不是规范反例。",
+      "en": "One theory: existing capture and revision results, at their scopes, explain purposes, knowing, normativity and response in the same organization; informed harm tests guarantees of goodwill and is no normative counterexample.",
+      "zh": "一个理论：以既有捕获与修订结果（各按原范围）在同一组织中说明目的、认识、规范与回应；知情伤害检验对善意的保证，不是规范反例。",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#one-theory-selection-and-normativity"
     },
     {
@@ -177,7 +177,7 @@
     {
       "path": "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
       "role": "statement",
-      "sha256": "b5a0348ffb899d1d805fc128fb54c00e5f12fa2c9ad91c51bedde874a3ff3214",
+      "sha256": "182865dc14ceaec645cc70c67ac18d25382f0249663924b9a653730db6475f42",
       "declarations": []
     },
     {
@@ -268,6 +268,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): ZERO-AXIOM-PRACTICAL-JUDGMENT.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): ZERO-AXIOM-PRACTICAL-JUDGMENT.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

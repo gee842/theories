@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "比较在部分所及之内决定：覆盖部分在每步之前已到达者的任何意义，对有与无部分的水平作公理的比较；任意两个流的比较在其差别所及之内决定。",
-    "en": "The comparison is decided within what the part reaches: any significance covering what the part has reached before each step compares the levels with and without it as the axiom does, and the comparison of any two flows is decided within what their difference reaches."
+    "zh": "比较在部分所及之内决定：覆盖部分在每步之前已到达者的任何意义，对有与无部分的水平作延续条件的比较；任意两个流的比较在其差别所及之内决定。",
+    "en": "The comparison is decided within what the part reaches: any significance covering what the part has reached before each step compares the levels with and without it as the continuation condition does, and the comparison of any two flows is decided within what their difference reaches."
   },
   "laws": [
     {
@@ -27,8 +27,8 @@
       ]
     },
     {
-      "zh": "对覆盖部分在每步之前已到达者的任何意义，有部分的水平保留无部分的水平上有意义者，恰当前者包含后者，反过来也是；两者都不增加有意义的延续，恰当两者都不超出对方：这正是公理之下的比较。",
-      "en": "For any significance covering what the part has reached before each step, the levels with the part retain what has significance along those without it exactly when they include them, and the reverse, and neither adds a continuation with significance exactly when neither exceeds the other: the comparisons under the axiom.",
+      "zh": "对覆盖部分在每步之前已到达者的任何意义，有部分的水平保留无部分的水平上有意义者，恰当前者包含后者，反过来也是；两者都不增加有意义的延续，恰当两者都不超出对方：这正是延续条件之下的比较。",
+      "en": "For any significance covering what the part has reached before each step, the levels with the part retain what has significance along those without it exactly when they include them, and the reverse, and neither adds a continuation with significance exactly when neither exceeds the other: the comparisons under the continuation condition.",
       "declarations": [
         "Becoming.Web.Includes",
         "Becoming.Web.Exceeds",
@@ -57,8 +57,8 @@
       ]
     },
     {
-      "zh": "两个起始相同的平衡的流，水平在某步不同之处，两者在该条件上的取用或给予在更早的步不同；覆盖这一差别在每步之前所到达者的任何意义，对两个流作公理的比较。",
-      "en": "Where the levels of two balanced flows from one start differ at a step, their taking from or giving to that condition differed at an earlier step; any significance covering what the difference has reached before each step compares the two flows as the axiom does.",
+      "zh": "两个起始相同的平衡的流，水平在某步不同之处，两者在该条件上的取用或给予在更早的步不同；覆盖这一差别在每步之前所到达者的任何意义，对两个流作延续条件的比较。",
+      "en": "Where the levels of two balanced flows from one start differ at a step, their taking from or giving to that condition differed at an earlier step; any significance covering what the difference has reached before each step compares the two flows as the continuation condition does.",
       "declarations": [
         "Becoming.Flow.DiffersBefore",
         "Becoming.Flow.Balances.differs_before",
@@ -66,8 +66,8 @@
       ]
     },
     {
-      "zh": "Clearing 中从清除者的立场，以各系统为界的意义判它的部分失去一个有意义的延续（栖居者的），以各影响闭包为界判它保留；以各所及闭包为界的意义不是公理，却与公理一样判这一部分：恰在包含成立处保留，所以也失去它。",
-      "en": "In Clearing, from the clearer's standpoint, significance bounded by each system judges the clearer's part to lose a continuation with significance (the dweller's) and bounded by each influence closure to retain; significance bounded by each reach closure is not the axiom, yet judges the part as the axiom does, retaining exactly where inclusion holds, so losing it too.",
+      "zh": "Clearing 中从清除者的立场，以各系统为界的意义判它的部分失去一个有意义的延续（栖居者的），以各影响闭包为界判它保留；以各所及闭包为界的意义不是延续条件，却与延续条件一样判这一部分：恰在包含成立处保留，所以也失去它。",
+      "en": "In Clearing, from the clearer's standpoint, significance bounded by each system judges the clearer's part to lose a continuation with significance (the dweller's) and bounded by each influence closure to retain; significance bounded by each reach closure is not the continuation condition, yet judges the part as the continuation condition does, retaining exactly where inclusion holds, so losing it too.",
       "declarations": [
         "Becoming.Clearing.clearerPart",
         "Becoming.Clearing.system_counts_dweller",
@@ -93,8 +93,8 @@
       ]
     },
     {
-      "zh": "营养级联 Trophic 中，狼群的部分不到达森林；其余交换固定时森林每步有与无它同样被接纳，部分缩小，关闭鹿，公理之下从任何立场都不保留。",
-      "en": "In Trophic, a trophic cascade, the wolves' part does not reach the forest; with the rest of the exchange fixed the forest is admitted alike with and without it at every step, and the part narrows, closing the deer, so under the axiom it does not retain from any standpoint.",
+      "zh": "营养级联 Trophic 中，狼群的部分不到达森林；其余交换固定时森林每步有与无它同样被接纳，部分缩小，关闭鹿，延续条件之下从任何立场都不保留。",
+      "en": "In Trophic, a trophic cascade, the wolves' part does not reach the forest; with the rest of the exchange fixed the forest is admitted alike with and without it at every step, and the part narrows, closing the deer, so under the continuation condition it does not retain from any standpoint.",
       "declarations": [
         "Becoming.Trophic.wolvesPart",
         "Becoming.Trophic.withoutWolves",
@@ -104,16 +104,16 @@
       ]
     },
     {
-      "zh": "Trophic 中对照鹿有回应的流，同一取用是混合的，公理之下两条水平路径都不保留对方上有意义者；狼群的部分不到达森林，而两个流的差别在第 3 步之前到达它。",
-      "en": "In Trophic, against the flow in which the deer respond the same taking is mixed, and under the axiom neither level path retains along the other; the wolves' part does not reach the forest while the difference between the two flows reaches it before the third step.",
+      "zh": "Trophic 中对照鹿有回应的流，同一取用是混合的，延续条件之下两条水平路径都不保留对方上有意义者；狼群的部分不到达森林，而两个流的差别在第 3 步之前到达它。",
+      "en": "In Trophic, against the flow in which the deer respond the same taking is mixed, and under the continuation condition neither level path retains along the other; the wolves' part does not reach the forest while the difference between the two flows reaches it before the third step.",
       "declarations": [
         "Becoming.Trophic.responsive_mixed",
         "Becoming.Trophic.difference_reaches_forest"
       ]
     },
     {
-      "zh": "Trophic 中远处形成的系统只含它自己；从它的立场，以各系统为界的意义判远处形成与狼群的联合部分保留，公理之下它不保留（失去鹿）。",
-      "en": "In Trophic the far formation's system holds only itself, and from its standpoint significance bounded by each system judges the joint part of the far formation and the wolves to retain, while under the axiom the part does not retain (it loses the deer).",
+      "zh": "Trophic 中远处形成的系统只含它自己；从它的立场，以各系统为界的意义判远处形成与狼群的联合部分保留，延续条件之下它不保留（失去鹿）。",
+      "en": "In Trophic the far formation's system holds only itself, and from its standpoint significance bounded by each system judges the joint part of the far formation and the wolves to retain, while under the continuation condition the part does not retain (it loses the deer).",
       "declarations": [
         "Becoming.Trophic.farWolvesPart",
         "Becoming.Trophic.far_system",
@@ -458,7 +458,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -736,6 +736,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-P42-P43-REVIEW.md, BECOMING-RENEWAL-READING.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: outdated labels (the axiom) replaced by the current vocabulary (the continuation condition), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

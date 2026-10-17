@@ -301,8 +301,8 @@
     }
   ],
   "next_delta": {
-    "zh": "P99 已完成失配修改下一参考计划、检查安装及再次使用的局部接口。剩余为给定接触／可靠回返／修订原语的实际形成与对应，以及跨旧材料模型的正式交接、通用吸引；不要重开已成接口。",
-    "en": "P99 completes the local interface from mismatch to the next reference plan, checked installation and repeated use. Remaining questions concern formation/correspondence of supplied contact, faithful return and revision primitives, formal handoffs across older material models, and general attraction; do not reopen the completed local interface."
+    "zh": "失配修改下一参考计划、检查安装及再次使用的局部接口已完成。剩余为给定接触／可靠回返／修订原语的实际形成与对应，以及跨旧材料模型的正式交接、通用吸引；不要重开已成接口。",
+    "en": "The local interface from mismatch to the next reference plan, checked installation and repeated use is complete. Remaining questions concern formation/correspondence of supplied contact, faithful return and revision primitives, formal handoffs across older material models, and general attraction; do not reopen the completed local interface."
   },
   "history": [
     {
@@ -350,6 +350,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): COMMON-ORGANIZATION.md, META-ATTRACTOR-RECONCILIATION.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: P-numbers removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

@@ -41,8 +41,8 @@
       ]
     },
     {
-      "zh": "在 N_rel 之下，珍视一个以某关系项为生的事件，就珍视该关系项的每个活的事件，反之亦然：珍视狐的进食，就到达兔的活。",
-      "en": "Under N_rel, valuing an event that lives on a relatum reaches every living event of that relatum, and conversely: valuing the fox's eating reaches the hare's living.",
+      "zh": "在关系中立之下，珍视一个以某关系项为生的事件，就珍视该关系项的每个活的事件，反之亦然：珍视狐的进食，就到达兔的活。",
+      "en": "Under relational neutrality, valuing an event that lives on a relatum reaches every living event of that relatum, and conversely: valuing the fox's eating reaches the hare's living.",
       "declarations": [
         "Becoming.Web.living_on_reaches",
         "Becoming.Web.lived_on_reaches"
@@ -60,8 +60,8 @@
       ]
     },
     {
-      "zh": "在平衡且只有活跃形成给予的流中，生起的体现关系项从在该步活跃的另一个形成而来，这个形成不必体现；于是在 N_rel 之下，珍视这个形成的任一事件，就到达由它而来的关系项的每个活的事件，反之亦然。",
-      "en": "In a balanced flow in which only active formations give, an embodied relatum that arises descends from another formation active at that step, which need not be embodied; so under N_rel, valuing any event of that formation reaches every living event of the relatum descending from it, and conversely.",
+      "zh": "在平衡且只有活跃形成给予的流中，生起的体现关系项从在该步活跃的另一个形成而来，这个形成不必体现；于是在关系中立之下，珍视这个形成的任一事件，就到达由它而来的关系项的每个活的事件，反之亦然。",
+      "en": "In a balanced flow in which only active formations give, an embodied relatum that arises descends from another formation active at that step, which need not be embodied; so under relational neutrality, valuing any event of that formation reaches every living event of the relatum descending from it, and conversely.",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.Acting",
@@ -72,8 +72,8 @@
       ]
     },
     {
-      "zh": "世代各由前一代给予时，世系使它们连通，共同参与与交互都不连通它们，G0 在那里恰等于种子加 N_rel 加 N_std。",
-      "en": "Generations each given by the one before are connected by descent and by neither co-participation nor interaction, and G0 there is exactly a seed with N_rel and N_std.",
+      "zh": "世代各由前一代给予时，世系使它们连通，共同参与与交互都不连通它们，生生之意义在那里恰等于种子加关系中立加立场中立。",
+      "en": "Generations each given by the one before are connected by descent and by neither co-participation nor interaction, and living significance there is exactly a seed with relational neutrality and standpoint neutrality.",
       "declarations": [
         "Becoming.Brood.descends",
         "Becoming.Brood.descended",
@@ -848,6 +848,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0, N_rel/N_std) replaced by the current vocabulary (living significance, relational and standpoint neutrality), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

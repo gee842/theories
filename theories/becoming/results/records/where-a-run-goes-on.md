@@ -31,7 +31,7 @@
 - Runs along unbounded configurations where branching is finite and nothing is searched (given in Lasting through EitherThroughout and a selection); the laws along runs where nothing lists the configurations.
 - **Counterexample:** The fan (Lasting.Fan): the root has courses of every length and no run (Onward.fan_no_run): beyond finitely many configurations, courses of every length give no run. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · A relation omitted by a weaker description does not refute the fuller account.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -43,7 +43,7 @@ Canonical source: [Onward.lean](../../../../experiments/integrated-correction/ge
 <a id="next--下一步"></a>
 ## Next
 
-The laws along runs where nothing lists the configurations (for instance through a test and an enumeration); being drawn in within a bound; an independent review; Ren's judgment on the readings.
+The laws along runs where nothing lists the configurations (for instance through a test and an enumeration); being drawn in within a bound; an independent review; an argued judgment on the readings.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -103,7 +103,8 @@ Aliases: `where a run goes on`, `运行在何处延续`, `a run is a course into
 - 16 October 2026: added, answering the next_delta of returning-where-the-course-branches and the second item of the next_delta of lifting-where-branching-is-finite (P127); study section 161.
 - 16 October 2026, eighteenth review (R18): law 0's Chinese lacked its verb (有), and the review proposed “each course is had from its start” (item 38, P9). Checked against the Lean: reach_of_run gives Reach P (r.state 0) (r.state n), each configuration of the run reached from the run's start, so the original Chinese second half was right and the review's reading of it is not taken; the ambiguous English “each is had from its start” now reads “each configuration of the run is reached from its start”, and the Chinese gains its verb. The correspondence names König 1927 (item 39, K5). Claim unchanged.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-a-run-goes-on.json).
+- 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-a-run-goes-on.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "885b6a9b7ebcdaf6dd347ba87888d3b84e4fa0250075c2da37905836e725cdd0",
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311",
       "declarations": []
     },
     {
@@ -270,7 +270,7 @@
     }
   ],
   "next_delta": {
-    "zh": "本会话的形成—分化—方法及候选修订—使用—受支持接续的理论整合已完成。具体应用另须对应证据；对公开前提或交接的新反例会重开受影响结论。",
+    "zh": "所要求的形成—分化—方法及候选修订—使用—受支持接续的理论整合已完成。具体应用另须对应证据；对公开前提或交接的新反例会重开受影响结论。",
     "en": "The requested formation–differentiation–method/candidate revision–use–supported continuation integration is complete. Applications need their own correspondence evidence; new counterexamples to premises or handoffs would reopen the affected claim."
   },
   "history": [
@@ -449,6 +449,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation: in THE-THEORY-OF-BECOMING.md only section 11 changed (the chapter statuses now say batch H4 moved the earlier chapters to theories/becoming/history/, and link the chapter index), plus link rewrites. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: a session reference removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ]
 }

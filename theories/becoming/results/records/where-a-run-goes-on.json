@@ -143,8 +143,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T231055.702986Z): the 40 declarations of Becoming.Onward, 28 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 161; not independently reviewed."
   },
   "next_delta": {
-    "zh": "不列出配置时沿运行的定律（例如以测试与枚举陈述）；在界内被吸入；独立审查；Ren 对读法的判断。",
-    "en": "The laws along runs where nothing lists the configurations (for instance through a test and an enumeration); being drawn in within a bound; an independent review; Ren's judgment on the readings."
+    "zh": "不列出配置时沿运行的定律（例如以测试与枚举陈述）；在界内被吸入；独立审查；对读法的论证判断。",
+    "en": "The laws along runs where nothing lists the configurations (for instance through a test and an enumeration); being drawn in within a bound; an independent review; an argued judgment on the readings."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 returning-where-the-course-branches 的 next_delta 与 lifting-where-branching-is-finite 的 next_delta 第二项。读法（AI 的，待 Ren）：有限多配置之内，无尽地进行者靠回转而进行，路径本身显出它在何处返回，不需选取，延续从展开读出；配置不受界时，无尽的进行在能搜索移动处给出，对每个过程要求每个能继续运动的配置都开始一个运行，恰是依赖选择。分支无穷时每个长度的路径不给出运行（扇），是 König 引理（1927）对无穷分支的树不成立；有限的情形即 König 引理。依赖选择是标准名，核心名 DependentSelection 沿 Lasting 的“选取”；选取是每步取一个延续的函数，不是一个选取者。",
@@ -413,7 +413,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -524,6 +524,12 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

@@ -79,7 +79,7 @@ Two checked controls separate arbitrary finite serial reuse from overlapping acq
 
 This pilot is an explicit, checked reconstruction inside our existing process account. It is not a claim of novel mathematics. Dynamic sharing and loss of permissions already have substantial logical treatments, in addition to linear, graded and Petri-net approaches.
 
-The first-round next bridge was from independently specified readiness and shared-support histories to admissible contexts and faithful abstraction. Sections 7–10 now close the frozen-context and selected-workload interface. Comparison with Iris/Leaf and graded systems remains necessary for any novelty claim. A direct instance belongs among applications and integrations. This does not alter the completed G0/J ethical route: accurate support accounting informs joint-realization judgments, but copying or renewability does not itself establish goodness.
+The first-round next bridge was from independently specified readiness and shared-support histories to admissible contexts and faithful abstraction. Sections 7–10 now close the frozen-context and selected-workload interface. Comparison with Iris/Leaf and graded systems remains necessary for any novelty claim. A direct instance belongs among applications and integrations. This does not alter the completed conditional alignment route: accurate support accounting informs joint-realization judgments, but copying or renewability does not itself establish goodness.
 
 <a id="6-检查与复现--verification-and-reproduction"></a>
 ## 6. Verification and reproduction

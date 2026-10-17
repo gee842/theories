@@ -269,7 +269,7 @@
     {
       "path": "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
       "role": "statement",
-      "sha256": "8ddb1dcf69990d5ba9f787cf0a6ce984fd0ed648d40a725ceb5c302448bfaf39",
+      "sha256": "1e9d0d4f8b3742289a61faec6aa42e7d7b85165caf22a4a22306a5256ea4d757",
       "declarations": []
     },
     {
@@ -419,6 +419,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): COGNITION-LEARNING-AND-EVOLUTION.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): COGNITION-LEARNING-AND-EVOLUTION.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

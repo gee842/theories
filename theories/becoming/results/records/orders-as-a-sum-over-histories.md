@@ -28,7 +28,7 @@
 - Signed or complex carried differences: counting weights do not cancel, so there is no interference here.
 - Sums over infinitely many route points or an unbounded horizon, and their convergence.
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · A relation omitted by a weaker description does not refute the fuller account.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -40,7 +40,7 @@ Canonical source: [Routes.lean](../../../../experiments/integrated-correction/ge
 <a id="next--下一步"></a>
 ## Next
 
-Grouping by exactly i responses (for alternatives that commute); signed carried differences and cancellation; infinitely many route points and unbounded horizons; an independent review; Ren's judgment on the readings.
+Grouping by exactly i responses (for alternatives that commute); signed carried differences and cancellation; infinitely many route points and unbounded horizons; an independent review; an argued judgment on the readings.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -97,6 +97,7 @@ Aliases: `orders as a sum over histories`, `阶作为历史之和`, `sum over ro
 - 16 October 2026: answering the report that P121 and P122 had landed, Ren wrote “alright, agree” (source sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md). The AI reads it as Ren taking this record's readings in the AI's wording; correspondence says so and references add the source. Statement and proofs unchanged.
 - 16 October 2026, eighteenth review (R18): the statement “a finite horizon is exact exactly where no loop lies upstream” dropped the conditions law 4 and the hypotheses carry: every condition listed, and the same formations and strengths at every step (review item 31, O11); both statements now state them. The Chinese drops “each order is a sum over courses”, which the English never had and law 4 carries, so the two now say the same. Claim narrowed; no theorem changed.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
+- 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 14 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](orders-as-a-sum-over-histories.json).
 
 <a id="earlier-text--早期文本"></a>

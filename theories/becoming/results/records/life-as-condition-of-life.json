@@ -133,8 +133,8 @@
       ]
     },
     {
-      "zh": "汲取承担自身的关系项，与它的每个活跃事件相互作用：蜜蜂与花各自依存于自身与对方并汲取对方，彼此更新，每个事件都是 living，没有第三个条件，相互作用读法就连通，G0 在那里恰为种子加两项中立。",
-      "en": "Drawing on a relatum that bears on itself interacts with each of its active events: a bee and a flower, each depending on itself and on the other and drawing on the other, renew each other, every event is living, and with no third condition the interaction reading is connected, so that G0 there is exactly a seed with both neutralities.",
+      "zh": "汲取承担自身的关系项，与它的每个活跃事件相互作用：蜜蜂与花各自依存于自身与对方并汲取对方，彼此更新，每个事件都是 living，没有第三个条件，相互作用读法就连通，生生之意义在那里恰为种子加两项中立。",
+      "en": "Drawing on a relatum that bears on itself interacts with each of its active events: a bee and a flower, each depending on itself and on the other and drawing on the other, renew each other, every event is living, and with no third condition the interaction reading is connected, so that living significance there is exactly a seed with both neutralities.",
       "declarations": [
         "Becoming.Web.SelfBearing.interacts",
         "Becoming.Web.Interacts",
@@ -235,15 +235,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
       "detail": {
-        "zh": "不承担自身时，直接的关系看不见：Mutualism.apart 中蜜蜂与花各自只依存于对方，共同参与与相互作用都不连通（apart_not_connected、apart_not_interacting），尽管两者都体现（apart_embodied）：估值只经由共同的条件关联事件，体现本身不进入估值，只有承担自身把体现的关系项的活动接到汲取它的事件上（第六次独立审查 J5）。",
-        "en": "Without self-bearing the direct relation is invisible: in Mutualism.apart, where each of the bee and the flower depends only on the other, neither co-participation nor interaction connects them (apart_not_connected, apart_not_interacting), though both are embodied (apart_embodied): the valuations relate events only through a shared condition, so embodiment itself does not enter them, and only a self-dependence ties the embodied relatum's activity to the events drawing on it (sixth independent review, J5)."
+        "zh": "不承担自身时，直接的关系看不见：Mutualism.apart 中蜜蜂与花各自只依存于对方，共同参与与相互作用都不连通（apart_not_connected、apart_not_interacting），尽管两者都体现（apart_embodied）：估值只经由共同的条件关联事件，体现本身不进入估值，只有承担自身把体现的关系项的活动接到汲取它的事件上。",
+        "en": "Without self-bearing the direct relation is invisible: in Mutualism.apart, where each of the bee and the flower depends only on the other, neither co-participation nor interaction connects them (apart_not_connected, apart_not_interacting), though both are embodied (apart_embodied): the valuations relate events only through a shared condition, so embodiment itself does not enter them, and only a self-dependence ties the embodied relatum's activity to the events drawing on it."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "两类读法中曾活跃的形成既不体现也不承担自身（roles_not_embodied、roles_not_selfBearing）；两类表示省略的是形成与条件的同一对应，体现与承担自身是在这一对应下的读法：把条件一侧满射地重新标号，两类读法不变，体现与承担自身改变（relabel_dependent、relabel_undermining、Mutualism.apart_relabelled、Wilting.relabelled_not_embodied；第六次独立审查 J4）。",
-        "en": "In the two-kind reading no formation active at some step is embodied or bears on itself (roles_not_embodied, roles_not_selfBearing); what the two-kind representation omits is the identification of formations with conditions, under which embodiment and bearing on oneself are read: relabelling the condition side onto itself keeps the two-kind readings and changes embodiment and self-bearing (relabel_dependent, relabel_undermining, Mutualism.apart_relabelled, Wilting.relabelled_not_embodied; sixth independent review, J4)."
+        "zh": "两类读法中曾活跃的形成既不体现也不承担自身（roles_not_embodied、roles_not_selfBearing）；两类表示省略的是形成与条件的同一对应，体现与承担自身是在这一对应下的读法：把条件一侧满射地重新标号，两类读法不变，体现与承担自身改变（relabel_dependent、relabel_undermining、Mutualism.apart_relabelled、Wilting.relabelled_not_embodied）。",
+        "en": "In the two-kind reading no formation active at some step is embodied or bears on itself (roles_not_embodied, roles_not_selfBearing); what the two-kind representation omits is the identification of formations with conditions, under which embodiment and bearing on oneself are read: relabelling the condition side onto itself keeps the two-kind readings and changes embodiment and self-bearing (relabel_dependent, relabel_undermining, Mutualism.apart_relabelled, Wilting.relabelled_not_embodied)."
       }
     },
     {
@@ -256,22 +256,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "ending_breaks 读的是与终结的同时：花因自身的取用而凋，从不取用的蜜蜂在那一步的汲取仍是断裂并侵蚀，花自己的最后事件也是（Wilting.wilting；第六次独立审查 J6）。在 Dependent 与体现之下，对自身的依存恰在活跃时被满足（SelfBearing.met_iff）。",
-        "en": "ending_breaks reads co-occurrence with the ending: the flower wilts by its own taking, and the bee, which never takes, still breaks and undermines when it draws at that step, as does the flower's own last event (Wilting.wilting; sixth independent review, J6). Under Dependent and embodiment, a self-dependence is met exactly while the relatum is active (SelfBearing.met_iff)."
+        "zh": "ending_breaks 读的是与终结的同时：花因自身的取用而凋，从不取用的蜜蜂在那一步的汲取仍是断裂并侵蚀，花自己的最后事件也是（Wilting.wilting）。在 Dependent 与体现之下，对自身的依存恰在活跃时被满足（SelfBearing.met_iff）。",
+        "en": "ending_breaks reads co-occurrence with the ending: the flower wilts by its own taking, and the bee, which never takes, still breaks and undermines when it draws at that step, as does the flower's own last event (Wilting.wilting). Under Dependent and embodiment, a self-dependence is met exactly while the relatum is active (SelfBearing.met_iff)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "arises_given 中给予的关系项只是一个活跃的关系项：不体现、不承担自身、不依存于任何东西的源可以是唯一给予的关系项（SourceSeed.source_gives；第六次独立审查 J7）。",
-        "en": "The relatum giving in arises_given is an active relatum, not a life: a source that is not embodied, does not bear on itself and depends on nothing can be the only relatum that gives (SourceSeed.source_gives; sixth independent review, J7)."
+        "zh": "arises_given 中给予的关系项只是一个活跃的关系项：不体现、不承担自身、不依存于任何东西的源可以是唯一给予的关系项（SourceSeed.source_gives）。",
+        "en": "The relatum giving in arises_given is an active relatum, not a life: a source that is not embodied, does not bear on itself and depends on nothing can be the only relatum that gives (SourceSeed.source_gives)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "arises_from_embodied 的全部前提成立而它命名一个源（EmbodiedSource.embodied_source）：源的水平取一，体现，作为条件而在并给予种子；它不需要、不汲取、不取用任何东西，也不承担自身。体现是对作为条件而在的表示，不是对是生命的表示（第七次独立审查 K6）。",
-        "en": "Every premise of arises_from_embodied holds and it names a source (EmbodiedSource.embodied_source): with its level set to one the source is embodied, stands as a condition and gives to the seed; it requires, draws on and takes nothing and does not bear on itself. Being embodied represents standing as a condition, not being a life (seventh independent review, K6)."
+        "zh": "arises_from_embodied 的全部前提成立而它命名一个源（EmbodiedSource.embodied_source）：源的水平取一，体现，作为条件而在并给予种子；它不需要、不汲取、不取用任何东西，也不承担自身。体现是对作为条件而在的表示，不是对是生命的表示。",
+        "en": "Every premise of arises_from_embodied holds and it names a source (EmbodiedSource.embodied_source): with its level set to one the source is embodied, stands as a condition and gives to the seed; it requires, draws on and takes nothing and does not bear on itself. Being embodied represents standing as a condition, not being a life."
       }
     }
   ],
@@ -1166,6 +1166,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md, BECOMING-UNIFICATION-PLAN.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance); review-round labels removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

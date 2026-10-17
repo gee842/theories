@@ -250,8 +250,8 @@
     }
   ],
   "next_delta": {
-    "zh": "与外围 RootCoverageBoundary 的实例定理；与 P73 的 diagonal（没有学习者在每个历程上静止）的实例定理。",
-    "en": "The instance theorem to the periphery's RootCoverageBoundary; the instance theorem to P73's diagonal (no learner rests on every course)."
+    "zh": "与外围 RootCoverageBoundary 的实例定理；与 Learning 的 diagonal（没有学习者在每个历程上静止）的实例定理。",
+    "en": "The instance theorem to the periphery's RootCoverageBoundary; the instance theorem to Learning's diagonal (no learner rests on every course)."
   },
   "history": [
     {
@@ -398,6 +398,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording: P-numbers removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ]
 }

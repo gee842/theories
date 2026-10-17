@@ -37,7 +37,7 @@
 - Formation classes, tenure and undermining under a continuation are not stated.
 - **Counterexample:** Tandem.budding: a census without merges, lacking only no split, ceasing recurring with nothing ever arising; Tandem.joining: at most two active without splits, lacking only no merge, arising recurring with nothing ever ceasing. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence

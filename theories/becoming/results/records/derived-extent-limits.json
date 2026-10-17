@@ -70,8 +70,8 @@
       ]
     },
     {
-      "zh": "各形成持有并珍视自身的事件，清除者也珍视源的事件：每个生命都被持有，S0 处处成立，各立场的意义沿供给封闭；栖居者在第零步活的事件从清除者的立场没有意义，N_std 与 G0 不成立。",
-      "en": "With each formation holding and valuing its own events, and the clearer valuing also the source's, every life is held, S0 holds everywhere and each standpoint's significance is closed along feeding; the dweller's living event at step zero has no significance from the clearer, so N_std and G0 fail.",
+      "zh": "各形成持有并珍视自身的事件，清除者也珍视源的事件：每个生命都被持有，自身意义处处成立，各立场的意义沿供给封闭；栖居者在第零步活的事件从清除者的立场没有意义，立场中立与生生之意义不成立。",
+      "en": "With each formation holding and valuing its own events, and the clearer valuing also the source's, every life is held, self-significance holds everywhere and each standpoint's significance is closed along feeding; the dweller's living event at step zero has no significance from the clearer, so standpoint neutrality and living significance fail.",
       "declarations": [
         "Becoming.Clearing.own",
         "Becoming.Clearing.sig",
@@ -89,8 +89,8 @@
       ]
     },
     {
-      "zh": "S0 只涉及活的主张：清除者在第一步的事件活跃而不活，S0 对它无所说。",
-      "en": "S0 ranges over living claims: the clearer's event at step one is active and not living, and S0 says nothing of it.",
+      "zh": "自身意义只涉及活的主张：清除者在第一步的事件活跃而不活，自身意义对它无所说。",
+      "en": "Self-significance ranges over living claims: the clearer's event at step one is active and not living, and self-significance says nothing of it.",
       "declarations": [
         "Becoming.Clearing.clearer_not_living"
       ]
@@ -148,8 +148,8 @@
       "kind": "non-implication"
     },
     {
-      "zh": "伤害读在哪个层次，由 Ren 的回答给出（整体，较弱的版本在所在的系统之内，然后是自身），不由本结果给出。",
-      "en": "At which level harm is read is given by Ren's answer (the whole, a weaker version within the system one is in, then the self), not by this result.",
+      "zh": "伤害读在哪个层次是一种读法（整体，较弱的版本在所在的系统之内，然后是自身），不由本结果给出。",
+      "en": "At which level harm is read is a reading (the whole, a weaker version within the system one is in, then the self), not given by this result.",
       "kind": "correspondence"
     }
   ],
@@ -669,6 +669,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): BECOMING-RENEWAL-READING.md, CONTINUATION-GROUNDING-PLAN.md now hold the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, wording of the public fields: outdated labels (G0, S0, N_std) replaced by the current vocabulary (living significance, self-significance, standpoint neutrality); “given by Ren's answer” replaced by marking the level of harm as a reading, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
     }
   ],
   "text_versions": [

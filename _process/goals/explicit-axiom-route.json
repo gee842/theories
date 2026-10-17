@@ -2,8 +2,8 @@
   "schema_version": 1,
   "id": "explicit-axiom-route",
   "title": {
-    "zh": "已完成的明确公理路线",
-    "en": "Completed explicit-axiom route"
+    "zh": "已完成的条件对齐路线",
+    "en": "Completed conditional alignment route"
   },
   "scope_type": "completed-route",
   "state": "completed",
@@ -12,8 +12,8 @@
     "en": "Applies to the 8 October alignment grounding and direction task, without imposing completion gates on other sessions."
   },
   "objective": {
-    "zh": "复用 G0 与明确比较、责任和选择承诺下的实践判断与对齐方向。",
-    "en": "Reuse practical judgment and alignment direction under G0 and explicit comparison, responsibility and choice commitments."
+    "zh": "在生命的意义与明示的比较、责任与选择承诺之下，复用实践判断与对齐方向。",
+    "en": "Reuse practical judgment and the alignment direction under living significance and explicit comparison, responsibility and choice commitments."
   },
   "premises": {
     "zh": "不要求规范起点自身的无公理证明；额外承诺不能藏入定义。",

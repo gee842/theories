@@ -38,14 +38,14 @@
 
 - No premise is derived: the move is localization, not a re-founding of the representation, within which the premises remain contingent and independent.
 - Running down bounds change by an inequality, not an iff; the exact form is the identity over a stretch together with the one-step iffs.
-- The recurrence laws and the bound need a census of what stands at the steps of a tail; dropping it where infinitely many stand would change the representation of amounts, which is Ren's decision.
+- The recurrence laws and the bound need a census of what stands at the steps of a tail; dropping it where infinitely many stand would change the representation of amounts, a decision outside this result.
 - Whether each law survives amounts finer than whole units: laws-at-finer-units gives it, law 1's recurrence and law 3's bound needing the refinement counted as a giving; for rest, the resolution result covers it.
 - Coarser steps are in laws-at-coarser-steps and the tower of discrete readings in continuous-time-as-tower; real-valued time is not formalized.
 - Closure is not what bounds change: the proof shows that running down does, closure being how the premises supply it; the name ‘closure bounds change’ is Ren's.
 - **Counterexample:** World.sourcedQueue: the flow balances and is dissipative (which binds only closed families), yet members come to stand from nothing; by Flow.BalancesOn.comes_from_standing no family holding such a member is dissipated on across that step. So the local condition is dissipation on a family holding the relatum, which the premise supplies only where that family is closed. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standing.lean)
 - **Counterexample:** Listed.lpo_of_few: the form in which ceasing does not recur needs no decision, but naming an explicit last step needs omniscience in general; so continued change needing openness and ceasing needing arising are stated as negated recurrences. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -57,7 +57,7 @@ Canonical source: [Locality.lean](../../../../experiments/integrated-correction/
 <a id="next--下一步"></a>
 ## Next
 
-Restate the remaining localizable laws (dependence, reserve and support) locally; real-valued time; the representation decisions of class (b) and the names are Ren's.
+Restate the remaining localizable laws (dependence, reserve and support) locally; real-valued time; the representation decisions of class (b) and the names.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -134,7 +134,8 @@ Aliases: `Becoming.Flow.BalancesOn`, `Becoming.Flow.balances_iff_on`, `Becoming.
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D30): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: does_not_show 4 and 5 said finer units are "not tested here" and coarser steps and continuous time "not covered", and the next step asked to test both; laws-at-finer-units, laws-at-coarser-steps and continuous-time-as-tower give them, so the items now point there, the next step drops the two done items and names real-valued time, and three related entries are added. Earlier text in text_versions.
-- 44 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](laws-of-one-step.json).
+- 17 October 2026, wording of the public fields: attributions of decisions to Ren replaced by stating that the decisions lie outside this result, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 45 rebinding entries (2026-10-11 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](laws-of-one-step.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

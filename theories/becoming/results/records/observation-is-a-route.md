@@ -28,7 +28,7 @@
 - Which schedule a law reads, when a measurement starts and whether the record is read in time; measurement with error.
 - Statements on courses by strengths: bounding a difference of histories apart in many places by strengths changes them one place at a time and needs a decision on conditions; the theorems on courses here use the schedule read.
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · A relation omitted by a weaker description does not refute the fuller account.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -40,7 +40,7 @@ Canonical source: [Observation.lean](../../../../experiments/integrated-correcti
 <a id="next--下一步"></a>
 ## Next
 
-Measurement with error; another's registration as a route; when what lies downstream must differ (lower bounds on responses); an independent review; Ren's judgment on the readings.
+Measurement with error; another's registration as a route; when what lies downstream must differ (lower bounds on responses); an independent review; an argued judgment on the readings.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -109,7 +109,8 @@ Aliases: `observation is a route`, `观察是路线`, `a difference goes only do
 - 16 October 2026: added, on Ren's “approve your approach, please continue” of the same day (P125): how a formation comes to observe a stock it depends on; study section 159.
 - 16 October 2026, eighteenth review (R18): the title and law 3 claimed identity (“Observation is a route”, “Registering is being downstream”), while apart_only_downstream proves necessity only: what is not downstream stands alike; the converse fails, as does_not_show 0 concedes (review item 26, O5). The title now reads “Observation lies within the downstream”, the statement “can register it only through”, law 3 “Registering lies within the downstream”, and the correspondence answers in part and says the converse fails; the reading “observation is not a second relation beside dependence” gains the note that the theorem shows only that observation does not go beyond dependence, the reading itself being Ren's to keep, weaken or drop (item 45). The correspondence names Goguen–Meseguer 1982 (item 39, K7). The record id is unchanged. Claim narrowed; no theorem changed.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item C10: family F07 (practical judgment under explicit axioms, premises G0/J) becomes F01 (relational core): this record uses no ethical premise and no axiom and is a structural Part I result; the session map has no Part I family yet, and F01 is the correct existing one. Earlier text in text_versions.
-- 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](observation-is-a-route.json).
+- 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](observation-is-a-route.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

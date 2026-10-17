@@ -57,7 +57,7 @@
     {
       "path": "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md",
       "role": "statement",
-      "sha256": "1926149d97d38484a0e141a89216828073b915f1ffca73303d95068d0791a109",
+      "sha256": "db4e8efd15ea20d9c49030db97d9886613dfc9a32285062b0eb8d74f2698f2ba",
       "declarations": []
     },
     {
@@ -228,6 +228,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): ALIGNMENT-THROUGH-CHANGE.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
     }
   ]
 }

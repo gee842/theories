@@ -26,13 +26,13 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- That an actual becoming is to be read so: reading activity as exchanging and counting the rest are choices of representation (the second adopted by Ren); embodiment ties activity to standing.
+- That an actual becoming is to be read so: reading activity as exchanging and counting the rest are choices of representation (the second adopted by the theory); embodiment ties activity to standing.
 - What the rest is: its exchange is read off the levels and the formations' exchange, as their difference, not observed; counting it adds no information about the exchange.
 - Closure, dissipation, embodiment, bounded transmission and the decision to list what is active are not read off the exchange; they remain states of parts.
 - No physical conservation is claimed: with the rest counted, every flow balances by construction; likewise, under readWeb, activity needs support by the definition of the requirement as response.
 - **Counterexample:** responsive and unresponsive generate one course from one start yet differ in requirement (ExchangeLaw.requirement_beyond_course): requirement is not fixed by the course. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean)
 
-**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow Ren's naming criteria of 10 October 2026 and are adopted where the statement has their exact meaning (Ren, 12 October 2026); readings not marked as Ren's are decided by the AI on Ren's delegation of 15 October 2026, which Ren can reverse. · Uses decidability of the named determinations, a logical commitment written as a hypothesis.
+**Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · Uses decidability of the named determinations, a logical commitment written as a hypothesis.
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -97,7 +97,8 @@ Aliases: `tying premises read off the exchange`, `联结的前提从交换读出
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D27, D28): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Reading.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Imbalance.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Counterfactual.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 16 October 2026, eighteenth review (R18): readOff defines the requirement as responding below need, so under readWeb “activity needs support” follows in one line (supported_of_responds); the record conceded that balance holds by construction but not that support does too (review item 32, P1). does_not_show 3 takes in that sentence. Claim narrowed; no theorem changed.
-- 11 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](premises-read-off-the-exchange.json).
+- 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 12 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](premises-read-off-the-exchange.json).
 
 </details>
 

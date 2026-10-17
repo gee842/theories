@@ -70,7 +70,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [system-warrant](#system-warrant) | Grounding system relationships and admissible variations | foundation | Local dependency discharged; stronger foundational scope open |
 | [systems-complexity-chaos](#systems-complexity-chaos) | Systems, complexity and chaos within generative grounding | mathematics | Checked conditional formal result |
 | [the-theory-of-becoming](#the-theory-of-becoming) | The Theory of Becoming | synthesis | Canonical entry; conditional results checked, whole deduction open (source changed since reading) |
-| [the-theory-of-becoming-reference](#the-theory-of-becoming-reference) | The Theory of Becoming: reference catalogue | formal index | Reference and navigation |
+| [the-theory-of-becoming-reference](#the-theory-of-becoming-reference) | The Theory of Becoming: reference catalogue | formal index | Reference and navigation (source changed since reading) |
 | [the-theory-of-evolution](#the-theory-of-evolution) | The Theory of Evolution | research programme | Several focused connections checked; six broader requirements open (source changed since reading) |
 | [theory](#theory) | Relational generativity and the conditions of wisdom | synthesis | Conditional foundation (source changed since reading) |
 | [theory-of-becoming](#theory-of-becoming) | How relations of becoming change | mechanism | Checked conditional results; whole grounding open (source changed since reading) |
@@ -1458,6 +1458,8 @@ Correspondence covers only the stated premises and subclaims; source existence d
 **Source:** [THE-THEORY-OF-BECOMING-REFERENCE.md](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md)
 
 **Status:** Reference and navigation
+
+**Reading status:** the source changed after this reading (read version sha256 `3a067dec2fa6…`). The entry describes that earlier version; it awaits a reread before its hash is refreshed.
 
 **Argument:** Keeps the material moved out of the canonical chapter in the restructure of 17 October 2026: the full declaration lists of “In one sentence” and “The theory stated in full” (items 1–11), each with correction notes where the earlier wording was stronger than the Lean statement; the declaration catalogue of the whole, moved from “Part I stated whole”, with the review's corrections of hypotheses applied; and the module table of §9, read from the core receipt. It states nothing new.
 
