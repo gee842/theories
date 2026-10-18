@@ -10,3 +10,9 @@ node_modules/
 *.blend1
 .pytest_cache/
 .build/
+
+# Private and third-party material: kept on this machine, not shared (Ren, 19 October 2026)
+/sources/12-claude-ai-chats/
+/sources/13-claude-memories/
+/sources/18-friend-conversations/
+/drafts/2026-10-02-friend-conversation/

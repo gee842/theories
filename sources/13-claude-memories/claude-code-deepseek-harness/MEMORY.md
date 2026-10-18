@@ -1,5 +1,0 @@
-- [Node version for deepseek-harness](node-version-for-deepseek-harness.md) — default Node 23.11 unsupported; use nvm v22.22.2
-- [Working style](deepseek-harness-working-style.md) — agentic web OS direction, Opus subagents, git review, phases 1→2→3→4→7
-- [Phase work lives uncommitted in main checkout](phase-work-lives-uncommitted-in-main-checkout.md) — branch worktree/agentic-web-desktop; phases 1–5,7 committed as of 2026-08-30, tree clean; web-lane tsconfig gotcha
-- [Manifold product split state](manifold-product-split-state.md) — split COMPLETE 2026-08-31: dsh harness-only at e35d9d7749, manifold main runs the product under 12 gates; open items (bilingual, repo URLs, logo, key) inside
-- [Staged-lint unused-directive false positives](staged-lint-unused-directive-false-positives.md) — verify with type-aware run-oxlint before removing directives

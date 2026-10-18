@@ -1,3 +1,0 @@
-- [User role](user_role.md) — uses this repo as an alignment research notebook, not an engineering project
-- [Research mode](feedback_research_mode.md) — be a research collaborator here: push back, long-form ok, no engineering defaults
-- [User's alignment framework](project_user_framework.md) — outer-dynamics critique, the Fork, One Rule, co-alignment to 生生不息; treats this as 50-100yr contribution
