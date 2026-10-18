@@ -95,7 +95,7 @@ Answers to Ren's three questions (the AI's reading, adopted on Ren's delegation)
 - related, not a proved adapter: [endpoint-loss-and-return](endpoint-loss-and-return.md). Prior results: along an actual history, return holds exactly where every endpoint possibility is kept; the counter added in ReturnConditions.lean makes a native return no longer a return. restores_levels_not_history here is the same distinction on the flow; no formal adapter between them is claimed.
 - related, not a proved adapter: [theory-of-becoming-foundation](theory-of-becoming-foundation.md). Unification plan R5: entropy, following Ren's questions of 11 October 2026, the strongest form without premise first; this is not the deduction of the whole without axioms.
 
-**Used by:** [returning-novelty-forgetting-on-levels](returning-novelty-forgetting-on-levels.md) · [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md)
+**Used by:** [raising-what-couples-in-draws-from-beyond](raising-what-couples-in-draws-from-beyond.md) · [returning-novelty-forgetting-on-levels](returning-novelty-forgetting-on-levels.md) · [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md)
 
 <a id="sources--来源"></a>
 ### Sources

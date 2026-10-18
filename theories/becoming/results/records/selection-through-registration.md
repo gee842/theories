@@ -40,7 +40,6 @@
 - The laws do not derive who selects, what the selector registers, whether an actual selection goes through registration, whether offspring follow the selection, or whether reaching beyond is chosen.
 - The more is registered, the larger the registration closure and the smaller the gap: the law's force lies entirely in what the selector actually registers.
 - The main law is near-definitional and the blindness a one-line corollary of the theorems of testing-within-registration; the contribution is conceptual.
-- Favouring reaching beyond is stated only in the minimal witness Diversion. Witness: `Becoming.Diversion.favours`.
 - share_rises_through is an application, and its combination with transmission and an open world is a reading; where others respond to the stock a selection rests on, the response hypotheses can fail.
 - The formation of arbitrary physical primitives and more general rule-changing capture keep their own scope.
 - **Counterexample:** Selection is blind to the gap: in Clearing every selection through the clearer's registration selects the cleared and the spared world alike at every step, while the dweller is ended in the first and not in the second; that the dweller is ended goes through the clearer's registration at no step (Clearing.unselected). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
@@ -59,7 +58,7 @@ Canonical source: [Selection.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-The general form of favouring reaching beyond: when a part raising what registers must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.
+With transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -92,8 +91,9 @@ On 12 October 2026 Ren asked “hows cause–effect system comparing to our theo
 - related, not a proved adapter: [selection-under-registration-revision](selection-under-registration-revision.md). P93 completes choice preservation/loss under registration change and local executed reconstruction; acquired recipes and general capture remain open.
 - related, not a proved adapter: [selection-through-a-model-of-the-options](selection-through-a-model-of-the-options.md). A law of the same form: selection through registration reaches exactly what registers, and selection through a model separates exactly what the model separates; where the model ties two options, every selection through it selects them alike.
 - related, not a proved adapter: [the-gap-for-ones-own-act](the-gap-for-ones-own-act.md). There the gap for one's own act is a general theorem: the response premise of Flow.unselected_beyond_coupling_responsive derived from a law of exchange, for any act whose difference stays beyond the closure.
+- related, not a proved adapter: [raising-what-couples-in-draws-from-beyond](raising-what-couples-in-draws-from-beyond.md). There favouring reaching beyond is a general law: where a family containing what couples in gains nothing, a rise of what couples in is drawn from beyond it, so a selection rewarding the rise rewards the draw; Diversion is its instance.
 
-**Used by:** [generalization-through-lumping](generalization-through-lumping.md) · [selection-under-registration-revision](selection-under-registration-revision.md) · [the-gap-for-ones-own-act](the-gap-for-ones-own-act.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+**Used by:** [generalization-through-lumping](generalization-through-lumping.md) · [raising-what-couples-in-draws-from-beyond](raising-what-couples-in-draws-from-beyond.md) · [selection-under-registration-revision](selection-under-registration-revision.md) · [the-gap-for-ones-own-act](the-gap-for-ones-own-act.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -140,6 +140,8 @@ Aliases: `Becoming.Web.SelectsThrough`, `Becoming.Web.ScoresThrough`, `Becoming.
 - 18 October 2026, G1 (Becoming.SelectionGap): the open item "the gap for one's own act has no separate general theorem" is removed from does_not_show and next_delta, since the-gap-for-ones-own-act states it; that record is added as related. This record's claims are unchanged.
 - 18 October 2026, G1 (Becoming.SelectionGap): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): S1 and S2 revised the "Seeking, capture and runaway" row, and G1 revised the "Selection, causes and experiment" row (the gap for one's own act stated, its record linked). Read before re-pointing. The claim is unchanged.
 - 18 October 2026, readings D40-D42: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the readings of L1, S1 and S2 added as labelled paragraphs (AI reading, D40; AI reading, D41, D42), two interpretive sentences of the L1 bullets moved into the first). The claim is unchanged.
+- 18 October 2026, G2 (Becoming.SelectionReach): the open item "favouring reaching beyond is stated only in the minimal witness Diversion" is removed from does_not_show and next_delta, since raising-what-couples-in-draws-from-beyond states it in general; that record is added as related. This record's claims are unchanged.
+- 18 October 2026, G2 (Becoming.SelectionReach): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G2 added the bullet on raising what couples in, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 35 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](selection-through-registration.json).
 
 <a id="earlier-text--早期文本"></a>

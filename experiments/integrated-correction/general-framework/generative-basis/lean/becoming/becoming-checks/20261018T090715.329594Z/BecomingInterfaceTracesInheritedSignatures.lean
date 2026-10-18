@@ -1,0 +1,5 @@
+import Becoming.InterfaceTracesInherited
+#check @Becoming.InterfaceTracesInherited.false_iff_not
+#check @Becoming.InterfaceTracesInherited.selected_iff_completes
+#check @Becoming.InterfaceTracesInherited.none_selected_iff
+#check @Becoming.InterfaceTracesInherited.selected_completes

@@ -185,12 +185,6 @@
       "kind": "scope"
     },
     {
-      "zh": "偏向伸出只在最小的见证 Diversion 中陈述。",
-      "en": "Favouring reaching beyond is stated only in the minimal witness Diversion.",
-      "kind": "scope",
-      "witness": "Becoming.Diversion.favours"
-    },
-    {
       "zh": "share_rises_through 是应用；它与传递和世界开放的组合是读法。他者回应选择所依的储量时，回应的假设可以不成立。",
       "en": "share_rises_through is an application, and its combination with transmission and an open world is a reading; where others respond to the stock a selection rests on, the response hypotheses can fail.",
       "kind": "scope"
@@ -234,8 +228,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Selection have empty axiom reports (receipt 20261013T094743.528770Z; the current bytes of Selection and Capture bound by 20261013T204910.042715Z, of Testing by 20261014T091930.724493Z), and the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "en": "The general form of favouring reaching beyond: when a part raising what registers must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.",
-    "zh": "偏向伸出的一般形式：抬高所识者的部分何时必伸出识闭包之外；与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升。"
+    "en": "With transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.",
+    "zh": "与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升。"
   },
   "correspondence": {
     "zh": "2026-10-12，Ren 问“hows cause–effect system comparing to our theory?”，并贴入一段作者未注明的因果系统说明（不是 Ren 的话，也不是前提）；AI 作比较并提出五项可学之处后，Ren 写“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本记录是其中第一项，五项提议是 AI 的。读法（AI 的，依 Ren 的交托采用）：任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，对候选者的部分在选择者识闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去识闭包，只经依存、观察或他者之识合起来才合上；伸出而抬高所识者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及奖励所识。AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接；这是 AI 的联系。见整合文档 §86。",
@@ -401,6 +395,13 @@
         "en": "There the gap for one's own act is a general theorem: the response premise of Flow.unselected_beyond_coupling_responsive derived from a law of exchange, for any act whose difference stays beyond the closure.",
         "zh": "那里自身动作的缺口是一般定理：Flow.unselected_beyond_coupling_responsive 的回应前提由交换律推出，对差别留在闭包之外的任何动作。"
       }
+    },
+    {
+      "id": "raising-what-couples-in-draws-from-beyond",
+      "detail": {
+        "en": "There favouring reaching beyond is a general law: where a family containing what couples in gains nothing, a rise of what couples in is drawn from beyond it, so a selection rewarding the rise rewards the draw; Diversion is its instance.",
+        "zh": "那里偏向伸出是一般规律：包含所耦合者的族不增益时，所耦合者的上升取自其外，所以奖励上升的选择奖励这一汲取；Diversion 是其实例。"
+      }
     }
   ],
   "references": [
@@ -536,7 +537,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "5bc6d3c8152ab0062a335b3d041aba160b5b605ad8eb5b2da6a90b662e18933b",
+      "sha256": "46444b00d1fe3a02a1eabb32ee081fc8cab80f9ee7ea6ec682c24522d3dc8b88",
       "declarations": []
     },
     {
@@ -831,6 +832,14 @@
     {
       "en": "18 October 2026, readings D40-D42: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the readings of L1, S1 and S2 added as labelled paragraphs (AI reading, D40; AI reading, D41, D42), two interpretive sentences of the L1 bullets moved into the first). The claim is unchanged.",
       "zh": "2026年10月18日，读法 D40-D42：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G2 (Becoming.SelectionReach): the open item \"favouring reaching beyond is stated only in the minimal witness Diversion\" is removed from does_not_show and next_delta, since raising-what-couples-in-draws-from-beyond states it in general; that record is added as related. This record's claims are unchanged.",
+      "zh": "2026年10月18日，G2（Becoming.SelectionReach）：因 raising-what-couples-in-draws-from-beyond 一般地陈述了它，从 does_not_show 与 next_delta 删去开放项“偏向伸出只在最小的见证 Diversion 中陈述”；加入该记录为相关。本记录的论断不变。"
+    },
+    {
+      "en": "18 October 2026, G2 (Becoming.SelectionReach): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G2 added the bullet on raising what couples in, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G2（Becoming.SelectionReach）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

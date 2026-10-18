@@ -178,6 +178,7 @@ import Becoming.Unrolling
 import Becoming.Enough
 import Becoming.Settling
 import Becoming.SelectionGap
+import Becoming.SelectionReach
 
 /-!
 # The Theory of Becoming: the formal core
@@ -830,6 +831,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   the rest's response derived from the law; with both acts laws, neither the second flow, nor the
   response, nor the levels are supplied. A consequence of the act beyond the closure is selected
   through no member of it.
+* `Becoming.SelectionReach` (L4): favouring what reaches beyond, in general. In a balanced flow,
+  where a family containing what couples in gains nothing across a step, a rise of what couples
+  in has a formation that gives it more than it takes from it and takes from beyond it; with
+  equality decided, from a condition no member of the group couples into; the rise is paid from
+  beyond in full. So every selection
+  holding only where what couples in rises holds only on flows reaching beyond the coupling.
+  `Diversion` is an instance, and its supplying flow, which gains, shows the premise binds.
 * `Becoming.Learning` (L4): no record fixes the next value: two courses share any record and
   differ at its next step, also among worlds held by a list, and for every learner a course
   refutes each of its claims, the registration of a law keeping its record, so open. Learning by

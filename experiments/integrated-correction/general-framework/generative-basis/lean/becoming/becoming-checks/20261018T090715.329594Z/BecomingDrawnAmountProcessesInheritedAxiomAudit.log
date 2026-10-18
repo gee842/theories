@@ -1,0 +1,11 @@
+'Becoming.DrawnAmountProcessesInherited.sub_lt_sub_of_lt' does not depend on any axioms
+'Becoming.DrawnAmountProcessesInherited.left_step_retains' depends on axioms: [propext]
+'Becoming.DrawnAmountProcessesInherited.overbuild_step_loses' depends on axioms: [propext]
+'Becoming.DrawnAmountProcessesInherited.report_same_basis_differs' depends on axioms: [propext]
+'Becoming.DrawnAmountProcessesInherited.no_report_judge' depends on axioms: [propext]
+'Becoming.DrawnAmountProcessesInherited.frame' depends on axioms: [propext]
+'Becoming.DrawnAmountProcessesInherited.formation_required_on_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Becoming.DrawnAmountProcessesInherited.neither_route_required_on_frame' depends on axioms: [propext, Quot.sound]
+'Becoming.DrawnAmountProcessesInherited.overbuild_off_frontier_on_frame' depends on axioms: [propext]

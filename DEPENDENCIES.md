@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-236 registered results: 220 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 595 curated edges join 194 results to the results they draw on.
+237 registered results: 221 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 597 curated edges join 195 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -140,6 +140,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [presupposition-scopes][] ← <a id="presupposition-scopes--levels-of-closure"></a>[levels-of-closure][] · <a id="presupposition-scopes--feeding-closure"></a>[feeding-closure][] · <a id="presupposition-scopes--comparison-within-reach"></a>[comparison-within-reach][] · <a id="presupposition-scopes--one-axiom-yields-g0"></a>[one-axiom-yields-g0][] · <a id="presupposition-scopes--four-cases-of-a-part"></a>[four-cases-of-a-part][] · <a id="presupposition-scopes--significance-retained-within-margin"></a>[significance-retained-within-margin][] · <a id="presupposition-scopes--whole-first-and-bounded-centers"></a>[whole-first-and-bounded-centers][]
 - [process-and-frame-as-readings][] ← <a id="process-and-frame-as-readings--space-and-its-parts"></a>[space-and-its-parts][] · <a id="process-and-frame-as-readings--projection-carrying-a-law"></a>[projection-carrying-a-law][] · <a id="process-and-frame-as-readings--experiment-needs-return"></a>[experiment-needs-return][] · <a id="process-and-frame-as-readings--joint-difference-making"></a>[joint-difference-making][] · <a id="process-and-frame-as-readings--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][]
 - [projection-carrying-a-law][] ← <a id="projection-carrying-a-law--experiment-needs-return"></a>[experiment-needs-return][] · <a id="projection-carrying-a-law--joint-difference-making"></a>[joint-difference-making][] · <a id="projection-carrying-a-law--recurrence-without-premise"></a>[recurrence-without-premise][]
+- [raising-what-couples-in-draws-from-beyond][] ← <a id="raising-what-couples-in-draws-from-beyond--selection-through-registration"></a>[selection-through-registration][] · <a id="raising-what-couples-in-draws-from-beyond--entropy-history-and-record"></a>[entropy-history-and-record][]
 - [ranking-under-readings][] ← <a id="ranking-under-readings--relational-reading-comparison"></a>[relational-reading-comparison][] · <a id="ranking-under-readings--becoming-stepwise-reading"></a>[becoming-stepwise-reading][] · <a id="ranking-under-readings--relational-renewal-classification"></a>[relational-renewal-classification][] · <a id="ranking-under-readings--one-axiom-yields-g0"></a>[one-axiom-yields-g0][] · <a id="ranking-under-readings--significance-retained-within-margin"></a>[significance-retained-within-margin][] · <a id="ranking-under-readings--closing-needs-net-draw"></a>[closing-needs-net-draw][]
 - [recoverable-mediated-change][] ← <a id="recoverable-mediated-change--mediated-evidence-transport"></a>[mediated-evidence-transport][]
 - [recurrence-without-decidedness][] ← <a id="recurrence-without-decidedness--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] · <a id="recurrence-without-decidedness--space-and-its-parts"></a>[space-and-its-parts][]
@@ -354,6 +355,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [presupposition-scopes]: theories/becoming/results/records/presupposition-scopes.md
 [process-and-frame-as-readings]: theories/becoming/results/records/process-and-frame-as-readings.md
 [projection-carrying-a-law]: theories/becoming/results/records/projection-carrying-a-law.md
+[raising-what-couples-in-draws-from-beyond]: theories/becoming/results/records/raising-what-couples-in-draws-from-beyond.md
 [ranking-under-readings]: theories/becoming/results/records/ranking-under-readings.md
 [recoverable-mediated-change]: theories/becoming/results/records/recoverable-mediated-change.md
 [recurrence-without-decidedness]: theories/becoming/results/records/recurrence-without-decidedness.md

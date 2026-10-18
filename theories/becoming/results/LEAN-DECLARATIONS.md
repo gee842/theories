@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 184 | 7,694 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 185 | 7,707 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 39 | 601 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -759,6 +759,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Segmentation.lean](lean-declarations/becoming-core.md#module-6e0ec291c7d2) | Becoming pure core |
 | [Selection.lean](lean-declarations/becoming-core.md#module-8b0687844bea) | Becoming pure core |
 | [SelectionGap.lean](lean-declarations/becoming-core.md#module-bff05f8dbe13) | Becoming pure core |
+| [SelectionReach.lean](lean-declarations/becoming-core.md#module-fbecd7401f01) | Becoming pure core |
 | [SelectionRelabelCorrespondence.lean](lean-declarations/abstraction.md#module-d28f30cfca89) | Abstraction, applicability and constitution |
 | [SelectionRuns.lean](lean-declarations/becoming-core.md#module-2670a1458719) | Becoming pure core |
 | [SelectiveRevision.lean](lean-declarations/inquiry.md#module-2ce080a6f0f1) | Attainable inquiry, contact and process laws |

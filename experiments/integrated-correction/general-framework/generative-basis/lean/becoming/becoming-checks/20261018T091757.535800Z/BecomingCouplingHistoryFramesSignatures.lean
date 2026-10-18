@@ -1,0 +1,6 @@
+import Becoming.CouplingHistoryFrames
+#check @Becoming.CouplingHistoryFrames.admissible_trace
+#check @Becoming.CouplingHistoryFrames.trace_admissible
+#check @Becoming.CouplingHistoryFrames.history_meaning
+#check @Becoming.CouplingHistoryFrames.retained_left_only
+#check @Becoming.CouplingHistoryFrames.joint_description_separates

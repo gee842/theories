@@ -1,0 +1,17 @@
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/g1/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g2-selection-reach",
+  "modules": 41,
+  "ran": [
+    "Becoming.SelectionReach",
+    "BecomingSelectionReachAxiomAudit"
+  ],
+  "reused": 40,
+  "unclean": [],
+  "audits": {
+    "Becoming.SelectionReach": {
+      "theorems": 13,
+      "declarations": 13,
+      "with_axioms": {}
+    }
+  }
+}

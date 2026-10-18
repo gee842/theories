@@ -75,6 +75,7 @@ Aliases: `boundary of enough under undetermined laws`, `不确定之律下够的
 - 18 October 2026, G1 (Becoming.SelectionGap): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G1 added the bullet on the gap for one's own act, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 18 October 2026: the reading decided by the AI on Ren's words of 18 October ("alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable"), DELEGATED-CHOICES D41; the chapter labels it "AI reading, D41". The claim is unchanged.
 - 18 October 2026, readings D40-D42: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the readings of L1, S1 and S2 added as labelled paragraphs (AI reading, D40; AI reading, D41, D42), two interpretive sentences of the L1 bullets moved into the first). The claim is unchanged.
+- 18 October 2026, G2 (Becoming.SelectionReach): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G2 added the bullet on raising what couples in, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 
 </details>
 
