@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "c5ee3aa06992c90cd758ff1ad669bc416cae6de89dbcf51c9c7c5957264db98b",
+      "sha256": "bf84cf41856804876bd548e8fb016e1c06fec139438ebae86ee8a5d66f4cef51",
       "declarations": []
     },
     {
@@ -569,6 +569,10 @@
     {
       "en": "19 October 2026, A2: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A2 changed one clause of section 8.4's paragraph on the generativity chain: the proposal to add Selection, Observation and Parting to the chain's learning and wisdom links is now applied, with links to the chain and its maintenance record). The claim is unchanged.",
       "zh": "2026年10月19日，A2：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G4 added the Mechanism bullet on a law through coupling, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

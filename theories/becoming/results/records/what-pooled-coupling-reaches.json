@@ -414,7 +414,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "651b1f9d21003bb629838423ce7cc0f0fb8fd2ca976a8303a3d933b38f8bc361"
+      "sha256": "bf84cf41856804876bd548e8fb016e1c06fec139438ebae86ee8a5d66f4cef51"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -475,6 +475,10 @@
     },
     {
       "en": "18 October 2026, F2, joins into the core (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): declarations moved with their full Lean names. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the \"Selection, causes and experiment\" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：G4 修订“选择、原因与实验”行（陈述了沿一个运行经耦合的判据，链接其记录）。重新指向前已读。论断不变。"
     }
   ]
 }

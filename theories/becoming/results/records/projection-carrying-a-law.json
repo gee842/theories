@@ -218,8 +218,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Mechanism have empty axiom reports (receipt 20261013T094743.528770Z, which also binds Becoming.Experiment and Becoming.Recurrence; current bytes of Becoming.Mechanism and Becoming.Joint bound by 20261013T221720.428753Z), and the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "en": "The instance with Becoming.Testing's registration as the projection; the state's law over long stretches where the rule changes slowly.",
-    "zh": "以 Becoming.Testing 的识为投影的实例；规则缓慢改变时状态在长段上的规律。"
+    "en": "The state's law over long stretches where the rule changes slowly.",
+    "zh": "规则缓慢改变时状态在长段上的规律。"
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 问：“hows cause–effect system comparing to our theory?”，贴入一段作者未注明的说明（不是 Ren 的话，不是前提），又写“think for one more round, what can we learn, being inspired, and improve?”；对 AI 的五项提议答：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。这是第三项（机制是一种分解，不是另一种规律）。读法（AI 的，依 Ren 的交托采用）：机制是承载规律的投影，“关于何者无关的模型”（Becoming.Experiment）由相同者同去精确刻画；配置的投影是时间读法与更细的量的单位之外的第三种东西；较粗描述上的规律（涌现）就是那里的相同者同去，不分任何东西的描述总承载规律，所以内容在于哪个描述；规则持有结果（Becoming.Capture）是只依于规则；改变自身因果的系统的规律在状态与规则的联合配置上，不需要另一种规律；读 理 为投影（Becoming.Experiment），它何时承载规律由此给出。",
@@ -466,7 +466,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "651b1f9d21003bb629838423ce7cc0f0fb8fd2ca976a8303a3d933b38f8bc361",
+      "sha256": "bf84cf41856804876bd548e8fb016e1c06fec139438ebae86ee8a5d66f4cef51",
       "declarations": []
     },
     {
@@ -771,6 +771,14 @@
     },
     {
       "en": "18 October 2026, F2, joins into the core (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): declarations moved with their full Lean names. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): \"the instance with Becoming.Testing's registration as the projection\" is removed from next_delta, since a-law-through-coupling-along-one-run states it along one run. This record's claims are unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：因 a-law-through-coupling-along-one-run 沿一个运行陈述了它，从 next_delta 删去“以 Becoming.Testing 的识为投影的实例”。本记录的论断不变。"
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the \"Selection, causes and experiment\" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：G4 修订“选择、原因与实验”行（陈述了沿一个运行经耦合的判据，链接其记录）。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

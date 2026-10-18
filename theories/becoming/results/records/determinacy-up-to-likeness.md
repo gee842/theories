@@ -78,6 +78,8 @@ Reading (the AI's; Ren agreed with its direction on 14 October 2026): likeness i
 - related, not a proved adapter: [returning-where-the-course-branches](returning-where-the-course-branches.md). The same module.
 - related, not a proved adapter: [tests-fix-likeness-where-determined](tests-fix-likeness-where-determined.md). The same module, Becoming.Likeness, proves that branching tests fix likeness constructively on finite decided frames.
 
+**Used by:** [a-law-through-coupling-along-one-run](a-law-through-coupling-along-one-run.md)
+
 <a id="sources--来源"></a>
 ### Sources
 

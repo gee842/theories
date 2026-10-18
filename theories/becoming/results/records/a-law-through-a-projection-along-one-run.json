@@ -75,11 +75,6 @@
       "kind": "correspondence"
     },
     {
-      "en": "The instance with Becoming.Testing's registration (Web.AlikeThroughUpTo) as the projection is not stated.",
-      "zh": "以 Becoming.Testing 的识（Web.AlikeThroughUpTo）为投影的实例没有陈述。",
-      "kind": "scope"
-    },
-    {
       "en": "A law means a determined process; undetermined and random laws along a run are not treated.",
       "zh": "规律指确定的过程；沿运行的不确定与随机规律没有处理。",
       "kind": "scope"
@@ -112,8 +107,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T150254.342862Z）：Becoming.LawAlongRun 的 17 项定理公理报告为空；检查器并核对核心纯净。作者自审见研究第 181 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "The instance with Becoming.Testing's registration (Web.AlikeThroughUpTo) as the projection; how many steps of a run settle whether a law through a finite description holds (with Becoming.Recurrence); an independent review.",
-    "zh": "以 Becoming.Testing 的识（Web.AlikeThroughUpTo）为投影的实例；一个运行要多少步才定下经有限描述的规律是否成立（与 Becoming.Recurrence 一起）；独立审查。"
+    "en": "How many steps of a run settle whether a law through a finite description holds (with Becoming.Recurrence); an independent review.",
+    "zh": "一个运行要多少步才定下经有限描述的规律是否成立（与 Becoming.Recurrence 一起）；独立审查。"
   },
   "correspondence": {
     "en": "The chapter's open programme (section 8.2, Selection, causes and experiment) named \"a constructive criterion along one run for a projection carrying a law\" and \"the bridge to GenerativeCore's exact projection\"; projection-carrying-a-law left both in does_not_show. Becoming.Unfolding had the case through the identity over the whole history (Consistent, exists_law_iff); here any projection, up to any step, with the identity case as an instance. Ren, 18 October 2026: \"please see what else is there to do - keep pushing the frontier till finishing\" (provenance, not warrant). Reading (the AI's): a run is evidence of a law at a description exactly as far as its own steps agree; what it never visits it does not test; a law at a description is not yet a faithful model of finite paths, which needs every configuration of a class to be able to do what any of them did.",
@@ -231,6 +226,13 @@
         "en": "There the record fixes a move's outcome only where taken; here the record read through a description is the least candidate law, a law exactly where it is consistent.",
         "zh": "那里记录只在动作被取处固定其结果；这里经描述读出的记录是最小的候选规律，恰在一致处是规律。"
       }
+    },
+    {
+      "id": "a-law-through-coupling-along-one-run",
+      "detail": {
+        "en": "There the criterion up to an equivalence, of which this one is the instance with equal projections, and its instance with a formation's coupling (Web.AlikeThrough) as the relation.",
+        "zh": "那里是到等价关系为止的判据，本判据是其以相等投影的实例；以及以形成的耦合（Web.AlikeThrough）为关系的实例。"
+      }
     }
   ],
   "references": [
@@ -327,7 +329,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "651b1f9d21003bb629838423ce7cc0f0fb8fd2ca976a8303a3d933b38f8bc361"
+      "sha256": "bf84cf41856804876bd548e8fb016e1c06fec139438ebae86ee8a5d66f4cef51"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
@@ -408,6 +410,14 @@
     },
     {
       "en": "18 October 2026, F2, joins into the core (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): declarations moved with their full Lean names. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): the open item \"the instance with Becoming.Testing's registration as the projection is not stated\" is removed from does_not_show and next_delta, since a-law-through-coupling-along-one-run states it, up to a relation because coupling is not a projection; that record is added as related. This record's claims are unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：因 a-law-through-coupling-along-one-run 陈述了它（因耦合不是投影，到关系为止），从 does_not_show 与 next_delta 删去开放项“以 Becoming.Testing 的识为投影的实例没有陈述”；加入该记录为相关。本记录的论断不变。"
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the \"Selection, causes and experiment\" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：G4 修订“选择、原因与实验”行（陈述了沿一个运行经耦合的判据，链接其记录）。重新指向前已读。论断不变。"
     }
   ]
 }

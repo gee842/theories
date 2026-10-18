@@ -139,6 +139,7 @@ Aliases: `Becoming.Listed.across`, `Becoming.Listed.over_stretch`, `Becoming.Lis
 - 18 October 2026, F2, joins into the core (Ren: "please, do them, reduce bridges and add more theory to the spine"): declarations moved with their full Lean names. The claim is unchanged.
 - 19 October 2026, F2 follow-up: the chapter changed only in section 8's row on the integration of the spine, where the F2 rerun sentence now says F3R registered its 21 apart roots (`39c66e31b`); the reference to the chapter is re-pointed. The claim is unchanged.
 - 19 October 2026, A2: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A2 changed one clause of section 8.4's paragraph on the generativity chain: the proposal to add Selection, Observation and Parting to the chain's learning and wisdom links is now applied, with links to the chain and its maintenance record). The claim is unchanged.
+- 18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G4 added the Mechanism bullet on a law through coupling, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 78 rebinding entries (2026-10-10 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](census-balance.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -24,7 +24,6 @@
 ## Does not show
 
 - Which projection an actual unfolding carries a law through, or that any formation forms or uses one.
-- The instance with Becoming.Testing's registration (Web.AlikeThroughUpTo) as the projection is not stated.
 - A law means a determined process; undetermined and random laws along a run are not treated.
 - The criterion along one run is near-definitional: what it adds is the least candidate, the persistence of failure, the identity instance and the separation from the process's law.
 - **Counterexample:** A run consistent where the process has no law: Constant (Constant.consistent, Constant.not_goAlike). Going alike without exactness: Stuck (Stuck.goAlike_not_matches). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawAlongRun.lean)
@@ -41,7 +40,7 @@ Canonical source: [LawAlongRun.lean](../../../../experiments/integrated-correcti
 <a id="next--下一步"></a>
 ## Next
 
-The instance with Becoming.Testing's registration (Web.AlikeThroughUpTo) as the projection; how many steps of a run settle whether a law through a finite description holds (with Becoming.Recurrence); an independent review.
+How many steps of a run settle whether a law through a finite description holds (with Becoming.Recurrence); an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -70,6 +69,9 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Input: The exactness that MatchesThrough characterizes for the image.
   - Preserved conditions: None beyond the process and the projection. [GenerativeCore.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean)
 - related, not a proved adapter: [experiment-needs-return](experiment-needs-return.md). There the record fixes a move's outcome only where taken; here the record read through a description is the least candidate law, a law exactly where it is consistent.
+- related, not a proved adapter: [a-law-through-coupling-along-one-run](a-law-through-coupling-along-one-run.md). There the criterion up to an equivalence, of which this one is the instance with equal projections, and its instance with a formation's coupling (Web.AlikeThrough) as the relation.
+
+**Used by:** [a-law-through-coupling-along-one-run](a-law-through-coupling-along-one-run.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -99,6 +101,8 @@ Aliases: `criterion along one run`, `沿一个运行的判据`, `law through a p
 - 19 October 2026, F3 sweep step 1 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts and connectivity follow the sweep run, and its list of checks names the superseded register). The claim is unchanged.
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): declarations moved with their full Lean names, statements and proofs unchanged: Consistent from Unfolding.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Unfolding.lean). Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's layers start from Becoming.World and name Becoming.Labelled; the P69 paragraph says where the readings now live; counts, receipt and connectivity follow the W1 run). The claim is unchanged.
 - 18 October 2026, F2, joins into the core (Ren: "please, do them, reduce bridges and add more theory to the spine"): declarations moved with their full Lean names. The claim is unchanged.
+- 18 October 2026, G4 (Becoming.LawThroughCoupling): the open item "the instance with Becoming.Testing's registration as the projection is not stated" is removed from does_not_show and next_delta, since a-law-through-coupling-along-one-run states it, up to a relation because coupling is not a projection; that record is added as related. This record's claims are unchanged.
+- 18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the "Selection, causes and experiment" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.
 
 </details>
 

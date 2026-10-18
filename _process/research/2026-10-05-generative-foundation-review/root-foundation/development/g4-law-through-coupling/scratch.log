@@ -1,0 +1,17 @@
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/g1/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g4-law-through-coupling",
+  "modules": 44,
+  "ran": [
+    "Becoming.LawThroughCoupling",
+    "BecomingLawThroughCouplingAxiomAudit"
+  ],
+  "reused": 43,
+  "unclean": [],
+  "audits": {
+    "Becoming.LawThroughCoupling": {
+      "theorems": 18,
+      "declarations": 28,
+      "with_axioms": {}
+    }
+  }
+}

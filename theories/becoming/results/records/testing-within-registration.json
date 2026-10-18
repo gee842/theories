@@ -384,6 +384,13 @@
         "zh": "实验：变动自己的动作并识差别；记录只在运行取用之处固定动作的结果。",
         "en": "Experiment: varying one's own act and registering the difference; a record fixes a move's outcome only where the run took it."
       }
+    },
+    {
+      "id": "a-law-through-coupling-along-one-run",
+      "detail": {
+        "en": "There what a formation couples into carries a law along one run exactly where the occasions it couples alike went alike; an uncoupled level can decide its next coupling (Unseen): the boundary here, read along a course.",
+        "zh": "那里形成所耦合者沿一个运行承载规律，恰在它耦合相同的场合同去之处；一个未耦合的水平可以决定它下一步耦合什么（Unseen）：这里的边界沿进程读出。"
+      }
     }
   ],
   "references": [
@@ -550,7 +557,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "651b1f9d21003bb629838423ce7cc0f0fb8fd2ca976a8303a3d933b38f8bc361",
+      "sha256": "bf84cf41856804876bd548e8fb016e1c06fec139438ebae86ee8a5d66f4cef51",
       "declarations": []
     },
     {
@@ -931,6 +938,14 @@
     },
     {
       "en": "18 October 2026, F2, joins into the core (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): declarations moved with their full Lean names. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): a-law-through-coupling-along-one-run added as related. This record's claims are unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：加入 a-law-through-coupling-along-one-run 为相关。本记录的论断不变。"
+    },
+    {
+      "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the \"Selection, causes and experiment\" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：G4 修订“选择、原因与实验”行（陈述了沿一个运行经耦合的判据，链接其记录）。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

@@ -1,0 +1,16 @@
+Becoming.SupportGated.pulse_restores : (RenewalRecovery.pulse 2).needG ≤
+  (RenewalRecovery.pulse 2).level (1 + ((RenewalRecovery.pulse 2).needG - (RenewalRecovery.pulse 2).level 1))
+Becoming.SupportGated.overdraw_extension : ∀ (L : RelationalRenewal.Law),
+  0 < L.needG →
+    L.needF ≤ L.needG →
+      L.needG ≤ L.start →
+        ∀ {T0 : Nat},
+          (∀ (t : Nat), T0 ≤ t → L.renew + L.contrib t < L.draw t) →
+            GenerativeComparison.GenerativeExtension
+              (RenewalComparison.relationalInventory (RenewalComparison.course L)) RenewalComparison.Growth.occurs
+              RenewalComparison.Growth.absent
+Becoming.SupportGated.contest_extensions : GenerativeComparison.GenerativeExtension
+    (RenewalComparison.relationalInventory RenewalComparison.contest) RenewalComparison.Contest.wins
+    RenewalComparison.Contest.shares ∧
+  GenerativeComparison.GenerativeExtension (RenewalComparison.broadInventory RenewalComparison.contest)
+    RenewalComparison.Contest.wins RenewalComparison.Contest.shares

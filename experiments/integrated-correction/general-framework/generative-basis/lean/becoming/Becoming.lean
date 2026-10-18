@@ -207,6 +207,7 @@ import Becoming.SelectionGap
 import Becoming.SelectionReach
 import Becoming.SelectionPool
 import Becoming.PoolResponse
+import Becoming.LawThroughCoupling
 
 /-!
 # The Theory of Becoming: the formal core
@@ -990,6 +991,15 @@ readings of the unfolding (`Becoming.Labelled`).
   difference has entered what it couples into. In `Clearing` what every pool holding the dweller
   separates goes unresponded outside the clearer's part; in `Loop` a response returns through the
   actor's coupling closure.
+* `Becoming.LawThroughCoupling` (L4): a law through what a formation couples into, along one
+  run. Up to an equivalence, some process going alike under it admits a run's steps up to a
+  step exactly where any two of them alike under it, by the same move, end alike; the record
+  read under it is the witness, once failed the criterion fails from then on, and through equal
+  projections it is `Becoming.LawAlongRun`'s. With fixed conditions a formation's coupling at a
+  configuration is such an equivalence and is `Web.AlikeThrough` on the runs read through the
+  conditions. In `Unseen` the process is determined and a level the formation does not couple
+  into decides what it next couples into, so no law holds at its coupling along the run;
+  coupling into that level restores it.
 * `Becoming.Learning` (L4): no record fixes the next value: two courses share any record and
   differ at its next step, also among worlds held by a list, and for every learner a course
   refutes each of its claims, the registration of a law keeping its record, so open. Learning by
