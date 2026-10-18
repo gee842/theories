@@ -35,7 +35,7 @@
     "zh": "先有同一展开中耦合关系的保留与解除，左／右是其中分化的位置。jointInventory.realized 表示共同能力实际成立而非所有未来结果已经发生。形式组合直接以尚未单独迁移的 JointContinuationClassification 输出，满足尚未单独迁移的 GenerativeComparison 中 C 的输入；并未导入一般实践判断或 AI 方向模块。",
     "en": "Retention and release concern a coupling within one unfolding; left and right are differentiated positions within it. jointInventory.realized denotes an actually present joint capacity, not all future outcomes having happened. The formal composition directly uses outputs of the unmigrated JointContinuationClassification module as inputs to C in the unmigrated GenerativeComparison module; it does not import the general practical-judgment or AI-direction modules."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalGrounding.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
   "aliases": [
     "RelationalGrounding.released_profiles_are_carried",
     "RelationalGrounding.joint_bundle_extension",
@@ -153,7 +153,9 @@
       "role": "proof",
       "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
       "declarations": [
-        "Becoming.Comparison.separates"
+        "Becoming.Comparison.separates",
+        "Becoming.Extension",
+        "Becoming.Comparison"
       ]
     },
     {
@@ -194,6 +196,27 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+      "role": "proof",
+      "sha256": "f6cbac48fda80484d94a87ffe7c1e836dec4662880c2b9cd6a69e7e0c7dd83fa",
+      "declarations": [
+        "Becoming.Regimes.released_carried",
+        "Becoming.Regimes.extension",
+        "Becoming.Regimes.marginals_agree",
+        "Becoming.Regimes.no_comparison_through_marginals",
+        "Becoming.Regimes.joint_separates",
+        "Becoming.Regimes.possibility_not_realization",
+        "Becoming.carries_iff_preserves",
+        "Becoming.Activation.same_marginals_lose_bundle"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -229,6 +252,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bundles",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -272,6 +302,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Metaethics.lean). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (8 in Becoming.Bundles; 2 in Becoming.Metaethics), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from RelationalGrounding.lean to Bundles.lean. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
     }
   ]
 }

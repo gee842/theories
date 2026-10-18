@@ -254,7 +254,8 @@
       "declarations": [
         "Becoming.Reach.map",
         "Becoming.Reach.lift",
-        "Becoming.Invariant.reach"
+        "Becoming.Invariant.reach",
+        "Becoming.Frame"
       ]
     },
     {
@@ -487,6 +488,56 @@
       "role": "receipt",
       "sha256": "d87f0ffbdb0bafc510a5b95de2dd83714570dfc1ed7f1a6261578f8cb9125a79",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+      "role": "proof",
+      "sha256": "f6cbac48fda80484d94a87ffe7c1e836dec4662880c2b9cd6a69e7e0c7dd83fa",
+      "declarations": [
+        "Becoming.Jointly",
+        "Becoming.CarriesProfiles",
+        "Becoming.Frame.map_preserves",
+        "Becoming.Frame.lift_reflects",
+        "Becoming.preserves_of_transport"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Narrowing.lean",
+      "role": "proof",
+      "sha256": "d5c203f58f6d6a7dad66dac076558b00437917bc6bb8deefe3f9cb4dc676355b",
+      "declarations": [
+        "Becoming.Narrowing.after_observe_iff",
+        "Becoming.Narrowing.revise_is_after",
+        "Becoming.Narrowing.revise"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
+      "role": "proof",
+      "sha256": "4d8fb9bb0412831317c629c39228835001f18fdca863ac3784a9f71f3be162ea",
+      "declarations": [
+        "Becoming.Alternatives.enabled_iff",
+        "Becoming.Alternatives.lift_iff",
+        "Becoming.Alternatives.articulation_iff_lifted",
+        "Becoming.Alternatives",
+        "Becoming.Alternatives.Articulation"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "role": "proof",
+      "sha256": "45460b06ad0edd439600480a97053633e7d792c8dbe0f90738135fc2a0af6b7b",
+      "declarations": [
+        "Becoming.Lexical.Frame.Above",
+        "Becoming.Lexical.Above",
+        "Becoming.Lexical.BasicPriority"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -634,6 +685,34 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lifting.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Lifting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bundles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Narrowing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Narrowing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Alternatives",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lexical",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1040,6 +1119,10 @@
     },
     {
       "en": "18 October 2026, F2, joins into the core (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): declarations moved with their full Lean names. Rebound to core receipt 20261018T191422.542444Z after reading the change (SeedReachProcesses.lean). The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (5 in Becoming.Alternatives; 5 in Becoming.Bundles; 1 in Becoming.Frame; 3 in Becoming.Lexical; 3 in Becoming.Narrowing), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     }
   ]
 }

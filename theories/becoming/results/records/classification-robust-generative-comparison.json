@@ -35,7 +35,7 @@
     "zh": "旧／新是同一生成内容被辨明的先后；基本／一般为已有实践承诺中的作用差异，不是两类本体或独立所有者。共同能力的应用直接取既有同一事件法则的共同组合扩展；其正面意义与成本覆盖仍明示。",
     "en": "Old/new tracks recognition of contents in one unfolding; basic/secondary tracks their roles under existing practical commitments, not two ontologies or independent owners. The joint-capacity application directly consumes a joint-bundle extension under the existing single event law; positive significance and cost coverage remain explicit."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRobustJudgment.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
   "aliases": [
     "ClassificationRobustJudgment.all_secondary_iff",
     "ClassificationRobustJudgment.all_basic_retains_fresh",
@@ -352,6 +352,150 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "role": "proof",
+      "sha256": "45460b06ad0edd439600480a97053633e7d792c8dbe0f90738135fc2a0af6b7b",
+      "declarations": [
+        "Becoming.Lexical.Included.trans",
+        "Becoming.Lexical.StrictIncluded.irrefl",
+        "Becoming.Lexical.StrictIncluded.trans",
+        "Becoming.Lexical.Above.irrefl",
+        "Becoming.Lexical.BasicPriority.irrefl",
+        "Becoming.Lexical.Above.trans",
+        "Becoming.Lexical.BasicPriority.trans",
+        "Becoming.Lexical.Above.anchor",
+        "Becoming.Lexical.BasicPriority.anchor",
+        "Becoming.Lexical.Above.no_trade",
+        "Becoming.Lexical.BasicPriority.no_trade",
+        "Becoming.Lexical.Ceiling.above",
+        "Becoming.Lexical.Repair.above",
+        "Becoming.Lexical.Repair.loss_retained",
+        "Becoming.Lexical.Crossed.incomparable",
+        "Becoming.Lexical.included_adjoin_iff",
+        "Becoming.Lexical.strictIncluded_adjoin_iff",
+        "Becoming.Lexical.strictIncluded_adjoin_of_fresh",
+        "Becoming.Lexical.adjoin_crossed",
+        "Becoming.Lexical.Above.not_of_included",
+        "Becoming.Lexical.Above.adjoin_fresh_gain",
+        "Becoming.Lexical.Above.adjoin_gain_iff",
+        "Becoming.Lexical.Above.adjoin_basic_reverses",
+        "Becoming.Lexical.classified_none_iff",
+        "Becoming.Lexical.classified_all_retains",
+        "Becoming.Lexical.classified_robust_iff_of_decided",
+        "Becoming.Lexical.classified_robust_iff_of_em",
+        "Becoming.Lexical.classified_robust_iff_iff_em",
+        "Becoming.Lexical.classified_extremes_iff_of_decided",
+        "Becoming.Lexical.classified_of_basic",
+        "Becoming.Lexical.classified_of_fresh",
+        "Becoming.Lexical.Reorganizing.classification_matters",
+        "Becoming.Lexical.classified_none_above",
+        "Becoming.Lexical.classified_of_decided",
+        "Becoming.Lexical.Frame.classified_extension_iff",
+        "Becoming.Lexical.Frame.classified_of_extension"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "role": "proof",
+      "sha256": "3c0bedc0a9f8cc4ba9e60aee981fcc9b7b5d562df291597296790f68373d66cf",
+      "declarations": [
+        "Becoming.Requirement.Frontier.excluded",
+        "Becoming.Requirement.frontier_exists",
+        "Becoming.Requirement.Required.performed",
+        "Becoming.Requirement.Required.defeated",
+        "Becoming.Requirement.Required.impossible",
+        "Becoming.Requirement.Required.means",
+        "Becoming.Requirement.Assigned.unique_required",
+        "Becoming.Requirement.Assigned.capable",
+        "Becoming.Requirement.Served.successor",
+        "Becoming.Requirement.served_of_handover",
+        "Becoming.Requirement.Served.not_of_gap",
+        "Becoming.Requirement.Settled.no_residual",
+        "Becoming.Requirement.residual_of_unfulfilled",
+        "Becoming.Requirement.Required.redescribed",
+        "Becoming.Requirement.separate_not_joint",
+        "Becoming.Requirement.Collective.required",
+        "Becoming.Requirement.Collective.no_common_plan",
+        "Becoming.Requirement.required_of_bettered",
+        "Becoming.Requirement.Formation.left_retains_basis",
+        "Becoming.Requirement.Formation.formation_loses_occasion",
+        "Becoming.Requirement.Formation.left_above_idle",
+        "Becoming.Requirement.Formation.left_above_overbuild",
+        "Becoming.Requirement.Formation.bettered_unformed",
+        "Becoming.Requirement.Formation.required",
+        "Becoming.Requirement.Formation.frontier_iff",
+        "Becoming.Requirement.Formation.no_route_required",
+        "Becoming.Requirement.Formation.overbuilding",
+        "Becoming.Requirement.Formation.same_report_different_basis",
+        "Becoming.Requirement.Formation.no_report_judge",
+        "Becoming.Requirement.Formation.amount_recovers_basis",
+        "Becoming.Requirement.required_under_every_classification",
+        "Becoming.Requirement.Routes.required",
+        "Becoming.Requirement.Routes.opposite_routes",
+        "Becoming.Requirement.Routes.none_robust"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "role": "proof",
+      "sha256": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
+      "declarations": [
+        "Becoming.commonResponse_judge_iff",
+        "Becoming.commonResponse_antitone"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+      "role": "proof",
+      "sha256": "f6cbac48fda80484d94a87ffe7c1e836dec4662880c2b9cd6a69e7e0c7dd83fa",
+      "declarations": [
+        "Becoming.carries_iff_preserves",
+        "Becoming.CarriesProfiles.trans",
+        "Becoming.preserves_of_transport",
+        "Becoming.no_new_of_complement",
+        "Becoming.Activation.same_marginals_lose_bundle",
+        "Becoming.Regimes.released_carried",
+        "Becoming.Regimes.extension",
+        "Becoming.Regimes.marginals_agree",
+        "Becoming.Regimes.no_comparison_through_marginals",
+        "Becoming.Regimes.joint_separates",
+        "Becoming.Regimes.possibility_not_realization",
+        "Becoming.Regimes.joint_enrichment_strict",
+        "Becoming.Regimes.joint_enrichment_classified"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
+      "role": "proof",
+      "sha256": "4d8fb9bb0412831317c629c39228835001f18fdca863ac3784a9f71f3be162ea",
+      "declarations": [
+        "Becoming.G0.new_realization",
+        "Becoming.Alternatives.reason_of_extension",
+        "Becoming.Alternatives.survives_of_coherent",
+        "Becoming.Alternatives.survives_restrict",
+        "Becoming.Alternatives.no_survivor",
+        "Becoming.Profiles.both_respect",
+        "Becoming.Profiles.opposite",
+        "Becoming.Profiles.both_survive",
+        "Becoming.Profiles.different_selections"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
+      "declarations": [
+        "Becoming.Extension.irrefl",
+        "Becoming.Extension.trans"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -410,6 +554,48 @@
       "sha256_pointer": "/source_sha256/Becoming.CoursesBridge",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lexical",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frontier",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Inquiry",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bundles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Alternatives",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Metaethics",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -464,6 +650,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (Bridge.lean: the fold). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (9 in Becoming.Alternatives; 13 in Becoming.Bundles; 34 in Becoming.Frontier; 2 in Becoming.Inquiry; 36 in Becoming.Lexical; 2 in Becoming.Metaethics), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from ClassificationRobustJudgment.lean to Lexical.lean. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
     }
   ]
 }

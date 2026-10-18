@@ -31,7 +31,7 @@
     "zh": "受保护条件确属基本、各项增益确为同一历史中实现的生成内容，须由对应条件 E 及分类论证支持；选项是同一历史的不同接续，不是独立所有者的持有。",
     "en": "That the protected condition is basic and each gain is generative content realized in the same history requires correspondence E and a classification argument; options are continuations of one history, not holdings of independent owners."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
   "aliases": [
     "ProtectionPriorityRival.priority_satisfies_comparison",
     "ProtectionPriorityRival.priority_never_trades",
@@ -166,7 +166,10 @@
       "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
       "declarations": [
         "Becoming.Comparison.climbs",
-        "Becoming.Comparison.outgrows"
+        "Becoming.Comparison.outgrows",
+        "Becoming.G0",
+        "Becoming.Comparison",
+        "Becoming.Extension"
       ]
     },
     {
@@ -207,6 +210,41 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
+      "role": "proof",
+      "sha256": "72efb3249ae577395515c3589cd7f01aa99f4f3f94d7d9251da0ebdb77d60365",
+      "declarations": [
+        "Becoming.ScoreRepresentation.above_satisfies_comparison",
+        "Becoming.ScoreRepresentation.never_outranked",
+        "Becoming.ScoreRepresentation.g0_leaves_ordering_open",
+        "Becoming.ScoreRepresentation.comparison_does_not_yield_priority",
+        "Becoming.ScoreRepresentation.every_nat_score_outranks",
+        "Becoming.ScoreRepresentation.no_nat_score_represents",
+        "Becoming.ScoreRepresentation.above_iff",
+        "Becoming.ScoreRepresentation.ratio_agrees",
+        "Becoming.ScoreRepresentation.bounded_score_represents",
+        "Becoming.ScoreRepresentation.g0_recognizes_gains",
+        "Becoming.ScoreRepresentation.successor_extends"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "role": "proof",
+      "sha256": "45460b06ad0edd439600480a97053633e7d792c8dbe0f90738135fc2a0af6b7b",
+      "declarations": [
+        "Becoming.Lexical.Above",
+        "Becoming.Lexical.BasicPriority",
+        "Becoming.Lexical.Above.no_trade",
+        "Becoming.Lexical.BasicPriority.no_trade"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -242,6 +280,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ScoreRepresentation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lexical",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -321,6 +373,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Metaethics.lean). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (4 in Becoming.Lexical; 3 in Becoming.Metaethics; 11 in Becoming.ScoreRepresentation), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from ProtectionPriorityRival.lean to ScoreRepresentation.lean. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
     }
   ]
 }

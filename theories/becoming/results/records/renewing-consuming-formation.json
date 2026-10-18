@@ -261,6 +261,20 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
+      "declarations": [
+        "Becoming.G0"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -289,6 +303,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingCorrespondence.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/renewing-correspondence-checks/20261015T161417.899487Z/verification.json",
       "sha256_pointer": "/source_sha256/RenewingCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -349,6 +370,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Stock.lean). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (1 in Becoming.Metaethics), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     }
   ]
 }

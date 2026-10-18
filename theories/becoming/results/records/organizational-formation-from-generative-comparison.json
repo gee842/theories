@@ -245,6 +245,25 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "role": "proof",
+      "sha256": "3c0bedc0a9f8cc4ba9e60aee981fcc9b7b5d562df291597296790f68373d66cf",
+      "declarations": [
+        "Becoming.Requirement.required_of_bettered",
+        "Becoming.Requirement.Formation.required",
+        "Becoming.Requirement.Formation.no_route_required",
+        "Becoming.Requirement.Formation.no_report_judge",
+        "Becoming.Requirement.frontier_iff_undominated",
+        "Becoming.Requirement.frontier_exists"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -280,6 +299,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frontier",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -347,6 +373,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (6 in Becoming.Frontier), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     }
   ],
   "text_versions": [

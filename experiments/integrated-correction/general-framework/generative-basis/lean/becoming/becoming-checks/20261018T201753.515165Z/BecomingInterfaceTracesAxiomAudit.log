@@ -1,0 +1,8 @@
+'Becoming.InterfaceTraces.process' does not depend on any axioms
+'Becoming.InterfaceTraces.moves' does not depend on any axioms
+'Becoming.InterfaceTraces.Completes' does not depend on any axioms
+'Becoming.InterfaceTraces.run_none' does not depend on any axioms
+'Becoming.InterfaceTraces.run_some' does not depend on any axioms
+'Becoming.InterfaceTraces.run_iff_trace' does not depend on any axioms
+'Becoming.InterfaceTraces.passes_iff_completes' does not depend on any axioms
+'Becoming.InterfaceTraces.valid_iff' does not depend on any axioms

@@ -183,6 +183,20 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+      "role": "proof",
+      "sha256": "f6cbac48fda80484d94a87ffe7c1e836dec4662880c2b9cd6a69e7e0c7dd83fa",
+      "declarations": [
+        "Becoming.Activation.realized"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -204,6 +218,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
       "sha256_pointer": "/source_sha256/JointContinuationClassification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bundles",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -265,6 +286,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (Bridge.lean: the fold). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (1 in Becoming.Bundles), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     }
   ]
 }

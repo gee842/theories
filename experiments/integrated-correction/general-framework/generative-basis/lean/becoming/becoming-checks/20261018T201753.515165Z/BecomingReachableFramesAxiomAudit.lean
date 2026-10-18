@@ -1,0 +1,5 @@
+import Becoming.ReachableFrames
+#print axioms Becoming.ReachableFrames.carries_compose
+#print axioms Becoming.ReachableFrames.complement_closed_no_extension
+#print axioms Becoming.ReachableFrames.required_through_summary
+#print axioms Becoming.ReachableFrames.common_relative_on_scope

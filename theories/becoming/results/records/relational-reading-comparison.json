@@ -354,6 +354,22 @@
       "role": "receipt",
       "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
+      "declarations": [
+        "Becoming.G0",
+        "Becoming.Extension",
+        "Becoming.Comparison"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -389,6 +405,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ActiveReading",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -462,6 +485,10 @@
     {
       "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (ActiveReading, Ranking; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
       "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（ActiveReading、Ranking），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (3 in Becoming.Metaethics), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     }
   ],
   "text_versions": [

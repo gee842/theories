@@ -270,6 +270,46 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "role": "proof",
+      "sha256": "45460b06ad0edd439600480a97053633e7d792c8dbe0f90738135fc2a0af6b7b",
+      "declarations": [
+        "Becoming.Lexical.Above.trans",
+        "Becoming.Lexical.BasicPriority.trans",
+        "Becoming.Lexical.Crossed.incomparable",
+        "Becoming.Lexical.Frame.Above",
+        "Becoming.Lexical.tierFrame",
+        "Becoming.Lexical.basicSide",
+        "Becoming.Lexical.gainSide",
+        "Becoming.Lexical.above_iff_frame"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "role": "proof",
+      "sha256": "3c0bedc0a9f8cc4ba9e60aee981fcc9b7b5d562df291597296790f68373d66cf",
+      "declarations": [
+        "Becoming.Requirement.Served.successor",
+        "Becoming.Lexical.BasicPriority.frontier_iff",
+        "Becoming.Requirement.frontier_iff_undominated",
+        "Becoming.Requirement.frontier_exists"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "role": "proof",
+      "sha256": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
+      "declarations": [
+        "Becoming.commonResponse_judge_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "role": "receipt",
+      "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -298,6 +338,27 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Decidedness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Lexical",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frontier",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Inquiry",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -389,6 +450,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Re-pointed after reading the change (Return.lean: the fold). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (4 in Becoming.Frontier; 1 in Becoming.Inquiry; 8 in Becoming.Lexical), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     }
   ],
   "text_versions": [

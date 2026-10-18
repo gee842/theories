@@ -47,11 +47,6 @@
    "category": "support",
    "reason": "a list lemma: the universe-polymorphic and the Type-level definitions of lists without repetition agree"
   },
-  "Becoming.Decided.weakly": {
-   "module": "Becoming.Decidedness",
-   "category": "logical-strength",
-   "reason": "A decided proposition is weakly decided: pure logic about excluded middle forms."
-  },
   "Becoming.EitherThroughout.of_em": {
    "module": "Becoming.Likeness",
    "category": "logical-strength",
@@ -1686,6 +1681,226 @@
    "module": "Becoming.SupportRecovery",
    "category": "model-witness",
    "reason": "a fact about the two constructed pulse histories: they draw and contribute the same after the first step (RenewalRecovery, ported by F3R)"
+  },
+  "Becoming.Lexical.BasicPriority.above": {
+   "module": "Becoming.Lexical",
+   "category": "general-structure",
+   "reason": "the lexical order on any two tiers of claims meets the condition `BasicPriority`; a law of every pair of claim families on any type (Becoming.Lexical, F3J)"
+  },
+  "Becoming.Lexical.BasicPriority.anchor": {
+   "module": "Becoming.Lexical",
+   "category": "general-structure",
+   "reason": "a law of every comparison satisfying the condition `BasicPriority` (J1/J2, a hypothesis) on any type of alternatives and claims; the base supplies no reading of the claims: restoring a lost basic claim while retaining the others is better (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.BasicPriority.irrefl": {
+   "module": "Becoming.Lexical",
+   "category": "general-structure",
+   "reason": "a law of every comparison satisfying the condition `BasicPriority` (J1/J2, a hypothesis) on any type of alternatives and claims; the base supplies no reading of the claims: nothing is better than itself (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.BasicPriority.no_trade": {
+   "module": "Becoming.Lexical",
+   "category": "general-structure",
+   "reason": "a law of every comparison satisfying the condition `BasicPriority` (J1/J2, a hypothesis) on any type of alternatives and claims; the base supplies no reading of the claims: losing a basic claim the other holds is never better (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.BasicPriority.trans": {
+   "module": "Becoming.Lexical",
+   "category": "general-structure",
+   "reason": "a law of every comparison satisfying the condition `BasicPriority` (J1/J2, a hypothesis) on any type of alternatives and claims; the base supplies no reading of the claims: the comparison is transitive (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.Ceiling.above": {
+   "module": "Becoming.Lexical",
+   "category": "model-witness",
+   "reason": "a fact about one constructed two-alternative model: repair is above celebration in the lexical order (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.Included.refl": {
+   "module": "Becoming.Lexical",
+   "category": "support",
+   "reason": "a one-line unpacking of `Included`: a family of claims includes itself (Becoming.Lexical, F3J)"
+  },
+  "Becoming.Lexical.Reorganizing.classification_matters": {
+   "module": "Becoming.Lexical",
+   "category": "model-witness",
+   "reason": "a fact about one constructed reorganization: with a real loss, how its new content is classified decides the comparison (ClassificationRobustJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.Repair.above": {
+   "module": "Becoming.Lexical",
+   "category": "model-witness",
+   "reason": "a fact about one constructed two-alternative model: repair is above celebration in the lexical order (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.Repair.loss_retained": {
+   "module": "Becoming.Lexical",
+   "category": "model-witness",
+   "reason": "a fact about one constructed two-alternative model: celebration realizes the event, repair does not (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.classified_extremes_iff_of_decided": {
+   "module": "Becoming.Lexical",
+   "category": "general-structure",
+   "reason": "a law of every classification of fresh contents on any type: with the stated decisions, the two extreme classifications suffice (ClassificationRobustJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.classified_none_iff": {
+   "module": "Becoming.Lexical",
+   "category": "general-structure",
+   "reason": "a law of every classification on any type: with no fresh content basic, the comparison is the lexical one with the fresh contents adjoined as gains (ClassificationRobustJudgment, ported by F3J)"
+  },
+  "Becoming.Lexical.classified_robust_iff_iff_em": {
+   "module": "Becoming.Lexical",
+   "category": "calibration",
+   "reason": "the exact principle the criterion of being above under every classification needs over every type: excluded middle (every proposition decided); the base asserts no such classification, so this is a lemma of the criterion (ClassificationRobustJudgment, ported by F3J)"
+  },
+  "Becoming.Narrowing.acquired_answers_correct": {
+   "module": "Becoming.Narrowing",
+   "category": "general-structure",
+   "reason": "a law of every list of candidate rules on any question type: from a list containing the actual rule, what the narrowed belief answers is correct (StandardsBridge, ported by F3J)"
+  },
+  "Becoming.Narrowing.answer_maximal": {
+   "module": "Becoming.Narrowing",
+   "category": "general-structure",
+   "reason": "a law of every nonempty list of candidate rules on any question type: the answer procedure gives the greatest safe answer (StandardsBridge, ported by F3J)"
+  },
+  "Becoming.Narrowing.answer_transport": {
+   "module": "Becoming.Narrowing",
+   "category": "general-structure",
+   "reason": "a law of every list of rules and every decoding: transported rules answer at a token as the rules answer at its decoding (StandardsBridge, ported by F3J)"
+  },
+  "Becoming.Narrowing.before_acquisition_abstains": {
+   "module": "Becoming.Narrowing",
+   "category": "model-witness",
+   "reason": "a computation in the constructed repertoire of the four rules on two cases: before any observation the answer abstains (StandardsBridge, ported by F3J)"
+  },
+  "Becoming.Narrowing.insufficient_support_retains_ambiguity": {
+   "module": "Becoming.Narrowing",
+   "category": "model-witness",
+   "reason": "a computation in the constructed repertoire: one observation leaves the other case unanswered (StandardsBridge, ported by F3J)"
+  },
+  "Becoming.Narrowing.repertoire_complete_of_ext": {
+   "module": "Becoming.Narrowing",
+   "category": "model-witness",
+   "reason": "a fact about the constructed repertoire of four rules on two cases, with function extensionality a named hypothesis: every such rule is one of the four (StandardsBridge, ported by F3J)"
+  },
+  "Becoming.Narrowing.unique_maximal_safe_of_ext": {
+   "module": "Becoming.Narrowing",
+   "category": "general-structure",
+   "reason": "a law of every nonempty list of rules on any question type, with function extensionality a named hypothesis: a safe greatest answer is the answer (StandardsBridge, ported by F3J)"
+  },
+  "Becoming.Narrowing.wrong_reencoding_breaks_transfer": {
+   "module": "Becoming.Narrowing",
+   "category": "model-witness",
+   "reason": "a computation with the identity rule on two cases: a wrong re-encoding changes the answer (StandardsBridge, ported by F3J)"
+  },
+  "Becoming.Profiles.different_selections": {
+   "module": "Becoming.Alternatives",
+   "category": "model-witness",
+   "reason": "a fact about one constructed pair of appraisals on a two-claim tradeoff: each selects a different alternative coherently (GenerativeComparison, ported by F3J)"
+  },
+  "Becoming.Profiles.opposite": {
+   "module": "Becoming.Alternatives",
+   "category": "model-witness",
+   "reason": "a fact about one constructed pair of appraisals: they disagree when one realization replaces the other (GenerativeComparison, ported by F3J)"
+  },
+  "Becoming.Requirement.Assigned.capable": {
+   "module": "Becoming.Frontier",
+   "category": "general-structure",
+   "reason": "a law of every allocation and capability relation on any type: an assignment in an admissible plan is feasible where every admissible plan's assignments are (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.Assigned.unique_required": {
+   "module": "Becoming.Frontier",
+   "category": "general-structure",
+   "reason": "a law of every allocation on any type: a unique responder in every admissible plan is required (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.Collective.no_common_plan": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about two constructed worlds: each has a plan, no plan is common to both (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.Collective.required": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about one constructed menu: formation is required of its lexical frontier (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.Formation.same_report_different_basis": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about the constructed formation model: two alternatives with the same report differ in basis (RelationalOrganization, ported by F3J)"
+  },
+  "Becoming.Requirement.Handover.crossed_unranked": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about the constructed handover model: crossed tiers leave the two alternatives unranked (AlignmentDirection, ported by F3J)"
+  },
+  "Becoming.Requirement.Handover.expansion_excluded": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about the constructed handover model: expansion is off the lexical frontier (AlignmentDirection, ported by F3J)"
+  },
+  "Becoming.Requirement.Handover.expansion_has_real_gain": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about the constructed handover model: expansion realizes a gain the alternative lacks (AlignmentDirection, ported by F3J)"
+  },
+  "Becoming.Requirement.Handover.served": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about the constructed handover model: service continues while the old service stops (AlignmentDirection, ported by F3J)"
+  },
+  "Becoming.Requirement.Handover.undelivered_fails": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about the constructed handover model: a successor delivering nothing does not serve (AlignmentDirection, ported by F3J)"
+  },
+  "Becoming.Requirement.Required.impossible": {
+   "module": "Becoming.Frontier",
+   "category": "general-structure",
+   "reason": "a law of every menu on any type: an empty menu requires nothing (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.Required.means": {
+   "module": "Becoming.Frontier",
+   "category": "general-structure",
+   "reason": "a law of every menu on any type: what every admissible alternative performing a requirement performs is required (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.Required.performed": {
+   "module": "Becoming.Frontier",
+   "category": "general-structure",
+   "reason": "a one-line law of every menu on any type: a chosen admissible alternative performs what is required (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.Routes.none_robust": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about the constructed routes model: no route is on the frontier under every classification (ClassificationRobustJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.Routes.required": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about the constructed routes model: formation is required of its lexical frontier (ClassificationRobustJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.Settled.no_residual": {
+   "module": "Becoming.Frontier",
+   "category": "general-structure",
+   "reason": "a law of every due, done and released relation on any type: a settled account leaves no residual (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.required_under_every_classification": {
+   "module": "Becoming.Frontier",
+   "category": "general-structure",
+   "reason": "a law of every listed menu and classification on any type, with the decisions it needs as hypotheses: formation is required of the frontier under every classification (ClassificationRobustJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.residual_of_unfulfilled": {
+   "module": "Becoming.Frontier",
+   "category": "general-structure",
+   "reason": "a law of every due, done and released relation on any type: what is due, not done and not released is residual (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.Requirement.separate_not_joint": {
+   "module": "Becoming.Frontier",
+   "category": "support",
+   "reason": "an arithmetic fact on `Nat`: two capacities of one unit each do not give a capacity of two (PracticalJudgment, ported by F3J)"
+  },
+  "Becoming.ScoreRepresentation.ratio_bounded": {
+   "module": "Becoming.ScoreRepresentation",
+   "category": "support",
+   "reason": "an arithmetic lemma on `Nat` using only the prelude: the bounded score's numerator is at most its denominator (ProtectionPriorityRival, ported by F3J)"
+  },
+  "Becoming.ScoreRepresentation.weighted_outranks": {
+   "module": "Becoming.ScoreRepresentation",
+   "category": "model-witness",
+   "reason": "a fact about the constructed weighted score: it ranks enough gains above protection (ProtectionPriorityRival, ported by F3J)"
   }
  }
 }
