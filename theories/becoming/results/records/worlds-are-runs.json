@@ -164,12 +164,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261016T124157.989030Z): the 35 declarations of Becoming.Runs, 21 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 165; not independently reviewed."
   },
   "next_delta": {
-    "zh": "使同一化成为定义（会改已有陈述）；独立审查；对读法与定义上的根的论证判断。",
-    "en": "Making the identification definitional, which would change existing statements; an independent review; an argued judgment on the readings and on a definitional root."
+    "zh": "使同一化成为定义（会改已有陈述）；独立审查；对定义上的根的论证判断。",
+    "en": "Making the identification definitional, which would change existing statements; an independent review; an argued judgment on a definitional root."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12：“let's go back to main track, yes, i do agree with your reading, there are no two realities”。本结果回答发布准备度复核的整合所见：脊柱有两个根（Process 与 World），以对应定理相连，前沿陈述在耦合阵列上。读法（AI 的，待 Ren）：根是运行，因为其他每个读法都是运行；运行是逐步读的展开，每步是什么、怎样继续，世界是同一展开读作同类关系项的交换；同一化恰好，所以二者是一个展开的一个读法，不是两物相连，运行也不是世界之下的根基。世界对其运行无所增加；交换之律所加的，是平衡所说的位与交换的关系，作为运行之步的律。",
-    "en": "Ren, 12 October 2026: “let's go back to main track, yes, i do agree with your reading, there are no two realities”. This result answers the integration finding of the release-readiness review: the spine had two roots, Process and World, joined by correspondence theorems, with the frontier stated on coupling arrays. Readings (the AI's, pending Ren): the root is the run because every other reading is one; a run is the unfolding read step by step, what it is at each step and how it goes on, and a world is the same unfolding read as relata of one kind exchanging; the identification is exact, so the two are one reading of one unfolding, not two things joined, and the run is no ground beneath the world. What a world adds to its run is nothing; what the law of exchange adds is the relation of standing and exchange that balance states, as a law of the run's steps."
+    "zh": "Ren 2026-10-12：“let's go back to main track, yes, i do agree with your reading, there are no two realities”。本结果回答发布准备度复核的整合所见：脊柱有两个根（Process 与 World），以对应定理相连，前沿陈述在耦合阵列上。读法（AI 的，第一项按 R1 修订，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：运行是这一包的形式之根，不是世界之下的根基：运行是在共同的步指标上逐步读的展开，每步是什么、怎样继续，而这一指标本身是关系项自身进程的一种读法，凡交换不共有关系项处是一种选择（the-step-index-from-own-courses）；关系的起点是关系项自身的进程，运行是选定一种交错的读法。世界是同一展开读作同类关系项的交换；同一化恰好，所以二者是一个展开的一个读法，不是两物相连。世界对其运行无所增加；交换之律所加的，是平衡所说的位与交换的关系，作为运行之步的律。",
+    "en": "Ren, 12 October 2026: “let's go back to main track, yes, i do agree with your reading, there are no two realities”. This result answers the integration finding of the release-readiness review: the spine had two roots, Process and World, joined by correspondence theorems, with the frontier stated on coupling arrays. Readings (the AI's, the first revised in the light of R1 and taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): the run is the formal root of the package, not a ground beneath the world: a run is the unfolding read step by step on a shared index of steps, what it is at each step and how it goes on, and that index is itself a reading of the relata's own courses, a choice wherever exchanges share no relatum (the-step-index-from-own-courses); the relational start is the relata's own courses, and a run is their reading with an interleaving chosen. A world is the same unfolding read as relata of one kind exchanging; the identification is exact, so the two are one reading of one unfolding, not two things joined. What a world adds to its run is nothing; what the law of exchange adds is the relation of standing and exchange that balance states, as a law of the run's steps."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean",
   "aliases": [
@@ -628,6 +628,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, Propagation.lean, Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the first reading revised in the light of R1 and taken by Ren (DELEGATED-CHOICES D43): the run is the formal root of the package, its index of steps a reading of the relata's own courses. Before: \"the root is the run because every other reading is one; a run is the unfolding read step by step, what it is at each step and how it goes on, and a world is the same unfolding read as relata of one kind exchanging; the identification is exact, so the two are one reading of one unfolding, not two things joined, and the run is no ground beneath the world.\". The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：第一项读法按 R1 修订，由 Ren 取（DELEGATED-CHOICES D43）：运行是这一包的形式之根，其步指标是关系项自身进程的一种读法；原文见英文。论断不变。"
     }
   ],
   "text_versions": [

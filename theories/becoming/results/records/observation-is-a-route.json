@@ -114,12 +114,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T221156.459698Z): the 32 declarations of Becoming.Observation, 27 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 159; not independently reviewed."
   },
   "next_delta": {
-    "zh": "带误差的量度；他者之识作为路线；在下游者何时必不同（回应的下界）；独立审查；对读法的论证判断。",
-    "en": "Measurement with error; another's registration as a route; when what lies downstream must differ (lower bounds on responses); an independent review; an argued judgment on the readings."
+    "zh": "带误差的量度；他者之识作为路线；在下游者何时必不同（回应的下界）；观察不是依赖之外第二种关系这一猜想；独立审查。",
+    "en": "Measurement with error; another's registration as a route; when what lies downstream must differ (lower bounds on responses); the conjecture that observation is not a second relation beside dependence; an independent review."
   },
   "correspondence": {
-    "zh": "P124 留下“一个形成怎样开始观察它所依赖的储量”；Ren 对 P124 的做法答“approve your approach, please continue”。本结果部分回答：一个形成只能在从所观察者出发的所读路线的末端观察；反方向（在下游者必识）不成立。这一必要性是一种无干扰性质（Goguen 与 Meseguer 1982）：不在储量下游者不受它影响，如信息流的依存图读法。读法（AI 的，待 Ren）：观察不是依赖之外的第二种关系（AI 的注：定理只表明观察不越出依赖，未表明观察就是依赖），直接观察是长度为零的路线，量度、模型或他者之识是更长的路线；一个形成开始观察，是一次读闭合一条路线；P124 第二项读法中断裂之前对储量水平的读就是这样一条路线。",
-    "en": "P124 left open how a formation comes to observe a stock it depends on; Ren answered P124's approach with “approve your approach, please continue”. This result answers in part: a formation can observe only at the end of a route of readings from what is observed; the converse, that what lies downstream registers, fails. That necessity is a noninterference property (Goguen and Meseguer 1982): what is not downstream of the stock is unaffected by it, as in the dependency-graph reading of information flow. Readings (the AI's, pending Ren): observation is not a second relation beside dependence (the AI's note: the theorem shows only that observation does not go beyond dependence, not that it is dependence), direct observation being the route of length zero and a measurement, a model or another's registration a longer route; a formation comes to observe by a reading that closes a route; the reading of the stock's level before the break in P124's second reading is such a route."
+    "zh": "P124 留下“一个形成怎样开始观察它所依赖的储量”；Ren 对 P124 的做法答“approve your approach, please continue”。本结果部分回答：一个形成只能在从所观察者出发的所读路线的末端观察；反方向（在下游者必识）不成立。这一必要性是一种无干扰性质（Goguen 与 Meseguer 1982）：不在储量下游者不受它影响，如信息流的依存图读法。读法（AI 的，减弱为 apart_only_downstream 所表明的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：观察在下游之内：一个形成的交换只经它所读、位于储量下游的水平回应储量上的差别，直接观察是长度为零的路线，量度、模型或他者之识是更长的路线；一个形成开始观察，是一次读闭合一条路线；P124 第二项读法中断裂之前对储量水平的读就是这样一条路线。观察不是依赖之外的第二种关系，超出定理：定理只表明观察不越出依赖，未表明观察就是依赖；它作为猜想保留，不是读法。",
+    "en": "P124 left open how a formation comes to observe a stock it depends on; Ren answered P124's approach with “approve your approach, please continue”. This result answers in part: a formation can observe only at the end of a route of readings from what is observed; the converse, that what lies downstream registers, fails. That necessity is a noninterference property (Goguen and Meseguer 1982): what is not downstream of the stock is unaffected by it, as in the dependency-graph reading of information flow. Readings (the AI's, weakened to what apart_only_downstream shows and taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): observing lies within the downstream: a formation's exchange responds to a difference at a stock only through a level it reads that lies downstream of the stock, direct observation being the route of length zero and a measurement, a model or another's registration a longer route; a formation comes to observe by a reading that closes a route; the reading of the stock's level before the break in P124's second reading is such a route. That observation is not a second relation beside dependence goes beyond the theorem, which shows only that observation does not go beyond dependence, not that it is dependence; it is kept as a conjecture, not a reading."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
   "aliases": [
@@ -451,7 +451,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "a7f1a57fc856c8d5af8a6cb7ec8413c7ced7a411ab09343810f6ace6bee0907b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-thresholds-approach-approved.md",
@@ -616,6 +616,14 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, Observation.lean, Propagation.lean, THE-THEORY-OF-BECOMING.md, Testing.lean, Thresholds.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the reading weakened to what apart_only_downstream shows and taken by Ren (DELEGATED-CHOICES D43, review item 45): observing lies within the downstream. \"Observation is not a second relation beside dependence\", which went beyond the theorem, is kept as a conjecture and enters the next step. The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：读法减弱为 apart_only_downstream 所表明的，由 Ren 取（DELEGATED-CHOICES D43，审查第 45 项）：观察在下游之内。“观察不是依赖之外的第二种关系”超出定理，作为猜想保留，进入下一步。论断不变。"
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

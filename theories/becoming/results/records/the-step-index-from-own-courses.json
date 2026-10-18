@@ -100,12 +100,12 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T000841.184655Z）：Becoming.Interleavings 的声明公理报告为空；检查器并核对核心纯净。作者自审见研究第 169 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Separate read and change footprints; courses without end; a correspondence with the footprint and the order of joined exchanges of Becoming.Order; whether every becoming has a local law; an independent review; an argued judgment on the reading.",
-    "zh": "读与改分开的足迹；无尽的进程；与 Becoming.Order 的足迹及相连交换之次序的对应；每个生成是否有局部律；独立审查；对读法的论证判断。"
+    "en": "Separate read and change footprints; courses without end; a correspondence with the footprint and the order of joined exchanges of Becoming.Order; whether every becoming has a local law; an independent review.",
+    "zh": "读与改分开的足迹；无尽的进程；与 Becoming.Order 的足迹及相连交换之次序的对应；每个生成是否有局部律；独立审查。"
   },
   "correspondence": {
-    "en": "The open programme of the chapter left open \"deriving the shared index of steps from relations, or saying why it is a commitment of the representation\". Ren, 18 October 2026: \"currently i have no problem of heading to your direction ... please continue\" (provenance of the work, not its warrant). The result answers the formal half for finite courses of a local law: the index is derived where every two exchanges share a relatum and is otherwise a choice the configurations do not read. This is the converse direction of Mazurkiewicz traces (Mazurkiewicz 1977; Cartier and Foata 1969): there a trace is the class of words under commuting independent letters; here the class is given by its projections to the relata and the scheduler builds a representative. Reading (the AI's, pending Ren): the shared index of steps is a reading of the relations, not their ground.",
-    "zh": "本章的开放纲领留下“从关系导出共同的步指标，或说明为何它是表示的承诺”。Ren，2026年10月18日：“currently i have no problem of heading to your direction ... please continue”（工作的来历，不是它的根据）。本结果对局部律的有限进程回答其形式的一半：任两个交换共享关系项处，指标由关系导出；否则它是构形所不读的一个选择。这是 Mazurkiewicz 迹（Mazurkiewicz 1977；Cartier 与 Foata 1969）的反方向：那里迹是独立字母交换下的词类；这里类由它在关系项上的投影给出，调度构造一个代表。读法（AI 的，待 Ren）：共同的步指标是关系的一种读法，不是关系的根基。"
+    "en": "The open programme of the chapter left open \"deriving the shared index of steps from relations, or saying why it is a commitment of the representation\". Ren, 18 October 2026: \"currently i have no problem of heading to your direction ... please continue\" (provenance of the work, not its warrant). The result answers the formal half for finite courses of a local law: the index is derived where every two exchanges share a relatum and is otherwise a choice the configurations do not read. This is the converse direction of Mazurkiewicz traces (Mazurkiewicz 1977; Cartier and Foata 1969): there a trace is the class of words under commuting independent letters; here the class is given by its projections to the relata and the scheduler builds a representative. Reading (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): the shared index of steps is a reading of the relations, not their ground.",
+    "zh": "本章的开放纲领留下“从关系导出共同的步指标，或说明为何它是表示的承诺”。Ren，2026年10月18日：“currently i have no problem of heading to your direction ... please continue”（工作的来历，不是它的根据）。本结果对局部律的有限进程回答其形式的一半：任两个交换共享关系项处，指标由关系导出；否则它是构形所不读的一个选择。这是 Mazurkiewicz 迹（Mazurkiewicz 1977；Cartier 与 Foata 1969）的反方向：那里迹是独立字母交换下的词类；这里类由它在关系项上的投影给出，调度构造一个代表。读法（AI 的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：共同的步指标是关系的一种读法，不是关系的根基。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
   "aliases": [
@@ -182,7 +182,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "a7f1a57fc856c8d5af8a6cb7ec8413c7ced7a411ab09343810f6ace6bee0907b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -206,6 +206,14 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, 2026-10-18-representation-scope-go.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the reading taken by Ren (DELEGATED-CHOICES D43). The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：读法由 Ren 取（DELEGATED-CHOICES D43）。论断不变。"
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

@@ -200,12 +200,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T204116.215501Z): the 66 declarations of Becoming.Remainder, 58 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 154; not independently reviewed."
   },
   "next_delta": {
-    "zh": "给定强度的失控多快（谱半径）；实数的量、连续时间与无穷多条件；独立审查；对读法的论证判断。",
-    "en": "How fast a runaway of given strengths is (a spectral radius); real amounts, continuous time and infinitely many conditions; an independent review; an argued judgment on the readings."
+    "zh": "给定强度的失控多快（谱半径）；实数的量、连续时间与无穷多条件；独立审查。",
+    "en": "How fast a runaway of given strengths is (a spectral radius); real amounts, continuous time and infinitely many conditions; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 问回路：“how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”；2026-10-16 决定 Becoming.Loops 的读法时，把只在某些步成立的耦合留为开放。本结果回答 how-a-carried-difference-grows 的 next_delta 首项。读法（AI 的，待 Ren）：精确余项是 Ren 取为与历史之和同一结构的展开的余项，形同 Neumann 级数的余项，回应按时间次序，如 Dyson 级数；所失是截断的，不是理论的。决定截断所失的是耦合的时间次序：要紧的回路是继续着的耦合的回路，耦合停止的回路是过去的。能到达的最大差别快于每个多项式只经由继续着的耦合的回路；是否经由每个这样的回路不推出。数学是标准的：线性时变比较系统的 Neumann、Dyson 或 Peano–Baker 余项，恰在按时间次序的路径有界处幂零。",
-    "en": "Ren, 12 October 2026, on the loops: “how how accurate can we do that uh what is the limitation do we have losses”, with the goal “move towards 100%”; on 16 October, deciding the readings of Becoming.Loops, Ren left couplings at only some steps open. This result answers the first item of how-a-carried-difference-grows' next_delta. Readings (the AI's, pending Ren): the exact remainder is the remainder of the expansion Ren took as the same structural kind as the sum over histories, in the form of a Neumann series's remainder, its responses in time order as in the Dyson series; the loss is the cut's, not the theory's. What decides a cut's loss is the time order of the couplings: the loops that matter are those of the couplings that go on, and a loop whose couplings stop is passing. The most difference that can arrive outgrows every polynomial only through a loop of the couplings that go on; whether through every such loop is not derived. The mathematics is standard: the Neumann, Dyson or Peano–Baker remainder of a linear time-varying comparison system, nilpotent exactly where the time-respecting paths are bounded."
+    "zh": "Ren 2026-10-12 问回路：“how how accurate can we do that uh what is the limitation do we have losses”，目标是“move towards 100%”；2026-10-16 决定 Becoming.Loops 的读法时，把只在某些步成立的耦合留为开放。本结果回答 how-a-carried-difference-grows 的 next_delta 首项。读法（AI 的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：精确余项是 Ren 取为与历史之和同一结构的展开的余项，形同 Neumann 级数的余项，回应按时间次序，如 Dyson 级数；所失是截断的，不是理论的。决定截断所失的是耦合的时间次序：要紧的回路是继续着的耦合的回路，耦合停止的回路是过去的。能到达的最大差别快于每个多项式只经由继续着的耦合的回路；不必经由每个这样的回路：稀少复现的回路保持多项式（Frequency.Sparse.polynomial，how-often-couplings-act）。数学是标准的：线性时变比较系统的 Neumann、Dyson 或 Peano–Baker 余项，恰在按时间次序的路径有界处幂零。",
+    "en": "Ren, 12 October 2026, on the loops: “how how accurate can we do that uh what is the limitation do we have losses”, with the goal “move towards 100%”; on 16 October, deciding the readings of Becoming.Loops, Ren left couplings at only some steps open. This result answers the first item of how-a-carried-difference-grows' next_delta. Readings (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): the exact remainder is the remainder of the expansion Ren took as the same structural kind as the sum over histories, in the form of a Neumann series's remainder, its responses in time order as in the Dyson series; the loss is the cut's, not the theory's. What decides a cut's loss is the time order of the couplings: the loops that matter are those of the couplings that go on, and a loop whose couplings stop is passing. The most difference that can arrive outgrows every polynomial only through a loop of the couplings that go on, and not through every such loop, since one that recurs rarely stays polynomial (Frequency.Sparse.polynomial, how-often-couplings-act). The mathematics is standard: the Neumann, Dyson or Peano–Baker remainder of a linear time-varying comparison system, nilpotent exactly where the time-respecting paths are bounded."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
   "aliases": [
@@ -517,7 +517,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "a7f1a57fc856c8d5af8a6cb7ec8413c7ced7a411ab09343810f6ace6bee0907b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -674,6 +674,14 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, Propagation.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the readings taken by Ren (DELEGATED-CHOICES D43); their last clause, \"whether through every such loop is not derived\", is answered by how-often-couplings-act: not through every such loop. The judgment on the readings leaves the next step. The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：读法由 Ren 取（DELEGATED-CHOICES D43）；最后一句“是否经由每个这样的回路不推出”由 how-often-couplings-act 回答：不必经由每个这样的回路。对读法的判断移出下一步。论断不变。"
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

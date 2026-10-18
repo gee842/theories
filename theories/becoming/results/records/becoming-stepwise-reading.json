@@ -276,8 +276,8 @@
     "en": "Tenure through bounded absence (dormancy, migration); webs with amounts and renewal rates; a time-ordered correspondence discipline for conditions; a run-independent reading connected to universal_reason; further generation in living."
   },
   "correspondence": {
-    "zh": "逐步读法读的是事件所处的关系，不是它的因果贡献。整段读法问形成在整段运行中是否消耗；逐步的更新分类问事件之步是否维持其条件；逐步的 living 问事件是否在这样一步汲取：之后一个依存不被满足，而它在不间断成立期间曾以不小于现在的所需被满足。逐步 living 先后有三个候选（在更新之内、不断裂、不侵蚀），每个都保留在核心中：前两个连同使它不被采用的见证，第三个“不侵蚀”是工作读法，依 Ren 的交托保留，连同它所放弃的（整合文档；DELEGATED-CHOICES D10）。以哪一种或哪种组合作为生生的读法，是 Ren 方向内的选择，本结果不作出；依 Ren 的交托，生生读作生成的空间，比较不用 living 的读法（整合文档 §8.5；DELEGATED-CHOICES D1）。",
-    "en": "The stepwise reading reads the relations an event stands in, not its causal contribution. The whole-run reading asks whether a formation consumes over the run; the stepwise classification asks whether an event's step keeps its conditions; stepwise living asks whether an event draws at a step after which a dependence is unmet that was met, during its unbroken tenure, at a need no smaller than the present one. Stepwise living had three candidates in turn (within renewal, not breaking, not undermining), each kept on the core: the first two with the witness that sets them aside, the third, “not undermining”, as the working reading, kept on Ren's delegation, with what it gives up (integration note; DELEGATED-CHOICES D10). Which reading, or combination, is the reading of 生生 is a choice within Ren's direction that this result does not make; on Ren's delegation 生生 is read as the generative space, and comparison uses no reading of living (integration note §8.5; DELEGATED-CHOICES D1)."
+    "zh": "逐步读法读的是事件所处的关系，不是它的因果贡献。整段读法问形成在整段运行中是否消耗；逐步的更新分类问事件之步是否维持其条件；逐步的 living 问事件是否在这样一步汲取：之后一个依存不被满足，而它在不间断成立期间曾以不小于现在的所需被满足。逐步 living 先后有三个候选（在更新之内、不断裂、不侵蚀），每个都保留在核心中：前两个连同使它不被采用的见证，第三个“不侵蚀”是工作读法，依 Ren 的交托保留，连同它所放弃的（整合文档；DELEGATED-CHOICES D10）。以哪一种或哪种组合作为生生的读法，是 Ren 方向内的选择，本结果不作出；生生读作生成者生成新的生成，其方向以能形成者的扩大比较，比较不用 living 的读法（整合文档 §8.5；DELEGATED-CHOICES D1，经修订由 Ren 2026-10-18 取）。",
+    "en": "The stepwise reading reads the relations an event stands in, not its causal contribution. The whole-run reading asks whether a formation consumes over the run; the stepwise classification asks whether an event's step keeps its conditions; stepwise living asks whether an event draws at a step after which a dependence is unmet that was met, during its unbroken tenure, at a need no smaller than the present one. Stepwise living had three candidates in turn (within renewal, not breaking, not undermining), each kept on the core: the first two with the witness that sets them aside, the third, “not undermining”, as the working reading, kept on Ren's delegation, with what it gives up (integration note; DELEGATED-CHOICES D10). Which reading, or combination, is the reading of 生生 is a choice within Ren's direction that this result does not make; 生生 is read as generation generating generation, its direction compared by widening what can form, and comparison uses no reading of living (integration note §8.5; DELEGATED-CHOICES D1, revised and taken by Ren on 18 October 2026)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
   "aliases": [
@@ -1013,6 +1013,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the reading of 生生 revised as Ren took it (DELEGATED-CHOICES D1); the review counterexample that records the earlier reading is kept as it was. Before: \"on Ren's delegation 生生 is read as the generative space\". The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：生生的读法按 Ren 所取修订（DELEGATED-CHOICES D1）；记录早先读法的审查反例保持原样；原文见英文。论断不变。"
     }
   ],
   "text_versions": [

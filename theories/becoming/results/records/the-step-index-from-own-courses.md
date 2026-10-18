@@ -39,14 +39,14 @@ Canonical source: [Interleavings.lean](../../../../experiments/integrated-correc
 <a id="next--下一步"></a>
 ## Next
 
-Separate read and change footprints; courses without end; a correspondence with the footprint and the order of joined exchanges of Becoming.Order; whether every becoming has a local law; an independent review; an argued judgment on the reading.
+Separate read and change footprints; courses without end; a correspondence with the footprint and the order of joined exchanges of Becoming.Order; whether every becoming has a local law; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-The open programme of the chapter left open "deriving the shared index of steps from relations, or saying why it is a commitment of the representation". Ren, 18 October 2026: "currently i have no problem of heading to your direction ... please continue" (provenance of the work, not its warrant). The result answers the formal half for finite courses of a local law: the index is derived where every two exchanges share a relatum and is otherwise a choice the configurations do not read. This is the converse direction of Mazurkiewicz traces (Mazurkiewicz 1977; Cartier and Foata 1969): there a trace is the class of words under commuting independent letters; here the class is given by its projections to the relata and the scheduler builds a representative. Reading (the AI's, pending Ren): the shared index of steps is a reading of the relations, not their ground.
+The open programme of the chapter left open "deriving the shared index of steps from relations, or saying why it is a commitment of the representation". Ren, 18 October 2026: "currently i have no problem of heading to your direction ... please continue" (provenance of the work, not its warrant). The result answers the formal half for finite courses of a local law: the index is derived where every two exchanges share a relatum and is otherwise a choice the configurations do not read. This is the converse direction of Mazurkiewicz traces (Mazurkiewicz 1977; Cartier and Foata 1969): there a trace is the class of words under commuting independent letters; here the class is given by its projections to the relata and the scheduler builds a representative. Reading (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): the shared index of steps is a reading of the relations, not their ground.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
@@ -73,6 +73,8 @@ Aliases: `the step index from own courses`, `步指标读自自身进程`, `inte
 
 - 18 October 2026: added (R1), in the direction Ren agreed to on 18 October ("please continue"): the formal edge of target 1, the shared index of steps; study section 169.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, 2026-10-18-representation-scope-go.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
+- 18 October 2026, A1 (Ren 18 October: "I take the revised readings of 生生, 生生不息 and \"entangled\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6."): the reading taken by Ren (DELEGATED-CHOICES D43). The claim is unchanged.
+- 18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and "entangled" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.
 
 </details>
 

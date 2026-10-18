@@ -49,14 +49,14 @@ Canonical source: [CourseWorlds.lean](../../../../experiments/integrated-correct
 <a id="next--下一步"></a>
 ## Next
 
-The strengths an actual world reads off its course and when their loops form; tightness over gainless laws; strengths below one and real amounts; an independent review; an argued judgment on the readings.
+The strengths an actual world reads off its course and when their loops form; tightness over gainless laws; strengths below one and real amounts; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”; Ren the same day: “there are no two realities”. This result answers the integration finding of the release-readiness review: the frontier (Propagation and the modules after it) was stated on coupling arrays and on every two balanced flows, not on the base. Readings (the AI's, pending Ren): how much difference arrives is the difference between two worlds of one law, the actual one and one an act not taken generates, not two flows supplied side by side; both are runs of the law of exchange, so the frontier's laws are laws of the one unfolding's runs; the carried amount is attained by worlds, the most that can arrive between what happens and what would have happened under the same law; where strengths are read off a world's own standing, which loops form, and when, is read off the world itself.
+Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”; Ren the same day: “there are no two realities”. This result answers the integration finding of the release-readiness review: the frontier (Propagation and the modules after it) was stated on coupling arrays and on every two balanced flows, not on the base. Readings (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): how much difference arrives is the difference between two worlds of one law, the actual one and one an act not taken generates, not two flows supplied side by side; both are runs of the law of exchange, so the frontier's laws are laws of the one unfolding's runs; the carried amount is attained by worlds, the most that can arrive between what happens and what would have happened under the same law; where strengths are read off a world's own standing, which loops form, and when, is read off the world itself.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
@@ -119,6 +119,7 @@ Aliases: `the difference between two acts' worlds`, `两种作为之世界的差
 - 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Closing.lean, Frequency.lean, Loops.lean, Observation.lean, Propagation.lean, Routes.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Counterfactual.lean, ExchangeLaw.courseWeb is added and ExchangeLaw.world is now World.ofKind of the course's flow and that web, definitionally the same; in Runs.lean, courseWorld is now World.ofRoles of the course's flow and ExchangeLaw.courseWeb, definitionally the same. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, Observation.lean, Propagation.lean, Thresholds.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
+- 18 October 2026, A1 (Ren 18 October: "I take the revised readings of 生生, 生生不息 and \"entangled\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6."): the readings taken by Ren (DELEGATED-CHOICES D43). The claim is unchanged.
 - 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](two-act-worlds-carry-the-difference.json).
 
 <a id="earlier-text--早期文本"></a>

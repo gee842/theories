@@ -233,8 +233,8 @@
     "en": "A least strength (needing a decision); strengths below one and real amounts; the bound with infinitely many conditions; how a center represents what it reaches; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”。读法（AI 的，依 Ren 的交托采用，DELEGATED-CHOICES D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，形式上读作识的强弱；差别到达多少本身是同一展开中由一个律生成的进程，不另加于展开；所持的差别不断到达（在携带之律下表明，它什么也不取，不是无增益的；对无增益的律未表明）；Ren 的“highly entangled system”中，纠缠读作交换与彼此水平耦合的强度，不等同于量子的纠缠。系统论中，强度是增量增益（Lipschitz 界），所携带的量是它们的比较系统（离散的 Grönwall 不等式），这里它恰好达到。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”），“增益”留给 P111。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the item of six records' next_delta on how much difference arrives and a measure of coupling. Readings (the AI's, adopted on Ren's delegation, DELEGATED-CHOICES D39; 识 itself stays Ren's): the coupling strength is the measure sensitivity lacked, read formally as how strongly a formation registers; how much difference arrives is itself a course one law generates in the one unfolding, not added to it; a held difference keeps arriving (shown under the carrying law, which takes nothing and is not gainless, not for gainless laws); in Ren's “highly entangled system”, entanglement reads as how strongly exchanges are coupled to each other's levels, not as quantum entanglement. In systems terms the strengths are incremental gains (Lipschitz bounds) and the carried amount is their comparison system (a discrete Grönwall inequality), here attained. The name \"coupling strength\" follows the scope of levels-of-closure (\"does not measure the strength of coupling\"), leaving \"gain\" to P111."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”。读法（AI 的，依 Ren 的交托采用，DELEGATED-CHOICES D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，形式上读作识的强弱；差别到达多少本身是同一展开中由一个律生成的进程，不另加于展开；所持的差别不断到达（在携带之律下表明，它什么也不取，不是无增益的；对无增益的律未表明）；Ren 的句子中，“heavily coupled into it”读作耦合强度，“a highly entangled system”读作耦合位于贯穿整体的回路上，多“highly”是回路上的强度与其作用的频度，不等同于量子的纠缠（经修订由 Ren 2026-10-18 取，DELEGATED-CHOICES D39）。系统论中，强度是增量增益（Lipschitz 界），所携带的量是它们的比较系统（离散的 Grönwall 不等式），这里它恰好达到。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”），“增益”留给 P111。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the item of six records' next_delta on how much difference arrives and a measure of coupling. Readings (the AI's, adopted on Ren's delegation, DELEGATED-CHOICES D39; 识 itself stays Ren's): the coupling strength is the measure sensitivity lacked, read formally as how strongly a formation registers; how much difference arrives is itself a course one law generates in the one unfolding, not added to it; a held difference keeps arriving (shown under the carrying law, which takes nothing and is not gainless, not for gainless laws); in Ren's sentence, “heavily coupled into it” reads as coupling strength and “a highly entangled system” as couplings that lie on loops through the whole, how highly being the strengths along the loops and how often they act, not as quantum entanglement (revised and taken by Ren on 18 October 2026, DELEGATED-CHOICES D39). In systems terms the strengths are incremental gains (Lipschitz bounds) and the carried amount is their comparison system (a discrete Grönwall inequality), here attained. The name \"coupling strength\" follows the scope of levels-of-closure (\"does not measure the strength of coupling\"), leaving \"gain\" to P111."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
   "aliases": [
@@ -526,7 +526,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "a7f1a57fc856c8d5af8a6cb7ec8413c7ced7a411ab09343810f6ace6bee0907b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -682,6 +682,14 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, Propagation.lean, THE-THEORY-OF-BECOMING.md, TimedResponse.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the reading of \"entangled\" revised as Ren took it (DELEGATED-CHOICES D39): strength for \"heavily coupled into it\", loops for \"a highly entangled system\". Before: \"in Ren's “highly entangled system”, entanglement reads as how strongly exchanges are coupled to each other's levels, not as quantum entanglement.\". The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：“entangled”的读法按 Ren 所取修订（DELEGATED-CHOICES D39）：“heavily coupled into it”读作强度，“a highly entangled system”读作回路；原文见英文。论断不变。"
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

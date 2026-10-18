@@ -184,12 +184,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261016T124157.989030Z): the 38 declarations of Becoming.CourseWorlds, 34 of them theorems, and the 12 of Becoming.FormedLoops, 7 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 165; not independently reviewed."
   },
   "next_delta": {
-    "zh": "实际世界从其进程读出的强度与其回路何时形成；对无增益之律的紧；小于一的强度与实数的量；独立审查；对读法的论证判断。",
-    "en": "The strengths an actual world reads off its course and when their loops form; tightness over gainless laws; strengths below one and real amounts; an independent review; an argued judgment on the readings."
+    "zh": "实际世界从其进程读出的强度与其回路何时形成；对无增益之律的紧；小于一的强度与实数的量；独立审查。",
+    "en": "The strengths an actual world reads off its course and when their loops form; tightness over gainless laws; strengths below one and real amounts; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”；Ren 同日：“there are no two realities”。本结果回答发布准备度复核的整合所见：前沿（Propagation 及其后各模块）陈述在耦合阵列与一切两个平衡的流上，不在基上。读法（AI 的，待 Ren）：差别到达多少，是一个律的两个世界之间的差别，实际的与一个未取作为所生成的，不是并排给出的两个流；二者都是交换之律的运行，所以前沿之律是同一展开之运行的律；所携带的量由世界达到，是在同一律下发生的与本会发生的之间所能到达的最大差别；强度读自世界自身之位时，哪些回路形成、何时形成，从世界本身读出。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”; Ren the same day: “there are no two realities”. This result answers the integration finding of the release-readiness review: the frontier (Propagation and the modules after it) was stated on coupling arrays and on every two balanced flows, not on the base. Readings (the AI's, pending Ren): how much difference arrives is the difference between two worlds of one law, the actual one and one an act not taken generates, not two flows supplied side by side; both are runs of the law of exchange, so the frontier's laws are laws of the one unfolding's runs; the carried amount is attained by worlds, the most that can arrive between what happens and what would have happened under the same law; where strengths are read off a world's own standing, which loops form, and when, is read off the world itself."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”；Ren 同日：“there are no two realities”。本结果回答发布准备度复核的整合所见：前沿（Propagation 及其后各模块）陈述在耦合阵列与一切两个平衡的流上，不在基上。读法（AI 的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：差别到达多少，是一个律的两个世界之间的差别，实际的与一个未取作为所生成的，不是并排给出的两个流；二者都是交换之律的运行，所以前沿之律是同一展开之运行的律；所携带的量由世界达到，是在同一律下发生的与本会发生的之间所能到达的最大差别；强度读自世界自身之位时，哪些回路形成、何时形成，从世界本身读出。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”; Ren the same day: “there are no two realities”. This result answers the integration finding of the release-readiness review: the frontier (Propagation and the modules after it) was stated on coupling arrays and on every two balanced flows, not on the base. Readings (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): how much difference arrives is the difference between two worlds of one law, the actual one and one an act not taken generates, not two flows supplied side by side; both are runs of the law of exchange, so the frontier's laws are laws of the one unfolding's runs; the carried amount is attained by worlds, the most that can arrive between what happens and what would have happened under the same law; where strengths are read off a world's own standing, which loops form, and when, is read off the world itself."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseWorlds.lean",
   "aliases": [
@@ -699,6 +699,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, Observation.lean, Propagation.lean, Thresholds.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the readings taken by Ren (DELEGATED-CHOICES D43). The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：读法由 Ren 取（DELEGATED-CHOICES D43）。论断不变。"
     }
   ],
   "text_versions": [

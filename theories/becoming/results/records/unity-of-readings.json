@@ -115,8 +115,8 @@
     "en": "Relations among claims as the flow and web of Contextual.world; continuous time and real amounts; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-14：“why do we need \"World\"? wasn't this about the whole and its parts, about everything?”，“no hard role has to be so - right now i think we are trapped by our speculative conditions”，“for us, non-Euclidean, or causality, still work”；对从关系开始的三步重建：“please, finish all”。本结果是第三步：一个统一的定理形式，语境中的读法为一般情形，World 为读法粘合的情形；意义以同样的不变标准读作两分。读法（AI 的，依 Ren 的交托采用）：核心在许多类型上陈述的是一个展开的读法；原来世界的一个前提，现在是一个部分的状态：其余是否闲置；那一条公理（§6.15 的条件）在规律所满足的不变之下归于预设，即 Ren 2026-10-10 所说的“belief”，没有它自身“can not justify itself”。",
-    "en": "Ren, 14 October 2026: “why do we need \"World\"? wasn't this about the whole and its parts, about everything?”, “no hard role has to be so - right now i think we are trapped by our speculative conditions”, “for us, non-Euclidean, or causality, still work”; and, to the relation-first re-founding in three steps, “please, finish all”. This result is the third step: one theorem shape for unity, readings in context the general case and World the case where readings glue; significance read as a dichotomy under the same standard of invariance. Readings (the AI's, adopted on Ren's delegation): what the core states on many types are readings of one unfolding; what was a premise of the world is now a state of a part, whether the rest is idle; and under the invariance the laws meet, the one axiom (the condition of section 6.15) comes to the presupposition, the “belief” without which, Ren wrote on 10 October 2026, the self “can not justify itself”."
+    "zh": "Ren 2026-10-14：“why do we need \"World\"? wasn't this about the whole and its parts, about everything?”，“no hard role has to be so - right now i think we are trapped by our speculative conditions”，“for us, non-Euclidean, or causality, still work”；对从关系开始的三步重建：“please, finish all”。本结果是第三步：一个统一的定理形式，语境中的读法为一般情形，World 为读法粘合的情形；意义以同样的不变标准读作两分。读法（AI 的，依 Ren 的交托采用）：核心在许多类型上陈述的是一个展开的读法；原来世界的一个前提，现在是一个部分的状态：其余是否闲置；那一条公理（§6.15 的条件）在规律所满足的不变之下归于预设，即 Ren 2026-10-10 所说的“belief”，没有它自身“can not justify itself”。最后这一读法只是类比（Ren 2026-10-18 取，DELEGATED-CHOICES D43，审查所见 D-e）：Novelty 对每个家族的量化不是 BoundaryInvariant，所以不支持不变之步，其根据仍开放。",
+    "en": "Ren, 14 October 2026: “why do we need \"World\"? wasn't this about the whole and its parts, about everything?”, “no hard role has to be so - right now i think we are trapped by our speculative conditions”, “for us, non-Euclidean, or causality, still work”; and, to the relation-first re-founding in three steps, “please, finish all”. This result is the third step: one theorem shape for unity, readings in context the general case and World the case where readings glue; significance read as a dichotomy under the same standard of invariance. Readings (the AI's, adopted on Ren's delegation): what the core states on many types are readings of one unfolding; what was a premise of the world is now a state of a part, whether the rest is idle; and under the invariance the laws meet, the one axiom (the condition of section 6.15) comes to the presupposition, the “belief” without which, Ren wrote on 10 October 2026, the self “can not justify itself”. That last reading is an analogy only (taken by Ren on 18 October 2026, DELEGATED-CHOICES D43, review finding D-e): Novelty's quantification over every family is not BoundaryInvariant, so it gives no support to the step of invariance, whose warrant stays open."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
   "aliases": [
@@ -348,7 +348,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "a7f1a57fc856c8d5af8a6cb7ec8413c7ced7a411ab09343810f6ace6bee0907b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
@@ -522,6 +522,14 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Boundaries.lean, THE-THEORY-OF-BECOMING.md, Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the reading \"under the invariance the laws meet\" kept as an analogy only, as Ren took it (DELEGATED-CHOICES D43, review finding D-e). The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：“在规律所满足的不变之下”这一读法只作为类比保留，由 Ren 取（DELEGATED-CHOICES D43，审查所见 D-e）。论断不变。"
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

@@ -20,7 +20,7 @@
 <a id="conditions--条件"></a>
 ## Conditions
 
-- The axiom: Unrestricted sig, that from every standpoint the continuation of anything has significance at every step (boundary neutrality over the index (p, t, f)). It is a hypothesis of the theorems and is not proved; reading it as Ren's axiom is the AI's reading, adopted on Ren's delegation.
+- The continuation condition: Unrestricted sig, that from every standpoint the continuation of anything has significance at every step (boundary neutrality over the index (p, t, f)). It is a hypothesis of the theorems and is not proved; reading it as the condition Ren stated, which Ren then called an axiom, is the AI's reading, adopted on Ren's delegation.
 - Regions are parameters of the statement; the region along dependence (dependenceRegion) is a choice.
 - Discrete steps, counted from step zero; natural-number levels, needs and amounts; a part is a decided family (part : F → Bool).
 
@@ -41,7 +41,7 @@
 <a id="evidence--证据"></a>
 ## Evidence
 
-Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z): the theorems of Becoming.Significance have empty axiom reports, and the checker verifies core purity; no Lean axiom is used, the axiom Unrestricted being a hypothesis of the theorems. Significance and Regions are bound by 20261013T094743.528770Z, Continuation by 20261014T141427.442103Z. Author counterreview in §53 of the integration note; not yet independently reviewed.
+Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z): the theorems of Becoming.Significance have empty axiom reports, and the checker verifies core purity; no Lean axiom is used, the continuation condition Unrestricted being a hypothesis of the theorems. Significance and Regions are bound by 20261013T094743.528770Z, Continuation by 20261014T141427.442103Z. Author counterreview in §53 of the integration note; not yet independently reviewed.
 
 Canonical source: [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
 
@@ -55,30 +55,30 @@ A model of how a center forms and represents its boundary.
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-Ren's axiom is “for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”. Ren also wrote that a center and its boundary exist only within cognitive structure and dynamics, “so there isn't really who's continuation matters, which requires axiom”, and that “not harm” is “a phase transition with a clear boundary”. The author's reading (an AI argument, adopted on Ren's delegation): the formation index reads “anything”, a formation's continuation at a step reads “its continuation into the future”, and the standpoint index reads “has significance” unqualified, with no center privileged; retaining reads “as long as not harm”, and adding reads “create more significance”. The names (Unrestricted, Retains, Adds, Preemption and others) are the AI's, chosen by Ren's naming standard. Ren wrote: “i think it should be the whole, and a weaker version is within the system that one is in, then the self. not saying this is what life does, but what's good for being generative, and the self is a cognitive model which can not justify itself without some sort of "belief"”. The author's reading (an AI argument, adopted on Ren's delegation): Retains.within gives this order as an order of how complete a judgment is, not as what life does; a significance bounded by the self is supplied too (bounded_rival), read as the “belief” Ren names.
+Ren's statement of the continuation condition, which Ren then called an axiom, is “for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”. Ren also wrote that a center and its boundary exist only within cognitive structure and dynamics, “so there isn't really who's continuation matters, which requires axiom”, and that “not harm” is “a phase transition with a clear boundary”. The author's reading (an AI argument, adopted on Ren's delegation): the formation index reads “anything”, a formation's continuation at a step reads “its continuation into the future”, and the standpoint index reads “has significance” unqualified, with no center privileged; retaining reads “as long as not harm”, and adding reads “create more significance”. The names (Unrestricted, Retains, Adds, Preemption and others) are the AI's, chosen by Ren's naming standard. Ren wrote: “i think it should be the whole, and a weaker version is within the system that one is in, then the self. not saying this is what life does, but what's good for being generative, and the self is a cognitive model which can not justify itself without some sort of "belief"”. The author's reading (an AI argument, adopted on Ren's delegation and taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): Retains.within gives this order as an order of how complete a judgment is, not as what life does; a significance bounded by the self is supplied too (bounded_rival), read as the “belief” Ren names.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
 - **formal-reuse**: [loss-beyond-a-region](loss-beyond-a-region.md). Reuses Web.AdmitsWithin, AdmitsWithin.narrow and the clearer's witness (Clearing.withheld, admitted_without, unsupported_with, alongDependence, loses_beyond).
   - Output: The clearer closes nothing within its dependence and closes the dweller beyond it.
-  - Input: Centers bounded by their dependence disagree; under the axiom the dweller is lost from every standpoint.
+  - Input: Centers bounded by their dependence disagree; under the continuation condition the dweller is lost from every standpoint.
   - Preserved conditions: The withheld levels; the region along dependence. [Regions.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
 - **formal-reuse**: [significance-retained-within-margin](significance-retained-within-margin.md). Reuses retaining and adding and Retains.not_added.
   - Output: Retaining is a preorder, and what retains is not added to.
   - Input: The whole first and the free rider's loss.
   - Preserved conditions: None. [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
-- **formal-reuse**: [one-axiom-yields-g0](one-axiom-yields-g0.md). Reuses the axiom Unrestricted and significance bounded by regions, bounded.
-  - Output: The axiom and its rival.
+- **formal-reuse**: [one-axiom-yields-g0](one-axiom-yields-g0.md). Reuses the continuation condition Unrestricted and significance bounded by regions, bounded.
+  - Output: The continuation condition and its rival.
   - Input: The whole's judgment decides every narrower one.
   - Preserved conditions: None. [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
-- **interpretive**: [derived-extent-limits](derived-extent-limits.md). There, on the stepwise reading, the center is shown not derived along dependence (the clearer's witness); here centers bounded by their dependence disagree and license the free rider, and under the axiom they do not disagree.
+- **interpretive**: [derived-extent-limits](derived-extent-limits.md). There, on the stepwise reading, the center is shown not derived along dependence (the clearer's witness); here centers bounded by their dependence disagree and license the free rider, and under the continuation condition they do not disagree.
   - Output: The center along dependence is not derived.
-  - Input: Significance bounded by dependence is a premise, supplied as the axiom is.
-  - Preserved conditions: The reading pending Ren. [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md)
+  - Input: Significance bounded by dependence is a premise, supplied as the continuation condition is.
+  - Preserved conditions: The reading taken by Ren on 18 October 2026, DELEGATED-CHOICES D43. [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md)
 - related, not a proved adapter: [represented-boundary-against-dependence](represented-boundary-against-dependence.md). There represented boundaries are compared with actual dependence; here a center whose represented boundary is exactly its actual dependence still licenses the free rider.
 - related, not a proved adapter: [feeding-closure](feeding-closure.md). Clearing.dependenceRegion is exactly each formation's feeding closure (Clearing.dependenceRegion_iff).
-- related, not a proved adapter: [closure-verdict-meets-axiom](closure-verdict-meets-axiom.md). Without the axiom, the verdict bounded by the feeding closure is the axiom's where the closure is the whole; in the clearer's web the two part.
+- related, not a proved adapter: [closure-verdict-meets-axiom](closure-verdict-meets-axiom.md). Without the continuation condition, the verdict bounded by the feeding closure is the condition's where the closure is the whole; in the clearer's web the two part.
 - related, not a proved adapter: [presupposition-scopes](presupposition-scopes.md). The order of Retains.within reads as three readings of the presupposition: super-true; sub-true along affecting, at the reach closure; sub-true along the empty relation, at the self (Flow.presupposition_order; the AI's reading, adopted on Ren's delegation).
 - related, not a proved adapter: [levels-of-closure](levels-of-closure.md). The reach closure, not the system, reads Ren's middle level “the system that one is in” (adopted on Ren's delegation): one common condition makes the system the whole.
 
@@ -117,6 +117,8 @@ Aliases: `Becoming.Web.Retains.of_fewer`, `Becoming.Web.retains_bounded_iff`, `B
 - 17 October 2026, wording: outdated labels (the axiom) replaced by the current vocabulary (the continuation condition), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Significance.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
+- 18 October 2026, A1 (Ren 18 October: "I take the revised readings of 生生, 生生不息 and \"entangled\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6."): the reading of Ren's order of levels taken by Ren (DELEGATED-CHOICES D43), and the live fields name the continuation condition where they said "the axiom", a label retired since P128; Ren's quoted words, which say "axiom", are unchanged. The claim is unchanged.
+- 18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and "entangled" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.
 - 57 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-first-and-bounded-centers.json).
 
 <a id="earlier-text--早期文本"></a>

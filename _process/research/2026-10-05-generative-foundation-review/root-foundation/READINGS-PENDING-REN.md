@@ -2,7 +2,7 @@
 
 18 October 2026. Written by the AI (Claude Code session of 18 October) for Ren's decision. Everything here is the AI's except text in quotation marks attributed to Ren, each with its source. A reading interprets checked content: taking, revising or declining one changes no theorem and adds no premise.
 
-**Ren's answer (18 October 2026).** Ren took Parts A and B ([words](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)); Parts C and D stay with him. Board item A1 applies them as revisions of D1, D5, D22 and D39 and a new decision D43 in [DELEGATED-CHOICES](DELEGATED-CHOICES.md).
+**Ren's answer (18 October 2026).** Ren took Parts A and B ([words](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)); Parts C and D stay with him. Board item A1 applied them on 18 October as revisions of D1, D5, D22 and D39 and a new decision D43 in [DELEGATED-CHOICES](DELEGATED-CHOICES.md), and in the chapter and the records. The generativity chain's change (item 19) goes through the chain's maintenance record, a separate step.
 
 Where a reading says what one of Ren's terms means, Ren's own texts are the evidence of that term's sense. Whether the reading is the strongest one the work supports is argued from the work, not from Ren's words ([Ren, 17 October](../../../../sources/15-codex-theory-conversations/2026-10-17-ren-words-not-authority.md)).
 

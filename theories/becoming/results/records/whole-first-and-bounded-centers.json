@@ -74,8 +74,8 @@
   ],
   "hypotheses": [
     {
-      "zh": "公理：Unrestricted sig，即从每个立场，任何东西在每一步的延续都有意义（对指标 (p, t, f) 的边界中立）。它是定理的假设，不被证明；把它读作 Ren 的公理是 AI 的读法，依 Ren 的交托采用。",
-      "en": "The axiom: Unrestricted sig, that from every standpoint the continuation of anything has significance at every step (boundary neutrality over the index (p, t, f)). It is a hypothesis of the theorems and is not proved; reading it as Ren's axiom is the AI's reading, adopted on Ren's delegation."
+      "zh": "延续条件：Unrestricted sig，即从每个立场，任何东西在每一步的延续都有意义（对指标 (p, t, f) 的边界中立）。它是定理的假设，不被证明；把它读作 Ren 所陈述的条件（Ren 当时称之为公理）是 AI 的读法，依 Ren 的交托采用。",
+      "en": "The continuation condition: Unrestricted sig, that from every standpoint the continuation of anything has significance at every step (boundary neutrality over the index (p, t, f)). It is a hypothesis of the theorems and is not proved; reading it as the condition Ren stated, which Ren then called an axiom, is the AI's reading, adopted on Ren's delegation."
     },
     {
       "zh": "区域是陈述的参数；以依存为界的区域（dependenceRegion）是一个选择。",
@@ -139,16 +139,16 @@
     "names-provisional"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T221720.428753Z）：Becoming.Significance 的定理公理报告为空，并核对核心纯净；不用 Lean 公理，公理 Unrestricted 是定理的假设。Significance 与 Regions 的绑定为 20261013T094743.528770Z，Continuation 为 20261014T141427.442103Z。作者反审见整合文档 §53；尚未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z): the theorems of Becoming.Significance have empty axiom reports, and the checker verifies core purity; no Lean axiom is used, the axiom Unrestricted being a hypothesis of the theorems. Significance and Regions are bound by 20261013T094743.528770Z, Continuation by 20261014T141427.442103Z. Author counterreview in §53 of the integration note; not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T221720.428753Z）：Becoming.Significance 的定理公理报告为空，并核对核心纯净；不用 Lean 公理，延续条件 Unrestricted 是定理的假设。Significance 与 Regions 的绑定为 20261013T094743.528770Z，Continuation 为 20261014T141427.442103Z。作者反审见整合文档 §53；尚未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z): the theorems of Becoming.Significance have empty axiom reports, and the checker verifies core purity; no Lean axiom is used, the continuation condition Unrestricted being a hypothesis of the theorems. Significance and Regions are bound by 20261013T094743.528770Z, Continuation by 20261014T141427.442103Z. Author counterreview in §53 of the integration note; not yet independently reviewed."
   },
   "next_delta": {
     "zh": "中心怎样形成并表示其边界的模型。",
     "en": "A model of how a center forms and represents its boundary."
   },
   "correspondence": {
-    "zh": "Ren 的公理是“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”。Ren 又写道，中心及其边界只存在于认知的结构与动力学中，“so there isn't really who's continuation matters, which requires axiom”，并说“not harm”是“a phase transition with a clear boundary”。作者的读法（AI 论证，依 Ren 的交托采用）：形成的索引读“anything”，形成在一步的延续读“its continuation into the future”，立场的索引读“has significance”不加限定、没有哪个中心特殊；保留读“as long as not harm”，增加读“create more significance”。名称（Unrestricted、Retains、Adds、Preemption 等）是 AI 按 Ren 的命名准则所选。Ren 写道：“i think it should be the whole, and a weaker version is within the system that one is in, then the self. not saying this is what life does, but what's good for being generative, and the self is a cognitive model which can not justify itself without some sort of \"belief\"”。作者的读法（AI 论证，依 Ren 的交托采用）：Retains.within 给出这个次序，作为判断完整性的次序，不是生命实际做什么；以自身为界的意义也是被给出的（bounded_rival），读作 Ren 所说的“belief”。",
-    "en": "Ren's axiom is “for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”. Ren also wrote that a center and its boundary exist only within cognitive structure and dynamics, “so there isn't really who's continuation matters, which requires axiom”, and that “not harm” is “a phase transition with a clear boundary”. The author's reading (an AI argument, adopted on Ren's delegation): the formation index reads “anything”, a formation's continuation at a step reads “its continuation into the future”, and the standpoint index reads “has significance” unqualified, with no center privileged; retaining reads “as long as not harm”, and adding reads “create more significance”. The names (Unrestricted, Retains, Adds, Preemption and others) are the AI's, chosen by Ren's naming standard. Ren wrote: “i think it should be the whole, and a weaker version is within the system that one is in, then the self. not saying this is what life does, but what's good for being generative, and the self is a cognitive model which can not justify itself without some sort of \"belief\"”. The author's reading (an AI argument, adopted on Ren's delegation): Retains.within gives this order as an order of how complete a judgment is, not as what life does; a significance bounded by the self is supplied too (bounded_rival), read as the “belief” Ren names."
+    "zh": "Ren 对延续条件的表述（Ren 当时称之为公理）是“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”。Ren 又写道，中心及其边界只存在于认知的结构与动力学中，“so there isn't really who's continuation matters, which requires axiom”，并说“not harm”是“a phase transition with a clear boundary”。作者的读法（AI 论证，依 Ren 的交托采用）：形成的索引读“anything”，形成在一步的延续读“its continuation into the future”，立场的索引读“has significance”不加限定、没有哪个中心特殊；保留读“as long as not harm”，增加读“create more significance”。名称（Unrestricted、Retains、Adds、Preemption 等）是 AI 按 Ren 的命名准则所选。Ren 写道：“i think it should be the whole, and a weaker version is within the system that one is in, then the self. not saying this is what life does, but what's good for being generative, and the self is a cognitive model which can not justify itself without some sort of \"belief\"”。作者的读法（AI 论证，依 Ren 的交托采用，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：Retains.within 给出这个次序，作为判断完整性的次序，不是生命实际做什么；以自身为界的意义也是被给出的（bounded_rival），读作 Ren 所说的“belief”。",
+    "en": "Ren's statement of the continuation condition, which Ren then called an axiom, is “for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”. Ren also wrote that a center and its boundary exist only within cognitive structure and dynamics, “so there isn't really who's continuation matters, which requires axiom”, and that “not harm” is “a phase transition with a clear boundary”. The author's reading (an AI argument, adopted on Ren's delegation): the formation index reads “anything”, a formation's continuation at a step reads “its continuation into the future”, and the standpoint index reads “has significance” unqualified, with no center privileged; retaining reads “as long as not harm”, and adding reads “create more significance”. The names (Unrestricted, Retains, Adds, Preemption and others) are the AI's, chosen by Ren's naming standard. Ren wrote: “i think it should be the whole, and a weaker version is within the system that one is in, then the self. not saying this is what life does, but what's good for being generative, and the self is a cognitive model which can not justify itself without some sort of \"belief\"”. The author's reading (an AI argument, adopted on Ren's delegation and taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): Retains.within gives this order as an order of how complete a judgment is, not as what life does; a significance bounded by the self is supplied too (bounded_rival), read as the “belief” Ren names."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
   "aliases": [
@@ -174,8 +174,8 @@
           "en": "The clearer closes nothing within its dependence and closes the dweller beyond it."
         },
         "input": {
-          "zh": "以依存为界的中心彼此分歧；公理之下从每个立场失去栖居者。",
-          "en": "Centers bounded by their dependence disagree; under the axiom the dweller is lost from every standpoint."
+          "zh": "以依存为界的中心彼此分歧；延续条件之下从每个立场失去栖居者。",
+          "en": "Centers bounded by their dependence disagree; under the continuation condition the dweller is lost from every standpoint."
         },
         "conditions": {
           "zh": "扣留后的水平；以依存为界的区域。",
@@ -211,13 +211,13 @@
       "id": "one-axiom-yields-g0",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用公理 Unrestricted 与以区域为界的意义 bounded。",
-        "en": "Reuses the axiom Unrestricted and significance bounded by regions, bounded."
+        "zh": "复用延续条件 Unrestricted 与以区域为界的意义 bounded。",
+        "en": "Reuses the continuation condition Unrestricted and significance bounded by regions, bounded."
       },
       "interface": {
         "output": {
-          "zh": "公理与它的对手。",
-          "en": "The axiom and its rival."
+          "zh": "延续条件与它的对手。",
+          "en": "The continuation condition and its rival."
         },
         "input": {
           "zh": "整体的判断决定每个较窄的判断。",
@@ -234,8 +234,8 @@
       "id": "derived-extent-limits",
       "relation": "interpretive",
       "detail": {
-        "zh": "那里在逐步读法上证明沿依存时中心不由动力学推出（清除者的见证）；这里以依存为界的中心彼此分歧并容许搭便车者，公理之下不分歧。",
-        "en": "There, on the stepwise reading, the center is shown not derived along dependence (the clearer's witness); here centers bounded by their dependence disagree and license the free rider, and under the axiom they do not disagree."
+        "zh": "那里在逐步读法上证明沿依存时中心不由动力学推出（清除者的见证）；这里以依存为界的中心彼此分歧并容许搭便车者，延续条件之下不分歧。",
+        "en": "There, on the stepwise reading, the center is shown not derived along dependence (the clearer's witness); here centers bounded by their dependence disagree and license the free rider, and under the continuation condition they do not disagree."
       },
       "interface": {
         "output": {
@@ -243,12 +243,12 @@
           "en": "The center along dependence is not derived."
         },
         "input": {
-          "zh": "以依存为界的意义是一个前提，与公理一样被给出。",
-          "en": "Significance bounded by dependence is a premise, supplied as the axiom is."
+          "zh": "以依存为界的意义是一个前提，与延续条件一样被给出。",
+          "en": "Significance bounded by dependence is a premise, supplied as the continuation condition is."
         },
         "conditions": {
-          "zh": "读法待 Ren。",
-          "en": "The reading pending Ren."
+          "zh": "读法由 Ren 2026-10-18 取，DELEGATED-CHOICES D43。",
+          "en": "The reading taken by Ren on 18 October 2026, DELEGATED-CHOICES D43."
         },
         "evidence": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
       }
@@ -272,8 +272,8 @@
     {
       "id": "closure-verdict-meets-axiom",
       "detail": {
-        "zh": "不用公理时，以供给闭包为界的判断在闭包是整体时就是公理的判断；清除者的网中两者分开。",
-        "en": "Without the axiom, the verdict bounded by the feeding closure is the axiom's where the closure is the whole; in the clearer's web the two part."
+        "zh": "不用延续条件时，以供给闭包为界的判断在闭包是整体时就是延续条件的判断；清除者的网中两者分开。",
+        "en": "Without the continuation condition, the verdict bounded by the feeding closure is the condition's where the closure is the whole; in the clearer's web the two part."
       }
     },
     {
@@ -350,7 +350,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "a7f1a57fc856c8d5af8a6cb7ec8413c7ced7a411ab09343810f6ace6bee0907b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -670,6 +670,14 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the reading of Ren's order of levels taken by Ren (DELEGATED-CHOICES D43), and the live fields name the continuation condition where they said \"the axiom\", a label retired since P128; Ren's quoted words, which say \"axiom\", are unchanged. The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：Ren 的层级次序的读法由 Ren 取（DELEGATED-CHOICES D43）；活字段中原称“公理”之处改称延续条件（P128 以来“公理”已退役）；所引 Ren 原话中的“axiom”不变。论断不变。"
+    },
+    {
+      "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). THE-THEORY-OF-BECOMING.md was already older than the base; every line of it that bears on this record and changed since the record's review is A1's, and the rest changed only outside what the record cites. The claim is unchanged.",
+      "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

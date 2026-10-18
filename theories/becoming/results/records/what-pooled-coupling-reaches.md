@@ -97,6 +97,7 @@ Aliases: `what pooled coupling reaches`, `合起来的耦合及于什么`, `the 
 ### History
 
 - 18 October 2026: added (M2), on Ren's "what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?" and "please make your own pareto frontier decisions, and push the frontier", the AI choosing the item; study section 179.
+- 18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and "entangled" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). The claim is unchanged.
 
 </details>
 

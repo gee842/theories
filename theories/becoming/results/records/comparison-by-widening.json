@@ -32,8 +32,8 @@
     }
   ],
   "correspondence": {
-    "zh": "Ren 2026-10-11 问：“can we reduce is \"for anything, its continuation into the future leads to more futures(flourishes/plurality) from generatively\" - so we can be like \"these are space where generatively happens\", which allows us to derive everything without axiom?”，并定：“as long as the derivation of the rules doesn't rely on axiom, don't use one”。AI 的读法：扩大读“leads to more futures”，Ren 已确认可能性读作接下来能形成的；生成的空间读作部分在其中扩大能形成者之处。依 Ren 的交托，“flourishes/plurality”由扩大读出，多样性是尚未度量的一面，扩大就是生生的空间（D22）。",
-    "en": "Ren asked on 11 October 2026: “can we reduce is \"for anything, its continuation into the future leads to more futures(flourishes/plurality) from generatively\" - so we can be like \"these are space where generatively happens\", which allows us to derive everything without axiom?”, and decided: “as long as the derivation of the rules doesn't rely on axiom, don't use one”. The AI's reading: widening reads “leads to more futures”, Ren having confirmed that possibilities are what can form next; the generative space is where a part widens what can form. On Ren's delegation “flourishes/plurality” is read by widening, plurality an aspect not yet measured, and widening is the space of 生生 (D22)."
+    "zh": "Ren 2026-10-11 问：“can we reduce is \"for anything, its continuation into the future leads to more futures(flourishes/plurality) from generatively\" - so we can be like \"these are space where generatively happens\", which allows us to derive everything without axiom?”，并定：“as long as the derivation of the rules doesn't rely on axiom, don't use one”。AI 的读法：扩大读“leads to more futures”，Ren 已确认可能性读作接下来能形成的；当下能形成者是生成的空间，部分在其中扩大它之处是 Ren 那句话所说的区域（D22，经修订由 Ren 2026-10-18 取）。依 Ren 的交托，“flourishes/plurality”由扩大读出，多样性是尚未度量的一面；扩大比较生生的方向，生生是生成者生成新的生成（D1 与 D22，经修订由 Ren 2026-10-18 取）。",
+    "en": "Ren asked on 11 October 2026: “can we reduce is \"for anything, its continuation into the future leads to more futures(flourishes/plurality) from generatively\" - so we can be like \"these are space where generatively happens\", which allows us to derive everything without axiom?”, and decided: “as long as the derivation of the rules doesn't rely on axiom, don't use one”. The AI's reading: widening reads “leads to more futures”, Ren having confirmed that possibilities are what can form next; what can form now is the generative space, and where a part widens it is the region Ren's sentence names (D22, revised and taken by Ren on 18 October 2026). On Ren's delegation “flourishes/plurality” is read by widening, plurality an aspect not yet measured; widening compares the direction of 生生, which is generation generating generation (D1 and D22, revised and taken by Ren on 18 October 2026)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
   "aliases": [
@@ -435,6 +435,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the readings of the generative space and of 生生 revised as Ren took them (DELEGATED-CHOICES D1, D22): what can form now is the generative space, and widening compares the direction of 生生. Before: \"the generative space is where a part widens what can form\" and \"widening is the space of 生生 (D22)\". The claim is unchanged.",
+      "zh": "2026年10月18日，A1（Ren 10月18日的回答）：生成的空间与生生的读法按 Ren 所取修订（DELEGATED-CHOICES D1、D22）：当下能形成者是生成的空间，扩大比较生生的方向；原文见英文。论断不变。"
     }
   ]
 }
