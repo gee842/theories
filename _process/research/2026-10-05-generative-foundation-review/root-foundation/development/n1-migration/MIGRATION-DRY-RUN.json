@@ -1,0 +1,3220 @@
+{
+ "summary": {
+  "definitions": 30,
+  "theorem_names": 126,
+  "clashes": [],
+  "definitions_not_found": [],
+  "lean_files_touched": 89,
+  "records_touched": 30
+ },
+ "entries": [
+  {
+   "module": "Counterfactual",
+   "kind": "theorem",
+   "name": "ExchangeLaw.Through.registers_of_sensitive",
+   "new": "ExchangeLaw.Through.couples_of_sensitive",
+   "how": "theorem name, token substitution (review)",
+   "line": 429,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Counterfactual.lean",
+    "Sensitivity.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "counterfactual-is-the-course",
+    "sensitivity-is-the-least-registration"
+   ],
+   "chapter": 2
+  },
+  {
+   "module": "Description",
+   "kind": "def",
+   "name": "Negation.register",
+   "new": "Negation.course",
+   "how": "definition (study section 7)",
+   "line": 633,
+   "clash": false,
+   "lean_files": 30,
+   "lean_file_names": [
+    "Becoming.lean",
+    "Branching.lean",
+    "Closing.lean",
+    "Context.lean",
+    "DephasingRuns.lean",
+    "DephasingRunsInherited.lean",
+    "Description.lean",
+    "Diagonal.lean",
+    "Feedback.lean",
+    "Identification.lean",
+    "IdentificationRuns.lean",
+    "JoiningBridge.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "identification-where-bounded",
+    "the-split-that-makes-sense"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Feedback",
+   "kind": "theorem",
+   "name": "Flow.Balances.unregistered_beyond_influence",
+   "new": "Flow.Balances.uncoupled_beyond_influence",
+   "how": "theorem name, token substitution (review)",
+   "line": 556,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Boundaries.lean",
+    "Feedback.lean",
+    "Testing.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "consumption-ends-with-feeders",
+    "feedback-and-reach",
+    "testing-within-registration"
+   ],
+   "chapter": 4
+  },
+  {
+   "module": "Feedback",
+   "kind": "theorem",
+   "name": "Trophic.mediated_unregistered",
+   "new": "Trophic.mediated_uncoupled",
+   "how": "theorem name, token substitution (review)",
+   "line": 1199,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Feedback.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "comparison-within-reach",
+    "feedback-and-reach"
+   ],
+   "chapter": 2
+  },
+  {
+   "module": "Feedback",
+   "kind": "theorem",
+   "name": "Clearing.unregistered",
+   "new": "Clearing.uncoupled",
+   "how": "theorem name, token substitution (review)",
+   "line": 1414,
+   "clash": false,
+   "lean_files": 8,
+   "lean_file_names": [
+    "Becoming.lean",
+    "Counterfactual.lean",
+    "Feedback.lean",
+    "LevelCoupling.lean",
+    "ReferencePlan.lean",
+    "ReferencePlanTraces.lean",
+    "Runaway.lean",
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "feedback-and-reach"
+   ],
+   "chapter": 3
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.record_eq_iff",
+   "new": "Identification.prefix_eq_iff",
+   "how": "theorem name, token substitution (review)",
+   "line": 352,
+   "clash": false,
+   "lean_files": 5,
+   "lean_file_names": [
+    "Distinguishing.lean",
+    "Identification.lean",
+    "IdentificationRuns.lean",
+    "Learnable.lean",
+    "Parting.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "identification-where-bounded",
+    "identification-where-runs-part",
+    "learnable-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.record_fixes",
+   "new": "Identification.prefix_fixes",
+   "how": "theorem name, token substitution (review)",
+   "line": 369,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.record_short",
+   "new": "Identification.prefix_short",
+   "how": "theorem name, token substitution (review)",
+   "line": 378,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.record_short_twice",
+   "new": "Identification.prefix_short_twice",
+   "how": "theorem name, token substitution (review)",
+   "line": 396,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.borneOut_record_iff",
+   "new": "Identification.borneOut_prefix_iff",
+   "how": "theorem name, token substitution (review)",
+   "line": 627,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.withBound_holds",
+   "new": "Identification.withBound_accords",
+   "how": "theorem name, token substitution (review)",
+   "line": 749,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.learner_rests",
+   "new": "Identification.byElimination_rests",
+   "how": "theorem name, token substitution (review)",
+   "line": 859,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.held_learner_rests",
+   "new": "Identification.held_byElimination_rests",
+   "how": "theorem name, token substitution (review)",
+   "line": 966,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learnable.lean"
+   ],
+   "records": 4,
+   "record_ids": [
+    "identification-where-bounded",
+    "learnable-through-registration",
+    "learning-by-refutation",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.rest_without_bound_refuted",
+   "new": "Identification.rest_without_bound_missed",
+   "how": "theorem name, token substitution (review)",
+   "line": 1089,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.register_two",
+   "new": "Identification.course_two",
+   "how": "theorem name, token substitution (review)",
+   "line": 1118,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.register_even",
+   "new": "Identification.course_even",
+   "how": "theorem name, token substitution (review)",
+   "line": 1121,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.register_double",
+   "new": "Identification.course_double",
+   "how": "theorem name, token substitution (review)",
+   "line": 1125,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.register_odd",
+   "new": "Identification.course_odd",
+   "how": "theorem name, token substitution (review)",
+   "line": 1129,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.refuted_of",
+   "new": "Identification.missed_of",
+   "how": "theorem name, token substitution (review)",
+   "line": 1194,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.unit_shift_refuted",
+   "new": "Identification.unit_shift_missed",
+   "how": "theorem name, token substitution (review)",
+   "line": 1331,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.learner_refuted_late",
+   "new": "Identification.byElimination_missed_late",
+   "how": "theorem name, token substitution (review)",
+   "line": 1502,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Identification.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Identification",
+   "kind": "theorem",
+   "name": "Identification.learner_rest_cubic",
+   "new": "Identification.byElimination_rest_cubic",
+   "how": "theorem name, token substitution (review)",
+   "line": 1525,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-bounded"
+   ],
+   "chapter": 2
+  },
+  {
+   "module": "IdentificationRuns",
+   "kind": "theorem",
+   "name": "IdentificationRuns.record_fixes",
+   "new": "IdentificationRuns.prefix_fixes",
+   "how": "theorem name, token substitution (review)",
+   "line": 99,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "IdentificationRuns",
+   "kind": "theorem",
+   "name": "IdentificationRuns.withBound_holds",
+   "new": "IdentificationRuns.withBound_accords",
+   "how": "theorem name, token substitution (review)",
+   "line": 130,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "IdentificationRuns",
+   "kind": "theorem",
+   "name": "IdentificationRuns.record_short",
+   "new": "IdentificationRuns.prefix_short",
+   "how": "theorem name, token substitution (review)",
+   "line": 152,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "IdentificationRuns",
+   "kind": "theorem",
+   "name": "IdentificationRuns.rest_without_bound_refuted",
+   "new": "IdentificationRuns.rest_without_bound_missed",
+   "how": "theorem name, token substitution (review)",
+   "line": 170,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "IdentificationRuns",
+   "kind": "theorem",
+   "name": "IdentificationRuns.learner_rest_cubic",
+   "new": "IdentificationRuns.byElimination_rest_cubic",
+   "how": "theorem name, token substitution (review)",
+   "line": 181,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "Keeping",
+   "kind": "def",
+   "name": "Viability.Answering.registers",
+   "new": "Viability.Answering.keeps",
+   "how": "definition (study section 7)",
+   "line": 202,
+   "clash": false,
+   "lean_files": 45,
+   "lean_file_names": [
+    "Becoming.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Closing.lean",
+    "Contacts.lean",
+    "Context.lean",
+    "ContextualRuns.lean",
+    "Counterfactual.lean",
+    "Description.lean",
+    "Diagonal.lean",
+    "DiagonalRuns.lean",
+    "Experiment.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "Keeping",
+   "kind": "def",
+   "name": "Viability.Matching.registered",
+   "new": "Viability.Matching.keepsBit",
+   "how": "definition (study section 7)",
+   "line": 384,
+   "clash": false,
+   "lean_files": 38,
+   "lean_file_names": [
+    "Becoming.lean",
+    "Branching.lean",
+    "Closing.lean",
+    "Context.lean",
+    "ContextualRuns.lean",
+    "ContinuingRevision.lean",
+    "ContinuingRuns.lean",
+    "Description.lean",
+    "Diagonal.lean",
+    "DiagonalRuns.lean",
+    "Distinguishing.lean",
+    "ExactRecordRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "Keeping",
+   "kind": "def",
+   "name": "Viability.Matching.blind",
+   "new": "Viability.Matching.keepsNothing",
+   "how": "definition (study section 7)",
+   "line": 387,
+   "clash": false,
+   "lean_files": 10,
+   "lean_file_names": [
+    "Becoming.lean",
+    "ContactCourses.lean",
+    "Contacts.lean",
+    "Dependence.lean",
+    "FallibleInquiry.lean",
+    "Keeping.lean",
+    "ReferencePlan.lean",
+    "ReferencePlanTraces.lean",
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "Keeping",
+   "kind": "theorem",
+   "name": "Viability.Matching.registered_kept",
+   "new": "Viability.Matching.coupled_kept",
+   "how": "theorem name, token substitution (review)",
+   "line": 407,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Keeping.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "Keeping",
+   "kind": "theorem",
+   "name": "Viability.Matching.registration_matters",
+   "new": "Viability.Matching.coupling_matters",
+   "how": "theorem name, token substitution (review)",
+   "line": 434,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Keeping.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "finite-continuation-plans"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learnable",
+   "kind": "theorem",
+   "name": "Learnable.records_same",
+   "new": "Learnable.prefixes_same",
+   "how": "theorem name, token substitution (review)",
+   "line": 89,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learnable.lean",
+    "LearnableRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learnable-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learnable",
+   "kind": "theorem",
+   "name": "Learnable.refuted_on_one",
+   "new": "Learnable.missed_on_one",
+   "how": "theorem name, token substitution (review)",
+   "line": 108,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learnable.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learnable-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learnable",
+   "kind": "def",
+   "name": "Learnable.withWorldAt",
+   "new": "Learnable.fromLawAt",
+   "how": "definition (study section 7)",
+   "line": 218,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Learnable.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learnable-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learnable",
+   "kind": "def",
+   "name": "Learnable.withWorld",
+   "new": "Learnable.fromLaw",
+   "how": "definition (study section 7)",
+   "line": 226,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Learnable.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learnable-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "LearnableRuns",
+   "kind": "theorem",
+   "name": "LearnableRuns.record_eq",
+   "new": "LearnableRuns.prefix_eq",
+   "how": "theorem name, token substitution (review)",
+   "line": 63,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "LearnableRuns.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learnable-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "LearnableRuns",
+   "kind": "theorem",
+   "name": "LearnableRuns.records_same",
+   "new": "LearnableRuns.prefixes_same",
+   "how": "theorem name, token substitution (review)",
+   "line": 95,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learnable.lean",
+    "LearnableRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learnable-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "def",
+   "name": "Learning.record",
+   "new": "Learning.prefix",
+   "how": "definition (study section 7)",
+   "line": 142,
+   "clash": false,
+   "lean_files": 40,
+   "lean_file_names": [
+    "Becoming.lean",
+    "Branching.lean",
+    "CandidateRuns.lean",
+    "ContextualRuns.lean",
+    "Counterfactual.lean",
+    "Coupling.lean",
+    "Courses.lean",
+    "CrossSituational.lean",
+    "Distinguishing.lean",
+    "Entropy.lean",
+    "ExactRecordRuns.lean",
+    "ExactRecordRunsInherited.lean"
+   ],
+   "records": 4,
+   "record_ids": [
+    "identification-where-bounded",
+    "identification-where-runs-part",
+    "learnable-through-registration",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.record_length",
+   "new": "Learning.prefix_length",
+   "how": "theorem name, token substitution (review)",
+   "line": 147,
+   "clash": false,
+   "lean_files": 6,
+   "lean_file_names": [
+    "ContextualRuns.lean",
+    "Identification.lean",
+    "Learnable.lean",
+    "Learning.lean",
+    "Parting.lean",
+    "TypicalRuns.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "identification-where-runs-part",
+    "learnable-through-registration",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.record_congr",
+   "new": "Learning.prefix_congr",
+   "how": "theorem name, token substitution (review)",
+   "line": 152,
+   "clash": false,
+   "lean_files": 8,
+   "lean_file_names": [
+    "Identification.lean",
+    "IdentificationRuns.lean",
+    "Learnable.lean",
+    "LearnableRuns.lean",
+    "Learning.lean",
+    "LearningRuns.lean",
+    "Parting.lean",
+    "TypicalRuns.lean"
+   ],
+   "records": 4,
+   "record_ids": [
+    "identification-where-bounded",
+    "identification-where-runs-part",
+    "learnable-through-registration",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.back_record",
+   "new": "Learning.back_prefix",
+   "how": "theorem name, token substitution (review)",
+   "line": 167,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learning.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "identification-where-bounded",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "def",
+   "name": "Learning.Refuted",
+   "new": "Learning.Misses",
+   "how": "definition (study section 7)",
+   "line": 178,
+   "clash": false,
+   "lean_files": 6,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learnable.lean",
+    "Learning.lean",
+    "LearningRuns.lean",
+    "Refinement.lean",
+    "Testing.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "identification-where-bounded",
+    "learnable-through-registration",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.eq_of_not_refuted",
+   "new": "Learning.eq_of_not_missed",
+   "how": "theorem name, token substitution (review)",
+   "line": 190,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learning.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "identification-where-bounded",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.not_refuted_self",
+   "new": "Learning.not_missed_self",
+   "how": "theorem name, token substitution (review)",
+   "line": 196,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learning.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "def",
+   "name": "Learning.RefutedAt",
+   "new": "Learning.MissesAt",
+   "how": "definition (study section 7)",
+   "line": 200,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learning.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "identification-where-bounded",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "def",
+   "name": "Learning.Holds",
+   "new": "Learning.Accords",
+   "how": "definition (study section 7)",
+   "line": 208,
+   "clash": false,
+   "lean_files": 21,
+   "lean_file_names": [
+    "Assurance.lean",
+    "Bridge.lean",
+    "Composition.lean",
+    "CompositionBridge.lean",
+    "Counting.lean",
+    "DerivationScopeProcesses.lean",
+    "Granularity.lean",
+    "GranularityBridge.lean",
+    "Identification.lean",
+    "IdentificationRuns.lean",
+    "Joining.lean",
+    "JoiningBridge.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "identification-where-bounded",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.no_record_fixes_next",
+   "new": "Learning.no_prefix_fixes_next",
+   "how": "theorem name, token substitution (review)",
+   "line": 233,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Learning.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "learning-by-refutation",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.claim_refuted_on_one",
+   "new": "Learning.claim_missed_on_one",
+   "how": "theorem name, token substitution (review)",
+   "line": 250,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learning.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.record_diagonal",
+   "new": "Learning.prefix_diagonal",
+   "how": "theorem name, token substitution (review)",
+   "line": 286,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Learning.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.diagonal_refutes",
+   "new": "Learning.diagonal_misses",
+   "how": "theorem name, token substitution (review)",
+   "line": 294,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Learning.lean",
+    "LearningRuns.lean",
+    "Parting.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "identification-where-runs-part",
+    "learning-by-refutation",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "def",
+   "name": "Learning.learner",
+   "new": "Learning.byElimination",
+   "how": "definition (study section 7)",
+   "line": 352,
+   "clash": false,
+   "lean_files": 12,
+   "lean_file_names": [
+    "Becoming.lean",
+    "CrossSituational.lean",
+    "ExactRecordRuns.lean",
+    "Identification.lean",
+    "IdentificationRuns.lean",
+    "Learnable.lean",
+    "LearnableRuns.lean",
+    "Learning.lean",
+    "LearningRuns.lean",
+    "Parting.lean",
+    "QueryTracesInherited.lean",
+    "TrainingProcessesInherited.lean"
+   ],
+   "records": 4,
+   "record_ids": [
+    "identification-where-bounded",
+    "identification-where-runs-part",
+    "learnable-through-registration",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.index_refuted",
+   "new": "Learning.index_missed",
+   "how": "theorem name, token substitution (review)",
+   "line": 359,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learning.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "identification-where-bounded",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.index_le_of_holds",
+   "new": "Learning.index_le_of_accords",
+   "how": "theorem name, token substitution (review)",
+   "line": 388,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Learning.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.refuted_before",
+   "new": "Learning.missed_before",
+   "how": "theorem name, token substitution (review)",
+   "line": 401,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learning.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.refutations_not_recurring",
+   "new": "Learning.misses_not_recurring",
+   "how": "theorem name, token substitution (review)",
+   "line": 433,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Learning.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.learner_through_record",
+   "new": "Learning.byElimination_through_prefix",
+   "how": "theorem name, token substitution (review)",
+   "line": 441,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learning.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.no_record_fixes_next_finite",
+   "new": "Learning.no_prefix_fixes_next_finite",
+   "how": "theorem name, token substitution (review)",
+   "line": 565,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learning.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "learning-by-refutation",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.lasso_holds",
+   "new": "Learning.lasso_accords",
+   "how": "theorem name, token substitution (review)",
+   "line": 588,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learning.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "identification-where-bounded",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.lasso_learner_bounded",
+   "new": "Learning.lasso_byElimination_bounded",
+   "how": "theorem name, token substitution (review)",
+   "line": 684,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Identification.lean",
+    "Learning.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "identification-where-bounded",
+    "learning-by-refutation"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Learning",
+   "kind": "theorem",
+   "name": "Learning.held_learner_bounded",
+   "new": "Learning.held_byElimination_bounded",
+   "how": "theorem name, token substitution (review)",
+   "line": 753,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learning.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "learning-by-refutation",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.refuted_congr",
+   "new": "LearningRuns.missed_congr",
+   "how": "theorem name, token substitution (review)",
+   "line": 77,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.refutedAt_of_same",
+   "new": "LearningRuns.missedAt_of_same",
+   "how": "theorem name, token substitution (review)",
+   "line": 82,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.holdFrom_refuted",
+   "new": "LearningRuns.holdFrom_missed",
+   "how": "theorem name, token substitution (review)",
+   "line": 89,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.refuted_on_one_of_part",
+   "new": "LearningRuns.missed_on_one_of_part",
+   "how": "theorem name, token substitution (review)",
+   "line": 107,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.record_fixes_no_next",
+   "new": "LearningRuns.prefix_fixes_no_next",
+   "how": "theorem name, token substitution (review)",
+   "line": 118,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.learner_through_record",
+   "new": "LearningRuns.byElimination_through_prefix",
+   "how": "theorem name, token substitution (review)",
+   "line": 134,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learning.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.refuted_before",
+   "new": "LearningRuns.missed_before",
+   "how": "theorem name, token substitution (review)",
+   "line": 142,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learning.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.determines_iff_registered_alike",
+   "new": "LearningRuns.determines_iff_alike_through_map",
+   "how": "theorem name, token substitution (review)",
+   "line": 165,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.loss_through_record",
+   "new": "LearningRuns.loss_through_prefix",
+   "how": "theorem name, token substitution (review)",
+   "line": 206,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.unselected_beyond_record",
+   "new": "LearningRuns.unselected_beyond_prefix",
+   "how": "theorem name, token substitution (review)",
+   "line": 216,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.free_record_fixes_nothing",
+   "new": "LearningRuns.free_prefix_fixes_nothing",
+   "how": "theorem name, token substitution (review)",
+   "line": 246,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.answer_record",
+   "new": "LearningRuns.answer_prefix",
+   "how": "theorem name, token substitution (review)",
+   "line": 274,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.answer_refutes",
+   "new": "LearningRuns.answer_misses",
+   "how": "theorem name, token substitution (review)",
+   "line": 291,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.held_learner_bounded",
+   "new": "LearningRuns.held_byElimination_bounded",
+   "how": "theorem name, token substitution (review)",
+   "line": 325,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learning.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LearningRuns",
+   "kind": "theorem",
+   "name": "LearningRuns.refuted_on_one",
+   "new": "LearningRuns.missed_on_one",
+   "how": "theorem name, token substitution (review)",
+   "line": 370,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Learnable.lean",
+    "LearningRuns.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "LevelCoupling",
+   "kind": "theorem",
+   "name": "ExchangeLaw.Through.respondsWithin_unregistered",
+   "new": "ExchangeLaw.Through.respondsWithin_uncoupled",
+   "how": "theorem name, token substitution (review)",
+   "line": 136,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LevelCoupling.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "where-a-level-couples"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "LevelCoupling",
+   "kind": "theorem",
+   "name": "ExchangeLaw.Through.registers_of_respondsTo",
+   "new": "ExchangeLaw.Through.couples_of_respondsTo",
+   "how": "theorem name, token substitution (review)",
+   "line": 151,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LevelCoupling.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "where-a-level-couples"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "LevelCoupling",
+   "kind": "theorem",
+   "name": "Web.registersAlike_of_levels",
+   "new": "Web.alikeThrough_of_levels",
+   "how": "theorem name, token substitution (review)",
+   "line": 194,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "LevelCoupling.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "where-a-level-couples"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Likeness",
+   "kind": "def",
+   "name": "Registers",
+   "new": "RespectsClaims",
+   "how": "definition (study section 7)",
+   "line": 160,
+   "clash": false,
+   "lean_files": 12,
+   "lean_file_names": [
+    "Counterfactual.lean",
+    "FallibleInquiry.lean",
+    "LevelCoupling.lean",
+    "Likeness.lean",
+    "Observation.lean",
+    "Response.lean",
+    "Runaway.lean",
+    "Selection.lean",
+    "Sensitivity.lean",
+    "Testing.lean",
+    "Thresholds.lean",
+    "TimedResponse.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "conditional-foundation-assessment",
+    "determinacy-up-to-likeness",
+    "sensitivity-is-the-least-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Observation",
+   "kind": "theorem",
+   "name": "Observation.Measure.registers_after",
+   "new": "Observation.Measure.couples_after",
+   "how": "theorem name, token substitution (review)",
+   "line": 483,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Observation.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "observation-is-a-route"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Parting",
+   "kind": "def",
+   "name": "Parting.worldLearner",
+   "new": "Parting.fromProcess",
+   "how": "definition (study section 7)",
+   "line": 570,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Parting.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "identification-where-runs-part"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "ReferencePlan",
+   "kind": "def",
+   "name": "ReferencePlan.registered",
+   "new": "ReferencePlan.alikeOnInstalled",
+   "how": "definition (study section 7)",
+   "line": 357,
+   "clash": false,
+   "lean_files": 38,
+   "lean_file_names": [
+    "Becoming.lean",
+    "Branching.lean",
+    "Closing.lean",
+    "Context.lean",
+    "ContextualRuns.lean",
+    "ContinuingRevision.lean",
+    "ContinuingRuns.lean",
+    "Description.lean",
+    "Diagonal.lean",
+    "DiagonalRuns.lean",
+    "Distinguishing.lean",
+    "ExactRecordRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "consequence-revised-reference-plan"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Response",
+   "kind": "def",
+   "name": "Flow.RespondsThroughRegistration",
+   "new": "Flow.RespondsThroughCoupling",
+   "how": "definition (study section 7)",
+   "line": 112,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Counterfactual.lean",
+    "FallibleInquiry.lean",
+    "Response.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "comparison-where-the-rest-responds",
+    "counterfactual-is-the-course"
+   ],
+   "chapter": 2
+  },
+  {
+   "module": "Response",
+   "kind": "theorem",
+   "name": "Flow.withinResponse_iff_registration",
+   "new": "Flow.withinResponse_iff_coupling",
+   "how": "theorem name, token substitution (review)",
+   "line": 135,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Response.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "comparison-where-the-rest-responds"
+   ],
+   "chapter": 2
+  },
+  {
+   "module": "Response",
+   "kind": "theorem",
+   "name": "Flow.withinResponse_supportOnly_iff",
+   "new": "Flow.withinResponse_thresholdOnly_iff",
+   "how": "theorem name, token substitution (review)",
+   "line": 168,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Response.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "comparison-where-the-rest-responds"
+   ],
+   "chapter": 2
+  },
+  {
+   "module": "Response",
+   "kind": "theorem",
+   "name": "Trophic.responds_through_registration",
+   "new": "Trophic.responds_through_coupling",
+   "how": "theorem name, token substitution (review)",
+   "line": 355,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Response.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "comparison-where-the-rest-responds"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Revision",
+   "kind": "def",
+   "name": "Revising.registration",
+   "new": "Revising.linkProcess",
+   "how": "definition (study section 7)",
+   "line": 277,
+   "clash": false,
+   "lean_files": 49,
+   "lean_file_names": [
+    "Becoming.lean",
+    "ContactCourses.lean",
+    "Contacts.lean",
+    "Context.lean",
+    "ContextualRuns.lean",
+    "Copying.lean",
+    "Counterfactual.lean",
+    "Coupling.lean",
+    "Courses.lean",
+    "Description.lean",
+    "Diagonal.lean",
+    "DiagonalRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-under-registration-revision"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Runaway",
+   "kind": "theorem",
+   "name": "Web.registersAlike_raise",
+   "new": "Web.alikeThrough_raise",
+   "how": "theorem name, token substitution (review)",
+   "line": 152,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Runaway.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "runaway-distance-unregistered"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Runaway",
+   "kind": "theorem",
+   "name": "Web.observed_raise_registers",
+   "new": "Web.observed_raise_couples",
+   "how": "theorem name, token substitution (review)",
+   "line": 161,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Runaway.lean",
+    "Seeking.lean",
+    "Thresholds.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "runaway-distance-unregistered",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Runaway",
+   "kind": "theorem",
+   "name": "SupportDrawn.break_unregistered",
+   "new": "SupportDrawn.break_uncoupled",
+   "how": "theorem name, token substitution (review)",
+   "line": 229,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Runaway.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "runaway-distance-unregistered"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Web.RegistersAlike.trans",
+   "new": "Web.AlikeThrough.trans",
+   "how": "theorem name, token substitution (review)",
+   "line": 148,
+   "clash": false,
+   "lean_files": 212,
+   "lean_file_names": [
+    "Admission.lean",
+    "Assurance.lean",
+    "Attraction.lean",
+    "AttractionRuns.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Bridge.lean",
+    "CandidateRuns.lean",
+    "Capture.lean",
+    "Change.lean",
+    "Closing.lean",
+    "Composition.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Web.RegistersAlikeUpTo.trans",
+   "new": "Web.AlikeThroughUpTo.trans",
+   "how": "theorem name, token substitution (review)",
+   "line": 154,
+   "clash": false,
+   "lean_files": 212,
+   "lean_file_names": [
+    "Admission.lean",
+    "Assurance.lean",
+    "Attraction.lean",
+    "AttractionRuns.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Bridge.lean",
+    "CandidateRuns.lean",
+    "Capture.lean",
+    "Change.lean",
+    "Closing.lean",
+    "Composition.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Web.RegistersAlikeAll.refl",
+   "new": "Web.AlikeThroughAll.refl",
+   "how": "theorem name, token substitution (review)",
+   "line": 159,
+   "clash": false,
+   "lean_files": 47,
+   "lean_file_names": [
+    "Admission.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Bridge.lean",
+    "Change.lean",
+    "Closing.lean",
+    "Composition.lean",
+    "Contacts.lean",
+    "Dependence.lean",
+    "Description.lean",
+    "Feedback.lean",
+    "Feeding.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Web.RegistersAlikeAll.symm",
+   "new": "Web.AlikeThroughAll.symm",
+   "how": "theorem name, token substitution (review)",
+   "line": 163,
+   "clash": false,
+   "lean_files": 200,
+   "lean_file_names": [
+    "Admission.lean",
+    "Assurance.lean",
+    "Attraction.lean",
+    "AttractionRuns.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Bridge.lean",
+    "Capture.lean",
+    "Change.lean",
+    "Closing.lean",
+    "Composition.lean",
+    "CompositionBridge.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Web.RegistersAlikeAll.trans",
+   "new": "Web.AlikeThroughAll.trans",
+   "how": "theorem name, token substitution (review)",
+   "line": 168,
+   "clash": false,
+   "lean_files": 212,
+   "lean_file_names": [
+    "Admission.lean",
+    "Assurance.lean",
+    "Attraction.lean",
+    "AttractionRuns.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Bridge.lean",
+    "CandidateRuns.lean",
+    "Capture.lean",
+    "Change.lean",
+    "Closing.lean",
+    "Composition.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Web.belief_selects",
+   "new": "Web.class_selects",
+   "how": "theorem name, token substitution (review)",
+   "line": 174,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Selection.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Web.SelectsThrough.refutes_iff",
+   "new": "Web.SelectsThrough.excludes_iff",
+   "how": "theorem name, token substitution (review)",
+   "line": 194,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Selection.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Flow.unselected_beyond_registration",
+   "new": "Flow.unselected_beyond_coupling",
+   "how": "theorem name, token substitution (review)",
+   "line": 310,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Selection.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "selection-through-registration",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 2
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Flow.unscored_beyond_registration",
+   "new": "Flow.unscored_beyond_coupling",
+   "how": "theorem name, token substitution (review)",
+   "line": 321,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Selection.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Flow.unselected_beyond_registration_all",
+   "new": "Flow.unselected_beyond_coupling_all",
+   "how": "theorem name, token substitution (review)",
+   "line": 333,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Selection.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Selection",
+   "kind": "theorem",
+   "name": "Flow.unselected_beyond_registration_responsive",
+   "new": "Flow.unselected_beyond_coupling_responsive",
+   "how": "theorem name, token substitution (review)",
+   "line": 346,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Selection.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "SelectionRuns",
+   "kind": "theorem",
+   "name": "SelectionRuns.selects_through_registration",
+   "new": "SelectionRuns.selects_through_coupling",
+   "how": "theorem name, token substitution (review)",
+   "line": 110,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "SelectionRuns.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "selection-through-a-model-of-the-options"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "supportOnly",
+   "new": "thresholdOnly",
+   "how": "definition (study section 7)",
+   "line": 146,
+   "clash": false,
+   "lean_files": 4,
+   "lean_file_names": [
+    "Response.lean",
+    "Runaway.lean",
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "comparison-where-the-rest-responds",
+    "subthreshold-registration",
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Web.RegistersAlike",
+   "new": "Web.AlikeThrough",
+   "how": "definition (study section 7)",
+   "line": 180,
+   "clash": false,
+   "lean_files": 8,
+   "lean_file_names": [
+    "FallibleInquiry.lean",
+    "LevelCoupling.lean",
+    "Response.lean",
+    "Revision.lean",
+    "Runaway.lean",
+    "Selection.lean",
+    "Testing.lean",
+    "TimedResponse.lean"
+   ],
+   "records": 6,
+   "record_ids": [
+    "counterfactual-is-the-course",
+    "runaway-distance-unregistered",
+    "selection-through-registration",
+    "subthreshold-registration",
+    "testing-within-registration",
+    "where-a-level-couples"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Web.RegistersAlikeUpTo",
+   "new": "Web.AlikeThroughUpTo",
+   "how": "definition (study section 7)",
+   "line": 184,
+   "clash": false,
+   "lean_files": 9,
+   "lean_file_names": [
+    "Counterfactual.lean",
+    "FallibleInquiry.lean",
+    "Learning.lean",
+    "Response.lean",
+    "Revision.lean",
+    "Runaway.lean",
+    "Selection.lean",
+    "Testing.lean",
+    "TimedResponse.lean"
+   ],
+   "records": 8,
+   "record_ids": [
+    "comparison-where-the-rest-responds",
+    "counterfactual-is-the-course",
+    "generalization-through-lumping",
+    "loops-within-what-a-law-reads",
+    "selection-through-registration",
+    "subthreshold-registration",
+    "testing-within-registration",
+    "what-a-law-of-the-whole-and-no-part-takes"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Web.Refutes",
+   "new": "Web.Excludes",
+   "how": "definition (study section 7)",
+   "line": 190,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "selection-through-registration",
+    "testing-within-registration",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 2
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Web.RefutesWithin",
+   "new": "Web.ExcludesWithin",
+   "how": "definition (study section 7)",
+   "line": 196,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Web.Registers",
+   "new": "Web.CoupledInto",
+   "how": "definition (study section 7)",
+   "line": 204,
+   "clash": false,
+   "lean_files": 12,
+   "lean_file_names": [
+    "Counterfactual.lean",
+    "FallibleInquiry.lean",
+    "LevelCoupling.lean",
+    "Likeness.lean",
+    "Observation.lean",
+    "Response.lean",
+    "Runaway.lean",
+    "Selection.lean",
+    "Sensitivity.lean",
+    "Testing.lean",
+    "Thresholds.lean",
+    "TimedResponse.lean"
+   ],
+   "records": 10,
+   "record_ids": [
+    "comparison-where-the-rest-responds",
+    "counterfactual-is-the-course",
+    "loops-within-what-a-law-reads",
+    "observation-is-a-route",
+    "runaway-distance-unregistered",
+    "selection-through-registration",
+    "sensitivity-is-the-least-registration",
+    "subthreshold-registration",
+    "testing-within-registration",
+    "where-a-level-couples"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Web.Belief",
+   "new": "Web.ClassThrough",
+   "how": "definition (study section 7)",
+   "line": 208,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Inquiry.lean",
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "selection-through-registration",
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Web.RegistersAlikeAll",
+   "new": "Web.AlikeThroughAll",
+   "how": "definition (study section 7)",
+   "line": 213,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "selection-through-registration",
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Web.RefutesBy",
+   "new": "Web.ExcludesBy",
+   "how": "definition (study section 7)",
+   "line": 218,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.RegistersAlike.refl",
+   "new": "Web.AlikeThrough.refl",
+   "how": "theorem name, token substitution (review)",
+   "line": 231,
+   "clash": false,
+   "lean_files": 47,
+   "lean_file_names": [
+    "Admission.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Bridge.lean",
+    "Change.lean",
+    "Closing.lean",
+    "Composition.lean",
+    "Contacts.lean",
+    "Dependence.lean",
+    "Description.lean",
+    "Feedback.lean",
+    "Feeding.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.RegistersAlike.symm",
+   "new": "Web.AlikeThrough.symm",
+   "how": "theorem name, token substitution (review)",
+   "line": 235,
+   "clash": false,
+   "lean_files": 200,
+   "lean_file_names": [
+    "Admission.lean",
+    "Assurance.lean",
+    "Attraction.lean",
+    "AttractionRuns.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Bridge.lean",
+    "Capture.lean",
+    "Change.lean",
+    "Closing.lean",
+    "Composition.lean",
+    "CompositionBridge.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.RegistersAlikeUpTo.symm",
+   "new": "Web.AlikeThroughUpTo.symm",
+   "how": "theorem name, token substitution (review)",
+   "line": 240,
+   "clash": false,
+   "lean_files": 200,
+   "lean_file_names": [
+    "Admission.lean",
+    "Assurance.lean",
+    "Attraction.lean",
+    "AttractionRuns.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Bridge.lean",
+    "Capture.lean",
+    "Change.lean",
+    "Closing.lean",
+    "Composition.lean",
+    "CompositionBridge.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.RegistersAlikeUpTo.earlier",
+   "new": "Web.AlikeThroughUpTo.earlier",
+   "how": "theorem name, token substitution (review)",
+   "line": 245,
+   "clash": false,
+   "lean_files": 54,
+   "lean_file_names": [
+    "Assurance.lean",
+    "Becoming.lean",
+    "Boundaries.lean",
+    "Branching.lean",
+    "Bridge.lean",
+    "Change.lean",
+    "Context.lean",
+    "Countdown.lean",
+    "Courses.lean",
+    "CrossSituational.lean",
+    "Dependence.lean",
+    "DependenceWebs.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.RegistersAlikeUpTo.of_obs",
+   "new": "Web.AlikeThroughUpTo.of_obs",
+   "how": "theorem name, token substitution (review)",
+   "line": 251,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.registersAlikeUpTo_of_agree",
+   "new": "Web.alikeThroughUpTo_of_agree",
+   "how": "theorem name, token substitution (review)",
+   "line": 256,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.observed_level_registers",
+   "new": "Web.observed_level_couples",
+   "how": "theorem name, token substitution (review)",
+   "line": 285,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Runaway.lean",
+    "Testing.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "runaway-distance-unregistered",
+    "testing-within-registration"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.Refutes.not_of_alike",
+   "new": "Web.Excludes.not_of_alike",
+   "how": "theorem name, token substitution (review)",
+   "line": 291,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "testing-within-registration",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.Refutes.not_meets",
+   "new": "Web.Excludes.not_meets",
+   "how": "theorem name, token substitution (review)",
+   "line": 296,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.Refutes.later",
+   "new": "Web.Excludes.later",
+   "how": "theorem name, token substitution (review)",
+   "line": 301,
+   "clash": false,
+   "lean_files": 99,
+   "lean_file_names": [
+    "Admission.lean",
+    "Attraction.lean",
+    "Becoming.lean",
+    "Branching.lean",
+    "Change.lean",
+    "Closing.lean",
+    "Continuation.lean",
+    "Counting.lean",
+    "Coupling.lean",
+    "CouplingTraces.lean",
+    "CourseWorlds.lean",
+    "Courses.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.Refutes.widen",
+   "new": "Web.Excludes.widen",
+   "how": "theorem name, token substitution (review)",
+   "line": 306,
+   "clash": false,
+   "lean_files": 7,
+   "lean_file_names": [
+    "Dissipation.lean",
+    "Listing.lean",
+    "Regions.lean",
+    "Selection.lean",
+    "Significance.lean",
+    "Testing.lean",
+    "TransactionTracesInherited.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.Refutes.not_of_extension",
+   "new": "Web.Excludes.not_of_extension",
+   "how": "theorem name, token substitution (review)",
+   "line": 311,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.refutes_iff_refutesWithin_all",
+   "new": "Web.excludes_iff_excludesWithin_all",
+   "how": "theorem name, token substitution (review)",
+   "line": 333,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.refutesWithin_iff_conjunction",
+   "new": "Web.excludesWithin_iff_conjunction",
+   "how": "theorem name, token substitution (review)",
+   "line": 338,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "testing-within-registration",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 2
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.RefutesWithin.narrow",
+   "new": "Web.ExcludesWithin.narrow",
+   "how": "theorem name, token substitution (review)",
+   "line": 346,
+   "clash": false,
+   "lean_files": 13,
+   "lean_file_names": [
+    "Becoming.lean",
+    "Boundaries.lean",
+    "BoundaryFlows.lean",
+    "Courses.lean",
+    "CrossSituational.lean",
+    "Feedback.lean",
+    "InspectionProcessesInherited.lean",
+    "Interdependence.lean",
+    "ProbeRunsInherited.lean",
+    "ReceptionTracesInherited.lean",
+    "Regions.lean",
+    "Significance.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.RefutesWithin.not_meets",
+   "new": "Web.ExcludesWithin.not_meets",
+   "how": "theorem name, token substitution (review)",
+   "line": 353,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.RefutesBy.of_member",
+   "new": "Web.ExcludesBy.of_member",
+   "how": "theorem name, token substitution (review)",
+   "line": 359,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.belief_refutes_iff",
+   "new": "Web.class_excludes_iff",
+   "how": "theorem name, token substitution (review)",
+   "line": 364,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.belief_judge_iff",
+   "new": "Web.class_judge_iff",
+   "how": "theorem name, token substitution (review)",
+   "line": 373,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "testing-within-registration",
+    "wisdom-root-part-one"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.belief_judge_later",
+   "new": "Web.class_judge_later",
+   "how": "theorem name, token substitution (review)",
+   "line": 379,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.belief_judge_widen",
+   "new": "Web.class_judge_widen",
+   "how": "theorem name, token substitution (review)",
+   "line": 387,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Web.registersAlike_iff_of_levelsAtLeast",
+   "new": "Web.alikeThrough_iff_of_levelsAtLeast",
+   "how": "theorem name, token substitution (review)",
+   "line": 407,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "subthreshold-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Flow.RegisteredFrom",
+   "new": "Flow.CoupledFrom",
+   "how": "definition (study section 7)",
+   "line": 425,
+   "clash": false,
+   "lean_files": 4,
+   "lean_file_names": [
+    "FallibleInquiry.lean",
+    "Response.lean",
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "comparison-where-the-rest-responds",
+    "selection-through-registration",
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Flow.WithinRegistration",
+   "new": "Flow.WithinCoupling",
+   "how": "definition (study section 7)",
+   "line": 430,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Response.lean",
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "comparison-where-the-rest-responds",
+    "selection-through-registration",
+    "testing-within-registration"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Testing",
+   "kind": "def",
+   "name": "Flow.RegisteredFromEither",
+   "new": "Flow.CoupledFromEither",
+   "how": "definition (study section 7)",
+   "line": 434,
+   "clash": false,
+   "lean_files": 4,
+   "lean_file_names": [
+    "Response.lean",
+    "Selection.lean",
+    "Testing.lean",
+    "TimedResponse.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "comparison-where-the-rest-responds",
+    "selection-through-registration",
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Flow.refutes_tail_within",
+   "new": "Flow.excludes_tail_within",
+   "how": "theorem name, token substitution (review)",
+   "line": 468,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Seeking.lean",
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 1
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Flow.withinRegistration_of_withinInfluence",
+   "new": "Flow.withinCoupling_of_withinInfluence",
+   "how": "theorem name, token substitution (review)",
+   "line": 476,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Flow.withinRegistration_supportOnly",
+   "new": "Flow.withinCoupling_thresholdOnly",
+   "how": "theorem name, token substitution (review)",
+   "line": 481,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "selection-through-registration",
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Flow.withinRegistration_mono_obs",
+   "new": "Flow.withinCoupling_mono_obs",
+   "how": "theorem name, token substitution (review)",
+   "line": 489,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Flow.withinRegistration_mono_flow",
+   "new": "Flow.withinCoupling_mono_flow",
+   "how": "theorem name, token substitution (review)",
+   "line": 495,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Flow.beyond_registration",
+   "new": "Flow.beyond_coupling",
+   "how": "theorem name, token substitution (review)",
+   "line": 502,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Flow.alike_within_registration",
+   "new": "Flow.alike_within_coupling",
+   "how": "theorem name, token substitution (review)",
+   "line": 593,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Response.lean",
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "selection-through-registration",
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Flow.unregistered_beyond_registration",
+   "new": "Flow.uncoupled_beyond_coupling",
+   "how": "theorem name, token substitution (review)",
+   "line": 634,
+   "clash": false,
+   "lean_files": 3,
+   "lean_file_names": [
+    "Seeking.lean",
+    "Selection.lean",
+    "Testing.lean"
+   ],
+   "records": 2,
+   "record_ids": [
+    "selection-through-registration",
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Flow.belief_judge_beyond",
+   "new": "Flow.class_judge_beyond",
+   "how": "theorem name, token substitution (review)",
+   "line": 685,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Prey.registers_taking",
+   "new": "Prey.couples_taking",
+   "how": "theorem name, token substitution (review)",
+   "line": 1287,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Stationary.model_refuted",
+   "new": "Stationary.model_excluded",
+   "how": "theorem name, token substitution (review)",
+   "line": 1450,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Clearing.registers_resource",
+   "new": "Clearing.couples_resource",
+   "how": "theorem name, token substitution (review)",
+   "line": 1468,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 0,
+   "record_ids": [],
+   "chapter": 0
+  },
+  {
+   "module": "Testing",
+   "kind": "theorem",
+   "name": "Clearing.model_idles_registration",
+   "new": "Clearing.model_idles_coupling",
+   "how": "theorem name, token substitution (review)",
+   "line": 1584,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "Testing.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "testing-within-registration"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "TimedResponse",
+   "kind": "def",
+   "name": "TimedResponse.RegistersAt",
+   "new": "TimedResponse.CoupledIntoAt",
+   "how": "definition (study section 7)",
+   "line": 28,
+   "clash": false,
+   "lean_files": 2,
+   "lean_file_names": [
+    "Propagation.lean",
+    "TimedResponse.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "how-much-difference-arrives"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "TimedResponse",
+   "kind": "theorem",
+   "name": "TimedResponse.registersAt_registers",
+   "new": "TimedResponse.coupledIntoAt_coupledInto",
+   "how": "theorem name, token substitution (review)",
+   "line": 30,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "TimedResponse.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "timely-response-necessity"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "TimedResponse",
+   "kind": "theorem",
+   "name": "TimedResponse.registration_of_levels",
+   "new": "TimedResponse.coupling_of_levels",
+   "how": "theorem name, token substitution (review)",
+   "line": 81,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "TimedResponse.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "timely-response-necessity"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "TimedResponse",
+   "kind": "theorem",
+   "name": "TimedResponse.registration_alike_before",
+   "new": "TimedResponse.coupling_alike_before",
+   "how": "theorem name, token substitution (review)",
+   "line": 162,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "TimedResponse.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "timely-response-necessity"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "TimedResponse",
+   "kind": "theorem",
+   "name": "TimedResponse.touches_registered_edge",
+   "new": "TimedResponse.touches_coupled_edge",
+   "how": "theorem name, token substitution (review)",
+   "line": 197,
+   "clash": false,
+   "lean_files": 1,
+   "lean_file_names": [
+    "TimedResponse.lean"
+   ],
+   "records": 1,
+   "record_ids": [
+    "timely-response-necessity"
+   ],
+   "chapter": 0
+  },
+  {
+   "module": "Unfolding",
+   "kind": "def",
+   "name": "Law.registered",
+   "new": "Law.frameBy",
+   "how": "definition (study section 7)",
+   "line": 817,
+   "clash": false,
+   "lean_files": 38,
+   "lean_file_names": [
+    "Becoming.lean",
+    "Branching.lean",
+    "Closing.lean",
+    "Context.lean",
+    "ContextualRuns.lean",
+    "ContinuingRevision.lean",
+    "ContinuingRuns.lean",
+    "Description.lean",
+    "Diagonal.lean",
+    "DiagonalRuns.lean",
+    "Distinguishing.lean",
+    "ExactRecordRuns.lean"
+   ],
+   "records": 3,
+   "record_ids": [
+    "configurations-alike-by-relation",
+    "identification-where-bounded",
+    "the-split-that-makes-sense"
+   ],
+   "chapter": 0
+  }
+ ]
+}
