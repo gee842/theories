@@ -201,6 +201,8 @@ The question is whether Ren's "agree with other readings" of 16 October ratifies
 - **Readings of what one of Ren's phrases means need Ren's word on that phrase**, because his texts are the evidence of its sense. These are the D-items whose decisions quote him: D1, D2, D5, D11, D13–D16, D19–D23, D34, D35, D38, and the 识 clauses of D37 and D39, among others. Part A takes the central four. The rest can be read in one pass: phrase, reading, yes or correction.
 - **Readings of checked theorems need no ratification.** Argument and review settle them, and a better argument revises them. They keep their [AI reading, Dn] label. Ren's 17 October directive already says this.
 
+The one pass is ready as a sheet: [PHRASE-READINGS-PENDING-REN](PHRASE-READINGS-PENDING-REN.md), 18 October 2026. It gives 20 items, each with Ren's words and their source, the current reading and its reason, and room for yes or a correction. It sets D34 aside, because Ren's own words decide it, and adds the readings of his terms that "among others" left unnamed: D3, D4, D12, D26, D27, D29 and D30.
+
 ## D. Waiting on Ren, not readings
 
 - `IdealWarrant`'s join under a structural name (board rule 8).
