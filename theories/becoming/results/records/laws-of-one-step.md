@@ -138,6 +138,7 @@ Aliases: `Becoming.Flow.BalancesOn`, `Becoming.Flow.balances_iff_on`, `Becoming.
 - 17 October 2026, wording of the public fields: attributions of decisions to Ren replaced by stating that the decisions lie outside this result, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Counting.lean, counting_free now cites counting_laws. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
+- 18 October 2026, L1 (Becoming.Unrolling): THE-THEORY-OF-BECOMING.md re-pointed after L1 added the bullets on what an extrapolation given nothing fixes, revised the "Learning" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.
 - 52 rebinding entries (2026-10-11 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](laws-of-one-step.json).
 
 <a id="earlier-text--早期文本"></a>

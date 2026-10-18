@@ -251,7 +251,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
+      "sha256": "16fd456e8b33ed8e49a880117517b8bdf15395523b0612dbc25f733b22da0097",
       "declarations": []
     },
     {
@@ -493,6 +493,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Learning.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, L1 (Becoming.Unrolling): THE-THEORY-OF-BECOMING.md re-pointed after L1 added the bullets on what an extrapolation given nothing fixes, revised the \"Learning\" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，L1（Becoming.Unrolling）：L1 增加关于不被给予任何东西的外推所确定者的条目、修订第 8.2 节“学习”行与第 9 节回执及连通性文字后，THE-THEORY-OF-BECOMING.md 重新指向；重新指向前已读。论断不变。"
     }
   ]
 }

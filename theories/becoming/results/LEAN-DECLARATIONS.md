@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 180 | 7,636 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 181 | 7,651 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 39 | 601 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -842,6 +842,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [UnfoldingPreservation.lean](lean-declarations/core.md#module-cc65e367cbd3) | Generative core and relational structure |
 | [UnitTraces.lean](lean-declarations/becoming-bridge.md#module-f540f75e3d08) | Becoming bridge |
 | [Units.lean](lean-declarations/becoming-core.md#module-01cb566a64b4) | Becoming pure core |
+| [Unrolling.lean](lean-declarations/becoming-core.md#module-d5d7e51b6c17) | Becoming pure core |
 | [UpdaterConsequences.lean](lean-declarations/ethics.md#module-290c62292425) | Normative grounding and generative direction |
 | [UpdaterFormation.lean](lean-declarations/shared.md#module-98344ea49fe4) | Organizational formation through revisable evaluation |
 | [ValuationBridges.lean](lean-declarations/valuation.md#module-f496d68a278b) | Valuation development and liangzhi |

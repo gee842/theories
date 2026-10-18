@@ -174,6 +174,7 @@ import Becoming.LevelCoupling
 import Becoming.Interleavings
 import Becoming.CensusCounts
 import Becoming.CensusBinding
+import Becoming.Unrolling
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1268,6 +1269,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   balance and embodiment binding jointly, the enclosed and finite laws agreeing, and the reading
   on what stands. Each statement is its decided form in `Becoming.Counting` with the procedure
   and the pointwise condition removed.
+* `Becoming.Unrolling` (L4): what an extrapolation given nothing fixes, with no premise. Unrolled
+  on its own proposals, the extrapolation by elimination over the lasso candidates proposes, in
+  every world a list holds and from the identification bound on, the value through the map at
+  every step ahead: the prefix alone fixes the whole future through the map. A feature is
+  learnable through the map exactly where it is, from some step on along every orbit, a reading
+  of that future, and the extrapolation given the reading learns it; given nothing, no
+  extrapolation learns every learnable feature.
 * `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return

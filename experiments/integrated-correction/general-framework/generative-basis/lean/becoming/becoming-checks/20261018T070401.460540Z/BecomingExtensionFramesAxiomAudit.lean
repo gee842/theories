@@ -1,0 +1,4 @@
+import Becoming.ExtensionFrames
+#print axioms Becoming.ExtensionFrames.extension_new_relevance
+#print axioms Becoming.ExtensionFrames.survives_iff_lifted
+#print axioms Becoming.ExtensionFrames.restricted_survives

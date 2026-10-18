@@ -1,0 +1,10 @@
+import Becoming.SupportGatedWebs
+#check @Becoming.SupportGatedWebs.formation_does_not_decide
+#check @Becoming.SupportGatedWebs.own_trajectory_does_not_decide
+#check @Becoming.SupportGatedWebs.jointly_consuming
+#check @Becoming.SupportGatedWebs.escalation_consumes
+#check @Becoming.SupportGatedWebs.fluctuating_dependent
+#check @Becoming.SupportGatedWebs.fluctuating_neither
+#check @Becoming.SupportGatedWebs.pulse_levels
+#check @Becoming.SupportGatedWebs.unsupported_pulse_ends
+#check @Becoming.SupportGatedWebs.absent_dependent
