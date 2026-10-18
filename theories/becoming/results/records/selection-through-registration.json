@@ -603,7 +603,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"

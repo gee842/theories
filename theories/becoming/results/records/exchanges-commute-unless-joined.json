@@ -458,7 +458,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b",
+      "sha256": "e27a59668c5e430a8c829e8d9550b50a7e027ad318261ac335bb0286c9208aa5",
       "declarations": []
     },
     {
@@ -521,7 +521,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Order",
       "success_pointer": "/status",
       "success_value": "passed"

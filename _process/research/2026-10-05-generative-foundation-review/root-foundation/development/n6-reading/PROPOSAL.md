@@ -1,7 +1,7 @@
 # N6: the reading pass the N1 renaming left open (proposal to Ren)
 
-Board item N6, claimed in 77733b06b. Branch `n6-reading`, in its own worktree. **Nothing here is
-landed; it waits for Ren's yes.**
+Board item N6, claimed in 77733b06b. Branch `n6-reading`, in its own worktree, rebased on main at
+d4dd2a8a7 (after L1, S1, G1 and G2 landed). **Nothing here is landed; it waits for Ren's yes.**
 
 N5 (b84e722ea) renamed 175 Lean declarations to the vocabulary adopted in section 7 of the
 [naming study](../../REGISTRATION-VOCABULARY-STUDY.md) and left the prose for a reading pass. This
@@ -16,7 +16,7 @@ are not the retired one stay.
 |---|---|---|
 | Lean docstrings and comments of the Becoming package | 62 modules | 958 |
 | The chapter, English and Chinese editions, glossary included | 2 | 487 |
-| Live fields of the result records (title, statement, claim, laws, hypotheses, scope, dependencies, related, correspondence, next step) | 56 records | 1,150 |
+| Live fields of the result records (title, statement, claim, laws, hypotheses, scope, dependencies, related, correspondence, next step) | 56 records | 1,146 |
 
 Every edit is a block in [`edits/`](edits/), with its sense, applied to the base by
 [`reading_pass.py apply`](reading_pass.py), so the pass can be rerun and every block's count is
@@ -24,21 +24,38 @@ checked. Record edits are written from [`specs/records/`](specs/records/) (one f
 small group, each with its reasons in its docstring). [PROPOSAL-FULL.md](PROPOSAL-FULL.md) lists
 every block: current wording, proposed wording, sense.
 
+## On the rebase
+
+The readings were written against 77733b06b; the edits are reapplied to main's text, and every block's
+count is checked again. Where main had rewritten a sentence since, the block was read again:
+
+- The L1 landing split the chapter's bullet "Learnable exactly where a reading of the future" and
+  added the D40 reading after it. The bullet's block now stops where main's bullet stops, and the
+  D40 reading is reworded the same way, its meaning kept ("a learnable feature", "an extrapolation
+  given nothing", "what `fromLaw` is built from").
+- The G1 and G2 landings stated the gap for one's own act and the general form of favouring what
+  reaches beyond, and removed the sentences calling them open (in the chapter's §8.2 row and in
+  selection-through-registration's scope and next step). Those four blocks are dropped; main's new
+  sentences already use the adopted words.
+- [`left_on_head.py`](left_on_head.py) lists every sentence main added since 77733b06b that still
+  holds a retired word after the pass: 26, all in kept senses (Lean hypotheses, the seeking target,
+  links to result records, logical refutation, Ren's quoted words).
+
 ## By sense (study section 7)
 
 | Sense | Retired → adopted | Blocks |
 |---|---|---|
-| S2 | registers / is registered (a level reaching a formation) → **couples into** (by threshold, by level); "observes" → coupled by level; what a coupling passes → **shows**, **passes**; feedback **carries** | 869 |
+| S2 | registers / is registered (a level reaching a formation) → **couples into** (by threshold, by level); "observes" → coupled by level; what a coupling passes → **shows**, **passes**; feedback **carries** | 867 |
 | S1 | registration as a function of configurations → **map**; registered course/future → course/future **through the map**; the relation a map draws → **lumping** (归并) | 465 |
 | S7 | registrations in context → what a context **shows**, a claim **lies within** a context; a registration within what it registers → **a family of readings** within what it reads, which **says** a reading | 280 |
 | L-prefix | the record of a course → its **prefix** (前段) | 234 |
-| L-extrap | learner → **extrapolation** (外推), which **proposes** (提出) or **stays silent** (默) | 207 |
+| L-extrap | learner → **extrapolation** (外推), which **proposes** (提出) or **stays silent** (默) | 208 |
 | S3 | registers alike → **alike through g's couplings** (经 g 的耦合无别) | 155 |
 | L-elim | hypotheses → **candidates** (候选); learning by refutation → **extrapolation by elimination** (逐除外推) | 133 |
 | S5 | refutes (a web, a model, a confound) → **excludes** (排除); belief → **the class alike through g** | 115 |
-| S4 | registration closure → **coupling closure** (耦合闭包) | 103 |
+| S4 | registration closure → **coupling closure** (耦合闭包) | 100 |
 | L-miss | refuted (a proposal) → **misses** / **accords** (不合 / 相合) | 102 |
-| L-feature | target → **feature** (特征) | 74 |
+| L-feature | target → **feature** (特征) | 75 |
 | ALT | options; a model of the options → **alternatives** (备择); a **map** of them | 70 |
 | N5 | a retired Lean name left in live prose → its current name (RENAME-TABLE.json) | 57 |
 | TEXT | wording around a changed word | 44 |
@@ -70,18 +87,21 @@ every block: current wording, proposed wording, sense.
 
 - Lean: `apply` refuses any edit that reaches code (`code_of` of every changed module equals the
   base's). The core checker passed in the tree on the changed files (receipt
-  `becoming-checks/20261018T094652.463397Z`), and `check_fallible_inquiry.py` passed for
-  `Becoming.FallibleInquiry` (receipt `fallible-inquiry-checks/20261018T095146.390681Z`); records
+  `becoming-checks/20261018T101831.943492Z`), and `check_fallible_inquiry.py` passed for
+  `Becoming.FallibleInquiry` (receipt `fallible-inquiry-checks/20261018T102455.825667Z`); records
   whose proofs sit in a changed file are rebound to the receipt covering it, after reading the
   change.
 - Records: the JSON round-trips; only the live fields listed above change, and each changed
   record gets a history note saying its claim is unchanged.
-  Eleven English statements and one next step were shortened to the render's limits (300 and
-  400 characters); the shortened sentences say the same.
+  Eleven English statements were shortened to the render's limit of 300 characters; the
+  shortened sentences say the same.
 - `make research-render` and `research-check` pass on the branch (the 82 reading-drift entries are
   the base's; the argument pages and reading registers are unchanged). `research-links` reports
   692 broken links, the same count as the main checkout, none in a file the pass touches.
   `research-test` passes (170 tests).
+  The receipts of the first runs on the branch (core 20261018T094652.463397Z, FallibleInquiry
+  20261018T095146.390681Z) were for the pre-rebase bytes and now bind nothing; they stay on the
+  branch, and the integrator decides whether they land.
   Generated pages whose content depends on untracked files (the Lean inventory, file counts,
   the manifest) are left to be rendered in the main checkout at landing.
 

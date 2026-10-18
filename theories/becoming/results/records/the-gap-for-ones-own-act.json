@@ -177,7 +177,7 @@
         "Becoming.Web.selects_alike_iff",
         "Becoming.Web.separates"
       ],
-      "sha256": "3399211a1a4b5e08592f4bbdd6c5d288b14870e534def29aa447be3b33040d96"
+      "sha256": "6b82bfbdff6518183a8226f1e09e2ca3db6b5416de0f70844b19d627c8b2a9a9"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
@@ -194,7 +194,7 @@
         "Becoming.ExchangeLaw.withAct_follows",
         "Becoming.ExchangeLaw.withAct_nonanticipating"
       ],
-      "sha256": "dabb239082e3ea10b17c9d1054837c36292f01d30d05d5981435526874b4babb"
+      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T081005.105592Z/verification.json",
@@ -215,6 +215,12 @@
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
       "role": "provenance",
       "sha256": "5ed8de530711f26aac2c4e1c95741a51ccfa256f14a2d2991c6ade7d2d91113c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
+      "role": "receipt",
+      "sha256": "c13aef7429d011c0d5b511262a5600c5f78e66fd37e1fc04905b9468f1c01cab",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -227,14 +233,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T081005.105592Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T081005.105592Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"

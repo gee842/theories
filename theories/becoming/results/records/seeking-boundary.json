@@ -289,16 +289,16 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
       "role": "receipt",
-      "sha256": "81ac9c49309a8910dbbb1872e10a1062de1a0608db9e53897ece9f83b0e7c1c1",
+      "sha256": "c13aef7429d011c0d5b511262a5600c5f78e66fd37e1fc04905b9468f1c01cab",
       "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Seeking",
       "success_pointer": "/status",
       "success_value": "passed"

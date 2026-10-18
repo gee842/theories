@@ -115,12 +115,6 @@
 - The more is registered, the larger the registration closure and the smaller the gap: the law's force lies entirely in what the selector actually registers.
 + The more couples in, the larger the coupling closure and the smaller the gap: the law's force lies entirely in what actually couples into the selector.
 = S2
-- （动作只在闭包成员都不识的条件上不同）
-+ （动作只在不耦合入任何闭包成员的条件上不同）
-= S2
-- (an act differing only on conditions no member of the closure registers)
-+ (an act differing only on conditions coupled into no member of the closure)
-= S2
 - Clearing 中经清除者之识的每个选择在每一步都把清除与不清除的世界选得相同，而栖居者在前者中被终结、在后者中不然；“栖居者被终结”在任何一步都不经清除者之识（Clearing.unselected）
 + Clearing 中经清除者之耦合的每个选择在每一步都把清除与不清除的世界选得相同，而栖居者在前者中被终结、在后者中不然；“栖居者被终结”在任何一步都不经清除者的耦合（Clearing.unselected）
 = S2
@@ -138,12 +132,6 @@
 = S2
 - in Diversion every selection through the taker's registration selects the flow diverting
 + in Diversion every selection through the taker's couplings selects the flow diverting
-= S4 @next_delta/zh
-- 自身动作的缺口作为一般定理：动作只在识闭包成员都不识的条件上不同时，经其识的每个选择都看不见它；偏向伸出的一般形式：抬高所识者的部分何时必伸出识闭包之外；与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升。
-+ 自身动作的缺口作为一般定理：动作只在不耦合入任何耦合闭包成员的条件上不同时，经其耦合的每个选择都看不见它；偏向伸出的一般形式：抬高耦合入者的部分何时必伸出耦合闭包之外；与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升。
-= S4 @next_delta/en
-- The gap for one's own act as a general theorem: where an act differs only on conditions no member of the registration closure registers, every selection through it misses the act; favouring reaching beyond in general: when a part raising what registers must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.
-+ The gap for one's own act as a general theorem: where an act differs only on conditions coupled into no member of the coupling closure, every selection through couplings misses it; favouring reaching beyond in general: when a part raising what couples in must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.
 = S4
 - 读法（AI 的，依 Ren 的交托采用）：任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，对候选者的部分在选择者识闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去识闭包，只经依存、观察或他者之识合起来才合上；伸出而抬高所识者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及奖励所识。
 + 读法（AI 的，依 Ren 的交托采用）：任何由耦合入选择者者决定的选择（保留、奖励、繁殖、训练）恰及耦合入选择者的，对候选者的部分在选择者耦合闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去耦合闭包，只经依存、经水平的耦合或他者的耦合合起来才合上；伸出而抬高耦合入者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及耦合入奖励的。

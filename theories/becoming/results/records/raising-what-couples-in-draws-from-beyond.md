@@ -74,6 +74,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-17-registration-dualist-vocabulary.md](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json) | — |
 
 Aliases: `favouring what reaches beyond`, `偏向伸出`, `raising what couples in`, `抬高所耦合者`, `draws from beyond`, `取自其外`, `nothing from nothing`, `无中不生有`
 

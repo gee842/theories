@@ -264,7 +264,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b",
+      "sha256": "e27a59668c5e430a8c829e8d9550b50a7e027ad318261ac335bb0286c9208aa5",
       "declarations": []
     },
     {
@@ -286,16 +286,16 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
       "role": "receipt",
-      "sha256": "81ac9c49309a8910dbbb1872e10a1062de1a0608db9e53897ece9f83b0e7c1c1",
+      "sha256": "c13aef7429d011c0d5b511262a5600c5f78e66fd37e1fc04905b9468f1c01cab",
       "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Order",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -447,7 +447,7 @@
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
     },
     {
-      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Order.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T094652.463397Z after reading the change. The claim is unchanged."
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Order.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T101831.943492Z after reading the change. The claim is unchanged."
     }
   ]
 }

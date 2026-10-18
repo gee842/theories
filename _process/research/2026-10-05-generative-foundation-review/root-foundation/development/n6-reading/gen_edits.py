@@ -23,6 +23,13 @@ def gen(out, header, target, path, reps):
     open(out, 'w').write('\n'.join(lines) + '\n')
 
 
+# The head the readings were written against. On a later head a rule whose sentence the head has changed
+# is not applied blindly: where the head already reads the new words it is skipped, otherwise it stops
+# for a new reading.
+READ_AT = '77733b06b'
+SKIPPED = []
+
+
 def gen_records(out, header, recs):
     """recs = [(stem, [(sense, old, new), ...]), ...]: replacements in a record's live strings, in order,
     counted on the base record as they apply (reading_pass.py apply rechecks the counts)."""
@@ -31,6 +38,8 @@ def gen_records(out, header, recs):
     lines = ['# ' + header]
     for stem, reps in recs:
         d = json.loads(base_text(RECORDS + stem + '.json'))
+        r = subprocess.run(['git', 'show', READ_AT + ':' + RECORDS + stem + '.json'], capture_output=True, text=True)
+        d0 = json.loads(r.stdout) if r.returncode == 0 else None
         lines.append('### record:' + stem)
         for sense, a, b in reps:
             if a.startswith('@'):
@@ -40,11 +49,19 @@ def gen_records(out, header, recs):
                 x = d
                 for k in keys[:-1]:
                     x = x[k]
+                x0 = d0
+                for k in keys[:-1]:
+                    x0 = x0[k]
+                if x[keys[-1]] != x0[keys[-1]]:
+                    SKIPPED.append((stem, a + ('' if x[keys[-1]] == b else '  [head changed the field]'))); continue
                 pth, a = '/'.join(map(str, keys)), x[keys[-1]]
                 x[keys[-1]] = b
                 lines.append('= ' + sense + ' @' + pth)
             else:
                 n = count_live(d, a)
+                if n == 0 and count_live(d0, a) >= 1:
+                    # the head no longer has the sentence: read what it has instead (left_on_head.py)
+                    SKIPPED.append((stem, a + ('' if count_live(d, b) else '  [new words absent]'))); continue
                 assert n >= 1, (stem, 'not found', a)
                 d = live_strings(d, lambda s: s.replace(a, b))
                 lines.append('= ' + sense + (' %d' % n if n > 1 else ''))

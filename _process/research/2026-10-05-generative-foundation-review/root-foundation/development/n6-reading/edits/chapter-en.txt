@@ -379,8 +379,11 @@
 - In every world a list holds, from the identification bound on, it then proposes
 + In every world a list holds, from `Becoming.Identification`'s bound on, it then proposes
 = L-built
-- - *Learnable exactly where a reading of the future.* A target is learnable exactly where some reading of futures, respecting values at each step, is the target from some step on along every orbit (`Learnable.learnable_iff_reading`). The reading on the necessity side is given the world, the law and the target (`Learnable.fromWorld`): a configuration as many steps on as the list is long returns, and returning configurations whose targets agree from some step on have equal targets (`Learnable.eq_of_returns`). On the sufficiency side the learner given only the reading learns the target (`Learnable.reading_rests_from`). So what `fromLaw` is given beyond the prefix
-+ - *Learnable exactly where a reading of the future.* A feature is learnable exactly where some reading of futures, respecting values at each step, is the feature from some step on along every orbit (`Learnable.learnable_iff_reading`). The reading on the necessity side is built from the list, the law and the feature (`Learnable.fromWorld`): a configuration as many steps on as the list is long returns, and returning configurations whose features agree from some step on have equal features (`Learnable.eq_of_returns`). On the sufficiency side the extrapolation given only the reading learns the feature (`Learnable.reading_rests_from`). So what `fromLaw` is built from beyond the prefix
+- - *Learnable exactly where a reading of the future.* A target is learnable exactly where some reading of futures, respecting values at each step, is the target from some step on along every orbit (`Learnable.learnable_iff_reading`). The reading on the necessity side is given the world, the law and the target (`Learnable.fromWorld`): a configuration as many steps on as the list is long returns, and returning configurations whose targets agree from some step on have equal targets (`Learnable.eq_of_returns`). On the sufficiency side the learner given only the reading learns the target (`Learnable.reading_rests_from`).
++ - *Learnable exactly where a reading of the future.* A feature is learnable exactly where some reading of futures, respecting values at each step, is the feature from some step on along every orbit (`Learnable.learnable_iff_reading`). The reading on the necessity side is built from the list, the law and the feature (`Learnable.fromWorld`): a configuration as many steps on as the list is long returns, and returning configurations whose features agree from some step on have equal features (`Learnable.eq_of_returns`). On the sufficiency side the extrapolation given only the reading learns the feature (`Learnable.reading_rests_from`).
+= L-feature+L-extrap the D40 reading on the head, reworded with its meaning kept
+- what a learnable target adds to it is a reading of that future, which a learner given nothing does not have. So what `fromLaw` is given beyond the prefix serves only as a reading of a future the prefix already fixes. The witness that no learner given nothing rests on every learnable target is elementary;
++ what a learnable feature adds to it is a reading of that future, which an extrapolation given nothing does not have. So what `fromLaw` is built from beyond the prefix serves only as a reading of a future the prefix already fixes. The witness that no extrapolation given nothing rests on every learnable feature is elementary;
 = L-feature
 - - *Given nothing, not every learnable target.* No learner given nothing rests on every learnable target: in a one-configuration world the targets `true` and `false` are each learnable,
 + - *Given nothing, not every learnable feature.* No extrapolation given nothing rests on every learnable feature: in a one-configuration world the features `true` and `false` are each learnable,
@@ -450,9 +453,6 @@
 = S2
 - another's registration as a route
 + another's couplings as a route
-= S4
-- where an act differs only on conditions no member of the registration closure registers, every selection through it misses the act
-+ where an act differs only on conditions coupled into no member of the coupling closure, every selection through it misses the act
 = S2
 - Testing`'s registration as the projection,
 + Testing`'s couplings as the projection,

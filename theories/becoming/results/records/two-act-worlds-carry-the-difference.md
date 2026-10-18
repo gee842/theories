@@ -108,7 +108,7 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
-| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json) | — |
 
 Aliases: `the difference between two acts' worlds`, `两种作为之世界的差别`, `two-act worlds carry the difference`, `两种作为的世界携带差别`, `worlds of two acts`, `两种作为的世界`, `world of an act`, `一个作为的世界`, `formed world`, `形成的世界`, `threshold world`, `阈世界`, `schedule world`, `时程世界`
 

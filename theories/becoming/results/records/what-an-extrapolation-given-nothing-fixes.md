@@ -65,7 +65,7 @@ The chapter's open programme (section 8.2, Learning) named "a learner given noth
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
-| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json) | — |
 
 Aliases: `what an extrapolation given nothing fixes`, `不被给予任何东西的外推所确定者`, `unrolling`, `展开`, `learnable exactly where a reading of the future`, `可学恰当是未来的读法`, `given nothing, not every learnable feature`, `不被给予任何东西，并非每个可学特征`
 
