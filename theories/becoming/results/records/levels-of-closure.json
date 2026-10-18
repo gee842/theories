@@ -477,7 +477,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35bfc7365ed757531a0f4ffe614cabc4124fae0240e2b08ac4ddefe7bac68efa"
+      "sha256": "58c5a0c94a6c147c56cab0bce96d287bc1f0aafadcf7f3bdd38b94297b1bc56b"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -820,6 +820,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): the text names the core modules that now hold the declarations it cites (Becoming.Lifting, Becoming.EdgeClosure, Becoming.RenewalFlow). Declarations moved with their full Lean names, statements and proofs unchanged: withinClosure_iff_closure, Closure from Bridge.lean to EdgeClosure.lean. Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean, Feedback.lean). The claim is unchanged. THE-THEORY-OF-BECOMING.md re-pointed after reading the change: the reference was already stale at base, where the checker found no change in the sections this record cites; F1 changes section 2's closure sentence, which states this record's closure and now names Becoming.EdgeClosure.",
       "zh": "2026年10月18日，F1 桥接折叠（Ren：“so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?”，然后“please do all”）：正文改为指名现在承载所引声明的核心模块（Becoming.Lifting、Becoming.EdgeClosure、Becoming.RenewalFlow）。声明连同完整 Lean 名称、陈述与证明原样移入核心模块；读过改动后重新绑定或重新指向。论断不变。THE-THEORY-OF-BECOMING.md 读过改动后重新指向：第 2 节的闭包句改为指名 Becoming.EdgeClosure。"
+    },
+    {
+      "en": "18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

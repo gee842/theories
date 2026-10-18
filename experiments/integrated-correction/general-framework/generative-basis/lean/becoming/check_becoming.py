@@ -69,7 +69,7 @@ import check as audit_support  # noqa: E402
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.ClassifiedBeliefProcesses", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
-        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Histories", "Becoming.Branching", "Becoming.Listing", "Becoming.Order", "Becoming.OrderNormal", "Becoming.OneStep", "Becoming.Weighted", "Becoming.Transmission", "Becoming.Succession", "Becoming.Attraction",
+        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.LawAlongRun", "Becoming.Histories", "Becoming.Branching", "Becoming.Listing", "Becoming.Order", "Becoming.OrderNormal", "Becoming.OneStep", "Becoming.Weighted", "Becoming.Transmission", "Becoming.Succession", "Becoming.Attraction",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Stock", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Persistence", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
@@ -1549,6 +1549,13 @@ SCOPE = (
     "couples in rises holds only on flows "
     "reaching beyond the coupling; Diversion is an instance, and its supplying flow shows the "
     "premise binds. "
+    "LawAlongRun: some determined process on a description admits a run's steps read through it "
+    "before a step exactly where two of them from configurations alike under it, by the same move, "
+    "reach configurations alike under it, the record read through it being the least candidate and "
+    "once failed failing from then on; through the identity at every step this is the history law; "
+    "a run can be consistent where the process does not go alike; the image is an exact finite-path "
+    "projection exactly where configurations alike match each other's steps, which going alike does "
+    "not give. "
     "SelectionPool: a pool's coupling closure is the union of its members'; with the rest fixed, "
     "every selection through the pooled coupling of a group within it selects a part beyond it "
     "alike; some pooled selection separates two histories exactly when the members do not all "

@@ -37,8 +37,6 @@
 
 - Does not show which projection an actual unfolding carries a law through, that any formation forms or uses a projection, or how a rule comes to change.
 - A law means a determined process; structured undetermined laws and probabilities are not treated.
-- The relation to GenerativeCore's exact projection of finite paths (projection_exact_iff) is not stated.
-- The state-law criterion ranges over all configurations; the iff along one run is not stated. Witness: `Becoming.adaptive_state_law_iff`.
 - Systems whose rule update depends on the move are not treated.
 - The main theorems are near-definitional: what they add is the characterization and the least candidate.
 - The reading of mechanism takes only the aspect “a law at a description” of the philosophy-of-science notion.
@@ -59,7 +57,7 @@ Canonical source: [Mechanism.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-A constructive iff along one run: some determined process admits the steps read through π up to a step exactly where two steps alike under π with the same move reach configurations alike under π. The instance with Becoming.Testing's registration as the projection; the bridge to GenerativeCore's exact projection; the state's law over long stretches where the rule changes slowly.
+The instance with Becoming.Testing's registration as the projection; the state's law over long stretches where the rule changes slowly.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -88,8 +86,9 @@ On 12 October 2026 Ren asked “hows cause–effect system comparing to our theo
 - related, not a proved adapter: [testing-within-registration](testing-within-registration.md). With registration as the projection: an experiment through what registers is right exactly where registration goes alike (a reading; the formal bridge is not stated).
 - related, not a proved adapter: [finite-trace-transport](finite-trace-transport.md). FactorsThrough is trace_map's step-preservation hypothesis; GenerativeCore's projection_exact_iff states a different property (exact representation of finite-path possibilities, lifting from every configuration in a fibre), which going alike does not imply.
 - related, not a proved adapter: [joint-correlation-reduced-dynamics](joint-correlation-reduced-dynamics.md). An example in the periphery: the local density pair cannot uniformly determine the next control state, while a four-integer summary retaining the joint cross term gives exact responses; read as going alike failing at one description and holding at another (a reading, no formal bridge).
+- related, not a proved adapter: [a-law-through-a-projection-along-one-run](a-law-through-a-projection-along-one-run.md). There the criterion along one run (the record read through the projection is the least candidate, a law exactly where consistent) and the bridge to GenerativeCore: the image is exact exactly where configurations alike match each other's steps, which going alike does not give.
 
-**Used by:** [configurations-alike-by-relation](configurations-alike-by-relation.md) · [determinacy-up-to-likeness](determinacy-up-to-likeness.md) · [generalization-through-lumping](generalization-through-lumping.md) · [process-and-frame-as-readings](process-and-frame-as-readings.md) · [sum-over-histories-exact](sum-over-histories-exact.md) (interpretive) · [the-split-that-makes-sense](the-split-that-makes-sense.md) · [where-a-move-is-formed](where-a-move-is-formed.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+**Used by:** [a-law-through-a-projection-along-one-run](a-law-through-a-projection-along-one-run.md) · [configurations-alike-by-relation](configurations-alike-by-relation.md) · [determinacy-up-to-likeness](determinacy-up-to-likeness.md) · [generalization-through-lumping](generalization-through-lumping.md) · [process-and-frame-as-readings](process-and-frame-as-readings.md) · [sum-over-histories-exact](sum-over-histories-exact.md) (interpretive) · [the-split-that-makes-sense](the-split-that-makes-sense.md) · [where-a-move-is-formed](where-a-move-is-formed.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -133,6 +132,8 @@ Aliases: `Becoming.Image`, `Becoming.Image.least`, `Becoming.GoAlike`, `Becoming
 - 18 October 2026, M2 (Becoming.SelectionPool): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M2 added the bullet on what pooled coupling reaches, restated the pooled-coupling route of section 7.3 and section 7.4 around the theorems, revised the "Selection, causes and experiment" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 - 18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and "entangled" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). The claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.
+- 18 October 2026, G3 (Becoming.LawAlongRun): the open items "the relation to GenerativeCore's exact projection (projection_exact_iff) is not stated" and "the iff along one run is not stated" are removed from does_not_show and next_delta, since a-law-through-a-projection-along-one-run states both; that record is added as related. This record's claims are unchanged.
+- 18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 34 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](projection-carrying-a-law.json).
 
 <a id="earlier-text--早期文本"></a>

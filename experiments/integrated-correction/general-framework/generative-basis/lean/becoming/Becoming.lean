@@ -13,6 +13,7 @@ import Becoming.Joint
 import Becoming.Experiment
 import Becoming.Mechanism
 import Becoming.Unfolding
+import Becoming.LawAlongRun
 import Becoming.Histories
 import Becoming.Branching
 import Becoming.Listing
@@ -269,6 +270,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   is arising; configurations are alike where a bisimulation relates them, pass the same tests,
   and are named sensibly exactly where alike ones are one; determinacy as equality depends on
   names. Ren confirmed the reading of law and history; the other readings are the AI's.
+* `Becoming.LawAlongRun` (L3): a law through a projection along one run, and exactness. Some
+  determined process on a description admits a run's steps read through it up to a step exactly
+  where two of them alike under it, by the same move, reach configurations alike under it; the
+  witness is the record read through the description, the least candidate, and once failed the
+  criterion fails from then on. Through the identity at every step it is `Becoming.Unfolding`'s
+  history law. A run can show a law the process lacks. The image is an exact finite-path
+  projection (`Generative.projection_exact_iff`) exactly where configurations alike match each
+  other's steps up to the description; going alike does not give it.
 * `Becoming.Histories` (L3): what histories fix (P76). A family of histories is the family of
   some law's histories exactly where it holds every sequence made of its own steps, and of a
   determined law's exactly where it is also consistent; two laws admit the same histories exactly

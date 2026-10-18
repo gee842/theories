@@ -1,0 +1,17 @@
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/g1/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/g3-law-along-run",
+  "modules": 23,
+  "ran": [
+    "Becoming.LawAlongRun",
+    "BecomingLawAlongRunAxiomAudit"
+  ],
+  "reused": 22,
+  "unclean": [],
+  "audits": {
+    "Becoming.LawAlongRun": {
+      "theorems": 17,
+      "declarations": 23,
+      "with_axioms": {}
+    }
+  }
+}

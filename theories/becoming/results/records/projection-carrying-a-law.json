@@ -165,17 +165,6 @@
       "kind": "scope"
     },
     {
-      "zh": "与 GenerativeCore 中有限路径精确投影（projection_exact_iff）的关系没有陈述。",
-      "en": "The relation to GenerativeCore's exact projection of finite paths (projection_exact_iff) is not stated.",
-      "kind": "scope"
-    },
-    {
-      "zh": "状态规律的判据是对一切配置的；沿一个运行的充要条件没有陈述。",
-      "en": "The state-law criterion ranges over all configurations; the iff along one run is not stated.",
-      "kind": "scope",
-      "witness": "Becoming.adaptive_state_law_iff"
-    },
-    {
       "zh": "规则更新依于动作的系统没有陈述。",
       "en": "Systems whose rule update depends on the move are not treated.",
       "kind": "scope"
@@ -229,8 +218,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Mechanism have empty axiom reports (receipt 20261013T094743.528770Z, which also binds Becoming.Experiment and Becoming.Recurrence; current bytes of Becoming.Mechanism and Becoming.Joint bound by 20261013T221720.428753Z), and the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "zh": "沿一个运行的构造性充要条件：到某步为止有确定过程容许经 π 读的各步，恰当经 π 相同、动作相同的两步到达经 π 相同的配置。以 Becoming.Testing 的识为投影的实例；与 GenerativeCore 精确投影的桥接；规则缓慢改变时状态在长段上的规律。",
-    "en": "A constructive iff along one run: some determined process admits the steps read through π up to a step exactly where two steps alike under π with the same move reach configurations alike under π. The instance with Becoming.Testing's registration as the projection; the bridge to GenerativeCore's exact projection; the state's law over long stretches where the rule changes slowly."
+    "en": "The instance with Becoming.Testing's registration as the projection; the state's law over long stretches where the rule changes slowly.",
+    "zh": "以 Becoming.Testing 的识为投影的实例；规则缓慢改变时状态在长段上的规律。"
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 问：“hows cause–effect system comparing to our theory?”，贴入一段作者未注明的说明（不是 Ren 的话，不是前提），又写“think for one more round, what can we learn, being inspired, and improve?”；对 AI 的五项提议答：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。这是第三项（机制是一种分解，不是另一种规律）。读法（AI 的，依 Ren 的交托采用）：机制是承载规律的投影，“关于何者无关的模型”（Becoming.Experiment）由相同者同去精确刻画；配置的投影是时间读法与更细的量的单位之外的第三种东西；较粗描述上的规律（涌现）就是那里的相同者同去，不分任何东西的描述总承载规律，所以内容在于哪个描述；规则持有结果（Becoming.Capture）是只依于规则；改变自身因果的系统的规律在状态与规则的联合配置上，不需要另一种规律；读 理 为投影（Becoming.Experiment），它何时承载规律由此给出。",
@@ -376,6 +365,13 @@
         "zh": "外围的一个例子：局部密度对不能一致地决定下一控制态，保留联合交叉项的四整数概要给出精确的响应；读作相同者同去在一个描述上不成立、在另一个上成立（读法，没有形式桥接）。",
         "en": "An example in the periphery: the local density pair cannot uniformly determine the next control state, while a four-integer summary retaining the joint cross term gives exact responses; read as going alike failing at one description and holding at another (a reading, no formal bridge)."
       }
+    },
+    {
+      "id": "a-law-through-a-projection-along-one-run",
+      "detail": {
+        "en": "There the criterion along one run (the record read through the projection is the least candidate, a law exactly where consistent) and the bridge to GenerativeCore: the image is exact exactly where configurations alike match each other's steps, which going alike does not give.",
+        "zh": "那里是沿一个运行的判据（经投影读出的记录是最小候选，恰在一致处是规律）与到 GenerativeCore 的桥接：像恰在相同的配置相互匹配对方的步之处是精确的，同去不给出它。"
+      }
     }
   ],
   "references": [
@@ -470,7 +466,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35bfc7365ed757531a0f4ffe614cabc4124fae0240e2b08ac4ddefe7bac68efa",
+      "sha256": "58c5a0c94a6c147c56cab0bce96d287bc1f0aafadcf7f3bdd38b94297b1bc56b",
       "declarations": []
     },
     {
@@ -742,6 +738,14 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G3 (Becoming.LawAlongRun): the open items \"the relation to GenerativeCore's exact projection (projection_exact_iff) is not stated\" and \"the iff along one run is not stated\" are removed from does_not_show and next_delta, since a-law-through-a-projection-along-one-run states both; that record is added as related. This record's claims are unchanged.",
+      "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：因 a-law-through-a-projection-along-one-run 陈述了两者，从 does_not_show 与 next_delta 删去开放项“与 GenerativeCore 精确投影（projection_exact_iff）的关系没有陈述”与“沿一个运行的充要条件没有陈述”；加入该记录为相关。本记录的论断不变。"
+    },
+    {
+      "en": "18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [
