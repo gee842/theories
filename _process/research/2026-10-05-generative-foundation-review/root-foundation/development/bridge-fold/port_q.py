@@ -296,8 +296,8 @@ mod('Becoming.QueryTracesInherited', J + 'QueryTracesInherited.lean', False, por
     'course_without_composite', 'course_reversed_composite', 'learned_selective_loses_distinction',
     'learned_depends_on_course', 'learned_blocked_short', 'succession_step_keeps', 'orbit_cohort', 'orbit_limited',
     'succession_keeps_correspondence', 'succession_keeps_lost_distinction', 'succession_stabilizes_change',
-    'formed_succession_teaches', 'formed_succession_second', 'budget_succession_blocked', 'peer_repair',
-    'peer_keeps_error']], before='step'), join=True)
+    'formed_succession_teaches', 'formed_succession_second', 'peer_repair', 'peer_keeps_error']] + [
+    ('budget_succession_blocked', 'execution_stock_succession_blocked')], before='step'), join=True)
 mod('Becoming.ReceptionTracesInherited', J + 'ReceptionTracesInherited.lean', False, ported('LearnedGrouping', [
     (n, n) for n in [
         'step_iff', 'trace_end', 'expose_trace', 'along', 'total_kept', 'still_without_support', 'broadening_trace',

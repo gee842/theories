@@ -396,9 +396,9 @@ Source: `becoming/Becoming/QueryTracesInherited.lean`. Before: graded by F3Q.
 | `succession_stabilizes_change` | step | same | `Becoming.ResponseLearning.succession_stabilizes_change` | stated on the core, constructive |
 | `formed_succession_teaches` | step | same | `Becoming.ResponseLearning.formed_succession_teaches` | stated on the core, constructive |
 | `formed_succession_second` | step | same | `Becoming.ResponseLearning.formed_succession_second` | stated on the core, constructive |
-| `budget_succession_blocked` | step | same | `Becoming.ResponseLearning.budget_succession_blocked` | stated on the core, constructive |
 | `peer_repair` | step | same | `Becoming.ResponseLearning.peer_repair` | stated on the core, constructive |
 | `peer_keeps_error` | step | same | `Becoming.ResponseLearning.peer_keeps_error` | stated on the core, constructive |
+| `budget_succession_blocked` | step | same | `Becoming.ResponseLearning.execution_stock_succession_blocked` | stated on the core, constructive |
 
 ### `Becoming.ReceptionTracesInherited`
 

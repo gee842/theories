@@ -43,7 +43,7 @@ cultural progress is claimed.
   (`queryProcess`, `trace_iff`), and succession is `Law.process successor`, whose runs pass
   through the generations (`run_generation`); the laws above are stated of courses and runs
   (`step_delivers`, `course_stock`, `learned_*`, `succession_*`, `formed_succession_*`,
-  `budget_succession_blocked`, `peer_repair`, `peer_keeps_error`).
+  `execution_stock_succession_blocked`, `peer_repair`, `peer_keeps_error`).
 
 No ethical predicate or ranking occurs, and every declaration has an empty axiom report.
 -/
@@ -593,7 +593,7 @@ theorem formed_succession_second {r : Run (Law.process successor)}
 
 /-- **A teacher with stock only for executing interrupts teaching**: the basic course delivers
 only the two primitive records, and the successor is blocked with nothing installed. -/
-theorem budget_succession_blocked {r : Run (Law.process successor)} {y : Teaching}
+theorem execution_stock_succession_blocked {r : Run (Law.process successor)} {y : Teaching}
     (start : Trace formationProcess (prepared 18 4) [.develop] (r.state 0))
     (course : Trace queryProcess ⟨r.state 0, blank 25 8⟩ basic y) :
     y.receiver.samples = [(p0, [false]), (p1, [true])] ∧
