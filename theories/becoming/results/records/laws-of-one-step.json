@@ -574,7 +574,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "d10f4753b92d39f1985114f5e939d47471f7b02aa34f846a85fb57a17c4d6f66"
+      "sha256": "2803919ee0fd323f57814fafa520807ac427f488b4ce717948822dceaaca1033"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -913,6 +913,9 @@
     },
     {
       "en": "18 October 2026, source reconciliation after R2 (the laws of counting where the counts exist): THE-THEORY-OF-BECOMING.md adds, beside the decided counting laws, their forms over counted censuses (Becoming.CensusCounts, counts as relations, no decision procedure, every property): in the theory stated in full, the premise card rows \"Pointwise properties\" and \"Decided\", section 1 (a new bullet \"Counting where the counts exist\"), \"What each premise adds\", the open programme (row \"The whole and its parts\" and the decidedness paragraph) and section 9 (receipt and connectivity). The decided statements and their scope are unchanged. Read after the change: additions only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, source reconciliation after R2b (the binding laws of counting where the counts exist): THE-THEORY-OF-BECOMING.md now says that the laws where the premises bind also hold over counted censuses (Becoming.CensusBinding), replacing the sentences that left them open: in the theory stated in full, the premise card row \"Decided\", section 1 (\"Counting where the counts exist\"), the open programme (row \"The whole and its parts\" and the decidedness paragraph) and section 9 (receipt and connectivity). The decided statements and their scope are unchanged. Read after the change: the claim is unchanged; re-pointed."
     }
   ],
   "text_versions": [

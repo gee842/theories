@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-18T01:33:06+00:00",
   "statement": {
-    "en": "The laws of counting hold of every counted census, the counts taken as relations: under each selection of the premises, under enclosure and in finite worlds, for every property of the counts, with decision asked only where a count exists.",
-    "zh": "计数之律对每个被计数的普查成立，计数作为关系：在前提的每个选择下、在封闭下与有限世界中，对计数的每个性质皆然，判定只在计数存在之处被要求。"
+    "en": "Every law of counting of Becoming.Counting that takes decided activity holds of every counted census, the counts taken as relations, for every property of the counts and with decision asked only where a count exists; the one law left is a statement of logical strength.",
+    "zh": "Becoming.Counting 中取已判定活动的每条计数之律，对每个被计数的普查成立，计数作为关系，对计数的每个性质皆然，判定只在计数存在之处被要求；留下的一条是关于逻辑强度的陈述。"
   },
   "laws": [
     {
@@ -66,18 +66,64 @@
         "Becoming.World.CountsHold.obey",
         "Becoming.World.countsHold_of_obey"
       ]
+    },
+    {
+      "en": "Where the selected premises bind, for every property and with no decidedness: the laws of counting are those under the selection with what binding adds (something active, something arising, both at one step), each exactly where the selection gives it; likewise in finite worlds and under enclosure.",
+      "zh": "在所选前提约束之处，对每个性质、不需可判定性：计数之律是该选择下之律加上约束所添（有物活动、有物生起、二者在同一步），各恰在该选择给出之处；在有限世界与封闭下亦然。",
+      "declarations": [
+        "Becoming.World.binding_counting_counted",
+        "Becoming.World.binding_counting_under_counted",
+        "Becoming.World.binding_activity_iff_counted",
+        "Becoming.World.binding_arising_iff_counted",
+        "Becoming.World.binding_joint_iff_counted",
+        "Becoming.World.finite_binding_counting_counted",
+        "Becoming.World.finite_binding_census_counted",
+        "Becoming.World.finite_binding_counting_under_counted",
+        "Becoming.World.finite_binding_activity_iff_counted",
+        "Becoming.World.finite_binding_arising_iff_counted",
+        "Becoming.World.finite_binding_joint_iff_counted",
+        "Becoming.World.enclosed_binding_counting_counted",
+        "Becoming.World.enclosed_binding_counting_under_counted",
+        "Becoming.World.enclosed_binding_activity_iff_counted",
+        "Becoming.World.enclosed_binding_arising_iff_counted",
+        "Becoming.World.enclosed_binding_joint_iff_counted",
+        "Becoming.World.CountsOf.active_pos",
+        "Becoming.World.CountsOf.arising_pos",
+        "Becoming.World.binds_arising_counted",
+        "Becoming.World.binds_adds_counted",
+        "Becoming.World.CountsOf.company_binding",
+        "Becoming.World.CountsOf.acts_of_binding",
+        "Becoming.World.CountsOf.joint_of_binding",
+        "Becoming.World.countsOf_eq"
+      ]
+    },
+    {
+      "en": "The rest of the family holds of counted censuses: the premises leave counting free; balance and embodiment bind the counts only together; enclosed and finite worlds share their laws under the eight, and under a selection exactly where it bounds change and binds counting; read on what stands, the laws are those of counted censuses.",
+      "zh": "族中其余之律对被计数的普查成立：前提使计数自由；平衡与有身只在一起时约束计数；封闭世界与有限世界在八个前提下有同样的律，在一个选择下恰当它约束变化且约束计数；以所立而读，诸律即被计数的普查之律。",
+      "declarations": [
+        "Becoming.World.counting_free_parts_counted",
+        "Becoming.World.counting_binds_jointly_counted",
+        "Becoming.World.enclosed_iff_finite_counting_counted",
+        "Becoming.World.enclosed_iff_finite_counting_under_counted",
+        "Becoming.World.standing_iff_counting_counted"
+      ]
     }
   ],
   "hypotheses": [
     {
-      "en": "No axiom. Each theorem states what it needs: a census of the world; the selected premises; enclosure from a step, or finitely many relata, where stated. The agreement theorems take a decision procedure for activity, and the converse agreement a pointwise property.",
-      "zh": "不加公理。各定理所需写在定理中：世界的一个普查；所选前提；在写明之处，自某步起封闭或关系项有限。一致性定理取一个活动的判定程序，反向的一致性取一个逐点性质。"
+      "en": "No axiom. Each theorem states what it needs: a census of the world; the selected premises and, where stated, that they bind; enclosure from a step, or finitely many relata, where stated. The agreement theorems take a decision procedure for activity, the converse agreement and the reading on what stands a pointwise property.",
+      "zh": "不加公理。各定理所需写在定理中：世界的一个普查；所选前提，以及在写明之处它们的约束；在写明之处，自某步起封闭或关系项有限。一致性定理取一个活动的判定程序，反向的一致性与以所立而读取一个逐点性质。"
     }
   ],
   "does_not_show": [
     {
-      "en": "The laws where the premises bind (World.binding_counting and its family): they still take a decision procedure for activity at every relatum and step.",
-      "zh": "前提约束之处的律（World.binding_counting 及其族）：它们仍取对每个关系项与每步之活动的判定程序。",
+      "en": "World.lpo_of_finite_ends: asked of every finite world meeting the eight premises with its activity decided, a step after which nothing arises gives the limited principle of omniscience; its subject is the decision, and it is not restated.",
+      "zh": "World.lpo_of_finite_ends：对每个满足八个前提、活动已判定的有限世界要求一个此后无物生起的步，就给出有限全知原理；它的主题就是判定，不予重述。",
+      "kind": "scope"
+    },
+    {
+      "en": "The laws read on dependence (World.dependence_counting): they take a decision of dependence, not of activity, and are not restated.",
+      "zh": "以依赖而读的律（World.dependence_counting）：它们取依赖的判定而非活动的判定，不予重述。",
       "kind": "scope"
     },
     {
@@ -104,16 +150,16 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261018T012738.651832Z): the declarations of Becoming.CensusCounts have empty axiom reports; the checker verifies core purity. Author self-review in study section 170; not independently reviewed.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T012738.651832Z）：Becoming.CensusCounts 的声明公理报告为空；检查器并核对核心纯净。作者自审见研究第 170 节；未经独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipts 20261018T012738.651832Z for Becoming.CensusCounts and 20261018T060442.434639Z for Becoming.CensusBinding): the declarations have empty axiom reports; the checker verifies core purity. Author self-review in study sections 170 and 171; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（Becoming.CensusCounts 回执 20261018T012738.651832Z，Becoming.CensusBinding 回执 20261018T060442.434639Z）：声明公理报告为空；检查器并核对核心纯净。作者自审见研究第 170、171 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "The laws where the premises bind, stated over counted censuses; replacing the decided statements by the counted ones where they are used; an independent review.",
-    "zh": "前提约束之处的律，以被计数的普查陈述；在被使用之处以计数形式替换判定形式；独立审查。"
+    "en": "Using the counted statements where the decided ones are used; the laws read on dependence over counted relations; an independent review.",
+    "zh": "在判定形式被使用之处使用计数形式；以被计数的关系陈述以依赖而读的律；独立审查。"
   },
   "correspondence": {
-    "en": "The open programme of the chapter named one exception to the localized decidability: the counting laws take decidability of activity for every relatum and step, and hold for pointwise properties only. Ren, 18 October 2026: \"Start R2: localize the counting laws' decidability of activity.\" (provenance, not warrant). The counted laws remove both conditions for the laws under the premises, each selection, enclosure and finite worlds: counts are relations, as Becoming.Decidedness reads them, so a law needs a decision only where a count exists, and the uniqueness of counts makes every property respect them.",
-    "zh": "本章的开放纲领指出局部化可判定性的一个例外：计数之律对每个关系项与每步取活动的可判定性，且只对逐点性质成立。Ren，2026年10月18日：“Start R2: localize the counting laws' decidability of activity.”（来历，不是根据）。对前提、每个选择、封闭与有限世界下的律，计数之律去掉这两个条件：计数是关系，如 Becoming.Decidedness 所读，所以一条律只在计数存在之处需要判定，计数的唯一性使每个性质都尊重它们。"
+    "en": "The open programme of the chapter named one exception to the localized decidability: the counting laws take decidability of activity for every relatum and step, and hold for pointwise properties only. Ren, 18 October 2026: \"Start R2: localize the counting laws' decidability of activity.\" (provenance, not warrant). The counted laws remove both conditions for the laws under the premises, each selection, enclosure and finite worlds: counts are relations, as Becoming.Decidedness reads them, so a law needs a decision only where a count exists, and the uniqueness of counts makes every property respect them. Ren, 18 October 2026: \"Start R2b: restate the binding family of the counting laws over counted censuses.\" (provenance, not warrant). The binding laws and the rest of the family follow, the same witnesses read as counts.",
+    "zh": "本章的开放纲领指出局部化可判定性的一个例外：计数之律对每个关系项与每步取活动的可判定性，且只对逐点性质成立。Ren，2026年10月18日：“Start R2: localize the counting laws' decidability of activity.”（来历，不是根据）。对前提、每个选择、封闭与有限世界下的律，计数之律去掉这两个条件：计数是关系，如 Becoming.Decidedness 所读，所以一条律只在计数存在之处需要判定，计数的唯一性使每个性质都尊重它们。Ren，2026年10月18日：“Start R2b: restate the binding family of the counting laws over counted censuses.”（来历，不是根据）。约束之律与族中其余之律随之，同样的见证世界作为计数而读。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusCounts.lean",
   "aliases": [
@@ -124,7 +170,9 @@
     "counts as relations",
     "计数作为关系",
     "counting laws for every property",
-    "对每个性质的计数之律"
+    "对每个性质的计数之律",
+    "binding laws over counted censuses",
+    "被计数的普查上的约束之律"
   ],
   "dependencies": [],
   "related": [
@@ -193,19 +241,60 @@
       "sha256": "f6a036d6631db7daec0dc76a1ab7dc65b3a1ee1f1df582f470899fcc8417961a"
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusBinding.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.World.CountsOf.active_pos",
+        "Becoming.World.CountsOf.acts_of_binding",
+        "Becoming.World.CountsOf.arising_pos",
+        "Becoming.World.CountsOf.company_binding",
+        "Becoming.World.CountsOf.joint_of_binding",
+        "Becoming.World.binding_activity_iff_counted",
+        "Becoming.World.binding_arising_iff_counted",
+        "Becoming.World.binding_counting_counted",
+        "Becoming.World.binding_counting_under_counted",
+        "Becoming.World.binding_joint_iff_counted",
+        "Becoming.World.binds_adds_counted",
+        "Becoming.World.binds_arising_counted",
+        "Becoming.World.counting_binds_jointly_counted",
+        "Becoming.World.counting_free_parts_counted",
+        "Becoming.World.countsOf_eq",
+        "Becoming.World.enclosed_binding_activity_iff_counted",
+        "Becoming.World.enclosed_binding_arising_iff_counted",
+        "Becoming.World.enclosed_binding_counting_counted",
+        "Becoming.World.enclosed_binding_counting_under_counted",
+        "Becoming.World.enclosed_binding_joint_iff_counted",
+        "Becoming.World.enclosed_iff_finite_counting_counted",
+        "Becoming.World.enclosed_iff_finite_counting_under_counted",
+        "Becoming.World.finite_binding_activity_iff_counted",
+        "Becoming.World.finite_binding_arising_iff_counted",
+        "Becoming.World.finite_binding_census_counted",
+        "Becoming.World.finite_binding_counting_counted",
+        "Becoming.World.finite_binding_counting_under_counted",
+        "Becoming.World.finite_binding_joint_iff_counted",
+        "Becoming.World.standing_iff_counting_counted"
+      ],
+      "sha256": "6f4c8b032363f0c37092b2fe0b144d9f21ae1a841a888c0134f0f4884ad01e80"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T060442.434639Z/verification.json",
+      "role": "receipt",
+      "sha256": "5e2d226877825fbbee0fc8cb2a0ed31b22d161b2157a4f58cae9e20cabc24fc1"
+    },
+    {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "31bcdde78d86aa927c57a2c5f6419271a7ca10e837921ffd61405a0905de3b2e"
+      "sha256": "dff0984bed37d75c7504fa3e9b2b47acdabd16b6ce3f947cceea63fb0c90eff0"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "d10f4753b92d39f1985114f5e939d47471f7b02aa34f846a85fb57a17c4d6f66"
+      "sha256": "2803919ee0fd323f57814fafa520807ac427f488b4ce717948822dceaaca1033"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
       "role": "provenance",
-      "sha256": "1ddc179780d4337d7688b3058086b4211df26d55e8ea4a959c7ee973e3f14a32"
+      "sha256": "68f1d05515797ea373b2b62cd21591e1c779c78eeb5eb903fe90b12a5fb0bfc3"
     }
   ],
   "proof_bindings": [
@@ -215,12 +304,23 @@
       "sha256_pointer": "/source_sha256/Becoming.CensusCounts",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusBinding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T060442.434639Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.CensusBinding",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "history": [
     {
       "en": "18 October 2026: added (R2), on Ren's \"Start R2: localize the counting laws' decidability of activity.\"; study section 170.",
       "zh": "2026年10月18日：新增（R2），按 Ren 的“Start R2: localize the counting laws' decidability of activity.”；研究第 170 节。"
+    },
+    {
+      "en": "18 October 2026: extended (R2b), on Ren's \"Start R2b: restate the binding family of the counting laws over counted censuses.\"; laws 5 and 6 added from Becoming.CensusBinding, statement, scope and next step rewritten (the binding family is no longer outside the record); study section 171.",
+      "zh": "2026年10月18日：扩展（R2b），按 Ren 的“Start R2b: restate the binding family of the counting laws over counted censuses.”；自 Becoming.CensusBinding 增第 5、6 条律，改写陈述、范围与下一步（约束之族不再在记录之外）；研究第 171 节。"
     }
   ]
 }
