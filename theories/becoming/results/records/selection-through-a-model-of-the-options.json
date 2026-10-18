@@ -333,7 +333,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "20b95910953f24eae265d579ad6a66013cda4106a1b607cfaeb8d03b57461aea"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -527,6 +527,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Learning.lean, Selection.lean, SelectionRuns.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, G1 (Becoming.SelectionGap): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): S1 and S2 revised the \"Seeking, capture and runaway\" row, and G1 revised the \"Selection, causes and experiment\" row (the gap for one's own act stated, its record linked). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，G1（Becoming.SelectionGap）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：S1 与 S2 修订“寻求、俘获与失控”行，G1 修订“选择、原因与实验”行（陈述了自身动作的缺口，链接其记录）。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": []

@@ -1,0 +1,4 @@
+@Becoming.MoveOutcomeProcessesInherited.lost_goal_of_not_covers : ∀ {S A B : Type} {P : Generative.Process S A} {s : S}
+  {Q : Generative.Process S B} {t : S},
+  ¬Becoming.MoveOutcomeProcesses.Covers P s Q t →
+    ∃ goal, Becoming.MoveOutcomeProcesses.Ensures P s goal ∧ ¬Becoming.MoveOutcomeProcesses.Ensures Q t goal

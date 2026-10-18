@@ -206,12 +206,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "03abf25e04f4ebfd26e415a273f2ea129ed83bd3aa953d51b49dc96825a2b63d"
+      "sha256": "2c59435f31804fe0129727138ef86167a17a9bc5762fad805a34bdc937b506d4"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ac6c5efc584f9477179e41cabe674da42aeca801d2811d0627e2ac21ac2152df"
+      "sha256": "20b95910953f24eae265d579ad6a66013cda4106a1b607cfaeb8d03b57461aea"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -232,6 +232,10 @@
     {
       "en": "18 October 2026: added (S2), on Ren's \"Start the next item: when the runs of a process settle, the part of assured enough that doesn't mention the target (claim on the board first).\"; study section 175.",
       "zh": "2026年10月18日：新增（S2），按 Ren 的“Start the next item: when the runs of a process settle, the part of assured enough that doesn't mention the target (claim on the board first).”；研究第 175 节。"
+    },
+    {
+      "en": "18 October 2026, G1 (Becoming.SelectionGap): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G1 added study section 176; THE-THEORY-OF-BECOMING.md: G1 added the bullet on the gap for one's own act, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G1（Becoming.SelectionGap）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

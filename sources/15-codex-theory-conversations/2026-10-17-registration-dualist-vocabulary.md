@@ -66,3 +66,11 @@ The assistant asked whether this was the go for the renaming, with three options
 > Renames, full scope
 
 The assistant's reading: this lifts "still no renames" for the package's names (the 30 definitions and the reviewed theorem names, with their families), with the other recommendations as stated. Docstring and record prose words stay out of scope, as the package said. Where the work departs from what was offered (deprecated aliases), the departure is recorded with its reason in the naming study.
+
+## Ren's go to push to the finish (18 October 2026)
+
+After N5 (the renaming, `b84e722ea`) landed and the assistant reported it, Ren wrote:
+
+> you have permission now, please see what else is there to do - keep pushing the frontier till finishing
+
+The assistant's reading, which Ren may correct: a standing go to take up open items of the chapter's programme (section 8.2) that no other session holds, claim each on the board, prove it, and land it through the queue, until the reachable items are done. The first is the gap for one's own act as a general theorem (board item G1). Items other sessions hold (the learning and seeking line, the prose reading pass) are left to them.

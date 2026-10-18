@@ -72,6 +72,7 @@ Aliases: `when the runs of a process settle`, `过程的运行何时安定`, `ch
 ### History
 
 - 18 October 2026: added (S2), on Ren's "Start the next item: when the runs of a process settle, the part of assured enough that doesn't mention the target (claim on the board first)."; study section 175.
+- 18 October 2026, G1 (Becoming.SelectionGap): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G1 added study section 176; THE-THEORY-OF-BECOMING.md: G1 added the bullet on the gap for one's own act, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 
 </details>
 

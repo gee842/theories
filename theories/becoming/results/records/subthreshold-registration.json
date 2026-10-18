@@ -298,7 +298,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ac6c5efc584f9477179e41cabe674da42aeca801d2811d0627e2ac21ac2152df",
+      "sha256": "20b95910953f24eae265d579ad6a66013cda4106a1b607cfaeb8d03b57461aea",
       "declarations": []
     },
     {
@@ -598,6 +598,10 @@
     {
       "en": "18 October 2026, S2 (Becoming.Settling): THE-THEORY-OF-BECOMING.md re-pointed after S2 added the bullet on when the runs settle, revised the \"Seeking, capture and runaway\" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月18日，S2（Becoming.Settling）：S2 增加关于运行何时安定的条目、修订第 8.2 节“寻求、俘获与失控”行与第 9 节回执及连通性文字后，THE-THEORY-OF-BECOMING.md 重新指向；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "18 October 2026, G1 (Becoming.SelectionGap): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G1 added the bullet on the gap for one's own act, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，G1（Becoming.SelectionGap）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

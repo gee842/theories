@@ -72,6 +72,7 @@ Aliases: `boundary of enough under undetermined laws`, `不确定之律下够的
 
 - 18 October 2026: added (S1), on Ren's "Wait for N5's renames to land, then start the learning and seeking line on the renamed head."; study section 174.
 - 18 October 2026, S2 (Becoming.Settling): THE-THEORY-OF-BECOMING.md re-pointed after S2 added the bullet on when the runs settle, revised the "Seeking, capture and runaway" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.
+- 18 October 2026, G1 (Becoming.SelectionGap): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G1 added the bullet on the gap for one's own act, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 
 </details>
 

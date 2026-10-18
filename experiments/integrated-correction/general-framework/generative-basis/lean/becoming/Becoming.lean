@@ -177,6 +177,7 @@ import Becoming.CensusBinding
 import Becoming.Unrolling
 import Becoming.Enough
 import Becoming.Settling
+import Becoming.SelectionGap
 
 /-!
 # The Theory of Becoming: the formal core
@@ -822,6 +823,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   options are selected alike by every selection through the model exactly when the model ties
   them, one is singled out exactly where the model separates it from every other, and tied
   options are valued alike.
+* `Becoming.SelectionGap` (L4): the gap for one's own act. Where the rest follows a law of
+  exchange reading through coupling and an act of the part differs only on conditions no member
+  of the actor's coupling closure couples into, every selection through any member of the
+  closure, the actor included, selects the flows with and without the act alike at every step,
+  the rest's response derived from the law; with both acts laws, neither the second flow, nor the
+  response, nor the levels are supplied. A consequence of the act beyond the closure is selected
+  through no member of it.
 * `Becoming.Learning` (L4): no record fixes the next value: two courses share any record and
   differ at its next step, also among worlds held by a list, and for every learner a course
   refutes each of its claims, the registration of a law keeping its record, so open. Learning by

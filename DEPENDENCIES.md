@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-235 registered results: 219 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 593 curated edges join 193 results to the results they draw on.
+236 registered results: 220 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 595 curated edges join 194 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -179,6 +179,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [target-capture][] ← <a id="target-capture--evolution-on-descent"></a>[evolution-on-descent][] · <a id="target-capture--laws-of-one-step"></a>[laws-of-one-step][] · <a id="target-capture--recurrence-without-premise"></a>[recurrence-without-premise][]
 - [testing-within-registration][] ← <a id="testing-within-registration--feedback-and-reach"></a>[feedback-and-reach][] · <a id="testing-within-registration--levels-of-closure"></a>[levels-of-closure][] · <a id="testing-within-registration--closing-needs-net-draw"></a>[closing-needs-net-draw][] · <a id="testing-within-registration--four-cases-of-a-part"></a>[four-cases-of-a-part][]
 - [tests-fix-likeness-where-determined][] ← <a id="tests-fix-likeness-where-determined--configurations-alike-by-relation"></a>[configurations-alike-by-relation][] · <a id="tests-fix-likeness-where-determined--identification-where-bounded"></a>[identification-where-bounded][]
+- [the-gap-for-ones-own-act][] ← <a id="the-gap-for-ones-own-act--selection-through-registration"></a>[selection-through-registration][] · <a id="the-gap-for-ones-own-act--counterfactual-is-the-course"></a>[counterfactual-is-the-course][]
 - [the-split-that-makes-sense][] ← <a id="the-split-that-makes-sense--configurations-alike-by-relation"></a>[configurations-alike-by-relation][] · <a id="the-split-that-makes-sense--projection-carrying-a-law"></a>[projection-carrying-a-law][] · <a id="the-split-that-makes-sense--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="the-split-that-makes-sense--registration-within-what-it-registers"></a>[registration-within-what-it-registers][]
 - [theory-of-becoming-foundation][] ← <a id="theory-of-becoming-foundation--becoming-context-coherence"></a>[becoming-context-coherence][] *(interpretive)* · <a id="theory-of-becoming-foundation--conditional-foundation-assessment"></a>[conditional-foundation-assessment][] *(interpretive)* · <a id="theory-of-becoming-foundation--control-coherence-loss"></a>[control-coherence-loss][] *(interpretive)*
 - [timely-response-necessity][] ← <a id="timely-response-necessity--comparison-where-the-rest-responds"></a>[comparison-where-the-rest-responds][] · <a id="timely-response-necessity--testing-within-registration"></a>[testing-within-registration][] · <a id="timely-response-necessity--finite-fallible-inquiry-necessity"></a>[finite-fallible-inquiry-necessity][]
@@ -397,6 +398,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [target-capture]: theories/becoming/results/records/target-capture.md
 [testing-within-registration]: theories/becoming/results/records/testing-within-registration.md
 [tests-fix-likeness-where-determined]: theories/becoming/results/records/tests-fix-likeness-where-determined.md
+[the-gap-for-ones-own-act]: theories/becoming/results/records/the-gap-for-ones-own-act.md
 [the-split-that-makes-sense]: theories/becoming/results/records/the-split-that-makes-sense.md
 [theory-of-becoming-foundation]: theories/becoming/results/records/theory-of-becoming-foundation.md
 [timely-response-necessity]: theories/becoming/results/records/timely-response-necessity.md

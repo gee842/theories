@@ -185,11 +185,6 @@
       "kind": "scope"
     },
     {
-      "zh": "自身动作的缺口（动作只在闭包成员都不识的条件上不同）没有单独的一般定理，Clearing 中由 alike_within_closed 的实例给出。",
-      "en": "The gap for one's own act (an act differing only on conditions no member of the closure registers) has no separate general theorem; in Clearing it comes from an instance of alike_within_closed.",
-      "kind": "scope"
-    },
-    {
       "zh": "偏向伸出只在最小的见证 Diversion 中陈述。",
       "en": "Favouring reaching beyond is stated only in the minimal witness Diversion.",
       "kind": "scope",
@@ -239,8 +234,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Selection have empty axiom reports (receipt 20261013T094743.528770Z; the current bytes of Selection and Capture bound by 20261013T204910.042715Z, of Testing by 20261014T091930.724493Z), and the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "zh": "自身动作的缺口作为一般定理：动作只在识闭包成员都不识的条件上不同时，经其识的每个选择都看不见它；偏向伸出的一般形式：抬高所识者的部分何时必伸出识闭包之外；与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升。",
-    "en": "The gap for one's own act as a general theorem: where an act differs only on conditions no member of the registration closure registers, every selection through it misses the act; favouring reaching beyond in general: when a part raising what registers must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond."
+    "en": "The general form of favouring reaching beyond: when a part raising what registers must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.",
+    "zh": "偏向伸出的一般形式：抬高所识者的部分何时必伸出识闭包之外；与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升。"
   },
   "correspondence": {
     "zh": "2026-10-12，Ren 问“hows cause–effect system comparing to our theory?”，并贴入一段作者未注明的因果系统说明（不是 Ren 的话，也不是前提）；AI 作比较并提出五项可学之处后，Ren 写“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本记录是其中第一项，五项提议是 AI 的。读法（AI 的，依 Ren 的交托采用）：任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，对候选者的部分在选择者识闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去识闭包，只经依存、观察或他者之识合起来才合上；伸出而抬高所识者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及奖励所识。AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接；这是 AI 的联系。见整合文档 §86。",
@@ -399,6 +394,13 @@
         "zh": "同一形式的律：经识的选择恰及所识，经模型的选择恰分开模型所分开者；模型使两个选项并列时，每个经模型的选择都选得相同。",
         "en": "A law of the same form: selection through registration reaches exactly what registers, and selection through a model separates exactly what the model separates; where the model ties two options, every selection through it selects them alike."
       }
+    },
+    {
+      "id": "the-gap-for-ones-own-act",
+      "detail": {
+        "en": "There the gap for one's own act is a general theorem: the response premise of Flow.unselected_beyond_coupling_responsive derived from a law of exchange, for any act whose difference stays beyond the closure.",
+        "zh": "那里自身动作的缺口是一般定理：Flow.unselected_beyond_coupling_responsive 的回应前提由交换律推出，对差别留在闭包之外的任何动作。"
+      }
     }
   ],
   "references": [
@@ -534,7 +536,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
+      "sha256": "20b95910953f24eae265d579ad6a66013cda4106a1b607cfaeb8d03b57461aea",
       "declarations": []
     },
     {
@@ -817,6 +819,14 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Feedback.lean, Selection.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, G1 (Becoming.SelectionGap): the open item \"the gap for one's own act has no separate general theorem\" is removed from does_not_show and next_delta, since the-gap-for-ones-own-act states it; that record is added as related. This record's claims are unchanged.",
+      "zh": "2026年10月18日，G1（Becoming.SelectionGap）：因 the-gap-for-ones-own-act 陈述了它，从 does_not_show 与 next_delta 删去开放项“自身动作的缺口没有单独的一般定理”；加入该记录为相关。本记录的论断不变。"
+    },
+    {
+      "en": "18 October 2026, G1 (Becoming.SelectionGap): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): S1 and S2 revised the \"Seeking, capture and runaway\" row, and G1 revised the \"Selection, causes and experiment\" row (the gap for one's own act stated, its record linked). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，G1（Becoming.SelectionGap）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：S1 与 S2 修订“寻求、俘获与失控”行，G1 修订“选择、原因与实验”行（陈述了自身动作的缺口，链接其记录）。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

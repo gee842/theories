@@ -1,0 +1,7 @@
+import Becoming.RuleNarrowingProcessesInherited
+#print axioms Becoming.RuleNarrowingProcessesInherited.narrow_once_iff
+#print axioms Becoming.RuleNarrowingProcessesInherited.narrowed_iff_fits
+#print axioms Becoming.RuleNarrowingProcessesInherited.dropped_has_counterevidence
+#print axioms Becoming.RuleNarrowingProcessesInherited.repeated_observation_idle
+#print axioms Becoming.RuleNarrowingProcessesInherited.narrowing_transport
+#print axioms Becoming.RuleNarrowingProcessesInherited.full_repertoire_settles_actual
