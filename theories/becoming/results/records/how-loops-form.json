@@ -180,8 +180,8 @@
     "en": "When loops of read strengths form, for every law; the runaway of the actual gap after formation (lower bounds on responses); an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-16 取了 P118 第三项读法的精炼形式：“一个世界有哪些回路是其情境的一部分；回路在展开中形成与消解，定理按每步所立者取之”，并说“leave it pending until a loop-formation theorem exists”；同日说“a theorem showing how loops form within the unfolding … let's finish both”。本结果是那条定理。读法（AI 的，Ren 2026-10-16 同意）：回路在展开中由闭合而形成，在某个交换开始回应它所给的条件下游的一个水平之步；强度从进程读出时回路是展开所形成的一部分；回路的形成不从它之前的量预见，这与 Becoming.Runaway 相遇：能识它的是识耦合本身者。回路的消解见 P120（停止的耦合）。",
-    "en": "On 16 October 2026 Ren took P118's third reading in its refined form, “which loops a world has is part of its situation; loops form and dissolve within the unfolding, and the theorems take them as they stand at each step”, and said “leave it pending until a loop-formation theorem exists”; the same day Ren asked for “a theorem showing how loops form within the unfolding … let's finish both”. This result is that theorem. Readings (the AI's, agreed by Ren on 16 October 2026): loops form within the unfolding by closing, at the step some exchange comes to respond to a level downstream of the condition it gives to; with strengths read off the course the loops are part of what the unfolding forms; a loop's formation is not foreseen from the amounts before it, which meets Becoming.Runaway: what registers it is what registers the couplings themselves. How loops dissolve is P120's (couplings that stop)."
+    "zh": "Ren 2026-10-16 取了 P118 第三项读法的精炼形式：“一个世界有哪些回路是其情境的一部分；回路在展开中形成与消解，定理按每步所立者取之”，并说“leave it pending until a loop-formation theorem exists”；同日说“a theorem showing how loops form within the unfolding … let's finish both”。本结果是那条定理。读法（AI 的，Ren 2026-10-16 同意）：回路在展开中由闭合而形成，在某个交换开始回应它所给的条件下游的一个水平之步；强度从进程读出时回路是展开所形成的一部分；回路的形成不从它之前的量预见，这与 Becoming.Runaway 相遇：能承载它的是耦合入耦合本身者。回路的消解见 P120（停止的耦合）。",
+    "en": "On 16 October 2026 Ren took P118's third reading in its refined form, “which loops a world has is part of its situation; loops form and dissolve within the unfolding, and the theorems take them as they stand at each step”, and said “leave it pending until a loop-formation theorem exists”; the same day Ren asked for “a theorem showing how loops form within the unfolding … let's finish both”. This result is that theorem. Readings (the AI's, agreed by Ren on 16 October 2026): loops form within the unfolding by closing, at the step some exchange comes to respond to a level downstream of the condition it gives to; with strengths read off the course the loops are part of what the unfolding forms; a loop's formation is not foreseen from the amounts before it, which meets Becoming.Runaway: what carries it is what the couplings themselves couple into. How loops dissolve is P120's (couplings that stop)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
   "aliases": [
@@ -277,8 +277,8 @@
     {
       "id": "runaway-distance-unregistered",
       "detail": {
-        "zh": "那里失控的断裂在其前不被识；这里使之失控的回路的形成也不被它所携带的量识。两者在一个律中的连接见 loops-within-what-a-law-reads。",
-        "en": "There a runaway's break is not registered before it; here the formation of the loop that runs away is not registered by the amounts it carries either. Joining the two within one law: loops-within-what-a-law-reads."
+        "zh": "那里失控的断裂在其前不耦合入；这里使之失控的回路的形成也不在它所携带的量中显出。两者在一个律中的连接见 loops-within-what-a-law-reads。",
+        "en": "There a runaway's break does not couple in before it; here the formation of the loop that runs away does not show in the amounts it carries either. Joining the two within one law: loops-within-what-a-law-reads."
       }
     },
     {

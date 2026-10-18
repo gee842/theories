@@ -90,8 +90,8 @@
     {
       "id": "the-split-that-makes-sense",
       "detail": {
-        "zh": "同一模块：有意义的切分相对于所识；这里是任何描述把整体切成部分时失去什么。",
-        "en": "Same module: the split that makes sense, relative to what is registered; here, what any description cutting a whole into parts loses."
+        "zh": "同一模块：有意义的切分相对于映射；这里是任何描述把整体切成部分时失去什么。",
+        "en": "Same module: the split that makes sense, relative to the map; here, what any description cutting a whole into parts loses."
       }
     },
     {

@@ -2,16 +2,16 @@
   "schema_version": 2,
   "id": "sensitivity-is-the-least-registration",
   "title": {
-    "zh": "任意多条件下最小的识",
-    "en": "The least registration with any number of conditions"
+    "zh": "任意多条件下最小的耦合",
+    "en": "The least coupling with any number of conditions"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "律在每个历史下读有限多个条件时，经其敏感而读：于双重否定下，敏感是它所经的最小的识。给定消失之判定（它给出有限全知原则），尾之律是反例；条件编号时，每个反例都给出弱有限全知原则。",
-    "en": "A law reading finitely many conditions under each history reads through what it is sensitive to: up to double negation, sensitivity is the least registration. Given a decision of vanishing (giving LPO) the tail law is a counterexample; with numbered conditions every counterexample gives WLPO."
+    "zh": "律在每个历史下读有限多个条件时，经其敏感而读：于双重否定下，敏感是它所经的最小的耦合。给定消失之判定（它给出有限全知原则），尾之律是反例；条件编号时，每个反例都给出弱有限全知原则。",
+    "en": "A law reading finitely many conditions under each history reads through what it is sensitive to: up to double negation, sensitivity is the least coupling. Given a decision of vanishing (giving LPO) the tail law is a counterexample; with numbered conditions every counterexample gives WLPO."
   },
   "laws": [
     {
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "zh": "读已立者的律在两个于其所敏感者上相同的历史下交换相同，只要它在其中一个历史下读某个列表之内。所以读有限多个条件的律，无论条件多少，经每个观察其所敏感者的识而读，而它所经的每个识都于双重否定下含其敏感者：在这一意义下敏感是最小的识，由动力学给出的比较随之。",
-      "en": "A law of what has stood gives alike under two histories agreeing on what it is sensitive to wherever it reads within a list under one of them. So a law reading finitely many conditions, however many, reads through every registration observing what it is sensitive to, and every one it reads through holds that up to double negation: sensitivity is the least registration in that sense, and the comparison as the dynamics give follows.",
+      "zh": "读已立者的律在两个于其所敏感者上相同的历史下交换相同，只要它在其中一个历史下读某个列表之内。所以读有限多个条件的律，无论条件多少，经每个其所敏感者经水平耦合入的耦合而读，而它所经的每个耦合都于双重否定下含其敏感者：在这一意义下敏感是最小的耦合，由动力学给出的比较随之。",
+      "en": "A law of what has stood gives alike under two histories agreeing on what it is sensitive to wherever it reads within a list under one of them. So a law reading finitely many conditions, however many, reads through every coupling by which what it is sensitive to couples in by level, and every one it reads through holds that up to double negation: sensitivity is the least coupling in that sense, and the comparison as the dynamics give follows.",
       "declarations": [
         "Becoming.alike_of_sensitive_agree_within",
         "Becoming.ExchangeLaw.ReadsFinitely.through_of_observed",
@@ -62,8 +62,8 @@
       ]
     },
     {
-      "zh": "给定对每个水平序列是否从某个条件起消失的判定，尾之律交换消失的指示：它读已立者，经识从任何一个条件起的全部条件而读，在每一步对每个条件都不敏感，却在两个历史之间不同；它不经其敏感而读，不读有限多个条件，它所经的识没有最小的。",
-      "en": "Given a decision, for every sequence of levels, of whether it vanishes from some condition on, the tail law exchanges that indicator: it reads what has stood and through the conditions from any one on, is insensitive to every condition and still differs between two histories; it does not read through what it is sensitive to, nor finitely many conditions, and the registrations it reads through have no least one.",
+      "zh": "给定对每个水平序列是否从某个条件起消失的判定，尾之律交换消失的指示：它读已立者，经从任何一个条件起的全部条件之耦合而读，在每一步对每个条件都不敏感，却在两个历史之间不同；它不经其敏感而读，不读有限多个条件，它所经的耦合没有最小的。",
+      "en": "Given a decision, for every sequence of levels, of whether it vanishes from some condition on, the tail law exchanges that indicator: it reads what has stood and through the conditions from any one on, is insensitive to every condition and still differs between two histories; it does not read through what it is sensitive to, nor finitely many conditions, and the couplings it reads through have no least one.",
       "declarations": [
         "Becoming.VanishFrom",
         "Becoming.VanishFrom.of_agree",
@@ -148,8 +148,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
       "detail": {
-        "zh": "尾之律，给定消失之判定（它给出有限全知原则）：读已立者，不敏感于任何条件而仍有差别，它所经的识没有最小的。所以给定这一判定，这一条件不能去掉；而去掉它的每个律都给出弱有限全知原则：单靠核心，这一条件既未被驳倒，也未被表明可以去掉。",
-        "en": "The tail law, given a decision of vanishing (which gives LPO): it reads what has stood, is sensitive to no condition and still differs, and the registrations it reads through have no least one. So the condition cannot be dropped given that decision, and any law dropping it gives WLPO: the core alone neither refutes the condition nor shows it droppable."
+        "zh": "尾之律，给定消失之判定（它给出有限全知原则）：读已立者，不敏感于任何条件而仍有差别，它所经的耦合没有最小的。所以给定这一判定，这一条件不能去掉；而去掉它的每个律都给出弱有限全知原则：单靠核心，这一条件既未被驳倒，也未被表明可以去掉。",
+        "en": "The tail law, given a decision of vanishing (which gives LPO): it reads what has stood, is sensitive to no condition and still differs, and the couplings it reads through have no least one. So the condition cannot be dropped given that decision, and any law dropping it gives WLPO: the core alone neither refutes the condition nor shows it droppable."
       }
     }
   ],
@@ -170,8 +170,8 @@
     "en": "What a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的识，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。有限全知原则出自 Bishop（1967），弱有限全知原则出自 Bridges 与 Richman（1987）；不连续的函数给出弱原则，是构造性反推数学的标准结果（Ishihara）。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识本身仍是 Ren 的）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least registration, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. The limited principle of omniscience is Bishop's (1967) and the weak one Bridges and Richman's (1987); that a discontinuous function gives the weak principle is a standard result of constructive reverse mathematics (Ishihara). Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; 识 itself stays Ren's): registration is sensitivity, a formation registering exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的耦合，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。有限全知原则出自 Bishop（1967），弱有限全知原则出自 Bridges 与 Richman（1987）；不连续的函数给出弱原则，是构造性反推数学的标准结果（Ishihara）。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识这个词本身仍是 Ren 的）：耦合就是敏感，耦合入形成的恰是其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least coupling, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. The limited principle of omniscience is Bishop's (1967) and the weak one Bridges and Richman's (1987); that a discontinuous function gives the weak principle is a standard result of constructive reverse mathematics (Ishihara). Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; the word 识 itself stays Ren's): coupling is sensitivity, what couples into a formation being exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
   "aliases": [
@@ -191,13 +191,13 @@
       "id": "counterfactual-is-the-course",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 ExchangeLaw、GivesAlike、Nonanticipating、Through、InsensitiveAt、Sensitive、mixIn、mixIn_listed、mixIn_alike、swap_alike、nat_eq_of_not_not、ExchangeLaw.Through.couples_of_sensitive 与 comparison_of_courses：条件有限时的最小的识推广到读有限多个条件的律。",
-        "en": "Reuses ExchangeLaw, GivesAlike, Nonanticipating, Through, InsensitiveAt, Sensitive, mixIn, mixIn_listed, mixIn_alike, swap_alike, nat_eq_of_not_not, ExchangeLaw.Through.couples_of_sensitive and comparison_of_courses: the least registration with finitely many conditions extended to laws reading finitely many conditions."
+        "zh": "复用 ExchangeLaw、GivesAlike、Nonanticipating、Through、InsensitiveAt、Sensitive、mixIn、mixIn_listed、mixIn_alike、swap_alike、nat_eq_of_not_not、ExchangeLaw.Through.couples_of_sensitive 与 comparison_of_courses：条件有限时的最小的耦合推广到读有限多个条件的律。",
+        "en": "Reuses ExchangeLaw, GivesAlike, Nonanticipating, Through, InsensitiveAt, Sensitive, mixIn, mixIn_listed, mixIn_alike, swap_alike, nat_eq_of_not_not, ExchangeLaw.Through.couples_of_sensitive and comparison_of_courses: the least coupling with finitely many conditions extended to laws reading finitely many conditions."
       },
       "interface": {
         "output": {
-          "zh": "交换律、敏感、经识而读；逐个条件换入；所经之识不漏掉敏感者；律所经之识内的比较。",
-          "en": "Laws of exchange, sensitivity, reading through a registration; mixing one condition at a time; a registration read through holding what is sensitive; the comparison within a registration read through."
+          "zh": "交换律、敏感、经耦合而读；逐个条件换入；所经之耦合不漏掉敏感者；律所经之耦合内的比较。",
+          "en": "Laws of exchange, sensitivity, reading through a coupling; mixing one condition at a time; a coupling read through holding what is sensitive; the comparison within a coupling read through."
         },
         "input": {
           "zh": "列出的条件逐个换入；经敏感而读给出比较。",
@@ -214,17 +214,17 @@
       "id": "testing-within-registration",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Web.CoupledInto：最小的识以形成所识者（所依存或观察的条件）陈述。",
-        "en": "Reuses Web.CoupledInto: the least registration is stated with what a formation registers (the conditions it depends on or observes)."
+        "zh": "复用 Web.CoupledInto：最小的耦合以耦合入形成者（经阈或经水平耦合入的条件）陈述。",
+        "en": "Reuses Web.CoupledInto: the least coupling is stated with what couples into a formation (the conditions coupled in by threshold or by level)."
       },
       "interface": {
         "output": {
-          "zh": "形成识一个条件：依存于它或观察它。",
-          "en": "A formation registers a condition: it depends on it or observes it."
+          "zh": "一个条件耦合入形成：经阈或经水平。",
+          "en": "A condition couples into a formation: by threshold or by level."
         },
         "input": {
-          "zh": "所经之识（连同所依存的）不漏掉敏感者。",
-          "en": "A registration read through, with what is depended on, holding what is sensitive."
+          "zh": "所经之耦合（连同所依存的）不漏掉敏感者。",
+          "en": "A coupling read through, with what is depended on, holding what is sensitive."
         },
         "conditions": {
           "zh": "无。",
@@ -238,22 +238,22 @@
     {
       "id": "comparison-where-the-rest-responds",
       "detail": {
-        "zh": "其前提“其余经识回应”对每个读有限多个条件的律成立，所识的就是律的敏感，条件多少都一样。",
-        "en": "Its premise that the rest responds through registration holds for every law reading finitely many conditions, what is registered being the law's sensitivity, with any number of conditions."
+        "zh": "其前提“其余经耦合回应”对每个读有限多个条件的律成立，耦合入的就是律的敏感，条件多少都一样。",
+        "en": "Its premise that the rest responds through the couplings holds for every law reading finitely many conditions, what couples in being the law's sensitivity, with any number of conditions."
       }
     },
     {
       "id": "feedback-and-reach",
       "detail": {
-        "zh": "理论第 8 节在反馈与所及下的进一步证明列出这一问题；所及中的比较对读有限多个条件的律以其敏感为识。",
-        "en": "The chapter's further proofs under feedback and reach listed this question; the comparison within the reach takes, for laws reading finitely many conditions, their sensitivity as what is registered."
+        "zh": "理论第 8 节在反馈与所及下的进一步证明列出这一问题；所及中的比较对读有限多个条件的律以其敏感为耦合。",
+        "en": "The chapter's further proofs under feedback and reach listed this question; the comparison within the reach takes, for laws reading finitely many conditions, their sensitivity as what couples in."
       }
     },
     {
       "id": "reserve-defers-ending",
       "detail": {
-        "zh": "如 Web.lpo_of_ending：较强的形式给出一条全知原则，所以核心陈述较弱的形式；这里是弱有限全知原则，核心对读有限多个条件的律陈述最小的识。",
-        "en": "Like Web.lpo_of_ending: the stronger form gives a principle of omniscience, so the core states the weaker; here the weak limited principle, and the core states the least registration for laws reading finitely many conditions."
+        "zh": "如 Web.lpo_of_ending：较强的形式给出一条全知原则，所以核心陈述较弱的形式；这里是弱有限全知原则，核心对读有限多个条件的律陈述最小的耦合。",
+        "en": "Like Web.lpo_of_ending: the stronger form gives a principle of omniscience, so the core states the weaker; here the weak limited principle, and the core states the least coupling for laws reading finitely many conditions."
       }
     },
     {

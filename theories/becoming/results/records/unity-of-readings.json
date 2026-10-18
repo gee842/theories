@@ -15,8 +15,8 @@
   },
   "laws": [
     {
-      "zh": "沿一个运行，语境系统的诸识，每个主张连同其语境，是一个世界的关系项，恰在以其值被识处活跃；如 Frame.world，其中没有什么立着或被交换；不用粘合，所以量子的识亦然。",
-      "en": "Along a run, the registrations of a contextual system, each claim read with its context, are the relata of one world, each active exactly where it is registered with its value; as in Frame.world, nothing stands or is exchanged in it; no gluing is used, so quantum registrations are included.",
+      "zh": "沿一个运行，语境系统所显示者，每个主张连同其语境，是一个世界的关系项，恰在以其值被显示处活跃；如 Frame.world，其中没有什么立着或被交换；不用粘合，所以量子测量所显示者亦然。",
+      "en": "Along a run, what a contextual system shows, each claim read with its context, are the relata of one world, each active exactly where it is shown with its value; as in Frame.world, nothing stands or is exchanged in it; no gluing is used, so what quantum measurements show is included.",
       "declarations": [
         "Becoming.Contextual.world",
         "Becoming.Contextual.world_active"
@@ -63,14 +63,14 @@
   ],
   "does_not_show": [
     {
-      "zh": "诸读法粘合：量子的识不粘合（Square.no_context_free_values）。",
-      "en": "That the readings of an unfolding glue: quantum registrations do not (Square.no_context_free_values).",
+      "zh": "诸读法粘合：量子测量所显示者不粘合（Square.no_context_free_values）。",
+      "en": "That the readings of an unfolding glue: what quantum measurements show does not (Square.no_context_free_values).",
       "kind": "scope",
       "witness": "Becoming.Square.no_context_free_values"
     },
     {
-      "zh": "Contextual.world 的关系项是被索引的主张，活跃即被识，其中没有什么立着或被交换：它不说明诸读法组成一个有流与依存网的世界。",
-      "en": "The relata of Contextual.world are indexed claims, active where registered, and nothing stands or is exchanged in it: it does not show that the readings form a world with a flow and a web.",
+      "zh": "Contextual.world 的关系项是被索引的主张，活跃即被显示，其中没有什么立着或被交换：它不说明诸读法组成一个有流与依存网的世界。",
+      "en": "The relata of Contextual.world are indexed claims, active where shown, and nothing stands or is exchanged in it: it does not show that the readings form a world with a flow and a web.",
       "kind": "scope"
     },
     {
@@ -93,8 +93,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
       "detail": {
-        "zh": "Mermin–Peres 方阵：诸识无处粘合（Square.no_whole），量子比特实现它（Becoming.Quantum）；按 Contextual.world 它们仍是一个世界的关系项。",
-        "en": "The Mermin–Peres square: its registrations glue nowhere (Square.no_whole), and qubits realize it (Becoming.Quantum); by Contextual.world they are still the relata of one world."
+        "zh": "Mermin–Peres 方阵：诸语境所显示者无处粘合（Square.no_whole），量子比特实现它（Becoming.Quantum）；按 Contextual.world 它们仍是一个世界的关系项。",
+        "en": "The Mermin–Peres square: what its contexts show glues nowhere (Square.no_whole), and qubits realize it (Becoming.Quantum); by Contextual.world they are still the relata of one world."
       }
     }
   ],
@@ -137,8 +137,8 @@
       },
       "interface": {
         "output": {
-          "zh": "语境中的识；粘合恰当语境相合；不依语境的主张的框架恰在处处粘合时相合。",
-          "en": "Registrations in context; gluing exactly where contexts agree; a frame of context-free claims fitting exactly where they glue everywhere."
+          "zh": "语境中显示的主张；粘合恰当语境相合；不依语境的主张的框架恰在处处粘合时相合。",
+          "en": "Claims shown in context; gluing exactly where contexts agree; a frame of context-free claims fitting exactly where they glue everywhere."
         },
         "input": {
           "zh": "诸读法是一个世界；两种变化读法的粘合。",

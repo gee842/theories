@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "一个储量之差只往它的下游去；对每个读入每个条件的律，只在储量上不同的进程在其下游之外都相同，所以一个形成只能经它所读的、在储量下游的水平识储量，所观察者是长度为零的路线；路线由闭合而形成。",
-    "en": "A stock's difference goes only downstream; for every law reading into each condition, courses apart only in the stock are alike off its downstream, so a formation can register it only through a level it reads downstream, observing it being the route of length zero; a route forms by closing."
+    "zh": "一个储量之差只往它的下游去；对每个读入每个条件的律，只在储量上不同的进程在其下游之外都相同，所以储量只能经形成所读的、在储量下游的水平耦合入它，经水平耦合入是长度为零的路线；路线由闭合而形成。",
+    "en": "A stock's difference goes only downstream; for every law reading into each condition, courses apart only in the stock are alike off its downstream, so the stock can couple into a formation only through a level the formation reads downstream, coupling in by level being the route of length zero; a route forms by closing."
   },
   "laws": [
     {
@@ -35,8 +35,8 @@
       ]
     },
     {
-      "zh": "读入每个条件：形成与一个条件的交换只由时程为那个条件所标的水平决定。读一个时程的律是对所有条件读得一样的特例，经识而读的律也是；未读入的水平耦合强度为零，所以限于所读的强度是律的强度，其路线是所读的路线。",
-      "en": "Reading into each condition: what a formation exchanges with a condition is fixed by the levels the schedule marks for that condition. A law reading a schedule is the case reading alike for every condition, and so is a law reading through a registration; a level unread into a condition is coupled into it with strength zero, so the strengths restricted to what is read are strengths of the law, and their routes are routes of reading.",
+      "zh": "读入每个条件：形成与一个条件的交换只由时程为那个条件所标的水平决定。读一个时程的律是对所有条件读得一样的特例，经耦合而读的律也是；未读入的水平耦合强度为零，所以限于所读的强度是律的强度，其路线是所读的路线。",
+      "en": "Reading into each condition: what a formation exchanges with a condition is fixed by the levels the schedule marks for that condition. A law reading a schedule is the case reading alike for every condition, and so is a law reading through a coupling; a level unread into a condition is coupled into it with strength zero, so the strengths restricted to what is read are strengths of the law, and their routes are routes of reading.",
       "declarations": [
         "Becoming.ExchangeLaw.ReadsInto",
         "Becoming.readCouplings",
@@ -50,8 +50,8 @@
       ]
     },
     {
-      "zh": "所识不出下游：对每个读入每个条件一个时程、所读水平列出的律，两个平衡的进程在场的形成相同、部分动作相同、其余遵从律，起始只在一个储量上不同时，在每一步凡不在储量下游（按到那一步形成的所读路线）的条件都相同；所以一个形成所读入的水平都不在下游时它的交换相同，经识而读的律所识者都不在下游时也是。所观察的储量是长度为零的路线。",
-      "en": "Registering lies within the downstream: for every law reading into each condition a schedule of listed levels, two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in a stock, are alike at each step at every condition not downstream of the stock by the readings formed by then; so a formation whose readings into a condition all lie off the downstream exchanges alike, and so does one reading through registration whose registrations all lie off it. The stock observed is the route of length zero.",
+      "zh": "差所到之处在下游之内：对每个读入每个条件一个时程、所读水平列出的律，两个平衡的进程在场的形成相同、部分动作相同、其余遵从律，起始只在一个储量上不同时，在每一步凡不在储量下游（按到那一步形成的所读路线）的条件都相同；所以一个形成所读入的水平都不在下游时它的交换相同，经耦合而读的律中耦合入的都不在下游时也是。经水平耦合入的储量是长度为零的路线。",
+      "en": "What a difference reaches lies within the downstream: for every law reading into each condition a schedule of listed levels, two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in a stock, are alike at each step at every condition not downstream of the stock by the readings formed by then; so a formation whose readings into a condition all lie off the downstream exchanges alike, and so does one, under a law reading through the couplings, all of whose couplings lie off it. The stock coupled in by level is the route of length zero.",
       "declarations": [
         "Becoming.apart_only_downstream",
         "Becoming.exchange_alike_off_downstream",
@@ -175,8 +175,8 @@
           "en": "Couplings, chains, loops, upstream."
         },
         "input": {
-          "zh": "差所到之处在下游；所识者在下游。",
-          "en": "Where a difference arrives lies downstream; what is registered lies downstream."
+          "zh": "差所到之处在下游；耦合入者在下游。",
+          "en": "Where a difference arrives lies downstream; what couples in lies downstream."
         },
         "conditions": {
           "zh": "无。",
@@ -221,8 +221,8 @@
           "en": "Laws reading a schedule; holding until read."
         },
         "input": {
-          "zh": "读入每个条件；经识而读者的所识在下游。",
-          "en": "Reading into each condition; what a law reading through registration registers lies downstream."
+          "zh": "读入每个条件；经耦合而读者，耦合入的在下游。",
+          "en": "Reading into each condition; for a law reading through the couplings, what couples in lies downstream."
         },
         "conditions": {
           "zh": "无。",
@@ -240,8 +240,8 @@
       },
       "interface": {
         "output": {
-          "zh": "交换之律；经识而读；进程遵从律。",
-          "en": "Laws of exchange; reading through registration; courses following a law."
+          "zh": "交换之律；经耦合而读；进程遵从律。",
+          "en": "Laws of exchange; reading through the couplings; courses following a law."
         },
         "input": {
           "zh": "只在下游不同。",

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "id": "only-the-order-of-change-registers",
   "title": {
-    "zh": "只有变化的次序被登记",
-    "en": "Only the order of change registers"
+    "zh": "只有变化的次序显出",
+    "en": "Only the order of change shows"
   },
   "kind": "theorem",
   "status": "recorded-checked",
@@ -32,8 +32,8 @@
     }
   ],
   "correspondence": {
-    "zh": "P78（工作板），按 Ren 2026-10-12 的“move towards 100%”：零前提计划把共享的离散步序号列为表示的承诺，像 P69 对出发点那样重新奠基。这里给出 Sampling 的严格递增读法的逆：插入空步。读法（AI 的，依 Ren 的交托采用）：对一步的规律、段上的总量与计数以及复现，步序号不携带变化次序以外的东西；空步什么也不登记；每步所计的相对于读法的单位，正如较粗的步。见整合文档 §102。",
-    "en": "P78 (work board), following Ren's “move towards 100%” of 12 October 2026: the zero-premise plan lists a shared discrete index of steps among the commitments of the representation, to be re-founded as P69 re-founded the starting point. This gives the converse of Sampling's strictly increasing reading: inserting idle steps. Reading (the AI's, adopted on Ren's delegation): for the laws of one step, the totals and counts over a stretch, and recurrence, the step index carries nothing beyond the order of change; an idle step registers nothing; what is counted per step is relative to the unit of the reading, as with coarser steps. See the integration document §102."
+    "zh": "P78（工作板），按 Ren 2026-10-12 的“move towards 100%”：零前提计划把共享的离散步序号列为表示的承诺，像 P69 对出发点那样重新奠基。这里给出 Sampling 的严格递增读法的逆：插入空步。读法（AI 的，依 Ren 的交托采用）：对一步的规律、段上的总量与计数以及复现，步序号不携带变化次序以外的东西；空步什么也不显出；每步所计的相对于读法的单位，正如较粗的步。见整合文档 §102。",
+    "en": "P78 (work board), following Ren's “move towards 100%” of 12 October 2026: the zero-premise plan lists a shared discrete index of steps among the commitments of the representation, to be re-founded as P69 re-founded the starting point. This gives the converse of Sampling's strictly increasing reading: inserting idle steps. Reading (the AI's, adopted on Ren's delegation): for the laws of one step, the totals and counts over a stretch, and recurrence, the step index carries nothing beyond the order of change; an idle step shows nothing; what is counted per step is relative to the unit of the reading, as with coarser steps. See the integration document §102."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
   "aliases": [

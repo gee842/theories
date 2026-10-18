@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-14T08:40:00+00:00",
   "statement": {
-    "zh": "确定是相同之下的确定的命名情形，关于配置如何相关的律在相同之下成立，包括描述何时承载规律；对相同者之一的干预、未登记的过去与未登记的描述需要相等。",
-    "en": "Determinacy is the named case of determinacy up to likeness, and the laws on how configurations relate hold up to likeness, including when a description carries a law; an intervention on one of alike configurations, an unregistered past and an unregistered description need equality."
+    "zh": "确定是相同之下的确定的命名情形，关于配置如何相关的律在相同之下成立，包括描述何时承载规律；对相同者之一的干预、没有主张分开的过去与没有主张分开的描述需要相等。",
+    "en": "Determinacy is the named case of determinacy up to likeness, and the laws on how configurations relate hold up to likeness, including when a description carries a law; an intervention on one of alike configurations, a past no claim tells apart and a description no claim tells apart need equality."
   },
   "laws": [
     {
@@ -96,8 +96,8 @@
       ]
     },
     {
-      "zh": "差别制造的二分只需以该动作由扣除后的配置出发的每一步到达条件的同一水平：此时或者那一部分造成差别，或者同一动作仍断裂依存；登记该水平的主张之下的相同之下的确定，以及确定，都是其情形。",
-      "en": "The dichotomy of difference-making needs only that every step by the move from the withheld configuration reaches one level of the condition: then either the part makes the difference or the same move still breaks the dependence; determinacy up to likeness under claims registering that level, and determinacy, are cases.",
+      "zh": "差别制造的二分只需以该动作由扣除后的配置出发的每一步到达条件的同一水平：此时或者那一部分造成差别，或者同一动作仍断裂依存；分开该水平的主张之下的相同之下的确定，以及确定，都是其情形。",
+      "en": "The dichotomy of difference-making needs only that every step by the move from the withheld configuration reaches one level of the condition: then either the part makes the difference or the same move still breaks the dependence; determinacy up to likeness under claims telling that level apart, and determinacy, are cases.",
       "declarations": [
         "Becoming.Dependence.dichotomy_of_same_level",
         "Becoming.Dependence.dichotomy_of_determinedAt",
@@ -107,8 +107,8 @@
       ]
     },
     {
-      "zh": "经投影读时，在与所命名者相同的描述处未取的动作，在相同之下不被固定，对在一个主张上不同的结果：在描述上任何相同之下确定、容许如此读的各步的过程之下都是如此，所以凡是有登记主张的等价使配置同行之处都是如此。",
-      "en": "Read through a projection, a move not taken at a description alike to the one named is not fixed up to likeness, for outcomes that differ in a claim: so under any process on the descriptions, determined up to likeness, that admits the steps so read, and so wherever some equivalence registering the claims makes configurations go alike.",
+      "zh": "经投影读时，在与所命名者相同的描述处未取的动作，在相同之下不被固定，对在一个主张上不同的结果：在描述上任何相同之下确定、容许如此读的各步的过程之下都是如此，所以凡是有尊重主张的等价使配置同行之处都是如此。",
+      "en": "Read through a projection, a move not taken at a description alike to the one named is not fixed up to likeness, for outcomes that differ in a claim: so under any process on the descriptions, determined up to likeness, that admits the steps so read, and so wherever some equivalence respecting the claims makes configurations go alike.",
       "declarations": [
         "Becoming.Run.TakesThroughAlike",
         "Becoming.Run.FixesThroughAlike",
@@ -119,8 +119,8 @@
       ]
     },
     {
-      "zh": "对相同配置之一的干预破坏相同之下的确定；保留的历史在没有什么登记过去时在相同之下返回，所以保留的历史只在过去被登记时是新的。",
-      "en": "An intervention on one of two alike configurations breaks determinacy up to likeness; a kept history returns up to likeness where its present does and nothing registers the past, so a kept history is new only with its past registered.",
+      "zh": "对相同配置之一的干预破坏相同之下的确定；保留的历史在没有主张分开过去时在相同之下返回，所以保留的历史只在有主张分开过去时是新的。",
+      "en": "An intervention on one of two alike configurations breaks determinacy up to likeness; a kept history returns up to likeness where its present does and no claim tells the past apart, so a kept history is new only where a claim tells its past apart.",
       "declarations": [
         "Becoming.Twins.retarget_breaks",
         "Becoming.keepFrame",
@@ -139,8 +139,8 @@
   ],
   "hypotheses": [
     {
-      "zh": "不加前提：每条律写出自己的条件，其中有用到之处的相同之下的确定，以及登记所比较者的主张；相同是互模拟，不取商。",
-      "en": "No premise: each law states its conditions, among them determinacy up to likeness where it is used and claims that register what is compared; likeness is bisimulation, with no quotient taken."
+      "zh": "不加前提：每条律写出自己的条件，其中有用到之处的相同之下的确定，以及分开所比较者的主张；相同是互模拟，不取商。",
+      "en": "No premise: each law states its conditions, among them determinacy up to likeness where it is used and claims that tell apart what is compared; likeness is bisimulation, with no quotient taken."
     }
   ],
   "does_not_show": [
@@ -176,12 +176,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Branching (receipt 20261013T094743.528770Z; current bytes bound by 20261013T221720.428753Z) and of Becoming.Likeness (receipt 20261014T100026.593496Z) have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "zh": "刻画需要比主张更细之登记的律，超出这三个见证。",
-    "en": "A characterization of the laws that need a registration finer than the claims, beyond the three witnesses."
+    "zh": "刻画需要比主张更细之切分的律，超出这三个见证。",
+    "en": "A characterization of the laws that need a split finer than the claims, beyond the three witnesses."
   },
   "correspondence": {
-    "zh": "读法（AI 的；Ren 2026-10-14 同意此方向）：相同是展开自身的配置同一；在相同之下成立的确定定理关乎配置如何相关，需要相等的那些依赖于所登记的（相等是最细的登记，即命名，规律 1）：对相同者中一个名字的干预、没有登记的过去、没有登记的描述。没有登记的既不被固定也不被否证（比较 Becoming.Testing 的登记）。在相同之下，承载规律的是一个登记主张的等价，而不只是像：每个描述就是自己的主张时它是相等。见整合文档 §99 与 Becoming.Likeness 一节。",
-    "en": "Reading (the AI's; Ren agreed with its direction on 14 October 2026): likeness is the unfolding's own identity of configurations; the theorems with determinacy that hold up to likeness are about how configurations relate, and those that need equality depend on what is registered, equality being the finest registration, naming (law 1): an intervention on one name among alike configurations, a past nothing registers, a description nothing registers. What nothing registers is neither fixed nor refuted (compare the registers of Becoming.Testing). Up to likeness a law is carried by an equivalence that registers the claims, not by the image alone; where each description is its own claim, that equivalence is equality. See §99 of the integration note and its section on Becoming.Likeness."
+    "zh": "读法（AI 的；Ren 2026-10-14 同意此方向）：相同是展开自身的配置同一；在相同之下成立的确定定理关乎配置如何相关，需要相等的那些依赖于主张所分开的（相等是最细的切分，即命名，规律 1）：对相同者中一个名字的干预、没有主张分开的过去、没有主张分开的描述。没有主张分开的既不被固定也不被否证（比较 Becoming.Testing 中形成能检验的主张）。在相同之下，承载规律的是一个尊重主张的等价，而不只是像：每个描述就是自己的主张时它是相等。见整合文档 §99 与 Becoming.Likeness 一节。",
+    "en": "Reading (the AI's; Ren agreed with its direction on 14 October 2026): likeness is the unfolding's own identity of configurations; the theorems with determinacy that hold up to likeness are about how configurations relate, and those that need equality depend on what the claims tell apart, equality being the finest split, naming (law 1): an intervention on one name among alike configurations, a past no claim tells apart, a description no claim tells apart. What no claim tells apart is neither fixed nor refuted (compare the claims a formation can test in Becoming.Testing). Up to likeness a law is carried by an equivalence that respects the claims, not by the image alone; where each description is its own claim, that equivalence is equality. See §99 of the integration note and its section on Becoming.Likeness."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
   "aliases": [
@@ -260,8 +260,8 @@
           "en": "Mechanism and standard causal models."
         },
         "input": {
-          "zh": "相同之下的形式与需要登记之处。",
-          "en": "The forms up to likeness and where registration is needed."
+          "zh": "相同之下的形式与需要相等之处。",
+          "en": "The forms up to likeness and where equality is needed."
         },
         "conditions": {
           "zh": "无。",

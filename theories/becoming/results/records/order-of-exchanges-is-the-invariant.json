@@ -85,7 +85,7 @@
       "id": "only-the-order-of-change-registers",
       "detail": {
         "zh": "停顿与空步的移除说明步序号本身不被计入；本记录说明在其余的次序中被计入的是相连交换的偏序。",
-        "en": "Stuttering and the removal of idle steps show the step index itself registers nothing; this record shows that within the rest of the order what registers is the partial order of joined exchanges."
+        "en": "Stuttering and the removal of idle steps show the step index itself shows nothing; this record shows that within the rest of the order what shows is the partial order of joined exchanges."
       }
     },
     {

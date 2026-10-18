@@ -390,8 +390,8 @@
     {
       "id": "feedback-and-reach",
       "detail": {
-        "zh": "形成经支持只识得与其所依存者的交换，影响闭包之外的在闭包之内不被识（Flow.Balances.uncoupled_beyond_influence）；终结经供给者返回，是在影响闭包之内。",
-        "en": "A formation's support registers only its exchanges with what it depends on, and nothing beyond the influence closure registers within it (Flow.Balances.uncoupled_beyond_influence); an ending returning through a feeder lies within the influence closure."
+        "zh": "形成的支持只随与其所依存者的交换，影响闭包之外的在闭包之内不显出（Flow.Balances.uncoupled_beyond_influence）；终结经供给者返回，是在影响闭包之内。",
+        "en": "A formation's support follows only its exchanges with what it depends on, and nothing beyond the influence closure shows within it (Flow.Balances.uncoupled_beyond_influence); an ending returning through a feeder lies within the influence closure."
       }
     }
   ],

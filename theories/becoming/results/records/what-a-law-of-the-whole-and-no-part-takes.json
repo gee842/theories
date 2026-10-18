@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "条件编号时，最小的识的反例，如每个整体而无部分之律，恰在一个规则判定每个布尔序列是否处处为假之处存在：弱有限全知原则作为规则。消失之判定恰是有限全知原则作为规则。",
-    "en": "With numbered conditions, a counterexample to the least registration, like every law of the whole and no part, exists exactly where a rule decides of every Boolean sequence whether it is false throughout: WLPO as a rule. The decision of vanishing is exactly LPO as a rule."
+    "zh": "条件编号时，最小的耦合的反例，如每个整体而无部分之律，恰在一个规则判定每个布尔序列是否处处为假之处存在：弱有限全知原则作为规则。消失之判定恰是有限全知原则作为规则。",
+    "en": "With numbered conditions, a counterexample to the least coupling, like every law of the whole and no part, exists exactly where a rule decides of every Boolean sequence whether it is false throughout: WLPO as a rule. The decision of vanishing is exactly LPO as a rule."
   },
   "laws": [
     {
@@ -24,8 +24,8 @@
       ]
     },
     {
-      "zh": "整体之律在每步与每个条件交换水平在第 0 步所读的数。这个数不被任何条件改变时，律读已立者，不敏感于每个条件，经从任一条件起的各条件而读；这个数有差别时，它不经其敏感而读，不读有限多个条件，没有最小的识。尾之律是消失之指示的整体之律。",
-      "en": "The law of a whole exchanges at every step a number read off the levels at step 0. Where no condition changes the number, it reads what has stood, is insensitive to every condition and reads through the conditions from any one on; where the number differs, it does not read through what it is sensitive to, nor finitely many conditions, and has no least registration. The tail law is that of the indicator of vanishing.",
+      "zh": "整体之律在每步与每个条件交换水平在第 0 步所读的数。这个数不被任何条件改变时，律读已立者，不敏感于每个条件，经从任一条件起的各条件而读；这个数有差别时，它不经其敏感而读，不读有限多个条件，没有最小的耦合。尾之律是消失之指示的整体之律。",
+      "en": "The law of a whole exchanges at every step a number read off the levels at step 0. Where no condition changes the number, it reads what has stood, is insensitive to every condition and reads through the conditions from any one on; where the number differs, it does not read through what it is sensitive to, nor finitely many conditions, and has no least coupling. The tail law is that of the indicator of vanishing.",
       "declarations": [
         "Becoming.wholeLaw",
         "Becoming.wholeLaw_nonanticipating",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "zh": "沿一个布尔序列混合两段历史，再比较两个数；比较是判定的，所以混合给出一个规则，对每个布尔序列判定它是否处处为假。在某步不敏感于每个条件而仍有差别的律，与最小的识的每个反例，各给出这样的规则；规则给出弱有限全知原则。",
+      "zh": "沿一个布尔序列混合两段历史，再比较两个数；比较是判定的，所以混合给出一个规则，对每个布尔序列判定它是否处处为假。在某步不敏感于每个条件而仍有差别的律，与最小的耦合的每个反例，各给出这样的规则；规则给出弱有限全知原则。",
       "en": "Mixing two histories along a Boolean sequence ends by comparing two numbers, which is decided, so the mix gives a rule deciding, of every Boolean sequence, whether it is false throughout. A law insensitive at a step to every condition that still differs there, and every counterexample to the least registration, each give such a rule; the rule gives the weak limited principle of omniscience.",
       "declarations": [
         "Becoming.mixedDecision",
@@ -79,8 +79,8 @@
       ]
     },
     {
-      "zh": "条件以自然数编号时，不被任何条件改变而仍有差别的数、在某步不敏感于每个条件而仍有差别的律、最小的识的反例，各恰在一个规则判定每个布尔序列是否处处为假之处存在。",
-      "en": "With the conditions numbered by the natural numbers, a number changed by no condition that still differs, a law insensitive at a step to every condition that still differs there, and a counterexample to the least registration each exist exactly where a rule decides, of every Boolean sequence, whether it is false throughout.",
+      "zh": "条件以自然数编号时，不被任何条件改变而仍有差别的数、在某步不敏感于每个条件而仍有差别的律、最小的耦合的反例，各恰在一个规则判定每个布尔序列是否处处为假之处存在。",
+      "en": "With the conditions numbered by the natural numbers, a number changed by no condition that still differs, a law insensitive at a step to every condition that still differs there, and a counterexample to the least coupling each exist exactly where a rule decides, of every Boolean sequence, whether it is false throughout.",
       "declarations": [
         "Becoming.changedByNoCondition_iff_rule",
         "Becoming.insensitive_differs_iff_rule",
@@ -141,8 +141,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean",
       "detail": {
-        "zh": "永不消失之律（给定规则）：读已立者，不敏感于每个条件而仍有差别：只由弱有限全知原则作为规则造出的最小的识的反例。",
-        "en": "The law of levels that never vanish (given the rule): it reads what has stood, is insensitive to every condition and still differs: a counterexample to the least registration built from the weak limited principle of omniscience as a rule alone."
+        "zh": "永不消失之律（给定规则）：读已立者，不敏感于每个条件而仍有差别：只由弱有限全知原则作为规则造出的最小的耦合的反例。",
+        "en": "The law of levels that never vanish (given the rule): it reads what has stood, is insensitive to every condition and still differs: a counterexample to the least coupling built from the weak limited principle of omniscience as a rule alone."
       }
     }
   ],
@@ -195,8 +195,8 @@
           "en": "Vanishing and its indicator; the tail law; mixing along a sequence giving alike; the weak limited principle of omniscience; a law reading finitely many conditions and sensitive to none giving alike."
         },
         "input": {
-          "zh": "反例与规则的当且仅当；整体之律与其无最小的识；尾之律作为实例；永不消失之指示。",
-          "en": "The equivalence of counterexamples and rules; the law of a whole with no least registration; the tail law as an instance; the indicator of never vanishing."
+          "zh": "反例与规则的当且仅当；整体之律与其无最小的耦合；尾之律作为实例；永不消失之指示。",
+          "en": "The equivalence of counterexamples and rules; the law of a whole with no least coupling; the tail law as an instance; the indicator of never vanishing."
         },
         "conditions": {
           "zh": "条件以自然数编号；规则与消失之判定作为假设。",
@@ -209,13 +209,13 @@
       "id": "counterfactual-is-the-course",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用交换律（ExchangeLaw）、给出相同、读已立者、不敏感、敏感与经识而读（Through）：反例按这些陈述。",
-        "en": "Reuses laws of exchange (ExchangeLaw), giving alike, reading what has stood, insensitivity, sensitivity and reading through a registration (Through): the counterexamples are stated through them."
+        "zh": "复用交换律（ExchangeLaw）、给出相同、读已立者、不敏感、敏感与经耦合而读（Through）：反例按这些陈述。",
+        "en": "Reuses laws of exchange (ExchangeLaw), giving alike, reading what has stood, insensitivity, sensitivity and reading through a coupling (Through): the counterexamples are stated through them."
       },
       "interface": {
         "output": {
-          "zh": "交换律；读已立者；一步的不敏感与敏感；经识而读。",
-          "en": "Laws of exchange; reading what has stood; insensitivity at a step and sensitivity; reading through a registration."
+          "zh": "交换律；读已立者；一步的不敏感与敏感；经耦合而读。",
+          "en": "Laws of exchange; reading what has stood; insensitivity at a step and sensitivity; reading through a coupling."
         },
         "input": {
           "zh": "整体之律、永不消失之律与反例的当且仅当。",

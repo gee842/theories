@@ -1,0 +1,54 @@
+# Records wisdom-root (coupling conditions; epistemic belief and evidence records stay) and unity-of-readings (what contexts show, S7), read by sense (N6).
+### record:wisdom-root
+= S1
+- 已有保持所识未来与常值描述边界
++ 已有保持经映射的未来与常值描述边界
+= S2 2
+- 及时分支另需其原前缀平衡、共同初态、登记及回应条件。
++ 及时分支另需其原前缀平衡、共同初态、耦合及回应条件。
+= S2 2
+- the timed branch additionally needs its prefix-balance, common-start, registration and response conditions.
++ the timed branch additionally needs its prefix-balance, common-start, coupling and response conditions.
+= S2
+- 比较保留经识及意义覆盖；
++ 比较保留经耦合及意义覆盖；
+= S2
+- comparison retains registration and significance coverage;
++ comparison retains coupling and significance coverage;
+= S2 @related/2/detail/zh
+- 完成本目标的形式部分：识、理（Ren 的读法）、检验、学习与推广、经识的选择与训练、够、失控、判断与元层次的规律对每个学习者与每个表示成立，不用公理。
++ 完成本目标的形式部分：耦合、理（Ren 的读法）、检验、学习与推广、经耦合的选择与训练、够、失控、判断与元层次的规律对每个外推与每个表示成立，不用公理。
+= S2 @related/2/detail/en
+- Completes this target's formal part: the laws of registration, 理 (Ren's reading), testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level hold of every learner and every representation, with no axiom.
++ Completes this target's formal part: the laws of coupling, 理 (Ren's reading), testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level hold of every extrapolation and every representation, with no axiom.
+### record:unity-of-readings
+= S7 @laws/0/zh
+- 沿一个运行，语境系统的诸识，每个主张连同其语境，是一个世界的关系项，恰在以其值被识处活跃；如 Frame.world，其中没有什么立着或被交换；不用粘合，所以量子的识亦然。
++ 沿一个运行，语境系统所显示者，每个主张连同其语境，是一个世界的关系项，恰在以其值被显示处活跃；如 Frame.world，其中没有什么立着或被交换；不用粘合，所以量子测量所显示者亦然。
+= S7 @laws/0/en
+- Along a run, the registrations of a contextual system, each claim read with its context, are the relata of one world, each active exactly where it is registered with its value; as in Frame.world, nothing stands or is exchanged in it; no gluing is used, so quantum registrations are included.
++ Along a run, what a contextual system shows, each claim read with its context, are the relata of one world, each active exactly where it is shown with its value; as in Frame.world, nothing stands or is exchanged in it; no gluing is used, so what quantum measurements show is included.
+= S7 @does_not_show/0/zh
+- 诸读法粘合：量子的识不粘合（Square.no_context_free_values）。
++ 诸读法粘合：量子测量所显示者不粘合（Square.no_context_free_values）。
+= S7 @does_not_show/0/en
+- That the readings of an unfolding glue: quantum registrations do not (Square.no_context_free_values).
++ That the readings of an unfolding glue: what quantum measurements show does not (Square.no_context_free_values).
+= S7
+- 活跃即被识，其中没有什么立着或被交换
++ 活跃即被显示，其中没有什么立着或被交换
+= S7
+- active where registered, and nothing stands
++ active where shown, and nothing stands
+= S7
+- Mermin–Peres 方阵：诸识无处粘合
++ Mermin–Peres 方阵：诸语境所显示者无处粘合
+= S7
+- The Mermin–Peres square: its registrations glue nowhere
++ The Mermin–Peres square: what its contexts show glues nowhere
+= S7 @dependencies/0/interface/output/zh
+- 语境中的识；粘合恰当语境相合；不依语境的主张的框架恰在处处粘合时相合。
++ 语境中显示的主张；粘合恰当语境相合；不依语境的主张的框架恰在处处粘合时相合。
+= S7 @dependencies/0/interface/output/en
+- Registrations in context; gluing exactly where contexts agree; a frame of context-free claims fitting exactly where they glue everywhere.
++ Claims shown in context; gluing exactly where contexts agree; a frame of context-free claims fitting exactly where they glue everywhere.

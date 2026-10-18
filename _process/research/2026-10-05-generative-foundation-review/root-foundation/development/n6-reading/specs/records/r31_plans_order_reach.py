@@ -1,0 +1,22 @@
+"""Records finite-continuation-plans (the values a step keeps, following Becoming.Keeping), exchanges-commute-unless-joined (the order shows), comparison-within-reach and closing-needs-net-draw (feedback carries; the rest responds through its couplings), read by sense (N6)."""
+RECS=[('finite-continuation-plans',[
+("S1","@counterexamples/1/detail/zh","对任意的值，每个被保持之类在每个进程中都有方案，恰是对所保持之值的选择（plans_iff_choice）：外围 viable_iff_plan 的 choose 在一般情形不能去掉；值可列举时不需要（keptFor_iff_plan）。"),
+("S1","@counterexamples/1/detail/en","For arbitrary values, kept classes having plans in every process is exactly choice over the values kept (plans_iff_choice): the periphery’s choose in viable_iff_plan cannot be dropped in general, and is not needed where the values are listed (keptFor_iff_plan)."),
+]),('exchanges-commute-unless-joined',[
+("S2","次序恰经共享的关系项或依存被登记。","次序恰经共享的关系项或依存显出。"),
+("S2","the order registers through a shared relatum or a dependence.","the order shows through a shared relatum or a dependence."),
+("S2","次序经依存与共享的关系项被登记，各有见证。","次序经依存与共享的关系项显出，各有见证。"),
+("S2","The order registers through dependence and through a shared relatum, each with a witness.","The order shows through dependence and through a shared relatum, each with a witness."),
+("S2","在次序之内，被登记的是经关系项或依存相连的交换的次序；","在次序之内，显出的是经关系项或依存相连的交换的次序；"),
+("S2","within the order, what registers is the order of exchanges joined through a relatum or a dependence;","within the order, what shows is the order of exchanges joined through a relatum or a dependence;"),
+]),('comparison-within-reach',[
+("S2","经他者回应的效果不在比较中被识","经他者回应的效果不在比较中显出"),
+("S2","effects through others' responses do not register in the comparison","effects through others' responses do not show in the comparison"),
+("S2","给出不另给“其余只经其识回应”这一前提","给出不另给“其余只经其耦合回应”这一前提"),
+("S2","without supplying that the rest responds only through its registration","without supplying that the rest responds only through its couplings"),
+("S2","影响闭包读一个形成自身的反馈在效果经他者的支持与活动传递时所能识的；","影响闭包读一个形成自身的反馈在效果经他者的支持与活动传递时所能承载的；"),
+("S2","the influence closure reads what a formation's own feedback can register once effects pass","the influence closure reads what a formation's own feedback can carry once effects pass"),
+]),('closing-needs-net-draw',[
+("S2","给出其余经其识回应时差别所能到达之处","给出其余经其耦合回应时差别所能到达之处"),
+("S2","when the rest responds through its registration,","when the rest responds through its couplings,"),
+])]

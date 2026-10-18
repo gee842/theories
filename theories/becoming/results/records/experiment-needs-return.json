@@ -26,8 +26,8 @@
       ]
     },
     {
-      "zh": "运行在某步之前取过 a 于 s，记录就把它固定为运行所到之处；P 确定、有两个不同的配置而运行没有取过 a 于 s 时，记录不固定它的任何结果，无论什么被识：把 a 在 s 改送到任一配置、其余不变的过程仍确定，并容许运行的每一步。",
-      "en": "Once the run has taken a at s, the record fixes it to where the run went; where P is determined, there are two different configurations and the run has not taken a at s, the record fixes no outcome of it, whatever registers: the process sending a at s to any configuration and otherwise as P is still determined and admits every step of the run.",
+      "zh": "运行在某步之前取过 a 于 s，记录就把它固定为运行所到之处；P 确定、有两个不同的配置而运行没有取过 a 于 s 时，记录不固定它的任何结果，无论读的是什么：把 a 在 s 改送到任一配置、其余不变的过程仍确定，并容许运行的每一步。",
+      "en": "Once the run has taken a at s, the record fixes it to where the run went; where P is determined, there are two different configurations and the run has not taken a at s, the record fixes no outcome of it, whatever is read: the process sending a at s to any configuration and otherwise as P is still determined and admits every step of the run.",
       "declarations": [
         "Becoming.Run.fixes_of_takes",
         "Becoming.retarget",
@@ -148,8 +148,8 @@
       "kind": "correspondence"
     },
     {
-      "zh": "与 Becoming.Testing 的识的形式桥接没有陈述。",
-      "en": "The formal bridge to Becoming.Testing's registration is not stated.",
+      "zh": "与 Becoming.Testing 的耦合的形式桥接没有陈述。",
+      "en": "The formal bridge to the couplings of Becoming.Testing is not stated.",
       "kind": "scope"
     },
     {
@@ -177,12 +177,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z): the theorems of Becoming.Experiment have empty axiom reports, and the checker verifies core purity; Experiment, Recurrence and Frame are bound by 20261013T094743.528770Z, Joint by 20261013T221720.428753Z, Testing by 20261014T091930.724493Z. Author counterreview in the integration note; at Ren's “no extra review needed” there is no independent review."
   },
   "next_delta": {
-    "zh": "以 Becoming.Testing 的识为投影的形式桥接（见 projection-carrying-a-law 与 generalization-through-lumping）；动作与隐藏者的何种相关使模型永不被否证的一般形式；动作中被遗忘的部分造成差别时的实验（见 causal-models-as-processes）。",
-    "en": "The formal bridge with Becoming.Testing's registration as the projection (see projection-carrying-a-law and generalization-through-lumping); the general form of which correlation between moves and what is hidden leaves a model unrefuted; experiment where a forgotten part of the move makes a difference (see causal-models-as-processes)."
+    "zh": "以 Becoming.Testing 中耦合所成的归并为投影的形式桥接（见 projection-carrying-a-law 与 generalization-through-lumping）；动作与隐藏者的何种相关使模型永不被否证的一般形式；动作中被遗忘的部分造成差别时的实验（见 causal-models-as-processes）。",
+    "en": "The formal bridge with the lumping the couplings make in Becoming.Testing as the projection (see projection-carrying-a-law and generalization-through-lumping); the general form of which correlation between moves and what is hidden leaves a model unrefuted; experiment where a forgotten part of the move makes a difference (see causal-models-as-processes)."
   },
   "correspondence": {
-    "zh": "testing-within-registration 留下的开放项（审查 F6）：一个动作造成什么，是有与无此动作的两段历史的比较。Ren 在那一结果落地后写“land and merge all, then continue”，看过结果后写“no extra review needed, merge, then continue”。读法（AI 的，依 Ren 的交托采用）：实验是在配置（按实验者的读法）返回之处变动自己的动作；重复是这一返回；对照是步骤经读法分解的模型；与略去者无关的变动是随机化的结构形式；以 testing-within-registration 的识为读法，阈下与所及之外的不见是不分解的情形。",
-    "en": "The open item of testing-within-registration (review F6): what an act does compares the history with it and the history without it. After that result landed Ren wrote “land and merge all, then continue”, and on the result “no extra review needed, merge, then continue”. Readings (the AI's, adopted on Ren's delegation): an experiment is varying one's own act where the configuration, as the experimenter reads it, returns; replication is that return; a control is the model that the step factors through the reading; variation independent of what is left out is the structural form of randomization; with the registration of testing-within-registration as the reading, threshold and reach blindness are cases where the step does not factor."
+    "zh": "testing-within-registration 留下的开放项（审查 F6）：一个动作造成什么，是有与无此动作的两段历史的比较。Ren 在那一结果落地后写“land and merge all, then continue”，看过结果后写“no extra review needed, merge, then continue”。读法（AI 的，依 Ren 的交托采用）：实验是在配置（按实验者的读法）返回之处变动自己的动作；重复是这一返回；对照是步骤经读法分解的模型；与略去者无关的变动是随机化的结构形式；以 testing-within-registration 的耦合为读法，阈下与所及之外的不显出是不分解的情形。",
+    "en": "The open item of testing-within-registration (review F6): what an act does compares the history with it and the history without it. After that result landed Ren wrote “land and merge all, then continue”, and on the result “no extra review needed, merge, then continue”. Readings (the AI's, adopted on Ren's delegation): an experiment is varying one's own act where the configuration, as the experimenter reads it, returns; replication is that return; a control is the model that the step factors through the reading; variation independent of what is left out is the structural form of randomization; with the couplings of testing-within-registration as the reading, what does not show below the threshold or beyond the reach is a case where the step does not factor."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
   "aliases": [
@@ -299,8 +299,8 @@
     {
       "id": "subthreshold-registration",
       "detail": {
-        "zh": "那里交换随识时阈下的差别保持；这里，以识为投影，阈下的不见是步骤不经所识者分解的情形（读法）。",
-        "en": "There a difference below the threshold stays where the exchange follows registration; here, with registration as the projection, blindness below the threshold is a case where the step does not factor through what registers (a reading)."
+        "zh": "那里交换随耦合入者时阈下的差别保持；这里，以耦合为投影，阈下的差别不显出是步骤不经耦合入者分解的情形（读法）。",
+        "en": "There a difference below the threshold stays where the exchange follows what couples in; here, with the couplings as the projection, a difference below the threshold not showing is a case where the step does not factor through what couples in (a reading)."
       }
     }
   ],

@@ -1,0 +1,19 @@
+"""Record determinacy-up-to-likeness, read by sense (N6): what claims register becomes what they tell apart (S6), following chapter §2; the experiment sense of "record" and of refuting a confound stays."""
+REC=('determinacy-up-to-likeness',[
+("S6","@statement/zh","确定是相同之下的确定的命名情形，关于配置如何相关的律在相同之下成立，包括描述何时承载规律；对相同者之一的干预、没有主张分开的过去与没有主张分开的描述需要相等。"),
+("S6","@statement/en","Determinacy is the named case of determinacy up to likeness, and the laws on how configurations relate hold up to likeness, including when a description carries a law; an intervention on one of alike configurations, a past no claim tells apart and a description no claim tells apart need equality."),
+("S6","登记该水平的主张之下的相同之下的确定","分开该水平的主张之下的相同之下的确定"),
+("S6","under claims registering that level","under claims telling that level apart"),
+("S6","所以凡是有登记主张的等价使配置同行之处都是如此。","所以凡是有尊重主张的等价使配置同行之处都是如此。"),
+("S6","wherever some equivalence registering the claims makes configurations go alike.","wherever some equivalence respecting the claims makes configurations go alike."),
+("S6","@laws/10/zh","对相同配置之一的干预破坏相同之下的确定；保留的历史在没有主张分开过去时在相同之下返回，所以保留的历史只在有主张分开过去时是新的。"),
+("S6","@laws/10/en","An intervention on one of two alike configurations breaks determinacy up to likeness; a kept history returns up to likeness where its present does and no claim tells the past apart, so a kept history is new only where a claim tells its past apart."),
+("S6","以及登记所比较者的主张","以及分开所比较者的主张"),
+("S6","and claims that register what is compared","and claims that tell apart what is compared"),
+("S6","@next_delta/zh","刻画需要比主张更细之切分的律，超出这三个见证。"),
+("S6","@next_delta/en","A characterization of the laws that need a split finer than the claims, beyond the three witnesses."),
+("S6","需要相等的那些依赖于所登记的（相等是最细的登记，即命名，规律 1）：对相同者中一个名字的干预、没有登记的过去、没有登记的描述。没有登记的既不被固定也不被否证（比较 Becoming.Testing 的登记）。在相同之下，承载规律的是一个登记主张的等价，而不只是像：","需要相等的那些依赖于主张所分开的（相等是最细的切分，即命名，规律 1）：对相同者中一个名字的干预、没有主张分开的过去、没有主张分开的描述。没有主张分开的既不被固定也不被否证（比较 Becoming.Testing 中形成能检验的主张）。在相同之下，承载规律的是一个尊重主张的等价，而不只是像："),
+("S6","and those that need equality depend on what is registered, equality being the finest registration, naming (law 1): an intervention on one name among alike configurations, a past nothing registers, a description nothing registers. What nothing registers is neither fixed nor refuted (compare the registers of Becoming.Testing). Up to likeness a law is carried by an equivalence that registers the claims,","and those that need equality depend on what the claims tell apart, equality being the finest split, naming (law 1): an intervention on one name among alike configurations, a past no claim tells apart, a description no claim tells apart. What no claim tells apart is neither fixed nor refuted (compare the claims a formation can test in Becoming.Testing). Up to likeness a law is carried by an equivalence that respects the claims,"),
+("S6","@dependencies/2/interface/input/zh","相同之下的形式与需要相等之处。"),
+("S6","@dependencies/2/interface/input/en","The forms up to likeness and where equality is needed."),
+])

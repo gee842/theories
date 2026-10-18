@@ -145,8 +145,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Dependence bound to receipt 20261014T091930.724493Z): the theorems of Becoming.Admission and Becoming.Regions, the local forms included, have empty axiom reports; core purity verified. Author counterreview in the integration note; not yet independently reviewed."
   },
   "next_delta": {
-    "zh": "陈述其余者随之调整时的余量（扣留后其余者的取用随水平而变）：comparison-where-the-rest-responds 给出其余经其识回应时差别所能到达之处，未给出这样回应之下的确切余量。比较多步可达；给出与 Becoming.Joint 的 but-for 检验的形式联系。",
-    "en": "State the margin where the rest adjust (the others' taking responding to the levels without the part): comparison-where-the-rest-responds states where the difference can go when the rest responds through its registration, not the exact margin under such a response. Compare reachability over several steps; link the comparison formally to the but-for test of Becoming.Joint."
+    "zh": "陈述其余者随之调整时的余量（扣留后其余者的取用随水平而变）：comparison-where-the-rest-responds 给出其余经其耦合回应时差别所能到达之处，未给出这样回应之下的确切余量。比较多步可达；给出与 Becoming.Joint 的 but-for 检验的形式联系。",
+    "en": "State the margin where the rest adjust (the others' taking responding to the levels without the part): comparison-where-the-rest-responds states where the difference can go when the rest responds through its couplings, not the exact margin under such a response. Compare reachability over several steps; link the comparison formally to the but-for test of Becoming.Joint."
   },
   "correspondence": {
     "zh": "Ren 确认的第一项读法：可能性是从现有者接下来能形成什么；一个形成的贡献是有它的将来减去没有它的将来。这里“接下来能形成什么”读作每步被水平接纳的形成，“没有它”读作扣留它而其余交换不变；读法经 Ren 确认，这一形式化是 AI 的，依 Ren 的交托采用。Ren 说“not harm”是“a phase transition with a clear boundary, not some \"outside will or belief\"”。作者的读法（AI 论证）：关闭与不关闭之间的界由部分自身在所需条件上的净交换决定，到某步为止给回不少于所取者在该步不关闭任何东西，不需要动力学之外的意志或信念。读法与接纳、扣留、净汲取等名称是 AI 的；读法依 Ren 的交托采用，名称按 Ren 的命名规则采用（DELEGATED-CHOICES D35、D36）。",

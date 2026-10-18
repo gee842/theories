@@ -65,8 +65,8 @@
     {
       "id": "selection-under-registration-revision",
       "detail": {
-        "zh": "复用同一活动内登记改变及可表达选择的既有范围，不从区分保持推出伦理。",
-        "en": "Reuses registration change and expressible-choice scope within one activity, without inferring ethics from preserved discrimination."
+        "zh": "复用同一活动内归并改变及可表达选择的既有范围，不从区分保持推出伦理。",
+        "en": "Reuses lumping change and expressible-choice scope within one activity, without inferring ethics from preserved discrimination."
       }
     },
     {
@@ -79,8 +79,8 @@
     {
       "id": "selection-through-registration",
       "detail": {
-        "zh": "复用经识的选择范围，区分不能辨认与能辨认却未选择；不把可表达性当作实际选择或伦理方向。",
-        "en": "Reuses the scope of selection through registration, distinguishing unavailable discrimination from available but unused selection; expressibility is not enacted choice or ethical direction."
+        "zh": "复用经耦合的选择范围，区分不能辨认与能辨认却未选择；不把可表达性当作实际选择或伦理方向。",
+        "en": "Reuses the scope of selection through the couplings, distinguishing unavailable discrimination from available but unused selection; expressibility is not enacted choice or ethical direction."
       }
     }
   ],

@@ -9,9 +9,10 @@ def core(s):
     t = re.sub(r'`[^`]*`', '', s); t = re.sub(r'\b\w+[._]\w[\w.]*', '', t); t = re.sub(r'\b[a-z0-9]+(?:-[a-z0-9]+)+\b', '', t)
     t = K.sub('', t)
     return len(P.findall(t))
-out = []
-for f in sorted(glob.glob(RECORDS + '*.json')):
-    d = json.load(open(f)); n = sum(core(s) for _, s in leaves(d))
-    if n: out.append((n, os.path.basename(f)[:-5]))
-for n, s in sorted(out, reverse=True): print(n, s)
-print(len(out), sum(n for n, _ in out))
+if __name__ == "__main__":
+    out = []
+    for f in sorted(glob.glob(RECORDS + '*.json')):
+        d = json.load(open(f)); n = sum(core(s) for _, s in leaves(d))
+        if n: out.append((n, os.path.basename(f)[:-5]))
+    for n, s in sorted(out, reverse=True): print(n, s)
+    print(len(out), sum(n for n, _ in out))

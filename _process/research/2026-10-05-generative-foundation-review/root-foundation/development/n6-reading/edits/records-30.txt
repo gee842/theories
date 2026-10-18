@@ -1,0 +1,40 @@
+# Records projection-carrying-a-law, how-loops-form and universal-practical-warrant, read by sense (N6).
+### record:projection-carrying-a-law
+= S1
+- 以 Becoming.Testing 的识为投影的实例；
++ 以 Becoming.Testing 中耦合所成的归并为投影的实例；
+= S1
+- The instance with Becoming.Testing's registration as the projection;
++ The instance with the lumping the couplings make in Becoming.Testing as the projection;
+= S3 @related/2/detail/zh
+- 以识为投影：经所识者的实验何时是对的，就是识是否相同者同去（读法；形式桥接没有陈述）。
++ 以耦合为投影：经耦合入者的实验何时是对的，就是经耦合无别者是否同去（读法；形式桥接没有陈述）。
+= S3 @related/2/detail/en
+- With registration as the projection: an experiment through what registers is right exactly where registration goes alike (a reading; the formal bridge is not stated).
++ With the couplings as the projection: an experiment through what couples in is right exactly where what is alike through the couplings goes alike (a reading; the formal bridge is not stated).
+### record:how-loops-form
+= S2
+- 这与 Becoming.Runaway 相遇：能识它的是识耦合本身者。
++ 这与 Becoming.Runaway 相遇：能承载它的是耦合入耦合本身者。
+= S2
+- which meets Becoming.Runaway: what registers it is what registers the couplings themselves.
++ which meets Becoming.Runaway: what carries it is what the couplings themselves couple into.
+= S2 @related/0/detail/zh
+- 那里失控的断裂在其前不被识；这里使之失控的回路的形成也不被它所携带的量识。两者在一个律中的连接见 loops-within-what-a-law-reads。
++ 那里失控的断裂在其前不耦合入；这里使之失控的回路的形成也不在它所携带的量中显出。两者在一个律中的连接见 loops-within-what-a-law-reads。
+= S2 @related/0/detail/en
+- There a runaway's break is not registered before it; here the formation of the loop that runs away is not registered by the amounts it carries either. Joining the two within one law: loops-within-what-a-law-reads.
++ There a runaway's break does not couple in before it; here the formation of the loop that runs away does not show in the amounts it carries either. Joining the two within one law: loops-within-what-a-law-reads.
+### record:universal-practical-warrant
+= S1
+- 复用同一活动内登记改变及可表达选择的既有范围
++ 复用同一活动内归并改变及可表达选择的既有范围
+= S1
+- Reuses registration change and expressible-choice scope within one activity,
++ Reuses lumping change and expressible-choice scope within one activity,
+= S2
+- 复用经识的选择范围，
++ 复用经耦合的选择范围，
+= S2
+- Reuses the scope of selection through registration,
++ Reuses the scope of selection through the couplings,

@@ -106,8 +106,8 @@
       ]
     },
     {
-      "zh": "对确定的律经一个识读（主张是所识者），配置相同，恰当它们所识的未来相同，这时有意义的描述承载规律。",
-      "en": "For a determined law read through a registration, the claims being what is registered, configurations are alike exactly where their registered futures are the same, and there a description that makes sense carries a law.",
+      "zh": "对确定的律经一个映射读（主张是映射之值），配置相同，恰当它们经映射的未来相同，这时有意义的描述承载规律。",
+      "en": "For a determined law read through a map, the claims being the map's value, configurations are alike exactly where their futures through the map are the same, and there a description that makes sense carries a law.",
       "declarations": [
         "Becoming.Law.orbit",
         "Becoming.Law.orbit_shift",
@@ -311,8 +311,8 @@
       "id": "recurrence-without-premise",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Law.orbit、Law.orbit_shift 与 Law.process：确定的律经识读的框架，所识的未来相同恰是相同。",
-        "en": "Reuses Law.orbit, Law.orbit_shift and Law.process: for a determined law read through a registration, the same registered future is exactly likeness."
+        "zh": "复用 Law.orbit、Law.orbit_shift 与 Law.process：确定的律经映射读的框架，经映射的未来相同恰是相同。",
+        "en": "Reuses Law.orbit, Law.orbit_shift and Law.process: for a determined law read through a map, the same future through the map is exactly likeness."
       },
       "interface": {
         "output": {
@@ -320,8 +320,8 @@
           "en": "The orbit of a determined law and the law as a process."
         },
         "input": {
-          "zh": "所识的未来相同与相同的等价。",
-          "en": "The equivalence of the same registered future with likeness."
+          "zh": "经映射的未来相同与相同的等价。",
+          "en": "The equivalence of the same future through the map with likeness."
         },
         "conditions": {
           "zh": "无。",

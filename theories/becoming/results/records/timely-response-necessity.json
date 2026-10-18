@@ -10,17 +10,17 @@
   "family": "F11",
   "reviewed_at_utc": "2026-10-13T13:04:43.135431+00:00",
   "claim": {
-    "zh": "原生流／网的两个历程，在共同初始水平、截止前平衡与在场相同、源之外经此前所识回应及共同完整读数下，未按交换顺序及时进入登记的区别不能改变截止时答案。有限加权作答覆盖不超过两侧错误与及时潜在可达权重之和；全不可及时到达时覆盖恰等于两侧错误。",
-    "en": "For two native flow/web courses with common initial levels, prefix balance and presence, past-registration response outside a source and a common complete readout, a distinction outside ordered propagation cannot change the answer by its deadline. Finite weighted commitment is at most paired error plus timely potential-reach weight; total nonarrival gives equality with paired error."
+    "zh": "原生流／网的两个历程，在共同初始水平、截止前平衡与在场相同、源之外经此前耦合入者回应及共同完整读数下，未按交换顺序及时耦合入的区别不能改变截止时答案。有限加权作答覆盖不超过两侧错误与及时潜在可达权重之和；全不可及时到达时覆盖恰等于两侧错误。",
+    "en": "For two native flow/web courses with common initial levels, prefix balance and presence, response through what coupled in before, outside a source, and a common complete readout, a distinction outside ordered propagation cannot change the answer by its deadline. Finite weighted commitment is at most paired error plus timely potential-reach weight; total nonarrival gives equality with paired error."
   },
   "hypotheses": [
     {
-      "zh": "全部初始水平相同；每步 t<D 平衡及在场形成相同；时变源之外的交换经此前登记决定。",
-      "en": "All initial levels agree; balance and present formations agree for t<D; outside the time-indexed source exchange responds through prior registration."
+      "zh": "全部初始水平相同；每步 t<D 平衡及在场形成相同；时变源之外的交换经此前耦合入者决定。",
+      "en": "All initial levels agree; balance and present formations agree for t<D; outside the time-indexed source exchange responds through what coupled in before."
     },
     {
-      "zh": "共同读数经同一 W 界面截至 D 的完整登记；RegistersAt 使用当步需要与明确观察。离散步不自带物理时长。",
-      "en": "Common readout through the same W-based complete registration up to D; RegistersAt uses current requirements or explicit observation. Discrete steps have no inherent physical duration."
+      "zh": "共同读数经同一 W 界面截至 D 耦合入的全部；RegistersAt 使用当步需要与经水平的耦合。离散步不自带物理时长。",
+      "en": "Common readout through everything that couples in through the same W up to D; RegistersAt uses current requirements or coupling by level. Discrete steps have no inherent physical duration."
     },
     {
       "zh": "统计接续给出有限列表、自然权重、相反目标与及时可达判定；全盲等式不用该判定。",
@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "命令形成、交换、登记与回应是同一展开中的分化关系。定理不从相关记录识别源、认证共同初态或测得延迟；真实实验配对、送达／执行及概率需要独立根据。",
-    "en": "Command formation, exchange, registration and response differentiate within one unfolding. The theorem does not identify sources from correlated records, certify matched initial states or measure delay; actual pairing, delivery/execution and probabilities need warrant."
+    "zh": "命令形成、交换、耦合与回应是同一展开中的分化关系。定理不从相关记录识别源、认证共同初态或测得延迟；真实实验配对、送达／执行及概率需要独立根据。",
+    "en": "Command formation, exchange, coupling and response differentiate within one unfolding. The theorem does not identify sources from correlated records, certify matched initial states or measure delay; actual pairing, delivery/execution and probabilities need warrant."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
   "aliases": [
@@ -51,8 +51,8 @@
       },
       "interface": {
         "output": {
-          "zh": "原生回应闭包及登记影响边。",
-          "en": "Native responsive closure and registered-exchange edges."
+          "zh": "原生回应闭包及耦合的影响边。",
+          "en": "Native responsive closure and coupled-exchange edges."
         },
         "input": {
           "zh": "reachedBy_within_response。",
@@ -69,13 +69,13 @@
       "id": "testing-within-registration",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用完整过去登记。",
-        "en": "Reuses complete past registration."
+        "zh": "复用此前耦合入的全部。",
+        "en": "Reuses everything that coupled in before."
       },
       "interface": {
         "output": {
-          "zh": "支持与观察构成的 RegistersAlikeUpTo。",
-          "en": "RegistersAlikeUpTo from support and observation."
+          "zh": "支持与经水平耦合构成的 RegistersAlikeUpTo。",
+          "en": "RegistersAlikeUpTo from support and coupling by level."
         },
         "input": {
           "zh": "registration_alike_before 和 answer_alike_before。",

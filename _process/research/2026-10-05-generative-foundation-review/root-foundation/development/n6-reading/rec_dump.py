@@ -22,9 +22,10 @@ def hits(s):
     t = re.sub(r'\b[a-z0-9]+(?:-[a-z0-9]+)+\b', '', t)
     return [m.group() for m in PAT.finditer(t) if not KEEP.fullmatch(m.group())]
 
-for stem in sys.argv[1:]:
-    d = json.load(open(RECORDS + stem + '.json'))
-    print('########', stem)
-    for path, s in leaves(d):
-        if hits(s):
-            print('@', '/'.join(map(str, path)), '::', s)
+if __name__ == '__main__':
+    for stem in sys.argv[1:]:
+        d = json.load(open(RECORDS + stem + '.json'))
+        print('########', stem)
+        for path, s in leaves(d):
+            if hits(s):
+                print('@', '/'.join(map(str, path)), '::', s)

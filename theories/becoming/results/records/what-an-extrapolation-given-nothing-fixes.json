@@ -105,8 +105,8 @@
     "zh": "找到读法或其表的外推；独立审查。"
   },
   "correspondence": {
-    "en": "The chapter's open programme (section 8.2, Learning) named \"a learner given nothing that rests on every learnable target, or a witness that none does\". Ren, 18 October 2026: \"Wait for N5's renames to land, then start the learning and seeking line on the renamed head.\" (provenance, not warrant). The witness answers the item; the exact theorem says what a learner given the world (fromLaw) is given beyond the prefix: a reading of the future through the map, which the prefix itself fixes.",
-    "zh": "本章开放纲领（第 8.2 节，学习）列出“a learner given nothing that rests on every learnable target, or a witness that none does”。Ren，2026年10月18日：“Wait for N5's renames to land, then start the learning and seeking line on the renamed head.”（来历，不是根据）。见证回答此项；精确定理说出被给予世界的学习者（fromLaw）在前缀之外被给予的是什么：对经映射之未来的一个读法，而那个未来由前缀本身确定。"
+    "en": "The chapter's open programme (section 8.2, Learning) named \"a learner given nothing that rests on every learnable target, or a witness that none does\". Ren, 18 October 2026: \"Wait for N5's renames to land, then start the learning and seeking line on the renamed head.\" (provenance, not warrant). The witness answers the item; the exact theorem says what an extrapolation built from the law (fromLaw) is given beyond the prefix: a reading of the future through the map, which the prefix itself fixes.",
+    "zh": "本章开放纲领（第 8.2 节，学习）列出“a learner given nothing that rests on every learnable target, or a witness that none does”。Ren，2026年10月18日：“Wait for N5's renames to land, then start the learning and seeking line on the renamed head.”（来历，不是根据）。见证回答此项；精确定理说出依律所建之外推（fromLaw）在前缀之外被给予的是什么：对经映射之未来的一个读法，而那个未来由前缀本身确定。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unrolling.lean",
   "aliases": [
@@ -124,8 +124,8 @@
     {
       "id": "learnable-through-registration",
       "detail": {
-        "en": "There learnability is characterized with a learner given the world, the law and the target (fromLaw); here what that learner is given beyond the prefix is exactly a reading of the future, and given nothing no learner learns every learnable target.",
-        "zh": "那里以被给予世界、律与目标的学习者（fromLaw）刻画可学性；这里该学习者在前缀之外被给予的恰是对未来的读法，而不被给予任何东西时没有学习者学得每个可学目标。"
+        "en": "There learnability is characterized with an extrapolation built from the law, given the world and the feature (fromLaw); here what that extrapolation is given beyond the prefix is exactly a reading of the future, and given nothing no extrapolation learns every learnable feature.",
+        "zh": "那里以依律所建、被给予世界与特征的外推（fromLaw）刻画可学性；这里该外推在前缀之外被给予的恰是对未来的读法，而不被给予任何东西时没有外推学得每个可学特征。"
       }
     },
     {

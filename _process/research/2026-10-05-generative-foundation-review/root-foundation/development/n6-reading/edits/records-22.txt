@@ -1,0 +1,72 @@
+# Records experiment-needs-return (the experiment's record and the refuting of a model stay; Testing's registration becomes its couplings) and what-a-law-of-the-whole-and-no-part-takes (the least coupling), read by sense (N6).
+### record:experiment-needs-return
+= S2
+- 记录不固定它的任何结果，无论什么被识：
++ 记录不固定它的任何结果，无论读的是什么：
+= S2
+- the record fixes no outcome of it, whatever registers:
++ the record fixes no outcome of it, whatever is read:
+= S2 @does_not_show/4/zh
+- 与 Becoming.Testing 的识的形式桥接没有陈述。
++ 与 Becoming.Testing 的耦合的形式桥接没有陈述。
+= S2 @does_not_show/4/en
+- The formal bridge to Becoming.Testing's registration is not stated.
++ The formal bridge to the couplings of Becoming.Testing is not stated.
+= S1
+- 以 Becoming.Testing 的识为投影的形式桥接
++ 以 Becoming.Testing 中耦合所成的归并为投影的形式桥接
+= S1
+- The formal bridge with Becoming.Testing's registration as the projection
++ The formal bridge with the lumping the couplings make in Becoming.Testing as the projection
+= S2
+- 以 testing-within-registration 的识为读法，阈下与所及之外的不见是不分解的情形。
++ 以 testing-within-registration 的耦合为读法，阈下与所及之外的不显出是不分解的情形。
+= S2
+- with the registration of testing-within-registration as the reading, threshold and reach blindness are cases where the step does not factor.
++ with the couplings of testing-within-registration as the reading, what does not show below the threshold or beyond the reach is a case where the step does not factor.
+= S2 @related/2/detail/zh
+- 那里交换随识时阈下的差别保持；这里，以识为投影，阈下的不见是步骤不经所识者分解的情形（读法）。
++ 那里交换随耦合入者时阈下的差别保持；这里，以耦合为投影，阈下的差别不显出是步骤不经耦合入者分解的情形（读法）。
+= S2 @related/2/detail/en
+- There a difference below the threshold stays where the exchange follows registration; here, with registration as the projection, blindness below the threshold is a case where the step does not factor through what registers (a reading).
++ There a difference below the threshold stays where the exchange follows what couples in; here, with the couplings as the projection, a difference below the threshold not showing is a case where the step does not factor through what couples in (a reading).
+### record:what-a-law-of-the-whole-and-no-part-takes
+= S2 3
+- 最小的识的反例
++ 最小的耦合的反例
+= S2 3
+- a counterexample to the least registration
++ a counterexample to the least coupling
+= S2
+- 与最小的识的每个反例
++ 与最小的耦合的每个反例
+= S2
+- 没有最小的识。尾之律
++ 没有最小的耦合。尾之律
+= S2
+- and has no least registration.
++ and has no least coupling.
+= TEXT
+- 恰在能对每个无尽的是非记录判定它是否全是否之处给出；条件编号时，最小的识恰在这一全知处不成立
++ 恰在能对每个无尽的是非序列判定它是否全是否之处给出；条件编号时，最小的耦合恰在这一全知处不成立
+= TEXT
+- of every unending record of yes and no, whether it says no throughout; with the conditions numbered, the least registration fails
++ of every unending sequence of yes and no, whether it says no throughout; with the conditions numbered, the least coupling fails
+= S2
+- 整体之律与其无最小的识；
++ 整体之律与其无最小的耦合；
+= S2
+- the law of a whole with no least registration;
++ the law of a whole with no least coupling;
+= S2
+- 敏感与经识而读（Through）
++ 敏感与经耦合而读（Through）
+= S2
+- and reading through a registration (Through)
++ and reading through a coupling (Through)
+= S2
+- 一步的不敏感与敏感；经识而读。
++ 一步的不敏感与敏感；经耦合而读。
+= S2
+- insensitivity at a step and sensitivity; reading through a registration.
++ insensitivity at a step and sensitivity; reading through a coupling.

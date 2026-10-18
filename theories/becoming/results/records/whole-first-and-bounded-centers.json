@@ -113,7 +113,7 @@
       "kind": "correspondence"
     },
     {
-      "zh": "路线 (b) 须面对以依存为界的中心容许搭便车者：不用延续条件时，这一损失只在依存到达所关闭者时被识（见 closure-verdict-meets-axiom）。",
+      "zh": "路线 (b) 须面对以依存为界的中心容许搭便车者：不用延续条件时，这一损失只在依存到达所关闭者时才计入（见 closure-verdict-meets-axiom）。",
       "en": "Route (b) must face that centers bounded by their dependence license the free rider: without the continuation condition, this loss counts only where the dependence reaches what is closed (see closure-verdict-meets-axiom).",
       "kind": "non-implication"
     }

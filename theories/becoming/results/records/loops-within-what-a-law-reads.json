@@ -15,8 +15,8 @@
   },
   "laws": [
     {
-      "zh": "一个律读一个时程：对部分之外的每个形成，在所标条件上至该步一致的历史下律给得相同。未读的水平耦合强度为零，所以限于所读的强度是律的强度。每个读已立者的律读全部；经识而读的律读每个覆盖其识的时程，其进程是经识的策略。",
-      "en": "A law reads a schedule when, for each formation outside the part, it gives alike under histories agreeing up to the step on the conditions marked. An unread level is coupled with strength zero, so the strengths restricted to what is read are strengths of the law. Every law of what has stood reads everything; a law reading through a registration reads every schedule covering it, and its courses are policies through registration.",
+      "zh": "一个律读一个时程：对部分之外的每个形成，在所标条件上至该步一致的历史下律给得相同。未读的水平耦合强度为零，所以限于所读的强度是律的强度。每个读已立者的律读全部；经耦合而读的律读每个覆盖耦合入者的时程，其进程是经耦合的策略。",
+      "en": "A law reads a schedule when, for each formation outside the part, it gives alike under histories agreeing up to the step on the conditions marked. An unread level is coupled with strength zero, so the strengths restricted to what is read are strengths of the law. Every law of what has stood reads everything; a law reading through the couplings reads every schedule covering what couples in, and its courses are policies through the couplings.",
       "declarations": [
         "Becoming.ExchangeLaw.ReadsAt",
         "Becoming.restrictReads",
@@ -53,8 +53,8 @@
       ]
     },
     {
-      "zh": "断裂：律只在储量低于阈值时才读它，是说储量立于阈值时它只读储量立着；经识而读、部分之外无人观察储量、阈值不低于各自所需者的律都是这样。对每个这样的律，储量抬高多少，到断裂为止别处都相同、储量高出所抬高者：断裂还有多远不被带到任何处。",
-      "en": "The break: a law reads a stock only below a threshold when, while the stock stands at the threshold, it reads only that it stands; every law reading through a registration in which no formation outside the part observes the stock, with the threshold at least each need of it, is such a law. For every such law, however much the stock is raised, up to the break everything else is alike and the stock stands higher by the raise: the distance to the break is carried nowhere.",
+      "zh": "断裂：律只在储量低于阈值时才读它，是说储量立于阈值时它只读储量立着；经耦合而读、储量只经阈耦合入部分之外的每个形成、阈值不低于各自所需者的律都是这样。对每个这样的律，储量抬高多少，到断裂为止别处都相同、储量高出所抬高者：断裂还有多远不被带到任何处。",
+      "en": "The break: a law reads a stock only below a threshold when, while the stock stands at the threshold, it reads only that it stands; every law reading through couplings by which the stock couples into each formation outside the part by threshold only, with the threshold at least each need of it, is such a law. For every such law, however much the stock is raised, up to the break everything else is alike and the stock stands higher by the raise: the distance to the break is carried nowhere.",
       "declarations": [
         "Becoming.ExchangeLaw.ReadsBelow",
         "Becoming.break_carried_nowhere",
@@ -145,8 +145,8 @@
     "en": "Reading only above a threshold, or in other shapes; the actual runaway after the break (lower bounds on responses); an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-16 取的 P118 第三项读法与 P122 留下“一个形成的汲取开始回应其汲取所降低的水平，那里与 Becoming.Runaway 相遇”；AI 问是否开始把回路的形成与 Runaway 的策略接起来，Ren 答“please”。本结果在一个律中接起来。读法（AI 的，Ren 2026-10-16 同意：“agree in general”）：失控的断裂就是回路形成之处，Becoming.Runaway 的不识与 Becoming.Closing 的形成是同一件事的两面；能识距离者是断裂之前对储量水平的读，它使回路更早形成。",
-    "en": "P118's third reading as Ren took it on 16 October 2026, and P122, left open “where a formation's drawing comes to respond to the level its drawing lowers, where this meets Becoming.Runaway”; asked whether to start joining loop formation with Runaway's policies, Ren wrote “please”. This result joins them within one law. Readings (the AI's, agreed by Ren on 16 October 2026: “agree in general”): a runaway's break is where a loop forms, the blindness of Becoming.Runaway and the formation of Becoming.Closing being one event seen from two sides; what registers the distance is a reading of the stock's level before the break, which forms the loop earlier."
+    "zh": "Ren 2026-10-16 取的 P118 第三项读法与 P122 留下“一个形成的汲取开始回应其汲取所降低的水平，那里与 Becoming.Runaway 相遇”；AI 问是否开始把回路的形成与 Runaway 的策略接起来，Ren 答“please”。本结果在一个律中接起来。读法（AI 的，Ren 2026-10-16 同意：“agree in general”）：失控的断裂就是回路形成之处，Becoming.Runaway 中距离不耦合入与 Becoming.Closing 的形成是同一件事的两面；能使距离耦合入者是断裂之前对储量水平的读，它使回路更早形成。",
+    "en": "P118's third reading as Ren took it on 16 October 2026, and P122, left open “where a formation's drawing comes to respond to the level its drawing lowers, where this meets Becoming.Runaway”; asked whether to start joining loop formation with Runaway's policies, Ren wrote “please”. This result joins them within one law. Readings (the AI's, agreed by Ren on 16 October 2026: “agree in general”): a runaway's break is where a loop forms, the distance not coupling in, in Becoming.Runaway, and the formation of Becoming.Closing being one event seen from two sides; what lets the distance couple in is a reading of the stock's level before the break, which forms the loop earlier."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
   "aliases": [
@@ -177,8 +177,8 @@
       },
       "interface": {
         "output": {
-          "zh": "交换之律；经识而读；进程遵从律。",
-          "en": "Laws of exchange; reading through registration; courses following a law."
+          "zh": "交换之律；经耦合而读；进程遵从律。",
+          "en": "Laws of exchange; reading through the couplings; courses following a law."
         },
         "input": {
           "zh": "读一个时程的律；只在低于阈值时读储量的律；两个进程的保持。",
@@ -264,13 +264,13 @@
       "id": "runaway-distance-unregistered",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Flow.PolicyThrough：经识而读之律的进程是经识的策略；断裂不被识对整个律成立。",
-        "en": "Reuses Flow.PolicyThrough: the courses of a law reading through registration are policies through it; the break unregistered holds for whole laws."
+        "zh": "复用 Flow.PolicyThrough：经耦合而读之律的进程是经耦合的策略；断裂不耦合入对整个律成立。",
+        "en": "Reuses Flow.PolicyThrough: the courses of a law reading through the couplings are policies through them; the break not coupling in holds for whole laws."
       },
       "interface": {
         "output": {
-          "zh": "经识的策略；断裂之前储量抬高不被识。",
-          "en": "Policies through registration; a raise unregistered before the break."
+          "zh": "经耦合的策略；断裂之前储量抬高不显出。",
+          "en": "Policies through the couplings; a raise not showing before the break."
         },
         "input": {
           "zh": "对每个只在低于阈值时读储量的律，抬高到断裂为止不被带到任何处。",
@@ -295,15 +295,15 @@
     {
       "id": "every-origin-passes-the-gate",
       "detail": {
-        "zh": "那里识与检验之门；这里识限制耦合，回路在所读之内。",
-        "en": "There the gate of registration and testing; here registration bounds coupling, and loops lie within what is read."
+        "zh": "那里耦合与检验之门；这里耦合入者限制律的耦合，回路在所读之内。",
+        "en": "There the gate of coupling and testing; here what couples in bounds a law's couplings, and loops lie within what is read."
       }
     },
     {
       "id": "observation-is-a-route",
       "detail": {
-        "zh": "观察是从所观察者出发的所读路线：差别只往下游去，形成只经它所读的、在储量下游的水平识储量；路线由闭合而形成。",
-        "en": "Observation is a route of readings from what is observed: a difference goes only downstream, and a formation registers a stock only through a level it reads downstream of it; a route forms by closing."
+        "zh": "观察是从所观察者出发的所读路线：差别只往下游去，储量只经形成所读的、在储量下游的水平耦合入它；路线由闭合而形成。",
+        "en": "Observation is a route of readings from what is observed: a difference goes only downstream, and a stock couples into a formation only through a level it reads downstream of the stock; a route forms by closing."
       }
     }
   ],

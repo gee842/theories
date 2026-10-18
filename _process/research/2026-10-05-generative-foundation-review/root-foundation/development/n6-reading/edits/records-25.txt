@@ -1,0 +1,115 @@
+# Records timely-response-necessity (what couples in), gluing-under-parity (what contexts show, S7) and how-much-difference-arrives (coupling strength), read by sense (N6).
+### record:timely-response-necessity
+= S2
+- 源之外经此前所识回应及共同完整读数下，未按交换顺序及时进入登记的区别不能改变截止时答案。
++ 源之外经此前耦合入者回应及共同完整读数下，未按交换顺序及时耦合入的区别不能改变截止时答案。
+= S2
+- 时变源之外的交换经此前登记决定。
++ 时变源之外的交换经此前耦合入者决定。
+= S2
+- outside the time-indexed source exchange responds through prior registration.
++ outside the time-indexed source exchange responds through what coupled in before.
+= S2 @hypotheses/1/zh
+- 共同读数经同一 W 界面截至 D 的完整登记；RegistersAt 使用当步需要与明确观察。离散步不自带物理时长。
++ 共同读数经同一 W 界面截至 D 耦合入的全部；RegistersAt 使用当步需要与经水平的耦合。离散步不自带物理时长。
+= S2 @hypotheses/1/en
+- Common readout through the same W-based complete registration up to D; RegistersAt uses current requirements or explicit observation. Discrete steps have no inherent physical duration.
++ Common readout through everything that couples in through the same W up to D; RegistersAt uses current requirements or coupling by level. Discrete steps have no inherent physical duration.
+= S2
+- 命令形成、交换、登记与回应是同一展开中的分化关系。
++ 命令形成、交换、耦合与回应是同一展开中的分化关系。
+= S2
+- Command formation, exchange, registration and response differentiate within one unfolding.
++ Command formation, exchange, coupling and response differentiate within one unfolding.
+= S2 @dependencies/0/interface/output/zh
+- 原生回应闭包及登记影响边。
++ 原生回应闭包及耦合的影响边。
+= S2 @dependencies/1/detail/zh
+- 复用完整过去登记。
++ 复用此前耦合入的全部。
+= S2 @dependencies/1/detail/en
+- Reuses complete past registration.
++ Reuses everything that coupled in before.
+= S2 @dependencies/1/interface/output/zh
+- 支持与观察构成的 RegistersAlikeUpTo。
++ 支持与经水平耦合构成的 RegistersAlikeUpTo。
+= S2 @dependencies/1/interface/output/en
+- RegistersAlikeUpTo from support and observation.
++ RegistersAlikeUpTo from support and coupling by level.
+### record:gluing-under-parity
+= S7
+- 语境能显示的只取决于它所识的主张；
++ 语境能显示的只取决于其内的主张；
+= S7
+- which depends only on the claims the context registers;
++ which depends only on the claims within the context;
+= S7
+- 有登记每个语境所计者、尊重其可能、在其配置粘合的世界恰当没有。
++ 有显示每个语境所计者、尊重其可能、在其配置粘合的世界恰当没有。
+= S7
+- and a world registering what each context counts,
++ and a world showing what each context counts,
+= S7
+- 沿运行：登记恰在读法世界在一步无语境处于该步相粘。
++ 沿运行：诸语境所显示者恰在读法世界在一步无语境处于该步相粘。
+= S7
+- Along a run, the registrations glue at a step
++ Along a run, what the contexts show glues at a step
+= S7 @does_not_show/2/zh
+- 实际展开的哪些识是这种奇偶的：这是对应。
++ 实际展开中哪些语境中的读法是这种奇偶的：这是对应。
+= S7 @does_not_show/2/en
+- Which registrations of an actual unfolding are of this parity kind: that is correspondence.
++ Which readings in context of an actual unfolding are of this parity kind: that is correspondence.
+= S7
+- 并同意了把值读作语境中的识的回答；
++ 并同意了把值读作语境所显示者的回答；
+= S7
+- 值是语境中的识，一个关系。
++ 值是语境所显示者，一个关系。
+= S7
+- and agreed with the reply reading a value as a registration in context;
++ and agreed with the reply reading a value as what a context shows;
+= S7
+- a value is a registration in context, a relation.
++ a value is what a context shows, a relation.
+= S7 @dependencies/0/interface/output/zh
+- 语境中的识、粘合、局部性与没有不依语境的读法；Specker 与 Mermin–Peres 的可能性。
++ 语境中显示的主张、粘合、局部性与没有不依语境的读法；Specker 与 Mermin–Peres 的可能性。
+= S7 @dependencies/0/interface/output/en
+- Registration in context, gluing, locality and no context-free reading; the possibilities of Specker and Mermin–Peres.
++ Claims shown in context, gluing, locality and no context-free reading; the possibilities of Specker and Mermin–Peres.
+= S7
+- 语境中的诸识总是一个世界的被索引的主张
++ 语境所显示者总是一个世界的被索引的主张
+### record:how-much-difference-arrives
+= S2
+- 正强度属于识该水平并与该条件交换的形成时，
++ 正强度属于该水平耦合入、并与该条件交换的形成时，
+= S2
+- where the positive strengths are of formations registering the level and exchanging with the condition,
++ where the positive strengths are of formations the level couples into and exchanging with the condition,
+= S2
+- DELEGATED-CHOICES D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，形式上读作识的强弱；
++ DELEGATED-CHOICES D39；识这个词本身仍是 Ren 的）：耦合强度是敏感所缺的度量，形式上读作耦合的强弱；
+= S2
+- DELEGATED-CHOICES D39; 识 itself stays Ren's): the coupling strength is the measure sensitivity lacked, read formally as how strongly a formation registers;
++ DELEGATED-CHOICES D39; the word 识 itself stays Ren's): the coupling strength is the measure sensitivity lacked, read formally as how strongly a level couples into a formation;
+= S2
+- 经当时的交换与登记到达的路线。
++ 经当时的交换与耦合到达的路线。
+= S2
+- routes reached through the exchanges and registration at each time.
++ routes reached through the exchanges and couplings at each time.
+= S2
+- 正强度属于识该水平并与该条件交换的形成。
++ 正强度属于该水平耦合入、并与该条件交换的形成。
+= S2
+- every positive strength is of a formation registering the level and exchanging with the condition.
++ every positive strength is of a formation the level couples into and exchanging with the condition.
+= S2
+- 所以强度精化最小的识。
++ 所以强度精化最小的耦合。
+= S2
+- so the strengths refine the least registration.
++ so the strengths refine the least coupling.

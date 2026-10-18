@@ -74,8 +74,8 @@
       "id": "the-split-that-makes-sense",
       "relation": "interpretive",
       "detail": {
-        "zh": "已有保持所识未来与常值描述边界，用于第17节的内容保真检验；不主张实际忘却已由投影定理解释。",
-        "en": "Existing registered-future preservation and the constant-description boundary inform Section 17’s content test; actual forgetting is not claimed explained by projection theorems."
+        "zh": "已有保持经映射的未来与常值描述边界，用于第17节的内容保真检验；不主张实际忘却已由投影定理解释。",
+        "en": "Existing preservation of the future through the map and the constant-description boundary inform Section 17’s content test; actual forgetting is not claimed explained by projection theorems."
       }
     },
     {
@@ -228,8 +228,8 @@
           "en": "Fallible capacity claims not covered by the wisdom argument’s perfect-answer guarantees alone."
         },
         "conditions": {
-          "zh": "实际二项对比、完整输入、有限自然权重和原能力界；及时分支另需其原前缀平衡、共同初态、登记及回应条件。理论理解、观照与规范意义不由错误界定义。",
-          "en": "Actual binary contrast, complete input, finite natural weights and the declared capacity bounds; the timed branch additionally needs its prefix-balance, common-start, registration and response conditions. Error bounds do not define theoretical understanding, contemplation or normative significance."
+          "zh": "实际二项对比、完整输入、有限自然权重和原能力界；及时分支另需其原前缀平衡、共同初态、耦合及回应条件。理论理解、观照与规范意义不由错误界定义。",
+          "en": "Actual binary contrast, complete input, finite natural weights and the declared capacity bounds; the timed branch additionally needs its prefix-balance, common-start, coupling and response conditions. Error bounds do not define theoretical understanding, contemplation or normative significance."
         },
         "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
       }
@@ -251,8 +251,8 @@
           "en": "Fallible capacity claims not covered by the wisdom argument’s perfect-answer guarantees alone."
         },
         "conditions": {
-          "zh": "实际二项对比、完整输入、有限自然权重和原能力界；及时分支另需其原前缀平衡、共同初态、登记及回应条件。理论理解、观照与规范意义不由错误界定义。",
-          "en": "Actual binary contrast, complete input, finite natural weights and the declared capacity bounds; the timed branch additionally needs its prefix-balance, common-start, registration and response conditions. Error bounds do not define theoretical understanding, contemplation or normative significance."
+          "zh": "实际二项对比、完整输入、有限自然权重和原能力界；及时分支另需其原前缀平衡、共同初态、耦合及回应条件。理论理解、观照与规范意义不由错误界定义。",
+          "en": "Actual binary contrast, complete input, finite natural weights and the declared capacity bounds; the timed branch additionally needs its prefix-balance, common-start, coupling and response conditions. Error bounds do not define theoretical understanding, contemplation or normative significance."
         },
         "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
       }
@@ -458,8 +458,8 @@
           "en": "Supply the continuation content compared in moral appraisal of becoming, without freely supplying a second flow."
         },
         "conditions": {
-          "zh": "原非预知、平衡、可行、共同初态与在场条件；比较保留经识及意义覆盖；实际对应与G0/A/L/J/E另明示。",
-          "en": "Original nonanticipation, balance, feasibility, common start and presence; comparison retains registration and significance coverage; actual correspondence and G0/A/L/J/E remain explicit."
+          "zh": "原非预知、平衡、可行、共同初态与在场条件；比较保留经耦合及意义覆盖；实际对应与G0/A/L/J/E另明示。",
+          "en": "Original nonanticipation, balance, feasibility, common start and presence; comparison retains coupling and significance coverage; actual correspondence and G0/A/L/J/E remain explicit."
         },
         "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
       }
@@ -483,8 +483,8 @@
     {
       "id": "wisdom-root-part-one",
       "detail": {
-        "zh": "完成本目标的形式部分：识、理（Ren 的读法）、检验、学习与推广、经识的选择与训练、够、失控、判断与元层次的规律对每个学习者与每个表示成立，不用公理。",
-        "en": "Completes this target's formal part: the laws of registration, 理 (Ren's reading), testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level hold of every learner and every representation, with no axiom."
+        "zh": "完成本目标的形式部分：耦合、理（Ren 的读法）、检验、学习与推广、经耦合的选择与训练、够、失控、判断与元层次的规律对每个外推与每个表示成立，不用公理。",
+        "en": "Completes this target's formal part: the laws of coupling, 理 (Ren's reading), testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level hold of every extrapolation and every representation, with no axiom."
       }
     }
   ],

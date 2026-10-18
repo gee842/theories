@@ -2,20 +2,20 @@
   "schema_version": 1,
   "id": "registration-within-what-it-registers",
   "title": {
-    "zh": "在所识之中的识",
-    "en": "A registration within what it registers"
+    "zh": "在所读之中的读法族",
+    "en": "A family of readings within what it reads"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "statement": {
-    "zh": "以所读者为索引的识恰在没有差别处完备；补全它是从不封闭、从不返回、不被有限储存持有的展开；说谎者是没有静值的节律。",
-    "en": "A registration indexed by what it reads is complete exactly where nothing differs; completing it is an unfolding that never closes, never returns and is held by no finite stock; the liar is a rhythm with no still value."
+    "zh": "以所读者为索引的读法族恰在没有差别处完备；补全它是从不封闭、从不返回、不被有限储存持有的展开；说谎者是没有静值的节律。",
+    "en": "A family of readings indexed by what it reads is complete exactly where nothing differs; completing it is an unfolding that never closes, never returns and is held by no finite stock; the liar is a rhythm with no still value."
   },
   "claim": {
-    "zh": "设 ψ : A → A → B 是以所读者为索引的识，same 是值的相同。ψ 说出读法 g（Diagonal.Says same ψ g），指某个 a 使 ∀ x，same (ψ a x) (g x)；缺口 gap f ψ x = f (ψ x x)；f 移动每个值（Diagonal.Moves same f），指 ∀ b，¬ same b (f b)。f 移动每个值时，没有成员说出缺口（Diagonal.gap_unsaid）；说出每个读法的 ψ 给每个 f 一个值 b 使 same b (f b)（Diagonal.fixed_of_complete）。主张从不与它的否定相同（Diagonal.moves_not），所以没有主张族 ψ : A → A → Prop 说出每个读法（Diagonal.claims_incomplete、Diagonal.claims_gap），没有框架以自己的配置实现关于配置的每种主张模式（Frame.self_incomplete）。以相等比较的值：与一个值的相等可判定时，完备的 ψ 推出值都相等（Diagonal.alike_of_complete）；值都相等时有完备的 ψ（Diagonal.complete_of_alike）；值的相等可判定时，完备恰当值都相等（Diagonal.complete_iff_alike）。φ : ℕ → A → A → B 展开（Diagonal.Unfolds same f φ），指它保留所说出的，并在下一步说出该步的缺口；f 移动每个值时，它在每一步都不完备（Diagonal.Unfolds.incomplete），第 m + k 步的缺口在第 m 步不被说出（Diagonal.Unfolds.gap_new），same 可传递时没有两个缺口相同（Diagonal.Unfolds.gaps_differ），从不返回（Diagonal.Unfolds.never_returns），same 对称、可传递时没有有限储存持有它的缺口（Diagonal.stock_unheld、Diagonal.Unfolds.unheld）。Bool 上存在这样的展开（Diagonal.unfolding、Diagonal.unfolding_unfolds、Diagonal.unfolding_open）。以移动每个值的 f 修正值，Law.orbit f b (n + 1) ≠ Law.orbit f b n（Diagonal.revision_never_rests）；以否定修正主张，在 Iff 之下从不静止（Diagonal.negation_never_rests）；二值的否定每两步返回（Diagonal.negation_returns）。不用 Lean 公理。",
-    "en": "Let ψ : A → A → B be a registration indexed by what it reads, and same the likeness of values. ψ says a reading g (Diagonal.Says same ψ g) when some a has ∀ x, same (ψ a x) (g x); the gap is gap f ψ x = f (ψ x x); f moves every value (Diagonal.Moves same f) when ∀ b, ¬ same b (f b). Where f moves every value no member says the gap (Diagonal.gap_unsaid); a ψ saying every reading gives every f a value b with same b (f b) (Diagonal.fixed_of_complete). A claim is never alike with its negation (Diagonal.moves_not), so no family of claims ψ : A → A → Prop says every reading (Diagonal.claims_incomplete, Diagonal.claims_gap), and no frame realizes with its own configurations every pattern of claims about them (Frame.self_incomplete). For values compared by equality: with equality to one value decided, a complete ψ makes all values equal (Diagonal.alike_of_complete); where all values are equal some ψ is complete (Diagonal.complete_of_alike); with equality of values decidable, completeness is exactly all values being equal (Diagonal.complete_iff_alike). φ : ℕ → A → A → B unfolds (Diagonal.Unfolds same f φ) when it keeps what it says and next says the step's gap; where f moves every value it is incomplete at every step (Diagonal.Unfolds.incomplete), the gap of step m + k is not said at step m (Diagonal.Unfolds.gap_new), with same transitive no two gaps are alike (Diagonal.Unfolds.gaps_differ), it never returns (Diagonal.Unfolds.never_returns), and with same symmetric and transitive no finite stock holds its gaps (Diagonal.stock_unheld, Diagonal.Unfolds.unheld). Such an unfolding exists on Bool (Diagonal.unfolding, Diagonal.unfolding_unfolds, Diagonal.unfolding_open). Revising a value by an f moving every value, Law.orbit f b (n + 1) ≠ Law.orbit f b n (Diagonal.revision_never_rests); revising a claim by negation never rests up to Iff (Diagonal.negation_never_rests); the two-valued negation returns every two steps (Diagonal.negation_returns). No Lean axiom is used."
+    "zh": "设 ψ : A → A → B 是以所读者为索引的读法族，same 是值的相同。ψ 说出读法 g（Diagonal.Says same ψ g），指某个 a 使 ∀ x，same (ψ a x) (g x)；缺口 gap f ψ x = f (ψ x x)；f 移动每个值（Diagonal.Moves same f），指 ∀ b，¬ same b (f b)。f 移动每个值时，没有成员说出缺口（Diagonal.gap_unsaid）；说出每个读法的 ψ 给每个 f 一个值 b 使 same b (f b)（Diagonal.fixed_of_complete）。主张从不与它的否定相同（Diagonal.moves_not），所以没有主张族 ψ : A → A → Prop 说出每个读法（Diagonal.claims_incomplete、Diagonal.claims_gap），没有框架以自己的配置实现关于配置的每种主张模式（Frame.self_incomplete）。以相等比较的值：与一个值的相等可判定时，完备的 ψ 推出值都相等（Diagonal.alike_of_complete）；值都相等时有完备的 ψ（Diagonal.complete_of_alike）；值的相等可判定时，完备恰当值都相等（Diagonal.complete_iff_alike）。φ : ℕ → A → A → B 展开（Diagonal.Unfolds same f φ），指它保留所说出的，并在下一步说出该步的缺口；f 移动每个值时，它在每一步都不完备（Diagonal.Unfolds.incomplete），第 m + k 步的缺口在第 m 步不被说出（Diagonal.Unfolds.gap_new），same 可传递时没有两个缺口相同（Diagonal.Unfolds.gaps_differ），从不返回（Diagonal.Unfolds.never_returns），same 对称、可传递时没有有限储存持有它的缺口（Diagonal.stock_unheld、Diagonal.Unfolds.unheld）。Bool 上存在这样的展开（Diagonal.unfolding、Diagonal.unfolding_unfolds、Diagonal.unfolding_open）。以移动每个值的 f 修正值，Law.orbit f b (n + 1) ≠ Law.orbit f b n（Diagonal.revision_never_rests）；以否定修正主张，在 Iff 之下从不静止（Diagonal.negation_never_rests）；二值的否定每两步返回（Diagonal.negation_returns）。不用 Lean 公理。",
+    "en": "Let ψ : A → A → B be a family of readings indexed by what it reads, and same the likeness of values. ψ says a reading g (Diagonal.Says same ψ g) when some a has ∀ x, same (ψ a x) (g x); the gap is gap f ψ x = f (ψ x x); f moves every value (Diagonal.Moves same f) when ∀ b, ¬ same b (f b). Where f moves every value no member says the gap (Diagonal.gap_unsaid); a ψ saying every reading gives every f a value b with same b (f b) (Diagonal.fixed_of_complete). A claim is never alike with its negation (Diagonal.moves_not), so no family of claims ψ : A → A → Prop says every reading (Diagonal.claims_incomplete, Diagonal.claims_gap), and no frame realizes with its own configurations every pattern of claims about them (Frame.self_incomplete). For values compared by equality: with equality to one value decided, a complete ψ makes all values equal (Diagonal.alike_of_complete); where all values are equal some ψ is complete (Diagonal.complete_of_alike); with equality of values decidable, completeness is exactly all values being equal (Diagonal.complete_iff_alike). φ : ℕ → A → A → B unfolds (Diagonal.Unfolds same f φ) when it keeps what it says and next says the step's gap; where f moves every value it is incomplete at every step (Diagonal.Unfolds.incomplete), the gap of step m + k is not said at step m (Diagonal.Unfolds.gap_new), with same transitive no two gaps are alike (Diagonal.Unfolds.gaps_differ), it never returns (Diagonal.Unfolds.never_returns), and with same symmetric and transitive no finite stock holds its gaps (Diagonal.stock_unheld, Diagonal.Unfolds.unheld). Such an unfolding exists on Bool (Diagonal.unfolding, Diagonal.unfolding_unfolds, Diagonal.unfolding_open). Revising a value by an f moving every value, Law.orbit f b (n + 1) ≠ Law.orbit f b n (Diagonal.revision_never_rests); revising a claim by negation never rests up to Iff (Diagonal.negation_never_rests); the two-valued negation returns every two steps (Diagonal.negation_returns). No Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -27,8 +27,8 @@
       "en": "Local conditions are written into the theorems: alike_of_complete needs equality with one value decided, complete_iff_alike needs equality of values decidable, gaps_differ needs same transitive, stock_unheld needs it symmetric and transitive (deciding only on natural-number indices)."
     },
     {
-      "zh": "识是以所读者为索引的族，这是给出的读法；算术编码与可证性没有陈述。",
-      "en": "A registration is a family indexed by what it reads, a supplied reading; arithmetic coding and provability are not stated."
+      "zh": "读法族以所读者为索引，这是给出的读法；算术编码与可证性没有陈述。",
+      "en": "The readings form a family indexed by what they read, a supplied reading; arithmetic coding and provability are not stated."
     }
   ],
   "correspondence": {
@@ -98,8 +98,8 @@
     {
       "id": "learning-by-refutation",
       "detail": {
-        "zh": "它的 diagonal_refutes 与 diagonal_unrested 是学习者的形式，与 gap_unsaid、revision_never_rests 同形而对象不同，各自写成。",
-        "en": "Its diagonal_refutes and diagonal_unrested are the learner's form, of the same form as gap_unsaid and revision_never_rests and a different object, written independently."
+        "zh": "它的 diagonal_refutes 与 diagonal_unrested 是外推的形式，与 gap_unsaid、revision_never_rests 同形而对象不同，各自写成。",
+        "en": "Its diagonal_refutes and diagonal_unrested are the extrapolation's form, of the same form as gap_unsaid and revision_never_rests and a different object, written independently."
       }
     }
   ],
@@ -113,8 +113,8 @@
     }
   ],
   "limitations": {
-    "zh": "识以所读者为索引；哥德尔的不完备与停机问题没有陈述；完备恰在没有差别处只对以相等比较、可判定的值，对主张只有从不完备；节律只对二值的否定是周期的；读法是 AI 的；不含伦理谓词。",
-    "en": "Registrations are indexed by what they read; Gödel's incompleteness and the halting problem are not stated; completeness exactly where nothing differs is for values compared by decidable equality, and for claims only incompleteness is stated; the rhythm is periodic only for the two-valued negation; the readings are the AI's; contains no ethical predicate."
+    "zh": "读法族以所读者为索引；哥德尔的不完备与停机问题没有陈述；完备恰在没有差别处只对以相等比较、可判定的值，对主张只有从不完备；节律只对二值的否定是周期的；读法是 AI 的；不含伦理谓词。",
+    "en": "The readings are indexed by what they read; Gödel's incompleteness and the halting problem are not stated; completeness exactly where nothing differs is for values compared by decidable equality, and for claims only incompleteness is stated; the rhythm is periodic only for the two-valued negation; the readings are the AI's; contains no ethical predicate."
   },
   "validation_scope": {
     "zh": "2026-10-14：Becoming.Diagonal 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Diagonal 的 26 项定理全部空依赖，其中含 Diagonal.gap_unsaid、Diagonal.fixed_of_complete、Diagonal.claims_incomplete、Frame.self_incomplete、Diagonal.complete_iff_alike、Diagonal.Unfolds.incomplete、Diagonal.Unfolds.gaps_differ、Diagonal.Unfolds.never_returns、Diagonal.Unfolds.unheld、Diagonal.unfolding_open、Diagonal.revision_never_rests与 Diagonal.negation_returns；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §95；独立审查的范围见同节。",
@@ -256,8 +256,8 @@
     }
   ],
   "next_delta": {
-    "zh": "与外围 RootCoverageBoundary 的实例定理；与 Learning 的 diagonal（没有学习者在每个历程上静止）的实例定理。",
-    "en": "The instance theorem to the periphery's RootCoverageBoundary; the instance theorem to Learning's diagonal (no learner rests on every course)."
+    "zh": "与外围 RootCoverageBoundary 的实例定理；与 Learning 的 diagonal（没有外推在每个历程上静止）的实例定理。",
+    "en": "The instance theorem to the periphery's RootCoverageBoundary; the instance theorem to Learning's diagonal (no extrapolation rests on every course)."
   },
   "history": [
     {

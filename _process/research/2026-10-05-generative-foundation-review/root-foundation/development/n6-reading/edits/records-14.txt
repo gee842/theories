@@ -1,0 +1,89 @@
+# Record sensitivity-is-the-least-registration, read by sense (N6); the id stays.
+### record:sensitivity-is-the-least-registration
+= S2 @title/zh
+- 任意多条件下最小的识
++ 任意多条件下最小的耦合
+= S2 @title/en
+- The least registration with any number of conditions
++ The least coupling with any number of conditions
+= S2 @statement/zh
+- 律在每个历史下读有限多个条件时，经其敏感而读：于双重否定下，敏感是它所经的最小的识。给定消失之判定（它给出有限全知原则），尾之律是反例；条件编号时，每个反例都给出弱有限全知原则。
++ 律在每个历史下读有限多个条件时，经其敏感而读：于双重否定下，敏感是它所经的最小的耦合。给定消失之判定（它给出有限全知原则），尾之律是反例；条件编号时，每个反例都给出弱有限全知原则。
+= S2 @statement/en
+- A law reading finitely many conditions under each history reads through what it is sensitive to: up to double negation, sensitivity is the least registration. Given a decision of vanishing (giving LPO) the tail law is a counterexample; with numbered conditions every counterexample gives WLPO.
++ A law reading finitely many conditions under each history reads through what it is sensitive to: up to double negation, sensitivity is the least coupling. Given a decision of vanishing (giving LPO) the tail law is a counterexample; with numbered conditions every counterexample gives WLPO.
+= S2
+- 经每个观察其所敏感者的识而读，而它所经的每个识都于双重否定下含其敏感者：在这一意义下敏感是最小的识，
++ 经每个其所敏感者经水平耦合入的耦合而读，而它所经的每个耦合都于双重否定下含其敏感者：在这一意义下敏感是最小的耦合，
+= S2
+- reads through every registration observing what it is sensitive to, and every one it reads through holds that up to double negation: sensitivity is the least registration in that sense,
++ reads through every coupling by which what it is sensitive to couples in by level, and every one it reads through holds that up to double negation: sensitivity is the least coupling in that sense,
+= S2
+- 经识从任何一个条件起的全部条件而读
++ 经从任何一个条件起的全部条件之耦合而读
+= S2 2
+- 它所经的识没有最小的。
++ 它所经的耦合没有最小的。
+= S2 2
+- and the registrations it reads through have no least one.
++ and the couplings it reads through have no least one.
+= S2
+- 条件无穷多时敏感是否仍是最小的识，或有反例。
++ 条件无穷多时敏感是否仍是最小的耦合，或有反例。
+= S2
+- 读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识本身仍是 Ren 的）：识就是敏感，形成恰识其交换所能被改变者，一次一个条件；
++ 读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识这个词本身仍是 Ren 的）：耦合就是敏感，耦合入形成的恰是其交换所能被改变者，一次一个条件；
+= S2
+- sensitivity remains the least registration, or a counterexample.
++ sensitivity remains the least coupling, or a counterexample.
+= S2
+- Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; 识 itself stays Ren's): registration is sensitivity, a formation registering exactly what its exchange can be changed by, one condition at a time;
++ Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; the word 识 itself stays Ren's): coupling is sensitivity, what couples into a formation being exactly what its exchange can be changed by, one condition at a time;
+= S2
+- 条件有限时的最小的识推广到读有限多个条件的律。
++ 条件有限时的最小的耦合推广到读有限多个条件的律。
+= S2
+- the least registration with finitely many conditions extended
++ the least coupling with finitely many conditions extended
+= S2 @dependencies/0/interface/output/zh
+- 交换律、敏感、经识而读；逐个条件换入；所经之识不漏掉敏感者；律所经之识内的比较。
++ 交换律、敏感、经耦合而读；逐个条件换入；所经之耦合不漏掉敏感者；律所经之耦合内的比较。
+= S2 @dependencies/0/interface/output/en
+- Laws of exchange, sensitivity, reading through a registration; mixing one condition at a time; a registration read through holding what is sensitive; the comparison within a registration read through.
++ Laws of exchange, sensitivity, reading through a coupling; mixing one condition at a time; a coupling read through holding what is sensitive; the comparison within a coupling read through.
+= S2 @dependencies/1/detail/zh
+- 复用 Web.CoupledInto：最小的识以形成所识者（所依存或观察的条件）陈述。
++ 复用 Web.CoupledInto：最小的耦合以耦合入形成者（经阈或经水平耦合入的条件）陈述。
+= S2 @dependencies/1/detail/en
+- Reuses Web.CoupledInto: the least registration is stated with what a formation registers (the conditions it depends on or observes).
++ Reuses Web.CoupledInto: the least coupling is stated with what couples into a formation (the conditions coupled in by threshold or by level).
+= S2 @dependencies/1/interface/output/zh
+- 形成识一个条件：依存于它或观察它。
++ 一个条件耦合入形成：经阈或经水平。
+= S2 @dependencies/1/interface/output/en
+- A formation registers a condition: it depends on it or observes it.
++ A condition couples into a formation: by threshold or by level.
+= S2 @dependencies/1/interface/input/zh
+- 所经之识（连同所依存的）不漏掉敏感者。
++ 所经之耦合（连同所依存的）不漏掉敏感者。
+= S2 @dependencies/1/interface/input/en
+- A registration read through, with what is depended on, holding what is sensitive.
++ A coupling read through, with what is depended on, holding what is sensitive.
+= S2 @related/0/detail/zh
+- 其前提“其余经识回应”对每个读有限多个条件的律成立，所识的就是律的敏感，条件多少都一样。
++ 其前提“其余经耦合回应”对每个读有限多个条件的律成立，耦合入的就是律的敏感，条件多少都一样。
+= S2 @related/0/detail/en
+- Its premise that the rest responds through registration holds for every law reading finitely many conditions, what is registered being the law's sensitivity, with any number of conditions.
++ Its premise that the rest responds through the couplings holds for every law reading finitely many conditions, what couples in being the law's sensitivity, with any number of conditions.
+= S2
+- 所及中的比较对读有限多个条件的律以其敏感为识。
++ 所及中的比较对读有限多个条件的律以其敏感为耦合。
+= S2
+- their sensitivity as what is registered.
++ their sensitivity as what couples in.
+= S2
+- 核心对读有限多个条件的律陈述最小的识。
++ 核心对读有限多个条件的律陈述最小的耦合。
+= S2
+- and the core states the least registration for laws
++ and the core states the least coupling for laws

@@ -1,0 +1,122 @@
+# Record the-split-that-makes-sense, read by sense (N6), following chapter §3's wording.
+### record:the-split-that-makes-sense
+= S1 @statement/zh
+- 确定的律下，保留所识并承载规律的最粗切分有意义；所识的部分单独有意义恰当其余对它的下一值不造成差别。每段所识的历史是一条确定的律，状态有限恰当所识从某一刻起重复。
++ 确定的律下，保留映射之值并承载规律的最粗切分有意义；映射之值的一部分单独有意义，恰当其余对它的下一值不造成差别。每段值的历史是一条确定的律，状态有限恰当它从某一刻起重复。
+= S1 @statement/en
+- For a determined law, the coarsest split keeping what registers and carrying a law makes sense, and a registered part alone makes sense exactly where the rest makes no difference to its next value. Every registered history is a determined law, finite-state exactly where it is eventually periodic.
++ For a determined law, the coarsest split keeping the map's value and carrying a law makes sense, and a part of the map's value alone makes sense exactly where the rest makes no difference to its next value. Every history of values is a determined law, finite-state exactly where it is eventually periodic.
+= S1 @laws/0/zh
+- 以 Becoming.Unfolding 的定义：确定的律 next 经识读 o 读作框架 Law.frameBy next o；描述有意义，指它恰把相同的配置等同，相同就是所识的未来相同。
++ 以 Becoming.Unfolding 的定义：确定的律 next 经映射 o 读作框架 Law.frameBy next o；描述有意义，指它恰把相同的配置等同，相同就是经映射的未来相同。
+= S1 @laws/0/en
+- With Becoming.Unfolding's definitions: a determined law next read through a registration o is the frame Law.frameBy next o; a description makes sense when it identifies exactly the alike configurations, and alike is the same registered future.
++ With Becoming.Unfolding's definitions: a determined law next read through a map o is the frame Law.frameBy next o; a description makes sense when it identifies exactly the alike configurations, and alike is the same future through the map.
+= S1 @laws/1/zh
+- 确定的律下，描述与律同去，恰当它把被等同者带到被等同者。保留所识并同去的切分以互模拟联系配置，不失去所识的任何东西；最粗的这样的切分有意义。
++ 确定的律下，描述与律同去，恰当它把被等同者带到被等同者。保留映射之值并同去的切分以互模拟联系配置，不失去映射所取的任何东西；最粗的这样的切分有意义。
+= S1 @laws/1/en
+- Under a determined law, a description goes alike with the law exactly where it carries what it identifies into what it identifies. A split keeping what is registered and going alike relates configurations by a bisimulation and loses nothing registered, and the coarsest such split makes sense.
++ Under a determined law, a description goes alike with the law exactly where it carries what it identifies into what it identifies. A split keeping the map's value and going alike relates configurations by a bisimulation and loses nothing the map takes, and the coarsest such split makes sense.
+= S1 @laws/2/zh
+- 什么都不分的切分有意义，恰当所识的未来处处相同；识得一切时，配置自身有意义。
++ 什么都不分的切分有意义，恰当经映射的未来处处相同；映射是恒等时，配置自身有意义。
+= S1 @laws/2/en
+- The split lumping everything makes sense exactly where the registered futures are all the same; registering everything, the configuration itself makes sense.
++ The split lumping everything makes sense exactly where the futures through the map are all the same; where the map is the identity, the configuration itself makes sense.
+= S1 @laws/3/zh
+- 现在所识者自身有意义，恰当它固定自己所识的未来，恰当它与律同去，这是一步上的条件。
++ 映射现在之值自身有意义，恰当它固定自己经映射的未来，恰当它与律同去，这是一步上的条件。
+= S1 @laws/3/en
+- What is registered now makes sense by itself exactly where it fixes its own registered future, exactly where it goes alike with the law, a condition on one step.
++ The map's present value makes sense by itself exactly where it fixes its own future through the map, exactly where it goes alike with the law, a condition on one step.
+= S1 @laws/4/zh
+- 律在配对 (x, c) 上、识第一部分时，第一部分单独有意义恰当其余对它的下一值不造成差别，等价地恰当其余从不造成所识的差别；下一值由随之改变的规则给出（next (x, c) = (F c x, G c x)）时，恰当对每个 x、c、c′ 有 F c x = F c′ x，即 Becoming.Mechanism 的 adaptive_state_law_iff 的条件。
++ 律在配对 (x, c) 上、映射取第一部分时，第一部分单独有意义恰当其余对它的下一值不造成差别，等价地恰当其余从不经映射造成差别；下一值由随之改变的规则给出（next (x, c) = (F c x, G c x)）时，恰当对每个 x、c、c′ 有 F c x = F c′ x，即 Becoming.Mechanism 的 adaptive_state_law_iff 的条件。
+= S1 @laws/4/en
+- For a law on pairs (x, c) registering the first part, the first part alone makes sense exactly where the rest makes no difference to its next value, equivalently where the rest never makes a registered difference; where the next value is set by a rule changing with it, next (x, c) = (F c x, G c x), exactly where F c x = F c′ x for every x, c and c′, the condition of adaptive_state_law_iff of Becoming.Mechanism.
++ For a law on pairs (x, c) whose map takes the first part, the first part alone makes sense exactly where the rest makes no difference to its next value, equivalently where the rest never makes a difference through the map; where the next value is set by a rule changing with it, next (x, c) = (F c x, G c x), exactly where F c x = F c′ x for every x, c and c′, the condition of adaptive_state_law_iff of Becoming.Mechanism.
+= S1 @laws/5/zh
+- Motion.move (x, v) = (x + v, v) 是 adaptive 过程；只识 x 时这一对有意义，x 单独不承载规律，v 单独失去 x，两者单独都没有意义；不动的律下 x 单独有意义。
++ Motion.move (x, v) = (x + v, v) 是 adaptive 过程；映射只取 x 时这一对有意义，x 单独不承载规律，v 单独失去 x，两者单独都没有意义；不动的律下 x 单独有意义。
+= S1 @laws/5/en
+- Motion.move (x, v) = (x + v, v) is an adaptive process; registering x, the pair makes sense, x alone carries no law, v alone loses x, and neither alone makes sense; under the still law, x alone makes sense.
++ Motion.move (x, v) = (x + v, v) is an adaptive process; with a map taking x, the pair makes sense, x alone carries no law, v alone loses x, and neither alone makes sense; under the still law, x alone makes sense.
+= S1 @laws/6/zh
+- 一段所识的序列 o 中，时刻 t 与 t′ 是同一状态，指对每个 n 有 o (t + n) = o (t′ + n)。这是等价关系，并作为自身继续；沿轨道读就是所识的未来相同；每个时刻所识都不同时，每个时刻是自己的状态。
++ 一段值的序列 o 中，时刻 t 与 t′ 是同一状态，指对每个 n 有 o (t + n) = o (t′ + n)。这是等价关系，并作为自身继续；沿轨道读就是经映射的未来相同；每个时刻的值都不同时，每个时刻是自己的状态。
+= S1 @laws/6/en
+- In a registered sequence o, moments t and t′ are one state when o (t + n) = o (t′ + n) for every n. This is an equivalence that goes on as itself, it is the same registered future read along an orbit, and where every moment is registered differently each moment is its own state.
++ In a sequence of values o, moments t and t′ are one state when o (t + n) = o (t′ + n) for every n. This is an equivalence that goes on as itself, it is the same future through the map read along an orbit, and where every moment takes a different value each moment is its own state.
+= S1 @laws/7/zh
+- 每段所识的历史是经识读读出的确定的律：时刻之律下（每个时刻走到下一个），两个时刻相同，恰当它们是同一状态。
++ 每段值的历史是经映射读出的确定的律：时刻之律下（每个时刻走到下一个），两个时刻相同，恰当它们是同一状态。
+= S1 @laws/7/en
+- Every registered history is a determined law read through a registration: under the law of moments, each going on to the next, two moments are alike exactly where they are one state.
++ Every history of values is a determined law read through a map: under the law of moments, each going on to the next, two moments are alike exactly where they are one state.
+= S1 @laws/8/zh
+- 不加判定的按关系的鸽笼给出：所识的历史状态有限（每个时刻与某个 L 以下的时刻是同一状态），恰当它有两个时刻是同一状态。返回的配置在每个识读之下状态有限。
++ 不加判定的按关系的鸽笼给出：值的历史状态有限（每个时刻与某个 L 以下的时刻是同一状态），恰当它有两个时刻是同一状态。返回的配置经每个映射状态有限。
+= S1 @laws/8/en
+- A pigeonhole up to a relation, with no decision, gives: a registered history has finitely many states (every moment one state with some moment below some L) exactly where two of its moments are one state. A configuration that returns has finitely many states under every registration.
++ A pigeonhole up to a relation, with no decision, gives: a history of values has finitely many states (every moment one state with some moment below some L) exactly where two of its moments are one state. A configuration that returns has finitely many states through every map.
+= S1 @laws/9/zh
+- 二值否定的所识恰有两个状态：第 0、1 刻不同（经 Becoming.Diagonal 的 revision_never_rests），第 0、2 刻相同，每个时刻是二者之一，每个经另一个定义。
++ 二值否定的历程恰有两个状态：第 0、1 刻不同（经 Becoming.Diagonal 的 revision_never_rests），第 0、2 刻相同，每个时刻是二者之一，每个经另一个定义。
+= S1 @laws/9/en
+- The registration of the two-valued negation has exactly two states: moments 0 and 1 differ (through revision_never_rests of Becoming.Diagonal), moments 0 and 2 are one state, and every moment is one of the two, each defined through the other.
++ The course of the two-valued negation has exactly two states: moments 0 and 1 differ (through revision_never_rests of Becoming.Diagonal), moments 0 and 2 are one state, and every moment is one of the two, each defined through the other.
+= S1
+- every determined law, registration or sequence.
++ every determined law, map or sequence.
+= S1
+- 每个识读或每段序列成立
++ 每个映射或每段序列成立
+= S1
+- Law.identifiesAlike_of_law 要切分保留所识
++ Law.identifiesAlike_of_law 要切分保留映射之值
+= S1
+- needs the split to keep what is registered,
++ needs the split to keep the map's value,
+= L-prefix
+- 有限的记录能否固定状态
++ 有限的前段能否固定状态
+= L-prefix
+- Whether a finite record fixes the states
++ Whether a finite prefix fixes the states
+= S1
+- 只在所识的未来处处相同时有意义
++ 只在经映射的未来处处相同时有意义
+= S1
+- makes sense only where all registered futures are the same
++ makes sense only where all futures through the map are the same
+= S1
+- 相对于所识，有意义的切分唯一并由律给出；两个是一对，恰在律不在它们之间分开并且所识把它们分开。
++ 相对于映射，有意义的切分唯一并由律给出；两个是一对，恰在律不在它们之间分开并且映射把它们分开。
+= S1
+- 按情境的真确切，控制者恰在造成所识差别处在内
++ 按情境的真确切，控制者恰在经映射造成差别处在内
+= S1
+- 每段所识的历史是时刻之律
++ 每段值的历史是时刻之律
+= S1
+- relative to what is registered, the split that makes sense is unique and given by the law; two are a pair exactly where the law does not split between them and what is registered tells them apart.
++ relative to the map, the split that makes sense is unique and given by the law; two are a pair exactly where the law does not split between them and the map tells them apart.
+= S1
+- includes the controller exactly where it makes a registered difference
++ includes the controller exactly where it makes a difference through the map
+= S1
+- every registered history is the law of moments
++ every history of values is the law of moments
+= S1
+- 确定的律下相同就是所识的未来相同。
++ 确定的律下相同就是经映射的未来相同。
+= S1
+- under a determined law likeness is the same registered future.
++ under a determined law likeness is the same future through the map.
+= S1
+- 这里经识读，有意义的切分是其状态。
++ 这里经映射读，有意义的切分是其状态。
+= S1
+- read through a registration, the split that makes sense is their state.
++ read through a map, the split that makes sense is their state.

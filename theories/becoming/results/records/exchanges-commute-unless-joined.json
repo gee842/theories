@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-14T13:00:00+00:00",
   "statement": {
-    "zh": "两侧分开两步时，交换其次序保持平衡、耗散、体现、总量与计数，在任意次这样的交换下也如此；次序恰经共享的关系项或依存被登记。",
-    "en": "Where sides split two steps, swapping the exchanges keeps balance, dissipation, embodiment, totals and counts, under any number of such commutations too; the order registers through a shared relatum or a dependence."
+    "zh": "两侧分开两步时，交换其次序保持平衡、耗散、体现、总量与计数，在任意次这样的交换下也如此；次序恰经共享的关系项或依存显出。",
+    "en": "Where sides split two steps, swapping the exchanges keeps balance, dissipation, embodiment, totals and counts, under any number of such commutations too; the order shows through a shared relatum or a dependence."
   },
   "laws": [
     {
@@ -67,8 +67,8 @@
       ]
     },
     {
-      "zh": "次序经依存与共享的关系项被登记，各有见证。活动需要支持在没有依存跨越两侧时于交换后保持；而在 Crossing 中两个交换没有共享的关系项、两侧分开它们，一个关系项却依存于另一个交换所结束的条件，次序相反时它在没有支持时活跃。",
-      "en": "The order registers through dependence and through a shared relatum, each with a witness. Activity needing support holds after commuting where no dependence crosses the sides; in Crossing the two exchanges share no relatum and the sides split them, yet a relatum depends on a condition the other exchange ends, and in the other order it is active without support.",
+      "zh": "次序经依存与共享的关系项显出，各有见证。活动需要支持在没有依存跨越两侧时于交换后保持；而在 Crossing 中两个交换没有共享的关系项、两侧分开它们，一个关系项却依存于另一个交换所结束的条件，次序相反时它在没有支持时活跃。",
+      "en": "The order shows through dependence and through a shared relatum, each with a witness. Activity needing support holds after commuting where no dependence crosses the sides; in Crossing the two exchanges share no relatum and the sides split them, yet a relatum depends on a condition the other exchange ends, and in the other order it is active without support.",
       "declarations": [
         "Becoming.Web.Dependent",
         "Becoming.Web.commute_dependent",
@@ -198,8 +198,8 @@
     "en": "Unbounded reorderings and continuous-time correspondence remain open; the least footprint is in least-footprint-where-idleness-decided."
   },
   "correspondence": {
-    "zh": "读法（AI 的，依 Ren 的交托采用）：在次序之内，被登记的是经关系项或依存相连的交换的次序；两者都不相连的交换可以任意次序取。于是规律所需的次序会是交换的偏序而不是步的序列；使之精确的逆方向见 order-of-exchanges-is-the-invariant。",
-    "en": "Reading (the AI's, adopted on Ren's delegation): within the order, what registers is the order of exchanges joined through a relatum or a dependence; exchanges joined by neither may be taken in either order. The order the laws need would then be a partial order of exchanges, not a sequence of steps; the converse that makes this exact is in order-of-exchanges-is-the-invariant."
+    "zh": "读法（AI 的，依 Ren 的交托采用）：在次序之内，显出的是经关系项或依存相连的交换的次序；两者都不相连的交换可以任意次序取。于是规律所需的次序会是交换的偏序而不是步的序列；使之精确的逆方向见 order-of-exchanges-is-the-invariant。",
+    "en": "Reading (the AI's, adopted on Ren's delegation): within the order, what shows is the order of exchanges joined through a relatum or a dependence; exchanges joined by neither may be taken in either order. The order the laws need would then be a partial order of exchanges, not a sequence of steps; the converse that makes this exact is in order-of-exchanges-is-the-invariant."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
   "aliases": [

@@ -68,8 +68,8 @@
       ]
     },
     {
-      "zh": "训练：经关系 alike 的选择把 alike 的候选选得相同；经识的选择恰是经“直到 t 识得相同”的选择（定义上相同）；由数据上的值算出的损失以及由它作出的每个选择经“在数据上一致”选择。",
-      "en": "Training: a selection through a relation alike selects alike candidates alike; selection through registration is exactly a selection through registering alike up to t, by definition; a loss computed from the values on the data, and every choice made from it, select through agreeing on the data.",
+      "zh": "训练：经关系 alike 的选择把 alike 的候选选得相同；经耦合的选择恰是经“直到 t 经耦合无别”的选择（定义上相同）；由数据上的值算出的损失以及由它作出的每个选择经“在数据上一致”选择。",
+      "en": "Training: a selection through a relation alike selects alike candidates alike; selection through the couplings is exactly a selection through being alike through them up to t, by definition; a loss computed from the values on the data, and every choice made from it, select through agreeing on the data.",
       "declarations": [
         "Becoming.Learning.Training.Through",
         "Becoming.Learning.Training.AgreeOn",
@@ -198,8 +198,8 @@
     "en": "Periphery instances of the lumping an actual architecture imposes (sharing across positions, invariance); generalization over undetermined processes; instance theorems with Alike of Becoming.Unfolding and the account in Becoming.Description of what a description keeps and loses."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12：“我觉得理更像是对结构和变化的规律的建模”。依 Ren 的读法，理是对结构与变化之规律的建模；AI 把对结构的建模读作一个归并（Lumped），把对变化的建模读作步骤经它同去的归并（GoAlike），goAlike_iff_lumped 说两者是同一个概念。它取代 AI 在 testing-within-registration 中的读法“对识负责的模型”；按 Ren 的读法，模型仍只经识被检验。读法（AI 的，依 Ren 的交托采用）：关于何者无关的模型何时正确，就是世界何时经它所归并者同去；自然的一致性不是前提而是这一局部条件；古德曼的新谜是选哪个归并；every_determines_nothing 是“no free lunch”的有限、确定性形式；对受训网络，类是训练所能达到的，推广来自结构、起点与更新所施加的归并（位置间共享、不变性、组合），不来自损失。",
-    "en": "Ren, 12 October 2026: “我觉得理更像是对结构和变化的规律的建模”. On Ren's reading 理 is the modeling of the laws of structure and of change; the AI reads a model of structure as a lumping (Lumped) and a model of change as a lumping the step goes alike across (GoAlike), and goAlike_iff_lumped says the two are one notion. This replaces the AI's reading in testing-within-registration, “a model answerable to registration”; on Ren's reading a model is still tested only through registration. Readings (the AI's, adopted on Ren's delegation): when a model of what is irrelevant is right is when the world goes alike across what it lumps; the uniformity of nature is not a premise but that local condition; Goodman's new riddle is which lumping; every_determines_nothing is a finite, determined form of “no free lunch”; for a trained network the class is what training can reach, and generalization comes from the lumping that architecture, starting points and updates impose (sharing across positions, invariance, composition), not from the loss."
+    "zh": "Ren 2026-10-12：“我觉得理更像是对结构和变化的规律的建模”。依 Ren 的读法，理是对结构与变化之规律的建模；AI 把对结构的建模读作一个归并（Lumped），把对变化的建模读作步骤经它同去的归并（GoAlike），goAlike_iff_lumped 说两者是同一个概念。它取代 AI 在 testing-within-registration 中的读法“对识负责的模型”；按 Ren 的读法，模型仍只经耦合入者被检验。读法（AI 的，依 Ren 的交托采用）：关于何者无关的模型何时正确，就是世界何时经它所归并者同去；自然的一致性不是前提而是这一局部条件；古德曼的新谜是选哪个归并；every_determines_nothing 是“no free lunch”的有限、确定性形式；对受训网络，类是训练所能达到的，推广来自结构、起点与更新所施加的归并（位置间共享、不变性、组合），不来自损失。",
+    "en": "Ren, 12 October 2026: “我觉得理更像是对结构和变化的规律的建模”. On Ren's reading 理 is the modeling of the laws of structure and of change; the AI reads a model of structure as a lumping (Lumped) and a model of change as a lumping the step goes alike across (GoAlike), and goAlike_iff_lumped says the two are one notion. This replaces the AI's reading in testing-within-registration, “a model answerable to registration”; on Ren's reading a model is still tested only through what couples in. Readings (the AI's, adopted on Ren's delegation): when a model of what is irrelevant is right is when the world goes alike across what it lumps; the uniformity of nature is not a premise but that local condition; Goodman's new riddle is which lumping; every_determines_nothing is a finite, determined form of “no free lunch”; for a trained network the class is what training can reach, and generalization comes from the lumping that architecture, starting points and updates impose (sharing across positions, invariance, composition), not from the loss."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
   "aliases": [
@@ -236,13 +236,13 @@
       "id": "selection-through-registration",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Web.SelectsThrough 与 Web.AlikeThroughUpTo：经识的选择是经“识得相同”的选择（Training.web_selectsThrough_iff）。增量是把选择移到训练上：损失经数据选择，数据之外的值与类同样自由。",
-        "en": "Reuses Web.SelectsThrough and Web.AlikeThroughUpTo: selection through registration is selection through registering alike (Training.web_selectsThrough_iff). The delta carries selection over to training: a loss selects through the data, and values beyond the data stay as free as the class leaves them."
+        "zh": "复用 Web.SelectsThrough 与 Web.AlikeThroughUpTo：经耦合的选择是经“经耦合无别”的选择（Training.web_selectsThrough_iff）。增量是把选择移到训练上：损失经数据选择，数据之外的值与类同样自由。",
+        "en": "Reuses Web.SelectsThrough and Web.AlikeThroughUpTo: selection through the couplings is selection through being alike through them (Training.web_selectsThrough_iff). The delta carries selection over to training: a loss selects through the data, and values beyond the data stay as free as the class leaves them."
       },
       "interface": {
         "output": {
-          "zh": "两段历史被每个经识的选择选得相同，恰当选择者把它们识得相同。",
-          "en": "Two histories are selected alike by every selection through registration exactly when the selector registers them alike."
+          "zh": "两段历史被每个经耦合的选择选得相同，恰当它们经选择者的耦合无别。",
+          "en": "Two histories are selected alike by every selection through the couplings exactly when they are alike through the selector's couplings."
         },
         "input": {
           "zh": "训练作为经数据的选择；拟合在数据之外何时正确。",
@@ -267,15 +267,15 @@
     {
       "id": "learning-by-refutation",
       "detail": {
-        "zh": "那里从记录选出假设的学习何时静止；这里一个类或归并在数据之外决定什么。",
-        "en": "There, when learning that selects a hypothesis from the record comes to rest; here, what a class or lumping determines beyond the data."
+        "zh": "那里从前段选出候选的逐除外推何时静止；这里一个类或归并在数据之外决定什么。",
+        "en": "There, when extrapolation by elimination, selecting a candidate from the prefix, comes to rest; here, what a class or lumping determines beyond the data."
       }
     },
     {
       "id": "testing-within-registration",
       "detail": {
-        "zh": "那里理读作对识负责的模型（AI 的读法），这里依 Ren 读作对结构与变化之规律的建模；模型只经识被检验仍成立。",
-        "en": "There 理 was read as a model answerable to registration (the AI's reading); here, on Ren's reading, as the modeling of the laws of structure and change; that a model is tested only through registration still holds."
+        "zh": "那里理曾读作“对识负责的模型”（AI 先前的读法），这里依 Ren 读作对结构与变化之规律的建模；模型只经耦合入者被检验仍成立。",
+        "en": "There 理 was read as “a model answerable to registration” (the AI's earlier reading); here, on Ren's reading, as the modeling of the laws of structure and change; that a model is tested only through what couples in still holds."
       }
     },
     {

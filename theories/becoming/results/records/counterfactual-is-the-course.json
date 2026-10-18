@@ -78,8 +78,8 @@
       ]
     },
     {
-      "zh": "经识回应推出：律经识而读，是指部分之外每个形成在第一个网下识得相同到第 t 步的两段历史，律在第 t 步给出相同；这时其余在律的任意两个进程中经识回应。",
-      "en": "Responding through registration follows: the law reads through a registration when, for every formation outside the part, two histories it registers alike under the first web up to step t give alike at step t; then the rest responds through its registration in any two courses of the law.",
+      "zh": "经耦合回应推出：律经耦合而读，是指部分之外每个形成在第一个网下到第 t 步经其耦合无别的两段历史，律在第 t 步给出相同；这时其余在律的任意两个进程中经其耦合回应。",
+      "en": "Responding through the couplings follows: the law reads through the couplings when, for every formation outside the part, two histories alike through its couplings under the first web up to step t give alike at step t; then the rest responds through its couplings in any two courses of the law.",
       "declarations": [
         "Becoming.ExchangeLaw.Through",
         "Becoming.ExchangeLaw.Through.responds",
@@ -87,8 +87,8 @@
       ]
     },
     {
-      "zh": "每个读已立者的律经识一切而读；形成的交换对一个条件敏感，是指某步只改该条件的水平会改变它。",
-      "en": "Every law of what has stood reads through registering everything; a formation's exchange is sensitive to a condition when at some step changing that condition's levels alone changes it.",
+      "zh": "每个读已立者的律经一切之耦合而读；形成的交换对一个条件敏感，是指某步只改该条件的水平会改变它。",
+      "en": "Every law of what has stood reads through the coupling of everything; a formation's exchange is sensitive to a condition when at some step changing that condition's levels alone changes it.",
       "declarations": [
         "Becoming.ExchangeLaw.Nonanticipating.through_all",
         "Becoming.ExchangeLaw.Sensitive",
@@ -96,8 +96,8 @@
       ]
     },
     {
-      "zh": "条件有限（一个列表含每个条件）、条件的相等可判定时，读已立者的律经每个观察其敏感者的识而读，尤其经其敏感本身而读；证明逐个条件替换。",
-      "en": "With finitely many conditions (a list holding every condition) and decidable equality of conditions, a law of what has stood reads through every registration observing what it is sensitive to, so through its sensitivity itself, by changing one condition at a time.",
+      "zh": "条件有限（一个列表含每个条件）、条件的相等可判定时，读已立者的律经每个其敏感者经水平耦合入的耦合而读，尤其经其敏感本身而读；证明逐个条件替换。",
+      "en": "With finitely many conditions (a list holding every condition) and decidable equality of conditions, a law of what has stood reads through every coupling by which what it is sensitive to couples in by level, so through its sensitivity itself, by changing one condition at a time.",
       "declarations": [
         "Becoming.ExchangeLaw.Nonanticipating.through_of_observed",
         "Becoming.ExchangeLaw.Nonanticipating.through_sensitive",
@@ -106,24 +106,24 @@
       ]
     },
     {
-      "zh": "反之，律所经的每个识，连同形成所依存的，都不漏掉它敏感的条件（双重否定）；不判定敏感，只判定两个数是否相等。",
-      "en": "Conversely, every registration a law reads through, with what the formation depends on, leaves out no condition the exchange is sensitive to (double-negated); no sensitivity is decided, only whether two numbers are equal.",
+      "zh": "反之，律所经的每个耦合，连同形成所依存的，都不漏掉它敏感的条件（双重否定）；不判定敏感，只判定两个数是否相等。",
+      "en": "Conversely, every coupling a law reads through, with what the formation depends on, leaves out no condition the exchange is sensitive to (double-negated); no sensitivity is decided, only whether two numbers are equal.",
       "declarations": [
         "Becoming.ExchangeLaw.Through.couples_of_sensitive",
         "Becoming.nat_eq_of_not_not"
       ]
     },
     {
-      "zh": "比较：律的两个平衡的进程在场形成相同、起始相同、律经一个识而读时，对覆盖每个不在经此识画出的回应所及之外者（双重否定）的任何意义，每个保留另一个上有意义者恰如包含它，两者都不增加恰当两者都不超出。",
-      "en": "The comparison: for two balanced courses of the law with the same formations present, starting alike, the law reading through a registration, any significance covering every formation not beyond the responsive reach drawn through that registration (double-negated) makes each retain along the other exactly as it includes it, and neither add exactly where neither exceeds.",
+      "zh": "比较：律的两个平衡的进程在场形成相同、起始相同、律经一个耦合而读时，对覆盖每个不在经此耦合画出的回应所及之外者（双重否定）的任何意义，每个保留另一个上有意义者恰如包含它，两者都不增加恰当两者都不超出。",
+      "en": "The comparison: for two balanced courses of the law with the same formations present, starting alike, the law reading through a coupling, any significance covering every formation not beyond the responsive reach drawn through that coupling (double-negated) makes each retain along the other exactly as it includes it, and neither add exactly where neither exceeds.",
       "declarations": [
         "Becoming.comparison_of_courses",
         "Becoming.Flow.Balances.comparison_within_response"
       ]
     },
     {
-      "zh": "条件有限时识取作律的敏感；第二个流取作另一个动作生成的、可行的进程时亦然，不另给第二个流与回应。",
-      "en": "With finitely many conditions the registration is the law's sensitivity; likewise with the second flow the feasible course another act generates, with neither the second flow nor the response supplied.",
+      "zh": "条件有限时这个耦合取作律的敏感；第二个流取作另一个动作生成的、可行的进程时亦然，不另给第二个流与回应。",
+      "en": "With finitely many conditions the coupling is the law's sensitivity; likewise with the second flow the feasible course another act generates, with neither the second flow nor the response supplied.",
       "declarations": [
         "Becoming.comparison_through_sensitivity",
         "Becoming.comparison_with_act"
@@ -211,8 +211,8 @@
       "en": "The law of exchange is supplied: which law the rest follows (ExchangeLaw, Flow.Follows) is not derived."
     },
     {
-      "zh": "律读已立者（ExchangeLaw.Nonanticipating）是规律 3、5–7、9、10、13、17 与 ExchangeLaw.totals_under 的假设；规律 8 与 12 改取律经识而读（ExchangeLaw.Through）。",
-      "en": "That the law reads what has stood (ExchangeLaw.Nonanticipating) is a hypothesis of laws 3, 5–7, 9, 10, 13 and 17 and of ExchangeLaw.totals_under; laws 8 and 12 take instead that the law reads through a registration (ExchangeLaw.Through)."
+      "zh": "律读已立者（ExchangeLaw.Nonanticipating）是规律 3、5–7、9、10、13、17 与 ExchangeLaw.totals_under 的假设；规律 8 与 12 改取律经耦合而读（ExchangeLaw.Through）。",
+      "en": "That the law reads what has stood (ExchangeLaw.Nonanticipating) is a hypothesis of laws 3, 5–7, 9, 10, 13 and 17 and of ExchangeLaw.totals_under; laws 8 and 12 take instead that the law reads through a coupling (ExchangeLaw.Through)."
     },
     {
       "zh": "进程可行（ExchangeLaw.Feasible）是 comparison_with_act、counterfactual_is_course 与 ExchangeLaw.course_unique 的假设；course_balances_iff 证明它等价于生成的流平衡。",
@@ -250,23 +250,23 @@
       "kind": "non-implication"
     },
     {
-      "zh": "经识回应的推出近于定义；实质内容是反事实由动作固定、生成与可行的等价、敏感是最小的识、因果模型的实例与回路由律推出。",
-      "en": "Responding through registration follows near-definitionally; the substance is the act fixing the counterfactual, generation as feasibility, sensitivity as least registration, the causal-model instance and the loop from the law.",
+      "zh": "经耦合回应的推出近于定义；实质内容是反事实由动作固定、生成与可行的等价、敏感是最小的耦合、因果模型的实例与回路由律推出。",
+      "en": "Responding through the couplings follows near-definitionally; the substance is the act fixing the counterfactual, generation as feasibility, sensitivity as least coupling, the causal-model instance and the loop from the law.",
       "kind": "scope"
     },
     {
-      "zh": "前提移到律上：对未被识者的回应、噪声与未表示为条件的输入落在律的敏感之内，回应所及变宽而不是排除它们。",
-      "en": "The premise moves onto the law: responses to what is not registered, noise and unrepresented inputs fall within the law's sensitivity, so the responsive reach widens rather than excluding them.",
+      "zh": "前提移到律上：对不耦合入者的回应、噪声与未表示为条件的输入落在律的敏感之内，回应所及变宽而不是排除它们。",
+      "en": "The premise moves onto the law: responses to what does not couple in, noise and unrepresented inputs fall within the law's sensitivity, so the responsive reach widens rather than excluding them.",
       "kind": "scope"
     },
     {
-      "zh": "条件无穷多时敏感是否仍是最小的识未陈述，也无反例。",
-      "en": "Whether sensitivity remains the least registration with infinitely many conditions is not stated, and no counterexample is given.",
+      "zh": "条件无穷多时敏感是否仍是最小的耦合未陈述，也无反例。",
+      "en": "Whether sensitivity remains the least coupling with infinitely many conditions is not stated, and no counterexample is given.",
       "kind": "scope"
     },
     {
-      "zh": "只依存而敏感于其水平的律不经只含依存的识而读（依存只要求同样容许）。",
-      "en": "A law sensitive to the level of a condition the formation only depends on does not read through a registration holding only that dependence (dependence asks only that it be admitted alike).",
+      "zh": "只依存而敏感于其水平的律不经只含依存的耦合而读（依存只要求同样容许）。",
+      "en": "A law sensitive to the level of a condition the formation only depends on does not read through a coupling holding only that dependence (dependence asks only that it be admitted alike).",
       "kind": "non-implication"
     },
     {
@@ -296,8 +296,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "detail": {
-        "zh": "事先给定的识可以过窄：律对某个形成既不依存也不观察的条件敏感时，律不经这个识而读（ExchangeLaw.Through.couples_of_sensitive 的逆否）；回应所及须经律的敏感画出，随之变宽。",
-        "en": "A registration given in advance can be too narrow: where the law is sensitive to a condition the formation neither depends on nor observes, the law does not read through that registration (the contrapositive of ExchangeLaw.Through.couples_of_sensitive); the responsive reach must be drawn through the law's sensitivity, and widens."
+        "zh": "事先给定的耦合可以过窄：律对某个既不经阈也不经水平耦合入形成的条件敏感时，律不经这个耦合而读（ExchangeLaw.Through.couples_of_sensitive 的逆否）；回应所及须经律的敏感画出，随之变宽。",
+        "en": "A coupling given in advance can be too narrow: where the law is sensitive to a condition that couples into the formation neither by threshold nor by level, the law does not read through that coupling (the contrapositive of ExchangeLaw.Through.couples_of_sensitive); the responsive reach must be drawn through the law's sensitivity, and widens."
       }
     }
   ],
@@ -316,8 +316,8 @@
     "en": "A law over two kinds read as one world; a law with noise and its course."
   },
   "correspondence": {
-    "zh": "Ren 写道：“another agent has got this far, maybe merge first and see if there is something to work on”。AI 随后认领本章与“其余回应时的比较”相接的开放项：“他者有回应的比较，由动力学给出回应而不是另给第二个流”；该记录写明其定理仍取的假设，本记录陈述新的定律。读法（AI 的，依 Ren 的交托采用）：反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程，可行时存在、由动作固定（AI 把它与 Ren 所说的“there are no two realities”相对应）；对遵从读已立者之律的其余，经识回应不是另加的关于形成怎样行为的假设，无论其余遵从哪个这样的律，条件有限时它都经其敏感而读，读作识：形成识其交换所敏感的；未取的动作是标准因果模型意义上的干预。读法增加（AI 的，依 Ren 的交托采用）：未取之动作的进程与每个展开同形，不是第二种东西；律在它所管的历史之外添加的恰是历史未取的动作，所以反事实是律在其历史之外的一步，不是旁边的第二段历史；部分的动作在展开之内由律形成时，进程从起始处固定，另作即部分另是的律。",
-    "en": "Ren wrote: “another agent has got this far, maybe merge first and see if there is something to work on”. The AI then took up the chapter's open item that joins the comparison where the rest responds: “a comparison in which others respond as the dynamics give, not through a second flow supplied”; that record states which hypotheses its theorem still takes, and this one states the new laws. Readings (the AI's, adopted on Ren's delegation): a counterfactual is not a second world beside the actual one but the course of the same law where the part acts otherwise, existing where feasible and fixed by the act (the AI relates this to Ren's “there are no two realities”); for a rest following a law of what has stood, responding through registration is no further assumption about how formations behave: whatever such law the rest follows, with finitely many conditions it reads through its sensitivity, read as 识, a formation registering what its exchange is sensitive to; an act not taken is an intervention in the sense of the standard causal model. Further readings (the AI's, adopted on Ren's delegation): the course of an act not taken has the form of every unfolding, not a second kind of thing; what a law adds beyond the history it governs is exactly the moves the history never takes, so a counterfactual is the law's step beyond its history, not a second history beside it; with the part's move formed within the unfolding by a law, the course is fixed from the start, and acting otherwise is a law of the part otherwise."
+    "zh": "Ren 写道：“another agent has got this far, maybe merge first and see if there is something to work on”。AI 随后认领本章与“其余回应时的比较”相接的开放项：“他者有回应的比较，由动力学给出回应而不是另给第二个流”；该记录写明其定理仍取的假设，本记录陈述新的定律。读法（AI 的，依 Ren 的交托采用）：反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程，可行时存在、由动作固定（AI 把它与 Ren 所说的“there are no two realities”相对应）；对遵从读已立者之律的其余，经耦合回应不是另加的关于形成怎样行为的假设，无论其余遵从哪个这样的律，条件有限时它都经其敏感而读：耦合入形成的，就是其交换所敏感的；未取的动作是标准因果模型意义上的干预。读法增加（AI 的，依 Ren 的交托采用）：未取之动作的进程与每个展开同形，不是第二种东西；律在它所管的历史之外添加的恰是历史未取的动作，所以反事实是律在其历史之外的一步，不是旁边的第二段历史；部分的动作在展开之内由律形成时，进程从起始处固定，另作即部分另是的律。",
+    "en": "Ren wrote: “another agent has got this far, maybe merge first and see if there is something to work on”. The AI then took up the chapter's open item that joins the comparison where the rest responds: “a comparison in which others respond as the dynamics give, not through a second flow supplied”; that record states which hypotheses its theorem still takes, and this one states the new laws. Readings (the AI's, adopted on Ren's delegation): a counterfactual is not a second world beside the actual one but the course of the same law where the part acts otherwise, existing where feasible and fixed by the act (the AI relates this to Ren's “there are no two realities”); for a rest following a law of what has stood, responding through the couplings is no further assumption about how formations behave: whatever such law the rest follows, with finitely many conditions it reads through its sensitivity: what couples into a formation is what its exchange is sensitive to; an act not taken is an intervention in the sense of the standard causal model. Further readings (the AI's, adopted on Ren's delegation): the course of an act not taken has the form of every unfolding, not a second kind of thing; what a law adds beyond the history it governs is exactly the moves the history never takes, so a counterfactual is the law's step beyond its history, not a second history beside it; with the part's move formed within the unfolding by a law, the course is fixed from the start, and acting otherwise is a law of the part otherwise."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
   "aliases": [
@@ -354,16 +354,16 @@
       },
       "interface": {
         "output": {
-          "zh": "其余经识回应时，比较在回应所及之内决定。",
-          "en": "Where the rest responds through its registration, the comparison is decided within the responsive reach."
+          "zh": "其余经耦合回应时，比较在回应所及之内决定。",
+          "en": "Where the rest responds through its couplings, the comparison is decided within the responsive reach."
         },
         "input": {
-          "zh": "律经识而读时，其余在律的任意两个进程中经识回应；第二个流是另一个动作生成的进程。",
-          "en": "Where the law reads through a registration, the rest responds through its registration in any two courses of the law; the second flow is the course another act generates."
+          "zh": "律经耦合而读时，其余在律的任意两个进程中经其耦合回应；第二个流是另一个动作生成的进程。",
+          "en": "Where the law reads through the couplings, the rest responds through its couplings in any two courses of the law; the second flow is the course another act generates."
         },
         "conditions": {
-          "zh": "交换律；它经识而读（或读已立者且条件有限）；两个流平衡（第二个由可行给出）；在场形成相同；起始相同。",
-          "en": "A law of exchange; that it reads through the registration (or reads what has stood, with finitely many conditions); both flows balance (the second by feasibility); the same formations present; a common start."
+          "zh": "交换律；它经耦合而读（或读已立者且条件有限）；两个流平衡（第二个由可行给出）；在场形成相同；起始相同。",
+          "en": "A law of exchange; that it reads through the coupling (or reads what has stood, with finitely many conditions); both flows balance (the second by feasibility); the same formations present; a common start."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean"
       }
@@ -372,17 +372,17 @@
       "id": "testing-within-registration",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Web.CoupledInto、Web.AlikeThrough 与 Web.AlikeThroughUpTo：律经识而读与敏感的最小性都以它们陈述。",
-        "en": "Reuses Web.CoupledInto, Web.AlikeThrough and Web.AlikeThroughUpTo: reading through a registration and the leastness of sensitivity are stated with them."
+        "zh": "复用 Web.CoupledInto、Web.AlikeThrough 与 Web.AlikeThroughUpTo：律经耦合而读与敏感的最小性都以它们陈述。",
+        "en": "Reuses Web.CoupledInto, Web.AlikeThrough and Web.AlikeThroughUpTo: reading through a coupling and the leastness of sensitivity are stated with them."
       },
       "interface": {
         "output": {
-          "zh": "一个形成识什么（所依存的被同样容许，所观察的水平相同），以及到第 t 步识得相同。",
-          "en": "What a formation registers (what it depends on admitted alike, what it observes at alike levels), and registering alike up to step t."
+          "zh": "什么耦合入一个形成（经阈耦合入的被同样容许，经水平耦合入的水平相同），以及到第 t 步经其耦合无别。",
+          "en": "What couples into a formation (what couples in by threshold admitted alike, what couples in by level at alike levels), and being alike through its couplings up to step t."
         },
         "input": {
-          "zh": "律经识而读的定义；敏感者在所依存或所观察之内。",
-          "en": "The definition of a law reading through a registration; what the law is sensitive to lies within what is depended on or observed."
+          "zh": "律经耦合而读的定义；敏感者在经阈或经水平耦合入者之内。",
+          "en": "The definition of a law reading through a coupling; what the law is sensitive to lies within what couples in by threshold or by level."
         },
         "conditions": {
           "zh": "无。",
@@ -509,15 +509,15 @@
     {
       "id": "sensitivity-is-the-least-registration",
       "detail": {
-        "zh": "回答其下一步：凡律在每个历史下读有限多个条件，无论条件多少，敏感都是最小的识（ExchangeLaw.ReadsFinitely.least_coupling），条件有限的情形（ExchangeLaw.Nonanticipating.through_sensitive）是其实例；条件无穷多时这一条件不能去掉（tailLaw_no_least_registration，给定消失之判定），条件编号时每个反例都给出弱有限全知原则（wlpo_of_not_through_sensitive）。",
-        "en": "Answers its next step: wherever the law reads finitely many conditions under each history, sensitivity is the least registration with any number of conditions (ExchangeLaw.ReadsFinitely.least_coupling), the finite case (ExchangeLaw.Nonanticipating.through_sensitive) being its instance; with infinitely many conditions this cannot be dropped (tailLaw_no_least_registration, given the decision of vanishing), and with numbered conditions every counterexample gives the weak limited principle of omniscience (wlpo_of_not_through_sensitive)."
+        "zh": "回答其下一步：凡律在每个历史下读有限多个条件，无论条件多少，敏感都是最小的耦合（ExchangeLaw.ReadsFinitely.least_coupling），条件有限的情形（ExchangeLaw.Nonanticipating.through_sensitive）是其实例；条件无穷多时这一条件不能去掉（tailLaw_no_least_registration，给定消失之判定），条件编号时每个反例都给出弱有限全知原则（wlpo_of_not_through_sensitive）。",
+        "en": "Answers its next step: wherever the law reads finitely many conditions under each history, sensitivity is the least coupling with any number of conditions (ExchangeLaw.ReadsFinitely.least_coupling), the finite case (ExchangeLaw.Nonanticipating.through_sensitive) being its instance; with infinitely many conditions this cannot be dropped (tailLaw_no_least_registration, given the decision of vanishing), and with numbered conditions every counterexample gives the weak limited principle of omniscience (wlpo_of_not_through_sensitive)."
       }
     },
     {
       "id": "how-much-difference-arrives",
       "detail": {
-        "zh": "回答其下一步：差别到达多少至多是耦合强度所携带的量，所携带的量由本记录的生成给出，恰好达到（most_difference_arrives），恰沿正强度的时间路线为正（carried_pos_iff），正强度为所识者时是 TimedResponse 之传播的路线（Conveyed.spread）。",
-        "en": "Answers its next step: how much difference arrives is at most the amount the coupling strengths carry, generated by this record's generation and attained (most_difference_arrives), positive exactly along a route in time of positive strengths (carried_pos_iff), a route of TimedResponse's spread where they are registered (Conveyed.spread)."
+        "zh": "回答其下一步：差别到达多少至多是耦合强度所携带的量，所携带的量由本记录的生成给出，恰好达到（most_difference_arrives），恰沿正强度的时间路线为正（carried_pos_iff），正强度耦合入时是 TimedResponse 之传播的路线（Conveyed.spread）。",
+        "en": "Answers its next step: how much difference arrives is at most the amount the coupling strengths carry, generated by this record's generation and attained (most_difference_arrives), positive exactly along a route in time of positive strengths (carried_pos_iff), a route of TimedResponse's spread where they couple in (Conveyed.spread)."
       }
     }
   ],

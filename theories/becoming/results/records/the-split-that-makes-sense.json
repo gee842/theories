@@ -10,13 +10,13 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-14T15:39:01+00:00",
   "statement": {
-    "zh": "确定的律下，保留所识并承载规律的最粗切分有意义；所识的部分单独有意义恰当其余对它的下一值不造成差别。每段所识的历史是一条确定的律，状态有限恰当所识从某一刻起重复。",
-    "en": "For a determined law, the coarsest split keeping what registers and carrying a law makes sense, and a registered part alone makes sense exactly where the rest makes no difference to its next value. Every registered history is a determined law, finite-state exactly where it is eventually periodic."
+    "zh": "确定的律下，保留映射之值并承载规律的最粗切分有意义；映射之值的一部分单独有意义，恰当其余对它的下一值不造成差别。每段值的历史是一条确定的律，状态有限恰当它从某一刻起重复。",
+    "en": "For a determined law, the coarsest split keeping the map's value and carrying a law makes sense, and a part of the map's value alone makes sense exactly where the rest makes no difference to its next value. Every history of values is a determined law, finite-state exactly where it is eventually periodic."
   },
   "laws": [
     {
-      "zh": "以 Becoming.Unfolding 的定义：确定的律 next 经识读 o 读作框架 Law.frameBy next o；描述有意义，指它恰把相同的配置等同，相同就是所识的未来相同。",
-      "en": "With Becoming.Unfolding's definitions: a determined law next read through a registration o is the frame Law.frameBy next o; a description makes sense when it identifies exactly the alike configurations, and alike is the same registered future.",
+      "zh": "以 Becoming.Unfolding 的定义：确定的律 next 经映射 o 读作框架 Law.frameBy next o；描述有意义，指它恰把相同的配置等同，相同就是经映射的未来相同。",
+      "en": "With Becoming.Unfolding's definitions: a determined law next read through a map o is the frame Law.frameBy next o; a description makes sense when it identifies exactly the alike configurations, and alike is the same future through the map.",
       "declarations": [
         "Becoming.Law.frameBy",
         "Becoming.IdentifiesAlike",
@@ -27,8 +27,8 @@
       ]
     },
     {
-      "zh": "确定的律下，描述与律同去，恰当它把被等同者带到被等同者。保留所识并同去的切分以互模拟联系配置，不失去所识的任何东西；最粗的这样的切分有意义。",
-      "en": "Under a determined law, a description goes alike with the law exactly where it carries what it identifies into what it identifies. A split keeping what is registered and going alike relates configurations by a bisimulation and loses nothing registered, and the coarsest such split makes sense.",
+      "zh": "确定的律下，描述与律同去，恰当它把被等同者带到被等同者。保留映射之值并同去的切分以互模拟联系配置，不失去映射所取的任何东西；最粗的这样的切分有意义。",
+      "en": "Under a determined law, a description goes alike with the law exactly where it carries what it identifies into what it identifies. A split keeping the map's value and going alike relates configurations by a bisimulation and loses nothing the map takes, and the coarsest such split makes sense.",
       "declarations": [
         "Becoming.GoAlike",
         "Becoming.Law.goAlike_process_iff",
@@ -39,8 +39,8 @@
       ]
     },
     {
-      "zh": "什么都不分的切分有意义，恰当所识的未来处处相同；识得一切时，配置自身有意义。",
-      "en": "The split lumping everything makes sense exactly where the registered futures are all the same; registering everything, the configuration itself makes sense.",
+      "zh": "什么都不分的切分有意义，恰当经映射的未来处处相同；映射是恒等时，配置自身有意义。",
+      "en": "The split lumping everything makes sense exactly where the futures through the map are all the same; where the map is the identity, the configuration itself makes sense.",
       "declarations": [
         "Becoming.Law.const_identifiesAlike_iff",
         "Becoming.Law.whole_identifiesAlike",
@@ -48,8 +48,8 @@
       ]
     },
     {
-      "zh": "现在所识者自身有意义，恰当它固定自己所识的未来，恰当它与律同去，这是一步上的条件。",
-      "en": "What is registered now makes sense by itself exactly where it fixes its own registered future, exactly where it goes alike with the law, a condition on one step.",
+      "zh": "映射现在之值自身有意义，恰当它固定自己经映射的未来，恰当它与律同去，这是一步上的条件。",
+      "en": "The map's present value makes sense by itself exactly where it fixes its own future through the map, exactly where it goes alike with the law, a condition on one step.",
       "declarations": [
         "Becoming.Law.now_identifiesAlike_iff",
         "Becoming.Law.sameFuture_of_goAlike",
@@ -57,8 +57,8 @@
       ]
     },
     {
-      "zh": "律在配对 (x, c) 上、识第一部分时，第一部分单独有意义恰当其余对它的下一值不造成差别，等价地恰当其余从不造成所识的差别；下一值由随之改变的规则给出（next (x, c) = (F c x, G c x)）时，恰当对每个 x、c、c′ 有 F c x = F c′ x，即 Becoming.Mechanism 的 adaptive_state_law_iff 的条件。",
-      "en": "For a law on pairs (x, c) registering the first part, the first part alone makes sense exactly where the rest makes no difference to its next value, equivalently where the rest never makes a registered difference; where the next value is set by a rule changing with it, next (x, c) = (F c x, G c x), exactly where F c x = F c′ x for every x, c and c′, the condition of adaptive_state_law_iff of Becoming.Mechanism.",
+      "zh": "律在配对 (x, c) 上、映射取第一部分时，第一部分单独有意义恰当其余对它的下一值不造成差别，等价地恰当其余从不经映射造成差别；下一值由随之改变的规则给出（next (x, c) = (F c x, G c x)）时，恰当对每个 x、c、c′ 有 F c x = F c′ x，即 Becoming.Mechanism 的 adaptive_state_law_iff 的条件。",
+      "en": "For a law on pairs (x, c) whose map takes the first part, the first part alone makes sense exactly where the rest makes no difference to its next value, equivalently where the rest never makes a difference through the map; where the next value is set by a rule changing with it, next (x, c) = (F c x, G c x), exactly where F c x = F c′ x for every x, c and c′, the condition of adaptive_state_law_iff of Becoming.Mechanism.",
       "declarations": [
         "Becoming.Law.part_identifiesAlike_iff_step",
         "Becoming.Law.part_identifiesAlike_iff",
@@ -68,8 +68,8 @@
       ]
     },
     {
-      "zh": "Motion.move (x, v) = (x + v, v) 是 adaptive 过程；只识 x 时这一对有意义，x 单独不承载规律，v 单独失去 x，两者单独都没有意义；不动的律下 x 单独有意义。",
-      "en": "Motion.move (x, v) = (x + v, v) is an adaptive process; registering x, the pair makes sense, x alone carries no law, v alone loses x, and neither alone makes sense; under the still law, x alone makes sense.",
+      "zh": "Motion.move (x, v) = (x + v, v) 是 adaptive 过程；映射只取 x 时这一对有意义，x 单独不承载规律，v 单独失去 x，两者单独都没有意义；不动的律下 x 单独有意义。",
+      "en": "Motion.move (x, v) = (x + v, v) is an adaptive process; with a map taking x, the pair makes sense, x alone carries no law, v alone loses x, and neither alone makes sense; under the still law, x alone makes sense.",
       "declarations": [
         "Becoming.Motion.cancel",
         "Becoming.Motion.move",
@@ -84,8 +84,8 @@
       ]
     },
     {
-      "zh": "一段所识的序列 o 中，时刻 t 与 t′ 是同一状态，指对每个 n 有 o (t + n) = o (t′ + n)。这是等价关系，并作为自身继续；沿轨道读就是所识的未来相同；每个时刻所识都不同时，每个时刻是自己的状态。",
-      "en": "In a registered sequence o, moments t and t′ are one state when o (t + n) = o (t′ + n) for every n. This is an equivalence that goes on as itself, it is the same registered future read along an orbit, and where every moment is registered differently each moment is its own state.",
+      "zh": "一段值的序列 o 中，时刻 t 与 t′ 是同一状态，指对每个 n 有 o (t + n) = o (t′ + n)。这是等价关系，并作为自身继续；沿轨道读就是经映射的未来相同；每个时刻的值都不同时，每个时刻是自己的状态。",
+      "en": "In a sequence of values o, moments t and t′ are one state when o (t + n) = o (t′ + n) for every n. This is an equivalence that goes on as itself, it is the same future through the map read along an orbit, and where every moment takes a different value each moment is its own state.",
       "declarations": [
         "Becoming.SameAhead",
         "Becoming.SameAhead.refl",
@@ -97,16 +97,16 @@
       ]
     },
     {
-      "zh": "每段所识的历史是经识读读出的确定的律：时刻之律下（每个时刻走到下一个），两个时刻相同，恰当它们是同一状态。",
-      "en": "Every registered history is a determined law read through a registration: under the law of moments, each going on to the next, two moments are alike exactly where they are one state.",
+      "zh": "每段值的历史是经映射读出的确定的律：时刻之律下（每个时刻走到下一个），两个时刻相同，恰当它们是同一状态。",
+      "en": "Every history of values is a determined law read through a map: under the law of moments, each going on to the next, two moments are alike exactly where they are one state.",
       "declarations": [
         "Becoming.alike_moments_iff",
         "Becoming.Law.frameBy"
       ]
     },
     {
-      "zh": "不加判定的按关系的鸽笼给出：所识的历史状态有限（每个时刻与某个 L 以下的时刻是同一状态），恰当它有两个时刻是同一状态。返回的配置在每个识读之下状态有限。",
-      "en": "A pigeonhole up to a relation, with no decision, gives: a registered history has finitely many states (every moment one state with some moment below some L) exactly where two of its moments are one state. A configuration that returns has finitely many states under every registration.",
+      "zh": "不加判定的按关系的鸽笼给出：值的历史状态有限（每个时刻与某个 L 以下的时刻是同一状态），恰当它有两个时刻是同一状态。返回的配置经每个映射状态有限。",
+      "en": "A pigeonhole up to a relation, with no decision, gives: a history of values has finitely many states (every moment one state with some moment below some L) exactly where two of its moments are one state. A configuration that returns has finitely many states through every map.",
       "declarations": [
         "Becoming.split_top",
         "Becoming.shared_below",
@@ -118,8 +118,8 @@
       ]
     },
     {
-      "zh": "二值否定的所识恰有两个状态：第 0、1 刻不同（经 Becoming.Diagonal 的 revision_never_rests），第 0、2 刻相同，每个时刻是二者之一，每个经另一个定义。",
-      "en": "The registration of the two-valued negation has exactly two states: moments 0 and 1 differ (through revision_never_rests of Becoming.Diagonal), moments 0 and 2 are one state, and every moment is one of the two, each defined through the other.",
+      "zh": "二值否定的历程恰有两个状态：第 0、1 刻不同（经 Becoming.Diagonal 的 revision_never_rests），第 0、2 刻相同，每个时刻是二者之一，每个经另一个定义。",
+      "en": "The course of the two-valued negation has exactly two states: moments 0 and 1 differ (through revision_never_rests of Becoming.Diagonal), moments 0 and 2 are one state, and every moment is one of the two, each defined through the other.",
       "declarations": [
         "Becoming.Negation.course",
         "Becoming.Negation.zero_two",
@@ -143,12 +143,12 @@
   ],
   "hypotheses": [
     {
-      "zh": "不加前提：Law.now_identifiesAlike_iff_goAlike、Law.part_identifiesAlike_iff_step、alike_moments_iff 与 finitely_many_states_iff 是双向的，对每条确定的律、每个识读或每段序列成立。",
-      "en": "No premise: Law.now_identifiesAlike_iff_goAlike, Law.part_identifiesAlike_iff_step, alike_moments_iff and finitely_many_states_iff are two-way and hold for every determined law, registration or sequence."
+      "zh": "不加前提：Law.now_identifiesAlike_iff_goAlike、Law.part_identifiesAlike_iff_step、alike_moments_iff 与 finitely_many_states_iff 是双向的，对每条确定的律、每个映射或每段序列成立。",
+      "en": "No premise: Law.now_identifiesAlike_iff_goAlike, Law.part_identifiesAlike_iff_step, alike_moments_iff and finitely_many_states_iff are two-way and hold for every determined law, map or sequence."
     },
     {
-      "zh": "Law.identifiesAlike_of_law 要切分保留所识、与律同去并且最粗；Law.Returns.states 要构型返回（局部条件）。",
-      "en": "Law.identifiesAlike_of_law needs the split to keep what is registered, go alike with the law and be coarsest; Law.Returns.states needs the configuration to return (local conditions)."
+      "zh": "Law.identifiesAlike_of_law 要切分保留映射之值、与律同去并且最粗；Law.Returns.states 要构型返回（局部条件）。",
+      "en": "Law.identifiesAlike_of_law needs the split to keep the map's value, go alike with the law and be coarsest; Law.Returns.states needs the configuration to return (local conditions)."
     },
     {
       "zh": "时刻之律只用步的相继，即表示的共同步序（表示的承诺）；除此之外不给任何律。",
@@ -170,8 +170,8 @@
       "kind": "scope"
     },
     {
-      "zh": "有限的记录能否固定状态不在此陈述（见 Becoming.Learning）。",
-      "en": "Whether a finite record fixes the states is not stated here (see Becoming.Learning).",
+      "zh": "有限的前段能否固定状态不在此陈述（见 Becoming.Learning）。",
+      "en": "Whether a finite prefix fixes the states is not stated here (see Becoming.Learning).",
       "kind": "scope"
     },
     {
@@ -190,8 +190,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
       "detail": {
-        "zh": "承载规律不足以有意义：什么都不分的切分总承载规律（goAlike_const），只在所识的未来处处相同时有意义（Law.const_identifiesAlike_iff）；Motion 中所立者单独不承载规律，所经者单独失去所立者（Motion.neither_alone）。",
-        "en": "Carrying a law is not enough for sense: the split lumping everything always carries one (goAlike_const) and makes sense only where all registered futures are the same (Law.const_identifiesAlike_iff); in Motion the standing alone carries no law and the passing alone loses the standing (Motion.neither_alone)."
+        "zh": "承载规律不足以有意义：什么都不分的切分总承载规律（goAlike_const），只在经映射的未来处处相同时有意义（Law.const_identifiesAlike_iff）；Motion 中所立者单独不承载规律，所经者单独失去所立者（Motion.neither_alone）。",
+        "en": "Carrying a law is not enough for sense: the split lumping everything always carries one (goAlike_const) and makes sense only where all futures through the map are the same (Law.const_identifiesAlike_iff); in Motion the standing alone carries no law and the passing alone loses the standing (Motion.neither_alone)."
       }
     }
   ],
@@ -209,8 +209,8 @@
     "en": "The forms of the coarsest split and of a part alone for frames that branch; decidable naming where the states are finite."
   },
   "correspondence": {
-    "zh": "回答 Ren 的“what is that \"make sense\" itself? what makes a pair, a pair?”与“maybe change(now) -> future”：相对于所识，有意义的切分唯一并由律给出；两个是一对，恰在律不在它们之间分开并且所识把它们分开。检验 Ren 的推测（“the full \"truth\" can be derived, situationally, including the cognition/controller part”）：按情境的真确切，控制者恰在造成所识差别处在内（Law.adaptive_identifiesAlike_iff）。回答“展开是否有律”：每段所识的历史是时刻之律，律的内容是它的压缩，状态有限恰是从某一刻起重复。这是极小自动机与计算力学因果状态在确定情形的形式。一步形式来自 Becoming.Mechanism 所有者的审查。读法（AI 的，依 Ren 的交托采用；Ren 同意了包含它们的回答）：阴阳读作所立与所经、否定的两个状态；变化与状态彼此经对方定义。",
-    "en": "Answering Ren's “what is that \"make sense\" itself? what makes a pair, a pair?” and “maybe change(now) -> future”: relative to what is registered, the split that makes sense is unique and given by the law; two are a pair exactly where the law does not split between them and what is registered tells them apart. It tests Ren's speculation (“the full \"truth\" can be derived, situationally, including the cognition/controller part”): a situational truth is exact, and includes the controller exactly where it makes a registered difference (Law.adaptive_identifiesAlike_iff). It answers whether an unfolding has a law: every registered history is the law of moments, the content of a law is its compression, and finitely many states is repetition from some moment on. This is the deterministic case of the minimal automaton and of the causal states of computational mechanics. The one-step forms come from a review by the owner of Becoming.Mechanism. Readings (the AI's, adopted on Ren's delegation; Ren agreed with the reply containing them): 阴阳 as the standing and the passing, and as the negation's two states; change and state each defined through the other."
+    "zh": "回答 Ren 的“what is that \"make sense\" itself? what makes a pair, a pair?”与“maybe change(now) -> future”：相对于映射，有意义的切分唯一并由律给出；两个是一对，恰在律不在它们之间分开并且映射把它们分开。检验 Ren 的推测（“the full \"truth\" can be derived, situationally, including the cognition/controller part”）：按情境的真确切，控制者恰在经映射造成差别处在内（Law.adaptive_identifiesAlike_iff）。回答“展开是否有律”：每段值的历史是时刻之律，律的内容是它的压缩，状态有限恰是从某一刻起重复。这是极小自动机与计算力学因果状态在确定情形的形式。一步形式来自 Becoming.Mechanism 所有者的审查。读法（AI 的，依 Ren 的交托采用；Ren 同意了包含它们的回答）：阴阳读作所立与所经、否定的两个状态；变化与状态彼此经对方定义。",
+    "en": "Answering Ren's “what is that \"make sense\" itself? what makes a pair, a pair?” and “maybe change(now) -> future”: relative to the map, the split that makes sense is unique and given by the law; two are a pair exactly where the law does not split between them and the map tells them apart. It tests Ren's speculation (“the full \"truth\" can be derived, situationally, including the cognition/controller part”): a situational truth is exact, and includes the controller exactly where it makes a difference through the map (Law.adaptive_identifiesAlike_iff). It answers whether an unfolding has a law: every history of values is the law of moments, the content of a law is its compression, and finitely many states is repetition from some moment on. This is the deterministic case of the minimal automaton and of the causal states of computational mechanics. The one-step forms come from a review by the owner of Becoming.Mechanism. Readings (the AI's, adopted on Ren's delegation; Ren agreed with the reply containing them): 阴阳 as the standing and the passing, and as the negation's two states; change and state each defined through the other."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
   "aliases": [
@@ -248,8 +248,8 @@
       },
       "interface": {
         "output": {
-          "zh": "有意义的定义与刻画；确定的律下相同就是所识的未来相同。",
-          "en": "The definition and characterization of making sense; under a determined law likeness is the same registered future."
+          "zh": "有意义的定义与刻画；确定的律下相同就是经映射的未来相同。",
+          "en": "The definition and characterization of making sense; under a determined law likeness is the same future through the map."
         },
         "input": {
           "zh": "最粗的切分、部分单独、时刻之律。",
@@ -343,8 +343,8 @@
     {
       "id": "causal-models-as-processes",
       "detail": {
-        "zh": "标准因果模型是确定的过程；这里经识读，有意义的切分是其状态。",
-        "en": "Standard causal models are determined processes; read through a registration, the split that makes sense is their state."
+        "zh": "标准因果模型是确定的过程；这里经映射读，有意义的切分是其状态。",
+        "en": "Standard causal models are determined processes; read through a map, the split that makes sense is their state."
       }
     },
     {

@@ -1,0 +1,93 @@
+# Records observation-is-a-route (what a difference reaches lies within the downstream; following Becoming.Observation; the measurement's record stays) and generalization-through-lumping, read by sense (N6).
+### record:observation-is-a-route
+= S2 @statement/zh
+- 一个储量之差只往它的下游去；对每个读入每个条件的律，只在储量上不同的进程在其下游之外都相同，所以一个形成只能经它所读的、在储量下游的水平识储量，所观察者是长度为零的路线；路线由闭合而形成。
++ 一个储量之差只往它的下游去；对每个读入每个条件的律，只在储量上不同的进程在其下游之外都相同，所以储量只能经形成所读的、在储量下游的水平耦合入它，经水平耦合入是长度为零的路线；路线由闭合而形成。
+= S2 @statement/en
+- A stock's difference goes only downstream; for every law reading into each condition, courses apart only in the stock are alike off its downstream, so a formation can register it only through a level it reads downstream, observing it being the route of length zero; a route forms by closing.
++ A stock's difference goes only downstream; for every law reading into each condition, courses apart only in the stock are alike off its downstream, so the stock can couple into a formation only through a level the formation reads downstream, coupling in by level being the route of length zero; a route forms by closing.
+= S2
+- 读一个时程的律是对所有条件读得一样的特例，经识而读的律也是；
++ 读一个时程的律是对所有条件读得一样的特例，经耦合而读的律也是；
+= S2
+- and so is a law reading through a registration;
++ and so is a law reading through a coupling;
+= S2 @laws/3/zh
+- 所识不出下游：对每个读入每个条件一个时程、所读水平列出的律，两个平衡的进程在场的形成相同、部分动作相同、其余遵从律，起始只在一个储量上不同时，在每一步凡不在储量下游（按到那一步形成的所读路线）的条件都相同；所以一个形成所读入的水平都不在下游时它的交换相同，经识而读的律所识者都不在下游时也是。所观察的储量是长度为零的路线。
++ 差所到之处在下游之内：对每个读入每个条件一个时程、所读水平列出的律，两个平衡的进程在场的形成相同、部分动作相同、其余遵从律，起始只在一个储量上不同时，在每一步凡不在储量下游（按到那一步形成的所读路线）的条件都相同；所以一个形成所读入的水平都不在下游时它的交换相同，经耦合而读的律中耦合入的都不在下游时也是。经水平耦合入的储量是长度为零的路线。
+= S2 @laws/3/en
+- Registering lies within the downstream: for every law reading into each condition a schedule of listed levels, two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in a stock, are alike at each step at every condition not downstream of the stock by the readings formed by then; so a formation whose readings into a condition all lie off the downstream exchanges alike, and so does one reading through registration whose registrations all lie off it. The stock observed is the route of length zero.
++ What a difference reaches lies within the downstream: for every law reading into each condition a schedule of listed levels, two balanced courses with the same formations present, the part acting alike and the rest following the law, apart at the start only in a stock, are alike at each step at every condition not downstream of the stock by the readings formed by then; so a formation whose readings into a condition all lie off the downstream exchanges alike, and so does one, under a law reading through the couplings, all of whose couplings lie off it. The stock coupled in by level is the route of length zero.
+= S2
+- 他者之识作为路线；
++ 他者的读作为路线；
+= S2
+- another's registration as a route;
++ another's reading as a route;
+= S2
+- 反方向（在下游者必识）不成立。
++ 反方向（在下游者必造成差别）不成立。
+= S2
+- the converse, that what lies downstream registers, fails.
++ the converse, that what lies downstream makes a difference, fails.
+= S2
+- 量度、模型或他者之识是更长的路线；
++ 量度、模型或他者的读是更长的路线；
+= S2
+- a measurement, a model or another's registration a longer route;
++ a measurement, a model or another's reading a longer route;
+= S2 @dependencies/1/interface/input/zh
+- 差所到之处在下游；所识者在下游。
++ 差所到之处在下游；耦合入者在下游。
+= S2 @dependencies/1/interface/input/en
+- Where a difference arrives lies downstream; what is registered lies downstream.
++ Where a difference arrives lies downstream; what couples in lies downstream.
+= S2 @dependencies/3/interface/input/zh
+- 读入每个条件；经识而读者的所识在下游。
++ 读入每个条件；经耦合而读者，耦合入的在下游。
+= S2 @dependencies/3/interface/input/en
+- Reading into each condition; what a law reading through registration registers lies downstream.
++ Reading into each condition; for a law reading through the couplings, what couples in lies downstream.
+= S2 @dependencies/4/interface/output/zh
+- 交换之律；经识而读；进程遵从律。
++ 交换之律；经耦合而读；进程遵从律。
+= S2 @dependencies/4/interface/output/en
+- Laws of exchange; reading through registration; courses following a law.
++ Laws of exchange; reading through the couplings; courses following a law.
+### record:generalization-through-lumping
+= S3
+- 经识的选择恰是经“直到 t 识得相同”的选择（定义上相同）
++ 经耦合的选择恰是经“直到 t 经耦合无别”的选择（定义上相同）
+= S3
+- selection through registration is exactly a selection through registering alike up to t, by definition;
++ selection through the couplings is exactly a selection through being alike through them up to t, by definition;
+= S2
+- 按 Ren 的读法，模型仍只经识被检验。
++ 按 Ren 的读法，模型仍只经耦合入者被检验。
+= S2
+- on Ren's reading a model is still tested only through registration.
++ on Ren's reading a model is still tested only through what couples in.
+= S3
+- 经识的选择是经“识得相同”的选择（Training.web_selectsThrough_iff）
++ 经耦合的选择是经“经耦合无别”的选择（Training.web_selectsThrough_iff）
+= S3
+- selection through registration is selection through registering alike (Training.web_selectsThrough_iff)
++ selection through the couplings is selection through being alike through them (Training.web_selectsThrough_iff)
+= S3 @dependencies/1/interface/output/zh
+- 两段历史被每个经识的选择选得相同，恰当选择者把它们识得相同。
++ 两段历史被每个经耦合的选择选得相同，恰当它们经选择者的耦合无别。
+= S3 @dependencies/1/interface/output/en
+- Two histories are selected alike by every selection through registration exactly when the selector registers them alike.
++ Two histories are selected alike by every selection through the couplings exactly when they are alike through the selector's couplings.
+= L-elim
+- 那里从记录选出假设的学习何时静止；
++ 那里从前段选出候选的逐除外推何时静止；
+= L-elim
+- There, when learning that selects a hypothesis from the record comes to rest;
++ There, when extrapolation by elimination, selecting a candidate from the prefix, comes to rest;
+= S2
+- 那里理读作对识负责的模型（AI 的读法），这里依 Ren 读作对结构与变化之规律的建模；模型只经识被检验仍成立。
++ 那里理曾读作“对识负责的模型”（AI 先前的读法），这里依 Ren 读作对结构与变化之规律的建模；模型只经耦合入者被检验仍成立。
+= S2
+- There 理 was read as a model answerable to registration (the AI's reading); here, on Ren's reading, as the modeling of the laws of structure and change; that a model is tested only through registration still holds.
++ There 理 was read as “a model answerable to registration” (the AI's earlier reading); here, on Ren's reading, as the modeling of the laws of structure and change; that a model is tested only through what couples in still holds.

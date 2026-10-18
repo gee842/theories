@@ -1,0 +1,123 @@
+# Records finite-fallible-inquiry-necessity and loops-within-what-a-law-reads, read by sense (N6); evidence records (initial evidence) stay.
+### record:finite-fallible-inquiry-necessity
+= S2
+- 接到原生同律平衡历程后，在所列起点和完整所识条件下
++ 接到原生同律平衡历程后，在所列起点和完整耦合条件下
+= S2
+- 足以保持原生不可达处的相同所识和作答
++ 足以保持原生不可达处经耦合无别与作答相同
+= S2
+- under the stated initial-record and complete-registration conditions,
++ under the stated starting and complete-coupling conditions,
+= S2
+- common residual exchange suffices for native beyond-reach registration and answer equality,
++ common residual exchange suffices for native beyond-reach likeness through the couplings and answer equality,
+= S2 @hypotheses/3/zh
+- 原生接续使用平衡历程、相同在场形成、回应所及之外的相同初始所识条件；部分之外遵从同一经所识而读的交换律，作答经由截至作答时刻的完整所识。
++ 原生接续使用平衡历程、相同在场形成、回应所及之外耦合入的条件的初始水平相同；部分之外遵从同一经耦合而读的交换律，作答经由截至作答时刻耦合入的全部。
+= S2 @hypotheses/3/en
+- The native composition uses balanced courses, the same formations present, matching initially registered conditions beyond responsive reach; outside the part both follow one registration-dependent exchange law, and answering factors through complete registration up to answer time.
++ The native composition uses balanced courses, the same formations present, and alike initial levels of the conditions coupled in beyond responsive reach; outside the part both follow one exchange law reading through the couplings, and answering factors through everything that couples in up to answer time.
+= S2
+- the qualitative beyond-reach conclusion and exact blind identity need none.
++ the qualitative beyond-reach conclusion and the exact identity entirely beyond reach need none.
+= S4
+- 从同一展开分化出变化部分、所识和回应。新接续由共同脊柱的实际交换、所识闭包和同律响应推出统计限制；
++ 从同一展开分化出变化部分、耦合和回应。新接续由共同脊柱的实际交换、耦合闭包和同律响应推出统计限制；
+= S4
+- The varying part, registration and response differentiate within one unfolding. The new composition derives the statistical restriction through the shared spine’s exchanges, registration closure and common-law response.
++ The varying part, coupling and response differentiate within one unfolding. The new composition derives the statistical restriction through the shared spine’s exchanges, coupling closure and common-law response.
+= S3
+- alike_beyond_response 给出不可达处的相同所识
++ alike_beyond_response 给出不可达处经耦合无别
+= S3
+- alike_beyond_response produces identical registration beyond reach;
++ alike_beyond_response produces likeness through the couplings beyond reach;
+= S3 @dependencies/0/interface/output/zh
+- 回应所及之外逐时识得相同。
++ 回应所及之外逐时经耦合无别。
+= S3 @dependencies/0/interface/output/en
+- Identical registration at every time beyond responsive reach.
++ Alike through the couplings at every time beyond responsive reach.
+= S2
+- 其余经所识回应、完整作答接口
++ 其余经耦合回应、完整作答接口
+= S2
+- response through registration, and a complete answering interface.
++ response through the couplings, and a complete answering interface.
+= S2
+- 同一经所识而读的律之两历程满足回应前提。
++ 同一经耦合而读的律之两历程满足回应前提。
+= S3
+- 不可达处相同所识与作答的前提。
++ 不可达处经耦合无别与作答相同的前提。
+= S3
+- The response premise of beyond-reach registration and answer equality.
++ The response premise of beyond-reach likeness through the couplings and answer equality.
+= S2
+- 所给律经所识而读；部分之外两历程遵从该律。
++ 所给律经耦合而读；部分之外两历程遵从该律。
+= S2
+- The supplied law reads through registration;
++ The supplied law reads through the couplings;
+= S2
+- 闭合区域包含不识的新增项；
++ 闭合区域包含无物耦合入的新增项；
+= S2
+- The closed region includes a nonregistering added relatum; equal residual exchange on both sides permits the existing closed-region blindness theorem.
++ The closed region includes an added relatum into which nothing couples; equal residual exchange on both sides permits the existing closed-region indistinguishability theorem.
+= S2
+- 共同在场形成、相关初始所识、原区域封闭
++ 共同在场形成、相关条件的初始水平、原区域封闭
+= S2
+- Common present formations, relevant initial registrations, original closed region
++ Common present formations, relevant initial levels, original closed region
+### record:loops-within-what-a-law-reads
+= S2
+- 经识而读的律读每个覆盖其识的时程，其进程是经识的策略。
++ 经耦合而读的律读每个覆盖耦合入者的时程，其进程是经耦合的策略。
+= S2
+- a law reading through a registration reads every schedule covering it, and its courses are policies through registration.
++ a law reading through the couplings reads every schedule covering what couples in, and its courses are policies through the couplings.
+= S2
+- 经识而读、部分之外无人观察储量、阈值不低于各自所需者的律都是这样。
++ 经耦合而读、储量只经阈耦合入部分之外的每个形成、阈值不低于各自所需者的律都是这样。
+= S2
+- every law reading through a registration in which no formation outside the part observes the stock, with the threshold at least each need of it, is such a law.
++ every law reading through couplings by which the stock couples into each formation outside the part by threshold only, with the threshold at least each need of it, is such a law.
+= S2
+- Becoming.Runaway 的不识与 Becoming.Closing 的形成是同一件事的两面；能识距离者是断裂之前对储量水平的读，它使回路更早形成。
++ Becoming.Runaway 中距离不耦合入与 Becoming.Closing 的形成是同一件事的两面；能使距离耦合入者是断裂之前对储量水平的读，它使回路更早形成。
+= S2
+- the blindness of Becoming.Runaway and the formation of Becoming.Closing being one event seen from two sides; what registers the distance is a reading of the stock's level before the break,
++ the distance not coupling in, in Becoming.Runaway, and the formation of Becoming.Closing being one event seen from two sides; what lets the distance couple in is a reading of the stock's level before the break,
+= S2 @dependencies/0/interface/output/zh
+- 交换之律；经识而读；进程遵从律。
++ 交换之律；经耦合而读；进程遵从律。
+= S2 @dependencies/0/interface/output/en
+- Laws of exchange; reading through registration; courses following a law.
++ Laws of exchange; reading through the couplings; courses following a law.
+= S2 @dependencies/4/detail/zh
+- 复用 Flow.PolicyThrough：经识而读之律的进程是经识的策略；断裂不被识对整个律成立。
++ 复用 Flow.PolicyThrough：经耦合而读之律的进程是经耦合的策略；断裂不耦合入对整个律成立。
+= S2 @dependencies/4/detail/en
+- Reuses Flow.PolicyThrough: the courses of a law reading through registration are policies through it; the break unregistered holds for whole laws.
++ Reuses Flow.PolicyThrough: the courses of a law reading through the couplings are policies through them; the break not coupling in holds for whole laws.
+= S2 @dependencies/4/interface/output/zh
+- 经识的策略；断裂之前储量抬高不被识。
++ 经耦合的策略；断裂之前储量抬高不显出。
+= S2 @dependencies/4/interface/output/en
+- Policies through registration; a raise unregistered before the break.
++ Policies through the couplings; a raise not showing before the break.
+= S2 @related/1/detail/zh
+- 那里识与检验之门；这里识限制耦合，回路在所读之内。
++ 那里耦合与检验之门；这里耦合入者限制律的耦合，回路在所读之内。
+= S2 @related/1/detail/en
+- There the gate of registration and testing; here registration bounds coupling, and loops lie within what is read.
++ There the gate of coupling and testing; here what couples in bounds a law's couplings, and loops lie within what is read.
+= S2
+- 形成只经它所读的、在储量下游的水平识储量
++ 储量只经形成所读的、在储量下游的水平耦合入它
+= S2
+- and a formation registers a stock only through a level it reads downstream of it
++ and a stock couples into a formation only through a level it reads downstream of the stock

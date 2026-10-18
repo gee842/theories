@@ -2,21 +2,21 @@
   "schema_version": 2,
   "id": "selection-through-a-model-of-the-options",
   "title": {
-    "zh": "经选项模型的选择",
-    "en": "Selection through a model of the options"
+    "zh": "经备择之映射的选择",
+    "en": "Selection through a map of the alternatives"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
   "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
-    "zh": "对相同已定的选项与给每个选项任何种类条目的模型：两个选项被每个经模型的选择选得相同，恰当模型使二者并列；至多选一个选项的这种选择能选出 k，恰当没有别的选项的条目等于 k 的。",
-    "en": "For options with decided equality and a model giving each an entry of any kind: two options are selected alike by every selection through the model exactly when the model ties them, and such a selection selecting at most one option can select k exactly when no other option's entry equals k's."
+    "zh": "对相同已定的备择与给每个备择任何种类条目的映射：两个备择被每个经映射的选择选得相同，恰当映射使二者并列；至多选一个备择的这种选择能选出 k，恰当没有别的备择的条目等于 k 的。",
+    "en": "For alternatives with decided equality and a map giving each an entry of any kind: two alternatives are selected alike by every selection through the map exactly when the map ties them, and such a selection selecting at most one alternative can select k exactly when no other alternative's entry equals k's."
   },
   "laws": [
     {
-      "zh": "交换两个选项（swap）是对合。选择、取值与选取经模型：交换两个选项的条目，即交换所选者、所取的值或所选取者。交换两个并列的选项，模型不变。",
-      "en": "Exchanging two options (swap) is an involution. A selection, a valuation and a choice are through the model when exchanging two options' entries exchanges what is selected, the values or the choice. Exchanging two tied options leaves the model as it was.",
+      "zh": "交换两个备择（swap）是对合。选择、取值与选取经映射：交换两个备择的条目，即交换所选者、所取的值或所选取者。交换两个并列的备择，映射不变。",
+      "en": "Exchanging two alternatives (swap) is an involution. A selection, a valuation and a choice are through the map when exchanging two alternatives' entries exchanges what is selected, the values or the choice. Exchanging two tied alternatives leaves the map as it was.",
       "declarations": [
         "Becoming.Relabel.swap",
         "Becoming.Relabel.swap_left",
@@ -31,16 +31,16 @@
       ]
     },
     {
-      "zh": "并列的选项被选得相同；两个选项被每个经模型的选择选得相同，恰当模型使二者并列。见证是选出条目等于给定值的选项。",
-      "en": "Tied options are selected alike, and two options are selected alike by every selection through the model exactly when the model ties them. The witness selects the options whose entry equals a given value.",
+      "zh": "并列的备择被选得相同；两个备择被每个经映射的选择选得相同，恰当映射使二者并列。见证是选出条目等于给定值的备择。",
+      "en": "Tied alternatives are selected alike, and two alternatives are selected alike by every selection through the map exactly when the map ties them. The witness selects the alternatives whose entry equals a given value.",
       "declarations": [
         "Becoming.Relabel.Equivariant.tied",
         "Becoming.Relabel.selected_alike_iff"
       ]
     },
     {
-      "zh": "至多选一个的经模型的选择不选并列的选项，两个以上选项全并列时不选。单独持有一个条目（Alone）是这样的选择，所以一个选项能被单独选出，恰当没有别的选项的条目与它相同。",
-      "en": "A selection through the model that selects at most one option selects no tied option, and none at a full tie of two or more. Holding an entry alone (Alone) is such a selection, so an option can be singled out exactly when no other option's entry ties it.",
+      "zh": "至多选一个的经映射的选择不选并列的备择，两个以上备择全并列时不选。单独持有一个条目（Alone）是这样的选择，所以一个备择能被单独选出，恰当没有别的备择的条目与它相同。",
+      "en": "A selection through the map that selects at most one alternative selects no tied alternative, and none at a full tie of two or more. Holding an entry alone (Alone) is such a selection, so an alternative can be singled out exactly when no other alternative's entry ties it.",
       "declarations": [
         "Becoming.Relabel.Equivariant.untied",
         "Becoming.Relabel.Equivariant.none_of_full_tie",
@@ -51,8 +51,8 @@
       ]
     },
     {
-      "zh": "经模型的取值（如权重）给并列的选项相同的值，全并列时处处相同；取某值的选项是经模型的选择；常值经模型；两个选项被每个这样的取值取得相同，恰当二者并列。",
-      "en": "A valuation through the model, such as a weight on each option, gives tied options equal values, and every option the same at a full tie; the options taking a value form a selection through the model; a constant valuation is one; two options are valued alike by every such valuation exactly when tied.",
+      "zh": "经映射的取值（如权重）给并列的备择相同的值，全并列时处处相同；取某值的备择是经映射的选择；常值经映射；两个备择被每个这样的取值取得相同，恰当二者并列。",
+      "en": "A valuation through the map, such as a weight on each alternative, gives tied alternatives equal values, and every alternative the same at a full tie; the alternatives taking a value form a selection through the map; a constant valuation is one; two alternatives are valued alike by every such valuation exactly when tied.",
       "declarations": [
         "Becoming.Relabel.EquivariantValue.tied",
         "Becoming.Relabel.EquivariantValue.full_tie",
@@ -63,8 +63,8 @@
       ]
     },
     {
-      "zh": "经模型、至多选取一个选项的选取，其所选取者是经模型的选择；它不选取并列的选项，全并列时不选取。",
-      "en": "A choice of at most one option through the model selects, through the model, the option it chooses; it chooses no tied option and withholds at a full tie.",
+      "zh": "经映射、至多选取一个备择的选取，其所选取者是经映射的选择；它不选取并列的备择，全并列时不选取。",
+      "en": "A choice of at most one alternative through the map selects, through the map, the alternative it chooses; it chooses no tied alternative and withholds at a full tie.",
       "declarations": [
         "Becoming.Relabel.map_swap_eq_some",
         "Becoming.Relabel.EquivariantChoice.selects",
@@ -74,8 +74,8 @@
       ]
     },
     {
-      "zh": "模型是一个归并（Learning.Lumped）：经模型的选择是经其归并的选择，对要紧者（谓词 p 或取值 f）正确，只在要紧者经归并同去之处；要紧者分开模型所并的两个选项时，无一正确；要紧者从模型读出时，经模型读出即正确。",
-      "en": "The model is a lumping (Learning.Lumped): a selection through it is a selection through its lumping, right about what matters (a predicate p or values f) only where what matters goes alike across the lumping; where what matters separates two options the model lumps, none is right; where it is read off the model, reading it through the model is right.",
+      "zh": "映射是一个归并（Learning.Lumped）：经映射的选择是经其归并的选择，对要紧者（谓词 p 或取值 f）正确，只在要紧者经归并同去之处；要紧者分开映射所并的两个备择时，无一正确；要紧者从映射读出时，经映射读出即正确。",
+      "en": "The map is a lumping (Learning.Lumped): a selection through it is a selection through its lumping, right about what matters (a predicate p or values f) only where what matters goes alike across the lumping; where what matters separates two alternatives the map lumps, none is right; where it is read off the map, reading it through the map is right.",
       "declarations": [
         "Becoming.Learning.selects_through_lumping",
         "Becoming.Learning.values_lumped",
@@ -88,8 +88,8 @@
       ]
     },
     {
-      "zh": "实例（外围，自有检查器，亦编译审计原文件）：PluralRecords 的记录即 Fin n 上的选项模型，同等对待中心的规则即经模型的选取，TieBreaking 同等对待的抽签其权重经模型；七条定理由核心律给出，PluralRecords.pick 找出单独持有者，公理报告皆空。",
-      "en": "Instance (periphery, own checker, which also compiles and audits the originals): PluralRecords' records are models of the options Fin n, a rule treating the centers alike is a choice through the model, and a lottery treating them alike in TieBreaking has weights through it; seven theorems follow from the core, PluralRecords.pick finding the holder, every axiom report empty.",
+      "zh": "实例（外围，自有检查器，亦编译审计原文件）：PluralRecords 的记录即 Fin n 上的备择映射，同等对待中心的规则即经映射的选取，TieBreaking 同等对待的抽签其权重经映射；七条定理由核心律给出，PluralRecords.pick 找出单独持有者，公理报告皆空。",
+      "en": "Instance (periphery, own checker, which also compiles and audits the originals): PluralRecords' records are maps of the alternatives Fin n, a rule treating the centers alike is a choice through the map, and a lottery treating them alike in TieBreaking has weights through it; seven theorems follow from the core, PluralRecords.pick finding the holder, every axiom report empty.",
       "declarations": [
         "Becoming.SelectionRelabelCorrespondence.transpose_eq_swap",
         "Becoming.SelectionRelabelCorrespondence.treatsAlike_iff",
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "en": "Along a run: with the moments of a run as the options and the run's registered course as the selector's model, every selection, valuation and choice through the course treats alike the moments it registers alike and separates exactly what it registers apart; where the course registers one value throughout nothing is singled out; a selection or valuation through the course is right about a target exactly where the target goes alike across the registration, and not where the course parts moments the target tells apart.",
+      "en": "Along a run: with the moments of a run as the alternatives and the run's course through a map as the selector's map, every selection, valuation and choice through the course treats alike the moments at which the map takes one value and separates exactly what the map separates; where the course takes one value throughout nothing is singled out; a selection or valuation through the course is right about a feature exactly where the feature goes alike across the map's lumping, and not where the course lumps moments the feature tells apart.",
       "declarations": [
         "Becoming.SelectionRuns.selected_alike_iff",
         "Becoming.SelectionRuns.valued_alike_iff",
@@ -127,14 +127,14 @@
   ],
   "hypotheses": [
     {
-      "zh": "不加公理。选项的相同已定（交换两个选项需要它）；条目任意种类；选择、取值或选取经模型是假设；要紧者（p、f）是给出的。",
-      "en": "No axiom. The options' equality is decided (exchanging two options needs it); entries are of any kind; that a selection, valuation or choice is through the model is a hypothesis, and what matters (p, f) is given."
+      "zh": "不加公理。备择的相同已定（交换两个备择需要它）；条目任意种类；选择、取值或选取经映射是假设；要紧者（p、f）是给出的。",
+      "en": "No axiom. The alternatives' equality is decided (exchanging two alternatives needs it); entries are of any kind; that a selection, valuation or choice is through the map is a hypothesis, and what matters (p, f) is given."
     }
   ],
   "does_not_show": [
     {
-      "zh": "单独选出的选项由一个选取函数找到：这需在列出的选项中搜索，外围用 PluralRecords.pick。",
-      "en": "That an option singled out is found by a choice function: that needs a search over listed options, the periphery's PluralRecords.pick.",
+      "zh": "单独选出的备择由一个选取函数找到：这需在列出的备择中搜索，外围用 PluralRecords.pick。",
+      "en": "That an alternative singled out is found by a choice function: that needs a search over listed alternatives, the periphery's PluralRecords.pick.",
       "kind": "scope"
     },
     {
@@ -143,13 +143,13 @@
       "kind": "scope"
     },
     {
-      "zh": "选项的相同不判定时的形式：交换两个选项需要判定。",
-      "en": "A form without the options' equality decided: exchanging two options needs it.",
+      "zh": "备择的相同不判定时的形式：交换两个备择需要判定。",
+      "en": "A form without the alternatives' equality decided: exchanging two alternatives needs it.",
       "kind": "scope"
     },
     {
-      "zh": "哪个模型对、什么要紧：p 与 f 是给出的；更细的模型从哪里来属于学习。",
-      "en": "Which model is right, or what matters: p and f are given; where a finer model comes from belongs to learning.",
+      "zh": "哪个映射对、什么要紧：p 与 f 是给出的；更细的映射从哪里来属于学习。",
+      "en": "Which map is right, or what matters: p and f are given; where a finer map comes from belongs to learning.",
       "kind": "scope"
     }
   ],
@@ -166,8 +166,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: Becoming.Selection has 67 theorems, the 29 declarations of its section (24 theorems) with empty axiom reports, and Becoming.Learning 83, its 8 new theorems with empty axiom reports. The periphery instance SelectionRelabelCorrespondence is checked by its own checker (Lean 4.30.0-rc2), which also compiles and audits PluralRecords and TieBreaking; every axiom report is empty. Not independently reviewed."
   },
   "next_delta": {
-    "zh": "独立审查；模型的条目为选项之间关系时的同一律。",
-    "en": "An independent review; the same law where the model's entries are relations between options."
+    "zh": "独立审查；映射的条目为备择之间关系时的同一律。",
+    "en": "An independent review; the same law where the map's entries are relations between alternatives."
   },
   "correspondence": {
     "zh": "Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”；PluralRecords 与 TieBreaking 读作待接入的律，名依 Ren 同日的接入命名规则。结果初名“只读记录的选择”；Ren 同日更正：“it is about the cognitive model, not just record, which feels as long as we remember all pasts we can move forward without wisdom”，并认可重新框定。读法（AI 对 Ren 的更正的读法，Ren 认可）：模型所并者，经它的选择分不开；要分开需要更细的模型，那个模型是否正确在于它对要紧者的拟合，记得更多并不提供。选项交换下的等变是 May（1952）的中立条件，平局是 Buridan 的对称。原读法“需另一被记录的关系，如到达的次序”撤回。",
@@ -195,15 +195,15 @@
     {
       "id": "selection-through-registration",
       "detail": {
-        "zh": "同一形式的律：经识的选择恰及所识（Web.selects_alike_iff），经模型的选择恰分开模型所分开者。",
-        "en": "A law of the same form: selection through registration reaches exactly what registers (Web.selects_alike_iff), and selection through a model separates exactly what the model separates."
+        "zh": "同一形式的律：经耦合的选择恰把经耦合无别者选得相同（Web.selects_alike_iff），经映射的选择恰分开映射所分开者。",
+        "en": "A law of the same form: selection through the couplings selects alike exactly what is alike through them (Web.selects_alike_iff), and selection through a map separates exactly what the map separates."
       }
     },
     {
       "id": "generalization-through-lumping",
       "detail": {
-        "zh": "模型是一个归并：经它的选择只在要紧者经归并同去之处正确，与 lumped_right_iff 同形。",
-        "en": "The model is a lumping: a selection through it is right only where what matters goes alike across the lumping, the form of lumped_right_iff."
+        "zh": "映射是一个归并：经它的选择只在要紧者经归并同去之处正确，与 lumped_right_iff 同形。",
+        "en": "The map is a lumping: a selection through it is right only where what matters goes alike across the lumping, the form of lumped_right_iff."
       }
     }
   ],

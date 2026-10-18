@@ -1,0 +1,107 @@
+# Record where-a-level-couples, read by sense (N6), following the chapter's LevelCoupling paragraph.
+### record:where-a-level-couples
+= S2 @statement/en
+- A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through registration only registered levels couple; by threshold only a crossing passes, through the conjunction of the needs, and observing is exactly where a level can couple within its need.
++ A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through the couplings only levels that couple in respond; by threshold only a crossing passes, through the conjunction of the needs, and coupling by level is exactly where a level can couple within its need.
+= S2 @statement/zh
+- 交换对一个水平的回应是律的每个强度阵列的耦合。对经所识而读的律，只有所识的水平耦合；经阈只有跨越得过，且经所需之合取，观察恰是水平能在所需之内耦合之处。
++ 交换对一个水平的回应是律的每个强度阵列的耦合。对经耦合而读的律，只有耦合入的水平被回应；经阈只有跨越得过，且经所需之合取，经水平耦合恰是水平能在所需之内耦合之处。
+= S2 @laws/1/en
+- Only what couples into a formation responds: for a law reading through registration, a level a formation outside the part neither depends on nor observes is coupled into its exchanges with strength zero. A response thus comes from a registered condition (as a double negation), is read in every schedule covering registration, and is a route of reading and of the law's strengths restricted to that schedule.
++ Only what couples into a formation responds: for a law reading through the couplings, a level that couples into a formation outside the part neither by threshold nor by level is coupled into its exchanges with strength zero. A response thus comes from a condition that couples in (as a double negation), is read in every schedule covering what couples in, and is a route of reading and of the law's strengths restricted to that schedule.
+= S2 @laws/1/zh
+- 只有耦合入形成者才被回应：对一个律，若它对部分之外的每个形成只读该形成所识者，则形成既不依赖也不观察的水平，在每一步以强度零耦合入它与每个条件的交换；所以回应来自它所识的条件（以双重否定），并在覆盖所识的每个时程中被读，是 Becoming.Observation 的所读路线的耦合，也是律的强度限于该时程后的路线。
++ 只有耦合入形成者才被回应：对一个律，若它对部分之外的每个形成只读耦合入该形成者，则既不经阈也不经水平耦合入形成的水平，在每一步以强度零耦合入它与每个条件的交换；所以回应来自耦合入的条件（以双重否定），并在覆盖耦合入者的每个时程中被读，是 Becoming.Observation 的所读路线的耦合，也是律的强度限于该时程后的路线。
+= S2 @laws/2/en
+- By threshold, only a crossing passes: for a law reading through registration, where a formation outside the part does not observe a condition, a change of that condition's level at one step that leaves the formation's need for it met alike changes nothing the formation exchanges.
++ By threshold, only a crossing passes: for a law reading through the couplings, where a condition couples into a formation outside the part by threshold only, a change of that condition's level at one step that leaves the formation's need for it met alike changes nothing the formation exchanges.
+= S2 @laws/2/zh
+- 经阈只过跨越：对经所识而读的律，部分之外的形成不观察一个条件时，该条件在一步的水平的改变若使形成对它的所需同样得足，则不改变形成所交换的任何东西。
++ 经阈只过跨越：对经耦合而读的律，一个条件只经阈耦合入部分之外的形成时，该条件在一步的水平的改变若使形成对它的所需同样得足，则不改变形成所交换的任何东西。
+= S2 @laws/3/en
+- By threshold, a crossing passes: for a law reading through registration, a response to a condition the formation does not observe is a crossing of its need (the requirement not refuted, the two levels not meeting it alike); where the formation requires at a step exactly that condition, with a positive need, a law reading through registration responds to a crossing there, at every condition.
++ By threshold, a crossing passes: for a law reading through the couplings, a response to a condition not coupled in by level is a crossing of its need (the requirement not refuted, the two levels not meeting it alike); where the formation requires at a step exactly that condition, with a positive need, a law reading through the couplings responds to a crossing there, at every condition.
+= S2 @laws/3/zh
+- 经阈则跨越得过：对经所识而读的律，对形成不观察之条件的回应是其所需的跨越（所需不被否定，两个水平不同样满足它）；形成在一步恰只需要该条件且所需为正时，有经所识而读的律在那里对跨越回应，于每个条件。
++ 经阈则跨越得过：对经耦合而读的律，对不经水平耦合入之条件的回应是其所需的跨越（所需不被否定，两个水平不同样满足它）；形成在一步恰只需要该条件且所需为正时，有经耦合而读的律在那里对跨越回应，于每个条件。
+= S2 @laws/4/en
+- Among several conditions, a crossing passes through the conjunction: a response of a law reading through registration to an unobserved condition changes the formation's admission at that step, only where its other requirements there are met; where admission there is decided, some such law responds to a crossing into every later exchange exactly where the condition is required with a positive need.
++ Among several conditions, a crossing passes through the conjunction: a response of a law reading through the couplings to a condition not coupled in by level changes the formation's admission at that step, only where its other requirements there are met; where admission there is decided, some such law responds to a crossing into every later exchange exactly where the condition is required with a positive need.
+= S2 @laws/4/zh
+- 多个条件之间，跨越经合取而过：经所识而读的律对不观察之条件的回应改变形成在该步的容许，且只在它那一步的其他所需已满足之处；该步容许可判定时，恰在该条件被需要且所需为正之处，有这样的律对跨越回应，及于之后每一步的交换。
++ 多个条件之间，跨越经合取而过：经耦合而读的律对不经水平耦合入之条件的回应改变形成在该步的容许，且只在它那一步的其他所需已满足之处；该步容许可判定时，恰在该条件被需要且所需为正之处，有这样的律对跨越回应，及于之后每一步的交换。
+= S2 @laws/5/en
+- By level, the level passes: where marked formations observe a condition, the law taking its level reads through registration and responds to it within the need at every step. So, for a formation outside the part, it is not refuted that it observes the condition exactly where it is not refuted that some law reading through its registration responds to it by level.
++ By level, the level passes: where a condition couples into marked formations by level, the law taking its level reads through the couplings and responds to it within the need at every step. So, for a formation outside the part, it is not refuted that the condition couples into it by level exactly where it is not refuted that some law reading through its couplings responds to it by level.
+= S2 @laws/5/zh
+- 经水平则水平得过，观察恰是它能过之处：被标记的形成观察一个条件时，取该条件水平的律经所识而读，并在每一步、每个条件在所需之内回应该水平；所以对部分之外的形成，它观察该条件不被否定，恰当某个经其所识而读的律经水平回应该条件不被否定。
++ 经水平则水平得过，经水平耦合恰是它能过之处：一个条件经水平耦合入被标记的形成时，取该条件水平的律经耦合而读，并在每一步、每个条件在所需之内回应该水平；所以对部分之外的形成，该条件经水平耦合入它不被否定，恰当某个经其耦合而读的律经水平回应该条件不被否定。
+= S2
+- for laws through registration, the law reading through it and the formation outside the part; a covering schedule for reading;
++ for laws through the couplings, the law reading through them and the formation outside the part; a schedule covering what couples in, for reading;
+= S2
+- 对经所识之律，律经所识而读（ExchangeLaw.Through），形成在部分之外；对读，覆盖所识的时程；
++ 对经耦合之律，律经耦合而读（ExchangeLaw.Through），形成在部分之外；对读，覆盖耦合入者的时程；
+= S2 @does_not_show/1/en
+- That a given law responds to what it may read: a law reading through registration may ignore a level it registers.
++ That a given law responds to what it may read: a law reading through the couplings may ignore a level that couples in.
+= S2 @does_not_show/1/zh
+- 一个给定的律回应它可读者：经所识而读的律可以不理会它所识的水平。
++ 一个给定的律回应它可读者：经耦合而读的律可以不理会耦合入的水平。
+= S2
+- that a formation observes a condition is recovered from a response by level only as not refuted.
++ that a condition couples into a formation by level is recovered from a response by level only as not refuted.
+= S2
+- Reading (the AI's, open): registration bounds coupling, and a law's responses are its couplings.
++ Reading (the AI's, open): what couples in bounds what a law can respond to, and a law's responses are its couplings.
+= S2
+- 读法（AI 的，未定）：所识界定耦合，律的回应即其耦合。
++ 读法（AI 的，未定）：耦合入者界定律能回应者，律的回应即其耦合。
+= S2 @dependencies/2/interface/input/en
+- A response is a route of reading in every schedule covering registration.
++ A response is a route of reading in every schedule covering what couples in.
+= S2 @dependencies/2/interface/input/zh
+- 回应在覆盖所识的每个时程中是所读路线。
++ 回应在覆盖耦合入者的每个时程中是所读路线。
+= S2 @dependencies/2/interface/conditions/en
+- Law reading through registration; schedule covering it.
++ Law reading through the couplings; schedule covering what couples in.
+= S2 @dependencies/2/interface/conditions/zh
+- 律经所识而读；时程覆盖之。
++ 律经耦合而读；时程覆盖耦合入者。
+= S2 @dependencies/3/interface/output/en
+- A law reading through registration reads every schedule covering it.
++ A law reading through the couplings reads every schedule covering what couples in.
+= S2 @dependencies/3/interface/output/zh
+- 经所识而读的律读覆盖它的每个时程。
++ 经耦合而读的律读覆盖耦合入者的每个时程。
+= S2 @dependencies/3/interface/conditions/en
+- Schedule covering registration.
++ Schedule covering what couples in.
+= S2 @dependencies/3/interface/conditions/zh
+- 覆盖所识的时程。
++ 覆盖耦合入者的时程。
+= S2 @dependencies/4/interface/output/en
+- What registers in a formation; a condition depended on and not observed registers only whether its need is met.
++ What couples into a formation; a condition coupled in by threshold only passes only whether its need is met.
+= S2 @dependencies/4/interface/output/zh
+- 形成所识者；依赖而不观察的条件只识所需是否得足。
++ 耦合入形成者；只经阈耦合入的条件只传过所需是否得足。
+= S2 @dependencies/5/interface/output/en
+- Laws of exchange reading through registration.
++ Laws of exchange reading through the couplings.
+= S2 @dependencies/5/interface/output/zh
+- 经所识而读的交换律。
++ 经耦合而读的交换律。
+= S2 @dependencies/5/interface/input/en
+- Only registered levels couple.
++ Only levels that couple in respond.
+= S2 @dependencies/5/interface/input/zh
+- 只有所识的水平耦合。
++ 只有耦合入的水平被回应。
+= S2 @related/0/detail/en
+- There a raise below the threshold of a stock depended on and not observed registers nowhere along courses; here no law reading through registration responds to it.
++ There a raise below the threshold of a stock coupled in by threshold only shows nowhere along courses; here no law reading through the couplings responds to it.
+= S2 @related/0/detail/zh
+- 那里依赖而不观察的储量在阈下的升高沿进程处处不被识；这里没有经所识而读的律回应它。
++ 那里只经阈耦合入的储量在阈下的升高沿进程处处不显出；这里没有经耦合而读的律回应它。

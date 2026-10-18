@@ -278,7 +278,7 @@
     {
       "id": "contextual-registration",
       "detail": {
-        "zh": "语境中的识不总粘成不依语境的赋值；那里使之为真的情境包括语境。",
+        "zh": "语境所显示者不总粘成不依语境的赋值；那里使之为真的情境包括语境。",
         "en": "Readings in context do not always glue into a context-free assignment; there the situation that makes it true includes the context."
       }
     }

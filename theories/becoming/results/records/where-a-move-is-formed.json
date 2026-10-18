@@ -177,8 +177,8 @@
       "kind": "scope"
     },
     {
-      "zh": "部分形成动作的多少（耦合的度量）；反事实之动作经部分自身的识读出（ExchangeLaw.Through 对部分之外的形成陈述）；连续时间。",
-      "en": "How much of a move a part forms (a measure of coupling); the counterfactual's act read through the part's own registration (ExchangeLaw.Through is stated for the formations outside the part); continuous time.",
+      "zh": "部分形成动作的多少（耦合的度量）；反事实之动作经部分自身的耦合读出（ExchangeLaw.Through 对部分之外的形成陈述）；连续时间。",
+      "en": "How much of a move a part forms (a measure of coupling); the counterfactual's act read through the part's own couplings (ExchangeLaw.Through is stated for the formations outside the part); continuous time.",
       "kind": "scope"
     },
     {
@@ -210,11 +210,11 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T153317.850533Z): the 72 declarations of Becoming.Coupling, 51 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 131; not independently reviewed."
   },
   "next_delta": {
-    "zh": "部分在动作中的份额在本记录的运行上陈述；反事实之动作经部分自身的识读出；非确定之律的后继由什么形成；连续时间；独立审查。",
-    "en": "The part's share of a move stated on this record's runs; the counterfactual's act read through the part's own registration; what forms the successor of a law that is not determined; continuous time; an independent review."
+    "zh": "部分在动作中的份额在本记录的运行上陈述；反事实之动作经部分自身的耦合读出；非确定之律的后继由什么形成；连续时间；独立审查。",
+    "en": "The part's share of a move stated on this record's runs; the counterfactual's act read through the part's own couplings; what forms the successor of a law that is not determined; continuous time; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 对律与历史是同一展开的两种读法：“yes, i do agree with your reading, there are no two realities”；2026-10-14 对从关系开始的重建：“please, finish all”。本结果回答 process-and-frame-as-readings 与 counterfactual-is-the-course 的 next_delta：动作何时在展开之内形成（总可如此读，其余形成它），何时是部分自己的（恰当它经部分的配置形成；一段进程只在配置复现而动作不同之处固定这一点）。读法（AI 的，依 Ren 的交托采用）：行与受是同一个动作的两面；输入是其余的配置，外来的标签是表示略去其形成的动作；动作是谁的是关于未走之进程的主张；识得越多，越多是自己的；封闭不是自己的；所做之事的新需要开放或增长。",
+    "zh": "Ren 2026-10-12 对律与历史是同一展开的两种读法：“yes, i do agree with your reading, there are no two realities”；2026-10-14 对从关系开始的重建：“please, finish all”。本结果回答 process-and-frame-as-readings 与 counterfactual-is-the-course 的 next_delta：动作何时在展开之内形成（总可如此读，其余形成它），何时是部分自己的（恰当它经部分的配置形成；一段进程只在配置复现而动作不同之处固定这一点）。读法（AI 的，依 Ren 的交托采用）：行与受是同一个动作的两面；输入是其余的配置，外来的标签是表示略去其形成的动作；动作是谁的是关于未走之进程的主张；读得越多，越多是自己的；封闭不是自己的；所做之事的新需要开放或增长。",
     "en": "Ren, 12 October 2026, on law and history as one unfolding read two ways: “yes, i do agree with your reading, there are no two realities”; 14 October 2026, on the relation-first re-founding: “please, finish all”. This result answers the next_delta of process-and-frame-as-readings and counterfactual-is-the-course: when a move is formed within the unfolding (it can always be read so, its rest forming it) and when it is the part's own (exactly where it is formed through the part's configuration; one course fixes this only where a configuration recurs with the move varied). Readings (the AI's, adopted on Ren's delegation): acting and undergoing are one move read from its two sides; an input is the rest's configuration, and a label from outside is a move whose forming the representation leaves out; whose move it is, is a claim about courses not taken; reading more, more is one's own; closed is not own; novelty in what is done needs openness or growth."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",

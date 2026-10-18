@@ -115,8 +115,8 @@
       ]
     },
     {
-      "zh": "所携带的量为正，恰当有差沿时间中的路线被送到：起始之差、保持、部分之差，或从一个已被送到差的水平经正强度。没有差被送到之处两个流的水平相同；正强度属于识该水平并与该条件交换的形成时，路线是 TimedResponse 之传播的路线。",
-      "en": "The carried amount is positive exactly where a gap is conveyed along a route in time: a starting gap, holding, a gap of the part, or a positive strength from a level to which a gap was conveyed. Where none is, the two flows' levels agree; where the positive strengths are of formations registering the level and exchanging with the condition, the routes are routes of TimedResponse's spread.",
+      "zh": "所携带的量为正，恰当有差沿时间中的路线被送到：起始之差、保持、部分之差，或从一个已被送到差的水平经正强度。没有差被送到之处两个流的水平相同；正强度属于该水平耦合入、并与该条件交换的形成时，路线是 TimedResponse 之传播的路线。",
+      "en": "The carried amount is positive exactly where a gap is conveyed along a route in time: a starting gap, holding, a gap of the part, or a positive strength from a level to which a gap was conveyed. Where none is, the two flows' levels agree; where the positive strengths are of formations the level couples into and exchanging with the condition, the routes are routes of TimedResponse's spread.",
       "declarations": [
         "Becoming.Conveyed",
         "Becoming.Propagation.pos_of_mul_pos",
@@ -288,16 +288,16 @@
       },
       "interface": {
         "output": {
-          "zh": "逐时的潜在传播：经当时的交换与登记到达的路线。",
-          "en": "Potential propagation in time: routes reached through the exchanges and registration at each time."
+          "zh": "逐时的潜在传播：经当时的交换与耦合到达的路线。",
+          "en": "Potential propagation in time: routes reached through the exchanges and couplings at each time."
         },
         "input": {
           "zh": "被送到的差的路线。",
           "en": "The routes along which gaps are conveyed."
         },
         "conditions": {
-          "zh": "没有起始之差；部分的正差是与该条件交换的源；正强度属于识该水平并与该条件交换的形成。",
-          "en": "No starting gap; every positive gap of the part is a source exchanging with the condition; every positive strength is of a formation registering the level and exchanging with the condition."
+          "zh": "没有起始之差；部分的正差是与该条件交换的源；正强度属于该水平耦合入、并与该条件交换的形成。",
+          "en": "No starting gap; every positive gap of the part is a source exchanging with the condition; every positive strength is of a formation the level couples into and exchanging with the condition."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean"
       }
@@ -321,8 +321,8 @@
     {
       "id": "sensitivity-is-the-least-registration",
       "detail": {
-        "zh": "其下一步“敏感的度量”：强度为零恰是不敏感，所以强度精化最小的识。",
-        "en": "Its next step, a measure of sensitivity: strength zero is exactly insensitivity, so the strengths refine the least registration."
+        "zh": "其下一步“敏感的度量”：强度为零恰是不敏感，所以强度精化最小的耦合。",
+        "en": "Its next step, a measure of sensitivity: strength zero is exactly insensitivity, so the strengths refine the least coupling."
       }
     },
     {

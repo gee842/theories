@@ -10,13 +10,13 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "反馈至多识及影响闭包，部分在所到达之处被识：平衡的流中水平随其交换；在某步之前没有到达的，在该步有与无部分时同样被接纳。",
-    "en": "Feedback registers at most the influence closure, and a part registers where it reaches: in a balanced flow levels follow their exchanges, and whatever a part has not reached before a step is admitted alike with and without it there."
+    "zh": "反馈至多承载影响闭包，部分在所到达之处显出：平衡的流中水平随其交换；在某步之前没有到达的，在该步有与无部分时同样被接纳。",
+    "en": "Feedback carries at most the influence closure, and a part shows where it reaches: in a balanced flow levels follow their exchanges, and whatever a part has not reached before a step is admitted alike with and without it there."
   },
   "laws": [
     {
-      "zh": "两个平衡的流在一个条件上起始相同、每步取用与给予的总量相同，就使它在每步相同。所以形成经支持只识得与其所依存者的交换：在其所需与依存一致的两个网上，两个平衡的流在它所依存的每个条件上起始、取用与给予相同，它在每步就同样被支持。",
-      "en": "Two balanced flows that start a condition alike, and take from it and give to it the same totals at every step, keep it alike at every step. So a formation's support registers only the exchanges with what it depends on: on two webs that agree on what it requires and needs, two balanced flows that start, take and give alike on every condition it depends on support it alike at every step.",
+      "zh": "两个平衡的流在一个条件上起始相同、每步取用与给予的总量相同，就使它在每步相同。所以形成的支持只随与其所依存者的交换：在其所需与依存一致的两个网上，两个平衡的流在它所依存的每个条件上起始、取用与给予相同，它在每步就同样被支持。",
+      "en": "Two balanced flows that start a condition alike, and take from it and give to it the same totals at every step, keep it alike at every step. So a formation's support follows only the exchanges with what it depends on: on two webs that agree on what it requires and needs, two balanced flows that start, take and give alike on every condition it depends on support it alike at every step.",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.Balances.levels_agree",
@@ -25,7 +25,7 @@
     },
     {
       "zh": "扣留一个部分时，有与无它的两种水平在某步于一个条件上相同，恰当此前部分向它给予的等于从它取用的。部分不向条件给予时，扣留它不降低条件；只取用的部分被扣留时只能是增益或无：有一个不向其所需给予的部分时被支持者，无它时也被接纳。",
-      "en": "With a part withheld, the levels with and without it agree on a condition at a step exactly when, before it, the part has given the condition what it has taken from it. Withholding a part that gives a condition nothing never lowers it, and withholding one that only takes registers as gain or nothing: what is supported with a part giving nothing to what it requires is admitted without it.",
+      "en": "With a part withheld, the levels with and without it agree on a condition at a step exactly when, before it, the part has given the condition what it has taken from it. Withholding a part that gives a condition nothing never lowers it, and withholding one that only takes shows as gain or nothing: what is supported with a part giving nothing to what it requires is admitted without it.",
       "declarations": [
         "Becoming.Flow.WithheldLevels",
         "Becoming.Flow.Balances.withheld",
@@ -45,8 +45,8 @@
       ]
     },
     {
-      "zh": "影响闭包之外的不与闭包成员所依存的条件交换，所以成员都在影响闭包之外的部分到达不了闭包之内，闭包之内的每个形成在每步有部分时被支持，恰当无部分的水平接纳它：部分在闭包之外终结的，在闭包之内都不被识。",
-      "en": "Nothing beyond a formation's influence closure exchanges with a condition a member depends on, so a part whose members all lie beyond it reaches nothing within it, and each formation within it is supported with the part exactly where the levels without the part admit it, at every step: whatever the part ends beyond the closure registers nowhere within it.",
+      "zh": "影响闭包之外的不与闭包成员所依存的条件交换，所以成员都在影响闭包之外的部分到达不了闭包之内，闭包之内的每个形成在每步有部分时被支持，恰当无部分的水平接纳它：部分在闭包之外终结的，在闭包之内都不显出。",
+      "en": "Nothing beyond a formation's influence closure exchanges with a condition a member depends on, so a part whose members all lie beyond it reaches nothing within it, and each formation within it is supported with the part exactly where the levels without the part admit it, at every step: whatever the part ends beyond the closure shows nowhere within it.",
       "declarations": [
         "Becoming.Flow.AffectedBy",
         "Becoming.Flow.WithinInfluence",
@@ -163,8 +163,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "detail": {
-        "zh": "以扣留水平的比较固定其余交换，影响闭包的动机来自经他者传递的影响：其余交换固定时，只有直接到达的部分被识（Flow.Balances.admits_unreached），狼群经鹿对森林的作用在其中不出现（Trophic.mediated_uncoupled，见 comparison-within-reach）；影响闭包是上界，不是所识者的刻画。",
-        "en": "The comparison by withheld levels keeps the rest of the exchange fixed, while the influence closure is motivated by effects passing through others: with the rest fixed only the parts that reach a formation directly register (Flow.Balances.admits_unreached), and the wolves' effect on the forest through the deer does not appear (Trophic.mediated_uncoupled; see comparison-within-reach); the influence closure is an upper bound, not a characterization of what registers."
+        "zh": "以扣留水平的比较固定其余交换，影响闭包的动机来自经他者传递的影响：其余交换固定时，只有直接到达的部分显出（Flow.Balances.admits_unreached），狼群经鹿对森林的作用在其中不出现（Trophic.mediated_uncoupled，见 comparison-within-reach）；影响闭包是上界，不是显出者的刻画。",
+        "en": "The comparison by withheld levels keeps the rest of the exchange fixed, while the influence closure is motivated by effects passing through others: with the rest fixed only the parts that reach a formation directly show (Flow.Balances.admits_unreached), and the wolves' effect on the forest through the deer does not appear (Trophic.mediated_uncoupled; see comparison-within-reach); the influence closure is an upper bound, not a characterization of what shows."
       }
     }
   ],
@@ -183,8 +183,8 @@
     "en": "How a center represents what it reaches. Under a supplied law of exchange reading what has stood, comparison-where-the-rest-responds and counterfactual-is-the-course decide the comparison within the responsive reach with no second flow or response supplied."
   },
   "correspondence": {
-    "zh": "Ren 的长远目标：“I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”；Ren 要求“pursue the strongest claims and complete proof”。Ren 的层级：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”。作者的读法（AI 论证，依 Ren 的交托采用）：影响闭包读一个形成自身的反馈在效果经他者的支持与活动传递时所能识的；所及闭包读 Ren 中间的“the system that one is in”（供给闭包曾被读作所在系统，这一读法已撤回）；系统（对共享条件的闭包）界定每个效果，却不读那一层级：一个共同条件就使它成为整体，系统划分形成，没有嵌套与中心；“situational awareness”读作中心知道其部分在反馈之外所到达的。名称（ClosedUnder、WithinClosure、AffectedBy、WithinInfluence、Affects、WithinReach、TakesPart、Shares、WithinSystem、Reaches、ReachesBefore、DiffersBefore、Trophic 等）是 AI 按 Ren 的命名准则所选；营养级联是生态学用语。",
-    "en": "Ren's long-term objectives: “I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”; Ren asked to “pursue the strongest claims and complete proof”. Ren's levels: “i think it should be the whole, and a weaker version is within the system that one is in, then the self”. The author's reading (an AI argument, adopted on Ren's delegation): the influence closure reads what a formation's own feedback can register once effects pass through the support and activity of others; the reach closure reads Ren's intermediate “the system that one is in” (the feeding closure was earlier read as the system one is in; that reading is withdrawn); the system, the closure under sharing a condition, bounds every effect but does not read that level: one common condition makes it the whole, and systems partition the formations, with no nesting and no center; “situational awareness” reads as a center knowing what its part reaches beyond its feedback. The names (ClosedUnder, WithinClosure, AffectedBy, WithinInfluence, Affects, WithinReach, TakesPart, Shares, WithinSystem, Reaches, ReachesBefore, DiffersBefore, Trophic and others) are the AI's, chosen by Ren's naming standard; trophic cascade is the ecological term."
+    "zh": "Ren 的长远目标：“I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”；Ren 要求“pursue the strongest claims and complete proof”。Ren 的层级：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”。作者的读法（AI 论证，依 Ren 的交托采用）：影响闭包读一个形成自身的反馈在效果经他者的支持与活动传递时所能承载的；所及闭包读 Ren 中间的“the system that one is in”（供给闭包曾被读作所在系统，这一读法已撤回）；系统（对共享条件的闭包）界定每个效果，却不读那一层级：一个共同条件就使它成为整体，系统划分形成，没有嵌套与中心；“situational awareness”读作中心知道其部分在反馈之外所到达的。名称（ClosedUnder、WithinClosure、AffectedBy、WithinInfluence、Affects、WithinReach、TakesPart、Shares、WithinSystem、Reaches、ReachesBefore、DiffersBefore、Trophic 等）是 AI 按 Ren 的命名准则所选；营养级联是生态学用语。",
+    "en": "Ren's long-term objectives: “I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”; Ren asked to “pursue the strongest claims and complete proof”. Ren's levels: “i think it should be the whole, and a weaker version is within the system that one is in, then the self”. The author's reading (an AI argument, adopted on Ren's delegation): the influence closure reads what a formation's own feedback can carry once effects pass through the support and activity of others; the reach closure reads Ren's intermediate “the system that one is in” (the feeding closure was earlier read as the system one is in; that reading is withdrawn); the system, the closure under sharing a condition, bounds every effect but does not read that level: one common condition makes it the whole, and systems partition the formations, with no nesting and no center; “situational awareness” reads as a center knowing what its part reaches beyond its feedback. The names (ClosedUnder, WithinClosure, AffectedBy, WithinInfluence, Affects, WithinReach, TakesPart, Shares, WithinSystem, Reaches, ReachesBefore, DiffersBefore, Trophic and others) are the AI's, chosen by Ren's naming standard; trophic cascade is the ecological term."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
   "aliases": [
@@ -223,8 +223,8 @@
       "id": "closing-needs-net-draw",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用扣留水平 Flow.WithheldLevels、Flow.Balances.withheld 与 Web.Admits；这里表明有与无部分的水平在哪里相同，以及部分在哪里被识。",
-        "en": "Reuses withheld levels Flow.WithheldLevels, Flow.Balances.withheld and Web.Admits; here it is shown where the levels with and without a part agree and where the part registers."
+        "zh": "复用扣留水平 Flow.WithheldLevels、Flow.Balances.withheld 与 Web.Admits；这里表明有与无部分的水平在哪里相同，以及部分在哪里显出。",
+        "en": "Reuses withheld levels Flow.WithheldLevels, Flow.Balances.withheld and Web.Admits; here it is shown where the levels with and without a part agree and where the part shows."
       },
       "interface": {
         "output": {
@@ -246,8 +246,8 @@
       "id": "levels-of-closure",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用影响闭包、所及闭包与系统；这里给出反馈识得什么、部分到达什么。",
-        "en": "Reuses the influence closure, the reach closure and the system; here what feedback registers and what a part reaches are given."
+        "zh": "复用影响闭包、所及闭包与系统；这里给出反馈承载什么、部分到达什么。",
+        "en": "Reuses the influence closure, the reach closure and the system; here what feedback carries and what a part reaches are given."
       },
       "interface": {
         "output": {
@@ -255,8 +255,8 @@
           "en": "Flow.AffectedBy, Flow.WithinInfluence, Flow.Affects, Flow.WithinReach, Flow.WithinSystem."
         },
         "input": {
-          "zh": "影响闭包之外不被识；部分只到达对影响封闭的区域之内。",
-          "en": "Nothing registers beyond the influence closure; a part reaches only within a region closed under affecting."
+          "zh": "影响闭包之外不显出；部分只到达对影响封闭的区域之内。",
+          "en": "Nothing beyond the influence closure shows; a part reaches only within a region closed under affecting."
         },
         "conditions": {
           "zh": "无。",
@@ -300,8 +300,8 @@
     {
       "id": "consumption-ends-with-feeders",
       "detail": {
-        "zh": "那里损失经供给者返回；这里反馈至多识及影响闭包，闭包之外的终结不被识。",
-        "en": "There a loss returns through a feeder; here feedback registers at most the influence closure, and an ending beyond it does not register."
+        "zh": "那里损失经供给者返回；这里反馈至多承载影响闭包，闭包之外的终结不显出。",
+        "en": "There a loss returns through a feeder; here feedback carries at most the influence closure, and an ending beyond it does not show."
       }
     },
     {

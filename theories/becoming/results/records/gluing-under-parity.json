@@ -70,8 +70,8 @@
       ]
     },
     {
-      "zh": "奇偶系统列出主张，给每个语境它所计的主张与所要求的奇偶（ParitySystem）；赋值在语境的可能之内，恰当其所计主张之值的奇偶是所要求的；语境能显示的只取决于它所识的主张；矛盾是语境的一个选择（可重复），每个主张被计偶数次而所要求的奇偶相加为奇。",
-      "en": "A parity system gives each context the claims it counts and the parity it requires (ParitySystem); an assignment lies within a context's possibilities where its parity on the counted claims is the required one, which depends only on the claims the context registers; a contradiction is a selection of contexts, repetition allowed, counting every claim an even number of times while the required parities add up to odd.",
+      "zh": "奇偶系统列出主张，给每个语境它所计的主张与所要求的奇偶（ParitySystem）；赋值在语境的可能之内，恰当其所计主张之值的奇偶是所要求的；语境能显示的只取决于其内的主张；矛盾是语境的一个选择（可重复），每个主张被计偶数次而所要求的奇偶相加为奇。",
+      "en": "A parity system gives each context the claims it counts and the parity it requires (ParitySystem); an assignment lies within a context's possibilities where its parity on the counted claims is the required one, which depends only on the claims within the context; a contradiction is a selection of contexts, repetition allowed, counting every claim an even number of times while the required parities add up to odd.",
       "declarations": [
         "Becoming.ParitySystem",
         "Becoming.ParitySystem.constraint",
@@ -97,8 +97,8 @@
       ]
     },
     {
-      "zh": "唯一的障碍：主张的相等可判定、列举不重复时，对每个语境列表，或有不依语境的赋值满足其中每个语境，或其中某个选择矛盾；所以语境被列出时，没有不依语境的读法恰当有选择矛盾，有登记每个语境所计者、尊重其可能、在其配置粘合的世界恰当没有。",
-      "en": "The only obstruction: with equality of claims decided and the claims listed without repetition, for every list of contexts a context-free assignment meets each or a selection contradicts; so, the contexts listed, no context-free reading exists exactly where a selection contradicts, and a world registering what each context counts, respecting the possibilities and gluing, exists exactly where none does.",
+      "zh": "唯一的障碍：主张的相等可判定、列举不重复时，对每个语境列表，或有不依语境的赋值满足其中每个语境，或其中某个选择矛盾；所以语境被列出时，没有不依语境的读法恰当有选择矛盾，有显示每个语境所计者、尊重其可能、在其配置粘合的世界恰当没有。",
+      "en": "The only obstruction: with equality of claims decided and the claims listed without repetition, for every list of contexts a context-free assignment meets each or a selection contradicts; so, the contexts listed, no context-free reading exists exactly where a selection contradicts, and a world showing what each context counts, respecting the possibilities and gluing, exists exactly where none does.",
       "declarations": [
         "Becoming.ParitySystem.lift_selection",
         "Becoming.ParitySystem.global_or_contradicts",
@@ -188,8 +188,8 @@
       ]
     },
     {
-      "zh": "沿运行：登记恰在读法世界在一步无语境处于该步相粘。主张不重复地列出、语境列出时，尊重可能性的读法世界在一步无语境，以及（每个主张在某个语境中）任一过程的无语境主张框架适合，都恰在没有选取矛盾处；m 个语境矛盾时，在一步无语境的读法世界至多满足其中 m − 1 个。",
-      "en": "Along a run, the registrations glue at a step exactly where the world of readings is context-free there. With claims listed once and contexts listed, a respecting world of readings is context-free at a step, and (each claim in some context) a frame of context-free claims of any process fits, exactly where no selection contradicts; where m contexts contradict, a world context-free at a step meets at most m − 1.",
+      "zh": "沿运行：诸语境所显示者恰在读法世界在一步无语境处于该步相粘。主张不重复地列出、语境列出时，尊重可能性的读法世界在一步无语境，以及（每个主张在某个语境中）任一过程的无语境主张框架适合，都恰在没有选取矛盾处；m 个语境矛盾时，在一步无语境的读法世界至多满足其中 m − 1 个。",
+      "en": "Along a run, what the contexts show glues at a step exactly where the world of readings is context-free there. With claims listed once and contexts listed, a respecting world of readings is context-free at a step, and (each claim in some context) a frame of context-free claims of any process fits, exactly where no selection contradicts; where m contexts contradict, a world context-free at a step meets at most m − 1.",
       "declarations": [
         "Becoming.Contextual.FreeAt",
         "Becoming.Contextual.glues_iff_freeAt",
@@ -218,8 +218,8 @@
       "kind": "scope"
     },
     {
-      "zh": "实际展开的哪些识是这种奇偶的：这是对应。",
-      "en": "Which registrations of an actual unfolding are of this parity kind: that is correspondence.",
+      "zh": "实际展开中哪些语境中的读法是这种奇偶的：这是对应。",
+      "en": "Which readings in context of an actual unfolding are of this parity kind: that is correspondence.",
       "kind": "correspondence"
     },
     {
@@ -254,8 +254,8 @@
     "en": "Contextuality beyond parity: the exact obstruction for general finite possibilities; probabilistic contextuality and the quantum values with real amplitudes (periphery); a correspondence theorem joining the periphery's CorrectionRelations cycle law to this one; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 问框架所失去的是否像“wave/particle”，并同意了把值读作语境中的识的回答；2026-10-15：“please make best of your judgement, and push the frontier of completeness”。本结果是 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”：对奇偶约束，“不依语境的主张是表示的承诺”成为确切的规律，这一承诺恰在一个可检查的障碍处失效，障碍给出 Bell 型的界。奇偶律是 GF(2) 上的 Gauss 消元，即线性方程组的 Fredholm 择一；全有或全无的奇偶证明出自 Mermin（1990）与 Mermin–Peres 方格，上同调的奇偶判据出自 Abramsky、Barbosa、Kishida、Lal 与 Mansfield（2015，“Contextuality, cohomology and paradox”），奇偶博弈出自 Arkhipov（2012）。读法（AI 的，依 Ren 2026-10-15 的交托采用，DELEGATED-CHOICES D33）：m − 1 与 m 之差，是语境所承载的；值是语境中的识，一个关系。",
-    "en": "Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle”, and agreed with the reply reading a value as a registration in context; on 15 October 2026: “please make best of your judgement, and push the frontier of completeness”. This result is the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality”: for parity constraints, “context-free claims are a commitment of the representation” becomes an exact law, the commitment failing exactly at a checkable obstruction, which gives a Bell-type bound. The parity law is Gaussian elimination over GF(2), the Fredholm alternative for linear systems; all-versus-nothing parity proofs are Mermin's (1990) and the Mermin–Peres square's, the cohomological parity criterion is Abramsky, Barbosa, Kishida, Lal and Mansfield's (2015, “Contextuality, cohomology and paradox”), and parity games are Arkhipov's (2012). Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D33): the difference between m − 1 and m is what the context carries; a value is a registration in context, a relation."
+    "zh": "Ren 2026-10-12 问框架所失去的是否像“wave/particle”，并同意了把值读作语境所显示者的回答；2026-10-15：“please make best of your judgement, and push the frontier of completeness”。本结果是 contextual-registration 的下一步“奇偶障碍的一般定理；概率的语境性”：对奇偶约束，“不依语境的主张是表示的承诺”成为确切的规律，这一承诺恰在一个可检查的障碍处失效，障碍给出 Bell 型的界。奇偶律是 GF(2) 上的 Gauss 消元，即线性方程组的 Fredholm 择一；全有或全无的奇偶证明出自 Mermin（1990）与 Mermin–Peres 方格，上同调的奇偶判据出自 Abramsky、Barbosa、Kishida、Lal 与 Mansfield（2015，“Contextuality, cohomology and paradox”），奇偶博弈出自 Arkhipov（2012）。读法（AI 的，依 Ren 2026-10-15 的交托采用，DELEGATED-CHOICES D33）：m − 1 与 m 之差，是语境所承载的；值是语境所显示者，一个关系。",
+    "en": "Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle”, and agreed with the reply reading a value as what a context shows; on 15 October 2026: “please make best of your judgement, and push the frontier of completeness”. This result is the next step of contextual-registration, “the general parity obstruction; probabilistic contextuality”: for parity constraints, “context-free claims are a commitment of the representation” becomes an exact law, the commitment failing exactly at a checkable obstruction, which gives a Bell-type bound. The parity law is Gaussian elimination over GF(2), the Fredholm alternative for linear systems; all-versus-nothing parity proofs are Mermin's (1990) and the Mermin–Peres square's, the cohomological parity criterion is Abramsky, Barbosa, Kishida, Lal and Mansfield's (2015, “Contextuality, cohomology and paradox”), and parity games are Arkhipov's (2012). Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D33): the difference between m − 1 and m is what the context carries; a value is what a context shows, a relation."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
   "aliases": [
@@ -280,8 +280,8 @@
       },
       "interface": {
         "output": {
-          "zh": "语境中的识、粘合、局部性与没有不依语境的读法；Specker 与 Mermin–Peres 的可能性。",
-          "en": "Registration in context, gluing, locality and no context-free reading; the possibilities of Specker and Mermin–Peres."
+          "zh": "语境中显示的主张、粘合、局部性与没有不依语境的读法；Specker 与 Mermin–Peres 的可能性。",
+          "en": "Claims shown in context, gluing, locality and no context-free reading; the possibilities of Specker and Mermin–Peres."
         },
         "input": {
           "zh": "奇偶系统的矛盾给出没有不依语境的读法与不粘合。",
@@ -322,7 +322,7 @@
     {
       "id": "unity-of-readings",
       "detail": {
-        "zh": "语境中的诸识总是一个世界的被索引的主张，不用粘合；这里给出奇偶约束下不依语境的读法何时存在。",
+        "zh": "语境所显示者总是一个世界的被索引的主张，不用粘合；这里给出奇偶约束下不依语境的读法何时存在。",
         "en": "Readings in context are always one world of indexed claims, with no gluing; here, when a context-free reading exists under parity constraints."
       }
     },

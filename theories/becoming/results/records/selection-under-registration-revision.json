@@ -2,25 +2,25 @@
   "schema_version": 1,
   "id": "selection-under-registration-revision",
   "title": {
-    "zh": "登记关系改变时，哪些选择仍可表达与执行",
-    "en": "Which selections survive and remain executable when registration changes"
+    "zh": "归并改变时，哪些选择仍可表达与执行",
+    "en": "Which selections survive and remain executable when the lumping changes"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T21:30:54.975650+00:00",
   "claim": {
-    "zh": "在已有 Process/Trace/Run 上，以每个配置中的关系表示不可分辨。旧关系为等价关系时，所有经旧登记的选择仍能经新登记表达，当且仅当新不可分辨蕴含旧不可分辨；合并一对旧差异，就有一个旧选择失去表达能力。条件沿实际中间配置组合；Web 旧选择定义直接适配。保留实际记录能保留选择并加入新差异，但记录史本身不提供记忆机制。执行由存量的一般规律（Becoming.Stock）给出，对每个过程成立：每步平衡恰是沿每个历程平衡；每步只从已持者汲取时，历程可执行恰当每步的汲取在当时的存量之内，与一个登记过程联合运行时恰当登记容许且存量覆盖。Revising 是其实例：它是与其存量联合运行的登记过程（Revising.step_iff、Revising.feasible_iff），消耗支持形成区分关系，补充支持，然后将回应由 false 改为给定目标 true；同一过程允许关闭区分关系。区分、支持与执行作为规律彼此不同：存量覆盖的修正可被登记阻断，登记容许的修正可缺存量（Revising.covered_not_enacted、Revising.linked_not_enacted）；区分增长不蕴含行动可执行，支持尚存也不蕴含区分尚存。",
-    "en": "On the existing Process/Trace/Run, relations at configurations describe indistinguishability. Where the old relation is an equivalence, every old registration-based selection is expressible through the new registration iff new indistinguishability implies old indistinguishability; a merged old pair supplies a lost choice. Preservation composes through actual intermediate configurations, with a direct adapter to Web selection. Retaining actual records keeps selections and can add distinctions, but the history itself provides no memory mechanism. Execution follows the general laws of stock (Becoming.Stock), for every process: balance at each step is balance along every course; where steps draw only on what is held, a course is executable exactly where each step’s draw is within the stock then standing, and, run jointly with a registration process, exactly where the registration admits it and the stock covers it. Revising is an instance: a registration process run jointly with its stock (Revising.step_iff, Revising.feasible_iff), which consumes support to form a distinguishing link, replenishes support, then changes response from false to the supplied target true; the same process permits closing the link. As laws, discrimination, support and enactment are distinct: a correction the stock covers can be blocked by the registration, and one the link admits can lack stock (Revising.covered_not_enacted, Revising.linked_not_enacted); increased discrimination does not entail executable action, and remaining support does not entail remaining discrimination."
+    "zh": "在已有 Process/Trace/Run 上，以每个配置中的关系表示不可分辨。旧关系为等价关系时，所有经旧归并的选择仍能经新归并表达，当且仅当新不可分辨蕴含旧不可分辨；合并一对旧差异，就有一个旧选择失去表达能力。条件沿实际中间配置组合；Web 旧选择定义直接适配。保留实际记录能保留选择并加入新差异，但记录史本身不提供记忆机制。执行由存量的一般规律（Becoming.Stock）给出，对每个过程成立：每步平衡恰是沿每个历程平衡；每步只从已持者汲取时，历程可执行恰当每步的汲取在当时的存量之内，与一个过程联合运行时恰当该过程容许且存量覆盖。Revising 是其实例：它是与其存量联合运行的关联过程（Revising.step_iff、Revising.feasible_iff），消耗支持形成区分关系，补充支持，然后将回应由 false 改为给定目标 true；同一过程允许关闭区分关系。区分、支持与执行作为规律彼此不同：存量覆盖的修正可被关联过程阻断，关联容许的修正可缺存量（Revising.covered_not_enacted、Revising.linked_not_enacted）；区分增长不蕴含行动可执行，支持尚存也不蕴含区分尚存。",
+    "en": "On the existing Process/Trace/Run, relations at configurations describe indistinguishability. Where the old relation is an equivalence, every selection through the old lumping is expressible through the new lumping iff new indistinguishability implies old indistinguishability; a merged old pair supplies a lost choice. Preservation composes through actual intermediate configurations, with a direct adapter to Web selection. Retaining actual records keeps selections and can add distinctions, but the history itself provides no memory mechanism. Execution follows the general laws of stock (Becoming.Stock), for every process: balance at each step is balance along every course; where steps draw only on what is held, a course is executable exactly where each step’s draw is within the stock then standing, and, run jointly with a process, exactly where that process admits it and the stock covers it. Revising is an instance: a link process run jointly with its stock (Revising.step_iff, Revising.feasible_iff), which consumes support to form a distinguishing link, replenishes support, then changes response from false to the supplied target true; the same process permits closing the link. As laws, discrimination, support and enactment are distinct: a correction the stock covers can be blocked by the link process, and one the link admits can lack stock (Revising.covered_not_enacted, Revising.linked_not_enacted); increased discrimination does not entail executable action, and remaining support does not entail remaining discrimination."
   },
   "hypotheses": [
     {
-      "zh": "一般等价条件明示；过程、替代项域与各配置的登记关系给定。Trace 接续定理要求所述每一步保留区分，不宣称所有修改都如此。",
-      "en": "Old reflexivity, symmetry and transitivity are explicit. The process, alternative domain and registrations are supplied. The trace theorem requires preservation at the stated steps, rather than claiming every revision preserves distinctions."
+      "zh": "一般等价条件明示；过程、替代项域与各配置的归并给定。Trace 接续定理要求所述每一步保留区分，不宣称所有修改都如此。",
+      "en": "Old reflexivity, symmetry and transitivity are explicit. The process, alternative domain and the lumping at each configuration are supplied. The trace theorem requires preservation at the stated steps, rather than claiming every revision preserves distinctions."
     },
     {
-      "zh": "局部实例给定支持补充、两种重构、装置与读取的对应、目标 true 及偏好重建设备的控制律。全状态中的支持量与装置状态参与控制；控制不是只经初始盲读来选择。",
-      "en": "The instance supplies replenishment, two rebuild modes, apparatus-to-reading correspondence, target true and a controller preferring reconstruction. Stock and apparatus status enter control; reconstruction is not chosen solely through the initially blind reading."
+      "zh": "局部实例给定支持补充、两种重构、装置与读取的对应、目标 true 及偏好重建设备的控制律。全状态中的支持量与装置状态参与控制；控制不是只经把两种重构归为一类的初始读取来选择。",
+      "en": "The instance supplies replenishment, two rebuild modes, apparatus-to-reading correspondence, target true and a controller preferring reconstruction. Stock and apparatus status enter control; reconstruction is not chosen solely through the initial reading, which lumps the two modes."
     },
     {
       "zh": "实际记忆保留、未表示后果与物理对应须另外说明；没有规范前提或普遍正成本假设。",
@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "P93 接通原共同组织研究与统一主干。登记、选择、支持和回应是同一过程中的分化关系；局部元组只保留所论连接。空 Lean 公理报告不消除构造律和目标等实质前提。作者反审说明为什么形成装置、保留记录、表达选择与实际执行不同。",
-    "en": "P93 connects the existing common-organization study to the unified spine. Registration, selection, support and response are differentiated relations of one process; the local tuple preserves only the stated connections. Empty Lean axiom reports do not discharge substantive construction laws or the target. Author counterreview separates apparatus formation, retained record, expressible choice and actual execution."
+    "zh": "P93 接通原共同组织研究与统一主干。归并、选择、支持和回应是同一过程中的分化关系；局部元组只保留所论连接。空 Lean 公理报告不消除构造律和目标等实质前提。作者反审说明为什么形成装置、保留记录、表达选择与实际执行不同。",
+    "en": "P93 connects the existing common-organization study to the unified spine. Lumping, selection, support and response are differentiated relations of one process; the local tuple preserves only the stated connections. Empty Lean axiom reports do not discharge substantive construction laws or the target. Author counterreview separates apparatus formation, retained record, expressible choice and actual execution."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
   "aliases": [
@@ -51,7 +51,7 @@
       },
       "interface": {
         "output": {
-          "zh": "Web 的经识选择及登记等价关系",
+          "zh": "Web 的经耦合选择及归并等价关系",
           "en": "Web registration-based selection and equivalence"
         },
         "input": {
@@ -69,7 +69,7 @@
       "id": "generalization-through-lumping",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "在同一 Through 定义上证明登记改变的精确条件",
+        "zh": "在同一 Through 定义上证明归并改变的精确条件",
         "en": "Proves the exact registration-change criterion on the same Through definition"
       },
       "interface": {
@@ -78,7 +78,7 @@
           "en": "Learning.Training.Through"
         },
         "input": {
-          "zh": "在同一 Through 定义上证明登记改变的精确条件",
+          "zh": "在同一 Through 定义上证明归并改变的精确条件",
           "en": "Proves the exact registration-change criterion on the same Through definition"
         },
         "conditions": {
@@ -116,8 +116,8 @@
     {
       "id": "target-capture",
       "detail": {
-        "zh": "新增登记损失界限；没有放宽该结果的 rule-only 假设或新增吸引盆地。",
-        "en": "Adds a registration-loss boundary; does not weaken that result’s rule-only hypothesis or add an attraction basin."
+        "zh": "新增归并损失界限；没有放宽该结果的 rule-only 假设或新增吸引盆地。",
+        "en": "Adds a boundary of what a coarser lumping loses; does not weaken that result’s rule-only hypothesis or add an attraction basin."
       }
     },
     {
@@ -139,8 +139,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
       "detail": {
-        "zh": "opens_without_correction：形成区分却耗尽行动支持。closes_choice：支持尚存但关闭关系使旧选择不可表达。old_cannot_select_rebuild：初始盲读不能单独区分两个重构模式。 作为规律：covered_not_enacted 是存量覆盖而登记阻断的修正，linked_not_enacted 是登记容许而没有存量的修正。",
-        "en": "opens_without_correction gains a distinction while exhausting action support; closes_choice loses an old selection despite remaining stock; old_cannot_select_rebuild shows the blind reading alone cannot distinguish reconstruction modes. As laws: covered_not_enacted is a correction the stock covers and the registration blocks, and linked_not_enacted one the link admits with no stock to cover it."
+        "zh": "opens_without_correction：形成区分却耗尽行动支持。closes_choice：支持尚存但关闭关系使旧选择不可表达。old_cannot_select_rebuild：初始读取不能单独区分两个重构模式。 作为规律：covered_not_enacted 是存量覆盖而关联过程阻断的修正，linked_not_enacted 是关联容许而没有存量的修正。",
+        "en": "opens_without_correction gains a distinction while exhausting action support; closes_choice loses an old selection despite remaining stock; old_cannot_select_rebuild shows the initial reading alone cannot distinguish reconstruction modes. As laws: covered_not_enacted is a correction the stock covers and the link process blocks, and linked_not_enacted one the link admits with no stock to cover it."
       }
     }
   ],
