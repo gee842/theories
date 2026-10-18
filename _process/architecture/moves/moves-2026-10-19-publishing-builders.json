@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "batch": "moves-2026-10-19-publishing-builders",
+  "date": "2026-10-18T22:39:25+00:00",
+  "base_commit": "1868532428c3e0fda0002e67ac53c11e33611929",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "tmp/pdfs/build_xiaokang_datong.py",
+      "new_path": "tools/publishing/build_xiaokang_datong.py",
+      "sha256": "9dcc8b3f44e2d8b1d9e82d695550bc2d435c3553cdb52cc8c625f35a3adc90a9",
+      "blob": "4bc12a5f6c9e46a5a1bc64ed60249ffd447ec1c3",
+      "reason": "PDF builders to tools/publishing as the layout says; tmp/ is scratch and untracked (Ren, 19 October 2026)",
+      "plan_entry": "tmp/pdfs/build_xiaokang_datong.py"
+    },
+    {
+      "old_path": "tmp/pdfs/build_shengsheng_en.py",
+      "new_path": "tools/publishing/build_shengsheng_en.py",
+      "sha256": "a2153f159007531ee439a62d91653ca0662d869475c75035376a2a6e9ed98072",
+      "blob": "3e5f75d40187a3a854b7787a37cd4f2d3340c36d",
+      "reason": "same",
+      "plan_entry": "tmp/pdfs/build_shengsheng_en.py"
+    },
+    {
+      "old_path": "tmp/pdfs/build_chiang_mai_canvas.py",
+      "new_path": "tools/publishing/build_chiang_mai_canvas.py",
+      "sha256": "48c26d2252321234369a404f643ffbd451d6736789277c7a87330ecf36041dac",
+      "blob": "40eed2a4d1fb7b9a238749349cfc1875a0e594b8",
+      "reason": "same",
+      "plan_entry": "tmp/pdfs/build_chiang_mai_canvas.py"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "drafts/2026-09-26-community-mission/NOTES.md",
+      "old_sha256": "54cd43693daca75169cdded67136b4ef409fcc5befda968d1b8506d2c267ba24",
+      "new_sha256": "10bcbc5f9c8bcd9c9b27fe0ba6a7c47fb931272ec3bf43446abfba31fb689e31",
+      "references": 2
+    },
+    {
+      "path": "drafts/2026-10-02-shengsheng-en/NOTES.md",
+      "old_sha256": "0f855687d54d9d0904874eded040d34755457ed8d08df027aab762fdde8c5499",
+      "new_sha256": "78510c0e180ddfdff5ecaf28e7742d88a88919f0fd70756b72e7f499f976d2cf",
+      "references": 1
+    }
+  ],
+  "history_roots": [],
+  "generated_pages_to_rerender": [],
+  "verification_errors": []
+}

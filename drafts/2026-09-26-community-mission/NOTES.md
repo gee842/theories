@@ -182,8 +182,8 @@ v0.2 的依据表也有可取之处：它表明中国的正式立场已经包含
   - 译名：Xiaokang / Datong（Great Commonwealth）、tianxia、shengsheng；"人类命运共同体"用官方译法 a community with a shared future for mankind。
   - 古文英译均为自译，文末已注明。官方文件的引文也是自译，外交部文件一条已标出。
 - **PDF**：`output/pdf/从小康到大同-v0.3-zh.pdf`（28 页）与 `output/pdf/From-Xiaokang-to-Datong-v0.3-en.pdf`（35 页）。
-  - 由 `tmp/pdfs/build_xiaokang_datong.py` 生成：markdown 转 HTML，再由 Chrome 打印。版式为宋体正文，含封面与目录。
+  - 由 `tools/publishing/build_xiaokang_datong.py` 生成：markdown 转 HTML，再由 Chrome 打印。版式为宋体正文，含封面与目录。
 - **一个技术问题**：macOS 的宋体、苹方与冬青黑体让"小""大""人""生"等字与康熙部首共用字形，Chrome 生成的 PDF 复制出来会是"⼩康"。
   - 构建脚本已在生成后修正 PDF 的 ToUnicode 映射：只把部首区与兼容汉字区映射回统一汉字，已验证全文复制无残留。
   - Claude Docs 自带的 PDF 导出也有同样的问题，所以不用它。
-- **修改后重新生成**：先更新本目录下的中英文 markdown，再在仓库根目录运行 `python3 tmp/pdfs/build_xiaokang_datong.py`。
+- **修改后重新生成**：先更新本目录下的中英文 markdown，再在仓库根目录运行 `python3 tools/publishing/build_xiaokang_datong.py`。

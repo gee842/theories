@@ -16,3 +16,7 @@ node_modules/
 /sources/13-claude-memories/
 /sources/18-friend-conversations/
 /drafts/2026-10-02-friend-conversation/
+
+# Scratch, never tracked (REPOSITORY-LAYOUT)
+/tmp/
+/work/

@@ -6,7 +6,7 @@
 
 - `Shengsheng-Buxi-EN.md` is the whole book in one file: about 33,800 words, of which about 30,000 are main text (prologue, twenty chapters, epilogue). It is assembled from `parts/`, so edit the parts and rebuild.
 - `parts/00-front.md` … `parts/07-appendices.md` are the source: front matter and prologue, Parts One to Six, then the appendices and references.
-- The PDF is `output/pdf/Shengsheng-Buxi-EN-2026-10.pdf` (89 pages, A4). It is built by `python3 tmp/pdfs/build_shengsheng_en.py` from the repo root, which also reassembles the `.md`. The build uses headless Chrome as `build_xiaokang_datong.py` does, and imports that script's ToUnicode fix so that copied CJK text does not come out as Kangxi radicals. Ligatures are turned off so that copied English text keeps its "fi" and "fl".
+- The PDF is `output/pdf/Shengsheng-Buxi-EN-2026-10.pdf` (89 pages, A4). It is built by `python3 tools/publishing/build_shengsheng_en.py` from the repo root, which also reassembles the `.md`. The build uses headless Chrome as `build_xiaokang_datong.py` does, and imports that script's ToUnicode fix so that copied CJK text does not come out as Kangxi radicals. Ligatures are turned off so that copied English text keeps its "fi" and "fl".
 - Ren's request is recorded in `sources/16-claude-code-directions/2026-10-02-shengsheng-english-request.md`.
 
 ## What it is

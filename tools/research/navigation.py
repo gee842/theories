@@ -279,7 +279,7 @@ PAGES = [('README.md', 'The Theory of Becoming', None, 'home'),
          (THEORY + '/README.md', 'The Theory of Becoming', 'The Theory of Becoming / 生成／变化之论', 'stub'),
          (CHAPTERS + '/CLAIMS.md', 'Registered claims and historical ledger', '已登记主张与历史账本 / Registered claims and historical ledger', 'stub'),
          (THEORY + '/results/ROADMAP.md', 'Current research directions', '当前研究路线 / Current research directions', 'roadmap')]
-NAV = [('README.md', 'Home'), ('RESULTS.md', 'Results'), ('GOALS.md', 'Scopes'), ('DEPENDENCIES.md', 'Connections'),
+NAV = [('README.md', 'Home'), ('MAP.md', 'Start here'), ('RESULTS.md', 'Results'), ('GOALS.md', 'Scopes'), ('DEPENDENCIES.md', 'Connections'),
        ('OPEN-QUESTIONS.md', 'Open questions'), ('_process/RESULT-WORKFLOW.md', 'Contribute')]
 WHERE_TO_LOOK = [
     '- Same theorem under two names: `trace-law-equivalence`, `derivation-soundness`. Preserve historical names and receipts; count the underlying result once.',

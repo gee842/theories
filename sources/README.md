@@ -22,14 +22,14 @@ Original material and its provenance: Ren's writings and directions, exported co
 | 09 | `09-sts-bonfire-yi/` | — | 50 |  |
 | 10 | `10-context-runtime-ember/` | — | 71 | 2026-03-28 to 2026-08-30 |
 | 11 | `11-human-solutions-museum/` | — | 6 |  |
-| 12 | `12-claude-ai-chats/` | — | 403 | 2024-03-18 to 2026-05-05 |
-| 13 | `13-claude-memories/` | — | 197 |  |
+| 12 | `12-claude-ai-chats/` | — | 0 |  |
+| 13 | `13-claude-memories/` | — | 0 |  |
 | 14 | `14-claude-code-prompts/` | — | 17 |  |
-| 15a | `15-codex-theory-conversations/` | — | 281 | 2026-09-05 to 2026-10-18 |
+| 15a | `15-codex-theory-conversations/` | — | 283 | 2026-09-05 to 2026-10-19 |
 | 15b | `15-user-provided-2026-09-06/` | — | 4 |  |
 | 16 | `16-claude-code-directions/` | — | 15 | 2026-09-25 to 2026-10-04 |
 | 17 | `17-user-provided-2026-10-02/` | — | 1 |  |
-| 18 | `18-friend-conversations/` | — | 97 |  |
+| 18 | `18-friend-conversations/` | — | 0 |  |
 | 19 | [19-v5-handoff-2026-10-03/](19-v5-handoff-2026-10-03/README.md) | v5 direction and v4.5 review archive | 13 |  |
 | 20 | `20-codex-theory-sessions-2026-10-05/` | — | 2402 | 2026-10-04 to 2026-10-05 |
 | 21 | [21-unified-theory-development-2026-10-05/](21-unified-theory-development-2026-10-05/README.md) | First development of the unified theory | 1 |  |
